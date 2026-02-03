@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: surfing-in-wales
 question: "Where to Go Surfing in Wales?"
@@ -52,4 +51,3 @@ While surfing is possible year-round in Pembrokeshire, conditions vary considera
 - What other water sports can I do in Pembrokeshire?
 - What is the best time of year to visit Pembrokeshire?
 - Are there any campsites near the surfing beaches in Pembrokeshire?
-```

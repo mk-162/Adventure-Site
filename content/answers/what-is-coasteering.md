@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: what-is-coasteering
 question: "What is Coasteering?"
@@ -43,4 +42,3 @@ Wales is arguably the UK's coasteering capital, offering diverse and dramatic co
 - Is coasteering safe?
 - What should I wear for coasteering?
 - How much does coasteering cost?
-```

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Velocity 2 Experience Detail</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e3a4c",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#171a1b",
+                        "text-main-light": "#141515",
+                        "text-main-dark": "#e0e0e0",
+                        "text-sub-light": "#71767a",
+                        "text-sub-dark": "#9ca3af",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for better look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(156, 163, 175, 0.5);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main-light dark:text-text-main-dark transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e5e7eb] dark:border-[#374151] px-10 py-3 bg-white dark:bg-[#1f2937]">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-text-main-light dark:text-text-main-dark">
+<div class="size-8 rounded-lg bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined">hiking</span>
+</div>
+<h2 class="text-text-main-light dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Adventure Wales</h2>
+</div>
+<div class="hidden md:flex items-center gap-9">
+<a class="text-text-main-light dark:text-gray-300 hover:text-primary dark:hover:text-white text-sm font-medium leading-normal" href="#">Activities</a>
+<a class="text-text-main-light dark:text-gray-300 hover:text-primary dark:hover:text-white text-sm font-medium leading-normal" href="#">Destinations</a>
+<a class="text-text-main-light dark:text-gray-300 hover:text-primary dark:hover:text-white text-sm font-medium leading-normal" href="#">Plan Your Trip</a>
+<a class="text-text-main-light dark:text-gray-300 hover:text-primary dark:hover:text-white text-sm font-medium leading-normal" href="#">About</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<label class="hidden lg:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+<div class="text-text-sub-light dark:text-gray-400 flex border-none bg-[#f2f2f3] dark:bg-[#374151] items-center justify-center pl-4 rounded-l-xl border-r-0">
+<span class="material-symbols-outlined" style="font-size: 20px;">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-text-main-light dark:text-white focus:outline-0 focus:ring-0 border-none bg-[#f2f2f3] dark:bg-[#374151] focus:border-none h-full placeholder:text-text-sub-light dark:placeholder:text-gray-400 px-4 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal" placeholder="Search activities..." value=""/>
+</div>
+</label>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-transparent border border-[#e5e7eb] dark:border-[#374151] text-text-main-light dark:text-white text-sm font-bold leading-normal hover:bg-gray-50 dark:hover:bg-[#374151]">
+                        Log In
+                    </button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">
+                        Sign Up
+                    </button>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full max-w-[1280px] mx-auto px-4 sm:px-8 py-6">
+<!-- Breadcrumbs -->
+<nav class="flex flex-wrap gap-2 pb-6">
+<a class="text-text-sub-light dark:text-text-sub-dark hover:text-primary dark:hover:text-white text-sm font-medium leading-normal" href="#">Home</a>
+<span class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium leading-normal">/</span>
+<a class="text-text-sub-light dark:text-text-sub-dark hover:text-primary dark:hover:text-white text-sm font-medium leading-normal" href="#">Activities</a>
+<span class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium leading-normal">/</span>
+<span class="text-text-main-light dark:text-white text-sm font-medium leading-normal">Zip World Penrhyn Quarry</span>
+</nav>
+<!-- Title & Rating Header -->
+<div class="mb-6">
+<h1 class="text-text-main-light dark:text-white tracking-tight text-3xl md:text-4xl font-bold leading-tight mb-3">Velocity 2 - The Fastest Zip Line in the World</h1>
+<div class="flex flex-wrap items-center gap-4 text-sm">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined" style="font-size: 20px;">star</span>
+<span class="font-bold">4.9</span>
+<span class="text-text-sub-light dark:text-text-sub-dark font-normal underline decoration-dashed">(2,450 reviews)</span>
+</div>
+<span class="text-text-sub-light dark:text-text-sub-dark">•</span>
+<div class="flex items-center gap-1 text-text-sub-light dark:text-text-sub-dark">
+<span class="material-symbols-outlined" style="font-size: 18px;">location_on</span>
+<span>Bethesda, Wales</span>
+</div>
+</div>
+</div>
+<!-- Image Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-3 mb-10 h-[400px] md:h-[500px] rounded-2xl overflow-hidden">
+<div class="md:col-span-2 md:row-span-2 h-full relative group cursor-pointer">
+<div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-105" data-alt="Person zip lining over blue quarry lake" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHYy1ABXpRUx1hTeCS5N4MYug8A-7HD-HmSzDRldEAAwDiLmGA9opKXu6G6cIpARm8qPSAbNghEzOikJw6ldANbRrpXGIhs2tBkJaHNTsQMx09cwBpu3Lw4IYV7j7DU66Vb65n6fa5EO6l_thI7RRo2vh0FEGhOiMSnFO5aiTwsx4TTOn2CHs-NtNIKUokqXMes8PijlpUms70hq9Uf79T6spk_NNTQun5vFNbQT44YO6PULHklf6QS5IGsDQ865rWPkZtzUm9pA");'></div>
+</div>
+<div class="hidden md:block h-full relative group cursor-pointer">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-105" data-alt="Scenic view of Penrhyn Quarry mountains" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDF2OnATWljO-sLPrrWQzDvZUUAp27PQ4mZQq5tHD36o1YdUCRSUdN6KE2RuTfSZu-KaYJ3yMM0clCrm_6WhlfhUYttHTE-W8xqH_EU5fJ7-S6nMXzCR6jGG4pZBWpxJ7FVutukLYyroRs_xiA3OrcHLQr2oKRaFxL-XWscvj2OUnV_AK0r6Dr0Km1epkmgIgE2vkb9jaNTga85RFpyV0gqM4HQ3v9qfxLPbw_A7lOsxAZVaSqUCxNxA1Qc35uMD6UeHKPE10XGlQ");'></div>
+</div>
+<div class="hidden md:block h-full relative group cursor-pointer">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of zip line harness equipment" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAn9XtzRpJyK3FL_m0Q4VfKAnJ0SQCUSiUcd_CT5WRPFzSktu9_vsOzppjtROyINxOSzC4FR6LUw9k3r7TJFGZp8dHlh5isl9dKjo6aC8NtpzofFho7if7G9FvtwNMnQm12m-mv_4g38j4AevuQF0jXIwB-8EVBMnV5WbSr_XkrCfbx9APrVKlw4LpyrXz5JGIMJ4-H8NMZQ5KDYBizEmYOf0aZ29J1kDug8wjL2dbpsX_UJ3j9ld49rOLlWpOsQVYOCMYly7DZuw");'></div>
+</div>
+<div class="hidden md:block h-full relative group cursor-pointer">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-105" data-alt="Zip line landing platform view" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDUJi-yaC_rZZe1p5Ktww7LA1ntlsfRR965RyRYMfD-6frABJgpinzSoXpi4qiDfBevsXXWXQ8KVD8wSH4tB7pIdOpyAU459YyVUAryFdncb73QHkgUkAd-CQ4rCx7KBQcnVXgndtxH0nM_ZpRMXiQyolTyUaMvmIoUa9zYzXIqGyqhEkzJ8mb1KRp_x4JvxHd_AntzHRZ08ZpzXxGkOlNwpIeJhCRm4fieQ_jtDhDEG3aOlCvNWkrdRG4mmBinxpdcBviMHzYsgw");'></div>
+</div>
+<div class="hidden md:block h-full relative group cursor-pointer">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-105" data-alt="Happy tourists after zip lining" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC_4iMSGvBxTbaTBDvPmV4uW7R5O9KcSgUkFVJtkuQ9uHjCj0eTN6r33_KgPgOsiRKq3EfFFFKQO4dyG9IZ6QPHXjuQjZsiqRD5O--EtSm_chAL7uYBwQFxB0vT7y2hCAhpIWKEQqBbpypXtnlLfIClFWDYkDk9Nx0VirJXBgA9jeKmy9PlRGiz2XcuCzypIT7foE_FpbNHFZ1pi_99BPbH3R079wGhMjjjBu0A2f68kYy8Nm7hPie7DjZcvz_aXC7vBBWoiVmIjQ");'></div>
+<button class="absolute bottom-4 right-4 bg-white dark:bg-[#1f2937] text-text-main-light dark:text-white px-3 py-2 rounded-lg text-sm font-semibold shadow-lg flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-[#374151]">
+<span class="material-symbols-outlined" style="font-size: 18px;">grid_view</span>
+                        Show all photos
+                    </button>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row gap-12 relative">
+<!-- Main Content Column -->
+<div class="flex-1 min-w-0">
+<!-- Key Info Chips -->
+<div class="flex flex-wrap gap-4 mb-8 pb-8 border-b border-[#e5e7eb] dark:border-[#374151]">
+<div class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white dark:bg-[#1f2937] border border-[#e5e7eb] dark:border-[#374151]">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark font-medium">Duration</p>
+<p class="text-sm font-semibold text-text-main-light dark:text-white">2 Hours</p>
+</div>
+</div>
+<div class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white dark:bg-[#1f2937] border border-[#e5e7eb] dark:border-[#374151]">
+<span class="material-symbols-outlined text-primary">speed</span>
+<div>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark font-medium">Difficulty</p>
+<p class="text-sm font-semibold text-text-main-light dark:text-white">Moderate</p>
+</div>
+</div>
+<div class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white dark:bg-[#1f2937] border border-[#e5e7eb] dark:border-[#374151]">
+<span class="material-symbols-outlined text-primary">group</span>
+<div>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark font-medium">Group Size</p>
+<p class="text-sm font-semibold text-text-main-light dark:text-white">Up to 20</p>
+</div>
+</div>
+<div class="flex items-center gap-3 px-4 py-3 rounded-xl bg-white dark:bg-[#1f2937] border border-[#e5e7eb] dark:border-[#374151]">
+<span class="material-symbols-outlined text-primary">bolt</span>
+<div>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark font-medium">Top Speed</p>
+<p class="text-sm font-semibold text-text-main-light dark:text-white">100 mph</p>
+</div>
+</div>
+</div>
+<!-- Tabs -->
+<div class="border-b border-[#e5e7eb] dark:border-[#374151] mb-8">
+<nav class="-mb-px flex space-x-8 overflow-x-auto">
+<a class="border-primary text-primary whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium" href="#">Overview</a>
+<a class="border-transparent text-text-sub-light dark:text-text-sub-dark hover:border-gray-300 hover:text-text-main-light dark:hover:text-white whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium" href="#">Itinerary</a>
+<a class="border-transparent text-text-sub-light dark:text-text-sub-dark hover:border-gray-300 hover:text-text-main-light dark:hover:text-white whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium" href="#">Reviews</a>
+<a class="border-transparent text-text-sub-light dark:text-text-sub-dark hover:border-gray-300 hover:text-text-main-light dark:hover:text-white whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium" href="#">Location</a>
+<a class="border-transparent text-text-sub-light dark:text-text-sub-dark hover:border-gray-300 hover:text-text-main-light dark:hover:text-white whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium" href="#">FAQ</a>
+</nav>
+</div>
+<!-- Description Content -->
+<div class="prose dark:prose-invert max-w-none text-text-main-light dark:text-gray-300 mb-10">
+<h3 class="text-xl font-bold text-text-main-light dark:text-white mb-4">About the Experience</h3>
+<p class="mb-4 text-base leading-relaxed">
+                            Prepare for a truly unique and exhilarating experience: the fastest zip line in the world since 2013! Soar over Penrhyn Quarry, where you could travel at speeds of over 100 mph while taking in the breathtaking views of Snowdonia.
+                        </p>
+<p class="mb-6 text-base leading-relaxed">
+                            Velocity 2 is the first of its kind, featuring four parallel lines that span 1.5 kilometers over the bright blue quarry lake. You'll feel the ultimate rush of flying as you launch from the top and descend towards the bottom, head-first!
+                        </p>
+<h4 class="text-lg font-bold text-text-main-light dark:text-white mb-3">Highlights</h4>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none p-0">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-500 text-sm">check_circle</span>
+<span>World's fastest zip line</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-500 text-sm">check_circle</span>
+<span>Views of Snowdonia National Park</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-500 text-sm">check_circle</span>
+<span>Reach speeds over 100mph</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-500 text-sm">check_circle</span>
+<span>Professional guides &amp; safety gear</span>
+</li>
+</ul>
+</div>
+<!-- Location / Map -->
+<div class="mb-10">
+<h3 class="text-xl font-bold text-text-main-light dark:text-white mb-4">Meeting Point</h3>
+<div class="rounded-2xl overflow-hidden h-64 w-full bg-[#e5e7eb] relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Map showing location of Zip World in North Wales" data-location="Bethesda, Wales" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCVFIvwFiKruhPl5_nsIhAwMpJC19ZXwyZzPK2H0EwFY1LI0Uxz2NKQqfB8TELphPSzwHgYC4gi1Y-ViSTSNcBOHbK9B1xuyCWjiVvbqDcLNktjidqjvNbthBik7a8ocN8eo_I8JX6RfvXw_l1g2xnYDnyauxV4od9HOoR1vRNlOem_WzD4YORLwHUtvplDB7lDRL_KlE3ZweQUxyRVJj12fUANK598pajb4ZU9huDXWtm_XldbCi_U_l2YKrsa6VHrn-xZj74ehQ'); filter: grayscale(20%) opacity(0.8);"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-white dark:bg-[#1f2937] p-4 rounded-xl shadow-lg flex flex-col items-center">
+<span class="material-symbols-outlined text-red-500 mb-1">location_on</span>
+<p class="font-bold text-sm text-text-main-light dark:text-white">Zip World Penrhyn Quarry</p>
+<p class="text-xs text-text-sub-light dark:text-gray-400">Bethesda, LL57 4YG</p>
+</div>
+</div>
+<button class="absolute bottom-4 right-4 bg-white dark:bg-[#1f2937] text-text-main-light dark:text-white px-4 py-2 rounded-lg text-sm font-medium shadow-md hover:bg-gray-50 dark:hover:bg-[#374151] flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">directions</span>
+                                Get Directions
+                            </button>
+</div>
+</div>
+<!-- Reviews Summary -->
+<div>
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-xl font-bold text-text-main-light dark:text-white">Reviews</h3>
+<button class="text-primary font-semibold text-sm hover:underline">Write a review</button>
+</div>
+<div class="flex flex-col md:flex-row gap-8 p-6 bg-white dark:bg-[#1f2937] rounded-2xl border border-[#e5e7eb] dark:border-[#374151]">
+<div class="flex flex-col items-center justify-center min-w-[140px] text-center">
+<p class="text-5xl font-black text-text-main-light dark:text-white tracking-tighter">4.9</p>
+<div class="flex text-primary my-2">
+<span class="material-symbols-outlined fill-current">star</span>
+<span class="material-symbols-outlined fill-current">star</span>
+<span class="material-symbols-outlined fill-current">star</span>
+<span class="material-symbols-outlined fill-current">star</span>
+<span class="material-symbols-outlined fill-current">star_half</span>
+</div>
+<p class="text-sm text-text-sub-light dark:text-gray-400">Based on 2,450 reviews</p>
+</div>
+<div class="flex-1 w-full grid gap-2">
+<div class="flex items-center gap-3 text-sm">
+<span class="w-3 text-right font-medium">5</span>
+<div class="flex-1 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[91%] rounded-full"></div>
+</div>
+<span class="w-8 text-right text-text-sub-light dark:text-gray-400">91%</span>
+</div>
+<div class="flex items-center gap-3 text-sm">
+<span class="w-3 text-right font-medium">4</span>
+<div class="flex-1 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[5%] rounded-full"></div>
+</div>
+<span class="w-8 text-right text-text-sub-light dark:text-gray-400">5%</span>
+</div>
+<div class="flex items-center gap-3 text-sm">
+<span class="w-3 text-right font-medium">3</span>
+<div class="flex-1 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[2%] rounded-full"></div>
+</div>
+<span class="w-8 text-right text-text-sub-light dark:text-gray-400">2%</span>
+</div>
+<div class="flex items-center gap-3 text-sm">
+<span class="w-3 text-right font-medium">2</span>
+<div class="flex-1 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[1%] rounded-full"></div>
+</div>
+<span class="w-8 text-right text-text-sub-light dark:text-gray-400">1%</span>
+</div>
+<div class="flex items-center gap-3 text-sm">
+<span class="w-3 text-right font-medium">1</span>
+<div class="flex-1 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[1%] rounded-full"></div>
+</div>
+<span class="w-8 text-right text-text-sub-light dark:text-gray-400">1%</span>
+</div>
+</div>
+</div>
+<!-- Single Review Item -->
+<div class="mt-8 space-y-6">
+<div class="border-b border-[#e5e7eb] dark:border-[#374151] pb-6">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-600 bg-center bg-cover" data-alt="Reviewer profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD2v9UE5USNV3RB7lHcRtBVp6zjt9F0g2XQMVSBirmTuIxKnDbpldmJEznulnbElDFLq_JvFAMg2atQITHmc3Xd2k2ek4aYZd9XRMNMIKRfUbVmt8TClz4Vs3Hortaz8q9z3TWSw9c7dC3vg7V6jjsSSnN1UxqoZ2z2mFeKwZJTDtDkLXW2xK-xO4c06KGwb7y8fWvsgr7zi1z1fS_mFAnTRyg-29i_pm3NsV2B5ZFlZIfhm43_p7cNgG-4mzQQAu8Wx0Gfy9Lg9w");'></div>
+<div>
+<p class="text-sm font-bold text-text-main-light dark:text-white">Sarah Jenkins</p>
+<p class="text-xs text-text-sub-light dark:text-gray-400">October 2023</p>
+</div>
+</div>
+<div class="flex text-primary mb-2 text-xs">
+<span class="material-symbols-outlined" style="font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-size: 16px;">star</span>
+</div>
+<p class="text-text-main-light dark:text-gray-300 text-sm leading-relaxed">Absolutely terrifying but incredible! The staff were so professional and made sure everyone felt safe. The view from the top is unmatched. Worth every penny!</p>
+</div>
+</div>
+<button class="w-full mt-4 py-3 text-primary font-semibold text-sm border border-primary/20 rounded-xl hover:bg-primary/5 transition-colors">Load more reviews</button>
+</div>
+</div>
+<!-- Sticky Booking Sidebar -->
+<div class="lg:w-[380px] shrink-0">
+<div class="sticky top-6">
+<div class="bg-white dark:bg-[#1f2937] border border-[#e5e7eb] dark:border-[#374151] rounded-2xl p-6 shadow-sm">
+<div class="flex items-end gap-2 mb-6">
+<span class="text-3xl font-bold text-text-main-light dark:text-white">£92</span>
+<span class="text-text-sub-light dark:text-gray-400 mb-1">/ person</span>
+</div>
+<form class="flex flex-col gap-4">
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-wide text-text-sub-light dark:text-gray-400">Date</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-gray-400" style="font-size: 20px;">calendar_today</span>
+</div>
+<input class="block w-full pl-10 pr-3 py-3 border border-gray-300 dark:border-gray-600 rounded-xl leading-5 bg-white dark:bg-[#374151] text-text-main-light dark:text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary sm:text-sm" placeholder="Select a date" type="text" value="Thu, Oct 26"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-wide text-text-sub-light dark:text-gray-400">Guests</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-gray-400" style="font-size: 20px;">person</span>
+</div>
+<select class="block w-full pl-10 pr-10 py-3 border border-gray-300 dark:border-gray-600 rounded-xl leading-5 bg-white dark:bg-[#374151] text-text-main-light dark:text-white focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary sm:text-sm appearance-none">
+<option>2 Adults</option>
+<option>1 Adult</option>
+<option>3 Adults</option>
+<option>4 Adults</option>
+</select>
+<div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-gray-400" style="font-size: 20px;">expand_more</span>
+</div>
+</div>
+</div>
+<div class="pt-2">
+<div class="flex justify-between text-sm mb-2 text-text-main-light dark:text-gray-300">
+<span>£92 x 2 Adults</span>
+<span>£184</span>
+</div>
+<div class="flex justify-between text-sm mb-4 text-text-main-light dark:text-gray-300">
+<span>Service fee</span>
+<span>£0</span>
+</div>
+<div class="border-t border-gray-200 dark:border-gray-600 my-4"></div>
+<div class="flex justify-between font-bold text-lg mb-6 text-text-main-light dark:text-white">
+<span>Total</span>
+<span>£184</span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 px-4 rounded-xl transition-colors shadow-lg shadow-primary/20 flex items-center justify-center gap-2" type="button">
+                                    Check Availability
+                                </button>
+<p class="text-xs text-center text-text-sub-light dark:text-gray-400 mt-2">
+<span class="material-symbols-outlined align-middle" style="font-size: 14px;">bolt</span>
+                                    Instant confirmation
+                                </p>
+</form>
+</div>
+<div class="mt-6 bg-primary/10 dark:bg-primary/20 p-4 rounded-xl flex gap-3">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+<div>
+<p class="text-sm font-bold text-text-main-light dark:text-white">Free cancellation</p>
+<p class="text-xs text-text-sub-light dark:text-gray-300 mt-1">Cancel up to 24 hours in advance for a full refund.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- More Experiences -->
+<div class="mt-16 pt-10 border-t border-[#e5e7eb] dark:border-[#374151]">
+<h2 class="text-2xl font-bold text-text-main-light dark:text-white mb-6">You might also like</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<a class="group block" href="#">
+<div class="relative rounded-xl overflow-hidden aspect-[4/3] mb-3">
+<div class="absolute top-3 right-3 bg-white/90 dark:bg-black/60 backdrop-blur-sm px-2 py-1 rounded-md text-xs font-bold z-10">4.8 ★</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Underground trampoline park in a cave" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDS9ucf9YiW6GYj7M_7z733uHHG6zX6u6clyXldyQmnKmjZoOhLR0YpWt1V4PmqoN9lZXymUuo0mhp3GPZ-bnWUpnmhEgdkU-6ZnAA1EJIqPsm28wwWLh-YjjrVX7UlM0gdUIMjlw-RhOdrB3OZHfdzRYVWh3FWYmxqKFXEuRnT6I_1c33lm04d_JlMhgeltecf8XMG1SbBC1q77Up6i9h77tIMswWKsjUN2QBWEp38gxeavNrn5ziJi57XCZoSTNR0DwcQ-nZOxw");'></div>
+</div>
+<h3 class="font-bold text-text-main-light dark:text-white group-hover:text-primary transition-colors">Bounce Below</h3>
+<p class="text-sm text-text-sub-light dark:text-gray-400">Blaenau Ffestiniog</p>
+<p class="mt-1 font-semibold text-text-main-light dark:text-white">From £25</p>
+</a>
+<!-- Card 2 -->
+<a class="group block" href="#">
+<div class="relative rounded-xl overflow-hidden aspect-[4/3] mb-3">
+<div class="absolute top-3 right-3 bg-white/90 dark:bg-black/60 backdrop-blur-sm px-2 py-1 rounded-md text-xs font-bold z-10">4.9 ★</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Forest coaster cart on rails" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB4qKw8TBqvlJcU4aC2Hi4p6TF5_zAbwU1_aeXLWiUhE0bk_yWEtCAFVlMyxnS6vpnsFDDg2mQjcRnJc4a82gcza29gRS1N6GoAmY-Xkm-SUtX6C-rFmslyKfpJMdFQkK4Oa9Wq5BykaoYxH9dD18L53JLeFDF5syw2Oxuw8IFKMmvtyB5_eku88hlzyJhvL_pG8PzyqNpTfxjHl1NgNpWkyxQFHg94GnJUDG3M38dzHd6pR4ytwUe0ZBqagkoRx9OFJXIKCECcrw");'></div>
+</div>
+<h3 class="font-bold text-text-main-light dark:text-white group-hover:text-primary transition-colors">Forest Coaster</h3>
+<p class="text-sm text-text-sub-light dark:text-gray-400">Betws-y-Coed</p>
+<p class="mt-1 font-semibold text-text-main-light dark:text-white">From £30</p>
+</a>
+<!-- Card 3 -->
+<a class="group block" href="#">
+<div class="relative rounded-xl overflow-hidden aspect-[4/3] mb-3">
+<div class="absolute top-3 right-3 bg-white/90 dark:bg-black/60 backdrop-blur-sm px-2 py-1 rounded-md text-xs font-bold z-10">4.7 ★</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Surf boarders in man made lagoon" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZFVTcFqcK9-hZXkQxzFX2hw4frdalOvtYtWNDpHpZH9TpgN90zaix-tprjcgUdDazkKxHMOkiWSk5qOGD_Cu_KPjy2P8zfeSVPpVk1NgQK1PmZaEKE6DIvKTQCh284YWh8lxhS4A7HRCJ6q6gtFU3C2j1NfSivI3zb3huqvcaRXH1k1pL0kXyY9ymMNHIZqWRgBgv-n2TfN0WERSwq-wEh_oIdeJDq_f8ntCL8KvhQ6bq9X4fOjJ6XYq8QPenRHQJQW5Ux9fsAA");'></div>
+</div>
+<h3 class="font-bold text-text-main-light dark:text-white group-hover:text-primary transition-colors">Surf Snowdonia</h3>
+<p class="text-sm text-text-sub-light dark:text-gray-400">Dolgarrog</p>
+<p class="mt-1 font-semibold text-text-main-light dark:text-white">From £55</p>
+</a>
+<!-- Card 4 -->
+<a class="group block" href="#">
+<div class="relative rounded-xl overflow-hidden aspect-[4/3] mb-3">
+<div class="absolute top-3 right-3 bg-white/90 dark:bg-black/60 backdrop-blur-sm px-2 py-1 rounded-md text-xs font-bold z-10">5.0 ★</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Mountain biking trail in forest" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBThP-CBIOyTXt1vlRabCpjo0CJqwW910LUkgO9dKNMLewUug9GVHhDFs9xQkz3QkiYh51W_Dl7ar9pN8gtrkPzIvI62sv5ZoOxE_qB7wBOz5mCvD-cg3H-d9V99Ey-6WQv5nmyc0lGhQjDBzfpogoONlQPLjdyYChqBKQPuEmJx4RkcRL-sjHSA9_MN8vkv7-hpwmiUTdW2rAfxL6htvEqi_oVZfi9lCcnukGng0en81Dt46P5q4wDmXsKJmosuhIb4XIsEDaaRA");'></div>
+</div>
+<h3 class="font-bold text-text-main-light dark:text-white group-hover:text-primary transition-colors">Bike Park Wales</h3>
+<p class="text-sm text-text-sub-light dark:text-gray-400">Merthyr Tydfil</p>
+<p class="mt-1 font-semibold text-text-main-light dark:text-white">From £45</p>
+</a>
+</div>
+</div>
+</main>
+</div>
+</body></html>

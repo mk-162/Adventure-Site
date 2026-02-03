@@ -26,6 +26,23 @@ interface RegionPageProps {
   params: Promise<{ region: string }>;
 }
 
+// Helper to extract section content from description
+function extractSection(description: string | null, sectionName: string): string | null {
+  if (!description) return null;
+  
+  // Look for **Section Name:** pattern and extract content until next ** or end
+  const regex = new RegExp(`\\*\\*${sectionName}:\\*\\*\\s*([^*]+?)(?=\\*\\*|$)`, 'i');
+  const match = description.match(regex);
+  return match ? match[1].trim() : null;
+}
+
+// Default content for Plan Your Visit sections
+const defaultPlanContent = {
+  gettingThere: "Check local transport links and drive times from major cities. Many regions have good rail connections.",
+  bestTime: "Spring and autumn offer pleasant weather with fewer crowds. Summer is warmest but busiest.",
+  essentialGear: "Waterproof jacket and layers are essential year-round. For hiking, bring sturdy boots, a map, and extra food/water.",
+};
+
 export default async function RegionPage({ params }: RegionPageProps) {
   const { region: regionSlug } = await params;
   const region = await getRegionWithStats(regionSlug);
@@ -39,6 +56,11 @@ export default async function RegionPage({ params }: RegionPageProps) {
     getAccommodationByRegion(regionSlug, 4),
     getOperators({ limit: 3 }),
   ]);
+  
+  // Extract Plan Your Visit content from description or use defaults
+  const gettingThere = extractSection(region.description, 'Getting There') || defaultPlanContent.gettingThere;
+  const bestTimeToVisit = extractSection(region.description, 'Best Time to Visit') || defaultPlanContent.bestTime;
+  const essentialGear = defaultPlanContent.essentialGear; // No region usually has this in description
 
   return (
     <div className="min-h-screen pt-4 lg:pt-10">
@@ -217,17 +239,17 @@ export default async function RegionPage({ params }: RegionPageProps) {
                 <AccordionItem 
                     icon={Bus} 
                     title="Getting There" 
-                    content="Trains run directly to Bangor and Llandudno Junction. From there, the Conwy Valley Line takes you into the heart of the park. By car, the A55 provides easy access from Chester and Liverpool." 
+                    content={gettingThere} 
                 />
                 <AccordionItem 
                     icon={Cloud} 
                     title="Best Time to Visit" 
-                    content="May to September offers the best weather, though shoulder seasons (April/October) are less crowded and still beautiful. Winter brings snow to the peaks for experienced mountaineers." 
+                    content={bestTimeToVisit} 
                 />
                 <AccordionItem 
                     icon={Backpack} 
                     title="Essential Gear" 
-                    content="Waterproof jacket and layers are essential year-round. For hiking, bring sturdy boots, a map, and extra food/water. Weather changes rapidly in the mountains. For hiking, bring sturdy boots, a map, and extra food/water. Weather changes rapidly in the mountains." 
+                    content={essentialGear} 
                 />
               </div>
             </section>

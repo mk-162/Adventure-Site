@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Coasteering in Snowdonia - Adventure Wales</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#547183",
+                        "primary-dark": "#3e5361",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#171a1b",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#222628",
+                        "border-light": "#e5e7eb",
+                        "border-dark": "#374151",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom checkbox style from requirement */
+        .checkbox-wrapper {
+            --checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');
+        }
+        
+        /* Hide scrollbar for clean horizontal scroll if needed */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white antialiased checkbox-wrapper min-h-screen flex flex-col">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full bg-surface-light dark:bg-surface-dark border-b border-border-light dark:border-border-dark">
+<div class="max-w-[1280px] mx-auto px-4 lg:px-8 h-16 flex items-center justify-between gap-4">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-3 text-slate-900 dark:text-white hover:opacity-80 transition-opacity" href="#">
+<div class="size-8 text-primary">
+<svg class="w-full h-full fill-current" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-lg font-bold tracking-tight hidden md:block">Adventure Wales</span>
+</a>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Destinations</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Activities</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Blog</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">About Us</a>
+</nav>
+</div>
+<div class="flex items-center gap-4 flex-1 justify-end">
+<div class="hidden md:flex w-full max-w-xs relative group">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary">search</span>
+<input class="w-full h-10 bg-background-light dark:bg-background-dark border-none rounded-xl pl-10 pr-4 text-sm focus:ring-2 focus:ring-primary placeholder-slate-400 dark:text-white" placeholder="Search adventures..."/>
+</div>
+<div class="flex gap-3">
+<button class="hidden sm:flex h-10 px-5 items-center justify-center rounded-xl bg-background-light dark:bg-background-dark text-slate-900 dark:text-white text-sm font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                        Log In
+                    </button>
+<button class="h-10 px-5 flex items-center justify-center rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary-dark transition-colors shadow-sm">
+                        Sign Up
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-[1280px] mx-auto px-4 lg:px-8 py-6">
+<!-- Breadcrumbs -->
+<nav class="flex flex-wrap gap-2 text-sm text-slate-500 dark:text-slate-400 mb-6">
+<a class="hover:text-primary hover:underline" href="#">Home</a>
+<span>/</span>
+<a class="hover:text-primary hover:underline" href="#">Wales</a>
+<span>/</span>
+<span class="text-slate-900 dark:text-white font-medium">Coasteering</span>
+</nav>
+<!-- Page Heading -->
+<div class="mb-8">
+<h1 class="text-3xl md:text-4xl font-black tracking-tight text-slate-900 dark:text-white mb-2">Coasteering in Snowdonia</h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 max-w-3xl">Explore the rugged coastline of North Wales. Jump, swim, and scramble your way through an unforgettable adventure.</p>
+</div>
+<div class="flex flex-col lg:flex-row gap-8 relative">
+<!-- Sidebar Filters (Sticky) -->
+<aside class="w-full lg:w-80 shrink-0 lg:sticky lg:top-24 h-fit space-y-6">
+<!-- Mobile Filter Toggle (Visible only on small screens) -->
+<button class="lg:hidden w-full flex items-center justify-between p-4 bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-border-light dark:border-border-dark">
+<span class="font-bold flex items-center gap-2"><span class="material-symbols-outlined">tune</span> Filters</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+<!-- Filter Container -->
+<div class="hidden lg:block space-y-6">
+<!-- Difficulty Filter -->
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm">
+<h3 class="font-bold text-lg mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">signal_cellular_alt</span>
+                            Difficulty
+                        </h3>
+<div class="space-y-3">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="h-5 w-5 rounded border-slate-300 dark:border-slate-600 bg-transparent text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+<span class="text-slate-700 dark:text-slate-200 group-hover:text-primary transition-colors">Beginner Friendly</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="h-5 w-5 rounded border-slate-300 dark:border-slate-600 bg-transparent text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+<span class="text-slate-700 dark:text-slate-200 group-hover:text-primary transition-colors">Moderate</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="h-5 w-5 rounded border-slate-300 dark:border-slate-600 bg-transparent text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+<span class="text-slate-700 dark:text-slate-200 group-hover:text-primary transition-colors">Challenging</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="h-5 w-5 rounded border-slate-300 dark:border-slate-600 bg-transparent text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+<span class="text-slate-700 dark:text-slate-200 group-hover:text-primary transition-colors">Extreme</span>
+</label>
+</div>
+</div>
+<!-- Price Slider -->
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm">
+<h3 class="font-bold text-lg mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">payments</span>
+                            Price Range
+                        </h3>
+<div class="relative w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full mb-6">
+<div class="absolute left-[20%] right-[30%] top-0 bottom-0 bg-primary rounded-full"></div>
+<div class="absolute left-[20%] top-1/2 -translate-y-1/2 w-4 h-4 bg-white border-2 border-primary rounded-full shadow cursor-pointer hover:scale-110 transition-transform">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-100">£30</div>
+</div>
+<div class="absolute right-[30%] top-1/2 -translate-y-1/2 w-4 h-4 bg-white border-2 border-primary rounded-full shadow cursor-pointer hover:scale-110 transition-transform">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs py-1 px-2 rounded opacity-100">£90</div>
+</div>
+</div>
+<div class="flex justify-between text-sm text-slate-500">
+<span>£0</span>
+<span>£200+</span>
+</div>
+</div>
+<!-- Duration Filter -->
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-border-light dark:border-border-dark shadow-sm">
+<h3 class="font-bold text-lg mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">schedule</span>
+                            Duration
+                        </h3>
+<div class="space-y-3">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="h-5 w-5 rounded border-slate-300 dark:border-slate-600 bg-transparent text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+<span class="text-slate-700 dark:text-slate-200 group-hover:text-primary transition-colors">Half Day (3-4h)</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="h-5 w-5 rounded border-slate-300 dark:border-slate-600 bg-transparent text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+<span class="text-slate-700 dark:text-slate-200 group-hover:text-primary transition-colors">Full Day (6-8h)</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="h-5 w-5 rounded border-slate-300 dark:border-slate-600 bg-transparent text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+<span class="text-slate-700 dark:text-slate-200 group-hover:text-primary transition-colors">Multi-day</span>
+</label>
+</div>
+</div>
+</div>
+</aside>
+<!-- Results Column -->
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between mb-4">
+<p class="text-slate-500 dark:text-slate-400 font-medium">Showing 12 Adventures</p>
+<div class="flex items-center gap-2">
+<span class="text-sm text-slate-500 dark:text-slate-400 hidden sm:inline">Sort by:</span>
+<select class="bg-transparent border-none text-sm font-bold text-slate-900 dark:text-white focus:ring-0 cursor-pointer p-0">
+<option>Recommended</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+</select>
+</div>
+</div>
+<!-- Grid of Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+<!-- Activity Card 1 -->
+<div class="group bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden border border-border-light dark:border-border-dark hover:shadow-lg transition-all duration-300 flex flex-col h-full">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Person jumping from a rocky cliff into the blue ocean water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyEnFLCovpz-QZLZv8o_bLcgmo1eFJfbQyHNXjxGuFcBvxhNQ0HKwujVj_y5IzKnUfAdU14rvl9T9Ugb265CD92IMNJJXch7NXOlc1imMXRfgF-WHvjXHgDdQZ9R4Z7fF4F3Zi1ZJJudPHO-wnpeYsVgUax1utngajERLJtfugds4aHv2aEXoeNQzZmnOd4guFWk1xpIg62Ly6GrdO-GynXw0gIz5frv-Pzi24hgWScy2HbEKLjUBOMtomdA4K7zc1GByvxImtyg"/>
+<div class="absolute top-3 right-3 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-2 py-1 rounded-lg flex items-center gap-1 text-xs font-bold shadow-sm">
+<span class="material-symbols-outlined text-yellow-500 text-sm fill-current">star</span> 4.9 (124)
+                            </div>
+<div class="absolute top-3 left-3 bg-primary text-white px-2 py-1 rounded-lg text-xs font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">verified</span> Verified
+                            </div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex items-start justify-between mb-2">
+<div class="text-xs font-bold uppercase tracking-wider text-primary">Anglesey</div>
+<div class="text-xs text-slate-500 flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 3 hrs</div>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 leading-tight">Classic Coasteering Adventure</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2 mb-4 flex-1">Perfect for beginners. Explore caves, swim through gaps, and try cliff jumps from 1m to 5m.</p>
+<div class="flex items-center justify-between pt-4 border-t border-border-light dark:border-border-dark mt-auto">
+<div class="flex flex-col">
+<span class="text-xs text-slate-500 dark:text-slate-400">From</span>
+<span class="text-xl font-black text-slate-900 dark:text-white">£45</span>
+</div>
+<button class="bg-primary hover:bg-primary-dark text-white text-sm font-bold py-2.5 px-5 rounded-lg transition-colors">
+                                    Book Now
+                                </button>
+</div>
+</div>
+</div>
+<!-- Activity Card 2 -->
+<div class="group bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden border border-border-light dark:border-border-dark hover:shadow-lg transition-all duration-300 flex flex-col h-full">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Group of people in wetsuits swimming in choppy sea water near rocks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASkedeWsSBporMEhnaEpHinwI24zAzByIiHdWMbUFa-DYlPsvgRqas034XCHjoH4Hr5YE2nBbpgHPPfvJ7WNIMP3L4EsMmV7xRWdkvosWvTXTEq_8v2U8mkTgsOmdn7-RqNC_3GPTQwjVeSeba9G48_VAnkYyYjD0RAGpZ6CMxMMO-8RFBaaY0K-HJjknjpi0nuRj7bRx3tybNjRhvg1rSyd8upVpxaV5nJ2lta81GQnUz3cFxHs4Q3vipXo10qXy3fKPG04gIPw"/>
+<div class="absolute top-3 right-3 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-2 py-1 rounded-lg flex items-center gap-1 text-xs font-bold shadow-sm">
+<span class="material-symbols-outlined text-yellow-500 text-sm fill-current">star</span> 4.7 (89)
+                            </div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex items-start justify-between mb-2">
+<div class="text-xs font-bold uppercase tracking-wider text-primary">Holyhead</div>
+<div class="text-xs text-slate-500 flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 4 hrs</div>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 leading-tight">Extreme Coast Explorer</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2 mb-4 flex-1">For the adrenaline junkies. Bigger jumps, rougher swells, and advanced scrambling techniques.</p>
+<div class="flex items-center justify-between pt-4 border-t border-border-light dark:border-border-dark mt-auto">
+<div class="flex flex-col">
+<span class="text-xs text-slate-500 dark:text-slate-400">From</span>
+<span class="text-xl font-black text-slate-900 dark:text-white">£65</span>
+</div>
+<button class="bg-primary hover:bg-primary-dark text-white text-sm font-bold py-2.5 px-5 rounded-lg transition-colors">
+                                    Book Now
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Operator Banner -->
+<div class="w-full rounded-2xl bg-slate-900 text-white overflow-hidden relative mb-8 flex flex-col md:flex-row items-center">
+<div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-transparent z-10 pointer-events-none"></div>
+<img class="absolute inset-0 w-full h-full object-cover opacity-60" data-alt="Surfer looking out at the ocean waves from a rocky shore" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ2TLZphGHmz0KQOnRd0LDbi9hq10y-hSARo9clX_-wFU-rc1VOBlLmRIrvV4TAahGikG4hEGBhTB3BxUpLj3FMrzoMnoJz4NODlgLzaZjgtPzcHWm9nd7-RiTVJSdsnrmeYBYN5fSx67XDzEulDgDyZK9tj9ENuZRqqLQB1gNCkKkCFt51gQkrcinYJTKcNNB_HOhq_QtmFcOomQoAbEDwHaydWslfLsKmLGSh7gbbg5b0rMLHYVKlg3LtB0Rb27OVIrgcHjxJw"/>
+<div class="relative z-20 p-8 flex flex-col items-start gap-4 md:w-2/3">
+<span class="bg-yellow-500 text-slate-900 text-xs font-black px-2 py-1 rounded uppercase tracking-wider">Featured Operator</span>
+<h2 class="text-2xl md:text-3xl font-black leading-tight">Snowdonia Adventures</h2>
+<p class="text-slate-300 text-sm md:text-base">Award-winning guides with over 20 years of experience on the Welsh coast. Safety first, adrenaline always.</p>
+<button class="mt-2 bg-white text-slate-900 hover:bg-slate-100 font-bold py-3 px-6 rounded-xl transition-colors flex items-center gap-2">
+                            View Their Trips <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Grid of Cards (Continued) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Activity Card 3 -->
+<div class="group bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden border border-border-light dark:border-border-dark hover:shadow-lg transition-all duration-300 flex flex-col h-full">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Woman in wetsuit climbing up a wet rocky cliff face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDidnZSyR1karWnTQRKoW0wbJvQfrPXZXOTXb66r2uVn7lnyGPTcGEDX9eePiccZw3W5o7uP73m4yQ03OGdn49cy3fQi2jfqcbLeBtn84wykw5eC3tRko2huGwIjNEBFHEWjScvM1-D8yxKLLlgVUQDtORIJsn7p-ALJHGChO362EKywNYih-YSu4Cho6dR5ofp81AlkTzO83iJWJ9EXl7xKYMb0ftiZJPzCTgY_UuETeDrINXGO52mK2TZ_NtEJiOhW4bvCVpTDg"/>
+<div class="absolute top-3 right-3 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-2 py-1 rounded-lg flex items-center gap-1 text-xs font-bold shadow-sm">
+<span class="material-symbols-outlined text-yellow-500 text-sm fill-current">star</span> 5.0 (42)
+                            </div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex items-start justify-between mb-2">
+<div class="text-xs font-bold uppercase tracking-wider text-primary">Pwllheli</div>
+<div class="text-xs text-slate-500 flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 5 hrs</div>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 leading-tight">Family Coasteer Experience</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2 mb-4 flex-1">A gentle introduction to coasteering suitable for ages 8+. Safe jumps and plenty of wildlife spotting.</p>
+<div class="flex items-center justify-between pt-4 border-t border-border-light dark:border-border-dark mt-auto">
+<div class="flex flex-col">
+<span class="text-xs text-slate-500 dark:text-slate-400">From</span>
+<span class="text-xl font-black text-slate-900 dark:text-white">£40</span>
+</div>
+<button class="bg-primary hover:bg-primary-dark text-white text-sm font-bold py-2.5 px-5 rounded-lg transition-colors">
+                                    Book Now
+                                </button>
+</div>
+</div>
+</div>
+<!-- Activity Card 4 -->
+<div class="group bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden border border-border-light dark:border-border-dark hover:shadow-lg transition-all duration-300 flex flex-col h-full">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Person swimming in a blue sea cove surrounded by cliffs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK7C4ggCop_5dYbu1D2bMC4WgMg8BEyudaKWjkXoc6EsPqPo8MaSMKsVxT-wdZMQiYPcUg7wMgF9zasz2hRSdRhfyoETdgM4tLjsM5NTiU24yH7tfoIJgZlzZ3nMwLDeFWNwcWsHBOg92HFX1ZAP1hvg00JkVMW5SBDPT-MYaTeE6cWj9w4dBha-fGDAtENXOpxxA3od0XzpeDRsdRWGlCZ5DKruzqBmcA0BOHsKrsC7LKTzTyjUyUZuwI0p3hsVEV9Q05j3FPLQ"/>
+<div class="absolute top-3 right-3 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-2 py-1 rounded-lg flex items-center gap-1 text-xs font-bold shadow-sm">
+<span class="material-symbols-outlined text-yellow-500 text-sm fill-current">star</span> 4.8 (210)
+                            </div>
+<div class="absolute top-3 left-3 bg-primary text-white px-2 py-1 rounded-lg text-xs font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">verified</span> Verified
+                            </div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex items-start justify-between mb-2">
+<div class="text-xs font-bold uppercase tracking-wider text-primary">Rhyl</div>
+<div class="text-xs text-slate-500 flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 3 hrs</div>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 leading-tight">Sunset Coasteering</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2 mb-4 flex-1">Experience the coast in a new light. Finish your adventure watching the sun dip below the horizon.</p>
+<div class="flex items-center justify-between pt-4 border-t border-border-light dark:border-border-dark mt-auto">
+<div class="flex flex-col">
+<span class="text-xs text-slate-500 dark:text-slate-400">From</span>
+<span class="text-xl font-black text-slate-900 dark:text-white">£55</span>
+</div>
+<button class="bg-primary hover:bg-primary-dark text-white text-sm font-bold py-2.5 px-5 rounded-lg transition-colors">
+                                    Book Now
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Load More -->
+<div class="mt-12 flex justify-center">
+<button class="bg-white dark:bg-surface-dark border border-slate-200 dark:border-border-dark text-slate-900 dark:text-white font-bold py-3 px-8 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors shadow-sm">
+                        Load More Adventures
+                    </button>
+</div>
+</div>
+</div>
+<!-- SEO Content Sections -->
+<div class="mt-24 grid grid-cols-1 lg:grid-cols-12 gap-12 border-t border-border-light dark:border-border-dark pt-16">
+<!-- Main SEO Text -->
+<div class="lg:col-span-7">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">Why Choose Coasteering in Snowdonia?</h2>
+<div class="prose dark:prose-invert text-slate-600 dark:text-slate-300 leading-relaxed space-y-4">
+<p>
+                        Snowdonia offers some of the most dramatic coastlines in the UK. Combining cliffs, waves, and wildlife, coasteering here is a unique way to experience the natural environment up close. Unlike simply walking the coastal path, you'll be immersed in the elements.
+                    </p>
+<p>
+                        Whether you are looking for heart-pounding jumps or a scenic swim into hidden sea caves, our verified operators provide safe and exhilarating experiences tailored to all skill levels. All equipment, including wetsuits, buoyancy aids, and helmets, is typically provided.
+                    </p>
+</div>
+<div class="mt-12">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6">Frequently Asked Questions</h3>
+<div class="space-y-4">
+<details class="group bg-surface-light dark:bg-surface-dark p-4 rounded-xl cursor-pointer border border-border-light dark:border-border-dark">
+<summary class="flex items-center justify-between font-bold list-none">
+                                 Do I need to be a strong swimmer?
+                                 <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                                 Not necessarily. While water confidence helps, the buoyancy aids will keep you afloat. Always check the difficulty rating of the specific activity.
+                             </p>
+</details>
+<details class="group bg-surface-light dark:bg-surface-dark p-4 rounded-xl cursor-pointer border border-border-light dark:border-border-dark">
+<summary class="flex items-center justify-between font-bold list-none">
+                                 What should I bring?
+                                 <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                                 You will need a swimsuit to wear under the wetsuit, a towel, and sturdy footwear (like old trainers) that you don't mind getting wet.
+                             </p>
+</details>
+<details class="group bg-surface-light dark:bg-surface-dark p-4 rounded-xl cursor-pointer border border-border-light dark:border-border-dark">
+<summary class="flex items-center justify-between font-bold list-none">
+                                 Is it safe for children?
+                                 <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                                 Yes, many operators offer family-specific trips with age limits usually starting around 8 years old.
+                             </p>
+</details>
+</div>
+</div>
+</div>
+<!-- Related Links -->
+<div class="lg:col-span-5">
+<div class="bg-primary/5 dark:bg-primary/10 p-8 rounded-2xl">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6">Popular Nearby Activities</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<a class="flex items-center gap-3 p-3 bg-white dark:bg-surface-dark rounded-xl hover:shadow-md transition-shadow group" href="#">
+<div class="size-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined">kayaking</span>
+</div>
+<span class="font-medium text-sm group-hover:text-primary">Kayaking</span>
+</a>
+<a class="flex items-center gap-3 p-3 bg-white dark:bg-surface-dark rounded-xl hover:shadow-md transition-shadow group" href="#">
+<div class="size-10 rounded-lg bg-green-100 text-green-600 flex items-center justify-center">
+<span class="material-symbols-outlined">hiking</span>
+</div>
+<span class="font-medium text-sm group-hover:text-primary">Hiking Snowdon</span>
+</a>
+<a class="flex items-center gap-3 p-3 bg-white dark:bg-surface-dark rounded-xl hover:shadow-md transition-shadow group" href="#">
+<div class="size-10 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center">
+<span class="material-symbols-outlined">surfing</span>
+</div>
+<span class="font-medium text-sm group-hover:text-primary">Surf School</span>
+</a>
+<a class="flex items-center gap-3 p-3 bg-white dark:bg-surface-dark rounded-xl hover:shadow-md transition-shadow group" href="#">
+<div class="size-10 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center">
+<span class="material-symbols-outlined">landscape</span>
+</div>
+<span class="font-medium text-sm group-hover:text-primary">Zip World</span>
+</a>
+</div>
+<div class="mt-8 pt-8 border-t border-slate-200 dark:border-slate-700">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-4">Top Locations</h3>
+<div class="flex flex-wrap gap-2">
+<a class="px-3 py-1.5 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 text-xs font-medium hover:border-primary transition-colors" href="#">Anglesey</a>
+<a class="px-3 py-1.5 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 text-xs font-medium hover:border-primary transition-colors" href="#">Pembrokeshire</a>
+<a class="px-3 py-1.5 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 text-xs font-medium hover:border-primary transition-colors" href="#">Gower</a>
+<a class="px-3 py-1.5 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 text-xs font-medium hover:border-primary transition-colors" href="#">Cardiff</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Simple -->
+<footer class="bg-white dark:bg-surface-dark border-t border-border-light dark:border-border-dark py-12 mt-12">
+<div class="max-w-[1280px] mx-auto px-4 lg:px-8 text-center">
+<div class="flex justify-center items-center gap-2 mb-4 text-slate-900 dark:text-white">
+<div class="size-6 text-primary">
+<svg class="w-full h-full fill-current" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="font-bold">Adventure Wales</span>
+</div>
+<p class="text-slate-500 text-sm">© 2024 Adventure Wales. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

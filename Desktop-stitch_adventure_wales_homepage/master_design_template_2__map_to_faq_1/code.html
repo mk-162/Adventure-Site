@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Adventure Wales - Itineraries &amp; Booking</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f97316","primary-dark": "#c2410c","background-light": "#f8fafc","background-dark": "#0f172a","card-light": "#ffffff",
+                        "card-dark": "#1e293b","text-main": "#1e3a4c","text-main-dark": "#f1f5f9",
+                        "text-secondary": "#64748b","text-secondary-dark": "#94a3b8",
+                        "border-light": "#e2e8f0",
+                        "border-dark": "#334155",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main dark:text-text-main-dark font-display antialiased transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-solid border-border-light dark:border-border-dark bg-card-light/95 dark:bg-background-dark/95 backdrop-blur-sm px-4 md:px-10 py-3">
+<div class="mx-auto flex max-w-[1280px] items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-text-main dark:text-white">
+<div class="size-8 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">hiking</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Adventure Wales</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Destinations</a>
+<a class="text-sm font-medium leading-normal text-primary" href="#">Itineraries</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About Us</a>
+</nav>
+</div>
+<div class="flex items-center gap-4 md:gap-8">
+<label class="hidden md:flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full bg-[#f1f5f9] dark:bg-card-dark transition-colors">
+<div class="text-text-secondary dark:text-text-secondary-dark flex border-none items-center justify-center pl-4 rounded-l-xl border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-text-main dark:text-white focus:outline-0 focus:ring-0 border-none bg-transparent focus:border-none h-full placeholder:text-text-secondary dark:placeholder:text-text-secondary-dark px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search" value=""/>
+</div>
+</label>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-6 bg-primary hover:bg-primary-dark transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Book Now</span>
+</button>
+<button class="md:hidden text-text-main dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full max-w-[1280px] mx-auto px-4 md:px-10 py-8 flex flex-col gap-16">
+<section class="flex flex-col gap-8">
+<div class="flex flex-col gap-2">
+<h1 class="text-3xl md:text-[32px] font-bold leading-tight tracking-tight text-text-main dark:text-white">Popular Itineraries</h1>
+<p class="text-text-secondary dark:text-text-secondary-dark max-w-2xl">Discover our most loved routes through the heart of Wales, from the soaring peaks of Snowdonia to the rugged Pembrokeshire coast.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="group flex flex-col gap-3 rounded-2xl bg-card-light dark:bg-card-dark p-3 transition-shadow hover:shadow-lg border border-transparent dark:border-border-dark">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl relative overflow-hidden" data-alt="Mountain range with hikers in distance" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCGVYERbKu6isbkZpYNvRiKJU3FWFrZFnfmjfwDUE8Yt-IkcGZ0cxPtjlv9Dn6bGtX4P5AkYHmhfJ9zsV6z-mdN53AIQfjnatv4uJ8Sx_6po0Q7FGJOh2UGEqBELYfq8mSsJ06Scl6PO2hb-7DKBEVxSShIxSjIux8Y1b9newkSKHRb5SdjsHCkKbR_qldyM93LySUhFcZp1KWvEeUogLexMo98_IQWVPJ5YdLrQvLkmDGPQvBCKAuQ7zPtTYEBLOcQ6rNeaEGTg");'>
+<div class="absolute top-3 right-3 bg-white/90 dark:bg-black/60 backdrop-blur-sm px-2 py-1 rounded-lg text-xs font-bold flex items-center gap-1 text-text-main dark:text-white">
+<span class="material-symbols-outlined text-primary text-[16px]">bolt</span> Hard
+                            </div>
+</div>
+<div class="px-1 pb-1">
+<div class="flex justify-between items-start mb-1">
+<p class="text-text-main dark:text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">Snowdonia Peaks Challenge</p>
+</div>
+<p class="text-text-secondary dark:text-text-secondary-dark text-sm font-normal leading-normal flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span> 3 Days
+                                <span class="mx-1">•</span>
+<span class="material-symbols-outlined text-[16px]">hiking</span> 24km Total
+                            </p>
+</div>
+</div>
+<div class="group flex flex-col gap-3 rounded-2xl bg-card-light dark:bg-card-dark p-3 transition-shadow hover:shadow-lg border border-transparent dark:border-border-dark">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl relative overflow-hidden" data-alt="Coastal path overlooking cliffs and ocean" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBUEFB3J1c-uxgjFThTtzcfHpc73e_WPiBZvqUTb6MWJI2wZz97_7ocRCvmwUWc519NGGLq_0fZarqmG3ltTzdnSgXVsqP9iRZDJ6mvXzjhCM_JS_DRUd272o1V8m3n6eOj8VdNqm2PXXzI2XslTzxQWvFPxtt6k5M4qvw0MfjuHa3McfBWYd7epgaE06MWpa_RCqV6VjdAaZ4VLS0YEWy4hHUA7wnCbvG-_cyFXx-6rtXM0OVPcVcea2OHJKu5OSxdRDxPCNrxDA");'>
+<div class="absolute top-3 right-3 bg-white/90 dark:bg-black/60 backdrop-blur-sm px-2 py-1 rounded-lg text-xs font-bold flex items-center gap-1 text-text-main dark:text-white">
+<span class="material-symbols-outlined text-yellow-500 text-[16px]">balance</span> Moderate
+                            </div>
+</div>
+<div class="px-1 pb-1">
+<div class="flex justify-between items-start mb-1">
+<p class="text-text-main dark:text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">Pembrokeshire Coastal Path</p>
+</div>
+<p class="text-text-secondary dark:text-text-secondary-dark text-sm font-normal leading-normal flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span> 5 Days
+                                <span class="mx-1">•</span>
+<span class="material-symbols-outlined text-[16px]">hiking</span> 45km Total
+                            </p>
+</div>
+</div>
+<div class="group flex flex-col gap-3 rounded-2xl bg-card-light dark:bg-card-dark p-3 transition-shadow hover:shadow-lg border border-transparent dark:border-border-dark">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl relative overflow-hidden" data-alt="Green rolling hills with sheep" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYgLwqn_73dd8TETwE7uXmpt6sOT00m0rImF8T8AYa0ckdYirbklZYsXGvewUKaGUofOojunt77VWp0qsIiKMs6zWiDJ0vTFNqwaeCrvD7R2NihQQNaqDeSyuL56VaMvV8g2sVLUDRVNCh_neRT84cAE0kc30vn6XjOkeXD28GDGcLtuQ4qVPiOyw2S_QaX5-BzWQbqG9oJK5OIHFxaTX7cPDlvb1eZ03XqxC-nBK4OMb9eKrSMNOanCiSi8eGgRrDA1w8AP-Zcg");'>
+<div class="absolute top-3 right-3 bg-white/90 dark:bg-black/60 backdrop-blur-sm px-2 py-1 rounded-lg text-xs font-bold flex items-center gap-1 text-text-main dark:text-white">
+<span class="material-symbols-outlined text-green-500 text-[16px]">spa</span> Easy
+                            </div>
+</div>
+<div class="px-1 pb-1">
+<div class="flex justify-between items-start mb-1">
+<p class="text-text-main dark:text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">Brecon Beacons Explorer</p>
+</div>
+<p class="text-text-secondary dark:text-text-secondary-dark text-sm font-normal leading-normal flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span> 2 Days
+                                <span class="mx-1">•</span>
+<span class="material-symbols-outlined text-[16px]">hiking</span> 12km Total
+                            </p>
+</div>
+</div>
+</div>
+<div class="mt-8 bg-card-light dark:bg-card-dark rounded-3xl p-6 md:p-8 shadow-sm border border-border-light dark:border-border-dark">
+<h3 class="text-text-main dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">schedule</span> Day 1 Preview: Arrival &amp; Setup
+                    </h3>
+<div class="grid grid-cols-[40px_1fr] gap-x-4 md:px-4">
+<div class="flex flex-col items-center gap-1 pt-1">
+<div class="text-text-main dark:text-white bg-background-light dark:bg-background-dark p-2 rounded-full border border-border-light dark:border-border-dark z-10">
+<span class="material-symbols-outlined text-[20px]">directions_bus</span>
+</div>
+<div class="w-[2px] bg-border-light dark:bg-border-dark h-full grow min-h-[3rem]"></div>
+</div>
+<div class="flex flex-col pb-6 pt-2">
+<div class="flex justify-between items-center mb-1">
+<p class="text-text-main dark:text-white text-base font-bold leading-normal">Arrival in Llanberis</p>
+<span class="text-xs font-bold bg-primary/10 text-primary-dark dark:text-primary px-2 py-1 rounded-lg">14:00</span>
+</div>
+<p class="text-text-secondary dark:text-text-secondary-dark text-sm">Meet at the designated hotel lobby. Welcome drinks and introduction to the guides.</p>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-[2px] bg-border-light dark:bg-border-dark h-2"></div>
+<div class="text-text-main dark:text-white bg-background-light dark:bg-background-dark p-2 rounded-full border border-border-light dark:border-border-dark z-10">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="w-[2px] bg-border-light dark:bg-border-dark h-full grow min-h-[3rem]"></div>
+</div>
+<div class="flex flex-col pb-6 pt-1">
+<div class="flex justify-between items-center mb-1">
+<p class="text-text-main dark:text-white text-base font-bold leading-normal">Safety Briefing &amp; Gear Check</p>
+<span class="text-xs font-bold bg-primary/10 text-primary-dark dark:text-primary px-2 py-1 rounded-lg">15:30</span>
+</div>
+<p class="text-text-secondary dark:text-text-secondary-dark text-sm">Comprehensive check of all hiking equipment. Distribution of rental gear.</p>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-[2px] bg-border-light dark:bg-border-dark h-2"></div>
+<div class="text-text-main dark:text-white bg-background-light dark:bg-background-dark p-2 rounded-full border border-border-light dark:border-border-dark z-10">
+<span class="material-symbols-outlined text-[20px]">fort</span>
+</div>
+</div>
+<div class="flex flex-col pt-1">
+<div class="flex justify-between items-center mb-1">
+<p class="text-text-main dark:text-white text-base font-bold leading-normal">Evening Hike to Dolbadarn Castle</p>
+<span class="text-xs font-bold bg-primary/10 text-primary-dark dark:text-primary px-2 py-1 rounded-lg">17:00</span>
+</div>
+<p class="text-text-secondary dark:text-text-secondary-dark text-sm">A gentle warm-up hike to the historic castle ruins overlooking the lake.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="h-[600px] rounded-3xl overflow-hidden border border-border-light dark:border-border-dark flex flex-col md:flex-row shadow-lg">
+<div class="relative w-full md:w-[60%] h-[300px] md:h-full bg-cover bg-center" data-alt="Stylized map view of Welsh terrain" data-location="Wales Map View" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAlsn5gvOM-8vnqg9YI-wnafFCTkC-w8nhteeLVTjUqi3JUWFzUk1picLDaKuH2-L78Gpe3X9WwDiTX8D_QIkFGH-A4_y3dRpCGIxKYD6usQhuvTpFRnbVRnzsQRR3ahR_Him5zyTc4Kf2hTvcIs7-dLx999wPypHRZQwrbUVbunX1-L5m89E3219FYaYGeeEA8kwFkxlTKcxFZ4ZJkk93gLz71eBQTnH2KvIKQSCCUdPWTwv8N5TAQaGJi72ekpN_anlUDU_J3vg');">
+<div class="absolute inset-0 bg-black/10 hover:bg-transparent transition-colors"></div>
+<div class="absolute top-1/3 left-1/4 transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+<div class="bg-primary text-white p-2 rounded-full shadow-lg border-2 border-white hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 bg-white dark:bg-card-dark px-3 py-1 rounded-lg shadow-xl text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+                             Snowdon Base Camp
+                         </div>
+</div>
+<div class="absolute bottom-1/3 right-1/3 transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+<div class="bg-white dark:bg-card-dark text-text-main dark:text-white p-2 rounded-full shadow-lg border-2 border-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+</div>
+<button class="absolute bottom-4 right-4 bg-white dark:bg-card-dark text-text-main dark:text-white p-2 rounded-lg shadow-lg hover:bg-gray-50 dark:hover:bg-gray-800">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+</div>
+<div class="w-full md:w-[40%] bg-card-light dark:bg-card-dark flex flex-col">
+<div class="p-4 border-b border-border-light dark:border-border-dark flex justify-between items-center bg-card-light dark:bg-card-dark sticky top-0 z-10">
+<h3 class="font-bold text-text-main dark:text-white">Destinations nearby</h3>
+<span class="text-xs font-medium text-text-secondary dark:text-text-secondary-dark">4 Found</span>
+</div>
+<div class="flex-1 overflow-y-auto p-4 space-y-4">
+<div class="flex gap-4 p-2 rounded-xl hover:bg-background-light dark:hover:bg-background-dark/50 transition-colors cursor-pointer group">
+<div class="w-24 h-24 rounded-lg bg-cover bg-center shrink-0" data-alt="Small stone cottage in mountains" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAchuY4WZufnsD-hjLu68mnXqmgGzurqPGmMF7P9-ohCfXotg6Hoo_GWs-Sq3hSwdKTTIq0pWRwiszCRYPnlDl9MCrO27sDO3SZvQfJTbrdjS8Qi-EUfEeKvlTXSiNMvL9MoBezubKK9rLUDteB1TCFaITrvUNsGlIB0qtK-0PBXupSwV8uxpCvsZ8lkIWA0o1NOl2fsKVGj36kOsN4hw_mMm-E1tBeGGLVPMlA6H2bJmMgIuTJa4B2sYou50h-v46SI5a27RmpLg');"></div>
+<div class="flex flex-col justify-center">
+<h4 class="font-bold text-text-main dark:text-white group-hover:text-primary transition-colors">Llanberis Lodge</h4>
+<p class="text-xs text-text-secondary dark:text-text-secondary-dark mt-1 line-clamp-2">Cozy lodge situated at the foot of Mount Snowdon. Perfect starting point.</p>
+<div class="flex items-center gap-1 mt-2 text-xs font-medium text-primary-dark dark:text-primary">
+<span class="material-symbols-outlined text-[14px] fill-current">star</span> 4.9 (128)
+                                </div>
+</div>
+</div>
+<div class="flex gap-4 p-2 rounded-xl bg-background-light dark:bg-background-dark/50 border border-primary/20 cursor-pointer">
+<div class="w-24 h-24 rounded-lg bg-cover bg-center shrink-0" data-alt="Green valley with stream" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAy7KIuMfO5u7BjPAYzgnyp3zj_Y7hoD-vIYC8lfeJ3JQ4WxB-jV6Zb_4J8-WYNjXFcufDtTgFwa3HjFfm0fy1ruyEhC-DtKVqRJSAVFywr7YG2t2Fnl-UcuNczRo9nPm0QbeiMvXoUD_3IcHaxOrQ3wuGyMnPgz1OZVx8UNsZXqYtow7TSNhQ7q7pzGFFw11vrYzFvnuMgfD0P8NIQWZnSSILbNoCD78jOSzUyBX2aQxJ9h-dannxvSV80TXfLXaXgBSs8rSlYGw');"></div>
+<div class="flex flex-col justify-center">
+<h4 class="font-bold text-text-main dark:text-white">Ogwen Valley Hostel</h4>
+<p class="text-xs text-text-secondary dark:text-text-secondary-dark mt-1 line-clamp-2">Historic hostel surrounded by the Carneddau and Glyderau mountain ranges.</p>
+<div class="flex items-center gap-1 mt-2 text-xs font-medium text-primary-dark dark:text-primary">
+<span class="material-symbols-outlined text-[14px] fill-current">star</span> 4.7 (85)
+                                </div>
+</div>
+</div>
+<div class="flex gap-4 p-2 rounded-xl hover:bg-background-light dark:hover:bg-background-dark/50 transition-colors cursor-pointer group">
+<div class="w-24 h-24 rounded-lg bg-cover bg-center shrink-0" data-alt="Lake reflecting mountains" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHcuA2HTPrPeI3u7n5C2Gozi9XOlfjBhv-nkCCEUnc3mMCOrrtRASZwSJNYNT-ktEIjD68EhkwBk7jYIqccW0tgCuiDAr4GjSzn4bSZnuV0F_qyjKJ3iA-H-mcUwmwLuiTLT4MreGlcinbzFrGa-kMUEwVYBtnuJcJ7aBNu7q0oUUCWI-ScKdwFuk1glBePkOOVR0tikTyYufXr22OuxOjl9xuaoYxdjrRhDxnacmxq2Vn7do_ppQJuuzsxVd7lbE8oKnFlQYyIQ');"></div>
+<div class="flex flex-col justify-center">
+<h4 class="font-bold text-text-main dark:text-white group-hover:text-primary transition-colors">Llyn Padarn Campsite</h4>
+<p class="text-xs text-text-secondary dark:text-text-secondary-dark mt-1 line-clamp-2">Lakeside camping with water sports facilities and equipment rental.</p>
+<div class="flex items-center gap-1 mt-2 text-xs font-medium text-primary-dark dark:text-primary">
+<span class="material-symbols-outlined text-[14px] fill-current">star</span> 4.8 (210)
+                                </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 flex flex-col gap-8">
+<div class="grid grid-cols-4 gap-2 h-[400px]">
+<div class="col-span-3 row-span-2 h-full rounded-2xl bg-cover bg-center relative" data-alt="Hiker looking at vast green landscape" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC7iLb62L4UmNtY8_G9mDYqgpp8QiEvOwGzBop_-liGoY6rEJ0pobb3pImOhrjLgqlVUxihgfLj0apO2HNDN2bmNbk7t8AhLRmYhsyITpChv1Wxt4x3hshIaypL51_4XG4EyXvAT4gbOmW2E5FusSBQxNDIV9p9GbQfkaSMaHaNqCY8cEoPAQ1jzmLjDQWtSiwuHv8NdXntrddWyTaxao5ZYpad8pxhCnlMg9iu0h83KIQDafLkEEJBGZCGi_cczCZVbJMiM_u4TQ');">
+<button class="absolute bottom-4 right-4 bg-white dark:bg-card-dark text-text-main dark:text-white px-3 py-2 rounded-lg text-sm font-bold shadow-md flex items-center gap-2 hover:bg-gray-100">
+<span class="material-symbols-outlined text-[18px]">grid_view</span> Show all photos
+                             </button>
+</div>
+<div class="col-span-1 h-full rounded-xl bg-cover bg-center" data-alt="Close up of hiking boots on rock" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXPuROFmvkgh2QPjp4tXJQyLAB9UeJcE8YX3OdjdE3_kU8qHvgleFvYJzjV6tWpx7h5cHK-uOp75oIWgVl9SWkJ8EpZIKAdVdKAvny6958p0rYALWu_3xYQbmvjovqd9eodRZzghht_VehdqBpeo3egqMMXjOuq8Z-LSxDg4CdRNqgpwLHju98ZISzbSP1Maz-ANVbAUGwY28khWxDhimLUxXnUOidJ4RWnXS-qtzTvqXSbCadeOQChAxeIQyoTQllP_jZJeedAw');"></div>
+<div class="col-span-1 h-full rounded-xl bg-cover bg-center relative" data-alt="Group of hikers laughing" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAp4pWw5yd6PUanM6C7jG8qMbycf7gIYkxTn-wFcbToDHRhsnm2lSN6-PyA-fe7P6quhi-Mj3JJefcw-w3nuczaXcdaf5AOYIV2lD4ymy4qEqJpsoYAo8N9OWXYuN185bIRRRAdn2UwbcT7VdCxPY1ZZE0R2Lp6DUyStxyHoPNAfggw_wdjaEZ0BYE6-aejYVyEgiT2ip6EdjWq_EWQtQNU6aH-IGnM2uXk2sRuWnNH-VXUFFoMlWyCbsIDmFNzVmP2J4eT1n4Mgg');">
+<div class="absolute inset-0 bg-black/30 rounded-xl flex items-center justify-center text-white font-bold text-xl cursor-pointer hover:bg-black/40 transition-colors">
+                                +5
+                            </div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex flex-wrap gap-2 mb-2">
+<span class="px-3 py-1 bg-primary/10 text-primary-dark dark:text-primary rounded-full text-xs font-bold uppercase tracking-wider">Guided Tour</span>
+<span class="px-3 py-1 bg-background-light dark:bg-background-dark text-text-secondary dark:text-text-secondary-dark rounded-full text-xs font-bold uppercase tracking-wider">Best Seller</span>
+</div>
+<h2 class="text-3xl font-bold text-text-main dark:text-white">Three Peaks Challenge: The Ultimate Welsh Adventure</h2>
+<div class="flex items-center gap-4 text-text-secondary dark:text-text-secondary-dark text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[18px]">star</span> 4.9 (342 Reviews)</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">location_on</span> Snowdonia National Park</span>
+</div>
+<p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">
+                            Experience the raw beauty of Wales' highest peaks in this guided 3-day adventure. From the legendary Snowdon summit to the jagged ridges of Tryfan, this tour is designed for adventurous spirits looking to push their limits while enjoying comfortable lodge accommodation each night.
+                        </p>
+</div>
+<div class="border-t border-border-light dark:border-border-dark pt-8">
+<h3 class="text-xl font-bold text-text-main dark:text-white mb-6">What's Included</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="flex flex-col items-center gap-3 p-4 rounded-xl bg-background-light dark:bg-background-dark text-center">
+<div class="w-12 h-12 rounded-full bg-white dark:bg-card-dark flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined">hotel</span>
+</div>
+<span class="text-sm font-medium text-text-main dark:text-white">2 Nights Hotel</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 rounded-xl bg-background-light dark:bg-background-dark text-center">
+<div class="w-12 h-12 rounded-full bg-white dark:bg-card-dark flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<span class="text-sm font-medium text-text-main dark:text-white">All Meals</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 rounded-xl bg-background-light dark:bg-background-dark text-center">
+<div class="w-12 h-12 rounded-full bg-white dark:bg-card-dark flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined">directions_bus</span>
+</div>
+<span class="text-sm font-medium text-text-main dark:text-white">Local Transport</span>
+</div>
+<div class="flex flex-col items-center gap-3 p-4 rounded-xl bg-background-light dark:bg-background-dark text-center">
+<div class="w-12 h-12 rounded-full bg-white dark:bg-card-dark flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<span class="text-sm font-medium text-text-main dark:text-white">Expert Guides</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-1">
+<div class="sticky top-24 rounded-2xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-xl overflow-hidden">
+<div class="p-6 flex flex-col gap-6">
+<div class="flex justify-between items-end border-b border-border-light dark:border-border-dark pb-6">
+<div>
+<p class="text-sm text-text-secondary dark:text-text-secondary-dark line-through decoration-red-500 decoration-2">£450</p>
+<div class="flex items-baseline gap-1">
+<span class="text-3xl font-extrabold text-text-main dark:text-white">£395</span>
+<span class="text-text-secondary dark:text-text-secondary-dark text-sm">/ person</span>
+</div>
+</div>
+<div class="bg-primary/10 text-primary-dark dark:text-primary text-xs font-bold px-2 py-1 rounded">Save 12%</div>
+</div>
+<div class="flex flex-col gap-3">
+<label class="text-sm font-bold text-text-main dark:text-white">Select Date</label>
+<div class="relative">
+<div class="flex items-center border border-border-light dark:border-border-dark rounded-xl px-4 py-3 bg-background-light dark:bg-background-dark cursor-pointer hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-text-secondary dark:text-text-secondary-dark mr-3">calendar_month</span>
+<span class="text-text-main dark:text-white font-medium flex-1">Aug 12 - Aug 15</span>
+<span class="material-symbols-outlined text-text-secondary dark:text-text-secondary-dark">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<label class="text-sm font-bold text-text-main dark:text-white">Guests</label>
+<div class="flex items-center justify-between border border-border-light dark:border-border-dark rounded-xl px-4 py-3 bg-background-light dark:bg-background-dark">
+<span class="text-text-main dark:text-white font-medium">2 Adults</span>
+<div class="flex items-center gap-3">
+<button class="w-8 h-8 rounded-full bg-white dark:bg-card-dark border border-border-light dark:border-border-dark flex items-center justify-center hover:border-primary text-text-main dark:text-white transition-colors">-</button>
+<button class="w-8 h-8 rounded-full bg-white dark:bg-card-dark border border-border-light dark:border-border-dark flex items-center justify-center hover:border-primary text-text-main dark:text-white transition-colors">+</button>
+</div>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary-dark text-white font-bold text-lg py-4 rounded-xl shadow-lg shadow-primary/30 transition-all hover:scale-[1.02]">
+                                Reserve Now
+                            </button>
+<p class="text-center text-xs text-text-secondary dark:text-text-secondary-dark">Free cancellation up to 48 hours before trip start.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-8 border-t border-border-light dark:border-border-dark pt-16">
+<h2 class="text-2xl font-bold text-text-main dark:text-white">Reviews &amp; Ratings</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
+<div class="flex flex-col gap-6">
+<div class="flex items-baseline gap-4">
+<span class="text-6xl font-extrabold text-text-main dark:text-white">4.9</span>
+<div class="flex flex-col">
+<div class="flex text-primary text-xl">
+<span class="material-symbols-outlined fill-current">star</span>
+<span class="material-symbols-outlined fill-current">star</span>
+<span class="material-symbols-outlined fill-current">star</span>
+<span class="material-symbols-outlined fill-current">star</span>
+<span class="material-symbols-outlined fill-current">star_half</span>
+</div>
+<span class="text-sm text-text-secondary dark:text-text-secondary-dark">Based on 342 reviews</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 w-full">
+<div class="flex items-center gap-3">
+<span class="text-sm font-medium w-3 text-text-main dark:text-white">5</span>
+<div class="h-2 w-full bg-background-light dark:bg-background-dark rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[85%] rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-sm font-medium w-3 text-text-main dark:text-white">4</span>
+<div class="h-2 w-full bg-background-light dark:bg-background-dark rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[10%] rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-sm font-medium w-3 text-text-main dark:text-white">3</span>
+<div class="h-2 w-full bg-background-light dark:bg-background-dark rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[3%] rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-sm font-medium w-3 text-text-main dark:text-white">2</span>
+<div class="h-2 w-full bg-background-light dark:bg-background-dark rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[1%] rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-sm font-medium w-3 text-text-main dark:text-white">1</span>
+<div class="h-2 w-full bg-background-light dark:bg-background-dark rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[1%] rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-2 flex flex-col gap-6">
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-border-light dark:border-border-dark">
+<div class="flex justify-between items-start mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-gray-200 bg-cover bg-center" data-alt="Portrait of Sarah Jenkins" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTq3CJyBo9n5v6i3N5Y3X64uhqTdcrou9ISyb_yyEURcX3vGNS7BsXVleO77oW7XrU7mE-4mIDJs67yGsEnaeVb6t9_FY7D5k67gZhKgbedcoexTVPF1Ey5V0Ysl3Nu8pDQFtyV-5_mKXhoktgskkd6JB-lIuBHxNirYVuhJWZgA7c8bxhDKq1x1Wwf17mbZIICTuiAYb976Aq2MFbpYdJOAoHp__L6O1GG4OnHT_MA0SLiuvYkdhuGap1ANSsKfIqT26qFEy_Yw');"></div>
+<div>
+<h4 class="font-bold text-text-main dark:text-white text-sm">Sarah Jenkins</h4>
+<span class="text-xs text-text-secondary dark:text-text-secondary-dark">June 2023</span>
+</div>
+</div>
+<div class="flex text-primary text-sm">
+<span class="material-symbols-outlined fill-current text-[18px]">star</span>
+<span class="material-symbols-outlined fill-current text-[18px]">star</span>
+<span class="material-symbols-outlined fill-current text-[18px]">star</span>
+<span class="material-symbols-outlined fill-current text-[18px]">star</span>
+<span class="material-symbols-outlined fill-current text-[18px]">star</span>
+</div>
+</div>
+<p class="text-text-secondary dark:text-text-secondary-dark text-sm leading-relaxed">
+                                "Absolutely incredible experience! The guides were knowledgeable and made sure everyone was comfortable regardless of their fitness level. The views from the top of Snowdon were breathtaking. Highly recommend!"
+                            </p>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-border-light dark:border-border-dark">
+<div class="flex justify-between items-start mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-gray-200 bg-cover bg-center" data-alt="Portrait of Mark Davies" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8TyiYcGU04SL9Z2vjQY4F7IPXXn32J_EmFh_IjkjGuSNfaSLs1W6_X3FQnrzJf6qAndCZ2wR7VAmRMD3v_YFGObZYWfSFB1m9yuRdAn3KfDZT4nlur8Z9otr1R-LCLazvUsXV0-jm1-iu_XXDCehTvvSlkMSh-6ZBdt6Cg9eQLEWUkjiQLCqaiswTFlZD4PY6bnwLl7JTabwdMH90gZxl0upaqc-aJ2ILpElkeytI4xr53eaTWuMEGZdNiWFVvH5TFFeg9U3KKw');"></div>
+<div>
+<h4 class="font-bold text-text-main dark:text-white text-sm">Mark Davies</h4>
+<span class="text-xs text-text-secondary dark:text-text-secondary-dark">May 2023</span>
+</div>
+</div>
+<div class="flex text-primary text-sm">
+<span class="material-symbols-outlined fill-current text-[18px]">star</span>
+<span class="material-symbols-outlined fill-current text-[18px]">star</span>
+<span class="material-symbols-outlined fill-current text-[18px]">star</span>
+<span class="material-symbols-outlined fill-current text-[18px]">star</span>
+<span class="material-symbols-outlined fill-current text-[18px]">star</span>
+</div>
+</div>
+<p class="text-text-secondary dark:text-text-secondary-dark text-sm leading-relaxed">
+                                "Great organization and logistics. The hotels were better than I expected for a hiking trip. Just make sure you bring really good waterproof boots!"
+                            </p>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-3xl mx-auto w-full pt-16 pb-8">
+<div class="text-center mb-10">
+<h2 class="text-3xl font-bold text-text-main dark:text-white">Frequently Asked Questions</h2>
+<p class="text-text-secondary dark:text-text-secondary-dark mt-2">Everything you need to know before you book.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="bg-primary/10 border border-primary/30 rounded-xl p-5 flex gap-4 items-start mb-4">
+<div class="bg-primary/20 text-primary-dark dark:text-primary rounded-full p-2 shrink-0">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<div>
+<h4 class="font-bold text-text-main dark:text-white text-sm mb-1">Quick Answer: Difficulty Level</h4>
+<p class="text-sm text-text-secondary dark:text-text-secondary-dark">
+                                Most of our itineraries are rated 'Moderate'. This means you should be comfortable walking 4-6 hours a day on uneven terrain. No technical climbing skills are required.
+                            </p>
+</div>
+</div>
+<details class="group bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark overflow-hidden">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none p-5 text-text-main dark:text-white">
+<span>What happens if the weather is bad?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</span>
+</summary>
+<div class="text-text-secondary dark:text-text-secondary-dark text-sm p-5 pt-0 leading-relaxed">
+                            Welsh weather can be unpredictable! We hike rain or shine, but safety is paramount. In extreme conditions (high winds, lightning), our guides may alter the route or offer alternative low-level activities.
+                        </div>
+</details>
+<details class="group bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark overflow-hidden">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none p-5 text-text-main dark:text-white">
+<span>Is equipment provided?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</span>
+</summary>
+<div class="text-text-secondary dark:text-text-secondary-dark text-sm p-5 pt-0 leading-relaxed">
+                            We provide technical gear like helmets and crampons if needed for specific winter routes. You are responsible for your personal clothing, hiking boots, and a daypack. A full kit list is sent upon booking.
+                        </div>
+</details>
+<details class="group bg-card-light dark:bg-card-dark rounded-xl border border-border-light dark:border-border-dark overflow-hidden">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none p-5 text-text-main dark:text-white">
+<span>Are meals vegetarian friendly?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</span>
+</summary>
+<div class="text-text-secondary dark:text-text-secondary-dark text-sm p-5 pt-0 leading-relaxed">
+                            Absolutely. We cater to all dietary requirements including vegetarian, vegan, and gluten-free. Please let us know your preferences when completing your booking form.
+                        </div>
+</details>
+</div>
+</section>
+</main>
+<footer class="bg-card-light dark:bg-card-dark border-t border-border-light dark:border-border-dark py-12 px-4 md:px-10 mt-auto">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2 text-text-main dark:text-white">
+<span class="material-symbols-outlined text-primary">hiking</span>
+<span class="font-bold text-lg">Adventure Wales</span>
+</div>
+<div class="flex gap-8 text-sm text-text-secondary dark:text-text-secondary-dark">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Contact Support</a>
+</div>
+<p class="text-xs text-text-secondary dark:text-text-secondary-dark">© 2024 Adventure Wales. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</body></html>

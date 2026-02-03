@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Snowdonia - Adventure Wales</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#f97316",
+                "background-light": "#f8f7f5",
+                "background-dark": "#121212", 
+                "teal-dark": "#1e3a4c",
+                "teal-card": "#264255", 
+              },
+              fontFamily: {
+                "display": ["Space Grotesk", "sans-serif"],
+                "body": ["Noto Sans", "sans-serif"],
+              },
+              borderRadius: {
+                "card": "12px",
+              },
+              boxShadow: {
+                "soft": "0 4px 20px -2px rgba(0, 0, 0, 0.2)",
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            padding-bottom: 80px;}
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-body text-white antialiased selection:bg-primary selection:text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden max-w-md mx-auto border-x border-white/5 shadow-2xl bg-background-dark">
+<header class="absolute top-0 left-0 right-0 z-30 flex items-center p-4 justify-between">
+<button class="flex items-center justify-center size-10 rounded-full bg-black/30 backdrop-blur-md text-white hover:bg-black/50 transition-colors border border-white/10">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center size-10 rounded-full bg-black/30 backdrop-blur-md text-white hover:bg-black/50 transition-colors border border-white/10">
+<span class="material-symbols-outlined">favorite_border</span>
+</button>
+<button class="flex items-center justify-center size-10 rounded-full bg-black/30 backdrop-blur-md text-white hover:bg-black/50 transition-colors border border-white/10">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</header>
+<div class="relative min-h-[480px] flex flex-col justify-end p-6 bg-cover bg-center" style='background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(18,18,18,0.4) 60%, rgba(18,18,18,1) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC5EWHO1ylSVkjy4YW6wjZkLtyfDKKaqJeLq7QG62lodqY5lvhzIhtEVTR2i67wEY2SlC0qrvhnRHT-245KuHadPoTvVzaorb_qCS-FhxgHdEN9JVJ0uJCXy_pICxpGHMXBK3ghAd1Jw9TKmrt5kvQn5cBRBKP_aTF-cjhfuU0VzMYMU0XhzNoqKbNzVjOqrpRST2km7ulp9Zn4v920jKSugad2lXBFdqE4g-KnSrUCNGLEu3l1go-uy02hMAiXzH9sPnO6EG_V5dg");'>
+<div class="flex items-center gap-2 mb-4 text-xs font-bold tracking-wider uppercase text-white/80 font-display">
+<span class="opacity-80">Home</span>
+<span class="material-symbols-outlined text-[12px] opacity-60">chevron_right</span>
+<span class="text-primary">Snowdonia</span>
+</div>
+<h1 class="text-white text-5xl font-bold font-display leading-[0.9] tracking-tight mb-3">
+                Snowdonia
+            </h1>
+<p class="text-gray-200 text-lg font-normal leading-snug max-w-[95%] mb-4">
+                Wales' adventure capital — mountains, zip lines, and wild swimming.
+            </p>
+</div>
+<div class="flex gap-3 px-6 pb-6 overflow-x-auto no-scrollbar -mt-4 relative z-10">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-teal-dark/80 backdrop-blur border border-white/10 px-4 whitespace-nowrap">
+<span class="material-symbols-outlined text-primary text-[16px]">hiking</span>
+<p class="text-white text-xs font-bold font-display uppercase tracking-wide">78 Activities</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-teal-dark/80 backdrop-blur border border-white/10 px-4 whitespace-nowrap">
+<span class="material-symbols-outlined text-primary text-[16px]">groups</span>
+<p class="text-white text-xs font-bold font-display uppercase tracking-wide">12 Operators</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-teal-dark/80 backdrop-blur border border-white/10 px-4 whitespace-nowrap">
+<span class="material-symbols-outlined text-primary text-[16px]">star</span>
+<p class="text-white text-xs font-bold font-display uppercase tracking-wide">4.9 Rating</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-teal-dark/80 backdrop-blur border border-white/10 px-4 whitespace-nowrap">
+<span class="material-symbols-outlined text-primary text-[16px]">calendar_month</span>
+<p class="text-white text-xs font-bold font-display uppercase tracking-wide">Year-round</p>
+</div>
+</div>
+<div class="sticky top-0 z-20 bg-background-dark/95 backdrop-blur-md border-b border-white/5 shadow-lg">
+<div class="flex px-4 justify-between">
+<a class="flex flex-col items-center justify-center border-b-2 border-primary text-white py-3 flex-1 transition-all" href="#">
+<p class="text-sm font-bold tracking-wide font-display">Overview</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-gray-400 hover:text-white py-3 flex-1 transition-all" href="#">
+<p class="text-sm font-bold tracking-wide font-display">Things to Do</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-gray-400 hover:text-white py-3 flex-1 transition-all" href="#">
+<p class="text-sm font-bold tracking-wide font-display">Itineraries</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-gray-400 hover:text-white py-3 flex-1 transition-all" href="#">
+<p class="text-sm font-bold tracking-wide font-display">Stays</p>
+</a>
+</div>
+</div>
+<main class="flex flex-col gap-8 pb-8 pt-6">
+<section class="px-6">
+<div class="bg-teal-dark/30 rounded-card p-5 border border-white/5">
+<p class="text-gray-200 text-base font-normal leading-relaxed mb-4">
+                        Snowdonia National Park (Eryri) is a region in northwest Wales concentrated around the mountains and glacial landforms of massive <span class="text-primary font-bold">Snowdon (Yr Wyddfa)</span>.
+                    </p>
+<div class="flex items-start gap-3 bg-teal-dark/50 p-3 rounded-lg border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary shrink-0 text-[20px]">verified</span>
+<p class="text-xs text-white/90 leading-relaxed">
+<strong>Top Tip:</strong> The Sherpa bus network is the best way to get around the base of the mountains during peak season.
+                        </p>
+</div>
+</div>
+</section>
+<section class="px-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-white text-xl font-bold font-display">Popular Adventures</h3>
+<a class="text-primary text-sm font-bold hover:text-white transition-colors" href="#">See All</a>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="group relative flex flex-col overflow-hidden rounded-card bg-teal-card shadow-soft border border-white/5 hover:border-primary/50 transition-colors">
+<div class="h-32 w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDP31XcIU_gVMuoDN95lkyiPghPjDNFCtOvENgkBhbzZazB8DtZavgRUPssLrsWhL2dSVQwYic00WuRvSOobXwd__XVq9LBuht8Uaj0hB25MasThEJPEzCHlNQVNhvEglR7T5lzC_-37GtoCwBb4pIPV7cYTQvwxqouSOAgVDnPuusn7GxcJae3zxUPUyJpDuXxT00N1aGO-8CZMQb65GnhSppm_szhukew0ZsoZtlxaUR3ZO1byUF5M0QitaXi0roRRkwyImeLbfY");'>
+<div class="absolute top-2 right-2 bg-black/60 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded-md uppercase tracking-wider">
+                                Hard
+                            </div>
+</div>
+<div class="flex flex-col p-3 flex-1">
+<h4 class="text-white font-bold font-display text-base leading-tight mb-1">Yr Wyddfa Hike</h4>
+<p class="text-gray-400 text-xs mb-3">6-8 hours • 1,085m</p>
+<div class="mt-auto flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[14px]">star</span>
+<span class="text-white text-xs font-bold">4.9</span>
+<span class="text-gray-500 text-xs">(1.2k)</span>
+</div>
+</div>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-card bg-teal-card shadow-soft border border-white/5 hover:border-primary/50 transition-colors">
+<div class="h-32 w-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDcyhDJgtWOZmo5nwsr57iYYUUWe9-ryuyUSPJCPd4Y_yWrDo2JLZylplvWToMbNMBecZ5uqwR3dt8XrXP1jbcA3H5Z0oT9cP4WoSsBSU22jmp8Kei3KelZHkHAbUKcMkkqpn6M8a4VhGOZrw2hMX1Wne88AlmdlPptLIxL7YjfX2z8d8-jT0NFW1kDXV2fRY7CyYnYYMnJTw45wSHs6434u6eVgSyTz_YrfWyndeH7v8yJjZhzzfqu2XERK6ehYNeYfd51kKV9_u8");'>
+<div class="absolute top-2 right-2 bg-black/60 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded-md uppercase tracking-wider">
+                                Easy
+                            </div>
+</div>
+<div class="flex flex-col p-3 flex-1">
+<h4 class="text-white font-bold font-display text-base leading-tight mb-1">Zip World</h4>
+<p class="text-gray-400 text-xs mb-3">2 hours • 100mph</p>
+<div class="mt-auto flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[14px]">star</span>
+<span class="text-white text-xs font-bold">4.8</span>
+<span class="text-gray-500 text-xs">(850)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="pl-6 overflow-hidden">
+<h3 class="text-white text-xl font-bold font-display mb-4">Suggested Itineraries</h3>
+<div class="flex gap-4 overflow-x-auto no-scrollbar pr-6 pb-4">
+<div class="min-w-[280px] relative rounded-card overflow-hidden aspect-[16/10] group shadow-soft border border-white/5">
+<img alt="Misty forest path" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMRTXudsM9ZXV1dga4qIdofqhUvFir_4D6QQjluG83gzT06nQazH9dKdmgBn1uJY7Poeb_-Gi65_tF-UAWsVDF8uIUfEANnCwlxd6KkmW8J9TSI9WTuVkEM0bBy-i02S4kGGetUCG9s2Cp3BjbbO_y36sJ0dP98Jtz3q88jl4usNrxAdd53HwXeosipp9ax_feSaJbWfEnxU8taSrcdpdcG1jmnVoU9PsP-LZ3UEV4Ak3xUV028ke9SkMSSQz_tyW3s2jK8M0JdBs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+<div class="absolute top-3 right-3">
+<div class="bg-black/60 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded-md uppercase tracking-wider">
+                                3 Days
+                            </div>
+</div>
+<div class="absolute bottom-0 left-0 p-4">
+<h4 class="text-white text-lg font-bold font-display leading-tight">The North Wales Way</h4>
+<p class="text-primary text-xs font-medium mt-1 uppercase tracking-wide">Coast &amp; Castles Route</p>
+</div>
+</div>
+<div class="min-w-[280px] relative rounded-card overflow-hidden aspect-[16/10] group shadow-soft border border-white/5">
+<img alt="Stone cottage in mountains" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0tXtJ2r-SPZmNvACSDmmuq0z0OkhdCBRYFMg8L5K-O-5oUsj66AwdavIxVzt7iytxLFba9_ZYisQIRHJ6CxyQM3ppI6S5oZw0HM1sSKIZNOHfAzc5h5O1_apibZNV3oij20XMyOflRwGan6x4sKUjH5dNKW9VGV4B51-FGVm5jIXrJiLrWTGv4ZswzVY8ALtzOSKjTj57TCqhZE7VEUpyh0LcL-1LD7Js31l72qOgiL_rTQ8VpUG8aBcSqJIgKvRPB9b7rSRPT7E"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+<div class="absolute top-3 right-3">
+<div class="bg-black/60 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded-md uppercase tracking-wider">
+                                Weekend
+                           </div>
+</div>
+<div class="absolute bottom-0 left-0 p-4">
+<h4 class="text-white text-lg font-bold font-display leading-tight">Mountain Escape</h4>
+<p class="text-primary text-xs font-medium mt-1 uppercase tracking-wide">Climbing &amp; Cozy Stays</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-white text-xl font-bold font-display">Explore the Area</h3>
+<div class="flex gap-2">
+<button class="bg-primary text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-sm hover:brightness-110 transition-all">All</button>
+<button class="bg-transparent border border-white/20 text-gray-300 text-xs font-bold px-4 py-1.5 rounded-full hover:bg-white/5 transition-all">Stays</button>
+<button class="bg-transparent border border-white/20 text-gray-300 text-xs font-bold px-4 py-1.5 rounded-full hover:bg-white/5 transition-all">Food</button>
+</div>
+</div>
+<div class="relative w-full h-64 rounded-card overflow-hidden shadow-soft border border-white/10 bg-[#242f3e] group">
+<img alt="Map view" class="w-full h-full object-cover opacity-60 transition-opacity group-hover:opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoLTjZX7nVHukMwFZ7m9CK1HUEryZt_G0pWjom_X9a1eC3_BCiMqKIRfOTws9d74mmb1Nop2l83W30LRtn9s8vGbTO4J8kKTNv5Fxnodb25WdY_fdciI00Ud8KzXmtQTtgU1Tj7HJfufMUcfaMpHfsBKUzYgCtZKNR8COcvdV6jIVE_cU3x-StIa4I45sT3TBN9GeNz7NUBMFnvn1vJFqvAsuuSz3vt8MQ7AbXZU2VF6TZT8w9-JDND4-9q-CESXmoWga9Fgump1o"/>
+<div class="absolute top-1/3 left-1/4 animate-bounce" style="animation-duration: 2s;">
+<div class="bg-primary text-white p-2 rounded-full shadow-xl border-2 border-white transform hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-[16px] block">hiking</span>
+</div>
+</div>
+<div class="absolute bottom-1/3 right-1/3" style="animation-delay: 0.5s;">
+<div class="bg-teal-dark text-white p-2 rounded-full shadow-xl border-2 border-white transform hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-[16px] block">bed</span>
+</div>
+</div>
+<button class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-background-dark font-bold font-display text-sm px-5 py-2.5 rounded-full shadow-xl flex items-center gap-2 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">map</span>
+                        Open Interactive Map
+                    </button>
+</div>
+</section>
+<section class="px-6">
+<h3 class="text-white text-xl font-bold font-display mb-4">Plan Your Visit</h3>
+<div class="flex flex-col gap-3">
+<details class="group bg-teal-card rounded-card overflow-hidden border border-white/5 shadow-soft">
+<summary class="flex items-center justify-between p-4 cursor-pointer list-none hover:bg-white/5 transition-colors">
+<div class="flex items-center gap-3">
+<div class="bg-teal-dark p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary">directions_bus</span>
+</div>
+<span class="font-bold text-white font-display">Getting There</span>
+</div>
+<span class="material-symbols-outlined text-gray-400 transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-4 pb-5 pt-0 text-gray-300 text-sm leading-relaxed border-t border-white/5 mt-2 pt-3">
+                            Trains run directly to Bangor and Llandudno Junction. From there, the Conwy Valley Line takes you into the heart of the park.
+                        </div>
+</details>
+<details class="group bg-teal-card rounded-card overflow-hidden border border-white/5 shadow-soft">
+<summary class="flex items-center justify-between p-4 cursor-pointer list-none hover:bg-white/5 transition-colors">
+<div class="flex items-center gap-3">
+<div class="bg-teal-dark p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary">cloud</span>
+</div>
+<span class="font-bold text-white font-display">Best Time to Visit</span>
+</div>
+<span class="material-symbols-outlined text-gray-400 transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-4 pb-5 pt-0 text-gray-300 text-sm leading-relaxed border-t border-white/5 mt-2 pt-3">
+                            May to September offers the best weather, though shoulder seasons (April/October) are less crowded and still beautiful.
+                        </div>
+</details>
+</div>
+</section>
+<section class="mt-6 mx-4">
+<div class="bg-primary p-8 text-center rounded-[2rem] relative overflow-hidden shadow-2xl">
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-white/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-12 -left-12 w-32 h-32 bg-black/10 rounded-full blur-2xl"></div>
+<div class="relative z-10 flex flex-col items-center gap-5">
+<h2 class="text-white text-2xl font-bold font-display leading-tight tracking-tight">
+                            Ready to plan your Snowdonia adventure?
+                        </h2>
+<p class="text-white/90 text-sm font-medium leading-relaxed max-w-[80%]">
+                            Create a custom itinerary in minutes based on your preferences.
+                        </p>
+<button class="bg-white text-primary text-base font-bold py-4 px-8 rounded-full w-full shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-2 mt-2">
+                            Start Planning
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-teal-dark/95 backdrop-blur-xl border-t border-white/10 px-6 py-3 z-50 shadow-[0_-5px_20px_rgba(0,0,0,0.3)] max-w-md mx-auto">
+<div class="flex justify-between items-center">
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-white transition-colors text-[24px]">home</span>
+<span class="text-[10px] font-medium text-gray-400 group-hover:text-white transition-colors">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-primary text-[24px]">explore</span>
+<span class="text-[10px] font-medium text-white">Explore</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-white transition-colors text-[24px]">map</span>
+<span class="text-[10px] font-medium text-gray-400 group-hover:text-white transition-colors">Itineraries</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-white transition-colors text-[24px]">calendar_month</span>
+<span class="text-[10px] font-medium text-gray-400 group-hover:text-white transition-colors">Events</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-white transition-colors text-[24px]">menu</span>
+<span class="text-[10px] font-medium text-gray-400 group-hover:text-white transition-colors">Menu</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wales Adventure Events Calendar</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1313ec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101022",
+              "surface-light": "#ffffff",
+              "surface-dark": "#1a1a2e",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden max-w-md mx-auto shadow-2xl bg-background-light dark:bg-background-dark">
+<!-- Top App Bar -->
+<header class="flex items-center p-4 pb-2 justify-between sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-white">arrow_back</span>
+</button>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Events &amp; Races</h2>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-white">search</span>
+</button>
+</header>
+<!-- Month Navigation -->
+<div class="flex items-center justify-between px-4 py-2">
+<button class="p-2 text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<div class="text-center">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">February 2026</h3>
+</div>
+<button class="p-2 text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<!-- View Toggle (Segmented Buttons) -->
+<div class="px-4 py-3">
+<div class="flex h-10 w-full items-center justify-center rounded-lg bg-slate-200 dark:bg-slate-800 p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-[calc(0.5rem-2px)] has-[:checked]:bg-white dark:has-[:checked]:bg-slate-700 has-[:checked]:shadow-sm transition-all duration-200">
+<span class="text-sm font-bold text-slate-700 dark:text-slate-300 has-[:checked]:text-primary dark:has-[:checked]:text-primary">List</span>
+<input checked="" class="invisible w-0 absolute" name="view-toggle" type="radio" value="List"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-[calc(0.5rem-2px)] has-[:checked]:bg-white dark:has-[:checked]:bg-slate-700 has-[:checked]:shadow-sm transition-all duration-200">
+<span class="text-sm font-bold text-slate-700 dark:text-slate-300 has-[:checked]:text-primary dark:has-[:checked]:text-primary">Calendar</span>
+<input class="invisible w-0 absolute" name="view-toggle" type="radio" value="Calendar"/>
+</label>
+</div>
+</div>
+<!-- Featured Event Section -->
+<div class="pt-4">
+<h3 class="text-slate-900 dark:text-white tracking-light text-xl font-bold leading-tight px-4 pb-3">Featured Event</h3>
+<div class="px-4">
+<div class="flex flex-col rounded-xl overflow-hidden shadow-md bg-surface-light dark:bg-surface-dark transition-colors">
+<div class="w-full h-48 bg-gray-200 relative">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Hiker standing on a mountain peak overlooking a misty valley" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_OPZYAlFh3h2pmv7oc_Qj3d2b_k5EmjuVNeb3QV29SB1np-ELo0TmuDVGyH7JzSg6H4JwdbnhNT03inD9SYhoCvPIzSqm7Vds3m-ziCLboK0T5CjZs0bbteZJbLGVq5ci5J-4jVyCZ5i5Ut0KlgE7R5K2cngH1doGR_StnhAXj2BJE94CwY5ZDzPcoy2lrWkusNIgeyuqrBy6JqrmwuFu3v9A5VZbkGVlD2JToWHqIM-BY4TLH3BvEnGPaVIREmDODmyUToIbsjg");'></div>
+<div class="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur px-2 py-1 rounded text-xs font-bold text-slate-900 dark:text-white shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">star</span>
+                            Featured
+                         </div>
+</div>
+<div class="p-4 flex flex-col gap-2">
+<div class="flex items-center gap-2 text-primary font-semibold text-sm">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span>Oct 28, 2026</span>
+</div>
+<h4 class="text-slate-900 dark:text-white text-xl font-bold leading-tight">Snowdonia Marathon 2026</h4>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">The toughest marathon in the UK, circumnavigating the massif with breathtaking views.</p>
+<button class="mt-2 w-full h-10 bg-primary hover:bg-blue-700 text-white font-bold text-sm rounded-lg transition-colors flex items-center justify-center gap-2">
+                            Learn More
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- February List -->
+<div class="pt-6">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight px-4 pb-3 sticky top-[72px] bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm z-10">February 2026</h3>
+<div class="flex flex-col gap-3 px-4">
+<!-- Event Item 1 -->
+<div class="group flex bg-surface-light dark:bg-surface-dark p-3 rounded-xl shadow-sm border border-transparent hover:border-primary/20 transition-all cursor-pointer">
+<!-- Date Block -->
+<div class="flex flex-col items-center justify-center w-14 h-16 bg-primary/10 dark:bg-primary/20 rounded-lg shrink-0 mr-4">
+<span class="text-primary text-[10px] font-bold uppercase tracking-wide">Feb</span>
+<span class="text-slate-900 dark:text-white text-xl font-bold">14</span>
+</div>
+<!-- Details -->
+<div class="flex flex-col flex-1 justify-center gap-1">
+<div class="flex justify-between items-start gap-2">
+<h4 class="text-slate-900 dark:text-white font-bold text-base leading-tight group-hover:text-primary transition-colors">Brecon Beacons Night Hike</h4>
+<span class="bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-[10px] font-bold px-1.5 py-0.5 rounded border border-orange-200 dark:border-orange-800/50 whitespace-nowrap">Selling Fast</span>
+</div>
+<div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mt-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hiking</span>
+<span>Hiking</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600"></div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span class="truncate max-w-[100px]">Pen y Fan</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Event Item 2 -->
+<div class="group flex bg-surface-light dark:bg-surface-dark p-3 rounded-xl shadow-sm border border-transparent hover:border-primary/20 transition-all cursor-pointer">
+<div class="flex flex-col items-center justify-center w-14 h-16 bg-slate-100 dark:bg-slate-800 rounded-lg shrink-0 mr-4 text-slate-500 dark:text-slate-400">
+<span class="text-[10px] font-bold uppercase tracking-wide">Feb</span>
+<span class="text-slate-900 dark:text-white text-xl font-bold">21</span>
+</div>
+<div class="flex flex-col flex-1 justify-center gap-1">
+<div class="flex justify-between items-start gap-2">
+<h4 class="text-slate-900 dark:text-white font-bold text-base leading-tight group-hover:text-primary transition-colors">Coastal Trail Run</h4>
+</div>
+<div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mt-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">directions_run</span>
+<span>Running</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600"></div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span class="truncate">Pembrokeshire</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Event Item 3 -->
+<div class="group flex bg-surface-light dark:bg-surface-dark p-3 rounded-xl shadow-sm border border-transparent hover:border-primary/20 transition-all cursor-pointer">
+<div class="flex flex-col items-center justify-center w-14 h-16 bg-slate-100 dark:bg-slate-800 rounded-lg shrink-0 mr-4 text-slate-500 dark:text-slate-400">
+<span class="text-[10px] font-bold uppercase tracking-wide">Feb</span>
+<span class="text-slate-900 dark:text-white text-xl font-bold">28</span>
+</div>
+<div class="flex flex-col flex-1 justify-center gap-1">
+<div class="flex justify-between items-start gap-2">
+<h4 class="text-slate-900 dark:text-white font-bold text-base leading-tight group-hover:text-primary transition-colors">Intro to Rock Climbing</h4>
+<span class="bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-[10px] font-bold px-1.5 py-0.5 rounded border border-green-200 dark:border-green-800/50 whitespace-nowrap">New</span>
+</div>
+<div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mt-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">landscape</span>
+<span>Climbing</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600"></div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span class="truncate">Snowdonia</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- March List -->
+<div class="pt-6 pb-4">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight px-4 pb-3 sticky top-[72px] bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm z-10">March 2026</h3>
+<div class="flex flex-col gap-3 px-4">
+<!-- Event Item 4 -->
+<div class="group flex bg-surface-light dark:bg-surface-dark p-3 rounded-xl shadow-sm border border-transparent hover:border-primary/20 transition-all cursor-pointer opacity-70">
+<div class="flex flex-col items-center justify-center w-14 h-16 bg-slate-100 dark:bg-slate-800 rounded-lg shrink-0 mr-4 text-slate-400 dark:text-slate-500">
+<span class="text-[10px] font-bold uppercase tracking-wide">Mar</span>
+<span class="text-slate-500 dark:text-slate-400 text-xl font-bold">04</span>
+</div>
+<div class="flex flex-col flex-1 justify-center gap-1">
+<div class="flex justify-between items-start gap-2">
+<h4 class="text-slate-500 dark:text-slate-400 font-bold text-base leading-tight group-hover:text-primary transition-colors">Welsh 3000s Challenge</h4>
+<span class="bg-slate-100 dark:bg-slate-800 text-slate-500 text-[10px] font-bold px-1.5 py-0.5 rounded border border-slate-200 dark:border-slate-700 whitespace-nowrap">Sold Out</span>
+</div>
+<div class="flex items-center gap-3 text-xs text-slate-400 dark:text-slate-500 mt-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hiking</span>
+<span>Endurance</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600"></div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span class="truncate">Snowdonia</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Event Item 5 -->
+<div class="group flex bg-surface-light dark:bg-surface-dark p-3 rounded-xl shadow-sm border border-transparent hover:border-primary/20 transition-all cursor-pointer">
+<div class="flex flex-col items-center justify-center w-14 h-16 bg-slate-100 dark:bg-slate-800 rounded-lg shrink-0 mr-4 text-slate-500 dark:text-slate-400">
+<span class="text-[10px] font-bold uppercase tracking-wide">Mar</span>
+<span class="text-slate-900 dark:text-white text-xl font-bold">12</span>
+</div>
+<div class="flex flex-col flex-1 justify-center gap-1">
+<div class="flex justify-between items-start gap-2">
+<h4 class="text-slate-900 dark:text-white font-bold text-base leading-tight group-hover:text-primary transition-colors">Anglesey Kayak Tour</h4>
+</div>
+<div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mt-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">kayaking</span>
+<span>Water Sport</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-600"></div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span class="truncate">Anglesey</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Newsletter Section -->
+<div class="px-4 py-8 bg-gradient-to-br from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20 mt-4 mx-4 mb-4 rounded-2xl border border-primary/10">
+<div class="flex flex-col items-center text-center gap-3">
+<div class="p-3 bg-primary/20 rounded-full text-primary">
+<span class="material-symbols-outlined text-3xl">mail</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Never miss an event</h3>
+<p class="text-sm text-slate-500 dark:text-slate-300 max-w-[280px]">Get weekly updates on new races and adventures in Wales.</p>
+<div class="flex w-full mt-2 gap-2">
+<input class="flex-1 h-10 rounded-lg border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm px-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-shadow" placeholder="Your email" type="email"/>
+<button class="h-10 px-4 bg-primary hover:bg-blue-700 text-white font-bold text-sm rounded-lg transition-colors">
+                        Join
+                    </button>
+</div>
+</div>
+</div>
+<!-- Submit CTA -->
+<div class="px-4 pb-8 text-center">
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-3">Organizing a race or adventure?</p>
+<button class="w-full h-12 border-2 border-dashed border-slate-300 dark:border-slate-700 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary text-slate-600 dark:text-slate-300 font-bold rounded-xl flex items-center justify-center gap-2 transition-all">
+<span class="material-symbols-outlined">add_circle</span>
+                Submit your event
+            </button>
+</div>
+<!-- Bottom Navigation Spacer -->
+<div class="h-8"></div>
+</div>
+</body></html>

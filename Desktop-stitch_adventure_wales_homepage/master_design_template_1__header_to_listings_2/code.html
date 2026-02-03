@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Adventure Wales - Master Template</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&amp;family=Noto+Sans:wght@300..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f97415",
+                        "teal-deep": "#1e3a4c",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#23170f",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                    boxShadow: {
+                        "soft": "0 4px 20px -2px rgba(0, 0, 0, 0.05)",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for sidebar */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-filled {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#181411] dark:text-white antialiased overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- Header -->
+<header class="sticky top-0 z-50 w-full bg-white dark:bg-[#1e1e1e] border-b border-[#f5f2f0] dark:border-[#333]">
+<div class="max-w-[1440px] mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-teal-deep dark:text-white text-xl font-bold tracking-tight">Adventure Wales</h2>
+</div>
+<!-- Mega Menu Links -->
+<nav class="hidden lg:flex items-center gap-8">
+<div class="group relative flex items-center gap-1 cursor-pointer py-6">
+<span class="text-sm font-bold text-teal-deep dark:text-gray-200">Destinations</span>
+<span class="material-symbols-outlined text-sm text-gray-400">expand_more</span>
+</div>
+<div class="group relative flex items-center gap-1 cursor-pointer py-6">
+<span class="text-sm font-bold text-teal-deep dark:text-gray-200">Things to Do</span>
+<span class="material-symbols-outlined text-sm text-gray-400">expand_more</span>
+</div>
+<div class="group relative flex items-center gap-1 cursor-pointer py-6">
+<span class="text-sm font-bold text-teal-deep dark:text-gray-200">Stay</span>
+<span class="material-symbols-outlined text-sm text-gray-400">expand_more</span>
+</div>
+<a class="text-sm font-bold text-teal-deep dark:text-gray-200" href="#">Stories</a>
+<a class="text-sm font-bold text-teal-deep dark:text-gray-200" href="#">Events</a>
+</nav>
+<!-- Actions -->
+<div class="flex gap-3">
+<button class="hidden md:flex h-10 px-5 items-center justify-center rounded-xl bg-gray-100 dark:bg-gray-800 text-teal-deep dark:text-white text-sm font-bold hover:bg-gray-200 transition">
+                    Log In
+                </button>
+<button class="h-10 px-5 items-center justify-center rounded-xl bg-primary text-white text-sm font-bold hover:bg-orange-600 transition shadow-lg shadow-primary/30">
+                    Plan a Trip
+                </button>
+</div>
+</div>
+</header>
+<!-- Main Content Wrapper -->
+<main class="w-full">
+<!-- Hero Section -->
+<div class="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center z-0" data-alt="Misty mountains in Wales at sunrise" style='background-image: linear-gradient(rgba(30, 58, 76, 0.4), rgba(30, 58, 76, 0.6)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBrcDizUsIawvMLzrhNKaikIb4oxNBvG9b0IqDnlNjCJZ62rgHnLX8I4ZTy02sgJUfkcpo0Uy3SPcIiu0Qyy63cQNIIFM7ZbsjB8JTHCTjCiW0zdj8ERWtiDGpv9myseByWtxEowikBPp3AN5N2niMqQukEtp15mnezNX_N3O_Xm0J5CMbXa2Jqdj-hReVOieJO_FuoQEzadUDMh9u3AHEo8MY8iMGJnb2oPZjkBDBCToCepCmh_O6fmnZNizshS81AwQadR3xTXg");'>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center max-w-4xl px-4 mt-[-80px]">
+<h1 class="text-white text-5xl md:text-7xl font-black tracking-tight mb-4 drop-shadow-lg">
+                    Wild Heart of Wales
+                </h1>
+<p class="text-gray-100 text-lg md:text-xl max-w-2xl mb-8 font-medium drop-shadow-md">
+                    Discover breathtaking landscapes, thrilling adventures, and hidden gems across the countryside.
+                </p>
+<!-- Trust Strip -->
+<div class="flex items-center gap-6 opacity-90">
+<div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+<span class="material-symbols-outlined text-primary icon-filled text-sm">verified</span>
+<span class="text-white text-xs font-bold uppercase tracking-wider">Official Partner</span>
+</div>
+<div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+<span class="material-symbols-outlined text-primary icon-filled text-sm">eco</span>
+<span class="text-white text-xs font-bold uppercase tracking-wider">Sustainable Travel</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Search Card (Overlapping Hero) -->
+<div class="relative z-20 max-w-[1200px] mx-auto px-6 -mt-24">
+<div class="bg-white dark:bg-[#1e1e1e] rounded-2xl shadow-xl p-4 md:p-6 border border-gray-100 dark:border-gray-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
+<!-- Field 1 -->
+<div class="flex flex-col gap-2">
+<label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Location</label>
+<div class="flex items-center bg-background-light dark:bg-background-dark h-12 rounded-xl px-4 border border-transparent focus-within:border-primary transition">
+<span class="material-symbols-outlined text-teal-deep dark:text-gray-400">location_on</span>
+<input class="bg-transparent border-none text-sm font-semibold text-teal-deep dark:text-white w-full focus:ring-0 placeholder:text-gray-400" placeholder="Where to?" type="text"/>
+</div>
+</div>
+<!-- Field 2 -->
+<div class="flex flex-col gap-2">
+<label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Activity</label>
+<div class="flex items-center bg-background-light dark:bg-background-dark h-12 rounded-xl px-4 border border-transparent focus-within:border-primary transition">
+<span class="material-symbols-outlined text-teal-deep dark:text-gray-400">hiking</span>
+<select class="bg-transparent border-none text-sm font-semibold text-teal-deep dark:text-white w-full focus:ring-0 cursor-pointer">
+<option>All Adventures</option>
+<option>Hiking</option>
+<option>Kayaking</option>
+<option>Cycling</option>
+</select>
+</div>
+</div>
+<!-- Field 3 -->
+<div class="flex flex-col gap-2">
+<label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Dates</label>
+<div class="flex items-center bg-background-light dark:bg-background-dark h-12 rounded-xl px-4 border border-transparent focus-within:border-primary transition">
+<span class="material-symbols-outlined text-teal-deep dark:text-gray-400">calendar_month</span>
+<input class="bg-transparent border-none text-sm font-semibold text-teal-deep dark:text-white w-full focus:ring-0 placeholder:text-gray-400" placeholder="Add dates" type="text"/>
+</div>
+</div>
+<!-- Button -->
+<button class="h-12 w-full bg-teal-deep text-white font-bold rounded-xl hover:bg-[#152a38] transition flex items-center justify-center gap-2 shadow-lg">
+<span class="material-symbols-outlined">search</span>
+                        Explore
+                    </button>
+</div>
+</div>
+</div>
+<!-- Sticky Tabs -->
+<div class="sticky top-20 z-40 bg-white/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 mt-8">
+<div class="max-w-[1440px] mx-auto px-6">
+<div class="flex items-center gap-8 overflow-x-auto no-scrollbar">
+<a class="flex items-center gap-2 py-4 border-b-[3px] border-primary text-teal-deep dark:text-white font-bold text-sm whitespace-nowrap" href="#">
+<span class="material-symbols-outlined icon-filled text-[20px]">grid_view</span>
+                        Overview
+                    </a>
+<a class="flex items-center gap-2 py-4 border-b-[3px] border-transparent text-gray-500 hover:text-teal-deep dark:hover:text-white font-bold text-sm whitespace-nowrap transition" href="#">
+                        Things to Do
+                    </a>
+<a class="flex items-center gap-2 py-4 border-b-[3px] border-transparent text-gray-500 hover:text-teal-deep dark:hover:text-white font-bold text-sm whitespace-nowrap transition" href="#">
+<span class="material-symbols-outlined text-[20px]">map</span>
+                        Map View
+                    </a>
+<a class="flex items-center gap-2 py-4 border-b-[3px] border-transparent text-gray-500 hover:text-teal-deep dark:hover:text-white font-bold text-sm whitespace-nowrap transition" href="#">
+                        Itineraries
+                    </a>
+<a class="flex items-center gap-2 py-4 border-b-[3px] border-transparent text-gray-500 hover:text-teal-deep dark:hover:text-white font-bold text-sm whitespace-nowrap transition" href="#">
+                        Events
+                    </a>
+</div>
+</div>
+</div>
+<!-- Main Layout Area -->
+<div class="max-w-[1440px] mx-auto px-6 py-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- LEFT COLUMN (Content & Directory) -->
+<div class="lg:col-span-8 flex flex-col gap-16">
+<!-- Intro Section -->
+<section>
+<h2 class="text-3xl font-bold text-teal-deep dark:text-white mb-4">Adventure Awaits in Wales</h2>
+<p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-6">
+                            From the rugged peaks of Snowdonia to the coastal paths of Pembrokeshire, Wales offers a diverse playground for outdoor enthusiasts. Whether you are looking for adrenaline-pumping activities or serene nature walks, start your journey here.
+                        </p>
+<div class="flex gap-4">
+<div class="h-32 w-1/3 rounded-xl bg-cover bg-center" data-alt="Hiking boots on a rock" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZfHM5Z9Q6RHuHzF-grv-K8A9EGw6_lLZolNgDWg2CUNSQ2Bumje5si6uJbtieLzynZua9VHpSYWIgq60X2s56OcxQ2WPaobrih_cFAH0r6Ux42lXp18etBwee98kAHcJz-2c7-hF0hMv4vPMQEI59MySzWKtdTYd48q_eFZvJcYBnmaZ_D95392xCqzk6-BMU7W3IAerIGAhHsBtJyuEOdTXf2-HHsB7YTB8fobCZeNgonzVOMF_qsSlSmeNUFD9NvJh-hDY5vg');"></div>
+<div class="h-32 w-1/3 rounded-xl bg-cover bg-center" data-alt="Kayaking in a river" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAcE7PaYc0bjonFLi_--OxcNXibXlmgmgca9hbDKkhY-hHPemKEanrzTrwLbQonW87B_OMQ9VTh0xbg2rcpwrAoD8VFKagz1JegEpAQ3hzbED4uZF4Z2tY-RHjg3RiGM-lVOHEzAP5oehD2Oj1IQtS5ZLZA2dc7WuhARFqBdeXPtJgdVNoncGs_Fp6c_nhCSQWGg92K5qnuqxm6Co7bHRGtowtV9yZQyNd98YM9728mbAoAHX9RkA5-CkAewz1Sb88kNCDxb8aY4Q');"></div>
+<div class="h-32 w-1/3 rounded-xl bg-cover bg-center" data-alt="Cycling on a trail" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRDbvV9iWwkmyA-i-xJUt3C4G35rtcvEWv0mt1IpEDoxtaqqKzJL_sl4uUftTwYnv_4iSNpeZ0600lL49j07PSbzjzOwMTSHYzwz_ZpgKdUApATU6eTb_pXYyVDFlweUsqaFUBKwgpnZMJJIVhNNsUVjcbjjdBZP6W9WrWHA0_o479P6UULcsS4_fKhya6LsQIu2w20ytfbtkNr4vyw87msNvlryn877UvA_WdELY38Od9YtPFgRbU1u2RtpS1qUrPCwt15K32uw');"></div>
+</div>
+</section>
+<!-- Filter & Listing Section -->
+<section class="flex flex-col md:flex-row gap-8">
+<!-- Sticky Sidebar Filter -->
+<aside class="w-full md:w-64 flex-shrink-0">
+<div class="sticky top-44 bg-white dark:bg-[#1e1e1e] rounded-xl p-5 border border-gray-100 dark:border-gray-800 shadow-soft">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-bold text-teal-deep dark:text-white">Filters</h3>
+<button class="text-xs text-primary font-bold">Reset</button>
+</div>
+<!-- Price Range -->
+<div class="py-4 border-b border-gray-100 dark:border-gray-700">
+<p class="text-sm font-semibold mb-3 text-gray-700 dark:text-gray-200">Price Range</p>
+<div class="flex gap-2 mb-2">
+<div class="h-2 flex-1 bg-gray-200 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-2/3 ml-4"></div>
+</div>
+</div>
+<div class="flex justify-between text-xs text-gray-500">
+<span>$10</span>
+<span>$500+</span>
+</div>
+</div>
+<!-- Categories -->
+<div class="py-4 border-b border-gray-100 dark:border-gray-700">
+<p class="text-sm font-semibold mb-3 text-gray-700 dark:text-gray-200">Categories</p>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 cursor-pointer">
+<input checked="" class="rounded border-gray-300 text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="text-sm text-gray-600 dark:text-gray-400">Hiking &amp; Walking</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="rounded border-gray-300 text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="text-sm text-gray-600 dark:text-gray-400">Water Sports</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="rounded border-gray-300 text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="text-sm text-gray-600 dark:text-gray-400">Cycling</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="rounded border-gray-300 text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="text-sm text-gray-600 dark:text-gray-400">Wildlife</span>
+</label>
+</div>
+</div>
+<!-- Duration -->
+<div class="pt-4">
+<p class="text-sm font-semibold mb-3 text-gray-700 dark:text-gray-200">Duration</p>
+<div class="flex flex-wrap gap-2">
+<button class="px-3 py-1 rounded-full border border-gray-200 dark:border-gray-700 text-xs text-gray-600 dark:text-gray-400 hover:border-primary hover:text-primary transition">1-3h</button>
+<button class="px-3 py-1 rounded-full border border-primary bg-primary/10 text-xs text-primary font-bold transition">Half Day</button>
+<button class="px-3 py-1 rounded-full border border-gray-200 dark:border-gray-700 text-xs text-gray-600 dark:text-gray-400 hover:border-primary hover:text-primary transition">Full Day</button>
+</div>
+</div>
+</div>
+</aside>
+<!-- Listings Grid -->
+<div class="flex-1">
+<!-- Featured Operator Callout -->
+<div class="w-full bg-teal-deep rounded-2xl p-6 mb-8 flex items-center justify-between relative overflow-hidden shadow-lg">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+<div class="relative z-10 flex-1 pr-4">
+<span class="inline-block px-2 py-1 bg-primary text-white text-[10px] font-bold uppercase tracking-wider rounded mb-2">Featured Operator</span>
+<h3 class="text-xl font-bold text-white mb-1">Snowdonia Guided Tours</h3>
+<p class="text-gray-300 text-sm mb-4">Expert local guides for the toughest peaks.</p>
+<button class="text-white text-sm font-bold border-b border-primary pb-0.5 hover:text-primary transition">View Profile</button>
+</div>
+<div class="relative z-10 w-24 h-24 rounded-full bg-white p-1 shrink-0">
+<img class="w-full h-full object-cover rounded-full" data-alt="Portrait of a smiling guide" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC76VcYNYHg6cIXO9b4ZTj8hNpQ0FWlYHXXeP5iDG3A7QKhHpCsi-JXCWHyKSaEo_cv3mw3IpFQEt0pBYLqachgOpKUD0Kv2IlIasb8nyrfGU49VaC1N-qP18ZcjkUlloLRUNcBXmWKwjIHXb0FiEL4e66zfr9oyyDy8rfXo2rklT9fidbfqWwYPXkzDECDnCKUVjkqAIKIAZ3TRDUH51P49KLrzb4EFesFe_mnnXTs_yslnZPDKqeUw_CyYuaZSoABv455R2xbfw"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Card 1 -->
+<div class="group bg-white dark:bg-[#1e1e1e] rounded-xl border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-lg transition cursor-pointer flex flex-col h-full">
+<div class="relative aspect-[4/3] bg-gray-200 overflow-hidden">
+<div class="absolute top-3 right-3 z-10 bg-white/90 backdrop-blur px-2 py-1 rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-orange-400 text-sm icon-filled">star</span>
+<span class="text-xs font-bold">4.9</span>
+</div>
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition duration-500" data-alt="Climber on a rock face" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDF-7hhCaQZuuLmZODQaj3IKLHCmGT0yDVojKe1TxFIsrfAN9Z-gpRX35OKisHDqh5BmpG8yt--zxphX3xng3dmWF0_9NrWQ68HZ9PoGnaKHhLvQBZhnv2bM-_-vC6ENomWCMpmio68397NbVcD2rC9l-AwpYXnvt_BwrZf4vbYIYxUGg8zICUhVVdDK8SA_n1xtie8GymQ9aZOE-1dS5bv3p4XE17KngoFJ-ygK0elAPUM4DnnY1K0QEDyWdhPoB1o0dsjKAhX0w');"></div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-2 mb-2 text-xs font-medium text-gray-500">
+<span class="text-primary">Climbing</span>
+<span>•</span>
+<span>North Wales</span>
+</div>
+<h3 class="text-base font-bold text-teal-deep dark:text-white mb-2 leading-tight">Beginner Rock Climbing Course</h3>
+<div class="mt-auto pt-4 flex items-center justify-between border-t border-gray-100 dark:border-gray-800">
+<div>
+<span class="text-xs text-gray-500 block">From</span>
+<span class="text-lg font-bold text-teal-deep dark:text-white">£45</span>
+</div>
+<button class="bg-background-light dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-teal-deep dark:text-white p-2 rounded-lg transition">
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-white dark:bg-[#1e1e1e] rounded-xl border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-lg transition cursor-pointer flex flex-col h-full">
+<div class="relative aspect-[4/3] bg-gray-200 overflow-hidden">
+<div class="absolute top-3 right-3 z-10 bg-white/90 backdrop-blur px-2 py-1 rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-orange-400 text-sm icon-filled">star</span>
+<span class="text-xs font-bold">5.0</span>
+</div>
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition duration-500" data-alt="Kayaks on a calm lake" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCeEtHzrmg-XJunD8RFAjfuChFKEXbgyLCD5KSpAIq1bkU_V1eWqHpV280yPa5SHl6jkm9WcEhyvHLYWZ_84Jk5iCoAEKcBoTB4PHeXfAoGhza-cqVnJ-TiMZ9EVigg65_E9HNeHElzaDdYcmD_KCXBLkumji8sw1lMTchZifz6LjMqOMXE3GoPBTbolMmERxgkXEhjjBlQghwKy7DDkxJNHKPn5TDtTX9v3DXLOdhOk34Y-7vzS3h-Yn73vCd7t7A_Ao9IommQhg');"></div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-2 mb-2 text-xs font-medium text-gray-500">
+<span class="text-primary">Water Sports</span>
+<span>•</span>
+<span>Bala Lake</span>
+</div>
+<h3 class="text-base font-bold text-teal-deep dark:text-white mb-2 leading-tight">Sunset Kayaking Experience</h3>
+<div class="mt-auto pt-4 flex items-center justify-between border-t border-gray-100 dark:border-gray-800">
+<div>
+<span class="text-xs text-gray-500 block">From</span>
+<span class="text-lg font-bold text-teal-deep dark:text-white">£30</span>
+</div>
+<button class="bg-background-light dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-teal-deep dark:text-white p-2 rounded-lg transition">
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-white dark:bg-[#1e1e1e] rounded-xl border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-lg transition cursor-pointer flex flex-col h-full">
+<div class="relative aspect-[4/3] bg-gray-200 overflow-hidden">
+<div class="absolute top-3 right-3 z-10 bg-white/90 backdrop-blur px-2 py-1 rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-orange-400 text-sm icon-filled">star</span>
+<span class="text-xs font-bold">4.8</span>
+</div>
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition duration-500" data-alt="Family walking on a green hill" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuARNA6S9n6EdxX0FH6X2FiYZ4Kjt6v9xwbRMucMyHDQaH0xE8-hcyRYJd_FpdtvQdaD7Zuu9xABj-xkdU-cep-M2zM2Iqh8Owz7cI733-p7bMFoSyD3E8_3GPwlO32ZOm1stel8A7c85jDfNvSZqniQkwHV9noLMBo9NK-x2D3EHJK1wZslx83LmOMSvYXmWtQ9nrhlfBiUZMP9j0DaUqF4kArLTJt0Vttbf0Gu40QWXO9QLiOpGFe9RiqXGRpNQqgZA-4YzNaT5w');"></div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-2 mb-2 text-xs font-medium text-gray-500">
+<span class="text-primary">Family</span>
+<span>•</span>
+<span>Brecon Beacons</span>
+</div>
+<h3 class="text-base font-bold text-teal-deep dark:text-white mb-2 leading-tight">Guided Family Nature Walk</h3>
+<div class="mt-auto pt-4 flex items-center justify-between border-t border-gray-100 dark:border-gray-800">
+<div>
+<span class="text-xs text-gray-500 block">From</span>
+<span class="text-lg font-bold text-teal-deep dark:text-white">£25</span>
+</div>
+<button class="bg-background-light dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-teal-deep dark:text-white p-2 rounded-lg transition">
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group bg-white dark:bg-[#1e1e1e] rounded-xl border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-lg transition cursor-pointer flex flex-col h-full">
+<div class="relative aspect-[4/3] bg-gray-200 overflow-hidden">
+<div class="absolute top-3 right-3 z-10 bg-white/90 backdrop-blur px-2 py-1 rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-orange-400 text-sm icon-filled">star</span>
+<span class="text-xs font-bold">5.0</span>
+</div>
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition duration-500" data-alt="Surfer in the ocean waves" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuClus5RZUEBeduZYBAvVZJzmsf-MpTxbdUh-YWfVak65Ooo7uXjVpVdKHLrmo2GH5iblk0MjPDuPx8Cu_RXDozt8-fpu50fZa5jSCrDVrgN60FTxdCjS7q7GrCCXHzM5b5fFXKZcicx4eDFGtlMtP_fy6ygnu3opDVravdJF7DcvPWOeewWOTUC0ns5qHGH_WfGaEpveDEd-fJKqH2UkYbv9sEttMefQFsj-qh1A0aNpHOEUBeBy_z4ZwOu6xUKUvQeo4Gr04_qeQ');"></div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-2 mb-2 text-xs font-medium text-gray-500">
+<span class="text-primary">Surfing</span>
+<span>•</span>
+<span>Pembrokeshire</span>
+</div>
+<h3 class="text-base font-bold text-teal-deep dark:text-white mb-2 leading-tight">Private Surf Lesson</h3>
+<div class="mt-auto pt-4 flex items-center justify-between border-t border-gray-100 dark:border-gray-800">
+<div>
+<span class="text-xs text-gray-500 block">From</span>
+<span class="text-lg font-bold text-teal-deep dark:text-white">£60</span>
+</div>
+<button class="bg-background-light dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-teal-deep dark:text-white p-2 rounded-lg transition">
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-center mt-10">
+<button class="px-6 py-3 bg-white dark:bg-[#1e1e1e] border border-gray-200 dark:border-gray-700 text-teal-deep dark:text-white font-bold rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition shadow-sm">
+                                    Show More Adventures
+                                </button>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN (Sticky Sidebar Widgets) -->
+<div class="lg:col-span-4 flex flex-col gap-8 h-full">
+<div class="sticky top-44 flex flex-col gap-8">
+<!-- Quick Plan Widget -->
+<div class="bg-teal-deep text-white rounded-2xl p-6 shadow-xl relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
+<h3 class="text-xl font-bold mb-1 relative z-10">Quick Plan</h3>
+<p class="text-gray-300 text-sm mb-4 relative z-10">Get a personalized itinerary in seconds.</p>
+<div class="flex flex-col gap-3 relative z-10">
+<button class="w-full bg-white/10 hover:bg-white/20 border border-white/10 text-left px-4 py-3 rounded-xl text-sm font-medium transition flex items-center justify-between group">
+<span>Who's traveling?</span>
+<span class="material-symbols-outlined text-gray-400 group-hover:text-white">chevron_right</span>
+</button>
+<button class="w-full bg-white/10 hover:bg-white/20 border border-white/10 text-left px-4 py-3 rounded-xl text-sm font-medium transition flex items-center justify-between group">
+<span>What interests you?</span>
+<span class="material-symbols-outlined text-gray-400 group-hover:text-white">chevron_right</span>
+</button>
+<button class="w-full bg-primary hover:bg-orange-600 text-white font-bold py-3 rounded-xl mt-2 shadow-lg shadow-orange-900/20 transition">
+                                    Create Plan
+                                </button>
+</div>
+</div>
+<!-- Top Operators Widget -->
+<div class="bg-white dark:bg-[#1e1e1e] rounded-2xl p-6 border border-gray-100 dark:border-gray-800 shadow-soft">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-bold text-teal-deep dark:text-white">Top Operators</h3>
+<a class="text-xs text-primary font-bold hover:underline" href="#">View All</a>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Op 1 -->
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-lg object-cover" data-alt="Operator logo generic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB51pwJ1hd27seDJZwSdkAE1HnNzhlpKl_A4U3A-B4Pj6q3C4ITFPyY6bV7WAWGYjFWo7DXFx-qSW9XItLaLnONEUK0Spm6iSoD2xaKwOB9FPI41h1Kk-rDkC1wlnIzNF8tQfQtaFn3XaAG1EQ2NZIv6ZaNUGMxlTYLyZTk1ivy4HgABbr-0qYX7DjFSAcRIUVsxX50VHlNGuQ-xi6sYob4fvBaylhrIDT0_CwnCYTKVDj8eLjG9CN5e51eKRQP7hMkFdGU5vX_UQ"/>
+<div class="flex-1">
+<h4 class="text-sm font-bold text-teal-deep dark:text-white">Wild Wales</h4>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-orange-400 text-[12px] icon-filled">star</span>
+<span class="text-xs text-gray-500">4.9 (120 reviews)</span>
+</div>
+</div>
+<button class="size-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 transition">
+<span class="material-symbols-outlined text-teal-deep dark:text-white text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Op 2 -->
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-lg object-cover" data-alt="Operator logo generic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1Wpyqv4i8_yOX0aMv9q_CTgdMR6R86ItLytoymQv0sKehtJg2zNLnIqV7wmKIri35Nti8BsJlacCebiF4-RKrOyFcdMZ0Tx6Jl8Mffim3zo5po2pAG9eatAEORAO-_UD0uBWkmaTe1EYRoSb48IUqsPfNMbKI-60zcbLDrnRPvqgO0-OgGU0EkSixeDFcjAhqHgALiXhzupBaHd-7wcAN9cmLT5ub4EjuMUytfB_VU7acw4TyxETsdA0qK7vqkLvZ7pfLUFCn0w"/>
+<div class="flex-1">
+<h4 class="text-sm font-bold text-teal-deep dark:text-white">Cymru Active</h4>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-orange-400 text-[12px] icon-filled">star</span>
+<span class="text-xs text-gray-500">4.8 (85 reviews)</span>
+</div>
+</div>
+<button class="size-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 transition">
+<span class="material-symbols-outlined text-teal-deep dark:text-white text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Op 3 -->
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-lg object-cover" data-alt="Operator logo generic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrl7ofIGDkhxy8N6NNMTQEARkGxLFb0F1N5OvSxjfJ0zWu77LXce4Ab2Z3XV6X65GwfsuApxqu0mZwKxwBYMzU61H2uv0ZWs4fa6O1TmQ1t59cgblWUR12PHL8oQQSXpdE-HTY9G2l6zB7DSSIdYTz-GqfA-sbqDXtmh_-dmk6TWZ23ZImvyEfb7b5cGrSLGw2-BvxuiLPTwhDyJdz2YKRxYJTuK6hYI6iNmlXRPsYK8mXA163wSfbkGAo1x7YXF467kvwUrtlkg"/>
+<div class="flex-1">
+<h4 class="text-sm font-bold text-teal-deep dark:text-white">Peak Explorers</h4>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-orange-400 text-[12px] icon-filled">star</span>
+<span class="text-xs text-gray-500">5.0 (42 reviews)</span>
+</div>
+</div>
+<button class="size-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 transition">
+<span class="material-symbols-outlined text-teal-deep dark:text-white text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

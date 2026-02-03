@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getRegionWithStats, getActivitiesByRegion, getAccommodationByRegion, getOperators } from "@/lib/queries";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { AccommodationCard } from "@/components/cards/accommodation-card";
+import { RegionMap } from "@/components/ui/RegionMap";
 import { 
   Map, 
   Heart, 
@@ -169,26 +170,43 @@ export default async function RegionPage({ params }: RegionPageProps) {
             {/* Interactive Map Section */}
             <section>
               <h3 className="text-lg lg:text-xl font-bold mb-4 text-[#1e3a4c]">Explore the Region</h3>
-              <div className="w-full aspect-video rounded-2xl overflow-hidden relative shadow-md group cursor-pointer bg-gray-200">
-                 {/* Map Placeholder Image */}
-                <img 
-                    alt={`Map of ${region.name}`}
-                    className="w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity"
-                    src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <button className="bg-white text-gray-900 px-5 lg:px-6 py-2.5 lg:py-3 rounded-full font-bold shadow-lg flex items-center gap-2 transform group-hover:scale-105 transition-transform text-sm lg:text-base">
-                    <Map className="w-5 h-5 text-[#1e3a4c]" />
-                    Open Interactive Map
-                  </button>
-                </div>
-              </div>
+              <RegionMap
+                markers={[
+                  // Activities
+                  ...activities
+                    .filter((item) => item.activity.lat && item.activity.lng)
+                    .map((item) => ({
+                      id: `activity-${item.activity.id}`,
+                      lat: parseFloat(String(item.activity.lat)),
+                      lng: parseFloat(String(item.activity.lng)),
+                      type: "activity" as const,
+                      title: item.activity.name,
+                      link: `/activities/${item.activity.slug}`,
+                      price: item.activity.priceFrom ? `From £${item.activity.priceFrom}` : undefined,
+                    })),
+                  // Accommodation
+                  ...accommodation
+                    .filter((item) => item.accommodation.lat && item.accommodation.lng)
+                    .map((item) => ({
+                      id: `accommodation-${item.accommodation.id}`,
+                      lat: parseFloat(String(item.accommodation.lat)),
+                      lng: parseFloat(String(item.accommodation.lng)),
+                      type: "accommodation" as const,
+                      title: item.accommodation.name,
+                      link: `/accommodation/${item.accommodation.slug}`,
+                      price: item.accommodation.priceFrom ? `From £${item.accommodation.priceFrom}/night` : undefined,
+                    })),
+                ]}
+                center={region.lat && region.lng ? [parseFloat(String(region.lat)), parseFloat(String(region.lng))] : undefined}
+                zoom={10}
+                height="400px"
+                className="shadow-md"
+              />
               <div className="flex gap-2 lg:gap-3 overflow-x-auto pb-2 mt-4 no-scrollbar">
-                <MapFilterPill label="Peaks" icon="⛰️" />
-                <MapFilterPill label="Castles" icon="🏰" />
-                <MapFilterPill label="Lakes" icon="🏊" />
-                <MapFilterPill label="Trails" icon="🚶" />
+                <MapFilterPill label="Activities" icon="🎯" />
                 <MapFilterPill label="Stays" icon="🏠" />
+                <MapFilterPill label="Events" icon="📅" />
+                <MapFilterPill label="Operators" icon="👥" />
               </div>
             </section>
 

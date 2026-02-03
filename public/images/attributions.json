@@ -1,0 +1,140 @@
+{
+  "public/images/regions/snowdonia-hero.jpg": {
+    "photographer": "Ardalan Hamedani",
+    "photographer_url": "https://unsplash.com/@ardalanhamedani",
+    "photo_url": "https://unsplash.com/photos/a-snow-covered-mountain-with-a-bird-flying-over-it-n64ixP5QTGQ",
+    "downloaded": "2026-02-03"
+  },
+  "images/regions/pembrokeshire-hero.jpg": {
+    "photographer": "Ian Cylkowski",
+    "photographer_url": "https://unsplash.com/@iancylkowskiphotography",
+    "photo_url": "https://unsplash.com/photos/body-of-water-and-islan-4WF0bRhKEsM",
+    "downloaded": "2026-02-03"
+  },
+  "images/regions/brecon-beacons-hero.jpg": {
+    "photographer": "Samuel Thompson",
+    "photographer_url": "https://unsplash.com/@samuelthomps0n",
+    "photo_url": "https://unsplash.com/photos/aerial-view-photography-of-mountain-range-under-golden-hour-gfkNnpMdu-Q",
+    "downloaded": "2026-02-03"
+  },
+  "images/regions/anglesey-hero.jpg": {
+    "photographer": "Markus Freise",
+    "photographer_url": "https://unsplash.com/@markusfreise",
+    "photo_url": "https://unsplash.com/photos/a-rocky-beach-with-a-body-of-water-and-mountains-in-the-distance-Zve752zX4F4",
+    "downloaded": "2026-02-03"
+  },
+  "images/regions/gower-hero.jpg": {
+    "photographer": "Ruben Gregori",
+    "photographer_url": "https://unsplash.com/@ashmedai82",
+    "photo_url": "https://unsplash.com/photos/a-beach-with-a-body-of-water-A9x0WEtkCGk",
+    "downloaded": "2026-02-03"
+  },
+  "images/regions/llyn-peninsula-hero.jpg": {
+    "photographer": "Ruben Gregori",
+    "photographer_url": "https://unsplash.com/@ashmedai82",
+    "photo_url": "https://unsplash.com/photos/a-beach-with-a-body-of-water-A9x0WEtkCGk",
+    "downloaded": "2026-02-03"
+  },
+  "images/regions/south-wales-hero.jpg": {
+    "photographer": "Thomas Tucker",
+    "photographer_url": "https://unsplash.com/@tents_and_tread",
+    "photo_url": "https://unsplash.com/photos/off-road-vehicles-navigate-a-muddy-foggy-trail-PQVqRMTpSXc",
+    "downloaded": "2026-02-03"
+  },
+  "images/regions/north-wales-hero.jpg": {
+    "photographer": "Graham Pengelly",
+    "photographer_url": "https://unsplash.com/@grahampengelly_",
+    "photo_url": "https://unsplash.com/photos/green-mountain-beside-body-of-water-during-daytime--ZYuIWAB0D4",
+    "downloaded": "2026-02-03"
+  },
+  "images/regions/mid-wales-hero.jpg": {
+    "photographer": "Tommy Mason",
+    "photographer_url": "https://unsplash.com/@tommymmason",
+    "photo_url": "https://unsplash.com/photos/brown-wooden-bridge-over-green-trees-during-daytime--tDnVkkPYuA",
+    "downloaded": "2026-02-03"
+  },
+  "images/regions/carmarthenshire-hero.jpg": {
+    "photographer": "Anthony Wright",
+    "photographer_url": "https://unsplash.com/@tonywright33",
+    "photo_url": "https://unsplash.com/photos/grey-metal-framed-greenhouse-during-daytime-OKXew1vCD0o",
+    "downloaded": "2026-02-03"
+  },
+  "images/regions/wye-valley-hero.jpg": {
+    "photographer": "Sarah Precious",
+    "photographer_url": "https://unsplash.com/@sarahpresh",
+    "photo_url": "https://unsplash.com/photos/a-lake-surrounded-by-mountains-hOdGSvRmfl8",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/zip-lining-hero.jpg": {
+    "photographer": "Praneeth Peiris",
+    "photographer_url": "https://unsplash.com/@gnomezgrave",
+    "photo_url": "https://unsplash.com/photos/a-group-of-boats-floating-on-top-of-a-lush-green-hillside-Tdr_1C0NuKE",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/coasteering-hero.jpg": {
+    "photographer": "Coasteering",
+    "photographer_url": "https://unsplash.com/@coasteering_co_uk",
+    "photo_url": "https://unsplash.com/photos/person-in-red-kayak-on-body-of-water-during-daytime-hqfQJtA6ahY",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/mountain-biking-hero.jpg": {
+    "photographer": "Tom Conway",
+    "photographer_url": "https://unsplash.com/@tecreate",
+    "photo_url": "https://unsplash.com/photos/man-riding-bicycle-Ep7llSmzHmQ",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/hiking-hero.jpg": {
+    "photographer": "Max Ford",
+    "photographer_url": "https://unsplash.com/@maxxford",
+    "photo_url": "https://unsplash.com/photos/gray-rocky-mountain-under-blue-sky-during-daytime-pHsv1ZM2tjU",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/climbing-hero.jpg": {
+    "photographer": "Chewool Kim",
+    "photographer_url": "https://unsplash.com/@koreandirtbag",
+    "photo_url": "https://unsplash.com/photos/a-couple-of-people-standing-on-top-of-a-mountain-4Ib2bC3jUEE",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/kayaking-hero.jpg": {
+    "photographer": "Rochelle Lee",
+    "photographer_url": "https://unsplash.com/@bestlifanna",
+    "photo_url": "https://unsplash.com/photos/kayakers-paddle-on-the-water-with-ships-and-city-skyline-2HF3DLh-nWk",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/surfing-hero.jpg": {
+    "photographer": "Noah Boyer",
+    "photographer_url": "https://unsplash.com/@emerald_",
+    "photo_url": "https://unsplash.com/photos/man-surfboarding-on-waves-YZKjkupSA6k",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/wild-swimming-hero.jpg": {
+    "photographer": "Hoover Tung",
+    "photographer_url": "https://unsplash.com/@lozt",
+    "photo_url": "https://unsplash.com/photos/brown-duck-perch-on-black-rock-wNeRmO0Xxmg",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/caving-hero.jpg": {
+    "photographer": "Ereng hu",
+    "photographer_url": "https://unsplash.com/@okayjet",
+    "photo_url": "https://unsplash.com/photos/dark-rocky-surface-with-mist-or-dust-PI-Qzba1E4o",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/gorge-walking-hero.jpg": {
+    "photographer": "Miguel Ángel Sanz",
+    "photographer_url": "https://unsplash.com/@maswdl95",
+    "photo_url": "https://unsplash.com/photos/a-waterfall-in-a-forest-VXugFtMiymA",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/paddleboarding-hero.jpg": {
+    "photographer": "Iliya Jokic",
+    "photographer_url": "https://unsplash.com/@iliya9",
+    "photo_url": "https://unsplash.com/photos/a-man-holding-a-surfboard-on-a-beach-NtZI6FrfVMc",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/rafting-hero.jpg": {
+    "photographer": "Jackalope West",
+    "photographer_url": "https://unsplash.com/@jackalope_west",
+    "photo_url": "https://unsplash.com/photos/people-riding-orange-kayak-on-water-during-daytime-nBNROOkE0W8",
+    "downloaded": "2026-02-03"
+  }
+}

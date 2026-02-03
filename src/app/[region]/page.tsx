@@ -100,11 +100,11 @@ export default async function RegionPage({ params }: RegionPageProps) {
         {/* Hero Section */}
         <div className="relative w-full rounded-2xl overflow-hidden mb-6 lg:mb-8 group h-[400px] lg:h-[500px]">
           <div className="absolute inset-0 bg-gray-900">
-            {/* Fallback image if heroImage is not available */}
+            {/* Use local hero image */}
             <img 
               alt={region.name}
               className="w-full h-full object-cover opacity-60 mix-blend-overlay group-hover:scale-105 transition-transform duration-700"
-              src={region.heroImage || "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2762&q=80"}
+              src={`/images/regions/${regionSlug}-hero.jpg`}
             />
           </div>
 

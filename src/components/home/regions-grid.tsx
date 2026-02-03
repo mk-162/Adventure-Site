@@ -11,15 +11,10 @@ interface RegionsGridProps {
   regions: Region[];
 }
 
-// Placeholder images for regions - in production these would come from the database
-const regionImages: Record<string, string> = {
-  snowdonia: "https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  pembrokeshire: "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "brecon-beacons": "https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  gower: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  anglesey: "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "llyn-peninsula": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-};
+// Use local images from /images/regions/[slug]-hero.jpg
+function getRegionImage(slug: string): string {
+  return `/images/regions/${slug}-hero.jpg`;
+}
 
 export function RegionsGrid({ regions }: RegionsGridProps) {
   // Take first 6 unique regions
@@ -44,7 +39,7 @@ export function RegionsGrid({ regions }: RegionsGridProps) {
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                 style={{
-                  backgroundImage: `url('${regionImages[region.slug] || "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"}')`,
+                  backgroundImage: `url('${getRegionImage(region.slug)}')`,
                 }}
               />
 

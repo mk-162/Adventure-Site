@@ -21,26 +21,82 @@ interface ActivityCardProps {
     slug: string;
     googleRating: string | null;
   } | null;
+  activityType?: {
+    slug: string;
+  } | null;
   image?: string;
   variant?: "default" | "compact" | "horizontal";
   hideOperator?: boolean;
 }
 
-// Placeholder images by activity type
-const placeholderImages: Record<string, string> = {
-  default:
-    "https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-};
+// Available local activity hero images
+const localActivityImages = new Set([
+  "archery",
+  "boat-tour",
+  "caving",
+  "climbing",
+  "coasteering",
+  "gorge-scrambling",
+  "gorge-walking",
+  "high-ropes",
+  "hiking",
+  "hiking-scrambling",
+  "kayaking",
+  "mine-exploration",
+  "mountain-biking",
+  "paddleboarding",
+  "rafting",
+  "sea-kayaking",
+  "sup",
+  "surfing",
+  "trail-running",
+  "wildlife-boat-tour",
+  "wild-swimming",
+  "windsurfing",
+  "zip-lining",
+]);
+
+// Get activity image - prioritize local images based on activity type or name
+function getActivityImage(activitySlug: string, activityTypeSlug?: string | null): string {
+  // Try activity type first
+  if (activityTypeSlug && localActivityImages.has(activityTypeSlug)) {
+    return `/images/activities/${activityTypeSlug}-hero.jpg`;
+  }
+  
+  // Try to match activity slug to known images
+  const slugParts = activitySlug.toLowerCase().split("-");
+  for (const part of slugParts) {
+    if (localActivityImages.has(part)) {
+      return `/images/activities/${part}-hero.jpg`;
+    }
+  }
+  
+  // Check for compound matches
+  const compoundMatches = [
+    "gorge-scrambling", "gorge-walking", "sea-kayaking", "mine-exploration", 
+    "mountain-biking", "trail-running", "wild-swimming", "boat-tour", 
+    "wildlife-boat-tour", "high-ropes", "zip-lining", "hiking-scrambling"
+  ];
+  for (const match of compoundMatches) {
+    if (activitySlug.includes(match)) {
+      return `/images/activities/${match}-hero.jpg`;
+    }
+  }
+  
+  // Default fallback
+  return "/images/activities/hiking-hero.jpg";
+}
 
 export function ActivityCard({
   activity,
   region,
   operator,
+  activityType,
   image,
   variant = "default",
   hideOperator = false,
 }: ActivityCardProps) {
-  const imageUrl = image || placeholderImages.default;
+  const imageUrl = image || getActivityImage(activity.slug, activityType?.slug);
 
   if (variant === "horizontal") {
     return (

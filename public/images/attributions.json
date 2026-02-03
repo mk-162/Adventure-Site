@@ -136,5 +136,93 @@
     "photographer_url": "https://unsplash.com/@jackalope_west",
     "photo_url": "https://unsplash.com/photos/people-riding-orange-kayak-on-water-during-daytime-nBNROOkE0W8",
     "downloaded": "2026-02-03"
+  },
+  "images/activities/archery-hero.jpg": {
+    "creator": "Chris Barber",
+    "creator_url": "https://www.flickr.com/photos/95609644@N00",
+    "source": "https://www.flickr.com/photos/95609644@N00/6848111477",
+    "license": "BY",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/boat-tour-hero.jpg": {
+    "creator": "Zach Dischner",
+    "creator_url": "https://www.flickr.com/photos/35557234@N07",
+    "source": "https://www.flickr.com/photos/35557234@N07/27732618735",
+    "license": "BY",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/gorge-scrambling-hero.jpg": {
+    "creator": "Rick McCharles",
+    "creator_url": "https://www.flickr.com/photos/71035721@N00",
+    "source": "https://www.flickr.com/photos/71035721@N00/12065192195",
+    "license": "BY",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/high-ropes-hero.jpg": {
+    "creator": "LocoRopes",
+    "creator_url": "https://www.flickr.com/photos/53485312@N03",
+    "source": "https://www.flickr.com/photos/53485312@N03/9177588453",
+    "license": "BY-SA",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/hiking-scrambling-hero.jpg": {
+    "creator": "Space & Light",
+    "creator_url": "https://www.flickr.com/photos/53242483@N00",
+    "source": "https://www.flickr.com/photos/53242483@N00/15298794567",
+    "license": "BY",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/mine-exploration-hero.jpg": {
+    "creator": "Stuart Smith.",
+    "creator_url": "https://www.flickr.com/photos/127349327@N05",
+    "source": "https://www.flickr.com/photos/127349327@N05/52620616531",
+    "license": "BY-SA",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/sea-kayaking-hero.jpg": {
+    "creator": "Defence Images",
+    "creator_url": "https://www.flickr.com/photos/48399297@N04",
+    "source": "https://www.flickr.com/photos/48399297@N04/8330431228",
+    "license": "BY-SA",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/sup-hero.jpg": {
+    "creator": "Kayaker Bill",
+    "creator_url": "https://www.flickr.com/photos/29704088@N03",
+    "source": "https://www.flickr.com/photos/29704088@N03/17280316379",
+    "license": "BY",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/trail-running-hero.jpg": {
+    "creator": "Robin McConnell",
+    "creator_url": "https://www.flickr.com/photos/28560980@N07",
+    "source": "https://www.flickr.com/photos/28560980@N07/7797831448",
+    "license": "BY",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/wildlife-boat-tour-hero.jpg": {
+    "creator": "foilman",
+    "creator_url": "https://www.flickr.com/photos/24484507@N00",
+    "source": "https://www.flickr.com/photos/24484507@N00/25145504348",
+    "license": "BY-SA",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "downloaded": "2026-02-03"
+  },
+  "images/activities/windsurfing-hero.jpg": {
+    "creator": "Infomastern",
+    "creator_url": "https://www.flickr.com/photos/55856449@N04",
+    "source": "https://www.flickr.com/photos/55856449@N04/10271627283",
+    "license": "BY-SA",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "downloaded": "2026-02-03"
   }
 }

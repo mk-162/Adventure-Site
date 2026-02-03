@@ -268,7 +268,7 @@ export const answers = pgTable("answers", {
     .notNull(),
   regionId: integer("region_id").references(() => regions.id),
   question: text("question").notNull(),
-  slug: varchar("slug", { length: 255 }).notNull(),
+  slug: varchar("slug", { length: 255 }).notNull().unique(),
   quickAnswer: text("quick_answer"),
   fullContent: text("full_content"),
   relatedQuestions: jsonb("related_questions"),

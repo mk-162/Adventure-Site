@@ -296,7 +296,7 @@ async function importCommercialPartners() {
     try {
       await sql`
         INSERT INTO advertisers (site_id, name, contact_email, website, status)
-        VALUES (${siteId}, ${row["Partner Name"] || row["Name"]}, ${row["Email"] || null}, ${row["Website"] || null}, 'active')
+        VALUES (${siteId}, ${row["Partner Name"] || row["Name"]}, ${row["Email"] || null}, ${row["Website"] || null}, 'published')
         ON CONFLICT DO NOTHING
       `;
       imported++;

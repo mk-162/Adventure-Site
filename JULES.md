@@ -110,13 +110,27 @@ Reference: `docs/PLATFORM_DESIGN.md` Section 12
 
 ## Design References
 
+- **Design Brief**: `designs/DESIGN_BRIEF.md` (start here!)
 - **Full design spec**: `docs/PLATFORM_DESIGN.md`
 - **Component patterns**: `docs/FRANCE_COMPONENT_PATTERNS.md`
-- **Stitch screenshots**: 
-  - Desktop: `Desktop-stitch_adventure_wales_homepage/`
-  - Mobile: `Mobile-stitch_adventure_wales_home/`
+- **HTML Designs**: `designs/` folder with numbered HTML files
 
-Each subfolder contains `screen.png` (design mockup) and `code.html` (reference code).
+### Design Files
+| File | Page |
+|------|------|
+| `designs/01-homepage.html` | Homepage |
+| `designs/02-region-hub.html` | Region Hub |
+| `designs/03-activity-listing.html` | Activity Type Listing |
+| `designs/04-itinerary-detail.html` | Single Itinerary |
+| `designs/05-experience-detail.html` | Single Activity/Experience |
+| `designs/06-operator-directory.html` | Operator Directory |
+| `designs/07-operator-profile.html` | Operator Profile |
+| `designs/08-accommodation-listing.html` | Accommodation Listing |
+| `designs/09-events-calendar.html` | Events Calendar |
+| `designs/10-faq-answer.html` | FAQ/Answer Page |
+| `designs/11-trip-planner.html` | Trip Planner Wizard |
+| `designs/ui-kit.html` | Component Reference |
+| `designs/index.html` | Design Index (open in browser)
 
 ---
 

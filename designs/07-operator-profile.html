@@ -29,19 +29,12 @@
         }
     </script>
     <style>
-        /* Hide scrollbars but allow scrolling */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-        /* Mobile layout shown by default, hidden on large screens */
-        .mobile-layout { display: block; }
-        .desktop-layout { display: none; }
-
-        /* Switch to desktop layout on lg breakpoint (1024px) */
-        @media (min-width: 1024px) {
-            .mobile-layout { display: none; }
-            .desktop-layout { display: block; }
-        }
+        /* Mobile menu transition */
+        .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .mobile-menu.open { max-height: 300px; }
 
         /* Dev info bar */
         .dev-bar {
@@ -71,624 +64,511 @@
         }
     </style>
 </head>
-<body class="bg-background-light font-display text-text-dark antialiased">
+<body class="bg-background-light font-display text-text-dark antialiased pb-24 lg:pb-0">
 
-    <!-- MOBILE LAYOUT (< 1024px) -->
-    <div class="mobile-layout">
-        
-<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden pb-24">
-<!-- Top App Bar -->
-<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-50">
-<div class="text-black dark:text-white flex size-12 shrink-0 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10 cursor-pointer">
-<span class="material-symbols-outlined">arrow_back</span>
-</div>
-<h2 class="text-black dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center truncate">TYF Adventure</h2>
-<div class="flex w-12 items-center justify-end">
-<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-black dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 hover:bg-black/5 dark:hover:bg-white/10 w-12 rounded-full">
-<span class="material-symbols-outlined">share</span>
-</button>
-</div>
-</div>
-<!-- Header Image & Profile Info -->
-<div class="relative">
-<div class="w-full h-[240px] bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-gray-200 dark:bg-[#101d23]" data-alt="high action coasteering adventure in Wales ocean" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCIHx72AzIXqd64OxINhaVvZtTmK1Vf2ZmrOIzynYlmFl96hT8gYQ3h8r7VpGdAntAnyv5PSMLqv74XHszSx9ZM6MxxRrAqUeMMnYEIIoAhlR4YaNFr-Dwx-uVgnqPqN7JtSlsz_kj2S0DBjBW49LcY0gJFYebA45dLAnH9VexFuTo86URnQ0VrJVcKKEFvbu_L0mEnAjqDTSANB-Ql9bjwLUr80o9FXI9J31LF6ZIWWOBZ5QFdcQPderNOApoxr15euL1Lk153Tnk");'>
-<div class="absolute inset-0 bg-gradient-to-t from-background-light dark:from-background-dark via-transparent to-transparent opacity-80"></div>
-</div>
-<div class="flex flex-col px-4 -mt-16 relative z-10 items-center">
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full border-4 border-background-light dark:border-background-dark h-32 w-32 shadow-lg bg-white" data-alt="TYF Adventure company logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2jAA8VxvuCeMvbR-iUIYwNgZVCK8WRJoLxedrkYwScl5vBJ4ryOKsjcD4VB5XBddOarDgDeH1wSEAXdFeY57r7TQB8iA4egBhefMKY95fVm2I9hycBJTBOMV3lxxtCHh4f48BEbP8V2DXXIDn6WJkl21agdSpZZIywPOGcpaNq1Ayj2jdgLK299KV06lS2XwW1wSywcUNKKJjjGmfl-bcmch7bd-gvf2GDvru4j2e3FC4InyYVslHzHRWgCl2-rkFJfysXyiVurc");'></div>
-<div class="flex flex-col items-center justify-center mt-4">
-<h1 class="text-black dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em] text-center">TYF Adventure</h1>
-<p class="text-gray-500 dark:text-[#90b7cb] text-base font-normal leading-normal text-center mt-1">Pioneered coasteering since 1986</p>
-<div class="flex items-center gap-1 mt-1">
-<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
-<p class="text-gray-500 dark:text-[#90b7cb] text-base font-normal leading-normal text-center">St Davids, Wales</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Trust Badges (Chips) -->
-<div class="flex gap-3 p-4 flex-wrap justify-center">
-<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-[#223c49] pl-4 pr-4 border border-transparent dark:border-[#315668]/50">
-<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
-<p class="text-black dark:text-white text-xs font-bold leading-normal">B Corp</p>
-</div>
-<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-[#223c49] pl-4 pr-4 border border-transparent dark:border-[#315668]/50">
-<span class="material-symbols-outlined text-primary text-[16px]">history</span>
-<p class="text-black dark:text-white text-xs font-bold leading-normal">35+ Years</p>
-</div>
-<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-[#223c49] pl-4 pr-4 border border-transparent dark:border-[#315668]/50">
-<span class="material-symbols-outlined text-primary text-[16px]">stars</span>
-<p class="text-black dark:text-white text-xs font-bold leading-normal">TripAdvisor Excellent</p>
-</div>
-</div>
-<!-- Quick Stats -->
-<div class="flex flex-wrap gap-4 px-4 pb-4">
-<div class="flex min-w-[140px] flex-1 flex-col gap-1 rounded-xl p-4 bg-white dark:bg-[#1a2c35] border border-gray-100 dark:border-[#315668] shadow-sm">
-<div class="flex items-center gap-2 mb-1">
-<span class="material-symbols-outlined text-primary">kayaking</span>
-<p class="text-gray-500 dark:text-[#90b7cb] text-sm font-medium leading-normal">Activities</p>
-</div>
-<p class="text-black dark:text-white tracking-light text-xl font-bold leading-tight">15+</p>
-</div>
-<div class="flex min-w-[140px] flex-1 flex-col gap-1 rounded-xl p-4 bg-white dark:bg-[#1a2c35] border border-gray-100 dark:border-[#315668] shadow-sm">
-<div class="flex items-center gap-2 mb-1">
-<span class="material-symbols-outlined text-primary">payments</span>
-<p class="text-gray-500 dark:text-[#90b7cb] text-sm font-medium leading-normal">Price Range</p>
-</div>
-<p class="text-black dark:text-white tracking-light text-xl font-bold leading-tight">£35 - £120</p>
-</div>
-</div>
-<!-- Tabs -->
-<div class="sticky top-[60px] z-40 bg-background-light dark:bg-background-dark pt-2">
-<div class="flex w-full overflow-x-auto border-b border-gray-200 dark:border-[#315668] no-scrollbar px-4 gap-6">
-<button class="flex flex-col items-center gap-2 pb-3 min-w-fit px-2 group">
-<span class="text-black dark:text-white text-sm font-bold leading-normal">Experiences</span>
-<div class="h-0.5 w-full bg-primary rounded-full"></div>
-</button>
-<button class="flex flex-col items-center gap-2 pb-3 min-w-fit px-2 group">
-<span class="text-gray-500 dark:text-[#90b7cb] text-sm font-medium leading-normal group-hover:text-black dark:group-hover:text-white transition-colors">About</span>
-<div class="h-0.5 w-full bg-transparent rounded-full group-hover:bg-gray-300 dark:group-hover:bg-[#315668] transition-colors"></div>
-</button>
-<button class="flex flex-col items-center gap-2 pb-3 min-w-fit px-2 group">
-<span class="text-gray-500 dark:text-[#90b7cb] text-sm font-medium leading-normal group-hover:text-black dark:group-hover:text-white transition-colors">Reviews</span>
-<div class="h-0.5 w-full bg-transparent rounded-full group-hover:bg-gray-300 dark:group-hover:bg-[#315668] transition-colors"></div>
-</button>
-<button class="flex flex-col items-center gap-2 pb-3 min-w-fit px-2 group">
-<span class="text-gray-500 dark:text-[#90b7cb] text-sm font-medium leading-normal group-hover:text-black dark:group-hover:text-white transition-colors">Location</span>
-<div class="h-0.5 w-full bg-transparent rounded-full group-hover:bg-gray-300 dark:group-hover:bg-[#315668] transition-colors"></div>
-</button>
-</div>
-</div>
-<!-- Content Area: Experiences Grid -->
-<div class="p-4 flex flex-col gap-6">
-<h3 class="text-black dark:text-white text-lg font-bold leading-tight">Popular Adventures</h3>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<!-- Card 1 -->
-<div class="flex flex-col gap-3 rounded-xl bg-white dark:bg-[#1a2c35] p-3 shadow-sm border border-gray-100 dark:border-[#315668] hover:border-primary/50 transition-colors cursor-pointer group">
-<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-gray-200">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="group coasteering jumping into water" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBD3MtJ-hArWYhEx5R5QB9C7e2K9u3z1grjpEW5Uxuwuqr9n-X2EGP4V_JicCDaewa3X6SOUSP5CQsgbCKIu7RMw0gogOs3VO9makEVxlQHGHfrEauY-nYFgkpqQ-sWIUrgoiOfJc2k7hgMVBYA66ESz-bAlTisng5wOJubVju6AFa2dgaApJL2dqyCmcoBPWdFgV3i8b0PEsHamAYNnucMUXEFqTtYAcwfm03MkX7SI7sVjiFHwnDswlul4XcsRry6mX2Cou8nyKs");'></div>
-<div class="absolute top-2 right-2 bg-black/60 backdrop-blur-sm rounded-lg px-2 py-1 flex items-center gap-1">
-<span class="material-symbols-outlined text-yellow-400 text-[14px]">star</span>
-<span class="text-white text-xs font-bold">4.9</span>
-</div>
-</div>
-<div class="flex flex-col gap-1">
-<div class="flex justify-between items-start">
-<h4 class="text-black dark:text-white text-base font-bold leading-tight">Classic Coasteering</h4>
-</div>
-<div class="flex items-center gap-2 text-xs text-gray-500 dark:text-[#90b7cb]">
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 3 hrs</span>
-<span>•</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">group</span> Small Group</span>
-</div>
-<div class="flex items-center justify-between mt-2">
-<p class="text-primary text-lg font-bold">£48<span class="text-sm font-normal text-gray-500 dark:text-[#90b7cb]">/person</span></p>
-<button class="bg-primary/10 text-primary p-1.5 rounded-lg hover:bg-primary hover:text-white transition-colors">
-<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="flex flex-col gap-3 rounded-xl bg-white dark:bg-[#1a2c35] p-3 shadow-sm border border-gray-100 dark:border-[#315668] hover:border-primary/50 transition-colors cursor-pointer group">
-<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-gray-200">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="kayaking near rugged cliffs" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAmKaddq1JF8sdDxO-HeNVHGKdPegigMHS--lBPHI5EogpxoPlQwV4eK2dSUIKuKqMWybprmnzro2rHdddN0cKYC1lf8kpe2Oupsw0QfdpJ7x78iR569yPEFX43eof0Qd5nBpegHpJ8zBVapB_ICnO_YL4h2gI7VvkzwghiIA-7W_ozy0xAXgwe6VgPZuSOUOVqG2S4-NP5UF-YnjXlv6LaToz_BUbM-kbYEF0kU_pMQxVgoHzpKMS1P2OGVP6-ZAmeA-yGeRVnxZ0");'></div>
-<div class="absolute top-2 right-2 bg-black/60 backdrop-blur-sm rounded-lg px-2 py-1 flex items-center gap-1">
-<span class="material-symbols-outlined text-yellow-400 text-[14px]">star</span>
-<span class="text-white text-xs font-bold">4.8</span>
-</div>
-</div>
-<div class="flex flex-col gap-1">
-<div class="flex justify-between items-start">
-<h4 class="text-black dark:text-white text-base font-bold leading-tight">Sea Kayak Discovery</h4>
-</div>
-<div class="flex items-center gap-2 text-xs text-gray-500 dark:text-[#90b7cb]">
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 4 hrs</span>
-<span>•</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">water_drop</span> Moderate</span>
-</div>
-<div class="flex items-center justify-between mt-2">
-<p class="text-primary text-lg font-bold">£55<span class="text-sm font-normal text-gray-500 dark:text-[#90b7cb]">/person</span></p>
-<button class="bg-primary/10 text-primary p-1.5 rounded-lg hover:bg-primary hover:text-white transition-colors">
-<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-<!-- Card 3 -->
-<div class="flex flex-col gap-3 rounded-xl bg-white dark:bg-[#1a2c35] p-3 shadow-sm border border-gray-100 dark:border-[#315668] hover:border-primary/50 transition-colors cursor-pointer group">
-<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-gray-200">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="person surfing on a wave" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDpgye-tYk993xcgdcyoMwletyVQAWuZj4sD3JS2E5M_OkcuGm2KJ2sHyDpJjlYDUivFrrpFUr61oF2EM5ct8nrvX1yPhmMaMK3CcgXC74hoZ81D5FfQua9fcQ2gQI2m5x6GeEE7WuYPlyv-gYek2BwhoZ1I3TfAhQYh7I_yVZFNMJYZ881tHUhSNQlJOpje-c5JyYmovbV1gTVUWwqj0qbAWO4ym3XdKVHwuELkwzMw3YpUYGAQT0nkmqsCcEt8k1vpcqJL_U8scw");'></div>
-<div class="absolute top-2 right-2 bg-black/60 backdrop-blur-sm rounded-lg px-2 py-1 flex items-center gap-1">
-<span class="material-symbols-outlined text-yellow-400 text-[14px]">star</span>
-<span class="text-white text-xs font-bold">4.7</span>
-</div>
-</div>
-<div class="flex flex-col gap-1">
-<div class="flex justify-between items-start">
-<h4 class="text-black dark:text-white text-base font-bold leading-tight">Beginner Surf Lesson</h4>
-</div>
-<div class="flex items-center gap-2 text-xs text-gray-500 dark:text-[#90b7cb]">
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 2.5 hrs</span>
-<span>•</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">surfing</span> Whitesands</span>
-</div>
-<div class="flex items-center justify-between mt-2">
-<p class="text-primary text-lg font-bold">£40<span class="text-sm font-normal text-gray-500 dark:text-[#90b7cb]">/person</span></p>
-<button class="bg-primary/10 text-primary p-1.5 rounded-lg hover:bg-primary hover:text-white transition-colors">
-<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-<!-- Card 4 -->
-<div class="flex flex-col gap-3 rounded-xl bg-white dark:bg-[#1a2c35] p-3 shadow-sm border border-gray-100 dark:border-[#315668] hover:border-primary/50 transition-colors cursor-pointer group">
-<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-gray-200">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="rock climbing on cliff face" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHhnozrG_9PAV7DNfXkrdU4o8haFnT0bTEd5Ol2LvEkq_5FMJPcrXWfZn3FQGQuUDQ_dLOC6qL1TA5HmY9l6LzObwo_uan0gXP9NnCPUMOGOX6ubgXIufYznSKSNZ08huRyAxaZWbNXNL9w1yzlzEIPpi_F1LsvWxFhzrEwRJ8b_WDw60oBwsju3dtidkzpVVh2fS1Lot9vF8L56Somd64UVfQ-CHKdOlNjfhqq2ShybS74WA_GlugkIUgsmIEL5rPJaKhEdJfqHc");'></div>
-<div class="absolute top-2 right-2 bg-black/60 backdrop-blur-sm rounded-lg px-2 py-1 flex items-center gap-1">
-<span class="material-symbols-outlined text-yellow-400 text-[14px]">star</span>
-<span class="text-white text-xs font-bold">5.0</span>
-</div>
-</div>
-<div class="flex flex-col gap-1">
-<div class="flex justify-between items-start">
-<h4 class="text-black dark:text-white text-base font-bold leading-tight">Adventure Climbing</h4>
-</div>
-<div class="flex items-center gap-2 text-xs text-gray-500 dark:text-[#90b7cb]">
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 3 hrs</span>
-<span>•</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">landscape</span> Scenic</span>
-</div>
-<div class="flex items-center justify-between mt-2">
-<p class="text-primary text-lg font-bold">£50<span class="text-sm font-normal text-gray-500 dark:text-[#90b7cb]">/person</span></p>
-<button class="bg-primary/10 text-primary p-1.5 rounded-lg hover:bg-primary hover:text-white transition-colors">
-<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-<!-- About Section Preview -->
-<div class="mt-4 pt-4 border-t border-gray-200 dark:border-[#315668]">
-<h3 class="text-black dark:text-white text-lg font-bold leading-tight mb-3">Why choose TYF?</h3>
-<p class="text-gray-600 dark:text-[#90b7cb] text-sm leading-relaxed mb-4">
-                    We've been pioneering adventure on the St Davids peninsula since 1986. Our mission is to reconnect people with nature through unforgettable experiences.
-                </p>
-<div class="flex items-center gap-2">
-<div class="h-10 w-10 rounded-full bg-cover bg-center border-2 border-white dark:border-[#1a2c35]" data-alt="team member face" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOIxXrqFhlyr9f6vJszlx2pz3Cb8ui6E6zpO9nsozakSmkcLDpk363E-wlXMsv8fPozFlrgD5LxBkANIvQot--NJdR0jYbb2YWAuG8aIZBufB6ge1JCImQ2nDzJg-RxCGKiVv2ra7GFT8_tdDEUXriRvy30_0dehsPUYMxmknGrifiv256u0k0G-UA15yrBzrJs60ZuKCLpnEbQ-Xc6lpDem3yhsnFhstZrh1nZN48xvcmFbtGTfxnEJivCXlTb9pHzOPHK_ahkc4");'></div>
-<div class="h-10 w-10 rounded-full bg-cover bg-center border-2 border-white dark:border-[#1a2c35] -ml-4" data-alt="team member face" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTKFSfUWpAZSXjCAbqxgvRxiXYAoEdkZftd_8ncZ8HaxnbMgKk0AkDRfbjEmTvXF5Gr7YANDsML3FHR_5SeaIAwXqV0Sj2z4Ozap1wUWSl7UuJ_4kN4UGtipx0aJG3qU4vCc5e55op65rZRQ9QxB9fwqZfusLLsoOmMs583RzxlcjmyHz8Ixed8sldO5IP9qI6auy-BU7DCF530ueI40raX78dl1T270xFiPzqcME6eL9UZunTh3FpuJF58V9qnf7X5hwpR4sUXTo");'></div>
-<div class="h-10 w-10 rounded-full bg-cover bg-center border-2 border-white dark:border-[#1a2c35] -ml-4" data-alt="team member face" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhL54eSJ9XgFD_7adt_ANHLC_r11Z-iM4xuvdQPoSbAqhBAXWuWh1waZEtuG1fjz37SegyaMDtgJ742zFqnb20J2Y1tDC2_TNeYFtXhIwIUPo_VhOGMwgaoMdAZr6qO_KnUUV4C87v02U_ict6dNVXF2IgoZdOyRzFmmcb6sL8-7mJpjv5zhB0Pw1iJhBLoY2R2FNp31Ck10wfozwTZAN4Eb_Co35F89qQdJdCfB5gQUNAQ3MmW-gerDdlzrn_MIlwXTDUBkpQeGk");'></div>
-<p class="text-xs font-medium text-black dark:text-white ml-2">+24 expert guides</p>
-</div>
-</div>
-<!-- Review Summary -->
-<div class="mt-2 p-4 rounded-xl bg-primary/5 border border-primary/20">
-<div class="flex items-center justify-between">
-<div class="flex items-center gap-3">
-<h2 class="text-3xl font-bold text-black dark:text-white">5.0</h2>
-<div class="flex flex-col">
-<div class="flex text-yellow-400 text-sm">
-<span class="material-symbols-outlined fill-current text-[18px]">star</span>
-<span class="material-symbols-outlined fill-current text-[18px]">star</span>
-<span class="material-symbols-outlined fill-current text-[18px]">star</span>
-<span class="material-symbols-outlined fill-current text-[18px]">star</span>
-<span class="material-symbols-outlined fill-current text-[18px]">star</span>
-</div>
-<span class="text-xs text-gray-500 dark:text-[#90b7cb]">Based on 1,240 reviews</span>
-</div>
-</div>
-<span class="material-symbols-outlined text-gray-400">chevron_right</span>
-</div>
-</div>
-</div>
-<!-- Sticky Bottom Bar -->
-<div class="fixed bottom-0 left-0 w-full bg-white dark:bg-[#1a2c35] border-t border-gray-200 dark:border-[#315668] p-4 pb-6 z-50">
-<div class="flex items-center justify-between max-w-2xl mx-auto">
-<div class="flex flex-col">
-<p class="text-xs font-medium text-gray-500 dark:text-[#90b7cb]">Book with</p>
-<p class="text-sm font-bold text-black dark:text-white">TYF Adventure</p>
-</div>
-<button class="bg-primary text-white px-6 py-3 rounded-xl font-bold text-sm shadow-lg shadow-primary/30 hover:bg-primary/90 transition-all active:scale-95 flex items-center gap-2">
-                    View Experiences
-                    <span class="material-symbols-outlined text-[18px]">calendar_month</span>
-</button>
-</div>
-</div>
-</div>
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-14 lg:h-16">
+                <!-- Mobile: Back button -->
+                <button class="lg:hidden flex items-center justify-center w-10 h-10 -ml-2 rounded-full hover:bg-slate-100">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </button>
 
-    </div>
+                <!-- Mobile: Title (centered) -->
+                <h2 class="lg:hidden text-base font-bold truncate flex-1 text-center">TYF Adventure</h2>
 
-    <!-- DESKTOP LAYOUT (>= 1024px) -->
-    <div class="desktop-layout">
-        
-<div class="flex min-h-screen flex-col">
-<!-- Top Navigation -->
-<header class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
-<div class="w-full max-w-[1280px] mx-auto px-4 md:px-10 py-3">
-<div class="flex items-center justify-between gap-4">
-<!-- Brand -->
-<div class="flex items-center gap-4">
-<a class="flex items-center gap-3 group" href="#">
-<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
-<span class="material-symbols-outlined">landscape</span>
-</div>
-<h2 class="text-slate-900 dark:text-white text-lg font-bold tracking-tight">Adventure Wales</h2>
-</a>
-<!-- Search Bar (Desktop) -->
-<div class="hidden md:flex items-center bg-slate-100 dark:bg-slate-800 rounded-xl px-3 h-10 w-64 border border-transparent focus-within:border-primary/50 transition-colors">
-<span class="material-symbols-outlined text-slate-400">search</span>
-<input class="bg-transparent border-none focus:ring-0 text-sm w-full text-slate-800 dark:text-slate-200 placeholder-slate-400" placeholder="Find your adventure..." type="text"/>
-</div>
-</div>
-<!-- Right Actions -->
-<div class="flex items-center gap-6">
-<nav class="hidden lg:flex items-center gap-6">
-<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Destinations</a>
-<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Experiences</a>
-<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition-colors" href="#">Stories</a>
-</nav>
-<div class="flex items-center gap-3">
-<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary hidden sm:block" href="#">Log in</a>
-<button class="bg-primary hover:bg-primary/90 text-white text-sm font-bold h-10 px-5 rounded-xl transition-colors shadow-sm shadow-primary/30">
-                                Sign Up
-                            </button>
-</div>
-</div>
-</div>
-</div>
-</header>
-<!-- Main Content Wrapper -->
-<main class="flex-1 w-full max-w-[1280px] mx-auto px-4 md:px-10 py-6">
-<!-- Hero / Cover Image -->
-<div class="relative w-full rounded-2xl overflow-hidden h-64 md:h-80 lg:h-96 group">
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Surfer catching a wave at sunset along the rugged Welsh coastline" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBF6RU1r1uTWMp3drU1hUjMl35fymkhNVJXAVIIMD9GsXZp6GuCkFQVxUU8xuSkCzDKXca8ghv3dbI83wCXYJNhFgCTMFQvm6lU8PRfKAObQ8xEY2xAxoSs0CEPDte3kLtbFj6C37O6MjYp6lnA__0SKT7nlsaY1gTsmb0W3YKEWKqvlZSBMMwQQM0y-sWqkZFjHyAcrIPfrvor_U-xBcLN3lKNmbDRHGAtV60uasZ8nTev4MX0LMWTsdRWYib0r2LEiZzv8kqpg');">
-</div>
-<!-- Cover Actions -->
-<div class="absolute top-4 right-4 z-20 flex gap-2">
-<button class="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white p-2 rounded-lg transition-colors">
-<span class="material-symbols-outlined">favorite</span>
-</button>
-<button class="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white p-2 rounded-lg transition-colors">
-<span class="material-symbols-outlined">share</span>
-</button>
-</div>
-</div>
-<!-- Operator Profile Header -->
-<div class="relative px-2 md:px-4 -mt-16 md:-mt-20 z-20 mb-8">
-<div class="flex flex-col md:flex-row items-end md:items-center justify-between gap-6">
-<div class="flex items-end gap-6">
-<!-- Logo -->
-<div class="h-32 w-32 md:h-40 md:w-40 rounded-2xl bg-white dark:bg-slate-800 p-2 shadow-lg ring-1 ring-black/5">
-<div class="w-full h-full rounded-xl bg-slate-900 flex items-center justify-center overflow-hidden" data-alt="TYF Adventure logo, minimalist white text on dark background">
-<!-- Mock Logo -->
-<span class="font-display font-black text-white text-4xl tracking-tighter">TYF</span>
-</div>
-</div>
-<!-- Info -->
-<div class="flex flex-col pb-2 md:pb-4">
-<h1 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white leading-tight">TYF Adventure</h1>
-<div class="flex flex-wrap items-center gap-y-1 gap-x-4 text-sm text-slate-600 dark:text-slate-400 mt-1">
-<span class="flex items-center gap-1">
-<span class="material-symbols-outlined text-primary text-lg">location_on</span>
-                                    St Davids, Pembrokeshire
-                                </span>
-<span class="hidden md:inline text-slate-300">•</span>
-<span class="flex items-center gap-1">
-<span class="material-symbols-outlined text-yellow-500 text-lg fill-1">star</span>
-<span class="font-semibold text-slate-900 dark:text-white">4.9</span>
-                                    (342 reviews)
-                                </span>
-</div>
-</div>
-</div>
-<div class="hidden md:flex gap-3 pb-4">
-<div class="flex -space-x-3">
-<div class="size-8 rounded-full ring-2 ring-white dark:ring-slate-800 bg-slate-200 bg-cover bg-center" data-alt="User avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTQAl9SuS_HkoQRgkAoLSu2cm0aKPjMXxlwX-SIc2_2cCtTz3rObH3MrRH_f4JloXdhzrmamK8BGLSwzUQBeG2OwQTxRhLQtxi9UYZxGny2XcQTpKwknOWoFeQJW28rC3Kfv-xF7UxnQl_i-OVYUlnBVuHvLjAJLccJvkxCoCE1bhi4eoCFASTdJBQgFAR0VyLDjeXEAhxeAx9EQuUqSa1wU447yosoJUzervX3iocN642cpQFsySi8NaCtxPhmvs9WEk82j7D_A')"></div>
-<div class="size-8 rounded-full ring-2 ring-white dark:ring-slate-800 bg-slate-200 bg-cover bg-center" data-alt="User avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBrBEI5fVJysrLOJNla9lkMr0I_0bjZdymwqVnQ438TT6_xoPm401TxDfMF39JuXF6hRgwUxJNYk1ihzFnblriq1_vVezLN9yiOGglPMy0W2vED7K-LekCc5FpC-Td9FuB-I5_bi67qSNKsbAtsSDsfNQVcbvfwNEed-9h0LF4xiaqijc5tcQEbUEC2cY8YrYxtnRd7Rg9_5l0g1CsdjnlHx4ewYhvhitpKbVUAmGu7lmEr9sKK9d_BO9BGVxU9xcy2EchP7lYPTQ')"></div>
-<div class="size-8 rounded-full ring-2 ring-white dark:ring-slate-800 bg-slate-200 bg-cover bg-center" data-alt="User avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAfpJTs1N-hvPBfLxP79kwv0qC2FGg3mvSmKSmwbwsgf4xAbCGi1GcBdokhGyfCP_9nzVVZl6SQ5ZwQ0nE5MsxXgxDOMMplPj-zDTHmyabb49oCjHlY_oU3ts3iijmrwQdNtOE4FtvwNrrLdgx6QSynHDwFC7H7r0DG675Ah8bxG-oquMQLfUT6fiX7-kCMC3qxG355bBj8ftNbMqTmFOYR_wElvTxM-pvRnBRzMP3RsaP53DiDan6G5BRuI4it0U51hOGH47aUag')"></div>
-</div>
-<span class="text-sm font-medium text-slate-500 self-center pl-2">Member since 1986</span>
-</div>
-</div>
-</div>
-<!-- Sticky Tabs -->
-<div class="sticky top-[65px] z-30 bg-background-light dark:bg-background-dark pt-2 pb-4">
-<div class="border-b border-slate-200 dark:border-slate-800">
-<nav class="flex gap-8 overflow-x-auto no-scrollbar">
-<a class="border-b-2 border-primary text-primary font-bold text-sm pb-3 px-1 whitespace-nowrap" href="#experiences">
-                            Experiences
-                        </a>
-<a class="border-b-2 border-transparent text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-bold text-sm pb-3 px-1 whitespace-nowrap transition-colors" href="#about">
-                            About TYF
-                        </a>
-<a class="border-b-2 border-transparent text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-bold text-sm pb-3 px-1 whitespace-nowrap transition-colors" href="#location">
-                            Location
-                        </a>
-<a class="border-b-2 border-transparent text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-bold text-sm pb-3 px-1 whitespace-nowrap transition-colors" href="#reviews">
-                            Reviews (342)
-                        </a>
-</nav>
-</div>
-</div>
-<!-- Two Column Layout -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-4">
-<!-- Main Content Column -->
-<div class="lg:col-span-8 flex flex-col gap-10">
-<!-- Special Offer Banner -->
-<div class="bg-primary/5 border border-primary/10 rounded-xl p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-<div class="flex items-start gap-4">
-<div class="bg-primary/10 p-3 rounded-lg text-primary">
-<span class="material-symbols-outlined">local_offer</span>
-</div>
-<div>
-<h3 class="font-bold text-slate-900 dark:text-white">Summer Adventure Pass</h3>
-<p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Book 2 or more activities and save 15% on your total booking.</p>
-</div>
-</div>
-<button class="shrink-0 text-sm font-bold text-primary hover:text-primary/80 transition-colors">
-                            View Offer
-                        </button>
-</div>
-<!-- About Section -->
-<section id="about">
-<h2 class="text-xl font-bold text-slate-900 dark:text-white mb-4">About TYF Adventure</h2>
-<div class="prose prose-slate dark:prose-invert max-w-none text-slate-600 dark:text-slate-300">
-<p>
-                                Founded in 1986, TYF Adventure is a world-class adventure operator based in the heart of St Davids, Pembrokeshire. We are the pioneers of Coasteering and specialize in sustainable, eco-friendly adventures that connect people with the raw beauty of the Welsh coast.
-                            </p>
-</div>
-<div class="flex gap-4 mt-6">
-<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-base">eco</span> Eco-Certified
-                            </div>
-<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-base">safety_check</span> AALA Licensed
-                            </div>
-<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-300">
-<span class="material-symbols-outlined text-base">groups</span> Group Specialists
-                            </div>
-</div>
-</section>
-<!-- Experiences Grid -->
-<section id="experiences">
-<div class="flex items-center justify-between mb-6">
-<h2 class="text-xl font-bold text-slate-900 dark:text-white">Experiences Offered</h2>
-<div class="flex gap-2">
-<button class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 transition-colors">
-<span class="material-symbols-outlined">filter_list</span>
-</button>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- Card 1 -->
-<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-lg transition-shadow">
-<div class="relative h-48 overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="People diving into the sea during coasteering" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBulxqutZjUITVYxUbnSM9fFyTe9S7etXAYPOnG0KgjkX1Cz5G08QPzwLbltwxjpxByTtZ_PzkidsR1-09_otLpq-QF-ecaNGlWsWx5AlC4Ov0X_c7P9kEl65gN5wQ0GKRhk0FaDLOJ8vzUN_z52bwYBxVcB81iCqX1uOKQKbpgfO0Uk7dBQ8KmeGBiMiIPN38I9O4mLIzoc3tYIW0fulF2Rx_Z1r8P-UoVdV96RJ4Woa2Y8aMOiNqNA11ZX0VVlEK53w5NJiNpYg');"></div>
-<div class="absolute top-3 left-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur text-xs font-bold px-2 py-1 rounded-md text-slate-900 dark:text-white">
-                                        Bestseller
-                                    </div>
-</div>
-<div class="p-4 flex flex-col flex-1">
-<div class="flex justify-between items-start mb-2">
-<h3 class="font-bold text-slate-900 dark:text-white leading-snug group-hover:text-primary transition-colors">Original Coasteering</h3>
-</div>
-<div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mb-3">
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 3h</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">signal_cellular_alt</span> Moderate</span>
-</div>
-<p class="text-sm text-slate-600 dark:text-slate-300 mb-4 line-clamp-2">Explore the tidal margin of the coastline by climbing, swimming, and jumping.</p>
-<div class="mt-auto flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-700">
-<div>
-<span class="text-xs text-slate-500">From</span>
-<span class="block font-bold text-lg text-slate-900 dark:text-white">£45</span>
-</div>
-<button class="bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-900 dark:text-white rounded-lg p-2 transition-colors">
-<span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-lg transition-shadow">
-<div class="relative h-48 overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Kayaker paddling near rocky cliffs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQ-P8zcDt4nEHW47Kx7EX-rZFnJieWAxfqvcUN53CuvdebVX231D2ucikb5o0OKdTG1WO58CyANGkrUkIO6Js2JnYzydWCr0ltGtBxb4EGb8ae1rSjOnxcCWnb9a812wdnPXGZKp_5J2FUu4fRO9cl8xPrJ_TZWbkkTFUMegl-nq5i0MrzQqpX1abVXM4IlGG1rcnzKsonR1qomlrPdxWweY1vikdBtZPA99mYiKLbLs4DYwtQ3nz9TXqazy44aRfUJ1LkJXScrQ');"></div>
-</div>
-<div class="p-4 flex flex-col flex-1">
-<div class="flex justify-between items-start mb-2">
-<h3 class="font-bold text-slate-900 dark:text-white leading-snug group-hover:text-primary transition-colors">Sea Kayaking</h3>
-</div>
-<div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mb-3">
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 4h</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">signal_cellular_alt</span> Easy</span>
-</div>
-<p class="text-sm text-slate-600 dark:text-slate-300 mb-4 line-clamp-2">Discover hidden caves, beaches and wildlife along the pristine St Davids coast.</p>
-<div class="mt-auto flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-700">
-<div>
-<span class="text-xs text-slate-500">From</span>
-<span class="block font-bold text-lg text-slate-900 dark:text-white">£55</span>
-</div>
-<button class="bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-900 dark:text-white rounded-lg p-2 transition-colors">
-<span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-<!-- Card 3 -->
-<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-lg transition-shadow">
-<div class="relative h-48 overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Surfer riding a wave on a sunny day" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAJ6N9Xtgv895vsci8VcGJR9EaobXF5rleixFQngFPWmKhs0s56BivyxA4hhMXCI4UIjvTm0PtsKKa_vNx6oN7z0ezIwpz4VD0by4jS3okakZkOkLtEldrzxKI214L_b-y0mGe0QSQdLAKCqGRDUSKiNzJ7jCD2Rg7yVa7ZB9n_EBRJWXZubdPzy3WG2budpB_9D0Bzktt8WY7CvUrEEelRrnK4uvnJGfHsEIxyP8v5pdfwWQLd14k_iHKuv40K4t-QtRiJ1KS3Q');"></div>
-</div>
-<div class="p-4 flex flex-col flex-1">
-<div class="flex justify-between items-start mb-2">
-<h3 class="font-bold text-slate-900 dark:text-white leading-snug group-hover:text-primary transition-colors">Surfing Lessons</h3>
-</div>
-<div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mb-3">
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 2h</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">signal_cellular_alt</span> Beginner</span>
-</div>
-<p class="text-sm text-slate-600 dark:text-slate-300 mb-4 line-clamp-2">Learn to catch your first wave at Whitesands Bay with our expert instructors.</p>
-<div class="mt-auto flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-700">
-<div>
-<span class="text-xs text-slate-500">From</span>
-<span class="block font-bold text-lg text-slate-900 dark:text-white">£40</span>
-</div>
-<button class="bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-900 dark:text-white rounded-lg p-2 transition-colors">
-<span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Reviews Summary -->
-<section class="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700" id="reviews">
-<div class="flex flex-col sm:flex-row gap-8 items-center">
-<div class="flex flex-col items-center justify-center min-w-[140px]">
-<span class="text-5xl font-black text-slate-900 dark:text-white">4.9</span>
-<div class="flex text-yellow-500 my-2">
-<span class="material-symbols-outlined fill-1">star</span>
-<span class="material-symbols-outlined fill-1">star</span>
-<span class="material-symbols-outlined fill-1">star</span>
-<span class="material-symbols-outlined fill-1">star</span>
-<span class="material-symbols-outlined fill-1">star</span>
-</div>
-<span class="text-sm text-slate-500">Based on 342 reviews</span>
-</div>
-<div class="flex-1 w-full">
-<div class="flex flex-col gap-2">
-<div class="flex items-center gap-3">
-<span class="text-xs font-bold w-8">5</span>
-<div class="flex-1 h-2 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
-<div class="w-[90%] h-full bg-primary rounded-full"></div>
-</div>
-<span class="text-xs text-slate-500">90%</span>
-</div>
-<div class="flex items-center gap-3">
-<span class="text-xs font-bold w-8">4</span>
-<div class="flex-1 h-2 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
-<div class="w-[8%] h-full bg-primary rounded-full"></div>
-</div>
-<span class="text-xs text-slate-500">8%</span>
-</div>
-<div class="flex items-center gap-3">
-<span class="text-xs font-bold w-8">3</span>
-<div class="flex-1 h-2 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
-<div class="w-[1%] h-full bg-slate-300 dark:bg-slate-600 rounded-full"></div>
-</div>
-<span class="text-xs text-slate-500">1%</span>
-</div>
-</div>
-</div>
-</div>
-<div class="mt-6 pt-6 border-t border-slate-100 dark:border-slate-700">
-<div class="flex gap-4">
-<div class="size-10 rounded-full bg-slate-200 bg-cover bg-center flex-shrink-0" data-alt="Reviewer avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDI1mnUvDLvvUb9w3IzLrfsxFHVLqvY_iOLPIaDylrEeIr6wcoZTqOuxxaBswirqFgl7m8XubSQIYjDyLTN7LNq1qyg6gB2eZeqZcKpdmr3_oMzX9FpJJyaOAT9guTSL2D9osOhjkoh-XsrOt_sMcNyFlvrqBOHMN6trvdJmlcd63XfhIfT3bO38sUX2Iq8XEup1WG1Xmup2lr7n2HM8ElkSAaTDrOkhi_PaRM9SvzDZGEZVT7EbrKzBwf5-0j2MJr9sqdcXGXHeA')"></div>
-<div>
-<div class="flex justify-between items-start">
-<h4 class="font-bold text-slate-900 dark:text-white text-sm">Sarah Jenkins</h4>
-<span class="text-xs text-slate-400">2 weeks ago</span>
-</div>
-<p class="text-sm text-slate-600 dark:text-slate-400 mt-1">"Absolutely incredible experience coasteering with the TYF team. Our guide, Mike, was knowledgeable and made us feel safe the whole time. Highly recommend!"</p>
-</div>
-</div>
-</div>
-</section>
-</div>
-<!-- Sidebar Column -->
-<aside class="lg:col-span-4 space-y-6">
-<!-- Quick Enquiry Card -->
-<div class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-6 shadow-lg shadow-slate-200/50 dark:shadow-slate-900/50 sticky top-24">
-<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Quick Enquiry</h3>
-<form class="flex flex-col gap-4">
-<div>
-<label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Select Date</label>
-<div class="relative">
-<input class="w-full rounded-lg bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-700 text-sm focus:ring-primary focus:border-primary" type="date"/>
-</div>
-</div>
-<div>
-<label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Guests</label>
-<select class="w-full rounded-lg bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-700 text-sm focus:ring-primary focus:border-primary">
-<option>1 Person</option>
-<option>2 People</option>
-<option selected="">3-4 People</option>
-<option>5+ People</option>
-</select>
-</div>
-<div>
-<label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Message</label>
-<textarea class="w-full rounded-lg bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-700 text-sm focus:ring-primary focus:border-primary resize-none" placeholder="I'm interested in..." rows="3"></textarea>
-</div>
-<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded-xl transition-colors mt-2" type="button">
-                                Check Availability
-                            </button>
-<p class="text-xs text-center text-slate-400 mt-2">No payment required to enquire.</p>
-</form>
-</div>
-<!-- Trust Signals -->
-<div class="bg-slate-100 dark:bg-slate-800/50 rounded-xl p-5 border border-slate-200 dark:border-slate-700">
-<h4 class="text-sm font-bold text-slate-900 dark:text-white mb-3">Why book with TYF?</h4>
-<ul class="space-y-3">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-green-600 text-lg">check_circle</span>
-<span class="text-sm text-slate-600 dark:text-slate-400">Safety accredited by AALA</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-green-600 text-lg">check_circle</span>
-<span class="text-sm text-slate-600 dark:text-slate-400">Certified B-Corp pending</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-green-600 text-lg">check_circle</span>
-<span class="text-sm text-slate-600 dark:text-slate-400">Local expert guides</span>
-</li>
-</ul>
-</div>
-<!-- Map/Location Teaser -->
-<div class="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 relative h-48 group cursor-pointer">
-<div class="absolute inset-0 bg-cover bg-center" data-alt="Map view of St Davids peninsula" data-location="Pembrokeshire Coast Map" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAvgYdgR-EnPzxM_dn6xAnD5laBo0SYTLfGNz0d0mDrU6_-hemz9TfiGN6BqpIVqnI87wSm11YyQKXztTuSIOY0fhR0V9JsiyWlTxrjKpooaETI3f-i9gP9xfU_d3DFKrhle2HyEULmB0Oi2jZc47srDNzy2orwz095IlpYxgLwB2RBrbS1EARMxzwMWd8oH3Vm_AMZCFhg4U0xhxN4P4A9yMDE2P9NDheifzReRN-8h38YUJFbkYBOcnKOQ2ZLsPz2Vp3wb0tfw');"></div>
-<div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
-<div class="absolute bottom-4 left-4">
-<span class="bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">View on Map</span>
-</div>
-</div>
-</aside>
-</div>
-</main>
-<footer class="mt-20 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-10">
-<div class="w-full max-w-[1280px] mx-auto px-10 flex flex-col md:flex-row justify-between items-center gap-6">
-<div class="text-sm text-slate-500">
-                    © 2024 Adventure Wales Platform. All rights reserved.
+                <!-- Desktop: Brand -->
+                <a class="hidden lg:flex items-center gap-3" href="#">
+                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                        <span class="material-symbols-outlined text-xl">landscape</span>
+                    </div>
+                    <span class="text-lg font-bold text-slate-900">Adventure Wales</span>
+                </a>
+
+                <!-- Desktop: Search -->
+                <div class="hidden lg:flex items-center bg-slate-100 rounded-xl px-3 h-10 w-72 border border-transparent focus-within:border-primary/50 transition-colors">
+                    <span class="material-symbols-outlined text-slate-400 text-xl">search</span>
+                    <input class="bg-transparent border-none focus:ring-0 text-sm w-full text-slate-800 placeholder-slate-400 ml-2" placeholder="Find your adventure..." type="text"/>
                 </div>
-<div class="flex gap-6">
-<a class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
-<a class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
-<a class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
-</div>
-</div>
-</footer>
-</div>
 
+                <!-- Desktop: Nav links -->
+                <nav class="hidden lg:flex items-center gap-6">
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="#">Destinations</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="#">Experiences</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="#">Stories</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="flex items-center gap-2">
+                    <!-- Mobile: Share -->
+                    <button class="lg:hidden flex items-center justify-center w-10 h-10 -mr-2 rounded-full hover:bg-slate-100">
+                        <span class="material-symbols-outlined">share</span>
+                    </button>
+
+                    <!-- Desktop: Login/Signup -->
+                    <a class="hidden lg:block text-sm font-medium text-slate-600 hover:text-primary" href="#">Log in</a>
+                    <button class="hidden lg:block bg-primary hover:bg-primary/90 text-white text-sm font-bold h-10 px-5 rounded-xl transition-colors">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto">
+        <!-- Hero / Cover Image -->
+        <div class="relative w-full h-48 sm:h-64 lg:h-80 xl:h-96 overflow-hidden lg:mx-4 lg:mt-6 lg:rounded-2xl">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBF6RU1r1uTWMp3drU1hUjMl35fymkhNVJXAVIIMD9GsXZp6GuCkFQVxUU8xuSkCzDKXca8ghv3dbI83wCXYJNhFgCTMFQvm6lU8PRfKAObQ8xEY2xAxoSs0CEPDte3kLtbFj6C37O6MjYp6lnA__0SKT7nlsaY1gTsmb0W3YKEWKqvlZSBMMwQQM0y-sWqkZFjHyAcrIPfrvor_U-xBcLN3lKNmbDRHGAtV60uasZ8nTev4MX0LMWTsdRWYib0r2LEiZzv8kqpg');"></div>
+
+            <!-- Cover Actions (desktop) -->
+            <div class="absolute top-4 right-4 z-20 hidden lg:flex gap-2">
+                <button class="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white p-2 rounded-lg transition-colors">
+                    <span class="material-symbols-outlined">favorite</span>
+                </button>
+                <button class="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white p-2 rounded-lg transition-colors">
+                    <span class="material-symbols-outlined">share</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Profile Header -->
+        <div class="relative px-4 -mt-16 sm:-mt-20 z-20 mb-6">
+            <div class="flex flex-col items-center lg:flex-row lg:items-end lg:justify-between gap-4 lg:gap-6">
+                <!-- Logo + Info -->
+                <div class="flex flex-col items-center lg:flex-row lg:items-end gap-4 lg:gap-6">
+                    <!-- Logo -->
+                    <div class="h-28 w-28 sm:h-32 sm:w-32 lg:h-40 lg:w-40 rounded-2xl bg-white p-2 shadow-lg ring-1 ring-black/5">
+                        <div class="w-full h-full rounded-xl bg-slate-900 flex items-center justify-center">
+                            <span class="font-display font-black text-white text-3xl sm:text-4xl lg:text-5xl tracking-tighter">TYF</span>
+                        </div>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="flex flex-col items-center lg:items-start text-center lg:text-left pb-2 lg:pb-4">
+                        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 leading-tight">TYF Adventure</h1>
+                        <p class="text-slate-500 text-sm sm:text-base mt-1">Pioneered coasteering since 1986</p>
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-1 text-sm text-slate-600 mt-2">
+                            <span class="flex items-center gap-1">
+                                <span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                                St Davids, Pembrokeshire
+                            </span>
+                            <span class="hidden sm:inline text-slate-300">•</span>
+                            <span class="flex items-center gap-1">
+                                <span class="material-symbols-outlined text-yellow-500 text-lg">star</span>
+                                <span class="font-semibold text-slate-900">4.9</span>
+                                (342 reviews)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member badge (desktop) -->
+                <div class="hidden lg:flex gap-3 pb-4">
+                    <div class="flex -space-x-3">
+                        <div class="w-8 h-8 rounded-full ring-2 ring-white bg-slate-200 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTQAl9SuS_HkoQRgkAoLSu2cm0aKPjMXxlwX-SIc2_2cCtTz3rObH3MrRH_f4JloXdhzrmamK8BGLSwzUQBeG2OwQTxRhLQtxi9UYZxGny2XcQTpKwknOWoFeQJW28rC3Kfv-xF7UxnQl_i-OVYUlnBVuHvLjAJLccJvkxCoCE1bhi4eoCFASTdJBQgFAR0VyLDjeXEAhxeAx9EQuUqSa1wU447yosoJUzervX3iocN642cpQFsySi8NaCtxPhmvs9WEk82j7D_A')"></div>
+                        <div class="w-8 h-8 rounded-full ring-2 ring-white bg-slate-200 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBrBEI5fVJysrLOJNla9lkMr0I_0bjZdymwqVnQ438TT6_xoPm401TxDfMF39JuXF6hRgwUxJNYk1ihzFnblriq1_vVezLN9yiOGglPMy0W2vED7K-LekCc5FpC-Td9FuB-I5_bi67qSNKsbAtsSDsfNQVcbvfwNEed-9h0LF4xiaqijc5tcQEbUEC2cY8YrYxtnRd7Rg9_5l0g1CsdjnlHx4ewYhvhitpKbVUAmGu7lmEr9sKK9d_BO9BGVxU9xcy2EchP7lYPTQ')"></div>
+                        <div class="w-8 h-8 rounded-full ring-2 ring-white bg-slate-200 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAfpJTs1N-hvPBfLxP79kwv0qC2FGg3mvSmKSmwbwsgf4xAbCGi1GcBdokhGyfCP_9nzVVZl6SQ5ZwQ0nE5MsxXgxDOMMplPj-zDTHmyabb49oCjHlY_oU3ts3iijmrwQdNtOE4FtvwNrrLdgx6QSynHDwFC7H7r0DG675Ah8bxG-oquMQLfUT6fiX7-kCMC3qxG355bBj8ftNbMqTmFOYR_wElvTxM-pvRnBRzMP3RsaP53DiDan6G5BRuI4it0U51hOGH47aUag')"></div>
+                    </div>
+                    <span class="text-sm font-medium text-slate-500 self-center pl-2">Member since 1986</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="flex gap-2 sm:gap-3 px-4 pb-4 flex-wrap justify-center lg:justify-start">
+            <div class="flex h-8 items-center gap-2 rounded-full bg-slate-100 px-3 sm:px-4 border border-slate-200">
+                <span class="material-symbols-outlined text-primary text-base">verified</span>
+                <span class="text-xs font-bold text-slate-700">B Corp</span>
+            </div>
+            <div class="flex h-8 items-center gap-2 rounded-full bg-slate-100 px-3 sm:px-4 border border-slate-200">
+                <span class="material-symbols-outlined text-primary text-base">history</span>
+                <span class="text-xs font-bold text-slate-700">35+ Years</span>
+            </div>
+            <div class="flex h-8 items-center gap-2 rounded-full bg-slate-100 px-3 sm:px-4 border border-slate-200">
+                <span class="material-symbols-outlined text-primary text-base">stars</span>
+                <span class="text-xs font-bold text-slate-700">TripAdvisor Excellent</span>
+            </div>
+        </div>
+
+        <!-- Quick Stats (mobile/tablet) -->
+        <div class="flex gap-3 px-4 pb-4 lg:hidden">
+            <div class="flex-1 flex flex-col gap-1 rounded-xl p-4 bg-white border border-slate-200 shadow-sm">
+                <div class="flex items-center gap-2 mb-1">
+                    <span class="material-symbols-outlined text-primary">kayaking</span>
+                    <span class="text-slate-500 text-sm font-medium">Activities</span>
+                </div>
+                <span class="text-xl font-bold text-slate-900">15+</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-1 rounded-xl p-4 bg-white border border-slate-200 shadow-sm">
+                <div class="flex items-center gap-2 mb-1">
+                    <span class="material-symbols-outlined text-primary">payments</span>
+                    <span class="text-slate-500 text-sm font-medium">Price Range</span>
+                </div>
+                <span class="text-xl font-bold text-slate-900">£35 - £120</span>
+            </div>
+        </div>
+
+        <!-- Sticky Tabs -->
+        <div class="sticky top-[57px] lg:top-[65px] z-30 bg-background-light pt-2 pb-0 border-b border-slate-200">
+            <div class="px-4 overflow-x-auto no-scrollbar">
+                <nav class="flex gap-6 lg:gap-8 min-w-max">
+                    <a class="border-b-2 border-primary text-primary font-bold text-sm pb-3 whitespace-nowrap" href="#experiences">
+                        Experiences
+                    </a>
+                    <a class="border-b-2 border-transparent text-slate-500 hover:text-slate-800 font-semibold text-sm pb-3 whitespace-nowrap transition-colors" href="#about">
+                        About TYF
+                    </a>
+                    <a class="border-b-2 border-transparent text-slate-500 hover:text-slate-800 font-semibold text-sm pb-3 whitespace-nowrap transition-colors" href="#reviews">
+                        Reviews (342)
+                    </a>
+                    <a class="border-b-2 border-transparent text-slate-500 hover:text-slate-800 font-semibold text-sm pb-3 whitespace-nowrap transition-colors" href="#location">
+                        Location
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Two Column Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 px-4 py-6">
+            <!-- Main Content Column -->
+            <div class="lg:col-span-8 flex flex-col gap-8">
+
+                <!-- Special Offer Banner -->
+                <div class="bg-primary/5 border border-primary/10 rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-primary/10 p-3 rounded-lg text-primary shrink-0">
+                            <span class="material-symbols-outlined">local_offer</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900">Summer Adventure Pass</h3>
+                            <p class="text-sm text-slate-600 mt-1">Book 2 or more activities and save 15% on your total booking.</p>
+                        </div>
+                    </div>
+                    <button class="shrink-0 text-sm font-bold text-primary hover:text-primary/80 transition-colors">
+                        View Offer
+                    </button>
+                </div>
+
+                <!-- About Section -->
+                <section id="about">
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900 mb-4">About TYF Adventure</h2>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        Founded in 1986, TYF Adventure is a world-class adventure operator based in the heart of St Davids, Pembrokeshire. We are the pioneers of Coasteering and specialize in sustainable, eco-friendly adventures that connect people with the raw beauty of the Welsh coast.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        We've been pioneering adventure on the St Davids peninsula since 1986. Our mission is to reconnect people with nature through unforgettable experiences.
+                    </p>
+
+                    <!-- Team avatars (mobile) -->
+                    <div class="flex items-center gap-2 mb-6 lg:hidden">
+                        <div class="h-10 w-10 rounded-full bg-cover bg-center border-2 border-white shadow" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAOIxXrqFhlyr9f6vJszlx2pz3Cb8ui6E6zpO9nsozakSmkcLDpk363E-wlXMsv8fPozFlrgD5LxBkANIvQot--NJdR0jYbb2YWAuG8aIZBufB6ge1JCImQ2nDzJg-RxCGKiVv2ra7GFT8_tdDEUXriRvy30_0dehsPUYMxmknGrifiv256u0k0G-UA15yrBzrJs60ZuKCLpnEbQ-Xc6lpDem3yhsnFhstZrh1nZN48xvcmFbtGTfxnEJivCXlTb9pHzOPHK_ahkc4');"></div>
+                        <div class="h-10 w-10 rounded-full bg-cover bg-center border-2 border-white shadow -ml-4" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBTKFSfUWpAZSXjCAbqxgvRxiXYAoEdkZftd_8ncZ8HaxnbMgKk0AkDRfbjEmTvXF5Gr7YANDsML3FHR_5SeaIAwXqV0Sj2z4Ozap1wUWSl7UuJ_4kN4UGtipx0aJG3qU4vCc5e55op65rZRQ9QxB9fwqZfusLLsoOmMs583RzxlcjmyHz8Ixed8sldO5IP9qI6auy-BU7DCF530ueI40raX78dl1T270xFiPzqcME6eL9UZunTh3FpuJF58V9qnf7X5hwpR4sUXTo');"></div>
+                        <div class="h-10 w-10 rounded-full bg-cover bg-center border-2 border-white shadow -ml-4" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhL54eSJ9XgFD_7adt_ANHLC_r11Z-iM4xuvdQPoSbAqhBAXWuWh1waZEtuG1fjz37SegyaMDtgJ742zFqnb20J2Y1tDC2_TNeYFtXhIwIUPo_VhOGMwgaoMdAZr6qO_KnUUV4C87v02U_ict6dNVXF2IgoZdOyRzFmmcb6sL8-7mJpjv5zhB0Pw1iJhBLoY2R2FNp31Ck10wfozwTZAN4Eb_Co35F89qQdJdCfB5gQUNAQ3MmW-gerDdlzrn_MIlwXTDUBkpQeGk');"></div>
+                        <span class="text-xs font-medium text-slate-700 ml-2">+24 expert guides</span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-semibold text-slate-700">
+                            <span class="material-symbols-outlined text-base">eco</span> Eco-Certified
+                        </div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-semibold text-slate-700">
+                            <span class="material-symbols-outlined text-base">safety_check</span> AALA Licensed
+                        </div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-semibold text-slate-700">
+                            <span class="material-symbols-outlined text-base">groups</span> Group Specialists
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experiences Grid -->
+                <section id="experiences">
+                    <div class="flex items-center justify-between mb-4 sm:mb-6">
+                        <h2 class="text-lg sm:text-xl font-bold text-slate-900">Popular Adventures</h2>
+                        <button class="p-2 rounded-lg hover:bg-slate-100 text-slate-500 transition-colors hidden sm:block">
+                            <span class="material-symbols-outlined">filter_list</span>
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <!-- Card 1 -->
+                        <div class="group flex flex-col bg-white rounded-xl border border-slate-200 overflow-hidden hover:shadow-lg hover:border-primary/30 transition-all cursor-pointer">
+                            <div class="relative h-40 sm:h-48 overflow-hidden">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBulxqutZjUITVYxUbnSM9fFyTe9S7etXAYPOnG0KgjkX1Cz5G08QPzwLbltwxjpxByTtZ_PzkidsR1-09_otLpq-QF-ecaNGlWsWx5AlC4Ov0X_c7P9kEl65gN5wQ0GKRhk0FaDLOJ8vzUN_z52bwYBxVcB81iCqX1uOKQKbpgfO0Uk7dBQ8KmeGBiMiIPN38I9O4mLIzoc3tYIW0fulF2Rx_Z1r8P-UoVdV96RJ4Woa2Y8aMOiNqNA11ZX0VVlEK53w5NJiNpYg');"></div>
+                                <div class="absolute top-3 left-3 bg-white/90 backdrop-blur text-xs font-bold px-2 py-1 rounded-md text-slate-900">
+                                    Bestseller
+                                </div>
+                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm rounded-lg px-2 py-1 flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-yellow-400 text-sm">star</span>
+                                    <span class="text-white text-xs font-bold">4.9</span>
+                                </div>
+                            </div>
+                            <div class="p-4 flex flex-col flex-1">
+                                <h3 class="font-bold text-slate-900 leading-snug group-hover:text-primary transition-colors">Original Coasteering</h3>
+                                <div class="flex items-center gap-3 text-xs text-slate-500 mt-2 mb-3">
+                                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 3h</span>
+                                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">signal_cellular_alt</span> Moderate</span>
+                                </div>
+                                <p class="text-sm text-slate-600 mb-4 line-clamp-2">Explore the tidal margin of the coastline by climbing, swimming, and jumping.</p>
+                                <div class="mt-auto flex items-center justify-between pt-3 border-t border-slate-100">
+                                    <div>
+                                        <span class="text-xs text-slate-500">From</span>
+                                        <span class="block font-bold text-lg text-primary">£45</span>
+                                    </div>
+                                    <button class="bg-primary/10 text-primary p-2 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="group flex flex-col bg-white rounded-xl border border-slate-200 overflow-hidden hover:shadow-lg hover:border-primary/30 transition-all cursor-pointer">
+                            <div class="relative h-40 sm:h-48 overflow-hidden">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQ-P8zcDt4nEHW47Kx7EX-rZFnJieWAxfqvcUN53CuvdebVX231D2ucikb5o0OKdTG1WO58CyANGkrUkIO6Js2JnYzydWCr0ltGtBxb4EGb8ae1rSjOnxcCWnb9a812wdnPXGZKp_5J2FUu4fRO9cl8xPrJ_TZWbkkTFUMegl-nq5i0MrzQqpX1abVXM4IlGG1rcnzKsonR1qomlrPdxWweY1vikdBtZPA99mYiKLbLs4DYwtQ3nz9TXqazy44aRfUJ1LkJXScrQ');"></div>
+                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm rounded-lg px-2 py-1 flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-yellow-400 text-sm">star</span>
+                                    <span class="text-white text-xs font-bold">4.8</span>
+                                </div>
+                            </div>
+                            <div class="p-4 flex flex-col flex-1">
+                                <h3 class="font-bold text-slate-900 leading-snug group-hover:text-primary transition-colors">Sea Kayaking</h3>
+                                <div class="flex items-center gap-3 text-xs text-slate-500 mt-2 mb-3">
+                                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 4h</span>
+                                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">signal_cellular_alt</span> Easy</span>
+                                </div>
+                                <p class="text-sm text-slate-600 mb-4 line-clamp-2">Discover hidden caves, beaches and wildlife along the pristine St Davids coast.</p>
+                                <div class="mt-auto flex items-center justify-between pt-3 border-t border-slate-100">
+                                    <div>
+                                        <span class="text-xs text-slate-500">From</span>
+                                        <span class="block font-bold text-lg text-primary">£55</span>
+                                    </div>
+                                    <button class="bg-primary/10 text-primary p-2 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="group flex flex-col bg-white rounded-xl border border-slate-200 overflow-hidden hover:shadow-lg hover:border-primary/30 transition-all cursor-pointer">
+                            <div class="relative h-40 sm:h-48 overflow-hidden">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAJ6N9Xtgv895vsci8VcGJR9EaobXF5rleixFQngFPWmKhs0s56BivyxA4hhMXCI4UIjvTm0PtsKKa_vNx6oN7z0ezIwpz4VD0by4jS3okakZkOkLtEldrzxKI214L_b-y0mGe0QSQdLAKCqGRDUSKiNzJ7jCD2Rg7yVa7ZB9n_EBRJWXZubdPzy3WG2budpB_9D0Bzktt8WY7CvUrEEelRrnK4uvnJGfHsEIxyP8v5pdfwWQLd14k_iHKuv40K4t-QtRiJ1KS3Q');"></div>
+                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm rounded-lg px-2 py-1 flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-yellow-400 text-sm">star</span>
+                                    <span class="text-white text-xs font-bold">4.7</span>
+                                </div>
+                            </div>
+                            <div class="p-4 flex flex-col flex-1">
+                                <h3 class="font-bold text-slate-900 leading-snug group-hover:text-primary transition-colors">Surfing Lessons</h3>
+                                <div class="flex items-center gap-3 text-xs text-slate-500 mt-2 mb-3">
+                                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 2h</span>
+                                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">signal_cellular_alt</span> Beginner</span>
+                                </div>
+                                <p class="text-sm text-slate-600 mb-4 line-clamp-2">Learn to catch your first wave at Whitesands Bay with our expert instructors.</p>
+                                <div class="mt-auto flex items-center justify-between pt-3 border-t border-slate-100">
+                                    <div>
+                                        <span class="text-xs text-slate-500">From</span>
+                                        <span class="block font-bold text-lg text-primary">£40</span>
+                                    </div>
+                                    <button class="bg-primary/10 text-primary p-2 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="group flex flex-col bg-white rounded-xl border border-slate-200 overflow-hidden hover:shadow-lg hover:border-primary/30 transition-all cursor-pointer">
+                            <div class="relative h-40 sm:h-48 overflow-hidden">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCHhnozrG_9PAV7DNfXkrdU4o8haFnT0bTEd5Ol2LvEkq_5FMJPcrXWfZn3FQGQuUDQ_dLOC6qL1TA5HmY9l6LzObwo_uan0gXP9NnCPUMOGOX6ubgXIufYznSKSNZ08huRyAxaZWbNXNL9w1yzlzEIPpi_F1LsvWxFhzrEwRJ8b_WDw60oBwsju3dtidkzpVVh2fS1Lot9vF8L56Somd64UVfQ-CHKdOlNjfhqq2ShybS74WA_GlugkIUgsmIEL5rPJaKhEdJfqHc');"></div>
+                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm rounded-lg px-2 py-1 flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-yellow-400 text-sm">star</span>
+                                    <span class="text-white text-xs font-bold">5.0</span>
+                                </div>
+                            </div>
+                            <div class="p-4 flex flex-col flex-1">
+                                <h3 class="font-bold text-slate-900 leading-snug group-hover:text-primary transition-colors">Adventure Climbing</h3>
+                                <div class="flex items-center gap-3 text-xs text-slate-500 mt-2 mb-3">
+                                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 3h</span>
+                                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">landscape</span> Scenic</span>
+                                </div>
+                                <p class="text-sm text-slate-600 mb-4 line-clamp-2">Scale the beautiful sea cliffs with stunning views of the Pembrokeshire coast.</p>
+                                <div class="mt-auto flex items-center justify-between pt-3 border-t border-slate-100">
+                                    <div>
+                                        <span class="text-xs text-slate-500">From</span>
+                                        <span class="block font-bold text-lg text-primary">£50</span>
+                                    </div>
+                                    <button class="bg-primary/10 text-primary p-2 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Reviews Section -->
+                <section class="bg-white rounded-xl p-4 sm:p-6 border border-slate-200" id="reviews">
+                    <div class="flex flex-col sm:flex-row gap-6 sm:gap-8 items-center">
+                        <div class="flex flex-col items-center justify-center min-w-[140px]">
+                            <span class="text-4xl sm:text-5xl font-black text-slate-900">4.9</span>
+                            <div class="flex text-yellow-500 my-2">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                            </div>
+                            <span class="text-sm text-slate-500">Based on 342 reviews</span>
+                        </div>
+                        <div class="flex-1 w-full">
+                            <div class="flex flex-col gap-2">
+                                <div class="flex items-center gap-3">
+                                    <span class="text-xs font-bold w-8">5</span>
+                                    <div class="flex-1 h-2 bg-slate-100 rounded-full overflow-hidden">
+                                        <div class="w-[90%] h-full bg-primary rounded-full"></div>
+                                    </div>
+                                    <span class="text-xs text-slate-500 w-10">90%</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="text-xs font-bold w-8">4</span>
+                                    <div class="flex-1 h-2 bg-slate-100 rounded-full overflow-hidden">
+                                        <div class="w-[8%] h-full bg-primary rounded-full"></div>
+                                    </div>
+                                    <span class="text-xs text-slate-500 w-10">8%</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="text-xs font-bold w-8">3</span>
+                                    <div class="flex-1 h-2 bg-slate-100 rounded-full overflow-hidden">
+                                        <div class="w-[1%] h-full bg-slate-300 rounded-full"></div>
+                                    </div>
+                                    <span class="text-xs text-slate-500 w-10">1%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sample Review -->
+                    <div class="mt-6 pt-6 border-t border-slate-100">
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-full bg-slate-200 bg-cover bg-center flex-shrink-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDI1mnUvDLvvUb9w3IzLrfsxFHVLqvY_iOLPIaDylrEeIr6wcoZTqOuxxaBswirqFgl7m8XubSQIYjDyLTN7LNq1qyg6gB2eZeqZcKpdmr3_oMzX9FpJJyaOAT9guTSL2D9osOhjkoh-XsrOt_sMcNyFlvrqBOHMN6trvdJmlcd63XfhIfT3bO38sUX2Iq8XEup1WG1Xmup2lr7n2HM8ElkSAaTDrOkhi_PaRM9SvzDZGEZVT7EbrKzBwf5-0j2MJr9sqdcXGXHeA')"></div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="font-bold text-slate-900 text-sm">Sarah Jenkins</h4>
+                                    <span class="text-xs text-slate-400">2 weeks ago</span>
+                                </div>
+                                <p class="text-sm text-slate-600 mt-1">"Absolutely incredible experience coasteering with the TYF team. Our guide, Mike, was knowledgeable and made us feel safe the whole time. Highly recommend!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Location Section (mobile/tablet inline) -->
+                <section class="lg:hidden" id="location">
+                    <h2 class="text-lg font-bold text-slate-900 mb-4">Location</h2>
+                    <div class="rounded-xl overflow-hidden border border-slate-200 relative h-48 group cursor-pointer">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAvgYdgR-EnPzxM_dn6xAnD5laBo0SYTLfGNz0d0mDrU6_-hemz9TfiGN6BqpIVqnI87wSm11YyQKXztTuSIOY0fhR0V9JsiyWlTxrjKpooaETI3f-i9gP9xfU_d3DFKrhle2HyEULmB0Oi2jZc47srDNzy2orwz095IlpYxgLwB2RBrbS1EARMxzwMWd8oH3Vm_AMZCFhg4U0xhxN4P4A9yMDE2P9NDheifzReRN-8h38YUJFbkYBOcnKOQ2ZLsPz2Vp3wb0tfw');"></div>
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-white text-slate-900 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">View on Map</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-600 mt-3 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                        St Davids, Pembrokeshire, SA62 6QS
+                    </p>
+                </section>
+            </div>
+
+            <!-- Sidebar Column (desktop only) -->
+            <aside class="hidden lg:block lg:col-span-4 space-y-6">
+                <!-- Quick Enquiry Card -->
+                <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-lg shadow-slate-200/50 sticky top-[120px]">
+                    <h3 class="text-lg font-bold text-slate-900 mb-4">Quick Enquiry</h3>
+                    <form class="flex flex-col gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Select Date</label>
+                            <input class="w-full rounded-lg bg-slate-50 border-slate-200 text-sm focus:ring-primary focus:border-primary" type="date"/>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Guests</label>
+                            <select class="w-full rounded-lg bg-slate-50 border-slate-200 text-sm focus:ring-primary focus:border-primary">
+                                <option>1 Person</option>
+                                <option>2 People</option>
+                                <option selected>3-4 People</option>
+                                <option>5+ People</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Message</label>
+                            <textarea class="w-full rounded-lg bg-slate-50 border-slate-200 text-sm focus:ring-primary focus:border-primary resize-none" placeholder="I'm interested in..." rows="3"></textarea>
+                        </div>
+                        <button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded-xl transition-colors mt-2" type="button">
+                            Check Availability
+                        </button>
+                        <p class="text-xs text-center text-slate-400 mt-2">No payment required to enquire.</p>
+                    </form>
+                </div>
+
+                <!-- Trust Signals -->
+                <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+                    <h4 class="text-sm font-bold text-slate-900 mb-3">Why book with TYF?</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-green-600 text-lg">check_circle</span>
+                            <span class="text-sm text-slate-600">Safety accredited by AALA</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-green-600 text-lg">check_circle</span>
+                            <span class="text-sm text-slate-600">Certified B-Corp pending</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-green-600 text-lg">check_circle</span>
+                            <span class="text-sm text-slate-600">Local expert guides</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Map/Location Teaser -->
+                <div class="rounded-xl overflow-hidden border border-slate-200 relative h-48 group cursor-pointer">
+                    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAvgYdgR-EnPzxM_dn6xAnD5laBo0SYTLfGNz0d0mDrU6_-hemz9TfiGN6BqpIVqnI87wSm11YyQKXztTuSIOY0fhR0V9JsiyWlTxrjKpooaETI3f-i9gP9xfU_d3DFKrhle2HyEULmB0Oi2jZc47srDNzy2orwz095IlpYxgLwB2RBrbS1EARMxzwMWd8oH3Vm_AMZCFhg4U0xhxN4P4A9yMDE2P9NDheifzReRN-8h38YUJFbkYBOcnKOQ2ZLsPz2Vp3wb0tfw');"></div>
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <span class="bg-white text-slate-900 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">View on Map</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="hidden lg:block mt-12 border-t border-slate-200 bg-white py-10">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-sm text-slate-500">
+                © 2024 Adventure Wales Platform. All rights reserved.
+            </div>
+            <div class="flex gap-6">
+                <a class="text-slate-400 hover:text-slate-600" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+                <a class="text-slate-400 hover:text-slate-600" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+                <a class="text-slate-400 hover:text-slate-600" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Bottom Bar (mobile only) -->
+    <div class="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-4 z-50">
+        <div class="flex items-center justify-between max-w-lg mx-auto">
+            <div class="flex flex-col">
+                <span class="text-xs font-medium text-slate-500">Book with</span>
+                <span class="text-sm font-bold text-slate-900">TYF Adventure</span>
+            </div>
+            <button class="bg-primary text-white px-6 py-3 rounded-xl font-bold text-sm shadow-lg shadow-primary/30 hover:bg-primary/90 transition-all active:scale-95 flex items-center gap-2">
+                View Experiences
+                <span class="material-symbols-outlined text-lg">calendar_month</span>
+            </button>
+        </div>
     </div>
 
     <!-- Dev info bar -->
@@ -700,7 +580,7 @@
         <div>
             <span class="lg:hidden">Mobile View</span>
             <span class="hidden lg:inline">Desktop View</span>
-            &bull; Resize browser to switch
+            &bull; Resize to test
         </div>
     </div>
 

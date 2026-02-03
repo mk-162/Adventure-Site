@@ -29,21 +29,9 @@
         }
     </script>
     <style>
-        /* Hide scrollbars but allow scrolling */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-        /* Mobile layout shown by default, hidden on large screens */
-        .mobile-layout { display: block; }
-        .desktop-layout { display: none; }
-
-        /* Switch to desktop layout on lg breakpoint (1024px) */
-        @media (min-width: 1024px) {
-            .mobile-layout { display: none; }
-            .desktop-layout { display: block; }
-        }
-
-        /* Dev info bar */
         .dev-bar {
             position: fixed;
             bottom: 0;
@@ -73,650 +61,506 @@
 </head>
 <body class="bg-background-light font-display text-text-dark antialiased">
 
-    <!-- MOBILE LAYOUT (< 1024px) -->
-    <div class="mobile-layout">
-        
-<div class="relative w-full max-w-md mx-auto bg-background-light dark:bg-background-dark min-h-screen shadow-2xl overflow-hidden">
-<!-- Top App Bar -->
-<header class="sticky top-0 z-30 bg-background-light dark:bg-background-dark/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 transition-colors">
-<div class="flex items-center justify-between px-4 py-3">
-<button class="flex size-10 items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-<span class="material-symbols-outlined text-gray-900 dark:text-gray-100">arrow_back</span>
-</button>
-<div class="flex flex-col items-center">
-<h1 class="text-base font-bold leading-tight tracking-tight text-gray-900 dark:text-white">Snowdonia Stays</h1>
-<span class="text-xs font-medium text-primary/80 dark:text-primary">Adventure Wales</span>
-</div>
-<div class="flex w-10 items-center justify-end">
-<p class="text-primary text-sm font-bold">24</p>
-</div>
-</div>
-</header>
-<!-- Main Content -->
-<main class="pb-20">
-<!-- Headline -->
-<div class="px-4 pt-6 pb-2">
-<h2 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white leading-[1.1]">Where to stay in Snowdonia</h2>
-</div>
-<!-- Segmented Control (List/Map) -->
-<div class="px-4 py-4">
-<div class="flex h-12 w-full items-center justify-center rounded-xl bg-gray-200 dark:bg-gray-800/50 p-1">
-<label class="relative flex cursor-pointer h-full flex-1 items-center justify-center rounded-[10px] text-sm font-semibold transition-all has-[:checked]:bg-white dark:has-[:checked]:bg-gray-700 has-[:checked]:shadow-sm has-[:checked]:text-gray-900 dark:has-[:checked]:text-white text-gray-500 dark:text-gray-400">
-<span class="z-10 flex items-center gap-2">
-<span class="material-symbols-outlined text-[18px]">list</span>
-                            List
-                        </span>
-<input checked="" class="invisible absolute" name="view_mode" type="radio" value="List"/>
-</label>
-<label class="relative flex cursor-pointer h-full flex-1 items-center justify-center rounded-[10px] text-sm font-semibold transition-all has-[:checked]:bg-white dark:has-[:checked]:bg-gray-700 has-[:checked]:shadow-sm has-[:checked]:text-gray-900 dark:has-[:checked]:text-white text-gray-500 dark:text-gray-400">
-<span class="z-10 flex items-center gap-2">
-<span class="material-symbols-outlined text-[18px]">map</span>
-                            Map
-                        </span>
-<input class="invisible absolute" name="view_mode" type="radio" value="Map"/>
-</label>
-</div>
-</div>
-<!-- Sticky Filter Chips -->
-<div class="sticky top-[60px] z-20 bg-background-light dark:bg-background-dark py-2 border-b border-transparent dark:border-gray-800 transition-all shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)] dark:shadow-none">
-<div class="flex gap-3 px-4 overflow-x-auto no-scrollbar pb-2">
-<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary text-black px-4 transition-transform active:scale-95 shadow-sm hover:shadow-md">
-<span class="text-sm font-bold">All</span>
-</button>
-<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-3 transition-colors hover:bg-gray-50 dark:hover:bg-gray-700">
-<span class="text-gray-700 dark:text-gray-200 text-sm font-medium">Type</span>
-<span class="material-symbols-outlined text-gray-500 text-[18px]">expand_more</span>
-</button>
-<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-3 transition-colors hover:bg-gray-50 dark:hover:bg-gray-700">
-<span class="text-gray-700 dark:text-gray-200 text-sm font-medium">Price</span>
-<span class="material-symbols-outlined text-gray-500 text-[18px]">expand_more</span>
-</button>
-<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-3 transition-colors hover:bg-gray-50 dark:hover:bg-gray-700">
-<span class="text-gray-700 dark:text-gray-200 text-sm font-medium">Features</span>
-<span class="material-symbols-outlined text-gray-500 text-[18px]">expand_more</span>
-</button>
-<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-3 transition-colors hover:bg-gray-50 dark:hover:bg-gray-700">
-<span class="text-gray-700 dark:text-gray-200 text-sm font-medium">Dates</span>
-<span class="material-symbols-outlined text-gray-500 text-[18px]">calendar_month</span>
-</button>
-</div>
-</div>
-<!-- Accommodation List -->
-<div class="flex flex-col gap-6 px-4 pt-4">
-<!-- Adventure Pick (Featured) -->
-<div class="group relative flex flex-col overflow-hidden rounded-xl bg-white dark:bg-gray-900 shadow-md ring-1 ring-primary/50 dark:ring-primary/30">
-<div class="absolute top-3 left-3 z-10">
-<span class="inline-flex items-center gap-1 rounded-md bg-primary px-2.5 py-1 text-xs font-bold text-black shadow-sm">
-<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
-                            Adventure Pick
-                        </span>
-</div>
-<div class="relative h-56 w-full overflow-hidden">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Stunning mountain view with a tent pitched in the foreground at sunrise" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC0oJV7ccLL2NWjGBmH6znt2QxQ489KFefo39GUwL_dBaIXHlK8AGmewfiKzOhAdIRfkNqMj4fy1VR4XD4t0jdPGxCeePFWPNFkuJlCjLZ9Y8okPcD1Ogul0w29T3vmX7IWyvAQgVie1H-UDhdl85VLiXICdBuMy0JxiEezbQtsEQSENpqs6lmYj8vq6kOSJnXPLwsQbhjrLmaYFulacp-2wSJcPij4G845LrJitNZtm31kbRDOvxZ_kcJZU3NgF0_wVkGfkrJQA_c");'></div>
-<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 pt-12">
-<p class="text-white text-xs font-bold uppercase tracking-wider mb-1 opacity-90">Popular with hikers</p>
-<h3 class="text-2xl font-bold text-white">YHA Snowdon Pen-y-Pass</h3>
-</div>
-</div>
-<div class="p-4 flex flex-col gap-3">
-<div class="flex items-center justify-between">
-<div class="flex items-center gap-1 text-orange-500">
-<span class="material-symbols-outlined text-[18px] fill-current">star</span>
-<span class="text-sm font-bold text-gray-900 dark:text-gray-100">4.9</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">(324 reviews)</span>
-</div>
-<div class="text-right">
-<p class="text-xs text-gray-500 dark:text-gray-400">from</p>
-<p class="text-lg font-bold text-primary">£29<span class="text-sm text-gray-500 dark:text-gray-400 font-normal">/night</span></p>
-</div>
-</div>
-<div class="flex flex-wrap gap-2">
-<div class="inline-flex items-center gap-1 rounded-md bg-gray-100 dark:bg-gray-800 px-2 py-1 text-xs font-medium text-gray-700 dark:text-gray-300">
-<span class="material-symbols-outlined text-[14px]">pedal_bike</span>
-                                Bike Storage
-                            </div>
-<div class="inline-flex items-center gap-1 rounded-md bg-gray-100 dark:bg-gray-800 px-2 py-1 text-xs font-medium text-gray-700 dark:text-gray-300">
-<span class="material-symbols-outlined text-[14px]">dry_cleaning</span>
-                                Drying Room
-                            </div>
-<div class="inline-flex items-center gap-1 rounded-md bg-gray-100 dark:bg-gray-800 px-2 py-1 text-xs font-medium text-gray-700 dark:text-gray-300">
-<span class="material-symbols-outlined text-[14px]">wifi</span>
-                                WiFi
-                            </div>
-</div>
-<button class="mt-2 w-full flex items-center justify-center gap-2 rounded-lg bg-primary py-2.5 text-sm font-bold text-black transition-colors hover:bg-primary/90">
-                            Check Availability
-                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</button>
-</div>
-</div>
-<!-- Standard Card 1 -->
-<div class="flex flex-col overflow-hidden rounded-xl bg-white dark:bg-gray-900 shadow-sm border border-gray-100 dark:border-gray-800">
-<div class="relative h-48 w-full">
-<div class="absolute top-3 left-3 z-10">
-<span class="inline-flex items-center rounded-md bg-white/90 dark:bg-black/80 backdrop-blur-sm px-2 py-1 text-xs font-bold text-gray-800 dark:text-gray-200">
-                                Hostel
-                            </span>
-</div>
-<div class="w-full h-full bg-cover bg-center" data-alt="Cozy wooden cabin interior with large window looking out to forest" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDvqtrQNBoIz5k-xJhRMkl5oCSpa3BHpe1FCCFkRN0Gj66uVdzZQNaAQlJNFgroc-0_oy6mGNeK7RUhseeDKKUOm7jfam9f9_OyW-IkW_v6DydbFLpdiIZt6Dd8ezkW9kib69Hz2jkIZzLsyZHmR-aJSAuvCiUaszpHiIxrr1SrxIR4T2OgSr5tn9FAl2aGqubmlwzv4iTTc-gTkIoInVX7RI9WcGywj1H4FCSwSI3dSwYmpya5FmAcsDSPALwEYYvtinO17-uqZI4");'></div>
-<div class="absolute bottom-3 right-3 z-10">
-<button class="flex size-8 items-center justify-center rounded-full bg-white text-gray-400 shadow-md hover:text-red-500">
-<span class="material-symbols-outlined text-[20px]">favorite</span>
-</button>
-</div>
-</div>
-<div class="p-4">
-<div class="mb-1 flex justify-between items-start">
-<h3 class="text-lg font-bold text-gray-900 dark:text-white leading-tight">Snowdonia Basecamp</h3>
-<div class="flex flex-col items-end">
-<span class="text-base font-bold text-gray-900 dark:text-white">£25</span>
-</div>
-</div>
-<p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Llanberis • 0.5 miles from trail</p>
-<div class="flex items-center justify-between border-t border-gray-100 dark:border-gray-800 pt-3 mt-1">
-<div class="flex items-center gap-1 text-gray-900 dark:text-white">
-<span class="material-symbols-outlined text-[16px] text-primary">star</span>
-<span class="text-sm font-bold">4.8</span>
-<span class="text-xs text-gray-500">(120)</span>
-</div>
-<div class="flex gap-2">
-<span class="material-symbols-outlined text-gray-400 text-[18px]" title="Bike Storage">pedal_bike</span>
-<span class="material-symbols-outlined text-gray-400 text-[18px]" title="Parking">local_parking</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Standard Card 2 -->
-<div class="flex flex-col overflow-hidden rounded-xl bg-white dark:bg-gray-900 shadow-sm border border-gray-100 dark:border-gray-800">
-<div class="relative h-48 w-full">
-<div class="absolute top-3 left-3 z-10">
-<span class="inline-flex items-center rounded-md bg-white/90 dark:bg-black/80 backdrop-blur-sm px-2 py-1 text-xs font-bold text-gray-800 dark:text-gray-200">
-                                Glamping
-                            </span>
-</div>
-<div class="w-full h-full bg-cover bg-center" data-alt="Orange tent illuminated from inside at dusk in a rugged landscape" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD8_Pr6uKjBWTCT_evvQ31NW8MNyqagBe-NuybfHvYZtWPcgNrFTWXU2wLwkrkquOgStJzKU_GR3Buqaum7gqL_KZ80vqHnU0e-mSqCdia6nShenxoDTVRsCZrVLL0QCCRZa22OaB94dtI-rW9IWs3iVKDkdACicDRB-GGqdlXHieoSpRPbmnrwul4ZxgJ40QOU9YOqqg81DHq3LkKTY6G0OkdsYpIft6Fzo1WSj-1OsOdKjXb49YBWQu3qqg9DLbQdeAX6ovaaY0c");'></div>
-<div class="absolute bottom-3 right-3 z-10">
-<button class="flex size-8 items-center justify-center rounded-full bg-white text-gray-400 shadow-md hover:text-red-500">
-<span class="material-symbols-outlined text-[20px]">favorite</span>
-</button>
-</div>
-</div>
-<div class="p-4">
-<div class="mb-1 flex justify-between items-start">
-<h3 class="text-lg font-bold text-gray-900 dark:text-white leading-tight">Eco-Pod Retreat</h3>
-<div class="flex flex-col items-end">
-<span class="text-base font-bold text-gray-900 dark:text-white">£85</span>
-</div>
-</div>
-<p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Betws-y-Coed • Riverside</p>
-<div class="flex items-center justify-between border-t border-gray-100 dark:border-gray-800 pt-3 mt-1">
-<div class="flex items-center gap-1 text-gray-900 dark:text-white">
-<span class="material-symbols-outlined text-[16px] text-primary">star</span>
-<span class="text-sm font-bold">4.9</span>
-<span class="text-xs text-gray-500">(85)</span>
-</div>
-<div class="flex gap-2">
-<span class="material-symbols-outlined text-gray-400 text-[18px]" title="Fire pit">local_fire_department</span>
-<span class="material-symbols-outlined text-gray-400 text-[18px]" title="Pets Allowed">pets</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Standard Card 3 -->
-<div class="flex flex-col overflow-hidden rounded-xl bg-white dark:bg-gray-900 shadow-sm border border-gray-100 dark:border-gray-800">
-<div class="relative h-48 w-full">
-<div class="absolute top-3 left-3 z-10">
-<span class="inline-flex items-center rounded-md bg-white/90 dark:bg-black/80 backdrop-blur-sm px-2 py-1 text-xs font-bold text-gray-800 dark:text-gray-200">
-                                Hotel
-                            </span>
-</div>
-<div class="w-full h-full bg-cover bg-center" data-alt="Modern hotel exterior with glass facade reflecting mountains" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMQMQgTvX_rxwW4N7YoYhuKjxbMi5jfc9JA4BlJpnz2dg2CmFeFqSIfmYbAERAMQuaguAzaHhQMgxqJA5nDZ0s2h8tp5S1O6T185MWbc0cXrC4kdrkDBW6AMxaXC80RKwLixMhWkTnhAlmkC9QBMtd2TNGGlNPZTKZxUSbrwkW3GeaL2E164sWgOv0KZj1Bty4Q515ZkZwdydcB8QIuL0ja2jUxRqzJHD-A0fFimUBTA_8UCeM2JsMYtowZ4SSPS15CLjpKR3oqtQ");'></div>
-<div class="absolute bottom-3 right-3 z-10">
-<button class="flex size-8 items-center justify-center rounded-full bg-white text-gray-400 shadow-md hover:text-red-500">
-<span class="material-symbols-outlined text-[20px]">favorite</span>
-</button>
-</div>
-</div>
-<div class="p-4">
-<div class="mb-1 flex justify-between items-start">
-<h3 class="text-lg font-bold text-gray-900 dark:text-white leading-tight">Royal Victoria Hotel</h3>
-<div class="flex flex-col items-end">
-<span class="text-base font-bold text-gray-900 dark:text-white">£110</span>
-</div>
-</div>
-<p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Llanberis • Lake View</p>
-<div class="flex items-center justify-between border-t border-gray-100 dark:border-gray-800 pt-3 mt-1">
-<div class="flex items-center gap-1 text-gray-900 dark:text-white">
-<span class="material-symbols-outlined text-[16px] text-primary">star</span>
-<span class="text-sm font-bold">4.5</span>
-<span class="text-xs text-gray-500">(512)</span>
-</div>
-<div class="flex gap-2">
-<span class="material-symbols-outlined text-gray-400 text-[18px]" title="Restaurant">restaurant</span>
-<span class="material-symbols-outlined text-gray-400 text-[18px]" title="WiFi">wifi</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- What do these icons mean? -->
-<div class="mt-8 px-4 py-6 bg-white dark:bg-gray-800/50 mx-4 rounded-xl">
-<h3 class="text-sm font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-<span class="material-symbols-outlined text-primary">help</span>
-                    What do adventure features mean?
-                </h3>
-<div class="grid grid-cols-2 gap-4">
-<div class="flex items-start gap-2">
-<div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary">
-<span class="material-symbols-outlined text-[14px]">pedal_bike</span>
-</div>
-<div>
-<p class="text-xs font-bold text-gray-900 dark:text-white">Bike Storage</p>
-<p class="text-[10px] text-gray-500 dark:text-gray-400 leading-tight">Secure, lockable area for bicycles.</p>
-</div>
-</div>
-<div class="flex items-start gap-2">
-<div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary">
-<span class="material-symbols-outlined text-[14px]">dry_cleaning</span>
-</div>
-<div>
-<p class="text-xs font-bold text-gray-900 dark:text-white">Drying Room</p>
-<p class="text-[10px] text-gray-500 dark:text-gray-400 leading-tight">Heated room for wet hiking gear.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Booking Partners -->
-<div class="mt-8 px-4 text-center">
-<p class="text-xs font-medium text-gray-400 uppercase tracking-wider mb-3">Book via our trusted partners</p>
-<div class="flex items-center justify-center gap-6 opacity-60 grayscale">
-<!-- Text based logos for simplicity and no external dependency issues -->
-<span class="text-lg font-extrabold text-gray-500 dark:text-gray-400 tracking-tighter">Booking.com</span>
-<span class="text-lg font-bold text-gray-500 dark:text-gray-400">airbnb</span>
-</div>
-</div>
-<!-- Nearby Regions -->
-<div class="mt-8 px-4 pb-6">
-<p class="text-sm font-bold text-gray-900 dark:text-white mb-3">Explore nearby</p>
-<div class="flex flex-wrap gap-2">
-<button class="rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-4 py-2 text-xs font-medium text-gray-600 dark:text-gray-300 shadow-sm">Llanberis</button>
-<button class="rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-4 py-2 text-xs font-medium text-gray-600 dark:text-gray-300 shadow-sm">Betws-y-Coed</button>
-<button class="rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-4 py-2 text-xs font-medium text-gray-600 dark:text-gray-300 shadow-sm">Beddgelert</button>
-<button class="rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-4 py-2 text-xs font-medium text-gray-600 dark:text-gray-300 shadow-sm">Anglesey</button>
-</div>
-</div>
-</main>
-<!-- Floating Action Button (Map) for mobile convenience -->
-<button class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-5 py-3 shadow-xl hover:scale-105 transition-transform">
-<span class="material-symbols-outlined text-[20px]">map</span>
-<span class="text-sm font-bold">Map View</span>
-</button>
-</div>
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-14 lg:h-16">
+                <!-- Mobile: Back button -->
+                <button class="lg:hidden flex items-center justify-center w-10 h-10 -ml-2 rounded-full hover:bg-slate-100">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </button>
 
-    </div>
+                <!-- Mobile: Title -->
+                <div class="lg:hidden flex flex-col items-center flex-1">
+                    <h1 class="text-base font-bold">Snowdonia Stays</h1>
+                    <span class="text-xs font-medium text-primary">24 properties</span>
+                </div>
 
-    <!-- DESKTOP LAYOUT (>= 1024px) -->
-    <div class="desktop-layout">
-        
-<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
-<!-- Top Navigation -->
-<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark px-10 py-3 shadow-sm">
-<div class="flex items-center gap-4 text-text-main-light dark:text-text-main-dark">
-<div class="size-8 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined !text-3xl">hiking</span>
-</div>
-<h2 class="text-text-main-light dark:text-text-main-dark text-lg font-bold leading-tight tracking-[-0.015em]">Wales Adventure</h2>
-</div>
-<div class="flex flex-1 justify-end gap-8">
-<div class="hidden md:flex items-center gap-9">
-<a class="text-text-main-light dark:text-text-main-dark hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Stays</a>
-<a class="text-text-sub-light dark:text-text-sub-dark hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Adventures</a>
-<a class="text-text-sub-light dark:text-text-sub-dark hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Blog</a>
-<a class="text-text-sub-light dark:text-text-sub-dark hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">About</a>
-</div>
-<div class="flex gap-2">
-<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary hover:bg-opacity-90 transition-opacity text-white text-sm font-bold leading-normal tracking-[0.015em]">
-<span class="truncate">Log in</span>
-</button>
-<button class="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-text-main-light dark:text-text-main-dark text-sm font-bold leading-normal tracking-[0.015em]">
-<span class="truncate">Sign up</span>
-</button>
-</div>
-</div>
-</header>
-<main class="flex-1 flex flex-col md:flex-row max-w-[1440px] mx-auto w-full px-4 md:px-8 py-8 gap-8">
-<!-- Sticky Sidebar Filters -->
-<aside class="w-full md:w-80 flex-shrink-0">
-<div class="md:sticky md:top-24 max-h-[calc(100vh-8rem)] overflow-y-auto sidebar-scroll pr-2">
-<!-- Page Heading in Sidebar for context -->
-<div class="mb-8">
-<p class="text-text-main-light dark:text-text-main-dark text-3xl font-black leading-tight tracking-[-0.033em]">Stays in Snowdonia</p>
-<p class="text-text-sub-light dark:text-text-sub-dark text-sm mt-2">Find the perfect base camp for your next adventure.</p>
-<div class="mt-4 flex gap-2">
-<button class="flex-1 flex cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors text-text-main-light dark:text-text-main-dark text-sm font-bold leading-normal tracking-[0.015em]">
-<span class="material-symbols-outlined mr-2 !text-lg">map</span>
-<span class="truncate">View on Map</span>
-</button>
-</div>
-</div>
-<!-- Filters -->
-<div class="flex flex-col gap-6">
-<!-- Date Picker Mock -->
-<div class="rounded-xl border border-solid border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-4 shadow-sm">
-<h3 class="text-text-main-light dark:text-text-main-dark font-bold mb-3">Dates</h3>
-<div class="flex justify-between items-center bg-background-light dark:bg-background-dark p-3 rounded-lg cursor-pointer">
-<span class="text-sm text-text-sub-light dark:text-text-sub-dark">Check-in - Check-out</span>
-<span class="material-symbols-outlined text-primary">calendar_month</span>
-</div>
-</div>
-<!-- Price Range -->
-<div class="rounded-xl border border-solid border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-4 shadow-sm">
-<h3 class="text-text-main-light dark:text-text-main-dark font-bold mb-3">Price Range</h3>
-<div class="flex items-center justify-between text-sm text-text-sub-light dark:text-text-sub-dark mb-2">
-<span>$50</span>
-<span>$500+</span>
-</div>
-<div class="h-1 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden relative">
-<div class="absolute left-1/4 right-1/4 top-0 bottom-0 bg-primary"></div>
-</div>
-<div class="mt-3 text-center text-sm font-medium text-text-main-light dark:text-text-main-dark">$120 - $350 avg</div>
-</div>
-<!-- Property Type Radio List -->
-<div class="flex flex-col gap-3">
-<h3 class="text-text-main-light dark:text-text-main-dark font-bold">Property Type</h3>
-<label class="group flex items-center gap-4 rounded-xl border border-solid border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-3 cursor-pointer hover:border-primary transition-colors">
-<input checked="" class="h-5 w-5 border-2 border-border-light dark:border-border-dark bg-transparent text-primary focus:ring-primary focus:ring-offset-0" name="property_type" type="radio"/>
-<div class="flex grow flex-col"><p class="text-text-main-light dark:text-text-main-dark text-sm font-medium leading-normal">All Stays</p></div>
-</label>
-<label class="group flex items-center gap-4 rounded-xl border border-solid border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-3 cursor-pointer hover:border-primary transition-colors">
-<input class="h-5 w-5 border-2 border-border-light dark:border-border-dark bg-transparent text-primary focus:ring-primary focus:ring-offset-0" name="property_type" type="radio"/>
-<div class="flex grow flex-col"><p class="text-text-main-light dark:text-text-main-dark text-sm font-medium leading-normal">Cabins</p></div>
-</label>
-<label class="group flex items-center gap-4 rounded-xl border border-solid border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-3 cursor-pointer hover:border-primary transition-colors">
-<input class="h-5 w-5 border-2 border-border-light dark:border-border-dark bg-transparent text-primary focus:ring-primary focus:ring-offset-0" name="property_type" type="radio"/>
-<div class="flex grow flex-col"><p class="text-text-main-light dark:text-text-main-dark text-sm font-medium leading-normal">Cottages</p></div>
-</label>
-<label class="group flex items-center gap-4 rounded-xl border border-solid border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-3 cursor-pointer hover:border-primary transition-colors">
-<input class="h-5 w-5 border-2 border-border-light dark:border-border-dark bg-transparent text-primary focus:ring-primary focus:ring-offset-0" name="property_type" type="radio"/>
-<div class="flex grow flex-col"><p class="text-text-main-light dark:text-text-main-dark text-sm font-medium leading-normal">Glamping</p></div>
-</label>
-</div>
-<!-- Amenities (Checkboxes style adapted from radio) -->
-<div class="flex flex-col gap-3">
-<h3 class="text-text-main-light dark:text-text-main-dark font-bold">Amenities</h3>
-<div class="grid grid-cols-2 gap-2">
-<label class="flex items-center gap-2 cursor-pointer">
-<input class="rounded border-gray-300 text-primary focus:ring-primary" type="checkbox"/>
-<span class="text-sm text-text-sub-light dark:text-text-sub-dark">Wi-Fi</span>
-</label>
-<label class="flex items-center gap-2 cursor-pointer">
-<input class="rounded border-gray-300 text-primary focus:ring-primary" type="checkbox"/>
-<span class="text-sm text-text-sub-light dark:text-text-sub-dark">Kitchen</span>
-</label>
-<label class="flex items-center gap-2 cursor-pointer">
-<input class="rounded border-gray-300 text-primary focus:ring-primary" type="checkbox"/>
-<span class="text-sm text-text-sub-light dark:text-text-sub-dark">Fireplace</span>
-</label>
-<label class="flex items-center gap-2 cursor-pointer">
-<input class="rounded border-gray-300 text-primary focus:ring-primary" type="checkbox"/>
-<span class="text-sm text-text-sub-light dark:text-text-sub-dark">Parking</span>
-</label>
-</div>
-</div>
-</div>
-</div>
-</aside>
-<!-- Main Content: Listings Grid -->
-<div class="flex-1 min-w-0">
-<!-- Adventure Pick (Featured) -->
-<div class="mb-8">
-<h3 class="text-lg font-bold mb-4 flex items-center gap-2 text-text-main-light dark:text-text-main-dark">
-<span class="material-symbols-outlined text-yellow-500 fill-current">star</span>
+                <!-- Desktop: Brand -->
+                <a class="hidden lg:flex items-center gap-3" href="#">
+                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                        <span class="material-symbols-outlined text-xl">landscape</span>
+                    </div>
+                    <span class="text-lg font-bold text-slate-900">Adventure Wales</span>
+                </a>
+
+                <!-- Desktop: Nav links -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a class="text-sm font-medium text-slate-900 hover:text-primary transition-colors" href="#">Stays</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="#">Adventures</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="#">Blog</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="#">About</a>
+                </nav>
+
+                <!-- Mobile: placeholder -->
+                <div class="lg:hidden w-10"></div>
+
+                <!-- Desktop: Buttons -->
+                <div class="hidden lg:flex items-center gap-2">
+                    <button class="bg-primary hover:bg-primary/90 text-white text-sm font-bold h-10 px-4 rounded-xl transition-colors">
+                        Log in
+                    </button>
+                    <button class="bg-slate-100 hover:bg-slate-200 text-slate-900 text-sm font-bold h-10 px-4 rounded-xl transition-colors">
+                        Sign up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 pb-24 lg:pb-8">
+        <!-- Page Header (mobile) -->
+        <div class="lg:hidden pt-6 pb-4">
+            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 leading-tight">Where to stay in Snowdonia</h2>
+        </div>
+
+        <!-- List/Map Toggle (mobile) -->
+        <div class="lg:hidden pb-4">
+            <div class="flex h-12 w-full items-center justify-center rounded-xl bg-slate-200 p-1">
+                <label class="relative flex cursor-pointer h-full flex-1 items-center justify-center rounded-lg text-sm font-semibold transition-all has-[:checked]:bg-white has-[:checked]:shadow-sm has-[:checked]:text-slate-900 text-slate-500">
+                    <span class="z-10 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-lg">list</span>
+                        List
+                    </span>
+                    <input checked class="invisible absolute" name="view_mode" type="radio" value="List"/>
+                </label>
+                <label class="relative flex cursor-pointer h-full flex-1 items-center justify-center rounded-lg text-sm font-semibold transition-all has-[:checked]:bg-white has-[:checked]:shadow-sm has-[:checked]:text-slate-900 text-slate-500">
+                    <span class="z-10 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-lg">map</span>
+                        Map
+                    </span>
+                    <input class="invisible absolute" name="view_mode" type="radio" value="Map"/>
+                </label>
+            </div>
+        </div>
+
+        <!-- Sticky Filter Chips (mobile) -->
+        <div class="lg:hidden sticky top-[57px] z-20 bg-background-light py-2 -mx-4 px-4 border-b border-slate-100">
+            <div class="flex gap-2 overflow-x-auto no-scrollbar pb-1">
+                <button class="flex h-9 shrink-0 items-center gap-2 rounded-lg bg-primary text-white px-4 text-sm font-bold">
+                    All
+                </button>
+                <button class="flex h-9 shrink-0 items-center gap-1 rounded-lg bg-white border border-slate-200 px-3 text-sm font-medium text-slate-700">
+                    Type
+                    <span class="material-symbols-outlined text-lg text-slate-400">expand_more</span>
+                </button>
+                <button class="flex h-9 shrink-0 items-center gap-1 rounded-lg bg-white border border-slate-200 px-3 text-sm font-medium text-slate-700">
+                    Price
+                    <span class="material-symbols-outlined text-lg text-slate-400">expand_more</span>
+                </button>
+                <button class="flex h-9 shrink-0 items-center gap-1 rounded-lg bg-white border border-slate-200 px-3 text-sm font-medium text-slate-700">
+                    Features
+                    <span class="material-symbols-outlined text-lg text-slate-400">expand_more</span>
+                </button>
+                <button class="flex h-9 shrink-0 items-center gap-1 rounded-lg bg-white border border-slate-200 px-3 text-sm font-medium text-slate-700">
+                    Dates
+                    <span class="material-symbols-outlined text-lg text-slate-400">calendar_month</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Desktop: Two Column Layout -->
+        <div class="lg:flex lg:gap-8 lg:pt-8">
+            <!-- Sidebar Filters (desktop) -->
+            <aside class="hidden lg:block w-80 flex-shrink-0">
+                <div class="sticky top-24 space-y-6">
+                    <!-- Page heading -->
+                    <div>
+                        <h1 class="text-3xl font-black tracking-tight text-slate-900">Stays in Snowdonia</h1>
+                        <p class="text-slate-500 text-sm mt-2">Find the perfect base camp for your next adventure.</p>
+                        <button class="mt-4 w-full flex items-center justify-center gap-2 rounded-xl h-10 px-4 bg-white border border-slate-200 hover:bg-slate-50 transition-colors text-slate-900 text-sm font-bold">
+                            <span class="material-symbols-outlined text-lg">map</span>
+                            View on Map
+                        </button>
+                    </div>
+
+                    <!-- Date Picker -->
+                    <div class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                        <h3 class="text-slate-900 font-bold mb-3">Dates</h3>
+                        <div class="flex justify-between items-center bg-slate-50 p-3 rounded-lg cursor-pointer hover:bg-slate-100 transition-colors">
+                            <span class="text-sm text-slate-500">Check-in - Check-out</span>
+                            <span class="material-symbols-outlined text-primary">calendar_month</span>
+                        </div>
+                    </div>
+
+                    <!-- Price Range -->
+                    <div class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                        <h3 class="text-slate-900 font-bold mb-3">Price Range</h3>
+                        <div class="flex items-center justify-between text-sm text-slate-500 mb-2">
+                            <span>£25</span>
+                            <span>£250+</span>
+                        </div>
+                        <div class="h-1 bg-slate-200 rounded-full overflow-hidden relative">
+                            <div class="absolute left-[10%] right-[30%] top-0 bottom-0 bg-primary"></div>
+                        </div>
+                        <div class="mt-3 text-center text-sm font-medium text-slate-900">£25 - £175 selected</div>
+                    </div>
+
+                    <!-- Property Type -->
+                    <div class="space-y-2">
+                        <h3 class="text-slate-900 font-bold">Property Type</h3>
+                        <label class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 cursor-pointer hover:border-primary transition-colors">
+                            <input checked class="h-4 w-4 border-slate-300 text-primary focus:ring-primary" name="property_type" type="radio"/>
+                            <span class="text-sm font-medium text-slate-900">All Stays</span>
+                        </label>
+                        <label class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 cursor-pointer hover:border-primary transition-colors">
+                            <input class="h-4 w-4 border-slate-300 text-primary focus:ring-primary" name="property_type" type="radio"/>
+                            <span class="text-sm font-medium text-slate-900">Hostels</span>
+                        </label>
+                        <label class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 cursor-pointer hover:border-primary transition-colors">
+                            <input class="h-4 w-4 border-slate-300 text-primary focus:ring-primary" name="property_type" type="radio"/>
+                            <span class="text-sm font-medium text-slate-900">Hotels</span>
+                        </label>
+                        <label class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 cursor-pointer hover:border-primary transition-colors">
+                            <input class="h-4 w-4 border-slate-300 text-primary focus:ring-primary" name="property_type" type="radio"/>
+                            <span class="text-sm font-medium text-slate-900">Glamping</span>
+                        </label>
+                    </div>
+
+                    <!-- Amenities -->
+                    <div class="space-y-3">
+                        <h3 class="text-slate-900 font-bold">Amenities</h3>
+                        <div class="grid grid-cols-2 gap-2">
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input class="rounded border-slate-300 text-primary focus:ring-primary" type="checkbox"/>
+                                <span class="text-sm text-slate-600">Bike Storage</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input class="rounded border-slate-300 text-primary focus:ring-primary" type="checkbox"/>
+                                <span class="text-sm text-slate-600">Drying Room</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input class="rounded border-slate-300 text-primary focus:ring-primary" type="checkbox"/>
+                                <span class="text-sm text-slate-600">WiFi</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input class="rounded border-slate-300 text-primary focus:ring-primary" type="checkbox"/>
+                                <span class="text-sm text-slate-600">Parking</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="flex-1 min-w-0 pt-4 lg:pt-0">
+                <!-- Featured: Adventure Pick -->
+                <div class="mb-6">
+                    <h3 class="hidden lg:flex text-lg font-bold mb-4 items-center gap-2 text-slate-900">
+                        <span class="material-symbols-outlined text-yellow-500">star</span>
                         Adventure Pick of the Week
                     </h3>
-<div class="flex flex-col md:flex-row items-stretch rounded-xl overflow-hidden shadow-lg bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark transition-transform hover:-translate-y-1 duration-300">
-<div class="w-full md:w-2/5 h-64 md:h-auto bg-center bg-no-repeat bg-cover relative" data-alt="Cozy cabin interior with fireplace" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTTbFjEiKJZwpYpTAlJdijh1gSCKxzy9LBpGjEBw4hPcSG_La9tKk2IDmj640nthpHKPkbMwRxFNIwOwmm2ntapEfszldxy8Jut4EJXodoF1iLl2OjBt4-FzFUAC43DjQPHIwg6Z2lUGl_xV83YcwASUv2wkv9MWL-J-Fc2O-Xs3n-vWWNawviJ7MgDNH9IDqGihMwSz4BNdZxNeBObU6FCKXqPwyLKuMqjOp0Txc7zeMBfC_WGdqLP8Dqs77dOb0BS32ON2uW-Q");'>
-<div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Featured</div>
-</div>
-<div class="flex flex-1 flex-col justify-between p-6">
-<div>
-<div class="flex justify-between items-start mb-2">
-<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium uppercase tracking-wide">Llanberis Pass</p>
-<div class="flex items-center gap-1 text-text-main-light dark:text-text-main-dark font-bold">
-<span class="material-symbols-outlined !text-sm text-yellow-500">star</span> 4.98
+
+                    <!-- Mobile: Vertical card -->
+                    <div class="lg:hidden group relative flex flex-col overflow-hidden rounded-xl bg-white shadow-md ring-1 ring-primary/30">
+                        <div class="absolute top-3 left-3 z-10">
+                            <span class="inline-flex items-center gap-1 rounded-md bg-primary px-2.5 py-1 text-xs font-bold text-white shadow-sm">
+                                <span class="material-symbols-outlined text-sm">local_fire_department</span>
+                                Adventure Pick
+                            </span>
+                        </div>
+                        <div class="relative h-56 w-full overflow-hidden">
+                            <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC0oJV7ccLL2NWjGBmH6znt2QxQ489KFefo39GUwL_dBaIXHlK8AGmewfiKzOhAdIRfkNqMj4fy1VR4XD4t0jdPGxCeePFWPNFkuJlCjLZ9Y8okPcD1Ogul0w29T3vmX7IWyvAQgVie1H-UDhdl85VLiXICdBuMy0JxiEezbQtsEQSENpqs6lmYj8vq6kOSJnXPLwsQbhjrLmaYFulacp-2wSJcPij4G845LrJitNZtm31kbRDOvxZ_kcJZU3NgF0_wVkGfkrJQA_c');"></div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 pt-12">
+                                <p class="text-white text-xs font-bold uppercase tracking-wider mb-1 opacity-90">Popular with hikers</p>
+                                <h3 class="text-2xl font-bold text-white">YHA Snowdon Pen-y-Pass</h3>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col gap-3">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-1 text-accent">
+                                    <span class="material-symbols-outlined text-lg">star</span>
+                                    <span class="text-sm font-bold text-slate-900">4.9</span>
+                                    <span class="text-xs text-slate-500">(324 reviews)</span>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-xs text-slate-500">from</p>
+                                    <p class="text-lg font-bold text-primary">£29<span class="text-sm text-slate-500 font-normal">/night</span></p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1 rounded-md bg-slate-100 px-2 py-1 text-xs font-medium text-slate-700">
+                                    <span class="material-symbols-outlined text-sm">pedal_bike</span>
+                                    Bike Storage
+                                </span>
+                                <span class="inline-flex items-center gap-1 rounded-md bg-slate-100 px-2 py-1 text-xs font-medium text-slate-700">
+                                    <span class="material-symbols-outlined text-sm">dry_cleaning</span>
+                                    Drying Room
+                                </span>
+                                <span class="inline-flex items-center gap-1 rounded-md bg-slate-100 px-2 py-1 text-xs font-medium text-slate-700">
+                                    <span class="material-symbols-outlined text-sm">wifi</span>
+                                    WiFi
+                                </span>
+                            </div>
+                            <button class="mt-2 w-full flex items-center justify-center gap-2 rounded-lg bg-primary py-2.5 text-sm font-bold text-white transition-colors hover:bg-primary/90">
+                                Check Availability
+                                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Desktop: Horizontal card -->
+                    <div class="hidden lg:flex flex-row items-stretch rounded-xl overflow-hidden shadow-lg bg-white border border-slate-200 hover:-translate-y-1 transition-transform duration-300">
+                        <div class="w-2/5 h-auto min-h-[280px] bg-cover bg-center relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTTbFjEiKJZwpYpTAlJdijh1gSCKxzy9LBpGjEBw4hPcSG_La9tKk2IDmj640nthpHKPkbMwRxFNIwOwmm2ntapEfszldxy8Jut4EJXodoF1iLl2OjBt4-FzFUAC43DjQPHIwg6Z2lUGl_xV83YcwASUv2wkv9MWL-J-Fc2O-Xs3n-vWWNawviJ7MgDNH9IDqGihMwSz4BNdZxNeBObU6FCKXqPwyLKuMqjOp0Txc7zeMBfC_WGdqLP8Dqs77dOb0BS32ON2uW-Q');">
+                            <div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Featured</div>
+                        </div>
+                        <div class="flex flex-1 flex-col justify-between p-6">
+                            <div>
+                                <div class="flex justify-between items-start mb-2">
+                                    <p class="text-slate-500 text-sm font-medium uppercase tracking-wide">Llanberis Pass</p>
+                                    <div class="flex items-center gap-1 text-slate-900 font-bold">
+                                        <span class="material-symbols-outlined text-sm text-yellow-500">star</span> 4.98
                                     </div>
-</div>
-<h3 class="text-text-main-light dark:text-text-main-dark text-2xl font-bold leading-tight mb-3">Snowdon Summit Basecamp</h3>
-<p class="text-text-sub-light dark:text-text-sub-dark text-sm leading-relaxed line-clamp-2 mb-4">
+                                </div>
+                                <h3 class="text-slate-900 text-2xl font-bold leading-tight mb-3">Snowdon Summit Basecamp</h3>
+                                <p class="text-slate-500 text-sm leading-relaxed line-clamp-2 mb-4">
                                     Experience the ultimate mountain getaway in this sustainable eco-cabin. Located just minutes from the main hiking trails with breathtaking panoramic views.
                                 </p>
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="inline-flex items-center gap-1 rounded-md bg-gray-100 dark:bg-gray-800 px-2 py-1 text-xs font-medium text-text-sub-light dark:text-text-sub-dark ring-1 ring-inset ring-gray-500/10">
-<span class="material-symbols-outlined !text-sm">wifi</span> Wifi
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="inline-flex items-center gap-1 rounded-md bg-slate-100 px-2 py-1 text-xs font-medium text-slate-600">
+                                        <span class="material-symbols-outlined text-sm">wifi</span> WiFi
                                     </span>
-<span class="inline-flex items-center gap-1 rounded-md bg-gray-100 dark:bg-gray-800 px-2 py-1 text-xs font-medium text-text-sub-light dark:text-text-sub-dark ring-1 ring-inset ring-gray-500/10">
-<span class="material-symbols-outlined !text-sm">local_fire_department</span> Fireplace
+                                    <span class="inline-flex items-center gap-1 rounded-md bg-slate-100 px-2 py-1 text-xs font-medium text-slate-600">
+                                        <span class="material-symbols-outlined text-sm">local_fire_department</span> Fireplace
                                     </span>
-<span class="inline-flex items-center gap-1 rounded-md bg-gray-100 dark:bg-gray-800 px-2 py-1 text-xs font-medium text-text-sub-light dark:text-text-sub-dark ring-1 ring-inset ring-gray-500/10">
-<span class="material-symbols-outlined !text-sm">hiking</span> Trail Access
+                                    <span class="inline-flex items-center gap-1 rounded-md bg-slate-100 px-2 py-1 text-xs font-medium text-slate-600">
+                                        <span class="material-symbols-outlined text-sm">hiking</span> Trail Access
                                     </span>
-</div>
-</div>
-<div class="flex items-center justify-between border-t border-border-light dark:border-border-dark pt-4 mt-2">
-<div>
-<p class="text-text-main-light dark:text-text-main-dark text-lg font-bold">$120 <span class="text-sm font-normal text-text-sub-light dark:text-text-sub-dark">/ night</span></p>
-<p class="text-xs text-text-sub-light dark:text-text-sub-dark">Nov 12-17</p>
-</div>
-<button class="flex cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-6 bg-primary hover:bg-opacity-90 transition-opacity text-white text-sm font-bold">
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-slate-200 pt-4">
+                                <div>
+                                    <p class="text-slate-900 text-lg font-bold">£120 <span class="text-sm font-normal text-slate-500">/ night</span></p>
+                                    <p class="text-xs text-slate-500">Nov 12-17</p>
+                                </div>
+                                <button class="flex items-center justify-center rounded-xl h-10 px-6 bg-primary hover:bg-primary/90 text-white text-sm font-bold transition-colors">
                                     Book Now
                                 </button>
-</div>
-</div>
-</div>
-</div>
-<div class="flex items-center justify-between mb-4">
-<p class="text-text-sub-light dark:text-text-sub-dark font-medium">124 properties found</p>
-<div class="flex items-center gap-2">
-<span class="text-sm text-text-sub-light dark:text-text-sub-dark">Sort by:</span>
-<select class="bg-transparent border-none text-sm font-bold text-text-main-light dark:text-text-main-dark focus:ring-0 cursor-pointer pr-8">
-<option>Recommended</option>
-<option>Price: Low to High</option>
-<option>Price: High to Low</option>
-<option>Rating</option>
-</select>
-</div>
-</div>
-<!-- 2-Column Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<!-- Card 1 -->
-<div class="group flex flex-col rounded-xl bg-surface-light dark:bg-surface-dark shadow-sm border border-border-light dark:border-border-dark overflow-hidden hover:shadow-md transition-shadow">
-<div class="aspect-[4/3] w-full bg-gray-200 relative overflow-hidden">
-<div class="w-full h-full bg-center bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Stone cottage in green valley" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCl6laHKQTSDDkYCqTKIZ_qqIiO49C95g0x0PeKnJqj2SH6eL4P1vvV02BuZufPtRQzff2xW5VFlPfANidPFNj8Aod97BEe-4rELeutlPrwcHAEPfruNvSYT7qsYeoT-wntIQYMas7--8ExO5O29qqdU5W79zlXSaOEhkrd1YkOiZx-N8orKS5HW6Rj6sU6c0wHlGPq_Fr5kEQVmcv_JwTruSzi-W1oQZS3LJrTQ46_Tm3n7bnAGh4s9f0BmDQ50b7inAP-CHylkw");'></div>
-<button class="absolute top-3 right-3 p-2 rounded-full bg-white/80 hover:bg-white text-gray-400 hover:text-red-500 transition-colors backdrop-blur-sm">
-<span class="material-symbols-outlined !text-xl block">favorite</span>
-</button>
-</div>
-<div class="flex flex-col gap-2 p-4">
-<div class="flex justify-between items-start">
-<div>
-<h4 class="text-text-main-light dark:text-text-main-dark text-lg font-bold leading-tight">Yr Hen Feudy</h4>
-<p class="text-text-sub-light dark:text-text-sub-dark text-sm">Betws-y-Coed</p>
-</div>
-<div class="flex items-center gap-1 text-sm font-bold text-text-main-light dark:text-text-main-dark">
-<span class="material-symbols-outlined !text-sm text-primary">star</span> 4.92
-                                </div>
-</div>
-<div class="flex flex-wrap gap-2 my-1">
-<span class="text-xs px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 font-medium">River View</span>
-<span class="text-xs px-2 py-1 rounded bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 font-medium">Secluded</span>
-</div>
-<div class="mt-auto pt-2 flex items-center justify-between">
-<p class="text-text-main-light dark:text-text-main-dark font-bold">$95 <span class="text-gray-500 dark:text-gray-400 font-normal text-sm">/ night</span></p>
-<p class="text-sm text-text-sub-light dark:text-text-sub-dark underline cursor-pointer hover:text-primary">View Details</p>
-</div>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="group flex flex-col rounded-xl bg-surface-light dark:bg-surface-dark shadow-sm border border-border-light dark:border-border-dark overflow-hidden hover:shadow-md transition-shadow">
-<div class="aspect-[4/3] w-full bg-gray-200 relative overflow-hidden">
-<div class="w-full h-full bg-center bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern glamping pod in forest" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZ4l84E2oYYvAFpF_a6t01AyoPEDlkWc7RI88dCooUemt7Bp7uq2U_EvNpdkc5CHgkepPGSn3TFNINr6ft9YQrgRVwvvnQ7x5iy0dsgF9DXJHAMqdjL-51CsR8dVByLYyFG7N4t5XfNy-MvFG_5MXHDSlpOIIFQ8jVDNE9HyPJpeHflDt00GBL0HAIyJw__DZK-8GFjw5BNE6D6HlNPS9C8isL987dBw4De9Eh5pNkv1aRtHfWeCSbiOrn-m7ribU61KKYUVX9sw");'></div>
-<button class="absolute top-3 right-3 p-2 rounded-full bg-white/80 hover:bg-white text-gray-400 hover:text-red-500 transition-colors backdrop-blur-sm">
-<span class="material-symbols-outlined !text-xl block">favorite</span>
-</button>
-</div>
-<div class="flex flex-col gap-2 p-4">
-<div class="flex justify-between items-start">
-<div>
-<h4 class="text-text-main-light dark:text-text-main-dark text-lg font-bold leading-tight">Forest Hideaway Pod</h4>
-<p class="text-text-sub-light dark:text-text-sub-dark text-sm">Beddgelert</p>
-</div>
-<div class="flex items-center gap-1 text-sm font-bold text-text-main-light dark:text-text-main-dark">
-<span class="material-symbols-outlined !text-sm text-primary">star</span> 4.85
-                                </div>
-</div>
-<div class="flex flex-wrap gap-2 my-1">
-<span class="text-xs px-2 py-1 rounded bg-orange-50 dark:bg-orange-900/20 text-orange-700 dark:text-orange-300 font-medium">Glamping</span>
-<span class="text-xs px-2 py-1 rounded bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-medium">Pet Friendly</span>
-</div>
-<div class="mt-auto pt-2 flex items-center justify-between">
-<p class="text-text-main-light dark:text-text-main-dark font-bold">$110 <span class="text-gray-500 dark:text-gray-400 font-normal text-sm">/ night</span></p>
-<p class="text-sm text-text-sub-light dark:text-text-sub-dark underline cursor-pointer hover:text-primary">View Details</p>
-</div>
-</div>
-</div>
-<!-- Card 3 -->
-<div class="group flex flex-col rounded-xl bg-surface-light dark:bg-surface-dark shadow-sm border border-border-light dark:border-border-dark overflow-hidden hover:shadow-md transition-shadow">
-<div class="aspect-[4/3] w-full bg-gray-200 relative overflow-hidden">
-<div class="w-full h-full bg-center bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Classic hikers hostel exterior" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCEEomzznXtFVqsrmiOabifAQzv83iqLXuUQDsSdYc3NsmYwUP1cAu2lKXKhu2XSVFgN4OXA99CKvDMatq91cAI9v2jpmdPRpoc8WN5FPnLNcyzD0RHM-tgOPjKrQIdQmbEeN0YMCGq2YCm0YWgRHbd4nk5C4SJE4lNGtW7mnxkTh5jGLrABe2lYUKyvWdxzxs32ouHrHiOtXtUBYHlDL78Bl3ru1t9kWfasR4e5iC20dS-MvTFK-DRsgmbNLp8Vt9gR3hPQbEEgA");'></div>
-<div class="absolute top-3 left-3 bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wide">Popular</div>
-<button class="absolute top-3 right-3 p-2 rounded-full bg-white/80 hover:bg-white text-gray-400 hover:text-red-500 transition-colors backdrop-blur-sm">
-<span class="material-symbols-outlined !text-xl block">favorite</span>
-</button>
-</div>
-<div class="flex flex-col gap-2 p-4">
-<div class="flex justify-between items-start">
-<div>
-<h4 class="text-text-main-light dark:text-text-main-dark text-lg font-bold leading-tight">Pen-y-Pass Hostel</h4>
-<p class="text-text-sub-light dark:text-text-sub-dark text-sm">Snowdon</p>
-</div>
-<div class="flex items-center gap-1 text-sm font-bold text-text-main-light dark:text-text-main-dark">
-<span class="material-symbols-outlined !text-sm text-primary">star</span> 4.7
-                                </div>
-</div>
-<div class="flex flex-wrap gap-2 my-1">
-<span class="text-xs px-2 py-1 rounded bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 font-medium">Hostel</span>
-<span class="text-xs px-2 py-1 rounded bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-medium">Budget</span>
-</div>
-<div class="mt-auto pt-2 flex items-center justify-between">
-<p class="text-text-main-light dark:text-text-main-dark font-bold">$45 <span class="text-gray-500 dark:text-gray-400 font-normal text-sm">/ night</span></p>
-<p class="text-sm text-text-sub-light dark:text-text-sub-dark underline cursor-pointer hover:text-primary">View Details</p>
-</div>
-</div>
-</div>
-<!-- Card 4 -->
-<div class="group flex flex-col rounded-xl bg-surface-light dark:bg-surface-dark shadow-sm border border-border-light dark:border-border-dark overflow-hidden hover:shadow-md transition-shadow">
-<div class="aspect-[4/3] w-full bg-gray-200 relative overflow-hidden">
-<div class="w-full h-full bg-center bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury lodge with hot tub" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCspRQ_tRcEbDiaZqDWF-cfRRBIE02tfkH_Oq-61NsxrS5irUQFNac-z02laXmej9TCCDWJ3lTKFF0GKxGiaTy1vRf7LgaWzF4Pd6UdsorTGKm8Ep-eeUmfpwfqyH3X03595xbKHaRcCZnkypvend7LfWbhZSGbblKo1fn5WD9X1ILNbDIOwbAu3wtPOZC2i1VYFrGlYdga4SbKe8mZR7yi3QYO0Y7oSQN6xgStQVDa2MmW6vDYs97jXJ-IU1sk35RbPqyj-jHdOQ");'></div>
-<button class="absolute top-3 right-3 p-2 rounded-full bg-white/80 hover:bg-white text-gray-400 hover:text-red-500 transition-colors backdrop-blur-sm">
-<span class="material-symbols-outlined !text-xl block">favorite</span>
-</button>
-</div>
-<div class="flex flex-col gap-2 p-4">
-<div class="flex justify-between items-start">
-<div>
-<h4 class="text-text-main-light dark:text-text-main-dark text-lg font-bold leading-tight">Mountain View Lodge</h4>
-<p class="text-text-sub-light dark:text-text-sub-dark text-sm">Capel Curig</p>
-</div>
-<div class="flex items-center gap-1 text-sm font-bold text-text-main-light dark:text-text-main-dark">
-<span class="material-symbols-outlined !text-sm text-primary">star</span> 5.0
-                                </div>
-</div>
-<div class="flex flex-wrap gap-2 my-1">
-<span class="text-xs px-2 py-1 rounded bg-teal-50 dark:bg-teal-900/20 text-teal-700 dark:text-teal-300 font-medium">Hot Tub</span>
-<span class="text-xs px-2 py-1 rounded bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 dark:text-yellow-300 font-medium">Luxury</span>
-</div>
-<div class="mt-auto pt-2 flex items-center justify-between">
-<p class="text-text-main-light dark:text-text-main-dark font-bold">$210 <span class="text-gray-500 dark:text-gray-400 font-normal text-sm">/ night</span></p>
-<p class="text-sm text-text-sub-light dark:text-text-sub-dark underline cursor-pointer hover:text-primary">View Details</p>
-</div>
-</div>
-</div>
-<!-- Card 5 -->
-<div class="group flex flex-col rounded-xl bg-surface-light dark:bg-surface-dark shadow-sm border border-border-light dark:border-border-dark overflow-hidden hover:shadow-md transition-shadow">
-<div class="aspect-[4/3] w-full bg-gray-200 relative overflow-hidden">
-<div class="w-full h-full bg-center bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Traditional farmhouse surrounded by sheep" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBv-1kmoiUSTuu3N1vBD0UpIt8cTU-M5g_BCDFVpHmkRpiQSYmBcaJEYHRLy0HDBFJgktn2zKde4nt-Z_ZavH2_8GTddQuleZYQ204D3nF-CbHhlYu3KwXHz4sG0hV4HPHWuLs1RMOg1PDAAxHJPAbURaAvC86Fgk7ZOJDbeGB8dJ_BvtasjxK0DzuYinZSP4juF6o_XS2y6JgOLkHtyIg6T5JN4Vny4ZudVO9vp2tf9GH4_CK2NylD4RG-xL-0kkya8DlUqh7mMw");'></div>
-<button class="absolute top-3 right-3 p-2 rounded-full bg-white/80 hover:bg-white text-gray-400 hover:text-red-500 transition-colors backdrop-blur-sm">
-<span class="material-symbols-outlined !text-xl block">favorite</span>
-</button>
-</div>
-<div class="flex flex-col gap-2 p-4">
-<div class="flex justify-between items-start">
-<div>
-<h4 class="text-text-main-light dark:text-text-main-dark text-lg font-bold leading-tight">Ty Nant Farm</h4>
-<p class="text-text-sub-light dark:text-text-sub-dark text-sm">Ogwen Valley</p>
-</div>
-<div class="flex items-center gap-1 text-sm font-bold text-text-main-light dark:text-text-main-dark">
-<span class="material-symbols-outlined !text-sm text-primary">star</span> 4.75
-                                </div>
-</div>
-<div class="flex flex-wrap gap-2 my-1">
-<span class="text-xs px-2 py-1 rounded bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-medium">Farm Stay</span>
-<span class="text-xs px-2 py-1 rounded bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-medium">Entire Place</span>
-</div>
-<div class="mt-auto pt-2 flex items-center justify-between">
-<p class="text-text-main-light dark:text-text-main-dark font-bold">$135 <span class="text-gray-500 dark:text-gray-400 font-normal text-sm">/ night</span></p>
-<p class="text-sm text-text-sub-light dark:text-text-sub-dark underline cursor-pointer hover:text-primary">View Details</p>
-</div>
-</div>
-</div>
-<!-- Card 6 -->
-<div class="group flex flex-col rounded-xl bg-surface-light dark:bg-surface-dark shadow-sm border border-border-light dark:border-border-dark overflow-hidden hover:shadow-md transition-shadow">
-<div class="aspect-[4/3] w-full bg-gray-200 relative overflow-hidden">
-<div class="w-full h-full bg-center bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Tiny house near lake" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAM0vWcJum5KNmyt9PXA16n0rd7MQEWGXrxVgkJz9Y5NM61GwFyFoYhDXIy-PSMxxBEEyFLefCn1pcNgQcfK0ZAo6lpvCC5juyccLNY1oCKsAZf8PJBLXxCdmXP7QZmMWIYqNlw0aMZBBus2Ttn-Sp4_Cy1ugeDMwhbO2GPMnjOQI7jv3tlv4t25DIxdyGwSlD4Eiw-HLtdHoah9ORHbI1oxZcPiktTxvhFtgR23PH_X9IPo4r8TEOBhmBgbJR00wadYPrUX0Lf0w");'></div>
-<button class="absolute top-3 right-3 p-2 rounded-full bg-white/80 hover:bg-white text-gray-400 hover:text-red-500 transition-colors backdrop-blur-sm">
-<span class="material-symbols-outlined !text-xl block">favorite</span>
-</button>
-</div>
-<div class="flex flex-col gap-2 p-4">
-<div class="flex justify-between items-start">
-<div>
-<h4 class="text-text-main-light dark:text-text-main-dark text-lg font-bold leading-tight">Llyn Tiny Home</h4>
-<p class="text-text-sub-light dark:text-text-sub-dark text-sm">Bala</p>
-</div>
-<div class="flex items-center gap-1 text-sm font-bold text-text-main-light dark:text-text-main-dark">
-<span class="material-symbols-outlined !text-sm text-primary">star</span> 4.90
-                                </div>
-</div>
-<div class="flex flex-wrap gap-2 my-1">
-<span class="text-xs px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 font-medium">Lake Access</span>
-<span class="text-xs px-2 py-1 rounded bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-medium">Couple's Retreat</span>
-</div>
-<div class="mt-auto pt-2 flex items-center justify-between">
-<p class="text-text-main-light dark:text-text-main-dark font-bold">$105 <span class="text-gray-500 dark:text-gray-400 font-normal text-sm">/ night</span></p>
-<p class="text-sm text-text-sub-light dark:text-text-sub-dark underline cursor-pointer hover:text-primary">View Details</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Pagination -->
-<div class="flex justify-center mt-10 mb-8">
-<div class="flex gap-2">
-<button class="flex size-10 items-center justify-center rounded-lg bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-sub-light dark:text-text-sub-dark hover:bg-gray-100 dark:hover:bg-gray-800 disabled:opacity-50">
-<span class="material-symbols-outlined">chevron_left</span>
-</button>
-<button class="flex size-10 items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
-<button class="flex size-10 items-center justify-center rounded-lg bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-main-light dark:text-text-main-dark hover:bg-gray-100 dark:hover:bg-gray-800 font-medium">2</button>
-<button class="flex size-10 items-center justify-center rounded-lg bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-main-light dark:text-text-main-dark hover:bg-gray-100 dark:hover:bg-gray-800 font-medium">3</button>
-<button class="flex size-10 items-center justify-center rounded-lg bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-sub-light dark:text-text-sub-dark hover:bg-gray-100 dark:hover:bg-gray-800">
-<span class="material-symbols-outlined">chevron_right</span>
-</button>
-</div>
-</div>
-</div>
-</main>
-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    </div>
+                <!-- Results count & sort (desktop) -->
+                <div class="hidden lg:flex items-center justify-between mb-4">
+                    <p class="text-slate-500 font-medium">24 properties found</p>
+                    <div class="flex items-center gap-2">
+                        <span class="text-sm text-slate-500">Sort by:</span>
+                        <select class="bg-transparent border-none text-sm font-bold text-slate-900 focus:ring-0 cursor-pointer pr-8">
+                            <option>Recommended</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Rating</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Accommodation Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                    <!-- Card 1 -->
+                    <div class="group flex flex-col overflow-hidden rounded-xl bg-white shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                        <div class="relative h-44 sm:h-48 w-full overflow-hidden">
+                            <div class="absolute top-3 left-3 z-10">
+                                <span class="inline-flex items-center rounded-md bg-white/90 backdrop-blur-sm px-2 py-1 text-xs font-bold text-slate-800">
+                                    Hostel
+                                </span>
+                            </div>
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvqtrQNBoIz5k-xJhRMkl5oCSpa3BHpe1FCCFkRN0Gj66uVdzZQNaAQlJNFgroc-0_oy6mGNeK7RUhseeDKKUOm7jfam9f9_OyW-IkW_v6DydbFLpdiIZt6Dd8ezkW9kib69Hz2jkIZzLsyZHmR-aJSAuvCiUaszpHiIxrr1SrxIR4T2OgSr5tn9FAl2aGqubmlwzv4iTTc-gTkIoInVX7RI9WcGywj1H4FCSwSI3dSwYmpya5FmAcsDSPALwEYYvtinO17-uqZI4');"></div>
+                            <button class="absolute bottom-3 right-3 z-10 flex w-8 h-8 items-center justify-center rounded-full bg-white text-slate-400 shadow-md hover:text-red-500 transition-colors">
+                                <span class="material-symbols-outlined text-xl">favorite</span>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <div class="mb-1 flex justify-between items-start">
+                                <h3 class="text-lg font-bold text-slate-900 leading-tight">Snowdonia Basecamp</h3>
+                                <span class="text-base font-bold text-slate-900">£25</span>
+                            </div>
+                            <p class="text-sm text-slate-500 mb-3">Llanberis • 0.5 miles from trail</p>
+                            <div class="flex items-center justify-between border-t border-slate-100 pt-3">
+                                <div class="flex items-center gap-1 text-slate-900">
+                                    <span class="material-symbols-outlined text-base text-primary">star</span>
+                                    <span class="text-sm font-bold">4.8</span>
+                                    <span class="text-xs text-slate-500">(120)</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="material-symbols-outlined text-slate-400 text-lg" title="Bike Storage">pedal_bike</span>
+                                    <span class="material-symbols-outlined text-slate-400 text-lg" title="Parking">local_parking</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="group flex flex-col overflow-hidden rounded-xl bg-white shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                        <div class="relative h-44 sm:h-48 w-full overflow-hidden">
+                            <div class="absolute top-3 left-3 z-10">
+                                <span class="inline-flex items-center rounded-md bg-white/90 backdrop-blur-sm px-2 py-1 text-xs font-bold text-slate-800">
+                                    Glamping
+                                </span>
+                            </div>
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8_Pr6uKjBWTCT_evvQ31NW8MNyqagBe-NuybfHvYZtWPcgNrFTWXU2wLwkrkquOgStJzKU_GR3Buqaum7gqL_KZ80vqHnU0e-mSqCdia6nShenxoDTVRsCZrVLL0QCCRZa22OaB94dtI-rW9IWs3iVKDkdACicDRB-GGqdlXHieoSpRPbmnrwul4ZxgJ40QOU9YOqqg81DHq3LkKTY6G0OkdsYpIft6Fzo1WSj-1OsOdKjXb49YBWQu3qqg9DLbQdeAX6ovaaY0c');"></div>
+                            <button class="absolute bottom-3 right-3 z-10 flex w-8 h-8 items-center justify-center rounded-full bg-white text-slate-400 shadow-md hover:text-red-500 transition-colors">
+                                <span class="material-symbols-outlined text-xl">favorite</span>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <div class="mb-1 flex justify-between items-start">
+                                <h3 class="text-lg font-bold text-slate-900 leading-tight">Eco-Pod Retreat</h3>
+                                <span class="text-base font-bold text-slate-900">£85</span>
+                            </div>
+                            <p class="text-sm text-slate-500 mb-3">Betws-y-Coed • Riverside</p>
+                            <div class="flex items-center justify-between border-t border-slate-100 pt-3">
+                                <div class="flex items-center gap-1 text-slate-900">
+                                    <span class="material-symbols-outlined text-base text-primary">star</span>
+                                    <span class="text-sm font-bold">4.9</span>
+                                    <span class="text-xs text-slate-500">(85)</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="material-symbols-outlined text-slate-400 text-lg" title="Fire pit">local_fire_department</span>
+                                    <span class="material-symbols-outlined text-slate-400 text-lg" title="Pets Allowed">pets</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="group flex flex-col overflow-hidden rounded-xl bg-white shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                        <div class="relative h-44 sm:h-48 w-full overflow-hidden">
+                            <div class="absolute top-3 left-3 z-10">
+                                <span class="inline-flex items-center rounded-md bg-white/90 backdrop-blur-sm px-2 py-1 text-xs font-bold text-slate-800">
+                                    Hotel
+                                </span>
+                            </div>
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAMQMQgTvX_rxwW4N7YoYhuKjxbMi5jfc9JA4BlJpnz2dg2CmFeFqSIfmYbAERAMQuaguAzaHhQMgxqJA5nDZ0s2h8tp5S1O6T185MWbc0cXrC4kdrkDBW6AMxaXC80RKwLixMhWkTnhAlmkC9QBMtd2TNGGlNPZTKZxUSbrwkW3GeaL2E164sWgOv0KZj1Bty4Q515ZkZwdydcB8QIuL0ja2jUxRqzJHD-A0fFimUBTA_8UCeM2JsMYtowZ4SSPS15CLjpKR3oqtQ');"></div>
+                            <button class="absolute bottom-3 right-3 z-10 flex w-8 h-8 items-center justify-center rounded-full bg-white text-slate-400 shadow-md hover:text-red-500 transition-colors">
+                                <span class="material-symbols-outlined text-xl">favorite</span>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <div class="mb-1 flex justify-between items-start">
+                                <h3 class="text-lg font-bold text-slate-900 leading-tight">Royal Victoria Hotel</h3>
+                                <span class="text-base font-bold text-slate-900">£110</span>
+                            </div>
+                            <p class="text-sm text-slate-500 mb-3">Llanberis • Lake View</p>
+                            <div class="flex items-center justify-between border-t border-slate-100 pt-3">
+                                <div class="flex items-center gap-1 text-slate-900">
+                                    <span class="material-symbols-outlined text-base text-primary">star</span>
+                                    <span class="text-sm font-bold">4.5</span>
+                                    <span class="text-xs text-slate-500">(512)</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="material-symbols-outlined text-slate-400 text-lg" title="Restaurant">restaurant</span>
+                                    <span class="material-symbols-outlined text-slate-400 text-lg" title="WiFi">wifi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="group flex flex-col overflow-hidden rounded-xl bg-white shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                        <div class="relative h-44 sm:h-48 w-full overflow-hidden">
+                            <div class="absolute top-3 left-3 z-10">
+                                <span class="inline-flex items-center rounded-md bg-red-500 px-2 py-1 text-xs font-bold text-white">
+                                    Popular
+                                </span>
+                            </div>
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCspRQ_tRcEbDiaZqDWF-cfRRBIE02tfkH_Oq-61NsxrS5irUQFNac-z02laXmej9TCCDWJ3lTKFF0GKxGiaTy1vRf7LgaWzF4Pd6UdsorTGKm8Ep-eeUmfpwfqyH3X03595xbKHaRcCZnkypvend7LfWbhZSGbblKo1fn5WD9X1ILNbDIOwbAu3wtPOZC2i1VYFrGlYdga4SbKe8mZR7yi3QYO0Y7oSQN6xgStQVDa2MmW6vDYs97jXJ-IU1sk35RbPqyj-jHdOQ');"></div>
+                            <button class="absolute bottom-3 right-3 z-10 flex w-8 h-8 items-center justify-center rounded-full bg-white text-slate-400 shadow-md hover:text-red-500 transition-colors">
+                                <span class="material-symbols-outlined text-xl">favorite</span>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <div class="mb-1 flex justify-between items-start">
+                                <h3 class="text-lg font-bold text-slate-900 leading-tight">Mountain View Lodge</h3>
+                                <span class="text-base font-bold text-slate-900">£210</span>
+                            </div>
+                            <p class="text-sm text-slate-500 mb-3">Capel Curig • Hot Tub</p>
+                            <div class="flex items-center justify-between border-t border-slate-100 pt-3">
+                                <div class="flex items-center gap-1 text-slate-900">
+                                    <span class="material-symbols-outlined text-base text-primary">star</span>
+                                    <span class="text-sm font-bold">5.0</span>
+                                    <span class="text-xs text-slate-500">(89)</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span class="material-symbols-outlined text-slate-400 text-lg" title="Hot Tub">hot_tub</span>
+                                    <span class="material-symbols-outlined text-slate-400 text-lg" title="WiFi">wifi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adventure Features Explainer (mobile) -->
+                <div class="lg:hidden mt-8 p-4 bg-white rounded-xl border border-slate-200">
+                    <h3 class="text-sm font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">help</span>
+                        What do adventure features mean?
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-start gap-2">
+                            <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary">
+                                <span class="material-symbols-outlined text-sm">pedal_bike</span>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-900">Bike Storage</p>
+                                <p class="text-[10px] text-slate-500 leading-tight">Secure, lockable area for bicycles.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary">
+                                <span class="material-symbols-outlined text-sm">dry_cleaning</span>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-900">Drying Room</p>
+                                <p class="text-[10px] text-slate-500 leading-tight">Heated room for wet hiking gear.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Partners -->
+                <div class="mt-8 text-center">
+                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-3">Book via our trusted partners</p>
+                    <div class="flex items-center justify-center gap-6 opacity-60 grayscale">
+                        <span class="text-lg font-extrabold text-slate-500 tracking-tighter">Booking.com</span>
+                        <span class="text-lg font-bold text-slate-500">airbnb</span>
+                    </div>
+                </div>
+
+                <!-- Nearby Regions -->
+                <div class="mt-8">
+                    <p class="text-sm font-bold text-slate-900 mb-3">Explore nearby</p>
+                    <div class="flex flex-wrap gap-2">
+                        <button class="rounded-full bg-white border border-slate-200 px-4 py-2 text-xs font-medium text-slate-600 shadow-sm hover:bg-slate-50 transition-colors">Llanberis</button>
+                        <button class="rounded-full bg-white border border-slate-200 px-4 py-2 text-xs font-medium text-slate-600 shadow-sm hover:bg-slate-50 transition-colors">Betws-y-Coed</button>
+                        <button class="rounded-full bg-white border border-slate-200 px-4 py-2 text-xs font-medium text-slate-600 shadow-sm hover:bg-slate-50 transition-colors">Beddgelert</button>
+                        <button class="rounded-full bg-white border border-slate-200 px-4 py-2 text-xs font-medium text-slate-600 shadow-sm hover:bg-slate-50 transition-colors">Anglesey</button>
+                    </div>
+                </div>
+
+                <!-- Pagination (desktop) -->
+                <div class="hidden lg:flex justify-center mt-10 mb-8">
+                    <div class="flex gap-2">
+                        <button class="flex w-10 h-10 items-center justify-center rounded-lg bg-white border border-slate-200 text-slate-500 hover:bg-slate-50">
+                            <span class="material-symbols-outlined">chevron_left</span>
+                        </button>
+                        <button class="flex w-10 h-10 items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
+                        <button class="flex w-10 h-10 items-center justify-center rounded-lg bg-white border border-slate-200 text-slate-900 hover:bg-slate-50 font-medium">2</button>
+                        <button class="flex w-10 h-10 items-center justify-center rounded-lg bg-white border border-slate-200 text-slate-900 hover:bg-slate-50 font-medium">3</button>
+                        <button class="flex w-10 h-10 items-center justify-center rounded-lg bg-white border border-slate-200 text-slate-500 hover:bg-slate-50">
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Floating Map Button (mobile) -->
+    <button class="lg:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2 rounded-full bg-slate-900 text-white px-5 py-3 shadow-xl hover:scale-105 transition-transform">
+        <span class="material-symbols-outlined text-xl">map</span>
+        <span class="text-sm font-bold">Map View</span>
+    </button>
 
     <!-- Dev info bar -->
     <div class="dev-bar">
@@ -727,7 +571,7 @@
         <div>
             <span class="lg:hidden">Mobile View</span>
             <span class="hidden lg:inline">Desktop View</span>
-            &bull; Resize browser to switch
+            &bull; Resize to test
         </div>
     </div>
 

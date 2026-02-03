@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: anglesey-vs-pembrokeshire
 question: "Anglesey vs Pembrokeshire - Which is Better?"
@@ -51,4 +50,3 @@ Before making your choice, consider the following:
 - What is the best time of year to visit Wales?
 - What are the best family-friendly beaches in Wales?
 - What is coasteering?
-```

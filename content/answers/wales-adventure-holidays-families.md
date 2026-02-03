@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: wales-adventure-holidays-families
 question: "What are the Best Adventure Holidays in Wales for Families?"
@@ -50,4 +49,3 @@ Pembrokeshire's stunning coastline is ideal for families who love the sea.
 - What is the best time of year to visit Wales for outdoor activities?
 - What are some free family activities in Wales?
 - What should I pack for an adventure holiday in Wales?
-```

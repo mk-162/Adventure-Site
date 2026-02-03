@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: wild-swimming-spots-wales
 question: "What are the Best Wild Swimming Spots in Wales?"
@@ -50,4 +49,3 @@ Here are some practical tips to make the most of your wild swimming experience i
 - Is wild swimming safe?
 - What equipment do I need for wild swimming?
 - What is the best time of year to wild swim in Wales?
-```

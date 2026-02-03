@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: best-running-events-wales
 question: "What are the Best Running Events in Wales?"
@@ -46,4 +45,3 @@ Choosing the right running event involves several factors. Here's a table to hel
 - What are the best trail running routes in Snowdonia?
 - What should I pack for a mountain running race?
 - What are some good warm-up exercises for runners?
-```

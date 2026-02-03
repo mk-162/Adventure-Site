@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Adventure Network
+
+Multi-tenant adventure tourism platform. First site: **Adventure Wales**.
+
+## Documentation
+
+- **[Platform Design](docs/PLATFORM_DESIGN.md)** - Complete architecture, database schema, 12 page templates, and Jules spec
+- **[France Component Patterns](docs/FRANCE_COMPONENT_PATTERNS.md)** - Reference implementations from Ultimate France
+
+## Seed Data
+
+Wales seed data in `data/wales/`:
+
+| File | Records | Description |
+|------|---------|-------------|
+| Activities.csv | 78 | Activities and experiences |
+| Operators.csv | 36 | Business directory |
+| Locations.csv | 64 | POIs with GPS coordinates |
+| Accommodation.csv | 71 | Places to stay |
+| Events.csv | 48 | Races and events |
+| Transport.csv | 64 | Getting there options |
+| Commercial Partners.csv | - | Advertising partners |
+
+## Tech Stack
+
+- **Frontend**: Next.js 15, Tailwind CSS, Radix UI, Leaflet maps
+- **Backend**: Vercel Postgres, Drizzle ORM
+- **Content Pipeline**: Gemini 2.0 Flash, Perplexity API
+
+## Architecture Highlights
+
+- **Multi-tenant**: Single codebase, `site_id` scoping, custom domains
+- **Partner Tiers**: stub → claimed → premium
+- **Ad System**: Direct → Premium operators → Affiliate → Programmatic
+- **Service Slots**: Cascading config (global → activity_type → region → location)
+- **Status Workflow**: draft → review → published → archived
+- **27 database tables**: Core content + commercial + admin
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev     # Start dev server at localhost:3000
+npm run build   # Production build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See [Platform Design](docs/PLATFORM_DESIGN.md) for:
+1. Jules scaffolding prompt (complete database schema)
+2. Google Stitch prompts (12 mobile-first page templates)
+3. CSV import scripts
+4. Geocoding scripts

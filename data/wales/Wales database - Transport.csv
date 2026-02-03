@@ -1,0 +1,64 @@
+Service Type,Name/Route,Region Covered,Stops/Locations,Frequency,Season,Cost (£),Website,Notes
+Train Station,Bangor,North Wales,Snowdonia access point,Regular services,Year-round,Varies,https://www.transportforwales.co.uk,Nearest mainline to Llanberis (10 miles)
+Train Station,Llandudno Junction,North Wales,"Conwy, Snowdonia access",Regular services,Year-round,Varies,https://www.transportforwales.co.uk,Connection to Blaenau Ffestiniog branch
+Train Station,Blaenau Ffestiniog,North Wales,"Zip World, Antur Stiniog",Regular services,Year-round,Varies,https://www.transportforwales.co.uk,Conwy Valley line from Llandudno Junction
+Train Station,Betws-y-Coed,North Wales,"Snowdonia, Zip World Fforest",Regular services,Year-round,Varies,https://www.transportforwales.co.uk,Conwy Valley line
+Train Station,Dolgellau (via Machynlleth),Mid Wales,Coed y Brenin,Regular services to Machynlleth,Year-round,Varies,https://www.transportforwales.co.uk,Bus connection to Dolgellau
+Train Station,Machynlleth,Mid Wales,"Dyfi Forest, Aberystwyth access",Regular services,Year-round,Varies,https://www.transportforwales.co.uk,Coastal line and Cambrian line junction
+Train Station,Aberystwyth,Mid Wales,Ceredigion coast,Regular services,Year-round,Varies,https://www.transportforwales.co.uk,End of Cambrian line
+Train Station,Borth,Mid Wales,"Borth Beach, Ynyslas",Regular services,Year-round,Varies,https://www.transportforwales.co.uk,Cambrian coast line
+Train Station,Haverfordwest,Pembrokeshire,Pembrokeshire access,Regular services,Year-round,Varies,https://www.transportforwales.co.uk,Main station for north Pembrokeshire
+Train Station,Fishguard Harbour,Pembrokeshire,North Pembrokeshire coast,Regular services,Year-round,Varies,https://www.transportforwales.co.uk,Ferry connection to Ireland
+Train Station,Pembroke/Pembroke Dock,Pembrokeshire,South Pembrokeshire,Regular services,Year-round,Varies,https://www.transportforwales.co.uk,West Wales line
+Train Station,Tenby,Pembrokeshire,"Tenby, south coast",Regular services,Year-round,Varies,https://www.transportforwales.co.uk,Popular tourist station
+Train Station,Saundersfoot,Pembrokeshire,Saundersfoot,Regular services,Year-round,Varies,https://www.transportforwales.co.uk,Coastal station
+Train Station,Milford Haven,Pembrokeshire,"Milford Haven, Dale",Regular services,Year-round,Varies,https://www.transportforwales.co.uk,West Wales line terminus
+Train Station,Abergavenny,South Wales,Brecon Beacons (eastern),Regular services,Year-round,Varies,https://www.transportforwales.co.uk,Nearest mainline to east Beacons
+Train Station,Merthyr Tydfil,South Wales,BikePark Wales,Regular services,Year-round,Varies,https://www.transportforwales.co.uk,Nearest station to BikePark Wales
+Train Station,Cardiff Central,South Wales,"Capital, connections",Frequent services,Year-round,Varies,https://www.transportforwales.co.uk,Main hub for south Wales
+Train Station,Swansea,South Wales,Gower access (bus connections),Regular services,Year-round,Varies,https://www.transportforwales.co.uk,Bus connections to Gower
+Train Station,Pwllheli,North Wales,Llŷn Peninsula,Regular services,Year-round,Varies,https://www.transportforwales.co.uk,Cambrian coast line terminus
+Train Station,Holyhead,North Wales,"Anglesey, ferries",Regular services,Year-round,Varies,https://www.transportforwales.co.uk,"Ferry to Ireland, Anglesey access"
+Bus,Snowdon Sherpa,Snowdonia,"Llanberis, Pen-y-Pass, Beddgelert, Rhyd Ddu",Frequent (summer),Year-round (reduced winter),2-5,https://www.snowdonia.gov.wales,Park & ride for Snowdon
+Bus,S1 (Llanberis-Bangor),North Wales,"Llanberis, Caernarfon, Bangor",Hourly,Year-round,2-5,https://www.transportforwales.co.uk,Connects Llanberis to rail network
+Bus,S2 (Betws-y-Coed),North Wales,"Betws-y-Coed, Capel Curig, Llanberis",Hourly,Year-round,2-5,https://www.transportforwales.co.uk,Snowdonia circular route
+Bus,S97 (Pen-y-Pass),North Wales,"Llanberis, Pen-y-Pass",Regular (summer),Summer mainly,2-5,https://www.snowdonia.gov.wales,Direct to Pen-y-Pass
+Bus,T2 (TrawsCymru),North/Mid Wales,"Bangor, Betws-y-Coed, Llangollen",Hourly,Year-round,Free-5,https://www.trawscymru.info,Long-distance north Wales route
+Bus,X1 (Wrexham-Llandudno),North Wales,"Wrexham, Llandudno, Colwyn Bay",Frequent,Year-round,2-8,https://www.arrivabus.co.uk,North coast east-west
+Bus,Puffin Shuttle (400),Pembrokeshire,"St Davids, Newgale, Broad Haven, Marloes",3x daily (summer),May-September,2-5,https://www.pembrokeshire.gov.uk,Coastal bus for walkers
+Bus,Strumble Shuttle (404),Pembrokeshire,"Newport, Fishguard, St Davids",3x daily (summer),May-September,2-5,https://www.pembrokeshire.gov.uk,North Pembrokeshire coast
+Bus,Poppit Rocket (405),Pembrokeshire,"Cardigan, St Dogmaels, Newport, Fishguard",3x daily (summer),May-September,2-5,https://www.pembrokeshire.gov.uk,North coast path access
+Bus,Coastal Cruiser (387/388),Pembrokeshire,"Pembroke, Stackpole, Freshwater West",3x daily (summer),May-September,2-5,https://www.pembrokeshire.gov.uk,South coast access
+Bus,Celtic Coaster (403),Pembrokeshire,St Davids Peninsula circular,Every 30 min (summer),May-September,2-5,https://www.pembrokeshire.gov.uk,St Davids area
+Bus,Fflecsi (on-demand),Pembrokeshire,Various,On-demand,Year-round,2-5,https://www.fflecsi.wales,Book via app or phone
+Bus,349 (Tenby-Pembroke),Pembrokeshire,"Tenby, Pembroke",Regular,Year-round,2-5,https://www.transportforwales.co.uk,Coastal towns connection
+Bus,351 (Tenby-Amroth),Pembrokeshire,"Tenby, Saundersfoot, Amroth",Regular,Year-round,2-5,https://www.transportforwales.co.uk,South coast path
+Bus,315 (Haverfordwest-Marloes),Pembrokeshire,"Haverfordwest, Dale, Marloes",Regular,Year-round,2-5,https://www.pembrokeshire.gov.uk,Milford Haven waterway
+Bus,T4 (TrawsCymru),South/Mid Wales,"Cardiff, Merthyr, Brecon, Llandrindod",Hourly,Year-round,Free-8,https://www.trawscymru.info,Cross-Wales route
+Bus,T6 (TrawsCymru),South Wales,"Swansea, Brecon, Hay-on-Wye",Hourly,Year-round,Free-8,https://www.trawscymru.info,Swansea to Brecon
+Bus,X43 (Brecon-Abergavenny),South Wales,"Brecon, Abergavenny",Regular,Year-round,2-8,https://www.stagecoachbus.com,East Beacons access
+Bus,Taff Trail Bus,South Wales,"Brecon, Merthyr (key points)",Limited,Summer mainly,2-5,https://www.breconbeacons.org,For Taff Trail users
+Bus,42 (Bangor-Holyhead),Anglesey,"Bangor, Llanfairpwll, Rhosneigr, Holyhead",Hourly,Year-round,2-5,https://www.arrivabus.co.uk,Cross-Anglesey route
+Bus,4 (Llangefni-Rhosneigr),Anglesey,"Llangefni, Rhosneigr",Regular,Year-round,2-5,https://www.arrivabus.co.uk,To Rhosneigr beaches
+Bus,X4 (Holyhead-Llandudno),Anglesey/North Wales,"Holyhead, Bangor, Llandudno",Regular,Year-round,2-8,https://www.arrivabus.co.uk,Coastal route
+Bus,114 (Swansea-Rhossili),Gower,"Swansea, Rhossili",Regular (summer),Year-round (reduced),2-5,https://www.swansea.gov.uk,To Rhossili Bay
+Bus,115 (Swansea-Llangennith),Gower,"Swansea, Llangennith",Regular (summer),Year-round (reduced),2-5,https://www.swansea.gov.uk,To Llangennith surfing beach
+Bus,118 (Swansea-Port Eynon),Gower,"Swansea, Port Eynon",Regular (summer),Year-round (reduced),2-5,https://www.swansea.gov.uk,South Gower coast
+Bus,119 (Swansea-Oxwich),Gower,"Swansea, Oxwich",Regular (summer),Year-round (reduced),2-5,https://www.swansea.gov.uk,To Oxwich Bay
+Bus,X50 (Wrexham-Denbigh-Rhyl),Mid/North Wales,"Wrexham, Llandegla, Denbigh, Rhyl",Regular,Year-round,2-8,https://www.arrivabus.co.uk,Passes Llandegla forest
+Bus,T12 (TrawsCymru),Mid Wales,"Machynlleth, Newtown, Brecon",Hourly,Year-round,Free-8,https://www.trawscymru.info,Cross-Wales
+Bike Rental,Beics Brenin (Coed y Brenin),Snowdonia,Coed y Brenin Visitor Centre,Daily,Year-round,35-110,https://www.beicsbrenin.co.uk,Full range MTB hire
+Bike Rental,One Planet Adventure,North Wales,Llandegla Forest,Daily,Year-round,35-80,https://www.oneplanetadventure.co.uk,"MTB hire, trail centre"
+Bike Rental,Antur Stiniog,Snowdonia,Blaenau Ffestiniog,Daily,Year-round,75 (+damage waiver),https://www.anturstiniog.com,Downhill bike hire
+Bike Rental,BikePark Wales Hire,Brecon Beacons,BikePark Wales,Daily,Year-round,90-110,https://www.bikeparkwales.com,Enduro and DH bikes
+Bike Rental,TYF Bike Hire,Pembrokeshire,St Davids,Daily,Mar-Oct,25-50,https://www.tyf.com,"Beach bikes, hybrids"
+Gear Rental,Funsport Rhosneigr,Anglesey,Rhosneigr,Daily,Year-round,20-100,https://www.funsportonline.co.uk,"Kitesurf, windsurf, wetsuits"
+Gear Rental,Gecko Surf,Anglesey,Rhosneigr,Daily,Year-round,20-80,https://www.geckosurf.co.uk,"Surf, kitesurf hire"
+Gear Rental,TYF Adventure,Pembrokeshire,St Davids,Daily,Mar-Oct,15-50,https://www.tyf.com,"Wetsuits, kayaks, surfboards"
+Gear Rental,Preseli Venture,Pembrokeshire,Mathry,Daily,Mar-Oct,15-50,https://www.preseliventure.co.uk,Activity equipment
+Gear Rental,Plas y Brenin,Snowdonia,Capel Curig,Daily,Year-round,20-60,https://pyb.co.uk,"Climbing, paddling gear"
+Shuttle,Snowdon Sherpa,Snowdonia,"Pen-y-Pass, Llanberis, Rhyd Ddu",Frequent,Year-round,2-5,https://www.snowdonia.gov.wales,Park & ride to mountain
+Shuttle,BikePark Wales Shuttle,Brecon Beacons,BikePark Wales uplift,Continuous,Year-round,Included in pass,https://www.bikeparkwales.com,Uplift service
+Shuttle,Antur Stiniog Uplift,Snowdonia,Antur Stiniog,Continuous,Year-round,35-45,https://www.anturstiniog.com,Best UK uplift service
+Shuttle,Llandegla Shuttle,North Wales,Llandegla (limited),Limited,Summer,Free-5,https://www.oneplanetadventure.co.uk,Some uplift available
+Shuttle,Coastal Bus Shuttles,Pembrokeshire,Various coastal points,Scheduled,May-September,2-5,https://www.pembrokeshire.gov.uk,For coast path walkers

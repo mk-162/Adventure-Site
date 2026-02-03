@@ -61,86 +61,57 @@ const mockItineraries = [
 
 export function FeaturedItineraries({ activities }: FeaturedItinerariesProps) {
   return (
-    <section className="py-20 px-4">
+    <section className="py-12 sm:py-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="flex items-end justify-between mb-10">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
           <div>
-            <p className="text-[#f97316] font-semibold text-sm uppercase tracking-wider mb-2">
-              Curated Trips
-            </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a4c]">
-              Featured Itineraries
-            </h2>
+            <span className="text-[#f97316] font-bold uppercase tracking-wider text-sm">Curated Trips</span>
+            <h2 className="mt-2 text-3xl font-bold text-[#1e3a4c]">Featured Itineraries</h2>
           </div>
-          <Link
-            href="/itineraries"
-            className="hidden md:flex items-center gap-2 text-[#f97316] font-semibold hover:text-[#ea580c] transition-colors"
-          >
-            View All
-            <ArrowRight className="h-4 w-4" />
+          <Link href="/itineraries" className="hidden sm:flex items-center text-[#1e3a4c] font-bold hover:underline">
+            View All <ArrowRight className="ml-1 h-5 w-5" />
           </Link>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {mockItineraries.map((itinerary) => (
-            <Link
-              key={itinerary.id}
-              href={`/itineraries/${itinerary.id}`}
-              className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
-            >
-              {/* Image */}
-              <div className="relative h-48 overflow-hidden">
-                <div
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                  style={{ backgroundImage: `url('${itinerary.image}')` }}
-                />
-                {/* Duration Badge */}
-                <div className="absolute top-3 left-3 px-3 py-1 bg-[#1e3a4c] text-white text-xs font-semibold rounded-full">
-                  {itinerary.duration}
+        {/* Horizontal scroll on mobile, grid on desktop */}
+        <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 sm:overflow-visible no-scrollbar">
+          <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 pb-4 sm:pb-0">
+            {mockItineraries.map((itinerary) => (
+              <Link
+                key={itinerary.id}
+                href={`/itineraries/${itinerary.id}`}
+                className="flex-shrink-0 w-[260px] sm:w-auto group"
+              >
+                <div className="relative aspect-[4/5] rounded-xl overflow-hidden">
+                  <div
+                    className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+                    style={{ backgroundImage: `url('${itinerary.image}')` }}
+                  />
+                  <div className="absolute top-3 left-3 bg-white/90 px-2 py-1 rounded text-xs font-bold uppercase text-[#1e3a4c]">
+                    {itinerary.duration}
+                  </div>
                 </div>
-              </div>
-
-              {/* Content */}
-              <div className="p-4">
-                {/* Rating */}
-                <div className="flex items-center gap-1 mb-2">
-                  <Star className="h-4 w-4 fill-[#f97316] text-[#f97316]" />
-                  <span className="text-sm font-semibold text-[#f97316]">
-                    {itinerary.rating}
-                  </span>
-                  <span className="text-sm text-gray-500">({itinerary.reviews})</span>
+                <div className="mt-3">
+                  <div className="flex items-center gap-1 text-[#f97316] text-sm font-bold">
+                    <Star className="h-4 w-4 fill-current" />
+                    <span>{itinerary.rating} ({itinerary.reviews})</span>
+                  </div>
+                  <h3 className="text-lg font-bold mt-1 text-[#1e3a4c] group-hover:text-[#1e3a4c] transition-colors">
+                    {itinerary.title}
+                  </h3>
+                  <p className="text-slate-500 text-sm">{itinerary.region}</p>
+                  <p className="mt-2 font-bold text-[#1e3a4c]">
+                    From £{itinerary.price} <span className="text-slate-500 font-normal text-xs">/ person</span>
+                  </p>
                 </div>
-
-                {/* Title */}
-                <h3 className="font-bold text-[#1e3a4c] mb-1 group-hover:text-[#f97316] transition-colors">
-                  {itinerary.title}
-                </h3>
-
-                {/* Region */}
-                <p className="text-sm text-gray-500 mb-3">{itinerary.region}</p>
-
-                {/* Price */}
-                <p className="text-sm">
-                  <span className="font-semibold text-[#1e3a4c]">From £{itinerary.price}</span>
-                  <span className="text-gray-500"> /person</span>
-                </p>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
+          </div>
         </div>
 
-        {/* Mobile View All */}
-        <div className="md:hidden mt-8 text-center">
-          <Link
-            href="/itineraries"
-            className="inline-flex items-center gap-2 text-[#f97316] font-semibold hover:text-[#ea580c] transition-colors"
-          >
-            View All Itineraries
-            <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
+        <Link href="/itineraries" className="sm:hidden block w-full mt-6 py-3 text-center text-[#1e3a4c] font-bold border border-slate-200 rounded-xl hover:bg-slate-50">
+          View All Itineraries
+        </Link>
       </div>
     </section>
   );

@@ -26,25 +26,19 @@ export function RegionsGrid({ regions }: RegionsGridProps) {
   const uniqueRegions = regions.slice(0, 6);
 
   return (
-    <section className="py-20 px-4">
+    <section className="pt-24 sm:pt-28 pb-12 sm:pb-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <p className="text-[#f97316] font-semibold text-sm uppercase tracking-wider mb-2">
-            Explore by Region
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a4c]">
-            Discover Wales' Hidden Gems
-          </h2>
+        <div className="text-center mb-8 sm:mb-12">
+          <span className="text-[#f97316] font-bold uppercase tracking-wider text-sm">Explore by Region</span>
+          <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-[#1e3a4c]">Discover Wales' Hidden Gems</h2>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {uniqueRegions.map((region) => (
             <Link
               key={region.id}
               href={`/${region.slug}`}
-              className="group relative h-64 rounded-2xl overflow-hidden"
+              className="group relative overflow-hidden rounded-2xl aspect-[4/3]"
             >
               {/* Background Image */}
               <div
@@ -55,14 +49,14 @@ export function RegionsGrid({ regions }: RegionsGridProps) {
               />
 
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
               {/* Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-xl font-bold text-white mb-1">{region.name}</h3>
-                {region.description && (
-                  <p className="text-white/80 text-sm line-clamp-2">{region.description}</p>
-                )}
+              <div className="absolute bottom-0 left-0 p-4 sm:p-6">
+                <h3 className="text-white text-xl sm:text-2xl font-bold">{region.name}</h3>
+                <p className="text-slate-300 text-sm mt-1 hidden sm:block">
+                  {region.description ? region.description.substring(0, 30) + "..." : "Explore this region"}
+                </p>
               </div>
             </Link>
           ))}

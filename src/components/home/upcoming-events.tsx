@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 interface Event {
   id: number;
@@ -23,87 +24,51 @@ function parseDate(monthTypical: string | null): { month: string; day: string } 
 }
 
 export function UpcomingEvents({ events }: UpcomingEventsProps) {
-  const displayEvents = events.slice(0, 4);
+  const displayEvents = events.slice(0, 3); // Design shows 3
 
   return (
-    <section className="py-20 px-4 bg-gray-50">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <div className="flex items-end justify-between mb-10">
+    <section className="py-12 sm:py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
           <div>
-            <p className="text-[#f97316] font-semibold text-sm uppercase tracking-wider mb-2">
-              Mark Your Calendar
-            </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a4c]">
-              Upcoming Events
-            </h2>
+            <span className="text-[#1e3a4c] font-bold uppercase tracking-wider text-sm">Mark Your Calendar</span>
+            <h2 className="mt-2 text-3xl font-bold text-[#1e3a4c]">Upcoming Events</h2>
           </div>
-          <div className="hidden sm:flex gap-2">
-            <button className="px-4 py-2 bg-[#1e3a4c] text-white text-sm font-medium rounded-full">
-              All Events
-            </button>
-            <button className="px-4 py-2 bg-white text-gray-600 text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">
-              Festivals
-            </button>
-            <button className="px-4 py-2 bg-white text-gray-600 text-sm font-medium rounded-full hover:bg-gray-100 transition-colors">
-              Competitions
-            </button>
+          <div className="flex gap-2 overflow-x-auto no-scrollbar">
+            <button className="shrink-0 px-4 py-2 rounded-full bg-[#1e3a4c] text-white text-sm font-bold">All</button>
+            <button className="shrink-0 px-4 py-2 rounded-full border border-slate-200 text-sm font-bold hover:bg-slate-50 text-slate-700">Festivals</button>
+            <button className="shrink-0 px-4 py-2 rounded-full border border-slate-200 text-sm font-bold hover:bg-slate-50 text-slate-700">Races</button>
           </div>
         </div>
 
-        {/* Events List */}
-        <div className="space-y-4">
-          {displayEvents.map((event) => {
+        <div className="space-y-2">
+          {displayEvents.map((event, index) => {
             const date = parseDate(event.monthTypical);
             return (
-              <div
+              <Link
                 key={event.id}
-                className="flex items-center justify-between bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow"
+                href={`/events/${event.slug}`}
+                className={`flex items-center gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl hover:bg-slate-50 transition-colors ${index !== 0 ? "border-t border-slate-100" : ""}`}
               >
-                {/* Left: Date + Info */}
-                <div className="flex items-center gap-4">
-                  {/* Date Badge */}
-                  <div className="w-14 text-center">
-                    <div className="text-xs font-semibold text-[#f97316] uppercase">
-                      {date.month}
-                    </div>
-                    <div className="text-2xl font-bold text-[#1e3a4c]">
-                      {date.day || "—"}
-                    </div>
-                  </div>
-
-                  {/* Event Info */}
-                  <div>
-                    <h3 className="font-semibold text-[#1e3a4c]">{event.name}</h3>
-                    <p className="text-sm text-gray-500">{event.location || "Wales"}</p>
-                  </div>
-                </div>
-
-                {/* Right: Time + Details */}
-                <div className="flex items-center gap-4">
-                  <span className="text-sm text-gray-500 hidden sm:block">
-                    {event.type || "Event"}
+                <div className="shrink-0 w-16 sm:w-20 text-center bg-slate-100 rounded-lg py-3">
+                  <span className="block text-[#f97316] font-bold text-xs sm:text-sm uppercase">
+                    {date.month}
                   </span>
-                  <Link
-                    href={`/events/${event.slug}`}
-                    className="px-4 py-2 border border-gray-200 text-sm font-medium text-gray-700 rounded-full hover:border-[#f97316] hover:text-[#f97316] transition-colors"
-                  >
-                    Details
-                  </Link>
+                  <span className="block text-2xl sm:text-3xl font-black text-[#1e3a4c]">
+                    {date.day || "—"}
+                  </span>
                 </div>
-              </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl font-bold truncate text-[#1e3a4c]">{event.name}</h3>
+                  <p className="text-slate-500 text-sm">{event.location || "Wales"}</p>
+                </div>
+                <span className="hidden sm:block text-slate-500 text-sm">
+                   {event.type || "Event"}
+                </span>
+                <ChevronRight className="text-slate-400 h-6 w-6" />
+              </Link>
             );
           })}
-        </div>
-
-        {/* View All Link */}
-        <div className="mt-8 text-center">
-          <Link
-            href="/events"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#1e3a4c] text-white font-semibold rounded-full hover:bg-[#152a38] transition-colors"
-          >
-            View All Events
-          </Link>
         </div>
       </div>
     </section>

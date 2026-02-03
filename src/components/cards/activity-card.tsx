@@ -23,6 +23,7 @@ interface ActivityCardProps {
   } | null;
   image?: string;
   variant?: "default" | "compact" | "horizontal";
+  hideOperator?: boolean;
 }
 
 // Placeholder images by activity type
@@ -37,6 +38,7 @@ export function ActivityCard({
   operator,
   image,
   variant = "default",
+  hideOperator = false,
 }: ActivityCardProps) {
   const imageUrl = image || placeholderImages.default;
 
@@ -126,7 +128,7 @@ export function ActivityCard({
           {activity.name}
         </h3>
 
-        {operator && (
+        {operator && !hideOperator && (
           <p className="text-sm text-gray-500 mb-1 flex items-center gap-1">
             {operator.name}
             {operator.googleRating && (

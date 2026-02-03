@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mountain, Facebook, Instagram, Twitter } from "lucide-react";
+import { Mountain, Facebook, Instagram, Twitter, Camera, Mail, Globe } from "lucide-react";
 
 const footerLinks = {
   destinations: [
@@ -7,65 +7,61 @@ const footerLinks = {
     { href: "/pembrokeshire", label: "Pembrokeshire" },
     { href: "/brecon-beacons", label: "Brecon Beacons" },
     { href: "/anglesey", label: "Anglesey" },
-    { href: "/gower", label: "Gower" },
   ],
   activities: [
-    { href: "/activities/hiking", label: "Hiking & Walking" },
+    { href: "/activities/hiking", label: "Hiking" },
     { href: "/activities/coasteering", label: "Coasteering" },
-    { href: "/activities/surfing", label: "Surfing" },
     { href: "/activities/mountain-biking", label: "Mountain Biking" },
     { href: "/activities/kayaking", label: "Kayaking" },
   ],
   support: [
     { href: "/help", label: "Help Center" },
     { href: "/contact", label: "Contact Us" },
-    { href: "/booking-terms", label: "Booking Terms" },
     { href: "/privacy", label: "Privacy Policy" },
-    { href: "/sitemap", label: "Sitemap" },
+    { href: "/terms", label: "Terms of Service" },
   ],
-  about: [
-    { href: "/about", label: "Our Story" },
-    { href: "/sustainable", label: "Sustainable Tourism" },
+  company: [
+    { href: "/about", label: "About Us" },
     { href: "/careers", label: "Careers" },
-    { href: "/press", label: "Press" },
     { href: "/partners", label: "Partners" },
+    { href: "/press", label: "Press" },
   ],
 };
 
 export function Footer() {
   return (
-    <footer className="bg-[#1e3a4c] text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+    <footer className="bg-white pt-12 sm:pt-16 pb-8 border-t border-slate-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
-          <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <Mountain className="h-8 w-8 text-white" />
-              <span className="font-bold text-xl">Adventure Wales</span>
-            </Link>
-            <p className="text-gray-400 text-sm mb-4">
-              Connecting you with the best outdoor experiences Wales has to offer. Locally curated, sustainably minded.
+          <div className="col-span-2 sm:col-span-3 lg:col-span-1">
+            <div className="flex items-center gap-2 mb-4">
+              <Mountain className="h-6 w-6 text-[#1e3a4c]" />
+              <span className="text-lg font-bold text-[#1e3a4c]">Adventure Wales</span>
+            </div>
+            <p className="text-slate-500 text-sm mb-4">
+              Connecting you with the best outdoor experiences Wales has to offer.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook className="h-5 w-5" />
+              <a href="#" className="text-slate-500 hover:text-[#1e3a4c] transition-colors">
+                <Globe className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram className="h-5 w-5" />
+              <a href="#" className="text-slate-500 hover:text-[#1e3a4c] transition-colors">
+                <Camera className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="#" className="text-slate-500 hover:text-[#1e3a4c] transition-colors">
+                <Mail className="h-5 w-5" />
               </a>
             </div>
           </div>
 
           {/* Destinations */}
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-wider mb-4">Destinations</h3>
-            <ul className="space-y-2">
+            <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[#1e3a4c]">Destinations</h3>
+            <ul className="space-y-3 text-sm text-slate-500">
               {footerLinks.destinations.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-gray-400 text-sm hover:text-white transition-colors">
+                  <Link href={link.href} className="hover:text-[#1e3a4c] transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -75,11 +71,11 @@ export function Footer() {
 
           {/* Activities */}
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-wider mb-4">Activities</h3>
-            <ul className="space-y-2">
+            <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[#1e3a4c]">Activities</h3>
+            <ul className="space-y-3 text-sm text-slate-500">
               {footerLinks.activities.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-gray-400 text-sm hover:text-white transition-colors">
+                  <Link href={link.href} className="hover:text-[#1e3a4c] transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -89,11 +85,11 @@ export function Footer() {
 
           {/* Support */}
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-wider mb-4">Support</h3>
-            <ul className="space-y-2">
+            <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[#1e3a4c]">Support</h3>
+            <ul className="space-y-3 text-sm text-slate-500">
               {footerLinks.support.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-gray-400 text-sm hover:text-white transition-colors">
+                  <Link href={link.href} className="hover:text-[#1e3a4c] transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -101,13 +97,13 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* About */}
+          {/* Company */}
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-wider mb-4">About</h3>
-            <ul className="space-y-2">
-              {footerLinks.about.map((link) => (
+            <h3 className="font-bold text-sm uppercase tracking-wider mb-4 text-[#1e3a4c]">Company</h3>
+            <ul className="space-y-3 text-sm text-slate-500">
+              {footerLinks.company.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-gray-400 text-sm hover:text-white transition-colors">
+                  <Link href={link.href} className="hover:text-[#1e3a4c] transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -117,16 +113,16 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-sm">© 2025 Adventure Wales. All rights reserved.</p>
-          <div className="flex gap-6 text-sm">
-            <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+        <div className="border-t border-slate-100 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+          <p>© 2026 Adventure Wales. All rights reserved.</p>
+          <div className="flex gap-6">
+            <Link href="/privacy" className="hover:text-[#1e3a4c] transition-colors">
               Privacy
             </Link>
-            <Link href="/terms" className="text-gray-400 hover:text-white transition-colors">
+            <Link href="/terms" className="hover:text-[#1e3a4c] transition-colors">
               Terms
             </Link>
-            <Link href="/cookies" className="text-gray-400 hover:text-white transition-colors">
+            <Link href="/cookies" className="hover:text-[#1e3a4c] transition-colors">
               Cookies
             </Link>
           </div>

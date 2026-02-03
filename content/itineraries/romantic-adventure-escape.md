@@ -1,91 +1,90 @@
+yaml
 ---
 slug: romantic-adventure-escape
 title: "Romantic Adventure Escape"
-tagline: "Spark your romance with Pembrokeshire's stunning coastline."
 region: pembrokeshire
-duration_days: 3
+days: 3
 difficulty: easy
-best_season: "April to October"
-price_estimate_from: 350
-price_estimate_to: 750
 ---
 
 # Romantic Adventure Escape
 
-Escape the ordinary and ignite your adventurous spirits with this 3-day Pembrokeshire getaway designed for couples. Imagine yourselves exploring hidden coves, paddling through crystal-clear waters, and basking in the glow of breathtaking sunsets. This itinerary balances thrilling activities with moments of quiet connection, creating unforgettable memories against the backdrop of Wales's stunning coastline. Get ready for an experience filled with laughter, shared challenges, and the undeniable magic of Pembrokeshire.
+## Who This Trip Is For
 
-## Day 1: Coastal Discovery
+This itinerary is designed for couples who enjoy gentle outdoor activities and stunning coastal scenery. If you're after white-knuckle thrills or hardcore hiking, this isn't it. Think relaxed exploration, short walks, and maybe a bit of paddling. Ideally, you're both reasonably fit and comfortable spending time outdoors, even if the weather isn't perfect. If either of you hates getting wet, bring extra layers (and maybe reconsider Pembrokeshire!).
 
-### Morning
-**Activity:** Coasteering Classic
-Embrace the thrill of the Pembrokeshire coast! This guided coasteering experience will have you scrambling over rocks, leaping into the sea, and exploring hidden caves. It's a fantastic way to bond and challenge yourselves while experiencing the raw beauty of the coastline.
+## The Route Logic
 
-**Travel:** 20 min drive to St Davids
+This route focuses on the St Davids area, minimizing driving and maximizing time enjoying the coast. Day 1 is about settling in and enjoying the immediate surroundings. Day 2 involves a boat trip for wildlife spotting (weather permitting). Day 3 offers a chance to get a bit more active with coasteering, finishing near St Davids for an easy departure. This order allows for flexibility, as the boat trip is the most weather-dependent activity and can be swapped around.
 
-### Afternoon
-**Activity:** Boat Trip - Ramsey Island
-After lunch, take a boat trip to Ramsey Island, a haven for wildlife. Keep an eye out for seals, seabirds, and maybe even dolphins. The stunning coastal scenery is the perfect backdrop for a romantic afternoon on the water.
+## Day 1: Settling In and Coastal Views
 
-### Evening
-**Stay:** Eco Lodge
-Unwind in a cozy Eco Lodge nestled in the Pembrokeshire countryside. Enjoy the tranquility and sustainable design of your accommodation, perfect for reconnecting with nature and each other.
+### The Plan
 
-**Dinner suggestion:** The Shed, Porthgain - a fantastic seafood restaurant with stunning harbor views.
+Today is about arriving, breathing in the sea air, and taking in the dramatic coastline around St Davids. We'll start with a scenic walk on the coast path, followed by a relaxing afternoon exploring the cathedral city.
 
----
+**Morning:** Coastal Walk from St Davids Head.
+- What to expect: A relatively easy walk along the Pembrokeshire Coast Path, with incredible views of the sea and rugged cliffs. Allow 2-3 hours for a circular route.
+- Suitability: Good for anyone with reasonable mobility. There are a few short, steep sections, but nothing too strenuous. If one of you struggles with walking, shorten the route or stick to the flatter sections closer to Whitesands Bay.
 
-## Day 2: Surf & Turf
+**Afternoon:** Explore St Davids Cathedral & City
+- St Davids is the smallest city in Britain and a beautiful place to explore. Walk around the Cathedral and the ruins of Bishop's Palace.
 
-### Morning
-**Activity:** Surfing Lesson
-Catch some waves together with a fun and exhilarating surfing lesson. Whether you're beginners or experienced surfers, the instructors will tailor the lesson to your skill level. Get ready to laugh, wipe out, and celebrate each other's successes!
+**Base for the night:** St Davids Area.
+- Why here: St Davids is a hub for outdoor activities and offers a good range of accommodation, plus it's close to the coast path and beaches.
 
-**Travel:** 10 min drive to Broad Haven South
+## Day 2: Wildlife Watching and Island Views
 
-### Afternoon
-**Activity:** Wild Swimming
-After drying off, experience the refreshing thrill of wild swimming in a secluded cove. Pack a picnic and enjoy the stunning scenery and crystal-clear waters. It's a perfect way to relax and reconnect after your surfing adventure.
+### The Plan
 
-### Evening
-**Stay:** Hotel
-Enjoy the convenience and comfort of a charming hotel in a coastal town. Relax and recharge after a day of activities.
+Today's highlight is a boat trip to Ramsey Island, a nature reserve teeming with seals, seabirds, and sometimes even dolphins or porpoises. The afternoon is free for exploring the beaches or relaxing.
 
-**Dinner suggestion:** Blas Restaurant, St Davids - Fine dining featuring locally sourced ingredients in a relaxed atmosphere.
+**Morning:** Boat Trip - Ramsey Island (booked in advance!)
+- What to expect: A 2-3 hour boat trip around Ramsey Island. You'll get close to the wildlife and learn about the island's history and ecology. Be prepared for sea spray and potentially choppy conditions.
+- Suitability: Fine for most people, but not recommended if you're prone to seasickness. Check the forecast beforehand, as trips are often cancelled in bad weather.
 
----
+**Afternoon:** Relax on Whitesands Bay or Porthclais Harbour
+- Whitesands is one of the best beaches in the area with a cafe. Porthclais is a quaint small harbour. Choose depending on the weather, and your desire to get sand between your toes!
 
-## Day 3: Kayak & Relax
+**Base for the night:** St Davids Area
+- Why here: Staying put simplifies logistics, especially if the weather changes and you need to adjust your plans.
 
-### Morning
-**Activity:** Sea Kayaking Safari
-Explore the coastline from a different perspective with a Sea Kayaking Safari. Paddle through hidden coves, spot wildlife, and enjoy the tranquility of the open water. This guided tour offers breathtaking views and a unique adventure.
+## Day 3: Coastal Adventure and Farewell Views
 
-**Travel:** 5 min walk to beach
+### The Plan
 
-### Afternoon
-**Activity:** Relax at the Beach
-Spend the afternoon relaxing on one of Pembrokeshire's beautiful beaches. Build sandcastles, soak up the sun, or take a leisurely stroll along the coast. It's the perfect way to end your romantic adventure.
+Today, we're getting a little more adventurous with a coasteering session. It's a fantastic way to experience the coast up close and personal, even if you're not a hardcore thrill-seeker.
 
-### Evening
-**Stay:** Campsite/Caravans
-Opt for a night of stargazing and camping under the stars. A campsite or caravan stay offers a rustic and romantic atmosphere, allowing you to connect with nature and each other.
+**Morning:** Coasteering with TYF Adventure (St Davids).
+- What to expect: Coasteering involves scrambling along rocks, swimming in the sea, and optional (small) jumps into the water. All equipment is provided, and the instructors are excellent at adapting the activity to different abilities.
+- Suitability: You need to be reasonably comfortable in the water and happy to wear a wetsuit. It's more fun if you both embrace the experience, but it's fine if one of you prefers to take things a little slower.
 
-**Dinner suggestion:** Cook your own BBQ - Enjoy a relaxed and romantic BBQ at your campsite with local Welsh produce.
+**Afternoon:** Drive home via the coast road.
+- The drive from St Davids along the A487, then A40 to Haverfordwest, has stunning coastal views. Allow extra time for stops at viewpoints. It's a much nicer drive than the quicker A40 inland.
 
----
+**Base for the night:** N/A - heading home.
 
-## Estimated Costs
+## Know Before You Go
 
-| Item | Cost |
-|------|------|
-| Activities | £175 |
-| Accommodation (3 nights) | £225 |
-| Food | £200 |
-| Transport | £50 |
-| **Total** | **£650** |
+### Weather Reality
 
-## Tips
+Pembrokeshire weather is notoriously unpredictable. Sunshine, rain, and wind can all occur in the same day. Ramsey Island boat trips are heavily weather-dependent, so check the forecast and book a flexible trip. Even on sunny days, the sea can be cold, so be prepared for that if you’re swimming or coasteering.
 
-- Book activities and accommodation in advance, especially during peak season.
-- Pack layers of clothing, as the weather in Pembrokeshire can be unpredictable.
-- Venture off the beaten path and explore the lesser-known coves and beaches for a more secluded experience.
+### Traffic & Timing
+
+The A40 into Pembrokeshire can get congested, especially during peak season (July-August) and bank holidays. Try to arrive early or late in the day to avoid the worst of it. Parking in St Davids can be tricky, especially in summer. Arrive early to find a spot. The road to Whitesands beach (B4583) is often closed when the carpark is full, park in St David's and walk (takes 30 minutes).
+
+### Fitness Check
+
+This is an "easy" itinerary, but that doesn't mean zero effort. The coastal walk on Day 1 involves some uphill sections. Coasteering requires a moderate level of fitness and comfort in the water. If either of you has mobility issues, adjust the walk accordingly and consider skipping coasteering.
+
+### Best Time of Year
+
+May, June, and September are generally the best months. The weather is often good, the crowds are smaller, and the wildlife is active. July and August are the busiest and most expensive. Avoid November to February, as many attractions are closed, and the weather can be harsh.
+
+## Cost Reality
+
+These prices are approximate, per person, and are just for activities. Accommodation, food, and travel aren't included.
+
+*   Ramsey Island Boat Trip: £45-£65
+*   Coasteering with TYF Adventure: £60

@@ -1,111 +1,98 @@
+yaml
 ---
 slug: multi-sport-challenge
 title: "Multi-Sport Challenge"
-tagline: "Push your limits with an epic South Wales adventure."
 region: south-wales
-duration_days: 4
+days: 4
 difficulty: difficult
-best_season: "May to September"
-price_estimate_from: 500
-price_estimate_to: 800
 ---
 
 # Multi-Sport Challenge
 
-This trip is designed for experienced adventurers seeking a true test of endurance and skill in the stunning landscapes of South Wales. Expect challenging terrain, rewarding views, and a serious sense of accomplishment. Prepare to conquer mountains, rivers, and trails, pushing your physical and mental boundaries. The highlights include coasteering, mountain biking, hiking, and a wild swim.
+## Who This Trip Is For
 
-## Day 1: Coastal Conqueror
+This trip is designed for adventurous souls aged 18-55 with a solid baseline fitness level. Think regular gym-goers or those who enjoy consistent outdoor activities. You should be comfortable with heights, water, and a full day of physical exertion. If you prefer leisurely strolls and afternoon tea, this isn't the adventure for you.
 
-### Morning
-**Activity:** Coasteering in Pembrokeshire
-Experience the thrill of navigating the Pembrokeshire coastline by swimming, scrambling, and jumping into the sea. Expect exhilarating jumps, hidden caves, and stunning coastal views. All safety equipment and instruction will be provided.
+## The Route Logic
 
-**Travel:** 1 hour 30 min drive to Pembrokeshire National Park
+This route is structured to build intensity over the first couple of days, allowing you to acclimatise before tackling the most challenging activities. We start inland to minimize weather dependency early on, then move towards the coast for sea-based adventures. Driving times are kept to a minimum each day, focusing on maximizing activity time.
 
-### Afternoon
-**Activity:** Coastal Hike
-After your aquatic adventure, trade your wetsuit for hiking boots and explore the iconic Pembrokeshire Coast Path. We'll tackle a challenging section offering panoramic ocean views and a glimpse of local wildlife.
+## Day 1: Brecon Beacons Hiking & Navigation
 
-### Evening
-**Stay:** Coastal Cottage near St. David's
-A charming, self-catering cottage offering stunning sea views and a cozy atmosphere. Perfect for relaxing after a day of adventure.
+### The Plan
+Today, we immerse ourselves in the heart of the Brecon Beacons, focusing on building your map-reading skills and getting your legs warmed up. This is intentionally less physically demanding than the coming days, but still a full day in the mountains.
 
-**Dinner suggestion:** The Bishops, St Davids - Locally sourced seafood and Welsh lamb dishes.
+**Morning:** Navigation hike to Pen y Fan
+- What to expect: A steady climb to the summit of Pen y Fan, the highest peak in South Wales. Expect crowds near the summit, especially on weekends.
+- Suitability: Experienced hikers will find this relatively easy. Novices will be challenged by the elevation gain and potential for changeable weather. Bring layers!
 
----
+**Afternoon:** Compass Skills Workshop
+- We'll be practicing advanced navigation skills near Storey Arms. Parking at Storey Arms gets *extremely* busy, especially on weekends and bank holidays. Arrive before 9am or after 3pm to have any chance of parking. Otherwise, park in Brecon and get the T4 bus.
 
-## Day 2: Mountain Mayhem
+**Base for the night:** Brecon
+- Why here: Brecon is a charming town with easy access to both Pen y Fan and the Usk Valley, setting you up nicely for Day 2.
 
-### Morning
-**Activity:** Mountain Biking in Afan Forest Park
-Tackle the world-class trails of Afan Forest Park. This is some of the best mountain biking in the UK. Expect steep climbs, technical descents, and adrenaline-pumping singletrack. Bike rental available locally.
+## Day 2: Gorge Walking Adventure
 
-**Travel:** 2 hour drive to Afan Forest Park
+### The Plan
+Day two is all about getting wet and wild! We're heading into one of the many gorges in the Brecon Beacons for a full day of scrambling, swimming, and waterfall jumps.
 
-### Afternoon
-**Activity:** Summit Hike of Pen y Fan
-Drive to the Brecon Beacons National Park and hike to the summit of Pen y Fan, the highest peak in South Wales. The views from the top are incredible, showcasing the rugged beauty of the surrounding landscape.
+**Morning:** Gorge Walking near Ystradfellte
+- What to expect: Be prepared for cold water, slippery rocks, and some challenging scrambles. You'll be swimming in deep pools and potentially jumping off small waterfalls (optional, of course!). A professional guide is absolutely essential.
+- Suitability: Those with a fear of heights or cold water should reconsider. Good upper body strength is beneficial for navigating some of the steeper sections.
 
-### Evening
-**Stay:** Brecon Beacons Bunkhouse
-A comfortable and budget-friendly bunkhouse located in the heart of the Brecon Beacons. Ideal for meeting fellow adventurers.
+**Afternoon:** Travel back to base
+- Dry off and relax after a physically demanding day! You'll be ready for an early night.
 
-**Dinner suggestion:** The Three Horseshoes, Groesffordd - Traditional pub fare with a great selection of local ales.
+**Base for the night:** Brecon
+- Why here: Easy access to all of our canyoning and gorge locations. Also, there is a really good chip shop here.
 
----
+## Day 3: Coasteering on the Gower Peninsula
 
-## Day 3: River Runner
+### The Plan
+We're heading to the coast today to experience the adrenaline-pumping activity of coasteering – traversing the coastline by swimming, scrambling, and jumping.
 
-### Morning
-**Activity:** Gorge Walking in the Brecon Beacons
-Plunge into the waterfalls and explore the hidden gorges of the Brecon Beacons. Scramble over rocks, swim in pools, and descend waterfalls under the guidance of experienced instructors.
+**Morning:** Coasteering session on the Gower Peninsula
+- What to expect: Expect exhilarating jumps into the sea, navigating rocky outcrops, and exploring hidden coves. Wetsuits will be provided, but the water can still be chilly.
+- Suitability: Strong swimming ability is essential. A good head for heights is also important.
 
-**Travel:** 30 min drive to gorge walking location.
+**Afternoon:** Coastal walk and relaxation
+- After coasteering, take a stroll along one of Gower's many beautiful beaches, like Rhossili Bay, or relax in a local pub.
+- Watch out for the tide if walking to Worm's Head in Rhossili.
 
-### Afternoon
-**Activity:** Kayaking on the River Wye
-Enjoy a relaxing afternoon kayaking down the scenic River Wye. Take in the picturesque countryside and spot local wildlife as you paddle downstream.
+**Base for the night:** Mumbles
+- Why here: Mumbles is a charming seaside town with a lively atmosphere and easy access to Gower's beaches and coastal paths.
 
-### Evening
-**Stay:** Glamping Pod near Hay-on-Wye
-Enjoy a touch of luxury with a glamping pod offering comfortable accommodation and stunning views of the Wye Valley.
+## Day 4: Sea Kayaking and Wildlife Watching
 
-**Dinner suggestion:** The Old Electric Shop, Hay-on-Wye - Wood-fired pizzas and a vibrant atmosphere.
+### The Plan
+Our final day is a more relaxed but equally rewarding adventure – exploring the coastline by sea kayak, searching for seals, seabirds, and other marine life.
 
----
+**Morning:** Sea Kayaking tour from Mumbles
+- What to expect: A gentle paddle along the coast, exploring hidden coves and bays. Keep an eye out for seals basking on the rocks!
+- Suitability: No prior kayaking experience is necessary, but a reasonable level of fitness is required. Those prone to seasickness should take precautions.
 
-## Day 4: Waterfall Wanderer & Farewell Feast
+**Afternoon:** Travel home
+- Reflect on your multi-sport adventure! Head back home or extend your stay to explore more of South Wales.
 
-### Morning
-**Activity:** Waterfall Hike in Waterfall Country
-Explore the magical "Waterfall Country" in the Brecon Beacons, home to some of the most spectacular waterfalls in Wales. Hike through ancient woodlands and discover hidden cascades.
+**Base for the night:** Your own bed!
 
-**Travel:** 45 min drive to Waterfall Country.
+## Know Before You Go
 
-### Afternoon
-**Activity:** Wild Swimming in a Waterfall Pool
-Take a refreshing dip in the crystal-clear waters of a waterfall pool. This is a chance to connect with nature and experience the beauty of South Wales from a unique perspective. (Optional, weather dependent).
+### Weather Reality
+South Wales weather can be unpredictable. Be prepared for rain, even in summer. The Brecon Beacons are particularly prone to sudden changes in weather. Coastal areas can be windy and exposed. Gorge walking is heavily dependent on water levels. If it's rained a lot in the preceding days, it may be too dangerous.
 
-### Evening
-**Stay:** Departure
-Sadly, your adventure ends here!
+### Traffic & Timing
+Traffic can be heavy on the M4, especially around Cardiff and Swansea. Allow extra time for travel, particularly on weekends and bank holidays. Parking in popular areas like Pen y Fan and Gower beaches can be challenging – arrive early or consider using public transport.
 
-**Dinner suggestion:** The Hardwick, Abergavenny - A Michelin-recommended restaurant offering modern Welsh cuisine. (Optional, depending on departure time).
+### Fitness Check
+This trip is rated "difficult" because it involves several physically demanding activities. You should be comfortable with long days of walking, scrambling, swimming, and paddling. A good level of cardiovascular fitness and upper body strength will be beneficial.
 
----
+### Best Time of Year
+May to September offers the best weather conditions for this trip. Water temperatures are warmer in the summer months, making gorge walking and coasteering more enjoyable. Avoid the school holidays (late July to early September) if you want to avoid crowds.
 
-## Estimated Costs
-
-| Item | Cost |
-|------|------|
-| Activities | £250 |
-| Accommodation (3 nights) | £150 |
-| Food | £250 |
-| Transport | £150 |
-| **Total** | **£800** |
-
-## Tips
-
-- Book activities and accommodation well in advance, especially during peak season.
-- Pack for all types of weather, including waterproofs, layers, and sturdy footwear.
-- Learn a few basic Welsh phrases to enhance your experience and connect with the local culture (bore da = good morning, diolch = thank you).
+## Cost Reality
+*   Guided gorge walking: £70-£90 per person
+*   Coasteering session: £50-£70 per person
+*   Sea kayaking tour: £40-£60 per person
+*   Brecon Beacons National Park parking charges: £5 per day (variable)

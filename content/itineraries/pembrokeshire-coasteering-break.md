@@ -1,72 +1,79 @@
+yaml
 ---
 slug: pembrokeshire-coasteering-break
 title: "Pembrokeshire Coasteering Break"
-tagline: "Leap into adventure: explore Pembrokeshire's coastline like never before!"
 region: pembrokeshire
-duration_days: 2
+days: 2
 difficulty: moderate
-best_season: "April to October"
-price_estimate_from: 250
-price_estimate_to: 400
 ---
 
 # Pembrokeshire Coasteering Break
 
-This Pembrokeshire Coasteering Break is perfect for thrill-seekers and adventure lovers who want to experience the raw beauty of the Welsh coast. Get ready to scramble, swim, and leap your way along dramatic cliffs, explore hidden coves, and discover the secrets of the sea. Expect exhilarating jumps, stunning scenery, and memories that will last a lifetime.
+## Who This Trip Is For
 
-## Day 1: Coastal Immersion
+This trip is perfect for adventurous families with kids aged 8+ who are comfortable in the water and enjoy a physical challenge. You'll need a decent level of swimming ability and a willingness to try new things. If you prefer gentle strolls to adrenaline rushes, or if anyone in your group is easily cold or gets seasick, this might not be the best fit.
 
-### Morning
-**Activity:** Coasteering Classic
-Dive straight into the heart of the action with a classic coasteering session. Expect exhilarating jumps, swims through crystal-clear waters, and explorations of hidden gullies. Get ready for an adrenaline rush as you navigate the rugged coastline.
+## The Route Logic
 
-**Travel:** 15 min drive to St Davids.
+This itinerary focuses on the north Pembrokeshire coast, specifically around St. Davids, as it offers the most concentrated selection of adventure activities. We'll start with coasteering to get the heart pumping, then offer a calmer option on day two. The order is designed to build confidence and let you adjust your activity level for the second day depending on how you feel. Be aware that travelling between locations in Pembrokeshire can take longer than expected due to narrow roads.
 
-### Afternoon
-**Activity:** Boat Trip - Ramsey Island
-Take a break from the physical exertion and enjoy a wildlife cruise around Ramsey Island. Spot seals, seabirds (including puffins during nesting season), and maybe even dolphins! A relaxing way to appreciate the coastal environment from a different perspective.
+## Day 1: Cliff Jumping & Coastal Exploration
 
-### Evening
-**Stay:** Eco Lodge
-Enjoy a comfortable and sustainable stay at a local Eco Lodge. Relax after a day of adventure, knowing you're minimizing your environmental impact.
+### The Plan
 
-**Dinner suggestion:** The Bishops, St Davids - Gastro pub fare with locally sourced ingredients.
+Today is all about getting wet and wild! We'll start with a coasteering session near St Davids to explore the coastline from a unique perspective. The afternoon is free for exploring St Davids itself.
 
----
+**Morning:** Coasteering Classic at St. Davids (with TYF Adventure)
+- What to expect: Prepare for scrambling over rocks, swimming in the sea, and jumping off cliffs (optional, of course!). The water will be cold, even in summer, so a good wetsuit is essential (provided by TYF).
+- Suitability: Kids will love this, but they need to be confident swimmers and not afraid of a bit of a shock from the cold water. Adults need to be reasonably fit to clamber over slippery rocks. People with knee problems might struggle.
 
-## Day 2: Exploring the Waves
+**Afternoon:** Explore St Davids
+- Practical details: St Davids is the UK's smallest city. It's a charming place to wander around, visit St Davids Cathedral, or grab an ice cream. Parking in St Davids can be a nightmare in peak season. Use the Park & Ride from Oriel y Parc National Park Visitor Centre to avoid circling for hours.
 
-### Morning
-**Activity:** Surfing Lesson
-Learn to ride the waves with a professional surfing lesson. Pembrokeshire is known for its fantastic surf beaches, and this is the perfect opportunity to catch your first wave. All equipment provided.
+**Base for the night:** St Davids area
+- Why here: St Davids is a central location for accessing many of the adventure activities and has a good range of accommodation options. Staying here minimizes driving time on the first and second day.
 
-**Travel:** 20 min drive to Whitesands Bay
+## Day 2: Paddles & Puffins (Optional)
 
-### Afternoon
-**Activity:** Sea Kayaking Safari
-Explore the coastline from a different angle with a sea kayaking safari. Paddle along dramatic cliffs, discover hidden coves, and enjoy the peace and tranquility of the open water. Keep an eye out for wildlife such as seals and seabirds.
+### The Plan
 
-### Evening
-**Stay:** Campsite
-Embrace the outdoors and enjoy a night under the stars at a local campsite. Relax by the campfire and swap stories about your coasteering adventures.
+Today offers a choice between a relaxing sea kayaking trip or a wildlife boat tour. Opt for the kayaking if you enjoyed the water activities yesterday, or choose the boat tour for a more relaxed pace and a chance to see some amazing wildlife.
 
-**Dinner suggestion:** Cook your own BBQ at the campsite. Local butcher in St Davids.
+**Morning:** Choose Your Adventure:
+- **Option 1:** Sea Kayaking Safari (with TYF Adventure) from St Davids
+    - What to expect: A guided kayak tour along the Pembrokeshire coast, exploring hidden coves and sea caves. You'll need to paddle for a few hours, so some upper body strength is useful.
+    - Suitability: Suitable for families and beginners, but requires a basic level of fitness. If the weather is rough, this can be hard work.
+- **Option 2:** Boat Trip - Ramsey Island (with Preseli Venture or similar) from St Justinians
+    - What to expect: A boat trip to Ramsey Island to see seals, seabirds (including puffins in season - May-July), and stunning coastal scenery. The boats can be bouncy, so be prepared if you're prone to seasickness.
+    - Suitability: Excellent for families with younger children and those who prefer a more relaxed experience.
 
----
+**Afternoon:** Coastal Walk
+- Practical details: Whichever activity you choose in the morning, take some time to explore the Pembrokeshire Coast Path in the afternoon. There are stunning walks in both the St Davids and St Justinians areas. Remember to check tide times if you're planning to walk on any beaches.
 
-## Estimated Costs
+**Base for the night:** Consider staying another night in St Davids, or move south towards Tenby if you plan to explore that area next.
 
-| Item | Cost |
-|------|------|
-| Activities | £120 |
-| Accommodation (1 nights - Camping) | £20 |
-| Accommodation (1 nights - Eco Lodge) | £80 |
-| Food | £80 |
-| Transport | £50 |
-| **Total** | **£350** |
+## Know Before You Go
 
-## Tips
+### Weather Reality
 
-- Book your activities and accommodation in advance, especially during peak season, to avoid disappointment.
-- Pack layers of clothing, including a waterproof jacket, as the weather in Pembrokeshire can be unpredictable.
-- Ask the locals for their favorite hidden gems - they always know the best spots!
+Pembrokeshire weather is notoriously unpredictable. Sunshine, rain, and wind can all occur within the same hour. The coast is exposed, so be prepared for strong winds, especially in spring and autumn. Sea kayaking and boat trips are heavily weather-dependent; always check the forecast and be prepared for cancellations. Rain doesn't necessarily stop coasteering, but high winds or big swells will.
+
+### Traffic & Timing
+
+Traffic on the A487, the main road through Pembrokeshire, can be heavy in peak season (July/August and school holidays). Allow extra time for travel, especially on Fridays and Saturdays. Parking at popular coastal spots like St Davids and St Justinians is limited, so arrive early or use park-and-ride services.
+
+### Fitness Check
+
+"Moderate" difficulty here means you need to be reasonably fit. Coasteering involves swimming, scrambling over rocks, and potentially jumping from heights. Sea kayaking requires upper body strength and stamina. If you're not used to physical activity, start with shorter, easier activities and build up gradually.
+
+### Best Time of Year
+
+The best time to visit Pembrokeshire for outdoor activities is late spring (May/June) or early autumn (September/October). The weather is often milder than in the summer peak, and the crowds are smaller. July and August can be glorious, but expect higher prices and more traffic. Avoid winter (November-February) as many activities are closed, and the weather can be harsh.
+
+## Cost Reality
+
+*   **Coasteering:** £50-£75 per person
+*   **Sea Kayaking:** £50-£95 per person
+*   **Boat Trip to Ramsey Island:** £45-£65 per person
+
+These prices are approximate and depend on the operator and the duration of the activity. Remember to factor in the cost of travel, parking, and any equipment hire.

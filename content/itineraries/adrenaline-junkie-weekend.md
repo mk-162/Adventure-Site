@@ -1,71 +1,77 @@
+yaml
 ---
 slug: adrenaline-junkie-weekend
 title: "Adrenaline Junkie Weekend"
-tagline: "Conquer Snowdonia: Two days of heart-pounding thrills!"
 region: snowdonia
-duration_days: 2
+days: 2
 difficulty: difficult
-best_season: "April to October"
-price_estimate_from: 350
-price_estimate_to: 650
 ---
 
 # Adrenaline Junkie Weekend
 
-This weekend is for the fearless, the adventure-seekers, and those who laugh in the face of gravity. Expect two days packed with extreme activities that will push your limits and leave you buzzing. We're talking zip lines, scrambling up exposed ridges, and bombing down mountain bike trails – all set against the stunning backdrop of Snowdonia. Get ready for an unforgettable rush.
+## Who This Trip Is For
+
+This weekend is designed for thrill-seekers aged 16+ who are in good physical condition and have a head for heights. You should be comfortable with exposure (i.e., steep drops!) and ready to push your limits. If you're looking for a relaxing getaway or have a serious fear of heights, this probably isn't the trip for you. Families with young children should look elsewhere.
+
+## The Route Logic
+
+This itinerary prioritizes maximum adrenaline with minimal travel time between activities. Day 1 focuses on the slate quarry region for speed and heights, while Day 2 hits the trail for exposure and downhill thrills. We're concentrating activities geographically to cut down on driving, as Snowdonia's roads can be slow and winding, especially during peak season. Book activities in advance to avoid disappointment, particularly during school holidays and weekends.
 
 ## Day 1: Heights and Speeds
 
-### Morning
-**Activity:** Velocity 2 Zip Line
-Experience Europe's fastest zip line! Soar over Penrhyn Quarry at speeds of up to 100mph, taking in breathtaking views while your adrenaline surges. Book in advance, and prepare for a serious thrill!
+### The Plan
 
-**Travel:** 30 min drive to Antur Stiniog
+Day 1 is all about getting your heart pumping with high-octane activities. We start with the fastest zip line in the world, followed by an afternoon toboggan run. This combination gives you a mix of pure adrenaline and controlled speed.
 
-### Afternoon
-**Activity:** Downhill MTB - Antur Stiniog
-Hit the trails at Antur Stiniog for some serious downhill mountain biking. With uplift service, you can maximise your time on the exhilarating runs. Choose a trail suited to your ability, or challenge yourself with a black run if you're feeling brave!
+**Morning:** Velocity 2 Zip Line at Zip World Penrhyn Quarry
+- What to expect: Prepare for an intense, minute-long descent at speeds exceeding 100 mph, suspended hundreds of feet above the old quarry. It's loud, it's fast, and it's absolutely exhilarating.
+- Suitability: This is not for the faint of heart. Those with a fear of heights will struggle. People prone to motion sickness might also want to reconsider. However, if you're looking for a unique rush, this is it.
 
-### Evening
-**Stay:** Bunkhouse
-Cosy bunkhouse accommodation to rest up and recharge after your day of adventures. A practical and social choice.
+**Afternoon:** Zip World Fforest Coaster at Zip World Fforest
+- What to expect: After the pure terror of Velocity, this toboggan run offers a more controlled, but still fast, experience through the forest. You control the speed, so you can dial it up or down as needed.
+- Suitability: While technically family-friendly, maximizing the thrill of the Coaster requires some commitment to speed! Younger kids might find it a bit tame, but adventurous teens and adults will love it.
 
-**Dinner suggestion:** Pete's Eats, Llanberis - Legendary mountaineering cafe serving hearty portions.
+**Base for the night:** Betws-y-Coed area
+- Why here: Betws-y-Coed is centrally located and provides easy access to Coed y Brenin for mountain biking on Day 2. It's also a pretty town with decent pubs to relax in after a day of adrenaline.
 
----
+## Day 2: Mountain & Machine
 
-## Day 2: Scrambles and Depths
+### The Plan
 
-### Morning
-**Activity:** Crib Goch Guided Walk
-Today, conquer Crib Goch, one of the most iconic and challenging scrambles in the UK. With a guided walk, you'll be safe, informed and have the best chance of success. Enjoy spectacular views and the ultimate sense of accomplishment.
+Day 2 takes you into the mountains for a dose of exposure and then lets you rip down them on a mountain bike. It's a test of nerve and skill.
 
-**Travel:** 15 min drive to Bounce Below
+**Morning:** Crib Goch Guided Walk
+- What to expect: This is NOT a hike; it's a scramble along a knife-edge ridge with significant exposure on both sides. It's physically demanding, requires good balance and a cool head, and is only safe in good weather. A guide is essential if you're not experienced with scrambling.
+- Suitability: Only suitable for experienced hikers/scramblers with excellent fitness and a strong head for heights. Do not attempt this in wet or windy conditions. This is serious mountain terrain.
 
-### Afternoon
-**Activity:** Bounce Below
-After a challenging morning, its time for some underground fun! Descend into a disused mine and bounce on giant trampolines suspended within vast caverns. A unique and quirky experience to end the day on a high.
+**Afternoon:** Downhill MTB - Antur Stiniog
+- What to expect: Antur Stiniog offers uplift service to the top of several downhill trails graded from blue to black. Expect steep, rocky descents, jumps, and berms. You'll need a decent full-suspension mountain bike (hire available) and full protective gear.
+- Suitability: If you're not comfortable riding black trails, stick to the blues and reds. This is proper downhill mountain biking, not a leisurely cycle in the woods.
 
-### Evening
-**Stay:** Bunkhouse
-Back to the bunkhouse to rest your weary head.
+## Know Before You Go
 
-**Dinner suggestion:** The Heights, Llanberis - Pizza and a pint, perfect for reflecting on your adrenaline filled weekend!
+### Weather Reality
 
----
+Snowdonia's weather is notoriously unpredictable. Crib Goch is completely weather-dependent and should not be attempted in rain, wind, or low visibility. Even seemingly sunny days can turn quickly in the mountains. Check the mountain forecast (MWIS) before you go and be prepared to change your plans.
 
-## Estimated Costs
+### Traffic & Timing
 
-| Item | Cost |
-|------|------|
-| Activities | £230 |
-| Accommodation (2 nights) | £80 |
-| Food | £100 |
-| Transport | £40 |
-| **Total** | **£450** |
+Traffic can be a nightmare, especially on weekends and during school holidays. The A5 and A470 are the main arteries and get heavily congested. Allow plenty of extra time for travel. For Crib Goch, arrive early at Pen-y-Pass car park (before 8 AM if possible) to secure a space. Parking fines are common. For Antur Stiniog, book your uplift tickets well in advance.
 
-## Tips
+### Fitness Check
 
-- Book your activities well in advance, especially during peak season, to avoid disappointment.
-- Pack for all weather conditions – Snowdonia is notorious for its unpredictable weather! Layers are key.
-- Chat to locals for tips on hidden gems and the best places to eat. They know the area best!
+This itinerary is physically demanding. You need a good level of fitness and stamina to complete the activities. Crib Goch requires significant uphill hiking and scrambling. Downhill mountain biking requires upper body strength and good bike handling skills. Be honest about your abilities and don't overestimate yourself.
+
+### Best Time of Year
+
+May to September offers the best chance of good weather. However, even in summer, be prepared for rain. Avoid school holidays if you can, as the area will be crowded and prices higher. September is often a good bet, with fewer crowds and milder weather.
+
+## Cost Reality
+
+*   Velocity 2: £89-£109
+*   Fforest Coaster: £25-£35
+*   Crib Goch Guided Walk: £55-£75
+*   Antur Stiniog Uplift: £35-£45
+*   Bike Hire (Antur Stiniog): £50-£80 (Full Day)
+
+Total: Roughly £254 - £344 (excluding bike hire if needed). Remember to factor in parking, fuel, and insurance, especially for the downhill biking.

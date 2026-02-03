@@ -9,14 +9,13 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
         tailwind.config = {
-            darkMode: "class",
             theme: {
                 extend: {
                     colors: {
                         "primary": "#1e3a4c",
                         "accent": "#f97316",
                         "background-light": "#f8fafc",
-                        "background-dark": "#0f172a",
+                        "surface-light": "#ffffff",
                         "text-dark": "#0f172a",
                         "text-muted": "#64748b",
                     },
@@ -29,21 +28,9 @@
         }
     </script>
     <style>
-        /* Hide scrollbars but allow scrolling */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-        /* Mobile layout shown by default, hidden on large screens */
-        .mobile-layout { display: block; }
-        .desktop-layout { display: none; }
-
-        /* Switch to desktop layout on lg breakpoint (1024px) */
-        @media (min-width: 1024px) {
-            .mobile-layout { display: none; }
-            .desktop-layout { display: block; }
-        }
-
-        /* Dev info bar */
         .dev-bar {
             position: fixed;
             bottom: 0;
@@ -69,403 +56,400 @@
             border-radius: 4px;
             font-weight: 600;
         }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: #1e3a4c;
+            cursor: pointer;
+            margin-top: -6px;
+        }
+        input[type="range"]::-webkit-slider-runnable-track {
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+        }
     </style>
 </head>
-<body class="bg-background-light font-display text-text-dark antialiased">
+<body class="bg-background-light font-display text-text-dark antialiased pb-12">
 
-    <!-- MOBILE LAYOUT (< 1024px) -->
-    <div class="mobile-layout">
-        
-<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden max-w-md mx-auto shadow-2xl bg-background-light dark:bg-background-dark">
-<!-- Top App Bar -->
-<header class="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-black/5 dark:border-white/5 p-4 pb-2 transition-colors">
-<div class="flex items-center justify-between">
-<button class="text-text-main-light dark:text-text-main-dark flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
-<span class="material-symbols-outlined text-[24px]">arrow_back</span>
-</button>
-<h2 class="text-text-main-light dark:text-text-main-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Plan Your Adventure</h2>
-<div class="flex w-10 items-center justify-end">
-<button class="text-text-sub-light dark:text-text-sub-dark font-bold text-sm hover:text-primary transition-colors">Help</button>
-</div>
-</div>
-<!-- Stepper -->
-<div class="mt-4 flex w-full flex-row items-center justify-between px-2">
-<div class="flex flex-col items-center gap-1 w-1/4">
-<div class="h-8 w-8 rounded-full bg-primary flex items-center justify-center text-background-dark font-bold text-sm shadow-lg shadow-primary/30">1</div>
-<span class="text-[10px] font-bold text-text-main-light dark:text-text-main-dark uppercase tracking-wider">Where</span>
-</div>
-<div class="h-[2px] flex-1 bg-primary/30 rounded-full mx-1"></div>
-<div class="flex flex-col items-center gap-1 w-1/4 opacity-50">
-<div class="h-8 w-8 rounded-full bg-surface-light dark:bg-surface-dark border-2 border-primary/20 flex items-center justify-center text-text-sub-light dark:text-text-sub-dark font-bold text-sm">2</div>
-<span class="text-[10px] font-medium text-text-sub-light dark:text-text-sub-dark uppercase tracking-wider">When</span>
-</div>
-<div class="h-[2px] flex-1 bg-black/5 dark:bg-white/5 rounded-full mx-1"></div>
-<div class="flex flex-col items-center gap-1 w-1/4 opacity-50">
-<div class="h-8 w-8 rounded-full bg-surface-light dark:bg-surface-dark border-2 border-black/10 dark:border-white/10 flex items-center justify-center text-text-sub-light dark:text-text-sub-dark font-bold text-sm">3</div>
-<span class="text-[10px] font-medium text-text-sub-light dark:text-text-sub-dark uppercase tracking-wider">What</span>
-</div>
-<div class="h-[2px] flex-1 bg-black/5 dark:bg-white/5 rounded-full mx-1"></div>
-<div class="flex flex-col items-center gap-1 w-1/4 opacity-50">
-<div class="h-8 w-8 rounded-full bg-surface-light dark:bg-surface-dark border-2 border-black/10 dark:border-white/10 flex items-center justify-center text-text-sub-light dark:text-text-sub-dark font-bold text-sm">4</div>
-<span class="text-[10px] font-medium text-text-sub-light dark:text-text-sub-dark uppercase tracking-wider">Review</span>
-</div>
-</div>
-</header>
-<!-- Main Content Scroll Area -->
-<main class="flex-1 overflow-y-auto pb-24">
-<!-- Step 1: Where -->
-<section class="animate-fade-in">
-<div class="px-4 pt-6 pb-2">
-<h3 class="text-text-main-light dark:text-text-main-dark tracking-tight text-2xl font-bold leading-tight">Choose your regions</h3>
-<p class="text-text-sub-light dark:text-text-sub-dark text-sm mt-1">Select multiple regions to build your route.</p>
-</div>
-<div class="grid grid-cols-2 gap-3 p-4">
-<!-- Card 1 (Selected) -->
-<div class="group relative flex flex-col gap-2 p-2 rounded-2xl bg-surface-light dark:bg-surface-dark shadow-sm border-2 border-primary cursor-pointer transition-all hover:shadow-md">
-<div class="absolute top-4 right-4 z-10 bg-primary text-background-dark rounded-full p-1 shadow-lg transform scale-100 transition-transform">
-<span class="material-symbols-outlined text-[16px] font-bold block">check</span>
-</div>
-<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-xl overflow-hidden relative" data-alt="Mist covered mountains in Snowdonia" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCySGWaKWJRSE-G-MWATyd8A3XC-5WSNzq4jv7dD2selGQZNwcXd7MxlglOtnrbM-XQGkQjnm8xWQVEN1fFkzVaNeppOgKTCC65TMYAr7X2pVeBkfXj9N3zFEZijR4K5521mLYUEa2kMvLLWDOP9q-hwhK2DJHJrjs5ur1aY6cm9bm6MBDPYEGfQ-OTraNhap7_ONlBinm9_Ntb8uR2PC6cEm2zmh2NZ4Y-LopPKIDGEaRHhNvHl8aKRTP0hKHzhaYBcjEBohQPq_Y");'>
-<div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
-</div>
-<div class="px-1 pb-1">
-<p class="text-text-main-light dark:text-text-main-dark text-sm font-bold leading-tight">Snowdonia</p>
-<p class="text-text-sub-light dark:text-text-sub-dark text-xs font-medium mt-0.5">Mountains &amp; Lakes</p>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="group relative flex flex-col gap-2 p-2 rounded-2xl bg-surface-light dark:bg-surface-dark shadow-sm border-2 border-transparent hover:border-primary/50 cursor-pointer transition-all hover:shadow-md">
-<div class="absolute top-4 right-4 z-10 bg-black/20 dark:bg-white/20 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity">
-<span class="material-symbols-outlined text-[16px] font-bold block">add</span>
-</div>
-<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-xl overflow-hidden relative" data-alt="Rugged coastline of Pembrokeshire" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDIMo8juOf63tTe2QNLRYSigJBxOX199ciR6ZkqC5UFdBfqZ8dDmRNYKPSGM7nj9THBKS3P19FZ-ZM1gFuhePGHsWrTx1pVN6Sir7QumBsO7GcPckcZ9vm-T4O0MLU4WK27-G6fmopET0JaWjt5hNC-1OPM0s-VohphdRpqKaYBfSQaSW-AJDDcDvL1DQuuQoeY_NyaTtU3gw2LxsQ1Z9Rv6f0rCnnrECHGdOidA2McfDqnPQNLXIFQPAzyDwC51WL-uQA6yWUNqsg");'>
-<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
-</div>
-<div class="px-1 pb-1">
-<p class="text-text-main-light dark:text-text-main-dark text-sm font-bold leading-tight">Pembrokeshire</p>
-<p class="text-text-sub-light dark:text-text-sub-dark text-xs font-medium mt-0.5">Coastal Park</p>
-</div>
-</div>
-<!-- Card 3 (Selected) -->
-<div class="group relative flex flex-col gap-2 p-2 rounded-2xl bg-surface-light dark:bg-surface-dark shadow-sm border-2 border-primary cursor-pointer transition-all hover:shadow-md">
-<div class="absolute top-4 right-4 z-10 bg-primary text-background-dark rounded-full p-1 shadow-lg transform scale-100 transition-transform">
-<span class="material-symbols-outlined text-[16px] font-bold block">check</span>
-</div>
-<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-xl overflow-hidden relative" data-alt="Green hills and waterfalls in Brecon Beacons" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBhCaoH59BZcrEX1asiJcT2ZCSOUY3d9Y2_178LfifLdHBCiWiTsND2jFGbz_ULNSZKxxrdTEQ53Wsq5X2a1J7yNLoqDSItkk74qRc5xQ9cxGdtLWJho5oFS94sFxRpOGEjIhuoe6PbUXxlSKXfloFjlYnHxoz4a0S579sdlYyvXdadx1vDCcLMUfuBxR6pRe2Xjkpc5KB8SDJgzaxKbXnLq-mfcEFKa_n8BEItp23zcZjjiaeNC6HHZIZMUd_eeAUGWAP413eJNuI");'>
-</div>
-<div class="px-1 pb-1">
-<p class="text-text-main-light dark:text-text-main-dark text-sm font-bold leading-tight">Brecon Beacons</p>
-<p class="text-text-sub-light dark:text-text-sub-dark text-xs font-medium mt-0.5">Hills &amp; Waterfalls</p>
-</div>
-</div>
-<!-- Card 4 -->
-<div class="group relative flex flex-col gap-2 p-2 rounded-2xl bg-surface-light dark:bg-surface-dark shadow-sm border-2 border-transparent hover:border-primary/50 cursor-pointer transition-all hover:shadow-md">
-<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-xl overflow-hidden relative" data-alt="Suspension bridge in Anglesey" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCNldhCRt46HDnISs0a2E352SB4DsSXa6VPL16pMjdsAXjCW1msX9IdMYGY7MBn62dpepLqalSLcOVaEJzddZv_mI1a5FrtLQJRvweWkxdhI54PxLfYooFykqt1cggGVTECCnIPfxieLIlubqDw2UHTZAgpUM_9PT2wjgdw_lTHVdm_JkTaP_JXUmkpBxmnBwI_sGeJbkWAhHPDkmbN8vCx8GrEl-D7uiaftbjBwh5tR8-mqXGJT-SflOUc26kmyN6PduKVBcZRSgI");'>
-</div>
-<div class="px-1 pb-1">
-<p class="text-text-main-light dark:text-text-main-dark text-sm font-bold leading-tight">Anglesey</p>
-<p class="text-text-sub-light dark:text-text-sub-dark text-xs font-medium mt-0.5">Island Life</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Divider -->
-<div class="h-px w-full bg-black/5 dark:bg-white/5 my-2"></div>
-<!-- Step 2: When (Simplified View for Long Scroll) -->
-<section class="px-4 py-6">
-<div class="flex items-center justify-between mb-4">
-<h3 class="text-text-main-light dark:text-text-main-dark tracking-tight text-xl font-bold leading-tight">When &amp; How Long?</h3>
-<span class="material-symbols-outlined text-text-sub-light dark:text-text-sub-dark">calendar_month</span>
-</div>
-<!-- Simple Date Input Simulation -->
-<div class="bg-surface-light dark:bg-surface-dark rounded-xl p-4 shadow-sm border border-black/5 dark:border-white/5">
-<label class="text-xs font-bold text-text-sub-light dark:text-text-sub-dark uppercase mb-2 block">Start Date</label>
-<div class="flex items-center justify-between text-text-main-light dark:text-text-main-dark mb-4 pb-4 border-b border-black/5 dark:border-white/5">
-<span class="text-lg font-medium">May 15, 2024</span>
-<span class="text-primary font-bold text-sm">Change</span>
-</div>
-<label class="text-xs font-bold text-text-sub-light dark:text-text-sub-dark uppercase mb-3 block">Duration</label>
-<div class="flex gap-2">
-<button class="flex-1 py-2 px-3 rounded-lg bg-background-light dark:bg-background-dark border border-transparent text-text-sub-light dark:text-text-sub-dark text-sm font-medium hover:bg-primary/10 hover:text-primary transition-colors">3 Days</button>
-<button class="flex-1 py-2 px-3 rounded-lg bg-primary text-background-dark shadow-sm text-sm font-bold ring-2 ring-primary ring-offset-2 ring-offset-surface-light dark:ring-offset-surface-dark">5 Days</button>
-<button class="flex-1 py-2 px-3 rounded-lg bg-background-light dark:bg-background-dark border border-transparent text-text-sub-light dark:text-text-sub-dark text-sm font-medium hover:bg-primary/10 hover:text-primary transition-colors">7 Days</button>
-</div>
-</div>
-</section>
-<!-- Step 3: What (Activity Preferences) -->
-<section class="px-4 py-6 bg-surface-light/50 dark:bg-surface-dark/50">
-<h3 class="text-text-main-light dark:text-text-main-dark tracking-tight text-xl font-bold leading-tight mb-4">What's your vibe?</h3>
-<!-- Activity Tags -->
-<div class="flex flex-wrap gap-3 mb-8">
-<button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-primary text-background-dark font-bold text-sm shadow-sm transition-transform active:scale-95">
-<span class="bg-background-dark/20 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">hiking</span></span>
-                         Hiking
-                     </button>
-<button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-surface-light dark:bg-surface-dark border border-black/5 dark:border-white/10 text-text-main-light dark:text-text-main-dark font-medium text-sm shadow-sm transition-transform active:scale-95">
-<span class="bg-black/5 dark:bg-white/10 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">kayaking</span></span>
-                         Water Sports
-                     </button>
-<button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-surface-light dark:bg-surface-dark border border-black/5 dark:border-white/10 text-text-main-light dark:text-text-main-dark font-medium text-sm shadow-sm transition-transform active:scale-95">
-<span class="bg-black/5 dark:bg-white/10 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">castle</span></span>
-                         Culture
-                     </button>
-<button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-primary text-background-dark font-bold text-sm shadow-sm transition-transform active:scale-95">
-<span class="bg-background-dark/20 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">restaurant</span></span>
-                         Foodie
-                     </button>
-<button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-surface-light dark:bg-surface-dark border border-black/5 dark:border-white/10 text-text-main-light dark:text-text-main-dark font-medium text-sm shadow-sm transition-transform active:scale-95">
-<span class="bg-black/5 dark:bg-white/10 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">directions_bike</span></span>
-                         Cycling
-                     </button>
-</div>
-<!-- Intensity Slider -->
-<div class="mb-8">
-<div class="flex justify-between items-center mb-3">
-<label class="text-sm font-bold text-text-main-light dark:text-text-main-dark">Intensity Level</label>
-<span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">Challenging</span>
-</div>
-<input class="range-slider w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer" max="5" min="1" type="range" value="4"/>
-<div class="flex justify-between mt-2 text-xs font-medium text-text-sub-light dark:text-text-sub-dark">
-<span>Relaxed</span>
-<span>Extreme</span>
-</div>
-</div>
-<!-- Budget -->
-<div>
-<label class="text-sm font-bold text-text-main-light dark:text-text-main-dark mb-3 block">Daily Budget</label>
-<div class="grid grid-cols-3 gap-0 rounded-xl overflow-hidden border border-black/5 dark:border-white/5 bg-surface-light dark:bg-surface-dark">
-<button class="py-3 text-sm font-medium text-text-sub-light dark:text-text-sub-dark hover:bg-black/5 dark:hover:bg-white/5 border-r border-black/5 dark:border-white/5">£</button>
-<button class="py-3 text-sm font-bold bg-primary/20 text-primary border-r border-black/5 dark:border-white/5">££</button>
-<button class="py-3 text-sm font-medium text-text-sub-light dark:text-text-sub-dark hover:bg-black/5 dark:hover:bg-white/5">£££</button>
-</div>
-</div>
-</section>
-<!-- Preview of Step 4 Content (Collapsed/Hint) -->
-<section class="mx-4 mt-6 p-4 rounded-xl border border-dashed border-primary/40 bg-primary/5">
-<div class="flex items-center gap-3">
-<div class="p-2 bg-primary/20 rounded-full text-primary">
-<span class="material-symbols-outlined">auto_awesome</span>
-</div>
-<div>
-<h4 class="text-sm font-bold text-text-main-light dark:text-text-main-dark">Itinerary Preview</h4>
-<p class="text-xs text-text-sub-light dark:text-text-sub-dark">Est. cost: £450 - £600</p>
-</div>
-</div>
-</section>
-</main>
-<!-- Fixed Footer -->
-<footer class="fixed bottom-0 w-full max-w-md bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-t border-black/5 dark:border-white/5 p-4 safe-area-bottom">
-<div class="flex items-center gap-4">
-<div class="flex-1">
-<p class="text-xs font-bold text-text-sub-light dark:text-text-sub-dark uppercase">Selections</p>
-<p class="text-sm font-bold text-text-main-light dark:text-text-main-dark truncate">Snowdonia, Brecon Beacons</p>
-</div>
-<button class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-primary hover:bg-primary-dark transition-colors text-background-dark text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/20 group">
-<span class="mr-1">Next</span>
-<span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</button>
-</div>
-</footer>
-</div>
+    <!-- Mobile Header (< lg) -->
+    <header class="lg:hidden sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="flex items-center justify-between p-4 pb-2">
+            <button class="flex size-10 items-center justify-center rounded-full hover:bg-gray-100 transition-colors">
+                <span class="material-symbols-outlined">arrow_back</span>
+            </button>
+            <h1 class="text-lg font-bold">Plan Your Adventure</h1>
+            <button class="text-slate-500 font-bold text-sm hover:text-primary transition-colors">Help</button>
+        </div>
 
+        <!-- Stepper (Mobile) -->
+        <div class="flex items-center justify-between px-6 py-4">
+            <div class="flex flex-col items-center gap-1">
+                <div class="h-8 w-8 rounded-full bg-primary flex items-center justify-center text-white font-bold text-sm shadow-lg">1</div>
+                <span class="text-[10px] font-bold text-slate-900 uppercase tracking-wider">Where</span>
+            </div>
+            <div class="h-[2px] flex-1 bg-primary/30 rounded-full mx-2"></div>
+            <div class="flex flex-col items-center gap-1 opacity-50">
+                <div class="h-8 w-8 rounded-full bg-white border-2 border-primary/20 flex items-center justify-center text-slate-400 font-bold text-sm">2</div>
+                <span class="text-[10px] font-medium text-slate-500 uppercase tracking-wider">When</span>
+            </div>
+            <div class="h-[2px] flex-1 bg-gray-200 rounded-full mx-2"></div>
+            <div class="flex flex-col items-center gap-1 opacity-50">
+                <div class="h-8 w-8 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center text-slate-400 font-bold text-sm">3</div>
+                <span class="text-[10px] font-medium text-slate-500 uppercase tracking-wider">What</span>
+            </div>
+            <div class="h-[2px] flex-1 bg-gray-200 rounded-full mx-2"></div>
+            <div class="flex flex-col items-center gap-1 opacity-50">
+                <div class="h-8 w-8 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center text-slate-400 font-bold text-sm">4</div>
+                <span class="text-[10px] font-medium text-slate-500 uppercase tracking-wider">Review</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Desktop Header (>= lg) -->
+    <nav class="hidden lg:block sticky top-0 z-50 w-full border-b border-gray-200 bg-white px-10 py-3">
+        <div class="mx-auto flex max-w-[1280px] items-center justify-between">
+            <div class="flex items-center gap-8">
+                <a href="#" class="flex items-center gap-3 text-slate-900">
+                    <div class="size-8 text-primary">
+                        <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <span class="text-lg font-bold tracking-tight">Adventure Wales</span>
+                </a>
+                <div class="flex items-center gap-6">
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Destinations</a>
+                    <a class="text-sm font-medium text-primary" href="#">Plan Your Trip</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Blog</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="h-10 px-6 rounded-xl bg-primary hover:bg-primary/90 text-white text-sm font-bold transition-colors">
+                    Log In
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="max-w-[1280px] mx-auto px-4 lg:px-10">
+
+        <!-- Desktop Hero & Stepper -->
+        <div class="hidden lg:block py-8 border-b border-gray-200 mb-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-black tracking-tight text-slate-900 mb-2">Plan Your Welsh Adventure</h1>
+                <p class="text-lg text-slate-500">Create a custom itinerary in just a few steps</p>
+            </div>
+
+            <!-- Stepper (Desktop) -->
+            <div class="flex items-center justify-center max-w-2xl mx-auto">
+                <div class="flex flex-col items-center gap-2">
+                    <div class="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg shadow-lg">1</div>
+                    <span class="text-xs font-bold text-slate-900 uppercase tracking-wider">Where</span>
+                </div>
+                <div class="h-[3px] w-24 bg-primary/30 rounded-full mx-4"></div>
+                <div class="flex flex-col items-center gap-2 opacity-50">
+                    <div class="h-12 w-12 rounded-full bg-white border-2 border-primary/30 flex items-center justify-center text-slate-400 font-bold text-lg">2</div>
+                    <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">When</span>
+                </div>
+                <div class="h-[3px] w-24 bg-gray-200 rounded-full mx-4"></div>
+                <div class="flex flex-col items-center gap-2 opacity-50">
+                    <div class="h-12 w-12 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center text-slate-400 font-bold text-lg">3</div>
+                    <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">What</span>
+                </div>
+                <div class="h-[3px] w-24 bg-gray-200 rounded-full mx-4"></div>
+                <div class="flex flex-col items-center gap-2 opacity-50">
+                    <div class="h-12 w-12 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center text-slate-400 font-bold text-lg">4</div>
+                    <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">Review</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="lg:grid lg:grid-cols-12 lg:gap-10 pb-32 lg:pb-12">
+
+            <!-- Main Content -->
+            <main class="lg:col-span-8">
+
+                <!-- Step 1: Where -->
+                <section class="mb-8">
+                    <div class="pt-4 lg:pt-0 pb-4">
+                        <h2 class="text-xl lg:text-2xl font-bold text-slate-900">Choose your regions</h2>
+                        <p class="text-slate-500 text-sm mt-1">Select multiple regions to build your route.</p>
+                    </div>
+
+                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
+                        <!-- Card 1 (Selected) -->
+                        <div class="group relative flex flex-col gap-2 p-2 rounded-2xl bg-white shadow-sm border-2 border-primary cursor-pointer transition-all hover:shadow-md">
+                            <div class="absolute top-4 right-4 z-10 bg-primary text-white rounded-full p-1 shadow-lg">
+                                <span class="material-symbols-outlined text-[16px] font-bold">check</span>
+                            </div>
+                            <div class="w-full aspect-[4/3] bg-cover bg-center rounded-xl overflow-hidden"
+                                 style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCySGWaKWJRSE-G-MWATyd8A3XC-5WSNzq4jv7dD2selGQZNwcXd7MxlglOtnrbM-XQGkQjnm8xWQVEN1fFkzVaNeppOgKTCC65TMYAr7X2pVeBkfXj9N3zFEZijR4K5521mLYUEa2kMvLLWDOP9q-hwhK2DJHJrjs5ur1aY6cm9bm6MBDPYEGfQ-OTraNhap7_ONlBinm9_Ntb8uR2PC6cEm2zmh2NZ4Y-LopPKIDGEaRHhNvHl8aKRTP0hKHzhaYBcjEBohQPq_Y");'></div>
+                            <div class="px-1 pb-1">
+                                <p class="text-slate-900 text-sm font-bold">Snowdonia</p>
+                                <p class="text-slate-500 text-xs mt-0.5">Mountains & Lakes</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="group relative flex flex-col gap-2 p-2 rounded-2xl bg-white shadow-sm border-2 border-transparent hover:border-primary/50 cursor-pointer transition-all hover:shadow-md">
+                            <div class="absolute top-4 right-4 z-10 bg-black/20 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="material-symbols-outlined text-[16px]">add</span>
+                            </div>
+                            <div class="w-full aspect-[4/3] bg-cover bg-center rounded-xl overflow-hidden"
+                                 style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDIMo8juOf63tTe2QNLRYSigJBxOX199ciR6ZkqC5UFdBfqZ8dDmRNYKPSGM7nj9THBKS3P19FZ-ZM1gFuhePGHsWrTx1pVN6Sir7QumBsO7GcPckcZ9vm-T4O0MLU4WK27-G6fmopET0JaWjt5hNC-1OPM0s-VohphdRpqKaYBfSQaSW-AJDDcDvL1DQuuQoeY_NyaTtU3gw2LxsQ1Z9Rv6f0rCnnrECHGdOidA2McfDqnPQNLXIFQPAzyDwC51WL-uQA6yWUNqsg");'></div>
+                            <div class="px-1 pb-1">
+                                <p class="text-slate-900 text-sm font-bold">Pembrokeshire</p>
+                                <p class="text-slate-500 text-xs mt-0.5">Coastal Park</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 (Selected) -->
+                        <div class="group relative flex flex-col gap-2 p-2 rounded-2xl bg-white shadow-sm border-2 border-primary cursor-pointer transition-all hover:shadow-md">
+                            <div class="absolute top-4 right-4 z-10 bg-primary text-white rounded-full p-1 shadow-lg">
+                                <span class="material-symbols-outlined text-[16px] font-bold">check</span>
+                            </div>
+                            <div class="w-full aspect-[4/3] bg-cover bg-center rounded-xl overflow-hidden"
+                                 style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBhCaoH59BZcrEX1asiJcT2ZCSOUY3d9Y2_178LfifLdHBCiWiTsND2jFGbz_ULNSZKxxrdTEQ53Wsq5X2a1J7yNLoqDSItkk74qRc5xQ9cxGdtLWJho5oFS94sFxRpOGEjIhuoe6PbUXxlSKXfloFjlYnHxoz4a0S579sdlYyvXdadx1vDCcLMUfuBxR6pRe2Xjkpc5KB8SDJgzaxKbXnLq-mfcEFKa_n8BEItp23zcZjjiaeNC6HHZIZMUd_eeAUGWAP413eJNuI");'></div>
+                            <div class="px-1 pb-1">
+                                <p class="text-slate-900 text-sm font-bold">Brecon Beacons</p>
+                                <p class="text-slate-500 text-xs mt-0.5">Hills & Waterfalls</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="group relative flex flex-col gap-2 p-2 rounded-2xl bg-white shadow-sm border-2 border-transparent hover:border-primary/50 cursor-pointer transition-all hover:shadow-md">
+                            <div class="w-full aspect-[4/3] bg-cover bg-center rounded-xl overflow-hidden"
+                                 style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCNldhCRt46HDnISs0a2E352SB4DsSXa6VPL16pMjdsAXjCW1msX9IdMYGY7MBn62dpepLqalSLcOVaEJzddZv_mI1a5FrtLQJRvweWkxdhI54PxLfYooFykqt1cggGVTECCnIPfxieLIlubqDw2UHTZAgpUM_9PT2wjgdw_lTHVdm_JkTaP_JXUmkpBxmnBwI_sGeJbkWAhHPDkmbN8vCx8GrEl-D7uiaftbjBwh5tR8-mqXGJT-SflOUc26kmyN6PduKVBcZRSgI");'></div>
+                            <div class="px-1 pb-1">
+                                <p class="text-slate-900 text-sm font-bold">Anglesey</p>
+                                <p class="text-slate-500 text-xs mt-0.5">Island Life</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="group relative flex flex-col gap-2 p-2 rounded-2xl bg-white shadow-sm border-2 border-transparent hover:border-primary/50 cursor-pointer transition-all hover:shadow-md">
+                            <div class="w-full aspect-[4/3] bg-gradient-to-br from-slate-300 to-slate-400 rounded-xl flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-4xl">landscape</span>
+                            </div>
+                            <div class="px-1 pb-1">
+                                <p class="text-slate-900 text-sm font-bold">Gower Peninsula</p>
+                                <p class="text-slate-500 text-xs mt-0.5">Beaches & Cliffs</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="group relative flex flex-col gap-2 p-2 rounded-2xl bg-white shadow-sm border-2 border-transparent hover:border-primary/50 cursor-pointer transition-all hover:shadow-md">
+                            <div class="w-full aspect-[4/3] bg-gradient-to-br from-slate-300 to-slate-400 rounded-xl flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-4xl">forest</span>
+                            </div>
+                            <div class="px-1 pb-1">
+                                <p class="text-slate-900 text-sm font-bold">Mid Wales</p>
+                                <p class="text-slate-500 text-xs mt-0.5">Rolling Hills</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="h-px w-full bg-gray-200 my-6"></div>
+
+                <!-- Step 2: When -->
+                <section class="mb-8">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-xl lg:text-2xl font-bold text-slate-900">When & How Long?</h2>
+                        <span class="material-symbols-outlined text-slate-400">calendar_month</span>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-4 lg:p-6 shadow-sm border border-gray-100">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <!-- Start Date -->
+                            <div>
+                                <label class="text-xs font-bold text-slate-500 uppercase mb-2 block">Start Date</label>
+                                <div class="flex items-center justify-between text-slate-900 p-3 rounded-lg bg-gray-50 border border-gray-200">
+                                    <span class="text-lg font-medium">May 15, 2024</span>
+                                    <span class="text-primary font-bold text-sm cursor-pointer hover:underline">Change</span>
+                                </div>
+                            </div>
+
+                            <!-- Duration -->
+                            <div>
+                                <label class="text-xs font-bold text-slate-500 uppercase mb-2 block">Duration</label>
+                                <div class="flex gap-2">
+                                    <button class="flex-1 py-3 px-3 rounded-lg bg-gray-50 border border-gray-200 text-slate-500 text-sm font-medium hover:border-primary hover:text-primary transition-colors">3 Days</button>
+                                    <button class="flex-1 py-3 px-3 rounded-lg bg-primary text-white text-sm font-bold shadow-sm">5 Days</button>
+                                    <button class="flex-1 py-3 px-3 rounded-lg bg-gray-50 border border-gray-200 text-slate-500 text-sm font-medium hover:border-primary hover:text-primary transition-colors">7 Days</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="h-px w-full bg-gray-200 my-6"></div>
+
+                <!-- Step 3: What -->
+                <section class="mb-8">
+                    <h2 class="text-xl lg:text-2xl font-bold text-slate-900 mb-4">What's your vibe?</h2>
+
+                    <!-- Activity Tags -->
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-primary text-white font-bold text-sm shadow-sm transition-transform active:scale-95">
+                            <span class="bg-white/20 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">hiking</span></span>
+                            Hiking
+                        </button>
+                        <button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-white border border-gray-200 text-slate-700 font-medium text-sm shadow-sm hover:border-primary hover:text-primary transition-all">
+                            <span class="bg-gray-100 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">kayaking</span></span>
+                            Water Sports
+                        </button>
+                        <button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-white border border-gray-200 text-slate-700 font-medium text-sm shadow-sm hover:border-primary hover:text-primary transition-all">
+                            <span class="bg-gray-100 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">castle</span></span>
+                            Culture
+                        </button>
+                        <button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-primary text-white font-bold text-sm shadow-sm transition-transform active:scale-95">
+                            <span class="bg-white/20 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">restaurant</span></span>
+                            Foodie
+                        </button>
+                        <button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-white border border-gray-200 text-slate-700 font-medium text-sm shadow-sm hover:border-primary hover:text-primary transition-all">
+                            <span class="bg-gray-100 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">directions_bike</span></span>
+                            Cycling
+                        </button>
+                        <button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-white border border-gray-200 text-slate-700 font-medium text-sm shadow-sm hover:border-primary hover:text-primary transition-all">
+                            <span class="bg-gray-100 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">pets</span></span>
+                            Wildlife
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <!-- Intensity Slider -->
+                        <div class="bg-white rounded-xl p-4 lg:p-6 shadow-sm border border-gray-100">
+                            <div class="flex justify-between items-center mb-4">
+                                <label class="text-sm font-bold text-slate-900">Intensity Level</label>
+                                <span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">Challenging</span>
+                            </div>
+                            <input class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer mb-2" max="5" min="1" type="range" value="4"/>
+                            <div class="flex justify-between text-xs font-medium text-slate-500">
+                                <span>Relaxed</span>
+                                <span>Extreme</span>
+                            </div>
+                        </div>
+
+                        <!-- Budget -->
+                        <div class="bg-white rounded-xl p-4 lg:p-6 shadow-sm border border-gray-100">
+                            <label class="text-sm font-bold text-slate-900 mb-4 block">Daily Budget</label>
+                            <div class="grid grid-cols-3 gap-0 rounded-xl overflow-hidden border border-gray-200">
+                                <button class="py-3 text-sm font-medium text-slate-500 hover:bg-gray-50 border-r border-gray-200 transition-colors">£</button>
+                                <button class="py-3 text-sm font-bold bg-primary/10 text-primary border-r border-gray-200">££</button>
+                                <button class="py-3 text-sm font-medium text-slate-500 hover:bg-gray-50 transition-colors">£££</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Sidebar (Desktop only) -->
+            <aside class="hidden lg:block lg:col-span-4">
+                <div class="sticky top-[73px]">
+                    <!-- Preview Card -->
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                        <div class="bg-primary p-6 text-white">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="p-2 bg-white/20 rounded-full">
+                                    <span class="material-symbols-outlined">auto_awesome</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold">Itinerary Preview</h3>
+                                    <p class="text-sm text-white/80">5 Days Adventure</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <!-- Selected Regions -->
+                            <div class="mb-6">
+                                <h4 class="text-xs font-bold text-slate-500 uppercase mb-3">Selected Regions</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="flex items-center gap-1 px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
+                                        <span class="material-symbols-outlined text-[14px]">check</span>
+                                        Snowdonia
+                                    </span>
+                                    <span class="flex items-center gap-1 px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
+                                        <span class="material-symbols-outlined text-[14px]">check</span>
+                                        Brecon Beacons
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Trip Summary -->
+                            <div class="space-y-3 mb-6">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-slate-500">Duration</span>
+                                    <span class="text-sm font-bold text-slate-900">5 Days</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-slate-500">Start Date</span>
+                                    <span class="text-sm font-bold text-slate-900">May 15, 2024</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-slate-500">Activities</span>
+                                    <span class="text-sm font-bold text-slate-900">Hiking, Foodie</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-slate-500">Intensity</span>
+                                    <span class="text-sm font-bold text-slate-900">Challenging</span>
+                                </div>
+                            </div>
+
+                            <div class="border-t border-gray-200 pt-4 mb-6">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-slate-500">Estimated Cost</span>
+                                    <span class="text-lg font-bold text-primary">£450 - £600</span>
+                                </div>
+                            </div>
+
+                            <button class="w-full py-3 bg-primary hover:bg-primary/90 text-white font-bold rounded-xl transition-colors flex items-center justify-center gap-2 group">
+                                Generate Itinerary
+                                <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Help Card -->
+                    <div class="mt-6 p-4 bg-slate-50 rounded-xl border border-slate-200">
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary">help_outline</span>
+                            <div>
+                                <p class="text-sm font-bold text-slate-900 mb-1">Need help planning?</p>
+                                <p class="text-xs text-slate-500">Our travel experts can create a custom itinerary just for you.</p>
+                                <button class="text-primary font-bold text-sm mt-2 hover:underline">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
     </div>
 
-    <!-- DESKTOP LAYOUT (>= 1024px) -->
-    <div class="desktop-layout">
-        
-<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden max-w-md mx-auto shadow-2xl bg-background-light dark:bg-background-dark">
-<!-- Top App Bar -->
-<header class="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-black/5 dark:border-white/5 p-4 pb-2 transition-colors">
-<div class="flex items-center justify-between">
-<button class="text-text-main-light dark:text-text-main-dark flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
-<span class="material-symbols-outlined text-[24px]">arrow_back</span>
-</button>
-<h2 class="text-text-main-light dark:text-text-main-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Plan Your Adventure</h2>
-<div class="flex w-10 items-center justify-end">
-<button class="text-text-sub-light dark:text-text-sub-dark font-bold text-sm hover:text-primary transition-colors">Help</button>
-</div>
-</div>
-<!-- Stepper -->
-<div class="mt-4 flex w-full flex-row items-center justify-between px-2">
-<div class="flex flex-col items-center gap-1 w-1/4">
-<div class="h-8 w-8 rounded-full bg-primary flex items-center justify-center text-background-dark font-bold text-sm shadow-lg shadow-primary/30">1</div>
-<span class="text-[10px] font-bold text-text-main-light dark:text-text-main-dark uppercase tracking-wider">Where</span>
-</div>
-<div class="h-[2px] flex-1 bg-primary/30 rounded-full mx-1"></div>
-<div class="flex flex-col items-center gap-1 w-1/4 opacity-50">
-<div class="h-8 w-8 rounded-full bg-surface-light dark:bg-surface-dark border-2 border-primary/20 flex items-center justify-center text-text-sub-light dark:text-text-sub-dark font-bold text-sm">2</div>
-<span class="text-[10px] font-medium text-text-sub-light dark:text-text-sub-dark uppercase tracking-wider">When</span>
-</div>
-<div class="h-[2px] flex-1 bg-black/5 dark:bg-white/5 rounded-full mx-1"></div>
-<div class="flex flex-col items-center gap-1 w-1/4 opacity-50">
-<div class="h-8 w-8 rounded-full bg-surface-light dark:bg-surface-dark border-2 border-black/10 dark:border-white/10 flex items-center justify-center text-text-sub-light dark:text-text-sub-dark font-bold text-sm">3</div>
-<span class="text-[10px] font-medium text-text-sub-light dark:text-text-sub-dark uppercase tracking-wider">What</span>
-</div>
-<div class="h-[2px] flex-1 bg-black/5 dark:bg-white/5 rounded-full mx-1"></div>
-<div class="flex flex-col items-center gap-1 w-1/4 opacity-50">
-<div class="h-8 w-8 rounded-full bg-surface-light dark:bg-surface-dark border-2 border-black/10 dark:border-white/10 flex items-center justify-center text-text-sub-light dark:text-text-sub-dark font-bold text-sm">4</div>
-<span class="text-[10px] font-medium text-text-sub-light dark:text-text-sub-dark uppercase tracking-wider">Review</span>
-</div>
-</div>
-</header>
-<!-- Main Content Scroll Area -->
-<main class="flex-1 overflow-y-auto pb-24">
-<!-- Step 1: Where -->
-<section class="animate-fade-in">
-<div class="px-4 pt-6 pb-2">
-<h3 class="text-text-main-light dark:text-text-main-dark tracking-tight text-2xl font-bold leading-tight">Choose your regions</h3>
-<p class="text-text-sub-light dark:text-text-sub-dark text-sm mt-1">Select multiple regions to build your route.</p>
-</div>
-<div class="grid grid-cols-2 gap-3 p-4">
-<!-- Card 1 (Selected) -->
-<div class="group relative flex flex-col gap-2 p-2 rounded-2xl bg-surface-light dark:bg-surface-dark shadow-sm border-2 border-primary cursor-pointer transition-all hover:shadow-md">
-<div class="absolute top-4 right-4 z-10 bg-primary text-background-dark rounded-full p-1 shadow-lg transform scale-100 transition-transform">
-<span class="material-symbols-outlined text-[16px] font-bold block">check</span>
-</div>
-<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-xl overflow-hidden relative" data-alt="Mist covered mountains in Snowdonia" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCySGWaKWJRSE-G-MWATyd8A3XC-5WSNzq4jv7dD2selGQZNwcXd7MxlglOtnrbM-XQGkQjnm8xWQVEN1fFkzVaNeppOgKTCC65TMYAr7X2pVeBkfXj9N3zFEZijR4K5521mLYUEa2kMvLLWDOP9q-hwhK2DJHJrjs5ur1aY6cm9bm6MBDPYEGfQ-OTraNhap7_ONlBinm9_Ntb8uR2PC6cEm2zmh2NZ4Y-LopPKIDGEaRHhNvHl8aKRTP0hKHzhaYBcjEBohQPq_Y");'>
-<div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
-</div>
-<div class="px-1 pb-1">
-<p class="text-text-main-light dark:text-text-main-dark text-sm font-bold leading-tight">Snowdonia</p>
-<p class="text-text-sub-light dark:text-text-sub-dark text-xs font-medium mt-0.5">Mountains &amp; Lakes</p>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="group relative flex flex-col gap-2 p-2 rounded-2xl bg-surface-light dark:bg-surface-dark shadow-sm border-2 border-transparent hover:border-primary/50 cursor-pointer transition-all hover:shadow-md">
-<div class="absolute top-4 right-4 z-10 bg-black/20 dark:bg-white/20 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity">
-<span class="material-symbols-outlined text-[16px] font-bold block">add</span>
-</div>
-<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-xl overflow-hidden relative" data-alt="Rugged coastline of Pembrokeshire" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDIMo8juOf63tTe2QNLRYSigJBxOX199ciR6ZkqC5UFdBfqZ8dDmRNYKPSGM7nj9THBKS3P19FZ-ZM1gFuhePGHsWrTx1pVN6Sir7QumBsO7GcPckcZ9vm-T4O0MLU4WK27-G6fmopET0JaWjt5hNC-1OPM0s-VohphdRpqKaYBfSQaSW-AJDDcDvL1DQuuQoeY_NyaTtU3gw2LxsQ1Z9Rv6f0rCnnrECHGdOidA2McfDqnPQNLXIFQPAzyDwC51WL-uQA6yWUNqsg");'>
-<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
-</div>
-<div class="px-1 pb-1">
-<p class="text-text-main-light dark:text-text-main-dark text-sm font-bold leading-tight">Pembrokeshire</p>
-<p class="text-text-sub-light dark:text-text-sub-dark text-xs font-medium mt-0.5">Coastal Park</p>
-</div>
-</div>
-<!-- Card 3 (Selected) -->
-<div class="group relative flex flex-col gap-2 p-2 rounded-2xl bg-surface-light dark:bg-surface-dark shadow-sm border-2 border-primary cursor-pointer transition-all hover:shadow-md">
-<div class="absolute top-4 right-4 z-10 bg-primary text-background-dark rounded-full p-1 shadow-lg transform scale-100 transition-transform">
-<span class="material-symbols-outlined text-[16px] font-bold block">check</span>
-</div>
-<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-xl overflow-hidden relative" data-alt="Green hills and waterfalls in Brecon Beacons" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBhCaoH59BZcrEX1asiJcT2ZCSOUY3d9Y2_178LfifLdHBCiWiTsND2jFGbz_ULNSZKxxrdTEQ53Wsq5X2a1J7yNLoqDSItkk74qRc5xQ9cxGdtLWJho5oFS94sFxRpOGEjIhuoe6PbUXxlSKXfloFjlYnHxoz4a0S579sdlYyvXdadx1vDCcLMUfuBxR6pRe2Xjkpc5KB8SDJgzaxKbXnLq-mfcEFKa_n8BEItp23zcZjjiaeNC6HHZIZMUd_eeAUGWAP413eJNuI");'>
-</div>
-<div class="px-1 pb-1">
-<p class="text-text-main-light dark:text-text-main-dark text-sm font-bold leading-tight">Brecon Beacons</p>
-<p class="text-text-sub-light dark:text-text-sub-dark text-xs font-medium mt-0.5">Hills &amp; Waterfalls</p>
-</div>
-</div>
-<!-- Card 4 -->
-<div class="group relative flex flex-col gap-2 p-2 rounded-2xl bg-surface-light dark:bg-surface-dark shadow-sm border-2 border-transparent hover:border-primary/50 cursor-pointer transition-all hover:shadow-md">
-<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-xl overflow-hidden relative" data-alt="Suspension bridge in Anglesey" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCNldhCRt46HDnISs0a2E352SB4DsSXa6VPL16pMjdsAXjCW1msX9IdMYGY7MBn62dpepLqalSLcOVaEJzddZv_mI1a5FrtLQJRvweWkxdhI54PxLfYooFykqt1cggGVTECCnIPfxieLIlubqDw2UHTZAgpUM_9PT2wjgdw_lTHVdm_JkTaP_JXUmkpBxmnBwI_sGeJbkWAhHPDkmbN8vCx8GrEl-D7uiaftbjBwh5tR8-mqXGJT-SflOUc26kmyN6PduKVBcZRSgI");'>
-</div>
-<div class="px-1 pb-1">
-<p class="text-text-main-light dark:text-text-main-dark text-sm font-bold leading-tight">Anglesey</p>
-<p class="text-text-sub-light dark:text-text-sub-dark text-xs font-medium mt-0.5">Island Life</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Divider -->
-<div class="h-px w-full bg-black/5 dark:bg-white/5 my-2"></div>
-<!-- Step 2: When (Simplified View for Long Scroll) -->
-<section class="px-4 py-6">
-<div class="flex items-center justify-between mb-4">
-<h3 class="text-text-main-light dark:text-text-main-dark tracking-tight text-xl font-bold leading-tight">When &amp; How Long?</h3>
-<span class="material-symbols-outlined text-text-sub-light dark:text-text-sub-dark">calendar_month</span>
-</div>
-<!-- Simple Date Input Simulation -->
-<div class="bg-surface-light dark:bg-surface-dark rounded-xl p-4 shadow-sm border border-black/5 dark:border-white/5">
-<label class="text-xs font-bold text-text-sub-light dark:text-text-sub-dark uppercase mb-2 block">Start Date</label>
-<div class="flex items-center justify-between text-text-main-light dark:text-text-main-dark mb-4 pb-4 border-b border-black/5 dark:border-white/5">
-<span class="text-lg font-medium">May 15, 2024</span>
-<span class="text-primary font-bold text-sm">Change</span>
-</div>
-<label class="text-xs font-bold text-text-sub-light dark:text-text-sub-dark uppercase mb-3 block">Duration</label>
-<div class="flex gap-2">
-<button class="flex-1 py-2 px-3 rounded-lg bg-background-light dark:bg-background-dark border border-transparent text-text-sub-light dark:text-text-sub-dark text-sm font-medium hover:bg-primary/10 hover:text-primary transition-colors">3 Days</button>
-<button class="flex-1 py-2 px-3 rounded-lg bg-primary text-background-dark shadow-sm text-sm font-bold ring-2 ring-primary ring-offset-2 ring-offset-surface-light dark:ring-offset-surface-dark">5 Days</button>
-<button class="flex-1 py-2 px-3 rounded-lg bg-background-light dark:bg-background-dark border border-transparent text-text-sub-light dark:text-text-sub-dark text-sm font-medium hover:bg-primary/10 hover:text-primary transition-colors">7 Days</button>
-</div>
-</div>
-</section>
-<!-- Step 3: What (Activity Preferences) -->
-<section class="px-4 py-6 bg-surface-light/50 dark:bg-surface-dark/50">
-<h3 class="text-text-main-light dark:text-text-main-dark tracking-tight text-xl font-bold leading-tight mb-4">What's your vibe?</h3>
-<!-- Activity Tags -->
-<div class="flex flex-wrap gap-3 mb-8">
-<button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-primary text-background-dark font-bold text-sm shadow-sm transition-transform active:scale-95">
-<span class="bg-background-dark/20 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">hiking</span></span>
-                         Hiking
-                     </button>
-<button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-surface-light dark:bg-surface-dark border border-black/5 dark:border-white/10 text-text-main-light dark:text-text-main-dark font-medium text-sm shadow-sm transition-transform active:scale-95">
-<span class="bg-black/5 dark:bg-white/10 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">kayaking</span></span>
-                         Water Sports
-                     </button>
-<button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-surface-light dark:bg-surface-dark border border-black/5 dark:border-white/10 text-text-main-light dark:text-text-main-dark font-medium text-sm shadow-sm transition-transform active:scale-95">
-<span class="bg-black/5 dark:bg-white/10 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">castle</span></span>
-                         Culture
-                     </button>
-<button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-primary text-background-dark font-bold text-sm shadow-sm transition-transform active:scale-95">
-<span class="bg-background-dark/20 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">restaurant</span></span>
-                         Foodie
-                     </button>
-<button class="flex items-center gap-2 pl-2 pr-4 py-2 rounded-full bg-surface-light dark:bg-surface-dark border border-black/5 dark:border-white/10 text-text-main-light dark:text-text-main-dark font-medium text-sm shadow-sm transition-transform active:scale-95">
-<span class="bg-black/5 dark:bg-white/10 rounded-full p-1"><span class="material-symbols-outlined text-[16px]">directions_bike</span></span>
-                         Cycling
-                     </button>
-</div>
-<!-- Intensity Slider -->
-<div class="mb-8">
-<div class="flex justify-between items-center mb-3">
-<label class="text-sm font-bold text-text-main-light dark:text-text-main-dark">Intensity Level</label>
-<span class="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">Challenging</span>
-</div>
-<input class="range-slider w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer" max="5" min="1" type="range" value="4"/>
-<div class="flex justify-between mt-2 text-xs font-medium text-text-sub-light dark:text-text-sub-dark">
-<span>Relaxed</span>
-<span>Extreme</span>
-</div>
-</div>
-<!-- Budget -->
-<div>
-<label class="text-sm font-bold text-text-main-light dark:text-text-main-dark mb-3 block">Daily Budget</label>
-<div class="grid grid-cols-3 gap-0 rounded-xl overflow-hidden border border-black/5 dark:border-white/5 bg-surface-light dark:bg-surface-dark">
-<button class="py-3 text-sm font-medium text-text-sub-light dark:text-text-sub-dark hover:bg-black/5 dark:hover:bg-white/5 border-r border-black/5 dark:border-white/5">£</button>
-<button class="py-3 text-sm font-bold bg-primary/20 text-primary border-r border-black/5 dark:border-white/5">££</button>
-<button class="py-3 text-sm font-medium text-text-sub-light dark:text-text-sub-dark hover:bg-black/5 dark:hover:bg-white/5">£££</button>
-</div>
-</div>
-</section>
-<!-- Preview of Step 4 Content (Collapsed/Hint) -->
-<section class="mx-4 mt-6 p-4 rounded-xl border border-dashed border-primary/40 bg-primary/5">
-<div class="flex items-center gap-3">
-<div class="p-2 bg-primary/20 rounded-full text-primary">
-<span class="material-symbols-outlined">auto_awesome</span>
-</div>
-<div>
-<h4 class="text-sm font-bold text-text-main-light dark:text-text-main-dark">Itinerary Preview</h4>
-<p class="text-xs text-text-sub-light dark:text-text-sub-dark">Est. cost: £450 - £600</p>
-</div>
-</div>
-</section>
-</main>
-<!-- Fixed Footer -->
-<footer class="fixed bottom-0 w-full max-w-md bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-t border-black/5 dark:border-white/5 p-4 safe-area-bottom">
-<div class="flex items-center gap-4">
-<div class="flex-1">
-<p class="text-xs font-bold text-text-sub-light dark:text-text-sub-dark uppercase">Selections</p>
-<p class="text-sm font-bold text-text-main-light dark:text-text-main-dark truncate">Snowdonia, Brecon Beacons</p>
-</div>
-<button class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-primary hover:bg-primary-dark transition-colors text-background-dark text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/20 group">
-<span class="mr-1">Next</span>
-<span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</button>
-</div>
-</footer>
-</div>
-
-    </div>
+    <!-- Mobile Fixed Footer -->
+    <footer class="lg:hidden fixed bottom-12 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-gray-200 p-4 z-40">
+        <div class="flex items-center gap-4">
+            <div class="flex-1">
+                <p class="text-xs font-bold text-slate-500 uppercase">Selections</p>
+                <p class="text-sm font-bold text-slate-900 truncate">Snowdonia, Brecon Beacons</p>
+            </div>
+            <button class="flex min-w-[140px] items-center justify-center rounded-xl h-12 px-6 bg-primary hover:bg-primary/90 text-white text-base font-bold shadow-lg transition-colors group">
+                <span class="mr-1">Next</span>
+                <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </button>
+        </div>
+    </footer>
 
     <!-- Dev info bar -->
     <div class="dev-bar">

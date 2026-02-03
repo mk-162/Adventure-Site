@@ -7,13 +7,21 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
+// Remove YAML frontmatter from markdown content
+function stripFrontmatter(content: string): string {
+  // Match frontmatter block: starts with ---, ends with ---
+  const frontmatterRegex = /^---\n[\s\S]*?\n---\n*/;
+  return content.replace(frontmatterRegex, "");
+}
+
 function getGuideContent(slug: string): { title: string; content: string } | null {
   const contentDir = path.join(process.cwd(), "content");
   
   // Check guides folder first
   const guidePath = path.join(contentDir, "guides", `${slug}.md`);
   if (fs.existsSync(guidePath)) {
-    const content = fs.readFileSync(guidePath, "utf-8");
+    let content = fs.readFileSync(guidePath, "utf-8");
+    content = stripFrontmatter(content); // Remove YAML frontmatter
     const titleMatch = content.match(/^#\s+(.+)$/m);
     return {
       title: titleMatch?.[1] || slug.replace(/-/g, " "),
@@ -24,7 +32,8 @@ function getGuideContent(slug: string): { title: string; content: string } | nul
   // Check categories folder
   const categoryPath = path.join(contentDir, "categories", `${slug}.md`);
   if (fs.existsSync(categoryPath)) {
-    const content = fs.readFileSync(categoryPath, "utf-8");
+    let content = fs.readFileSync(categoryPath, "utf-8");
+    content = stripFrontmatter(content); // Remove YAML frontmatter
     const titleMatch = content.match(/^#\s+(.+)$/m);
     return {
       title: titleMatch?.[1] || slug.replace(/-/g, " "),

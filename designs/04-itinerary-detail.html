@@ -15,32 +15,35 @@
                     colors: {
                         "primary": "#1e3a4c",
                         "accent": "#f97316",
-                        "background-light": "#f8fafc",
-                        "background-dark": "#0f172a",
-                        "text-dark": "#0f172a",
+                        "background": "#f8fafc",
+                        "surface": "#ffffff",
+                        "text-primary": "#0f172a",
                         "text-muted": "#64748b",
+                        "border": "#e2e8f0",
                     },
                     fontFamily: {
                         "display": ["Plus Jakarta Sans", "sans-serif"]
                     },
-                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem"},
                 },
             },
         }
     </script>
     <style>
-        /* Hide scrollbars but allow scrolling */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-        /* Mobile layout shown by default, hidden on large screens */
-        .mobile-layout { display: block; }
-        .desktop-layout { display: none; }
-
-        /* Switch to desktop layout on lg breakpoint (1024px) */
-        @media (min-width: 1024px) {
-            .mobile-layout { display: none; }
-            .desktop-layout { display: block; }
+        /* Timeline connector line */
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 27px;
+            top: 56px;
+            bottom: -32px;
+            width: 2px;
+            background: #e2e8f0;
+        }
+        .timeline-item:last-child::before {
+            display: none;
         }
 
         /* Dev info bar */
@@ -71,553 +74,427 @@
         }
     </style>
 </head>
-<body class="bg-background-light font-display text-text-dark antialiased">
+<body class="bg-background font-display text-text-primary antialiased">
 
-    <!-- MOBILE LAYOUT (< 1024px) -->
-    <div class="mobile-layout">
-        
-<!-- Top App Bar -->
-<div class="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800 px-4 py-3 flex items-center justify-between">
-<button class="flex items-center justify-center p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-<span class="material-symbols-outlined text-text-main-light dark:text-text-main-dark">arrow_back</span>
-</button>
-<h2 class="text-lg font-bold truncate px-2">Itinerary Detail</h2>
-<button class="flex items-center justify-center p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-<span class="material-symbols-outlined text-text-main-light dark:text-text-main-dark">more_vert</span>
-</button>
-</div>
-<!-- Hero Section -->
-<div class="relative w-full aspect-[4/3] bg-gray-200 overflow-hidden group">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Hiker standing on a mountain peak overlooking a valley in Snowdonia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCHUTs95s0rCRW6PyKIovZjXSZnP79jBwS6ES5db5rioz3IH1FM5ewcd7LF9dGevziqHU8I65PEIfbnqTtQwYn5sBBpBmXGXs8oZt3HLnM4xQbZLbuhbJQSXi0LxJNrgsXHKd8JHIxHwcIclpUNDmBipxTIdrHSrV9QcDV9wewwtSz-aSjELitwYqsxq2h0mH0czv5sBMCOivppL7Ej16ymcNTLZLRFiydUki-dvrCt4LBrmM3dYu9pgMsE0rycrPr3C1yEIV8Tgt8');">
-</div>
-<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 via-transparent to-transparent"></div>
-<!-- Badge -->
-<div class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-3 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2 text-primary group">
+            <span class="material-symbols-outlined text-3xl">landscape</span>
+            <span class="text-lg font-bold hidden sm:inline">Adventure Wales</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center gap-8">
+            <a href="#" class="text-text-primary hover:text-primary transition-colors text-sm font-medium">Adventures</a>
+            <a href="#" class="text-text-primary hover:text-primary transition-colors text-sm font-medium">Destinations</a>
+            <a href="#" class="text-text-primary hover:text-primary transition-colors text-sm font-medium">Journal</a>
+            <a href="#" class="text-text-primary hover:text-primary transition-colors text-sm font-medium">About</a>
+        </nav>
+
+        <!-- Right Side -->
+        <div class="flex items-center gap-3">
+            <!-- Search (desktop) -->
+            <div class="hidden sm:flex items-center bg-gray-100 rounded-xl px-4 py-2">
+                <span class="material-symbols-outlined text-text-muted text-xl">search</span>
+                <input type="text" placeholder="Search..." class="bg-transparent border-none focus:ring-0 text-sm w-32 lg:w-40 px-2">
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="lg:hidden p-2 hover:bg-gray-100 rounded-lg" onclick="document.getElementById('mobileMenu').classList.toggle('max-h-0'); document.getElementById('mobileMenu').classList.toggle('max-h-96');">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+
+            <button class="hidden lg:flex items-center justify-center rounded-xl h-10 px-5 bg-primary hover:bg-primary/90 text-white text-sm font-bold transition-colors">
+                Log In
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="lg:hidden max-h-0 overflow-hidden transition-all duration-300 bg-white border-t border-border">
+        <nav class="px-4 py-4 space-y-3">
+            <a href="#" class="block py-2 text-text-primary hover:text-primary font-medium">Adventures</a>
+            <a href="#" class="block py-2 text-text-primary hover:text-primary font-medium">Destinations</a>
+            <a href="#" class="block py-2 text-text-primary hover:text-primary font-medium">Journal</a>
+            <a href="#" class="block py-2 text-text-primary hover:text-primary font-medium">About</a>
+            <button class="w-full mt-2 py-2 bg-primary text-white rounded-xl font-bold">Log In</button>
+        </nav>
+    </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-4 lg:py-6 pb-32 lg:pb-20">
+
+    <!-- Breadcrumbs -->
+    <div class="flex items-center gap-2 mb-4 lg:mb-6 text-sm overflow-x-auto no-scrollbar">
+        <a href="#" class="text-text-muted hover:text-primary transition-colors whitespace-nowrap">Home</a>
+        <span class="text-text-muted">/</span>
+        <a href="#" class="text-text-muted hover:text-primary transition-colors whitespace-nowrap">Itineraries</a>
+        <span class="text-text-muted">/</span>
+        <span class="text-text-primary font-medium whitespace-nowrap">Snowdonia Weekend</span>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="relative w-full rounded-2xl overflow-hidden mb-6 lg:mb-10 group">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent z-10"></div>
+        <div class="aspect-[4/3] sm:aspect-[16/9] lg:aspect-[21/9] w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAEUyohbpsTUFHHJtAlcy9MneD0i_tOGP_HFfMAOMy_pktdyQcStBBjgV-7as3326lyD2A1HxqgeVRNMEC9VduFFY1JPviA73nTCfC_Icosnc8CVNzcF1aI_o8ibWVfOtPc_qje5Z5txeS7tT5E4drsDN6p97gqyTs6syYO-z5aDZVnhR4meTUTtrELKwJ7krPRgLP5ZNJBJarLJNO65JJFCz_SSOs0irVlciLyCCraLupMo83XiJBk2NKTbI6UCT6HZOn2Ax1RNw');">
+        </div>
+
+        <!-- Duration Badge -->
+        <div class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg z-20">
             3 DAYS
         </div>
-<!-- Title Over Image -->
-<div class="absolute bottom-0 left-0 p-5 w-full">
-<p class="text-white/80 text-sm font-medium mb-1 uppercase tracking-wider">Adventure Wales</p>
-<h1 class="text-white text-3xl font-bold leading-tight drop-shadow-md">3-Day Snowdonia Adventure Weekend</h1>
-</div>
-</div>
-<!-- Key Info Chips -->
-<div class="px-5 py-4 flex gap-3 overflow-x-auto no-scrollbar">
-<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 dark:bg-surface-dark pl-3 pr-4 border border-gray-200 dark:border-gray-700">
-<span class="material-symbols-outlined text-accent-green text-[18px]">location_on</span>
-<p class="text-sm font-medium whitespace-nowrap">Snowdonia</p>
-</div>
-<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 dark:bg-surface-dark pl-3 pr-4 border border-gray-200 dark:border-gray-700">
-<span class="material-symbols-outlined text-primary text-[18px]">hiking</span>
-<p class="text-sm font-medium whitespace-nowrap">Intermediate</p>
-</div>
-<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 dark:bg-surface-dark pl-3 pr-4 border border-gray-200 dark:border-gray-700">
-<span class="material-symbols-outlined text-blue-500 text-[18px]">calendar_month</span>
-<p class="text-sm font-medium whitespace-nowrap">Apr-Oct</p>
-</div>
-</div>
-<!-- Primary CTAs -->
-<div class="flex gap-3 px-5 mb-6">
-<button class="flex-1 h-12 flex items-center justify-center gap-2 rounded-xl bg-gray-100 dark:bg-surface-dark text-text-main-light dark:text-text-main-dark font-bold border border-gray-200 dark:border-gray-700 transition-transform active:scale-95">
-<span class="material-symbols-outlined">favorite</span>
-<span>Save</span>
-</button>
-<button class="flex-[2] h-12 flex items-center justify-center gap-2 rounded-xl bg-primary hover:bg-primary-dark text-white font-bold shadow-md shadow-primary/30 transition-transform active:scale-95">
-<span>Enquire Now</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-<!-- Itinerary Overview Card -->
-<div class="px-5 mb-8">
-<div class="bg-white dark:bg-surface-dark rounded-2xl p-5 shadow-sm border border-gray-100 dark:border-gray-700 flex justify-between divide-x divide-gray-100 dark:divide-gray-700">
-<div class="flex flex-col items-center px-2 flex-1">
-<span class="text-2xl font-bold text-text-main-light dark:text-text-main-dark">5</span>
-<span class="text-xs text-text-sub-light dark:text-text-sub-dark uppercase tracking-wide mt-1">Activities</span>
-</div>
-<div class="flex flex-col items-center px-2 flex-1">
-<span class="text-2xl font-bold text-text-main-light dark:text-text-main-dark">2</span>
-<span class="text-xs text-text-sub-light dark:text-text-sub-dark uppercase tracking-wide mt-1">Nights</span>
-</div>
-<div class="flex flex-col items-center px-2 flex-1">
-<span class="text-2xl font-bold text-text-main-light dark:text-text-main-dark">38</span>
-<span class="text-xs text-text-sub-light dark:text-text-sub-dark uppercase tracking-wide mt-1">km Hiking</span>
-</div>
-</div>
-</div>
-<!-- Day By Day Breakdown -->
-<div class="px-5">
-<div class="flex items-center justify-between mb-6">
-<h3 class="text-xl font-bold text-text-main-light dark:text-text-main-dark">Day-by-Day</h3>
-<button class="text-primary text-sm font-bold">Expand All</button>
-</div>
-<!-- Day 1 Header -->
-<div class="bg-accent-green/10 rounded-xl p-4 mb-6 flex items-start gap-4">
-<div class="bg-accent-green text-white font-bold text-lg h-12 w-12 rounded-lg flex items-center justify-center shrink-0 shadow-sm">
-                01
-            </div>
-<div>
-<h4 class="font-bold text-lg text-text-main-light dark:text-text-main-dark">Arrival &amp; Zip World</h4>
-<p class="text-sm text-text-sub-light dark:text-text-sub-dark mt-1">Start your adventure with adrenaline at the world's fastest zipline.</p>
-</div>
-</div>
-<!-- Timeline -->
-<div class="pl-2 pr-1 relative">
-<!-- Timeline Item 1 -->
-<div class="timeline-line relative pl-10 pb-8">
-<div class="absolute left-0 top-0 h-10 w-10 bg-white dark:bg-background-dark border-2 border-primary rounded-full flex items-center justify-center z-10">
-<span class="material-symbols-outlined text-primary text-sm">flight_land</span>
-</div>
-<div class="flex flex-col">
-<span class="text-xs font-bold text-text-sub-light dark:text-text-sub-dark mb-1">10:00 AM</span>
-<div class="bg-white dark:bg-surface-dark rounded-xl p-4 shadow-sm border border-gray-100 dark:border-gray-700">
-<h5 class="font-bold text-text-main-light dark:text-text-main-dark">Arrive at Betws-y-Coed</h5>
-<p class="text-sm text-text-sub-light dark:text-text-sub-dark mt-2 leading-relaxed">Check in to your base camp at the Royal Oak Hotel. Briefing with your guide and gear check.</p>
-</div>
-</div>
-</div>
-<!-- Travel Indicator -->
-<div class="timeline-line relative pl-10 pb-8">
-<div class="absolute left-[13px] top-[-10px] bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded text-[10px] font-medium text-text-sub-light dark:text-text-sub-dark z-10 border border-gray-200 dark:border-gray-700 flex items-center gap-1">
-<span class="material-symbols-outlined text-[10px]">directions_car</span> 25 min drive
-                </div>
-<!-- Spacer for layout continuity -->
-</div>
-<!-- Timeline Item 2 -->
-<div class="timeline-line relative pl-10 pb-8">
-<div class="absolute left-0 top-0 h-10 w-10 bg-white dark:bg-background-dark border-2 border-primary rounded-full flex items-center justify-center z-10">
-<span class="material-symbols-outlined text-primary text-sm">paragliding</span>
-</div>
-<div class="flex flex-col">
-<span class="text-xs font-bold text-text-sub-light dark:text-text-sub-dark mb-1">01:00 PM</span>
-<div class="bg-white dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700">
-<div class="h-32 w-full bg-gray-200 bg-cover bg-center" data-alt="Person ziplining over a quarry lake" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAJzWi33q5ZTJ1IK7IOiYsIqNDfIRBjAWstJGcQ-taG_ziD3sk4Z3uuEa-9hDNrnEqafpWgBIsPHatyEQOKmSWn2Pq9HuZVofQakknQHWpYsAgcjTPIGSMN3hO5u6EpMs_upvTIWfO-E8-oovqD1cvaSyIwrsvamnopj0-9LWrpdOIw43j7DkH8df5sGrPPDHB2kqclQblxLfnZVp0Ez0KbqvAM0Rq79BBTdY_PeSu8NmVxn8319gkxJGqiBnsd3b9odzM0ZEZwok4');"></div>
-<div class="p-4">
-<h5 class="font-bold text-text-main-light dark:text-text-main-dark">Velocity 2 at Zip World</h5>
-<p class="text-sm text-text-sub-light dark:text-text-sub-dark mt-2 leading-relaxed">Prepare for flight. Reach speeds of over 100mph over Penrhyn Quarry.</p>
-<div class="mt-3 flex gap-2">
-<span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded font-medium">Included</span>
-<span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-text-sub-light dark:text-text-sub-dark text-xs rounded font-medium">2 Hours</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Timeline Item 3 (Evening) -->
-<div class="timeline-line last-item relative pl-10 pb-4">
-<div class="absolute left-0 top-0 h-10 w-10 bg-white dark:bg-background-dark border-2 border-gray-300 dark:border-gray-600 rounded-full flex items-center justify-center z-10">
-<span class="material-symbols-outlined text-gray-500 text-sm">restaurant</span>
-</div>
-<div class="flex flex-col">
-<span class="text-xs font-bold text-text-sub-light dark:text-text-sub-dark mb-1">07:00 PM</span>
-<div class="bg-white dark:bg-surface-dark rounded-xl p-4 shadow-sm border border-gray-100 dark:border-gray-700">
-<h5 class="font-bold text-text-main-light dark:text-text-main-dark">Group Dinner</h5>
-<p class="text-sm text-text-sub-light dark:text-text-sub-dark mt-2">Traditional Welsh dinner at The Stables Bar. Try the local lamb stew.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Fade for next day preview -->
-<div class="mt-4 opacity-50 relative">
-<div class="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 flex items-start gap-4">
-<div class="bg-gray-300 dark:bg-gray-700 text-white font-bold text-lg h-12 w-12 rounded-lg flex items-center justify-center shrink-0">
-                    02
-                </div>
-<div>
-<h4 class="font-bold text-lg text-text-main-light dark:text-text-main-dark">Summiting Snowdon</h4>
-<p class="text-sm text-text-sub-light dark:text-text-sub-dark mt-1">The big climb via the Pyg Track...</p>
-</div>
-</div>
-<div class="absolute inset-0 bg-gradient-to-b from-transparent to-background-light dark:to-background-dark"></div>
-</div>
-<div class="flex justify-center mt-2 mb-10">
-<button class="text-primary font-bold text-sm flex items-center gap-1">
-                View Full Itinerary <span class="material-symbols-outlined text-sm">expand_more</span>
-</button>
-</div>
-</div>
-<!-- Your Route Map Section -->
-<div class="px-5 mb-10">
-<h3 class="text-xl font-bold text-text-main-light dark:text-text-main-dark mb-4">Your Route</h3>
-<div class="relative w-full h-64 rounded-2xl overflow-hidden shadow-md">
-<!-- Map Background Placeholder -->
-<div class="absolute inset-0 bg-gray-200 bg-cover bg-center" data-location="Map of Snowdonia National Park" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDswoO6QFjvWixqjmXw5RbstVX5HvYvK2t4n-UqaC5BX2Y6ksqDhM4-s0liq8XYmF7mmdtz__Gv_AFP6j9G3wB6Zck-VmG5Y1bFl_3zJ1SuTyWiRD5ma-AddwRcv2ql68XsV6VEp8guHAcnGlzHy25j7B6udumDKww7eazqHRTvvkqa1lMbMHkMOj0wpoSjiwL8gTZjD3gkj6f97dwJMn47Xz1SsQK1Mc_d6y5pUpx23CvhWmpaQe4ds4H4awHtzq_PtOEMBPr69ho'); filter: grayscale(30%);">
-</div>
-<!-- Overlay for legibility -->
-<div class="absolute inset-0 bg-black/10"></div>
-<!-- Interactive Pins (Simulated) -->
-<div class="absolute top-1/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-<span class="bg-white dark:bg-surface-dark text-xs font-bold px-2 py-1 rounded shadow-md mb-1 whitespace-nowrap dark:text-text-main-dark">Start</span>
-<span class="material-symbols-outlined text-primary text-3xl drop-shadow-md">location_on</span>
-</div>
-<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-<span class="material-symbols-outlined text-white text-3xl drop-shadow-md">location_on</span>
-</div>
-<div class="absolute bottom-1/3 right-1/4 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-<span class="material-symbols-outlined text-accent-green text-3xl drop-shadow-md">flag</span>
-</div>
-<!-- Connection Line (SVG) -->
-<svg class="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
-<path d="M 90 60 Q 180 120 270 160" fill="none" stroke="#f27f0d" stroke-dasharray="5,5" stroke-width="3"></path>
-</svg>
-<button class="absolute bottom-3 right-3 bg-white dark:bg-surface-dark p-2 rounded-lg shadow-lg text-text-main-light dark:text-text-main-dark">
-<span class="material-symbols-outlined">open_in_full</span>
-</button>
-</div>
-</div>
-<!-- Estimated Costs & Planning -->
-<div class="px-5 mb-8">
-<h3 class="text-xl font-bold text-text-main-light dark:text-text-main-dark mb-4">Planning</h3>
-<div class="bg-white dark:bg-surface-dark rounded-xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm mb-6">
-<h4 class="font-bold mb-3 dark:text-text-main-dark">Estimated Costs (per person)</h4>
-<div class="space-y-3">
-<div class="flex justify-between text-sm">
-<span class="text-text-sub-light dark:text-text-sub-dark">Accommodation (2 nights)</span>
-<span class="font-medium dark:text-text-main-dark">£180</span>
-</div>
-<div class="flex justify-between text-sm">
-<span class="text-text-sub-light dark:text-text-sub-dark">Activities &amp; Gear</span>
-<span class="font-medium dark:text-text-main-dark">£120</span>
-</div>
-<div class="flex justify-between text-sm">
-<span class="text-text-sub-light dark:text-text-sub-dark">Food &amp; Drink</span>
-<span class="font-medium dark:text-text-main-dark">£90</span>
-</div>
-<div class="h-px bg-gray-100 dark:bg-gray-700 my-2"></div>
-<div class="flex justify-between font-bold text-base">
-<span class="text-text-main-light dark:text-text-main-dark">Total</span>
-<span class="text-primary">~£390</span>
-</div>
-</div>
-</div>
-<div class="bg-primary/5 dark:bg-primary/10 rounded-xl p-5 flex flex-col items-center text-center border border-primary/20">
-<span class="material-symbols-outlined text-primary text-4xl mb-2">edit_calendar</span>
-<h4 class="font-bold text-lg text-text-main-light dark:text-text-main-dark">Make it yours</h4>
-<p class="text-sm text-text-sub-light dark:text-text-sub-dark mt-1 mb-4">Swap activities or adjust dates to fit your schedule.</p>
-<button class="bg-white dark:bg-surface-dark text-primary font-bold py-2.5 px-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600 w-full hover:bg-gray-50 transition-colors">
-                Start Planning
-            </button>
-</div>
-</div>
-<!-- Sticky Bottom Bar -->
-<div class="fixed bottom-0 left-0 w-full bg-white dark:bg-surface-dark border-t border-gray-100 dark:border-gray-800 p-4 pb-8 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] z-40">
-<div class="flex gap-3 max-w-[480px] mx-auto">
-<button class="flex flex-col items-center justify-center w-16 gap-1 text-text-sub-light dark:text-text-sub-dark hover:text-primary transition-colors">
-<span class="material-symbols-outlined">ios_share</span>
-<span class="text-[10px] font-medium">Share</span>
-</button>
-<button class="flex flex-col items-center justify-center w-16 gap-1 text-text-sub-light dark:text-text-sub-dark hover:text-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
-<span class="text-[10px] font-medium">Save</span>
-</button>
-<button class="flex-1 bg-primary hover:bg-primary-dark text-white font-bold rounded-xl h-12 flex items-center justify-center gap-2 shadow-lg shadow-primary/20 transition-all active:scale-95">
-<span>Book This Trip</span>
-<span class="bg-white/20 px-1.5 py-0.5 rounded text-xs font-medium ml-1">From £390</span>
-</button>
-</div>
-</div>
 
+        <!-- Hero Content -->
+        <div class="absolute bottom-0 left-0 w-full p-5 sm:p-6 lg:p-10 z-20">
+            <!-- Info Pills -->
+            <div class="flex flex-wrap items-center gap-2 mb-3">
+                <span class="bg-white/20 backdrop-blur-md text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full">Snowdonia</span>
+                <span class="bg-white/20 backdrop-blur-md text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm">hiking</span> Intermediate
+                </span>
+                <span class="hidden sm:flex bg-white/20 backdrop-blur-md text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full items-center gap-1">
+                    <span class="material-symbols-outlined text-sm">calendar_month</span> Apr-Oct
+                </span>
+            </div>
+
+            <h1 class="text-white text-2xl sm:text-3xl lg:text-5xl font-black leading-tight mb-2 lg:mb-3">
+                3-Day Snowdonia Adventure Weekend
+            </h1>
+            <p class="text-gray-200 text-sm sm:text-base lg:text-lg max-w-2xl hidden sm:block">
+                Conquer the highest peak in Wales, explore ancient slate caverns, and experience the thrill of the world's fastest zip line.
+            </p>
+        </div>
     </div>
 
-    <!-- DESKTOP LAYOUT (>= 1024px) -->
-    <div class="desktop-layout">
-        
-<!-- Navigation -->
-<header class="sticky top-0 z-50 bg-surface-light dark:bg-surface-dark border-b border-[#f2f2f3] dark:border-gray-800 px-4 md:px-10 py-3 shadow-sm">
-<div class="max-w-[1280px] mx-auto flex items-center justify-between whitespace-nowrap">
-<div class="flex items-center gap-8">
-<a class="flex items-center gap-4 text-[#141515] dark:text-white group" href="#">
-<div class="size-8 text-primary">
-<span class="material-symbols-outlined text-[32px]">landscape</span>
-</div>
-<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Wild Wales</h2>
-</a>
-<nav class="hidden md:flex items-center gap-9">
-<a class="text-[#141515] dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">Adventures</a>
-<a class="text-[#141515] dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">Destinations</a>
-<a class="text-[#141515] dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">Journal</a>
-<a class="text-[#141515] dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">About</a>
-</nav>
-</div>
-<div class="flex items-center gap-4">
-<label class="hidden sm:flex flex-col min-w-40 h-10 max-w-64">
-<div class="flex w-full flex-1 items-center rounded-xl h-full bg-[#f2f2f3] dark:bg-gray-800 transition-colors">
-<div class="flex items-center justify-center pl-4 text-[#71767a] dark:text-gray-400">
-<span class="material-symbols-outlined">search</span>
-</div>
-<input class="w-full bg-transparent border-none focus:ring-0 text-[#141515] dark:text-white placeholder:text-[#71767a] px-3 text-sm font-medium" placeholder="Search adventures..."/>
-</div>
-</label>
-<button class="flex items-center justify-center rounded-xl h-10 px-5 bg-primary hover:bg-primary-dark text-white text-sm font-bold transition-colors">
-                    Log In
-                </button>
-</div>
-</div>
-</header>
-<main class="flex-grow w-full max-w-[1280px] mx-auto px-4 md:px-10 py-6">
-<!-- Breadcrumbs -->
-<div class="flex flex-wrap items-center gap-2 mb-6 text-sm">
-<a class="text-[#71767a] dark:text-gray-400 hover:text-primary transition-colors" href="#">Home</a>
-<span class="text-[#71767a] dark:text-gray-600">/</span>
-<a class="text-[#71767a] dark:text-gray-400 hover:text-primary transition-colors" href="#">Adventures</a>
-<span class="text-[#71767a] dark:text-gray-600">/</span>
-<span class="text-[#141515] dark:text-gray-200 font-medium">Snowdonia Weekend</span>
-</div>
-<!-- Hero Section -->
-<div class="relative w-full rounded-2xl overflow-hidden mb-10 group cursor-pointer shadow-lg">
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 transition-opacity duration-500"></div>
-<div class="h-[480px] w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="misty mountain peaks of snowdonia at sunrise" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAEUyohbpsTUFHHJtAlcy9MneD0i_tOGP_HFfMAOMy_pktdyQcStBBjgV-7as3326lyD2A1HxqgeVRNMEC9VduFFY1JPviA73nTCfC_Icosnc8CVNzcF1aI_o8ibWVfOtPc_qje5Z5txeS7tT5E4drsDN6p97gqyTs6syYO-z5aDZVnhR4meTUTtrELKwJ7krPRgLP5ZNJBJarLJNO65JJFCz_SSOs0irVlciLyCCraLupMo83XiJBk2NKTbI6UCT6HZOn2Ax1RNw');">
-</div>
-<div class="absolute bottom-0 left-0 w-full p-6 md:p-10 z-20 flex flex-col md:flex-row md:items-end justify-between gap-6">
-<div class="flex flex-col gap-3 max-w-2xl">
-<div class="flex items-center gap-3 text-white/90 text-sm font-semibold tracking-wider uppercase">
-<span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full">3 Days</span>
-<span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1">
-<span class="material-symbols-outlined text-[16px]">hiking</span> Moderate
-                        </span>
-</div>
-<h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
-                        3-Day Snowdonia Adventure Weekend
-                    </h1>
-<p class="text-gray-200 text-lg max-w-xl">
-                        Conquer the highest peak in Wales, explore ancient slate caverns, and experience the thrill of the world's fastest zip line.
-                    </p>
-</div>
-<div class="hidden md:block">
-<!-- Desktop play button style indicator or just aesthetic spacer -->
-<button class="size-14 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-white/30 transition-all">
-<span class="material-symbols-outlined text-3xl">play_arrow</span>
-</button>
-</div>
-</div>
-</div>
-<!-- Main Content Grid -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 pb-20">
-<!-- Left Column: Itinerary & Map (8 cols) -->
-<div class="lg:col-span-8 flex flex-col gap-10">
-<!-- Section: Timeline -->
-<div>
-<div class="flex items-center justify-between mb-6">
-<h2 class="text-2xl md:text-3xl font-bold text-[#141515] dark:text-white">Daily Itinerary</h2>
-<button class="text-primary hover:text-primary-dark font-medium text-sm flex items-center gap-1">
-                            Download PDF <span class="material-symbols-outlined text-lg">download</span>
-</button>
-</div>
-<div class="relative pl-2">
-<!-- Connecting Line Background -->
-<div class="absolute left-[27px] top-4 bottom-4 w-[2px] bg-[#dfe1e2] dark:bg-gray-700"></div>
-<!-- Item 1 -->
-<div class="relative grid grid-cols-[56px_1fr] gap-4 mb-10 group">
-<div class="flex flex-col items-center z-10">
-<div class="size-14 rounded-full bg-white dark:bg-surface-dark border-2 border-[#dfe1e2] dark:border-gray-700 group-hover:border-primary group-hover:text-primary transition-colors flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-2xl">flag</span>
-</div>
-</div>
-<div class="pt-2">
-<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-2">
-<h3 class="text-xl font-bold text-[#141515] dark:text-white">Arrival &amp; Briefing</h3>
-<span class="text-sm font-medium text-primary bg-primary/10 px-2 py-0.5 rounded">Day 1 - 16:00</span>
-</div>
-<p class="text-[#71767a] dark:text-gray-400 leading-relaxed mb-4">
-                                    Meet your guides and fellow adventurers at our base camp in Llanberis. We'll go over the kit list, weather forecast, and safety briefing before enjoying a welcome dinner at a local Welsh pub.
-                                </p>
-<div class="flex gap-4">
-<img class="w-24 h-24 object-cover rounded-lg shadow-sm" data-alt="cozy welsh pub interior with fireplace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgduJ00J2gXkfBBwgsfnZKPnQD6iP-8VKer8ZzvcQ5P07Fonn9JgWJmAwq2fiUqT86fLdOT5bGJlEVu3vCueHVFumnjobP5kwXk7kyYpe74ZHMLLrw3TLZZH6GgLNoni-UYAdxhdpA7cvAL72KaLQmIhGvu_A88JrgL8wTHcNNg91E9TEKVAFCt0zAaPBBMdf4x0kXu7hbA2lLb-8Lde9OKYTfGE4SxRKZ6bNUKD_ikiJdJ1I1JtdPgRJdpEQXWovcyjLcrotZVA"/>
-<img class="w-24 h-24 object-cover rounded-lg shadow-sm" data-alt="hiking gear laid out on wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ7sX_30uXDFe1SiswWAJI7pORXMBOJLy1xIpEkuT-iCgNLVc3Pm5kMteRP7aG9AKf44sYxGnh1l6bAdzh0qYSF3qdF4Ik96tLLALIyO3kIiS66ZK91nXsR_vWJ1QHkFZui0CKsEE7fHGmd6NPuwnAPpp9x2OuKjy8yG8F9cPkoKob1T0bu_iSZS2aKlQVyfJkGWr-n1ewtJHzRDWiCAPAWcZMf2kXfU7N-ZMxT_LbY7ybpImGnWS2Wfnq0uWRkBQVnKsuR7G_hw"/>
-</div>
-</div>
-</div>
-<!-- Travel Time Separator -->
-<div class="relative grid grid-cols-[56px_1fr] gap-4 mb-10">
-<div class="flex flex-col items-center z-10 justify-center h-8">
-<div class="w-max bg-[#f2f2f3] dark:bg-gray-800 text-[#71767a] dark:text-gray-400 text-xs font-bold px-2 py-1 rounded border border-[#dfe1e2] dark:border-gray-700">
-                                    Overnight Rest
+    <!-- Quick Stats Row (mobile only) -->
+    <div class="lg:hidden mb-6">
+        <div class="bg-white rounded-xl p-4 shadow-sm border border-border flex justify-between divide-x divide-border">
+            <div class="flex flex-col items-center flex-1">
+                <span class="text-xl font-bold">5</span>
+                <span class="text-xs text-text-muted uppercase">Activities</span>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+                <span class="text-xl font-bold">2</span>
+                <span class="text-xs text-text-muted uppercase">Nights</span>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+                <span class="text-xl font-bold">38</span>
+                <span class="text-xs text-text-muted uppercase">km Hiking</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10">
+
+        <!-- Left Column: Main Content -->
+        <div class="lg:col-span-8 flex flex-col gap-8 lg:gap-10">
+
+            <!-- Day-by-Day Section -->
+            <section>
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold">Daily Itinerary</h2>
+                    <button class="hidden sm:flex text-primary hover:text-primary/80 font-medium text-sm items-center gap-1">
+                        Download PDF <span class="material-symbols-outlined text-lg">download</span>
+                    </button>
+                </div>
+
+                <!-- Timeline -->
+                <div class="relative pl-2">
+                    <!-- Connecting Line -->
+                    <div class="absolute left-[27px] top-4 bottom-16 w-[2px] bg-border hidden sm:block"></div>
+
+                    <!-- Day 1 Header -->
+                    <div class="bg-accent/10 rounded-xl p-4 mb-6 flex items-start gap-4">
+                        <div class="bg-accent text-white font-bold text-lg h-12 w-12 rounded-lg flex items-center justify-center shrink-0 shadow-sm">
+                            01
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Arrival & Zip World</h3>
+                            <p class="text-sm text-text-muted mt-1">Start your adventure with adrenaline at the world's fastest zipline.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Items -->
+                    <div class="space-y-6 sm:space-y-8 ml-0 sm:ml-2">
+
+                        <!-- Item 1 -->
+                        <div class="timeline-item relative sm:grid sm:grid-cols-[56px_1fr] sm:gap-4">
+                            <div class="hidden sm:flex flex-col items-center z-10">
+                                <div class="size-14 rounded-full bg-white border-2 border-border flex items-center justify-center shadow-sm">
+                                    <span class="material-symbols-outlined text-primary">flag</span>
                                 </div>
-</div>
-<div></div>
-</div>
-<!-- Item 2 -->
-<div class="relative grid grid-cols-[56px_1fr] gap-4 mb-10 group">
-<div class="flex flex-col items-center z-10">
-<div class="size-14 rounded-full bg-white dark:bg-surface-dark border-2 border-[#dfe1e2] dark:border-gray-700 group-hover:border-primary group-hover:text-primary transition-colors flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-2xl">hiking</span>
-</div>
-</div>
-<div class="pt-2">
-<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-2">
-<h3 class="text-xl font-bold text-[#141515] dark:text-white">Summit Hike</h3>
-<span class="text-sm font-medium text-primary bg-primary/10 px-2 py-0.5 rounded">Day 2 - 09:00</span>
-</div>
-<p class="text-[#71767a] dark:text-gray-400 leading-relaxed mb-3">
-                                    We take the Pyg Track up to the summit of Snowdon (Yr Wyddfa). This moderate route offers stunning views of the lakes below. Lunch on the summit before descending via the Miners Track.
-                                </p>
-<ul class="flex flex-wrap gap-2 text-sm text-[#547183] dark:text-gray-300">
-<li class="flex items-center gap-1 bg-background-light dark:bg-gray-800 px-2 py-1 rounded border border-gray-200 dark:border-gray-700">
-<span class="material-symbols-outlined text-sm">timer</span> 6 Hours
-                                    </li>
-<li class="flex items-center gap-1 bg-background-light dark:bg-gray-800 px-2 py-1 rounded border border-gray-200 dark:border-gray-700">
-<span class="material-symbols-outlined text-sm">vertical_align_top</span> 1,085m Elevation
-                                    </li>
-</ul>
-</div>
-</div>
-<!-- Item 3 -->
-<div class="relative grid grid-cols-[56px_1fr] gap-4 mb-10 group">
-<div class="flex flex-col items-center z-10">
-<div class="size-14 rounded-full bg-white dark:bg-surface-dark border-2 border-[#dfe1e2] dark:border-gray-700 group-hover:border-primary group-hover:text-primary transition-colors flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-2xl">local_activity</span>
-</div>
-</div>
-<div class="pt-2">
-<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-2">
-<h3 class="text-xl font-bold text-[#141515] dark:text-white">Zip World Adventure</h3>
-<span class="text-sm font-medium text-primary bg-primary/10 px-2 py-0.5 rounded">Day 3 - 10:00</span>
-</div>
-<p class="text-[#71767a] dark:text-gray-400 leading-relaxed">
-                                    Adrenaline time! We head to Penrhyn Quarry to ride Velocity 2, the fastest zip line in the world. Fly over the quarry lake at speeds over 100mph.
-                                </p>
-</div>
-</div>
-<!-- Item 4 (End) -->
-<div class="relative grid grid-cols-[56px_1fr] gap-4 group">
-<div class="flex flex-col items-center z-10">
-<div class="size-14 rounded-full bg-white dark:bg-surface-dark border-2 border-[#dfe1e2] dark:border-gray-700 group-hover:border-primary group-hover:text-primary transition-colors flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-2xl">directions_bus</span>
-</div>
-</div>
-<div class="pt-2">
-<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-2">
-<h3 class="text-xl font-bold text-[#141515] dark:text-white">Departure</h3>
-<span class="text-sm font-medium text-primary bg-primary/10 px-2 py-0.5 rounded">Day 3 - 14:00</span>
-</div>
-<p class="text-[#71767a] dark:text-gray-400 leading-relaxed">
-                                    After a hearty lunch, we say our goodbyes. Transport back to the train station is provided.
-                                </p>
-</div>
-</div>
-</div>
-</div>
-<!-- Section: Map -->
-<div class="pt-8 border-t border-gray-100 dark:border-gray-800">
-<div class="flex items-center justify-between mb-6">
-<h2 class="text-2xl font-bold text-[#141515] dark:text-white">Your Route</h2>
-<div class="flex bg-gray-100 dark:bg-gray-800 p-1 rounded-lg">
-<button class="px-4 py-1.5 text-sm font-bold rounded bg-white dark:bg-gray-700 text-primary shadow-sm">Day 1</button>
-<button class="px-4 py-1.5 text-sm font-medium rounded text-gray-500 hover:text-gray-700 dark:text-gray-400">Day 2</button>
-<button class="px-4 py-1.5 text-sm font-medium rounded text-gray-500 hover:text-gray-700 dark:text-gray-400">Day 3</button>
-</div>
-</div>
-<div class="relative w-full h-[400px] rounded-2xl overflow-hidden bg-gray-200 border border-gray-200 dark:border-gray-800">
-<!-- Map Placeholder Overlay -->
-<div class="absolute inset-0 bg-cover bg-center opacity-80" data-alt="topographic map of snowdonia national park" data-location="Snowdonia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDl_i7QGSMClyj_Uga1wOVIk3KqWHPXsOqidx9q0dQTDn53E0KYLS-GFLFGyu4Z4IUx7q5weluy-Ob9RZkqmRs9h1tAUM2cXuVgFpOoArvpP5isT8o9M_mBVJ_6Zi0JIhMnKtpkHrULIKH_2X0WesU6sN-l7sqTgZCcL2cijBShXJXa2ja1cfLHB4qPTMXIvFC64EKJTYUA2phNThk9XNlY21rSwtfAANoRFdV3iXK96b41NKMtYnfbuAN1rPvl2ZaDOBojirNjcg');">
-</div>
-<!-- Map Interactive Elements Simulation -->
-<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-<div class="relative group cursor-pointer">
-<div class="size-4 bg-primary rounded-full animate-ping absolute"></div>
-<div class="size-4 bg-primary rounded-full relative border-2 border-white shadow-lg"></div>
-<div class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-white dark:bg-surface-dark px-3 py-1 rounded shadow-lg text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
-                                    Start Point: Llanberis
+                            </div>
+                            <div class="bg-white rounded-xl p-4 shadow-sm border border-border">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="sm:hidden material-symbols-outlined text-primary text-xl">flag</span>
+                                    <span class="text-xs font-bold text-text-muted">10:00 AM</span>
+                                    <span class="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded">Day 1</span>
                                 </div>
-</div>
-</div>
-<div class="absolute bottom-4 right-4 bg-white/90 dark:bg-gray-900/90 backdrop-blur p-2 rounded-lg shadow-sm text-xs text-gray-500">
-                             Interactive Map Preview
-                         </div>
-</div>
-</div>
-</div>
-<!-- Right Column: Sticky Enquiry Card (4 cols) -->
-<div class="lg:col-span-4 relative">
-<div class="sticky top-24 flex flex-col gap-6">
-<!-- Booking Card -->
-<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800">
-<div class="flex items-end gap-2 mb-6">
-<span class="text-sm text-gray-500 dark:text-gray-400 mb-1">From</span>
-<span class="text-3xl font-bold text-[#141515] dark:text-white">£250</span>
-<span class="text-sm text-gray-500 dark:text-gray-400 mb-1">per person</span>
-</div>
-<div class="space-y-4 mb-6">
-<div class="space-y-1">
-<label class="text-xs font-bold uppercase tracking-wider text-gray-500">Select Date</label>
-<div class="relative">
-<select class="w-full bg-[#f7f7f7] dark:bg-gray-800 border-none rounded-xl px-4 py-3 text-[#141515] dark:text-white font-medium focus:ring-2 focus:ring-primary cursor-pointer appearance-none">
-<option>Oct 14 - Oct 16, 2023</option>
-<option>Oct 21 - Oct 23, 2023</option>
-<option>Nov 04 - Nov 06, 2023</option>
-</select>
-<div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">
-<span class="material-symbols-outlined">expand_more</span>
-</div>
-</div>
-</div>
-<div class="space-y-1">
-<label class="text-xs font-bold uppercase tracking-wider text-gray-500">Guests</label>
-<div class="flex items-center justify-between bg-[#f7f7f7] dark:bg-gray-800 rounded-xl px-4 py-2">
-<button class="size-8 rounded-lg bg-white dark:bg-gray-700 shadow-sm flex items-center justify-center text-primary font-bold hover:bg-gray-50 dark:hover:bg-gray-600 transition">-</button>
-<span class="font-bold text-[#141515] dark:text-white">2 Guests</span>
-<button class="size-8 rounded-lg bg-white dark:bg-gray-700 shadow-sm flex items-center justify-center text-primary font-bold hover:bg-gray-50 dark:hover:bg-gray-600 transition">+</button>
-</div>
-</div>
-</div>
-<button class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3.5 rounded-xl shadow-lg shadow-primary/30 transition-all transform active:scale-95 mb-4">
-                            Enquire Now
+                                <h4 class="font-bold mb-2">Arrive at Betws-y-Coed</h4>
+                                <p class="text-sm text-text-muted leading-relaxed">Check in to your base camp at the Royal Oak Hotel. Briefing with your guide and gear check.</p>
+                            </div>
+                        </div>
+
+                        <!-- Travel Indicator -->
+                        <div class="hidden sm:flex ml-[13px] items-center">
+                            <div class="bg-gray-100 px-3 py-1 rounded text-xs font-medium text-text-muted flex items-center gap-1 border border-border">
+                                <span class="material-symbols-outlined text-xs">directions_car</span> 25 min drive
+                            </div>
+                        </div>
+
+                        <!-- Item 2 (with image) -->
+                        <div class="timeline-item relative sm:grid sm:grid-cols-[56px_1fr] sm:gap-4">
+                            <div class="hidden sm:flex flex-col items-center z-10">
+                                <div class="size-14 rounded-full bg-white border-2 border-border flex items-center justify-center shadow-sm">
+                                    <span class="material-symbols-outlined text-primary">paragliding</span>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-border">
+                                <div class="h-40 sm:h-48 w-full bg-cover bg-center"
+                                     style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAJzWi33q5ZTJ1IK7IOiYsIqNDfIRBjAWstJGcQ-taG_ziD3sk4Z3uuEa-9hDNrnEqafpWgBIsPHatyEQOKmSWn2Pq9HuZVofQakknQHWpYsAgcjTPIGSMN3hO5u6EpMs_upvTIWfO-E8-oovqD1cvaSyIwrsvamnopj0-9LWrpdOIw43j7DkH8df5sGrPPDHB2kqclQblxLfnZVp0Ez0KbqvAM0Rq79BBTdY_PeSu8NmVxn8319gkxJGqiBnsd3b9odzM0ZEZwok4');">
+                                </div>
+                                <div class="p-4">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="sm:hidden material-symbols-outlined text-primary text-xl">paragliding</span>
+                                        <span class="text-xs font-bold text-text-muted">01:00 PM</span>
+                                    </div>
+                                    <h4 class="font-bold mb-2">Velocity 2 at Zip World</h4>
+                                    <p class="text-sm text-text-muted leading-relaxed mb-3">Prepare for flight. Reach speeds of over 100mph over Penrhyn Quarry.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded font-medium">Included</span>
+                                        <span class="px-2 py-1 bg-gray-100 text-text-muted text-xs rounded font-medium">2 Hours</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="timeline-item relative sm:grid sm:grid-cols-[56px_1fr] sm:gap-4">
+                            <div class="hidden sm:flex flex-col items-center z-10">
+                                <div class="size-14 rounded-full bg-white border-2 border-border flex items-center justify-center shadow-sm">
+                                    <span class="material-symbols-outlined text-text-muted">restaurant</span>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 shadow-sm border border-border">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="sm:hidden material-symbols-outlined text-text-muted text-xl">restaurant</span>
+                                    <span class="text-xs font-bold text-text-muted">07:00 PM</span>
+                                </div>
+                                <h4 class="font-bold mb-2">Group Dinner</h4>
+                                <p class="text-sm text-text-muted">Traditional Welsh dinner at The Stables Bar. Try the local lamb stew.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 2 Preview -->
+                    <div class="mt-8 opacity-60 relative">
+                        <div class="bg-gray-100 rounded-xl p-4 flex items-start gap-4">
+                            <div class="bg-gray-300 text-white font-bold text-lg h-12 w-12 rounded-lg flex items-center justify-center shrink-0">
+                                02
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Summiting Snowdon</h4>
+                                <p class="text-sm text-text-muted mt-1">The big climb via the Pyg Track...</p>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-background"></div>
+                    </div>
+
+                    <div class="flex justify-center mt-4">
+                        <button class="text-primary font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                            View Full Itinerary <span class="material-symbols-outlined text-sm">expand_more</span>
                         </button>
-<p class="text-center text-xs text-gray-400">No payment required today</p>
-</div>
-<!-- Inclusions Card -->
-<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-800">
-<h3 class="font-bold text-lg mb-4 text-[#141515] dark:text-white">What's Included</h3>
-<ul class="space-y-3">
-<li class="flex items-start gap-3">
-<div class="min-w-5 pt-0.5 text-primary">
-<span class="material-symbols-outlined text-[20px]">check_circle</span>
-</div>
-<span class="text-sm text-gray-600 dark:text-gray-300">2 Nights accommodation in 4* Hotel</span>
-</li>
-<li class="flex items-start gap-3">
-<div class="min-w-5 pt-0.5 text-primary">
-<span class="material-symbols-outlined text-[20px]">check_circle</span>
-</div>
-<span class="text-sm text-gray-600 dark:text-gray-300">Local expert mountain guides</span>
-</li>
-<li class="flex items-start gap-3">
-<div class="min-w-5 pt-0.5 text-primary">
-<span class="material-symbols-outlined text-[20px]">check_circle</span>
-</div>
-<span class="text-sm text-gray-600 dark:text-gray-300">All meals (Breakfast, Lunch, Dinner)</span>
-</li>
-<li class="flex items-start gap-3">
-<div class="min-w-5 pt-0.5 text-primary">
-<span class="material-symbols-outlined text-[20px]">check_circle</span>
-</div>
-<span class="text-sm text-gray-600 dark:text-gray-300">Zip World Velocity 2 Ticket</span>
-</li>
-</ul>
-</div>
-<!-- Contact Support -->
-<div class="flex items-center justify-center gap-2 p-4 rounded-xl bg-primary/5 border border-primary/10">
-<span class="material-symbols-outlined text-primary">support_agent</span>
-<a class="text-sm font-bold text-primary hover:underline" href="#">Speak to an expert</a>
-</div>
-</div>
-</div>
-</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Map Section -->
+            <section class="pt-6 border-t border-border">
+                <div class="flex items-center justify-between mb-4 lg:mb-6">
+                    <h2 class="text-xl sm:text-2xl font-bold">Your Route</h2>
+                    <div class="hidden sm:flex bg-gray-100 p-1 rounded-lg">
+                        <button class="px-3 py-1.5 text-sm font-bold rounded bg-white text-primary shadow-sm">Day 1</button>
+                        <button class="px-3 py-1.5 text-sm font-medium rounded text-text-muted hover:text-text-primary">Day 2</button>
+                        <button class="px-3 py-1.5 text-sm font-medium rounded text-text-muted hover:text-text-primary">Day 3</button>
+                    </div>
+                </div>
+
+                <div class="relative w-full h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden bg-gray-200 border border-border">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-80"
+                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDl_i7QGSMClyj_Uga1wOVIk3KqWHPXsOqidx9q0dQTDn53E0KYLS-GFLFGyu4Z4IUx7q5weluy-Ob9RZkqmRs9h1tAUM2cXuVgFpOoArvpP5isT8o9M_mBVJ_6Zi0JIhMnKtpkHrULIKH_2X0WesU6sN-l7sqTgZCcL2cijBShXJXa2ja1cfLHB4qPTMXIvFC64EKJTYUA2phNThk9XNlY21rSwtfAANoRFdV3iXK96b41NKMtYnfbuAN1rPvl2ZaDOBojirNjcg');">
+                    </div>
+
+                    <!-- Map Pins -->
+                    <div class="absolute top-1/4 left-1/4 flex flex-col items-center">
+                        <span class="bg-white text-xs font-bold px-2 py-1 rounded shadow-md mb-1">Start</span>
+                        <span class="material-symbols-outlined text-primary text-3xl drop-shadow-md">location_on</span>
+                    </div>
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <span class="material-symbols-outlined text-white text-3xl drop-shadow-md">location_on</span>
+                    </div>
+                    <div class="absolute bottom-1/3 right-1/4">
+                        <span class="material-symbols-outlined text-accent text-3xl drop-shadow-md">flag</span>
+                    </div>
+
+                    <!-- Route Line -->
+                    <svg class="absolute inset-0 w-full h-full pointer-events-none">
+                        <path d="M 90 60 Q 180 120 270 160" fill="none" stroke="#f97316" stroke-dasharray="5,5" stroke-width="3"/>
+                    </svg>
+
+                    <button class="absolute bottom-3 right-3 bg-white p-2 rounded-lg shadow-lg">
+                        <span class="material-symbols-outlined">open_in_full</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Planning Section (mobile) -->
+            <section class="lg:hidden pt-6 border-t border-border">
+                <h2 class="text-xl font-bold mb-4">Planning</h2>
+
+                <!-- Cost Breakdown -->
+                <div class="bg-white rounded-xl p-5 border border-border shadow-sm mb-4">
+                    <h3 class="font-bold mb-3">Estimated Costs (per person)</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-muted">Accommodation (2 nights)</span>
+                            <span class="font-medium">£180</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-muted">Activities & Gear</span>
+                            <span class="font-medium">£120</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-muted">Food & Drink</span>
+                            <span class="font-medium">£90</span>
+                        </div>
+                        <div class="h-px bg-border my-2"></div>
+                        <div class="flex justify-between font-bold">
+                            <span>Total</span>
+                            <span class="text-primary">~£390</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customize CTA -->
+                <div class="bg-primary/5 rounded-xl p-5 flex flex-col items-center text-center border border-primary/20">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-2">edit_calendar</span>
+                    <h3 class="font-bold text-lg">Make it yours</h3>
+                    <p class="text-sm text-text-muted mt-1 mb-4">Swap activities or adjust dates to fit your schedule.</p>
+                    <button class="bg-white text-primary font-bold py-2.5 px-6 rounded-lg shadow-sm border border-border w-full hover:bg-gray-50 transition-colors">
+                        Start Planning
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Right Column: Sidebar (desktop) -->
+        <aside class="hidden lg:block lg:col-span-4">
+            <div class="sticky top-24 space-y-6">
+
+                <!-- Booking Card -->
+                <div class="bg-white p-6 rounded-2xl shadow-xl border border-border">
+                    <div class="flex items-end gap-2 mb-6">
+                        <span class="text-sm text-text-muted mb-1">From</span>
+                        <span class="text-3xl font-bold">£250</span>
+                        <span class="text-sm text-text-muted mb-1">per person</span>
+                    </div>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold uppercase tracking-wider text-text-muted">Select Date</label>
+                            <div class="relative">
+                                <select class="w-full bg-gray-100 border-none rounded-xl px-4 py-3 font-medium focus:ring-2 focus:ring-primary cursor-pointer appearance-none">
+                                    <option>Oct 14 - Oct 16, 2023</option>
+                                    <option>Oct 21 - Oct 23, 2023</option>
+                                    <option>Nov 04 - Nov 06, 2023</option>
+                                </select>
+                                <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-text-muted">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold uppercase tracking-wider text-text-muted">Guests</label>
+                            <div class="flex items-center justify-between bg-gray-100 rounded-xl px-4 py-2">
+                                <button class="size-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-primary font-bold hover:bg-gray-50 transition">-</button>
+                                <span class="font-bold">2 Guests</span>
+                                <button class="size-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-primary font-bold hover:bg-gray-50 transition">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-accent hover:bg-accent/90 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-accent/30 transition-all active:scale-95 mb-4">
+                        Enquire Now
+                    </button>
+                    <p class="text-center text-xs text-text-muted">No payment required today</p>
+                </div>
+
+                <!-- What's Included -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-border">
+                    <h3 class="font-bold text-lg mb-4">What's Included</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                            <span class="text-sm text-text-muted">2 Nights accommodation in 4* Hotel</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                            <span class="text-sm text-text-muted">Local expert mountain guides</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                            <span class="text-sm text-text-muted">All meals (Breakfast, Lunch, Dinner)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                            <span class="text-sm text-text-muted">Zip World Velocity 2 Ticket</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Support -->
+                <div class="flex items-center justify-center gap-2 p-4 rounded-xl bg-primary/5 border border-primary/10">
+                    <span class="material-symbols-outlined text-primary">support_agent</span>
+                    <a href="#" class="text-sm font-bold text-primary hover:underline">Speak to an expert</a>
+                </div>
+            </div>
+        </aside>
+    </div>
 </main>
 
+<!-- Sticky Bottom Bar (mobile) -->
+<div class="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-border p-4 pb-6 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] z-40">
+    <div class="flex gap-3 max-w-lg mx-auto">
+        <button class="flex flex-col items-center justify-center w-14 gap-1 text-text-muted hover:text-primary transition-colors">
+            <span class="material-symbols-outlined">ios_share</span>
+            <span class="text-[10px] font-medium">Share</span>
+        </button>
+        <button class="flex flex-col items-center justify-center w-14 gap-1 text-text-muted hover:text-primary transition-colors">
+            <span class="material-symbols-outlined">favorite</span>
+            <span class="text-[10px] font-medium">Save</span>
+        </button>
+        <button class="flex-1 bg-accent hover:bg-accent/90 text-white font-bold rounded-xl h-12 flex items-center justify-center gap-2 shadow-lg shadow-accent/20 transition-all active:scale-95">
+            <span>Book This Trip</span>
+            <span class="bg-white/20 px-2 py-0.5 rounded text-xs font-medium">From £250</span>
+        </button>
     </div>
+</div>
 
-    <!-- Dev info bar -->
-    <div class="dev-bar">
-        <div>
-            <span class="badge">Itinerary Detail</span>
-            <code>/itineraries/3-day-adventure</code>
-        </div>
-        <div>
-            <span class="lg:hidden">Mobile View</span>
-            <span class="hidden lg:inline">Desktop View</span>
-            &bull; Resize browser to switch
-        </div>
+<!-- Dev info bar -->
+<div class="dev-bar">
+    <div>
+        <span class="badge">04</span>
+        <code>/itineraries/3-day-adventure</code>
     </div>
+    <div>
+        True Responsive Design
+    </div>
+</div>
 
 </body>
 </html>

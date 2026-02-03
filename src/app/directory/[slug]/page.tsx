@@ -1,0 +1,510 @@
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { 
+  getOperatorWithActivities,
+  getOperators,
+  getAllActivityTypes
+} from "@/lib/queries";
+import { ActivityCard } from "@/components/cards/activity-card";
+import { 
+  ChevronRight, 
+  MapPin, 
+  Star, 
+  Globe, 
+  Phone, 
+  Mail, 
+  Clock,
+  CheckCircle,
+  Shield,
+  Award,
+  Users,
+  Calendar,
+  Heart,
+  Share2,
+  ExternalLink,
+  ArrowRight,
+  Verified
+} from "lucide-react";
+
+interface Props {
+  params: Promise<{ slug: string }>;
+}
+
+function formatTrustSignals(signals: any): { icon: string; label: string }[] {
+  if (!signals) return [];
+  
+  const formatted: { icon: string; label: string }[] = [];
+  
+  // Common trust signals
+  if (signals.bcorp || signals.bCorp) {
+    formatted.push({ icon: "verified", label: "B Corp" });
+  }
+  if (signals.aala || signals.AALA) {
+    formatted.push({ icon: "shield", label: "AALA Licensed" });
+  }
+  if (signals.tripadvisor_excellent || signals.tripadvisorExcellent) {
+    formatted.push({ icon: "award", label: "TripAdvisor Excellent" });
+  }
+  if (signals.established || signals.yearsExperience) {
+    const years = signals.established || signals.yearsExperience;
+    formatted.push({ icon: "history", label: `${years}+ Years` });
+  }
+  if (signals.localExperts) {
+    formatted.push({ icon: "users", label: "Local Experts" });
+  }
+  
+  return formatted;
+}
+
+function getTrustIcon(iconName: string) {
+  switch (iconName) {
+    case "verified": return <Verified className="w-4 h-4" />;
+    case "shield": return <Shield className="w-4 h-4" />;
+    case "award": return <Award className="w-4 h-4" />;
+    case "history": return <Clock className="w-4 h-4" />;
+    case "users": return <Users className="w-4 h-4" />;
+    default: return <CheckCircle className="w-4 h-4" />;
+  }
+}
+
+export default async function OperatorProfilePage({ params }: Props) {
+  const { slug } = await params;
+  const data = await getOperatorWithActivities(slug);
+
+  if (!data) {
+    notFound();
+  }
+
+  const operator = data;
+  const activities = data.activities || [];
+  const trustSignals = formatTrustSignals(operator.trustSignals);
+
+  // Get activity types for this operator's activities
+  const activityTypes = await getAllActivityTypes();
+
+  return (
+    <div className="min-h-screen pb-24 lg:pb-12">
+      {/* Hero / Cover Image */}
+      <div className="relative w-full h-48 sm:h-64 lg:h-80 overflow-hidden lg:mx-auto lg:max-w-7xl lg:mt-6 lg:rounded-2xl lg:px-4">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
+        <div 
+          className="absolute inset-0 bg-cover bg-center lg:rounded-2xl"
+          style={{ 
+            backgroundImage: operator.coverImage 
+              ? `url('${operator.coverImage}')` 
+              : `url('/images/activities/hiking-hero.jpg')` 
+          }}
+        />
+
+        {/* Cover Actions (desktop) */}
+        <div className="absolute top-4 right-4 lg:right-8 z-20 hidden lg:flex gap-2">
+          <button className="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white p-2 rounded-lg transition-colors">
+            <Heart className="w-5 h-5" />
+          </button>
+          <button className="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white p-2 rounded-lg transition-colors">
+            <Share2 className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Profile Header */}
+        <div className="relative -mt-16 sm:-mt-20 z-20 mb-6">
+          <div className="flex flex-col items-center lg:flex-row lg:items-end lg:justify-between gap-4 lg:gap-6">
+            {/* Logo + Info */}
+            <div className="flex flex-col items-center lg:flex-row lg:items-end gap-4 lg:gap-6">
+              {/* Logo */}
+              <div className="h-28 w-28 sm:h-32 sm:w-32 lg:h-40 lg:w-40 rounded-2xl bg-white p-2 shadow-lg ring-1 ring-black/5">
+                {operator.logoUrl ? (
+                  <img 
+                    src={operator.logoUrl} 
+                    alt={operator.name}
+                    className="w-full h-full rounded-xl object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-full rounded-xl bg-[#1e3a4c] flex items-center justify-center">
+                    <span className="font-display font-black text-white text-3xl sm:text-4xl lg:text-5xl tracking-tighter">
+                      {operator.name.charAt(0)}
+                    </span>
+                  </div>
+                )}
+              </div>
+
+              {/* Info */}
+              <div className="flex flex-col items-center lg:items-start text-center lg:text-left pb-2 lg:pb-4">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1e3a4c] leading-tight">
+                  {operator.name}
+                </h1>
+                {operator.tagline && (
+                  <p className="text-gray-500 text-sm sm:text-base mt-1">{operator.tagline}</p>
+                )}
+                <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-1 text-sm text-gray-600 mt-2">
+                  {operator.address && (
+                    <span className="flex items-center gap-1">
+                      <MapPin className="w-4 h-4 text-[#1e3a4c]" />
+                      {operator.address.split(",")[0]}
+                    </span>
+                  )}
+                  {operator.googleRating && (
+                    <>
+                      <span className="hidden sm:inline text-gray-300">•</span>
+                      <span className="flex items-center gap-1">
+                        <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
+                        <span className="font-semibold text-[#1e3a4c]">{operator.googleRating}</span>
+                        {operator.reviewCount && <span>({operator.reviewCount} reviews)</span>}
+                      </span>
+                    </>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Claim Status Badge (desktop) */}
+            {operator.claimStatus === "premium" && (
+              <div className="hidden lg:flex items-center gap-2 pb-4 px-4 py-2 bg-[#f97316]/10 rounded-full">
+                <Verified className="w-5 h-5 text-[#f97316]" />
+                <span className="text-sm font-bold text-[#f97316]">Premium Partner</span>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Trust Badges */}
+        {trustSignals.length > 0 && (
+          <div className="flex gap-2 sm:gap-3 pb-4 flex-wrap justify-center lg:justify-start">
+            {trustSignals.map((signal, i) => (
+              <div 
+                key={i}
+                className="flex h-8 items-center gap-2 rounded-full bg-gray-100 px-3 sm:px-4 border border-gray-200"
+              >
+                {getTrustIcon(signal.icon)}
+                <span className="text-xs font-bold text-gray-700">{signal.label}</span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Quick Stats (mobile/tablet) */}
+        <div className="flex gap-3 pb-4 lg:hidden">
+          <div className="flex-1 flex flex-col gap-1 rounded-xl p-4 bg-white border border-gray-200 shadow-sm">
+            <div className="flex items-center gap-2 mb-1">
+              <Calendar className="w-5 h-5 text-[#1e3a4c]" />
+              <span className="text-gray-500 text-sm font-medium">Activities</span>
+            </div>
+            <span className="text-xl font-bold text-[#1e3a4c]">{activities.length}</span>
+          </div>
+          <div className="flex-1 flex flex-col gap-1 rounded-xl p-4 bg-white border border-gray-200 shadow-sm">
+            <div className="flex items-center gap-2 mb-1">
+              <Star className="w-5 h-5 text-yellow-500" />
+              <span className="text-gray-500 text-sm font-medium">Rating</span>
+            </div>
+            <span className="text-xl font-bold text-[#1e3a4c]">{operator.googleRating || "N/A"}</span>
+          </div>
+        </div>
+
+        {/* Sticky Tabs */}
+        <div className="sticky top-[64px] z-30 bg-slate-50 pt-2 pb-0 border-b border-gray-200 -mx-4 px-4 sm:mx-0 sm:px-0">
+          <nav className="flex gap-6 lg:gap-8 overflow-x-auto no-scrollbar">
+            <a className="border-b-2 border-[#1e3a4c] text-[#1e3a4c] font-bold text-sm pb-3 whitespace-nowrap" href="#experiences">
+              Experiences
+            </a>
+            <a className="border-b-2 border-transparent text-gray-500 hover:text-gray-800 font-semibold text-sm pb-3 whitespace-nowrap transition-colors" href="#about">
+              About
+            </a>
+            <a className="border-b-2 border-transparent text-gray-500 hover:text-gray-800 font-semibold text-sm pb-3 whitespace-nowrap transition-colors" href="#reviews">
+              Reviews
+            </a>
+            <a className="border-b-2 border-transparent text-gray-500 hover:text-gray-800 font-semibold text-sm pb-3 whitespace-nowrap transition-colors" href="#contact">
+              Contact
+            </a>
+          </nav>
+        </div>
+
+        {/* Two Column Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 py-6">
+          {/* Main Content Column */}
+          <div className="lg:col-span-8 flex flex-col gap-8">
+            {/* About Section */}
+            <section id="about">
+              <h2 className="text-lg sm:text-xl font-bold text-[#1e3a4c] mb-4">
+                About {operator.name}
+              </h2>
+              {operator.description ? (
+                <div className="text-gray-600 leading-relaxed space-y-4">
+                  {operator.description.split("\n\n").map((para, i) => (
+                    <p key={i}>{para}</p>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-gray-600 leading-relaxed">
+                  {operator.name} is an adventure operator based in Wales, offering exciting outdoor experiences.
+                </p>
+              )}
+
+              {/* Service Tags */}
+              {operator.serviceTypes && operator.serviceTypes.length > 0 && (
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {operator.serviceTypes.map((service, i) => (
+                    <span 
+                      key={i}
+                      className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-[#1e3a4c]/10 border border-[#1e3a4c]/20 text-xs font-semibold text-[#1e3a4c]"
+                    >
+                      <CheckCircle className="w-3 h-3" />
+                      {service}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </section>
+
+            {/* Experiences Grid */}
+            <section id="experiences">
+              <div className="flex items-center justify-between mb-4 sm:mb-6">
+                <h2 className="text-lg sm:text-xl font-bold text-[#1e3a4c]">
+                  Adventures & Experiences
+                </h2>
+                <span className="text-sm text-gray-500">{activities.length} available</span>
+              </div>
+
+              {activities.length > 0 ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {activities.map((item) => (
+                    <ActivityCard
+                      key={item.activity.id}
+                      activity={item.activity}
+                      region={item.region}
+                      operator={item.operator}
+                      activityType={item.activityType}
+                      hideOperator={true}
+                    />
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-12 bg-gray-50 rounded-xl border border-gray-200">
+                  <Calendar className="w-12 h-12 text-gray-300 mx-auto mb-3" />
+                  <p className="text-gray-500">No activities listed yet</p>
+                  <p className="text-sm text-gray-400 mt-1">Check back soon or contact the operator directly</p>
+                </div>
+              )}
+            </section>
+
+            {/* Reviews Section */}
+            <section id="reviews" className="bg-white rounded-xl p-5 sm:p-6 border border-gray-200">
+              <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 items-center">
+                <div className="flex flex-col items-center justify-center min-w-[140px]">
+                  <span className="text-4xl sm:text-5xl font-black text-[#1e3a4c]">
+                    {operator.googleRating || "N/A"}
+                  </span>
+                  {operator.googleRating && (
+                    <div className="flex text-yellow-500 my-2">
+                      {[...Array(5)].map((_, i) => (
+                        <Star 
+                          key={i} 
+                          className={`w-5 h-5 ${i < Math.round(parseFloat(operator.googleRating || "0")) ? "fill-yellow-500" : "fill-gray-200 text-gray-200"}`} 
+                        />
+                      ))}
+                    </div>
+                  )}
+                  <span className="text-sm text-gray-500">
+                    {operator.reviewCount ? `Based on ${operator.reviewCount} reviews` : "No reviews yet"}
+                  </span>
+                </div>
+
+                {/* External Review Links */}
+                <div className="flex-1 flex flex-col gap-3">
+                  {operator.tripadvisorUrl && (
+                    <a 
+                      href={operator.tripadvisorUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                    >
+                      <span className="text-sm font-medium text-gray-700">View on TripAdvisor</span>
+                      <ExternalLink className="w-4 h-4 text-gray-400" />
+                    </a>
+                  )}
+                  {operator.website && (
+                    <a 
+                      href={operator.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                    >
+                      <span className="text-sm font-medium text-gray-700">Visit Website</span>
+                      <ExternalLink className="w-4 h-4 text-gray-400" />
+                    </a>
+                  )}
+                </div>
+              </div>
+            </section>
+
+            {/* Contact Section (mobile) */}
+            <section id="contact" className="lg:hidden bg-white rounded-xl p-5 border border-gray-200">
+              <h3 className="font-bold text-[#1e3a4c] mb-4">Contact Information</h3>
+              <div className="space-y-3">
+                {operator.phone && (
+                  <a href={`tel:${operator.phone}`} className="flex items-center gap-3 text-gray-700">
+                    <Phone className="w-5 h-5 text-[#1e3a4c]" />
+                    <span>{operator.phone}</span>
+                  </a>
+                )}
+                {operator.email && (
+                  <a href={`mailto:${operator.email}`} className="flex items-center gap-3 text-gray-700">
+                    <Mail className="w-5 h-5 text-[#1e3a4c]" />
+                    <span>{operator.email}</span>
+                  </a>
+                )}
+                {operator.website && (
+                  <a href={operator.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-700">
+                    <Globe className="w-5 h-5 text-[#1e3a4c]" />
+                    <span className="truncate">{operator.website.replace(/^https?:\/\//, "")}</span>
+                  </a>
+                )}
+                {operator.address && (
+                  <div className="flex items-start gap-3 text-gray-700">
+                    <MapPin className="w-5 h-5 text-[#1e3a4c] shrink-0 mt-0.5" />
+                    <span>{operator.address}</span>
+                  </div>
+                )}
+              </div>
+            </section>
+          </div>
+
+          {/* Sidebar Column (desktop only) */}
+          <aside className="hidden lg:block lg:col-span-4 space-y-6">
+            {/* Quick Enquiry Card */}
+            <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-lg shadow-gray-200/50 sticky top-[120px]">
+              <h3 className="text-lg font-bold text-[#1e3a4c] mb-4">Quick Enquiry</h3>
+              <form className="flex flex-col gap-4">
+                <div>
+                  <label className="block text-xs font-semibold text-gray-700 mb-1">Your Name</label>
+                  <input 
+                    type="text"
+                    className="w-full rounded-lg bg-gray-50 border-gray-200 text-sm focus:ring-[#1e3a4c] focus:border-[#1e3a4c] px-4 py-2.5"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold text-gray-700 mb-1">Email</label>
+                  <input 
+                    type="email"
+                    className="w-full rounded-lg bg-gray-50 border-gray-200 text-sm focus:ring-[#1e3a4c] focus:border-[#1e3a4c] px-4 py-2.5"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold text-gray-700 mb-1">Message</label>
+                  <textarea 
+                    className="w-full rounded-lg bg-gray-50 border-gray-200 text-sm focus:ring-[#1e3a4c] focus:border-[#1e3a4c] resize-none px-4 py-2.5"
+                    rows={3}
+                    placeholder="I'm interested in..."
+                  />
+                </div>
+                <button 
+                  type="button"
+                  className="w-full bg-[#f97316] hover:bg-[#f97316]/90 text-white font-bold py-3 px-4 rounded-xl transition-colors mt-2"
+                >
+                  Send Enquiry
+                </button>
+                <p className="text-xs text-center text-gray-400">
+                  Or call {operator.phone || "directly"}
+                </p>
+              </form>
+            </div>
+
+            {/* Contact Info */}
+            <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
+              <h4 className="text-sm font-bold text-[#1e3a4c] mb-3">Contact Details</h4>
+              <ul className="space-y-3">
+                {operator.phone && (
+                  <li className="flex items-center gap-3">
+                    <Phone className="w-4 h-4 text-[#1e3a4c]" />
+                    <a href={`tel:${operator.phone}`} className="text-sm text-gray-600 hover:text-[#1e3a4c]">
+                      {operator.phone}
+                    </a>
+                  </li>
+                )}
+                {operator.email && (
+                  <li className="flex items-center gap-3">
+                    <Mail className="w-4 h-4 text-[#1e3a4c]" />
+                    <a href={`mailto:${operator.email}`} className="text-sm text-gray-600 hover:text-[#1e3a4c]">
+                      {operator.email}
+                    </a>
+                  </li>
+                )}
+                {operator.website && (
+                  <li className="flex items-center gap-3">
+                    <Globe className="w-4 h-4 text-[#1e3a4c]" />
+                    <a 
+                      href={operator.website} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-sm text-gray-600 hover:text-[#1e3a4c] truncate"
+                    >
+                      {operator.website.replace(/^https?:\/\//, "")}
+                    </a>
+                  </li>
+                )}
+              </ul>
+            </div>
+
+            {/* Location Map Placeholder */}
+            {(operator.lat && operator.lng) && (
+              <div className="rounded-xl overflow-hidden h-48 relative shadow-sm border border-gray-200 bg-gray-100">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <MapPin className="w-8 h-8 text-[#1e3a4c] mx-auto mb-2" />
+                    <p className="text-sm text-gray-500">{operator.address?.split(",")[0]}</p>
+                  </div>
+                </div>
+              </div>
+            )}
+          </aside>
+        </div>
+      </div>
+
+      {/* Sticky Bottom Bar (mobile only) */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 z-50">
+        <div className="flex items-center justify-between max-w-lg mx-auto">
+          <div className="flex flex-col">
+            <span className="text-xs font-medium text-gray-500">Book with</span>
+            <span className="text-sm font-bold text-[#1e3a4c] truncate max-w-[150px]">{operator.name}</span>
+          </div>
+          <a 
+            href={operator.website || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#f97316] text-white px-6 py-3 rounded-xl font-bold text-sm shadow-lg shadow-[#f97316]/30 hover:bg-[#f97316]/90 transition-all active:scale-95 flex items-center gap-2"
+          >
+            Visit Website
+            <ExternalLink className="w-4 h-4" />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Generate static params for all operators
+export async function generateStaticParams() {
+  const operators = await getOperators({ limit: 100 });
+  
+  return operators.map(op => ({
+    slug: op.slug
+  }));
+}
+
+// Generate metadata
+export async function generateMetadata({ params }: Props) {
+  const { slug } = await params;
+  const operator = await getOperatorWithActivities(slug);
+  
+  if (!operator) {
+    return { title: "Operator Not Found" };
+  }
+
+  return {
+    title: `${operator.name} | Adventure Wales`,
+    description: operator.tagline || operator.description?.slice(0, 160) || `${operator.name} - Adventure operator in Wales`,
+  };
+}

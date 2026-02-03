@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Adventure Wales - Design System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e3a4c",
+                        "accent": "#f97316",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-slate-50 font-display">
+    <div class="min-h-screen">
+        <!-- Header -->
+        <header class="bg-primary text-white py-12 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl font-extrabold mb-2">Adventure Wales</h1>
+                <p class="text-xl text-white/80">Design System & Page Templates</p>
+                <p class="mt-4 text-sm text-white/60">12 responsive page templates • Resize browser to see mobile/desktop</p>
+            </div>
+        </header>
+
+        <!-- Color palette -->
+        <section class="max-w-4xl mx-auto px-6 py-8">
+            <h2 class="text-lg font-bold text-slate-800 mb-4">Brand Colors</h2>
+            <div class="flex gap-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-lg bg-primary shadow"></div>
+                    <div>
+                        <div class="font-semibold text-sm">Primary (Slate)</div>
+                        <code class="text-xs text-slate-500">#1e3a4c</code>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-lg bg-accent shadow"></div>
+                    <div>
+                        <div class="font-semibold text-sm">Accent (Orange)</div>
+                        <code class="text-xs text-slate-500">#f97316</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page templates grid -->
+        <section class="max-w-4xl mx-auto px-6 pb-12">
+            <h2 class="text-lg font-bold text-slate-800 mb-4">Page Templates</h2>
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+                <a href="01-homepage.html" class="block bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="text-xs font-mono text-slate-400 mb-1">01-homepage</div>
+                    <div class="font-bold text-primary">Homepage</div>
+                    <div class="text-sm text-slate-500 mt-1"><code>/</code></div>
+                </a>
+
+                <a href="02-region-hub.html" class="block bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="text-xs font-mono text-slate-400 mb-1">02-region-hub</div>
+                    <div class="font-bold text-primary">Region Hub</div>
+                    <div class="text-sm text-slate-500 mt-1"><code>/snowdonia</code></div>
+                </a>
+
+                <a href="03-activity-listing.html" class="block bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="text-xs font-mono text-slate-400 mb-1">03-activity-listing</div>
+                    <div class="font-bold text-primary">Activity Listing</div>
+                    <div class="text-sm text-slate-500 mt-1"><code>/snowdonia/coasteering</code></div>
+                </a>
+
+                <a href="04-itinerary-detail.html" class="block bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="text-xs font-mono text-slate-400 mb-1">04-itinerary-detail</div>
+                    <div class="font-bold text-primary">Itinerary Detail</div>
+                    <div class="text-sm text-slate-500 mt-1"><code>/itineraries/3-day-adventure</code></div>
+                </a>
+
+                <a href="05-experience-detail.html" class="block bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="text-xs font-mono text-slate-400 mb-1">05-experience-detail</div>
+                    <div class="font-bold text-primary">Experience Detail</div>
+                    <div class="text-sm text-slate-500 mt-1"><code>/experiences/velocity-2</code></div>
+                </a>
+
+                <a href="06-operator-directory.html" class="block bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="text-xs font-mono text-slate-400 mb-1">06-operator-directory</div>
+                    <div class="font-bold text-primary">Operator Directory</div>
+                    <div class="text-sm text-slate-500 mt-1"><code>/directory</code></div>
+                </a>
+
+                <a href="07-operator-profile.html" class="block bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="text-xs font-mono text-slate-400 mb-1">07-operator-profile</div>
+                    <div class="font-bold text-primary">Operator Profile</div>
+                    <div class="text-sm text-slate-500 mt-1"><code>/directory/tyf-adventure</code></div>
+                </a>
+
+                <a href="08-accommodation-listing.html" class="block bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="text-xs font-mono text-slate-400 mb-1">08-accommodation-listing</div>
+                    <div class="font-bold text-primary">Accommodation Listing</div>
+                    <div class="text-sm text-slate-500 mt-1"><code>/snowdonia/where-to-stay</code></div>
+                </a>
+
+                <a href="09-events-calendar.html" class="block bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="text-xs font-mono text-slate-400 mb-1">09-events-calendar</div>
+                    <div class="font-bold text-primary">Events Calendar</div>
+                    <div class="text-sm text-slate-500 mt-1"><code>/events</code></div>
+                </a>
+
+                <a href="10-faq-answer.html" class="block bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="text-xs font-mono text-slate-400 mb-1">10-faq-answer</div>
+                    <div class="font-bold text-primary">FAQ Answer Page</div>
+                    <div class="text-sm text-slate-500 mt-1"><code>/answers/best-time-snowdonia</code></div>
+                </a>
+
+                <a href="11-trip-planner.html" class="block bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="text-xs font-mono text-slate-400 mb-1">11-trip-planner</div>
+                    <div class="font-bold text-primary">Trip Planner</div>
+                    <div class="text-sm text-slate-500 mt-1"><code>/plan</code></div>
+                </a>
+
+                <a href="ui-kit.html" class="block bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                    <div class="text-xs font-mono text-slate-400 mb-1">ui-kit</div>
+                    <div class="font-bold text-primary">UI Kit</div>
+                    <div class="text-sm text-slate-500 mt-1"><code>/ui-kit</code></div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Instructions -->
+        <section class="max-w-4xl mx-auto px-6 pb-12">
+            <h2 class="text-lg font-bold text-slate-800 mb-4">For Developers</h2>
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+                <ul class="space-y-2 text-slate-600">
+                    <li><strong>Responsive:</strong> Each HTML file switches between mobile (&lt;1024px) and desktop (&ge;1024px) layouts</li>
+                    <li><strong>Tailwind:</strong> Uses Tailwind CSS via CDN - copy classes directly to your Next.js components</li>
+                    <li><strong>Icons:</strong> Material Symbols Outlined - replace with Lucide React in production</li>
+                    <li><strong>Images:</strong> Placeholder URLs from Stitch - replace with real images or Unsplash</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

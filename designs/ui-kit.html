@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>UI Kit - Adventure Wales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e3a4c",
+                        "accent": "#f97316",
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a",
+                        "text-dark": "#0f172a",
+                        "text-muted": "#64748b",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem"},
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Hide scrollbars but allow scrolling */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Mobile layout shown by default, hidden on large screens */
+        .mobile-layout { display: block; }
+        .desktop-layout { display: none; }
+
+        /* Switch to desktop layout on lg breakpoint (1024px) */
+        @media (min-width: 1024px) {
+            .mobile-layout { display: none; }
+            .desktop-layout { display: block; }
+        }
+
+        /* Dev info bar */
+        .dev-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #1e3a4c;
+            color: white;
+            padding: 8px 16px;
+            font-size: 12px;
+            z-index: 9999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .dev-bar code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .dev-bar .badge {
+            background: #f97316;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-background-light font-display text-text-dark antialiased">
+
+    <!-- MOBILE LAYOUT (< 1024px) -->
+    <div class="mobile-layout">
+        
+    </div>
+
+    <!-- DESKTOP LAYOUT (>= 1024px) -->
+    <div class="desktop-layout">
+        
+    </div>
+
+    <!-- Dev info bar -->
+    <div class="dev-bar">
+        <div>
+            <span class="badge">UI Kit</span>
+            <code>/ui-kit</code>
+        </div>
+        <div>
+            <span class="lg:hidden">Mobile View</span>
+            <span class="hidden lg:inline">Desktop View</span>
+            &bull; Resize browser to switch
+        </div>
+    </div>
+
+</body>
+</html>

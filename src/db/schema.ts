@@ -95,6 +95,7 @@ export const activityTypes = pgTable("activity_types", {
   name: varchar("name", { length: 255 }).notNull(),
   slug: varchar("slug", { length: 255 }).notNull(),
   icon: varchar("icon", { length: 100 }),
+  heroImage: text("hero_image"),
   description: text("description"),
 });
 

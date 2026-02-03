@@ -12,6 +12,21 @@ interface ActivityPageProps {
   params: Promise<{ slug: string }>;
 }
 
+// Helper to extract just the intro text (before any **Section:** headers)
+function extractIntro(description: string | null): string {
+  if (!description) return "";
+  
+  // Find where the first **Something:** section starts
+  const sectionStart = description.search(/\*\*[A-Z][^*]+:\*\*/);
+  
+  if (sectionStart > 0) {
+    return description.substring(0, sectionStart).trim();
+  }
+  
+  // If no sections found, return first 500 chars
+  return description.length > 500 ? description.substring(0, 500) + "..." : description;
+}
+
 export default async function ActivityPage({ params }: ActivityPageProps) {
   const { slug } = await params;
   const data = await getActivityBySlug(slug);
@@ -122,7 +137,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                 About This Experience
               </h2>
               <p className="text-gray-600">
-                {activity.description || `Experience the thrill of ${activity.name} in ${region?.name || 'Wales'}. This unforgettable adventure is perfect for those seeking excitement in the great outdoors.`}
+                {extractIntro(activity.description) || `Experience the thrill of ${activity.name} in ${region?.name || 'Wales'}. This unforgettable adventure is perfect for those seeking excitement in the great outdoors.`}
               </p>
             </section>
 

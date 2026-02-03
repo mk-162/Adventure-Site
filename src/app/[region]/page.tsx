@@ -36,6 +36,35 @@ function extractSection(description: string | null, sectionName: string): string
   return match ? match[1].trim() : null;
 }
 
+// Helper to extract just the intro paragraphs (before any **Section:** headers)
+function extractIntro(description: string | null): string {
+  if (!description) return "";
+  
+  // Find where the first **Something:** section starts
+  const sectionStart = description.search(/\*\*[A-Z][^*]+:\*\*/);
+  
+  if (sectionStart > 0) {
+    return description.substring(0, sectionStart).trim();
+  }
+  
+  // If no sections found, return first 500 chars as fallback
+  return description.length > 500 ? description.substring(0, 500) + "..." : description;
+}
+
+// Helper to extract Pro Tips as an array
+function extractProTips(description: string | null): string[] {
+  if (!description) return [];
+  
+  const proTipsSection = extractSection(description, 'Pro Tips');
+  if (!proTipsSection) return [];
+  
+  // Split by bullet points (• or -)
+  return proTipsSection
+    .split(/[•\-]/)
+    .map(tip => tip.trim())
+    .filter(tip => tip.length > 10);
+}
+
 // Default content for Plan Your Visit sections
 const defaultPlanContent = {
   gettingThere: "Check local transport links and drive times from major cities. Many regions have good rail connections.",
@@ -57,10 +86,12 @@ export default async function RegionPage({ params }: RegionPageProps) {
     getOperators({ limit: 3 }),
   ]);
   
-  // Extract Plan Your Visit content from description or use defaults
+  // Extract structured content from description
+  const introText = extractIntro(region.description) || `Discover the adventures waiting for you in ${region.name}.`;
+  const proTips = extractProTips(region.description);
   const gettingThere = extractSection(region.description, 'Getting There') || defaultPlanContent.gettingThere;
   const bestTimeToVisit = extractSection(region.description, 'Best Time to Visit') || defaultPlanContent.bestTime;
-  const essentialGear = defaultPlanContent.essentialGear; // No region usually has this in description
+  const essentialGear = defaultPlanContent.essentialGear;
 
   return (
     <div className="min-h-screen pt-4 lg:pt-10">
@@ -102,8 +133,8 @@ export default async function RegionPage({ params }: RegionPageProps) {
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black leading-tight tracking-tight mb-2 lg:mb-3">
                 {region.name}
               </h1>
-              <p className="text-base lg:text-xl text-gray-200 font-medium max-w-xl">
-                {region.description || "A land of mountains and legends, offering the ultimate adventure playground."}
+              <p className="text-base lg:text-xl text-gray-200 font-medium max-w-xl line-clamp-3">
+                {introText.split('.').slice(0, 2).join('.') + '.'}
               </p>
             </div>
           </div>
@@ -138,15 +169,17 @@ export default async function RegionPage({ params }: RegionPageProps) {
             <section>
               <h3 className="text-lg lg:text-xl font-bold mb-3 text-[#1e3a4c]">Welcome to {region.name}</h3>
               <p className="text-gray-600 leading-relaxed text-sm lg:text-base">
-                 {region.description || `Discover the adventures waiting for you in ${region.name}. From thrilling outdoor activities to peaceful nature experiences, this region offers something for every adventure seeker.`}
+                 {introText}
               </p>
               
-              <div className="flex items-start gap-3 bg-[#1e3a4c]/5 p-4 rounded-xl border-l-4 border-[#1e3a4c] mt-4">
-                <CheckCircle className="w-5 h-5 text-[#1e3a4c] shrink-0 mt-0.5" />
-                <p className="text-sm text-gray-700">
-                  <strong>Top Tip:</strong> The Sherpa bus network is the best way to get around the base of the mountains during peak season.
-                </p>
-              </div>
+              {proTips.length > 0 && (
+                <div className="flex items-start gap-3 bg-[#1e3a4c]/5 p-4 rounded-xl border-l-4 border-[#1e3a4c] mt-4">
+                  <CheckCircle className="w-5 h-5 text-[#1e3a4c] shrink-0 mt-0.5" />
+                  <p className="text-sm text-gray-700">
+                    <strong>Top Tip:</strong> {proTips[0]}
+                  </p>
+                </div>
+              )}
             </section>
 
             {/* Top Experiences Grid */}

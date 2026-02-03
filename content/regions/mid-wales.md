@@ -1,4 +1,4 @@
-```markdown
+
 ---
 slug: mid-wales
 name: Mid Wales
@@ -32,4 +32,3 @@ The nearest airports are Birmingham (BHX) and Cardiff (CWL), both around 2-3 hou
 - Check trail conditions: Before hitting the mountain bike trails, check with Coed y Brenin or Llandegla for closures or maintenance.
 - Wild swimming spots: Skip the crowded beaches and find a secluded river pool for a refreshing dip. Just be mindful of currents and water temperature.
 - Support local businesses: Ditch the supermarket and stock up on supplies at local farm shops and markets. You'll taste the difference, and support the community.
-```

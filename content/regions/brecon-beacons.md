@@ -1,4 +1,4 @@
-```markdown
+
 ---
 slug: brecon-beacons
 name: Brecon Beacons
@@ -32,4 +32,3 @@ Cardiff Airport (CWL) is the nearest international airport, about an hour's driv
 - Pack for all weathers, even in summer. Mountain weather is notoriously unpredictable. Layers are key.
 - The best pubs are often hidden away in the smaller villages. Ask a local for their recommendation – you won't be disappointed.
 - Wild camping is permitted in some areas, but always follow the leave no trace principles. Check local regulations before pitching your tent.
-```

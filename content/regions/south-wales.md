@@ -1,4 +1,4 @@
-```markdown
+
 ---
 slug: south-wales
 name: South Wales
@@ -34,4 +34,3 @@ Cardiff Central is the primary train station, with frequent services to London P
 - Pack for all weather: South Wales is known for its changeable conditions, even in summer. Layers are key.
 - Check local tide times: Essential for planning any coastal activities, especially coasteering or surfing.
 - Explore the Valleys: Venture beyond the national park to discover hidden gems and quieter trails in the South Wales Valleys.
-```

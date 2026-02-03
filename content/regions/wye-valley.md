@@ -1,4 +1,4 @@
-```markdown
+
 ---
 slug: wye-valley
 name: Wye Valley

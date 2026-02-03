@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: weather-safety
 title: "Welsh Weather - What to Expect"
@@ -59,4 +58,3 @@ Certain weather conditions can make activities unsafe. Heavy rain can make trail
 ## The Bottom Line
 
 Welsh weather can be challenging, but it doesn't have to spoil your adventure. By understanding the potential risks, preparing accordingly, and making informed decisions, you can enjoy the stunning landscapes and exciting activities that Wales has to offer, safely and responsibly.
-```

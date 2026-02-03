@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: pembrokeshire-coasteering-break
 title: "Pembrokeshire Coasteering Break"
@@ -71,4 +70,3 @@ Embrace the outdoors and enjoy a night under the stars at a local campsite. Rela
 - Book your activities and accommodation in advance, especially during peak season, to avoid disappointment.
 - Pack layers of clothing, including a waterproof jacket, as the weather in Pembrokeshire can be unpredictable.
 - Ask the locals for their favorite hidden gems - they always know the best spots!
-```

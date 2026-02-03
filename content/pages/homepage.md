@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: home
 title: "Adventure Wales - Your Guide to Outdoor Adventure in Wales"
@@ -75,4 +74,3 @@ Unlock Exclusive Adventures in Wales!
 
 ## Description
 Subscribe to our newsletter for insider tips, exclusive deals, and the latest adventure inspiration, delivered straight to your inbox.
-```

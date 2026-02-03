@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: solo-traveler-trail
 title: "Solo Traveler Trail"
@@ -111,4 +110,3 @@ Treat yourself to some home comforts after a few days of adventurous activities.
 - Book activities in advance, especially during peak season, to avoid disappointment.
 - Pack for all types of weather – layers are key! Even in summer, the mountains can be unpredictable.
 - The Brecon Beacons are best explored with a good map and compass (and the ability to use them!). Don't rely solely on your phone's GPS, as signal can be patchy.
-```

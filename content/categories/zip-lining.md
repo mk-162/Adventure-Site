@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: zip-lining
 title: "Zip Lining & Aerial Adventures in Wales"
@@ -54,4 +53,3 @@ Zip lining and aerial adventures in Wales are suitable for a wide range of audie
 
 *   **Mountain Biking:** Explore the rugged terrain of Snowdonia on two wheels, with a variety of trails to suit all abilities.
 *   **Hiking:** Discover the stunning landscapes of Wales on foot, with countless hiking trails ranging from gentle valley walks to challenging mountain climbs.
-```

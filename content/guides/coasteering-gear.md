@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: coasteering-gear
 title: "What to Wear Coasteering"
@@ -59,4 +58,3 @@ For budget-conscious coasteerers, focus on investing in a good quality wetsuit a
 - **Test your gear:** Try on your wetsuit and boots before your coasteering trip to ensure a comfortable and secure fit.
 - **Layer up:** On colder days, wear a rash vest under your wetsuit for added warmth.
 - **Secure everything:** Ensure all your gear, including helmets and buoyancy aids, is properly fitted and secured before entering the water.
-```

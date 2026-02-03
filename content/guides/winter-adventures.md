@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: winter-adventures
 title: "Winter Adventures in Wales"
@@ -69,4 +68,3 @@ Winter is generally a quieter time to visit Wales, with fewer crowds at popular 
 -   **Check local conditions:** Always check weather forecasts and mountain conditions before heading out, and be prepared to adjust your plans if necessary.
 -   **Embrace the indoors:** If the weather is particularly bad, take advantage of Wales' many indoor attractions, such as museums, galleries, and castles.
 -   **Warm up with local cuisine:** Sample traditional Welsh dishes like Welsh rarebit or cawl (a hearty broth) to warm up after a day of adventure.
-```

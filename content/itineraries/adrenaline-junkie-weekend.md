@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: adrenaline-junkie-weekend
 title: "Adrenaline Junkie Weekend"
@@ -70,4 +69,3 @@ Back to the bunkhouse to rest your weary head.
 - Book your activities well in advance, especially during peak season, to avoid disappointment.
 - Pack for all weather conditions – Snowdonia is notorious for its unpredictable weather! Layers are key.
 - Chat to locals for tips on hidden gems and the best places to eat. They know the area best!
-```

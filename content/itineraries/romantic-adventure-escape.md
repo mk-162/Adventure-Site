@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: romantic-adventure-escape
 title: "Romantic Adventure Escape"
@@ -90,4 +89,3 @@ Opt for a night of stargazing and camping under the stars. A campsite or caravan
 - Book activities and accommodation in advance, especially during peak season.
 - Pack layers of clothing, as the weather in Pembrokeshire can be unpredictable.
 - Venture off the beaten path and explore the lesser-known coves and beaches for a more secluded experience.
-```

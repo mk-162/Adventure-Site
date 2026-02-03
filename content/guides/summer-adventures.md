@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: summer-adventures
 title: "Summer Adventures in Wales"

@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: caving-and-climbing
 title: "Caving & Climbing"
@@ -70,4 +69,3 @@ Enjoy a night under the stars at a scenic campsite. A great opportunity to refle
 - Book your caving and climbing activities in advance, especially during peak season.
 - Pack waterproof clothing, sturdy footwear, and a headlamp for caving.
 - Check the weather forecast before you go and be prepared for all conditions. The Brecon Beacons weather can change rapidly.
-```

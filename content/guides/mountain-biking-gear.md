@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: mountain-biking-gear
 title: "Mountain Biking Kit Guide"
@@ -75,4 +74,3 @@ Prioritize essential safety gear like a helmet and gloves. Look for sales and di
 - Pre-ride inspection: Before each ride, check your bike for any loose bolts, worn tires, or other potential issues.
 - Chain lubrication: Keep your chain clean and lubricated for smooth shifting and longer chain life.
 - Pack strategically: Distribute weight evenly in your hydration pack to avoid back pain.
-```

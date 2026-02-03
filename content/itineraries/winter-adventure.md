@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: winter-adventure
 title: "Winter Adventure"
@@ -69,4 +68,3 @@ Relax and recuperate after an adventure-filled day. Swap stories with fellow gue
 - Book activities in advance, especially in winter, as slots fill up quickly.
 - Pack layers! The weather in Snowdonia can be unpredictable, so be prepared for all conditions.
 - Check the weather forecast before heading out and be aware of potential hazards such as ice and snow.
-```

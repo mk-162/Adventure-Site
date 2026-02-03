@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: summit-challenge
 title: "Summit Challenge"
@@ -87,4 +86,3 @@ After the darkness of the mines, let's enjoy some fresh air on the trails with s
 - Book your Crib Goch guide and Snowdon Summit Hike well in advance, especially during peak season.
 - Pack for all weather conditions: waterproofs, layers, sturdy hiking boots, and a hat and gloves are essential.
 - The Snowdonia National Park Authority website is a great resource for trail information, weather updates, and safety advice.
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: beginners-adventure-taster
 title: "Beginner's Adventure Taster"
@@ -70,4 +69,3 @@ Relax after a day on the mountain at a local hostel. Share adventure stories wit
 - Book activities and accommodation in advance, especially during peak season.
 - Pack layers of clothing, as the weather in Snowdonia can change quickly.
 - Check out local websites and social media for special offers and events.
-```

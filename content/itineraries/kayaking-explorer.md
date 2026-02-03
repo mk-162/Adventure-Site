@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: kayaking-explorer
 title: "Kayaking Explorer"

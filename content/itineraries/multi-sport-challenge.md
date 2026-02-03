@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: multi-sport-challenge
 title: "Multi-Sport Challenge"
@@ -110,4 +109,3 @@ Sadly, your adventure ends here!
 - Book activities and accommodation well in advance, especially during peak season.
 - Pack for all types of weather, including waterproofs, layers, and sturdy footwear.
 - Learn a few basic Welsh phrases to enhance your experience and connect with the local culture (bore da = good morning, diolch = thank you).
-```

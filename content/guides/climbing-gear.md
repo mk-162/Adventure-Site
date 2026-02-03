@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: climbing-gear
 title: "Rock Climbing Gear Guide"
@@ -70,4 +69,3 @@ Consider buying used gear from reputable sources (ensure it's been properly insp
 - **Check the Weather:** Welsh weather can change rapidly. Always check the forecast before heading out and pack accordingly.
 - **Communicate with Your Partner:** Ensure clear communication throughout the climb, especially regarding belaying and rope management.
 - **Respect the Environment:** Leave no trace behind. Pack out all trash and minimize your impact on the crag.
-```

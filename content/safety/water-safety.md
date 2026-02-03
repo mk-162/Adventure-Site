@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: water-safety
 title: "Water Safety Guide"

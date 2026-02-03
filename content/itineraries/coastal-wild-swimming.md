@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: coastal-wild-swimming
 title: "Coastal Wild Swimming"
@@ -90,4 +89,3 @@ Relax at the hostel and maybe play some board games with other travellers.
 - Book activities in advance, especially during peak season.
 - Pack a dry bag to keep your valuables safe during swims.
 - Ask locals for their favourite swimming spots – they often know the hidden gems.
-```

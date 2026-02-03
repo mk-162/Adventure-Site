@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: gorge-walking
 title: "Gorge Walking & Canyoning in Wales"
@@ -76,4 +75,3 @@ Gorge walking and canyoning in Wales is suitable for a wide range of people, inc
 *   **Rock Climbing:** Scale the cliffs and crags of Wales for another adrenaline-fueled adventure.
 *   **White Water Rafting:** Experience the thrill of navigating the rapids of the Welsh rivers.
 *   **Hiking:** Explore the stunning Welsh countryside on foot.
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: spring-adventures
 title: "Spring Adventures in Wales"
@@ -54,4 +53,3 @@ Spring is generally less crowded than the peak summer months, but it's still adv
 - Look out for the spring lambs in the countryside! Keep dogs on leads near livestock.
 - Wildflowers are at their peak in late spring. Enjoy the colourful displays in meadows and along coastal paths.
 - Consider visiting mid-week to avoid weekend crowds, especially at popular attractions.
-```

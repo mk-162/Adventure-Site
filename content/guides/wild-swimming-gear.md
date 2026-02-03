@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: wild-swimming-gear
 title: "Wild Swimming Essentials"
@@ -62,4 +61,3 @@ Wild swimming doesn't have to break the bank. Decathlon offers affordable wetsui
 -   **Test Your Gear:** Before heading out for a swim, try on your wetsuit and other gear in a safe environment to ensure a comfortable fit and no unexpected issues.
 -   **Layer Up:** In colder weather, layering neoprene accessories (gloves, socks, hood) can significantly improve warmth.
 -   **Check the Weather and Water Conditions:** Always check the weather forecast and water conditions (tides, currents) before entering the water. Use resources like the Met Office and local tide charts.
-```

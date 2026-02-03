@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: photography-adventure
 title: "Photography Adventure"
@@ -90,4 +89,3 @@ Enjoy a relaxing stay at a comfortable campsite or bunkhouse after your adventur
 - Book your Llanberis Path Guided Walk in advance, especially during peak season.
 - Pack a waterproof jacket and camera cover – the weather in Snowdonia can be unpredictable.
 - Ask locals for hidden photography spots - they often know the best viewpoints!
-```

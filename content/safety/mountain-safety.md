@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: mountain-safety
 title: "Mountain Safety in Wales"
@@ -57,4 +56,3 @@ Weather plays a critical role in mountain safety. High winds can make walking di
 ## The Bottom Line
 
 Exploring the mountains of Wales can be an incredibly rewarding experience. By understanding the potential risks, taking sensible precautions, and being aware of your surroundings, you can enjoy a safe and unforgettable adventure. Remember, proper preparation is the key to a safe and enjoyable mountain experience.
-```

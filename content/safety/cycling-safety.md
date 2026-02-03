@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: cycling-safety
 title: "Mountain Biking Safety"
@@ -57,4 +56,3 @@ The weather in Wales can change rapidly, especially in mountainous areas. Rain c
 ## The Bottom Line
 
 Mountain biking in Wales is an incredible experience. By following these safety guidelines, you can minimize the risks and maximize the fun. Remember, preparation is key, and riding within your limits is essential for a safe and enjoyable adventure.
-```

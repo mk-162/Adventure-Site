@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: about
 title: "About Adventure Wales"
@@ -55,4 +54,3 @@ We'd love to hear from you! Whether you have a question about a specific activit
 ## Work With Us
 
 Are you a Welsh adventure operator looking to reach a wider audience? We're always looking to partner with passionate and responsible businesses. Get in touch to learn more about listing your activities on Adventure Wales.
-```

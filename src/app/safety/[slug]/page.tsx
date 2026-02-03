@@ -8,6 +8,12 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
+// Remove YAML frontmatter from markdown content
+function stripFrontmatter(content: string): string {
+  const frontmatterRegex = /^---\n[\s\S]*?\n---\n*/;
+  return content.replace(frontmatterRegex, "");
+}
+
 function getSafetyContent(slug: string): { title: string; content: string } | null {
   const safetyPath = path.join(process.cwd(), "content", "safety", `${slug}.md`);
   
@@ -15,7 +21,8 @@ function getSafetyContent(slug: string): { title: string; content: string } | nu
     return null;
   }
 
-  const content = fs.readFileSync(safetyPath, "utf-8");
+  let content = fs.readFileSync(safetyPath, "utf-8");
+  content = stripFrontmatter(content); // Remove YAML frontmatter
   const titleMatch = content.match(/^#\s+(.+)$/m);
   
   return {

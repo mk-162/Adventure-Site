@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: surfing
 title: "Surfing in Wales"
@@ -68,4 +67,3 @@ Surfing in Wales is for:
 *   **Coasteering:** Explore the coastline from a different perspective by scrambling over rocks, swimming in the sea, and jumping into deep pools.
 *   **Kayaking:** Paddle along the coast and discover hidden coves and secluded beaches.
 *   **Hiking:** Explore the scenic coastal paths and enjoy breathtaking views of the sea.
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: mountain-biking-epic
 title: "Mountain Biking Epic"
@@ -109,4 +108,3 @@ Finish the trip with a fun ride on the Zip World Fforest Coaster, a gravity-driv
 - Book Antur Stiniog uplift tickets well in advance, especially during peak season.
 - Pack for all types of weather – Snowdonia is known for its unpredictable conditions.
 - Support local businesses by buying snacks and supplies in the villages you pass through.
-```

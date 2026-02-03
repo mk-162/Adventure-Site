@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: camping-gear
 title: "Camping in Wales - What to Pack"
@@ -76,4 +75,3 @@ Prioritize buying quality used gear from reputable outdoor stores or online mark
 -   **Waterproof Everything:** Use dry bags or plastic bags to protect your gear from rain.
 -   **Test Your Gear:** Set up your tent and test your stove at home before your trip.
 -   **Leave No Trace:** Pack out all your trash, minimize campfire impact, and respect wildlife.
-```

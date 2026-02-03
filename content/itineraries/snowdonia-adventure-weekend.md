@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: snowdonia-adventure-weekend
 title: "Snowdonia Adventure Weekend"
@@ -90,4 +89,3 @@ Enjoy the last night under the stars or in a bunkhouse, reflecting on the amazin
 - Book activities and accommodation in advance, especially during peak season.
 - Pack for all types of weather – Snowdonia can be unpredictable! Layers are key.
 - Check the weather forecast before setting off on any mountain activities. Safety first!
-```

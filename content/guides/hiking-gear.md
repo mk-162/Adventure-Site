@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: hiking-gear
 title: "Essential Hiking Gear for Wales"
@@ -74,4 +73,3 @@ You don't need to spend a fortune to get good hiking gear. Look for sales and di
 - Always check the weather forecast before heading out. Be prepared for sudden changes in conditions.
 - Tell someone your planned route and expected return time.
 - Pack a small repair kit with duct tape, a multi-tool, and cordage.
-```

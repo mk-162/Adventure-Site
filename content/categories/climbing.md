@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: climbing
 title: "Rock Climbing in Wales"
@@ -77,4 +76,3 @@ Rock climbing in Wales is for:
 *   **Mountaineering:** Take your climbing skills to the next level with a mountaineering course on Snowdon.
 *   **Hiking:** Explore the stunning Welsh countryside on foot with a hike through Snowdonia or the Brecon Beacons.
 *   **Coasteering:** Combine climbing, swimming, and cliff jumping for an unforgettable coastal adventure.
-```

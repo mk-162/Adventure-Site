@@ -1,4 +1,3 @@
-```markdown
 ---
 slug: kayaking
 title: "Kayaking & Canoeing in Wales"
@@ -68,4 +67,3 @@ Kayaking and canoeing in Wales caters to a wide range of audiences, including:
 *   **Coasteering:** Combine swimming, scrambling, and cliff jumping for an adrenaline-fueled coastal adventure.
 *   **Stand-Up Paddleboarding (SUP):** Enjoy a more relaxed paddling experience on a stand-up paddleboard.
 *   **Hiking:** Explore the stunning Welsh countryside on foot, discovering hidden valleys, cascading waterfalls, and breathtaking mountain views.
-```

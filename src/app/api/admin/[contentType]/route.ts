@@ -183,7 +183,7 @@ export async function POST(
       }
     }
 
-    const result = await db.insert(table).values(body).returning();
+    const result = await db.insert(table).values(body).returning() as any[];
     return NextResponse.json(result[0]);
   } catch (error: any) {
     console.error(error);
@@ -226,7 +226,7 @@ export async function PATCH(
     const result = await db.update(table)
       .set(updates)
       .where(eq(table.id, id))
-      .returning();
+      .returning() as any[];
 
     return NextResponse.json(result[0]);
   } catch (error: any) {
@@ -259,13 +259,13 @@ export async function DELETE(
       const result = await db.update(table)
         .set({ status: 'archived' })
         .where(eq(table.id, parseInt(id)))
-        .returning();
+        .returning() as any[];
       return NextResponse.json(result[0]);
     } else {
       // Hard delete
       const result = await db.delete(table)
         .where(eq(table.id, parseInt(id)))
-        .returning();
+        .returning() as any[];
       return NextResponse.json(result[0]);
     }
   } catch (error: any) {

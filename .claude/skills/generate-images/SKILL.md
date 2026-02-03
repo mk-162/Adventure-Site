@@ -1,191 +1,169 @@
 ---
 name: generate-images
-description: Use when generating hero images for Adventure Wales content entities - regions, activities, accommodation, operators, itineraries, or events
+description: Use when generating images for Adventure Wales - fetching from Openverse (preferred) or Unsplash, downloading Welsh landscapes, activities, or entity hero images
 ---
 
 # Generate Images for Adventure Wales
 
-Batch-fetch images from Unsplash API and download to `public/images/`.
+Two image sources available:
 
-## Unsplash API Key
+| Source | License | Rate Limit | Quality | Script |
+|--------|---------|------------|---------|--------|
+| **Openverse** (preferred) | CC0/BY/BY-SA | None | Good | `fetch_openverse_images.py` |
+| Unsplash | Unsplash License | 50/hour | Higher | `fetch_unsplash_images.py` |
 
+## Quick Start
+
+```bash
+source .venv/bin/activate
+
+# Welsh landscape library (coastline, forests, lakes, mountains)
+python scripts/fetch_openverse_images.py --entity wales --limit 50
+
+# Activity images (5+ per type)
+python scripts/fetch_openverse_images.py --entity activities
+
+# Region hero images
+python scripts/fetch_openverse_images.py --entity regions
+```
+
+## Current Image Library
+
+```
+public/images/
+  wales/           # 110 Welsh landscapes (mountains, coast, forest, lakes)
+  activities/      # 82 activity images (6 per type)
+  regions/         # 11 region hero images
+  attributions.json  # Full metadata for all images
+```
+
+## Openverse Script (Preferred)
+
+`scripts/fetch_openverse_images.py` - No API key needed, no rate limits.
+
+```bash
+# Activities
+python scripts/fetch_openverse_images.py --entity activities --limit 50
+
+# Regions
+python scripts/fetch_openverse_images.py --entity regions
+
+# Welsh landscapes (builds general library)
+python scripts/fetch_openverse_images.py --entity wales --limit 100
+```
+
+Features:
+- CC licensed images (CC0, CC BY, CC BY-SA)
+- Full metadata capture (creator, tags, dimensions)
+- Welsh region detection from image metadata
+- Skips Wikimedia URLs (often 403 blocked)
+- Auto-updates `attributions.json`
+
+## Unsplash Script (Higher Quality)
+
+`scripts/fetch_unsplash_images.py` - Better quality but rate limited.
+
+```bash
+# Preview mode (generates HTML review page)
+python scripts/fetch_unsplash_images.py --entity activities --limit 10
+
+# Apply approved images from preview
+python scripts/fetch_unsplash_images.py --apply reports/unsplash_preview_XXXXXX.json
+
+# Reject specific images
+python scripts/fetch_unsplash_images.py --apply manifest.json --reject id1,id2
+```
+
+API Key (already configured):
 ```
 BBqUqpMUJJiKvawiCURPSnrHJmcoajR6ULDyMKzuLu4
 ```
 
 ## Entity Specifications
 
-| Entity | Size | Aspect | Field |
-|--------|------|--------|-------|
-| regions | 1920x1080 | 16:9 | heroImage |
-| activities | 1200x800 | 3:2 | heroImage |
-| accommodation | 1200x800 | 3:2 | heroImage |
-| operators | 1200x400 | 3:1 | coverImage |
-| itineraries | 1920x1080 | 16:9 | heroImage |
-| events | 1200x800 | 3:2 | heroImage |
+| Entity | Size | Aspect | Directory |
+|--------|------|--------|-----------|
+| regions | 1920x1080 | 16:9 | `regions/` |
+| activities | 1200x800 | 3:2 | `activities/` |
+| wales (library) | 1024+ | landscape | `wales/` |
+| accommodation | 1200x800 | 3:2 | `accommodation/` |
+| operators | 1200x400 | 3:1 | `operators/` |
+| itineraries | 1920x1080 | 16:9 | `itineraries/` |
+| events | 1200x800 | 3:2 | `events/` |
 
-## Workflow
+## Attribution Tracking
 
-1. **Identify entities needing images** - Check content files in `content/` and data CSVs in `data/wales/`
-2. **Build search queries** - Use entity name + context (region, activity type, "Wales" keyword)
-3. **Fetch from Unsplash** - Use search API, select best match
-4. **Download and resize** - Save to `public/images/{entity-type}/{slug}-hero.jpg`
-5. **Track attribution** - Log photographer credits for compliance
-
-## API Usage
-
-### Search endpoint
-```bash
-curl "https://api.unsplash.com/search/photos?query=QUERY&per_page=5" \
-  -H "Authorization: Client-ID BBqUqpMUJJiKvawiCURPSnrHJmcoajR6ULDyMKzuLu4"
-```
-
-### Response structure
-- `results[].urls.regular` - 1080w image (good for most uses)
-- `results[].urls.full` - Full resolution
-- `results[].user.name` - Photographer name (REQUIRED for attribution)
-- `results[].links.html` - Photo page URL
-
-### Download with resize
-Use Unsplash's dynamic resizing:
-```
-{urls.raw}&w=1920&h=1080&fit=crop&crop=entropy
-```
-
-## Search Query Patterns
-
-### Regions
-```
-"snowdonia mountain landscape dramatic"
-"pembrokeshire coast cliffs ocean"
-"brecon beacons hills reservoir"
-```
-
-### Activities (add action keywords)
-```
-"zip line adventure quarry"
-"coasteering jumping water cliffs"
-"mountain biking trail wales"
-"hiking summit ridge"
-```
-
-### Accommodation
-```
-"hostel common room mountain view"
-"camping tent mountain mist"
-"glamping yurt night lights"
-```
-
-## File Naming Convention
-
-```
-public/images/
-  regions/{slug}-hero.jpg        # region-snowdonia-hero.jpg
-  activities/{slug}-hero.jpg     # activity-coasteering-hero.jpg
-  accommodation/{slug}-hero.jpg
-  operators/{slug}-cover.jpg
-  itineraries/{slug}-hero.jpg
-  events/{slug}-hero.jpg
-```
-
-## Attribution (REQUIRED)
-
-Unsplash requires visible credit. Two options:
-
-### Option 1: On-image credit (preferred for hero images)
-Display photographer name as overlay text on the image.
-
-### Option 2: Credits page
-Link to `/credits` page from footer. Maintain `public/images/attributions.json`:
+All images tracked in `public/images/attributions.json`:
 
 ```json
 {
-  "regions/snowdonia-hero.jpg": {
-    "photographer": "John Smith",
-    "photographer_url": "https://unsplash.com/@johnsmith",
-    "photo_url": "https://unsplash.com/photos/xxx",
+  "images/wales/snowdonia-wales-fd04b052.jpg": {
+    "creator": "Ben124.",
+    "creator_url": "https://flickr.com/...",
+    "source": "https://flickr.com/photos/...",
+    "license": "BY",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "title": "Snowdonia National Park",
+    "tags": ["snowdonia", "wales", "mountain"],
+    "width": 1024,
+    "height": 471,
+    "category": "landscape",
+    "region": "snowdonia",
     "downloaded": "2026-02-03"
   }
 }
 ```
 
-### Attribution format (Unsplash guidelines)
-```
-Photo by [Photographer Name] on Unsplash
-```
+## PhotoCredit Component
 
-Where both "Photographer Name" and "Unsplash" are clickable links.
-
-### Triggering download attribution
-Per Unsplash API guidelines, trigger the download endpoint when using an image:
-```bash
-curl "https://api.unsplash.com/photos/{id}/download" \
-  -H "Authorization: Client-ID $API_KEY"
-```
-
-### PhotoCredit Component
-Use the `<PhotoCredit>` component from `src/components/ui/photo-credit.tsx`:
+Display attribution using `src/components/ui/photo-credit.tsx`:
 
 ```tsx
 import { PhotoCredit } from "@/components/ui/photo-credit";
 
-// Overlay on image (for hero images)
+// Overlay on image
 <div className="relative">
   <Image src={...} />
   <PhotoCredit
-    photographer="John Smith"
-    photographerUrl="https://unsplash.com/@johnsmith"
-    photoUrl="https://unsplash.com/photos/xxx"
-    position="bottom-left"  // or bottom-right, top-left, top-right
+    photographer="Ben124."
+    photographerUrl="https://flickr.com/..."
+    position="bottom-left"
   />
 </div>
 
-// Below image (for cards)
-<PhotoCredit
-  photographer="John Smith"
-  variant="below"
-/>
+// Below image
+<PhotoCredit photographer="Ben124." variant="below" />
 ```
 
-## Batch Processing Script
+## Search Query Patterns
 
-Use `scripts/fetch-images.sh` for bulk downloads:
+### Welsh Landscapes
+```
+"snowdonia wales", "welsh mountains", "pembrokeshire coast",
+"brecon beacons", "welsh forest", "wales lake", "cardigan bay"
+```
+
+### Activities (action-focused)
+```
+"coasteering cliff jumping", "mountain biking trail",
+"rock climbing outdoor", "sea kayaking coast",
+"white water rafting", "hiking mountain summit"
+```
+
+## Bash Scripts (Legacy)
+
+Simple bash scripts also available:
 
 ```bash
-# Download all region images
-./scripts/fetch-images.sh regions
-
-# Download activity type images
-./scripts/fetch-images.sh activities
-
-# Download everything
-./scripts/fetch-images.sh all
-
-# Single image with custom query
-./scripts/fetch-images.sh single "hiking wales summit" public/images/activities/hiking-hero.jpg 1200 800
+./scripts/fetch-regions.sh     # All 11 regions
+./scripts/fetch-activities.sh  # Activity hero images
 ```
-
-The script:
-- Searches Unsplash with provided query
-- Downloads and resizes to spec
-- Triggers download attribution (Unsplash requirement)
-- Updates `public/images/attributions.json` automatically
-
-## Priority Order
-
-1. Regions (11) - Used everywhere
-2. Top Activities (20) - Featured content
-3. Itineraries (15) - Conversion pages
-4. Premium Operators (10)
-5. Remaining Activities
-6. Accommodation
-7. Events
-8. Other Operators
 
 ## Quality Checklist
 
-- [ ] Welsh location recognizable where possible
-- [ ] Works with text overlay (dark areas or gradient-friendly)
-- [ ] People in action, not posed stock feel
-- [ ] No watermarks
-- [ ] Attribution logged
+- [x] Welsh location recognizable where possible
+- [x] Landscape orientation (aspect > 1.3)
+- [x] Minimum 1024px width
+- [x] CC or Unsplash licensed
+- [x] Full attribution in attributions.json
+- [x] Region mapping where detectable

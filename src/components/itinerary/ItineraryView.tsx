@@ -32,10 +32,17 @@ interface ItineraryViewProps {
   priceEstimateTo?: string | null;
 }
 
+interface UserLocation {
+  label: string;
+  lat: number;
+  lng: number;
+}
+
 export function ItineraryView({ stops, accommodations = [], itineraryName, itinerarySlug, itineraryId, region, durationDays, difficulty, bestSeason, priceEstimateFrom, priceEstimateTo }: ItineraryViewProps) {
   const [mode, setMode] = useState<"standard" | "wet" | "budget">("standard");
   const [basecamp, setBasecamp] = useState<AccommodationData | null>(null);
   const [showBasecampPicker, setShowBasecampPicker] = useState(false);
+  const [userLocation, setUserLocation] = useState<UserLocation | null>(null);
 
   // Skipped stops state (persisted in localStorage)
   const skippedStops = useLocalStorageSet(`aw-skipped-${itinerarySlug || "default"}`);
@@ -89,6 +96,18 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
                   <div>
                     <div className="text-xs font-bold text-[#f97316] uppercase tracking-wider">Your Basecamp</div>
                     <div className="font-bold text-[#1e3a4c]">{basecamp.name}</div>
+                    {userLocation && (
+                      <div className="text-xs text-gray-500 mt-0.5 flex items-center gap-1">
+                        <MapPin className="w-3 h-3" />
+                        Travelling from {userLocation.label}
+                        <button
+                          onClick={() => setShowBasecampPicker(true)}
+                          className="text-[#f97316] hover:text-[#f97316]/80 font-semibold ml-1"
+                        >
+                          Change
+                        </button>
+                      </div>
+                    )}
                   </div>
                 </div>
                 <button
@@ -142,7 +161,9 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
         </div>
 
         {/* Map */}
-        <ItineraryMap stops={stops} mode={mode} basecamp={basecamp} className="w-full shadow-lg border border-gray-200" />
+        <div id="itinerary-map">
+          <ItineraryMap stops={stops} mode={mode} basecamp={basecamp} className="w-full shadow-lg border border-gray-200" />
+        </div>
 
         {/* Timeline */}
         <section>
@@ -153,7 +174,7 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
                </p>
              )}
              {stopsByDay.map(day => (
-                <TimelineDay key={day.dayNumber} dayNumber={day.dayNumber} stops={day.stops} mode={mode} basecamp={basecamp} skippedStops={skippedStops} />
+                <TimelineDay key={day.dayNumber} dayNumber={day.dayNumber} stops={day.stops} mode={mode} basecamp={basecamp} skippedStops={skippedStops} itinerarySlug={itinerarySlug} />
              ))}
         </section>
 
@@ -258,7 +279,9 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
          {region?.slug && (
             <ClimateChart regionSlug={region.slug} compact />
          )}
-         <CostBreakdown stops={stops} mode={mode} itineraryName={itineraryName} itineraryId={itineraryId} />
+         <div id="itinerary-costs">
+           <CostBreakdown stops={stops} mode={mode} itineraryName={itineraryName} itineraryId={itineraryId} />
+         </div>
          {itinerarySlug && (
            <ThingsToBook stops={stops} itinerarySlug={itinerarySlug} mode={mode} />
          )}
@@ -275,6 +298,8 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
           firstActivityLat={firstActivityLat}
           firstActivityLng={firstActivityLng}
           currentBasecamp={basecamp}
+          userLocation={userLocation}
+          onUserLocationChange={setUserLocation}
           onSelect={(selected) => {
             setBasecamp(selected);
             setShowBasecampPicker(false);

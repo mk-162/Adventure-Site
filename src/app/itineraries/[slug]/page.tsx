@@ -10,6 +10,9 @@ import {
 import { ItineraryView } from "@/components/itinerary/ItineraryView";
 import { ItineraryFactSheet } from "@/components/itinerary/ItineraryFactSheet";
 import { EnquireAllVendors } from "@/components/itinerary/EnquireAllVendors";
+import { ItinerarySocialShare } from "@/components/itinerary/ItinerarySocialShare";
+import { ItineraryPrintButton } from "@/components/itinerary/ItineraryPrintButton";
+import { ItineraryQuickNav } from "@/components/itinerary/ItineraryQuickNav";
 import { ShareButton } from "@/components/ui/ShareButton";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import { getItineraryWithStops, getAccommodation, getAllItinerarySlugs } from "@/lib/queries";
@@ -110,13 +113,30 @@ export default async function ItineraryDetailPage({ params }: Props) {
               <h1 className="text-white text-2xl sm:text-3xl lg:text-5xl font-black leading-tight mb-2 lg:mb-3">
                 {itinerary.title}
               </h1>
-              <ShareButton title={itinerary.title} variant="button" className="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-md hover:bg-white/30 text-white font-semibold text-sm rounded-full border border-white/30 transition-colors shrink-0 mt-1" />
+              <div className="hidden sm:flex items-center gap-2 shrink-0 mt-1 print:hidden" data-print-hide>
+                <ShareButton title={itinerary.title} variant="button" className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-md hover:bg-white/30 text-white font-semibold text-sm rounded-full border border-white/30 transition-colors" />
+                <ItinerarySocialShare
+                  itineraryName={itinerary.title}
+                  durationDays={itinerary.durationDays ?? 1}
+                  stopCount={stops?.length ?? 0}
+                  highlightStops={(stops || []).filter(s => s.stopType === "activity").slice(0, 3).map(s => s.title)}
+                />
+                <ItineraryPrintButton />
+              </div>
             </div>
             {itinerary.tagline && (
               <p className="text-gray-200 text-sm sm:text-base lg:text-lg max-w-2xl">
                 {itinerary.tagline}
               </p>
             )}
+            {/* Quick navigation links */}
+            <div className="mt-3 print:hidden">
+              <ItineraryQuickNav
+                hasMap={true}
+                hasCosts={true}
+                hasEnquiry={uniqueOperators.length > 0}
+              />
+            </div>
           </div>
         </div>
 
@@ -167,13 +187,19 @@ export default async function ItineraryDetailPage({ params }: Props) {
 
         {/* Enquire All Vendors CTA */}
         {uniqueOperators.length > 0 && (
-          <div className="mt-10 lg:mt-16">
+          <div id="itinerary-enquiry" className="mt-10 lg:mt-16">
             <EnquireAllVendors 
               operators={uniqueOperators}
               itineraryName={itinerary.title}
             />
           </div>
         )}
+
+        {/* Print-only footer branding */}
+        <div className="print-footer hidden print:block mt-8">
+          <p>Generated from Adventure Wales — adventurewales.co.uk</p>
+          <p>Plan your own Welsh adventure at adventurewales.co.uk/itineraries</p>
+        </div>
 
       </div>
 

@@ -30,10 +30,9 @@ export function ThingsToBook({ stops, itinerarySlug, mode }: ThingsToBookProps) 
       if (mode === "wet" && stop.wetAltTitle) title = stop.wetAltTitle;
       if (mode === "budget" && stop.budgetAltTitle) title = stop.budgetAltTitle;
 
-      // Prefer activity bookingUrl, then operator bookingUrl, then operator website
+      // Prefer activity bookingUrl, then operator website
       const bookingUrl =
         stop.activity?.bookingUrl ||
-        stop.operator?.bookingUrl ||
         stop.operator?.website ||
         null;
 

@@ -214,7 +214,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 - [ ] Feature: "Top Experiences" List Enhancements:
   - [ ] Scope: Include Attractions, Walks, Sightseeing, Beaches (not just businesses).
   - [x] Feature: Logged-in users can Star/Like items. — FavoriteButton + userFavourites table
-  - [ ] Data: Display "Total Stars" (initially seeded from Google Review "Likes").
+  - [x] Data: Display "Total Stars" (initially seeded from Google Review "Likes"). — googleRating + reviewCount shown on operator cards
   - [x] Data: Display Google Review Star Rating on the list. — shown on operator cards
 
 **Map & Geodata**

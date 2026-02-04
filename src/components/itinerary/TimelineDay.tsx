@@ -8,6 +8,7 @@ import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 import { accommodation } from "@/db/schema";
 import { calculateDistance, calculateDrivingTime } from "@/lib/travel-utils";
 import { getActivityHeroImage } from "@/lib/activity-images";
+import { CustomStopForm } from "./CustomStopForm";
 
 type AccommodationData = typeof accommodation.$inferSelect;
 
@@ -23,9 +24,10 @@ interface TimelineDayProps {
   mode: "standard" | "wet" | "budget";
   basecamp?: AccommodationData | null;
   skippedStops?: SkippedStopsState;
+  itinerarySlug?: string;
 }
 
-export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops }: TimelineDayProps) {
+export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, itinerarySlug }: TimelineDayProps) {
   // Calculate travel time from basecamp to first stop
   const firstStop = stops[0];
   const lastStop = stops[stops.length - 1];
@@ -164,7 +166,8 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops }: 
 
                                 {/* Content */}
                                 <div className="flex-1 p-5">
-                                    <h4 className="font-bold text-[#1e3a4c] text-lg flex flex-wrap items-center gap-2">
+                                    <div className="flex items-start justify-between gap-2">
+                                    <h4 className={`font-bold text-lg flex flex-wrap items-center gap-2 ${isSkipped ? "text-gray-400 line-through" : "text-[#1e3a4c]"}`}>
                                         {/* Mobile-only type icon */}
                                         <span className="sm:hidden">
                                             {type === 'activity' && <Flag className="w-4 h-4 text-blue-600 inline" />}
@@ -187,8 +190,26 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops }: 
                                             </span>
                                         )}
                                     </h4>
+                                    {/* Skip toggle */}
+                                    {skippedStops && (
+                                      <button
+                                        onClick={() => skippedStops.toggle(String(stop.id))}
+                                        className={`shrink-0 p-1.5 rounded-lg transition-colors ${
+                                          isSkipped
+                                            ? "text-gray-400 hover:text-[#1e3a4c] hover:bg-gray-100"
+                                            : "text-gray-300 hover:text-gray-500 hover:bg-gray-100"
+                                        }`}
+                                        title={isSkipped ? "Include this stop" : "Skip this stop"}
+                                      >
+                                        {isSkipped ? <Eye className="w-4 h-4" /> : <EyeOff className="w-4 h-4" />}
+                                      </button>
+                                    )}
+                                    </div>
+                                    {isSkipped && (
+                                      <p className="text-xs text-gray-400 italic mb-2">Skipped — click the eye icon to include again</p>
+                                    )}
                                     {stop.operator && (
-                                        <p className="text-xs text-gray-500 mt-0.5">
+                                        <p className={`text-xs mt-0.5 ${isSkipped ? "text-gray-400" : "text-gray-500"}`}>
                                             by {stop.operator.name}
                                         </p>
                                     )}
@@ -252,6 +273,11 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops }: 
                         </div>
                     </div>
                 </div>
+            )}
+
+            {/* Custom stops */}
+            {itinerarySlug && (
+              <CustomStopForm itinerarySlug={itinerarySlug} dayNumber={dayNumber} />
             )}
         </div>
     </div>

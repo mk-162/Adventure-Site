@@ -2,7 +2,8 @@ import { db } from "@/db";
 import { operators } from "@/db/schema";
 import { desc } from "drizzle-orm";
 import Link from "next/link";
-import { Users, Plus, Edit, Eye, Trash2, Star } from "lucide-react";
+import { Users, Plus, Edit, Eye, Trash2, Star, ArrowUp, ArrowDown } from "lucide-react";
+import { upgradeToPremium, downgradeToClaimed, setClaimStatus } from "@/app/admin/commercial/claims/actions";
 
 async function getOperators() {
   return db.select().from(operators).orderBy(desc(operators.createdAt)).limit(100);
@@ -22,6 +23,10 @@ export default async function OperatorsAdmin() {
     secondary: "bg-gray-100 text-gray-800",
   };
 
+  const stubs = allOperators.filter(o => o.claimStatus === "stub").length;
+  const claimed = allOperators.filter(o => o.claimStatus === "claimed").length;
+  const premium = allOperators.filter(o => o.claimStatus === "premium").length;
+
   return (
     <div>
       <div className="flex items-center justify-between mb-8">
@@ -36,6 +41,22 @@ export default async function OperatorsAdmin() {
           <Plus className="h-5 w-5" />
           Add Operator
         </Link>
+      </div>
+
+      {/* Status summary */}
+      <div className="grid grid-cols-3 gap-4 mb-6">
+        <div className="bg-gray-50 rounded-xl p-4 border border-gray-100">
+          <p className="text-2xl font-bold text-gray-900">{stubs}</p>
+          <p className="text-sm text-gray-500">Stubs</p>
+        </div>
+        <div className="bg-blue-50 rounded-xl p-4 border border-blue-100">
+          <p className="text-2xl font-bold text-blue-900">{claimed}</p>
+          <p className="text-sm text-blue-600">Claimed</p>
+        </div>
+        <div className="bg-amber-50 rounded-xl p-4 border border-amber-100">
+          <p className="text-2xl font-bold text-amber-900">{premium}</p>
+          <p className="text-sm text-amber-600">Premium</p>
+        </div>
       </div>
 
       <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
@@ -85,13 +106,39 @@ export default async function OperatorsAdmin() {
                   </span>
                 </td>
                 <td className="px-6 py-4">
-                  <span
-                    className={`px-2 py-1 rounded-full text-xs font-medium ${
-                      claimStatusColors[operator.claimStatus || "stub"]
-                    }`}
-                  >
-                    {operator.claimStatus || "stub"}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <span
+                      className={`px-2 py-1 rounded-full text-xs font-medium ${
+                        claimStatusColors[operator.claimStatus || "stub"]
+                      }`}
+                    >
+                      {operator.claimStatus || "stub"}
+                    </span>
+                    {operator.claimStatus !== "premium" && (
+                      <form action={upgradeToPremium.bind(null, operator.id)}>
+                        <button
+                          type="submit"
+                          className="inline-flex items-center gap-1 px-2 py-1 text-xs font-medium text-amber-700 bg-amber-50 border border-amber-200 rounded-full hover:bg-amber-100 transition-colors"
+                          title="Upgrade to Premium"
+                        >
+                          <ArrowUp className="h-3 w-3" />
+                          Premium
+                        </button>
+                      </form>
+                    )}
+                    {operator.claimStatus === "premium" && (
+                      <form action={downgradeToClaimed.bind(null, operator.id)}>
+                        <button
+                          type="submit"
+                          className="inline-flex items-center gap-1 px-2 py-1 text-xs font-medium text-gray-500 bg-gray-50 border border-gray-200 rounded-full hover:bg-gray-100 transition-colors"
+                          title="Downgrade to Claimed"
+                        >
+                          <ArrowDown className="h-3 w-3" />
+                          Downgrade
+                        </button>
+                      </form>
+                    )}
+                  </div>
                 </td>
                 <td className="px-6 py-4">
                   {operator.googleRating ? (

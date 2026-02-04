@@ -212,7 +212,7 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
                     Featured Partners
                   </h2>
                   <p className="text-sm text-gray-600">
-                    Premium operators trusted by thousands
+                    Premium providers trusted by thousands
                   </p>
                 </div>
               </div>

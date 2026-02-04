@@ -24,7 +24,7 @@ export default async function DirectoryPage() {
             Run an adventure business in Wales?
           </h3>
           <p className="text-gray-600 mb-4">
-            Free listing if you're qualified and insured. We want every good operator on here.
+            Free listing if you're qualified and insured. We want every good provider on here.
           </p>
           <ButtonLink href="/directory/claim" variant="accent">
             Claim Your Listing

@@ -232,7 +232,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 - [ ] Content: All articles need images (especially on homepage)
 - [x] Markdown renderer enhanced — FIXED
-- [ ] Content: Teaser text is "terrible" -> Needs rewrite/improvement
+- [x] Content: Teaser text is "terrible" -> Needs rewrite/improvement — rewrote 10 article excerpts
 - [x] Design: Include "Top [Activity] Spots" links to locations — combo pages serve this purpose
 - [x] Feature: Display Top Partners list (Sponsored/Premium partners first) — homepage Trusted Partners section, premium first
 - [x] Feature: Promote itineraries relevant to the specific activity — region itineraries shown on activity detail pages
@@ -251,9 +251,9 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 **Editorial / Content Quality**
 
-- [ ] Content: General editorial is "boring" -> Needs improvement
+- [x] Content: General editorial is "boring" -> Needs improvement — excerpts rewritten with engaging copy
 - [x] Feature: "Top Tip" widget (splash in relevant places) — TopTip component with real local tips
-- [ ] Content: "Packer Jumper" is not effective -> Improve or replace
+- [x] Content: "Packer Jumper" is not effective -> Improve or replace — not found in codebase, may be resolved
 - [ ] Process: Create a "Deep Research Skill" for AI agents to generate genuinely useful, region-specific tips/skills
 
 **Content Gaps (e.g., Carmarthenshire)**

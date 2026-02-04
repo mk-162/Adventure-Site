@@ -1,0 +1,172 @@
+
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║           READY-TO-INTEGRATE PARTNERS - QUICK REFERENCE CARD                  ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ TIER 1: START HERE (Easiest + Best Content APIs)                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────┬───────────────────────────────────────────────────────────┐
+│ Booking.com     │ Accommodation API - 29M properties                      │
+│ Affiliate       │ Commission: 4-5% | Cookie: 30 days                      │
+│                 │ Sign up: partner.booking.com/en-gb/affiliate-program    │
+│                 │ Time: 1-2 days | BEST for accommodation content         │
+├─────────────────┼───────────────────────────────────────────────────────────┤
+│ GetYourGuide    │ Activity API - 300K experiences                         │
+│ Partner API     │ Commission: 7-8% | Cookie: 31 days                      │
+│                 │ Sign up: partner.getyourguide.com                       │
+│                 │ Time: 1-2 days | BEST for activity content              │
+├─────────────────┼───────────────────────────────────────────────────────────┤
+│ Viator          │ Activity API - 300K experiences                         │
+│ Affiliate       │ Commission: ~8% | Cookie: 30 days                       │
+│                 │ Sign up: viator.com/affiliate/affiliate-program         │
+│                 │ Time: 1-3 days | Good backup to GetYourGuide            │
+├─────────────────┼───────────────────────────────────────────────────────────┤
+│ TripAdvisor     │ FREE Reviews API - Social proof                         │
+│ Content API     │ Commission: N/A (content only) | Cost: FREE             │
+│                 │ Sign up: tripadvisor.com/developers                     │
+│                 │ Time: 1-2 days | FREE reviews & ratings                 │
+└─────────────────┴───────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ TIER 2: HIGH VALUE (Good Content Options)                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────┬───────────────────────────────────────────────────────────┐
+│ Airbnb          │ Unique stays API - Yurts, treehouses, beach huts        │
+│ API (Apply)     │ Commission: Varies | API by invitation                  │
+│                 │ Sign up: airbnb.com/partners                            │
+│                 │ Time: 1-2 weeks | APPLY EARLY                           │
+├─────────────────┼───────────────────────────────────────────────────────────┤
+│ Expedia TAAP    │ Full travel platform - Hotels, flights, cars            │
+│ API             │ Commission: 3-10% | White-label options                 │
+│                 │ Sign up: expedia.com/taap                               │
+│                 │ Time: 3-5 days | Comprehensive travel                   │
+├─────────────────┼───────────────────────────────────────────────────────────┤
+│ Vrbo            │ Holiday rentals API - Family/group accommodation        │
+│ API             │ Commission: Varies | Vacation rental focus              │
+│                 │ Sign up: vrbo.com/partner                               │
+│                 │ Time: 1 week | Holiday cottages & homes                 │
+├─────────────────┼───────────────────────────────────────────────────────────┤
+│ Tiqets          │ Attraction tickets API - Museums, skip-the-line         │
+│ Affiliate       │ Commission: 6-10% | Specialist in attractions           │
+│                 │ Sign up: tiqets.com/en/affiliates.html                  │
+│                 │ Time: 2-3 days | Great for West Country sites           │
+└─────────────────┴───────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ TIER 3: PRODUCT AFFILIATES (Gear & Equipment)                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────┬───────────────────────────────────────────────────────────┐
+│ Amazon          │ Everything - Instant approval, vast range               │
+│ Associates      │ Commission: 1-10% | Cookie: 24 hours                    │
+│                 │ Sign up: affiliate-program.amazon.co.uk                 │
+│                 │ Time: Immediate | BEST for "What to bring" content      │
+├─────────────────┼───────────────────────────────────────────────────────────┤
+│ Surfdome        │ Surf gear specialist - Boards, wetsuits, accessories    │
+│ Affiliate       │ Commission: 5-8% | UK based                             │
+│                 │ Sign up: surfdome.com/affiliates                        │
+│                 │ Time: 2-3 days | Surf equipment                         │
+├─────────────────┼───────────────────────────────────────────────────────────┤
+│ Cotswold        │ Outdoor gear - Hiking, camping, climbing                │
+│ Outdoor         │ Commission: 5-8% | UK retailer                          │
+│                 │ Sign up: cotswoldoutdoor.com/affiliates                 │
+│                 │ Time: 2-3 days | Adventure gear                         │
+├─────────────────┼───────────────────────────────────────────────────────────┤
+│ Patagonia       │ Premium outdoor clothing - 8% commission                │
+│ Affiliate       │ Commission: 8% | Premium brand                          │
+│                 │ Sign up: patagonia.com/affiliates                       │
+│                 │ Time: 1 week | High-end outdoor wear                    │
+└─────────────────┴───────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ TIER 4: FREE DATA APIs (No Cost)                                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────┬───────────────────────────────────────────────────────────┐
+│ Met Office      │ FREE weather API - Essential for outdoor sites          │
+│ DataPoint       │ Cost: FREE | 5-day forecasts, warnings                  │
+│                 │ Sign up: metoffice.gov.uk/datapoint                     │
+│                 │ Time: Immediate | Weather widgets                       │
+├─────────────────┼───────────────────────────────────────────────────────────┤
+│ Ordnance Survey │ FREE maps tier - Best UK mapping                        │
+│ Maps API        │ Cost: FREE tier | Topographic maps                      │
+│                 │ Sign up: osdatahub.os.uk                                │
+│                 │ Time: Immediate | Location maps                         │
+├─────────────────┼───────────────────────────────────────────────────────────┤
+│ Mapbox          │ FREE maps tier - Customizable maps                      │
+│ Maps API        │ Cost: FREE (50K loads) | Outdoor styles                 │
+│                 │ Sign up: mapbox.com/developers                          │
+│                 │ Time: Immediate | Cheaper than Google                   │
+├─────────────────┼───────────────────────────────────────────────────────────┤
+│ Outdooractive   │ FREE route sharing - Europe's largest outdoor platform  │
+│ Partner         │ Cost: FREE | Hiking/cycling routes                      │
+│                 │ Sign up: outdooractive.com/en/partners                  │
+│                 │ Time: Immediate | Trail content                         │
+└─────────────────┴───────────────────────────────────────────────────────────┘
+
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                    RECOMMENDED 4-WEEK INTEGRATION PLAN                        ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+ WEEK 1: ACCOMMODATION
+ ┌────────────────────────────────────────────────────────────────────────────┐
+ │ Mon-Tue: Sign up Booking.com affiliate                                     │
+ │ Wed-Thu: Add accommodation search widgets                                  │
+ │ Fri-Sun: Create destination pages with live accommodation                  │
+ └────────────────────────────────────────────────────────────────────────────┘
+
+ WEEK 2: ACTIVITIES
+ ┌────────────────────────────────────────────────────────────────────────────┐
+ │ Mon-Tue: Sign up GetYourGuide partner                                      │
+ │ Wed-Thu: Add activity widgets                                              │
+ │ Fri-Sun: Create activity pages                                             │
+ └────────────────────────────────────────────────────────────────────────────┘
+
+ WEEK 3: REVIEWS & UNIQUE STAYS
+ ┌────────────────────────────────────────────────────────────────────────────┐
+ │ Mon-Tue: Sign up TripAdvisor Content API                                   │
+ │ Wed-Thu: Add review widgets                                                │
+ │ Fri-Sun: Apply for Airbnb API                                              │
+ └────────────────────────────────────────────────────────────────────────────┘
+
+ WEEK 4: PRODUCTS
+ ┌────────────────────────────────────────────────────────────────────────────┐
+ │ Mon-Tue: Sign up Amazon Associates                                         │
+ │ Wed-Thu: Create gear guide content                                         │
+ │ Fri-Sun: Add product recommendations                                       │
+ └────────────────────────────────────────────────────────────────────────────┘
+
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                    PAGE TEMPLATE WITH INTEGRATED CONTENT                      ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+For each destination page, include these revenue-generating sections:
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 1. ACCOMMODATION SECTION                                                    │
+│    • Booking.com search widget for location                                 │
+│    • 3-5 featured properties with deep links                                │
+│    • Price range indicator                                                  │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 2. ACTIVITIES SECTION                                                       │
+│    • GetYourGuide widget for local activities                               │
+│    • 3-5 featured experiences                                               │
+│    • Price and duration info                                                │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 3. REVIEWS SECTION                                                          │
+│    • TripAdvisor review widget                                              │
+│    • Social proof from real travelers                                       │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 4. GEAR GUIDE SECTION                                                       │
+│    • Amazon "What to bring" product list                                    │
+│    • Affiliate product links                                                │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 5. WEATHER SECTION                                                          │
+│    • Met Office weather widget                                              │
+│    • Seasonal activity recommendations                                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+This gives you a COMPLETE, REVENUE-GENERATING page with minimal original content!

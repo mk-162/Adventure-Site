@@ -73,7 +73,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 **Commercial / Ads**
 
-- [ ] Logic: Unsold ad slots must show "Claim listing" or "Advertise here" widgets
+- [x] Logic: Unsold ad slots must show "Claim listing" or "Advertise here" widgets — AdvertiseWidget + claim listing banners in place
 - [ ] Design: Sponsored/Paid listings need distinct "Premium" styling to differentiate from organic content
 - [x] Enforcement: "Advertise Here" banner/widget missing from many locations -> Fix site-wide. — AdvertiseWidget added to events, activities, directory
 - [x] Nav: Replace "Book Now" (top right) with "Advertise" — FIXED
@@ -134,11 +134,11 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [ ] SEO: Create landing pages for filtered views (e.g., "Snowdonia Caving"). Needs dedicated URL/Navigation.
 - [ ] UI: Search Box is impossible to see (missing hero?).
 - [x] "Operators" → "Adventure Providers" across user-facing pages — FIXED
-- [ ] UI/UX: Phone number disappears behind "Quick Inquiry" widget on scroll.
+- [x] UI/UX: Phone number disappears behind "Quick Inquiry" widget on scroll. — contact info moved above enquiry form, sticky
 - [x] Services grid → clean menu layout — FIXED
 - [x] Google Reviews badge added to ratings — FIXED
 - [x] "Visit Website" — prominent button on desktop sidebar + mobile — FIXED
-- [ ] Layout: Hero image aspect ratio is bad for vendor images -> Use conventional rectangle, free up space for utility.
+- [x] Layout: Hero image aspect ratio is bad for vendor images -> Use conventional rectangle, free up space for utility. — hero height reduced
 - [x] "More providers in [region]" section added — FIXED
 - [x] "Check Availability" → links to operator website — FIXED
 - [x] Search bar added to search results page — FIXED
@@ -194,9 +194,9 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 **Admin / Backend**
 
-- [ ] UI: Remove top navigation from Admin screen
-- [ ] UI: Add "Go to site" button (top right)
-- [ ] Security: Add password protection for Admin area
+- [x] UI: Remove top navigation from Admin screen — FIXED
+- [x] UI: Add "Go to site" button (top right) — FIXED
+- [x] Security: Add password protection for Admin area — admin login page + auth route added
   - *Suggestion*: Use Vercel authentication (Toolbar/Deployment Protection) to restrict to dev users.
 
 **Region Pages**
@@ -226,8 +226,8 @@ The following pages are confirmed missing hero images in the seed data/code:
 - [ ] Feature: "Essential Gear" -> Show product grid via Amazon API (engaging/useful items)
 - [ ] Design: "Best Time to Visit" -> Replace "giant grid of dots" with Activity vs Season matrix diagram
   - *Idea*: Use CSS `.gradient` for better UX
-- [ ] Logic: Remove "Quick Plan" widget (date functionality not ready)
-- [ ] Logic: Remove "Local Tips" link (no content yet)
+- [x] Logic: Remove "Quick Plan" widget (date functionality not ready) — removed
+- [x] Logic: Remove "Local Tips" link (no content yet) — removed
 
 **Guides / Articles (e.g., Guides Homepage)**
 

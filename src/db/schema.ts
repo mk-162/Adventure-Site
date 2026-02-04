@@ -489,12 +489,33 @@ export const answers = pgTable("answers", {
 // COMMERCIAL TABLES
 // =====================
 
+// Advertiser accounts (companies that may have multiple listings)
+export const advertiserAccounts = pgTable("advertiser_accounts", {
+  id: serial("id").primaryKey(),
+  name: varchar("name", { length: 255 }).notNull(),
+  slug: varchar("slug", { length: 255 }).notNull(),
+  primaryEmail: varchar("primary_email", { length: 255 }),
+  primaryPhone: varchar("primary_phone", { length: 50 }),
+  contactName: varchar("contact_name", { length: 255 }),
+  // Billing
+  billingEmail: varchar("billing_email", { length: 255 }),
+  billingCustomAmount: decimal("billing_custom_amount", { precision: 10, scale: 2 }), // override monthly price
+  billingNotes: text("billing_notes"), // "20% multi-site discount", "extra £10 for featured", etc.
+  stripeCustomerId: varchar("stripe_customer_id", { length: 255 }),
+  // Notes
+  adminNotes: text("admin_notes"), // internal CRM notes
+  // Meta
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
 // Operators/Partners
 export const operators = pgTable("operators", {
   id: serial("id").primaryKey(),
   siteId: integer("site_id")
     .references(() => sites.id)
     .notNull(),
+  accountId: integer("account_id").references(() => advertiserAccounts.id), // links to parent company
   name: varchar("name", { length: 255 }).notNull(),
   slug: varchar("slug", { length: 255 }).notNull(),
   type: operatorTypeEnum("type").default("secondary").notNull(),
@@ -532,6 +553,9 @@ export const operators = pgTable("operators", {
   billingTier: varchar("billing_tier", { length: 50 }).default("free"), // 'free', 'verified', 'premium'
   billingEmail: varchar("billing_email", { length: 255 }),
   billingPeriodEnd: timestamp("billing_period_end"),
+  billingCustomAmount: decimal("billing_custom_amount", { precision: 10, scale: 2 }), // per-listing price override
+  billingNotes: text("billing_notes"), // discount/extra notes
+  adminNotes: text("admin_notes"), // internal CRM notes
   verifiedAt: timestamp("verified_at"),
   verifiedByEmail: varchar("verified_by_email", { length: 255 }),
   createdAt: timestamp("created_at").defaultNow().notNull(),
@@ -747,8 +771,13 @@ export const regionsRelations = relations(regions, ({ one, many }) => ({
   guidePages: many(guidePages),
 }));
 
+export const advertiserAccountsRelations = relations(advertiserAccounts, ({ many }) => ({
+  operators: many(operators),
+}));
+
 export const operatorsRelations = relations(operators, ({ one, many }) => ({
   site: one(sites, { fields: [operators.siteId], references: [sites.id] }),
+  account: one(advertiserAccounts, { fields: [operators.accountId], references: [advertiserAccounts.id] }),
   activities: many(activities),
   offers: many(operatorOffers),
 }));

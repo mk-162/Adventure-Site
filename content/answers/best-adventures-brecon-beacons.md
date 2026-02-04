@@ -1,5 +1,5 @@
 ---
-slug: best-adventures-brecon-Beacons
+slug: best-adventures-brecon-beacons
 question: "What are the best adventure activities in Brecon Beacons?"
 region: brecon-beacons
 

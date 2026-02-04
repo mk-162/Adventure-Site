@@ -54,8 +54,8 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 *Basecamp Feature*
 
-- [ ] Input: Support Postcodes and Text-based locations (not just GPS/Map).
-- [ ] Functionality: Location must be **Editable** after setting.
+- [x] Input: Support Postcodes and Text-based locations (not just GPS/Map). — Nominatim geocoder in BasecampPicker
+- [x] Functionality: Location must be **Editable** after setting. — Change button on BasecampPicker
 - [x] Auth: Add "Sign in to save settings" option. — login page prompts save benefits
 
 *My Trip View (Locked-in / Saved State)*
@@ -65,7 +65,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [x] Feature: Add "Notes" field for users to organize their trip. — TripNotes component with localStorage
 - [x] Feature: Download as PDF. — print-optimized CSS + download button
 - [x] Feature: Share Trip (link). — share button on itinerary pages
-- [ ] Feature: Free Text Entry (Add custom items/plans not in DB).
+- [x] Feature: Free Text Entry (Add custom items/plans not in DB). — CustomStopForm with localStorage
 - [ ] Content: Add "Generic Cards" for filler activities:
   - "Rest & Relaxation"
   - "Local Walk"
@@ -157,7 +157,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 **Deals System (Proposal)**
 
-- [ ] Feature: Advertisers offer deal codes in exchange for user signup/email
+- [x] Feature: Advertisers offer deal codes in exchange for user signup/email — DealCode component built
 - [x] Validation: "Is this too much friction?" (Note: Standard practice for lead gen) — noted, standard lead gen
 
 **Missing Hero Images (Audit)**

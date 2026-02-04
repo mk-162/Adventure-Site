@@ -1,0 +1,760 @@
+{
+  "generated": "2026-02-04T18:27:04.936Z",
+  "totalImages": 318,
+  "mappings": [
+    {
+      "page": "/[region] (snowdonia)",
+      "section": "scenic-gallery",
+      "usage": "gallery",
+      "imageCount": 32,
+      "images": [
+        "/images/wales/snowdonia-wales-0ad36185.jpg",
+        "/images/wales/snowdonia-wales-2bf15ed9.jpg",
+        "/images/wales/snowdonia-wales-3b76ed92.jpg",
+        "/images/wales/snowdonia-wales-447ae31f.jpg",
+        "/images/wales/snowdonia-wales-61012d06.jpg",
+        "/images/wales/snowdonia-wales-e6343a25.jpg",
+        "/images/wales/snowdonia-wales-fd04b052.jpg",
+        "/images/wales/snowdon-mountain-2ab3d50c.jpg",
+        "/images/wales/snowdon-mountain-4997ac2d.jpg",
+        "/images/wales/snowdon-mountain-6eb72608.jpg",
+        "/images/wales/snowdon-mountain-a70c9990.jpg",
+        "/images/wales/snowdon-mountain-d156515a.jpg",
+        "/images/wales/snowdon-mountain-ed154022.jpg",
+        "/images/wales/lake-snowdonia-23b3d602.jpg",
+        "/images/wales/lake-snowdonia-32cca616.jpg",
+        "/images/wales/lake-snowdonia-45c73d25.jpg",
+        "/images/wales/lake-snowdonia-46ac5853.jpg",
+        "/images/wales/lake-snowdonia-4bcfb3c3.jpg",
+        "/images/wales/lake-snowdonia-4c3e1618.jpg",
+        "/images/wales/lake-snowdonia-9364c4d4.jpg",
+        "/images/wales/lake-snowdonia-acb52502.jpg",
+        "/images/wales/lake-snowdonia-d1b0cede.jpg",
+        "/images/wales/lake-snowdonia-dd82dc26.jpg",
+        "/images/wales/lake-snowdonia-f60dc51d.jpg",
+        "/images/wales/lake-snowdonia-fc7107d2.jpg",
+        "/images/wales/forest-snowdonia-03e2d44d.jpg",
+        "/images/wales/forest-snowdonia-051a18ff.jpg",
+        "/images/wales/forest-snowdonia-16dd5b53.jpg",
+        "/images/wales/forest-snowdonia-23332a90.jpg",
+        "/images/wales/forest-snowdonia-3d8668ff.jpg",
+        "/images/wales/forest-snowdonia-a143e852.jpg",
+        "/images/wales/forest-snowdonia-b6c449db.jpg"
+      ],
+      "notes": "32 landscape photos for snowdonia region page gallery. 1024px — good for gallery cards, not hero."
+    },
+    {
+      "page": "/[region] (brecon-beacons)",
+      "section": "scenic-gallery",
+      "usage": "gallery",
+      "imageCount": 11,
+      "images": [
+        "/images/wales/brecon-beacons-wales-006ad4da.jpg",
+        "/images/wales/brecon-beacons-wales-026bc5ef.jpg",
+        "/images/wales/brecon-beacons-wales-02e1b6aa.jpg",
+        "/images/wales/brecon-beacons-wales-2e5757f1.jpg",
+        "/images/wales/brecon-beacons-wales-3867e203.jpg",
+        "/images/wales/brecon-beacons-wales-3a321c1f.jpg",
+        "/images/wales/brecon-beacons-wales-6ef1d107.jpg",
+        "/images/wales/brecon-beacons-wales-9773e61e.jpg",
+        "/images/wales/brecon-beacons-wales-9f0192a8.jpg",
+        "/images/wales/brecon-beacons-wales-f573f58d.jpg",
+        "/images/wales/lake-brecon-beacons-54ac108d.jpg"
+      ],
+      "notes": "11 landscape photos for brecon-beacons region page gallery. 1024px — good for gallery cards, not hero."
+    },
+    {
+      "page": "/[region] (pembrokeshire)",
+      "section": "scenic-gallery",
+      "usage": "gallery",
+      "imageCount": 13,
+      "images": [
+        "/images/wales/pembrokeshire-coast-wales-0b0c464a.jpg",
+        "/images/wales/pembrokeshire-coast-wales-999c9c39.jpg",
+        "/images/wales/pembrokeshire-coast-wales-a1f8290c.jpg",
+        "/images/wales/pembrokeshire-coast-wales-a7080336.jpg",
+        "/images/wales/pembrokeshire-coast-wales-b330e7ab.jpg",
+        "/images/wales/pembrokeshire-coast-wales-bcd19dc4.jpg",
+        "/images/wales/pembrokeshire-coast-wales-c17a15f1.jpg",
+        "/images/wales/pembrokeshire-coast-wales-c472fe0a.jpg",
+        "/images/wales/coastline-pembrokeshire-9a5f734c.jpg",
+        "/images/wales/coastline-pembrokeshire-a7080336.jpg",
+        "/images/wales/coastline-pembrokeshire-b3e35c66.jpg",
+        "/images/wales/coastline-pembrokeshire-bcd19dc4.jpg",
+        "/images/wales/coastline-pembrokeshire-e1ff0c28.jpg"
+      ],
+      "notes": "13 landscape photos for pembrokeshire region page gallery. 1024px — good for gallery cards, not hero."
+    },
+    {
+      "page": "/[region] (gower)",
+      "section": "scenic-gallery",
+      "usage": "gallery",
+      "imageCount": 3,
+      "images": [
+        "/images/wales/coastline-gower-0c5bbf8d.jpg",
+        "/images/wales/coastline-gower-3ae7c613.jpg",
+        "/images/wales/coastline-gower-7ad36ae6.jpg"
+      ],
+      "notes": "3 landscape photos for gower region page gallery. 1024px — good for gallery cards, not hero."
+    },
+    {
+      "page": "/[region] (anglesey)",
+      "section": "scenic-gallery",
+      "usage": "gallery",
+      "imageCount": 3,
+      "images": [
+        "/images/wales/coastline-anglesey-875a66e9.jpg",
+        "/images/wales/coastline-anglesey-984dc908.jpg",
+        "/images/wales/forest-anglesey-5fc54215.jpg"
+      ],
+      "notes": "3 landscape photos for anglesey region page gallery. 1024px — good for gallery cards, not hero."
+    },
+    {
+      "page": "/[region] (llyn-peninsula)",
+      "section": "scenic-gallery",
+      "usage": "gallery",
+      "imageCount": 1,
+      "images": [
+        "/images/wales/lake-llyn-peninsula-c7e24e36.jpg"
+      ],
+      "notes": "1 landscape photos for llyn-peninsula region page gallery. 1024px — good for gallery cards, not hero."
+    },
+    {
+      "page": "/[region] (north-wales)",
+      "section": "scenic-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/wales/forest-north-wales-1989c47f.jpg",
+        "/images/wales/welsh-mountains-06c2efc9.jpg",
+        "/images/wales/welsh-mountains-26173bb9.jpg",
+        "/images/wales/welsh-mountains-44039d03.jpg",
+        "/images/wales/welsh-mountains-54d670ae.jpg"
+      ],
+      "notes": "5 landscape photos for north-wales region page gallery. 1024px — good for gallery cards, not hero."
+    },
+    {
+      "page": "/[region] (south-wales)",
+      "section": "scenic-gallery",
+      "usage": "gallery",
+      "imageCount": 2,
+      "images": [
+        "/images/wales/coastline-south-wales-ee1e192a.jpg",
+        "/images/wales/forest-south-wales-68421665.jpg"
+      ],
+      "notes": "2 landscape photos for south-wales region page gallery. 1024px — good for gallery cards, not hero."
+    },
+    {
+      "page": "/[region] (mid-wales)",
+      "section": "scenic-gallery",
+      "usage": "gallery",
+      "imageCount": 15,
+      "images": [
+        "/images/wales/wales-countryside-057777c4.jpg",
+        "/images/wales/wales-countryside-0d2c487f.jpg",
+        "/images/wales/wales-countryside-43fe41e0.jpg",
+        "/images/wales/wales-countryside-7d64fae9.jpg",
+        "/images/wales/wales-countryside-935946ac.jpg",
+        "/images/wales/wales-countryside-cad6c0c4.jpg",
+        "/images/wales/welsh-hills-3f8b64d9.jpg",
+        "/images/wales/welsh-hills-3f8f4985.jpg",
+        "/images/wales/welsh-hills-62834fea.jpg",
+        "/images/wales/welsh-hills-6e3b8ab1.jpg",
+        "/images/wales/welsh-hills-70a933bd.jpg",
+        "/images/wales/welsh-hills-898e370e.jpg",
+        "/images/wales/welsh-hills-d26ed079.jpg",
+        "/images/wales/welsh-hills-d58b93a9.jpg",
+        "/images/wales/welsh-hills-f178426d.jpg"
+      ],
+      "notes": "15 landscape photos for mid-wales region page gallery. 1024px — good for gallery cards, not hero."
+    },
+    {
+      "page": "/[region] (wye-valley)",
+      "section": "scenic-gallery",
+      "usage": "gallery",
+      "imageCount": 16,
+      "images": [
+        "/images/wales/forest-wales-general-23566f6d.jpg",
+        "/images/wales/forest-wales-general-42ecb76c.jpg",
+        "/images/wales/forest-wales-general-4893ebdd.jpg",
+        "/images/wales/forest-wales-general-59a2ebfa.jpg",
+        "/images/wales/forest-wales-general-6c0e6318.jpg",
+        "/images/wales/forest-wales-general-8995ed27.jpg",
+        "/images/wales/forest-wales-general-92c9a64d.jpg",
+        "/images/wales/forest-wales-general-b4f8b06f.jpg",
+        "/images/wales/forest-wales-general-e1912fd6.jpg",
+        "/images/wales/forest-wales-general-e4476fe8.jpg",
+        "/images/wales/wales-countryside-057777c4.jpg",
+        "/images/wales/wales-countryside-0d2c487f.jpg",
+        "/images/wales/wales-countryside-43fe41e0.jpg",
+        "/images/wales/wales-countryside-7d64fae9.jpg",
+        "/images/wales/wales-countryside-935946ac.jpg",
+        "/images/wales/wales-countryside-cad6c0c4.jpg"
+      ],
+      "notes": "16 landscape photos for wye-valley region page gallery. 1024px — good for gallery cards, not hero."
+    },
+    {
+      "page": "/[region] (carmarthenshire)",
+      "section": "scenic-gallery",
+      "usage": "gallery",
+      "imageCount": 15,
+      "images": [
+        "/images/wales/wales-countryside-057777c4.jpg",
+        "/images/wales/wales-countryside-0d2c487f.jpg",
+        "/images/wales/wales-countryside-43fe41e0.jpg",
+        "/images/wales/wales-countryside-7d64fae9.jpg",
+        "/images/wales/wales-countryside-935946ac.jpg",
+        "/images/wales/wales-countryside-cad6c0c4.jpg",
+        "/images/wales/welsh-hills-3f8b64d9.jpg",
+        "/images/wales/welsh-hills-3f8f4985.jpg",
+        "/images/wales/welsh-hills-62834fea.jpg",
+        "/images/wales/welsh-hills-6e3b8ab1.jpg",
+        "/images/wales/welsh-hills-70a933bd.jpg",
+        "/images/wales/welsh-hills-898e370e.jpg",
+        "/images/wales/welsh-hills-d26ed079.jpg",
+        "/images/wales/welsh-hills-d58b93a9.jpg",
+        "/images/wales/welsh-hills-f178426d.jpg"
+      ],
+      "notes": "15 landscape photos for carmarthenshire region page gallery. 1024px — good for gallery cards, not hero."
+    },
+    {
+      "page": "/[region] (ceredigion)",
+      "section": "scenic-gallery",
+      "usage": "gallery",
+      "imageCount": 14,
+      "images": [
+        "/images/wales/coastline-wales-general-031eae54.jpg",
+        "/images/wales/coastline-wales-general-114b4c86.jpg",
+        "/images/wales/coastline-wales-general-64b7570a.jpg",
+        "/images/wales/coastline-wales-general-744c078b.jpg",
+        "/images/wales/coastline-wales-general-9b5511ff.jpg",
+        "/images/wales/coastline-wales-general-9d0bd7c6.jpg",
+        "/images/wales/coastline-wales-general-b66d7aa6.jpg",
+        "/images/wales/coastline-wales-general-fe909719.jpg",
+        "/images/wales/wales-countryside-057777c4.jpg",
+        "/images/wales/wales-countryside-0d2c487f.jpg",
+        "/images/wales/wales-countryside-43fe41e0.jpg",
+        "/images/wales/wales-countryside-7d64fae9.jpg",
+        "/images/wales/wales-countryside-935946ac.jpg",
+        "/images/wales/wales-countryside-cad6c0c4.jpg"
+      ],
+      "notes": "14 landscape photos for ceredigion region page gallery. 1024px — good for gallery cards, not hero."
+    },
+    {
+      "page": "/activities/coasteering",
+      "section": "photo-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/activities/coasteering-02-519a34c0.jpg",
+        "/images/activities/coasteering-03-b5583981.jpg",
+        "/images/activities/coasteering-04-16568470.jpg",
+        "/images/activities/coasteering-05-d7153020.jpg",
+        "/images/activities/coasteering-06-d7bec2a8.jpg"
+      ],
+      "notes": "5 gallery photos for coasteering activity page. 1024px."
+    },
+    {
+      "page": "/activities/surfing",
+      "section": "photo-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/activities/surfing-02-1ef1420b.jpg",
+        "/images/activities/surfing-03-fc8506a1.jpg",
+        "/images/activities/surfing-04-9bfdc377.jpg",
+        "/images/activities/surfing-05-1b64a41d.jpg",
+        "/images/activities/surfing-06-74705f6a.jpg"
+      ],
+      "notes": "5 gallery photos for surfing activity page. 1024px."
+    },
+    {
+      "page": "/activities/kayaking",
+      "section": "photo-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/activities/kayaking-02-570fb957.jpg",
+        "/images/activities/kayaking-03-bcd19dc4.jpg",
+        "/images/activities/kayaking-04-ba6d1e33.jpg",
+        "/images/activities/kayaking-05-758c3658.jpg",
+        "/images/activities/kayaking-06-656475f5.jpg"
+      ],
+      "notes": "5 gallery photos for kayaking activity page. 1024px."
+    },
+    {
+      "page": "/activities/caving",
+      "section": "photo-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/activities/caving-02-458228b9.jpg",
+        "/images/activities/caving-03-fb4d036f.jpg",
+        "/images/activities/caving-04-8d6bb2da.jpg",
+        "/images/activities/caving-05-95ef7683.jpg",
+        "/images/activities/caving-06-70411151.jpg"
+      ],
+      "notes": "5 gallery photos for caving activity page. 1024px."
+    },
+    {
+      "page": "/activities/climbing",
+      "section": "photo-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/activities/climbing-02-c2c33740.jpg",
+        "/images/activities/climbing-03-769d8444.jpg",
+        "/images/activities/climbing-04-a6c69ad4.jpg",
+        "/images/activities/climbing-05-62ff29a8.jpg",
+        "/images/activities/climbing-06-a0eb9a7d.jpg"
+      ],
+      "notes": "5 gallery photos for climbing activity page. 1024px."
+    },
+    {
+      "page": "/activities/mountain-biking",
+      "section": "photo-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/activities/mountain-biking-02-1fe6646f.jpg",
+        "/images/activities/mountain-biking-03-ce257a7c.jpg",
+        "/images/activities/mountain-biking-04-63e4b2e0.jpg",
+        "/images/activities/mountain-biking-05-ebb64387.jpg",
+        "/images/activities/mountain-biking-06-f0231015.jpg"
+      ],
+      "notes": "5 gallery photos for mountain-biking activity page. 1024px."
+    },
+    {
+      "page": "/activities/hiking",
+      "section": "photo-gallery",
+      "usage": "gallery",
+      "imageCount": 4,
+      "images": [
+        "/images/activities/hiking-03-96151002.jpg",
+        "/images/activities/hiking-04-2bf15ed9.jpg",
+        "/images/activities/hiking-05-c7cb2f1e.jpg",
+        "/images/activities/hiking-06-74fc1189.jpg"
+      ],
+      "notes": "4 gallery photos for hiking activity page. 1024px."
+    },
+    {
+      "page": "/activities/gorge-walking",
+      "section": "photo-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/activities/gorge-walking-02-0027dfcc.jpg",
+        "/images/activities/gorge-walking-03-6eada4af.jpg",
+        "/images/activities/gorge-walking-04-d40b6bff.jpg",
+        "/images/activities/gorge-walking-05-507fc51c.jpg",
+        "/images/activities/gorge-walking-06-956385b9.jpg"
+      ],
+      "notes": "5 gallery photos for gorge-walking activity page. 1024px."
+    },
+    {
+      "page": "/activities/wild-swimming",
+      "section": "photo-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/activities/wild-swimming-02-bc83a30d.jpg",
+        "/images/activities/wild-swimming-03-9c4fdbe0.jpg",
+        "/images/activities/wild-swimming-04-aaaffc2e.jpg",
+        "/images/activities/wild-swimming-05-9ded1f48.jpg",
+        "/images/activities/wild-swimming-06-d4165348.jpg"
+      ],
+      "notes": "5 gallery photos for wild-swimming activity page. 1024px."
+    },
+    {
+      "page": "/activities/zip-lining",
+      "section": "photo-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/activities/zip-lining-02-dad94e84.jpg",
+        "/images/activities/zip-lining-03-b56e3ec0.jpg",
+        "/images/activities/zip-lining-04-534600ba.jpg",
+        "/images/activities/zip-lining-05-d5ecfeb3.jpg",
+        "/images/activities/zip-lining-06-15cc8072.jpg"
+      ],
+      "notes": "5 gallery photos for zip-lining activity page. 1024px."
+    },
+    {
+      "page": "/activities/paddleboarding",
+      "section": "photo-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/activities/paddleboarding-02-30a88c24.jpg",
+        "/images/activities/paddleboarding-03-02927bb8.jpg",
+        "/images/activities/paddleboarding-04-c0cf2a01.jpg",
+        "/images/activities/paddleboarding-05-46f4408f.jpg",
+        "/images/activities/paddleboarding-06-f35e1c4d.jpg"
+      ],
+      "notes": "5 gallery photos for paddleboarding activity page. 1024px."
+    },
+    {
+      "page": "/activities/rafting",
+      "section": "photo-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/activities/rafting-02-0d9b00f9.jpg",
+        "/images/activities/rafting-03-3b5d5ae0.jpg",
+        "/images/activities/rafting-04-bd3fe82b.jpg",
+        "/images/activities/rafting-05-ed393aad.jpg",
+        "/images/activities/rafting-06-e544a7c2.jpg"
+      ],
+      "notes": "5 gallery photos for rafting activity page. 1024px."
+    },
+    {
+      "page": "/",
+      "section": "page-images",
+      "usage": "inline",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/homepage-hero-01-09087a8a.jpg",
+        "/images/misc/homepage-hero-02-b5069db7.jpg",
+        "/images/misc/homepage-hero-03-355a010f.jpg",
+        "/images/misc/homepage-hero-04-6a86aa0d.jpg",
+        "/images/misc/homepage-hero-05-a11e63e5.jpg"
+      ],
+      "notes": "5 images for /. 1024px — inline/card use."
+    },
+    {
+      "page": "/about",
+      "section": "page-images",
+      "usage": "inline",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/about-mission-01-1704719c.jpg",
+        "/images/misc/about-mission-02-69d52bb0.jpg",
+        "/images/misc/about-mission-03-b1ffb8cd.jpg",
+        "/images/misc/about-mission-04-81049f2f.jpg",
+        "/images/misc/about-mission-05-a3a22562.jpg"
+      ],
+      "notes": "5 images for /about. 1024px — inline/card use."
+    },
+    {
+      "page": "/contact",
+      "section": "page-images",
+      "usage": "inline",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/contact-help-01-081f0c1f.jpg",
+        "/images/misc/contact-help-02-d4265ed9.jpg",
+        "/images/misc/contact-help-03-9380171a.jpg",
+        "/images/misc/contact-help-04-a5161264.jpg",
+        "/images/misc/contact-help-05-13d52e84.jpg"
+      ],
+      "notes": "5 images for /contact. 1024px — inline/card use."
+    },
+    {
+      "page": "/help",
+      "section": "page-images",
+      "usage": "inline",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/contact-help-01-081f0c1f.jpg",
+        "/images/misc/contact-help-02-d4265ed9.jpg",
+        "/images/misc/contact-help-03-9380171a.jpg",
+        "/images/misc/contact-help-04-a5161264.jpg",
+        "/images/misc/contact-help-05-13d52e84.jpg"
+      ],
+      "notes": "5 images for /help. 1024px — inline/card use."
+    },
+    {
+      "page": "/safety",
+      "section": "page-images",
+      "usage": "inline",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/safety-mountain-01-6ff29756.jpg",
+        "/images/misc/safety-mountain-02-79505242.jpg",
+        "/images/misc/safety-mountain-03-34366063.jpg",
+        "/images/misc/safety-mountain-04-57689a09.jpg",
+        "/images/misc/safety-mountain-05-e9c26333.jpg"
+      ],
+      "notes": "5 images for /safety. 1024px — inline/card use."
+    },
+    {
+      "page": "/events",
+      "section": "page-images",
+      "usage": "inline",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/events-festival-01-33fb98e2.jpg",
+        "/images/misc/events-festival-02-d5627625.jpg",
+        "/images/misc/events-festival-03-a5e74d4a.jpg",
+        "/images/misc/events-festival-04-3bd3476c.jpg",
+        "/images/misc/events-festival-05-ca042094.jpg"
+      ],
+      "notes": "5 images for /events. 1024px — inline/card use."
+    },
+    {
+      "page": "/for-operators",
+      "section": "page-images",
+      "usage": "inline",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/partner-business-01-7f12dce4.jpg",
+        "/images/misc/partner-business-02-2431553b.jpg",
+        "/images/misc/partner-business-03-b9188daa.jpg",
+        "/images/misc/partner-business-04-7a924fff.jpg",
+        "/images/misc/partner-business-05-db9adfff.jpg"
+      ],
+      "notes": "5 images for /for-operators. 1024px — inline/card use."
+    },
+    {
+      "page": "/itineraries",
+      "section": "page-images",
+      "usage": "inline",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/itinerary-planning-01-b6fcc26a.jpg",
+        "/images/misc/itinerary-planning-02-bd925301.jpg",
+        "/images/misc/itinerary-planning-03-ac9896d5.jpg",
+        "/images/misc/itinerary-planning-04-39dceda3.jpg",
+        "/images/misc/itinerary-planning-05-af57038b.jpg"
+      ],
+      "notes": "5 images for /itineraries. 1024px — inline/card use."
+    },
+    {
+      "page": "/guides/camping-gear",
+      "section": "page-images",
+      "usage": "inline",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/gear-camping-01-55639fd4.jpg",
+        "/images/misc/gear-camping-02-68be8b48.jpg",
+        "/images/misc/gear-camping-03-ad238db8.jpg",
+        "/images/misc/gear-camping-04-27db8926.jpg",
+        "/images/misc/gear-camping-05-ca857981.jpg"
+      ],
+      "notes": "5 images for /guides/camping-gear. 1024px — inline/card use."
+    },
+    {
+      "page": "/guides/climbing-gear",
+      "section": "page-images",
+      "usage": "inline",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/gear-climbing-01-3447f9ac.jpg",
+        "/images/misc/gear-climbing-02-426340dc.jpg",
+        "/images/misc/gear-climbing-03-b1e00133.jpg",
+        "/images/misc/gear-climbing-04-92ba474a.jpg",
+        "/images/misc/gear-climbing-05-27d796a8.jpg"
+      ],
+      "notes": "5 images for /guides/climbing-gear. 1024px — inline/card use."
+    },
+    {
+      "page": "/guides/hiking-gear",
+      "section": "page-images",
+      "usage": "inline",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/gear-hiking-01-918f1952.jpg",
+        "/images/misc/gear-hiking-02-1ff976cb.jpg",
+        "/images/misc/gear-hiking-03-7b074677.jpg",
+        "/images/misc/gear-hiking-04-cdb18d36.jpg",
+        "/images/misc/gear-hiking-05-a68da877.jpg"
+      ],
+      "notes": "5 images for /guides/hiking-gear. 1024px — inline/card use."
+    },
+    {
+      "page": "/guides/spring-adventures",
+      "section": "seasonal-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/seasonal-spring-01-a092225c.jpg",
+        "/images/misc/seasonal-spring-02-9e997741.jpg",
+        "/images/misc/seasonal-spring-03-52530277.jpg",
+        "/images/misc/seasonal-spring-04-37e4db61.jpg",
+        "/images/misc/seasonal-spring-05-869a6224.jpg"
+      ],
+      "notes": "5 seasonal spring images. 1024px."
+    },
+    {
+      "page": "/guides/summer-adventures",
+      "section": "seasonal-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/seasonal-summer-01-77474fb8.jpg",
+        "/images/misc/seasonal-summer-02-11800d6d.jpg",
+        "/images/misc/seasonal-summer-03-c185e38c.jpg",
+        "/images/misc/seasonal-summer-04-7909e9a3.jpg",
+        "/images/misc/seasonal-summer-05-d8bea00a.jpg"
+      ],
+      "notes": "5 seasonal summer images. 1024px."
+    },
+    {
+      "page": "/guides/autumn-adventures",
+      "section": "seasonal-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/seasonal-autumn-01-b078c4e2.jpg",
+        "/images/misc/seasonal-autumn-02-fc369b45.jpg",
+        "/images/misc/seasonal-autumn-03-03000872.jpg",
+        "/images/misc/seasonal-autumn-04-28b0fe54.jpg",
+        "/images/misc/seasonal-autumn-05-317ede66.jpg"
+      ],
+      "notes": "5 seasonal autumn images. 1024px."
+    },
+    {
+      "page": "/guides/winter-adventures",
+      "section": "seasonal-gallery",
+      "usage": "gallery",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/seasonal-winter-01-f8a41743.jpg",
+        "/images/misc/seasonal-winter-02-41319e4d.jpg",
+        "/images/misc/seasonal-winter-03-1b133903.jpg",
+        "/images/misc/seasonal-winter-04-4781847f.jpg",
+        "/images/misc/seasonal-winter-05-c66ad87f.jpg"
+      ],
+      "notes": "5 seasonal winter images. 1024px."
+    },
+    {
+      "page": "/guides/camping-gear",
+      "section": "gear-photos",
+      "usage": "inline",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/gear-camping-01-55639fd4.jpg",
+        "/images/misc/gear-camping-02-68be8b48.jpg",
+        "/images/misc/gear-camping-03-ad238db8.jpg",
+        "/images/misc/gear-camping-04-27db8926.jpg",
+        "/images/misc/gear-camping-05-ca857981.jpg"
+      ],
+      "notes": "5 gear images for camping guide."
+    },
+    {
+      "page": "/guides/climbing-gear",
+      "section": "gear-photos",
+      "usage": "inline",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/gear-climbing-01-3447f9ac.jpg",
+        "/images/misc/gear-climbing-02-426340dc.jpg",
+        "/images/misc/gear-climbing-03-b1e00133.jpg",
+        "/images/misc/gear-climbing-04-92ba474a.jpg",
+        "/images/misc/gear-climbing-05-27d796a8.jpg"
+      ],
+      "notes": "5 gear images for climbing guide."
+    },
+    {
+      "page": "/guides/hiking-gear",
+      "section": "gear-photos",
+      "usage": "inline",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/gear-hiking-01-918f1952.jpg",
+        "/images/misc/gear-hiking-02-1ff976cb.jpg",
+        "/images/misc/gear-hiking-03-7b074677.jpg",
+        "/images/misc/gear-hiking-04-cdb18d36.jpg",
+        "/images/misc/gear-hiking-05-a68da877.jpg"
+      ],
+      "notes": "5 gear images for hiking guide."
+    },
+    {
+      "page": "/guides/water-gear",
+      "section": "gear-photos",
+      "usage": "inline",
+      "imageCount": 5,
+      "images": [
+        "/images/misc/gear-water-01-cdcf40ed.jpg",
+        "/images/misc/gear-water-02-879c3adf.jpg",
+        "/images/misc/gear-water-03-5f03c499.jpg",
+        "/images/misc/gear-water-04-d606843a.jpg",
+        "/images/misc/gear-water-05-965cd697.jpg"
+      ],
+      "notes": "5 gear images for water guide."
+    }
+  ],
+  "unmapped": [
+    "/images/wales/lake-wales-general-6320223c.jpg",
+    "/images/wales/lake-wales-general-6dc6f657.jpg",
+    "/images/wales/lake-wales-general-aac8c5fb.jpg",
+    "/images/wales/lake-wales-general-afa13f53.jpg",
+    "/images/wales/lake-wales-general-ddb450aa.jpg",
+    "/images/wales/lake-wales-general-f5ef6474.jpg",
+    "/images/wales/waterfall-wales-general-a4bba64c.jpg",
+    "/images/activities/archery-hero.jpg",
+    "/images/activities/boat-tour-hero.jpg",
+    "/images/activities/caving-hero.jpg",
+    "/images/activities/climbing-hero.jpg",
+    "/images/activities/coasteering-hero.jpg",
+    "/images/activities/gorge-scrambling-hero.jpg",
+    "/images/activities/gorge-walking-hero.jpg",
+    "/images/activities/high-ropes-hero.jpg",
+    "/images/activities/hiking-hero.jpg",
+    "/images/activities/hiking-scrambling-hero.jpg",
+    "/images/activities/kayaking-hero.jpg",
+    "/images/activities/mine-exploration-hero.jpg",
+    "/images/activities/mountain-biking-hero.jpg",
+    "/images/activities/paddleboarding-hero.jpg",
+    "/images/activities/rafting-hero.jpg",
+    "/images/activities/sea-kayaking-hero.jpg",
+    "/images/activities/sup-hero.jpg",
+    "/images/activities/surfing-hero.jpg",
+    "/images/activities/trail-running-hero.jpg",
+    "/images/activities/wild-swimming-hero.jpg",
+    "/images/activities/wildlife-boat-tour-hero.jpg",
+    "/images/activities/windsurfing-hero.jpg",
+    "/images/activities/zip-lining-hero.jpg",
+    "/images/misc/about-team-01-c29ed376.jpg",
+    "/images/misc/about-team-02-546f0443.jpg",
+    "/images/misc/about-team-03-82b6ebeb.jpg",
+    "/images/misc/about-team-04-37c31b8b.jpg",
+    "/images/misc/about-team-05-edbea1da.jpg",
+    "/images/misc/accessible-adventure-01-04f3bb3e.jpg",
+    "/images/misc/accessible-adventure-02-4573d4aa.jpg",
+    "/images/misc/accessible-adventure-03-4eb3948a.jpg",
+    "/images/misc/accessible-adventure-04-64fc0814.jpg",
+    "/images/misc/accessible-adventure-05-9775d17f.jpg",
+    "/images/misc/events-races-01-73c695f1.jpg",
+    "/images/misc/events-races-02-4805ea61.jpg",
+    "/images/misc/events-races-03-cfb10155.jpg",
+    "/images/misc/events-races-04-3b0137ef.jpg",
+    "/images/misc/events-races-05-99540cb7.jpg",
+    "/images/misc/family-adventure-01-e5b5487e.jpg",
+    "/images/misc/family-adventure-02-47c6ef03.jpg",
+    "/images/misc/family-adventure-03-2d67db91.jpg",
+    "/images/misc/family-adventure-04-08931875.jpg",
+    "/images/misc/family-adventure-05-e3efdb29.jpg",
+    "/images/misc/homepage-cta-01-f05c15c9.jpg",
+    "/images/misc/homepage-cta-02-44be48fd.jpg",
+    "/images/misc/homepage-cta-03-14eafd88.jpg",
+    "/images/misc/homepage-cta-04-c71cd2fd.jpg",
+    "/images/misc/homepage-cta-05-ba85fcf8.jpg",
+    "/images/misc/itinerary-group-01-69a29a24.jpg",
+    "/images/misc/itinerary-group-02-0e8c2026.jpg",
+    "/images/misc/itinerary-group-03-6ca34f14.jpg",
+    "/images/misc/itinerary-group-04-d7cc541c.jpg",
+    "/images/misc/itinerary-group-05-06f89ae9.jpg",
+    "/images/misc/newsletter-community-01-141adbf1.jpg",
+    "/images/misc/newsletter-community-02-29d641f2.jpg",
+    "/images/misc/newsletter-community-03-21f89c6b.jpg",
+    "/images/misc/newsletter-community-04-fb431edd.jpg",
+    "/images/misc/newsletter-community-05-85eab18e.jpg",
+    "/images/misc/safety-water-01-bda6864b.jpg",
+    "/images/misc/safety-water-02-e66258ba.jpg",
+    "/images/misc/safety-water-03-7e9f3abe.jpg",
+    "/images/misc/safety-water-04-1d6c7cd7.jpg",
+    "/images/misc/safety-water-05-d1d895e6.jpg",
+    "/images/regions/anglesey-hero.jpg",
+    "/images/regions/brecon-beacons-hero.jpg",
+    "/images/regions/carmarthenshire-hero.jpg",
+    "/images/regions/gower-hero.jpg",
+    "/images/regions/llyn-peninsula-hero.jpg",
+    "/images/regions/mid-wales-hero.jpg",
+    "/images/regions/north-wales-hero.jpg",
+    "/images/regions/pembrokeshire-hero.jpg",
+    "/images/regions/snowdonia-hero.jpg",
+    "/images/regions/south-wales-hero.jpg",
+    "/images/regions/wye-valley-hero.jpg"
+  ]
+}

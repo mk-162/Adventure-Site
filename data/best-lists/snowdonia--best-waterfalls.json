@@ -1,0 +1,366 @@
+{
+  "regionSlug": "snowdonia",
+  "slug": "best-waterfalls",
+  "urlPath": "/snowdonia/best-waterfalls",
+  "title": "9 Best Waterfalls in Snowdonia",
+  "metaTitle": "9 Best Waterfalls in Snowdonia (2025)",
+  "metaDescription": "Ranked guide to the best waterfalls in Snowdonia. From easy family walks to hidden cascades — with parking, access tips, and best times to visit.",
+  "h1": "9 Best Waterfalls in Snowdonia (2025)",
+  "strapline": "Thundering cascades, secret plunge pools, and misty gorges — Snowdonia's liquid drama.",
+  "heroImage": "/images/best-lists/snowdonia-best-waterfalls-hero.jpg",
+  "heroAlt": "Aber Falls thundering down a cliff face surrounded by green hillside after heavy rain",
+  "updatedDate": "2025-07",
+  "introduction": "Snowdonia gets a lot of rain — typically 3,000mm per year in the mountains. The upside of all that water is waterfalls. The national park is studded with cascades, from easy-access tourist favourites to hidden plunge pools that require a proper walk to reach.\n\nUnlike the concentrated Waterfall Country of the Brecon Beacons, Snowdonia's waterfalls are spread across the park. Some are on the main Snowdon hiking routes, others hidden in quiet valleys that most visitors never explore. The variety is enormous: 37-metre single-drop cascades, multi-step falls in forested gorges, and remote mountain cataracts that you'll have entirely to yourself.\n\nOne universal tip: visit after 2-3 days of rain for maximum flow. Many Snowdonia waterfalls reduce to a trickle in dry summer spells. The wettest months (October-January) are often the most spectacular.",
+  "rankingCriteria": "Rankings combine the waterfall's visual impact, accessibility, the quality of the surrounding walk, and how well it rewards a visit in different conditions. We favour waterfalls that deliver genuine drama and are worth a dedicated trip, rather than just a nice feature on a bigger walk.",
+  "comboPageLink": "/snowdonia/things-to-do/hiking",
+  "keywords": {
+    "primary": "best waterfalls in snowdonia",
+    "secondary": ["snowdonia waterfalls", "waterfalls snowdonia", "best waterfalls wales", "waterfalls north wales"],
+    "longTail": [
+      "aber falls snowdonia",
+      "swallow falls betws y coed",
+      "hidden waterfalls snowdonia",
+      "easy waterfall walks snowdonia",
+      "pistyll rhaeadr snowdonia",
+      "snowdonia waterfall swimming"
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Aber Falls (Rhaeadr Fawr)",
+      "slug": "aber-falls",
+      "verdict": "The most dramatic waterfall in Snowdonia. 37 metres of thundering water — and barely any effort to reach.",
+      "image": "/images/best-lists/snowdonia-best-waterfalls-aber-falls.jpg",
+      "imageAlt": "Aber Falls cascading 37 metres down a cliff face into a rocky pool",
+      "whyItMadeTheList": "Aber Falls delivers the biggest visual punch of any waterfall in Snowdonia. The water drops 37 metres down a wide cliff face in a single dramatic cascade, and after heavy rain, the power and spray are genuinely impressive. The walk in is flat, easy, and takes under 30 minutes through beautiful meadows and ancient oak woodland. It's the highest-impact, lowest-effort waterfall experience in North Wales.",
+      "difficulty": "Easy",
+      "duration": "1-1.5 hours return",
+      "distance": "4km return",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Families, photographers, anyone wanting a spectacular waterfall without a challenging walk",
+      "skipIf": "It's been dry for weeks — the falls reduce dramatically in drought. Visit after rain.",
+      "insiderTip": "Visit after 2-3 days of sustained rain for maximum drama. The falls can be a disappointing trickle in dry summer spells. Morning light is best for photos as the afternoon sun puts the falls in shadow. Look for red kites overhead on the walk in.",
+      "season": "Year-round (best October–April or after heavy rain)",
+      "parking": {
+        "location": "Aber Falls NRW car park",
+        "cost": "£3-5/day",
+        "notes": "Well-maintained car park with toilets and picnic area at Abergwyngregyn.",
+        "lat": 53.2183,
+        "lng": -4.0128
+      },
+      "startPoint": {
+        "name": "Aber Falls car park",
+        "lat": 53.2183,
+        "lng": -4.0128
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 2,
+      "name": "Pistyll Rhaeadr",
+      "slug": "pistyll-rhaeadr",
+      "verdict": "The tallest waterfall in Wales at 73 metres. A three-step cascade in a stunning hidden valley.",
+      "image": "/images/best-lists/snowdonia-best-waterfalls-pistyll-rhaeadr.jpg",
+      "imageAlt": "Pistyll Rhaeadr's three-tiered waterfall dropping 73 metres through a natural rock bridge",
+      "whyItMadeTheList": "At 73 metres, Pistyll Rhaeadr is the tallest waterfall in Wales and one of the 'Seven Wonders of Wales.' The water falls in three steps, passing through a natural rock bridge partway down — it's an extraordinary geological feature. The setting in a hidden valley near Llanrhaeadr-ym-Mochnant is remote and deeply atmospheric. George Borrow called it one of the most beautiful waterfalls in the world, and he wasn't wrong.",
+      "difficulty": "Easy (short walk from car park)",
+      "duration": "1 hour",
+      "distance": "1km return",
+      "cost": "Free (parking by donation at café)",
+      "bestFor": "Waterfall enthusiasts, photographers, anyone wanting to see something genuinely unique",
+      "skipIf": "You're expecting an easy day trip from central Snowdonia — it's on the eastern edge and the drive takes a while on narrow roads.",
+      "insiderTip": "The Tan-y-Pistyll café at the base has been serving visitors since the 17th century — have tea and cake while looking at the falls. A steep path leads to the top for different perspectives. Go in winter after storms for maximum flow. The road in is narrow and steep — not for nervous drivers.",
+      "season": "Year-round (best after rain, most dramatic November–March)",
+      "parking": {
+        "location": "Pistyll Rhaeadr café car park",
+        "cost": "By donation (£2-3)",
+        "notes": "Car park at the café at the base of the falls. Narrow road access. The café asks for a donation for parking.",
+        "lat": 52.8550,
+        "lng": -3.3785
+      },
+      "startPoint": {
+        "name": "Pistyll Rhaeadr",
+        "lat": 52.8550,
+        "lng": -3.3785
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 3,
+      "name": "Swallow Falls (Rhaeadr Ewynnol)",
+      "slug": "swallow-falls",
+      "verdict": "Snowdonia's most famous waterfall — dramatic, accessible, and worth the small entry fee.",
+      "image": "/images/best-lists/snowdonia-best-waterfalls-swallow-falls.jpg",
+      "imageAlt": "Swallow Falls cascading through a narrow gorge near Betws-y-Coed",
+      "whyItMadeTheList": "Swallow Falls has been attracting visitors since the Victorian era and it's easy to see why. The River Llugwy crashes through a narrow gorge in a series of cascading steps, creating a constant roar and mist that's impressive year-round. The viewing platforms give close-up views of the falls from multiple angles. It's the most accessible 'impressive' waterfall in Snowdonia, right on the A5 near Betws-y-Coed.",
+      "difficulty": "Easy (viewing platforms with steps)",
+      "duration": "30 minutes",
+      "distance": "200m from road",
+      "cost": "£2 viewing platform entry",
+      "bestFor": "Anyone passing through Betws-y-Coed. Quick stop, big impact.",
+      "skipIf": "You resent paying £2 — you can see the falls from the road bridge for free (less impressive view). Can be crowded in summer with tour groups.",
+      "insiderTip": "Visit in the early morning or late afternoon to avoid coach parties. The paid viewing platform is worth it for the close-up views, but the road bridge gives a decent free view. Combine with the Miners' Bridge circuit walk for a fuller Betws-y-Coed waterfall experience.",
+      "season": "Year-round (impressive even in dry weather — the Llugwy is fed by a large catchment)",
+      "parking": {
+        "location": "Roadside lay-by on the A5 or Betws-y-Coed car parks",
+        "cost": "Free (lay-by) or £5-8 (Betws-y-Coed)",
+        "notes": "Small lay-by right by the falls or walk from Betws-y-Coed (2km along the A5).",
+        "lat": 53.0787,
+        "lng": -3.8320
+      },
+      "startPoint": {
+        "name": "Swallow Falls, A5",
+        "lat": 53.0787,
+        "lng": -3.8320
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 4,
+      "name": "Conwy Falls",
+      "slug": "conwy-falls",
+      "verdict": "A powerful horseshoe falls hidden in ancient woodland. More dramatic than Swallow Falls, less visited.",
+      "image": "/images/best-lists/snowdonia-best-waterfalls-conwy-falls.jpg",
+      "imageAlt": "Conwy Falls pouring over a horseshoe-shaped rock shelf into a dark pool",
+      "whyItMadeTheList": "Conwy Falls is Swallow Falls' more impressive but less famous neighbour, 2 miles south of Betws-y-Coed. The River Conwy drops over a wide horseshoe shelf of rock into a deep, dark pool surrounded by ancient woodland. It's more powerful and atmospheric than Swallow Falls but receives a fraction of the visitors. The viewing point is reached via a short path through the trees. A genuine hidden gem.",
+      "difficulty": "Easy (short path from car park)",
+      "duration": "30-45 minutes",
+      "distance": "500m from car park",
+      "cost": "£2 (café/car park)",
+      "bestFor": "Those who want a more powerful waterfall than Swallow Falls without the crowds",
+      "skipIf": "You don't like steep, potentially slippery paths — the descent to the viewing point is short but can be muddy.",
+      "insiderTip": "The Conwy Falls Café at the car park is unremarkable but the viewing platform below it gives access to the falls. For a more adventurous view, the gorge walking operators who use this section of the Conwy offer incredible below-the-falls perspectives. Visit after rain for the most powerful flow.",
+      "season": "Year-round (best after rain)",
+      "parking": {
+        "location": "Conwy Falls Café car park",
+        "cost": "£2/car",
+        "notes": "Car park at the café on the A5, 2 miles south of Betws-y-Coed.",
+        "lat": 53.0658,
+        "lng": -3.8277
+      },
+      "startPoint": {
+        "name": "Conwy Falls",
+        "lat": 53.0658,
+        "lng": -3.8277
+      },
+      "operatorSlug": null,
+      "guidedOption": "Several gorge walking operators include Conwy Falls in their trips",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 5,
+      "name": "Pistyll Cain",
+      "slug": "pistyll-cain",
+      "verdict": "A perfect, unspoilt waterfall in the Coed y Brenin forest. The purist's choice.",
+      "image": "/images/best-lists/snowdonia-best-waterfalls-pistyll-cain.jpg",
+      "imageAlt": "Pistyll Cain waterfall dropping through dense oak woodland",
+      "whyItMadeTheList": "Pistyll Cain is a beautiful cascade in ancient oak woodland near the Coed y Brenin forest park. What makes it special is the setting — the water drops through a narrow, fern-covered gorge surrounded by moss-draped oaks that feel genuinely primeval. It's off the beaten track, requires a proper walk through the forest, and feels like discovering something rather than visiting a tourist attraction. The nearby gold mines of Gwynfynydd add historical interest.",
+      "difficulty": "Moderate (forest walk on uneven paths)",
+      "duration": "2 hours return",
+      "distance": "5km return",
+      "cost": "Free (parking at Coed y Brenin £3)",
+      "bestFor": "Walkers wanting a forest waterfall experience away from the tourist trail",
+      "skipIf": "You want easy access — the path is uneven and the waterfall requires a proper walk. Navigation skills helpful.",
+      "insiderTip": "Combine with a visit to Coed y Brenin for mountain biking or walking. The Precipice Walk near Dolgellau is also nearby for a full day out. The gold mines at Gwynfynydd (walking distance from the falls) are fascinating if you're interested in mining history.",
+      "season": "Year-round (best after rain, beautiful in autumn with leaf colour)",
+      "parking": {
+        "location": "Ganllwyd car park or Coed y Brenin",
+        "cost": "Free-£3",
+        "notes": "Park at Ganllwyd village or Coed y Brenin visitor centre and walk to the falls.",
+        "lat": 52.8200,
+        "lng": -3.8745
+      },
+      "startPoint": {
+        "name": "Ganllwyd area",
+        "lat": 52.8200,
+        "lng": -3.8745
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 6,
+      "name": "Ceunant Mawr (Llanberis Falls)",
+      "slug": "ceunant-mawr",
+      "verdict": "A hidden waterfall 10 minutes from Llanberis that most Snowdon hikers walk straight past.",
+      "image": "/images/best-lists/snowdonia-best-waterfalls-ceunant-mawr.jpg",
+      "imageAlt": "Ceunant Mawr waterfall dropping through a rocky gorge near Llanberis",
+      "whyItMadeTheList": "Ceunant Mawr is a 13-metre waterfall hidden in a wooded gorge just 10 minutes walk from the centre of Llanberis — the main base for Snowdon. Despite this, most visitors to Llanberis never discover it. The path leads through a narrow, atmospheric gorge to the falls, which drop into a dark plunge pool. It's the perfect pre-or-post-Snowdon activity, especially on rainy days when the falls are at their most powerful.",
+      "difficulty": "Easy-Moderate (short walk, some steps)",
+      "duration": "45 minutes return",
+      "distance": "1.5km return",
+      "cost": "Free",
+      "bestFor": "Anyone in Llanberis wanting a quick waterfall visit, especially on rainy days",
+      "skipIf": "You're expecting something massive — it's a modest 13-metre fall. But the setting is atmospheric.",
+      "insiderTip": "Follow the path behind the Royal Victoria Hotel in Llanberis. The gorge is narrow and can be slippery after rain — wear proper shoes. Combine with Pete's Eats in Llanberis for the ultimate climber's day: waterfall, pie, and Snowdon.",
+      "season": "Year-round (best after rain)",
+      "parking": {
+        "location": "Llanberis village car parks",
+        "cost": "£5-10/day",
+        "notes": "Walk from Llanberis village centre — the falls are a 10-minute walk up the gorge.",
+        "lat": 53.1193,
+        "lng": -4.1281
+      },
+      "startPoint": {
+        "name": "Llanberis village (behind Royal Victoria Hotel)",
+        "lat": 53.1210,
+        "lng": -4.1230
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 7,
+      "name": "Dolgoch Falls",
+      "slug": "dolgoch-falls",
+      "verdict": "Three cascades in a fairy-tale gorge — best reached by narrow-gauge steam train.",
+      "image": "/images/best-lists/snowdonia-best-waterfalls-dolgoch.jpg",
+      "imageAlt": "Dolgoch Falls cascading through a mossy gorge with a stone bridge above",
+      "whyItMadeTheList": "Dolgoch Falls is a series of three waterfalls in a narrow, mossy gorge in the Dysynni Valley. The setting is enchanting — stone bridges, fern-draped walls, and the sound of water everywhere. The Talyllyn Railway (a heritage narrow-gauge steam train) stops at Dolgoch station, making the approach one of the most charming in Wales. The path through the gorge visits all three falls and is manageable for most walkers.",
+      "difficulty": "Easy-Moderate (some steps and uneven ground)",
+      "duration": "1-1.5 hours",
+      "distance": "3km circular",
+      "cost": "Free (Talyllyn Railway ~£12 return)",
+      "bestFor": "Families (especially if arriving by steam train), waterfall collectors",
+      "skipIf": "You want a single dramatic cascade — Dolgoch is three smaller falls in sequence, not one big drop.",
+      "insiderTip": "Arrive by the Talyllyn Railway for the full experience — the little steam train from Tywyn is a treat in itself. The upper fall is the most impressive but requires the most walking. The gorge is beautiful in autumn with leaf colour and in winter with ice formations.",
+      "season": "Year-round (Talyllyn Railway seasonal — check timetable)",
+      "parking": {
+        "location": "Dolgoch Falls car park or Dolgoch station",
+        "cost": "Free (car park) or Talyllyn Railway fare",
+        "notes": "Small car park near the falls. Or take the Talyllyn Railway from Tywyn.",
+        "lat": 52.6268,
+        "lng": -4.0131
+      },
+      "startPoint": {
+        "name": "Dolgoch Falls",
+        "lat": 52.6268,
+        "lng": -4.0131
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 8,
+      "name": "Rhaeadr Cynfal (Cynfal Falls)",
+      "slug": "rhaeadr-cynfal",
+      "verdict": "A hidden waterfall in an ancient gorge near Ffestiniog — with a pillar called the 'Pulpit of Hugh Llwyd.'",
+      "image": "/images/best-lists/snowdonia-best-waterfalls-cynfal.jpg",
+      "imageAlt": "Rhaeadr Cynfal waterfall in a dark gorge with ancient woodland above",
+      "whyItMadeTheList": "Rhaeadr Cynfal is hidden in the Ceunant Cynfal gorge near Llan Ffestiniog — a SSSI ancient woodland gorge that feels genuinely magical. The waterfall drops into a dark gorge with a distinctive rock pillar known as Huw Llwyd's Pulpit (supposedly used by a 17th-century magician). The walk along the gorge is atmospheric, with ancient oaks, mosses, and ferns creating a cathedral-like canopy. Very few tourists find this place.",
+      "difficulty": "Moderate (uneven forest path, some steep sections)",
+      "duration": "1.5-2 hours",
+      "distance": "4km return",
+      "cost": "Free",
+      "bestFor": "Waterfall explorers wanting something genuinely off the beaten track",
+      "skipIf": "You need well-maintained paths — the route is natural and can be muddy. Some sections are steep and near cliff edges.",
+      "insiderTip": "Approach from the B4391 south of Llan Ffestiniog. The path follows the gorge rim — take care near the edge, especially with children. The Pengwern Arms in Llan Ffestiniog is a proper local pub for afterwards. Visit on a misty day for maximum atmosphere.",
+      "season": "Year-round (magical in mist)",
+      "parking": {
+        "location": "Informal parking on B4391",
+        "cost": "Free",
+        "notes": "Very limited roadside parking near the footpath sign. Not well-signed — look for the public footpath marker south of Llan Ffestiniog.",
+        "lat": 52.9341,
+        "lng": -3.8995
+      },
+      "startPoint": {
+        "name": "Ceunant Cynfal path",
+        "lat": 52.9341,
+        "lng": -3.8995
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 9,
+      "name": "Watkin Path Waterfalls (Cwm Llan)",
+      "slug": "watkin-path-waterfalls",
+      "verdict": "Cascading falls on the Watkin Path to Snowdon — free bonus drama on Wales's toughest Snowdon route.",
+      "image": "/images/best-lists/snowdonia-best-waterfalls-watkin-path.jpg",
+      "imageAlt": "Waterfalls on the Watkin Path with the Snowdon massif visible above",
+      "whyItMadeTheList": "The Watkin Path to Snowdon passes through Cwm Llan, where a series of cascades tumble down from the mountains above. These aren't named waterfalls with viewing platforms — they're wild, mountain waterfalls that you walk alongside as part of the Snowdon approach. After rain, the whole cwm comes alive with water. You don't need to summit Snowdon to enjoy them — the lower section to the Gladstone Rock is a moderate walk with excellent waterfall views.",
+      "difficulty": "Moderate (lower section), Challenging (full Watkin Path)",
+      "duration": "2 hours (to waterfalls and back), 5-7 hours (full Snowdon summit)",
+      "distance": "6km (lower section return), 13km (summit return)",
+      "cost": "Free (parking £5-8)",
+      "bestFor": "Hikers wanting to combine waterfalls with a Snowdon approach, anyone wanting a wilder waterfall experience",
+      "skipIf": "You want a single destination waterfall — these are scattered along a mountain path. The upper Watkin Path is genuinely challenging.",
+      "insiderTip": "Walk to just the Gladstone Rock area for the best waterfall sections without committing to the full Snowdon ascent. The pools below some cascades are deep enough for swimming on warm summer days — but the water is mountain-cold. The South Snowdonia car park at Bethania is the starting point.",
+      "season": "Year-round (waterfalls best after rain, October–April)",
+      "parking": {
+        "location": "Bethania car park, Nant Gwynant",
+        "cost": "£5-8/day",
+        "notes": "NRW car park at the head of Nant Gwynant valley.",
+        "lat": 53.0349,
+        "lng": -4.0181
+      },
+      "startPoint": {
+        "name": "Bethania, Nant Gwynant",
+        "lat": 53.0349,
+        "lng": -4.0181
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    }
+  ],
+  "comparisonTable": true,
+  "seasonalPicks": {
+    "spring": { "entries": [1, 7], "note": "Snowmelt swelling the rivers, woodland coming alive with green" },
+    "summer": { "entries": [3, 6], "note": "Easiest access but lowest water levels. Visit after rain." },
+    "autumn": { "entries": [5, 8], "note": "Autumn colour in the ancient woodlands and rivers rising again" },
+    "winter": { "entries": [1, 2], "note": "Most dramatic flows after winter storms. Some falls freeze in cold snaps." }
+  },
+  "faqs": [
+    {
+      "question": "What's the best waterfall in Snowdonia?",
+      "answer": "Aber Falls (#1) for the most dramatic single drop with easy access. Pistyll Rhaeadr (#2) for height and uniqueness — it's the tallest in Wales. Swallow Falls (#3) for the most famous and accessible. All are worth visiting."
+    },
+    {
+      "question": "When is the best time to see waterfalls in Snowdonia?",
+      "answer": "After 2-3 days of sustained rain, any time of year. October to April gives the most consistent flow. Summer waterfalls can be disappointing if it's been dry. Swallow Falls holds water better than most due to its large river catchment."
+    },
+    {
+      "question": "Can you swim in Snowdonia waterfalls?",
+      "answer": "Some have plunge pools deep enough for swimming, but the water is very cold (typically 5-10°C year-round). The Watkin Path pools (#9) and some pools below Ceunant Mawr (#6) are swimmable. Never swim directly below falling water, and be aware of changing water levels."
+    },
+    {
+      "question": "Are Snowdonia waterfalls free to visit?",
+      "answer": "Almost all are free to visit. Swallow Falls (#3) charges £2 for the viewing platform (but you can see the falls from the road bridge for free). Parking typically costs £3-7 at NRW or National Trust car parks. Pistyll Rhaeadr asks for a parking donation."
+    }
+  ],
+  "relatedLists": [
+    { "slug": "/brecon-beacons/best-waterfalls", "label": "Best Waterfalls in the Brecon Beacons" },
+    { "slug": "/snowdonia/best-walks", "label": "Best Walks in Snowdonia" },
+    { "slug": "/snowdonia/best-hikes", "label": "Best Hikes in Snowdonia" }
+  ]
+}

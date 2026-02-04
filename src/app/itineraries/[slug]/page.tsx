@@ -6,12 +6,12 @@ import {
   Mountain, 
   Calendar,
   Share2,
-  Heart
 } from "lucide-react";
 import { ItineraryView } from "@/components/itinerary/ItineraryView";
 import { ItineraryFactSheet } from "@/components/itinerary/ItineraryFactSheet";
 import { EnquireAllVendors } from "@/components/itinerary/EnquireAllVendors";
 import { ShareButton } from "@/components/ui/ShareButton";
+import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import { getItineraryWithStops, getAccommodation, getAllItinerarySlugs } from "@/lib/queries";
 
 function getDifficultyColor(difficulty: string): string {
@@ -174,10 +174,12 @@ export default async function ItineraryDetailPage({ params }: Props) {
       <div className="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 pb-6 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] z-40">
         <div className="flex gap-3 max-w-lg mx-auto">
           <ShareButton title={itinerary.title} variant="icon" />
-          <button className="flex flex-col items-center justify-center w-14 gap-1 text-gray-500 hover:text-[#1e3a4c] transition-colors">
-            <Heart className="w-5 h-5" />
-            <span className="text-[10px] font-medium">Save</span>
-          </button>
+          <FavoriteButton
+            itemId={itinerary.id}
+            itemType="itinerary"
+            className="flex flex-col items-center justify-center w-14 gap-1 text-gray-500 hover:text-[#1e3a4c] transition-colors"
+            iconClassName="w-5 h-5"
+          />
           {uniqueOperators.length > 0 ? (
             <EnquireAllVendors 
               operators={uniqueOperators}

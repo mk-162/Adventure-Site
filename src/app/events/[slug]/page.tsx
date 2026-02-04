@@ -3,9 +3,10 @@ import Link from "next/link";
 import { getEventBySlug, getEvents, getAllEventSlugs } from "@/lib/queries";
 import { 
   MapPin, Calendar, Clock, Users, ExternalLink, 
-  ChevronRight, Ticket, Trophy, Mountain, Navigation
+  ChevronRight, Ticket, Trophy, Mountain, Navigation, Share2
 } from "lucide-react";
 import MapView, { type MapMarker } from "@/components/ui/MapView";
+import { FavoriteButton } from "@/components/ui/FavoriteButton";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -69,6 +70,15 @@ export default async function EventPage({ params }: Props) {
             backgroundImage: `url('/images/activities/trail-running-hero.jpg')`,
           }}
         />
+        {/* Actions */}
+        <div className="absolute top-4 right-4 z-20 flex gap-2">
+          <FavoriteButton
+            itemId={event.id}
+            itemType="event"
+            className="p-3 bg-white/20 backdrop-blur-md rounded-full hover:bg-white/30 transition-colors"
+            iconClassName="h-5 w-5 text-white"
+          />
+        </div>
         <div className="relative h-full max-w-7xl mx-auto px-4 flex flex-col justify-end pb-8">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-gray-300 mb-4">

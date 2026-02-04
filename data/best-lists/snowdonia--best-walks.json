@@ -1,0 +1,472 @@
+{
+  "regionSlug": "snowdonia",
+  "slug": "best-walks",
+  "urlPath": "/snowdonia/best-walks",
+  "title": "12 Best Walks in Snowdonia",
+  "metaTitle": "12 Best Walks in Snowdonia (2025)",
+  "metaDescription": "The best walks in Snowdonia for all abilities. Easy lakeside strolls to challenging mountain routes — honest picks from people who've done them all.",
+  "h1": "12 Best Walks in Snowdonia (2025)",
+  "strapline": "Valley strolls, waterfall trails, and mountain paths — every ability covered.",
+  "heroImage": "/images/best-lists/snowdonia-best-walks-hero.jpg",
+  "heroAlt": "Walkers on a lakeside path in Snowdonia with mountains reflected in still water",
+  "updatedDate": "2025-07",
+  "introduction": "\"Walks\" is doing a lot of heavy lifting in Snowdonia. It could mean a gentle stroll along a river to a waterfall, or it could mean eight hours battling heather and bogs on a remote ridge. This list covers the full range — from pushchair-friendly paths to full-day mountain routes.\n\nWe've deliberately weighted this towards walks that most people can actually do. There's a separate list for the best hikes if you want the big mountain stuff. Here, you'll find family-friendly waterfall trails alongside moderate hill walks that deliver proper views without requiring scrambling skills or a death wish.\n\nEvery walk on this list has been done in walking boots and in trainers (where appropriate), in sun and in sideways rain. That's the Snowdonia experience.",
+  "rankingCriteria": "We favour walks that deliver maximum scenery for the effort required. Accessibility, path quality, parking, and how well they cope with crowds all factor in. A short walk that leaves you speechless beats a long one that merely tires you out.",
+  "comboPageLink": "/snowdonia/things-to-do/hiking",
+  "keywords": {
+    "primary": "best walks in snowdonia",
+    "secondary": ["snowdonia walks", "walks in snowdonia", "best snowdonia walks", "snowdonia walking routes"],
+    "longTail": [
+      "best easy walks in snowdonia",
+      "family walks in snowdonia",
+      "short walks in snowdonia",
+      "dog friendly walks snowdonia",
+      "best walks snowdonia for beginners",
+      "snowdonia walks with waterfalls",
+      "wheelchair accessible walks snowdonia"
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Cwm Idwal Circular",
+      "slug": "cwm-idwal-circular",
+      "verdict": "Short, stunning, and life-changing. The walk that converts people to Snowdonia.",
+      "image": "/images/best-lists/snowdonia-best-walks-cwm-idwal.jpg",
+      "imageAlt": "Llyn Idwal reflecting the cliffs of Cwm Idwal with the Devil's Kitchen visible above",
+      "whyItMadeTheList": "Under 5km, mostly flat, yet delivers scenery that rivals anything in the Alps. The glacial amphitheatre of Cwm Idwal with its dark lake, towering cliffs, and the dramatic gash of Devil's Kitchen is genuinely awe-inspiring. It's the walk that Charles Darwin raved about. Perfect for families, wheelchair users on the first section, and anyone who wants Snowdonia's drama without Snowdonia's exertion.",
+      "difficulty": "Easy-Moderate",
+      "duration": "1.5-2.5 hours",
+      "distance": "5km",
+      "cost": "Free (parking £5)",
+      "bestFor": "Families, beginners, photographers, geology enthusiasts",
+      "skipIf": "You want a long day or a summit — this is short and sweet.",
+      "insiderTip": "Go in winter after a cold snap — Llyn Idwal sometimes freezes completely, and the ice-covered cliffs above are staggering. Walk anticlockwise for the best approach to Devil's Kitchen.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Ogwen car park (Llyn Ogwen)",
+        "cost": "£5/day",
+        "notes": "NRW pay and display. Toilets available. Gets busy 10am-3pm on summer weekends.",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": "cwm-idwal-circular-walk"
+    },
+    {
+      "rank": 2,
+      "name": "Aber Falls (Rhaeadr Fawr)",
+      "slug": "aber-falls",
+      "verdict": "Wales's most dramatic waterfall, accessible to almost everyone.",
+      "image": "/images/best-lists/snowdonia-best-walks-aber-falls.jpg",
+      "imageAlt": "Aber Falls plunging 37 metres down a cliff face into a rocky pool",
+      "whyItMadeTheList": "A 37-metre waterfall at the end of a flat, well-surfaced 2km track through meadows. That's an absurdly good return on investment. After rain, Aber Falls is genuinely thundering — you can feel the spray from 50 metres away. The approach through the Coedydd Aber nature reserve is beautiful in its own right, with ancient oaks and possible red kite sightings.",
+      "difficulty": "Easy",
+      "duration": "1-1.5 hours",
+      "distance": "4km return",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Families with young children, anyone who wants a spectacular waterfall without a long walk",
+      "skipIf": "You want a challenge — this is deliberately easy. The waterfall can be underwhelming in a drought.",
+      "insiderTip": "Visit after two or three days of rain for maximum drama. The falls can be a trickle in dry summer spells. Go early morning for the best light — the afternoon sun puts the falls in shadow.",
+      "season": "Year-round (best after rain, October–April)",
+      "parking": {
+        "location": "Aber Falls car park, Abergwyngregyn",
+        "cost": "£3-5/day",
+        "notes": "NRW car park with toilets and picnic area. Follow signs from Abergwyngregyn village.",
+        "lat": 53.2183,
+        "lng": -4.0128
+      },
+      "startPoint": {
+        "name": "Aber Falls car park",
+        "lat": 53.2183,
+        "lng": -4.0128
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 3,
+      "name": "Llyn Crafnant & Llyn Geirionydd",
+      "slug": "llyn-crafnant-geirionydd",
+      "verdict": "Two lakes, ancient forest, and barely a soul around. The secret Snowdonia.",
+      "image": "/images/best-lists/snowdonia-best-walks-llyn-crafnant.jpg",
+      "imageAlt": "Llyn Crafnant surrounded by forested hills with mirror-still water",
+      "whyItMadeTheList": "This circuit linking two gorgeous lakes through conifer and broadleaf woodland is the walk that local Snowdonia residents actually do on their days off. Llyn Crafnant is achingly pretty — often mirror-still — and the connecting path through the forest to Llyn Geirionydd is varied and interesting. You'll see fly fishers, red squirrels if you're lucky, and almost no tourists.",
+      "difficulty": "Easy-Moderate",
+      "duration": "3-4 hours",
+      "distance": "9km",
+      "cost": "Free (parking £3)",
+      "bestFor": "Couples, dog walkers, anyone wanting peaceful lakeside walking",
+      "skipIf": "You want mountain drama — this is low-level and gentle. Some forest sections can be muddy.",
+      "insiderTip": "The lakeside café at Llyn Crafnant is basic but the setting is unbeatable. Visit in autumn when the broadleaf trees around the lake turn gold. The forest sections between the lakes can be confusing — take a map.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Llyn Crafnant car park",
+        "cost": "£3/day (honesty box)",
+        "notes": "Small car park at the lake. Gets busy on sunny weekends but nothing like the main Snowdonia car parks.",
+        "lat": 53.1428,
+        "lng": -3.8568
+      },
+      "startPoint": {
+        "name": "Llyn Crafnant car park",
+        "lat": 53.1428,
+        "lng": -3.8568
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 4,
+      "name": "Snowdon via the Watkin Path",
+      "slug": "snowdon-watkin-path",
+      "verdict": "The toughest route up Snowdon — and arguably the most rewarding.",
+      "image": "/images/best-lists/snowdonia-best-walks-watkin-path.jpg",
+      "imageAlt": "The steep scree section of the Watkin Path with Glaslyn visible far below",
+      "whyItMadeTheList": "If the Llanberis Path is Snowdon on easy mode, the Watkin Path is the final boss. It starts gently through lovely woodland, passes old copper mine ruins and the Gladstone Rock, then turns brutal with a steep scree scramble to the summit. It's the most scenic approach to Snowdon and far less crowded than the north-side paths. The Nant Gwynant valley setting is stunning.",
+      "difficulty": "Challenging",
+      "duration": "5-7 hours",
+      "distance": "13km",
+      "elevationGain": "1,015m",
+      "cost": "Free (parking £5-8)",
+      "bestFor": "Fit hikers who want to earn their Snowdon summit the hard way",
+      "skipIf": "You're a beginner — the upper section is loose scree and genuinely difficult. Not a good descent route either.",
+      "insiderTip": "Don't bother trying to descend the Watkin Path — the scree is miserable going down. Descend via the Rhyd Ddu path and catch the Sherpa bus back to your car. The gladstone Rock where the PM addressed the crowd is easy to miss — look for the plaque.",
+      "season": "May–October",
+      "parking": {
+        "location": "Bethania car park, Nant Gwynant",
+        "cost": "£5-8/day",
+        "notes": "NRW car park at the head of Nant Gwynant. Beautiful setting. Reasonable capacity.",
+        "lat": 53.0349,
+        "lng": -4.0181
+      },
+      "startPoint": {
+        "name": "Bethania, Nant Gwynant",
+        "lat": 53.0349,
+        "lng": -4.0181
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 5,
+      "name": "Beddgelert Forest & Llyn Dinas",
+      "slug": "beddgelert-forest-llyn-dinas",
+      "verdict": "Fairy-tale woodland, a legendary lake, and the prettiest village in Snowdonia.",
+      "image": "/images/best-lists/snowdonia-best-walks-beddgelert.jpg",
+      "imageAlt": "Beddgelert village with its stone bridge over the river Glaslyn and surrounding trees",
+      "whyItMadeTheList": "Beddgelert is impossibly pretty — a stone village at the meeting of two rivers with a legendary grave (of Gelert the faithful hound). This walk extends into the surrounding forest and along Llyn Dinas, a lake that legend says hides Merlin's treasure. The combination of village, forest, riverside, and lakeside walking makes it wonderfully varied. Perfect for a half-day with a pub lunch in the middle.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours",
+      "distance": "7km",
+      "cost": "Free",
+      "bestFor": "Families, dog walkers, couples wanting a scenic half-day",
+      "skipIf": "You want mountains — this is valley-floor walking. Can be busy in Beddgelert itself during summer holidays.",
+      "insiderTip": "Walk to Gelert's grave first (follow the signs from the village), then take the riverside path to Llyn Dinas. Glaslyn Ices in the village is outstanding — the honey and ginger flavour is worth the trip alone.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Beddgelert village car park",
+        "cost": "£6/day",
+        "notes": "Central village car park. Can be busy in peak summer. Arrive before 10am on weekends.",
+        "lat": 53.0112,
+        "lng": -4.1031
+      },
+      "startPoint": {
+        "name": "Beddgelert village",
+        "lat": 53.0112,
+        "lng": -4.1031
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 6,
+      "name": "Torrent Walk (Llwybr y Torrennydd)",
+      "slug": "torrent-walk",
+      "verdict": "An enchanted riverside walk through ancient woodland near Dolgellau.",
+      "image": "/images/best-lists/snowdonia-best-walks-torrent-walk.jpg",
+      "imageAlt": "The Afon Clywedog rushing through mossy rocks and ancient oak woodland",
+      "whyItMadeTheList": "The Torrent Walk follows the Afon Clywedog through a narrow, ancient oak gorge near Dolgellau. The path clings to the hillside above the river, which crashes over rocks below. It's deeply atmospheric — all moss-covered boulders, dappled light, and the constant roar of water. Short enough for anyone, beautiful enough for everyone. A genuine hidden gem that even many Welsh people haven't discovered.",
+      "difficulty": "Easy",
+      "duration": "1-1.5 hours",
+      "distance": "3km one way",
+      "cost": "Free",
+      "bestFor": "Nature lovers, photographers, families with young children, rainy day walks",
+      "skipIf": "You want open views — this is enclosed woodland throughout. The path can be slippery when wet.",
+      "insiderTip": "Walk it in the rain. Seriously. The gorge becomes even more dramatic with water levels up, and the moss and ferns glow green. Combine with lunch in Dolgellau — TH Roberts is a fantastic old-school coffee shop.",
+      "season": "Year-round (actually better in rain)",
+      "parking": {
+        "location": "Torrent Walk car park (off B4416)",
+        "cost": "Free",
+        "notes": "Small roadside car park near the start. Limited spaces. Alternative parking in Dolgellau.",
+        "lat": 52.7401,
+        "lng": -3.8638
+      },
+      "startPoint": {
+        "name": "Torrent Walk car park, Dolgellau",
+        "lat": 52.7401,
+        "lng": -3.8638
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 7,
+      "name": "Moel Siabod from Capel Curig",
+      "slug": "moel-siabod",
+      "verdict": "The best 360° viewpoint in Snowdonia — see every major peak from one summit.",
+      "image": "/images/best-lists/snowdonia-best-walks-moel-siabod.jpg",
+      "imageAlt": "The summit cairn of Moel Siabod with Snowdon and the Glyderau visible behind",
+      "whyItMadeTheList": "Moel Siabod's central position means its summit delivers the best panoramic view in the whole park. Snowdon, the Glyderau, the Carneddau, Moel Hebog — they're all laid out before you. The walk from Capel Curig is a satisfying half-day with varied terrain. Not as intimidating as the bigger peaks but still feels like a proper mountain day.",
+      "difficulty": "Moderate",
+      "duration": "4-5 hours",
+      "distance": "10km",
+      "elevationGain": "660m",
+      "cost": "Free",
+      "bestFor": "Intermediate walkers who want summit views without scrambling",
+      "skipIf": "You want an easy stroll — the final section to the summit is steep and rocky.",
+      "insiderTip": "Clear winter days (December-February) give the best views — the snow-capped Snowdon massif from the summit is spectacular. The Bryn Tyrch Inn in Capel Curig is the traditional post-hike refuel spot.",
+      "season": "Year-round (winter conditions above 600m Dec-March)",
+      "parking": {
+        "location": "Pont Cyfyng, Capel Curig",
+        "cost": "Free (limited roadside)",
+        "notes": "Informal parking. If full, use Capel Curig village and walk the extra 1km.",
+        "lat": 53.0967,
+        "lng": -3.9282
+      },
+      "startPoint": {
+        "name": "Pont Cyfyng, Capel Curig",
+        "lat": 53.0967,
+        "lng": -3.9282
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 8,
+      "name": "Precipice Walk (Llwybr Cynwch)",
+      "slug": "precipice-walk",
+      "verdict": "Don't let the name scare you — this gentle circuit has the most dramatic views for the least effort.",
+      "image": "/images/best-lists/snowdonia-best-walks-precipice-walk.jpg",
+      "imageAlt": "The Precipice Walk path hugging the hillside with the Mawddach estuary below",
+      "whyItMadeTheList": "Despite its alarming name, the Precipice Walk is a gentle, nearly flat circuit around Foel Cynwch near Dolgellau. The views are outrageous — the Mawddach estuary, Cadair Idris, Coed y Brenin forest, and the coast at Barmouth. All from a path that barely gains any height. It's the best walk in Snowdonia for people who don't want to climb but still want jaw-dropping scenery.",
+      "difficulty": "Easy",
+      "duration": "2-2.5 hours",
+      "distance": "5.5km",
+      "cost": "Free",
+      "bestFor": "Anyone who wants views without climbing. Perfect for older walkers or a lazy afternoon.",
+      "skipIf": "You have severe vertigo — there are a few exposed sections with steep drops beside the path (hence the name).",
+      "insiderTip": "Go in the evening for sunset over the Mawddach estuary — it's extraordinary. The path is narrow in places and passes above steep drops, but it's not technically difficult. Just don't rush.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Precipice Walk car park (Saith Groesffordd)",
+        "cost": "Free",
+        "notes": "Small car park off a narrow lane. Follow signs for 'Precipice Walk' from Dolgellau/Llanfachreth.",
+        "lat": 52.7656,
+        "lng": -3.9098
+      },
+      "startPoint": {
+        "name": "Precipice Walk car park",
+        "lat": 52.7656,
+        "lng": -3.9098
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 9,
+      "name": "Swallow Falls & Miners' Bridge Circuit",
+      "slug": "swallow-falls-miners-bridge",
+      "verdict": "Betws-y-Coed's greatest hits — waterfalls, gorges, and a historic miners' bridge.",
+      "image": "/images/best-lists/snowdonia-best-walks-swallow-falls.jpg",
+      "imageAlt": "Swallow Falls cascading through a narrow gorge surrounded by trees",
+      "whyItMadeTheList": "This circuit from Betws-y-Coed combines Snowdonia's most famous waterfall (Swallow Falls) with the atmospheric Miners' Bridge over the River Llugwy. The riverside walking is gorgeous year-round, and the falls are impressive even in dry weather. It's the perfect walk to pair with exploring Betws-y-Coed's shops, cafés, and outdoor gear stores.",
+      "difficulty": "Easy",
+      "duration": "1.5-2 hours",
+      "distance": "5km",
+      "cost": "£2 (Swallow Falls viewing platform entry)",
+      "bestFor": "Tourists based in Betws-y-Coed, families, anyone wanting a quick scenic walk",
+      "skipIf": "You want solitude — Swallow Falls is the most visited waterfall in Wales and it feels like it.",
+      "insiderTip": "Skip the official (paid) Swallow Falls viewing platform if you want — you can see the falls perfectly well from the road bridge for free. The Miners' Bridge section is the real highlight and much quieter.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Betws-y-Coed village car parks",
+        "cost": "£5-8/day",
+        "notes": "Multiple car parks in the village. The walk starts from the village centre.",
+        "lat": 53.0910,
+        "lng": -3.8025
+      },
+      "startPoint": {
+        "name": "Betws-y-Coed village centre",
+        "lat": 53.0910,
+        "lng": -3.8025
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 10,
+      "name": "Y Garn from Ogwen",
+      "slug": "y-garn-ogwen",
+      "verdict": "A proper mountain summit that's achievable for strong walkers — no scrambling required.",
+      "image": "/images/best-lists/snowdonia-best-walks-y-garn.jpg",
+      "imageAlt": "The rocky summit of Y Garn with Tryfan and the Ogwen Valley below",
+      "whyItMadeTheList": "Y Garn gives you one of Snowdonia's best summit experiences without requiring scrambling skills. The views down to Llyn Idwal and across to Tryfan are stunning, and the broad ridge makes navigation straightforward. It's the mountain we recommend when people say 'I've done Snowdon, what's next?' — a step up in seriousness without the intimidation of Crib Goch or Tryfan.",
+      "difficulty": "Challenging",
+      "duration": "4-5 hours",
+      "distance": "6km",
+      "elevationGain": "700m",
+      "cost": "Free (parking £5)",
+      "bestFor": "Hikers who've done Snowdon and want something more challenging but not scrambling",
+      "skipIf": "You're a complete beginner — this is a proper mountain with steep, rocky terrain and navigation needed in cloud.",
+      "insiderTip": "Combine with a loop over Foel-goch for an extra summit and a spectacular ridge walk. Descend via Cwm Clyd for a circular route that avoids retracing your steps.",
+      "season": "April–October",
+      "parking": {
+        "location": "Ogwen car park",
+        "cost": "£5/day",
+        "notes": "Same car park as Cwm Idwal and Tryfan. Arrive early on weekends.",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": "y-garn-ogwen"
+    },
+    {
+      "rank": 11,
+      "name": "Lôn Gwyrfai (Beddgelert to Rhyd Ddu)",
+      "slug": "lon-gwyrfai",
+      "verdict": "A flat, riverside walk with Snowdon towering overhead. Zero effort, maximum views.",
+      "image": "/images/best-lists/snowdonia-best-walks-lon-gwyrfai.jpg",
+      "imageAlt": "Flat path along the River Gwyrfai with Snowdon visible in the background",
+      "whyItMadeTheList": "This gentle walk follows the old railway line between Beddgelert and Rhyd Ddu along the River Gwyrfai. It's flat, easy, and delivers constant views of Snowdon's south face — arguably the mountain's most dramatic aspect. The Welsh Highland Railway runs alongside, so you can walk one way and catch the train back. Ideal for families or anyone who wants to admire Snowdon without climbing it.",
+      "difficulty": "Easy",
+      "duration": "1.5-2 hours one way",
+      "distance": "5km one way",
+      "cost": "Free (train return ~£10)",
+      "bestFor": "Families with buggies, dog walkers, anyone wanting flat walking with mountain views",
+      "skipIf": "You want a challenge or a circular route — it's dead flat and point-to-point.",
+      "insiderTip": "Walk from Rhyd Ddu to Beddgelert (mostly downhill) and catch the Welsh Highland Railway back. The train ride through the valley is worth the ticket price on its own.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Beddgelert or Rhyd Ddu car parks",
+        "cost": "£5-6/day",
+        "notes": "Park at Beddgelert for the best pub/café options at the end.",
+        "lat": 53.0112,
+        "lng": -4.1031
+      },
+      "startPoint": {
+        "name": "Rhyd Ddu station",
+        "lat": 53.0486,
+        "lng": -4.1577
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 12,
+      "name": "Barmouth Bridge & Mawddach Estuary",
+      "slug": "barmouth-bridge-mawddach",
+      "verdict": "Cross Wales's most beautiful railway bridge, then walk an estuary trail with Cadair Idris as your backdrop.",
+      "image": "/images/best-lists/snowdonia-best-walks-barmouth-bridge.jpg",
+      "imageAlt": "Barmouth railway bridge stretching across the Mawddach Estuary with mountains behind",
+      "whyItMadeTheList": "The half-mile wooden railway bridge at Barmouth is one of Wales's most iconic structures. Cross it (£1 toll for pedestrians), then walk the Mawddach Trail — a flat, traffic-free path along the estuary towards Dolgellau. The combination of bridge, estuary, mountain backdrop (Cadair Idris), and birdlife is wonderful. Walk as far as you like and turn back, or go the full 15km to Dolgellau.",
+      "difficulty": "Easy",
+      "duration": "1-4 hours depending on distance",
+      "distance": "2-15km each way",
+      "cost": "£1 bridge toll",
+      "bestFor": "Cyclists, families, birdwatchers, anyone wanting flat walking with mountain and estuary views",
+      "skipIf": "The bridge is closed for maintenance (check before travelling). The trail is exposed to wind.",
+      "insiderTip": "Rent bikes in Barmouth and cycle the Mawddach Trail to Dolgellau — it's one of the best traffic-free cycling routes in Wales. The George III Hotel at Penmaenpool (roughly halfway) is a perfect lunch stop with estuary-side beer garden.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Barmouth seafront car parks",
+        "cost": "£5-8/day",
+        "notes": "Plenty of parking in Barmouth. The bridge is at the southern end of the town.",
+        "lat": 52.7233,
+        "lng": -4.0558
+      },
+      "startPoint": {
+        "name": "Barmouth Bridge (south end)",
+        "lat": 52.7183,
+        "lng": -4.0485
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    }
+  ],
+  "comparisonTable": true,
+  "seasonalPicks": {
+    "spring": { "entries": [2, 6], "note": "Waterfalls at their best, wildflowers in the woodlands" },
+    "summer": { "entries": [3, 12], "note": "Lakeside walks and estuary strolls in the long evenings" },
+    "autumn": { "entries": [5, 6], "note": "Woodland colour, atmospheric mist, fewer crowds" },
+    "winter": { "entries": [1, 9], "note": "Frozen cwms and dramatic waterfalls — bring layers" }
+  },
+  "faqs": [
+    {
+      "question": "What's the best easy walk in Snowdonia?",
+      "answer": "Cwm Idwal (#1) delivers the most dramatic scenery for the least effort. Aber Falls (#2) is even easier — a flat 2km path to a 37-metre waterfall. Both are suitable for families with young children."
+    },
+    {
+      "question": "Are there pushchair-friendly walks in Snowdonia?",
+      "answer": "The Aber Falls path, Lôn Gwyrfai (#11), and the Mawddach Trail (#12) are all flat and well-surfaced enough for sturdy pushchairs. The first section of the Cwm Idwal path is also wheelchair-accessible."
+    },
+    {
+      "question": "Which Snowdonia walk is best in the rain?",
+      "answer": "The Torrent Walk (#6) near Dolgellau is actually better in the rain — the enclosed gorge, moss-covered rocks, and swollen river are magical in wet weather. Waterfalls walks like Aber Falls (#2) and Swallow Falls (#9) also improve after rain."
+    },
+    {
+      "question": "Can you walk in Snowdonia with dogs?",
+      "answer": "Most walks on this list are dog-friendly. Keep dogs on leads around livestock (common in all areas) and during bird nesting season (March-July) near Cwm Idwal. The Beddgelert and Mawddach walks are particularly good for dogs."
+    }
+  ],
+  "relatedLists": [
+    { "slug": "/snowdonia/best-hikes", "label": "Best Hikes in Snowdonia" },
+    { "slug": "/snowdonia/best-waterfalls", "label": "Best Waterfalls in Snowdonia" },
+    { "slug": "/brecon-beacons/best-walks", "label": "Best Walks in Brecon Beacons" }
+  ]
+}

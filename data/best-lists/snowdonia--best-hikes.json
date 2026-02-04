@@ -1,0 +1,415 @@
+{
+  "regionSlug": "snowdonia",
+  "slug": "best-hikes",
+  "urlPath": "/snowdonia/best-hikes",
+  "title": "10 Best Hikes in Snowdonia",
+  "metaTitle": "10 Best Hikes in Snowdonia (2025)",
+  "metaDescription": "Our ranked picks for the best hikes in Snowdonia. From easy valley walks to expert scrambles — tried, tested, honestly reviewed.",
+  "h1": "10 Best Hikes in Snowdonia (2025)",
+  "strapline": "From knife-edge ridges to hidden cwm trails — our honest picks, ranked.",
+  "heroImage": "/images/best-lists/snowdonia-best-hikes-hero.jpg",
+  "heroAlt": "Hiker on the Crib Goch ridge at sunrise with clouds filling the valley below",
+  "updatedDate": "2025-07",
+  "introduction": "Snowdonia — or Eryri, if you're being proper — has more quality hiking per square mile than anywhere else in England and Wales. That's not tourism-board waffle; it's just true. The problem isn't finding a good walk, it's choosing between them.\n\nWe've hiked every route on this list multiple times, in every season and most weather conditions. Our rankings favour routes that deliver something you can't get anywhere else — genuine drama, proper scrambling, or that feeling of being utterly alone in the mountains. Snowdon itself makes the list, but it's not at the top. The mountain is magnificent; the crowds less so.\n\nThis list deliberately mixes difficulties. You'll find expert-only scrambles alongside gentle valley walks, because the best hike is the one that matches your ability and ambition on the day. Pack waterproofs regardless — this is Snowdonia.",
+  "rankingCriteria": "We've hiked every route on this list. Rankings factor in scenery, challenge, variety of terrain, parking accessibility, and how busy they get on a typical summer weekend. We favour routes that reward effort with something unique.",
+  "comboPageLink": "/snowdonia/things-to-do/hiking",
+  "keywords": {
+    "primary": "best hikes in snowdonia",
+    "secondary": ["best walks snowdonia", "top hikes snowdonia", "snowdonia best routes", "best hiking snowdonia"],
+    "longTail": [
+      "best easy hikes in snowdonia",
+      "best snowdonia hikes for beginners",
+      "hardest hikes in snowdonia",
+      "best snowdonia walks with views",
+      "best short walks snowdonia",
+      "best snowdonia ridge walks",
+      "best hikes snowdonia not snowdon"
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Nantlle Ridge",
+      "slug": "nantlle-ridge",
+      "verdict": "The best ridge walk in Wales that almost nobody does.",
+      "image": "/images/best-lists/snowdonia-best-hikes-nantlle-ridge.jpg",
+      "imageAlt": "The undulating Nantlle Ridge stretching into the distance with views to the Llŷn Peninsula",
+      "whyItMadeTheList": "While everyone queues on Snowdon, the Nantlle Ridge delivers a genuine mountain traverse with scrambling, exposure, and views across to the Llŷn Peninsula and Cardigan Bay. It's long, committing, and you'll likely see fewer than a dozen people all day. The section over Y Garn and Mynydd Drws-y-Coed is properly airy. This is what Snowdonia hiking should feel like.",
+      "difficulty": "Challenging",
+      "duration": "7-9 hours",
+      "distance": "14km",
+      "elevationGain": "1,200m",
+      "cost": "Free",
+      "bestFor": "Experienced hikers wanting a full-day mountain adventure without crowds",
+      "skipIf": "You're not comfortable with sustained ridgeline walking or need a short day. Navigation tricky in mist.",
+      "insiderTip": "Leave a car at Rhyd Ddu and get a taxi to Nebo to walk the ridge east-to-west. Saves the bus faff and gives you better light on the views.",
+      "season": "May–October",
+      "parking": {
+        "location": "Rhyd Ddu car park",
+        "cost": "£5/day",
+        "notes": "Small car park, rarely full. The end point if you traverse the ridge.",
+        "lat": 53.0486,
+        "lng": -4.1577
+      },
+      "startPoint": {
+        "name": "Nebo (western end)",
+        "lat": 53.0523,
+        "lng": -4.2351
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": "nantlle-ridge"
+    },
+    {
+      "rank": 2,
+      "name": "Snowdon Horseshoe",
+      "slug": "snowdon-horseshoe",
+      "verdict": "The ultimate Snowdonia day out — Crib Goch, Snowdon summit, and Y Lliwedd in one brutal loop.",
+      "image": "/images/best-lists/snowdonia-best-hikes-snowdon-horseshoe.jpg",
+      "imageAlt": "Aerial view of the Snowdon Horseshoe circuit with Glaslyn tarn below",
+      "whyItMadeTheList": "The full Snowdon Horseshoe is the single finest mountain day in Wales. Crib Goch's knife-edge ridge, the summit of Snowdon, the quieter traverse over Y Lliwedd — it packs in everything Snowdonia has to offer. Yes, it includes the most famous mountain in Wales, but done as a horseshoe it earns every inch of the hype. Expert-only: people die on Crib Goch every year.",
+      "difficulty": "Expert",
+      "duration": "7-9 hours",
+      "distance": "12km",
+      "elevationGain": "1,050m",
+      "cost": "Free (parking £10)",
+      "bestFor": "Experienced scramblers with a head for heights wanting the definitive Snowdonia challenge",
+      "skipIf": "You haven't scrambled before, the weather is poor, or you don't like exposure. Non-negotiable.",
+      "insiderTip": "Start at 6am in summer to get Crib Goch to yourself. The bottleneck at the pinnacles with 30 other people ruins it. Mid-week in late September is the sweet spot.",
+      "season": "May–September (dry rock essential)",
+      "parking": {
+        "location": "Pen-y-Pass car park",
+        "cost": "£10/day",
+        "notes": "Fills by 7am in summer. Use Sherpa bus from Nant Peris (£1.50) — it's actually faster.",
+        "lat": 53.0622,
+        "lng": -4.0234
+      },
+      "startPoint": {
+        "name": "Pen-y-Pass",
+        "lat": 53.0622,
+        "lng": -4.0234
+      },
+      "operatorSlug": null,
+      "guidedOption": "MountainXperience run guided Crib Goch scrambles from £55pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": "crib-goch"
+    },
+    {
+      "rank": 3,
+      "name": "Tryfan North Ridge",
+      "slug": "tryfan-north-ridge",
+      "verdict": "The most fun you can have with your hands on a mountain. Pure scrambling joy.",
+      "image": "/images/best-lists/snowdonia-best-hikes-tryfan-north-ridge.jpg",
+      "imageAlt": "The rocky pyramid of Tryfan rising from the Ogwen Valley floor",
+      "whyItMadeTheList": "Tryfan looks like a mountain drawn by a child — a proper rocky pyramid shooting straight up from the A5. The North Ridge is hands-on scrambling from bottom to top, with the famous Adam and Eve stones at the summit. Less terrifying than Crib Goch but arguably more enjoyable. The Ogwen Valley setting is incomparable, and the route-finding is obvious once you're on the rock.",
+      "difficulty": "Challenging",
+      "duration": "4-5 hours",
+      "distance": "4km",
+      "elevationGain": "670m",
+      "cost": "Free",
+      "bestFor": "Confident hikers who want to try scrambling without committing to a full knife-edge ridge",
+      "skipIf": "You're not comfortable on steep, loose rock. There's no path — it's all rock. Wet rock makes it treacherous.",
+      "insiderTip": "Descend via the South Ridge or Heather Terrace, not the way you came up. The North Ridge is horrible in descent. Adam and Eve jump is optional — the gap is wider than it looks from below.",
+      "season": "April–October",
+      "parking": {
+        "location": "Ogwen car park or A5 lay-bys",
+        "cost": "£5 (Ogwen) or free (lay-bys, limited)",
+        "notes": "Free lay-bys fill by 8am on weekends. Ogwen car park rarely full on weekdays.",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "startPoint": {
+        "name": "Ogwen Cottage, A5",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "operatorSlug": null,
+      "guidedOption": "Plas y Brenin run scrambling courses including Tryfan",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": "tryfan-north-ridge"
+    },
+    {
+      "rank": 4,
+      "name": "Cadair Idris via Minffordd Path",
+      "slug": "cadair-idris-minffordd",
+      "verdict": "Snowdonia's most underrated big mountain — dramatic, quieter, and steeped in legend.",
+      "image": "/images/best-lists/snowdonia-best-hikes-cadair-idris.jpg",
+      "imageAlt": "Llyn Cau seen from the rim of Cadair Idris with dramatic cliffs surrounding the lake",
+      "whyItMadeTheList": "Cadair Idris would be the star of any national park that didn't have Snowdon in it. The Minffordd Path climbs through ancient oak woodland to Llyn Cau — a dark, cliff-ringed glacial lake that's genuinely atmospheric — before a steep pull to the summit ridge. Legend says sleeping on the summit sends you mad or makes you a poet. The views south to Cardigan Bay are stunning, and you'll see a fraction of Snowdon's crowds.",
+      "difficulty": "Challenging",
+      "duration": "5-6 hours",
+      "distance": "10km",
+      "elevationGain": "893m",
+      "cost": "Free (parking £5-8)",
+      "bestFor": "Experienced hikers wanting a proper mountain day with solitude and atmosphere",
+      "skipIf": "You have knee problems — the descent is relentlessly steep. The path is eroded in places.",
+      "insiderTip": "The Minffordd Hotel at the trailhead does excellent tea and cake for post-hike recovery. The Pony Path from the north is easier but less dramatic if Minffordd sounds too much.",
+      "season": "April–October",
+      "parking": {
+        "location": "Minffordd car park (Dôl Idris)",
+        "cost": "£5-8/day",
+        "notes": "Well-maintained NRW car park with toilets. Rarely as busy as Snowdon car parks.",
+        "lat": 52.6969,
+        "lng": -3.9125
+      },
+      "startPoint": {
+        "name": "Minffordd / Dôl Idris",
+        "lat": 52.6969,
+        "lng": -3.9125
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": "cadair-idris-minffordd-path"
+    },
+    {
+      "rank": 5,
+      "name": "Cwm Idwal & Devil's Kitchen",
+      "slug": "cwm-idwal",
+      "verdict": "The best short walk in Snowdonia — huge drama, minimal effort.",
+      "image": "/images/best-lists/snowdonia-best-hikes-cwm-idwal.jpg",
+      "imageAlt": "The dark waters of Llyn Idwal with the cleft of Devil's Kitchen in the cliffs above",
+      "whyItMadeTheList": "If you only do one walk in Snowdonia, make it this one. Cwm Idwal is a glacial cwm surrounded by cliffs, with the dark slot of Devil's Kitchen (Twll Du) splitting the headwall. The circular walk around Llyn Idwal takes barely two hours but delivers scenery that took 500 million years to create. It's also Charles Darwin's favourite geology walk, which is reason enough.",
+      "difficulty": "Easy-Moderate",
+      "duration": "2-3 hours",
+      "distance": "5km",
+      "elevationGain": "150m",
+      "cost": "Free (parking £5)",
+      "bestFor": "Families, beginners, photographers, and anyone short on time who wants maximum impact",
+      "skipIf": "You want a summit or a long day. This is short but spectacular.",
+      "insiderTip": "Walk anticlockwise for the best views of Devil's Kitchen as you approach. For a bigger day, scramble up alongside Devil's Kitchen to reach Y Garn — but that changes the difficulty to challenging.",
+      "season": "Year-round (path can be icy in winter)",
+      "parking": {
+        "location": "Ogwen car park",
+        "cost": "£5/day",
+        "notes": "Gets busy by mid-morning on weekends. Arrive before 10am.",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": "cwm-idwal-circular-walk"
+    },
+    {
+      "rank": 6,
+      "name": "Moel Siabod",
+      "slug": "moel-siabod",
+      "verdict": "The 360° viewpoint that sees everything — Snowdon, the Glyderau, Moel Hebog — without the crowds.",
+      "image": "/images/best-lists/snowdonia-best-hikes-moel-siabod.jpg",
+      "imageAlt": "Panoramic view from the summit of Moel Siabod showing Snowdon and the Glyderau range",
+      "whyItMadeTheList": "Moel Siabod sits in the middle of everything, which means its summit gives you arguably the best 360° panorama in Snowdonia. You can see every major peak from here. The hike from Capel Curig is straightforward but satisfying, with a rocky summit ridge that gives a taste of scrambling. It's the mountain that experienced Snowdonia hikers recommend to visitors — and then keep to themselves.",
+      "difficulty": "Moderate",
+      "duration": "4-5 hours",
+      "distance": "10km",
+      "elevationGain": "660m",
+      "cost": "Free",
+      "bestFor": "Intermediate hikers wanting big views without big crowds or big scrambles",
+      "skipIf": "You want hands-on scrambling or a truly easy walk. The final section is steep and rocky.",
+      "insiderTip": "Start from the Capel Curig direction (Pont Cyfyng) for the best approach. The Dolwyddelan approach is longer and boggy. Post-hike, the Bryn Tyrch Inn in Capel Curig does solid pub food.",
+      "season": "March–November",
+      "parking": {
+        "location": "Pont Cyfyng car park, Capel Curig",
+        "cost": "Free (limited roadside)",
+        "notes": "Small informal parking area. Rarely busy — that's the point.",
+        "lat": 53.0967,
+        "lng": -3.9282
+      },
+      "startPoint": {
+        "name": "Pont Cyfyng, Capel Curig",
+        "lat": 53.0967,
+        "lng": -3.9282
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 7,
+      "name": "Snowdon via the Llanberis Path",
+      "slug": "snowdon-llanberis-path",
+      "verdict": "The classic — because summiting the highest mountain in Wales is still worth doing.",
+      "image": "/images/best-lists/snowdonia-best-hikes-snowdon-llanberis.jpg",
+      "imageAlt": "Line of hikers ascending the Llanberis Path with Snowdon summit visible above",
+      "whyItMadeTheList": "Yes, it's busy. Yes, there's a café and a train at the top. But standing on the highest point in England and Wales on a clear day, looking out across the Irish Sea, is still a bucket-list moment. The Llanberis Path is the gentlest and longest route, suitable for most reasonably fit people. Just manage your expectations — in peak summer, it's more pilgrimage than wilderness experience.",
+      "difficulty": "Moderate",
+      "duration": "5-7 hours",
+      "distance": "14.5km",
+      "elevationGain": "975m",
+      "cost": "Free (parking £6-10)",
+      "bestFor": "First-time Snowdon hikers, families with fit older children, tick-list summiteers",
+      "skipIf": "You want solitude. On a bank holiday weekend, you'll be walking in a queue near the summit.",
+      "insiderTip": "Go in October or November for clear, crisp days with a fraction of summer crowds. The summit café closes off-season, so bring a flask. Sunrise attempts in midsummer are magical if you can handle the 3am start.",
+      "season": "Year-round (winter requires crampons and ice axe above the halfway point)",
+      "parking": {
+        "location": "Llanberis village car parks",
+        "cost": "£6-10/day",
+        "notes": "Multiple car parks in the village. Arrive before 8am in summer. Sherpa bus from Nant Peris is reliable.",
+        "lat": 53.1193,
+        "lng": -4.1281
+      },
+      "startPoint": {
+        "name": "Llanberis Path trailhead",
+        "lat": 53.1230,
+        "lng": -4.1190
+      },
+      "operatorSlug": "mountainxperience",
+      "guidedOption": "Several operators run guided Snowdon hikes from £40-55pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": "snowdon-llanberis-path"
+    },
+    {
+      "rank": 8,
+      "name": "Rhinog Fawr",
+      "slug": "rhinog-fawr",
+      "verdict": "The wildest, roughest mountain in Snowdonia. For those who like their hiking untamed.",
+      "image": "/images/best-lists/snowdonia-best-hikes-rhinog-fawr.jpg",
+      "imageAlt": "Rough rocky terrain on the approach to Rhinog Fawr with the sea visible in the distance",
+      "whyItMadeTheList": "If every other mountain in Snowdonia is a well-kept garden, Rhinog Fawr is the overgrown allotment next door. The heather is waist-deep, the terrain is ankle-breaking, paths are suggestions at best, and the Roman Steps approach feels genuinely ancient. It's utterly magnificent in its wildness. The views to the coast are stunning, and you will almost certainly be alone. This is hiking as it was before trail maintenance existed.",
+      "difficulty": "Expert",
+      "duration": "6-8 hours",
+      "distance": "10km",
+      "elevationGain": "720m",
+      "cost": "Free",
+      "bestFor": "Experienced hikers with good navigation skills who want genuine wilderness",
+      "skipIf": "You rely on clear paths, don't carry a map and compass, or want a gentle day. This mountain fights back.",
+      "insiderTip": "Approach via the Roman Steps from Cwm Bychan for the most atmospheric route. The steps are genuinely medieval. Wear gaiters — the heather and bogs will soak you otherwise.",
+      "season": "May–September",
+      "parking": {
+        "location": "Cwm Bychan car park",
+        "cost": "£3/day (honesty box)",
+        "notes": "Tiny car park at the end of a single-track road. Peaceful and rarely full.",
+        "lat": 52.8550,
+        "lng": -4.0466
+      },
+      "startPoint": {
+        "name": "Cwm Bychan",
+        "lat": 52.8550,
+        "lng": -4.0466
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": "rhinog-fawr"
+    },
+    {
+      "rank": 9,
+      "name": "Aber Falls & Carneddau",
+      "slug": "aber-falls-carneddau",
+      "verdict": "Waterfalls, wild ponies, and the quietest 3,000ft mountains in Wales.",
+      "image": "/images/best-lists/snowdonia-best-hikes-aber-falls.jpg",
+      "imageAlt": "Aber Falls cascading down a cliff face surrounded by green hillside",
+      "whyItMadeTheList": "Start with one of Wales' most dramatic waterfalls (Aber Falls drops 37 metres in a single cascade), then climb into the Carneddau — the largest area of land above 3,000ft in Wales and home to wild ponies. The Carneddau summits feel genuinely remote in a way that Snowdon never can. Foel-fras, Carnedd Llewelyn, and Carnedd Dafydd are all 3,000-footers that most visitors have never heard of.",
+      "difficulty": "Moderate-Challenging",
+      "duration": "5-7 hours (full Carneddau circuit)",
+      "distance": "14km",
+      "elevationGain": "900m",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Hikers wanting a mix of waterfalls and big mountain terrain with genuine solitude",
+      "skipIf": "You only want the waterfall — in that case, it's an easy 45-minute walk each way. Navigation on the Carneddau plateau is serious in poor visibility.",
+      "insiderTip": "The walk to just Aber Falls is one of the best family walks in Snowdonia — flat, easy, and spectacular. But if you're fit, keep going up to the plateau for a completely different experience. Look out for the wild Carneddau ponies.",
+      "season": "April–October (waterfall best after heavy rain)",
+      "parking": {
+        "location": "Aber Falls car park, Abergwyngregyn",
+        "cost": "£3-5/day",
+        "notes": "Well-maintained NRW car park with toilets and picnic area.",
+        "lat": 53.2183,
+        "lng": -4.0128
+      },
+      "startPoint": {
+        "name": "Abergwyngregyn",
+        "lat": 53.2183,
+        "lng": -4.0128
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 10,
+      "name": "Moel Hebog",
+      "slug": "moel-hebog",
+      "verdict": "Beddgelert's home mountain — a proper peak with a fraction of the fuss.",
+      "image": "/images/best-lists/snowdonia-best-hikes-moel-hebog.jpg",
+      "imageAlt": "The distinctive peak of Moel Hebog rising above the village of Beddgelert",
+      "whyItMadeTheList": "Moel Hebog is the mountain that lords over Beddgelert, one of Snowdonia's prettiest villages. The hike is steep and direct — no messing about — with a scrambly summit that feels harder than its modest height suggests. The views to Snowdon and the Llŷn Peninsula are excellent, and the descent back to a cosy pub in Beddgelert is one of the great Snowdonia rituals. A genuine hidden gem.",
+      "difficulty": "Moderate-Challenging",
+      "duration": "4-5 hours",
+      "distance": "8km",
+      "elevationGain": "710m",
+      "cost": "Free",
+      "bestFor": "Intermediate hikers who enjoy steep, direct ascents and want a quiet mountain",
+      "skipIf": "You want a gentle walk — the ascent is relentlessly steep in places.",
+      "insiderTip": "Park in Beddgelert and walk from the village. Post-hike, Glaslyn Ices does extraordinary ice cream, and the Tanronnen Inn does proper pub meals. The combination of summit and village makes this a perfect Snowdonia day.",
+      "season": "March–November",
+      "parking": {
+        "location": "Beddgelert village car park",
+        "cost": "£6/day",
+        "notes": "Central village car park. Can be busy in summer but usually spaces midweek.",
+        "lat": 53.0112,
+        "lng": -4.1031
+      },
+      "startPoint": {
+        "name": "Beddgelert village",
+        "lat": 53.0112,
+        "lng": -4.1031
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    }
+  ],
+  "comparisonTable": true,
+  "seasonalPicks": {
+    "spring": { "entries": [5, 9], "note": "Waterfalls flowing, wildflowers in the cwms, fewer crowds" },
+    "summer": { "entries": [1, 2], "note": "Long days for big ridge walks, dry rock for scrambles" },
+    "autumn": { "entries": [4, 6], "note": "Golden light, atmospheric mist, quiet summits" },
+    "winter": { "entries": [5, 7], "note": "Dramatic conditions but check weather — ice changes everything above 600m" }
+  },
+  "faqs": [
+    {
+      "question": "What's the best hike in Snowdonia for beginners?",
+      "answer": "Cwm Idwal (#5 on our list) is ideal — short, well-marked, and spectacularly scenic without any mountain exposure. If you want a summit, the Llanberis Path up Snowdon (#7) is manageable for most reasonably fit people, though it's long (5-7 hours)."
+    },
+    {
+      "question": "Which Snowdonia hike has the best views?",
+      "answer": "Moel Siabod (#6) gives you a 360° panorama of every major Snowdonia peak. For drama, the Snowdon Horseshoe (#2) is unbeatable — but it's expert-only. Cadair Idris (#4) has the best combination of mountain views and coastal scenery."
+    },
+    {
+      "question": "Can you hike in Snowdonia without climbing Snowdon?",
+      "answer": "Absolutely — and many experienced hikers prefer to. Our top pick, the Nantlle Ridge (#1), is a better day out than any Snowdon route. Tryfan (#3), Cadair Idris (#4), and Rhinog Fawr (#8) all offer superior experiences if you're happy with a harder day."
+    },
+    {
+      "question": "What's the quietest hike in Snowdonia?",
+      "answer": "Rhinog Fawr (#8) is the quietest mountain we've listed — you might not see another person all day. The Nantlle Ridge (#1) and Moel Hebog (#10) are also blissfully uncrowded compared to the Snowdon area."
+    },
+    {
+      "question": "Do I need special equipment to hike in Snowdonia?",
+      "answer": "At minimum: proper walking boots (not trainers), waterproof jacket and trousers, map and compass, food, water, and spare layers. For scrambles like Tryfan and Crib Goch, you'll want a helmet and possibly a rope if you're not experienced. In winter, crampons and an ice axe are essential above 600m."
+    }
+  ],
+  "relatedLists": [
+    { "slug": "/snowdonia/best-walks", "label": "Best Walks in Snowdonia" },
+    { "slug": "/snowdonia/best-scrambles", "label": "Best Scrambles in Snowdonia" },
+    { "slug": "/brecon-beacons/best-walks", "label": "Best Walks in Brecon Beacons" }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "regionSlug": "pembrokeshire",
+  "slug": "best-surf-spots",
+  "urlPath": "/pembrokeshire/best-surf-spots",
+  "title": "9 Best Surf Spots in Pembrokeshire",
+  "metaTitle": "9 Best Surf Spots in Pembrokeshire (2025)",
+  "metaDescription": "Ranked guide to the best surf spots in Pembrokeshire. Beach breaks, reef setups, and hidden gems — from beginner-friendly to expert slabs.",
+  "h1": "9 Best Surf Spots in Pembrokeshire (2025)",
+  "strapline": "West Wales's wildest coast delivers serious waves — here's where to find them.",
+  "heroImage": "/images/best-lists/pembrokeshire-best-surf-spots-hero.jpg",
+  "heroAlt": "Surfer riding a wave at Freshwater West with dramatic cliffs in the background",
+  "updatedDate": "2025-07",
+  "introduction": "Pembrokeshire picks up more swell than almost anywhere else in Wales. Facing west into the Atlantic, its beaches and reefs catch everything from clean groundswells to storm-driven chaos. It's not as consistent as Cornwall and the water's colder, but when it's on, spots like Freshwater West and Whitesands can genuinely rival anything in the UK.\n\nThe coastline throws up everything from mellow beach breaks perfect for learning to heavy reef setups that demand respect. Our picks mix accessible spots with a few that reward local knowledge and early starts. Water temps range from 8°C (winter) to 17°C (late summer), so bring a decent wetsuit year-round — 4/3mm minimum, 5/4mm from October to April.",
+  "rankingCriteria": "We've surfed all of these spots across multiple seasons and conditions. Rankings factor in wave quality, consistency, crowd levels, facilities, and the overall experience. We favour spots where the wave quality genuinely justifies the journey.",
+  "comboPageLink": "/pembrokeshire/things-to-do/surfing",
+  "keywords": {
+    "primary": "best surf spots pembrokeshire",
+    "secondary": ["pembrokeshire surfing", "surfing pembrokeshire", "best beaches surfing pembrokeshire", "pembrokeshire surf"],
+    "longTail": [
+      "best beginner surf beach pembrokeshire",
+      "best surf beach west wales",
+      "surfing freshwater west",
+      "surf lessons pembrokeshire",
+      "winter surfing pembrokeshire",
+      "pembrokeshire surf spots map"
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Freshwater West",
+      "slug": "freshwater-west",
+      "verdict": "Pembrokeshire's most powerful beach break. When it's on, it's world-class.",
+      "image": "/images/best-lists/pembrokeshire-best-surf-spots-freshwater-west.jpg",
+      "imageAlt": "Powerful wave breaking at Freshwater West with empty lineup and dark cliffs",
+      "whyItMadeTheList": "Freshwater West is a beast. A mile-long south-facing beach that hoovers up every scrap of Atlantic swell and turns it into powerful, hollow waves. The sandbars shift constantly, creating new peaks daily. When a clean groundswell meets offshore northerlies, the waves here are genuinely excellent. It's also the wildest feeling beach in Pembrokeshire — windswept dunes, no buildings, no ice cream vans. You will be served from Harry Potter and Robin Hood were filmed here.",
+      "difficulty": "Intermediate-Expert",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Experienced surfers wanting powerful, uncrowded beach break",
+      "skipIf": "You're a beginner — the currents and wave power are genuinely dangerous. No lifeguards year-round.",
+      "insiderTip": "The south end (closest to the car park) is more sheltered and has better-shaped banks most of the time. Check it from the dunes before paddling out — the rips here are serious. The Freshwater Inn at Freshwater East (10 min drive) is the post-surf spot.",
+      "season": "September–April (biggest swells), but works year-round",
+      "parking": {
+        "location": "Freshwater West car park (NT)",
+        "cost": "£3-5 (National Trust, free for members)",
+        "notes": "Large car park. Can be exposed and windswept. No facilities except portaloos in summer.",
+        "lat": 51.6376,
+        "lng": -5.0787
+      },
+      "startPoint": {
+        "name": "Freshwater West beach",
+        "lat": 51.6376,
+        "lng": -5.0787
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 2,
+      "name": "Whitesands Bay (Porth Mawr)",
+      "slug": "whitesands-bay",
+      "verdict": "The most reliable wave in Pembrokeshire, with a side of stunning St Davids coastline.",
+      "image": "/images/best-lists/pembrokeshire-best-surf-spots-whitesands.jpg",
+      "imageAlt": "Whitesands Bay with surfers in the water and Carn Llidi headland behind",
+      "whyItMadeTheList": "Whitesands is Pembrokeshire's most popular surf beach for good reason. It picks up swell from multiple directions, has decent-shaped sandbars, and the setting is spectacular — backed by Carn Llidi headland and close to St Davids. The wave quality is consistently good without being intimidating, making it the best all-rounder in the region. Lifeguarded in summer. The only downside is its popularity — in August it's packed.",
+      "difficulty": "Beginner-Intermediate",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free (parking £5-8)",
+      "bestFor": "All abilities. The go-to surf beach for reliable conditions and facilities",
+      "skipIf": "You want uncrowded waves in summer. Also avoid on big swells — it closes out badly.",
+      "insiderTip": "The left-hand corner at the north end holds up much better on bigger days and is where the better surfers sit. Early mornings before the surf schools launch are the window for clean, uncrowded waves.",
+      "season": "Year-round (lifeguarded May–September)",
+      "parking": {
+        "location": "Whitesands car park",
+        "cost": "£5-8/day",
+        "notes": "Large car park but fills up by 10am in summer. No overflow parking — if it's full, you're stuck.",
+        "lat": 51.8942,
+        "lng": -5.2962
+      },
+      "startPoint": {
+        "name": "Whitesands Bay",
+        "lat": 51.8942,
+        "lng": -5.2962
+      },
+      "operatorSlug": null,
+      "guidedOption": "Ma Simes Surf Hut offers lessons and hire from ~£30pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 3,
+      "name": "Newgale (Niwgwl)",
+      "slug": "newgale",
+      "verdict": "Two miles of open beach break with something for everyone — the workhorse of Pembrokeshire surfing.",
+      "image": "/images/best-lists/pembrokeshire-best-surf-spots-newgale.jpg",
+      "imageAlt": "Wide view of Newgale beach with surfers dotted along the wave line",
+      "whyItMadeTheList": "Newgale's sheer length means there's always a peak to yourself, even on busy days. The two-mile beach faces west and picks up anything going, from ankle-high summer ripples to overhead winter swells. Multiple sandbars create different waves along the beach — the south end tends to be bigger, the north end more sheltered. The pebble storm bank at the back of the beach is distinctive and the surf conditions are consistent if unspectacular.",
+      "difficulty": "Beginner-Intermediate",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Beginners, longboarders, and anyone who wants space and consistent small waves",
+      "skipIf": "You want hollow, powerful waves — Newgale is fun but rarely dramatic.",
+      "insiderTip": "The Duke of Edinburgh pub at the north end overlooks the break — check conditions from the window with a pint before committing. The southern end near the car park has better banks for shortboarding.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Newgale beach car park",
+        "cost": "£3-5/day",
+        "notes": "Large car park right behind the beach. Easy access. The pebble bank at the top of the beach can make entry interesting at high tide.",
+        "lat": 51.8448,
+        "lng": -5.1226
+      },
+      "startPoint": {
+        "name": "Newgale beach",
+        "lat": 51.8448,
+        "lng": -5.1226
+      },
+      "operatorSlug": null,
+      "guidedOption": "Newsurf offers lessons and hire on the beach",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 4,
+      "name": "Manorbier",
+      "slug": "manorbier",
+      "verdict": "A sheltered bay that holds waves when everywhere else is blown out. Pembrokeshire's bad-weather backup.",
+      "image": "/images/best-lists/pembrokeshire-best-surf-spots-manorbier.jpg",
+      "imageAlt": "Manorbier beach with its medieval castle overlooking the bay and surfers in the water",
+      "whyItMadeTheList": "Manorbier faces south, which means it's sheltered from the prevailing westerlies that destroy other Pembrokeshire spots. When everywhere else is onshore and messy, Manorbier often has clean, fun waves. The medieval castle overlooking the bay is a spectacular backdrop. The wave is less powerful than Freshwater West but much more forgiving, making it a great intermediate spot.",
+      "difficulty": "Beginner-Intermediate",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Intermediates on windy days, families wanting a beach with character",
+      "skipIf": "The swell is from the south — Manorbier needs west/southwest swell to work. Can be flat when west-facing beaches are pumping.",
+      "insiderTip": "Works best on a west or southwest swell with northerly winds. The rocks on the east side create a nice little right-hander at mid-tide that most people miss. The Castle Inn in the village does decent food.",
+      "season": "September–April for best waves, summer for learners",
+      "parking": {
+        "location": "Manorbier beach car park",
+        "cost": "£3-5/day",
+        "notes": "Small car park above the beach. Walk down through the castle grounds.",
+        "lat": 51.6421,
+        "lng": -4.7949
+      },
+      "startPoint": {
+        "name": "Manorbier beach",
+        "lat": 51.6421,
+        "lng": -4.7949
+      },
+      "operatorSlug": null,
+      "guidedOption": "Manorbier Surf School operates from the beach in summer",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 5,
+      "name": "Broad Haven",
+      "slug": "broad-haven",
+      "verdict": "The family-friendly option — gentle waves, full facilities, and a proper village behind.",
+      "image": "/images/best-lists/pembrokeshire-best-surf-spots-broad-haven.jpg",
+      "imageAlt": "Broad Haven beach with gentle waves and the village behind",
+      "whyItMadeTheList": "If you're learning to surf or bringing the family, Broad Haven is your spot. The waves are rarely big, the beach is sandy and sheltered, and the village behind has cafés, pubs, and a surf shop. Lifeguarded in summer. It won't set an experienced surfer's pulse racing, but for reliability and accessibility it's hard to beat. The Druidstone Hotel just up the coast is one of the best post-surf pubs in Wales.",
+      "difficulty": "Beginner",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Beginners, families, surf schools",
+      "skipIf": "You want waves over waist-high. Broad Haven rarely fires.",
+      "insiderTip": "Walk north along the coast path to Little Haven for a more sheltered bay and excellent pub (The Swan Inn). The Druidstone Hotel above the beach at Druidston Haven is legendarily good for food and atmosphere.",
+      "season": "Year-round (lifeguarded May–September)",
+      "parking": {
+        "location": "Broad Haven car park",
+        "cost": "£3-5/day",
+        "notes": "Large car park by the beach. Toilets and showers available.",
+        "lat": 51.7780,
+        "lng": -5.1131
+      },
+      "startPoint": {
+        "name": "Broad Haven beach",
+        "lat": 51.7780,
+        "lng": -5.1131
+      },
+      "operatorSlug": null,
+      "guidedOption": "Haven Sports offers lessons on the beach",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 6,
+      "name": "Marloes Sands",
+      "slug": "marloes-sands",
+      "verdict": "The hidden gem — a stunning beach with waves that nobody surfs because nobody knows it works.",
+      "image": "/images/best-lists/pembrokeshire-best-surf-spots-marloes-sands.jpg",
+      "imageAlt": "Marloes Sands beach at low tide with dramatic rock formations and clear water",
+      "whyItMadeTheList": "Marloes Sands is primarily known as one of Pembrokeshire's most beautiful beaches, not a surf spot. But on west/southwest swells, the southern end produces surprisingly good peaks. The 20-minute walk from the car park keeps the crowds away, and the backdrop of folded rock formations is extraordinary. You'll likely have the waves to yourself. Not a destination surf spot, but an incredible bonus when it works.",
+      "difficulty": "Intermediate",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5 NT)",
+      "bestFor": "Surfers who want empty waves and don't mind a walk",
+      "skipIf": "You need reliability — it only works on the right swell and tide combination.",
+      "insiderTip": "Needs a big west/southwest swell and mid-to-low tide. The walk in means you need to carry your board 20 minutes — worth it for the solitude. Check tide times carefully — the beach disappears at high tide.",
+      "season": "October–March (needs decent swell to work)",
+      "parking": {
+        "location": "Marloes Sands NT car park",
+        "cost": "£3-5 (NT, free for members)",
+        "notes": "Car park is 20 minutes walk from the beach. No changing facilities at the beach.",
+        "lat": 51.7322,
+        "lng": -5.2183
+      },
+      "startPoint": {
+        "name": "Marloes Sands",
+        "lat": 51.7289,
+        "lng": -5.2155
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 7,
+      "name": "Abereiddy",
+      "slug": "abereiddy",
+      "verdict": "Not just the Blue Lagoon — the beach here picks up sneaky waves when you least expect it.",
+      "image": "/images/best-lists/pembrokeshire-best-surf-spots-abereiddy.jpg",
+      "imageAlt": "Abereiddy's dark volcanic beach with small waves breaking along the shore",
+      "whyItMadeTheList": "Most people visit Abereiddy for the Blue Lagoon, but the beach itself is a quirky surf spot. The dark volcanic sand (almost black) creates an otherworldly setting, and on north/northwest swells it picks up fun waves that the St Davids beaches miss. It's a short, punchy beach break with rocks at either end — not for beginners, but rewarding for those who know it. The eerie industrial ruins add atmosphere.",
+      "difficulty": "Intermediate-Advanced",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Surfers looking for an unusual spot off the beaten track",
+      "skipIf": "You're a beginner — rocks at both ends make this unsuitable for learners.",
+      "insiderTip": "Works best on a northwest swell when Whitesands is too big or too onshore. The Sloop Inn in Porthgain (5 minutes drive) is one of the best pubs on the Pembrokeshire coast.",
+      "season": "October–March",
+      "parking": {
+        "location": "Abereiddy car park",
+        "cost": "£3-5/day",
+        "notes": "Car park above the beach. Walk down to the right for the surf beach; left for the Blue Lagoon.",
+        "lat": 51.9342,
+        "lng": -5.2005
+      },
+      "startPoint": {
+        "name": "Abereiddy beach",
+        "lat": 51.9342,
+        "lng": -5.2005
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 8,
+      "name": "Freshwater East",
+      "slug": "freshwater-east",
+      "verdict": "A mellow, family-friendly beach that catches sneaky south swells when others are flat.",
+      "image": "/images/best-lists/pembrokeshire-best-surf-spots-freshwater-east.jpg",
+      "imageAlt": "Freshwater East beach with gentle waves and green hillside behind",
+      "whyItMadeTheList": "Freshwater East faces south-southeast, which means it picks up different swells to the main west-facing beaches. When Newgale and Whitesands are flat, Freshwater East sometimes has rideable waves from south swells. The beach is sandy, gently shelving, and sheltered from westerly winds. Not a core surf spot, but a useful addition to the Pembrokeshire surf map, especially for families.",
+      "difficulty": "Beginner",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Beginners, families, and those looking for calm conditions",
+      "skipIf": "You want consistent waves — this is a backup spot, not a destination.",
+      "insiderTip": "The Freshwater Inn up the hill does solid food and is the local surfer pub for the south Pembrokeshire coast. Check this spot when everything west-facing is blown out by strong westerlies.",
+      "season": "Year-round (best in autumn with south swells)",
+      "parking": {
+        "location": "Freshwater East car park",
+        "cost": "£3-5/day",
+        "notes": "Right behind the beach with good facilities.",
+        "lat": 51.6421,
+        "lng": -4.8826
+      },
+      "startPoint": {
+        "name": "Freshwater East beach",
+        "lat": 51.6421,
+        "lng": -4.8826
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 9,
+      "name": "Westdale Bay",
+      "slug": "westdale-bay",
+      "verdict": "A secret south-facing cove that catches swell when you wouldn't expect it. Pure insider knowledge.",
+      "image": "/images/best-lists/pembrokeshire-best-surf-spots-westdale-bay.jpg",
+      "imageAlt": "Small sheltered cove at Westdale Bay with clear water and low cliffs",
+      "whyItMadeTheList": "Westdale Bay is a tiny, sheltered cove near Dale that almost nobody thinks of as a surf spot. But on big south/southwest swells, it produces clean, head-high waves in a stunning setting. The walk in keeps crowds away (there are none), and the Dale peninsula location means you're surfing in one of the most beautiful corners of Pembrokeshire. A genuine secret spot for those willing to explore.",
+      "difficulty": "Intermediate",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free",
+      "bestFor": "Adventurous surfers who want to explore beyond the obvious spots",
+      "skipIf": "You want consistent waves — this only works on big south swells, maybe 10 days a year.",
+      "insiderTip": "Needs a serious south/southwest swell to get in. Check the wave buoys before driving out — it's a dead end if it's flat. The Griffin Inn in Dale is a cracking pub.",
+      "season": "October–February (big swell events only)",
+      "parking": {
+        "location": "Westdale Bay informal parking",
+        "cost": "Free",
+        "notes": "Very limited parking at the end of a single-track road. Walk from Dale village if spaces are taken.",
+        "lat": 51.7092,
+        "lng": -5.1861
+      },
+      "startPoint": {
+        "name": "Westdale Bay",
+        "lat": 51.7092,
+        "lng": -5.1861
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    }
+  ],
+  "comparisonTable": true,
+  "seasonalPicks": {
+    "spring": { "entries": [2, 3], "note": "Warming water, cleaner swells, fewer crowds than summer" },
+    "summer": { "entries": [5, 8], "note": "Smaller waves but warm water and lifeguards. Learning season." },
+    "autumn": { "entries": [1, 4], "note": "The golden season — warm water from summer plus autumn swells building" },
+    "winter": { "entries": [1, 7], "note": "Big swells, empty lineups, and you'll need a 5/4mm wetsuit minimum" }
+  },
+  "faqs": [
+    {
+      "question": "What's the best beginner surf beach in Pembrokeshire?",
+      "answer": "Broad Haven (#5) or Whitesands (#2) are the best options for beginners. Both have surf schools, lifeguards in summer, and gentle waves. Newgale (#3) is also good — its length means you'll always find a quiet peak."
+    },
+    {
+      "question": "When is the best time to surf in Pembrokeshire?",
+      "answer": "Autumn (September–November) is the sweet spot: water still warm from summer, swells building, and the summer crowds gone. Winter brings the biggest swells but brutal cold. Summer is best for beginners but waves are smaller."
+    },
+    {
+      "question": "Do I need a wetsuit to surf in Pembrokeshire?",
+      "answer": "Yes, year-round. Water temperatures range from 8°C in February to 17°C in August. Use a 4/3mm in summer and a 5/4mm with boots, gloves, and hood in winter. You can hire wetsuits from surf schools at most main beaches."
+    },
+    {
+      "question": "Is Pembrokeshire better than Gower for surfing?",
+      "answer": "Different strengths. Pembrokeshire is more exposed and picks up more swell, with bigger, more powerful waves at spots like Freshwater West. Gower has better-shaped waves at spots like Llangennith and more surf infrastructure. Pembrokeshire wins on scenery and solitude; Gower wins on consistency and convenience."
+    }
+  ],
+  "relatedLists": [
+    { "slug": "/gower/best-surf-spots", "label": "Best Surf Spots on the Gower" },
+    { "slug": "/pembrokeshire/best-beaches", "label": "Best Beaches in Pembrokeshire" },
+    { "slug": "/pembrokeshire/best-coasteering", "label": "Best Coasteering in Pembrokeshire" }
+  ]
+}

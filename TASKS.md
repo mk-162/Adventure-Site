@@ -57,6 +57,10 @@
 - [ ] **Operator descriptions** — only 11/46 have descriptions >50 chars. Research data has full descriptions
 
 ### Booking & Revenue
+> 📄 See: [`plans/commercial-build-spec.md`](plans/commercial-build-spec.md) — Phase 2 (Booking Integration) & Phase 4 (Affiliate Revenue)
+> 📄 See: [`plans/INTEGRATION_GUIDE.txt`](plans/INTEGRATION_GUIDE.txt) — step-by-step partner integration
+> 📄 See: [`plans/QUICK_REFERENCE_CARD.txt`](plans/QUICK_REFERENCE_CARD.txt) — partner signup links & commission rates
+
 - [ ] **Map operators to booking platforms** — 0/46 mapped. Check which are on Beyonk, set booking_platform + partner refs
 - [ ] **Beyonk partnership** — Email hello@beyonk.com to become distribution partner
 - [ ] **Price comparison schema** — `booking_sources` table (activity_id, platform, price, url, last_checked)
@@ -64,6 +68,9 @@
 - [ ] **Affiliate links** — wire up GetYourGuide, Viator, Booking.com affiliate tracking URLs
 
 ### Commercial Model
+> 📄 See: [`plans/commercial-offerings-plan.md`](plans/commercial-offerings-plan.md) — full 9 revenue streams, pricing benchmarks, projections
+> 📄 See: [`plans/commercial-build-spec.md`](plans/commercial-build-spec.md) — Phase 1 (Listing Tiers + Payments)
+
 - [ ] **WhatsApp onboarding agent** — AI-powered operator signup flow on Railway
 - [ ] **Pricing tiers** — Free (stub listing) / £9.99 (verified) / £29.99 (premium)
 - [ ] **"Verified by Adventure Wales"** badge system — criteria-based (AALA, ratings, reviews)
@@ -80,13 +87,17 @@
 - [ ] **Activity pages** — import 128 researched activities (currently only 45 in DB)
 
 ### Site Features
-- [ ] **Operator Dashboard (B2B)** — leads overview, enquiry management, analytics
+> 📄 See: [`plans/commercial-build-spec.md`](plans/commercial-build-spec.md) — Phase 3 (Lead Gen), Phase 6 (Operator Analytics), Phase 7 (Itinerary Sponsorship)
+
+- [ ] **Operator Dashboard (B2B)** — leads overview, enquiry management, analytics → *Build spec Phase 6*
 - [ ] **Vibe Filter** — mood-based search (Adrenaline / Chill / Family / Romantic)
 - [ ] **PDF Export** — downloadable itineraries with maps and costs
 - [ ] **Drag & Drop Itinerary Editor** — reorder stops, travel time warnings
+- [ ] **Lead Generation** — enquiry routing, lead scoring, operator notifications → *Build spec Phase 3*
+- [ ] **Itinerary Sponsorship** — operators pay for featured placement in itineraries → *Build spec Phase 7*
 
 ### Design & Polish
-- [ ] **Ad slots rendering** — verify demo ads show on answer/guide pages
+- [ ] **Ad slots rendering** — verify demo ads show on answer/guide pages → *Build spec Phase 5*
 - [ ] **SponsorBadge usage** — not used on any pages yet, wire into operator profiles
 - [ ] **Newsletter integration** — connect to email service (Mailchimp/Resend/etc)
 - [ ] **Mobile responsiveness audit** — check all pages on mobile
@@ -96,6 +107,8 @@
 ## 🟢 FUTURE / NICE TO HAVE
 
 ### Growth
+> 📄 See: [`plans/commercial-offerings-plan.md`](plans/commercial-offerings-plan.md) — §5 Implementation Priority, §6 Revenue Projections, §8 KPIs
+
 - [ ] **Multi-tenant architecture** — support Adventure Scotland, Adventure England etc
 - [ ] **User accounts** — save favourite itineraries, bookmarks
 - [ ] **Review system** — build own reviews (reduce reliance on Google/TripAdvisor)
@@ -103,7 +116,13 @@
 - [ ] **SEO landing pages** — "cheapest coasteering Pembrokeshire" etc
 
 ### Integrations
-- [ ] **Booking.com affiliate** — accommodation widget with live availability
+> 📄 See: [`plans/INTEGRATION_GUIDE.txt`](plans/INTEGRATION_GUIDE.txt) — Phase 1-3 partner integration steps
+> 📄 See: [`plans/QUICK_REFERENCE_CARD.txt`](plans/QUICK_REFERENCE_CARD.txt) — all partner signup links
+> 📄 See: [`plans/ready_to_integrate_partners.csv`](plans/ready_to_integrate_partners.csv) — partner data
+
+- [ ] **Booking.com affiliate** — accommodation widget with live availability → *Integration Guide Phase 1*
+- [ ] **GetYourGuide Partner API** — 300K experiences, 7-8% commission → *Quick Ref Tier 1*
+- [ ] **Viator affiliate** — backup to GYG, ~8% commission → *Quick Ref Tier 1*
 - [ ] **Rezdy Channel Manager** — secondary booking platform integration
 - [ ] **Amazon Associates** — gear affiliate links on guides
 - [ ] **TripAdvisor links** — link to reviews (don't embed due to T&C restrictions)
@@ -113,6 +132,22 @@
 - [ ] **Analytics** — Plausible or similar (privacy-friendly)
 - [ ] **Error monitoring** — Sentry or similar
 - [ ] **Image CDN** — optimise image delivery (currently local files)
+
+---
+
+---
+
+## 📁 Planning Documents
+| Document | Location | What's In It |
+|----------|----------|-------------|
+| **Commercial Offerings Plan** | [`plans/commercial-offerings-plan.md`](plans/commercial-offerings-plan.md) | 9 revenue streams, pricing benchmarks, competitor analysis, £50K-£500K projections |
+| **Commercial Build Spec** | [`plans/commercial-build-spec.md`](plans/commercial-build-spec.md) | 7-phase technical build plan: Stripe, booking, leads, affiliates, ads, analytics, sponsorship |
+| **Integration Guide** | [`plans/INTEGRATION_GUIDE.txt`](plans/INTEGRATION_GUIDE.txt) | Step-by-step partner integration (Booking.com, GYG, Viator, weather APIs) |
+| **Quick Reference Card** | [`plans/QUICK_REFERENCE_CARD.txt`](plans/QUICK_REFERENCE_CARD.txt) | All partner signup links, commission rates, cookie durations |
+| **Ready Partners CSV** | [`plans/ready_to_integrate_partners.csv`](plans/ready_to_integrate_partners.csv) | Partner data in structured format |
+| **Overnight Plan** | [`OVERNIGHT_PLAN.md`](OVERNIGHT_PLAN.md) | Original phased build plan (mostly complete) |
+| **Site Audit** | [`memory/adventure-wales-audit-2025-01-22.md`](memory/adventure-wales-audit-2025-01-22.md) | 66-item audit — many items now resolved |
+| **Research Data** | [`data/research/tier1-1.json`](data/research/tier1-1.json), [`tier2-1.json`](data/research/tier2-1.json) | 35 operators, 128 activities fully researched |
 
 ---
 

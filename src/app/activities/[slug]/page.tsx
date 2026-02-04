@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getActivityBySlug, getActivities, getAccommodation, getAllActivitySlugs } from "@/lib/queries";
 import { Badge, DifficultyBadge, PriceBadge } from "@/components/ui/badge";
 import { ButtonLink } from "@/components/ui/button";
@@ -486,9 +487,26 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
           </div>
         </div>
 
+        {/* SEO Cross-link to combo page */}
+        {region && activityType && (
+          <section className="mt-12">
+            <Link
+              href={`/${region.slug}/things-to-do/${activityType.slug}`}
+              className="block bg-gradient-to-r from-[#1e3a4c] to-[#2a5570] rounded-xl p-6 hover:shadow-lg transition-shadow"
+            >
+              <h2 className="text-lg font-bold text-white mb-1">
+                All {activityType.name} in {region.name} →
+              </h2>
+              <p className="text-white/70 text-sm">
+                Browse every {activityType.name.toLowerCase()} experience, compare operators, and find the best deals in {region.name}.
+              </p>
+            </Link>
+          </section>
+        )}
+
         {/* Related Activities */}
         {relatedActivities.length > 0 && (
-          <section className="mt-16">
+          <section className="mt-12">
             <h2 className="text-xl font-bold text-[#1e3a4c] mb-6">
               More Adventures Nearby
             </h2>

@@ -66,35 +66,43 @@ export async function POST(request: Request) {
 
     const buffer = Buffer.from(await file.arrayBuffer());
 
-    // Process image with sharp
-    // Auto-resize to max 1920px width
-    const image = sharp(buffer);
-    const metadata = await image.metadata();
+    // Process image with sharp — resize to max 1920px width
+    const processed = await sharp(buffer)
+      .resize({ width: 1920, withoutEnlargement: true })
+      .toBuffer();
 
-    if (!metadata) {
-       return NextResponse.json(
-        { error: 'Invalid image data' },
-        { status: 400 }
-      );
+    const metadata = await sharp(processed).metadata();
+
+    // Generate filename
+    const timestamp = Date.now();
+    const safeName = file.name.replace(/[^a-zA-Z0-9.-]/g, '_');
+    const filename = `${contentType}/${timestamp}-${safeName}`;
+
+    // Try Vercel Blob first, fall back to local filesystem
+    if (process.env.BLOB_READ_WRITE_TOKEN) {
+      const { put } = await import('@vercel/blob');
+      const blob = await put(filename, processed, {
+        access: 'public',
+        contentType: file.type,
+      });
+
+      return NextResponse.json({
+        url: blob.url,
+        width: metadata.width,
+        height: metadata.height,
+      });
     }
 
-    // Prepare directory
+    // Fallback: local filesystem
     const uploadDir = path.join(process.cwd(), 'public', 'images', contentType);
     await mkdir(uploadDir, { recursive: true });
 
-    // Generate filename
-    // Using timestamp + sanitized original name to avoid collisions
-    const timestamp = Date.now();
-    const safeName = file.name.replace(/[^a-zA-Z0-9.-]/g, '_');
-    const filename = `${timestamp}-${safeName}`;
-    const filepath = path.join(uploadDir, filename);
+    const localFilename = `${timestamp}-${safeName}`;
+    const filepath = path.join(uploadDir, localFilename);
 
-    // Resize and save
-    const info = await image
-      .resize({ width: 1920, withoutEnlargement: true })
-      .toFile(filepath);
+    const info = await sharp(processed).toFile(filepath);
 
-    const url = `/images/${contentType}/${filename}`;
+    const url = `/images/${contentType}/${localFilename}`;
 
     return NextResponse.json({
       url,

@@ -42,6 +42,45 @@ export default async function ActivitiesPage() {
           />
         </Suspense>
 
+        {/* Popular Activity + Region combos (SEO keyword links) */}
+        <section className="mt-12">
+          <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Popular Searches</h2>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { type: "coasteering", region: "pembrokeshire" },
+              { type: "coasteering", region: "gower" },
+              { type: "surfing", region: "anglesey" },
+              { type: "surfing", region: "pembrokeshire" },
+              { type: "climbing", region: "snowdonia" },
+              { type: "mountain-biking", region: "brecon-beacons" },
+              { type: "mountain-biking", region: "south-wales" },
+              { type: "sea-kayaking", region: "pembrokeshire" },
+              { type: "sea-kayaking", region: "anglesey" },
+              { type: "hiking", region: "snowdonia" },
+              { type: "zip-lining", region: "snowdonia" },
+              { type: "sup", region: "gower" },
+              { type: "sup", region: "mid-wales" },
+              { type: "kayaking", region: "brecon-beacons" },
+              { type: "wild-swimming", region: "pembrokeshire" },
+              { type: "caving", region: "brecon-beacons" },
+              { type: "surfing", region: "gower" },
+              { type: "mountain-biking", region: "snowdonia" },
+            ].map(({ type, region }) => {
+              const typeName = activityTypes.find(t => t.slug === type)?.name || type.replace(/-/g, " ");
+              const regionName = regions.find(r => r.slug === region)?.name || region.replace(/-/g, " ");
+              return (
+                <Link
+                  key={`${type}-${region}`}
+                  href={`/${region}/things-to-do/${type}`}
+                  className="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-[#f97316] hover:text-[#f97316] transition-colors"
+                >
+                  {typeName} in {regionName}
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+
         {/* Browse by Region */}
         <section className="mt-12">
           <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Browse by Region</h2>

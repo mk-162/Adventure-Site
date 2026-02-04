@@ -6,6 +6,7 @@ import { revalidatePath } from "next/cache";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { upgradeToPremium, downgradeToClaimed } from "@/app/admin/commercial/claims/actions";
+import ImageUpload from "@/components/admin/ImageUpload";
 
 async function getOperator(id: number) {
   const [operator] = await db.select().from(operators).where(eq(operators.id, id));
@@ -41,6 +42,8 @@ async function updateOperator(id: number, formData: FormData) {
   const address = formData.get("address") as string;
   const description = formData.get("description") as string;
   const priceRange = formData.get("priceRange") as string;
+  const logoUrl = formData.get("logoUrl") as string;
+  const coverImage = formData.get("coverImage") as string;
   const selectedRegions = formData.getAll("regions") as string[];
   const selectedActivityTypes = formData.getAll("activityTypes") as string[];
 
@@ -58,6 +61,8 @@ async function updateOperator(id: number, formData: FormData) {
       address: address || null,
       description: description || null,
       priceRange: priceRange || null,
+      logoUrl: logoUrl || null,
+      coverImage: coverImage || null,
       regions: selectedRegions.length > 0 ? selectedRegions : null,
       activityTypes: selectedActivityTypes.length > 0 ? selectedActivityTypes : null,
       updatedAt: new Date(),
@@ -197,6 +202,27 @@ export default async function EditOperatorPage({
                 placeholder="Brief description of the operator..."
               />
             </div>
+          </div>
+        </div>
+
+        {/* Images */}
+        <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">
+            Images
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <ImageUpload
+              name="logoUrl"
+              label="Logo"
+              currentUrl={operator.logoUrl}
+              aspectHint="square"
+            />
+            <ImageUpload
+              name="coverImage"
+              label="Cover Image"
+              currentUrl={operator.coverImage}
+              aspectHint="landscape"
+            />
           </div>
         </div>
 

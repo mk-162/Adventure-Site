@@ -723,6 +723,29 @@ export default async function OperatorProfilePage({ params }: Props) {
             </div>
           </section>
         )}
+
+        {/* Activity + Region combo links (SEO) */}
+        {operator.activityTypes && operator.activityTypes.length > 0 && primaryRegion && (
+          <section className="mt-8 mb-4">
+            <h2 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-3">
+              Explore by activity in {regionDisplayName}
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {operator.activityTypes.map((typeSlug: string) => {
+                const typeName = typeSlug.replace(/-/g, " ").replace(/\b\w/g, (c: string) => c.toUpperCase());
+                return (
+                  <Link
+                    key={typeSlug}
+                    href={`/${primaryRegion}/things-to-do/${typeSlug}`}
+                    className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e3a4c] hover:border-[#f97316] hover:text-[#f97316] transition-colors"
+                  >
+                    {typeName} in {regionDisplayName}
+                  </Link>
+                );
+              })}
+            </div>
+          </section>
+        )}
       </div>
 
       {/* Sticky Bottom Bar (mobile only) */}

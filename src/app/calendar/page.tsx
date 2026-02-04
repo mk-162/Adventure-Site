@@ -383,10 +383,12 @@ function EmptyState() {
   );
 }
 
-function groupEventsByMonth(events: typeof events.$inferSelect[]) {
-  const groups: { monthLabel: string; events: typeof events.$inferSelect[] }[] = [];
+type EventRow = Awaited<ReturnType<typeof getEvents>>[number]["event"];
 
-  events.forEach(event => {
+function groupEventsByMonth(eventList: EventRow[]) {
+  const groups: { monthLabel: string; events: EventRow[] }[] = [];
+
+  eventList.forEach(event => {
     if (!event.dateStart) return;
     const date = new Date(event.dateStart);
     const label = date.toLocaleDateString("en-GB", { month: "long", year: "numeric" });

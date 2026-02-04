@@ -109,8 +109,8 @@ export function AccountDetail({ account, linkedOperators, unlinkedOperators }: {
           </div>
         </div>
         <div className="flex items-center gap-2">
-          {account.adminNotes && <StickyNote className="h-4 w-4 text-yellow-500" title={account.adminNotes} />}
-          {account.billingNotes && <CreditCard className="h-4 w-4 text-green-500" title={account.billingNotes} />}
+          {account.adminNotes && <span title={account.adminNotes}><StickyNote className="h-4 w-4 text-yellow-500" /></span>}
+          {account.billingNotes && <span title={account.billingNotes}><CreditCard className="h-4 w-4 text-green-500" /></span>}
           {expanded ? <ChevronUp className="h-5 w-5 text-gray-400" /> : <ChevronDown className="h-5 w-5 text-gray-400" />}
         </div>
       </div>

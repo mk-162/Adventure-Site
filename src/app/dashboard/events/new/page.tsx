@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ArrowLeft, Loader2, Calendar, MapPin, Globe, Ticket, Info, Image as ImageIcon } from "lucide-react";
+import { ArrowLeft, Loader2, Calendar, MapPin, Globe, Ticket, Info, Image as ImageIcon, Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function NewEventPage() {

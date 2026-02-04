@@ -172,7 +172,7 @@ export function EventCalendar({ events }: EventCalendarProps) {
                   >
                     <div className="flex justify-between items-start mb-1">
                       <span className="text-xs font-bold text-[#f97316]">
-                        {event.timeOfDay || (event.dateStart ? new Date(event.dateStart).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) : 'All Day')}
+                        {event.dateStart ? new Date(event.dateStart).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) : 'All Day'}
                       </span>
                       {event.isFeatured && <Star className="w-3 h-3 text-[#f97316] fill-[#f97316]" />}
                     </div>

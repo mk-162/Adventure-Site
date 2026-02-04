@@ -5,6 +5,7 @@ import { ItineraryMap } from "./ItineraryMap";
 import { TimelineDay } from "./TimelineDay";
 import { CostBreakdown } from "./CostBreakdown";
 import { BasecampPicker } from "./BasecampPicker";
+import { TripNotes } from "./TripNotes";
 import { ItineraryStop } from "@/types/itinerary";
 import { CloudRain, PiggyBank, Star, Home, MapPin, Clock, Mountain, Sun, PoundSterling, Map } from "lucide-react";
 import { accommodation, regions } from "@/db/schema";
@@ -251,6 +252,9 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, regio
             <ClimateChart regionSlug={region.slug} compact />
          )}
          <CostBreakdown stops={stops} mode={mode} itineraryName={itineraryName} />
+         {itineraryName && (
+           <TripNotes itinerarySlug={itineraryName.toLowerCase().replace(/[^a-z0-9]+/g, "-")} />
+         )}
       </aside>
     </div>
 

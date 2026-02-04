@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ItineraryStop } from "@/types/itinerary";
 import { EnquireAllVendors } from "./EnquireAllVendors";
 import { operators } from "@/db/schema";
-import { Flag, Bed, Utensils, Car, Minus, Plus, Users, ChevronDown, ChevronUp } from "lucide-react";
+import { Flag, Bed, Utensils, Car, Minus, Plus, Users, ChevronDown, ChevronUp, Heart } from "lucide-react";
 import clsx from "clsx";
+import Link from "next/link";
 
 type Operator = typeof operators.$inferSelect;
 
@@ -13,6 +14,7 @@ interface CostBreakdownProps {
   stops: ItineraryStop[];
   mode: "standard" | "wet" | "budget";
   itineraryName?: string;
+  itineraryId?: number;
 }
 
 interface LineItem {

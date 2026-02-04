@@ -242,7 +242,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 - [ ] Content: Make guides "rich" (images, formatting).
 - [ ] Plan: Deal with missing images on Journal (Plan needed).
 - [ ] Design: Journal links to Itineraries/Operators look boring without images.
-- [ ] Feature: Add Image Galleries (Guides and Activity pages "desperately need" them)
+- [x] Feature: Add Image Galleries (Guides and Activity pages "desperately need" them) — ActivityGallery + ScenicGallery components exist
 
 **Directory / Partners**
 

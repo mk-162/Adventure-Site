@@ -26,6 +26,8 @@ interface Activity {
     priceTo: string | null;
     duration: string | null;
     difficulty: string | null;
+    lat: string | null;
+    lng: string | null;
   };
   region: {
     id: number;

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAccommodationBySlug, getAccommodationByRegion, getActivities } from "@/lib/queries";
 import { AccommodationCard } from "@/components/cards/accommodation-card";
-import dynamic from "next/dynamic";
+import { AccommodationLocationMap } from "@/components/maps/AccommodationLocationMap";
 import type { MapMarker } from "@/components/ui/MapView";
 import { 
   MapPin, Star, ExternalLink, Bed, Wifi, Car, 
@@ -14,15 +14,6 @@ import {
   createLodgingBusinessSchema, 
   createBreadcrumbSchema 
 } from "@/components/seo/JsonLd";
-
-const MapView = dynamic(() => import("@/components/ui/MapView"), {
-  
-  loading: () => (
-    <div className="w-full h-[300px] rounded-2xl bg-gray-200 animate-pulse flex items-center justify-center">
-      <span className="text-gray-400">Loading map...</span>
-    </div>
-  ),
-});
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -245,48 +236,19 @@ export default async function AccommodationPage({ params }: Props) {
             </div>
 
             {/* Location Map */}
-            {mapMarkers.length > 0 && (
-              <div className="bg-white rounded-2xl p-6 shadow-sm">
-                <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">
-                  Location & Nearby Activities
-                </h2>
-                <MapView
-                  markers={mapMarkers}
-                  center={
-                    accommodation.lat && accommodation.lng
-                      ? [
-                          parseFloat(String(accommodation.lat)),
-                          parseFloat(String(accommodation.lng)),
-                        ]
-                      : undefined
-                  }
-                  zoom={13}
-                  height="350px"
-                  className="rounded-2xl"
-                />
-                
-                {/* Map Legend */}
-                <div className="flex flex-wrap gap-3 mt-3 text-xs text-gray-600">
-                  <span className="flex items-center gap-2">
-                    <span className="w-3 h-3 rounded-full bg-[#22c55e] border-2 border-white shadow-sm"></span>
-                    Your Stay
-                  </span>
-                  {nearbyActivities.length > 0 && (
-                    <span className="flex items-center gap-2">
-                      <span className="w-3 h-3 rounded-full bg-[#3b82f6] border-2 border-white shadow-sm"></span>
-                      Nearby Activities ({nearbyActivities.filter(a => a.activity.lat && a.activity.lng).length})
-                    </span>
-                  )}
-                </div>
-                
-                {accommodation.address && (
-                  <p className="mt-4 text-gray-600 flex items-center gap-2">
-                    <MapPin className="h-4 w-4" />
-                    {accommodation.address}
-                  </p>
-                )}
-              </div>
-            )}
+            <AccommodationLocationMap
+              markers={mapMarkers}
+              center={
+                accommodation.lat && accommodation.lng
+                  ? [
+                      parseFloat(String(accommodation.lat)),
+                      parseFloat(String(accommodation.lng)),
+                    ]
+                  : undefined
+              }
+              nearbyCount={nearbyActivities.filter(a => a.activity.lat && a.activity.lng).length}
+              address={accommodation.address}
+            />
           </div>
 
           {/* Sidebar */}

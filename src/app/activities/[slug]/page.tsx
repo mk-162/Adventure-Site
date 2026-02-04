@@ -7,6 +7,7 @@ import { ActivityCard } from "@/components/cards/activity-card";
 import { ActivityGallery } from "@/components/activities/activity-gallery";
 import dynamic from "next/dynamic";
 import type { MapMarker } from "@/components/ui/MapView";
+import { ActivityLocationMap } from "@/components/maps/ActivityLocationMap";
 import { 
   MapPin, Clock, Calendar, Users, Star, 
   CheckCircle, XCircle, ExternalLink, Share2, Heart 
@@ -341,38 +342,15 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
             )}
 
             {/* Location Map */}
-            {mapMarkers.length > 0 && (
-              <section>
-                <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">
-                  Location & Nearby Accommodation
-                </h2>
-                <MapView
-                  markers={mapMarkers}
-                  center={
-                    activity.lat && activity.lng
-                      ? [parseFloat(String(activity.lat)), parseFloat(String(activity.lng))]
-                      : undefined
-                  }
-                  zoom={13}
-                  height="350px"
-                  className="rounded-xl shadow-sm"
-                />
-                
-                {/* Map Legend */}
-                <div className="flex flex-wrap gap-3 mt-3 text-xs text-gray-600">
-                  <span className="flex items-center gap-2">
-                    <span className="w-3 h-3 rounded-full bg-[#3b82f6] border-2 border-white shadow-sm"></span>
-                    Activity
-                  </span>
-                  {nearbyAccommodation.length > 0 && (
-                    <span className="flex items-center gap-2">
-                      <span className="w-3 h-3 rounded-full bg-[#22c55e] border-2 border-white shadow-sm"></span>
-                      Nearby Stays ({nearbyAccommodation.filter(a => a.accommodation.lat && a.accommodation.lng).length})
-                    </span>
-                  )}
-                </div>
-              </section>
-            )}
+            <ActivityLocationMap
+              markers={mapMarkers}
+              center={
+                activity.lat && activity.lng
+                  ? [parseFloat(String(activity.lat)), parseFloat(String(activity.lng))]
+                  : undefined
+              }
+              nearbyCount={nearbyAccommodation.filter(a => a.accommodation.lat && a.accommodation.lng).length}
+            />
           </div>
 
           {/* Right Sidebar - Booking */}

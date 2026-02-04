@@ -160,18 +160,26 @@ def is_blocked_url(url: str) -> bool:
     return any(b in url for b in BLOCKED_DOMAINS)
 
 
-def try_openverse(query: str, retry: int = 2) -> dict | None:
+def try_openverse(query: str) -> dict | None:
     """Search Openverse and try to download. Returns image data or None."""
     try:
         r = requests.get(OPENVERSE_API, params={
             "q": query,
-            "license": "cc0,by,by-sa",
+            "license_type": "commercial",
             "page_size": 15,
             "aspect_ratio": "wide",
         }, headers=OPENVERSE_HEADERS, timeout=10)
-        if r.status_code == 403 and retry > 0:
-            time.sleep(5)
-            return try_openverse(query, retry - 1)
+        if r.status_code == 429 or r.status_code == 403:
+            print(f"    [OV rate limited, waiting 10s]")
+            sys.stdout.flush()
+            time.sleep(10)
+            r2 = requests.get(OPENVERSE_API, params={
+                "q": query, "license_type": "commercial",
+                "page_size": 15, "aspect_ratio": "wide",
+            }, headers=OPENVERSE_HEADERS, timeout=10)
+            if r2.status_code != 200:
+                return None
+            r = r2
         r.raise_for_status()
         results = r.json().get("results", [])
     except Exception as e:
@@ -343,14 +351,14 @@ def main():
 
         query = build_query(art)
 
-        # Try Unsplash first (faster, more reliable)
-        result = try_unsplash(query)
-        source_label = "US"
+        # Try Openverse first (rate limit: 20/min burst, 200/day)
+        result = try_openverse(query)
+        source_label = "OV"
 
-        # Fall back to Openverse
+        # Fall back to Unsplash
         if not result:
-            result = try_openverse(query)
-            source_label = "OV"
+            result = try_unsplash(query)
+            source_label = "US"
 
         if not result:
             print(f"    [SKIP] No results: {query}")
@@ -416,7 +424,7 @@ def main():
             print(f"    [CHECKPOINT] {downloaded} done (OV:{ov_count} US:{us_count})")
             sys.stdout.flush()
 
-        time.sleep(1.5)  # Respect API rate limits
+        time.sleep(5)  # Openverse: 20/min burst limit
 
     save_attributions(attributions)
 

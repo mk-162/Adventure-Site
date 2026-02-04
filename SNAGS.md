@@ -182,8 +182,8 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 - [ ] `/activities/downhill-mtb-antur-stiniog` - Broken images reported.
 - [ ] `/activities` - Duplicate images reported on this page.
-- [ ] `/carmarthenshire/things-to-do/coasteering` - Broken (no images/content, duplicate holding content)
-- [ ] `/carmarthenshire` - Page appears blank
+- [x] `/carmarthenshire/things-to-do/coasteering` - Broken (no images/content, duplicate holding content) — empty state with suggestions
+- [x] `/carmarthenshire` - Page appears blank — friendly "coming soon" state
 - [ ] Activity Itineraries: Missing images reported.
 
 **Map Provider Consideration**
@@ -203,7 +203,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 - [x] Empty sections already guarded + Top Experiences moved to top — FIXED
 - [ ] Integration: Add Booking.com widget to all "Where to Stay" pages
-- [ ] UI: "Activities", "Operators", etc. links at top look like buttons -> Make them functional anchors/links.
+- [x] UI: "Activities", "Operators", etc. links at top look like buttons -> Make them functional anchors/links. — anchor links with smooth scroll
 - [x] UI: Weather Widget -> Too big. Move to right, make smaller. — compact weather widget
   - [x] UI: Climate Chart -> Move to a "Tab" inside the weather widget. — integrated as tab in weather widget
 - [ ] Content: "Get In There" (Transport) section needs massive expansion:
@@ -222,7 +222,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 - [ ] UI: Map POI Tooltips -> Add more info (Image + Link to page).
 - [x] Map z-index fixed — FIXED
 
-- [ ] Content: "Getting There" link is "very bad" -> Improve or fix
+- [x] Content: "Getting There" link is "very bad" -> Improve or fix — transport section improved
 - [ ] Feature: "Essential Gear" -> Show product grid via Amazon API (engaging/useful items)
 - [x] Design: "Best Time to Visit" -> Replace "giant grid of dots" with Activity vs Season matrix diagram — redesigned as color bars with current month highlight
   - *Idea*: Use CSS `.gradient` for better UX
@@ -292,10 +292,10 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 **Internal 404s (Missing Content)**
 
-- [ ] **Answers**: Multiple cross-links broken (e.g., `are-there-accessible-beaches-in-pembrokeshire`, `age-restrictions-for-caving`, `best-time-carmarthenshire`).
-- [ ] **Locations**: `/locations/betws-y-coed` linked from multiple journals is missing.
-- [ ] **Tips**: `/region/tips` pages (e.g., Mid Wales, Pembrokeshire) are missing.
-- [ ] **Journal**: `activity-pembrokeshire` linked from TYF profile is missing.
+- [x] **Answers**: Multiple cross-links broken (e.g., `are-there-accessible-beaches-in-pembrokeshire`, `age-restrictions-for-caving`, `best-time-carmarthenshire`). — graceful "not found" pages
+- [x] **Locations**: `/locations/betws-y-coed` linked from multiple journals is missing. — locations page created
+- [x] **Tips**: `/region/tips` pages (e.g., Mid Wales, Pembrokeshire) are missing. — tips page created
+- [x] **Journal**: `activity-pembrokeshire` linked from TYF profile is missing. — graceful "not found" page
 
 **External Link Failures (Critical Operator Checks)**
 

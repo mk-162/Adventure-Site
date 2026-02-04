@@ -1,0 +1,3205 @@
+{
+  "operators": [
+    {
+      "name": "AberAdventures",
+      "slug": "aberadventures",
+      "category": "activity_provider",
+      "website": "https://www.aberadventures.co.uk",
+      "email": "info@aberadventures.co.uk",
+      "phone": "07977 549975",
+      "address": "Borth, Ceredigion SY24 5JS",
+      "lat": 52.5049,
+      "lng": -4.0407,
+      "description": "AberAdventures is your go-to for aquatic adventures based right on the beautiful beach at Borth, Mid Wales. Run by experienced local instructors, they offer surfing, stand-up paddleboarding (SUP), and kayaking lessons and rentals to suit all abilities. Whether you're a complete beginner looking to catch your first wave or an experienced paddler wanting to explore the stunning coastline, AberAdventures provides a safe, fun, and unforgettable experience. Their small group sizes ensure personalized attention, and they're passionate about sharing their love for the sea. Families, groups of friends, and solo travelers will find something to enjoy here. Standout experiences include their sunset SUP tours, where you can soak up the breathtaking coastal views. AberAdventures makes getting out on the water accessible and enjoyable for everyone.",
+      "tagline": "Your adventure starts here, on the beautiful Welsh coast!",
+      "googleRating": 5.0,
+      "reviewCount": 33,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g672837-d23455208-Reviews-AberAdventures-Borth_Ceredigion_Wales.html",
+      "priceRange": "££",
+      "uniqueSellingPoint": "Providing unforgettable surfing, SUP, and kayaking experiences with expert local instructors right on the beautiful Borth beach.",
+      "regions": [
+        "mid-wales"
+      ],
+      "activityTypes": [
+        "surfing",
+        "sup",
+        "kayaking"
+      ],
+      "serviceTypes": [
+        "lessons",
+        "rentals",
+        "tours"
+      ],
+      "trustSignals": {
+        "aala": null,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {
+        "sessions": [],
+        "qualifications": [],
+        "equipmentIncluded": [
+          "wetsuit",
+          "surfboard",
+          "paddle",
+          "kayak",
+          "buoyancy aid"
+        ],
+        "whatToBring": [
+          "swimwear",
+          "towel",
+          "sunscreen",
+          "water bottle"
+        ],
+        "minAge": 8,
+        "fitnessLevel": "moderate",
+        "seasons": {
+          "open": "Apr-Oct",
+          "peak": "Jun-Sep"
+        },
+        "meetingPoint": "AberAdventures, Borth Beach",
+        "parkingInfo": "Pay and display parking available near the beach",
+        "bookingRequired": true,
+        "bookingUrl": "https://www.aberadventures.co.uk/",
+        "cancellationPolicy": "Contact operator for details"
+      }
+    },
+    {
+      "name": "Abersoch Sailing School",
+      "slug": "abersoch-sailing-school",
+      "category": "activity_provider",
+      "website": "https://www.abersochsailingschool.co.uk",
+      "email": null,
+      "phone": null,
+      "address": "Abersoch, Llŷn",
+      "lat": 52.8198,
+      "lng": -4.5158,
+      "description": "Nestled in the heart of Abersoch, this sailing school offers an excellent base for exploring the stunning waters of Cardigan Bay. They provide a range of RYA-certified courses from beginner to advanced, plus powerboating tuition. What sets them apart is their small class sizes, ensuring personalised attention and a safe, enjoyable learning environment. Whether you're a complete novice or an experienced sailor looking to hone your skills, this school caters to all levels. Imagine yourself gliding across the turquoise waters, feeling the wind in your sails, with the picturesque backdrop of the Llŷn Peninsula – a truly unforgettable experience. They are best for families and individuals seeking quality instruction and a passion for watersports.",
+      "tagline": "Learn to sail in beautiful Abersoch.",
+      "googleRating": 4.7,
+      "reviewCount": 28,
+      "tripadvisorUrl": null,
+      "priceRange": "£££",
+      "uniqueSellingPoint": "Personalised sailing and powerboating tuition with small class sizes in a beautiful coastal location.",
+      "regions": [
+        "ll-n-peninsula"
+      ],
+      "activityTypes": [
+        "sailing-courses",
+        "powerboating"
+      ],
+      "serviceTypes": [
+        "tuition",
+        "courses"
+      ],
+      "trustSignals": {
+        "aala": null,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {
+        "sessions": [],
+        "qualifications": [],
+        "equipmentIncluded": [],
+        "whatToBring": [],
+        "minAge": null,
+        "fitnessLevel": null,
+        "seasons": {
+          "open": null,
+          "peak": null
+        },
+        "meetingPoint": null,
+        "parkingInfo": null,
+        "bookingRequired": null,
+        "bookingUrl": null,
+        "cancellationPolicy": null
+      }
+    },
+    {
+      "name": "Abersoch Watersports",
+      "slug": "abersoch-watersports",
+      "category": "activity_provider",
+      "website": "https://www.abersochwatersports.co.uk",
+      "email": null,
+      "phone": null,
+      "address": "Abersoch, Llŷn",
+      "lat": 52.8294,
+      "lng": -4.5057,
+      "description": "Abersoch Watersports provides a range of exhilarating activities right on the stunning Llŷn Peninsula. Perfect for families, thrill-seekers, and anyone looking to make a splash, they offer jet ski experiences that let you explore the coastline at your own pace, as well as guided powerboat tours that reveal hidden coves and breathtaking views. They are known for their friendly, professional instructors who ensure everyone has a safe and memorable time. Whether you're a seasoned watersports enthusiast or a complete beginner, Abersoch Watersports tailors the experience to your abilities and interests. They are also perfect for corporate events, stag and hen parties. Abersoch Watersports creates memories that last a lifetime.",
+      "tagline": "Your adventure on the Llŷn Peninsula starts here!",
+      "googleRating": 4.7,
+      "reviewCount": 30,
+      "tripadvisorUrl": null,
+      "priceRange": "£££",
+      "uniqueSellingPoint": "Providing thrilling and safe watersports experiences in the beautiful Abersoch area, creating memories that last a lifetime.",
+      "regions": [
+        "ll-n-peninsula"
+      ],
+      "activityTypes": [
+        "jet-ski",
+        "powerboat-tours",
+        "watersports"
+      ],
+      "serviceTypes": [
+        "rental",
+        "tours",
+        "tuition"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {}
+    },
+    {
+      "name": "Activity Pembrokeshire",
+      "slug": "activity-pembrokeshire",
+      "category": "activity_provider",
+      "website": "https://www.activitypembrokeshire.wales",
+      "email": "info@activitypembrokeshire.wales",
+      "phone": "07855 954315",
+      "address": "Stackpole, Pembrokeshire",
+      "lat": 51.6235,
+      "lng": -4.9186,
+      "description": "Activity Pembrokeshire offers thrilling coasteering and sea kayaking adventures along the stunning Pembrokeshire coast. Based near Stackpole, they provide unforgettable experiences for all abilities, from beginners to seasoned adventurers. What sets them apart is their commitment to small group sizes, ensuring a personalized and safe experience. Their experienced instructors are passionate about sharing their love for the coast and its wildlife, making each session educational and exciting. They are particularly well-suited to families, groups of friends, and anyone looking for an active and memorable day out. Imagine leaping from rocky cliffs into crystal-clear waters, exploring hidden caves, and paddling through dramatic sea arches – that's the Activity Pembrokeshire experience.",
+      "tagline": "Adventure awaits on the Pembrokeshire coast!",
+      "googleRating": 5.0,
+      "reviewCount": 77,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g186437-d12707527-Reviews-Activity_Pembrokeshire-Pembrokeshire_Coast_National_Park_Wales.html",
+      "priceRange": "££",
+      "uniqueSellingPoint": "Small group sizes ensure a personalized and unforgettable coasteering or sea kayaking adventure in Pembrokeshire.",
+      "regions": [
+        "pembrokeshire"
+      ],
+      "activityTypes": [
+        "coasteering",
+        "sea-kayaking"
+      ],
+      "serviceTypes": [
+        "guided-tours",
+        "outdoor-activities"
+      ],
+      "trustSignals": {
+        "aala": true,
+        "yearsExperience": null,
+        "certifications": [
+          "AALA Licensed",
+          "BCU"
+        ],
+        "awards": []
+      },
+      "serviceDetails": {
+        "sessions": [
+          {
+            "name": "Coasteering Session",
+            "duration": "3h",
+            "times": [
+              "09:30",
+              "14:00"
+            ],
+            "groupSizeMin": 4,
+            "groupSizeMax": 10,
+            "priceAdult": 55,
+            "priceChild": 50,
+            "pricePrivate": null
+          },
+          {
+            "name": "Sea Kayaking Session",
+            "duration": "3h",
+            "times": [
+              "09:30",
+              "14:00"
+            ],
+            "groupSizeMin": 4,
+            "groupSizeMax": 10,
+            "priceAdult": 60,
+            "priceChild": 55,
+            "pricePrivate": null
+          }
+        ],
+        "qualifications": [
+          "AALA Licensed",
+          "BCU"
+        ],
+        "equipmentIncluded": [
+          "wetsuit",
+          "helmet",
+          "buoyancy aid"
+        ],
+        "whatToBring": [
+          "swimwear",
+          "towel",
+          "old trainers"
+        ],
+        "minAge": 8,
+        "fitnessLevel": "moderate",
+        "seasons": {
+          "open": "Apr-Oct",
+          "peak": "Jun-Sep"
+        },
+        "meetingPoint": "Stackpole Quay, Pembrokeshire",
+        "parkingInfo": "National Trust car park at Stackpole Quay (charges apply)",
+        "bookingRequired": true,
+        "bookingUrl": "https://www.activitypembrokeshire.wales/book-online",
+        "cancellationPolicy": "48 hours notice for a full refund."
+      }
+    },
+    {
+      "name": "Adventures Wales",
+      "slug": "adventures-wales",
+      "category": "activity_provider",
+      "website": "https://www.adventureswales.co.uk",
+      "email": "info@adventureswales.co.uk",
+      "phone": "07583 817849",
+      "address": "Porthcawl, Bridgend CF36 3UU",
+      "lat": 51.4833,
+      "lng": -3.7043,
+      "description": "Adventures Wales is your gateway to exploring the wilder side of South Wales. Nestled near Porthcawl, they offer a range of thrilling outdoor activities designed to get your adrenaline pumping. Whether you're organizing a stag or hen do, a corporate team-building event, or just looking for an exciting day out, they've got you covered. They pride themselves on small group sizes to ensure a personal and safe experience. Standout experiences include their coasteering adventures along the rugged Glamorgan coastline and their gorge walking expeditions in the Brecon Beacons. Their experienced instructors will guide you every step of the way, making sure you have an unforgettable adventure. They stand out due to their small, intimate groups and a commitment to safety, meaning you get the most out of your experience.",
+      "tagline": "Adventure awaits in South Wales!",
+      "googleRating": 5.0,
+      "reviewCount": 32,
+      "tripadvisorUrl": null,
+      "priceRange": "££",
+      "uniqueSellingPoint": "Small group sizes ensure personal attention and a safe, memorable adventure experience.",
+      "regions": [
+        "south-wales",
+        "brecon-beacons"
+      ],
+      "activityTypes": [
+        "multi-activities",
+        "stag-hen",
+        "corporate",
+        "coasteering",
+        "gorge-walking"
+      ],
+      "serviceTypes": [
+        "activity",
+        "tour",
+        "experience"
+      ],
+      "trustSignals": {
+        "aala": true,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {
+        "sessions": [
+          {
+            "name": "Coasteering Session",
+            "duration": "3h",
+            "times": [
+              "09:30",
+              "14:00"
+            ],
+            "groupSizeMin": 4,
+            "groupSizeMax": 12,
+            "priceAdult": 55,
+            "priceChild": 55,
+            "pricePrivate": null
+          },
+          {
+            "name": "Gorge Walking Session",
+            "duration": "3h",
+            "times": [
+              "10:00",
+              "14:30"
+            ],
+            "groupSizeMin": 4,
+            "groupSizeMax": 12,
+            "priceAdult": 55,
+            "priceChild": 55,
+            "pricePrivate": null
+          }
+        ],
+        "qualifications": [
+          "AALA Licensed"
+        ],
+        "equipmentIncluded": [
+          "wetsuit",
+          "helmet",
+          "buoyancy aid"
+        ],
+        "whatToBring": [
+          "swimwear",
+          "towel",
+          "closed-toe shoes (that can get wet)"
+        ],
+        "minAge": 8,
+        "fitnessLevel": "moderate",
+        "seasons": {
+          "open": "Apr-Oct",
+          "peak": "Jun-Sep"
+        },
+        "meetingPoint": "Porthcawl, exact location confirmed upon booking",
+        "parkingInfo": "Pay and display parking nearby",
+        "bookingRequired": true,
+        "bookingUrl": "https://www.adventureswales.co.uk/book-now",
+        "cancellationPolicy": "Full refund available with 7 days notice."
+      }
+    },
+    {
+      "name": "Anglesey Adventures",
+      "slug": "anglesey-adventures",
+      "category": "activity_provider",
+      "website": "https://www.angleseyadventures.com",
+      "email": null,
+      "phone": null,
+      "address": "Rhosneigr, Anglesey",
+      "lat": 53.2333,
+      "lng": -4.5264,
+      "description": "Anglesey Adventures offers thrilling outdoor experiences along the stunning Anglesey coastline. Based in Rhosneigr, they specialize in coasteering and sea kayaking, providing unforgettable adventures for all abilities. What sets them apart is their small group sizes and focus on safety, ensuring a personal and enjoyable experience. Whether you're a seasoned adventurer or trying something new, their experienced instructors will guide you through exhilarating challenges and breathtaking scenery. For an adrenaline rush, try coasteering, scrambling along the rocks and leaping into the sea. For a more relaxed experience, explore the coastline by sea kayak and discover hidden coves and abundant wildlife. Perfect for families, groups, and individuals seeking an unforgettable adventure on Anglesey.",
+      "tagline": "Unforgettable adventures on the Anglesey coast.",
+      "googleRating": 5.0,
+      "reviewCount": 10,
+      "tripadvisorUrl": null,
+      "priceRange": "££",
+      "uniqueSellingPoint": "Anglesey Adventures offers small group, personalised coasteering and sea kayaking adventures along the Anglesey coastline.",
+      "regions": [
+        "anglesey"
+      ],
+      "activityTypes": [
+        "sea-kayaking",
+        "coasteering"
+      ],
+      "serviceTypes": [
+        "guided-tours"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {}
+    },
+    {
+      "name": "Antur Stiniog",
+      "slug": "antur-stiniog",
+      "category": "activity_provider",
+      "website": "https://www.anturstiniog.com",
+      "email": null,
+      "phone": "01766 237100",
+      "address": "Blaenau Ffestiniog LL41 3NB",
+      "lat": 52.9975,
+      "lng": -3.9381,
+      "description": "Antur Stiniog is a premier downhill mountain biking destination nestled in the heart of Snowdonia, North Wales. Built on the slopes of a former slate quarry, it boasts a network of thrilling trails catering to various skill levels, from beginners to seasoned pros. The uplift service makes accessing the trails effortless, allowing riders to maximise their downhill time. More than just a bike park, it's a community hub, with a vibrant atmosphere and a welcoming vibe. Whether you're looking for an adrenaline-fueled day on the trails or a more relaxed exploration of the surrounding scenery, Antur Stiniog offers something for everyone. Standout experiences include tackling the black-graded trails for experienced riders, and improving skills with professional coaching.",
+      "tagline": "Snowdonia's downhill mountain biking mecca.",
+      "googleRating": 4.7,
+      "reviewCount": 1702,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g665033-d3442079-Reviews-Antur_Stiniog_Downhill_Mountain_Biking-Blaenau_Ffestiniog_Snowdonia_National_Park_.html",
+      "priceRange": "££",
+      "uniqueSellingPoint": "Antur Stiniog offers uplift-assisted downhill mountain biking trails for all abilities, set against the dramatic backdrop of a former slate quarry in Snowdonia.",
+      "regions": [
+        "snowdonia"
+      ],
+      "activityTypes": [
+        "downhill-mountain-biking",
+        "bike-hire"
+      ],
+      "serviceTypes": [
+        "bike-park",
+        "uplift-service",
+        "bike-rental"
+      ],
+      "trustSignals": {
+        "aala": null,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {}
+    },
+    {
+      "name": "Black Mountain Adventure",
+      "slug": "black-mountain-adventure",
+      "category": "activity_provider",
+      "website": "https://www.visitmidwales.co.uk",
+      "email": null,
+      "phone": null,
+      "address": "Three Cocks, Brecon LD3 0SD",
+      "lat": 52.0413,
+      "lng": -3.2418,
+      "description": "Black Mountain Adventure, based near Brecon, offers exhilarating outdoor adventures in the heart of the Brecon Beacons. They specialize in providing unforgettable experiences for individuals, families, and groups of all abilities. What sets them apart is their commitment to small group sizes, ensuring personalized attention and a safe environment. Their instructors are highly qualified and passionate about sharing their love for the outdoors. Whether you're seeking an adrenaline rush or a relaxing day exploring the natural beauty of Wales, Black Mountain Adventure has something for everyone. Their gorge walking and caving experiences are particularly popular, offering a unique perspective on the region's stunning landscape. Perfect for those looking to escape the everyday and create lasting memories.",
+      "tagline": "Unforgettable adventures in the Brecon Beacons.",
+      "googleRating": 4.5,
+      "reviewCount": 20,
+      "tripadvisorUrl": null,
+      "priceRange": "££",
+      "uniqueSellingPoint": "Small group sizes ensure a personalized and safe adventure experience in the Brecon Beacons.",
+      "regions": [
+        "brecon-beacons"
+      ],
+      "activityTypes": [
+        "multi-activities-mtb",
+        "caving",
+        "sup",
+        "gorge-walking"
+      ],
+      "serviceTypes": [
+        "guided-activities",
+        "outdoor-instruction"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {}
+    },
+    {
+      "name": "Coed y Brenin (NRW)",
+      "slug": "coed-y-brenin-nrw",
+      "category": "activity_provider",
+      "website": "https://naturalresources.wales",
+      "email": null,
+      "phone": null,
+      "address": "Dolgellau LL40 2HZ",
+      "lat": 52.785,
+      "lng": -3.8667,
+      "description": "Coed y Brenin Forest Park, managed by Natural Resources Wales, is a mecca for mountain bikers and outdoor enthusiasts. Home to world-class mountain bike trails, from gentle family routes to challenging black-graded descents, it's a playground for all abilities. But it's not just about biking; explore scenic walking trails that wind through ancient woodlands and alongside rushing rivers, offering breathtaking views of Snowdonia. Trail runners will find plenty to challenge them too. This place is perfect for families, groups of friends, and solo adventurers seeking an immersive outdoor experience. Standout experiences include conquering the 'Beast' trail, enjoying a picnic by the Mawddach estuary, or simply soaking in the tranquility of the forest. They are unique as they offer a complete forest experience managed for conservation and recreation, not just a trail network.",
+      "tagline": "Adventure awaits in the heart of Snowdonia.",
+      "googleRating": 4.6,
+      "reviewCount": 2200,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g186433-d214819-Reviews-Coed_y_Brenin_Forest_Park-Dolgellau_Snowdonia_National_Park_North_Wales_Wales.html",
+      "priceRange": "£",
+      "uniqueSellingPoint": "Coed y Brenin offers a diverse range of expertly-maintained mountain biking and walking trails within a stunning and sustainably managed forest environment.",
+      "regions": [
+        "snowdonia"
+      ],
+      "activityTypes": [
+        "mountain-biking",
+        "walking",
+        "trail-running"
+      ],
+      "serviceTypes": [
+        "trails",
+        "parking",
+        "information"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {}
+    },
+    {
+      "name": "Funsport Rhosneigr",
+      "slug": "funsport-rhosneigr",
+      "category": "activity_provider",
+      "website": "https://www.funsportonline.co.uk",
+      "email": "info@funsportonline.co.uk",
+      "phone": "01407 810899",
+      "address": "High Street, Rhosneigr, Anglesey, LL64 5UQ",
+      "lat": 53.255,
+      "lng": -4.5363,
+      "description": "Funsport Rhosneigr is the go-to place for watersports enthusiasts visiting Anglesey. Located right in the heart of Rhosneigr, a prime location for kitesurfing and windsurfing, they offer lessons and equipment hire for all skill levels. What sets Funsport apart is their experienced team of instructors, who are passionate about getting you out on the water and progressing quickly. Whether you're a complete beginner looking to catch your first wave or an experienced rider wanting to improve your technique, they've got you covered. They also offer a wide range of equipment to hire, from kites and boards to wetsuits and buoyancy aids, ensuring you have everything you need for a safe and enjoyable experience. Family-friendly and welcoming, they cater for all ages and abilities. Standout experiences include their introductory kitesurfing lessons, allowing you to feel the thrill of harnessing the power of the wind.",
+      "tagline": "Ride the wind and waves in Rhosneigr!",
+      "googleRating": 4.6,
+      "reviewCount": 75,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g1078508-d2343031-Reviews-Funsport_Rhosneigr-Rhosneigr_Anglesey_North_Wales_Wales.html",
+      "priceRange": "££",
+      "uniqueSellingPoint": "Expert kitesurfing and windsurfing instruction and equipment hire in Rhosneigr, Anglesey, for all abilities.",
+      "regions": [
+        "anglesey"
+      ],
+      "activityTypes": [
+        "kitesurfing",
+        "windsurfing"
+      ],
+      "serviceTypes": [
+        "lessons",
+        "hire"
+      ],
+      "trustSignals": {
+        "aala": null,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {
+        "sessions": [],
+        "qualifications": [],
+        "equipmentIncluded": [],
+        "whatToBring": [],
+        "minAge": null,
+        "fitnessLevel": null,
+        "seasons": {
+          "open": "Apr-Oct",
+          "peak": "Jun-Sep"
+        },
+        "meetingPoint": "Funsport Rhosneigr shop",
+        "parkingInfo": "Limited parking available nearby",
+        "bookingRequired": true,
+        "bookingUrl": "https://www.funsportonline.co.uk",
+        "cancellationPolicy": "Contact Funsport for cancellation policy details."
+      }
+    },
+    {
+      "name": "Gecko Surf",
+      "slug": "gecko-surf",
+      "category": "activity_provider",
+      "website": "https://www.geckosurf.co.uk",
+      "email": "info@geckosurf.co.uk",
+      "phone": "01407 253000",
+      "address": "High Street, Rhosneigr, Anglesey, LL64 5UQ",
+      "lat": 53.2333,
+      "lng": -4.5333,
+      "description": "Gecko Surf is a Rhosneigr institution, run by knowledgeable locals who know the breaks like the back of their hand. They're not just about churning out surfers; they're about fostering a love for the ocean and the sport. They cater to all levels, from absolute beginners tentatively standing on a board for the first time to seasoned wave riders looking to hone their technique. \n\nRhosneigr is known for consistent waves, making it a fantastic learning environment. Gecko Surf offers a range of lessons, and equipment rentals. They're particularly good with families, creating a safe and fun environment for kids to get started. The instructors are patient, enthusiastic, and genuinely care about your progress. For those looking for something a bit more advanced, they also offer kitesurfing lessons. Forget the impersonal surf schools; Gecko Surf provides a friendly, community vibe where you'll feel right at home.",
+      "tagline": "Ride the waves with Rhosneigr's best.",
+      "googleRating": 4.9,
+      "reviewCount": 105,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g736944-d3830070-Reviews-Gecko_Surf-Rhosneigr_Anglesey_North_Wales_Wales.html",
+      "priceRange": "££",
+      "uniqueSellingPoint": "Friendly, local surf school offering personalized tuition in Rhosneigr.",
+      "regions": [
+        "anglesey"
+      ],
+      "activityTypes": [
+        "surfing",
+        "kitesurfing"
+      ],
+      "serviceTypes": [
+        "lessons",
+        "hire",
+        "shop"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {
+        "surfing": {
+          "sessions": [
+            {
+              "name": "Surf Lesson",
+              "duration": "2h",
+              "times": [],
+              "groupSizeMin": null,
+              "groupSizeMax": null,
+              "priceAdult": 45,
+              "priceChild": 45,
+              "pricePrivate": 90
+            }
+          ],
+          "qualifications": [],
+          "equipmentIncluded": [
+            "wetsuit",
+            "surfboard"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "sunscreen"
+          ],
+          "minAge": 5,
+          "fitnessLevel": "easy",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Gecko Surf Shop, Rhosneigr",
+          "parkingInfo": "Street parking available",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.geckosurf.co.uk/surf-lessons/",
+          "cancellationPolicy": "24 hours notice required for a refund."
+        },
+        "kitesurfing": {
+          "sessions": [
+            {
+              "name": "Kitesurfing Lesson",
+              "duration": "3h",
+              "times": [],
+              "groupSizeMin": null,
+              "groupSizeMax": null,
+              "priceAdult": 140,
+              "priceChild": null,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [],
+          "equipmentIncluded": [
+            "Kite",
+            "board",
+            "harness",
+            "wetsuit",
+            "helmet"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "sunscreen"
+          ],
+          "minAge": 12,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Gecko Surf Shop, Rhosneigr",
+          "parkingInfo": "Street parking available",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.geckosurf.co.uk/kitesurfing-lessons/",
+          "cancellationPolicy": "24 hours notice required for a refund."
+        }
+      }
+    },
+    {
+      "name": "Gower Activity Centres",
+      "slug": "gower-activity-centres",
+      "category": "activity_provider",
+      "website": "https://www.goweractivitycentres.co.uk",
+      "email": null,
+      "phone": null,
+      "address": "Gower, Swansea",
+      "lat": 51.5766,
+      "lng": -4.1338,
+      "description": "Gower Activity Centres offers thrilling adventures on the stunning Gower Peninsula. Specializing in coasteering and multi-activity days, they provide unforgettable experiences for families, groups, and individuals. What sets them apart is their local knowledge and passion for the Gower coast, ensuring each session is tailored to the group's abilities and interests. For those seeking an adrenaline rush with breathtaking scenery, this is the place to be. Their experienced instructors prioritize safety and fun, making it ideal for both beginners and seasoned adventurers. Imagine leaping from rocky cliffs into crystal-clear waters, exploring hidden coves, and discovering the magic of the Gower coastline.",
+      "tagline": "Adventure awaits on the Gower Peninsula!",
+      "googleRating": null,
+      "reviewCount": null,
+      "tripadvisorUrl": null,
+      "priceRange": "££",
+      "uniqueSellingPoint": "They offer personalized adventure experiences led by local experts on the Gower Peninsula.",
+      "regions": [
+        "gower"
+      ],
+      "activityTypes": [
+        "coasteering",
+        "multi-activities"
+      ],
+      "serviceTypes": [
+        "guided_tours",
+        "outdoor_activities"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {}
+    },
+    {
+      "name": "Hell's Mouth Surf School",
+      "slug": "hells-mouth-surf-school",
+      "category": "activity_provider",
+      "website": "https://www.hellsmouthsurfschool.co.uk",
+      "email": null,
+      "phone": null,
+      "address": "Porth Neigwl, Llŷn",
+      "lat": 52.8112,
+      "lng": -4.5186,
+      "description": "Based right on the stunning Hell's Mouth (Porth Neigwl) beach, this surf school offers lessons for all abilities, from complete beginners to those looking to refine their technique. The experienced instructors, many of whom are local surfers themselves, provide a safe and supportive environment to learn in. They use soft surfboards to ensure beginners can easily catch waves and build confidence. \n\nHell's Mouth is known for its consistent waves, making it a fantastic spot for learning to surf. Whether you're a family looking for a fun day out, a group of friends seeking an adrenaline rush, or an individual wanting to try something new, Hell's Mouth Surf School can cater to your needs. They also offer private lessons for a more personalised experience.",
+      "tagline": "Ride the waves at Hell's Mouth!",
+      "googleRating": 5.0,
+      "reviewCount": 12,
+      "tripadvisorUrl": null,
+      "priceRange": "££",
+      "uniqueSellingPoint": "Learn to surf at one of North Wales' most consistent and beautiful surf beaches with experienced local instructors.",
+      "regions": [
+        "ll-n-peninsula"
+      ],
+      "activityTypes": [
+        "surfing-lessons"
+      ],
+      "serviceTypes": [
+        "lessons",
+        "equipment-rental"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {
+        "sessions": [
+          {
+            "name": "Beginner Surf Lesson",
+            "duration": "2h",
+            "times": [
+              "Varies, see website for schedule"
+            ],
+            "groupSizeMin": null,
+            "groupSizeMax": null,
+            "priceAdult": 45,
+            "priceChild": 45,
+            "pricePrivate": null
+          },
+          {
+            "name": "Improver Surf Lesson",
+            "duration": "2h",
+            "times": [
+              "Varies, see website for schedule"
+            ],
+            "groupSizeMin": null,
+            "groupSizeMax": null,
+            "priceAdult": 45,
+            "priceChild": 45,
+            "pricePrivate": null
+          },
+          {
+            "name": "Private Surf Lesson",
+            "duration": "1.5h",
+            "times": [
+              "Arranged on booking"
+            ],
+            "groupSizeMin": 1,
+            "groupSizeMax": 1,
+            "priceAdult": null,
+            "priceChild": null,
+            "pricePrivate": 80
+          }
+        ],
+        "qualifications": [],
+        "equipmentIncluded": [
+          "surfboard",
+          "wetsuit"
+        ],
+        "whatToBring": [
+          "swimsuit",
+          "towel",
+          "sunscreen"
+        ],
+        "minAge": 6,
+        "fitnessLevel": "moderate",
+        "seasons": {
+          "open": "Apr-Oct",
+          "peak": "Jun-Sep"
+        },
+        "meetingPoint": "Hell's Mouth Beach, Porth Neigwl",
+        "parkingInfo": "Parking available at the beach",
+        "bookingRequired": true,
+        "bookingUrl": "https://www.hellsmouthsurfschool.co.uk",
+        "cancellationPolicy": "Contact for details"
+      }
+    },
+    {
+      "name": "Llangennith Surf School",
+      "slug": "llangennith-surf-school",
+      "category": "activity_provider",
+      "website": "https://www.llangennithsurf.co.uk",
+      "email": "info@llangennithsurf.co.uk",
+      "phone": "07790 376590",
+      "address": "Llangennith, Gower, SA3 1JD",
+      "lat": 51.5773,
+      "lng": -4.3054,
+      "description": "Llangennith Surf School is a Gower institution, run by experienced local surfers who know these breaks like the back of their hand. They offer lessons for all abilities, from complete beginners taking their first tentative steps on a board to experienced surfers looking to hone their skills. What sets them apart is their commitment to small group sizes, ensuring personalised instruction and maximum wave time. Perfect for families, individuals, and groups of friends looking to experience the thrill of surfing in a safe and supportive environment. Imagine catching your first wave with the stunning backdrop of Rhossili Bay – an unforgettable experience. Llangennith Surf School also offers board and wetsuit hire for independent surfers.",
+      "tagline": "Ride the Gower waves with Llangennith Surf School.",
+      "googleRating": 4.8,
+      "reviewCount": 130,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g1077872-d2347085-Reviews-Llangennith_Surf_School-Llangennith_Gower_Swansea_Wales.html",
+      "priceRange": "££",
+      "uniqueSellingPoint": "Llangennith Surf School offers personalised surf instruction with small group sizes on one of Gower's best beaches.",
+      "regions": [
+        "gower"
+      ],
+      "activityTypes": [
+        "surfing-lessons"
+      ],
+      "serviceTypes": [
+        "lessons",
+        "hire"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {
+        "sessions": [
+          {
+            "name": "2 Hour Surf Lesson",
+            "duration": "2h",
+            "times": [
+              "Varies, check booking page"
+            ],
+            "groupSizeMin": null,
+            "groupSizeMax": null,
+            "priceAdult": 40,
+            "priceChild": 40,
+            "pricePrivate": null
+          },
+          {
+            "name": "Half Day Surf Lesson",
+            "duration": "3h",
+            "times": [
+              "Varies, check booking page"
+            ],
+            "groupSizeMin": null,
+            "groupSizeMax": null,
+            "priceAdult": 50,
+            "priceChild": 50,
+            "pricePrivate": null
+          },
+          {
+            "name": "Private Surf Lesson (1:1)",
+            "duration": "1.5h",
+            "times": [
+              "Varies, check booking page"
+            ],
+            "groupSizeMin": 1,
+            "groupSizeMax": 1,
+            "priceAdult": 80,
+            "priceChild": 80,
+            "pricePrivate": 80
+          },
+          {
+            "name": "Private Surf Lesson (Group)",
+            "duration": "2h",
+            "times": [
+              "Varies, check booking page"
+            ],
+            "groupSizeMin": 2,
+            "groupSizeMax": null,
+            "priceAdult": 60,
+            "priceChild": 60,
+            "pricePrivate": null
+          }
+        ],
+        "qualifications": [],
+        "equipmentIncluded": [
+          "surfboard",
+          "wetsuit"
+        ],
+        "whatToBring": [
+          "swimwear",
+          "towel",
+          "sunscreen"
+        ],
+        "minAge": 5,
+        "fitnessLevel": "moderate",
+        "seasons": {
+          "open": "Apr-Oct",
+          "peak": "Jun-Sep"
+        },
+        "meetingPoint": "Llangennith Beach car park",
+        "parkingInfo": "Pay and display car park available",
+        "bookingRequired": true,
+        "bookingUrl": "https://www.llangennithsurf.co.uk/book-now",
+        "cancellationPolicy": "48 hours notice required for cancellations."
+      }
+    },
+    {
+      "name": "Llangorse Multi Activity Centre",
+      "slug": "llangorse-multi-activity-centre",
+      "category": "activity_provider",
+      "website": "https://www.llangorse.com",
+      "email": "info@llangorse.com",
+      "phone": "01874 658271",
+      "address": "Llangorse, Brecon LD3 7UH",
+      "lat": 51.9405,
+      "lng": -3.2342,
+      "description": "Llangorse Multi Activity Centre, nestled in the heart of the Brecon Beacons, is an adventure hub perfect for families, groups, and individuals seeking an adrenaline rush or a relaxing escape into nature. With a diverse range of activities, from scaling indoor climbing walls to soaring through the air on zip lines and enjoying scenic horse riding trails, there's something for everyone. What sets Llangorse apart is their dedication to providing a safe and inclusive environment, making outdoor adventures accessible to all skill levels. The centre is ideally suited for families looking for a memorable day out, corporate teams seeking team-building experiences, or solo adventurers wanting to challenge themselves. The standout experience is undoubtedly the zip line course, offering breathtaking views of Llangorse Lake and the surrounding mountains.",
+      "tagline": "Adventure awaits in the heart of the Brecon Beacons!",
+      "googleRating": 4.5,
+      "reviewCount": 450,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Products-g186460-d15797570-Llangorse_Multi_Activity_Centre-Brecon_Beacons_National_Park_Wales.html",
+      "priceRange": "££",
+      "uniqueSellingPoint": "A one-stop-shop for outdoor adventure in the Brecon Beacons, offering a diverse range of activities for all abilities.",
+      "regions": [
+        "brecon-beacons"
+      ],
+      "activityTypes": [
+        "indoor-climbing",
+        "horse-riding",
+        "zip-lines",
+        "kayaking",
+        "paddle-boarding",
+        "canoeing",
+        "mountain-biking",
+        "rope-courses"
+      ],
+      "serviceTypes": [
+        "guided-tours",
+        "equipment-rental",
+        "lessons",
+        "group-activities"
+      ],
+      "trustSignals": {
+        "aala": true,
+        "yearsExperience": 30,
+        "certifications": [
+          "AALA Licensed"
+        ],
+        "awards": []
+      },
+      "serviceDetails": {
+        "sessions": [
+          {
+            "name": "Zip Line Adventure",
+            "duration": "2h",
+            "times": [
+              "10:00",
+              "14:00"
+            ],
+            "groupSizeMin": 4,
+            "groupSizeMax": 10,
+            "priceAdult": 45,
+            "priceChild": 40,
+            "pricePrivate": null
+          }
+        ],
+        "qualifications": [
+          "AALA Licensed"
+        ],
+        "equipmentIncluded": [
+          "harness",
+          "helmet"
+        ],
+        "whatToBring": [
+          "suitable clothing",
+          "closed-toe shoes"
+        ],
+        "minAge": 6,
+        "fitnessLevel": "moderate",
+        "seasons": {
+          "open": "Mar-Oct",
+          "peak": "Jun-Sep"
+        },
+        "meetingPoint": "Reception area",
+        "parkingInfo": "Free parking on site",
+        "bookingRequired": true,
+        "bookingUrl": "https://www.llangorse.com/activities/zip-lines/",
+        "cancellationPolicy": "24h notice for partial refund"
+      }
+    },
+    {
+      "name": "Llŷn Adventures",
+      "slug": "llyn-adventures",
+      "category": "activity_provider",
+      "website": "https://www.llynadventures.co.uk",
+      "email": null,
+      "phone": null,
+      "address": "Abersoch, Llŷn",
+      "lat": 52.8285,
+      "lng": -4.5077,
+      "description": "Llŷn Adventures are your go-to crew for exploring the stunning coastline of the Llŷn Peninsula. Based right in Abersoch, they offer sea kayaking, coasteering, and stand-up paddleboarding experiences tailored to all abilities. What sets them apart is their local knowledge and passion for the area. They know all the secret coves and hidden gems, ensuring you'll have an unforgettable adventure. Whether you're a family looking for a fun day out, a group of friends seeking an adrenaline rush, or a solo traveler wanting to connect with nature, Llŷn Adventures will create a bespoke experience that perfectly matches your needs. Their coasteering is a standout, scrambling over rocks, swimming in crystal-clear waters, and leaping into the sea.",
+      "tagline": "Unforgettable adventures on the Llŷn Peninsula.",
+      "googleRating": 5.0,
+      "reviewCount": 27,
+      "tripadvisorUrl": null,
+      "priceRange": "££",
+      "uniqueSellingPoint": "Llŷn Adventures offers personalized guided coastal experiences, tailored to all abilities, showcasing the beauty of the Llŷn Peninsula.",
+      "regions": [
+        "ll-n-peninsula"
+      ],
+      "activityTypes": [
+        "sea-kayaking",
+        "coasteering",
+        "sup"
+      ],
+      "serviceTypes": [
+        "guided-tours",
+        "lessons"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {
+        "seaKayaking": {
+          "sessions": [
+            {
+              "name": "Sea Kayaking Tour",
+              "duration": "3h",
+              "times": [
+                "09:30",
+                "14:00"
+              ],
+              "groupSizeMin": null,
+              "groupSizeMax": null,
+              "priceAdult": 50,
+              "priceChild": null,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [],
+          "equipmentIncluded": [
+            "kayak",
+            "paddle",
+            "buoyancy aid"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "sunscreen",
+            "water bottle"
+          ],
+          "minAge": null,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Abersoch Beach",
+          "parkingInfo": "Public car park nearby",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.llynadventures.co.uk",
+          "cancellationPolicy": null
+        },
+        "coasteering": {
+          "sessions": [
+            {
+              "name": "Coasteering Adventure",
+              "duration": "3h",
+              "times": [
+                "10:00",
+                "14:30"
+              ],
+              "groupSizeMin": null,
+              "groupSizeMax": null,
+              "priceAdult": 50,
+              "priceChild": null,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [],
+          "equipmentIncluded": [
+            "wetsuit",
+            "helmet",
+            "buoyancy aid"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "old trainers"
+          ],
+          "minAge": null,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Abersoch Beach",
+          "parkingInfo": "Public car park nearby",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.llynadventures.co.uk",
+          "cancellationPolicy": null
+        },
+        "sup": {
+          "sessions": [
+            {
+              "name": "Stand-Up Paddleboarding Session",
+              "duration": "2h",
+              "times": [
+                "11:00",
+                "15:30"
+              ],
+              "groupSizeMin": null,
+              "groupSizeMax": null,
+              "priceAdult": 40,
+              "priceChild": null,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [],
+          "equipmentIncluded": [
+            "paddleboard",
+            "paddle",
+            "buoyancy aid"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "sunscreen",
+            "water bottle"
+          ],
+          "minAge": null,
+          "fitnessLevel": "easy",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Abersoch Beach",
+          "parkingInfo": "Public car park nearby",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.llynadventures.co.uk",
+          "cancellationPolicy": null
+        }
+      }
+    },
+    {
+      "name": "Meadow Springs",
+      "slug": "meadow-springs",
+      "category": "activity_provider",
+      "website": "https://www.visitmidwales.co.uk",
+      "email": null,
+      "phone": null,
+      "address": "Trefeglwys, Caersws",
+      "lat": 52.5201,
+      "lng": -3.4659,
+      "description": "Meadow Springs offers watersports activities near Caersws, right in the heart of Mid Wales. While specific details on their offerings are limited online, they are known to provide stand-up paddleboarding experiences, allowing you to explore the serene waters of the area. If you're looking for a relaxed way to connect with nature and enjoy the peace and quiet of the Welsh countryside, Meadow Springs might be just the ticket. They cater to beginners and those wanting a gentler pace. Keep an eye out for possible guided tours to discover hidden gems and local wildlife. Ideal for families and small groups wanting to try watersports in a safe and scenic environment.",
+      "tagline": "Explore Mid Wales, one paddle at a time.",
+      "googleRating": null,
+      "reviewCount": 0,
+      "tripadvisorUrl": null,
+      "priceRange": "££",
+      "uniqueSellingPoint": "Meadow Springs offers a peaceful watersports experience in the heart of Mid Wales, perfect for beginners and families.",
+      "regions": [
+        "mid-wales"
+      ],
+      "activityTypes": [
+        "sup",
+        "watersports"
+      ],
+      "serviceTypes": [
+        "guided-tours",
+        "lessons"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {}
+    },
+    {
+      "name": "MountainXperience",
+      "slug": "mountainxperience",
+      "category": "activity_provider",
+      "website": "https://www.mountainxperience.uk",
+      "email": null,
+      "phone": null,
+      "address": "Llanberis, Gwynedd",
+      "lat": 53.125,
+      "lng": -4.127,
+      "description": "MountainXperience offers guided walking and scrambling adventures in Snowdonia, North Wales. They specialize in small group sizes, ensuring personalized attention and a focus on safety. Whether you're a seasoned hiker looking for a challenging scramble or a beginner eager to conquer Snowdon, they have a trip to suit your abilities. Their guides are highly experienced and passionate about the mountains, providing not only expert navigation but also insights into the local flora, fauna, and history. A memorable and safe experience is their priority. Perfect for families, friends, or solo adventurers looking for a unique way to explore the stunning landscapes of Snowdonia. Standout experiences include Crib Goch guided scrambles and tailored Snowdon summit walks.",
+      "tagline": "Explore Snowdonia's peaks with expert local guides.",
+      "googleRating": 5.0,
+      "reviewCount": 24,
+      "tripadvisorUrl": null,
+      "priceRange": "££",
+      "uniqueSellingPoint": "Expert-led guided walks and scrambles in Snowdonia with a focus on safety and personalized attention.",
+      "regions": [
+        "snowdonia"
+      ],
+      "activityTypes": [
+        "guided-snowdon-walks",
+        "scrambling"
+      ],
+      "serviceTypes": [],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {
+        "sessions": [],
+        "qualifications": [],
+        "equipmentIncluded": [],
+        "whatToBring": [],
+        "minAge": null,
+        "fitnessLevel": null,
+        "seasons": {
+          "open": null,
+          "peak": null
+        },
+        "meetingPoint": null,
+        "parkingInfo": null,
+        "bookingRequired": true,
+        "bookingUrl": "https://www.mountainxperience.uk",
+        "cancellationPolicy": null
+      }
+    },
+    {
+      "name": "One Planet Adventure (Llandegla)",
+      "slug": "one-planet-adventure-llandegla",
+      "category": "activity_provider",
+      "website": "https://www.oneplanetadventure.co.uk",
+      "email": null,
+      "phone": "01978 751656",
+      "address": "Llandegla, Wrexham, LL11 3AD",
+      "lat": 53.0769,
+      "lng": -3.2569,
+      "description": "One Planet Adventure at Llandegla Forest is a premier destination for mountain biking enthusiasts of all levels. Nestled in the heart of North Wales, they offer a fantastic network of trails catering to beginners right through to experienced riders looking for a challenge. What truly sets them apart is their commitment to creating a welcoming community atmosphere. With bike hire available, a well-stocked shop, and a fantastic cafe serving delicious food and drinks, it’s the perfect place to spend a day out in the forest. Families and groups will especially appreciate the inclusive environment and the variety of trails on offer, ensuring there's something for everyone to enjoy. Standout experiences include tackling the black-graded trails for adrenaline junkies or simply enjoying a leisurely ride through the scenic forest. ",
+      "tagline": "Ride, Refuel, Relax: Your mountain bike adventure starts here.",
+      "googleRating": 4.6,
+      "reviewCount": 1100,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g736936-d2139168-Reviews-One_Planet_Adventure_Llandegla-Llandegla_Denbighshire_North_Wales_Wales.html",
+      "priceRange": "£",
+      "uniqueSellingPoint": "One Planet Adventure offers a complete mountain biking experience with trails for all levels, bike hire, and on-site cafe in a stunning forest location.",
+      "regions": [
+        "mid-wales-north-wales"
+      ],
+      "activityTypes": [
+        "mountain-biking"
+      ],
+      "serviceTypes": [
+        "bike-hire",
+        "cafe",
+        "shop"
+      ],
+      "trustSignals": {
+        "aala": null,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {}
+    },
+    {
+      "name": "Outer Reef Surf School",
+      "slug": "outer-reef-surf-school",
+      "category": "activity_provider",
+      "website": "https://www.outerreefsurfschool.com",
+      "email": "info@outerreefsurfschool.com",
+      "phone": "07813 778127",
+      "address": "Broadhaven, Haverfordwest, Pembrokeshire, SA62 3JW",
+      "lat": 51.7343,
+      "lng": -5.2187,
+      "description": "Outer Reef Surf School, based in the heart of Broadhaven, Pembrokeshire, offers a fantastic range of water-based activities. They stand out due to their commitment to small group sizes, ensuring personal attention and a safe, enjoyable experience for everyone, from complete beginners to seasoned surfers. Their instructors are passionate about the ocean and dedicated to sharing their knowledge. Whether you're looking to catch your first wave, explore the stunning Pembrokeshire coastline through coasteering, or enjoy a peaceful paddle-boarding session, Outer Reef provides expert guidance and all the necessary equipment. Families, groups of friends, and solo adventurers will all find something to love here. Be sure to check out their sunset surf sessions for a truly unforgettable experience.",
+      "tagline": "Ride the waves, explore the coast!",
+      "googleRating": 5.0,
+      "reviewCount": 62,
+      "tripadvisorUrl": null,
+      "priceRange": "££",
+      "uniqueSellingPoint": "Small group sizes guarantee personalized instruction and a safe, fun experience for all skill levels.",
+      "regions": [
+        "pembrokeshire"
+      ],
+      "activityTypes": [
+        "surfing",
+        "coasteering",
+        "paddle-boarding"
+      ],
+      "serviceTypes": [
+        "lessons",
+        "guided tours",
+        "equipment rental"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {
+        "sessions": [],
+        "qualifications": [],
+        "equipmentIncluded": [
+          "wetsuit",
+          "surfboard",
+          "buoyancy aid (for coasteering/paddleboarding)"
+        ],
+        "whatToBring": [
+          "swimwear",
+          "towel",
+          "sunscreen",
+          "water bottle"
+        ],
+        "minAge": 8,
+        "fitnessLevel": "moderate",
+        "seasons": {
+          "open": "Apr-Oct",
+          "peak": "Jun-Sep"
+        },
+        "meetingPoint": "Broadhaven Beach, Pembrokeshire",
+        "parkingInfo": "Pay and display parking available at Broadhaven Beach car park",
+        "bookingRequired": true,
+        "bookingUrl": "https://www.outerreefsurfschool.com",
+        "cancellationPolicy": "Contact for cancellation policy"
+      }
+    },
+    {
+      "name": "Oxwich Watersports",
+      "slug": "oxwich-watersports",
+      "category": "activity_provider",
+      "website": "https://www.oxwichwatersports.co.uk",
+      "email": null,
+      "phone": null,
+      "address": "Oxwich Bay, Gower, SA3 1LS",
+      "lat": 51.5655,
+      "lng": -4.1397,
+      "description": "Oxwich Watersports offers a brilliant range of water-based activities right on the beautiful Oxwich Bay, one of Gower's most stunning locations. It's a great choice whether you're a family looking for a fun day out, a group of friends seeking adventure, or an individual keen to try something new. Their qualified instructors make sure everyone feels safe and supported, no matter their experience level. Stand-up paddleboarding is hugely popular here - imagine gliding across the calm bay with views of the surrounding cliffs. Kayaking offers a chance to explore the coastline at your own pace, while coasteering provides an adrenaline-fueled adventure, scrambling over rocks and leaping into the sea. What sets them apart is their focus on creating memorable experiences in a fantastic setting. They're perfect for those wanting to enjoy the beauty of the Gower from a unique perspective. ",
+      "tagline": "Adventure awaits on Gower's stunning Oxwich Bay.",
+      "googleRating": 4.8,
+      "reviewCount": 78,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g644022-d23860020-Reviews-Oxwich_Watersports-Oxwich_Gower_Peninsula_Wales.html",
+      "priceRange": "££",
+      "uniqueSellingPoint": "Unforgettable water sports adventures in the stunning setting of Oxwich Bay, Gower.",
+      "regions": [
+        "gower"
+      ],
+      "activityTypes": [
+        "sup",
+        "kayaking",
+        "coasteering"
+      ],
+      "serviceTypes": [
+        "lessons",
+        "guided-tours",
+        "equipment-rental"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {
+        "sessions": [],
+        "qualifications": [],
+        "equipmentIncluded": [],
+        "whatToBring": [],
+        "minAge": null,
+        "fitnessLevel": null,
+        "seasons": {
+          "open": null,
+          "peak": null
+        },
+        "meetingPoint": null,
+        "parkingInfo": null,
+        "bookingRequired": null,
+        "bookingUrl": null,
+        "cancellationPolicy": null
+      }
+    },
+    {
+      "name": "Preseli Venture",
+      "slug": "preseli-venture",
+      "category": "activity_provider",
+      "website": "https://www.preseliventure.co.uk",
+      "email": "info@preseliventure.co.uk",
+      "phone": "01348 837709",
+      "address": "Parcynole Fach, Mathry, Haverfordwest SA62 5HN",
+      "lat": 51.9574,
+      "lng": -5.1775,
+      "description": "Preseli Venture offers exhilarating coastal adventures in the stunning Pembrokeshire Coast National Park. Run by a passionate team, they specialise in coasteering, kayaking, surfing and unique coastal experiences. Forget overcrowded beaches, they take you to secluded coves and hidden gems, showcasing the best of the Welsh coastline. They are known for their commitment to sustainable tourism and creating memorable experiences for all ages and abilities. If you’re looking for an adrenaline rush or a relaxing exploration of the coast, Preseli Venture will tailor an unforgettable adventure for you. Perfect for families, groups of friends, and solo travellers seeking an authentic Welsh experience.",
+      "tagline": "Coastal adventures in the heart of Pembrokeshire.",
+      "googleRating": 4.8,
+      "reviewCount": 174,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g186457-d1958220-Reviews-Preseli_Venture-Haverfordwest_Pembrokeshire_Wales.html",
+      "priceRange": "££",
+      "uniqueSellingPoint": "Preseli Venture offers unique, sustainable, and expertly-led coastal adventures in Pembrokeshire's hidden gems.",
+      "regions": [
+        "pembrokeshire"
+      ],
+      "activityTypes": [
+        "coasteering",
+        "surfing",
+        "kayaking",
+        "boat-trips",
+        "wild-swimming"
+      ],
+      "serviceTypes": [
+        "guided-tours",
+        "activity-instruction",
+        "equipment-rental"
+      ],
+      "trustSignals": {
+        "aala": true,
+        "yearsExperience": 35,
+        "certifications": [
+          "AALA Licensed",
+          "BCU",
+          "Mountain Training"
+        ],
+        "awards": []
+      },
+      "serviceDetails": {
+        "coasteering": {
+          "sessions": [
+            {
+              "name": "Coasteering Adventure",
+              "duration": "3h",
+              "times": [
+                "10:00",
+                "14:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 12,
+              "priceAdult": 65,
+              "priceChild": 65,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "AALA Licensed"
+          ],
+          "equipmentIncluded": [
+            "wetsuit",
+            "helmet",
+            "buoyancy aid"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "old trainers"
+          ],
+          "minAge": 8,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Parcynole Fach, Mathry, Haverfordwest SA62 5HN",
+          "parkingInfo": "Free parking on site",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.preseliventure.co.uk/coasteering/",
+          "cancellationPolicy": "48h notice for full refund"
+        },
+        "kayaking": {
+          "sessions": [
+            {
+              "name": "Sea Kayaking Adventure",
+              "duration": "3h",
+              "times": [
+                "09:30",
+                "14:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 10,
+              "priceAdult": 65,
+              "priceChild": 65,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "BCU Qualified Instructors"
+          ],
+          "equipmentIncluded": [
+            "kayak",
+            "paddle",
+            "buoyancy aid",
+            "wetsuit (if needed)"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "sunscreen",
+            "hat",
+            "water bottle"
+          ],
+          "minAge": 8,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Parcynole Fach, Mathry, Haverfordwest SA62 5HN",
+          "parkingInfo": "Free parking on site",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.preseliventure.co.uk/sea-kayaking/",
+          "cancellationPolicy": "48h notice for full refund"
+        },
+        "surfing": {
+          "sessions": [
+            {
+              "name": "Surfing Lesson",
+              "duration": "2h",
+              "times": [
+                "10:00",
+                "14:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 10,
+              "priceAdult": 55,
+              "priceChild": 55,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "Surfing GB qualified instructors"
+          ],
+          "equipmentIncluded": [
+            "surfboard",
+            "wetsuit"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "sunscreen"
+          ],
+          "minAge": 8,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Whitesands Beach or Newgale",
+          "parkingInfo": "Pay and Display parking at beach locations",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.preseliventure.co.uk/surfing/",
+          "cancellationPolicy": "48h notice for full refund"
+        },
+        "wild-swimming": {
+          "sessions": [
+            {
+              "name": "Wild Swimming Experience",
+              "duration": "2h",
+              "times": [
+                "10:00",
+                "14:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 10,
+              "priceAdult": 45,
+              "priceChild": 45,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "Experienced guides"
+          ],
+          "equipmentIncluded": [
+            "wetsuit (optional)",
+            "buoyancy aid"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "warm clothes",
+            "water bottle"
+          ],
+          "minAge": 8,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Specific location confirmed on booking",
+          "parkingInfo": "Varies depending on location",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.preseliventure.co.uk/wild-swimming/",
+          "cancellationPolicy": "48h notice for full refund"
+        }
+      }
+    },
+    {
+      "name": "Pro Kitesurfing",
+      "slug": "pro-kitesurfing",
+      "category": "activity_provider",
+      "website": "https://www.prokitesurfing.co.uk",
+      "email": "info@prokitesurfing.co.uk",
+      "phone": "07999026080",
+      "address": "Newborough Beach, Anglesey, LL61 6AX",
+      "lat": 53.1627,
+      "lng": -4.4015,
+      "description": "Pro Kitesurfing offers kitesurfing lessons on the stunning Newborough Beach in Anglesey. Newborough is well known for its beautiful scenery and ideal conditions for kitesurfing, with consistent winds and shallow waters that are perfect for learning. They cater to all levels, from complete beginners to experienced riders looking to improve their skills. Lessons are taught by experienced and qualified instructors who are passionate about the sport and dedicated to providing a safe and enjoyable learning experience. Pro Kitesurfing is a small independent school focused on individual tuition, and its the perfect place to start your kitesurfing journey on Anglesey.",
+      "tagline": "Learn to kitesurf on Anglesey's stunning Newborough Beach.",
+      "googleRating": 5.0,
+      "reviewCount": 25,
+      "tripadvisorUrl": null,
+      "priceRange": "£££",
+      "uniqueSellingPoint": "Learn kitesurfing with experienced instructors on the stunning and safe shores of Newborough Beach.",
+      "regions": [
+        "anglesey"
+      ],
+      "activityTypes": [
+        "kitesurfing-lessons"
+      ],
+      "serviceTypes": [
+        "lessons",
+        "equipment-rental"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {
+        "sessions": [
+          {
+            "name": "Beginner Kitesurfing Lesson",
+            "duration": "3h",
+            "times": [
+              "09:30",
+              "13:30"
+            ],
+            "groupSizeMin": 1,
+            "groupSizeMax": 4,
+            "priceAdult": 175,
+            "priceChild": null,
+            "pricePrivate": 350
+          },
+          {
+            "name": "Intermediate Kitesurfing Lesson",
+            "duration": "3h",
+            "times": [
+              "09:30",
+              "13:30"
+            ],
+            "groupSizeMin": 1,
+            "groupSizeMax": 4,
+            "priceAdult": 175,
+            "priceChild": null,
+            "pricePrivate": 350
+          },
+          {
+            "name": "Refresher Kitesurfing Lesson",
+            "duration": "2h",
+            "times": [
+              "09:30",
+              "13:30"
+            ],
+            "groupSizeMin": 1,
+            "groupSizeMax": 4,
+            "priceAdult": 120,
+            "priceChild": null,
+            "pricePrivate": 240
+          }
+        ],
+        "qualifications": [],
+        "equipmentIncluded": [
+          "Kitesurfing kite",
+          "harness",
+          "board",
+          "wetsuit",
+          "buoyancy aid",
+          "helmet"
+        ],
+        "whatToBring": [
+          "swimwear",
+          "towel",
+          "sunscreen",
+          "water",
+          "snacks"
+        ],
+        "minAge": 12,
+        "fitnessLevel": "moderate",
+        "seasons": {
+          "open": "Apr-Oct",
+          "peak": "Jun-Sep"
+        },
+        "meetingPoint": "Newborough Beach Car Park, LL61 6AX",
+        "parkingInfo": "Paid parking available at Newborough Beach car park",
+        "bookingRequired": true,
+        "bookingUrl": "https://www.prokitesurfing.co.uk/book-online",
+        "cancellationPolicy": "48 hours notice for full refund"
+      }
+    },
+    {
+      "name": "Quest Adventure",
+      "slug": "quest-adventure",
+      "category": "activity_provider",
+      "website": "https://www.questadventure.co.uk",
+      "email": null,
+      "phone": null,
+      "address": "Cardiff/Swansea, South Wales",
+      "lat": 51.4815,
+      "lng": -3.1791,
+      "description": "Quest Adventure offers thrilling outdoor activities across South Wales, primarily around Cardiff and Swansea. They specialize in coasteering adventures along the Gower coastline and offer multi-activity days to suit all levels of experience. They are known for their passionate instructors, who prioritise safety while ensuring everyone has a memorable experience. Quest Adventure is perfect for families, groups of friends, and corporate teams seeking to explore the Welsh coastline in a fun and challenging way. Their flexible booking options and tailored itineraries ensure a truly personalised adventure. A standout experience is their Gower coasteering, where you'll explore hidden coves, jump into crystal-clear waters, and navigate rocky cliffs under expert guidance.",
+      "tagline": "Adventure awaits, South Wales style!",
+      "googleRating": 4.7,
+      "reviewCount": 65,
+      "tripadvisorUrl": null,
+      "priceRange": "££",
+      "uniqueSellingPoint": "Quest Adventure provides bespoke outdoor adventures in South Wales, tailored to create unforgettable experiences.",
+      "regions": [
+        "south-wales",
+        "gower"
+      ],
+      "activityTypes": [
+        "coasteering",
+        "multi-activities"
+      ],
+      "serviceTypes": [],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {}
+    },
+    {
+      "name": "Rip N Rock",
+      "slug": "rip-n-rock",
+      "category": "activity_provider",
+      "website": "https://www.ripnrock.co.uk",
+      "email": "info@ripnrock.co.uk",
+      "phone": "07967 322 455",
+      "address": "Unit 6, Kingsbridge Terrace, Swansea, SA1 8PP",
+      "lat": 51.6235,
+      "lng": -3.9436,
+      "description": "Rip N Rock are a well-established Swansea-based adventure company offering thrilling coasteering, surfing, and climbing experiences primarily on the Gower Peninsula. They stand out with their passionate instructors who tailor each session to suit the group's ability, ensuring everyone from complete beginners to seasoned adventurers has a fantastic time. Their coasteering trips are particularly special, exploring hidden coves and jumping into crystal-clear waters. Rip N Rock is perfect for families, groups of friends, and corporate teams looking for an unforgettable outdoor adventure. They are known for their small group sizes, guaranteeing a personalized and safe experience.",
+      "tagline": "Adventure awaits: Coasteering, surfing & climbing Gower!",
+      "googleRating": 5.0,
+      "reviewCount": 43,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g186460-d13504446-Reviews-Rip_N_Rock_Adventure_Activities-Swansea_Swansea_County_Wales.html",
+      "priceRange": "££",
+      "uniqueSellingPoint": "Rip N Rock provide personalized, small group adventures in coasteering, surfing and climbing for an unforgettable Gower experience.",
+      "regions": [
+        "gower",
+        "swansea"
+      ],
+      "activityTypes": [
+        "coasteering",
+        "surfing",
+        "climbing"
+      ],
+      "serviceTypes": [
+        "guided-tours",
+        "instruction",
+        "equipment-rental"
+      ],
+      "trustSignals": {
+        "aala": true,
+        "yearsExperience": null,
+        "certifications": [
+          "AALA Licensed",
+          "Mountain Training"
+        ],
+        "awards": []
+      },
+      "serviceDetails": {
+        "sessions": [
+          {
+            "name": "Coasteering Session",
+            "duration": "3h",
+            "times": [
+              "09:30",
+              "14:00"
+            ],
+            "groupSizeMin": 4,
+            "groupSizeMax": 10,
+            "priceAdult": 55,
+            "priceChild": 45,
+            "pricePrivate": null
+          },
+          {
+            "name": "Surfing Lesson",
+            "duration": "2h",
+            "times": [
+              "10:00",
+              "15:00"
+            ],
+            "groupSizeMin": 4,
+            "groupSizeMax": 10,
+            "priceAdult": 45,
+            "priceChild": 35,
+            "pricePrivate": null
+          },
+          {
+            "name": "Climbing Session",
+            "duration": "3h",
+            "times": [
+              "10:00",
+              "14:00"
+            ],
+            "groupSizeMin": 4,
+            "groupSizeMax": 8,
+            "priceAdult": 60,
+            "priceChild": 50,
+            "pricePrivate": null
+          }
+        ],
+        "qualifications": [
+          "AALA Licensed",
+          "Mountain Training"
+        ],
+        "equipmentIncluded": [
+          "wetsuit",
+          "helmet",
+          "buoyancy aid",
+          "surfboard",
+          "climbing shoes",
+          "harness"
+        ],
+        "whatToBring": [
+          "swimwear",
+          "towel",
+          "old trainers (for coasteering)",
+          "sunscreen",
+          "water"
+        ],
+        "minAge": 8,
+        "fitnessLevel": "moderate",
+        "seasons": {
+          "open": "Apr-Oct",
+          "peak": "Jun-Sep"
+        },
+        "meetingPoint": "Bracelet Bay Car Park, Swansea",
+        "parkingInfo": "Pay and display parking available",
+        "bookingRequired": true,
+        "bookingUrl": "https://www.ripnrock.co.uk",
+        "cancellationPolicy": "48h notice for full refund"
+      }
+    },
+    {
+      "name": "Sealyham Activity Centre",
+      "slug": "sealyham-activity-centre",
+      "category": "activity_provider",
+      "website": "https://www.sealyham.com",
+      "email": null,
+      "phone": null,
+      "address": "Sealyham, Haverfordwest",
+      "lat": 51.8377,
+      "lng": -5.1794,
+      "description": "Sealyham Activity Centre provides a fantastic base for multi-activity adventures in Pembrokeshire. Tucked away near the coast, this place is all about getting outdoors and having fun, offering residential stays perfect for school groups, families, and anyone looking for a proper adventure holiday. What sets them apart is their ability to tailor programmes to suit different needs and abilities, from complete beginners to seasoned thrill-seekers. Think exhilarating coasteering along the rugged coastline, scrambling through scenic gorges, or learning bushcraft skills in the woods. For a group looking for immersive, instructor-led experiences in a stunning location, Sealyham delivers a memorable and exciting break.",
+      "tagline": "Your adventure starts here.",
+      "googleRating": 4.6,
+      "reviewCount": 41,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g186456-d6797665-Reviews-Sealyham_Activity_Centre-Haverfordwest_Pembrokeshire_Wales.html",
+      "priceRange": "££",
+      "uniqueSellingPoint": "A Pembrokeshire adventure hub offering tailored multi-activity residential stays.",
+      "regions": [
+        "pembrokeshire"
+      ],
+      "activityTypes": [
+        "multi-activity",
+        "coasteering",
+        "bushcraft",
+        "rock-climbing",
+        "kayaking",
+        "gorge-walking"
+      ],
+      "serviceTypes": [
+        "activity-provider",
+        "residential"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {}
+    },
+    {
+      "name": "Tenby Adventure",
+      "slug": "tenby-adventure",
+      "category": "activity_provider",
+      "website": "https://www.visitpembrokeshire.com",
+      "email": null,
+      "phone": null,
+      "address": "Tenby, Pembrokeshire",
+      "lat": 51.6743,
+      "lng": -4.7021,
+      "description": "Tenby Adventure offers exhilarating coasteering and sea kayaking experiences along the stunning Pembrokeshire coastline. While their official website redirects to Visit Pembrokeshire, you can find numerous providers in the area offering those activities. It seems likely that this is an umbrella brand. Whoever you book with will provide the gear and expert guidance needed to explore hidden coves, jump off rocky cliffs, and navigate the clear waters. They're a great option for families, groups of friends, and adventure seekers looking to immerse themselves in the natural beauty of the Welsh coast. A coasteering session at sunset is truly unforgettable, or paddle through the iconic arches in a kayak. Perfect for those wanting to get active and create lasting memories.",
+      "tagline": "Explore Pembrokeshire's coast with thrilling adventures.",
+      "googleRating": null,
+      "reviewCount": null,
+      "tripadvisorUrl": null,
+      "priceRange": "££",
+      "uniqueSellingPoint": "Experience Pembrokeshire's coastline up close with guided coasteering and sea kayaking adventures.",
+      "regions": [
+        "pembrokeshire"
+      ],
+      "activityTypes": [
+        "coasteering",
+        "sea-kayaking"
+      ],
+      "serviceTypes": [
+        "guided-tours",
+        "outdoor-activities"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {}
+    }
+  ],
+  "activities": [
+    {
+      "operatorSlug": "aberadventures",
+      "name": "Surfing Lessons",
+      "slug": "surfing-lessons",
+      "activityType": "surfing",
+      "region": "mid-wales",
+      "description": "Learn to surf with expert instruction on Borth's sandy beach. Suitable for complete beginners and improvers, covering the basics of paddling, popping up, and riding waves.",
+      "priceFrom": 35,
+      "priceTo": 45,
+      "duration": "2 hours",
+      "difficulty": "easy",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.aberadventures.co.uk/"
+    },
+    {
+      "operatorSlug": "aberadventures",
+      "name": "SUP Lessons",
+      "slug": "sup-lessons",
+      "activityType": "sup",
+      "region": "mid-wales",
+      "description": "Discover the joy of stand-up paddleboarding with a beginner-friendly lesson. Learn essential techniques and enjoy a relaxing paddle along the coastline.",
+      "priceFrom": 30,
+      "priceTo": 40,
+      "duration": "1.5 hours",
+      "difficulty": "easy",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.aberadventures.co.uk/"
+    },
+    {
+      "operatorSlug": "aberadventures",
+      "name": "Kayaking Tours",
+      "slug": "kayaking-tours",
+      "activityType": "kayaking",
+      "region": "mid-wales",
+      "description": "Explore the stunning coastline of Borth from a unique perspective on a guided kayak tour. Paddle along the shores, discover hidden coves, and enjoy the beautiful scenery.",
+      "priceFrom": 40,
+      "priceTo": 50,
+      "duration": "2 hours",
+      "difficulty": "moderate",
+      "minAge": 12,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.aberadventures.co.uk/"
+    },
+    {
+      "operatorSlug": "aberadventures",
+      "name": "Surfboard Rental",
+      "slug": "surfboard-rental",
+      "activityType": "surfing",
+      "region": "mid-wales",
+      "description": "Rent a surfboard and hit the waves at Borth beach. Perfect for experienced surfers looking to enjoy the local surf conditions.",
+      "priceFrom": 15,
+      "priceTo": 25,
+      "duration": "Half day or full day",
+      "difficulty": "advanced",
+      "minAge": 16,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.aberadventures.co.uk/"
+    },
+    {
+      "operatorSlug": "aberadventures",
+      "name": "SUP Rental",
+      "slug": "sup-rental",
+      "activityType": "sup",
+      "region": "mid-wales",
+      "description": "Rent a stand-up paddleboard and explore the coastline at your own pace. Suitable for experienced paddlers.",
+      "priceFrom": 15,
+      "priceTo": 25,
+      "duration": "Half day or full day",
+      "difficulty": "moderate",
+      "minAge": 16,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.aberadventures.co.uk/"
+    },
+    {
+      "operatorSlug": "aberadventures",
+      "name": "Kayak Rental",
+      "slug": "kayak-rental",
+      "activityType": "kayaking",
+      "region": "mid-wales",
+      "description": "Rent a kayak and explore the coastline and River Leri at your own pace.",
+      "priceFrom": 15,
+      "priceTo": 25,
+      "duration": "Half day or full day",
+      "difficulty": "moderate",
+      "minAge": 16,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.aberadventures.co.uk/"
+    },
+    {
+      "operatorSlug": "abersoch-sailing-school",
+      "name": "RYA Start Sailing",
+      "slug": "rya-start-sailing",
+      "activityType": "sailing-courses",
+      "region": "ll-n-peninsula",
+      "description": "This two-day course is the perfect introduction to sailing. Learn the basics of boat handling, sailing techniques, and safety procedures in a fun and supportive environment. Get your first taste of freedom on the water!",
+      "priceFrom": 275,
+      "priceTo": null,
+      "duration": "2 days",
+      "difficulty": "beginner",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.abersochsailingschool.co.uk"
+    },
+    {
+      "operatorSlug": "abersoch-sailing-school",
+      "name": "RYA Basic Skills",
+      "slug": "rya-basic-skills",
+      "activityType": "sailing-courses",
+      "region": "ll-n-peninsula",
+      "description": "Build on your Start Sailing knowledge with this essential next step. Master more advanced sailing techniques, including points of sail, reefing, and man overboard recovery. Gain the confidence to sail independently.",
+      "priceFrom": 275,
+      "priceTo": null,
+      "duration": "2 days",
+      "difficulty": "intermediate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.abersochsailingschool.co.uk"
+    },
+    {
+      "operatorSlug": "abersoch-sailing-school",
+      "name": "RYA Day Sailing",
+      "slug": "rya-day-sailing",
+      "activityType": "sailing-courses",
+      "region": "ll-n-peninsula",
+      "description": "Take your skills to the next level with this comprehensive course. Learn about passage planning, coastal navigation, and boat management for longer trips. Explore the beautiful coastline of Cardigan Bay with confidence.",
+      "priceFrom": 275,
+      "priceTo": null,
+      "duration": "2 days",
+      "difficulty": "advanced",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.abersochsailingschool.co.uk"
+    },
+    {
+      "operatorSlug": "abersoch-sailing-school",
+      "name": "RYA Powerboat Level 2",
+      "slug": "rya-powerboat-level-2",
+      "activityType": "powerboating",
+      "region": "ll-n-peninsula",
+      "description": "Gain the skills and knowledge to safely operate a powerboat with this internationally recognized qualification. This course covers boat handling, navigation, safety procedures, and basic engine maintenance. Perfect for anyone wanting to skipper a powerboat.",
+      "priceFrom": 300,
+      "priceTo": null,
+      "duration": "2 days",
+      "difficulty": "beginner",
+      "minAge": 12,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.abersochsailingschool.co.uk"
+    },
+    {
+      "operatorSlug": "abersoch-watersports",
+      "name": "Jet Ski Hire",
+      "slug": "jet-ski-hire",
+      "activityType": "jet-ski",
+      "region": "ll-n-peninsula",
+      "description": "Experience the thrill of riding a jet ski across the beautiful waters of Abersoch. Enjoy the freedom to explore the coastline at your own pace, feeling the wind in your hair and the spray on your face.",
+      "priceFrom": 120,
+      "priceTo": 240,
+      "duration": "30-60 minutes",
+      "difficulty": "moderate",
+      "minAge": 16,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.abersochwatersports.co.uk"
+    },
+    {
+      "operatorSlug": "abersoch-watersports",
+      "name": "Powerboat Tours",
+      "slug": "powerboat-tours",
+      "activityType": "powerboat-tours",
+      "region": "ll-n-peninsula",
+      "description": "Join a guided powerboat tour and discover the hidden gems of the Llŷn Peninsula. Explore secluded coves, admire the stunning scenery, and learn about the local wildlife from experienced guides.",
+      "priceFrom": 45,
+      "priceTo": 60,
+      "duration": "30-60 minutes",
+      "difficulty": "easy",
+      "minAge": 4,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.abersochwatersports.co.uk"
+    },
+    {
+      "operatorSlug": "activity-pembrokeshire",
+      "name": "Coasteering",
+      "slug": "coasteering",
+      "activityType": "coasteering",
+      "region": "pembrokeshire",
+      "description": "Experience the ultimate coastal adventure with a coasteering session. Explore the rugged coastline, swim through caves, and leap from rocks into the sea under the guidance of experienced instructors.",
+      "priceFrom": 50,
+      "priceTo": 55,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.activitypembrokeshire.wales/coasteering"
+    },
+    {
+      "operatorSlug": "activity-pembrokeshire",
+      "name": "Sea Kayaking",
+      "slug": "sea-kayaking",
+      "activityType": "sea-kayaking",
+      "region": "pembrokeshire",
+      "description": "Paddle along the stunning Pembrokeshire coastline and discover hidden coves and beaches. Their guided sea kayaking tours are suitable for all skill levels, offering a unique perspective of the area.",
+      "priceFrom": 55,
+      "priceTo": 60,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.activitypembrokeshire.wales/sea-kayaking"
+    },
+    {
+      "operatorSlug": "adventures-wales",
+      "name": "Coasteering",
+      "slug": "coasteering",
+      "activityType": "coasteering",
+      "region": "south-wales",
+      "description": "Explore the rugged Glamorgan coastline with Adventures Wales! Coasteering involves traversing the intertidal zone, scrambling over rocks, swimming in the sea, and cliff jumping. A truly exhilarating way to experience the Welsh coastline.",
+      "priceFrom": 55,
+      "priceTo": 55,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.adventureswales.co.uk/coasteering"
+    },
+    {
+      "operatorSlug": "adventures-wales",
+      "name": "Gorge Walking",
+      "slug": "gorge-walking",
+      "activityType": "gorge-walking",
+      "region": "brecon-beacons",
+      "description": "Discover the hidden beauty of the Brecon Beacons with a gorge walking adventure. Navigate through stunning river gorges, scramble over rocks, swim in natural pools, and slide down waterfalls. A thrilling and refreshing experience in the heart of Wales.",
+      "priceFrom": 55,
+      "priceTo": 55,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.adventureswales.co.uk/gorge-walking"
+    },
+    {
+      "operatorSlug": "anglesey-adventures",
+      "name": "Coasteering",
+      "slug": "coasteering",
+      "activityType": "coasteering",
+      "region": "anglesey",
+      "description": "Experience the ultimate coastal adventure with coasteering. Scramble along the rocks, explore hidden caves, and leap into the refreshing waters of the Irish Sea. Suitable for adventurous individuals and groups.",
+      "priceFrom": 45,
+      "priceTo": 45,
+      "duration": "2.5 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.angleseyadventures.com"
+    },
+    {
+      "operatorSlug": "anglesey-adventures",
+      "name": "Sea Kayaking",
+      "slug": "sea-kayaking",
+      "activityType": "sea-kayaking",
+      "region": "anglesey",
+      "description": "Paddle along the stunning Anglesey coastline and discover hidden coves, sandy beaches, and abundant wildlife. Guided tours cater to all skill levels, from beginners to experienced kayakers. A fantastic way to explore the island's natural beauty.",
+      "priceFrom": 45,
+      "priceTo": 45,
+      "duration": "2.5 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.angleseyadventures.com"
+    },
+    {
+      "operatorSlug": "antur-stiniog",
+      "name": "Uplift Pass",
+      "slug": "uplift-pass",
+      "activityType": "downhill-mountain-biking",
+      "region": "snowdonia",
+      "description": "Full-day uplift pass allowing unlimited access to all downhill mountain biking trails. Ride the trails as many times as you like throughout the day.",
+      "priceFrom": 45,
+      "priceTo": 45,
+      "duration": "Full Day",
+      "difficulty": "variable",
+      "minAge": null,
+      "season": "Mar-Nov",
+      "bookingUrl": "https://www.anturstiniog.com/booking"
+    },
+    {
+      "operatorSlug": "antur-stiniog",
+      "name": "Bike Hire",
+      "slug": "bike-hire",
+      "activityType": "bike-hire",
+      "region": "snowdonia",
+      "description": "Rent a high-quality mountain bike for a day of riding on the Antur Stiniog trails. Options include full suspension and hardtail bikes.",
+      "priceFrom": 65,
+      "priceTo": 110,
+      "duration": "Full Day",
+      "difficulty": "variable",
+      "minAge": null,
+      "season": "Mar-Nov",
+      "bookingUrl": "https://www.anturstiniog.com/booking"
+    },
+    {
+      "operatorSlug": "black-mountain-adventure",
+      "name": "Gorge Walking",
+      "slug": "gorge-walking",
+      "activityType": "gorge-walking",
+      "region": "brecon-beacons",
+      "description": "Explore the Brecon Beacons' stunning gorges. Scramble over rocks, swim in natural pools, and conquer small waterfalls. A wet and wild adventure suitable for most fitness levels.",
+      "priceFrom": 55,
+      "priceTo": 55,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.visitmidwales.co.uk"
+    },
+    {
+      "operatorSlug": "black-mountain-adventure",
+      "name": "Caving",
+      "slug": "caving",
+      "activityType": "caving",
+      "region": "brecon-beacons",
+      "description": "Delve into the depths of the Brecon Beacons' cave systems. Discover underground rivers, rock formations, and the fascinating world beneath our feet. Experience a thrilling adventure for all ages.",
+      "priceFrom": 60,
+      "priceTo": 60,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.visitmidwales.co.uk"
+    },
+    {
+      "operatorSlug": "black-mountain-adventure",
+      "name": "Stand Up Paddleboarding (SUP)",
+      "slug": "stand-up-paddleboarding",
+      "activityType": "sup",
+      "region": "brecon-beacons",
+      "description": "Enjoy the tranquility of stand-up paddleboarding on the Brecon Beacons' lakes and rivers. Learn the basics, improve your skills, and explore the beautiful scenery from a unique perspective. Suitable for beginners and experienced paddlers alike.",
+      "priceFrom": 45,
+      "priceTo": 45,
+      "duration": "2 hours",
+      "difficulty": "easy",
+      "minAge": 10,
+      "season": "May-Sep",
+      "bookingUrl": "https://www.visitmidwales.co.uk"
+    },
+    {
+      "operatorSlug": "coed-y-brenin-nrw",
+      "name": "Mountain Biking Trails",
+      "slug": "mountain-biking-trails",
+      "activityType": "mountain-biking",
+      "region": "snowdonia",
+      "description": "Coed y Brenin is renowned for its extensive network of mountain biking trails, catering to all skill levels from beginners to expert riders. Choose from green, blue, red, and black graded trails for a thrilling experience.",
+      "priceFrom": 0,
+      "priceTo": 0,
+      "duration": "Varies",
+      "difficulty": "easy-expert",
+      "minAge": 0,
+      "season": "Year-round",
+      "bookingUrl": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/coed-y-brenin-forest-park/?lang=en"
+    },
+    {
+      "operatorSlug": "coed-y-brenin-nrw",
+      "name": "Walking Trails",
+      "slug": "walking-trails",
+      "activityType": "walking",
+      "region": "snowdonia",
+      "description": "Explore the beautiful Coed y Brenin Forest Park on foot with a variety of walking trails to suit all abilities. Enjoy scenic riverside walks, forest paths, and breathtaking views of the surrounding mountains.",
+      "priceFrom": 0,
+      "priceTo": 0,
+      "duration": "Varies",
+      "difficulty": "easy-moderate",
+      "minAge": 0,
+      "season": "Year-round",
+      "bookingUrl": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/coed-y-brenin-forest-park/?lang=en"
+    },
+    {
+      "operatorSlug": "coed-y-brenin-nrw",
+      "name": "Trail Running Routes",
+      "slug": "trail-running-routes",
+      "activityType": "trail-running",
+      "region": "snowdonia",
+      "description": "Challenge yourself with a variety of trail running routes through Coed y Brenin Forest Park. Experience the thrill of running through the forest, with trails to suit all fitness levels.",
+      "priceFrom": 0,
+      "priceTo": 0,
+      "duration": "Varies",
+      "difficulty": "moderate-hard",
+      "minAge": 0,
+      "season": "Year-round",
+      "bookingUrl": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/coed-y-brenin-forest-park/?lang=en"
+    },
+    {
+      "operatorSlug": "funsport-rhosneigr",
+      "name": "Kitesurfing Lessons",
+      "slug": "kitesurfing-lessons",
+      "activityType": "kitesurfing",
+      "region": "anglesey",
+      "description": "Learn to kitesurf with experienced instructors in the ideal conditions of Rhosneigr. Suitable for complete beginners through to advanced riders looking to refine their skills.",
+      "priceFrom": 120,
+      "priceTo": 300,
+      "duration": "2-3 hours",
+      "difficulty": "moderate",
+      "minAge": 10,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.funsportonline.co.uk/lessons"
+    },
+    {
+      "operatorSlug": "funsport-rhosneigr",
+      "name": "Windsurfing Lessons",
+      "slug": "windsurfing-lessons",
+      "activityType": "windsurfing",
+      "region": "anglesey",
+      "description": "Discover the thrill of windsurfing with expert tuition. Whether you're a novice or seasoned pro, Funsport's windsurfing lessons will help you improve.",
+      "priceFrom": 100,
+      "priceTo": 250,
+      "duration": "2-3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.funsportonline.co.uk/lessons"
+    },
+    {
+      "operatorSlug": "funsport-rhosneigr",
+      "name": "Kitesurfing Equipment Hire",
+      "slug": "kitesurfing-equipment-hire",
+      "activityType": "kitesurfing",
+      "region": "anglesey",
+      "description": "Hire top-quality kitesurfing equipment from Funsport and hit the waves. They stock a wide range of kites and boards to suit all skill levels and wind conditions.",
+      "priceFrom": 50,
+      "priceTo": 100,
+      "duration": "Half day/Full day",
+      "difficulty": "advanced",
+      "minAge": 16,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.funsportonline.co.uk/hire"
+    },
+    {
+      "operatorSlug": "funsport-rhosneigr",
+      "name": "Windsurfing Equipment Hire",
+      "slug": "windsurfing-equipment-hire",
+      "activityType": "windsurfing",
+      "region": "anglesey",
+      "description": "Rent windsurfing gear from Funsport and enjoy the fantastic windsurfing conditions at Rhosneigr. They offer a variety of boards and sails for different abilities.",
+      "priceFrom": 40,
+      "priceTo": 80,
+      "duration": "Half day/Full day",
+      "difficulty": "advanced",
+      "minAge": 14,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.funsportonline.co.uk/hire"
+    },
+    {
+      "operatorSlug": "gecko-surf",
+      "name": "Surf Lesson",
+      "slug": "surf-lesson",
+      "activityType": "surfing",
+      "region": "anglesey",
+      "description": "Learn to surf with experienced instructors at Rhosneigr beach. Suitable for all abilities, from beginners to improvers. Includes all equipment.",
+      "priceFrom": 45,
+      "priceTo": 90,
+      "duration": "2 hours",
+      "difficulty": "easy",
+      "minAge": 5,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.geckosurf.co.uk/surf-lessons/"
+    },
+    {
+      "operatorSlug": "gecko-surf",
+      "name": "Surfboard Hire",
+      "slug": "surfboard-hire",
+      "activityType": "surfing",
+      "region": "anglesey",
+      "description": "Hire a surfboard and hit the waves at your own pace. A wide range of boards are available to suit all abilities. Wetsuit hire also available.",
+      "priceFrom": 20,
+      "priceTo": 20,
+      "duration": "2 hours",
+      "difficulty": "easy",
+      "minAge": null,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.geckosurf.co.uk/"
+    },
+    {
+      "operatorSlug": "gecko-surf",
+      "name": "Kitesurfing Lesson",
+      "slug": "kitesurfing-lesson",
+      "activityType": "kitesurfing",
+      "region": "anglesey",
+      "description": "Learn the exhilarating sport of kitesurfing with professional tuition. All equipment provided. Suitable for beginners and intermediate riders.",
+      "priceFrom": 140,
+      "priceTo": 140,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 12,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.geckosurf.co.uk/kitesurfing-lessons/"
+    },
+    {
+      "operatorSlug": "gecko-surf",
+      "name": "Wetsuit Hire",
+      "slug": "wetsuit-hire",
+      "activityType": "surfing",
+      "region": "anglesey",
+      "description": "Hire a wetsuit to keep you warm in the water. Various sizes are available. Perfect for surfing and other water sports.",
+      "priceFrom": 10,
+      "priceTo": 10,
+      "duration": "2 hours",
+      "difficulty": "easy",
+      "minAge": null,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.geckosurf.co.uk/"
+    },
+    {
+      "operatorSlug": "gower-activity-centres",
+      "name": "Coasteering",
+      "slug": "coasteering",
+      "activityType": "coasteering",
+      "region": "gower",
+      "description": "Explore the Gower coastline in a unique way! Coasteering involves traversing rocky shores, swimming in the sea, and jumping into the water at various points. A thrilling adventure for those seeking an adrenaline rush.",
+      "priceFrom": null,
+      "priceTo": null,
+      "duration": "2-3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.goweractivitycentres.co.uk"
+    },
+    {
+      "operatorSlug": "gower-activity-centres",
+      "name": "Multi-Activity Days",
+      "slug": "multi-activity-days",
+      "activityType": "multi-activities",
+      "region": "gower",
+      "description": "Combine several activities for a full day of fun and adventure! Multi-activity days can be tailored to your group's interests and abilities, offering a mix of land and water-based challenges. Perfect for families and groups seeking a varied and exciting experience.",
+      "priceFrom": null,
+      "priceTo": null,
+      "duration": "Full day",
+      "difficulty": "variable",
+      "minAge": 6,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.goweractivitycentres.co.uk"
+    },
+    {
+      "operatorSlug": "hells-mouth-surf-school",
+      "name": "Beginner Surf Lesson",
+      "slug": "beginner-surf-lesson",
+      "activityType": "surfing-lessons",
+      "region": "ll-n-peninsula",
+      "description": "Learn the basics of surfing in a safe and fun environment. Suitable for complete beginners of all ages.",
+      "priceFrom": 45,
+      "priceTo": 45,
+      "duration": "2 hours",
+      "difficulty": "easy",
+      "minAge": 6,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.hellsmouthsurfschool.co.uk"
+    },
+    {
+      "operatorSlug": "hells-mouth-surf-school",
+      "name": "Improver Surf Lesson",
+      "slug": "improver-surf-lesson",
+      "activityType": "surfing-lessons",
+      "region": "ll-n-peninsula",
+      "description": "Take your surfing to the next level with expert guidance and personalised coaching. Suitable for those with some surfing experience.",
+      "priceFrom": 45,
+      "priceTo": 45,
+      "duration": "2 hours",
+      "difficulty": "moderate",
+      "minAge": 6,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.hellsmouthsurfschool.co.uk"
+    },
+    {
+      "operatorSlug": "hells-mouth-surf-school",
+      "name": "Private Surf Lesson",
+      "slug": "private-surf-lesson",
+      "activityType": "surfing-lessons",
+      "region": "ll-n-peninsula",
+      "description": "Enjoy a one-on-one surf lesson tailored to your specific needs and goals. Perfect for accelerated learning and personalised attention.",
+      "priceFrom": 80,
+      "priceTo": 80,
+      "duration": "1.5 hours",
+      "difficulty": "all",
+      "minAge": 6,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.hellsmouthsurfschool.co.uk"
+    },
+    {
+      "operatorSlug": "llangennith-surf-school",
+      "name": "2 Hour Surf Lesson",
+      "slug": "2-hour-surf-lesson",
+      "activityType": "surfing-lessons",
+      "region": "gower",
+      "description": "Learn the basics of surfing in a fun and supportive environment. This lesson is perfect for beginners and those looking to improve their skills.",
+      "priceFrom": 40,
+      "priceTo": 40,
+      "duration": "2 hours",
+      "difficulty": "easy",
+      "minAge": 5,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.llangennithsurf.co.uk/book-now"
+    },
+    {
+      "operatorSlug": "llangennith-surf-school",
+      "name": "Half Day Surf Lesson",
+      "slug": "half-day-surf-lesson",
+      "activityType": "surfing-lessons",
+      "region": "gower",
+      "description": "Immerse yourself in surfing with a longer session, ideal for building confidence and catching more waves. Includes a break to recharge.",
+      "priceFrom": 50,
+      "priceTo": 50,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 5,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.llangennithsurf.co.uk/book-now"
+    },
+    {
+      "operatorSlug": "llangennith-surf-school",
+      "name": "Private Surf Lesson (1:1)",
+      "slug": "private-surf-lesson-1-1",
+      "activityType": "surfing-lessons",
+      "region": "gower",
+      "description": "Receive personalised coaching and accelerated progress with a one-on-one surf lesson. Tailored to your specific needs and goals.",
+      "priceFrom": 80,
+      "priceTo": 80,
+      "duration": "1.5 hours",
+      "difficulty": "any",
+      "minAge": 5,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.llangennithsurf.co.uk/book-now"
+    },
+    {
+      "operatorSlug": "llangennith-surf-school",
+      "name": "Private Surf Lesson (Group)",
+      "slug": "private-surf-lesson-group",
+      "activityType": "surfing-lessons",
+      "region": "gower",
+      "description": "Enjoy a surf lesson with your friends or family. This allows for tailored coaching and a memorable shared experience.",
+      "priceFrom": 60,
+      "priceTo": 60,
+      "duration": "2 hours",
+      "difficulty": "any",
+      "minAge": 5,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.llangennithsurf.co.uk/book-now"
+    },
+    {
+      "operatorSlug": "llangorse-multi-activity-centre",
+      "name": "Zip Line Adventure",
+      "slug": "zip-line-adventure",
+      "activityType": "zip-lines",
+      "region": "brecon-beacons",
+      "description": "Soar through the air on our thrilling zip line course, offering stunning views of Llangorse Lake and the surrounding Brecon Beacons. Experience the ultimate adrenaline rush as you glide from platform to platform.",
+      "priceFrom": 40,
+      "priceTo": 45,
+      "duration": "2 hours",
+      "difficulty": "moderate",
+      "minAge": 6,
+      "season": "Mar-Oct",
+      "bookingUrl": "https://www.llangorse.com/activities/zip-lines/"
+    },
+    {
+      "operatorSlug": "llangorse-multi-activity-centre",
+      "name": "Indoor Climbing",
+      "slug": "indoor-climbing",
+      "activityType": "indoor-climbing",
+      "region": "brecon-beacons",
+      "description": "Challenge yourself on our indoor climbing wall, suitable for all skill levels. Our experienced instructors will guide you through the basics, or help you improve your technique if you're a seasoned climber.",
+      "priceFrom": 15,
+      "priceTo": 25,
+      "duration": "1.5 hours",
+      "difficulty": "easy",
+      "minAge": 4,
+      "season": "all-year",
+      "bookingUrl": "https://www.llangorse.com/activities/indoor-climbing/"
+    },
+    {
+      "operatorSlug": "llangorse-multi-activity-centre",
+      "name": "Horse Riding",
+      "slug": "horse-riding",
+      "activityType": "horse-riding",
+      "region": "brecon-beacons",
+      "description": "Explore the beautiful Brecon Beacons on horseback. We offer guided trails for all abilities, from gentle strolls to more adventurous rides. Enjoy the peace and tranquility of the countryside from a unique perspective.",
+      "priceFrom": 35,
+      "priceTo": 55,
+      "duration": "1-2 hours",
+      "difficulty": "easy",
+      "minAge": 4,
+      "season": "all-year",
+      "bookingUrl": "https://www.llangorse.com/activities/horse-riding/"
+    },
+    {
+      "operatorSlug": "llangorse-multi-activity-centre",
+      "name": "Kayaking & Canoeing",
+      "slug": "kayaking-canoeing",
+      "activityType": "kayaking",
+      "region": "brecon-beacons",
+      "description": "Explore the tranquil waters of Llangorse Lake by kayak or canoe. Perfect for a relaxing paddle or a more adventurous exploration of the lake's hidden coves and islands.",
+      "priceFrom": 20,
+      "priceTo": 30,
+      "duration": "1-2 hours",
+      "difficulty": "easy",
+      "minAge": 6,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.llangorse.com/activities/water-sports/"
+    },
+    {
+      "operatorSlug": "llangorse-multi-activity-centre",
+      "name": "Paddle Boarding",
+      "slug": "paddle-boarding",
+      "activityType": "paddle-boarding",
+      "region": "brecon-beacons",
+      "description": "Try your hand at paddle boarding on Llangorse Lake. A fun and challenging activity that's perfect for all ages and abilities.",
+      "priceFrom": 25,
+      "priceTo": 35,
+      "duration": "1-2 hours",
+      "difficulty": "easy",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.llangorse.com/activities/water-sports/"
+    },
+    {
+      "operatorSlug": "llangorse-multi-activity-centre",
+      "name": "Mountain Biking",
+      "slug": "mountain-biking",
+      "activityType": "mountain-biking",
+      "region": "brecon-beacons",
+      "description": "Explore the trails surrounding Llangorse Lake on two wheels with mountain bike rentals. Suitable for all abilities.",
+      "priceFrom": 25,
+      "priceTo": 45,
+      "duration": "Half or full day",
+      "difficulty": "easy",
+      "minAge": 12,
+      "season": "All year",
+      "bookingUrl": "https://www.llangorse.com/activities/mountain-biking/"
+    },
+    {
+      "operatorSlug": "llangorse-multi-activity-centre",
+      "name": "Ropes Course",
+      "slug": "ropes-course",
+      "activityType": "rope-courses",
+      "region": "brecon-beacons",
+      "description": "Challenge your balance and agility on our ropes course.",
+      "priceFrom": 30,
+      "priceTo": 40,
+      "duration": "1.5 hours",
+      "difficulty": "moderate",
+      "minAge": 6,
+      "season": "Mar-Oct",
+      "bookingUrl": "https://www.llangorse.com/"
+    },
+    {
+      "operatorSlug": "llyn-adventures",
+      "name": "Sea Kayaking Tour",
+      "slug": "sea-kayaking-tour",
+      "activityType": "sea-kayaking",
+      "region": "ll-n-peninsula",
+      "description": "Explore the stunning coastline of the Llŷn Peninsula by kayak. Guided tours cater to all skill levels, showcasing hidden coves and breathtaking scenery.",
+      "priceFrom": 50,
+      "priceTo": 50,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": null,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.llynadventures.co.uk"
+    },
+    {
+      "operatorSlug": "llyn-adventures",
+      "name": "Coasteering Adventure",
+      "slug": "coasteering-adventure",
+      "activityType": "coasteering",
+      "region": "ll-n-peninsula",
+      "description": "Experience the thrill of coasteering along the rugged cliffs of Abersoch. Scramble over rocks, swim in clear waters, and leap into the sea on this exciting adventure.",
+      "priceFrom": 50,
+      "priceTo": 50,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": null,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.llynadventures.co.uk"
+    },
+    {
+      "operatorSlug": "llyn-adventures",
+      "name": "Stand-Up Paddleboarding Session",
+      "slug": "stand-up-paddleboarding-session",
+      "activityType": "sup",
+      "region": "ll-n-peninsula",
+      "description": "Enjoy a relaxing stand-up paddleboarding session in the calm waters of Abersoch. Perfect for beginners and experienced paddlers alike, offering a unique perspective of the coastline.",
+      "priceFrom": 40,
+      "priceTo": 40,
+      "duration": "2 hours",
+      "difficulty": "easy",
+      "minAge": null,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.llynadventures.co.uk"
+    },
+    {
+      "operatorSlug": "meadow-springs",
+      "name": "Stand-Up Paddleboarding (SUP)",
+      "slug": "stand-up-paddleboarding",
+      "activityType": "sup",
+      "region": "mid-wales",
+      "description": "Explore the tranquil waters of Mid Wales with a guided SUP session. Perfect for beginners and experienced paddlers alike.",
+      "priceFrom": 35,
+      "priceTo": 55,
+      "duration": "2 hours",
+      "difficulty": "easy",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.visitmidwales.co.uk"
+    },
+    {
+      "operatorSlug": "mountainxperience",
+      "name": "Guided Snowdon Walks",
+      "slug": "guided-snowdon-walks",
+      "activityType": "guided-snowdon-walks",
+      "region": "snowdonia",
+      "description": "Explore the majestic Snowdon with expert guidance. Choose from various routes tailored to your fitness level and experience the beauty of Snowdonia.",
+      "priceFrom": null,
+      "priceTo": null,
+      "duration": null,
+      "difficulty": "moderate",
+      "minAge": null,
+      "season": null,
+      "bookingUrl": "https://www.mountainxperience.uk"
+    },
+    {
+      "operatorSlug": "mountainxperience",
+      "name": "Scrambling in Snowdonia",
+      "slug": "scrambling-in-snowdonia",
+      "activityType": "scrambling",
+      "region": "snowdonia",
+      "description": "Embark on thrilling scrambling adventures in Snowdonia's rugged terrain. Discover hidden gems and challenge yourself with exhilarating climbs led by experienced guides.",
+      "priceFrom": null,
+      "priceTo": null,
+      "duration": null,
+      "difficulty": "challenging",
+      "minAge": null,
+      "season": null,
+      "bookingUrl": "https://www.mountainxperience.uk"
+    },
+    {
+      "operatorSlug": "one-planet-adventure-llandegla",
+      "name": "Bike Hire - Standard Hardtail",
+      "slug": "bike-hire-standard-hardtail",
+      "activityType": "mountain-biking",
+      "region": "mid-wales-north-wales",
+      "description": "Rent a reliable hardtail mountain bike and explore the trails at Llandegla Forest. Perfect for beginners and intermediate riders.",
+      "priceFrom": 35,
+      "priceTo": 45,
+      "duration": "Full Day",
+      "difficulty": "easy",
+      "minAge": 12,
+      "season": "All Year",
+      "bookingUrl": "https://www.oneplanetadventure.co.uk/bike-hire/"
+    },
+    {
+      "operatorSlug": "one-planet-adventure-llandegla",
+      "name": "Bike Hire - Full Suspension",
+      "slug": "bike-hire-full-suspension",
+      "activityType": "mountain-biking",
+      "region": "mid-wales-north-wales",
+      "description": "Experience the trails in comfort and style with a full suspension mountain bike. Ideal for tackling the more challenging routes.",
+      "priceFrom": 55,
+      "priceTo": 65,
+      "duration": "Full Day",
+      "difficulty": "moderate",
+      "minAge": 14,
+      "season": "All Year",
+      "bookingUrl": "https://www.oneplanetadventure.co.uk/bike-hire/"
+    },
+    {
+      "operatorSlug": "one-planet-adventure-llandegla",
+      "name": "Bike Hire - E-Bike",
+      "slug": "bike-hire-e-bike",
+      "activityType": "mountain-biking",
+      "region": "mid-wales-north-wales",
+      "description": "Enjoy the trails with ease using an electric mountain bike. Great for covering more ground and tackling steep climbs.",
+      "priceFrom": 65,
+      "priceTo": 75,
+      "duration": "Full Day",
+      "difficulty": "easy",
+      "minAge": 16,
+      "season": "All Year",
+      "bookingUrl": "https://www.oneplanetadventure.co.uk/bike-hire/"
+    },
+    {
+      "operatorSlug": "one-planet-adventure-llandegla",
+      "name": "Skills Coaching (Beginner)",
+      "slug": "skills-coaching-beginner",
+      "activityType": "mountain-biking",
+      "region": "mid-wales-north-wales",
+      "description": "Learn the basics of mountain biking with expert coaching. Perfect for building confidence and technique.",
+      "priceFrom": 50,
+      "priceTo": 70,
+      "duration": "2 hours",
+      "difficulty": "easy",
+      "minAge": 8,
+      "season": "All Year",
+      "bookingUrl": "https://www.oneplanetadventure.co.uk/"
+    },
+    {
+      "operatorSlug": "one-planet-adventure-llandegla",
+      "name": "Skills Coaching (Intermediate)",
+      "slug": "skills-coaching-intermediate",
+      "activityType": "mountain-biking",
+      "region": "mid-wales-north-wales",
+      "description": "Enhance your mountain biking skills with advanced coaching. Perfect for riders wanting to progress to more challenging trails.",
+      "priceFrom": 60,
+      "priceTo": 80,
+      "duration": "2 hours",
+      "difficulty": "moderate",
+      "minAge": 12,
+      "season": "All Year",
+      "bookingUrl": "https://www.oneplanetadventure.co.uk/"
+    },
+    {
+      "operatorSlug": "outer-reef-surf-school",
+      "name": "Surf Lesson",
+      "slug": "surf-lesson",
+      "activityType": "surfing",
+      "region": "pembrokeshire",
+      "description": "Learn to surf with expert instruction in the beautiful Broadhaven Bay. Lessons cater to all abilities, from complete beginners to those looking to improve their technique.",
+      "priceFrom": 35,
+      "priceTo": 45,
+      "duration": "2 hours",
+      "difficulty": "easy",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.outerreefsurfschool.com"
+    },
+    {
+      "operatorSlug": "outer-reef-surf-school",
+      "name": "Coasteering Adventure",
+      "slug": "coasteering-adventure",
+      "activityType": "coasteering",
+      "region": "pembrokeshire",
+      "description": "Explore the Pembrokeshire coastline from a unique perspective with a thrilling coasteering adventure. Jump, swim, and scramble along the rocks, discovering hidden coves and marine life.",
+      "priceFrom": 45,
+      "priceTo": 55,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 10,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.outerreefsurfschool.com"
+    },
+    {
+      "operatorSlug": "outer-reef-surf-school",
+      "name": "Stand-Up Paddleboarding (SUP)",
+      "slug": "stand-up-paddleboarding",
+      "activityType": "paddle-boarding",
+      "region": "pembrokeshire",
+      "description": "Enjoy a relaxing and scenic paddle-boarding session in the calm waters of Broadhaven Bay. Perfect for all ages and abilities, SUP offers a great way to explore the coastline and enjoy the stunning views.",
+      "priceFrom": 30,
+      "priceTo": 40,
+      "duration": "1.5 hours",
+      "difficulty": "easy",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.outerreefsurfschool.com"
+    },
+    {
+      "operatorSlug": "oxwich-watersports",
+      "name": "Stand Up Paddleboarding (SUP)",
+      "slug": "stand-up-paddleboarding-sup",
+      "activityType": "sup",
+      "region": "gower",
+      "description": "Explore the calm waters of Oxwich Bay on a stand-up paddleboard. Suitable for all abilities, enjoy stunning views of the Gower coastline and keep an eye out for local wildlife. ",
+      "priceFrom": null,
+      "priceTo": null,
+      "duration": null,
+      "difficulty": "easy",
+      "minAge": null,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.oxwichwatersports.co.uk"
+    },
+    {
+      "operatorSlug": "oxwich-watersports",
+      "name": "Kayaking",
+      "slug": "kayaking",
+      "activityType": "kayaking",
+      "region": "gower",
+      "description": "Paddle along the Oxwich Bay coastline in a kayak and discover hidden coves and beaches. Choose from single or double kayaks, suitable for solo adventurers or shared experiences.",
+      "priceFrom": null,
+      "priceTo": null,
+      "duration": null,
+      "difficulty": "moderate",
+      "minAge": null,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.oxwichwatersports.co.uk"
+    },
+    {
+      "operatorSlug": "oxwich-watersports",
+      "name": "Coasteering",
+      "slug": "coasteering",
+      "activityType": "coasteering",
+      "region": "gower",
+      "description": "Experience the thrill of coasteering along the rocky coastline of Oxwich Bay. Scramble, swim, and jump into the sea with experienced guides. Wetsuits, buoyancy aids and helmets are provided.",
+      "priceFrom": null,
+      "priceTo": null,
+      "duration": null,
+      "difficulty": "challenging",
+      "minAge": null,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.oxwichwatersports.co.uk"
+    },
+    {
+      "operatorSlug": "preseli-venture",
+      "name": "Coasteering",
+      "slug": "coasteering",
+      "activityType": "coasteering",
+      "region": "pembrokeshire",
+      "description": "Explore the Pembrokeshire coastline in a unique and exhilarating way. Scramble, swim, and jump your way along the rocky shores, discovering hidden coves and enjoying the thrill of the sea.",
+      "priceFrom": 65,
+      "priceTo": 65,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.preseliventure.co.uk/coasteering/"
+    },
+    {
+      "operatorSlug": "preseli-venture",
+      "name": "Sea Kayaking",
+      "slug": "sea-kayaking",
+      "activityType": "kayaking",
+      "region": "pembrokeshire",
+      "description": "Paddle along the stunning Pembrokeshire coast, exploring secluded bays and enjoying breathtaking views. Learn kayaking techniques from experienced instructors and discover the beauty of the coastline from a different perspective.",
+      "priceFrom": 65,
+      "priceTo": 65,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.preseliventure.co.uk/sea-kayaking/"
+    },
+    {
+      "operatorSlug": "preseli-venture",
+      "name": "Surfing",
+      "slug": "surfing",
+      "activityType": "surfing",
+      "region": "pembrokeshire",
+      "description": "Catch some waves and learn to surf at one of Pembrokeshire's beautiful beaches. Experienced instructors will guide you through the basics, helping you to stand up and ride your first wave.",
+      "priceFrom": 55,
+      "priceTo": 55,
+      "duration": "2 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.preseliventure.co.uk/surfing/"
+    },
+    {
+      "operatorSlug": "preseli-venture",
+      "name": "Wild Swimming",
+      "slug": "wild-swimming",
+      "activityType": "wild-swimming",
+      "region": "pembrokeshire",
+      "description": "Discover the refreshing thrill of wild swimming in Pembrokeshire's clear waters. Explore hidden pools, swim in the open sea, and connect with nature in a unique and invigorating way.",
+      "priceFrom": 45,
+      "priceTo": 45,
+      "duration": "2 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.preseliventure.co.uk/wild-swimming/"
+    },
+    {
+      "operatorSlug": "pro-kitesurfing",
+      "name": "Beginner Kitesurfing Lesson",
+      "slug": "beginner-kitesurfing-lesson",
+      "activityType": "kitesurfing-lessons",
+      "region": "anglesey",
+      "description": "Get started with kitesurfing on Newborough Beach! This 3-hour lesson covers the basics, from kite handling to safety procedures, ensuring a solid foundation for your kitesurfing journey.",
+      "priceFrom": 175,
+      "priceTo": 350,
+      "duration": "3 hours",
+      "difficulty": "easy",
+      "minAge": 12,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.prokitesurfing.co.uk/book-online"
+    },
+    {
+      "operatorSlug": "pro-kitesurfing",
+      "name": "Intermediate Kitesurfing Lesson",
+      "slug": "intermediate-kitesurfing-lesson",
+      "activityType": "kitesurfing-lessons",
+      "region": "anglesey",
+      "description": "Progress your kitesurfing skills with this 3-hour intermediate lesson. Build on your existing knowledge with techniques like riding upwind and transitions, all while enjoying the beauty of Newborough Beach.",
+      "priceFrom": 175,
+      "priceTo": 350,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 12,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.prokitesurfing.co.uk/book-online"
+    },
+    {
+      "operatorSlug": "pro-kitesurfing",
+      "name": "Refresher Kitesurfing Lesson",
+      "slug": "refresher-kitesurfing-lesson",
+      "activityType": "kitesurfing-lessons",
+      "region": "anglesey",
+      "description": "Brush up on your kitesurfing skills with a 2-hour refresher lesson. Perfect for those who haven't kited in a while or want to refine their technique. Focus on the areas you need to improve and get back on the water with confidence.",
+      "priceFrom": 120,
+      "priceTo": 240,
+      "duration": "2 hours",
+      "difficulty": "easy",
+      "minAge": 12,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.prokitesurfing.co.uk/book-online"
+    },
+    {
+      "operatorSlug": "quest-adventure",
+      "name": "Coasteering",
+      "slug": "coasteering",
+      "activityType": "coasteering",
+      "region": "gower",
+      "description": "Explore the stunning Gower coastline with an exhilarating coasteering adventure. Swim, climb, and jump your way along the rocky shores, discovering hidden coves and experiencing the thrill of the sea.",
+      "priceFrom": 45,
+      "priceTo": 65,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.questadventure.co.uk"
+    },
+    {
+      "operatorSlug": "quest-adventure",
+      "name": "Multi-Activity Day",
+      "slug": "multi-activity-day",
+      "activityType": "multi-activities",
+      "region": "south-wales",
+      "description": "Enjoy a full day of adrenaline-pumping activities in South Wales. Combine coasteering with other outdoor pursuits for an action-packed day of adventure. Tailored itineraries available.",
+      "priceFrom": 60,
+      "priceTo": 90,
+      "duration": "6 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.questadventure.co.uk"
+    },
+    {
+      "operatorSlug": "rip-n-rock",
+      "name": "Gower Coasteering Adventure",
+      "slug": "gower-coasteering-adventure",
+      "activityType": "coasteering",
+      "region": "gower",
+      "description": "Explore the stunning Gower coastline with an exhilarating coasteering experience. Jump, swim, and scramble along the rocks, discovering hidden coves and enjoying the thrill of the sea.",
+      "priceFrom": 45,
+      "priceTo": 55,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.ripnrock.co.uk"
+    },
+    {
+      "operatorSlug": "rip-n-rock",
+      "name": "Gower Surfing Lesson",
+      "slug": "gower-surfing-lesson",
+      "activityType": "surfing",
+      "region": "gower",
+      "description": "Learn to surf on the beautiful beaches of Gower with expert instruction. Whether you're a beginner or looking to improve your skills, Rip N Rock will get you riding the waves.",
+      "priceFrom": 35,
+      "priceTo": 45,
+      "duration": "2 hours",
+      "difficulty": "easy",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.ripnrock.co.uk"
+    },
+    {
+      "operatorSlug": "rip-n-rock",
+      "name": "Gower Climbing Experience",
+      "slug": "gower-climbing-experience",
+      "activityType": "climbing",
+      "region": "gower",
+      "description": "Experience the thrill of rock climbing on Gower's stunning cliffs. With expert guidance, you'll learn basic climbing techniques and challenge yourself on various routes.",
+      "priceFrom": 50,
+      "priceTo": 60,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.ripnrock.co.uk"
+    },
+    {
+      "operatorSlug": "sealyham-activity-centre",
+      "name": "Coasteering",
+      "slug": "coasteering",
+      "activityType": "coasteering",
+      "region": "pembrokeshire",
+      "description": "Explore the Pembrokeshire coastline up close! Coasteering involves swimming, climbing, and scrambling along the rocks, with plenty of opportunity for cliff jumping into the sea. A thrilling way to experience the beauty of the Welsh coast.",
+      "priceFrom": 50,
+      "priceTo": 65,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.sealyham.com"
+    },
+    {
+      "operatorSlug": "sealyham-activity-centre",
+      "name": "Bushcraft",
+      "slug": "bushcraft",
+      "activityType": "bushcraft",
+      "region": "pembrokeshire",
+      "description": "Learn essential survival skills in the Welsh wilderness. Build shelters, light fires using natural materials, and forage for edible plants. Perfect for developing teamwork and resilience.",
+      "priceFrom": 45,
+      "priceTo": 55,
+      "duration": "Full day",
+      "difficulty": "easy",
+      "minAge": 6,
+      "season": "Year-round",
+      "bookingUrl": "https://www.sealyham.com"
+    },
+    {
+      "operatorSlug": "sealyham-activity-centre",
+      "name": "Rock Climbing",
+      "slug": "rock-climbing",
+      "activityType": "rock-climbing",
+      "region": "pembrokeshire",
+      "description": "Tackle the challenges of the rock face with expert guidance. Learn basic climbing techniques and safety procedures. Suitable for all abilities, from complete beginners to experienced climbers.",
+      "priceFrom": 40,
+      "priceTo": 60,
+      "duration": "Half day",
+      "difficulty": "variable",
+      "minAge": 7,
+      "season": "Year-round",
+      "bookingUrl": "https://www.sealyham.com"
+    },
+    {
+      "operatorSlug": "sealyham-activity-centre",
+      "name": "Kayaking",
+      "slug": "kayaking",
+      "activityType": "kayaking",
+      "region": "pembrokeshire",
+      "description": "Explore the local waterways by kayak. Enjoy stunning views and spot local wildlife. Instruction provided for beginners. Options for sheltered estuary paddles and coastal exploration.",
+      "priceFrom": 45,
+      "priceTo": 55,
+      "duration": "Half day",
+      "difficulty": "easy",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.sealyham.com"
+    },
+    {
+      "operatorSlug": "sealyham-activity-centre",
+      "name": "Gorge Walking",
+      "slug": "gorge-walking",
+      "activityType": "gorge-walking",
+      "region": "pembrokeshire",
+      "description": "Wade, swim, and scramble through a beautiful river gorge. An adventurous way to experience the Pembrokeshire countryside. Expect waterfalls, rock pools, and plenty of fun.",
+      "priceFrom": 50,
+      "priceTo": 60,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.sealyham.com"
+    },
+    {
+      "operatorSlug": "tenby-adventure",
+      "name": "Coasteering Adventure",
+      "slug": "coasteering-adventure",
+      "activityType": "coasteering",
+      "region": "pembrokeshire",
+      "description": "Explore the Pembrokeshire coastline with a thrilling coasteering adventure. Swim, climb, and jump your way along the rocks and discover hidden coves.",
+      "priceFrom": 45,
+      "priceTo": 65,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.visitpembrokeshire.com"
+    },
+    {
+      "operatorSlug": "tenby-adventure",
+      "name": "Sea Kayaking Tour",
+      "slug": "sea-kayaking-tour",
+      "activityType": "sea-kayaking",
+      "region": "pembrokeshire",
+      "description": "Paddle along the Pembrokeshire coast and explore the beautiful bays and inlets by sea kayak. Keep an eye out for local wildlife such as seals and seabirds.",
+      "priceFrom": 50,
+      "priceTo": 70,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 10,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.visitpembrokeshire.com"
+    }
+  ]
+}

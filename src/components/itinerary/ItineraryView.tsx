@@ -7,18 +7,21 @@ import { CostBreakdown } from "./CostBreakdown";
 import { BasecampPicker } from "./BasecampPicker";
 import { ItineraryStop } from "@/types/itinerary";
 import { CloudRain, PiggyBank, Star, Home, MapPin } from "lucide-react";
-import { accommodation } from "@/db/schema";
+import { accommodation, regions } from "@/db/schema";
 import clsx from "clsx";
+import { WeatherWidget } from "@/components/weather/WeatherWidget";
 
 type AccommodationData = typeof accommodation.$inferSelect;
+type RegionData = typeof regions.$inferSelect;
 
 interface ItineraryViewProps {
   stops: ItineraryStop[];
   accommodations?: AccommodationData[];
   itineraryName?: string;
+  region?: RegionData | null;
 }
 
-export function ItineraryView({ stops, accommodations = [], itineraryName }: ItineraryViewProps) {
+export function ItineraryView({ stops, accommodations = [], itineraryName, region }: ItineraryViewProps) {
   const [mode, setMode] = useState<"standard" | "wet" | "budget">("standard");
   const [basecamp, setBasecamp] = useState<AccommodationData | null>(null);
   const [showBasecampPicker, setShowBasecampPicker] = useState(false);
@@ -138,7 +141,15 @@ export function ItineraryView({ stops, accommodations = [], itineraryName }: Iti
       </div>
 
       {/* Right Column: Sidebar */}
-      <aside className="hidden lg:block lg:col-span-4">
+      <aside className="hidden lg:block lg:col-span-4 space-y-6">
+         {region?.lat && region?.lng && (
+            <WeatherWidget 
+              lat={parseFloat(String(region.lat))} 
+              lng={parseFloat(String(region.lng))} 
+              regionName={region.name} 
+              compact
+            />
+         )}
          <CostBreakdown stops={stops} mode={mode} itineraryName={itineraryName} />
       </aside>
     </div>

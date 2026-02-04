@@ -143,7 +143,12 @@ export default async function ItineraryDetailPage({ params }: Props) {
         )}
 
         {/* Main View Component */}
-        <ItineraryView stops={stops || []} itineraryName={itinerary.title} accommodations={accommodations} />
+        <ItineraryView 
+          stops={stops || []} 
+          itineraryName={itinerary.title} 
+          accommodations={accommodations} 
+          region={region}
+        />
 
         {/* Enquire All Vendors CTA */}
         {uniqueOperators.length > 0 && (

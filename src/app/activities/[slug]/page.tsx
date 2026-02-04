@@ -17,6 +17,7 @@ import {
   createTouristAttractionSchema, 
   createBreadcrumbSchema 
 } from "@/components/seo/JsonLd";
+import { ActivityWeatherAlert } from "@/components/weather/ActivityWeatherAlert";
 
 const MapView = dynamic(() => import("@/components/ui/MapView"), {
   loading: () => (
@@ -274,6 +275,15 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 py-8">
+        {/* Weather Alert */}
+        {(activity.lat || region?.lat) && (activity.lng || region?.lng) && (
+          <ActivityWeatherAlert 
+            lat={parseFloat(String(activity.lat || region?.lat))} 
+            lng={parseFloat(String(activity.lng || region?.lng))} 
+            activityType={activityType?.name || activity.name}
+          />
+        )}
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Content */}
           <div className="lg:col-span-2 space-y-8">

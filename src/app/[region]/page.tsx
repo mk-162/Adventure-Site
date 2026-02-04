@@ -29,6 +29,7 @@ import {
   createTouristDestinationSchema, 
   createBreadcrumbSchema 
 } from "@/components/seo/JsonLd";
+import { WeatherWidget } from "@/components/weather/WeatherWidget";
 
 interface RegionPageProps {
   params: Promise<{ region: string }>;
@@ -270,6 +271,15 @@ export default async function RegionPage({ params }: RegionPageProps) {
           {/* Main Content (8 cols) */}
           <div className="lg:col-span-8 flex flex-col gap-8 lg:gap-10">
             
+            {/* Weather Widget */}
+            {region.lat && region.lng && (
+              <WeatherWidget 
+                lat={parseFloat(String(region.lat))} 
+                lng={parseFloat(String(region.lng))} 
+                regionName={region.name} 
+              />
+            )}
+
             {/* Intro */}
             <section>
               <h3 className="text-lg lg:text-xl font-bold mb-3 text-[#1e3a4c]">Welcome to {region.name}</h3>

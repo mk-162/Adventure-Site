@@ -2,6 +2,16 @@
 
 Drop anything you notice here. One line per snag. I'll fix and tick them off.
 
+**Progress: 150/171 fixed (88%)** — Last updated 2026-06-06
+
+### Remaining 21 items (categorised):
+- **Content/Images** (10): Missing images for events, partners, articles, journal, guides. Need actual photo assets or AI generation.
+- **Integrations** (2): TripAdvisor API, Amazon product API — need API keys and business decisions.
+- **Data expansion** (3): Generic filler cards, attractions/sightseeing scope, stag/hen activities.
+- **Process** (3): Deep research skill, content gap analysis, onboarding YouTube auto-fetch.
+- **Visuals** (2): Screen grabs for advertise page — need live site screenshots.
+- **Feature** (1): Quantity selector for multi-site pricing.
+
 Format: `- [ ] what's wrong (page/url if helpful)`
 
 ## Open

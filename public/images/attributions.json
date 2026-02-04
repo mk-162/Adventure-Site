@@ -6888,79 +6888,40 @@
     "downloaded": "2026-02-04",
     "usage": "journal/via-ferrata-wales"
   },
-  "images/journal/self-guided-vs-guided-adventures-hero-d85f52c9.jpg": {
-    "photographer": "Agris Belkovskis",
-    "photographer_url": "https://unsplash.com/@agrisbk",
-    "photo_url": "https://unsplash.com/photos/brown-grass-field-near-mountain-under-white-clouds-during-daytime-rWydgbcywdA",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal-hero"
+  "images/journal/self-guided-vs-guided-adventures-hero-3ab350cc.jpg": {
+    "creator": "frankh",
+    "creator_url": "https://www.flickr.com/photos/53938557@N00",
+    "source": "https://www.flickr.com/photos/53938557@N00/2041652441",
+    "license": "BY",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "query": "welsh hills",
+    "downloaded": "2026-02-03",
+    "category": "journal-hero",
+    "note": "Hero image for journal article: self-guided-vs-guided-adventures"
   },
-  "images/journal/welsh-3000s-attempt-hero-098b891f.jpg": {
-    "photographer": "Korng Sok",
-    "photographer_url": "https://unsplash.com/@korng_sok",
-    "photo_url": "https://unsplash.com/photos/a-group-of-animals-in-a-grassy-field-Fbyx9GMnSms",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal-hero"
+  "images/journal/welsh-3000s-attempt-hero-cce3adb9.jpg": {
+    "creator": "Leshaines123",
+    "creator_url": "https://www.flickr.com/photos/46018453@N06",
+    "source": "https://www.flickr.com/photos/46018453@N06/14456910849",
+    "license": "BY",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "query": "snowdon mountain",
+    "downloaded": "2026-02-03",
+    "category": "journal-hero",
+    "note": "Hero image for journal article: welsh-3000s-attempt"
   },
-  "images/journal/winter-hiking-gear-welsh-mountains-hero-808641a0.jpg": {
-    "photographer": "Ste Wright",
-    "photographer_url": "https://unsplash.com/@sjwright",
-    "photo_url": "https://unsplash.com/photos/snow-mountain-landscape-with-body-of-water-and-fog-during-daytime-O47Nvg5oVQw",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal-hero"
+  "images/journal/winter-hiking-gear-welsh-mountains-hero-afc8da47.jpg": {
+    "creator": "Ben124.",
+    "creator_url": "https://www.flickr.com/photos/9298216@N08",
+    "source": "https://www.flickr.com/photos/9298216@N08/8243992538",
+    "license": "BY",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "query": "snowdonia wales",
+    "downloaded": "2026-02-03",
+    "category": "journal-hero",
+    "note": "Hero image for journal article: winter-hiking-gear-welsh-mountains"
   },
-  "images/journal/zip-world-empire-guide-hero-ce75977f.jpg": {
-    "photographer": "Sebastian Herrmann",
-    "photographer_url": "https://unsplash.com/@herrherrmann",
-    "photo_url": "https://unsplash.com/photos/green-grass-field-and-mountains-during-daytime-L2ElArNgxGk",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal-hero"
-  },
-  "images/journal/horse-riding-pony-trekking-wales-hero-bb595ea5.jpg": {
-    "photographer": "James Kelly-Smith",
-    "photographer_url": "https://unsplash.com/@jksphotographer",
-    "photo_url": "https://unsplash.com/photos/a-view-of-a-valley-with-mountains-in-the-background-sxK9RVpIgOg",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal-hero"
-  },
-  "images/journal/wales-adventure-awards-2025-hero-b0344254.jpg": {
-    "photographer": "Shawn",
-    "photographer_url": "https://unsplash.com/@shawnanggg",
-    "photo_url": "https://unsplash.com/photos/a-house-on-the-side-of-a-hill-next-to-a-body-of-water-KrHZJbALyCE",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal-hero"
-  },
-  "images/journal/small-operators-emerging-wales-hero-e31ff24a.jpg": {
-    "photographer": "Callum Blacoe",
-    "photographer_url": "https://unsplash.com/@blayco",
-    "photo_url": "https://unsplash.com/photos/green-grass-field-near-body-of-water-during-daytime-IZ69b2iy2iU",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal-hero"
-  },
-  "images/journal/vanlife-west-coast-wales-hero-e04f0a51.jpg": {
-    "photographer": "Michael Hamments",
-    "photographer_url": "https://unsplash.com/@35mmtodgt",
-    "photo_url": "https://unsplash.com/photos/a-road-with-a-curve-in-the-middle-of-it-ILgI6LnbyUQ",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal-hero"
-  },
-  "images/journal/mountain-rescue-how-it-works-hero-c2f2b2b7.jpg": {
-    "photographer": "Benjamin Blyth",
-    "photographer_url": "https://unsplash.com/@bjblyth",
-    "photo_url": "https://unsplash.com/photos/a-helicopter-flying-over-a-mountain-with-a-waterfall-kLR9Olnm4dc",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal-hero"
-  },
-  "images/journal/van-life-gear-touring-wales-hero-19391fba.jpg": {
+  "images/journal/van-life-gear-touring-wales-hero-e5bae1b7.jpg": {
     "creator": "Dai Lygad",
     "creator_url": "https://www.flickr.com/photos/126337928@N05",
     "source": "https://www.flickr.com/photos/126337928@N05/26463612120",
@@ -6983,13 +6944,104 @@
     "width": 1024,
     "height": 683,
     "aspect_ratio": 1.5,
-    "category": "coastline",
+    "category": "journal-hero",
     "region": "wales-general",
     "query": "wales coastline dramatic",
     "downloaded": "2026-02-03",
-    "usage": "journal-hero"
+    "note": "Hero image for journal article: van-life-gear-touring-wales"
   },
-  "images/journal/best-viewpoints-snowdonia-hero-8ab59ccc.jpg": {
+  "images/journal/zip-world-empire-guide-hero-706df9b4.jpg": {
+    "creator": "ohefin",
+    "creator_url": "https://www.flickr.com/photos/47515486@N05",
+    "source": "https://www.flickr.com/photos/47515486@N05/15526750948",
+    "license": "BY-SA",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "title": "Padarn lake is high this morning.",
+    "tags": [
+      "autumn",
+      "colours",
+      "coolpix",
+      "country",
+      "dinorwic",
+      "electric",
+      "hefin",
+      "lake",
+      "landscapee",
+      "landscapes"
+    ],
+    "width": 1024,
+    "height": 724,
+    "aspect_ratio": 1.41,
+    "category": "journal-hero",
+    "region": "snowdonia",
+    "query": "wales trees autumn",
+    "downloaded": "2026-02-03",
+    "note": "Hero image for journal article: zip-world-empire-guide"
+  },
+  "images/journal/horse-riding-pony-trekking-wales-hero-4193d4b1.jpg": {
+    "creator": "Stephanie Riddell",
+    "creator_url": "https://www.flickr.com/photos/155794369@N08",
+    "source": "https://www.flickr.com/photos/155794369@N08/35416928611",
+    "license": "BY",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "query": "wales countryside",
+    "downloaded": "2026-02-03",
+    "category": "journal-hero",
+    "note": "Hero image for journal article: horse-riding-pony-trekking-wales"
+  },
+  "images/journal/wales-adventure-awards-2025-hero-eae36b03.jpg": {
+    "creator": "erwlas",
+    "creator_url": "https://www.flickr.com/photos/70056611@N00",
+    "source": "https://www.flickr.com/photos/70056611@N00/5172691473",
+    "license": "BY",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "query": "welsh mountains",
+    "downloaded": "2026-02-03",
+    "category": "journal-hero",
+    "note": "Hero image for journal article: wales-adventure-awards-2025"
+  },
+  "images/journal/small-operators-emerging-wales-hero-c24598a0.jpg": {
+    "creator": "Orchids love rainwater",
+    "creator_url": "https://www.flickr.com/photos/37072378@N08",
+    "source": "https://www.flickr.com/photos/37072378@N08/31366155711",
+    "license": "BY",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "query": "welsh hills",
+    "downloaded": "2026-02-03",
+    "category": "journal-hero",
+    "note": "Hero image for journal article: small-operators-emerging-wales"
+  },
+  "images/journal/vanlife-west-coast-wales-hero-4dded7e3.jpg": {
+    "creator": "Griffin Guiding",
+    "creator_url": "https://www.flickr.com/photos/79553013@N00",
+    "source": "https://www.flickr.com/photos/79553013@N00/8756608849",
+    "license": "BY",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "title": "St Catherines Island Tenby",
+    "tags": [
+      "beach",
+      "griffin",
+      "guide",
+      "guided",
+      "guiding",
+      "holiday",
+      "pembroke",
+      "sea",
+      "seaside",
+      "tour"
+    ],
+    "width": 1024,
+    "height": 683,
+    "aspect_ratio": 1.5,
+    "category": "journal-hero",
+    "region": "pembrokeshire",
+    "query": "welsh beach scenic",
+    "downloaded": "2026-02-03",
+    "note": "Hero image for journal article: vanlife-west-coast-wales"
+  },
+  "images/journal/best-viewpoints-snowdonia-hero-2d5876f3.jpg": {
     "creator": "Stephanie Riddell",
     "creator_url": "https://www.flickr.com/photos/155794369@N08",
     "source": "https://www.flickr.com/photos/155794369@N08/35416924441",
@@ -6997,9 +7049,10 @@
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "query": "wales countryside",
     "downloaded": "2026-02-03",
-    "usage": "journal-hero"
+    "category": "journal-hero",
+    "note": "Hero image for journal article: best-viewpoints-snowdonia"
   },
-  "images/journal/snowdonia-adventure-weekend-report-hero-b6fa6075.jpg": {
+  "images/journal/snowdonia-adventure-weekend-report-hero-ca7a20a0.jpg": {
     "creator": "valcker",
     "creator_url": "https://www.flickr.com/photos/7984810@N05",
     "source": "https://www.flickr.com/photos/7984810@N05/23170715583",
@@ -7007,9 +7060,10 @@
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "query": "snowdon mountain",
     "downloaded": "2026-02-03",
-    "usage": "journal-hero"
+    "category": "journal-hero",
+    "note": "Hero image for journal article: snowdonia-adventure-weekend-report"
   },
-  "images/journal/welsh-3000s-challenge-hero-ffaedfc2.jpg": {
+  "images/journal/welsh-3000s-challenge-hero-f1293524.jpg": {
     "creator": "Robert J Heath",
     "creator_url": "https://www.flickr.com/photos/67769979@N06",
     "source": "https://www.flickr.com/photos/67769979@N06/52267027501",
@@ -7032,13 +7086,13 @@
     "width": 1024,
     "height": 433,
     "aspect_ratio": 2.36,
-    "category": "lake",
+    "category": "journal-hero",
     "region": "snowdonia",
     "query": "wales reservoir",
     "downloaded": "2026-02-03",
-    "usage": "journal-hero"
+    "note": "Hero image for journal article: welsh-3000s-challenge"
   },
-  "images/journal/bodyboarding-wales-beaches-hero-557e6572.jpg": {
+  "images/journal/bodyboarding-wales-beaches-hero-9c03e46c.jpg": {
     "creator": "Gwyrosydd",
     "creator_url": "https://www.flickr.com/photos/57201140@N08",
     "source": "https://www.flickr.com/photos/57201140@N08/8690205546",
@@ -7061,13 +7115,13 @@
     "width": 1024,
     "height": 683,
     "aspect_ratio": 1.5,
-    "category": "coastline",
+    "category": "journal-hero",
     "region": "gower",
     "query": "wales sea cliffs",
     "downloaded": "2026-02-03",
-    "usage": "journal-hero"
+    "note": "Hero image for journal article: bodyboarding-wales-beaches"
   },
-  "images/journal/couples-brecon-beacons-weekend-hero-057d4de0.jpg": {
+  "images/journal/couples-brecon-beacons-weekend-hero-b288f4d8.jpg": {
     "creator": "dolbinator1000",
     "creator_url": "https://www.flickr.com/photos/126654539@N08",
     "source": "https://www.flickr.com/photos/126654539@N08/19691578100",
@@ -7090,13 +7144,13 @@
     "width": 1024,
     "height": 682,
     "aspect_ratio": 1.5,
-    "category": "lake",
+    "category": "journal-hero",
     "region": "brecon-beacons",
     "query": "wales reservoir",
     "downloaded": "2026-02-03",
-    "usage": "journal-hero"
+    "note": "Hero image for journal article: couples-brecon-beacons-weekend"
   },
-  "images/journal/solo-adventure-safety-checklist-hero-414dfaa2.jpg": {
+  "images/journal/solo-adventure-safety-checklist-hero-9c948e55.jpg": {
     "creator": "Matt From London",
     "creator_url": "https://www.flickr.com/photos/57868312@N00",
     "source": "https://www.flickr.com/photos/57868312@N00/40230604",
@@ -7104,9 +7158,10 @@
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "query": "welsh hills",
     "downloaded": "2026-02-03",
-    "usage": "journal-hero"
+    "category": "journal-hero",
+    "note": "Hero image for journal article: solo-adventure-safety-checklist"
   },
-  "images/journal/adventure-photography-gear-hero-a26bcb34.jpg": {
+  "images/journal/adventure-photography-gear-hero-29aa3e67.jpg": {
     "creator": "Holly Norval",
     "creator_url": "https://www.flickr.com/photos/63833161@N05",
     "source": "https://www.flickr.com/photos/63833161@N05/20540703500",
@@ -7114,9 +7169,10 @@
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "query": "wales countryside",
     "downloaded": "2026-02-03",
-    "usage": "journal-hero"
+    "category": "journal-hero",
+    "note": "Hero image for journal article: adventure-photography-gear"
   },
-  "images/journal/christmas-new-year-wales-hero-96f5d259.jpg": {
+  "images/journal/christmas-new-year-wales-hero-6a551402.jpg": {
     "creator": "jess_star87",
     "creator_url": "https://www.flickr.com/photos/29058440@N00",
     "source": "https://www.flickr.com/photos/29058440@N00/11732830285",
@@ -7124,9 +7180,10 @@
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "query": "snowdonia wales",
     "downloaded": "2026-02-03",
-    "usage": "journal-hero"
+    "category": "journal-hero",
+    "note": "Hero image for journal article: christmas-new-year-wales"
   },
-  "images/journal/adventure-wales-platform-launch-hero-bfab34c9.jpg": {
+  "images/journal/adventure-wales-platform-launch-hero-256b95e0.jpg": {
     "creator": "LukePricePhotography",
     "creator_url": "https://www.flickr.com/photos/80192717@N08",
     "source": "https://www.flickr.com/photos/80192717@N08/24022027280",
@@ -7134,9 +7191,10 @@
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "query": "snowdonia wales",
     "downloaded": "2026-02-03",
-    "usage": "journal-hero"
+    "category": "journal-hero",
+    "note": "Hero image for journal article: adventure-wales-platform-launch"
   },
-  "images/journal/plas-y-brenin-national-centre-hero-827add0c.jpg": {
+  "images/journal/plas-y-brenin-national-centre-hero-86b44e97.jpg": {
     "creator": "ohefin",
     "creator_url": "https://www.flickr.com/photos/47515486@N05",
     "source": "https://www.flickr.com/photos/47515486@N05/13421436503",
@@ -7159,13 +7217,13 @@
     "width": 1024,
     "height": 478,
     "aspect_ratio": 2.14,
-    "category": "lake",
+    "category": "journal-hero",
     "region": "snowdonia",
     "query": "llyn wales",
     "downloaded": "2026-02-03",
-    "usage": "journal-hero"
+    "note": "Hero image for journal article: plas-y-brenin-national-centre"
   },
-  "images/journal/sea-swimming-safety-wales-hero-4e62ce4f.jpg": {
+  "images/journal/sea-swimming-safety-wales-hero-3623bbd8.jpg": {
     "creator": "selkovjr",
     "creator_url": "https://www.flickr.com/photos/14192663@N07",
     "source": "https://www.flickr.com/photos/14192663@N07/6218912438",
@@ -7188,13 +7246,13 @@
     "width": 1024,
     "height": 776,
     "aspect_ratio": 1.32,
-    "category": "coastline",
+    "category": "journal-hero",
     "region": "gower",
     "query": "wales sea cliffs",
     "downloaded": "2026-02-03",
-    "usage": "journal-hero"
+    "note": "Hero image for journal article: sea-swimming-safety-wales"
   },
-  "images/journal/pembrokeshire-coast-path-sections-hero-8f06efeb.jpg": {
+  "images/journal/pembrokeshire-coast-path-sections-hero-35ce1005.jpg": {
     "creator": "cattan2011",
     "creator_url": "https://www.flickr.com/photos/68166820@N08",
     "source": "https://www.flickr.com/photos/68166820@N08/46928668384",
@@ -7202,9 +7260,10 @@
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "query": "pembrokeshire coast wales",
     "downloaded": "2026-02-03",
-    "usage": "journal-hero"
+    "category": "journal-hero",
+    "note": "Hero image for journal article: pembrokeshire-coast-path-sections"
   },
-  "images/journal/gower-peninsula-adventure-guide-hero-2c5300d8.jpg": {
+  "images/journal/gower-peninsula-adventure-guide-hero-c5f419d2.jpg": {
     "creator": "Griffin Guiding",
     "creator_url": "https://www.flickr.com/photos/79553013@N00",
     "source": "https://www.flickr.com/photos/79553013@N00/7489554814",
@@ -7227,13 +7286,13 @@
     "width": 1024,
     "height": 768,
     "aspect_ratio": 1.33,
-    "category": "coastline",
+    "category": "journal-hero",
     "region": "gower",
     "query": "welsh beach scenic",
     "downloaded": "2026-02-03",
-    "usage": "journal-hero"
+    "note": "Hero image for journal article: gower-peninsula-adventure-guide"
   },
-  "images/journal/first-aid-kit-adventure-wales-hero-0048a205.jpg": {
+  "images/journal/first-aid-kit-adventure-wales-hero-773ee5c8.jpg": {
     "creator": "jay galvin",
     "creator_url": "https://www.flickr.com/photos/36957368@N00",
     "source": "https://www.flickr.com/photos/36957368@N00/8253378067",
@@ -7241,6 +7300,18 @@
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "query": "brecon beacons wales",
     "downloaded": "2026-02-03",
-    "usage": "journal-hero"
+    "category": "journal-hero",
+    "note": "Hero image for journal article: first-aid-kit-adventure-wales"
+  },
+  "images/journal/mountain-rescue-how-it-works-hero-2043fae9.jpg": {
+    "creator": "Jim Linwood",
+    "creator_url": "https://www.flickr.com/photos/54238124@N00",
+    "source": "https://www.flickr.com/photos/54238124@N00/7413879292",
+    "license": "BY",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "query": "snowdonia wales",
+    "downloaded": "2026-02-03",
+    "category": "journal-hero",
+    "note": "Hero image for journal article: mountain-rescue-how-it-works"
   }
 }

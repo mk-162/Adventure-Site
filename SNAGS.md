@@ -184,6 +184,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 - [ ] `/activities` - Duplicate images reported on this page.
 - [ ] `/carmarthenshire/things-to-do/coasteering` - Broken (no images/content, duplicate holding content)
 - [ ] `/carmarthenshire` - Page appears blank
+- [ ] Activity Itineraries: Missing images reported.
 
 **Map Provider Consideration**
 
@@ -205,8 +206,21 @@ The following pages are confirmed missing hero images in the seed data/code:
 - [ ] UI: "Activities", "Operators", etc. links at top look like buttons -> Make them functional anchors/links.
 - [ ] UI: Weather Widget -> Too big. Move to right, make smaller.
   - [ ] UI: Climate Chart -> Move to a "Tab" inside the weather widget.
+- [ ] Content: "Get In There" (Transport) section needs massive expansion:
+  - Links to Railway & Bus timetables.
+  - Taxi services info (list of top minicabs).
+- [ ] Content: Add Video to Location pages.
+- [ ] Layout: "Top Experiences" needs to be prominent at the top.
+- [ ] Feature: "Top Experiences" List Enhancements:
+  - [ ] Scope: Include Attractions, Walks, Sightseeing, Beaches (not just businesses).
+  - [ ] Feature: Logged-in users can Star/Like items.
+  - [ ] Data: Display "Total Stars" (initially seeded from Google Review "Likes").
+  - [ ] Data: Display Google Review Star Rating on the list.
 
-**Plan Your Visit / Utilities**
+**Map & Geodata**
+
+- [ ] UI: Map POI Tooltips -> Add more info (Image + Link to page).
+- [ ] Bug: Map appears *over* the Navigation bar on scroll (Z-index issue).
 
 - [ ] Content: "Getting There" link is "very bad" -> Improve or fix
 - [ ] Feature: "Essential Gear" -> Show product grid via Amazon API (engaging/useful items)

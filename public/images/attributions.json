@@ -120,7 +120,7 @@
     "downloaded": "2026-02-03"
   },
   "images/activities/gorge-walking-hero.jpg": {
-    "photographer": "Miguel Ángel Sanz",
+    "photographer": "Miguel \u00c1ngel Sanz",
     "photographer_url": "https://unsplash.com/@maswdl95",
     "photo_url": "https://unsplash.com/photos/a-waterfall-in-a-forest-VXugFtMiymA",
     "downloaded": "2026-02-03"
@@ -1354,7 +1354,7 @@
     "license": "BY",
     "license_version": "2.0",
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
-    "title": "Chippenham Park – 14-10-12",
+    "title": "Chippenham Park \u2013 14-10-12",
     "tags": [
       "autumn",
       "borders",
@@ -1569,7 +1569,7 @@
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "title": "Coed y Brenin",
     "tags": [
-      "90️⃣7",
+      "90\ufe0f\u20e37",
       "90ufe0fu20e37",
       "bike",
       "coedybrenin",
@@ -2293,8 +2293,8 @@
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "title": "Leaping Legends",
     "tags": [
-      "ハワイ",
-      "하화이",
+      "\u30cf\u30ef\u30a4",
+      "\ud558\ud654\uc774",
       "70200mm",
       "art",
       "bay",
@@ -2768,8 +2768,8 @@
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "title": "Surf in Boucan Canot",
     "tags": [
-      "rĂŠunion",
-      "réunion",
+      "r\u0102\u0160union",
+      "r\u00e9union",
       "reunionisland",
       "ru00e9union",
       "surf",
@@ -5907,7 +5907,7 @@
     "source": "https://www.flickr.com/photos/80833582@N02/7422329440",
     "license": "BY",
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
-    "title": "ONOIR MONTREAL: 124 Rue Prince Arthur E Montréal QC H2X 1B5",
+    "title": "ONOIR MONTREAL: 124 Rue Prince Arthur E Montr\u00e9al QC H2X 1B5",
     "tags": [
       "adventure",
       "art",
@@ -6293,7 +6293,7 @@
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "title": "Millpond Campground",
     "tags": [
-      "america’sgreatoutdoors",
+      "america\u2019sgreatoutdoors",
       "americau2019sgreatoutdoors",
       "backpacking",
       "blm",
@@ -6405,14 +6405,6 @@
     "downloaded": "2026-02-04",
     "usage": "journal/best-hiking-boots-welsh-terrain"
   },
-  "images/journal/best-viewpoints-snowdonia-hero-8162bfde.jpg": {
-    "photographer": "Albert Hyseni",
-    "photographer_url": "https://unsplash.com/@alberthyseni",
-    "photo_url": "https://unsplash.com/photos/snow-covered-mountain-under-white-clouds-during-daytime-V1KQzlh6u-M",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal/best-viewpoints-snowdonia"
-  },
   "images/journal/best-waterfalls-wales-hero-714eeb6f.jpg": {
     "photographer": "Peter Robbins",
     "photographer_url": "https://unsplash.com/@prphotography262",
@@ -6468,25 +6460,6 @@
     "source": "unsplash",
     "downloaded": "2026-02-04",
     "usage": "journal/camping-in-rain-gear"
-  },
-  "images/journal/horse-riding-pony-trekking-wales-hero-809311ae.jpg": {
-    "creator": "U.S. Department of Agriculture",
-    "creator_url": null,
-    "source": "https://www.rawpixel.com/image/3306125/free-photo-image-horse-rider-adventure",
-    "license": "CC0",
-    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "title": "Ranch hand Kyle Conlin and",
-    "tags": [
-      "animal man",
-      "countryside",
-      "countryside vacation",
-      "farm",
-      "horse"
-    ],
-    "width": 5184,
-    "height": 3326,
-    "downloaded": "2026-02-04",
-    "usage": "journal/horse-riding-pony-trekking-wales"
   },
   "images/journal/packing-list-adventure-weekend-wales-hero-9e5c82f5.jpg": {
     "creator": null,
@@ -6556,7 +6529,7 @@
     "usage": "journal/coasteering-january"
   },
   "images/journal/coasteering-with-kids-hero-73f1c8b9.jpg": {
-    "photographer": "Aarón Blanco Tejedor",
+    "photographer": "Aar\u00f3n Blanco Tejedor",
     "photographer_url": "https://unsplash.com/@the_meaning_of_love",
     "photo_url": "https://unsplash.com/photos/family-enjoying-a-sunny-day-at-the-beach-lUyByQP6wKQ",
     "source": "unsplash",
@@ -6659,14 +6632,6 @@
     "downloaded": "2026-02-04",
     "usage": "journal/mountain-biking-trail-centres-ranked"
   },
-  "images/journal/mountain-rescue-how-it-works-hero-767b2cd3.jpg": {
-    "photographer": "Seung Hyun Lee",
-    "photographer_url": "https://unsplash.com/@hyuny0407",
-    "photo_url": "https://unsplash.com/photos/helicopter-rescues-person-from-cliff-face-ljUEBb3P_yI",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal/mountain-rescue-how-it-works"
-  },
   "images/journal/mountain-walking-welsh-3-peaks-hero-7ae7b353.jpg": {
     "photographer": "Isa",
     "photographer_url": "https://unsplash.com/@isa_isa",
@@ -6684,7 +6649,7 @@
     "usage": "journal/mtb-hire-vs-bring-your-own"
   },
   "images/journal/navigation-skills-welsh-mountains-hero-396aee87.jpg": {
-    "photographer": "Maël BALLAND",
+    "photographer": "Ma\u00ebl BALLAND",
     "photographer_url": "https://unsplash.com/@mael_balland",
     "photo_url": "https://unsplash.com/photos/person-in-gray-coat-holding-white-printer-paper-dd7C3_k5gnk",
     "source": "unsplash",
@@ -6811,14 +6776,6 @@
     "downloaded": "2026-02-04",
     "usage": "journal/sea-swimming-safety-wales"
   },
-  "images/journal/self-guided-vs-guided-adventures-hero-0bd0db42.jpg": {
-    "photographer": "Lex Brogan",
-    "photographer_url": "https://unsplash.com/@lexbrogan",
-    "photo_url": "https://unsplash.com/photos/no-smoking-and-flash-flood-warning-signs-in-canyon-vhqaQQo8Gtc",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal/self-guided-vs-guided-adventures"
-  },
   "images/journal/shoulder-season-deals-hero-4f4516ff.jpg": {
     "photographer": "Bruno Aguirre",
     "photographer_url": "https://unsplash.com/@elcuervo",
@@ -6826,14 +6783,6 @@
     "source": "unsplash",
     "downloaded": "2026-02-04",
     "usage": "journal/shoulder-season-deals"
-  },
-  "images/journal/small-operators-emerging-wales-hero-03d0a9ce.jpg": {
-    "photographer": "Ed Wingate",
-    "photographer_url": "https://unsplash.com/@ed_wingate",
-    "photo_url": "https://unsplash.com/photos/people-poling-boats-through-a-grassy-wetland-xG-gaNxYjFE",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal/small-operators-emerging-wales"
   },
   "images/journal/snowdonia-adventure-weekend-report-hero-91432a07.jpg": {
     "photographer": "Rudy Issa",
@@ -6899,30 +6848,6 @@
     "downloaded": "2026-02-04",
     "usage": "journal/underground-adventures-wales"
   },
-  "images/journal/van-life-gear-touring-wales-hero-af0014ea.jpg": {
-    "photographer": "Fabio Sasso",
-    "photographer_url": "https://unsplash.com/@abduzeedo",
-    "photo_url": "https://unsplash.com/photos/sunset-over-the-ocean-with-a-satellite-dish-lwN2fSrjT2U",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal/van-life-gear-touring-wales"
-  },
-  "images/journal/vanlife-west-coast-wales-hero-456a2e4a.jpg": {
-    "photographer": "Taylor Heery",
-    "photographer_url": "https://unsplash.com/@taylorheeryphoto",
-    "photo_url": "https://unsplash.com/photos/black-car-on-road-between-trees-during-daytime-YOhDkfsGlKU",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal/vanlife-west-coast-wales"
-  },
-  "images/journal/wales-adventure-awards-2025-hero-8b01355a.jpg": {
-    "photographer": "Sunil Chandra Sharma",
-    "photographer_url": "https://unsplash.com/@sunilcsharma",
-    "photo_url": "https://unsplash.com/photos/couple-high-fiving-with-snowy-mountains-behind-them-kqprmXBffxg",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal/wales-adventure-awards-2025"
-  },
   "images/journal/weather-turns-snowdon-hero-7dc36752.jpg": {
     "photographer": "Didier VEILLON",
     "photographer_url": "https://unsplash.com/@didpics",
@@ -6930,14 +6855,6 @@
     "source": "unsplash",
     "downloaded": "2026-02-04",
     "usage": "journal/weather-turns-snowdon"
-  },
-  "images/journal/welsh-3000s-attempt-hero-2569717a.jpg": {
-    "photographer": "Wladislaw Sokolowskij",
-    "photographer_url": "https://unsplash.com/@wsokolowskij",
-    "photo_url": "https://unsplash.com/photos/jagged-mountain-peaks-under-a-clear-blue-sky-_k3y1QiCYUw",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal/welsh-3000s-attempt"
   },
   "images/journal/welsh-3000s-challenge-hero-fd9c3a9b.jpg": {
     "photographer": "Thomas Tygreat",
@@ -6995,14 +6912,6 @@
     "downloaded": "2026-02-04",
     "usage": "journal/wildlife-watching-wales"
   },
-  "images/journal/winter-hiking-gear-welsh-mountains-hero-2887882b.jpg": {
-    "photographer": "Himmel S",
-    "photographer_url": "https://unsplash.com/@skyhung1228",
-    "photo_url": "https://unsplash.com/photos/a-house-in-the-middle-of-a-snowy-mountain-amnYKGQiQOg",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal/winter-hiking-gear-welsh-mountains"
-  },
   "images/journal/wye-valley-adventure-border-hero-2f445034.jpg": {
     "photographer": "Hayley Wild",
     "photographer_url": "https://unsplash.com/@hayleywild",
@@ -7010,14 +6919,6 @@
     "source": "unsplash",
     "downloaded": "2026-02-04",
     "usage": "journal/wye-valley-adventure-border"
-  },
-  "images/journal/zip-world-empire-guide-hero-335b85b1.jpg": {
-    "photographer": "Seung Hyun Lee",
-    "photographer_url": "https://unsplash.com/@hyuny0407",
-    "photo_url": "https://unsplash.com/photos/helicopter-rescues-person-from-cliff-face-ljUEBb3P_yI",
-    "source": "unsplash",
-    "downloaded": "2026-02-04",
-    "usage": "journal/zip-world-empire-guide"
   },
   "images/journal/first-aid-kit-adventure-wales-hero-af670736.jpg": {
     "photographer": "Vitaly Gariev",
@@ -7044,7 +6945,7 @@
     "usage": "journal/mid-wales-empty-quarter"
   },
   "images/journal/mtb-trail-centre-tour-hero-6d7a5e57.jpg": {
-    "photographer": "Daniel Dvorský",
+    "photographer": "Daniel Dvorsk\u00fd",
     "photographer_url": "https://unsplash.com/@odd_look",
     "photo_url": "https://unsplash.com/photos/a-man-riding-a-bike-through-a-forest-filled-with-trees-9ZDlZ70z8Lk",
     "source": "unsplash",
@@ -7090,5 +6991,93 @@
     "source": "unsplash",
     "downloaded": "2026-02-04",
     "usage": "journal/via-ferrata-wales"
+  },
+  "images/journal/self-guided-vs-guided-adventures-hero-d85f52c9.jpg": {
+    "photographer": "Agris Belkovskis",
+    "photographer_url": "https://unsplash.com/@agrisbk",
+    "photo_url": "https://unsplash.com/photos/brown-grass-field-near-mountain-under-white-clouds-during-daytime-rWydgbcywdA",
+    "source": "unsplash",
+    "downloaded": "2026-02-04",
+    "usage": "journal-hero"
+  },
+  "images/journal/welsh-3000s-attempt-hero-098b891f.jpg": {
+    "photographer": "Korng Sok",
+    "photographer_url": "https://unsplash.com/@korng_sok",
+    "photo_url": "https://unsplash.com/photos/a-group-of-animals-in-a-grassy-field-Fbyx9GMnSms",
+    "source": "unsplash",
+    "downloaded": "2026-02-04",
+    "usage": "journal-hero"
+  },
+  "images/journal/winter-hiking-gear-welsh-mountains-hero-808641a0.jpg": {
+    "photographer": "Ste Wright",
+    "photographer_url": "https://unsplash.com/@sjwright",
+    "photo_url": "https://unsplash.com/photos/snow-mountain-landscape-with-body-of-water-and-fog-during-daytime-O47Nvg5oVQw",
+    "source": "unsplash",
+    "downloaded": "2026-02-04",
+    "usage": "journal-hero"
+  },
+  "images/journal/van-life-gear-touring-wales-hero-c59de08b.jpg": {
+    "photographer": "Abdullah Ammar",
+    "photographer_url": "https://unsplash.com/@abdmmar",
+    "photo_url": "https://unsplash.com/photos/a-group-of-tents-sitting-on-top-of-a-lush-green-hillside-7NqJzpIHeOE",
+    "source": "unsplash",
+    "downloaded": "2026-02-04",
+    "usage": "journal-hero"
+  },
+  "images/journal/zip-world-empire-guide-hero-ce75977f.jpg": {
+    "photographer": "Sebastian Herrmann",
+    "photographer_url": "https://unsplash.com/@herrherrmann",
+    "photo_url": "https://unsplash.com/photos/green-grass-field-and-mountains-during-daytime-L2ElArNgxGk",
+    "source": "unsplash",
+    "downloaded": "2026-02-04",
+    "usage": "journal-hero"
+  },
+  "images/journal/horse-riding-pony-trekking-wales-hero-bb595ea5.jpg": {
+    "photographer": "James Kelly-Smith",
+    "photographer_url": "https://unsplash.com/@jksphotographer",
+    "photo_url": "https://unsplash.com/photos/a-view-of-a-valley-with-mountains-in-the-background-sxK9RVpIgOg",
+    "source": "unsplash",
+    "downloaded": "2026-02-04",
+    "usage": "journal-hero"
+  },
+  "images/journal/wales-adventure-awards-2025-hero-b0344254.jpg": {
+    "photographer": "Shawn",
+    "photographer_url": "https://unsplash.com/@shawnanggg",
+    "photo_url": "https://unsplash.com/photos/a-house-on-the-side-of-a-hill-next-to-a-body-of-water-KrHZJbALyCE",
+    "source": "unsplash",
+    "downloaded": "2026-02-04",
+    "usage": "journal-hero"
+  },
+  "images/journal/best-viewpoints-snowdonia-hero-808641a0.jpg": {
+    "photographer": "Ste Wright",
+    "photographer_url": "https://unsplash.com/@sjwright",
+    "photo_url": "https://unsplash.com/photos/snow-mountain-landscape-with-body-of-water-and-fog-during-daytime-O47Nvg5oVQw",
+    "source": "unsplash",
+    "downloaded": "2026-02-04",
+    "usage": "journal-hero"
+  },
+  "images/journal/small-operators-emerging-wales-hero-e31ff24a.jpg": {
+    "photographer": "Callum Blacoe",
+    "photographer_url": "https://unsplash.com/@blayco",
+    "photo_url": "https://unsplash.com/photos/green-grass-field-near-body-of-water-during-daytime-IZ69b2iy2iU",
+    "source": "unsplash",
+    "downloaded": "2026-02-04",
+    "usage": "journal-hero"
+  },
+  "images/journal/vanlife-west-coast-wales-hero-e04f0a51.jpg": {
+    "photographer": "Michael Hamments",
+    "photographer_url": "https://unsplash.com/@35mmtodgt",
+    "photo_url": "https://unsplash.com/photos/a-road-with-a-curve-in-the-middle-of-it-ILgI6LnbyUQ",
+    "source": "unsplash",
+    "downloaded": "2026-02-04",
+    "usage": "journal-hero"
+  },
+  "images/journal/mountain-rescue-how-it-works-hero-c2f2b2b7.jpg": {
+    "photographer": "Benjamin Blyth",
+    "photographer_url": "https://unsplash.com/@bjblyth",
+    "photo_url": "https://unsplash.com/photos/a-helicopter-flying-over-a-mountain-with-a-waterfall-kLR9Olnm4dc",
+    "source": "unsplash",
+    "downloaded": "2026-02-04",
+    "usage": "journal-hero"
   }
 }

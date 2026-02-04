@@ -107,7 +107,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 - [x] Premium badges downsized — FIXED
 - [ ] Content: Premium partners need images
-- [ ] Feature: Partners should show locations (add map with drop pins)
+- [x] Feature: Partners should show locations (add map with drop pins) — real Leaflet map on operator pages
 - [x] Interaction: Clicking a map pin should show a mini link/popup — already has rich popups with image, link, type badge
 - [ ] Integration: Fetch star ratings from TripAdvisor API and display TripAdvisor logo
 
@@ -129,7 +129,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 **Directory (Premium & General)**
 
-- [ ] Feature: Add Map with drop pins to premium page
+- [x] Feature: Add Map with drop pins to premium page — map on all operator pages with lat/lng
 - [ ] Feature: Display metadata (opening times, seasonality, etc.) against partners
 - [x] SEO: Create landing pages for filtered views (e.g., "Snowdonia Caving"). Needs dedicated URL/Navigation. — combo pages already exist + cross-linked
 - [ ] UI: Search Box is impossible to see (missing hero?).

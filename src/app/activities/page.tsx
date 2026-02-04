@@ -23,11 +23,11 @@ export default async function ActivitiesPage() {
           </div>
           
           <h1 className="text-3xl lg:text-4xl font-bold text-[#1e3a4c] mb-3">
-            Adventure Activities
+            What Can You Do in Wales
           </h1>
           <p className="text-gray-600 max-w-2xl">
-            Discover unforgettable experiences across Wales - from coasteering to mountain climbing, 
-            caving to kayaking.
+            78 activities with honest suitability info. Filter by region, type, difficulty, and budget
+            to find what actually fits your group.
           </p>
         </div>
 
@@ -69,5 +69,5 @@ export default async function ActivitiesPage() {
 
 export const metadata = {
   title: "Adventure Activities | Adventure Wales",
-  description: "Discover unforgettable adventure activities across Wales - coasteering, climbing, kayaking, and more",
+  description: "78 Welsh adventures with real suitability info - who it's for, who should skip it, difficulty, prices, and local tips. Filter by region and type.",
 };

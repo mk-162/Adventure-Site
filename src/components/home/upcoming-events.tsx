@@ -31,8 +31,8 @@ export function UpcomingEvents({ events }: UpcomingEventsProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
           <div>
-            <span className="text-[#1e3a4c] font-bold uppercase tracking-wider text-sm">Mark Your Calendar</span>
-            <h2 className="mt-2 text-3xl font-bold text-[#1e3a4c]">Upcoming Events</h2>
+            <span className="text-[#1e3a4c] font-bold uppercase tracking-wider text-sm">Coming Up</span>
+            <h2 className="mt-2 text-3xl font-bold text-[#1e3a4c]">Races & Events Worth Entering</h2>
           </div>
           <div className="flex gap-2 overflow-x-auto no-scrollbar">
             <button className="shrink-0 px-4 py-2 rounded-full bg-[#1e3a4c] text-white text-sm font-bold hover:bg-[#1e3a4c]/90 transition-colors">All</button>

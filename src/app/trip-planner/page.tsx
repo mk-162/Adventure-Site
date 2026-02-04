@@ -41,10 +41,10 @@ export default async function TripPlannerPage() {
             AI-Powered Trip Planning
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4">
-            Plan Your Welsh Adventure
+            Build Your Trip
           </h1>
           <p className="text-white/70 text-lg max-w-xl mx-auto">
-            Tell us what you're looking for and we'll create a personalised itinerary
+            Dates, region, interests, group size. We'll match you to the right adventures and build a route that works.
           </p>
         </div>
 
@@ -212,5 +212,5 @@ export default async function TripPlannerPage() {
 
 export const metadata = {
   title: "Trip Planner | Adventure Wales",
-  description: "Plan your perfect Welsh adventure with our AI-powered trip planner",
+  description: "Build a Welsh adventure trip matched to your dates, group, and interests. Real routes with drive times, booking tips, and weather backup plans.",
 };

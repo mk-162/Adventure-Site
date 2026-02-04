@@ -29,7 +29,7 @@ export default async function DirectoryPage() {
             Adventure Operators
           </h1>
           <p className="text-white/80">
-            Find and book with trusted local providers
+            30+ vetted Welsh operators. Qualified, insured, and actually good at what they do.
           </p>
 
           {/* Search */}
@@ -128,10 +128,10 @@ export default async function DirectoryPage() {
         {/* Claim CTA */}
         <section className="mt-12 bg-gray-50 rounded-2xl p-8 text-center">
           <h3 className="text-xl font-bold text-[#1e3a4c] mb-2">
-            Own a business in Wales?
+            Run an adventure business in Wales?
           </h3>
           <p className="text-gray-600 mb-4">
-            Claim your free listing and reach thousands of adventure travelers
+            Free listing if you're qualified and insured. We want every good operator on here.
           </p>
           <ButtonLink href="/directory/claim" variant="accent">
             Claim Your Listing
@@ -141,3 +141,8 @@ export default async function DirectoryPage() {
     </div>
   );
 }
+
+export const metadata = {
+  title: "Adventure Operators | Adventure Wales",
+  description: "30+ vetted Welsh adventure operators. Qualified, insured, and reviewed. Find the right guide for coasteering, hiking, biking, and more.",
+};

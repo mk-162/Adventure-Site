@@ -24,8 +24,8 @@ export function RegionsGrid({ regions }: RegionsGridProps) {
     <section className="pt-24 sm:pt-28 pb-12 sm:pb-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8 sm:mb-12">
-          <span className="text-[#f97316] font-bold uppercase tracking-wider text-sm">Explore by Region</span>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-[#1e3a4c]">Discover Wales' Hidden Gems</h2>
+          <span className="text-[#f97316] font-bold uppercase tracking-wider text-sm">Where in Wales</span>
+          <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-[#1e3a4c]">Each Region Has Its Thing</h2>
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">

@@ -63,10 +63,10 @@ export default function GuidesPage() {
       <section className="bg-[#1e3a4c] py-12">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Adventure Guides
+            Honest Guides
           </h1>
           <p className="text-gray-300 text-lg">
-            Everything you need to plan your Welsh adventure
+            What to bring, what to skip, and what each season actually looks like. No fluff.
           </p>
         </div>
       </section>
@@ -153,3 +153,8 @@ export default function GuidesPage() {
     </div>
   );
 }
+
+export const metadata = {
+  title: "Guides | Adventure Wales",
+  description: "Practical guides for Welsh adventures - what gear to bring, what to skip, seasonal conditions, and honest activity breakdowns.",
+};

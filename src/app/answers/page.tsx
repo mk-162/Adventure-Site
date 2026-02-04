@@ -157,11 +157,11 @@ export default async function AnswersPage() {
           </div>
           
           <h1 className="text-3xl lg:text-4xl font-bold text-[#1e3a4c] mb-3">
-            Answers & Travel Guides
+            Quick Answers
           </h1>
           <p className="text-gray-600 max-w-2xl">
-            Expert answers to your questions about adventure travel in Wales. 
-            From the best times to visit to insider tips on activities.
+            The questions everyone asks before their first Welsh adventure.
+            Straight answers with local knowledge, no waffle.
           </p>
         </div>
 
@@ -326,6 +326,6 @@ export default async function AnswersPage() {
 }
 
 export const metadata = {
-  title: "Answers & Travel Guides | Adventure Wales",
-  description: "Expert answers to your questions about adventure travel in Wales. Find the best times to visit, top activities, and insider tips.",
+  title: "Answers & FAQs | Adventure Wales",
+  description: "Straight answers to common Welsh adventure questions. Best Snowdon routes, when to visit, what to pack, and the stuff guidebooks skip.",
 };

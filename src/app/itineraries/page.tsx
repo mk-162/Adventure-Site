@@ -113,11 +113,11 @@ export default async function ItinerariesPage() {
           </div>
           
           <h1 className="text-3xl lg:text-4xl font-bold text-[#1e3a4c] mb-3">
-            Adventure Itineraries
+            Tried & Tested Trip Plans
           </h1>
           <p className="text-gray-600 max-w-2xl">
-            Expertly crafted multi-day adventures across Wales. From adrenaline-packed weekends to 
-            family-friendly explorations, find your perfect trip.
+            Multi-day routes that account for drive times, booking windows, and Welsh weather.
+            Each one tells you who it suits, what it costs, and what to do when it rains.
           </p>
         </div>
 
@@ -242,9 +242,9 @@ export default async function ItinerariesPage() {
 
         {/* CTA Section */}
         <div className="bg-[#1e3a4c] rounded-2xl p-8 text-center text-white mb-8">
-          <h2 className="text-2xl font-bold mb-3">Can't find what you're looking for?</h2>
+          <h2 className="text-2xl font-bold mb-3">Need something specific?</h2>
           <p className="text-white/80 mb-6 max-w-lg mx-auto">
-            Our experts can create a custom itinerary tailored to your preferences, budget, and timeframe.
+            Tell us your dates, group, and what you're into. We'll build a route that actually works.
           </p>
           <Link 
             href="/contact"
@@ -260,6 +260,6 @@ export default async function ItinerariesPage() {
 }
 
 export const metadata = {
-  title: "Adventure Itineraries | Adventure Wales",
-  description: "Expertly crafted multi-day adventure itineraries across Wales. Find your perfect trip from adrenaline weekends to family explorations.",
+  title: "Trip Plans | Adventure Wales",
+  description: "15 tested multi-day Welsh adventure routes. Real logistics, honest difficulty ratings, weather backup plans, and who each trip actually suits.",
 };

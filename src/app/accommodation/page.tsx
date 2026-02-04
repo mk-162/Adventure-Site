@@ -39,10 +39,11 @@ export default async function AccommodationListingPage() {
           </div>
           
           <h1 className="text-3xl lg:text-4xl font-bold text-[#1e3a4c] mb-3">
-            Where to Stay in Wales
+            Where to Stay
           </h1>
           <p className="text-gray-600 max-w-2xl">
-            From adventure-ready hostels to cozy B&Bs, find the perfect base for your Welsh adventure.
+            70 places that actually work for adventurers. Gear drying, early breakfasts, proximity to
+            the good stuff. Filter by type, region, and what matters to you.
           </p>
         </div>
 
@@ -148,5 +149,5 @@ export default async function AccommodationListingPage() {
 
 export const metadata = {
   title: "Where to Stay | Adventure Wales",
-  description: "Find adventure-friendly accommodation across Wales - hostels, bunkhouses, campsites, and more",
+  description: "70 adventure-friendly places to stay in Wales. Sorted by what's nearby, gear storage, and whether they'll let you drip-dry in the hallway.",
 };

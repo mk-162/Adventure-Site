@@ -45,10 +45,10 @@ export function Newsletter() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="text-center lg:text-left">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white drop-shadow-lg">
-              Get Inspired for Your Next Adventure
+              Weekly Welsh Adventure Intel
             </h2>
             <p className="mt-3 text-lg text-slate-200 drop-shadow-md">
-              Subscribe for exclusive deals, travel tips, and hidden gems across Wales.
+              What's good right now, what to book ahead, and local tips you won't find elsewhere.
             </p>
           </div>
           

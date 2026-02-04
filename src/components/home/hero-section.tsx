@@ -13,9 +13,9 @@ const heroImages = [
 ];
 
 const stats = [
-  { icon: Mountain, value: "45+", label: "Activities" },
+  { icon: Mountain, value: "78", label: "Adventures" },
   { icon: Waves, value: "11", label: "Regions" },
-  { icon: Bike, value: "15", label: "Trip Itineraries" },
+  { icon: Bike, value: "15", label: "Trip Plans" },
 ];
 
 export function HeroSection() {
@@ -75,20 +75,19 @@ export function HeroSection() {
                 Adventure Wales
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight">
-                Your Welsh Adventure
+                Wales.
                 <br />
-                <span className="text-[#f97316]">Starts Here</span>
+                <span className="text-[#f97316]">Properly Wild.</span>
               </h1>
               <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-slate-200 max-w-2xl">
-                Hour-by-hour trip guides with route maps, wet weather plans, and budget alternatives.
-                Real adventures, properly planned.
+                78 adventures. 11 regions. Honest info on who it suits, what it costs, and what the locals know.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link
                   href="/itineraries"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-[#f97316] hover:bg-[#f97316]/90 text-white font-bold rounded-2xl transition-all shadow-xl hover:shadow-2xl hover:scale-105"
                 >
-                  Plan Your Trip
+                  Find Your Adventure
                   <ArrowRight className="h-5 w-5" />
                 </Link>
                 <Link

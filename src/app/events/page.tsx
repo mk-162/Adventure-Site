@@ -21,10 +21,10 @@ export default async function EventsPage() {
           </nav>
 
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
-            Events & Races
+            Races & Events
           </h1>
           <p className="text-white/80">
-            Races, festivals, and adventure events across Wales
+            Trail runs, triathlons, MTB races, and adventure festivals across Wales. With honest difficulty info so you know what you're signing up for.
           </p>
         </div>
       </section>
@@ -71,3 +71,8 @@ export default async function EventsPage() {
     </div>
   );
 }
+
+export const metadata = {
+  title: "Races & Events | Adventure Wales",
+  description: "Trail runs, triathlons, MTB races, and adventure festivals across Wales. With honest difficulty info and what you're actually signing up for.",
+};

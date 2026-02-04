@@ -1,15 +1,15 @@
 ---
 slug: home
-title: "Adventure Wales - Your Guide to Outdoor Adventure in Wales"
+title: "Adventure Wales - Honest Guide to Outdoor Adventure in Wales"
 ---
 
 # Hero Section
 
 ## Headline
-Unleash Your Wild Side in Wales!
+Wales. Properly Wild.
 
 ## Subheadline
-Discover and book unforgettable outdoor adventures across the breathtaking landscapes of Wales.
+78 adventures. 11 regions. Zero fluff. Find what actually suits you.
 
 ## CTA Text
 Find Your Adventure
@@ -18,59 +18,59 @@ Find Your Adventure
 
 # Introduction
 
-Welcome to Adventure Wales, your gateway to experiencing the raw beauty and thrilling activities that this incredible country has to offer. We're here to connect you with the best local guides and unforgettable experiences, from adrenaline-pumping adventures to serene explorations of the Welsh landscape.
+We're not a travel brochure. We tell you which Snowdon route fits your fitness, which coastline stays calm when the wind picks up, and which operators actually know what they're doing. Real local knowledge for people who want to get outdoors, not read about it.
 
-Wales is a land of dramatic coastlines, towering mountains, and lush valleys, making it the perfect playground for outdoor enthusiasts. Whether you're seeking the challenge of conquering Snowdon, the thrill of coasteering along the Pembrokeshire coast, or the tranquility of kayaking on a hidden lake, Adventure Wales has something for everyone.
+Every activity on here includes who it's for, who should skip it, and what the locals know that tourists don't. Because picking the right adventure beats picking a pretty one.
 
 ---
 
 # Featured Regions
 
 ## Snowdonia
-Snowdonia is a haven for hikers and climbers, boasting the iconic Snowdon peak and thrilling adventures like Velocity 2 and Bounce Below. This rugged landscape promises unforgettable challenges and breathtaking views.
+Mountains, quarries, and some of Europe's best adventure infrastructure. Six Snowdon routes for six different fitness levels. World-class zip lines in repurposed slate mines. Gets busy on weekends - we'll tell you when to go.
 
 ## Pembrokeshire
-Pembrokeshire offers stunning coastal paths, golden beaches, and crystal-clear waters, perfect for coasteering, sea kayaking, and boat trips to Ramsey Island. Discover hidden coves and abundant wildlife in this coastal paradise.
+The coasteering capital of the UK. South-facing cliffs that stay warmer when everywhere else is getting battered. Less rain than Snowdonia, better beaches than Devon. Best from May to September.
 
 ## Brecon Beacons
-The Brecon Beacons are a land of rolling hills, ancient forests, and cascading waterfalls, ideal for hiking, mountain biking, and wild swimming. Explore the beauty of this natural playground and discover hidden gems around every corner.
+Quieter than Snowdonia, wilder than the Gower. Waterfalls you can actually swim in, mountain biking that won't kill you, and dark skies worth staying up for. Underrated by everyone except the people who keep coming back.
 
 ---
 
 # Popular Activities
 
 ## Coasteering
-Explore the rugged Welsh coastline with an exhilarating coasteering adventure, combining swimming, scrambling, and cliff jumping for an unforgettable experience. Discover hidden caves and stunning sea views along the way!
+Jump off cliffs, swim through caves, scramble along rocks you'd never find from a path. Pembrokeshire invented it. Suitable from age 8 up - no experience needed, just willingness to get properly cold and properly thrilled.
 
 ## Mountain Biking
-From the challenging trails of MinorTaur and Temtiwr to the adrenaline-fueled downhill runs at Antur Stiniog, Wales offers world-class mountain biking for all skill levels. Get ready to conquer the mountains!
+Coed y Brenin has purpose-built trails from family-gentle to leg-destroying. Antur Stiniog does downhill that rivals the Alps. BikePark Wales near Merthyr is the biggest in the UK. Hire bikes everywhere.
 
 ## Hiking
-From scaling Snowdon to exploring the Llanberis Path and tackling Crib Goch, Wales offers diverse hiking experiences for every adventurer. Discover breathtaking views and unforgettable landscapes with every step.
+Six routes up Snowdon alone - from the tourist path to the scramble where people die every year. We'll help you pick the right one. Plus hundreds of quieter walks the guidebooks skip.
 
 ## Zip Lining
-Experience the ultimate adrenaline rush on some of the fastest zip lines in the world, soaring through the Welsh landscape at Velocity 2 or navigating the twists and turns of the Fforest Coaster. Prepare for an unforgettable thrill!
+Velocity 2 in Penrhyn Quarry - the fastest zip line in Europe. Book months ahead or don't bother turning up. Minimum age 10, maximum fear level: high.
 
 ---
 
 # Why Adventure Wales?
 
-- Local expertise from guides who live and breathe Welsh adventure
-- Hand-picked activities for an unforgettable and authentic experience
-- Easy booking platform to plan your perfect Welsh adventure
-- Discover hidden gems and support local communities
+- We tell you who should skip it, not just who'll love it
+- Local knowledge from people who actually live here
+- Honest difficulty ratings - "moderate" means something specific
+- Every operator vetted, every price checked
 
 ---
 
 # Testimonial Section Headline
-"Absolutely incredible! The best adventure I've ever had."
+"Finally, a site that told us what we actually needed to know before booking."
 
 ---
 
 # Newsletter Section
 
 ## Headline
-Unlock Exclusive Adventures in Wales!
+Weekly Welsh Adventure Intel
 
 ## Description
-Subscribe to our newsletter for insider tips, exclusive deals, and the latest adventure inspiration, delivered straight to your inbox.
+One email a week. What's good right now, what to book ahead, and the stuff nobody else tells you. No spam. No fluff.

@@ -26,8 +26,8 @@ export function ActivitiesRow() {
     <section className="py-12 sm:py-16 bg-white border-y border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-8 sm:mb-10">
-          <span className="text-[#1e3a4c] font-bold uppercase tracking-wider text-sm">Find Your Passion</span>
-          <h2 className="mt-2 text-3xl font-bold text-[#1e3a4c]">Popular Activities</h2>
+          <span className="text-[#1e3a4c] font-bold uppercase tracking-wider text-sm">What Gets You Moving</span>
+          <h2 className="mt-2 text-3xl font-bold text-[#1e3a4c]">Pick Your Adventure</h2>
         </div>
 
         <div className="grid grid-cols-4 lg:grid-cols-8 gap-4 sm:gap-6">

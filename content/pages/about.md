@@ -5,52 +5,48 @@ title: "About Adventure Wales"
 
 # About Adventure Wales
 
-Adventure Wales is your gateway to unforgettable outdoor experiences in Wales. We believe that adventure isn't just about adrenaline; it's about connecting with nature, challenging yourself, and creating lasting memories. Our mission is to empower you to discover the wild beauty of Wales, from its towering mountains and dramatic coastlines to its hidden valleys and ancient forests. We built this site because we're passionate about sharing the incredible adventures Wales has to offer and helping you plan your perfect trip.
+We got fed up with adventure websites that tell you everything is "breathtaking" and "unforgettable" but nothing about whether your eight-year-old can actually do it. So we built something better.
 
-We're more than just a directory; we're a community of adventurers, nature lovers, and local experts who are dedicated to showcasing the best of Wales. We believe that adventure travel should be accessible, sustainable, and, above all, authentic. We're here to guide you every step of the way, ensuring you have an incredible and responsible experience.
+Adventure Wales is the honest guide to outdoor activities across Wales. We cover 78 activities from 30+ operators across 11 regions - with real suitability info, local knowledge, and the practical details that help you pick the right adventure, not just the prettiest one.
 
 ## Our Story
 
-Adventure Wales started with a simple idea: to share the hidden gems and thrilling activities that make Wales such a special place. Frustrated by the lack of comprehensive information and the overwhelming number of options, we, a group of Welsh adventure enthusiasts, decided to create a one-stop shop for planning your dream outdoor getaway. We poured our passion for the outdoors and our local knowledge into building a platform that would connect travelers with the best experiences and operators Wales has to offer.
+This started because we kept watching families turn up at the wrong Snowdon path, couples book coasteering when one of them can't swim, and groups drive two hours to find an activity was fully booked. Wales has incredible outdoor adventures, but the information out there is either generic tourism copy or scattered across dozens of operator websites.
 
-From hiking the rugged peaks of Snowdonia to kayaking along the stunning Pembrokeshire coast, we've personally explored countless adventures across Wales. This firsthand experience fuels our dedication to providing you with accurate, up-to-date, and inspiring information. We are committed to promoting responsible tourism and supporting the vibrant local communities that make Wales so unique.
+We spent months talking to guides, operators, and locals across Wales. We drove every route, checked every parking situation, and asked the awkward questions - like which activities get cancelled most often, which operators are actually qualified, and where you'll spend half your day stuck in traffic.
 
 ## What We Do
 
-### Curated Adventures
-We carefully select and review each activity, ensuring it meets our standards for quality, safety, and responsible tourism.
+### Honest Suitability Info
+Every activity tells you who it's for and who should skip it. Specific ages, fitness levels, and fears addressed - not just "suitable for all."
 
-### Local Knowledge
-Our on-the-ground expertise means we can offer insider tips and recommendations you won't find anywhere else.
+### Local Intelligence
+Which side of the mountain gets less rain. Which road to avoid on Friday evenings. Where locals go when tourists clog up the popular spots.
 
-### Honest Recommendations
-We provide unbiased reviews and recommendations, so you can trust that our advice is genuine.
+### Verified Operators
+Every operator on this site is checked for qualifications, insurance, and track record. We don't list everyone - we list the ones worth booking.
 
-### Trip Planning
-We help you plan every detail of your adventure, from choosing the right activity to finding the perfect accommodation.
+### Trip Planning That Works
+Our itineraries are built around real logistics - drive times, booking windows, weather patterns, and backup plans for when it rains (it will rain).
 
 ## Our Values
 
-### Adventure for Everyone
-We believe that adventure is for everyone, regardless of age, ability, or experience level. We strive to offer a range of options to suit all tastes and fitness levels.
+### Honesty Over Hype
+If something isn't worth the money, we'll say so. If the weather usually ruins it in November, we'll tell you. No hidden agendas, no pay-for-placement.
 
-### Sustainability
-We are committed to promoting responsible tourism practices that minimize environmental impact and support local communities.
+### Respect the Land
+Wales is small and precious. We promote operators who look after it and practices that keep it wild for the next lot.
 
-### Supporting Local
-We prioritize working with Welsh-owned and operated businesses, helping to support the local economy and preserve the unique culture of Wales.
+### Support Welsh Businesses
+Every operator on this site is Welsh-based. Your money stays in local communities, supporting the people who make these adventures possible.
 
-### Safety First
-Your safety is our top priority. We only recommend activities and operators that meet the highest safety standards.
-
-## The Team
-
-[Note: This is a template - actual team info would go here]
+### Safety Without Patronising
+We give you the real risks, not watered-down disclaimers. You're adults making decisions - we give you the information to make good ones.
 
 ## Get in Touch
 
-We'd love to hear from you! Whether you have a question about a specific activity, need help planning your trip, or just want to share your own Welsh adventure stories, please don't hesitate to contact us.
+Got a question about a specific activity? Found something wrong? Just want to tell us about a hidden gem we've missed? We actually read our emails and reply to them.
 
 ## Work With Us
 
-Are you a Welsh adventure operator looking to reach a wider audience? We're always looking to partner with passionate and responsible businesses. Get in touch to learn more about listing your activities on Adventure Wales.
+Run an adventure business in Wales? If you're qualified, insured, and genuinely good at what you do, we want to hear from you. We don't charge for basic listings - we want every decent operator in Wales on this site.

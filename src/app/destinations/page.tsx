@@ -36,11 +36,11 @@ export default async function DestinationsPage() {
           </div>
           
           <h1 className="text-3xl lg:text-4xl font-bold text-[#1e3a4c] mb-3">
-            Explore Wales
+            Where in Wales
           </h1>
           <p className="text-gray-600 max-w-2xl">
-            From the rugged peaks of Snowdonia to the dramatic coastline of Pembrokeshire, 
-            discover Wales' most spectacular adventure destinations.
+            Each region has its own character, weather, and speciality. Snowdonia for mountains,
+            Pembrokeshire for coast, Brecon Beacons for peace and quiet. Pick the one that fits.
           </p>
         </div>
 
@@ -124,10 +124,10 @@ export default async function DestinationsPage() {
           <div className="bg-[#1e3a4c] rounded-2xl p-8 lg:p-12 text-center">
             <Compass className="w-12 h-12 text-[#f97316] mx-auto mb-4" />
             <h2 className="text-2xl lg:text-3xl font-bold text-white mb-3">
-              Not sure where to start?
+              Not sure which region?
             </h2>
             <p className="text-white/70 mb-6 max-w-lg mx-auto">
-              Let us help you plan the perfect adventure based on your interests and timeframe.
+              Tell us what you're into and how long you've got. We'll match you to the right part of Wales.
             </p>
             <Link
               href="/trip-planner"
@@ -147,5 +147,5 @@ export default async function DestinationsPage() {
 
 export const metadata = {
   title: "Destinations | Adventure Wales",
-  description: "Explore Wales' most spectacular adventure destinations - from Snowdonia to Pembrokeshire",
+  description: "11 Welsh regions compared - weather, crowds, specialities, and which suits your trip. From Snowdonia's peaks to Pembrokeshire's coast.",
 };

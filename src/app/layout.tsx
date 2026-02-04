@@ -10,20 +10,20 @@ const font = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Adventure Wales | Your Welsh Adventure Starts Here",
-  description: "Discover the wildest corners of Wales, from Snowdonia's misty peaks to Pembrokeshire's rugged coast. Plan unforgettable outdoor experiences across Wales.",
-  keywords: "Wales, adventure, outdoor activities, Snowdonia, Pembrokeshire, hiking, coasteering, surfing, mountain biking",
+  title: "Adventure Wales | Honest Guide to Welsh Outdoor Adventures",
+  description: "78 adventures across Wales with honest suitability info, local knowledge, and real difficulty ratings. Find what suits you - from Snowdonia summits to Pembrokeshire coasteering.",
+  keywords: "Wales adventure, outdoor activities Wales, Snowdonia hiking, Pembrokeshire coasteering, mountain biking Wales, Welsh adventure guide",
   openGraph: {
-    title: "Adventure Wales | Your Welsh Adventure Starts Here",
-    description: "Discover the wildest corners of Wales, from Snowdonia's misty peaks to Pembrokeshire's rugged coast. Plan unforgettable outdoor experiences across Wales.",
+    title: "Adventure Wales | Honest Guide to Welsh Outdoor Adventures",
+    description: "78 adventures across Wales with honest suitability info, local knowledge, and real difficulty ratings. Find what suits you.",
     siteName: "Adventure Wales",
     type: "website",
     locale: "en_GB",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adventure Wales | Your Welsh Adventure Starts Here",
-    description: "Discover the wildest corners of Wales, from Snowdonia's misty peaks to Pembrokeshire's rugged coast. Plan unforgettable outdoor experiences across Wales.",
+    title: "Adventure Wales | Honest Guide to Welsh Outdoor Adventures",
+    description: "78 adventures across Wales with honest suitability info, local knowledge, and real difficulty ratings.",
   },
 };
 

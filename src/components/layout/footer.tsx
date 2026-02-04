@@ -40,7 +40,7 @@ export function Footer() {
               <span className="text-lg font-bold text-[#1e3a4c]">Adventure Wales</span>
             </div>
             <p className="text-slate-500 text-sm mb-4">
-              Connecting you with the best outdoor experiences Wales has to offer.
+              Honest info on Welsh adventures. Who it suits, what it costs, and what the locals know.
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-slate-500 hover:text-[#1e3a4c] transition-colors">

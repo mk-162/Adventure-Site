@@ -4,10 +4,10 @@ import {
   Waves, 
   Bike, 
   Wind, 
-  Tent, 
+  Droplets, 
   TreePine,
   Anchor,
-  Camera
+  Footprints
 } from "lucide-react";
 
 const activities = [
@@ -15,10 +15,10 @@ const activities = [
   { name: "Kayaking", slug: "kayaking", icon: Anchor },
   { name: "Biking", slug: "mountain-biking", icon: Bike },
   { name: "Surfing", slug: "surfing", icon: Waves },
-  { name: "Camping", slug: "camping", icon: Tent },
+  { name: "Wild Swimming", slug: "wild-swimming", icon: Droplets },
   { name: "Climbing", slug: "climbing", icon: TreePine },
   { name: "Coasteering", slug: "coasteering", icon: Wind },
-  { name: "Photography", slug: "photography", icon: Camera },
+  { name: "Gorge Walking", slug: "gorge-walking", icon: Footprints },
 ];
 
 export function ActivitiesRow() {
@@ -36,7 +36,7 @@ export function ActivitiesRow() {
             return (
               <Link
                 key={activity.slug}
-                href={`/activities/${activity.slug}`}
+                href={`/activities?type=${activity.slug}`}
                 className="flex flex-col items-center gap-2 sm:gap-3 group"
               >
                 <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-slate-50 flex items-center justify-center text-[#1e3a4c] group-hover:bg-[#1e3a4c] group-hover:text-white transition-all">

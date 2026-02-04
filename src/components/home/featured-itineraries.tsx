@@ -6,9 +6,9 @@ interface Itinerary {
   title: string;
   slug: string;
   tagline: string | null;
-  durationDays: number;
+  durationDays: number | null;
   difficulty: string | null;
-  priceEstimateFrom: number | null;
+  priceEstimateFrom: string | null;
   regionId: number | null;
 }
 
@@ -57,7 +57,7 @@ export function FeaturedItineraries({ itineraries }: FeaturedItinerariesProps) {
                   {/* Gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-lg text-xs font-bold uppercase text-[#1e3a4c]">
-                    {itinerary.durationDays} DAY{itinerary.durationDays > 1 ? 'S' : ''}
+                    {itinerary.durationDays ?? 1} DAY{(itinerary.durationDays ?? 1) > 1 ? 'S' : ''}
                   </div>
                 </div>
                 <div className="mt-3">

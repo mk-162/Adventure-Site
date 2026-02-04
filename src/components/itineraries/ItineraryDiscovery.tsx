@@ -50,7 +50,7 @@ interface Itinerary {
       slug: string;
     };
   }[];
-  stops: {
+  stops?: {
     lat: string | null;
     lng: string | null;
   }[];
@@ -143,7 +143,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
       .filter(i => i.stops && i.stops.length > 0 && i.stops[0].lat && i.stops[0].lng)
       .map(i => {
         // Use first stop as start point
-        const startPoint = i.stops[0];
+        const startPoint = i.stops![0];
         return {
           id: `itinerary-${i.id}`,
           lat: parseFloat(startPoint.lat!),

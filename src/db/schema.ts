@@ -9,6 +9,7 @@ import {
   decimal,
   jsonb,
   pgEnum,
+  unique,
 } from "drizzle-orm/pg-core";
 import { relations } from "drizzle-orm";
 
@@ -216,7 +217,35 @@ export const events = pgTable("events", {
   capacity: integer("capacity"),
   status: statusEnum("status").default("draft").notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
+
+  // Enhanced fields
+  heroImage: text("hero_image"),
+  imageGallery: jsonb("image_gallery"), // string[] of image URLs
+  category: varchar("category", { length: 100 }), // 'race', 'festival', 'workshop', 'family', 'competition', 'social'
+  tags: text("tags").array(),
+  isRecurring: boolean("is_recurring").default(false),
+  recurringSchedule: varchar("recurring_schedule", { length: 255 }), // e.g. "Every Saturday", "First Sunday of month"
+  isFeatured: boolean("is_featured").default(false),
+  isPromoted: boolean("is_promoted").default(false), // paid placement
+  promotedUntil: timestamp("promoted_until"),
+  operatorId: integer("operator_id").references(() => operators.id), // which operator submitted it
+  externalSource: varchar("external_source", { length: 100 }), // 'eventbrite', 'manual', 'visitwales'
+  externalId: varchar("external_id", { length: 255 }), // ID from external source
+  externalUrl: text("external_url"), // direct link to external event page
+  ticketUrl: text("ticket_url"),
+  difficulty: varchar("difficulty", { length: 50 }), // 'beginner', 'intermediate', 'advanced', 'elite'
+  ageRange: varchar("age_range", { length: 100 }), // 'all-ages', '18+', 'family-friendly'
 });
+
+// Event Saves (Hearts)
+export const eventSaves = pgTable("event_saves", {
+  id: serial("id").primaryKey(),
+  eventId: integer("event_id").references(() => events.id).notNull(),
+  sessionId: varchar("session_id", { length: 255 }).notNull(), // anonymous session or operator ID
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+}, (table) => [
+  { uniqueSave: unique("unique_event_save").on(table.eventId, table.sessionId) }
+]);
 
 // Transport options
 export const transport = pgTable("transport", {
@@ -990,6 +1019,14 @@ export const postTags = pgTable("post_tags", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
+// Newsletter subscribers
+export const newsletterSubscribers = pgTable("newsletter_subscribers", {
+  id: serial("id").primaryKey(),
+  email: varchar("email", { length: 255 }).notNull().unique(),
+  subscribedAt: timestamp("subscribed_at").defaultNow().notNull(),
+  source: varchar("source", { length: 50 }).default("homepage"),
+});
+
 // Relations
 export const postsRelations = relations(posts, ({ one, many }) => ({
   site: one(sites, { fields: [posts.siteId], references: [sites.id] }),
@@ -1016,4 +1053,34 @@ export const guidePageSpotsRelations = relations(guidePageSpots, ({ one }) => ({
   guidePage: one(guidePages, { fields: [guidePageSpots.guidePageId], references: [guidePages.id] }),
   operator: one(operators, { fields: [guidePageSpots.operatorId], references: [operators.id] }),
   activity: one(activities, { fields: [guidePageSpots.activityId], references: [activities.id] }),
+}));
+
+// =====================
+// USER ACCOUNTS
+// =====================
+
+export const users = pgTable("users", {
+  id: serial("id").primaryKey(),
+  email: varchar("email", { length: 255 }).notNull().unique(),
+  name: varchar("name", { length: 255 }),
+  regionPreference: varchar("region_preference", { length: 100 }),
+  newsletterOptIn: boolean("newsletter_opt_in").default(false),
+  lastLoginAt: timestamp("last_login_at"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export const userFavourites = pgTable("user_favourites", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").references(() => users.id).notNull(),
+  favouriteType: varchar("favourite_type", { length: 50 }).notNull(), // 'event', 'itinerary', 'activity', 'operator'
+  favouriteId: integer("favourite_id").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export const usersRelations = relations(users, ({ many }) => ({
+  favourites: many(userFavourites),
+}));
+
+export const userFavouritesRelations = relations(userFavourites, ({ one }) => ({
+  user: one(users, { fields: [userFavourites.userId], references: [users.id] }),
 }));

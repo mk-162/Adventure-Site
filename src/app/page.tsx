@@ -10,6 +10,7 @@ import { UpcomingEvents } from "@/components/home/upcoming-events";
 import { Newsletter } from "@/components/home/newsletter";
 import { JsonLd, createWebSiteSchema, createOrganizationSchema } from "@/components/seo/JsonLd";
 import { getFeaturedItineraries } from "@/lib/queries";
+import { ThisWeekendWidget } from "@/components/events/ThisWeekendWidget";
 
 /** Build a map of region slug → activity type slugs that exist in that region */
 async function getRegionActivityMap(): Promise<Record<string, string[]>> {
@@ -36,7 +37,7 @@ async function getHomePageData() {
   const [regionsData, activitiesData, eventsData, operatorsData, activityTypesData, featuredItinerariesData, regionActivityMap] = await Promise.all([
     db.select().from(regions).where(eq(regions.status, "published")).limit(6),
     db.select().from(activities).where(eq(activities.status, "published")).limit(10),
-    db.select().from(events).where(eq(events.status, "published")).limit(4),
+    db.select().from(events).where(eq(events.status, "published")).orderBy(asc(events.dateStart)).limit(10),
     db.select().from(operators).where(eq(operators.claimStatus, "claimed")).limit(4),
     db.select().from(activityTypes).orderBy(asc(activityTypes.name)),
     getFeaturedItineraries(3),
@@ -57,6 +58,22 @@ async function getHomePageData() {
 export default async function HomePage() {
   const data = await getHomePageData();
 
+  // Filter weekend events
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const saturday = new Date(today);
+  saturday.setDate(today.getDate() + (6 - today.getDay() + 7) % 7);
+  const sunday = new Date(saturday);
+  sunday.setDate(saturday.getDate() + 1);
+  const endOfSunday = new Date(sunday);
+  endOfSunday.setHours(23, 59, 59, 999);
+
+  const weekendEvents = data.events.filter(e => {
+    if (!e.dateStart) return false;
+    const d = new Date(e.dateStart);
+    return d >= today && d <= endOfSunday;
+  });
+
   return (
     <>
       <JsonLd data={createWebSiteSchema()} />
@@ -67,7 +84,17 @@ export default async function HomePage() {
         <RegionsGrid regions={data.regions} />
         <ActivitiesRow />
         <FeaturedItineraries itineraries={data.itineraries} />
-        <UpcomingEvents events={data.events} />
+
+        {weekendEvents.length > 0 ? (
+          <section className="py-12 sm:py-16 bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
+              <ThisWeekendWidget events={weekendEvents} />
+            </div>
+          </section>
+        ) : (
+          <UpcomingEvents events={data.events} />
+        )}
+
         <Newsletter />
       </div>
     </>

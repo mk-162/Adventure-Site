@@ -52,7 +52,6 @@ export async function GET(request: NextRequest) {
               name: activities.name,
               slug: activities.slug,
               description: activities.description,
-              heroImage: activities.heroImage,
               type: sql<string>`'activity'`,
             })
             .from(activities)
@@ -136,7 +135,6 @@ export async function GET(request: NextRequest) {
               name: accommodation.name,
               slug: accommodation.slug,
               description: accommodation.description,
-              heroImage: accommodation.heroImage,
               type: sql<string>`'accommodation'`,
             })
             .from(accommodation)
@@ -227,7 +225,6 @@ export async function GET(request: NextRequest) {
             name: activities.name,
             slug: activities.slug,
             description: activities.description,
-            heroImage: activities.heroImage,
             regionId: activities.regionId,
             activityTypeId: activities.activityTypeId,
             type: sql<string>`'activity'`,
@@ -274,7 +271,6 @@ export async function GET(request: NextRequest) {
             name: accommodation.name,
             slug: accommodation.slug,
             description: accommodation.description,
-            heroImage: accommodation.heroImage,
             accommodationType: accommodation.type,
             type: sql<string>`'accommodation'`,
           })

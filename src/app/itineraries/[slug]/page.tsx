@@ -6,12 +6,12 @@ import {
   Mountain, 
   Calendar,
   Share2,
-  Heart
 } from "lucide-react";
 import { ItineraryView } from "@/components/itinerary/ItineraryView";
 import { ItineraryFactSheet } from "@/components/itinerary/ItineraryFactSheet";
 import { EnquireAllVendors } from "@/components/itinerary/EnquireAllVendors";
 import { ShareButton } from "@/components/ui/ShareButton";
+import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import { getItineraryWithStops, getAccommodation, getAllItinerarySlugs } from "@/lib/queries";
 
 function getDifficultyColor(difficulty: string): string {
@@ -83,7 +83,7 @@ export default async function ItineraryDetailPage({ params }: Props) {
 
           {/* Duration Badge */}
           <div className="absolute top-4 right-4 bg-[#1e3a4c] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg z-20">
-            {itinerary.durationDays} DAY{itinerary.durationDays > 1 ? "S" : ""}
+            {itinerary.durationDays ?? 1} DAY{(itinerary.durationDays ?? 1) > 1 ? "S" : ""}
           </div>
 
           {/* Hero Content */}
@@ -96,7 +96,7 @@ export default async function ItineraryDetailPage({ params }: Props) {
               </span>
               <span className={`backdrop-blur-md text-xs sm:text-sm font-semibold px-3 py-1 rounded-full border ${getDifficultyColor(itinerary.difficulty || "")}`}>
                 <Mountain className="w-4 h-4 inline mr-1" />
-                {itinerary.difficulty?.charAt(0).toUpperCase() + itinerary.difficulty?.slice(1)}
+                {itinerary.difficulty ? itinerary.difficulty.charAt(0).toUpperCase() + itinerary.difficulty.slice(1) : 'Moderate'}
               </span>
               {itinerary.bestSeason && (
                 <span className="hidden sm:flex bg-white/20 backdrop-blur-md text-white text-xs sm:text-sm font-semibold px-3 py-1 rounded-full items-center gap-1">
@@ -128,7 +128,7 @@ export default async function ItineraryDetailPage({ params }: Props) {
               <span className="text-xs text-gray-500 uppercase">Activities</span>
             </div>
             <div className="flex flex-col items-center flex-1">
-              <span className="text-xl font-bold text-[#1e3a4c]">{Math.max(0, itinerary.durationDays - 1)}</span>
+              <span className="text-xl font-bold text-[#1e3a4c]">{Math.max(0, (itinerary.durationDays ?? 1) - 1)}</span>
               <span className="text-xs text-gray-500 uppercase">Nights</span>
             </div>
             <div className="flex flex-col items-center flex-1">
@@ -174,10 +174,12 @@ export default async function ItineraryDetailPage({ params }: Props) {
       <div className="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 pb-6 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] z-40">
         <div className="flex gap-3 max-w-lg mx-auto">
           <ShareButton title={itinerary.title} variant="icon" />
-          <button className="flex flex-col items-center justify-center w-14 gap-1 text-gray-500 hover:text-[#1e3a4c] transition-colors">
-            <Heart className="w-5 h-5" />
-            <span className="text-[10px] font-medium">Save</span>
-          </button>
+          <FavoriteButton
+            itemId={itinerary.id}
+            itemType="itinerary"
+            className="flex flex-col items-center justify-center w-14 gap-1 text-gray-500 hover:text-[#1e3a4c] transition-colors"
+            iconClassName="w-5 h-5"
+          />
           {uniqueOperators.length > 0 ? (
             <EnquireAllVendors 
               operators={uniqueOperators}

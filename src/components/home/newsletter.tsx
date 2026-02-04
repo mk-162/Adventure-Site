@@ -27,10 +27,28 @@ export function Newsletter() {
     if (!email) return;
 
     setStatus("loading");
-    // TODO: Implement newsletter signup
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setStatus("success");
-    setEmail("");
+    
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        setEmail("");
+      } else {
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 3000);
+      }
+    } catch (error) {
+      console.error("Newsletter signup error:", error);
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 3000);
+    }
   };
 
   return (
@@ -54,7 +72,11 @@ export function Newsletter() {
           
           {status === "success" ? (
             <div className="bg-green-500/90 text-white px-6 py-4 rounded-2xl shadow-lg">
-              ✓ Thanks for subscribing!
+              ✓ Thanks! You're on the list.
+            </div>
+          ) : status === "error" ? (
+            <div className="bg-red-500/90 text-white px-6 py-4 rounded-2xl shadow-lg">
+              ✗ Something went wrong. Please try again.
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="w-full lg:w-auto flex flex-col sm:flex-row gap-3 max-w-md">

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Plus, Trash2, MapPin } from "lucide-react";
 import clsx from "clsx";
 

@@ -9,9 +9,10 @@ import dynamic from "next/dynamic";
 import type { MapMarker } from "@/components/ui/MapView";
 import { ActivityLocationMap } from "@/components/maps/ActivityLocationMap";
 import { ClaimListingBanner } from "@/components/operators/ClaimListingBanner";
+import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import { 
   MapPin, Clock, Calendar, Users, Star, 
-  CheckCircle, XCircle, ExternalLink, Share2, Heart, Navigation
+  CheckCircle, XCircle, ExternalLink, Share2, Navigation
 } from "lucide-react";
 import { 
   JsonLd, 
@@ -210,9 +211,12 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
           <button className="p-3 bg-white/90 rounded-full hover:bg-white transition-colors">
             <Share2 className="h-5 w-5 text-gray-700" />
           </button>
-          <button className="p-3 bg-white/90 rounded-full hover:bg-white transition-colors">
-            <Heart className="h-5 w-5 text-gray-700" />
-          </button>
+          <FavoriteButton
+            itemId={activity.id}
+            itemType="activity"
+            className="p-3 bg-white/90 rounded-full hover:bg-white transition-colors"
+            iconClassName="h-5 w-5 text-gray-700"
+          />
         </div>
 
         {/* Floating Info Card */}

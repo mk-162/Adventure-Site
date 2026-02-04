@@ -294,3 +294,85 @@ export function createBreadcrumbSchema(items: Array<{ name: string; url: string 
     }))
   };
 }
+
+/**
+ * Helper function to create Event schema
+ */
+export function createEventSchema(event: {
+  name: string;
+  description: string | null;
+  slug: string;
+  dateStart: Date | null;
+  dateEnd: Date | null;
+  location: string | null;
+  lat: string | null;
+  lng: string | null;
+  registrationCost: string | null;
+  heroImage: string | null;
+}, options: {
+  siteUrl?: string;
+} = {}) {
+  const { siteUrl = "https://adventurewales.co.uk" } = options;
+
+  const schema: Record<string, any> = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": event.name,
+    "description": event.description || `Join us for ${event.name}`,
+    "url": `${siteUrl}/events/${event.slug}`,
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled"
+  };
+
+  if (event.heroImage) {
+    schema.image = event.heroImage;
+  }
+
+  if (event.dateStart) {
+    schema.startDate = event.dateStart.toISOString();
+  } else {
+    // If no start date, Schema still requires it for valid events.
+    // We might skip schema or put a future estimated date.
+    // For now, only generate if dateStart exists.
+    return null;
+  }
+
+  if (event.dateEnd) {
+    schema.endDate = event.dateEnd.toISOString();
+  }
+
+  if (event.location || (event.lat && event.lng)) {
+    schema.location = {
+      "@type": "Place",
+      "name": event.location || "Event Location",
+    };
+
+    if (event.location) {
+       schema.location.address = {
+        "@type": "PostalAddress",
+        "addressCountry": "GB",
+        "streetAddress": event.location
+      };
+    }
+
+    if (event.lat && event.lng) {
+      schema.location.geo = {
+        "@type": "GeoCoordinates",
+        "latitude": parseFloat(event.lat),
+        "longitude": parseFloat(event.lng)
+      };
+    }
+  }
+
+  if (event.registrationCost) {
+    schema.offers = {
+      "@type": "Offer",
+      "price": event.registrationCost,
+      "priceCurrency": "GBP",
+      "url": `${siteUrl}/events/${event.slug}`,
+      "availability": "https://schema.org/InStock"
+    };
+  }
+
+  return schema;
+}

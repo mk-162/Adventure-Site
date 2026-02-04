@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import path from 'path';
 import { mkdir } from 'fs/promises';
 import sharp from 'sharp';
+import { getOperatorSession } from '@/lib/auth';
 
 const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
 const MAX_SIZE = 5 * 1024 * 1024; // 5MB
@@ -17,6 +18,13 @@ const ALLOWED_FOLDERS = [
 
 export async function POST(request: Request) {
   try {
+    // Auth check — only operators and admins can upload
+    const session = await getOperatorSession();
+    const adminToken = request.headers.get("cookie")?.includes("admin_token");
+    if (!session && !adminToken) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
     const formData = await request.formData();
     const file = formData.get('file') as File | null;
     const contentType = formData.get('contentType') as string | null;

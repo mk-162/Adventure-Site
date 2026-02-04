@@ -19,6 +19,10 @@ interface Accommodation {
     slug: string;
     type: string | null;
     priceFrom: string | null;
+    priceTo: string | null;
+    googleRating: string | null;
+    adventureFeatures: string | null;
+    address: string | null;
   };
   region: {
     id: number;

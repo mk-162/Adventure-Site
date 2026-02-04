@@ -8,8 +8,14 @@ interface Event {
     id: number;
     name: string;
     slug: string;
-    date: string | null;
+    dateStart: Date | null;
+    dateEnd: Date | null;
     type: string | null;
+    location: string | null;
+    monthTypical: string | null;
+    website: string | null;
+    registrationCost: string | null;
+    description: string | null;
   };
   region: {
     id: number;

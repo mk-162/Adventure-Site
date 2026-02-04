@@ -245,7 +245,7 @@ export default function HelpPage() {
               <div className="font-medium text-[#1e3a4c] mb-1">Privacy Policy</div>
               <div className="text-sm text-gray-600">How we handle your data</div>
             </Link>
-            <Link href="/for-operators" className="bg-[#1e3a4c]/5 rounded-xl p-4 hover:bg-[#1e3a4c]/10 transition-colors">
+            <Link href="/advertise" className="bg-[#1e3a4c]/5 rounded-xl p-4 hover:bg-[#1e3a4c]/10 transition-colors">
               <div className="font-medium text-[#1e3a4c] mb-1">Become a Partner</div>
               <div className="text-sm text-gray-600">List your activities with us</div>
             </Link>

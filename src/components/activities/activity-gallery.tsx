@@ -9,20 +9,20 @@ interface ActivityGalleryProps {
 }
 
 // Map activity types to their available image variants (02-06)
+// Hashes must match actual filenames in public/images/activities/
 const activityImageMap: Record<string, string[]> = {
   "caving": ["02-458228b9", "03-fb4d036f", "04-8d6bb2da", "05-95ef7683", "06-70411151"],
   "climbing": ["02-c2c33740", "03-769d8444", "04-a6c69ad4", "05-62ff29a8", "06-a0eb9a7d"],
   "coasteering": ["02-519a34c0", "03-b5583981", "04-16568470", "05-d7153020", "06-d7bec2a8"],
   "gorge-walking": ["02-0027dfcc", "03-6eada4af", "04-d40b6bff", "05-507fc51c", "06-956385b9"],
-  "hiking": ["03-96151002", "04-2bf15ed9", "05-1e5e40a8", "06-9adf25a1"],
-  "kayaking": ["02-1b66c481", "03-4cb19f2e", "04-adb4e9d4", "05-8c5a55d6", "06-75668089"],
-  "mountain-biking": ["02-ba0e05f3", "03-c6bd4224", "04-a41f5e71", "05-55dd5fa1", "06-64667a58"],
-  "paddleboarding": ["02-4feef19e", "03-02ee8e16", "04-85bfb699", "05-e7ebb5c1", "06-49f63f7a"],
-  "rafting": ["02-eeb02f03", "03-3d53b9c3", "04-3f1a3a87", "05-5dd5e8e0", "06-ed56f9a3"],
-  "sea-kayaking": ["02-b8c3488e", "03-bd1d7972", "04-f3e03b4b", "05-f5f6d68b", "06-5bb4d7be"],
-  "surfing": ["02-13d8e17d", "03-2eb01a36", "04-93a9799a", "05-e8e4889a", "06-ce23bdf2"],
-  "wild-swimming": ["02-61ec5bb0", "03-1e69e3d0", "04-e2e9fa43", "05-7d16e08c", "06-4b25a481"],
-  "zip-lining": ["02-c95e3c79", "03-b4da79fa", "04-7984cf3d", "05-c0eeff29", "06-72ed6f3b"],
+  "hiking": ["03-96151002", "04-2bf15ed9", "05-c7cb2f1e", "06-74fc1189"],
+  "kayaking": ["02-570fb957", "03-bcd19dc4", "04-ba6d1e33", "05-758c3658", "06-656475f5"],
+  "mountain-biking": ["02-1fe6646f", "03-ce257a7c", "04-63e4b2e0", "05-ebb64387", "06-f0231015"],
+  "paddleboarding": ["02-30a88c24", "03-02927bb8", "04-c0cf2a01", "05-46f4408f", "06-f35e1c4d"],
+  "rafting": ["02-0d9b00f9", "03-3b5d5ae0", "04-bd3fe82b", "05-ed393aad", "06-e544a7c2"],
+  "surfing": ["02-1ef1420b", "03-fc8506a1", "04-9bfdc377", "05-1b64a41d", "06-74705f6a"],
+  "wild-swimming": ["02-bc83a30d", "03-9c4fdbe0", "04-aaaffc2e", "05-9ded1f48", "06-d4165348"],
+  "zip-lining": ["02-dad94e84", "03-b56e3ec0", "04-534600ba", "05-d5ecfeb3", "06-15cc8072"],
 };
 
 export function ActivityGallery({ activityType, activityName }: ActivityGalleryProps) {

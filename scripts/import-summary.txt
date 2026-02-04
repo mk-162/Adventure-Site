@@ -1,0 +1,59 @@
+ITINERARY IMPORT SUMMARY
+========================
+
+Date: 2025-02-04
+Script: scripts/import-itineraries.ts
+
+RESULTS:
+--------
+✓ Successfully imported 15 itineraries
+✓ Created 45 itinerary items (day-by-day activities)
+✓ All itineraries set to 'published' status
+✓ All linked to siteId = 1
+
+IMPORTED ITINERARIES:
+--------------------
+1. Adrenaline Junkie Weekend (Snowdonia, 2 days, difficult)
+2. Beginner's Adventure Taster (Snowdonia, 2 days, easy)
+3. Caving & Climbing (Brecon Beacons, 2 days, difficult)
+4. Coastal Wild Swimming (Pembrokeshire, 3 days, moderate)
+5. Family Adventure Week (Snowdonia, 5 days, easy)
+6. Kayaking Explorer (Anglesey, 3 days, moderate)
+7. Mountain Biking Epic (Snowdonia, 4 days, difficult)
+8. Multi-Sport Challenge (South Wales, 4 days, difficult)
+9. Pembrokeshire Coasteering Break (Pembrokeshire, 2 days, moderate)
+10. Photography Adventure (Snowdonia, 3 days, easy)
+11. Romantic Adventure Escape (Pembrokeshire, 3 days, easy)
+12. Snowdonia Adventure Weekend (Snowdonia, 3 days, moderate)
+13. Solo Traveler Trail (Brecon Beacons, 4 days, moderate)
+14. Summit Challenge (Snowdonia, 3 days, difficult)
+15. Winter Adventure (Snowdonia, 2 days, moderate)
+
+DATA EXTRACTION:
+---------------
+✓ Full markdown body stored in 'description' field
+✓ Tagline extracted from "Who This Trip Is For" section (truncated to 255 chars)
+✓ Best season extracted and stored (where present)
+✓ Price information extracted from "Cost Reality" section (where present)
+✓ Day sections parsed and stored as itinerary_items
+
+ACTIVITY MATCHING:
+-----------------
+✓ 23/45 itinerary items successfully matched to activities in the database
+✓ Matching used fuzzy string similarity (Levenshtein distance)
+✗ 0/45 matched to accommodation (names in markdown didn't match DB entries closely)
+
+TECHNICAL NOTES:
+---------------
+- Fixed frontmatter parsing edge case (handled 'yaml' line before ---)
+- Implemented field length validation to prevent varchar overflow errors
+- Used @vercel/postgres directly as requested
+- All timestamps set to NOW()
+- Region slugs successfully mapped to region IDs
+
+SCRIPT LOCATION:
+---------------
+/home/minigeek/Adventure-Site/scripts/import-itineraries.ts
+
+To re-run the import (will create duplicates):
+cd /home/minigeek/Adventure-Site && set -a && source .env && set +a && npx tsx scripts/import-itineraries.ts

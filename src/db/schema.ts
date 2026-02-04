@@ -309,7 +309,7 @@ export const itineraries = pgTable("itineraries", {
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
 
-// Itinerary day items
+// Itinerary day items (legacy — kept for migration compatibility)
 export const itineraryItems = pgTable("itinerary_items", {
   id: serial("id").primaryKey(),
   itineraryId: integer("itinerary_id")
@@ -325,6 +325,92 @@ export const itineraryItems = pgTable("itinerary_items", {
   description: text("description"),
   duration: varchar("duration", { length: 100 }),
   travelTimeToNext: varchar("travel_time_to_next", { length: 100 }),
+});
+
+// Stop type enum
+export const stopTypeEnum = pgEnum("stop_type", [
+  "activity",
+  "food",
+  "accommodation",
+  "transport",
+  "freeform",
+]);
+
+// Travel mode enum
+export const travelModeEnum = pgEnum("travel_mode", [
+  "drive",
+  "walk",
+  "cycle",
+  "bus",
+  "train",
+  "ferry",
+  "none",
+]);
+
+// Food type enum
+export const foodTypeEnum = pgEnum("food_type", [
+  "breakfast",
+  "lunch",
+  "dinner",
+  "snack",
+  "pub",
+  "cafe",
+]);
+
+// Itinerary stops — the engine
+export const itineraryStops = pgTable("itinerary_stops", {
+  id: serial("id").primaryKey(),
+  itineraryId: integer("itinerary_id")
+    .references(() => itineraries.id)
+    .notNull(),
+  dayNumber: integer("day_number").notNull(),
+  orderIndex: integer("order_index").notNull(),
+  stopType: stopTypeEnum("stop_type").notNull(),
+
+  // Timing
+  startTime: varchar("start_time", { length: 10 }),
+  duration: varchar("duration", { length: 50 }),
+  travelToNext: varchar("travel_to_next", { length: 100 }),
+  travelMode: travelModeEnum("travel_mode"),
+
+  // Primary content
+  title: varchar("title", { length: 255 }).notNull(),
+  description: text("description"),
+  activityId: integer("activity_id").references(() => activities.id),
+  accommodationId: integer("accommodation_id").references(() => accommodation.id),
+  locationId: integer("location_id").references(() => locations.id),
+  operatorId: integer("operator_id").references(() => operators.id),
+  costFrom: decimal("cost_from", { precision: 10, scale: 2 }),
+  costTo: decimal("cost_to", { precision: 10, scale: 2 }),
+
+  // Wet weather alternative
+  wetAltTitle: varchar("wet_alt_title", { length: 255 }),
+  wetAltDescription: text("wet_alt_description"),
+  wetAltActivityId: integer("wet_alt_activity_id").references(() => activities.id),
+  wetAltCostFrom: decimal("wet_alt_cost_from", { precision: 10, scale: 2 }),
+  wetAltCostTo: decimal("wet_alt_cost_to", { precision: 10, scale: 2 }),
+
+  // Budget alternative
+  budgetAltTitle: varchar("budget_alt_title", { length: 255 }),
+  budgetAltDescription: text("budget_alt_description"),
+  budgetAltActivityId: integer("budget_alt_activity_id").references(() => activities.id),
+  budgetAltCostFrom: decimal("budget_alt_cost_from", { precision: 10, scale: 2 }),
+  budgetAltCostTo: decimal("budget_alt_cost_to", { precision: 10, scale: 2 }),
+
+  // Food stop details
+  foodName: varchar("food_name", { length: 255 }),
+  foodBudget: varchar("food_budget", { length: 50 }),
+  foodLink: text("food_link"),
+  foodNotes: text("food_notes"),
+  foodType: foodTypeEnum("food_type"),
+
+  // Map
+  lat: decimal("lat", { precision: 10, scale: 7 }),
+  lng: decimal("lng", { precision: 10, scale: 7 }),
+  routeToNextJson: jsonb("route_to_next_json"),
+
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
 
 // FAQ/Answer engine pages
@@ -620,6 +706,7 @@ export const itinerariesRelations = relations(itineraries, ({ one, many }) => ({
   site: one(sites, { fields: [itineraries.siteId], references: [sites.id] }),
   region: one(regions, { fields: [itineraries.regionId], references: [regions.id] }),
   items: many(itineraryItems),
+  stops: many(itineraryStops),
   itineraryTags: many(itineraryTags),
 }));
 
@@ -628,6 +715,16 @@ export const itineraryItemsRelations = relations(itineraryItems, ({ one }) => ({
   activity: one(activities, { fields: [itineraryItems.activityId], references: [activities.id] }),
   accommodation: one(accommodation, { fields: [itineraryItems.accommodationId], references: [accommodation.id] }),
   location: one(locations, { fields: [itineraryItems.locationId], references: [locations.id] }),
+}));
+
+export const itineraryStopsRelations = relations(itineraryStops, ({ one }) => ({
+  itinerary: one(itineraries, { fields: [itineraryStops.itineraryId], references: [itineraries.id] }),
+  activity: one(activities, { fields: [itineraryStops.activityId], references: [activities.id] }),
+  accommodation: one(accommodation, { fields: [itineraryStops.accommodationId], references: [accommodation.id] }),
+  location: one(locations, { fields: [itineraryStops.locationId], references: [locations.id] }),
+  operator: one(operators, { fields: [itineraryStops.operatorId], references: [operators.id] }),
+  wetAltActivity: one(activities, { fields: [itineraryStops.wetAltActivityId], references: [activities.id] }),
+  budgetAltActivity: one(activities, { fields: [itineraryStops.budgetAltActivityId], references: [activities.id] }),
 }));
 
 export const tagsRelations = relations(tags, ({ one, many }) => ({

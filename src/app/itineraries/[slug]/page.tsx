@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { MarkdownRenderer } from "@/components/markdown-renderer";
 import { 
   ChevronRight, 
   MapPin, 
@@ -137,8 +138,8 @@ export default async function ItineraryDetailPage({ params }: Props) {
         
         {/* Intro */}
         {itinerary.description && (
-           <div className="prose prose-lg max-w-none mb-6 text-gray-600">
-               <p>{itinerary.description}</p>
+           <div className="mb-6 text-gray-600">
+               <MarkdownRenderer content={itinerary.description} />
            </div>
         )}
 

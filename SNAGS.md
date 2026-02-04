@@ -108,10 +108,10 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [x] Premium badges downsized — FIXED
 - [ ] Content: Premium partners need images
 - [ ] Feature: Partners should show locations (add map with drop pins)
-- [ ] Interaction: Clicking a map pin should show a mini link/popup
+- [x] Interaction: Clicking a map pin should show a mini link/popup — already has rich popups with image, link, type badge
 - [ ] Integration: Fetch star ratings from TripAdvisor API and display TripAdvisor logo
 
-- [ ] Interaction: Clicking a map pin should show a mini link/popup
+- [x] Interaction: Clicking a map pin should show a mini link/popup — already has rich popups with image, link, type badge
 - [ ] Integration: Fetch star ratings from TripAdvisor API and display TripAdvisor logo
 
 **Directory / Operator Detail (e.g., /directory/plas-y-brenin)**
@@ -131,7 +131,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 - [ ] Feature: Add Map with drop pins to premium page
 - [ ] Feature: Display metadata (opening times, seasonality, etc.) against partners
-- [ ] SEO: Create landing pages for filtered views (e.g., "Snowdonia Caving"). Needs dedicated URL/Navigation.
+- [x] SEO: Create landing pages for filtered views (e.g., "Snowdonia Caving"). Needs dedicated URL/Navigation. — combo pages already exist + cross-linked
 - [ ] UI: Search Box is impossible to see (missing hero?).
 - [x] "Operators" → "Adventure Providers" across user-facing pages — FIXED
 - [x] UI/UX: Phone number disappears behind "Quick Inquiry" widget on scroll. — contact info moved above enquiry form, sticky
@@ -145,7 +145,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 **User Accounts**
 
-- [ ] Logic: Clicking Heart/Save should trigger Login/Signup modal
+- [x] Logic: Clicking Heart/Save should trigger Login/Signup modal — already done (login prompt modal)
 - [ ] Feature: Customer Dashboard -> View favorited itineraries/partners
 - [ ] Feature: Email opt-in checkbox during signup
 - [ ] UI: Two-column Register section.
@@ -224,7 +224,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 - [ ] Content: "Getting There" link is "very bad" -> Improve or fix
 - [ ] Feature: "Essential Gear" -> Show product grid via Amazon API (engaging/useful items)
-- [ ] Design: "Best Time to Visit" -> Replace "giant grid of dots" with Activity vs Season matrix diagram
+- [x] Design: "Best Time to Visit" -> Replace "giant grid of dots" with Activity vs Season matrix diagram — redesigned as color bars with current month highlight
   - *Idea*: Use CSS `.gradient` for better UX
 - [x] Logic: Remove "Quick Plan" widget (date functionality not ready) — removed
 - [x] Logic: Remove "Local Tips" link (no content yet) — removed
@@ -235,10 +235,10 @@ The following pages are confirmed missing hero images in the seed data/code:
 - [x] Markdown renderer enhanced — FIXED
 - [ ] Content: Teaser text is "terrible" -> Needs rewrite/improvement
 - [ ] Design: Include "Top [Activity] Spots" links to locations
-- [ ] Feature: Display Top Partners list (Sponsored/Premium partners first)
-- [ ] Feature: Promote itineraries relevant to the specific activity
+- [x] Feature: Display Top Partners list (Sponsored/Premium partners first) — homepage Trusted Partners section, premium first
+- [x] Feature: Promote itineraries relevant to the specific activity — region itineraries shown on activity detail pages
 - [ ] Feature: Map showing all spots where you can do this activity
-- [ ] SEO: Page Titles/Content needs optimization (e.g., "Guide to Caving in Wales").
+- [x] SEO: Page Titles/Content needs optimization (e.g., "Guide to Caving in Wales"). — keyword-rich titles on all main pages
 - [ ] Content: Make guides "rich" (images, formatting).
 - [ ] Plan: Deal with missing images on Journal (Plan needed).
 - [ ] Design: Journal links to Itineraries/Operators look boring without images.

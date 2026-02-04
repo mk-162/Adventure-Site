@@ -15,10 +15,12 @@ interface ActivityCardProps {
     bookingPlatform?: string | null;
     bookingAffiliateUrl?: string | null;
     bookingUrl?: string | null;
+    heroImage?: string | null;
   };
   region?: {
     name: string;
     slug: string;
+    heroImage?: string | null;
   } | null;
   operator?: {
     name: string;
@@ -28,6 +30,7 @@ interface ActivityCardProps {
   } | null;
   activityType?: {
     slug: string;
+    heroImage?: string | null;
   } | null;
   image?: string;
   variant?: "default" | "compact" | "horizontal";
@@ -61,34 +64,148 @@ const localActivityImages = new Set([
   "zip-lining",
 ]);
 
-// Get activity image - prioritize local images based on activity type or name
-function getActivityImage(activitySlug: string, activityTypeSlug?: string | null): string {
-  // Try activity type first
+// Gallery image variants per activity type — used to deduplicate cards
+const activityImageVariants: Record<string, string[]> = {
+  "caving": ["02-458228b9", "03-fb4d036f", "04-8d6bb2da", "05-95ef7683", "06-70411151"],
+  "climbing": ["02-c2c33740", "03-769d8444", "04-a6c69ad4", "05-62ff29a8", "06-a0eb9a7d"],
+  "coasteering": ["02-519a34c0", "03-b5583981", "04-16568470", "05-d7153020", "06-d7bec2a8"],
+  "gorge-walking": ["02-0027dfcc", "03-6eada4af", "04-d40b6bff", "05-507fc51c", "06-956385b9"],
+  "hiking": ["03-96151002", "04-2bf15ed9", "05-c7cb2f1e", "06-74fc1189"],
+  "kayaking": ["02-570fb957", "03-bcd19dc4", "04-ba6d1e33", "05-758c3658", "06-656475f5"],
+  "mountain-biking": ["02-1fe6646f", "03-ce257a7c", "04-63e4b2e0", "05-ebb64387", "06-f0231015"],
+  "paddleboarding": ["02-30a88c24", "03-02927bb8", "04-c0cf2a01", "05-46f4408f", "06-f35e1c4d"],
+  "rafting": ["02-0d9b00f9", "03-3b5d5ae0", "04-bd3fe82b", "05-ed393aad", "06-e544a7c2"],
+  "surfing": ["02-1ef1420b", "03-fc8506a1", "04-9bfdc377", "05-1b64a41d", "06-74705f6a"],
+  "wild-swimming": ["02-bc83a30d", "03-9c4fdbe0", "04-aaaffc2e", "05-9ded1f48", "06-d4165348"],
+  "zip-lining": ["02-dad94e84", "03-b56e3ec0", "04-534600ba", "05-d5ecfeb3", "06-15cc8072"],
+  "sea-kayaking": ["02-570fb957", "03-bcd19dc4", "04-ba6d1e33", "05-758c3658", "06-656475f5"],
+};
+
+// Slug aliases for activities whose slug doesn't match any known type directly
+const slugAliases: Record<string, string> = {
+  "mtb": "mountain-biking",
+  "downhill": "mountain-biking",
+  "biking": "mountain-biking",
+  "cycling": "mountain-biking",
+  "paddle": "paddleboarding",
+  "canoe": "kayaking",
+  "canoeing": "kayaking",
+  "abseil": "climbing",
+  "abseiling": "climbing",
+  "bouldering": "climbing",
+  "cave": "caving",
+  "gorge": "gorge-walking",
+  "scrambling": "gorge-scrambling",
+  "raft": "rafting",
+  "swim": "wild-swimming",
+  "swimming": "wild-swimming",
+  "surf": "surfing",
+  "bodyboard": "surfing",
+  "bodyboarding": "surfing",
+  "zipline": "zip-lining",
+  "zip": "zip-lining",
+  "ropes": "high-ropes",
+  "trek": "hiking",
+  "trekking": "hiking",
+  "walk": "hiking",
+  "walking": "hiking",
+  "archery": "archery",
+  "mine": "mine-exploration",
+  "boat": "boat-tour",
+  "wildlife": "wildlife-boat-tour",
+  "windsurf": "windsurfing",
+  "run": "trail-running",
+  "running": "trail-running",
+};
+
+/**
+ * Resolve the activity type slug from activityType or by matching against the activity slug.
+ */
+function resolveTypeSlug(activitySlug: string, activityTypeSlug?: string | null): string | null {
+  // Direct match from DB activity type
   if (activityTypeSlug && localActivityImages.has(activityTypeSlug)) {
-    return `/images/activities/${activityTypeSlug}-hero.jpg`;
+    return activityTypeSlug;
   }
-  
-  // Try to match activity slug to known images
-  const slugParts = activitySlug.toLowerCase().split("-");
-  for (const part of slugParts) {
-    if (localActivityImages.has(part)) {
-      return `/images/activities/${part}-hero.jpg`;
-    }
-  }
-  
-  // Check for compound matches
+
+  // Check compound matches first (longer strings match more specifically)
   const compoundMatches = [
-    "gorge-scrambling", "gorge-walking", "sea-kayaking", "mine-exploration", 
-    "mountain-biking", "trail-running", "wild-swimming", "boat-tour", 
-    "wildlife-boat-tour", "high-ropes", "zip-lining", "hiking-scrambling"
+    "gorge-scrambling", "gorge-walking", "sea-kayaking", "mine-exploration",
+    "mountain-biking", "trail-running", "wild-swimming", "boat-tour",
+    "wildlife-boat-tour", "high-ropes", "zip-lining", "hiking-scrambling",
   ];
   for (const match of compoundMatches) {
     if (activitySlug.includes(match)) {
-      return `/images/activities/${match}-hero.jpg`;
+      return match;
     }
   }
-  
-  // Default fallback
+
+  // Try slug part aliases (handles "mtb", "downhill", etc.)
+  const slugParts = activitySlug.toLowerCase().split("-");
+  for (const part of slugParts) {
+    if (localActivityImages.has(part)) {
+      return part;
+    }
+    if (slugAliases[part]) {
+      return slugAliases[part];
+    }
+  }
+
+  return null;
+}
+
+/**
+ * Get the image URL for an activity card with a full fallback chain:
+ *   1. Activity's own heroImage (from DB)
+ *   2. Local variant image for the type (rotated by activity ID to deduplicate)
+ *   3. Local hero image for the type
+ *   4. Activity type's heroImage from DB (Unsplash URL)
+ *   5. Region hero image (local or DB)
+ *   6. Default placeholder
+ */
+function getActivityImage(
+  activityId: number,
+  activitySlug: string,
+  activityTypeSlug?: string | null,
+  activityHeroImage?: string | null,
+  activityTypeHeroImage?: string | null,
+  regionSlug?: string | null,
+  regionHeroImage?: string | null,
+): string {
+  // 1. Activity's own hero image from DB
+  if (activityHeroImage) {
+    return activityHeroImage;
+  }
+
+  const typeSlug = resolveTypeSlug(activitySlug, activityTypeSlug);
+
+  if (typeSlug) {
+    // 2. Use a variant image (rotated by activity ID) to avoid duplicates on listing pages
+    const variants = activityImageVariants[typeSlug];
+    if (variants && variants.length > 0) {
+      const variantIndex = activityId % variants.length;
+      return `/images/activities/${typeSlug}-${variants[variantIndex]}.jpg`;
+    }
+
+    // 3. Fall back to the type hero image
+    if (localActivityImages.has(typeSlug)) {
+      return `/images/activities/${typeSlug}-hero.jpg`;
+    }
+  }
+
+  // 4. Activity type's hero image from DB (e.g. Unsplash URL)
+  if (activityTypeHeroImage) {
+    return activityTypeHeroImage;
+  }
+
+  // 5. Region hero image
+  if (regionSlug) {
+    return `/images/regions/${regionSlug}-hero.jpg`;
+  }
+  if (regionHeroImage) {
+    return regionHeroImage;
+  }
+
+  // 6. Default placeholder
   return "/images/activities/hiking-hero.jpg";
 }
 
@@ -101,7 +218,15 @@ export function ActivityCard({
   variant = "default",
   hideOperator = false,
 }: ActivityCardProps) {
-  const imageUrl = image || getActivityImage(activity.slug, activityType?.slug);
+  const imageUrl = image || getActivityImage(
+    activity.id,
+    activity.slug,
+    activityType?.slug,
+    activity.heroImage,
+    activityType?.heroImage,
+    region?.slug,
+    region?.heroImage,
+  );
 
   if (variant === "horizontal") {
     return (

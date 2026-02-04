@@ -75,6 +75,29 @@ function extractRelatedQuestions(body: string): string[] {
     .slice(0, 5);
 }
 
+// Extract h2/h3 headings for table of contents
+function extractHeadings(md: string): { level: number; text: string; id: string }[] {
+  // Strip the Quick Answer and Related Questions sections first
+  const cleaned = md
+    .replace(/## Quick Answer[\s\S]*?(?=\n##|$)/i, "")
+    .replace(/## Related Questions[\s\S]*$/i, "");
+  const headings: { level: number; text: string; id: string }[] = [];
+  for (const line of cleaned.split("\n")) {
+    const h2Match = line.match(/^## (.+)$/);
+    const h3Match = line.match(/^### (.+)$/);
+    if (h2Match) {
+      const text = h2Match[1].trim();
+      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      headings.push({ level: 2, text, id });
+    } else if (h3Match) {
+      const text = h3Match[1].trim();
+      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      headings.push({ level: 3, text, id });
+    }
+  }
+  return headings;
+}
+
 // Convert markdown to HTML (simplified)
 function markdownToHtml(md: string): string {
   return md
@@ -82,10 +105,19 @@ function markdownToHtml(md: string): string {
     .replace(/## Quick Answer[\s\S]*?(?=\n##|$)/i, "")
     // Remove Related Questions section
     .replace(/## Related Questions[\s\S]*$/i, "")
-    // Headers
-    .replace(/^#### (.+)$/gm, '<h4 class="text-lg font-semibold text-[#1e3a4c] mt-6 mb-3">$1</h4>')
-    .replace(/^### (.+)$/gm, '<h3 class="text-xl font-semibold text-[#1e3a4c] mt-8 mb-4">$1</h3>')
-    .replace(/^## (.+)$/gm, '<h2 class="text-2xl font-bold text-[#1e3a4c] mt-10 mb-4">$1</h2>')
+    // Headers — with IDs for anchor linking
+    .replace(/^#### (.+)$/gm, (_match: string, text: string) => {
+      const id = text.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      return `<h4 id="${id}" class="text-lg font-semibold text-[#1e3a4c] mt-6 mb-3">${text}</h4>`;
+    })
+    .replace(/^### (.+)$/gm, (_match: string, text: string) => {
+      const id = text.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      return `<h3 id="${id}" class="text-xl font-semibold text-[#1e3a4c] mt-8 mb-4">${text}</h3>`;
+    })
+    .replace(/^## (.+)$/gm, (_match: string, text: string) => {
+      const id = text.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      return `<h2 id="${id}" class="text-2xl font-bold text-[#1e3a4c] mt-10 mb-4">${text}</h2>`;
+    })
     .replace(/^# (.+)$/gm, '')
     // Bold
     .replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold text-[#1e3a4c]">$1</strong>')
@@ -128,7 +160,7 @@ function markdownToHtml(md: string): string {
     .replace(/\n{3,}/g, "\n\n");
 }
 
-function getAnswer(slug: string): { frontmatter: AnswerFrontmatter; quickAnswer: string | null; content: string; relatedQuestions: string[] } | null {
+function getAnswer(slug: string): { frontmatter: AnswerFrontmatter; quickAnswer: string | null; content: string; relatedQuestions: string[]; headings: { level: number; text: string; id: string }[] } | null {
   const filePath = path.join(process.cwd(), "content", "answers", `${slug}.md`);
   
   if (!fs.existsSync(filePath)) {
@@ -142,13 +174,15 @@ function getAnswer(slug: string): { frontmatter: AnswerFrontmatter; quickAnswer:
 
   const quickAnswer = extractQuickAnswer(parsed.body);
   const relatedQuestions = extractRelatedQuestions(parsed.body);
+  const headings = extractHeadings(parsed.body);
   const content = markdownToHtml(parsed.body);
 
   return { 
     frontmatter: parsed.frontmatter,
     quickAnswer,
     content,
-    relatedQuestions
+    relatedQuestions,
+    headings
   };
 }
 
@@ -263,7 +297,7 @@ export default async function AnswerPage({ params }: Props) {
     );
   }
 
-  const { frontmatter, quickAnswer, content, relatedQuestions } = data;
+  const { frontmatter, quickAnswer, content, relatedQuestions, headings } = data;
   const relatedAnswers = getRelatedAnswers(slug, frontmatter.region);
 
   // Create breadcrumb items
@@ -395,17 +429,30 @@ export default async function AnswerPage({ params }: Props) {
             )}
 
             {/* Table of Contents (Mobile - collapsible) */}
-            <div className="lg:hidden mb-8">
-              <details className="group bg-white rounded-lg border border-gray-200 overflow-hidden">
-                <summary className="flex cursor-pointer items-center justify-between p-4 font-bold text-[#1e3a4c] select-none">
-                  <span>Jump to Section</span>
-                  <ChevronRight className="w-5 h-5 transition-transform duration-300 group-open:rotate-90" />
-                </summary>
-                <div className="px-4 pb-4 border-t border-gray-100 pt-2">
-                  <p className="text-sm text-gray-500">Scroll down to read the full answer</p>
-                </div>
-              </details>
-            </div>
+            {headings.length >= 2 && (
+              <div className="lg:hidden mb-8">
+                <details className="group bg-white rounded-lg border border-gray-200 overflow-hidden">
+                  <summary className="flex cursor-pointer items-center justify-between p-4 font-bold text-[#1e3a4c] select-none">
+                    <span>📑 Jump to Section</span>
+                    <ChevronRight className="w-5 h-5 transition-transform duration-300 group-open:rotate-90" />
+                  </summary>
+                  <ul className="px-4 pb-4 border-t border-gray-100 pt-2 space-y-2">
+                    {headings.map((h) => (
+                      <li key={h.id}>
+                        <a
+                          href={`#${h.id}`}
+                          className={`block text-sm hover:text-[#f97316] transition-colors ${
+                            h.level === 2 ? "text-gray-700 font-medium" : "pl-4 text-gray-500"
+                          }`}
+                        >
+                          {h.text}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              </div>
+            )}
 
             {/* Main Content */}
             <div 
@@ -459,6 +506,38 @@ export default async function AnswerPage({ params }: Props) {
                 </div>
               </div>
             </div>
+
+            {/* Related Answers (visible on all screens, useful for mobile) */}
+            {relatedAnswers.length > 0 && (
+              <section className="mt-10 pt-8 border-t border-gray-200">
+                <h2 className="text-xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
+                  <HelpCircle className="w-5 h-5 text-[#f97316]" />
+                  More Answers{frontmatter.region ? ` about ${formatRegionName(frontmatter.region)}` : ""}
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {relatedAnswers.map((answer) => (
+                    <Link
+                      key={answer.slug}
+                      href={`/answers/${answer.slug}`}
+                      className="group flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-[#1e3a4c]/30 hover:shadow-sm transition-all"
+                    >
+                      <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-[#f97316] shrink-0 mt-1 transition-colors" />
+                      <span className="text-sm text-gray-700 group-hover:text-[#1e3a4c] font-medium transition-colors line-clamp-2">
+                        {answer.question}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+                <div className="mt-4 text-center">
+                  <Link
+                    href="/answers"
+                    className="inline-flex items-center gap-2 text-sm text-[#f97316] font-medium hover:underline"
+                  >
+                    Browse all answers <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </section>
+            )}
           </article>
 
           {/* Sidebar (Desktop only) */}

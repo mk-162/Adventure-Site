@@ -8,6 +8,7 @@ import {
 import { ActivityCard } from "@/components/cards/activity-card";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 import { ClaimListingBanner } from "@/components/operators/ClaimListingBanner";
+import MapView from "@/components/ui/MapView";
 import { ShareButton } from "@/components/ui/ShareButton";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import { 
@@ -660,15 +661,31 @@ export default async function OperatorProfilePage({ params }: Props) {
               </form>
             </div>
 
-            {/* Location Map Placeholder */}
+            {/* Location Map */}
             {(operator.lat && operator.lng) && (
-              <div className="rounded-xl overflow-hidden h-48 relative shadow-sm border border-gray-200 bg-gray-100">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-8 h-8 text-[#1e3a4c] mx-auto mb-2" />
-                    <p className="text-sm text-gray-500">{operator.address?.split(",")[0]}</p>
-                  </div>
-                </div>
+              <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
+                <MapView
+                  markers={[{
+                    id: `operator-${operator.id}`,
+                    lat: parseFloat(String(operator.lat)),
+                    lng: parseFloat(String(operator.lng)),
+                    type: "operator" as const,
+                    title: operator.name,
+                    subtitle: operator.address?.split(",")[0] || undefined,
+                    link: `/directory/${operator.slug}`,
+                  }]}
+                  height="200px"
+                  zoom={13}
+                  interactive={false}
+                />
+                <a
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${operator.lat},${operator.lng}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center py-2 text-xs font-medium text-[#f97316] hover:bg-gray-50 transition-colors border-t border-gray-200"
+                >
+                  Get Directions →
+                </a>
               </div>
             )}
           </aside>

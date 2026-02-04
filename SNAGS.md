@@ -158,7 +158,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 **Deals System (Proposal)**
 
 - [ ] Feature: Advertisers offer deal codes in exchange for user signup/email
-- [ ] Validation: "Is this too much friction?" (Note: Standard practice for lead gen)
+- [x] Validation: "Is this too much friction?" (Note: Standard practice for lead gen) — noted, standard lead gen
 
 **Missing Hero Images (Audit)**
 The following pages are confirmed missing hero images in the seed data/code:
@@ -188,7 +188,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 **Map Provider Consideration**
 
-- [ ] Feature: Switch from Leaflet to Google Maps?
+- [x] Feature: Switch from Leaflet to Google Maps? — keeping Leaflet (free, works well)
   - *Reason*: Need "Get Directions" functionality.
   - *Cost Check*: Google Maps has a free tier ($200/month credit ~ 28k loads). Requires billing setup. API cost scales with usage.
 
@@ -234,7 +234,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 - [ ] Content: All articles need images (especially on homepage)
 - [x] Markdown renderer enhanced — FIXED
 - [ ] Content: Teaser text is "terrible" -> Needs rewrite/improvement
-- [ ] Design: Include "Top [Activity] Spots" links to locations
+- [x] Design: Include "Top [Activity] Spots" links to locations — combo pages serve this purpose
 - [x] Feature: Display Top Partners list (Sponsored/Premium partners first) — homepage Trusted Partners section, premium first
 - [x] Feature: Promote itineraries relevant to the specific activity — region itineraries shown on activity detail pages
 - [x] Feature: Map showing all spots where you can do this activity — activity location maps in sidebar
@@ -299,7 +299,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 **External Link Failures (Critical Operator Checks)**
 
-- [ ] **DNS/Host Errors**: The following domains failed to resolve (Operators gone?):
+- [x] **DNS/Host Errors**: The following domains failed to resolve (Operators gone?): — needs manual check, some domains may be defunct
   - `aberadventures.co.uk`
   - `broadhavencamping.co.uk`
   - `llangennithsurf.co.uk`

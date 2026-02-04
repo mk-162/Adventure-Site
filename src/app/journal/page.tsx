@@ -6,14 +6,14 @@ import Image from "next/image";
 import { BookOpen, Clock, Tag as TagIcon } from "lucide-react";
 
 const categories = [
-  { value: "", label: "All" },
-  { value: "guide", label: "Guides", color: "#3b82f6" },
-  { value: "gear", label: "Gear", color: "#22c55e" },
-  { value: "safety", label: "Safety", color: "#ef4444" },
-  { value: "seasonal", label: "Seasonal", color: "#f59e0b" },
-  { value: "news", label: "News", color: "#a855f7" },
-  { value: "trip-report", label: "Trip Reports", color: "#14b8a6" },
-  { value: "spotlight", label: "Spotlight", color: "#f97316" },
+  { value: "", label: "All", image: "", description: "" },
+  { value: "guide", label: "Guides", color: "#3b82f6", image: "/images/activities/hiking-hero.jpg", description: "Expert tips and how-tos for Welsh adventures" },
+  { value: "gear", label: "Gear", color: "#22c55e", image: "/images/misc/gear-hiking-01-918f1952.jpg", description: "Reviews and recommendations for adventure kit" },
+  { value: "safety", label: "Safety", color: "#ef4444", image: "/images/misc/safety-mountain-02-79505242.jpg", description: "Stay safe on your Welsh outdoor adventures" },
+  { value: "seasonal", label: "Seasonal", color: "#f59e0b", image: "/images/misc/seasonal-autumn-01-b078c4e2.jpg", description: "What to do each season across Wales" },
+  { value: "news", label: "News", color: "#a855f7", image: "/images/misc/events-festival-01-33fb98e2.jpg", description: "Latest from the Welsh adventure scene" },
+  { value: "trip-report", label: "Trip Reports", color: "#14b8a6", image: "/images/activities/coasteering-hero.jpg", description: "Real stories from real adventures in Wales" },
+  { value: "spotlight", label: "Spotlight", color: "#f97316", image: "/images/misc/partner-business-01-7f12dce4.jpg", description: "Profiles of Wales' best adventure operators" },
 ];
 
 const categoryColors: Record<string, string> = {
@@ -24,6 +24,16 @@ const categoryColors: Record<string, string> = {
   news: "#a855f7",
   "trip-report": "#14b8a6",
   spotlight: "#f97316",
+};
+
+const categoryFallbackImages: Record<string, string> = {
+  guide: "/images/activities/hiking-hero.jpg",
+  gear: "/images/misc/gear-hiking-01-918f1952.jpg",
+  safety: "/images/misc/safety-mountain-02-79505242.jpg",
+  seasonal: "/images/misc/seasonal-autumn-01-b078c4e2.jpg",
+  news: "/images/misc/events-festival-01-33fb98e2.jpg",
+  "trip-report": "/images/activities/coasteering-hero.jpg",
+  spotlight: "/images/misc/partner-business-01-7f12dce4.jpg",
 };
 
 export default function JournalPage() {
@@ -87,27 +97,54 @@ export default function JournalPage() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Filters */}
-        <div className="mb-8">
-          {/* Category pills */}
-          <div className="flex flex-wrap gap-2 mb-4">
-            {categories.map((cat) => (
+        {/* Category Cards */}
+        <div className="mb-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-6">
+            {categories.filter(c => c.value !== "").map((cat) => (
               <button
                 key={cat.value}
                 onClick={() => {
-                  setSelectedCategory(cat.value);
+                  setSelectedCategory(selectedCategory === cat.value ? "" : cat.value);
                   setSelectedTag("");
                 }}
-                className={`px-4 py-2 rounded-full text-sm font-semibold transition-all ${
+                className={`group relative overflow-hidden rounded-xl h-32 transition-all ${
                   selectedCategory === cat.value
-                    ? "bg-[#1e3a4c] text-white shadow-lg"
-                    : "bg-slate-100 text-slate-700 hover:bg-slate-200"
+                    ? "ring-3 ring-[#f97316] shadow-xl scale-[1.02]"
+                    : "hover:shadow-lg hover:scale-[1.01]"
                 }`}
               >
-                {cat.label}
+                {cat.image && (
+                  <Image
+                    src={cat.image}
+                    alt={cat.label}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-3 text-left">
+                  <span
+                    className="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold text-white mb-1"
+                    style={{ backgroundColor: cat.color }}
+                  >
+                    {cat.label.toUpperCase()}
+                  </span>
+                  <p className="text-white text-xs leading-tight line-clamp-2">{cat.description}</p>
+                </div>
+                {selectedCategory === cat.value && (
+                  <div className="absolute top-2 right-2 bg-[#f97316] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">✓</div>
+                )}
               </button>
             ))}
           </div>
+          {selectedCategory && (
+            <button
+              onClick={() => setSelectedCategory("")}
+              className="text-sm text-slate-500 hover:text-[#f97316] transition-colors"
+            >
+              ← Show all articles
+            </button>
+          )}
 
           {/* Tag pills */}
           {tags.length > 0 && (
@@ -146,23 +183,23 @@ export default function JournalPage() {
                 <p className="text-slate-500">No articles found. Try adjusting your filters.</p>
               </div>
             ) : (
-              posts.map((post) => (
+              posts.map((post) => {
+                const heroImg = post.post.heroImage || categoryFallbackImages[post.post.category] || "/images/activities/hiking-hero.jpg";
+                return (
                 <article
                   key={post.post.id}
                   className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow"
                 >
                   <div className="grid md:grid-cols-3 gap-6">
-                    {post.post.heroImage && (
-                      <div className="relative h-48 md:h-full">
-                        <Image
-                          src={post.post.heroImage}
-                          alt={post.post.title}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    )}
-                    <div className={post.post.heroImage ? "md:col-span-2 p-6" : "md:col-span-3 p-6"}>
+                    <div className="relative h-48 md:h-full min-h-[12rem]">
+                      <Image
+                        src={heroImg}
+                        alt={post.post.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="md:col-span-2 p-6">
                       {/* Category badge */}
                       <div className="mb-3">
                         <span
@@ -214,7 +251,8 @@ export default function JournalPage() {
                     </div>
                   </div>
                 </article>
-              ))
+                );
+              })
             )}
           </div>
 

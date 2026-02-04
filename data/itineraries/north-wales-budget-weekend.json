@@ -1,0 +1,224 @@
+{
+  "slug": "north-wales-budget-weekend",
+  "title": "North Wales Budget Weekend",
+  "tagline": "Adventure under £50 per person",
+  "region": "north-wales",
+  "days": 2,
+  "difficulty": "moderate",
+  "bestSeason": "May-September",
+  "groupType": "budget",
+  "priceFrom": 45,
+  "priceTo": 90,
+  "budgetPriceFrom": 30,
+  "budgetPriceTo": 60,
+  "highlights": [
+    "Free hikes",
+    "Cheap camping",
+    "Coed y Brenin free trails"
+  ],
+  "activityTypes": [
+    "hiking",
+    "mountain-biking",
+    "wild-swimming"
+  ],
+  "suitableFor": "Active individuals, couples, or small groups looking for an affordable outdoor adventure. Some hiking experience is beneficial.",
+  "notSuitableFor": "Those with mobility issues, a strong aversion to camping, or those seeking luxury accommodations and fine dining.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Waterproof jacket and trousers",
+    "Hiking boots",
+    "Swimsuit and towel",
+    "Headtorch",
+    "First-aid kit"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Torrent Walk, Dolgellau",
+      "description": "A stunning walk alongside a cascading river through a wooded gorge, with several waterfalls.",
+      "duration": "2.5 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.7436,
+      "lng": -3.8845,
+      "travelToNext": "15min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "King Arthur's Labyrinth",
+        "description": "An underground storytelling adventure exploring Welsh legends.",
+        "costFrom": 17.5,
+        "costTo": 17.5
+      },
+      "budgetAlt": {
+        "title": "Continue along the Mawddach Trail",
+        "description": "A flat, easy walk or cycle along the estuary. Park in Dolgellau and follow signs.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Bistro @ Cymer",
+      "foodType": "lunch",
+      "description": "Friendly cafe offering light bites, sandwiches and cakes. Located close to the Torrent Walk.",
+      "costFrom": 8,
+      "costTo": 15,
+      "lat": 52.7401,
+      "lng": -3.8772,
+      "travelToNext": "20min drive via A470",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Glaslyn Osprey Project viewpoint",
+        "description": "A great spot to enjoy your lunch and hopefully see Ospreys (seasonal)"
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "13:30",
+      "type": "activity",
+      "title": "Wild Swimming in Llyn Dinas",
+      "description": "A refreshing dip in a beautiful mountain lake with views of Snowdon. Be mindful of water temperature.",
+      "duration": "1.5 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.0337,
+      "lng": -4.0415,
+      "travelToNext": "15min drive via A498",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Slate Museum, Llanberis",
+        "description": "Explore the history of the Welsh slate industry.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Relax by the lake and enjoy the views.",
+        "description": "Perfect for reading, sketching, or simply taking in the scenery.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "16:00",
+      "type": "accommodation",
+      "title": "Camping at Llyn Gwynant Campsite",
+      "description": "A scenic campsite in the heart of Snowdonia with good facilities. Ideal for budget travellers.",
+      "costFrom": 10,
+      "costTo": 15,
+      "lat": 53.0561,
+      "lng": -3.9986,
+      "travelToNext": "30min drive via A4086",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Wild camping (ensure legal and responsible)",
+        "description": "Check regulations and leave no trace.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coed y Brenin Forest Park - MinorTaur Trail",
+      "description": "A free family-friendly mountain bike trail. Bike hire available nearby.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.8587,
+      "lng": -3.8851,
+      "travelToNext": "20min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Coed y Brenin Visitor Centre",
+        "description": "Explore the exhibits and enjoy a coffee in the cafe.",
+        "costFrom": 5,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Hiking Trails at Coed y Brenin",
+        "description": "Numerous hiking trails of varying difficulty are available.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "11:30",
+      "type": "food",
+      "title": "Cafe at Coed y Brenin Visitor Centre",
+      "foodType": "lunch",
+      "description": "Basic cafe with sandwiches, hot dogs and cakes.",
+      "costFrom": 7,
+      "costTo": 12,
+      "lat": 52.8587,
+      "lng": -3.8851,
+      "travelToNext": "45min drive via A470 and A5",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at the Coed y Brenin picnic area",
+        "description": "Enjoy your own food with views of the forest."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "13:00",
+      "type": "activity",
+      "title": "Explore Swallow Falls",
+      "description": "Visit the highest continuous waterfall in Wales. Small entry fee applies.",
+      "duration": "1 hour",
+      "costFrom": 2.0,
+      "costTo": 2.5,
+      "lat": 53.1158,
+      "lng": -3.7912,
+      "travelToNext": "End",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Browse the shops in Betws-y-Coed",
+        "description": "Explore the gift shops and outdoor clothing stores.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walk the riverside path in Betws-y-Coed (free)",
+        "description": "Enjoy the scenic riverside walk without entering the falls area",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 2.0,
+      "accommodation": 12.5,
+      "food": 40,
+      "transport": 25,
+      "total": 79.5
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 0,
+      "food": 15,
+      "transport": 15,
+      "total": 30
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "North Wales weather can be unpredictable. Be prepared for rain even in summer. Mountain weather can change rapidly.",
+    "traffic": "Traffic can be heavy in Snowdonia, especially during peak season (July/August) and on weekends. Allow extra time for travel and parking, especially around popular attractions like Snowdon. Parking at Swallow Falls can be difficult, especially during peak times.",
+    "booking": "Camping reservations are recommended, especially during peak season. Some activities, like King Arthur's Labyrinth, may require advance booking. ",
+    "fitness": "Moderate fitness is required for the hiking and mountain biking activities. The Torrent Walk involves some steep steps and uneven terrain."
+  }
+}

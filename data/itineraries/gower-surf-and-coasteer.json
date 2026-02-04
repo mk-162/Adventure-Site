@@ -1,0 +1,242 @@
+{
+  "slug": "gower-surf-and-coasteer",
+  "title": "Gower Surf & Coasteer",
+  "tagline": "Wales' original AONB, waves and cliffs",
+  "region": "gower",
+  "days": 2,
+  "difficulty": "moderate",
+  "bestSeason": "May-September",
+  "groupType": "friends, couples",
+  "priceFrom": 290,
+  "priceTo": 550,
+  "budgetPriceFrom": 180,
+  "budgetPriceTo": 300,
+  "highlights": [
+    "Llangennith surfing",
+    "Gower coasteering",
+    "Rhossili Bay"
+  ],
+  "activityTypes": [
+    "surfing",
+    "coasteering"
+  ],
+  "suitableFor": "Active couples and friends who enjoy outdoor adventures and aren't afraid of a bit of a challenge. Must be comfortable in the water.",
+  "notSuitableFor": "Those with limited mobility, a strong aversion to cold water, or those seeking a purely relaxing holiday.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Swimsuit",
+    "Towel",
+    "Sunscreen",
+    "Waterproof jacket",
+    "Sturdy walking shoes"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Surfing Lesson",
+      "description": "Learn to ride the waves at Llangennith, one of Gower's best surfing beaches. Includes instruction and board hire.",
+      "duration": "2.5 hours",
+      "costFrom": 40,
+      "costTo": 65,
+      "lat": 51.597,
+      "lng": -4.268,
+      "travelToNext": "15min drive via B4247",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Waterfront Museum (Swansea)",
+        "description": "Explore Swansea's maritime history at this indoor museum. Great for a rainy day.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Bodyboarding at Llangennith",
+        "description": "Rent a bodyboard and enjoy the waves at Llangennith Beach.",
+        "costFrom": 10,
+        "costTo": 15
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Beach House Restaurant",
+      "foodType": "lunch",
+      "description": "Enjoy fresh seafood with stunning views of Oxwich Bay. A popular spot for lunch.",
+      "costFrom": 20,
+      "costTo": 35,
+      "lat": 51.558,
+      "lng": -4.165,
+      "travelToNext": "25min drive via A4118",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Three Cliffs Bay",
+        "description": "Enjoy your lunch with fantastic views"
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Coasteering with Quest Adventure",
+      "description": "Explore the Gower coastline from a unique perspective, scrambling, swimming, and jumping into the sea. Wetsuit and safety gear provided.",
+      "duration": "3 hours",
+      "costFrom": 50,
+      "costTo": 75,
+      "lat": 51.546,
+      "lng": -4.215,
+      "travelToNext": "15min drive via A4118",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "LC Swansea",
+        "description": "Indoor waterpark with slides and pools. Good fun for all ages.",
+        "costFrom": 15,
+        "costTo": 25
+      },
+      "budgetAlt": {
+        "title": "Coastal walk to Three Cliffs Bay",
+        "description": "Hike along the cliffs to Three Cliffs Bay and enjoy the views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "18:30",
+      "type": "accommodation",
+      "title": "The King Arthur Hotel",
+      "description": "Traditional hotel in Reynoldston, a good base for exploring the Gower. Offers comfortable rooms and a restaurant.",
+      "costFrom": 100,
+      "costTo": 200,
+      "lat": 51.585,
+      "lng": -4.195,
+      "travelToNext": "20min drive via A4118",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Llangennith Campsite",
+        "description": "Camping with basic facilities. A cheap option close to the beach.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 5,
+      "time": "19:30",
+      "type": "food",
+      "title": "The Britannia Inn",
+      "foodType": "Dinner",
+      "description": "Traditional pub food in a relaxed atmosphere.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.585,
+      "lng": -4.205,
+      "travelToNext": "0",
+      "travelMode": "none",
+      "budgetAlt": {
+        "title": "Cook your own dinner at the campsite",
+        "description": "Bring your own food and enjoy a simple meal"
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Walk to Worm's Head",
+      "description": "Walk across the causeway to Worm's Head at low tide and explore this unique tidal island. Check tide times before you set off!",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.562,
+      "lng": -4.29,
+      "travelToNext": "10min drive via A4118",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Gower Heritage Centre",
+        "description": "Learn about the Gower's history and heritage at this interesting centre. Has indoor and outdoor exhibits.",
+        "costFrom": 7,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Explore Rhossili Bay",
+        "description": "Walk along the beach and admire the views of Rhossili Bay.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Bay Bistro & Coffee House",
+      "foodType": "lunch",
+      "description": "Casual cafe with sandwiches and ice cream.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 51.569,
+      "lng": -4.287,
+      "travelToNext": "1 hours drive via A4118",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic at Rhossili Downs",
+        "description": "Enjoy your lunch with a fantastic view from the top of the hill."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "13:30",
+      "type": "activity",
+      "title": "SUP Boarding at Oxwich Bay",
+      "description": "Enjoy the calm waters of Oxwich Bay on a Stand Up Paddleboard. Great for all levels of experience.",
+      "duration": "2 hours",
+      "costFrom": 35,
+      "costTo": 55,
+      "lat": 51.558,
+      "lng": -4.165,
+      "travelToNext": "0",
+      "travelMode": "none",
+      "wetAlt": {
+        "title": "Swansea Museum",
+        "description": "Explore Swansea's history at this interesting museum.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Swim at Oxwich Bay",
+        "description": "Enjoy a swim in the sea",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 125,
+      "accommodation": 150,
+      "food": 80,
+      "transport": 25,
+      "total": 380
+    },
+    "budget": {
+      "activities": 20,
+      "accommodation": 20,
+      "food": 30,
+      "transport": 25,
+      "total": 95
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Gower weather can be unpredictable. Be prepared for sunshine and showers, especially outside of summer. Check the forecast before you go.",
+    "traffic": "Traffic can be heavy on the A4118, especially during peak season. Allow extra time for travel. Parking at popular beaches can fill up quickly – arrive early or consider using public transport.",
+    "booking": "Coasteering and surfing lessons should be booked in advance, especially during school holidays. Accommodation also books up quickly, so reserve early to avoid disappointment.",
+    "fitness": "A moderate level of fitness is required for coasteering and walking. Be prepared for some scrambling and swimming. Check tide times for the walk to Worm's Head."
+  }
+}

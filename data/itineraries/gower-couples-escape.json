@@ -1,0 +1,242 @@
+{
+  "slug": "gower-couples-escape",
+  "title": "Gower Romantic Escape",
+  "tagline": "Sunset beaches and sea breezes",
+  "region": "gower",
+  "days": 2,
+  "difficulty": "easy",
+  "bestSeason": "May-September",
+  "groupType": "couples",
+  "priceFrom": 350,
+  "priceTo": 750,
+  "budgetPriceFrom": 200,
+  "budgetPriceTo": 400,
+  "highlights": [
+    "Rhossili sunset",
+    "Worm's Head walk",
+    "Coastal path"
+  ],
+  "activityTypes": [
+    "hiking",
+    "surfing"
+  ],
+  "suitableFor": "Couples seeking a relaxed coastal getaway with gentle walks, beautiful scenery, and optional watersports. Those who enjoy a mix of outdoor activity and comfortable accommodation.",
+  "notSuitableFor": "Those seeking extreme adventure activities, a lively nightlife scene, or those with mobility issues due to some uneven terrain.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Walking boots",
+    "Sunscreen",
+    "Swimsuit",
+    "Camera"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Worm's Head Walk",
+      "description": "Explore the iconic Worm's Head at Rhossili Bay during low tide. Enjoy breathtaking views and spot seabirds.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.562,
+      "lng": -4.29,
+      "travelToNext": "5 min drive to Rhossili village",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Gower Heritage Centre",
+        "description": "Explore traditional crafts and learn about Gower's history.",
+        "costFrom": 7,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Rhossili Headland Walk",
+        "description": "A shorter, easier walk along the headland with stunning views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Bay Bistro & Coffee Shop",
+      "foodType": "lunch",
+      "description": "A relaxed cafe in Rhossili village, serving sandwiches, salads, and homemade cakes.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.569,
+      "lng": -4.287,
+      "travelToNext": "20 min drive to Llangennith",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Rhossili Bay",
+        "description": "Enjoy your sandwiches with stunning ocean views."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Surfing Lesson at Llangennith Beach",
+      "description": "Learn to surf at one of Gower's best surfing beaches with a lesson from Llangennith Surf School.",
+      "duration": "2 hours",
+      "costFrom": 40,
+      "costTo": 65,
+      "lat": 51.597,
+      "lng": -4.268,
+      "travelToNext": "30 min drive to Reynoldston",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Swansea National Waterfront Museum",
+        "description": "Explore the history of Welsh industry and innovation.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Relaxing on Llangennith Beach",
+        "description": "Enjoy the sand and sea without the lesson fee.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "The King Arthur Hotel",
+      "description": "A charming hotel in Reynoldston, offering comfortable rooms and a traditional pub atmosphere.",
+      "costFrom": 100,
+      "costTo": 200,
+      "lat": 51.5941,
+      "lng": -4.1841,
+      "travelToNext": "10 min drive to Three Cliffs Bay",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Llangennith Campsite",
+        "description": "Camp under the stars near Llangennith Beach.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 5,
+      "time": "19:30",
+      "type": "food",
+      "title": "Restaurant at The King Arthur Hotel",
+      "foodType": "dinner",
+      "description": "Enjoy a hearty Welsh meal at the hotel's restaurant.",
+      "costFrom": 25,
+      "costTo": 40,
+      "lat": 51.5941,
+      "lng": -4.1841,
+      "travelToNext": "0 min ",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Picnic dinner at the hotel",
+        "description": "Pick up supplies at local shop."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coastal Walk to Three Cliffs Bay",
+      "description": "Hike along the stunning coastal path from Pennard Cliffs to the iconic Three Cliffs Bay, enjoying panoramic views.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.575,
+      "lng": -4.1,
+      "travelToNext": "5 min drive to Oxwich Bay",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Explore Oystermouth Castle",
+        "description": "Discover the history of this Norman castle overlooking Swansea Bay.",
+        "costFrom": 6,
+        "costTo": 8
+      },
+      "budgetAlt": {
+        "title": "Explore Pennard Castle ruins.",
+        "description": "Walk around the ruins and take photographs.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Oxwich Bay Hotel Restaurant",
+      "foodType": "lunch",
+      "description": "Enjoy lunch at the Oxwich Bay Hotel restaurant with views of the bay.",
+      "costFrom": 20,
+      "costTo": 35,
+      "lat": 51.558,
+      "lng": -4.165,
+      "travelToNext": "0 min walk to beach",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Packed lunch on Oxwich Bay",
+        "description": "Enjoy your sandwiches with a beautiful view of the sea."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "SUP Boarding at Oxwich Bay",
+      "description": "Enjoy a relaxing SUP boarding session on the calm waters of Oxwich Bay with Oxwich Watersports.",
+      "duration": "2 hours",
+      "costFrom": 35,
+      "costTo": 55,
+      "lat": 51.558,
+      "lng": -4.165,
+      "travelToNext": "Drive home - allow ample time",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit the Dylan Thomas Centre in Swansea",
+        "description": "Learn about the life and work of the famous Welsh poet.",
+        "costFrom": 6,
+        "costTo": 8
+      },
+      "budgetAlt": {
+        "title": "Swimming in Oxwich Bay",
+        "description": "Enjoy the sea without the rental fee.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 135,
+      "accommodation": 150,
+      "food": 100,
+      "transport": 75,
+      "total": 460
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 20,
+      "food": 40,
+      "transport": 50,
+      "total": 110
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Gower weather can be unpredictable, even in summer. Pack layers and be prepared for rain. Check the tide times for Worm's Head walk.",
+    "traffic": "Traffic can be heavy on weekends and during school holidays, especially around Rhossili and Oxwich. Arrive early to secure parking, particularly at Rhossili.",
+    "booking": "Book surfing lessons and accommodation in advance, especially during peak season. Worm's Head walk is tide-dependent and needs planning.",
+    "fitness": "This itinerary requires a moderate level of fitness for coastal walks. Worm's Head walk involves some uneven terrain."
+  }
+}

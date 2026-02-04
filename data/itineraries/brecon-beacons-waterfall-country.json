@@ -1,0 +1,242 @@
+{
+  "slug": "brecon-beacons-waterfall-country",
+  "title": "Waterfall Country Explorer",
+  "tagline": "Chase waterfalls through ancient woodland",
+  "region": "brecon-beacons",
+  "days": 2,
+  "difficulty": "moderate",
+  "bestSeason": "April-October",
+  "groupType": "families, photographers",
+  "priceFrom": 250,
+  "priceTo": 450,
+  "budgetPriceFrom": 150,
+  "budgetPriceTo": 250,
+  "highlights": [
+    "Sgwd yr Eira walk-behind waterfall",
+    "Four Falls Trail",
+    "Gorge walking"
+  ],
+  "activityTypes": [
+    "hiking",
+    "gorge-walking"
+  ],
+  "suitableFor": "Families with children aged 8+, adventurous couples, and photographers seeking stunning scenery. Hikers comfortable with uneven terrain.",
+  "notSuitableFor": "Those with limited mobility due to uneven terrain and some steep sections. Anyone afraid of heights might find gorge walking challenging.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Hiking boots with good grip",
+    "Swimwear and towel (for gorge walking)",
+    "Camera",
+    "Snacks and water"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Gorge Walking in Waterfall Country",
+      "description": "Scramble through the river gorge, navigate small waterfalls, and enjoy the thrill of the Brecon Beacons' natural playground.",
+      "duration": "3 hours",
+      "costFrom": 45,
+      "costTo": 85,
+      "lat": 51.808,
+      "lng": -3.56,
+      "travelToNext": "15min drive via A4059",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Craig y Nos Castle Tour",
+        "description": "Explore the historic Craig y Nos Castle, once home to opera singer Adelina Patti.",
+        "costFrom": 8,
+        "costTo": 12
+      },
+      "budgetAlt": {
+        "title": "Explore the Ystradfellte Nature Reserve",
+        "description": "Hike through the woodlands and discover smaller, less-known waterfalls.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Old Waterwheel Tearoom",
+      "foodType": "lunch",
+      "description": "A charming tearoom serving light lunches, homemade cakes, and local Welsh specialties.",
+      "costFrom": 12,
+      "costTo": 20,
+      "lat": 51.81,
+      "lng": -3.55,
+      "travelToNext": "5min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Pontneddfechan picnic site",
+        "description": "Enjoy your own food at the scenic picnic area near the village."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Four Falls Trail Hike",
+      "description": "Embark on a circular walk visiting four distinct waterfalls, including the famous Sgwd yr Eira, which you can walk behind.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.799,
+      "lng": -3.58,
+      "travelToNext": "20 min drive via A4059",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Showcaves Centre",
+        "description": "Explore a network of caves and dinosaur exhibits.",
+        "costFrom": 15,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Free: Explore Pontneddfechan Village",
+        "description": "Wander through the quaint village and admire the surrounding scenery.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Waterfall Country Campsite",
+      "description": "A well-maintained campsite located close to the waterfalls, ideal for experiencing the natural beauty of the area.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.809,
+      "lng": -3.57,
+      "travelToNext": "25 min drive via A4059",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Wild Camping (permit required)",
+        "description": "If you are experienced and responsible, you can obtain a permit for wild camping in certain areas.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 5,
+      "time": "19:00",
+      "type": "food",
+      "title": "The Lamb Inn",
+      "foodType": "dinner",
+      "description": "A traditional pub in Pontneddfechan, serving hearty meals and local ales.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.812,
+      "lng": -3.548,
+      "travelToNext": "N/A",
+      "travelMode": "none",
+      "budgetAlt": {
+        "title": "Cook your own at the campsite",
+        "description": "Prepare a simple meal using your camping stove and supplies."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Sgwd yr Eira walk-behind waterfall",
+      "description": "Hike to Sgwd yr Eira, a stunning waterfall you can walk behind, for a unique and memorable experience.",
+      "duration": "2-3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.799,
+      "lng": -3.58,
+      "travelToNext": "45min drive via A4059 and A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Brecon Mountain Railway",
+        "description": "Enjoy a scenic steam train ride through the Brecon Beacons National Park.",
+        "costFrom": 16,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Free: Explore more of the Brecon Beacons National Park.",
+        "description": "Enjoy the views of the open fields and rolling hills.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "The Red Lion Inn",
+      "foodType": "lunch",
+      "description": "A traditional pub located in Penderyn, offering a cozy atmosphere and classic pub fare.",
+      "costFrom": 12,
+      "costTo": 20,
+      "lat": 51.77,
+      "lng": -3.48,
+      "travelToNext": "1 hour 30 min drive via A470",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic at Llyn Cwm Llwch",
+        "description": "Enjoy your lunch beside the stunning glacial lake beneath Pen y Fan."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Pen y Fan Hike (Short Route)",
+      "description": "Take a shorter, more accessible route to the summit of Pen y Fan for panoramic views (weather permitting!).",
+      "duration": "2-3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.883,
+      "lng": -3.437,
+      "travelToNext": "N/A",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Brecon Beacons Visitor Centre",
+        "description": "Learn about the history, geology, and wildlife of the Brecon Beacons.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Free: Shorter Walk around Storey Arms",
+        "description": "Enjoy a walk around the Storey Arms and take in the local views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 70,
+      "accommodation": 20,
+      "food": 70,
+      "transport": 30,
+      "total": 190
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 10,
+      "food": 30,
+      "transport": 30,
+      "total": 70
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Expect changeable weather, even in summer. Rain is common, so pack waterproof gear. Check the forecast before heading out.",
+    "traffic": "Traffic can be heavy on weekends and during school holidays, especially around popular attractions. Parking at Waterfall Country can fill up quickly, arrive early or consider using public transport.",
+    "booking": "Gorge walking with Adventure Britain needs to be booked in advance, especially during peak season. Accommodation should also be booked ahead of time.",
+    "fitness": "A moderate level of fitness is required for the gorge walking and hiking. The Four Falls Trail involves some uneven terrain and steps. The shorter Pen y Fan route is manageable for most, but still involves some uphill walking."
+  }
+}

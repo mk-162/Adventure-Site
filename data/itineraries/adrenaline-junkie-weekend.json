@@ -1,0 +1,224 @@
+{
+  "slug": "adrenaline-junkie-weekend",
+  "title": "Adrenaline Junkie Weekend",
+  "tagline": "Maximum thrills in minimum time",
+  "region": "snowdonia",
+  "days": 2,
+  "difficulty": "difficult",
+  "bestSeason": "March-October",
+  "groupType": "thrill-seekers",
+  "priceFrom": 350,
+  "priceTo": 550,
+  "budgetPriceFrom": 180,
+  "budgetPriceTo": 300,
+  "highlights": [
+    "Velocity 2",
+    "Crib Goch",
+    "White water rafting"
+  ],
+  "activityTypes": [
+    "zip-lining",
+    "hiking",
+    "gorge-walking"
+  ],
+  "suitableFor": "Experienced hikers and thrill-seekers comfortable with heights and exposed terrain. Must have a good level of fitness and be prepared for challenging conditions.",
+  "notSuitableFor": "Those with a fear of heights, limited fitness, or no prior hiking experience. Young children and those with pre-existing medical conditions should avoid this itinerary.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Waterproof jacket and trousers",
+    "Hiking boots with ankle support",
+    "Backpack with water and snacks",
+    "Sunscreen and hat",
+    "Headtorch"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Velocity 2 Zip Line",
+      "description": "Experience Europe's fastest zip line at Penrhyn Quarry, reaching speeds of over 100mph.",
+      "duration": "2.5 hours",
+      "costFrom": 89,
+      "costTo": 109,
+      "lat": 53.1775,
+      "lng": -4.0856,
+      "travelToNext": "30min drive via A5 and A4086",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Bounce Below",
+        "description": "Underground trampoline adventure in a disused slate mine - fun whatever the weather.",
+        "costFrom": 25,
+        "costTo": 35
+      },
+      "budgetAlt": {
+        "title": "Zip World Fforest Coaster",
+        "description": "Ride the UK's only alpine coaster located in the beautiful forest in Betws-y-Coed.",
+        "costFrom": 25,
+        "costTo": 35
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Pete's Eats",
+      "foodType": "lunch",
+      "description": "A legendary mountaineering cafe in Llanberis, famous for its enormous portions and hearty fare.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 53.119,
+      "lng": -4.127,
+      "travelToNext": "20min drive via A4086",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Ogwen",
+        "description": "Enjoy your sandwiches with stunning views of Tryfan and the Glyderau mountains."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Crib Goch Guided Walk",
+      "description": "A challenging and exposed scramble across Crib Goch, one of Snowdonia's most iconic ridges, with expert guidance.",
+      "duration": "6 hours",
+      "costFrom": 55,
+      "costTo": 75,
+      "lat": 53.08,
+      "lng": -4.02,
+      "travelToNext": "15min drive via A4086 and A498 to Nant Peris",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Rock Climbing Taster",
+        "description": "Learn the ropes indoors at Plas y Brenin National Mountain Sports Centre",
+        "costFrom": 150,
+        "costTo": 300
+      },
+      "budgetAlt": {
+        "title": "Snowdon Summit Hike (Llanberis Path)",
+        "description": "Hike to the summit of Snowdon via the Llanberis Path. Less exposed than Crib Goch, but still a challenging climb.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "20:00",
+      "type": "accommodation",
+      "title": "Ben's Bunkhouse",
+      "description": "A comfortable and affordable bunkhouse in Nant Peris, perfectly located for exploring Snowdonia.",
+      "costFrom": 25,
+      "costTo": 40,
+      "lat": 53.1039,
+      "lng": -4.0541,
+      "travelToNext": "35min drive via A4086 and A5 to Bala",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "The Snowdon Inn (Y Fricsan)",
+        "description": "Camping at the foot of Snowdon in Llanberis",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "White Water Rafting",
+      "description": "Experience the thrill of white water rafting on the River Tryweryn at the National White Water Centre.",
+      "duration": "3 hours",
+      "costFrom": 55,
+      "costTo": 75,
+      "lat": 52.911,
+      "lng": -3.601,
+      "travelToNext": "5min drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "N/A",
+        "description": "This activity is already weather-dependent and typically runs in most conditions. If conditions are *too* extreme, you'll get a refund.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Gorge Walking",
+        "description": "Scramble up a mountain stream with Adventure Britain, jumping into pools and sliding down waterfalls.",
+        "costFrom": 65,
+        "costTo": 95
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Riverside Cafe, Bala",
+      "foodType": "lunch",
+      "description": "A casual cafe on the banks of the River Dee serving sandwiches, salads and hot meals.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 52.9124,
+      "lng": -3.5958,
+      "travelToNext": "10min drive via B4403 to start of mountain biking trails",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch by Bala Lake",
+        "description": "Enjoy your lunch with scenic views of Bala Lake (Llyn Tegid)."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Mountain Biking - Temtiwr",
+      "description": "Tackle the 'Temtiwr' black graded trail at Coed y Brenin, a short but challenging route for experienced mountain bikers.",
+      "duration": "1 hour",
+      "costFrom": 0,
+      "costTo": 7,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "N/A",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "N/A",
+        "description": "Head to the visitor centre for a hot drink and to dry off! Or try another trail.",
+        "costFrom": 5,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Mountain Biking - MinorTaur",
+        "description": "Explore the family-friendly 'MinorTaur' trail at Coed y Brenin, a blue graded route suitable for all abilities.",
+        "costFrom": 0,
+        "costTo": 7
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 298,
+      "accommodation": 25,
+      "food": 50,
+      "transport": 27,
+      "total": 400
+    },
+    "budget": {
+      "activities": 25,
+      "accommodation": 15,
+      "food": 20,
+      "transport": 7,
+      "total": 67
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Snowdonia weather is notoriously unpredictable. Be prepared for all conditions, even in summer. Check the forecast before you go and pack accordingly.",
+    "traffic": "Traffic can be heavy, especially during peak season and on weekends. Allow extra time for travel, particularly around popular areas like Llanberis and Betws-y-Coed. Parking at Pen-y-Pass is limited and fills up early - arrive before 8am or use the park-and-ride from Llanberis.",
+    "booking": "Advance booking is essential for Zip World activities and recommended for guided walks and white water rafting. Book accommodation well in advance, especially during school holidays.",
+    "fitness": "This itinerary requires a high level of fitness and experience in challenging terrain. Crib Goch is a serious undertaking and should only be attempted by experienced hikers in good conditions."
+  }
+}

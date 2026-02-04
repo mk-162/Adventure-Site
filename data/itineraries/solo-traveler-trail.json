@@ -1,0 +1,387 @@
+{
+  "slug": "solo-traveler-trail",
+  "title": "Solo Traveler Trail",
+  "tagline": "Safe, social solo adventures in the Beacons",
+  "region": "brecon-beacons",
+  "days": 4,
+  "difficulty": "moderate",
+  "bestSeason": "May-September",
+  "groupType": "solo",
+  "priceFrom": 550,
+  "priceTo": 950,
+  "budgetPriceFrom": 350,
+  "budgetPriceTo": 600,
+  "highlights": [
+    "Group activities",
+    "Hostel social scene",
+    "Pen y Fan"
+  ],
+  "activityTypes": [
+    "hiking",
+    "caving",
+    "gorge-walking"
+  ],
+  "suitableFor": "Active solo travellers aged 25-55 looking for a mix of outdoor adventure and social interaction. Confident hikers and those comfortable in a hostel environment will thrive.",
+  "notSuitableFor": "Those seeking luxury accommodation, individuals with limited mobility, or those who dislike group activities and shared spaces.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket and trousers",
+    "Hiking boots with good ankle support",
+    "Headlamp or torch",
+    "Reusable water bottle",
+    "Sunscreen and hat",
+    "First-aid kit",
+    "Snacks"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Gorge Walking with Black Mountain Adventure",
+      "description": "Explore the beautiful Waterfall Country by scrambling up a gorge, sliding down natural water slides, and jumping into pools. A fantastic way to get active and meet new people.",
+      "duration": "2.5 hours",
+      "costFrom": 45,
+      "costTo": 85,
+      "lat": 51.808,
+      "lng": -3.56,
+      "travelToNext": "10min drive via A4059",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Craig y Nos Castle Tour",
+        "description": "Explore the historic Craig y Nos Castle, learn about its history, and enjoy the beautiful architecture. A spooky and engaging experience, especially in wet weather.",
+        "costFrom": 10,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Explore Sgwd Gwladys Waterfall",
+        "description": "Hike to Sgwd Gwladys waterfall and admire the views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "The Old White Horse Inn",
+      "foodType": "lunch",
+      "description": "A traditional pub in Pontneddfechan serving hearty meals and local ales. A great place to refuel after gorge walking.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.778,
+      "lng": -3.59,
+      "travelToNext": "20min drive via A4059 and A470",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Pontneddfechan picnic area",
+        "description": "Enjoy a picnic lunch by the river in the village."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Caving with Adventure Britain",
+      "description": "Descend into the depths of the Black Mountains and explore a real cave system. Crawling, squeezing, and discovering underground wonders, all with expert guidance.",
+      "duration": "3 hours",
+      "costFrom": 65,
+      "costTo": 95,
+      "lat": 51.99,
+      "lng": -3.1,
+      "travelToNext": "45min drive via A470 and A40",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Showcaves Centre",
+        "description": "Visit the National Showcaves Centre at Dan-yr-Ogof, a larger showcave experience with multiple caves and dinosaur park.",
+        "costFrom": 18,
+        "costTo": 25
+      },
+      "budgetAlt": {
+        "title": "Explore Llanthony Priory",
+        "description": "Wander through the ruins of Llanthony Priory and explore the surrounding countryside.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "YHA Brecon Beacons",
+      "description": "A modern hostel with stunning views, located close to Pen y Fan. Perfect for solo travellers looking for a social atmosphere.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 51.902,
+      "lng": -3.42,
+      "travelToNext": "15min drive to Pen y Fan",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Penstar Bunkhouse",
+        "description": "A basic but comfortable bunkhouse near Libanus, offering affordable accommodation.",
+        "costFrom": 25,
+        "costTo": 40
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Hike Pen y Fan",
+      "description": "Climb the highest peak in South Wales for panoramic views of the Brecon Beacons. Choose from various routes depending on your fitness level.",
+      "duration": "3-4 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.883,
+      "lng": -3.437,
+      "travelToNext": "30min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Brecon Mountain Railway",
+        "description": "Enjoy a scenic steam train ride through the Brecon Beacons National Park.",
+        "costFrom": 15,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Walk around Pontsticill Reservoir",
+        "description": "Enjoy a scenic walk around the reservoir.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "13:00",
+      "type": "food",
+      "title": "The Nant Ddu Lodge Hotel",
+      "foodType": "lunch",
+      "description": "A modern hotel and restaurant near Pen y Fan, with a varied menu and comfortable setting.",
+      "costFrom": 20,
+      "costTo": 35,
+      "lat": 51.845,
+      "lng": -3.392,
+      "travelToNext": "1 hour drive via A470 and A4059",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch near Pontsticill Reservoir",
+        "description": "Enjoy a picnic lunch by the water.",
+        "costFrom": 5,
+        "costTo": 10
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "15:00",
+      "type": "activity",
+      "title": "Mountain Biking at BikePark Wales",
+      "description": "Experience world-class mountain biking trails at BikePark Wales, catering to all skill levels. Hire a bike or bring your own and enjoy the adrenaline rush.",
+      "duration": "4 hours",
+      "costFrom": 32,
+      "costTo": 110,
+      "lat": 51.725,
+      "lng": -3.37,
+      "travelToNext": "15min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit Cyfarthfa Castle Museum & Art Gallery",
+        "description": "Explore the exhibits at Cyfarthfa Castle Museum & Art Gallery",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Cycle the Taff Trail",
+        "description": "Enjoy a leisurely cycle along the Taff Trail.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "19:30",
+      "type": "accommodation",
+      "title": "Grawen Camping",
+      "description": "A campsite on the edge of Merthyr Tydfil. Perfect for people on a budget.",
+      "costFrom": 15,
+      "costTo": 30,
+      "lat": 51.758,
+      "lng": -3.362,
+      "travelToNext": "5min drive to town centre",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Twin Trails B&B",
+        "description": "A B&B just outside Merthyr",
+        "costFrom": 35,
+        "costTo": 60
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Paddle Boarding at Llangorse Lake",
+      "description": "Enjoy the peaceful waters of Llangorse Lake on a paddle board, taking in the beautiful scenery. A relaxing and social activity.",
+      "duration": "2 hours",
+      "costFrom": 45,
+      "costTo": 85,
+      "lat": 51.923,
+      "lng": -3.26,
+      "travelToNext": "15min drive via B4560",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit the nearby town of Brecon",
+        "description": "Explore the town and its local shops.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walk along the Brecon and Monmouthshire Canal",
+        "description": "Enjoy a scenic walk along the canal.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "11:30",
+      "type": "food",
+      "title": "Llangorse Lake Cafe",
+      "foodType": "lunch",
+      "description": "A cafe located at Llangorse Lake, offering sandwiches, cakes and drinks. Enjoy the views from the outdoor seating area.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 51.923,
+      "lng": -3.26,
+      "travelToNext": "30min drive via A40",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic by Llangorse Lake",
+        "description": "Enjoy a packed lunch with lake views."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "13:30",
+      "type": "activity",
+      "title": "Archery with Black Mountain Adventure",
+      "description": "Test your aim with archery at Black Mountain Adventure. Enjoy a session with expert guidance in a safe environment.",
+      "duration": "1.5 hours",
+      "costFrom": 45,
+      "costTo": 85,
+      "lat": 52.04,
+      "lng": -3.18,
+      "travelToNext": "5min drive via A438",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Craft Workshop in Hay-on-Wye",
+        "description": "Participate in a local craft workshop.",
+        "costFrom": 20,
+        "costTo": 40
+      },
+      "budgetAlt": {
+        "title": "Explore Hay-on-Wye",
+        "description": "Browse the many bookshops in Hay-on-Wye.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 4,
+      "time": "16:00",
+      "type": "accommodation",
+      "title": "YHA Llanbedr",
+      "description": "Set in the Black Mountains, this hostel is remote with great views, close to Hay-on-Wye.",
+      "costFrom": 25,
+      "costTo": 65,
+      "lat": 52.01,
+      "lng": -3.14,
+      "travelToNext": "Various",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "The Lodge (Staylittle)",
+        "description": "A basic but comfortable bunkhouse",
+        "costFrom": 25,
+        "costTo": 45
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Hike in the Black Mountains",
+      "description": "Explore the diverse landscape of the Black Mountains. Choose a trail based on your ability level.",
+      "duration": "3-4 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.99,
+      "lng": -3.1,
+      "travelToNext": "30min drive to departure point",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Explore Hay-on-Wye",
+        "description": "Browse the many bookshops in Hay-on-Wye.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walk along the Brecon and Monmouthshire Canal",
+        "description": "Enjoy a scenic walk along the canal.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 2,
+      "time": "13:00",
+      "type": "food",
+      "title": "The Bridge Inn",
+      "foodType": "lunch",
+      "description": "A popular pub in Llangynidr, serving traditional pub food and local ales.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.915,
+      "lng": -3.21,
+      "travelToNext": "Drive to next location or home.",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic by the canal in Llangynidr",
+        "description": "Enjoy a packed lunch by the canal."
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 250,
+      "accommodation": 175,
+      "food": 100,
+      "transport": 125,
+      "total": 650
+    },
+    "budget": {
+      "activities": 100,
+      "accommodation": 80,
+      "food": 60,
+      "transport": 80,
+      "total": 320
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Brecon Beacons weather can be unpredictable. Pack for all conditions, even in summer. Rain is common, especially in the hills.",
+    "traffic": "Traffic can be heavy on weekends and during school holidays, especially on the A470. Parking at Pen y Fan's Storey Arms is limited; arrive early or use the park-and-ride service from Brecon.",
+    "booking": "Book activities with Adventure Britain and Black Mountain Adventure in advance, especially during peak season. Hostel accommodation is also recommended to be booked in advance.",
+    "fitness": "A reasonable level of fitness is required for hiking and gorge walking. Caving requires some agility and comfort in confined spaces."
+  }
+}

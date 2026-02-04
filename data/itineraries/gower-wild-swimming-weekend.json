@@ -1,0 +1,224 @@
+{
+  "slug": "gower-wild-swimming-weekend",
+  "title": "Gower Wild Swimming Weekend",
+  "tagline": "Coves, caves, and cold water therapy",
+  "region": "gower",
+  "days": 2,
+  "difficulty": "moderate",
+  "bestSeason": "June-September",
+  "groupType": "wild swimmers",
+  "priceFrom": 250,
+  "priceTo": 450,
+  "budgetPriceFrom": 120,
+  "budgetPriceTo": 200,
+  "highlights": [
+    "Blue Pool",
+    "Fall Bay",
+    "Three Cliffs Bay"
+  ],
+  "activityTypes": [
+    "wild-swimming",
+    "coasteering"
+  ],
+  "suitableFor": "Active adults comfortable in cold water and with some coastal walking. Previous wild swimming experience is recommended.",
+  "notSuitableFor": "Those with limited mobility, fear of heights, or those who are not confident swimmers. Young children.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Swimsuit",
+    "Towel",
+    "Wetsuit (optional)",
+    "Waterproof bag",
+    "Walking boots",
+    "Warm layers"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coasteering at Port Eynon",
+      "description": "Explore the coastline with Gower Activity Centres, scrambling over rocks, swimming in hidden coves, and jumping into the sea.",
+      "duration": "3 hours",
+      "costFrom": 65,
+      "costTo": 85,
+      "lat": 51.546,
+      "lng": -4.215,
+      "travelToNext": "20 min drive via B4247",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Gower Activity Centres Indoor Climbing Wall",
+        "description": "Learn basic climbing techniques and enjoy an indoor climbing session.",
+        "costFrom": 20,
+        "costTo": 30
+      },
+      "budgetAlt": {
+        "title": "Explore Port Eynon Beach and Dunes",
+        "description": "Enjoy a free walk along the beach and through the dunes, taking a dip in the sea if you dare.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Ship Inn, Port Eynon",
+      "foodType": "lunch",
+      "description": "A traditional pub with sea views serving hearty lunches.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.5462,
+      "lng": -4.2148,
+      "travelToNext": "30min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Overton Mere",
+        "description": "Enjoy your own picnic with views of the sea"
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Wild Swimming at the Blue Pool",
+      "description": "A deep tidal pool perfect for a refreshing swim (check tide times!). Walk along the coast to reach the Blue Pool.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.54,
+      "lng": -4.22,
+      "travelToNext": "20 min drive via B4247",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Waterfront Museum Swansea",
+        "description": "Explore the history of Welsh industry and innovation.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Free exploration of the rock pools",
+        "description": "Spend time exploring the various rock pools looking for marine life.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Port Eynon Beach Campsite",
+      "description": "A campsite right on the beach, perfect for early morning swims. Walking distance to the pub.",
+      "costFrom": 20,
+      "costTo": 30,
+      "lat": 51.5465,
+      "lng": -4.216,
+      "travelToNext": "30 min drive to Three Cliffs Bay Campsite",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Llangennith Campsite",
+        "description": "Camping fields close to the beach.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Wild Swimming at Three Cliffs Bay",
+      "description": "Swim in the iconic Three Cliffs Bay, taking in the stunning scenery. Be aware of currents.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.576,
+      "lng": -4.116,
+      "travelToNext": "10 min drive via Pennard Rd",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Swansea Museum",
+        "description": "Explore the local history and art collections.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Beach combing at Three Cliffs Bay",
+        "description": "Stroll along the sands looking for washed-up treasures.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "11:30",
+      "type": "food",
+      "title": "Three Cliffs Coffee Shop",
+      "foodType": "lunch",
+      "description": "A cafe close to the beach, selling light meals and cakes.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 51.5765,
+      "lng": -4.1155,
+      "travelToNext": "25 min drive via B4247",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch on Pennard Cliffs",
+        "description": "Enjoy your picnic whilst overlooking the cliffs"
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "13:00",
+      "type": "activity",
+      "title": "Walk to Fall Bay",
+      "description": "Take a scenic walk along the coast path to Fall Bay, another secluded swimming spot. Requires some clambering.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.56,
+      "lng": -4.29,
+      "travelToNext": "Departure",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Plantasia, Swansea",
+        "description": "Explore a tropical rainforest environment indoors.",
+        "costFrom": 7,
+        "costTo": 9
+      },
+      "budgetAlt": {
+        "title": "Relax on Rhossili Bay",
+        "description": "Enjoy sunbathing and relaxing on the stunning beach at Rhossili",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 75,
+      "accommodation": 25,
+      "food": 35,
+      "transport": 50,
+      "total": 185
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 15,
+      "food": 10,
+      "transport": 30,
+      "total": 55
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Gower weather can be unpredictable. Pack for all conditions. Sea temperatures are cold, even in summer. Check tide times before swimming in tidal pools.",
+    "traffic": "Traffic can be heavy in Gower during peak season, especially on weekends. Arrive early to popular spots. Parking at Three Cliffs Bay requires a walk to the beach.",
+    "booking": "Coasteering and surfing activities should be booked in advance, especially during school holidays.",
+    "fitness": "A moderate level of fitness is required for coastal walks and coasteering. Swimming ability is essential."
+  }
+}

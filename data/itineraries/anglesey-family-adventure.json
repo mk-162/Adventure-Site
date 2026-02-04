@@ -1,0 +1,250 @@
+{
+  "slug": "anglesey-family-adventure",
+  "title": "Anglesey Family Adventure",
+  "tagline": "Island adventures for all the family",
+  "region": "anglesey",
+  "days": 2,
+  "difficulty": "easy",
+  "bestSeason": "June-August",
+  "groupType": "families",
+  "priceFrom": 350,
+  "priceTo": 750,
+  "budgetPriceFrom": 200,
+  "budgetPriceTo": 400,
+  "highlights": [
+    "Beach kayaking",
+    "Coastal walks",
+    "Puffin spotting"
+  ],
+  "activityTypes": [
+    "kayaking",
+    "hiking"
+  ],
+  "suitableFor": "Families with children aged 8 and up who enjoy outdoor activities and are comfortable with easy physical exertion. Also suitable for active grandparents.",
+  "notSuitableFor": "Those with limited mobility or a strong aversion to water activities. Very young children (under 5) may find some activities challenging.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Sunscreen",
+    "Walking boots",
+    "Swimsuit",
+    "Binoculars"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Sea Kayaking with Anglesey Adventures",
+      "description": "Explore the Anglesey coastline from the sea in a guided kayaking tour. Suitable for all levels, with options for shorter or longer paddles.",
+      "duration": "3 hours",
+      "costFrom": 55,
+      "costTo": 75,
+      "lat": 53.231,
+      "lng": -4.52,
+      "travelToNext": "15min drive via B4545",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Anglesey Transport Museum",
+        "description": "Discover vintage cars, motorcycles, and other vehicles at this fascinating museum.",
+        "costFrom": 7,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Beach Exploration at Rhosneigr",
+        "description": "Spend the morning building sandcastles and exploring the rock pools at Rhosneigr Beach.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Oyster Catcher",
+      "foodType": "lunch",
+      "description": "A relaxed gastropub with stunning sea views and a menu featuring local seafood and pub classics.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 53.2332,
+      "lng": -4.5251,
+      "travelToNext": "2min walk",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Packed lunch at Rhosneigr Beach",
+        "description": "Enjoy a picnic lunch with views of the beach."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Coastal Walk to Porth Trecastell (Cable Bay)",
+      "description": "Take a scenic coastal walk from Rhosneigr to Porth Trecastell, a beautiful sandy beach known for its surfing. Enjoy the views and keep an eye out for wildlife.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.2332,
+      "lng": -4.5251,
+      "travelToNext": "20min drive via A4080",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Oriel Mon",
+        "description": "Explore the history and art of Anglesey at this museum and gallery.",
+        "costFrom": 7,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Relax on Rhosneigr Beach",
+        "description": "Spend the afternoon relaxing on the sand and enjoying the sea breeze.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Surf's Edge Apartment",
+      "description": "A comfortable and well-equipped self-catering apartment in the heart of Rhosneigr, perfect for families.",
+      "costFrom": 120,
+      "costTo": 180,
+      "lat": 53.232,
+      "lng": -4.522,
+      "travelToNext": "30min drive to Trearddur Bay",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Rhosneigr Bunkhouse",
+        "description": "A budget-friendly bunkhouse offering basic accommodation for travellers.",
+        "costFrom": 30,
+        "costTo": 40
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Puffin Island Boat Trip from Beaumaris",
+      "description": "Take a boat trip to Puffin Island to observe the puffins and other seabirds in their natural habitat. Booking essential.",
+      "duration": "1.5 hours",
+      "costFrom": 25,
+      "costTo": 35,
+      "lat": 53.273,
+      "lng": -4.08,
+      "travelToNext": "10min drive to Trearddur Bay",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Beaumaris Castle",
+        "description": "Explore the impressive ruins of this unfinished medieval castle.",
+        "costFrom": 8,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Walk along Beaumaris Pier",
+        "description": "Enjoy views of the Menai Strait and Puffin Island from Beaumaris Pier.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "11:00",
+      "type": "activity",
+      "title": "Trearddur Bay Beach Day",
+      "description": "Spend the morning at Trearddur Bay. Relax on the beach, swim in the sea, or enjoy a picnic.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.281,
+      "lng": -4.63,
+      "travelToNext": "5min walk",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Holyhead Maritime Museum",
+        "description": "Discover the maritime history of Holyhead at this museum.",
+        "costFrom": 5,
+        "costTo": 7
+      },
+      "budgetAlt": {
+        "title": "Rockpooling at Trearddur Bay",
+        "description": "Explore the rock pools at low tide and discover marine life.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "13:00",
+      "type": "food",
+      "title": "Sea Shanty Cafe",
+      "foodType": "lunch",
+      "description": "A casual cafe serving light lunches, snacks, and drinks with sea views.",
+      "costFrom": 10,
+      "costTo": 15,
+      "lat": 53.2815,
+      "lng": -4.631,
+      "travelToNext": "30min drive to South Stack",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Trearddur Bay",
+        "description": "Enjoy a picnic lunch overlooking the bay."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "14:30",
+      "type": "activity",
+      "title": "South Stack RSPB Reserve",
+      "description": "Visit South Stack, a dramatic coastal headland and RSPB reserve. Walk to the lighthouse and look out for seabirds and seals. Be aware it's a steep walk down to the lighthouse.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.306,
+      "lng": -4.7,
+      "travelToNext": null,
+      "travelMode": null,
+      "wetAlt": {
+        "title": "Ellin's Tower Visitor Centre",
+        "description": "Learn about the wildlife of South Stack at this visitor centre.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Coastal walk along South Stack cliffs",
+        "description": "Enjoy a free walk along the cliff tops with stunning views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 115,
+      "accommodation": 150,
+      "food": 50,
+      "transport": 35,
+      "total": 350
+    },
+    "budget": {
+      "activities": 25,
+      "accommodation": 30,
+      "food": 20,
+      "transport": 25,
+      "total": 100
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Anglesey weather can be unpredictable, even in summer. Pack layers and be prepared for rain. Sea conditions can also change quickly, so pay attention to local forecasts before water activities.",
+    "traffic": "Traffic can be heavy in Anglesey during peak season, especially around popular tourist spots like Beaumaris and Trearddur Bay. Arrive early to secure parking, particularly at South Stack. The A55 can get congested.",
+    "booking": "Boat trips to Puffin Island and kayaking tours should be booked in advance, especially during the summer months. Accommodation also fills up quickly, so book early to avoid disappointment.",
+    "fitness": "This itinerary involves some walking and light physical activity. A reasonable level of fitness is required. South Stack involves some steep steps."
+  }
+}

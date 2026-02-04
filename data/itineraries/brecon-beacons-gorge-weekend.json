@@ -1,0 +1,225 @@
+{
+  "slug": "brecon-beacons-gorge-weekend",
+  "title": "Gorge & Cave Weekend",
+  "tagline": "Get wet underground and in the gorges",
+  "region": "brecon-beacons",
+  "days": 2,
+  "difficulty": "moderate",
+  "bestSeason": "April-October",
+  "groupType": "friends, adventure groups",
+  "priceFrom": 350,
+  "priceTo": 550,
+  "budgetPriceFrom": 200,
+  "budgetPriceTo": 350,
+  "highlights": [
+    "Waterfall Country gorge walk",
+    "Cave exploration",
+    "River swimming"
+  ],
+  "activityTypes": [
+    "gorge-walking",
+    "caving",
+    "wild-swimming"
+  ],
+  "suitableFor": "Adventurous friends or groups who enjoy physical challenges and aren't afraid of getting wet and muddy. Must be comfortable with heights and confined spaces for caving.",
+  "notSuitableFor": "Those with limited mobility, severe claustrophobia, or a strong aversion to cold water. This trip is not ideal for young children under 8.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Hiking boots with good grip",
+    "Swimsuit",
+    "Towel",
+    "Change of clothes",
+    "Headtorch"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Gorge Walking with Adventure Britain",
+      "description": "Scramble up a stunning gorge in Waterfall Country, navigating waterfalls and natural pools.",
+      "duration": "3 hours",
+      "costFrom": 65,
+      "costTo": 95,
+      "lat": 51.808,
+      "lng": -3.56,
+      "travelToNext": "15min drive via A4059",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Showcaves Centre",
+        "description": "Explore a network of impressive caves and dinosaur exhibits, staying dry and warm.",
+        "costFrom": 17,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Pantycellyn Waterfall Walk",
+        "description": "A free walk to a series of waterfalls, including Sgwd y Pannwr, with opportunities for paddling.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Old White Horse Inn",
+      "foodType": "lunch",
+      "description": "A traditional pub serving hearty meals and local ales near Pontneddfechan.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.7971,
+      "lng": -3.5802,
+      "travelToNext": "2min drive to parking spot",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Pontneddfechan picnic site",
+        "description": "Enjoy your sandwiches by the river Neath near the Angel Inn."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "River Swimming at Sgwd Gwladys",
+      "description": "Take a refreshing dip in the plunge pool beneath the beautiful Sgwd Gwladys waterfall.",
+      "duration": "1.5 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.8055,
+      "lng": -3.5782,
+      "travelToNext": "45min drive via A4059 and A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Brecon Mountain Railway",
+        "description": "A heritage railway journey through the scenic Brecon Beacons, offering covered carriages.",
+        "costFrom": 15,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Explore the Elidir Trail",
+        "description": "A circular walk exploring the upper Neath Valley, passing a series of small waterfalls.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Craig y Nos Castle",
+      "description": "A historic castle offering comfortable rooms and stunning views, ideal for a memorable stay.",
+      "costFrom": 80,
+      "costTo": 150,
+      "lat": 51.828,
+      "lng": -3.68,
+      "travelToNext": "30min drive via A4067",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Waterfall Country Campsite",
+        "description": "A campsite near Ystradfellte, providing basic facilities and a budget-friendly option.",
+        "costFrom": 15,
+        "costTo": 25
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Caving with Adventure Britain near Craig y Nos",
+      "description": "Explore the fascinating cave systems around Craig y Nos Castle, guided by experienced instructors.",
+      "duration": "3 hours",
+      "costFrom": 65,
+      "costTo": 95,
+      "lat": 51.828,
+      "lng": -3.68,
+      "travelToNext": "1hr drive via A4067 & A4059",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Craig y Nos Castle Tours",
+        "description": "Explore the historic castle and learn about its rich history with an inside tour.",
+        "costFrom": 10,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Explore the grounds of Craig y Nos Castle",
+        "description": "Take a walk around the gardens of Craig y Nos Castle to explore the area without paying for the Caving experience.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Pen y Cae Inn",
+      "foodType": "lunch",
+      "description": "A traditional pub serving lunch with stunning views of the valley.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.8176,
+      "lng": -3.6752,
+      "travelToNext": "45min drive via A4059",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at a scenic viewpoint",
+        "description": "Enjoy sandwiches at a scenic spot near Aberdare, offering views of the valleys."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "BikePark Wales - Blue Trails",
+      "description": "Spend the afternoon mountain biking at BikePark Wales, with suitable blue trails for moderate difficulty riders.",
+      "duration": "3 hours",
+      "costFrom": 8,
+      "costTo": 32.5,
+      "lat": 51.725,
+      "lng": -3.37,
+      "travelToNext": "End of trip",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "BikePark Wales Cafe",
+        "description": "Enjoy a coffee and relax at the BikePark Wales cafe, avoiding the rain.",
+        "costFrom": 5,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Taff Trail Cycle",
+        "description": "Cycle a section of the Taff Trail, a mostly flat and traffic-free route, for free.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 266,
+      "accommodation": 80,
+      "food": 60,
+      "transport": 50,
+      "total": 456
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 15,
+      "food": 10,
+      "transport": 50,
+      "total": 75
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "The Brecon Beacons weather can be unpredictable. Pack for all conditions, even in summer. Waterfall Country is particularly prone to rain, which can make gorge walking more challenging and potentially lead to cancellations. Check the forecast before you go.",
+    "traffic": "Traffic can be heavy on the A470, especially during peak season and weekends. Parking at Waterfall Country can be limited, so arrive early or be prepared to walk from alternative parking spots. BikePark Wales can get busy, pre-booking is essential.",
+    "booking": "Gorge walking and caving activities with Adventure Britain MUST be booked in advance, especially during peak season. Accommodation should also be booked well ahead of time. BikePark Wales requires pre-booking.",
+    "fitness": "A moderate level of fitness is required for this trip. Gorge walking involves scrambling over rocks and wading through water. Caving can be physically demanding and require some crawling and squeezing. The Taff Trail is suitable for all fitness levels."
+  }
+}

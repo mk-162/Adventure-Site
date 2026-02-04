@@ -1,0 +1,197 @@
+{
+  "slug": "winter-adventure",
+  "title": "Winter Adventure Weekend",
+  "tagline": "Snowdonia doesn't close for winter",
+  "region": "snowdonia",
+  "days": 2,
+  "difficulty": "moderate",
+  "bestSeason": "December-February",
+  "groupType": "experienced, couples",
+  "priceFrom": 250,
+  "priceTo": 450,
+  "budgetPriceFrom": 150,
+  "budgetPriceTo": 250,
+  "highlights": [
+    "Winter hiking",
+    "Bounce Below",
+    "Underground adventures"
+  ],
+  "activityTypes": [
+    "hiking",
+    "zip-lining",
+    "caving"
+  ],
+  "suitableFor": "Active couples and experienced friends who enjoy a mix of outdoor adventure and unique experiences, and are comfortable with potentially cold and wet conditions. Must have good base fitness for hiking.",
+  "notSuitableFor": "Those with mobility issues, severe fear of heights, or who prefer warm-weather holidays. Also, families with young children may find some activities too challenging.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof hiking boots",
+    "Layers of warm clothing",
+    "Waterproof jacket and trousers",
+    "Headlamp",
+    "Thermos flask"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Snowdon Summit Hike",
+      "description": "Take on a guided hike up Snowdon via the Llanberis path. Expect stunning views (weather permitting!) and a challenging but rewarding climb.",
+      "duration": "6-7 hours",
+      "costFrom": 60,
+      "costTo": 80,
+      "lat": 53.119,
+      "lng": -4.131,
+      "travelToNext": "5min drive via A4086",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Slate Museum",
+        "description": "Explore the history of the Welsh slate industry in a fascinating museum.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Llyn Padarn Walk",
+        "description": "Enjoy a scenic walk around Llyn Padarn lake with views of Snowdon, completely free.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "16:30",
+      "type": "food",
+      "title": "Pete's Eats",
+      "foodType": "lunch",
+      "description": "A legendary cafe in Llanberis serving hearty portions and hot drinks, perfect after a hike.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 53.1202,
+      "lng": -4.1277,
+      "travelToNext": "5min drive via A4086",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Peris viewpoint",
+        "description": "Enjoy your own prepared food with panoramic views of Llyn Peris."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "18:00",
+      "type": "accommodation",
+      "title": "YHA Snowdon Llanberis",
+      "description": "A comfortable and convenient hostel in Llanberis, ideal for hikers and adventurers.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 53.1222,
+      "lng": -4.1273,
+      "travelToNext": "30min drive via A4086 and A498",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "The Snowdon Inn (Y Fricsan) Campsite",
+        "description": "Pitch your tent at this friendly campsite near Llanberis.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:30",
+      "type": "activity",
+      "title": "Bounce Below",
+      "description": "Experience the thrill of bouncing on giant trampolines in a vast underground cavern.",
+      "duration": "1 hour",
+      "costFrom": 25,
+      "costTo": 35,
+      "lat": 52.996,
+      "lng": -3.94,
+      "travelToNext": "5min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Underground Adventure",
+        "description": "Explore a disused slate mine with guided tour",
+        "costFrom": 20,
+        "costTo": 35
+      },
+      "budgetAlt": {
+        "title": "Llechwedd Slate Caverns Tour",
+        "description": "Take a more traditional tour of the slate caverns.",
+        "costFrom": 15,
+        "costTo": 25
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "11:00",
+      "type": "activity",
+      "title": "Underground Adventure",
+      "description": "Explore a disused slate mine, navigating tunnels and chambers with expert guides.",
+      "duration": "1-2 hours",
+      "costFrom": 20,
+      "costTo": 35,
+      "lat": 52.996,
+      "lng": -3.94,
+      "travelToNext": "30min drive via A470 and A5",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Zip World Caverns",
+        "description": "Navigate through a network of zip lines, rope bridges and tunnels inside the caverns.",
+        "costFrom": 59,
+        "costTo": 79
+      },
+      "budgetAlt": {
+        "title": "Blaenau Ffestiniog Heritage Railway",
+        "description": "Enjoy a scenic train ride through the mountains.",
+        "costFrom": 15,
+        "costTo": 25
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "13:00",
+      "type": "food",
+      "title": "The Pengwern Arms",
+      "foodType": "lunch",
+      "description": "A traditional pub in Llan Ffestiniog, serving hearty meals and local ales.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 52.9669,
+      "lng": -3.8986,
+      "travelToNext": "45min drive via A5",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic by Llyn Ogwen",
+        "description": "Enjoy a packed lunch with stunning views of Llyn Ogwen and Tryfan."
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 125,
+      "accommodation": 50,
+      "food": 30,
+      "transport": 40,
+      "total": 245
+    },
+    "budget": {
+      "activities": 35,
+      "accommodation": 20,
+      "food": 15,
+      "transport": 30,
+      "total": 100
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Winter weather in Snowdonia can be unpredictable. Expect cold temperatures, rain, and potentially snow or ice. Check the forecast before you go and be prepared for all conditions.",
+    "traffic": "Traffic can be heavy, especially on weekends and during school holidays. Allow extra time for travel, especially around Llanberis and Betws-y-Coed. Parking at popular trailheads like Pen-y-Pass fills up quickly, so arrive early.",
+    "booking": "Advance booking is essential for Bounce Below and guided hikes. Accommodation should also be booked well in advance, especially during peak season.",
+    "fitness": "A good level of fitness is required for the Snowdon hike. Be prepared for a long day of walking on uneven terrain. The underground activities require a moderate level of fitness."
+  }
+}

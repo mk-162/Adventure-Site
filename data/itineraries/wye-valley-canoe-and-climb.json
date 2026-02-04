@@ -1,0 +1,224 @@
+{
+  "slug": "wye-valley-canoe-and-climb",
+  "title": "Wye Valley Canoe & Climb",
+  "tagline": "Paddle the Wye, scale the cliffs",
+  "region": "wye-valley",
+  "days": 2,
+  "difficulty": "moderate",
+  "bestSeason": "April-October",
+  "groupType": "friends, couples",
+  "priceFrom": 250,
+  "priceTo": 450,
+  "budgetPriceFrom": 120,
+  "budgetPriceTo": 250,
+  "highlights": [
+    "Wye canoeing",
+    "Symonds Yat climbing",
+    "Tintern Abbey walk"
+  ],
+  "activityTypes": [
+    "kayaking",
+    "climbing",
+    "hiking"
+  ],
+  "suitableFor": "Active friends or couples who enjoy outdoor adventures and are comfortable with some physical exertion. Some prior experience with canoeing or climbing is helpful but not essential.",
+  "notSuitableFor": "Those with significant mobility issues, fear of heights, or who prefer purely relaxing, non-physical holidays.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Hiking boots",
+    "Sunscreen",
+    "Hat",
+    "Water bottle"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Canoeing on the River Wye",
+      "description": "Enjoy a guided canoe trip down the scenic River Wye, taking in the stunning views of the valley.",
+      "duration": "3 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.9013,
+      "lng": -2.6344,
+      "travelToNext": "15min drive via B4164",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Clearwell Caves",
+        "description": "Explore the fascinating Clearwell Caves, an ancient iron mine system.",
+        "costFrom": 12,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Walk along the Wye Valley Walk",
+        "description": "Enjoy a free walk along the Wye Valley Walk, following the riverbank.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Saracen's Head Inn",
+      "foodType": "lunch",
+      "description": "A traditional pub with beautiful river views, serving classic pub fare.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.8279,
+      "lng": -2.6445,
+      "travelToNext": "5min drive to Symonds Yat Rock Car Park",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Symonds Yat Rock",
+        "description": "Enjoy your own sandwiches with spectacular views from Symonds Yat Rock."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Rock Climbing at Symonds Yat",
+      "description": "Try outdoor rock climbing at Symonds Yat, suitable for beginners with guidance from an instructor.",
+      "duration": "3 hours",
+      "costFrom": 50,
+      "costTo": 80,
+      "lat": 51.8261,
+      "lng": -2.6327,
+      "travelToNext": "30min drive to Monmouth",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit Raglan Castle",
+        "description": "Explore the impressive ruins of Raglan Castle, a late medieval fortress.",
+        "costFrom": 8,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Hike to Symonds Yat Rock viewpoint",
+        "description": "Enjoy the stunning views from the top of Symonds Yat Rock after a short, steep hike.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "The King's Head Hotel, Monmouth",
+      "description": "A historic hotel in the heart of Monmouth, offering comfortable rooms and a restaurant.",
+      "costFrom": 90,
+      "costTo": 150,
+      "lat": 51.8128,
+      "lng": -2.7152,
+      "travelToNext": "20min drive to Tintern Abbey",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Wigwam Holidays, Wye Valley",
+        "description": "Glamping in a wigwam cabin for a more affordable and unique experience.",
+        "costFrom": 50,
+        "costTo": 80
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Explore Tintern Abbey",
+      "description": "Wander through the stunning ruins of Tintern Abbey, a masterpiece of Gothic architecture.",
+      "duration": "2 hours",
+      "costFrom": 10,
+      "costTo": 12,
+      "lat": 51.6975,
+      "lng": -2.6832,
+      "travelToNext": "5 min walk to Old Station Tintern",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Chepstow Museum",
+        "description": "Learn about the history of Chepstow and the local area.",
+        "costFrom": 5,
+        "costTo": 7
+      },
+      "budgetAlt": {
+        "title": "Walk along the River Wye at Tintern",
+        "description": "Enjoy a scenic walk along the banks of the River Wye at Tintern, free of charge.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "11:30",
+      "type": "food",
+      "title": "Old Station Tintern",
+      "foodType": "brunch",
+      "description": "A charming cafe in a converted railway station with views over the River Wye.",
+      "costFrom": 12,
+      "costTo": 20,
+      "lat": 51.6989,
+      "lng": -2.6821,
+      "travelToNext": "45min drive to Forest of Dean Sculpture Trail",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic at the Tintern Abbey grounds",
+        "description": "Pack a picnic to enjoy while taking in the magnificent views of Tintern Abbey."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "13:30",
+      "type": "activity",
+      "title": "Forest of Dean Sculpture Trail",
+      "description": "Discover contemporary sculptures nestled within the beautiful Forest of Dean woodland.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.8395,
+      "lng": -2.5695,
+      "travelToNext": "End of trip",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Dean Heritage Centre",
+        "description": "Explore the history and heritage of the Forest of Dean.",
+        "costFrom": 8,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Free entry to the Forest of Dean Sculpture Trail",
+        "description": "Enjoy the public art on display throughout the forest.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 105,
+      "accommodation": 120,
+      "food": 47,
+      "transport": 35,
+      "total": 307
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 50,
+      "food": 20,
+      "transport": 30,
+      "total": 100
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "The Wye Valley can experience variable weather, even in summer. Pack layers and waterproof clothing. Check the forecast before you go.",
+    "traffic": "Traffic can be heavy in the Symonds Yat area, especially during peak season and weekends. Arrive early to secure parking at popular spots like Symonds Yat Rock.",
+    "booking": "Advance booking is highly recommended for canoeing, climbing, and accommodation, especially during school holidays. Tintern Abbey often has timed ticket entry which can be booked online.",
+    "fitness": "This trip requires a moderate level of fitness due to the canoeing, climbing, and hiking. Be prepared for some uphill walking and physical exertion."
+  }
+}

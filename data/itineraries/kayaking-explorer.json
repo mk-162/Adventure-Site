@@ -1,0 +1,316 @@
+{
+  "slug": "kayaking-explorer",
+  "title": "Anglesey Kayaking Explorer",
+  "tagline": "Paddle around Wales' island paradise",
+  "region": "anglesey",
+  "days": 3,
+  "difficulty": "moderate",
+  "bestSeason": "May-September",
+  "groupType": "paddlers, nature lovers",
+  "priceFrom": 450,
+  "priceTo": 850,
+  "budgetPriceFrom": 280,
+  "budgetPriceTo": 500,
+  "highlights": [
+    "Sea kayaking",
+    "Holy Island",
+    "Seal spotting"
+  ],
+  "activityTypes": [
+    "kayaking",
+    "coasteering"
+  ],
+  "suitableFor": "Active individuals, couples, or small groups with some kayaking experience and a love for coastal scenery. Suitable for families with older children (8+) who enjoy outdoor adventures.",
+  "notSuitableFor": "Individuals with limited mobility or a strong aversion to water activities. Not ideal for those seeking purely relaxing, resort-style holidays.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Sunscreen",
+    "Reusable water bottle",
+    "Quick-drying clothing",
+    "Sturdy walking shoes"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Sea Kayaking at Rhosneigr",
+      "description": "Embark on a guided sea kayaking tour from Rhosneigr, exploring the coastline and hidden coves. Keep an eye out for seals and seabirds.",
+      "duration": "3 hours",
+      "costFrom": 60,
+      "costTo": 90,
+      "lat": 53.231,
+      "lng": -4.52,
+      "travelToNext": "5 minute drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Kitesurfing Lesson at Rhosneigr Beach",
+        "description": "If the sea is too rough for kayaking, learn the basics of kitesurfing with a qualified instructor.",
+        "costFrom": 60,
+        "costTo": 120
+      },
+      "budgetAlt": {
+        "title": "Coastal Walk to Porth Nobla",
+        "description": "Enjoy a scenic walk along the Anglesey Coastal Path to the secluded cove of Porth Nobla. Free, stunning views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Bay Cafe",
+      "foodType": "lunch",
+      "description": "A popular cafe in Rhosneigr serving sandwiches, soups, and hearty meals with beach views.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 53.2315,
+      "lng": -4.521,
+      "travelToNext": "5 minute drive",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Packed Lunch at Broad Beach",
+        "description": "Enjoy your sandwiches overlooking the Irish Sea."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Coasteering at Trearddur Bay",
+      "description": "Experience the thrill of coasteering – a mix of swimming, scrambling, and jumping along the rocky coastline of Trearddur Bay.",
+      "duration": "2.5 hours",
+      "costFrom": 55,
+      "costTo": 90,
+      "lat": 53.281,
+      "lng": -4.63,
+      "travelToNext": "20 minute drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit South Stack Lighthouse",
+        "description": "Explore the iconic South Stack Lighthouse and learn about its history (small entry fee applies).",
+        "costFrom": 8,
+        "costTo": 12
+      },
+      "budgetAlt": {
+        "title": "Explore Trearddur Bay Beach",
+        "description": "Enjoy the beautiful sandy beach at Trearddur Bay. Perfect for relaxing, swimming, or building sandcastles. Free.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Trearddur Bay Hotel",
+      "description": "A comfortable hotel in a prime location overlooking Trearddur Bay, ideal for relaxing after a day of activities.",
+      "costFrom": 100,
+      "costTo": 200,
+      "lat": 53.281,
+      "lng": -4.63,
+      "travelToNext": "25 minute drive to Church Bay",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Cemaes Bay Caravan Park",
+        "description": "A more budget-friendly option with caravan and camping pitches near Cemaes Bay. Requires a 25 minute drive north.",
+        "costFrom": 20,
+        "costTo": 60
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Sea Kayaking from Church Bay",
+      "description": "A morning kayaking trip from Church Bay known for its stunning coastal scenery and opportunities to spot wildlife. The access is easy, and the bay is sheltered.",
+      "duration": "3 hours",
+      "costFrom": 60,
+      "costTo": 90,
+      "lat": 53.381,
+      "lng": -4.52,
+      "travelToNext": "5 minute drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit the Church Bay Lifeboat Station",
+        "description": "Learn about the heroic work of the RNLI and their vital role in saving lives at sea. Free entry.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Explore Church Bay and the Brickworks",
+        "description": "Hike up to the old brickworks for a view of the bay.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Wavecrest Cafe",
+      "foodType": "lunch",
+      "description": "A cafe serving local seafood and homemade cakes in a stunning cliff-top location. Right on the beach at Church Bay.",
+      "costFrom": 12,
+      "costTo": 25,
+      "lat": 53.381,
+      "lng": -4.52,
+      "travelToNext": "20 minute drive",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Picnic Lunch at Church Bay",
+        "description": "Enjoy a picnic lunch on the beach at Church Bay."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Walk to Cemaes Bay",
+      "description": "A relatively easy section of the Coastal Path, from Church Bay to Cemaes. Great views of the rugged northern coastline. ",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.381,
+      "lng": -4.52,
+      "travelToNext": "5 minute drive to accommodation",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Oriel Ger-y-Llan",
+        "description": "A small art gallery located in a converted chapel, showcasing local artists. Free entry.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Enjoy Cemaes Bay beach",
+        "description": "Spend some time relaxing and swimming in the bay.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Church Bay Cottages",
+      "description": "Well equipped self-catering cottages in the hamlet of Church Bay - perfect for small groups or families.",
+      "costFrom": 80,
+      "costTo": 150,
+      "lat": 53.381,
+      "lng": -4.52,
+      "travelToNext": "40 minutes to Newborough",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Cemaes Bay Caravan Park",
+        "description": "Stay in a caravan or pitch a tent at Cemaes Bay Caravan Park - it's cheaper and more basic.",
+        "costFrom": 20,
+        "costTo": 60
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Sea Kayaking at Newborough Beach (Llanddwyn)",
+      "description": "Explore the Menai Strait from Newborough and paddle towards Llanddwyn Island, a historic and beautiful location with stunning views of Snowdonia. Check tide tables before launching.",
+      "duration": "3 hours",
+      "costFrom": 60,
+      "costTo": 90,
+      "lat": 53.136,
+      "lng": -4.41,
+      "travelToNext": "Short walk",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit Plas Newydd House and Gardens",
+        "description": "A National Trust property with a historic house, beautiful gardens, and stunning views across the Menai Strait.",
+        "costFrom": 15,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Walk to Llanddwyn Island",
+        "description": "Walk across the sands to Llanddwyn Island (tide permitting) and explore the ruins of the chapel and enjoy the stunning views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Marram Grass Cafe",
+      "foodType": "lunch",
+      "description": "An award-winning restaurant focusing on local and seasonal ingredients, with a relaxed atmosphere.",
+      "costFrom": 20,
+      "costTo": 40,
+      "lat": 53.136,
+      "lng": -4.41,
+      "travelToNext": "Afternoon activity",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Picnic Lunch at Newborough Beach",
+        "description": "Enjoy a picnic lunch on the beach with views of Llanddwyn Island."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Newborough Forest Walk",
+      "description": "Enjoy a leisurely walk through Newborough Forest, a diverse habitat with opportunities for birdwatching and wildlife spotting. The forest leads to the beach.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.136,
+      "lng": -4.41,
+      "travelToNext": "Departure",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Anglesey Sea Zoo",
+        "description": "Discover the diverse marine life of the UK at this popular aquarium.",
+        "costFrom": 12,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Relax at Newborough Beach",
+        "description": "Spend the afternoon relaxing on the beach, swimming, or building sandcastles.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 175,
+      "accommodation": 280,
+      "food": 80,
+      "transport": 15,
+      "total": 550
+    },
+    "budget": {
+      "activities": 60,
+      "accommodation": 60,
+      "food": 40,
+      "transport": 15,
+      "total": 175
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Anglesey weather can be unpredictable, even in summer. Be prepared for rain and wind, and check the forecast before heading out. Sea conditions can change rapidly.",
+    "traffic": "Traffic can be heavy during peak season, especially around popular tourist destinations like Newborough and Beaumaris. Parking at Newborough Beach is pay & display and can fill up quickly.",
+    "booking": "Advance booking is essential for kayaking and coasteering tours, especially during the summer months. Accommodation should also be booked well in advance.",
+    "fitness": "A moderate level of fitness is required for kayaking and coasteering. Participants should be comfortable swimming in open water."
+  }
+}

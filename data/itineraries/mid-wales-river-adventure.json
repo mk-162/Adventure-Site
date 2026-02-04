@@ -1,0 +1,219 @@
+{
+  "slug": "mid-wales-river-adventure",
+  "title": "Mid Wales River Adventure",
+  "tagline": "Kayak, swim, and fish on hidden rivers",
+  "region": "mid-wales",
+  "days": 2,
+  "difficulty": "moderate",
+  "bestSeason": "June-September",
+  "groupType": "nature lovers",
+  "priceFrom": 320,
+  "priceTo": 550,
+  "budgetPriceFrom": 180,
+  "budgetPriceTo": 300,
+  "highlights": [
+    "River Wye paddling",
+    "Wild swimming",
+    "Elan Valley reservoirs"
+  ],
+  "activityTypes": [
+    "kayaking",
+    "wild-swimming"
+  ],
+  "suitableFor": "Active individuals and couples who enjoy being outdoors and don't mind getting wet. Some experience with paddling is helpful but not essential.",
+  "notSuitableFor": "Those with limited mobility, very young children (under 8), or anyone who dislikes being outdoors in potentially wet weather.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Swimsuit",
+    "Towel",
+    "Waterproof jacket",
+    "Sunscreen",
+    "Water shoes or sandals"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Kayaking on the River Wye",
+      "description": "Enjoy a guided kayaking tour along a scenic stretch of the River Wye. Paddle past rolling hills and keep an eye out for local wildlife.",
+      "duration": "3 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 52.15,
+      "lng": -3.0,
+      "travelToNext": "15min drive via minor roads",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Elan Valley Visitor Centre",
+        "description": "Learn about the history and ecology of the Elan Valley reservoirs in the interactive visitor centre.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Wild swimming at Warren Wood",
+        "description": "Take a refreshing dip in the River Wye at Warren Wood, a popular local swimming spot (use caution).",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Harp Inn, New Radnor",
+      "foodType": "lunch",
+      "description": "A traditional pub with hearty lunches and local ales. Popular with walkers and kayakers.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 52.222,
+      "lng": -3.155,
+      "travelToNext": "20min drive via A44",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Clywedog",
+        "description": "Enjoy your packed lunch overlooking the stunning views of Llyn Clywedog reservoir."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Elan Valley Reservoirs Walk",
+      "description": "Explore the stunning landscape of the Elan Valley with a walk around the Craig Goch dam, taking in the scenery and spotting local wildlife.",
+      "duration": "2.5 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.27,
+      "lng": -3.55,
+      "travelToNext": "20min drive to Elan Valley Hotel",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Explore the Elan Valley Dams by car",
+        "description": "Drive between the different dams and admire their architecture from the comfort of your car.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Free - Picnic by the reservoirs",
+        "description": "Enjoy a picnic by the reservoirs."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Elan Valley Hotel",
+      "description": "A comfortable hotel in the heart of the Elan Valley, perfect for exploring the area. Has a great restaurant and bar.",
+      "costFrom": 80,
+      "costTo": 150,
+      "lat": 52.27,
+      "lng": -3.55,
+      "travelToNext": "30min drive to Llyn Clywedog",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Hafren Forest Hideaway (Hostel)",
+        "description": "A basic but affordable hostel in nearby Staylittle, surrounded by forest trails.",
+        "costFrom": 20,
+        "costTo": 40
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "SUP at Llyn Clywedog",
+      "description": "Enjoy a morning of stand-up paddleboarding on the calm waters of Llyn Clywedog. Stunning views guaranteed.",
+      "duration": "2 hours",
+      "costFrom": 35,
+      "costTo": 50,
+      "lat": 52.47,
+      "lng": -3.58,
+      "travelToNext": "5min drive to the Clywedog Dam",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit the Centre for Alternative Technology",
+        "description": "Explore sustainable living solutions at this interactive eco-centre near Machynlleth.",
+        "costFrom": 10,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Walking trail around Llyn Clywedog",
+        "description": "Take a scenic walk around the perimeter of the lake, enjoying the views and fresh air.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Clywedog Sailing Club Cafe",
+      "foodType": "lunch",
+      "description": "A small cafe with a fantastic view. Serves coffee, cakes, and light lunches.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 52.468,
+      "lng": -3.578,
+      "travelToNext": "20min drive via B4518",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic at Clywedog Dam",
+        "description": "Enjoy a packed lunch with panoramic views from the top of the Clywedog Dam."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "13:30",
+      "type": "activity",
+      "title": "Wild Swimming at the base of Clywedog Dam",
+      "description": "A refreshing and invigorating experience with the backdrop of the largest concrete dam in Britain.",
+      "duration": "1 hour",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.464,
+      "lng": -3.57,
+      "travelToNext": "0",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Devil's Bridge Falls",
+        "description": "Explore the iconic waterfalls at Devil's Bridge (entry fee applies).",
+        "costFrom": 5,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Free - Waterfall Exploration",
+        "description": "Explore the trails around the base of the dam"
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 130,
+      "accommodation": 115,
+      "food": 60,
+      "transport": 15,
+      "total": 320
+    },
+    "budget": {
+      "activities": 35,
+      "accommodation": 20,
+      "food": 20,
+      "transport": 5,
+      "total": 80
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Mid Wales weather is notoriously unpredictable. Pack for all conditions, even in summer. River levels can rise quickly after heavy rain, so check conditions before kayaking or swimming.",
+    "traffic": "Traffic can be heavy on weekends and during school holidays, especially on the A44 and A470. Parking at popular spots like Elan Valley and Llyn Clywedog can fill up quickly, arrive early or be prepared to walk.",
+    "booking": "It's essential to book kayaking tours in advance, especially during peak season. Accommodation in the Elan Valley also books up quickly. Pre-booking is highly recommended.",
+    "fitness": "A moderate level of fitness is required for this trip. Kayaking involves some upper body strength, and the Elan Valley walk includes some uphill sections. Swimming in rivers requires caution and competence."
+  }
+}

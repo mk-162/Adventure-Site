@@ -1,0 +1,320 @@
+{
+  "slug": "gower-family-beach-adventure",
+  "title": "Gower Family Beach Adventure",
+  "tagline": "Rock pools, beaches, and gentle thrills",
+  "region": "gower",
+  "days": 3,
+  "difficulty": "easy",
+  "bestSeason": "June-August",
+  "groupType": "families",
+  "priceFrom": 350,
+  "priceTo": 750,
+  "budgetPriceFrom": 200,
+  "budgetPriceTo": 450,
+  "highlights": [
+    "Three Cliffs Bay",
+    "Rock pooling",
+    "Beginner surfing"
+  ],
+  "activityTypes": [
+    "surfing",
+    "hiking"
+  ],
+  "suitableFor": "Families with children aged 8+ who enjoy gentle outdoor activities and exploring beaches.  Kids must be comfortable in the water.",
+  "notSuitableFor": "Those seeking extreme adventure or with very young children (under 5) who cannot participate in all activities.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Sunscreen",
+    "Rain jacket",
+    "Swimsuit",
+    "Towel",
+    "Walking shoes"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Surfing Lesson at Llangennith Beach",
+      "description": "Learn the basics of surfing with a qualified instructor on the wide, sandy beach at Llangennith. Suitable for complete beginners.",
+      "duration": "2 hours",
+      "costFrom": 40,
+      "costTo": 65,
+      "lat": 51.597,
+      "lng": -4.268,
+      "travelToNext": "15 min drive via B4247",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Gower Heritage Centre",
+        "description": "Explore craft workshops, a vintage railway, and a soft play area - great for kids on a rainy day.",
+        "costFrom": 7,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Bodyboarding at Llangennith Beach",
+        "description": "Rent a bodyboard and have fun riding the waves on your own.",
+        "costFrom": 10,
+        "costTo": 15
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The King's Head, Llangennith",
+      "foodType": "lunch",
+      "description": "A traditional pub serving classic pub fare with a family-friendly atmosphere.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.594,
+      "lng": -4.266,
+      "travelToNext": "5 min drive via B4247",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llangennith dunes",
+        "description": "Enjoy your own sandwiches with amazing beach views"
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Rock Pooling at Rhossili Bay",
+      "description": "Explore the rock pools at low tide, searching for crabs, starfish, and other marine life. Check tide times before you go!",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.569,
+      "lng": -4.287,
+      "travelToNext": "30 min drive via B4247 and A4118",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Trust Shop and Cafe, Rhossili",
+        "description": "Browse local gifts and enjoy a hot chocolate while watching the rain over Rhossili Bay.",
+        "costFrom": 5,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Worm's Head Walk (weather permitting)",
+        "description": "Check tide times for a walk to the spectacular Worm's Head. Free, but only accessible at low tide.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Rhosili Bunkhouse",
+      "description": "A comfortable and affordable bunkhouse in the heart of Rhossili village, ideal for families on a budget.",
+      "costFrom": 25,
+      "costTo": 45,
+      "lat": 51.5695,
+      "lng": -4.2865,
+      "travelToNext": "10 min drive to Pitton Cross",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Pitton Cross Campsite",
+        "description": "A well-maintained campsite with stunning views across Rhossili Bay.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Walk to Three Cliffs Bay",
+      "description": "Hike along the coastal path from Pennard Cliffs to the iconic Three Cliffs Bay, enjoying breathtaking views.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.575,
+      "lng": -4.1,
+      "travelToNext": "10 min drive via Southgate Rd",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Swansea Museum",
+        "description": "Delve into the history of Swansea and the Gower Peninsula at this fascinating museum.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Explore Pennard Castle Ruins",
+        "description": "Discover the atmospheric ruins of Pennard Castle, perched on a clifftop overlooking Three Cliffs Bay.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Three Cliffs Coffee Shop",
+      "foodType": "lunch",
+      "description": "Enjoy a light lunch or snack at this cafe near Three Cliffs Bay, known for its delicious cakes.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 51.5775,
+      "lng": -4.115,
+      "travelToNext": "5 min walk via the beach",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Picnic on Three Cliffs Bay",
+        "description": "Enjoy your own food with incredible beach views",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Relax and Play on Three Cliffs Bay",
+      "description": "Spend the afternoon swimming, building sandcastles, and enjoying the beautiful scenery of Three Cliffs Bay.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.576,
+      "lng": -4.116,
+      "travelToNext": "20 min drive via A4118",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "LC Swansea",
+        "description": "A huge indoor waterpark, complete with slides, wave pool and climbing walls",
+        "costFrom": 15,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Building sandcastles",
+        "description": "Free fun on one of the most beautiful beaches in the UK",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Three Cliffs Bay Campsite",
+      "description": "A family-friendly campsite with stunning views of Three Cliffs Bay.  Book well in advance.",
+      "costFrom": 20,
+      "costTo": 40,
+      "lat": 51.578,
+      "lng": -4.114,
+      "travelToNext": "20 min drive to Oxwich Bay",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Wild Camping near Pennard Cliffs (permit required)",
+        "description": "A unique camping experience with incredible views.  Obtain necessary permits beforehand.",
+        "costFrom": 5,
+        "costTo": 10
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Stand-Up Paddleboarding at Oxwich Bay",
+      "description": "Enjoy a guided stand-up paddleboarding session in the calm waters of Oxwich Bay. Suitable for all skill levels.",
+      "duration": "2 hours",
+      "costFrom": 35,
+      "costTo": 55,
+      "lat": 51.558,
+      "lng": -4.165,
+      "travelToNext": "5 min walk via the beach",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "National Waterfront Museum, Swansea",
+        "description": "Explore the industrial and maritime history of Wales at this interactive museum.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Swimming at Oxwich Bay",
+        "description": "Enjoy a free swim in the safe, shallow waters of Oxwich Bay.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Oxwich Bay Hotel Restaurant",
+      "foodType": "lunch",
+      "description": "A seaside restaurant with panoramic views of Oxwich Bay, offering a menu of fresh seafood and local produce.",
+      "costFrom": 20,
+      "costTo": 35,
+      "lat": 51.5585,
+      "lng": -4.1645,
+      "travelToNext": "5 min drive via Marsh Rd",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic at Oxwich Point",
+        "description": "Find a quiet spot on Oxwich Point and enjoy a picnic lunch with stunning views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Coastal Walk to Port Eynon",
+      "description": "Take a scenic walk along the coastal path from Oxwich Bay to Port Eynon, enjoying the dramatic cliffs and sandy coves.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.558,
+      "lng": -4.165,
+      "travelToNext": "None",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Plantasia Tropical Zoo",
+        "description": "An indoor tropical zoo with exotic plants and animals. It can be found in Swansea.",
+        "costFrom": 8,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Relax on Oxwich Bay",
+        "description": "Spend the afternoon sunbathing, swimming, and relaxing on the beach.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 135,
+      "accommodation": 65,
+      "food": 75,
+      "transport": 25,
+      "total": 300
+    },
+    "budget": {
+      "activities": 10,
+      "accommodation": 35,
+      "food": 30,
+      "transport": 25,
+      "total": 100
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Gower weather can be unpredictable, even in summer. Pack layers and be prepared for rain. Sea temperatures are chilly, even in August.",
+    "traffic": "Traffic can be heavy on the A4118, especially during peak season. Parking at popular beaches fills up quickly - arrive early or use public transport.",
+    "booking": "Surfing lessons and accommodation should be booked well in advance, particularly during school holidays. Three Cliffs Bay campsite is VERY popular.",
+    "fitness": "This trip is suitable for those with a basic level of fitness. The coastal walks involve some moderate inclines and uneven terrain."
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "slug": "romantic-adventure-escape",
+  "title": "Romantic Adventure Escape",
+  "tagline": "Adventure for two on the Pembrokeshire coast",
+  "region": "pembrokeshire",
+  "days": 3,
+  "difficulty": "easy",
+  "bestSeason": "May-September",
+  "groupType": "couples",
+  "priceFrom": 450,
+  "priceTo": 850,
+  "budgetPriceFrom": 280,
+  "budgetPriceTo": 500,
+  "highlights": [
+    "Sunset kayaking",
+    "Coastal walks",
+    "Beach picnics"
+  ],
+  "activityTypes": [
+    "kayaking",
+    "hiking",
+    "surfing"
+  ],
+  "suitableFor": "Active couples who enjoy exploring the outdoors and don't mind a bit of adventure. Must be comfortable with some physical activity, but no extreme fitness level is required. Perfect for those seeking a romantic getaway with a blend of relaxation and exploration.",
+  "notSuitableFor": "Those seeking a purely luxurious or resort-style vacation, individuals with significant mobility issues, or those who strongly dislike outdoor activities and unpredictable weather.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Hiking boots",
+    "Swimsuit",
+    "Sunscreen",
+    "Camera"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Sea Kayaking Safari",
+      "description": "Explore the stunning St Davids coastline by kayak, spotting seals and seabirds. No experience necessary, instruction provided.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 85,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "5 min drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "St Davids Cathedral Visit",
+        "description": "Explore the historic St Davids Cathedral and the surrounding Bishops Palace ruins.",
+        "costFrom": 0,
+        "costTo": 5
+      },
+      "budgetAlt": {
+        "title": "Walk the Pembrokeshire Coast Path",
+        "description": "Hike a section of the Pembrokeshire Coast Path near St Davids for free. Choose a shorter loop for an easier walk.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Refectory",
+      "foodType": "lunch",
+      "description": "Cafe inside St David's Cathedral offering light lunches and cakes.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.8808,
+      "lng": -5.266,
+      "travelToNext": "2 min walk",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Packed lunch at Porthclais Harbour",
+        "description": "Enjoy a picnic with beautiful harbour views."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Boat Trip - Ramsey Island",
+      "description": "Take a boat trip from St Justinian to Ramsey Island to see seals, seabirds, and the rugged coastline.",
+      "duration": "2.5 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.862,
+      "lng": -5.329,
+      "travelToNext": "20 min drive via B4583",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Oriel y Parc Landscape Gallery",
+        "description": "Art gallery featuring local landscape paintings.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Explore Whitesands Beach",
+        "description": "Walk along Whitesands beach and enjoy the views. Can be combined with a short hike to the headland.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "TYF Cliff-top Campsite",
+      "description": "Enjoy a clifftop camping experience near Porthclais Harbour. Perfect for couples seeking a more adventurous and budget friendly option",
+      "costFrom": 15,
+      "costTo": 30,
+      "lat": 51.87,
+      "lng": -5.28,
+      "travelToNext": "5 min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "St Davids YHA",
+        "description": "Budget friendly hostel located in St Davids",
+        "costFrom": 25,
+        "costTo": 70
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Surfing Lesson",
+      "description": "Learn to surf at Whitesands Beach, one of Pembrokeshire's best surfing spots. Suitable for complete beginners.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 60,
+      "lat": 51.892,
+      "lng": -5.303,
+      "travelToNext": "10 min drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Solva Woollen Mill",
+        "description": "Visit the Solva Woollen Mill and see traditional weaving in action.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Bodyboarding at Whitesands Beach",
+        "description": "Rent a bodyboard and enjoy the waves at Whitesands. Cheaper than a surfing lesson.",
+        "costFrom": 10,
+        "costTo": 15
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Pebbles Yard Gallery & Cafe",
+      "foodType": "lunch",
+      "description": "Cafe with art gallery near Whitesands beach.",
+      "costFrom": 12,
+      "costTo": 20,
+      "lat": 51.8915,
+      "lng": -5.3035,
+      "travelToNext": "30min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed Lunch at Newgale",
+        "description": "Enjoy a Picnic on the longest beach in Pembrokeshire"
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Wild Swimming",
+      "description": "Guided wild swimming experience in a beautiful Pembrokeshire cove. Suitable for confident swimmers.",
+      "duration": "2-4 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.931,
+      "lng": -5.203,
+      "travelToNext": "1hour drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit Fishguard",
+        "description": "Explore the charming town of Fishguard and visit the Last Invasion Tapestry.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Swim at Newgale Beach",
+        "description": "Take a refreshing swim at Newgale beach.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Preseli Venture Eco Lodge",
+      "description": "Eco-friendly lodge near Mathry, perfect for environmentally conscious couples.",
+      "costFrom": 60,
+      "costTo": 120,
+      "lat": 51.916,
+      "lng": -5.144,
+      "travelToNext": "5 minutes",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Newgale Campsite",
+        "description": "Campsite located on Newgale beach.",
+        "costFrom": 15,
+        "costTo": 25
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coasteering Classic",
+      "description": "Experience the thrill of coasteering along the St Davids coastline with TYF Adventure.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 60,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "5 min drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Explore St Davids Village",
+        "description": "Visit the shops and cafes in St Davids village.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walk the Pembrokeshire Coast Path",
+        "description": "Hike a section of the Pembrokeshire Coast Path for free.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Grain",
+      "foodType": "lunch",
+      "description": "Popular cafe and deli in St Davids, serving sandwiches, salads, and cakes.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.88,
+      "lng": -5.267,
+      "travelToNext": "45 min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic at Barafundle Bay",
+        "description": "Enjoy a packed lunch at the beautiful Barafundle Bay."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Paddle Boarding",
+      "description": "Enjoy a guided Paddle Boarding session at the beautiful Barafundle Bay with Outer Reef Surf School.",
+      "duration": "2-3 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.625,
+      "lng": -4.901,
+      "travelToNext": null,
+      "travelMode": null,
+      "wetAlt": {
+        "title": "Pembroke Castle",
+        "description": "Explore the historic Pembroke Castle, one of the largest and best-preserved castles in Wales.",
+        "costFrom": 7,
+        "costTo": 8
+      },
+      "budgetAlt": {
+        "title": "Swim at Barafundle Bay",
+        "description": "Take a refreshing swim at Barafundle Bay.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 270,
+      "accommodation": 100,
+      "food": 100,
+      "transport": 80,
+      "total": 550
+    },
+    "budget": {
+      "activities": 80,
+      "accommodation": 40,
+      "food": 60,
+      "transport": 50,
+      "total": 230
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Pembrokeshire weather can be unpredictable, even in summer. Pack layers and be prepared for rain. Sea conditions can change rapidly, so always check the forecast before water activities.",
+    "traffic": "Traffic can be heavy in Pembrokeshire during peak season (July-August), especially around popular beaches and towns. Allow extra time for travel and consider using park-and-ride services where available. Parking at beaches can be limited, arrive early or consider using public transport.",
+    "booking": "Book activities and accommodation well in advance, especially during peak season. Some activities, like boat trips to Ramsey Island, are weather-dependent and may be cancelled at short notice.",
+    "fitness": "This itinerary requires a moderate level of fitness. You should be comfortable with walking for several hours and participating in water activities. If you have any concerns, consult your doctor before traveling."
+  }
+}

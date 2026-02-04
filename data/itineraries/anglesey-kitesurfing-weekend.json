@@ -1,0 +1,248 @@
+{
+  "slug": "anglesey-kitesurfing-weekend",
+  "title": "Anglesey Kitesurfing Weekend",
+  "tagline": "Ride the wind at Rhosneigr",
+  "region": "anglesey",
+  "days": 2,
+  "difficulty": "moderate",
+  "bestSeason": "April-October",
+  "groupType": "kitesurfers, watersports",
+  "priceFrom": 350,
+  "priceTo": 750,
+  "budgetPriceFrom": 180,
+  "budgetPriceTo": 350,
+  "highlights": [
+    "Rhosneigr beach",
+    "Kite lessons",
+    "Windsurfing"
+  ],
+  "activityTypes": [
+    "surfing",
+    "kayaking"
+  ],
+  "suitableFor": "Active individuals or small groups with a passion for watersports and a reasonable level of fitness. Beginner kitesurfers are welcome with lessons.",
+  "notSuitableFor": "Those with limited mobility, very young children (under 12), or those who dislike wind and water.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Wetsuit (or hire option)",
+    "Towel",
+    "Sunscreen",
+    "Sunglasses",
+    "Waterproof jacket",
+    "Swimsuit",
+    "Reusable water bottle"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Kitesurfing Lesson",
+      "description": "Start your weekend with a beginner kitesurfing lesson at Rhosneigr Beach. Learn the basics of kite control and safety from experienced instructors.",
+      "duration": "3 hours",
+      "costFrom": 65,
+      "costTo": 95,
+      "lat": 53.231,
+      "lng": -4.52,
+      "travelToNext": "5 minute walk",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Indoor Climbing at Holyhead Leisure Centre",
+        "description": "Head to the indoor climbing wall at Holyhead Leisure Centre to test your skills and stay active, plus visit the Maritime Museum.",
+        "costFrom": 10,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Beach Walk and Kite Flying",
+        "description": "Enjoy a free walk along Rhosneigr beach and fly a kite. Bring your own kite or purchase one from a local shop.",
+        "costFrom": 5,
+        "costTo": 15
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Oyster Catcher",
+      "foodType": "lunch",
+      "description": "Enjoy a relaxed lunch with sea views at The Oyster Catcher, a popular restaurant near Rhosneigr beach.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 53.233,
+      "lng": -4.523,
+      "travelToNext": "10 minute drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Broad Beach",
+        "description": "Enjoy pre-made food at the nearby Broad Beach. Free parking available"
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Sea Kayaking",
+      "description": "Explore the coastline near Rhosneigr by sea kayak. Anglesey Adventures offers guided tours for all skill levels.",
+      "duration": "3 hours",
+      "costFrom": 55,
+      "costTo": 90,
+      "lat": 53.231,
+      "lng": -4.52,
+      "travelToNext": "5 minute drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Anglesey Transport Museum",
+        "description": "Explore a variety of vintage vehicles at the Anglesey Transport Museum near Newborough.",
+        "costFrom": 8,
+        "costTo": 12
+      },
+      "budgetAlt": {
+        "title": "Walk around Llyn Maelog",
+        "description": "Enjoy a pleasant walk around Llyn Maelog nature reserve, a short drive from Rhosneigr. Free entry.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Surf's Edge Apartment",
+      "description": "Enjoy self-catering accommodation close to the beach at Surf's Edge Apartment, perfect for watersports enthusiasts.",
+      "costFrom": 120,
+      "costTo": 180,
+      "lat": 53.232,
+      "lng": -4.521,
+      "travelToNext": "Rhosneigr",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Rhosneigr Bunkhouse",
+        "description": "Budget-friendly bunkhouse accommodation in the heart of Rhosneigr.",
+        "costFrom": 25,
+        "costTo": 40
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 5,
+      "time": "19:00",
+      "type": "food",
+      "title": "Rhosneigr Kitchen",
+      "foodType": "Dinner",
+      "description": "Relaxing cafe offering light dinner and drinks in the town centre.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 53.232,
+      "lng": -4.521,
+      "travelToNext": "Accommodation",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Local Co-Op grocery store",
+        "description": "Prepare food yourself for a cheaper meal",
+        "costFrom": 5,
+        "costTo": 10
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Windsurfing Session",
+      "description": "Hit the waves again with a windsurfing session at Rhosneigr Beach. Funsport Rhosneigr offers equipment rentals and lessons.",
+      "duration": "3 hours",
+      "costFrom": 50,
+      "costTo": 80,
+      "lat": 53.231,
+      "lng": -4.52,
+      "travelToNext": "5 minute drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit Beaumaris Castle",
+        "description": "Explore the impressive Beaumaris Castle, a UNESCO World Heritage Site, and learn about its history.",
+        "costFrom": 8,
+        "costTo": 12
+      },
+      "budgetAlt": {
+        "title": "Explore Rhosneigr Village",
+        "description": "Take a leisurely stroll through Rhosneigr village, browse the local shops, and enjoy the seaside atmosphere. Free.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Sandy Mount House",
+      "foodType": "Lunch",
+      "description": "Enjoy a final lunch at Sandy Mount House, a stylish restaurant with stunning views.",
+      "costFrom": 20,
+      "costTo": 30,
+      "lat": 53.2333,
+      "lng": -4.5222,
+      "travelToNext": "15 minute drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at a scenic overlook",
+        "description": "Pack a lunch and drive to a scenic viewpoint along the coast for a picnic with a view.",
+        "costFrom": 5,
+        "costTo": 10
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Coasteering Adventure",
+      "description": "End your trip with a thrilling coasteering experience with Anglesey Adventures. Explore the rocky coastline, jump into the sea, and swim through hidden coves.",
+      "duration": "2.5 hours",
+      "costFrom": 55,
+      "costTo": 90,
+      "lat": 53.231,
+      "lng": -4.52,
+      "travelToNext": "Departure",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Plas Newydd House and Gardens",
+        "description": "Visit Plas Newydd, a National Trust property with stunning views of the Menai Strait.",
+        "costFrom": 12,
+        "costTo": 18
+      },
+      "budgetAlt": {
+        "title": "Explore Newborough Forest",
+        "description": "Take a walk or bike ride through Newborough Forest, a beautiful pine forest with trails leading to the beach.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 225,
+      "accommodation": 150,
+      "food": 70,
+      "transport": 30,
+      "total": 475
+    },
+    "budget": {
+      "activities": 5,
+      "accommodation": 30,
+      "food": 25,
+      "transport": 20,
+      "total": 80
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Anglesey weather can be unpredictable, even in summer. Be prepared for wind and rain, especially if participating in watersports. Check the forecast before you go.",
+    "traffic": "Traffic can be heavy during peak season, especially on the A55. Allow extra time for travel, especially on weekends. Parking in Rhosneigr can be challenging during busy periods. Arrive early to secure a spot.",
+    "booking": "Pre-booking watersports lessons and activities is highly recommended, especially during peak season. Accommodation should also be booked in advance.",
+    "fitness": "A reasonable level of fitness is required for watersports activities. Coasteering involves swimming, climbing, and jumping. Sea kayaking requires upper body strength and endurance."
+  }
+}

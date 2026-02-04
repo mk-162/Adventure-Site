@@ -1,0 +1,150 @@
+{
+  "slug": "south-wales-day-trip-cardiff",
+  "title": "South Wales Adventure Day Trip",
+  "tagline": "Escape Cardiff for a day of action",
+  "region": "south-wales",
+  "days": 1,
+  "difficulty": "moderate",
+  "bestSeason": "Year-round",
+  "groupType": "anyone",
+  "priceFrom": 150,
+  "priceTo": 300,
+  "budgetPriceFrom": 50,
+  "budgetPriceTo": 100,
+  "highlights": [
+    "BikePark Wales",
+    "Waterfall walks",
+    "Caving"
+  ],
+  "activityTypes": [
+    "mountain-biking",
+    "hiking",
+    "caving"
+  ],
+  "suitableFor": "Active individuals, couples, or small groups who enjoy outdoor activities and are comfortable with moderate physical exertion. Suitable for families with older children (12+) who are confident on bikes.",
+  "notSuitableFor": "Those with limited mobility or significant health concerns. Young children (under 12) may find some activities challenging. People who dislike physical activity or are afraid of heights or confined spaces should reconsider.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Sturdy hiking boots",
+    "Bike helmet (if bringing your own bike)",
+    "Change of clothes",
+    "Small backpack"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "BikePark Wales Uplift Day",
+      "description": "Experience world-class mountain biking trails with an uplift service to maximize your riding time.",
+      "duration": "4 hours",
+      "costFrom": 55,
+      "costTo": 75,
+      "lat": 51.782,
+      "lng": -3.37,
+      "travelToNext": "30min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Rock UK Summit Centre Indoor Climbing",
+        "description": "Enjoy indoor climbing walls and adventure activities at the Rock UK Summit Centre.",
+        "costFrom": 25,
+        "costTo": 40
+      },
+      "budgetAlt": {
+        "title": "Afan Forest Park Trails (Free)",
+        "description": "Explore the free mountain biking trails at Afan Forest Park; bring your own bike.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "13:30",
+      "type": "food",
+      "title": "The Red Dragon, Penderyn",
+      "foodType": "lunch",
+      "description": "A traditional pub serving hearty Welsh lunches near Penderyn Distillery.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.8163,
+      "lng": -3.4817,
+      "travelToNext": "15 min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Pontneddfechan Waterfall Car Park",
+        "description": "Enjoy a picnic amidst the stunning scenery near the waterfall trails."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "15:00",
+      "type": "activity",
+      "title": "Four Waterfalls Walk, Brecon Beacons",
+      "description": "Hike through a magical landscape and discover four stunning waterfalls, including Sgwd yr Eira (fall you can walk behind).",
+      "duration": "2.5 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.7735,
+      "lng": -3.5817,
+      "travelToNext": "1 hour drive via A465",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Penderyn Whisky Distillery Tour",
+        "description": "Take a guided tour of the Penderyn Whisky Distillery and sample their award-winning spirits.",
+        "costFrom": 15,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Explore the Craig-y-Nos Country Park (Free)",
+        "description": "Wander through the beautiful gardens and woodland trails of Craig-y-Nos Country Park.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "18:00",
+      "type": "food",
+      "title": "The Aberglais Inn, Pant",
+      "foodType": "dinner",
+      "description": "A traditional pub serving hearty Welsh lunches near Dowlais.",
+      "costFrom": 20,
+      "costTo": 30,
+      "lat": 51.7504,
+      "lng": -3.3417,
+      "travelToNext": "Return to Cardiff",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Takeaway Fish and Chips in Merthyr Tydfil",
+        "description": "Affordable and classic option."
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 75,
+      "accommodation": 0,
+      "food": 45,
+      "transport": 30,
+      "total": 150
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 0,
+      "food": 20,
+      "transport": 30,
+      "total": 50
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "South Wales weather is unpredictable. Be prepared for rain even on sunny days. Check the forecast before you go and pack layers.",
+    "traffic": "Traffic can be heavy on the A470, especially during peak hours and weekends. Allow extra time for travel, especially around Cardiff and Merthyr Tydfil. Parking at BikePark Wales can be busy; arrive early.",
+    "booking": "BikePark Wales uplift passes should be booked well in advance, especially on weekends and during school holidays. Caving tours require advance booking. It's advisable to reserve a table at The Red Dragon, Penderyn.",
+    "fitness": "This itinerary requires a moderate level of fitness. Mountain biking at BikePark Wales requires good bike handling skills. The Four Waterfalls Walk involves some uphill walking and uneven terrain."
+  }
+}

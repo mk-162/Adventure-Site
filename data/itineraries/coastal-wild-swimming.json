@@ -1,0 +1,319 @@
+{
+  "slug": "coastal-wild-swimming",
+  "title": "Coastal Wild Swimming Trail",
+  "tagline": "Pembrokeshire's secret swim spots",
+  "region": "pembrokeshire",
+  "days": 3,
+  "difficulty": "moderate",
+  "bestSeason": "June-September",
+  "groupType": "wild swimmers",
+  "priceFrom": 450,
+  "priceTo": 850,
+  "budgetPriceFrom": 250,
+  "budgetPriceTo": 400,
+  "highlights": [
+    "Blue Lagoon",
+    "Hidden coves",
+    "Guided swims"
+  ],
+  "activityTypes": [
+    "wild-swimming",
+    "coasteering"
+  ],
+  "suitableFor": "Confident swimmers comfortable in open water, aged 16-55, with a good level of fitness for short coastal walks and moderate swimming challenges.",
+  "notSuitableFor": "Non-swimmers, individuals with limited mobility, those with a fear of heights or open water, or young children under 16 without significant prior experience.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Swimsuit",
+    "Towel",
+    "Wetsuit (optional)",
+    "Water shoes",
+    "Dry bag",
+    "Sunscreen",
+    "Warm layers",
+    "Water bottle"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coasteering at Abereiddy Blue Lagoon",
+      "description": "Explore the dramatic coastline and jump into the Blue Lagoon with MUUK Adventures. Scramble, swim, and leap your way along the rugged cliffs.",
+      "duration": "3.5 hours",
+      "costFrom": 50,
+      "costTo": 70,
+      "lat": 51.931,
+      "lng": -5.203,
+      "travelToNext": "20min drive via B4583",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Wool Museum",
+        "description": "Learn about the history of Welsh wool production in a beautifully preserved mill.",
+        "costFrom": 7,
+        "costTo": 9
+      },
+      "budgetAlt": {
+        "title": "Free swim at Whitesands Beach",
+        "description": "Enjoy a less challenging, but equally beautiful, swim in the waves at Whitesands.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Sloop Inn",
+      "foodType": "lunch",
+      "description": "A traditional pub in Porthgain harbour serving hearty Welsh fare and fresh seafood.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.9267,
+      "lng": -5.2297,
+      "travelToNext": "25min drive via B4330",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Porthgain Harbour",
+        "description": "Enjoy your own picnic overlooking the picturesque harbour at Porthgain."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Secret Coves Swim near St Davids",
+      "description": "Discover hidden coves and secluded beaches along the St Davids peninsula for a more tranquil wild swimming experience.",
+      "duration": "2 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "10min drive via A487",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "St Davids Cathedral",
+        "description": "Explore the historic cathedral and learn about its significance in Welsh history.",
+        "costFrom": 0,
+        "costTo": 5
+      },
+      "budgetAlt": {
+        "title": "Coastal walk along the Pembrokeshire Coast Path",
+        "description": "Hike a section of the stunning coastal path and enjoy panoramic views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "St Davids YHA",
+      "description": "A modern hostel in the heart of St Davids, ideal for budget-conscious travellers and groups.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "30min drive via A487",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "TYF Cliff-top Campsite",
+        "description": "A scenic campsite overlooking the coast near Porthclais harbour.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Wild Swimming at Barafundle Bay",
+      "description": "Immerse yourself in the turquoise waters of Barafundle Bay, often voted one of the best beaches in the UK.",
+      "duration": "2.5 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.625,
+      "lng": -4.901,
+      "travelToNext": "10min drive via minor roads",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Pembroke Castle",
+        "description": "Visit the impressive Pembroke Castle, birthplace of Henry VII.",
+        "costFrom": 8,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Free swim at Barafundle Bay",
+        "description": "Enjoy the beautiful scenery and calm waters of Barafundle Bay with a relaxing swim.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Stackpole Inn",
+      "foodType": "lunch",
+      "description": "A popular pub near Stackpole Quay serving delicious food and local ales.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.6145,
+      "lng": -4.8922,
+      "travelToNext": "5min drive via minor roads",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Stackpole Estate",
+        "description": "Enjoy a picnic lunch amidst the beautiful grounds of Stackpole Estate."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "13:30",
+      "type": "activity",
+      "title": "Paddle Boarding at Stackpole Quay",
+      "description": "Enjoy a relaxing paddle boarding session around Stackpole Quay with Outer Reef Surf School.",
+      "duration": "2.5 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.616,
+      "lng": -4.891,
+      "travelToNext": "1hr drive via A477",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Carew Castle",
+        "description": "Explore the ruins of Carew Castle and its tidal mill.",
+        "costFrom": 6,
+        "costTo": 8
+      },
+      "budgetAlt": {
+        "title": "Explore Stackpole Estate on foot",
+        "description": "Enjoy a walk through Stackpole Estate, visiting the lily ponds and coastal paths.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Stackpole Centre (National Trust)",
+      "description": "Cottages and camping available at this National Trust centre within Stackpole Estate. Perfect for nature lovers.",
+      "costFrom": 80,
+      "costTo": 200,
+      "lat": 51.616,
+      "lng": -4.891,
+      "travelToNext": "5min drive via minor roads",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Broadhaven Camping",
+        "description": "A campsite with basic facilities near the beach in Broadhaven.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coastal Walk and Swim at Freshwater West",
+      "description": "Hike along the dramatic coastline of Freshwater West, known for its powerful waves and unique rock formations, finishing with a swim.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.658,
+      "lng": -5.048,
+      "travelToNext": "15min drive via A477",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Hangar 5 Trampoline Park",
+        "description": "An indoor trampoline park for all the family.",
+        "costFrom": 12,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Free swim at Freshwater West",
+        "description": "Enjoy the powerful waves and dramatic scenery of Freshwater West with a free swim.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Runwayskiln",
+      "foodType": "lunch",
+      "description": "A cafe and pottery studio near Marloes Sands, serving delicious lunches and cakes.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 51.6939,
+      "lng": -5.188,
+      "travelToNext": "1hr drive via A4076 and A40",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Marloes Sands",
+        "description": "Enjoy a picnic lunch overlooking the dramatic cliffs and golden sands of Marloes Sands."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Guided Wild Swimming Session",
+      "description": "Finish your adventure with a guided wild swimming session with Preseli Venture at a location chosen based on weather conditions and group ability.",
+      "duration": "3 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.9687,
+      "lng": -5.1833,
+      "travelToNext": "Departure",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Milford Haven Museum",
+        "description": "Learn about the history of Milford Haven as a fishing port and naval base.",
+        "costFrom": 5,
+        "costTo": 7
+      },
+      "budgetAlt": {
+        "title": "Relax on Marloes Sands",
+        "description": "Enjoy the peace and tranquility of Marloes Sands with a swim and sunbathe.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 255,
+      "accommodation": 130,
+      "food": 120,
+      "transport": 50,
+      "total": 555
+    },
+    "budget": {
+      "activities": 50,
+      "accommodation": 45,
+      "food": 40,
+      "transport": 30,
+      "total": 165
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Pembrokeshire weather is unpredictable. Pack for all conditions, even in summer. Sea temperatures are usually cool, around 14-17°C in summer. Check tide times before swimming.",
+    "traffic": "Traffic can be heavy in peak season, especially around St Davids and Tenby. Parking can be challenging, arrive early or use park and ride schemes where available. The A40 is prone to congestion.",
+    "booking": "Book guided activities and accommodation well in advance, especially for summer months. Some campsites require pre-booking.",
+    "fitness": "This trip requires a moderate level of fitness. Be prepared for short coastal walks, swimming in open water, and potentially some scrambling over rocks."
+  }
+}

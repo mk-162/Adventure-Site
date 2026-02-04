@@ -1,0 +1,414 @@
+{
+  "slug": "wales-first-timer-sampler",
+  "title": "First-Timer's Wales Sampler",
+  "tagline": "The greatest hits for your first Welsh adventure",
+  "region": "multi",
+  "days": 4,
+  "difficulty": "easy",
+  "bestSeason": "May-September",
+  "groupType": "beginners, families",
+  "priceFrom": 450,
+  "priceTo": 950,
+  "budgetPriceFrom": 250,
+  "budgetPriceTo": 500,
+  "highlights": [
+    "Snowdon",
+    "Pembrokeshire coast",
+    "Zip World",
+    "Beach day"
+  ],
+  "activityTypes": [
+    "hiking",
+    "coasteering",
+    "zip-lining"
+  ],
+  "suitableFor": "Families with children aged 8+, beginner adventurers, and those wanting a taste of North and West Wales.",
+  "notSuitableFor": "Experienced mountaineers looking for challenging climbs or those seeking a purely relaxing holiday.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Hiking boots",
+    "Sunscreen",
+    "Swimsuit",
+    "Layers of clothing"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Velocity 2 Zip Line",
+      "description": "Experience the thrill of flying over Penrhyn Quarry on the world's fastest zip line. You'll be harnessed in and launched down a stunning slope.",
+      "duration": "2.5 hours",
+      "costFrom": 89,
+      "costTo": 109,
+      "lat": 53.1775,
+      "lng": -4.0856,
+      "travelToNext": "30min drive via A5",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Bounce Below",
+        "description": "Jump and explore giant trampolines in a disused slate mine at Zip World Llechwedd. Fun for all ages.",
+        "costFrom": 25,
+        "costTo": 35
+      },
+      "budgetAlt": {
+        "title": "Watkin Path Waterfall Walk",
+        "description": "Enjoy a scenic walk to the waterfalls near Pont Bethania. A free and beautiful natural attraction.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Pete's Eats",
+      "foodType": "lunch",
+      "description": "A classic mountaineering cafe in Llanberis, serving hearty portions and great atmosphere.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 53.1174,
+      "lng": -4.1282,
+      "travelToNext": "5min drive to Llanberis Path car park",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Padarn",
+        "description": "Enjoy your own picnic by the beautiful Llyn Padarn lake in Llanberis."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Llanberis Path Guided Walk (Partial)",
+      "description": "Hike part of the Llanberis Path up Snowdon. A good taste of the mountain without a full summit attempt. Great views.",
+      "duration": "3 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 53.119,
+      "lng": -4.131,
+      "travelToNext": "10min drive to YHA Snowdon Llanberis",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Slate Museum",
+        "description": "Learn about the history of the slate industry at this fascinating museum. It's a great glimpse into Wales' industrial past.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walk around Llyn Padarn",
+        "description": "Enjoy a leisurely walk around the lake in Llanberis, taking in the views of Snowdon.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "YHA Snowdon Llanberis",
+      "description": "A well-located hostel in Llanberis, perfect for exploring Snowdonia. Family rooms available.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 53.1173,
+      "lng": -4.1334,
+      "travelToNext": "1hr drive to Bala",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "The Snowdon Inn (Camping)",
+        "description": "Camping near Llanberis",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "White Water Rafting",
+      "description": "Experience the thrill of white water rafting at the National White Water Centre near Bala. Suitable for beginners.",
+      "duration": "3 hours",
+      "costFrom": 55,
+      "costTo": 75,
+      "lat": 52.911,
+      "lng": -3.601,
+      "travelToNext": "15min drive to Bala town",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Indoor Climbing at the Beacon Climbing Centre",
+        "description": "Enjoy indoor climbing and bouldering in a safe and controlled environment.",
+        "costFrom": 10,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Walk around Llyn Tegid (Bala Lake)",
+        "description": "Enjoy a walk around Bala Lake (Llyn Tegid), the largest natural lake in Wales.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Plas Coch Hotel",
+      "foodType": "lunch",
+      "description": "A hotel with a great view in Bala serving food. A good place for lunch and a relax.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 52.9103,
+      "lng": -3.5906,
+      "travelToNext": "1hr 45min drive to St Davids",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic by Llyn Tegid",
+        "description": "Enjoy your own packed lunch by the lake."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "15:00",
+      "type": "travel",
+      "title": "Drive to St Davids",
+      "description": "Drive along the scenic Welsh roads to St Davids, Pembrokeshire.",
+      "duration": "1hr 45min",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.9103,
+      "lng": -3.5906,
+      "travelToNext": "Short drive in St Davids",
+      "travelMode": "drive"
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "St Davids YHA",
+      "description": "A comfortable and well-located hostel in the heart of St Davids, ideal for exploring the Pembrokeshire coast.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 51.8811,
+      "lng": -5.2657,
+      "travelToNext": "Short walk",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "TYF Cliff-top Campsite",
+        "description": "Camping with stunning coastal views near St Davids.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coasteering Classic",
+      "description": "Explore the Pembrokeshire coast with TYF Adventure, swimming, climbing, and jumping into the sea. All levels welcome.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 60,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "5min drive to Whitesands",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "St Davids Cathedral Visit",
+        "description": "Explore the historic St Davids Cathedral, a beautiful and peaceful place to learn about Welsh history.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Coastal Path Walk to St Non's Bay",
+        "description": "Walk along the Pembrokeshire Coast Path to St Non's Bay, a beautiful and historic site with a holy well.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "13:00",
+      "type": "food",
+      "title": "The Whitesands Beach Cafe",
+      "foodType": "lunch",
+      "description": "Beach cafe with a great view serving lunch",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 51.892,
+      "lng": -5.303,
+      "travelToNext": "Walk along Whitesands beach",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Picnic on Whitesands Beach",
+        "description": "Bring your own packed lunch to enjoy on the beach."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Surfing Lesson",
+      "description": "Learn to surf at Whitesands Beach with TYF Adventure. Beginner friendly lessons.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 60,
+      "lat": 51.892,
+      "lng": -5.303,
+      "travelToNext": "3hr drive to Betws-y-Coed",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Oriel y Parc Gallery and Visitor Centre",
+        "description": "Visit the Oriel y Parc Gallery in St Davids to see local art and learn about the Pembrokeshire Coast National Park.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Relaxing on Whitesands Beach",
+        "description": "Enjoy swimming, sunbathing, or building sandcastles on Whitesands Beach.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "travel",
+      "title": "Drive to Betws-y-Coed",
+      "description": "Drive from St Davids to Betws-y-Coed.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.892,
+      "lng": -5.303,
+      "travelToNext": "Short drive to accommodation",
+      "travelMode": "drive"
+    },
+    {
+      "day": 3,
+      "orderIndex": 5,
+      "time": "20:30",
+      "type": "accommodation",
+      "title": "Plas y Brenin",
+      "description": "Adventure Hotel in Capel Curig, 10 mins from Betws-y-Coed.",
+      "costFrom": 80,
+      "costTo": 150,
+      "lat": 53.096,
+      "lng": -3.91,
+      "travelToNext": "Short drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Ben's Bunkhouse",
+        "description": "Budget accommodation near Snowdon",
+        "costFrom": 25,
+        "costTo": 40
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Zip World Fforest Coaster",
+      "description": "Ride the Fforest Coaster, a gravity-driven toboggan run through the trees at Zip World Fforest in Betws-y-Coed.",
+      "duration": "1.5 hours",
+      "costFrom": 25,
+      "costTo": 35,
+      "lat": 53.092,
+      "lng": -3.8,
+      "travelToNext": "Short walk",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Explore Betws-y-Coed Village",
+        "description": "Browse the shops, visit the St Michael's Church, and enjoy the riverside walks in the charming village of Betws-y-Coed.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Waterfall walk in Betws-y-Coed",
+        "description": "Walk to the iconic Swallow Falls near Betws-y-Coed (small entrance fee applies).",
+        "costFrom": 0,
+        "costTo": 5
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 2,
+      "time": "11:00",
+      "type": "food",
+      "title": "Hangin' Pizzeria",
+      "foodType": "lunch",
+      "description": "Pizza restaurant in Betws-y-Coed",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 53.093,
+      "lng": -3.8,
+      "travelToNext": "Walk in Betws-y-Coed",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Picnic by the River Conwy",
+        "description": "Enjoy a picnic by the picturesque River Conwy in Betws-y-Coed."
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 3,
+      "time": "12:30",
+      "type": "activity",
+      "title": "Walk to Conwy Falls",
+      "description": "A short drive from Betws-y-Coed is the wonderful Conwy Falls.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.092,
+      "lng": -3.8,
+      "travelToNext": "End of Itinerary",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Explore Conwy Castle",
+        "description": "Visit the World Heritage Site, a medieval castle, for a historical day out.",
+        "costFrom": 10,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Shopping",
+        "description": "Visit Betws-y-Coed's local shops.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 289,
+      "accommodation": 200,
+      "food": 75,
+      "transport": 86,
+      "total": 650
+    },
+    "budget": {
+      "activities": 25,
+      "accommodation": 60,
+      "food": 30,
+      "transport": 86,
+      "total": 201
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Expect changeable weather, even in summer. Pack layers and waterproofs. Coastal areas can be windy.",
+    "traffic": "Traffic can be heavy in Snowdonia, especially during peak season. Allow extra time for driving and parking. St Davids parking can be tricky in summer too, arrive early.",
+    "booking": "Book Zip World activities and coasteering in advance, especially during school holidays. Consider booking Snowdon accommodation well in advance as well.",
+    "fitness": "A reasonable level of fitness is required for the Snowdon hike and coasteering. The other activities are suitable for most people."
+  }
+}

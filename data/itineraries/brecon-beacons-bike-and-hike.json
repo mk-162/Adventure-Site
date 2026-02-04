@@ -1,0 +1,289 @@
+{
+  "slug": "brecon-beacons-bike-and-hike",
+  "title": "Brecon Bike & Hike",
+  "tagline": "BikePark Wales meets mountain summits",
+  "region": "brecon-beacons",
+  "days": 3,
+  "difficulty": "difficult",
+  "bestSeason": "April-October",
+  "groupType": "fitness enthusiasts",
+  "priceFrom": 450,
+  "priceTo": 850,
+  "budgetPriceFrom": 250,
+  "budgetPriceTo": 500,
+  "highlights": [
+    "BikePark Wales",
+    "Pen y Fan",
+    "Taff Trail"
+  ],
+  "activityTypes": [
+    "mountain-biking",
+    "hiking"
+  ],
+  "suitableFor": "Experienced mountain bikers and hikers with a good level of fitness who enjoy challenging trails and varied terrain. Confident navigating in potentially exposed conditions.",
+  "notSuitableFor": "Beginner cyclists or hikers, those with limited fitness, or anyone uncomfortable with heights or changeable weather conditions. Also not ideal for families with young children.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Waterproof jacket and trousers",
+    "Hiking boots with good ankle support",
+    "Mountain bike helmet and gloves",
+    "High-energy snacks",
+    "Navigation tools (map, compass, GPS)"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "BikePark Wales - Full Day Riding",
+      "description": "Spend the day tackling the varied trails at BikePark Wales, from flowy blues to challenging black runs. Lift pass required.",
+      "duration": "6 hours",
+      "costFrom": 8,
+      "costTo": 32.5,
+      "lat": 51.725,
+      "lng": -3.37,
+      "travelToNext": "5 minute drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "BikePark Wales Cafe & Skills Area",
+        "description": "Enjoy the cafe and covered skills area to hone your technique before venturing out when the rain subsides.",
+        "costFrom": 0,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Taff Trail Exploration",
+        "description": "Ride a section of the Taff Trail, a mostly flat, traffic-free path.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "16:00",
+      "type": "food",
+      "title": "BikePark Wales Cafe",
+      "foodType": "lunch",
+      "description": "Refuel with burgers and hot food in BikePark Wales cafe with great views of the mountain.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 51.725,
+      "lng": -3.37,
+      "travelToNext": "30min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at BikePark Wales picnic area",
+        "description": "Bring your own food and enjoy the park's picnic area."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Twin Trails B&B",
+      "description": "A cyclist-friendly B&B located close to BikePark Wales. Offers secure bike storage and hearty breakfasts.",
+      "costFrom": 35,
+      "costTo": 60,
+      "lat": 51.7445,
+      "lng": -3.3505,
+      "travelToNext": "45min drive to Storey Arms Car Park",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Grawen Camping",
+        "description": "A campsite near BikePark Wales, offering basic facilities and a budget-friendly option.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Pen y Fan Hike (via Storey Arms)",
+      "description": "Hike to the summit of Pen y Fan, the highest peak in South Wales. Expect a challenging but rewarding climb with panoramic views.",
+      "duration": "3-4 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.883,
+      "lng": -3.437,
+      "travelToNext": "15 minute drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Brecon Mountain Railway",
+        "description": "Enjoy scenic views of the Brecon Beacons from a vintage steam train, a relaxing alternative to hiking.",
+        "costFrom": 15,
+        "costTo": 25
+      },
+      "budgetAlt": {
+        "title": "Lower-Level Walking near Pont ar Daf",
+        "description": "Explore the gentler trails around Pont ar Daf car park, avoiding the exposed summit.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "13:00",
+      "type": "food",
+      "title": "The Red Dragon Tea Room",
+      "foodType": "lunch",
+      "description": "Cosy tea room in Brecon town centre serving sandwiches, cakes, and hot drinks.",
+      "costFrom": 8,
+      "costTo": 15,
+      "lat": 51.9445,
+      "lng": -3.3935,
+      "travelToNext": "30min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Pen y Fan summit",
+        "description": "Enjoy a picnic with spectacular views."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Waterfall Country Gorge Walking",
+      "description": "Explore the stunning waterfalls of Waterfall Country with a guided gorge walking experience, scrambling up rivers and jumping into pools.",
+      "duration": "2-3 hours",
+      "costFrom": 65,
+      "costTo": 95,
+      "lat": 51.808,
+      "lng": -3.56,
+      "travelToNext": "20min drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Craig y Nos Castle Tour",
+        "description": "Explore the historic Craig y Nos Castle, with its opera house and fascinating history.",
+        "costFrom": 8,
+        "costTo": 12
+      },
+      "budgetAlt": {
+        "title": "Self-Guided Waterfall Walk",
+        "description": "Explore a smaller waterfall on your own, like Sgwd Gwladus (Lady Falls).",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "18:00",
+      "type": "accommodation",
+      "title": "Craig y Nos Castle",
+      "description": "A historic castle offering comfortable rooms and beautiful grounds, perfect for a relaxing evening.",
+      "costFrom": 80,
+      "costTo": 150,
+      "lat": 51.828,
+      "lng": -3.68,
+      "travelToNext": "1 hour to Talybont-on-Usk",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Waterfall Country Campsite",
+        "description": "A campsite close to Waterfall Country, offering a budget-friendly overnight option.",
+        "costFrom": 15,
+        "costTo": 25
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Taff Trail Cycling (Talybont-on-Usk)",
+      "description": "Cycle a scenic section of the Taff Trail, starting from Talybont-on-Usk and enjoying the canal-side views.",
+      "duration": "3-4 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.889,
+      "lng": -3.31,
+      "travelToNext": "15 min drive to Llangorse Lake",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Brecon Cathedral Visit",
+        "description": "Explore the historic Brecon Cathedral, a peaceful and architecturally impressive building.",
+        "costFrom": 0,
+        "costTo": 5
+      },
+      "budgetAlt": {
+        "title": "Taff Trail Walking",
+        "description": "Walk along a section of the Taff Trail instead of cycling.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "13:00",
+      "type": "food",
+      "title": "The White Swan Inn (Llangorse)",
+      "foodType": "lunch",
+      "description": "Traditional pub in Llangorse, serving hearty pub fare and local ales.",
+      "costFrom": 12,
+      "costTo": 25,
+      "lat": 51.9218,
+      "lng": -3.2619,
+      "travelToNext": "5 min drive to Llangorse Lake",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch by the canal",
+        "description": "Enjoy a picnic at Llangorse Lake"
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Paddle Boarding at Llangorse Lake",
+      "description": "Enjoy a relaxing paddle boarding session on Llangorse Lake, surrounded by stunning scenery.",
+      "duration": "2-3 hours",
+      "costFrom": 45,
+      "costTo": 85,
+      "lat": 51.923,
+      "lng": -3.26,
+      "travelToNext": "End of Itinerary",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Llangorse Multi Activity Centre",
+        "description": "Llangorse Multi Activity Centre is close by offering a variety of indoors activities.",
+        "costFrom": 25,
+        "costTo": 50
+      },
+      "budgetAlt": {
+        "title": "Walk around Llangorse Lake",
+        "description": "Enjoy a walk around the lake, taking in the views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 253,
+      "accommodation": 175,
+      "food": 70,
+      "transport": 50,
+      "total": 548
+    },
+    "budget": {
+      "activities": 60,
+      "accommodation": 30,
+      "food": 30,
+      "transport": 50,
+      "total": 170
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "The Brecon Beacons weather is notoriously unpredictable. Be prepared for all conditions, even in summer. Mountain weather can change rapidly.",
+    "traffic": "Traffic can be heavy, especially during peak season (summer weekends and bank holidays). Parking at popular spots like Pen y Fan and Waterfall Country can be challenging – arrive early or consider public transport.",
+    "booking": "BikePark Wales lift passes and coaching sessions should be booked in advance, especially during peak season. Guided gorge walking experiences also require advance booking. Accommodation can fill up quickly, so book well in advance.",
+    "fitness": "This itinerary requires a good level of fitness. The Pen y Fan hike is strenuous, and the mountain biking at BikePark Wales involves steep climbs and technical descents."
+  }
+}

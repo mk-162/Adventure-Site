@@ -1,0 +1,151 @@
+{
+  "slug": "gower-day-trip-from-cardiff",
+  "title": "Gower Day Trip from Cardiff",
+  "tagline": "Beach adventure an hour from the city",
+  "region": "gower",
+  "days": 1,
+  "difficulty": "easy",
+  "bestSeason": "May-September",
+  "groupType": "anyone",
+  "priceFrom": 120,
+  "priceTo": 250,
+  "budgetPriceFrom": 55,
+  "budgetPriceTo": 100,
+  "highlights": [
+    "Rhossili Bay",
+    "Surfing lesson",
+    "Coastal walk"
+  ],
+  "activityTypes": [
+    "surfing",
+    "hiking"
+  ],
+  "suitableFor": "Families, couples, and solo travelers looking for a relaxed coastal experience with some light activity. Good for beginners to surfing and walking.",
+  "notSuitableFor": "Those seeking extreme sports or demanding hikes. People with limited mobility may find some areas challenging.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Swimsuit",
+    "Towel",
+    "Sunscreen",
+    "Walking shoes",
+    "Water bottle",
+    "Rain jacket"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Surfing Lesson at Llangennith Beach",
+      "description": "Learn to surf with Llangennith Surf School on one of Gower's best surfing beaches. Expect a fun and informative session with qualified instructors.",
+      "duration": "2 hours",
+      "costFrom": 40,
+      "costTo": 65,
+      "lat": 51.597,
+      "lng": -4.268,
+      "travelToNext": "15min drive via B4247",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Indoor Climbing at Swansea",
+        "description": "Head to an indoor climbing centre in Swansea for a climbing session. ",
+        "costFrom": 15,
+        "costTo": 25
+      },
+      "budgetAlt": {
+        "title": "Relaxing on Llangennith Beach",
+        "description": "Enjoy the beach. Build sandcastles, paddle in the sea, or simply relax.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The King's Head, Llangennith",
+      "foodType": "lunch",
+      "description": "Traditional pub serving hearty meals with views of the beach, perfect after a surfing lesson.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.5967,
+      "lng": -4.2693,
+      "travelToNext": "30min drive via B4247 and minor roads",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Rhossili Bay viewpoint",
+        "description": "Enjoy your own packed lunch with stunning views of Worm's Head at Rhossili Bay."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Rhossili Bay Coastal Walk & Worm's Head",
+      "description": "Walk along the iconic Rhossili Bay beach and, if the tide is right, venture out to Worm's Head. Check tide times before you go!",
+      "duration": "2-3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.569,
+      "lng": -4.287,
+      "travelToNext": "1 hour 15min drive via A4118 to Cardiff",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Waterfront Museum, Swansea",
+        "description": "Explore the history of Welsh industry and innovation at this free museum in Swansea.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Rhossili Bay Coastal Walk & Worm's Head",
+        "description": "Walk along the iconic Rhossili Bay beach and, if the tide is right, venture out to Worm's Head. Check tide times before you go!",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "departure",
+      "title": "Drive back to Cardiff",
+      "description": "Head back to Cardiff after a day of adventures.",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.569,
+      "lng": -4.287,
+      "travelToNext": null,
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Drive back to Cardiff",
+        "description": "Head back to Cardiff after a day of adventures.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 50,
+      "accommodation": 0,
+      "food": 20,
+      "transport": 50,
+      "total": 120
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 0,
+      "food": 15,
+      "transport": 40,
+      "total": 55
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Gower weather can change quickly. Check the forecast before you go and be prepared for rain, even in summer. Sea fog is common and can reduce visibility.",
+    "traffic": "Traffic can be heavy on the M4 and A4118, especially during peak season and bank holidays. Allow extra time for travel. Parking at Rhossili can fill up quickly, especially at weekends. Arrive early or use the park-and-ride service.",
+    "booking": "Surfing lessons should be booked in advance, especially during peak season. Check tide times before walking to Worm's Head, as access is only possible at low tide.",
+    "fitness": "This itinerary involves light walking and surfing. A reasonable level of fitness is required. The walk to Worm's Head can be challenging in places."
+  }
+}

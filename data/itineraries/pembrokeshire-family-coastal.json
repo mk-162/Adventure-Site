@@ -1,0 +1,383 @@
+{
+  "slug": "pembrokeshire-family-coastal",
+  "title": "Pembrokeshire Family Coastal Adventure",
+  "tagline": "Beaches, boats, and beginner coasteering",
+  "region": "pembrokeshire",
+  "days": 4,
+  "difficulty": "easy",
+  "bestSeason": "June-August",
+  "groupType": "families",
+  "priceFrom": 450,
+  "priceTo": 850,
+  "budgetPriceFrom": 250,
+  "budgetPriceTo": 450,
+  "highlights": [
+    "Family coasteering",
+    "Ramsey Island boat trip",
+    "Beach days"
+  ],
+  "activityTypes": [
+    "coasteering",
+    "kayaking",
+    "surfing"
+  ],
+  "suitableFor": "Families with children aged 8 and up who enjoy outdoor activities and are comfortable with water. Those new to adventure sports.",
+  "notSuitableFor": "Individuals with significant mobility issues or a strong aversion to water activities. Those seeking high-adrenaline thrills.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Swimsuit",
+    "Towel",
+    "Sunscreen",
+    "Waterproof jacket",
+    "Walking shoes"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coasteering Classic with TYF Adventure",
+      "description": "Explore the coastline by swimming, climbing, and jumping into the sea. TYF provides wetsuits, buoyancy aids, and helmets.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 60,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "5min drive via A487",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "St Davids Cathedral Visit",
+        "description": "Explore the historic cathedral and its surrounding grounds.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Rockpool Exploration at Porthclais Harbour",
+        "description": "Discover marine life in the rockpools at low tide. Bring a bucket and a net.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Bishops Kitchen",
+      "foodType": "lunch",
+      "description": "Cafe in St Davids offering classic lunch fare.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "20min drive via A487",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Whitesands Beach",
+        "description": "Enjoy sandwiches with a stunning view."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Surfing Lesson at Whitesands Beach with TYF Adventure",
+      "description": "Learn to surf with qualified instructors at the beautiful Whitesands Beach, known for its consistent waves.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 60,
+      "lat": 51.892,
+      "lng": -5.303,
+      "travelToNext": "15min drive via A487",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Oriel y Parc Gallery and Visitor Centre",
+        "description": "Explore local art and learn about the Pembrokeshire Coast National Park.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Beach Games at Whitesands Beach",
+        "description": "Build sandcastles, play frisbee, or simply relax on the beach.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "TYF Cliff-top Campsite",
+      "description": "Eco-friendly campsite with stunning coastal views, ideal for families who love the outdoors.",
+      "costFrom": 15,
+      "costTo": 30,
+      "lat": 51.87,
+      "lng": -5.28,
+      "travelToNext": "40min drive via A487",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Camping at Newgale Campsite",
+        "description": "A more basic campsite closer to the beach.",
+        "costFrom": 15,
+        "costTo": 25
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:30",
+      "type": "activity",
+      "title": "Boat Trip - Ramsey Island with Preseli Venture",
+      "description": "Take a boat trip around Ramsey Island to see seals, seabirds, and stunning coastal scenery.",
+      "duration": "3 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.862,
+      "lng": -5.329,
+      "travelToNext": "5min drive via unnamed road",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Trust Tudor Merchant's House (Tenby)",
+        "description": "Explore a restored 15th-century merchant's house in Tenby.",
+        "costFrom": 8,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Coastal Walk along the Pembrokeshire Coast Path",
+        "description": "Hike a section of the coast path for free, enjoying the views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "13:00",
+      "type": "food",
+      "title": "The Mill Cafe St Justinians",
+      "foodType": "lunch",
+      "description": "Small cafe near St Justinians offering classic lunches.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 51.862,
+      "lng": -5.329,
+      "travelToNext": "45min drive via A487",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic lunch at Abereiddy Blue Lagoon",
+        "description": "Bring your own food and enjoy a scenic picnic."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Visit Abereiddy Blue Lagoon",
+      "description": "Enjoy the views of the blue lagoon and walk along the cliffs.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.931,
+      "lng": -5.203,
+      "travelToNext": "1hr drive via A487",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Melin Tregwynt Woollen Mill",
+        "description": "See a traditional Welsh woollen mill in action.",
+        "costFrom": 5,
+        "costTo": 7
+      },
+      "budgetAlt": {
+        "title": "Relax at Blue Lagoon",
+        "description": "Walk around the area and enjoy the scenic views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Preseli Venture Eco Lodge",
+      "description": "Eco-friendly lodge offering comfortable accommodation and a range of activities, perfect for active families.",
+      "costFrom": 60,
+      "costTo": 120,
+      "lat": 51.902,
+      "lng": -5.075,
+      "travelToNext": "40min drive via A40",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Broadhaven Camping",
+        "description": "Campsite near the beach.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Sea Kayak Safari at Stackpole Quay with Activity Pembrokeshire",
+      "description": "Explore the stunning coastline by kayak, paddling through caves and around arches with experienced guides.",
+      "duration": "3 hours",
+      "costFrom": 55,
+      "costTo": 75,
+      "lat": 51.616,
+      "lng": -4.891,
+      "travelToNext": "5min drive via unnamed road",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Pembroke Castle Visit",
+        "description": "Explore the impressive Pembroke Castle, a Norman fortress with a rich history.",
+        "costFrom": 7,
+        "costTo": 9
+      },
+      "budgetAlt": {
+        "title": "Walk from Stackpole Quay to Barafundle Bay",
+        "description": "Enjoy a scenic coastal walk to the beautiful Barafundle Bay.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Stackpole Inn",
+      "foodType": "lunch",
+      "description": "Popular pub and restaurant serving local food.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.614,
+      "lng": -4.888,
+      "travelToNext": "10min drive via B4319",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed Lunch at Barafundle Bay",
+        "description": "Enjoy a scenic beach picnic."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Paddle Boarding at Stackpole/Barafundle with Outer Reef Surf School",
+      "description": "Learn to paddle board in the calm waters of Stackpole Quay and Barafundle Bay.",
+      "duration": "2 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.616,
+      "lng": -4.891,
+      "travelToNext": "15min drive via B4319",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Bosherston Lily Ponds Walk",
+        "description": "Explore the beautiful lily ponds and woodland trails.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Swim at Barafundle Bay",
+        "description": "Enjoy a swim at one of Pembrokeshire's most famous beaches.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Stackpole Centre (National Trust)",
+      "description": "Cottages and camping facilities near Stackpole Quay, ideal for families exploring the area.",
+      "costFrom": 80,
+      "costTo": 200,
+      "lat": 51.615,
+      "lng": -4.889,
+      "travelToNext": "30min drive via A477",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Camping at Freshwater West",
+        "description": "Campsite close to the beach.",
+        "costFrom": 15,
+        "costTo": 25
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Surfing at Freshwater West",
+      "description": "Enjoy the waves at Freshwater West, a popular surfing spot.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.658,
+      "lng": -5.048,
+      "travelToNext": "30min drive via A477",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Carew Castle and Tidal Mill",
+        "description": "Explore the historic castle and mill.",
+        "costFrom": 7,
+        "costTo": 9
+      },
+      "budgetAlt": {
+        "title": "Beach walk at Freshwater West",
+        "description": "Enjoy a long walk at one of Wales' best surf beaches.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Cafe Mor",
+      "foodType": "lunch",
+      "description": "Street food cafe at Freshwater West.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 51.658,
+      "lng": -5.048,
+      "travelToNext": "0min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic lunch at Freshwater West",
+        "description": "Enjoy a scenic beach picnic."
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 220,
+      "accommodation": 255,
+      "food": 70,
+      "transport": 50,
+      "total": 595
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 60,
+      "food": 40,
+      "transport": 50,
+      "total": 150
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Pembrokeshire weather can be unpredictable, even in summer. Be prepared for rain and wind, even if the forecast is sunny.",
+    "traffic": "Traffic can be heavy in coastal areas during peak season, especially around St Davids and Tenby. Parking at popular beaches like Whitesands and Barafundle can fill up quickly, so arrive early.",
+    "booking": "Advance booking is essential for boat trips, coasteering, kayaking, and surfing lessons, especially during school holidays. Campsites also require advance booking.",
+    "fitness": "A moderate level of fitness is required for coasteering and kayaking. Participants should be comfortable swimming in the sea."
+  }
+}

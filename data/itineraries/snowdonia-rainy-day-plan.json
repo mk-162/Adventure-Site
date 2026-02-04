@@ -1,0 +1,244 @@
+{
+  "slug": "snowdonia-rainy-day-plan",
+  "title": "Rainy Day Champions",
+  "tagline": "All-weather adventures that love the rain",
+  "region": "snowdonia",
+  "days": 2,
+  "difficulty": "easy",
+  "bestSeason": "Year-round",
+  "groupType": "families, anyone",
+  "priceFrom": 250,
+  "priceTo": 450,
+  "budgetPriceFrom": 120,
+  "budgetPriceTo": 250,
+  "highlights": [
+    "Bounce Below",
+    "Llechwedd caverns",
+    "Gorge walking",
+    "White water"
+  ],
+  "activityTypes": [
+    "zip-lining",
+    "gorge-walking",
+    "caving"
+  ],
+  "suitableFor": "Families with children aged 7+, active couples, and anyone who enjoys a mix of adventure and indoor attractions, regardless of the weather. Comfortable for those with a reasonable level of fitness.",
+  "notSuitableFor": "Those with severe mobility issues or a strong aversion to enclosed spaces may find some activities challenging. Very young children (under 7) may be restricted from some activities.",
+  "weatherDependency": "low",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Layers of clothing",
+    "Sturdy footwear",
+    "Swimsuit (for gorge walking)",
+    "Towel"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Bounce Below",
+      "description": "Jump and explore giant trampolines suspended in a disused slate mine. A unique and exhilarating experience for all ages.",
+      "duration": "1 hour",
+      "costFrom": 25,
+      "costTo": 35,
+      "lat": 52.996,
+      "lng": -3.94,
+      "travelToNext": "15min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Llechwedd Deep Mine Tour",
+        "description": "Descend deep into the Llechwedd slate mines for a fascinating historical tour.",
+        "costFrom": 20,
+        "costTo": 30
+      },
+      "budgetAlt": {
+        "title": "Llechwedd Quarry Trails Walk",
+        "description": "Explore the surface of the Llechwedd quarry with panoramic views of Blaenau Ffestiniog.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "11:00",
+      "type": "food",
+      "title": "Caffi Blaenau",
+      "foodType": "lunch",
+      "description": "A friendly cafe in Blaenau Ffestiniog serving classic Welsh dishes and light lunches.",
+      "costFrom": 10,
+      "costTo": 15,
+      "lat": 52.9942,
+      "lng": -3.9367,
+      "travelToNext": "45min drive via A470 and A5",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Ogwen",
+        "description": "Enjoy your own lunch beside the stunning Llyn Ogwen lake."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "13:00",
+      "type": "activity",
+      "title": "Zip World Fforest Coaster",
+      "description": "A gravity-driven toboggan run through the beautiful Fforest woodland. Fun for all the family.",
+      "duration": "1.5 hours",
+      "costFrom": 25,
+      "costTo": 35,
+      "lat": 53.092,
+      "lng": -3.8,
+      "travelToNext": "20min drive via A5",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Tree Top Nets at Zip World Fforest",
+        "description": "Bounce and explore the treetop nets, a covered outdoor activity.",
+        "costFrom": 30,
+        "costTo": 40
+      },
+      "budgetAlt": {
+        "title": "Swallow Falls Walk",
+        "description": "Visit the impressive Swallow Falls, a short walk from Betws-y-Coed (entrance fee applies, but worth it).",
+        "costFrom": 5,
+        "costTo": 5
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "16:00",
+      "type": "accommodation",
+      "title": "Plas y Brenin",
+      "description": "National Mountaineering Centre providing comfortable rooms and a lively atmosphere, perfect for outdoor enthusiasts.",
+      "costFrom": 80,
+      "costTo": 150,
+      "lat": 53.096,
+      "lng": -3.91,
+      "travelToNext": "30min drive via A5 and B4407",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Ben's Bunkhouse",
+        "description": "Budget-friendly bunkhouse accommodation in Nant Peris.",
+        "costFrom": 25,
+        "costTo": 40
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 5,
+      "time": "18:00",
+      "type": "food",
+      "title": "The Heights Hotel",
+      "foodType": "Dinner",
+      "description": "A local pub in Llanberis with great views and family meals",
+      "costFrom": 20,
+      "costTo": 30,
+      "lat": 53.1167,
+      "lng": -4.1242,
+      "travelToNext": null,
+      "travelMode": null,
+      "budgetAlt": {
+        "title": "Local Chip Shop",
+        "description": "Grab a takeaway and eat by the lake"
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Gorge Walking",
+      "description": "Experience the thrill of scrambling through a mountain gorge, jumping into pools, and navigating waterfalls (wetsuit provided).",
+      "duration": "3 hours",
+      "costFrom": 65,
+      "costTo": 95,
+      "lat": 52.911,
+      "lng": -3.601,
+      "travelToNext": "10min drive via A494",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National White Water Centre - Indoor Kayaking Session",
+        "description": "Practice your kayaking skills in the safe environment of the Tryweryn river.",
+        "costFrom": 40,
+        "costTo": 60
+      },
+      "budgetAlt": {
+        "title": "Llyn Tegid Walk",
+        "description": "Enjoy a scenic walk around the shores of Llyn Tegid (Bala Lake).",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Bala Spice",
+      "foodType": "lunch",
+      "description": "Popular Indian restaurant in Bala, offering a wide range of flavorful dishes.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 52.9103,
+      "lng": -3.5971,
+      "travelToNext": "1.5 hour drive via A494 and A5",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed Lunch at Bala Lake",
+        "description": "Enjoy a picnic by the shores of the largest natural lake in Wales."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "15:00",
+      "type": "activity",
+      "title": "Velocity 2 Zip Line",
+      "description": "Experience the fastest zip line in the world, flying over Penrhyn Quarry at speeds of over 100mph.",
+      "duration": "2.5 hours",
+      "costFrom": 89,
+      "costTo": 109,
+      "lat": 53.1775,
+      "lng": -4.0856,
+      "travelToNext": null,
+      "travelMode": null,
+      "wetAlt": {
+        "title": "Zip World Slate Caverns",
+        "description": "Explore the underground caverns via a series of zip lines and rope bridges. ",
+        "costFrom": 79,
+        "costTo": 99
+      },
+      "budgetAlt": {
+        "title": "National Slate Museum",
+        "description": "Explore the history of the slate industry at this fascinating museum in Llanberis (free entry, donations welcome).",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 208,
+      "accommodation": 80,
+      "food": 45,
+      "transport": 20,
+      "total": 353
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 25,
+      "food": 10,
+      "transport": 20,
+      "total": 55
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Snowdonia weather is notoriously unpredictable. Be prepared for rain, even in summer. Check the forecast before you go and pack layers.",
+    "traffic": "Traffic can be heavy, especially during peak season. Allow extra time for travel, especially around Betws-y-Coed and Llanberis. Parking at popular spots like Pen-y-Pass and Llanberis can fill up early.",
+    "booking": "Advance booking is essential for Zip World activities and highly recommended for Gorge Walking and White Water Rafting, especially during school holidays.",
+    "fitness": "This itinerary is designed to be relatively easy, but a reasonable level of fitness is required for gorge walking and walking up steep quarry paths."
+  }
+}

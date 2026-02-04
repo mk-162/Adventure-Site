@@ -1,0 +1,317 @@
+{
+  "slug": "snowdonia-zip-world-tour",
+  "title": "Zip World Grand Tour",
+  "tagline": "Every Zip World experience in one epic trip",
+  "region": "snowdonia",
+  "days": 3,
+  "difficulty": "moderate",
+  "bestSeason": "March-October",
+  "groupType": "families, friends",
+  "priceFrom": 450,
+  "priceTo": 750,
+  "budgetPriceFrom": 280,
+  "budgetPriceTo": 450,
+  "highlights": [
+    "Velocity 2",
+    "Bounce Below",
+    "Caverns",
+    "Fforest Coaster",
+    "Skyride"
+  ],
+  "activityTypes": [
+    "zip-lining"
+  ],
+  "suitableFor": "Families and adventurous friends who enjoy outdoor activities and aren't afraid of heights. Children must meet the minimum age and weight requirements for each activity.",
+  "notSuitableFor": "Individuals with severe vertigo, heart conditions, or mobility limitations. Those who prefer leisurely sightseeing or have very young children (under 3).",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Hiking boots or sturdy shoes",
+    "Layers of clothing",
+    "Sunscreen",
+    "Water bottle"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Velocity 2 Zip Line",
+      "description": "Experience the thrill of flying over Penrhyn Quarry on the world's fastest zip line. Expect stunning views and an adrenaline rush.",
+      "duration": "2.5 hours",
+      "costFrom": 89,
+      "costTo": 109,
+      "lat": 53.1775,
+      "lng": -4.0856,
+      "travelToNext": "35min drive via A5",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Zip World Caverns",
+        "description": "Explore a network of underground zip lines and rope bridges in a disused slate mine. It's sheltered from the elements.",
+        "costFrom": 59,
+        "costTo": 79
+      },
+      "budgetAlt": {
+        "title": "Llyn Ogwen Walk",
+        "description": "Enjoy a scenic walk around Llyn Ogwen lake, taking in the breathtaking mountain views. Free parking available.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Pete's Eats",
+      "foodType": "lunch",
+      "description": "A legendary cafe in Llanberis known for its hearty portions and climber-friendly atmosphere.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 53.1204,
+      "lng": -4.1287,
+      "travelToNext": "10min drive via A4086",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Padarn",
+        "description": "Enjoy a picnic lunch with views of the lake and Dolbadarn Castle."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Bounce Below",
+      "description": "Jump and play on giant trampolines suspended in a vast underground cavern. A unique and fun experience for all ages.",
+      "duration": "1 hour",
+      "costFrom": 25,
+      "costTo": 35,
+      "lat": 52.996,
+      "lng": -3.94,
+      "travelToNext": "20min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Underground Adventure",
+        "description": "Explore the mine deeper with an expert guide.",
+        "costFrom": 20,
+        "costTo": 35
+      },
+      "budgetAlt": {
+        "title": "Blaenau Ffestiniog Railway Museum",
+        "description": "Explore the history of slate mining at this local museum",
+        "costFrom": 5,
+        "costTo": 10
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Treks Bunkhouse",
+      "description": "A comfortable bunkhouse in Ffestiniog, ideal for groups and adventure enthusiasts.",
+      "costFrom": 25,
+      "costTo": 45,
+      "lat": 52.997,
+      "lng": -3.946,
+      "travelToNext": "30min drive via A470",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "The Snowdon Inn (Y Fricsan) - Camping",
+        "description": "Camping at the foot of Snowdon, offering basic facilities and stunning views.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Zip World Fforest Coaster",
+      "description": "Ride the UK's only alpine coaster, winding through the forest on a thrilling toboggan run.",
+      "duration": "1.5 hours",
+      "costFrom": 25,
+      "costTo": 35,
+      "lat": 53.092,
+      "lng": -3.8,
+      "travelToNext": "10min drive via A5",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Tree Top Adventures",
+        "description": "Get high up in the trees and tackle a series of obstacles and zip lines in a sheltered forest canopy.",
+        "costFrom": 25,
+        "costTo": 35
+      },
+      "budgetAlt": {
+        "title": "Swallow Falls Walk",
+        "description": "A scenic walk to a beautiful waterfall near Betws-y-Coed. Admission fee applies.",
+        "costFrom": 2.5,
+        "costTo": 2.5
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "11:30",
+      "type": "food",
+      "title": "Hangin' Pizzeria",
+      "foodType": "lunch",
+      "description": "Wood-fired pizzas with delicious toppings.",
+      "costFrom": 12,
+      "costTo": 25,
+      "lat": 53.0916,
+      "lng": -3.799,
+      "travelToNext": "15min drive via A470",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Gwydir Forest",
+        "description": "Find a secluded spot for a picnic surrounded by nature."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "13:30",
+      "type": "activity",
+      "title": "Gorge Walking",
+      "description": "Explore a stunning gorge by scrambling over rocks, wading through pools, and jumping into waterfalls.",
+      "duration": "3 hours",
+      "costFrom": 65,
+      "costTo": 95,
+      "lat": 52.911,
+      "lng": -3.601,
+      "travelToNext": "30min drive via A494",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National White Water Centre",
+        "description": "Watch expert kayakers and canoeists tackle the rapids.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Llyn Tegid (Bala Lake) walk",
+        "description": "Enjoy a relaxing walk around the lake. The largest natural lake in Wales.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "Bala Backpackers",
+      "description": "Budget-friendly hostel in Bala, with a sociable atmosphere and shared facilities.",
+      "costFrom": 20,
+      "costTo": 35,
+      "lat": 52.913,
+      "lng": -3.598,
+      "travelToNext": "45min drive via A494",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Bala Backpackers - Dorm Room",
+        "description": "Save money by booking a bed in a shared dormitory.",
+        "costFrom": 20,
+        "costTo": 25
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Mountain Biking - MinorTaur",
+      "description": "Ride the family-friendly MinorTaur trail at Coed y Brenin Forest Park, suitable for all ages and abilities.",
+      "duration": "2 hours",
+      "costFrom": 2,
+      "costTo": 7,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "10min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Coed y Brenin Visitor Centre",
+        "description": "Explore the visitor center, learn about the forest, and enjoy a coffee in the cafe.",
+        "costFrom": 5,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Walking trails at Coed y Brenin",
+        "description": "Explore the marked trails at Coed y Brenin",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "11:30",
+      "type": "food",
+      "title": "Coed y Brenin Cafe",
+      "foodType": "lunch",
+      "description": "A cafe located at Coed y Brenin Forest Park visitor center.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "2h drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at a scenic spot",
+        "description": "Enjoy a picnic lunch with views of the lake and mountains."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "13:00",
+      "type": "activity",
+      "title": "Downhill MTB - Antur Stiniog",
+      "description": "Take the uplift and blast down one of Antur Stiniog's various downhill MTB trails. Something for all abilities.",
+      "duration": "Full day",
+      "costFrom": 35,
+      "costTo": 45,
+      "lat": 52.994,
+      "lng": -3.938,
+      "travelToNext": "END",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Slate Caverns Exploration",
+        "description": "Visit the Llechwedd Deep Mine Tour, an immersive journey into the history of slate mining.",
+        "costFrom": 20,
+        "costTo": 35
+      },
+      "budgetAlt": {
+        "title": "Explore Blaenau Ffestiniog",
+        "description": "Take a stroll around the town and visit the local shops and cafes.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 335,
+      "accommodation": 70,
+      "food": 72,
+      "transport": 60,
+      "total": 537
+    },
+    "budget": {
+      "activities": 44,
+      "accommodation": 40,
+      "food": 30,
+      "transport": 60,
+      "total": 174
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Snowdonia weather can be unpredictable. Be prepared for rain, wind, and sunshine, even in summer. Check the forecast before you go and pack accordingly.",
+    "traffic": "Traffic can be heavy, especially during peak season (summer holidays and weekends). Allow extra time for travel, especially around popular destinations like Llanberis and Betws-y-Coed. Parking can be limited, so arrive early or use park-and-ride facilities where available.",
+    "booking": "Advance booking is essential for Zip World activities, especially during peak season. Accommodation should also be booked well in advance to avoid disappointment. Gorge Walking requires booking through an operator.",
+    "fitness": "A moderate level of fitness is required for this trip. Some activities involve walking, climbing, and scrambling. Be sure to check the difficulty rating and suitability of each activity before booking."
+  }
+}

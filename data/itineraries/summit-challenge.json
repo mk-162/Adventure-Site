@@ -1,0 +1,240 @@
+{
+  "slug": "summit-challenge",
+  "title": "Summit Challenge",
+  "tagline": "Bag the biggest peaks in Eryri",
+  "region": "snowdonia",
+  "days": 3,
+  "difficulty": "difficult",
+  "bestSeason": "May-September",
+  "groupType": "experienced hikers",
+  "priceFrom": 450,
+  "priceTo": 850,
+  "budgetPriceFrom": 250,
+  "budgetPriceTo": 450,
+  "highlights": [
+    "Snowdon via Crib Goch",
+    "Tryfan",
+    "Glyderau"
+  ],
+  "activityTypes": [
+    "hiking",
+    "climbing"
+  ],
+  "suitableFor": "Experienced hillwalkers and scramblers with a good head for heights and excellent fitness levels. Those comfortable with exposure and challenging terrain.",
+  "notSuitableFor": "Beginners, those with a fear of heights, or anyone with pre-existing injuries or medical conditions that could be aggravated by strenuous activity. Children under 16 should not attempt this trip.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Hiking boots with good ankle support",
+    "Waterproof jacket and trousers",
+    "Layers of clothing (fleece, base layers)",
+    "Hiking backpack (20-30L)",
+    "Navigation tools (map, compass, GPS)",
+    "Headtorch",
+    "First-aid kit",
+    "Plenty of water and high-energy snacks",
+    "Sunscreen and hat",
+    "Gloves"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "08:00",
+      "type": "activity",
+      "title": "Crib Goch Guided Walk",
+      "description": "A challenging and exhilarating scramble to the summit of Snowdon via the iconic Crib Goch arete. Expect exposed ridges and stunning views.",
+      "duration": "6-8 hours",
+      "costFrom": 55,
+      "costTo": 75,
+      "lat": 53.08,
+      "lng": -4.02,
+      "travelToNext": "5 minute drive to Pen-y-Pass cafe",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Llanberis Path Guided Walk",
+        "description": "Hike to the summit of Snowdon via the Llanberis path, a less exposed but still rewarding route.",
+        "costFrom": 45,
+        "costTo": 65
+      },
+      "budgetAlt": {
+        "title": "Llanberis Path Self-Guided Hike",
+        "description": "Hike the Llanberis Path at your own pace, enjoying the views and saving on guide fees.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "16:00",
+      "type": "food",
+      "title": "Pen-y-Pass Cafe",
+      "foodType": "lunch",
+      "description": "A popular cafe at the foot of Snowdon, serving hot drinks, sandwiches, and cakes.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 53.08,
+      "lng": -4.02,
+      "travelToNext": "25min drive to Llanberis",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Llydaw",
+        "description": "Enjoy your packed lunch with stunning views of Llyn Llydaw and Snowdon's peaks."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "YHA Snowdon Llanberis",
+      "description": "A comfortable and well-equipped hostel in the heart of Llanberis, ideal for hikers.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 53.116,
+      "lng": -4.126,
+      "travelToNext": "25min drive to Capel Curig",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "The Snowdon Inn (Y Fricsan) Campsite",
+        "description": "Pitch your tent at this campsite in Llanberis for a budget-friendly option.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Tryfan North Ridge",
+      "description": "A classic Grade 1 scramble up the iconic Tryfan, requiring good scrambling skills and a head for heights.",
+      "duration": "4-6 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.141,
+      "lng": -3.967,
+      "travelToNext": "5 minute drive to Ogwen Cottage",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Rock Climbing Taster",
+        "description": "Learn the basics of rock climbing at Plas y Brenin in Capel Curig, a perfect wet weather activity.",
+        "costFrom": 150,
+        "costTo": 300
+      },
+      "budgetAlt": {
+        "title": "Circular walk around Llyn Ogwen",
+        "description": "Enjoy a scenic walk around Llyn Ogwen, taking in the views of Tryfan and the Glyderau.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "15:00",
+      "type": "food",
+      "title": "Ogwen Snack Bar",
+      "foodType": "lunch",
+      "description": "A small cafe near Llyn Ogwen offering hot and cold snacks, drinks, and ice cream.",
+      "costFrom": 5,
+      "costTo": 15,
+      "lat": 53.125,
+      "lng": -3.988,
+      "travelToNext": "20min drive to Arete Outdoor Centre",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch by Llyn Ogwen",
+        "description": "Find a scenic spot by the lake to enjoy your pre-packed sandwiches and snacks."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "16:00",
+      "type": "accommodation",
+      "title": "Arete Outdoor Centre",
+      "description": "A well-equipped centre in Llanrug, with easy access to the mountains and stunning views.",
+      "costFrom": 60,
+      "costTo": 100,
+      "lat": 53.157,
+      "lng": -4.183,
+      "travelToNext": "20min drive to Zip World Penrhyn Quarry",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Platts Farm Campsite",
+        "description": "A campsite near Llanfairfechan, offering basic facilities and stunning views of the coast.",
+        "costFrom": 15,
+        "costTo": 25
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Glyderau Traverse (Glyder Fawr and Glyder Fach)",
+      "description": "A challenging traverse of the Glyderau range, including the iconic Cantilever Stone and Castell y Gwynt.",
+      "duration": "5-7 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.1,
+      "lng": -4.0,
+      "travelToNext": "5 minutes drive to Ogwen Valley",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Underground Adventure",
+        "description": "Explore the depths of a slate mine at Zip World Llechwedd, a unique and adventurous experience.",
+        "costFrom": 20,
+        "costTo": 35
+      },
+      "budgetAlt": {
+        "title": "Devil's Kitchen Walk",
+        "description": "Take the path up to the Devil's Kitchen (Twll Du), a steep and rocky climb offering panoramic views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "16:00",
+      "type": "food",
+      "title": "Pete's Eats",
+      "foodType": "lunch",
+      "description": "A legendary cafe in Llanberis, known for its hearty portions and climber-friendly atmosphere.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 53.118,
+      "lng": -4.13,
+      "travelToNext": "Departure",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Castell y Gwynt",
+        "description": "Savour your lunch amidst the unique rock formations and breathtaking scenery atop Glyder Fach."
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 130,
+      "accommodation": 155,
+      "food": 75,
+      "transport": 90,
+      "total": 450
+    },
+    "budget": {
+      "activities": 20,
+      "accommodation": 55,
+      "food": 35,
+      "transport": 60,
+      "total": 170
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Snowdonia weather can be unpredictable. Be prepared for all conditions, even in summer. Check the forecast before you go and pack accordingly. Mountain weather can change rapidly, so be prepared to adapt your plans if necessary.",
+    "traffic": "Traffic can be heavy, especially during peak season (summer weekends and bank holidays). Parking at Pen-y-Pass and other popular trailheads fills up early, so arrive early or consider using the Snowdon Sherpa bus service. Road closures are common due to accidents.",
+    "booking": "Guided walks and accommodation should be booked in advance, especially during peak season. Some activities, like Zip World, also require advance booking.",
+    "fitness": "This is a physically demanding trip requiring a high level of fitness and experience in mountain environments. Be prepared for long days of hiking and scrambling over challenging terrain."
+  }
+}

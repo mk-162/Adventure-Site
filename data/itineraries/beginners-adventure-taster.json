@@ -1,0 +1,197 @@
+{
+  "slug": "beginners-adventure-taster",
+  "title": "Beginner's Adventure Taster",
+  "tagline": "Your first taste of Welsh adventure",
+  "region": "snowdonia",
+  "days": 2,
+  "difficulty": "easy",
+  "bestSeason": "May-September",
+  "groupType": "beginners, couples",
+  "priceFrom": 280,
+  "priceTo": 450,
+  "budgetPriceFrom": 150,
+  "budgetPriceTo": 250,
+  "highlights": [
+    "Gentle hike",
+    "Fforest Coaster",
+    "Gorge walking intro"
+  ],
+  "activityTypes": [
+    "hiking",
+    "zip-lining",
+    "gorge-walking"
+  ],
+  "suitableFor": "Active beginners and couples looking for a mix of gentle adventure and scenic beauty. Those with a reasonable level of fitness who enjoy being outdoors.",
+  "notSuitableFor": "Those seeking extreme adrenaline rushes, or those with limited mobility. This trip is not ideal for families with very young children.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Hiking boots",
+    "Layers of clothing",
+    "Sunscreen",
+    "Water bottle"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Llanberis Path Gentle Hike",
+      "description": "Enjoy a relaxed walk along the lower sections of the Llanberis Path, offering stunning views of Snowdon and Llyn Peris. This avoids the steep sections and crowds higher up.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.119,
+      "lng": -4.131,
+      "travelToNext": "15 min drive via A4086",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Slate Museum",
+        "description": "Explore the history of the Welsh slate industry in this fascinating indoor museum, located near Llanberis.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Picnic by Llyn Peris",
+        "description": "Enjoy the views of the lake from the shores.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Pete's Eats",
+      "foodType": "lunch",
+      "description": "A legendary cafe in Llanberis, famous for its hearty portions and climber-friendly atmosphere.",
+      "costFrom": 10,
+      "costTo": 15,
+      "lat": 53.1211,
+      "lng": -4.1272,
+      "travelToNext": "45 min drive via A4086 and A5",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Ogwen",
+        "description": "Enjoy your own lunch with a view."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Zip World Fforest Coaster",
+      "description": "Experience a thrilling toboggan ride through the forest at Zip World Fforest. Control your own speed as you navigate the twists and turns.",
+      "duration": "1.5 hours",
+      "costFrom": 25,
+      "costTo": 35,
+      "lat": 53.092,
+      "lng": -3.8,
+      "travelToNext": "20 min drive via A5 and A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Tree Top Nets",
+        "description": "Bounce around in giant nets suspended high in the trees at Zip World Fforest.",
+        "costFrom": 30,
+        "costTo": 40
+      },
+      "budgetAlt": {
+        "title": "Walking trails in Gwydir Forest",
+        "description": "Explore the scenic walking trails around Betws-y-Coed.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Plas y Brenin",
+      "description": "A well-regarded activity centre and hotel near Capel Curig, offering comfortable rooms and a relaxed atmosphere. Great for outdoor enthusiasts.",
+      "costFrom": 80,
+      "costTo": 150,
+      "lat": 53.096,
+      "lng": -3.91,
+      "travelToNext": "45 min drive via A5",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "YHA Snowdon Pen-y-Pass",
+        "description": "A budget-friendly hostel in a stunning location, perfect for hikers and outdoor adventurers.",
+        "costFrom": 25,
+        "costTo": 80
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Gorge Walking Intro",
+      "description": "Experience the thrill of gorge walking with Adventure Britain near Bala. Scramble up waterfalls, swim in plunge pools, and enjoy the natural beauty of the Welsh countryside.",
+      "duration": "3 hours",
+      "costFrom": 65,
+      "costTo": 95,
+      "lat": 52.911,
+      "lng": -3.601,
+      "travelToNext": "15 min drive via A494",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Bounce Below",
+        "description": "Trampoline in a disused mine. An interesting and unique adventure.",
+        "costFrom": 25,
+        "costTo": 35
+      },
+      "budgetAlt": {
+        "title": "Walk around Lake Bala",
+        "description": "Enjoy the view while walking around the lake",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Riverside Cafe Bala",
+      "foodType": "lunch",
+      "description": "Cosy cafe beside the River Dee",
+      "costFrom": 8,
+      "costTo": 12,
+      "lat": 52.91,
+      "lng": -3.661,
+      "travelToNext": "End Trip",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed Lunch",
+        "description": "Enjoy a cheap lunch by the river"
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 90,
+      "accommodation": 80,
+      "food": 40,
+      "transport": 70,
+      "total": 280
+    },
+    "budget": {
+      "activities": 25,
+      "accommodation": 25,
+      "food": 20,
+      "transport": 80,
+      "total": 150
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Snowdonia weather can be unpredictable, even in summer. Be prepared for rain, wind, and sunshine, often all in the same day.",
+    "traffic": "Traffic can be heavy during peak season, especially on the A5 and A4086. Allow extra time for travel, particularly on weekends and bank holidays. Parking in popular areas like Llanberis and Pen-y-Pass can be challenging; arrive early or use park-and-ride services.",
+    "booking": "Advance booking is essential for Zip World activities, especially during school holidays. Gorge walking tours also require pre-booking.",
+    "fitness": "This itinerary is designed for beginners but still requires a reasonable level of fitness. The Llanberis Path walk is gentle, but some walking on uneven terrain is involved. Gorge walking requires some scrambling and swimming."
+  }
+}

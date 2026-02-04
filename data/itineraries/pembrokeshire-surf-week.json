@@ -1,0 +1,506 @@
+{
+  "slug": "pembrokeshire-surf-week",
+  "title": "Pembrokeshire Surf & Sea Week",
+  "tagline": "Learn to surf on Wales' best waves",
+  "region": "pembrokeshire",
+  "days": 5,
+  "difficulty": "moderate",
+  "bestSeason": "May-October",
+  "groupType": "surfers, beginners",
+  "priceFrom": 750,
+  "priceTo": 1500,
+  "budgetPriceFrom": 400,
+  "budgetPriceTo": 800,
+  "highlights": [
+    "Whitesands surfing",
+    "Newgale beach",
+    "SUP at Barafundle"
+  ],
+  "activityTypes": [
+    "surfing",
+    "kayaking",
+    "coasteering"
+  ],
+  "suitableFor": "Beginner to intermediate surfers and outdoor enthusiasts comfortable with moderate physical activity. Ideal for those looking to learn new skills and explore the Pembrokeshire coast.",
+  "notSuitableFor": "Those with limited mobility, a strong aversion to cold water, or who prefer entirely sedentary vacations.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Wetsuit (or hire option)",
+    "Swimsuit",
+    "Towel",
+    "Sunscreen",
+    "Waterproof jacket",
+    "Sturdy walking shoes",
+    "Reusable water bottle",
+    "Snacks"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Surfing Lesson at Whitesands Beach",
+      "description": "Start your surfing journey with a lesson at Whitesands, known for its consistent waves. Learn the basics from experienced instructors.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 60,
+      "lat": 51.892,
+      "lng": -5.303,
+      "travelToNext": "10min drive via B4583",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit St Davids Cathedral",
+        "description": "Explore the historic St Davids Cathedral, a significant religious site with stunning architecture and a rich history.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "DIY Surf Session",
+        "description": "Rent a surfboard and practice on your own. Only recommended for experienced surfers who know Whitesands well.",
+        "costFrom": 20,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Whitesands Beach Cafe",
+      "foodType": "lunch",
+      "description": "Enjoy a casual lunch with stunning views of Whitesands Bay. Offers sandwiches, burgers, and hot drinks.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 51.892,
+      "lng": -5.303,
+      "travelToNext": "20min drive via A487",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed Lunch at Porthgain Harbour",
+        "description": "Enjoy your own packed lunch with views of the picturesque Porthgain Harbour."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Ramsey Island Boat Trip",
+      "description": "Take a boat trip to Ramsey Island and spot seals, seabirds, and other wildlife. Learn about the island's history and ecology.",
+      "duration": "2.5 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.862,
+      "lng": -5.329,
+      "travelToNext": "5min drive to St Davids YHA",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Oriel y Parc Gallery",
+        "description": "Visit the Oriel y Parc Gallery and Information Centre in St Davids to learn about the area's art and landscape.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Coastal Walk to St Justinian",
+        "description": "Walk along the coastal path from St Davids to St Justinian, enjoying scenic views of Ramsey Island and the coastline.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "St Davids YHA",
+      "description": "Budget-friendly hostel in the heart of St Davids. Offers private rooms and dorms, a communal kitchen, and a lounge.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "5min drive to TYF Adventure",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "TYF Cliff-top Campsite",
+        "description": "Camping option near Porthclais Harbour with stunning views. Basic facilities available.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coasteering Classic with TYF Adventure",
+      "description": "Experience the thrill of coasteering along the St Davids coastline. Includes swimming, climbing, and jumping into the sea.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 60,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "5min drive via A487",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Explore St Davids Bishop's Palace",
+        "description": "Discover the ruins of St Davids Bishop's Palace, a historic site with impressive architecture and a fascinating past.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Explore Porthclais Harbour",
+        "description": "Walk around the picturesque Porthclais Harbour, enjoying the scenery and watching the boats.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Refuel Cafe Bar",
+      "foodType": "lunch",
+      "description": "Enjoy a casual lunch in the center of St Davids, known for its burgers, sandwiches, and local ales.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "30min drive via A487",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed Lunch at Abereiddy Blue Lagoon",
+        "description": "Bring your own lunch and enjoy it with views of the stunning Blue Lagoon."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Visit Abereiddy Blue Lagoon",
+      "description": "Witness the stunning beauty of the Blue Lagoon, created from an old slate quarry. Optional wild swimming for the brave.",
+      "duration": "1.5 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.931,
+      "lng": -5.203,
+      "travelToNext": "30min drive via A487",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Dive into a Book",
+        "description": "Spend an afternoon in the YHA lounge reading books.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Explore Abereiddy Beach",
+        "description": "Enjoy a walk along Abereiddy Beach.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "St Davids YHA",
+      "description": "Return to the St Davids YHA for another night.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "45 min drive to Stackpole",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "TYF Cliff-top Campsite",
+        "description": "Camping option near Porthclais Harbour with stunning views. Basic facilities available.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Sea Kayak Safari from Stackpole Quay",
+      "description": "Explore the coastline around Stackpole Quay by sea kayak. Discover hidden coves and sea caves.",
+      "duration": "3 hours",
+      "costFrom": 55,
+      "costTo": 75,
+      "lat": 51.616,
+      "lng": -4.891,
+      "travelToNext": "5min drive via unclassified roads",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Explore the Bosherston Lily Ponds",
+        "description": "Enjoy a scenic walk around the Bosherston Lily Ponds, a beautiful National Trust site.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walk to Barafundle Bay",
+        "description": "Enjoy a scenic walk from Stackpole Quay to Barafundle Bay, one of Wales' most beautiful beaches.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Stackpole Inn",
+      "foodType": "lunch",
+      "description": "Enjoy a pub lunch at the Stackpole Inn, known for its local ales and seasonal dishes.",
+      "costFrom": 20,
+      "costTo": 30,
+      "lat": 51.616,
+      "lng": -4.891,
+      "travelToNext": "Walk",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Picnic at Barafundle Bay",
+        "description": "Pack a lunch and enjoy a picnic on the beach at Barafundle Bay."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Paddle Boarding at Barafundle Bay",
+      "description": "Try paddle boarding on the calm waters of Barafundle Bay, a perfect spot for beginners.",
+      "duration": "2 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.625,
+      "lng": -4.901,
+      "travelToNext": "5min drive to Stackpole Centre",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit Pembroke Castle",
+        "description": "Explore the impressive Pembroke Castle, one of the largest and best-preserved castles in Wales.",
+        "costFrom": 8,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Swim at Barafundle Bay",
+        "description": "Enjoy a swim in the clear waters of Barafundle Bay.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 4,
+      "time": "16:30",
+      "type": "accommodation",
+      "title": "Stackpole Centre (National Trust)",
+      "description": "Stay in a cottage or camp at the Stackpole Centre, a great base for exploring the area.",
+      "costFrom": 80,
+      "costTo": 200,
+      "lat": 51.616,
+      "lng": -4.891,
+      "travelToNext": "40 min drive to Newgale",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Camping at Stackpole Centre",
+        "description": "Pitch your tent at the campsite.",
+        "costFrom": 20,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Surfing at Newgale Beach",
+      "description": "Spend the morning surfing at Newgale Beach, a long sandy beach popular with surfers and kitesurfers.",
+      "duration": "3 hours",
+      "costFrom": 55,
+      "costTo": 75,
+      "lat": 51.858,
+      "lng": -5.12,
+      "travelToNext": "Walk",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Visit Solva",
+        "description": "Explore the picturesque village of Solva and its harbour.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walk along Newgale Beach",
+        "description": "Enjoy a long walk along Newgale Beach, taking in the sea breeze and stunning scenery.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "The Duke of Edinburgh Inn",
+      "foodType": "lunch",
+      "description": "Enjoy a pub lunch with views of Newgale Beach.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.858,
+      "lng": -5.12,
+      "travelToNext": "10 min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed Lunch on Newgale Beach",
+        "description": "Enjoy a packed lunch with amazing views."
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Coastal Walk to Druidston Haven",
+      "description": "Walk along the Pembrokeshire Coast Path to Druidston Haven, a secluded beach known for its natural beauty.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.858,
+      "lng": -5.12,
+      "travelToNext": "5 min drive to Newgale campsite",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Indoor rock climbing",
+        "description": "Head to an indoor rock climbing venue for an energetic afternoon",
+        "costFrom": 25,
+        "costTo": 35
+      },
+      "budgetAlt": {
+        "title": "Explore Newgale Village",
+        "description": "Wander around the village.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "Newgale Campsite",
+      "description": "Enjoy a night camping at Newgale Campsite.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.858,
+      "lng": -5.12,
+      "travelToNext": "40 min drive to Tenby",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Cheaper camping",
+        "description": "Wild camping (only for those experienced)",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 5,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coasteering in Tenby",
+      "description": "Tenby Adventure offers a beginner-friendly coasteering session, exploring the coastline around Tenby.",
+      "duration": "2.5 hours",
+      "costFrom": 50,
+      "costTo": 70,
+      "lat": 51.672,
+      "lng": -4.701,
+      "travelToNext": "5 min walk",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Tenby Museum and Art Gallery",
+        "description": "Explore the history and art of Tenby at the Tenby Museum and Art Gallery.",
+        "costFrom": 5,
+        "costTo": 7
+      },
+      "budgetAlt": {
+        "title": "Explore Tenby's Beaches",
+        "description": "Walk along Tenby's beaches and enjoy the scenery.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 5,
+      "orderIndex": 2,
+      "time": "11:30",
+      "type": "food",
+      "title": "Hope & Anchor",
+      "foodType": "lunch",
+      "description": "Enjoy lunch at Hope & Anchor, a popular pub in Tenby.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.672,
+      "lng": -4.701,
+      "travelToNext": "5min walk",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Picnic in Tenby",
+        "description": "Enjoy a final picnic."
+      }
+    },
+    {
+      "day": 5,
+      "orderIndex": 3,
+      "time": "13:30",
+      "type": "activity",
+      "title": "Explore Tenby Town",
+      "description": "Wander around Tenby, taking in the shops and harbour views before heading home.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.672,
+      "lng": -4.701,
+      "travelToNext": "N/A",
+      "travelMode": "N/A",
+      "wetAlt": {
+        "title": "Shopping",
+        "description": "Explore Tenby's range of independent shops.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Souvenir shopping",
+        "description": "Pick up a momento",
+        "costFrom": 5,
+        "costTo": 10
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 335,
+      "accommodation": 250,
+      "food": 150,
+      "transport": 150,
+      "total": 885
+    },
+    "budget": {
+      "activities": 100,
+      "accommodation": 75,
+      "food": 75,
+      "transport": 100,
+      "total": 350
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Pembrokeshire weather is changeable. Pack for all conditions, even in summer. Sea temperatures are cold year-round.",
+    "traffic": "Traffic can be heavy in peak season, especially around St Davids and Tenby. Parking can be challenging, especially at popular beaches. Arrive early.",
+    "booking": "Advance booking is essential for activities, especially during school holidays. Accommodation should also be booked well in advance.",
+    "fitness": "A moderate level of fitness is required for surfing, coasteering, and kayaking. Coastal walks can be challenging in places."
+  }
+}

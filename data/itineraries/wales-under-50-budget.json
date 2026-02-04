@@ -1,0 +1,291 @@
+{
+  "slug": "wales-under-50-budget",
+  "title": "Wales Adventure Under £50",
+  "tagline": "Proof that the best things in Wales are free (or nearly)",
+  "region": "multi",
+  "days": 3,
+  "difficulty": "moderate",
+  "bestSeason": "May-September",
+  "groupType": "budget, solo, students",
+  "priceFrom": 45,
+  "priceTo": 120,
+  "budgetPriceFrom": 30,
+  "budgetPriceTo": 60,
+  "highlights": [
+    "Free hiking",
+    "Wild camping",
+    "Free MTB trails",
+    "Wild swimming"
+  ],
+  "activityTypes": [
+    "hiking",
+    "mountain-biking",
+    "wild-swimming"
+  ],
+  "suitableFor": "Budget-conscious adventurers, solo travellers, students, and small groups who enjoy hiking, biking and the outdoors. Confident navigating using maps and public transport is a plus.",
+  "notSuitableFor": "Those seeking luxury accommodation, fully guided experiences, or those with limited mobility.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket and trousers",
+    "Hiking boots",
+    "Map and compass/GPS",
+    "Reusable water bottle",
+    "First-aid kit"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Mountain Biking - MinorTaur",
+      "description": "Explore the Coed y Brenin Forest Park on the MinorTaur trail, a fantastic free mountain biking route suitable for families and beginners.",
+      "duration": "2 hours",
+      "costFrom": 2,
+      "costTo": 7,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "5 min drive to cafe",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Coed y Brenin Visitor Centre",
+        "description": "Browse the exhibits at the visitor centre and grab a coffee while waiting out the rain.",
+        "costFrom": 5,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Walking Trails, Coed y Brenin",
+        "description": "Explore the forest on foot using the numerous walking trails (free).",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Cafe Coed y Brenin",
+      "foodType": "lunch",
+      "description": "A cafe at the visitor centre with sandwiches, cakes, and hot drinks.",
+      "costFrom": 8,
+      "costTo": 15,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "1 hour drive to wild swimming location",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at scenic spot",
+        "description": "Picnic by the River Mawddach near Ganllwyd."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Wild Swimming at Llyn Ogwen",
+      "description": "Take a refreshing dip in the beautiful Llyn Ogwen, surrounded by dramatic mountain scenery. Be mindful of water temperature and safety.",
+      "duration": "1 hour",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.1239,
+      "lng": -4.0012,
+      "travelToNext": "25min drive via A5",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Slate Museum, Llanberis",
+        "description": "Explore the history of the Welsh slate industry at this fascinating museum (free entry).",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walk around Llyn Ogwen",
+        "description": "Enjoy a scenic walk around the lake instead of swimming.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Wild Camping near Llyn Ogwen",
+      "description": "Find a suitable wild camping spot (check local regulations) near Llyn Ogwen for a truly immersive experience. Remember to leave no trace!",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.1239,
+      "lng": -4.0012,
+      "travelToNext": "30 min drive to Llanberis",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "The Snowdon Inn (Y Fricsan)",
+        "description": "Budget-friendly campsite in Llanberis with excellent facilities and a sociable atmosphere.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Snowdon Summit Hike (Llanberis Path)",
+      "description": "Hike to the summit of Snowdon via the Llanberis Path, the longest and most gradual route. Allow plenty of time and be prepared for all weather conditions.",
+      "duration": "6 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.119,
+      "lng": -4.131,
+      "travelToNext": "30min drive to food",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Electric Mountain Visitor Centre",
+        "description": "Take a tour inside Dinorwig Power Station, built inside a mountain. (Small fee applies).",
+        "costFrom": 10,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Lower Snowdon Walks",
+        "description": "Enjoy a shorter walk around Llyn Padarn in Llanberis if you don't want to summit Snowdon.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "16:00",
+      "type": "food",
+      "title": "Pete's Eats",
+      "foodType": "Late Lunch/Early Dinner",
+      "description": "A legendary cafe in Llanberis serving hearty portions of traditional Welsh food.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 53.1202,
+      "lng": -4.1275,
+      "travelToNext": "1hr 45 drive to Pembrokeshire",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Padarn",
+        "description": "Enjoy your own sandwiches and snacks with a view of the lake."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "TYF Cliff-top Campsite",
+      "description": "Spectacular cliff-top campsite near St Davids, offering stunning coastal views.",
+      "costFrom": 15,
+      "costTo": 30,
+      "lat": 51.8824,
+      "lng": -5.2948,
+      "travelToNext": "5 min drive to beach for wild camp, or back to civilization",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Wild camping near St Davids",
+        "description": "Find a discreet wild camping spot along the Pembrokeshire Coast Path. Be responsible and leave no trace.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coasteering at Abereiddy Blue Lagoon (DIY)",
+      "description": "Experience the thrill of coasteering by exploring the Abereiddy Blue Lagoon, swimming in the lagoon and if feeling brave cliff jumping at your own risk. Check tide times and weather conditions.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.931,
+      "lng": -5.203,
+      "travelToNext": "5 min drive to beach",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "St Davids Cathedral",
+        "description": "Explore the magnificent St Davids Cathedral, a historic religious site with stunning architecture (free entry, donations welcome).",
+        "costFrom": 0,
+        "costTo": 5
+      },
+      "budgetAlt": {
+        "title": "Walk the Pembrokeshire Coast Path",
+        "description": "Enjoy a scenic walk along the Pembrokeshire Coast Path near Abereiddy.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Sloop Inn",
+      "foodType": "Lunch",
+      "description": "A traditional pub in Porthgain serving hearty meals and local ales.",
+      "costFrom": 12,
+      "costTo": 22,
+      "lat": 51.9291,
+      "lng": -5.2209,
+      "travelToNext": "30min drive to Whitesands",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic at Porthgain Harbour",
+        "description": "Enjoy your own lunch with views of the picturesque harbor."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Surfing at Whitesands Beach (DIY)",
+      "description": "Try surfing at Whitesands Beach, one of the best surfing beaches in Wales. Hire a board and wetsuit locally, or bring your own.",
+      "duration": "2 hours",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.892,
+      "lng": -5.303,
+      "travelToNext": null,
+      "travelMode": null,
+      "wetAlt": {
+        "title": "Oriel y Parc Landscape Gallery and Visitor Centre",
+        "description": "Discover art inspired by the Pembrokeshire landscape at this gallery (free entry).",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Swimming at Whitesands Beach",
+        "description": "Enjoy a swim or paddle in the sea at Whitesands Beach (free).",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 17,
+      "accommodation": 15,
+      "food": 30,
+      "transport": 40,
+      "total": 102
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 0,
+      "food": 10,
+      "transport": 20,
+      "total": 30
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Welsh weather can be unpredictable, even in summer. Pack layers and be prepared for rain. Coastal areas can be windy.",
+    "traffic": "Traffic can be heavy in Snowdonia, especially during peak season. Arrive early for popular spots. Parking charges apply in many locations.",
+    "booking": "Campsites, hostels, and activities should be booked in advance, especially during school holidays. Wild camping is permitted in some areas, but check local regulations.",
+    "fitness": "This trip requires a moderate level of fitness due to hiking and biking. Be prepared for steep inclines and uneven terrain."
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "slug": "snowdonia-dog-friendly",
+  "title": "Dog-Friendly Snowdonia",
+  "tagline": "Adventures your dog will love too",
+  "region": "snowdonia",
+  "days": 2,
+  "difficulty": "easy",
+  "bestSeason": "March-October",
+  "groupType": "dog owners",
+  "priceFrom": 250,
+  "priceTo": 500,
+  "budgetPriceFrom": 120,
+  "budgetPriceTo": 250,
+  "highlights": [
+    "Dog-friendly trails",
+    "Beach walks",
+    "Pet-friendly pubs"
+  ],
+  "activityTypes": [
+    "hiking",
+    "wild-swimming"
+  ],
+  "suitableFor": "Dog owners who enjoy easy hikes and scenic walks, with well-behaved dogs comfortable on leads and around other people and animals. Anyone who wants a relaxed pace and dog-friendly accommodations.",
+  "notSuitableFor": "People looking for extreme adventures or challenging hikes. This itinerary prioritizes dog-friendly activities, so those without dogs or those who prefer activities unsuitable for dogs should skip this.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Hiking boots",
+    "Dog lead and poop bags",
+    "Towel for dog",
+    "Snacks for humans and dogs"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Llyn Padarn Circular Walk",
+      "description": "A beautiful, easy walk around Llyn Padarn lake, offering stunning views of Snowdon and plenty of opportunities for your dog to enjoy the scenery. The path is mostly flat and well-maintained.",
+      "duration": "2.5 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.119,
+      "lng": -4.131,
+      "travelToNext": "15min drive via A4086",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Slate Museum",
+        "description": "Explore the history of the Welsh slate industry at this fascinating museum. Dogs are welcome in the outdoor areas and some indoor spaces.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Continue the walk further up the valley",
+        "description": "Extend the walk and explore the area further.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Pete's Eats",
+      "foodType": "lunch",
+      "description": "A legendary mountaineering cafe in Llanberis, known for its hearty portions and friendly atmosphere. Dogs are welcome in the outside seating area.",
+      "costFrom": 10,
+      "costTo": 15,
+      "lat": 53.1248,
+      "lng": -4.1286,
+      "travelToNext": "5 min drive via A4086",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Peris viewpoint",
+        "description": "Enjoy your own food with views of the lake and Dinorwic Quarry."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "13:30",
+      "type": "activity",
+      "title": "Dog-Friendly Beach Walk at Dinas Dinlle",
+      "description": "A wide, sandy beach where dogs are welcome year-round. Enjoy a leisurely stroll along the coast, letting your dog run and play in the sand and sea.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.1403,
+      "lng": -4.3321,
+      "travelToNext": "25min drive via A4086 and A487",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "GreenWood Family Park",
+        "description": "While not solely indoors, GreenWood offers covered play areas and activities suitable for families with dogs, making it a decent option for a rainy afternoon. Dog-friendly zones apply.",
+        "costFrom": 20,
+        "costTo": 25
+      },
+      "budgetAlt": {
+        "title": "Walk along the Wales Coast Path",
+        "description": "Explore the coastal path, enjoying clifftop views (ensure your dog is on a lead).",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "YHA Snowdon Llanberis",
+      "description": "A budget-friendly hostel in a great location, with dog-friendly rooms available. Ideal for hikers and outdoor enthusiasts.",
+      "costFrom": 30,
+      "costTo": 70,
+      "lat": 53.1247,
+      "lng": -4.1263,
+      "travelToNext": "25 min drive to start of next day's walk",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "The Snowdon Inn (Y Fricsan) Campsite",
+        "description": "A campsite close to Llanberis with basic amenities.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 5,
+      "time": "19:00",
+      "type": "food",
+      "title": "The Heights",
+      "foodType": "dinner",
+      "description": "A dog-friendly pub in Llanberis with great views of the lake and Snowdonia mountains. A local favourite known for good quality food and local ales.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 53.1251,
+      "lng": -4.1289,
+      "travelToNext": "N/A",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Cook your own meal at the hostel",
+        "description": "Use the hostel's kitchen facilities to prepare a simple meal."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Cwm Idwal Walk",
+      "description": "A classic Snowdonia walk to a stunning glacial lake. The path is rocky in places but relatively easy, and dogs are welcome on leads. Be aware of sheep grazing.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.1293,
+      "lng": -3.9908,
+      "travelToNext": "45 min drive via A5",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Electric Mountain",
+        "description": "Take a tour inside Dinorwic Power Station, a fascinating engineering marvel built inside a mountain. Dogs are generally not permitted inside the tour but check ahead.",
+        "costFrom": 12,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Shorter walk around Llyn Ogwen",
+        "description": "Enjoy a less strenuous walk around the shores of Llyn Ogwen.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Moel Siabod Cafe",
+      "foodType": "lunch",
+      "description": "A dog-friendly cafe in Capel Curig, offering sandwiches, cakes, and hot drinks. A great place to refuel after your walk.",
+      "costFrom": 8,
+      "costTo": 12,
+      "lat": 53.1002,
+      "lng": -3.8812,
+      "travelToNext": "15min drive via A5",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch by Llyn Ogwen",
+        "description": "Enjoy a picnic with a view of the lake and surrounding mountains."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Wild Swimming in Llyn Ogwen",
+      "description": "For brave dogs and owners. Take a refreshing dip in the crystal-clear waters of Llyn Ogwen. Be aware of the cold water and only swim if you are experienced and prepared.",
+      "duration": "1-2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.1297,
+      "lng": -3.9937,
+      "travelToNext": "N/A",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Visit the dog-friendly shops in Betws-y-Coed",
+        "description": "Explore the shops and cafes in the picturesque village of Betws-y-Coed.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Relax by the lakeside and enjoy the scenery",
+        "description": "Simply sit by the lake, take in the views, and enjoy the peace and quiet.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "16:00",
+      "type": "food",
+      "title": "Y Stablau - The Stables",
+      "foodType": "afternoon tea",
+      "description": "Located on the A5, this cafe has a beautiful outdoor garden space, ideal for dogs. Great cakes, coffee and simple lunch options.",
+      "costFrom": 8,
+      "costTo": 15,
+      "lat": 53.1045,
+      "lng": -3.8693,
+      "travelToNext": "N/A",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Stop at a roadside viewpoint",
+        "description": "Take a flask of tea or coffee and enjoy the views from a scenic viewpoint."
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 0,
+      "accommodation": 30,
+      "food": 60,
+      "transport": 160,
+      "total": 250
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 15,
+      "food": 30,
+      "transport": 75,
+      "total": 120
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Snowdonia weather can be unpredictable, even in summer. Be prepared for rain, wind, and sun. Check the forecast before you go and pack accordingly.",
+    "traffic": "Traffic can be heavy, especially during peak season and on weekends. Allow extra time for travel, particularly around Llanberis and Capel Curig. Parking at popular trailheads can fill up quickly, so arrive early or consider using park-and-ride services.",
+    "booking": "Dog-friendly accommodation books up well in advance, especially during peak season. Book early to avoid disappointment. Call in advance regarding dog policies at specific attractions.",
+    "fitness": "This itinerary is designed for people with a moderate level of fitness. The walks are relatively easy but involve some uphill sections. Ensure your dog is also fit enough for the walks."
+  }
+}

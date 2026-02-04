@@ -1,0 +1,289 @@
+{
+  "slug": "snowdonia-without-a-car",
+  "title": "Snowdonia Without a Car",
+  "tagline": "Adventure by bus, train, and foot",
+  "region": "snowdonia",
+  "days": 3,
+  "difficulty": "moderate",
+  "bestSeason": "May-September",
+  "groupType": "solo, budget",
+  "priceFrom": 350,
+  "priceTo": 650,
+  "budgetPriceFrom": 200,
+  "budgetPriceTo": 400,
+  "highlights": [
+    "Snowdon Sherpa bus",
+    "Conwy Valley Line",
+    "Coastal paths"
+  ],
+  "activityTypes": [
+    "hiking",
+    "zip-lining"
+  ],
+  "suitableFor": "Solo travellers and budget-conscious adventurers who enjoy hiking and are comfortable using public transport and walking moderate distances. Those looking for an active break with stunning scenery.",
+  "notSuitableFor": "Those reliant on private transport, families with very young children, or individuals with limited mobility. Anyone seeking luxury accommodation or avoiding outdoor activities.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket and trousers",
+    "Hiking boots",
+    "Layers of clothing",
+    "Reusable water bottle",
+    "OS map or Snowdonia guidebook"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Velocity 2 Zip Line",
+      "description": "Experience the thrill of Europe's fastest zip line at Penrhyn Quarry. Soar over the quarry lake and enjoy breathtaking views.",
+      "duration": "2-3 hours",
+      "costFrom": 89,
+      "costTo": 109,
+      "lat": 53.1775,
+      "lng": -4.0856,
+      "travelToNext": "1 hour 30 min by bus (Snowdon Sherpa S2)",
+      "travelMode": "bus",
+      "wetAlt": {
+        "title": "Slate Museum Llanberis",
+        "description": "Explore the history of the Welsh slate industry at this fascinating museum.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walking around Llyn Ogwen",
+        "description": "Enjoy a scenic walk around Llyn Ogwen, a beautiful lake in Snowdonia.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Pete's Eats",
+      "foodType": "lunch",
+      "description": "A legendary cafe in Llanberis serving hearty portions, perfect for refuelling after a morning activity.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 53.1188,
+      "lng": -4.1293,
+      "travelToNext": "15 minute walk",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Padarn",
+        "description": "Enjoy your own packed lunch with stunning views of Llyn Padarn."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Llanberis Path Guided Walk",
+      "description": "Hike to the summit of Snowdon via the Llanberis Path, a popular and relatively easy route with gradual inclines.",
+      "duration": "5-7 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 53.119,
+      "lng": -4.131,
+      "travelToNext": "5 minute walk to accommodation",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Electric Mountain",
+        "description": "Take a tour inside Dinorwig Power Station, a marvel of engineering hidden inside a mountain.",
+        "costFrom": 13,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Explore Llanberis village",
+        "description": "Wander around the village, visit the shops, and relax by the lake.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "YHA Snowdon Llanberis",
+      "description": "A budget-friendly hostel in a convenient location, ideal for exploring Snowdonia.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 53.1236,
+      "lng": -4.1317,
+      "travelToNext": "20 minute bus (Snowdon Sherpa S2) to Pen-y-Pass",
+      "travelMode": "bus",
+      "budgetAlt": {
+        "title": "The Snowdon Inn (Y Fricsan) Campsite",
+        "description": "Camping in Llanberis - bring your own tent!",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Pen-y-Pass Hike (Miners' Track)",
+      "description": "Hike up Snowdon via the Miners' Track from Pen-y-Pass, enjoying stunning views and historical interest along the way. Consider a shorter loop if time is limited.",
+      "duration": "5-6 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.08,
+      "lng": -4.02,
+      "travelToNext": "1 hour by bus (Snowdon Sherpa S4) and train (Conwy Valley Line) to Betws-y-Coed",
+      "travelMode": "bus + train",
+      "wetAlt": {
+        "title": "National Slate Museum",
+        "description": "Learn about the history of the Welsh slate industry.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Llyn Llydaw Walk",
+        "description": "Walk around the picturesque Llyn Llydaw from Pen-y-Pass.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "16:00",
+      "type": "food",
+      "title": "Hangin' Pizzeria",
+      "foodType": "dinner",
+      "description": "Authentic Neapolitan pizzas and local craft beers in a quirky setting.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 53.0923,
+      "lng": -3.8031,
+      "travelToNext": "5 min walk",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Picnic by the River Llugwy",
+        "description": "Enjoy your packed dinner at a scenic spot by the river."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Plas y Brenin",
+      "description": "Adventure centre near Betws-y-Coed; it's a bit further by bus but offers a higher standard of accommodation at a reasonable price.",
+      "costFrom": 80,
+      "costTo": 150,
+      "lat": 53.096,
+      "lng": -3.91,
+      "travelToNext": "45 min bus and train to Dolgellau",
+      "travelMode": "bus + train",
+      "budgetAlt": {
+        "title": "Platts Farm Campsite",
+        "description": "Campsite with basic facilities; much cheaper than hotels.",
+        "costFrom": 15,
+        "costTo": 25
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Mountain Biking - MinorTaur",
+      "description": "Explore the family-friendly trails at Coed y Brenin Forest Park. The MinorTaur trail is suitable for all abilities.",
+      "duration": "1-3 hours",
+      "costFrom": 2,
+      "costTo": 7,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "20 min walk to visitor centre, then 20 min bus back to Dolgellau",
+      "travelMode": "walk + bus",
+      "wetAlt": {
+        "title": "Coed y Brenin Visitor Centre",
+        "description": "Browse the exhibits, grab a coffee, and enjoy the views from the cafe.",
+        "costFrom": 5,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Walking trails at Coed y Brenin",
+        "description": "Enjoy a free walk through the forest.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Cafe at Coed y Brenin Visitor Centre",
+      "foodType": "lunch",
+      "description": "Enjoy lunch at the cafe with views over the forest park.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "20 min bus to Dolgellau",
+      "travelMode": "bus",
+      "budgetAlt": {
+        "title": "Packed lunch at Coed y Brenin",
+        "description": "Enjoy your own packed lunch amidst the trees."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "13:30",
+      "type": "activity",
+      "title": "Coastal Path Walk - Barmouth Bridge",
+      "description": "Take the bus to Barmouth and enjoy a walk along the picturesque Mawddach Estuary coastal path. Cross the iconic Barmouth Bridge for stunning views (small toll applies).",
+      "duration": "3-4 hours",
+      "costFrom": 1,
+      "costTo": 2,
+      "lat": 52.722,
+      "lng": -4.05,
+      "travelToNext": "None - End of Itinerary",
+      "travelMode": "bus",
+      "wetAlt": {
+        "title": "Fairbourne Railway",
+        "description": "A charming narrow-gauge railway that runs along the coast.",
+        "costFrom": 10,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Beach walk in Barmouth",
+        "description": "Enjoy a stroll along the sandy beach in Barmouth.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 152,
+      "accommodation": 235,
+      "food": 75,
+      "transport": 50,
+      "total": 512
+    },
+    "budget": {
+      "activities": 2,
+      "accommodation": 55,
+      "food": 40,
+      "transport": 50,
+      "total": 147
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Snowdonia weather is notoriously unpredictable. Be prepared for rain, wind, and sunshine, even in summer. Check the forecast before you go and pack accordingly.",
+    "traffic": "Traffic can be heavy, especially during peak season and around popular destinations like Llanberis and Pen-y-Pass. The Snowdon Sherpa bus service is a great way to avoid parking hassles. Parking at Pen-y-Pass is very expensive and fills up early – arrive before 8am or take the bus.",
+    "booking": "Book Zip World activities and accommodation well in advance, especially during school holidays. Check bus timetables and plan your journeys carefully. If hiking Snowdon, be aware that the summit cafe and railway may have limited opening hours.",
+    "fitness": "This itinerary requires a moderate level of fitness, including the ability to hike for several hours and walk moderate distances between bus stops and attractions. The Snowdon hikes are challenging, but the Llanberis Path is suitable for most abilities."
+  }
+}

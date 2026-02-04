@@ -1,0 +1,243 @@
+{
+  "slug": "pembrokeshire-stag-hen-weekend",
+  "title": "Pembrokeshire Stag & Hen Adventure",
+  "tagline": "Adrenaline-fuelled celebrations on the coast",
+  "region": "pembrokeshire",
+  "days": 2,
+  "difficulty": "moderate",
+  "bestSeason": "May-September",
+  "groupType": "stag, hen",
+  "priceFrom": 350,
+  "priceTo": 550,
+  "budgetPriceFrom": 200,
+  "budgetPriceTo": 350,
+  "highlights": [
+    "Group coasteering",
+    "Surf lessons",
+    "Evening in St Davids"
+  ],
+  "activityTypes": [
+    "coasteering",
+    "surfing",
+    "kayaking"
+  ],
+  "suitableFor": "Active stag or hen groups looking for an adrenaline-filled coastal adventure. Requires a basic level of fitness and a willingness to get wet!",
+  "notSuitableFor": "Those with limited mobility, a strong aversion to cold water, or who prefer purely relaxing holidays. The focus is on physical activities.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Swimsuit",
+    "Towel",
+    "Sunscreen",
+    "Waterproof jacket",
+    "Sturdy shoes for walking"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coasteering at Abereiddy Blue Lagoon",
+      "description": "Explore the rugged coastline with jumps, swims, and scrambles led by experienced guides at the iconic Blue Lagoon.",
+      "duration": "3.5 hours",
+      "costFrom": 50,
+      "costTo": 70,
+      "lat": 51.931,
+      "lng": -5.203,
+      "travelToNext": "15min drive via B4583",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Explore St Davids Cathedral",
+        "description": "Take a guided tour of this magnificent cathedral and learn about its rich history.",
+        "costFrom": 10,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Coastal walk to Porthgain",
+        "description": "Hike along the Pembrokeshire Coast Path to the picturesque harbour village of Porthgain.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Shed Bistro",
+      "foodType": "lunch",
+      "description": "A popular harbourside bistro in Porthgain, serving fresh seafood and local produce.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.943,
+      "lng": -5.238,
+      "travelToNext": "20min drive to Whitesands",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Whitesands Beach",
+        "description": "Enjoy your own sandwiches and snacks with stunning views of Whitesands Bay."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Surfing Lesson at Whitesands Beach",
+      "description": "Learn to ride the waves with a professional surfing lesson at one of Pembrokeshire's best beaches.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 70,
+      "lat": 51.892,
+      "lng": -5.303,
+      "travelToNext": "15min drive to St Davids",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Indoor Climbing at Haverfordwest Leisure Centre",
+        "description": "Head to the climbing wall for an indoor activity if the weather is awful. ",
+        "costFrom": 10,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Bodyboarding at Whitesands Beach",
+        "description": "Rent bodyboards and enjoy the waves at your own pace.",
+        "costFrom": 10,
+        "costTo": 15
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "18:30",
+      "type": "accommodation",
+      "title": "St Davids YHA",
+      "description": "A centrally located hostel in St Davids, ideal for groups on a budget and wanting to explore the city.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "St Davids (walkable)",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "TYF Cliff-top Campsite",
+        "description": "Bring your tents and enjoy stunning sea views from this eco-friendly campsite near St Davids.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 5,
+      "time": "20:00",
+      "type": "food",
+      "title": "The Bishops",
+      "foodType": "dinner",
+      "description": "A popular pub in St Davids offering classic pub fare and a lively atmosphere. Good for groups",
+      "costFrom": 20,
+      "costTo": 30,
+      "lat": 51.881,
+      "lng": -5.265,
+      "travelToNext": "St Davids (walkable)",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Picnic on the beach",
+        "description": "Grab some supplies at the local shop and find a scenic spot to eat."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:30",
+      "type": "activity",
+      "title": "Sea Kayaking Safari with TYF Adventure",
+      "description": "Explore the St Davids coastline from a different perspective with a guided sea kayaking tour. Discover hidden coves and spot wildlife.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 85,
+      "lat": 51.87,
+      "lng": -5.28,
+      "travelToNext": "5 minutes drive to St Davids",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "St Davids City Tour",
+        "description": "Explore the historic city of St Davids, visiting the cathedral and other landmarks.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Explore Porthclais Harbour",
+        "description": "Walk around the picturesque Porthclais Harbour, a historic inlet with a working harbour.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "13:00",
+      "type": "food",
+      "title": "Grain",
+      "foodType": "lunch",
+      "description": "A cafe in St Davids serving fresh pizzas and tasty cakes.",
+      "costFrom": 12,
+      "costTo": 20,
+      "lat": 51.88,
+      "lng": -5.266,
+      "travelToNext": "20min drive to Ramsey Sound",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed Lunch",
+        "description": "Enjoy a pre-prepared lunch at a scenic spot."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Boat Trip - Ramsey Island",
+      "description": "Take a boat trip to Ramsey Island to see the local wildlife",
+      "duration": "2-3 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.862,
+      "lng": -5.329,
+      "travelToNext": "N/A",
+      "travelMode": "none",
+      "wetAlt": {
+        "title": "Oriel y Parc Gallery and Visitor Centre",
+        "description": "Visit the gallery and visitor centre for indoor activities. ",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Coastal Walk",
+        "description": "Hike along the Pembrokeshire Coast Path and enjoy views of Ramsey Island.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 235,
+      "accommodation": 50,
+      "food": 77,
+      "transport": 30,
+      "total": 392
+    },
+    "budget": {
+      "activities": 10,
+      "accommodation": 30,
+      "food": 25,
+      "transport": 30,
+      "total": 95
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Pembrokeshire weather can be unpredictable. Pack layers and be prepared for rain, even in summer. Check the forecast before heading out.",
+    "traffic": "Traffic can be heavy in St Davids and surrounding areas during peak season. Arrive early to secure parking, especially at popular beaches like Whitesands. Consider using the Puffin Shuttle bus service to avoid driving.",
+    "booking": "Advance booking is essential for coasteering, surfing lessons, and boat trips, especially for large groups. Book accommodation well in advance, particularly during school holidays.",
+    "fitness": "A moderate level of fitness is required for coasteering, surfing, and kayaking. Be prepared for some physical exertion. Inform the activity providers of any medical conditions or fitness limitations."
+  }
+}

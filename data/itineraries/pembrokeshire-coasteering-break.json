@@ -1,0 +1,224 @@
+{
+  "slug": "pembrokeshire-coasteering-break",
+  "title": "Pembrokeshire Coasteering Break",
+  "tagline": "Two days of cliff jumping and coastal thrills",
+  "region": "pembrokeshire",
+  "days": 2,
+  "difficulty": "moderate",
+  "bestSeason": "May-September",
+  "groupType": "friends, couples",
+  "priceFrom": 350,
+  "priceTo": 600,
+  "budgetPriceFrom": 200,
+  "budgetPriceTo": 350,
+  "highlights": [
+    "TYF coasteering",
+    "Blue Lagoon",
+    "St Davids"
+  ],
+  "activityTypes": [
+    "coasteering",
+    "kayaking"
+  ],
+  "suitableFor": "Active couples or groups of friends who enjoy a physical challenge and aren't afraid of heights or cold water. Confident swimmers are essential.",
+  "notSuitableFor": "Those with significant mobility issues, a fear of heights, or who are not comfortable swimming in the sea. Young children may find it too challenging.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Swimsuit",
+    "Towel",
+    "Sturdy footwear (old trainers are ideal)",
+    "Waterproof jacket",
+    "Sunscreen",
+    "Change of clothes"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coasteering Classic",
+      "description": "Explore the Pembrokeshire coastline by swimming, scrambling, and jumping into the sea with TYF Adventure. Expect thrilling cliff jumps and hidden coves.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 60,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "5 minute walk",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "St Davids Cathedral Visit",
+        "description": "Explore the magnificent St Davids Cathedral, a historic pilgrimage site. Learn about its history and admire the architecture.",
+        "costFrom": 0,
+        "costTo": 5
+      },
+      "budgetAlt": {
+        "title": "Explore St Davids",
+        "description": "Wander the streets of St Davids, the UK's smallest city, visit the ruins of the Bishop's Palace.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Refectory",
+      "foodType": "lunch",
+      "description": "A cafe in St Davids with local produce and a great lunch menu.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.8815,
+      "lng": -5.2665,
+      "travelToNext": "10 minute drive",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Packed lunch at Porthclais Harbour",
+        "description": "Enjoy your own sandwiches with stunning views of Porthclais Harbour."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Sea Kayaking Safari",
+      "description": "After lunch, embark on a sea kayaking adventure with TYF, exploring the coastline from a different perspective. Keep an eye out for seals and seabirds.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 85,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "20 minute drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Oriel y Parc Gallery and Visitor Centre",
+        "description": "Browse local art and learn about the Pembrokeshire Coast National Park. Includes a cafe.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walk the Pembrokeshire Coast Path",
+        "description": "Hike a section of the Pembrokeshire Coast Path, taking in the rugged scenery. Many start points near St Davids.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "St Davids YHA",
+      "description": "A comfortable and affordable hostel in the heart of St Davids, perfect for budget-conscious adventurers.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 51.88,
+      "lng": -5.265,
+      "travelToNext": "10 minute drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "TYF Cliff-top Campsite",
+        "description": "Camping with stunning coastal views near St Davids at Porthclais Harbour. Great for a budget outdoor stay.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coasteering",
+      "description": "Experience the thrill of coasteering at the Blue Lagoon with MUUK Adventures. Scramble, swim and jump in this famous location.",
+      "duration": "Half day",
+      "costFrom": 50,
+      "costTo": 70,
+      "lat": 51.931,
+      "lng": -5.203,
+      "travelToNext": "15 minute drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Wool Museum",
+        "description": "Discover the history of the Welsh wool industry, located a short drive from the coast.",
+        "costFrom": 7,
+        "costTo": 9
+      },
+      "budgetAlt": {
+        "title": "Explore Abereiddy Beach",
+        "description": "Walk along the dramatic coastline around the Blue Lagoon, taking in the views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "13:00",
+      "type": "food",
+      "title": "The Sloop Inn",
+      "foodType": "lunch",
+      "description": "A traditional pub in Porthgain, serving classic pub fare with a sea view.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.919,
+      "lng": -5.197,
+      "travelToNext": "20 minute drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic at Porthgain Harbour",
+        "description": "Enjoy your own lunch overlooking the picturesque Porthgain Harbour."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "15:00",
+      "type": "activity",
+      "title": "Boat Trip - Ramsey Island",
+      "description": "Take a boat trip from St Justinian to Ramsey Island, a haven for wildlife. Spot seals, seabirds and maybe even dolphins.",
+      "duration": "2-3 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.862,
+      "lng": -5.329,
+      "travelToNext": null,
+      "travelMode": null,
+      "wetAlt": {
+        "title": "Solva Woollen Mill",
+        "description": "Explore a working woollen mill, and learn about the traditional craft of weaving.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walk the St Justinian Peninsula",
+        "description": "Hike along the coastal path from St Justinian, with views of Ramsey Island.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 215,
+      "accommodation": 50,
+      "food": 60,
+      "transport": 25,
+      "total": 350
+    },
+    "budget": {
+      "activities": 50,
+      "accommodation": 15,
+      "food": 20,
+      "transport": 15,
+      "total": 100
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Pembrokeshire weather can be unpredictable, even in summer. Be prepared for rain and wind, and check the forecast before you go. Sea temperatures are cold, even in summer, wetsuits are essential for coasteering and kayaking.",
+    "traffic": "Traffic can be heavy in Pembrokeshire during peak season, especially around St Davids and the coastal roads. Allow extra time for travel and parking. Parking at popular spots like the Blue Lagoon can fill up quickly, arrive early or consider using public transport.",
+    "booking": "Coasteering and kayaking activities should be booked in advance, especially during peak season. Accommodation also fills up quickly, so book early to avoid disappointment. Ramsey Island boat trips are also popular and should be booked ahead of time.",
+    "fitness": "This trip requires a moderate level of fitness. Coasteering and kayaking involve swimming, scrambling, and some physical exertion. You should be comfortable swimming in the sea and able to walk for several hours."
+  }
+}

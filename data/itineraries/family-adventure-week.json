@@ -1,0 +1,431 @@
+{
+  "slug": "family-adventure-week",
+  "title": "Family Adventure Week",
+  "tagline": "Kid-tested adventures across Snowdonia",
+  "region": "snowdonia",
+  "days": 5,
+  "difficulty": "easy",
+  "bestSeason": "June-August",
+  "groupType": "families",
+  "priceFrom": 750,
+  "priceTo": 1500,
+  "budgetPriceFrom": 400,
+  "budgetPriceTo": 800,
+  "highlights": [
+    "Zip World Fforest",
+    "Bounce Below",
+    "Easy Snowdon walk",
+    "Bike trails"
+  ],
+  "activityTypes": [
+    "zip-lining",
+    "hiking",
+    "mountain-biking"
+  ],
+  "suitableFor": "Families with children aged 7 and up who enjoy outdoor activities and are comfortable with moderate physical exertion. Kids need to be tall enough and old enough for the activities",
+  "notSuitableFor": "Families with very young children (under 5), individuals with significant mobility issues, or those who dislike outdoor activities.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jackets",
+    "Hiking boots or sturdy shoes",
+    "Backpack",
+    "Sunscreen",
+    "Water bottle"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Zip World Fforest Coaster",
+      "description": "Experience the thrill of a gravity-driven toboggan run through the forest. Kids love this!",
+      "duration": "1.5 hours",
+      "costFrom": 25,
+      "costTo": 35,
+      "lat": 53.092,
+      "lng": -3.8,
+      "travelToNext": "30min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Explore Betws-y-Coed village",
+        "description": "Browse the shops and cafes in this picturesque village. The Conwy Valley Railway Museum is a good, covered option.",
+        "costFrom": 0,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Walk to Swallow Falls",
+        "description": "Enjoy a scenic walk to a beautiful waterfall (small entrance fee applies).",
+        "costFrom": 2.5,
+        "costTo": 5
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Hangin' Pizzeria",
+      "foodType": "lunch",
+      "description": "Wood-fired pizzas in a relaxed setting in Betws-y-Coed.",
+      "costFrom": 12,
+      "costTo": 20,
+      "lat": 53.092,
+      "lng": -3.8,
+      "travelToNext": "40min drive via A5",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Ogwen",
+        "description": "Enjoy your own sandwiches overlooking the dramatic scenery of Llyn Ogwen."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Bounce Below",
+      "description": "Jump and play on giant trampolines in a disused slate mine. A unique experience!",
+      "duration": "1 hour",
+      "costFrom": 25,
+      "costTo": 35,
+      "lat": 52.996,
+      "lng": -3.94,
+      "travelToNext": "15min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Zip World Llechwedd Deep Mine Tour",
+        "description": "Learn about the history of slate mining on an underground train tour.",
+        "costFrom": 20,
+        "costTo": 35
+      },
+      "budgetAlt": {
+        "title": "Explore Blaenau Ffestiniog",
+        "description": "Wander around the town and visit the Llechwedd Slate Caverns visitor centre (free entry to the shop and cafe).",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Treks Bunkhouse",
+      "description": "Comfortable and family-friendly bunkhouse in Ffestiniog, close to many attractions.",
+      "costFrom": 25,
+      "costTo": 45,
+      "lat": 52.99,
+      "lng": -3.95,
+      "travelToNext": "30min drive to Pen-y-Pass",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "The Snowdon Inn (Y Fricsan) Campsite",
+        "description": "Camping in Llanberis with basic facilities.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Llanberis Path Guided Walk",
+      "description": "Enjoy an easy ascent of Snowdon via the Llanberis Path with an experienced guide.",
+      "duration": "6 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 53.119,
+      "lng": -4.131,
+      "travelToNext": "10min drive to Pete's Eats",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit the National Slate Museum",
+        "description": "Discover the history of the Welsh slate industry in a fascinating museum. Free entry.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Hike part of the Llanberis Path",
+        "description": "Walk as far as you feel comfortable and enjoy the views. No need to go to the summit.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "15:30",
+      "type": "food",
+      "title": "Pete's Eats",
+      "foodType": "lunch",
+      "description": "A legendary cafe in Llanberis, famous for its large portions and hearty food, popular with hikers and climbers.",
+      "costFrom": 10,
+      "costTo": 18,
+      "lat": 53.1224,
+      "lng": -4.1272,
+      "travelToNext": "15min drive to Arete Outdoor Centre",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Padarn",
+        "description": "Enjoy views of Dolbadarn Castle."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Arete Outdoor Centre",
+      "description": "A well-equipped outdoor centre near Llanberis offering comfortable accommodation and activities.",
+      "costFrom": 60,
+      "costTo": 100,
+      "lat": 53.1406,
+      "lng": -4.1771,
+      "travelToNext": "30min drive to Coed y Brenin",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "YHA Snowdon Llanberis",
+        "description": "Hostel accommodation with shared facilities.",
+        "costFrom": 25,
+        "costTo": 70
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:30",
+      "type": "activity",
+      "title": "Mountain Biking - MinorTaur",
+      "description": "Enjoy a family-friendly mountain bike trail at Coed y Brenin. Bike hire available.",
+      "duration": "2 hours",
+      "costFrom": 2,
+      "costTo": 30,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "5min drive to Cyfyng Falls",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Coed y Brenin Visitor Centre",
+        "description": "Browse the visitor centre and enjoy a hot drink in the cafe.",
+        "costFrom": 0,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Walk one of the forest trails",
+        "description": "Explore the forest on foot and enjoy the scenery. (Parking fee applies).",
+        "costFrom": 2,
+        "costTo": 7
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Cyfyng Falls Cafe",
+      "foodType": "lunch",
+      "description": "A small cafe next to a beautiful waterfall, serving light lunches and snacks.",
+      "costFrom": 8,
+      "costTo": 15,
+      "lat": 52.83,
+      "lng": -3.87,
+      "travelToNext": "20min drive to Bala",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Coed y Brenin",
+        "description": "Plenty of picnic spots near the river."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Gorge Walking",
+      "description": "Scramble up a river gorge, navigating waterfalls and pools with Adventure Britain.",
+      "duration": "4 hours",
+      "costFrom": 65,
+      "costTo": 95,
+      "lat": 52.911,
+      "lng": -3.601,
+      "travelToNext": "5min drive to Bala Backpackers",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit Bala Lake Railway",
+        "description": "Enjoy a scenic train ride along the shores of Bala Lake.",
+        "costFrom": 10,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Walk around Bala Lake",
+        "description": "Enjoy a stroll along the shores of the largest natural lake in Wales.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 4,
+      "time": "19:00",
+      "type": "accommodation",
+      "title": "Bala Backpackers",
+      "description": "A friendly hostel in the centre of Bala, close to the lake and local amenities.",
+      "costFrom": 20,
+      "costTo": 35,
+      "lat": 52.91,
+      "lng": -3.59,
+      "travelToNext": "40min drive to Llandegla",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Wild Camping near Bala Lake (permit needed)",
+        "description": "Basic but budget-friendly option.",
+        "costFrom": 5,
+        "costTo": 10
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Mountain Biking - Llandegla Forest",
+      "description": "Explore the trails at Llandegla Forest. Suitable for all skill levels, bike hire available.",
+      "duration": "3 hours",
+      "costFrom": 5,
+      "costTo": 30,
+      "lat": 53.056,
+      "lng": -3.191,
+      "travelToNext": "10min drive to the cafe",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit Ruthin Gaol",
+        "description": "Step back in time and explore a Victorian prison.",
+        "costFrom": 7,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Walk in Llandegla Forest",
+        "description": "Enjoy a walk through the forest on one of the many trails.",
+        "costFrom": 4.5,
+        "costTo": 4.5
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Oneplanet Adventure Cafe",
+      "foodType": "lunch",
+      "description": "Cafe at Llandegla Forest serving hot and cold food and drinks.",
+      "costFrom": 10,
+      "costTo": 18,
+      "lat": 53.06,
+      "lng": -3.19,
+      "travelToNext": "15min drive to Loggerheads Country Park",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic at Llandegla Forest",
+        "description": "Plenty of picnic benches available."
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Loggerheads Country Park",
+      "description": "Beautiful country park offering walks and stunning views. Perfect for a relaxed afternoon.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.15,
+      "lng": -3.23,
+      "travelToNext": "30 min drive to Platts Farm",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Erddig Hall (National Trust)",
+        "description": "Visit a grand stately home and gardens.",
+        "costFrom": 15,
+        "costTo": 25
+      },
+      "budgetAlt": {
+        "title": "Explore Loggerheads Country Park",
+        "description": "Enjoy the walking trails and scenery of the park",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "Platts Farm",
+      "description": "Campsite/bunkhouse accommodation near Llanfairfechan with stunning views of the coast.",
+      "costFrom": 15,
+      "costTo": 40,
+      "lat": 53.24,
+      "lng": -3.95,
+      "travelToNext": "Home",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Wild camping near Llanfairfechan (permit needed)",
+        "description": "Basic but budget friendly",
+        "costFrom": 5,
+        "costTo": 10
+      }
+    },
+    {
+      "day": 5,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Conwy Castle",
+      "description": "Explore this imposing medieval castle, a UNESCO World Heritage Site.",
+      "duration": "2-3 hours",
+      "costFrom": 10,
+      "costTo": 15,
+      "lat": 53.283,
+      "lng": -3.827,
+      "travelToNext": "Drive home!",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Home",
+        "description": "Drive directly home.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walk the Conwy Town Walls",
+        "description": "Enjoy views of the castle and town for free.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 272,
+      "accommodation": 210,
+      "food": 140,
+      "transport": 30,
+      "total": 652
+    },
+    "budget": {
+      "activities": 20,
+      "accommodation": 75,
+      "food": 40,
+      "transport": 30,
+      "total": 165
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Snowdonia weather can be unpredictable, even in summer. Pack layers and waterproof clothing. Check the forecast before heading out.",
+    "traffic": "Traffic can be heavy, especially during peak season and weekends. Allow extra time for travel. Parking at popular spots like Pen-y-Pass fills up early.",
+    "booking": "Book Zip World activities and accommodation well in advance, especially during school holidays. Guided walks also require pre-booking.",
+    "fitness": "A moderate level of fitness is required for the Snowdon hike and gorge walking. Mountain biking trails range in difficulty, so choose one that suits your ability. Very doable for beginner families."
+  }
+}

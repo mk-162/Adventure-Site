@@ -1,0 +1,268 @@
+{
+  "slug": "south-wales-bikepark-weekend",
+  "title": "BikePark Wales Weekend",
+  "tagline": "Two days of downhill at the UK's best bike park",
+  "region": "south-wales",
+  "days": 2,
+  "difficulty": "moderate",
+  "bestSeason": "Year-round",
+  "groupType": "mountain bikers",
+  "priceFrom": 350,
+  "priceTo": 650,
+  "budgetPriceFrom": 200,
+  "budgetPriceTo": 400,
+  "highlights": [
+    "40+ trails",
+    "Uplift service",
+    "Coaching sessions"
+  ],
+  "activityTypes": [
+    "mountain-biking"
+  ],
+  "suitableFor": "Intermediate to advanced mountain bikers comfortable riding blue and red graded trails. Good level of fitness required for multiple uplift runs.",
+  "notSuitableFor": "Beginner mountain bikers with little to no experience on graded trails, or those with limited fitness.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Mountain bike (or rental)",
+    "Full-face helmet",
+    "Knee and elbow pads",
+    "Waterproof jacket",
+    "Bike repair kit"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "BikePark Wales Uplift Session",
+      "description": "Start the day with the uplift service, maximising your downhill runs on a variety of trails. Explore blue, red, and black graded runs based on your ability.",
+      "duration": "3 hours",
+      "costFrom": 45,
+      "costTo": 55,
+      "lat": 51.7595,
+      "lng": -3.3567,
+      "travelToNext": "5min drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "BikePark Wales Cafe & Skills Area",
+        "description": "Practice skills on the pump track and smaller features, or enjoy the cafe while waiting out the rain.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Pedal-Up Session",
+        "description": "Skip the uplift and pedal to the top of the trails for a free workout (allow extra time).",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "BikePark Wales Cafe",
+      "foodType": "lunch",
+      "description": "Fuel up with burgers, sandwiches, and hot drinks at the on-site cafe.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 51.7595,
+      "lng": -3.3567,
+      "travelToNext": "5min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Gethin Woodland Park",
+        "description": "Picnic spot with views a short walk from the BikePark Wales parking."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Afternoon Coaching Session",
+      "description": "Improve your skills with a 2-hour coaching session focusing on cornering, jumping, or technical trail riding.",
+      "duration": "2 hours",
+      "costFrom": 60,
+      "costTo": 80,
+      "lat": 51.7595,
+      "lng": -3.3567,
+      "travelToNext": "20min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Bike Maintenance Workshop",
+        "description": "Learn basic bike maintenance skills at the BikePark Wales workshop.",
+        "costFrom": 30,
+        "costTo": 40
+      },
+      "budgetAlt": {
+        "title": "Trail Exploration",
+        "description": "Explore less-ridden trails at BikePark Wales independently. Check trail map for suitable options.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "The New Inn, Pontsticill",
+      "description": "Traditional pub with comfortable rooms, perfect for relaxing after a day on the trails.",
+      "costFrom": 80,
+      "costTo": 120,
+      "lat": 51.7868,
+      "lng": -3.3709,
+      "travelToNext": "15min drive via A470",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Camping at Pontsticill Reservoir",
+        "description": "Wild camping around Pontsticill Reservoir (check local regulations and leave no trace).",
+        "costFrom": 0,
+        "costTo": 10
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 5,
+      "time": "19:00",
+      "type": "food",
+      "title": "The New Inn Restaurant",
+      "foodType": "dinner",
+      "description": "Enjoy a hearty pub meal at The New Inn's restaurant.",
+      "costFrom": 20,
+      "costTo": 35,
+      "lat": 51.7868,
+      "lng": -3.3709,
+      "travelToNext": "N/A",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Cook your own meal at campsite/accommodation",
+        "description": "Bring camping stove or use provided facilities."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "BikePark Wales Technical Trails",
+      "description": "Focus on the more technical trails, challenging yourself with rock gardens, drops, and steeper gradients.",
+      "duration": "3 hours",
+      "costFrom": 45,
+      "costTo": 55,
+      "lat": 51.7595,
+      "lng": -3.3567,
+      "travelToNext": "5min drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "BikePark Wales Cafe & Skills Area",
+        "description": "Practice skills on the pump track and smaller features, or enjoy the cafe while waiting out the rain.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Pedal-Up Session",
+        "description": "Skip the uplift and pedal to the top of the trails for a free workout (allow extra time).",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Red House, Merthyr Tydfil",
+      "foodType": "lunch",
+      "description": "A riverside cultural centre with a cafe offering light meals and snacks.",
+      "costFrom": 8,
+      "costTo": 15,
+      "lat": 51.7477,
+      "lng": -3.3795,
+      "travelToNext": "5min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at the Red House",
+        "description": "Enjoy your own food on the grounds of the Red House."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Final Runs at BikePark Wales",
+      "description": "Enjoy a final few runs at your favourite trails, taking in the scenery and pushing your limits one last time.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.7595,
+      "lng": -3.3567,
+      "travelToNext": "N/A",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "BikePark Wales Workshop/Cafe",
+        "description": "Further skills session or just relax at the cafe.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Trail Exploration",
+        "description": "Explore trails independently.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "16:00",
+      "type": "activity",
+      "title": "Bike Wash & Pack Up",
+      "description": "Clean your bike at the BikePark Wales bike wash before packing up for departure.",
+      "duration": "1 hour",
+      "costFrom": 5,
+      "costTo": 5,
+      "lat": 51.7595,
+      "lng": -3.3567,
+      "travelToNext": "N/A",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "N/A",
+        "description": "N/A",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "DIY Bike Clean",
+        "description": "Use your own water bottle/hose to clean down your bike",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 205,
+      "accommodation": 100,
+      "food": 75,
+      "transport": 70,
+      "total": 450
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 0,
+      "food": 30,
+      "transport": 50,
+      "total": 80
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Wales weather is unpredictable. Pack for all conditions, including rain, even in summer. Check the forecast before you go.",
+    "traffic": "Traffic can be heavy on the A470, especially during peak season and weekends. Allow extra travel time. Parking at BikePark Wales can fill up quickly, arrive early.",
+    "booking": "Uplift passes and coaching sessions at BikePark Wales should be booked in advance, especially during weekends and school holidays. Accommodation should also be pre-booked.",
+    "fitness": "A good level of fitness is required to fully enjoy the downhill trails. Be prepared for strenuous activity and potential exposure to the elements."
+  }
+}

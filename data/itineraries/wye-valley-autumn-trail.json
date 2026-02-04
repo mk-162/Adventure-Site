@@ -1,0 +1,223 @@
+{
+  "slug": "wye-valley-autumn-trail",
+  "title": "Wye Valley Autumn Trail",
+  "tagline": "The best autumn colours in Wales",
+  "region": "wye-valley",
+  "days": 2,
+  "difficulty": "easy",
+  "bestSeason": "October-November",
+  "groupType": "walkers, photographers",
+  "priceFrom": 250,
+  "priceTo": 450,
+  "budgetPriceFrom": 120,
+  "budgetPriceTo": 200,
+  "highlights": [
+    "Autumn foliage walks",
+    "River Wye paddle",
+    "Offa's Dyke sections"
+  ],
+  "activityTypes": [
+    "hiking",
+    "kayaking"
+  ],
+  "suitableFor": "Individuals, couples, or small groups who enjoy gentle walks and scenic photography, with a moderate level of fitness.",
+  "notSuitableFor": "Those with significant mobility issues, or anyone seeking challenging, high-adrenaline activities.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Walking boots",
+    "Camera",
+    "Binoculars",
+    "Warm layers"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Symonds Yat Rock Walk",
+      "description": "Enjoy panoramic views of the Wye Valley's autumn foliage from Symonds Yat Rock, followed by a circular walk through the surrounding forest.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.8485,
+      "lng": -2.6123,
+      "travelToNext": "20min drive via B4228",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Clearwell Caves",
+        "description": "Explore the fascinating underground world of Clearwell Caves, a natural cave system mined for iron ore.",
+        "costFrom": 10,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Biblins Adventure Playground",
+        "description": "Enjoy some time at this fantastic free adventure playground, located close to the Biblins suspension bridge over the Wye.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "The Saracen's Head Inn",
+      "foodType": "lunch",
+      "description": "A traditional pub with riverside views, serving classic pub fare.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.8428,
+      "lng": -2.6019,
+      "travelToNext": "5 minute drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Yat Rock viewpoint",
+        "description": "Enjoy your own picnic with stunning views."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "13:30",
+      "type": "activity",
+      "title": "Canoe Hire from Wyedean Canoe & Adventure Centre",
+      "description": "Hire a canoe and paddle down the River Wye, enjoying the scenery from a different perspective.",
+      "duration": "3 hours",
+      "costFrom": 30,
+      "costTo": 50,
+      "lat": 51.7234,
+      "lng": -2.5652,
+      "travelToNext": "30 min drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Tintern Abbey Visit",
+        "description": "Explore the atmospheric ruins of Tintern Abbey, a Cistercian monastery dating back to the 12th century.",
+        "costFrom": 7,
+        "costTo": 9
+      },
+      "budgetAlt": {
+        "title": "River Wye Walk along the riverside path",
+        "description": "Enjoy a walk along the River Wye, taking in the views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "The Wild Hare, Tintern",
+      "description": "Boutique guesthouse in Tintern, ideal for a relaxing evening after a day of activities.",
+      "costFrom": 100,
+      "costTo": 150,
+      "lat": 51.6911,
+      "lng": -2.6769,
+      "travelToNext": "30 min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Camping at Greenacres Farm",
+        "description": "Rural campsite with basic facilities.",
+        "costFrom": 15,
+        "costTo": 25
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Offa's Dyke Path Walk (Section near Redbrook)",
+      "description": "Hike a section of the historic Offa's Dyke Path, enjoying views across the Wye Valley and the Welsh border.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.7994,
+      "lng": -2.6522,
+      "travelToNext": "15 min drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Raglan Castle Visit",
+        "description": "Explore the impressive ruins of Raglan Castle, a late medieval fortress.",
+        "costFrom": 7,
+        "costTo": 9
+      },
+      "budgetAlt": {
+        "title": "Explore the village of Redbrook",
+        "description": "Take a stroll around the historic village of Redbrook, by the River Wye.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The George Inn, Redbrook",
+      "foodType": "lunch",
+      "description": "A traditional village pub with a cozy atmosphere and good food.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.7994,
+      "lng": -2.6522,
+      "travelToNext": "30 min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic lunch at Offa's Dyke",
+        "description": "Enjoy your packed lunch whilst enjoying the views from Offa's Dyke."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Puzzlewood",
+      "description": "Explore the ancient woodland of Puzzlewood, known for its unique rock formations and enchanting atmosphere.",
+      "duration": "2 hours",
+      "costFrom": 9,
+      "costTo": 11,
+      "lat": 51.8335,
+      "lng": -2.5999,
+      "travelToNext": null,
+      "travelMode": null,
+      "wetAlt": {
+        "title": "Dean Heritage Centre",
+        "description": "Learn about the history and heritage of the Forest of Dean at the Dean Heritage Centre.",
+        "costFrom": 8,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Forest of Dean Sculpture Trail",
+        "description": "Visit this wonderful outdoor free sculpture trail.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 94,
+      "accommodation": 100,
+      "food": 60,
+      "transport": 50,
+      "total": 304
+    },
+    "budget": {
+      "activities": 15,
+      "accommodation": 15,
+      "food": 30,
+      "transport": 40,
+      "total": 100
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "October and November can be wet and windy. Pack waterproofs and layers. Check the weather forecast before you go.",
+    "traffic": "Traffic can be heavy on weekends, especially around popular attractions like Symonds Yat. Arrive early to secure parking.",
+    "booking": "Canoe hire and certain accommodations require advance booking, especially during peak season.",
+    "fitness": "A reasonable level of fitness is required for the walking sections, though the terrain is generally easy. Canoe requires some upper body strength."
+  }
+}

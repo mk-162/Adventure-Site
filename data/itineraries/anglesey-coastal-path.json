@@ -1,0 +1,316 @@
+{
+  "slug": "anglesey-coastal-path",
+  "title": "Anglesey Coastal Path Highlights",
+  "tagline": "The best sections of the 125-mile loop",
+  "region": "anglesey",
+  "days": 3,
+  "difficulty": "moderate",
+  "bestSeason": "May-September",
+  "groupType": "walkers, nature lovers",
+  "priceFrom": 450,
+  "priceTo": 850,
+  "budgetPriceFrom": 250,
+  "budgetPriceTo": 450,
+  "highlights": [
+    "South Stack cliffs",
+    "Llanddwyn Island",
+    "Beaumaris Castle"
+  ],
+  "activityTypes": [
+    "hiking",
+    "wild-swimming"
+  ],
+  "suitableFor": "Active individuals and couples who enjoy coastal walking, wildlife spotting, and historical sites. A reasonable level of fitness is needed for the hikes.",
+  "notSuitableFor": "Those with limited mobility or those seeking purely relaxing beach holidays. Very young children may find the hiking too challenging.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Hiking boots",
+    "Waterproof jacket",
+    "Sunscreen",
+    "Swimsuit",
+    "Map & compass/GPS"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "South Stack Cliffs Walk",
+      "description": "Explore the dramatic cliffs of South Stack, enjoying stunning views and spotting seabirds like puffins and guillemots.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.306,
+      "lng": -4.7,
+      "travelToNext": "30min drive via A55",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "RSPB South Stack Visitor Centre",
+        "description": "Learn about the wildlife of South Stack and enjoy indoor exhibits.",
+        "costFrom": 5,
+        "costTo": 7
+      },
+      "budgetAlt": {
+        "title": "Free Birdwatching",
+        "description": "Bring binoculars and enjoy birdwatching from the cliff tops without entering the paid reserve.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Sea Shanty Cafe",
+      "foodType": "lunch",
+      "description": "A cosy cafe near South Stack, serving sandwiches, soups, and cakes with sea views.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 53.3065,
+      "lng": -4.6995,
+      "travelToNext": "20min drive to Trearddur Bay",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at South Stack viewpoint",
+        "description": "Enjoy your own sandwiches with panoramic views."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Trearddur Bay Beach & Optional Coasteering",
+      "description": "Relax on the sandy beach at Trearddur Bay, or for the adventurous, try a coasteering session.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 80,
+      "lat": 53.281,
+      "lng": -4.63,
+      "travelToNext": "10min drive to Trearddur Bay Hotel",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Trearddur Bay Hotel Spa",
+        "description": "Relax indoors with a spa treatment at the Trearddur Bay Hotel.",
+        "costFrom": 40,
+        "costTo": 100
+      },
+      "budgetAlt": {
+        "title": "Free beach walk and rock pooling",
+        "description": "Explore the coastline at your own pace.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Trearddur Bay Hotel",
+      "description": "A comfortable hotel with sea views, perfect for relaxing after a day of exploring the coast.",
+      "costFrom": 120,
+      "costTo": 200,
+      "lat": 53.281,
+      "lng": -4.63,
+      "travelToNext": "45min drive to Newborough Forest",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Camping at Newborough Forest Campsite",
+        "description": "Pitch your tent amidst the trees for a budget-friendly overnight stay.",
+        "costFrom": 25,
+        "costTo": 40
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Newborough Forest and Llanddwyn Island Walk",
+      "description": "Explore Newborough Forest, leading to the beautiful Llanddwyn Island with its iconic lighthouse and stunning views.",
+      "duration": "4 hours",
+      "costFrom": 8,
+      "costTo": 8,
+      "lat": 53.136,
+      "lng": -4.41,
+      "travelToNext": "15min drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Plas Newydd House and Garden (National Trust)",
+        "description": "Visit this historic house with beautiful gardens overlooking the Menai Strait.",
+        "costFrom": 16,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Free Walk through Newborough Forest",
+        "description": "Enjoy a free stroll through the forest and along Newborough Beach.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "13:00",
+      "type": "food",
+      "title": "The Pilot House Cafe",
+      "foodType": "lunch",
+      "description": "A charming cafe in Pilot House with a great view of the beach.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 53.1263,
+      "lng": -4.4113,
+      "travelToNext": "30min drive to Menai Bridge",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic on Llanddwyn Beach",
+        "description": "Pack your own lunch and enjoy it with stunning sea views."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "15:00",
+      "type": "activity",
+      "title": "Menai Bridge RIB Ride",
+      "description": "Experience the thrill of a high-speed RIB ride along the Menai Strait, passing under the iconic bridges.",
+      "duration": "1.5 hours",
+      "costFrom": 35,
+      "costTo": 55,
+      "lat": 53.226,
+      "lng": -4.163,
+      "travelToNext": "5min drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit Beaumaris Castle",
+        "description": "Explore this impressive medieval castle, a UNESCO World Heritage Site.",
+        "costFrom": 8,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Walk across the Menai Bridge",
+        "description": "Enjoy stunning views of the Menai Strait on foot.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Plas Menai Accommodation",
+      "description": "Stay in the activity centre. Close to Menai Bridge and with a range of water sports on offer.",
+      "costFrom": 60,
+      "costTo": 120,
+      "lat": 53.133,
+      "lng": -4.27,
+      "travelToNext": "10min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Camping at Newborough Forest Campsite",
+        "description": "Pitch your tent amidst the trees for a budget-friendly overnight stay.",
+        "costFrom": 25,
+        "costTo": 40
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Beaumaris Castle Exploration",
+      "description": "Discover the history and architecture of Beaumaris Castle, a magnificent unfinished fortress.",
+      "duration": "2.5 hours",
+      "costFrom": 8,
+      "costTo": 10,
+      "lat": 53.263,
+      "lng": -4.083,
+      "travelToNext": "5min drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Beaumaris Gaol",
+        "description": "Explore this well-preserved Victorian prison and learn about its grim history.",
+        "costFrom": 7,
+        "costTo": 9
+      },
+      "budgetAlt": {
+        "title": "Walk around the Beaumaris Castle exterior",
+        "description": "Appreciate the castle's grandeur from the outside without paying the entrance fee.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "11:30",
+      "type": "food",
+      "title": "The Red Boat Ice Cream Parlour",
+      "foodType": "Snack/Dessert",
+      "description": "Enjoy award-winning homemade ice cream with waterfront views in Beaumaris.",
+      "costFrom": 5,
+      "costTo": 10,
+      "lat": 53.264,
+      "lng": -4.082,
+      "travelToNext": "30 min drive to Red Wharf Bay",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Bring your own snack",
+        "description": "Enjoy your own packed snacks with waterfront views."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "12:30",
+      "type": "activity",
+      "title": "Red Wharf Bay Beach Walk and Wildlife Spotting",
+      "description": "Take a leisurely stroll along the vast sands of Red Wharf Bay, known for its birdlife and shellfish.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.313,
+      "lng": -4.233,
+      "travelToNext": "Home",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Oriel Tegfryn Art Gallery",
+        "description": "Browse contemporary Welsh art in this gallery near Menai Bridge.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Relax on Red Wharf Bay Beach",
+        "description": "Enjoy the scenery, even on a cloudy day.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 106,
+      "accommodation": 180,
+      "food": 75,
+      "transport": 80,
+      "total": 441
+    },
+    "budget": {
+      "activities": 8,
+      "accommodation": 30,
+      "food": 30,
+      "transport": 80,
+      "total": 148
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Anglesey weather can be unpredictable. Pack layers and be prepared for rain, even in summer. Coastal winds can be strong.",
+    "traffic": "Traffic can be heavy during peak season (July/August), especially around Beaumaris and Menai Bridge. Allow extra time for travel. Parking at popular spots like South Stack and Newborough can fill up quickly, arrive early or consider using park-and-ride services if available.",
+    "booking": "Accommodation and some activities (e.g., RIB rides, coasteering) should be booked in advance, especially during peak season. Check opening times for attractions like Beaumaris Castle.",
+    "fitness": "The walks on this itinerary are moderately challenging, with some uneven terrain and inclines. A reasonable level of fitness is required."
+  }
+}

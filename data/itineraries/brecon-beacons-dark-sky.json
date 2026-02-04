@@ -1,0 +1,263 @@
+{
+  "slug": "brecon-beacons-dark-sky",
+  "title": "Dark Sky Adventure",
+  "tagline": "Daytime thrills, stargazing at night",
+  "region": "brecon-beacons",
+  "days": 2,
+  "difficulty": "moderate",
+  "bestSeason": "October-March",
+  "groupType": "couples, photographers",
+  "priceFrom": 250,
+  "priceTo": 450,
+  "budgetPriceFrom": 120,
+  "budgetPriceTo": 250,
+  "highlights": [
+    "Pen y Fan sunset hike",
+    "International Dark Sky Reserve",
+    "Night photography"
+  ],
+  "activityTypes": [
+    "hiking",
+    "caving"
+  ],
+  "suitableFor": "Couples and keen photographers seeking adventure and stunning night skies. Must be comfortable with moderate hiking and some physical exertion.",
+  "notSuitableFor": "Those with limited mobility, families with young children, or anyone strictly seeking luxury accommodation.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Hiking boots",
+    "Warm layers",
+    "Waterproof jacket and trousers",
+    "Headtorch with red light function",
+    "Camera and tripod"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Caving with Black Mountain Adventure",
+      "description": "Explore the fascinating underground world of the Brecon Beacons with an experienced guide.",
+      "duration": "2.5 hours",
+      "costFrom": 45,
+      "costTo": 85,
+      "lat": 52.04,
+      "lng": -3.18,
+      "travelToNext": "30min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Brecon Mountain Railway",
+        "description": "A scenic steam train ride through the Brecon Beacons, offering stunning views even in bad weather.",
+        "costFrom": 18,
+        "costTo": 25
+      },
+      "budgetAlt": {
+        "title": "Explore Porth yr Ogof Cave (Free Entry)",
+        "description": "Explore the entrance to a huge cave for free. Take appropriate gear, but it's free!",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Felin Fach Griffin",
+      "foodType": "lunch",
+      "description": "A charming gastropub known for its delicious, locally sourced food and cosy atmosphere.",
+      "costFrom": 20,
+      "costTo": 35,
+      "lat": 52.093,
+      "lng": -3.332,
+      "travelToNext": "25min drive via A470",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llangorse Lake",
+        "description": "Enjoy a picnic with beautiful views of the lake and surrounding mountains."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Paddle Boarding at Llangorse Lake",
+      "description": "Enjoy the great outdoors on a SUP, in the shadow of the Brecon Beacons",
+      "duration": "2-3 hours",
+      "costFrom": 45,
+      "costTo": 85,
+      "lat": 51.923,
+      "lng": -3.26,
+      "travelToNext": "1hr drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Llangorse Multi Activity Centre",
+        "description": "An indoor climbing and activity centre.",
+        "costFrom": 15,
+        "costTo": 25
+      },
+      "budgetAlt": {
+        "title": "Walk around Llangorse Lake",
+        "description": "A scenic walk around the perimeter of the lake.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "YHA Brecon Beacons",
+      "description": "A comfortable and well-located hostel, perfect for exploring the area and ideal for stargazing.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 51.9,
+      "lng": -3.44,
+      "travelToNext": "15min drive via A470",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Penstar Bunkhouse",
+        "description": "A basic but affordable bunkhouse near Pen y Fan.",
+        "costFrom": 25,
+        "costTo": 40
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 5,
+      "time": "20:00",
+      "type": "food",
+      "title": "Self-catering at YHA Brecon Beacons",
+      "foodType": "dinner",
+      "description": "Prepare your own dinner using the hostel's kitchen facilities, taking advantage of the dark skies.",
+      "costFrom": 5,
+      "costTo": 10,
+      "lat": 51.9,
+      "lng": -3.44,
+      "travelToNext": "5min walk",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Packed Dinner",
+        "description": "Picnic with pre-packed snacks at the campsite"
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 6,
+      "time": "22:00",
+      "type": "activity",
+      "title": "Stargazing at YHA Brecon Beacons",
+      "description": "Take advantage of the Brecon Beacons' Dark Sky Reserve status and enjoy some stargazing.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.9,
+      "lng": -3.44,
+      "travelToNext": null,
+      "travelMode": "none",
+      "wetAlt": {
+        "title": "Read a book in the hostel common room",
+        "description": "Enjoy indoor activities.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Stargazing with binoculars",
+        "description": "Use your own binoculars to observe the constellations.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "07:00",
+      "type": "food",
+      "title": "Breakfast at YHA Brecon Beacons",
+      "foodType": "breakfast",
+      "description": "Enjoy a simple breakfast at the hostel before heading out for the day.",
+      "costFrom": 5,
+      "costTo": 10,
+      "lat": 51.9,
+      "lng": -3.44,
+      "travelToNext": "15min drive via A470",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Self-catered breakfast",
+        "description": "Bring your own breakfast and prepare it in the hostel kitchen.",
+        "costFrom": 2,
+        "costTo": 5
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "08:30",
+      "type": "activity",
+      "title": "Hike up Pen y Fan",
+      "description": "Hike to the summit of Pen y Fan, the highest peak in South Wales, for panoramic views (weather permitting).",
+      "duration": "3-4 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.883,
+      "lng": -3.437,
+      "travelToNext": "30 min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit the National Showcaves Centre",
+        "description": "Explore a network of fascinating caves and learn about their geological history.",
+        "costFrom": 15,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Walk along the Taff Trail",
+        "description": "A scenic and easy-to-access walking trail that follows the Taff River.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "13:00",
+      "type": "food",
+      "title": "The Tafarn y Garreg",
+      "foodType": "lunch",
+      "description": "A traditional Welsh pub, serving pub fare.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.886,
+      "lng": -3.44,
+      "travelToNext": "End",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic at Pontsticill Reservoir",
+        "description": "Enjoy a pre-packed picnic overlooking the serene waters."
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 175,
+      "accommodation": 50,
+      "food": 75,
+      "transport": 50,
+      "total": 350
+    },
+    "budget": {
+      "activities": 45,
+      "accommodation": 25,
+      "food": 30,
+      "transport": 40,
+      "total": 140
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "October-March in the Brecon Beacons can be cold, wet, and windy. Be prepared for all conditions and check the forecast before you go. Snow is possible on higher ground.",
+    "traffic": "Traffic can be heavy on the A470, especially during peak season and weekends. Parking at Pen y Fan can be challenging, arrive early or consider using public transport.",
+    "booking": "Book caving and gorge walking activities in advance, especially during school holidays. Accommodation also fills up quickly, so book well ahead of your trip.",
+    "fitness": "A moderate level of fitness is required for the Pen y Fan hike and caving activity. Be prepared for steep climbs and uneven terrain. Paddle Boarding requires a basic level of swimming ability."
+  }
+}

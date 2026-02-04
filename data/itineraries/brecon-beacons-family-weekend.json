@@ -1,0 +1,224 @@
+{
+  "slug": "brecon-beacons-family-weekend",
+  "title": "Brecon Beacons Family Weekend",
+  "tagline": "Caves, bikes, and gentle peaks for little legs",
+  "region": "brecon-beacons",
+  "days": 2,
+  "difficulty": "easy",
+  "bestSeason": "May-September",
+  "groupType": "families",
+  "priceFrom": 250,
+  "priceTo": 450,
+  "budgetPriceFrom": 150,
+  "budgetPriceTo": 300,
+  "highlights": [
+    "Dan yr Ogof caves",
+    "Bike trails",
+    "Easy summit walks"
+  ],
+  "activityTypes": [
+    "caving",
+    "mountain-biking",
+    "hiking"
+  ],
+  "suitableFor": "Families with children aged 8+ who enjoy gentle outdoor activities. Children should be comfortable with short walks and bike rides.",
+  "notSuitableFor": "Families looking for extreme sports or very challenging hikes. Those with mobility issues may find some activities difficult.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jackets",
+    "Walking boots",
+    "Sunscreen",
+    "Bike helmet",
+    "Snacks"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Dan yr Ogof Caves",
+      "description": "Explore the fascinating Dan yr Ogof cave system, a series of stunning underground caverns with impressive rock formations and waterfalls.",
+      "duration": "3 hours",
+      "costFrom": 20,
+      "costTo": 30,
+      "lat": 51.828,
+      "lng": -3.68,
+      "travelToNext": "15min drive via A4067",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Craig y Nos Castle Tour",
+        "description": "Take a guided tour of Craig y Nos Castle, a historic Victorian castle with a rich history and beautiful architecture.",
+        "costFrom": 10,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Penycae Community Park",
+        "description": "Enjoy a free visit to a local community park with play areas and green spaces.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Old White Horse Inn",
+      "foodType": "lunch",
+      "description": "A traditional pub serving classic pub fare and local ales.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.819,
+      "lng": -3.705,
+      "travelToNext": "20min drive via A4059",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Craig y Nos Country Park",
+        "description": "Enjoy your own sandwiches overlooking the scenic Craig y Nos Castle"
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "BikePark Wales (Family Trails)",
+      "description": "Rent bikes and enjoy a family-friendly ride on the easier trails at BikePark Wales, with graded routes suitable for beginners and younger riders.",
+      "duration": "2.5 hours",
+      "costFrom": 25,
+      "costTo": 45,
+      "lat": 51.725,
+      "lng": -3.37,
+      "travelToNext": "30min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "BikePark Wales Cafe & Skills Area",
+        "description": "Enjoy time in the cafe with views of the trails, with a pump track, skills area and bike shop for browsing.",
+        "costFrom": 5,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Taff Trail Cycle (Free)",
+        "description": "Cycle a section of the Taff Trail, a scenic and mostly flat path following the River Taff. Bring your own bikes or rent them locally.",
+        "costFrom": 0,
+        "costTo": 10
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Premier Inn Merthyr Tydfil",
+      "description": "A reliable and comfortable hotel option with family rooms, located close to BikePark Wales and local amenities.",
+      "costFrom": 50,
+      "costTo": 90,
+      "lat": 51.75,
+      "lng": -3.38,
+      "travelToNext": "45min drive via A4059",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Grawen Camping",
+        "description": "A campsite near Merthyr Tydfil, offering a budget-friendly option for families who enjoy camping.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Pen y Fan Hike (Pony Path)",
+      "description": "An easy and popular route to the summit of Pen y Fan, the highest peak in South Wales, offering stunning panoramic views (allow 2-3 hours).",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.883,
+      "lng": -3.437,
+      "travelToNext": "5min drive to Storey Arms",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Brecon Mountain Railway",
+        "description": "Enjoy a scenic steam train ride through the Brecon Beacons, offering views of the mountains and valleys.",
+        "costFrom": 15,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Lower Neuadd Reservoir Walk",
+        "description": "A scenic and accessible walk around the Lower Neuadd Reservoir, suitable for all ages and abilities.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Storey Arms Cafe",
+      "foodType": "lunch",
+      "description": "A convenient cafe at the base of Pen y Fan, offering sandwiches, snacks, and hot drinks.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 51.8835,
+      "lng": -3.4375,
+      "travelToNext": "1 hour drive via A470",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Pen y Fan summit",
+        "description": "Enjoy the view!"
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Llangorse Lake Paddle Boarding",
+      "description": "Enjoy a relaxing paddle boarding session on the tranquil Llangorse Lake, with options for beginners and experienced paddlers. (seasonal)",
+      "duration": "2 hours",
+      "costFrom": 45,
+      "costTo": 85,
+      "lat": 51.923,
+      "lng": -3.26,
+      "travelToNext": "End",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Llangorse Multi Activity Centre",
+        "description": "Indoor climbing, play barn and cafe",
+        "costFrom": 10,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Llangorse Lake Walk",
+        "description": "Enjoy a free walk along the shores of Llangorse Lake, taking in the scenic views and spotting local wildlife.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 130,
+      "accommodation": 70,
+      "food": 60,
+      "transport": 40,
+      "total": 300
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 20,
+      "food": 30,
+      "transport": 40,
+      "total": 90
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "The Brecon Beacons can experience unpredictable weather, even in summer. Be prepared for rain and wind, especially on higher ground. Check the forecast before you go.",
+    "traffic": "Traffic can be heavy on weekends, especially during school holidays. Allow extra time for travel, particularly on the A470. Parking at Pen y Fan (Storey Arms) fills up quickly; arrive early or consider using public transport.",
+    "booking": "Advance booking is highly recommended for BikePark Wales, Dan yr Ogof Caves, and Llangorse Lake paddle boarding, especially during peak season.",
+    "fitness": "This itinerary is designed for families with a reasonable level of fitness. The Pen y Fan hike is relatively easy, but it is still a climb. Mountain biking is on beginner-friendly trails. "
+  }
+}

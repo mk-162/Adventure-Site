@@ -1,0 +1,316 @@
+{
+  "slug": "pembrokeshire-island-hopping",
+  "title": "Pembrokeshire Island Explorer",
+  "tagline": "Wildlife, puffins, and sea stacks",
+  "region": "pembrokeshire",
+  "days": 3,
+  "difficulty": "easy",
+  "bestSeason": "May-July",
+  "groupType": "nature lovers, families",
+  "priceFrom": 450,
+  "priceTo": 850,
+  "budgetPriceFrom": 250,
+  "budgetPriceTo": 500,
+  "highlights": [
+    "Skomer puffins",
+    "Ramsey seals",
+    "Coastal walks"
+  ],
+  "activityTypes": [
+    "kayaking",
+    "hiking"
+  ],
+  "suitableFor": "Families with children aged 8+, nature enthusiasts, and anyone seeking gentle outdoor adventures. Those comfortable with boat trips and short walks.",
+  "notSuitableFor": "Individuals with limited mobility or those seeking extreme adventure activities. Very young children (under 5) may find the boat trips challenging.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Hiking boots",
+    "Binoculars",
+    "Sunscreen",
+    "Swimsuit"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Boat Trip - Ramsey Island",
+      "description": "Explore the rugged coastline of Ramsey Island and spot seals, seabirds, and maybe even dolphins on this guided boat tour.",
+      "duration": "3 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.862,
+      "lng": -5.329,
+      "travelToNext": "15min drive to St Davids",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "St Davids Cathedral Visit",
+        "description": "Explore the magnificent St Davids Cathedral, a historic and architectural gem.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Coastal Walk to St Justinian's Chapel",
+        "description": "Enjoy a scenic walk along the Pembrokeshire Coast Path to the ruins of St Justinian's Chapel.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Refectory",
+      "foodType": "lunch",
+      "description": "A cafe near St Davids Cathedral with delicious homemade food and cakes.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "5min walk to Whitesands Beach parking",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Whitesands Beach",
+        "description": "Enjoy your own picnic at Whitesands Beach with stunning views."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Surfing Lesson",
+      "description": "Learn to surf at the famous Whitesands Beach with TYF Adventure's expert instructors. All equipment provided.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 60,
+      "lat": 51.892,
+      "lng": -5.303,
+      "travelToNext": "20min drive to Porthclais",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "TYF Adventure Centre Visit",
+        "description": "Learn about sustainable adventures and browse eco-friendly gear at the TYF Adventure Centre in St Davids.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walk the Pembrokeshire Coast Path",
+        "description": "Take a walk along the Pembrokeshire Coast Path above Whitesands Beach towards St Davids Head for stunning views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "TYF Cliff-top Campsite",
+      "description": "A sustainable campsite at Porthclais Harbour, perfect for enjoying the sea views and dark skies.",
+      "costFrom": 15,
+      "costTo": 30,
+      "lat": 51.87,
+      "lng": -5.28,
+      "travelToNext": "5min drive to Porthclais Harbour",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Wild Camping (with permission)",
+        "description": "Find a spot and camp along the coast.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Sea Kayaking Safari",
+      "description": "Explore the Pembrokeshire coastline by kayak with TYF Adventure, paddling along cliffs, into caves, and spotting wildlife.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 85,
+      "lat": 51.87,
+      "lng": -5.28,
+      "travelToNext": "1 hour drive to Stackpole Quay",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Wool Museum",
+        "description": "Explore the history of the wool industry in Wales. Located in Drefach Felindre.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Explore Porthclais Harbour",
+        "description": "Wander around Porthclais Harbour, enjoy the views, and watch the boats.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Stackpole Inn",
+      "foodType": "lunch",
+      "description": "Traditional pub serving hearty meals and local ales near Stackpole Quay.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.616,
+      "lng": -4.891,
+      "travelToNext": "10min walk to Barafundle Bay",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Packed lunch at Barafundle Bay",
+        "description": "Enjoy a picnic at the beautiful Barafundle Bay."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Paddle Boarding",
+      "description": "Paddle board in Barafundle Bay. Outer Reef Surf School runs lessons here in the summer.",
+      "duration": "2 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.625,
+      "lng": -4.901,
+      "travelToNext": "15min drive to Stackpole Centre",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Pembroke Castle",
+        "description": "Visit the imposing Pembroke Castle with a fascinating history.",
+        "costFrom": 8,
+        "costTo": 12
+      },
+      "budgetAlt": {
+        "title": "Walk to Broadhaven South",
+        "description": "Take a scenic walk along the coast path from Barafundle Bay to Broadhaven South.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Stackpole Centre (National Trust)",
+      "description": "Cottages and camping facilities near Stackpole Quay, offering a comfortable base for exploring the area.",
+      "costFrom": 80,
+      "costTo": 200,
+      "lat": 51.616,
+      "lng": -4.891,
+      "travelToNext": "30min drive to Tenby",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Broadhaven Camping",
+        "description": "Campsite close to Broadhaven South Beach.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coasteering",
+      "description": "Experience the thrill of coasteering with Tenby Adventure, scrambling along the coastline, jumping into the sea, and exploring caves.",
+      "duration": "3 hours",
+      "costFrom": 50,
+      "costTo": 70,
+      "lat": 51.672,
+      "lng": -4.701,
+      "travelToNext": "10min walk to Tenby town centre",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Tenby Museum and Art Gallery",
+        "description": "Discover the history of Tenby at the Tenby Museum and Art Gallery.",
+        "costFrom": 5,
+        "costTo": 8
+      },
+      "budgetAlt": {
+        "title": "Explore Tenby's Beaches",
+        "description": "Wander around Tenby's beaches and walk along the harbour.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Mooring",
+      "foodType": "lunch",
+      "description": "Seafood restaurant in Tenby with views of the harbor.",
+      "costFrom": 15,
+      "costTo": 30,
+      "lat": 51.672,
+      "lng": -4.701,
+      "travelToNext": "20min drive to Freshwater West",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic on Castle Beach",
+        "description": "Enjoy a picnic on Castle Beach in Tenby."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Freshwater West beach walk",
+      "description": "Take a walk at Freshwater West, a beach famous for its dunes and surfing. Great spot for spotting wildlife.",
+      "duration": "1 hour",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.658,
+      "lng": -5.048,
+      "travelToNext": "End",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Carew Castle and Tidal Mill",
+        "description": "Explore the Carew Castle and Tidal Mill, two of Pembrokeshire's most historic sites.",
+        "costFrom": 7,
+        "costTo": 9
+      },
+      "budgetAlt": {
+        "title": "Dune exploration",
+        "description": "Explore the dunes at Freshwater West",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 215,
+      "accommodation": 185,
+      "food": 60,
+      "transport": 30,
+      "total": 490
+    },
+    "budget": {
+      "activities": 50,
+      "accommodation": 15,
+      "food": 20,
+      "transport": 30,
+      "total": 115
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Pembrokeshire weather can be unpredictable. Pack for all conditions, even in summer. Sea conditions can affect boat trips and kayaking.",
+    "traffic": "Traffic can be heavy in St Davids and Tenby during peak season. Arrive early to find parking. The road to St Justinian's (for Ramsey Island boat trips) is narrow; allow extra time.",
+    "booking": "Boat trips to Ramsey Island and Skomer Island, as well as coasteering and kayaking activities, should be booked well in advance, especially during school holidays.",
+    "fitness": "This itinerary involves moderate walking, including coastal paths. A reasonable level of fitness is required. Coasteering requires a basic level of swimming ability and confidence in the water."
+  }
+}

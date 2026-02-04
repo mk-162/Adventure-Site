@@ -1,0 +1,281 @@
+{
+  "slug": "snowdonia-wild-camping-trail",
+  "title": "Wild Camping & Wild Swimming",
+  "tagline": "Sleep under the stars, swim in mountain lakes",
+  "region": "snowdonia",
+  "days": 3,
+  "difficulty": "moderate",
+  "bestSeason": "June-September",
+  "groupType": "experienced, solo",
+  "priceFrom": 350,
+  "priceTo": 650,
+  "budgetPriceFrom": 150,
+  "budgetPriceTo": 300,
+  "highlights": [
+    "Llyn Idwal wild swim",
+    "Cwm Idwal camping",
+    "Summit sunrise"
+  ],
+  "activityTypes": [
+    "hiking",
+    "wild-swimming"
+  ],
+  "suitableFor": "Experienced hikers and wild campers comfortable with carrying gear, navigating in varied weather conditions, and basic outdoor survival skills. Solo adventurers will enjoy the solitude and challenge.",
+  "notSuitableFor": "Those with limited hiking experience, fear of heights, or who require comfortable amenities. Families with young children would find this difficult.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Waterproof tent",
+    "Sleeping bag (0-5°C rating)",
+    "Hiking boots",
+    "Water filter or purification tablets",
+    "OS Map OL17 Snowdonia",
+    "Headtorch",
+    "First-aid kit",
+    "Swimsuit",
+    "Towel",
+    "Sunscreen",
+    "Insect repellent"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Llyn Idwal Wild Swim & Hike",
+      "description": "Hike to Llyn Idwal, a stunning glacial lake nestled beneath towering cliffs, and take a refreshing (cold!) swim. A circular walk around the lake offers stunning views.",
+      "duration": "4 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.1217,
+      "lng": -4.0021,
+      "travelToNext": "10min drive via A5",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Slate Museum",
+        "description": "Explore the history of the Welsh slate industry at this fascinating museum in Llanberis.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Ogwen Cottage Visitor Centre",
+        "description": "Learn about the local geology and hiking routes at the Ogwen Cottage visitor center, offering maps and advice.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "13:00",
+      "type": "food",
+      "title": "Pete's Eats",
+      "foodType": "lunch",
+      "description": "A legendary cafe in Llanberis, serving hearty portions of classic cafe fare. Perfect for refueling after a hike.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 53.1209,
+      "lng": -4.1291,
+      "travelToNext": "15min drive to Cwm Idwal",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Ogwen viewpoint",
+        "description": "Enjoy your own packed lunch with panoramic views of Llyn Ogwen and Tryfan."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Cwm Idwal Wild Camping Setup",
+      "description": "Find a suitable (and legal) spot in Cwm Idwal to pitch your tent for the night. Enjoy the evening by the lake.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.1217,
+      "lng": -4.0021,
+      "travelToNext": "N/A",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Skip camping, book Ben's Bunkhouse",
+        "description": "Instead of camping, book into Ben's Bunkhouse in nearby Nant Peris for a dry and comfortable night.",
+        "costFrom": 25,
+        "costTo": 40
+      },
+      "budgetAlt": {
+        "title": "Free camping (check regulations)",
+        "description": "Ensure you're camping in a permitted area to avoid fines. Leave no trace!",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "05:00",
+      "type": "activity",
+      "title": "Snowdon Sunrise Hike (via Miners' Track)",
+      "description": "Start early to hike up Snowdon via the Miners' Track, aiming to reach the summit for sunrise. Pack warm layers and a headtorch!",
+      "duration": "6 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.08,
+      "lng": -4.02,
+      "travelToNext": "10min drive",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Snowdon Mountain Railway",
+        "description": "If the weather is truly terrible, take the train to the summit instead. Book in advance!",
+        "costFrom": 35,
+        "costTo": 45
+      },
+      "budgetAlt": {
+        "title": "Hike to a lower peak for sunrise",
+        "description": "Instead of Snowdon, hike to the summit of Moel Siabod for sunrise – a shorter and less crowded option.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Hiker's Cafe",
+      "foodType": "lunch",
+      "description": "Grab lunch at the Hiker's Cafe, a small establishment at Pen-y-Pass. Excellent hot food and a friendly atmosphere.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 53.0799,
+      "lng": -4.0196,
+      "travelToNext": "1hr 30min drive",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Picnic at Watkin Path Waterfall",
+        "description": "Enjoy a self-prepared picnic lunch at the picturesque waterfall on the Watkin Path, on the slopes of Snowdon."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "13:30",
+      "type": "activity",
+      "title": "Travel to Coed y Brenin",
+      "description": "Drive to Coed y Brenin forest, home to world-class mountain bike trails. Settle down for the evening.",
+      "duration": "1.5 hour",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "N/A",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Cafe/Shop at Coed y Brenin Visitor Centre",
+        "description": "If the weather is bad, spend the afternoon in the Coed y Brenin visitor center.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Watch the MTB riders",
+        "description": "Spend the afternoon watching experienced MTB riders navigating the course.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "15:00",
+      "type": "accommodation",
+      "title": "Wild Camp (Coed y Brenin)",
+      "description": "Set up your camp in a suitable spot at Coed y Brenin forest. Enjoy the evening in the wilderness.",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "N/A",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Platts Farm Campsite",
+        "description": "Camping at Platts farm, for cheap and simple accomodation.",
+        "costFrom": 15,
+        "costTo": 25
+      },
+      "wetAlt": {
+        "title": "Treks Bunkhouse",
+        "description": "Stay at Treks Bunkhouse, for simple accomodation.",
+        "costFrom": 25,
+        "costTo": 45
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "MinorTaur MTB Trail",
+      "description": "Cycle the MinorTaur trail at Coed y Brenin forest, a fun and flowing route suitable for most abilities.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 7,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "30min drive",
+      "travelMode": "bike",
+      "wetAlt": {
+        "title": "Walking Trails at Coed y Brenin",
+        "description": "If the trails are too wet, explore the forest on foot using the various walking trails.",
+        "costFrom": 0,
+        "costTo": 7
+      },
+      "budgetAlt": {
+        "title": "Walking Trails at Coed y Brenin",
+        "description": "Explore the walking trails, free of charge!",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "11:30",
+      "type": "food",
+      "title": "Coed y Brenin Cafe",
+      "foodType": "lunch",
+      "description": "Grab a coffee and a light lunch at the cafe at Coed y Brenin Visitor Centre before heading home.",
+      "costFrom": 8,
+      "costTo": 15,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "N/A",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch",
+        "description": "Eat your packed lunch from the day before."
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 0,
+      "accommodation": 0,
+      "food": 70,
+      "transport": 50,
+      "total": 120
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 0,
+      "food": 30,
+      "transport": 50,
+      "total": 80
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Snowdonia's weather is notoriously unpredictable. Be prepared for sudden changes, even in summer. Check the forecast before you go and pack layers.",
+    "traffic": "Parking at Pen-y-Pass and Llanberis fills up very early, especially during peak season and weekends. Arrive before 8am or use the park-and-ride service. The A5 can be congested.",
+    "booking": "The Snowdon Mountain Railway and popular campsites require advance booking. Wild camping is tolerated in some areas of Snowdonia National Park, but check the specific regulations and always leave no trace.",
+    "fitness": "This trip requires a good level of fitness. The hikes are challenging and involve significant elevation gain. Be prepared to carry a heavy backpack with camping gear and water."
+  }
+}

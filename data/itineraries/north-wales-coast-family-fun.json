@@ -1,0 +1,223 @@
+{
+  "slug": "north-wales-coast-family-fun",
+  "title": "North Wales Coast Family Fun",
+  "tagline": "Easy access adventure from the A55",
+  "region": "north-wales",
+  "days": 2,
+  "difficulty": "easy",
+  "bestSeason": "June-August",
+  "groupType": "families",
+  "priceFrom": 250,
+  "priceTo": 550,
+  "budgetPriceFrom": 120,
+  "budgetPriceTo": 280,
+  "highlights": [
+    "Zip World",
+    "Conwy Castle",
+    "Great Orme"
+  ],
+  "activityTypes": [
+    "zip-lining",
+    "hiking"
+  ],
+  "suitableFor": "Families with children aged 8 and up who enjoy moderate physical activity and exploring historical sites. Those comfortable with heights will especially enjoy Zip World.",
+  "notSuitableFor": "Families with very young children (under 5) or individuals with significant mobility limitations or a strong fear of heights. Those seeking challenging hikes should consider other itineraries.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Comfortable walking shoes",
+    "Sunscreen",
+    "Backpack",
+    "Snacks"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Zip World Fforest Coaster",
+      "description": "Experience the thrill of a gravity-driven toboggan run through the forest. Great fun for the whole family.",
+      "duration": "1.5 hours",
+      "costFrom": 35,
+      "costTo": 45,
+      "lat": 53.1284,
+      "lng": -3.8105,
+      "travelToNext": "25min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Bounce Below at Zip World Llechwedd",
+        "description": "Jump and play on giant trampolines in a disused slate mine.",
+        "costFrom": 30,
+        "costTo": 40
+      },
+      "budgetAlt": {
+        "title": "Gwydir Forest Park Walks",
+        "description": "Explore the beautiful Gwydir Forest with various walking trails suitable for all abilities. Parking charges apply.",
+        "costFrom": 3,
+        "costTo": 3
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Hangin' Pizzeria Betws-y-Coed",
+      "foodType": "lunch",
+      "description": "A popular pizzeria with delicious wood-fired pizzas and a relaxed atmosphere.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 53.1164,
+      "lng": -3.8052,
+      "travelToNext": "30min drive via A5",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Ogwen",
+        "description": "Enjoy stunning views of Tryfan while having a picnic by the lake."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Conwy Castle Exploration",
+      "description": "Discover the impressive medieval fortress of Conwy Castle, a UNESCO World Heritage Site.",
+      "duration": "2 hours",
+      "costFrom": 11,
+      "costTo": 14,
+      "lat": 53.2833,
+      "lng": -3.8278,
+      "travelToNext": "15min drive via A55",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Plas Mawr Elizabethan Town House",
+        "description": "Explore a well-preserved Elizabethan townhouse in the heart of Conwy.",
+        "costFrom": 8,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Walk the Conwy Town Walls",
+        "description": "Enjoy panoramic views of Conwy and the surrounding area from the historic town walls. Free access.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "The Castle Hotel, Conwy",
+      "description": "A charming hotel in the heart of Conwy, offering comfortable rooms and a convenient location.",
+      "costFrom": 120,
+      "costTo": 250,
+      "lat": 53.2836,
+      "lng": -3.8284,
+      "travelToNext": "5min drive to Llandudno",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Conwy Touring Park",
+        "description": "Camping and caravan site with good facilities, a short drive from Conwy.",
+        "costFrom": 30,
+        "costTo": 50
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Great Orme Tramway",
+      "description": "Take a scenic tram ride to the summit of the Great Orme, offering stunning coastal views.",
+      "duration": "2 hours",
+      "costFrom": 10,
+      "costTo": 12,
+      "lat": 53.3306,
+      "lng": -3.8336,
+      "travelToNext": "15min walk",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Llandudno Pier Arcade",
+        "description": "Enjoy classic seaside arcade games on Llandudno Pier.",
+        "costFrom": 5,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Hike the Great Orme",
+        "description": "Walk up the Great Orme via various trails, enjoying the coastal scenery (wear good shoes). Parking charges may apply at the base.",
+        "costFrom": 0,
+        "costTo": 3
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Home Cookin' Llandudno",
+      "foodType": "lunch",
+      "description": "A cozy cafe serving homemade lunches, cakes, and coffee.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 53.3243,
+      "lng": -3.8206,
+      "travelToNext": "30min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch on the beach",
+        "description": "Enjoy your own sandwiches on Llandudno's North Shore beach."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Welsh Mountain Zoo",
+      "description": "Discover a variety of animals from around the world at this popular zoo with stunning views.",
+      "duration": "3 hours",
+      "costFrom": 16,
+      "costTo": 20,
+      "lat": 53.2687,
+      "lng": -3.7856,
+      "travelToNext": "Departure",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Small World Theatre",
+        "description": "Catch a family-friendly show or workshop at this intimate theatre in Cardigan",
+        "costFrom": 8,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Bodnant Garden (National Trust)",
+        "description": "Explore the beautiful Bodnant Garden with its stunning terraces and plant collections (National Trust membership required or admission fee applies).",
+        "costFrom": 0,
+        "costTo": 15
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 92,
+      "accommodation": 120,
+      "food": 45,
+      "transport": 30,
+      "total": 287
+    },
+    "budget": {
+      "activities": 3,
+      "accommodation": 30,
+      "food": 0,
+      "transport": 30,
+      "total": 63
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "The North Wales coast can experience variable weather, even in summer. Pack layers and be prepared for rain. Coastal winds can be strong.",
+    "traffic": "Traffic along the A55 can be heavy during peak season, especially on weekends. Allow extra time for travel. Parking in Conwy and Llandudno can be challenging; use park-and-ride services where available.",
+    "booking": "Advance booking is essential for Zip World activities, especially during school holidays. Consider booking accommodation well in advance, too. Conwy Castle tickets can be booked online.",
+    "fitness": "This itinerary involves moderate walking, especially on the Great Orme and around Conwy Castle. The Fforest Coaster is suitable for most fitness levels."
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "slug": "mid-wales-mtb-trail",
+  "title": "Mid Wales Mountain Bike Trail",
+  "tagline": "Empty trails and epic descents at Dyfi",
+  "region": "mid-wales",
+  "days": 3,
+  "difficulty": "difficult",
+  "bestSeason": "April-October",
+  "groupType": "mountain bikers",
+  "priceFrom": 350,
+  "priceTo": 750,
+  "budgetPriceFrom": 200,
+  "budgetPriceTo": 400,
+  "highlights": [
+    "Dyfi Bike Park",
+    "Machynlleth trails",
+    "Hafren Forest"
+  ],
+  "activityTypes": [
+    "mountain-biking"
+  ],
+  "suitableFor": "Experienced mountain bikers with good fitness levels who are comfortable with technical trails and varied weather conditions.",
+  "notSuitableFor": "Beginner mountain bikers, those with limited fitness, or those who prefer perfectly groomed trails.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Mountain bike (or rental)",
+    "Helmet and protective gear",
+    "Waterproof jacket and trousers",
+    "Appropriate footwear",
+    "First-aid kit"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Dyfi Bike Park",
+      "description": "Start the adventure at Dyfi Bike Park, known for its challenging downhill trails built by Dan Atherton. Expect steep gradients and technical features.",
+      "duration": "3 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 52.615,
+      "lng": -3.835,
+      "travelToNext": "15min drive via A487",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Centre for Alternative Technology",
+        "description": "Explore sustainable living and technology in a covered environment.",
+        "costFrom": 12,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Explore Machynlleth Trails",
+        "description": "Ride the free trails around Machynlleth forest, offering a mix of terrain and skill levels.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Riverside Cafe Machynlleth",
+      "foodType": "lunch",
+      "description": "A popular cafe in Machynlleth serving hearty lunches and good coffee. Expect friendly service.",
+      "costFrom": 10,
+      "costTo": 15,
+      "lat": 52.59,
+      "lng": -3.85,
+      "travelToNext": "25min drive via A487",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Clywedog",
+        "description": "Enjoy your own lunch at the scenic Llyn Clywedog reservoir."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Hafren Forest Trails",
+      "description": "Explore the extensive network of trails in Hafren Forest, offering a mix of singletrack and forest roads. Be prepared for some climbing.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.48,
+      "lng": -3.55,
+      "travelToNext": "30min drive via B4518",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit King Arthur's Labyrinth",
+        "description": "An underground storytelling adventure in Corris.",
+        "costFrom": 15,
+        "costTo": 18
+      },
+      "budgetAlt": {
+        "title": "Walking trails around Llyn Clywedog",
+        "description": "Explore the walking paths around the lake.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "Hafren Forest Hideaway",
+      "description": "A remote hostel perfect for mountain bikers looking for a quiet night's sleep. Basic but clean and comfortable.",
+      "costFrom": 20,
+      "costTo": 40,
+      "lat": 52.5,
+      "lng": -3.6,
+      "travelToNext": "45min drive to Coed y Brenin",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Wild Camping (responsible)",
+        "description": "Find a suitable spot in Hafren Forest to pitch a tent. Ensure you leave no trace. (Permits may be required; check local regulations)",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Coed y Brenin Mountain Biking",
+      "description": "Explore the famous trails of Coed y Brenin, offering a variety of routes from easy to black-graded. Rent bikes at the visitor centre if needed.",
+      "duration": "4 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.78,
+      "lng": -3.88,
+      "travelToNext": "1 hour drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visitor Centre Exploration",
+        "description": "Browse the visitor centre, grab a coffee and read about local wildlife.",
+        "costFrom": 5,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Explore the lesser-known trails",
+        "description": "The parking is still free, so pick out a trail and go anyway",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "13:00",
+      "type": "food",
+      "title": "Cafe at Coed y Brenin Visitor Centre",
+      "foodType": "lunch",
+      "description": "Enjoy a casual lunch at the cafe located within the Coed y Brenin visitor centre. Good for a quick bite before heading on.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 52.78,
+      "lng": -3.88,
+      "travelToNext": "1.25 drive via A494 and A470",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Coed y Brenin",
+        "description": "Bring your own food and enjoy it at the picnic area."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Llandegla Mountain Biking",
+      "description": "Experience the thrills of Llandegla, with trails for all skill levels.",
+      "duration": "3 hours",
+      "costFrom": 4.5,
+      "costTo": 4.5,
+      "lat": 53.056,
+      "lng": -3.191,
+      "travelToNext": "5min drive via A5",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "The Lodge (Llandegla)",
+        "description": "Enjoy the warmth of an indoor fireplace, board games, read a book, or swap stories in the local pub.",
+        "costFrom": 0,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Walking trails around Llandegla",
+        "description": "Enjoy free walking trails.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "The Lodge (Llandegla)",
+      "description": "A bunkhouse perfect for mountain bikers looking for a quiet night's sleep. Basic but clean and comfortable.",
+      "costFrom": 25,
+      "costTo": 45,
+      "lat": 53.056,
+      "lng": -3.191,
+      "travelToNext": "Llandegla",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Wild Camping (responsible)",
+        "description": "Find a suitable spot in Llandegla Forest to pitch a tent. Ensure you leave no trace. (Permits may be required; check local regulations)",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Morning mountain biking in Llandegla Forest",
+      "description": "A final morning of mountain biking in Llandegla Forest on trails that fit your experience levels.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 53.056,
+      "lng": -3.191,
+      "travelToNext": "20min drive via A5",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Indoor cycling session",
+        "description": "Rent a session at an indoor cycling gym in Wrexham",
+        "costFrom": 15,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Walking trails around Llandegla",
+        "description": "Enjoy free walking trails instead of the costlier mountain biking",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Oneplanet Adventure Cafe",
+      "foodType": "lunch",
+      "description": "Enjoy a final lunch at Llandegla Forest before departing.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 53.056,
+      "lng": -3.191,
+      "travelToNext": "Head home",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch",
+        "description": "Enjoy a final lunch at Llandegla Forest before departing. Bring your own."
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 115,
+      "accommodation": 105,
+      "food": 70,
+      "transport": 60,
+      "total": 350
+    },
+    "budget": {
+      "activities": 5,
+      "accommodation": 25,
+      "food": 30,
+      "transport": 60,
+      "total": 120
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Mid Wales weather can be unpredictable. Pack for all conditions, including rain, wind, and sunshine. Check the forecast before you go.",
+    "traffic": "Traffic can be heavy on weekends and during school holidays, especially on the A470. Allow extra time for travel. Parking at popular trail centres can fill up quickly, so arrive early or consider carpooling.",
+    "booking": "Booking is essential for Dyfi Bike Park, especially on weekends. Check opening times and trail conditions before you travel. Bike hire should also be booked in advance.",
+    "fitness": "This itinerary requires a good level of fitness. The trails are challenging, and you'll be spending several hours in the saddle each day. Be prepared for climbs and technical descents."
+  }
+}

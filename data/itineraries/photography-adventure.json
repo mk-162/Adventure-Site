@@ -1,0 +1,290 @@
+{
+  "slug": "photography-adventure",
+  "title": "Photography & Adventure",
+  "tagline": "Capture Snowdonia at its most dramatic",
+  "region": "snowdonia",
+  "days": 3,
+  "difficulty": "easy",
+  "bestSeason": "September-November",
+  "groupType": "photographers, couples",
+  "priceFrom": 650,
+  "priceTo": 1200,
+  "budgetPriceFrom": 300,
+  "budgetPriceTo": 600,
+  "highlights": [
+    "Golden hour hikes",
+    "Waterfall trails",
+    "Coastal views"
+  ],
+  "activityTypes": [
+    "hiking",
+    "kayaking"
+  ],
+  "suitableFor": "Couples and keen amateur photographers of reasonable fitness who enjoy easy to moderate walks and scenic drives. Ideal for those seeking stunning landscape shots without extreme exertion.",
+  "notSuitableFor": "Those with mobility issues, those seeking extreme adventure sports, or anyone who dislikes walking. Young children may find some walks too long.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Hiking boots",
+    "Camera with spare batteries",
+    "Tripod",
+    "Warm layers",
+    "Head torch"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Llanberis Path Guided Walk",
+      "description": "A gentle ascent to the summit of Snowdon via the Llanberis Path, offering incredible panoramic views and photographic opportunities. Great for beginners.",
+      "duration": "5-7 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 53.119,
+      "lng": -4.131,
+      "travelToNext": "15min drive via A4086",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Slate Museum",
+        "description": "Explore the history of the slate industry in a fascinating indoor museum in Llanberis.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walk around Llyn Padarn",
+        "description": "A flat, easy walk around Llyn Padarn lake, with views of Snowdon and the surrounding mountains. Free parking available.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "16:30",
+      "type": "food",
+      "title": "Pete's Eats",
+      "foodType": "lunch/dinner",
+      "description": "A legendary cafe in Llanberis, famous for its huge portions and hearty meals, perfect after a long hike.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 53.1203,
+      "lng": -4.129,
+      "travelToNext": "5min drive",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Peris viewpoint",
+        "description": "Enjoy your own sandwiches and snacks with stunning lake views."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "18:00",
+      "type": "accommodation",
+      "title": "YHA Snowdon Llanberis",
+      "description": "A comfortable and well-located hostel in Llanberis, offering a mix of private rooms and dorms. Suited for couples or individual photographers.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 53.122,
+      "lng": -4.131,
+      "travelToNext": "20min drive to Capel Curig (Plas y Brenin)",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "The Snowdon Inn (Y Fricsan) Campsite",
+        "description": "Camping in Llanberis. Cheaper than a bunkhouse.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Sea Kayaking",
+      "description": "Explore the stunning coastline and Menai Strait by kayak, with guidance from experienced instructors. Focus on capturing the coastal scenery and wildlife.",
+      "duration": "1-5 days",
+      "costFrom": 150,
+      "costTo": 400,
+      "lat": 53.096,
+      "lng": -3.91,
+      "travelToNext": "20min drive to Betws-y-Coed",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Rock Climbing Taster",
+        "description": "Learn the basics of rock climbing at Plas y Brenin's indoor climbing wall.",
+        "costFrom": 150,
+        "costTo": 300
+      },
+      "budgetAlt": {
+        "title": "Walk along the Menai Strait",
+        "description": "Enjoy a scenic walk along the Menai Strait, taking in views of the bridges and Anglesey.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "13:00",
+      "type": "food",
+      "title": "Hangin' Pizzeria",
+      "foodType": "Lunch",
+      "description": "Pizza restaurant in Betws-y-Coed.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 53.0917,
+      "lng": -3.8014,
+      "travelToNext": "10min drive",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Picnic by the River Llugwy",
+        "description": "Enjoy a packed lunch by the river in Betws-y-Coed."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Zip World Fforest Coaster",
+      "description": "A thrilling toboggan run through the forest at Zip World Fforest, offering unique photo opportunities. Fun for all!",
+      "duration": "1-2 hours",
+      "costFrom": 25,
+      "costTo": 35,
+      "lat": 53.092,
+      "lng": -3.8,
+      "travelToNext": "30min drive to Capel Curig or back to Llanberis",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Explore Betws-y-Coed Village",
+        "description": "Browse the shops and art galleries in the charming village of Betws-y-Coed.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walking in Gwydir Forest",
+        "description": "Enjoy free forest walks starting from Betws-y-Coed, with various trails for all abilities.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "Plas y Brenin",
+      "description": "A renowned national mountain sports centre, offering comfortable accommodation and stunning views. Perfect for outdoor enthusiasts.",
+      "costFrom": 80,
+      "costTo": 150,
+      "lat": 53.096,
+      "lng": -3.91,
+      "travelToNext": "30min drive to Coed y Brenin",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Ben's Bunkhouse, Nant Peris",
+        "description": "Budget-friendly bunkhouse accommodation near Llanberis.",
+        "costFrom": 25,
+        "costTo": 40
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Mountain Biking - MinorTaur",
+      "description": "A family-friendly mountain bike trail at Coed y Brenin, offering stunning forest scenery and gentle gradients. Great for beginners and photographers.",
+      "duration": "1-3 hours",
+      "costFrom": 2,
+      "costTo": 7,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "Short drive to nearby waterfall trails",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Coed y Brenin Visitor Centre",
+        "description": "Enjoy the cafe and exhibits at the visitor centre while waiting out the rain.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Walking Trails at Coed y Brenin",
+        "description": "Explore the many free walking trails through Coed y Brenin forest. Parking charges apply.",
+        "costFrom": 2,
+        "costTo": 7
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Cafe at Coed y Brenin Visitor Centre",
+      "foodType": "Lunch",
+      "description": "Quick and easy cafe at the visitor centre",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "5min drive",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Packed lunch",
+        "description": "Have a packed lunch at the forest picnic area."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "13:30",
+      "type": "activity",
+      "title": "Waterfall trails near Dolgellau",
+      "description": "Visit several waterfalls in the Dolgellau area for photography. The most accessible is Rhaeadr Ddu waterfalls.",
+      "duration": "2-3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.7475,
+      "lng": -3.9351,
+      "travelToNext": "Drive back to base, or continue exploration of Southern Snowdonia",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit the town of Dolgellau",
+        "description": "Browse the shops and have a coffee",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Free",
+        "description": "This is free",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 222,
+      "accommodation": 185,
+      "food": 75,
+      "transport": 45,
+      "total": 527
+    },
+    "budget": {
+      "activities": 9,
+      "accommodation": 15,
+      "food": 30,
+      "transport": 45,
+      "total": 129
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "September-November can be wet and windy, but also offers stunning autumn colours and dramatic light. Check the forecast before you set off each day.",
+    "traffic": "Traffic can be heavy in Snowdonia, especially on weekends and during school holidays. Parking at popular spots like Pen-y-Pass fills up early.",
+    "booking": "Book Zip World activities and guided hikes well in advance, especially during peak season. Accommodation should also be booked ahead of time.",
+    "fitness": "This itinerary involves moderate walking and some gentle activity. A reasonable level of fitness is required."
+  }
+}

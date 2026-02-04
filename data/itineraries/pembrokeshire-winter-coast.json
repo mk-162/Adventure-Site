@@ -1,0 +1,269 @@
+{
+  "slug": "pembrokeshire-winter-coast",
+  "title": "Pembrokeshire Winter Coast",
+  "tagline": "Storm watching and wild walks",
+  "region": "pembrokeshire",
+  "days": 2,
+  "difficulty": "easy",
+  "bestSeason": "November-February",
+  "groupType": "couples, solo",
+  "priceFrom": 250,
+  "priceTo": 550,
+  "budgetPriceFrom": 150,
+  "budgetPriceTo": 300,
+  "highlights": [
+    "Storm watching",
+    "Empty beaches",
+    "Coastal path"
+  ],
+  "activityTypes": [
+    "hiking",
+    "wild-swimming"
+  ],
+  "suitableFor": "Adventurous individuals and couples who enjoy bracing walks, dramatic scenery, and don't mind a bit of wind and rain. Must be comfortable with potentially challenging coastal walking conditions.",
+  "notSuitableFor": "Those seeking guaranteed sunshine, luxury spa breaks, or have limited mobility.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Waterproof jacket and trousers",
+    "Warm layers (fleece, hat, gloves)",
+    "Sturdy walking boots",
+    "Thermos flask",
+    "Camera (waterproof recommended)"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Storm Watching at Newgale Beach",
+      "description": "Witness the raw power of the Atlantic as winter storms batter the Pembrokeshire coast. Newgale's long, exposed beach is perfect for dramatic wave watching.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.858,
+      "lng": -5.12,
+      "travelToNext": "30min drive via A487",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Wool Museum",
+        "description": "Explore the history of the Welsh wool industry at this fascinating museum in Dre-fach Felindre.",
+        "costFrom": 7,
+        "costTo": 9
+      },
+      "budgetAlt": {
+        "title": "Beach walk at Newgale",
+        "description": "Enjoy a blustery walk along the beach, even in milder weather. Collect shells and enjoy the fresh air.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "The Shed at Porthgain",
+      "foodType": "lunch",
+      "description": "A harbourside restaurant serving fresh seafood and hearty pub fare.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.929,
+      "lng": -5.229,
+      "travelToNext": "20 min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Porthgain Harbour",
+        "description": "Enjoy your own picnic while watching the boats bob in the harbour."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Coastal Walk: Porthgain to Abereiddy",
+      "description": "A scenic section of the Pembrokeshire Coast Path, offering stunning views of the coastline and the Blue Lagoon (approx. 2 hours).",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.929,
+      "lng": -5.229,
+      "travelToNext": "15min drive via B4583",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "St Davids Cathedral",
+        "description": "Explore this historic cathedral in the heart of St Davids. Marvel at the architecture and stained glass.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Explore Abereiddy Blue Lagoon",
+        "description": "Walk around the perimeter of the former quarry and take photos of the dramatic landscape.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "St Davids YHA",
+      "description": "A comfortable and affordable hostel in the heart of St Davids, perfect for budget-conscious travelers.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "5min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "TYF Cliff-top Campsite",
+        "description": "A basic campsite near St Davids, offering stunning views.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 5,
+      "time": "19:00",
+      "type": "food",
+      "title": "The Bishops",
+      "foodType": "dinner",
+      "description": "A local pub in St Davids offering hearty meals.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "N/A",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Shop in St Davids",
+        "description": "Buy food from the supermarket to cook at the YHA or campsite."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Walk to Whitesands Beach",
+      "description": "A short walk to Whitesands Beach to enjoy the scenery.",
+      "duration": "1 hour",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "10min drive",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Oriel y Parc Landscape Gallery",
+        "description": "Explore art exhibitions showcasing the Pembrokeshire landscape.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Beach Walk",
+        "description": "Walk along the beach.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "10:00",
+      "type": "activity",
+      "title": "Wild Swimming at Whitesands Beach (Optional)",
+      "description": "A bracing dip in the sea for the hardy. Be aware of conditions, only swim if safe and confident.",
+      "duration": "30 mins",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.892,
+      "lng": -5.303,
+      "travelToNext": "30min drive",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Warm Drink at Whitesands Cafe",
+        "description": "Relax with a warm drink at Whitesands Cafe.",
+        "costFrom": 5,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Beach Walk",
+        "description": "Walk along the beach.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "12:00",
+      "type": "food",
+      "title": "Whitesands Beach Cafe",
+      "foodType": "lunch",
+      "description": "A cafe right on the beach.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 51.892,
+      "lng": -5.303,
+      "travelToNext": "1 hour drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Whitesands",
+        "description": "Enjoy your own picnic."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "13:00",
+      "type": "activity",
+      "title": "Drive to Freshwater West and explore the beach",
+      "description": "Drive 1 hour and explore Freshwater West beach, famous for Harry Potter filming.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.658,
+      "lng": -5.048,
+      "travelToNext": "N/A",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Pembroke Castle",
+        "description": "Visit Pembroke Castle.",
+        "costFrom": 8,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Explore the beach",
+        "description": "Explore the beach.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 0,
+      "accommodation": 50,
+      "food": 80,
+      "transport": 120,
+      "total": 250
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 20,
+      "food": 40,
+      "transport": 90,
+      "total": 150
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Expect changeable weather, including strong winds, rain, and potentially some sunshine. Check the forecast before you go and be prepared for all conditions.",
+    "traffic": "Traffic can be heavy in St Davids, especially during weekends and school holidays. Parking can be limited, so arrive early or use park-and-ride facilities. The roads to Freshwater West can be narrow and winding.",
+    "booking": "Accommodation should be booked well in advance, especially during peak season. Some restaurants may require reservations, particularly for dinner.",
+    "fitness": "A reasonable level of fitness is required for coastal walking. Some sections of the Pembrokeshire Coast Path can be challenging, with steep climbs and uneven terrain. Be prepared for potentially muddy conditions."
+  }
+}

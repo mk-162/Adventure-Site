@@ -1,0 +1,170 @@
+{
+  "slug": "north-wales-adrenaline-day",
+  "title": "North Wales Adrenaline Day",
+  "tagline": "Maximum thrills in a single day",
+  "region": "north-wales",
+  "days": 1,
+  "difficulty": "difficult",
+  "bestSeason": "March-October",
+  "groupType": "thrill-seekers",
+  "priceFrom": 250,
+  "priceTo": 400,
+  "budgetPriceFrom": 80,
+  "budgetPriceTo": 150,
+  "highlights": [
+    "Velocity 2",
+    "Surf Snowdonia",
+    "Via Ferrata"
+  ],
+  "activityTypes": [
+    "zip-lining",
+    "surfing",
+    "climbing"
+  ],
+  "suitableFor": "Fit individuals and groups seeking high-adrenaline activities and comfortable with heights and water sports. Must be over 10 years old for some activities.",
+  "notSuitableFor": "Those with significant mobility issues, fear of heights, or those not comfortable in or around water. Young children under 10.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Sturdy walking shoes",
+    "Swimsuit",
+    "Towel",
+    "Sunscreen"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Velocity 2 at Zip World Penrhyn Quarry",
+      "description": "Experience the fastest zip line in the world, reaching speeds of over 100 mph while taking in stunning views of the quarry and surrounding landscape.",
+      "duration": "2 hours",
+      "costFrom": 89,
+      "costTo": 129,
+      "lat": 53.2184,
+      "lng": -4.1431,
+      "travelToNext": "25min drive via A55",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Bounce Below at Zip World Llechwedd",
+        "description": "Explore a series of giant trampolines in a disused slate mine.",
+        "costFrom": 32,
+        "costTo": 38
+      },
+      "budgetAlt": {
+        "title": "Explore Penrhyn Quarry Railway Path",
+        "description": "Hike or bike along the scenic path, offering views of the quarry and surrounding mountains, for free.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Heights Cafe & Bistro",
+      "foodType": "lunch",
+      "description": "A cafe bistro at Zip World Penrhyn Quarry serving casual meals with incredible views.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 53.2184,
+      "lng": -4.1431,
+      "travelToNext": "30min drive via A470",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Ogwen",
+        "description": "Enjoy your own lunch with stunning views of the lake and mountains."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Surf Snowdonia Adventure Parc",
+      "description": "Ride the waves at the UK's only artificial surf lagoon, suitable for all skill levels, with a range of other watersports available.",
+      "duration": "3 hours",
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 53.2131,
+      "lng": -3.8123,
+      "travelToNext": "20min drive via A55 and A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Indoor Climbing at Beacon Climbing Centre",
+        "description": "A world-class indoor climbing centre offering a variety of climbing routes for all abilities.",
+        "costFrom": 12,
+        "costTo": 18
+      },
+      "budgetAlt": {
+        "title": "Walk along the Conwy Estuary",
+        "description": "Enjoy a free and scenic walk along the estuary, taking in views of Conwy Castle and the surrounding countryside.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "food",
+      "title": "The Groes Inn",
+      "foodType": "Dinner",
+      "description": "A historic pub serving excellent food in a cozy atmosphere.",
+      "costFrom": 20,
+      "costTo": 35,
+      "lat": 53.2437,
+      "lng": -3.8333,
+      "travelToNext": "15min drive via B5106",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic Dinner by the River Conwy",
+        "description": "Bring your own food and enjoy a relaxing dinner by the picturesque River Conwy."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 5,
+      "time": "19:30",
+      "type": "accommodation",
+      "title": "Plas Brondanw Gardens and Accommodation",
+      "description": "A charming B&B with beautiful gardens.",
+      "costFrom": 90,
+      "costTo": 150,
+      "lat": 53.0073,
+      "lng": -4.0481,
+      "travelToNext": null,
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Camping at Bryn Dinas Camping Pods",
+        "description": "Affordable camping pods with basic amenities.",
+        "costFrom": 25,
+        "costTo": 40
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 134,
+      "accommodation": 100,
+      "food": 50,
+      "transport": 40,
+      "total": 324
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 30,
+      "food": 15,
+      "transport": 40,
+      "total": 85
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "North Wales weather is unpredictable. Be prepared for rain even in summer. Check the forecast before you go and pack layers.",
+    "traffic": "Traffic can be heavy on the A55, especially during peak season. Allow extra time for travel. Parking at Zip World and Surf Snowdonia can be busy, arrive early.",
+    "booking": "Advance booking is essential for Velocity 2, Surf Snowdonia, and many other adventure activities, especially during school holidays and weekends. Book accommodation well in advance too.",
+    "fitness": "This trip requires a reasonable level of fitness due to the physical nature of the activities. Be prepared for walking, climbing, and potentially swimming."
+  }
+}

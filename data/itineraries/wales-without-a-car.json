@@ -1,0 +1,440 @@
+{
+  "slug": "wales-without-a-car",
+  "title": "Wales Without a Car",
+  "tagline": "Public transport adventure across Wales",
+  "region": "multi",
+  "days": 5,
+  "difficulty": "moderate",
+  "bestSeason": "May-September",
+  "groupType": "solo, budget",
+  "priceFrom": 650,
+  "priceTo": 1200,
+  "budgetPriceFrom": 350,
+  "budgetPriceTo": 700,
+  "highlights": [
+    "TrawsCymru bus",
+    "Heart of Wales Line",
+    "Coastal buses"
+  ],
+  "activityTypes": [
+    "hiking",
+    "surfing",
+    "coasteering"
+  ],
+  "suitableFor": "Active solo travellers or small groups comfortable with public transport and moderate physical activity. Those interested in exploring the natural beauty of Wales on a budget.",
+  "notSuitableFor": "Those with mobility issues, families with young children requiring strollers, or those seeking luxury travel experiences.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket",
+    "Hiking boots",
+    "Reusable water bottle",
+    "Swimsuit",
+    "Towel"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Snowdon Summit Hike",
+      "description": "Hike to the summit of Snowdon via the Llanberis Path. Enjoy panoramic views of Snowdonia National Park.",
+      "duration": "6-7 hours",
+      "costFrom": 60,
+      "costTo": 80,
+      "lat": 53.119,
+      "lng": -4.131,
+      "travelToNext": "15 min walk via A4086 to Llanberis town",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "National Slate Museum",
+        "description": "Explore the history of the Welsh slate industry.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Llanberis Lake Railway",
+        "description": "Enjoy scenic views of Snowdon on a vintage steam train.",
+        "costFrom": 20,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "16:30",
+      "type": "food",
+      "title": "Pete's Eats",
+      "foodType": "lunch",
+      "description": "A legendary cafe in Llanberis known for its hearty portions and climber-friendly atmosphere.",
+      "costFrom": 10,
+      "costTo": 15,
+      "lat": 53.1206,
+      "lng": -4.1281,
+      "travelToNext": "10min walk to YHA Llanberis",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Peris viewpoint",
+        "description": "Enjoy your packed lunch with views of Llyn Peris."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "18:00",
+      "type": "accommodation",
+      "title": "YHA Snowdon Llanberis",
+      "description": "Budget-friendly hostel in the heart of Llanberis, perfect for hikers.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 53.1228,
+      "lng": -4.1266,
+      "travelToNext": "5 min walk to Llanberis bus stop",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "The Snowdon Inn (Y Fricsan) Camping",
+        "description": "Camping option with basic facilities.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "travel",
+      "title": "TrawsCymru T2 Bus to Aberystwyth",
+      "description": "Take the TrawsCymru T2 bus from Llanberis to Aberystwyth. Enjoy the scenic route through Snowdonia.",
+      "duration": "3-4 hours",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 53.1206,
+      "lng": -4.1281,
+      "travelToNext": "5 min walk to Aberystwyth town centre",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "N/A",
+        "description": "This is the primary transport method."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "13:00",
+      "type": "food",
+      "title": "Baravin",
+      "foodType": "lunch",
+      "description": "Popular beachfront restaurant in Aberystwyth with fresh seafood and great views.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 52.4144,
+      "lng": -4.0835,
+      "travelToNext": "5 min walk to Aberystwyth Castle",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Picnic on Aberystwyth beach",
+        "description": "Enjoy your own food with a view."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Aberystwyth Castle Exploration",
+      "description": "Explore the ruins of Aberystwyth Castle and learn about its history. Free entry.",
+      "duration": "1-2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.4155,
+      "lng": -4.0845,
+      "travelToNext": "10 min walk to Aberystwyth train station",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "Aberystwyth Arts Centre",
+        "description": "Catch a performance or browse the galleries.",
+        "costFrom": 5,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "N/A",
+        "description": "Free activity."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Aberystwyth Accommodation (Independent)",
+      "description": "Many small hotels and guesthouses are available near the train station",
+      "costFrom": 40,
+      "costTo": 90,
+      "lat": 52.4144,
+      "lng": -4.0835,
+      "travelToNext": "Next day bus stop",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Aberystwyth University (Summer)",
+        "description": "Dormitory accommodations are sometimes available during the summer months",
+        "costFrom": 25,
+        "costTo": 45
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "travel",
+      "title": "TrawsCymru T5 to Fishguard",
+      "description": "Catch the T5 TrawsCymru bus, a scenic coastal route",
+      "duration": "2-3 hours",
+      "costFrom": 12,
+      "costTo": 20,
+      "lat": 52.4144,
+      "lng": -4.0835,
+      "travelToNext": "5 min walk to Fishguard town",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "N/A",
+        "description": "Public bus travel"
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "The Gourmet Pig",
+      "foodType": "lunch",
+      "description": "Casual eatery known for gourmet sandwiches",
+      "costFrom": 8,
+      "costTo": 15,
+      "lat": 51.9549,
+      "lng": -4.9851,
+      "travelToNext": "30 min bus ride to St Davids",
+      "travelMode": "bus",
+      "budgetAlt": {
+        "title": "Packed lunch at Fishguard Harbour",
+        "description": "Enjoy your own food with views of the harbour."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Coasteering Classic",
+      "description": "Explore the rugged coastline of Pembrokeshire with TYF Adventure on a classic coasteering experience.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 60,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "5 minute walk to St Davids YHA",
+      "travelMode": "walk",
+      "wetAlt": {
+        "title": "St Davids Cathedral",
+        "description": "Explore the magnificent St Davids Cathedral.",
+        "costFrom": 0,
+        "costTo": 5
+      },
+      "budgetAlt": {
+        "title": "Coastal Walk",
+        "description": "Hike a section of the Pembrokeshire Coast Path.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 4,
+      "time": "18:00",
+      "type": "accommodation",
+      "title": "St Davids YHA",
+      "description": "Budget-friendly hostel in the heart of St Davids, close to the coast.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "Next day surfing",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "TYF Cliff-top Campsite",
+        "description": "Camping with stunning coastal views near Porthclais.",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Surfing Lesson",
+      "description": "Learn to surf at Whitesands Beach with TYF Adventure. All equipment provided.",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 60,
+      "lat": 51.892,
+      "lng": -5.303,
+      "travelToNext": "Bus to Haverfordwest",
+      "travelMode": "bus",
+      "wetAlt": {
+        "title": "Oriel y Parc Gallery",
+        "description": "National Park visitor centre and art gallery.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Swim at Whitesands Beach",
+        "description": "Enjoy a swim in the sea (weather permitting).",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 2,
+      "time": "13:00",
+      "type": "food",
+      "title": "The Bishops",
+      "foodType": "lunch",
+      "description": "Pub in St Davids offering lunch and snacks",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "Bus to Haverfordwest",
+      "travelMode": "bus",
+      "budgetAlt": {
+        "title": "Picnic lunch in St Davids",
+        "description": "Sandwiches from the local Spar"
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 3,
+      "time": "15:00",
+      "type": "travel",
+      "title": "Bus T4 Haverfordwest to Builth Wells",
+      "description": "A long travel day on the T4 but gives insight into interior Wales",
+      "duration": "4-5 hours",
+      "costFrom": 20,
+      "costTo": 35,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "Builth Wells",
+      "travelMode": "bus",
+      "budgetAlt": {
+        "title": "N/A",
+        "description": "Public Bus transport"
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 4,
+      "time": "20:00",
+      "type": "accommodation",
+      "title": "Builth Wells Accommodation (independent)",
+      "description": "Find a room from the Tourist Information Centre",
+      "costFrom": 40,
+      "costTo": 80,
+      "lat": 52.1595,
+      "lng": -3.4087,
+      "travelToNext": "To train station",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Builth Wells Camping",
+        "description": "Search the web for campsites near Builth Wells",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 5,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "travel",
+      "title": "Heart of Wales Line to Shrewsbury",
+      "description": "Take the scenic Heart of Wales Line train from Builth Wells to Shrewsbury.",
+      "duration": "2-3 hours",
+      "costFrom": 20,
+      "costTo": 40,
+      "lat": 52.1595,
+      "lng": -3.4087,
+      "travelToNext": "Shrewsbury",
+      "travelMode": "train",
+      "budgetAlt": {
+        "title": "N/A",
+        "description": "Train travel"
+      }
+    },
+    {
+      "day": 5,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "The Shrewsbury Coffee House",
+      "foodType": "lunch",
+      "description": "Popular coffee shop with light lunch options.",
+      "costFrom": 8,
+      "costTo": 15,
+      "lat": 52.7088,
+      "lng": -2.7555,
+      "travelToNext": "Shrewsbury Abbey",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Packed Lunch at the Quarry Park",
+        "description": "Enjoy a scenic picnic in Shrewsbury's Quarry Park."
+      }
+    },
+    {
+      "day": 5,
+      "orderIndex": 3,
+      "time": "13:30",
+      "type": "activity",
+      "title": "Shrewsbury Abbey Visit",
+      "description": "Explore the historic Shrewsbury Abbey. Free entry, donations welcome.",
+      "duration": "1-2 hours",
+      "costFrom": 0,
+      "costTo": 5,
+      "lat": 52.7085,
+      "lng": -2.7525,
+      "travelToNext": "N/A",
+      "travelMode": "N/A",
+      "wetAlt": {
+        "title": "Shrewsbury Museum and Art Gallery",
+        "description": "Discover local history and art collections.",
+        "costFrom": 5,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "N/A",
+        "description": "Cheap or free activity."
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 180,
+      "accommodation": 200,
+      "food": 80,
+      "transport": 92,
+      "total": 552
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 75,
+      "food": 40,
+      "transport": 92,
+      "total": 207
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Welsh weather is unpredictable. Be prepared for rain even in summer. Coastal areas can be windy.",
+    "traffic": "Parking in Snowdonia can be extremely challenging, especially during peak season. Arrive early or use park-and-ride services. The TrawsCymru bus service is generally reliable, but check timetables in advance.",
+    "booking": "Book accommodations, especially hostels, well in advance, particularly for weekends and holidays. Some activities like coasteering require pre-booking.",
+    "fitness": "A moderate level of fitness is required for hiking and coasteering. Be prepared for walking and standing for extended periods when using public transport."
+  }
+}

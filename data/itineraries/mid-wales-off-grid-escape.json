@@ -1,0 +1,358 @@
+{
+  "slug": "mid-wales-off-grid-escape",
+  "title": "Mid Wales Off-Grid Escape",
+  "tagline": "No signal, no crowds, pure Wales",
+  "region": "mid-wales",
+  "days": 3,
+  "difficulty": "moderate",
+  "bestSeason": "May-September",
+  "groupType": "solo, couples",
+  "priceFrom": 350,
+  "priceTo": 750,
+  "budgetPriceFrom": 180,
+  "budgetPriceTo": 350,
+  "highlights": [
+    "Elan Valley",
+    "Red kite country",
+    "Night sky walks"
+  ],
+  "activityTypes": [
+    "hiking",
+    "wild-swimming"
+  ],
+  "suitableFor": "Couples or solo travellers seeking peace, quiet, and outdoor activities away from crowds. Those with a reasonable level of fitness who enjoy walking and exploring natural landscapes.",
+  "notSuitableFor": "Families with young children needing constant entertainment, or anyone seeking a fast-paced, action-packed holiday with readily available amenities and nightlife.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket and trousers",
+    "Hiking boots",
+    "Headtorch",
+    "Swimsuit and towel",
+    "Offline maps"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Elan Valley Reservoirs Walk",
+      "description": "Explore the stunning Craig Goch dam and reservoir with a moderate walk along the water's edge.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.27,
+      "lng": -3.55,
+      "travelToNext": "15min drive via B4518",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Elan Valley Visitor Centre",
+        "description": "Learn about the history and engineering of the Elan Valley dams in the covered visitor centre.",
+        "costFrom": 0,
+        "costTo": 5
+      },
+      "budgetAlt": {
+        "title": "Picnic at Pen y Garreg Reservoir",
+        "description": "Enjoy the views of Pen y Garreg with a packed lunch.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Elan Valley Hotel Restaurant",
+      "foodType": "lunch",
+      "description": "A traditional hotel restaurant with views over the valley serving classic Welsh dishes.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 52.273,
+      "lng": -3.538,
+      "travelToNext": "10min drive to Garreg Ddu Dam",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Garreg Ddu Dam",
+        "description": "Bring your own lunch to enjoy by the dam"
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Wild Swimming at Garreg Ddu Dam",
+      "description": "Take a refreshing dip in the clear waters below the picturesque Garreg Ddu Dam (check water safety first).",
+      "duration": "1 hour",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.288,
+      "lng": -3.558,
+      "travelToNext": "45min drive to accommodation",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Devil's Bridge Falls",
+        "description": "Explore the iconic waterfalls and bridges (moderate walk with steps).",
+        "costFrom": 8,
+        "costTo": 8
+      },
+      "budgetAlt": {
+        "title": "Paddling in the River Elan",
+        "description": "Find a shallow spot along the river for a paddle instead of swimming.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "Hafren Forest Hideaway",
+      "description": "A remote and cosy bunkhouse perfect for those wanting to escape the crowds and enjoy the surrounding forest.",
+      "costFrom": 20,
+      "costTo": 40,
+      "lat": 52.557,
+      "lng": -3.615,
+      "travelToNext": "30min drive to Llyn Clywedog",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Wild Camping near Llyn Clywedog (permit required)",
+        "description": "Find a secluded spot for a truly off-grid camping experience.",
+        "costFrom": 5,
+        "costTo": 10
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 5,
+      "time": "20:00",
+      "type": "food",
+      "title": "Self Catering",
+      "foodType": "Dinner",
+      "description": "Prepare a simple meal at the accommodation",
+      "costFrom": 5,
+      "costTo": 10,
+      "lat": 52.557,
+      "lng": -3.615,
+      "travelToNext": "N/A",
+      "travelMode": "N/A",
+      "budgetAlt": {
+        "title": "Self Catering",
+        "description": "Prepare a simple meal at the accommodation",
+        "costFrom": 5,
+        "costTo": 10
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Llyn Clywedog Walk",
+      "description": "Enjoy a scenic walk along the shores of Llyn Clywedog, Mid Wales' largest lake.",
+      "duration": "2.5 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.47,
+      "lng": -3.58,
+      "travelToNext": "30min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Explore the Centre for Alternative Technology",
+        "description": "Discover eco-friendly technologies and sustainable living practices (entry fee applies).",
+        "costFrom": 13,
+        "costTo": 13
+      },
+      "budgetAlt": {
+        "title": "Free trail in Hafren Forest",
+        "description": "Enjoy marked trail, views of Llyn Clywedog",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "The Old Mill Cafe",
+      "foodType": "lunch",
+      "description": "A cafe near Llyn Clywedog which offer lunch and cakes",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 52.47,
+      "lng": -3.59,
+      "travelToNext": "30min drive via A470",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic by Llyn Clywedog",
+        "description": "Enjoy packed lunch with beautiful views"
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "SUP at Meadow Springs",
+      "description": "Explore a beautiful lake surrounded by farmland. Operator: Meadow Springs",
+      "duration": "2 hours",
+      "costFrom": 35,
+      "costTo": 50,
+      "lat": 52.482,
+      "lng": -3.438,
+      "travelToNext": "40min drive via A489",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Explore the Centre for Alternative Technology",
+        "description": "A place to learn about new technologies",
+        "costFrom": 13,
+        "costTo": 13
+      },
+      "budgetAlt": {
+        "title": "Paddling in the river at Llanidloes",
+        "description": "Find a shallow spot along the river for a paddle instead of SUP.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "Machynlleth YHA",
+      "description": "A convenient and budget-friendly hostel in the heart of Machynlleth, with easy access to amenities.",
+      "costFrom": 25,
+      "costTo": 60,
+      "lat": 52.59,
+      "lng": -3.85,
+      "travelToNext": "10min walk to town centre",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Camping near Machynlleth (check local campsites)",
+        "description": "Several campsites available within a short drive of Machynlleth.",
+        "costFrom": 10,
+        "costTo": 20
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 5,
+      "time": "19:00",
+      "type": "food",
+      "title": "Red Lion Hotel",
+      "foodType": "Dinner",
+      "description": "A cozy pub with a good range of ales",
+      "costFrom": 15,
+      "costTo": 30,
+      "lat": 52.593,
+      "lng": -3.855,
+      "travelToNext": "N/A",
+      "travelMode": "N/A",
+      "budgetAlt": {
+        "title": "Self Catering",
+        "description": "Prepare a simple meal at the hostel",
+        "costFrom": 5,
+        "costTo": 10
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Dyfi Forest Walk",
+      "description": "Explore the rugged terrain of Dyfi Forest.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.59,
+      "lng": -3.85,
+      "travelToNext": "30min drive to Dolgellau",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Explore Machynlleth Town",
+        "description": "Browse the local shops and cafes in Machynlleth's charming town centre.",
+        "costFrom": 0,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Explore Machynlleth town park",
+        "description": "See the clock tower",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Royal Ship Hotel",
+      "foodType": "Lunch",
+      "description": "Traditional pub lunch in the heart of Dolgellau.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 52.751,
+      "lng": -3.88,
+      "travelToNext": "5 min drive to Coed y Brenin",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch",
+        "description": "Picnic in Dolgellau town park."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Mountain Biking at Coed y Brenin",
+      "description": "Enjoy the world-class mountain bike trails at Coed y Brenin Forest Park (trail difficulty varies).",
+      "duration": "2-3 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 52.79,
+      "lng": -3.83,
+      "travelToNext": "End of Itinerary",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Coed y Brenin Visitor Centre",
+        "description": "Explore the visitor centre and enjoy the cafe facilities.",
+        "costFrom": 0,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Walking Trails at Coed y Brenin",
+        "description": "Explore marked trails",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 35,
+      "accommodation": 115,
+      "food": 100,
+      "transport": 100,
+      "total": 350
+    },
+    "budget": {
+      "activities": 0,
+      "accommodation": 55,
+      "food": 50,
+      "transport": 75,
+      "total": 180
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Mid Wales weather can be unpredictable. Be prepared for rain even in summer. Check the forecast before you set off.",
+    "traffic": "Traffic can be heavy on weekends and during school holidays, especially on the A470 and A487. Parking at popular locations like Elan Valley can fill up quickly – arrive early.",
+    "booking": "Accommodation should be booked in advance, especially during peak season. Some activities, like guided tours or bike hire, may also require advance booking.",
+    "fitness": "A reasonable level of fitness is required for this trip, as it involves walking and potentially some swimming. Some trails can be steep and uneven."
+  }
+}

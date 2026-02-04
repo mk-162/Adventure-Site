@@ -1,0 +1,383 @@
+{
+  "slug": "multi-sport-challenge",
+  "title": "South Wales Multi-Sport Challenge",
+  "tagline": "Bike, climb, paddle, repeat",
+  "region": "south-wales",
+  "days": 4,
+  "difficulty": "difficult",
+  "bestSeason": "April-October",
+  "groupType": "fitness enthusiasts",
+  "priceFrom": 750,
+  "priceTo": 1200,
+  "budgetPriceFrom": 400,
+  "budgetPriceTo": 700,
+  "highlights": [
+    "BikePark Wales",
+    "Climbing",
+    "Surfing"
+  ],
+  "activityTypes": [
+    "mountain-biking",
+    "climbing",
+    "surfing"
+  ],
+  "suitableFor": "Experienced mountain bikers, climbers with some outdoor experience, and those comfortable in the ocean. Requires a high level of fitness and stamina.",
+  "notSuitableFor": "Beginners in any of the sports, those with a fear of heights or water, or individuals with pre-existing injuries that could be aggravated by strenuous activity.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Waterproof jacket and trousers",
+    "Sunscreen",
+    "Appropriate footwear for biking, climbing and surfing",
+    "Helmet",
+    "First-aid kit"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "BikePark Wales Day Pass",
+      "description": "Spend the morning tearing down the trails at BikePark Wales, the UK's premier mountain biking destination.",
+      "duration": "4 hours",
+      "costFrom": 60,
+      "costTo": 60,
+      "lat": 51.7576,
+      "lng": -3.3416,
+      "travelToNext": "1 hour drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Afan Forest Park Visitor Centre",
+        "description": "Learn about the local trails and enjoy indoor cycling-themed exhibits.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Cwmcarn Forest Drive Mountain Bike Trails",
+        "description": "Explore the free trails at Cwmcarn Forest Drive.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "13:30",
+      "type": "food",
+      "title": "The Red Kite Cafe at BikePark Wales",
+      "foodType": "lunch",
+      "description": "Casual cafe with burgers, sandwiches, and hearty meals.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.7576,
+      "lng": -3.3416,
+      "travelToNext": "1 hour drive via A470",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Pontsticill Reservoir",
+        "description": "Enjoy your own food with scenic views of the reservoir."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "15:00",
+      "type": "activity",
+      "title": "Indoor Climbing at Parthian Climbing Cardiff",
+      "description": "Test your skills on a variety of climbing walls catering to all abilities, with instructed session for those who need it.",
+      "duration": "2 hours",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.4911,
+      "lng": -3.1757,
+      "travelToNext": "20 minute drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "More climbing at Parthian",
+        "description": "Stay longer if the weather is terrible, or skip the alternative",
+        "costFrom": 15,
+        "costTo": 25
+      },
+      "budgetAlt": {
+        "title": "Boulders Climbing Centre Cardiff",
+        "description": "Focus on Bouldering, a more affordable option.",
+        "costFrom": 12,
+        "costTo": 18
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "18:00",
+      "type": "accommodation",
+      "title": "The Coal Exchange Hotel Cardiff",
+      "description": "Luxury hotel in a historic building, well-located for exploring Cardiff.",
+      "costFrom": 150,
+      "costTo": 250,
+      "lat": 51.4695,
+      "lng": -3.1638,
+      "travelToNext": "1.5 hour drive to Gower",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "NosDa Studio Hostel",
+        "description": "Budget-friendly hostel near Cardiff Central Station.",
+        "costFrom": 25,
+        "costTo": 40
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Rock Climbing at Three Cliffs Bay",
+      "description": "Enjoy a morning of sea cliff climbing at the stunning Three Cliffs Bay. Suitable for experienced climbers only.",
+      "duration": "4 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.5751,
+      "lng": -4.0859,
+      "travelToNext": "15 minute drive via A4118",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National Showcaves Centre for Wales",
+        "description": "Explore the impressive cave systems and dinosaur park.",
+        "costFrom": 18,
+        "costTo": 22
+      },
+      "budgetAlt": {
+        "title": "Coastal walk along Three Cliffs Bay",
+        "description": "Hike along the cliffs and enjoy the views.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "13:30",
+      "type": "food",
+      "title": "The Gower Inn",
+      "foodType": "lunch",
+      "description": "Traditional pub food with views of the Gower Peninsula.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.5988,
+      "lng": -4.0669,
+      "travelToNext": "20 minute drive via A4118",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic at Rhossili Bay",
+        "description": "Enjoy a packed lunch overlooking the iconic Worm's Head."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "15:00",
+      "type": "activity",
+      "title": "Surfing Lesson at Llangennith Beach",
+      "description": "Learn to surf at one of Wales' best surfing beaches.",
+      "duration": "2 hours",
+      "costFrom": 40,
+      "costTo": 50,
+      "lat": 51.5715,
+      "lng": -4.3059,
+      "travelToNext": "1 hour drive via A4118 and A483",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Swansea Museum",
+        "description": "Explore the history of Swansea and the maritime heritage of the Gower.",
+        "costFrom": 6,
+        "costTo": 8
+      },
+      "budgetAlt": {
+        "title": "Bodyboarding at Llangennith Beach",
+        "description": "Rent a bodyboard and ride the waves.",
+        "costFrom": 10,
+        "costTo": 15
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 4,
+      "time": "18:00",
+      "type": "accommodation",
+      "title": "The King Arthur Hotel, Reynoldston",
+      "description": "Charming hotel near Three Cliffs Bay, perfect for exploring the Gower.",
+      "costFrom": 120,
+      "costTo": 200,
+      "lat": 51.5873,
+      "lng": -4.1571,
+      "travelToNext": "2 hour drive to Brecon Beacons",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Camping at Three Cliffs Bay Holiday Park",
+        "description": "Pitch your tent with stunning coastal views.",
+        "costFrom": 20,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Mountain Biking in Brecon Beacons",
+      "description": "Explore the scenic trails of the Brecon Beacons National Park. Pen y Fan offers challenging climbs and rewarding descents.",
+      "duration": "5 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.8837,
+      "lng": -3.4342,
+      "travelToNext": "1 hour drive",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Brecon Mountain Railway",
+        "description": "Enjoy a scenic steam train ride through the Brecon Beacons.",
+        "costFrom": 15,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Hiking to Pen y Fan",
+        "description": "Hike to the summit of Pen y Fan, the highest peak in South Wales.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "14:30",
+      "type": "food",
+      "title": "The Old Rectory Country Hotel",
+      "foodType": "lunch",
+      "description": "Traditional Welsh food.",
+      "costFrom": 20,
+      "costTo": 30,
+      "lat": 51.9348,
+      "lng": -3.3357,
+      "travelToNext": "1 hour drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic near Talybont Reservoir",
+        "description": "Enjoy a picnic by the water."
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 3,
+      "time": "16:00",
+      "type": "activity",
+      "title": "Caving at Dan-yr-Ogof, The National Showcaves Centre for Wales",
+      "description": "Guided tour through the Dan-yr-Ogof cave system.",
+      "duration": "2 hours",
+      "costFrom": 18,
+      "costTo": 22,
+      "lat": 51.8269,
+      "lng": -3.5301,
+      "travelToNext": "20 minutes drive to accommodation",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "More caving!",
+        "description": "Spend more time underground, if the weather is bad.",
+        "costFrom": 18,
+        "costTo": 22
+      },
+      "budgetAlt": {
+        "title": "Explore the Dinosaur Park",
+        "description": "Wander around life sized dinosaurs, outside the caves, if you don't want to go underground.",
+        "costFrom": 8,
+        "costTo": 12
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 4,
+      "time": "19:00",
+      "type": "accommodation",
+      "title": "Peterstone Court, Brecon",
+      "description": "Luxury hotel in a country house setting, perfect for relaxing after a long day.",
+      "costFrom": 180,
+      "costTo": 300,
+      "lat": 51.9362,
+      "lng": -3.4002,
+      "travelToNext": "1.5 hour drive to final destination",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Camping at Pencelli Castle Caravan & Camping Park",
+        "description": "Camp on the banks of the River Usk.",
+        "costFrom": 20,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Paddleboarding on Llangorse Lake",
+      "description": "Enjoy a relaxing morning paddleboarding on Wales' largest natural lake.",
+      "duration": "2 hours",
+      "costFrom": 25,
+      "costTo": 35,
+      "lat": 51.9277,
+      "lng": -3.2442,
+      "travelToNext": "30 minute drive to final lunch stop",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Llangorse Multi Activity Centre Indoor Activities",
+        "description": "Archery, climbing walls and rope course for all ages.",
+        "costFrom": 25,
+        "costTo": 35
+      },
+      "budgetAlt": {
+        "title": "Walk around Llangorse Lake",
+        "description": "Take a leisurely walk around the perimeter of the lake.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "The Castle Inn, Llangorse",
+      "foodType": "lunch",
+      "description": "Traditional pub food with a great atmosphere.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.9247,
+      "lng": -3.2479,
+      "travelToNext": "Departure",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Picnic by Llangorse Lake",
+        "description": "Enjoy a final picnic before heading home."
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 198,
+      "accommodation": 450,
+      "food": 120,
+      "transport": 182,
+      "total": 950
+    },
+    "budget": {
+      "activities": 45,
+      "accommodation": 85,
+      "food": 60,
+      "transport": 150,
+      "total": 340
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "South Wales weather can be unpredictable. Be prepared for rain, even in summer. Mountain areas can experience significant temperature changes.",
+    "traffic": "Traffic can be heavy on weekends, especially around coastal areas and the Brecon Beacons. Allow extra time for travel, especially during peak season. Parking at popular spots like BikePark Wales and Three Cliffs Bay can fill up quickly, so arrive early.",
+    "booking": "BikePark Wales, Dan-yr-Ogof Caves, and popular surfing schools should be booked in advance, especially during weekends and school holidays. Accommodation in popular areas like the Gower Peninsula also requires advance booking.",
+    "fitness": "This itinerary requires a high level of fitness. Mountain biking at BikePark Wales is physically demanding. Rock climbing and surfing require good upper body strength and stamina. Hiking in the Brecon Beacons can be challenging due to steep terrain."
+  }
+}

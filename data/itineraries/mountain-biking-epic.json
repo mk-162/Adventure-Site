@@ -1,0 +1,270 @@
+{
+  "slug": "mountain-biking-epic",
+  "title": "Mountain Biking Epic",
+  "tagline": "Four days hitting Wales' best trails",
+  "region": "snowdonia",
+  "days": 4,
+  "difficulty": "difficult",
+  "bestSeason": "April-October",
+  "groupType": "friends, solo",
+  "priceFrom": 550,
+  "priceTo": 950,
+  "budgetPriceFrom": 350,
+  "budgetPriceTo": 600,
+  "highlights": [
+    "Coed y Brenin",
+    "Antur Stiniog",
+    "BikePark Wales"
+  ],
+  "activityTypes": [
+    "mountain-biking"
+  ],
+  "suitableFor": "Experienced mountain bikers with good fitness and technical skills, comfortable with challenging trails and varied weather conditions.",
+  "notSuitableFor": "Beginner mountain bikers, those with a fear of heights, or individuals with limited fitness levels.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Mountain bike",
+    "Helmet",
+    "Waterproof jacket",
+    "Bike repair kit",
+    "Energy bars"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Mountain Biking - Temtiwr",
+      "description": "Tackle the black-graded Temtiwr trail at Coed y Brenin, known for its technical features and demanding climbs. Expect a challenging ride with rewarding views.",
+      "duration": "3 hours",
+      "costFrom": 0,
+      "costTo": 7,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "15min drive to Dolgellau",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Coed y Brenin Visitor Centre",
+        "description": "Explore the visitor centre, browse the bike shop, and grab a coffee while waiting for the weather to improve.",
+        "costFrom": 0,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Mountain Biking - MinorTaur",
+        "description": "Ride the easier, blue-graded MinorTaur trail at Coed y Brenin, suitable for a warm-up and less demanding ride.",
+        "costFrom": 0,
+        "costTo": 7
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "Siop Meurig",
+      "foodType": "lunch",
+      "description": "A traditional cafe in Dolgellau serving hearty Welsh lunches and homemade cakes.",
+      "costFrom": 10,
+      "costTo": 15,
+      "lat": 52.754,
+      "lng": -3.882,
+      "travelToNext": "30min drive to Blaenau Ffestiniog",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Cynwch",
+        "description": "Enjoy your own sandwiches with a view of the lake near Dolgellau."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Downhill MTB - Antur Stiniog",
+      "description": "Experience uplift-assisted downhill mountain biking at Antur Stiniog. Choose from various trails catering to different skill levels, from blue to black.",
+      "duration": "4 hours",
+      "costFrom": 35,
+      "costTo": 45,
+      "lat": 52.994,
+      "lng": -3.938,
+      "travelToNext": "10min drive to Treks Bunkhouse",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Bounce Below",
+        "description": "Jump and explore massive trampolines in a disused slate mine.",
+        "costFrom": 25,
+        "costTo": 35
+      },
+      "budgetAlt": {
+        "title": "Walking trails around Blaenau Ffestiniog",
+        "description": "Explore the unique landscape of the slate quarries on foot.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "18:00",
+      "type": "accommodation",
+      "title": "Treks Bunkhouse",
+      "description": "A comfortable and bike-friendly bunkhouse in Ffestiniog, ideal for groups and solo riders.",
+      "costFrom": 25,
+      "costTo": 45,
+      "lat": 52.9971,
+      "lng": -3.9362,
+      "travelToNext": "45min drive to Betws-y-Coed",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Camping at a local campsite",
+        "description": "Wild camping is generally not permitted but find a paid campsite near Ffestiniog.",
+        "costFrom": 15,
+        "costTo": 25
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "BikePark Wales (Drive from Bunkhouse)",
+      "description": "Drive to South Wales for a day riding at BikePark Wales, offering a huge selection of downhill trails for all abilities. Expect berms, jumps and drops.",
+      "duration": "6 hours",
+      "costFrom": 55,
+      "costTo": 65,
+      "lat": 51.6916,
+      "lng": -3.3252,
+      "travelToNext": "45min drive to Brecon Beacons",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "BikePark Wales Cafe",
+        "description": "Spend the day in the cafe, watch the riders and plan the next run.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Forest Tracks",
+        "description": "Find public roads in the forest and ride",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "18:00",
+      "type": "accommodation",
+      "title": "Bunkhouse, Brecon Beacons",
+      "description": "A comfortable and bike-friendly bunkhouse in Brecon Beacons.",
+      "costFrom": 25,
+      "costTo": 45,
+      "lat": 51.94,
+      "lng": -3.43,
+      "travelToNext": "45min drive to Llandegla Forest",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Camping at a local campsite",
+        "description": "Wild camping is generally not permitted but find a paid campsite near Brecon Beacons.",
+        "costFrom": 15,
+        "costTo": 25
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Mountain Biking - Llandegla Forest",
+      "description": "Head to Llandegla Forest for a day of riding. Trails are suitable for a variety of skill levels.",
+      "duration": "6 hours",
+      "costFrom": 4.5,
+      "costTo": 4.5,
+      "lat": 53.056,
+      "lng": -3.191,
+      "travelToNext": "45min drive to Bala",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Llandegla Visitor Centre",
+        "description": "Spend the day in the visitor centre cafe, watch the riders and plan the next run.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Forest Tracks",
+        "description": "Find public roads in the forest and ride",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 3,
+      "orderIndex": 2,
+      "time": "18:00",
+      "type": "accommodation",
+      "title": "Bala Backpackers",
+      "description": "A comfortable and bike-friendly bunkhouse in Bala.",
+      "costFrom": 20,
+      "costTo": 35,
+      "lat": 52.9121,
+      "lng": -3.5936,
+      "travelToNext": "Drive to Coed Y Brenin",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Camping at a local campsite",
+        "description": "Wild camping is generally not permitted but find a paid campsite near Bala.",
+        "costFrom": 15,
+        "costTo": 25
+      }
+    },
+    {
+      "day": 4,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Mountain Biking - Coed Y Brenin (Final Ride)",
+      "description": "Head to Coed Y Brenin for a final ride before heading home.",
+      "duration": "6 hours",
+      "costFrom": 4.5,
+      "costTo": 4.5,
+      "lat": 52.822,
+      "lng": -3.869,
+      "travelToNext": "Home",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Coed Y Brenin Visitor Centre",
+        "description": "Spend the day in the visitor centre cafe, watch the riders and plan the next run.",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Forest Tracks",
+        "description": "Find public roads in the forest and ride",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 150,
+      "accommodation": 120,
+      "food": 80,
+      "transport": 100,
+      "total": 450
+    },
+    "budget": {
+      "activities": 50,
+      "accommodation": 60,
+      "food": 40,
+      "transport": 80,
+      "total": 230
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "Welsh weather can be unpredictable. Be prepared for rain, wind, and sunshine, even in summer. Check the forecast before you go and pack accordingly.",
+    "traffic": "Traffic can be heavy, especially on weekends and during school holidays. Allow extra time for travel, especially when driving to popular destinations. Parking at trail centres can fill up quickly, arrive early.",
+    "booking": "Uplift services at Antur Stiniog and BikePark Wales should be booked in advance, especially during peak season.",
+    "fitness": "This itinerary requires a good level of fitness. Expect long days of riding on challenging terrain."
+  }
+}

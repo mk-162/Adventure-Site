@@ -1,0 +1,224 @@
+{
+  "slug": "wye-valley-family-adventure",
+  "title": "Wye Valley Family Adventure",
+  "tagline": "Gentle river days and forest trails",
+  "region": "wye-valley",
+  "days": 2,
+  "difficulty": "easy",
+  "bestSeason": "May-September",
+  "groupType": "families",
+  "priceFrom": 250,
+  "priceTo": 450,
+  "budgetPriceFrom": 150,
+  "budgetPriceTo": 300,
+  "highlights": [
+    "Family canoeing",
+    "Forest of Dean trails",
+    "Puzzlewood"
+  ],
+  "activityTypes": [
+    "kayaking",
+    "hiking",
+    "mountain-biking"
+  ],
+  "suitableFor": "Families with children aged 6 and up who enjoy gentle outdoor activities.  Suitable for those with limited hiking experience.",
+  "notSuitableFor": "Families seeking extreme sports or challenging hikes. Those with very young children (under 6) might find some activities difficult.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jackets",
+    "Hiking boots or sturdy shoes",
+    "Sunscreen",
+    "Insect repellent",
+    "Swimwear (if canoeing/kayaking)"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Family Canoeing on the River Wye",
+      "description": "Enjoy a gentle paddle down the River Wye, taking in the beautiful scenery and spotting local wildlife.",
+      "duration": "3 hours",
+      "costFrom": 70,
+      "costTo": 120,
+      "lat": 51.9204,
+      "lng": -2.6672,
+      "travelToNext": "15min drive via B4228",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Clearwell Caves",
+        "description": "Explore the ancient iron mines, a fascinating underground world.",
+        "costFrom": 10,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Picnic by the River Wye",
+        "description": "Find a scenic spot along the riverbank and enjoy a packed lunch.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:30",
+      "type": "food",
+      "title": "The Saracens Head Inn",
+      "foodType": "lunch",
+      "description": "Traditional pub fare with stunning views of the River Wye.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.9176,
+      "lng": -2.6643,
+      "travelToNext": "20min drive to Symonds Yat Rock",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "packed lunch at scenic spot",
+        "description": "Layby near Symonds Yat Rock"
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:30",
+      "type": "activity",
+      "title": "Symonds Yat Rock Viewpoint & Short Hike",
+      "description": "Enjoy panoramic views of the Wye Valley from Symonds Yat Rock, followed by a short, easy hike in the surrounding forest.",
+      "duration": "2 hours",
+      "costFrom": 0,
+      "costTo": 0,
+      "lat": 51.8389,
+      "lng": -2.6502,
+      "travelToNext": "45min drive to accommodation",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Goodrich Castle",
+        "description": "Explore the ruins of this magnificent medieval castle.",
+        "costFrom": 8,
+        "costTo": 12
+      },
+      "budgetAlt": {
+        "title": "Short walk around Symonds Yat village",
+        "description": "Explore the village and grab an ice cream",
+        "costFrom": 0,
+        "costTo": 5
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "The Wyndham Arms",
+      "description": "A family-friendly inn with comfortable rooms and a welcoming atmosphere.",
+      "costFrom": 90,
+      "costTo": 150,
+      "lat": 51.7614,
+      "lng": -2.6786,
+      "travelToNext": "30 min drive to Puzzlewood",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Forest of Dean Camping",
+        "description": "Camping at a designated campsite in the Forest of Dean.",
+        "costFrom": 20,
+        "costTo": 40
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:30",
+      "type": "activity",
+      "title": "Puzzlewood",
+      "description": "Explore the magical ancient woodland with its unique rock formations, caves, and winding paths. Great for kids to explore!",
+      "duration": "2.5 hours",
+      "costFrom": 9,
+      "costTo": 12,
+      "lat": 51.7717,
+      "lng": -2.5758,
+      "travelToNext": "15min drive to Clearwell Caves",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Dean Heritage Centre",
+        "description": "Learn about the history and heritage of the Forest of Dean.",
+        "costFrom": 7,
+        "costTo": 10
+      },
+      "budgetAlt": {
+        "title": "Free Forest Walk near Puzzlewood",
+        "description": "Enjoy a free walk in the surrounding forest instead of visiting Puzzlewood.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "The Butchers Arms",
+      "foodType": "lunch",
+      "description": "A traditional pub serving locally sourced food.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.7805,
+      "lng": -2.5833,
+      "travelToNext": "30 min drive to Go Ape Forest of Dean",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed Lunch",
+        "description": "Eat a packed lunch at a picnic spot in the Forest of Dean"
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Go Ape Forest of Dean",
+      "description": "A treetop adventure course with zip lines, rope bridges, and Tarzan swings (suitable for children over 1m tall).",
+      "duration": "2-3 hours",
+      "costFrom": 25,
+      "costTo": 35,
+      "lat": 51.7956,
+      "lng": -2.5439,
+      "travelToNext": null,
+      "travelMode": null,
+      "wetAlt": {
+        "title": "Cinema in Gloucester",
+        "description": "Go to the cinema in Gloucester if the weather doesn't allow for outdoor activities.",
+        "costFrom": 10,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Cycling on Forest Trails",
+        "description": "Rent bikes and explore the many forest trails (cheaper than Go Ape).",
+        "costFrom": 15,
+        "costTo": 25
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 104,
+      "accommodation": 90,
+      "food": 60,
+      "transport": 20,
+      "total": 274
+    },
+    "budget": {
+      "activities": 15,
+      "accommodation": 20,
+      "food": 20,
+      "transport": 10,
+      "total": 65
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "The Wye Valley can be unpredictable. Pack for all types of weather, even in summer. Rain is always a possibility.",
+    "traffic": "Traffic can be heavy on weekends and during school holidays, especially around popular attractions like Symonds Yat. Parking at Symonds Yat Rock can be limited.",
+    "booking": "Canoeing trips, Go Ape, and accommodation should be booked in advance, especially during peak season.",
+    "fitness": "This trip involves some walking and gentle activity. A reasonable level of fitness is required, but it is suitable for most families."
+  }
+}

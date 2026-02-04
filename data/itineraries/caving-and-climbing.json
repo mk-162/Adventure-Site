@@ -1,0 +1,229 @@
+{
+  "slug": "caving-and-climbing",
+  "title": "Caving & Climbing Weekend",
+  "tagline": "Go underground and vertical in the Beacons",
+  "region": "brecon-beacons",
+  "days": 2,
+  "difficulty": "difficult",
+  "bestSeason": "Year-round",
+  "groupType": "thrill-seekers",
+  "priceFrom": 350,
+  "priceTo": 550,
+  "budgetPriceFrom": 200,
+  "budgetPriceTo": 350,
+  "highlights": [
+    "Cave systems",
+    "Rock climbing",
+    "Gorge scrambling"
+  ],
+  "activityTypes": [
+    "caving",
+    "climbing",
+    "gorge-walking"
+  ],
+  "suitableFor": "Experienced adventurers and thrill-seekers with a good level of fitness and a head for heights and enclosed spaces. Those comfortable with challenging physical activity and unpredictable weather.",
+  "notSuitableFor": "Those with claustrophobia, fear of heights, limited mobility, or serious medical conditions. Also, not ideal for young children or those seeking a relaxed, leisurely getaway.",
+  "weatherDependency": "medium",
+  "packingEssentials": [
+    "Waterproof jacket and trousers",
+    "Sturdy hiking boots",
+    "Headtorch",
+    "Warm layers (fleece, thermals)",
+    "Gloves",
+    "Small backpack",
+    "Water bottle",
+    "Snacks",
+    "Change of clothes",
+    "First-aid kit"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Caving near Three Cocks",
+      "description": "Explore the fascinating underground world of the Brecon Beacons with an experienced guide. Expect tight squeezes and muddy fun.",
+      "duration": "2.5 hours",
+      "costFrom": 45,
+      "costTo": 85,
+      "lat": 52.04,
+      "lng": -3.18,
+      "travelToNext": "30min drive via A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Archery at Black Mountain Adventure",
+        "description": "Test your aim with an archery session at the activity centre.",
+        "costFrom": 45,
+        "costTo": 85
+      },
+      "budgetAlt": {
+        "title": "Explore Porth Yr Ogof cave entrance",
+        "description": "Walk to the entrance of this large cave system. You can't enter without gear and guide, but it is still impressive. (Free)",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "The River Cafe",
+      "foodType": "lunch",
+      "description": "A riverside cafe in Glasbury offering sandwiches, soups, and cakes.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 52.092,
+      "lng": -3.161,
+      "travelToNext": "5min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch by the River Wye",
+        "description": "Enjoy your own food with a view of the river."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "13:30",
+      "type": "activity",
+      "title": "Rock Climbing in the Black Mountains",
+      "description": "Learn the basics of rock climbing or improve your skills with guidance from experienced instructors.",
+      "duration": "2.5 hours",
+      "costFrom": 65,
+      "costTo": 95,
+      "lat": 51.99,
+      "lng": -3.1,
+      "travelToNext": "45min drive via A40",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Indoor Climbing Wall, Brecon Leisure Centre",
+        "description": "Head to the local leisure centre to climb indoors.",
+        "costFrom": 10,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Bouldering at The Gap",
+        "description": "Free bouldering location at The Gap near Llanbedr",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:00",
+      "type": "accommodation",
+      "title": "YHA Brecon Beacons",
+      "description": "A comfortable hostel in a great location for exploring the Beacons. Offers a mix of private rooms and dorms.",
+      "costFrom": 25,
+      "costTo": 70,
+      "lat": 51.905,
+      "lng": -3.412,
+      "travelToNext": "15 min drive to Ystradfellte",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Waterfall Country Campsite",
+        "description": "A campsite near Waterfall Country, offering basic facilities and a stunning natural setting.",
+        "costFrom": 15,
+        "costTo": 25
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Gorge Walking in Waterfall Country",
+      "description": "Scramble up a stunning gorge, clambering over rocks and under waterfalls. Prepare to get wet!",
+      "duration": "2 hours",
+      "costFrom": 65,
+      "costTo": 95,
+      "lat": 51.808,
+      "lng": -3.56,
+      "travelToNext": "15 min drive to Craig y Nos",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Visit Craig y Nos Castle",
+        "description": "Tour the historic castle and learn about its fascinating past.",
+        "costFrom": 10,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Explore the Sgwd yr Eira waterfall trail",
+        "description": "Walk to the famous waterfall you can walk behind (part of the Waterfall Country)",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Craig y Nos Castle Tea Room",
+      "foodType": "lunch",
+      "description": "Enjoy a light lunch or afternoon tea at the castle.",
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 51.828,
+      "lng": -3.68,
+      "travelToNext": "5 min drive",
+      "travelMode": "drive",
+      "budgetAlt": {
+        "title": "Packed lunch at Craig y Nos Country Park",
+        "description": "Enjoy your own food in the park."
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "Caving at Craig y Nos",
+      "description": "Explore the extensive cave system beneath Craig y Nos Castle. Often flooded.",
+      "duration": "2 hours",
+      "costFrom": 65,
+      "costTo": 95,
+      "lat": 51.828,
+      "lng": -3.68,
+      "travelToNext": "End of trip",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Craig y Nos Castle - more of the castle!",
+        "description": "Explore the castle in more detail.",
+        "costFrom": 10,
+        "costTo": 15
+      },
+      "budgetAlt": {
+        "title": "Explore the grounds around Craig y Nos Castle",
+        "description": "Free exploring!",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 305,
+      "accommodation": 50,
+      "food": 45,
+      "transport": 50,
+      "total": 450
+    },
+    "budget": {
+      "activities": 45,
+      "accommodation": 15,
+      "food": 15,
+      "transport": 50,
+      "total": 125
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "The Brecon Beacons is known for its unpredictable weather. Be prepared for rain, wind, and sunshine, even in summer. Check the forecast before you go and pack accordingly.",
+    "traffic": "Traffic can be heavy on weekends, especially during peak season. Allow extra time for travel and consider parking at park-and-ride locations where available. Parking at Waterfall Country can be limited, arrive early.",
+    "booking": "Advance booking is essential for all activities, especially during peak season. Accommodation should also be booked well in advance.",
+    "fitness": "This trip requires a good level of fitness. You'll be hiking, climbing, and scrambling over uneven terrain. Be prepared for strenuous activity."
+  }
+}

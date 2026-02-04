@@ -1,0 +1,230 @@
+{
+  "slug": "48-hours-of-adrenaline",
+  "title": "48 Hours of Adrenaline",
+  "tagline": "Non-stop thrills across North Wales",
+  "region": "multi",
+  "days": 2,
+  "difficulty": "difficult",
+  "bestSeason": "March-October",
+  "groupType": "thrill-seekers, stag",
+  "priceFrom": 350,
+  "priceTo": 650,
+  "budgetPriceFrom": 180,
+  "budgetPriceTo": 350,
+  "highlights": [
+    "Velocity 2",
+    "Coasteering",
+    "White water rafting",
+    "Crib Goch"
+  ],
+  "activityTypes": [
+    "zip-lining",
+    "coasteering",
+    "gorge-walking",
+    "hiking"
+  ],
+  "suitableFor": "Experienced adventurers, thrill-seeking groups, confident hikers with a head for heights, and those comfortable with challenging physical activities.",
+  "notSuitableFor": "Those with a fear of heights, limited mobility, or pre-existing health conditions. Not suitable for families with young children.",
+  "weatherDependency": "high",
+  "packingEssentials": [
+    "Waterproof jacket and trousers",
+    "Sturdy hiking boots",
+    "Layers of clothing",
+    "Sunscreen and hat",
+    "Small backpack",
+    "Water bottle",
+    "Head torch",
+    "Snacks"
+  ],
+  "stops": [
+    {
+      "day": 1,
+      "orderIndex": 1,
+      "time": "09:00",
+      "type": "activity",
+      "title": "Velocity 2 Zip Line",
+      "description": "Experience the fastest zip line in the world, flying over Penrhyn Quarry at speeds of over 100mph. Prepare for an unforgettable adrenaline rush.",
+      "duration": "2.5 hours",
+      "costFrom": 89,
+      "costTo": 109,
+      "lat": 53.1775,
+      "lng": -4.0856,
+      "travelToNext": "45min drive via A5 and A470",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Bounce Below",
+        "description": "Jump and explore in giant trampolines inside a disused slate mine at Zip World Llechwedd.",
+        "costFrom": 25,
+        "costTo": 35
+      },
+      "budgetAlt": {
+        "title": "Mountain Biking - MinorTaur trail at Coed y Brenin",
+        "description": "Enjoy a scenic and free mountain bike ride with moderate difficulty",
+        "costFrom": 0,
+        "costTo": 7
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 2,
+      "time": "12:00",
+      "type": "food",
+      "title": "Lizzies cafe",
+      "foodType": "lunch",
+      "description": "A traditional cafe in Blaenau Ffestiniog, serving classic Welsh dishes and hearty meals.",
+      "costFrom": 10,
+      "costTo": 20,
+      "lat": 52.9958,
+      "lng": -3.9372,
+      "travelToNext": "5min walk",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "Packed lunch at Llyn Stwlan viewpoint",
+        "description": "Enjoy your own sandwiches with stunning views of the reservoir."
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 3,
+      "time": "14:00",
+      "type": "activity",
+      "title": "White Water Rafting",
+      "description": "Paddle down the Tryweryn River at the National White Water Centre, tackling thrilling rapids and navigating challenging sections.",
+      "duration": "3 hours",
+      "costFrom": 55,
+      "costTo": 75,
+      "lat": 52.911,
+      "lng": -3.601,
+      "travelToNext": "1 hour drive to YHA Snowdon Pen-y-Pass",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "National White Water Centre Cafe Visit",
+        "description": "Enjoy lunch at the centre's cafe and watch the white water rafters from the comfort of indoors.",
+        "costFrom": 10,
+        "costTo": 20
+      },
+      "budgetAlt": {
+        "title": "Gorge Walking",
+        "description": "Explore the gorge by Adventure Britain near Bala for a half day",
+        "costFrom": 65,
+        "costTo": 95
+      }
+    },
+    {
+      "day": 1,
+      "orderIndex": 4,
+      "time": "17:30",
+      "type": "accommodation",
+      "title": "YHA Snowdon Pen-y-Pass",
+      "description": "A hostel perfectly located for hiking Snowdon and surrounding peaks. Basic but clean and ideal for adventurers.",
+      "costFrom": 25,
+      "costTo": 80,
+      "lat": 53.08,
+      "lng": -4.02,
+      "travelToNext": "Start of Crib Goch hike",
+      "travelMode": "walk",
+      "budgetAlt": {
+        "title": "The Snowdon Inn (Y Fricsan) Camping",
+        "description": "Basic campsite, close to town of Llanberis, cheaper",
+        "costFrom": 15,
+        "costTo": 30
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 1,
+      "time": "07:00",
+      "type": "activity",
+      "title": "Crib Goch Guided Walk",
+      "description": "A challenging scramble across the knife-edge ridge of Crib Goch, offering breathtaking views of Snowdonia. This is an advanced hike for experienced mountaineers only.",
+      "duration": "7 hours",
+      "costFrom": 55,
+      "costTo": 75,
+      "lat": 53.08,
+      "lng": -4.02,
+      "travelToNext": "2 hour drive to St Davids",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Snowdon Summit Hike",
+        "description": "Hike to the summit of Snowdon via the Llanberis Path. A less exposed, but still challenging, alternative.",
+        "costFrom": 60,
+        "costTo": 80
+      },
+      "budgetAlt": {
+        "title": "Llanberis Path Guided Walk",
+        "description": "Enjoy a guided walk up the Snowdon Llanberis path with MountainXperience",
+        "costFrom": 45,
+        "costTo": 65
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 2,
+      "time": "15:00",
+      "type": "activity",
+      "title": "Coasteering Classic",
+      "description": "Explore the rugged Pembrokeshire coastline with TYF Adventure, swimming, climbing, and jumping into the sea. Experience the thrill of the ocean!",
+      "duration": "3.5 hours",
+      "costFrom": 60,
+      "costTo": 60,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "10min drive to Porthclais",
+      "travelMode": "drive",
+      "wetAlt": {
+        "title": "Abereiddy Blue Lagoon",
+        "description": "Swim in the calm, sheltered waters of Abereiddy Blue Lagoon",
+        "costFrom": 0,
+        "costTo": 0
+      },
+      "budgetAlt": {
+        "title": "Coastal Walk",
+        "description": "Take a scenic walk along the Pembrokeshire Coast Path, enjoying the stunning views and fresh sea air.",
+        "costFrom": 0,
+        "costTo": 0
+      }
+    },
+    {
+      "day": 2,
+      "orderIndex": 3,
+      "time": "19:00",
+      "type": "accommodation",
+      "title": "TYF Cliff-top Campsite",
+      "description": "A campsite with beautiful views close to the sea. Perfect for the evening.",
+      "costFrom": 15,
+      "costTo": 30,
+      "lat": 51.881,
+      "lng": -5.266,
+      "travelToNext": "End of trip",
+      "travelMode": "none",
+      "budgetAlt": {
+        "title": "St Davids YHA",
+        "description": "Another budget accommodation in the area",
+        "costFrom": 25,
+        "costTo": 70
+      }
+    }
+  ],
+  "costBreakdown": {
+    "standard": {
+      "activities": 264,
+      "accommodation": 40,
+      "food": 30,
+      "transport": 50,
+      "total": 384
+    },
+    "budget": {
+      "activities": 110,
+      "accommodation": 15,
+      "food": 20,
+      "transport": 30,
+      "total": 175
+    }
+  },
+  "knowBeforeYouGo": {
+    "weather": "North Wales weather is notoriously unpredictable. Be prepared for all conditions, even in summer. Mountain weather can change rapidly.",
+    "traffic": "Traffic around Snowdonia can be heavy, especially during peak season. Allow extra time for travel and book parking in advance where possible. St Davids can also get very busy in summer.",
+    "booking": "Advance booking is essential for all Zip World activities, the National White Water Centre, and guided walks up Crib Goch. Accommodation should also be booked well in advance.",
+    "fitness": "This itinerary is physically demanding and requires a good level of fitness. Crib Goch is a serious undertaking and should only be attempted by experienced hikers. Coasteering also requires confidence in the water."
+  }
+}

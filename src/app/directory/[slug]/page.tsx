@@ -7,9 +7,11 @@ import {
 } from "@/lib/queries";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
+import { ShareButton } from "@/components/ui/ShareButton";
 import { 
   ChevronRight, 
   MapPin, 
+  Navigation,
   Star, 
   Globe, 
   Phone, 
@@ -129,9 +131,7 @@ export default async function OperatorProfilePage({ params }: Props) {
           <button className="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white p-2 rounded-lg transition-colors">
             <Heart className="w-5 h-5" />
           </button>
-          <button className="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white p-2 rounded-lg transition-colors">
-            <Share2 className="w-5 h-5" />
-          </button>
+          <ShareButton title={operator.name} variant="button" className="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white p-2 rounded-lg transition-colors inline-flex items-center gap-1" />
         </div>
       </div>
 
@@ -141,22 +141,16 @@ export default async function OperatorProfilePage({ params }: Props) {
           <div className="flex flex-col items-center lg:flex-row lg:items-end lg:justify-between gap-4 lg:gap-6">
             {/* Logo + Info */}
             <div className="flex flex-col items-center lg:flex-row lg:items-end gap-4 lg:gap-6">
-              {/* Logo */}
-              <div className="h-28 w-28 sm:h-32 sm:w-32 lg:h-40 lg:w-40 rounded-2xl bg-white p-2 shadow-lg ring-1 ring-black/5">
-                {operator.logoUrl ? (
+              {/* Logo — only shown if operator has a logo */}
+              {operator.logoUrl && (
+                <div className="h-28 w-28 sm:h-32 sm:w-32 lg:h-40 lg:w-40 rounded-2xl bg-white p-2 shadow-lg ring-1 ring-black/5">
                   <img 
                     src={operator.logoUrl} 
                     alt={operator.name}
                     className="w-full h-full rounded-xl object-cover"
                   />
-                ) : (
-                  <div className="w-full h-full rounded-xl bg-[#1e3a4c] flex items-center justify-center">
-                    <span className="font-display font-black text-white text-3xl sm:text-4xl lg:text-5xl tracking-tighter">
-                      {operator.name.charAt(0)}
-                    </span>
-                  </div>
-                )}
-              </div>
+                </div>
+              )}
 
               {/* Info */}
               <div className="flex flex-col items-center lg:items-start text-center lg:text-left pb-2 lg:pb-4">
@@ -190,13 +184,7 @@ export default async function OperatorProfilePage({ params }: Props) {
               </div>
             </div>
 
-            {/* Claim Status Badge (desktop) */}
-            {operator.claimStatus === "premium" && (
-              <div className="hidden lg:flex items-center gap-2 pb-4 px-4 py-2 bg-[#f97316]/10 rounded-full">
-                <Verified className="w-5 h-5 text-[#f97316]" />
-                <span className="text-sm font-bold text-[#f97316]">Premium Partner</span>
-              </div>
-            )}
+            {/* Premium badge is shown via VerifiedBadge next to the name */}
           </div>
         </div>
 
@@ -467,6 +455,17 @@ export default async function OperatorProfilePage({ params }: Props) {
                     <span>{operator.address}</span>
                   </div>
                 )}
+                {operator.lat && operator.lng && (
+                  <a
+                    href={`https://www.google.com/maps/dir/?api=1&destination=${operator.lat},${operator.lng}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 flex items-center justify-center gap-2 text-sm font-semibold text-[#1e3a4c] hover:text-[#f97316] bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl py-2.5 transition-colors"
+                  >
+                    <Navigation className="w-4 h-4" />
+                    Get Directions
+                  </a>
+                )}
               </div>
             </section>
           </div>
@@ -618,13 +617,24 @@ export default async function OperatorProfilePage({ params }: Props) {
 
             {/* Location Map Placeholder */}
             {(operator.lat && operator.lng) && (
-              <div className="rounded-xl overflow-hidden h-48 relative shadow-sm border border-gray-200 bg-gray-100">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-8 h-8 text-[#1e3a4c] mx-auto mb-2" />
-                    <p className="text-sm text-gray-500">{operator.address?.split(",")[0]}</p>
+              <div>
+                <div className="rounded-xl overflow-hidden h-48 relative shadow-sm border border-gray-200 bg-gray-100">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center">
+                      <MapPin className="w-8 h-8 text-[#1e3a4c] mx-auto mb-2" />
+                      <p className="text-sm text-gray-500">{operator.address?.split(",")[0]}</p>
+                    </div>
                   </div>
                 </div>
+                <a
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${operator.lat},${operator.lng}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 w-full flex items-center justify-center gap-2 text-sm font-semibold text-[#1e3a4c] hover:text-[#f97316] bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl py-2.5 transition-colors"
+                >
+                  <Navigation className="w-4 h-4" />
+                  Get Directions
+                </a>
               </div>
             )}
           </aside>

@@ -68,11 +68,7 @@ export function FeaturedItineraries({ itineraries }: FeaturedItinerariesProps) {
                     <p className="text-slate-500 text-sm mt-1 line-clamp-2">{itinerary.tagline}</p>
                   )}
                   <p className="text-slate-600 text-sm mt-2">{region?.name || 'Wales'}</p>
-                  {itinerary.priceEstimateFrom && (
-                    <p className="mt-2 font-bold text-[#1e3a4c]">
-                      From £{itinerary.priceEstimateFrom} <span className="text-slate-500 font-normal text-xs">/ person</span>
-                    </p>
-                  )}
+{/* Price removed from homepage */}
                 </div>
               </Link>
             ))}

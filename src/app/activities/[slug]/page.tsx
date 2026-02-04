@@ -10,7 +10,7 @@ import type { MapMarker } from "@/components/ui/MapView";
 import { ActivityLocationMap } from "@/components/maps/ActivityLocationMap";
 import { 
   MapPin, Clock, Calendar, Users, Star, 
-  CheckCircle, XCircle, ExternalLink, Share2, Heart 
+  CheckCircle, XCircle, ExternalLink, Share2, Heart, Navigation
 } from "lucide-react";
 import { 
   JsonLd, 
@@ -349,6 +349,19 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                   </p>
                 </div>
               </section>
+            )}
+
+            {/* Get Directions */}
+            {activity.lat && activity.lng && (
+              <a
+                href={`https://www.google.com/maps/dir/?api=1&destination=${activity.lat},${activity.lng}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-[#1e3a4c] hover:text-[#f97316] bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl px-4 py-2.5 transition-colors"
+              >
+                <Navigation className="w-4 h-4" />
+                Get Directions
+              </a>
             )}
 
             {/* Location Map */}

@@ -39,10 +39,10 @@ export function VerifiedBadge({
       check: "w-2.5 h-2.5",
     },
     lg: {
-      container: "h-8 gap-2 px-4 py-1.5",
-      icon: "w-5 h-5",
-      text: "text-sm",
-      check: "w-3 h-3",
+      container: "h-7 gap-1.5 px-3 py-1",
+      icon: "w-4.5 h-4.5",
+      text: "text-xs",
+      check: "w-2.5 h-2.5",
     },
   };
 
@@ -67,15 +67,7 @@ export function VerifiedBadge({
   const getLabel = () => {
     if (!showLabel || size === "sm") return null;
     
-    if (size === "lg") {
-      return (
-        <span className={cn("font-bold tracking-tight whitespace-nowrap", colors.text, sizeClasses[size].text)}>
-          {isPremium ? "PREMIUM VERIFIED PARTNER" : "INDEPENDENT VERIFIED OPERATOR"}
-        </span>
-      );
-    }
-    
-    // MD size
+    // Both md and lg use the same label style, lg is just slightly bigger container
     return (
       <span className={cn("font-bold whitespace-nowrap", colors.text, sizeClasses[size].text)}>
         {isPremium ? "Premium Partner" : "Verified"}

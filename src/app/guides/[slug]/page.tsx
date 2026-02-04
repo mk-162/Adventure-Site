@@ -81,7 +81,7 @@ function markdownToHtml(md: string): string {
   html = html.replace(/<p[^>]*>\s*<\/p>/g, "");
   // Clean double-wrapped blockquotes
   html = html.replace(/<p[^>]*>(<blockquote)/g, "$1");
-  html = html.replace(/<\/blockquote>)<\/p>/g, "$1");
+  html = html.replace(/(<\/blockquote>)<\/p>/g, "$1");
 
   return html;
 }

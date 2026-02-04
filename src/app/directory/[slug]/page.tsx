@@ -436,6 +436,21 @@ export default async function OperatorProfilePage({ params }: Props) {
             {/* Contact Section (mobile) */}
             <section id="contact" className="lg:hidden bg-white rounded-xl p-5 border border-gray-200">
               <h3 className="font-bold text-[#1e3a4c] mb-4">Contact Information</h3>
+              
+              {/* Prominent Visit Website button */}
+              {operator.website && (
+                <a 
+                  href={operator.website} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center justify-center gap-2 w-full py-3 mb-4 bg-[#1e3a4c] hover:bg-[#1e3a4c]/90 text-white font-bold rounded-xl transition-colors"
+                >
+                  <Globe className="w-5 h-5" />
+                  Visit Website
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              )}
+
               <div className="space-y-3">
                 {operator.phone && (
                   <a href={`tel:${operator.phone}`} className="flex items-center gap-3 text-gray-700">
@@ -444,15 +459,9 @@ export default async function OperatorProfilePage({ params }: Props) {
                   </a>
                 )}
                 {operator.email && (
-                  <a href={`mailto:${operator.email}`} className="flex items-center gap-3 text-gray-700">
+                  <a href={`mailto:${operator.email}?subject=${encodeURIComponent("Enquiry from Adventure Wales")}`} className="flex items-center gap-3 text-gray-700">
                     <Mail className="w-5 h-5 text-[#1e3a4c]" />
                     <span>{operator.email}</span>
-                  </a>
-                )}
-                {operator.website && (
-                  <a href={operator.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-700">
-                    <Globe className="w-5 h-5 text-[#1e3a4c]" />
-                    <span className="truncate">{operator.website.replace(/^https?:\/\//, "")}</span>
                   </a>
                 )}
                 {operator.address && (
@@ -611,25 +620,37 @@ export default async function OperatorProfilePage({ params }: Props) {
                 {operator.email && (
                   <li className="flex items-center gap-3">
                     <Mail className="w-4 h-4 text-[#1e3a4c]" />
-                    <a href={`mailto:${operator.email}`} className="text-sm text-gray-600 hover:text-[#1e3a4c]">
+                    <a href={`mailto:${operator.email}?subject=${encodeURIComponent("Enquiry from Adventure Wales")}`} className="text-sm text-gray-600 hover:text-[#1e3a4c]">
                       {operator.email}
                     </a>
                   </li>
                 )}
-                {operator.website && (
-                  <li className="flex items-center gap-3">
-                    <Globe className="w-4 h-4 text-[#1e3a4c]" />
-                    <a 
-                      href={operator.website} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-sm text-gray-600 hover:text-[#1e3a4c] truncate"
-                    >
-                      {operator.website.replace(/^https?:\/\//, "")}
-                    </a>
-                  </li>
-                )}
               </ul>
+
+              {/* Prominent action buttons */}
+              <div className="mt-4 space-y-2">
+                {operator.website && (
+                  <a 
+                    href={operator.website} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 w-full py-2.5 bg-[#1e3a4c] hover:bg-[#1e3a4c]/90 text-white font-semibold rounded-xl text-sm transition-colors"
+                  >
+                    <Globe className="w-4 h-4" />
+                    Visit Website
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                )}
+                {operator.email && (
+                  <a 
+                    href={`mailto:${operator.email}?subject=${encodeURIComponent("Enquiry from Adventure Wales")}`}
+                    className="flex items-center justify-center gap-2 w-full py-2.5 border-2 border-[#1e3a4c] text-[#1e3a4c] font-semibold rounded-xl text-sm hover:bg-[#1e3a4c]/5 transition-colors"
+                  >
+                    <Mail className="w-4 h-4" />
+                    Email Directly
+                  </a>
+                )}
+              </div>
             </div>
 
             {/* Location Map Placeholder */}

@@ -9,11 +9,11 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 ### 404s Found (Site Audit 2026-02-06)
 
 - [ ] `/for-operators` — 404! This is the operator sales page, was working before. Likely fell out of the Vercel build
-- [ ] `/activities/camping` — 404, linked from homepage but no activity with that slug exists in DB
-- [ ] `/activities/climbing` — 404, linked from homepage but no activity with that slug exists in DB
-- [ ] `/activities/hiking` — 404, linked from homepage but no activity with that slug exists in DB
-- [ ] `/activities/photography` — 404, linked from homepage but no activity with that slug exists in DB
-- [ ] `/answers/best-adventures-brecon-Beacons` — 404 due to capital B in "Beacons" (case sensitivity)
+- [x] `/activities/camping` — FIXED: replaced with wild-swimming, links now use /activities?type=X filter
+- [x] `/activities/climbing` — FIXED: links now use /activities?type=climbing filter
+- [x] `/activities/hiking` — FIXED: links now use /activities?type=hiking filter
+- [x] `/activities/photography` — FIXED: replaced with gorge-walking, links now use filter
+- [x] `/answers/best-adventures-brecon-Beacons` — FIXED: answer slugs now normalised to lowercase
 
 ### Feedback (2026-02-04)
 
@@ -69,7 +69,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 - [ ] Functionality: Cookie settings link doesn't work -> Remove it if no logic exists
 - [ ] Functionality: Cookie settings link doesn't work -> Remove it if no logic exists
-- [ ] Content: Update copyright date to 2025 (or current year) on Cookies page
+- [x] Content: Update copyright date to 2025 (or current year) on Cookies page — FIXED: updated to Feb 2026
 
 **Directory / Operators**
 

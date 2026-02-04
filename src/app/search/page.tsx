@@ -242,9 +242,9 @@ async function SearchResults({ searchParams }: SearchPageProps) {
                       key={activity.id}
                       title={activity.name}
                       description={activity.description}
-                      image={activity.heroImage}
+                      image={type?.heroImage || activityRegion?.heroImage || null}
                       href={`/activities/${activity.slug}`}
-                      badge="Activity"
+                      badge={type?.name || "Activity"}
                       location={activityRegion?.name}
                     />
                   ))}
@@ -268,7 +268,7 @@ async function SearchResults({ searchParams }: SearchPageProps) {
                       key={itinerary.id}
                       title={itinerary.title}
                       description={itinerary.description}
-                      image={itinerary.heroImage}
+                      image={itinerary.heroImage || itineraryRegion?.heroImage || null}
                       href={`/itineraries/${itinerary.slug}`}
                       badge={`${itinerary.durationDays || "Multi"}-Day`}
                       location={itineraryRegion?.name}
@@ -294,7 +294,7 @@ async function SearchResults({ searchParams }: SearchPageProps) {
                       key={acc.id}
                       title={acc.name}
                       description={acc.description}
-                      image={null}
+                      image={accRegion?.heroImage || null}
                       href={`/accommodation/${acc.slug}`}
                       badge={acc.type || "Stay"}
                       location={accRegion?.name}

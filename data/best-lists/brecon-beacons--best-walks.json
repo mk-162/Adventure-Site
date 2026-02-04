@@ -1,0 +1,407 @@
+{
+  "regionSlug": "brecon-beacons",
+  "slug": "best-walks",
+  "urlPath": "/brecon-beacons/best-walks",
+  "title": "10 Best Walks in the Brecon Beacons",
+  "metaTitle": "10 Best Walks in the Brecon Beacons (2025)",
+  "metaDescription": "Our ranked picks for the best walks in the Brecon Beacons. From Pen y Fan to hidden waterfalls and mythical lakes — honest, tested reviews.",
+  "h1": "10 Best Walks in the Brecon Beacons (2025)",
+  "strapline": "Pen y Fan gets the crowds. These walks get the glory.",
+  "heroImage": "/images/best-lists/brecon-beacons-best-walks-hero.jpg",
+  "heroAlt": "Walker on the summit ridge of Pen y Fan looking over the Brecon Beacons",
+  "updatedDate": "2025-07",
+  "introduction": "The Brecon Beacons — officially Bannau Brycheiniog since 2023 — offer a completely different walking experience to Snowdonia. The mountains are smoother, the paths are grassy rather than rocky, and the landscape feels ancient and rolling rather than jagged. The trade-off is atmosphere in abundance: dark reservoirs, mythical lakes, and waterfalls hidden in gorges that feel genuinely enchanted.\n\nPen y Fan dominates the headlines (and the car park), but the best walks in the Beacons are often the ones that take you away from the central peaks. Waterfall Country in the south rivals anything in the UK for beauty, the Black Mountains on the eastern edge offer solitude that Snowdonia can't match, and Sugar Loaf is a perfect introductory peak.\n\nThis list deliberately ranges from easy waterfall walks to full mountain circuits. The Beacons reward exploration beyond the obvious.",
+  "rankingCriteria": "We've walked all of these routes in multiple seasons and conditions. Rankings factor in scenery, variety, crowd levels, path quality, and that hard-to-define feeling of 'was that worth getting up for?' We favour routes that deliver something you can't get on any other UK walk.",
+  "comboPageLink": "/brecon-beacons/things-to-do/hiking",
+  "keywords": {
+    "primary": "best walks in brecon beacons",
+    "secondary": ["brecon beacons walks", "best hikes brecon beacons", "walking brecon beacons", "bannau brycheiniog walks"],
+    "longTail": [
+      "best easy walks brecon beacons",
+      "family walks brecon beacons",
+      "pen y fan walk route",
+      "waterfall walks brecon beacons",
+      "brecon beacons walks for beginners",
+      "dog friendly walks brecon beacons",
+      "best walks near brecon"
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Four Waterfalls Walk (Sgwd yr Eira circuit)",
+      "slug": "four-waterfalls-walk",
+      "verdict": "Walk behind a waterfall. Seriously. The most magical walk in South Wales.",
+      "image": "/images/best-lists/brecon-beacons-best-walks-four-waterfalls.jpg",
+      "imageAlt": "Sgwd yr Eira waterfall with the path visible behind the curtain of water",
+      "whyItMadeTheList": "The Four Waterfalls Walk in the Ystradfellte area is enchanting in the truest sense. The trail passes Sgwd Clun-Gwyn, Sgwd Isaf Clun-Gwyn, Sgwd y Pannwr, and the spectacular Sgwd yr Eira — where you walk behind the curtain of falling water on a rock ledge. The gorge is deep, green, and atmospheric, and the sound of the falls is constant. It's the walk that makes people fall in love with the Brecon Beacons.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": "9km circular",
+      "cost": "Free (parking £5)",
+      "bestFor": "Families with older children, photographers, waterfall chasers, anyone wanting a magical walk",
+      "skipIf": "You have mobility issues — the paths are steep, muddy, and have steps. Can be very slippery after rain. Ironic, since rain makes the waterfalls better.",
+      "insiderTip": "Walk the circuit anticlockwise starting from the Cwm Porth car park to reach Sgwd yr Eira first while you're fresh. The steps down to the river are steep and tiring at the end of the walk. Go after heavy rain for maximum waterfall drama, but wear grippy boots — the rock is treacherous when wet.",
+      "season": "Year-round (best after rain, October–April)",
+      "parking": {
+        "location": "Cwm Porth car park (Gwaun Hepste)",
+        "cost": "£5/day",
+        "notes": "NRW car park. Gets very busy on weekends, especially school holidays. Arrive before 9:30am. Alternative: park at Pontneddfechan and walk in.",
+        "lat": 51.7706,
+        "lng": -3.5576
+      },
+      "startPoint": {
+        "name": "Cwm Porth car park",
+        "lat": 51.7706,
+        "lng": -3.5576
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 2,
+      "name": "Pen y Fan via the Storey Arms (A470 path)",
+      "slug": "pen-y-fan-storey-arms",
+      "verdict": "The highest peak in South Wales. Earn the views, join the pilgrimage, and tick the box.",
+      "image": "/images/best-lists/brecon-beacons-best-walks-pen-y-fan.jpg",
+      "imageAlt": "The flat summit of Pen y Fan with Corn Du behind and walkers on the summit",
+      "whyItMadeTheList": "Pen y Fan (886m) is the highest peak in Southern Britain and the most climbed mountain in Wales after Snowdon. The route from the Storey Arms on the A470 is the shortest and most popular, with a well-maintained stone path that's suitable for most fit walkers. The views from the summit — across the Beacons and beyond — are genuinely rewarding. Yes, it's busy. Yes, it's the 'obvious' choice. But standing on the highest point in South Wales is still worth doing.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": "8km circular (via Corn Du)",
+      "elevationGain": "500m",
+      "cost": "Free (parking £5)",
+      "bestFor": "Anyone wanting to summit the highest mountain in South Wales on a well-maintained path",
+      "skipIf": "You want solitude — on a bank holiday weekend, it's a motorway. Use the Tommy Jones route from Cwm Llwch instead for a quieter alternative.",
+      "insiderTip": "The Storey Arms car park fills by 8am on summer weekends. Park at the lay-bys on the A470 south of the Storey Arms (free) and add 15 minutes to your walk. Better yet, approach from Cwm Llwch (west side) — half the crowds, better scenery, and you pass the Tommy Jones memorial obelisk.",
+      "season": "Year-round (winter conditions December–March: crampons recommended)",
+      "parking": {
+        "location": "Storey Arms car park (A470)",
+        "cost": "£5/day",
+        "notes": "Very popular. Fills early on weekends. Alternative lay-bys on A470.",
+        "lat": 51.8821,
+        "lng": -3.4752
+      },
+      "startPoint": {
+        "name": "Storey Arms, A470",
+        "lat": 51.8821,
+        "lng": -3.4752
+      },
+      "operatorSlug": null,
+      "guidedOption": "Several operators run guided walks from ~£35pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 3,
+      "name": "Llyn y Fan Fach",
+      "slug": "llyn-y-fan-fach",
+      "verdict": "The most atmospheric walk in Wales. A mythical lake under a brooding escarpment.",
+      "image": "/images/best-lists/brecon-beacons-best-walks-llyn-y-fan-fach.jpg",
+      "imageAlt": "Llyn y Fan Fach lake with the dark escarpment of Bannau Sir Gaer rising behind",
+      "whyItMadeTheList": "Llyn y Fan Fach is the stuff of legend — literally. The Lady of the Lake mythology originates here, and when you arrive at the dark, cliff-ringed lake, you understand why. The walk follows a river valley through remote, treeless terrain before the escarpment of Bannau Sir Gaer (the Carmarthen Fans) rears up ahead. The lake sits in a glacial hollow that feels prehistoric. If you extended the walk along the ridge, the views over the Black Mountain are extraordinary.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours (5-6 hours with ridge extension)",
+      "distance": "9km return (14km with ridge circuit)",
+      "elevationGain": "400m (700m with ridge)",
+      "cost": "Free",
+      "bestFor": "Walkers wanting atmosphere, mythology, and remote beauty",
+      "skipIf": "You want facilities — there are none. No café, no toilets, no phone signal. Bring everything you need.",
+      "insiderTip": "Continue up the escarpment above the lake for ridge walking that rivals anything in the Beacons. The full horseshoe taking in Picws Du and Fan Foel is a superb day out. Go on a misty day for maximum atmosphere — the lake in cloud is genuinely eerie.",
+      "season": "March–November (the track can be waterlogged in winter)",
+      "parking": {
+        "location": "Llanddeusant car park",
+        "cost": "Free (honesty box, £2 suggested)",
+        "notes": "Small car park at the end of a single-track road. Limited spaces but the walk is long enough to deter casual visitors.",
+        "lat": 51.8789,
+        "lng": -3.7437
+      },
+      "startPoint": {
+        "name": "Llanddeusant",
+        "lat": 51.8789,
+        "lng": -3.7437
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 4,
+      "name": "Sugar Loaf (Y Fâl Fach)",
+      "slug": "sugar-loaf",
+      "verdict": "The perfect introductory peak — distinctive shape, big views, and done in time for lunch.",
+      "image": "/images/best-lists/brecon-beacons-best-walks-sugar-loaf.jpg",
+      "imageAlt": "The distinctive conical shape of Sugar Loaf mountain seen from the east",
+      "whyItMadeTheList": "Sugar Loaf is the Brecon Beacons' most recognisable peak — a distinctive cone visible from across the eastern Beacons. At 596m it's modest in height, but the views from the summit are outstanding: the Black Mountains, Skirrid, Usk Valley, and on clear days, the Severn Estuary. The walk is short enough for families with older children but steep enough to feel like a proper hill walk. It's the mountain that gets people hooked on the Brecon Beacons.",
+      "difficulty": "Easy-Moderate",
+      "duration": "2-3 hours",
+      "distance": "5km circular",
+      "elevationGain": "300m",
+      "cost": "Free",
+      "bestFor": "Families, beginner hikers, dog walkers, anyone wanting a quick summit",
+      "skipIf": "You want a full mountain day — Sugar Loaf is done in a couple of hours.",
+      "insiderTip": "The car park on the A40 side (south) gives the shortest route but the views are behind you. Park at the car park above Llanwenarth Breast (north side) for a better approach and views of the summit all the way up. The Walnut Tree restaurant near Abergavenny is world-class if you're celebrating.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Sugar Loaf car park (north side)",
+        "cost": "Free",
+        "notes": "Small NT car park. Follow signs from Abergavenny to Sugar Loaf.",
+        "lat": 51.8485,
+        "lng": -3.0485
+      },
+      "startPoint": {
+        "name": "Sugar Loaf car park",
+        "lat": 51.8485,
+        "lng": -3.0485
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 5,
+      "name": "Sgwd Gwladus (Lady Falls) & Elidir Trail",
+      "slug": "sgwd-gwladus-elidir-trail",
+      "verdict": "A standalone waterfall walk that's easier than the Four Falls — and the waterfall is arguably prettier.",
+      "image": "/images/best-lists/brecon-beacons-best-walks-sgwd-gwladus.jpg",
+      "imageAlt": "Sgwd Gwladus waterfall cascading into a plunge pool surrounded by trees",
+      "whyItMadeTheList": "If the Four Waterfalls Walk sounds too demanding, the Elidir Trail to Sgwd Gwladus is the perfect alternative. The path follows the River Nedd through atmospheric woodland to Lady Falls — a beautiful horseshoe waterfall dropping into a clear plunge pool. The walk is shorter, flatter, and better maintained than the Four Falls circuit. For many people, this is the more enjoyable option.",
+      "difficulty": "Easy-Moderate",
+      "duration": "1.5-2.5 hours",
+      "distance": "4km return",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Families with young children, older walkers, anyone wanting a waterfall without the Four Falls effort",
+      "skipIf": "You've done the Four Waterfalls Walk — Sgwd Gwladus is one of many and the circuit is more rewarding if you're fit.",
+      "insiderTip": "Continue past Sgwd Gwladus on the path to reach a second, lesser-known waterfall — Sgwd Einion Gam — which is often completely empty. The whole Pontneddfechan area is Waterfall Country and every river valley has falls.",
+      "season": "Year-round (best after rain)",
+      "parking": {
+        "location": "Pontneddfechan car park",
+        "cost": "£3-5/day",
+        "notes": "Car park by the Angel Inn in Pontneddfechan. Smaller and quieter than the Four Falls car parks.",
+        "lat": 51.7597,
+        "lng": -3.5806
+      },
+      "startPoint": {
+        "name": "Pontneddfechan village",
+        "lat": 51.7597,
+        "lng": -3.5806
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 6,
+      "name": "Fan y Big & Cribyn Ridge Walk",
+      "slug": "fan-y-big-cribyn",
+      "verdict": "The quieter, more satisfying way to experience the central Beacons — better than just Pen y Fan.",
+      "image": "/images/best-lists/brecon-beacons-best-walks-fan-y-big.jpg",
+      "imageAlt": "The undulating ridge of the Brecon Beacons with Cribyn and Fan y Big visible",
+      "whyItMadeTheList": "Instead of trudging up the Storey Arms path with everyone else, this ridge walk approaches the central Beacons from the east, taking in Fan y Big and Cribyn before (optionally) summiting Pen y Fan. The ridge walking is superb — airy, grassy, with views in every direction. Cribyn is a more satisfying peak than Pen y Fan (steeper, more dramatic, fewer people), and Fan y Big is genuinely quiet. This is the walk experienced Beacons walkers do.",
+      "difficulty": "Challenging",
+      "duration": "5-6 hours",
+      "distance": "14km circular",
+      "elevationGain": "700m",
+      "cost": "Free",
+      "bestFor": "Fit walkers wanting a full day on the Beacons ridges with fewer crowds",
+      "skipIf": "You just want to tick off Pen y Fan quickly — the Storey Arms route is faster.",
+      "insiderTip": "Start from the Taf Fechan car park near Neuadd Reservoir for the most scenic approach. The ridge between Cribyn and Pen y Fan is actually harder than the Storey Arms route — don't underestimate the steep pull up Cribyn.",
+      "season": "March–November",
+      "parking": {
+        "location": "Neuadd Reservoir / Taf Fechan car park",
+        "cost": "Free",
+        "notes": "Small car park at the end of a minor road. Follow signs for Taf Fechan Forest.",
+        "lat": 51.8670,
+        "lng": -3.4340
+      },
+      "startPoint": {
+        "name": "Neuadd Reservoir",
+        "lat": 51.8670,
+        "lng": -3.4340
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 7,
+      "name": "Henrhyd Falls",
+      "slug": "henrhyd-falls",
+      "verdict": "The tallest waterfall in South Wales — and the Batcave entrance from The Dark Knight Rises.",
+      "image": "/images/best-lists/brecon-beacons-best-walks-henrhyd-falls.jpg",
+      "imageAlt": "Henrhyd Falls dropping into a dark gorge with lush vegetation on both sides",
+      "whyItMadeTheList": "At 27 metres, Henrhyd is the tallest waterfall in South Wales. It drops into a dark, atmospheric gorge that was used as the Batcave entrance in The Dark Knight Rises. The walk is short (15 minutes from the car park) but steep, and the setting is surprisingly wild for something so close to the main road. The waterfall is best after heavy rain when the full width of the fall is in spate.",
+      "difficulty": "Easy (steep steps)",
+      "duration": "1 hour",
+      "distance": "2km return",
+      "cost": "Free (NT, parking free for members)",
+      "bestFor": "Families, Batman fans, waterfall collectors",
+      "skipIf": "You want a long walk — this is a quick visit, not a day out. Combine with other activities.",
+      "insiderTip": "The steps down to the waterfall are steep and can be slippery — proper footwear recommended. You can walk behind the falls like Sgwd yr Eira, though the path is less defined. Visit after prolonged rain for maximum drama. Combine with the Four Waterfalls Walk (30 minutes drive) for a waterfall double-header.",
+      "season": "Year-round (best after rain)",
+      "parking": {
+        "location": "Henrhyd Falls NT car park",
+        "cost": "Free (NT)",
+        "notes": "Small National Trust car park off the A4221 near Coelbren. Well-signed.",
+        "lat": 51.7802,
+        "lng": -3.6268
+      },
+      "startPoint": {
+        "name": "Henrhyd Falls car park",
+        "lat": 51.7802,
+        "lng": -3.6268
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 8,
+      "name": "Skirrid Fawr (Ysgyryd Fawr)",
+      "slug": "skirrid-fawr",
+      "verdict": "Wales's Holy Mountain — a short, steep hike to a summit chapel and legendary landslip.",
+      "image": "/images/best-lists/brecon-beacons-best-walks-skirrid.jpg",
+      "imageAlt": "The distinctive split profile of Skirrid mountain seen from the east",
+      "whyItMadeTheList": "The Skirrid is one of the most distinctive mountains in Wales — its split profile was supposedly caused by an earthquake at the crucifixion (hence 'Holy Mountain'). The remains of a medieval chapel sit on the summit. The walk is short and steep, with views across to Sugar Loaf, the Usk Valley, and the Black Mountains. It's been a place of pilgrimage for centuries, and the summit has a genuine sense of the sacred about it.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": "5km circular",
+      "elevationGain": "300m",
+      "cost": "Free",
+      "bestFor": "History enthusiasts, short hill walkers, and anyone based near Abergavenny",
+      "skipIf": "You want big mountain terrain — the Skirrid is small. But it punches above its height.",
+      "insiderTip": "The Skirrid Inn at the base of the mountain claims to be the oldest pub in Wales (12th century) and is reportedly haunted. Whether or not you believe the ghosts, the food is good. Walk the route in late afternoon for dramatic light on the summit.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Skirrid car park (NT)",
+        "cost": "Free",
+        "notes": "Small National Trust car park at the base of the mountain on the B4521.",
+        "lat": 51.8500,
+        "lng": -3.0078
+      },
+      "startPoint": {
+        "name": "Skirrid car park",
+        "lat": 51.8500,
+        "lng": -3.0078
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 9,
+      "name": "Talybont Reservoir & Forest Circuit",
+      "slug": "talybont-reservoir",
+      "verdict": "A peaceful lakeside circuit through forest and farmland — perfect for a low-effort day.",
+      "image": "/images/best-lists/brecon-beacons-best-walks-talybont-reservoir.jpg",
+      "imageAlt": "Talybont Reservoir surrounded by forest and hills on a calm autumn day",
+      "whyItMadeTheList": "Talybont Reservoir is one of the most peaceful walks in the Brecon Beacons. The circuit follows the reservoir shore through pine forest and past the impressive dam, with the Beacons ridges visible in the background. It's flat, well-surfaced, and dog-friendly — the kind of walk where you can switch off and just enjoy the scenery. The forest sections have red kite sightings and the reservoir attracts birdlife in winter.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours",
+      "distance": "9km circular",
+      "cost": "Free",
+      "bestFor": "Dog walkers, families with buggies, birdwatchers, anyone wanting flat walking in beautiful surroundings",
+      "skipIf": "You want mountains or dramatic terrain — this is deliberately gentle.",
+      "insiderTip": "Walk anticlockwise for the best views of the dam and the Beacons behind. The Usk Inn in Talybont-on-Usk (3 miles) is an excellent pub with a riverside garden. Visit in autumn for golden larch forests reflected in the reservoir.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Talybont Reservoir car park",
+        "cost": "Free",
+        "notes": "Car park at the dam end of the reservoir. Well-maintained.",
+        "lat": 51.8594,
+        "lng": -3.3722
+      },
+      "startPoint": {
+        "name": "Talybont Reservoir dam",
+        "lat": 51.8594,
+        "lng": -3.3722
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 10,
+      "name": "Hay Bluff & Twmpa (Black Mountains)",
+      "slug": "hay-bluff-twmpa",
+      "verdict": "The Brecon Beacons' best ridge walk — endless views over the Wye Valley from an ancient escarpment.",
+      "image": "/images/best-lists/brecon-beacons-best-walks-hay-bluff.jpg",
+      "imageAlt": "The dramatic escarpment of Hay Bluff with the Wye Valley visible below",
+      "whyItMadeTheList": "The Black Mountains on the eastern edge of the Brecon Beacons feel like a different world. Hay Bluff's escarpment drops dramatically to the Wye Valley, and the walk along the ridge to Twmpa (Lord Hereford's Knob — yes, really) gives you some of the finest ridge walking in South Wales. The terrain is broad and grassy, the navigation easy, and the sense of space vast. On a clear day, you can see across to the Malverns and beyond.",
+      "difficulty": "Moderate",
+      "duration": "4-5 hours",
+      "distance": "11km circular",
+      "elevationGain": "500m",
+      "cost": "Free",
+      "bestFor": "Ridge walkers wanting big views and the feeling of walking on the edge of the world",
+      "skipIf": "Low cloud — the whole point is the views from the escarpment. In mist, it's a featureless plateau.",
+      "insiderTip": "Park at the Gospel Pass road end for the shortest approach to Hay Bluff. The road up is narrow and steep but the starting altitude means you save 200m of climbing. Hay-on-Wye (15 minutes drive) is the UK's book capital — combine walking with secondhand bookshop browsing.",
+      "season": "March–November",
+      "parking": {
+        "location": "Gospel Pass car park",
+        "cost": "Free",
+        "notes": "Informal parking at the top of the Gospel Pass road. Limited spaces. Road is single-track and not for nervous drivers.",
+        "lat": 51.9636,
+        "lng": -3.1106
+      },
+      "startPoint": {
+        "name": "Gospel Pass",
+        "lat": 51.9636,
+        "lng": -3.1106
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    }
+  ],
+  "comparisonTable": true,
+  "seasonalPicks": {
+    "spring": { "entries": [1, 5], "note": "Waterfalls at their best, bluebells in the woodland walks" },
+    "summer": { "entries": [10, 2], "note": "Long days for ridge walks, clear views from the summits" },
+    "autumn": { "entries": [3, 9], "note": "Atmospheric mist on the lakes, golden forests, fewer crowds" },
+    "winter": { "entries": [7, 4], "note": "Short days but dramatic light. The waterfalls are most impressive after winter rain" }
+  },
+  "faqs": [
+    {
+      "question": "What's the easiest walk in the Brecon Beacons?",
+      "answer": "Henrhyd Falls (#7) is the shortest and easiest — a 15-minute walk to the tallest waterfall in South Wales. Sgwd Gwladus (#5) is also easy. For something slightly longer, Talybont Reservoir (#9) is flat and well-surfaced, suitable for pushchairs."
+    },
+    {
+      "question": "How hard is the walk up Pen y Fan?",
+      "answer": "Via the Storey Arms route (#2), Pen y Fan is manageable for most reasonably fit people — 3-4 hours, 8km, with 500m of climbing on a well-maintained stone path. It's steeper than it looks and exposed on the summit in wind, but no scrambling is required."
+    },
+    {
+      "question": "Are the Brecon Beacons waterfalls worth visiting?",
+      "answer": "Absolutely — Waterfall Country is one of the best waterfall areas in the UK. The Four Waterfalls Walk (#1) is unmissable, and walking behind Sgwd yr Eira is a once-in-a-lifetime experience. Visit after rain for maximum drama."
+    },
+    {
+      "question": "Can you walk in the Brecon Beacons with dogs?",
+      "answer": "Yes — all walks on this list are dog-friendly, though leads are required near livestock (common on the mountains). Talybont Reservoir (#9) and the waterfall walks are particularly good for dogs. Note that the Pen y Fan paths can be very busy with other dogs in summer."
+    }
+  ],
+  "relatedLists": [
+    { "slug": "/brecon-beacons/best-waterfalls", "label": "Best Waterfalls in the Brecon Beacons" },
+    { "slug": "/snowdonia/best-walks", "label": "Best Walks in Snowdonia" },
+    { "slug": "/snowdonia/best-hikes", "label": "Best Hikes in Snowdonia" }
+  ]
+}

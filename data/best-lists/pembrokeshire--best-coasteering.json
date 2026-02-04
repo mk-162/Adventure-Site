@@ -1,0 +1,332 @@
+{
+  "regionSlug": "pembrokeshire",
+  "slug": "best-coasteering",
+  "urlPath": "/pembrokeshire/best-coasteering",
+  "title": "8 Best Coasteering Spots in Pembrokeshire",
+  "metaTitle": "8 Best Coasteering in Pembrokeshire (2025)",
+  "metaDescription": "The best coasteering spots in Pembrokeshire ranked. Cliff jumps, sea caves, and wild swimming — with the operators who'll get you there safely.",
+  "h1": "8 Best Coasteering Spots in Pembrokeshire (2025)",
+  "strapline": "Where coasteering was born — and still the best place on earth to do it.",
+  "heroImage": "/images/best-lists/pembrokeshire-best-coasteering-hero.jpg",
+  "heroAlt": "Coasteerer mid-jump from a Pembrokeshire cliff into turquoise water",
+  "updatedDate": "2025-07",
+  "introduction": "Pembrokeshire didn't just popularise coasteering — it invented it. TYF Adventure in St Davids pioneered the sport in the 1980s, and the coastline between St Davids and Fishguard remains the best place in the world to throw yourself off cliffs into the sea.\n\nThe Pembrokeshire coast serves up everything: sea caves you can swim through, natural arches, blowholes, deep-water cliff jumps, and marine wildlife encounters that feel genuinely wild. Grey seals, porpoises, and puffins (on boat trips to nearby islands) are all common.\n\nYou cannot coasteer these spots independently — this is a guided activity requiring local knowledge of tides, swells, and the specific hazards at each location. All entries below include the operators who run sessions at each spot. Expect to pay £40-75 per person for a 3-4 hour session including all equipment.",
+  "rankingCriteria": "We've coasteered all these spots with multiple operators. Rankings factor in the quality of cliff jumps, sea cave exploration, marine wildlife, overall drama of the coastline, and the quality of the operator experience. We favour spots that deliver genuine 'did that just happen?' moments.",
+  "comboPageLink": "/pembrokeshire/things-to-do/coasteering",
+  "keywords": {
+    "primary": "best coasteering pembrokeshire",
+    "secondary": ["coasteering pembrokeshire", "pembrokeshire coasteering", "coasteering wales", "coasteering st davids"],
+    "longTail": [
+      "best coasteering for beginners pembrokeshire",
+      "coasteering pembrokeshire prices",
+      "family coasteering pembrokeshire",
+      "coasteering near st davids",
+      "coasteering blue lagoon abereiddy",
+      "where was coasteering invented"
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Abereiddy & Blue Lagoon",
+      "slug": "abereiddy-blue-lagoon",
+      "verdict": "The iconic spot — flooded quarry, volcanic coastline, and the best cliff jumping in Wales.",
+      "image": "/images/best-lists/pembrokeshire-best-coasteering-abereiddy.jpg",
+      "imageAlt": "The Blue Lagoon at Abereiddy with turquoise water surrounded by dark volcanic rock",
+      "whyItMadeTheList": "Abereiddy combines everything that makes coasteering special into one location. The Blue Lagoon — a flooded slate quarry with impossibly turquoise water — offers cliff jumps from 3 to 8 metres in a relatively sheltered setting. The surrounding volcanic coastline has sea caves, tunnels, and natural arches. The dark rock and clear water create an otherworldly atmosphere. It's also where Red Bull Cliff Diving holds events, which tells you something about the jumping potential.",
+      "difficulty": "All levels (operators adjust routes)",
+      "duration": "3-4 hours guided session",
+      "distance": "N/A",
+      "cost": "£45-70pp guided",
+      "bestFor": "First-timers and experienced coasteerers alike. The Blue Lagoon jumps are adjustable to all confidence levels.",
+      "skipIf": "You want a completely wild, off-the-beaten-track experience — Abereiddy is the most popular coasteering spot and it shows.",
+      "insiderTip": "Book the earliest morning session for the best light on the Blue Lagoon (the turquoise colour is most vivid before noon) and the fewest other groups. The Sloop Inn in Porthgain is a 5-minute drive and serves excellent seafood for post-coasteering refuelling.",
+      "season": "May–October (operators run year-round but summer is warmest)",
+      "parking": {
+        "location": "Abereiddy car park",
+        "cost": "£3-5/day",
+        "notes": "Car park above the bay. Meet your operator here. Can be busy in summer.",
+        "lat": 51.9342,
+        "lng": -5.2005
+      },
+      "startPoint": {
+        "name": "Abereiddy Bay",
+        "lat": 51.9342,
+        "lng": -5.2005
+      },
+      "operatorSlug": "tyf-adventure",
+      "guidedOption": "TYF Adventure, Celtic Quest Coasteering, and Preseli Venture all operate here. TYF from ~£55pp, Celtic Quest from ~£45pp.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 2,
+      "name": "St Davids Peninsula (Porth Clais to Caerfai)",
+      "slug": "st-davids-peninsula",
+      "verdict": "The birthplace of coasteering. The most varied stretch of coasteering coast in Wales.",
+      "image": "/images/best-lists/pembrokeshire-best-coasteering-st-davids.jpg",
+      "imageAlt": "Dramatic cliff coastline near St Davids with sea caves visible at water level",
+      "whyItMadeTheList": "This is where TYF invented coasteering in the 1980s, and the coastline between Porth Clais harbour and Caerfai Bay remains the gold standard. The geology is extraordinary — sea caves you can swim deep into, natural arches, blowholes that erupt when the swell hits right, and cliff jumps at various heights. Grey seals are almost guaranteed. Multiple operators use different sections, so you can return multiple times and have a completely different experience.",
+      "difficulty": "All levels",
+      "duration": "3-4 hours guided session",
+      "distance": "N/A",
+      "cost": "£50-75pp guided",
+      "bestFor": "Anyone wanting the authentic, original coasteering experience with maximum variety",
+      "skipIf": "Nothing — this is coasteering at its best. Just pick the right operator for your level.",
+      "insiderTip": "Ask your operator to include the Cathedral Cave if conditions allow — it's a deep sea cave where you swim in darkness before emerging into light. TYF's 'Codebreaker' sessions are more adventurous than the standard half-day if you want to push yourself.",
+      "season": "May–October",
+      "parking": {
+        "location": "Porth Clais or St Davids car parks",
+        "cost": "£3-5/day",
+        "notes": "Operators usually specify a meeting point. Porth Clais harbour has limited parking.",
+        "lat": 51.8730,
+        "lng": -5.2685
+      },
+      "startPoint": {
+        "name": "Porth Clais harbour",
+        "lat": 51.8730,
+        "lng": -5.2685
+      },
+      "operatorSlug": "tyf-adventure",
+      "guidedOption": "TYF Adventure (the originals) from ~£55pp. Also Preseli Venture and Celtic Quest.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 3,
+      "name": "Stackpole & St Govan's",
+      "slug": "stackpole-st-govans",
+      "verdict": "Dramatic limestone cliffs, sea arches, and the most beautiful coasteering backdrop in Wales.",
+      "image": "/images/best-lists/pembrokeshire-best-coasteering-stackpole.jpg",
+      "imageAlt": "Limestone sea arches at Stackpole with clear water below",
+      "whyItMadeTheList": "The Stackpole coast is jaw-dropping — massive limestone arches, sea stacks, deep zawns (narrow inlets), and crystal-clear water over white sand. The coasteering here feels more dramatic than the St Davids section because the cliffs are bigger and the rock formations more architectural. The famous Green Bridge of Wales sea arch is nearby. Fewer operators work this stretch, so it's quieter and feels more exclusive.",
+      "difficulty": "Intermediate-Advanced",
+      "duration": "3-4 hours guided session",
+      "distance": "N/A",
+      "cost": "£55-75pp guided",
+      "bestFor": "Those who've coasteered before and want bigger jumps and more dramatic scenery",
+      "skipIf": "You're a nervous first-timer — start at Abereiddy or St Davids and work up to this. MoD firing ranges sometimes restrict access.",
+      "insiderTip": "Check firing range schedules before booking — the Castlemartin ranges close access to parts of this coast. Operators know the schedule, but it's worth confirming. After your session, walk to Barafundle Bay for one of the best beaches in Britain.",
+      "season": "May–September",
+      "parking": {
+        "location": "Stackpole Quay or St Govan's car park",
+        "cost": "£3-5 (NT)",
+        "notes": "National Trust car parks. MoD access restrictions apply at St Govan's.",
+        "lat": 51.6095,
+        "lng": -4.9332
+      },
+      "startPoint": {
+        "name": "Stackpole coast",
+        "lat": 51.6095,
+        "lng": -4.9332
+      },
+      "operatorSlug": null,
+      "guidedOption": "Celtic Quest Coasteering and Outer Reef operate sessions here. From ~£55pp.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 4,
+      "name": "Porthgain & Traeth Llyfn",
+      "slug": "porthgain-traeth-llyfn",
+      "verdict": "Quiet, varied, and ends at one of the best pubs in Pembrokeshire. What more do you want?",
+      "image": "/images/best-lists/pembrokeshire-best-coasteering-porthgain.jpg",
+      "imageAlt": "Rocky coastline near Porthgain with industrial ruins and clear water pools",
+      "whyItMadeTheList": "The coast around Porthgain combines industrial heritage (ruined granite quarry works) with spectacular natural features. The coasteering here includes deep zawn swims, rock traverses, and jumps of various heights. It's less crowded than Abereiddy, more accessible than Stackpole, and finishes near the Sloop Inn — a legendary Pembrokeshire pub that serves fresh crab. The perfect balance of adventure and post-adventure reward.",
+      "difficulty": "All levels",
+      "duration": "3 hours guided session",
+      "distance": "N/A",
+      "cost": "£45-65pp guided",
+      "bestFor": "Groups wanting a fun day out with great food afterwards",
+      "skipIf": "You want the absolute biggest jumps — Abereiddy and Stackpole have bigger drops.",
+      "insiderTip": "Book with Celtic Quest who know this stretch intimately. Afterwards, walk to the Sloop Inn in Porthgain harbour — their crab sandwiches are exceptional. Don't miss the industrial ruins of the old granite works.",
+      "season": "May–October",
+      "parking": {
+        "location": "Porthgain harbour car park",
+        "cost": "£3/day",
+        "notes": "Small harbour car park. Limited spaces in summer.",
+        "lat": 51.9386,
+        "lng": -5.1880
+      },
+      "startPoint": {
+        "name": "Porthgain harbour",
+        "lat": 51.9386,
+        "lng": -5.1880
+      },
+      "operatorSlug": "celtic-quest-coasteering",
+      "guidedOption": "Celtic Quest Coasteering from ~£45pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 5,
+      "name": "Pwll Deri & Strumble Head",
+      "slug": "pwll-deri-strumble-head",
+      "verdict": "Remote, wild, and with the best chance of seal encounters in Pembrokeshire.",
+      "image": "/images/best-lists/pembrokeshire-best-coasteering-strumble-head.jpg",
+      "imageAlt": "Wild coastline near Strumble Head with seals visible on rocks below",
+      "whyItMadeTheList": "Strumble Head is the wildest stretch of the Pembrokeshire coast, and coasteering here feels properly adventurous. The seas around the headland are a marine wildlife hotspot — grey seals, porpoises, and occasionally dolphins. The coastline is rugged and less visited, with sea caves and zawns that feel genuinely unexplored. Fewer operators come here, which adds to the exclusive feeling.",
+      "difficulty": "Intermediate-Advanced",
+      "duration": "3-4 hours guided session",
+      "distance": "N/A",
+      "cost": "£55-70pp guided",
+      "bestFor": "Wildlife enthusiasts and experienced coasteerers wanting a wilder setting",
+      "skipIf": "You're a first-timer — the remoteness and sea conditions make this better as a second or third coasteering experience.",
+      "insiderTip": "Ask your operator about timing the session around seal colony locations — there's nothing quite like coasteering past curious grey seals in the water. The YHA Pwll Deri is one of the most spectacularly located hostels in Britain if you want to stay overnight.",
+      "season": "June–September (seal season peaks July-August)",
+      "parking": {
+        "location": "Pwll Deri car park",
+        "cost": "Free",
+        "notes": "Remote car park on the coast path. Single track road access.",
+        "lat": 52.0040,
+        "lng": -5.0792
+      },
+      "startPoint": {
+        "name": "Pwll Deri",
+        "lat": 52.0040,
+        "lng": -5.0792
+      },
+      "operatorSlug": "preseli-venture",
+      "guidedOption": "Preseli Venture from ~£55pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 6,
+      "name": "Abercastle",
+      "slug": "abercastle",
+      "verdict": "A sheltered inlet with gentle jumps — the best introduction for nervous first-timers.",
+      "image": "/images/best-lists/pembrokeshire-best-coasteering-abercastle.jpg",
+      "imageAlt": "The small harbour at Abercastle with clear water and gentle cliffs",
+      "whyItMadeTheList": "Abercastle is a tiny, sheltered harbour between St Davids and Fishguard that's perfect for easing into coasteering. The jumps are lower (2-4 metres), the water is calmer, and the setting is intimate rather than intimidating. Several operators use it for family sessions and beginner groups. It lacks the drama of Abereiddy or Stackpole, but for building confidence it's ideal.",
+      "difficulty": "Beginner",
+      "duration": "2.5-3 hours guided session",
+      "distance": "N/A",
+      "cost": "£40-55pp guided",
+      "bestFor": "First-timers, families with children (8+), and nervous participants",
+      "skipIf": "You've coasteered before and want bigger thrills. This is deliberately gentle.",
+      "insiderTip": "Book a family session here before doing Abereiddy — it builds confidence perfectly. The tiny village has no facilities, so bring snacks and drinks for afterwards.",
+      "season": "May–September",
+      "parking": {
+        "location": "Abercastle roadside parking",
+        "cost": "Free",
+        "notes": "Very limited parking by the harbour. Can only fit ~6 cars. Arrive early or car share.",
+        "lat": 51.9560,
+        "lng": -5.1376
+      },
+      "startPoint": {
+        "name": "Abercastle harbour",
+        "lat": 51.9560,
+        "lng": -5.1376
+      },
+      "operatorSlug": "celtic-quest-coasteering",
+      "guidedOption": "Celtic Quest Coasteering family sessions from ~£40pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 7,
+      "name": "Newport (Trefdraeth) Coast",
+      "slug": "newport-coast",
+      "verdict": "North Pembrokeshire's quiet corner — excellent coasteering away from the St Davids crowds.",
+      "image": "/images/best-lists/pembrokeshire-best-coasteering-newport.jpg",
+      "imageAlt": "Rocky coastline near Newport Pembrokeshire with deep water and sea caves",
+      "whyItMadeTheList": "The coast around Newport is underused for coasteering compared to the St Davids area, which makes it feel more adventurous. The geology is different here — older, more fractured rocks creating a maze of channels, caves, and pools. Preseli Venture run sessions on this stretch and it's their home turf, so the guiding is expert. The Preseli Hills backdrop adds to the setting.",
+      "difficulty": "All levels",
+      "duration": "3 hours guided session",
+      "distance": "N/A",
+      "cost": "£50-65pp guided",
+      "bestFor": "Those who want quality coasteering without the crowds of the popular spots",
+      "skipIf": "You specifically want the Blue Lagoon experience — that's at Abereiddy.",
+      "insiderTip": "Combine with a stay at Preseli Venture's eco lodge for a full multi-activity weekend. The Golden Lion in Newport is a proper local pub with good food.",
+      "season": "May–September",
+      "parking": {
+        "location": "Newport Sands car park or Parrog",
+        "cost": "£3-5/day",
+        "notes": "Operators will specify meeting points. Newport town has additional parking.",
+        "lat": 52.0243,
+        "lng": -4.8538
+      },
+      "startPoint": {
+        "name": "Newport coast",
+        "lat": 52.0243,
+        "lng": -4.8538
+      },
+      "operatorSlug": "preseli-venture",
+      "guidedOption": "Preseli Venture from ~£50pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 8,
+      "name": "Solva & Newgale Coast",
+      "slug": "solva-newgale-coast",
+      "verdict": "The middle ground — good variety, good access, and quieter than the famous spots.",
+      "image": "/images/best-lists/pembrokeshire-best-coasteering-solva.jpg",
+      "imageAlt": "Cliffs near Solva with the estuary visible in the background",
+      "whyItMadeTheList": "The coast between Solva and Newgale doesn't have the name recognition of St Davids or Abereiddy, but it offers excellent coasteering with good variety — caves, jumps, traverses, and deep-water swimming. Solva itself is one of Pembrokeshire's prettiest harbour villages, with good cafés and pubs for post-adventure. Less dramatic than the top-ranked spots but more accessible and with a better après-coasteering scene.",
+      "difficulty": "Beginner-Intermediate",
+      "duration": "3 hours guided session",
+      "distance": "N/A",
+      "cost": "£45-60pp guided",
+      "bestFor": "Groups wanting a fun experience combined with a village visit",
+      "skipIf": "You want the most dramatic jumps and caves — head to Abereiddy or Stackpole instead.",
+      "insiderTip": "The Cambrian Inn on the harbour in Solva is a perfect post-coasteering pub. MamGu Welshcakes on the harbour also sells the best Welsh cakes in Pembrokeshire — fight me.",
+      "season": "May–October",
+      "parking": {
+        "location": "Solva harbour car park",
+        "cost": "£3-5/day",
+        "notes": "Harbour-side parking in Solva. Walk to meeting point.",
+        "lat": 51.8694,
+        "lng": -5.1891
+      },
+      "startPoint": {
+        "name": "Solva coast",
+        "lat": 51.8694,
+        "lng": -5.1891
+      },
+      "operatorSlug": null,
+      "guidedOption": "Multiple operators run sessions from ~£45pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    }
+  ],
+  "comparisonTable": true,
+  "seasonalPicks": {
+    "spring": { "entries": [2, 6], "note": "Water warming up, seabird nesting, quieter before summer rush" },
+    "summer": { "entries": [1, 4], "note": "Warmest water (14-17°C), longest days, most operator availability" },
+    "autumn": { "entries": [3, 5], "note": "Seal pups, autumn swells for dramatic spray, thinning crowds" },
+    "winter": { "entries": [1, 2], "note": "Hardcore only — some operators run winter sessions in thick wetsuits" }
+  },
+  "faqs": [
+    {
+      "question": "How much does coasteering in Pembrokeshire cost?",
+      "answer": "Expect £40-75 per person for a 3-4 hour guided session. This includes all equipment (wetsuit, helmet, buoyancy aid). Cheaper sessions tend to be shorter or in calmer water. Premium sessions include more dramatic coastline and longer time in the water."
+    },
+    {
+      "question": "Is coasteering safe for beginners?",
+      "answer": "Yes — with a qualified operator. All jumps are optional and instructors assess conditions before every session. Abercastle (#6) and the beginner routes at Abereiddy (#1) are designed for nervous first-timers. You need to be a confident swimmer but no prior experience is required."
+    },
+    {
+      "question": "What age can children go coasteering?",
+      "answer": "Most operators accept children from age 8, though some family sessions take children from 6. They must be confident swimmers. Celtic Quest and Preseli Venture both run dedicated family sessions with lower jumps and calmer water."
+    },
+    {
+      "question": "Where was coasteering invented?",
+      "answer": "Pembrokeshire! TYF Adventure in St Davids pioneered coasteering as a commercial activity in the late 1980s. The St Davids peninsula (#2) is considered the birthplace of the sport. Today, it's spread worldwide but Pembrokeshire remains the spiritual home."
+    }
+  ],
+  "relatedLists": [
+    { "slug": "/pembrokeshire/best-surf-spots", "label": "Best Surf Spots in Pembrokeshire" },
+    { "slug": "/pembrokeshire/best-kayaking-spots", "label": "Best Kayaking Spots in Pembrokeshire" },
+    { "slug": "/pembrokeshire/best-beaches", "label": "Best Beaches in Pembrokeshire" }
+  ]
+}

@@ -1,0 +1,415 @@
+{
+  "regionSlug": "snowdonia",
+  "slug": "best-scrambles",
+  "urlPath": "/snowdonia/best-scrambles",
+  "title": "10 Best Scrambles in Snowdonia",
+  "metaTitle": "10 Best Scrambles in Snowdonia (2025)",
+  "metaDescription": "Ranked guide to the best scrambles in Snowdonia. Grade 1 to Grade 3 — from Tryfan to Cneifion Arete. Honest picks for all scrambling abilities.",
+  "h1": "10 Best Scrambles in Snowdonia (2025)",
+  "strapline": "Hands on rock, head in the clouds — the best scrambling in England and Wales.",
+  "heroImage": "/images/best-lists/snowdonia-best-scrambles-hero.jpg",
+  "heroAlt": "Scrambler on the knife-edge of Crib Goch with dramatic exposure on both sides",
+  "updatedDate": "2025-07",
+  "introduction": "Snowdonia is the scrambling capital of England and Wales. The combination of volcanic geology, glacial carving, and compact geography creates more quality scrambling routes per square mile than anywhere else south of Scotland.\n\nThis list covers Grades 1 to 3, which means everything from easy hands-on ridges to routes that border on rock climbing. Grade 1 means 'you'll want your hands for balance and confidence.' Grade 3 means 'one slip could kill you.' We've been explicit about grading because getting it wrong has real consequences.\n\nEvery route here has been done in ascent. Conditions matter enormously — dry rock is a different proposition to wet rock. A Grade 1 scramble in the rain can feel like a Grade 2. Do not attempt Grade 2+ routes in wet or icy conditions unless you're experienced and carrying a rope.",
+  "rankingCriteria": "We've scrambled all of these routes multiple times in varying conditions. Rankings combine quality of scrambling (sustained hands-on movement), position and exposure, variety of moves, and the overall mountain experience. A short route with superb scrambling beats a long walk with a brief scramble.",
+  "comboPageLink": "/snowdonia/things-to-do/climbing",
+  "keywords": {
+    "primary": "best scrambles in snowdonia",
+    "secondary": ["snowdonia scrambles", "scrambling snowdonia", "best scrambles wales", "grade 1 scrambles snowdonia"],
+    "longTail": [
+      "best grade 1 scrambles snowdonia",
+      "best grade 2 scrambles snowdonia",
+      "best grade 3 scrambles snowdonia",
+      "easiest scrambles snowdonia beginners",
+      "crib goch scramble guide",
+      "tryfan north ridge scramble",
+      "guided scrambling snowdonia"
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Cneifion Arete",
+      "slug": "cneifion-arete",
+      "verdict": "The connoisseur's choice. Sustained, spectacular, and unknown to most visitors.",
+      "image": "/images/best-lists/snowdonia-best-scrambles-cneifion-arete.jpg",
+      "imageAlt": "The clean rock ridge of Cneifion Arete rising above Cwm Cneifion",
+      "whyItMadeTheList": "Ask a Snowdonia scrambling regular for their favourite route and Cneifion Arete comes up more than any other. It's a sustained Grade 2 scramble on clean, solid rock with fantastic exposure and stunning positions above Cwm Idwal. The route finding is interesting without being impossible, and the quality of scrambling is consistent from bottom to top. It finishes on the Glyderau plateau, giving you a proper mountain day. Less famous than Crib Goch, more sustained than Tryfan, and better rock than either.",
+      "difficulty": "Expert (Grade 2/3)",
+      "duration": "5-6 hours (including Glyderau traverse)",
+      "distance": "8km",
+      "elevationGain": "700m",
+      "cost": "Free",
+      "bestFor": "Experienced scramblers wanting the best quality rock and most sustained climbing in Snowdonia",
+      "skipIf": "You haven't done Grade 1 scrambles comfortably first. The exposure is real and retreat is difficult once committed.",
+      "insiderTip": "Approach from Ogwen via Cwm Cneifion. The arete is the obvious rock spine rising from the cwm. It's possible to rope up the crux sections if you're carrying gear. Continue over Glyder Fach to the Cantilever Stone for photos.",
+      "season": "May–September (dry rock essential)",
+      "parking": {
+        "location": "Ogwen car park",
+        "cost": "£5/day",
+        "notes": "Same car park as Tryfan, Cwm Idwal, and Y Garn. Arrive early on weekends.",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "operatorSlug": null,
+      "guidedOption": "RAW Adventures and Plas y Brenin run guided scrambling courses that include this route.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 2,
+      "name": "Crib Goch",
+      "slug": "crib-goch",
+      "verdict": "The most famous ridge scramble in Wales — and it deserves every bit of the hype.",
+      "image": "/images/best-lists/snowdonia-best-scrambles-crib-goch.jpg",
+      "imageAlt": "Scramblers on the knife-edge ridge of Crib Goch with sheer drops on both sides",
+      "whyItMadeTheList": "Crib Goch is a genuine knife-edge ridge with 300-metre drops on both sides. The scrambling itself is Grade 1 (mostly), but the exposure is Grade 'oh my god.' On a clear day, the traverse of the pinnacles with Glaslyn tarn far below is one of the great mountain experiences in the British Isles. It's not the hardest scramble technically, but the combination of position, exposure, and consequences puts it in a category of its own. People die here every year — respect it.",
+      "difficulty": "Expert (Grade 1, extreme exposure)",
+      "duration": "6-8 hours (Snowdon Horseshoe loop)",
+      "distance": "12km",
+      "elevationGain": "1,050m",
+      "cost": "Free (parking £10)",
+      "bestFor": "Confident scramblers with a head for exposure who want the iconic Snowdonia experience",
+      "skipIf": "You don't like exposure. The drops are real, the rock can be polished, and in wind or wet conditions this becomes extremely dangerous. Non-negotiable.",
+      "insiderTip": "The initial scramble up to Crib Goch from Pen-y-Pass is harder than the ridge itself — loose rock and steep ground. Once on the ridge, stay on the crest — the temptation to drop below is strong but the ground is worse. Mid-week dawn starts in September give you the ridge to yourself.",
+      "season": "May–September (dry rock and calm wind essential)",
+      "parking": {
+        "location": "Pen-y-Pass car park",
+        "cost": "£10/day",
+        "notes": "Fills by 7am in summer. Sherpa bus from Nant Peris (£1.50) is more reliable.",
+        "lat": 53.0622,
+        "lng": -4.0234
+      },
+      "startPoint": {
+        "name": "Pen-y-Pass",
+        "lat": 53.0622,
+        "lng": -4.0234
+      },
+      "operatorSlug": "mountainxperience",
+      "guidedOption": "MountainXperience guided Crib Goch from ~£55pp. Mountain guides also available through AMI/BMG.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": "crib-goch"
+    },
+    {
+      "rank": 3,
+      "name": "Tryfan North Ridge",
+      "slug": "tryfan-north-ridge",
+      "verdict": "The perfect introduction to scrambling — hands-on from bottom to top on an iconic mountain.",
+      "image": "/images/best-lists/snowdonia-best-scrambles-tryfan.jpg",
+      "imageAlt": "Looking up the rocky North Ridge of Tryfan with the summit stones visible",
+      "whyItMadeTheList": "Tryfan's North Ridge is the route that hooks people on scrambling. It's Grade 1 — achievable for most fit walkers willing to use their hands — but it's sustained and varied, with interesting route-finding and a real summit (complete with Adam and Eve jumping stones). The mountain itself is one of the most distinctive in Snowdonia, a rocky pyramid visible for miles. The scrambling starts at the bottom and barely relents to the top.",
+      "difficulty": "Challenging (Grade 1)",
+      "duration": "4-5 hours",
+      "distance": "4km",
+      "elevationGain": "670m",
+      "cost": "Free",
+      "bestFor": "People wanting to try scrambling for the first time on a classic route",
+      "skipIf": "You're uncomfortable on steep, rocky ground — there are no easy bailout options once you start.",
+      "insiderTip": "Descend via the South Ridge or Heather Terrace, NOT the North Ridge — it's horrible in descent. If you're feeling brave, jump the gap between Adam and Eve on the summit. If you're feeling sensible, don't — the gap is wider than it looks.",
+      "season": "April–October",
+      "parking": {
+        "location": "Ogwen car park or A5 lay-bys",
+        "cost": "£5 (Ogwen) or free (lay-bys)",
+        "notes": "Free lay-bys fill by 8am on weekends.",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "startPoint": {
+        "name": "Ogwen Cottage / A5 lay-bys",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "operatorSlug": null,
+      "guidedOption": "Plas y Brenin and RAW Adventures include Tryfan in scrambling courses",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": "tryfan-north-ridge"
+    },
+    {
+      "rank": 4,
+      "name": "Bristly Ridge",
+      "slug": "bristly-ridge",
+      "verdict": "Tryfan's harder sibling — more technical scrambling with a dramatic headwall finish.",
+      "image": "/images/best-lists/snowdonia-best-scrambles-bristly-ridge.jpg",
+      "imageAlt": "The rocky pinnacles of Bristly Ridge with Tryfan behind",
+      "whyItMadeTheList": "Bristly Ridge climbs from Bwlch Tryfan to the Glyderau plateau via a series of rocky towers and gullies. It's a step up from Tryfan North Ridge — Grade 1/2 with some moves that feel harder in context. The headwall section requires commitment and good route-finding. Often combined with Tryfan North Ridge for the famous 'Cwm Bochlwyd Horseshoe', which gives you two classic scrambles in one day.",
+      "difficulty": "Challenging-Expert (Grade 1/2)",
+      "duration": "5-6 hours (combined with Tryfan)",
+      "distance": "7km (Cwm Bochlwyd Horseshoe)",
+      "elevationGain": "850m",
+      "cost": "Free",
+      "bestFor": "Scramblers who've done Tryfan and want the natural next step",
+      "skipIf": "You haven't done Tryfan comfortably first. The headwall can feel serious in poor visibility.",
+      "insiderTip": "There are multiple lines through the towers — the easiest keeps to the right (looking up). The hardest goes directly up the Great Pinnacle. The sinister gully left of the main route is grade 3 and should be avoided unless you know what you're doing.",
+      "season": "May–September",
+      "parking": {
+        "location": "Ogwen car park",
+        "cost": "£5/day",
+        "notes": "Start and finish at Ogwen for the Cwm Bochlwyd Horseshoe.",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 5,
+      "name": "Clogwyn y Person Arete",
+      "slug": "clogwyn-y-person-arete",
+      "verdict": "The hardest scramble on this list — a proper Grade 3 with serious consequences. Magnificent.",
+      "image": "/images/best-lists/snowdonia-best-scrambles-clogwyn-y-person.jpg",
+      "imageAlt": "The dramatic arete of Clogwyn y Person rising from Upper Cwm Glas",
+      "whyItMadeTheList": "Clogwyn y Person Arete is the finest Grade 3 scramble in Snowdonia. It takes a striking ridge rising from Upper Cwm Glas to meet the Snowdon Horseshoe at Crib y Ddysgl. The scrambling is sustained, exposed, and technically demanding — some moves are borderline rock climbing. The position is extraordinary, hanging above the Llanberis Pass. This is the pinnacle of Snowdonia scrambling — experienced scramblers only.",
+      "difficulty": "Expert (Grade 3)",
+      "duration": "6-8 hours",
+      "distance": "10km",
+      "elevationGain": "900m",
+      "cost": "Free",
+      "bestFor": "Experienced scramblers who climb at Diff/VDiff level and want the ultimate scrambling challenge",
+      "skipIf": "You haven't done multiple Grade 2 scrambles confidently. A rope and some climbing gear are strongly recommended.",
+      "insiderTip": "The Parson's Nose direct start is the best line but requires confident rock climbing at Diff standard. Carry a 30m rope and some slings — there are no easy escape routes once committed. This is a route where a mountain guide earns their fee.",
+      "season": "June–September (dry conditions essential)",
+      "parking": {
+        "location": "Pen-y-Pass",
+        "cost": "£10/day",
+        "notes": "Access via the Pig Track to Upper Cwm Glas.",
+        "lat": 53.0622,
+        "lng": -4.0234
+      },
+      "startPoint": {
+        "name": "Pen-y-Pass",
+        "lat": 53.0622,
+        "lng": -4.0234
+      },
+      "operatorSlug": null,
+      "guidedOption": "BMG/AMI mountain guides available for guided ascents (~£250-350/day for 1:2 ratio)",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 6,
+      "name": "Y Gribin",
+      "slug": "y-gribin",
+      "verdict": "A classic Grade 1 ridge with fantastic views and a proper mountain feel — the gentle giant.",
+      "image": "/images/best-lists/snowdonia-best-scrambles-y-gribin.jpg",
+      "imageAlt": "The broad rocky ridge of Y Gribin leading up to the Glyderau with Cwm Idwal below",
+      "whyItMadeTheList": "Y Gribin is the Grade 1 scramble for people who want the ridge experience without the terror. It's a broad, rocky spine rising from the back of Cwm Idwal to the Glyderau plateau, with enough scrambling to keep things interesting but enough width to feel secure. The views down to Llyn Idwal are superb throughout. It's the scramble we recommend for people who aren't sure if they like scrambling.",
+      "difficulty": "Moderate-Challenging (Grade 1)",
+      "duration": "4-5 hours (including Glyderau traverse)",
+      "distance": "8km",
+      "elevationGain": "700m",
+      "cost": "Free",
+      "bestFor": "First-time scramblers who want a proper ridge without the fear factor",
+      "skipIf": "You want sustained, technical scrambling — Y Gribin is more of a rocky ridge walk than a scramble in places.",
+      "insiderTip": "Continue over Glyder Fach to the Cantilever Stone (the famous balanced boulder) and then to the Castle of the Winds for the most dramatic terrain on the Glyderau. Descend via the Devil's Kitchen path for a circular route back to Ogwen.",
+      "season": "April–October",
+      "parking": {
+        "location": "Ogwen car park",
+        "cost": "£5/day",
+        "notes": "Start at Ogwen, walk to Cwm Idwal then up Y Gribin.",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 7,
+      "name": "Seniors Ridge (Tryfan Bach)",
+      "slug": "seniors-ridge",
+      "verdict": "Not on Tryfan at all — a hidden Grade 1 gem with spectacular views of the big mountain.",
+      "image": "/images/best-lists/snowdonia-best-scrambles-seniors-ridge.jpg",
+      "imageAlt": "Looking along Seniors Ridge towards Tryfan across the Ogwen Valley",
+      "whyItMadeTheList": "While everyone queues for Tryfan, Seniors Ridge on the opposite side of the valley offers excellent Grade 1 scrambling with barely another soul in sight. It's shorter and less committing than Tryfan but the rock is clean and the position — looking directly across at Tryfan's dramatic profile — is arguably better. Often used as a warm-up or teaching route, it deserves recognition as a great scramble in its own right.",
+      "difficulty": "Moderate (Grade 1)",
+      "duration": "2-3 hours",
+      "distance": "3km",
+      "elevationGain": "300m",
+      "cost": "Free",
+      "bestFor": "First-time scramblers wanting to build confidence before tackling Tryfan",
+      "skipIf": "You want a full mountain day — this is short and finishes mid-hillside.",
+      "insiderTip": "Combine with Y Gribin (#6) for a full day of Grade 1 scrambling from the same car park. Seniors Ridge is also excellent as an afternoon add-on if you summit Tryfan in the morning.",
+      "season": "March–November",
+      "parking": {
+        "location": "Ogwen car park",
+        "cost": "£5/day",
+        "notes": "Cross the A5 from Ogwen and head up the hillside opposite Tryfan.",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "startPoint": {
+        "name": "Ogwen Cottage (south side of A5)",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 8,
+      "name": "Snowdon via Crib y Ddysgl (North Ridge)",
+      "slug": "crib-y-ddysgl",
+      "verdict": "Crib Goch's quieter neighbour — a Grade 1 scramble to Snowdon's summit without the knife-edge terror.",
+      "image": "/images/best-lists/snowdonia-best-scrambles-crib-y-ddysgl.jpg",
+      "imageAlt": "Rocky ridge of Crib y Ddysgl leading towards Snowdon summit",
+      "whyItMadeTheList": "If Crib Goch is too scary but you want more than a walking path up Snowdon, the North Ridge of Crib y Ddysgl is the answer. It offers Grade 1 scrambling on the Garnedd Ugain ridge with spectacular views into Cwm Glas and across to Crib Goch. You reach Snowdon's summit via Bwlch Glas, avoiding the knife-edge but still getting genuine scrambling. It's the smart scramblers' route to Snowdon.",
+      "difficulty": "Challenging (Grade 1)",
+      "duration": "6-7 hours",
+      "distance": "11km",
+      "elevationGain": "950m",
+      "cost": "Free (parking £10)",
+      "bestFor": "Scramblers who want to summit Snowdon with hands-on rock but without Crib Goch's exposure",
+      "skipIf": "You want a walk, not a scramble. The ridge requires confident movement on rock.",
+      "insiderTip": "Approach from Pen-y-Pass via Cwm Glas Mawr. The scrambling is on the upper ridge of Garnedd Ugain. Descend via the Pyg Track to complete a circular route. Far fewer people than Crib Goch.",
+      "season": "May–September",
+      "parking": {
+        "location": "Pen-y-Pass",
+        "cost": "£10/day",
+        "notes": "Sherpa bus from Nant Peris if car park is full.",
+        "lat": 53.0622,
+        "lng": -4.0234
+      },
+      "startPoint": {
+        "name": "Pen-y-Pass",
+        "lat": 53.0622,
+        "lng": -4.0234
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 9,
+      "name": "Cadair Idris — Cyfrwy Arete",
+      "slug": "cadair-idris-cyfrwy-arete",
+      "verdict": "A hidden Grade 2 scramble on Cadair Idris that almost nobody knows about. Exceptional.",
+      "image": "/images/best-lists/snowdonia-best-scrambles-cyfrwy-arete.jpg",
+      "imageAlt": "The Cyfrwy Arete on Cadair Idris with Llyn y Gadair visible far below",
+      "whyItMadeTheList": "Everyone knows Cadair Idris as a walking mountain, but the Cyfrwy Arete offers a genuine Grade 2 scramble on its north face. The route takes a narrow, exposed ridge with steep drops into Llyn y Gadair below. It's quieter than any Ogwen Valley scramble and the sense of exploration — doing something that most guidebooks ignore — adds to the experience. Cadair Idris deserves scrambling recognition alongside the northern peaks.",
+      "difficulty": "Expert (Grade 2)",
+      "duration": "5-7 hours",
+      "distance": "10km",
+      "elevationGain": "850m",
+      "cost": "Free",
+      "bestFor": "Experienced scramblers looking for something different away from the Ogwen crowds",
+      "skipIf": "You need easy escape options — the route is committing once started. Navigation can be tricky.",
+      "insiderTip": "Approach from the Minffordd Path and traverse around to reach the arete's base. Carry a map — the approach is not well-signed. Combine with a summit bag of Cadair Idris for a full day.",
+      "season": "June–September",
+      "parking": {
+        "location": "Minffordd car park (Dôl Idris)",
+        "cost": "£5-8/day",
+        "notes": "Same car park as the standard Cadair Idris walking routes.",
+        "lat": 52.6969,
+        "lng": -3.9125
+      },
+      "startPoint": {
+        "name": "Minffordd / Dôl Idris",
+        "lat": 52.6969,
+        "lng": -3.9125
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 10,
+      "name": "Pinnacle Route, Cwm Cneifion (Nameless Cwm)",
+      "slug": "pinnacle-route-nameless-cwm",
+      "verdict": "A short, sharp Grade 2 scramble in Snowdonia's most atmospheric cwm.",
+      "image": "/images/best-lists/snowdonia-best-scrambles-pinnacle-route.jpg",
+      "imageAlt": "Rocky pinnacles in Cwm Cneifion with mist swirling around the crags",
+      "whyItMadeTheList": "The Nameless Cwm (Cwm Cneifion) between Y Garn and Glyder Fawr is one of the most atmospheric spots in Snowdonia — dark, enclosed, and studded with rock towers. The Pinnacle Route weaves through these towers on Grade 2 scrambling that's varied and interesting. The approach through Cwm Idwal adds a scenic walk-in. Less well-known than the main Ogwen scrambles, it feels like discovering Snowdonia's back passages.",
+      "difficulty": "Expert (Grade 2)",
+      "duration": "5-6 hours",
+      "distance": "7km",
+      "elevationGain": "650m",
+      "cost": "Free",
+      "bestFor": "Experienced scramblers who want something off the beaten track",
+      "skipIf": "You need clear route-finding — the cwm can be confusing and the route isn't well-marked.",
+      "insiderTip": "Navigation in the cwm requires map and compass work. The rock in the Nameless Cwm can be lichenous and slippery when damp. Go on a dry day after a dry spell for the best conditions.",
+      "season": "June–September",
+      "parking": {
+        "location": "Ogwen car park",
+        "cost": "£5/day",
+        "notes": "Access via Cwm Idwal then branch left into Cwm Cneifion.",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    }
+  ],
+  "comparisonTable": true,
+  "seasonalPicks": {
+    "spring": { "entries": [3, 6], "note": "Rock drying out, days lengthening, Grade 1 routes coming into condition" },
+    "summer": { "entries": [1, 2], "note": "Best conditions for all grades — dry rock, long days, warm rock" },
+    "autumn": { "entries": [7, 3], "note": "Crisp clear days, Grade 1 routes still in condition, fewer crowds" },
+    "winter": { "entries": [], "note": "Winter scrambling is mountaineering. Crampons and ice axe required. Not covered in this list." }
+  },
+  "faqs": [
+    {
+      "question": "What grade scramble should I start with in Snowdonia?",
+      "answer": "Start with Tryfan North Ridge (#3) or Y Gribin (#6) — both are Grade 1 and give you a proper scrambling experience without extreme exposure. If you want something even gentler, Seniors Ridge (#7) is a shorter warm-up."
+    },
+    {
+      "question": "Do I need a rope for scrambling in Snowdonia?",
+      "answer": "For Grade 1: no, but confident movement on rock is essential. For Grade 2: carry a 30m rope and slings as emergency backup. For Grade 3: you should be roping up for the hardest sections. If you're unsure, book a guided day."
+    },
+    {
+      "question": "Can I scramble in Snowdonia in the rain?",
+      "answer": "Grade 1 routes (Tryfan, Y Gribin) are feasible in light rain on dry rock, but much harder and more dangerous. Grade 2 and above should not be attempted in wet conditions — the rock becomes extremely slippery. Always check MWIS before heading out."
+    },
+    {
+      "question": "What's the difference between scrambling and walking in Snowdonia?",
+      "answer": "Walking uses your feet; scrambling uses your hands too. Grade 1 means occasional hand use for balance. Grade 3 means one slip could kill you and a rope should be used. The transition from walking to scrambling catches many people out — it's a genuine step up in risk and commitment."
+    },
+    {
+      "question": "Is Crib Goch harder than Tryfan North Ridge?",
+      "answer": "The scrambling on Crib Goch is actually simpler than Tryfan (Grade 1 vs Grade 1), but the exposure is incomparably greater. Tryfan is more technically demanding in terms of route-finding and hand placements. Crib Goch is more psychologically demanding due to the knife-edge ridge and sheer drops. Different challenges entirely."
+    }
+  ],
+  "relatedLists": [
+    { "slug": "/snowdonia/best-hikes", "label": "Best Hikes in Snowdonia" },
+    { "slug": "/snowdonia/best-walks", "label": "Best Walks in Snowdonia" },
+    { "slug": "/brecon-beacons/best-walks", "label": "Best Walks in Brecon Beacons" }
+  ]
+}

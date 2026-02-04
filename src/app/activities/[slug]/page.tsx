@@ -27,6 +27,37 @@ function extractIntro(description: string | null): string {
   return description.length > 500 ? description.substring(0, 500) + "..." : description;
 }
 
+// Available local activity hero images
+const localActivityImages = new Set([
+  "archery", "boat-tour", "caving", "climbing", "coasteering",
+  "gorge-scrambling", "gorge-walking", "high-ropes", "hiking",
+  "hiking-scrambling", "kayaking", "mine-exploration", "mountain-biking",
+  "paddleboarding", "rafting", "sea-kayaking", "sup", "surfing",
+  "trail-running", "wildlife-boat-tour", "wild-swimming", "windsurfing", "zip-lining",
+]);
+
+function getActivityHeroImage(activitySlug: string, activityTypeSlug?: string | null): string {
+  // Try activity type first
+  if (activityTypeSlug && localActivityImages.has(activityTypeSlug)) {
+    return `/images/activities/${activityTypeSlug}-hero.jpg`;
+  }
+  // Try to match from slug
+  const slugParts = activitySlug.toLowerCase().split("-");
+  for (const part of slugParts) {
+    if (localActivityImages.has(part)) {
+      return `/images/activities/${part}-hero.jpg`;
+    }
+  }
+  // Check compound matches
+  const compoundMatches = ["gorge-walking", "sea-kayaking", "mountain-biking", "trail-running", "wild-swimming", "zip-lining"];
+  for (const match of compoundMatches) {
+    if (activitySlug.includes(match)) {
+      return `/images/activities/${match}-hero.jpg`;
+    }
+  }
+  return "/images/activities/hiking-hero.jpg";
+}
+
 export default async function ActivityPage({ params }: ActivityPageProps) {
   const { slug } = await params;
   const data = await getActivityBySlug(slug);
@@ -43,6 +74,9 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
     limit: 4,
   });
 
+  // Get hero image based on activity type
+  const heroImage = getActivityHeroImage(activity.slug, activityType?.slug);
+
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Gallery */}
@@ -50,8 +84,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')",
+            backgroundImage: `url('${heroImage}')`,
           }}
         >
           <div className="absolute inset-0 bg-black/30" />

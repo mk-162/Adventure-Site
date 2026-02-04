@@ -7,7 +7,7 @@ export function HeroSection() {
       <div 
         className="relative min-h-[500px] sm:min-h-[550px] lg:min-h-[600px] flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')",
+          backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('/images/misc/homepage-hero-01-09087a8a.jpg')",
         }}
       >
         <div className="text-center px-4 sm:px-6 max-w-4xl mx-auto">

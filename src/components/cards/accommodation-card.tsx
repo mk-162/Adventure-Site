@@ -23,14 +23,12 @@ interface AccommodationCardProps {
 }
 
 const placeholderImages: Record<string, string> = {
-  hostel:
-    "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  hotel:
-    "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  camping:
-    "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  default:
-    "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  hostel: "/images/misc/gear-camping-01-55639fd4.jpg",
+  hotel: "/images/wales/snowdonia-wales-1-d896a4e4.jpg",
+  camping: "/images/misc/gear-camping-02-68be8b48.jpg",
+  campsite: "/images/misc/gear-camping-03-ad238db8.jpg",
+  bunkhouse: "/images/misc/gear-camping-04-27db8926.jpg",
+  default: "/images/misc/gear-camping-05-ca857981.jpg",
 };
 
 // Parse adventure features string into array

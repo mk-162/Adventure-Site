@@ -25,7 +25,7 @@ const mockItineraries = [
     rating: 4.9,
     reviews: 126,
     price: 299,
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/images/misc/itinerary-group-01-69a29a24.jpg",
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const mockItineraries = [
     rating: 4.8,
     reviews: 89,
     price: 85,
-    image: "https://images.unsplash.com/photo-1530866495561-507c9faab2ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/images/activities/rafting-hero.jpg",
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const mockItineraries = [
     rating: 5.0,
     reviews: 42,
     price: 150,
-    image: "https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/images/activities/mountain-biking-hero.jpg",
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ const mockItineraries = [
     rating: 4.7,
     reviews: 210,
     price: 120,
-    image: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/images/misc/family-adventure-01-41f3f49e.jpg",
   },
 ];
 

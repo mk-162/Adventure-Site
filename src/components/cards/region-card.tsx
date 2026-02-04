@@ -14,26 +14,20 @@ interface RegionCardProps {
   };
 }
 
-// Placeholder images for regions
+// Local images for regions - all 11 regions covered
 const regionImages: Record<string, string> = {
-  snowdonia:
-    "https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  pembrokeshire:
-    "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "brecon-beacons":
-    "https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  gower:
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  anglesey:
-    "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "llyn-peninsula":
-    "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "south-wales":
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  "north-wales":
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  default:
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  snowdonia: "/images/regions/snowdonia-hero.jpg",
+  pembrokeshire: "/images/regions/pembrokeshire-hero.jpg",
+  "brecon-beacons": "/images/regions/brecon-beacons-hero.jpg",
+  gower: "/images/regions/gower-hero.jpg",
+  anglesey: "/images/regions/anglesey-hero.jpg",
+  "llyn-peninsula": "/images/regions/llyn-peninsula-hero.jpg",
+  "south-wales": "/images/regions/south-wales-hero.jpg",
+  "north-wales": "/images/regions/north-wales-hero.jpg",
+  "mid-wales": "/images/regions/mid-wales-hero.jpg",
+  "wye-valley": "/images/regions/wye-valley-hero.jpg",
+  carmarthenshire: "/images/regions/carmarthenshire-hero.jpg",
+  default: "/images/regions/snowdonia-hero.jpg",
 };
 
 export function RegionCard({ region, image, stats }: RegionCardProps) {

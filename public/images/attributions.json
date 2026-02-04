@@ -7729,5 +7729,95 @@
     "query": "llyn wales",
     "downloaded": "2026-02-03",
     "note": "Hero image for journal article: dark-skies-season"
+  },
+  "images/combo/snowdonia-hiking-hero.jpg": {
+    "source": "unsplash",
+    "photographer": "Zihao Chen",
+    "photographerUrl": "https://unsplash.com/@zihao0310",
+    "originalUrl": "https://unsplash.com/photos/a-stone-path-going-up-a-mountain-side-tfwTdsGIoCg",
+    "licence": "Unsplash Licence",
+    "description": "a stone path going up a mountain side",
+    "downloadedAt": "2026-02"
+  },
+  "images/combo/pembrokeshire-surfing-hero.jpg": {
+    "source": "unsplash",
+    "photographer": "Daniel Morris",
+    "photographerUrl": "https://unsplash.com/@danielmorris",
+    "originalUrl": "https://unsplash.com/photos/body-of-water-during-golden-hour-8PMmA33Uvt8",
+    "licence": "Unsplash Licence",
+    "description": "body of water during golden hour",
+    "downloadedAt": "2026-02"
+  },
+  "images/combo/pembrokeshire-coasteering-hero.jpg": {
+    "source": "unsplash",
+    "photographer": "Coasteering",
+    "photographerUrl": "https://unsplash.com/@coasteering_co_uk",
+    "originalUrl": "https://unsplash.com/photos/person-in-red-kayak-on-body-of-water-during-daytime-hqfQJtA6ahY",
+    "licence": "Unsplash Licence",
+    "description": "person in red kayak on body of water during daytime",
+    "downloadedAt": "2026-02"
+  },
+  "images/combo/snowdonia-climbing-hero.jpg": {
+    "source": "unsplash",
+    "photographer": "v2osk",
+    "photographerUrl": "https://unsplash.com/@v2osk",
+    "originalUrl": "https://unsplash.com/photos/gray-rocky-mountain-under-cloudy-sky-during-daytime-3uQN4erCF5o",
+    "licence": "Unsplash Licence",
+    "description": "gray rocky mountain under cloudy sky during daytime",
+    "downloadedAt": "2026-02"
+  },
+  "images/combo/gower-surfing-hero.jpg": {
+    "source": "unsplash",
+    "photographer": "Paul Vickery",
+    "photographerUrl": "https://unsplash.com/@pijbv",
+    "originalUrl": "https://unsplash.com/photos/a-beach-with-grass-and-sand-jQlmhggvzGg",
+    "licence": "Unsplash Licence",
+    "description": "a beach with grass and sand",
+    "downloadedAt": "2026-02"
+  },
+  "images/combo/snowdonia-zip-lining-hero.jpg": {
+    "source": "unsplash",
+    "photographer": "Anita Denunzio",
+    "photographerUrl": "https://unsplash.com/@dronepilot",
+    "originalUrl": "https://unsplash.com/photos/a-wooden-structure-surrounded-by-trees-P86nQdUQC4k",
+    "licence": "Unsplash Licence",
+    "description": "a wooden structure surrounded by trees",
+    "downloadedAt": "2026-02"
+  },
+  "images/combo/brecon-beacons-hiking-hero.jpg": {
+    "source": "unsplash",
+    "photographer": "Hannah Carr",
+    "photographerUrl": "https://unsplash.com/@hannahcarr",
+    "originalUrl": "https://unsplash.com/photos/a-couple-of-people-sitting-on-top-of-a-hill-sNk8lDeurFE",
+    "licence": "Unsplash Licence",
+    "description": "a couple of people sitting on top of a hill",
+    "downloadedAt": "2026-02"
+  },
+  "images/combo/snowdonia-mountain-biking-hero.jpg": {
+    "source": "unsplash",
+    "photographer": "Marc Pell",
+    "photographerUrl": "https://unsplash.com/@blinky264",
+    "originalUrl": "https://unsplash.com/photos/a-dirt-path-in-the-middle-of-a-forest-oUaLlDlfgaw",
+    "licence": "Unsplash Licence",
+    "description": "a dirt path in the middle of a forest",
+    "downloadedAt": "2026-02"
+  },
+  "images/combo/pembrokeshire-kayaking-hero.jpg": {
+    "source": "unsplash",
+    "photographer": "Jonathan Hunt",
+    "photographerUrl": "https://unsplash.com/@jothhunt",
+    "originalUrl": "https://unsplash.com/photos/an-orange-life-preserver-sitting-on-the-side-of-a-cliff-U1Y7robkffk",
+    "licence": "Unsplash Licence",
+    "description": "an orange life preserver sitting on the side of a cliff",
+    "downloadedAt": "2026-02"
+  },
+  "images/combo/snowdonia-gorge-walking-hero.jpg": {
+    "source": "unsplash",
+    "photographer": "Annie Spratt",
+    "photographerUrl": "https://unsplash.com/@anniespratt",
+    "originalUrl": "https://unsplash.com/photos/water-falls-on-brown-rocky-mountain-UOgTDBhF3ws",
+    "licence": "Unsplash Licence",
+    "description": "water falls on brown rocky mountain",
+    "downloadedAt": "2026-02"
   }
 }

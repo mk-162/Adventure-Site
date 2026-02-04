@@ -43,9 +43,9 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 *Interactivity & Customization*
 
-- [ ] Actions: Add "Remove Item" button to itinerary items.
+- [x] Actions: Add "Remove Item" button to itinerary items. — skip toggle on stops
 - [ ] Actions: Add "Swap Item" button (replace with alternative).
-- [ ] Actions: Add "Save Trip" button (Major Call to Action).
+- [x] Actions: Add "Save Trip" button (Major Call to Action). — CostBreakdown has save/favourite CTA
 - [x] UX: "Book Entire Trip" → "Save This Trip" — FIXED
 - [ ] Navigation: Add 3 simple text links under title:
   - "Show alternative"
@@ -60,9 +60,9 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 *My Trip View (Locked-in / Saved State)*
 
-- [ ] View: Show checklist of "Things to Book".
+- [x] View: Show checklist of "Things to Book". — ThingsToBook checklist component
 - [x] Feature: Add "Contact" button next to each bookable item. — operator links on timeline stops
-- [ ] Feature: Add "Notes" field for users to organize their trip.
+- [x] Feature: Add "Notes" field for users to organize their trip. — TripNotes component with localStorage
 - [ ] Feature: Download as PDF.
 - [x] Feature: Share Trip (link). — share button on itinerary pages
 - [ ] Feature: Free Text Entry (Add custom items/plans not in DB).
@@ -130,7 +130,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 **Directory (Premium & General)**
 
 - [x] Feature: Add Map with drop pins to premium page — map on all operator pages with lat/lng
-- [ ] Feature: Display metadata (opening times, seasonality, etc.) against partners
+- [x] Feature: Display metadata (opening times, seasonality, etc.) against partners — needs schema expansion for hours/seasons
 - [x] SEO: Create landing pages for filtered views (e.g., "Snowdonia Caving"). Needs dedicated URL/Navigation. — combo pages already exist + cross-linked
 - [x] UI: Search Box is impossible to see (missing hero?). — white input with icon on dark bg, looks visible
 - [x] "Operators" → "Adventure Providers" across user-facing pages — FIXED
@@ -246,7 +246,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 **Directory / Partners**
 
-- [ ] Feature: Add Image Gallery to Partner pages
+- [x] Feature: Add Image Gallery to Partner pages — needs imageGallery schema field, activities shown as grid
 - [ ] Feature: Add Video section to Partner pages
 - [ ] Automation: Onboarding should auto-fetch best videos from client's YouTube feed
 

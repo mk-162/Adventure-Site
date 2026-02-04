@@ -158,6 +158,308 @@ TIER_1 = [
 ]
 
 # =============================================================================
+# TIER 2 COMBOS (12 pages)
+# =============================================================================
+
+TIER_2 = [
+    {
+        "region": "anglesey",
+        "regionName": "Anglesey",
+        "activity": "kayaking",
+        "activityName": "Kayaking",
+        "whyFamous": "Sea kayaking, Menai Strait, South Stack, Puffin Island",
+        "targetKeyword": "kayaking anglesey",
+        "knownSpots": "Menai Strait, South Stack, Puffin Island, Rhoscolyn, Aberffraw, Trearddur Bay, Church Bay, Penmon Point, Newborough Beach",
+        "knownOperators": "Anglesey Adventures, Plas Menai",
+        "knownGearShops": "Plas Menai shop, Anglesey Outdoors",
+        "knownFood": "The Oyster Catcher (Rhosneigr), Sandy Mount House, Wavecrest Cafe (Rhoscolyn), The White Eagle (Rhoscolyn)",
+    },
+    {
+        "region": "anglesey",
+        "regionName": "Anglesey",
+        "activity": "coasteering",
+        "activityName": "Coasteering",
+        "whyFamous": "Church Bay, South Stack, Rhoscolyn, dramatic sea cliffs",
+        "targetKeyword": "coasteering anglesey",
+        "knownSpots": "Church Bay, Rhoscolyn, South Stack, Trearddur Bay, Aberffraw, Porth Dafarch, Cable Bay",
+        "knownOperators": "Anglesey Adventures, Plas Menai",
+        "knownGearShops": "Anglesey Outdoors",
+        "knownFood": "The Oyster Catcher (Rhosneigr), Wavecrest Cafe, Lobster Pot (Church Bay), The White Eagle (Rhoscolyn)",
+    },
+    {
+        "region": "gower",
+        "regionName": "Gower",
+        "activity": "coasteering",
+        "activityName": "Coasteering",
+        "whyFamous": "Three Cliffs Bay, Mewslade, limestone cliffs, caves",
+        "targetKeyword": "coasteering gower",
+        "knownSpots": "Three Cliffs Bay, Mewslade Bay, Rhossili, Mumbles, Fall Bay, Pennard Castle cliffs, Worm's Head area, Paviland Cave",
+        "knownOperators": "Gower Activity Centres, Rip N Rock, Quest Adventure, Oxwich Watersports",
+        "knownGearShops": "PJ's Surf Shop (Llangennith), Gower Surf Development",
+        "knownFood": "King's Head (Llangennith), The Ship Inn (Port Eynon), Verdi's (Mumbles), Joe's Ice Cream (Mumbles), Pilot Inn (Mumbles)",
+    },
+    {
+        "region": "brecon-beacons",
+        "regionName": "Brecon Beacons",
+        "activity": "mountain-biking",
+        "activityName": "Mountain Biking",
+        "whyFamous": "Talybont, Bwlch, Gap routes, BikePark Wales",
+        "targetKeyword": "mountain biking brecon beacons",
+        "knownSpots": "BikePark Wales (Merthyr Tydfil), The Gap (Brecon), Bwlch loop, Talybont Reservoir loop, Coed Taf Fawr, Garwnant, Pontsticill, Taff Trail",
+        "knownOperators": "BikePark Wales, Black Mountain Adventure",
+        "knownGearShops": "BikePark Wales shop, Brecon Bikes, Biped Cycles (Brecon)",
+        "knownFood": "Star Inn (Talybont-on-Usk), White Hart (Brecon), The Felin Fach Griffin, BikePark Wales cafe, Nantyfin Cider Mill",
+    },
+    {
+        "region": "brecon-beacons",
+        "regionName": "Brecon Beacons",
+        "activity": "caving",
+        "activityName": "Caving",
+        "whyFamous": "OFD (Ogof Ffynnon Ddu), Porth yr Ogof, Dan yr Ogof, Cathedral Cave",
+        "targetKeyword": "caving brecon beacons",
+        "knownSpots": "Porth yr Ogof, Ogof Ffynnon Ddu (OFD), Dan yr Ogof Showcaves, Cathedral Cave, Bridge Cave, Cwm Dwr, Ogof Draenen",
+        "knownOperators": "Adventure Britain, Black Mountain Adventure",
+        "knownGearShops": "Starless River (caving gear), local outdoor shops",
+        "knownFood": "The Ancient Briton (Pen-y-Cae), Gwyn Arms (Glyntawe), The Felin Fach Griffin, Dan yr Ogof cafe",
+    },
+    {
+        "region": "snowdonia",
+        "regionName": "Snowdonia",
+        "activity": "caving",
+        "activityName": "Caving",
+        "whyFamous": "Cwmorthin slate mine, underground adventures, Go Below",
+        "targetKeyword": "caving snowdonia",
+        "knownSpots": "Cwmorthin Slate Mine, Go Below Underground Adventures (Blaenau Ffestiniog), Llechwedd Slate Caverns, Sygun Copper Mine, underground zip lines",
+        "knownOperators": "Zip World (Bounce Below, Caverns), Go Below",
+        "knownGearShops": "Joe Brown's (Llanberis), V12 Outdoor (Llanberis)",
+        "knownFood": "Caffi Llechwedd, Lakeside Cafe (Tanygrisiau), Isallt Cafe (Blaenau Ffestiniog), Pete's Eats (Llanberis)",
+    },
+    {
+        "region": "snowdonia",
+        "regionName": "Snowdonia",
+        "activity": "wild-swimming",
+        "activityName": "Wild Swimming",
+        "whyFamous": "Llyn Idwal, Blue Lake (Dorothea quarry), waterfalls, mountain lakes",
+        "targetKeyword": "wild swimming snowdonia",
+        "knownSpots": "Llyn Idwal, Blue Lake (Dorothea Quarry), Fairy Glen (Betws-y-Coed), Llyn Gwynant, Llyn Dinas, Aber Falls plunge pool, Llyn Crafnant, Llyn Padarn, Roman Bridge pools",
+        "knownOperators": "Plas y Brenin",
+        "knownGearShops": "Joe Brown's (Llanberis), Siop Pinnacle",
+        "knownFood": "Pete's Eats (Llanberis), Caffi Siabod, Y Stablau (Betws-y-Coed), Gwydyr Hotel (Betws-y-Coed)",
+    },
+    {
+        "region": "pembrokeshire",
+        "regionName": "Pembrokeshire",
+        "activity": "hiking",
+        "activityName": "Hiking",
+        "whyFamous": "Pembrokeshire Coast Path (186 miles), dramatic cliff walks",
+        "targetKeyword": "hiking pembrokeshire",
+        "knownSpots": "St Davids Head, Strumble Head, Marloes Peninsula, Stackpole Estate, Barafundle Bay walk, Green Bridge of Wales, Dinas Island, Newport to Cwm-yr-Eglwys, Skomer views",
+        "knownOperators": "TYF Adventure, Preseli Venture",
+        "knownGearShops": "Ma Simes (St Davids), TYF Shop, Mountain Warehouse (Haverfordwest)",
+        "knownFood": "The Shed (Porthgain), The Sloop Inn (Porthgain), The Sampler (St Davids), Cafe Mor (Freshwater West), CWT (St Davids)",
+    },
+    {
+        "region": "gower",
+        "regionName": "Gower",
+        "activity": "hiking",
+        "activityName": "Hiking",
+        "whyFamous": "Worm's Head, Three Cliffs Bay, Rhossili, coastal walks",
+        "targetKeyword": "hiking gower",
+        "knownSpots": "Worm's Head, Three Cliffs Bay, Rhossili Bay, Arthur's Stone, Pennard Castle, Oxwich Bay to Three Cliffs, Llanmadoc Hill, Whiteford Burrows, Brandy Cove, Caswell to Langland",
+        "knownOperators": "Gower Activity Centres",
+        "knownGearShops": "Trespass (Mumbles), Mountain Warehouse (Swansea)",
+        "knownFood": "Verdi's (Mumbles), Rhossili Bay Hotel, The King Arthur Hotel (Reynoldston), Bay Bistro, Castellamare (Mumbles), The Ship Inn (Port Eynon)",
+    },
+    {
+        "region": "mid-wales",
+        "regionName": "Mid Wales",
+        "activity": "mountain-biking",
+        "activityName": "Mountain Biking",
+        "whyFamous": "Elan Valley, Nant yr Arian, Hafren Forest, quiet trails",
+        "targetKeyword": "mountain biking mid wales",
+        "knownSpots": "Nant yr Arian (Syfydrin, Summit, Pendam trails), Hafren Forest, Elan Valley trails, Machynlleth (Dyfi), Clywedog trails, Brechfa Forest, Irfon Forest",
+        "knownOperators": "AberAdventures",
+        "knownGearShops": "The Holey Trail (Machynlleth), Summit Cycles (Aberystwyth)",
+        "knownFood": "Number 21 (Aberystwyth), Y Ffarmers (Llanfihangel-y-Creuddyn), Dyfi Cafe (Machynlleth), White Horse Tavern (Aberystwyth)",
+    },
+    {
+        "region": "llyn-peninsula",
+        "regionName": "Llŷn Peninsula",
+        "activity": "surfing",
+        "activityName": "Surfing",
+        "whyFamous": "Porth Neigwl (Hell's Mouth), consistent swells, quieter than Gower",
+        "targetKeyword": "surfing llyn peninsula",
+        "knownSpots": "Porth Neigwl (Hell's Mouth), Porth Ceiriad, Porth Oer (Whistling Sands), Abersoch beach, Pwllheli, Aberdaron",
+        "knownOperators": "Hell's Mouth Surf School, Abersoch Watersports, West Coast Surf",
+        "knownGearShops": "West Coast Surf (Abersoch), Abersoch Watersports shop",
+        "knownFood": "The Sun Inn (Abersoch), Venetia (Abersoch), The Ship (Abersoch), Ty Newydd (Aberdaron), Coconut Kitchen (Abersoch)",
+    },
+    {
+        "region": "wye-valley",
+        "regionName": "Wye Valley",
+        "activity": "kayaking",
+        "activityName": "Kayaking",
+        "whyFamous": "River Wye paddling, Symonds Yat, gentle touring",
+        "targetKeyword": "kayaking wye valley",
+        "knownSpots": "Glasbury to Hay-on-Wye, Hay to Bredwardine, Ross-on-Wye to Symonds Yat, Symonds Yat rapids, Monmouth to Tintern, Bigsweir to Brockweir",
+        "knownOperators": "Wye Valley Canoes, Black Mountain Adventure",
+        "knownGearShops": "Wye Valley Canoes (hire), Paddles & Pedals (Hay-on-Wye)",
+        "knownFood": "The Old Ferrie Inn (Symonds Yat), The Saracens Head (Symonds Yat), Blue Boar (Hay-on-Wye), Kilvert's (Hay-on-Wye), The Boat Inn (Penallt)",
+    },
+]
+
+# =============================================================================
+# TIER 3 COMBOS (12 pages)
+# =============================================================================
+
+TIER_3 = [
+    {
+        "region": "north-wales",
+        "regionName": "North Wales",
+        "activity": "climbing",
+        "activityName": "Climbing",
+        "whyFamous": "Llanberis Pass, Tremadog, Great Orme, indoor walls",
+        "targetKeyword": "climbing north wales",
+        "knownSpots": "Llanberis Pass (Cromlech, Dinas Mot), Tremadog (Eric Jones Cafe crag), Great Orme limestone, Gogarth sea cliffs, Craig y Forwen, Beacon Climbing Centre (Caernarfon), Indy Climbing Wall",
+        "knownOperators": "Plas y Brenin, Snowdonia Mountain Guides, Raw Adventures",
+        "knownGearShops": "Joe Brown's (Llanberis), V12 Outdoor (Llanberis), Cotswold Outdoor",
+        "knownFood": "Pete's Eats (Llanberis), Eric Jones Cafe (Tremadog), Heights Hotel, Vaynol Arms (Pentir)",
+    },
+    {
+        "region": "south-wales",
+        "regionName": "South Wales",
+        "activity": "surfing",
+        "activityName": "Surfing",
+        "whyFamous": "Porthcawl, Rest Bay, Aberavon, surf schools",
+        "targetKeyword": "surfing south wales",
+        "knownSpots": "Rest Bay (Porthcawl), Coney Beach, Aberavon Beach, Ogmore-by-Sea, Llantwit Major, Southerndown, Barry Island, Langland Bay",
+        "knownOperators": "Porthcawl Surf School, South Wales Surf School, Freewave Surf Academy",
+        "knownGearShops": "Drift Surf (Porthcawl), Porthcawl Surf Shop, Surf Lines",
+        "knownFood": "The Waterfront (Porthcawl), Hi Tide Inn (Porthcawl), Pelican Fish Bar (Ogmore), Muni Arts Centre cafe (Pontypridd)",
+    },
+    {
+        "region": "carmarthenshire",
+        "regionName": "Carmarthenshire",
+        "activity": "hiking",
+        "activityName": "Hiking",
+        "whyFamous": "Brechfa Forest, Llyn y Fan Fach, Dinefwr Park, Tywi Valley",
+        "targetKeyword": "hiking carmarthenshire",
+        "knownSpots": "Llyn y Fan Fach (Lady of the Lake), Dinefwr Park (NT), Brechfa Forest trails, Dryslwyn Castle walk, Carreg Cennen Castle, Aberglasney Gardens trails, Tywi Valley walks, Black Mountain edge",
+        "knownOperators": "Sticks and Stones Adventures",
+        "knownGearShops": "Mountain Warehouse (Carmarthen), local outdoor shops",
+        "knownFood": "The Plough Inn (Llandeilo), The Angel Hotel (Llandeilo), Heavenly (Llandeilo), Wright's Food Emporium",
+    },
+    {
+        "region": "mid-wales",
+        "regionName": "Mid Wales",
+        "activity": "hiking",
+        "activityName": "Hiking",
+        "whyFamous": "Plynlimon, Elan Valley, Cambrian Mountains, Glyndwr's Way",
+        "targetKeyword": "hiking mid wales",
+        "knownSpots": "Plynlimon (source of Severn and Wye), Elan Valley trail, Hafren Forest, Glyndwr's Way, Devil's Bridge waterfalls, Strata Florida Abbey walk, Claerwen Reservoir, Cambrian Way sections",
+        "knownOperators": "AberAdventures",
+        "knownGearShops": "Summit Cycles & Outdoor (Aberystwyth), Mountain Warehouse",
+        "knownFood": "Number 21 (Aberystwyth), Hafod Hotel (Devil's Bridge), Y Ffarmers (Llanfihangel), Rheidol Riding Centre cafe",
+    },
+    {
+        "region": "wye-valley",
+        "regionName": "Wye Valley",
+        "activity": "hiking",
+        "activityName": "Hiking",
+        "whyFamous": "Offa's Dyke Path, Tintern Abbey, Symonds Yat Rock, Devil's Pulpit",
+        "targetKeyword": "hiking wye valley",
+        "knownSpots": "Symonds Yat Rock viewpoint, Devil's Pulpit to Tintern Abbey, Offa's Dyke Path sections, The Biblins, Whitecliff viewpoint, Wyndcliff (365 steps), Redbrook to Bigsweir, Trellech walks",
+        "knownOperators": "Wye Valley Canoes, Black Mountain Adventure",
+        "knownGearShops": "Paddles & Pedals (Hay-on-Wye), outdoor shops Monmouth",
+        "knownFood": "The Old Ferrie Inn (Symonds Yat), The Saracens Head, Kingstone Brewery Tap, The Ostrich Inn (Newland), Bigsweir House",
+    },
+    {
+        "region": "brecon-beacons",
+        "regionName": "Brecon Beacons",
+        "activity": "gorge-walking",
+        "activityName": "Gorge Walking",
+        "whyFamous": "Waterfall Country, Henrhyd Falls, Mellte gorge, Sgwd yr Eira",
+        "targetKeyword": "gorge walking brecon beacons",
+        "knownSpots": "Four Falls Trail gorges, Sgwd yr Eira (walk-behind waterfall), Henrhyd Falls (tallest in South Wales), Porth yr Ogof entrance, Mellte valley, Nedd Fechan gorge, Sychryd Cascades",
+        "knownOperators": "Adventure Britain, Black Mountain Adventure, Call of the Wild",
+        "knownGearShops": "Local outdoor shops Brecon, Cotswold Outdoor",
+        "knownFood": "Angel Inn (Pontneddfechan), The Ancient Briton (Pen-y-Cae), Star Inn (Talybont-on-Usk), The Felin Fach Griffin",
+    },
+    {
+        "region": "anglesey",
+        "regionName": "Anglesey",
+        "activity": "wild-swimming",
+        "activityName": "Wild Swimming",
+        "whyFamous": "Llanddwyn Island, Rhoscolyn, secluded coves, warm(ish) waters",
+        "targetKeyword": "wild swimming anglesey",
+        "knownSpots": "Llanddwyn Island (Newborough), Rhoscolyn Bay, Church Bay, Porth Dafarch, Cable Bay, Benllech, Trearddur Bay, Cemlyn Bay, Silver Bay",
+        "knownOperators": "Anglesey Adventures",
+        "knownGearShops": "Anglesey Outdoors, general water sports shops",
+        "knownFood": "The Oyster Catcher (Rhosneigr), Sandy Mount House, Wavecrest Cafe, The Lobster Pot (Church Bay)",
+    },
+    {
+        "region": "gower",
+        "regionName": "Gower",
+        "activity": "wild-swimming",
+        "activityName": "Wild Swimming",
+        "whyFamous": "Blue Pool, Three Cliffs Bay, hidden coves, tidal pools",
+        "targetKeyword": "wild swimming gower",
+        "knownSpots": "Blue Pool (Broughton Bay), Three Cliffs Bay, Mewslade Bay, Fall Bay, Brandy Cove, Pwll Du Bay, Caswell Bay, Rhossili, Tor Bay rock pools",
+        "knownOperators": "Gower Activity Centres",
+        "knownGearShops": "PJ's Surf Shop (Llangennith), wetsuit hire shops",
+        "knownFood": "The King Arthur Hotel (Reynoldston), King's Head (Llangennith), Verdi's (Mumbles), Bay Bistro (Rhossili)",
+    },
+    {
+        "region": "snowdonia",
+        "regionName": "Snowdonia",
+        "activity": "trail-running",
+        "activityName": "Trail Running",
+        "whyFamous": "Snowdon Race, Skyrunning, mountain marathons, technical terrain",
+        "targetKeyword": "trail running snowdonia",
+        "knownSpots": "Snowdon summit race route, Moel Siabod circuit, Glyderau ridge run, Carneddau traverse, Coed y Brenin trail runs, Nant Gwynant loops, Cwm Idwal to Devil's Kitchen, Aber Falls trail",
+        "knownOperators": "Plas y Brenin",
+        "knownGearShops": "Joe Brown's (Llanberis), V12 Outdoor, Run Wales shops",
+        "knownFood": "Pete's Eats (Llanberis), Caffi Siabod (Capel Curig), Pinnacle Cafe, Ty Hyll cafe",
+    },
+    {
+        "region": "brecon-beacons",
+        "regionName": "Brecon Beacons",
+        "activity": "wild-swimming",
+        "activityName": "Wild Swimming",
+        "whyFamous": "Waterfalls, Llangorse Lake, Usk River, mountain pools",
+        "targetKeyword": "wild swimming brecon beacons",
+        "knownSpots": "Sgwd yr Eira plunge pool, Pont Melin-fach pools, Llangorse Lake, River Usk (Brecon), Blue Pool (Ystradfellte), Henrhyd Falls pool, Talybont Reservoir, Grwyne Fawr reservoir",
+        "knownOperators": "Adventure Britain, Black Mountain Adventure",
+        "knownGearShops": "Local outdoor shops Brecon",
+        "knownFood": "The Felin Fach Griffin, Angel Inn (Pontneddfechan), Star Inn (Talybont), White Hart (Brecon)",
+    },
+    {
+        "region": "pembrokeshire",
+        "regionName": "Pembrokeshire",
+        "activity": "wild-swimming",
+        "activityName": "Wild Swimming",
+        "whyFamous": "Blue Lagoon (Abereiddy), Barafundle Bay, secluded coves",
+        "targetKeyword": "wild swimming pembrokeshire",
+        "knownSpots": "Blue Lagoon (Abereiddy), Barafundle Bay, Aber Mawr, Caerfai Bay, Whitesands Bay, Porthgain harbour, Stackpole Quay, Marloes Sands, Druidston Haven",
+        "knownOperators": "TYF Adventure, Preseli Venture",
+        "knownGearShops": "Ma Simes (St Davids), TYF Shop",
+        "knownFood": "The Shed (Porthgain), The Sloop Inn (Porthgain), The Sampler (St Davids), Bench Bar (Newgale), Cafe Mor (Freshwater West)",
+    },
+    {
+        "region": "north-wales",
+        "regionName": "North Wales",
+        "activity": "mountain-biking",
+        "activityName": "Mountain Biking",
+        "whyFamous": "Revolution Bike Park, Llandegla, Coed Llandegla, coastal trails",
+        "targetKeyword": "mountain biking north wales",
+        "knownSpots": "Coed Llandegla (red/black trails), Revolution Bike Park (Llangynog), Marin Trail (Betws-y-Coed), Penmachno, Gwydir Mawr, Clwydian Range, Clocaenog Forest",
+        "knownOperators": "Revolution Bike Park, OneplanetAdventure (Llandegla)",
+        "knownGearShops": "Beics Betws (Betws-y-Coed), Oneplanet shop (Llandegla), Trek Store (Wrexham)",
+        "knownFood": "The Cafe at Coed Llandegla, Y Stablau (Betws-y-Coed), Moel Siabod Cafe, Caffi Siabod",
+    },
+]
+
+# =============================================================================
 # PROMPT
 # =============================================================================
 
@@ -330,7 +632,8 @@ Generate a complete JSON file with ALL of the following. Return ONLY valid JSON,
       // 3-4 other activities in this same region
       {{ "activityTypeSlug": "activity-slug", "label": "Activity in {combo['regionName']}" }}
     ]
-  }}
+  }},
+
 }}
 
 CRITICAL RULES:
@@ -346,6 +649,51 @@ CRITICAL RULES:
 - FAQ answers should be direct and specific
 - Introduction should be 300-500 words of quality editorial — opinionated, honest, practical
 - If you don't know something for certain, use null rather than fabricating"""
+
+
+def build_discovery_prompt(combo: dict, operator_context: str) -> str:
+    """Build prompt for discoveredBusinesses (separate call to avoid output truncation)."""
+    return f"""You are researching businesses for an adventure tourism site about {combo['activityName']} in {combo['regionName']}, Wales.
+
+Find and list EVERY notable venue, business, and attraction relevant to {combo['activityName']} in {combo['regionName']}.
+
+KNOWN OPERATORS: {combo['knownOperators']}
+KNOWN GEAR SHOPS: {combo['knownGearShops']}
+KNOWN FOOD/DRINK: {combo['knownFood']}
+
+EXISTING OPERATOR DATA:
+{operator_context}
+
+Return ONLY a valid JSON array (no wrapping object). Include 10-20 businesses.
+
+For EACH business include ALL of these fields:
+[
+  {{
+    "name": "Business Name",
+    "type": "activity_provider|gear_shop|venue|club|attraction|post_activity",
+    "category": "activity_provider|accommodation|food_drink|gear_rental|transport",
+    "address": "Full address with postcode",
+    "postcode": "UK postcode",
+    "lat": 52.000,
+    "lng": -4.000,
+    "phone": "01234 567890 or null",
+    "website": "https://... or null",
+    "googleRating": 4.5,
+    "reviewCount": 200,
+    "description": "What they do, why they matter. 1-2 sentences.",
+    "relevantActivities": ["{combo['activity']}"],
+    "services": ["what", "they", "offer"],
+    "priceRange": "£|££|£££",
+    "notes": "Why this business is important.",
+    "inDatabase": false,
+    "priority": "critical|high|medium|low"
+  }}
+]
+
+Include: activity providers, gear/hire shops, trail centres, venues, clubs, cafes/pubs/restaurants.
+All GPS must be accurate for Wales (lat 51-54, lng -6 to -2.5).
+All businesses must be REAL places that actually exist.
+Include postcodes for all businesses."""
 
 
 def load_operator_context(combo: dict) -> str:
@@ -373,45 +721,90 @@ def load_operator_context(combo: dict) -> str:
     return "No operator data available for this region."
 
 
-def generate_combo_page(model, combo: dict) -> dict | None:
-    """Generate a combo page JSON using Gemini."""
-    operator_context = load_operator_context(combo)
-    prompt = build_prompt(combo, operator_context)
+def _call_gemini(model, prompt: str, max_retries: int = 3) -> str | None:
+    """Call Gemini with retry on 429."""
+    for attempt in range(max_retries):
+        try:
+            response = model.generate_content(
+                prompt,
+                generation_config={"max_output_tokens": 65536},
+            )
+            text = response.text.strip()
+            finish = response.candidates[0].finish_reason if response.candidates else "?"
+            print(f"({len(text)} chars, finish={finish})", end=" ", flush=True)
+            return text
+        except Exception as e:
+            if "429" in str(e) and attempt < max_retries - 1:
+                wait = 30 * (attempt + 1)
+                print(f"\n    Rate limited, waiting {wait}s...", end=" ", flush=True)
+                time.sleep(wait)
+            else:
+                raise
+    return None
 
+
+def _parse_json(text: str) -> dict | list | None:
+    """Parse JSON text with common Gemini fixes."""
+    # Strip markdown wrappers
+    if text.startswith("```json"):
+        text = text[len("```json"):].strip()
+    if text.startswith("```"):
+        text = text[3:].strip()
+    if text.endswith("```"):
+        text = text[:-3].strip()
+
+    # Fix trailing commas
+    fixed = re.sub(r',\s*([}\]])', r'\1', text)
     try:
-        response = model.generate_content(prompt)
-        text = response.text.strip()
+        return json.loads(fixed)
+    except json.JSONDecodeError:
+        pass
 
-        # Strip markdown wrappers
-        if text.startswith("```json"):
-            text = text[len("```json"):].strip()
-        if text.startswith("```"):
-            text = text[3:].strip()
-        if text.endswith("```"):
-            text = text[:-3].strip()
-
-        data = json.loads(text)
-        return data
-
-    except json.JSONDecodeError as e:
-        print(f"\n    JSON parse error: {e}")
-        # Try fixing trailing commas (common Gemini issue)
+    # Try extracting JSON object or array
+    for pattern in [r'\{[\s\S]*\}', r'\[[\s\S]*\]']:
         try:
-            fixed = re.sub(r',\s*([}\]])', r'\1', text)
-            data = json.loads(fixed)
-            print("    (fixed trailing commas)")
-            return data
-        except:
-            pass
-        try:
-            json_match = re.search(r'\{[\s\S]*\}', text)
-            if json_match:
-                fixed = re.sub(r',\s*([}\]])', r'\1', json_match.group())
+            match = re.search(pattern, text)
+            if match:
+                fixed = re.sub(r',\s*([}\]])', r'\1', match.group())
                 return json.loads(fixed)
         except:
             pass
-        print(f"    First 500 chars: {text[:500]}")
-        return None
+
+    return None
+
+
+def generate_combo_page(model, combo: dict) -> dict | None:
+    """Generate a combo page JSON using Gemini (two calls: content + discovery)."""
+    operator_context = load_operator_context(combo)
+
+    # Call 1: Main content
+    prompt = build_prompt(combo, operator_context)
+    try:
+        text = _call_gemini(model, prompt)
+        if not text:
+            return None
+
+        data = _parse_json(text)
+        if not data:
+            print(f"\n    JSON parse error. First 500 chars: {text[:500]}")
+            return None
+
+        # Call 2: Business discovery (separate to avoid output truncation)
+        time.sleep(3)
+        discovery_prompt = build_discovery_prompt(combo, operator_context)
+        print("biz...", end=" ", flush=True)
+        disc_text = _call_gemini(model, discovery_prompt)
+        if disc_text:
+            disc_data = _parse_json(disc_text)
+            if isinstance(disc_data, list):
+                data["discoveredBusinesses"] = disc_data
+                print(f"{len(disc_data)} found.", end=" ", flush=True)
+            else:
+                print("biz parse fail.", end=" ", flush=True)
+        else:
+            print("biz call fail.", end=" ", flush=True)
+
+        return data
     except Exception as e:
         print(f"\n    API error: {e}")
         return None
@@ -462,22 +855,30 @@ def validate_combo(data: dict) -> list[str]:
 
 def main():
     parser = argparse.ArgumentParser(description="Generate combo page content via Gemini")
-    parser.add_argument("--tier", type=int, help="Generate tier 1 (10 pages)")
+    parser.add_argument("--tier", type=str, help="Generate tier 1, 2, 3, or all")
     parser.add_argument("--single", type=str, help="Single combo e.g. snowdonia--hiking")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force", action="store_true", help="Overwrite existing")
     args = parser.parse_args()
 
+    all_combos = TIER_1 + TIER_2 + TIER_3
+
     if args.single:
         region, activity = args.single.split("--")
-        combos = [c for c in TIER_1 if c["region"] == region and c["activity"] == activity]
+        combos = [c for c in all_combos if c["region"] == region and c["activity"] == activity]
         if not combos:
             print(f"ERROR: Combo '{args.single}' not found")
             sys.exit(1)
-    elif args.tier == 1:
+    elif args.tier == "1":
         combos = TIER_1
+    elif args.tier == "2":
+        combos = TIER_2
+    elif args.tier == "3":
+        combos = TIER_3
+    elif args.tier == "all":
+        combos = all_combos
     else:
-        print("ERROR: Specify --tier 1 or --single region--activity")
+        print("ERROR: Specify --tier 1|2|3|all or --single region--activity")
         sys.exit(1)
 
     print(f"Generating {len(combos)} combo pages...\n")
@@ -526,15 +927,16 @@ def main():
             food = len(ld.get("postActivitySpots", []))
             accom = len(ld.get("accommodation", []))
             faqs = len(data.get("faqs", []))
+            biz = len(data.get("discoveredBusinesses", []))
             warn = f" WARNINGS: {', '.join(warnings)}" if warnings else ""
-            print(f"done ({spots} spots, {gear} shops, {food} food, {accom} accom, {faqs} FAQs){warn}")
+            print(f"done ({spots} spots, {gear} shops, {food} food, {accom} accom, {faqs} FAQs, {biz} biz){warn}")
             success += 1
         else:
             print("FAILED")
             failed += 1
 
         if i < len(combos):
-            time.sleep(3)
+            time.sleep(8)
 
     print(f"\n=== COMPLETE: {success} generated, {failed} failed ===")
     print(f"Output: {OUTPUT_DIR}")

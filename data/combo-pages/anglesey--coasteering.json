@@ -1,0 +1,775 @@
+{
+  "regionSlug": "anglesey",
+  "activityTypeSlug": "coasteering",
+  "title": "Coasteering in Anglesey",
+  "strapline": "Leap into adventure along Anglesey's dramatic coast – no wetsuit required (but highly recommended!).",
+  "metaTitle": "Coasteering Anglesey | Adventure Wales",
+  "metaDescription": "Explore Anglesey's stunning coastline with exhilarating coasteering routes. Find the best spots, guided tours, and gear for your adventure!",
+  "heroAlt": "Coasteerers jumping off a rocky cliff into the sea in Anglesey",
+  "introduction": "Anglesey, or Ynys Môn as we call it, is a coasteering paradise. Forget generic beaches; here, you'll find towering sea cliffs, hidden coves, and crystal-clear waters teeming with marine life. What sets Anglesey apart from other Welsh coasteering destinations is the sheer variety. You can find sheltered bays perfect for beginners, or exposed headlands that will challenge even the most experienced adrenaline junkies. \n\nThe geological diversity is stunning. Imagine scrambling over ancient volcanic rock at South Stack, then swimming through sea caves carved into limestone near Rhoscolyn. The water clarity is exceptional, especially on a sunny day, giving you unparalleled views of the underwater world. You might even spot a seal or two! \n\n**Coasteering Anglesey** is fantastic for families looking for a unique holiday experience, groups of friends seeking adventure, or solo thrill-seekers wanting to push their limits. However, let's be honest, it's not always sunshine and rainbows. The sea can be unpredictable, and some routes are exposed to strong currents and swells. Always check the weather forecast and tide times before you go, and if you're unsure, book a guided tour with a reputable operator. \n\nCompared to Pembrokeshire, Anglesey's coasteering routes tend to be a bit more technical, requiring a slightly higher level of fitness and scrambling ability. But the rewards are worth it – the sense of accomplishment after completing a challenging route, the breathtaking views, and the feeling of truly connecting with nature. The vibrant coastal communities also offer excellent post-coasteering refuelling options from cosy cafes to excellent restaurants. Don't forget to bring your camera (waterproof, of course!) to capture the memories.",
+  "bestSeason": "May-October",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "South Stack Cliffs",
+      "slug": "south-stack-cliffs",
+      "description": "A classic Anglesey coasteering spot with dramatic cliffs, caves, and challenging jumps. Expect exhilarating swims in crystal-clear water and the chance to spot nesting seabirds. Be mindful of the tides as this is a very exposed location.",
+      "difficulty": "Challenging",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced coasteerers looking for a thrill",
+      "notSuitableFor": "Beginners or those with a fear of heights",
+      "bestSeason": "May-September",
+      "parking": "Large National Trust car park at South Stack (LL65 1YH), £5 for non-members. Arrive early in peak season.",
+      "startPoint": {
+        "name": "South Stack Lighthouse",
+        "lat": 53.306,
+        "lng": -4.705
+      },
+      "estimatedCost": "Free (parking £5) or £65pp guided",
+      "operatorSlug": "anglesey-adventures",
+      "insiderTip": "Check the RSPB website for bird nesting season closures. The cliffs are closed to coasteering at certain times of the year to protect nesting birds."
+    },
+    {
+      "name": "Rhoscolyn Headland",
+      "slug": "rhoscolyn-headland",
+      "description": "A popular spot with a mix of jumps, swims, and scrambling. The rock formations are incredible, and the water is usually calm and clear. This route offers good views of the coastline and is suitable for a range of abilities.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediate coasteerers and adventurous families",
+      "notSuitableFor": "Those with mobility issues",
+      "bestSeason": "May-October",
+      "parking": "Small car park near Rhoscolyn beach (LL65 2QQ). Can get busy in summer.",
+      "startPoint": {
+        "name": "Rhoscolyn Beach",
+        "lat": 53.249,
+        "lng": -4.585
+      },
+      "estimatedCost": "Free or £60pp guided",
+      "operatorSlug": "anglesey-adventures",
+      "insiderTip": "Head to The White Eagle pub after your coasteer for some well-deserved food and drinks – it's a local favourite."
+    },
+    {
+      "name": "Church Bay (Porth Swtan)",
+      "slug": "church-bay",
+      "description": "A more sheltered bay with a pebble beach and lower cliffs. This is a good option for beginners or those looking for a less challenging experience. The water is often calm, and there are plenty of rock pools to explore.",
+      "difficulty": "Easy",
+      "duration": "1.5-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families with young children and beginner coasteerers",
+      "notSuitableFor": "Those seeking extreme thrills",
+      "bestSeason": "June-September",
+      "parking": "Car park right next to Church Bay beach (LL65 4EU). Parking fee applies.",
+      "startPoint": {
+        "name": "Church Bay Beach",
+        "lat": 53.394,
+        "lng": -4.546
+      },
+      "estimatedCost": "Free (parking £3-5) or £50pp guided",
+      "operatorSlug": null,
+      "insiderTip": "Visit the Lobster Pot café for delicious seafood after your coasteering adventure. They also have great ice cream!"
+    },
+    {
+      "name": "Trearddur Bay",
+      "slug": "trearddur-bay",
+      "description": "A popular tourist spot with several small beaches and rocky outcrops. Offers a mix of easy scrambling and some more challenging jumps. Good for families but can be very busy during peak season.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families and intermediate coasteerers",
+      "notSuitableFor": "Those seeking solitude",
+      "bestSeason": "June-September",
+      "parking": "Multiple car parks in Trearddur Bay (LL65 2YW). Charges apply.",
+      "startPoint": {
+        "name": "Trearddur Bay Beach",
+        "lat": 53.276,
+        "lng": -4.605
+      },
+      "estimatedCost": "Free (parking £5-8) or £55pp guided",
+      "operatorSlug": null,
+      "insiderTip": "Explore the smaller coves to the north of the main beach for quieter coasteering spots."
+    },
+    {
+      "name": "Aberffraw Dunes & Coast",
+      "slug": "aberffraw-dunes-coast",
+      "description": "A longer stretch of coastline with a mix of sandy beaches, rocky sections, and small cliffs. The estuary offers calmer waters. Involves some walking and wading.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Those wanting a longer adventure with varied terrain",
+      "notSuitableFor": "Those with limited mobility or those looking for high jumps",
+      "bestSeason": "May-September",
+      "parking": "Car park in Aberffraw village (LL63 5YX), a short walk to the beach.",
+      "startPoint": {
+        "name": "Aberffraw Beach",
+        "lat": 53.233,
+        "lng": -4.498
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Walk along the coastal path further south from the main beach to find quieter spots and more interesting rock formations."
+    },
+    {
+      "name": "Porth Dafarch",
+      "slug": "porth-dafarch",
+      "description": "A sheltered cove, popular with swimmers and divers. Good for a shorter, easier coasteering experience. Offers easy access to the water and some gentle scrambling.",
+      "difficulty": "Easy",
+      "duration": "1.5-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners and families",
+      "notSuitableFor": "Experienced coasteerers seeking a challenge",
+      "bestSeason": "June-September",
+      "parking": "Car park at Porth Dafarch beach (LL65 2LR).",
+      "startPoint": {
+        "name": "Porth Dafarch Beach",
+        "lat": 53.286,
+        "lng": -4.621
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Arrive early in summer, as the car park fills up quickly. Combine your coasteer with a swim in the bay."
+    },
+    {
+      "name": "Cable Bay (Porth Llechog)",
+      "slug": "cable-bay",
+      "description": "Known for its surfing, Cable Bay also offers some decent coasteering opportunities. The cliffs are relatively low, but there are some fun jumps and scrambles to be had. Strong currents can be present.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediate coasteerers",
+      "notSuitableFor": "Beginners without supervision",
+      "bestSeason": "May-September",
+      "parking": "Small car park at Cable Bay (LL65 2NJ).",
+      "startPoint": {
+        "name": "Cable Bay Beach",
+        "lat": 53.268,
+        "lng": -4.655
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Check the surf report before you go. If the waves are big, coasteering can be dangerous."
+    },
+    {
+      "name": "Inish Mon National Nature Reserve",
+      "slug": "inish-mon-national-nature-reserve",
+      "description": "This remote and relatively untamed coastal strip offers coasteering opportunities with a twist: stunning flora and fauna. The location offers lots of seals, coastal birds and plant life to view while you scramble. Check local permissions before entering any protected areas.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Nature lovers and experienced coasteerers who respect the environment",
+      "notSuitableFor": "Those who don't take care of the environment or stick to the marked trail.!",
+      "bestSeason": "May-September",
+      "parking": "Limited parking at the reserve entrance. (LL73 8PH)",
+      "startPoint": {
+        "name": "Inish Mon NNR entrance",
+        "lat": 53.37,
+        "lng": -4.228
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Stay on the established routes to minimise damage to the fragile ecosystem. Bring binoculars to spot seals and seabirds."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The weather in Anglesey can be unpredictable, so it's essential to check the forecast before you go coasteering. Strong winds, heavy rain, and large swells can make conditions dangerous. Sea temperatures are coldest in winter and warmest in late summer, but wetsuits are recommended year-round.",
+    "weatherLinks": [
+      {
+        "name": "Met Office Coastal Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/coast-and-sea/regional-coastal-forecasts/holyhead"
+      },
+      {
+        "name": "Magicseaweed Rhoscolyn Surf Report",
+        "url": "https://magicseaweed.com/Rhoscolyn-Surf-Report/722/"
+      }
+    ],
+    "gearChecklist": [
+      "Wetsuit – essential for warmth and buoyancy",
+      "Buoyancy aid – provides extra flotation and visibility",
+      "Helmet – protects your head from impacts",
+      "Coasteering shoes – grippy footwear for scrambling over rocks",
+      "Gloves – protect your hands from scrapes and cold",
+      "Waterproof camera – to capture the memories",
+      "Towel and warm clothes – for after your coasteering session",
+      "Dry bag – to keep your valuables safe and dry",
+      "Sunscreen – even on cloudy days, the sun can be strong"
+    ],
+    "gearHire": [
+      {
+        "name": "Anglesey Adventures",
+        "location": "Holyhead",
+        "url": "https://angleseyadventures.com/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5h",
+          "route": "Via M6 and A55"
+        },
+        {
+          "from": "Manchester",
+          "duration": "2h 30m",
+          "route": "Via M56 and A55"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3h 30m",
+          "route": "Via M6 and A55"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "4h 30m",
+          "route": "Via A470 and A55"
+        }
+      ],
+      "publicTransport": "Regular train services to Holyhead, with bus connections to other parts of the island. The T5 bus route connects Bangor with Holyhead and serves many coastal villages.",
+      "parkingTips": "Parking can be limited, especially during peak season. Arrive early or consider using public transport. Be respectful of local residents and avoid parking in restricted areas."
+    },
+    "safety": "Coasteering can be a dangerous activity. Always check the weather forecast and tide times before you go. Never coasteer alone and inform someone of your plans. Be aware of potential hazards such as strong currents, slippery rocks, and submerged objects. If in doubt, book a guided tour with a qualified instructor. \n\nEmergency: Dial 999 or 112 and ask for the Coastguard."
+  },
+  "faqs": [
+    {
+      "question": "What is the best time of year to go coasteering in Anglesey?",
+      "answer": "The best time for coasteering in Anglesey is between May and October. The sea is warmer, and the weather is generally more settled. However, always check the forecast before you go, as conditions can change quickly."
+    },
+    {
+      "question": "Do I need to be a strong swimmer to go coasteering?",
+      "answer": "Yes, a good level of swimming ability is essential for coasteering. You should be able to swim confidently in open water and be comfortable treading water for extended periods. A buoyancy aid will help, but it's not a substitute for swimming skills."
+    },
+    {
+      "question": "What should I wear for coasteering?",
+      "answer": "A wetsuit, buoyancy aid, helmet, and coasteering shoes are essential. Gloves are also recommended to protect your hands. Layers of thermal clothing can be worn under the wetsuit for extra warmth."
+    },
+    {
+      "question": "Is coasteering suitable for children?",
+      "answer": "Coasteering can be suitable for children, but it depends on their age, swimming ability, and confidence levels. Some routes are more challenging than others, so choose a suitable location and consider booking a guided tour with an experienced instructor."
+    },
+    {
+      "question": "How much does it cost to go coasteering in Anglesey?",
+      "answer": "Coasteering in Anglesey can be free if you have your own gear and know what you're doing. However, guided tours typically cost between £50 and £80 per person. Gear hire is also available from some operators."
+    },
+    {
+      "question": "What happens if I get into trouble while coasteering?",
+      "answer": "If you get into trouble while coasteering, call 999 or 112 and ask for the Coastguard. Stay calm and try to attract attention. If you are with a group, assist each other."
+    },
+    {
+      "question": "Can I go coasteering if I'm pregnant?",
+      "answer": "Coasteering is not recommended during pregnancy due to the physical demands and potential risks involved."
+    },
+    {
+      "question": "Are there any age restrictions for coasteering?",
+      "answer": "Age restrictions vary depending on the operator and the specific route. Generally, children under the age of 8 are not permitted to coasteer. Check with the operator for their specific age restrictions."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Anglesey Outdoors",
+        "slug": "anglesey-outdoors",
+        "address": "Parc Mochras, Llanfairpwllgwyngyll, LL61 5YX",
+        "lat": 53.227,
+        "lng": -4.203,
+        "description": "A well-stocked outdoor shop with a wide range of gear for coasteering, kayaking, and other activities. Known for their friendly and knowledgeable staff.",
+        "website": "https://www.angleseyoutdoors.com/",
+        "phone": "01248 714000",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 150
+      },
+      {
+        "name": "Snowdonia Watersports",
+        "slug": "snowdonia-watersports",
+        "address": "Glyn Rhonwy Quarry, Llanberis, Caernarfon LL55 4EL",
+        "lat": 53.121,
+        "lng": -4.13,
+        "description": "Although inland in Snowdonia, they are a good source for watersports gear if you're coming that way. They have a wide range of wetsuits, buoyancy aids, and other essential equipment.",
+        "website": "https://www.snowdonia-watersports.com/",
+        "phone": "01286 870828",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 220
+      },
+      {
+        "name": "Go Outdoors Bangor",
+        "slug": "go-outdoors-bangor",
+        "address": "Unit 5, Parc Menai Retail Park, Bangor LL57 4BN",
+        "lat": 53.217,
+        "lng": -4.173,
+        "description": "A large outdoor retailer with a good selection of wetsuits, footwear, and other coasteering essentials at competitive prices.",
+        "website": "https://www.gooutdoors.co.uk/stores/bangor",
+        "phone": "0330 053 9257",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.2,
+        "reviewCount": 300
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Oyster Catcher",
+        "slug": "the-oyster-catcher",
+        "address": "Rhosneigr, LL64 5JP",
+        "lat": 53.242,
+        "lng": -4.537,
+        "description": "A stylish restaurant with stunning sea views. Serves delicious seafood and modern British cuisine. Perfect for a celebratory meal after a successful coasteering adventure.",
+        "vibe": "Relaxed fine dining",
+        "priceRange": "£££",
+        "website": "https://www.oystercatcheranglesey.co.uk/",
+        "knownFor": "Fresh seafood, sea views"
+      },
+      {
+        "name": "Wavecrest Cafe",
+        "slug": "wavecrest-cafe",
+        "address": "Trearddur Bay, LL65 2YW",
+        "lat": 53.275,
+        "lng": -4.606,
+        "description": "A traditional seaside cafe serving breakfast, lunch, and snacks. A popular spot for families and beachgoers. Ideal for a quick and affordable refuel after coasteering.",
+        "vibe": "Family-friendly cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Breakfasts, ice cream"
+      },
+      {
+        "name": "Lobster Pot",
+        "slug": "lobster-pot",
+        "address": "Church Bay, LL65 4EU",
+        "lat": 53.394,
+        "lng": -4.546,
+        "description": "A charming tea room and restaurant specializing in fresh lobster and seafood. A must-visit for seafood lovers. Offers stunning views of Church Bay.",
+        "vibe": "Cosy tea room",
+        "priceRange": "££",
+        "website": "http://www.the-lobster-pot.co.uk/",
+        "knownFor": "Lobster, seafood platters"
+      },
+      {
+        "name": "The White Eagle",
+        "slug": "the-white-eagle",
+        "address": "Rhoscolyn, LL65 2NJ",
+        "lat": 53.248,
+        "lng": -4.586,
+        "description": "A popular gastropub with a relaxed atmosphere and stunning views of the coastline. Serves excellent pub fare and a wide selection of local ales. A great spot to unwind after a day of coasteering.",
+        "vibe": "Gastropub",
+        "priceRange": "££",
+        "website": "https://www.white-eagle.co.uk/",
+        "knownFor": "Pub food, local ales"
+      },
+      {
+        "name": "The Sea Shanty Cafe",
+        "slug": "the-sea-shanty-cafe",
+        "address": "Trearddur Bay, LL65 2BJ",
+        "lat": 53.275,
+        "lng": -4.605,
+        "description": "A cosy cafe right on the beach in Trearddur Bay, offering breakfast, lunch and stunning views. Perfect for a quick bite or a longer stop to watch the waves.",
+        "vibe": "Beachfront cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Beach views, light lunches"
+      },
+      {
+        "name": "Sosban & The Secret Garden",
+        "slug": "sosban-secret-garden",
+        "address": "The Old Thomas Telford Centre, Llanfairpwllgwyngyll, LL61 5YF",
+        "lat": 53.225,
+        "lng": -4.202,
+        "description": "A fine dining restaurant in Llanfairpwllgwyngyll serving a multi-course tasting menu featuring local ingredients. A great option for a special occasion.",
+        "vibe": "Fine dining",
+        "priceRange": "£££",
+        "website": "https://www.sosbanandthesecretgarden.co.uk/",
+        "knownFor": "Tasting menus, local produce"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Plas Newydd (National Trust)",
+        "slug": "plas-newydd",
+        "description": "Historic house and gardens on the Menai Strait. Offers camping and glamping options. Conveniently located for exploring the island.",
+        "type": "campsite",
+        "priceRange": "££",
+        "nearestSpot": "Close to many spots, 20-30 min drive to Trearddur Bay",
+        "website": "https://www.nationaltrust.org.uk/plas-newydd-house-and-garden"
+      },
+      {
+        "name": "The Boathouse Hotel",
+        "slug": "the-boathouse-hotel",
+        "description": "A boutique hotel in Rhoscolyn with stunning sea views. Offers comfortable rooms and a restaurant serving delicious food. Perfect for a relaxing getaway.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Rhoscolyn Headland, 5 min drive",
+        "website": "https://www.theboathouserhoscolyn.co.uk/"
+      },
+      {
+        "name": "Tyn Lon Camping & Touring Park",
+        "slug": "tyn-lon-camping",
+        "description": "A well-maintained campsite near Rhosneigr. Offers camping pitches and caravan hookups. Conveniently located for exploring the west coast of Anglesey.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Rhosneigr, 5 min drive",
+        "website": "https://www.tynlon.co.uk/"
+      },
+      {
+        "name": "Sandy Mount House",
+        "slug": "sandy-mount-house",
+        "description": "A stylish hotel and restaurant in Rhosneigr, popular with surfers and beachgoers. Offers comfortable rooms and a lively atmosphere.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Rhosneigr, 2 min drive",
+        "website": "https://sandymounthouse.co.uk/"
+      },
+      {
+        "name": "Anglesey Yurts",
+        "slug": "anglesey-yurts",
+        "description": "Glamping site offering a more unusual stay. Near to several beaches and in a beautiful setting.",
+        "type": "glamping",
+        "priceRange": "££",
+        "nearestSpot": "Aberffraw Beach (approx 15 min drive)",
+        "website": "https://www.angleseyyurts.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Anglesey Sea Kayak Symposium",
+      "type": "festival",
+      "monthTypical": "September",
+      "description": "A multi-day event for sea kayakers of all abilities, with coaching, guided trips, and social events. Some overlap with the skills needed for coasteering, such as understanding tides and sea conditions.",
+      "website": "https://www.angleseyseakayak.co.uk/",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "registrationCost": 250
+    }
+  ],
+  "keywords": {
+    "primary": "coasteering anglesey",
+    "secondary": [
+      "coasteering north wales",
+      "adventure activities anglesey",
+      "sea cliffs anglesey",
+      "guided coasteering anglesey",
+      "rhoscolyn coasteering"
+    ],
+    "longTail": [
+      "best coasteering locations anglesey",
+      "coasteering south stack cliffs",
+      "beginner coasteering routes anglesey",
+      "family coasteering anglesey",
+      "anglesey coasteering tours",
+      "coasteering with kids anglesey",
+      "cheap coasteering anglesey",
+      "coasteering safety tips anglesey",
+      "coasteering church bay",
+      "coasteering guide anglesey"
+    ],
+    "localIntent": [
+      "coasteering near holyhead",
+      "coasteering near rhosneigr",
+      "coasteering near trearddur bay",
+      "coasteering near beaumaris",
+      "coasteering near llanfairpwllgwyngyll"
+    ],
+    "commercialIntent": [
+      "book coasteering anglesey",
+      "coasteering tour anglesey price",
+      "coasteering gear hire anglesey",
+      "anglesey coasteering operators",
+      "guided coasteering trips anglesey"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Coasteering in Pembrokeshire"
+      },
+      {
+        "regionSlug": "gower",
+        "label": "Coasteering in Gower"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "sea-kayaking",
+        "label": "Sea Kayaking in Anglesey"
+      },
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Anglesey"
+      },
+      {
+        "activityTypeSlug": "surfing",
+        "label": "Surfing in Anglesey"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Anglesey Adventures",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Parc Snowdonia, Dolgarrog, Conwy LL32 8QE",
+      "postcode": "LL32 8QE",
+      "lat": 53.184,
+      "lng": -3.861,
+      "phone": "01248 713030",
+      "website": "https://angleseyadventures.com/",
+      "googleRating": 5.0,
+      "reviewCount": 150,
+      "description": "Unforgettable adventures on the Anglesey coast. Specialising in sea kayaking and coasteering.",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "services": [
+        "guided tours",
+        "equipment rental",
+        "instruction"
+      ],
+      "priceRange": "££",
+      "notes": "Well-established operator with excellent reviews. Offer guided coasteering experiences around Anglesey.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Plas Menai",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Plas Menai National Outdoor Centre, Caernarfon LL55 1UE",
+      "postcode": "LL55 1UE",
+      "lat": 53.144,
+      "lng": -4.229,
+      "phone": "0300 300 3111",
+      "website": "https://www.plasmenai.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 320,
+      "description": "Adventure on the Menai Strait awaits. Offers a wide range of water sports activities, including coasteering.",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "services": [
+        "courses",
+        "accommodation",
+        "equipment rental"
+      ],
+      "priceRange": "£££",
+      "notes": "National outdoor centre, provides comprehensive training and coasteering experiences. Also offers accommodation.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Anglesey Outdoors",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Parc Farm, Pentraeth, Anglesey LL75 8LJ",
+      "postcode": "LL75 8LJ",
+      "lat": 53.287,
+      "lng": -4.208,
+      "phone": "01248 450351",
+      "website": "https://www.angleseyoutdoors.com/",
+      "googleRating": 4.6,
+      "reviewCount": 95,
+      "description": "Outdoor activity centre and shop, selling and hiring equipment for various activities. Offers coasteering gear.",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "services": [
+        "gear rental",
+        "equipment sales",
+        "repair services"
+      ],
+      "priceRange": "££",
+      "notes": "Important local shop for equipment purchase/rental. May offer limited coasteering instruction.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "The Oyster Catcher",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Maelog Lake, Rhosneigr, Anglesey LL64 5JP",
+      "postcode": "LL64 5JP",
+      "lat": 53.25,
+      "lng": -4.537,
+      "phone": "01407 810828",
+      "website": "https://www.oystercatcheranglesey.co.uk/",
+      "googleRating": 4.3,
+      "reviewCount": 1200,
+      "description": "Popular restaurant in Rhosneigr, offering great views and a varied menu. Ideal for post-coasteering refreshments.",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "services": [
+        "restaurant",
+        "bar",
+        "outdoor seating"
+      ],
+      "priceRange": "££",
+      "notes": "Good option for food and drinks after coasteering in the Rhosneigr area.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Wavecrest Cafe",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Trearddur Bay, Holyhead LL65 2AU",
+      "postcode": "LL65 2AU",
+      "lat": 53.281,
+      "lng": -4.632,
+      "phone": "01407 860153",
+      "website": null,
+      "googleRating": 4.5,
+      "reviewCount": 350,
+      "description": "Cafe located in Trearddur Bay, perfect for a quick bite or drink. A relaxing spot after a session in the sea.",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "services": [
+        "cafe",
+        "takeaway"
+      ],
+      "priceRange": "£",
+      "notes": "Conveniently located near popular coasteering spots in Trearddur Bay.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Lobster Pot",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Church Bay, Anglesey LL65 4EU",
+      "postcode": "LL65 4EU",
+      "lat": 53.406,
+      "lng": -4.567,
+      "phone": "01407 730241",
+      "website": null,
+      "googleRating": 4.2,
+      "reviewCount": 600,
+      "description": "A well-known seafood restaurant in Church Bay, perfect for a post-coasteering meal. Famous for lobster and crab.",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "services": [
+        "restaurant",
+        "seafood"
+      ],
+      "priceRange": "£££",
+      "notes": "A treat after a day of coasteering, known for its fresh seafood.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "The White Eagle",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Rhoscolyn, Holyhead LL65 2NJ",
+      "postcode": "LL65 2NJ",
+      "lat": 53.256,
+      "lng": -4.618,
+      "phone": "01407 860267",
+      "website": "https://white-eagle.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 1500,
+      "description": "Pub and restaurant in Rhoscolyn with sea views, offering a relaxed atmosphere. Serves good food and drinks.",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "services": [
+        "pub",
+        "restaurant",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Excellent option for relaxing after coasteering in Rhoscolyn.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Funsport Rhosneigr",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "1 High St, Rhosneigr, Anglesey LL64 5UQ",
+      "postcode": "LL64 5UQ",
+      "lat": 53.252,
+      "lng": -4.544,
+      "phone": "01407 810088",
+      "website": "http://funsportonline.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 50,
+      "description": "Ride the wind and waves in Rhosneigr! Offers Kitesurfing and windsurfing lessons and rentals.",
+      "relevantActivities": [],
+      "services": [
+        "kitesurfing lessons",
+        "windsurfing lessons",
+        "equipment rental"
+      ],
+      "priceRange": "££",
+      "notes": "While they don't explicitly list coasteering, it is worth contacting them to enquire if it is offered or if they can advise.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Gecko Surf",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Beachfront, Rhosneigr, Anglesey LL64 5JR",
+      "postcode": "LL64 5JR",
+      "lat": 53.251,
+      "lng": -4.54,
+      "phone": "07711 164790",
+      "website": "https://www.geckosurf.co.uk/",
+      "googleRating": 4.9,
+      "reviewCount": 75,
+      "description": "Ride the waves with Rhosneigr's best. Provides surfing and kitesurfing lessons and rentals.",
+      "relevantActivities": [],
+      "services": [
+        "surfing lessons",
+        "kitesurfing lessons",
+        "equipment rental"
+      ],
+      "priceRange": "££",
+      "notes": "Surf school, worth checking if they offer coasteering or can refer to someone who does.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Pro Kitesurfing",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Newborough Beach, Anglesey LL61 6TW",
+      "postcode": "LL61 6TW",
+      "lat": 53.163,
+      "lng": -4.371,
+      "phone": "07739 584858",
+      "website": "http://www.prokitesurfing.co.uk/",
+      "googleRating": 5.0,
+      "reviewCount": 30,
+      "description": "Learn to kitesurf on Anglesey's stunning Newborough Beach. Offers kitesurfing lessons.",
+      "relevantActivities": [],
+      "services": [
+        "kitesurfing lessons"
+      ],
+      "priceRange": "£££",
+      "notes": "Another water sports school to potentially ask for coasteering information.",
+      "inDatabase": true,
+      "priority": "low"
+    }
+  ]
+}

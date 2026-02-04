@@ -1,0 +1,964 @@
+{
+  "regionSlug": "brecon-beacons",
+  "activityTypeSlug": "mountain-biking",
+  "title": "Mountain Biking in Brecon Beacons",
+  "strapline": "From BikePark Wales' flow trails to the exposed Gap, find your perfect ride.",
+  "metaTitle": "Mountain Biking Brecon Beacons: Trails & Parks | Adventure Wales",
+  "metaDescription": "Explore the best mountain biking in Brecon Beacons: BikePark Wales, the Gap, Talybont, and more! Find trails, maps, and local tips here.",
+  "heroAlt": "Mountain biker descending a rocky trail in the Brecon Beacons with sweeping views.",
+  "introduction": "The Brecon Beacons offer a truly diverse landscape for mountain biking. Forget manicured trails; here, you'll find everything from smooth, flowing bike park lines at BikePark Wales to wild, exposed natural trails that test your technical skills and grit. What sets the Beacons apart is the sheer variety. You can spend a day ripping downhill at BikePark Wales and then, the next day, be battling the elements on the iconic Gap ride, a proper mountain experience that rewards you with incredible views (if the weather cooperates!).\n\nThis isn't just a weekend warrior destination; there's something for everyone, from beginners finding their feet on the Talybont Reservoir loop to seasoned pros tackling the demanding descents of Coed Taf Fawr. Don't come expecting perfectly signposted trails everywhere. Many routes are unmarked, relying on your navigation skills. This adds to the adventure but demands respect. Bring a map, a GPS, and the skills to use them. The weather can change in an instant, and you need to be prepared for anything. \n\nFor those seeking a challenge, **mountain biking Brecon Beacons** means tackling steep climbs, navigating rocky terrain, and embracing the unpredictable Welsh weather. For those newer to the sport, start with BikePark Wales or the Talybont loop. Remember, the best rides are often the ones where you earn the view. So, get ready to climb, descend, and soak in the epic scenery. Before you head out, make sure to check the weather forecast and pack accordingly. Even in summer, the Beacons can be surprisingly cold and wet. Proper gear is essential to enjoying your **mountain biking Brecon Beacons** adventure.\n\nThe area is also home to some fantastic local businesses supporting the MTB community and some great cafes and pubs to enjoy after a long ride. So why not join them on the trails for some **mountain biking brecon beacons** action!",
+  "bestSeason": "April-October",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "BikePark Wales",
+      "slug": "bikepark-wales",
+      "description": "The UK's premier mountain bike park, offering a huge variety of trails from beginner-friendly green runs to expert-level black runs and jump lines. Expect uplift service, well-maintained trails, and a buzzing atmosphere. This is a great place to hone your skills or just have a blast on well-designed trails.",
+      "difficulty": "Easy|Moderate|Challenging|Expert",
+      "duration": "Full day",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "All skill levels, especially riders who enjoy flow trails, jumps, and uplift service.",
+      "notSuitableFor": "Those seeking wilderness solitude or free natural trails.",
+      "bestSeason": "Year-round (weather dependent, check conditions)",
+      "parking": "Ample parking at BikePark Wales, but can get busy on weekends. Booking essential.",
+      "startPoint": {
+        "name": "BikePark Wales Base",
+        "lat": 51.713,
+        "lng": -3.371
+      },
+      "estimatedCost": "£49-£59 uplift day pass",
+      "operatorSlug": "bikepark-wales",
+      "insiderTip": "Book your uplift early, especially on weekends and school holidays. Try to arrive early to make the most of your day."
+    },
+    {
+      "name": "The Gap",
+      "slug": "the-gap",
+      "description": "An iconic Brecon Beacons ride across open moorland, offering stunning views (weather permitting!). Expect challenging climbs, technical descents, and exposed conditions. This is a proper mountain biking experience requiring good fitness and navigation skills. The route involves some hike-a-bike sections.",
+      "difficulty": "Challenging",
+      "duration": "4-6 hours",
+      "distance": "25km",
+      "elevationGain": "600m",
+      "bestFor": "Experienced mountain bikers seeking a challenging natural ride with epic scenery.",
+      "notSuitableFor": "Beginners, or those who dislike exposed conditions or hike-a-bike.",
+      "bestSeason": "May-September (check weather forecast)",
+      "parking": "Limited parking at the Storey Arms outdoor centre (free), arrive early. Alternative parking a bit further down the A470.",
+      "startPoint": {
+        "name": "Storey Arms",
+        "lat": 51.885,
+        "lng": -3.434
+      },
+      "estimatedCost": "Free (parking)",
+      "operatorSlug": null,
+      "insiderTip": "Check the weather forecast religiously. This route is very exposed and can be treacherous in bad weather. Bring a map and compass as GPS can be unreliable."
+    },
+    {
+      "name": "Bwlch Loop",
+      "slug": "bwlch-loop",
+      "description": "A classic loop starting from Bwlch village, offering a mix of forest trails, open moorland, and quiet country lanes. Expect challenging climbs and rewarding descents. This is a good option for a half-day ride with varied terrain. The views from the top are excellent.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": "20km",
+      "elevationGain": "450m",
+      "bestFor": "Intermediate riders looking for a varied and challenging ride.",
+      "notSuitableFor": "Beginners, or those who dislike road sections.",
+      "bestSeason": "April-October",
+      "parking": "Parking in Bwlch village (free, but limited).",
+      "startPoint": {
+        "name": "Bwlch Village Centre",
+        "lat": 51.789,
+        "lng": -3.223
+      },
+      "estimatedCost": "Free (parking)",
+      "operatorSlug": null,
+      "insiderTip": "Start early to avoid crowds, especially on weekends. The descent back into Bwlch can be quite technical in places."
+    },
+    {
+      "name": "Talybont Reservoir Loop",
+      "slug": "talybont-reservoir-loop",
+      "description": "A relatively easy loop around Talybont Reservoir, offering stunning views of the water and surrounding mountains. Expect mostly flat or gently undulating terrain, making it suitable for families and beginners. This is a great option for a relaxed ride with beautiful scenery. Be aware of walkers, especially on weekends.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours",
+      "distance": "15km",
+      "elevationGain": "150m",
+      "bestFor": "Families, beginners, and those looking for a relaxed ride.",
+      "notSuitableFor": "Experienced mountain bikers seeking a challenging ride.",
+      "bestSeason": "Year-round",
+      "parking": "Parking at Talybont Reservoir visitor centre (pay and display).",
+      "startPoint": {
+        "name": "Talybont Reservoir Visitor Centre",
+        "lat": 51.858,
+        "lng": -3.276
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Pack a picnic and enjoy it by the reservoir. The Star Inn in Talybont-on-Usk is a great place to grab a post-ride pint."
+    },
+    {
+      "name": "Coed Taf Fawr",
+      "slug": "coed-taf-fawr",
+      "description": "A network of natural trails in a forest setting, offering a mix of technical climbs and descents. Expect challenging terrain and limited signage. This is a good option for experienced mountain bikers seeking a more remote and natural experience. Be prepared for mud, especially in wet weather.",
+      "difficulty": "Challenging",
+      "duration": "3-5 hours",
+      "distance": "Varies",
+      "elevationGain": "Varies",
+      "bestFor": "Experienced mountain bikers seeking a technical and challenging ride.",
+      "notSuitableFor": "Beginners, or those who dislike mud.",
+      "bestSeason": "May-September (weather dependent)",
+      "parking": "Limited parking at various access points to the forest (free).",
+      "startPoint": {
+        "name": "Pontsticill Reservoir Car Park",
+        "lat": 51.784,
+        "lng": -3.364
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Download a trail map before you go, as signage is limited. This area can be very remote, so ensure you have phone signal or a means of contacting help."
+    },
+    {
+      "name": "Garwnant",
+      "slug": "garwnant",
+      "description": "Trail centre near Merthyr Tydfil offering a mix of graded trails from blue to black. Includes a skills area to hone your technique. A good option for an afternoon ride, especially if combined with a visit to BikePark Wales.",
+      "difficulty": "Moderate|Challenging",
+      "duration": "2-4 hours",
+      "distance": "Varies",
+      "elevationGain": "Varies",
+      "bestFor": "Intermediate to advanced riders.",
+      "notSuitableFor": "Complete beginners, though the skills area is good for learning basics.",
+      "bestSeason": "Year-round (weather dependent)",
+      "parking": "Ample parking at Garwnant Visitor Centre (pay and display).",
+      "startPoint": {
+        "name": "Garwnant Visitor Centre",
+        "lat": 51.754,
+        "lng": -3.442
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Check out the cafe at the visitor centre for a post-ride refuel. The black trail is quite technical."
+    },
+    {
+      "name": "Pontsticill Circular",
+      "slug": "pontsticill-circular",
+      "description": "A varied route starting and ending in the village of Pontsticill, taking you around the Pontsticill Reservoir and through forestry. Features sections of open hillside and some technical descents. Good views of the surrounding Beacons.",
+      "difficulty": "Moderate",
+      "duration": "3-5 hours",
+      "distance": "22km",
+      "elevationGain": "500m",
+      "bestFor": "Intermediate riders looking for a varied route with good views.",
+      "notSuitableFor": "Complete beginners, or those who dislike technical descents.",
+      "bestSeason": "April-October",
+      "parking": "Limited parking in Pontsticill village (free).",
+      "startPoint": {
+        "name": "Pontsticill Village Centre",
+        "lat": 51.786,
+        "lng": -3.343
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "The section along the reservoir can be quite exposed to the wind. The descent into Pontsticill is quite rocky."
+    },
+    {
+      "name": "Taff Trail (Section in Brecon Beacons)",
+      "slug": "taff-trail",
+      "description": "A long-distance multi-use trail that passes through the Brecon Beacons, offering a relatively easy ride along canal paths and former railway lines. Expect mostly flat or gently undulating terrain. Suitable for families and beginners. This section is good for connecting villages and accessing other trails.",
+      "difficulty": "Easy",
+      "duration": "Varies",
+      "distance": "Varies",
+      "elevationGain": "Minimal",
+      "bestFor": "Families, beginners, and those looking for a relaxed ride.",
+      "notSuitableFor": "Experienced mountain bikers seeking a challenging ride.",
+      "bestSeason": "Year-round",
+      "parking": "Various parking locations along the trail.",
+      "startPoint": {
+        "name": "Brecon Canal Basin",
+        "lat": 51.945,
+        "lng": -3.39
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Stop for refreshments in one of the many villages along the route. The section near Brecon Canal Basin is particularly scenic."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The Brecon Beacons are known for their unpredictable weather. Be prepared for sudden changes in temperature, rain, and wind, even in summer. Check the forecast before you go and pack accordingly. High altitude areas like The Gap are particularly vulnerable to extreme weather. Mist and fog can also reduce visibility significantly.",
+    "weatherLinks": [
+      {
+        "name": "Met Office Mountain Weather Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain"
+      },
+      {
+        "name": "Mountain Forecast",
+        "url": "https://www.mountain-forecast.com/"
+      }
+    ],
+    "gearChecklist": [
+      "Helmet - Non-negotiable!",
+      "Mountain bike suitable for the terrain - Hardtail or full-suspension depending on your riding style",
+      "Appropriate clothing - Layers are key, waterproof jacket and trousers, and warm base layers are a must",
+      "Gloves - To protect your hands and keep them warm",
+      "Bike repair kit - Including spare inner tubes, pump, multi-tool, tyre levers, and chain tool",
+      "First-aid kit - For minor injuries",
+      "Navigation - Map, compass, and GPS (and the knowledge to use them!)",
+      "Food and water - Plenty of both, especially on longer rides",
+      "Charged mobile phone - In a waterproof bag",
+      "Sunscreen and sunglasses - Even on cloudy days"
+    ],
+    "gearHire": [
+      {
+        "name": "BikePark Wales",
+        "location": "Merthyr Tydfil",
+        "url": "https://www.bikeparkwales.com/hire"
+      },
+      {
+        "name": "Brecon Bikes",
+        "location": "Brecon",
+        "url": "https://breconbikes.com/hire/"
+      },
+      {
+        "name": "Biped Cycles",
+        "location": "Brecon",
+        "url": "http://bipedcycles.co.uk/cyclehire/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "3.5h",
+          "route": "Via M4"
+        },
+        {
+          "from": "Manchester",
+          "duration": "3.5h",
+          "route": "Via M6 and A40"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "2.5h",
+          "route": "Via M5 and A40"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "1h",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "Nearest train stations are Abergavenny and Merthyr Tydfil. Bus services connect these towns to villages within the Brecon Beacons. The TrawsCymru T4 bus service runs through Brecon.",
+      "parkingTips": "Parking can be limited in popular areas, especially on weekends. Arrive early, park responsibly, and consider using alternative transport where possible. Some car parks are pay and display."
+    },
+    "safety": "Mountain biking in the Brecon Beacons can be dangerous. Always ride within your abilities, wear a helmet, and carry appropriate equipment. Be aware of other users of the trails, including walkers and horse riders. Check the weather forecast before you go and be prepared for changes in conditions. In case of emergency, dial 999 and ask for Mountain Rescue. Ensure your bike is properly maintained before heading out. Avoid riding alone, if possible."
+  },
+  "faqs": [
+    {
+      "question": "What is the best time of year for mountain biking in Brecon Beacons?",
+      "answer": "April to October is generally the best time, with drier trails and milder weather. However, even in summer, be prepared for rain. Winter riding is possible but can be very challenging due to mud and ice."
+    },
+    {
+      "question": "Are there any beginner-friendly mountain bike trails in the Brecon Beacons?",
+      "answer": "Yes! The Talybont Reservoir loop and the green trails at BikePark Wales are both excellent options for beginners. Garwnant skills loop is also a good starting point."
+    },
+    {
+      "question": "Do I need a special bike for mountain biking in the Brecon Beacons?",
+      "answer": "A mountain bike with good brakes and suspension is recommended. Hardtails are suitable for less technical trails, while full-suspension bikes are better for more challenging terrain."
+    },
+    {
+      "question": "Is there anywhere to hire mountain bikes in the Brecon Beacons?",
+      "answer": "Yes, you can hire mountain bikes from BikePark Wales in Merthyr Tydfil, Brecon Bikes, and Biped Cycles in Brecon."
+    },
+    {
+      "question": "Is mountain biking allowed everywhere in the Brecon Beacons?",
+      "answer": "No, mountain biking is not allowed everywhere. Stick to designated trails and bridleways. Respect any signs indicating restricted areas."
+    },
+    {
+      "question": "How much does it cost to ride at BikePark Wales?",
+      "answer": "An uplift day pass at BikePark Wales costs between £49-£59 depending on the day and time of year. Single uplift passes are also available, as are bike hire options."
+    },
+    {
+      "question": "Are there guided mountain bike tours available in Brecon Beacons?",
+      "answer": "Yes, Black Mountain Adventure and Adventure Britain offer guided mountain bike tours in the Brecon Beacons. These are a great option if you're new to the area or want to improve your skills."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Brecon Bikes",
+        "slug": "brecon-bikes",
+        "address": "1 Market St, Brecon LD3 7DA",
+        "lat": 51.946,
+        "lng": -3.392,
+        "description": "Long established shop in Brecon town centre with a wide range of bikes, clothing and accessories. Also offers servicing and repairs.",
+        "website": "https://breconbikes.com/",
+        "phone": "01874 623143",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "boot fitting"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 85
+      },
+      {
+        "name": "Biped Cycles",
+        "slug": "biped-cycles",
+        "address": "13 High St, Brecon LD3 7AF",
+        "lat": 51.945,
+        "lng": -3.391,
+        "description": "Independent bike shop offering a range of bikes and accessories. Also provides cycle hire and servicing.",
+        "website": "http://bipedcycles.co.uk/",
+        "phone": "01874 611550",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 60
+      },
+      {
+        "name": "BikePark Wales Shop",
+        "slug": "bikepark-wales-shop",
+        "address": "Gethin Woodland Centre, Abercanaid, Merthyr Tydfil CF48 1YZ",
+        "lat": 51.713,
+        "lng": -3.371,
+        "description": "Onsite shop at BikePark Wales stocking a range of mountain bike clothing, accessories, and spare parts. Also offers bike hire and demo bikes.",
+        "website": "https://www.bikeparkwales.com/shop",
+        "phone": "01443 836455",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 120
+      },
+      {
+        "name": "Halfords",
+        "slug": "halfords-merthyr",
+        "address": "Unit 2a Cyfarthfa Retail Park, Merthyr Tydfil CF47 0SE",
+        "lat": 51.759,
+        "lng": -3.375,
+        "description": "Large chain store selling bikes, car parts, and accessories. Offers bike servicing and repairs.",
+        "website": "https://www.halfords.com/stores/1253-merthyr-tydfil",
+        "phone": "01685 377822",
+        "services": [
+          "gear sales",
+          "repairs"
+        ],
+        "googleRating": 3.8,
+        "reviewCount": 340
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Star Inn",
+        "slug": "the-star-inn-talybont",
+        "address": "Talybont-on-Usk, Brecon LD3 7YJ",
+        "lat": 51.86,
+        "lng": -3.274,
+        "description": "Cosy pub in Talybont-on-Usk, popular with walkers and cyclists. Serves good food and local ales. A great place to relax after a ride around the reservoir.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "https://www.starinntalybont.co.uk/",
+        "knownFor": "Real ales, riverside garden"
+      },
+      {
+        "name": "The White Hart Inn",
+        "slug": "the-white-hart-inn-brecon",
+        "address": "Bridge Street, Brecon LD3 8AH",
+        "lat": 51.945,
+        "lng": -3.393,
+        "description": "Traditional pub in the centre of Brecon, serving good food and a wide range of drinks. Often has live music. Centrally located and a popular spot.",
+        "vibe": "Traditional pub",
+        "priceRange": "££",
+        "website": "http://www.whitehartbrecon.co.uk/",
+        "knownFor": "Live music, central location"
+      },
+      {
+        "name": "The Felin Fach Griffin",
+        "slug": "the-felin-fach-griffin",
+        "address": "Felin Fach, Brecon LD3 0HF",
+        "lat": 52.08,
+        "lng": -3.382,
+        "description": "Stylish pub and restaurant in a rural setting, serving high-quality food and drink. A bit more upmarket than other options. Great for a celebratory meal.",
+        "vibe": "Gastropub",
+        "priceRange": "£££",
+        "website": "https://www.eatdrinksleep.ltd.uk/felin-fach-griffin/the-griffin/",
+        "knownFor": "High-quality food, stylish decor"
+      },
+      {
+        "name": "BikePark Wales Cafe",
+        "slug": "bikepark-wales-cafe",
+        "address": "Gethin Woodland Centre, Abercanaid, Merthyr Tydfil CF48 1YZ",
+        "lat": 51.713,
+        "lng": -3.371,
+        "description": "Onsite cafe at BikePark Wales, serving a range of hot and cold food and drinks. A convenient option for refuelling during your ride.",
+        "vibe": "Bike park cafe",
+        "priceRange": "£",
+        "website": "https://www.bikeparkwales.com/visit",
+        "knownFor": "Convenience, hearty portions"
+      },
+      {
+        "name": "Nantyffin Cider Mill Inn",
+        "slug": "nantyffin-cider-mill",
+        "address": "Brecon Road, Llandefalle, Brecon LD3 0UD",
+        "lat": 52.035,
+        "lng": -3.353,
+        "description": "A charming pub known for its traditional cider and delicious food. This inn offers a warm and welcoming atmosphere, perfect for relaxing after a long day of mountain biking. Enjoy the beautiful views and friendly service.",
+        "vibe": "Rustic, Traditional",
+        "priceRange": "££",
+        "website": "https://www.nantyffincidermill.co.uk/",
+        "knownFor": "Cider Selection, Welsh Cuisine, Scenic Views"
+      },
+      {
+        "name": "The Canal House",
+        "slug": "the-canal-house",
+        "address": "Canal Wharf, Brecon LD3 7EW",
+        "lat": 51.945,
+        "lng": -3.391,
+        "description": "Located right on the canal in Brecon. Serves a variety of food and drinks, great for a post ride sit down near the water.",
+        "vibe": "Relaxed waterfront",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Canal-side location, outdoor seating"
+      },
+      {
+        "name": "The Honey Cafe",
+        "slug": "the-honey-cafe",
+        "address": "9 High St, Brecon LD3 7AL",
+        "lat": 51.945,
+        "lng": -3.39,
+        "description": "Small, friendly cafe in Brecon serving delicious homemade cakes, light lunches, and excellent coffee. A great option for a quick refuel.",
+        "vibe": "Cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Homemade cakes, great coffee"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "YHA Brecon Beacons",
+        "slug": "yha-brecon-beacons",
+        "description": "Budget-friendly hostel in a rural location, offering stunning views of the Brecon Beacons. Good for groups and solo travellers. Self-catering facilities available.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "The Gap (5km)",
+        "website": "https://www.yha.org.uk/hostel/brecon-beacons"
+      },
+      {
+        "name": "Camping at BikePark Wales",
+        "slug": "camping-bikepark-wales",
+        "description": "Camping available onsite at BikePark Wales. Convenient for early starts and late finishes. Basic facilities available.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "BikePark Wales (onsite)",
+        "website": "https://www.bikeparkwales.com/camping"
+      },
+      {
+        "name": "The George Hotel",
+        "slug": "the-george-hotel-brecon",
+        "description": "Historic hotel in the centre of Brecon, offering comfortable rooms and a restaurant. A good option for those seeking a more traditional hotel experience. Easy access to local amenities.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Brecon town centre trails (1km)",
+        "website": "https://www.thegeorgehotel.wales/"
+      },
+      {
+        "name": "Peterstone Court",
+        "slug": "peterstone-court",
+        "description": "Luxury hotel and spa in a beautiful rural setting. A great option for a relaxing getaway after a long day of riding. Offers fine dining and spa treatments.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Talybont Reservoir (10km)",
+        "website": "https://www.peterstone-court.com/"
+      },
+      {
+        "name": "Ty Newydd Bunkhouse",
+        "slug": "ty-newydd-bunkhouse",
+        "description": "A great affordable option for groups of people wanting to stay together near the Gap. Located at the base of Pen-Y-Fan it's got great access to trails and walks.",
+        "type": "bunkhouse",
+        "priceRange": "£",
+        "nearestSpot": "The Gap (2km)",
+        "website": "https://www.tynywyd-bunkhouse.co.uk/"
+      },
+      {
+        "name": "Llwyn-y-Celyn Guest House",
+        "slug": "llwyn-y-celyn-guest-house",
+        "description": "Located in Talybont on Usk this guest house is great if you want to explore the easier local trails near the water. It is a great base for multiple days exploring the trails.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Talybont Reservoir (1km)",
+        "website": "https://www.llwynycelyn.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Welsh Enduro Series",
+      "type": "race",
+      "monthTypical": "May-October",
+      "description": "A series of enduro races held at various locations across Wales, including the Brecon Beacons. Expect challenging trails and a competitive atmosphere.",
+      "website": "https://www.welshenduroseries.co.uk/",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "registrationCost": 45
+    },
+    {
+      "name": "British Downhill Series",
+      "type": "race",
+      "monthTypical": "April-September",
+      "description": "A national downhill series that sometimes visits BikePark Wales. Watch pros and test your skills on steep, technical courses.",
+      "website": "https://www.britishdownhillseries.co.uk/",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "registrationCost": 65
+    },
+    {
+      "name": "BMCC Gravity Enduro",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "BMCC host a number of mountain bike races and events around Wales.",
+      "website": "https://www.britishmmcc.co.uk/",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "registrationCost": 30
+    }
+  ],
+  "keywords": {
+    "primary": "mountain biking brecon beacons",
+    "secondary": [
+      "brecon beacons mountain bike trails",
+      "bikepark wales",
+      "mountain biking wales",
+      "mtb brecon beacons",
+      "the gap brecon beacons"
+    ],
+    "longTail": [
+      "best mountain bike trails brecon beacons",
+      "guided mountain bike tours brecon beacons",
+      "mountain bike hire brecon beacons",
+      "mountain biking talybont reservoir",
+      "mountain biking black mountains",
+      "bikepark wales trail map",
+      "beginner mountain bike trails brecon beacons",
+      "challenging mountain bike routes brecon beacons",
+      "mountain biking near brecon",
+      "family mountain bike rides brecon beacons",
+      "the gap mountain bike route guide",
+      "mountain biking accommodation brecon beacons"
+    ],
+    "localIntent": [
+      "mountain biking near brecon",
+      "mountain biking near merthyr tydfil",
+      "mountain biking near talybont-on-usk",
+      "mountain biking near hay-on-wye",
+      "mountain biking near llandovery"
+    ],
+    "commercialIntent": [
+      "mountain bike hire brecon beacons",
+      "guided mountain bike tours brecon beacons",
+      "bikepark wales prices",
+      "book mountain biking brecon beacons",
+      "mountain biking brecon beacons price"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "snowdonia",
+        "label": "Mountain Biking in Snowdonia"
+      },
+      {
+        "regionSlug": "cardiff",
+        "label": "Mountain Biking in Cardiff"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Brecon Beacons"
+      },
+      {
+        "activityTypeSlug": "canyoning",
+        "label": "Canyoning in Brecon Beacons"
+      },
+      {
+        "activityTypeSlug": "climbing",
+        "label": "Climbing in Brecon Beacons"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "BikePark Wales",
+      "type": "venue",
+      "category": "activity_provider",
+      "address": "Gethin Woodland Centre, Abercanaid, Merthyr Tydfil",
+      "postcode": "CF48 1YZ",
+      "lat": 51.778,
+      "lng": -3.366,
+      "phone": "01443 836455",
+      "website": "https://www.bikeparkwales.com/",
+      "googleRating": 4.7,
+      "reviewCount": 2500,
+      "description": "The UK's premier mountain bike destination offering a variety of trails for all skill levels.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "trail access",
+        "uplift service",
+        "bike rental",
+        "cafe",
+        "shop",
+        "coaching"
+      ],
+      "priceRange": "££",
+      "notes": "A must-visit for any serious mountain biker in South Wales.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Black Mountain Adventure",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Blaenau, Llangorse, Brecon",
+      "postcode": "LD3 7YP",
+      "lat": 51.935,
+      "lng": -3.243,
+      "phone": "01874 730029",
+      "website": "https://www.blackmountainadventure.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 150,
+      "description": "Offers guided mountain biking adventures and other outdoor activities in the Brecon Beacons.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "guided tours",
+        "skills courses",
+        "group bookings"
+      ],
+      "priceRange": "££",
+      "notes": "Provides bespoke mountain biking experiences for various skill levels.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Brecon Bikes",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 6, The Watton, Brecon",
+      "postcode": "LD3 7EG",
+      "lat": 51.949,
+      "lng": -3.393,
+      "phone": "01874 622445",
+      "website": "http://www.breconbikes.com/",
+      "googleRating": 4.6,
+      "reviewCount": 80,
+      "description": "A local bike shop offering sales, repairs, and rentals, specializing in mountain bikes.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "bike sales",
+        "bike repairs",
+        "bike rental",
+        "accessories"
+      ],
+      "priceRange": "££",
+      "notes": "A great place for local advice and bike maintenance.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Biped Cycles (Brecon)",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Lion Street, Brecon",
+      "postcode": "LD3 7HY",
+      "lat": 51.951,
+      "lng": -3.391,
+      "phone": "01874 611515",
+      "website": "https://bipedcycles.co.uk/",
+      "googleRating": 4.7,
+      "reviewCount": 65,
+      "description": "Bike shop located in Brecon providing cycle sales, repairs and services.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "bike sales",
+        "bike repairs",
+        "bike rental",
+        "accessories"
+      ],
+      "priceRange": "££",
+      "notes": "Well established business, offering a range of cycles and accessories",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Star Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Talybont-on-Usk, Brecon",
+      "postcode": "LD3 7YQ",
+      "lat": 51.872,
+      "lng": -3.299,
+      "phone": "01874 676635",
+      "website": "https://www.starinntalybont.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 300,
+      "description": "A traditional pub in Talybont-on-Usk, a great place to relax after a ride.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Popular with cyclists, offering good food and a welcoming atmosphere.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "White Hart",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "2 Lion St, Brecon",
+      "postcode": "LD3 7AY",
+      "lat": 51.951,
+      "lng": -3.391,
+      "phone": "01874 622000",
+      "website": "https://www.sabrain.com/white-hart-hotel-brecon",
+      "googleRating": 4.2,
+      "reviewCount": 250,
+      "description": "A hotel and pub in the centre of Brecon, suitable for refreshments after riding.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Conveniently located in Brecon town.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "The Felin Fach Griffin",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Felin Fach, Brecon",
+      "postcode": "LD3 0UD",
+      "lat": 52.084,
+      "lng": -3.354,
+      "phone": "01874 620111",
+      "website": "https://eatdrinksleep.ltd.uk/felin-fach-griffin/",
+      "googleRating": 4.5,
+      "reviewCount": 600,
+      "description": "A stylish pub with rooms offering delicious food and a relaxed atmosphere.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "£££",
+      "notes": "A bit more upmarket, but a great place to celebrate a successful ride.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "BikePark Wales Cafe",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Gethin Woodland Centre, Abercanaid, Merthyr Tydfil",
+      "postcode": "CF48 1YZ",
+      "lat": 51.778,
+      "lng": -3.366,
+      "phone": null,
+      "website": "https://www.bikeparkwales.com/",
+      "googleRating": 4.3,
+      "reviewCount": 150,
+      "description": "The cafe at BikePark Wales offering a range of refreshments.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "Convenient for riders at BikePark Wales.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Nantyffin Cider Mill Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Llandefalle, Brecon",
+      "postcode": "LD3 0ND",
+      "lat": 51.969,
+      "lng": -3.442,
+      "phone": "01874 620883",
+      "website": "https://www.nantyffin.com/",
+      "googleRating": 4.6,
+      "reviewCount": 400,
+      "description": "A traditional inn known for its cider and good food.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "A good choice for a hearty meal and local cider after a ride.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Adventure Britain",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "The Old Methodist Chapel, Pontneddfechan, Glynneath",
+      "postcode": "SA11 5NR",
+      "lat": 51.757,
+      "lng": -3.607,
+      "phone": "01639 722030",
+      "website": "https://www.adventurebritain.com/",
+      "googleRating": 4.8,
+      "reviewCount": 270,
+      "description": "Provides a variety of adventure activities, including mountain biking, in the Brecon Beacons.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "guided tours",
+        "skills courses",
+        "group bookings"
+      ],
+      "priceRange": "££",
+      "notes": "Offers a range of guided mountain biking experiences.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Adventures Wales",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Dan Yr Ogof, Abercrave, Swansea",
+      "postcode": "SA9 1GS",
+      "lat": 51.776,
+      "lng": -3.597,
+      "phone": "01639 730800",
+      "website": "https://adventureswales.co.uk/",
+      "googleRating": 5.0,
+      "reviewCount": 120,
+      "description": "Offers various adventure activities, including mountain biking sessions.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "guided tours",
+        "multi-activity packages"
+      ],
+      "priceRange": "££",
+      "notes": "Good for group bookings and multi-activity days.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Llangorse Multi Activity Centre",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Llangorse Lake, Brecon",
+      "postcode": "LD3 7TR",
+      "lat": 51.939,
+      "lng": -3.241,
+      "phone": "01874 658271",
+      "website": "https://www.llangorselake.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 320,
+      "description": "Offers a wide range of outdoor activities, including mountain biking trails.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "trail access",
+        "bike rental",
+        "activity packages"
+      ],
+      "priceRange": "££",
+      "notes": "Great for families and those looking for a variety of activities.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Cwmcarn Trail Centre",
+      "type": "venue",
+      "category": "activity_provider",
+      "address": "Cwmcarn Forest Drive, Cwmcarn, Crosskeys",
+      "postcode": "NP11 7FA",
+      "lat": 51.646,
+      "lng": -3.173,
+      "phone": null,
+      "website": "https://naturalresources.wales/days-out/places-to-visit/south-east-wales/cwmcarn-forest/?lang=en",
+      "googleRating": 4.6,
+      "reviewCount": 1200,
+      "description": "Trail centre with challenging downhill trails in a beautiful forest.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "trail access",
+        "bike wash"
+      ],
+      "priceRange": "£",
+      "notes": "Although a little drive from the Brecon Beacons, the venue is often considered part of a mountain-biking trip.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Afan Forest Park",
+      "type": "venue",
+      "category": "activity_provider",
+      "address": "Afan Forest Park Visitor Centre, Cynonville, Port Talbot",
+      "postcode": "SA13 3NL",
+      "lat": 51.607,
+      "lng": -3.708,
+      "phone": "0300 065 3000",
+      "website": "https://naturalresources.wales/days-out/places-to-visit/south-west-wales/afan-forest-park/?lang=en",
+      "googleRating": 4.5,
+      "reviewCount": 1800,
+      "description": "Home to multiple world-class mountain biking trails.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "trail access",
+        "cafe",
+        "bike shop",
+        "bike hire"
+      ],
+      "priceRange": "£",
+      "notes": "Another riding location a little drive away, with high-quality tracks.",
+      "inDatabase": false,
+      "priority": "medium"
+    }
+  ]
+}

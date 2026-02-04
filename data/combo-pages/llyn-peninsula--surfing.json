@@ -1,0 +1,795 @@
+{
+  "regionSlug": "llyn-peninsula",
+  "activityTypeSlug": "surfing",
+  "title": "Surfing in Llŷn Peninsula",
+  "strapline": "Catch consistent swells on a Welsh peninsula that's quieter than Gower.",
+  "metaTitle": "Surfing Llyn Peninsula | Adventure Wales",
+  "metaDescription": "Discover uncrowded waves and stunning scenery. Your guide to surfing Llyn Peninsula: spots, schools, gear, and local tips.",
+  "heroAlt": "Surfer riding a wave at Porth Neigwl (Hell's Mouth) on the Llŷn Peninsula",
+  "introduction": "Let's be honest, the Llŷn Peninsula isn't exactly Bali. But if you're after consistent, punchy swells without the Gower crowds, you've come to the right place. This corner of North Wales offers a surprising variety of breaks, from beginner-friendly beachies to the legendary power of Porth Neigwl (Hell's Mouth). \n\nThe beauty of surfing the Llŷn Peninsula is its rugged charm. You won't find perfect point breaks peeling for days, but you *will* find empty peaks, stunning coastal scenery, and a proper Welsh welcome. Conditions can be fickle – you'll need to keep an eye on the forecasts and be prepared to chase the swell. But that's part of the adventure, right?\n\nWhile summer sees the most sunshine and warmest water, the dedicated surfer knows that autumn and winter bring the biggest, most consistent swells. Just be prepared for some seriously bracing water temperatures! The **surfing Llyn Peninsula** scene is small but passionate, with local surf schools offering lessons for all levels. Just remember to respect the locals and leave no trace. And maybe learn a few Welsh phrases – it goes a long way!\n\n**Surfing the Llŷn Peninsula** is perfect for intermediate surfers looking to improve and explore, or for beginners who don't mind a bit of a drive to escape the crowds. Experts can find challenging conditions at Hell's Mouth and Porth Ceiriad on their day. The main challenge is definitely the unpredictable weather and the water temperature outside of the summer months. But the rewards – empty waves and stunning scenery – are well worth it.",
+  "bestSeason": "April-October (wetsuit essential year-round)",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £60 guided",
+  "spots": [
+    {
+      "name": "Porth Neigwl (Hell's Mouth)",
+      "slug": "porth-neigwl-hells-mouth",
+      "description": "The longest sandy beach in North Wales, offering powerful and consistent waves. It's a real swell magnet, picking up almost anything that's going. The south-westerly swells wrap around the peninsula providing awesome conditions when it's on.",
+      "difficulty": "Challenging",
+      "duration": "2-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced surfers, those looking for power and size",
+      "notSuitableFor": "Beginners in strong swells or currents",
+      "bestSeason": "Autumn-Winter",
+      "parking": "Large car park at the beach entrance. Can get busy in summer. £5 all day.",
+      "startPoint": {
+        "name": "Porth Neigwl Car Park",
+        "lat": 52.7879,
+        "lng": -4.4694
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": null,
+      "insiderTip": "Check the backwash off the cliffs at high tide – it can create some unexpected barrels!"
+    },
+    {
+      "name": "Porth Ceiriad",
+      "slug": "porth-ceiriad",
+      "description": "A beautiful cove known for its clean, powerful waves breaking over a reef. It's a shorter wave than Hell's Mouth, but often more hollow. Best at mid to high tide.",
+      "difficulty": "Expert",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced surfers looking for a challenge",
+      "notSuitableFor": "Beginners or those not confident in reef breaks",
+      "bestSeason": "Autumn-Winter",
+      "parking": "Limited parking at the top of the cliffs. Arrive early. Free.",
+      "startPoint": {
+        "name": "Porth Ceiriad Car Park",
+        "lat": 52.8161,
+        "lng": -4.5136
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Walk further along the coast to find the more secluded and challenging left-handers. Bring booties!"
+    },
+    {
+      "name": "Porth Oer (Whistling Sands)",
+      "slug": "porth-oer-whistling-sands",
+      "description": "A small, sheltered beach known for its 'whistling sands'. It's a good option for beginners and longboarders when the swell is smaller. Café right on the beach",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, longboarders, families",
+      "notSuitableFor": "Experienced surfers looking for power",
+      "bestSeason": "Spring-Summer",
+      "parking": "National Trust car park at the beach. Charges apply. Free for members.",
+      "startPoint": {
+        "name": "Porth Oer Car Park",
+        "lat": 52.8557,
+        "lng": -4.5806
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": null,
+      "insiderTip": "The café does amazing ice cream – perfect after a surf. Walk around the headland for even more secluded spots."
+    },
+    {
+      "name": "Abersoch Beach",
+      "slug": "abersoch-beach",
+      "description": "A wide, sandy beach that offers gentle waves. Perfect for learning to surf or SUP. Can get busy in summer with watersports activities.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families, SUP",
+      "notSuitableFor": "Experienced surfers looking for challenging waves",
+      "bestSeason": "Summer",
+      "parking": "Multiple car parks in Abersoch village. Charges apply. Can get very busy in summer.",
+      "startPoint": {
+        "name": "Abersoch Main Beach",
+        "lat": 52.8285,
+        "lng": -4.5235
+      },
+      "estimatedCost": "Free (parking £5-10)",
+      "operatorSlug": null,
+      "insiderTip": "Head to the south end of the beach for slightly cleaner waves. Book parking in advance during peak season."
+    },
+    {
+      "name": "Pwllheli",
+      "slug": "pwllheli",
+      "description": "Located near the marina, Pwllheli beach can offer small, clean waves on its day. It's usually less crowded than Abersoch. Can be good for longboarding and learning.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, longboarders, those looking for a quieter option",
+      "notSuitableFor": "Experienced surfers looking for challenging waves",
+      "bestSeason": "Summer",
+      "parking": "Parking available along the promenade. Charges may apply.",
+      "startPoint": {
+        "name": "Pwllheli Beach",
+        "lat": 52.9202,
+        "lng": -4.4326
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Check the tide times – it works best around mid-tide. The marina sometimes creates a nice little rip current to help you get out back."
+    },
+    {
+      "name": "Aberdaron",
+      "slug": "aberdaron",
+      "description": "A beautiful, sheltered bay at the western tip of the peninsula. It offers gentle waves, especially during the summer months. Great for families and beginner surfers. Watch out for the currents near the headland.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families, those seeking calm waters",
+      "notSuitableFor": "Experienced surfers looking for power or size",
+      "bestSeason": "Summer",
+      "parking": "Car park near the beach. Charges apply.",
+      "startPoint": {
+        "name": "Aberdaron Beach",
+        "lat": 52.8143,
+        "lng": -4.7345
+      },
+      "estimatedCost": "Free (parking £4-6)",
+      "operatorSlug": null,
+      "insiderTip": "Walk along the beach towards the headland for some sheltered spots. The Ty Newydd pub is a must-visit after a surf."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The weather on the Llŷn Peninsula can be unpredictable. Keep an eye on swell forecasts, wind direction (offshore is best), and tide times. Strong winds can quickly turn a good surf into a choppy mess.",
+    "weatherLinks": [
+      {
+        "name": "Magicseaweed",
+        "url": "https://magicseaweed.com/Llyn-Peninsula-Surf-Report/395/"
+      },
+      {
+        "name": "Windguru",
+        "url": "https://www.windguru.cz/3265"
+      }
+    ],
+    "gearChecklist": [
+      "Wetsuit (5mm recommended year-round)",
+      "Surfboard appropriate for your skill level",
+      "Leash – don't be a kook!",
+      "Wax – keep your feet on the board",
+      "Towel – drying off is essential",
+      "Warm clothes for after the surf",
+      "Waterproof bag for your gear",
+      "Sunscreen – even on cloudy days",
+      "Snacks and water – stay energised",
+      "Booties, gloves, and hood (winter months)"
+    ],
+    "gearHire": [
+      {
+        "name": "West Coast Surf",
+        "location": "Abersoch",
+        "url": "https://www.westcoastsurf.co.uk/"
+      },
+      {
+        "name": "Abersoch Watersports",
+        "location": "Abersoch",
+        "url": "http://www.abersochwatersports.co.uk/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5-6h",
+          "route": "Via M6 and A55"
+        },
+        {
+          "from": "Manchester",
+          "duration": "3-4h",
+          "route": "Via M56 and A55"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "4-5h",
+          "route": "Via M6 and A55"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "4-5h",
+          "route": "Via A470 and A55"
+        }
+      ],
+      "publicTransport": "The nearest train station is Pwllheli. From there, you can take a bus to Abersoch or Aberdaron. The Llŷn Peninsula is best explored by car though.",
+      "parkingTips": "Parking can be limited, especially in the summer months. Arrive early, be prepared to pay, and respect local residents."
+    },
+    "safety": "Be aware of rip currents, especially at Hell's Mouth. Never surf alone. Check the conditions before you go. Wear appropriate clothing for the water temperature. In an emergency, call 999 and ask for the Coastguard. Respect the ocean and other surfers."
+  },
+  "faqs": [
+    {
+      "question": "What is the best time of year for surfing Llyn Peninsula?",
+      "answer": "While summer offers warmer water, autumn and winter generally provide the most consistent swells. April-October offers a good balance of reasonable weather and surfable conditions, but a wetsuit is essential year-round."
+    },
+    {
+      "question": "Is Llyn Peninsula surfing suitable for beginners?",
+      "answer": "Yes, spots like Abersoch Beach and Porth Oer (Whistling Sands) are perfect for beginners, especially in calmer conditions. Surf schools like Hell's Mouth Surf School in Abersoch offer lessons for all levels."
+    },
+    {
+      "question": "Where can I rent surf gear on the Llyn Peninsula?",
+      "answer": "You can rent surf gear from West Coast Surf and Abersoch Watersports, both located in Abersoch. They offer a range of surfboards and wetsuits for hire."
+    },
+    {
+      "question": "What is Hell's Mouth (Porth Neigwl) like for surfing?",
+      "answer": "Hell's Mouth is a long, exposed beach that picks up a lot of swell. It's known for its powerful waves and can be challenging, even for experienced surfers. Be aware of strong currents and backwash, especially at high tide."
+    },
+    {
+      "question": "Are there any surf shops on the Llyn Peninsula?",
+      "answer": "Yes, West Coast Surf in Abersoch is a well-stocked surf shop offering surfboards, wetsuits, accessories, and repairs. Abersoch Watersports also sells surf gear."
+    },
+    {
+      "question": "What water temperature can I expect when surfing on the Llyn Peninsula?",
+      "answer": "Water temperatures range from around 8-12°C in winter to 14-18°C in summer. A 5mm wetsuit is recommended year-round, with booties, gloves, and a hood essential during the winter months."
+    },
+    {
+      "question": "Where can I find surf lessons on the Llyn Peninsula?",
+      "answer": "Hell's Mouth Surf School, located in Abersoch, is a well-regarded surf school offering lessons for all abilities. Abersoch Watersports may also offer surf lessons, check their website for current availability."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "West Coast Surf",
+        "slug": "west-coast-surf",
+        "address": "Unit 3, The Landings, Abersoch, Pwllheli LL53 7EB",
+        "lat": 52.8265,
+        "lng": -4.5182,
+        "description": "A well-stocked surf shop offering a wide range of surfboards, wetsuits, accessories, and repairs. They also provide surf lessons.",
+        "website": "https://www.westcoastsurf.co.uk/",
+        "phone": "01758 713435",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "lessons"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 150
+      },
+      {
+        "name": "Abersoch Watersports",
+        "slug": "abersoch-watersports",
+        "address": "The Harbour, Abersoch, Pwllheli LL53 7AP",
+        "lat": 52.8284,
+        "lng": -4.5196,
+        "description": "Offers a range of watersports equipment and services, including surf gear, SUPs, and boat trips. They also have a shop selling equipment.",
+        "website": "http://www.abersochwatersports.co.uk/",
+        "phone": "01758 712929",
+        "services": [
+          "gear sales",
+          "hire",
+          "lessons",
+          "boat trips"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 120
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Sun Inn",
+        "slug": "the-sun-inn",
+        "address": "Lon Golff, Abersoch, Pwllheli LL53 7EE",
+        "lat": 52.8275,
+        "lng": -4.5151,
+        "description": "A traditional pub in the heart of Abersoch, offering hearty meals and a wide selection of drinks. Popular with surfers and locals alike.",
+        "vibe": "Surfer hangout, cosy pub",
+        "priceRange": "££",
+        "website": "https://www.thesuninnabersoch.co.uk/",
+        "knownFor": "Hearty pub meals, Real ales"
+      },
+      {
+        "name": "Venetia",
+        "slug": "venetia",
+        "address": "Lon Penrhos, Abersoch, Pwllheli LL53 7EF",
+        "lat": 52.8292,
+        "lng": -4.5217,
+        "description": "A stylish restaurant and bar with a lively atmosphere. Known for its seafood dishes and cocktails.",
+        "vibe": "Modern restaurant, lively bar",
+        "priceRange": "£££",
+        "website": "https://www.venetiaabersoch.com/",
+        "knownFor": "Seafood, Cocktails"
+      },
+      {
+        "name": "The Ship",
+        "slug": "the-ship",
+        "address": "High Street, Abersoch, Pwllheli LL53 7DS",
+        "lat": 52.8278,
+        "lng": -4.5219,
+        "description": "A traditional pub with a relaxed atmosphere. Great for a post-surf pint and some classic pub grub.",
+        "vibe": "Cosy pub, traditional",
+        "priceRange": "££",
+        "website": "null",
+        "knownFor": "Classic pub grub, Local ales"
+      },
+      {
+        "name": "Ty Newydd",
+        "slug": "ty-newydd",
+        "address": "Aberdaron, Pwllheli LL53 8BE",
+        "lat": 52.8146,
+        "lng": -4.7343,
+        "description": "A traditional pub in Aberdaron, right on the beach. Perfect for a pint with a view after a surf.",
+        "vibe": "Beachside pub, traditional",
+        "priceRange": "££",
+        "website": "https://www.tyn.cymru/",
+        "knownFor": "Beachfront location, Local ales"
+      },
+      {
+        "name": "Coconut Kitchen",
+        "slug": "coconut-kitchen",
+        "address": "Abersoch, Pwllheli LL53",
+        "lat": 52.8273,
+        "lng": -4.521,
+        "description": "A taste of Thailand in Abersoch! Delicious and authentic Thai cuisine that's great after a surf session.",
+        "vibe": "Casual, Thai Restaurant",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Authentic Thai Food"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "The Porth Tocyn Hotel",
+        "slug": "porth-tocyn-hotel",
+        "description": "A luxurious hotel with stunning views of Hell's Mouth. Perfect for a relaxing stay after a day of surfing.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Porth Neigwl (Hell's Mouth) 10 minutes drive",
+        "website": "https://www.porthtocynhotel.com/"
+      },
+      {
+        "name": "Bryn Bach Log Cabins",
+        "slug": "bryn-bach-log-cabins",
+        "description": "Self-catering log cabins in a peaceful rural setting. A great base for exploring the Llŷn Peninsula and its surf spots.",
+        "type": "glamping",
+        "priceRange": "££",
+        "nearestSpot": "Pwllheli 15 minutes drive",
+        "website": "https://www.brynbachlogcabins.co.uk/"
+      },
+      {
+        "name": "Abersoch Camping & Caravanning Club Site",
+        "slug": "abersoch-camping-caravanning-club-site",
+        "description": "A well-maintained campsite close to Abersoch beach. A budget-friendly option for surfers.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Abersoch Beach 5 minutes drive",
+        "website": "https://www.campingandcaravanningclub.co.uk/sitefinder/sites/wales/gwynedd/abersoch/"
+      },
+      {
+        "name": "Plas Gwyn Caravan & Camping Park",
+        "slug": "plas-gwyn-caravan-camping-park",
+        "description": "Offers caravan and camping pitches with sea views. Good location for accessing Hell's Mouth and Porth Ceiriad.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Porth Neigwl (Hell's Mouth) 15 minutes drive",
+        "website": "https://www.plasgwyn.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Abersoch Wakestock (Historically)",
+      "type": "festival",
+      "monthTypical": "July",
+      "description": "Historically a watersports festival held annually in Abersoch, though it has changed format over the years. Usually featured wakeboarding and music.",
+      "website": "null",
+      "relevantActivities": [
+        "surfing",
+        "wakeboarding",
+        "SUP"
+      ],
+      "registrationCost": null
+    }
+  ],
+  "keywords": {
+    "primary": "surfing llyn peninsula",
+    "secondary": [
+      "surf spots llyn peninsula",
+      "llyn peninsula surf school",
+      "abersoch surfing",
+      "hells mouth surfing",
+      "surfing wales"
+    ],
+    "longTail": [
+      "best surf spots in llyn peninsula for beginners",
+      "surf forecast llyn peninsula",
+      "surf lessons abersoch prices",
+      "surfing holidays llyn peninsula",
+      "llyn peninsula surf report magicseaweed",
+      "best time to surf hells mouth",
+      "wetsuit hire abersoch",
+      "surfboard rental llyn peninsula",
+      "accommodation near hells mouth surfing",
+      "surf camp llyn peninsula",
+      "surfing aberdaron",
+      "surf school aberdaron"
+    ],
+    "localIntent": [
+      "surfing near Abersoch",
+      "surf schools near Pwllheli",
+      "surf shops near Aberdaron",
+      "surfing near Llanbedrog",
+      "surf hire Abersoch"
+    ],
+    "commercialIntent": [
+      "surf lessons llyn peninsula price",
+      "hire surfboard abersoch",
+      "best wetsuit for surfing llyn peninsula",
+      "book surf lesson abersoch",
+      "cheap surf camp llyn peninsula"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "gower-peninsula",
+        "label": "Surfing in Gower Peninsula"
+      },
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Surfing in Pembrokeshire"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "coasteering",
+        "label": "Coasteering in Llŷn Peninsula"
+      },
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Llŷn Peninsula"
+      },
+      {
+        "activityTypeSlug": "kayaking",
+        "label": "Kayaking in Llŷn Peninsula"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Hell's Mouth Surf School",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Hell's Mouth Beach, Llanengan, Pwllheli LL53 7LG",
+      "postcode": "LL53 7LG",
+      "lat": 52.807,
+      "lng": -4.581,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.8,
+      "reviewCount": 75,
+      "description": "Surf school offering lessons and equipment hire at Hell's Mouth, a popular surfing beach.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "surfing lessons",
+        "surfboard hire",
+        "wetsuit hire",
+        "group lessons",
+        "private lessons"
+      ],
+      "priceRange": "££",
+      "notes": "Known surf school at a prime surfing location.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Abersoch Watersports",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "The Harbour, Abersoch, Pwllheli LL53 7AP",
+      "postcode": "LL53 7AP",
+      "lat": 52.828,
+      "lng": -4.506,
+      "phone": "01758 713434",
+      "website": "https://www.abersochwatersports.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 120,
+      "description": "Offers a range of watersports activities and lessons, including surfing, paddleboarding, and powerboating.",
+      "relevantActivities": [
+        "surfing",
+        "paddleboarding"
+      ],
+      "services": [
+        "surfing lessons",
+        "surfboard hire",
+        "wetsuit hire",
+        "paddleboarding",
+        "powerboat trips"
+      ],
+      "priceRange": "££",
+      "notes": "Provides a variety of water sports, some surfing options.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "West Coast Surf",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 3, The Brickworks, Abersoch, Pwllheli LL53 7AP",
+      "postcode": "LL53 7AP",
+      "lat": 52.829,
+      "lng": -4.509,
+      "phone": "01758 712008",
+      "website": "https://westcoastsurf.co.uk/",
+      "googleRating": 4.7,
+      "reviewCount": 80,
+      "description": "Surf shop selling surfboards, wetsuits, and accessories. Also offers surf hire.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "surfboard sales",
+        "wetsuit sales",
+        "accessories",
+        "surfboard hire",
+        "wetsuit hire"
+      ],
+      "priceRange": "££",
+      "notes": "Essential shop for surfers in Abersoch, near good surfing location",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "The Sun Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Lon Pont Morgan, Abersoch, Pwllheli LL53 7EF",
+      "postcode": "LL53 7EF",
+      "lat": 52.83,
+      "lng": -4.504,
+      "phone": "01758 712000",
+      "website": "https://www.suninnabersoch.co.uk/",
+      "googleRating": 4.3,
+      "reviewCount": 600,
+      "description": "Traditional pub serving food and drinks in Abersoch. Great for post-surf relaxation.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "pub",
+        "restaurant"
+      ],
+      "priceRange": "££",
+      "notes": "Great spot for food and drink after surfing.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Venetia",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "High Street, Abersoch, Pwllheli LL53 7DS",
+      "postcode": "LL53 7DS",
+      "lat": 52.828,
+      "lng": -4.507,
+      "phone": "01758 712277",
+      "website": null,
+      "googleRating": 4.4,
+      "reviewCount": 250,
+      "description": "Restaurant and bar in the heart of Abersoch. Serves Italian cuisine and cocktails.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "restaurant",
+        "cocktails"
+      ],
+      "priceRange": "££",
+      "notes": "Good food choice for end of the day, more upscale option.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "The Ship Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Lon Golff, Abersoch, Pwllheli LL53 7EH",
+      "postcode": "LL53 7EH",
+      "lat": 52.827,
+      "lng": -4.504,
+      "phone": "01758 712334",
+      "website": null,
+      "googleRating": 4.2,
+      "reviewCount": 400,
+      "description": "A popular pub in Abersoch offering food and drinks, often with live music.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "pub",
+        "live music"
+      ],
+      "priceRange": "££",
+      "notes": "Well known, often busy.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Ty Newydd Hotel",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Aberdaron, Pwllheli LL53 8BE",
+      "postcode": "LL53 8BE",
+      "lat": 52.812,
+      "lng": -4.739,
+      "phone": "01758 760207",
+      "website": "https://www.tynewyddaberdaron.com/",
+      "googleRating": 4.3,
+      "reviewCount": 300,
+      "description": "Hotel and restaurant in Aberdaron, serving locally sourced food with sea views.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "restaurant",
+        "accommodation"
+      ],
+      "priceRange": "£££",
+      "notes": "Further away from Abersoch but worth the trip for some surfers. Good surfing nearby.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Coconut Kitchen",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "High Street, Abersoch, Pwllheli LL53 7DS",
+      "postcode": "LL53 7DS",
+      "lat": 52.828,
+      "lng": -4.507,
+      "phone": "01758 710999",
+      "website": "https://www.coconutkitchenabersoch.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 350,
+      "description": "Thai restaurant in Abersoch. Offering something different in the area.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "restaurant",
+        "thai cuisine"
+      ],
+      "priceRange": "££",
+      "notes": "If you want Thai food.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Porth Neigwl (Hell's Mouth)",
+      "type": "attraction",
+      "category": null,
+      "address": "Llanengan, Pwllheli LL53 7LG",
+      "postcode": "LL53 7LG",
+      "lat": 52.807,
+      "lng": -4.581,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.7,
+      "reviewCount": 1500,
+      "description": "Four-mile long sandy bay that is known for consistent surf breaks, popular with surfers.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [],
+      "priceRange": null,
+      "notes": "Main surfing beach for the Llyn peninsula.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Porth Ceiriad",
+      "type": "attraction",
+      "category": null,
+      "address": "Ceiriad, Pwllheli LL53 8HD",
+      "postcode": "LL53 8HD",
+      "lat": 52.841,
+      "lng": -4.445,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.6,
+      "reviewCount": 800,
+      "description": "Another beach offering great surfing, with powerful waves.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [],
+      "priceRange": null,
+      "notes": "Important surfing beach, good for more experienced surfers.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Abersoch Main Beach",
+      "type": "attraction",
+      "category": null,
+      "address": "Abersoch, Pwllheli LL53 7AP",
+      "postcode": "LL53 7AP",
+      "lat": 52.826,
+      "lng": -4.508,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.5,
+      "reviewCount": 1200,
+      "description": "Sandy beach located in the popular tourist destination of Abersoch, known for various watersports activities.",
+      "relevantActivities": [
+        "surfing",
+        "paddleboarding"
+      ],
+      "services": [],
+      "priceRange": null,
+      "notes": "Popular beach, can be crowded. Good for beginners in the right conditions.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Criccieth Surf Life Saving Club",
+      "type": "club",
+      "category": null,
+      "address": "Criccieth Beach, Criccieth LL52 0HD",
+      "postcode": "LL52 0HD",
+      "lat": 52.921,
+      "lng": -4.226,
+      "phone": null,
+      "website": null,
+      "googleRating": null,
+      "reviewCount": null,
+      "description": "Volunteer organization providing beach safety and lifesaving services.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "lifesaving",
+        "beach safety"
+      ],
+      "priceRange": null,
+      "notes": "Provides crucial safety and lifesaving services in the area.",
+      "inDatabase": false,
+      "priority": "low"
+    },
+    {
+      "name": "Glasfryn Parc Activity Centre",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Glasfryn Parc, Pwllheli LL53 6HX",
+      "postcode": "LL53 6HX",
+      "lat": 52.903,
+      "lng": -4.393,
+      "phone": "01766 810000",
+      "website": "https://www.glasfryn.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 1200,
+      "description": "Activity centre with a range of activities, including wakeboarding on a lake which can improve surfing skills.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "wakeboarding",
+        "karting",
+        "archery",
+        "paintballing"
+      ],
+      "priceRange": "££",
+      "notes": "Though not surfing directly, relevant for skills development and other activities.",
+      "inDatabase": false,
+      "priority": "low"
+    }
+  ]
+}

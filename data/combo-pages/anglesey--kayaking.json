@@ -1,0 +1,799 @@
+{
+  "regionSlug": "anglesey",
+  "activityTypeSlug": "kayaking",
+  "title": "Kayaking in Anglesey",
+  "strapline": "Paddle beneath dramatic cliffs and explore hidden coves – Anglesey kayaking is wild!",
+  "metaTitle": "Kayaking Anglesey | Sea Kayaking & Menai Strait | Adventure Wales",
+  "metaDescription": "Discover the best kayaking in Anglesey. Explore the Menai Strait, South Stack, Puffin Island and more. Guided trips & gear hire info.",
+  "heroAlt": "Sea kayakers paddling beneath the cliffs of South Stack, Anglesey",
+  "introduction": "Anglesey. Ynys Môn. This island, separated from mainland Wales by the infamous Menai Strait, is a kayaking paradise. Forget generic paddling; here, you're facing dramatic cliffs, exploring hidden caves teeming with wildlife, and potentially battling (respectfully!) tidal races that'll test your mettle. Kayaking Anglesey offers something for everyone, from calm family paddles on sheltered bays to adrenaline-pumping sea kayaking expeditions around South Stack. \n\nThe Menai Strait, a narrow channel separating Anglesey from mainland Wales, offers sheltered waters perfect for beginners and intermediate kayakers. The tidal flow can be strong, though, so planning is crucial! More experienced paddlers crave the open sea around South Stack, with its towering cliffs, seabird colonies (puffins galore!), and challenging conditions. Puffin Island is another hotspot, accessible from various launch points, though crossing open water requires experience and favourable weather. \n\nAnglesey's coastline is incredibly diverse, with sandy beaches, rocky headlands, and hidden coves waiting to be discovered. The island's strong tides and exposed location mean conditions can change rapidly, so it's essential to check the weather forecast and be prepared for anything. This isn't a place to underestimate the power of the sea. But with the right preparation and respect, kayaking in Anglesey is an unforgettable adventure. Whether you're a seasoned sea kayaker or a complete novice, Anglesey has something to offer. But be warned – it's addictive!",
+  "bestSeason": "May-September",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Menai Strait (Swelly Rocks to Menai Bridge)",
+      "slug": "menai-strait-swelly-rocks-to-menai-bridge",
+      "description": "A classic paddle along the Menai Strait, passing under the iconic Menai Suspension Bridge and Britannia Bridge. The Swelly Rocks section can be exciting (or terrifying!) at high tide with strong tidal currents and whirlpools. Check tide times carefully! Look out for seals and seabirds.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced beginners and intermediate kayakers wanting a challenging but relatively sheltered paddle.",
+      "notSuitableFor": "Complete beginners without guidance or those uncomfortable in strong tidal currents.",
+      "bestSeason": "May-September",
+      "parking": "Plenty of parking in Menai Bridge town (pay and display). Alternatively, park near Church Island and paddle against the tide initially.",
+      "startPoint": {
+        "name": "Church Island",
+        "lat": 53.226,
+        "lng": -4.191
+      },
+      "estimatedCost": "Free (parking £3-5) or £50pp guided",
+      "operatorSlug": "plas-menai",
+      "insiderTip": "Paddle at slack tide for a more relaxed experience. Stop at the Gazelle Hotel in Menai Bridge for a post-paddle pint with a view."
+    },
+    {
+      "name": "South Stack (Circular Route)",
+      "slug": "south-stack-circular-route",
+      "description": "A demanding but rewarding paddle around South Stack, past the iconic lighthouse and under towering sea cliffs. Expect challenging conditions, strong currents, and potential swell. This is serious sea kayaking and should only be attempted by experienced paddlers with appropriate safety gear. You'll see thousands of seabirds, including puffins (in season).",
+      "difficulty": "Expert",
+      "duration": "4-6 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced sea kayakers with excellent navigation and rescue skills.",
+      "notSuitableFor": "Beginners, intermediate kayakers, or anyone prone to seasickness.",
+      "bestSeason": "May-July (Puffin season), weather permitting",
+      "parking": "South Stack RSPB visitor centre car park (pay and display). Can get very busy, arrive early.",
+      "startPoint": {
+        "name": "South Stack Car Park",
+        "lat": 53.308,
+        "lng": -4.795
+      },
+      "estimatedCost": "Free (parking £5-7) or £80pp guided",
+      "operatorSlug": "anglesey-adventures",
+      "insiderTip": "Check the sea state forecast (not just the weather forecast) before setting out. The wind-against-tide effect can create very challenging conditions."
+    },
+    {
+      "name": "Puffin Island (From Penmon Point)",
+      "slug": "puffin-island-from-penmon-point",
+      "description": "Paddle across to Puffin Island from Penmon Point, a stunning but exposed crossing. The island is a haven for seabirds, including, you guessed it, puffins! Be aware of strong tidal currents and potentially choppy waters. Landing on the island itself is prohibited during the nesting season. Best viewed from the water.",
+      "difficulty": "Challenging",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced kayakers comfortable with open water crossings.",
+      "notSuitableFor": "Beginners or anyone without good navigation skills.",
+      "bestSeason": "May-July (Puffin season), weather permitting",
+      "parking": "Pay and display parking at Penmon Point. Can get busy, especially during peak season.",
+      "startPoint": {
+        "name": "Penmon Point",
+        "lat": 53.315,
+        "lng": -4.022
+      },
+      "estimatedCost": "Free (parking £3-5) or £65pp guided",
+      "operatorSlug": "anglesey-adventures",
+      "insiderTip": "Bring binoculars for better birdwatching. Time your paddle to avoid peak tidal flow."
+    },
+    {
+      "name": "Rhoscolyn to Church Bay",
+      "slug": "rhoscolyn-to-church-bay",
+      "description": "A coastal paddle offering stunning views of dramatic cliffs and secluded bays. Rhoscolyn is known for its rock formations and caves. Church Bay is a beautiful sandy beach with a cafe. This route is exposed to westerly winds and swell, so check the forecast carefully. Great for spotting seals.",
+      "difficulty": "Moderate",
+      "duration": "4-5 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediate kayakers comfortable in moderate sea conditions.",
+      "notSuitableFor": "Beginners in windy conditions or large swell.",
+      "bestSeason": "May-September",
+      "parking": "Parking available at Rhoscolyn beach and Church Bay (limited spaces, especially in summer).",
+      "startPoint": {
+        "name": "Rhoscolyn Beach",
+        "lat": 53.243,
+        "lng": -4.595
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Stop at the Wavecrest Cafe in Rhoscolyn for a well-deserved coffee and cake."
+    },
+    {
+      "name": "Aberffraw Estuary",
+      "slug": "aberffraw-estuary",
+      "description": "A gentle paddle up the Aberffraw estuary, perfect for beginners and families. The estuary is sheltered and offers calm waters, ideal for spotting wildlife. Explore the sandy dunes and enjoy the peaceful scenery. You can even paddle up to the ruined royal court of Aberffraw.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families with young children, and anyone looking for a relaxing paddle.",
+      "notSuitableFor": "Experienced kayakers seeking a challenging adventure.",
+      "bestSeason": "April-October",
+      "parking": "Limited parking near Aberffraw beach. Arrive early, especially during peak season.",
+      "startPoint": {
+        "name": "Aberffraw Beach",
+        "lat": 53.231,
+        "lng": -4.464
+      },
+      "estimatedCost": "Free (parking free)",
+      "operatorSlug": null,
+      "insiderTip": "Bring a picnic and enjoy lunch on the beach. Watch out for the shallow water at low tide."
+    },
+    {
+      "name": "Trearddur Bay",
+      "slug": "trearddur-bay",
+      "description": "Trearddur Bay offers a variety of kayaking options, from exploring the coastline to paddling out to nearby islands. The bay is relatively sheltered, making it suitable for beginners in calm conditions. However, be aware of the exposed nature of the coast beyond the bay.",
+      "difficulty": "Easy to Moderate",
+      "duration": "2-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners in calm conditions and intermediate kayakers looking for a scenic paddle.",
+      "notSuitableFor": "Beginners in windy conditions or large swell.",
+      "bestSeason": "May-September",
+      "parking": "Ample parking available in Trearddur Bay (pay and display).",
+      "startPoint": {
+        "name": "Trearddur Bay Beach",
+        "lat": 53.271,
+        "lng": -4.604
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Hire a kayak from one of the local shops and explore the coastline at your own pace."
+    },
+    {
+      "name": "Church Bay",
+      "slug": "church-bay",
+      "description": "A sheltered bay perfect for a relaxed paddle, especially good for families. The calm waters make it ideal for beginners. There's a lovely cafe right on the beach for post-paddle refreshments. Can be busy in summer.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families, and anyone looking for a gentle introduction to kayaking.",
+      "notSuitableFor": "Experienced kayakers seeking a challenging adventure.",
+      "bestSeason": "May-September",
+      "parking": "Limited parking in Church Bay. Arrive early.",
+      "startPoint": {
+        "name": "Church Bay Beach",
+        "lat": 53.368,
+        "lng": -4.569
+      },
+      "estimatedCost": "Free (parking £2-3)",
+      "operatorSlug": null,
+      "insiderTip": "Enjoy a bowl of lobster bisque at the Wavecrest Cafe – it's a Church Bay institution."
+    },
+    {
+      "name": "Newborough Beach",
+      "slug": "newborough-beach",
+      "description": "Paddle along the vast sandy beach of Newborough, with stunning views of Snowdonia. The waters are generally calm, but the beach is exposed to the wind, so check the forecast. A great place to spot wildlife, including seals and seabirds. You can paddle out to Llanddwyn Island at low tide (be aware of the tides!).",
+      "difficulty": "Easy to Moderate",
+      "duration": "2-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners in calm conditions and intermediate kayakers looking for a scenic paddle.",
+      "notSuitableFor": "Beginners in windy conditions.",
+      "bestSeason": "April-October",
+      "parking": "Large car park at Newborough Forest (pay and display). A short walk to the beach.",
+      "startPoint": {
+        "name": "Newborough Beach Car Park",
+        "lat": 53.167,
+        "lng": -4.385
+      },
+      "estimatedCost": "Free (parking £5-7)",
+      "operatorSlug": null,
+      "insiderTip": "Combine your paddle with a walk through Newborough Forest and visit Llanddwyn Island (check tide times!)."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Anglesey's coastal weather can be unpredictable. Strong winds, particularly from the west and southwest, can create challenging conditions. Check the forecast carefully before heading out, and be prepared for rapid changes in weather. Sea state forecasts are crucial for exposed areas like South Stack.",
+    "weatherLinks": [
+      {
+        "name": "Met Office",
+        "url": "https://www.metoffice.gov.uk/"
+      },
+      {
+        "name": "Windguru",
+        "url": "https://www.windguru.cz/"
+      },
+      {
+        "name": "Magicseaweed",
+        "url": "https://magicseaweed.com/"
+      }
+    ],
+    "gearChecklist": [
+      "Sea Kayak (or suitable touring kayak)",
+      "Paddle – choose the right length for your height",
+      "Buoyancy Aid (BA) – absolutely essential, even in calm waters",
+      "Waterproof Cagoule – even on sunny days, the weather can change quickly",
+      "Waterproof Trousers or Leggings – keep you warm and dry",
+      "Thermal Base Layers – essential for warmth, even in summer",
+      "Dry Bag – for storing valuables and spare clothing",
+      "Waterproof Phone Case – to keep your phone safe and dry",
+      "Sunscreen & Hat – protect yourself from the sun",
+      "Water & Snacks – stay hydrated and energized",
+      "Navigation (Map & Compass or GPS) – essential for longer trips",
+      "Whistle – for attracting attention in an emergency"
+    ],
+    "gearHire": [
+      {
+        "name": "Anglesey Adventures",
+        "location": "Various locations",
+        "url": "https://www.angleseyadventures.com/"
+      },
+      {
+        "name": "Plas Menai",
+        "location": "Caernarfon (near Menai Bridge)",
+        "url": "https://www.plasmenai.co.uk/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5h 30m",
+          "route": "Via M6 and A55"
+        },
+        {
+          "from": "Manchester",
+          "duration": "2h 30m",
+          "route": "Via M56 and A55"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3h 30m",
+          "route": "Via M6 and A55"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "5h",
+          "route": "Via A470 and A55"
+        }
+      ],
+      "publicTransport": "Bangor is the nearest train station. From Bangor, buses run to various towns and villages on Anglesey. The TrawsCymru T2 bus service connects Bangor to Holyhead.",
+      "parkingTips": "Parking can be limited, especially during peak season. Arrive early, and be prepared to pay for parking in most popular areas. Check parking restrictions carefully."
+    },
+    "safety": "Anglesey's coastline can be unforgiving. Always check the weather and sea state forecast before heading out. Be aware of tidal currents and potential swell. Wear appropriate safety gear, including a buoyancy aid. Tell someone where you're going and when you expect to be back. In an emergency, call 999 and ask for the Coastguard."
+  },
+  "faqs": [
+    {
+      "question": "What is the best time of year for kayaking in Anglesey?",
+      "answer": "The best time for kayaking in Anglesey is from May to September. The weather is generally more settled, and the sea is warmer. However, be prepared for changeable conditions at any time of year. Puffin season (May-July) is a particularly popular time to visit."
+    },
+    {
+      "question": "Do I need a permit to kayak in Anglesey?",
+      "answer": "No, you don't need a permit to kayak in Anglesey, but it's always a good idea to check with local authorities for any specific regulations or restrictions, especially in sensitive areas like nature reserves."
+    },
+    {
+      "question": "Can I kayak to Puffin Island?",
+      "answer": "Yes, you can kayak to Puffin Island from Penmon Point, but it's an exposed crossing and requires experience and favorable weather conditions. Landing on the island is prohibited during the nesting season (usually April to August). Always check the forecast and tide times before setting out."
+    },
+    {
+      "question": "Are there any guided kayaking tours in Anglesey?",
+      "answer": "Yes, several companies offer guided kayaking tours in Anglesey, including Anglesey Adventures and Plas Menai. These tours are a great option for beginners or those who want to explore the island with an experienced guide. Prices typically range from £50 to £80 per person."
+    },
+    {
+      "question": "What equipment do I need for kayaking in Anglesey?",
+      "answer": "Essential equipment includes a sea kayak (or suitable touring kayak), paddle, buoyancy aid, waterproof clothing, thermal base layers, a dry bag, and a waterproof phone case. Navigation equipment (map & compass or GPS) is essential for longer trips. A whistle is also recommended for attracting attention in an emergency."
+    },
+    {
+      "question": "Where can I hire kayaking gear in Anglesey?",
+      "answer": "You can hire kayaking gear from Anglesey Adventures and Plas Menai. Prices vary depending on the equipment and rental duration. It's advisable to book in advance, especially during peak season."
+    },
+    {
+      "question": "Is kayaking in the Menai Strait safe?",
+      "answer": "Kayaking in the Menai Strait can be safe, but it's essential to be aware of the strong tidal currents. Check tide times before you go. The Swelly Rocks area can be particularly challenging. It's best suited for experienced beginners and intermediate kayakers or those going with a guided tour. Beginners should stick to slack tide."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Plas Menai Shop",
+        "slug": "plas-menai-shop",
+        "address": "Plas Menai National Watersports Centre, Caernarfon LL55 1UE",
+        "lat": 53.182,
+        "lng": -4.222,
+        "description": "Sells a range of kayaking and watersports gear, including kayaks, paddles, wetsuits, and buoyancy aids. They also offer expert advice and fitting services.",
+        "website": "https://www.plasmenai.co.uk/",
+        "phone": "0300 300 3111",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.2,
+        "reviewCount": 150
+      },
+      {
+        "name": "Anglesey Outdoors",
+        "slug": "anglesey-outdoors",
+        "address": "Parc Cefni Industrial Estate, Llangefni LL77 7JA",
+        "lat": 53.259,
+        "lng": -4.302,
+        "description": "Offers a wide selection of outdoor gear, including kayaking equipment, clothing, and footwear. They also provide expert advice and fitting services.",
+        "website": "https://angleseyoutdoors.com/",
+        "phone": "01248 723595",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 80
+      },
+      {
+        "name": "Snowdonia Watersports",
+        "slug": "snowdonia-watersports",
+        "address": "Unit 4 Penamser Industrial Estate, Porthmadog LL49 9NY",
+        "lat": 52.925,
+        "lng": -4.134,
+        "description": "Though technically slightly outside Anglesey, it's a large, well-stocked shop with a range of kayaks, paddles, clothing and accessories.",
+        "website": "https://www.snowdoniawatersports.com/",
+        "phone": "01766 512636",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 200
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Oyster Catcher",
+        "slug": "the-oyster-catcher",
+        "address": "Rhosneigr LL64 5JP",
+        "lat": 53.238,
+        "lng": -4.527,
+        "description": "A popular gastropub with stunning sea views and a relaxed atmosphere. Known for its fresh seafood and wood-fired pizzas.",
+        "vibe": "Relaxed gastropub with sea views",
+        "priceRange": "££",
+        "website": "https://oystercatcheranglesey.co.uk/",
+        "knownFor": "Fresh seafood, wood-fired pizzas"
+      },
+      {
+        "name": "Sandy Mount House",
+        "slug": "sandy-mount-house",
+        "address": "Rhosneigr LL64 5QT",
+        "lat": 53.241,
+        "lng": -4.524,
+        "description": "A stylish restaurant and bar with a focus on locally sourced ingredients. A great place for a post-kayak meal or drink.",
+        "vibe": "Stylish restaurant and bar",
+        "priceRange": "£££",
+        "website": "https://sandymounthouse.co.uk/",
+        "knownFor": "Locally sourced ingredients, cocktails"
+      },
+      {
+        "name": "Wavecrest Cafe",
+        "slug": "wavecrest-cafe",
+        "address": "Rhoscolyn LL65 2NJ",
+        "lat": 53.242,
+        "lng": -4.593,
+        "description": "A classic beach cafe serving up hearty breakfasts, lunches, and snacks. A perfect spot for a post-kayak refuel.",
+        "vibe": "Casual beach cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Lobster bisque, hearty breakfasts"
+      },
+      {
+        "name": "The White Eagle",
+        "slug": "the-white-eagle",
+        "address": "Rhoscolyn LL65 2NJ",
+        "lat": 53.247,
+        "lng": -4.592,
+        "description": "A popular pub with stunning sea views and a wide selection of beers and wines. Known for its delicious food and friendly atmosphere.",
+        "vibe": "Cosy pub with sea views",
+        "priceRange": "££",
+        "website": "https://white-eagle.co.uk/",
+        "knownFor": "Good food, sea views"
+      },
+      {
+        "name": "Sea Shanty Cafe",
+        "slug": "sea-shanty-cafe",
+        "address": "Trearddur Bay, Holyhead LL65 2BJ",
+        "lat": 53.272,
+        "lng": -4.606,
+        "description": "Right on the beach in Trearddur Bay, this cafe serves good food and drinks all day long. Excellent for families and offers great views.",
+        "vibe": "Family friendly, beachside",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Beachside location, good value"
+      },
+      {
+        "name": "Dylan's Menai Bridge",
+        "slug": "dylans-menai-bridge",
+        "address": "St George's Road, Menai Bridge LL59 5EY",
+        "lat": 53.222,
+        "lng": -4.189,
+        "description": "A waterfront restaurant with views of the Menai Strait. Known for its fresh seafood and wood-fired pizzas.",
+        "vibe": "Modern restaurant with waterfront views",
+        "priceRange": "££",
+        "website": "https://dylansrestaurant.co.uk/",
+        "knownFor": "Seafood, pizzas, location"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Plas Menai National Watersports Centre",
+        "slug": "plas-menai",
+        "description": "Offers on-site accommodation with various options, ideal for watersports enthusiasts wanting quick access to the Menai Strait. They have comfortable rooms and caters to all budgets.",
+        "type": "bunkhouse",
+        "priceRange": "££",
+        "nearestSpot": "Menai Strait, on-site",
+        "website": "https://www.plasmenai.co.uk/"
+      },
+      {
+        "name": "Tyn Lon Cottage",
+        "slug": "tyn-lon-cottage",
+        "description": "A charming self-catering cottage near Rhoscolyn, offering a peaceful retreat after a day of kayaking. Close to some great paddling spots.",
+        "type": "b&b",
+        "priceRange": "£££",
+        "nearestSpot": "Rhoscolyn, 1 mile",
+        "website": "https://www.tynlon.co.uk/"
+      },
+      {
+        "name": "The Anchorage Hotel",
+        "slug": "the-anchorage-hotel",
+        "description": "A comfortable hotel in Trearddur Bay, with easy access to the beach and kayaking opportunities. Perfect for a relaxing getaway.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Trearddur Bay, on-site",
+        "website": "https://www.theanchoragehotel.co.uk/"
+      },
+      {
+        "name": "Rhoscolyn Camping & Caravan Site",
+        "slug": "rhoscolyn-camping",
+        "description": "A campsite near Rhoscolyn, offering a budget-friendly option for kayakers. A short walk from the beach.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Rhoscolyn, 0.5 miles",
+        "website": null
+      },
+      {
+        "name": "Seacroft",
+        "slug": "seacroft-b-and-b",
+        "description": "B&B in Trearddur Bay. Ideal for access to Trearddur bay and surrounding paddling spots.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Trearddur Bay, 0.3 miles",
+        "website": "https://seacrofttrearddur.co.uk/"
+      },
+      {
+        "name": "YHA Pen-y-Pass",
+        "slug": "yha-pen-y-pass",
+        "description": "A bit further inland, but good for accessing North Wales, this YHA is a budget-friendly option with easy access to the A55.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Menai Bridge, 10 miles",
+        "website": "https://www.yha.org.uk/hostel/yha-pen-y-pass"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Anglesey Sea Symposium",
+      "type": "exhibition",
+      "monthTypical": "October",
+      "description": "Annual gathering of sea kayakers, coaches, and enthusiasts. Presentations, workshops, and on-water sessions.",
+      "website": "https://www.angleseyseakayaksymposium.co.uk/",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "registrationCost": 150
+    }
+  ],
+  "keywords": {
+    "primary": "kayaking anglesey",
+    "secondary": [
+      "sea kayaking anglesey",
+      "menai strait kayaking",
+      "south stack kayaking",
+      "puffin island kayaking",
+      "kayak hire anglesey"
+    ],
+    "longTail": [
+      "kayaking anglesey for beginners",
+      "kayaking anglesey guided tours",
+      "kayaking anglesey with kids",
+      "best kayaking spots in anglesey",
+      "kayaking anglesey menai strait",
+      "sea kayaking anglesey south stack",
+      "kayaking anglesey puffin island",
+      "kayak rental anglesey price",
+      "kayaking lessons anglesey",
+      "where to kayak in anglesey for beginners",
+      "kayaking anglesey tide times",
+      "kayaking anglesey weather"
+    ],
+    "localIntent": [
+      "kayaking near Holyhead",
+      "kayaking near Beaumaris",
+      "kayaking near Rhosneigr",
+      "kayaking near Menai Bridge",
+      "kayaking near Trearddur Bay"
+    ],
+    "commercialIntent": [
+      "kayaking anglesey guided tour price",
+      "kayaking anglesey hire",
+      "book kayaking tour anglesey",
+      "kayak rental anglesey cost",
+      "kayaking anglesey lessons price"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Kayaking in Pembrokeshire"
+      },
+      {
+        "regionSlug": "gower",
+        "label": "Kayaking in Gower"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "coasteering",
+        "label": "Coasteering in Anglesey"
+      },
+      {
+        "activityTypeSlug": "surfing",
+        "label": "Surfing in Anglesey"
+      },
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Anglesey"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Anglesey Adventures",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Porth Penrhyn, Menai Bridge, Anglesey",
+      "postcode": "LL59 5EA",
+      "lat": 53.2205,
+      "lng": -4.1865,
+      "phone": "01248 852020",
+      "website": "https://www.angleseyadventures.com/",
+      "googleRating": 5.0,
+      "reviewCount": 50,
+      "description": "Unforgettable adventures on the Anglesey coast offering sea-kayaking and coasteering experiences. Explore the rugged coastline with expert guides.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "guided tours",
+        "kayak instruction",
+        "equipment rental"
+      ],
+      "priceRange": "££",
+      "notes": "A highly-rated adventure company focusing on coastal activities.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Plas Menai National Outdoor Centre",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Plas Menai, Caernarfon, Gwynedd",
+      "postcode": "LL55 1UE",
+      "lat": 53.155,
+      "lng": -4.215,
+      "phone": "01248 714941",
+      "website": "https://www.plasmenai.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 350,
+      "description": "Adventure on the Menai Strait awaits with a range of outdoor activities. They offer courses and guided sessions in various watersports.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "sailing",
+        "powerboating",
+        "sea-kayaking",
+        "windsurfing",
+        "courses",
+        "accommodation"
+      ],
+      "priceRange": "£££",
+      "notes": "A well-established outdoor centre with comprehensive facilities.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Anglesey Outdoors",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Parc Penrhos Leisure, Holyhead Road, Llanfairpwllgwyngyll",
+      "postcode": "LL61 5YQ",
+      "lat": 53.221,
+      "lng": -4.206,
+      "phone": "01248 717000",
+      "website": "https://www.angleseyoutdoors.com/",
+      "googleRating": 4.6,
+      "reviewCount": 120,
+      "description": "Offers a wide range of outdoor gear and equipment, including kayaking equipment and wetsuits. They also provide equipment rental services.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "retail",
+        "gear rental",
+        "repairs"
+      ],
+      "priceRange": "££",
+      "notes": "A key retailer and rental location for outdoor equipment.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "The Oyster Catcher",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Rhosneigr, Anglesey",
+      "postcode": "LL64 5JP",
+      "lat": 53.242,
+      "lng": -4.529,
+      "phone": "01407 812829",
+      "website": "https://www.oystercatcheranglesey.co.uk/",
+      "googleRating": 4.3,
+      "reviewCount": 800,
+      "description": "A popular restaurant and bar in Rhosneigr, perfect for a meal after a day of kayaking. Known for its seafood and relaxed atmosphere.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "restaurant",
+        "bar"
+      ],
+      "priceRange": "£££",
+      "notes": "A well-regarded dining option in a popular coastal village.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Sandy Mount House",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Rhosneigr, Anglesey",
+      "postcode": "LL64 5QP",
+      "lat": 53.243,
+      "lng": -4.53,
+      "phone": "01407 811811",
+      "website": "https://sandymounthouse.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 650,
+      "description": "A stylish restaurant and bar offering a modern dining experience in Rhosneigr. Great spot to relax and enjoy a meal after kayaking.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "restaurant",
+        "bar"
+      ],
+      "priceRange": "£££",
+      "notes": "Another popular dining choice in Rhosneigr, known for its ambiance.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Wavecrest Cafe",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Rhoscolyn, Holyhead",
+      "postcode": "LL65 2QQ",
+      "lat": 53.25,
+      "lng": -4.585,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.6,
+      "reviewCount": 200,
+      "description": "A casual cafe in Rhoscolyn, ideal for a quick bite after kayaking. Offers stunning views and a relaxed atmosphere.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "cafe"
+      ],
+      "priceRange": "£",
+      "notes": "A convenient and affordable option near the coast.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "The White Eagle",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Rhoscolyn, Holyhead",
+      "postcode": "LL65 2NJ",
+      "lat": 53.248,
+      "lng": -4.58,
+      "phone": "01407 860267",
+      "website": "https://white-eagle.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 1000,
+      "description": "A well-known pub and restaurant in Rhoscolyn offering delicious food and drinks with a sea view. A great place to unwind after kayaking.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "restaurant",
+        "pub"
+      ],
+      "priceRange": "££",
+      "notes": "A highly-rated pub with a strong reputation.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Valley Sea Kayaks Ltd",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 1a Penrhos Industrial Estate, Holyhead",
+      "postcode": "LL65 2UQ",
+      "lat": 53.304,
+      "lng": -4.521,
+      "phone": "01407 765566",
+      "website": "https://www.valleyseakayaks.com/",
+      "googleRating": 4.7,
+      "reviewCount": 30,
+      "description": "Manufacturers of high-quality sea kayaks, also offering some retail and potentially rental services. A good place to find specialised kayaking gear.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "retail",
+        "repairs",
+        "kayak manufacturing"
+      ],
+      "priceRange": "£££",
+      "notes": "A significant player in the sea kayak market.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "B-Active Rhoscolyn",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Rhoscolyn, Holyhead",
+      "postcode": "LL65 2NQ",
+      "lat": 53.2483,
+      "lng": -4.5746,
+      "phone": "07717 711177",
+      "website": "http://www.b-active.co.uk/",
+      "googleRating": 5.0,
+      "reviewCount": 12,
+      "description": "Providing tailored adventure activities on Anglesey including kayaking tours and instruction. Personalised experiences with a focus on safety and enjoyment.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "guided tours",
+        "instruction",
+        "equipment hire"
+      ],
+      "priceRange": "££",
+      "notes": "Small but excellent activity provider with great reviews",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Menai Bridge Kayak Hire",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "The Gazebo, Menai Bridge",
+      "postcode": "LL59 5EB",
+      "lat": 53.2228,
+      "lng": -4.1715,
+      "phone": "07738 313002",
+      "website": null,
+      "googleRating": null,
+      "reviewCount": null,
+      "description": "Kayak hire in Menai Bridge",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "gear rental"
+      ],
+      "priceRange": "££",
+      "notes": "good location for kayaking on the menai strait",
+      "inDatabase": false,
+      "priority": "medium"
+    }
+  ]
+}

@@ -1,0 +1,998 @@
+{
+  "regionSlug": "gower",
+  "activityTypeSlug": "hiking",
+  "title": "Hiking in Gower",
+  "strapline": "Hike legendary coastlines and discover hidden valleys on the Gower Peninsula.",
+  "metaTitle": "Hiking Gower | Coastal Trails & Peaks | Adventure Wales",
+  "metaDescription": "Explore the best hiking Gower has to offer. Discover coastal paths, challenging climbs, and hidden gems on Wales' stunning peninsula.",
+  "heroAlt": "Hikers looking out over Three Cliffs Bay, Gower Peninsula",
+  "introduction": "The Gower Peninsula, a designated Area of Outstanding Natural Beauty, isn't just about its famous beaches – it's a hiker's paradise. From the iconic Worm's Head to the dramatic cliffs of Three Cliffs Bay, every step offers breathtaking views. What sets hiking Gower apart is the sheer variety packed into a relatively small area. You can be scrambling up limestone headlands one minute and wandering through ancient woodland the next. \n\nIt's not all postcard-perfect strolls though. Be prepared for some steep climbs, especially on the coastal paths, and always check the tide times before venturing out towards Worm's Head or across certain bays. Gower caters to all levels, from gentle family rambles to challenging multi-day hikes. But even the 'easy' routes demand respect; the terrain can be uneven and exposed. Experienced hikers will relish the opportunity to bag the highest point at the top of Llanmadoc Hill or tackle the entire Gower Coast Path, while beginners can enjoy shorter sections with rewarding views. Ultimately, hiking Gower is about embracing the wild beauty, the ever-changing weather, and the sheer joy of discovery around every corner. And after a long hike, nothing beats a pint at a local pub or some cockles by the beach.",
+  "bestSeason": "May-October",
+  "difficultyRange": "Easy to Challenging",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Worm's Head Walk",
+      "slug": "worms-head-walk",
+      "description": "A challenging but rewarding walk to the tidal island of Worm's Head, accessible only at low tide. Expect stunning coastal scenery and diverse wildlife. It is essential to check tide times before venturing out.",
+      "difficulty": "Challenging",
+      "duration": "2-3 hours round trip",
+      "distance": "4km",
+      "elevationGain": "150m",
+      "bestFor": "Experienced hikers comfortable with tidal crossings and exposed conditions.",
+      "notSuitableFor": "Those with mobility issues, young children (without close supervision), or those uncomfortable with heights.",
+      "bestSeason": "May-September (for calmer weather)",
+      "parking": "Rhossili National Trust car park (£6-10, can fill up quickly)",
+      "startPoint": {
+        "name": "Rhossili National Trust Car Park",
+        "lat": 51.5767,
+        "lng": -4.3056
+      },
+      "estimatedCost": "Free (parking £6-10)",
+      "operatorSlug": null,
+      "insiderTip": "Check the tide times religiously! Add an extra hour to your crossing time to be safe. Also, the views from the top of the Worm are much better than walking all the way to the end!"
+    },
+    {
+      "name": "Three Cliffs Bay Circular",
+      "slug": "three-cliffs-bay-circular",
+      "description": "A classic Gower walk taking in the iconic Three Cliffs Bay, Pennard Castle ruins, and the sandy shoreline. Requires some scrambling and potentially a short stream crossing depending on the tide. ",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours round trip",
+      "distance": "7km",
+      "elevationGain": "200m",
+      "bestFor": "Families with older children, those looking for a varied coastal walk.",
+      "notSuitableFor": "People with significant mobility issues due to scrambling sections. Avoid at high tide as the stream crossing becomes difficult.",
+      "bestSeason": "Year-round, but best in spring and summer",
+      "parking": "National Trust car park at Southgate (charges apply)",
+      "startPoint": {
+        "name": "Southgate National Trust Car Park",
+        "lat": 51.574,
+        "lng": -4.053
+      },
+      "estimatedCost": "Free (parking £6-10)",
+      "operatorSlug": null,
+      "insiderTip": "Low tide is essential for exploring the caves at Three Cliffs Bay. Grab an ice cream from the kiosk at Southgate after your walk."
+    },
+    {
+      "name": "Rhossili Bay to Llangennith",
+      "slug": "rhossili-bay-to-llangennith",
+      "description": "A beautiful coastal walk along Rhossili Bay and the dunes to the surfing village of Llangennith. Relatively flat, with stunning views of the bay and Worm's Head. Option to continue to Broughton Bay.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours one way",
+      "distance": "8km one way",
+      "elevationGain": "50m",
+      "bestFor": "Beginners, families with young children, those looking for an easy coastal stroll.",
+      "notSuitableFor": "Those seeking a challenging hike with significant elevation gain.",
+      "bestSeason": "Year-round",
+      "parking": "Rhossili National Trust car park (start) or Llangennith car park (end)",
+      "startPoint": {
+        "name": "Rhossili National Trust Car Park",
+        "lat": 51.5767,
+        "lng": -4.3056
+      },
+      "estimatedCost": "Free (parking £6-10 at either end, bus back)",
+      "operatorSlug": null,
+      "insiderTip": "Take the bus back to Rhossili from Llangennith to avoid walking back the same way. Stop for a pint at the King's Head in Llangennith."
+    },
+    {
+      "name": "Arthur's Stone and Cefn Bryn",
+      "slug": "arthurs-stone-cefn-bryn",
+      "description": "A walk to the iconic Arthur's Stone neolithic burial chamber on Cefn Bryn, offering panoramic views of the entire Gower Peninsula. Relatively easy climb with well-maintained paths.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours round trip",
+      "distance": "3km",
+      "elevationGain": "100m",
+      "bestFor": "Families, history buffs, those wanting panoramic views with minimal effort.",
+      "notSuitableFor": "Those with severe mobility issues as the path is uneven in places.",
+      "bestSeason": "Year-round, but avoid in very strong winds.",
+      "parking": "Small car park near Arthur's Stone (free)",
+      "startPoint": {
+        "name": "Arthur's Stone Car Park",
+        "lat": 51.6012,
+        "lng": -4.0923
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Go early or late in the day to avoid crowds. Bring a picnic to enjoy the views from the top."
+    },
+    {
+      "name": "Pennard Castle and Bishopston Valley",
+      "slug": "pennard-castle-bishopston-valley",
+      "description": "Explore the ruins of Pennard Castle before descending into the lush Bishopston Valley. A pleasant walk through woodland and along the stream. Can be combined with a visit to Three Cliffs Bay.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours round trip",
+      "distance": "5km",
+      "elevationGain": "150m",
+      "bestFor": "Those looking for a varied walk with historical interest and woodland scenery.",
+      "notSuitableFor": "Those with significant mobility issues due to uneven terrain and potential stream crossings.",
+      "bestSeason": "Spring and summer",
+      "parking": "Parking available near Pennard Church or at Southgate (charges apply)",
+      "startPoint": {
+        "name": "Pennard Church",
+        "lat": 51.5701,
+        "lng": -4.0689
+      },
+      "estimatedCost": "Free (parking may cost £6-10)",
+      "operatorSlug": null,
+      "insiderTip": "Look out for the Pennard Golf Club's quirky windmill on the way to the castle. The Bay Bistro nearby is great for post-walk refreshments."
+    },
+    {
+      "name": "Oxwich Bay to Three Cliffs Bay (Coastal Path)",
+      "slug": "oxwich-bay-to-three-cliffs",
+      "description": "A stunning coastal walk along the Wales Coast Path, linking Oxwich Bay with Three Cliffs Bay. Involves beach walking, clifftop paths, and beautiful views. Consider tide times if walking on the beach at Oxwich.",
+      "difficulty": "Moderate",
+      "duration": "4-5 hours round trip",
+      "distance": "10km",
+      "elevationGain": "250m",
+      "bestFor": "Experienced walkers comfortable with varied terrain and coastal exposure.",
+      "notSuitableFor": "Those with mobility issues or very young children.",
+      "bestSeason": "May-September",
+      "parking": "Oxwich Bay car park (charges apply) or Southgate car park (charges apply)",
+      "startPoint": {
+        "name": "Oxwich Bay Car Park",
+        "lat": 51.5641,
+        "lng": -4.0054
+      },
+      "estimatedCost": "Free (parking £6-10)",
+      "operatorSlug": null,
+      "insiderTip": "Pack a picnic to enjoy on Pobbles Beach between Oxwich and Three Cliffs. Check tide times for beach walking at Oxwich."
+    },
+    {
+      "name": "Llanmadoc Hill",
+      "slug": "llanmadoc-hill",
+      "description": "Hike to the highest point on Gower for incredible 360-degree views. The climb is steep in sections but the panoramic vista is well worth the effort. Keep an eye out for the grazing ponies.",
+      "difficulty": "Challenging",
+      "duration": "2-3 hours round trip",
+      "distance": "6km",
+      "elevationGain": "280m",
+      "bestFor": "Experienced hikers seeking a challenging climb and rewarding views.",
+      "notSuitableFor": "Those with knee problems or a fear of heights.",
+      "bestSeason": "Year-round, but avoid in very wet or windy conditions.",
+      "parking": "Limited parking at the base of the hill in Llanmadoc village.",
+      "startPoint": {
+        "name": "Llanmadoc Village",
+        "lat": 51.6171,
+        "lng": -4.2713
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "The best time to go is early morning or late evening for quieter trails and stunning sunrise/sunset views."
+    },
+    {
+      "name": "Whiteford Burrows National Nature Reserve",
+      "slug": "whiteford-burrows",
+      "description": "Explore the unique landscape of Whiteford Burrows, a vast area of sand dunes, salt marsh, and beach. Look out for the historic Whiteford Lighthouse, a cast-iron structure dating back to the 1860s. Mostly flat and easy walking.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours round trip",
+      "distance": "7km",
+      "elevationGain": "20m",
+      "bestFor": "Birdwatchers, families with young children, those looking for a peaceful coastal walk.",
+      "notSuitableFor": "Those seeking a challenging hike with significant elevation gain.",
+      "bestSeason": "Year-round",
+      "parking": "Parking at the end of the road near the beach (limited spaces).",
+      "startPoint": {
+        "name": "Whiteford National Nature Reserve Parking",
+        "lat": 51.6384,
+        "lng": -4.2431
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Bring binoculars for birdwatching. Check the tide times before venturing out towards the lighthouse."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Gower's coastal location means the weather can change rapidly. Strong winds and rain are common, especially in winter. Check the forecast before you set out and be prepared for all conditions. Sea fog can roll in quickly, reducing visibility, especially on coastal paths.",
+    "weatherLinks": [
+      {
+        "name": "Met Office",
+        "url": "https://www.metoffice.gov.uk/weather/forecast/gcpvn102g"
+      },
+      {
+        "name": "BBC Weather",
+        "url": "https://www.bbc.co.uk/weather/6201424"
+      }
+    ],
+    "gearChecklist": [
+      "Waterproof jacket and trousers – essential for unpredictable weather.",
+      "Hiking boots with ankle support – Gower's terrain can be uneven.",
+      "Map and compass (or GPS) – Coastal paths are generally well marked, but it's easy to get disoriented.",
+      "Sunscreen and hat – Even on cloudy days, the sun can be strong.",
+      "Water and snacks – Few opportunities to resupply on some routes.",
+      "First-aid kit – For minor injuries.",
+      "Fully charged mobile phone – For emergencies.",
+      "Headtorch – If you're planning a longer hike or starting/finishing in low light.",
+      "Tide tables – Essential for coastal walks near Worm's Head and other tidal areas.",
+      "Whistle – For signalling in an emergency"
+    ],
+    "gearHire": [
+      {
+        "name": "Cotswold Outdoor",
+        "location": "Swansea",
+        "url": "https://www.cotswoldoutdoor.com/stores/swansea.html"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "4h",
+          "route": "Via M4"
+        },
+        {
+          "from": "Manchester",
+          "duration": "4h 30m",
+          "route": "Via M6 and M5"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3h",
+          "route": "Via M5 and A48"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "1h",
+          "route": "Via M4"
+        }
+      ],
+      "publicTransport": "Swansea is the nearest train station. Buses (First Cymru) run to many of the villages on the Gower Peninsula. The Gower Explorer bus offers a hop-on hop-off service.",
+      "parkingTips": "Parking can be limited, especially during peak season. Arrive early or consider using public transport. Many car parks are National Trust and charge a fee. Consider parking further out and walking in."
+    },
+    "safety": "Coastal paths can be exposed and dangerous in high winds. Always check the weather forecast and tide times before setting out. Be aware of cliff edges and uneven terrain. In an emergency, call 999 and ask for the Coastguard."
+  },
+  "faqs": [
+    {
+      "question": "What is the Gower Peninsula famous for?",
+      "answer": "The Gower Peninsula is famous for its stunning coastline, beautiful beaches like Rhossili Bay and Three Cliffs Bay, and its status as the UK's first Area of Outstanding Natural Beauty, designated in 1956."
+    },
+    {
+      "question": "How long does it take to walk the entire Gower Coast Path?",
+      "answer": "Walking the entire Gower Coast Path (around 45 miles) typically takes 4-5 days. This allows for comfortable walking distances each day and time to enjoy the scenery."
+    },
+    {
+      "question": "Are dogs allowed on Gower beaches?",
+      "answer": "Many Gower beaches are dog-friendly, but some have restrictions during peak season (May 1st to September 30th). Check local signage for specific rules."
+    },
+    {
+      "question": "What should I wear for hiking in Gower?",
+      "answer": "Wear layers of clothing to adapt to changing weather conditions. Waterproofs and sturdy hiking boots are essential. Consider gaiters for muddy paths. A hat and sunscreen are important, even on cloudy days."
+    },
+    {
+      "question": "Is there public transportation on the Gower Peninsula?",
+      "answer": "Yes, First Cymru operates bus services throughout the Gower Peninsula. The Gower Explorer bus is a hop-on hop-off service that connects many popular hiking spots."
+    },
+    {
+      "question": "Can I wild camp on the Gower Peninsula?",
+      "answer": "Wild camping is generally not permitted on the Gower Peninsula without the landowner's permission. There are several campsites available that offer designated camping areas."
+    },
+    {
+      "question": "What are the best easy hikes in Gower?",
+      "answer": "Some of the best easy hikes include the Worm's Head Causeway (at low tide!), Rhossili Bay to Llangennith, and the Whiteford Burrows walk. These are mostly flat and well-maintained."
+    },
+    {
+      "question": "Where can I find tide times for Worm's Head?",
+      "answer": "You can find tide times for Worm's Head on websites like the BBC Weather website or the Easytide website. Always double-check the times before attempting the walk."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Trespass",
+        "slug": "trespass-mumbles",
+        "address": "Unit 1, Oyster Wharf, Mumbles SA3 4DN",
+        "lat": 51.5763,
+        "lng": -4.0037,
+        "description": "Offers a range of outdoor clothing and equipment, ideal for hikers on a budget. Good for basics and affordable waterproofs.",
+        "website": "https://www.trespass.com/",
+        "phone": "01792 368028",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.2,
+        "reviewCount": 85
+      },
+      {
+        "name": "Mountain Warehouse",
+        "slug": "mountain-warehouse-swansea",
+        "address": "Unit 8, Parc Fforestfach, Swansea SA5 4BA",
+        "lat": 51.6443,
+        "lng": -3.9831,
+        "description": "Another popular choice for affordable outdoor gear. Good selection of hiking boots and clothing.",
+        "website": "https://www.mountainwarehouse.com/",
+        "phone": "01792 561248",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.0,
+        "reviewCount": 120
+      },
+      {
+        "name": "Cotswold Outdoor",
+        "slug": "cotswold-outdoor-swansea",
+        "address": "Unit 13B Parc Fforestfach, Swansea SA5 4BA",
+        "lat": 51.6448,
+        "lng": -3.9841,
+        "description": "Offers a wide range of premium outdoor gear and clothing. Known for its knowledgeable staff and good customer service.",
+        "website": "https://www.cotswoldoutdoor.com/stores/swansea.html",
+        "phone": "01792 588666",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.4,
+        "reviewCount": 90
+      },
+      {
+        "name": "Go Outdoors",
+        "slug": "go-outdoors-swansea",
+        "address": "Unit 4, Swansea West Business Park, Fforestfach, Swansea SA5 4ER",
+        "lat": 51.6453,
+        "lng": -3.9825,
+        "description": "A large outdoor retailer offering a wide selection of camping, hiking, and outdoor gear. Requires a membership for the best prices.",
+        "website": "https://www.gooutdoors.co.uk/",
+        "phone": "0344 387 6737",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.3,
+        "reviewCount": 250
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Verdi's",
+        "slug": "verdis-mumbles",
+        "address": "Knab Rock, Mumbles SA3 4EE",
+        "lat": 51.5742,
+        "lng": -4.0011,
+        "description": "A popular ice cream parlour and cafe in Mumbles, perfect for a post-hike treat. Known for its delicious sundaes and stunning sea views.",
+        "vibe": "Family-friendly cafe",
+        "priceRange": "££",
+        "website": "https://www.verdis-cafe.co.uk/",
+        "knownFor": "Ice cream sundaes, Italian coffee, sea views"
+      },
+      {
+        "name": "Rhossili Bay Hotel",
+        "slug": "rhossili-bay-hotel",
+        "address": "Rhossili, Gower SA3 1PL",
+        "lat": 51.5766,
+        "lng": -4.3049,
+        "description": "Offers stunning views over Rhossili Bay. A great place to relax with a drink or a meal after a hike to Worm's Head.",
+        "vibe": "Relaxed pub with sea views",
+        "priceRange": "££",
+        "website": "https://www.theworm головеshead.co.uk/",
+        "knownFor": "Views of Rhossili Bay, pub food"
+      },
+      {
+        "name": "The King Arthur Hotel",
+        "slug": "the-king-arthur-hotel-reynoldston",
+        "address": "Higher Green, Reynoldston, Swansea SA3 1AD",
+        "lat": 51.6003,
+        "lng": -4.1385,
+        "description": "A cosy pub with a good selection of beers and hearty meals. A popular choice for hikers exploring Cefn Bryn and Arthur's Stone.",
+        "vibe": "Cosy pub with a log fire",
+        "priceRange": "££",
+        "website": "https://kingarthurhotel.co.uk/",
+        "knownFor": "Real ales, pub food, log fire"
+      },
+      {
+        "name": "Bay Bistro",
+        "slug": "bay-bistro",
+        "address": "Three Cliffs Bay, Swansea SA3 2HB",
+        "lat": 51.5764,
+        "lng": -4.0456,
+        "description": "A small bistro with views of Three Cliffs Bay, serving hot drinks, snacks, and light meals. Perfect for a quick refuel after a hike around the bay.",
+        "vibe": "Casual bistro with sea views",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Hot drinks, snacks, views of Three Cliffs Bay"
+      },
+      {
+        "name": "Castellamare",
+        "slug": "castellamare-mumbles",
+        "address": "Mumbles Rd, Mumbles, Swansea SA3 4JT",
+        "lat": 51.5736,
+        "lng": -4.0032,
+        "description": "Italian restaurant in Mumbles with excellent views of Swansea Bay and Mumbles Lighthouse. Great for a special occasion after a long hike.",
+        "vibe": "Upscale Italian restaurant",
+        "priceRange": "£££",
+        "website": "http://www.castellamare.co.uk/",
+        "knownFor": "Italian cuisine, sea views, Mumbles Lighthouse"
+      },
+      {
+        "name": "The Ship Inn",
+        "slug": "the-ship-inn-port-eynon",
+        "address": "Port Eynon, Swansea SA3 1NN",
+        "lat": 51.5587,
+        "lng": -4.2224,
+        "description": "A traditional pub in Port Eynon, a popular spot for surfers and hikers. Serves classic pub food and local ales.",
+        "vibe": "Traditional pub",
+        "priceRange": "££",
+        "website": "https://www.sabrain.com/pubs-and-hotels/south-wales/swansea/the-ship-inn/",
+        "knownFor": "Pub food, local ales, surfer hangout"
+      },
+      {
+        "name": "Gower Seafood Hut",
+        "slug": "gower-seafood-hut",
+        "address": "Nicholaston Farm, Penmaen SA3 2HL",
+        "lat": 51.574,
+        "lng": -4.108,
+        "description": "A rustic seafood shack serving fresh cockles, laverbread and other local delicacies. A perfect taste of Gower after a coastal walk.",
+        "vibe": "Rustic seafood shack",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Fresh seafood, cockles, laverbread"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Three Cliffs Holiday Park",
+        "slug": "three-cliffs-holiday-park",
+        "description": "A well-maintained campsite with stunning views of Three Cliffs Bay. A great base for exploring the area by foot. Close to Three Cliffs Bay and Pennard Castle.",
+        "type": "campsite",
+        "priceRange": "££",
+        "nearestSpot": "Three Cliffs Bay (5 minute walk)",
+        "website": "https://www.threecliffsbay.com/"
+      },
+      {
+        "name": "Oxwich Bay Hotel",
+        "slug": "oxwich-bay-hotel",
+        "description": "A comfortable hotel located right on Oxwich Bay. Offers easy access to the beach and the coastal path.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Oxwich Bay (on site)",
+        "website": "https://www.oxwichbayhotel.co.uk/"
+      },
+      {
+        "name": "Nicholaston Farm B&B",
+        "slug": "nicholaston-farm-b-and-b",
+        "description": "A family-run B&B on a working farm. Offers comfortable rooms and a hearty breakfast. Close to Three Cliffs Bay and Oxwich Bay.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Three Cliffs Bay (15 minute walk)",
+        "website": "https://www.nicholastonfarm.co.uk/"
+      },
+      {
+        "name": "Pitton Cross Camping",
+        "slug": "pitton-cross-camping",
+        "description": "Located closer to Rhossili and Worm's Head, great for those wanting to explore the west side of the peninsula.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Rhossili Bay (10 minute drive)",
+        "website": "https://www.pittoncross.co.uk/"
+      },
+      {
+        "name": "The Gower Inn",
+        "slug": "the-gower-inn",
+        "description": "Centrally located in Parkmill, this Inn provides easy access to a multitude of hiking routes across Gower, as well as the well-known Gower Heritage Centre.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Three Cliffs Bay (5 minute drive)",
+        "website": "https://www.thegowerinn.com/"
+      },
+      {
+        "name": "Rhosili Pods",
+        "slug": "rhosili-pods",
+        "description": "Located at Pitton Cross, these luxury pods provide an unique and comfortable glamping experience.",
+        "type": "glamping",
+        "priceRange": "£££",
+        "nearestSpot": "Rhossili Bay (10 minute drive)",
+        "website": "https://www.rhosilipods.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Gower Walking Festival",
+      "type": "festival",
+      "monthTypical": "May",
+      "description": "A week-long festival with guided walks of all levels, exploring different parts of the Gower Peninsula.",
+      "website": "https://www.gowerwalkingfestival.org.uk/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 60
+    },
+    {
+      "name": "Gower Ultra",
+      "type": "race",
+      "monthTypical": "November",
+      "description": "A challenging ultra marathon along the Gower Coast Path, with distances from 35 miles to 50 miles.",
+      "website": "https://www.saxon-shore.com/races/gower-ultra-50/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 95
+    },
+    {
+      "name": "Swansea Bay 10k",
+      "type": "race",
+      "monthTypical": "September",
+      "description": "The Swansea Bay 10k takes place along the stunning Swansea Bay, not exclusively hiking, but many people hike-jog it.",
+      "website": "https://www.swanseabay10k.co.uk/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 25
+    }
+  ],
+  "keywords": {
+    "primary": "hiking gower",
+    "secondary": [
+      "gower coastal walks",
+      "walks gower peninsula",
+      "gower hiking trails",
+      "worms head walk",
+      "three cliffs bay hike"
+    ],
+    "longTail": [
+      "best hiking trails gower wales",
+      "dog friendly walks gower",
+      "easy coastal walks gower",
+      "moderate hiking routes gower",
+      "challenging hikes gower peninsula",
+      "gower peninsula hiking map",
+      "family friendly walks gower coast",
+      "gower peninsula hiking guide",
+      "hiking near rhossili bay",
+      "best views hiking gower"
+    ],
+    "localIntent": [
+      "hiking near mumbles",
+      "hiking near swansea",
+      "walks near rhossili",
+      "walks near llangennith",
+      "hiking south wales"
+    ],
+    "commercialIntent": [
+      "guided hiking tours gower",
+      "gower hiking holidays",
+      "hiking gower map",
+      "best time to hike gower",
+      "gower activity centres hiking"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Hiking in Pembrokeshire"
+      },
+      {
+        "regionSlug": "snowdonia",
+        "label": "Hiking in Snowdonia"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "surfing",
+        "label": "Surfing in Gower"
+      },
+      {
+        "activityTypeSlug": "coasteering",
+        "label": "Coasteering in Gower"
+      },
+      {
+        "activityTypeSlug": "kayaking",
+        "label": "Kayaking in Gower"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Gower Activity Centres",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Nicholaston House, Penmaen, Swansea, Gower",
+      "postcode": "SA3 2HL",
+      "lat": 51.584,
+      "lng": -4.083,
+      "phone": "01792 371672",
+      "website": "https://www.goweractivitycentres.co.uk/",
+      "googleRating": null,
+      "reviewCount": null,
+      "description": "Adventure awaits on the Gower Peninsula! They provide various outdoor activities suitable for groups and individuals.",
+      "relevantActivities": [
+        "hiking",
+        "coasteering"
+      ],
+      "services": [
+        "guided hikes",
+        "coasteering",
+        "team building"
+      ],
+      "priceRange": "££",
+      "notes": "A known adventure activity provider on the Gower.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Trespass Mumbles",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 4, Newton Rd, Mumbles, Swansea",
+      "postcode": "SA3 4AR",
+      "lat": 51.576,
+      "lng": -4.001,
+      "phone": "01792 368729",
+      "website": "https://www.trespass.com/",
+      "googleRating": 4.0,
+      "reviewCount": 48,
+      "description": "Provides outdoor clothing and equipment. A good place to get essential hiking gear.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "outdoor clothing",
+        "hiking boots",
+        "backpacks",
+        "accessories"
+      ],
+      "priceRange": "££",
+      "notes": "Known outdoor gear shop in Mumbles.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Mountain Warehouse Swansea",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 4, Parc Tawe Retail Park, Swansea",
+      "postcode": "SA1 2AL",
+      "lat": 51.624,
+      "lng": -3.944,
+      "phone": "01792 476364",
+      "website": "https://www.mountainwarehouse.com/",
+      "googleRating": 4.3,
+      "reviewCount": 142,
+      "description": "Offers a wide range of outdoor clothing and equipment. Suitable for getting kitted out for hiking.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "outdoor clothing",
+        "hiking boots",
+        "backpacks",
+        "accessories"
+      ],
+      "priceRange": "££",
+      "notes": "Known outdoor gear shop near Gower.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Verdi's",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Knab Rock, Mumbles Rd, Mumbles, Swansea",
+      "postcode": "SA3 4EE",
+      "lat": 51.573,
+      "lng": -3.995,
+      "phone": "01792 369959",
+      "website": "https://www.verdis-cafe.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 1785,
+      "description": "Popular cafe/restaurant in Mumbles with sea views. Good for a post-hike meal or coffee.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "cafe",
+        "restaurant",
+        "ice cream"
+      ],
+      "priceRange": "££",
+      "notes": "Known cafe in Mumbles.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Rhossili Bay Hotel",
+      "type": "venue",
+      "category": "accommodation",
+      "address": "Rhossili, Swansea",
+      "postcode": "SA3 1PL",
+      "lat": 51.565,
+      "lng": -4.314,
+      "phone": "01792 390031",
+      "website": "https://www.rhossilihotel.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 685,
+      "description": "Hotel with stunning views of Rhossili Bay. Provides accommodation and food for hikers.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "hotel",
+        "restaurant",
+        "bar"
+      ],
+      "priceRange": "£££",
+      "notes": "Known hotel in Rhossili.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "The King Arthur Hotel",
+      "type": "venue",
+      "category": "accommodation",
+      "address": "Higher Ln, Reynoldston, Swansea",
+      "postcode": "SA3 1AD",
+      "lat": 51.586,
+      "lng": -4.151,
+      "phone": "01792 390775",
+      "website": "https://kingarthurhotel.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 1117,
+      "description": "Hotel and restaurant in Reynoldston. A good base for exploring central Gower.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "hotel",
+        "restaurant",
+        "bar"
+      ],
+      "priceRange": "£££",
+      "notes": "Known hotel in Reynoldston.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Bay Bistro",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Rhossili Bay, Rhossili, Swansea",
+      "postcode": "SA3 1PL",
+      "lat": 51.564,
+      "lng": -4.317,
+      "phone": "01792 390707",
+      "website": null,
+      "googleRating": 4.4,
+      "reviewCount": 542,
+      "description": "Cafe at Rhossili Bay. Perfect for refreshments after a hike along the coast.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "cafe",
+        "snacks",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "Cafe at Rhossili.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Castellamare",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Mumbles Rd, Mumbles, Swansea",
+      "postcode": "SA3 4AS",
+      "lat": 51.579,
+      "lng": -4.003,
+      "phone": "01792 369408",
+      "website": "https://www.castellamare.co.uk/",
+      "googleRating": 4.3,
+      "reviewCount": 1219,
+      "description": "Italian restaurant in Mumbles. Ideal for a meal after a day of hiking.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "restaurant",
+        "Italian cuisine"
+      ],
+      "priceRange": "£££",
+      "notes": "Restaurant in Mumbles.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "The Ship Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Port Eynon, Swansea",
+      "postcode": "SA3 1NN",
+      "lat": 51.569,
+      "lng": -4.186,
+      "phone": "01792 390206",
+      "website": "https://www.theshipinnporteynon.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 1573,
+      "description": "Pub in Port Eynon with sea views. Good for a post-hike drink or meal.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "pub",
+        "restaurant"
+      ],
+      "priceRange": "££",
+      "notes": "Pub in Port Eynon.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "National Trust - Rhossili and South Gower Coast",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Rhossili, Swansea",
+      "postcode": "SA3 1PL",
+      "lat": 51.565,
+      "lng": -4.313,
+      "phone": "01792 390707",
+      "website": "https://www.nationaltrust.org.uk/rhossili-and-south-gower-coast",
+      "googleRating": 4.7,
+      "reviewCount": 1100,
+      "description": "Beautiful coastal area managed by the National Trust. Popular for hiking and stunning views.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "coastal walks",
+        "viewpoints",
+        "nature reserve"
+      ],
+      "priceRange": "£",
+      "notes": "Important coastal location.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Three Cliffs Bay",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Three Cliffs Bay, Swansea",
+      "postcode": "SA3 2HB",
+      "lat": 51.581,
+      "lng": -4.077,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.8,
+      "reviewCount": 3000,
+      "description": "Iconic bay with dramatic cliffs and sandy beach. Excellent hiking opportunities.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "beach",
+        "coastal walks",
+        "scenic views"
+      ],
+      "priceRange": "Free",
+      "notes": "Iconic location, popular hiking spot.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Penrice Castle Woods",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Penrice, Swansea",
+      "postcode": "SA3 2HQ",
+      "lat": 51.577,
+      "lng": -4.114,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.5,
+      "reviewCount": 150,
+      "description": "Woodland area with walking trails and the ruins of Penrice Castle. Offers a more sheltered hiking experience.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "woodland walks",
+        "historic site"
+      ],
+      "priceRange": "Free",
+      "notes": "Offers less exposed hiking trails.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Arthur's Stone",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Cefn Bryn Common, Reynoldston, Swansea",
+      "postcode": "SA3 1AE",
+      "lat": 51.595,
+      "lng": -4.156,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.6,
+      "reviewCount": 400,
+      "description": "Neolithic burial chamber on Cefn Bryn. Provides a focal point for a hike across the common.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "historic site",
+        "viewpoint"
+      ],
+      "priceRange": "Free",
+      "notes": "Historical landmark on hiking route.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Gower Coast Path",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Various access points around the Gower Peninsula",
+      "postcode": null,
+      "lat": 51.58,
+      "lng": -4.2,
+      "phone": null,
+      "website": "https://www.walescoastpath.gov.uk/",
+      "googleRating": null,
+      "reviewCount": null,
+      "description": "A designated walking route that circles the Gower Peninsula offering stunning coastal views and access to various beaches and coves.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "Long-distance trail",
+        "Coastal Scenery"
+      ],
+      "priceRange": "Free",
+      "notes": "This is the main draw for hiking on the Gower.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Adventure Britain",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Unit 3, City Gates Business Park, Western Avenue, Cardiff",
+      "postcode": "CF5 2BD",
+      "lat": 51.485,
+      "lng": -3.246,
+      "phone": "02921 280052",
+      "website": "https://www.adventurebritain.com/",
+      "googleRating": 4.8,
+      "reviewCount": 100,
+      "description": "Your gateway to unforgettable Welsh adventures. They offer canyoning, caving, climbing, gorge-walking, and mountain biking experiences.",
+      "relevantActivities": [
+        "hiking",
+        "climbing"
+      ],
+      "services": [
+        "canyoning",
+        "caving",
+        "climbing",
+        "gorge-walking",
+        "mtb"
+      ],
+      "priceRange": "££",
+      "notes": "Offers a range of adventure activities in Wales",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Swansea Ramblers",
+      "type": "club",
+      "category": "activity_provider",
+      "address": null,
+      "postcode": null,
+      "lat": 51.62,
+      "lng": -3.94,
+      "phone": null,
+      "website": "https://www.ramblers.org.uk/go-walking/find-a-walk-or-route/walk-group-finder/groups/swansea.aspx",
+      "googleRating": null,
+      "reviewCount": null,
+      "description": "A local Ramblers group that organises regular walks in and around Swansea and Gower, for various abilities.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "Organised walks",
+        "Social Hiking"
+      ],
+      "priceRange": "£",
+      "notes": "Good for finding group hikes and local knowledge.",
+      "inDatabase": false,
+      "priority": "medium"
+    }
+  ]
+}

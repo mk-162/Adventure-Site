@@ -1,0 +1,854 @@
+{
+  "regionSlug": "brecon-beacons",
+  "activityTypeSlug": "caving",
+  "title": "Caving in Brecon Beacons",
+  "strapline": "Descend into a subterranean wonderland: the Brecon Beacons are a caver's paradise.",
+  "metaTitle": "Caving Brecon Beacons: Routes & Guides | Adventure Wales",
+  "metaDescription": "Explore the best caving routes in the Brecon Beacons. Discover OFD, Porth yr Ogof, and more with our expert guide.",
+  "heroAlt": "Caver emerging from a narrow passage in Ogof Ffynnon Ddu, Brecon Beacons",
+  "introduction": "The Brecon Beacons are a caving Mecca, plain and simple. Forget posing for selfies; this is about getting properly muddy, squeezing through tight spots, and witnessing the raw power of nature carved over millennia. We're not just talking pretty show caves here, although Dan yr Ogof has its place. We're talking about the hardcore stuff: miles of unexplored passages, underground rivers, and formations that will leave you speechless. Ogof Ffynnon Ddu (OFD) is the undisputed king, offering everything from beginner-friendly strolls (sort of) to full-on expedition-level challenges. Porth yr Ogof is a must-do, even if just for a quick wade through the entrance. But don't underestimate the other systems – Cwm Dwr and Ogof Draenen are equally rewarding, though require a bit more commitment to find and explore. \n\nThis isn't for the faint of heart, or the claustrophobic. Caving in the Brecon Beacons demands respect. The water's cold, the rocks are sharp, and getting lost is a real possibility. But for those willing to embrace the challenge, the rewards are immense. Think crystal-clear pools, towering caverns, and the thrill of exploring where few others have been. Whether you're a seasoned caver or a complete beginner (with a guide, of course!), the Brecon Beacons offer an unforgettable subterranean adventure. Just remember to leave no trace, and always cave responsibly. Before you start your caving brecon beacons journey, consider the season, some routes are inaccessible during winter or high water.",
+  "bestSeason": "April-October",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £150 guided",
+  "spots": [
+    {
+      "name": "Porth yr Ogof Main Entrance",
+      "slug": "porth-yr-ogof-main-entrance",
+      "description": "The iconic entrance to Porth yr Ogof is a great introduction to caving. It's a short, wade-through river passage (chest deep at high water) leading to a larger cavern. It's a popular spot, so expect company, especially on weekends. Be aware of rising water levels after heavy rain.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours round trip",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families (with supervision), anyone wanting a quick taste of caving.",
+      "notSuitableFor": "Those with mobility issues, or anyone who dislikes wading in cold water.",
+      "bestSeason": "May-September (lower water levels)",
+      "parking": "Small car park at the entrance (free), fills up quickly. Alternative parking further up the road towards Ystradfellte, adding a 15-minute walk.",
+      "startPoint": {
+        "name": "Porth yr Ogof Car Park",
+        "lat": 51.7797,
+        "lng": -3.5815
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": "adventure-britain",
+      "insiderTip": "Go early in the morning (before 9am) or late in the afternoon (after 4pm) to avoid the crowds. Check water levels online beforehand."
+    },
+    {
+      "name": "Ogof Ffynnon Ddu I (OFD I)",
+      "slug": "ogof-ffynnon-ddu-i",
+      "description": "OFD I is the most accessible part of the OFD system. A relatively straightforward route involves entering through the 'entrance series' which takes you down a pitch, this can be avoided by taking the 'long crawl'. Eventually arriving at 'The Streamway', which is a walk through a stream, it has several pools which are suitable for swimming. Expect tight squeezes, some wading, and plenty of mud. Requires a permit from the South Wales Caving Club.",
+      "difficulty": "Moderate",
+      "duration": "4-6 hours round trip",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced cavers comfortable with navigating complex systems.",
+      "notSuitableFor": "Beginners without a guide, or those prone to claustrophobia.",
+      "bestSeason": "April-September (avoid high water)",
+      "parking": "SWCC parking, Penwyllt, limited spaces, member parking prioritised.",
+      "startPoint": {
+        "name": "South Wales Caving Club, Penwyllt",
+        "lat": 51.8335,
+        "lng": -3.6256
+      },
+      "estimatedCost": "Free (permit required)",
+      "operatorSlug": "black-mountain-adventure",
+      "insiderTip": "Book your SWCC permit well in advance, especially for weekends and holidays. The 'long crawl' can be avoided in a streamway bypass. Carry spare batteries for your headlamp."
+    },
+    {
+      "name": "Ogof Ffynnon Ddu II (OFD II)",
+      "slug": "ogof-ffynnon-ddu-ii",
+      "description": "OFD II builds upon OFD I, offering a more challenging and rewarding experience. The entrance is the same as OFD I, but the route splits off towards areas like 'The Crossroads' and 'The Columns'. These sections are more complex, and may require ropework and a good head for heights. Requires SWCC permit, be prepared for very cold water in certain sections.",
+      "difficulty": "Challenging",
+      "duration": "6-8 hours round trip",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced cavers with good rope skills and navigation abilities.",
+      "notSuitableFor": "Anyone new to caving or uncomfortable with exposure.",
+      "bestSeason": "May-September (avoid high water)",
+      "parking": "SWCC parking, Penwyllt, limited spaces, member parking prioritised.",
+      "startPoint": {
+        "name": "South Wales Caving Club, Penwyllt",
+        "lat": 51.8335,
+        "lng": -3.6256
+      },
+      "estimatedCost": "Free (permit required)",
+      "operatorSlug": "black-mountain-adventure",
+      "insiderTip": "Take a detailed survey (map) and compass. Consider using a GPS device with pre-loaded waypoints. Check the weather forecast beforehand – heavy rain can rapidly raise water levels."
+    },
+    {
+      "name": "Dan yr Ogof Showcaves",
+      "slug": "dan-yr-ogof-showcaves",
+      "description": "A commercially run showcave system with well-lit, easily accessible passages. While not 'wild' caving, it's a great option for families and those wanting a taste of the underground without the challenges. Features impressive formations and a dinosaur park outside. Note that it's a paid attraction.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, tourists, anyone with limited mobility.",
+      "notSuitableFor": "Experienced cavers seeking a challenging adventure.",
+      "bestSeason": "All year round",
+      "parking": "Large car park at the entrance (free).",
+      "startPoint": {
+        "name": "Dan yr Ogof Showcaves Entrance",
+        "lat": 51.8363,
+        "lng": -3.7294
+      },
+      "estimatedCost": "£16.50 per adult",
+      "operatorSlug": null,
+      "insiderTip": "Combine a visit to the showcaves with a walk to the nearby waterfalls for a full day out. The cafe is decent but can get busy."
+    },
+    {
+      "name": "Cathedral Cave",
+      "slug": "cathedral-cave",
+      "description": "Part of the Dan yr Ogof system, but requires a separate (paid) adventure tour. This is a much more 'hands-on' experience than the showcaves, involving some crawling and wading. The highlight is the Cathedral itself – a large chamber with impressive formations.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Adventurous families, those wanting a more challenging experience than the showcaves.",
+      "notSuitableFor": "Those with severe claustrophobia or limited mobility.",
+      "bestSeason": "All year round",
+      "parking": "Large car park at Dan yr Ogof Showcaves (free).",
+      "startPoint": {
+        "name": "Dan yr Ogof Showcaves Entrance",
+        "lat": 51.8363,
+        "lng": -3.7294
+      },
+      "estimatedCost": "£55 per adult (adventure tour)",
+      "operatorSlug": null,
+      "insiderTip": "Book your Cathedral Cave tour in advance, especially during peak season. Wear clothes you don't mind getting muddy."
+    },
+    {
+      "name": "Bridge Cave",
+      "slug": "bridge-cave",
+      "description": "A short, easily accessible cave near Ystradfellte, known for the natural bridge formation spanning its entrance. It's a pleasant walk to reach the cave, and the cave itself offers a quick and easy caving experience. Good for families and beginners, but not a challenging adventure.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours including walk",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, beginners, those wanting a short and easy caving experience.",
+      "notSuitableFor": "Experienced cavers seeking a challenge.",
+      "bestSeason": "All year round",
+      "parking": "Small car park near Ystradfellte (free), then a short walk.",
+      "startPoint": {
+        "name": "Near Ystradfellte Car Park",
+        "lat": 51.7892,
+        "lng": -3.5718
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Combine a visit to Bridge Cave with a walk to the nearby waterfalls (Sgwd yr Eira, Sgwd Clun-Gwyn, Sgwd Isaf Clun-Gwyn). The walk is very scenic."
+    },
+    {
+      "name": "Cwm Dwr",
+      "slug": "cwm-dwr",
+      "description": "A less visited cave system offering a more remote and challenging experience. Cwm Dwr is known for its complex passages, streamways, and formations. Requires good navigation skills and experience. Permit required from the landowner.",
+      "difficulty": "Challenging",
+      "duration": "5-7 hours round trip",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced cavers seeking a remote and challenging adventure.",
+      "notSuitableFor": "Beginners, those without good navigation skills.",
+      "bestSeason": "May-September (avoid high water)",
+      "parking": "Limited roadside parking near the entrance. Be respectful of local residents.",
+      "startPoint": {
+        "name": "Roadside parking near Cwm Dwr entrance",
+        "lat": 51.8634,
+        "lng": -3.6571
+      },
+      "estimatedCost": "Free (permit required)",
+      "operatorSlug": null,
+      "insiderTip": "Obtain landowner permission well in advance. Carry a detailed survey (map) and compass. Be prepared for cold water and tight squeezes. Let someone know your plans before entering."
+    },
+    {
+      "name": "Ogof Draenen",
+      "slug": "ogof-draenen",
+      "description": "Located in the Llangattock escarpment, this cave is known for its stunning formations, including the 'chocolate stream' and 'cheese chamber'. It's a complex and challenging cave requiring significant experience and ropework. Conservation efforts are in place, so access may be restricted.",
+      "difficulty": "Expert",
+      "duration": "8+ hours round trip",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Expert cavers with extensive experience and technical skills.",
+      "notSuitableFor": "Anyone without significant caving experience.",
+      "bestSeason": "May-September (access restrictions may apply)",
+      "parking": "Limited parking available near the entrance. Respect local residents.",
+      "startPoint": {
+        "name": "Near Ogof Draenen entrance",
+        "lat": 51.8291,
+        "lng": -3.2567
+      },
+      "estimatedCost": "Free (access restrictions may apply)",
+      "operatorSlug": null,
+      "insiderTip": "Check with the South East Wales Caving Club for access information and restrictions. Be prepared for a long and strenuous trip. Pack plenty of food and water. A strong headlamp is essential."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The weather in the Brecon Beacons can change rapidly, so always check the forecast before heading out. Heavy rain can cause flash flooding in caves, making them extremely dangerous. Even on sunny days, underground temperatures remain cold, so dress accordingly. Monitor river levels before entering caves with streamways.",
+    "weatherLinks": [
+      {
+        "name": "Mountain Weather Information Service",
+        "url": "https://www.mwis.org.uk/"
+      },
+      {
+        "name": "Met Office",
+        "url": "https://www.metoffice.gov.uk/weather/forecast/gcm417y1f"
+      }
+    ],
+    "gearChecklist": [
+      "Helmet with chin strap – essential for protecting your head from falling rocks.",
+      "Headlamp (with spare batteries) – darkness underground is absolute.",
+      "Caving suit – provides protection from mud, water, and abrasion.",
+      "Wellies or caving boots – sturdy footwear with good grip is crucial.",
+      "Thermal base layers – to stay warm in the cold underground environment.",
+      "Gloves – protect your hands from sharp rocks and cold water.",
+      "Knee pads – essential for crawling comfortably.",
+      "Emergency blanket – in case of accidents or getting stranded.",
+      "First aid kit – for treating minor injuries.",
+      "Whistle – for signalling in case of emergency."
+    ],
+    "gearHire": [
+      {
+        "name": "Starless River",
+        "location": "Ystradgynlais",
+        "url": "https://www.starlessriver.com/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "3h 30m",
+          "route": "Via M4"
+        },
+        {
+          "from": "Manchester",
+          "duration": "3h 30m",
+          "route": "Via M6 and A40"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "2h 30m",
+          "route": "Via M5 and A470"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "1h",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "The nearest train stations are Neath and Merthyr Tydfil. Bus services are limited, especially to remote caving areas. The T4 bus service connects Cardiff and Brecon, but onward travel to specific cave entrances may require a taxi or pre-arranged transport.",
+      "parkingTips": "Parking can be limited near popular cave entrances, especially on weekends and holidays. Arrive early to secure a space. Be respectful of local residents and avoid blocking roads or driveways. Pay attention to parking restrictions and avoid parking illegally."
+    },
+    "safety": "Caving is an inherently dangerous activity. Never cave alone. Always inform someone of your plans and expected return time. Carry a first aid kit and know how to use it. Be aware of the risk of hypothermia and take precautions to stay warm. Watch out for slippery rocks and uneven terrain. Check the weather forecast before heading out and be prepared for changing conditions. In case of emergency, dial 999 or 112 and ask for Mountain Rescue. The South Wales Caving Club (SWCC) can provide valuable information and advice."
+  },
+  "faqs": [
+    {
+      "question": "Do I need a permit to go caving in the Brecon Beacons?",
+      "answer": "Yes, a permit is required to enter Ogof Ffynnon Ddu (OFD) and Cwm Dwr. Permits are managed by the South Wales Caving Club (SWCC) for OFD, and require landowner permission for Cwm Dwr. Apply well in advance, especially for weekends and holidays."
+    },
+    {
+      "question": "Is caving in the Brecon Beacons suitable for beginners?",
+      "answer": "While some caves like Porth yr Ogof offer easy access, most require experience and a guide. Consider booking a guided trip with Adventure Britain or Black Mountain Adventure for your first caving brecon beacons experience. They provide the necessary equipment and expertise."
+    },
+    {
+      "question": "What gear do I need for caving in the Brecon Beacons?",
+      "answer": "Essential gear includes a helmet, headlamp, caving suit, wellies or caving boots, thermal base layers, gloves, and knee pads. Starless River in Ystradgynlais is a specialist shop for caving equipment."
+    },
+    {
+      "question": "What is the water temperature like in Brecon Beacons caves?",
+      "answer": "Water temperatures in Brecon Beacons caves are consistently cold, typically ranging from 6-10 degrees Celsius (43-50 degrees Fahrenheit). Wear thermal layers and a caving suit to protect yourself from the cold."
+    },
+    {
+      "question": "Are there any caves in the Brecon Beacons that are accessible to the public without a permit?",
+      "answer": "Porth yr Ogof and Bridge Cave are freely accessible without a permit. Dan yr Ogof Showcaves is a commercially run showcave system that requires an entrance fee but no special permit."
+    },
+    {
+      "question": "What should I do if I get lost or injured while caving in the Brecon Beacons?",
+      "answer": "If you get lost, stay calm and try to retrace your steps. Use your whistle to signal for help (three blasts is the international distress signal). If injured, administer first aid and call 999 or 112 for Mountain Rescue. Provide your location as accurately as possible."
+    },
+    {
+      "question": "How dangerous is caving in Brecon Beacons?",
+      "answer": "Caving inherently poses risks, including getting lost, falling, hypothermia, and flash flooding. Proper planning, adequate gear, and experience are crucial for minimizing risks. Always cave with experienced individuals or a qualified guide."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Starless River",
+        "slug": "starless-river",
+        "address": "55 Commercial St, Ystradgynlais, Swansea SA9 1HD",
+        "lat": 51.7896,
+        "lng": -3.7403,
+        "description": "The go-to shop for all things caving related. They stock a wide range of caving equipment, from helmets and headlamps to caving suits and ropes. They also offer expert advice and fitting services.",
+        "website": "https://www.starlessriver.com/",
+        "phone": "01639 730028",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "boot fitting"
+        ],
+        "googleRating": 4.8,
+        "reviewCount": 150
+      },
+      {
+        "name": "V12 Outdoor",
+        "slug": "v12-outdoor",
+        "address": "Unit 3, The Brecon Enterprise Centre, Brecon LD3 9EA",
+        "lat": 51.9533,
+        "lng": -3.3901,
+        "description": "A well-stocked outdoor shop selling caving helmets and headlamps alongside other outdoor gear. Helpful staff can offer recommendations. Good for picking up last-minute essentials.",
+        "website": "https://www.v12outdoor.com/",
+        "phone": "01874 611515",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 80
+      },
+      {
+        "name": "Mountain Warehouse",
+        "slug": "mountain-warehouse-brecon",
+        "address": "3 High St, Brecon LD3 7AN",
+        "lat": 51.9496,
+        "lng": -3.3946,
+        "description": "A chain store selling more general outdoors gear. It is possible to buy helmets and some basic headlamps at good value. However, staff may not have specific experience with caving gear.",
+        "website": "https://www.mountainwarehouse.com/",
+        "phone": "01874 625395",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.2,
+        "reviewCount": 120
+      },
+      {
+        "name": "Cotswold Outdoor Brecon",
+        "slug": "cotswold-outdoor-brecon",
+        "address": "Unit 3, Brecon Retail Park, Brecon LD3 9BA",
+        "lat": 51.9468,
+        "lng": -3.3838,
+        "description": "Similar to Mountain Warehouse, Cotswold Outdoor is good for general outdoor clothing and footwear. Some caving headlamps and helmets are stocked. The staff are knowledgable.",
+        "website": "https://www.cotswoldoutdoor.com/",
+        "phone": "01874 611502",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.3,
+        "reviewCount": 90
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Ancient Briton",
+        "slug": "the-ancient-briton",
+        "address": "Pen-y-Cae, Swansea SA9 1GL",
+        "lat": 51.8143,
+        "lng": -3.7521,
+        "description": "A popular pub with cavers and locals, known for its hearty food and friendly atmosphere. Good selection of real ales. The beer garden offers stunning views. Gets VERY busy on weekends.",
+        "vibe": "Climber-friendly pub",
+        "priceRange": "££",
+        "website": "https://www.sabrain.com/pubs-in-wales/swansea/ancient-briton",
+        "knownFor": "Hearty portions, real ales, beer garden"
+      },
+      {
+        "name": "Gwyn Arms",
+        "slug": "gwyn-arms",
+        "address": "Glyntawe, Abercraf, Swansea SA9 1GU",
+        "lat": 51.8108,
+        "lng": -3.7612,
+        "description": "A traditional Welsh pub with a cosy interior and a good selection of beers. A local gem, you won't see many tourists here. Solid pub grub, including vegetarian options.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Traditional Welsh atmosphere, real ales"
+      },
+      {
+        "name": "The Felin Fach Griffin",
+        "slug": "the-felin-fach-griffin",
+        "address": "Felin Fach, Brecon, Powys LD3 0UB",
+        "lat": 52.0652,
+        "lng": -3.3633,
+        "description": "A stylish gastropub with a focus on seasonal, locally sourced ingredients. The food is excellent, and the atmosphere is relaxed and welcoming. A bit pricier than other options, but worth it for a special treat.",
+        "vibe": "Gastropub",
+        "priceRange": "£££",
+        "website": "https://www.eatdrinksleep.ltd.uk/felin-fach-griffin/",
+        "knownFor": "Seasonal food, local ingredients, stylish atmosphere"
+      },
+      {
+        "name": "Dan yr Ogof Cafe",
+        "slug": "dan-yr-ogof-cafe",
+        "address": "Dan yr Ogof, Abercraf, Swansea SA9 1GU",
+        "lat": 51.8366,
+        "lng": -3.729,
+        "description": "Conveniently located at the Dan yr Ogof Showcaves, this cafe offers a range of snacks, sandwiches, and hot meals. A good option for a quick bite after exploring the caves.",
+        "vibe": "Family-friendly cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Convenient location, quick bites"
+      },
+      {
+        "name": "Riverside Cafe",
+        "slug": "riverside-cafe-ystradfellte",
+        "address": "Ystradfellte, Powys CF44 9JE",
+        "lat": 51.7917,
+        "lng": -3.5782,
+        "description": "Perfectly located at the start/end point of the Four Waterfalls walk, the Riverside Cafe serves delicious breakfasts, cakes and sandwiches. A true gem to recharge the batteries.",
+        "vibe": "Family-friendly cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Delicious breakfasts, cakes, perfect location for walkers"
+      },
+      {
+        "name": "The Lamb Inn",
+        "slug": "the-lamb-inn",
+        "address": "Defynnog, Sennybridge, Brecon LD3 8EU",
+        "lat": 51.9312,
+        "lng": -3.5668,
+        "description": "Serving great food and well kept ales, the Lamb is a little bit away from the main caving areas. It provides a good option for families with a big play area and a big beer garden.",
+        "vibe": "Family-friendly pub",
+        "priceRange": "££",
+        "website": "https://www.lambinndefynnog.co.uk/",
+        "knownFor": "Great food, well kept ales, big play area"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Bunkhouse at the SWCC",
+        "slug": "bunkhouse-at-the-swcc",
+        "description": "Budget-friendly accommodation specifically for cavers. Located at the South Wales Caving Club, Penwyllt, it offers basic but comfortable facilities. A great option for those exploring OFD.",
+        "type": "bunkhouse",
+        "priceRange": "£",
+        "nearestSpot": "Ogof Ffynnon Ddu (OFD) - 0.1 miles",
+        "website": "https://www.swcc.org.uk/bunkhouse/"
+      },
+      {
+        "name": "YHA Brecon Beacons",
+        "slug": "yha-brecon-beacons",
+        "description": "A comfortable and well-equipped hostel in a scenic location. Offers a range of dorm rooms and private rooms. A good option for budget-conscious travellers. Not close to any specific caves, but in the area.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Dan yr Ogof Showcaves - 8 miles",
+        "website": "https://www.yha.org.uk/hostel/yha-brecon-beacons"
+      },
+      {
+        "name": "Penpont",
+        "slug": "penpont",
+        "description": "A historic estate offering luxury accommodation in a beautiful setting. The ideal relaxing getaway after a hard day caving. The estate borders the River Usk and is a designated Area of Outstanding Natural Beauty.",
+        "type": "b&b",
+        "priceRange": "£££",
+        "nearestSpot": "Dan yr Ogof Showcaves - 12 miles",
+        "website": "https://penpont.com/"
+      },
+      {
+        "name": "Abercraf Campsite",
+        "slug": "abercraf-campsite",
+        "description": "A basic campsite near Dan yr Ogof. Good option for those wanting to camp near the show caves. Tent and caravan pitches are available.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Dan yr Ogof Showcaves - 1 mile",
+        "website": "http://abercrafcampsite.co.uk/"
+      },
+      {
+        "name": "The Tanners Arms",
+        "slug": "the-tanners-arms",
+        "description": "A traditional Welsh Inn providing a comfortable place to stay while caving in the Brecon Beacons, close to the waterfalls.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Porth yr Ogof - 1 mile",
+        "website": "https://www.tannersarmsystradfellte.co.uk/"
+      },
+      {
+        "name": "Llwyn-y-Celyn Guest House",
+        "slug": "llwyn-y-celyn-guest-house",
+        "description": "Located in Libanus, a very short drive from Brecon. The guesthouse offers a delicious breakfast and comfortable rooms. An ideal base to explore the Beacons, after a long day caving.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Porth yr Ogof - 8 miles",
+        "website": "https://www.llwyn-y-celyn.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Brecon Beacons Ultra",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "A challenging ultra-marathon through the Brecon Beacons National Park. Although primarily a running event, the route traverses some of the caving areas, offering impressive views (from above!).",
+      "website": "https://www.breconbeaconsultra.com/",
+      "relevantActivities": [
+        "caving"
+      ],
+      "registrationCost": 95
+    },
+    {
+      "name": "Wales Outdoors Events",
+      "type": "multi-activities",
+      "monthTypical": "Recurring Monthly",
+      "description": "Wales Outdoors offers a range of outdoor activities, including guided caving trips, throughout the year.",
+      "website": "https://www.walesoutdoors.co.uk/",
+      "relevantActivities": [
+        "caving",
+        "gorge-walking",
+        "climbing"
+      ],
+      "registrationCost": 55
+    }
+  ],
+  "keywords": {
+    "primary": "caving brecon beacons",
+    "secondary": [
+      "OFD caving",
+      "Porth yr Ogof",
+      "Dan yr Ogof",
+      "caving South Wales",
+      "guided caving Brecon Beacons"
+    ],
+    "longTail": [
+      "caving Brecon Beacons for beginners",
+      "Ogof Ffynnon Ddu permit",
+      "guided caving trips Brecon Beacons",
+      "Porth yr Ogof water level",
+      "caving gear hire Brecon Beacons",
+      "best caves Brecon Beacons",
+      "South Wales Caving Club",
+      "caving near Ystradfellte",
+      "caving Brecon Beacons with children",
+      "Cwm Dwr cave",
+      "Ogof Draenen cave"
+    ],
+    "localIntent": [
+      "caving near Brecon",
+      "caving near Ystradgynlais",
+      "caving near Sennybridge",
+      "caving near Merthyr Tydfil"
+    ],
+    "commercialIntent": [
+      "guided caving Brecon Beacons price",
+      "book caving Brecon Beacons",
+      "caving Brecon Beacons tour",
+      "caving equipment Brecon Beacons",
+      "caving permit Brecon Beacons"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "snowdonia",
+        "label": "Caving in Snowdonia"
+      },
+      {
+        "regionSlug": "peak-district",
+        "label": "Caving in Peak District"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Brecon Beacons"
+      },
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in Brecon Beacons"
+      },
+      {
+        "activityTypeSlug": "gorge-walking",
+        "label": "Gorge Walking in Brecon Beacons"
+      },
+      {
+        "activityTypeSlug": "climbing",
+        "label": "Climbing in Brecon Beacons"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Adventure Britain",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Phoenix House, Enterprise Park, Swansea SA7 9FF",
+      "postcode": "SA7 9FF",
+      "lat": 51.65,
+      "lng": -3.883,
+      "phone": "01792 702755",
+      "website": "https://www.adventurebritain.com/",
+      "googleRating": 4.8,
+      "reviewCount": 150,
+      "description": "Your gateway to unforgettable Welsh adventures, offering a range of outdoor activities.",
+      "relevantActivities": [
+        "caving",
+        "canyoning",
+        "climbing",
+        "gorge-walking",
+        "mtb"
+      ],
+      "services": [
+        "guided tours",
+        "equipment rental",
+        "instruction"
+      ],
+      "priceRange": "££",
+      "notes": "A well-established adventure company in the Brecon Beacons area.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Black Mountain Adventure",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Blaenau, Abercraf, Swansea SA9 1SG",
+      "postcode": "SA9 1SG",
+      "lat": 51.807,
+      "lng": -3.713,
+      "phone": "01639 731022",
+      "website": "https://www.blackmountainadventure.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 80,
+      "description": "Offers unforgettable adventures in the Brecon Beacons, including caving and other outdoor pursuits.",
+      "relevantActivities": [
+        "caving",
+        "multi-activities-mtb",
+        "sup",
+        "gorge-walking"
+      ],
+      "services": [
+        "guided tours",
+        "instruction",
+        "equipment"
+      ],
+      "priceRange": "££",
+      "notes": "A popular choice for adventure seekers in the Brecon Beacons.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Starless River",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 4A, Gilwern Industrial Estate, Gilwern, Abergavenny NP7 0AR",
+      "postcode": "NP7 0AR",
+      "lat": 51.833,
+      "lng": -3.083,
+      "phone": "01873 831969",
+      "website": "https://www.starlessriver.com/",
+      "googleRating": 4.7,
+      "reviewCount": 35,
+      "description": "A specialist caving gear shop providing equipment and advice for cavers of all levels.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "equipment sales",
+        "equipment rental",
+        "advice"
+      ],
+      "priceRange": "££",
+      "notes": "An essential resource for anyone planning to go caving in the Brecon Beacons.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "The Ancient Briton",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Pen-y-Cae Inn, Brecon Road, Pen-y-cae, Swansea SA9 1FA",
+      "postcode": "SA9 1FA",
+      "lat": 51.785,
+      "lng": -3.648,
+      "phone": "01639 730284",
+      "website": "http://www.ancientbriton.co.uk/",
+      "googleRating": 4.3,
+      "reviewCount": 450,
+      "description": "A pub and restaurant located in Pen-y-Cae, perfect for a meal and a drink after a caving adventure.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "A popular spot for post-caving refreshment.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Gwyn Arms",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Glyntawe, Abercraf, Swansea SA9 1GX",
+      "postcode": "SA9 1GX",
+      "lat": 51.804,
+      "lng": -3.74,
+      "phone": "01639 730225",
+      "website": null,
+      "googleRating": 4.2,
+      "reviewCount": 280,
+      "description": "A traditional pub in Glyntawe, offering a warm welcome and hearty meals to cavers and other visitors.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "A good option for a post-caving meal and pint.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "The Felin Fach Griffin",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Felin Fach, Brecon LD3 0UB",
+      "postcode": "LD3 0UB",
+      "lat": 52.116,
+      "lng": -3.346,
+      "phone": "01874 620111",
+      "website": "https://eatdrinksleep.ltd.uk/felin-fach-griffin/",
+      "googleRating": 4.5,
+      "reviewCount": 600,
+      "description": "A renowned gastropub offering delicious food and a comfortable atmosphere, ideal for relaxing after a caving trip.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "£££",
+      "notes": "A slightly more upmarket option for post-caving dining.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Dan yr Ogof Showcaves",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Dan-yr-Ogof, Abercraf, Swansea SA9 1GS",
+      "postcode": "SA9 1GS",
+      "lat": 51.813,
+      "lng": -3.686,
+      "phone": "01639 730284",
+      "website": "https://www.showcaves.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 3500,
+      "description": "Home to a network of stunning caves, including the Cathedral Cave and Bone Cave, with guided tours available.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "guided tours",
+        "cafe",
+        "gift shop"
+      ],
+      "priceRange": "££",
+      "notes": "While primarily a tourist attraction, it's relevant due to the cave systems.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Dan yr Ogof Cafe",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Dan-yr-Ogof, Abercraf, Swansea SA9 1GS",
+      "postcode": "SA9 1GS",
+      "lat": 51.813,
+      "lng": -3.686,
+      "phone": "01639 730284",
+      "website": "https://www.showcaves.co.uk/",
+      "googleRating": 3.8,
+      "reviewCount": 150,
+      "description": "Cafe at Dan yr Ogof, ideal for snacks and refreshments after exploring the caves.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "Convenient for a quick bite after visiting the caves.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Cotswold Outdoor",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 1, Parc Trostre Retail Park, Llanelli SA14 9RX",
+      "postcode": "SA14 9RX",
+      "lat": 51.684,
+      "lng": -4.133,
+      "phone": "01554 777770",
+      "website": "https://www.cotswoldoutdoor.com/",
+      "googleRating": 4.2,
+      "reviewCount": 180,
+      "description": "A large outdoor retailer with a range of caving gear and equipment.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "equipment sales",
+        "advice"
+      ],
+      "priceRange": "££",
+      "notes": "Good for general outdoor equipment, including some caving gear.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Brecon Beacons National Park Visitor Centre (The Mountain Centre)",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Libanus, Brecon LD3 8ER",
+      "postcode": "LD3 8ER",
+      "lat": 51.928,
+      "lng": -3.426,
+      "phone": "01874 623366",
+      "website": "https://www.breconbeacons.org/",
+      "googleRating": 4.5,
+      "reviewCount": 1200,
+      "description": "Provides information and resources about the Brecon Beacons National Park, including caving opportunities.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "information",
+        "maps",
+        "advice"
+      ],
+      "priceRange": "£",
+      "notes": "A good place to start when planning a caving trip in the area.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Call of the Wild",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Mynydd Llysiau, Pontneddfechan, Glynneath, Neath SA11 5NP",
+      "postcode": "SA11 5NP",
+      "lat": 51.775,
+      "lng": -3.572,
+      "phone": "01639 700388",
+      "website": "https://www.callofthewild.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 110,
+      "description": "Offering instructor-led adventures including caving within the Brecon Beacons National Park.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "guided tours",
+        "equipment rental",
+        "team building"
+      ],
+      "priceRange": "££",
+      "notes": "An experienced provider of outdoor activities.",
+      "inDatabase": false,
+      "priority": "medium"
+    }
+  ]
+}

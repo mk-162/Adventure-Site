@@ -1,0 +1,850 @@
+{
+  "regionSlug": "pembrokeshire",
+  "activityTypeSlug": "hiking",
+  "title": "Hiking in Pembrokeshire",
+  "strapline": "Epic cliff walks and hidden coves: discover Pembrokeshire's coastal trails.",
+  "metaTitle": "Hiking Pembrokeshire | Coastal Trails & Walks | Adventure Wales",
+  "metaDescription": "Explore the Pembrokeshire Coast Path! Discover stunning hiking trails, hidden beaches and dramatic cliffs. Plan your Pembrokeshire hiking adventure now.",
+  "heroAlt": "Hikers on the Pembrokeshire Coast Path looking out over the sea towards St Davids Head.",
+  "introduction": "If you're serious about hiking, Pembrokeshire is calling. Forget gentle strolls – this is where the land meets the sea in a dramatic clash of cliffs, hidden coves, and wildflower meadows. The Pembrokeshire Coast Path, all 186 miles of it, is the star, but don't think you need to tackle the whole thing at once. The beauty of hiking Pembrokeshire lies in the diversity of its shorter sections. \n\nWhat makes it special? It's not just the scenery, it's the feeling of wildness. One minute you're dodging gorse bushes on a clifftop, the next you're descending into a secluded bay only accessible on foot. The birdlife is incredible – puffins on Skomer, choughs wheeling overhead, and the constant cry of gulls. And the history is palpable, from ancient Iron Age forts to the remnants of a once-thriving slate industry.\n\nHiking in Pembrokeshire isn't always a walk in the park. Expect some serious ascents and descents, exposed sections where the wind howls, and the occasional scramble over rocks. Mud is a given, especially after rain. But the rewards are immense: panoramic views that stretch for miles, the satisfaction of reaching a hidden cove, and the sheer exhilaration of being in such a raw and beautiful landscape.\n\nWho's it best for? Seasoned hikers will relish the challenge of the longer routes, while those new to hiking can find shorter, easier sections to enjoy. Families with older children will also love it, but keep a close eye near the cliff edges. If you love dramatic scenery, wildlife, and a sense of adventure, then Pembrokeshire's trails are for you.",
+  "bestSeason": "May-September",
+  "difficultyRange": "Easy to Challenging",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "St Davids Head Circular Walk",
+      "slug": "st-davids-head-circular",
+      "description": "A classic Pembrokeshire hike around the dramatic St Davids Head peninsula. Expect stunning coastal views, rugged cliffs, and the chance to spot seals. The route includes the Iron Age promontory fort of Carn Llidi.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": "7km",
+      "elevationGain": "250m",
+      "bestFor": "Experienced walkers seeking dramatic coastal scenery and historical interest.",
+      "notSuitableFor": "Those with limited mobility or a fear of heights due to some cliffside sections.",
+      "bestSeason": "May-September",
+      "parking": "National Trust car park at St Davids Head (Porthmelgan). Can get busy, especially in summer. £5 all day.",
+      "startPoint": {
+        "name": "Porthmelgan Car Park",
+        "lat": 51.907,
+        "lng": -5.281
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": null,
+      "insiderTip": "The best time to walk St Davids Head is late afternoon, as the sun sets behind Ramsey Island, offering incredible light."
+    },
+    {
+      "name": "Strumble Head Loop",
+      "slug": "strumble-head-loop",
+      "description": "A relatively short but rewarding walk around Strumble Head, famous for its lighthouse and excellent wildlife viewing opportunities. Keep an eye out for seals, porpoises, and a variety of seabirds. The views of the coastline are panoramic.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours",
+      "distance": "5km",
+      "elevationGain": "150m",
+      "bestFor": "Families, birdwatchers, and those looking for a shorter, accessible coastal walk.",
+      "notSuitableFor": "Those seeking a very challenging hike or dramatic elevation gain.",
+      "bestSeason": "All year round, but best in spring and summer for wildlife viewing.",
+      "parking": "Small car park at Strumble Head Lighthouse. Free.",
+      "startPoint": {
+        "name": "Strumble Head Lighthouse Car Park",
+        "lat": 51.965,
+        "lng": -5.197
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Bring binoculars! Strumble Head is one of the best places in Pembrokeshire to spot seals and porpoises from the shore."
+    },
+    {
+      "name": "Marloes Peninsula Circular",
+      "slug": "marloes-peninsula-circular",
+      "description": "A varied walk around the Marloes Peninsula, featuring sandy beaches, dramatic cliffs, and stunning views of Skomer Island. Look out for the iconic Gateholm Island and the remnants of a wartime radar station.",
+      "difficulty": "Moderate",
+      "duration": "4-5 hours",
+      "distance": "10km",
+      "elevationGain": "200m",
+      "bestFor": "Those looking for a mix of coastal scenery, wildlife, and historical interest.",
+      "notSuitableFor": "Those with mobility issues, as there are some steep sections and uneven terrain.",
+      "bestSeason": "April-October",
+      "parking": "National Trust car park at Marloes Sands. Can get very busy in summer. £5 all day.",
+      "startPoint": {
+        "name": "Marloes Sands Car Park",
+        "lat": 51.727,
+        "lng": -5.188
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": null,
+      "insiderTip": "Check the tide times before you go! At low tide, you can walk across to Gateholm Island (but be careful not to get cut off!)."
+    },
+    {
+      "name": "Stackpole Estate and Barafundle Bay Walk",
+      "slug": "stackpole-estate-barafundle-bay",
+      "description": "A gentler walk through the beautiful Stackpole Estate, featuring woodland, lakes, and the stunning Barafundle Bay. This walk is perfect for families and those looking for a less challenging coastal experience. Don't miss the lily ponds!",
+      "difficulty": "Easy",
+      "duration": "2-3 hours",
+      "distance": "6km",
+      "elevationGain": "50m",
+      "bestFor": "Families, casual walkers, and those looking for a less strenuous coastal walk.",
+      "notSuitableFor": "Those seeking a challenging hike or dramatic cliffside scenery.",
+      "bestSeason": "All year round, but best in spring and summer for wildflowers and sunshine.",
+      "parking": "National Trust car park at Stackpole Quay. Can get busy in summer. £5 all day.",
+      "startPoint": {
+        "name": "Stackpole Quay Car Park",
+        "lat": 51.649,
+        "lng": -4.912
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": null,
+      "insiderTip": "Pack a picnic and enjoy it on Barafundle Bay – regularly voted one of the best beaches in Britain."
+    },
+    {
+      "name": "Green Bridge of Wales and Elegug Stacks Walk",
+      "slug": "green-bridge-wales-elegug",
+      "description": "A spectacular coastal walk along the Castlemartin peninsula, featuring the iconic Green Bridge of Wales and the impressive Elegug Stacks. This area is part of a military firing range, so check access restrictions before you go!.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": "8km",
+      "elevationGain": "100m",
+      "bestFor": "Experienced walkers who are comfortable with exposed coastal conditions.",
+      "notSuitableFor": "Those with young children or a fear of heights, due to some cliffside sections. Check firing range access before visiting.",
+      "bestSeason": "May-September (check firing range schedule)",
+      "parking": "Car park near the Green Bridge of Wales. Free.",
+      "startPoint": {
+        "name": "Green Bridge of Wales Car Park",
+        "lat": 51.602,
+        "lng": -4.956
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Check the MOD firing range schedule online before you go! Access to this area is often restricted due to live firing exercises. Avoid weekends to increase your chances of access."
+    },
+    {
+      "name": "Dinas Island Circular Walk",
+      "slug": "dinas-island-circular",
+      "description": "A beautiful circular walk around the Dinas Island peninsula, offering stunning views of Fishguard Bay and the surrounding coastline. This walk features a mix of woodland, cliffs, and beaches.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": "7km",
+      "elevationGain": "200m",
+      "bestFor": "Those looking for a varied coastal walk with stunning views.",
+      "notSuitableFor": "Those with mobility issues, as there are some steep sections and uneven terrain.",
+      "bestSeason": "All year round, but best in spring and summer for wildflowers and sunshine.",
+      "parking": "Car park at Pwllgwaelod beach. Can get busy in summer. Pay and display.",
+      "startPoint": {
+        "name": "Pwllgwaelod Car Park",
+        "lat": 52.007,
+        "lng": -4.941
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Stop for lunch at the Old Sailors pub in Pwllgwaelod after your walk – they have a lovely beer garden overlooking the beach."
+    },
+    {
+      "name": "Newport to Cwm-yr-Eglwys Coastal Path",
+      "slug": "newport-to-cwm-yr-eglwys",
+      "description": "A picturesque section of the Pembrokeshire Coast Path, linking the charming town of Newport with the unique village of Cwm-yr-Eglwys, famous for its partially submerged church. Expect stunning coastal scenery and sandy beaches.",
+      "difficulty": "Moderate",
+      "duration": "4-5 hours",
+      "distance": "10km",
+      "elevationGain": "250m",
+      "bestFor": "Those looking for a scenic coastal walk with a cultural twist.",
+      "notSuitableFor": "Those with mobility issues, as there are some steep sections and uneven terrain.",
+      "bestSeason": "All year round, but best in spring and summer for wildflowers and sunshine.",
+      "parking": "Car park in Newport. Pay and display. Alternatively, park in Cwm-yr-Eglwys (limited spaces).",
+      "startPoint": {
+        "name": "Newport Car Park",
+        "lat": 51.988,
+        "lng": -4.802
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Consider taking the Puffin Shuttle bus back to your starting point if you don't want to walk the route twice."
+    },
+    {
+      "name": "Skomer Island Views from Martin's Haven",
+      "slug": "skomer-island-views",
+      "description": "A short but rewarding walk from Martin's Haven, offering stunning views of Skomer Island, famous for its puffin colony. This walk is relatively easy and suitable for families. You won't land on the island on this route, but views are spectacular.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": "3km",
+      "elevationGain": "50m",
+      "bestFor": "Families, birdwatchers, and those looking for a shorter, accessible coastal walk with the chance to see Skomer Island.",
+      "notSuitableFor": "Those seeking a challenging hike or dramatic elevation gain. This route does not include a trip to Skomer itself.",
+      "bestSeason": "April-July (puffin season)",
+      "parking": "Large car park at Martin's Haven. Pay and display.",
+      "startPoint": {
+        "name": "Martin's Haven Car Park",
+        "lat": 51.741,
+        "lng": -5.253
+      },
+      "estimatedCost": "Free (parking £5-7)",
+      "operatorSlug": null,
+      "insiderTip": "Arrive early, especially during peak puffin season, as the car park fills up quickly. The boat trips to Skomer also sell out in advance, so book online if you plan to visit the island."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Pembrokeshire's coastal weather can be unpredictable. Be prepared for sunshine, rain, and wind, sometimes all in the same day! Check the forecast before you go and be aware that conditions can change rapidly. Strong winds and heavy rain can make cliffside paths dangerous.",
+    "weatherLinks": [
+      {
+        "name": "Met Office",
+        "url": "https://www.metoffice.gov.uk/weather/forecast/uk/wales/pembrokeshire"
+      },
+      {
+        "name": "BBC Weather",
+        "url": "https://www.bbc.co.uk/weather/2641170"
+      }
+    ],
+    "gearChecklist": [
+      "Waterproof jacket and trousers – essential, even on sunny days.",
+      "Hiking boots – ankle support is recommended for uneven terrain.",
+      "Layers of clothing – easy to add or remove as the weather changes.",
+      "Sunscreen and hat – protect yourself from the sun, even on cloudy days.",
+      "Map and compass/GPS – navigation is crucial, especially on longer routes.",
+      "First-aid kit – be prepared for minor injuries.",
+      "Plenty of water and snacks – stay hydrated and energized.",
+      "Mobile phone – for emergencies, but don't rely on signal in all areas.",
+      "Binoculars – for wildlife viewing.",
+      "Rucksack - to carry all your essentials"
+    ],
+    "gearHire": [
+      {
+        "name": "TYF Adventure",
+        "location": "St Davids",
+        "url": "https://www.tyf.com/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5-6h",
+          "route": "Via M4"
+        },
+        {
+          "from": "Manchester",
+          "duration": "5-6h",
+          "route": "Via M6 and M50/A40"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "4-5h",
+          "route": "Via M5 and A40"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "2-3h",
+          "route": "Via M4 and A40"
+        }
+      ],
+      "publicTransport": "Haverfordwest and Fishguard are the main train stations. The Puffin Shuttle bus service provides access to many coastal locations. National Express coaches also serve Haverfordwest.",
+      "parkingTips": "Parking can be limited, especially during peak season. Arrive early, particularly at popular spots like St Davids Head and Marloes Sands. Consider using park and ride services where available."
+    },
+    "safety": "Stick to marked paths and be aware of cliff edges. Check tide times before walking on beaches. Let someone know your planned route and estimated return time. In case of emergency, dial 999 and ask for the Coastguard. Be aware of livestock on the coast path."
+  },
+  "faqs": [
+    {
+      "question": "How long does it take to walk the entire Pembrokeshire Coast Path?",
+      "answer": "Most people take between 12 and 15 days to walk the entire 186-mile Pembrokeshire Coast Path. This allows for an average of 12-15 miles per day, with rest days factored in. Some ultra-runners have completed it in under 48 hours!"
+    },
+    {
+      "question": "Is the Pembrokeshire Coast Path suitable for beginners?",
+      "answer": "While the entire path is challenging, many shorter sections are suitable for beginners. The Stackpole Estate and Barafundle Bay walk is a good option for those new to hiking. Remember to wear appropriate footwear and be prepared for changes in weather."
+    },
+    {
+      "question": "Are dogs allowed on the Pembrokeshire Coast Path?",
+      "answer": "Yes, dogs are allowed on most sections of the Pembrokeshire Coast Path, but they must be kept on a lead, especially near livestock. Some beaches have seasonal dog restrictions. Be responsible and clean up after your dog."
+    },
+    {
+      "question": "What is the best time of year to hike in Pembrokeshire?",
+      "answer": "The best time to hike in Pembrokeshire is from May to September, when the weather is generally milder and drier. However, even during these months, be prepared for rain and wind. Spring and early summer are ideal for wildflowers and birdwatching."
+    },
+    {
+      "question": "Do I need to book accommodation in advance for hiking the Pembrokeshire Coast Path?",
+      "answer": "Yes, it is highly recommended to book accommodation in advance, especially during peak season (June-August). Popular towns like St Davids, Tenby and Newport get booked up quickly. Consider booking several months in advance to secure your preferred choice."
+    },
+    {
+      "question": "Are there guided hiking tours available in Pembrokeshire?",
+      "answer": "Yes, several companies offer guided hiking tours in Pembrokeshire. TYF Adventure and Preseli Venture are well-established operators that offer a range of guided walks and other outdoor activities. Guided tours can be a great option for those who want to learn more about the area and have a stress-free hiking experience."
+    },
+    {
+      "question": "How much does it cost to walk the Pembrokeshire Coast Path?",
+      "answer": "The cost of walking the Pembrokeshire Coast Path varies depending on your accommodation choices, dining preferences, and whether you opt for guided tours. Budget around £50-£100 per day for accommodation, food, and transportation. Parking fees also need to be considered."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Ma Simes",
+        "slug": "ma-simes",
+        "address": "High Street, St Davids, Pembrokeshire SA62 6SB",
+        "lat": 51.882,
+        "lng": -5.258,
+        "description": "A long-established outdoor shop in the heart of St Davids. They stock a wide range of hiking gear, clothing, and equipment, from waterproof jackets to hiking boots.",
+        "website": "https://www.masimes.co.uk/",
+        "phone": "01437 720732",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 85
+      },
+      {
+        "name": "TYF Shop",
+        "slug": "tyf-shop",
+        "address": "35 High Street, St Davids, Pembrokeshire SA62 6SA",
+        "lat": 51.881,
+        "lng": -5.259,
+        "description": "Part of the TYF Adventure company, they offer a curated selection of high-quality outdoor gear, clothing, and equipment. Known for their sustainable and ethically sourced products.",
+        "website": "https://www.tyf.com/shop",
+        "phone": "01437 721611",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 112
+      },
+      {
+        "name": "Mountain Warehouse",
+        "slug": "mountain-warehouse-haverfordwest",
+        "address": "Unit 3A, Riverside Quay, Haverfordwest SA61 2LJ",
+        "lat": 51.802,
+        "lng": -4.968,
+        "description": "A national chain offering a wide range of outdoor gear and clothing at competitive prices. A good option for budget-conscious hikers.",
+        "website": "https://www.mountainwarehouse.com/",
+        "phone": "01437 760685",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.3,
+        "reviewCount": 305
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Shed",
+        "slug": "the-shed-porthgain",
+        "address": "Porthgain, Haverfordwest SA62 5BN",
+        "lat": 51.942,
+        "lng": -5.193,
+        "description": "Famous for its fresh seafood, caught daily by local fishermen. Their fish and chips are legendary, and the atmosphere is relaxed and informal. Perfect after a day of hiking the coast path.",
+        "vibe": "Seafood shack",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Fresh seafood, fish and chips"
+      },
+      {
+        "name": "The Sloop Inn",
+        "slug": "the-sloop-inn-porthgain",
+        "address": "Porthgain, Haverfordwest SA62 5BN",
+        "lat": 51.942,
+        "lng": -5.194,
+        "description": "A traditional pub in the picturesque harbour of Porthgain. They serve hearty pub fare and local ales. A great spot to warm up by the fire after a coastal walk.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "https://www.thesloopinn.co.uk/",
+        "knownFor": "Real ales, hearty pub food"
+      },
+      {
+        "name": "The Sampler",
+        "slug": "the-sampler-st-davids",
+        "address": "13 High Street, St Davids, Haverfordwest SA62 6SA",
+        "lat": 51.882,
+        "lng": -5.259,
+        "description": "A deli and cafe serving delicious sandwiches, salads, and cakes. They also have a great selection of local cheeses and produce. Ideal for a quick and tasty lunch after exploring St Davids Head.",
+        "vibe": "Casual cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Sandwiches, local produce"
+      },
+      {
+        "name": "Cafe Mor",
+        "slug": "cafe-mor-freshwater-west",
+        "address": "Freshwater West, Castlemartin, Pembroke SA71 5AH",
+        "lat": 51.652,
+        "lng": -5.079,
+        "description": "A unique street food vendor serving delicious seaweed-based dishes. Their lobster roll is a must-try. Located right on Freshwater West beach, it's the perfect spot for a post-surf or hike treat.",
+        "vibe": "Beachside food truck",
+        "priceRange": "££",
+        "website": "http://www.cafe-mor.com/",
+        "knownFor": "Seaweed-based dishes, lobster roll"
+      },
+      {
+        "name": "CWT",
+        "slug": "cwt-st-davids",
+        "address": "12 High Street, St Davids, Pembrokeshire SA62 6SA",
+        "lat": 51.882,
+        "lng": -5.259,
+        "description": "A delightful cafe offering delicious Welsh cakes, homemade soups and fresh coffee. A great spot to relax and refuel after a hike around St Davids.",
+        "vibe": "Cosy cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Welsh cakes, soups, coffee"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "St Davids YHA",
+        "slug": "st-davids-yha",
+        "description": "A budget-friendly option close to St Davids Head, offering dorm rooms and private rooms. A great base for exploring the northern Pembrokeshire coast.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "St Davids Head (3km)",
+        "website": "https://www.yha.org.uk/hostel/yha-st-davids"
+      },
+      {
+        "name": "Celtic Camping",
+        "slug": "celtic-camping",
+        "description": "A clifftop campsite with stunning sea views, located near St Davids. Perfect for those who want to be close to nature and enjoy the Pembrokeshire coastline.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "St Davids Head (5km)",
+        "website": "https://www.celtic-camping.co.uk/"
+      },
+      {
+        "name": "Warpool Court Hotel",
+        "slug": "warpool-court-hotel",
+        "description": "A mid-range hotel with sea views, located between St Davids and St Justinians. A comfortable base for exploring the area.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "St Davids Head (2km)",
+        "website": "https://www.warpoolcourthotel.com/"
+      },
+      {
+        "name": "The Grove Narberth",
+        "slug": "the-grove-narberth",
+        "description": "Luxury accommodation offering a spa and fine-dining. Perfect for a relaxing trip.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Stackpole Estate (20km)",
+        "website": "https://thegrove-narberth.co.uk/"
+      },
+      {
+        "name": "Bryn Berwyn B&B",
+        "slug": "bryn-berwyn-bb",
+        "description": "A charming B&B near Newport, with stunning views of the Preseli Hills. A great option for those exploring the northern Pembrokeshire coast.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Newport to Cwm-yr-Eglwys (5km)",
+        "website": "https://www.brynberwyn.co.uk/"
+      },
+      {
+        "name": "Preseli Hills Glamping",
+        "slug": "preseli-hills-glamping",
+        "description": "A luxury glamping site with stunning views of the Preseli Hills. Perfect for a relaxing and peaceful getaway.",
+        "type": "glamping",
+        "priceRange": "££",
+        "nearestSpot": "Newport to Cwm-yr-Eglwys (8km)",
+        "website": "https://preselihillsglamping.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Pembrokeshire Coast Path Challenge",
+      "type": "race",
+      "monthTypical": "May",
+      "description": "A challenging trail running event along the Pembrokeshire Coast Path, with various distances available.",
+      "website": "https://www.pembrokeshirecoastalforum.org.uk/events/pembrokeshire-coast-path-challenge/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 45
+    },
+    {
+      "name": "Saundersfoot New Year's Day Swim",
+      "type": "festival",
+      "monthTypical": "January",
+      "description": "Whilst this isn't specifically a hike, many use the new year's day swim as a way to get out into the outdoors after hiking on the beaches.",
+      "website": "https://saundersfootnyds.co.uk/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 0
+    }
+  ],
+  "keywords": {
+    "primary": "hiking pembrokeshire",
+    "secondary": [
+      "pembrokeshire coast path",
+      "coastal walks pembrokeshire",
+      "st davids head hiking",
+      "walking pembrokeshire",
+      "pembrokeshire hiking trails"
+    ],
+    "longTail": [
+      "hiking pembrokeshire coast path",
+      "best hiking trails pembrokeshire",
+      "easy hiking trails pembrokeshire",
+      "dog friendly hikes pembrokeshire",
+      "family friendly hikes pembrokeshire",
+      "guided hikes pembrokeshire",
+      "hiking pembrokeshire coast path national trail",
+      "hiking pembrokeshire st davids head circular walk",
+      "pembrokeshire coast path hiking itinerary",
+      "hiking near tenby pembrokeshire"
+    ],
+    "localIntent": [
+      "hiking near st davids",
+      "hiking near tenby",
+      "hiking near haverfordwest",
+      "hiking near fishguard",
+      "hiking near pembroke"
+    ],
+    "commercialIntent": [
+      "guided hiking tours pembrokeshire",
+      "pembrokeshire coast path guided walks",
+      "hiking gear shop pembrokeshire",
+      "pembrokeshire coast path accommodation packages",
+      "best price hiking pembrokeshire"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "snowdonia",
+        "label": "Hiking in Snowdonia"
+      },
+      {
+        "regionSlug": "brecon-beacons",
+        "label": "Hiking in the Brecon Beacons"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "coasteering",
+        "label": "Coasteering in Pembrokeshire"
+      },
+      {
+        "activityTypeSlug": "surfing",
+        "label": "Surfing in Pembrokeshire"
+      },
+      {
+        "activityTypeSlug": "sea-kayaking",
+        "label": "Sea Kayaking in Pembrokeshire"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "TYF Adventure",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Nant Y Croi, St Davids, Haverfordwest SA62 6PY",
+      "postcode": "SA62 6PY",
+      "lat": 51.885,
+      "lng": -5.265,
+      "phone": "01437 721611",
+      "website": "https://www.tyf.com/",
+      "googleRating": 4.7,
+      "reviewCount": 350,
+      "description": "Adventure with purpose. Explore. Inspire. Protect. They offer a wide range of outdoor activities.",
+      "relevantActivities": [
+        "hiking",
+        "coasteering",
+        "sea-kayaking",
+        "surfing",
+        "climbing",
+        "sup"
+      ],
+      "services": [
+        "guided hikes",
+        "coasteering",
+        "sea kayaking",
+        "climbing courses"
+      ],
+      "priceRange": "£££",
+      "notes": "Well-established and reputable adventure company.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Ma Simes Surf Hut",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "34 High St, St Davids, Haverfordwest SA62 6AA",
+      "postcode": "SA62 6AA",
+      "lat": 51.881,
+      "lng": -5.267,
+      "phone": "01437 720027",
+      "website": null,
+      "googleRating": 4.6,
+      "reviewCount": 50,
+      "description": "Surf and outdoor gear shop offering equipment and clothing for various activities.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "hiking gear",
+        "outdoor clothing",
+        "equipment rental"
+      ],
+      "priceRange": "££",
+      "notes": "Essential for gear and local advice.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "The Shed",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Porthgain, Haverfordwest SA62 5BN",
+      "postcode": "SA62 5BN",
+      "lat": 51.94,
+      "lng": -5.191,
+      "phone": "01348 831590",
+      "website": "https://theshedporthgain.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 650,
+      "description": "Seafood restaurant in Porthgain, a popular spot for hikers after a coastal walk.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "restaurant",
+        "seafood",
+        "bar"
+      ],
+      "priceRange": "££",
+      "notes": "Great food with harbour views.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Preseli Venture",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Parc Y Big, Mathry, Haverfordwest SA62 5HN",
+      "postcode": "SA62 5HN",
+      "lat": 51.957,
+      "lng": -5.21,
+      "phone": "01348 837709",
+      "website": "https://www.preseliventure.co.uk/",
+      "googleRating": 4.8,
+      "reviewCount": 200,
+      "description": "Coastal adventures in the heart of Pembrokeshire. They provide eco-adventure activities.",
+      "relevantActivities": [
+        "hiking",
+        "coasteering",
+        "kayaking",
+        "surfing",
+        "wild-swimming"
+      ],
+      "services": [
+        "guided hikes",
+        "coasteering",
+        "kayaking tours",
+        "surfing lessons"
+      ],
+      "priceRange": "££",
+      "notes": "Specializes in sustainable tourism.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "The Sloop Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Porthgain, Haverfordwest SA62 5BN",
+      "postcode": "SA62 5BN",
+      "lat": 51.939,
+      "lng": -5.19,
+      "phone": "01348 831449",
+      "website": "https://www.thesloop.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 700,
+      "description": "Traditional pub in Porthgain, popular with walkers on the Pembrokeshire Coast Path.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "pub",
+        "food",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "Historic pub, great for a post-hike pint.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Cafe Mor",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Freshwater West, Castlemartin, Pembroke SA71 5HW",
+      "postcode": "SA71 5HW",
+      "lat": 51.658,
+      "lng": -5.203,
+      "phone": null,
+      "website": "https://www.cafemor.co.uk/",
+      "googleRating": 4.7,
+      "reviewCount": 300,
+      "description": "Award-winning street food van serving seaweed-based dishes on Freshwater West beach.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "street food",
+        "seaweed cuisine"
+      ],
+      "priceRange": "£",
+      "notes": "Unique food experience after a beach hike.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Mountain Warehouse",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 18, Withybush Retail Park, Haverfordwest SA61 2EQ",
+      "postcode": "SA61 2EQ",
+      "lat": 51.805,
+      "lng": -4.979,
+      "phone": "01437 760383",
+      "website": "https://www.mountainwarehouse.com/",
+      "googleRating": 4.3,
+      "reviewCount": 150,
+      "description": "Retailer of outdoor clothing and equipment at affordable prices.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "hiking gear",
+        "outdoor clothing"
+      ],
+      "priceRange": "£",
+      "notes": "Good for budget-friendly gear.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Cambrian Walking Holidays",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "The Old School House, Penrhiwpal, Llandysul SA44 5QH",
+      "postcode": "SA44 5QH",
+      "lat": 52.105,
+      "lng": -4.215,
+      "phone": "01239 851400",
+      "website": "https://www.cambrianwalkingholidays.com/",
+      "googleRating": 5.0,
+      "reviewCount": 12,
+      "description": "Offers self-guided and guided walking holidays in Wales, including Pembrokeshire Coast Path.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "guided hikes",
+        "self-guided tours",
+        "accommodation packages"
+      ],
+      "priceRange": "£££",
+      "notes": "Specializes in long-distance walking holidays.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Celtic Camping",
+      "type": "venue",
+      "category": "accommodation",
+      "address": "St Davids Head, Haverfordwest SA64 6QR",
+      "postcode": "SA64 6QR",
+      "lat": 51.958,
+      "lng": -5.31,
+      "phone": "01348 891378",
+      "website": "https://www.celtic-camping.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 250,
+      "description": "Campsite and glamping site near the Pembrokeshire Coast Path, ideal for hikers.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "camping",
+        "glamping",
+        "caravan site"
+      ],
+      "priceRange": "£",
+      "notes": "Offers stunning coastal views.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Pembrokeshire Coast National Park Authority",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Llanion Park, Pembroke Dock SA72 6DY",
+      "postcode": "SA72 6DY",
+      "lat": 51.696,
+      "lng": -4.913,
+      "phone": "01646 624800",
+      "website": "https://www.pembrokeshirecoast.wales/",
+      "googleRating": 4.6,
+      "reviewCount": 100,
+      "description": "Responsible for maintaining and promoting the Pembrokeshire Coast Path and National Park.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "trail information",
+        "visitor centres",
+        "conservation"
+      ],
+      "priceRange": null,
+      "notes": "The go-to for path conditions and access information.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "The Sampler",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "20 High St, St Davids, Haverfordwest SA62 6AA",
+      "postcode": "SA62 6AA",
+      "lat": 51.881,
+      "lng": -5.267,
+      "phone": "01437 720028",
+      "website": null,
+      "googleRating": 4.5,
+      "reviewCount": 60,
+      "description": "Speciality deli and cafe in St Davids, offering takeaway food and drinks for hikers.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "cafe",
+        "deli",
+        "takeaway"
+      ],
+      "priceRange": "£",
+      "notes": "Good for pre-hike supplies.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "CWT",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "5 Nun St, St Davids, Haverfordwest SA62 6NU",
+      "postcode": "SA62 6NU",
+      "lat": 51.88,
+      "lng": -5.269,
+      "phone": "01437 721940",
+      "website": "https://www.cwtstdavids.co.uk/",
+      "googleRating": 4.8,
+      "reviewCount": 70,
+      "description": "Welsh tapas restaurant in St Davids, perfect for refuelling after a hike.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "restaurant",
+        "Welsh cuisine",
+        "tapas"
+      ],
+      "priceRange": "££",
+      "notes": "Great atmosphere and locally sourced food.",
+      "inDatabase": true,
+      "priority": "medium"
+    }
+  ]
+}

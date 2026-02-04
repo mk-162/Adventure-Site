@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getEventBySlug, getEvents } from "@/lib/queries";
+import { getEventBySlug, getEvents, getAllEventSlugs } from "@/lib/queries";
 import { 
   MapPin, Calendar, Clock, Users, ExternalLink, 
   ChevronRight, Ticket, Trophy, Mountain
@@ -344,5 +344,6 @@ export default async function EventPage({ params }: Props) {
 }
 
 export async function generateStaticParams() {
-  return [];
+  const slugs = await getAllEventSlugs();
+  return slugs.map((slug) => ({ slug }));
 }

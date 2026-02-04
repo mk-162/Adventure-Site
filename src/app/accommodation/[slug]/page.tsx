@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAccommodationBySlug, getAccommodationByRegion, getActivities } from "@/lib/queries";
+import { getAccommodationBySlug, getAccommodationByRegion, getActivities, getAllAccommodationSlugs } from "@/lib/queries";
 import { AccommodationCard } from "@/components/cards/accommodation-card";
 import { AccommodationLocationMap } from "@/components/maps/AccommodationLocationMap";
 import type { MapMarker } from "@/components/ui/MapView";
@@ -345,7 +345,6 @@ export default async function AccommodationPage({ params }: Props) {
 }
 
 export async function generateStaticParams() {
-  // This would ideally fetch all accommodation slugs
-  // For now, return empty to use dynamic rendering
-  return [];
+  const slugs = await getAllAccommodationSlugs();
+  return slugs.map((slug) => ({ slug }));
 }

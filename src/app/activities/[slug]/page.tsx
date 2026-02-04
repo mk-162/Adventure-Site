@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getActivityBySlug, getActivities, getAccommodation } from "@/lib/queries";
+import { getActivityBySlug, getActivities, getAccommodation, getAllActivitySlugs } from "@/lib/queries";
 import { Badge, DifficultyBadge, PriceBadge } from "@/components/ui/badge";
 import { ButtonLink } from "@/components/ui/button";
 import { ActivityCard } from "@/components/cards/activity-card";
@@ -440,4 +440,9 @@ function InfoPill({ icon: Icon, label }: { icon: any; label: string }) {
       <span className="text-sm text-gray-700">{label}</span>
     </div>
   );
+}
+
+export async function generateStaticParams() {
+  const slugs = await getAllActivitySlugs();
+  return slugs.map((slug) => ({ slug }));
 }

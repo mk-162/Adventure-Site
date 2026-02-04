@@ -1022,3 +1022,46 @@ export async function getItinerariesForListing() {
     orderBy: [asc(itineraries.title)],
   });
 }
+
+// =====================
+// SLUG QUERIES FOR STATIC GENERATION
+// =====================
+
+export async function getAllItinerarySlugs() {
+  const result = await db
+    .select({ slug: itineraries.slug })
+    .from(itineraries)
+    .where(eq(itineraries.status, "published"));
+  return result.map((r) => r.slug);
+}
+
+export async function getAllActivitySlugs() {
+  const result = await db
+    .select({ slug: activities.slug })
+    .from(activities)
+    .where(eq(activities.status, "published"));
+  return result.map((r) => r.slug);
+}
+
+export async function getAllAccommodationSlugs() {
+  const result = await db
+    .select({ slug: accommodation.slug })
+    .from(accommodation)
+    .where(eq(accommodation.status, "published"));
+  return result.map((r) => r.slug);
+}
+
+export async function getAllEventSlugs() {
+  const result = await db
+    .select({ slug: events.slug })
+    .from(events)
+    .where(eq(events.status, "published"));
+  return result.map((r) => r.slug);
+}
+
+export async function getAllTagSlugs() {
+  const result = await db
+    .select({ slug: tags.slug })
+    .from(tags);
+  return result.map((r) => r.slug);
+}

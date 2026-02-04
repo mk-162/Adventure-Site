@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { ItineraryView } from "@/components/itinerary/ItineraryView";
 import { EnquireAllVendors } from "@/components/itinerary/EnquireAllVendors";
-import { getItineraryBySlug, getAccommodation } from "@/lib/queries";
+import { getItineraryWithStops, getAccommodation, getAllItinerarySlugs } from "@/lib/queries";
 import { MOCK_ITINERARY, MOCK_STOPS } from "@/lib/mock-itinerary-data";
 
 function getDifficultyColor(difficulty: string): string {
@@ -34,7 +34,7 @@ export default async function ItineraryDetailPage({ params }: Props) {
   // Try fetching from DB
   let data = null;
   try {
-     data = await getItineraryBySlug(slug);
+     data = await getItineraryWithStops(slug);
   } catch (e) {
      console.error("DB Fetch failed, falling back if mock available", e);
   }
@@ -69,7 +69,7 @@ export default async function ItineraryDetailPage({ params }: Props) {
   // Extract unique operators from stops
   const uniqueOperators = Array.from(
     new Map(
-      stops
+      (stops || [])
         .filter(stop => stop.operator)
         .map(stop => [stop.operator!.id, stop.operator!])
     ).values()
@@ -205,7 +205,8 @@ export default async function ItineraryDetailPage({ params }: Props) {
 }
 
 export async function generateStaticParams() {
-    return [{ slug: "ultimate-north-wales-weekend" }];
+  const slugs = await getAllItinerarySlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props) {

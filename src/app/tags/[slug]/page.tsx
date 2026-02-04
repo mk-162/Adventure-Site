@@ -7,6 +7,7 @@ import {
   getTaggedAccommodation,
   getTaggedItineraries,
   getRelatedTags,
+  getAllTagSlugs,
 } from "@/lib/queries";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { AccommodationCard } from "@/components/cards/accommodation-card";
@@ -283,4 +284,9 @@ export default async function TagPage({ params }: TagPageProps) {
       </div>
     </div>
   );
+}
+
+export async function generateStaticParams() {
+  const slugs = await getAllTagSlugs();
+  return slugs.map((slug) => ({ slug }));
 }

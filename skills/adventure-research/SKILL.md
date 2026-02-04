@@ -1,15 +1,114 @@
 ---
 name: adventure-research
-description: Research and populate Welsh adventure operator business data for Adventure Wales directory. Use when gathering operator details, services, pricing, sessions, and contact info from the web.
+description: Research and populate Welsh adventure operator business data for Adventure Wales directory using Gemini API with Google Search grounding. Use when gathering operator details, services, pricing, sessions, and contact info.
 ---
 
 # Adventure Wales Business Research Agent
 
-Research Welsh adventure operators and output structured JSON to populate the Adventure Wales directory.
+Research Welsh adventure operators using **Gemini API with Google Search grounding** and output structured JSON to populate the Adventure Wales directory.
+
+## Environment
+
+Requires `GEMINI_API_KEY` environment variable.
+
+## How It Works
+
+A Python script (`scripts/research-operators.py`) takes an operator from the hitlist, builds a research prompt, and sends it to Gemini 2.0 Flash with Google Search grounding enabled. Gemini searches the web for current business data (prices, contact info, sessions, ratings) and returns structured JSON.
+
+```bash
+# Research all tier 1 operators
+GEMINI_API_KEY=xxx python scripts/research-operators.py --tier 1
+
+# Research a single operator
+GEMINI_API_KEY=xxx python scripts/research-operators.py --single adventure-britain
+
+# Research by region
+GEMINI_API_KEY=xxx python scripts/research-operators.py --region pembrokeshire
+
+# Dry run (shows prompts without calling API)
+GEMINI_API_KEY=xxx python scripts/research-operators.py --tier 1 --dry-run
+```
+
+## Gemini API Setup
+
+Uses `google.genai` SDK (new SDK) with Google Search grounding:
+
+```python
+from google import genai
+from google.genai import types
+
+client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+
+response = client.models.generate_content(
+    model="gemini-2.0-flash",
+    contents=prompt,
+    config=types.GenerateContentConfig(
+        tools=[types.Tool(google_search=types.GoogleSearch())],
+        temperature=0.3,  # low temp for factual research
+        max_output_tokens=4000,
+    )
+)
+```
+
+Key choices:
+- **`google.genai`** (new SDK), not `google.generativeai` (deprecated) — grounding works reliably with this SDK for text/research tasks
+- **Google Search grounding** — lets Gemini search operator websites, Google Maps, TripAdvisor for current data
+- **Low temperature (0.3)** — we want factual data, not creative writing
+- **`gemini-2.0-flash`** — fast, cheap, good at structured extraction
+
+## Research Prompt Template
+
+For each operator, the prompt should include:
+
+```
+You are a research assistant gathering business data for Adventure Wales,
+an adventure tourism directory for Wales.
+
+OPERATOR TO RESEARCH:
+- Name: {name}
+- Website: {website}
+- Address: {address}
+- Category: {category}
+- Known activity types: {activityTypes}
+- Regions: {regions}
+
+RESEARCH TASKS:
+1. Visit their website and extract: contact details (phone, email, full address
+   with postcode), all activities/services with current pricing, session times
+   and durations, group sizes, minimum ages, qualifications/certifications
+   (AALA, BCU, MTA etc), what's included, what to bring, booking URL,
+   opening seasons, meeting points, parking info.
+
+2. Find their Google Maps listing: extract the Google rating (number out of 5),
+   total review count, and verified address/coordinates. DO NOT copy any
+   review text.
+
+3. Find their TripAdvisor page URL. DO NOT copy any review text.
+
+4. Write an original 150-250 word description of the operator. Sound like a
+   knowledgeable local guide, not a marketing brochure. Mention what makes
+   them different, who they're best for, and any standout experiences.
+
+5. Write a punchy tagline (under 10 words).
+
+6. Identify their unique selling point in one sentence.
+
+OUTPUT FORMAT:
+Return ONLY valid JSON matching this exact structure (no markdown, no explanation):
+{output_template}
+
+RULES:
+- All prices in GBP (£)
+- Coordinates in decimal degrees (lat ~51-53, lng ~-3 to -5 for Wales)
+- If data is not available, use null — NEVER fabricate
+- Slugs: lowercase, hyphenated
+- Write original descriptions — do not plagiarise
+- priceRange: use £ (under £30pp), ££ (£30-60pp), £££ (£60-100pp), ££££ (over £100pp)
+```
 
 ## Project Context
 
-- **Repo**: `/home/minigeek/Adventure-Site`
+- **Repo**: Adventure-Site
 - **Stack**: Next.js 16, Drizzle ORM, Neon Postgres
 - **Schema**: `src/db/schema.ts` — operators, activities, activityTypes tables
 - **Live site**: https://adventure-site-lyart.vercel.app
@@ -32,10 +131,7 @@ meetingPoint, lat, lng, priceFrom, priceTo, duration, difficulty,
 minAge, season, bookingUrl, sourceUrl, status
 ```
 
-### Service Details (JSONB — stored in operator trustSignals or future serviceDetails field)
-Category-specific structured data. See templates below.
-
-## Operator Categories & Research Templates
+## Operator Categories & Service Detail Templates
 
 ### activity_provider (Coasteering, Climbing, Kayaking, etc.)
 ```json
@@ -97,56 +193,33 @@ Already has its own table — skip unless adding operator-level detail.
 }
 ```
 
-## Research Process
-
-For each operator:
-
-1. **Search the web** for the operator name + "Wales" + activity type
-2. **Visit their website** — extract:
-   - Contact details (phone, email, address)
-   - Activity/service list with pricing
-   - Session times, durations, group sizes
-   - Qualifications and safety credentials
-   - Booking URL
-   - What's included / what to bring
-3. **Check Google Maps** (via Apify if available) for:
-   - Google rating + review count
-   - Verified address + coordinates
-   - Opening hours
-   - DO NOT copy Google review text
-4. **Check TripAdvisor** for:
-   - TripAdvisor URL only (store as link)
-   - DO NOT use their Content API or copy reviews
-5. **Output structured JSON** matching the templates above
-
 ## Data Quality Rules
 
-- **Prices must be current** — check the operator's actual website, not cached/old data
-- **Don't fabricate data** — if a field isn't available, leave it null
+- **Prices must be current** — Gemini with grounding searches live websites
+- **Don't fabricate data** — if a field isn't available, use null
 - **Use GBP (£)** for all pricing
-- **Coordinates** — use decimal degrees (e.g., 51.8781, -5.2797)
+- **Coordinates** — decimal degrees (e.g., 51.8781, -5.2797), validate within Wales range (lat 51-54, lng -6 to -2.5)
 - **Slugs** — lowercase, hyphenated (e.g., "coasteering-classic")
 - **Descriptions** — write original copy, don't plagiarise operator websites
 
 ## Legal Boundaries
 
-### ✅ Safe to Do
-- Visit operator websites and extract their public business info
-- Record Google rating as a number + link to Maps page
+### Safe to Do
+- Search for and extract public business information via Gemini grounding
+- Record Google rating as a number + review count
 - Store TripAdvisor URL as a link-out
 - Research qualifications, accreditations from public sources
 - Write original descriptions based on research
 
-### ❌ Do Not
+### Do Not
 - Copy Google review text verbatim
 - Copy TripAdvisor review text verbatim
-- Use Google Maps Content API data displayed on the site
 - Copy operator website copy word-for-word (paraphrase instead)
 - Store personal data (individual reviewer names, emails)
 
 ## Output Format
 
-Output one JSON file per operator batch:
+One JSON file per batch in `data/research/batch-{n}.json`:
 ```json
 {
   "operators": [
@@ -194,22 +267,14 @@ Output one JSON file per operator batch:
 }
 ```
 
-## Existing Operators to Research
+## Operator Hitlist
 
-Check the current database state:
-```bash
-cd /home/minigeek/Adventure-Site
-# List current operators
-npx tsx -e "..." # (needs POSTGRES_URL — run on Vercel or with .env.local)
-```
+See `references/operator-hitlist.json` for the full list with IDs, names, websites, regions, activity types, and tier assignments.
 
-Or check the directory page: https://adventure-site-lyart.vercel.app/directory
+- **Tier 1**: 8 premium operators (research first)
+- **Tier 2**: 27 remaining operators
 
-## Apify Integration (Optional)
+## Research Order
 
-If using Apify for Google Maps data:
-- Use the Google Maps Scraper actor for business details
-- Use only: name, address, coordinates, rating, reviewCount, phone, website, openingHours
-- DO NOT extract or store review text
-- Cost: ~$0.60 per 1,000 results
-- Docs: https://apify.com/compass/crawler-google-places
+1. Tier 1 — 8 premium operators (show prominently on site)
+2. Tier 2 — 27 operators (fill in order of region coverage)

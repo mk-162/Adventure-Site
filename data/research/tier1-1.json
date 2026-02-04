@@ -1,0 +1,1692 @@
+{
+  "operators": [
+    {
+      "name": "Adventure Britain",
+      "slug": "adventure-britain",
+      "category": "activity_provider",
+      "website": "https://www.adventurebritain.com",
+      "email": "sales@adventurebritain.com",
+      "phone": "01639 700388",
+      "address": "Ty Anturiaeth, 83 Church Rd, Seven Sisters, Neath, SA10 9DT",
+      "lat": 51.7586,
+      "lng": -3.7394,
+      "description": "Adventure Britain are a long-established activity provider based on the edge of the Brecon Beacons. With a focus on small group sizes, they deliver fantastic canyoning and gorge walking experiences that really get you into the heart of the Welsh landscape. They also offer a range of other exciting outdoor pursuits, including caving, climbing and mountain biking. What sets them apart is their commitment to safety and quality, alongside a genuine passion for sharing the beauty of Wales with others. Perfect for families, groups of friends, and corporate team-building events, Adventure Britain create memorable adventures for all abilities. Their canyoning trips are a particular highlight, taking you through stunning waterfalls and plunge pools in some of the most scenic spots in South Wales. They're fully AALA licensed, so you can be sure you're in safe hands.",
+      "tagline": "Your gateway to unforgettable Welsh adventures.",
+      "googleRating": 4.8,
+      "reviewCount": 199,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g186459-d2174143-Reviews-Adventure_Britain-Neath_Neath_Port_Talbot_County_Wales.html",
+      "priceRange": "££",
+      "uniqueSellingPoint": "Adventure Britain offers small group adventures in Wales led by highly experienced and qualified instructors, ensuring a safe and personal experience.",
+      "regions": [
+        "brecon-beacons",
+        "gower"
+      ],
+      "activityTypes": [
+        "canyoning",
+        "caving",
+        "climbing",
+        "gorge-walking",
+        "mtb"
+      ],
+      "serviceTypes": [
+        "guided-activities",
+        "instruction"
+      ],
+      "trustSignals": {
+        "aala": true,
+        "yearsExperience": 20,
+        "certifications": [
+          "AALA Licensed",
+          "ILM Accredited",
+          "City and Guilds Accredited",
+          "Mountain Training"
+        ],
+        "awards": [
+          "National Business Tourism Company of the Year",
+          "Welsh Small Business of the Year"
+        ]
+      },
+      "serviceDetails": {
+        "canyoning": {
+          "sessions": [
+            {
+              "name": "Canyoning Adventure",
+              "duration": "4h",
+              "times": [
+                "09:30",
+                "13:30"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 10,
+              "priceAdult": 65,
+              "priceChild": null,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "AALA Licensed",
+            "Mountain Training"
+          ],
+          "equipmentIncluded": [
+            "wetsuit",
+            "helmet",
+            "harness",
+            "buoyancy aid"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "old trainers"
+          ],
+          "minAge": 14,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Adventure Britain, Seven Sisters, Neath SA10 9DT",
+          "parkingInfo": "Free parking on site",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.adventurebritain.com/canyoning/",
+          "cancellationPolicy": "48h notice for full refund"
+        },
+        "gorge-walking": {
+          "sessions": [
+            {
+              "name": "Gorge Walking Experience",
+              "duration": "3h",
+              "times": [
+                "10:00",
+                "14:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 12,
+              "priceAdult": 55,
+              "priceChild": 45,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "AALA Licensed"
+          ],
+          "equipmentIncluded": [
+            "wetsuit",
+            "helmet"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "old trainers"
+          ],
+          "minAge": 8,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Adventure Britain, Seven Sisters, Neath SA10 9DT",
+          "parkingInfo": "Free parking on site",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.adventurebritain.com/gorge-walking/",
+          "cancellationPolicy": "48h notice for full refund"
+        },
+        "caving": {
+          "sessions": [
+            {
+              "name": "Caving Adventure",
+              "duration": "3h",
+              "times": [
+                "10:00",
+                "14:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 8,
+              "priceAdult": 60,
+              "priceChild": null,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "AALA Licensed"
+          ],
+          "equipmentIncluded": [
+            "overalls",
+            "helmet",
+            "headtorch"
+          ],
+          "whatToBring": [
+            "warm layers",
+            "sturdy boots"
+          ],
+          "minAge": 10,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "All year",
+            "peak": "Apr-Oct"
+          },
+          "meetingPoint": "Adventure Britain, Seven Sisters, Neath SA10 9DT",
+          "parkingInfo": "Free parking on site",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.adventurebritain.com/caving/",
+          "cancellationPolicy": "48h notice for full refund"
+        },
+        "climbing": {
+          "sessions": [
+            {
+              "name": "Climbing Experience",
+              "duration": "3h",
+              "times": [
+                "10:00",
+                "14:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 6,
+              "priceAdult": 55,
+              "priceChild": null,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "Mountain Training"
+          ],
+          "equipmentIncluded": [
+            "harness",
+            "helmet",
+            "climbing shoes"
+          ],
+          "whatToBring": [
+            "comfortable clothing"
+          ],
+          "minAge": 8,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Adventure Britain, Seven Sisters, Neath SA10 9DT",
+          "parkingInfo": "Free parking on site",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.adventurebritain.com/climbing/",
+          "cancellationPolicy": "48h notice for full refund"
+        },
+        "mtb": {
+          "sessions": [
+            {
+              "name": "Guided Mountain Biking",
+              "duration": "3h",
+              "times": [
+                "10:00",
+                "14:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 8,
+              "priceAdult": 50,
+              "priceChild": null,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "Mountain Bike Leader"
+          ],
+          "equipmentIncluded": [
+            "helmet"
+          ],
+          "whatToBring": [
+            "mountain bike",
+            "suitable clothing",
+            "water"
+          ],
+          "minAge": 12,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "All year",
+            "peak": "Apr-Oct"
+          },
+          "meetingPoint": "Adventure Britain, Seven Sisters, Neath SA10 9DT",
+          "parkingInfo": "Free parking on site",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.adventurebritain.com/mountain-biking/",
+          "cancellationPolicy": "48h notice for full refund"
+        }
+      }
+    },
+    {
+      "name": "BikePark Wales",
+      "slug": "bikepark-wales",
+      "category": "activity_provider",
+      "website": "https://www.bikeparkwales.com",
+      "email": "info@bikeparkwales.com",
+      "phone": "01443 836455",
+      "address": "Pentrebach, Merthyr Tydfil CF48 4TT",
+      "lat": 51.7653,
+      "lng": -3.3547,
+      "description": "BikePark Wales is the UK's premier mountain bike park, offering an unparalleled experience for riders of all abilities. Nestled in the heart of the South Wales valleys, it boasts a vast network of meticulously crafted trails that wind through stunning woodland scenery. From beginner-friendly flow trails to challenging downhill runs, there's something to suit every skill level. What sets BikePark Wales apart is its uplift service, making access to the trails effortless. Whether you're a seasoned pro or a first-time rider, the park's friendly and experienced team are on hand to provide expert advice and guidance. Standout experiences include tackling the iconic 'Vanta' black run, or simply enjoying a scenic ride with friends and family. BikePark Wales offers a variety of coaching options to help you improve your skills and confidence, as well as a fully-equipped bike hire service. It's a truly unique destination for mountain biking enthusiasts.",
+      "tagline": "The UK's Premier Mountain Bike Destination.",
+      "googleRating": 4.7,
+      "reviewCount": 2700,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g186460-d6526567-Reviews-BikePark_Wales-Merthyr_Tydfil_Merthyr_Tydfil_County_Borough_Wales.html",
+      "priceRange": "££",
+      "uniqueSellingPoint": "BikePark Wales is the UK's first and largest purpose-built mountain bike park with an uplift service.",
+      "regions": [
+        "brecon-beacons"
+      ],
+      "activityTypes": [
+        "mountain-biking"
+      ],
+      "serviceTypes": [
+        "bike-hire",
+        "coaching",
+        "uplift-service"
+      ],
+      "trustSignals": {
+        "aala": null,
+        "yearsExperience": 10,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {}
+    },
+    {
+      "name": "MUUK Adventures",
+      "slug": "muuk-adventures",
+      "category": "activity_provider",
+      "website": "https://www.muuk-adventures.com",
+      "email": null,
+      "phone": null,
+      "address": "St Davids, Pembrokeshire",
+      "lat": 51.8827,
+      "lng": -5.2662,
+      "description": "MUUK Adventures offers expertly guided outdoor experiences across Pembrokeshire and Snowdonia. Specializing in coasteering, surfing, kayaking and mountain challenges, they cater to all abilities, from families seeking a memorable day out to seasoned adventurers craving a thrill. What sets MUUK apart is their commitment to small group sizes, ensuring personalized attention and a strong emphasis on safety and environmental responsibility. Imagine yourself scrambling along the Pembrokeshire coastline, leaping into crystal-clear waters, or conquering a Snowdonia peak with breathtaking views. These guys know how to make the outdoors accessible and exciting for everyone.",
+      "tagline": "Adventure is out there. Find yours with MUUK.",
+      "googleRating": 5.0,
+      "reviewCount": 10,
+      "tripadvisorUrl": null,
+      "priceRange": "££",
+      "uniqueSellingPoint": "Small group sizes guarantee personalized adventure experiences with a strong focus on safety and environmental responsibility.",
+      "regions": [
+        "pembrokeshire",
+        "snowdonia"
+      ],
+      "activityTypes": [
+        "coasteering",
+        "surfing",
+        "kayaking",
+        "mountain-challenges"
+      ],
+      "serviceTypes": [
+        "guided-tours",
+        "instruction"
+      ],
+      "trustSignals": {
+        "aala": true,
+        "yearsExperience": null,
+        "certifications": [
+          "AALA Licensed"
+        ],
+        "awards": []
+      },
+      "serviceDetails": {
+        "coasteering": {
+          "sessions": [
+            {
+              "name": "Coasteering Adventure",
+              "duration": "3h",
+              "times": [
+                "09:30",
+                "14:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 12,
+              "priceAdult": 55,
+              "priceChild": 45,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "AALA Licensed"
+          ],
+          "equipmentIncluded": [
+            "wetsuit",
+            "helmet",
+            "buoyancy aid"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "old trainers"
+          ],
+          "minAge": 8,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "St Davids, Pembrokeshire (specific location confirmed upon booking)",
+          "parkingInfo": "Free parking available nearby.",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.muuk-adventures.com/coasteering",
+          "cancellationPolicy": "48h notice for full refund"
+        },
+        "surfing": {
+          "sessions": [
+            {
+              "name": "Surf Lesson",
+              "duration": "2h",
+              "times": [
+                "10:00",
+                "15:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 8,
+              "priceAdult": 45,
+              "priceChild": 40,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "Surfing GB qualified instructors"
+          ],
+          "equipmentIncluded": [
+            "surfboard",
+            "wetsuit"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel"
+          ],
+          "minAge": 8,
+          "fitnessLevel": "easy",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jul-Aug"
+          },
+          "meetingPoint": "Whitesands Bay, St Davids",
+          "parkingInfo": "Paid parking at Whitesands Bay",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.muuk-adventures.com/surfing",
+          "cancellationPolicy": "48h notice for full refund"
+        },
+        "kayaking": {
+          "sessions": [
+            {
+              "name": "Sea Kayak Tour",
+              "duration": "3h",
+              "times": [
+                "09:00",
+                "13:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 10,
+              "priceAdult": 60,
+              "priceChild": 50,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "BCU qualified instructors"
+          ],
+          "equipmentIncluded": [
+            "kayak",
+            "paddle",
+            "buoyancy aid"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "waterproof jacket"
+          ],
+          "minAge": 10,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "St Justinian's, St Davids",
+          "parkingInfo": "Paid parking at St Justinian's",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.muuk-adventures.com/kayaking",
+          "cancellationPolicy": "48h notice for full refund"
+        }
+      }
+    },
+    {
+      "name": "Plas Menai",
+      "slug": "plas-menai",
+      "category": "activity_provider",
+      "website": "https://www.plasmenai.co.uk",
+      "email": "enquiries@plasmenai.co.uk",
+      "phone": "0300 300 3111",
+      "address": "Plas Menai National Outdoor Centre, Caernarfon LL55 1UE",
+      "lat": 53.1505,
+      "lng": -4.2213,
+      "description": "Nestled on the shores of the Menai Strait, Plas Menai is a world-class outdoor pursuits centre offering an unmatched experience for water sports enthusiasts of all levels. Whether you're a seasoned sailor or a complete beginner, Plas Menai provides expert tuition and state-of-the-art facilities in a stunning location. Imagine mastering the art of sailing with the dramatic backdrop of Snowdonia, feeling the rush of powerboating across the waves, or exploring hidden coves by sea kayak. The centre also offers windsurfing courses, allowing you to harness the power of the wind and glide across the water. The centre is fully equipped and offers residential courses. With a focus on safety and fun, Plas Menai is perfect for families, individuals, and groups looking to explore the great outdoors. The on-site accommodation makes for a relaxing and inclusive experience. Experience the exhilaration of outdoor adventure with Plas Menai.",
+      "tagline": "Adventure on the Menai Strait awaits.",
+      "googleRating": 4.4,
+      "reviewCount": 384,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g186434-d2404846-Reviews-Plas_Menai_National_Watersports_Centre-Caernarfon_Gwynedd_North_Wales_Wales.html",
+      "priceRange": "£££",
+      "uniqueSellingPoint": "Plas Menai delivers expert water sports training in a world-class setting, using the stunning Menai Strait as its playground.",
+      "regions": [
+        "anglesey",
+        "north-wales"
+      ],
+      "activityTypes": [
+        "sailing",
+        "powerboating",
+        "sea-kayaking",
+        "windsurfing"
+      ],
+      "serviceTypes": [
+        "instruction",
+        "accommodation",
+        "guided-tours"
+      ],
+      "trustSignals": {
+        "aala": true,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {
+        "sailing": {
+          "sessions": [
+            {
+              "name": "RYA Start Sailing",
+              "duration": "2 days",
+              "times": [],
+              "groupSizeMin": null,
+              "groupSizeMax": null,
+              "priceAdult": 345,
+              "priceChild": null,
+              "pricePrivate": null
+            },
+            {
+              "name": "RYA Day Sailing",
+              "duration": "5 days",
+              "times": [],
+              "groupSizeMin": null,
+              "groupSizeMax": null,
+              "priceAdult": 645,
+              "priceChild": null,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "AALA Licensed",
+            "RYA Training Centre"
+          ],
+          "equipmentIncluded": [
+            "wetsuit",
+            "buoyancy aid"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "sunscreen",
+            "hat"
+          ],
+          "minAge": 8,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "All Year",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Plas Menai National Outdoor Centre, Caernarfon LL55 1UE",
+          "parkingInfo": "Free parking on site",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.plasmenai.co.uk/sailing",
+          "cancellationPolicy": "Refer to Plas Menai's terms and conditions."
+        },
+        "powerboating": {
+          "sessions": [
+            {
+              "name": "RYA Powerboat Level 2",
+              "duration": "2 days",
+              "times": [],
+              "groupSizeMin": null,
+              "groupSizeMax": null,
+              "priceAdult": 355,
+              "priceChild": null,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "AALA Licensed",
+            "RYA Training Centre"
+          ],
+          "equipmentIncluded": [
+            "buoyancy aid"
+          ],
+          "whatToBring": [
+            "waterproof clothing",
+            "warm layers",
+            "suitable footwear"
+          ],
+          "minAge": 12,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "All Year",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Plas Menai National Outdoor Centre, Caernarfon LL55 1UE",
+          "parkingInfo": "Free parking on site",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.plasmenai.co.uk/powerboating",
+          "cancellationPolicy": "Refer to Plas Menai's terms and conditions."
+        },
+        "sea-kayaking": {
+          "sessions": [
+            {
+              "name": "Introduction to Sea Kayaking",
+              "duration": "2 days",
+              "times": [],
+              "groupSizeMin": null,
+              "groupSizeMax": null,
+              "priceAdult": 295,
+              "priceChild": null,
+              "pricePrivate": null
+            },
+            {
+              "name": "Sea Kayak Leader Training",
+              "duration": "4 days",
+              "times": [],
+              "groupSizeMin": null,
+              "groupSizeMax": null,
+              "priceAdult": 495,
+              "priceChild": null,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "AALA Licensed",
+            "BCU Certified Instructors"
+          ],
+          "equipmentIncluded": [
+            "kayak",
+            "paddle",
+            "buoyancy aid",
+            "wetsuit"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "waterproof jacket"
+          ],
+          "minAge": 14,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "All Year",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Plas Menai National Outdoor Centre, Caernarfon LL55 1UE",
+          "parkingInfo": "Free parking on site",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.plasmenai.co.uk/kayaking",
+          "cancellationPolicy": "Refer to Plas Menai's terms and conditions."
+        },
+        "windsurfing": {
+          "sessions": [
+            {
+              "name": "RYA Start Windsurfing",
+              "duration": "2 days",
+              "times": [],
+              "groupSizeMin": null,
+              "groupSizeMax": null,
+              "priceAdult": 295,
+              "priceChild": null,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "AALA Licensed",
+            "RYA Training Centre"
+          ],
+          "equipmentIncluded": [
+            "wetsuit",
+            "buoyancy aid",
+            "windsurf board",
+            "sail"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "sunscreen"
+          ],
+          "minAge": 10,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "All Year",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Plas Menai National Outdoor Centre, Caernarfon LL55 1UE",
+          "parkingInfo": "Free parking on site",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.plasmenai.co.uk/windsurfing",
+          "cancellationPolicy": "Refer to Plas Menai's terms and conditions."
+        }
+      }
+    },
+    {
+      "name": "Plas y Brenin",
+      "slug": "plas-y-brenin",
+      "category": "activity_provider",
+      "website": "https://pyb.co.uk",
+      "email": "info@pyb.co.uk",
+      "phone": "01690 720214",
+      "address": "Capel Curig, Conwy LL24 0ET",
+      "lat": 53.1034,
+      "lng": -3.9103,
+      "description": "Plas y Brenin, the National Outdoor Centre, is a renowned hub for adventure training in the heart of Snowdonia. It offers a diverse range of courses, from introductory hill walking and rock climbing to advanced mountaineering and kayaking. The centre is perfect for individuals looking to improve their skills, gain qualifications, or simply experience the thrill of outdoor adventures under expert guidance. They pride themselves on their highly qualified instructors and state-of-the-art facilities, ensuring a safe and supportive learning environment. Whether you're a complete beginner or an experienced outdoor enthusiast, Plas y Brenin provides an exceptional platform to push your boundaries and explore the stunning Welsh landscape. The centre also provides accommodation and catering packages, making it a convenient and immersive adventure experience.",
+      "tagline": "Your adventure starts here in Snowdonia.",
+      "googleRating": 4.6,
+      "reviewCount": 632,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g668451-d2384045-Reviews-Plas_y_Brenin_National_Mountain_Centre-Capel_Curig_Conwy_County_North_Wales_Wales.html",
+      "priceRange": "£££",
+      "uniqueSellingPoint": "Plas y Brenin offers expert-led adventure training and courses in a stunning Snowdonia location, catering to all skill levels.",
+      "regions": [
+        "snowdonia"
+      ],
+      "activityTypes": [
+        "climbing",
+        "mountaineering",
+        "kayaking",
+        "hill-walking",
+        "mtb"
+      ],
+      "serviceTypes": [
+        "instruction",
+        "accommodation",
+        "guiding"
+      ],
+      "trustSignals": {
+        "aala": true,
+        "yearsExperience": 68,
+        "certifications": [
+          "AALA Licensed",
+          "Mountain Training",
+          "BCU",
+          "MTA"
+        ],
+        "awards": []
+      },
+      "serviceDetails": {}
+    },
+    {
+      "name": "Snowdonia Mountain Guides",
+      "slug": "snowdonia-mountain-guides",
+      "category": "activity_provider",
+      "website": "https://snowdoniamountainguides.com",
+      "email": null,
+      "phone": null,
+      "address": "Llanberis area",
+      "lat": 53.1163,
+      "lng": -4.1275,
+      "description": "Snowdonia Mountain Guides are your gateway to exploring the stunning peaks and challenging routes of Snowdonia. Based in the heart of Llanberis, they offer a range of guided experiences from introductory rock climbing sessions to challenging scrambles and multi-day hill walking expeditions. What sets them apart is their focus on small group sizes, ensuring personalized attention and a safe, enjoyable experience for everyone. They’re perfect for individuals, couples, and small groups seeking to push their boundaries, learn new skills, and discover the hidden gems of Snowdonia's mountains. Imagine yourself conquering Crib Goch under the watchful eye of a seasoned guide, or honing your climbing technique on a rugged outcrop – Snowdonia Mountain Guides makes these dreams a reality.",
+      "tagline": "Explore Snowdonia's peaks with expert local guides.",
+      "googleRating": null,
+      "reviewCount": null,
+      "tripadvisorUrl": null,
+      "priceRange": "££",
+      "uniqueSellingPoint": "Small group sizes ensure personalized attention and safe adventures in Snowdonia.",
+      "regions": [
+        "snowdonia"
+      ],
+      "activityTypes": [
+        "rock-climbing",
+        "scrambling",
+        "hill-walking"
+      ],
+      "serviceTypes": [
+        "guided-walk",
+        "guided-climb",
+        "instruction"
+      ],
+      "trustSignals": {
+        "aala": false,
+        "yearsExperience": null,
+        "certifications": [],
+        "awards": []
+      },
+      "serviceDetails": {}
+    },
+    {
+      "name": "TYF Adventure",
+      "slug": "tyf-adventure",
+      "category": "activity_provider",
+      "website": "https://www.tyf.com",
+      "email": "enquiry@tyf.com",
+      "phone": "01437 721611",
+      "address": "20 High Street, St Davids, Pembrokeshire SA62 6SD",
+      "lat": 51.8824,
+      "lng": -5.2641,
+      "description": "TYF Adventure, based in the heart of St Davids, is a pioneering force in sustainable adventure tourism in Pembrokeshire. Founded by passionate environmentalists, they offer thrilling experiences that connect you with the rugged coastline while minimizing impact. TYF stands out with its commitment to conservation and community, often partnering with local organizations on environmental initiatives. They're perfect for eco-conscious adventurers, families seeking unforgettable memories, and anyone wanting to experience the wild beauty of Pembrokeshire with expert guidance. Their coasteering adventures are legendary, offering a unique blend of adrenaline and exploration along the dramatic cliffs and hidden coves. Sea kayaking trips reveal the stunning coastline from a different perspective, and their surf lessons cater to all levels, from beginners to seasoned riders. TYF's passion is infectious, making every adventure both exhilarating and educational.",
+      "tagline": "Adventure with purpose. Explore. Inspire. Protect.",
+      "googleRating": 4.7,
+      "reviewCount": 386,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g190726-d1461143-Reviews-TYF_Adventure-St_Davids_Pembrokeshire_Wales.html",
+      "priceRange": "£££",
+      "uniqueSellingPoint": "TYF Adventure provides thrilling adventures with a strong commitment to environmental sustainability and community engagement.",
+      "regions": [
+        "pembrokeshire"
+      ],
+      "activityTypes": [
+        "coasteering",
+        "sea-kayaking",
+        "surfing",
+        "climbing",
+        "sup"
+      ],
+      "serviceTypes": [
+        "guided tours",
+        "lessons",
+        "equipment rental"
+      ],
+      "trustSignals": {
+        "aala": true,
+        "yearsExperience": 30,
+        "certifications": [
+          "AALA Licensed",
+          "BCU",
+          "MTA",
+          "Mountain Training"
+        ],
+        "awards": [
+          "Ethical Tourism Award"
+        ]
+      },
+      "serviceDetails": {
+        "coasteering": {
+          "sessions": [
+            {
+              "name": "Coasteering Adventure",
+              "duration": "3h",
+              "times": [
+                "09:30",
+                "13:30"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 12,
+              "priceAdult": 65,
+              "priceChild": 55,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "AALA Licensed"
+          ],
+          "equipmentIncluded": [
+            "wetsuit",
+            "helmet",
+            "buoyancy aid"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "shoes suitable for getting wet"
+          ],
+          "minAge": 8,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "TYF Adventure Shop, St Davids",
+          "parkingInfo": "Limited street parking available, use public car park",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.tyf.com/adventures/coasteering/",
+          "cancellationPolicy": "48h notice for full refund"
+        },
+        "sea_kayaking": {
+          "sessions": [
+            {
+              "name": "Sea Kayaking Tour",
+              "duration": "3h",
+              "times": [
+                "09:30",
+                "14:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 10,
+              "priceAdult": 75,
+              "priceChild": 65,
+              "pricePrivate": null
+            },
+            {
+              "name": "Half-Day Sea Kayak Adventure",
+              "duration": "4h",
+              "times": [
+                "09:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 10,
+              "priceAdult": 85,
+              "priceChild": 75,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "BCU qualified instructors"
+          ],
+          "equipmentIncluded": [
+            "kayak",
+            "paddle",
+            "buoyancy aid",
+            "wetsuit"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "sunscreen",
+            "water bottle"
+          ],
+          "minAge": 10,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Various locations depending on conditions",
+          "parkingInfo": "Information provided upon booking",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.tyf.com/adventures/sea-kayaking/",
+          "cancellationPolicy": "48h notice for full refund"
+        },
+        "surfing": {
+          "sessions": [
+            {
+              "name": "Surf Lesson",
+              "duration": "2h",
+              "times": [
+                "10:00",
+                "14:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 8,
+              "priceAdult": 55,
+              "priceChild": 45,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "Surfing GB qualified instructors"
+          ],
+          "equipmentIncluded": [
+            "surfboard",
+            "wetsuit"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "sunscreen"
+          ],
+          "minAge": 8,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Whitesands Beach",
+          "parkingInfo": "Parking charges apply at Whitesands Beach",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.tyf.com/adventures/surfing/",
+          "cancellationPolicy": "48h notice for full refund"
+        },
+        "climbing": {
+          "sessions": [
+            {
+              "name": "Climbing Adventure",
+              "duration": "3h",
+              "times": [
+                "09:30",
+                "14:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 8,
+              "priceAdult": 65,
+              "priceChild": 55,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "MTA qualified instructors"
+          ],
+          "equipmentIncluded": [
+            "harness",
+            "helmet",
+            "climbing shoes"
+          ],
+          "whatToBring": [
+            "comfortable clothing",
+            "water bottle"
+          ],
+          "minAge": 8,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Various climbing locations",
+          "parkingInfo": "Information provided upon booking",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.tyf.com/adventures/climbing/",
+          "cancellationPolicy": "48h notice for full refund"
+        },
+        "sup": {
+          "sessions": [
+            {
+              "name": "Stand Up Paddleboarding Lesson",
+              "duration": "2h",
+              "times": [
+                "10:00",
+                "14:00"
+              ],
+              "groupSizeMin": 4,
+              "groupSizeMax": 8,
+              "priceAdult": 55,
+              "priceChild": 45,
+              "pricePrivate": null
+            }
+          ],
+          "qualifications": [
+            "BSUPA qualified instructors"
+          ],
+          "equipmentIncluded": [
+            "SUP board",
+            "paddle",
+            "wetsuit"
+          ],
+          "whatToBring": [
+            "swimwear",
+            "towel",
+            "sunscreen",
+            "water bottle"
+          ],
+          "minAge": 8,
+          "fitnessLevel": "moderate",
+          "seasons": {
+            "open": "Apr-Oct",
+            "peak": "Jun-Sep"
+          },
+          "meetingPoint": "Various locations depending on conditions",
+          "parkingInfo": "Information provided upon booking",
+          "bookingRequired": true,
+          "bookingUrl": "https://www.tyf.com/adventures/stand-up-paddleboarding/",
+          "cancellationPolicy": "48h notice for full refund"
+        }
+      }
+    },
+    {
+      "name": "Zip World",
+      "slug": "zip-world",
+      "category": "activity_provider",
+      "website": "https://www.zipworld.co.uk",
+      "email": "info@zipworld.co.uk",
+      "phone": "01248 601444",
+      "address": "Penrhyn Quarry, Bethesda LL57 4YG",
+      "lat": 53.1991,
+      "lng": -4.0659,
+      "description": "Zip World offers a portfolio of thrilling adventure activities across North and South Wales. Set against the dramatic backdrops of slate quarries and stunning natural landscapes, these experiences are designed to get your adrenaline pumping and create lasting memories. From the fastest zip lines in the world to underground adventures and family-friendly bounce parks, there's something for everyone. Zip World is perfect for thrill-seekers, families, and groups of friends looking for an unforgettable day out. Their commitment to safety and innovation ensures a world-class adventure experience, while their respect for the environment and local communities shines through in every aspect of their operation. Standout experiences include Velocity 2, the world's fastest zip line, and Bounce Below, an incredible network of trampolines deep within a cavern.",
+      "tagline": "Adventure above and below, in Wales.",
+      "googleRating": 4.6,
+      "reviewCount": 18000,
+      "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g186444-d6792965-Reviews-Zip_World_Velocity_2-Bethesda_Snowdonia_National_Park_North_Wales_Wales.html",
+      "priceRange": "£££",
+      "uniqueSellingPoint": "Zip World delivers unforgettable, adrenaline-fueled adventure experiences in unique and stunning locations across Wales.",
+      "regions": [
+        "snowdonia",
+        "south-wales"
+      ],
+      "activityTypes": [
+        "zip-lining",
+        "quarry-karts",
+        "bounce-below",
+        "adventure"
+      ],
+      "serviceTypes": [
+        "adventure activities",
+        "outdoor recreation"
+      ],
+      "trustSignals": {
+        "aala": true,
+        "yearsExperience": 10,
+        "certifications": [
+          "AALA Licensed"
+        ],
+        "awards": []
+      },
+      "serviceDetails": {}
+    }
+  ],
+  "activities": [
+    {
+      "operatorSlug": "adventure-britain",
+      "name": "Canyoning",
+      "slug": "canyoning",
+      "activityType": "canyoning",
+      "region": "brecon-beacons",
+      "description": "Plunge into the heart of the Brecon Beacons with an exhilarating canyoning experience. Descend waterfalls, slide down natural rock formations and swim through crystal-clear pools under the expert guidance of experienced instructors.",
+      "priceFrom": 65,
+      "priceTo": 65,
+      "duration": "4 hours",
+      "difficulty": "moderate",
+      "minAge": 14,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.adventurebritain.com/canyoning/"
+    },
+    {
+      "operatorSlug": "adventure-britain",
+      "name": "Gorge Walking",
+      "slug": "gorge-walking",
+      "activityType": "gorge-walking",
+      "region": "brecon-beacons",
+      "description": "Explore the stunning gorges of South Wales on foot, scrambling over rocks, wading through streams and enjoying the natural beauty. A fantastic adventure for all ages and abilities.",
+      "priceFrom": 45,
+      "priceTo": 55,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.adventurebritain.com/gorge-walking/"
+    },
+    {
+      "operatorSlug": "adventure-britain",
+      "name": "Caving",
+      "slug": "caving",
+      "activityType": "caving",
+      "region": "brecon-beacons",
+      "description": "Venture into the depths of the Brecon Beacons and discover the hidden world of underground caves. Explore fascinating rock formations and experience the thrill of subterranean exploration.",
+      "priceFrom": 60,
+      "priceTo": 60,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 10,
+      "season": "All year",
+      "bookingUrl": "https://www.adventurebritain.com/caving/"
+    },
+    {
+      "operatorSlug": "adventure-britain",
+      "name": "Climbing",
+      "slug": "climbing",
+      "activityType": "climbing",
+      "region": "brecon-beacons",
+      "description": "Test your skills and challenge yourself with a climbing experience in the Brecon Beacons. Learn the basics of rock climbing and enjoy the stunning views from the top.",
+      "priceFrom": 55,
+      "priceTo": 55,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.adventurebritain.com/climbing/"
+    },
+    {
+      "operatorSlug": "adventure-britain",
+      "name": "Mountain Biking",
+      "slug": "mountain-biking",
+      "activityType": "mtb",
+      "region": "brecon-beacons",
+      "description": "Explore the trails of the Brecon Beacons on two wheels with a guided mountain biking adventure. Discover hidden valleys and stunning scenery while enjoying an exhilarating ride.",
+      "priceFrom": 50,
+      "priceTo": 50,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 12,
+      "season": "All year",
+      "bookingUrl": "https://www.adventurebritain.com/mountain-biking/"
+    },
+    {
+      "operatorSlug": "bikepark-wales",
+      "name": "Uplift Pass",
+      "slug": "uplift-pass",
+      "activityType": "mountain-biking",
+      "region": "brecon-beacons",
+      "description": "Access to the trails is via the uplift service, which transports riders and their bikes to the top of the mountain. Allows for multiple runs throughout the day. Pre-booking essential.",
+      "priceFrom": 52,
+      "priceTo": 52,
+      "duration": "Full Day",
+      "difficulty": "variable",
+      "minAge": 5,
+      "season": "All Year",
+      "bookingUrl": "https://www.bikeparkwales.com/uplift"
+    },
+    {
+      "operatorSlug": "bikepark-wales",
+      "name": "Bike Hire",
+      "slug": "bike-hire",
+      "activityType": "mountain-biking",
+      "region": "brecon-beacons",
+      "description": "BikePark Wales offers a range of high-quality mountain bikes for hire, suitable for all skill levels. Includes full suspension trail bikes and downhill bikes. Helmet included.",
+      "priceFrom": 65,
+      "priceTo": 150,
+      "duration": "Full Day",
+      "difficulty": "variable",
+      "minAge": 5,
+      "season": "All Year",
+      "bookingUrl": "https://www.bikeparkwales.com/bike-hire"
+    },
+    {
+      "operatorSlug": "bikepark-wales",
+      "name": "Coaching Sessions",
+      "slug": "coaching-sessions",
+      "activityType": "coaching",
+      "region": "brecon-beacons",
+      "description": "Improve your riding skills with expert coaching from qualified instructors. Sessions available for all levels, from beginners to advanced riders. Group and private coaching options.",
+      "priceFrom": 99,
+      "priceTo": 250,
+      "duration": "2-3 hours",
+      "difficulty": "variable",
+      "minAge": 8,
+      "season": "All Year",
+      "bookingUrl": "https://www.bikeparkwales.com/coaching"
+    },
+    {
+      "operatorSlug": "bikepark-wales",
+      "name": "Kids Coaching Sessions",
+      "slug": "kids-coaching-sessions",
+      "activityType": "coaching",
+      "region": "brecon-beacons",
+      "description": "Tailored coaching session for kids. From first time riders to more advanced juniors. Great fun and a great way to progress.",
+      "priceFrom": 65,
+      "priceTo": 65,
+      "duration": "2 hours",
+      "difficulty": "Beginner - Intermediate",
+      "minAge": 5,
+      "season": "All Year",
+      "bookingUrl": "https://www.bikeparkwales.com/coaching"
+    },
+    {
+      "operatorSlug": "muuk-adventures",
+      "name": "Coasteering",
+      "slug": "coasteering",
+      "activityType": "coasteering",
+      "region": "pembrokeshire",
+      "description": "Explore the Pembrokeshire coastline up close! Scramble, swim, and jump your way along the rocks, led by experienced guides. Suitable for adventurous individuals and families.",
+      "priceFrom": 45,
+      "priceTo": 55,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.muuk-adventures.com/coasteering"
+    },
+    {
+      "operatorSlug": "muuk-adventures",
+      "name": "Surfing Lessons",
+      "slug": "surfing-lessons",
+      "activityType": "surfing",
+      "region": "pembrokeshire",
+      "description": "Learn to surf at Whitesands Bay with qualified instructors. All equipment provided. Caters to beginners and improvers looking to catch some waves.",
+      "priceFrom": 40,
+      "priceTo": 45,
+      "duration": "2 hours",
+      "difficulty": "easy",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.muuk-adventures.com/surfing"
+    },
+    {
+      "operatorSlug": "muuk-adventures",
+      "name": "Sea Kayaking",
+      "slug": "sea-kayaking",
+      "activityType": "kayaking",
+      "region": "pembrokeshire",
+      "description": "Paddle along the stunning Pembrokeshire coast and explore hidden coves. Guided tours for all skill levels. A great way to see the wildlife and enjoy the scenery.",
+      "priceFrom": 50,
+      "priceTo": 60,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 10,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.muuk-adventures.com/kayaking"
+    },
+    {
+      "operatorSlug": "plas-menai",
+      "name": "RYA Start Sailing Course",
+      "slug": "rya-start-sailing-course",
+      "activityType": "sailing",
+      "region": "anglesey",
+      "description": "Learn the basics of sailing with this two-day RYA Start Sailing course on the Menai Strait. Ideal for beginners looking to get afloat.",
+      "priceFrom": 345,
+      "priceTo": 345,
+      "duration": "2 days",
+      "difficulty": "easy",
+      "minAge": 8,
+      "season": "all-year",
+      "bookingUrl": "https://www.plasmenai.co.uk/sailing"
+    },
+    {
+      "operatorSlug": "plas-menai",
+      "name": "RYA Day Sailing Course",
+      "slug": "rya-day-sailing-course",
+      "activityType": "sailing",
+      "region": "anglesey",
+      "description": "Extend your sailing skills with the five-day RYA Day Sailing course, exploring more of the Menai Strait and surrounding waters.",
+      "priceFrom": 645,
+      "priceTo": 645,
+      "duration": "5 days",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "all-year",
+      "bookingUrl": "https://www.plasmenai.co.uk/sailing"
+    },
+    {
+      "operatorSlug": "plas-menai",
+      "name": "RYA Powerboat Level 2 Course",
+      "slug": "rya-powerboat-level-2-course",
+      "activityType": "powerboating",
+      "region": "anglesey",
+      "description": "Gain your RYA Powerboat Level 2 certification with this two-day course, learning essential powerboating skills and safety procedures.",
+      "priceFrom": 355,
+      "priceTo": 355,
+      "duration": "2 days",
+      "difficulty": "easy",
+      "minAge": 12,
+      "season": "all-year",
+      "bookingUrl": "https://www.plasmenai.co.uk/powerboating"
+    },
+    {
+      "operatorSlug": "plas-menai",
+      "name": "Introduction to Sea Kayaking",
+      "slug": "introduction-to-sea-kayaking",
+      "activityType": "sea-kayaking",
+      "region": "anglesey",
+      "description": "Discover the joys of sea kayaking with this two-day introductory course, exploring the coastline and learning basic paddling techniques.",
+      "priceFrom": 295,
+      "priceTo": 295,
+      "duration": "2 days",
+      "difficulty": "easy",
+      "minAge": 14,
+      "season": "all-year",
+      "bookingUrl": "https://www.plasmenai.co.uk/kayaking"
+    },
+    {
+      "operatorSlug": "plas-menai",
+      "name": "Sea Kayak Leader Training",
+      "slug": "sea-kayak-leader-training",
+      "activityType": "sea-kayaking",
+      "region": "anglesey",
+      "description": "Enhance your kayaking skills with this four-day Sea Kayak Leader Training, building your experience and qualifications for leading groups.",
+      "priceFrom": 495,
+      "priceTo": 495,
+      "duration": "4 days",
+      "difficulty": "moderate",
+      "minAge": 14,
+      "season": "all-year",
+      "bookingUrl": "https://www.plasmenai.co.uk/kayaking"
+    },
+    {
+      "operatorSlug": "plas-menai",
+      "name": "RYA Start Windsurfing",
+      "slug": "rya-start-windsurfing",
+      "activityType": "windsurfing",
+      "region": "anglesey",
+      "description": "Learn to windsurf with this two-day RYA Start Windsurfing course. Great for beginners!",
+      "priceFrom": 295,
+      "priceTo": 295,
+      "duration": "2 days",
+      "difficulty": "easy",
+      "minAge": 10,
+      "season": "all-year",
+      "bookingUrl": "https://www.plasmenai.co.uk/windsurfing"
+    },
+    {
+      "operatorSlug": "plas-y-brenin",
+      "name": "Rock Climbing Courses",
+      "slug": "rock-climbing-courses",
+      "activityType": "climbing",
+      "region": "snowdonia",
+      "description": "Learn the fundamentals of rock climbing or refine your existing skills with expert instruction. Courses range from introductory sessions to advanced techniques on various rock types.",
+      "priceFrom": 250,
+      "priceTo": 650,
+      "duration": "2-5 days",
+      "difficulty": "beginner-advanced",
+      "minAge": 18,
+      "season": "Year-round",
+      "bookingUrl": "https://pyb.co.uk/rock-climbing/"
+    },
+    {
+      "operatorSlug": "plas-y-brenin",
+      "name": "Mountaineering Courses",
+      "slug": "mountaineering-courses",
+      "activityType": "mountaineering",
+      "region": "snowdonia",
+      "description": "Develop your mountaineering skills and knowledge in a safe and controlled environment. Courses cover essential techniques for navigating challenging terrain and weather conditions.",
+      "priceFrom": 300,
+      "priceTo": 700,
+      "duration": "2-5 days",
+      "difficulty": "intermediate-advanced",
+      "minAge": 18,
+      "season": "Autumn-Spring",
+      "bookingUrl": "https://pyb.co.uk/mountaineering/"
+    },
+    {
+      "operatorSlug": "plas-y-brenin",
+      "name": "Kayaking Courses",
+      "slug": "kayaking-courses",
+      "activityType": "kayaking",
+      "region": "snowdonia",
+      "description": "Improve your kayaking skills on the stunning lakes and rivers of Snowdonia. Courses cater to all levels, from beginners to experienced paddlers.",
+      "priceFrom": 200,
+      "priceTo": 500,
+      "duration": "2-5 days",
+      "difficulty": "beginner-advanced",
+      "minAge": 18,
+      "season": "Spring-Autumn",
+      "bookingUrl": "https://pyb.co.uk/paddling/"
+    },
+    {
+      "operatorSlug": "plas-y-brenin",
+      "name": "Hill Walking & Navigation Courses",
+      "slug": "hill-walking-navigation-courses",
+      "activityType": "hill-walking",
+      "region": "snowdonia",
+      "description": "Learn essential navigation skills and explore the beautiful hills and mountains of Snowdonia. Courses range from basic map reading to advanced route planning.",
+      "priceFrom": 180,
+      "priceTo": 450,
+      "duration": "1-3 days",
+      "difficulty": "beginner-intermediate",
+      "minAge": 18,
+      "season": "Year-round",
+      "bookingUrl": "https://pyb.co.uk/navigation/"
+    },
+    {
+      "operatorSlug": "plas-y-brenin",
+      "name": "Mountain Biking Courses",
+      "slug": "mountain-biking-courses",
+      "activityType": "mtb",
+      "region": "snowdonia",
+      "description": "Develop your mountain biking skills on the challenging trails of Snowdonia. Courses cater to all levels, from beginner introductions to advanced technical riding.",
+      "priceFrom": 220,
+      "priceTo": 550,
+      "duration": "2-3 days",
+      "difficulty": "beginner-advanced",
+      "minAge": 18,
+      "season": "Spring-Autumn",
+      "bookingUrl": "https://pyb.co.uk/mountain-biking/"
+    },
+    {
+      "operatorSlug": "snowdonia-mountain-guides",
+      "name": "Guided Rock Climbing",
+      "slug": "guided-rock-climbing",
+      "activityType": "rock-climbing",
+      "region": "snowdonia",
+      "description": "Experience the thrill of rock climbing in Snowdonia with expert guidance. Suitable for beginners to experienced climbers, this activity offers a safe and challenging introduction to the sport.",
+      "priceFrom": null,
+      "priceTo": null,
+      "duration": null,
+      "difficulty": "moderate",
+      "minAge": null,
+      "season": null,
+      "bookingUrl": "https://snowdoniamountainguides.com"
+    },
+    {
+      "operatorSlug": "snowdonia-mountain-guides",
+      "name": "Scrambling Adventures",
+      "slug": "scrambling-adventures",
+      "activityType": "scrambling",
+      "region": "snowdonia",
+      "description": "Embark on a scrambling adventure through Snowdonia's most iconic routes, including Crib Goch and Tryfan. This activity combines hiking and climbing, offering breathtaking views and adrenaline-pumping challenges.",
+      "priceFrom": null,
+      "priceTo": null,
+      "duration": null,
+      "difficulty": "challenging",
+      "minAge": null,
+      "season": null,
+      "bookingUrl": "https://snowdoniamountainguides.com"
+    },
+    {
+      "operatorSlug": "snowdonia-mountain-guides",
+      "name": "Hill Walking & Hiking",
+      "slug": "hill-walking-hiking",
+      "activityType": "hill-walking",
+      "region": "snowdonia",
+      "description": "Discover the beauty of Snowdonia's mountains with guided hill walks and hikes. From gentle strolls to challenging ascents, this activity caters to all levels of fitness and experience.",
+      "priceFrom": null,
+      "priceTo": null,
+      "duration": null,
+      "difficulty": "easy",
+      "minAge": null,
+      "season": null,
+      "bookingUrl": "https://snowdoniamountainguides.com"
+    },
+    {
+      "operatorSlug": "tyf-adventure",
+      "name": "Coasteering",
+      "slug": "coasteering",
+      "activityType": "coasteering",
+      "region": "pembrokeshire",
+      "description": "Explore the Pembrokeshire coastline from a unique perspective. Scramble, swim, and jump your way along the cliffs and into hidden coves, experiencing the thrill of the sea and the beauty of the landscape.",
+      "priceFrom": 55,
+      "priceTo": 65,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.tyf.com/adventures/coasteering/"
+    },
+    {
+      "operatorSlug": "tyf-adventure",
+      "name": "Sea Kayaking",
+      "slug": "sea-kayaking",
+      "activityType": "sea-kayaking",
+      "region": "pembrokeshire",
+      "description": "Paddle along the stunning Pembrokeshire coast, exploring secluded bays and spotting wildlife. Guided tours cater to all levels, offering a memorable adventure on the open water.",
+      "priceFrom": 65,
+      "priceTo": 85,
+      "duration": "3-4 hours",
+      "difficulty": "moderate",
+      "minAge": 10,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.tyf.com/adventures/sea-kayaking/"
+    },
+    {
+      "operatorSlug": "tyf-adventure",
+      "name": "Surfing",
+      "slug": "surfing",
+      "activityType": "surfing",
+      "region": "pembrokeshire",
+      "description": "Learn to ride the waves at Whitesands Beach, one of Pembrokeshire's best surfing spots. Experienced instructors provide lessons for all abilities, ensuring a fun and safe introduction to the sport.",
+      "priceFrom": 45,
+      "priceTo": 55,
+      "duration": "2 hours",
+      "difficulty": "beginner",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.tyf.com/adventures/surfing/"
+    },
+    {
+      "operatorSlug": "tyf-adventure",
+      "name": "Climbing",
+      "slug": "climbing",
+      "activityType": "climbing",
+      "region": "pembrokeshire",
+      "description": "Scale the cliffs of Pembrokeshire with expert guidance. Suitable for beginners and experienced climbers alike, offering a challenging and rewarding experience with breathtaking views.",
+      "priceFrom": 55,
+      "priceTo": 65,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.tyf.com/adventures/climbing/"
+    },
+    {
+      "operatorSlug": "tyf-adventure",
+      "name": "Stand Up Paddleboarding",
+      "slug": "stand-up-paddleboarding",
+      "activityType": "sup",
+      "region": "pembrokeshire",
+      "description": "Explore the calm waters of Pembrokeshire's estuaries and bays on a stand-up paddleboard. Enjoy a gentle workout and stunning scenery, with lessons available for all skill levels.",
+      "priceFrom": 45,
+      "priceTo": 55,
+      "duration": "2 hours",
+      "difficulty": "beginner",
+      "minAge": 8,
+      "season": "Apr-Oct",
+      "bookingUrl": "https://www.tyf.com/adventures/stand-up-paddleboarding/"
+    },
+    {
+      "operatorSlug": "zip-world",
+      "name": "Velocity 2",
+      "slug": "velocity-2",
+      "activityType": "zip-lining",
+      "region": "snowdonia",
+      "description": "Experience the thrill of flying on Velocity 2, the fastest zip line in the world, reaching speeds of over 100 mph. This exhilarating ride takes you over Penrhyn Quarry with breathtaking views of Snowdonia.",
+      "priceFrom": 89,
+      "priceTo": 89,
+      "duration": "2 hours",
+      "difficulty": "moderate",
+      "minAge": 10,
+      "season": "All Year",
+      "bookingUrl": "https://www.zipworld.co.uk/velocity"
+    },
+    {
+      "operatorSlug": "zip-world",
+      "name": "Quarry Karts",
+      "slug": "quarry-karts",
+      "activityType": "quarry-karts",
+      "region": "snowdonia",
+      "description": "Race down the Penrhyn Quarry on three-wheeled karts, navigating hairpin bends and thrilling straights. Quarry Karts offers a unique and exhilarating driving experience for all skill levels.",
+      "priceFrom": 55,
+      "priceTo": 55,
+      "duration": "1 hour",
+      "difficulty": "moderate",
+      "minAge": 15,
+      "season": "All Year",
+      "bookingUrl": "https://www.zipworld.co.uk/quarry-karts"
+    },
+    {
+      "operatorSlug": "zip-world",
+      "name": "Bounce Below",
+      "slug": "bounce-below",
+      "activityType": "bounce-below",
+      "region": "snowdonia",
+      "description": "Jump and explore in a network of giant trampolines suspended in a disused slate mine. Bounce Below offers a unique and fun-filled underground adventure for all ages.",
+      "priceFrom": 32,
+      "priceTo": 32,
+      "duration": "1 hour",
+      "difficulty": "easy",
+      "minAge": 7,
+      "season": "All Year",
+      "bookingUrl": "https://www.zipworld.co.uk/bounce-below"
+    },
+    {
+      "operatorSlug": "zip-world",
+      "name": "Caverns",
+      "slug": "caverns",
+      "activityType": "adventure",
+      "region": "snowdonia",
+      "description": "Navigate through a series of underground zip lines, rope bridges, and tunnels in a disused slate mine. Caverns offers a thrilling and challenging adventure in a unique subterranean environment.",
+      "priceFrom": 65,
+      "priceTo": 65,
+      "duration": "3 hours",
+      "difficulty": "moderate",
+      "minAge": 10,
+      "season": "All Year",
+      "bookingUrl": "https://www.zipworld.co.uk/caverns"
+    },
+    {
+      "operatorSlug": "zip-world",
+      "name": "Titan 2",
+      "slug": "titan-2",
+      "activityType": "zip-lining",
+      "region": "snowdonia",
+      "description": "Experience Europe's largest zip zone, zipping down multiple lines from the top of Llechwedd slate quarry. Titan 2 is a thrilling adventure for groups of friends and families.",
+      "priceFrom": 79,
+      "priceTo": 79,
+      "duration": "2 hours",
+      "difficulty": "moderate",
+      "minAge": 7,
+      "season": "All Year",
+      "bookingUrl": "https://www.zipworld.co.uk/titan-2"
+    },
+    {
+      "operatorSlug": "zip-world",
+      "name": "Zip Safari 2",
+      "slug": "zip-safari-2",
+      "activityType": "zip-lining",
+      "region": "snowdonia",
+      "description": "A series of 23 zip lines weave through the trees, offering a unique and exhilarating way to explore the forest canopy. Zip Safari 2 is perfect for adventurers of all ages.",
+      "priceFrom": 65,
+      "priceTo": 65,
+      "duration": "2-3 hours",
+      "difficulty": "moderate",
+      "minAge": 9,
+      "season": "All Year",
+      "bookingUrl": "https://www.zipworld.co.uk/zip-safari-2"
+    },
+    {
+      "operatorSlug": "zip-world",
+      "name": "Treetop Nets",
+      "slug": "treetop-nets",
+      "activityType": "adventure",
+      "region": "snowdonia",
+      "description": "A network of giant trampolines, walkways, slides and tunnels, all made from netting and suspended between trees up to 50ft high. Treetop Nets is perfect for families who like to bounce and explore.",
+      "priceFrom": 32,
+      "priceTo": 32,
+      "duration": "2 hours",
+      "difficulty": "easy",
+      "minAge": 3,
+      "season": "All Year",
+      "bookingUrl": "https://www.zipworld.co.uk/treetop-nets"
+    },
+    {
+      "operatorSlug": "zip-world",
+      "name": "Tower Coaster",
+      "slug": "tower-coaster",
+      "activityType": "adventure",
+      "region": "south-wales",
+      "description": "The Tower Coaster is Wales’ only alpine coaster, taking you on a thrilling ride through the trees. This is a rollercoaster that you control!",
+      "priceFrom": 28,
+      "priceTo": 28,
+      "duration": "20 mins",
+      "difficulty": "easy",
+      "minAge": 3,
+      "season": "All Year",
+      "bookingUrl": "https://www.zipworld.co.uk/tower-coaster"
+    },
+    {
+      "operatorSlug": "zip-world",
+      "name": "Tower Climber",
+      "slug": "tower-climber",
+      "activityType": "adventure",
+      "region": "south-wales",
+      "description": "The Tower Climber offers adventure high above the ground, with different routes to try, so all abilities are welcome!",
+      "priceFrom": 25,
+      "priceTo": 25,
+      "duration": "1 hour",
+      "difficulty": "moderate",
+      "minAge": 7,
+      "season": "All Year",
+      "bookingUrl": "https://www.zipworld.co.uk/tower-climber"
+    },
+    {
+      "operatorSlug": "zip-world",
+      "name": "Big Red",
+      "slug": "big-red",
+      "activityType": "zip-lining",
+      "region": "south-wales",
+      "description": "Three exhilarating zip lines that start at the top of Tower Colliery, flying through the Rhigos Mountain Range. Soar above the ground!",
+      "priceFrom": 40,
+      "priceTo": 40,
+      "duration": "1 hour",
+      "difficulty": "moderate",
+      "minAge": 7,
+      "season": "All Year",
+      "bookingUrl": "https://www.zipworld.co.uk/big-red"
+    },
+    {
+      "operatorSlug": "zip-world",
+      "name": "Phoenix",
+      "slug": "phoenix",
+      "activityType": "zip-lining",
+      "region": "south-wales",
+      "description": "Phoenix is home to the world’s fastest seated zip line, flying four at a time over the beautiful Welsh landscape. Perfect for family and friends!",
+      "priceFrom": 69,
+      "priceTo": 69,
+      "duration": "1 hour",
+      "difficulty": "moderate",
+      "minAge": 10,
+      "season": "All Year",
+      "bookingUrl": "https://www.zipworld.co.uk/phoenix"
+    }
+  ]
+}

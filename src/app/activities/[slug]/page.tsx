@@ -1,12 +1,29 @@
 import { notFound } from "next/navigation";
-import { getActivityBySlug, getActivities } from "@/lib/queries";
+import type { Metadata } from "next";
+import { getActivityBySlug, getActivities, getAccommodation } from "@/lib/queries";
 import { Badge, DifficultyBadge, PriceBadge } from "@/components/ui/badge";
 import { ButtonLink } from "@/components/ui/button";
 import { ActivityCard } from "@/components/cards/activity-card";
+import { ActivityGallery } from "@/components/activities/activity-gallery";
+import dynamic from "next/dynamic";
+import type { MapMarker } from "@/components/ui/MapView";
 import { 
   MapPin, Clock, Calendar, Users, Star, 
   CheckCircle, XCircle, ExternalLink, Share2, Heart 
 } from "lucide-react";
+import { 
+  JsonLd, 
+  createTouristAttractionSchema, 
+  createBreadcrumbSchema 
+} from "@/components/seo/JsonLd";
+
+const MapView = dynamic(() => import("@/components/ui/MapView"), {
+  loading: () => (
+    <div className="w-full h-[300px] rounded-2xl bg-gray-200 animate-pulse flex items-center justify-center">
+      <span className="text-gray-400">Loading map...</span>
+    </div>
+  ),
+});
 
 interface ActivityPageProps {
   params: Promise<{ slug: string }>;
@@ -58,6 +75,44 @@ function getActivityHeroImage(activitySlug: string, activityTypeSlug?: string | 
   return "/images/activities/hiking-hero.jpg";
 }
 
+// Generate metadata for SEO
+export async function generateMetadata({ params }: ActivityPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const data = await getActivityBySlug(slug);
+
+  if (!data) {
+    return {
+      title: 'Activity Not Found',
+    };
+  }
+
+  const { activity, region, operator, activityType } = data;
+  const intro = extractIntro(activity.description);
+  const description = intro || `Experience ${activity.name} in ${region?.name || 'Wales'}. ${activity.duration ? `Duration: ${activity.duration}.` : ''} ${activity.difficulty ? `Difficulty: ${activity.difficulty}.` : ''}`;
+
+  return {
+    title: `${activity.name} | ${region?.name || 'Wales'} | Adventure Wales`,
+    description: description.slice(0, 160),
+    keywords: `${activity.name}, ${region?.name || 'Wales'}, adventure, outdoor activities, ${activityType?.name || 'activities'}`,
+    openGraph: {
+      title: `${activity.name} | ${region?.name || 'Wales'}`,
+      description: description.slice(0, 160),
+      type: 'website',
+      locale: 'en_GB',
+      url: `https://adventurewales.co.uk/activities/${slug}`,
+      siteName: 'Adventure Wales',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${activity.name} | ${region?.name || 'Wales'}`,
+      description: description.slice(0, 160),
+    },
+    alternates: {
+      canonical: `https://adventurewales.co.uk/activities/${slug}`,
+    },
+  };
+}
+
 export default async function ActivityPage({ params }: ActivityPageProps) {
   const { slug } = await params;
   const data = await getActivityBySlug(slug);
@@ -68,17 +123,73 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
 
   const { activity, region, operator, activityType } = data;
 
-  // Get related activities
-  const relatedActivities = await getActivities({
-    regionId: region?.id,
-    limit: 4,
-  });
+  // Get related activities and nearby accommodation
+  const [relatedActivities, nearbyAccommodation] = await Promise.all([
+    getActivities({
+      regionId: region?.id,
+      limit: 4,
+    }),
+    region
+      ? getAccommodation({ regionId: region.id, limit: 10 })
+      : Promise.resolve([]),
+  ]);
+
+  // Prepare map markers
+  const mapMarkers: MapMarker[] = [];
+
+  // Add the main activity location
+  if (activity.lat && activity.lng) {
+    mapMarkers.push({
+      id: `activity-${activity.id}`,
+      lat: parseFloat(String(activity.lat)),
+      lng: parseFloat(String(activity.lng)),
+      type: "activity",
+      title: activity.name,
+      subtitle: "Activity Location",
+      price: activity.priceFrom ? `From £${activity.priceFrom}` : undefined,
+    });
+  }
+
+  // Add nearby accommodation
+  nearbyAccommodation
+    .filter((item) => item.accommodation.lat && item.accommodation.lng)
+    .forEach((item) => {
+      mapMarkers.push({
+        id: `accommodation-${item.accommodation.id}`,
+        lat: parseFloat(String(item.accommodation.lat)),
+        lng: parseFloat(String(item.accommodation.lng)),
+        type: "accommodation",
+        title: item.accommodation.name,
+        link: `/accommodation/${item.accommodation.slug}`,
+        subtitle: item.accommodation.type || "Accommodation",
+        price: item.accommodation.priceFrom
+          ? `From £${item.accommodation.priceFrom}/night`
+          : undefined,
+      });
+    });
 
   // Get hero image based on activity type
   const heroImage = getActivityHeroImage(activity.slug, activityType?.slug);
 
+  // Create breadcrumb items
+  const breadcrumbItems = [
+    { name: 'Home', url: '/' },
+    { name: 'Activities', url: '/activities' },
+  ];
+  if (region) {
+    breadcrumbItems.push({ name: region.name, url: `/${region.slug}` });
+  }
+  breadcrumbItems.push({ name: activity.name, url: `/activities/${slug}` });
+
   return (
-    <div className="min-h-screen pt-16">
+    <>
+      <JsonLd data={createTouristAttractionSchema(activity, {
+        region,
+        operator,
+        imageUrl: `https://adventurewales.co.uk${heroImage}`,
+      })} />
+      <JsonLd data={createBreadcrumbSchema(breadcrumbItems)} />
+      <div className="min-h-screen pt-16">
       {/* Hero Gallery */}
       <section className="relative h-[50vh] min-h-[400px]">
         <div
@@ -87,7 +198,8 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
             backgroundImage: `url('${heroImage}')`,
           }}
         >
-          <div className="absolute inset-0 bg-black/30" />
+          {/* Gradient overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/60" />
         </div>
 
         {/* Actions */}
@@ -174,6 +286,14 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
               </p>
             </section>
 
+            {/* Photo Gallery */}
+            {activityType?.slug && (
+              <ActivityGallery 
+                activityType={activityType.slug} 
+                activityName={activity.name}
+              />
+            )}
+
             {/* What's Included */}
             <section>
               <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">
@@ -205,7 +325,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
               </div>
             </section>
 
-            {/* Meeting Point */}
+            {/* Meeting Point & Location Map */}
             {activity.meetingPoint && (
               <section>
                 <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">
@@ -216,6 +336,40 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                     <MapPin className="h-5 w-5 text-[#f97316]" />
                     {activity.meetingPoint}
                   </p>
+                </div>
+              </section>
+            )}
+
+            {/* Location Map */}
+            {mapMarkers.length > 0 && (
+              <section>
+                <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">
+                  Location & Nearby Accommodation
+                </h2>
+                <MapView
+                  markers={mapMarkers}
+                  center={
+                    activity.lat && activity.lng
+                      ? [parseFloat(String(activity.lat)), parseFloat(String(activity.lng))]
+                      : undefined
+                  }
+                  zoom={13}
+                  height="350px"
+                  className="rounded-xl shadow-sm"
+                />
+                
+                {/* Map Legend */}
+                <div className="flex flex-wrap gap-3 mt-3 text-xs text-gray-600">
+                  <span className="flex items-center gap-2">
+                    <span className="w-3 h-3 rounded-full bg-[#3b82f6] border-2 border-white shadow-sm"></span>
+                    Activity
+                  </span>
+                  {nearbyAccommodation.length > 0 && (
+                    <span className="flex items-center gap-2">
+                      <span className="w-3 h-3 rounded-full bg-[#22c55e] border-2 border-white shadow-sm"></span>
+                      Nearby Stays ({nearbyAccommodation.filter(a => a.accommodation.lat && a.accommodation.lng).length})
+                    </span>
+                  )}
                 </div>
               </section>
             )}
@@ -297,6 +451,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
         )}
       </div>
     </div>
+    </>
   );
 }
 

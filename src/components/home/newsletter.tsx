@@ -1,10 +1,26 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+// Available homepage CTA background images
+const ctaImages = [
+  "/images/misc/homepage-cta-01-f05c15c9.jpg",
+  "/images/misc/homepage-cta-02-44be48fd.jpg",
+  "/images/misc/homepage-cta-03-14eafd88.jpg",
+  "/images/misc/homepage-cta-04-c71cd2fd.jpg",
+  "/images/misc/homepage-cta-05-ba85fcf8.jpg",
+];
 
 export function Newsletter() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [bgImage, setBgImage] = useState(ctaImages[0]);
+
+  useEffect(() => {
+    // Pick a random CTA image on mount
+    const randomImage = ctaImages[Math.floor(Math.random() * ctaImages.length)];
+    setBgImage(randomImage);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -18,16 +34,26 @@ export function Newsletter() {
   };
 
   return (
-    <section className="py-12 sm:py-16 bg-[#1e3a4c]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section 
+      className="relative py-16 sm:py-20 bg-cover bg-center overflow-hidden"
+      style={{ backgroundImage: `url('${bgImage}')` }}
+    >
+      {/* Gradient overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a4c]/90 via-[#1e3a4c]/85 to-[#f97316]/80" />
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="text-center lg:text-left">
-            <h2 className="text-2xl sm:text-3xl font-black text-white">Get Inspired for Your Next Adventure</h2>
-            <p className="mt-2 text-slate-300">Subscribe for exclusive deals, travel tips, and hidden gems.</p>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white drop-shadow-lg">
+              Get Inspired for Your Next Adventure
+            </h2>
+            <p className="mt-3 text-lg text-slate-200 drop-shadow-md">
+              Subscribe for exclusive deals, travel tips, and hidden gems across Wales.
+            </p>
           </div>
           
           {status === "success" ? (
-            <div className="bg-green-500/20 text-green-100 px-6 py-4 rounded-lg">
+            <div className="bg-green-500/90 text-white px-6 py-4 rounded-2xl shadow-lg">
               ✓ Thanks for subscribing!
             </div>
           ) : (
@@ -37,13 +63,13 @@ export function Newsletter() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-xl border-none focus:ring-2 focus:ring-[#f97316] outline-none text-slate-900"
+                className="flex-1 px-5 py-4 rounded-2xl border-none focus:ring-2 focus:ring-[#f97316] outline-none text-slate-900 shadow-lg"
                 required
               />
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="px-6 py-3 bg-[#f97316] hover:bg-orange-600 text-white font-bold rounded-xl transition-colors whitespace-nowrap disabled:opacity-50"
+                className="px-8 py-4 bg-[#f97316] hover:bg-orange-600 text-white font-bold rounded-2xl transition-all shadow-lg hover:shadow-xl hover:scale-105 whitespace-nowrap disabled:opacity-50"
               >
                 {status === "loading" ? "..." : "Subscribe"}
               </button>

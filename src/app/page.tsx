@@ -8,6 +8,7 @@ import { ActivitiesRow } from "@/components/home/activities-row";
 import { FeaturedItineraries } from "@/components/home/featured-itineraries";
 import { UpcomingEvents } from "@/components/home/upcoming-events";
 import { Newsletter } from "@/components/home/newsletter";
+import { JsonLd, createWebSiteSchema, createOrganizationSchema } from "@/components/seo/JsonLd";
 
 async function getHomePageData() {
   const [regionsData, activitiesData, eventsData, operatorsData] = await Promise.all([
@@ -29,14 +30,18 @@ export default async function HomePage() {
   const data = await getHomePageData();
 
   return (
-    <div className="min-h-screen">
-      <HeroSection />
-      <SearchBar regions={data.regions} />
-      <RegionsGrid regions={data.regions} />
-      <ActivitiesRow />
-      <FeaturedItineraries activities={data.activities} />
-      <UpcomingEvents events={data.events} />
-      <Newsletter />
-    </div>
+    <>
+      <JsonLd data={createWebSiteSchema()} />
+      <JsonLd data={createOrganizationSchema()} />
+      <div className="min-h-screen">
+        <HeroSection />
+        <SearchBar regions={data.regions} />
+        <RegionsGrid regions={data.regions} />
+        <ActivitiesRow />
+        <FeaturedItineraries activities={data.activities} />
+        <UpcomingEvents events={data.events} />
+        <Newsletter />
+      </div>
+    </>
   );
 }

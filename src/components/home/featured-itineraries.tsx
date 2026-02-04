@@ -82,12 +82,14 @@ export function FeaturedItineraries({ activities }: FeaturedItinerariesProps) {
                 href={`/itineraries/${itinerary.id}`}
                 className="flex-shrink-0 w-[260px] sm:w-auto group"
               >
-                <div className="relative aspect-[4/5] rounded-xl overflow-hidden">
+                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                   <div
-                    className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+                    className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
                     style={{ backgroundImage: `url('${itinerary.image}')` }}
                   />
-                  <div className="absolute top-3 left-3 bg-white/90 px-2 py-1 rounded text-xs font-bold uppercase text-[#1e3a4c]">
+                  {/* Gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-lg text-xs font-bold uppercase text-[#1e3a4c]">
                     {itinerary.duration}
                   </div>
                 </div>

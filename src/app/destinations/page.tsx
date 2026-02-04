@@ -1,10 +1,28 @@
 import Link from "next/link";
-import { getAllRegions } from "@/lib/queries";
+import { getAllRegions, getAllRegionsWithCoordinates } from "@/lib/queries";
 import { MapPin, ChevronRight, Compass } from "lucide-react";
 import { Newsletter } from "@/components/commercial/Newsletter";
+import { RegionMap } from "@/components/ui/RegionMap";
+import type { MapMarker } from "@/components/ui/MapView";
 
 export default async function DestinationsPage() {
-  const regions = await getAllRegions();
+  const [regions, regionsWithCoordinates] = await Promise.all([
+    getAllRegions(),
+    getAllRegionsWithCoordinates(),
+  ]);
+
+  // Prepare map markers for all regions
+  const regionMarkers: MapMarker[] = regionsWithCoordinates
+    .filter((region) => region.lat && region.lng)
+    .map((region) => ({
+      id: `region-${region.id}`,
+      lat: parseFloat(String(region.lat)),
+      lng: parseFloat(String(region.lng)),
+      type: "location" as const,
+      title: region.name,
+      link: `/${region.slug}`,
+      subtitle: "Explore this region",
+    }));
 
   return (
     <div className="min-h-screen pt-4 lg:pt-8 pb-12">
@@ -48,6 +66,34 @@ export default async function DestinationsPage() {
             </div>
           </Link>
         )}
+
+        {/* Explore the Map Section */}
+        <section className="mb-12">
+          <div className="mb-6">
+            <h2 className="text-2xl lg:text-3xl font-bold text-[#1e3a4c] mb-2">
+              Explore the Map
+            </h2>
+            <p className="text-gray-600">
+              Click on any region to start planning your adventure
+            </p>
+          </div>
+          
+          <RegionMap
+            markers={regionMarkers}
+            center={[52.4, -3.6]}
+            zoom={8}
+            height="500px"
+            className="shadow-lg"
+          />
+          
+          {/* Map Legend */}
+          <div className="mt-4 flex items-center gap-4 text-sm text-gray-600">
+            <span className="flex items-center gap-2">
+              <span className="w-4 h-4 rounded-full bg-[#a855f7] border-2 border-white shadow-sm"></span>
+              Regions
+            </span>
+          </div>
+        </section>
 
         {/* All Regions Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

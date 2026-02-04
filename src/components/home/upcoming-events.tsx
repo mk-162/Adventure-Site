@@ -35,9 +35,9 @@ export function UpcomingEvents({ events }: UpcomingEventsProps) {
             <h2 className="mt-2 text-3xl font-bold text-[#1e3a4c]">Upcoming Events</h2>
           </div>
           <div className="flex gap-2 overflow-x-auto no-scrollbar">
-            <button className="shrink-0 px-4 py-2 rounded-full bg-[#1e3a4c] text-white text-sm font-bold">All</button>
-            <button className="shrink-0 px-4 py-2 rounded-full border border-slate-200 text-sm font-bold hover:bg-slate-50 text-slate-700">Festivals</button>
-            <button className="shrink-0 px-4 py-2 rounded-full border border-slate-200 text-sm font-bold hover:bg-slate-50 text-slate-700">Races</button>
+            <button className="shrink-0 px-4 py-2 rounded-full bg-[#1e3a4c] text-white text-sm font-bold hover:bg-[#1e3a4c]/90 transition-colors">All</button>
+            <button className="shrink-0 px-4 py-2 rounded-full border border-slate-200 text-sm font-bold hover:bg-slate-50 text-slate-700 transition-colors">Festivals</button>
+            <button className="shrink-0 px-4 py-2 rounded-full border border-slate-200 text-sm font-bold hover:bg-slate-50 text-slate-700 transition-colors">Races</button>
           </div>
         </div>
 
@@ -48,9 +48,9 @@ export function UpcomingEvents({ events }: UpcomingEventsProps) {
               <Link
                 key={event.id}
                 href={`/events/${event.slug}`}
-                className={`flex items-center gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl hover:bg-slate-50 transition-colors ${index !== 0 ? "border-t border-slate-100" : ""}`}
+                className={`group flex items-center gap-4 sm:gap-6 p-4 sm:p-6 rounded-2xl hover:bg-slate-50 hover:shadow-md transition-all duration-300 ${index !== 0 ? "border-t border-slate-100" : ""}`}
               >
-                <div className="shrink-0 w-16 sm:w-20 text-center bg-slate-100 rounded-lg py-3">
+                <div className="shrink-0 w-16 sm:w-20 text-center bg-slate-100 group-hover:bg-[#f97316]/10 rounded-2xl py-3 transition-colors">
                   <span className="block text-[#f97316] font-bold text-xs sm:text-sm uppercase">
                     {date.month}
                   </span>

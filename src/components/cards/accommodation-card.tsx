@@ -62,14 +62,16 @@ export function AccommodationCard({
   return (
     <Link
       href={`/accommodation/${accommodation.slug}`}
-      className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
+      className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
     >
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
           style={{ backgroundImage: `url('${imageUrl}')` }}
         />
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         {accommodation.type && (
           <div className="absolute top-3 left-3">
             <TypeBadge type={accommodation.type} />

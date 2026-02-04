@@ -33,18 +33,18 @@ export function RegionsGrid({ regions }: RegionsGridProps) {
             <Link
               key={region.id}
               href={`/${region.slug}`}
-              className="group relative overflow-hidden rounded-2xl aspect-[4/3]"
+              className="group relative overflow-hidden rounded-2xl aspect-[4/3] shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
             >
               {/* Background Image */}
               <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                 style={{
                   backgroundImage: `url('${getRegionImage(region.slug)}')`,
                 }}
               />
 
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
               {/* Content */}
               <div className="absolute bottom-0 left-0 p-4 sm:p-6">

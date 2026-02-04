@@ -597,3 +597,78 @@ export async function searchAll(query: string) {
     locations: locationsResults,
   };
 }
+
+// =====================
+// MAP-SPECIFIC QUERIES
+// =====================
+
+export async function getAllRegionsWithCoordinates() {
+  return db
+    .select()
+    .from(regions)
+    .where(
+      and(
+        eq(regions.status, "published"),
+        sql`${regions.lat} IS NOT NULL`,
+        sql`${regions.lng} IS NOT NULL`
+      )
+    )
+    .orderBy(asc(regions.name));
+}
+
+export async function getRegionEntitiesForMap(regionId: number) {
+  const [regionActivities, regionAccommodation, regionLocations, regionEvents] =
+    await Promise.all([
+      db
+        .select()
+        .from(activities)
+        .where(
+          and(
+            eq(activities.regionId, regionId),
+            eq(activities.status, "published"),
+            sql`${activities.lat} IS NOT NULL`,
+            sql`${activities.lng} IS NOT NULL`
+          )
+        ),
+      db
+        .select()
+        .from(accommodation)
+        .where(
+          and(
+            eq(accommodation.regionId, regionId),
+            eq(accommodation.status, "published"),
+            sql`${accommodation.lat} IS NOT NULL`,
+            sql`${accommodation.lng} IS NOT NULL`
+          )
+        ),
+      db
+        .select()
+        .from(locations)
+        .where(
+          and(
+            eq(locations.regionId, regionId),
+            eq(locations.status, "published"),
+            sql`${locations.lat} IS NOT NULL`,
+            sql`${locations.lng} IS NOT NULL`
+          )
+        ),
+      db
+        .select()
+        .from(events)
+        .where(
+          and(
+            eq(events.regionId, regionId),
+            eq(events.status, "published"),
+            sql`${events.lat} IS NOT NULL`,
+            sql`${events.lng} IS NOT NULL`
+          )
+        ),
+    ]);
+
+  return {
+    activities: regionActivities,
+    accommodation: regionAccommodation,
+    locations: regionLocations,
+    events: regionEvents,
+  };
+}

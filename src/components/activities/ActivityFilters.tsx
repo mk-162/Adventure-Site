@@ -4,7 +4,18 @@ import { useState, useEffect, useMemo } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { ActivityCard } from '@/components/cards/activity-card';
-import { Filter, Search, Mountain } from 'lucide-react';
+import { Filter, Search, Mountain, Map as MapIcon, Grid } from 'lucide-react';
+import dynamic from 'next/dynamic';
+import type { MapMarker } from '@/components/ui/MapView';
+
+const MapView = dynamic(() => import('@/components/ui/MapView'), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-[500px] rounded-xl bg-gray-200 animate-pulse flex items-center justify-center">
+      <span className="text-gray-400">Loading map...</span>
+    </div>
+  ),
+});
 
 interface Activity {
   activity: {
@@ -65,6 +76,7 @@ export function ActivityFilters({
   const [selectedActivityType, setSelectedActivityType] = useState(searchParams.get('type') || '');
   const [selectedDifficulty, setSelectedDifficulty] = useState(searchParams.get('difficulty') || '');
   const [selectedPrice, setSelectedPrice] = useState(searchParams.get('price') || '');
+  const [viewMode, setViewMode] = useState<'grid' | 'map'>('grid');
 
   // Update URL when filters change
   useEffect(() => {
@@ -139,6 +151,24 @@ export function ActivityFilters({
     // If clicking the same type, clear it; otherwise set it
     setSelectedActivityType(selectedActivityType === typeSlug ? '' : typeSlug);
   };
+
+  // Prepare map markers from filtered activities
+  const mapMarkers: MapMarker[] = useMemo(() => {
+    return filteredActivities
+      .filter((item) => item.activity.lat && item.activity.lng)
+      .map((item) => ({
+        id: `activity-${item.activity.id}`,
+        lat: parseFloat(String(item.activity.lat)),
+        lng: parseFloat(String(item.activity.lng)),
+        type: 'activity' as const,
+        title: item.activity.name,
+        link: `/activities/${item.activity.slug}`,
+        subtitle: item.activityType?.name || undefined,
+        price: item.activity.priceFrom
+          ? `From £${item.activity.priceFrom}`
+          : undefined,
+      }));
+  }, [filteredActivities]);
 
   return (
     <>
@@ -227,13 +257,62 @@ export function ActivityFilters({
         ))}
       </div>
 
-      {/* Results Count */}
-      <p className="text-sm text-gray-500 mb-4">
-        {filteredActivities.length} {filteredActivities.length === 1 ? 'activity' : 'activities'} found
-      </p>
+      {/* Results Count & View Toggle */}
+      <div className="flex items-center justify-between mb-4">
+        <p className="text-sm text-gray-500">
+          {filteredActivities.length} {filteredActivities.length === 1 ? 'activity' : 'activities'} found
+        </p>
+        
+        {/* View Mode Toggle */}
+        <div className="flex items-center gap-2 bg-gray-100 rounded-lg p-1">
+          <button
+            onClick={() => setViewMode('grid')}
+            className={`flex items-center gap-2 px-3 py-1.5 rounded-md text-sm transition-colors ${
+              viewMode === 'grid'
+                ? 'bg-white text-[#1e3a4c] shadow-sm'
+                : 'text-gray-600 hover:text-[#1e3a4c]'
+            }`}
+          >
+            <Grid className="w-4 h-4" />
+            Grid
+          </button>
+          <button
+            onClick={() => setViewMode('map')}
+            className={`flex items-center gap-2 px-3 py-1.5 rounded-md text-sm transition-colors ${
+              viewMode === 'map'
+                ? 'bg-white text-[#1e3a4c] shadow-sm'
+                : 'text-gray-600 hover:text-[#1e3a4c]'
+            }`}
+          >
+            <MapIcon className="w-4 h-4" />
+            Map
+          </button>
+        </div>
+      </div>
 
-      {/* Activities Grid */}
-      {filteredActivities.length > 0 ? (
+      {/* Map View */}
+      {viewMode === 'map' && filteredActivities.length > 0 && (
+        <div className="mb-12">
+          <MapView
+            markers={mapMarkers}
+            center={[52.4, -3.6]}
+            zoom={8}
+            height="600px"
+            className="rounded-xl shadow-lg"
+          />
+          
+          {/* Map Legend */}
+          <div className="flex items-center gap-4 mt-4 text-sm text-gray-600">
+            <span className="flex items-center gap-2">
+              <span className="w-4 h-4 rounded-full bg-[#3b82f6] border-2 border-white shadow-sm"></span>
+              Activities ({mapMarkers.length})
+            </span>
+          </div>
+        </div>
+      )}
+
+      {/* Grid View */}
+      {viewMode === 'grid' && filteredActivities.length > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {filteredActivities.map((item) => (
             <ActivityCard
@@ -245,8 +324,10 @@ export function ActivityFilters({
             />
           ))}
         </div>
-      ) : (
-        /* Empty State */
+      )}
+
+      {/* Empty State */}
+      {filteredActivities.length === 0 && (
         <div className="text-center py-16">
           <Mountain className="w-16 h-16 text-gray-300 mx-auto mb-4" />
           <h3 className="text-xl font-bold text-gray-700 mb-2">No activities found</h3>

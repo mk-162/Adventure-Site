@@ -50,6 +50,15 @@ export const adStatusEnum = pgEnum("ad_status", [
   "ended",
 ]);
 
+export const tagTypeEnum = pgEnum("tag_type", [
+  "activity",
+  "terrain",
+  "difficulty",
+  "amenity",
+  "feature",
+  "region",
+]);
+
 // =====================
 // CORE CONTENT TABLES
 // =====================
@@ -216,6 +225,64 @@ export const transport = pgTable("transport", {
   lat: decimal("lat", { precision: 10, scale: 7 }),
   lng: decimal("lng", { precision: 10, scale: 7 }),
   notes: text("notes"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+// Tags
+export const tags = pgTable("tags", {
+  id: serial("id").primaryKey(),
+  siteId: integer("site_id")
+    .references(() => sites.id)
+    .notNull(),
+  name: varchar("name", { length: 255 }).notNull(),
+  slug: varchar("slug", { length: 255 }).notNull(),
+  type: tagTypeEnum("type").notNull(),
+  description: text("description"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+// Tag junction tables
+export const activityTags = pgTable("activity_tags", {
+  id: serial("id").primaryKey(),
+  activityId: integer("activity_id")
+    .references(() => activities.id)
+    .notNull(),
+  tagId: integer("tag_id")
+    .references(() => tags.id)
+    .notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export const accommodationTags = pgTable("accommodation_tags", {
+  id: serial("id").primaryKey(),
+  accommodationId: integer("accommodation_id")
+    .references(() => accommodation.id)
+    .notNull(),
+  tagId: integer("tag_id")
+    .references(() => tags.id)
+    .notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export const locationTags = pgTable("location_tags", {
+  id: serial("id").primaryKey(),
+  locationId: integer("location_id")
+    .references(() => locations.id)
+    .notNull(),
+  tagId: integer("tag_id")
+    .references(() => tags.id)
+    .notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export const itineraryTags = pgTable("itinerary_tags", {
+  id: serial("id").primaryKey(),
+  itineraryId: integer("itinerary_id")
+    .references(() => itineraries.id)
+    .notNull(),
+  tagId: integer("tag_id")
+    .references(() => tags.id)
+    .notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
@@ -509,6 +576,7 @@ export const sitesRelations = relations(sites, ({ many }) => ({
   answers: many(answers),
   operators: many(operators),
   advertisers: many(advertisers),
+  tags: many(tags),
 }));
 
 export const regionsRelations = relations(regions, ({ one, many }) => ({
@@ -528,17 +596,31 @@ export const operatorsRelations = relations(operators, ({ one, many }) => ({
   offers: many(operatorOffers),
 }));
 
-export const activitiesRelations = relations(activities, ({ one }) => ({
+export const activitiesRelations = relations(activities, ({ one, many }) => ({
   site: one(sites, { fields: [activities.siteId], references: [sites.id] }),
   region: one(regions, { fields: [activities.regionId], references: [regions.id] }),
   operator: one(operators, { fields: [activities.operatorId], references: [operators.id] }),
   activityType: one(activityTypes, { fields: [activities.activityTypeId], references: [activityTypes.id] }),
+  activityTags: many(activityTags),
+}));
+
+export const accommodationRelations = relations(accommodation, ({ one, many }) => ({
+  site: one(sites, { fields: [accommodation.siteId], references: [sites.id] }),
+  region: one(regions, { fields: [accommodation.regionId], references: [regions.id] }),
+  accommodationTags: many(accommodationTags),
+}));
+
+export const locationsRelations = relations(locations, ({ one, many }) => ({
+  site: one(sites, { fields: [locations.siteId], references: [sites.id] }),
+  region: one(regions, { fields: [locations.regionId], references: [regions.id] }),
+  locationTags: many(locationTags),
 }));
 
 export const itinerariesRelations = relations(itineraries, ({ one, many }) => ({
   site: one(sites, { fields: [itineraries.siteId], references: [sites.id] }),
   region: one(regions, { fields: [itineraries.regionId], references: [regions.id] }),
   items: many(itineraryItems),
+  itineraryTags: many(itineraryTags),
 }));
 
 export const itineraryItemsRelations = relations(itineraryItems, ({ one }) => ({
@@ -546,4 +628,32 @@ export const itineraryItemsRelations = relations(itineraryItems, ({ one }) => ({
   activity: one(activities, { fields: [itineraryItems.activityId], references: [activities.id] }),
   accommodation: one(accommodation, { fields: [itineraryItems.accommodationId], references: [accommodation.id] }),
   location: one(locations, { fields: [itineraryItems.locationId], references: [locations.id] }),
+}));
+
+export const tagsRelations = relations(tags, ({ one, many }) => ({
+  site: one(sites, { fields: [tags.siteId], references: [sites.id] }),
+  activityTags: many(activityTags),
+  accommodationTags: many(accommodationTags),
+  locationTags: many(locationTags),
+  itineraryTags: many(itineraryTags),
+}));
+
+export const activityTagsRelations = relations(activityTags, ({ one }) => ({
+  activity: one(activities, { fields: [activityTags.activityId], references: [activities.id] }),
+  tag: one(tags, { fields: [activityTags.tagId], references: [tags.id] }),
+}));
+
+export const accommodationTagsRelations = relations(accommodationTags, ({ one }) => ({
+  accommodation: one(accommodation, { fields: [accommodationTags.accommodationId], references: [accommodation.id] }),
+  tag: one(tags, { fields: [accommodationTags.tagId], references: [tags.id] }),
+}));
+
+export const locationTagsRelations = relations(locationTags, ({ one }) => ({
+  location: one(locations, { fields: [locationTags.locationId], references: [locations.id] }),
+  tag: one(tags, { fields: [locationTags.tagId], references: [tags.id] }),
+}));
+
+export const itineraryTagsRelations = relations(itineraryTags, ({ one }) => ({
+  itinerary: one(itineraries, { fields: [itineraryTags.itineraryId], references: [itineraries.id] }),
+  tag: one(tags, { fields: [itineraryTags.tagId], references: [tags.id] }),
 }));

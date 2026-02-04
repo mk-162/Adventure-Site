@@ -102,12 +102,12 @@ export function ActivityCard({
     return (
       <Link
         href={`/activities/${activity.slug}`}
-        className="group flex bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+        className="group flex bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
       >
         {/* Image */}
-        <div className="relative w-32 h-32 flex-shrink-0">
+        <div className="relative w-32 h-32 flex-shrink-0 overflow-hidden">
           <div
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
             style={{ backgroundImage: `url('${imageUrl}')` }}
           />
         </div>
@@ -163,14 +163,16 @@ export function ActivityCard({
   return (
     <Link
       href={`/activities/${activity.slug}`}
-      className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
+      className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
     >
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
           style={{ backgroundImage: `url('${imageUrl}')` }}
         />
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         {activity.difficulty && (
           <div className="absolute top-3 right-3">
             <DifficultyBadge level={activity.difficulty} />

@@ -1,9 +1,12 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import Link from "next/link";
-import { getRegionWithStats, getActivitiesByRegion, getAccommodationByRegion, getOperators } from "@/lib/queries";
+import { getRegionWithStats, getActivitiesByRegion, getAccommodationByRegion, getOperators, getRegionEntitiesForMap } from "@/lib/queries";
+import type { MapMarker } from "@/components/ui/MapView";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { AccommodationCard } from "@/components/cards/accommodation-card";
 import { RegionMap } from "@/components/ui/RegionMap";
+import { ScenicGallery } from "@/components/regions/scenic-gallery";
 import { 
   Map, 
   Heart, 
@@ -21,6 +24,11 @@ import {
   Backpack, 
   Plane, 
 } from "lucide-react";
+import { 
+  JsonLd, 
+  createTouristDestinationSchema, 
+  createBreadcrumbSchema 
+} from "@/components/seo/JsonLd";
 
 interface RegionPageProps {
   params: Promise<{ region: string }>;
@@ -72,6 +80,43 @@ const defaultPlanContent = {
   essentialGear: "Waterproof jacket and layers are essential year-round. For hiking, bring sturdy boots, a map, and extra food/water.",
 };
 
+// Generate metadata for SEO
+export async function generateMetadata({ params }: RegionPageProps): Promise<Metadata> {
+  const { region: regionSlug } = await params;
+  const region = await getRegionWithStats(regionSlug);
+
+  if (!region) {
+    return {
+      title: 'Region Not Found',
+    };
+  }
+
+  const introText = extractIntro(region.description) || `Discover the adventures waiting for you in ${region.name}.`;
+  const description = introText.slice(0, 160);
+
+  return {
+    title: `${region.name} | Discover Adventures in ${region.name} | Adventure Wales`,
+    description,
+    keywords: `${region.name}, Wales, adventure, outdoor activities, things to do, accommodation, travel guide`,
+    openGraph: {
+      title: `${region.name} | Adventure Wales`,
+      description,
+      type: 'website',
+      locale: 'en_GB',
+      url: `https://adventurewales.co.uk/${regionSlug}`,
+      siteName: 'Adventure Wales',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${region.name} | Adventure Wales`,
+      description,
+    },
+    alternates: {
+      canonical: `https://adventurewales.co.uk/${regionSlug}`,
+    },
+  };
+}
+
 export default async function RegionPage({ params }: RegionPageProps) {
   const { region: regionSlug } = await params;
   const region = await getRegionWithStats(regionSlug);
@@ -80,11 +125,56 @@ export default async function RegionPage({ params }: RegionPageProps) {
     notFound();
   }
 
-  const [activities, accommodation, operators] = await Promise.all([
+  const [activities, accommodation, operators, mapEntities] = await Promise.all([
     getActivitiesByRegion(regionSlug, 6),
     getAccommodationByRegion(regionSlug, 4),
     getOperators({ limit: 3 }),
+    getRegionEntitiesForMap(region.id),
   ]);
+
+  // Prepare map markers for all entities in the region
+  const mapMarkers: MapMarker[] = [
+    // Activities (blue)
+    ...mapEntities.activities.map((activity) => ({
+      id: `activity-${activity.id}`,
+      lat: parseFloat(String(activity.lat)),
+      lng: parseFloat(String(activity.lng)),
+      type: "activity" as const,
+      title: activity.name,
+      link: `/activities/${activity.slug}`,
+      price: activity.priceFrom ? `From £${activity.priceFrom}` : undefined,
+    })),
+    // Accommodation (green)
+    ...mapEntities.accommodation.map((acc) => ({
+      id: `accommodation-${acc.id}`,
+      lat: parseFloat(String(acc.lat)),
+      lng: parseFloat(String(acc.lng)),
+      type: "accommodation" as const,
+      title: acc.name,
+      link: `/accommodation/${acc.slug}`,
+      price: acc.priceFrom ? `From £${acc.priceFrom}/night` : undefined,
+      subtitle: acc.type || undefined,
+    })),
+    // Locations (purple)
+    ...mapEntities.locations.map((location) => ({
+      id: `location-${location.id}`,
+      lat: parseFloat(String(location.lat)),
+      lng: parseFloat(String(location.lng)),
+      type: "location" as const,
+      title: location.name,
+      subtitle: "Point of Interest",
+    })),
+    // Events (red)
+    ...mapEntities.events.map((event) => ({
+      id: `event-${event.id}`,
+      lat: parseFloat(String(event.lat)),
+      lng: parseFloat(String(event.lng)),
+      type: "event" as const,
+      title: event.name,
+      subtitle: event.type || undefined,
+      price: event.registrationCost ? `£${event.registrationCost}` : undefined,
+    })),
+  ];
   
   // Extract structured content from description
   const introText = extractIntro(region.description) || `Discover the adventures waiting for you in ${region.name}.`;
@@ -93,8 +183,21 @@ export default async function RegionPage({ params }: RegionPageProps) {
   const bestTimeToVisit = extractSection(region.description, 'Best Time to Visit') || defaultPlanContent.bestTime;
   const essentialGear = defaultPlanContent.essentialGear;
 
+  // Create breadcrumb items
+  const breadcrumbItems = [
+    { name: 'Home', url: '/' },
+    { name: 'Destinations', url: '/destinations' },
+    { name: region.name, url: `/${regionSlug}` },
+  ];
+
   return (
-    <div className="min-h-screen pt-4 lg:pt-10">
+    <>
+      <JsonLd data={createTouristDestinationSchema(region, {
+        stats: region.stats,
+        imageUrl: `https://adventurewales.co.uk/images/regions/${regionSlug}-hero.jpg`,
+      })} />
+      <JsonLd data={createBreadcrumbSchema(breadcrumbItems)} />
+      <div className="min-h-screen pt-4 lg:pt-10">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Hero Section */}
@@ -103,9 +206,11 @@ export default async function RegionPage({ params }: RegionPageProps) {
             {/* Use local hero image */}
             <img 
               alt={region.name}
-              className="w-full h-full object-cover opacity-60 mix-blend-overlay group-hover:scale-105 transition-transform duration-700"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               src={`/images/regions/${regionSlug}-hero.jpg`}
             />
+            {/* Gradient overlay for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
           </div>
 
           <div className="absolute top-4 right-4 flex gap-2 lg:hidden z-20">
@@ -182,6 +287,9 @@ export default async function RegionPage({ params }: RegionPageProps) {
               )}
             </section>
 
+            {/* Scenic Gallery */}
+            <ScenicGallery regionSlug={regionSlug} regionName={region.name} />
+
             {/* Top Experiences Grid */}
             <section>
               <div className="flex justify-between items-end mb-4 lg:mb-5">
@@ -226,42 +334,31 @@ export default async function RegionPage({ params }: RegionPageProps) {
             <section>
               <h3 className="text-lg lg:text-xl font-bold mb-4 text-[#1e3a4c]">Explore the Region</h3>
               <RegionMap
-                markers={[
-                  // Activities
-                  ...activities
-                    .filter((item) => item.activity.lat && item.activity.lng)
-                    .map((item) => ({
-                      id: `activity-${item.activity.id}`,
-                      lat: parseFloat(String(item.activity.lat)),
-                      lng: parseFloat(String(item.activity.lng)),
-                      type: "activity" as const,
-                      title: item.activity.name,
-                      link: `/activities/${item.activity.slug}`,
-                      price: item.activity.priceFrom ? `From £${item.activity.priceFrom}` : undefined,
-                    })),
-                  // Accommodation
-                  ...accommodation
-                    .filter((item) => item.accommodation.lat && item.accommodation.lng)
-                    .map((item) => ({
-                      id: `accommodation-${item.accommodation.id}`,
-                      lat: parseFloat(String(item.accommodation.lat)),
-                      lng: parseFloat(String(item.accommodation.lng)),
-                      type: "accommodation" as const,
-                      title: item.accommodation.name,
-                      link: `/accommodation/${item.accommodation.slug}`,
-                      price: item.accommodation.priceFrom ? `From £${item.accommodation.priceFrom}/night` : undefined,
-                    })),
-                ]}
+                markers={mapMarkers}
                 center={region.lat && region.lng ? [parseFloat(String(region.lat)), parseFloat(String(region.lng))] : undefined}
                 zoom={10}
-                height="400px"
+                height="450px"
                 className="shadow-md"
               />
-              <div className="flex gap-2 lg:gap-3 overflow-x-auto pb-2 mt-4 no-scrollbar">
-                <MapFilterPill label="Activities" icon="🎯" />
-                <MapFilterPill label="Stays" icon="🏠" />
-                <MapFilterPill label="Events" icon="📅" />
-                <MapFilterPill label="Operators" icon="👥" />
+              
+              {/* Map Legend */}
+              <div className="flex flex-wrap gap-3 lg:gap-4 mt-4 text-xs lg:text-sm">
+                <span className="flex items-center gap-2 text-gray-600">
+                  <span className="w-4 h-4 rounded-full bg-[#3b82f6] border-2 border-white shadow-sm"></span>
+                  Activities ({mapEntities.activities.length})
+                </span>
+                <span className="flex items-center gap-2 text-gray-600">
+                  <span className="w-4 h-4 rounded-full bg-[#22c55e] border-2 border-white shadow-sm"></span>
+                  Accommodation ({mapEntities.accommodation.length})
+                </span>
+                <span className="flex items-center gap-2 text-gray-600">
+                  <span className="w-4 h-4 rounded-full bg-[#a855f7] border-2 border-white shadow-sm"></span>
+                  Locations ({mapEntities.locations.length})
+                </span>
+                <span className="flex items-center gap-2 text-gray-600">
+                  <span className="w-4 h-4 rounded-full bg-[#ef4444] border-2 border-white shadow-sm"></span>
+                  Events ({mapEntities.events.length})
+                </span>
               </div>
             </section>
 
@@ -387,6 +484,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

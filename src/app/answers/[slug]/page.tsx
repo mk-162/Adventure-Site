@@ -18,6 +18,11 @@ import {
   CheckCircle
 } from "lucide-react";
 import { AdSlot } from "@/components/commercial/AdSlot";
+import { 
+  JsonLd, 
+  createFAQPageSchema, 
+  createBreadcrumbSchema 
+} from "@/components/seo/JsonLd";
 
 interface AnswerFrontmatter {
   slug: string;
@@ -197,8 +202,29 @@ export default async function AnswerPage({ params }: Props) {
   const { frontmatter, quickAnswer, content, relatedQuestions } = data;
   const relatedAnswers = getRelatedAnswers(slug, frontmatter.region);
 
+  // Create breadcrumb items
+  const breadcrumbItems = [
+    { name: 'Home', url: '/' },
+  ];
+  if (frontmatter.region) {
+    breadcrumbItems.push({ name: formatRegionName(frontmatter.region), url: `/${frontmatter.region}` });
+  }
+  breadcrumbItems.push(
+    { name: 'Answers', url: '/answers' },
+    { name: frontmatter.question, url: `/answers/${slug}` }
+  );
+
+  // Clean answer text for schema
+  const cleanAnswer = (quickAnswer || content)
+    .replace(/<[^>]*>/g, '') // Remove HTML tags
+    .replace(/\*\*/g, '')     // Remove markdown bold
+    .slice(0, 500);           // Limit length
+
   return (
-    <div className="min-h-screen pt-4 lg:pt-8 pb-12">
+    <>
+      <JsonLd data={createFAQPageSchema(frontmatter.question, cleanAnswer, { slug })} />
+      <JsonLd data={createBreadcrumbSchema(breadcrumbItems)} />
+      <div className="min-h-screen pt-4 lg:pt-8 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs (Desktop) */}
         <div className="hidden lg:flex flex-wrap items-center gap-2 mb-6 text-sm">
@@ -442,6 +468,7 @@ export default async function AnswerPage({ params }: Props) {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
@@ -469,8 +496,27 @@ export async function generateMetadata({ params }: Props) {
     return { title: "Answer Not Found" };
   }
 
+  const description = data.quickAnswer?.slice(0, 160) || `Find the answer to: ${data.frontmatter.question}`;
+
   return {
     title: `${data.frontmatter.question} | Adventure Wales`,
-    description: data.quickAnswer?.slice(0, 160) || `Find the answer to: ${data.frontmatter.question}`,
+    description,
+    keywords: `${data.frontmatter.question}, Wales, ${data.frontmatter.region ? formatRegionName(data.frontmatter.region) + ', ' : ''}adventure, travel, FAQ`,
+    openGraph: {
+      title: data.frontmatter.question,
+      description,
+      type: 'article',
+      locale: 'en_GB',
+      url: `https://adventurewales.co.uk/answers/${slug}`,
+      siteName: 'Adventure Wales',
+    },
+    twitter: {
+      card: 'summary',
+      title: data.frontmatter.question,
+      description,
+    },
+    alternates: {
+      canonical: `https://adventurewales.co.uk/answers/${slug}`,
+    },
   };
 }

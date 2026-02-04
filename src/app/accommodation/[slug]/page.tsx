@@ -1,14 +1,68 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import Link from "next/link";
-import { getAccommodationBySlug, getAccommodationByRegion } from "@/lib/queries";
+import { getAccommodationBySlug, getAccommodationByRegion, getActivities } from "@/lib/queries";
 import { AccommodationCard } from "@/components/cards/accommodation-card";
+import dynamic from "next/dynamic";
+import type { MapMarker } from "@/components/ui/MapView";
 import { 
   MapPin, Star, ExternalLink, Bed, Wifi, Car, 
   Mountain, ChevronRight, Phone, Globe, Calendar
 } from "lucide-react";
+import { 
+  JsonLd, 
+  createLodgingBusinessSchema, 
+  createBreadcrumbSchema 
+} from "@/components/seo/JsonLd";
+
+const MapView = dynamic(() => import("@/components/ui/MapView"), {
+  
+  loading: () => (
+    <div className="w-full h-[300px] rounded-2xl bg-gray-200 animate-pulse flex items-center justify-center">
+      <span className="text-gray-400">Loading map...</span>
+    </div>
+  ),
+});
 
 interface Props {
   params: Promise<{ slug: string }>;
+}
+
+// Generate metadata for SEO
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const data = await getAccommodationBySlug(slug);
+
+  if (!data) {
+    return {
+      title: 'Accommodation Not Found',
+    };
+  }
+
+  const { accommodation, region } = data;
+  const description = accommodation.description || `${accommodation.name} offers comfortable accommodation in ${region?.name || 'Wales'}, perfect for adventure seekers.`;
+
+  return {
+    title: `${accommodation.name} | ${region?.name || 'Wales'} Accommodation | Adventure Wales`,
+    description: description.slice(0, 160),
+    keywords: `${accommodation.name}, ${region?.name || 'Wales'}, accommodation, ${accommodation.type || 'lodging'}, adventure stays`,
+    openGraph: {
+      title: `${accommodation.name} | ${region?.name || 'Wales'}`,
+      description: description.slice(0, 160),
+      type: 'website',
+      locale: 'en_GB',
+      url: `https://adventurewales.co.uk/accommodation/${slug}`,
+      siteName: 'Adventure Wales',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${accommodation.name} | ${region?.name || 'Wales'}`,
+      description: description.slice(0, 160),
+    },
+    alternates: {
+      canonical: `https://adventurewales.co.uk/accommodation/${slug}`,
+    },
+  };
 }
 
 export default async function AccommodationPage({ params }: Props) {
@@ -21,10 +75,47 @@ export default async function AccommodationPage({ params }: Props) {
 
   const { accommodation, region } = data;
 
-  // Get nearby accommodation
-  const nearbyAccommodation = region 
-    ? await getAccommodationByRegion(region.slug, 4)
-    : [];
+  // Get nearby accommodation and activities
+  const [nearbyAccommodation, nearbyActivities] = await Promise.all([
+    region ? getAccommodationByRegion(region.slug, 4) : Promise.resolve([]),
+    region ? getActivities({ regionId: region.id, limit: 10 }) : Promise.resolve([]),
+  ]);
+
+  // Prepare map markers
+  const mapMarkers: MapMarker[] = [];
+
+  // Add the main accommodation location
+  if (accommodation.lat && accommodation.lng) {
+    mapMarkers.push({
+      id: `accommodation-${accommodation.id}`,
+      lat: parseFloat(String(accommodation.lat)),
+      lng: parseFloat(String(accommodation.lng)),
+      type: "accommodation",
+      title: accommodation.name,
+      subtitle: "Your Stay",
+      price: accommodation.priceFrom
+        ? `From £${accommodation.priceFrom}/night`
+        : undefined,
+    });
+  }
+
+  // Add nearby activities
+  nearbyActivities
+    .filter((item) => item.activity.lat && item.activity.lng)
+    .forEach((item) => {
+      mapMarkers.push({
+        id: `activity-${item.activity.id}`,
+        lat: parseFloat(String(item.activity.lat)),
+        lng: parseFloat(String(item.activity.lng)),
+        type: "activity",
+        title: item.activity.name,
+        link: `/activities/${item.activity.slug}`,
+        subtitle: item.activityType?.name || "Activity",
+        price: item.activity.priceFrom
+          ? `From £${item.activity.priceFrom}`
+          : undefined,
+      });
+    });
 
   // Parse adventure features
   const features = accommodation.adventureFeatures
@@ -32,8 +123,24 @@ export default async function AccommodationPage({ params }: Props) {
     .map((f) => f.trim())
     .filter(Boolean) || [];
 
+  // Create breadcrumb items
+  const breadcrumbItems = [
+    { name: 'Home', url: '/' },
+    { name: 'Accommodation', url: '/accommodation' },
+  ];
+  if (region) {
+    breadcrumbItems.push({ name: region.name, url: `/${region.slug}/where-to-stay` });
+  }
+  breadcrumbItems.push({ name: accommodation.name, url: `/accommodation/${slug}` });
+
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
+      <JsonLd data={createLodgingBusinessSchema(accommodation, {
+        region,
+        imageUrl: 'https://adventurewales.co.uk/images/wales/accommodation-hero.jpg',
+      })} />
+      <JsonLd data={createBreadcrumbSchema(breadcrumbItems)} />
+      <div className="min-h-screen bg-gray-50">
       {/* Hero */}
       <section className="relative h-[40vh] min-h-[300px] bg-[#1e3a4c]">
         <div
@@ -93,7 +200,7 @@ export default async function AccommodationPage({ params }: Props) {
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
             {/* Description */}
-            <div className="bg-white rounded-xl p-6 shadow-sm">
+            <div className="bg-white rounded-2xl p-6 shadow-sm">
               <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">About This Property</h2>
               <p className="text-gray-600 leading-relaxed">
                 {accommodation.description || `${accommodation.name} offers comfortable accommodation in ${region?.name || 'Wales'}, perfect for adventure seekers looking for a place to rest and recharge.`}
@@ -102,7 +209,7 @@ export default async function AccommodationPage({ params }: Props) {
 
             {/* Adventure Features */}
             {features.length > 0 && (
-              <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="bg-white rounded-2xl p-6 shadow-sm">
                 <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Adventure Features</h2>
                 <div className="flex flex-wrap gap-2">
                   {features.map((feature) => (
@@ -119,7 +226,7 @@ export default async function AccommodationPage({ params }: Props) {
             )}
 
             {/* Amenities (placeholder) */}
-            <div className="bg-white rounded-xl p-6 shadow-sm">
+            <div className="bg-white rounded-2xl p-6 shadow-sm">
               <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Amenities</h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 <div className="flex items-center gap-2 text-gray-600">
@@ -137,13 +244,41 @@ export default async function AccommodationPage({ params }: Props) {
               </div>
             </div>
 
-            {/* Location */}
-            {(accommodation.lat && accommodation.lng) && (
-              <div className="bg-white rounded-xl p-6 shadow-sm">
-                <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Location</h2>
-                <div className="h-[300px] bg-gray-200 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-500">Map coming soon</span>
+            {/* Location Map */}
+            {mapMarkers.length > 0 && (
+              <div className="bg-white rounded-2xl p-6 shadow-sm">
+                <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">
+                  Location & Nearby Activities
+                </h2>
+                <MapView
+                  markers={mapMarkers}
+                  center={
+                    accommodation.lat && accommodation.lng
+                      ? [
+                          parseFloat(String(accommodation.lat)),
+                          parseFloat(String(accommodation.lng)),
+                        ]
+                      : undefined
+                  }
+                  zoom={13}
+                  height="350px"
+                  className="rounded-2xl"
+                />
+                
+                {/* Map Legend */}
+                <div className="flex flex-wrap gap-3 mt-3 text-xs text-gray-600">
+                  <span className="flex items-center gap-2">
+                    <span className="w-3 h-3 rounded-full bg-[#22c55e] border-2 border-white shadow-sm"></span>
+                    Your Stay
+                  </span>
+                  {nearbyActivities.length > 0 && (
+                    <span className="flex items-center gap-2">
+                      <span className="w-3 h-3 rounded-full bg-[#3b82f6] border-2 border-white shadow-sm"></span>
+                      Nearby Activities ({nearbyActivities.filter(a => a.activity.lat && a.activity.lng).length})
+                    </span>
+                  )}
                 </div>
+                
                 {accommodation.address && (
                   <p className="mt-4 text-gray-600 flex items-center gap-2">
                     <MapPin className="h-4 w-4" />
@@ -157,7 +292,7 @@ export default async function AccommodationPage({ params }: Props) {
           {/* Sidebar */}
           <div className="space-y-6">
             {/* Booking Card */}
-            <div className="bg-white rounded-xl p-6 shadow-sm sticky top-24">
+            <div className="bg-white rounded-2xl p-6 shadow-sm sticky top-24">
               {/* Price */}
               <div className="mb-4">
                 {accommodation.priceFrom && (
@@ -243,6 +378,7 @@ export default async function AccommodationPage({ params }: Props) {
         </section>
       )}
     </div>
+    </>
   );
 }
 

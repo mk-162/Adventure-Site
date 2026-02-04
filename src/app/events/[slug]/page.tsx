@@ -3,8 +3,9 @@ import Link from "next/link";
 import { getEventBySlug, getEvents, getAllEventSlugs } from "@/lib/queries";
 import { 
   MapPin, Calendar, Clock, Users, ExternalLink, 
-  ChevronRight, Ticket, Trophy, Mountain
+  ChevronRight, Ticket, Trophy, Mountain, Navigation
 } from "lucide-react";
+import MapView, { type MapMarker } from "@/components/ui/MapView";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -206,16 +207,38 @@ export default async function EventPage({ params }: Props) {
             </div>
 
             {/* Location Map */}
-            {event.location && (
+            {event.lat && event.lng && (
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Location</h2>
-                <div className="h-[300px] bg-gray-200 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-500">Map coming soon</span>
+                <MapView
+                  markers={[{
+                    id: event.id,
+                    lat: Number(event.lat),
+                    lng: Number(event.lng),
+                    type: "event" as const,
+                    title: event.name,
+                    subtitle: event.location || undefined,
+                    link: `/events/${event.slug}`,
+                  }]}
+                  center={[Number(event.lat), Number(event.lng)]}
+                  zoom={13}
+                  height="300px"
+                />
+                <div className="mt-4 flex items-center justify-between">
+                  <p className="text-gray-600 flex items-center gap-2">
+                    <MapPin className="h-4 w-4" />
+                    {event.location || "Event location"}
+                  </p>
+                  <a
+                    href={`https://www.google.com/maps/dir/?api=1&destination=${event.lat},${event.lng}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-[#f97316] hover:underline"
+                  >
+                    <Navigation className="h-4 w-4" />
+                    Get Directions
+                  </a>
                 </div>
-                <p className="mt-4 text-gray-600 flex items-center gap-2">
-                  <MapPin className="h-4 w-4" />
-                  {event.location}
-                </p>
               </div>
             )}
           </div>

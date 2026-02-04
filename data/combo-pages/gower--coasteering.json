@@ -1,0 +1,870 @@
+{
+  "regionSlug": "gower",
+  "activityTypeSlug": "coasteering",
+  "title": "Coasteering in Gower",
+  "strapline": "Gower's limestone cliffs and hidden coves deliver some of the UK's most exhilarating coasteering.",
+  "metaTitle": "Coasteering Gower | Adventure Wales",
+  "metaDescription": "Experience the thrill of coasteering in Gower! Explore caves, jump into crystal clear waters, and discover hidden gems along the stunning coastline.",
+  "heroAlt": "Coasteering group jumping from limestone cliffs into turquoise water in Gower.",
+  "introduction": "Gower's the jewel in Wales' coasteering crown, no question. We're talking dramatic limestone cliffs, hidden caves begging to be explored, and some seriously turquoise water on a sunny day. Forget generic holiday snapshots; **coasteering Gower** gets you up close and personal with the coastline. It's not just about jumping off rocks (though there's plenty of that!); it's about scrambling, swimming, and discovering secret spots you'd never see otherwise.\n\nWhat sets Gower apart? The sheer variety. You've got everything from mellow family-friendly routes around Three Cliffs Bay to seriously challenging traverses near Worm's Head. The limestone gives the water that incredible clarity, and the tidal ranges create amazing features like blowholes and gullies to navigate. It's a proper geological playground. \n\n**Coasteering Gower** isn't always sunshine and rainbows. The swells can pick up quickly, even on calm days, and some sections are only accessible at certain tides. Seaweed can be slippery, and the rocks are sharp. So, is it for everyone? Honestly, no. You need a reasonable level of fitness and a good head for heights. But for those who crave adventure and aren't afraid to get wet, it's an absolute must-do. Stick with a reputable operator, respect the sea, and you're in for an unforgettable experience. Think scrambling around Pennard Castle, swimming into smuggler's caves, and discovering hidden waterfalls cascading into the sea. That's **coasteering Gower** at its finest. Just watch out for the razor clams – they bite!",
+  "bestSeason": "May-October",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Three Cliffs Bay Classic",
+      "slug": "three-cliffs-bay-classic",
+      "description": "A great introduction to coasteering. This route explores the iconic Three Cliffs Bay, with short swims, easy scrambles, and optional small jumps. Perfect for families and beginners. You'll see dramatic cliff formations, explore small caves, and maybe spot some seals.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, beginners, those wanting a scenic and mellow experience.",
+      "notSuitableFor": "Anyone with mobility issues or a strong fear of heights.",
+      "bestSeason": "May-September (low tide essential)",
+      "parking": "National Trust car park at Southgate (SA3 2BT). Can fill up quickly, especially in summer. Arrive early or consider the bus.",
+      "startPoint": {
+        "name": "Southgate Car Park",
+        "lat": 51.578,
+        "lng": -4.066
+      },
+      "estimatedCost": "Free (parking £6) or £55pp guided",
+      "operatorSlug": "gower-activity-centres",
+      "insiderTip": "Time your visit for low tide – you'll be able to walk through the iconic Three Cliffs archway. Check tide times beforehand!"
+    },
+    {
+      "name": "Mewslade Bay Challenge",
+      "slug": "mewslade-bay-challenge",
+      "description": "A more challenging route along the rugged Mewslade coastline. Expect longer swims, higher jumps (optional), and more technical scrambles. The clear water and dramatic scenery make it worthwhile. Keep an eye out for hidden caves and stacks.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced coasteerers, confident swimmers, those seeking a bit more adrenaline.",
+      "notSuitableFor": "Beginners, those uncomfortable with longer swims or exposed sections.",
+      "bestSeason": "May-September (calm seas essential)",
+      "parking": "Small National Trust car park above Mewslade Bay (SA3 1PH). Very limited space, arrive very early or park further away and walk.",
+      "startPoint": {
+        "name": "Mewslade Bay Car Park",
+        "lat": 51.57,
+        "lng": -4.238
+      },
+      "estimatedCost": "Free (parking donation box) or £60pp guided",
+      "operatorSlug": "rip-n-rock",
+      "insiderTip": "The water is noticeably colder at Mewslade, even in summer. A good wetsuit is essential. Check the surf forecast – this spot is very exposed to swells."
+    },
+    {
+      "name": "Rhossili Headland Adventure",
+      "slug": "rhossili-headland-adventure",
+      "description": "An exposed and exhilarating route around Rhossili Headland, offering stunning views of Worm's Head. This route requires strong swimming skills and a good head for heights. Seals are often seen basking on the rocks. Only attempt in calm conditions.",
+      "difficulty": "Challenging",
+      "duration": "4-5 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced coasteerers, strong swimmers, those seeking a challenging and exposed route.",
+      "notSuitableFor": "Beginners, those uncomfortable with strong currents or exposed sections, children.",
+      "bestSeason": "June-August (very calm seas essential)",
+      "parking": "Large National Trust car park in Rhossili (SA3 1PL). Can get busy, especially on weekends.",
+      "startPoint": {
+        "name": "Rhossili Car Park",
+        "lat": 51.564,
+        "lng": -4.315
+      },
+      "estimatedCost": "Free (parking £6) or £70pp guided",
+      "operatorSlug": null,
+      "insiderTip": "This route is heavily dependent on tidal conditions and sea state. Only attempt with an experienced guide who knows the area well. Worm's Head is cut off at high tide – be aware of the crossing times!"
+    },
+    {
+      "name": "Mumbles Coastal Traverse",
+      "slug": "mumbles-coastal-traverse",
+      "description": "A great option for a quick coasteering fix. This route follows the coastline from Mumbles Pier, offering easy scrambles and short swims. Ideal for families and those short on time. Enjoy views of Mumbles Lighthouse and Swansea Bay.",
+      "difficulty": "Easy",
+      "duration": "1.5-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, beginners, those short on time, urban coasteering.",
+      "notSuitableFor": "Those seeking remote wilderness, challenging climbs.",
+      "bestSeason": "May-September",
+      "parking": "Various car parks in Mumbles (metered). Can be busy, especially during peak season.",
+      "startPoint": {
+        "name": "Mumbles Pier",
+        "lat": 51.573,
+        "lng": -3.977
+      },
+      "estimatedCost": "Free (parking fees) or £45pp guided",
+      "operatorSlug": null,
+      "insiderTip": "Finish your coasteering adventure with an ice cream from Joe's in Mumbles – a local institution."
+    },
+    {
+      "name": "Fall Bay Exploration",
+      "slug": "fall-bay-exploration",
+      "description": "A hidden gem on the western side of Gower, Fall Bay offers a remote and beautiful coasteering experience. Expect challenging scrambles, longer swims, and the chance to explore secluded coves. Be prepared for a walk to access the bay.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced coasteerers, those seeking a more remote and challenging experience.",
+      "notSuitableFor": "Beginners, those uncomfortable with longer walks or remote locations.",
+      "bestSeason": "June-August (calm seas essential)",
+      "parking": "Park near Middleton village and walk down to the bay (approx. 20 minutes).",
+      "startPoint": {
+        "name": "Fall Bay",
+        "lat": 51.555,
+        "lng": -4.263
+      },
+      "estimatedCost": "Free (parking is free) or £65pp guided",
+      "operatorSlug": null,
+      "insiderTip": "Fall Bay is known for its strong currents. Only attempt in very calm conditions and with an experienced guide. Pack plenty of water – there are no facilities nearby."
+    },
+    {
+      "name": "Pennard Castle Cliffs",
+      "slug": "pennard-castle-cliffs",
+      "description": "Coasteer beneath the ruins of Pennard Castle for a unique historical perspective. Short swims connect sections of rocky coastline, with easy to moderate climbs and optional jumps. The castle provides a stunning backdrop. Expect to spot diverse birdlife.",
+      "difficulty": "Moderate",
+      "duration": "2.5-3.5 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, history buffs, those seeking a scenic and relatively easy route.",
+      "notSuitableFor": "Those with significant mobility issues, very strong currents.",
+      "bestSeason": "May-September",
+      "parking": "Park at Pennard Golf Club (SA3 2EW) (fee may apply) and walk down to the coast.",
+      "startPoint": {
+        "name": "Pennard Castle",
+        "lat": 51.584,
+        "lng": -4.04
+      },
+      "estimatedCost": "Free (potential parking fee) or £60pp guided",
+      "operatorSlug": null,
+      "insiderTip": "Combine your coasteering adventure with a visit to Pennard Castle – it's free to explore and offers panoramic views."
+    },
+    {
+      "name": "Worm's Head Western Traverse",
+      "slug": "worms-head-western-traverse",
+      "description": "A serious undertaking for experienced coasteerers only. This traverse hugs the western side of Worm's Head, requiring excellent swimming skills and confidence in exposed conditions. The scenery is spectacular, but the risks are high.",
+      "difficulty": "Expert",
+      "duration": "5-6 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Highly experienced coasteerers, strong swimmers, those seeking a truly challenging and remote experience.",
+      "notSuitableFor": "Anyone without significant coasteering experience, beginners, families, children.",
+      "bestSeason": "June-August (very calm seas and low spring tide essential)",
+      "parking": "Large National Trust car park in Rhossili (SA3 1PL).",
+      "startPoint": {
+        "name": "Worm's Head",
+        "lat": 51.558,
+        "lng": -4.339
+      },
+      "estimatedCost": "Free (parking £6) - ONLY suitable for experts unguided. £80 guided",
+      "operatorSlug": null,
+      "insiderTip": "This is a committing route with no easy exit points. Check tide times meticulously and allow plenty of time. Tell someone where you're going and when you expect to be back. Seriously, this isn't one to underestimate."
+    },
+    {
+      "name": "Paviland Cave Splash",
+      "slug": "paviland-cave-splash",
+      "description": "An adventurous route taking you along the dramatic coastline near Paviland Cave (aka Goat's Hole). You can swim into the cave at low tide. Be cautious as the currents can be strong. The cave is famous for its archaeological significance.",
+      "difficulty": "Challenging",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced coasteerers, history buffs, those seeking a unique and challenging experience.",
+      "notSuitableFor": "Beginners, those uncomfortable with strong currents or tight spaces.",
+      "bestSeason": "May-September (low tide essential)",
+      "parking": "Park at Horton and walk to Paviland Cave (approx. 30 minutes).",
+      "startPoint": {
+        "name": "Paviland Cave",
+        "lat": 51.551,
+        "lng": -4.17
+      },
+      "estimatedCost": "Free (parking is free) or £70pp guided",
+      "operatorSlug": null,
+      "insiderTip": "Bring a headtorch to explore Paviland Cave properly. Be aware of the tides – the cave can flood quickly. Respect the archaeological significance of the site."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Gower's coastal weather can be unpredictable. Sunshine can quickly turn to rain, and the sea state can change rapidly. Check the forecast carefully and be prepared for all conditions. Strong winds and swells can make coasteering dangerous.",
+    "weatherLinks": [
+      {
+        "name": "Met Office Coastal Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/coast-and-sea/inshore-waters/index.html#gales"
+      },
+      {
+        "name": "Windguru (Rhossili)",
+        "url": "https://www.windguru.cz/49730"
+      }
+    ],
+    "gearChecklist": [
+      "Well-fitting wetsuit (5mm recommended) – keeps you warm and provides buoyancy",
+      "Buoyancy aid – essential for safety in the water",
+      "Helmet – protects your head from bumps and scrapes",
+      "Closed-toe shoes (old trainers or wetsuit boots) – provide grip and protect your feet",
+      "Gloves (optional) – provide extra grip and warmth",
+      "Rash vest or thermal layer – for added warmth under your wetsuit",
+      "Sunscreen – even on cloudy days, the sun can be strong",
+      "Towel and change of clothes – for after your coasteering adventure",
+      "Water and snacks – keep hydrated and energized",
+      "Dry bag – to protect valuables like your phone and keys"
+    ],
+    "gearHire": [
+      {
+        "name": "Oxwich Watersports",
+        "location": "Oxwich Bay",
+        "url": "https://oxwichwatersports.co.uk/"
+      },
+      {
+        "name": "Gower Activity Centres",
+        "location": "Swansea",
+        "url": "https://goweractivitycentres.co.uk/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "4h 30m",
+          "route": "Via M4"
+        },
+        {
+          "from": "Manchester",
+          "duration": "4h",
+          "route": "Via M6 and M5"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3h",
+          "route": "Via M5 and M4"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "1h",
+          "route": "Via M4"
+        }
+      ],
+      "publicTransport": "Swansea is the nearest train station. From Swansea, several bus services run to various villages on the Gower Peninsula. The Gower Explorer bus service is specifically designed for exploring the area.",
+      "parkingTips": "Parking can be challenging, especially during peak season. Arrive early or consider using public transport. Many car parks are National Trust-owned and require a fee."
+    },
+    "safety": "Coasteering can be dangerous. Always check the weather and tide conditions before setting out. Never coasteer alone. Wear appropriate safety gear, including a buoyancy aid and helmet. Be aware of potential hazards, such as slippery rocks, strong currents, and sharp objects. In case of emergency, call 999 and ask for the Coastguard. Familiarise yourself with local sea conditions. Always check the tide times."
+  },
+  "faqs": [
+    {
+      "question": "What is the best time of year to go coasteering in Gower?",
+      "answer": "The best time for **coasteering Gower** is between May and September, when the water is warmer and the weather is generally more settled. However, even in summer, the sea can be cold, so a good wetsuit is essential. July and August tend to be the busiest months."
+    },
+    {
+      "question": "Do I need any experience to go coasteering?",
+      "answer": "While some routes are suitable for beginners, it's generally recommended to have some experience in swimming and scrambling. If you're new to coasteering, it's best to go with a qualified instructor. Operators like Gower Activity Centres and Rip N Rock offer guided tours for all levels."
+    },
+    {
+      "question": "What equipment do I need for coasteering?",
+      "answer": "You'll need a wetsuit (5mm recommended), buoyancy aid, helmet, and closed-toe shoes. Most coasteering operators provide this equipment as part of their guided tours. If you're going independently, you can hire gear from places like Oxwich Watersports."
+    },
+    {
+      "question": "Is coasteering safe?",
+      "answer": "Coasteering can be dangerous if not done properly. Always check the weather and tide conditions before setting out, and never coasteer alone. Wear appropriate safety gear and be aware of potential hazards. If you're unsure, it's best to go with a qualified instructor."
+    },
+    {
+      "question": "How much does coasteering cost?",
+      "answer": "The cost of coasteering varies depending on whether you go guided or independently. Guided tours typically cost between £45 and £80 per person. If you go independently, you'll need to factor in the cost of gear hire (if needed) and parking fees. Parking at popular spots can cost £6-10."
+    },
+    {
+      "question": "Are there any age restrictions for coasteering?",
+      "answer": "Age restrictions vary depending on the operator and the specific route. Generally, children aged 8 and above can participate in easier routes, but it's best to check with the operator beforehand. Some operators have minimum height or weight requirements."
+    },
+    {
+      "question": "What happens if the weather is bad?",
+      "answer": "If the weather is bad, coasteering operators will usually cancel or postpone the tour. Safety is paramount. It's always a good idea to check the weather forecast before booking and to have a backup plan in case the weather turns sour."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "PJ's Surf Shop",
+        "slug": "pjs-surf-shop",
+        "address": "Llangennith, Swansea SA3 1JD",
+        "lat": 51.578,
+        "lng": -4.303,
+        "description": "A Gower institution. PJ's is the go-to for all your surfing and watersports needs. They offer a great selection of wetsuits, boards, and accessories, plus friendly advice.",
+        "website": "http://www.pjsurfshop.com/",
+        "phone": "01792 386684",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 150
+      },
+      {
+        "name": "Gower Surf Development",
+        "slug": "gower-surf-development",
+        "address": "Llangennith, Swansea SA3 1JD",
+        "lat": 51.579,
+        "lng": -4.302,
+        "description": "Next door to PJ's, offering a wide range of surf and watersports equipment. They're known for their friendly service and expert knowledge of local conditions.",
+        "website": "http://www.gowersurf.com/",
+        "phone": "01792 386424",
+        "services": [
+          "gear sales",
+          "hire",
+          "surf lessons"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 120
+      },
+      {
+        "name": "Decathlon Swansea",
+        "slug": "decathlon-swansea",
+        "address": "Parc Fforestfach, Swansea SA5 4BA",
+        "lat": 51.642,
+        "lng": -3.977,
+        "description": "Large chain store with a good selection of watersports gear at competitive prices. A good option for beginners or those on a budget.",
+        "website": "https://www.decathlon.co.uk/swansea-store-id_380",
+        "phone": "01792 561600",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.4,
+        "reviewCount": 800
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "King's Head",
+        "slug": "kings-head-llangennith",
+        "address": "Llangennith, Swansea SA3 1JD",
+        "lat": 51.58,
+        "lng": -4.304,
+        "description": "The quintessential surfer pub in Llangennith. Expect hearty meals, local ales, and a buzzing atmosphere. Perfect after a day on the waves or exploring the coast.",
+        "vibe": "Surfer hangout, Cosy pub",
+        "priceRange": "££",
+        "website": "http://www.kingsheadgower.co.uk/",
+        "knownFor": "Hearty meals, Local ales, Post-surf atmosphere"
+      },
+      {
+        "name": "The Ship Inn",
+        "slug": "the-ship-inn-port-eynon",
+        "address": "Port Eynon, Swansea SA3 1NN",
+        "lat": 51.552,
+        "lng": -4.145,
+        "description": "A traditional pub in the heart of Port Eynon. Great views of the bay, good food, and a friendly atmosphere. Perfect for families and those looking for a relaxing meal.",
+        "vibe": "Family-friendly pub",
+        "priceRange": "££",
+        "website": "https://www.theshipinnporteynon.co.uk/",
+        "knownFor": "Seafood, Bay views, Family-friendly atmosphere"
+      },
+      {
+        "name": "Verdi's",
+        "slug": "verdis-mumbles",
+        "address": "Mumbles Road, Mumbles, Swansea SA3 4DN",
+        "lat": 51.573,
+        "lng": -3.972,
+        "description": "Iconic ice cream parlour and cafe in Mumbles. Delicious ice cream, cakes, and coffee. A must-visit for anyone visiting Mumbles.",
+        "vibe": "Cafe, Family-friendly",
+        "priceRange": "£",
+        "website": "https://www.verdis-cafe.co.uk/",
+        "knownFor": "Ice cream, Coffee, Cakes"
+      },
+      {
+        "name": "Joe's Ice Cream",
+        "slug": "joes-ice-cream-mumbles",
+        "address": "646 Mumbles Rd, The Mumbles, Swansea SA3 4EA",
+        "lat": 51.572,
+        "lng": -3.972,
+        "description": "Another Mumbles institution, Joe's is famous for its creamy Italian-style ice cream. A perfect treat after a day of exploring.",
+        "vibe": "Ice cream parlour, Family-friendly",
+        "priceRange": "£",
+        "website": "http://www.joes-icecream.com/",
+        "knownFor": "Italian-style ice cream"
+      },
+      {
+        "name": "Pilot Inn",
+        "slug": "pilot-inn-mumbles",
+        "address": "8 Pier St, The Mumbles, Swansea SA3 4AA",
+        "lat": 51.572,
+        "lng": -3.975,
+        "description": "A traditional pub with a great selection of beers and a friendly atmosphere. It's also dog friendly and close to the coast.",
+        "vibe": "Traditional Pub, Dog friendly",
+        "priceRange": "££",
+        "website": "https://www.pilot-inn.co.uk/",
+        "knownFor": "Local beers, Ocean Views, Dog Friendly"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Three Cliffs Holiday Park",
+        "slug": "three-cliffs-holiday-park",
+        "description": "A popular campsite with stunning views of Three Cliffs Bay. Perfect for those wanting to be close to the coast. It offers camping and caravan pitches.",
+        "type": "campsite",
+        "priceRange": "££",
+        "nearestSpot": "Three Cliffs Bay Classic (0.5 miles)",
+        "website": "https://www.threecliffsbay.com/"
+      },
+      {
+        "name": "Llangennith Camping Park",
+        "slug": "llangennith-camping-park",
+        "description": "A well-equipped campsite close to Llangennith Beach. Ideal for surfers and those wanting to explore the western side of Gower. ",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Rhossili Headland Adventure (2 miles)",
+        "website": "https://www.llangennithcamping.com/"
+      },
+      {
+        "name": "The Worm's Head Hotel",
+        "slug": "the-worms-head-hotel",
+        "description": "A hotel offering incredible views of Worm's Head. It features comfortable rooms and a restaurant serving local produce. Perfect for a relaxing getaway.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Rhossili Headland Adventure (0.5 miles)",
+        "website": "https://www.thewormshead.co.uk/"
+      },
+      {
+        "name": "Oxwich Bay Hotel",
+        "slug": "oxwich-bay-hotel",
+        "description": "Located right on Oxwich Bay. The hotel offers comfortable rooms, a restaurant and easy access to the beach and watersports activities.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Oxwich Bay",
+        "website": "https://www.oxwichbayhotel.co.uk/"
+      },
+      {
+        "name": "Gower Coast Bunkhouse",
+        "slug": "gower-coast-bunkhouse",
+        "description": "Budget-friendly accommodation near Rhossili, ideal for groups and solo travellers. Close to surfing and hiking spots.",
+        "type": "bunkhouse",
+        "priceRange": "£",
+        "nearestSpot": "Rhossili Headland Adventure (1 mile)",
+        "website": "https://www.gowersurf.com/accommodation/gower-coast-bunkhouse/"
+      },
+      {
+        "name": "Oldwalls Gower",
+        "slug": "oldwalls-gower",
+        "description": "Luxury glamping pods and cottages nestled in the Gower countryside. Close to Three Cliffs Bay and other popular spots.",
+        "type": "glamping",
+        "priceRange": "£££",
+        "nearestSpot": "Three Cliffs Bay Classic (3 miles)",
+        "website": "https://www.oldwallsgower.com/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Gower Walking Festival",
+      "type": "festival",
+      "monthTypical": "June",
+      "description": "A week-long celebration of walking on the Gower Peninsula, with guided walks for all abilities.",
+      "website": "https://www.gowerwalkingfestival.uk/",
+      "relevantActivities": [
+        "coasteering",
+        "hiking"
+      ],
+      "registrationCost": 10
+    }
+  ],
+  "keywords": {
+    "primary": "coasteering gower",
+    "secondary": [
+      "coasteering three cliffs bay",
+      "coasteering rhossili",
+      "coasteering mumbles",
+      "coasteering wales",
+      "coasteering swansea"
+    ],
+    "longTail": [
+      "best coasteering routes gower",
+      "guided coasteering tours gower",
+      "coasteering for beginners gower",
+      "coasteering with kids gower",
+      "coasteering gower prices",
+      "coasteering gower equipment",
+      "coasteering gower safe",
+      "coasteering gower reviews",
+      "coasteering gower operators",
+      "coasteering gower wetsuit",
+      "coasteering paviland cave"
+    ],
+    "localIntent": [
+      "coasteering near swansea",
+      "coasteering near mumbles",
+      "coasteering near rhossili",
+      "coasteering near llangennith",
+      "coasteering near oxwich"
+    ],
+    "commercialIntent": [
+      "book coasteering gower",
+      "guided coasteering gower price",
+      "coasteering gower tour",
+      "hire coasteering equipment gower",
+      "coasteering gower deals"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Coasteering in Pembrokeshire"
+      },
+      {
+        "regionSlug": "anglesey",
+        "label": "Coasteering in Anglesey"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "surfing",
+        "label": "Surfing in Gower"
+      },
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Gower"
+      },
+      {
+        "activityTypeSlug": "climbing",
+        "label": "Climbing in Gower"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Rip N Rock",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Gower, Swansea",
+      "postcode": "SA3",
+      "lat": 51.575,
+      "lng": -4.177,
+      "phone": null,
+      "website": "http://www.ripnrock.co.uk/",
+      "googleRating": 5.0,
+      "reviewCount": 10,
+      "description": "Rip N Rock offers coasteering, surfing, and climbing adventures on the Gower Peninsula. They provide expert guidance for all skill levels.",
+      "relevantActivities": [
+        "coasteering",
+        "surfing",
+        "climbing"
+      ],
+      "services": [
+        "coasteering tours",
+        "surfing lessons",
+        "climbing instruction"
+      ],
+      "priceRange": "££",
+      "notes": "Highly rated coasteering provider with a focus on small groups.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Gower Activity Centres",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Nicholaston House, Penmaen, Swansea",
+      "postcode": "SA3 2HL",
+      "lat": 51.578,
+      "lng": -4.088,
+      "phone": "01792 371317",
+      "website": "https://www.goweractivitycentres.co.uk/",
+      "googleRating": 4.0,
+      "reviewCount": 15,
+      "description": "Gower Activity Centres provides a range of outdoor activities, including coasteering, on the beautiful Gower Peninsula. They offer tailored experiences for families and groups.",
+      "relevantActivities": [
+        "coasteering",
+        "multi-activities"
+      ],
+      "services": [
+        "coasteering tours",
+        "team building activities",
+        "outdoor education"
+      ],
+      "priceRange": "££",
+      "notes": "Established activity centre with a wide range of offerings.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Quest Adventure",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Based in South Wales, Gower location varies",
+      "postcode": "SA3",
+      "lat": 51.58,
+      "lng": -4.15,
+      "phone": "07779 080716",
+      "website": "http://www.questadventure.co.uk/",
+      "googleRating": 4.7,
+      "reviewCount": 25,
+      "description": "Quest Adventure delivers exciting coasteering and multi-activity experiences in South Wales. They focus on providing memorable and safe adventures.",
+      "relevantActivities": [
+        "coasteering",
+        "multi-activities"
+      ],
+      "services": [
+        "coasteering tours",
+        "team building days",
+        "adventure weekends"
+      ],
+      "priceRange": "££",
+      "notes": "Reliable provider known for experienced instructors.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Oxwich Watersports",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Oxwich Bay, Swansea",
+      "postcode": "SA3 1LS",
+      "lat": 51.561,
+      "lng": -4.06,
+      "phone": "01792 371662",
+      "website": "http://www.oxwichwatersports.co.uk/",
+      "googleRating": 4.8,
+      "reviewCount": 40,
+      "description": "Oxwich Watersports offers a variety of watersports activities, including coasteering, in the beautiful Oxwich Bay. They cater to all skill levels.",
+      "relevantActivities": [
+        "coasteering",
+        "sup",
+        "kayaking"
+      ],
+      "services": [
+        "coasteering tours",
+        "SUP rentals",
+        "kayak rentals"
+      ],
+      "priceRange": "££",
+      "notes": "Convenient location on Oxwich Bay, ideal for combining activities.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "PJ's Surf Shop",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Llangennith, Gower",
+      "postcode": "SA3 1JD",
+      "lat": 51.595,
+      "lng": -4.288,
+      "phone": "01792 386060",
+      "website": null,
+      "googleRating": 4.6,
+      "reviewCount": 18,
+      "description": "PJ's Surf Shop in Llangennith provides surf gear and rentals, suitable for coasteering. They also sell accessories.",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "services": [
+        "wetsuit rental",
+        "surfboard rental",
+        "accessories"
+      ],
+      "priceRange": "£",
+      "notes": "Good option for wetsuit and boot hire near popular coasteering spots.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Gower Surf Development",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Llangennith, Gower",
+      "postcode": "SA3 1JD",
+      "lat": 51.595,
+      "lng": -4.288,
+      "phone": null,
+      "website": null,
+      "googleRating": null,
+      "reviewCount": 0,
+      "description": "Gower Surf Development offers surf gear for rent and purchase, potentially useful for acquiring wetsuits for coasteering adventures.",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "services": [
+        "wetsuit rental",
+        "surfboard sales",
+        "surfing lessons"
+      ],
+      "priceRange": "££",
+      "notes": "Possible source for wetsuit purchase or rental. Location approximate to Llangennith.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "King's Head",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Llangennith, Gower",
+      "postcode": "SA3 1JD",
+      "lat": 51.595,
+      "lng": -4.287,
+      "phone": "01792 386212",
+      "website": null,
+      "googleRating": 4.3,
+      "reviewCount": 300,
+      "description": "The King's Head in Llangennith is a traditional pub offering meals and drinks. It is a great spot for post-coasteering relaxation.",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Popular pub near Llangennith beach.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "The Ship Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Port Eynon, Gower",
+      "postcode": "SA3 1NN",
+      "lat": 51.559,
+      "lng": -4.125,
+      "phone": "01792 390206",
+      "website": null,
+      "googleRating": 4.4,
+      "reviewCount": 250,
+      "description": "The Ship Inn at Port Eynon provides a welcoming atmosphere for post-adventure meals and drinks. It is located close to coasteering locations.",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Good pub option after coasteering near Port Eynon.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Verdi's",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Mumbles Road, Mumbles, Swansea",
+      "postcode": "SA3 4DN",
+      "lat": 51.574,
+      "lng": -3.977,
+      "phone": "01792 369061",
+      "website": "http://www.verdis-cafe.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 800,
+      "description": "Verdi's in Mumbles offers delicious Italian food and ice cream with stunning views. It is a good place for a celebratory post-coasteering meal.",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "services": [
+        "food",
+        "ice cream",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "Popular for ice cream and Italian food.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Joe's Ice Cream",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Mumbles, Swansea",
+      "postcode": "SA3 4DS",
+      "lat": 51.575,
+      "lng": -3.976,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.7,
+      "reviewCount": 900,
+      "description": "Joe's Ice Cream in Mumbles is a Swansea institution. A perfect treat after a day of coasteering.",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "services": [
+        "ice cream",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "Iconic ice cream parlour.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Pilot Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Mumbles Road, Mumbles, Swansea",
+      "postcode": "SA3 4DS",
+      "lat": 51.575,
+      "lng": -3.975,
+      "phone": "01792 366344",
+      "website": null,
+      "googleRating": 4.2,
+      "reviewCount": 400,
+      "description": "The Pilot Inn in Mumbles is a traditional pub with sea views, offering a range of drinks and pub meals. Relaxing for post-coasteering.",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "Pub with views of Swansea Bay.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Adventure Britain",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Brecon Beacons National Park",
+      "postcode": "LD3",
+      "lat": 51.9,
+      "lng": -3.4,
+      "phone": "01497 847847",
+      "website": "https://www.adventurebritain.com/",
+      "googleRating": 4.8,
+      "reviewCount": 150,
+      "description": "Adventure Britain offers unforgettable Welsh adventures, including canyoning, caving, climbing and gorge walking. Though not focused on Gower they may run trips there.",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "services": [
+        "canyoning",
+        "caving",
+        "climbing",
+        "gorge-walking",
+        "mtb"
+      ],
+      "priceRange": "££",
+      "notes": "While not Gower specific, they are an established operator in Wales and worth considering",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Llangennith Surf School",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Llangennith Beach, Gower",
+      "postcode": "SA3 1JD",
+      "lat": 51.596,
+      "lng": -4.289,
+      "phone": "07970 200341",
+      "website": null,
+      "googleRating": 4.8,
+      "reviewCount": 65,
+      "description": "Llangennith Surf School provides surfing lessons at Llangennith Beach. Great for combining surfing and coasteering on a visit.",
+      "relevantActivities": [
+        "coasteering",
+        "surfing-lessons"
+      ],
+      "services": [
+        "surfing-lessons"
+      ],
+      "priceRange": "££",
+      "notes": "Good reputation. Close to coasteering spots.",
+      "inDatabase": true,
+      "priority": "medium"
+    }
+  ]
+}

@@ -497,6 +497,11 @@ export const operators = pgTable("operators", {
   bookingAffiliateId: varchar("booking_affiliate_id", { length: 255 }),
   bookingWidgetUrl: text("booking_widget_url"),
   serviceDetails: jsonb("service_details"),
+  stripeCustomerId: varchar("stripe_customer_id", { length: 255 }),
+  billingTier: varchar("billing_tier", { length: 50 }).default("free"), // 'free', 'verified', 'premium'
+  billingEmail: varchar("billing_email", { length: 255 }),
+  verifiedAt: timestamp("verified_at"),
+  verifiedByEmail: varchar("verified_by_email", { length: 255 }),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
@@ -809,6 +814,46 @@ export const operatorInterest = pgTable("operator_interest", {
   planInterest: varchar("plan_interest", { length: 50 }), // 'free', 'verified', 'premium'
   message: text("message"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+// =====================
+// AUTH & MAGIC LINKS
+// =====================
+
+export const magicLinks = pgTable("magic_links", {
+  id: serial("id").primaryKey(),
+  email: varchar("email", { length: 255 }).notNull(),
+  token: varchar("token", { length: 255 }).notNull().unique(),
+  operatorId: integer("operator_id").references(() => operators.id),
+  purpose: varchar("purpose", { length: 50 }).default("login").notNull(), // 'login' | 'claim'
+  used: boolean("used").default(false).notNull(),
+  expiresAt: timestamp("expires_at").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export const operatorSessions = pgTable("operator_sessions", {
+  id: serial("id").primaryKey(),
+  operatorId: integer("operator_id").references(() => operators.id).notNull(),
+  email: varchar("email", { length: 255 }).notNull(),
+  name: varchar("name", { length: 255 }),
+  role: varchar("role", { length: 100 }),
+  lastLoginAt: timestamp("last_login_at").defaultNow().notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export const operatorClaims = pgTable("operator_claims", {
+  id: serial("id").primaryKey(),
+  operatorId: integer("operator_id").references(() => operators.id).notNull(),
+  claimantName: varchar("claimant_name", { length: 255 }).notNull(),
+  claimantEmail: varchar("claimant_email", { length: 255 }).notNull(),
+  claimantRole: varchar("claimant_role", { length: 100 }),
+  verificationMethod: varchar("verification_method", { length: 50 }), // 'domain_match', 'email_match', 'manual'
+  status: varchar("claim_status", { length: 50 }).default("pending").notNull(), // 'pending', 'verified', 'rejected', 'expired'
+  rejectionReason: text("rejection_reason"),
+  ipAddress: varchar("ip_address", { length: 45 }),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  verifiedAt: timestamp("verified_at"),
+  expiresAt: timestamp("expires_at"),
 });
 
 // Guide page type enum

@@ -242,7 +242,7 @@ export default async function OperatorProfilePage({ params }: Props) {
             <a className="border-b-2 border-transparent text-gray-500 hover:text-gray-800 font-semibold text-sm pb-3 whitespace-nowrap transition-colors" href="#about">
               About
             </a>
-            {operator.serviceDetails && Array.isArray(operator.serviceDetails) && operator.serviceDetails.length > 0 && (
+            {Array.isArray(operator.serviceDetails) && (operator.serviceDetails as any[]).length > 0 && (
               <a className="border-b-2 border-transparent text-gray-500 hover:text-gray-800 font-semibold text-sm pb-3 whitespace-nowrap transition-colors" href="#services">
                 Services
               </a>
@@ -325,7 +325,7 @@ export default async function OperatorProfilePage({ params }: Props) {
             </section>
 
             {/* Services & Pricing */}
-            {operator.serviceDetails && Array.isArray(operator.serviceDetails) && operator.serviceDetails.length > 0 && (
+            {Array.isArray(operator.serviceDetails) && (operator.serviceDetails as any[]).length > 0 && (
               <section id="services">
                 <div className="flex items-center justify-between mb-4 sm:mb-6">
                   <h2 className="text-lg sm:text-xl font-bold text-[#1e3a4c]">
@@ -473,6 +473,22 @@ export default async function OperatorProfilePage({ params }: Props) {
 
           {/* Sidebar Column (desktop only) */}
           <aside className="hidden lg:block lg:col-span-4 space-y-6">
+            {/* Claim CTA - Only if not claimed */}
+            {(operator.claimStatus === 'stub' || !operator.claimStatus) && (
+              <div className="bg-slate-50 rounded-xl border border-slate-200 p-6 text-center">
+                <h3 className="font-bold text-slate-900 mb-2">Is this your business?</h3>
+                <p className="text-sm text-slate-500 mb-4">
+                  Claim this listing to update your details, add photos, and get more enquiries.
+                </p>
+                <Link
+                  href={`/claim/${operator.slug}`}
+                  className="inline-block w-full bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold py-2 px-4 rounded-lg transition-colors"
+                >
+                  Claim This Listing
+                </Link>
+              </div>
+            )}
+
             {/* Action CTA Card — Always visible */}
             <div className="bg-gradient-to-br from-[#f97316]/5 to-amber-50 rounded-xl border border-[#f97316]/20 p-6 shadow-lg shadow-[#f97316]/10">
               <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">

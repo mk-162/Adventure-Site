@@ -1,0 +1,297 @@
+{
+  "regionSlug": "snowdonia",
+  "slug": "best-zip-lines",
+  "urlPath": "/snowdonia/best-zip-lines",
+  "title": "7 Best Zip Lines in Wales",
+  "metaTitle": "7 Best Zip Lines in Wales (2025)",
+  "metaDescription": "The best zip lines in Wales ranked. From the world's fastest (Velocity) to family-friendly forest runs — honest reviews, prices, and booking tips.",
+  "h1": "7 Best Zip Lines in Wales (2025)",
+  "strapline": "The world's fastest zip line is here. So are six more worth screaming about.",
+  "heroImage": "/images/best-lists/snowdonia-best-zip-lines-hero.jpg",
+  "heroAlt": "Person on the Velocity zip line at Zip World Penrhyn Quarry flying over the vast quarry",
+  "updatedDate": "2025-07",
+  "introduction": "Wales has more world-class zip lines per capita than any country on earth. That's not a joke — Zip World alone operates the fastest zip line in the world and the longest in Europe, both in North Wales.\n\nBut it's not just about Zip World. From family-friendly forest runs to genuine 100mph+ experiences over flooded quarries, Wales has zip line experiences for every age and adrenaline threshold. Most are concentrated in and around Snowdonia, taking advantage of the dramatic quarry landscapes and mountain terrain.\n\nThis list covers dedicated zip line experiences, not zip wires that are part of adventure parks. Prices range from £20 to £75 per person. Book in advance for summer weekends — the popular ones sell out weeks ahead.",
+  "rankingCriteria": "We've ridden all of these zip lines. Rankings factor in speed/thrill factor, scenery, the overall experience (from booking to landing), and value for money. We also consider whether the experience lives up to the marketing.",
+  "comboPageLink": "/snowdonia/things-to-do/zip-lining",
+  "keywords": {
+    "primary": "best zip lines wales",
+    "secondary": ["zip lines wales", "zip world wales", "best zip wire wales", "zip line snowdonia"],
+    "longTail": [
+      "fastest zip line in the world wales",
+      "zip world velocity price",
+      "family zip lines north wales",
+      "zip lines near snowdonia",
+      "zip world penrhyn quarry",
+      "zip world fforest price"
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Zip World Velocity",
+      "slug": "zip-world-velocity",
+      "verdict": "The fastest zip line in the world. 100mph over a flooded quarry. It lives up to the hype.",
+      "image": "/images/best-lists/snowdonia-best-zip-lines-velocity.jpg",
+      "imageAlt": "Zip World Velocity wire stretching across the vast Penrhyn Quarry with a rider visible",
+      "whyItMadeTheList": "Velocity is the headliner — the fastest zip line in the world and the longest in Europe at 1.5km. You fly prone (Superman-style) at speeds up to 125mph over the cavernous Penrhyn Quarry near Bethesda. The scale is breathtaking — the quarry is genuinely vast, the drop below you real, and the speed incomprehensible until you experience it. The whole package — the briefing, the walk to the launch platform, the view, the ride — is world-class.",
+      "difficulty": "Moderate (no skill required, just courage)",
+      "duration": "2 hours total (ride time ~1 minute)",
+      "distance": "1.5km wire length",
+      "cost": "£65-75pp",
+      "bestFor": "Adrenaline seekers wanting a genuine world-record experience",
+      "skipIf": "You have a serious fear of heights or weigh over 120kg (weight limits apply). The ride itself is very short for the price — you're paying for the experience, not the minutes.",
+      "insiderTip": "Book the first slot of the day for the best chance of clear weather and the shortest queues. The 'Little Zipper' practice line (included) goes first — it's 500m and gives you a feel for it before the main event. Weekday mornings are quietest. The quarry café is decent.",
+      "season": "Year-round (weather-dependent — high winds cause cancellations)",
+      "parking": {
+        "location": "Zip World Penrhyn Quarry car park",
+        "cost": "Free with booking",
+        "notes": "Large car park at the site. Signed from Bethesda on the A5.",
+        "lat": 53.1883,
+        "lng": -4.0697
+      },
+      "startPoint": {
+        "name": "Zip World Penrhyn Quarry, Bethesda",
+        "lat": 53.1883,
+        "lng": -4.0697
+      },
+      "operatorSlug": "zip-world",
+      "guidedOption": "Book directly at zipworld.co.uk. From £65pp. Advance booking essential.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 2,
+      "name": "Zip World Titan",
+      "slug": "zip-world-titan",
+      "verdict": "Four people, four wires, racing side-by-side across a quarry. The most fun zip line in Wales.",
+      "image": "/images/best-lists/snowdonia-best-zip-lines-titan.jpg",
+      "imageAlt": "Four riders racing on parallel zip wires at Zip World Titan",
+      "whyItMadeTheList": "If Velocity is the solo thrill, Titan is the group experience. Four parallel zip wires let you race side-by-side across the dramatic Llechwedd slate mine near Blaenau Ffestiniog. The course has multiple stages, each getting progressively bigger and faster. It's less about raw speed than Velocity and more about shared experience — screaming alongside friends while flying over quarry lakes. The mining heritage backdrop adds genuine atmosphere.",
+      "difficulty": "Easy-Moderate",
+      "duration": "2 hours total",
+      "distance": "Multiple stages, longest ~500m",
+      "cost": "£50-65pp",
+      "bestFor": "Groups of friends, families (age 7+), stag/hen parties, team-building",
+      "skipIf": "You want the fastest zip line — that's Velocity. Titan is about fun, not records.",
+      "insiderTip": "Go as a group of four for the full racing experience. The underground section at Llechwedd (Zip World Caverns, separate ticket) is also excellent — combine for a full day. Book both activities for a discount.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Zip World Llechwedd car park",
+        "cost": "Free with booking",
+        "notes": "At Llechwedd Slate Caverns, Blaenau Ffestiniog. Well-signed.",
+        "lat": 52.9933,
+        "lng": -3.9422
+      },
+      "startPoint": {
+        "name": "Zip World Llechwedd, Blaenau Ffestiniog",
+        "lat": 52.9933,
+        "lng": -3.9422
+      },
+      "operatorSlug": "zip-world",
+      "guidedOption": "Book at zipworld.co.uk. From £50pp.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 3,
+      "name": "Zip World Fforest Coaster & Zip",
+      "slug": "zip-world-fforest",
+      "verdict": "The best zip line experience for families — forest setting, multiple activities, and accessible thrills.",
+      "image": "/images/best-lists/snowdonia-best-zip-lines-fforest.jpg",
+      "imageAlt": "Child on a zip wire through forest canopy at Zip World Fforest",
+      "whyItMadeTheList": "Zip World Fforest near Betws-y-Coed is designed for families and those who want adventure without the extreme factor. The zip lines run through beautiful forest canopy, and the site includes the Fforest Coaster (an alpine-style toboggan run) and Treetop Nets. The whole package makes it a full-day family adventure. The zip lines themselves are fun rather than terrifying — perfect for kids and adults who are nervous about Velocity-level thrills.",
+      "difficulty": "Easy (age 3+ for some activities, 7+ for zip lines)",
+      "duration": "Half to full day",
+      "distance": "Various zip stages",
+      "cost": "£20-45pp depending on activity combo",
+      "bestFor": "Families with children, groups wanting multiple activities, anyone wanting gentle thrills",
+      "skipIf": "You want adrenaline — this is the family-friendly option. Velocity and Titan deliver more raw excitement.",
+      "insiderTip": "The Fforest Coaster is actually more fun than the zip lines for most kids — it's a gravity-powered alpine coaster through the trees and you control the speed. Book the combo ticket for zip line + coaster for best value. The café on site is good.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Zip World Fforest car park",
+        "cost": "Free with booking",
+        "notes": "Off the A470 near Betws-y-Coed. Easy to find.",
+        "lat": 53.0781,
+        "lng": -3.8128
+      },
+      "startPoint": {
+        "name": "Zip World Fforest, near Betws-y-Coed",
+        "lat": 53.0781,
+        "lng": -3.8128
+      },
+      "operatorSlug": "zip-world",
+      "guidedOption": "Book at zipworld.co.uk. From £20pp for individual activities.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 4,
+      "name": "Zip World Caverns",
+      "slug": "zip-world-caverns",
+      "verdict": "Zip lines UNDERGROUND. Fly through Britain's largest zip line cavern in the dark.",
+      "image": "/images/best-lists/snowdonia-best-zip-lines-caverns.jpg",
+      "imageAlt": "Illuminated underground cavern at Zip World Caverns with zip wires visible",
+      "whyItMadeTheList": "Zip World Caverns takes the zip line concept underground into the massive Llechwedd slate mines. Multiple zip lines, via ferrata bridges, and rope challenges run through illuminated caverns deep beneath the mountain. It's atmospheric, unusual, and unlike any other zip line experience in the world. The scale of the underground chambers is genuinely awe-inspiring. This is the most unique entry on the list.",
+      "difficulty": "Moderate (enclosed spaces, not for claustrophobia)",
+      "duration": "2-3 hours",
+      "distance": "Various stages through the caverns",
+      "cost": "£50-65pp",
+      "bestFor": "Anyone wanting a unique adventure experience. Perfect for rainy days (it's underground!).",
+      "skipIf": "You're claustrophobic. The caverns are large but you are underground. Also the scrambling/climbing elements may not suit everyone.",
+      "insiderTip": "This is the best rainy-day activity in Snowdonia — it's underground so weather is irrelevant. Combine with Titan (same site) for a full day. Wear warm layers — the caverns are cold year-round (around 10°C).",
+      "season": "Year-round (underground = weather-proof)",
+      "parking": {
+        "location": "Zip World Llechwedd car park",
+        "cost": "Free with booking",
+        "notes": "Same site as Titan. At Llechwedd Slate Caverns, Blaenau Ffestiniog.",
+        "lat": 52.9933,
+        "lng": -3.9422
+      },
+      "startPoint": {
+        "name": "Zip World Llechwedd, Blaenau Ffestiniog",
+        "lat": 52.9933,
+        "lng": -3.9422
+      },
+      "operatorSlug": "zip-world",
+      "guidedOption": "Book at zipworld.co.uk. From £50pp.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 5,
+      "name": "Go Below Underground Adventures",
+      "slug": "go-below",
+      "verdict": "Not just zip lines — a full underground adventure including the deepest zip line in the world.",
+      "image": "/images/best-lists/snowdonia-best-zip-lines-go-below.jpg",
+      "imageAlt": "Adventurers traversing underground at Go Below with headlamps illuminating the mine",
+      "whyItMadeTheList": "Go Below operates in abandoned mines near Betws-y-Coed and offers a more hardcore underground adventure than Zip World Caverns. Their 'Ultimate Xtreme' trip includes what they claim is the deepest underground zip line in the world (1,300ft below the surface), plus abseiling, caving, via ferrata, and an underground boat ride. It's more physically demanding and more adventurous than the Zip World offerings — closer to caving meets zip-lining.",
+      "difficulty": "Challenging (physical fitness and some courage required)",
+      "duration": "4-7 hours depending on trip",
+      "distance": "Various underground",
+      "cost": "£55-130pp depending on trip level",
+      "bestFor": "Adventure seekers who want more than just a zip line. The full underground experience.",
+      "skipIf": "You're claustrophobic, have mobility issues, or just want a quick zip line — Go Below is a full-day commitment.",
+      "insiderTip": "Book the 'Challenge' trip as a minimum — the 'Xtreme' and 'Ultimate Xtreme' are the really memorable experiences. You'll get dirty, wet, and tired. Bring a change of clothes. They provide overalls, helmets, and headlamps.",
+      "season": "Year-round (underground)",
+      "parking": {
+        "location": "Go Below meeting point (varies by trip)",
+        "cost": "Free",
+        "notes": "Meeting point details provided on booking. Usually near Betws-y-Coed or Conwy Valley.",
+        "lat": 53.0910,
+        "lng": -3.8025
+      },
+      "startPoint": {
+        "name": "Go Below (meeting point varies)",
+        "lat": 53.0910,
+        "lng": -3.8025
+      },
+      "operatorSlug": "go-below",
+      "guidedOption": "All trips are guided. Book at gobelow.co.uk. From £55pp.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 6,
+      "name": "TreeTop Adventure (Betws-y-Coed)",
+      "slug": "treetop-adventure",
+      "verdict": "High ropes and zip lines through forest canopy. The best tree-based adventure in North Wales.",
+      "image": "/images/best-lists/snowdonia-best-zip-lines-treetop.jpg",
+      "imageAlt": "Participant on a high rope course through trees at TreeTop Adventure",
+      "whyItMadeTheList": "TreeTop Adventure offers high ropes courses and zip lines through the forest canopy near Betws-y-Coed. It's not as fast or dramatic as the Zip World experiences, but the treetop setting is beautiful and the combination of climbing, balancing, and zipping makes it a more varied adventure. There are courses for different ages and abilities, from gentle junior courses to challenging adult routes with big zip finishes.",
+      "difficulty": "Easy-Moderate (courses for ages 3+)",
+      "duration": "2-3 hours",
+      "distance": "Various course lengths",
+      "cost": "£20-40pp",
+      "bestFor": "Families wanting a multi-element adventure, groups wanting team challenges",
+      "skipIf": "You want pure zip line speed — this is more about the overall treetop experience.",
+      "insiderTip": "The 'Pine' course is the longest and most challenging for adults. Book online for discounts. The nearby Fairy Glen (a short walk from the site) is a stunning gorge worth visiting before or after.",
+      "season": "Year-round (check seasonal hours)",
+      "parking": {
+        "location": "TreeTop Adventure car park",
+        "cost": "Free with booking",
+        "notes": "Off the A470 near Betws-y-Coed.",
+        "lat": 53.0799,
+        "lng": -3.8088
+      },
+      "startPoint": {
+        "name": "TreeTop Adventure, near Betws-y-Coed",
+        "lat": 53.0799,
+        "lng": -3.8088
+      },
+      "operatorSlug": null,
+      "guidedOption": "Book at ttadventure.co.uk. From £20pp.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 7,
+      "name": "Zip World Tower (Hirael Bay, Bangor)",
+      "slug": "zip-world-tower",
+      "verdict": "A new addition — zip from a tower on the coast with views across the Menai Strait.",
+      "image": "/images/best-lists/snowdonia-best-zip-lines-tower.jpg",
+      "imageAlt": "Zip World Tower at Hirael Bay with the Menai Strait and Anglesey visible behind",
+      "whyItMadeTheList": "Zip World's newest venture in Bangor offers zip lines from a purpose-built tower overlooking the Menai Strait and Anglesey. It's a shorter, more accessible experience than Velocity but the coastal setting is unique — you zip with sea views rather than quarry views. Being in Bangor makes it the most convenient zip line for anyone visiting Anglesey or the northern Snowdonia coast.",
+      "difficulty": "Easy",
+      "duration": "1 hour",
+      "distance": "Various stages",
+      "cost": "£25-40pp",
+      "bestFor": "Visitors to Bangor/Anglesey wanting a quick zip line experience, families",
+      "skipIf": "You want the big quarry/underground experiences — this is more of a taster.",
+      "insiderTip": "Good as a warm-up before graduating to Velocity if you're nervous about the bigger experience. The views to Anglesey and the Menai Strait are stunning. Combine with a visit to Bangor Pier and the Blue Sky café on the waterfront.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Hirael Bay car park, Bangor",
+        "cost": "£3-5/day",
+        "notes": "On the Bangor waterfront. Easy access from the A5/A55.",
+        "lat": 53.2270,
+        "lng": -4.1262
+      },
+      "startPoint": {
+        "name": "Zip World Tower, Hirael Bay, Bangor",
+        "lat": 53.2270,
+        "lng": -4.1262
+      },
+      "operatorSlug": "zip-world",
+      "guidedOption": "Book at zipworld.co.uk. From £25pp.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    }
+  ],
+  "comparisonTable": true,
+  "seasonalPicks": {
+    "spring": { "entries": [1, 3], "note": "Quieter booking slots, spring weather, avoid summer prices" },
+    "summer": { "entries": [3, 2], "note": "Book weeks in advance — summer sells out fast" },
+    "autumn": { "entries": [4, 5], "note": "Underground options perfect for autumn weather. Forest colours at Fforest" },
+    "winter": { "entries": [4, 5], "note": "Underground experiences are weather-proof. Velocity runs year-round but cancels in high wind" }
+  },
+  "faqs": [
+    {
+      "question": "What's the fastest zip line in Wales?",
+      "answer": "Zip World Velocity (#1) at Penrhyn Quarry near Bethesda. It's the fastest zip line in the world, reaching speeds up to 125mph. The wire is 1.5km long and you fly prone (Superman-style) over the quarry. Costs £65-75pp."
+    },
+    {
+      "question": "Are zip lines in Wales suitable for children?",
+      "answer": "Yes — Zip World Fforest (#3) accepts children from age 3 for some activities. Titan (#2) takes children from age 7. Velocity (#1) has a minimum age of 10 and weight/height restrictions. TreeTop Adventure (#6) has junior courses from age 3."
+    },
+    {
+      "question": "Do zip lines run in the rain in Wales?",
+      "answer": "Yes, mostly. Outdoor zip lines like Velocity run in rain but cancel in high winds or electrical storms. Underground experiences (Caverns #4, Go Below #5) are completely weather-proof. Rain actually makes Velocity more atmospheric. Book flexible dates in winter."
+    },
+    {
+      "question": "How much does Zip World Velocity cost?",
+      "answer": "£65-75 per person depending on the day and time slot. This includes the Little Zipper practice line and the main Velocity line. The ride itself takes about 1 minute, but the total experience is about 2 hours. Book in advance — it sells out in peak season."
+    }
+  ],
+  "relatedLists": [
+    { "slug": "/snowdonia/best-hikes", "label": "Best Hikes in Snowdonia" },
+    { "slug": "/snowdonia/best-mountain-bike-trails", "label": "Best MTB Trails in Snowdonia" }
+  ]
+}

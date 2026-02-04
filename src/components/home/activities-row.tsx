@@ -36,7 +36,7 @@ export function ActivitiesRow() {
             return (
               <Link
                 key={activity.slug}
-                href={`/activities/${activity.slug}`}
+                href={`/activities?type=${activity.slug}`}
                 className="flex flex-col items-center gap-2 sm:gap-3 group"
               >
                 <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-slate-50 flex items-center justify-center text-[#1e3a4c] group-hover:bg-[#1e3a4c] group-hover:text-white transition-all">

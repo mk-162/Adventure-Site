@@ -1,33 +1,58 @@
 "use server";
 
 import { db } from "@/db";
-import { operators } from "@/db/schema";
+import { operators, operatorClaims } from "@/db/schema";
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 
-export async function approveClaim(operatorId: number) {
-  await db
-    .update(operators)
-    .set({ claimStatus: "claimed" })
-    .where(eq(operators.id, operatorId));
-  
-  revalidatePath("/admin/commercial/claims");
-  revalidatePath("/admin/content/operators");
-}
+// New actions for Claim Queue (working with operatorClaims)
+export async function approveClaim(claimId: number) {
+  const claim = await db.query.operatorClaims.findFirst({
+    where: eq(operatorClaims.id, claimId),
+  });
 
-export async function rejectClaim(operatorId: number) {
-  await db
-    .update(operators)
-    .set({ 
-      claimedByEmail: null,
-      claimedAt: null 
+  if (!claim) {
+    throw new Error("Claim not found");
+  }
+
+  // Update claim
+  await db.update(operatorClaims)
+    .set({
+        status: "verified",
+        verifiedAt: new Date()
     })
-    .where(eq(operators.id, operatorId));
+    .where(eq(operatorClaims.id, claimId));
+
+  // Update operator
+  await db.update(operators)
+    .set({
+        claimStatus: "claimed",
+        verifiedAt: new Date(),
+        verifiedByEmail: claim.claimantEmail,
+        billingEmail: claim.claimantEmail,
+        billingTier: "free",
+    })
+    .where(eq(operators.id, claim.operatorId));
+
+  // TODO: Send approval email
 
   revalidatePath("/admin/commercial/claims");
-  revalidatePath("/admin/content/operators");
 }
 
+export async function rejectClaim(claimId: number) {
+   // Ideally we'd accept a reason here, but for simple button action:
+   await db.update(operatorClaims)
+    .set({ 
+        status: "rejected",
+    })
+    .where(eq(operatorClaims.id, claimId));
+
+  // TODO: Send rejection email
+
+  revalidatePath("/admin/commercial/claims");
+}
+
+// Restored actions for other admin pages (working with operators directly)
 export async function upgradeToPremium(operatorId: number) {
   await db
     .update(operators)

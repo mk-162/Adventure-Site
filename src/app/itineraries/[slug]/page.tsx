@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { ItineraryView } from "@/components/itinerary/ItineraryView";
 import { EnquireAllVendors } from "@/components/itinerary/EnquireAllVendors";
+import { ShareButton } from "@/components/ui/ShareButton";
 import { getItineraryWithStops, getAccommodation, getAllItinerarySlugs } from "@/lib/queries";
 
 function getDifficultyColor(difficulty: string): string {
@@ -105,9 +106,12 @@ export default async function ItineraryDetailPage({ params }: Props) {
               )}
             </div>
 
-            <h1 className="text-white text-2xl sm:text-3xl lg:text-5xl font-black leading-tight mb-2 lg:mb-3">
-              {itinerary.title}
-            </h1>
+            <div className="flex items-start gap-3">
+              <h1 className="text-white text-2xl sm:text-3xl lg:text-5xl font-black leading-tight mb-2 lg:mb-3">
+                {itinerary.title}
+              </h1>
+              <ShareButton title={itinerary.title} variant="button" className="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-md hover:bg-white/30 text-white font-semibold text-sm rounded-full border border-white/30 transition-colors shrink-0 mt-1" />
+            </div>
             {itinerary.tagline && (
               <p className="text-gray-200 text-sm sm:text-base lg:text-lg max-w-2xl">
                 {itinerary.tagline}
@@ -178,10 +182,7 @@ export default async function ItineraryDetailPage({ params }: Props) {
       {/* Sticky Bottom Bar (mobile) */}
       <div className="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 pb-6 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] z-40">
         <div className="flex gap-3 max-w-lg mx-auto">
-          <button className="flex flex-col items-center justify-center w-14 gap-1 text-gray-500 hover:text-[#1e3a4c] transition-colors">
-            <Share2 className="w-5 h-5" />
-            <span className="text-[10px] font-medium">Share</span>
-          </button>
+          <ShareButton title={itinerary.title} variant="icon" />
           <button className="flex flex-col items-center justify-center w-14 gap-1 text-gray-500 hover:text-[#1e3a4c] transition-colors">
             <Heart className="w-5 h-5" />
             <span className="text-[10px] font-medium">Save</span>

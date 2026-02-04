@@ -1,0 +1,855 @@
+{
+  "regionSlug": "wye-valley",
+  "activityTypeSlug": "kayaking",
+  "title": "Kayaking in Wye Valley",
+  "strapline": "Gentle river paddling with a side of rapids – the Wye's got it all.",
+  "metaTitle": "Kayaking Wye Valley | Adventure Wales",
+  "metaDescription": "Discover the best kayaking in the Wye Valley! Routes, rapids, rentals, and riverside pubs for your Wye adventure.",
+  "heroAlt": "Kayakers paddling down the River Wye near Symonds Yat Rock",
+  "introduction": "The Wye Valley. Lush green hills, ancient woodlands, and a river that meanders through it all, begging to be paddled. For kayaking, it's hard to beat. It's famous for its gentle touring stretches, perfect for beginners and families, but don't let that fool you – there are sections that'll get your heart pumping, most notably around Symonds Yat. \n\nWhat makes the Wye special? It's the accessibility. You can dip in and out at various points, making multi-day trips a breeze. The scenery is stunning, constantly changing as you round each bend. Plus, the riverside pubs are legendary. There's something deeply satisfying about pulling up for a pint after a few hours on the water. \n\nThe best part? The current does most of the work! However, be warned: the Wye can get busy, especially in summer. Early mornings are your friend. Also, water levels can fluctuate significantly, especially after heavy rain, so always check before you go. While most sections are suitable for beginners, proper planning is essential. Don't underestimate the river, even on seemingly easy sections. If you are a beginner, try going with a guided tour. In short, if you’re looking for easily accessible paddling with incredible scenery, kayaking Wye Valley is an absolute must.",
+  "bestSeason": "May-September",
+  "difficultyRange": "Easy to Moderate",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Glasbury to Hay-on-Wye",
+      "slug": "glasbury-to-hay",
+      "description": "A classic beginner-friendly stretch. Start in Glasbury, paddle past rolling fields and the picturesque Erwood Bridge, and end in the book town of Hay-on-Wye. It's mostly flat water with gentle currents, ideal for a relaxing day.",
+      "difficulty": "Easy",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families, relaxing paddles",
+      "notSuitableFor": "Those seeking challenging rapids",
+      "bestSeason": "May-September",
+      "parking": "Parking available in both Glasbury (pay & display) and Hay-on-Wye (various car parks). Arrive early in Hay during peak season.",
+      "startPoint": {
+        "name": "Glasbury Bridge",
+        "lat": 52.076,
+        "lng": -3.211
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Pack a picnic to enjoy on one of the many gravel beaches along the way. They’re especially plentiful on the Hay side of the route."
+    },
+    {
+      "name": "Hay-on-Wye to Bredwardine",
+      "slug": "hay-to-bredwardine",
+      "description": "A longer, more scenic paddle than Glasbury-Hay, taking you further into the Wye Valley's heart. Expect beautiful countryside, woodland sections, and plenty of wildlife spotting opportunities. The flow is gentle, but the distance makes it a moderate challenge.",
+      "difficulty": "Moderate",
+      "duration": "5-6 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced beginners, those wanting a longer day out",
+      "notSuitableFor": "Complete beginners without some paddling experience",
+      "bestSeason": "May-September",
+      "parking": "Parking in Hay-on-Wye (various car parks). Bredwardine has limited parking near the bridge, so consider a taxi back to Hay.",
+      "startPoint": {
+        "name": "Hay-on-Wye Bridge",
+        "lat": 52.072,
+        "lng": -3.128
+      },
+      "estimatedCost": "Free (parking £3-5), plus taxi fare if required",
+      "operatorSlug": null,
+      "insiderTip": "Keep an eye out for kingfishers along this stretch – they’re often spotted darting along the riverbanks. Stop at Brobury House Gardens for a mid-paddle break."
+    },
+    {
+      "name": "Ross-on-Wye to Symonds Yat",
+      "slug": "ross-to-yat",
+      "description": "One of the most popular stretches, featuring stunning scenery and the famous Symonds Yat rapids. The river narrows, the current picks up, and you'll encounter some fun (but manageable) whitewater. This route has it all.",
+      "difficulty": "Moderate",
+      "duration": "4-5 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediate paddlers, those wanting a mix of scenery and excitement",
+      "notSuitableFor": "Complete beginners without a guide, those uncomfortable with small rapids",
+      "bestSeason": "May-September",
+      "parking": "Parking in Ross-on-Wye (various car parks, can get busy). Symonds Yat has limited parking, especially at weekends.",
+      "startPoint": {
+        "name": "Ross-on-Wye Rowing Club",
+        "lat": 51.912,
+        "lng": -2.584
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Scout the Symonds Yat rapids before paddling them – you can walk the bank and assess the conditions. If you're unsure, portage is an option."
+    },
+    {
+      "name": "Symonds Yat Rapids",
+      "slug": "symonds-yat-rapids",
+      "description": "A short, exhilarating run through the rapids at Symonds Yat. Not a full day trip, but a great add-on to the Ross-on-Wye route or a standalone session for experienced paddlers. Be aware of other river users.",
+      "difficulty": "Challenging",
+      "duration": "30-60 minutes (multiple runs)",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced paddlers, those wanting a quick adrenaline fix",
+      "notSuitableFor": "Beginners, those uncomfortable in rapids",
+      "bestSeason": "May-September (water levels dependent)",
+      "parking": "Parking in Symonds Yat East or West (limited, especially at weekends).",
+      "startPoint": {
+        "name": "Below Symonds Yat Rapids",
+        "lat": 51.859,
+        "lng": -2.633
+      },
+      "estimatedCost": "Free (parking £5-10)",
+      "operatorSlug": null,
+      "insiderTip": "Water levels are crucial here. Too low, and it's a scrape-fest. Too high, and it's dangerous. Check river gauges before you go."
+    },
+    {
+      "name": "Monmouth to Tintern",
+      "slug": "monmouth-to-tintern",
+      "description": "Paddle past the historic town of Monmouth and down to the stunning Tintern Abbey. This stretch offers a mix of history and scenery. The river is wider here, with a more tidal influence as you approach Tintern.",
+      "difficulty": "Moderate",
+      "duration": "4-5 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Those interested in history, slightly more experienced paddlers",
+      "notSuitableFor": "Complete beginners without guidance",
+      "bestSeason": "May-September",
+      "parking": "Parking in Monmouth (various car parks). Tintern has limited parking.",
+      "startPoint": {
+        "name": "Monmouth Rowing Club",
+        "lat": 51.81,
+        "lng": -2.718
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Time your paddle to coincide with the tide if possible – paddling *with* the tide makes the journey easier. Check tide times beforehand."
+    },
+    {
+      "name": "Bigsweir to Brockweir",
+      "slug": "bigsweir-to-brockweir",
+      "description": "A quieter section of the Wye, further downstream. This route offers a more secluded experience, with fewer crowds and a greater sense of wilderness. Expect wooded banks and tranquil waters.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Those seeking peace and quiet, nature lovers",
+      "notSuitableFor": "Those wanting lively rapids or riverside pubs every few minutes",
+      "bestSeason": "May-September",
+      "parking": "Limited parking at both Bigsweir Bridge and Brockweir. Be respectful of local residents.",
+      "startPoint": {
+        "name": "Bigsweir Bridge",
+        "lat": 51.725,
+        "lng": -2.639
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "This stretch is excellent for spotting wildlife, especially birds. Bring binoculars!"
+    },
+    {
+      "name": "Lower Lydbrook to Symonds Yat",
+      "slug": "lower-lydbrook-to-symonds-yat",
+      "description": "A shorter paddle ideal for a morning or afternoon trip. This section features some faster flowing water as you approach Symonds Yat, and gives you a feel for the rapids before you arrive.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Paddlers wanting a shorter trip with a little excitement",
+      "notSuitableFor": "Complete beginners without supervision",
+      "bestSeason": "May-September",
+      "parking": "Parking available in Lower Lydbrook (free) and Symonds Yat (pay & display).",
+      "startPoint": {
+        "name": "Lower Lydbrook, near the pub",
+        "lat": 51.884,
+        "lng": -2.562
+      },
+      "estimatedCost": "Free (parking £5 in Symonds Yat)",
+      "operatorSlug": null,
+      "insiderTip": "There is a good pub right at the start point in Lydbrook, perfect for a pre-paddle pint!"
+    },
+    {
+      "name": "Kerene Bridge to Ross-on-Wye",
+      "slug": "kerene-bridge-to-ross",
+      "description": "A lovely section, slightly less busy than the popular Ross-on-Wye to Symonds Yat stretch. Gentle flowing water combined with some picturesque villages.",
+      "difficulty": "Easy",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Those wanting a relaxing paddle away from the crowds.",
+      "notSuitableFor": "Those seeking fast-flowing rapids.",
+      "bestSeason": "May-September",
+      "parking": "Limited parking at Kerene Bridge (free) and Ross-on-Wye (pay & display).",
+      "startPoint": {
+        "name": "Kerene Bridge",
+        "lat": 51.938,
+        "lng": -2.6
+      },
+      "estimatedCost": "Free (parking £3-5 in Ross)",
+      "operatorSlug": null,
+      "insiderTip": "Look out for the old railway bridge remnants as you approach Ross-on-Wye. A great photo opportunity!"
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The Wye Valley's weather can be unpredictable. Sunshine can quickly turn to showers, and river levels can change rapidly after heavy rain. Check the forecast before you go and be prepared for all conditions. Wind can also be a factor, especially on wider stretches of the river.",
+    "weatherLinks": [
+      {
+        "name": "Met Office",
+        "url": "https://www.metoffice.gov.uk/"
+      },
+      {
+        "name": "River Levels",
+        "url": "https://riverlevels.uk/wye"
+      }
+    ],
+    "gearChecklist": [
+      "Kayak or canoe – obviously!",
+      "Paddle – choose the right size for your height.",
+      "Buoyancy aid (PFD) – non-negotiable, even if you're a strong swimmer.",
+      "Waterproof bag – to keep your phone, keys, and snacks dry.",
+      "Waterproof jacket and trousers – even on sunny days, the weather can change.",
+      "Sunscreen and hat – protect yourself from the sun.",
+      "Water shoes or old trainers – the riverbed can be rocky.",
+      "Dry clothes – to change into after your paddle.",
+      "Water bottle – stay hydrated.",
+      "Snacks – energy bars, fruit, or sandwiches."
+    ],
+    "gearHire": [
+      {
+        "name": "Wye Valley Canoes",
+        "location": "Glasbury",
+        "url": "https://www.wyevalleycanoes.co.uk/"
+      },
+      {
+        "name": "Black Mountain Adventure",
+        "location": "Hay-on-Wye",
+        "url": "https://www.blackmountainadventure.co.uk/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "3h",
+          "route": "Via M4 and A40"
+        },
+        {
+          "from": "Manchester",
+          "duration": "3h 30m",
+          "route": "Via M6 and M5"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "2h",
+          "route": "Via M5 and A40"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "1h",
+          "route": "Via A449 and A40"
+        }
+      ],
+      "publicTransport": "Train stations at Hereford, Abergavenny, and Chepstow offer access to the Wye Valley. Bus services connect these towns to various points along the river. Plan your route carefully, as services can be infrequent in rural areas.",
+      "parkingTips": "Parking can be limited, especially during peak season. Arrive early, be prepared to pay, and park responsibly. Consider using public transport or cycling to avoid parking problems."
+    },
+    "safety": "Always wear a buoyancy aid. Check river conditions before you set off. Be aware of other river users. Know your limits – don't attempt sections that are beyond your ability. In an emergency, call 999 and ask for the Coastguard. Be aware of weirs and obstructions in the river. River levels can change rapidly so always check before setting off. The river is home to a variety of wildlife, including swans and otters, so be respectful and keep your distance. Carry a mobile phone in a waterproof bag."
+  },
+  "faqs": [
+    {
+      "question": "What's the best section of the River Wye for beginners kayaking?",
+      "answer": "The Glasbury to Hay-on-Wye section is ideal for beginners. It's a gentle stretch with minimal rapids and stunning scenery. Allow 3-4 hours."
+    },
+    {
+      "question": "How much does it cost to rent a kayak on the Wye Valley?",
+      "answer": "Kayak hire typically costs between £30 and £50 per day, depending on the type of kayak and the rental company. Wye Valley Canoes in Glasbury is a popular option."
+    },
+    {
+      "question": "Are there any rapids on the River Wye?",
+      "answer": "Yes, the most famous rapids are at Symonds Yat. They're relatively easy, but beginners should scout them first or consider a guided trip."
+    },
+    {
+      "question": "What should I wear for kayaking on the Wye?",
+      "answer": "Wear quick-drying clothing, waterproof layers, and water shoes or old trainers. A buoyancy aid is essential. Even on a sunny day, pack for all weather."
+    },
+    {
+      "question": "Is kayaking on the Wye Valley suitable for families?",
+      "answer": "Yes, the Wye is a great option for families! Choose a gentle section like Glasbury to Hay-on-Wye, and ensure everyone wears a properly fitted buoyancy aid."
+    },
+    {
+      "question": "Can you kayak the River Wye year-round?",
+      "answer": "While possible, kayaking is best between May and September when the weather is milder. River levels can fluctuate significantly during the winter months."
+    },
+    {
+      "question": "Do I need a license to kayak on the River Wye?",
+      "answer": "No, you don't need a license to kayak on the River Wye if you're just paddling for pleasure."
+    },
+    {
+      "question": "Are there any guided kayaking tours available on the Wye Valley?",
+      "answer": "Yes, several companies offer guided kayaking tours, including Black Mountain Adventure. This is a great option for beginners or those wanting to explore more challenging sections."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Wye Valley Canoes",
+        "slug": "wye-valley-canoes",
+        "address": "The Boat House, Glasbury, Hereford HR3 5NW",
+        "lat": 52.077,
+        "lng": -3.213,
+        "description": "Long-established family business offering canoe and kayak hire, sales, and guided tours. Known for their friendly service and excellent local knowledge.",
+        "website": "https://www.wyevalleycanoes.co.uk/",
+        "phone": "01497 847213",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "guided tours"
+        ],
+        "googleRating": 4.8,
+        "reviewCount": 180
+      },
+      {
+        "name": "Paddles & Pedals",
+        "slug": "paddles-and-pedals",
+        "address": "Oxford Rd, Hay-on-Wye, Hereford HR3 5AJ",
+        "lat": 52.072,
+        "lng": -3.126,
+        "description": "Offers kayak and canoe hire, as well as bike rentals. Located conveniently in the heart of Hay-on-Wye.",
+        "website": null,
+        "phone": "01497 821134",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 85
+      },
+      {
+        "name": "Black Mountain Adventure",
+        "slug": "black-mountain-adventure",
+        "address": "Bridge St, Hay-on-Wye, Hereford HR3 5DB",
+        "lat": 52.072,
+        "lng": -3.124,
+        "description": "Offer guided tours and kayak hire on the River Wye. Also offer a range of other outdoor activities.",
+        "website": "https://www.blackmountainadventure.co.uk/",
+        "phone": "01497 820022",
+        "services": [
+          "gear sales",
+          "hire",
+          "guided tours"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 110
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Old Ferrie Inn",
+        "slug": "the-old-ferrie-inn",
+        "address": "Symonds Yat East, Ross-on-Wye HR9 6BL",
+        "lat": 51.857,
+        "lng": -2.632,
+        "description": "A legendary riverside pub with stunning views. Perfect for a post-paddle pint and a hearty meal. Watch the kayakers navigate the rapids from the beer garden.",
+        "vibe": "Riverside pub, family-friendly",
+        "priceRange": "££",
+        "website": "https://www.oldferrieinn.co.uk/",
+        "knownFor": "Spectacular views, riverside location, pub classics"
+      },
+      {
+        "name": "The Saracens Head",
+        "slug": "the-saracens-head",
+        "address": "Symonds Yat East, Ross-on-Wye HR9 6JL",
+        "lat": 51.857,
+        "lng": -2.634,
+        "description": "Another popular pub in Symonds Yat East, offering delicious food and a great atmosphere. Accessible by foot ferry from Symonds Yat West.",
+        "vibe": "Traditional pub, lively atmosphere",
+        "priceRange": "££",
+        "website": "https://www.saracensheadinn.co.uk/",
+        "knownFor": "Good food, real ales, ferry access"
+      },
+      {
+        "name": "Blue Boar",
+        "slug": "blue-boar",
+        "address": "38 Broad St, Hay-on-Wye, Hereford HR3 5DB",
+        "lat": 52.072,
+        "lng": -3.126,
+        "description": "A cosy pub in Hay-on-Wye, known for its friendly atmosphere and good selection of beers. A great place to relax after a day on the river.",
+        "vibe": "Cosy pub, local favourite",
+        "priceRange": "££",
+        "website": "https://www.blueboarhay.com/",
+        "knownFor": "Real ales, pub grub, welcoming atmosphere"
+      },
+      {
+        "name": "Kilvert's Inn",
+        "slug": "kilverts-inn",
+        "address": "Hay-on-Wye, Hereford HR3 5EQ",
+        "lat": 52.075,
+        "lng": -3.12,
+        "description": "Stylish restaurant and rooms in the heart of Hay. Modern British cuisine, a little more upscale than your average pub fare.",
+        "vibe": "Restaurant with rooms, stylish",
+        "priceRange": "£££",
+        "website": "https://www.kilvertsinn.com/",
+        "knownFor": "Fine dining, stylish rooms"
+      },
+      {
+        "name": "The Boat Inn",
+        "slug": "the-boat-inn",
+        "address": "Penallt, Monmouth NP25 4AJ",
+        "lat": 51.786,
+        "lng": -2.657,
+        "description": "Riverside pub near Monmouth, accessible by boat. Great views of the river and a relaxed atmosphere. Pull up and enjoy!",
+        "vibe": "Riverside pub, relaxed",
+        "priceRange": "££",
+        "website": "https://www.theboatpenallt.co.uk/",
+        "knownFor": "Riverside location, boat access"
+      },
+      {
+        "name": "The Crown Inn",
+        "slug": "the-crown-inn-whitchurch",
+        "address": "Whitchurch, Ross-on-Wye HR9 6DA",
+        "lat": 51.884,
+        "lng": -2.636,
+        "description": "A traditional pub in Whitchurch, a short drive from Symonds Yat. Good food and a friendly welcome.",
+        "vibe": "Traditional pub, family-friendly",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Classic pub fare"
+      },
+      {
+        "name": "The Hostelrie at Goodrich",
+        "slug": "the-hostelrie-at-goodrich",
+        "address": "Goodrich, Ross-on-Wye HR9 6HT",
+        "lat": 51.896,
+        "lng": -2.613,
+        "description": "A charming inn with a fantastic restaurant. Great for a more upscale post-paddle meal.",
+        "vibe": "Charming inn, restaurant",
+        "priceRange": "£££",
+        "website": "https://www.thehostelrie.co.uk/",
+        "knownFor": "High quality food, scenic location"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "The Hostelrie at Goodrich",
+        "slug": "the-hostelrie",
+        "description": "A charming hotel with excellent food, near the Symonds Yat area. Close to kayaking spots.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Ross-on-Wye to Symonds Yat, 3km",
+        "website": "https://www.thehostelrie.co.uk/"
+      },
+      {
+        "name": "Wye Valley Camping",
+        "slug": "wye-valley-camping",
+        "description": "Riverside campsite near Symonds Yat. Perfect for a budget-friendly kayaking trip.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Symonds Yat Rapids, 1km",
+        "website": "https://www.wyevalleycamping.com/"
+      },
+      {
+        "name": "Bredwardine Bridge B&B",
+        "slug": "bredwardine-bridge-bnb",
+        "description": "A comfortable B&B in a beautiful location near the Wye. Ideal for exploring the river.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Hay-on-Wye to Bredwardine, 1km",
+        "website": null
+      },
+      {
+        "name": "The Old Court Hotel",
+        "slug": "the-old-court-hotel",
+        "description": "A stylish hotel in Symonds Yat West, close to the river and local attractions.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Symonds Yat Rapids, 0.5km",
+        "website": "https://www.oldcourthotel.com/"
+      },
+      {
+        "name": "By The Wye Glamping",
+        "slug": "by-the-wye-glamping",
+        "description": "Luxurious glamping pods right by the River Wye near Hay-on-Wye.",
+        "type": "glamping",
+        "priceRange": "£££",
+        "nearestSpot": "Glasbury to Hay-on-Wye, 2km",
+        "website": "https://bythewye.com/"
+      },
+      {
+        "name": "River Wye Lodge",
+        "slug": "river-wye-lodge",
+        "description": "A charming lodge with river views near Symonds Yat. Good value for money.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Ross-on-Wye to Symonds Yat, 4km",
+        "website": "https://riverwyelodge.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Wye Valley River Festival",
+      "type": "festival",
+      "monthTypical": "May",
+      "description": "A bi-annual celebration of the River Wye with arts, music, and outdoor activities.",
+      "website": "https://wyevalleyriverfestival.org/",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "registrationCost": null
+    },
+    {
+      "name": "Ross Regatta",
+      "type": "race",
+      "monthTypical": "August",
+      "description": "Rowing regatta held in Ross-on-Wye, but a fun event to watch from the river or the banks.",
+      "website": null,
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "registrationCost": null
+    }
+  ],
+  "keywords": {
+    "primary": "kayaking wye valley",
+    "secondary": [
+      "canoe wye valley",
+      "river wye kayaking",
+      "wye valley canoeing",
+      "kayak hire wye valley",
+      "symonds yat kayaking"
+    ],
+    "longTail": [
+      "best kayaking routes wye valley",
+      "kayaking wye valley for beginners",
+      "guided kayaking tours wye valley",
+      "kayaking wye valley with kids",
+      "kayaking symonds yat rapids",
+      "canoe hire river wye",
+      "kayaking wye valley prices",
+      "kayaking wye valley accommodation",
+      "wye valley kayak routes",
+      "wye valley kayaking campsites",
+      "wye valley kayaking pubs",
+      "kayaking wye valley dog friendly"
+    ],
+    "localIntent": [
+      "kayaking near ross-on-wye",
+      "kayaking near hay-on-wye",
+      "kayaking near monmouth",
+      "kayaking near symonds yat",
+      "kayaking near hereford"
+    ],
+    "commercialIntent": [
+      "kayaking wye valley guided tour",
+      "kayaking wye valley hire",
+      "kayak hire wye valley price",
+      "book kayaking wye valley",
+      "wye valley canoeing holiday"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "brecon-beacons",
+        "label": "Kayaking in Brecon Beacons"
+      },
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Kayaking in Pembrokeshire"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Wye Valley"
+      },
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in Wye Valley"
+      },
+      {
+        "activityTypeSlug": "climbing",
+        "label": "Climbing in Wye Valley"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Wye Valley Canoes",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "The Boat House, Glasbury-on-Wye, Hereford HR3 5NW",
+      "postcode": "HR3 5NW",
+      "lat": 52.066,
+      "lng": -3.166,
+      "phone": "01497 847213",
+      "website": "https://www.wyevalleycanoes.co.uk/",
+      "googleRating": 4.7,
+      "reviewCount": 180,
+      "description": "Offers guided kayaking and canoeing trips on the River Wye. Also provides canoe and kayak hire services.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "guided tours",
+        "kayak hire",
+        "canoe hire",
+        "self-guided trips"
+      ],
+      "priceRange": "££",
+      "notes": "Major kayaking operator in the region; offers a range of services for all levels.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Black Mountain Adventure",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Llangorse Lake, Llangorse, Brecon, Powys LD3 7TR",
+      "postcode": "LD3 7TR",
+      "lat": 51.933,
+      "lng": -3.25,
+      "phone": "01874 676444",
+      "website": "https://www.blackmountainadventure.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 150,
+      "description": "Provides outdoor adventure activities including kayaking on Llangorse Lake. Suitable for families and groups.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "kayaking",
+        "canoeing",
+        "paddleboarding",
+        "team building activities"
+      ],
+      "priceRange": "££",
+      "notes": "Offers various water sports activities, making it a versatile option for adventure seekers.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Paddles & Pedals",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Oxford Rd, Hay-on-Wye, Hereford HR3 5AJ",
+      "postcode": "HR3 5AJ",
+      "lat": 52.073,
+      "lng": -3.124,
+      "phone": "01497 820022",
+      "website": null,
+      "googleRating": 4.5,
+      "reviewCount": 45,
+      "description": "Offers bike and canoe hire for exploring the Wye Valley. A good starting point for independent adventurers.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "kayak hire",
+        "canoe hire",
+        "bike hire"
+      ],
+      "priceRange": "££",
+      "notes": "Provides convenient access to kayaks for self-guided tours.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "The Old Ferrie Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Symonds Yat East, Ross-on-Wye HR9 6BL",
+      "postcode": "HR9 6BL",
+      "lat": 51.883,
+      "lng": -2.645,
+      "phone": "01600 890516",
+      "website": "https://www.oldferrieinn.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 600,
+      "description": "A riverside pub offering stunning views of the River Wye. Perfect for a post-kayaking meal or drink.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Located right on the river, making it an ideal spot for kayakers.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "The Saracens Head Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Symonds Yat East, Ross-on-Wye HR9 6JL",
+      "postcode": "HR9 6JL",
+      "lat": 51.885,
+      "lng": -2.645,
+      "phone": "01600 890435",
+      "website": "https://saracensheadinn.co.uk/",
+      "googleRating": 4.3,
+      "reviewCount": 550,
+      "description": "A historic inn situated on the banks of the River Wye in Symonds Yat. Offers great food and picturesque views.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Another excellent riverside option for kayakers in Symonds Yat.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Blue Boar",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "18 Castle St, Hay-on-Wye, Hereford HR3 5DF",
+      "postcode": "HR3 5DF",
+      "lat": 52.072,
+      "lng": -3.125,
+      "phone": "01497 820884",
+      "website": "https://blueboarhay.com/",
+      "googleRating": 4.4,
+      "reviewCount": 300,
+      "description": "A popular pub in Hay-on-Wye serving food and drinks. Conveniently located for those starting or finishing their kayak trips nearby.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "Good option for a meal or drink in Hay-on-Wye.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Kilvert's Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Chapel Ln, Hay-on-Wye, Hereford HR3 5BB",
+      "postcode": "HR3 5BB",
+      "lat": 52.073,
+      "lng": -3.128,
+      "phone": "01497 821042",
+      "website": "https://www.kilvertsinn.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 250,
+      "description": "A cosy inn in Hay-on-Wye with a good selection of ales and food. Perfect to relax after kayaking",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Offers a comfortable and welcoming atmosphere.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "The Boat Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Penallt, Monmouth NP25 4AJ",
+      "postcode": "NP25 4AJ",
+      "lat": 51.815,
+      "lng": -2.678,
+      "phone": "01600 712722",
+      "website": "http://www.theboatinnpenallt.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 400,
+      "description": "A riverside pub near Monmouth with a large garden and stunning views.  A great place for a drink and food after a paddle.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Offers great views of the River Wye, making it perfect for kayakers.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Hereford Canoe Hire",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "The Pavilion, Castle Green, Hereford HR1 2NW",
+      "postcode": "HR1 2NW",
+      "lat": 52.056,
+      "lng": -2.711,
+      "phone": "07737 689601",
+      "website": "https://www.herefordcanoehire.co.uk/",
+      "googleRating": 4.8,
+      "reviewCount": 95,
+      "description": "Canoe and Kayak hire based in the centre of Hereford. Offers trips down the River Wye.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "kayak hire",
+        "canoe hire",
+        "guided tours"
+      ],
+      "priceRange": "££",
+      "notes": "Good option for kayakers near Hereford.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Celtic Canoes",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Unit 1, Station Approach, Llandrindod Wells, Powys LD1 5BD",
+      "postcode": "LD1 5BD",
+      "lat": 52.244,
+      "lng": -3.386,
+      "phone": "01597 824455",
+      "website": "https://www.celticcanoes.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 60,
+      "description": "Offers a variety of canoe and kayak trips on the River Wye, including overnight camping options.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "guided tours",
+        "canoe hire",
+        "kayak hire",
+        "camping trips"
+      ],
+      "priceRange": "£££",
+      "notes": "Specializes in longer, multi-day kayaking adventures.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Ross-on-Wye Canoe Launch Point",
+      "type": "attraction",
+      "category": "transport",
+      "address": "Ross-on-Wye, HR9",
+      "postcode": "HR9",
+      "lat": 51.91,
+      "lng": -2.581,
+      "phone": null,
+      "website": null,
+      "googleRating": 0.0,
+      "reviewCount": 0,
+      "description": "Public canoe launch point at Ross on Wye.",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "services": [
+        "launching",
+        "access"
+      ],
+      "priceRange": "£",
+      "notes": "Publicly accessible put in / take out.",
+      "inDatabase": false,
+      "priority": "medium"
+    }
+  ]
+}

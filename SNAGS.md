@@ -133,6 +133,8 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 - [ ] `/activities/downhill-mtb-antur-stiniog` - Broken images reported.
 - [ ] `/activities` - Duplicate images reported on this page.
+- [ ] `/carmarthenshire/things-to-do/coasteering` - Broken (no images/content, duplicate holding content)
+- [ ] `/carmarthenshire` - Page appears blank
 
 **Map Provider Consideration**
 
@@ -196,6 +198,21 @@ The following pages are confirmed missing hero images in the seed data/code:
 - [ ] UI: Top activity buttons list is too short -> Add "More" button at the end
 - [ ] Feature: "More" button should link to new "All Activities" page (listing *every* activity)
 - [ ] Content: Expand activity scope to include Stag/Hen dos, Paintballing, Sightseeing
+
+**Advertise Page (formerly /for-operators)**
+
+- [ ] URL: Change `/for-operators` to `/advertise`
+- [ ] Content: Hero text -> "Grow your travel business in Wales directory." (Remove "adventure" focus)
+- [ ] Logic: "Already listed?" link -> Open popup with instructions ("Find attraction, use Claim button") instead of jumping to page
+- [ ] Design: Stats Counter -> Remove "Operators" count. Show Activities, Itineraries, Regions.
+- [ ] Layout: Move Price to bottom, Sales benefits to top.
+- [ ] Design: Rename "Verified Listing" to "Enhanced".
+- [ ] Visuals: Add screen grabs of listing types for each column.
+- [ ] Content: Remove "VerifyTrustBad" references (doesn't exist).
+- [ ] Content: Show Prices as "+VAT".
+- [ ] Feature: Add Quantity Selector for number of sites (Scale price +/-).
+- [ ] Visuals: "How It Works" -> Add screen grab showing how to claim.
+- [ ] Nav: Add menu for other options (Email, Channel Sponsorship, etc.)
 
 *Recommendation*: Use Unsplash or `generate_image` to source these.
 

@@ -1,0 +1,839 @@
+{
+  "regionSlug": "snowdonia",
+  "activityTypeSlug": "caving",
+  "title": "Caving in Snowdonia",
+  "strapline": "Descend into Snowdonia's slate heart, where history and adventure collide.",
+  "metaTitle": "Caving Snowdonia | Underground Adventures | Adventure Wales",
+  "metaDescription": "Explore Snowdonia's incredible slate mines and caverns. Discover guided caving tours and unique underground adventures. Book your trip today!",
+  "heroAlt": "Entrance to a flooded slate mine tunnel in Cwmorthin, Snowdonia",
+  "introduction": "Snowdonia. It's not just mountains and hiking. Lurking beneath the surface is a labyrinth of forgotten slate mines, ancient copper workings, and natural cave systems, making it a world-class destination for caving in Snowdonia. Forget the over-sanitized tourist caves elsewhere; here, you’re getting a genuine glimpse into Wales' industrial past and raw geological beauty.\n\nThink miles of flooded tunnels, crumbling chambers echoing with the ghosts of miners, and the occasional glimpse of a rare bat. It's a proper adventure, demanding a level of fitness and a willingness to get muddy. Caving in Snowdonia isn’t for the faint of heart or the claustrophobic! But if you're up for a challenge, it's an unforgettable experience.\n\nThere are options for all experience levels, from the commercially run adventures at Go Below and Zip World, which are perfect for beginners and families (though pricey), to the more serious, independent exploration of abandoned slate mines like Cwmorthin, requiring proper equipment and experience. I’m talking headlamps, waterproofs, and a good dose of common sense. Always check water levels and inform someone of your plans before heading underground.\n\nOne of the best things about caving here is the sheer history steeped within the slate. You're literally walking in the footsteps of generations of Welsh miners, imagining the conditions they endured to carve a living from this unforgiving landscape. It's a humbling and awe-inspiring experience that blends adventure with a poignant sense of place. Just remember to respect the environment, leave no trace, and stick to marked paths where they exist. This is a fragile and historically important environment, so tread carefully.",
+  "bestSeason": "Year-round, but spring and summer (May-September) offer the most stable weather conditions above ground.",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £150 guided",
+  "spots": [
+    {
+      "name": "Cwmorthin Slate Mine",
+      "slug": "cwmorthin-slate-mine",
+      "description": "A legendary, semi-flooded slate mine offering a challenging but rewarding caving experience. Expect wading through water, navigating collapsed tunnels, and seeing remnants of the mining operation. Proper equipment and experience are essential.",
+      "difficulty": "Challenging",
+      "duration": "6-7 hours round trip",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced cavers with proper equipment and navigation skills.",
+      "notSuitableFor": "Beginners, those with claustrophobia, or anyone without appropriate safety gear.",
+      "bestSeason": "May-September (avoid after heavy rain due to flooding)",
+      "parking": "Park responsibly in Tanygrisiau village and walk up the old incline. Parking is limited and fills up quickly, especially on weekends. Consider arriving early.",
+      "startPoint": {
+        "name": "Tanygrisiau Village",
+        "lat": 52.9937,
+        "lng": -3.9809
+      },
+      "estimatedCost": "Free (parking £5-10)",
+      "operatorSlug": null,
+      "insiderTip": "Check water levels beforehand – they can fluctuate rapidly after rain. Talk to locals in Tanygrisiau for recent conditions."
+    },
+    {
+      "name": "Go Below Underground Adventures",
+      "slug": "go-below-underground-adventures",
+      "description": "A professionally run caving adventure in Blaenau Ffestiniog. Choose from various routes and activities, including zip lines, rope bridges, and abseiling. Suitable for all skill levels, with expert guides providing equipment and instruction.",
+      "difficulty": "Easy to Moderate",
+      "duration": "3-6 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families, and those looking for a safe and exciting caving experience.",
+      "notSuitableFor": "Experienced cavers seeking a wild, unguided adventure.",
+      "bestSeason": "Year-round",
+      "parking": "Designated parking at the Go Below site in Blaenau Ffestiniog. Ample space is available.",
+      "startPoint": {
+        "name": "Go Below HQ",
+        "lat": 52.9868,
+        "lng": -3.9402
+      },
+      "estimatedCost": "£60-£150pp depending on the adventure",
+      "operatorSlug": "null",
+      "insiderTip": "Book in advance, especially during peak season. They offer different adventures for different age groups and fitness levels."
+    },
+    {
+      "name": "Llechwedd Slate Caverns",
+      "slug": "llechwedd-slate-caverns",
+      "description": "While not technically caving, the Deep Mine Tour at Llechwedd offers a fascinating insight into the history of slate mining. Descend deep underground via a narrow gauge railway and learn about the lives of the Victorian miners. A more sedate experience than true caving, but still worthwhile.",
+      "difficulty": "Easy",
+      "duration": "1 hour",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, history buffs, and those with mobility issues.",
+      "notSuitableFor": "Experienced cavers seeking a challenging adventure.",
+      "bestSeason": "Year-round",
+      "parking": "Ample parking at Llechwedd Slate Caverns.",
+      "startPoint": {
+        "name": "Llechwedd Slate Caverns Entrance",
+        "lat": 52.9929,
+        "lng": -3.9371
+      },
+      "estimatedCost": "£20-£30pp",
+      "operatorSlug": null,
+      "insiderTip": "Combine the Deep Mine Tour with the Quarry Explorer tour for a full day out."
+    },
+    {
+      "name": "Sygun Copper Mine",
+      "slug": "sygun-copper-mine",
+      "description": "Explore the historic Sygun Copper Mine, venturing into winding tunnels and chambers. Discover the rich history of copper mining in the area and marvel at the geological formations. A guided tour provides valuable insights.",
+      "difficulty": "Moderate",
+      "duration": "1.5 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "History enthusiasts, families, and those curious about copper mining.",
+      "notSuitableFor": "Experienced cavers seeking a raw, unguided exploration.",
+      "bestSeason": "Year-round",
+      "parking": "Designated parking available at Sygun Copper Mine.",
+      "startPoint": {
+        "name": "Sygun Copper Mine Entrance",
+        "lat": 53.0403,
+        "lng": -4.0371
+      },
+      "estimatedCost": "£15-£25pp",
+      "operatorSlug": null,
+      "insiderTip": "Check the opening times, particularly during off-season, as they can be limited. The gift shop offers unique copper-related souvenirs."
+    },
+    {
+      "name": "Zip World Caverns",
+      "slug": "zip-world-caverns",
+      "description": "Experience an adrenaline-fueled adventure at Zip World Caverns. Navigate an underground assault course with zip lines, rope bridges, and tunnels carved into the slate. A fun and exciting way to explore the underground world.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Thrill-seekers, families, and groups looking for an active adventure.",
+      "notSuitableFor": "Those with a fear of heights or limited mobility.",
+      "bestSeason": "Year-round",
+      "parking": "Parking available at the Zip World Caverns site.",
+      "startPoint": {
+        "name": "Zip World Caverns Reception",
+        "lat": 53.0174,
+        "lng": -3.8897
+      },
+      "estimatedCost": "£50-£70pp",
+      "operatorSlug": "null",
+      "insiderTip": "Wear comfortable clothing and closed-toe shoes. Book in advance as it's a popular attraction."
+    },
+    {
+      "name": "Rhys's Chambers (Cwmorthin Extension)",
+      "slug": "rhyss-chambers-cwmorthin-extension",
+      "description": "For experienced explorers of Cwmorthin, Rhys's Chambers offers a challenging extension involving navigating more flooded sections and complex passages. Expect colder water and a higher risk of getting lost. This is *not* for the faint of heart.",
+      "difficulty": "Expert",
+      "duration": "4-5 hours (as part of a longer Cwmorthin trip)",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced Cwmorthin cavers only, those with strong navigation skills and cold-water experience.",
+      "notSuitableFor": "Anyone not intimately familiar with Cwmorthin, or without cold-water wetsuit/drysuit.",
+      "bestSeason": "May-September (low water conditions preferred)",
+      "parking": "Park responsibly in Tanygrisiau village and walk up the old incline. Parking is limited and fills up quickly, especially on weekends. Consider arriving early.",
+      "startPoint": {
+        "name": "Cwmorthin Mine Entrance (Rhys's Chambers Branch)",
+        "lat": 52.9937,
+        "lng": -3.9809
+      },
+      "estimatedCost": "Free (parking £5-10)",
+      "operatorSlug": null,
+      "insiderTip": "Take a very, very detailed map and compass. GPS doesn't work well underground and you need to be able to navigate even if your headlamp fails."
+    },
+    {
+      "name": "Braichgoch Slate Mine (exterior only)",
+      "slug": "braichgoch-slate-mine-exterior",
+      "description": "While access *inside* Braichgoch is generally discouraged due to its unstable condition, exploring the exterior remains and admiring the sheer scale of the mine is still worthwhile. Massive slate tips, ruined buildings, and remnants of the incline railway tell the story of a once-thriving industry. Take care near the edges.",
+      "difficulty": "Easy (exterior viewing only)",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "History buffs, photographers, those interested in industrial heritage.",
+      "notSuitableFor": "Entering the mine itself is not recommended due to safety concerns.",
+      "bestSeason": "Year-round, but better visibility in good weather.",
+      "parking": "Limited roadside parking near the mine entrance. Park considerately.",
+      "startPoint": {
+        "name": "Braichgoch Mine Entrance (exterior)",
+        "lat": 52.636,
+        "lng": -3.8544
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Combine a visit to Braichgoch with a walk in the nearby forest for a pleasant day out."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Snowdonia's weather is notoriously unpredictable. Even on a sunny day, conditions underground can be cold and damp. Rain can quickly cause flooding in mines, making them dangerous to enter. Check the forecast and be prepared for all eventualities.",
+    "weatherLinks": [
+      {
+        "name": "Met Office Mountain Weather Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain/snowdonia"
+      },
+      {
+        "name": "Mountain Weather Information Service (MWIS)",
+        "url": "https://www.mwis.org.uk/forecasts/english-welsh/"
+      }
+    ],
+    "gearChecklist": [
+      "Headlamp with spare batteries – Absolutely essential, even on guided tours.",
+      "Waterproof jacket and trousers – To keep you dry and warm in the damp conditions.",
+      "Sturdy waterproof boots – With good ankle support for uneven terrain.",
+      "Gloves – To protect your hands from sharp rocks and cold water.",
+      "Helmet – Essential in mines to protect from falling debris. (Often provided on guided tours).",
+      "Wetsuit or drysuit (for Cwmorthin/independent exploration) – The water is cold!",
+      "Warm layers – Fleece or wool base layers to maintain body temperature.",
+      "Food and water – Even short trips can be tiring and dehydrating.",
+      "First-aid kit – Including blister treatment and antiseptic wipes.",
+      "Map and compass – For independent exploration; know how to use them!"
+    ],
+    "gearHire": [
+      {
+        "name": "Joe Brown's",
+        "location": "Llanberis",
+        "url": "https://www.joe-brown.com/"
+      },
+      {
+        "name": "V12 Outdoor",
+        "location": "Llanberis",
+        "url": "https://v12outdoor.com/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5h",
+          "route": "Via M1, M6 and A55"
+        },
+        {
+          "from": "Manchester",
+          "duration": "2h 30m",
+          "route": "Via M56 and A55"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3h 30m",
+          "route": "Via M6 and A55"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "3h 30m",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "Bangor and Llandudno Junction are the main train stations for accessing Snowdonia. From there, local buses and the Snowdon Sherpa service connect to many villages and trailheads.",
+      "parkingTips": "Parking in Snowdonia can be challenging, especially during peak season. Arrive early or consider using park-and-ride services. Pay close attention to parking restrictions and avoid blocking access for emergency vehicles."
+    },
+    "safety": "Caving can be dangerous. Never enter a mine alone. Inform someone of your plans and expected return time. Carry a mobile phone (though signal is unreliable underground). Be aware of the risk of falling rocks, unstable ground, and flooding. If in doubt, hire a qualified guide. In case of emergency, dial 999 and ask for Mountain Rescue."
+  },
+  "faqs": [
+    {
+      "question": "Is caving in Snowdonia dangerous?",
+      "answer": "Yes, caving can be dangerous, especially in abandoned mines. Unstable ground, falling rocks, and flooding are real risks. Guided tours are generally safe, but independent exploration requires experience and caution. Always tell someone your plans."
+    },
+    {
+      "question": "What's the difference between Go Below and Zip World Caverns?",
+      "answer": "Go Below offers a variety of caving adventures with guided routes, rope bridges, and zip lines. Zip World Caverns is more of an underground assault course with zip lines and other obstacles. Go Below focuses more on exploration, while Zip World is more adrenaline-fueled."
+    },
+    {
+      "question": "Do I need a permit to go caving in Snowdonia?",
+      "answer": "No permit is usually required for the commercial attractions, but for mines like Cwmorthin, there are no formal permits, but you should be self-sufficient and experienced. Always act responsibly."
+    },
+    {
+      "question": "What should I wear for caving?",
+      "answer": "Wear sturdy, waterproof boots, waterproof trousers and jacket, warm layers, and gloves. A helmet is essential in mines (often provided on guided tours). For cold-water wading, a wetsuit or drysuit is highly recommended."
+    },
+    {
+      "question": "Is caving suitable for children?",
+      "answer": "Guided caving tours are often suitable for children, with age and height restrictions varying depending on the operator. Check with the specific provider for details. Independent caving is not recommended for young children."
+    },
+    {
+      "question": "Can I cave in Snowdonia in winter?",
+      "answer": "Yes, caving is possible in winter, but be aware of potentially icy conditions and increased water levels. Check the weather forecast and dress appropriately. Guided tours typically operate year-round."
+    },
+    {
+      "question": "How deep are the mines in Snowdonia?",
+      "answer": "Some of the deepest mines, like Cwmorthin, extend hundreds of meters underground. The vertical depth of the accessible sections varies depending on the specific mine and the routes taken."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Joe Brown's",
+        "slug": "joe-browns",
+        "address": "Capel Curig, Betws-y-Coed LL24 0EE",
+        "lat": 53.1205,
+        "lng": -3.9027,
+        "description": "An iconic outdoor gear shop with a wide selection of caving equipment, clothing, and footwear. Known for its expert advice and knowledgeable staff.",
+        "website": "https://www.joe-brown.com/",
+        "phone": "01690 720205",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "boot fitting"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 800
+      },
+      {
+        "name": "V12 Outdoor",
+        "slug": "v12-outdoor",
+        "address": "High Street, Llanberis LL55 4ER",
+        "lat": 53.1192,
+        "lng": -4.1267,
+        "description": "Another excellent outdoor gear shop in Llanberis, offering a comprehensive range of caving equipment and clothing. Renowned for its friendly service and competitive prices.",
+        "website": "https://v12outdoor.com/",
+        "phone": "01286 870324",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "boot fitting"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 650
+      },
+      {
+        "name": "Cotswold Outdoor",
+        "slug": "cotswold-outdoor-betws-y-coed",
+        "address": "Holyhead Rd, Betws-y-Coed LL24 0AY",
+        "lat": 53.1147,
+        "lng": -3.8168,
+        "description": "Part of the national chain but a good option in Betws-y-Coed for outdoor gear and clothing. Offers a range of brands and equipment suitable for caving.",
+        "website": "https://www.cotswoldoutdoor.com/",
+        "phone": "01690 710766",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.2,
+        "reviewCount": 200
+      },
+      {
+        "name": "Ellis Brigham Mountain Sports",
+        "slug": "ellis-brigham-llanberis",
+        "address": "The Old School, Llanberis, Gwynedd LL55 4ER",
+        "lat": 53.1199,
+        "lng": -4.1287,
+        "description": "A long-standing outdoor retailer stocking a wide range of technical gear, including items useful for caving. Good for specialist advice.",
+        "website": "https://www.ellis-brigham.com/",
+        "phone": "01286 872355",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.4,
+        "reviewCount": 300
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Pete's Eats",
+        "slug": "petes-eats",
+        "address": "High Street, Llanberis LL55 4ER",
+        "lat": 53.1195,
+        "lng": -4.1272,
+        "description": "A legendary climber's cafe famous for its massive portions and hearty meals. The perfect place to refuel after a day of caving. Try the 'Big Pete' breakfast!",
+        "vibe": "Climber-friendly cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Giant portions, legendary breakfasts"
+      },
+      {
+        "name": "Caffi Llechwedd",
+        "slug": "caffi-llechwedd",
+        "address": "Llechwedd Slate Caverns, Blaenau Ffestiniog LL41 3NB",
+        "lat": 52.9928,
+        "lng": -3.9367,
+        "description": "Located at Llechwedd Slate Caverns, this cafe offers stunning views and tasty food. A good option for a relaxing break after exploring the caverns.",
+        "vibe": "Tourist cafe with scenic views",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Slate-themed decor, views of Blaenau Ffestiniog"
+      },
+      {
+        "name": "Lakeside Cafe",
+        "slug": "lakeside-cafe-tanygrisiau",
+        "address": "Tanygrisiau, Blaenau Ffestiniog LL41 3TP",
+        "lat": 52.9935,
+        "lng": -3.9792,
+        "description": "A convenient spot for a coffee and snack after exploring Cwmorthin. Lakeside location, simple menu.",
+        "vibe": "Casual lakeside cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Convenient location, views of the reservoir"
+      },
+      {
+        "name": "Isallt Cafe",
+        "slug": "isallt-cafe-blaenau-ffestiniog",
+        "address": "Blaenau Ffestiniog LL41 3ES",
+        "lat": 52.9919,
+        "lng": -3.9438,
+        "description": "A popular cafe in Blaenau Ffestiniog serving a range of meals, snacks, and drinks. A good option for a post-caving refuel.",
+        "vibe": "Traditional Welsh cafe",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Welsh cakes, hearty meals"
+      },
+      {
+        "name": "The Heights, Llanberis",
+        "slug": "the-heights-llanberis",
+        "address": "Llanberis, Caernarfon LL55 4ER",
+        "lat": 53.1198,
+        "lng": -4.127,
+        "description": "Formerly 'The Vaynol Arms', The Heights is a large pub with a good range of beers and food, perfect for a post-adventure pint.",
+        "vibe": "Pub with climbing atmosphere",
+        "priceRange": "££",
+        "website": "https://www.theheightsllanberis.co.uk/",
+        "knownFor": "Local ales, pub fare"
+      },
+      {
+        "name": "Y Stablau, Betws-y-Coed",
+        "slug": "y-stablau-betws-y-coed",
+        "address": "Holyhead Rd, Betws-y-Coed LL24 0AY",
+        "lat": 53.1138,
+        "lng": -3.8181,
+        "description": "A cafe with local produce and good coffee in Betws-y-Coed. Ideal for a quick caffeine fix or a light lunch.",
+        "vibe": "Cozy, local cafe",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Local ingredients, good coffee"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "YHA Snowdon Pen-y-Pass",
+        "slug": "yha-snowdon-pen-y-pass",
+        "description": "A budget-friendly hostel located at the foot of Snowdon, offering easy access to many caving locations. A great option for solo travelers and groups.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Cwmorthin Slate Mine (approx. 20 minutes drive)",
+        "website": "https://www.yha.org.uk/hostel/yha-snowdon-pen-y-pass"
+      },
+      {
+        "name": "Plas Curig Hostel",
+        "slug": "plas-curig-hostel",
+        "description": "A well-equipped hostel in Capel Curig, offering comfortable accommodation and a social atmosphere. A popular choice for outdoor enthusiasts.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Go Below Underground Adventures (approx. 30 minutes drive)",
+        "website": "https://www.plascurig.com/"
+      },
+      {
+        "name": "Bryn Gloch Caravan & Camping Park",
+        "slug": "bryn-gloch-caravan-camping-park",
+        "description": "A well-maintained campsite with stunning views of Snowdonia. A good option for those on a budget who enjoy camping.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Llechwedd Slate Caverns (approx. 15 minutes drive)",
+        "website": "https://www.bryngloch.co.uk/"
+      },
+      {
+        "name": "The Royal Victoria Hotel",
+        "slug": "the-royal-victoria-hotel",
+        "description": "A historic hotel in Llanberis, offering comfortable accommodation and a convenient location for exploring Snowdonia.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Pete's Eats (walking distance)",
+        "website": "https://www.royalvictoria.co.uk/"
+      },
+      {
+        "name": "Pen-y-Gwryd Hotel",
+        "slug": "pen-y-gwryd-hotel",
+        "description": "A legendary climbers' hotel with a rich history, located in a stunning mountain setting. A great place to soak up the atmosphere and enjoy a post-caving drink.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Cwmorthin Slate Mine (approx. 25 minutes drive)",
+        "website": "https://www.pyg.co.uk/"
+      },
+      {
+        "name": "Dol Gam Campsite",
+        "slug": "dol-gam-campsite",
+        "description": "A simple campsite, ideal as a cheaper alternative to hostels and hotels.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Cwmorthin Slate Mine (approx. 5 minutes drive)",
+        "website": "http://www.dolgamcampsite.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Snowdonia Trail Marathon",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "A challenging trail running race through the Snowdonia mountains, taking in stunning scenery and rugged terrain. Some routes run near old mine workings.",
+      "website": "https://www.snowdoniatrailmarathon.com/",
+      "relevantActivities": [
+        "caving"
+      ],
+      "registrationCost": 65
+    },
+    {
+      "name": "Wales Rally GB",
+      "type": "race",
+      "monthTypical": "October",
+      "description": "A major rally event that takes place in the forests of Wales, attracting motorsport fans from around the world. Some stages pass through or near old mining areas.",
+      "website": "https://www.walesrallygb.com/",
+      "relevantActivities": [
+        "caving"
+      ],
+      "registrationCost": 50
+    },
+    {
+      "name": "Snowdonia Winter Ultra",
+      "type": "race",
+      "monthTypical": "February",
+      "description": "An extreme winter running event across the challenging trails of Snowdonia. Expect difficult conditions and stunning winter landscapes.",
+      "website": "https://www.snowdoniawinterultra.com/",
+      "relevantActivities": [
+        "caving"
+      ],
+      "registrationCost": 80
+    }
+  ],
+  "keywords": {
+    "primary": "caving snowdonia",
+    "secondary": [
+      "underground adventures snowdonia",
+      "slate mine caving wales",
+      "guided caving snowdonia",
+      "snowdonia caves",
+      "cwmorthin slate mine"
+    ],
+    "longTail": [
+      "best caving experiences snowdonia",
+      "beginner caving tours snowdonia",
+      "caving trips near blaenau ffestiniog",
+      "caving equipment hire snowdonia",
+      "abandoned slate mine exploration snowdonia",
+      "cwmorthin slate mine access",
+      "cwmorthin slate mine safety tips",
+      "go below underground adventures review",
+      "zip world caverns price",
+      "best time to go caving snowdonia"
+    ],
+    "localIntent": [
+      "caving near llanberis",
+      "caving near betws y coed",
+      "caving near blaenau ffestiniog",
+      "caving near snowdon",
+      "caves near caernarfon"
+    ],
+    "commercialIntent": [
+      "guided caving snowdonia price",
+      "book caving tour snowdonia",
+      "caving equipment hire snowdonia",
+      "go below discount code",
+      "zip world caverns tickets"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "brecon-beacons",
+        "label": "Caving in the Brecon Beacons"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "climbing",
+        "label": "Climbing in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "watersports",
+        "label": "Watersports in Snowdonia"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Go Below",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Go Below Underground Adventures, Cwmorthin Slate Mines, Blaenau Ffestiniog, Gwynedd",
+      "postcode": "LL41 3NB",
+      "lat": 53.002,
+      "lng": -3.938,
+      "phone": "01690 710108",
+      "website": "https://www.go-below.co.uk/",
+      "googleRating": 4.8,
+      "reviewCount": 1200,
+      "description": "Offers guided underground adventures in abandoned slate mines, including zip lines, rope bridges, and abseiling.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "guided tours",
+        "zip-lining",
+        "abseiling",
+        "underground exploration"
+      ],
+      "priceRange": "£££",
+      "notes": "A major caving attraction in Snowdonia.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Zip World Caverns",
+      "type": "attraction",
+      "category": "activity_provider",
+      "address": "Zip World Caverns, Llechwedd Slate Caverns, Blaenau Ffestiniog",
+      "postcode": "LL41 3NB",
+      "lat": 52.998,
+      "lng": -3.942,
+      "phone": "01248 601444",
+      "website": "https://www.zipworld.co.uk/caverns",
+      "googleRating": 4.5,
+      "reviewCount": 1000,
+      "description": "An underground adventure course in a slate mine, featuring zip lines, rope bridges, and tunnels.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "zip-lining",
+        "rope courses",
+        "adventure activities"
+      ],
+      "priceRange": "£££",
+      "notes": "Part of the larger Zip World brand.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Joe Brown's",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Menai Hall, Llanberis, Gwynedd",
+      "postcode": "LL55 4EN",
+      "lat": 53.125,
+      "lng": -4.125,
+      "phone": "01286 870327",
+      "website": "https://www.joe-brown.com/",
+      "googleRating": 4.6,
+      "reviewCount": 250,
+      "description": "A well-known outdoor gear shop offering a wide range of equipment for climbing, mountaineering, and caving.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "gear sales",
+        "equipment advice"
+      ],
+      "priceRange": "££",
+      "notes": "A key gear shop for outdoor enthusiasts.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "V12 Outdoor",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "High Street, Llanberis, Gwynedd",
+      "postcode": "LL55 4ER",
+      "lat": 53.125,
+      "lng": -4.123,
+      "phone": "01286 870333",
+      "website": "https://v12outdoor.com/",
+      "googleRating": 4.5,
+      "reviewCount": 180,
+      "description": "An outdoor gear shop selling equipment for climbing, walking, and other outdoor activities, including caving.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "gear sales",
+        "equipment advice"
+      ],
+      "priceRange": "££",
+      "notes": "Another important gear shop in Llanberis.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Caffi Llechwedd",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Llechwedd Slate Caverns, Blaenau Ffestiniog",
+      "postcode": "LL41 3NB",
+      "lat": 52.997,
+      "lng": -3.941,
+      "phone": "01766 830522",
+      "website": "https://www.llechwedd.co.uk/eat-and-drink/",
+      "googleRating": 4.2,
+      "reviewCount": 300,
+      "description": "A cafe located at Llechwedd Slate Caverns, offering refreshments and meals for visitors.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "Convenient for those visiting Zip World Caverns or Go Below.",
+      "inDatabase": false,
+      "priority": "low"
+    },
+    {
+      "name": "Lakeside Cafe",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Tan-y-Grisiau, Blaenau Ffestiniog",
+      "postcode": "LL41 3TW",
+      "lat": 52.981,
+      "lng": -3.962,
+      "phone": "01766 830083",
+      "website": null,
+      "googleRating": 4.3,
+      "reviewCount": 150,
+      "description": "A cafe by the reservoir offering meals and drinks with a view.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "Good for a post-caving refuel.",
+      "inDatabase": false,
+      "priority": "low"
+    },
+    {
+      "name": "Isallt Cafe",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Blaenau Ffestiniog",
+      "postcode": "LL41",
+      "lat": 52.995,
+      "lng": -3.944,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.0,
+      "reviewCount": 80,
+      "description": "A local cafe providing simple meals and drinks.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "Simple food in town.",
+      "inDatabase": false,
+      "priority": "low"
+    },
+    {
+      "name": "Pete's Eats",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Llanberis, Gwynedd",
+      "postcode": "LL55 4EU",
+      "lat": 53.124,
+      "lng": -4.127,
+      "phone": "01286 870360",
+      "website": null,
+      "googleRating": 4.4,
+      "reviewCount": 1000,
+      "description": "A legendary cafe in Llanberis, famous for its large portions and hearty meals, popular with outdoor enthusiasts.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "A must-visit for anyone in Llanberis, perfect after a day of caving.",
+      "inDatabase": false,
+      "priority": "low"
+    },
+    {
+      "name": "Plas y Brenin",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Capel Curig, Betws-y-Coed, Conwy",
+      "postcode": "LL24 0ET",
+      "lat": 53.099,
+      "lng": -3.911,
+      "phone": "01690 720214",
+      "website": "https://www.pyb.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 450,
+      "description": "The National Outdoor Centre offering a range of courses and activities, though caving-specific programs may vary.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "instruction",
+        "guiding",
+        "accommodation"
+      ],
+      "priceRange": "£££",
+      "notes": "While not primarily caving, they may offer relevant skills training.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "MUUK Adventures",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Address available on request.",
+      "postcode": "LL55",
+      "lat": 53.13,
+      "lng": -4.13,
+      "phone": null,
+      "website": "https://muukadventures.com/",
+      "googleRating": 5.0,
+      "reviewCount": 20,
+      "description": "MUUK Adventures provide outdoor adventures in Snowdonia.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "coasteering",
+        "surfing",
+        "kayaking",
+        "mountain-challenges"
+      ],
+      "priceRange": "££",
+      "notes": "Requires contact to confirm if caving activities are available.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Snowdonia Caving Club",
+      "type": "club",
+      "category": "activity_provider",
+      "address": "Unknown (Contact via website)",
+      "postcode": null,
+      "lat": 53.0,
+      "lng": -4.0,
+      "phone": null,
+      "website": "http://www.ogof.org.uk/clubs/snowdonia.htm",
+      "googleRating": null,
+      "reviewCount": 0,
+      "description": "A local caving club. Contact for up-to-date information.",
+      "relevantActivities": [
+        "caving"
+      ],
+      "services": [
+        "organized trips",
+        "training",
+        "social events"
+      ],
+      "priceRange": null,
+      "notes": "Contact for membership and trip details.",
+      "inDatabase": false,
+      "priority": "high"
+    }
+  ]
+}

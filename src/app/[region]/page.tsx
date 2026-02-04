@@ -309,44 +309,48 @@ export default async function RegionPage({ params }: RegionPageProps) {
             <ActivitySeasonGuide regionSlug={regionSlug} />
 
             {/* Top Experiences Grid */}
-            <section>
-              <div className="flex justify-between items-end mb-4 lg:mb-5">
-                <h3 className="text-lg lg:text-xl font-bold text-[#1e3a4c]">Top Experiences</h3>
-                <Link href={`/${regionSlug}/things-to-do`} className="text-[#1e3a4c] text-sm font-bold hover:underline flex items-center gap-1">
-                  View all <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5">
-                {activities.slice(0, 2).map((item) => (
-                    <ActivityCard
-                        key={item.activity.id}
-                        activity={item.activity}
-                        region={item.region}
-                        operator={item.operator}
-                        hideOperator={true}
-                    />
-                ))}
-              </div>
-            </section>
+            {activities.length > 0 && (
+              <section>
+                <div className="flex justify-between items-end mb-4 lg:mb-5">
+                  <h3 className="text-lg lg:text-xl font-bold text-[#1e3a4c]">Top Experiences</h3>
+                  <Link href={`/${regionSlug}/things-to-do`} className="text-[#1e3a4c] text-sm font-bold hover:underline flex items-center gap-1">
+                    View all <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5">
+                  {activities.slice(0, 2).map((item) => (
+                      <ActivityCard
+                          key={item.activity.id}
+                          activity={item.activity}
+                          region={item.region}
+                          operator={item.operator}
+                          hideOperator={true}
+                      />
+                  ))}
+                </div>
+              </section>
+            )}
 
             {/* Accommodation Grid */}
-            <section>
-              <div className="flex justify-between items-end mb-4 lg:mb-5">
-                <h3 className="text-lg lg:text-xl font-bold text-[#1e3a4c]">Where to Stay</h3>
-                <Link href={`/${regionSlug}/where-to-stay`} className="text-[#1e3a4c] text-sm font-bold hover:underline flex items-center gap-1">
-                  View all <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5">
-                {accommodation.slice(0, 2).map((item) => (
-                    <AccommodationCard
-                        key={item.accommodation.id}
-                        accommodation={item.accommodation}
-                        region={item.region}
-                    />
-                ))}
-              </div>
-            </section>
+            {accommodation.length > 0 && (
+              <section>
+                <div className="flex justify-between items-end mb-4 lg:mb-5">
+                  <h3 className="text-lg lg:text-xl font-bold text-[#1e3a4c]">Where to Stay</h3>
+                  <Link href={`/${regionSlug}/where-to-stay`} className="text-[#1e3a4c] text-sm font-bold hover:underline flex items-center gap-1">
+                    View all <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5">
+                  {accommodation.slice(0, 2).map((item) => (
+                      <AccommodationCard
+                          key={item.accommodation.id}
+                          accommodation={item.accommodation}
+                          region={item.region}
+                      />
+                  ))}
+                </div>
+              </section>
+            )}
 
             {/* Interactive Map Section */}
             <section>

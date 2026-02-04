@@ -1,0 +1,400 @@
+{
+  "regionSlug": "gower",
+  "slug": "best-beaches",
+  "urlPath": "/gower/best-beaches",
+  "title": "10 Best Beaches on the Gower",
+  "metaTitle": "10 Best Beaches on the Gower (2025)",
+  "metaDescription": "Ranked guide to the best beaches on the Gower Peninsula. From Three Cliffs Bay to secret coves — honest picks for families, surfers, and walkers.",
+  "h1": "10 Best Beaches on the Gower (2025)",
+  "strapline": "Britain's first AONB has beaches that rival the Mediterranean — on a good day.",
+  "heroImage": "/images/best-lists/gower-best-beaches-hero.jpg",
+  "heroAlt": "Three Cliffs Bay on the Gower with the iconic three limestone pinnacles and golden sand",
+  "updatedDate": "2025-07",
+  "introduction": "The Gower was the first place in Britain to be designated an Area of Outstanding Natural Beauty, and its beaches are a big reason why. Within 20 miles of Swansea, you've got sweeping surf beaches, hidden coves, dramatic cliff-backed bays, and sand so clean it squeaks underfoot.\n\nWhat makes the Gower special is accessibility. Unlike Pembrokeshire (2+ hours from most cities), the Gower is 15 minutes from Swansea and under 3 hours from London, Birmingham, and Bristol. That means the famous beaches get busy in summer — but there are enough quiet alternatives that you can always find space.\n\nThis list covers the full range, from the Instagram-famous (Three Cliffs Bay, Rhossili) to genuinely secret spots that most visitors drive straight past. Water quality is excellent across the peninsula.",
+  "rankingCriteria": "Rankings combine scenic beauty, sand quality, water clarity, facilities, crowd levels, and character. We favour beaches with something special — a view, a feature, or a feeling — rather than just 'nice sand and parking.'",
+  "comboPageLink": null,
+  "keywords": {
+    "primary": "best beaches gower",
+    "secondary": ["gower beaches", "best beach gower peninsula", "gower peninsula beaches", "beaches near swansea"],
+    "longTail": [
+      "best family beaches gower",
+      "best dog friendly beaches gower",
+      "quietest beaches gower",
+      "best swimming beaches gower",
+      "three cliffs bay how to get there",
+      "rhossili beach parking"
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Three Cliffs Bay",
+      "slug": "three-cliffs-bay",
+      "verdict": "The most photogenic beach in Wales. Three limestone pinnacles, golden sand, and Pennard Castle ruins above.",
+      "image": "/images/best-lists/gower-best-beaches-three-cliffs.jpg",
+      "imageAlt": "Three Cliffs Bay with the three limestone pinnacles, golden sand, and Pennard Castle ruins visible",
+      "whyItMadeTheList": "Three Cliffs Bay is jaw-droppingly beautiful. The three limestone pinnacles that give it its name frame a sweep of golden sand, with the ruins of Pennard Castle on the cliff above and the Pennard Pill stream winding across the beach. There's no road access — the 20-minute walk through the valley or along the coast path filters out the casual visitors. It's been voted one of the top views in Britain, and from the clifftop, it's easy to see why.",
+      "difficulty": "Moderate (20-min walk, stepping stones over stream)",
+      "duration": "Half to full day",
+      "distance": "1.5km walk from Southgate",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Photographers, walkers, anyone who wants genuine beauty and doesn't mind walking for it",
+      "skipIf": "You need easy access or facilities. There's nothing at the beach — no toilets, no café, no ice cream van. The stepping stones across Pennard Pill can be tricky at higher water.",
+      "insiderTip": "Approach from Southgate for the classic clifftop view, or from Pennard for the valley walk (easier with children). At low tide, the exposed sand is vast. The stream crossing can be knee-deep after rain — bring sandals or be prepared to get wet feet.",
+      "season": "Year-round (swimming May–September)",
+      "parking": {
+        "location": "Southgate car park",
+        "cost": "£3-5/day",
+        "notes": "Walk the coast path west from Southgate. Or park at Pennard and approach via the valley.",
+        "lat": 51.5672,
+        "lng": -4.0820
+      },
+      "startPoint": {
+        "name": "Three Cliffs Bay",
+        "lat": 51.5629,
+        "lng": -4.1050
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 2,
+      "name": "Rhossili Bay",
+      "slug": "rhossili-bay",
+      "verdict": "Three miles of sand, Worm's Head, and the shipwreck of the Helvetia. Possibly the best beach in Britain.",
+      "image": "/images/best-lists/gower-best-beaches-rhossili.jpg",
+      "imageAlt": "The vast sweep of Rhossili Bay with Worm's Head and the Helvetia shipwreck visible",
+      "whyItMadeTheList": "Rhossili Bay is three miles of golden sand backed by Rhossili Downs, with Worm's Head — a dramatic rocky peninsula — at the southern end and Burry Holms at the north. The wreck of the Helvetia, a Norwegian barque that ran aground in 1887, adds character. The scale is breathtaking. The beach has been voted the best in Britain multiple times by TripAdvisor and The Sunday Times. The catch: the steep cliff path down (and back up) with beach gear.",
+      "difficulty": "Moderate (steep cliff path to beach, 10 minutes)",
+      "duration": "Half to full day",
+      "distance": "N/A (steep walk down)",
+      "cost": "Free (parking £5-8 NT)",
+      "bestFor": "Beach walkers, surfers (at the Llangennith end), Worm's Head explorers",
+      "skipIf": "You can't manage the steep walk down and back up. Carrying a cool box and windbreak up that cliff is genuinely hard work.",
+      "insiderTip": "Walk across to Worm's Head at low tide — check the tide times displayed at the cliff edge. You have about 2.5 hours either side of low tide before the causeway floods. The Worm's Head Hotel at the top has a terrace with arguably the best pub view in Wales.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Rhossili NT car park",
+        "cost": "£5-8 (NT, free for members)",
+        "notes": "Large car park at the village. Gets busy but usually spaces midweek.",
+        "lat": 51.5671,
+        "lng": -4.2894
+      },
+      "startPoint": {
+        "name": "Rhossili Bay",
+        "lat": 51.5630,
+        "lng": -4.2880
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 3,
+      "name": "Oxwich Bay",
+      "slug": "oxwich-bay",
+      "verdict": "The best swimming beach on the Gower — two miles of sheltered sand with warm, clear water.",
+      "image": "/images/best-lists/gower-best-beaches-oxwich.jpg",
+      "imageAlt": "Oxwich Bay with calm turquoise water and green headland behind",
+      "whyItMadeTheList": "Oxwich Bay is where Gower families go for a proper beach day. Two miles of sand in a south-facing sheltered bay, with calm, warm water that's perfect for swimming. Oxwich is less dramatic than Three Cliffs or Rhossili, but far more practical for a day with kids — there are toilets, a car park right behind the beach, and the water is reliably calm. The dune system behind the beach is a National Nature Reserve.",
+      "difficulty": "Easy (car park behind the beach)",
+      "duration": "Full day",
+      "distance": "N/A",
+      "cost": "Free (parking £5-8)",
+      "bestFor": "Families with children, swimmers, anyone wanting an easy, sheltered beach day",
+      "skipIf": "You want drama and spectacle — Oxwich is beautiful but gentle. Parking can be expensive.",
+      "insiderTip": "Walk to the far western end of the beach for more space and better swimming. Oxwich Bay Hotel's bar is open to non-guests and has beach views. The Church of St Illtud, hidden in the woods at the eastern end, is a fascinating medieval ruin worth finding.",
+      "season": "Year-round (swimming May–September)",
+      "parking": {
+        "location": "Oxwich Bay car park",
+        "cost": "£5-8/day",
+        "notes": "Large car park behind the dunes. Can be pricey. Gets busy on hot summer weekends.",
+        "lat": 51.5589,
+        "lng": -4.1509
+      },
+      "startPoint": {
+        "name": "Oxwich Bay",
+        "lat": 51.5589,
+        "lng": -4.1509
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 4,
+      "name": "Mewslade Bay",
+      "slug": "mewslade-bay",
+      "verdict": "The Gower's best-kept secret. A hidden cove with caves, rockpools, and nobody in sight.",
+      "image": "/images/best-lists/gower-best-beaches-mewslade.jpg",
+      "imageAlt": "Mewslade Bay at low tide with caves and rock formations and empty sand",
+      "whyItMadeTheList": "Mewslade is what happens when a beautiful beach has no car park and requires a 15-minute walk through fields. The result: a stunning cove with sea caves, rockpools, and dramatic cliffs that's often completely empty. At low tide, the beach opens up to reveal white sand and fascinating rock formations. At high tide, it disappears entirely — which adds to the adventure. This is the beach Gower locals don't tell visitors about.",
+      "difficulty": "Moderate (15-min walk through fields, tide-dependent)",
+      "duration": "Half day (tide-dependent)",
+      "distance": "1.5km from Pitton Cross",
+      "cost": "Free (parking £3)",
+      "bestFor": "Adventurous beachgoers, cave explorers, anyone wanting genuine solitude",
+      "skipIf": "You don't check tide times — at high tide there is literally no beach. Also not suitable for pushchairs or those with mobility issues.",
+      "insiderTip": "Absolutely essential: check tide times before going. Visit at low spring tide for the most beach and the best cave access. The cave at the western end is deep and atmospheric. Walk from Pitton Cross car park through the fields.",
+      "season": "May–September (low tide essential)",
+      "parking": {
+        "location": "Pitton Cross car park",
+        "cost": "£3/day",
+        "notes": "Small car park. Walk through fields to the coast path, then down to the beach.",
+        "lat": 51.5527,
+        "lng": -4.2420
+      },
+      "startPoint": {
+        "name": "Mewslade Bay",
+        "lat": 51.5498,
+        "lng": -4.2542
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 5,
+      "name": "Caswell Bay",
+      "slug": "caswell-bay",
+      "verdict": "The Gower's most accessible beach — 10 minutes from Swansea with reliable surf and clean water.",
+      "image": "/images/best-lists/gower-best-beaches-caswell.jpg",
+      "imageAlt": "Caswell Bay with gentle waves and headlands on both sides",
+      "whyItMadeTheList": "Caswell is the Gower beach that Swansea residents use as their own back garden. A compact, sheltered bay 10 minutes from the city with clean sand, reliable small waves, and cafés at the beach. It's not the most spectacular beach on the list, but for convenience and consistency it's the best quick beach trip on the peninsula. The headlands on either side shelter it from the worst weather.",
+      "difficulty": "Easy (car park above the beach)",
+      "duration": "Half day",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Anyone wanting a quick, easy beach trip. Families, surfers, after-work swimmers.",
+      "skipIf": "You want a big beach or dramatic scenery — Caswell is compact and suburban-feeling at peak times.",
+      "insiderTip": "The rock arch at the western end of the beach is great for photos at low tide. The café above the beach is decent but overpriced — bring a picnic. Walk the coast path to Brandy Cove (10 minutes) for a more secluded alternative.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Caswell Bay car park",
+        "cost": "£3-5/day",
+        "notes": "Car park above the beach. Fills up fast on sunny weekends — arrive before 10am.",
+        "lat": 51.5688,
+        "lng": -3.9780
+      },
+      "startPoint": {
+        "name": "Caswell Bay",
+        "lat": 51.5688,
+        "lng": -3.9780
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 6,
+      "name": "Llangennith / Hillend",
+      "slug": "llangennith",
+      "verdict": "The surf beach. Three miles of sand facing the Atlantic — always a wave, always room.",
+      "image": "/images/best-lists/gower-best-beaches-llangennith.jpg",
+      "imageAlt": "The long sweep of Llangennith beach with surfers and Rhossili Downs behind",
+      "whyItMadeTheList": "Llangennith is the Gower's surf beach — three miles of sand facing southwest into the Atlantic. It's the most consistent break in South Wales and catches everything from ankle-high summer ripples to overhead winter swells. The beach is big enough that you'll always find space. The dune system behind is impressive and the views along to Rhossili and Worm's Head are stunning. Just be prepared for the walk from the car park.",
+      "difficulty": "Easy (car park to beach, 10-min walk)",
+      "duration": "Half to full day",
+      "distance": "N/A",
+      "cost": "Free (parking £5-8)",
+      "bestFor": "Surfers, beach walkers, anyone who wants scale and space",
+      "skipIf": "You want shelter — Llangennith is exposed and the wind rarely drops. Not great for small children wanting calm paddling.",
+      "insiderTip": "Walk north past the surf school zone for empty peaks. PJ's Surf Shop at Hillend rents boards and wetsuits. The King's Head pub in Llangennith village (5-minute drive) is the traditional post-surf pub — unpretentious and friendly.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Hillend car park",
+        "cost": "£5-8/day",
+        "notes": "Large car park. Gets chaotic on hot summer weekends. 10-minute walk to the water.",
+        "lat": 51.5697,
+        "lng": -4.2883
+      },
+      "startPoint": {
+        "name": "Llangennith / Hillend beach",
+        "lat": 51.5697,
+        "lng": -4.2883
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 7,
+      "name": "Port Eynon",
+      "slug": "port-eynon",
+      "verdict": "A proper village beach — gentle, sheltered, with pubs and cafés right behind.",
+      "image": "/images/best-lists/gower-best-beaches-port-eynon.jpg",
+      "imageAlt": "Port Eynon beach with the village behind and gentle waves",
+      "whyItMadeTheList": "Port Eynon is the family-friendly counterpoint to the wilder Gower beaches. A south-facing village beach with clean sand, gentle waves, rock pools at the edges, and proper facilities including cafés, pubs, toilets, and a campsite. The village gives it a community feel that the bigger beaches lack. Walk east to the Culver Hole — a medieval stone pigeon house built into the cliff — for a quirky historical detour.",
+      "difficulty": "Easy (village-level access)",
+      "duration": "Half to full day",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Families with young children, anyone wanting a village beach with facilities",
+      "skipIf": "You want big waves or drama — Port Eynon is deliberately gentle.",
+      "insiderTip": "Walk east along the coast path to the Culver Hole (10 minutes) — a bizarre medieval stone building tucked into the cliff face. Then continue to Overton Mere for a tiny secluded cove. The Smugglers Haunt pub is the best option for food.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Port Eynon car park",
+        "cost": "£3-5/day",
+        "notes": "Village car park right behind the beach.",
+        "lat": 51.5429,
+        "lng": -4.2139
+      },
+      "startPoint": {
+        "name": "Port Eynon beach",
+        "lat": 51.5429,
+        "lng": -4.2139
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 8,
+      "name": "Langland Bay",
+      "slug": "langland-bay",
+      "verdict": "Beach huts, clean surf, and the best fish and chips on the peninsula.",
+      "image": "/images/best-lists/gower-best-beaches-langland.jpg",
+      "imageAlt": "Langland Bay with its row of colourful beach huts and waves breaking in the bay",
+      "whyItMadeTheList": "Langland has a character all its own. The row of colourful beach huts along the promenade, the consistent surf, and the café-restaurant scene above give it a cosmopolitan feel unusual for the Gower. The bay faces south and catches south/southwest swells that the west-facing beaches miss. The reef at the western end produces quality waves for experienced surfers. It's the Gower beach that feels most like a proper seaside destination.",
+      "difficulty": "Easy (promenade-level access)",
+      "duration": "Half day",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Surfers, couples wanting beach + restaurants, beach hut enthusiasts",
+      "skipIf": "You want a big, empty beach — Langland is compact and popular.",
+      "insiderTip": "The Langland Brasserie above the beach is genuinely good for food — a step up from typical beach cafés. At low tide, walk around the rocks to Rotherslade — a pretty little bay that's quieter. Beach hut rental is available but books up months in advance for summer.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Langland Bay car park",
+        "cost": "£3-5/day",
+        "notes": "Car park above the promenade. Gets busy on sunny days.",
+        "lat": 51.5692,
+        "lng": -3.9903
+      },
+      "startPoint": {
+        "name": "Langland Bay",
+        "lat": 51.5692,
+        "lng": -3.9903
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 9,
+      "name": "Tor Bay (Penmaen)",
+      "slug": "tor-bay",
+      "verdict": "A secret cove between Oxwich and Three Cliffs that most visitors walk straight past.",
+      "image": "/images/best-lists/gower-best-beaches-tor-bay.jpg",
+      "imageAlt": "The hidden sandy cove of Tor Bay with limestone cliffs and clear water",
+      "whyItMadeTheList": "Tor Bay is a small sandy cove tucked between Oxwich Bay and Three Cliffs Bay that's easy to miss from the coast path. The beach is hemmed in by limestone cliffs and backed by sand dunes, creating an intimate, sheltered spot that catches the afternoon sun beautifully. The walk in via the stepping stones at Penmaen is part of the adventure. It's the Gower beach for people who've 'done' the famous ones.",
+      "difficulty": "Moderate (20-min walk, stepping stones)",
+      "duration": "Half day",
+      "distance": "1.5km from Penmaen",
+      "cost": "Free (parking £3)",
+      "bestFor": "Beach explorers wanting something off the beaten track",
+      "skipIf": "You need easy access. The approach involves crossing Pennard Pill on stepping stones, which can be impassable after rain.",
+      "insiderTip": "Approach via the valley from Penmaen village — look for the footpath sign near the churchyard. The stepping stones at the bottom are the same ones used for Three Cliffs Bay, but turn left instead of right. Bring everything — there's nothing here.",
+      "season": "May–September (tide-dependent)",
+      "parking": {
+        "location": "Penmaen village parking",
+        "cost": "£3/day",
+        "notes": "Very limited parking near the church. Walk through the valley.",
+        "lat": 51.5725,
+        "lng": -4.1102
+      },
+      "startPoint": {
+        "name": "Tor Bay",
+        "lat": 51.5610,
+        "lng": -4.1135
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 10,
+      "name": "Broughton Bay",
+      "slug": "broughton-bay",
+      "verdict": "The wild north coast — empty, windswept, and home to Burry Holms tidal island.",
+      "image": "/images/best-lists/gower-best-beaches-broughton.jpg",
+      "imageAlt": "Broughton Bay with Burry Holms tidal island visible and empty sand stretching away",
+      "whyItMadeTheList": "While everyone heads to the south coast, Broughton Bay on the Gower's wild north shore is virtually empty. Backed by farmland with Burry Holms tidal island at its western end, it has a completely different character — wilder, emptier, more rugged. At low tide, you can walk across to Burry Holms (an Iron Age fort site) for a proper adventure. It's the beach for people who want the Gower without the crowds.",
+      "difficulty": "Moderate (walk across fields, remote)",
+      "duration": "Half day",
+      "distance": "1.5km from parking",
+      "cost": "Free",
+      "bestFor": "Walkers, bird watchers, anyone wanting genuine solitude",
+      "skipIf": "You want facilities or shelter — there's nothing here and it's exposed to northerly winds.",
+      "insiderTip": "Check tides for the Burry Holms crossing — you have about 2 hours either side of low tide. The Iron Age remains on the island are faint but atmospheric. Approach from Llangennith village heading north.",
+      "season": "Year-round (Burry Holms at low tide only)",
+      "parking": {
+        "location": "Informal parking near Llangennith",
+        "cost": "Free",
+        "notes": "Very limited informal parking. Walk through farmland.",
+        "lat": 51.5899,
+        "lng": -4.2842
+      },
+      "startPoint": {
+        "name": "Broughton Bay",
+        "lat": 51.5899,
+        "lng": -4.2842
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    }
+  ],
+  "comparisonTable": true,
+  "seasonalPicks": {
+    "spring": { "entries": [1, 4], "note": "Wildflowers on the coast path, quiet beaches, warming up" },
+    "summer": { "entries": [3, 7], "note": "Warmest water, full facilities, but book accommodation and arrive early" },
+    "autumn": { "entries": [2, 10], "note": "Golden light, empty beaches, still swimmable in September" },
+    "winter": { "entries": [2, 6], "note": "Storm watching and winter beach walks. Wild and dramatic." }
+  },
+  "faqs": [
+    {
+      "question": "What's the best beach on the Gower?",
+      "answer": "Three Cliffs Bay (#1) for sheer beauty, Rhossili Bay (#2) for scale and drama, Oxwich Bay (#3) for family-friendly swimming. It depends what you want — there's no wrong answer."
+    },
+    {
+      "question": "Which Gower beaches are best for families?",
+      "answer": "Oxwich Bay (#3) for calm swimming and easy parking. Port Eynon (#7) for a village setting with facilities. Caswell Bay (#5) for quick access from Swansea. All have gentle waves and sandy beaches."
+    },
+    {
+      "question": "Are Gower beaches dog-friendly?",
+      "answer": "Most beaches allow dogs from October to April. Summer dog bans (May-September) apply on popular beaches during peak hours. Mewslade Bay (#4), Broughton Bay (#10), and Tor Bay (#9) allow dogs year-round. Check specific beaches before visiting."
+    },
+    {
+      "question": "How do I get to Three Cliffs Bay?",
+      "answer": "There's no road access. Walk from Southgate car park (15-20 minutes along the coast path) for the clifftop view, or from Pennard (through the valley, easier with children). You'll need to cross stepping stones over Pennard Pill — wear shoes you don't mind getting wet."
+    }
+  ],
+  "relatedLists": [
+    { "slug": "/gower/best-surf-spots", "label": "Best Surf Spots on the Gower" },
+    { "slug": "/pembrokeshire/best-beaches", "label": "Best Beaches in Pembrokeshire" },
+    { "slug": "/anglesey/best-beaches", "label": "Best Beaches on Anglesey" }
+  ]
+}

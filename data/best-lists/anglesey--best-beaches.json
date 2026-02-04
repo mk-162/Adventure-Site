@@ -1,0 +1,399 @@
+{
+  "regionSlug": "anglesey",
+  "slug": "best-beaches",
+  "urlPath": "/anglesey/best-beaches",
+  "title": "10 Best Beaches on Anglesey",
+  "metaTitle": "10 Best Beaches on Anglesey (2025)",
+  "metaDescription": "The best beaches on Anglesey ranked. From Llanddwyn Island romance to hidden coves — honest picks with parking tips and insider knowledge.",
+  "h1": "10 Best Beaches on Anglesey (2025)",
+  "strapline": "Anglesey's 125-mile coastline hides some of Britain's most underrated beaches.",
+  "heroImage": "/images/best-lists/anglesey-best-beaches-hero.jpg",
+  "heroAlt": "Llanddwyn Beach with Llanddwyn Island's lighthouse and Snowdonia mountains behind",
+  "updatedDate": "2025-07",
+  "introduction": "Anglesey's 125-mile coastline is an embarrassment of riches. While the south coast of Wales gets the headlines, this island off the northwest tip has beaches that rival anywhere in Britain — but with a fraction of the visitors.\n\nThe signature combination is sand + Snowdonia views. From multiple Anglesey beaches, you get golden sand in the foreground with the full Snowdonia mountain range as a backdrop across the Menai Strait. It's a combination that feels almost unfair.\n\nAnglesey also has something rare in North Wales: east-facing beaches. When the prevailing westerlies are battering the west coast, Anglesey's eastern bays can be calm, sunny, and sheltered. The island's position creates microclimates that give it more sunshine hours than most of North Wales.\n\nWater quality is consistently excellent. Many beaches hold Blue Flag or Green Coast awards. The Anglesey Coastal Path circles the entire island and connects them all.",
+  "rankingCriteria": "Rankings combine scenic quality (including Snowdonia views), sand quality, water clarity, crowd levels, and character. We favour beaches that offer something you can't get on the mainland — because that's Anglesey's superpower.",
+  "comboPageLink": null,
+  "keywords": {
+    "primary": "best beaches anglesey",
+    "secondary": ["anglesey beaches", "best beach anglesey", "beaches on anglesey", "anglesey beach guide"],
+    "longTail": [
+      "best family beaches anglesey",
+      "best dog friendly beaches anglesey",
+      "llanddwyn beach anglesey",
+      "best swimming beaches anglesey",
+      "newborough beach anglesey",
+      "quiet beaches anglesey"
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Llanddwyn Beach & Llanddwyn Island",
+      "slug": "llanddwyn-beach",
+      "verdict": "The most romantic beach in Wales. Golden sand, a tidal island, a lighthouse, and Snowdonia as a backdrop.",
+      "image": "/images/best-lists/anglesey-best-beaches-llanddwyn.jpg",
+      "imageAlt": "Llanddwyn Island with its lighthouse and cottages, Snowdonia mountains visible across the water",
+      "whyItMadeTheList": "Llanddwyn Beach is extraordinary. A vast sweep of golden sand leads to Llanddwyn Island — a tidal peninsula (not a true island) with ruined churches, two lighthouses, and the legend of St Dwynwen, the Welsh patron saint of lovers. Behind you, Newborough Forest's pines frame the sand. Across the water, the full Snowdonia massif lines the horizon. It's the most photogenic beach in North Wales and possibly the most romantic in Britain.",
+      "difficulty": "Moderate (1.5km walk through forest from car park)",
+      "duration": "Half to full day",
+      "distance": "1.5km from Newborough Forest car park",
+      "cost": "Free (parking £7 NRW)",
+      "bestFor": "Couples, photographers, walkers, anyone wanting the most beautiful beach setting in Wales",
+      "skipIf": "You want easy car-park-to-sand access — the walk through the forest is 20-30 minutes. Check tides for island access.",
+      "insiderTip": "Walk through the forest and turn left at the beach to reach Llanddwyn Island. The island is accessible for all but about an hour either side of the very highest tides — don't get cut off. January 25th is St Dwynwen's Day (Welsh Valentine's Day) — the island is magical but busy. Sunrise walks in summer are unforgettable.",
+      "season": "Year-round (island access tide-dependent)",
+      "parking": {
+        "location": "Newborough Forest NRW car park",
+        "cost": "£7/day (NRW)",
+        "notes": "Large car park at the forest entrance. Well-maintained with toilets. The parking fee feels steep but the experience justifies it.",
+        "lat": 53.1489,
+        "lng": -4.3511
+      },
+      "startPoint": {
+        "name": "Llanddwyn Beach",
+        "lat": 53.1342,
+        "lng": -4.3889
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 2,
+      "name": "Newborough Beach (Traeth Niwbwrch)",
+      "slug": "newborough-beach",
+      "verdict": "The other end of Llanddwyn's sand — a huge, empty beach backed by dunes and Snowdonia views.",
+      "image": "/images/best-lists/anglesey-best-beaches-newborough.jpg",
+      "imageAlt": "Newborough Beach stretching into the distance with Snowdonia mountains across the water",
+      "whyItMadeTheList": "Newborough Beach is the northern continuation of Llanddwyn Beach — miles of sand that face south across the Menai Strait to Snowdonia. The beach is vast, often empty, and backed by the Newborough Warren dune system (a National Nature Reserve). Unlike the Llanddwyn end, this section is less visited and feels properly wild. The views to Snowdonia are constant and breathtaking. Red squirrels live in the nearby forest.",
+      "difficulty": "Moderate (same forest walk as Llanddwyn, turn right at the beach)",
+      "duration": "Half to full day",
+      "distance": "1.5km from Newborough Forest car park",
+      "cost": "Free (parking £7 NRW)",
+      "bestFor": "Beach walkers wanting vast empty sand, nature lovers (dunes, red squirrels)",
+      "skipIf": "You want facilities — there are none on this section of beach.",
+      "insiderTip": "Turn right at the beach instead of left (which takes you to Llanddwyn). Walk east for increasing solitude. The dune system is extraordinary and home to rare plant species. Look for red squirrels in the forest on the walk in — they're present but shy.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Newborough Forest NRW car park",
+        "cost": "£7/day (NRW)",
+        "notes": "Same car park as Llanddwyn access.",
+        "lat": 53.1489,
+        "lng": -4.3511
+      },
+      "startPoint": {
+        "name": "Newborough Beach",
+        "lat": 53.1480,
+        "lng": -4.3600
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 3,
+      "name": "Trearddur Bay",
+      "slug": "trearddur-bay",
+      "verdict": "Anglesey's best family beach — clean sand, calm water, and a proper seaside village behind.",
+      "image": "/images/best-lists/anglesey-best-beaches-trearddur.jpg",
+      "imageAlt": "Trearddur Bay with families on the sand and clear turquoise water",
+      "whyItMadeTheList": "Trearddur Bay is the complete family beach package on Anglesey. A sheltered horseshoe bay with clean golden sand, calm water perfect for swimming, and a village behind with cafés, restaurants, and shops. The beach faces south so it catches the sun all day. It's Anglesey's equivalent of Tenby — a proper seaside destination with everything you need in walking distance.",
+      "difficulty": "Easy (village-level access)",
+      "duration": "Full day",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Families wanting facilities, clean swimming, and a proper seaside experience",
+      "skipIf": "You want wild, empty coastline — Trearddur is developed and can be busy in summer.",
+      "insiderTip": "The Sea Shanty café/restaurant on the beach is popular — book for dinner. Walk the coast path north to Porth Diana for a quieter alternative bay. The Outdoor Alternative shop in the village rents kayaks and paddleboards.",
+      "season": "Year-round (lifeguarded May–September)",
+      "parking": {
+        "location": "Trearddur Bay car park",
+        "cost": "£3-5/day",
+        "notes": "Car park above the beach. Fills up on sunny weekends.",
+        "lat": 53.2742,
+        "lng": -4.6230
+      },
+      "startPoint": {
+        "name": "Trearddur Bay",
+        "lat": 53.2742,
+        "lng": -4.6230
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 4,
+      "name": "Aberffraw Beach (Traeth Mawr)",
+      "slug": "aberffraw",
+      "verdict": "A vast, empty beach behind an ancient village. The Snowdonia views are the best from any Anglesey beach.",
+      "image": "/images/best-lists/anglesey-best-beaches-aberffraw.jpg",
+      "imageAlt": "Aberffraw beach with massive dunes and Snowdonia mountains clear on the horizon",
+      "whyItMadeTheList": "Aberffraw was once the capital of the Kingdom of Gwynedd. Today its beach is one of the most impressive on Anglesey — a huge sweep of sand backed by towering dunes, with Snowdonia spread across the horizon. The river Ffraw cuts through the dunes to reach the sea, and at low tide the beach feels endless. Few tourists find their way here, making it one of the quietest major beaches in North Wales.",
+      "difficulty": "Moderate (walk through dunes from village)",
+      "duration": "Half to full day",
+      "distance": "1km from village parking",
+      "cost": "Free (limited free parking)",
+      "bestFor": "Beach walkers wanting vast empty sand and the best Snowdonia views",
+      "skipIf": "You want facilities — the village has a pub and a shop, but the beach itself has nothing.",
+      "insiderTip": "Cross the river at low tide to reach the southern section of beach — it's often completely deserted. The dune system is a Site of Special Scientific Interest. The Prince Llewelyn pub in the village is basic but friendly.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Aberffraw village (informal)",
+        "cost": "Free (limited, be considerate)",
+        "notes": "Park in the village and walk to the beach through the dunes. No formal beach car park.",
+        "lat": 53.1888,
+        "lng": -4.4641
+      },
+      "startPoint": {
+        "name": "Aberffraw Beach",
+        "lat": 53.1815,
+        "lng": -4.4730
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 5,
+      "name": "Rhosneigr (Traeth Crigyll)",
+      "slug": "rhosneigr",
+      "verdict": "Anglesey's surf and watersports hub — kitesurfers, paddleboarders, and beach vibes.",
+      "image": "/images/best-lists/anglesey-best-beaches-rhosneigr.jpg",
+      "imageAlt": "Kitesurfers and surfers at Rhosneigr beach with waves breaking",
+      "whyItMadeTheList": "Rhosneigr is Anglesey's watersports capital. The beach faces southwest and catches plenty of swell, making it the island's best surf spot. Kitesurfers and paddleboarders flock here too. The village behind has a genuine surf-town vibe with cafés, restaurants, and a developing food scene. It's the most energy-filled beach on Anglesey — not peaceful, but exciting.",
+      "difficulty": "Easy (village-level access)",
+      "duration": "Half to full day",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Surfers, kitesurfers, watersports enthusiasts, anyone wanting an active beach scene",
+      "skipIf": "You want a quiet beach — Rhosneigr is the busiest beach on Anglesey's west coast.",
+      "insiderTip": "The Oyster Catcher restaurant is genuinely excellent — book ahead in summer. Funsport Anglesey rents surf, SUP, and kite equipment. The beach to the north (Traeth Cymyran) is quieter if Rhosneigr is too busy.",
+      "season": "Year-round (best waves October–April)",
+      "parking": {
+        "location": "Rhosneigr village car parks",
+        "cost": "£3-5/day",
+        "notes": "Several car parks around the village. Metered on-street parking too.",
+        "lat": 53.2285,
+        "lng": -4.5103
+      },
+      "startPoint": {
+        "name": "Rhosneigr beach",
+        "lat": 53.2285,
+        "lng": -4.5103
+      },
+      "operatorSlug": null,
+      "guidedOption": "Funsport Anglesey offers lessons and hire",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 6,
+      "name": "Benllech Beach",
+      "slug": "benllech",
+      "verdict": "A sweeping east-coast bay — sheltered when the west coast is battered, with Blue Flag water.",
+      "image": "/images/best-lists/anglesey-best-beaches-benllech.jpg",
+      "imageAlt": "Benllech beach with calm blue water and families enjoying the sand",
+      "whyItMadeTheList": "Benllech sits on Anglesey's east coast, which means it's sheltered from the prevailing westerlies that batter the other side of the island. When beaches like Rhosneigr are windswept and wild, Benllech is often calm and sunny. The beach is Blue Flag awarded with clean sand and safe swimming. The village behind has shops, cafés, and accommodation. It's the reliable option when you need a calm beach day.",
+      "difficulty": "Easy (promenade-level access)",
+      "duration": "Half to full day",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Families wanting sheltered, calm swimming. The east-coast backup when the west is rough.",
+      "skipIf": "You want big waves or dramatic scenery — Benllech is pleasant but not spectacular.",
+      "insiderTip": "Walk south along the coast path to Red Wharf Bay (40 minutes) for one of the best pub-on-the-beach experiences in North Wales at The Ship Inn. The rock pools at the northern end of Benllech beach are excellent for kids.",
+      "season": "Year-round (lifeguarded May–September)",
+      "parking": {
+        "location": "Benllech beach car park",
+        "cost": "£3-5/day",
+        "notes": "Car park right behind the beach. Easy access.",
+        "lat": 53.3178,
+        "lng": -4.2255
+      },
+      "startPoint": {
+        "name": "Benllech beach",
+        "lat": 53.3178,
+        "lng": -4.2255
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 7,
+      "name": "Cable Bay (Porth Trecastell)",
+      "slug": "cable-bay",
+      "verdict": "A stunning crescent cove with turquoise water and the best sunset views on the island.",
+      "image": "/images/best-lists/anglesey-best-beaches-cable-bay.jpg",
+      "imageAlt": "Cable Bay's crescent of sand with turquoise water and the sunset sky",
+      "whyItMadeTheList": "Cable Bay is a small, beautiful crescent of sand between low headlands on Anglesey's west coast. The name comes from the transatlantic telegraph cable that came ashore here. The beach is compact but stunning, with clear turquoise water on calm days that looks almost tropical. The west-facing aspect makes it the best sunset beach on Anglesey. There's a basic café at the car park.",
+      "difficulty": "Easy (car park to beach, short walk)",
+      "duration": "Half day",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Sunset chasers, swimmers wanting clear water, couples",
+      "skipIf": "You want a big beach — Cable Bay is intimate and fills up quickly on hot days.",
+      "insiderTip": "Come for sunset — Cable Bay faces directly west and the sunsets over the Irish Sea are spectacular. The beach is small, so arrive early on sunny days. Walk south along the coast path for more secluded coves.",
+      "season": "May–September (best for swimming and sunsets)",
+      "parking": {
+        "location": "Cable Bay car park",
+        "cost": "£3-5/day",
+        "notes": "Small car park above the beach. Fills up quickly in summer.",
+        "lat": 53.2100,
+        "lng": -4.5396
+      },
+      "startPoint": {
+        "name": "Cable Bay",
+        "lat": 53.2100,
+        "lng": -4.5396
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 8,
+      "name": "Porth Dafarch",
+      "slug": "porth-dafarch",
+      "verdict": "A sheltered cove near Holyhead with crystal-clear water and rocky swimming channels.",
+      "image": "/images/best-lists/anglesey-best-beaches-porth-dafarch.jpg",
+      "imageAlt": "Clear turquoise water at Porth Dafarch with rocky outcrops and sandy coves",
+      "whyItMadeTheList": "Porth Dafarch is a sheltered cove near Holyhead that feels like it belongs in Brittany rather than North Wales. The water clarity is exceptional — you can see the bottom at depth — and the rocky channels between small sandy coves create natural swimming lanes. The beach is popular with snorkellers and kayakers, and the coast path walks around South Stack are close by. It's the beach that Holyhead locals keep quiet about.",
+      "difficulty": "Easy (short walk from car park)",
+      "duration": "Half day",
+      "distance": "N/A",
+      "cost": "Free (parking £3)",
+      "bestFor": "Swimmers, snorkellers, kayakers wanting calm, clear water",
+      "skipIf": "You want big sandy beach — Porth Dafarch is rocky with small sand pockets. Not great for sandcastles.",
+      "insiderTip": "Bring a snorkel — the water clarity and rocky channels make this the best snorkelling on Anglesey. Combine with a walk to South Stack lighthouse and the RSPB reserve (puffins in summer). The Boathouse café at the beach is good for drinks.",
+      "season": "May–September (swimming), year-round (walking)",
+      "parking": {
+        "location": "Porth Dafarch car park",
+        "cost": "£3/day",
+        "notes": "Small car park above the cove. Can fill up quickly.",
+        "lat": 53.2855,
+        "lng": -4.6667
+      },
+      "startPoint": {
+        "name": "Porth Dafarch",
+        "lat": 53.2855,
+        "lng": -4.6667
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 9,
+      "name": "Red Wharf Bay (Traeth Coch)",
+      "slug": "red-wharf-bay",
+      "verdict": "A massive tidal bay with Britain's best beach pub. Arrive at low tide for miles of sand.",
+      "image": "/images/best-lists/anglesey-best-beaches-red-wharf-bay.jpg",
+      "imageAlt": "Red Wharf Bay at low tide with vast empty sands and The Ship Inn visible",
+      "whyItMadeTheList": "Red Wharf Bay is enormous — at low tide, the sand stretches for miles across the bay, creating a landscape that feels almost otherworldly. The beach is backed by woodland and the occasional old boathouse, giving it a timeless quality. But the real star is The Ship Inn, a pub right on the beach that serves excellent seafood with views across the bay. It might be the best pub location in North Wales.",
+      "difficulty": "Easy (access from Ship Inn or Benllech)",
+      "duration": "Half to full day",
+      "distance": "N/A",
+      "cost": "Free (parking £3)",
+      "bestFor": "Beach walkers, anyone who likes combining a pub lunch with miles of sand",
+      "skipIf": "High tide — the beach virtually disappears. Always check tide times before visiting.",
+      "insiderTip": "Visit at low tide for maximum beach and book a table at The Ship Inn for lunch — their seafood is excellent and the terrace overlooks the bay. At high tide, walk the coast path to Benllech instead.",
+      "season": "Year-round (low tide for beach, pub year-round)",
+      "parking": {
+        "location": "Red Wharf Bay informal parking",
+        "cost": "£3 (honesty box at Ship Inn)",
+        "notes": "Very limited parking near The Ship Inn. Alternative parking at Benllech and walk.",
+        "lat": 53.3162,
+        "lng": -4.2004
+      },
+      "startPoint": {
+        "name": "Red Wharf Bay",
+        "lat": 53.3162,
+        "lng": -4.2004
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 10,
+      "name": "Church Bay (Porth Swtan)",
+      "slug": "church-bay",
+      "verdict": "A tiny, charming cove on the north coast with a great café and genuine local character.",
+      "image": "/images/best-lists/anglesey-best-beaches-church-bay.jpg",
+      "imageAlt": "Church Bay's small sandy cove with the hillside behind and boats in the water",
+      "whyItMadeTheList": "Church Bay is a small cove on Anglesey's north coast that's delightfully uncommercial. The beach is sandy and sheltered, the Wavecrest café above the beach is genuinely excellent (locally sourced seafood), and the whole place has a real community feel. The old swtan (a traditional thatched house) has been restored as a museum. It's the kind of place where you plan to stay an hour and end up spending the day.",
+      "difficulty": "Easy (car park above the beach)",
+      "duration": "Half day",
+      "distance": "N/A",
+      "cost": "Free (parking £3)",
+      "bestFor": "Those wanting a quiet, authentic Anglesey beach experience with good food",
+      "skipIf": "You want a big beach or big waves — Church Bay is tiny and gentle.",
+      "insiderTip": "The Wavecrest café is the real draw — their lobster and crab come from the bay below. Book a table on sunny evenings. The historic Swtan (thatched cottage) next to the car park is free to visit and fascinating.",
+      "season": "May–September (café seasonal)",
+      "parking": {
+        "location": "Church Bay car park",
+        "cost": "£3/day",
+        "notes": "Small car park above the beach. Limited spaces.",
+        "lat": 53.3792,
+        "lng": -4.5510
+      },
+      "startPoint": {
+        "name": "Church Bay",
+        "lat": 53.3792,
+        "lng": -4.5510
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    }
+  ],
+  "comparisonTable": true,
+  "seasonalPicks": {
+    "spring": { "entries": [1, 4], "note": "Wildflowers in the dunes, quiet beaches, Snowdonia still snow-capped" },
+    "summer": { "entries": [3, 5], "note": "Warmest water, watersports, full facilities. Book accommodation well ahead." },
+    "autumn": { "entries": [9, 1], "note": "Golden light, empty beaches, autumn colours in Newborough Forest" },
+    "winter": { "entries": [6, 9], "note": "Sheltered east-coast beaches. Winter walking and pub lunches." }
+  },
+  "faqs": [
+    {
+      "question": "What's the best beach on Anglesey?",
+      "answer": "Llanddwyn Beach (#1) for beauty and romance, Trearddur Bay (#3) for families wanting facilities, Rhosneigr (#5) for watersports. It depends what you want, but Llanddwyn is genuinely special."
+    },
+    {
+      "question": "How much does parking cost at Newborough/Llanddwyn?",
+      "answer": "The NRW Newborough Forest car park costs £7/day. It's the only car park for both Llanddwyn and Newborough beaches. The walk through the forest to the beach is about 20-30 minutes. Free for NRW members."
+    },
+    {
+      "question": "Which Anglesey beaches are best for families?",
+      "answer": "Trearddur Bay (#3) for full facilities and calm water. Benllech (#6) for a sheltered east-coast option. Church Bay (#10) for charm and excellent food. All have safe swimming and nearby amenities."
+    },
+    {
+      "question": "Can you see Snowdonia from Anglesey beaches?",
+      "answer": "Yes — from Llanddwyn (#1), Newborough (#2), Aberffraw (#4), and several other south/southwest-facing beaches, the full Snowdonia mountain range is visible across the Menai Strait. The views are particularly dramatic in winter with snow-capped peaks."
+    }
+  ],
+  "relatedLists": [
+    { "slug": "/pembrokeshire/best-beaches", "label": "Best Beaches in Pembrokeshire" },
+    { "slug": "/gower/best-beaches", "label": "Best Beaches on the Gower" }
+  ]
+}

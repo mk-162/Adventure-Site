@@ -1,0 +1,959 @@
+{
+  "regionSlug": "snowdonia",
+  "activityTypeSlug": "wild-swimming",
+  "title": "Wild Swimming in Snowdonia",
+  "strapline": "Plunge into crystal-clear lakes and icy waterfalls – if you dare!",
+  "metaTitle": "Wild Swimming Snowdonia | Adventure Wales",
+  "metaDescription": "Discover the best spots for wild swimming in Snowdonia! From Llyn Idwal to hidden waterfalls, find your perfect swim in Wales' stunning national park.",
+  "heroAlt": "Swimmer emerging from the turquoise waters of a Snowdonian quarry lake",
+  "introduction": "Snowdonia. Eryri. Land of soaring peaks, dramatic valleys, and surprisingly inviting (sometimes!) waters. Wild swimming in Snowdonia is a different beast than a gentle dip on a southern beach. Here, you're embracing the raw, untamed beauty of the mountains. This isn't about languid lounging; it's about invigorating plunges, bracing swims, and earning that post-swim hot chocolate. \n\nWe're talking glacial lakes carved into mountainsides, the emerald depths of abandoned quarries (watch out for submerged machinery!), and the thundering spray of waterfalls. The water *will* be cold – even in summer. This is the heart of Wales, and the weather can turn on a sixpence. But the reward? Unparalleled views, the feeling of truly connecting with nature, and bragging rights that will last until your next icy adventure. \n\nSnowdonia caters to a range of wild swimming abilities. Llyn Idwal offers a relatively accessible entry point for beginners (though still pack warm layers!). Dorothea Quarry (Blue Lake) is stunning but requires caution and a confident approach. For seasoned dippers, the more remote mountain lakes like Llyn Crafnant offer solitude and breathtaking vistas. However, be warned, some spots require a good hike to reach, and the weather can change rapidly at altitude. Always check the forecast and be prepared for the worst. This isn't the Med; this is Wales, and it's wild. Embrace the challenge, respect the mountains, and enjoy the icy thrill of wild swimming snowdonia. Remember, safety first, then adventure!\n\nSo, is wild swimming in Snowdonia for you? If you like a challenge, have a good level of fitness, and don't mind the cold, then absolutely. Just pack your wetsuit, a flask of tea, and a sense of adventure!",
+  "bestSeason": "June-September (for slightly less glacial waters)",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Llyn Idwal",
+      "slug": "llyn-idwal",
+      "description": "A classic Snowdonia swim. Llyn Idwal is a glacial lake nestled beneath the imposing cliffs of Y Garn and Tryfan. The relatively easy access and stunning scenery make it popular, but the water is always cold! Expect dramatic mountain views, a rocky shoreline, and a bracing dip.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours including walk",
+      "distance": "5km (round trip to lake)",
+      "elevationGain": "250m",
+      "bestFor": "Beginners, families, those seeking iconic Snowdonia scenery",
+      "notSuitableFor": "Those who dislike cold water, or prefer secluded swims on busy days",
+      "bestSeason": "June-September",
+      "parking": "Ogwen Cottage car park (LL57 3LZ). Can get very busy, arrive early (before 9am in summer). £6 for 3 hours, £8 for the day.",
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.112,
+        "lng": -4.008
+      },
+      "estimatedCost": "Free (parking £6-8)",
+      "operatorSlug": "null",
+      "insiderTip": "For a quieter experience, walk further around the lake to the far side. There's a small beach perfect for a picnic and a less crowded entry point."
+    },
+    {
+      "name": "Blue Lake (Dorothea Quarry)",
+      "slug": "blue-lake-dorothea-quarry",
+      "description": "The Blue Lake is an abandoned slate quarry filled with incredibly blue water. It's a dramatic and slightly eerie place to swim. Be aware of submerged machinery and cold, deep water. Not for the faint of heart!",
+      "difficulty": "Challenging",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced wild swimmers, those seeking a unique and dramatic swim, strong swimmers",
+      "notSuitableFor": "Beginners, children, those uncomfortable with deep water and potential hazards",
+      "bestSeason": "July-August (when it's *slightly* less cold)",
+      "parking": "Small, unmarked lay-by on the B4418 near Talysarn (LL54 6AE). Park responsibly and don't block access.",
+      "startPoint": {
+        "name": "Dorothea Quarry Layby",
+        "lat": 53.083,
+        "lng": -4.234
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": "null",
+      "insiderTip": "Scout your entry and exit points carefully. The slate edges can be slippery. Wear sturdy shoes for the walk down. This spot requires caution!"
+    },
+    {
+      "name": "Fairy Glen (Betws-y-Coed)",
+      "slug": "fairy-glen",
+      "description": "A magical gorge near Betws-y-Coed, the Fairy Glen offers a series of small, clear pools perfect for a refreshing dip. It's a less challenging swim than some of the mountain lakes, but the stunning woodland setting makes it worthwhile.",
+      "difficulty": "Moderate",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Those seeking a more gentle swim, families, photographers",
+      "notSuitableFor": "Those seeking long swims or open water",
+      "bestSeason": "June-September",
+      "parking": "Limited parking at the entrance to Fairy Glen (LL24 0SH). Charge applies. Alternative parking in Betws-y-Coed.",
+      "startPoint": {
+        "name": "Fairy Glen Entrance",
+        "lat": 53.095,
+        "lng": -3.803
+      },
+      "estimatedCost": "£2.50 entry fee per person",
+      "operatorSlug": "null",
+      "insiderTip": "Visit early in the morning or late in the afternoon to avoid crowds. The light is also best for photos then."
+    },
+    {
+      "name": "Llyn Gwynant",
+      "slug": "llyn-gwynant",
+      "description": "Llyn Gwynant is a larger lake in a beautiful valley offering stunning views of Snowdon. Good for longer swims and kayaking too. The water is clear and relatively calm, but still cold!",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Open water swimmers, kayakers, those seeking a longer swim with great views",
+      "notSuitableFor": "Those who prefer small, secluded pools",
+      "bestSeason": "July-August",
+      "parking": "Parking available along the roadside near the lake (LL55 4NW). Be respectful of residents and park responsibly.",
+      "startPoint": {
+        "name": "Llyn Gwynant roadside parking",
+        "lat": 53.036,
+        "lng": -4.005
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": "null",
+      "insiderTip": "The eastern end of the lake tends to be quieter. There's a campsite nearby if you want to make a weekend of it."
+    },
+    {
+      "name": "Llyn Dinas",
+      "slug": "llyn-dinas",
+      "description": "A smaller, more sheltered lake near Beddgelert. Llyn Dinas is a good option for a shorter swim, with easy access and beautiful views of the surrounding mountains. Legend says a lake monster lives here!",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families, those seeking a short and easy swim",
+      "notSuitableFor": "Those seeking a challenging swim or dramatic scenery",
+      "bestSeason": "June-September",
+      "parking": "Small car park at the southern end of the lake (LL55 4YG). Can get busy.",
+      "startPoint": {
+        "name": "Llyn Dinas Car Park",
+        "lat": 53.035,
+        "lng": -4.128
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": "null",
+      "insiderTip": "Walk along the old railway line for a quieter swim spot. There's a nice cafe in Beddgelert for a post-swim treat."
+    },
+    {
+      "name": "Aber Falls Plunge Pool",
+      "slug": "aber-falls-plunge-pool",
+      "description": "A popular spot for a quick dip at the base of the spectacular Aber Falls. The plunge pool is small and shallow, but the waterfall is stunning. Be careful of slippery rocks and strong currents.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours including walk",
+      "distance": "7km (round trip to falls)",
+      "elevationGain": "200m",
+      "bestFor": "Those seeking a refreshing dip after a walk, waterfall enthusiasts",
+      "notSuitableFor": "Those seeking a long swim or deep water",
+      "bestSeason": "June-September",
+      "parking": "Aber Falls car park (LL33 0LP). Charge applies.",
+      "startPoint": {
+        "name": "Aber Falls Car Park",
+        "lat": 53.233,
+        "lng": -3.986
+      },
+      "estimatedCost": "Parking fee applies",
+      "operatorSlug": "null",
+      "insiderTip": "The pool can get crowded on sunny days. Visit early or late to avoid the crowds. Take a towel and change of clothes as you'll get wet from the spray."
+    },
+    {
+      "name": "Llyn Crafnant",
+      "slug": "llyn-crafnant",
+      "description": "A remote and peaceful lake in the Gwydir Forest. Llyn Crafnant offers a tranquil swim with stunning views of the surrounding hills. It's a longer drive to reach, but well worth the effort for a secluded swim.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced wild swimmers, those seeking solitude and tranquility",
+      "notSuitableFor": "Beginners, those seeking easy access",
+      "bestSeason": "July-August",
+      "parking": "Small car park at the northern end of the lake (LL26 0LP).",
+      "startPoint": {
+        "name": "Llyn Crafnant Car Park",
+        "lat": 53.158,
+        "lng": -3.87
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": "null",
+      "insiderTip": "Bring a picnic and enjoy the peace and quiet after your swim. There are some lovely walking trails around the lake too."
+    },
+    {
+      "name": "Llyn Padarn",
+      "slug": "llyn-padarn",
+      "description": "A large lake next to Llanberis, popular with watersports enthusiasts. Llyn Padarn is a good option for a longer swim, with plenty of space to explore. The views of Snowdon are fantastic.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Open water swimmers, triathletes, those seeking a longer swim with good facilities",
+      "notSuitableFor": "Those seeking a secluded swim",
+      "bestSeason": "July-August",
+      "parking": "Numerous car parks in Llanberis (LL55 4EL). Charges apply.",
+      "startPoint": {
+        "name": "Llanberis Lake Railway",
+        "lat": 53.125,
+        "lng": -4.133
+      },
+      "estimatedCost": "Parking fees apply",
+      "operatorSlug": "null",
+      "insiderTip": "Swim from the far end of the lake for quieter waters. There's a good cafe near the lake for a post-swim coffee and cake."
+    },
+    {
+      "name": "Roman Bridge Pools",
+      "slug": "roman-bridge-pools",
+      "description": "Located near Dolwyddelan, these pools offer a secluded swim in a stunning, historic setting. The pools are small and shallow, but the surrounding scenery is beautiful. Perfect for a short, refreshing dip.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Those seeking a peaceful swim, history buffs, families",
+      "notSuitableFor": "Those seeking a long swim or deep water",
+      "bestSeason": "June-September",
+      "parking": "Limited roadside parking near the Roman Bridge (LL25 0TL). Park responsibly.",
+      "startPoint": {
+        "name": "Roman Bridge Dolwyddelan",
+        "lat": 53.057,
+        "lng": -3.854
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": "null",
+      "insiderTip": "Explore the surrounding woodland after your swim. The area is rich in history and wildlife."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The weather in Snowdonia is notoriously unpredictable. Even in summer, conditions can change rapidly, with sunshine turning to rain and strong winds in a matter of minutes. Check the forecast before you go and be prepared for all eventualities. Wind chill is a significant factor, especially at higher altitudes.",
+    "weatherLinks": [
+      {
+        "name": "Mountain Weather Information Service (MWIS)",
+        "url": "https://www.mwis.org.uk/"
+      },
+      {
+        "name": "Met Office Mountain Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain"
+      }
+    ],
+    "gearChecklist": [
+      "Wetsuit (essential, even in summer)",
+      "Neoprene gloves and socks (to combat the cold)",
+      "Swim cap (to retain heat)",
+      "Brightly coloured tow float (for visibility)",
+      "Warm layers (for before and after your swim)",
+      "Flask of hot drink (essential for warming up)",
+      "Towel (microfibre towels are lightweight and quick-drying)",
+      "Waterproof bag (to protect your valuables)",
+      "Sturdy footwear (for walking to and from the swim spot)",
+      "First-aid kit (including blister plasters)"
+    ],
+    "gearHire": [
+      {
+        "name": "Cotswold Outdoor",
+        "location": "Betws-y-Coed",
+        "url": "https://www.cotswoldoutdoor.com/stores/betws-y-coed.html"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5-6h",
+          "route": "Via M1 and A5"
+        },
+        {
+          "from": "Manchester",
+          "duration": "2-3h",
+          "route": "Via M56 and A55"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3-4h",
+          "route": "Via M6 and A5"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "3-4h",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "Bangor is the nearest train station to many Snowdonia locations. From Bangor, take the Sherpa bus service to various towns and villages within the national park. Local bus services also connect some of the smaller villages.",
+      "parkingTips": "Parking in Snowdonia can be limited, especially during peak season. Arrive early, park responsibly, and be prepared to walk. Some car parks are pay-and-display, so have change ready."
+    },
+    "safety": "Wild swimming in Snowdonia can be dangerous. Always swim with a buddy, check the water depth before entering, and be aware of submerged hazards. Be mindful of the cold water and its effects on your body. Warm up slowly after your swim and be aware of the signs of hypothermia. In an emergency, call 999 and ask for mountain rescue. Remember, mobile phone signal can be unreliable in some areas."
+  },
+  "faqs": [
+    {
+      "question": "What's the water temperature like in Snowdonia's lakes?",
+      "answer": "Even in summer, Snowdonia's lakes are cold, typically ranging from 8-15°C. A wetsuit is highly recommended for all but the most acclimatised swimmers."
+    },
+    {
+      "question": "Can I swim in Llyn Glaslyn (the 'Blue Lake' at the summit of Snowdon)?",
+      "answer": "While technically possible, swimming in Llyn Glaslyn is strongly discouraged due to its remote location, the extremely cold water, and the potential for environmental damage. It is a fragile ecosystem."
+    },
+    {
+      "question": "Are there any guided wild swimming tours in Snowdonia?",
+      "answer": "Yes, several operators offer guided wild swimming tours, including MUUK Adventures and occasionally Plas y Brenin (check their course schedule). These are a great option for beginners or those who want to explore the area with an experienced guide."
+    },
+    {
+      "question": "Are there any changing facilities or toilets near the swimming spots?",
+      "answer": "Facilities are limited. Some of the more popular spots, like Llyn Padarn and Aber Falls, have public toilets nearby. However, for most locations, you'll need to change outdoors. Pack a changing robe for privacy and warmth."
+    },
+    {
+      "question": "Is it safe to swim in the quarries?",
+      "answer": "Swimming in abandoned quarries like Dorothea Quarry can be dangerous. Be aware of submerged machinery, deep water, and potential for rockfalls. Assess the risks carefully before entering and swim with caution."
+    },
+    {
+      "question": "Do I need a permit to swim in Snowdonia's lakes?",
+      "answer": "No, you don't need a permit to swim in most of Snowdonia's lakes and rivers. However, be respectful of the environment and leave no trace. Avoid swimming in areas that are designated as nature reserves or have restricted access."
+    },
+    {
+      "question": "What should I do if I get into trouble while swimming?",
+      "answer": "If you get into trouble, try to stay calm and signal for help. If you're with a buddy, they should assist you. If you're alone, try to float on your back and conserve energy. If possible, make your way to shore. Once ashore, warm up quickly and seek medical attention if necessary. Remember, the emergency number is 999."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Joe Brown's",
+        "slug": "joe-browns",
+        "address": "Capel Curig, Betws-y-Coed LL24 0EE",
+        "lat": 53.111,
+        "lng": -3.914,
+        "description": "An iconic mountaineering shop, Joe Brown's is a must-visit for any outdoor enthusiast. They offer a wide range of gear and expert advice.",
+        "website": "https://www.joe-brown.com/",
+        "phone": "01690 720365",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "boot fitting"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 450
+      },
+      {
+        "name": "Siop Pinnacle",
+        "slug": "siop-pinnacle",
+        "address": "Llanberis, Caernarfon LL55 4HA",
+        "lat": 53.123,
+        "lng": -4.126,
+        "description": "A well-stocked gear shop in the heart of Llanberis, Siop Pinnacle is a great place to find everything you need for your Snowdonia adventures.",
+        "website": "https://www.siop-pinnacle.co.uk/",
+        "phone": "01286 870370",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 320
+      },
+      {
+        "name": "V12 Outdoor",
+        "slug": "v12-outdoor",
+        "address": "High Street, Llanberis LL55 4HB",
+        "lat": 53.124,
+        "lng": -4.127,
+        "description": "V12 Outdoor offers a great range of outdoor clothing and equipment, catering for climbers, walkers, and adventurers alike.",
+        "website": "https://v12outdoor.com/",
+        "phone": "01286 870432",
+        "services": [
+          "gear sales",
+          "clothing"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 280
+      },
+      {
+        "name": "Cotswold Outdoor",
+        "slug": "cotswold-outdoor-betws-y-coed",
+        "address": "Holyhead Road, Betws-y-Coed LL24 0AY",
+        "lat": 53.096,
+        "lng": -3.805,
+        "description": "Part of a national chain, this Betws-y-Coed branch offers a solid selection of outdoor gear, including swimwear and watersports accessories.",
+        "website": "https://www.cotswoldoutdoor.com/stores/betws-y-coed.html",
+        "phone": "01690 710766",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.4,
+        "reviewCount": 180
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Pete's Eats",
+        "slug": "petes-eats",
+        "address": "Llanberis, Caernarfon LL55 4ER",
+        "lat": 53.124,
+        "lng": -4.125,
+        "description": "A legendary climber's cafe in Llanberis, Pete's Eats is known for its giant portions and hearty meals. The perfect place to refuel after a swim.",
+        "vibe": "Climber-friendly cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Giant portions, Full Welsh breakfast"
+      },
+      {
+        "name": "Caffi Siabod",
+        "slug": "caffi-siabod",
+        "address": "Capel Curig, Betws-y-Coed LL24 0EE",
+        "lat": 53.11,
+        "lng": -3.914,
+        "description": "A popular cafe in Capel Curig, Caffi Siabod offers delicious homemade cakes, sandwiches, and soups. A great place to warm up after a swim in Llyn Idwal.",
+        "vibe": "Cosy cafe",
+        "priceRange": "££",
+        "website": "http://www.caffisiabod.com/",
+        "knownFor": "Homemade cakes, Soups"
+      },
+      {
+        "name": "Y Stablau",
+        "slug": "y-stablau",
+        "address": "Betws-y-Coed LL24 0AY",
+        "lat": 53.096,
+        "lng": -3.804,
+        "description": "A lovely cafe in the heart of Betws-y-Coed, Y Stablau offers a relaxed atmosphere and a delicious menu of Welsh dishes.",
+        "vibe": "Relaxed cafe",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Welsh dishes, Afternoon tea"
+      },
+      {
+        "name": "Gwydyr Hotel",
+        "slug": "gwydyr-hotel",
+        "address": "Betws-y-Coed LL24 0AB",
+        "lat": 53.094,
+        "lng": -3.802,
+        "description": "A historic hotel with a cosy bar and restaurant, the Gwydyr Hotel is a great place to relax and enjoy a pint of local ale after a swim.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "https://www.gwydyrhotel.com/",
+        "knownFor": "Real ales, Traditional pub food"
+      },
+      {
+        "name": "The Heights Hotel",
+        "slug": "the-heights-hotel",
+        "address": "Llanberis Pass, Nant Peris, Caernarfon LL55 4UY",
+        "lat": 53.1,
+        "lng": -4.05,
+        "description": "Boasting incredible views down the Llanberis Pass, The Heights Hotel offers a tasty menu and a warm welcome. Great for post-Llyn Idwal relaxation.",
+        "vibe": "Scenic pub",
+        "priceRange": "££",
+        "website": "https://www.theheightshotel.co.uk/",
+        "knownFor": "Views, hearty meals"
+      },
+      {
+        "name": "Hebog Cafe",
+        "slug": "hebog-cafe",
+        "address": "Beddgelert, Caernarfon LL55 4YB",
+        "lat": 53.027,
+        "lng": -4.124,
+        "description": "A charming cafe in the picturesque village of Beddgelert, Hebog Cafe is known for its delicious cakes and friendly service.",
+        "vibe": "Charming cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Cakes, Coffee"
+      },
+      {
+        "name": "Saracen's Head Hotel",
+        "slug": "saracens-head-hotel",
+        "address": "Beddgelert, Caernarfon LL55 4UY",
+        "lat": 53.025,
+        "lng": -4.121,
+        "description": "A traditional pub in Beddgelert, perfect for a warming drink after a swim in Llyn Dinas. Dog-friendly and offers hearty meals.",
+        "vibe": "Dog-friendly pub",
+        "priceRange": "££",
+        "website": "https://www.saracenshead.wales/",
+        "knownFor": "Local ales, Sunday roast"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Plas Curig Hostel",
+        "slug": "plas-curig-hostel",
+        "description": "A budget-friendly hostel in Capel Curig, close to Llyn Idwal and many other outdoor activities. Great for meeting fellow adventurers.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Llyn Idwal (5 mins drive)",
+        "website": "https://www.plascurig.com/"
+      },
+      {
+        "name": "Gwern Gof Isaf Campsite",
+        "slug": "gwern-gof-isaf-campsite",
+        "description": "A popular campsite in the Ogwen Valley, ideal for exploring the surrounding mountains and lakes. Perfect for wild swimming enthusiasts.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Llyn Idwal (10 mins walk)",
+        "website": "http://www.gwern-gof-isaf.co.uk/"
+      },
+      {
+        "name": "YHA Snowdon Pen-y-Pass",
+        "slug": "yha-snowdon-pen-y-pass",
+        "description": "A YHA hostel located at the foot of Snowdon, offering stunning views and easy access to the surrounding trails. Great for exploring Llyn Gwynant.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Llyn Gwynant (15 mins drive)",
+        "website": "https://www.yha.org.uk/hostel/yha-snowdon-pen-y-pass"
+      },
+      {
+        "name": "Royal Victoria Hotel",
+        "slug": "royal-victoria-hotel",
+        "description": "A historic hotel in Llanberis, offering comfortable rooms and a convenient location for exploring Llyn Padarn.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Llyn Padarn (5 mins drive)",
+        "website": "https://www.theroyalvictoria.co.uk/"
+      },
+      {
+        "name": "Bryn Tyrch Inn",
+        "slug": "bryn-tyrch-inn",
+        "description": "A traditional inn in Capel Curig, offering comfortable rooms and a cosy atmosphere. Perfect for a relaxing getaway after a day of wild swimming.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Llyn Idwal (5 mins drive)",
+        "website": "https://www.bryntyrchinn.co.uk/"
+      },
+      {
+        "name": "Llyn Gwynant Campsite",
+        "slug": "llyn-gwynant-campsite",
+        "description": "Riverside camping offering easy access to Llyn Gwynant and a lovely, relaxed atmosphere.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Llyn Gwynant (on site)",
+        "website": "https://www.lynngwynant.com/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Snowdonia Triathlon",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "A challenging triathlon set in the heart of Snowdonia, including an open water swim in Llyn Padarn.",
+      "website": "https://snowdonstriathlon.com/",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "registrationCost": 150
+    },
+    {
+      "name": "Llyn y Fan Fach Swim",
+      "type": "race",
+      "monthTypical": "August",
+      "description": "Although not in Snowdonia proper, this nearby open water swim in the Brecon Beacons is popular and scenic.",
+      "website": null,
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "registrationCost": 35
+    },
+    {
+      "name": "Swim Snowdonia",
+      "type": "race",
+      "monthTypical": "September",
+      "description": "Open water swim races of varying distances in Llyn Mair, Maentwrog.",
+      "website": "https://swimsnowdonia.co.uk/",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "registrationCost": 45
+    }
+  ],
+  "keywords": {
+    "primary": "wild swimming snowdonia",
+    "secondary": [
+      "wild swimming wales",
+      "snowdonia swimming spots",
+      "open water swimming snowdonia",
+      "snowdonia lake swimming",
+      "snowdonia waterfall swimming"
+    ],
+    "longTail": [
+      "best places for wild swimming in snowdonia national park",
+      "safe wild swimming spots snowdonia",
+      "wild swimming llyn idwal",
+      "wild swimming dorothea quarry",
+      "wild swimming fairy glen snowdonia",
+      "guided wild swimming snowdonia",
+      "wild swimming wetsuit snowdonia",
+      "wild swimming snowdonia beginners",
+      "wild swimming near llanberis",
+      "wild swimming snowdonia map"
+    ],
+    "localIntent": [
+      "wild swimming near llanberis",
+      "wild swimming near betws-y-coed",
+      "wild swimming near beddgelert",
+      "wild swimming near snowdon",
+      "wild swimming near bangor"
+    ],
+    "commercialIntent": [
+      "guided wild swimming snowdonia",
+      "wild swimming tours snowdonia",
+      "wetsuit hire snowdonia",
+      "wild swimming snowdonia price",
+      "book wild swimming snowdonia"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "brecon-beacons",
+        "label": "Wild Swimming in Brecon Beacons"
+      },
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Wild Swimming in Pembrokeshire"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "climbing",
+        "label": "Climbing in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "adventure-activities",
+        "label": "Adventure Activities in Snowdonia"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Plas y Brenin",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Capel Curig, Betws-y-Coed LL24 0ET",
+      "postcode": "LL24 0ET",
+      "lat": 53.1034,
+      "lng": -3.9114,
+      "phone": "01690 720214",
+      "website": "https://www.pyb.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 720,
+      "description": "The National Mountain Sports Centre, offering a wide range of outdoor activities including kayaking which is relevant to wild swimming locations.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "kayaking courses",
+        "equipment hire",
+        "accommodation"
+      ],
+      "priceRange": "£££",
+      "notes": "National centre, established reputation, instructor-led activities.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Joe Brown's",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Menai Hall, Llanberis, Caernarfon LL55 4ER",
+      "postcode": "LL55 4ER",
+      "lat": 53.1256,
+      "lng": -4.1295,
+      "phone": "01286 870327",
+      "website": "https://www.joe-brown.com/",
+      "googleRating": 4.6,
+      "reviewCount": 470,
+      "description": "Iconic outdoor gear shop selling equipment suitable for wild swimming, including wetsuits and safety equipment.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "wetsuits",
+        "tow floats",
+        "changing robes",
+        "expert advice"
+      ],
+      "priceRange": "££",
+      "notes": "Well-known, reputable brand. Large selection of outdoor gear.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Siop Pinnacle",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "11 Stryd y Ffynnon, Llanberis, Caernarfon LL55 4HA",
+      "postcode": "LL55 4HA",
+      "lat": 53.1254,
+      "lng": -4.1325,
+      "phone": "01286 872888",
+      "website": "https://www.siop-pinnacle.co.uk/",
+      "googleRating": 4.7,
+      "reviewCount": 110,
+      "description": "Independent outdoor gear shop offering a good range of equipment for swimming and other outdoor adventures.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "wetsuits",
+        "tow floats",
+        "changing robes",
+        "friendly service"
+      ],
+      "priceRange": "££",
+      "notes": "Alternative to Joe Brown's, good for finding deals.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Pete's Eats",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "41 High Street, Llanberis, Caernarfon LL55 4EU",
+      "postcode": "LL55 4EU",
+      "lat": 53.1247,
+      "lng": -4.1306,
+      "phone": "01286 870591",
+      "website": "https://petes-eats.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 2100,
+      "description": "Legendary cafe providing hearty meals and drinks, perfect for refueling after a swim.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "breakfast",
+        "lunch",
+        "hot drinks",
+        "cake"
+      ],
+      "priceRange": "£",
+      "notes": "Very popular, expect queues at peak times.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Caffi Siabod",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Capel Curig, Betws-y-Coed LL24 0EE",
+      "postcode": "LL24 0EE",
+      "lat": 53.1036,
+      "lng": -3.9161,
+      "phone": "01690 720207",
+      "website": "https://www.facebook.com/CaffiSiabod/",
+      "googleRating": 4.5,
+      "reviewCount": 240,
+      "description": "A warm and welcoming cafe in Capel Curig, great for a post-swim hot chocolate and some tasty food.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "hot drinks",
+        "light meals",
+        "cakes"
+      ],
+      "priceRange": "£",
+      "notes": "Good location, convenient after swimming in nearby lakes.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Llyn Ogwen",
+      "type": "attraction",
+      "category": "none",
+      "address": "Llyn Ogwen, Bethesda, Bangor LL57 3LZ",
+      "postcode": "LL57 3LZ",
+      "lat": 53.1278,
+      "lng": -4.0127,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.7,
+      "reviewCount": 2200,
+      "description": "A stunning lake known for its beauty and accessibility, popular for wild swimming.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [],
+      "priceRange": "£",
+      "notes": "Popular spot, can get busy, parking available.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Llyn Padarn",
+      "type": "attraction",
+      "category": "none",
+      "address": "Llanberis, Caernarfon LL55 4EL",
+      "postcode": "LL55 4EL",
+      "lat": 53.1191,
+      "lng": -4.1483,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.7,
+      "reviewCount": 1200,
+      "description": "A large lake offering opportunities for wild swimming with views of the surrounding mountains.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [],
+      "priceRange": "£",
+      "notes": "Easy access, but be mindful of boat traffic.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Llyn Llydaw",
+      "type": "attraction",
+      "category": "none",
+      "address": "Snowdon, Gwynedd LL55 4NU",
+      "postcode": "LL55 4NU",
+      "lat": 53.0722,
+      "lng": -4.0774,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.7,
+      "reviewCount": 300,
+      "description": "A high mountain lake offering a challenging but rewarding wild swimming experience.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [],
+      "priceRange": "£",
+      "notes": "Requires a hike to reach, suitable for experienced swimmers.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "River Glaslyn",
+      "type": "attraction",
+      "category": "none",
+      "address": "Beddgelert, Gwynedd",
+      "postcode": "LL55",
+      "lat": 53.0022,
+      "lng": -4.0933,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.5,
+      "reviewCount": 50,
+      "description": "A river offering various spots for wild swimming, with clear water and beautiful surroundings.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [],
+      "priceRange": "£",
+      "notes": "Check water levels and currents before swimming.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "MUUK Adventures",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Penrhosgarnedd, Bangor, Gwynedd, LL57",
+      "postcode": "LL57",
+      "lat": 53.2222,
+      "lng": -4.1833,
+      "phone": null,
+      "website": "https://muukadventures.com/",
+      "googleRating": 5.0,
+      "reviewCount": 2,
+      "description": "Adventure company that may offer bespoke wild swimming experiences as part of broader adventure packages. Enquire for details.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "guided wild swimming (enquire)",
+        "adventure packages"
+      ],
+      "priceRange": "££",
+      "notes": "Check specifically if they offer wild swimming.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Y Stablau",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Holyhead Rd, Betws-y-Coed LL24 0AY",
+      "postcode": "LL24 0AY",
+      "lat": 53.0994,
+      "lng": -3.8051,
+      "phone": "01690 710219",
+      "website": "https://www.ystablau.co.uk/",
+      "googleRating": 4.3,
+      "reviewCount": 800,
+      "description": "A cosy restaurant in Betws-y-Coed, perfect for a warm meal and drink after a swim.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "restaurant",
+        "bar",
+        "food",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "Good reputation, popular with tourists.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Gwydyr Hotel",
+      "type": "venue",
+      "category": "accommodation",
+      "address": "Holyhead Rd, Betws-y-Coed LL24 0AB",
+      "postcode": "LL24 0AB",
+      "lat": 53.1003,
+      "lng": -3.8038,
+      "phone": "01690 710777",
+      "website": "https://www.gwydyrhotel.com/",
+      "googleRating": 4.2,
+      "reviewCount": 500,
+      "description": "A hotel in Betws-y-Coed offering accommodation for those wishing to explore local swim spots. It has a nice bar and restaurant.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "accommodation",
+        "restaurant",
+        "bar"
+      ],
+      "priceRange": "£££",
+      "notes": "Convenient location, good facilities.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Snowdonia Watersports",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Llyn Gwynant, Nant Gwynant, Caernarfon LL55 4NW",
+      "postcode": "LL55 4NW",
+      "lat": 53.0521,
+      "lng": -4.0385,
+      "phone": "01766 890700",
+      "website": "https://snowdoniawatersports.com/",
+      "googleRating": 4.5,
+      "reviewCount": 150,
+      "description": "Watersports centre on Llyn Gwynant, offering open water swimming coaching and access to the lake.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "open water swimming",
+        "kayaking",
+        "canoeing"
+      ],
+      "priceRange": "££",
+      "notes": "Good location and access to Llyn Gwynant",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "National Trust Hafod Eryri (Snowdon Summit)",
+      "type": "attraction",
+      "category": "none",
+      "address": "Snowdon Summit, Llanberis, Gwynedd LL55 4TY",
+      "postcode": "LL55 4TY",
+      "lat": 53.0682,
+      "lng": -4.0766,
+      "phone": null,
+      "website": "https://www.nationaltrust.org.uk/hafod-eryri",
+      "googleRating": 4.2,
+      "reviewCount": 2500,
+      "description": "Cafe at the top of Snowdon, not swimming itself, but a place for a celebratory drink and snack after a long walk and swim in Llyn Llydaw.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "cafe",
+        "viewpoint"
+      ],
+      "priceRange": "£",
+      "notes": "At summit after swim, dependent on weather/train.",
+      "inDatabase": false,
+      "priority": "low"
+    }
+  ]
+}

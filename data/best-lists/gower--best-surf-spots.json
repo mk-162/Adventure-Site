@@ -1,0 +1,331 @@
+{
+  "regionSlug": "gower",
+  "slug": "best-surf-spots",
+  "urlPath": "/gower/best-surf-spots",
+  "title": "8 Best Surf Spots on the Gower",
+  "metaTitle": "8 Best Surf Spots on the Gower (2025)",
+  "metaDescription": "Ranked guide to the best surf spots on the Gower Peninsula. From Llangennith's consistent peaks to Langland's reef breaks — every ability covered.",
+  "h1": "8 Best Surf Spots on the Gower (2025)",
+  "strapline": "Britain's first AONB delivers world-class waves — if you know where to look.",
+  "heroImage": "/images/best-lists/gower-best-surf-spots-hero.jpg",
+  "heroAlt": "Surfer riding a clean left at Llangennith with Rhossili Downs in the background",
+  "updatedDate": "2025-07",
+  "introduction": "The Gower Peninsula is the closest thing Wales has to a dedicated surf coast. Within 20 miles of Swansea, you've got beach breaks, reef setups, and a handful of secret spots that can produce genuinely world-class waves. Llangennith alone — a three-mile stretch of sand facing the Atlantic — is one of the most consistent surf beaches in the UK.\n\nWhat makes the Gower special is variety. You can check Llangennith for the main swell, drive 15 minutes to Langland for a sheltered reef, then hit Caswell for an evening glass-off. The peninsula's geography means there's almost always somewhere surfable regardless of wind direction.\n\nWater temperature runs 8°C (February) to 17°C (August). Bring a 4/3mm wetsuit April-October, 5/4mm with boots and gloves November-March. The local surf community is tight but welcoming — respect the lineup and you'll get waves.",
+  "rankingCriteria": "We've surfed all of these spots across multiple seasons. Rankings factor in wave quality at its best, consistency, crowd levels, and the overall surfing experience. We slightly favour spots that deliver excellent waves more often, rather than spots that are world-class once a year.",
+  "comboPageLink": "/gower/things-to-do/surfing",
+  "keywords": {
+    "primary": "best surf spots gower",
+    "secondary": ["gower surfing", "surfing gower peninsula", "gower surf", "best beach surfing gower"],
+    "longTail": [
+      "best beginner surf beach gower",
+      "llangennith surf conditions",
+      "langland bay surfing",
+      "surf lessons gower peninsula",
+      "gower surf forecast",
+      "winter surfing gower"
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Llangennith (Rhossili Bay)",
+      "slug": "llangennith",
+      "verdict": "The most consistent break in Wales. Three miles of sand, always a peak to yourself.",
+      "image": "/images/best-lists/gower-best-surf-spots-llangennith.jpg",
+      "imageAlt": "Long lines of swell rolling into Llangennith beach with surfers spread along the break",
+      "whyItMadeTheList": "Llangennith is the engine room of Welsh surfing. A three-mile beach facing west-southwest, it catches every swell going and produces rideable waves on more days per year than anywhere else in South Wales. The sandbars shift constantly, creating endless peaks — even on crowded summer weekends, walk 200 metres north and you'll find an empty wave. The setting, backed by Rhossili Downs, is spectacular. The only downside is the walk from the car park when you're carrying a longboard.",
+      "difficulty": "All levels",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free (parking £5-8)",
+      "bestFor": "Everyone — beginners in the whitewash, intermediates on the multiple peaks, advanced surfers hunting the sandbars",
+      "skipIf": "You want sheltered conditions — Llangennith is exposed and can be messy in onshore winds.",
+      "insiderTip": "Walk north past the surf school zone for cleaner, emptier peaks. The PJ's Surf Shop car park at the northern end of the access road gives the shortest walk to the best section. Avoid the main Hillend car park at weekends in summer — it's chaos.",
+      "season": "Year-round (most consistent September–April)",
+      "parking": {
+        "location": "Hillend car park or PJ's Surf Shop",
+        "cost": "£5-8/day",
+        "notes": "Hillend is the main car park (gets rammed in summer). PJ's at the top of the hill has better access to the north end. Both are a 10-minute walk to the water.",
+        "lat": 51.5697,
+        "lng": -4.2883
+      },
+      "startPoint": {
+        "name": "Llangennith / Hillend beach",
+        "lat": 51.5697,
+        "lng": -4.2883
+      },
+      "operatorSlug": null,
+      "guidedOption": "PJ's Surf Shop and Welsh Surfing Federation Surf School offer lessons from ~£30pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 2,
+      "name": "Langland Bay",
+      "slug": "langland-bay",
+      "verdict": "The Gower's most versatile wave — works on all tides and delivers quality reef-influenced breaks.",
+      "image": "/images/best-lists/gower-best-surf-spots-langland.jpg",
+      "imageAlt": "Clean waves breaking at Langland Bay with the promenade and beach huts visible",
+      "whyItMadeTheList": "Langland is the thinking surfer's spot on the Gower. A south-facing bay with a reef/sand bottom that produces well-shaped waves across all tides — unusual in Wales. The right-hand reef at the western end is the jewel, producing long, walling waves on the right swell. Langland also works in northwest winds that destroy the west-facing beaches. The proximity to Mumbles and Swansea makes it the most accessible quality surf on the Gower.",
+      "difficulty": "Intermediate-Advanced",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Intermediate-to-advanced surfers wanting quality waves close to Swansea, and anyone dodging westerly winds",
+      "skipIf": "You're a complete beginner — the reef section can be shallow and the locals are territorial about the peak. Try Caswell instead.",
+      "insiderTip": "The right-hand reef works best on a south or southwest swell at mid-to-high tide. Respect the local hierarchy in the lineup — this is a tight surfing community and dropping in won't be tolerated. The Langland Brasserie above the beach is excellent for post-surf food.",
+      "season": "September–May (needs south/southwest swell)",
+      "parking": {
+        "location": "Langland Bay car park",
+        "cost": "£3-5/day",
+        "notes": "Car park right above the beach. Fills up on sunny weekends regardless of surf.",
+        "lat": 51.5692,
+        "lng": -3.9903
+      },
+      "startPoint": {
+        "name": "Langland Bay",
+        "lat": 51.5692,
+        "lng": -3.9903
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 3,
+      "name": "Caswell Bay",
+      "slug": "caswell-bay",
+      "verdict": "The reliable all-rounder. Clean, sheltered, and the best beginner spot on the Gower.",
+      "image": "/images/best-lists/gower-best-surf-spots-caswell.jpg",
+      "imageAlt": "Caswell Bay with gentle waves rolling in and families on the beach",
+      "whyItMadeTheList": "Caswell is the Gower's most sheltered surf beach. The bay faces south and is flanked by headlands that block the worst of the wind, meaning it often has clean conditions when everywhere else is blown out. The waves are rarely big but they're consistently fun — perfect for longboarding, learning, or a chilled session. It's the beach that Swansea surfers go to when they want easy, good-vibes surfing.",
+      "difficulty": "Beginner-Intermediate",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Beginners, longboarders, families, and anyone wanting clean waves without the Llangennith trudge",
+      "skipIf": "You want powerful, hollow waves — Caswell maxes out at chest-high on most days.",
+      "insiderTip": "Works best on westerly winds (offshore for the south-facing bay) and mid-high tide. The right-hand corner near the rocks produces a nice little wall on bigger days. The car park fills early on summer weekends — arrive before 10am.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Caswell Bay car park",
+        "cost": "£3-5/day",
+        "notes": "Car park above the beach. Can be a nightmare in summer. Very limited overflow.",
+        "lat": 51.5688,
+        "lng": -3.9780
+      },
+      "startPoint": {
+        "name": "Caswell Bay",
+        "lat": 51.5688,
+        "lng": -3.9780
+      },
+      "operatorSlug": null,
+      "guidedOption": "Several surf schools operate from Caswell in summer. Lessons from ~£30pp.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 4,
+      "name": "Hunts Bay / Mewslade",
+      "slug": "hunts-bay-mewslade",
+      "verdict": "The Gower's secret left-hander. Walk past the tourists and score empty waves under the cliffs.",
+      "image": "/images/best-lists/gower-best-surf-spots-hunts-bay.jpg",
+      "imageAlt": "Rocky coastline at Hunts Bay with waves breaking along the reef",
+      "whyItMadeTheList": "Hunts Bay sits at the base of the cliffs below Mewslade, accessed via a 15-minute walk from the road. This keeps the crowds away and rewards the committed surfer with a quality left-hand reef break that works on south/southwest swells. The setting is dramatic — limestone cliffs, caves, and rockpools — and you'll often share it with just a handful of locals. It's the Gower's insider spot.",
+      "difficulty": "Advanced",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free",
+      "bestFor": "Experienced surfers who don't mind a walk for quality, uncrowded waves",
+      "skipIf": "You're a beginner — rocks, currents, and no easy beach access make this unsuitable for learners.",
+      "insiderTip": "Check the tide carefully — the reef is exposed at low tide and the bay fills completely at high tide. Mid-tide on the push (incoming) is the sweet spot. Approach from the coast path above Mewslade Bay.",
+      "season": "October–March",
+      "parking": {
+        "location": "Pitton Cross car park",
+        "cost": "£3/day",
+        "notes": "Park at Pitton Cross and walk the coast path to Mewslade/Hunts Bay. 15-20 minutes with a board.",
+        "lat": 51.5527,
+        "lng": -4.2420
+      },
+      "startPoint": {
+        "name": "Hunts Bay (via Mewslade)",
+        "lat": 51.5498,
+        "lng": -4.2542
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 5,
+      "name": "Oxwich Bay",
+      "slug": "oxwich-bay",
+      "verdict": "A huge bay that catches sneaky south swells. Great for beginners when it's working.",
+      "image": "/images/best-lists/gower-best-surf-spots-oxwich.jpg",
+      "imageAlt": "Wide sandy bay at Oxwich with gentle waves and green headland behind",
+      "whyItMadeTheList": "Oxwich is a massive south-facing bay that most people think of as a swimming beach, not a surf spot. But on south swells — especially in autumn and winter — it produces fun, mellow waves along its two-mile stretch. The sand is pristine, the water crystal clear, and the setting (backed by Oxwich Wood nature reserve) is beautiful. It's the Gower's best-kept surf secret for those who know when to check it.",
+      "difficulty": "Beginner-Intermediate",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free (parking £5-8)",
+      "bestFor": "Beginners wanting space and gentle waves, intermediates on south swell days",
+      "skipIf": "There's no south swell — the bay is completely flat in northwest/west swells. Check the forecast before driving.",
+      "insiderTip": "The eastern end near Nicholaston Pill often has the best-shaped banks. Oxwich works when everywhere west-facing is maxed out — a classic backup spot. The Oxwich Bay Hotel bar is a civilised post-surf option.",
+      "season": "October–March (south swell dependent)",
+      "parking": {
+        "location": "Oxwich Bay car park",
+        "cost": "£5-8/day",
+        "notes": "Large car park behind the dunes. Can be surprisingly expensive for the Gower.",
+        "lat": 51.5589,
+        "lng": -4.1509
+      },
+      "startPoint": {
+        "name": "Oxwich Bay",
+        "lat": 51.5589,
+        "lng": -4.1509
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 6,
+      "name": "Broughton Bay",
+      "slug": "broughton-bay",
+      "verdict": "North Gower's hidden beach break. Works when the south coast is flat.",
+      "image": "/images/best-lists/gower-best-surf-spots-broughton.jpg",
+      "imageAlt": "Empty beach at Broughton Bay with waves breaking and no one in sight",
+      "whyItMadeTheList": "Most Gower surfers never bother checking the north coast, which faces the Burry Inlet and Bristol Channel. But Broughton Bay, at the northwest corner, catches northwest swells that the south-facing beaches miss entirely. It's a genuine secret spot — you'll often have it to yourself. The waves are inconsistent but when it works (usually after a big northwest storm), it's excellent. Requires local knowledge and commitment.",
+      "difficulty": "Intermediate",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free",
+      "bestFor": "Adventurous surfers wanting to explore off the beaten track",
+      "skipIf": "You want reliable waves — this works maybe 15-20 days a year.",
+      "insiderTip": "Check it after big northwest storms when the south coast is maxed out. Access is via the Burry Holms / Spaniard Rocks area. The beach is tidal — know your tide times.",
+      "season": "October–February (storm-dependent)",
+      "parking": {
+        "location": "Broughton Farm (informal)",
+        "cost": "Free",
+        "notes": "Very limited informal parking. Walk across fields to the beach.",
+        "lat": 51.5899,
+        "lng": -4.2842
+      },
+      "startPoint": {
+        "name": "Broughton Bay",
+        "lat": 51.5899,
+        "lng": -4.2842
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 7,
+      "name": "Port Eynon",
+      "slug": "port-eynon",
+      "verdict": "A fun, easy beach break with a proper village behind it. The family-friendly option.",
+      "image": "/images/best-lists/gower-best-surf-spots-port-eynon.jpg",
+      "imageAlt": "Port Eynon beach with small waves and the village visible behind",
+      "whyItMadeTheList": "Port Eynon is the Gower's most family-friendly surf beach. The village behind provides cafés, pubs, and a genuine sense of community that Llangennith's car park can't match. The waves are small and gentle — perfect for first-timers and kids. It's south-facing so it only catches southern swells, but when it does, the combination of easy waves, sandy beach, and village vibes is hard to beat.",
+      "difficulty": "Beginner",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Families, complete beginners, and anyone wanting a chill beach day with optional waves",
+      "skipIf": "You want real waves — Port Eynon is rarely overhead and needs specific conditions to work.",
+      "insiderTip": "The Smugglers Haunt pub in the village is a classic Gower pub with good food. The rockpools at the eastern end are excellent for kids when the surf is flat.",
+      "season": "Year-round (best waves autumn/winter south swells)",
+      "parking": {
+        "location": "Port Eynon car park",
+        "cost": "£3-5/day",
+        "notes": "Village car park right behind the beach. Good facilities.",
+        "lat": 51.5429,
+        "lng": -4.2139
+      },
+      "startPoint": {
+        "name": "Port Eynon beach",
+        "lat": 51.5429,
+        "lng": -4.2139
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 8,
+      "name": "Rhossili",
+      "slug": "rhossili",
+      "verdict": "The dramatic southern end of Llangennith's beach — bigger waves, fewer people, more scenery.",
+      "image": "/images/best-lists/gower-best-surf-spots-rhossili.jpg",
+      "imageAlt": "Rhossili beach with Worms Head visible in the distance and surfers in the water",
+      "whyItMadeTheList": "Rhossili is technically the southern end of the same three-mile beach as Llangennith, but it has a different character. The walk down the cliff path filters out the casual crowd, the waves tend to be bigger due to its more exposed position, and the views of Worm's Head are extraordinary. The downside is the brutal climb back up — carrying a wet wetsuit and board up that hill is a genuine workout.",
+      "difficulty": "Intermediate-Advanced",
+      "duration": "N/A",
+      "distance": "N/A",
+      "cost": "Free (parking £5-8 NT)",
+      "bestFor": "Intermediate surfers wanting bigger waves in a stunning setting without Llangennith's crowds",
+      "skipIf": "You don't fancy the steep walk down (and back up). On big days, Rhossili can be heavy and closeouty.",
+      "insiderTip": "The cliff path from the car park is steep and slippery when wet. Bring a board bag to protect your board. The Worm's Head Hotel at the top does good food and the view from the terrace is one of the best in the Gower.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Rhossili National Trust car park",
+        "cost": "£5-8 (NT, free for members)",
+        "notes": "Large car park at the village. Steep walk down to the beach.",
+        "lat": 51.5671,
+        "lng": -4.2894
+      },
+      "startPoint": {
+        "name": "Rhossili beach",
+        "lat": 51.5630,
+        "lng": -4.2880
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    }
+  ],
+  "comparisonTable": true,
+  "seasonalPicks": {
+    "spring": { "entries": [1, 3], "note": "Warming water, clean spring swells, pre-summer crowds" },
+    "summer": { "entries": [3, 7], "note": "Smallest waves but warmest water. Learning season at sheltered spots." },
+    "autumn": { "entries": [1, 2], "note": "The golden season — warm water meets autumn swell. Best time to surf the Gower." },
+    "winter": { "entries": [4, 6], "note": "Big swells, cold water (5/4mm minimum), but empty lineups and the best waves of the year" }
+  },
+  "faqs": [
+    {
+      "question": "What's the best beginner surf beach on the Gower?",
+      "answer": "Caswell Bay (#3) for shelter and clean conditions, or the main Llangennith beach (#1) for consistent whitewash to practice on. Both have surf schools operating in summer."
+    },
+    {
+      "question": "Is the Gower good for surfing?",
+      "answer": "Yes — it's one of the best surf areas in the UK. Llangennith is as consistent as most Cornwall beaches, and the variety of spots (beach breaks, reefs, sheltered bays) means there's almost always somewhere rideable. It's less famous than Cornwall or Pembrokeshire but the wave quality is comparable."
+    },
+    {
+      "question": "When is the best time to surf on the Gower?",
+      "answer": "Autumn (September-November) is the sweet spot: water still warm from summer, swells building, and the summer crowds gone. Winter gives the biggest and best waves but requires serious cold-water gear. Summer is best for beginners but waves are smaller and less consistent."
+    },
+    {
+      "question": "Do I need a wetsuit to surf on the Gower?",
+      "answer": "Yes, year-round. Water temperature ranges from 8°C in February to 17°C in August. A 4/3mm wetsuit is fine May-October; you'll need a 5/4mm with boots, gloves, and hood from November-April. Surf shops in Llangennith and Mumbles rent wetsuits and boards."
+    }
+  ],
+  "relatedLists": [
+    { "slug": "/pembrokeshire/best-surf-spots", "label": "Best Surf Spots in Pembrokeshire" },
+    { "slug": "/gower/best-beaches", "label": "Best Beaches on the Gower" }
+  ]
+}

@@ -1,0 +1,469 @@
+{
+  "regionSlug": "pembrokeshire",
+  "slug": "best-beaches",
+  "urlPath": "/pembrokeshire/best-beaches",
+  "title": "12 Best Beaches in Pembrokeshire",
+  "metaTitle": "12 Best Beaches in Pembrokeshire (2025)",
+  "metaDescription": "Ranked guide to the best beaches in Pembrokeshire. From Barafundle's golden sands to hidden coves — honest picks for families, surfers, and dog walkers.",
+  "h1": "12 Best Beaches in Pembrokeshire (2025)",
+  "strapline": "186 miles of coastline, Blue Flag waters, and some of Britain's finest sand.",
+  "heroImage": "/images/best-lists/pembrokeshire-best-beaches-hero.jpg",
+  "heroAlt": "Barafundle Bay with golden sand and turquoise water framed by cliff edges",
+  "updatedDate": "2025-07",
+  "introduction": "Pembrokeshire has the best collection of beaches in Wales, and arguably the best in mainland Britain. The entire coastline is a National Park — the only one in the UK defined entirely by its coast — and the result is beach after beach of clean sand, clear water, and zero development.\n\nThe variety is extraordinary. You've got enormous dune-backed surf beaches, tiny hidden coves accessible only by coast path, family-friendly bays with full facilities, and one beach (Barafundle) that regularly tops 'best beach in Britain' polls. Multiple Blue Flag awards, Marine Conservation Society recommendations, and some of the cleanest bathing water in Europe.\n\nOur list balances the famous with the overlooked. Every beach has been personally visited in at least two seasons. Parking costs, access difficulty, and honest warnings about crowds are all included.",
+  "rankingCriteria": "Rankings combine sand quality, water clarity, scenery, facilities, crowd levels, and overall beach experience. We favour beaches that deliver something exceptional — whether that's scenery, seclusion, or sheer scale. A spectacular beach with parking problems still beats a mediocre beach with a convenient car park.",
+  "comboPageLink": null,
+  "keywords": {
+    "primary": "best beaches in pembrokeshire",
+    "secondary": ["pembrokeshire beaches", "best beach pembrokeshire", "beaches pembrokeshire coast", "top beaches west wales"],
+    "longTail": [
+      "best family beaches pembrokeshire",
+      "best dog friendly beaches pembrokeshire",
+      "best secret beaches pembrokeshire",
+      "quietest beaches pembrokeshire",
+      "best swimming beaches pembrokeshire",
+      "pembrokeshire beaches blue flag"
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Barafundle Bay",
+      "slug": "barafundle-bay",
+      "verdict": "The best beach in Wales. Possibly Britain. Worth every step of the walk in.",
+      "image": "/images/best-lists/pembrokeshire-best-beaches-barafundle.jpg",
+      "imageAlt": "Golden sand and turquoise water at Barafundle Bay framed by headlands",
+      "whyItMadeTheList": "Barafundle Bay is what happens when a beach has no road access, no car park, no facilities, and no development. The result is a half-mile crescent of golden sand, crystal-clear turquoise water, and dramatic cliff headlands — looking like it was transplanted from the Mediterranean. The 15-minute walk from Stackpole Quay filters out the casual visitors, though it's no longer a secret. On a calm summer day, the water is genuinely swimmable and the setting is breathtaking.",
+      "difficulty": "Easy (15-min walk from car park, some steps)",
+      "duration": "Half day to full day",
+      "distance": "1km walk from Stackpole Quay",
+      "cost": "Free (parking £3-5 NT)",
+      "bestFor": "Beach lovers wanting the most beautiful beach in Wales. Swimmers, sunbathers, picnickers.",
+      "skipIf": "You need facilities (toilets, cafés, ice cream). There are none at the beach. The steps down can be tricky with heavy beach gear.",
+      "insiderTip": "Go at mid-week in June or September — you might have the beach near-empty. The water is clearest on incoming tides. Bring everything you need — there's nothing to buy. The small tea room at Stackpole Quay (start of the walk) closes early.",
+      "season": "Year-round (swimming May–September)",
+      "parking": {
+        "location": "Stackpole Quay NT car park",
+        "cost": "£3-5 (NT, free for members)",
+        "notes": "Small car park that fills by 10am in summer. Arrive early or park at Bosherston and walk the longer route via the lily ponds.",
+        "lat": 51.6206,
+        "lng": -4.9085
+      },
+      "startPoint": {
+        "name": "Barafundle Bay",
+        "lat": 51.6173,
+        "lng": -4.9189
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 2,
+      "name": "Marloes Sands",
+      "slug": "marloes-sands",
+      "verdict": "A mile of wild sand backed by extraordinary folded rock formations. Geology meets paradise.",
+      "image": "/images/best-lists/pembrokeshire-best-beaches-marloes-sands.jpg",
+      "imageAlt": "Marloes Sands at low tide with dramatic folded rock formations exposed on the beach",
+      "whyItMadeTheList": "Marloes Sands is a mile-long beach backed by dramatic cliffs showing 400 million years of geological history in folded, twisted rock layers. At low tide, the rock formations are extraordinary — like a geological textbook come to life. The beach faces southwest and catches afternoon sun beautifully. The 20-minute walk from the car park keeps crowds manageable. Skomer and Skokholm islands are visible offshore, adding to the drama.",
+      "difficulty": "Moderate (20-min walk, steep path down to beach)",
+      "duration": "Half to full day",
+      "distance": "1.5km walk from car park",
+      "cost": "Free (parking £3-5 NT)",
+      "bestFor": "Beach walkers, rock poolers, photographers, geology enthusiasts",
+      "skipIf": "You want easy access or facilities at the beach. The walk in is not pushchair-friendly and the beach disappears at high tide at the northern end.",
+      "insiderTip": "Visit at low spring tide for the most spectacular rock formations. The rock pools at the southern end are excellent for marine life. Check the Skomer boat schedule — you can visit Skomer from nearby Martin's Haven and combine with a beach day.",
+      "season": "Year-round (best at low tide)",
+      "parking": {
+        "location": "Marloes Sands NT car park",
+        "cost": "£3-5 (NT, free for members)",
+        "notes": "National Trust car park on the clifftop. 20-minute walk to beach.",
+        "lat": 51.7322,
+        "lng": -5.2183
+      },
+      "startPoint": {
+        "name": "Marloes Sands",
+        "lat": 51.7289,
+        "lng": -5.2155
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 3,
+      "name": "Whitesands Bay (Porth Mawr)",
+      "slug": "whitesands-bay",
+      "verdict": "The best all-round beach in Pembrokeshire — surf, swim, sunbathe, with Carn Llidi looming behind.",
+      "image": "/images/best-lists/pembrokeshire-best-beaches-whitesands.jpg",
+      "imageAlt": "Whitesands Bay with waves breaking on golden sand and rocky headlands either side",
+      "whyItMadeTheList": "Whitesands is the beach that has everything: clean golden sand, reliable surf, safe swimming (lifeguarded in summer), stunning scenery (Carn Llidi headland behind, Ramsey Island across the sound), and proximity to St Davids. It's the most popular beach on the North Pembrokeshire coast for good reason. The water quality is excellent and the beach is big enough to absorb summer crowds, though parking can be a nightmare in August.",
+      "difficulty": "Easy (beach-level car park)",
+      "duration": "Half to full day",
+      "distance": "N/A",
+      "cost": "Free (parking £5-8)",
+      "bestFor": "Families, surfers, swimmers — the genuine all-rounder",
+      "skipIf": "Peak August weekends — the car park fills by 10am and the beach loses its appeal when sardine-packed. Go midweek or in shoulder season.",
+      "insiderTip": "Walk north along the coast path to reach Porthmelgan — a tiny, quiet cove that most Whitesands visitors never discover. The café at the car park entrance is decent for post-beach snacks. Ma Simes Surf Hut rents boards and wetsuits.",
+      "season": "Year-round (lifeguarded May–September)",
+      "parking": {
+        "location": "Whitesands car park",
+        "cost": "£5-8/day",
+        "notes": "Large car park but fills up by 10am in summer. NO overflow — if it's full, you're turning around.",
+        "lat": 51.8942,
+        "lng": -5.2962
+      },
+      "startPoint": {
+        "name": "Whitesands Bay",
+        "lat": 51.8942,
+        "lng": -5.2962
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 4,
+      "name": "Broadhaven South",
+      "slug": "broadhaven-south",
+      "verdict": "A spectacular cove with a natural sea arch and the finest rock formations of any Pembrokeshire beach.",
+      "image": "/images/best-lists/pembrokeshire-best-beaches-broadhaven-south.jpg",
+      "imageAlt": "Broadhaven South beach with the natural arch of Church Door visible in the cliffs",
+      "whyItMadeTheList": "Broadhaven South (not to be confused with Broad Haven on the west coast) is a stunning horseshoe bay reached by steep steps from the clifftop. The limestone cliffs feature a massive natural arch called Church Door, caves, and sea stacks. The sand is golden, the water clear, and the setting genuinely dramatic. It's less well-known than Barafundle despite being equally beautiful.",
+      "difficulty": "Moderate (steep steps down to beach)",
+      "duration": "Half day",
+      "distance": "5-min walk from car park (via steps)",
+      "cost": "Free (parking £3-5 NT)",
+      "bestFor": "Adventurous beachgoers, photographers, rock poolers, couples wanting a spectacular setting",
+      "skipIf": "You can't manage steep steps. The access is demanding with beach gear. Beach can be cut off at very high tides.",
+      "insiderTip": "At low tide, walk around the headland to Skrinkle Haven — an even more secluded beach with an arch. Check tide times carefully — both beaches can be cut off. The nearby Church Door arch is one of the most photographed features in Pembrokeshire.",
+      "season": "Year-round (best May–September for swimming)",
+      "parking": {
+        "location": "Broadhaven South NT car park",
+        "cost": "£3-5 (NT, free for members)",
+        "notes": "Small clifftop car park off the B4319. Steps down to beach.",
+        "lat": 51.6296,
+        "lng": -4.8740
+      },
+      "startPoint": {
+        "name": "Broadhaven South",
+        "lat": 51.6268,
+        "lng": -4.8720
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 5,
+      "name": "Freshwater West",
+      "slug": "freshwater-west",
+      "verdict": "A mile of wild, windswept dune-backed beach. No facilities, no crowds, no compromises.",
+      "image": "/images/best-lists/pembrokeshire-best-beaches-freshwater-west.jpg",
+      "imageAlt": "Freshwater West beach stretching into the distance with wild dunes and dramatic sky",
+      "whyItMadeTheList": "Freshwater West is Pembrokeshire at its wildest. A mile-long south-facing beach backed by unspoilt dunes, with no buildings, no café, and no lifeguards. It's the beach used for filming Harry Potter and Robin Hood, and you can see why — it looks properly cinematic. The waves are powerful (experienced surfers only), the wind is constant, and the atmosphere is raw and elemental. Not a sunbathing beach; a 'stand and stare at nature' beach.",
+      "difficulty": "Easy (flat car park to beach)",
+      "duration": "Half day",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5 NT)",
+      "bestFor": "Walkers, experienced surfers, photographers, anyone wanting wild, unspoilt coastline",
+      "skipIf": "You want shelter, facilities, or calm swimming. Freshwater West is exposed, powerful, and has dangerous currents. Not suitable for swimming.",
+      "insiderTip": "The southern end of the beach has the most sheltered dune hollows if you want to escape the wind. The beach is at its most dramatic in winter storm conditions — watching from the car park with a flask of tea is a legitimate activity. Harry Potter's Shell Cottage was built here.",
+      "season": "Year-round (dramatic in all seasons)",
+      "parking": {
+        "location": "Freshwater West NT car park",
+        "cost": "£3-5 (NT, free for members)",
+        "notes": "Large car park. Can be windy and exposed. Portaloos in summer only.",
+        "lat": 51.6376,
+        "lng": -5.0787
+      },
+      "startPoint": {
+        "name": "Freshwater West",
+        "lat": 51.6376,
+        "lng": -5.0787
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 6,
+      "name": "Tenby North Beach",
+      "slug": "tenby-north-beach",
+      "verdict": "The classic family beach — backed by a beautiful medieval town with everything you need.",
+      "image": "/images/best-lists/pembrokeshire-best-beaches-tenby-north.jpg",
+      "imageAlt": "Tenby's colourful pastel-painted houses overlooking North Beach with golden sand",
+      "whyItMadeTheList": "Tenby North Beach is the best family beach in Pembrokeshire. The beach itself is beautiful — wide golden sand with views to Caldey Island — but it's the town behind that makes it special. Tenby's pastel-coloured Georgian houses, medieval town walls, harbour, and proliferation of cafés, pubs, and ice cream shops create the perfect family beach day infrastructure. Lifeguarded in summer, Blue Flag awarded, and genuinely charming.",
+      "difficulty": "Easy (town-level access)",
+      "duration": "Full day",
+      "distance": "N/A",
+      "cost": "Free (parking £5-12 in town)",
+      "bestFor": "Families with children of all ages, anyone wanting beach + town in one package",
+      "skipIf": "You want solitude — Tenby is Pembrokeshire's busiest resort, and in August it's heaving. Parking is expensive and stressful.",
+      "insiderTip": "Park at the multi-storey (cheaper than seafront) and walk through the town walls to the beach. The boat to Caldey Island leaves from the harbour — combine beach and island trip. Castle Beach (the smaller beach east of the headland) is less crowded.",
+      "season": "Year-round (lifeguarded May–September)",
+      "parking": {
+        "location": "Tenby multi-storey or seafront car parks",
+        "cost": "£5-12/day",
+        "notes": "Parking is Tenby's biggest problem. Arrive before 10am in summer or use the park-and-ride if available.",
+        "lat": 51.6740,
+        "lng": -4.6979
+      },
+      "startPoint": {
+        "name": "Tenby North Beach",
+        "lat": 51.6740,
+        "lng": -4.6979
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 7,
+      "name": "Newgale",
+      "slug": "newgale",
+      "verdict": "Two miles of open beach — big enough that there's always space, even in peak summer.",
+      "image": "/images/best-lists/pembrokeshire-best-beaches-newgale.jpg",
+      "imageAlt": "The long sweep of Newgale beach with the distinctive pebble bank and surfers in the waves",
+      "whyItMadeTheList": "Newgale's sheer scale is its superpower. Two miles of sand facing the Atlantic, backed by a distinctive pebble storm bank. There's always room, the surf is reliable, and the setting — with views to the distant Preseli Hills — is expansive. It's the best beach in Pembrokeshire for those who want space to breathe. The Duke of Edinburgh pub at the north end overlooks the beach.",
+      "difficulty": "Easy (roadside parking, flat access)",
+      "duration": "Half to full day",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Surfers, kite-surfers, beach walkers, families wanting space",
+      "skipIf": "You want a sheltered sunbathing beach — Newgale is exposed to the prevailing westerlies and can be windy.",
+      "insiderTip": "The pebble bank at the top of the beach creates a natural windbreak if you nestle behind it. Walk north along the beach for increasing solitude. The Duke of Edinburgh pub is the best post-beach option — check conditions from the window before committing.",
+      "season": "Year-round (lifeguarded May–September)",
+      "parking": {
+        "location": "Newgale beach car park",
+        "cost": "£3-5/day",
+        "notes": "Large car park right behind the beach. Easy, flat access.",
+        "lat": 51.8448,
+        "lng": -5.1226
+      },
+      "startPoint": {
+        "name": "Newgale beach",
+        "lat": 51.8448,
+        "lng": -5.1226
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 8,
+      "name": "Traeth Llyfn",
+      "slug": "traeth-llyfn",
+      "verdict": "A tiny, hidden cove between Porthgain and Abereiddy that rewards the adventurous.",
+      "image": "/images/best-lists/pembrokeshire-best-beaches-traeth-llyfn.jpg",
+      "imageAlt": "Small secluded cove at Traeth Llyfn with cliffs on both sides",
+      "whyItMadeTheList": "This is the hidden gem entry. Traeth Llyfn is a tiny sandy cove accessed via a scramble down the coast path between Porthgain and Abereiddy. There's no sign, no car park (walk from either village), and no facilities. What you get is a small, perfect cove with clean sand, clear water, and dramatic cliff scenery. On a good day, you might have it completely to yourself. It's the kind of beach discovery that makes you feel like an explorer.",
+      "difficulty": "Moderate (coastal path walk + scramble to beach)",
+      "duration": "Half day (including walks)",
+      "distance": "1-2km walk from nearest parking",
+      "cost": "Free",
+      "bestFor": "Adventurous beachgoers who don't mind a walk and a scramble for solitude",
+      "skipIf": "You want easy access. The scramble down to the beach is not suitable for young children or those with mobility issues. The beach disappears at high tide.",
+      "insiderTip": "Check the tide before setting out — at high tide there's no beach. Approach from Porthgain for the shortest walk, then reward yourself with seafood at the Sloop Inn afterwards. Bring everything you need — there's nothing here.",
+      "season": "May–September (tide-dependent)",
+      "parking": {
+        "location": "Porthgain harbour car park",
+        "cost": "£3/day",
+        "notes": "Walk the coast path east from Porthgain. Look for the small cove after about 15 minutes.",
+        "lat": 51.9386,
+        "lng": -5.1880
+      },
+      "startPoint": {
+        "name": "Traeth Llyfn",
+        "lat": 51.9375,
+        "lng": -5.1935
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 9,
+      "name": "Broad Haven",
+      "slug": "broad-haven",
+      "verdict": "The accessible family beach — village behind, gentle waves, and everything within walking distance.",
+      "image": "/images/best-lists/pembrokeshire-best-beaches-broad-haven.jpg",
+      "imageAlt": "Broad Haven beach with the village behind and families on the sand",
+      "whyItMadeTheList": "Broad Haven is the most convenient family beach on the west Pembrokeshire coast. The village sits right behind the beach with cafés, pubs, a surf shop, and public toilets. The beach is sandy, gently shelving, and lifeguarded in summer. Waves are usually small and manageable for children. It's not the most spectacular beach in Pembrokeshire, but for hassle-free family days it's hard to beat.",
+      "difficulty": "Easy (village-level access)",
+      "duration": "Half to full day",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Families with young children wanting facilities, pubs, and gentle waves",
+      "skipIf": "You want dramatic scenery or solitude — Broad Haven is pleasant but not spectacular.",
+      "insiderTip": "Walk the coast path south to Little Haven (30 minutes) — a charming tiny village with the excellent Swan Inn pub. Or walk north along the beach at low tide to the rock pools. The Druidstone Hotel above Druidston Haven (20-minute clifftop walk) is exceptional for lunch.",
+      "season": "Year-round (lifeguarded May–September)",
+      "parking": {
+        "location": "Broad Haven car park",
+        "cost": "£3-5/day",
+        "notes": "Large village car park right by the beach. Good facilities.",
+        "lat": 51.7780,
+        "lng": -5.1131
+      },
+      "startPoint": {
+        "name": "Broad Haven beach",
+        "lat": 51.7780,
+        "lng": -5.1131
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 10,
+      "name": "Manorbier",
+      "slug": "manorbier",
+      "verdict": "A castle overlooking the beach. Gerald of Wales called it 'the pleasantest spot in Wales.' He was right.",
+      "image": "/images/best-lists/pembrokeshire-best-beaches-manorbier.jpg",
+      "imageAlt": "Manorbier beach with the medieval castle on the headland above",
+      "whyItMadeTheList": "Manorbier has something no other beach in Pembrokeshire has: a proper medieval castle perched on the headland above. The beach itself is a sheltered horseshoe of sand with gentle waves and clean water. Gerald of Wales (born in the castle in 1146) called this 'the pleasantest spot in Wales', and the combination of castle, beach, and village gives it a timeless quality. Excellent rock pooling at low tide.",
+      "difficulty": "Easy (short walk from car park)",
+      "duration": "Half to full day",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5, castle entry £7 adult)",
+      "bestFor": "Families wanting beach + castle combo, history enthusiasts, rock poolers",
+      "skipIf": "You want a huge beach — Manorbier is intimate, not expansive.",
+      "insiderTip": "Visit the castle (£7 adult) for views down to the beach — it's one of the best castle-sea views in Wales. The beach faces south so catches the sun all day. The Castle Inn in the village does good food.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Manorbier beach car park",
+        "cost": "£3-5/day",
+        "notes": "Small car park above the beach. Gets busy in summer.",
+        "lat": 51.6421,
+        "lng": -4.7949
+      },
+      "startPoint": {
+        "name": "Manorbier beach",
+        "lat": 51.6421,
+        "lng": -4.7949
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 11,
+      "name": "Newport Sands (Traeth Mawr)",
+      "slug": "newport-sands",
+      "verdict": "North Pembrokeshire's best swimming beach — backed by estuary, dunes, and the Preseli Hills.",
+      "image": "/images/best-lists/pembrokeshire-best-beaches-newport-sands.jpg",
+      "imageAlt": "Newport Sands beach with the Nevern estuary and Preseli Hills behind",
+      "whyItMadeTheList": "Newport Sands is a beautiful golden beach at the mouth of the Nevern estuary with the Preseli Hills as a backdrop. It's the best swimming beach in North Pembrokeshire — sheltered, sandy, and usually less crowded than the St Davids area. The estuary behind the beach is excellent for wading and paddling at low tide. The beach is Blue Flag awarded and has a real 'undiscovered' feel compared to the south coast beaches.",
+      "difficulty": "Easy (flat access from car park)",
+      "duration": "Half to full day",
+      "distance": "N/A",
+      "cost": "Free (parking £3-5)",
+      "bestFor": "Families wanting clean, sheltered swimming in a beautiful setting",
+      "skipIf": "You want surf — it's usually too sheltered for waves. For surf, head to Whitesands.",
+      "insiderTip": "Walk along the estuary at low tide towards Newport town — excellent birdwatching. The Eco Café at the beach entrance is good for snacks. Newport town (10-minute drive) has excellent restaurants including Llys Meddyg.",
+      "season": "Year-round (lifeguarded May–September)",
+      "parking": {
+        "location": "Newport Sands car park",
+        "cost": "£3-5/day",
+        "notes": "Car park behind the dunes. Flat walk to beach.",
+        "lat": 52.0256,
+        "lng": -4.8688
+      },
+      "startPoint": {
+        "name": "Newport Sands",
+        "lat": 52.0256,
+        "lng": -4.8688
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 12,
+      "name": "Druidston Haven",
+      "slug": "druidston-haven",
+      "verdict": "A hidden beach below one of Wales's best pubs. The local's secret.",
+      "image": "/images/best-lists/pembrokeshire-best-beaches-druidston.jpg",
+      "imageAlt": "Druidston Haven beach with cliffs and the Druidstone Hotel visible on the clifftop",
+      "whyItMadeTheList": "Druidston Haven is the beach that Pembrokeshire locals go to when they want to avoid tourists. There's no car park at the beach — you walk down from the clifftop — and no facilities on the sand. What you get is a beautiful, quiet beach with clean sand and clear water, plus the legendary Druidstone Hotel sitting on the cliff above. The hotel's food, atmosphere, and clifftop garden are reason enough to visit. The beach is the bonus.",
+      "difficulty": "Moderate (steep path down from clifftop)",
+      "duration": "Half day",
+      "distance": "Short walk from Druidstone Hotel",
+      "cost": "Free",
+      "bestFor": "Those who want a quiet beach combined with excellent food at the hotel above",
+      "skipIf": "You need easy access or facilities at the beach. The path down is steep.",
+      "insiderTip": "Have lunch at the Druidstone Hotel, then walk down to the beach for the afternoon. The hotel has a proper bohemian vibe and the food is excellent. At low tide, you can walk north to Broad Haven along the beach.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Druidstone Hotel or roadside",
+        "cost": "Free (if using hotel)",
+        "notes": "Park at the hotel if eating there. Very limited roadside parking otherwise.",
+        "lat": 51.7888,
+        "lng": -5.1115
+      },
+      "startPoint": {
+        "name": "Druidston Haven",
+        "lat": 51.7858,
+        "lng": -5.1089
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    }
+  ],
+  "comparisonTable": true,
+  "seasonalPicks": {
+    "spring": { "entries": [2, 8], "note": "Wildflowers on the coast path, quiet beaches, perfect walking weather" },
+    "summer": { "entries": [3, 6], "note": "Warmest water, lifeguards, full facilities. Book accommodation months ahead." },
+    "autumn": { "entries": [1, 5], "note": "The best season: warm-ish water, empty beaches, golden light" },
+    "winter": { "entries": [5, 7], "note": "Storm watching from Freshwater West. Wild, dramatic, and almost deserted." }
+  },
+  "faqs": [
+    {
+      "question": "What's the best beach in Pembrokeshire?",
+      "answer": "Barafundle Bay (#1) is widely considered the best — regularly topping 'best beach in Britain' polls. It requires a 15-minute walk, has no facilities, and is worth every step. For a more accessible option, Whitesands (#3) has everything including surf and lifeguards."
+    },
+    {
+      "question": "Which Pembrokeshire beaches are best for families?",
+      "answer": "Tenby North Beach (#6) for full facilities and a town behind it. Broad Haven (#9) for a village setting with cafés and gentle waves. Newport Sands (#11) for clean, sheltered swimming. All three are lifeguarded in summer."
+    },
+    {
+      "question": "Are dogs allowed on Pembrokeshire beaches?",
+      "answer": "Most beaches allow dogs year-round or from October to April. Summer dog bans (May-September) apply on popular beaches like Tenby North, Whitesands, and Broad Haven during peak hours. Freshwater West, Marloes Sands, and Druidston Haven allow dogs year-round."
+    },
+    {
+      "question": "Which Pembrokeshire beaches have the clearest water?",
+      "answer": "Barafundle Bay (#1) and Broadhaven South (#4) consistently have the clearest water — the limestone geology and sheltered aspect create almost Mediterranean clarity on calm days. Whitesands (#3) also has excellent water quality."
+    }
+  ],
+  "relatedLists": [
+    { "slug": "/pembrokeshire/best-surf-spots", "label": "Best Surf Spots in Pembrokeshire" },
+    { "slug": "/pembrokeshire/best-coasteering", "label": "Best Coasteering in Pembrokeshire" },
+    { "slug": "/gower/best-beaches", "label": "Best Beaches on the Gower" },
+    { "slug": "/anglesey/best-beaches", "label": "Best Beaches on Anglesey" }
+  ]
+}

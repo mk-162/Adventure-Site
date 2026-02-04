@@ -1,0 +1,332 @@
+{
+  "regionSlug": "pembrokeshire",
+  "slug": "best-kayaking-spots",
+  "urlPath": "/pembrokeshire/best-kayaking-spots",
+  "title": "8 Best Kayaking Spots in Pembrokeshire",
+  "metaTitle": "8 Best Kayaking in Pembrokeshire (2025)",
+  "metaDescription": "The best sea kayaking spots in Pembrokeshire ranked. Sea caves, seal colonies, and dramatic coastline — guided and independent options.",
+  "h1": "8 Best Kayaking Spots in Pembrokeshire (2025)",
+  "strapline": "Sea caves, seals, and 186 miles of coastline — Pembrokeshire is a sea kayaker's paradise.",
+  "heroImage": "/images/best-lists/pembrokeshire-best-kayaking-hero.jpg",
+  "heroAlt": "Sea kayaker paddling through a natural arch on the Pembrokeshire coast",
+  "updatedDate": "2025-07",
+  "introduction": "Pembrokeshire's 186-mile coast is one of the finest sea kayaking destinations in the British Isles. The combination of dramatic cliffs, sea caves, natural arches, offshore islands, and abundant marine wildlife creates an experience that's hard to match anywhere in the UK.\n\nThe coastline ranges from sheltered harbours perfect for beginners to exposed headlands that demand serious open-water skills. Grey seals are practically guaranteed, porpoises are common, and puffin season (April-July) on Skomer and Skokholm is magical.\n\nMost spots can be paddled independently if you have your own boat and experience, but guided trips are available everywhere and are strongly recommended for beginners. Water temperature is 8-17°C, so a wetsuit or drysuit is essential year-round. Tides are significant — some spots become dangerous or inaccessible at certain states of tide.",
+  "rankingCriteria": "We've paddled all of these spots in varying conditions. Rankings combine scenic quality, wildlife encounters, sea cave and feature richness, accessibility, and the overall paddling experience. We favour spots that deliver genuine 'wow moments' from the water.",
+  "comboPageLink": "/pembrokeshire/things-to-do/kayaking",
+  "keywords": {
+    "primary": "best kayaking pembrokeshire",
+    "secondary": ["sea kayaking pembrokeshire", "kayaking pembrokeshire coast", "pembrokeshire kayak spots", "kayaking west wales"],
+    "longTail": [
+      "sea kayaking pembrokeshire beginners",
+      "kayak with seals pembrokeshire",
+      "pembrokeshire sea cave kayaking",
+      "guided kayak tours pembrokeshire",
+      "kayaking around ramsey island",
+      "pembrokeshire kayak hire"
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Ramsey Island & St Justinian's",
+      "slug": "ramsey-island-st-justinians",
+      "verdict": "The ultimate Pembrokeshire paddle — tidal races, sea caves, seals, and island crossings.",
+      "image": "/images/best-lists/pembrokeshire-best-kayaking-ramsey-island.jpg",
+      "imageAlt": "Kayakers near Ramsey Island with grey seals on the rocks and dramatic cliffs behind",
+      "whyItMadeTheList": "The waters around Ramsey Island offer the most complete sea kayaking experience in Pembrokeshire. The Bitches — a notorious tidal race in Ramsey Sound — provides white-water kayaking in the sea (experienced paddlers only). The island's western cliffs are riddled with sea caves, arches, and blowholes. Grey seals haul out on the rocks year-round, and the island crossing is a genuine adventure. This is world-class sea kayaking.",
+      "difficulty": "Intermediate-Expert (guided trips available for all levels)",
+      "duration": "3-5 hours guided, full day independent",
+      "distance": "8-15km depending on route",
+      "cost": "£55-85pp guided",
+      "bestFor": "Experienced sea kayakers wanting dramatic coastline, wildlife, and tidal features",
+      "skipIf": "You're a complete beginner — start at Tenby or Fishguard. The Bitches tidal race is genuinely dangerous without experience.",
+      "insiderTip": "Time your paddle for neap tides if you want to explore calmly, or spring tides if you want to surf the Bitches (experienced paddlers only). TYF Adventure run excellent guided trips that include the Bitches for intermediate paddlers. The seals at the northern end of Ramsey are curious and often swim alongside kayaks.",
+      "season": "May–October (seal pup season September–November)",
+      "parking": {
+        "location": "St Justinian's car park",
+        "cost": "£5-8/day",
+        "notes": "Small car park at the RNLI lifeboat station. Can be busy in summer. Alternative: park in St Davids and walk/taxi.",
+        "lat": 51.8816,
+        "lng": -5.3065
+      },
+      "startPoint": {
+        "name": "St Justinian's",
+        "lat": 51.8816,
+        "lng": -5.3065
+      },
+      "operatorSlug": "tyf-adventure",
+      "guidedOption": "TYF Adventure from ~£65pp, Preseli Venture from ~£55pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 2,
+      "name": "Tenby & Caldey Island",
+      "slug": "tenby-caldey-island",
+      "verdict": "Pastel-coloured harbour, limestone cliffs, and a monastery island — the most scenic paddle in South Pembrokeshire.",
+      "image": "/images/best-lists/pembrokeshire-best-kayaking-tenby.jpg",
+      "imageAlt": "Kayakers paddling past Tenby's colourful harbour with the town walls above",
+      "whyItMadeTheList": "Launching from Tenby's North Beach and paddling around the headland to St Catherine's Island, then out towards Caldey Island, is one of the most scenic paddles in Wales. The limestone cliffs and arches around Tenby are stunning from the water, and Caldey Island — home to Cistercian monks — is accessible by kayak with care. The sheltered harbour makes it accessible to intermediate paddlers, while the open-water crossing to Caldey provides a genuine challenge.",
+      "difficulty": "Beginner-Intermediate (sheltered), Intermediate (Caldey crossing)",
+      "duration": "2-4 hours",
+      "distance": "5-12km depending on route",
+      "cost": "£40-65pp guided, £20-30 kayak hire",
+      "bestFor": "Intermediate paddlers wanting scenic coastline with good facilities, families for the harbour paddle",
+      "skipIf": "You want wilderness — Tenby is a resort town and busy in summer. The Caldey crossing requires calm conditions.",
+      "insiderTip": "The sea caves along the cliffs between Tenby and Saundersfoot are excellent on calm days. Paddle at high tide for the best cave access. Outer Reef Surf School in Manorbier offer guided kayak trips that cover this stretch beautifully.",
+      "season": "April–October",
+      "parking": {
+        "location": "Tenby North Beach car park",
+        "cost": "£5-10/day",
+        "notes": "Tenby parking is expensive and busy in summer. Arrive early.",
+        "lat": 51.6740,
+        "lng": -4.6979
+      },
+      "startPoint": {
+        "name": "Tenby North Beach",
+        "lat": 51.6740,
+        "lng": -4.6979
+      },
+      "operatorSlug": null,
+      "guidedOption": "Outer Reef Surf School guided kayak tours from ~£45pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 3,
+      "name": "Saundersfoot to Monkstone Point",
+      "slug": "saundersfoot-monkstone",
+      "verdict": "Sheltered, scenic, and seal-rich. The best beginner sea kayaking in Pembrokeshire.",
+      "image": "/images/best-lists/pembrokeshire-best-kayaking-saundersfoot.jpg",
+      "imageAlt": "Kayakers near limestone cliffs between Saundersfoot and Monkstone Point",
+      "whyItMadeTheList": "This sheltered stretch of coast between Saundersfoot and Tenby is ideal for first-time sea kayakers. The limestone cliffs are beautiful, with small caves and arches accessible at the right tide. Seals frequently appear along the coast. The beach launches at both ends make logistics easy, and there are cafés and pubs in both Saundersfoot and Tenby for post-paddle rewards. Low-commitment, high-reward paddling.",
+      "difficulty": "Beginner-Intermediate",
+      "duration": "2-3 hours",
+      "distance": "5-8km",
+      "cost": "£35-55pp guided, £15-25 hire",
+      "bestFor": "Beginners, families, and anyone wanting an easy but rewarding first sea kayak experience",
+      "skipIf": "You want big adventure — this is deliberately gentle and sheltered.",
+      "insiderTip": "Launch from Saundersfoot at high tide for the easiest beach access. The sea caves near Monkstone Point are accessible at mid-tide — too low and you'll be scraping, too high and they're submerged. Outer Reef run great trips from here.",
+      "season": "April–October",
+      "parking": {
+        "location": "Saundersfoot harbour car park",
+        "cost": "£3-5/day",
+        "notes": "Harbour-side parking with good beach access.",
+        "lat": 51.6729,
+        "lng": -4.7042
+      },
+      "startPoint": {
+        "name": "Saundersfoot harbour",
+        "lat": 51.6729,
+        "lng": -4.7042
+      },
+      "operatorSlug": null,
+      "guidedOption": "Outer Reef Surf School guided kayak trips from ~£35pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 4,
+      "name": "Fishguard Bay & Strumble Head",
+      "slug": "fishguard-strumble-head",
+      "verdict": "Wild, remote, and rich with wildlife. Proper sea kayaking for experienced paddlers.",
+      "image": "/images/best-lists/pembrokeshire-best-kayaking-fishguard.jpg",
+      "imageAlt": "Sea kayaker on calm water in Fishguard Bay with the headland behind",
+      "whyItMadeTheList": "The coast around Fishguard and Strumble Head is wilder and more exposed than South Pembrokeshire, which makes it more rewarding for experienced paddlers. Fishguard's Lower Town harbour provides a sheltered launch point, and from there you can explore the dramatic cliffs towards Strumble Head. Porpoises are regularly spotted in the tidal flows, and grey seal colonies dot the coastline. This feels like proper adventure sea kayaking.",
+      "difficulty": "Intermediate-Expert",
+      "duration": "3-5 hours",
+      "distance": "10-20km depending on route",
+      "cost": "£50-70pp guided",
+      "bestFor": "Experienced paddlers wanting wildlife encounters and exposed coastline",
+      "skipIf": "You're a beginner — the exposed headland and tidal streams require real open-water experience.",
+      "insiderTip": "Kayak-King Tours in Fishguard specialise in this stretch and have deep local knowledge. Time your paddle with the tides at Strumble Head — the flows can be strong. The Royal Oak pub in Fishguard (where the Last Invasion of Britain surrender was signed) is a characterful post-paddle option.",
+      "season": "May–September",
+      "parking": {
+        "location": "Lower Town Fishguard",
+        "cost": "Free (limited)",
+        "notes": "Harbour-side parking in Lower Town. The harbour wall provides a sheltered launch.",
+        "lat": 51.9995,
+        "lng": -4.9837
+      },
+      "startPoint": {
+        "name": "Lower Town Fishguard",
+        "lat": 51.9995,
+        "lng": -4.9837
+      },
+      "operatorSlug": null,
+      "guidedOption": "Kayak-King Tours from ~£50pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 5,
+      "name": "Stackpole Quay & Barafundle Bay",
+      "slug": "stackpole-barafundle",
+      "verdict": "Paddle to one of the best beaches in Britain — Barafundle is even more stunning from the water.",
+      "image": "/images/best-lists/pembrokeshire-best-kayaking-stackpole.jpg",
+      "imageAlt": "Kayakers approaching Barafundle Bay with golden sand and turquoise water",
+      "whyItMadeTheList": "The Stackpole coastline is jaw-dropping from any angle, but from a kayak it's extraordinary. Launch from Stackpole Quay and paddle west past limestone sea stacks, arches, and crystal-clear water to Barafundle Bay — regularly voted one of the best beaches in Britain. Land on the beach, have lunch, then paddle back. The limestone geology creates spectacular features at water level that you simply can't see from the coast path above.",
+      "difficulty": "Beginner-Intermediate",
+      "duration": "2-3 hours",
+      "distance": "5-8km",
+      "cost": "£40-60pp guided, £20-30 hire",
+      "bestFor": "Anyone wanting to combine kayaking with a visit to a world-class beach",
+      "skipIf": "There's a south swell running — the coast becomes exposed and the landing at Barafundle can be tricky.",
+      "insiderTip": "Arrive at Barafundle by kayak and you skip the walk from the car park that everyone else has to do. Bring a picnic and make an afternoon of it. The water is often Caribbean-clear on calm summer days. Stackpole Quay has a tiny tea room for post-paddle drinks.",
+      "season": "May–September",
+      "parking": {
+        "location": "Stackpole Quay NT car park",
+        "cost": "£3-5 (NT, free for members)",
+        "notes": "Small car park. Gets very busy in summer. Arrive before 10am.",
+        "lat": 51.6206,
+        "lng": -4.9085
+      },
+      "startPoint": {
+        "name": "Stackpole Quay",
+        "lat": 51.6206,
+        "lng": -4.9085
+      },
+      "operatorSlug": null,
+      "guidedOption": "Multiple operators run trips from Stackpole area. From ~£40pp.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 6,
+      "name": "River Teifi (Cilgerran Gorge)",
+      "slug": "river-teifi-cilgerran",
+      "verdict": "Swap the sea for a stunning river gorge with a ruined castle and otter sightings.",
+      "image": "/images/best-lists/pembrokeshire-best-kayaking-cilgerran.jpg",
+      "imageAlt": "Kayakers in the Cilgerran Gorge with the castle ruins visible on the cliff above",
+      "whyItMadeTheList": "Not all Pembrokeshire kayaking is on the sea. The River Teifi at Cilgerran Gorge offers a completely different experience — paddling through a narrow, wooded gorge beneath the atmospheric ruins of Cilgerran Castle. The river is tidal here, creating changing conditions throughout the day. Otters are present (though rarely seen), and the atmosphere in the gorge is magical. It's a perfect complement to sea kayaking and accessible to beginners.",
+      "difficulty": "Beginner-Intermediate",
+      "duration": "2-3 hours",
+      "distance": "5-8km",
+      "cost": "£35-50pp guided",
+      "bestFor": "Beginners wanting sheltered flatwater, history enthusiasts, families",
+      "skipIf": "You want open-water sea kayaking — this is river paddling.",
+      "insiderTip": "Time your paddle for an incoming tide — you'll get a gentle push upstream through the gorge, then paddle back with the outgoing tide. The coracles on the Teifi are a local tradition — the National Coracle Centre in Cenarth is worth a visit. Welsh Wildlife Centre near Cilgerran has excellent riverside walks.",
+      "season": "Year-round (river is always paddleable)",
+      "parking": {
+        "location": "Cilgerran Castle car park",
+        "cost": "£3-5/day",
+        "notes": "Small car park near the castle. Limited spaces.",
+        "lat": 52.0825,
+        "lng": -4.6810
+      },
+      "startPoint": {
+        "name": "Cilgerran",
+        "lat": 52.0825,
+        "lng": -4.6810
+      },
+      "operatorSlug": null,
+      "guidedOption": "Several operators run guided Teifi trips. From ~£35pp.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 7,
+      "name": "Skomer Island Circuit",
+      "slug": "skomer-island",
+      "verdict": "Puffins, Manx shearwaters, and the most spectacular island circumnavigation in Wales.",
+      "image": "/images/best-lists/pembrokeshire-best-kayaking-skomer.jpg",
+      "imageAlt": "Sea kayakers off the coast of Skomer Island with puffins visible on the cliffs",
+      "whyItMadeTheList": "Paddling around Skomer Island is a bucket-list sea kayaking experience. The island hosts one of the largest puffin colonies in southern Britain (April-July), plus Manx shearwaters, razorbills, and guillemots. The cliffs are dramatic, the sea caves excellent, and the open-water crossing from Martin's Haven adds genuine adventure. This is a full-day expedition that requires experience and favourable conditions — but when it all comes together, it's unforgettable.",
+      "difficulty": "Expert (open-water crossing)",
+      "duration": "Full day (5-7 hours paddling)",
+      "distance": "15-20km circuit",
+      "cost": "£75-100pp guided (no landing fee for kayakers who don't land)",
+      "bestFor": "Experienced sea kayakers wanting a wildlife-focused expedition",
+      "skipIf": "You're not a confident open-water paddler — the Jack Sound crossing has strong tidal streams. Spring tides make it very dangerous.",
+      "insiderTip": "The crossing to Skomer through Jack Sound must be timed precisely with the tides — get it wrong and you'll be swept south rapidly. Go with a guide unless you have genuine open-water experience and tidal knowledge. Puffin season is April-July; seal pup season is September-November. Both are magical from a kayak.",
+      "season": "April–July (puffins), September–November (seals)",
+      "parking": {
+        "location": "Martin's Haven car park (NT)",
+        "cost": "£5 (NT, free for members)",
+        "notes": "Car park at Martin's Haven. Limited spaces — arrive early.",
+        "lat": 51.7360,
+        "lng": -5.2406
+      },
+      "startPoint": {
+        "name": "Martin's Haven",
+        "lat": 51.7360,
+        "lng": -5.2406
+      },
+      "operatorSlug": null,
+      "guidedOption": "Specialist guided trips available — essential for this route. From ~£85pp.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 8,
+      "name": "Newport Bay & Cwm yr Eglwys",
+      "slug": "newport-bay",
+      "verdict": "A peaceful bay with a ruined church on the shore and seals around every headland.",
+      "image": "/images/best-lists/pembrokeshire-best-kayaking-newport.jpg",
+      "imageAlt": "Kayaker in calm Newport Bay with the ruins of Cwm yr Eglwys church visible on the shore",
+      "whyItMadeTheList": "Newport Bay in North Pembrokeshire is a sheltered, beautiful bay that's perfect for a relaxed paddle. The ruined church at Cwm yr Eglwys (destroyed by a storm in 1859, with only the belfry standing) is atmospheric from the water. Paddle east towards Dinas Head for wilder coastline and likely seal encounters. The bay's shelter makes it suitable for less experienced paddlers while the headlands provide challenge for those who want it.",
+      "difficulty": "Beginner-Intermediate",
+      "duration": "2-3 hours",
+      "distance": "5-10km",
+      "cost": "£35-55pp guided, £15-25 hire",
+      "bestFor": "Intermediate paddlers wanting beautiful, sheltered water with options to explore further",
+      "skipIf": "You want dramatic cliff scenery — the bay itself is gentle. For drama, head to the headlands.",
+      "insiderTip": "Launch from Cwm yr Eglwys beach and paddle around Dinas Head for the best seal encounters. The Golden Lion pub in Newport is excellent for post-paddle food. Preseli Venture in Newport offer guided kayak trips as part of multi-activity packages.",
+      "season": "April–October",
+      "parking": {
+        "location": "Cwm yr Eglwys car park",
+        "cost": "£3-5/day",
+        "notes": "Small car park right by the beach. Can be busy in summer. Limited spaces.",
+        "lat": 52.0203,
+        "lng": -4.8298
+      },
+      "startPoint": {
+        "name": "Cwm yr Eglwys",
+        "lat": 52.0203,
+        "lng": -4.8298
+      },
+      "operatorSlug": "preseli-venture",
+      "guidedOption": "Preseli Venture from ~£40pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    }
+  ],
+  "comparisonTable": true,
+  "seasonalPicks": {
+    "spring": { "entries": [7, 2], "note": "Puffin season begins on Skomer, calmer spring weather" },
+    "summer": { "entries": [3, 5], "note": "Warmest water, calmest conditions, best for beginners" },
+    "autumn": { "entries": [1, 4], "note": "Seal pup season, autumn swells create spectacular features, thinning crowds" },
+    "winter": { "entries": [6], "note": "River Teifi is the most reliable winter option — sheltered and always paddleable" }
+  },
+  "faqs": [
+    {
+      "question": "Do I need experience to go sea kayaking in Pembrokeshire?",
+      "answer": "Not if you go with a guided operator. Saundersfoot (#3), Tenby (#2), and Newport (#8) all have beginner-friendly guided trips. Independent paddling requires real open-water experience, especially around Ramsey Island and Skomer."
+    },
+    {
+      "question": "Can you kayak with seals in Pembrokeshire?",
+      "answer": "Yes — grey seals are common along the entire coast and frequently swim alongside kayaks. The best spots for seal encounters are Ramsey Island (#1), Strumble Head (#4), and the coast around Dinas Head (accessible from Newport, #8). Seal pup season (September–November) is particularly special."
+    },
+    {
+      "question": "How much does guided kayaking cost in Pembrokeshire?",
+      "answer": "Expect £35-55 per person for a 2-3 hour beginner trip, £55-85 for a half-day intermediate trip, and £75-100+ for full-day expeditions to Skomer or around Ramsey Island. Equipment (kayak, paddle, spray deck, wetsuit/drysuit) is included."
+    },
+    {
+      "question": "What's the best time of year for kayaking in Pembrokeshire?",
+      "answer": "June-September for the warmest water and calmest conditions. April-July if you want to see puffins on Skomer. September-November for seal pups. Winter paddling is possible but restricted to sheltered spots and requires experienced paddlers with cold-water gear."
+    }
+  ],
+  "relatedLists": [
+    { "slug": "/pembrokeshire/best-coasteering", "label": "Best Coasteering in Pembrokeshire" },
+    { "slug": "/pembrokeshire/best-surf-spots", "label": "Best Surf Spots in Pembrokeshire" },
+    { "slug": "/pembrokeshire/best-beaches", "label": "Best Beaches in Pembrokeshire" }
+  ]
+}

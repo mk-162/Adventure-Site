@@ -43,6 +43,9 @@ export function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
+            <Link href="/auth/login" className="text-sm font-semibold text-slate-500 hover:text-[#1e3a4c] transition-colors">
+              Operator Login
+            </Link>
             <Link href="/search" className="p-2 text-slate-500 hover:text-[#1e3a4c] transition-colors">
               <Search className="h-5 w-5" />
             </Link>
@@ -80,7 +83,14 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <div className="pt-2 px-4">
+            <div className="pt-2 px-4 space-y-2">
+              <Link
+                href="/auth/login"
+                className="block w-full py-3 bg-slate-100 text-slate-700 text-sm font-bold rounded-lg text-center hover:bg-slate-200"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Operator Login
+              </Link>
               <Link
                 href="/book"
                 className="block w-full py-3 bg-[#f97316] text-white text-sm font-bold rounded-lg text-center"

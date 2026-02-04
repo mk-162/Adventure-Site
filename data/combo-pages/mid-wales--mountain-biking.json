@@ -1,0 +1,884 @@
+{
+  "regionSlug": "mid-wales",
+  "activityTypeSlug": "mountain-biking",
+  "title": "Mountain Biking in Mid Wales",
+  "strapline": "Quiet trails, proper climbs, and endless views – Mid Wales is the raw, unfiltered mountain biking experience.",
+  "metaTitle": "Mountain Biking Mid Wales | Adventure Wales",
+  "metaDescription": "Discover the best mountain biking mid wales has to offer. Explore Elan Valley, Nant yr Arian, and Hafren Forest. Find trails, guides & gear.",
+  "heroAlt": "Mountain biker descending a rocky trail in the Elan Valley, Mid Wales",
+  "introduction": "Mid Wales is a hidden gem for mountain biking, offering a more rugged and less crowded alternative to the trail centers further north. Forget perfectly manicured berms – here, you'll find natural singletrack, challenging climbs, and stunning panoramic views that reward your efforts. The Elan Valley is famous for its reservoirs and rolling hills, offering more mellow, scenic rides suitable for families and less experienced riders. Head north and east towards Nant yr Arian and Hafren Forest, and the terrain gets significantly more challenging. Nant yr Arian is home to the infamous Syfydrin trail, a beast of a climb followed by a thrilling, technical descent. Hafren offers a mix of forest roads and natural trails, providing endless possibilities for exploration. \n\nWhat sets mountain biking mid wales apart is its remoteness and the sense of wilderness. You can ride for hours without seeing another soul, immersing yourself in the beauty of the Cambrian Mountains. However, this also means you need to be prepared. Trails can be poorly marked, weather can change rapidly, and mobile phone signal is often patchy. Proper navigation skills, appropriate clothing, and a well-maintained bike are essential. It's best suited for confident riders who enjoy a challenge and are comfortable navigating in remote environments. For those new to mountain biking, guided options exist, providing a safer and more accessible way to explore the area's trails. Even seasoned riders might find guided options helpful, especially when tackling the more technical and unmarked areas in Hafren and Dyfi Forest. Come prepared, and mountain biking in mid wales will be an experience you won't forget.",
+  "bestSeason": "April-October",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Syfydrin Trail, Nant yr Arian",
+      "slug": "syfydrin-trail-nant-yr-arian",
+      "description": "The Syfydrin is the black-graded flagship trail at Nant yr Arian. It's notorious for its relentless climb, affectionately nicknamed 'The Wall', followed by a fast, technical descent through rocky terrain and forest singletrack. The views from the top are incredible, rewarding you for your efforts. Be prepared for a serious workout.",
+      "difficulty": "Challenging",
+      "duration": "2-3 hours",
+      "distance": "15km",
+      "elevationGain": "450m",
+      "bestFor": "Experienced mountain bikers seeking a challenging ride with technical features and stunning views.",
+      "notSuitableFor": "Beginners or those with a low level of fitness. Not suitable in very wet conditions due to slippery rocks.",
+      "bestSeason": "April-October",
+      "parking": "Nant yr Arian Visitor Centre car park. Pay and display, can get busy during weekends and school holidays. Arrive early.",
+      "startPoint": {
+        "name": "Nant yr Arian Visitor Centre",
+        "lat": 52.4512,
+        "lng": -3.8831
+      },
+      "estimatedCost": "Free (parking £5-8)",
+      "operatorSlug": null,
+      "insiderTip": "Check the weather forecast before you go, as the trail can be very exposed at the top. Carry extra water and snacks, as there are no facilities on the trail."
+    },
+    {
+      "name": "Summit Trail, Nant yr Arian",
+      "slug": "summit-trail-nant-yr-arian",
+      "description": "A challenging red-graded trail at Nant yr Arian offering a good mix of climbing and descending. The trail winds through forests and open moorland, providing panoramic views of the surrounding countryside. It features berms, jumps, and technical sections, making it a fun and engaging ride.",
+      "difficulty": "Moderate",
+      "duration": "1.5-2.5 hours",
+      "distance": "12km",
+      "elevationGain": "350m",
+      "bestFor": "Intermediate mountain bikers looking for a challenging but rewarding ride with varied terrain.",
+      "notSuitableFor": "Complete beginners. Requires some experience with technical trail features.",
+      "bestSeason": "April-October",
+      "parking": "Nant yr Arian Visitor Centre car park. Pay and display, can get busy during weekends and school holidays. Arrive early.",
+      "startPoint": {
+        "name": "Nant yr Arian Visitor Centre",
+        "lat": 52.4512,
+        "lng": -3.8831
+      },
+      "estimatedCost": "Free (parking £5-8)",
+      "operatorSlug": null,
+      "insiderTip": "The descent can be quite fast and flowy, so be aware of other trail users. Take a break at the summit to enjoy the views."
+    },
+    {
+      "name": "Pendam Trail, Nant yr Arian",
+      "slug": "pendam-trail-nant-yr-arian",
+      "description": "A blue-graded trail perfect for families and less experienced mountain bikers at Nant yr Arian. It offers a gentle introduction to mountain biking with smooth trails and gradual climbs. The trail winds through forests and past the Pendam reservoir, providing scenic views.",
+      "difficulty": "Easy",
+      "duration": "1-1.5 hours",
+      "distance": "9km",
+      "elevationGain": "150m",
+      "bestFor": "Beginners, families, and those looking for a relaxed ride in a beautiful setting.",
+      "notSuitableFor": "Experienced mountain bikers seeking a challenging ride.",
+      "bestSeason": "All year round",
+      "parking": "Nant yr Arian Visitor Centre car park. Pay and display, can get busy during weekends and school holidays. Arrive early.",
+      "startPoint": {
+        "name": "Nant yr Arian Visitor Centre",
+        "lat": 52.4512,
+        "lng": -3.8831
+      },
+      "estimatedCost": "Free (parking £5-8)",
+      "operatorSlug": null,
+      "insiderTip": "Keep an eye out for the red kites that frequent the area. Stop at the Pendam reservoir for a picnic."
+    },
+    {
+      "name": "Elan Valley Reservoirs Loop",
+      "slug": "elan-valley-reservoirs-loop",
+      "description": "A scenic ride around the Elan Valley reservoirs, offering stunning views of the water and surrounding hills. The route follows quiet roads and gravel tracks, making it suitable for hybrid bikes and less experienced mountain bikers. Stop at the dams and viewpoints to admire the engineering and natural beauty.",
+      "difficulty": "Easy",
+      "duration": "3-4 hours",
+      "distance": "30km",
+      "elevationGain": "300m",
+      "bestFor": "Families, beginners, and those looking for a relaxed ride with beautiful scenery.",
+      "notSuitableFor": "Experienced mountain bikers seeking technical trails.",
+      "bestSeason": "All year round",
+      "parking": "Various car parks around the Elan Valley reservoirs. Pay and display in some locations.",
+      "startPoint": {
+        "name": "Elan Valley Visitor Centre",
+        "lat": 52.2634,
+        "lng": -3.5342
+      },
+      "estimatedCost": "Free (parking £3-6)",
+      "operatorSlug": null,
+      "insiderTip": "Pack a picnic and enjoy it by one of the reservoirs. Visit the Elan Valley Visitor Centre to learn about the history of the dams and the area."
+    },
+    {
+      "name": "Machynlleth (Dyfi Forest) Trails",
+      "slug": "machynlleth-dyfi-forest-trails",
+      "description": "Dyfi Forest offers a wide range of unmarked natural trails around Machynlleth. Expect challenging climbs, technical descents, and stunning views. This area is known for its challenging terrain and remote feel. Navigation skills are essential.",
+      "difficulty": "Challenging",
+      "duration": "Varies",
+      "distance": "Varies",
+      "elevationGain": "Varies",
+      "bestFor": "Experienced mountain bikers seeking challenging natural trails and a sense of adventure.",
+      "notSuitableFor": "Beginners or those without good navigation skills.",
+      "bestSeason": "April-October",
+      "parking": "Limited parking available at various access points around Dyfi Forest. Please park responsibly.",
+      "startPoint": {
+        "name": "Machynlleth Town Square",
+        "lat": 52.5895,
+        "lng": -3.8412
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Download a GPX track of the trails onto your GPS device before you go, as mobile phone signal is limited. Be prepared for hike-a-bike sections."
+    },
+    {
+      "name": "Hafren Forest Circular",
+      "slug": "hafren-forest-circular",
+      "description": "A good introduction to Hafren Forest, combining forest roads with some natural singletrack. It offers a mix of climbing and descending with some nice views. The route is generally well-surfaced but can be muddy in places.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": "20km",
+      "elevationGain": "400m",
+      "bestFor": "Intermediate mountain bikers looking for a varied ride in a beautiful forest setting.",
+      "notSuitableFor": "Complete beginners. Requires some experience with off-road riding.",
+      "bestSeason": "April-October",
+      "parking": "Forestry England Hafren Forest car park, near Llanidloes. Free.",
+      "startPoint": {
+        "name": "Forestry England Hafren Forest Car Park",
+        "lat": 52.4634,
+        "lng": -3.5642
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Explore some of the unmarked trails branching off the main route. Pack a map and compass as signage can be limited."
+    },
+    {
+      "name": "Brechfa Forest - Raven Trail",
+      "slug": "brechfa-forest-raven-trail",
+      "description": "Although just outside of Mid Wales geographically, Brechfa Forest is easily accessible and offers fantastic mountain biking. The Raven Trail is a challenging red-graded trail with technical climbs and descents. Expect jumps, berms, and rocky sections.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": "17km",
+      "elevationGain": "480m",
+      "bestFor": "Experienced mountain bikers looking for a fast and flowing trail with technical features.",
+      "notSuitableFor": "Beginners or those uncomfortable with jumps and drops.",
+      "bestSeason": "All year round (can be muddy in winter)",
+      "parking": "Brechfa Forest car park. Pay and display.",
+      "startPoint": {
+        "name": "Brechfa Forest Car Park",
+        "lat": 51.9456,
+        "lng": -4.0234
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Check the trail conditions before you go, as it can be very muddy after rain. Be prepared for some steep climbs."
+    },
+    {
+      "name": "Irfon Forest Trails",
+      "slug": "irfon-forest-trails",
+      "description": "Irfon Forest provides more natural and unmarked trails, making it a great place to explore. Expect steep climbs, technical descents, and stunning views. Navigation skills are essential. This is a remote area, so be prepared.",
+      "difficulty": "Challenging",
+      "duration": "Varies",
+      "distance": "Varies",
+      "elevationGain": "Varies",
+      "bestFor": "Experienced mountain bikers seeking a challenging and remote riding experience.",
+      "notSuitableFor": "Beginners or those without good navigation skills.",
+      "bestSeason": "April-October",
+      "parking": "Limited parking available at various access points. Park responsibly.",
+      "startPoint": {
+        "name": "Abergwesyn Village",
+        "lat": 52.1678,
+        "lng": -3.589
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Download a GPX track of the trails onto your GPS device. Be prepared for hike-a-bike sections and carry plenty of water and snacks."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Mid Wales weather can be unpredictable, even in summer. Be prepared for sudden changes in conditions, including rain, wind, and fog, especially at higher elevations. Check the forecast before you go and pack appropriate clothing. High winds can make exposed trails dangerous.",
+    "weatherLinks": [
+      {
+        "name": "Met Office Mountain Weather Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain"
+      }
+    ],
+    "gearChecklist": [
+      "Mountain bike in good working order",
+      "Helmet – non-negotiable",
+      "Appropriate clothing – layers are essential, including a waterproof jacket",
+      "Spare inner tube, pump, and multi-tool – for basic repairs on the trail",
+      "First-aid kit – for minor injuries",
+      "Map and compass or GPS device – for navigation, especially in remote areas",
+      "Food and water – enough for the duration of your ride",
+      "Mobile phone – fully charged, but don't rely on signal",
+      "Bike repair kit – tyre levers, chain tool, puncture repair kit",
+      "Cash – some car parks and cafes don't accept cards"
+    ],
+    "gearHire": [
+      {
+        "name": "Summit Cycles",
+        "location": "Aberystwyth",
+        "url": "https://www.summitcycles.co.uk/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "4-5h",
+          "route": "Via M4 and A470"
+        },
+        {
+          "from": "Manchester",
+          "duration": "3-4h",
+          "route": "Via M6 and A470"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "2-3h",
+          "route": "Via A44 and A470"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "2-3h",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "Limited train services to Aberystwyth, Machynlleth, and Llanidloes. Bus services connect some towns and villages, but frequency can be limited. Consider the TrawsCymru T4 service.",
+      "parkingTips": "Parking can be limited at popular trailheads, especially during weekends and school holidays. Arrive early or consider alternative parking locations. Park responsibly and avoid blocking access for other users."
+    },
+    "safety": "Mountain biking can be dangerous. Always ride within your limits, wear a helmet, and be aware of other trail users. Check your bike before you ride and carry appropriate repair tools. Be prepared for changes in weather conditions and be aware of wildlife. In case of emergency, dial 999."
+  },
+  "faqs": [
+    {
+      "question": "What is the best mountain biking trail in Mid Wales?",
+      "answer": "It depends on your ability! For experienced riders, the Syfydrin at Nant yr Arian is iconic. For a less intense but still challenging ride, try the Summit Trail at Nant yr Arian, or the Raven Trail in Brechfa Forest if you're up for a short drive south."
+    },
+    {
+      "question": "Is mountain biking in Mid Wales suitable for beginners?",
+      "answer": "Yes, the Pendam Trail at Nant yr Arian and the Elan Valley Reservoirs Loop are excellent options for beginners and families. They offer smooth trails, gradual climbs, and stunning scenery."
+    },
+    {
+      "question": "Do I need a guided mountain biking tour in Mid Wales?",
+      "answer": "Not necessarily, but it can be beneficial, especially if you're new to the area or want to explore the more challenging and unmarked trails in Dyfi or Hafren Forest. A guide can provide valuable local knowledge and ensure your safety."
+    },
+    {
+      "question": "Where can I hire a mountain bike in Mid Wales?",
+      "answer": "Summit Cycles in Aberystwyth offer mountain bike hire. It's best to book in advance, especially during peak season."
+    },
+    {
+      "question": "What are the best places to stay near mountain biking trails in Mid Wales?",
+      "answer": "For Nant yr Arian, consider staying in Aberystwyth or Llanbadarn Fawr. For Elan Valley, Rhayader is a good base. Machynlleth is ideal for exploring Dyfi Forest."
+    },
+    {
+      "question": "Is there mobile phone signal in the Mid Wales forests?",
+      "answer": "Mobile phone signal can be patchy in many areas, especially in forests and valleys. Don't rely on your phone for navigation or communication. Carry a map and compass or a GPS device."
+    },
+    {
+      "question": "Are there any mountain bike races in Mid Wales?",
+      "answer": "Yes, keep an eye out for events organised by local clubs and organisations. The annual Red Kite Challenge has featured some Mid Wales locations. Check online forums and social media for up-to-date information."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "The Holey Trail",
+        "slug": "the-holey-trail",
+        "address": "Unit 7 Maengwynedd Centre, Machynlleth SY20 8EE",
+        "lat": 52.5894,
+        "lng": -3.8416,
+        "description": "Local bike shop offering sales, repairs, and servicing. Knowledgeable staff and a good selection of bikes and accessories. Very helpful for advice on local trails.",
+        "website": "https://www.theholeytrail.co.uk/",
+        "phone": "01654 700238",
+        "services": [
+          "gear sales",
+          "repairs",
+          "servicing"
+        ],
+        "googleRating": 4.8,
+        "reviewCount": 85
+      },
+      {
+        "name": "Summit Cycles",
+        "slug": "summit-cycles",
+        "address": "104a, Terrace Rd, Aberystwyth SY23 1NA",
+        "lat": 52.4143,
+        "lng": -4.0793,
+        "description": "Long-established bike shop in Aberystwyth offering a wide range of bikes, accessories, and clothing. Also offers bike hire and servicing. Known for their excellent customer service.",
+        "website": "https://www.summitcycles.co.uk/",
+        "phone": "01970 617070",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "servicing",
+          "boot fitting"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 150
+      },
+      {
+        "name": "Beics Menai Cycles",
+        "slug": "beics-menai-cycles",
+        "address": "Unit 6 Glanyrafon Enterprise Park, Aberystwyth SY23 3JQ",
+        "lat": 52.4179,
+        "lng": -4.0566,
+        "description": "Another excellent bike shop in Aberystwyth, offering sales, repairs, and servicing. Carries a wide range of brands and models. Well-equipped workshop.",
+        "website": "http://www.beicsmenai.co.uk/",
+        "phone": "01970 625678",
+        "services": [
+          "gear sales",
+          "repairs",
+          "servicing"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 92
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Number 21",
+        "slug": "number-21",
+        "address": "21 Pier St, Aberystwyth SY23 2LJ",
+        "lat": 52.4169,
+        "lng": -4.0834,
+        "description": "Popular cafe in Aberystwyth serving delicious breakfasts, lunches, and cakes. Perfect for a post-ride refuel. Known for its friendly atmosphere and generous portions.",
+        "vibe": "Relaxed cafe",
+        "priceRange": "££",
+        "website": "https://www.number21aber.co.uk/",
+        "knownFor": "Cakes, coffee, and hearty lunches"
+      },
+      {
+        "name": "Y Ffarmers",
+        "slug": "y-ffarmers",
+        "address": "Llanfihangel-y-Creuddyn, Aberystwyth SY23 4LA",
+        "lat": 52.3351,
+        "lng": -3.9076,
+        "description": "Traditional Welsh pub in a rural setting. Serves excellent food and local ales. A great place to relax and unwind after a day of riding. Regular live music.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "https://www.yffarmers.co.uk/",
+        "knownFor": "Real ales and traditional pub food"
+      },
+      {
+        "name": "Dyfi Cafe",
+        "slug": "dyfi-cafe",
+        "address": "Maengwyn St, Machynlleth SY20 8AA",
+        "lat": 52.5894,
+        "lng": -3.8409,
+        "description": "A friendly cafe in the heart of Machynlleth, serving delicious breakfasts, lunches, and snacks. Perfect for a quick refuel before or after a ride. A great spot for local information.",
+        "vibe": "Friendly cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Breakfasts and lunches"
+      },
+      {
+        "name": "White Horse Tavern",
+        "slug": "white-horse-tavern",
+        "address": "Parade St, Aberystwyth SY23 1PD",
+        "lat": 52.4168,
+        "lng": -4.0788,
+        "description": "Historic pub in Aberystwyth serving good food and a wide selection of drinks. A popular spot with locals and tourists alike. Great beer garden.",
+        "vibe": "Traditional pub",
+        "priceRange": "££",
+        "website": "https://www.sabrain.com/whitehorsetavern",
+        "knownFor": "Real ales and pub classics"
+      },
+      {
+        "name": "Medina",
+        "slug": "medina-aberystwyth",
+        "address": "Marine Terrace, Aberystwyth SY23 2AZ",
+        "lat": 52.4174,
+        "lng": -4.0819,
+        "description": "Relaxed restaurant with big portions of comfort food including burgers and pizzas. Has a great view over Cardigan Bay. Popular with families and large groups.",
+        "vibe": "Relaxed restaurant with sea views",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Burgers, Pizzas, Sea views"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Brynarth Country Guest House",
+        "slug": "brynarth-country-guest-house",
+        "description": "Located near Nant yr Arian, this B&B offers comfortable rooms and stunning views. Perfect for a relaxing getaway after a day of riding. Secure bike storage available.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Nant yr Arian, 5km",
+        "website": "https://www.brynarth.co.uk/"
+      },
+      {
+        "name": "YHA Danywenallt",
+        "slug": "yha-danywenallt",
+        "description": "A bunkhouse near the Elan Valley Reservoirs. A budget-friendly option for groups and solo travelers. Close to many trails and attractions. Self-catering facilities available.",
+        "type": "bunkhouse",
+        "priceRange": "£",
+        "nearestSpot": "Elan Valley, 3km",
+        "website": "https://www.yha.org.uk/hostel/yha-danywenallt"
+      },
+      {
+        "name": "Penrallei Campsite",
+        "slug": "penrallei-campsite",
+        "description": "A campsite near Machynlleth, offering basic camping facilities. A great option for budget-conscious travelers who want to be close to the Dyfi Forest trails.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Machynlleth, 2km",
+        "website": "null"
+      },
+      {
+        "name": "The Hafren",
+        "slug": "the-hafren-hotel",
+        "description": "Centrally located Llanidloes hotel. A good base for riding Hafren forest, with secure bike storage. Hotel has a restaurant and bar.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Hafren Forest, 5km",
+        "website": "https://www.thehafren.co.uk/"
+      },
+      {
+        "name": "Mid Wales Glamping",
+        "slug": "mid-wales-glamping",
+        "description": "Glamping near Nant yr Arian. Offers a luxurious and comfortable camping experience. Perfect for couples and families. Close to the trails and attractions.",
+        "type": "glamping",
+        "priceRange": "£££",
+        "nearestSpot": "Nant yr Arian, 7km",
+        "website": "http://www.midwalesglamping.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Red Kite Challenge",
+      "type": "race",
+      "monthTypical": "May",
+      "description": "A popular mountain bike race that takes place in various locations around Mid Wales. Various race lengths for differing abilities.",
+      "website": "https://www.redkitechallenge.co.uk/",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "registrationCost": 45
+    },
+    {
+      "name": "Welsh Enduro Series",
+      "type": "race",
+      "monthTypical": "May-September",
+      "description": "A series of enduro races held throughout Wales, with events often taking place in Mid Wales forests.",
+      "website": "https://www.welshenduroseries.co.uk/",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "registrationCost": 65
+    }
+  ],
+  "keywords": {
+    "primary": "mountain biking mid wales",
+    "secondary": [
+      "nant yr arian mountain biking",
+      "elan valley mountain biking",
+      "hafren forest mountain biking",
+      "dyfi forest mountain biking",
+      "mountain bike trails mid wales"
+    ],
+    "longTail": [
+      "mountain biking trails nant yr arian",
+      "family mountain biking mid wales",
+      "best mountain bike routes mid wales",
+      "guided mountain bike tours mid wales",
+      "mountain bike hire aberystwyth",
+      "mountain bike trails elan valley reservoirs",
+      "technical mountain biking mid wales",
+      "remote mountain biking wales",
+      "beginner mountain biking mid wales",
+      "mountain biking holidays wales"
+    ],
+    "localIntent": [
+      "mountain biking aberystwyth",
+      "mountain biking machynlleth",
+      "mountain biking llanidloes",
+      "mountain biking rhayader",
+      "mountain biking newtown"
+    ],
+    "commercialIntent": [
+      "mountain bike tour mid wales",
+      "mountain bike hire mid wales price",
+      "book mountain biking mid wales",
+      "guided mountain biking nant yr arian",
+      "best mountain biking holidays wales"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "snowdonia",
+        "label": "Mountain Biking in Snowdonia"
+      },
+      {
+        "regionSlug": "south-wales",
+        "label": "Mountain Biking in South Wales"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Mid Wales"
+      },
+      {
+        "activityTypeSlug": "watersports",
+        "label": "Watersports in Mid Wales"
+      },
+      {
+        "activityTypeSlug": "wild-swimming",
+        "label": "Wild Swimming in Mid Wales"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Summit Cycles",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "10 Terrace Rd, Aberystwyth",
+      "postcode": "SY23 1NY",
+      "lat": 52.4144,
+      "lng": -4.0806,
+      "phone": "01970 611300",
+      "website": "https://summitcycles.co.uk/",
+      "googleRating": 4.7,
+      "reviewCount": 150,
+      "description": "Long-established bike shop offering sales, repairs, and rentals. Essential for getting kitted out for the trails.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "bike sales",
+        "bike repairs",
+        "bike rentals",
+        "accessories"
+      ],
+      "priceRange": "££",
+      "notes": "A key shop for bike sales, service and rental in Aberystwyth. Stock of spares, knowledgeable staff.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "The Holey Trail",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 2, Maengwyn Street, Machynlleth",
+      "postcode": "SY20 8AA",
+      "lat": 52.5907,
+      "lng": -3.8459,
+      "phone": "01654 702599",
+      "website": "https://www.theholeytrail.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 80,
+      "description": "Bike shop located in Machynlleth providing a range of cycling products and services. A great place to grab some spares before hitting the Dyfi trails.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "bike sales",
+        "bike repairs",
+        "bike accessories",
+        "bike clothing"
+      ],
+      "priceRange": "££",
+      "notes": "Essential shop in Machynlleth, close to Dyfi Forest trails.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Dyfi Bike Park",
+      "type": "venue",
+      "category": "activity_provider",
+      "address": "Pantperthog, Machynlleth",
+      "postcode": "SY20 9AS",
+      "lat": 52.6179,
+      "lng": -3.7865,
+      "phone": null,
+      "website": "https://dyfibikepark.co.uk/",
+      "googleRating": 4.8,
+      "reviewCount": 650,
+      "description": "World-class downhill mountain bike park in the Dyfi Forest. Features a variety of trails for all skill levels.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "downhill trails",
+        "uplift service",
+        "bike hire",
+        "cafe"
+      ],
+      "priceRange": "£££",
+      "notes": "The must-ride DH park in Wales. Popular, book in advance.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Revolution Bike Park",
+      "type": "venue",
+      "category": "activity_provider",
+      "address": "Llangynog, Oswestry",
+      "postcode": "SY10 0EP",
+      "lat": 52.7884,
+      "lng": -3.2871,
+      "phone": "07943 887888",
+      "website": "https://revolutionbikepark.co.uk/",
+      "googleRating": 4.7,
+      "reviewCount": 450,
+      "description": "A popular bike park with downhill trails, jumps, and flow lines. Suitable for intermediate to advanced riders.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "downhill trails",
+        "uplift service",
+        "bike hire",
+        "cafe"
+      ],
+      "priceRange": "£££",
+      "notes": "Well established and challenging DH park near Llangynog.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Nant yr Arian Visitor Centre",
+      "type": "venue",
+      "category": "activity_provider",
+      "address": "Nant yr Arian, Ponterwyd, Aberystwyth",
+      "postcode": "SY23 3AD",
+      "lat": 52.4518,
+      "lng": -3.8704,
+      "phone": "0300 068 0400",
+      "website": "https://naturalresources.wales/days-out/places-to-visit/mid-wales/nant-yr-arian-visitor-centre/?lang=en",
+      "googleRating": 4.5,
+      "reviewCount": 1200,
+      "description": "Forestry England centre with mountain bike trails of varying difficulty. Offers stunning views and walking trails.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "mountain bike trails",
+        "walking trails",
+        "visitor centre",
+        "cafe",
+        "bike hire"
+      ],
+      "priceRange": "£",
+      "notes": "Trail centre, good for various levels of rider.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Coed y Brenin Forest Park",
+      "type": "venue",
+      "category": "activity_provider",
+      "address": "Coed y Brenin Forest Park, Dolgellau",
+      "postcode": "LL40 2HZ",
+      "lat": 52.7985,
+      "lng": -3.8665,
+      "phone": "0300 068 0400",
+      "website": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/coed-y-brenin-forest-park/?lang=en",
+      "googleRating": 4.6,
+      "reviewCount": 2500,
+      "description": "Famous forest park with a wide range of mountain bike trails, from beginner to expert. Offers bike hire and a cafe.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "mountain bike trails",
+        "bike hire",
+        "cafe",
+        "visitor centre"
+      ],
+      "priceRange": "£",
+      "notes": "One of the best known trail centres in the UK.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Number 21",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "21 Pier St, Aberystwyth",
+      "postcode": "SY23 2LJ",
+      "lat": 52.4134,
+      "lng": -4.0851,
+      "phone": "01970 611166",
+      "website": null,
+      "googleRating": 4.4,
+      "reviewCount": 350,
+      "description": "Popular restaurant in Aberystwyth serving a variety of dishes. Great for refuelling after a ride.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "restaurant",
+        "bar"
+      ],
+      "priceRange": "££",
+      "notes": "Good option for food in Aberystwyth.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Y Ffarmers",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Llanfihangel-y-Creuddyn, Aberystwyth",
+      "postcode": "SY23 4LA",
+      "lat": 52.3765,
+      "lng": -3.9235,
+      "phone": "01970 820335",
+      "website": "http://www.yffarmers.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 400,
+      "description": "Traditional Welsh pub serving local ales and hearty food. Ideal for a post-ride meal and drink.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "pub",
+        "restaurant"
+      ],
+      "priceRange": "££",
+      "notes": "Good food, great pub, near trails.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Dyfi Cafe",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Maengwyn St, Machynlleth",
+      "postcode": "SY20 8AA",
+      "lat": 52.5908,
+      "lng": -3.8464,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.3,
+      "reviewCount": 200,
+      "description": "Friendly cafe in Machynlleth offering a range of snacks and meals. A good spot for pre- or post-ride refreshments.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "cafe"
+      ],
+      "priceRange": "£",
+      "notes": "Convenient cafe in Machynlleth.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "White Horse Tavern",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "41 Bridge St, Aberystwyth",
+      "postcode": "SY23 1PY",
+      "lat": 52.4161,
+      "lng": -4.0783,
+      "phone": "01970 617732",
+      "website": null,
+      "googleRating": 4.2,
+      "reviewCount": 250,
+      "description": "Traditional pub in Aberystwyth with a good selection of beers and food. A good spot to relax after a day on the trails.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "pub",
+        "restaurant"
+      ],
+      "priceRange": "££",
+      "notes": "Standard pub fare in Aberystwyth.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "MB Wales",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Llanidloes, Powys",
+      "postcode": "SY18",
+      "lat": 52.4578,
+      "lng": -3.4456,
+      "phone": "07967 307878",
+      "website": "https://mbwales.com/",
+      "googleRating": null,
+      "reviewCount": null,
+      "description": "Mountain bike guiding and skills coaching in Mid Wales. Tailored experiences for all abilities.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "guided rides",
+        "skills coaching"
+      ],
+      "priceRange": "££",
+      "notes": "Local guiding company.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Beics Brenin Bike Hire",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Coed y Brenin Forest Park, Dolgellau",
+      "postcode": "LL40 2HZ",
+      "lat": 52.7985,
+      "lng": -3.8665,
+      "phone": "01341 440728",
+      "website": "http://www.beicsbrenin.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 67,
+      "description": "Bike hire located within Coed y Brenin Forest Park. Offers a wide range of bikes for all ages and abilities.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "bike rentals",
+        "accessories"
+      ],
+      "priceRange": "££",
+      "notes": "On site bike hire at Coed y Brenin.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Revolution Cafe",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Llangynog, Oswestry",
+      "postcode": "SY10 0EP",
+      "lat": 52.7884,
+      "lng": -3.2871,
+      "phone": null,
+      "website": "https://revolutionbikepark.co.uk/onsite/",
+      "googleRating": null,
+      "reviewCount": null,
+      "description": "Cafe located at Revolution Bike Park. Serves hot and cold food and drinks.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "cafe"
+      ],
+      "priceRange": "£",
+      "notes": "Cafe at Revolution.",
+      "inDatabase": false,
+      "priority": "low"
+    },
+    {
+      "name": "Clwyd Gate Motel",
+      "type": "post_activity",
+      "category": "accommodation",
+      "address": "Clwyd Gate, Llanbedr Dyffryn Clwyd, Ruthin",
+      "postcode": "LL15 1YF",
+      "lat": 53.133,
+      "lng": -3.3808,
+      "phone": "01824 703030",
+      "website": "https://www.clwydgatemotel.co.uk/",
+      "googleRating": 4.3,
+      "reviewCount": 350,
+      "description": "Motel located within a short drive from trail centres. Offers comfortable accommodation and a restaurant.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "accommodation",
+        "restaurant",
+        "bar"
+      ],
+      "priceRange": "££",
+      "notes": "Accommodation near some trails.",
+      "inDatabase": false,
+      "priority": "low"
+    }
+  ]
+}

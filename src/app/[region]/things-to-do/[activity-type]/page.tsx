@@ -6,7 +6,9 @@ import {
   getActivitiesByType, 
   getAllActivityTypes 
 } from "@/lib/queries";
+import { getComboPageData } from "@/lib/combo-data";
 import { ActivityCard } from "@/components/cards/activity-card";
+import { ComboEnrichment } from "@/components/combo/ComboEnrichment";
 import { 
   ChevronRight, 
   MapPin, 
@@ -24,6 +26,22 @@ interface PageProps {
   }>;
 }
 
+export async function generateMetadata({ params }: PageProps) {
+  const { region: regionSlug, "activity-type": activityTypeSlug } = await params;
+  const comboData = getComboPageData(regionSlug, activityTypeSlug);
+  
+  if (comboData) {
+    return {
+      title: comboData.metaTitle,
+      description: comboData.metaDescription,
+    };
+  }
+  
+  return {
+    title: `${activityTypeSlug.replace(/-/g, " ")} in ${regionSlug.replace(/-/g, " ")} | Adventure Wales`,
+  };
+}
+
 export default async function ActivityListingPage({ params }: PageProps) {
   const { region: regionSlug, "activity-type": activityTypeSlug } = await params;
 
@@ -39,6 +57,7 @@ export default async function ActivityListingPage({ params }: PageProps) {
 
   const activities = await getActivitiesByType(regionSlug, activityTypeSlug);
   const allActivityTypes = await getAllActivityTypes();
+  const comboData = getComboPageData(regionSlug, activityTypeSlug);
 
   // 2. Calculate Stats
   const uniqueOperators = new Set(activities.map((a) => a.operator?.id).filter(Boolean));
@@ -78,7 +97,7 @@ export default async function ActivityListingPage({ params }: PageProps) {
           {activityType.name} in {region.name}
         </h1>
         <p className="text-sm lg:text-lg text-gray-500 max-w-3xl">
-          {activityType.description || `Explore the best ${activityType.name.toLowerCase()} experiences in ${region.name}.`}
+          {comboData?.strapline || activityType.description || `Explore the best ${activityType.name.toLowerCase()} experiences in ${region.name}.`}
         </p>
       </div>
 
@@ -194,6 +213,13 @@ export default async function ActivityListingPage({ params }: PageProps) {
           />
         ))}
       </div>
+
+      {/* Combo Page Enrichment — editorial content, spots, practical info */}
+      {comboData && (
+        <div className="mb-10">
+          <ComboEnrichment data={comboData} regionName={region.name} />
+        </div>
+      )}
 
       {/* About Section (Accordion) */}
       <div className="mb-8 lg:mb-12">

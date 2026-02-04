@@ -1,5 +1,6 @@
 import { getEvents, getAllRegions } from "@/lib/queries";
 import { EventsFilters } from "@/components/events/EventsFilters";
+import { getPageImages } from "@/lib/archive-images";
 
 export default async function EventsPage() {
   const [events, regions] = await Promise.all([
@@ -24,6 +25,15 @@ export default async function EventsPage() {
           <p className="text-white/80">
             Trail runs, triathlons, MTB races, and adventure festivals across Wales. With honest difficulty info so you know what you're signing up for.
           </p>
+
+          {/* Event image strip */}
+          <div className="flex gap-3 mt-6 overflow-x-auto pb-2 scrollbar-hide">
+            {[...getPageImages("events-festival", 3), ...getPageImages("events-races", 2)].map((img, idx) => (
+              <div key={idx} className="relative flex-shrink-0 w-48 h-28 rounded-xl overflow-hidden">
+                <img src={img.src} alt={img.alt} loading="lazy" className="w-full h-full object-cover" />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

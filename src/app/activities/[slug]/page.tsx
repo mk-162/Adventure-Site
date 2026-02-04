@@ -8,6 +8,7 @@ import { ActivityGallery } from "@/components/activities/activity-gallery";
 import dynamic from "next/dynamic";
 import type { MapMarker } from "@/components/ui/MapView";
 import { ActivityLocationMap } from "@/components/maps/ActivityLocationMap";
+import { ClaimListingBanner } from "@/components/operators/ClaimListingBanner";
 import { 
   MapPin, Clock, Calendar, Users, Star, 
   CheckCircle, XCircle, ExternalLink, Share2, Heart, Navigation
@@ -297,6 +298,17 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
               </p>
             </section>
 
+            {/* Claim Banner — prominent for stub listings */}
+            {operator && operator.claimStatus !== "claimed" && operator.claimStatus !== "premium" && 
+             (!activity.description || activity.description.length < 200) && (
+              <ClaimListingBanner
+                operatorSlug={operator.slug}
+                operatorName={operator.name}
+                variant="full"
+                isStub={true}
+              />
+            )}
+
             {/* Photo Gallery */}
             {activityType?.slug && (
               <ActivityGallery 
@@ -450,6 +462,17 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                 </div>
               )}
             </div>
+
+            {/* Claim Listing CTA — sidebar */}
+            {operator && operator.claimStatus !== "claimed" && operator.claimStatus !== "premium" && (
+              <div className="mt-4">
+                <ClaimListingBanner
+                  operatorSlug={operator.slug}
+                  operatorName={operator.name}
+                  variant="sidebar"
+                />
+              </div>
+            )}
           </div>
         </div>
 

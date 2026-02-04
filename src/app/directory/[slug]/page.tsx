@@ -7,6 +7,7 @@ import {
 } from "@/lib/queries";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
+import { ClaimListingBanner } from "@/components/operators/ClaimListingBanner";
 import { 
   ChevronRight, 
   MapPin, 
@@ -293,6 +294,17 @@ export default async function OperatorProfilePage({ params }: Props) {
               )}
             </section>
 
+            {/* Claim Banner — inline for mobile (sidebar handles desktop) */}
+            {operator.claimStatus !== "claimed" && operator.claimStatus !== "premium" && (
+              <div className="lg:hidden">
+                <ClaimListingBanner
+                  operatorSlug={operator.slug}
+                  operatorName={operator.name}
+                  variant="inline"
+                />
+              </div>
+            )}
+
             {/* Experiences Grid */}
             <section id="experiences">
               <div className="flex items-center justify-between mb-4 sm:mb-6">
@@ -474,19 +486,12 @@ export default async function OperatorProfilePage({ params }: Props) {
           {/* Sidebar Column (desktop only) */}
           <aside className="hidden lg:block lg:col-span-4 space-y-6">
             {/* Claim CTA - Only if not claimed */}
-            {(operator.claimStatus === 'stub' || !operator.claimStatus) && (
-              <div className="bg-slate-50 rounded-xl border border-slate-200 p-6 text-center">
-                <h3 className="font-bold text-slate-900 mb-2">Is this your business?</h3>
-                <p className="text-sm text-slate-500 mb-4">
-                  Claim this listing to update your details, add photos, and get more enquiries.
-                </p>
-                <Link
-                  href={`/claim/${operator.slug}`}
-                  className="inline-block w-full bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold py-2 px-4 rounded-lg transition-colors"
-                >
-                  Claim This Listing
-                </Link>
-              </div>
+            {operator.claimStatus !== "claimed" && operator.claimStatus !== "premium" && (
+              <ClaimListingBanner
+                operatorSlug={operator.slug}
+                operatorName={operator.name}
+                variant="sidebar"
+              />
             )}
 
             {/* Action CTA Card — Always visible */}

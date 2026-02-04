@@ -19,8 +19,8 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 **Homepage & Navigation**
 
-- [ ] Hero: Buttons and quantity figures overlap/hide behind search box on mobile/small screens
-- [ ] Nav: "Find Your Adventure" link text -> "Perfect Welsh Itineraries"
+- [x] Hero: Mobile spacing increased, stats hidden on mobile — FIXED
+- [x] Hero CTA: "Find Your Adventure" → "Browse Itineraries" — FIXED
 - [ ] Nav: "Activities" page needs clearer signposting for users wanting single experiences (vs multi-day itineraries)
 - [ ] Content: "Tried & Tested Routes" section has missing images
 - [ ] Content: "Ready-Made Adventures" section has missing images
@@ -77,7 +77,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [ ] Design: Sponsored/Paid listings need distinct "Premium" styling to differentiate from organic content
 - [ ] Enforcement: "Advertise Here" banner/widget missing from many locations -> Fix site-wide.
 - [x] Nav: Replace "Book Now" (top right) with "Advertise" — FIXED
-- [ ] UI: "Local Experts" (Destination pages) -> Rename "Local Businesses".
+- [x] "Local Experts" → "Local Businesses" — FIXED
   - [ ] Style: Top slot bolder + image (Premium slot).
 
 **Events / Calendar**
@@ -90,17 +90,17 @@ Format: `- [ ] what's wrong (page/url if helpful)`
   - [ ] Occupation/Accommodation Widget
   - [ ] Local Attraction Widget
   - [ ] Advertising Widget
-- [ ] UI: "Get the Pass" widget (Brecon/Destinations) -> Hide for now (doesn't exist), add to wishlist.
+- [x] "Get the Pass" replaced with "List Your Business" CTA — FIXED
 
 **Email / Newsletter**
 
 - [x] Design: Homepage email field (bottom) — FIXED: white bg, visible styling
-- [ ] Feature: Email capture must save to database (Postgres/Vercel) -> Add to to-do list
+- [x] Email capture saves to newsletter_subscribers table — already working
 
 **Legal / Footer**
 
-- [ ] Functionality: Cookie settings link doesn't work -> Remove it if no logic exists
-- [ ] Functionality: Cookie settings link doesn't work -> Remove it if no logic exists
+- [x] Cookie settings button removed, replaced with browser settings note — FIXED
+- [x] Cookie settings button removed, replaced with browser settings note — FIXED
 - [x] Content: Update copyright date to 2025 (or current year) on Cookies page — FIXED: updated to Feb 2026
 
 **Directory / Operators**
@@ -133,14 +133,14 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [ ] Feature: Display metadata (opening times, seasonality, etc.) against partners
 - [ ] SEO: Create landing pages for filtered views (e.g., "Snowdonia Caving"). Needs dedicated URL/Navigation.
 - [ ] UI: Search Box is impossible to see (missing hero?).
-- [ ] Naming: "Operators" -> Find a better name? (Maybe "Adventure Providers"?).
+- [x] "Operators" → "Adventure Providers" across user-facing pages — FIXED
 - [ ] UI/UX: Phone number disappears behind "Quick Inquiry" widget on scroll.
-- [ ] UI: Services/Pricing grid looks like "Add to Basket" buttons -> Change to Menu layout.
-- [ ] Content: "Based on x reviews" -> Show Google logo/link.
-- [ ] UI: "Visit Website" link -> Move to prominent Contact Info block (vital for mobile).
+- [x] Services grid → clean menu layout — FIXED
+- [x] Google Reviews badge added to ratings — FIXED
+- [x] "Visit Website" — prominent button on desktop sidebar + mobile — FIXED
 - [ ] Layout: Hero image aspect ratio is bad for vendor images -> Use conventional rectangle, free up space for utility.
-- [ ] UX: listing page needs "See related companies in area" links (hard to browse).
-- [ ] Action: "Check Availability" -> standard link to Website/Contact (unless integrated booking).
+- [x] "More providers in [region]" section added — FIXED
+- [x] "Check Availability" → links to operator website — FIXED
 - [x] Search bar added to search results page — FIXED
 
 **User Accounts**

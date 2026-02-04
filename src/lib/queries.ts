@@ -225,16 +225,29 @@ export async function getOperators(options?: {
   regionSlug?: string;
   activityTypeSlug?: string;
   claimStatus?: "stub" | "claimed" | "premium";
+  category?: string;
   limit?: number;
   offset?: number;
 }) {
-  // For now, return all claimed operators
-  // TODO: Filter by region/activity type arrays
+  const conditions = [];
+
+  if (options?.claimStatus) {
+    conditions.push(eq(operators.claimStatus, options.claimStatus));
+  }
+  // Default: show all operators (stub, claimed, premium)
+
+  if (options?.category) {
+    conditions.push(eq(operators.category, options.category as any));
+  }
+
   let query = db
     .select()
     .from(operators)
-    .where(eq(operators.claimStatus, options?.claimStatus || "claimed"))
     .orderBy(asc(operators.name));
+
+  if (conditions.length > 0) {
+    query = query.where(and(...conditions)) as typeof query;
+  }
 
   if (options?.limit) {
     query = query.limit(options.limit) as typeof query;

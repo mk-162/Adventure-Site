@@ -8,6 +8,7 @@ interface Operator {
   id: number;
   name: string;
   slug: string;
+  category: string | null;
   claimStatus: string | null;
   regions?: Array<{ id: number; slug: string; name: string }>;
   activityTypes?: Array<{ id: number; slug: string; name: string }>;
@@ -32,10 +33,19 @@ interface DirectoryFiltersProps {
   activityTypes: ActivityType[];
 }
 
+const categoryLabels: Record<string, string> = {
+  activity_provider: "🏔️ Activity Providers",
+  gear_rental: "🚲 Gear & Hire",
+  food_drink: "🍽️ Food & Drink",
+  transport: "🚌 Transport",
+  accommodation: "🏠 Accommodation",
+};
+
 export function DirectoryFilters({ operators, regions, activityTypes }: DirectoryFiltersProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedRegion, setSelectedRegion] = useState('');
   const [selectedActivityType, setSelectedActivityType] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedRating, setSelectedRating] = useState('');
 
   // Filter operators
@@ -65,6 +75,13 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
         }
       }
 
+      // Category filter
+      if (selectedCategory) {
+        if (operator.category !== selectedCategory) {
+          return false;
+        }
+      }
+
       // Rating filter
       if (selectedRating) {
         const rating = operator.googleRating ? parseFloat(operator.googleRating) : 0;
@@ -80,7 +97,13 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
 
       return true;
     });
-  }, [operators, searchQuery, selectedRegion, selectedActivityType, selectedRating]);
+  }, [operators, searchQuery, selectedRegion, selectedActivityType, selectedCategory, selectedRating]);
+
+  // Get available categories from the data
+  const availableCategories = useMemo(() => {
+    const cats = new Set(operators.map(op => op.category).filter(Boolean));
+    return Array.from(cats).sort();
+  }, [operators]);
 
   // Separate featured from regular
   const featuredOperators = filteredOperators.filter(op => op.claimStatus === "premium");
@@ -98,10 +121,10 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
           </nav>
 
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
-            Adventure Operators
+            Adventure Directory
           </h1>
           <p className="text-white/80">
-            30+ vetted Welsh operators. Qualified, insured, and actually good at what they do.
+            {operators.length}+ Welsh adventure businesses. Operators, gear hire, food, transport — all in one place.
           </p>
 
           <div className="mt-6">
@@ -120,6 +143,18 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
       <section className="bg-white border-b sticky top-16 z-30">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex flex-wrap gap-2">
+            <select 
+              value={selectedCategory}
+              onChange={(e) => setSelectedCategory(e.target.value)}
+              className="border border-gray-200 rounded-lg px-3 py-2 text-sm"
+            >
+              <option value="">All Categories</option>
+              {availableCategories.map((cat) => (
+                <option key={cat} value={cat!}>
+                  {categoryLabels[cat!] || cat}
+                </option>
+              ))}
+            </select>
             <select 
               value={selectedRegion}
               onChange={(e) => setSelectedRegion(e.target.value)}
@@ -217,6 +252,7 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
                   setSearchQuery('');
                   setSelectedRegion('');
                   setSelectedActivityType('');
+                  setSelectedCategory('');
                   setSelectedRating('');
                 }}
                 className="text-[#f97316] hover:text-[#ea580c] font-medium text-sm"

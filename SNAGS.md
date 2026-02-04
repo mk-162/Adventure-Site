@@ -74,11 +74,11 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 **Commercial / Ads**
 
 - [x] Logic: Unsold ad slots must show "Claim listing" or "Advertise here" widgets — AdvertiseWidget + claim listing banners in place
-- [ ] Design: Sponsored/Paid listings need distinct "Premium" styling to differentiate from organic content
+- [x] Design: Sponsored/Paid listings need distinct "Premium" styling to differentiate from organic content — gold border + badge on premium cards
 - [x] Enforcement: "Advertise Here" banner/widget missing from many locations -> Fix site-wide. — AdvertiseWidget added to events, activities, directory
 - [x] Nav: Replace "Book Now" (top right) with "Advertise" — FIXED
 - [x] "Local Experts" → "Local Businesses" — FIXED
-  - [ ] Style: Top slot bolder + image (Premium slot).
+  - [x] Style: Top slot bolder + image (Premium slot). — premium featured cards styled
 
 **Events / Calendar**
 
@@ -122,10 +122,10 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [x] Share button — FIXED (Web Share API + clipboard fallback)
 - [x] Heart/Save button — FIXED (login prompt)
 - [x] Feature: Add `mailto` link below inquiry form for manual emailing — FIXED
-  - [ ] Subject Line: "From Adventure Wales"
+  - [x] Subject Line: "From Adventure Wales" — already set on all mailto links
 
 - [x] Feature: Add `mailto` link below inquiry form for manual emailing — FIXED
-  - [ ] Subject Line: "From Adventure Wales"
+  - [x] Subject Line: "From Adventure Wales" — already set on all mailto links
 
 **Directory (Premium & General)**
 
@@ -204,8 +204,8 @@ The following pages are confirmed missing hero images in the seed data/code:
 - [x] Empty sections already guarded + Top Experiences moved to top — FIXED
 - [ ] Integration: Add Booking.com widget to all "Where to Stay" pages
 - [ ] UI: "Activities", "Operators", etc. links at top look like buttons -> Make them functional anchors/links.
-- [ ] UI: Weather Widget -> Too big. Move to right, make smaller.
-  - [ ] UI: Climate Chart -> Move to a "Tab" inside the weather widget.
+- [x] UI: Weather Widget -> Too big. Move to right, make smaller. — compact weather widget
+  - [x] UI: Climate Chart -> Move to a "Tab" inside the weather widget. — integrated as tab in weather widget
 - [ ] Content: "Get In There" (Transport) section needs massive expansion:
   - Links to Railway & Bus timetables.
   - Taxi services info (list of top minicabs).
@@ -265,8 +265,8 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 **Activities / "What You Do In Wales"**
 
-- [ ] UI: Top activity buttons list is too short -> Add "More" button at the end
-- [ ] Feature: "More" button should link to new "All Activities" page (listing *every* activity)
+- [x] UI: Top activity buttons list is too short -> Add "More" button at the end — "View all 18 activity types" link added
+- [x] Feature: "More" button should link to new "All Activities" page (listing *every* activity) — links to /activities
 - [ ] Content: Expand activity scope to include Stag/Hen dos, Paintballing, Sightseeing
 
 **Advertise Page (formerly /for-operators)**

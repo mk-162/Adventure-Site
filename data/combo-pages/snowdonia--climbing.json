@@ -1,0 +1,592 @@
+{
+  "regionSlug": "snowdonia",
+  "activityTypeSlug": "climbing",
+  "title": "Climbing in Snowdonia",
+  "strapline": "From Idwal's forgiving slabs to Cloggy's uncompromising walls, Snowdonia offers a lifetime of climbing challenges.",
+  "metaTitle": "Climbing in Snowdonia | Adventure Wales",
+  "metaDescription": "Discover the best climbing in Snowdonia! Find routes, gear, guides, and essential tips for your adventure in North Wales.",
+  "heroAlt": "Climber ascending a rock face on Tryfan, Snowdonia, under a clear blue sky.",
+  "introduction": "For generations, Snowdonia has been the heart of Welsh climbing. It's not just the stunning scenery – though Tryfan's silhouette against the dawn is enough to stop you in your tracks. It's the sheer variety of rock, the depth of history etched into every crag, and the vibrant climbing community that makes this place so special.\n\nFrom the approachable Idwal Slabs – perfect for beginners and those honing their skills – to the intimidating north face of Clogwyn Du'r Arddu (Cloggy), which demands respect and experience, Snowdonia offers something for every climber. You'll find everything from single-pitch sport routes at Tremadoc to multi-pitch traditional climbs on Dinas Cromlech.\n\nWhat sets Snowdonia apart is its ever-changing character. A sunny day on the coast can quickly turn into a blustery gale in the mountains, testing your skills and adaptability. Navigation can be tricky, and route finding even on well-trodden climbs requires attention. It’s not always easy, but that’s what makes the summit so rewarding.\n\nSnowdonia is best suited for climbers who appreciate a bit of grit, a touch of history, and a good pint at the end of the day. Whether you're a seasoned alpinist or just starting your climbing journey, you'll find your place here, and you'll undoubtedly be back for more. Remember, respect the mountains, know your limits, and enjoy the adventure! Climbing in Snowdonia is an experience you won't forget.",
+  "bestSeason": "April-October",
+  "difficultyRange": "Beginner to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Tryfan - North Ridge",
+      "slug": "tryfan-north-ridge",
+      "description": "A classic scramble/easy climb that’s a must-do. This iconic route ascends the dramatic north ridge of Tryfan, offering incredible views and exposed scrambling. It’s a great introduction to mountaineering, but be prepared for some tricky sections and route finding.",
+      "difficulty": "Moderate",
+      "duration": "4-6 hours round trip",
+      "distance": null,
+      "elevationGain": "917m",
+      "bestFor": "Experienced hikers, beginners wanting a guided scramble",
+      "notSuitableFor": "Those afraid of heights or inexperienced in navigation.",
+      "bestSeason": "May-September",
+      "parking": "Ogwen Cottage car park (A5). Get there early (before 8am in summer) or park further down the road and walk up.",
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.12,
+        "lng": -4.004
+      },
+      "estimatedCost": "Free (parking £5-10) or £55pp guided",
+      "operatorSlug": "snowdonia-mountain-guides",
+      "insiderTip": "Descend via the South Ridge for a less crowded (but still challenging) route."
+    },
+    {
+      "name": "Idwal Slabs - Hope",
+      "slug": "idwal-slabs-hope",
+      "description": "A very popular, easy-angled climb perfect for beginners. Hope provides a fantastic introduction to multi-pitch climbing. The rock is generally grippy, but can be slippery when wet. Expect queues on weekends!",
+      "difficulty": "Easy",
+      "duration": "3-4 hours round trip",
+      "distance": null,
+      "elevationGain": "null",
+      "bestFor": "Beginners, groups, climbing courses",
+      "notSuitableFor": "Those seeking solitude or high-adrenaline routes.",
+      "bestSeason": "April-October",
+      "parking": "Ogwen Cottage car park (A5). As above – arrive early!",
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.12,
+        "lng": -4.004
+      },
+      "estimatedCost": "Free (parking £5-10) or £65pp guided",
+      "operatorSlug": "plas-y-brenin",
+      "insiderTip": "Climb early or late in the day to avoid the crowds. There's a cafe at Ogwen Cottage for a post-climb cuppa."
+    },
+    {
+      "name": "Clogwyn Du'r Arddu (Cloggy) - Great Wall",
+      "slug": "clogwyn-dur-arddu-great-wall",
+      "description": "A legendary, serious climb on the imposing north face of Cloggy. The Great Wall is a demanding multi-pitch route that requires significant experience and trad climbing skills. Expect exposure, challenging moves, and incredible views (if the weather cooperates!).",
+      "difficulty": "Expert",
+      "duration": "6-8 hours round trip",
+      "distance": null,
+      "elevationGain": "null",
+      "bestFor": "Highly experienced trad climbers",
+      "notSuitableFor": "Anyone without extensive climbing experience.",
+      "bestSeason": "May-September (weather dependent)",
+      "parking": "Small layby near Llyn Cwellyn (A4085). Walk in required.",
+      "startPoint": {
+        "name": "Llyn Cwellyn",
+        "lat": 53.075,
+        "lng": -4.145
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Check the weather forecast obsessively. Cloggy is unforgiving in poor conditions. Bring a headtorch, just in case."
+    },
+    {
+      "name": "Dinas Cromlech - Cemetery Gates",
+      "slug": "dinas-cromlech-cemetery-gates",
+      "description": "A popular and historic climb with great exposure. Cemetery Gates is a classic HVS that offers fantastic climbing on solid rock. Expect a mix of cracks, corners, and face climbing. There is some significant exposure.",
+      "difficulty": "Challenging",
+      "duration": "4-5 hours round trip",
+      "distance": null,
+      "elevationGain": "null",
+      "bestFor": "Experienced trad climbers",
+      "notSuitableFor": "Beginners",
+      "bestSeason": "April-October",
+      "parking": "Laybys along the A4086 in the Llanberis Pass. Arrive early to secure a spot.",
+      "startPoint": {
+        "name": "Llanberis Pass",
+        "lat": 53.113,
+        "lng": -4.047
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Practice placing gear beforehand, as the route requires solid trad skills."
+    },
+    {
+      "name": "Tremadoc - Vector",
+      "slug": "tremadoc-vector",
+      "description": "A fantastic multipitch at Tremadoc with a brilliant atmosphere. The setting sun creates a beautiful glow on the cliff. The climbs are long and sustained with tricky sections.",
+      "difficulty": "Challenging",
+      "duration": "4-5 hours round trip",
+      "distance": null,
+      "elevationGain": "null",
+      "bestFor": "Experienced trad climbers",
+      "notSuitableFor": "Beginners",
+      "bestSeason": "April-October",
+      "parking": "Limited parking available at the base of the cliffs",
+      "startPoint": {
+        "name": "Tremadog Square",
+        "lat": 52.944,
+        "lng": -4.191
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Take plenty of water and snacks as the routes can be long. Enjoy a well deserved pint at the pub nearby afterwards!"
+    },
+    {
+      "name": "Dinas Mot - Flying Buttress",
+      "slug": "dinas-mot-flying-buttress",
+      "description": "A sheltered crag close to Llanberis, ideal for less than perfect weather. Flying Buttress is a classic, popular route. Can be wet.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours round trip",
+      "distance": null,
+      "elevationGain": "null",
+      "bestFor": "Beginners and those seeking shelter from the elements",
+      "notSuitableFor": "Those looking for big mountain experiences.",
+      "bestSeason": "Year-round (weather dependent)",
+      "parking": "Laybys along the A4086 in the Llanberis Pass",
+      "startPoint": {
+        "name": "Llanberis Pass",
+        "lat": 53.115,
+        "lng": -4.048
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Check the rock conditions before heading out, as Dinas Mot can be prone to seepage."
+    },
+    {
+      "name": "Craig yr Ysfa - Main Wall",
+      "slug": "craig-yr-ysfa-main-wall",
+      "description": "A quieter alternative to the more popular crags, offering excellent climbing on solid rock. This crag is located further east, offering a different perspective on Snowdonia. Great for a sunny day.",
+      "difficulty": "Moderate",
+      "duration": "4-5 hours round trip",
+      "distance": null,
+      "elevationGain": "null",
+      "bestFor": "Intermediate trad climbers seeking a less crowded experience",
+      "notSuitableFor": "Beginners",
+      "bestSeason": "April-October",
+      "parking": "Limited parking near the crag.",
+      "startPoint": {
+        "name": "Craig yr Ysfa parking",
+        "lat": 53.134,
+        "lng": -3.643
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Bring insect repellent, as midges can be a nuisance."
+    },
+    {
+      "name": "Milestone Buttress - Direct Route",
+      "slug": "milestone-buttress-direct-route",
+      "description": "Easy accessible from the roadside and offering good climbing on solid rock. Direct Route is a popular climb.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours round trip",
+      "distance": null,
+      "elevationGain": "null",
+      "bestFor": "Those seeking convenience and classic climbs",
+      "notSuitableFor": "Those looking for wilderness experiences.",
+      "bestSeason": "April-October",
+      "parking": "Laybys along the A5 near Milestone Buttress",
+      "startPoint": {
+        "name": "Milestone Buttress parking",
+        "lat": 53.123,
+        "lng": -3.989
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Be mindful of road traffic when approaching the crag."
+    },
+    {
+      "name": "Lliwedd - East Peak",
+      "slug": "lliwedd-east-peak",
+      "description": "Long, serious routes with a remote feel and stunning views of Llyn Llydaw. Climbing here feels like a proper mountain adventure. The routes are often committing and require good route-finding skills.",
+      "difficulty": "Challenging",
+      "duration": "6-7 hours round trip",
+      "distance": null,
+      "elevationGain": "null",
+      "bestFor": "Experienced mountaineers seeking a remote climbing experience",
+      "notSuitableFor": "Beginners",
+      "bestSeason": "May-September (weather dependent)",
+      "parking": "Pen-y-Pass car park. Very expensive (£20/day) and fills up early.",
+      "startPoint": {
+        "name": "Pen-y-Pass",
+        "lat": 53.071,
+        "lng": -4.023
+      },
+      "estimatedCost": "Free (parking £20)",
+      "operatorSlug": null,
+      "insiderTip": "Consider using the Sherpa bus to access Pen-y-Pass, as parking is extremely limited and expensive."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Snowdonia's weather is notoriously unpredictable. Mountain conditions can change rapidly, so check the forecast thoroughly before heading out, even on sunny days. Strong winds, rain, and low visibility are common, especially at higher altitudes. Be prepared for all eventualities.",
+    "weatherLinks": [
+      {
+        "name": "Mountain Weather Information Service (MWIS)",
+        "url": "https://www.mwis.org.uk/"
+      },
+      {
+        "name": "Met Office Mountain Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain"
+      }
+    ],
+    "gearChecklist": [
+      "Climbing shoes (appropriate for the rock type)",
+      "Harness and belay device (essential for safety)",
+      "Helmet (protect your head from falling rocks)",
+      "Rope (check the length and diameter)",
+      "Quickdraws and slings (for clipping into protection)",
+      "Trad rack (if climbing trad routes)",
+      "Warm layers (even in summer, temperatures can drop quickly)",
+      "Waterproof jacket and trousers (essential for unpredictable weather)",
+      "Food and water (enough for the entire day)",
+      "Headtorch (in case of delays)",
+      "Navigation tools (map and compass or GPS device)",
+      "First-aid kit (for minor injuries)"
+    ],
+    "gearHire": [
+      {
+        "name": "Joe Brown's",
+        "location": "Llanberis",
+        "url": "https://www.joe-brown.com/"
+      },
+      {
+        "name": "V12 Outdoor",
+        "location": "Llanberis",
+        "url": "https://v12outdoor.com/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5h",
+          "route": "Via M6 and A5"
+        },
+        {
+          "from": "Manchester",
+          "duration": "2h 30m",
+          "route": "Via M56 and A55"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3h 30m",
+          "route": "Via M6 and A5"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "4h 30m",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "Bangor is the nearest train station. From there, take the Sherpa bus service to various locations in Snowdonia.",
+      "parkingTips": "Parking is limited and expensive, especially in popular areas like Pen-y-Pass and Ogwen Cottage. Arrive early or use the Sherpa bus service."
+    },
+    "safety": "Snowdonia's mountains can be dangerous. Always check the weather forecast, plan your route carefully, and be prepared for changing conditions. Carry a map, compass, and first-aid kit. In case of emergency, call 999 and ask for mountain rescue. Familiarize yourself with the local rescue procedures. Be aware of loose rocks and falling debris. Never climb beyond your abilities."
+  },
+  "faqs": [
+    {
+      "question": "What is the best time of year for climbing in Snowdonia?",
+      "answer": "The best time for climbing in Snowdonia is generally from April to October. However, weather conditions can be unpredictable, so it's essential to check the forecast before heading out. Spring and autumn offer cooler temperatures and fewer crowds, while summer provides longer daylight hours."
+    },
+    {
+      "question": "What level of experience do I need to climb in Snowdonia?",
+      "answer": "Snowdonia offers climbing for all levels of experience, from beginners to experts. Idwal Slabs is perfect for beginners, while Clogwyn Du'r Arddu is best left to experienced climbers. Consider hiring a guide if you're new to the area or want to tackle more challenging routes."
+    },
+    {
+      "question": "Do I need a permit to climb in Snowdonia?",
+      "answer": "No, you don't need a permit to climb in Snowdonia. However, it's important to be aware of any access restrictions or conservation concerns in specific areas. Check the BMC (British Mountaineering Council) website for the latest information."
+    },
+    {
+      "question": "Where can I find a climbing guide in Snowdonia?",
+      "answer": "Several reputable guiding companies operate in Snowdonia, including Plas y Brenin and Snowdonia Mountain Guides. Their contact information can be found online. Booking in advance is recommended, especially during peak season."
+    },
+    {
+      "question": "Is there climbing near Llanberis?",
+      "answer": "Yes, Llanberis is a central hub for climbing in Snowdonia. Dinas Mot and Dinas Cromlech are both within a short drive of Llanberis, and offer a range of routes for different abilities. Joe Brown's and V12 Outdoor are located in the village."
+    },
+    {
+      "question": "What are the parking restrictions in Snowdonia?",
+      "answer": "Parking in Snowdonia can be challenging, especially during peak season. Pen-y-Pass car park charges £20 per day, and often fills up before 8am. Consider using the Sherpa bus service to access popular trailheads. Be aware of double yellow lines and avoid parking on narrow roads."
+    },
+    {
+      "question": "What safety precautions should I take when climbing in Snowdonia?",
+      "answer": "Always check the weather forecast, plan your route carefully, and carry a map, compass, and first-aid kit. Inform someone of your plans and expected return time. Wear a helmet and appropriate climbing gear. Be aware of loose rocks and falling debris. In case of emergency, call 999 and ask for mountain rescue."
+    },
+    {
+      "question": "Are there any climbing festivals in Snowdonia?",
+      "answer": "While there aren't specific recurring climbing festivals every year, keep an eye out for events organized by local climbing clubs and gear shops. These events often include climbing competitions, workshops, and social gatherings. Check the Joe Brown's and V12 Outdoor websites."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Joe Brown's",
+        "slug": "joe-browns",
+        "address": "Capel Curig, Betws-y-Coed LL24 0EE",
+        "lat": 53.087,
+        "lng": -3.841,
+        "description": "A legendary mountaineering shop with a long history in Snowdonia. Known for its expert advice, wide range of gear, and climbing memorabilia.",
+        "website": "https://www.joe-brown.com/",
+        "phone": "01690 720205",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "boot fitting"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 350
+      },
+      {
+        "name": "V12 Outdoor",
+        "slug": "v12-outdoor",
+        "address": "High Street, Llanberis LL55 4ER",
+        "lat": 53.117,
+        "lng": -4.128,
+        "description": "A modern outdoor shop offering a wide range of climbing gear and equipment. Known for its knowledgeable staff and competitive prices.",
+        "website": "https://v12outdoor.com/",
+        "phone": "01286 870321",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 280
+      },
+      {
+        "name": "Cotswold Outdoor",
+        "slug": "cotswold-outdoor",
+        "address": "Holyhead Road, Betws-y-Coed LL24 0AY",
+        "lat": 53.086,
+        "lng": -3.802,
+        "description": "A well-known outdoor retail chain with a branch in Betws-y-Coed. Offers a good selection of climbing gear, clothing, and footwear.",
+        "website": "https://www.cotswoldoutdoor.com/",
+        "phone": "01690 710766",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.2,
+        "reviewCount": 150
+      },
+      {
+        "name": "Siop Pinnacle",
+        "slug": "siop-pinnacle",
+        "address": "Tremadog, Gwynedd LL49 9RB",
+        "lat": 52.944,
+        "lng": -4.191,
+        "description": "A local shop in Tremadog. Offers a wide range of climbing gear, and has an on site cafe.",
+        "website": "https://siop-pinnacle.co.uk/",
+        "phone": "01766 515525",
+        "services": [
+          "gear sales",
+          "cafe"
+        ],
+        "googleRating": 4.8,
+        "reviewCount": 120
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Pete's Eats",
+        "slug": "petes-eats",
+        "address": "High Street, Llanberis LL55 4ER",
+        "lat": 53.116,
+        "lng": -4.129,
+        "description": "A legendary cafe serving massive portions of hearty food. A must-visit for climbers and outdoor enthusiasts after a long day in the mountains. Famous for its 'Big Breakfast'.",
+        "vibe": "Climber-friendly cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Giant portions, legendary atmosphere"
+      },
+      {
+        "name": "Bryn Tyrch Inn",
+        "slug": "bryn-tyrch-inn",
+        "address": "Capel Curig, Betws-y-Coed LL24 0DS",
+        "lat": 53.086,
+        "lng": -3.833,
+        "description": "A traditional pub with a welcoming atmosphere and great food. Popular with climbers and walkers. The Sunday Roast is a favorite.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "https://www.bryntyrchinn.co.uk/",
+        "knownFor": "Real ales, hearty meals"
+      },
+      {
+        "name": "Heights Hotel",
+        "slug": "heights-hotel",
+        "address": "Llanberis Pass, Nant Peris LL55 4UU",
+        "lat": 53.092,
+        "lng": -4.072,
+        "description": "A hotel with a restaurant and bar offering stunning views of the Llanberis Pass. A great place to relax and enjoy a meal after a day of climbing. Great views!",
+        "vibe": "Scenic hotel",
+        "priceRange": "££",
+        "website": "https://heightswales.com/",
+        "knownFor": "Spectacular views, good food"
+      },
+      {
+        "name": "Gallt y Glyn",
+        "slug": "gallt-y-glyn",
+        "address": "Llanberis, Gwynedd LL55 4EL",
+        "lat": 53.118,
+        "lng": -4.126,
+        "description": "A cosy pub in Llanberis, popular with climbers and locals alike. Good selection of beers and tasty pub grub.",
+        "vibe": "Local pub",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Traditional pub fare, good beer"
+      },
+      {
+        "name": "Vaynol Arms",
+        "slug": "vaynol-arms",
+        "address": "Nantperis, Llanberis LL55 4UL",
+        "lat": 53.098,
+        "lng": -4.062,
+        "description": "A charming pub with a beer garden in Nantperis. A great spot to enjoy a pint in the sunshine after a climb. Has a play area for kids.",
+        "vibe": "Family-friendly pub",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Beer garden, good atmosphere"
+      },
+      {
+        "name": "Llaethdy Cafe & Bistro",
+        "slug": "llaethdy-cafe-bistro",
+        "address": "Capel Curig, LL24 0EE",
+        "lat": 53.088,
+        "lng": -3.842,
+        "description": "A delicious cafe in Capel Curig, ideal for climbers looking for food before or after a hike. Serves breakfast, lunch and diner. ",
+        "vibe": "Cosy cafe",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Hearty meals"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Plas y Brenin",
+        "slug": "plas-y-brenin",
+        "description": "National Mountain Sports Centre with on-site accommodation. Great for climbers looking for courses or guided climbs. Central location.",
+        "type": "bunkhouse",
+        "priceRange": "£££",
+        "nearestSpot": "Tryfan North Ridge (5 mins drive)",
+        "website": "https://www.pyb.co.uk/"
+      },
+      {
+        "name": "YHA Pen-y-Pass",
+        "slug": "yha-pen-y-pass",
+        "description": "A YHA located right at Pen-y-Pass. Perfect for access to Snowdon and surrounding climbs. Budget-friendly.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Lliwedd (1 min walk)",
+        "website": "https://www.yha.org.uk/hostel/yha-pen-y-pass"
+      },
+      {
+        "name": "Bryn Dinas Camping Pods",
+        "slug": "bryn-dinas-camping-pods",
+        "description": "Camping pods near Nant Gwynant. A comfortable and convenient base for climbing and exploring Snowdonia.",
+        "type": "glamping",
+        "priceRange": "££",
+        "nearestSpot": "Dinas Cromlech (10 mins drive)",
+        "website": "https://www.bryndinas.co.uk/"
+      },
+      {
+        "name": "Pen Ceunant Isaf Tea Rooms & Bunkhouse",
+        "slug": "pen-ceunant-isaf-tea-rooms-bunkhouse",
+        "description": "A traditional bunkhouse located near Llanberis. Offers basic but comfortable accommodation for climbers on a budget.",
+        "type": "bunkhouse",
+        "priceRange": "£",
+        "nearestSpot": "Dinas Mot (5 mins drive)",
+        "website": null
+      },
+      {
+        "name": "Snowdon Inn",
+        "slug": "snowdon-inn",
+        "description": "Good location, great views, well maintained rooms and an onsite restaurant. ",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Dinas Cromlech (5 mins drive)",
+        "website": null
+      },
+      {
+        "name": "Dol Peris B&B",
+        "slug": "dol-peris-bb",
+        "description": "Excellent location within easy reach of key climbing spots, clean modern rooms, and fantastic hosts.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Dinas Cromlech (5 mins drive)",
+        "website": "https://dolperis.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "BMC Cymru North Area Meeting",
+      "type": "meeting",
+      "monthTypical": "October",
+      "description": "A meeting for climbers and mountaineers to discuss access issues and share information.",
+      "website": "https://www.thebmc.co.uk/",
+      "relevantActivities": [
+        "climbing",
+        "mountaineering"
+      ],
+      "registrationCost": null
+    },
+    {
+      "name": "Joe Brown's Winter Lecture Series",
+      "type": "exhibition",
+      "monthTypical": "November",
+      "description": "An annual series of lectures featuring renowned climbers and mountaineers.",
+      "website": "https://www.joe-brown.com/",
+      "relevantActivities": [
+        "climbing",
+        "mountaineering"
+      ],
+      "registrationCost": 15
+    }
+  ],
+  "keywords": {
+    "primary": "climbing in snowdonia",
+    "secondary": [
+      "snowdonia climbing routes",
+      "snowdonia trad climbing",
+      "climbing courses snowdonia",
+      "beginner climbing snowdonia",
+      "snowdonia climbing guides"
+    ],
+    "longTail": [
+      "best beginner climbing routes snowdonia",
+      "guided climbing trips snowdonia",
+      "snowdonia climbing gear hire",
+      "snowdonia climbing weather forecast",
+      "family climbing snowdonia",
+      "easy multi pitch climbing snowdonia",
+      "climbing snowdonia in winter",
+      "dog friendly climbing snowdonia",
+      "parking for climbing snowdonia",
+      "snowdonia climbing accommodation"
+    ],
+    "localIntent": [
+      "climbing near Llanberis",
+      "climbing near Betws-y-Coed",
+      "climbing near Capel Curig",
+      "climbing near Pen-y-Pass",
+      "climbing near Tremadog"
+    ],
+    "commercialIntent": [
+      "snowdonia climbing guide price",
+      "hire climbing gear snowdonia",
+      "book climbing course snowdonia",
+      "snowdonia climbing equipment",
+      "cheap climbing snowdonia"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Climbing in Pembrokeshire"
+      },
+      {
+        "regionSlug": "gower",
+        "label": "Climbing in Gower"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "watersports",
+        "label": "Watersports in Snowdonia"
+      }
+    ]
+  }
+}

@@ -1,0 +1,510 @@
+{
+  "regionSlug": "snowdonia",
+  "activityTypeSlug": "zip-lining",
+  "title": "Zip Lining in Snowdonia",
+  "strapline": "Conquer your fears and soak in the views on some of the UK's most thrilling zip lines.",
+  "metaTitle": "Zip Lining Snowdonia | Adventure Wales",
+  "metaDescription": "Experience the thrill of zip lining in Snowdonia! From Velocity 2 to Bounce Below, plan your adventure today.",
+  "heroAlt": "A zip liner soars across Penrhyn Quarry in Snowdonia against a backdrop of slate mountains and blue sky.",
+  "introduction": "Snowdonia is synonymous with adventure, and if you’re looking for an adrenaline rush with a view, **zip lining Snowdonia** is hard to beat. Forget generic theme park rides – here, you're soaring across former slate quarries, through ancient forests, and even underground in vast caverns. Zip World dominates the scene, and rightly so; they’ve transformed industrial heritage into world-class attractions. \n\nThe big draw is Velocity 2 at Penrhyn Quarry – the fastest zip line in the world. It's a real bucket-list item. But don't overlook the other options. Titan, a series of shorter zips, offers a less terrifying but equally scenic experience, perfect if you're a bit nervous. Zip World Fforest in Betws-y-Coed is great for families, with multiple courses and plenty to keep everyone entertained. And for something truly unique, Bounce Below and the Caverns offer underground adventures unlike anything else you'll find. \n\n**Zip lining in Snowdonia** isn’t just about the adrenaline. It's about experiencing the landscape in a completely new way. It's about seeing the scars of industry and the reclaiming power of nature. Be warned though: prices can be steep, and booking in advance is essential, especially during peak season. But if you're after a memorable adventure in a stunning setting, it’s worth every penny. If you're not a fan of heights, maybe stick to the hiking trails, but for everyone else: strap in and enjoy the ride! \n\nOne of the best parts about **zip lining in Snowdonia** is that, when you're finished, you're surrounded by all sorts of great restaurants, shops and other activities. It makes it an excellent hub for a holiday in the region.",
+  "bestSeason": "March-October (some activities run year-round but check availability)",
+  "difficultyRange": "Easy to Challenging",
+  "priceRange": "£££",
+  "spots": [
+    {
+      "name": "Velocity 2 (Penrhyn Quarry)",
+      "slug": "velocity-2",
+      "description": "The world's fastest zip line, reaching speeds of over 100mph. You're strapped into a 'flying' position and launched across the stunning Penrhyn Quarry, with views of Anglesey on a clear day. It's an intense but exhilarating experience.",
+      "difficulty": "Challenging",
+      "duration": "Approx. 2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Thrill-seekers and adrenaline junkies",
+      "notSuitableFor": "Those with a severe fear of heights or certain medical conditions (check with Zip World)",
+      "bestSeason": "March-October (weather dependent)",
+      "parking": "Large car park at Penrhyn Quarry (LL57 4YG). Cost is around £5. Arrive early during peak season as it can fill up.",
+      "startPoint": {
+        "name": "Zip World Penrhyn Quarry",
+        "lat": 53.2167,
+        "lng": -4.0389
+      },
+      "estimatedCost": "£99-£135pp",
+      "operatorSlug": "zip-world",
+      "insiderTip": "Book the earliest slot possible for the best weather conditions and fewer crowds. The cafe can get very busy at lunchtime, so grab a pastry before you head out."
+    },
+    {
+      "name": "Titan (Blaenau Ffestiniog)",
+      "slug": "titan",
+      "description": "Europe's largest zip zone, featuring three zip lines that descend from the top of Llechwedd Slate Caverns. It's a longer experience than Velocity 2, with stunning views over the Moelwynion mountains. You're seated during the ride, making it a bit less intimidating.",
+      "difficulty": "Moderate",
+      "duration": "Approx. 3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families and groups looking for a scenic adventure",
+      "notSuitableFor": "Those with limited mobility (there's some walking involved)",
+      "bestSeason": "March-October (weather dependent)",
+      "parking": "Large car park at Llechwedd Slate Caverns (LL41 3NB). Cost is included in the ticket price.",
+      "startPoint": {
+        "name": "Zip World Llechwedd",
+        "lat": 52.9917,
+        "lng": -3.9322
+      },
+      "estimatedCost": "£75-£95pp",
+      "operatorSlug": "zip-world",
+      "insiderTip": "Wear layers, as it can be chilly at the top of the quarry. Bring a small backpack to carry water and snacks – there are no facilities on the mountain."
+    },
+    {
+      "name": "Zip World Fforest (Betws-y-Coed)",
+      "slug": "zip-world-fforest",
+      "description": "A network of zip lines, nets, and rope bridges suspended in the trees. Fforest is geared towards families, with different courses to suit all abilities. It's a fun and active way to explore the woodland.",
+      "difficulty": "Easy to Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families with children and groups of friends",
+      "notSuitableFor": "Very young children (minimum height restrictions apply)",
+      "bestSeason": "Year-round (check availability)",
+      "parking": "Dedicated car park at Zip World Fforest (LL24 0HX). Cost is approximately £5.",
+      "startPoint": {
+        "name": "Zip World Fforest",
+        "lat": 53.1147,
+        "lng": -3.8033
+      },
+      "estimatedCost": "£35-£55pp (depending on activity)",
+      "operatorSlug": "zip-world",
+      "insiderTip": "Wear comfortable, closed-toe shoes. Bring gloves if you have them, as the ropes can be tough on your hands. There are picnic tables if you want to bring your own lunch."
+    },
+    {
+      "name": "Quarry Karts (Llechwedd)",
+      "slug": "quarry-karts",
+      "description": "Not strictly zip-lining, but an exhilarating downhill karting experience on the slopes of the Llechwedd Slate Quarry. Steer your gravity-powered kart down a winding track with stunning views.",
+      "difficulty": "Moderate",
+      "duration": "Approx. 1.5 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Those seeking a different kind of adrenaline rush",
+      "notSuitableFor": "Young children (age restrictions apply)",
+      "bestSeason": "March-October (weather dependent)",
+      "parking": "Large car park at Llechwedd Slate Caverns (LL41 3NB). Cost is included in the ticket price.",
+      "startPoint": {
+        "name": "Zip World Llechwedd",
+        "lat": 52.9917,
+        "lng": -3.9322
+      },
+      "estimatedCost": "£45-£60pp",
+      "operatorSlug": "zip-world",
+      "insiderTip": "Check the weather forecast and dress accordingly, as you'll be exposed to the elements. The karts can get quite muddy, so don't wear your best clothes."
+    },
+    {
+      "name": "Bounce Below (Blaenau Ffestiniog)",
+      "slug": "bounce-below",
+      "description": "Imagine trampolines in a giant underground slate cavern. Bounce Below offers a unique and surreal experience, bouncing between different levels of the cavern on massive nets. It's surprisingly tiring!",
+      "difficulty": "Easy",
+      "duration": "Approx. 1 hour",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families and those looking for a fun and unusual activity",
+      "notSuitableFor": "Those with claustrophobia or mobility issues",
+      "bestSeason": "Year-round",
+      "parking": "Large car park at Llechwedd Slate Caverns (LL41 3NB). Cost is included in the ticket price.",
+      "startPoint": {
+        "name": "Zip World Llechwedd",
+        "lat": 52.9917,
+        "lng": -3.9322
+      },
+      "estimatedCost": "£30-£40pp",
+      "operatorSlug": "zip-world",
+      "insiderTip": "Wear comfortable clothing and closed-toe shoes. It can get warm in the cavern, so dress in layers. Book in advance, especially during peak season."
+    },
+    {
+      "name": "Caverns (Blaenau Ffestiniog)",
+      "slug": "caverns",
+      "description": "An underground adventure course involving zip lines, rope bridges, and tunnels deep inside the Llechwedd slate caverns. It's a challenging and unique experience, testing your balance and coordination.",
+      "difficulty": "Challenging",
+      "duration": "Approx. 3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Adventurous individuals and groups",
+      "notSuitableFor": "Those with claustrophobia, fear of heights, or limited mobility",
+      "bestSeason": "Year-round",
+      "parking": "Large car park at Llechwedd Slate Caverns (LL41 3NB). Cost is included in the ticket price.",
+      "startPoint": {
+        "name": "Zip World Llechwedd",
+        "lat": 52.9917,
+        "lng": -3.9322
+      },
+      "estimatedCost": "£55-£70pp",
+      "operatorSlug": "zip-world",
+      "insiderTip": "Wear old clothes and sturdy shoes, as you'll be getting dirty. Bring gloves if you have them. Be prepared for some tight spaces and challenging obstacles."
+    },
+    {
+      "name": "Skyride (Betws-y-Coed)",
+      "slug": "skyride",
+      "description": "Although permanently closed, it's worth knowing it existed. This was a high ropes course in Zip World Fforest offering a challenging and rewarding experience. This spot is now part of the existing Zip World Fforest.",
+      "difficulty": "Moderate",
+      "duration": "Approx. 2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Adventurous individuals and groups (Now part of the broader Zip World Fforest package)",
+      "notSuitableFor": "Those with a strong fear of heights (Now part of the broader Zip World Fforest package)",
+      "bestSeason": "Year-round (check availability)",
+      "parking": "Dedicated car park at Zip World Fforest (LL24 0HX). Cost is approximately £5.",
+      "startPoint": {
+        "name": "Zip World Fforest",
+        "lat": 53.1147,
+        "lng": -3.8033
+      },
+      "estimatedCost": "Now part of the Zip World Fforest costs",
+      "operatorSlug": "zip-world",
+      "insiderTip": "Now part of the Zip World Fforest costs"
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Snowdonia's weather is notoriously unpredictable. Conditions can change rapidly, even on a sunny day. Be prepared for wind, rain, and cold temperatures, especially at higher elevations. Always check the forecast before you go and be prepared to adjust your plans if necessary.",
+    "weatherLinks": [
+      {
+        "name": "Met Office Mountain Weather Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain"
+      },
+      {
+        "name": "Mountain Weather Information Service (MWIS)",
+        "url": "https://www.mwis.org.uk/"
+      }
+    ],
+    "gearChecklist": [
+      "Waterproof jacket – essential, even if the forecast looks good",
+      "Warm layers – fleece, thermal base layer, hat and gloves",
+      "Sturdy footwear – closed-toe shoes are required for all Zip World activities",
+      "Comfortable clothing – avoid loose clothing that could get caught",
+      "Sunscreen – even on cloudy days, the sun can be strong at altitude",
+      "Water bottle – stay hydrated, especially during physically demanding activities",
+      "Small backpack – to carry essentials",
+      "Gloves - for gripping ropes on Fforest Coaster and similar",
+      "Sunglasses – protect your eyes from the glare",
+      "Snacks – fuel for your adventure, especially if there are no cafes nearby"
+    ],
+    "gearHire": [
+      {
+        "name": "Zip World on-site shops",
+        "location": "Penrhyn Quarry, Llechwedd, Fforest",
+        "url": "https://www.zipworld.co.uk/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "4-5h",
+          "route": "Via M1 and A5/A55"
+        },
+        {
+          "from": "Manchester",
+          "duration": "2-2.5h",
+          "route": "Via M56 and A55"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3-4h",
+          "route": "Via M6 and A5"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "3.5-4.5h",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "Bangor and Llandudno Junction are the nearest main train stations, with bus connections to Bethesda, Llanberis, and Betws-y-Coed. The Snowdon Sherpa bus service connects many of the popular attractions and villages.",
+      "parkingTips": "Parking can be limited at peak times, especially at popular spots like Penrhyn Quarry and Betws-y-Coed. Arrive early or consider using the Snowdon Sherpa bus service. Pay attention to parking restrictions and avoid parking illegally."
+    },
+    "safety": "Always follow the instructions of Zip World staff. Wear the provided safety equipment correctly. Be aware of your surroundings and potential hazards. Check weather conditions before you go. In case of emergency, dial 999 and ask for mountain rescue. Mobile phone signal can be patchy in some areas."
+  },
+  "faqs": [
+    {
+      "question": "What's the fastest zip line in Snowdonia?",
+      "answer": "Velocity 2 at Zip World Penrhyn Quarry is the fastest zip line in Snowdonia, and the world. It reaches speeds of over 100mph."
+    },
+    {
+      "question": "Is zip lining in Snowdonia suitable for beginners?",
+      "answer": "Yes, Zip World Fforest in Betws-y-Coed offers courses suitable for beginners and families. Titan at Llechwedd is also a good option for those new to zip lining."
+    },
+    {
+      "question": "What should I wear for zip lining in Snowdonia?",
+      "answer": "Wear comfortable clothing, including layers, as the weather can change quickly. Closed-toe shoes are essential. Avoid loose clothing that could get caught on the equipment."
+    },
+    {
+      "question": "How much does zip lining in Snowdonia cost?",
+      "answer": "Prices vary depending on the activity. Velocity 2 costs between £99 and £135 per person, while other activities like Bounce Below start from around £30 per person."
+    },
+    {
+      "question": "Do I need to book in advance for zip lining?",
+      "answer": "Yes, booking in advance is highly recommended, especially during peak season. Zip World activities are very popular and often sell out."
+    },
+    {
+      "question": "Are there age or weight restrictions for zip lining in Snowdonia?",
+      "answer": "Yes, there are age, height and weight restrictions for most Zip World activities. Check the Zip World website for specific requirements for each activity."
+    },
+    {
+      "question": "What if the weather is bad when I'm supposed to go zip lining in Snowdonia?",
+      "answer": "Zip World will usually close if the weather is dangerously bad. Contact them directly and see what options there are for rescheduling. Safety first."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Cotswold Outdoor Llanberis",
+        "slug": "cotswold-outdoor-llanberis",
+        "address": "31 High St, Llanberis, Caernarfon LL55 4HA",
+        "lat": 53.1245,
+        "lng": -4.1285,
+        "description": "Large outdoor retailer stocking a wide range of clothing, footwear, and equipment for hiking, camping, and climbing. Good for last-minute gear purchases.",
+        "website": "https://www.cotswoldoutdoor.com/stores/llanberis.html",
+        "phone": "01286 870325",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.3,
+        "reviewCount": 150
+      },
+      {
+        "name": "Ellis Brigham Mountain Sports Llanberis",
+        "slug": "ellis-brigham-llanberis",
+        "address": "23-25 High St, Llanberis, Caernarfon LL55 4EN",
+        "lat": 53.1244,
+        "lng": -4.1277,
+        "description": "Specialist mountain sports retailer with a focus on climbing, mountaineering, and skiing equipment. Knowledgeable staff and a good selection of technical gear.",
+        "website": "https://www.ellis-brigham.com/stores/llanberis",
+        "phone": "01286 871707",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 120
+      },
+      {
+        "name": "V12 OUTDOOR",
+        "slug": "v12-outdoor",
+        "address": "Capel Curig, Betws-y-Coed LL24 0EE",
+        "lat": 53.0945,
+        "lng": -3.8503,
+        "description": "Independent outdoor store in Capel Curig, stocking a range of clothing, footwear, and equipment for hiking and camping. Friendly service and local knowledge.",
+        "website": "https://www.v12outdoor.com/",
+        "phone": "01690 720222",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 80
+      },
+      {
+        "name": "Joe Brown Shops",
+        "slug": "joe-brown-shops",
+        "address": "Capel Curig, Betws-y-Coed LL24 0EE",
+        "lat": 53.0941,
+        "lng": -3.8494,
+        "description": "Joe Brown Shops is legendary in the climbing community and a top gear shop in the UK.",
+        "website": "https://www.joebrowns.com/",
+        "phone": "01690 720205",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 220
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Zip World Penrhyn Quarry Cafe",
+        "slug": "zip-world-penrhyn-quarry-cafe",
+        "address": "Bethesda",
+        "lat": 53.2167,
+        "lng": -4.0389,
+        "description": "Convenient cafe at Penrhyn Quarry, serving hot and cold drinks, snacks, and light meals. Great views of the quarry.",
+        "vibe": "Casual cafe",
+        "priceRange": "£",
+        "website": "https://www.zipworld.co.uk/",
+        "knownFor": "Convenience and the views"
+      },
+      {
+        "name": "Pete's Eats",
+        "slug": "petes-eats",
+        "address": "Llanberis",
+        "lat": 53.1256,
+        "lng": -4.1288,
+        "description": "A Llanberis institution, Pete's Eats is known for its massive portions and hearty meals. Popular with climbers and outdoor enthusiasts.",
+        "vibe": "Climber-friendly cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Giant portions and the climbers"
+      },
+      {
+        "name": "The Cottage Loaf",
+        "slug": "the-cottage-loaf",
+        "address": "Llanberis",
+        "lat": 53.1248,
+        "lng": -4.1278,
+        "description": "Traditional pub in Llanberis, serving a range of real ales and pub food. Cosy atmosphere and a good place to relax after a day outdoors.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "https://www.thecottageloaf.co.uk/",
+        "knownFor": "Real ales and pub food"
+      },
+      {
+        "name": "Caffi Siabod",
+        "slug": "caffi-siabod",
+        "address": "Capel Curig",
+        "lat": 53.0947,
+        "lng": -3.8504,
+        "description": "Popular cafe in Capel Curig, serving a range of hot and cold food, including breakfasts, sandwiches, and cakes. Good views of Tryfan and the surrounding mountains.",
+        "vibe": "Casual cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Breakfast and cake"
+      },
+      {
+        "name": "Blondies Coffee Shop",
+        "slug": "blondies-coffee-shop",
+        "address": "Bethesda",
+        "lat": 53.2139,
+        "lng": -4.0534,
+        "description": "Friendly coffee shop in Bethesda, known for its delicious cakes, sandwiches, and coffee. Popular with locals and visitors alike.",
+        "vibe": "Local coffee shop",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Cakes and coffee"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "YHA Snowdon Llanberis",
+        "slug": "yha-snowdon-llanberis",
+        "description": "Budget-friendly hostel in Llanberis, ideal for hikers and climbers. Close to the Snowdon Mountain Railway and Pete's Eats.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Llanberis Path (Snowdon), approx. 1 mile",
+        "website": "https://www.yha.org.uk/hostel/yha-snowdon-llanberis"
+      },
+      {
+        "name": "Plas Curig Hostel",
+        "slug": "plas-curig-hostel",
+        "description": "Another great bunkhouse option in Capel Curig, close to Tryfan and the Ogwen Valley. Good for groups.",
+        "type": "bunkhouse",
+        "priceRange": "£",
+        "nearestSpot": "Caffi Siabod, approx. 0.1 mile",
+        "website": "http://www.plascurig.com/"
+      },
+      {
+        "name": "Pen-y-Gwryd Hotel",
+        "slug": "pen-y-gwryd-hotel",
+        "description": "Historic hotel at the foot of Snowdon, famous as a training base for the 1953 Everest expedition. A classic climber's hotel.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Snowdon Ranger Path, approx. 5 miles",
+        "website": "https://www.pyg.co.uk/"
+      },
+      {
+        "name": "The Royal Victoria Hotel Snowdonia",
+        "slug": "the-royal-victoria-hotel-snowdonia",
+        "description": "Traditional hotel located in Llanberis, close to many attractions and zip lining spots.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Llanberis Path, approx. 0.5 miles",
+        "website": "https://www.theroyalvictoria.co.uk/"
+      },
+      {
+        "name": "Bryn Dinas Camping Pods",
+        "slug": "bryn-dinas-camping-pods",
+        "description": "Unique camping pods with incredible views of Snowdon and the surrounding countryside. Offers a modern glamping experience.",
+        "type": "glamping",
+        "priceRange": "££",
+        "nearestSpot": "Snowdon Ranger Path, approx. 7 miles",
+        "website": "https://www.bryndinas.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Snowdonia Trail Marathon",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "A challenging trail marathon through the Snowdonia National Park.",
+      "website": "https://www.snowdoniatrailmarathon.com/",
+      "relevantActivities": [],
+      "registrationCost": 75
+    },
+    {
+      "name": "Snowdon Race",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "The iconic Snowdon Race is a 10-mile race from Llanberis to the summit of Snowdon and back.",
+      "website": "https://snowdonrace.co.uk/",
+      "relevantActivities": [],
+      "registrationCost": 55
+    }
+  ],
+  "keywords": {
+    "primary": "zip lining snowdonia",
+    "secondary": [
+      "zip world velocity",
+      "zip world fforest",
+      "bounce below",
+      "titan zip line",
+      "penrhyn quarry"
+    ],
+    "longTail": [
+      "best zip line in snowdonia for families",
+      "fastest zip line wales",
+      "underground zip line snowdonia",
+      "zip lining betws y coed",
+      "zip world discount codes",
+      "zip world height restrictions",
+      "activities near blaenau ffestiniog",
+      "adrenaline activities snowdonia",
+      "zip lining snowdonia for beginners",
+      "snowdonia adventure holidays",
+      "zip lining snowdonia price",
+      "things to do betws-y-coed"
+    ],
+    "localIntent": [
+      "zip lining near llanberis",
+      "zip lining near betws-y-coed",
+      "zip lining near blaenau ffestiniog",
+      "zip lining near caernarfon",
+      "zip lining near bangor"
+    ],
+    "commercialIntent": [
+      "book zip lining snowdonia",
+      "zip world prices",
+      "zip lining snowdonia deals",
+      "guided zip lining snowdonia",
+      "zip lining snowdonia vouchers"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "south-wales",
+        "label": "Zip Lining in South Wales"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "climbing",
+        "label": "Climbing in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "coasteering",
+        "label": "Coasteering in Snowdonia"
+      }
+    ]
+  }
+}

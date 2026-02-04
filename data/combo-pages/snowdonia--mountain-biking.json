@@ -1,0 +1,592 @@
+{
+  "regionSlug": "snowdonia",
+  "activityTypeSlug": "mountain-biking",
+  "title": "Mountain Biking in Snowdonia",
+  "strapline": "From technical downhill at Antur Stiniog to flowy trail centre runs at Coed y Brenin, Snowdonia serves up legendary mountain biking.",
+  "metaTitle": "Mountain Biking Snowdonia | Adventure Wales",
+  "metaDescription": "Explore Snowdonia's epic mountain biking trails! Find the best routes, gear shops, and insider tips for your adventure.",
+  "heroAlt": "Mountain biker riding through a forest trail in Snowdonia, with mountains in the background",
+  "introduction": "Snowdonia isn't just about conquering Yr Wyddfa (Snowdon) on foot; it's a mountain biking playground that'll leave your legs burning and your grin wide. Forget manicured park laps – we're talking proper Welsh landscapes, from the rugged slate quarries to ancient forests. You'll find everything here, from challenging black runs at Antur Stiniog that'll test your nerve, to flowing trail centre reds at Coed y Brenin ideal for intermediates. Penmachno offers more natural, less-ridden trails if you want to escape the crowds, and Gwydir Mawr is a hidden gem with some seriously technical sections. \n\nWhat sets mountain biking in Snowdonia apart is the sheer variety and the integration with the landscape. You're not just riding a trail; you're immersed in the history and beauty of North Wales. It's demanding, make no mistake. Climbs are often long and steep, and the weather can turn on a dime. But that's part of the charm. \n\nThis guide isn't about sugar-coating things. We'll tell you which trails are genuinely worth the hype, where to find the best post-ride grub, and how to avoid the worst of the crowds. So, if you're looking for a mountain biking adventure that'll challenge you physically and reward you with breathtaking views, Snowdonia is calling. Just be prepared to earn it!",
+  "bestSeason": "April-October",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "MBR Trail, Coed y Brenin",
+      "slug": "mbr-trail-coed-y-brenin",
+      "description": "The classic MBR trail is a great introduction to Coed y Brenin. It's a flowing red route with berms, rollers, and some technical rock features to keep you on your toes. Expect a good workout with some steady climbs, but nothing too brutal. The views from the top are worth the effort.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": "18km",
+      "elevationGain": "450m",
+      "bestFor": "Intermediate riders looking for a challenging but rewarding trail centre experience.",
+      "notSuitableFor": "Beginners or anyone with limited mountain biking experience.",
+      "bestSeason": "Year-round, but can be muddy in winter.",
+      "parking": "Main Coed y Brenin visitor centre car park. Pay and display. Can get very busy, especially on weekends and school holidays. Arrive early or consider parking at the minor visitor centre closer to Dolgellau and riding in.",
+      "startPoint": {
+        "name": "Coed y Brenin Visitor Centre",
+        "lat": 52.795,
+        "lng": -3.873
+      },
+      "estimatedCost": "Free (parking £6 for all day)",
+      "operatorSlug": "coed-y-brenin-nrw",
+      "insiderTip": "Ride it midweek to avoid the crowds, and check out the Beics Brenin cafe for a post-ride coffee and cake."
+    },
+    {
+      "name": "Dragon's Back, Coed y Brenin",
+      "slug": "dragons-back-coed-y-brenin",
+      "description": "A longer and more demanding red route than the MBR trail, the Dragon's Back throws in some challenging climbs and technical descents. Expect rocky sections, tight switchbacks, and some exposure in places. It's a rewarding ride for experienced mountain bikers.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": "31km",
+      "elevationGain": "750m",
+      "bestFor": "Experienced intermediate riders looking for a longer and more challenging trail centre ride.",
+      "notSuitableFor": "Beginners or anyone with limited fitness.",
+      "bestSeason": "Year-round, but can be muddy in winter.",
+      "parking": "Main Coed y Brenin visitor centre car park.",
+      "startPoint": {
+        "name": "Coed y Brenin Visitor Centre",
+        "lat": 52.795,
+        "lng": -3.873
+      },
+      "estimatedCost": "Free (parking £6 for all day)",
+      "operatorSlug": "coed-y-brenin-nrw",
+      "insiderTip": "The climb up to the 'Dragon's Back' is a lung-buster, so pace yourself. Bring plenty of water and snacks."
+    },
+    {
+      "name": "Antur Stiniog Downhill Trails",
+      "slug": "antur-stiniog-downhill-trails",
+      "description": "Antur Stiniog is a downhill mountain biking mecca. Six trails, graded from blue to black, offer a variety of challenges for all skill levels. Expect steep, technical descents, jumps, drops, and berms. Uplift service available.",
+      "difficulty": "Moderate to Expert",
+      "duration": "Varies depending on number of runs. Allow a full day.",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Downhill mountain bikers of all skill levels, from experienced riders to those looking to try downhill for the first time.",
+      "notSuitableFor": "Those who aren't comfortable with steep, technical descents and jumps.",
+      "bestSeason": "April-October",
+      "parking": "Antur Stiniog car park. Free.",
+      "startPoint": {
+        "name": "Antur Stiniog",
+        "lat": 52.971,
+        "lng": -3.862
+      },
+      "estimatedCost": "£42 per day uplift (prices vary)",
+      "operatorSlug": "antur-stiniog",
+      "insiderTip": "Book your uplift in advance, especially on weekends. Bring spare brake pads – you'll need them!"
+    },
+    {
+      "name": "Penmachno Trails - Dolen Machno",
+      "slug": "penmachno-trails-dolen-machno",
+      "description": "Penmachno offers a more natural and less-ridden experience than Coed y Brenin. Dolen Machno (the shorter loop) is a red-graded route that winds through forests and over moorland. Expect technical climbs, rocky descents, and stunning views. Less 'trail centre', more 'proper mountain biking'.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": "19km",
+      "elevationGain": "500m",
+      "bestFor": "Experienced riders who enjoy a more natural and challenging ride.",
+      "notSuitableFor": "Beginners or those who prefer flowy trail centre trails.",
+      "bestSeason": "Year-round, but can be very exposed in bad weather.",
+      "parking": "Small car park at the trailhead. Free. Can fill up quickly.",
+      "startPoint": {
+        "name": "Penmachno Trailhead",
+        "lat": 53.05,
+        "lng": -3.83
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "The trails can be difficult to follow in places, so download a GPX track to your phone or GPS device. The cafe in Penmachno village is a great place to refuel."
+    },
+    {
+      "name": "Marin Trail, Gwydir Forest, Betws-y-Coed",
+      "slug": "marin-trail-gwydir-forest",
+      "description": "The Marin Trail is a classic mountain biking route in Gwydir Forest. It's a red-graded trail that features a mix of climbs, descents, and technical sections. Expect rocky gardens, tight switchbacks, and some fast, flowing sections. Great views over the Conwy Valley.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": "25km",
+      "elevationGain": "720m",
+      "bestFor": "Experienced intermediate riders looking for a challenging and rewarding ride.",
+      "notSuitableFor": "Beginners or anyone with limited fitness.",
+      "bestSeason": "Year-round, but can be muddy in winter.",
+      "parking": "Several car parks available near Betws-y-Coed. Pay and display.",
+      "startPoint": {
+        "name": "Gwydir Forest Car Park, Betws-y-Coed",
+        "lat": 53.111,
+        "lng": -3.802
+      },
+      "estimatedCost": "Free (parking charges apply)",
+      "operatorSlug": null,
+      "insiderTip": "The climbs are tough, but the descents are worth it. Pack a puncture repair kit, as the trails are rocky in places."
+    },
+    {
+      "name": "Temtiwr Trail, Coed y Brenin",
+      "slug": "temtiwr-trail-coed-y-brenin",
+      "description": "A black-graded trail at Coed y Brenin designed to challenge experienced riders. Expect steep, technical descents, rock gardens, jumps, and drops. Not for the faint-hearted! Requires a high level of skill and fitness.",
+      "difficulty": "Challenging",
+      "duration": "2-3 hours",
+      "distance": "12km",
+      "elevationGain": "400m",
+      "bestFor": "Experienced and skilled mountain bikers looking for a technical challenge.",
+      "notSuitableFor": "Beginners, intermediate riders, or anyone not comfortable with steep drops and technical features.",
+      "bestSeason": "Year-round, but can be very slippery in wet conditions.",
+      "parking": "Main Coed y Brenin visitor centre car park.",
+      "startPoint": {
+        "name": "Coed y Brenin Visitor Centre",
+        "lat": 52.795,
+        "lng": -3.873
+      },
+      "estimatedCost": "Free (parking £6 for all day)",
+      "operatorSlug": null,
+      "insiderTip": "Walk the key sections before you ride them to scope out the best lines. Bring spare brake pads and plenty of confidence."
+    },
+    {
+      "name": "Beddgelert Forest Trails",
+      "slug": "beddgelert-forest-trails",
+      "description": "Beddgelert Forest offers a mix of blue and red-graded trails, suitable for families and intermediate riders. Expect flowing singletrack, gentle climbs, and scenic views. A great option for a less challenging ride in a beautiful setting. Some trails are shared with walkers.",
+      "difficulty": "Easy to Moderate",
+      "duration": "1-2 hours",
+      "distance": "Varies depending on the chosen route.",
+      "elevationGain": null,
+      "bestFor": "Families, beginners, and intermediate riders looking for a less challenging ride.",
+      "notSuitableFor": "Experienced riders looking for technical trails.",
+      "bestSeason": "Year-round, but can be muddy in winter.",
+      "parking": "Car park at Beddgelert Forest. Pay and display.",
+      "startPoint": {
+        "name": "Beddgelert Forest Car Park",
+        "lat": 53.004,
+        "lng": -4.091
+      },
+      "estimatedCost": "Free (parking charges apply)",
+      "operatorSlug": null,
+      "insiderTip": "Check the trail map before you set off, as some trails are not well signposted. The nearby village of Beddgelert is a charming place to grab a post-ride ice cream."
+    },
+    {
+      "name": "Gwydir Mawr & Bach Trails (The Dduallt Trails)",
+      "slug": "gwydir-mawr-bach-trails",
+      "description": "Hidden amongst the Gwydir Forest, these trails offer a proper mountain bike adventure away from the crowds. Think natural, rooty and rocky singletrack through dense forest. The Dduallt trail itself is a short but challenging loop, great for linking up with other natural trails in the area. This is not a trail centre; navigation skills are a must.",
+      "difficulty": "Challenging",
+      "duration": "2-4 hours",
+      "distance": "Varies depending on route choice",
+      "elevationGain": "Variable",
+      "bestFor": "Experienced mountain bikers who enjoy natural trails and technical riding.",
+      "notSuitableFor": "Beginners or those expecting manicured trail centre surfaces.",
+      "bestSeason": "Year-round, but can be very slippery in wet conditions. Best avoided after heavy rain.",
+      "parking": "Limited parking available at various points off the minor roads through Gwydir Forest. Parking at Llyn Elsi and cycling up is a good option.",
+      "startPoint": {
+        "name": "Parking near Llyn Elsi (starting point suggestion)",
+        "lat": 53.105,
+        "lng": -3.812
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Download a detailed map or GPX file onto your GPS device or phone. Signal can be patchy. Be prepared for hike-a-bike sections!"
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Snowdonia's weather is notoriously unpredictable. Conditions can change rapidly, even in summer. Be prepared for rain, wind, and sun, and always check the forecast before you set off. Mountain biking can be particularly dangerous in wet or icy conditions, so consider postponing your ride if the weather is poor.",
+    "weatherLinks": [
+      {
+        "name": "Mountain Weather Information Service (MWIS)",
+        "url": "https://www.mwis.org.uk/"
+      },
+      {
+        "name": "Met Office",
+        "url": "https://www.metoffice.gov.uk/"
+      }
+    ],
+    "gearChecklist": [
+      "Helmet – essential for safety.",
+      "Mountain bike – a full-suspension bike is recommended for more challenging trails.",
+      "Waterproof jacket – even if the forecast is good, be prepared for rain.",
+      "Warm layers – temperatures can drop quickly, especially at higher altitudes.",
+      "Gloves – to protect your hands and keep them warm.",
+      "Puncture repair kit – including spare tubes, pump, and tyre levers.",
+      "Multi-tool – for minor repairs.",
+      "First aid kit – for dealing with minor injuries.",
+      "Map and compass/GPS – for navigation.",
+      "Charged mobile phone – for emergencies."
+    ],
+    "gearHire": [
+      {
+        "name": "Beics Brenin",
+        "location": "Coed y Brenin",
+        "url": "https://beicsbrenin.co.uk/"
+      },
+      {
+        "name": "Antur Stiniog Bike Hire",
+        "location": "Blaenau Ffestiniog",
+        "url": "https://www.anturstiniog.com/bike-hire/"
+      },
+      {
+        "name": "Beics Betws",
+        "location": "Betws-y-Coed",
+        "url": "http://www.beicsbetws.co.uk/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5-6h",
+          "route": "Via M40 and A5"
+        },
+        {
+          "from": "Manchester",
+          "duration": "2-3h",
+          "route": "Via M56 and A55"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3-4h",
+          "route": "Via M6 and A5"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "3-4h",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "Nearest train stations are Betws-y-Coed (for Gwydir Forest), Blaenau Ffestiniog (for Antur Stiniog), and Dolgellau (for Coed y Brenin). Bus services connect these towns to other parts of Snowdonia. The Snowdon Sherpa bus service is useful for accessing trailheads.",
+      "parkingTips": "Parking can be limited at popular trailheads, especially on weekends. Arrive early or consider using public transport. Be aware of parking charges and restrictions."
+    },
+    "safety": "Mountain biking in Snowdonia can be challenging, so be aware of the risks. Ride within your abilities, wear appropriate safety gear, and check the weather forecast before you set off. Let someone know your route and estimated return time. In case of emergency, call 999 or 112 and ask for Mountain Rescue. Be aware of livestock on some trails."
+  },
+  "faqs": [
+    {
+      "question": "What's the best mountain biking area in Snowdonia for beginners?",
+      "answer": "Beddgelert Forest is a good starting point, with blue-graded trails suitable for beginners and families. Coed y Brenin also has some easier green and blue trails."
+    },
+    {
+      "question": "How much does it cost to ride at Antur Stiniog?",
+      "answer": "The uplift service at Antur Stiniog typically costs around £42 for a full day (prices can vary). Bike hire is also available at an additional cost."
+    },
+    {
+      "question": "Are there guided mountain biking tours available in Snowdonia?",
+      "answer": "Yes, several companies offer guided mountain biking tours in Snowdonia. Plas y Brenin and MUUK Adventures are two well-known options. Guided tours can be a great way to explore the area and improve your skills."
+    },
+    {
+      "question": "What kind of bike do I need for mountain biking in Snowdonia?",
+      "answer": "A mountain bike with front suspension is suitable for most trails in Snowdonia. A full-suspension bike is recommended for more challenging routes like the Dragon's Back or trails at Antur Stiniog. Make sure your bike is in good working order before you set off."
+    },
+    {
+      "question": "Can I ride my e-bike on the mountain bike trails in Snowdonia?",
+      "answer": "E-bikes are generally permitted on most mountain bike trails in Snowdonia, but it's always best to check with the land owner or trail centre beforehand. Be considerate of other trail users and ride responsibly."
+    },
+    {
+      "question": "Is it safe to drink the water from streams in Snowdonia?",
+      "answer": "It's generally not recommended to drink water directly from streams in Snowdonia without treating it first. There is a risk of contamination from livestock and other sources. Carry plenty of water with you or use a water filter or purification tablets."
+    },
+    {
+      "question": "What are the best months for mountain biking in Snowdonia?",
+      "answer": "April to October are generally the best months for mountain biking in Snowdonia, with warmer temperatures and drier conditions. However, the weather can be unpredictable at any time of year, so be prepared for all conditions."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Beics Brenin",
+        "slug": "beics-brenin",
+        "address": "Coed y Brenin Forest Park, Ganllwyd, Dolgellau LL40 2HY",
+        "lat": 52.794,
+        "lng": -3.874,
+        "description": "Bike shop, hire centre, and workshop located at Coed y Brenin Forest Park. They offer a wide range of mountain bikes, clothing, and accessories. They also provide bike servicing and repairs.",
+        "website": "https://beicsbrenin.co.uk/",
+        "phone": "01341 440728",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 320
+      },
+      {
+        "name": "Beics Betws",
+        "slug": "beics-betws",
+        "address": "Station Approach, Betws-y-Coed LL24 0AE",
+        "lat": 53.098,
+        "lng": -3.811,
+        "description": "Established bike shop in Betws-y-Coed offering bike sales, hire, and repairs. They cater to all levels of mountain bikers, from beginners to experienced riders. They also offer guided rides.",
+        "website": "http://www.beicsbetws.co.uk/",
+        "phone": "01690 710766",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "guided rides"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 180
+      },
+      {
+        "name": "Antur Stiniog Bike Hire",
+        "slug": "antur-stiniog-bike-hire",
+        "address": "Llechwedd Slate Caverns, Blaenau Ffestiniog LL41 3NB",
+        "lat": 52.971,
+        "lng": -3.862,
+        "description": "Bike hire centre located at Antur Stiniog Downhill Centre. They offer a range of downhill bikes to suit all skill levels. Protective gear is also available for hire.",
+        "website": "https://www.anturstiniog.com/bike-hire/",
+        "phone": "01766 200140",
+        "services": [
+          "hire"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 90
+      },
+      {
+        "name": "Summit To Sea",
+        "slug": "summit-to-sea",
+        "address": "High St, Llanberis, Caernarfon LL55 4EN",
+        "lat": 53.122,
+        "lng": -4.128,
+        "description": "Based in Llanberis, this shop has everything you need for all things outdoor. Mountain bike parts, spares, clothing and more.",
+        "website": "https://summittosea.co.uk/",
+        "phone": "01286 870562",
+        "services": [
+          "gear sales",
+          "repairs"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 70
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Cross Foxes",
+        "slug": "cross-foxes",
+        "address": "Brithdir, Dolgellau LL40 2RF",
+        "lat": 52.748,
+        "lng": -3.852,
+        "description": "Popular pub and restaurant located near Coed y Brenin. Known for its hearty meals, good beer, and friendly atmosphere. A great place to refuel after a ride. Excellent for groups.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "https://www.crossfoxes.co.uk/",
+        "knownFor": "Hearty meals, real ales"
+      },
+      {
+        "name": "Meirion Mill Cafe",
+        "slug": "meirion-mill-cafe",
+        "address": "Dolgellau LL40 2UU",
+        "lat": 52.746,
+        "lng": -3.878,
+        "description": "Café known for large portions of homemade cake and traditional dishes, ideal for a post ride treat. Adjacent to a mill shop for a spot of browsing too!",
+        "vibe": "Family-friendly cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Giant portions, homemade cakes"
+      },
+      {
+        "name": "Y Stablau",
+        "slug": "y-stablau",
+        "address": "Holyhead Rd, Betws-y-Coed LL24 0AY",
+        "lat": 53.099,
+        "lng": -3.808,
+        "description": "Restaurant and bar in Betws-y-Coed, located in a converted stable block. Offers a wide range of dishes, from pub classics to more sophisticated options. Good selection of beers and wines.",
+        "vibe": "Restaurant and bar",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Good food, nice atmosphere"
+      },
+      {
+        "name": "TY Siamas Cafe",
+        "slug": "ty-siamas-cafe",
+        "address": "Eldon Square, Dolgellau LL40 6AR",
+        "lat": 52.745,
+        "lng": -3.881,
+        "description": "Welsh culture centre café, serving homemade cakes and light lunches. A relaxed environment for those wanting to sample local culture.",
+        "vibe": "Family-friendly cafe",
+        "priceRange": "£",
+        "website": "https://tysiamas.cymru/en/about-us/",
+        "knownFor": "Local culture, good food"
+      },
+      {
+        "name": "Caffi Siabod",
+        "slug": "caffi-siabod",
+        "address": "Capel Curig, Betws-y-Coed LL24 0EE",
+        "lat": 53.085,
+        "lng": -3.917,
+        "description": "Cafe in Capel Curig serving excellent coffee, cakes and light lunches. Perfect for a caffeine fix with stunning views of Tryfan and the Glyderau.",
+        "vibe": "Climber-friendly cafe",
+        "priceRange": "£",
+        "website": "https://www.caffisiabod.com/",
+        "knownFor": "Coffee, views, light meals"
+      },
+      {
+        "name": "Hangin' Pizzeria",
+        "slug": "hangin-pizzeria",
+        "address": "Holyhead Rd, Betws-y-Coed LL24 0AY",
+        "lat": 53.099,
+        "lng": -3.809,
+        "description": "Pizza restaurant located in Betws-y-Coed. Fresh pizzas, great for a post bike refuel.",
+        "vibe": "Casual",
+        "priceRange": "££",
+        "website": "https://hangin.co.uk/",
+        "knownFor": "Fresh pizzas"
+      },
+      {
+        "name": "The Plas Brondanw Gardens & Cafe",
+        "slug": "plas-brondanw-gardens-and-cafe",
+        "address": "Llanfrothen, Penrhyndeudraeth LL48 6AT",
+        "lat": 52.94,
+        "lng": -4.005,
+        "description": "Pleasant cafe within the beautiful Plas Brondanw gardens. Cakes, light snacks, great for the relaxed refuel.",
+        "vibe": "Gardens & Cafe",
+        "priceRange": "£",
+        "website": "https://www.plasbrondanw.com/cafe-shop/",
+        "knownFor": "Relaxed"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "YHA Coed y Brenin",
+        "slug": "yha-coed-y-brenin",
+        "description": "Budget-friendly hostel located right in Coed y Brenin Forest Park. A great option for mountain bikers looking for affordable accommodation close to the trails.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Coed y Brenin trails, a few minutes ride",
+        "website": "https://www.yha.org.uk/hostel/yha-coed-y-brenin"
+      },
+      {
+        "name": "Tan Dinas Camping & Caravan Park",
+        "slug": "tan-dinas-camping-caravan-park",
+        "description": "Campsite located near Beddgelert Forest. Offers pitches for tents and caravans. A good option for budget-conscious mountain bikers.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Beddgelert Forest Trails, 10 minute cycle",
+        "website": "https://www.tandinas.co.uk/"
+      },
+      {
+        "name": "The Royal Oak Hotel",
+        "slug": "the-royal-oak-hotel",
+        "description": "Located in Betws-y-Coed, this hotel is a short drive from the Marin Trail in Gwydir Forest and the Gwydir Mawr trails. Offers comfortable rooms and a convenient location.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Marin Trail, short drive",
+        "website": "https://royaloakhotel.net/"
+      },
+      {
+        "name": "Plas Gwyn Caravan & Camping Park",
+        "slug": "plas-gwyn-caravan-camping-park",
+        "description": "Campsite located near Llanberis offering pitches for tents and caravans. Close to the mountains, this is ideal for a trip up Snowdon too.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Llanberis Pass, 15 minute cycle",
+        "website": "https://www.plasgwyn.co.uk/"
+      },
+      {
+        "name": "Penmachno Bunkhouse",
+        "slug": "penmachno-bunkhouse",
+        "description": "Bunkhouse located in Penmachno village, making it a great option for riding the Penmachno trails. With self catering facilities and easy access to the trails it makes for an ideal base.",
+        "type": "bunkhouse",
+        "priceRange": "£",
+        "nearestSpot": "Penmachno Trails, few minutes ride",
+        "website": "null"
+      },
+      {
+        "name": "Penmaenuchaf Hall Hotel",
+        "slug": "penmaenuchaf-hall-hotel",
+        "description": "A bit of luxury! Situated in a quiet valley near Dolgellau, this hotel is perfect for a bit of pampering after a hard day on the trails. Excellent base for Coed y Brenin.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Coed y Brenin, 15 minutes drive",
+        "website": "https://www.penhall.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Coed y Brenin Enduro",
+      "type": "race",
+      "monthTypical": "October",
+      "description": "A popular enduro race held at Coed y Brenin Forest Park. Features a mix of challenging trails and timed stages.",
+      "website": "null",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "registrationCost": 45
+    },
+    {
+      "name": "Welsh Enduro Series",
+      "type": "race",
+      "monthTypical": "Various",
+      "description": "A series of enduro races held at various locations across Wales, including some in Snowdonia. A great opportunity to test your skills against other riders.",
+      "website": "https://www.welshenduroseries.co.uk/",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "registrationCost": 55
+    },
+    {
+      "name": "Downhill Race Series at Antur Stiniog",
+      "type": "race",
+      "monthTypical": "Various",
+      "description": "Downhill race series held regularly at Antur Stiniog.",
+      "website": "https://www.anturstiniog.com/",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "registrationCost": 40
+    }
+  ],
+  "keywords": {
+    "primary": "mountain biking snowdonia",
+    "secondary": [
+      "snowdonia mountain bike trails",
+      "coed y brenin mountain biking",
+      "antur stiniog downhill",
+      "mountain biking betws y coed",
+      "penmachno mountain bike trails"
+    ],
+    "longTail": [
+      "best mountain biking trails snowdonia",
+      "mountain biking holidays snowdonia",
+      "mountain bike hire snowdonia",
+      "guided mountain bike tours snowdonia",
+      "mountain biking trails for beginners snowdonia",
+      "challenging mountain biking routes snowdonia",
+      "mountain biking trails near betws y coed",
+      "mountain biking trails near blaenau ffestiniog",
+      "mountain biking trails near llanberis",
+      "family mountain biking trails snowdonia",
+      "dog friendly mountain biking trails snowdonia"
+    ],
+    "localIntent": [
+      "mountain biking near betws y coed",
+      "mountain biking near blaenau ffestiniog",
+      "mountain biking near llanberis",
+      "mountain biking near dolgellau",
+      "mountain biking near beddgelert"
+    ],
+    "commercialIntent": [
+      "mountain bike hire snowdonia",
+      "guided mountain biking snowdonia price",
+      "book mountain biking snowdonia",
+      "mountain biking snowdonia tours",
+      "mountain bike trails snowdonia map"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "brecon-beacons",
+        "label": "Mountain Biking in Brecon Beacons"
+      },
+      {
+        "regionSlug": "mid-wales",
+        "label": "Mountain Biking in Mid Wales"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "climbing",
+        "label": "Climbing in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "watersports",
+        "label": "Watersports in Snowdonia"
+      }
+    ]
+  }
+}

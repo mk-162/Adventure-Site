@@ -1,0 +1,543 @@
+{
+  "regionSlug": "pembrokeshire",
+  "activityTypeSlug": "kayaking",
+  "title": "Kayaking in Pembrokeshire",
+  "strapline": "Paddle beneath towering cliffs, explore hidden coves, and maybe even spot a puffin—Pembrokeshire sea kayaking is world-class.",
+  "metaTitle": "Kayaking Pembrokeshire | Adventure Wales",
+  "metaDescription": "Discover the best spots for kayaking Pembrokeshire: Ramsey Island, The Bitches, Skomer & more. Routes, gear, safety tips, & local insights from a pro.",
+  "heroAlt": "Sea kayakers paddling near jagged cliffs in Pembrokeshire",
+  "introduction": "Pembrokeshire. The name alone conjures images of dramatic coastline, turquoise waters, and abundant wildlife. And there's no better way to experience it all than from the seat of a kayak. Forget crowded beaches and tourist trails; **kayaking Pembrokeshire** gets you up close and personal with the raw beauty of this National Park.\n\nWe're talking world-class sea kayaking here. The iconic Ramsey Island circumnavigation is a must-do for experienced paddlers, offering challenging conditions and incredible wildlife encounters. For the thrill-seekers, The Bitches tidal rapids deliver an adrenaline rush like no other. But don't think it's just for the pros! There are plenty of sheltered bays and harbours perfect for beginners and families to dip their paddles in. Places like Solva, Porthclais, and Stackpole Quay provide calm waters and stunning scenery.\n\nWhat sets Pembrokeshire apart is its incredible diversity. One minute you're battling against a headwind around a headland, the next you're gliding through crystal-clear waters spotting seals and seabirds. The wildlife is simply unmatched. From playful seals popping up to say hello to the comical puffins nesting on Skomer Island, every paddle is a wildlife safari.\n\nOf course, it's not always sunshine and calm seas. The Pembrokeshire coast can be unpredictable. Strong tides, exposed conditions, and sudden weather changes mean you need to be prepared. That's why we always recommend checking the forecast, having the right gear, and being honest about your abilities. Or, if you're new to the sport, join a guided tour with one of the excellent local operators like TYF Adventure or MUUK Adventures. They know the coast like the back of their hand and can ensure a safe and unforgettable experience.\n\nWhether you're seeking a challenging adventure or a peaceful paddle, **kayaking Pembrokeshire** will leave you breathless. Just remember to respect the sea, leave no trace, and maybe treat yourself to a well-deserved pint at The Sloop Inn in Porthgain afterwards. You'll have earned it.",
+  "bestSeason": "May-September",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £95 guided",
+  "spots": [
+    {
+      "name": "Ramsey Island Circumnavigation",
+      "slug": "ramsey-island-circumnavigation",
+      "description": "The iconic Pembrokeshire paddle. This challenging route takes you around the entire island, exposing you to strong tides, currents, and potentially rough seas. You'll be rewarded with stunning views of towering cliffs, hidden caves, and abundant wildlife including seals, seabirds, and peregrine falcons.",
+      "difficulty": "Challenging",
+      "duration": "6-7 hours round trip",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced sea kayakers with strong navigational skills and the ability to handle challenging conditions.",
+      "notSuitableFor": "Beginners, those with limited sea kayaking experience, or anyone prone to seasickness.",
+      "bestSeason": "May-September (calmest conditions)",
+      "parking": "St Davids car park (SA62 6SB). Can get busy, especially in summer. Arrive early. Pay and display.",
+      "startPoint": {
+        "name": "St Justinian's Lifeboat Station",
+        "lat": 51.8724,
+        "lng": -5.2703
+      },
+      "estimatedCost": "Free (parking £6-8) or £85-95pp guided with TYF Adventure.",
+      "operatorSlug": "tyf-adventure",
+      "insiderTip": "Check the tide times carefully. Slack water is the best time to navigate through The Bitches. Paddle anti-clockwise to take advantage of the tidal flow."
+    },
+    {
+      "name": "The Bitches Rapids",
+      "slug": "the-bitches-rapids",
+      "description": "A thrilling tidal race experience for experienced kayakers. The Bitches are a series of rocks and reefs just off St Davids Head that create powerful rapids during spring tides. Timing is crucial; you need to hit it at the right stage of the tide to enjoy the full effect. This is not for the faint of heart; expect turbulent water and the potential for swims.",
+      "difficulty": "Expert",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced white-water kayakers with strong bracing and rolling skills. Those comfortable in dynamic water.",
+      "notSuitableFor": "Beginners, intermediate kayakers, or anyone without a reliable roll. Requires specific knowledge of tidal flows and hazards.",
+      "bestSeason": "May-September (when sea conditions are generally calmer)",
+      "parking": "Same as Ramsey Island - St Davids car park (SA62 6SB).",
+      "startPoint": {
+        "name": "St Justinian's Lifeboat Station",
+        "lat": 51.8724,
+        "lng": -5.2703
+      },
+      "estimatedCost": "Free (parking £6-8). Guiding often includes Ramsey trip.",
+      "operatorSlug": "null",
+      "insiderTip": "Scout the rapids from the headland before committing. Talk to local kayakers for up-to-date information on conditions. And wear a helmet!"
+    },
+    {
+      "name": "Skomer Island",
+      "slug": "skomer-island",
+      "description": "Paddle from Martin's Haven to Skomer Island, a haven for seabirds, including thousands of puffins during nesting season. The crossing can be challenging in strong winds, but the reward is unparalleled wildlife viewing opportunities. Land on the island (permit required) for a closer look at the puffin colonies.",
+      "difficulty": "Moderate",
+      "duration": "4-5 hours round trip",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediate kayakers with some open water experience and a love of wildlife.",
+      "notSuitableFor": "Beginners without experience of paddling in exposed conditions. Check ferry schedules if planning to land.",
+      "bestSeason": "April-July (puffin nesting season)",
+      "parking": "Martin's Haven car park (SA62 3BJ). Can be very busy in peak season. Consider arriving before 9am.",
+      "startPoint": {
+        "name": "Martin's Haven beach",
+        "lat": 51.7371,
+        "lng": -5.2281
+      },
+      "estimatedCost": "Free (parking £5-7), Skomer Landing Fee applies (approx £15pp). Preseli Venture offers guided trips.",
+      "operatorSlug": "preseli-venture",
+      "insiderTip": "Bring binoculars for better wildlife viewing. Be aware of the Skomer ferry route and give way accordingly. Check the weather forecast religiously; this crossing is exposed."
+    },
+    {
+      "name": "Solva Harbour",
+      "slug": "solva-harbour",
+      "description": "A sheltered and picturesque harbour perfect for beginner kayakers. Explore the tidal estuary, paddle past colourful houses, and enjoy the peaceful atmosphere. Plenty of opportunities for birdwatching and spotting small boats. Launching is easy from the beach.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families with young children, and those looking for a relaxing paddle.",
+      "notSuitableFor": "Experienced kayakers seeking a challenging adventure.",
+      "bestSeason": "All year round (weather permitting)",
+      "parking": "Solva Harbour car park (SA62 6UT). Can get busy in summer.",
+      "startPoint": {
+        "name": "Solva Harbour beach",
+        "lat": 51.8697,
+        "lng": -5.1842
+      },
+      "estimatedCost": "Free (parking £3-5). Several local businesses offer kayak hire.",
+      "operatorSlug": "null",
+      "insiderTip": "Paddle up the river at high tide for a different perspective. Stop for ice cream at the cafe on the harbour wall after your paddle."
+    },
+    {
+      "name": "Porthclais",
+      "slug": "porthclais",
+      "description": "Another sheltered harbour offering easy kayaking. Paddle along the coast towards St Non's Bay, explore small coves, and enjoy the views of the rugged coastline. This is a great spot for spotting seals and seabirds. Easy launching from the slipway.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families, and those looking for a scenic and relaxed paddle.",
+      "notSuitableFor": "Those seeking a long-distance or challenging paddle.",
+      "bestSeason": "All year round (weather permitting)",
+      "parking": "Porthclais Harbour car park (SA62 6BN). Limited space, arrive early or consider cycling.",
+      "startPoint": {
+        "name": "Porthclais Harbour slipway",
+        "lat": 51.8592,
+        "lng": -5.1948
+      },
+      "estimatedCost": "Free (parking £3-5).",
+      "operatorSlug": "null",
+      "insiderTip": "Walk the Pembrokeshire Coast Path from Porthclais to St Davids after your paddle for stunning views."
+    },
+    {
+      "name": "Abereiddy",
+      "slug": "abereiddy",
+      "description": "Launch from the famous Blue Lagoon at Abereiddy and explore the coastline. Paddle north towards Porthgain or south towards Traeth Llyfn, enjoying the dramatic cliffs and clear waters. This area is known for its wildlife, including seals and seabirds. Beware of currents around headlands.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediate kayakers with some open water experience.",
+      "notSuitableFor": "Beginners in strong winds or rough seas.",
+      "bestSeason": "May-September",
+      "parking": "Abereiddy Beach car park (SA62 6DT). Can get extremely busy in summer, arrive before 9am or use the park and ride.",
+      "startPoint": {
+        "name": "Abereiddy Beach",
+        "lat": 51.9019,
+        "lng": -5.1821
+      },
+      "estimatedCost": "Free (parking £5-7).",
+      "operatorSlug": "null",
+      "insiderTip": "The Blue Lagoon itself is a great spot for a post-paddle swim (if you don't mind the cold!). Head to The Sloop Inn in Porthgain for a well-deserved pint."
+    },
+    {
+      "name": "Stackpole Quay to Barafundle Bay",
+      "slug": "stackpole-quay-to-barafundle-bay",
+      "description": "A beautiful paddle from Stackpole Quay to the iconic Barafundle Bay, regularly voted one of the best beaches in the UK. Explore the limestone coastline, paddle through archways, and land on the golden sands of Barafundle. This route is relatively sheltered but can be affected by swell.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediate kayakers looking for a scenic and accessible paddle.",
+      "notSuitableFor": "Beginners in strong winds or large swell.",
+      "bestSeason": "May-September",
+      "parking": "Stackpole Quay car park (SA71 5DQ). National Trust car park, charges apply.",
+      "startPoint": {
+        "name": "Stackpole Quay",
+        "lat": 51.6478,
+        "lng": -4.8957
+      },
+      "estimatedCost": "Free (National Trust parking charges apply).",
+      "operatorSlug": "null",
+      "insiderTip": "Combine your paddle with a walk around the Stackpole Estate. Barafundle Bay is best enjoyed at low tide when there's more beach."
+    },
+    {
+      "name": "Milford Haven Waterway",
+      "slug": "milford-haven-waterway",
+      "description": "Explore the sheltered waters of Milford Haven, one of the deepest natural harbours in the world. Paddle past industrial landscapes, historic forts, and hidden creeks. This waterway offers a diverse range of paddling experiences, from urban exploration to wildlife spotting.",
+      "difficulty": "Easy to Moderate (depending on the section)",
+      "duration": "Varies depending on route",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Kayakers of all levels looking for a varied and accessible paddle.",
+      "notSuitableFor": "Those seeking pristine wilderness experiences.",
+      "bestSeason": "All year round (weather permitting)",
+      "parking": "Numerous car parks along the waterway, depending on your chosen launch point.",
+      "startPoint": {
+        "name": "Various launch points along the Milford Haven Waterway",
+        "lat": 51.7147,
+        "lng": -5.0446
+      },
+      "estimatedCost": "Free (parking charges may apply).",
+      "operatorSlug": null,
+      "insiderTip": "Check the tide times before setting out, as tidal currents can be strong in some sections. Visit the Pembroke Castle for a bit of local history after your paddle."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The Pembrokeshire coast is notoriously unpredictable. Strong winds, sudden squalls, and large swells can develop quickly. Pay close attention to the marine forecast, especially wind speed and direction, wave height, and visibility. Always check multiple sources and be prepared to change your plans.",
+    "weatherLinks": [
+      {
+        "name": "Met Office Marine Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/coast-and-sea/inshore-waters/index.html#pembrokeshire"
+      },
+      {
+        "name": "Windguru",
+        "url": "https://www.windguru.cz/33785"
+      }
+    ],
+    "gearChecklist": [
+      "Sea kayak (or suitable touring kayak)",
+      "Paddle (with a spare!)",
+      "Buoyancy aid (essential)",
+      "Waterproof jacket and trousers — even on sunny days",
+      "Thermal layers — the sea can be cold even in summer",
+      "Dry bag — to keep your valuables safe and dry",
+      "Waterproof phone case — for emergencies and navigation",
+      "Navigation tools (map, compass, GPS) — know how to use them!",
+      "First aid kit — including blister treatment",
+      "Plenty of water and snacks — kayaking burns a lot of energy"
+    ],
+    "gearHire": [
+      {
+        "name": "TYF Shop",
+        "location": "St Davids",
+        "url": "https://www.tyf.com/shop/"
+      },
+      {
+        "name": "MUUK Adventures",
+        "location": "Various",
+        "url": "https://muukadventures.com/"
+      },
+      {
+        "name": "Activity Pembrokeshire",
+        "location": "Pembroke Dock",
+        "url": "https://activitypembrokeshire.com/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5-6h",
+          "route": "M4"
+        },
+        {
+          "from": "Manchester",
+          "duration": "5-6h",
+          "route": "M6, M5, A40"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "4-5h",
+          "route": "M5, A40"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "2-3h",
+          "route": "M4, A40"
+        }
+      ],
+      "publicTransport": "Haverfordwest is the nearest train station to many kayaking locations. From there, the Pembrokeshire Coast Path bus (various services) provides access to coastal villages. The St Davids Peninsula is served by the St Davids Shuttle Bus.",
+      "parkingTips": "Parking can be challenging, especially in summer. Arrive early, be prepared to pay, and consider using park and ride services where available. Respect local residents and avoid parking illegally."
+    },
+    "safety": "The Pembrokeshire coast can be dangerous. Strong tides, currents, and exposed conditions require careful planning and awareness. Always check the forecast, carry appropriate safety equipment, and tell someone your plans. If in doubt, join a guided tour. Dial 999 for emergencies; specify if you need the Coastguard."
+  },
+  "faqs": [
+    {
+      "question": "What's the best time of year for kayaking in Pembrokeshire?",
+      "answer": "May to September generally offers the best weather conditions for kayaking in Pembrokeshire. However, even in summer, the weather can be unpredictable, so always check the forecast before setting out. April to July is ideal for seeing puffins around Skomer Island."
+    },
+    {
+      "question": "Do I need any experience to go kayaking in Pembrokeshire?",
+      "answer": "No, there are plenty of sheltered locations suitable for beginners, such as Solva Harbour and Porthclais. However, for more exposed routes like Ramsey Island or Skomer Island, some experience is recommended. Consider joining a guided tour if you're new to the sport."
+    },
+    {
+      "question": "How much does it cost to go kayaking in Pembrokeshire?",
+      "answer": "Kayaking in Pembrokeshire can be free if you have your own equipment. Guided tours typically cost between £55 and £95 per person, depending on the duration and location. Kayak hire is also available from various operators, costing around £30-£50 per day."
+    },
+    {
+      "question": "Where can I hire a kayak in Pembrokeshire?",
+      "answer": "You can hire kayaks from TYF Shop in St Davids, MUUK Adventures operating at various locations, and Activity Pembrokeshire near Pembroke Dock. It's always best to book in advance, especially during peak season."
+    },
+    {
+      "question": "What should I wear for kayaking in Pembrokeshire?",
+      "answer": "Dress in layers, even on warm days, as the sea can be surprisingly cold. A waterproof jacket and trousers are essential, as is a buoyancy aid. Thermal layers, a hat, and gloves are also recommended. Wear appropriate footwear that you don't mind getting wet."
+    },
+    {
+      "question": "Are there any age restrictions for kayaking in Pembrokeshire?",
+      "answer": "Age restrictions vary depending on the operator and the location. For guided tours, children are usually welcome from around 8 years old, but this can vary. It's best to check with the specific operator before booking."
+    },
+    {
+      "question": "Is it safe to kayak around Ramsey Island?",
+      "answer": "Kayaking around Ramsey Island can be challenging due to strong tides and currents. It's recommended for experienced kayakers only. Check the tide times carefully and be aware of potential hazards such as submerged rocks. Consider joining a guided tour for a safer experience."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "TYF Shop",
+        "slug": "tyf-shop",
+        "address": "3 High Street, St Davids, Haverfordwest SA62 6SA",
+        "lat": 51.8811,
+        "lng": -5.2671,
+        "description": "The go-to place for all your adventure gear needs. They stock a wide range of kayaks, paddles, wetsuits, and other essential equipment. Knowledgeable staff and expert advice.",
+        "website": "https://www.tyf.com/shop/",
+        "phone": "01437 721611",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 150
+      },
+      {
+        "name": "Ma Simes Surf Hut",
+        "slug": "ma-simes-surf-hut",
+        "address": "Newgale, Haverfordwest SA62 6AS",
+        "lat": 51.8586,
+        "lng": -5.2127,
+        "description": "Primarily a surf shop but with a selection of kayaking accessories and clothing suitable for watersports. Friendly service and beachside location.",
+        "website": "https://www.masimes.co.uk/",
+        "phone": "01437 720720",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 80
+      },
+      {
+        "name": "Coastlines Surf Shop",
+        "slug": "coastlines-surf-shop",
+        "address": "38 Charles Street, Milford Haven SA73 2HA",
+        "lat": 51.7251,
+        "lng": -5.0528,
+        "description": "Focuses on surfing but carries a good range of wetsuits, buoyancy aids and other watersports equipment that can be used for kayaking.",
+        "website": "https://coastlines.uk.com/",
+        "phone": "01646 698121",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 50
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Sampler",
+        "slug": "the-sampler",
+        "address": "30 High St, St Davids SA62 6SD",
+        "lat": 51.8816,
+        "lng": -5.2675,
+        "description": "Cosy cafe serving delicious sandwiches, cakes, and coffee. Perfect for a post-paddle refuel. Known for their friendly service and local produce.",
+        "vibe": "Relaxed cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Homemade cakes, great coffee"
+      },
+      {
+        "name": "The Shed",
+        "slug": "the-shed",
+        "address": "Porthgain, Haverfordwest SA62 5BN",
+        "lat": 51.9262,
+        "lng": -5.1644,
+        "description": "Award-winning fish and chips restaurant in the picturesque harbour of Porthgain. Freshly caught fish and crispy chips are a must-try. Can get very busy in summer.",
+        "vibe": "Seaside restaurant",
+        "priceRange": "££",
+        "website": "https://theshedporthgain.co.uk/",
+        "knownFor": "Fish and chips, seafood"
+      },
+      {
+        "name": "Cwtch",
+        "slug": "cwtch",
+        "address": "22 High St, St Davids SA62 6SD",
+        "lat": 51.8815,
+        "lng": -5.2682,
+        "description": "Stylish restaurant serving modern Welsh cuisine. Perfect for a special occasion or a treat after a long day on the water. Known for their creative dishes and locally sourced ingredients.",
+        "vibe": "Upscale restaurant",
+        "priceRange": "£££",
+        "website": "https://www.cwtchrestaurant.co.uk/",
+        "knownFor": "Modern Welsh cuisine, cocktails"
+      },
+      {
+        "name": "The Sloop Inn",
+        "slug": "the-sloop-inn",
+        "address": "Porthgain, Haverfordwest SA62 5BN",
+        "lat": 51.926,
+        "lng": -5.1639,
+        "description": "Historic pub in Porthgain harbour, serving traditional pub fare and local ales. Great atmosphere and stunning views. The perfect place to relax and unwind after a day of kayaking.",
+        "vibe": "Traditional pub",
+        "priceRange": "££",
+        "website": "https://www.thesloop.co.uk/",
+        "knownFor": "Real ales, pub food, harbour views"
+      },
+      {
+        "name": "Bench Bar",
+        "slug": "bench-bar",
+        "address": "Newgale, Haverfordwest SA62 6AS",
+        "lat": 51.8585,
+        "lng": -5.2121,
+        "description": "Right on Newgale beach, perfect for a post-surf (or kayaking!) drink or snack. Great views of the beach and surf. Simple menu but good vibes.",
+        "vibe": "Beach bar",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Beach views, cold beer"
+      },
+      {
+        "name": "Grain",
+        "slug": "grain",
+        "address": "31a High St, St Davids SA62 6SA",
+        "lat": 51.8818,
+        "lng": -5.2676,
+        "description": "Wood-fired pizzas using local ingredients, a great choice in St Davids if you fancy something easy and delicious after a paddle.",
+        "vibe": "Casual pizza place",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Pizza"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "St Davids YHA",
+        "slug": "st-davids-yha",
+        "description": "Budget-friendly hostel in St Davids, within walking distance of the city centre and the coast. A great option for kayakers looking to explore the St Davids Peninsula.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Ramsey Island (10 minute drive)",
+        "website": "https://www.yha.org.uk/hostel/yha-st-davids"
+      },
+      {
+        "name": "Whitesands Camping",
+        "slug": "whitesands-camping",
+        "description": "Campsite located close to Whitesands Bay, a popular spot for surfing and kayaking. Basic facilities but stunning views.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Ramsey Island (5 minute drive)",
+        "website": "http://www.whitesandscamping.co.uk/"
+      },
+      {
+        "name": "Twr y Felin Hotel",
+        "slug": "twr-y-felin-hotel",
+        "description": "Luxury hotel in St Davids, offering stunning views and high-end amenities. A great option for those looking for a more comfortable stay.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Ramsey Island (10 minute drive)",
+        "website": "https://www.twryfelinhotel.com/"
+      },
+      {
+        "name": "Crug Glas Country House",
+        "slug": "crug-glas-country-house",
+        "description": "Charming B&B near St Davids, offering comfortable rooms and a warm welcome. A great base for exploring the Pembrokeshire coast.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Abereiddy (10 minute drive)",
+        "website": "https://www.crug-glas.co.uk/"
+      },
+      {
+        "name": "Broad Haven Camping",
+        "slug": "broad-haven-camping",
+        "description": "Well-maintained campsite right on Broad Haven beach, offering stunning sea views and easy access to kayaking. Family-friendly and well-equipped.",
+        "type": "campsite",
+        "priceRange": "££",
+        "nearestSpot": "Broad Haven (on site!)",
+        "website": "http://www.broadhavencamping.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Celtic Challenge",
+      "type": "race",
+      "monthTypical": "May",
+      "description": "A long-distance rowing and kayaking race across the Irish Sea.",
+      "website": "https://celticchallenge.info/",
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "registrationCost": 250
+    },
+    {
+      "name": "Pembrokeshire Coast Path Run",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "A series of trail running races along the Pembrokeshire Coast Path, with kayaking options available.",
+      "website": null,
+      "relevantActivities": [
+        "kayaking"
+      ],
+      "registrationCost": 35
+    }
+  ],
+  "keywords": {
+    "primary": "kayaking pembrokeshire",
+    "secondary": [
+      "sea kayaking pembrokeshire",
+      "pembrokeshire kayak tours",
+      "kayaking ramsey island",
+      "kayaking skomer island",
+      "kayak hire pembrokeshire"
+    ],
+    "longTail": [
+      "best places to kayak in pembrokeshire",
+      "guided kayaking tours pembrokeshire",
+      "kayaking for beginners pembrokeshire",
+      "kayaking routes pembrokeshire coast",
+      "kayaking around ramsey island safely",
+      "sea kayaking around skomer island puffins",
+      "kayaking pembrokeshire with seals",
+      "kayak rental pembrokeshire",
+      "kayaking pembrokeshire family friendly",
+      "kayaking the bitches pembrokeshire",
+      "where to launch kayak pembrokeshire"
+    ],
+    "localIntent": [
+      "kayaking near st davids",
+      "kayaking near tenby",
+      "kayaking near haverfordwest",
+      "kayaking near pembroke",
+      "kayaking near fishguard"
+    ],
+    "commercialIntent": [
+      "kayaking pembrokeshire guided tours price",
+      "best kayak hire pembrokeshire",
+      "book kayaking tour pembrokeshire",
+      "kayaking equipment pembrokeshire",
+      "pembrokeshire kayaking holidays"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "anglesey",
+        "label": "Kayaking in Anglesey"
+      },
+      {
+        "regionSlug": "gower",
+        "label": "Kayaking in Gower"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "coasteering",
+        "label": "Coasteering in Pembrokeshire"
+      },
+      {
+        "activityTypeSlug": "surfing",
+        "label": "Surfing in Pembrokeshire"
+      },
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Pembrokeshire"
+      }
+    ]
+  }
+}

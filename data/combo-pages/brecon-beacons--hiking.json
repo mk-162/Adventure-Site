@@ -1,0 +1,582 @@
+{
+  "regionSlug": "brecon-beacons",
+  "activityTypeSlug": "hiking",
+  "title": "Hiking in Brecon Beacons",
+  "strapline": "Summit iconic peaks and discover hidden waterfalls on the best hiking trails in South Wales.",
+  "metaTitle": "Hiking Brecon Beacons: Routes, Tips & Advice | Adventure Wales",
+  "metaDescription": "Discover the best hiking in Brecon Beacons. Expert guide to routes, gear, safety, and where to find the best pint afterwards.",
+  "heroAlt": "Hiker admiring the view from the summit of Pen y Fan, Brecon Beacons",
+  "introduction": "The Brecon Beacons are a hiker's playground. We're not just talking about the iconic slog up Pen y Fan (though that's a rite of passage). This national park offers a variety of terrain from challenging mountain ascents to gentle riverside strolls, ensuring there's something for every level of walker. Forget manicured paths; expect rugged landscapes, dramatic ridges, and the occasional boggy surprise. What sets hiking Brecon Beacons apart is the sheer variety compacted into a relatively small area. One day you're conquering Fan y Big, the next you're lost in the magic of Waterfall Country. \n\nBut be warned: the weather here is notoriously fickle. Even on a seemingly clear day, conditions can change rapidly, bringing mist, rain, and strong winds. Navigation skills are essential, particularly if venturing off the main paths. The rewards, however, are immense: panoramic views, a sense of accomplishment, and the chance to escape the crowds. The walking here is best suited to those who appreciate a bit of solitude and aren’t afraid of a little challenge. Whether you're a seasoned hillwalker or a family looking for a memorable day out, you'll find incredible hiking in Brecon Beacons.",
+  "bestSeason": "May-October",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Pen y Fan via the Storey Arms",
+      "slug": "pen-y-fan-storey-arms",
+      "description": "The classic route up the highest peak in South Wales. Expect crowds, especially on weekends, but the views from the top are worth it on a clear day. The path is well-maintained but steep in places. Perfect for a first taste of hiking in the Brecon Beacons.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours round trip",
+      "distance": "6.4km",
+      "elevationGain": "440m",
+      "bestFor": "First-timers, families, those wanting a popular and straightforward hike",
+      "notSuitableFor": "Those seeking solitude, people with mobility issues",
+      "bestSeason": "April-October",
+      "parking": "Storey Arms Outdoor Education Centre. Can get incredibly busy, especially on weekends and holidays. Arrive early (before 9am) or be prepared to park further down the A470. £5 for the day.",
+      "startPoint": {
+        "name": "Storey Arms",
+        "lat": 51.9003,
+        "lng": -3.4343
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": "null",
+      "insiderTip": "For a slightly quieter route, consider the Pont ar Daf car park route which is slightly longer."
+    },
+    {
+      "name": "Fan y Big and Cribyn Horseshoe",
+      "slug": "fan-y-big-cribyn-horseshoe",
+      "description": "A challenging but rewarding horseshoe walk taking in two iconic peaks: Fan y Big (famous for its 'diving board' rock formation) and Cribyn. The views are stunning, and the terrain is varied. Be prepared for some steep ascents and descents.",
+      "difficulty": "Challenging",
+      "duration": "4-5 hours round trip",
+      "distance": "9.5km",
+      "elevationGain": "750m",
+      "bestFor": "Experienced hikers, those wanting a challenging and scenic route",
+      "notSuitableFor": "Beginners, those afraid of heights, bad weather",
+      "bestSeason": "May-September",
+      "parking": "Pont ar Daf car park. Popular, so arrive early. £5 for the day.",
+      "startPoint": {
+        "name": "Pont ar Daf Car Park",
+        "lat": 51.9052,
+        "lng": -3.4436
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": "null",
+      "insiderTip": "Visit during the week or early in the morning to avoid the worst of the crowds, especially at the 'diving board' on Fan y Big."
+    },
+    {
+      "name": "Sugar Loaf Mountain",
+      "slug": "sugar-loaf-mountain",
+      "description": "An iconic, cone-shaped peak near Abergavenny. The hike is short but steep, offering panoramic views of the surrounding countryside. A great option for a shorter, more accessible mountain walk.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours round trip",
+      "distance": "5km",
+      "elevationGain": "300m",
+      "bestFor": "Families, those wanting a shorter walk with great views",
+      "notSuitableFor": "Those with mobility issues (some steep sections)",
+      "bestSeason": "Year-round (weather permitting)",
+      "parking": "Small car park at the base of the mountain. Can fill up quickly, especially on weekends. Free.",
+      "startPoint": {
+        "name": "Sugar Loaf Car Park",
+        "lat": 51.8432,
+        "lng": -3.1067
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": "null",
+      "insiderTip": "Check the weather forecast before you go – the summit can be exposed in windy conditions."
+    },
+    {
+      "name": "Four Falls Trail, Waterfall Country",
+      "slug": "four-falls-trail",
+      "description": "A magical walk through ancient woodland, visiting four stunning waterfalls: Sgwd Gwladus, Sgwd y Pannwr, Sgwd Isaf Clun-Gwyn, and Sgwd yr Eira (where you can walk behind the curtain of water!). A popular trail, but well worth it.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours round trip",
+      "distance": "8.9km",
+      "elevationGain": "250m",
+      "bestFor": "Families, nature lovers, photographers",
+      "notSuitableFor": "Those with limited mobility (some steep and uneven sections)",
+      "bestSeason": "Year-round, but best in spring and autumn",
+      "parking": "Gwaun Hepste car park. £5 for the day.",
+      "startPoint": {
+        "name": "Gwaun Hepste Car Park",
+        "lat": 51.7677,
+        "lng": -3.5935
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": "null",
+      "insiderTip": "Wear waterproofs if you plan on walking behind Sgwd yr Eira – you will get wet!"
+    },
+    {
+      "name": "Skirrid Fawr (Holy Mountain)",
+      "slug": "skirrid-fawr",
+      "description": "A distinctive mountain with a unique split summit, steeped in history and legend. A relatively short but steep climb, offering fantastic views across the Monmouthshire countryside. According to legend, the 'split' occurred during the crucifixion.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours round trip",
+      "distance": "6.4km",
+      "elevationGain": "300m",
+      "bestFor": "History buffs, those wanting a shorter, less crowded mountain walk",
+      "notSuitableFor": "Those with mobility issues (steep sections)",
+      "bestSeason": "Year-round (weather permitting)",
+      "parking": "Small car park at the base of the mountain. Free.",
+      "startPoint": {
+        "name": "Skirrid Fawr Car Park",
+        "lat": 51.8734,
+        "lng": -2.9856
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": "null",
+      "insiderTip": "The summit can be windy, so bring a windproof jacket."
+    },
+    {
+      "name": "Fan Brycheiniog Horseshoe (Carmarthen Fans)",
+      "slug": "fan-brycheiniog-horseshoe",
+      "description": "A wilder, more remote horseshoe walk on the western edge of the Brecon Beacons. Featuring Llyn y Fan Fawr and Llyn y Fan Fach (two stunning glacial lakes), this is a challenging but rewarding hike. Be prepared for exposed conditions and fewer marked paths.",
+      "difficulty": "Challenging",
+      "duration": "6-7 hours round trip",
+      "distance": "16km",
+      "elevationGain": "700m",
+      "bestFor": "Experienced hikers, those seeking solitude and challenging terrain",
+      "notSuitableFor": "Beginners, those without good navigation skills",
+      "bestSeason": "May-September",
+      "parking": "Car park near Llanddeusant (grid ref SN800246). Limited parking, so arrive early. Free.",
+      "startPoint": {
+        "name": "Llyn y Fan Fach Car Park",
+        "lat": 51.9393,
+        "lng": -3.7731
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": "null",
+      "insiderTip": "Take a map and compass (and know how to use them!) – the paths can be indistinct, especially in poor visibility."
+    },
+    {
+      "name": "Table Mountain (Crug Hywel)",
+      "slug": "table-mountain-crug-hywel",
+      "description": "A flat-topped hill overlooking the town of Crickhowell. A relatively easy walk to the summit, offering panoramic views of the Usk Valley. Perfect for a family-friendly hike with a sense of achievement.",
+      "difficulty": "Easy",
+      "duration": "1.5-2.5 hours round trip",
+      "distance": "6km",
+      "elevationGain": "250m",
+      "bestFor": "Families, those wanting a shorter, easier walk",
+      "notSuitableFor": "Those seeking a challenging mountain hike",
+      "bestSeason": "Year-round (weather permitting)",
+      "parking": "Small car park in Crug Hywel town centre. Free.",
+      "startPoint": {
+        "name": "Crug Hywel Town Centre",
+        "lat": 51.8545,
+        "lng": -3.1544
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": "null",
+      "insiderTip": "Grab a coffee and cake in Crickhowell before or after your walk – there are some great cafes in town."
+    },
+    {
+      "name": "Blorenge",
+      "slug": "blorenge",
+      "description": "A prominent hill offering excellent views over Abergavenny and the surrounding area. Several trails crisscross the Blorenge, offering a variety of walking options. Look out for the Keeper's Pond, a popular spot for picnics and wildlife watching.",
+      "difficulty": "Moderate",
+      "duration": "2-4 hours round trip",
+      "distance": "Varies depending on route",
+      "elevationGain": "Varies depending on route",
+      "bestFor": "Those wanting a variety of walking options, wildlife lovers",
+      "notSuitableFor": "Those seeking a remote mountain experience",
+      "bestSeason": "Year-round (weather permitting)",
+      "parking": "Several car parks around the Blorenge, including one near the Keeper's Pond. Free.",
+      "startPoint": {
+        "name": "Keeper's Pond Car Park",
+        "lat": 51.8153,
+        "lng": -3.0444
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": "null",
+      "insiderTip": "Pack a picnic and enjoy it by the Keeper's Pond – it's a beautiful spot."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The Brecon Beacons weather is notoriously unpredictable. Conditions can change rapidly, even on a seemingly clear day. Check the forecast before you set out and be prepared for rain, wind, and mist. Mountain Rescue callouts are common for walkers caught out by the weather.",
+    "weatherLinks": [
+      {
+        "name": "Mountain Weather Information Service (MWIS)",
+        "url": "https://www.mwis.org.uk/"
+      },
+      {
+        "name": "Met Office",
+        "url": "https://www.metoffice.gov.uk/weather/forecast/gxxrf086w"
+      }
+    ],
+    "gearChecklist": [
+      "Waterproof jacket and trousers – essential, even on a sunny day.",
+      "Hiking boots – ankle support is crucial on uneven terrain.",
+      "Map and compass – know how to use them, especially off the main paths.",
+      "Charged mobile phone and portable charger – for emergencies.",
+      "First-aid kit – including blister plasters and pain relief.",
+      "Plenty of water – dehydration is a common issue.",
+      "High-energy snacks – to keep you going on longer hikes.",
+      "Sunscreen and hat – even on cloudy days, the sun can be strong at altitude.",
+      "Warm layers – temperatures can drop quickly, especially at higher elevations.",
+      "Headtorch – in case you're caught out after dark."
+    ],
+    "gearHire": [
+      {
+        "name": "Cotswold Outdoor",
+        "location": "Brecon",
+        "url": "https://www.cotswoldoutdoor.com/stores/brecon-outdoor-clothing-and-equipment-shop.html"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "3.5h",
+          "route": "Via M4"
+        },
+        {
+          "from": "Manchester",
+          "duration": "4h",
+          "route": "Via M6 and A40"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "2.5h",
+          "route": "Via A449 and A40"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "1h",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "Nearest train stations are Abergavenny, Llandovery, and Merthyr Tydfil. Limited bus services run within the Brecon Beacons National Park. The T4 TrawsCymru bus connects Cardiff and Brecon. The Brecon Beacons Bus Sherpa service (seasonal) links key hiking locations.",
+      "parkingTips": "Parking at popular trailheads can be extremely limited, especially on weekends and during school holidays. Arrive early (before 9am) or be prepared to park further away and walk to the start of the trail. Some car parks charge a fee (£5 is typical)."
+    },
+    "safety": "Be aware of the weather forecast and be prepared for changing conditions. Tell someone where you are going and when you expect to be back. Carry a map, compass, and whistle. Stick to marked paths where possible. In case of emergency, call 999 and ask for Mountain Rescue. Mobile phone signal can be patchy in some areas."
+  },
+  "faqs": [
+    {
+      "question": "What is the highest mountain in the Brecon Beacons?",
+      "answer": "Pen y Fan is the highest peak, standing at 886 meters (2,907 feet) above sea level. It's a popular hike, offering fantastic views."
+    },
+    {
+      "question": "Are dogs allowed in the Brecon Beacons?",
+      "answer": "Yes, dogs are allowed in the Brecon Beacons National Park, but they must be kept under close control, especially during lambing season (typically March-May). Some areas may have specific restrictions."
+    },
+    {
+      "question": "Is there a charge to enter the Brecon Beacons National Park?",
+      "answer": "No, there is no charge to enter the Brecon Beacons National Park itself. However, some car parks may charge a fee for parking."
+    },
+    {
+      "question": "How difficult is it to climb Pen y Fan?",
+      "answer": "The most popular route up Pen y Fan (via the Storey Arms) is considered moderate. It's a relatively short but steep climb, taking around 2-3 hours for a round trip. However, the weather can make it more challenging."
+    },
+    {
+      "question": "What should I wear for hiking in the Brecon Beacons?",
+      "answer": "Wear layers of clothing that you can easily adjust to changing weather conditions. Waterproof jacket and trousers are essential, as are sturdy hiking boots. A hat and gloves are also recommended, even in summer."
+    },
+    {
+      "question": "Are there any guided hiking tours in the Brecon Beacons?",
+      "answer": "Yes, several companies offer guided hiking tours in the Brecon Beacons. Adventure Britain and Black Mountain Adventure are popular choices."
+    },
+    {
+      "question": "What are the best waterfalls to visit in the Brecon Beacons?",
+      "answer": "The Waterfall Country area is famous for its waterfalls. The Four Falls Trail is a great option, visiting Sgwd Gwladus, Sgwd y Pannwr, Sgwd Isaf Clun-Gwyn, and Sgwd yr Eira."
+    },
+    {
+      "question": "Can I camp in the Brecon Beacons?",
+      "answer": "Wild camping is technically illegal in the Brecon Beacons without the landowner's permission. However, there are several campsites throughout the park that offer facilities for campers."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Cotswold Outdoor",
+        "slug": "cotswold-outdoor-brecon",
+        "address": "Unit 1, Brecon Enterprise Park, Ffrwdgrech Road, Brecon LD3 8LA",
+        "lat": 51.9473,
+        "lng": -3.3911,
+        "description": "Large outdoor retailer offering a wide range of hiking gear, clothing, and equipment. Known for their knowledgeable staff and boot fitting service.",
+        "website": "https://www.cotswoldoutdoor.com/stores/brecon-outdoor-clothing-and-equipment-shop.html",
+        "phone": "01874 625555",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 150
+      },
+      {
+        "name": "Blacks",
+        "slug": "blacks-brecon",
+        "address": "Brecon Enterprise Park, Ffrwdgrech Rd, Brecon LD3 8LA",
+        "lat": 51.9469,
+        "lng": -3.392,
+        "description": "Another well-known outdoor retailer stocking a range of hiking clothing and equipment. Offers a variety of brands and price points.",
+        "website": "https://www.blacks.co.uk/stores/brecon-outdoor-clothing-and-equipment-shop-store-s74",
+        "phone": "0330 053 8810",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.0,
+        "reviewCount": 80
+      },
+      {
+        "name": "Mountain Warehouse",
+        "slug": "mountain-warehouse-brecon",
+        "address": "Unit 2, Brecon Retail Park, Brecon LD3 8EP",
+        "lat": 51.9493,
+        "lng": -3.3968,
+        "description": "Offers a wide selection of outdoor gear at affordable prices. A good option for budget-conscious hikers.",
+        "website": "https://www.mountainwarehouse.com/stores/brecon.aspx",
+        "phone": "01874 624048",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 3.8,
+        "reviewCount": 120
+      },
+      {
+        "name": "Brown & White Country Store",
+        "slug": "brown-white-country-store",
+        "address": "Unit 2, Lion Street Industrial Estate, Lion St, Hay-on-Wye, Hereford HR3 5AA",
+        "lat": 52.0733,
+        "lng": -3.1172,
+        "description": "A local independent store with a good selection of hiking clothing and equipment. They also offer a range of country clothing and footwear.",
+        "website": "http://www.brownandwhite.co.uk/",
+        "phone": "01497 820340",
+        "services": [
+          "gear sales",
+          "repairs"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 65
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Felin Fach Griffin",
+        "slug": "the-felin-fach-griffin",
+        "address": "Felin Fach, Brecon, Powys LD3 0UB",
+        "lat": 52.1107,
+        "lng": -3.3943,
+        "description": "A stylish and welcoming pub with rooms, known for its excellent food, local ales, and cosy atmosphere. Perfect for a celebratory meal after a long hike.",
+        "vibe": "Country pub",
+        "priceRange": "£££",
+        "website": "https://www.eatdrinksleep.ltd.uk/felin-fach-griffin/",
+        "knownFor": "Seasonal dishes, local ales, great atmosphere"
+      },
+      {
+        "name": "Cafe on the Square",
+        "slug": "cafe-on-the-square-brecon",
+        "address": "3 High St, Brecon LD3 7AL",
+        "lat": 51.9532,
+        "lng": -3.3903,
+        "description": "A popular cafe in the heart of Brecon, serving breakfasts, lunches, and cakes. A good option for a quick and affordable bite to eat.",
+        "vibe": "Casual cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Breakfasts, cakes, coffee"
+      },
+      {
+        "name": "The Bear Hotel",
+        "slug": "the-bear-hotel-crickhowell",
+        "address": "High St, Crickhowell NP8 1BW",
+        "lat": 51.8556,
+        "lng": -3.1542,
+        "description": "A historic coaching inn in Crickhowell, offering comfortable accommodation, a traditional bar, and a restaurant. A good option for a relaxing stay after a hike around Table Mountain.",
+        "vibe": "Historic pub",
+        "priceRange": "££",
+        "website": "https://www.bearhotel.co.uk/",
+        "knownFor": "Traditional pub fare, real ales, history"
+      },
+      {
+        "name": "Nantyffin Cider Mill Inn",
+        "slug": "nantyffin-cider-mill-inn",
+        "address": "Llandefalle, Brecon, Powys LD3 0UD",
+        "lat": 51.9871,
+        "lng": -3.3117,
+        "description": "A traditional pub and cider mill, serving homemade cider and pub food. A good option for trying local cider after a day in the hills.",
+        "vibe": "Rustic pub",
+        "priceRange": "££",
+        "website": "http://www.nantyffin.com/",
+        "knownFor": "Homemade cider, pub food, traditional atmosphere"
+      },
+      {
+        "name": "Star Inn",
+        "slug": "star-inn-talybont-on-usk",
+        "address": "Talybont-on-Usk, Brecon, Powys LD3 7YJ",
+        "lat": 51.9091,
+        "lng": -3.2724,
+        "description": "A canalside pub in Talybont-on-Usk, offering a friendly welcome, good food, and a selection of local ales. A popular spot for walkers and cyclists.",
+        "vibe": "Canalside pub",
+        "priceRange": "££",
+        "website": "https://www.starinntalybont.co.uk/",
+        "knownFor": "Canalside location, good food, local ales"
+      },
+      {
+        "name": "White Hart Brecon",
+        "slug": "white-hart-brecon",
+        "address": "23 High St Superior, Brecon LD3 7AN",
+        "lat": 51.9533,
+        "lng": -3.3905,
+        "description": "A traditional pub in the center of Brecon. Good selection of beer and tasty, simple menu",
+        "vibe": "Pub",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Real ales, friendly atmosphere"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "YHA Brecon Beacons",
+        "slug": "yha-brecon-beacons",
+        "description": "Budget-friendly hostel in a beautiful location near Pen y Fan. Great for solo hikers and groups.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Pen y Fan (5 miles)",
+        "website": "https://www.yha.org.uk/hostel/yha-brecon-beacons"
+      },
+      {
+        "name": "Crickhowell Camping",
+        "slug": "crickhowell-camping",
+        "description": "Family-friendly campsite with stunning views of the Black Mountains. Close to Table Mountain.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Table Mountain (3 miles)",
+        "website": "https://www.ukcampsite.co.uk/sites/details.asp?revid=331"
+      },
+      {
+        "name": "The Old Railway Line Garden Centre",
+        "slug": "old-railway-line-glamping",
+        "description": "Glamping pods located on a garden centre site, close to the heart of the Brecon Beacons National Park. A comfortable and convenient base for exploring the area.",
+        "type": "glamping",
+        "priceRange": "££",
+        "nearestSpot": "Pen y Fan (10 miles)",
+        "website": "https://www.oldrailwaylinegc.co.uk/accommodation/glamping-pods/"
+      },
+      {
+        "name": "Peterstone Court",
+        "slug": "peterstone-court",
+        "description": "Luxury hotel in a beautiful setting, offering comfortable accommodation and fine dining. A good option for a special occasion.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Pen y Fan (7 miles)",
+        "website": "https://www.peterstone-court.com/"
+      },
+      {
+        "name": "The Castle Hotel",
+        "slug": "the-castle-hotel-brecon",
+        "description": "A charming hotel in the heart of Brecon, offering comfortable accommodation and a traditional Welsh welcome.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Pen y Fan (5 miles)",
+        "website": "http://www.breconcastlehotel.com/"
+      },
+      {
+        "name": "Dan-yr-Ogof Showcaves Campsite",
+        "slug": "dan-yr-ogof-campsite",
+        "description": "Camp site with access to Dan-yr-Ogof showcaves. Perfect base for exploring the west of the park.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Fan Brycheiniog (10 miles)",
+        "website": "https://www.showcaves.co.uk/stay-at-dan-yr-ogof/campsite"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Brecon Beacons Ultra",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "A challenging ultra-marathon through the heart of the Brecon Beacons National Park.",
+      "website": "https://www.breconbeaconsultra.com/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 95
+    },
+    {
+      "name": "Hay Festival",
+      "type": "festival",
+      "monthTypical": "May",
+      "description": "A world-renowned literary festival held in Hay-on-Wye, offering a range of talks, workshops, and events.",
+      "website": "https://www.hayfestival.com/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 0
+    },
+    {
+      "name": "Man vs Horse",
+      "type": "race",
+      "monthTypical": "June",
+      "description": "A unique race where runners compete against horses over a challenging off-road course.",
+      "website": "https://green-events.co.uk/manvhorse/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 50
+    },
+    {
+      "name": "Black Mountains Trail Running Festival",
+      "type": "festival",
+      "monthTypical": "September",
+      "description": "Multi day event for trail running with camping and activities.",
+      "website": "https://www.trailrunningweekend.com/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 75
+    }
+  ],
+  "keywords": {
+    "primary": "hiking brecon beacons",
+    "secondary": [
+      "brecon beacons walks",
+      "pen y fan hike",
+      "waterfall country walks",
+      "black mountains hiking",
+      "hiking trails brecon beacons"
+    ],
+    "longTail": [
+      "best hikes in the brecon beacons for beginners",
+      "easy walks brecon beacons with dogs",
+      "challenging hiking trails in the brecon beacons",
+      "pen y fan hike distance and elevation",
+      "waterfall country four falls trail route",
+      "sugar loaf mountain hike parking",
+      "fan brycheiniog hiking route",
+      "hiking brecon beacons with children",
+      "guided hiking tours brecon beacons",
+      "hiking brecon beacons in winter",
+      "brecon beacons national park hiking map",
+      "skirrid fawr hike from abergavenny"
+    ],
+    "localIntent": [
+      "hiking near brecon",
+      "hiking near hay-on-wye",
+      "hiking near abergavenny",
+      "hiking near crickhowell",
+      "walking routes near llandovery"
+    ],
+    "commercialIntent": [
+      "brecon beacons guided hikes price",
+      "hiking gear brecon beacons",
+      "brecon beacons hiking tours",
+      "book hiking guide brecon beacons",
+      "brecon beacons hiking holidays"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "snowdonia",
+        "label": "Hiking in Snowdonia"
+      },
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Hiking in Pembrokeshire"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "canyoning",
+        "label": "Canyoning in Brecon Beacons"
+      },
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in Brecon Beacons"
+      },
+      {
+        "activityTypeSlug": "caving",
+        "label": "Caving in Brecon Beacons"
+      }
+    ]
+  }
+}

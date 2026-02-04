@@ -1,0 +1,502 @@
+{
+  "regionSlug": "pembrokeshire",
+  "activityTypeSlug": "surfing",
+  "title": "Surfing in Pembrokeshire",
+  "strapline": "Pembrokeshire’s raw beauty meets powerful Atlantic swells, creating a surfing playground unlike any other in Wales.",
+  "metaTitle": "Surfing in Pembrokeshire | Adventure Wales",
+  "metaDescription": "Discover the best spots for surfing in Pembrokeshire! Guide to beaches, lessons, gear, and where to grab a pint after catching some waves.",
+  "heroAlt": "Surfer carving a wave at Freshwater West, Pembrokeshire",
+  "introduction": "Pembrokeshire, with its dramatic coastline and exposure to the Atlantic, is arguably the best spot in Wales for surfing. Forget the manicured beaches of Cornwall – here, you'll find a wilder, more rugged experience. While Snowdonia might boast mountains, Pembrokeshire lays claim to some truly epic waves. The best surfing in Pembrokeshire comes from the Atlantic swells that wrap around our exposed headlands, offering waves for all skill levels. \n\nFreshwater West, of course, is the big name. Famous for its powerful, hollow waves, it's a magnet for experienced surfers. But don't let that intimidate you! There are plenty of other spots offering a gentler introduction to the sport. Newgale's expansive beach provides space for beginners, while Whitesands Bay offers consistent, manageable waves. Manorbier is a classic, protected by the castle. \n\nBe warned though, Pembrokeshire surfing isn't always easy. Conditions can change quickly, and the water can be cold, even in summer. Rip currents are common at some beaches (especially Freshwater West), so always check the forecast and heed the lifeguard's advice. \n\nHowever, the rewards are well worth it. Imagine catching a wave with seals watching you from the lineup, or finishing a session with a pint in a cosy pub overlooking the beach. Surfing in Pembrokeshire is more than just a sport, it's an experience that connects you to the raw beauty of the Welsh coast. Whether you're a seasoned pro or a complete beginner, Pembrokeshire has something to offer. Grab your board (or rent one!), and get ready to experience some of the best surfing in Wales.",
+  "bestSeason": "September - November",
+  "difficultyRange": "Beginner to Expert",
+  "priceRange": "Free - £60 guided",
+  "spots": [
+    {
+      "name": "Freshwater West",
+      "slug": "freshwater-west",
+      "description": "Pembrokeshire's most famous surf spot, Freshwater West is a powerful beach break known for its hollow, fast-breaking waves. It's exposed to the full force of the Atlantic, making it ideal for experienced surfers looking for a challenge. The beach is stunning, backed by dunes, but the strong rips and currents make it a spot best left to the pros or those with local knowledge.",
+      "difficulty": "Expert",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced surfers looking for powerful waves",
+      "notSuitableFor": "Beginners, weak swimmers, anyone unfamiliar with strong rips",
+      "bestSeason": "September - November",
+      "parking": "National Trust car park at the south end of the beach. Can get very busy, especially on weekends. Arrive early or be prepared to walk from further up the road.",
+      "startPoint": {
+        "name": "Freshwater West Car Park",
+        "lat": 51.6656,
+        "lng": -5.1696
+      },
+      "estimatedCost": "Free (parking donations encouraged)",
+      "operatorSlug": "outer-reef-surf-school",
+      "insiderTip": "Park at Gupton Farm (National Trust) and walk across the dunes to avoid the crowded car park and enjoy a lovely walk. Check the tide tables before you go; low tide can expose a lot of rocks."
+    },
+    {
+      "name": "Newgale",
+      "slug": "newgale",
+      "description": "A vast, 2-mile long pebble and sand beach, Newgale is a popular spot for all levels of surfer. It's generally more forgiving than Freshwater West, with a variety of peaks along the beach. Consistent waves, ample space, and surf schools make it a great place to learn. The northern end tends to be more exposed.",
+      "difficulty": "Beginner to Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, improvers, families",
+      "notSuitableFor": "Those seeking absolute solitude or perfectly formed barrels",
+      "bestSeason": "All year round, but best in autumn and winter",
+      "parking": "Large car park at the southern end of the beach, plus roadside parking along the length of the beach. Charges apply in the main car park during peak season.",
+      "startPoint": {
+        "name": "Newgale Beach Car Park",
+        "lat": 51.8495,
+        "lng": -5.2108
+      },
+      "estimatedCost": "Free (parking charges apply)",
+      "operatorSlug": "outer-reef-surf-school",
+      "insiderTip": "Check the wind direction – offshore (easterly) winds are ideal. The Bench Bar is THE place for post-surf beers, right on the beach."
+    },
+    {
+      "name": "Manorbier",
+      "slug": "manorbier",
+      "description": "Sheltered by the imposing Manorbier Castle, this beach offers a more protected surfing experience. The waves are generally smaller and more manageable than at Freshwater West or Newgale, making it a good option for beginners and intermediate surfers. The castle provides a stunning backdrop.",
+      "difficulty": "Beginner to Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, improvers, those looking for a scenic surf",
+      "notSuitableFor": "Experienced surfers seeking big waves",
+      "bestSeason": "Autumn and winter",
+      "parking": "Small car park above the beach. Can get busy in summer.",
+      "startPoint": {
+        "name": "Manorbier Beach Car Park",
+        "lat": 51.6523,
+        "lng": -4.8091
+      },
+      "estimatedCost": "Free (parking charges may apply)",
+      "operatorSlug": null,
+      "insiderTip": "Check the tide times – the best surfing is usually around mid-tide. The beach cafe serves great coffee and cakes."
+    },
+    {
+      "name": "Whitesands Bay",
+      "slug": "whitesands-bay",
+      "description": "A beautiful sandy beach near St Davids, Whitesands Bay is another popular spot for surfing. It offers consistent, relatively gentle waves, making it ideal for beginners and families. The beach is backed by Carn Llidi, a rocky outcrop that provides shelter from some winds. Lifeguard cover during the summer months.",
+      "difficulty": "Beginner to Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families, those wanting a scenic surf",
+      "notSuitableFor": "Experienced surfers looking for challenging waves",
+      "bestSeason": "All year round, but best in autumn and winter",
+      "parking": "Large car park right next to the beach. Charges apply.",
+      "startPoint": {
+        "name": "Whitesands Bay Car Park",
+        "lat": 51.8838,
+        "lng": -5.2739
+      },
+      "estimatedCost": "Free (parking charges apply)",
+      "operatorSlug": null,
+      "insiderTip": "Walk up Carn Llidi for stunning views of the coastline after your surf. Check out Ma Simes Surf Hut in St Davids for gear."
+    },
+    {
+      "name": "Broadhaven South",
+      "slug": "broadhaven-south",
+      "description": "Located within the Stackpole Estate, Broadhaven South is a stunning beach with a golden sandy expanse backed by dunes and the iconic Stack Rocks (aka the Elegug Stacks). It's more sheltered than Freshwater West, offering smaller, more manageable waves, making it suitable for intermediate surfers. The scenic beauty is a major draw.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediate surfers, those looking for a scenic surf, families",
+      "notSuitableFor": "Beginners unless with an instructor, experienced surfers seeking powerful waves",
+      "bestSeason": "Autumn and winter",
+      "parking": "National Trust car park at Stackpole Quay, a short walk from the beach.",
+      "startPoint": {
+        "name": "Stackpole Quay Car Park",
+        "lat": 51.6283,
+        "lng": -4.9264
+      },
+      "estimatedCost": "Free (parking charges apply)",
+      "operatorSlug": null,
+      "insiderTip": "Explore the Bosherston Lily Ponds after your surf – a beautiful and tranquil spot. The walk from the car park is beautiful too."
+    },
+    {
+      "name": "Marloes Sands",
+      "slug": "marloes-sands",
+      "description": "A remote and dramatic beach, Marloes Sands offers a wilder surfing experience. The waves can be inconsistent, but when it's on, it's on. The rugged coastline and stunning views make it a truly special place to surf. Keep an eye out for seals and seabirds.",
+      "difficulty": "Moderate to Challenging",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced surfers looking for a remote and challenging surf",
+      "notSuitableFor": "Beginners, those seeking facilities",
+      "bestSeason": "Autumn and winter",
+      "parking": "National Trust car park at the end of the road to Marloes village, a 15-minute walk to the beach.",
+      "startPoint": {
+        "name": "Marloes Sands Car Park",
+        "lat": 51.7189,
+        "lng": -5.2818
+      },
+      "estimatedCost": "Free (parking charges apply)",
+      "operatorSlug": null,
+      "insiderTip": "Check the forecast carefully as it can be fickle. The walk to the beach is part of the experience, but be prepared for mud! This is a great place to see seals."
+    },
+    {
+      "name": "West Angle Bay",
+      "slug": "west-angle-bay",
+      "description": "A sheltered bay located near Pembroke, West Angle Bay offers a more mellow surfing experience. It's a good option for beginners and improvers, especially when other spots are too big. The beach is sandy and picturesque, with views across to Dale.",
+      "difficulty": "Beginner to Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, improvers, families",
+      "notSuitableFor": "Experienced surfers seeking powerful waves",
+      "bestSeason": "All year round, but best in autumn and winter",
+      "parking": "Small car park right next to the beach.",
+      "startPoint": {
+        "name": "West Angle Bay Car Park",
+        "lat": 51.6848,
+        "lng": -5.1909
+      },
+      "estimatedCost": "Free (parking charges may apply)",
+      "operatorSlug": null,
+      "insiderTip": "The cafe at the beach serves great food and drinks. This bay is more protected from prevailing winds so a good option if it's howling elsewhere. This is a very beautiful spot."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Pembrokeshire's weather is notoriously unpredictable. Be prepared for sunshine, rain, and wind, sometimes all in the same day. Keep an eye on the swell forecast and wind direction – offshore winds (blowing from the land to the sea) are ideal for surfing. Water temperatures can be cold, even in summer, so a good wetsuit is essential.",
+    "weatherLinks": [
+      {
+        "name": "Magicseaweed",
+        "url": "https://magicseaweed.com/Pembrokeshire-Surf-Report/963/"
+      },
+      {
+        "name": "Windguru",
+        "url": "https://www.windguru.cz/68866"
+      }
+    ],
+    "gearChecklist": [
+      "Wetsuit (5mm recommended, especially in winter)",
+      "Surfboard (appropriate for your skill level)",
+      "Leash (to keep your board attached to you)",
+      "Surf wax (to provide grip on your board)",
+      "Rash vest (for extra warmth and sun protection)",
+      "Towel (obviously!)",
+      "Sunscreen (even on cloudy days)",
+      "Dry robe (for changing in comfort)",
+      "Warm clothes for after your surf (hat, gloves, fleece)",
+      "First-aid kit (for minor cuts and scrapes)"
+    ],
+    "gearHire": [
+      {
+        "name": "Newsurf",
+        "location": "Newgale",
+        "url": "https://www.newsurf.co.uk/"
+      },
+      {
+        "name": "Ma Simes Surf Hut",
+        "location": "St Davids",
+        "url": null
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5-6h",
+          "route": "Via M4"
+        },
+        {
+          "from": "Manchester",
+          "duration": "5-6h",
+          "route": "Via M6 and A40"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "4-5h",
+          "route": "Via M5 and A40"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "2-3h",
+          "route": "Via M4"
+        }
+      ],
+      "publicTransport": "Haverfordwest is the nearest train station to most surf spots. From there, you can take a bus or taxi. The Pembrokeshire Coast Path Bus (Sherpa) connects many of the coastal villages and beaches.",
+      "parkingTips": "Parking can be limited at some beaches, especially during peak season. Arrive early or be prepared to walk. Some car parks are National Trust, so membership can save you money. Be respectful of local residents when parking."
+    },
+    "safety": "Always check the surf forecast and tide times before you go. Be aware of rip currents, especially at Freshwater West. Never surf alone, and let someone know where you're going. If in doubt, don't go out! In an emergency, dial 999 and ask for the Coastguard. The RNLI provides lifeguard cover at some beaches during the summer months. Be aware of submerged rocks and other hazards."
+  },
+  "faqs": [
+    {
+      "question": "What's the best time of year for surfing in Pembrokeshire?",
+      "answer": "Autumn and winter (September to November) generally offer the most consistent swells. However, you can surf year-round, and the summer months can be great for beginners."
+    },
+    {
+      "question": "Is Freshwater West suitable for beginners?",
+      "answer": "No, Freshwater West is generally not suitable for beginners due to its powerful waves and strong rips. Newgale, Whitesands Bay, and West Angle Bay are better options for beginners."
+    },
+    {
+      "question": "How much does it cost to rent a surfboard in Pembrokeshire?",
+      "answer": "Surfboard hire typically costs around £15-£25 per day. Wetsuit hire is usually around £10-£15 per day. Check with local surf shops for specific prices."
+    },
+    {
+      "question": "Are there surf schools in Pembrokeshire?",
+      "answer": "Yes, there are several surf schools in Pembrokeshire, including Outer Reef Surf School in Newgale and MUUK Adventures, who offer lessons at various locations. Prices typically range from £30-£60 for a 2-hour lesson."
+    },
+    {
+      "question": "What size wetsuit do I need for surfing in Pembrokeshire?",
+      "answer": "A 5mm wetsuit is recommended, especially during the winter months. In summer, a 3/2mm wetsuit may be sufficient, but it's always better to be too warm than too cold."
+    },
+    {
+      "question": "Where can I find surf reports for Pembrokeshire?",
+      "answer": "Magicseaweed and Windguru are popular websites for surf reports. Also, check local surf shops for the most up-to-date information."
+    },
+    {
+      "question": "Are there any surf competitions in Pembrokeshire?",
+      "answer": "The Welsh National Surfing Championships are occasionally held at Freshwater West, but check the Welsh Surfing Federation website for specific dates and locations."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Newsurf",
+        "slug": "newsurf",
+        "address": "Newgale, Haverfordwest SA62 6AR",
+        "lat": 51.85,
+        "lng": -5.2117,
+        "description": "A well-stocked surf shop right on Newgale beach, offering surfboard and wetsuit hire, sales, and repairs. They also offer surf lessons.",
+        "website": "https://www.newsurf.co.uk/",
+        "phone": "01437 720888",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 150
+      },
+      {
+        "name": "Ma Simes Surf Hut",
+        "slug": "ma-simes-surf-hut",
+        "address": "Cross Square, St Davids SA62 6SA",
+        "lat": 51.881,
+        "lng": -5.263,
+        "description": "A cosy surf shop in St Davids, offering surfboard and wetsuit hire, sales, and accessories. They have a great selection of gear and a friendly atmosphere.",
+        "website": null,
+        "phone": "01437 721717",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 80
+      },
+      {
+        "name": "West Wales Surf Shop",
+        "slug": "west-wales-surf-shop",
+        "address": "Unit 2, City Rd, Haverfordwest SA61 2BP",
+        "lat": 51.803,
+        "lng": -4.9675,
+        "description": "A large surf shop in Haverfordwest, offering a wide range of surfboards, wetsuits, and accessories. They also have a good selection of clothing and footwear.",
+        "website": null,
+        "phone": "01437 760999",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.3,
+        "reviewCount": 120
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Sloop Inn",
+        "slug": "the-sloop-inn",
+        "address": "Porthgain, Haverfordwest SA62 5BN",
+        "lat": 51.9343,
+        "lng": -5.1885,
+        "description": "A historic pub overlooking Porthgain harbour, The Sloop Inn is a popular spot for surfers and walkers alike. Known for its real ales, hearty food, and stunning views.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "https://www.thesloop.co.uk/",
+        "knownFor": "Real ales, seafood, harbour views"
+      },
+      {
+        "name": "Bench Bar",
+        "slug": "bench-bar",
+        "address": "Newgale Beach, Haverfordwest SA62 6AR",
+        "lat": 51.8497,
+        "lng": -5.2113,
+        "description": "Located right on Newgale beach, The Bench Bar is the perfect place to grab a post-surf beer and burger. They have a great outdoor seating area with views of the sea.",
+        "vibe": "Surfer hangout",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Post-surf beers, burgers, beach views"
+      },
+      {
+        "name": "The Druidstone",
+        "slug": "the-druidstone",
+        "address": "Broad Haven, Haverfordwest SA62 3NE",
+        "lat": 51.7978,
+        "lng": -5.1723,
+        "description": "A quirky and unique hotel and restaurant overlooking Broad Haven beach. Known for its delicious food, stunning views, and relaxed atmosphere.",
+        "vibe": "Relaxed restaurant",
+        "priceRange": "£££",
+        "website": "https://www.druidstone.co.uk/",
+        "knownFor": "Fine dining, stunning views, quirky atmosphere"
+      },
+      {
+        "name": "The Shed",
+        "slug": "the-shed",
+        "address": "Porthgain, Haverfordwest SA62 5BN",
+        "lat": 51.9345,
+        "lng": -5.188,
+        "description": "A fish and chip restaurant with amazing fresh seafood and views of the harbour.",
+        "vibe": "Takeaway restaurant",
+        "priceRange": "££",
+        "website": "null",
+        "knownFor": "Fresh seafood, fish and chips"
+      },
+      {
+        "name": "Bishops",
+        "slug": "bishops",
+        "address": "24 High St, St Davids, Haverfordwest SA62 6SD",
+        "lat": 51.8815,
+        "lng": -5.2631,
+        "description": "A highly-rated cafe in St Davids, perfect for a post-surf coffee and cake. Friendly service and tasty treats.",
+        "vibe": "Casual cafe",
+        "priceRange": "£",
+        "website": "https://bishopsstdavids.co.uk/",
+        "knownFor": "coffee and cake, friendly service"
+      },
+      {
+        "name": "Really Wild Emporium",
+        "slug": "really-wild-emporium",
+        "address": "St Davids, Pembrokeshire SA62 6BL",
+        "lat": 51.8814,
+        "lng": -5.2617,
+        "description": "Unique experience of wild food and fantastic coffee located right in St Davids",
+        "vibe": "Restaurant",
+        "priceRange": "£££",
+        "website": "https://www.reallywildemporium.co.uk/",
+        "knownFor": "Wild food, artisan coffee"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Broad Haven YHA",
+        "slug": "broad-haven-yha",
+        "description": "Budget-friendly hostel in a great location, close to Broad Haven beach. Perfect for surfers on a budget.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Broad Haven - walking distance",
+        "website": "https://www.yha.org.uk/hostel/broad-haven"
+      },
+      {
+        "name": "Celtic Camping",
+        "slug": "celtic-camping",
+        "description": "A campsite with stunning sea views, located near St Davids. A great base for exploring the Pembrokeshire coast and surfing at Whitesands Bay.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Whitesands Bay - 5 minute drive",
+        "website": "https://celtic-camping.co.uk/"
+      },
+      {
+        "name": "The Warpool Court Hotel",
+        "slug": "the-warpool-court-hotel",
+        "description": "Hotel close to St Davids and Whitesands bay. Easy access to coastal walks and activities",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Whitesands Bay - 10 minute drive",
+        "website": "https://www.warpoolcourthotel.com/"
+      },
+      {
+        "name": "The Grove at Narberth",
+        "slug": "the-grove-at-narberth",
+        "description": "A luxurious hotel experience and the perfect end to a day of adventuring at nearby Freshwater West",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Freshwater West - 25 minute drive",
+        "website": "https://thegrove-narberth.co.uk/"
+      },
+      {
+        "name": "B&B Dinas Country Club",
+        "slug": "B&B-dinas-country-club",
+        "description": "A B&B located at the end of the road to Dinas Head, ideal for surfing trips to north Pembrokeshire.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Goodwick - 25 minute drive",
+        "website": "https://www.dinashouse.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Welsh National Surfing Championships",
+      "type": "competition",
+      "monthTypical": "September",
+      "description": "Annual surfing competition showcasing the best surfers in Wales. Check the Welsh Surfing Federation website for details.",
+      "website": "http://www.welshsurfingfederation.org.uk/",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "registrationCost": 45
+    }
+  ],
+  "keywords": {
+    "primary": "surfing in pembrokeshire",
+    "secondary": [
+      "pembrokeshire surf",
+      "surf pembrokeshire",
+      "surfing wales",
+      "pembrokeshire beaches surfing",
+      "surf schools pembrokeshire"
+    ],
+    "longTail": [
+      "best surf spots pembrokeshire for beginners",
+      "surf report pembrokeshire freshwater west",
+      "surf lessons pembrokeshire newgale",
+      "surfboard hire pembrokeshire",
+      "wetsuit hire pembrokeshire",
+      "surfing conditions pembrokeshire",
+      "surfing pembrokeshire in winter",
+      "pembrokeshire surfing holidays",
+      "easy surfing pembrokeshire",
+      "safe surfing pembrokeshire",
+      "beginner surfing pembrokeshire",
+      "surf forecast pembrokeshire"
+    ],
+    "localIntent": [
+      "surfing near haverfordwest",
+      "surfing near st davids",
+      "surfing near pembroke",
+      "surfing near tenby",
+      "surfing near fishguard"
+    ],
+    "commercialIntent": [
+      "guided surfing pembrokeshire",
+      "pembrokeshire surfing lessons price",
+      "surfboard rental pembrokeshire",
+      "book surfing lessons pembrokeshire",
+      "pembrokeshire surf school prices"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "gower",
+        "label": "Surfing in Gower"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "coasteering",
+        "label": "Coasteering in Pembrokeshire"
+      },
+      {
+        "activityTypeSlug": "sea-kayaking",
+        "label": "Sea Kayaking in Pembrokeshire"
+      },
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Pembrokeshire"
+      }
+    ]
+  }
+}

@@ -1,0 +1,597 @@
+{
+  "regionSlug": "snowdonia",
+  "activityTypeSlug": "hiking",
+  "title": "Hiking in Snowdonia",
+  "strapline": "From Snowdon's bustling paths to the raw wilderness of the Rhinogs, Snowdonia hiking delivers proper adventure.",
+  "metaTitle": "Hiking in Snowdonia | Adventure Wales",
+  "metaDescription": "Discover the best hiking in Snowdonia National Park. Explore trails, tips, routes, and gear advice for your Snowdonia adventure.",
+  "heroAlt": "Hikers on a rocky summit overlooking a dramatic Snowdonia valley.",
+  "introduction": "Snowdonia. Eryri. Call it what you will, this corner of North Wales is a hiker's paradise, no arguments. Forget manicured trails and gentle strolls; here, the mountains bite back. We're talking proper peaks, scrambling ridges, and views that'll stop you dead in your tracks. \n\nSnowdon (Yr Wyddfa) inevitably hogs the limelight, and rightly so. Six different routes offer varying levels of challenge, from the relatively gentle Llanberis Path to the exposed Crib Goch, a knife-edge arete only for those with a head for heights. But don't let Snowdon overshadow the rest. Tryfan's iconic North Ridge is a classic scramble, Cadair Idris offers solitude and stunning vistas, and the Glyderau are just plain weird, all jagged rocks and otherworldly landscapes.\n\nHiking in Snowdonia isn't always a walk in the park (literally). The weather can change in an instant, navigation can be tricky, and some routes demand serious scrambling skills. But that's the appeal, right? This is a place to test yourself, to earn those summit views, and to refuel with a well-deserved pint in a cosy pub afterwards. It's best suited for those with a decent level of fitness and some experience of hill walking. Beginners can find plenty of easier trails, but even those should be approached with respect. Come prepared, respect the mountains, and Snowdonia will reward you with memories that last a lifetime. Just remember to pack your waterproofs… and maybe a compass.",
+  "bestSeason": "May-October",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Snowdon via the Llanberis Path",
+      "slug": "snowdon-llanberis-path",
+      "description": "The most popular and arguably easiest route to the summit of Snowdon. A well-maintained but long and steady climb suitable for beginners with good fitness. Expect crowds, especially in summer. The views from the top are unparalleled on a clear day, stretching across Snowdonia, Anglesey, and beyond.",
+      "difficulty": "Moderate",
+      "duration": "5-6 hours round trip",
+      "distance": "14.5km",
+      "elevationGain": "975m",
+      "bestFor": "Beginners and families looking to summit Snowdon",
+      "notSuitableFor": "Those seeking solitude or a challenging scramble",
+      "bestSeason": "May-October",
+      "parking": "Llanberis village car parks. Pay and display, fills up very early (before 8am in summer). Park & Ride available from Nant Peris.",
+      "startPoint": {
+        "name": "Llanberis Path Trailhead",
+        "lat": 53.123,
+        "lng": -4.119
+      },
+      "estimatedCost": "Free (parking £6-10) or £55pp guided",
+      "operatorSlug": "mountainxperience",
+      "insiderTip": "Avoid weekends and school holidays. Consider starting very early or very late to avoid the crowds."
+    },
+    {
+      "name": "Tryfan North Ridge",
+      "slug": "tryfan-north-ridge",
+      "description": "A classic grade 1 scramble up the iconic Tryfan. Requires a good head for heights and some scrambling experience. The route is exposed and rocky, demanding careful footwork. Summit views are spectacular, encompassing the Ogwen Valley and the Glyderau.",
+      "difficulty": "Challenging",
+      "duration": "4-5 hours round trip",
+      "distance": "5km",
+      "elevationGain": "917m",
+      "bestFor": "Experienced scramblers and those seeking an adrenaline rush",
+      "notSuitableFor": "Beginners, those with a fear of heights, or in wet/icy conditions",
+      "bestSeason": "May-September",
+      "parking": "Laybys along the A5 in the Ogwen Valley. Fills up very early.",
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.113,
+        "lng": -4.004
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": "plasybrenin",
+      "insiderTip": "Practice on easier scrambles first. Descending via the South Ridge is generally considered safer."
+    },
+    {
+      "name": "Crib Goch",
+      "slug": "crib-goch",
+      "description": "Not for the faint of heart! Crib Goch is a notorious knife-edge arete offering exhilarating but highly exposed scrambling. Requires a very steady head for heights and excellent scrambling skills. Should only be attempted in good weather conditions. It is part of the full Snowdon Horseshoe.",
+      "difficulty": "Expert",
+      "duration": "5-7 hours round trip (Snowdon Horseshoe)",
+      "distance": "12km (Snowdon Horseshoe)",
+      "elevationGain": "975m (Snowdon Horseshoe)",
+      "bestFor": "Experienced mountaineers and confident scramblers",
+      "notSuitableFor": "Beginners, families, or anyone with a fear of heights. Avoid in wet, windy, or icy conditions.",
+      "bestSeason": "June-September",
+      "parking": "Pen-y-Pass car park. Expensive and fills up ridiculously early (before 7am in summer).",
+      "startPoint": {
+        "name": "Pen-y-Pass",
+        "lat": 53.07,
+        "lng": -4.0
+      },
+      "estimatedCost": "Free (parking £10-15)",
+      "operatorSlug": null,
+      "insiderTip": "Consider starting very early or attempting it mid-week to avoid crowds. Check weather conditions meticulously."
+    },
+    {
+      "name": "Cadair Idris via the Minffordd Path",
+      "slug": "cadair-idris-minffordd-path",
+      "description": "A challenging but rewarding hike to the summit of Cadair Idris. The Minffordd Path is steep and rugged, with some scrambling sections. The summit offers panoramic views of Cardigan Bay and the surrounding mountains. Legend says you'll either die, go mad, or become a poet if you sleep on the summit!",
+      "difficulty": "Challenging",
+      "duration": "5-6 hours round trip",
+      "distance": "10km",
+      "elevationGain": "893m",
+      "bestFor": "Experienced hikers looking for a challenging climb and stunning views",
+      "notSuitableFor": "Beginners or those with knee problems due to the steep descent.",
+      "bestSeason": "May-October",
+      "parking": "Minffordd Hotel car park. Pay and display.",
+      "startPoint": {
+        "name": "Minffordd Hotel",
+        "lat": 52.665,
+        "lng": -3.969
+      },
+      "estimatedCost": "Free (parking £5-8)",
+      "operatorSlug": null,
+      "insiderTip": "Check the weather forecast carefully as conditions can change rapidly on Cadair Idris. The tea room at the Minffordd Hotel is a welcome sight after the hike."
+    },
+    {
+      "name": "Cwm Idwal Circular Walk",
+      "slug": "cwm-idwal-circular-walk",
+      "description": "A classic Snowdonia walk around the stunning Cwm Idwal, a glacial cirque with a dark and mysterious atmosphere. The path is mostly well-defined, with some rocky sections. Explore the unique geology and botany of this National Nature Reserve.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours round trip",
+      "distance": "5km",
+      "elevationGain": "350m",
+      "bestFor": "Families, nature lovers, and those seeking a moderately challenging walk",
+      "notSuitableFor": "Those with mobility issues due to some rocky terrain.",
+      "bestSeason": "April-October",
+      "parking": "Ogwen Cottage car park. Pay and display, can get busy.",
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.113,
+        "lng": -4.004
+      },
+      "estimatedCost": "Free (parking £5-8)",
+      "operatorSlug": null,
+      "insiderTip": "Bring a picnic and enjoy it by the shores of Llyn Idwal. Look out for the Devil's Kitchen (Twll Du) – a dark cleft in the cliffs above the lake."
+    },
+    {
+      "name": "Y Garn from Ogwen Cottage",
+      "slug": "y-garn-ogwen",
+      "description": "A relatively short but steep climb to the summit of Y Garn, offering fantastic views of Tryfan and the Ogwen Valley. The route involves some scrambling over rocky terrain. A good introduction to the Glyderau range.",
+      "difficulty": "Challenging",
+      "duration": "4-5 hours round trip",
+      "distance": "6km",
+      "elevationGain": "700m",
+      "bestFor": "Experienced hikers and scramblers",
+      "notSuitableFor": "Beginners or those uncomfortable with steep ascents and scrambling",
+      "bestSeason": "May-September",
+      "parking": "Ogwen Cottage car park. Pay and display, fills up quickly.",
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.113,
+        "lng": -4.004
+      },
+      "estimatedCost": "Free (parking £5-8)",
+      "operatorSlug": null,
+      "insiderTip": "Extend the walk by continuing along the Glyderau ridge to Glyder Fawr for a more challenging day out."
+    },
+    {
+      "name": "Rhinog Fawr",
+      "slug": "rhinog-fawr",
+      "description": "A wild and remote mountain with challenging terrain. Rhinog Fawr is known for its ruggedness, steep climbs, and lack of clear paths. Requires good navigation skills and a sense of adventure. Rewards include solitude and stunning views of the coastline.",
+      "difficulty": "Expert",
+      "duration": "6-8 hours round trip",
+      "distance": "10km",
+      "elevationGain": "720m",
+      "bestFor": "Experienced hikers seeking a challenging and remote adventure",
+      "notSuitableFor": "Beginners, families, or those without good navigation skills.",
+      "bestSeason": "May-September",
+      "parking": "Small parking area near the Roman Steps. Limited space.",
+      "startPoint": {
+        "name": "Near Roman Steps",
+        "lat": 52.919,
+        "lng": -4.048
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Download an offline map and bring a compass. The terrain is unforgiving and easy to get lost on."
+    },
+    {
+      "name": "Nantlle Ridge",
+      "slug": "nantlle-ridge",
+      "description": "A challenging and rewarding ridge walk with stunning views of Snowdonia and the coast. The Nantlle Ridge involves some scrambling and requires a good head for heights. A less crowded alternative to the more popular ridges.",
+      "difficulty": "Challenging",
+      "duration": "6-7 hours round trip",
+      "distance": "10km",
+      "elevationGain": "900m",
+      "bestFor": "Experienced hikers and scramblers",
+      "notSuitableFor": "Beginners or those with a fear of heights.",
+      "bestSeason": "May-September",
+      "parking": "Limited parking in the village of Rhyd Ddu or nearby laybys.",
+      "startPoint": {
+        "name": "Rhyd Ddu",
+        "lat": 53.041,
+        "lng": -4.215
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Start early to avoid the heat and crowds. The descent from Trum y Ddysgl can be tricky."
+    },
+    {
+      "name": "Aber Falls to Carneddau Foothills",
+      "slug": "aber-falls-carneddau",
+      "description": "A beautiful walk starting at the dramatic Aber Falls, leading into the foothills of the Carneddau range. The route follows well-maintained paths and offers stunning views of the falls and the surrounding mountains. A good option for a less strenuous hike.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours round trip",
+      "distance": "8km",
+      "elevationGain": "400m",
+      "bestFor": "Families and those looking for a scenic walk with less challenging terrain",
+      "notSuitableFor": "Those seeking a high mountain adventure",
+      "bestSeason": "Year-round, but best in spring and summer",
+      "parking": "Aber Falls car park. Pay and display.",
+      "startPoint": {
+        "name": "Aber Falls Car Park",
+        "lat": 53.23,
+        "lng": -3.945
+      },
+      "estimatedCost": "Free (parking £5-8)",
+      "operatorSlug": null,
+      "insiderTip": "Take a dip in the plunge pool at the base of Aber Falls on a hot day (if you're brave enough!)."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Snowdonia's weather is notoriously unpredictable. Conditions can change rapidly, even on seemingly clear days. Be prepared for rain, wind, and mist, especially at higher altitudes. Always check the forecast before setting out and be prepared to turn back if necessary.",
+    "weatherLinks": [
+      {
+        "name": "Mountain Weather Information Service (MWIS)",
+        "url": "https://www.mwis.org.uk/"
+      },
+      {
+        "name": "Met Office Mountain Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain"
+      }
+    ],
+    "gearChecklist": [
+      "Waterproof jacket and trousers",
+      "Warm layers (fleece, down jacket) – even in summer, it can get cold at altitude",
+      "Hiking boots with good ankle support – essential for the rocky terrain",
+      "Navigation equipment (map, compass, GPS) – know how to use them!",
+      "Headtorch with spare batteries – even if you're not planning a night hike",
+      "First-aid kit with blister treatment",
+      "Plenty of water and high-energy snacks",
+      "Sunscreen and sunglasses – even on cloudy days",
+      "Hat and gloves – protect yourself from the elements",
+      "Walking poles – helpful for steep ascents and descents"
+    ],
+    "gearHire": [
+      {
+        "name": "Joe Brown's",
+        "location": "Llanberis",
+        "url": "https://www.joe-brown.com/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5h",
+          "route": "Via M40 and A5"
+        },
+        {
+          "from": "Manchester",
+          "duration": "2h",
+          "route": "Via M56 and A55"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3h",
+          "route": "Via M6 and A5"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "4h",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "Regular train services to Bangor, Llandudno, and Betws-y-Coed. The Snowdon Sherpa bus service connects the main hiking trailheads.",
+      "parkingTips": "Parking at popular trailheads can be extremely limited, especially during peak season. Arrive early (before 8am) or use park-and-ride facilities. Consider using public transport to avoid parking hassles."
+    },
+    "safety": "Snowdonia is a challenging environment. Plan your route carefully, check the weather forecast, and be prepared for all conditions. Let someone know your planned route and expected return time. In case of emergency, call 999 and ask for Mountain Rescue."
+  },
+  "faqs": [
+    {
+      "question": "What is the easiest route up Snowdon?",
+      "answer": "The Llanberis Path is generally considered the easiest route to the summit of Snowdon. It's the longest but has a gradual incline and a well-maintained path."
+    },
+    {
+      "question": "How much does it cost to hike Snowdon?",
+      "answer": "Hiking Snowdon is free, but you may have to pay for parking at the trailhead. Parking charges typically range from £5 to £15 per day."
+    },
+    {
+      "question": "What should I wear to hike in Snowdonia?",
+      "answer": "Wear waterproof layers, warm layers (fleece, down jacket), hiking boots with good ankle support, and a hat and gloves. The weather in Snowdonia can change rapidly, so be prepared for all conditions."
+    },
+    {
+      "question": "Can I hike Snowdon in trainers?",
+      "answer": "It is NOT recommended to hike Snowdon in trainers, especially on the more challenging routes. Hiking boots with good ankle support are essential for the rocky terrain."
+    },
+    {
+      "question": "Is Crib Goch dangerous?",
+      "answer": "Yes, Crib Goch is a very dangerous route. It's a knife-edge arete with significant exposure and requires excellent scrambling skills and a steady head for heights. It should only be attempted in good weather conditions by experienced mountaineers."
+    },
+    {
+      "question": "How long does it take to climb Snowdon?",
+      "answer": "The time it takes to climb Snowdon varies depending on the route and your fitness level. The Llanberis Path typically takes 5-6 hours round trip, while the Miners' Track and Pyg Track take around 5 hours. Crib Goch as part of the Snowdon Horseshoe takes 5-7 hours."
+    },
+    {
+      "question": "Are there toilets on Snowdon?",
+      "answer": "There are toilet facilities at the summit of Snowdon and at the Hafod Eryri visitor centre, which is usually open from late spring to early autumn. Check opening times before you go."
+    },
+    {
+      "question": "Are dogs allowed on Snowdon?",
+      "answer": "Dogs are allowed on Snowdon, but they must be kept on a lead at all times. Be mindful of other walkers and wildlife. Consider the dog's fitness level and ability to cope with the terrain before attempting a climb."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Joe Brown's",
+        "slug": "joe-browns",
+        "address": "Capel Curig, Betws-y-Coed LL24 0EE",
+        "lat": 53.097,
+        "lng": -3.911,
+        "description": "A legendary outdoor shop with a wide range of climbing and hiking gear. Known for its expert advice and friendly service. A must-visit for any outdoor enthusiast.",
+        "website": "https://www.joe-brown.com/",
+        "phone": "01690 720205",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "boot fitting"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 560
+      },
+      {
+        "name": "V12 Outdoor",
+        "slug": "v12-outdoor",
+        "address": "High Street, Llanberis LL55 4HB",
+        "lat": 53.124,
+        "lng": -4.123,
+        "description": "A modern outdoor shop with a great selection of hiking and climbing gear. Offers expert boot fitting and friendly advice.",
+        "website": "https://v12outdoor.com/",
+        "phone": "01286 870321",
+        "services": [
+          "gear sales",
+          "hire",
+          "boot fitting"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 320
+      },
+      {
+        "name": "Cotswold Outdoor",
+        "slug": "cotswold-outdoor",
+        "address": "Holyhead Road, Betws-y-Coed LL24 0AY",
+        "lat": 53.089,
+        "lng": -3.811,
+        "description": "Part of a national chain, offering a wide range of outdoor clothing and equipment. Good for general hiking gear and clothing.",
+        "website": "https://www.cotswoldoutdoor.com/",
+        "phone": "01690 710766",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.2,
+        "reviewCount": 280
+      },
+      {
+        "name": "Ellis Brigham Mountain Sports",
+        "slug": "ellis-brigham",
+        "address": "Unit 4, Crown Buildings, High St, Llanberis LL55 4ER",
+        "lat": 53.124,
+        "lng": -4.124,
+        "description": "A long-standing outdoor retailer with a focus on quality equipment. Good selection of technical gear.",
+        "website": "https://www.ellis-brigham.com/",
+        "phone": "01286 872363",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.3,
+        "reviewCount": 190
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Pete's Eats",
+        "slug": "petes-eats",
+        "address": "High Street, Llanberis",
+        "lat": 53.124,
+        "lng": -4.121,
+        "description": "A legendary climber's cafe known for its massive portions and hearty food. Perfect for refuelling after a day in the mountains. Expect queues!",
+        "vibe": "Climber-friendly cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Giant portions"
+      },
+      {
+        "name": "Moel Siabod Cafe",
+        "slug": "moel-siabod-cafe",
+        "address": "Capel Curig",
+        "lat": 53.097,
+        "lng": -3.896,
+        "description": "A popular cafe with great views of Moel Siabod. Serves delicious cakes, sandwiches, and hot drinks. A good option for a post-hike treat.",
+        "vibe": "Casual cafe",
+        "priceRange": "££",
+        "website": "https://www.moelsiabodcafe.co.uk/",
+        "knownFor": "Homemade cakes"
+      },
+      {
+        "name": "Pinnacle Cafe",
+        "slug": "pinnacle-cafe",
+        "address": "Capel Curig",
+        "lat": 53.102,
+        "lng": -3.904,
+        "description": "A family-run cafe serving hearty meals and delicious cakes. Offers a warm welcome and stunning views of the surrounding mountains.",
+        "vibe": "Cosy cafe",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Hearty meals"
+      },
+      {
+        "name": "Y Stablau",
+        "slug": "y-stablau",
+        "address": "Betws-y-Coed",
+        "lat": 53.089,
+        "lng": -3.81,
+        "description": "A traditional Welsh restaurant serving locally sourced dishes. A good option for a more formal meal after a day of hiking.",
+        "vibe": "Traditional restaurant",
+        "priceRange": "£££",
+        "website": "https://www.y-stablau.co.uk/",
+        "knownFor": "Locally sourced ingredients"
+      },
+      {
+        "name": "Heights Hotel",
+        "slug": "heights-hotel",
+        "address": "Llanberis Pass, Llanberis",
+        "lat": 53.068,
+        "lng": -4.03,
+        "description": "A hotel with a bar and restaurant, offering stunning views of the Llanberis Pass. A great place to relax and enjoy a drink after a hike.",
+        "vibe": "Hotel bar",
+        "priceRange": "££",
+        "website": "https://www.heights-hotel.co.uk/",
+        "knownFor": "Views of Llanberis Pass"
+      },
+      {
+        "name": "Bryn Tyrch Inn",
+        "slug": "bryn-tyrch-inn",
+        "address": "Capel Curig",
+        "lat": 53.106,
+        "lng": -3.905,
+        "description": "A traditional pub serving real ales and hearty pub food. A popular spot for hikers and climbers.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "https://www.bryntyrchinn.co.uk/",
+        "knownFor": "Real ales"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "YHA Snowdon Pen-y-Pass",
+        "slug": "yha-snowdon-pen-y-pass",
+        "description": "A budget-friendly hostel located at the foot of Snowdon. A great base for exploring the surrounding mountains. Perfect for accessing routes up Snowdon like Crib Goch.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Crib Goch (0.1 miles)",
+        "website": "https://www.yha.org.uk/hostel/yha-snowdon-pen-y-pass"
+      },
+      {
+        "name": "Bryn Dinas Camping Pods",
+        "slug": "bryn-dinas-camping-pods",
+        "description": "Glamping pods with stunning views. A comfortable and convenient option for those who want to be close to nature.",
+        "type": "glamping",
+        "priceRange": "££",
+        "nearestSpot": "Snowdon Ranger Path (2 miles)",
+        "website": "https://www.bryndinas.co.uk/"
+      },
+      {
+        "name": "Penmachno Bunkhouse",
+        "slug": "penmachno-bunkhouse",
+        "description": "Basic but comfortable bunkhouse accommodation. Ideal for groups and budget travellers.",
+        "type": "bunkhouse",
+        "priceRange": "£",
+        "nearestSpot": "Rhinog Mountains (10 miles)",
+        "website": "null"
+      },
+      {
+        "name": "Royal Victoria Hotel",
+        "slug": "royal-victoria-hotel",
+        "description": "A historic hotel in a convenient location near Llanberis lake railway and village with easy access to the Llanberis Path up Snowdon.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Llanberis Path Trailhead (0.5 miles)",
+        "website": "https://www.royaloaks.co.uk/"
+      },
+      {
+        "name": "Plas Curig Hostel",
+        "slug": "plas-curig-hostel",
+        "description": "Located centrally in Capel Curig, it gives easy access to Tryfan, the Glyderau and Snowdon.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Tryfan North Ridge (2 miles)",
+        "website": "https://www.plascurig.com/"
+      },
+      {
+        "name": "Dolgam Campsite",
+        "slug": "dolgam-campsite",
+        "description": "A basic campsite along the A5, great for overnight before climbing Tryfan or scrambling the Glyderau.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Tryfan North Ridge (3 miles)",
+        "website": "http://www.dolgam.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Snowdonia Trail Marathon",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "A challenging trail marathon through the stunning Snowdonia National Park.",
+      "website": "https://www.eryrimarathon.com/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 65
+    },
+    {
+      "name": "Snowdon Race",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "A classic fell race from Llanberis to the summit of Snowdon and back.",
+      "website": "https://snowdonrace.co.uk/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 50
+    },
+    {
+      "name": "Welsh 3000s Challenge",
+      "type": "competition",
+      "monthTypical": "Summer",
+      "description": "A challenge to climb all 15 mountains over 3,000 feet in Wales within 24 hours.",
+      "website": null,
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": null
+    }
+  ],
+  "keywords": {
+    "primary": "hiking in snowdonia",
+    "secondary": [
+      "snowdonia hiking trails",
+      "snowdonia national park hiking",
+      "snowdon hiking routes",
+      "hiking snowdon",
+      "snowdonia mountains"
+    ],
+    "longTail": [
+      "best hiking trails snowdonia national park",
+      "hiking snowdon for beginners",
+      "difficult hiking routes snowdonia",
+      "guided hiking tours snowdonia",
+      "dog friendly hiking trails snowdonia",
+      "snowdonia hiking weather",
+      "best time to hike snowdonia",
+      "family friendly hiking snowdonia",
+      "snowdonia hiking maps",
+      "hiking snowdon without a guide",
+      "snowdonia hiking accommodation",
+      "snowdonia hiking gear"
+    ],
+    "localIntent": [
+      "hiking near llanberis",
+      "hiking near betws-y-coed",
+      "hiking near capel curig",
+      "hiking near beddgelert",
+      "hiking near snowdon"
+    ],
+    "commercialIntent": [
+      "guided hiking snowdonia",
+      "snowdonia hiking tours",
+      "hiking boots snowdonia",
+      "snowdonia hiking gear shops",
+      "hiking holiday snowdonia"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "brecon-beacons",
+        "label": "Hiking in the Brecon Beacons"
+      },
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Hiking in Pembrokeshire"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "climbing",
+        "label": "Climbing in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "watersports",
+        "label": "Watersports in Snowdonia"
+      }
+    ]
+  }
+}

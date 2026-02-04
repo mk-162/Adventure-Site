@@ -1,0 +1,577 @@
+{
+  "regionSlug": "snowdonia",
+  "activityTypeSlug": "gorge-walking",
+  "title": "Gorge Walking in Snowdonia",
+  "strapline": "Leap, scramble, and swim your way through Snowdonia's breathtaking canyons — the ultimate wet adventure.",
+  "metaTitle": "Gorge Walking Snowdonia | The Complete Guide | Adventure Wales",
+  "metaDescription": "Discover the best gorge walking Snowdonia has to offer. Routes, operators, gear, and everything you need for an unforgettable canyoning experience.",
+  "heroAlt": "Gorge walker leaps into a pool of water in a Snowdonia canyon.",
+  "introduction": "Snowdonia is a gorge walking mecca, plain and simple. The dramatic, glacier-carved valleys are riddled with stunning canyons just begging to be explored. Forget manicured trails – this is raw, hands-on adventure where you'll be wading, scrambling, and swimming your way through cascading waterfalls and sculpted rock formations. What sets Snowdonia apart is the sheer variety. From family-friendly dips in the Fairy Glen to adrenaline-pumping descents in the Ogwen Valley, there's a gorge to suit every level of experience. \n\nThis isn't always sunshine and roses, though. The weather can be notoriously fickle, turning a pleasant outing into a potentially dangerous situation in minutes. Water levels rise rapidly after heavy rain, and some sections can become treacherous. And let's be honest, the water *is* cold – even in summer! So, do your homework, check the forecast, and consider going with a qualified guide, especially if you're a beginner or tackling a more challenging route. Gorge walking in Snowdonia is best for those who love a physical challenge, don't mind getting wet, and have a healthy respect for the elements. It's not for the faint of heart, but the rewards – breathtaking scenery, exhilarating thrills, and a true sense of accomplishment – are well worth the effort. If you're looking for a unique and unforgettable way to experience the wild beauty of Snowdonia, **gorge walking Snowdonia** is the adventure for you. Be sure to check conditions before you head out! Many of the best **gorge walking Snowdonia** locations require a bit of care and planning, but you won't regret the experience. This is definitely an activity that will make your trip memorable.",
+  "bestSeason": "May-September",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Ogwen Valley Gorge (Lower)",
+      "slug": "ogwen-valley-gorge-lower",
+      "description": "A classic introduction to gorge walking. This section of the Ogwen Valley gorge offers a good mix of wading, easy scrambles, and small jumps into clear pools. It's a popular spot, so expect some company, especially during peak season. Expect stunning views of Tryfan looming overhead.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners and families with older children",
+      "notSuitableFor": "Very young children or those with limited mobility.",
+      "bestSeason": "May-September",
+      "parking": "Limited parking at the Ogwen Cottage car park (charges apply). Arrive early, especially on weekends.",
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.113,
+        "lng": -4.005
+      },
+      "estimatedCost": "Free (parking £6-10) or £65pp guided",
+      "operatorSlug": "mountainxperience",
+      "insiderTip": "Avoid peak times by going early in the morning or later in the afternoon. The light is often better then, too."
+    },
+    {
+      "name": "Swallow Falls Gorge (View from above, not in the river)",
+      "slug": "swallow-falls-gorge",
+      "description": "While you can't actually gorge walk *in* Swallow Falls (it's far too dangerous), the surrounding area offers stunning views of the cascading water. Explore the pathways and enjoy the raw power of the falls. There's an entrance fee to access the best viewpoints.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Sightseers and those looking for a gentle walk with spectacular scenery.",
+      "notSuitableFor": "Those looking for a full gorge walking experience. This is more of a viewing point.",
+      "bestSeason": "Year-round",
+      "parking": "Designated car park near the entrance to Swallow Falls (charges apply).",
+      "startPoint": {
+        "name": "Swallow Falls Car Park",
+        "lat": 53.104,
+        "lng": -3.796
+      },
+      "estimatedCost": "£5 per person entry fee (parking extra)",
+      "operatorSlug": null,
+      "insiderTip": "Visit after heavy rain for the most dramatic views of the falls. Be prepared for spray!"
+    },
+    {
+      "name": "Fairy Glen (Betws-y-Coed)",
+      "slug": "fairy-glen-betws-y-coed",
+      "description": "A magical, sheltered gorge perfect for families with young children. The Fairy Glen features shallow water, easy scrambles, and moss-covered rocks that create a truly enchanting atmosphere. It's more of a paddling/wading experience than a true gorge walk.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families with young children and those looking for a gentle introduction to gorge walking.",
+      "notSuitableFor": "Adrenaline junkies or those seeking a challenging adventure.",
+      "bestSeason": "May-September",
+      "parking": "Small car park near the entrance (charges apply). Space is limited, especially on weekends.",
+      "startPoint": {
+        "name": "Fairy Glen Car Park",
+        "lat": 53.085,
+        "lng": -3.77
+      },
+      "estimatedCost": "£2 per car entry fee",
+      "operatorSlug": null,
+      "insiderTip": "Combine your visit with a walk through the surrounding woodland for a longer day out."
+    },
+    {
+      "name": "Aberglaslyn Gorge (Beddgelert)",
+      "slug": "aberglaslyn-gorge",
+      "description": "A scenic gorge walk through the narrow Aberglaslyn Pass. This route involves some scrambling over rocks and wading through the river. The scenery is spectacular, with views of the surrounding mountains. Be aware of water levels, especially after rain.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Those with some previous experience of scrambling and gorge walking.",
+      "notSuitableFor": "Beginners or those with limited mobility.",
+      "bestSeason": "May-September",
+      "parking": "Parking available in Beddgelert village (charges apply).",
+      "startPoint": {
+        "name": "Beddgelert Village",
+        "lat": 53.004,
+        "lng": -4.093
+      },
+      "estimatedCost": "Free (parking £5-10)",
+      "operatorSlug": null,
+      "insiderTip": "Enjoy a post-walk ice cream in Beddgelert - Gelateria Beddgelert is a great option."
+    },
+    {
+      "name": "Conwy Falls Gorge",
+      "slug": "conwy-falls-gorge",
+      "description": "Located near Betws-y-Coed, Conwy Falls offers a short, steep gorge walk with stunning views of the falls. There's a small cafe on site. The walk to the bottom of the falls is challenging, involving some scrambling and steps.",
+      "difficulty": "Moderate",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Those looking for a short but rewarding gorge walk with impressive waterfall views.",
+      "notSuitableFor": "Those with mobility issues or very young children.",
+      "bestSeason": "Year-round",
+      "parking": "Parking available at the Conwy Falls Forest Park (charges apply).",
+      "startPoint": {
+        "name": "Conwy Falls Forest Park",
+        "lat": 53.113,
+        "lng": -3.75
+      },
+      "estimatedCost": "£5 per person entry fee (parking extra)",
+      "operatorSlug": null,
+      "insiderTip": "Check the water levels before you go, as the gorge can be impassable after heavy rain."
+    },
+    {
+      "name": "Nant Gwynant Gorge (requires experience)",
+      "slug": "nant-gwynant-gorge",
+      "description": "A more challenging gorge walk in the Nant Gwynant valley. This route involves deeper water, more significant jumps, and technical scrambling. It's best suited to experienced gorge walkers or those with a guide.",
+      "difficulty": "Challenging",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced gorge walkers seeking a more challenging adventure.",
+      "notSuitableFor": "Beginners or those without a high level of fitness.",
+      "bestSeason": "May-September",
+      "parking": "Limited parking along the roadside in the Nant Gwynant valley. Park responsibly.",
+      "startPoint": {
+        "name": "Nant Gwynant Roadside Parking",
+        "lat": 53.046,
+        "lng": -4.037
+      },
+      "estimatedCost": "Free or £75pp guided",
+      "operatorSlug": "plas-y-brenin",
+      "insiderTip": "Consider doing this route with a guide, especially if you're unfamiliar with the area."
+    },
+    {
+      "name": "Dolgarrog Pipeline Gorge (Expert Only)",
+      "slug": "dolgarrog-pipeline-gorge",
+      "description": "This is for experts only, this gorge is technical with strong currents. Don't even think about trying it without proper experience and equipment. It follows the course of the old pipeline.",
+      "difficulty": "Expert",
+      "duration": "4-5 Hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Extremely Experienced, properly equipped canyoners",
+      "notSuitableFor": "Anyone without significant gorge walking experience",
+      "bestSeason": "July-August (when water levels are lowest)",
+      "parking": "Park discreetly in Dolgarrog village, be respectful of locals",
+      "startPoint": {
+        "name": "Dolgarrog Village",
+        "lat": 53.226,
+        "lng": -3.841
+      },
+      "estimatedCost": "Free, but high risk",
+      "operatorSlug": null,
+      "insiderTip": "This gorge is not for the faint-hearted. Serious risk of injury or death if attempted by inexperienced walkers. Local knowledge is essential."
+    },
+    {
+      "name": "Ogwen Valley Gorge (Upper)",
+      "slug": "ogwen-valley-gorge-upper",
+      "description": "More challenging than the lower section. Significant jumps, deeper water, and more technical scrambling make this suitable only for experienced gorge walkers or those with a guide. The scenery, as always in Ogwen, is spectacular.",
+      "difficulty": "Challenging",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced gorge walkers",
+      "notSuitableFor": "Beginners, families, or those with a fear of heights.",
+      "bestSeason": "May-September",
+      "parking": "Ogwen Cottage car park (charges apply). Even more limited space than the lower section.",
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.113,
+        "lng": -4.005
+      },
+      "estimatedCost": "Free or £75pp guided",
+      "operatorSlug": "adventure-britain",
+      "insiderTip": "Consider doing both the upper and lower sections as a full-day adventure."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Snowdonia's weather is notoriously unpredictable. Conditions can change rapidly, from sunshine to heavy rain in a matter of minutes. Check the forecast before you go and be prepared for all eventualities. Water levels can rise quickly after rain, making gorge walking dangerous.",
+    "weatherLinks": [
+      {
+        "name": "Mountain Weather Information Service (MWIS)",
+        "url": "https://www.mwis.org.uk/"
+      },
+      {
+        "name": "Met Office Mountain Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain"
+      }
+    ],
+    "gearChecklist": [
+      "Wetsuit - Essential for warmth, even in summer.",
+      "Wetsuit boots - Provide grip and protect your feet from sharp rocks.",
+      "Buoyancy aid - Crucial for safety in deeper water.",
+      "Helmet - Protects your head from bumps and scrapes.",
+      "Gloves - Improve grip and keep your hands warm.",
+      "Dry bag - To keep valuables safe and dry.",
+      "Appropriate footwear - Sturdy trainers or walking boots that you don't mind getting wet.",
+      "Warm layers - Even with a wetsuit, you'll appreciate an extra fleece or base layer.",
+      "Towel and change of clothes - For after your adventure.",
+      "Snacks and water - To keep your energy levels up."
+    ],
+    "gearHire": [
+      {
+        "name": "V12 Outdoor",
+        "location": "Llanberis",
+        "url": "https://v12outdoor.com/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5h",
+          "route": "Via M1 and A5"
+        },
+        {
+          "from": "Manchester",
+          "duration": "2h",
+          "route": "Via M56 and A55"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3h",
+          "route": "Via M6 and A5"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "4h",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "Bangor and Llandudno Junction are the nearest train stations. From there, local bus services (e.g., the Sherpa bus) provide access to many of the popular gorge walking areas.",
+      "parkingTips": "Parking can be challenging, especially during peak season. Arrive early, park responsibly, and be prepared to walk a short distance to the gorge."
+    },
+    "safety": "Gorge walking can be dangerous. Always check the weather forecast and water levels before you go. Never attempt a gorge walk alone. Wear appropriate safety gear, including a wetsuit, buoyancy aid, and helmet. Be aware of the risks of cold water immersion. In case of emergency, call 999 and ask for Mountain Rescue."
+  },
+  "faqs": [
+    {
+      "question": "Is gorge walking in Snowdonia safe?",
+      "answer": "Gorge walking inherently carries risks. Check conditions, never go alone, wear proper gear. Incidents happen every year, so respect the environment."
+    },
+    {
+      "question": "What is the best time of year to go gorge walking in Snowdonia?",
+      "answer": "May to September is generally the best time. Water levels are typically lower, and the weather is more stable. However, even in summer, the water can be cold, so a wetsuit is essential."
+    },
+    {
+      "question": "Do I need a guide for gorge walking in Snowdonia?",
+      "answer": "For beginners or those attempting challenging routes, a guide is highly recommended. They have local knowledge, expertise, and safety equipment. Operators like Plas y Brenin or Adventure Britain are great options."
+    },
+    {
+      "question": "What should I wear for gorge walking in Snowdonia?",
+      "answer": "A wetsuit, wetsuit boots, buoyancy aid, and helmet are essential. Gloves are also recommended. Wear sturdy trainers or walking boots that you don't mind getting wet. Bring warm layers for before and after your adventure."
+    },
+    {
+      "question": "Are there any age restrictions for gorge walking?",
+      "answer": "Age restrictions vary depending on the specific gorge and the operator. Generally, children should be at least 8 years old and accompanied by a responsible adult. Some gorges are not suitable for young children."
+    },
+    {
+      "question": "How much does it cost to go gorge walking in Snowdonia?",
+      "answer": "You can gorge walk for free in many locations, but you'll need your own gear. Guided experiences typically cost between £60 and £80 per person. Parking charges may also apply."
+    },
+    {
+      "question": "What happens if the weather turns bad while I'm gorge walking?",
+      "answer": "If the weather deteriorates, exit the gorge as quickly and safely as possible. Seek shelter and wait for the conditions to improve. If you are with a guide, follow their instructions."
+    },
+    {
+      "question": "Are there any easier options for gorge walking in Snowdonia?",
+      "answer": "Yes, the Fairy Glen near Betws-y-Coed is a popular choice for families with young children. It offers shallow water and easy scrambles. The lower section of the Ogwen Valley gorge is also a good option for beginners."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Joe Brown's",
+        "slug": "joe-browns",
+        "address": "Menai Hall, Llanberis, Gwynedd LL55 4EN",
+        "lat": 53.124,
+        "lng": -4.125,
+        "description": "Legendary outdoor shop in Llanberis, stocking everything you need for climbing, mountaineering, and gorge walking. Known for their expert advice and wide selection.",
+        "website": "https://www.joe-brown.com/",
+        "phone": "01286 870327",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "boot fitting"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 1200
+      },
+      {
+        "name": "V12 Outdoor",
+        "slug": "v12-outdoor",
+        "address": "22-24 High Street, Llanberis, Gwynedd LL55 4ER",
+        "lat": 53.124,
+        "lng": -4.122,
+        "description": "Another popular outdoor shop in Llanberis, offering a wide range of gear for various activities, including gorge walking. They also offer gear hire services.",
+        "website": "https://v12outdoor.com/",
+        "phone": "01286 870360",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.4,
+        "reviewCount": 450
+      },
+      {
+        "name": "Ellis Brigham Mountain Sports",
+        "slug": "ellis-brigham-mountain-sports",
+        "address": "Unit 3, Castle Square, Caernarfon, Gwynedd LL55 2NF",
+        "lat": 53.14,
+        "lng": -4.276,
+        "description": "A well-known outdoor retailer with a branch in Caernarfon, offering a wide range of gear for all your outdoor adventures.",
+        "website": "https://www.ellis-brigham.com/",
+        "phone": "01286 673322",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 300
+      },
+      {
+        "name": "Cotswold Outdoor",
+        "slug": "cotswold-outdoor",
+        "address": "Unit 1, Plas Coch Retail Park, Llanfairpwllgwyngyll, LL61 5GD",
+        "lat": 53.223,
+        "lng": -4.2,
+        "description": "A national chain with a store on Anglesey, this is a good stop if you're approaching Snowdonia from the north. Sells a variety of outdoor gear.",
+        "website": "https://www.cotswoldoutdoor.com/",
+        "phone": "01248 717444",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.3,
+        "reviewCount": 250
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Pete's Eats",
+        "slug": "petes-eats",
+        "address": "Llanberis",
+        "lat": 53.124,
+        "lng": -4.124,
+        "description": "Legendary climber's cafe in Llanberis. Famous for its giant portions and hearty meals. The perfect place to refuel after a day of gorge walking.",
+        "vibe": "Climber-friendly cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Giant portions"
+      },
+      {
+        "name": "Caffi Siabod",
+        "slug": "caffi-siabod",
+        "address": "Capel Curig",
+        "lat": 53.1,
+        "lng": -3.925,
+        "description": "A popular cafe in Capel Curig, serving delicious food and drinks. A great spot to relax and enjoy the stunning views after your gorge walking adventure.",
+        "vibe": "Relaxed cafe",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Good coffee and cakes"
+      },
+      {
+        "name": "Cobdens Hotel",
+        "slug": "cobdens-hotel",
+        "address": "Capel Curig",
+        "lat": 53.1,
+        "lng": -3.927,
+        "description": "A traditional hotel with a cosy bar and restaurant. A great place to enjoy a post-gorge walking pint and a hearty meal.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "https://www.cobdenshotel.co.uk/",
+        "knownFor": "Real ales and pub food"
+      },
+      {
+        "name": "Ty Hyll Ugly House",
+        "slug": "ty-hyll-ugly-house-cafe",
+        "address": "Betws-y-Coed",
+        "lat": 53.127,
+        "lng": -3.827,
+        "description": "A quirky cafe near Betws-y-Coed, known for its unusual architecture and delicious cakes. A great place to stop for a treat after exploring the Fairy Glen or Conwy Falls.",
+        "vibe": "Quirky cafe",
+        "priceRange": "££",
+        "website": "https://www.uglyhouse.co.uk/",
+        "knownFor": "Homemade cakes and afternoon tea"
+      },
+      {
+        "name": "The Heights Hotel",
+        "slug": "the-heights-hotel",
+        "address": "Llanberis Pass, Llanberis",
+        "lat": 53.089,
+        "lng": -4.041,
+        "description": "A good place to grab a drink or meal at the top of the Llanberis Pass. Offers great views of the surrounding mountains.",
+        "vibe": "Scenic hotel bar",
+        "priceRange": "££",
+        "website": "https://theheights-hotel.co.uk/",
+        "knownFor": "Views and local beers"
+      },
+      {
+        "name": "The Saracens Head Hotel",
+        "slug": "the-saracens-head-hotel",
+        "address": "Beddgelert",
+        "lat": 53.004,
+        "lng": -4.096,
+        "description": "A historic hotel in Beddgelert village, great for a hearty meal and pint after a trip to Aberglaslyn Gorge.",
+        "vibe": "Historic pub",
+        "priceRange": "££",
+        "website": "https://saracens-head-hotel.co.uk/",
+        "knownFor": "Sunday roasts"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Plas Curig Hostel",
+        "slug": "plas-curig-hostel",
+        "description": "A budget-friendly hostel in Capel Curig, offering dorm rooms and private rooms. A great base for exploring the Ogwen Valley.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Ogwen Valley gorges (5-10 minute drive)",
+        "website": "https://www.yha.org.uk/hostel/yha-plas-curig"
+      },
+      {
+        "name": "Bryn Tyrch Inn",
+        "slug": "bryn-tyrch-inn",
+        "description": "Traditional inn in Capel Curig, ideal for exploring the Ogwen Valley and surrounding areas. Serves great food and has a friendly atmosphere.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Ogwen Valley gorges (5-10 minute drive)",
+        "website": "https://www.bryntyrchinn.co.uk/"
+      },
+      {
+        "name": "Gwern Gof Isaf Campsite",
+        "slug": "gwern-gof-isaf-campsite",
+        "description": "A simple, no-frills campsite in the Ogwen Valley, popular with climbers and outdoor enthusiasts. A great option for budget-conscious travelers.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Ogwen Valley gorges (short walk)",
+        "website": null
+      },
+      {
+        "name": "Pen y Gwryd Hotel",
+        "slug": "pen-y-gwryd-hotel",
+        "description": "Historic climbing hotel at the foot of Snowdon and Tryfan. Perfect base for gorge walking adventures in Ogwen valley. Full of mountaineering history.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Ogwen Valley Gorges (5 minute drive)",
+        "website": "https://www.pyg.co.uk/"
+      },
+      {
+        "name": "Llyndir Guest House",
+        "slug": "llyndir-guest-house",
+        "description": "A comfortable bed and breakfast in Llanberis, close to Snowdon and other outdoor activities. Offers great views and a warm welcome.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Llanberis (10 minute drive to Ogwen)",
+        "website": "https://llyndir.co.uk/"
+      },
+      {
+        "name": "YHA Snowdon Pen-y-Pass",
+        "slug": "yha-snowdon-pen-y-pass",
+        "description": "Located at Pen-y-Pass, a great spot to start various climbs, and within easy driving distance of several gorge walking spots. Basic but comfortable rooms and great mountain views.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Various, depending on direction",
+        "website": "https://www.yha.org.uk/hostel/yha-snowdon-pen-y-pass"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Snowdonia Trail Marathon",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "A challenging trail marathon through the stunning Snowdonia National Park. While not directly gorge walking, the course passes through some beautiful valleys and offers stunning scenery.",
+      "website": "https://www.snowdoniatrailmarathon.com/",
+      "relevantActivities": [
+        "gorge-walking"
+      ],
+      "registrationCost": 65
+    },
+    {
+      "name": "Welsh 3000s Challenge",
+      "type": "competition",
+      "monthTypical": "June",
+      "description": "A grueling challenge to climb all 14 mountains over 3000 feet in Wales within 24 hours. It requires excellent fitness and navigation skills. Some sections could include elements of scrambling similar to gorge walking.",
+      "website": null,
+      "relevantActivities": [
+        "gorge-walking"
+      ],
+      "registrationCost": null
+    },
+    {
+      "name": "BMC Snowdonia Winter Climbing Meet",
+      "type": "exhibition",
+      "monthTypical": "February",
+      "description": "Although focused on winter climbing, this meet brings together experienced mountaineers and guides who might also have gorge walking experience and can share valuable safety information.",
+      "website": "https://www.thebmc.co.uk/",
+      "relevantActivities": [
+        "gorge-walking"
+      ],
+      "registrationCost": null
+    }
+  ],
+  "keywords": {
+    "primary": "gorge walking snowdonia",
+    "secondary": [
+      "canyoning snowdonia",
+      "gorge scrambling snowdonia",
+      "adventure activities snowdonia",
+      "family gorge walking wales",
+      "guided gorge walking snowdonia"
+    ],
+    "longTail": [
+      "best gorge walking snowdonia for beginners",
+      "gorge walking snowdonia with kids",
+      "guided canyoning trips snowdonia",
+      "gorge scrambling routes snowdonia",
+      "what to wear gorge walking snowdonia",
+      "gorge walking snowdonia safety tips",
+      "gorge walking fairy glen betws y coed",
+      "gorge walking ogwen valley guide",
+      "gorge walking aberglaslyn gorge beddgelert",
+      "gorge walking snowdonia price"
+    ],
+    "localIntent": [
+      "gorge walking near llanberis",
+      "gorge walking near betws y coed",
+      "gorge walking near beddgelert",
+      "gorge walking near capel curig"
+    ],
+    "commercialIntent": [
+      "book gorge walking snowdonia",
+      "gorge walking snowdonia price",
+      "gorge walking snowdonia guided tour",
+      "gorge walking snowdonia gear hire",
+      "gorge walking snowdonia operators"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "brecon-beacons",
+        "label": "Gorge Walking in the Brecon Beacons"
+      },
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Gorge Walking in Pembrokeshire"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "climbing",
+        "label": "Climbing in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "coasteering",
+        "label": "Coasteering in Snowdonia"
+      }
+    ]
+  }
+}

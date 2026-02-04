@@ -1,0 +1,510 @@
+{
+  "regionSlug": "gower",
+  "activityTypeSlug": "surfing",
+  "title": "Surfing in Gower",
+  "strapline": "Catch Atlantic swells on golden beaches in the UK's first Area of Outstanding Natural Beauty.",
+  "metaTitle": "Surfing in Gower | Adventure Wales",
+  "metaDescription": "Discover the best spots for surfing in Gower, from beginner-friendly bays to challenging reef breaks. Expert guide to lessons, rentals, and more.",
+  "heroAlt": "Surfers riding waves at Llangennith Beach, Gower Peninsula",
+  "introduction": "Surfing in Gower is a unique experience, blending stunning coastal scenery with consistent Atlantic swells. While it might not be Bali, the Gower Peninsula offers a variety of breaks suitable for everyone from absolute beginners to seasoned shredders. The jewel in the crown is undoubtedly Llangennith, a vast sandy beach that reliably picks up swell and offers gentle peaks ideal for learning. Rhossili Bay, consistently ranked among the world's best beaches, can produce some epic waves, especially when the conditions align. \n\nWhat sets Gower apart is its accessibility and sheer beauty. Being the UK's first Area of Outstanding Natural Beauty, every surf session comes with a breathtaking backdrop. From the dramatic cliffs of Rhossili to the rolling dunes of Broughton Bay, you'll be immersed in nature. \n\nHowever, don't expect warm tropical waters! A decent wetsuit is essential year-round. Crowds can also be an issue, especially at popular spots like Llangennith during peak season. Early morning sessions are always your best bet to beat the rush. The other thing to remember is that Gower's surf is swell-dependent; flat spells are common, so always check the forecast before heading out. For beginners, sticking to Llangennith, Caswell Bay or Langland Bay is recommended as they are generally more forgiving than the other breaks. Overall, surfing in Gower is a rewarding experience that balances a good challenge with incredible scenery and is a welcome escape from city life. It’s definitely worth a trip.",
+  "bestSeason": "September - November (for consistent swells and fewer crowds)",
+  "difficultyRange": "Easy to Challenging",
+  "priceRange": "Free - £60 guided",
+  "spots": [
+    {
+      "name": "Llangennith Beach",
+      "slug": "llangennith-beach",
+      "description": "Llangennith is the most popular surfing spot in Gower, offering a long, sandy beach with multiple peaks. The waves are generally gentle and forgiving, making it perfect for beginners and intermediate surfers. The vast beach means you can usually find a spot to yourself, even when it's busy. Be mindful of the rip currents near the north end of the beach.",
+      "difficulty": "Easy",
+      "duration": "Varies depending on swell and stamina, 1-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, intermediate surfers, families",
+      "notSuitableFor": "Advanced surfers seeking powerful, hollow waves",
+      "bestSeason": "All year round, best in autumn and winter",
+      "parking": "Large car park at the beach entrance (SA3 1JD). Can get very busy in summer (£5-8). Arrive early or park further back in the village and walk down.",
+      "startPoint": {
+        "name": "Llangennith Beach Car Park",
+        "lat": 51.5745,
+        "lng": -4.3001
+      },
+      "estimatedCost": "Free (parking £5-8) or £45-60 for a lesson",
+      "operatorSlug": "llangennith-surf-school",
+      "insiderTip": "Check the surf report at low tide. Often, the sandbanks create better-shaped waves at low to mid-tide. Plus, you can grab a burger from the van in the carpark after your session."
+    },
+    {
+      "name": "Rhossili Bay",
+      "slug": "rhossili-bay",
+      "description": "Rhossili Bay is famous for its stunning scenery and powerful waves. The beach is long and exposed, picking up plenty of swell. The waves can be hollow and challenging, making it best suited for experienced surfers. Worm's Head can create some epic left-handers when the swell is right, but be aware of strong currents.",
+      "difficulty": "Challenging",
+      "duration": "Varies, usually 2-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced surfers, thrill-seekers",
+      "notSuitableFor": "Beginners, weak swimmers",
+      "bestSeason": "Autumn and winter",
+      "parking": "National Trust car park above the beach (SA3 1PL). Can fill up quickly, especially on weekends (£5-7).",
+      "startPoint": {
+        "name": "National Trust Car Park, Rhossili",
+        "lat": 51.5616,
+        "lng": -4.3147
+      },
+      "estimatedCost": "Free (parking £5-7)",
+      "operatorSlug": null,
+      "insiderTip": "Walk to the end of the beach towards Worm's Head for a more secluded surf spot, but only if you're a confident surfer and aware of the tides. Bring a camera for sunset - the views are incredible."
+    },
+    {
+      "name": "Langland Bay",
+      "slug": "langland-bay",
+      "description": "Langland Bay is a popular spot for families and beginner surfers. The waves are typically small and gentle, breaking over a sandy bottom. There's a surf school on the beach offering lessons and rentals. The bay is sheltered, making it a good option when other spots are too rough.",
+      "difficulty": "Easy",
+      "duration": "1-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families, longboarders",
+      "notSuitableFor": "Experienced surfers seeking challenging waves",
+      "bestSeason": "Spring and summer",
+      "parking": "Car park opposite the beach (SA3 4QR). Can get busy in summer (£3-5).",
+      "startPoint": {
+        "name": "Langland Bay Car Park",
+        "lat": 51.5791,
+        "lng": -3.9615
+      },
+      "estimatedCost": "Free (parking £3-5) or £40-50 for a lesson",
+      "operatorSlug": null,
+      "insiderTip": "Grab an ice cream from the beachside cafe after your surf. The rock pools at low tide are also great for exploring."
+    },
+    {
+      "name": "Caswell Bay",
+      "slug": "caswell-bay",
+      "description": "Caswell Bay is a small, sandy bay that's popular with surfers and families. The waves are generally mellow, making it a good spot for beginners and intermediate surfers. There's a surf school on the beach offering lessons and rentals. The bay is sheltered, offering protection from strong winds.",
+      "difficulty": "Easy",
+      "duration": "1-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, intermediate surfers, families",
+      "notSuitableFor": "Advanced surfers",
+      "bestSeason": "Spring and summer",
+      "parking": "Car park above the beach (SA3 3BS). Can get very busy in summer (£3-5).",
+      "startPoint": {
+        "name": "Caswell Bay Car Park",
+        "lat": 51.5734,
+        "lng": -3.9791
+      },
+      "estimatedCost": "Free (parking £3-5) or £40-50 for a lesson",
+      "operatorSlug": null,
+      "insiderTip": "Check the surf cams before you head down as Caswell can be a lot smaller than other Gower beaches, and easily missed by general forecasts."
+    },
+    {
+      "name": "Broughton Bay",
+      "slug": "broughton-bay",
+      "description": "Broughton Bay is a more remote and less crowded option. It's a long, sandy beach that picks up a decent swell. The waves can be powerful, especially at high tide. Be aware of rip currents. Best suited for intermediate to advanced surfers.",
+      "difficulty": "Moderate",
+      "duration": "2-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediate to advanced surfers",
+      "notSuitableFor": "Beginners",
+      "bestSeason": "Autumn and winter",
+      "parking": "Limited parking at the end of the road leading to the beach (SA3 1EU).",
+      "startPoint": {
+        "name": "Broughton Bay Parking",
+        "lat": 51.6155,
+        "lng": -4.2562
+      },
+      "estimatedCost": "Free (parking free)",
+      "operatorSlug": null,
+      "insiderTip": "Park respectfully as the space is tight, and only take a vehicle suitable for a bumpy, unpaved road. This is a great spot when Llangennith is packed."
+    },
+    {
+      "name": "Port Eynon",
+      "slug": "port-eynon",
+      "description": "Port Eynon is a sheltered bay that can produce some fun waves on its day. It's best suited for beginners and intermediate surfers. The waves break over a sandy bottom. The bay is popular with families, so be mindful of swimmers.",
+      "difficulty": "Easy",
+      "duration": "1-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, intermediate surfers, families",
+      "notSuitableFor": "Advanced surfers",
+      "bestSeason": "Summer",
+      "parking": "Large car park near the beach (SA3 1NN). Can get busy in summer (£3-5).",
+      "startPoint": {
+        "name": "Port Eynon Car Park",
+        "lat": 51.5635,
+        "lng": -4.1317
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Grab some freshly caught seafood from the nearby huts after your surf. The bay is also great for kayaking and paddleboarding."
+    },
+    {
+      "name": "Oxwich Bay",
+      "slug": "oxwich-bay",
+      "description": "Oxwich Bay offers a long, sandy beach with gentle waves. It's a good option for beginners and families. The bay is sheltered and offers a range of water sports activities. Be aware of the strong currents near the eastern end of the beach.",
+      "difficulty": "Easy",
+      "duration": "1-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families",
+      "notSuitableFor": "Advanced surfers",
+      "bestSeason": "Summer",
+      "parking": "Large car park near the beach (SA3 1LS). Can get busy in summer (£3-5).",
+      "startPoint": {
+        "name": "Oxwich Bay Car Park",
+        "lat": 51.5732,
+        "lng": -4.0647
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": "oxwich-watersports",
+      "insiderTip": "Explore the Oxwich National Nature Reserve after your surf. The beach is also great for a long walk."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Gower's weather can be unpredictable, so always check the forecast before heading out. Wind direction is crucial; offshore winds (blowing from the land) create clean, well-shaped waves. Onshore winds can make the surf choppy and messy. Water temperatures can be cold, especially in winter, so a good wetsuit is essential.",
+    "weatherLinks": [
+      {
+        "name": "Magicseaweed",
+        "url": "https://magicseaweed.com/Gower-Surf-Report/664/"
+      },
+      {
+        "name": "Windguru",
+        "url": "https://www.windguru.cz/10313"
+      }
+    ],
+    "gearChecklist": [
+      "Wetsuit (5/3mm or thicker for winter) — the water's cold!",
+      "Surfboard — suitable for your skill level",
+      "Leash — essential for safety, keeps your board attached",
+      "Wax — for grip on your board",
+      "Booties, gloves, and hood (winter months) — keep extremities warm",
+      "Towel — for drying off",
+      "Sunscreen — even on cloudy days",
+      "Water and snacks — stay hydrated and energised",
+      "First-aid kit — for minor cuts and scrapes",
+      "Phone in waterproof case — for emergencies"
+    ],
+    "gearHire": [
+      {
+        "name": "Llangennith Surf School",
+        "location": "Llangennith",
+        "url": "http://llangennithsurf.com/"
+      },
+      {
+        "name": "Rip N Rock",
+        "location": "Swansea",
+        "url": "https://ripnrock.com/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "4h",
+          "route": "Via M4"
+        },
+        {
+          "from": "Manchester",
+          "duration": "4h 30m",
+          "route": "Via M6 and M5"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3h",
+          "route": "Via M5 and M4"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "1h",
+          "route": "Via M4"
+        }
+      ],
+      "publicTransport": "Swansea is the nearest train station. From there, buses run to various villages in Gower. The Gower Explorer bus service is useful for getting around the peninsula.",
+      "parkingTips": "Parking can be limited, especially during peak season. Arrive early or be prepared to walk. Some car parks are National Trust owned and free for members. Be aware of parking restrictions and park responsibly."
+    },
+    "safety": "Be aware of rip currents, especially at Llangennith and Rhossili. Always surf within your ability and never surf alone. Check the tide times and weather conditions before heading out. Carry a mobile phone for emergencies. Dial 999 or 112 for emergency services. RNLI lifeguards patrol some beaches during the summer months."
+  },
+  "faqs": [
+    {
+      "question": "What is the best time of year to surf in Gower?",
+      "answer": "The best time for surfing in Gower is generally from September to November. During these months, the swells are more consistent, and the crowds are smaller compared to the summer months. Water temperatures are colder, so a good wetsuit is essential."
+    },
+    {
+      "question": "Which Gower beach is best for beginner surfers?",
+      "answer": "Llangennith Beach is widely regarded as the best beach for beginner surfers in Gower. It has a long, sandy beach with gentle, forgiving waves. Caswell Bay and Langland Bay are also good options for beginners, offering sheltered conditions and surf schools."
+    },
+    {
+      "question": "How much does it cost to hire a surfboard in Gower?",
+      "answer": "Surfboard hire in Gower typically costs between £15-£25 for a half-day and £25-£40 for a full day. Prices vary depending on the type of board and the rental shop. Llangennith Surf School and Rip N Rock offer surfboard rentals."
+    },
+    {
+      "question": "Are there any surf schools in Gower?",
+      "answer": "Yes, there are several reputable surf schools in Gower. Llangennith Surf School is located directly on Llangennith Beach and offers lessons for all abilities. Rip N Rock and Gower Activity Centres also offer surfing lessons as part of their activity packages."
+    },
+    {
+      "question": "What size wetsuit do I need for surfing in Gower?",
+      "answer": "For surfing in Gower, a 5/3mm wetsuit is recommended for most of the year. In the winter months (November to April), you might want to consider a thicker 5/4mm wetsuit or adding booties, gloves, and a hood for extra warmth."
+    },
+    {
+      "question": "Is there parking available at Llangennith Beach?",
+      "answer": "Yes, there is a large car park at Llangennith Beach, but it can get very busy during peak season, especially in the summer. The parking fee is usually between £5-£8. Arriving early or parking further back in the village and walking down is recommended to avoid the crowds."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "PJ's Surf Shop",
+        "slug": "pjs-surf-shop",
+        "address": "Llangennith, Swansea SA3 1JD",
+        "lat": 51.5747,
+        "lng": -4.2999,
+        "description": "The go-to surf shop right at Llangennith beach. Sells boards, wetsuits, accessories, and offers repairs. A great place to get advice from knowledgeable staff.",
+        "website": "https://www.pjsurfshop.co.uk/",
+        "phone": "01792 386648",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 150
+      },
+      {
+        "name": "Sam's Surf Shack",
+        "slug": "sams-surf-shack",
+        "address": "Unit 1, Mumbles Road, Mumbles, Swansea SA3 5EH",
+        "lat": 51.5784,
+        "lng": -3.9705,
+        "description": "Located in Mumbles, selling a good range of surfboards, wetsuits, and accessories. Knowledgeable staff offering expert advice.",
+        "website": null,
+        "phone": "01792 368800",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 80
+      },
+      {
+        "name": "Gower Surf Development",
+        "slug": "gower-surf-development",
+        "address": "Unit 10, Llanrhidian Business Park, Llanrhidian, Swansea SA3 1EU",
+        "lat": 51.6283,
+        "lng": -4.1387,
+        "description": "Another place to buy or hire your surf gear, specialising in kitesurfing and paddleboarding as well.",
+        "website": null,
+        "phone": "01792 390000",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.0,
+        "reviewCount": 100
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "King's Head",
+        "slug": "kings-head",
+        "address": "Llangennith, Swansea SA3 1JD",
+        "lat": 51.5749,
+        "lng": -4.2995,
+        "description": "Traditional pub in Llangennith, a stone's throw from the beach. Serves hearty meals and local ales. The perfect place to warm up after a surf.",
+        "vibe": "Surfer hangout, Cosy pub",
+        "priceRange": "££",
+        "website": "https://www.kingsheadgower.co.uk/",
+        "knownFor": "Hearty pub meals, local ales, post-surf pint"
+      },
+      {
+        "name": "Bay Bistro",
+        "slug": "bay-bistro",
+        "address": "Rhossili, Swansea SA3 1PL",
+        "lat": 51.5617,
+        "lng": -4.3139,
+        "description": "Bistro with stunning views over Rhossili Bay. Serves breakfast, lunch, and dinner. Great for a post-surf coffee and cake.",
+        "vibe": "Relaxed bistro, scenic views",
+        "priceRange": "££",
+        "website": "https://www.thebaybistro.co.uk/",
+        "knownFor": "Stunning views, breakfast, coffee and cake"
+      },
+      {
+        "name": "Mewslade Bay Beach Cafe",
+        "slug": "mewslade-bay-beach-cafe",
+        "address": "Mewslade Bay, Swansea",
+        "lat": 51.5503,
+        "lng": -4.3046,
+        "description": "Basic but perfectly positioned cafe in the beautiful Mewslade Bay, serving coffee, tea, cakes and ice cream.",
+        "vibe": "Cosy Cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Cake, Ice cream"
+      },
+      {
+        "name": "The Ship Inn",
+        "slug": "the-ship-inn",
+        "address": "Port Eynon, Swansea SA3 1NN",
+        "lat": 51.5636,
+        "lng": -4.1309,
+        "description": "Traditional pub in Port Eynon, a short walk from the beach. Serves good pub grub and has a beer garden.",
+        "vibe": "Family-friendly pub",
+        "priceRange": "££",
+        "website": "https://www.theshipinnporteynon.co.uk/",
+        "knownFor": "Good pub grub, beer garden"
+      },
+      {
+        "name": "Verdi's",
+        "slug": "verdis",
+        "address": "Knab Rock, Mumbles Road, Mumbles, Swansea SA3 4EN",
+        "lat": 51.5778,
+        "lng": -3.9609,
+        "description": "Popular ice cream parlour and cafe in Mumbles. Serves delicious ice cream, coffee, and light meals. Great for a treat after a surf.",
+        "vibe": "Family-friendly cafe, ice cream parlour",
+        "priceRange": "£",
+        "website": "https://verdis.co.uk/",
+        "knownFor": "Ice cream, coffee, light meals"
+      },
+      {
+        "name": "Pilot Inn",
+        "slug": "pilot-inn",
+        "address": "Shore Road, Mumbles, Swansea SA3 4DN",
+        "lat": 51.5774,
+        "lng": -3.9601,
+        "description": "Pub in Mumbles, with fantastic sea views, great food and beers on offer.",
+        "vibe": "Restaurant and pub",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "sea views"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Gower Coast Camping",
+        "slug": "gower-coast-camping",
+        "description": "Camping site close to Llangennith Beach. Great for a budget-friendly surf trip. Basic facilities but stunning location.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Llangennith Beach (5 minute drive)",
+        "website": "https://www.gowercoastcamping.co.uk/"
+      },
+      {
+        "name": "Hill End Campsite",
+        "slug": "hill-end-campsite",
+        "description": "Large campsite right next to Llangennith beach. Perfect for a surf trip as you can walk straight to the waves. Has good facilities.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Llangennith Beach (2 minute walk)",
+        "website": "https://www.nationaltrust.org.uk/holidays/hill-end-campsite-gower"
+      },
+      {
+        "name": "The King Arthur Hotel",
+        "slug": "the-king-arthur-hotel",
+        "description": "Hotel in Reynoldston, a short drive from Llangennith and Rhossili. A comfortable base for exploring the Gower coast.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Llangennith Beach (10 minute drive)",
+        "website": "https://kingarthurhotel.co.uk/"
+      },
+      {
+        "name": "Oxwich Bay Hotel",
+        "slug": "oxwich-bay-hotel",
+        "description": "The best hotel for surfing Oxwich, with its own spa and several restaurants on site.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Oxwich Beach (2 minute walk)",
+        "website": "https://www.oxwichbayhotel.co.uk/"
+      },
+      {
+        "name": "Parc-Le-Breos",
+        "slug": "parc-le-breos",
+        "description": "B&B close to Three Cliffs Bay. Great location for exploring South Gower. Good breakfasts.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Three Cliffs Bay (5 minute drive)",
+        "website": "https://www.parc-le-breos.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Welsh National Surfing Championships",
+      "type": "competition",
+      "monthTypical": "October",
+      "description": "Annual surfing competition held at various locations in Wales, including Gower. Attracts surfers from all over the country.",
+      "website": "https://www.welshsurfingfederation.org.uk/",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "registrationCost": 45
+    },
+    {
+      "name": "Gower Surf Classic",
+      "type": "competition",
+      "monthTypical": "September",
+      "description": "An annual surfing event held at one of Gower's famous beaches, featuring open amateur & pro surf divisions.",
+      "website": null,
+      "relevantActivities": [
+        "surfing"
+      ],
+      "registrationCost": 0
+    }
+  ],
+  "keywords": {
+    "primary": "surfing in gower",
+    "secondary": [
+      "surf gower",
+      "gower surfing beaches",
+      "surfing llangennith",
+      "surf schools gower",
+      "gower surf report"
+    ],
+    "longTail": [
+      "best beaches for surfing in gower for beginners",
+      "surf lessons in gower for beginners",
+      "surfboard hire gower peninsula",
+      "llangennith beach surf conditions",
+      "surfing at rhossili bay",
+      "gower surf forecast september",
+      "wetsuit hire gower",
+      "best time to surf in llangennith",
+      "family surfing gower"
+    ],
+    "localIntent": [
+      "surfing near swansea",
+      "surf schools near mumbles",
+      "surf shop llangennith",
+      "surfboard hire swansea"
+    ],
+    "commercialIntent": [
+      "surf lessons gower price",
+      "best surf schools gower",
+      "rent surfboard gower",
+      "book surf lesson gower",
+      "surfing gower guided tour"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Surfing in Pembrokeshire"
+      },
+      {
+        "regionSlug": "cardigan-bay",
+        "label": "Surfing in Cardigan Bay"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "coasteering",
+        "label": "Coasteering in Gower"
+      },
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Gower"
+      },
+      {
+        "activityTypeSlug": "climbing",
+        "label": "Climbing in Gower"
+      }
+    ]
+  }
+}

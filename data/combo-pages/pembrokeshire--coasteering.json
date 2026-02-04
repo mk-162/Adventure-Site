@@ -1,0 +1,607 @@
+{
+  "regionSlug": "pembrokeshire",
+  "activityTypeSlug": "coasteering",
+  "title": "Coasteering in Pembrokeshire",
+  "strapline": "Pembrokeshire: Where coasteering was born and still reigns supreme.",
+  "metaTitle": "Coasteering Pembrokeshire | Adventure Wales",
+  "metaDescription": "Plunge into adventure with coasteering in Pembrokeshire! Explore the rugged coastline, jump into crystal-clear waters, and discover hidden caves.",
+  "heroAlt": "A group of coasteerers jumping off a cliff into the blue waters of Abereiddy Blue Lagoon in Pembrokeshire",
+  "introduction": "If you're looking for the ultimate coasteering experience, look no further than Pembrokeshire. This is where it all started, back in the 80s, and the coastline here is simply unmatched. Think dramatic cliffs, hidden coves, and crystal-clear water perfect for exploring. Forget manicured beaches; Pembrokeshire offers raw, rugged beauty that demands to be explored. \n\nCoasteering in Pembrokeshire isn't just about adrenaline; it's about connecting with the landscape. You'll be scrambling over rocks worn smooth by the ages, swimming through caves echoing with the sound of the sea, and jumping into pools that feel a million miles from anywhere. It's an adventure that ignites your senses and leaves you feeling alive. \n\nWhile most routes are suitable for beginners with a decent level of fitness, some sections can be challenging, especially when the swell picks up. Don't underestimate the power of the sea, and always go with a reputable operator who knows the tides and currents intimately. Some areas around St David's Head and the Preseli cliffs are definitely for experienced coasteerers only. But whether you're a seasoned adventurer or a first-timer, **coasteering in Pembrokeshire** will leave you with memories that last a lifetime. Just be prepared for some serious wind and the odd rogue wave! \n\n**Coasteering Pembrokeshire** is best enjoyed with a knowledgeable guide who can point out hidden gems, explain the local geology, and ensure your safety. And trust me, you'll want to reward yourself with a hearty meal and a pint at a local pub afterwards – you'll have earned it!",
+  "bestSeason": "May-October",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Abereiddy Blue Lagoon",
+      "slug": "abereiddy-blue-lagoon",
+      "description": "The iconic Blue Lagoon is a flooded slate quarry offering sheltered waters and thrilling jumps. Expect varying jump heights, deep water swims, and the occasional inquisitive seal. It's the perfect spot for beginners and families, but can get crowded in peak season.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families, those looking for a fun and accessible coasteering experience",
+      "notSuitableFor": "Those with a fear of heights, or those seeking solitude",
+      "bestSeason": "May-September",
+      "parking": "Large car park at Abereiddy beach. Can get very busy in summer, arrive early or be prepared to park further away. Cost is £5 for the day.",
+      "startPoint": {
+        "name": "Abereiddy Beach Car Park",
+        "lat": 51.9527,
+        "lng": -5.2306
+      },
+      "estimatedCost": "Free (parking £5) or £60pp guided",
+      "operatorSlug": "tyf-adventure",
+      "insiderTip": "Walk further around the coast from the main Blue Lagoon for quieter swimming spots and less crowded jump locations."
+    },
+    {
+      "name": "St Davids Head",
+      "slug": "st-davids-head",
+      "description": "A more challenging coasteering route with exposed sections and larger swell. Explore dramatic cliffs, hidden sea caves, and powerful currents. This is a route for experienced coasteerers only, and should only be attempted in calm conditions.",
+      "difficulty": "Challenging",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced coasteerers seeking a challenging and rewarding adventure",
+      "notSuitableFor": "Beginners, families, or those with limited swimming ability",
+      "bestSeason": "June-August (calm conditions essential)",
+      "parking": "Limited parking at St Davids Head National Trust car park. Arrive early as it fills up quickly. Free for National Trust members, otherwise pay and display.",
+      "startPoint": {
+        "name": "St Davids Head Car Park",
+        "lat": 51.9164,
+        "lng": -5.2705
+      },
+      "estimatedCost": "Free (parking charges may apply) or £70pp guided",
+      "operatorSlug": "preseli-venture",
+      "insiderTip": "Check the tide times carefully before setting out, as some sections become impassable at high tide. Keep an eye out for choughs nesting on the cliffs."
+    },
+    {
+      "name": "Stackpole Quay",
+      "slug": "stackpole-quay",
+      "description": "A stunning section of coastline near Barafundle Bay, offering a mix of sheltered coves and exposed cliffs. Explore sea caves, swim through crystal-clear waters, and enjoy panoramic views. Stackpole Quay is a classic location, with coasteering possible in most weather conditions.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediate coasteerers looking for a mix of adventure and scenic beauty",
+      "notSuitableFor": "Complete beginners or those with mobility issues",
+      "bestSeason": "May-September",
+      "parking": "National Trust car park at Stackpole Quay. Charges apply for non-members. Can get busy in summer.",
+      "startPoint": {
+        "name": "Stackpole Quay Car Park",
+        "lat": 51.6442,
+        "lng": -4.9139
+      },
+      "estimatedCost": "Free (parking charges may apply) or £65pp guided",
+      "operatorSlug": "activity-pembrokeshire",
+      "insiderTip": "Combine your coasteering adventure with a visit to the nearby Barafundle Bay, one of the most beautiful beaches in Wales."
+    },
+    {
+      "name": "St Non's Bay",
+      "slug": "st-nons-bay",
+      "description": "A peaceful and picturesque bay with clear waters and interesting rock formations. Explore the ruins of St Non's Chapel and the nearby Holy Well. Expect a quieter coasteering experience, away from the crowds.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Those looking for a more tranquil and reflective coasteering experience",
+      "notSuitableFor": "Adrenaline junkies seeking big jumps and thrills",
+      "bestSeason": "May-September",
+      "parking": "Small car park at St Non's Bay. Can fill up quickly in summer.",
+      "startPoint": {
+        "name": "St Non's Bay Car Park",
+        "lat": 51.9386,
+        "lng": -5.2511
+      },
+      "estimatedCost": "Free (parking free) or £60pp guided",
+      "operatorSlug": null,
+      "insiderTip": "Take some time to explore the ruins of St Non's Chapel and learn about the legend of St David's mother. Keep an eye out for seals basking on the rocks."
+    },
+    {
+      "name": "Porthclais",
+      "slug": "porthclais",
+      "description": "A small harbour with sheltered waters and interesting rock formations. Perfect for families and beginners. Expect short swims, small jumps, and plenty of opportunities to explore the coastline. Porthclais is a very sheltered spot, so good in poor weather.",
+      "difficulty": "Easy",
+      "duration": "2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families with young children, beginners looking for a gentle introduction to coasteering",
+      "notSuitableFor": "Experienced coasteerers seeking a challenge",
+      "bestSeason": "May-September",
+      "parking": "Car park at Porthclais harbour. Charges apply.",
+      "startPoint": {
+        "name": "Porthclais Harbour Car Park",
+        "lat": 51.9255,
+        "lng": -5.2045
+      },
+      "estimatedCost": "Free (parking charges may apply) or £55pp guided",
+      "operatorSlug": "outer-reef-surf-school",
+      "insiderTip": "Grab an ice cream from the cafe at the harbour after your coasteering adventure. The views are fantastic!"
+    },
+    {
+      "name": "Abercastle",
+      "slug": "abercastle",
+      "description": "A beautiful and rugged coastline with hidden coves and dramatic cliffs. Expect a mix of swimming, scrambling, and jumping. Abercastle offers a more remote and wild coasteering experience, away from the crowds. Good for spotting wildlife.",
+      "difficulty": "Moderate",
+      "duration": "3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediate coasteerers looking for a more challenging and remote adventure",
+      "notSuitableFor": "Beginners or those with limited mobility",
+      "bestSeason": "June-August",
+      "parking": "Small car park at Abercastle harbour. Can fill up quickly in summer.",
+      "startPoint": {
+        "name": "Abercastle Harbour Car Park",
+        "lat": 51.9288,
+        "lng": -5.1299
+      },
+      "estimatedCost": "Free (parking free) or £65pp guided",
+      "operatorSlug": "celtic-quest-coasteering",
+      "insiderTip": "Keep an eye out for seals and dolphins in the bay. The coastline around Abercastle is a haven for wildlife."
+    },
+    {
+      "name": "Preseli Cliffs (North)",
+      "slug": "preseli-cliffs-north",
+      "description": "Wild and exposed, this section of the Preseli cliffs offers dramatic views and challenging coasteering. Expect powerful waves, strong currents, and exposed swims. Only suitable for experienced coasteerers in calm conditions. Navigation skills are essential.",
+      "difficulty": "Expert",
+      "duration": "4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Extremely experienced coasteerers seeking a serious challenge",
+      "notSuitableFor": "Anyone other than experts, or those afraid of heights and strong currents",
+      "bestSeason": "July-August (very calm conditions essential)",
+      "parking": "Limited parking on the B4329 near the coast path. Be respectful of local residents.",
+      "startPoint": {
+        "name": "Preseli Cliffs parking area",
+        "lat": 51.9612,
+        "lng": -4.8675
+      },
+      "estimatedCost": "Free (parking free) or £80pp guided (highly recommended)",
+      "operatorSlug": "preseli-venture",
+      "insiderTip": "This route is for experts only. Strong swell and currents can make it extremely dangerous. Check the forecast meticulously and be prepared to turn back. Tell someone where you are going and when you expect to be back."
+    },
+    {
+      "name": "Pwll Deri",
+      "slug": "pwll-deri",
+      "description": "A less-frequented spot on the north coast near Goodwick, Pwll Deri offers a challenging but rewarding coasteering experience. Be prepared for some steep ascents and descents, as well as exposed swims. The views from the top are spectacular.",
+      "difficulty": "Challenging",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced coasteerers looking for a more remote and challenging route",
+      "notSuitableFor": "Beginners, families, or those with limited mobility",
+      "bestSeason": "June-August",
+      "parking": "National Trust car park at Pwll Deri. Charges apply for non-members. Limited space.",
+      "startPoint": {
+        "name": "Pwll Deri National Trust Car Park",
+        "lat": 51.9998,
+        "lng": -5.0934
+      },
+      "estimatedCost": "Free (parking charges may apply) or £70pp guided",
+      "operatorSlug": null,
+      "insiderTip": "The youth hostel at Pwll Deri is a great place to stay if you want to explore this area. Be sure to check out the nearby Iron Age fort."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Pembrokeshire's weather is notoriously unpredictable. Sunshine can quickly turn to rain, and the wind can pick up dramatically. Always check the forecast before heading out, and be prepared for changing conditions. Strong winds and large swells can make coasteering dangerous, so err on the side of caution.",
+    "weatherLinks": [
+      {
+        "name": "Met Office Coastal Waters Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/coast-and-sea/coastal-waters-forecast"
+      },
+      {
+        "name": "Windguru Pembrokeshire",
+        "url": "https://www.windguru.cz/368"
+      }
+    ],
+    "gearChecklist": [
+      "Wetsuit (5mm recommended) — To stay warm in the cold water.",
+      "Wetsuit boots — Essential for grip and protection on slippery rocks.",
+      "Buoyancy aid — Provides flotation and protection.",
+      "Helmet — Protects your head from bumps and scrapes.",
+      "Gloves — Improve grip and protect your hands.",
+      "Rash vest — Worn under the wetsuit for extra warmth and comfort.",
+      "Towel — For drying off after your coasteering adventure.",
+      "Warm clothes — To change into after the activity.",
+      "Dry bag — To keep your valuables safe and dry.",
+      "Energy snacks and water — To stay hydrated and energized."
+    ],
+    "gearHire": [
+      {
+        "name": "Ma Simes Surf Hut",
+        "location": "Whitesands Beach",
+        "url": "https://www.masimes.co.uk/"
+      },
+      {
+        "name": "TYF Shop",
+        "location": "St Davids",
+        "url": "https://www.tyf.com/"
+      },
+      {
+        "name": "Outer Reef Surf School",
+        "location": "Newgale",
+        "url": "https://www.outerreefsurfschool.com/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5h",
+          "route": "M4 and A40"
+        },
+        {
+          "from": "Manchester",
+          "duration": "5h 30m",
+          "route": "M6, M5, and A40"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "4h",
+          "route": "M5 and A40"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "2h",
+          "route": "A48 and A40"
+        }
+      ],
+      "publicTransport": "Nearest train stations are Haverfordwest and Fishguard. From there, take the Pembrokeshire Coast Bus (route 400 or Celtic Coaster) to reach coastal villages. The Strumble Shuttle is great for exploring St Davids Head.",
+      "parkingTips": "Parking can be challenging, especially in summer. Arrive early, use park-and-ride facilities where available, and be prepared to walk. Respect local residents and avoid parking in restricted areas."
+    },
+    "safety": "Coasteering can be a dangerous activity if not approached with caution. Always check the tide times and weather forecast before setting out. Never coasteer alone, and always inform someone of your route and expected return time. Be aware of the risks of cold water shock, and wear appropriate safety gear. In an emergency, dial 999 and ask for the Coastguard. Be aware of rip currents which can form near beaches and estuaries."
+  },
+  "faqs": [
+    {
+      "question": "What is the best time of year for coasteering in Pembrokeshire?",
+      "answer": "The best time for coasteering in Pembrokeshire is from May to October, when the water is warmer and the weather is generally more settled. However, even in summer, the weather can be unpredictable, so always check the forecast before heading out."
+    },
+    {
+      "question": "What equipment do I need for coasteering?",
+      "answer": "Essential equipment includes a wetsuit (5mm recommended), wetsuit boots, a buoyancy aid, and a helmet. Gloves are also recommended for extra grip and protection. Most coasteering operators provide all the necessary equipment as part of their guided tours."
+    },
+    {
+      "question": "Is coasteering suitable for beginners?",
+      "answer": "Yes, coasteering can be suitable for beginners, but it's important to choose a route that matches your fitness level and experience. Many operators offer beginner-friendly coasteering sessions in sheltered locations like Abereiddy Blue Lagoon or Porthclais. Always listen to your guide's instructions."
+    },
+    {
+      "question": "How much does coasteering cost in Pembrokeshire?",
+      "answer": "The cost of coasteering in Pembrokeshire varies depending on the operator and the length of the session. Guided tours typically cost between £55 and £80 per person. If you have your own equipment, you can coasteer independently for free, but this is only recommended for experienced coasteerers."
+    },
+    {
+      "question": "What is the minimum age for coasteering?",
+      "answer": "The minimum age for coasteering varies depending on the operator, but it is typically around 8 years old. Some operators may have different age restrictions for different routes, so it's best to check with them directly."
+    },
+    {
+      "question": "Are there any coasteering locations suitable for families?",
+      "answer": "Yes, several coasteering locations in Pembrokeshire are suitable for families, including Abereiddy Blue Lagoon, Porthclais, and Stackpole Quay. These locations offer sheltered waters, easy access, and shorter routes that are perfect for younger children."
+    },
+    {
+      "question": "Is coasteering dangerous?",
+      "answer": "Coasteering can be dangerous if not approached with caution. It's important to be aware of the risks involved, such as cold water shock, strong currents, and slippery rocks. Always coasteer with a reputable operator and follow their instructions carefully."
+    },
+    {
+      "question": "Do I need to be a strong swimmer to go coasteering?",
+      "answer": "While you don't need to be an Olympic swimmer, it's important to be a confident swimmer to go coasteering. You should be comfortable swimming in open water and able to tread water for a reasonable amount of time. A buoyancy aid will help you stay afloat, but it's still important to have good swimming skills."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Ma Simes Surf Hut",
+        "slug": "ma-simes-surf-hut",
+        "address": "Whitesands Bay, St Davids SA62 6PS",
+        "lat": 51.8874,
+        "lng": -5.2798,
+        "description": "A surf shop near Whitesands Beach known for wetsuit hire, surfboards, and beach essentials. They offer friendly advice and cater to surfers and coasteerers alike.",
+        "website": "https://www.masimes.co.uk/",
+        "phone": "01437 720267",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 150
+      },
+      {
+        "name": "TYF Shop",
+        "slug": "tyf-shop",
+        "address": "30 High St, St Davids SA62 6SD",
+        "lat": 51.8833,
+        "lng": -5.2623,
+        "description": "Part of the TYF Adventure group, this shop offers a wide range of outdoor gear, including wetsuits, footwear, and accessories. They are passionate about sustainable and ethical products.",
+        "website": "https://www.tyf.com/shop/",
+        "phone": "01437 721611",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 120
+      },
+      {
+        "name": "Coast to Coast Sea Kayaking",
+        "slug": "coast-to-coast-sea-kayaking",
+        "address": "The Old Boathouse, Lower Town Fishguard, SA65 9NB",
+        "lat": 51.9563,
+        "lng": -4.9931,
+        "description": "Mainly focused on Kayaking, but offers a range of wet suits and accessories suitable for coastal adventures including coasteering.",
+        "website": "http://www.coasttocoastseakayaking.co.uk/",
+        "phone": "01348 874635",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.9,
+        "reviewCount": 80
+      },
+      {
+        "name": "Outer Reef Surf School",
+        "slug": "outer-reef-surf-school-shop",
+        "address": "Newgale Beach, Roch, Haverfordwest SA62 6AS",
+        "lat": 51.8071,
+        "lng": -5.1596,
+        "description": "Located at Newgale beach, this shop is part of Outer Reef Surf School and offers gear sales and hire.",
+        "website": "https://www.outerreefsurfschool.com/",
+        "phone": "07966 530540",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.8,
+        "reviewCount": 95
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Sampler",
+        "slug": "the-sampler",
+        "address": "St Davids SA62",
+        "lat": 51.8827,
+        "lng": -5.2648,
+        "description": "A friendly cafe in St Davids serving delicious cakes, sandwiches, and light meals. Perfect for a post-coasteering refuel.",
+        "vibe": "Relaxed cafe",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Homemade cakes, friendly atmosphere"
+      },
+      {
+        "name": "The Shed",
+        "slug": "the-shed",
+        "address": "Porthgain SA62",
+        "lat": 51.9056,
+        "lng": -5.1429,
+        "description": "A popular fish and chip restaurant in Porthgain known for its fresh seafood and stunning harbour views. A great place to enjoy a hearty meal after a day of coasteering.",
+        "vibe": "Seaside restaurant",
+        "priceRange": "££",
+        "website": "https://theshedporthgain.co.uk/",
+        "knownFor": "Fresh fish and chips, harbour views"
+      },
+      {
+        "name": "The Sloop Inn",
+        "slug": "the-sloop-inn",
+        "address": "Porthgain SA62",
+        "lat": 51.9051,
+        "lng": -5.1427,
+        "description": "A historic pub in Porthgain with a cosy atmosphere and a good selection of local ales. A great place to relax and unwind after a day of coasteering.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "https://www.thesloop.co.uk/",
+        "knownFor": "Real ales, harbour views"
+      },
+      {
+        "name": "Bishops",
+        "slug": "bishops",
+        "address": "St Davids SA62",
+        "lat": 51.8831,
+        "lng": -5.2646,
+        "description": "A sophisticated restaurant in St Davids serving modern British cuisine with a focus on local ingredients. A great place for a special occasion or a celebratory meal.",
+        "vibe": "Fine dining",
+        "priceRange": "£££",
+        "website": null,
+        "knownFor": "Local ingredients, refined dishes"
+      },
+      {
+        "name": "Bench Bar",
+        "slug": "bench-bar",
+        "address": "Newgale SA62",
+        "lat": 51.8067,
+        "lng": -5.1615,
+        "description": "A relaxed bar at Newgale beach with stunning sea views. Perfect for a post-surf or post-coasteering beer.",
+        "vibe": "Surfer hangout",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Sea views, relaxed atmosphere"
+      },
+      {
+        "name": "CWT",
+        "slug": "cwt",
+        "address": "St Davids SA62",
+        "lat": 51.8828,
+        "lng": -5.2643,
+        "description": "A trendy cafe in St Davids serving delicious coffee, pastries, and light meals. A great place to grab a quick bite or a caffeine fix.",
+        "vibe": "Trendy cafe",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Great coffee, pastries"
+      },
+      {
+        "name": "The Druidstone Hotel",
+        "slug": "the-druidstone-hotel",
+        "address": "Broad Haven, Haverfordwest SA62 3NE",
+        "lat": 51.8496,
+        "lng": -5.1889,
+        "description": "A quirky and characterful hotel with a fantastic location overlooking the coast. Perfect for a hearty meal and stunning views after a day of coasteering.",
+        "vibe": "Relaxed and quirky",
+        "priceRange": "£££",
+        "website": "https://www.druidstone.co.uk/",
+        "knownFor": "Stunning views, quirky atmosphere"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "St Davids YHA",
+        "slug": "st-davids-yha",
+        "description": "Budget-friendly hostel in the heart of St Davids, perfect for exploring the local coastline. Close to many coasteering start points.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "St Non's Bay (1 mile)",
+        "website": "https://www.yha.org.uk/hostel/yha-st-davids"
+      },
+      {
+        "name": "Whitesands Camping",
+        "slug": "whitesands-camping",
+        "description": "Campsite located right next to Whitesands Beach, ideal for surfers and coasteerers. Close to St Davids Head.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "St Davids Head (1 mile)",
+        "website": "https://www.whitesandscamping.co.uk/"
+      },
+      {
+        "name": "Twr y Felin Hotel",
+        "slug": "twr-y-felin-hotel",
+        "description": "Luxury hotel in a converted windmill near St Davids. A good choice for a more comfortable stay after a day of adventures.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "St Non's Bay (0.5 mile)",
+        "website": "https://www.twryfelinhotel.com/"
+      },
+      {
+        "name": "Penrhiw Hotel",
+        "slug": "penrhiw-hotel",
+        "description": "B&B near St Davids Head. Beautiful gardens and quiet location.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "St Davids Head (2 miles)",
+        "website": "https://penrhiwhotel.com/"
+      },
+      {
+        "name": "Preseli Hills Glamping",
+        "slug": "preseli-hills-glamping",
+        "description": "Located in the Preseli Hills, perfect for those looking to combine coasteering with other outdoor activities. Close to Abercastle and the northern Preseli cliffs routes.",
+        "type": "glamping",
+        "priceRange": "££",
+        "nearestSpot": "Abercastle (5 miles)",
+        "website": "https://www.preselihillsglamping.co.uk/"
+      },
+      {
+        "name": "Stackpole Under the Stars Camping",
+        "slug": "stackpole-under-the-stars-camping",
+        "description": "Camping site located near Stackpole and Barafundle Bay. Great for exploring the south Pembrokeshire coastline.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Stackpole Quay (2 miles)",
+        "website": "https://stackpoleunderthestars.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Pembrokeshire Coast Path Challenge",
+      "type": "race",
+      "monthTypical": "May",
+      "description": "A trail running race along the stunning Pembrokeshire Coast Path, with various distances to choose from.",
+      "website": "https://www.pembrokeshirecoastpathchallenge.co.uk/",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "registrationCost": 45
+    },
+    {
+      "name": "St Davids Food and Drink Festival",
+      "type": "festival",
+      "monthTypical": "June",
+      "description": "A celebration of local food and drink in St Davids, with stalls, demonstrations, and live music.",
+      "website": null,
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "registrationCost": null
+    },
+    {
+      "name": "Wales SwimRun",
+      "type": "race",
+      "monthTypical": "September",
+      "description": "A challenging swim-run event along the Pembrokeshire coast, combining swimming and running over varied terrain.",
+      "website": "https://www.wales-swimrun.com/",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "registrationCost": 90
+    },
+    {
+      "name": "The Really Wild Food Festival",
+      "type": "festival",
+      "monthTypical": "May",
+      "description": "A celebration of wild and foraged food, taking place across Pembrokeshire with guided walks, cookery demonstrations and local produce.",
+      "website": "https://www.thereallywildfoodfestival.co.uk/",
+      "relevantActivities": [
+        "coasteering"
+      ],
+      "registrationCost": null
+    }
+  ],
+  "keywords": {
+    "primary": "coasteering pembrokeshire",
+    "secondary": [
+      "coasteering st davids",
+      "coasteering abereiddy",
+      "blue lagoon coasteering",
+      "pembrokeshire coast",
+      "adventure pembrokeshire"
+    ],
+    "longTail": [
+      "best coasteering routes pembrokeshire",
+      "coasteering pembrokeshire with kids",
+      "guided coasteering tours pembrokeshire",
+      "coasteering pembrokeshire blue lagoon price",
+      "coasteering pembrokeshire for beginners",
+      "coasteering pembrokeshire near me",
+      "coasteering pembrokeshire family friendly",
+      "coasteering pembrokeshire safe routes",
+      "best coasteering company pembrokeshire",
+      "coasteering abereiddy blue lagoon without a guide",
+      "coasteering pembrokeshire in october"
+    ],
+    "localIntent": [
+      "coasteering near st davids",
+      "coasteering near haverfordwest",
+      "coasteering near cardigan",
+      "coasteering near tenby",
+      "coasteering near fishguard"
+    ],
+    "commercialIntent": [
+      "coasteering pembrokeshire guided tour",
+      "coasteering pembrokeshire price",
+      "book coasteering pembrokeshire",
+      "coasteering gear hire pembrokeshire",
+      "cheap coasteering pembrokeshire"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "gower",
+        "label": "Coasteering in Gower"
+      },
+      {
+        "regionSlug": "anglesey",
+        "label": "Coasteering in Anglesey"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "surfing",
+        "label": "Surfing in Pembrokeshire"
+      },
+      {
+        "activityTypeSlug": "sea-kayaking",
+        "label": "Sea Kayaking in Pembrokeshire"
+      },
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Pembrokeshire"
+      }
+    ]
+  }
+}

@@ -194,10 +194,10 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
         <div className="mb-12">
           <div className="text-center mb-8">
             <h1 className="text-4xl lg:text-5xl font-bold text-[#1e3a4c] mb-4">
-              Plan Your Welsh Adventure
+              Multi-Day Road Trips & Itineraries
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Discover expertly crafted itineraries, from weekend getaways to epic multi-day expeditions across Wales.
+              We&apos;ve reviewed the best, and bring you fantastic plans that are editable and shareable. From weekend getaways to epic multi-day expeditions across Wales.
             </p>
           </div>
 

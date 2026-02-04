@@ -88,43 +88,43 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, regio
             </div>
           )}
           
-          {/* Toggle Controls */}
-          <div className="bg-white p-2 rounded-xl shadow-sm border border-gray-200 flex flex-wrap sm:flex-nowrap gap-2">
+          {/* Alternative views */}
+          <div className="flex flex-wrap items-center gap-4 text-sm">
+            <span className="text-gray-400 font-medium">View:</span>
             <button 
                 onClick={() => setMode("standard")}
                 className={clsx(
-                    "flex-1 py-2 px-4 rounded-lg text-sm font-bold transition-all flex items-center justify-center gap-2",
+                    "font-semibold transition-colors",
                     mode === "standard" 
-                        ? "bg-[#1e3a4c] text-white shadow-md" 
-                        : "text-gray-600 hover:bg-gray-100"
+                        ? "text-[#1e3a4c] underline underline-offset-4" 
+                        : "text-gray-500 hover:text-[#1e3a4c]"
                 )}
             >
-                <Star className="w-4 h-4" />
-                Standard
+                Standard itinerary
             </button>
+            <span className="text-gray-300">|</span>
             <button 
                 onClick={() => setMode("wet")}
                 className={clsx(
-                    "flex-1 py-2 px-4 rounded-lg text-sm font-bold transition-all flex items-center justify-center gap-2",
+                    "font-semibold transition-colors",
                     mode === "wet" 
-                        ? "bg-blue-600 text-white shadow-md" 
-                        : "text-gray-600 hover:bg-gray-100"
+                        ? "text-blue-600 underline underline-offset-4" 
+                        : "text-gray-500 hover:text-blue-600"
                 )}
             >
-                <CloudRain className="w-4 h-4" />
-                Wet Weather
+                Wet weather alternative
             </button>
+            <span className="text-gray-300">|</span>
             <button 
                 onClick={() => setMode("budget")}
                 className={clsx(
-                    "flex-1 py-2 px-4 rounded-lg text-sm font-bold transition-all flex items-center justify-center gap-2",
+                    "font-semibold transition-colors",
                     mode === "budget" 
-                        ? "bg-green-600 text-white shadow-md" 
-                        : "text-gray-600 hover:bg-gray-100"
+                        ? "text-green-600 underline underline-offset-4" 
+                        : "text-gray-500 hover:text-green-600"
                 )}
             >
-                <PiggyBank className="w-4 h-4" />
-                Budget Friendly
+                Budget alternative
             </button>
         </div>
 
@@ -133,7 +133,12 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, regio
 
         {/* Timeline */}
         <section>
-             <h2 className="text-2xl font-bold text-[#1e3a4c] mb-8">Your Itinerary</h2>
+             <h2 className="text-2xl font-bold text-[#1e3a4c] mb-2">Your Itinerary</h2>
+             {(days.length > 0 || region) && (
+               <p className="text-gray-500 mb-8">
+                 The perfect {days.length} day{days.length !== 1 ? "s" : ""}{region ? ` ${region.name}` : ""} road trip
+               </p>
+             )}
              {stopsByDay.map(day => (
                 <TimelineDay key={day.dayNumber} dayNumber={day.dayNumber} stops={day.stops} mode={mode} basecamp={basecamp} />
              ))}

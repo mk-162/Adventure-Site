@@ -128,22 +128,7 @@ export function ItineraryCard({
               ))}
           </div>
 
-          {/* Price */}
-          {(itinerary.priceEstimateFrom || itinerary.priceEstimateTo) && (
-            <div className="pt-3 border-t border-gray-100 flex items-center justify-between">
-              <span className="text-xs text-gray-500 font-medium">Estimated cost</span>
-              <span className="font-bold text-[#1e3a4c]">
-                {itinerary.priceEstimateFrom && `£${itinerary.priceEstimateFrom}`}
-                {itinerary.priceEstimateFrom &&
-                  itinerary.priceEstimateTo &&
-                  itinerary.priceEstimateFrom !== itinerary.priceEstimateTo &&
-                  ` - `}
-                {itinerary.priceEstimateTo &&
-                  itinerary.priceEstimateFrom !== itinerary.priceEstimateTo &&
-                  `£${itinerary.priceEstimateTo}`}
-              </span>
-            </div>
-          )}
+          {/* Price removed — we don't want to look like we're selling */}
         </div>
       </div>
     </Link>

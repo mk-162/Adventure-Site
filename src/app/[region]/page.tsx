@@ -540,7 +540,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
               </Link>
             </div>
           </aside>
-        </div>
+        </div>}
       </div>
 
       {/* CTA Section */}

@@ -28,15 +28,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     tagsData,
     postsData
   ] = await Promise.all([
-    db.select().from(regions).where(eq(regions.status, 'published')),
-    db.select().from(activities).where(eq(activities.status, 'published')),
-    db.select().from(accommodation).where(eq(accommodation.status, 'published')),
-    db.select().from(events).where(eq(events.status, 'published')),
-    db.select().from(answers).where(eq(answers.status, 'published')),
-    db.select().from(activityTypes),
-    db.select().from(operators).where(eq(operators.claimStatus, 'claimed')),
-    db.select().from(tags),
-    db.select().from(posts).where(eq(posts.status, 'published'))
+    db.select({ slug: regions.slug, createdAt: regions.createdAt }).from(regions).where(eq(regions.status, 'published')),
+    db.select({ slug: activities.slug, createdAt: activities.createdAt }).from(activities).where(eq(activities.status, 'published')),
+    db.select({ slug: accommodation.slug, createdAt: accommodation.createdAt }).from(accommodation).where(eq(accommodation.status, 'published')),
+    db.select({ slug: events.slug, createdAt: events.createdAt }).from(events).where(eq(events.status, 'published')),
+    db.select({ slug: answers.slug, createdAt: answers.createdAt }).from(answers).where(eq(answers.status, 'published')),
+    db.select({ slug: activityTypes.slug }).from(activityTypes),
+    db.select({ slug: operators.slug, createdAt: operators.createdAt }).from(operators).where(eq(operators.claimStatus, 'claimed')),
+    db.select({ slug: tags.slug, createdAt: tags.createdAt }).from(tags),
+    db.select({ slug: posts.slug, createdAt: posts.createdAt, updatedAt: posts.updatedAt }).from(posts).where(eq(posts.status, 'published'))
   ]);
 
   const sitemap: MetadataRoute.Sitemap = [];

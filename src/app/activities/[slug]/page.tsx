@@ -522,9 +522,12 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
               <AdvertiseWidget context={region?.name} />
 
             {/* Contextual Top Tip */}
-            {activity.localTip && (
+            {activityType && (
               <div className="mt-4">
-                <TopTip tip={activity.localTip} context={region?.name || undefined} />
+                <TopTip 
+                  tip={getActivityTip(activityType.slug)} 
+                  context={activityType.name} 
+                />
               </div>
             )}
             </div>
@@ -604,6 +607,26 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
     </div>
     </>
   );
+}
+
+function getActivityTip(activityTypeSlug: string): string {
+  const tips: Record<string, string> = {
+    "coasteering": "Book for morning sessions — the sea is usually calmer and you'll beat the crowds. Bring old trainers you don't mind getting wet.",
+    "hiking": "Start early, especially in summer. Mountain weather changes fast — pack waterproofs even on sunny days. Check the Met Office mountain forecast.",
+    "surfing": "Check Magic Seaweed or Surfline before heading out. Low tide often gives the best beach breaks. Wetsuits essential year-round in Wales.",
+    "mountain-biking": "Trail centres have bike wash stations — use them. Mud in Wales is legendary. Bring a spare tube and basic tools.",
+    "climbing": "Check UKClimbing.com for route conditions. Sea cliffs can be affected by tides — always check tide times at coastal crags.",
+    "kayaking": "Wear layers under your wetsuit/drysuit. River levels matter — check Natural Resources Wales gauge readings before heading out.",
+    "sea-kayaking": "Check wind and swell forecasts. Paddle with a qualified guide if you're new to sea conditions. Wildlife encounters are common!",
+    "caving": "Wear clothes you don't mind ruining. Hard-soled boots are better than wellies. Claustrophobia? Try a beginner cave first — they're more spacious than you'd think.",
+    "wild-swimming": "Check water quality at Surfers Against Sewage. Acclimatise slowly and never swim alone. A bright swim cap makes you visible to boats.",
+    "sup": "Leash to your board ALWAYS, especially in the sea. Start on flat water. Wind picks up in the afternoon — mornings are often glassy.",
+    "zip-lining": "Wear closed-toe shoes and tie back long hair. No loose jewellery. Most zip lines operate rain or shine — waterproofs recommended.",
+    "gorge-walking": "This is genuinely one of the most fun activities in Wales. You WILL get wet, cold, and muddy — embrace it. Wetsuits provided.",
+    "canyoning": "Similar to gorge walking but more technical. Listen carefully to the safety brief. It's harder than it looks but incredibly rewarding.",
+    "trail-running": "Fell running shoes with grip are essential on Welsh terrain. Carry a whistle and emergency shelter for mountain routes.",
+  };
+  return tips[activityTypeSlug] || "Book directly with operators for the best prices — most offer group discounts. Check weather forecasts before heading out.";
 }
 
 function InfoPill({ icon: Icon, label }: { icon: any; label: string }) {

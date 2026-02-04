@@ -38,6 +38,25 @@ export default async function EventsPage() {
       </section>
 
       <EventsFilters events={events} />
+
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <div className="bg-[#f97316] rounded-2xl p-8 sm:p-12 text-center text-white relative overflow-hidden">
+          <div className="relative z-10 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-black mb-4">Organising an event?</h2>
+            <p className="text-lg text-white/90 mb-8">
+              List your race, festival, or workshop on Adventure Wales to reach thousands of outdoor enthusiasts.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="/auth/login"
+                className="bg-[#1e3a4c] hover:bg-[#152a38] text-white font-bold py-3 px-8 rounded-full transition-colors"
+              >
+                List Your Event
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

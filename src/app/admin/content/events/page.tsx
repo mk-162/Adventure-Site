@@ -2,7 +2,8 @@ import { db } from "@/db";
 import { events, regions } from "@/db/schema";
 import { desc, eq } from "drizzle-orm";
 import Link from "next/link";
-import { Calendar, Plus, Edit, Eye, Trash2, MapPin } from "lucide-react";
+import { Calendar, Plus, Edit, Eye, Trash2, MapPin, Star } from "lucide-react";
+import { ImportButton } from "./ImportButton";
 
 async function getEvents() {
   return db
@@ -16,6 +17,8 @@ async function getEvents() {
       location: events.location,
       registrationCost: events.registrationCost,
       regionName: regions.name,
+      isPromoted: events.isPromoted,
+      externalSource: events.externalSource,
     })
     .from(events)
     .leftJoin(regions, eq(events.regionId, regions.id))
@@ -40,13 +43,16 @@ export default async function EventsAdmin() {
           <h1 className="text-2xl font-bold text-gray-900">Events</h1>
           <p className="text-gray-500">{allEvents.length} events</p>
         </div>
-        <Link
-          href="/admin/content/events/new"
-          className="flex items-center gap-2 px-4 py-2 bg-[#f97316] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
-        >
-          <Plus className="h-5 w-5" />
-          Add Event
-        </Link>
+        <div className="flex items-center gap-3">
+          <ImportButton />
+          <Link
+            href="/admin/content/events/new"
+            className="flex items-center gap-2 px-4 py-2 bg-[#f97316] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
+          >
+            <Plus className="h-5 w-5" />
+            Add Event
+          </Link>
+        </div>
       </div>
 
       <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
@@ -54,8 +60,8 @@ export default async function EventsAdmin() {
           <thead className="bg-gray-50 border-b border-gray-100">
             <tr>
               <th className="text-left px-6 py-3 text-sm font-medium text-gray-500">Event</th>
+              <th className="text-left px-6 py-3 text-sm font-medium text-gray-500">Source</th>
               <th className="text-left px-6 py-3 text-sm font-medium text-gray-500">Type</th>
-              <th className="text-left px-6 py-3 text-sm font-medium text-gray-500">When</th>
               <th className="text-left px-6 py-3 text-sm font-medium text-gray-500">Location</th>
               <th className="text-left px-6 py-3 text-sm font-medium text-gray-500">Status</th>
               <th className="text-right px-6 py-3 text-sm font-medium text-gray-500">Actions</th>
@@ -70,18 +76,23 @@ export default async function EventsAdmin() {
                       <Calendar className="h-5 w-5 text-red-600" />
                     </div>
                     <div>
-                      <p className="font-medium text-gray-900">{event.name}</p>
+                      <div className="flex items-center gap-2">
+                        <p className="font-medium text-gray-900">{event.name}</p>
+                        {event.isPromoted && <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />}
+                      </div>
                       {event.registrationCost && (
                         <p className="text-sm text-gray-500">From £{event.registrationCost}</p>
                       )}
                     </div>
                   </div>
                 </td>
+                <td className="px-6 py-4 text-sm text-gray-600">
+                  <span className="bg-gray-100 px-2 py-1 rounded text-xs font-mono">
+                    {event.externalSource || "manual"}
+                  </span>
+                </td>
                 <td className="px-6 py-4 text-sm text-gray-600 capitalize">
                   {event.type || "—"}
-                </td>
-                <td className="px-6 py-4 text-sm text-gray-600">
-                  {event.monthTypical || "—"}
                 </td>
                 <td className="px-6 py-4">
                   <div className="flex items-center gap-1 text-sm text-gray-600">

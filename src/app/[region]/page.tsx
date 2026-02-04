@@ -32,6 +32,7 @@ import {
 import { WeatherWidget } from "@/components/weather/WeatherWidget";
 import { ClimateChart } from "@/components/weather/ClimateChart";
 import { ActivitySeasonGuide } from "@/components/weather/ActivitySeasonGuide";
+import { ThisWeekendWidget } from "@/components/events/ThisWeekendWidget";
 
 interface RegionPageProps {
   params: Promise<{ region: string }>;
@@ -179,6 +180,16 @@ export default async function RegionPage({ params }: RegionPageProps) {
     })),
   ];
   
+  // Filter events for widget
+  const upcomingEvents = mapEntities.events
+    .filter(e => !e.dateStart || new Date(e.dateStart) >= new Date())
+    .sort((a, b) => {
+       if (!a.dateStart) return 1;
+       if (!b.dateStart) return -1;
+       return new Date(a.dateStart).getTime() - new Date(b.dateStart).getTime();
+    })
+    .slice(0, 3);
+
   // Extract structured content from description
   const introText = extractIntro(region.description) || `Discover the adventures waiting for you in ${region.name}.`;
   const proTips = extractProTips(region.description);
@@ -305,6 +316,18 @@ export default async function RegionPage({ params }: RegionPageProps) {
 
             {/* Activity Season Guide */}
             <ActivitySeasonGuide regionSlug={regionSlug} />
+
+            {/* Upcoming Events */}
+            {upcomingEvents.length > 0 && (
+              <section>
+                <ThisWeekendWidget
+                  events={upcomingEvents}
+                  title={`Events in ${region.name}`}
+                  subtitle="Coming Up"
+                  viewAllLink={`/calendar?region=${regionSlug}`}
+                />
+              </section>
+            )}
 
             {/* Top Experiences Grid */}
             {activities.length > 0 && (

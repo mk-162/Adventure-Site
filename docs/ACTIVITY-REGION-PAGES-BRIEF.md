@@ -744,3 +744,419 @@ Begin with the **Tier 1** list (10 combos). Deliver them in this order:
 10. `snowdonia--gorge-walking`
 
 Each one should take focused research. Don't rush — accuracy and specificity is what makes these pages rank. Generic content is worthless.
+
+---
+---
+
+# Part 2: "Best Of" List Pages
+
+## The Concept
+
+Separate ranked list pages that target "best X in Y" keywords. These are a different search intent from the combo hub pages — people searching "best hikes in Snowdonia" want a ranked, opinionated list, not a comprehensive directory.
+
+**URL structure**: `/{region}/best-{activity}` or `/{region}/best-{noun-plural}`
+- `/snowdonia/best-hikes`
+- `/pembrokeshire/best-surf-spots`
+- `/gower/best-beaches`
+- `/brecon-beacons/best-walks`
+- `/snowdonia/best-scrambles`
+- `/anglesey/best-kayaking-spots`
+
+These pages **link heavily** to the combo pages (and vice versa), creating a tight internal link cluster around each activity+region topic.
+
+## How They Differ From Combo Pages
+
+| | Combo Page | Best Of List |
+|--|-----------|-------------|
+| **URL** | `/{region}/things-to-do/{activity}` | `/{region}/best-{activity}` |
+| **Intent** | Comprehensive guide ("tell me everything") | Ranked list ("what's the best?") |
+| **Keyword** | "hiking in snowdonia" | "best hikes in snowdonia" |
+| **Tone** | Authoritative resource | Opinionated, ranked, "our picks" |
+| **Content** | 2,000-4,000 words, multiple sections | 1,500-2,500 words, tight list format |
+| **Operators/shops** | Full directory | Light — link to combo page |
+| **Updates** | Seasonal | Annual "Updated 2025" refresh |
+
+They complement each other. The combo page is the hub. The best-of list is the viral, shareable, snackable version that drives traffic into the hub.
+
+## Priority Lists (Create These First)
+
+### Tier 1 — Highest Search Volume
+
+| URL | Target Keyword | Est. Monthly UK Searches |
+|-----|---------------|-------------------------|
+| `/snowdonia/best-hikes` | "best hikes in snowdonia" | 5,000+ |
+| `/snowdonia/best-walks` | "best walks in snowdonia" | 8,000+ |
+| `/pembrokeshire/best-beaches` | "best beaches in pembrokeshire" | 6,000+ |
+| `/pembrokeshire/best-surf-spots` | "best surf spots pembrokeshire" | 2,000+ |
+| `/brecon-beacons/best-walks` | "best walks brecon beacons" | 4,000+ |
+| `/snowdonia/best-scrambles` | "best scrambles in snowdonia" | 1,500+ |
+| `/gower/best-beaches` | "best beaches in gower" | 3,000+ |
+| `/pembrokeshire/best-coasteering` | "best coasteering pembrokeshire" | 800+ |
+| `/snowdonia/best-mountain-bike-trails` | "best mountain bike trails snowdonia" | 1,500+ |
+| `/anglesey/best-beaches` | "best beaches anglesey" | 2,000+ |
+
+### Tier 2 — Strong Long Tail
+
+| URL | Target Keyword |
+|-----|---------------|
+| `/snowdonia/best-easy-walks` | "easy walks snowdonia" |
+| `/snowdonia/best-family-walks` | "family walks snowdonia" |
+| `/snowdonia/best-dog-walks` | "dog friendly walks snowdonia" |
+| `/snowdonia/best-waterfalls` | "best waterfalls snowdonia" |
+| `/snowdonia/best-wild-swimming` | "wild swimming snowdonia" |
+| `/pembrokeshire/best-walks` | "best walks pembrokeshire" |
+| `/pembrokeshire/best-kayaking-spots` | "best kayaking pembrokeshire" |
+| `/brecon-beacons/best-waterfalls` | "best waterfalls brecon beacons" |
+| `/brecon-beacons/best-easy-walks` | "easy walks brecon beacons" |
+| `/gower/best-walks` | "best walks gower" |
+| `/gower/best-surf-spots` | "best surf spots gower" |
+| `/anglesey/best-walks` | "best walks anglesey" |
+| `/wye-valley/best-walks` | "best walks wye valley" |
+| `/snowdonia/best-lakes` | "best lakes snowdonia" |
+| `/wales/best-adventures` | "best adventures in wales" |
+
+### Tier 3 — Niche Authority
+
+| URL | Target Keyword |
+|-----|---------------|
+| `/snowdonia/best-winter-walks` | "winter walks snowdonia" |
+| `/snowdonia/best-sunset-spots` | "best sunset spots snowdonia" |
+| `/pembrokeshire/best-hidden-beaches` | "hidden beaches pembrokeshire" |
+| `/snowdonia/best-camping-spots` | "wild camping snowdonia" |
+| `/brecon-beacons/best-stargazing` | "stargazing brecon beacons" |
+| `/pembrokeshire/best-rock-pools` | "rock pooling pembrokeshire" |
+| `/snowdonia/best-rainy-day-activities` | "rainy day activities snowdonia" |
+| `/gower/best-rock-climbing` | "rock climbing gower" |
+| `/wales/best-zip-lines` | "best zip lines wales" |
+| `/wales/best-gorge-walking` | "gorge walking wales" |
+
+---
+
+## Content Structure Per List Page
+
+### 1. Hero Section
+- **Hero image**: Stunning landscape of the #1 pick
+- **H1**: "X Best {Activity Spots} in {Region} (2025)"
+  - Example: "10 Best Hikes in Snowdonia (2025)"
+- **Strapline**: Opinionated one-liner
+  - "From Snowdon's summit to secret cwm walks — our honest picks."
+- **Author byline**: "By Adventure Wales | Updated [Month] 2025"
+- **Quick jump links**: Numbered anchor links to each entry
+
+### 2. Introduction (150-250 words)
+Short, punchy, sets the scene.
+- Why we made this list
+- How we picked them (we've done them / our criteria)
+- Quick summary of the range (easy to expert, free to £X)
+- Who this list is for
+
+### 3. The Ranked List (the content)
+
+**Each entry — this is the star of the page:**
+
+| Field | Description | Required |
+|-------|-------------|----------|
+| Rank | #1, #2, etc. | ✅ |
+| Name | "Crib Goch" | ✅ |
+| One-line verdict | "The most exhilarating ridge walk in Wales — if you've got the nerve." | ✅ |
+| Image | Specific to this spot, landscape, 1200×800 | ✅ |
+| Why it made the list | 2-3 sentences, honest and specific | ✅ |
+| Key stats | Difficulty, duration, distance, elevation, cost | ✅ |
+| Best for | "Experienced scramblers wanting an adrenaline hit" | ✅ |
+| Skip if | "You don't like exposure or are nervous on scrambles" | ✅ |
+| Insider tip | One non-obvious tip | ✅ |
+| Season | When to go | ✅ |
+| Parking | Where + cost | ✅ |
+| Start point | Lat/lng | ✅ |
+| Link to full guide | → combo page or activity page | ✅ |
+| Operator | If guided version available, link to operator | If applicable |
+| YouTube video ID | Relevant video for this specific entry | If available |
+
+**Ranking criteria** (state these on the page for transparency):
+- Quality of experience
+- Scenery/drama
+- Accessibility (variety of difficulty levels across the list)
+- Unique factor (what makes it special vs alternatives)
+- Practical factors (parking, facilities, safety)
+
+**List structure rules:**
+- #1 should be the genuinely best, not the most famous
+- Mix difficulties — don't make it all expert-level
+- Include at least 1-2 "hidden gem" picks that aren't in every other list
+- Include at least 1 "accessible/beginner" option
+- Be honest about downsides — "busy", "hard to park", "overrated on weekends"
+- The ranking should be OPINIONATED — that's what makes it shareable
+
+### 4. Comparison Table
+A quick-scan summary table below the list:
+
+| # | Name | Difficulty | Duration | Cost | Best For |
+|---|------|-----------|----------|------|----------|
+| 1 | Crib Goch | Expert | 7h | Free | Adrenaline seekers |
+| 2 | Tryfan North Ridge | Challenging | 5h | Free | Confident scramblers |
+| ... | | | | | |
+
+### 5. Map
+Interactive map showing all entries with numbered pins.
+
+### 6. "How We Picked These" (transparency box)
+2-3 sentences explaining criteria. Builds trust.
+- "We've hiked all of these routes ourselves..."
+- "Our rankings factor in scenery, challenge, accessibility, and how busy they get..."
+
+### 7. Seasonal Recommendations
+Quick callout box:
+- **Spring picks**: #3, #7 (wildflowers, waterfalls flowing)
+- **Summer picks**: #1, #2 (long daylight, dry rock)
+- **Autumn picks**: #5, #8 (colours, quieter)
+- **Winter picks**: #4, #9 (dramatic, fewer crowds) — with warnings
+
+### 8. Related Content Links
+- Link to combo page: "Full guide to {activity} in {region} →"
+- Link to related lists: "See also: Best Easy Walks in Snowdonia →"
+- Link to relevant itineraries
+- Link to gear guide
+
+### 9. FAQs (3-5)
+Different from the combo page FAQs — more "best of" focused:
+- "What's the best hike in Snowdonia for beginners?"
+- "Which Snowdonia walk has the best views?"
+- "Can you hike Snowdon with kids?"
+
+---
+
+## Data Format
+
+**Filename**: `data/best-lists/{region}--best-{slug}.json`
+
+Example: `data/best-lists/snowdonia--best-hikes.json`
+
+```json
+{
+  "regionSlug": "snowdonia",
+  "slug": "best-hikes",
+  "urlPath": "/snowdonia/best-hikes",
+  "title": "10 Best Hikes in Snowdonia",
+  "metaTitle": "10 Best Hikes in Snowdonia (2025) — Honest Picks | Adventure Wales",
+  "metaDescription": "Our ranked picks for the best hikes in Snowdonia. From easy valley walks to expert scrambles. Tried, tested, honestly reviewed.",
+  "h1": "10 Best Hikes in Snowdonia (2025)",
+  "strapline": "From Snowdon's summit to secret cwm walks — our honest picks, ranked.",
+  "heroImage": "/images/best-lists/snowdonia-best-hikes-hero.jpg",
+  "heroAlt": "View from Crib Goch ridge at sunrise",
+  "updatedDate": "2025-07",
+  "introduction": "Markdown text (150-250 words)...",
+  "rankingCriteria": "We've hiked every route on this list. Rankings factor in scenery, challenge, accessibility, parking, and how busy they get on a typical weekend. We favour routes that reward the effort.",
+  "comboPageLink": "/snowdonia/things-to-do/hiking",
+  "keywords": {
+    "primary": "best hikes in snowdonia",
+    "secondary": ["best walks snowdonia", "top hikes snowdonia", "snowdonia best routes"],
+    "longTail": [
+      "best easy hikes snowdonia",
+      "best snowdonia hikes for beginners",
+      "hardest hikes snowdonia",
+      "best snowdonia walks with views",
+      "best short walks snowdonia",
+      "best snowdonia ridge walks"
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Crib Goch",
+      "slug": "crib-goch",
+      "verdict": "The most exhilarating ridge walk in Wales — if you've got the nerve.",
+      "image": "/images/best-lists/snowdonia-best-hikes-crib-goch.jpg",
+      "imageAlt": "The knife-edge ridge of Crib Goch with clouds below",
+      "whyItMadeTheList": "Nothing else in Wales comes close to the exposure and drama of Crib Goch. It's a genuine Grade 1 scramble with a knife-edge ridge, sheer drops on both sides, and views that make your legs wobble for different reasons. On a clear day it's transcendent. On a cloudy day it's terrifying. Either way, unforgettable.",
+      "difficulty": "Expert",
+      "duration": "6-7 hours (Snowdon Horseshoe loop)",
+      "distance": "12km",
+      "elevationGain": "1,050m",
+      "cost": "Free",
+      "bestFor": "Experienced scramblers with a head for heights",
+      "skipIf": "You don't like exposure, have vertigo, or the weather is poor. Seriously — people die on this ridge in bad conditions.",
+      "insiderTip": "Start from Pen-y-Pass at 6am in summer to have the ridge to yourself. Once the crowds arrive, the bottlenecks on the pinnacles are miserable.",
+      "season": "May–September (dry rock essential)",
+      "parking": {
+        "location": "Pen-y-Pass",
+        "cost": "£10/day",
+        "notes": "Fills by 7am in summer. Use Sherpa bus from Nant Peris instead.",
+        "lat": 53.0622,
+        "lng": -4.0234
+      },
+      "startPoint": {
+        "name": "Pen-y-Pass",
+        "lat": 53.0622,
+        "lng": -4.0234
+      },
+      "operatorSlug": "mountainxperience",
+      "guidedOption": "MountainXperience run guided Crib Goch scrambles from £55-£75pp",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": "snowdon-crib-goch"
+    },
+    {
+      "rank": 2,
+      "name": "Tryfan North Ridge",
+      "slug": "tryfan-north-ridge",
+      "verdict": "The best scramble in Snowdonia that isn't Crib Goch. More fun, less terrifying.",
+      "image": "/images/best-lists/snowdonia-best-hikes-tryfan.jpg",
+      "imageAlt": "Scrambling up the rocky North Ridge of Tryfan",
+      "whyItMadeTheList": "Tryfan is a proper mountain that looks like a mountain should — a rocky pyramid shooting straight up from the Ogwen Valley. The North Ridge scramble is hands-on from start to finish, with the famous Adam and Eve stones at the summit. Less exposed than Crib Goch but arguably more fun.",
+      "difficulty": "Challenging",
+      "duration": "4-5 hours",
+      "distance": "4km",
+      "elevationGain": "670m",
+      "cost": "Free",
+      "bestFor": "People who want to use their hands without genuine peril",
+      "skipIf": "You're not comfortable on steep, rocky ground. No path — it's all rock.",
+      "insiderTip": "Jump between Adam and Eve on the summit for bragging rights. Or don't — the gap is wider than it looks and the consequence is real.",
+      "season": "April–October",
+      "parking": {
+        "location": "Lay-by on A5 near Llyn Ogwen",
+        "cost": "Free (limited) or Ogwen car park £5",
+        "notes": "The free lay-bys fill fast. Arrive before 8am on weekends.",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "startPoint": {
+        "name": "A5 lay-by, Ogwen Valley",
+        "lat": 53.1186,
+        "lng": -4.0024
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": "tryfan-north-ridge"
+    }
+  ],
+  "comparisonTable": true,
+  "seasonalPicks": {
+    "spring": { "entries": [3, 7], "note": "Wildflowers and flowing waterfalls" },
+    "summer": { "entries": [1, 2], "note": "Long days, dry rock for scrambles" },
+    "autumn": { "entries": [5, 8], "note": "Colour, quiet trails, atmospheric mist" },
+    "winter": { "entries": [4, 9], "note": "Dramatic but check conditions — ice changes everything" }
+  },
+  "faqs": [
+    {
+      "question": "What's the best hike in Snowdonia for beginners?",
+      "answer": "Cwm Idwal (#5 on our list) is the best starting point. It's relatively short, well-marked, and the scenery is dramatic without the mountain exposure. If you want a summit, the Llanberis Path up Snowdon is manageable for most fit people."
+    },
+    {
+      "question": "Which Snowdonia walk has the best views?",
+      "answer": "Crib Goch (#1) is unbeatable for drama, but it's expert-only. For views that everyone can enjoy, Moel Siabod (#6) gives you a 360° panorama of all the major peaks for much less effort."
+    }
+  ],
+  "relatedLists": [
+    { "slug": "/snowdonia/best-scrambles", "label": "Best Scrambles in Snowdonia" },
+    { "slug": "/snowdonia/best-easy-walks", "label": "Best Easy Walks in Snowdonia" },
+    { "slug": "/brecon-beacons/best-walks", "label": "Best Walks in Brecon Beacons" }
+  ]
+}
+```
+
+---
+
+## Image Requirements for Best-Of Lists
+
+### Hero Image (1 per list)
+- **Size**: 1920×1080, JPEG
+- **Naming**: `/images/best-lists/{region}-best-{slug}-hero.jpg`
+- **Content**: The #1 pick in all its glory
+
+### Entry Images (1 per entry)
+- **Size**: 1200×800, JPEG, <200KB
+- **Naming**: `/images/best-lists/{region}-best-{slug}-{entry-slug}.jpg`
+- **Content**: The specific spot. Landscape orientation. Show what makes it special.
+
+---
+
+## Internal Linking Strategy (Combo + Best-Of Cluster)
+
+This is how the pages work together to dominate search:
+
+```
+                    ┌─────────────────────┐
+                    │   Region Page        │
+                    │  /snowdonia          │
+                    └──────┬──────────────┘
+                           │
+              ┌────────────┼────────────┐
+              ▼            ▼            ▼
+     ┌────────────┐ ┌────────────┐ ┌────────────┐
+     │ Combo Page │ │ Combo Page │ │ Combo Page │
+     │ /hiking    │ │ /climbing  │ │ /mtb       │
+     └────┬───────┘ └────┬───────┘ └────┬───────┘
+          │              │              │
+     ┌────┼────┐    ┌────┼────┐         │
+     ▼         ▼    ▼         ▼         ▼
+ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────────┐
+ │Best    │ │Best    │ │Best    │ │Best MTB    │
+ │Hikes   │ │Easy   │ │Scrambles│ │Trails      │
+ └───┬────┘ │Walks   │ └────────┘ └────────────┘
+     │      └────────┘
+     ▼
+ ┌────────────────┐
+ │ Activity Pages │  (individual bookable experiences)
+ │ /activities/*  │
+ └────────────────┘
+```
+
+**Every best-of list links to:**
+- Its parent combo page (prominent "Full Guide →" link)
+- Each individual activity/operator page
+- Related best-of lists (same region or same activity)
+- Relevant journal posts
+
+**Every combo page links to:**
+- All its child best-of lists
+- All individual activity pages
+- Related combo pages
+
+**This creates topical clusters** that signal to Google: "this site is THE authority on hiking in Snowdonia".
+
+---
+
+## Delivery Checklist Per Best-Of List
+
+### Content
+- [ ] JSON file in `data/best-lists/{region}--best-{slug}.json`
+- [ ] 7-15 ranked entries with full detail
+- [ ] Each entry has: verdict, why it made the list, key stats, insider tip, best for, skip if
+- [ ] Introduction 150-250 words
+- [ ] Ranking criteria stated transparently
+- [ ] 3-5 FAQs targeting "best X" keywords
+- [ ] Seasonal recommendations
+- [ ] Honest downsides mentioned (not everything is "amazing")
+
+### Media
+- [ ] Hero image — 1920×1080
+- [ ] 1 image per entry — 1200×800, <200KB
+- [ ] All images have alt text
+- [ ] 1-3 YouTube video IDs (optional but valuable)
+
+### SEO
+- [ ] Primary keyword: "best {X} in {region}"
+- [ ] Secondary + long-tail keywords defined
+- [ ] Meta title with "(2025)" and under 60 chars
+- [ ] Meta description under 155 chars
+- [ ] Links to combo page prominently
+- [ ] Links from combo page back to this list
+
+### Links
+- [ ] Link to parent combo page
+- [ ] Link to related best-of lists
+- [ ] Link to individual activity/operator pages where relevant
+- [ ] Combo page updated to link to this list
+
+---
+
+## Production Order
+
+**Phase 1**: Combo pages (Tier 1 — 10 pages)
+**Phase 2**: Best-of lists for those same combos (Tier 1 — 10 lists)
+**Phase 3**: Tier 2 combos + Tier 2 best-of lists
+**Phase 4**: Niche/long-tail lists (Tier 3)
+
+Start combo pages first — they're the hubs. Then layer best-of lists on top to capture the "best X" keywords and drive traffic into the hubs.

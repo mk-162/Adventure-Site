@@ -68,7 +68,7 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
 
         {/* Content */}
-        <div className="relative z-10 w-full px-4 sm:px-6 pb-20 sm:pb-16 lg:pb-16">
+        <div className="relative z-10 w-full px-4 sm:px-6 pb-28 sm:pb-20 lg:pb-16">
           <div className="max-w-7xl mx-auto">
             <div className="max-w-3xl">
               <span className="inline-block px-4 py-1.5 bg-[#f97316] text-white text-sm font-bold rounded-full mb-4 shadow-lg">
@@ -87,7 +87,7 @@ export function HeroSection() {
                   href="/itineraries"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-[#f97316] hover:bg-[#f97316]/90 text-white font-bold rounded-2xl transition-all shadow-xl hover:shadow-2xl hover:scale-105"
                 >
-                  Find Your Adventure
+                  Browse Itineraries
                   <ArrowRight className="h-5 w-5" />
                 </Link>
                 <Link
@@ -100,7 +100,7 @@ export function HeroSection() {
             </div>
 
             {/* Stats bar */}
-            <div className="mt-6 sm:mt-10 flex gap-6 sm:gap-8 lg:gap-12">
+            <div className="mt-6 sm:mt-10 hidden sm:flex gap-6 sm:gap-8 lg:gap-12">
               {stats.map(({ icon: Icon, value, label }) => (
                 <div key={label} className="flex items-center gap-3">
                   <div className="p-2 bg-white/10 rounded-xl backdrop-blur-sm">

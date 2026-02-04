@@ -55,7 +55,7 @@ function formatTrustSignals(signals: any): { icon: string; label: string }[] {
     formatted.push({ icon: "history", label: `${years}+ Years` });
   }
   if (signals.localExperts) {
-    formatted.push({ icon: "users", label: "Local Experts" });
+    formatted.push({ icon: "users", label: "Local Providers" });
   }
   
   return formatted;

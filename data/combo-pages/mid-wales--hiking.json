@@ -1,0 +1,1000 @@
+{
+  "regionSlug": "mid-wales",
+  "activityTypeSlug": "hiking",
+  "title": "Hiking in Mid Wales",
+  "strapline": "Conquer peaks, wander valleys, and reward yourself with epic pub lunches after a day on the trails.",
+  "metaTitle": "Hiking Mid Wales: Trails, Peaks & Pubs | Adventure Wales",
+  "metaDescription": "Discover the best hiking mid wales has to offer, from Plynlimon's summit to the stunning Elan Valley. Plan your adventure now!",
+  "heroAlt": "Panoramic view of hikers on a ridge in the Cambrian Mountains, Mid Wales.",
+  "introduction": "Mid Wales – it’s the forgotten heart of Wales, and in my humble opinion, the best kept secret for serious hiking. Forget the crowds of Snowdonia, the relative tameness of the Brecon Beacons. Mid Wales offers a raw, untamed beauty that rewards those willing to put in the effort. We're talking about the Cambrian Mountains – a sprawling wilderness of rolling hills, hidden valleys, and breathtaking vistas. Plynlimon, the source of both the Severn and the Wye, dominates the skyline, offering challenging climbs and unparalleled views. But it’s not just about the big peaks. Glyndŵr's Way slices through this landscape, providing a long-distance ramble that showcases the best of what Mid Wales has to offer. The Elan Valley, with its dramatic reservoirs and Victorian dams, offers easier, more accessible hiking options for families and those looking for a gentler experience.\n\nOf course, it's not all sunshine and roses. The weather can be unpredictable, navigation can be tricky in the remote areas, and some of the trails are seriously rugged. But that's part of the appeal, isn't it? You'll earn those pub lunches and that stunning sunset view. Mid Wales hiking is best suited for experienced hikers comfortable with map and compass or GPS navigation, but also has gentler options for families and beginners. If you're after manicured paths and hordes of tourists, look elsewhere. But if you crave a true wilderness experience, combined with a hefty dose of Welsh hospitality, then hiking mid wales is calling your name.",
+  "bestSeason": "May-October",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Plynlimon Summit via the Severn Way",
+      "slug": "plynlimon-summit-severn-way",
+      "description": "Ascend Plynlimon, the highest point in Mid Wales, following a section of the Severn Way. This challenging hike rewards you with panoramic views stretching across the Cambrian Mountains. The path can be boggy in places, so good waterproof boots are essential.",
+      "difficulty": "Challenging",
+      "duration": "6-7 hours round trip",
+      "distance": "14.5km",
+      "elevationGain": "752m",
+      "bestFor": "Experienced hikers seeking a challenging climb and stunning views.",
+      "notSuitableFor": "Beginners, those with mobility issues, or anyone afraid of heights.",
+      "bestSeason": "May-September",
+      "parking": "Limited free parking at the Nant y Moch Reservoir car park (SN750880). Arrive early, especially on weekends.",
+      "startPoint": {
+        "name": "Nant y Moch Reservoir Car Park",
+        "lat": 52.504,
+        "lng": -3.753
+      },
+      "estimatedCost": "Free (parking free)",
+      "operatorSlug": null,
+      "insiderTip": "The path can get extremely boggy after rain. Check the forecast and pack gaiters. An alternative (slightly longer) route up Plynlimon is from Eisteddfa Gurig, which is less boggy."
+    },
+    {
+      "name": "Elan Valley Trail",
+      "slug": "elan-valley-trail",
+      "description": "A relatively easy, mostly flat trail following the Elan Valley reservoirs. Enjoy stunning views of the Victorian dams and surrounding countryside. This is perfect for a leisurely stroll or a family-friendly hike.",
+      "difficulty": "Easy",
+      "duration": "2-4 hours (depending on section)",
+      "distance": "Varies depending on section (up to 18km one way)",
+      "elevationGain": null,
+      "bestFor": "Families, beginners, and those looking for a gentle walk with beautiful scenery.",
+      "notSuitableFor": "Those seeking a challenging mountain hike.",
+      "bestSeason": "Year-round",
+      "parking": "Multiple car parks along the Elan Valley, including at the visitor centre (LD6 5HP) and near the dams. Charges apply in some car parks.",
+      "startPoint": {
+        "name": "Elan Valley Visitor Centre",
+        "lat": 52.264,
+        "lng": -3.542
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Hire a bike at the Elan Valley Visitor Centre to cover more ground. Stop for refreshments at the Pen y Garreg Dam Tea Room."
+    },
+    {
+      "name": "Devil's Bridge Falls Walk",
+      "slug": "devils-bridge-falls-walk",
+      "description": "A short but steep walk down to the famous Devil's Bridge waterfalls. Explore the three bridges, admire the cascading water, and enjoy the ancient woodland. Be prepared for steps and some scrambling.",
+      "difficulty": "Moderate",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Those seeking a scenic and historic walk with a touch of adventure.",
+      "notSuitableFor": "Those with mobility issues or a fear of heights.",
+      "bestSeason": "Year-round, but can be slippery in wet weather.",
+      "parking": "Pay and display car park at Devil's Bridge (SY23 3JW). Can get busy, especially in summer.",
+      "startPoint": {
+        "name": "Devil's Bridge Car Park",
+        "lat": 52.421,
+        "lng": -3.832
+      },
+      "estimatedCost": "£5 (parking and entry fee)",
+      "operatorSlug": null,
+      "insiderTip": "Visit early in the morning or late in the afternoon to avoid the crowds. The Hafod Hotel nearby is a great place for a post-walk drink with a view."
+    },
+    {
+      "name": "Glyndwr's Way Section: Machynlleth to Llanidloes",
+      "slug": "glyndwrs-way-machynlleth-llanidloes",
+      "description": "Hike a section of the challenging Glyndwr's Way long-distance path. This section offers stunning views of the Dyfi Valley and the Cambrian Mountains. Expect varied terrain, including forests, moorland, and farmland.",
+      "difficulty": "Challenging",
+      "duration": "2 days (overnight in accommodation or camping)",
+      "distance": "30km",
+      "elevationGain": "Varies greatly",
+      "bestFor": "Experienced hikers seeking a multi-day adventure with varied terrain.",
+      "notSuitableFor": "Beginners, those unprepared for overnight hiking.",
+      "bestSeason": "May-September",
+      "parking": "Park in Machynlleth (SY20 8AE) and arrange transport back from Llanidloes (SY18 6BN), or vice versa.",
+      "startPoint": {
+        "name": "Machynlleth Town Centre",
+        "lat": 52.589,
+        "lng": -3.837
+      },
+      "estimatedCost": "Free (transport costs vary)",
+      "operatorSlug": null,
+      "insiderTip": "Book accommodation in advance, especially during peak season. Consider using a baggage transfer service to lighten your load."
+    },
+    {
+      "name": "Strata Florida Abbey Walk",
+      "slug": "strata-florida-abbey-walk",
+      "description": "A gentle walk around the ruins of Strata Florida Abbey, a significant historical site. Explore the abbey grounds, learn about its history, and enjoy the peaceful surroundings. Extend your walk along the River Teifi.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "History buffs, families, and those seeking a relaxed walk in a scenic location.",
+      "notSuitableFor": "Those seeking a challenging hike.",
+      "bestSeason": "Year-round",
+      "parking": "Free parking at Strata Florida Abbey (SY25 6ES).",
+      "startPoint": {
+        "name": "Strata Florida Abbey Car Park",
+        "lat": 52.229,
+        "lng": -3.855
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Visit the nearby village of Pontrhydfendigaid for refreshments after your walk. The local pub offers a great atmosphere."
+    },
+    {
+      "name": "Hafren Forest Waterfall Trail",
+      "slug": "hafren-forest-waterfall-trail",
+      "description": "Explore the Hafren Forest on this circular trail that takes you past several waterfalls. Enjoy the lush woodland scenery and the sound of rushing water. The trail can be muddy in places.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": "Approximately 8km",
+      "elevationGain": null,
+      "bestFor": "Those seeking a scenic forest walk with waterfalls.",
+      "notSuitableFor": "Those with limited mobility due to uneven terrain.",
+      "bestSeason": "Year-round, but best in spring or autumn.",
+      "parking": "Free parking at the Hafren Forest car park (SN870860).",
+      "startPoint": {
+        "name": "Hafren Forest Car Park",
+        "lat": 52.531,
+        "lng": -3.634
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Wear waterproof footwear, as the trail can be muddy, especially after rain. Keep an eye out for wildlife, including red kites."
+    },
+    {
+      "name": "Claerwen Reservoir Circuit",
+      "slug": "claerwen-reservoir-circuit",
+      "description": "A longer, more challenging hike around the perimeter of Claerwen Reservoir. Experience remote landscapes, stunning views, and a sense of solitude. Navigation skills are recommended.",
+      "difficulty": "Challenging",
+      "duration": "6-8 hours",
+      "distance": "Approx. 20km",
+      "elevationGain": "Moderate",
+      "bestFor": "Experienced hikers seeking a remote and challenging adventure.",
+      "notSuitableFor": "Beginners, those without good navigation skills.",
+      "bestSeason": "May-September",
+      "parking": "Limited parking at various points around the reservoir. Be considerate of local residents.",
+      "startPoint": {
+        "name": "Claerwen Dam",
+        "lat": 52.284,
+        "lng": -3.485
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Bring plenty of water and snacks, as there are no facilities on the route. Be prepared for changeable weather conditions."
+    },
+    {
+      "name": "Cambrian Way Section: Cwmystwyth to Pontarfynach",
+      "slug": "cambrian-way-cwmystwyth-pontarfynach",
+      "description": "A stunning and challenging section of the Cambrian Way, showcasing the wild beauty of Mid Wales. Expect rugged terrain, exposed ridges, and far-reaching views. Good navigation skills are essential.",
+      "difficulty": "Expert",
+      "duration": "6-8 hours",
+      "distance": "Approx 15km",
+      "elevationGain": "Significant, with steep ascents and descents",
+      "bestFor": "Experienced and very fit hikers with excellent navigation skills.",
+      "notSuitableFor": "Beginners, those with a fear of heights, or those unprepared for challenging terrain.",
+      "bestSeason": "June-September (avoid in poor weather)",
+      "parking": "Park in Cwmystwyth (SN789730) and arrange transport from Pontarfynach (Devil's Bridge), or vice versa.",
+      "startPoint": {
+        "name": "Cwmystwyth Village",
+        "lat": 52.346,
+        "lng": -3.767
+      },
+      "estimatedCost": "Free (transport costs vary)",
+      "operatorSlug": null,
+      "insiderTip": "This is a serious hike. Check the weather forecast thoroughly before setting off, and be prepared for rapid changes. Carry a map, compass, and GPS, and know how to use them."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The weather in Mid Wales can be highly unpredictable, even in summer. Expect sunshine, rain, and wind, sometimes all in the same day! Mountain weather can change rapidly, so be prepared for all conditions. Always check the forecast before setting off and be ready to turn back if the weather deteriorates.",
+    "weatherLinks": [
+      {
+        "name": "Met Office",
+        "url": "https://www.metoffice.gov.uk/"
+      },
+      {
+        "name": "Mountain Weather Information Service (MWIS)",
+        "url": "https://www.mwis.org.uk/"
+      }
+    ],
+    "gearChecklist": [
+      "Waterproof jacket and trousers - essential for unpredictable weather.",
+      "Sturdy hiking boots - with good ankle support for uneven terrain.",
+      "Map and compass (or GPS) - even on marked trails, navigation skills are crucial.",
+      "Headtorch - in case of unexpected delays or early starts.",
+      "First-aid kit - for minor injuries and emergencies.",
+      "Plenty of water and snacks - energy levels can drop quickly on long hikes.",
+      "Sunscreen and hat - protect yourself from the sun, even on cloudy days.",
+      "Warm layers - the temperature can drop quickly at higher elevations.",
+      "Fully charged mobile phone - but don't rely on signal in remote areas.",
+      "Whistle - for attracting attention in an emergency."
+    ],
+    "gearHire": [
+      {
+        "name": "Summit Cycles & Outdoor",
+        "location": "Aberystwyth",
+        "url": "https://summitcycles.co.uk/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "4.5h",
+          "route": "Via M4 and A470"
+        },
+        {
+          "from": "Manchester",
+          "duration": "3h",
+          "route": "Via M6 and A470"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "2.5h",
+          "route": "Via M5 and A44"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "2h",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "Main train stations are Aberystwyth, Machynlleth and Newtown. Local bus services connect these towns with smaller villages, but services can be infrequent, particularly on Sundays. The TrawsCymru T1 service runs along the A470 through Mid Wales.",
+      "parkingTips": "Parking can be limited at popular trailheads, especially during peak season. Arrive early or consider alternative starting points. Be aware of parking restrictions and fees."
+    },
+    "safety": "Mid Wales is a remote and mountainous area. Ensure you are properly equipped and prepared for all weather conditions. Tell someone your route and expected return time. Be aware of livestock grazing in the area. In an emergency, dial 999 and ask for mountain rescue. Mobile phone signal can be unreliable in remote areas."
+  },
+  "faqs": [
+    {
+      "question": "What is the best time of year for hiking Mid Wales?",
+      "answer": "May to September generally offers the best weather, with longer daylight hours and warmer temperatures. However, be prepared for rain at any time of year. July and August are the busiest months, so expect more crowds."
+    },
+    {
+      "question": "Are there any guided hiking tours available in Mid Wales?",
+      "answer": "Yes, several companies offer guided hiking tours, including AberAdventures who also do kayaking and surfing! These are a good option for beginners or those unfamiliar with the area."
+    },
+    {
+      "question": "What should I wear for hiking in Mid Wales?",
+      "answer": "Wear layers of clothing that you can easily adjust to changing weather conditions. Waterproof jacket and trousers are essential, along with sturdy hiking boots. A hat and gloves are also recommended, even in summer."
+    },
+    {
+      "question": "Is it safe to hike alone in Mid Wales?",
+      "answer": "Hiking alone is possible, but it's important to be experienced and prepared. Tell someone your route and expected return time, carry a map and compass, and be aware of the risks. Consider using a GPS device."
+    },
+    {
+      "question": "Are dogs allowed on hiking trails in Mid Wales?",
+      "answer": "Yes, dogs are generally allowed on hiking trails, but they must be kept under control. Be aware of livestock and keep your dog on a lead when near animals. Clean up after your dog."
+    },
+    {
+      "question": "How challenging is the Glyndwr's Way?",
+      "answer": "Glyndwr's Way is a challenging long-distance path with varied terrain and significant elevation gain. It requires good fitness and navigation skills. Consider hiking it in sections rather than attempting the entire route at once."
+    },
+    {
+      "question": "Where can I find maps of hiking trails in Mid Wales?",
+      "answer": "Ordnance Survey Explorer maps cover Mid Wales in detail. You can purchase them from local outdoor shops like Summit Cycles & Outdoor in Aberystwyth or online from Ordnance Survey's website."
+    },
+    {
+      "question": "Is there a charge to walk in the Cambrian Mountains?",
+      "answer": "No, there is no general access charge for walking in the Cambrian Mountains. However, some car parks may have parking fees, and some attractions like Devil's Bridge Falls charge an entry fee."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Summit Cycles & Outdoor",
+        "slug": "summit-cycles-outdoor",
+        "address": "10-12 Chalybeate St, Aberystwyth SY23 1HS",
+        "lat": 52.416,
+        "lng": -4.079,
+        "description": "A well-stocked shop offering a wide range of hiking gear, camping equipment, and cycling accessories. They also offer bike repairs and hire.",
+        "website": "https://summitcycles.co.uk/",
+        "phone": "01970 617071",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "boot fitting"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 198
+      },
+      {
+        "name": "Mountain Warehouse",
+        "slug": "mountain-warehouse-aberystwyth",
+        "address": "Unit 4, Parc Llysgwyn, Aberystwyth SY23 3TL",
+        "lat": 52.423,
+        "lng": -4.059,
+        "description": "A popular chain store offering affordable hiking gear and outdoor clothing.",
+        "website": "https://www.mountainwarehouse.com/",
+        "phone": "01970 611996",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.0,
+        "reviewCount": 137
+      },
+      {
+        "name": "Go Outdoors",
+        "slug": "go-outdoors-shrewsbury",
+        "address": "Unit 1A, Battlefield Retail Park, Shrewsbury SY1 3TJ (Closest one!)",
+        "lat": 52.72,
+        "lng": -2.734,
+        "description": "Large outdoor retailer selling everything from hiking boots to tents. Requires membership card for best prices.",
+        "website": "https://www.gooutdoors.co.uk/",
+        "phone": "0344 387 6888",
+        "services": [
+          "gear sales",
+          "camping gear",
+          "fishing gear"
+        ],
+        "googleRating": 4.4,
+        "reviewCount": 750
+      },
+      {
+        "name": "Millets",
+        "slug": "millets-newtown",
+        "address": "Unit 8, Vastre Ind Est, Newtown SY16 1DZ",
+        "lat": 52.517,
+        "lng": -3.319,
+        "description": "Offers a good range of hiking gear and outdoor clothing with helpful staff.",
+        "website": "https://www.millets.co.uk/",
+        "phone": "01686 622872",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 3.9,
+        "reviewCount": 50
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Number 21",
+        "slug": "number-21-aberystwyth",
+        "address": "21 Pier St, Aberystwyth SY23 2LJ",
+        "lat": 52.415,
+        "lng": -4.082,
+        "description": "A popular restaurant in Aberystwyth known for its fresh seafood and excellent vegetarian options. Great for a celebratory meal after a long hike.",
+        "vibe": "Relaxed and friendly restaurant",
+        "priceRange": "££",
+        "website": "https://www.number21.wales/",
+        "knownFor": "Fresh seafood, vegetarian options"
+      },
+      {
+        "name": "Hafod Hotel",
+        "slug": "hafod-hotel",
+        "address": "Devil's Bridge, Aberystwyth SY23 3JW",
+        "lat": 52.422,
+        "lng": -3.833,
+        "description": "A historic hotel with stunning views overlooking the Devil's Bridge waterfalls. Enjoy a drink or a meal on the terrace.",
+        "vibe": "Historic hotel with scenic views",
+        "priceRange": "££",
+        "website": "https://www.hafodhotel.com/",
+        "knownFor": "Views of Devil's Bridge, traditional pub fare"
+      },
+      {
+        "name": "Y Ffarmers",
+        "slug": "y-ffarmers-llanfihangel",
+        "address": "Llanfihangel-y-Creuddyn, Aberystwyth SY23 4LA",
+        "lat": 52.343,
+        "lng": -3.879,
+        "description": "A traditional Welsh pub in a rural setting. Known for its real ales and hearty meals. A favourite among locals and hikers.",
+        "vibe": "Cosy and traditional pub",
+        "priceRange": "££",
+        "website": "https://www.yffarmers.co.uk/",
+        "knownFor": "Real ales, hearty meals, local atmosphere"
+      },
+      {
+        "name": "Rheidol Riding Centre Cafe",
+        "slug": "rheidol-riding-centre-cafe",
+        "address": "Ponterwyd, Aberystwyth SY23 3LB",
+        "lat": 52.445,
+        "lng": -3.869,
+        "description": "A casual cafe serving drinks and meals. Welcoming to outdoor enthusiasts.",
+        "vibe": "Casual Cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Relaxed atmosphere"
+      },
+      {
+        "name": "The George Borrow Hotel",
+        "slug": "the-george-borrow-hotel",
+        "address": "Ponterwyd, Aberystwyth SY23 3LB",
+        "lat": 52.443,
+        "lng": -3.871,
+        "description": "A quaint Hotel. Offers simple food, beers and accommodation.",
+        "vibe": "Warm and welcoming",
+        "priceRange": "££",
+        "website": "https://www.georgeborrowhotel.co.uk/",
+        "knownFor": "Local atmosphere, beers"
+      },
+      {
+        "name": "Bistro @ The Wynnstay",
+        "slug": "bistro-at-the-wynnstay",
+        "address": "Powis Wharf, Machynlleth SY20 8ER",
+        "lat": 52.591,
+        "lng": -3.837,
+        "description": "A vibrant restaurant serving a great range of drinks and meals.",
+        "vibe": "Vibrant and friendly bistro",
+        "priceRange": "££",
+        "website": "https://www.thewynnstay.com/bistro",
+        "knownFor": "Range of drinks and meals"
+      },
+      {
+        "name": "The Unicorn",
+        "slug": "the-unicorn-llanidloes",
+        "address": "Great Oak St, Llanidloes SY18 6BN",
+        "lat": 52.458,
+        "lng": -3.448,
+        "description": "Popular friendly pub, known for a great range of local beers.",
+        "vibe": "Warm and welcoming",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Local beers"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Bryn Meurig Hostel",
+        "slug": "bryn-meurig-hostel",
+        "description": "A budget-friendly hostel in a beautiful rural location, ideal for exploring the Cambrian Mountains. Close to Glyndwr's Way.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Glyndwr's Way: Several points along the route.",
+        "website": "https://www.cambriancampsite.co.uk/bryn-meurig-hostel/"
+      },
+      {
+        "name": "Elan Valley Hotel",
+        "slug": "elan-valley-hotel",
+        "description": "A comfortable hotel in the heart of the Elan Valley, perfect for exploring the reservoirs and surrounding countryside. Easy access to Elan Valley Trail.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Elan Valley Trail: Directly on the trail.",
+        "website": "https://www.elanvalleyhotel.co.uk/"
+      },
+      {
+        "name": "Penralley House",
+        "slug": "penralley-house",
+        "description": "A charming B&B near Rhayader, offering comfortable accommodation and delicious breakfasts. A great base for exploring the Elan Valley and Cambrian Mountains.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Elan Valley Trail: Approximately 10 minutes drive",
+        "website": "https://www.penralleyhouse.co.uk/"
+      },
+      {
+        "name": "Dolffan Camping Pods",
+        "slug": "dolffan-camping-pods",
+        "description": "Camping pods, close to Machynlleth and lots of hiking trails.",
+        "type": "glamping",
+        "priceRange": "££",
+        "nearestSpot": "Glyndwr's Way: Machynlleth (start/end point)",
+        "website": "https://www.dolffanview.co.uk/"
+      },
+      {
+        "name": "Llwynau Farm Camping",
+        "slug": "llwynau-farm-camping",
+        "description": "Camping grounds in a quiet and peaceful area close to Llyn Clywedog.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Hafren Forest: A short drive away",
+        "website": "https://www.llwynaufarmcamping.co.uk/"
+      },
+      {
+        "name": "The Trewythen Arms",
+        "slug": "the-trewythen-arms",
+        "description": "A quaint hotel within easy reach of Llyn Clywedog.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Hafren Forest: A short drive away",
+        "website": "https://www.trewythenarms.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Ras y Garn",
+      "type": "race",
+      "monthTypical": "May",
+      "description": "A challenging fell race in the Cambrian Mountains, suitable for experienced runners.",
+      "website": "https://www.rasygarn.org.uk/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 25
+    },
+    {
+      "name": "Devil's Bridge Trail Races",
+      "type": "race",
+      "monthTypical": "October",
+      "description": "Trail races of various distances through challenging landscape.",
+      "website": "https://www.devilstrailraces.co.uk/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 35
+    }
+  ],
+  "keywords": {
+    "primary": "hiking mid wales",
+    "secondary": [
+      "cambrian mountains hiking",
+      "elan valley hiking",
+      "glyndwr's way",
+      "plynlimon hiking",
+      "walking mid wales"
+    ],
+    "longTail": [
+      "best hiking trails mid wales",
+      "hiking routes near aberystwyth",
+      "dog friendly walks mid wales",
+      "challenging hikes cambrian mountains",
+      "easy walks elan valley",
+      "guided hiking tours mid wales",
+      "walking holiday mid wales",
+      "hiking accommodation mid wales",
+      "day hikes cambrian mountains",
+      "long distance trails mid wales",
+      "family hiking mid wales",
+      "hiking gear shops aberystwyth"
+    ],
+    "localIntent": [
+      "hiking near aberystwyth",
+      "hiking near rhayader",
+      "hiking near machynlleth",
+      "walking near llanidloes",
+      "hiking trails near newtown"
+    ],
+    "commercialIntent": [
+      "guided hiking mid wales",
+      "hiking tour mid wales price",
+      "hire hiking boots aberystwyth",
+      "book hiking accommodation mid wales",
+      "glyndwr's way guided tour"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "snowdonia",
+        "label": "Hiking in Snowdonia"
+      },
+      {
+        "regionSlug": "brecon-beacons",
+        "label": "Hiking in the Brecon Beacons"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in Mid Wales"
+      },
+      {
+        "activityTypeSlug": "road-cycling",
+        "label": "Road Cycling in Mid Wales"
+      },
+      {
+        "activityTypeSlug": "watersports",
+        "label": "Watersports in Mid Wales"
+      },
+      {
+        "activityTypeSlug": "wild-swimming",
+        "label": "Wild Swimming in Mid Wales"
+      }
+    ]
+  },
+  "operators": [
+    {
+      "name": "AberAdventures",
+      "slug": "aberadventures",
+      "description": "Your adventure starts here, on the beautiful Welsh coast!",
+      "activities": [
+        "surfing",
+        "sup",
+        "kayaking",
+        "hiking"
+      ],
+      "rating": 5.0,
+      "priceRange": "££"
+    },
+    {
+      "name": "Meadow Springs",
+      "slug": "meadow-springs",
+      "description": "Explore Mid Wales, one paddle at a time.",
+      "activities": [
+        "sup",
+        "watersports"
+      ],
+      "rating": null,
+      "priceRange": "££"
+    }
+  ],
+  "discoveredBusinesses": [
+    {
+      "name": "AberAdventures",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Aberystwyth, Wales",
+      "postcode": "SY23",
+      "lat": 52.414,
+      "lng": -4.083,
+      "phone": null,
+      "website": null,
+      "googleRating": 5.0,
+      "reviewCount": 10,
+      "description": "Your adventure starts here, on the beautiful Welsh coast! Offers activities like surfing, SUP and kayaking.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "guided hikes",
+        "adventure planning",
+        "equipment advice"
+      ],
+      "priceRange": "££",
+      "notes": "A known operator offering hiking related advice and trip planning in Mid Wales.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Summit Cycles & Outdoor",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "4 Terrace Rd, Aberystwyth",
+      "postcode": "SY23 1NY",
+      "lat": 52.415,
+      "lng": -4.078,
+      "phone": "01970 617211",
+      "website": "http://www.summitcycles.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 50,
+      "description": "Provides cycling and outdoor gear for adventures in Mid Wales.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "gear rental",
+        "equipment sales",
+        "repairs",
+        "advice"
+      ],
+      "priceRange": "££",
+      "notes": "A known gear shop in Aberystwyth, important for hikers needing equipment.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Mountain Warehouse",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 2, Parc y Llyn Retail Park, Aberystwyth",
+      "postcode": "SY23 3TL",
+      "lat": 52.424,
+      "lng": -4.054,
+      "phone": "01970 624112",
+      "website": "https://www.mountainwarehouse.com/",
+      "googleRating": 4.0,
+      "reviewCount": 100,
+      "description": "Sells outdoor clothing and equipment for hiking and other activities.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "equipment sales",
+        "clothing",
+        "footwear"
+      ],
+      "priceRange": "£",
+      "notes": "Well known chain, provides good value gear.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Number 21",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "21 Pier St, Aberystwyth",
+      "postcode": "SY23 2LL",
+      "lat": 52.414,
+      "lng": -4.084,
+      "phone": "01970 611755",
+      "website": null,
+      "googleRating": 4.6,
+      "reviewCount": 150,
+      "description": "Restaurant in Aberystwyth, ideal for a post-hike meal.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "Known restaurant, good for refueling after a hike.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Hafod Hotel",
+      "type": "venue",
+      "category": "accommodation",
+      "address": "Devil's Bridge, Aberystwyth",
+      "postcode": "SY23 3JW",
+      "lat": 52.443,
+      "lng": -3.826,
+      "phone": "01970 890232",
+      "website": "https://www.hafodhotel.com/",
+      "googleRating": 4.2,
+      "reviewCount": 250,
+      "description": "Historic hotel near Devil's Bridge, great for hikers exploring the area.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "accommodation",
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£££",
+      "notes": "Well-known hotel, a good base for hiking around Devil's Bridge.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Y Ffarmers",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Llanfihangel-y-Creuddyn, Aberystwyth",
+      "postcode": "SY23 4LA",
+      "lat": 52.332,
+      "lng": -3.855,
+      "phone": "01970 880640",
+      "website": "https://www.yffarmers.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 200,
+      "description": "Traditional Welsh pub in Llanfihangel, perfect for a post-hike pint and meal.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "Known pub, offering a good post-hike experience.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Rheidol Riding Centre cafe",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Capel Bangor, Aberystwyth",
+      "postcode": "SY23 3NB",
+      "lat": 52.433,
+      "lng": -3.958,
+      "phone": "01970 880248",
+      "website": "https://www.rheidolridingcentre.co.uk/",
+      "googleRating": 4.3,
+      "reviewCount": 80,
+      "description": "Cafe at a riding centre near hiking trails, providing refreshments.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "snacks"
+      ],
+      "priceRange": "£",
+      "notes": "Convenient stop for hikers near the Rheidol Valley.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Meadow Springs",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Llanidloes, Wales",
+      "postcode": "SY18",
+      "lat": 52.459,
+      "lng": -3.525,
+      "phone": null,
+      "website": null,
+      "googleRating": null,
+      "reviewCount": 0,
+      "description": "Explore Mid Wales, one paddle at a time. Offers activities like SUP and watersports.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "adventure planning",
+        "equipment advice",
+        "hiking route suggestion"
+      ],
+      "priceRange": "££",
+      "notes": "Known operator offering hiking related advice and trip planning in Mid Wales.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Glyndŵr Way National Trail",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Starts at Knighton",
+      "postcode": "LD7 1AA",
+      "lat": 52.33,
+      "lng": -3.057,
+      "phone": null,
+      "website": "https://naturalresources.wales/days-out/things-to-do/walking-and-hiking-trails/national-trails/glyndwr-s-way-national-trail/?lang=en",
+      "googleRating": 4.7,
+      "reviewCount": 35,
+      "description": "A long-distance trail through Mid Wales, offering stunning scenery and challenging hikes.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "walking",
+        "hiking"
+      ],
+      "priceRange": "Free",
+      "notes": "Major hiking trail, a must-know for anyone interested in hiking in Mid Wales.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Cadair Idris",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Near Dolgellau",
+      "postcode": "LL40 1TL",
+      "lat": 52.674,
+      "lng": -3.893,
+      "phone": null,
+      "website": "https://naturalresources.wales/days-out/places-to-visit/mid-wales/cadair-idris-national-nature-reserve/?lang=en",
+      "googleRating": 4.8,
+      "reviewCount": 1200,
+      "description": "A majestic mountain with challenging hiking routes and panoramic views.",
+      "relevantActivities": [
+        "hiking",
+        "mountain climbing"
+      ],
+      "services": [
+        "walking",
+        "hiking"
+      ],
+      "priceRange": "Free",
+      "notes": "Iconic mountain, a popular and challenging hike.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Brecon Beacons National Park",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Brecon Beacons National Park, Wales",
+      "postcode": "NP8 1HF",
+      "lat": 51.88,
+      "lng": -3.43,
+      "phone": "01874 624437",
+      "website": "https://www.breconbeacons.org/",
+      "googleRating": 4.7,
+      "reviewCount": 5000,
+      "description": "A beautiful national park offering varied hiking trails, from gentle valley walks to challenging mountain ascents.",
+      "relevantActivities": [
+        "hiking",
+        "walking"
+      ],
+      "services": [
+        "trails",
+        "information centres",
+        "guided walks"
+      ],
+      "priceRange": "Free",
+      "notes": "Important National Park, a critical hiking destination, although only partially in Mid Wales.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Elan Valley Visitor Centre",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Elan Valley, Rhayader",
+      "postcode": "LD6 5HP",
+      "lat": 52.265,
+      "lng": -3.532,
+      "phone": "01597 810880",
+      "website": "https://www.elanvalley.org.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 800,
+      "description": "Offers information and access to numerous hiking trails within the stunning Elan Valley.",
+      "relevantActivities": [
+        "hiking",
+        "walking"
+      ],
+      "services": [
+        "trails",
+        "information",
+        "cafe"
+      ],
+      "priceRange": "Free",
+      "notes": "Great starting point for hikes in the Elan Valley.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Devil's Bridge Falls",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Devil's Bridge, Aberystwyth",
+      "postcode": "SY23 3JW",
+      "lat": 52.443,
+      "lng": -3.824,
+      "phone": "01970 890666",
+      "website": "https://www.devilsbridgefalls.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 1800,
+      "description": "Picturesque waterfalls and hiking trails in a dramatic gorge.",
+      "relevantActivities": [
+        "hiking",
+        "walking"
+      ],
+      "services": [
+        "trails",
+        "viewing platforms",
+        "cafe"
+      ],
+      "priceRange": "£",
+      "notes": "Popular hiking destination with scenic waterfalls.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Lake Vyrnwy",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Llanwddyn, Powys",
+      "postcode": "SY10 0LY",
+      "lat": 52.785,
+      "lng": -3.432,
+      "phone": "01691 870625",
+      "website": "https://www.visitmidwales.co.uk/Lake-Vyrnwy/details/?dms=3&venue=4030695",
+      "googleRating": 4.6,
+      "reviewCount": 1100,
+      "description": "A reservoir offering walking and cycling trails around its perimeter, with stunning views.",
+      "relevantActivities": [
+        "hiking",
+        "walking"
+      ],
+      "services": [
+        "trails",
+        "cycling",
+        "bird watching"
+      ],
+      "priceRange": "Free",
+      "notes": "A great place to walk and hike, with a scenic lake.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "National Trust - Powis Castle and Garden",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Welshpool",
+      "postcode": "SY21 8RF",
+      "lat": 52.659,
+      "lng": -3.149,
+      "phone": "01938 551944",
+      "website": "https://www.nationaltrust.org.uk/powis-castle-and-garden",
+      "googleRating": 4.6,
+      "reviewCount": 2800,
+      "description": "Though known for its castle and gardens, there are also walking trails in the surrounding parkland.",
+      "relevantActivities": [
+        "hiking",
+        "walking"
+      ],
+      "services": [
+        "trails",
+        "historic site",
+        "gardens"
+      ],
+      "priceRange": "££",
+      "notes": "Offers gentle walks and historical interest.",
+      "inDatabase": false,
+      "priority": "low"
+    }
+  ]
+}

@@ -1,0 +1,744 @@
+{
+  "regionSlug": "brecon-beacons",
+  "activityTypeSlug": "gorge-walking",
+  "title": "Gorge Walking in Brecon Beacons",
+  "strapline": "Plunge into the heart of Waterfall Country and experience the Brecon Beacons' wildest side.",
+  "metaTitle": "Gorge Walking Brecon Beacons | Adventure Wales",
+  "metaDescription": "Experience the thrill of gorge walking in the Brecon Beacons! Discover hidden waterfalls, natural slides, and breathtaking scenery. Book your adventure now!",
+  "heroAlt": "A group gorge walking in the Brecon Beacons, splashing through a waterfall.",
+  "introduction": "The Brecon Beacons, famed as 'Waterfall Country', are a gorge walking paradise. Unlike gentler streams elsewhere, the rivers here carve through dramatic sandstone, creating deep gorges, cascading waterfalls, and exhilarating natural playgrounds. Forget a polite paddle; expect full immersion, scrambling, and the occasional adrenaline rush. This isn't just a walk; it's an adventure. \n\n**Gorge walking in Brecon Beacons** is primarily concentrated around the Mellte Valley, near Pontneddfechan, but you'll find incredible routes dotted throughout the park. The Four Falls Trail is a great starting point, but for a truly immersive experience, hiring a guide is highly recommended. They know the safest routes, hidden spots, and can provide the necessary equipment.\n\nThis activity is best suited for reasonably fit individuals who don't mind getting wet and aren't afraid of heights. While some sections can be tackled by families with older children (10+), the more challenging routes require experience and a head for heights. Be prepared for cold water, slippery rocks, and the occasional scramble up a waterfall. The reward? Unforgettable memories and bragging rights.\n\nHonesty time: gorge walking here isn't always sunshine and rainbows. The weather can change quickly, and the water levels can rise dramatically after heavy rain. Always check the forecast and listen to local advice. But when the conditions are right, there's no better way to experience the raw beauty of the Brecon Beacons.",
+  "bestSeason": "April-October",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Sgwd yr Eira (Waterfall Walk Behind)",
+      "slug": "sgwd-yr-eira",
+      "description": "The jewel of Waterfall Country. Hike down to this stunning waterfall on the River Hepste and, as the name suggests, walk right behind it! The path can be slippery and muddy, especially after rain. Expect crowds during peak season.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours round trip",
+      "distance": "5.5km",
+      "elevationGain": "200m",
+      "bestFor": "Families and those looking for a relatively easy but spectacular experience.",
+      "notSuitableFor": "Those with limited mobility or a fear of heights (some steep sections).",
+      "bestSeason": "April-October (can be icy in winter)",
+      "parking": "Gwaun Hepste car park (CF44 9JF). Can get very busy; arrive early, especially on weekends and holidays. £5 all day.",
+      "startPoint": {
+        "name": "Gwaun Hepste Car Park",
+        "lat": 51.797,
+        "lng": -3.562
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": "null",
+      "insiderTip": "Go early in the morning or late in the afternoon to avoid the crowds. Bring a waterproof jacket, even on a sunny day, as you'll get wet behind the falls!"
+    },
+    {
+      "name": "Henrhyd Falls (Tallest Waterfall)",
+      "slug": "henrhyd-falls",
+      "description": "The tallest waterfall in South Wales, a dramatic 90-foot cascade. You can walk behind the falls here too, although it's a shorter, more enclosed experience than Sgwd yr Eira. This location was also used as the entrance to the Batcave in 'The Dark Knight Rises'!",
+      "difficulty": "Moderate",
+      "duration": "1-2 hours round trip",
+      "distance": "1.6km",
+      "elevationGain": "100m",
+      "bestFor": "Those looking for a quick and impressive waterfall fix. Movie buffs.",
+      "notSuitableFor": "Those with mobility issues, as the path is steep and uneven in places.",
+      "bestSeason": "Year-round (most impressive after rain)",
+      "parking": "National Trust car park at Henrhyd Falls (SA9 1GL). Free for National Trust members, charge for non-members.",
+      "startPoint": {
+        "name": "Henrhyd Falls National Trust Car Park",
+        "lat": 51.775,
+        "lng": -3.742
+      },
+      "estimatedCost": "Free (parking charge for non-NT members)",
+      "operatorSlug": "null",
+      "insiderTip": "Combine your visit with a walk along the Nant Llech gorge for a longer, more varied hike."
+    },
+    {
+      "name": "Porth yr Ogof (Waterfall Cave Entrance)",
+      "slug": "porth-yr-ogof",
+      "description": "A huge natural archway and the entrance to a cave system where the River Mellte disappears underground. It's impressive to see the river emerge from the darkness. While you can't explore the cave without specialized equipment and training, the area around the entrance is a great spot for a picnic and some rock scrambling.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours round trip",
+      "distance": "2km",
+      "elevationGain": "50m",
+      "bestFor": "Families with young children. Those interested in geology and caves.",
+      "notSuitableFor": "Those expecting a challenging hike or a full-on gorge walking experience.",
+      "bestSeason": "Year-round",
+      "parking": "Small parking area near the entrance (SA9 1GB). Can get crowded.",
+      "startPoint": {
+        "name": "Porth yr Ogof Parking",
+        "lat": 51.779,
+        "lng": -3.69
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": "null",
+      "insiderTip": "Bring a torch to explore the area just inside the cave entrance – you can see some interesting rock formations. Be extremely careful near the water's edge."
+    },
+    {
+      "name": "Mellte Gorge (Guided Gorge Walk)",
+      "slug": "mellte-gorge",
+      "description": "The classic gorge walking experience. Expect to be waist-deep in water, scrambling over rocks, and sliding down natural chutes. You'll encounter several waterfalls, including Sgwd Clun-Gwyn and Sgwd Isaf Clun-Gwyn. This route is best done with a guided operator, as it can be dangerous without proper equipment and knowledge.",
+      "difficulty": "Challenging",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Adventurous individuals and groups looking for a thrilling experience.",
+      "notSuitableFor": "Those with a fear of heights, cold water, or slippery surfaces. Not suitable for young children.",
+      "bestSeason": "May-September",
+      "parking": "Various parking areas around Pontneddfechan (CF44 9HE). Check with your chosen operator for the best location.",
+      "startPoint": {
+        "name": "Pontneddfechan",
+        "lat": 51.775,
+        "lng": -3.62
+      },
+      "estimatedCost": "£50-£80pp guided",
+      "operatorSlug": "adventure-britain",
+      "insiderTip": "Book your guided gorge walk well in advance, especially during peak season. Some operators offer smaller group sizes for a more personalized experience."
+    },
+    {
+      "name": "Nedd Fechan Gorge (More Remote)",
+      "slug": "nedd-fechan-gorge",
+      "description": "A quieter, more secluded gorge walking experience than the Mellte. The Nedd Fechan offers stunning scenery and fewer crowds. The route is less intense than the Mellte, but still requires some scrambling and wading. Again, recommended with a guide for safety.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Those seeking a more peaceful and less crowded gorge walking experience.",
+      "notSuitableFor": "Those looking for the most extreme adrenaline rush. Very young children.",
+      "bestSeason": "May-September",
+      "parking": "Parking available near the village of Ystradfellte (SA9 1YY).",
+      "startPoint": {
+        "name": "Ystradfellte",
+        "lat": 51.787,
+        "lng": -3.57
+      },
+      "estimatedCost": "£50-£80pp guided",
+      "operatorSlug": "black-mountain-adventure",
+      "insiderTip": "The Nedd Fechan is known for its crystal-clear water. Bring a waterproof camera to capture the stunning scenery."
+    },
+    {
+      "name": "Sychryd Cascades (Easy Access)",
+      "slug": "sychryd-cascades",
+      "description": "Easily accessible from Dinas Rock car park, these cascades are a great option for a short and sweet gorge walking adventure. The water is shallow in places, making it suitable for families with older children. The route involves some rock hopping and wading.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families with older children. Those looking for a quick and easy gorge walk.",
+      "notSuitableFor": "Those seeking a challenging or remote experience.",
+      "bestSeason": "May-September",
+      "parking": "Dinas Rock car park (CF44 9JF).",
+      "startPoint": {
+        "name": "Dinas Rock Car Park",
+        "lat": 51.765,
+        "lng": -3.575
+      },
+      "estimatedCost": "Free (parking charges may apply)",
+      "operatorSlug": "null",
+      "insiderTip": "Combine your visit with a trip to the nearby Dinas Rock climbing area."
+    },
+    {
+      "name": "Four Falls Trail Gorges (Varied Experience)",
+      "slug": "four-falls-trail-gorges",
+      "description": "Whilst the main trail links up the waterfalls, much of it follows the gorgeous, narrow gorges themselves. You're not always wading, but you are constantly skirting alongside the water, getting amazing views and enjoying the unique micro-climate. Be aware that the trail can become very muddy after rain.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": "9km",
+      "elevationGain": "250m",
+      "bestFor": "People who want a good walk alongside gorges, without necessarily being 'in' them at all times.",
+      "notSuitableFor": "Those with very young children, or who want a continuous 'in the water' experience",
+      "bestSeason": "April-October",
+      "parking": "Gwaun Hepste car park (CF44 9JF). Very busy; arrive early, especially weekends.",
+      "startPoint": {
+        "name": "Gwaun Hepste Car Park",
+        "lat": 51.797,
+        "lng": -3.562
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": "null",
+      "insiderTip": "Look out for dippers and grey wagtails along the river banks. These birds are specially adapted to living near fast-flowing water."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The Brecon Beacons weather is notoriously unpredictable. Expect rain, even in summer. Water levels in the gorges can rise rapidly after heavy rain, making gorge walking dangerous. Always check the weather forecast and river levels before heading out. Be prepared for cold water temperatures, even on warm days.",
+    "weatherLinks": [
+      {
+        "name": "Met Office Mountain Weather Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain/brecon-beacons"
+      },
+      {
+        "name": "Natural Resources Wales River Levels",
+        "url": "https://naturalresources.wales/flooding/check-river-levels-and-sea-conditions/?lang=en"
+      }
+    ],
+    "gearChecklist": [
+      "Wetsuit – essential for staying warm in the cold water.",
+      "Neoprene socks and gloves – protect your extremities from the cold.",
+      "Sturdy walking boots or shoes – provide grip on slippery rocks.",
+      "Helmet – protects your head from falling rocks.",
+      "Buoyancy aid – provides extra buoyancy in case of a fall.",
+      "Waterproof jacket – keeps you dry and warm outside the water.",
+      "Dry bag – protects your valuables from water damage.",
+      "Towel and change of clothes – for drying off after your adventure.",
+      "First-aid kit – for minor injuries.",
+      "Snacks and water – stay energized and hydrated."
+    ],
+    "gearHire": [
+      {
+        "name": "Adventure Britain",
+        "location": "Brecon",
+        "url": "https://www.adventurebritain.com/"
+      },
+      {
+        "name": "Black Mountain Adventure",
+        "location": "Brecon",
+        "url": "https://blackmountainadventure.co.uk/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "3.5h",
+          "route": "Via M4"
+        },
+        {
+          "from": "Manchester",
+          "duration": "4h",
+          "route": "Via M6 and A40"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "2.5h",
+          "route": "Via M5 and A470"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "1h",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "The nearest train stations are Neath and Merthyr Tydfil. From there, you can take a bus to Pontneddfechan or Ystradfellte. The Beacons Bus (Sherpa) service operates in the summer months, connecting key locations within the park.",
+      "parkingTips": "Parking can be limited, especially during peak season. Arrive early or consider using public transport. Respect local residents and park responsibly."
+    },
+    "safety": "Gorge walking can be dangerous. Never attempt it alone. Always check the weather forecast and river levels before heading out. Wear appropriate gear and follow the advice of experienced guides. Be aware of the risks of falling rocks, slippery surfaces, and cold water. In case of emergency, dial 999 and ask for Mountain Rescue."
+  },
+  "faqs": [
+    {
+      "question": "What is the best time of year for gorge walking in the Brecon Beacons?",
+      "answer": "The best time is generally between May and September when the weather is milder and the water levels are lower. However, even in summer, the water can be cold, so a wetsuit is always recommended."
+    },
+    {
+      "question": "How much does it cost to go gorge walking with a guided operator?",
+      "answer": "Expect to pay between £50 and £80 per person for a guided gorge walking experience. This usually includes all necessary equipment, such as wetsuits, helmets, and buoyancy aids."
+    },
+    {
+      "question": "Do I need to be an experienced hiker to go gorge walking?",
+      "answer": "Some level of fitness is required, as you'll be scrambling over rocks and wading through water. However, there are routes suitable for different abilities. Guided operators can tailor the experience to your fitness level."
+    },
+    {
+      "question": "Can I go gorge walking in the Brecon Beacons without a guide?",
+      "answer": "While it's possible to explore some of the easier sections of the gorges independently, it's highly recommended to go with a guided operator, especially for the more challenging routes. They have the experience, knowledge, and equipment to ensure your safety."
+    },
+    {
+      "question": "What age is appropriate for gorge walking?",
+      "answer": "Most guided operators have a minimum age of around 10 years old, but this can vary depending on the specific route and the child's fitness level. Always check with the operator beforehand."
+    },
+    {
+      "question": "What happens if it rains on the day of my gorge walking trip?",
+      "answer": "Heavy rain can make gorge walking dangerous due to rising water levels. Most reputable operators will cancel or postpone the trip if the conditions are unsafe. It's always best to check with them beforehand."
+    },
+    {
+      "question": "Are there any restrictions on gorge walking in certain areas?",
+      "answer": "Some areas may be subject to restrictions during certain times of the year to protect wildlife or for conservation purposes. Check with the Brecon Beacons National Park Authority for the latest information."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Cotswold Outdoor Brecon",
+        "slug": "cotswold-outdoor-brecon",
+        "address": "Unit 6, Brecon Enterprise Park, Brecon LD3 8BT",
+        "lat": 51.952,
+        "lng": -3.396,
+        "description": "Large outdoor retailer offering a wide range of clothing, footwear, and equipment for hiking, camping, and other outdoor activities. Expert boot fitting service available.",
+        "website": "https://www.cotswoldoutdoor.com/",
+        "phone": "01874 611515",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.3,
+        "reviewCount": 150
+      },
+      {
+        "name": "Mountain Warehouse Brecon",
+        "slug": "mountain-warehouse-brecon",
+        "address": "5 High St, Brecon LD3 7AL",
+        "lat": 51.953,
+        "lng": -3.39,
+        "description": "Offers affordable outdoor clothing and equipment. Good for budget-friendly options and basics.",
+        "website": "https://www.mountainwarehouse.com/",
+        "phone": "01874 622301",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 3.9,
+        "reviewCount": 80
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Angel Inn",
+        "slug": "the-angel-inn",
+        "address": "Pontneddfechan CF44 9HE",
+        "lat": 51.774,
+        "lng": -3.622,
+        "description": "A classic pub in the heart of Waterfall Country. Popular with walkers and outdoor enthusiasts. Known for its hearty meals and local ales. Perfect for a post-gorge walking pint.",
+        "vibe": "Traditional pub",
+        "priceRange": "££",
+        "website": "http://www.angelinnponthotel.co.uk/",
+        "knownFor": "Hearty meals, local ales"
+      },
+      {
+        "name": "The Ancient Briton",
+        "slug": "the-ancient-briton",
+        "address": "Pen-y-Cae SA9 1GL",
+        "lat": 51.755,
+        "lng": -3.762,
+        "description": "A friendly pub with a beer garden and a good selection of food and drinks. A popular spot with cavers and walkers.",
+        "vibe": "Friendly pub",
+        "priceRange": "££",
+        "website": "https://www.sabrain.com/ancient-briton-pen-y-cae",
+        "knownFor": "Beer garden, good food"
+      },
+      {
+        "name": "The Star Inn",
+        "slug": "the-star-inn",
+        "address": "Talybont-on-Usk LD3 7JD",
+        "lat": 51.916,
+        "lng": -3.28,
+        "description": "A traditional village pub with a welcoming atmosphere. Serves good pub grub and local ales. Located near the Talybont Reservoir.",
+        "vibe": "Traditional pub",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Pub grub, local ales"
+      },
+      {
+        "name": "The Felin Fach Griffin",
+        "slug": "the-felin-fach-griffin",
+        "address": "Felin Fach, Brecon LD3 0HF",
+        "lat": 52.078,
+        "lng": -3.335,
+        "description": "A stylish gastropub with rooms. Serves delicious food using locally sourced ingredients. A great option for a more upmarket post-activity meal.",
+        "vibe": "Gastropub",
+        "priceRange": "£££",
+        "website": "https://eatdrinksleep.ltd.uk/felin-fach-griffin/",
+        "knownFor": "Locally sourced ingredients, stylish setting"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "YHA Brecon Beacons",
+        "slug": "yha-brecon-beacons",
+        "description": "A budget-friendly option with dorms and private rooms. Great location for exploring the central Brecon Beacons.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Central Brecon Beacons",
+        "website": "https://www.yha.org.uk/hostel/yha-brecon-beacons"
+      },
+      {
+        "name": "Pen-y-bryn Bunkhouse",
+        "slug": "pen-y-bryn-bunkhouse",
+        "description": "A basic but comfortable bunkhouse near Pontneddfechan. Ideal for groups on a budget.",
+        "type": "bunkhouse",
+        "priceRange": "£",
+        "nearestSpot": "Mellte Gorge",
+        "website": null
+      },
+      {
+        "name": "The Castle Hotel",
+        "slug": "the-castle-hotel",
+        "description": "A historic hotel in the heart of Brecon. A good option for a more comfortable stay.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Brecon",
+        "website": "https://www.breconcastlehotel.com/"
+      },
+      {
+        "name": "Peterstone Court",
+        "slug": "peterstone-court",
+        "description": "A luxurious hotel with a spa and restaurant. Set in beautiful grounds.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Talybont-on-Usk",
+        "website": "https://www.peterstone-court.com/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Brecon Beacons Trail Running Festival",
+      "type": "race",
+      "monthTypical": "September",
+      "description": "A series of trail running races through the Brecon Beacons National Park.",
+      "website": "https://www.trailrunningassociation.co.uk/",
+      "relevantActivities": [
+        "gorge-walking"
+      ],
+      "registrationCost": 45
+    }
+  ],
+  "keywords": {
+    "primary": "gorge walking brecon beacons",
+    "secondary": [
+      "waterfall country gorge walking",
+      "gorge walking pontneddfechan",
+      "brecon beacons canyoning",
+      "four falls trail",
+      "mellte gorge"
+    ],
+    "longTail": [
+      "guided gorge walking brecon beacons price",
+      "best gorge walking routes brecon beacons",
+      "gorge walking brecon beacons for beginners",
+      "gorge walking brecon beacons with kids",
+      "gorge walking brecon beacons near cardiff",
+      "gorge walking brecon beacons sgwd yr eira",
+      "gorge walking brecon beacons weather",
+      "gorge walking brecon beacons gear hire",
+      "gorge walking brecon beacons safe"
+    ],
+    "localIntent": [
+      "gorge walking near brecon",
+      "gorge walking near pontneddfechan",
+      "gorge walking near ystradfellte"
+    ],
+    "commercialIntent": [
+      "book gorge walking brecon beacons",
+      "gorge walking brecon beacons guided tour",
+      "gorge walking brecon beacons price",
+      "gorge walking brecon beacons hire wetsuit"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "snowdonia",
+        "label": "Gorge Walking in Snowdonia"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Brecon Beacons"
+      },
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in Brecon Beacons"
+      },
+      {
+        "activityTypeSlug": "caving",
+        "label": "Caving in Brecon Beacons"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Adventure Britain",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Unit 4, Gilwern Hill Farm, Gilwern, Abergavenny",
+      "postcode": "NP7 0HF",
+      "lat": 51.854,
+      "lng": -3.084,
+      "phone": "01873 831555",
+      "website": "https://www.adventurebritain.com/",
+      "googleRating": 4.8,
+      "reviewCount": 150,
+      "description": "Your gateway to unforgettable Welsh adventures, offering a range of outdoor activities including gorge walking.",
+      "relevantActivities": [
+        "gorge-walking",
+        "canyoning",
+        "caving",
+        "climbing",
+        "mtb"
+      ],
+      "services": [
+        "guided tours",
+        "equipment rental",
+        "instruction"
+      ],
+      "priceRange": "££",
+      "notes": "Known operator for gorge walking in the Brecon Beacons.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Black Mountain Adventure",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Ty Mawr Farm, Pontsticill, Merthyr Tydfil",
+      "postcode": "CF48 2UN",
+      "lat": 51.812,
+      "lng": -3.394,
+      "phone": "01685 640046",
+      "website": "https://www.blackmountainadventure.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 120,
+      "description": "Provides unforgettable adventures in the Brecon Beacons, including gorge walking and other outdoor pursuits.",
+      "relevantActivities": [
+        "gorge-walking",
+        "caving",
+        "sup",
+        "mtb",
+        "multi-activities"
+      ],
+      "services": [
+        "guided tours",
+        "equipment rental",
+        "instruction",
+        "group bookings"
+      ],
+      "priceRange": "££",
+      "notes": "Well-regarded adventure company in the Brecon Beacons.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Call of the Wild",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Dolygaer Place, Pontsticill, Merthyr Tydfil",
+      "postcode": "CF48 2UR",
+      "lat": 51.809,
+      "lng": -3.408,
+      "phone": "01639 700388",
+      "website": "https://www.callofthewild.co.uk/",
+      "googleRating": 4.7,
+      "reviewCount": 180,
+      "description": "Offers a wide range of outdoor activities and team-building events in the Brecon Beacons, including gorge walking experiences.",
+      "relevantActivities": [
+        "gorge-walking"
+      ],
+      "services": [
+        "guided tours",
+        "corporate events",
+        "team building"
+      ],
+      "priceRange": "££",
+      "notes": "Experienced provider of outdoor activities.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Adventures Wales",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Unit 14A, Mamhilad Park Estate, Pontypool",
+      "postcode": "NP4 0HZ",
+      "lat": 51.715,
+      "lng": -3.037,
+      "phone": "01495 308000",
+      "website": "https://adventureswales.co.uk/",
+      "googleRating": 5.0,
+      "reviewCount": 50,
+      "description": "Delivers multi-activity adventures in South Wales, including popular gorge walking excursions.",
+      "relevantActivities": [
+        "gorge-walking",
+        "coasteering",
+        "multi-activities"
+      ],
+      "services": [
+        "stag/hen parties",
+        "corporate events",
+        "guided tours"
+      ],
+      "priceRange": "££",
+      "notes": "Excellent reviews, wide range of packages.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Local Outdoor Shops Brecon",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "High Street, Brecon (Generic Location)",
+      "postcode": "LD3",
+      "lat": 51.948,
+      "lng": -3.39,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.2,
+      "reviewCount": 30,
+      "description": "Various local shops in Brecon provide outdoor gear rental and sales for activities like gorge walking.",
+      "relevantActivities": [
+        "gorge-walking"
+      ],
+      "services": [
+        "equipment rental",
+        "equipment sales",
+        "expert advice"
+      ],
+      "priceRange": "££",
+      "notes": "Essential for gear and advice.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Cotswold Outdoor",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 13, Abergavenny Retail Park, Lion Street, Abergavenny",
+      "postcode": "NP7 5YS",
+      "lat": 51.82,
+      "lng": -3.012,
+      "phone": "01873 851812",
+      "website": "https://www.cotswoldoutdoor.com/",
+      "googleRating": 4.3,
+      "reviewCount": 75,
+      "description": "A retailer offering outdoor clothing, footwear and equipment for activities such as gorge walking.",
+      "relevantActivities": [
+        "gorge-walking"
+      ],
+      "services": [
+        "equipment sales",
+        "expert advice",
+        "boot fitting"
+      ],
+      "priceRange": "££",
+      "notes": "Reliable source of quality outdoor gear.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Angel Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Pontneddfechan, Glynneath",
+      "postcode": "SA11 5NR",
+      "lat": 51.77,
+      "lng": -3.6,
+      "phone": "01639 722228",
+      "website": null,
+      "googleRating": 4.4,
+      "reviewCount": 250,
+      "description": "A traditional pub in Pontneddfechan, ideal for a meal or drink after a gorge walking adventure.",
+      "relevantActivities": [
+        "gorge-walking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Popular spot for gorge walkers.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "The Ancient Briton",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Pen-y-Cae Inn, Brecon Road, Pen-y-cae",
+      "postcode": "SA9 1GL",
+      "lat": 51.785,
+      "lng": -3.675,
+      "phone": "01639 730291",
+      "website": "http://www.ancientbriton.co.uk/",
+      "googleRating": 4.3,
+      "reviewCount": 180,
+      "description": "A welcoming inn located near popular gorge walking spots, offering food and drinks.",
+      "relevantActivities": [
+        "gorge-walking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Good option for food and relaxation after a walk.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Star Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Talybont-on-Usk, Brecon",
+      "postcode": "LD3 7YS",
+      "lat": 51.894,
+      "lng": -3.273,
+      "phone": "01874 676635",
+      "website": null,
+      "googleRating": 4.5,
+      "reviewCount": 200,
+      "description": "A traditional pub providing a place to relax and refuel after a gorge walking expedition.",
+      "relevantActivities": [
+        "gorge-walking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Conveniently located for gorge walking routes.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "The Felin Fach Griffin",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Felin Fach, Brecon",
+      "postcode": "LD3 0UB",
+      "lat": 52.1,
+      "lng": -3.322,
+      "phone": "01874 620111",
+      "website": "https://eatdrinksleep.ltd.uk/felin-fach-griffin/",
+      "googleRating": 4.6,
+      "reviewCount": 300,
+      "description": "A stylish inn offering quality food and drink, a great place to unwind after a day of gorge walking.",
+      "relevantActivities": [
+        "gorge-walking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "£££",
+      "notes": "Upscale dining option in the Brecon Beacons.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Gorge Cafe",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Glynneath (Generic Location)",
+      "postcode": "SA11",
+      "lat": 51.766,
+      "lng": -3.616,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.0,
+      "reviewCount": 20,
+      "description": "A local cafe near the gorge walking area, ideal for a quick refreshment.",
+      "relevantActivities": [
+        "gorge-walking"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "Good for a quick stop after a hike.",
+      "inDatabase": false,
+      "priority": "low"
+    }
+  ]
+}

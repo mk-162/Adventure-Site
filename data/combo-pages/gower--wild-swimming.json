@@ -1,0 +1,989 @@
+{
+  "regionSlug": "gower",
+  "activityTypeSlug": "wild-swimming",
+  "title": "Wild Swimming in Gower",
+  "strapline": "Discover hidden coves and tidal pools for unforgettable wild swimming adventures on Gower.",
+  "metaTitle": "Wild Swimming Gower | Hidden Coves & Pools | Adventure Wales",
+  "metaDescription": "Explore Gower's stunning coastline with our guide to the best wild swimming spots. Find hidden coves, tidal pools, and expert tips for a safe and exhilarating experience.",
+  "heroAlt": "Wild swimmer in a secluded cove on the Gower Peninsula, surrounded by rocky cliffs and clear turquoise water.",
+  "introduction": "Gower, a designated Area of Outstanding Natural Beauty, offers some of the most rewarding wild swimming in Wales. Forget crowded beaches and chlorinated pools; here, you'll find secluded coves, dramatic cliffs, and crystal-clear waters teeming with life. The variety is incredible, from the iconic Blue Pool at Broughton Bay, a challenging tidal plunge pool, to the gentle rock pools of Tor Bay, perfect for families. \n\nWhat sets Gower apart is its accessibility and sheer natural beauty. You can easily combine a coastal walk with a refreshing dip, discovering hidden gems along the way. However, Gower's wild swimming isn't without its challenges. Tides are a major factor; always check tide times before you go, especially for spots like the Blue Pool and Three Cliffs Bay. Rip currents can also be strong, so it's essential to be a confident swimmer and understand the risks. \n\nWhile Gower welcomes all swimmers, it's best suited to those with some experience and a good understanding of open water safety. Families with young children will enjoy the sheltered tidal pools, while more adventurous swimmers can explore the deeper coves and bays. Remember to respect the environment, leave no trace, and enjoy the magic of wild swimming Gower has to offer.",
+  "bestSeason": "May-September",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Blue Pool (Broughton Bay)",
+      "slug": "blue-pool-broughton-bay",
+      "description": "The legendary Blue Pool is a deep, saltwater plunge pool carved into the rocks at Broughton Bay. Reaching it requires a scramble over rocks and is only accessible at low tide. The water is surprisingly cold, even in summer, and the pool deepens dramatically, making it suitable for strong swimmers only. Remember to check tide times carefully, as being caught by the incoming tide is dangerous.",
+      "difficulty": "Challenging",
+      "duration": "2-3 hours round trip (including access time)",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced open water swimmers seeking a unique challenge.",
+      "notSuitableFor": "Beginners, children, anyone with mobility issues.",
+      "bestSeason": "May-September (low tide is key)",
+      "parking": "Broughton Bay car park (SA3 1JF). £5-10 depending on the season. Arrive early on weekends and holidays, as it fills up quickly.",
+      "startPoint": {
+        "name": "Broughton Bay Car Park",
+        "lat": 51.613,
+        "lng": -4.263
+      },
+      "estimatedCost": "Free (parking £5-10)",
+      "operatorSlug": null,
+      "insiderTip": "Check Magicseaweed for swell forecast - large swells make access to the Blue Pool dangerous even at low tide."
+    },
+    {
+      "name": "Three Cliffs Bay",
+      "slug": "three-cliffs-bay",
+      "description": "A classic Gower view, Three Cliffs Bay offers stunning scenery and varied swimming opportunities. The river mouth provides a shallow area for paddling, while more experienced swimmers can venture further out into the bay. Be aware of strong currents, especially around the cliffs and the river mouth. The iconic Pennard Castle overlooks the bay, adding to its dramatic appeal.",
+      "difficulty": "Moderate",
+      "duration": "2-4 hours (depending on route)",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Confident swimmers comfortable with currents, families looking for paddling spots.",
+      "notSuitableFor": "Beginners without supervision, those unsure of tidal currents.",
+      "bestSeason": "June-September",
+      "parking": "Park at the National Trust car park in Southgate (SA3 2DH). £5 for non-members.",
+      "startPoint": {
+        "name": "National Trust Southgate Car Park",
+        "lat": 51.575,
+        "lng": -4.044
+      },
+      "estimatedCost": "Free (parking £5 for non-NT members)",
+      "operatorSlug": null,
+      "insiderTip": "At low tide, walk around to Pobbles Bay for even more secluded swimming spots."
+    },
+    {
+      "name": "Mewslade Bay",
+      "slug": "mewslade-bay",
+      "description": "Mewslade is a quiet, secluded bay backed by impressive cliffs. The walk down to the beach is steep, but the reward is a peaceful swimming experience. The water is generally clear and calm, making it ideal for a relaxing dip. Be aware of the tide, as the beach can be cut off at high tide. There is also a cave on the eastern side of the beach to explore.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Those seeking a peaceful and secluded swim.",
+      "notSuitableFor": "Those with mobility issues due to the steep walk.",
+      "bestSeason": "June-August",
+      "parking": "Limited parking at the top of the lane leading to the beach (SA3 2EW). Get there early, especially during peak season.",
+      "startPoint": {
+        "name": "Mewslade Parking Area",
+        "lat": 51.56,
+        "lng": -4.187
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Bring a picnic as there are no facilities at Mewslade Bay."
+    },
+    {
+      "name": "Fall Bay",
+      "slug": "fall-bay",
+      "description": "Fall Bay is a wild and remote beach accessible only by a long walk across fields. The swim here is rewarding, with clear water and stunning views of Worm's Head. Be prepared for strong winds and waves, as Fall Bay is exposed to the Atlantic. Check the weather forecast carefully before you go. This beach is also popular with seals, so be respectful and keep your distance.",
+      "difficulty": "Challenging",
+      "duration": "4-5 hours (including walk)",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced wild swimmers comfortable with challenging conditions.",
+      "notSuitableFor": "Beginners, those seeking an easy access swim.",
+      "bestSeason": "June-September (check weather forecast)",
+      "parking": "Park at Rhossili (SA3 1PL) and walk along the coastal path.",
+      "startPoint": {
+        "name": "Rhossili Car Park",
+        "lat": 51.564,
+        "lng": -4.303
+      },
+      "estimatedCost": "Free (parking £6 at Rhossili)",
+      "operatorSlug": null,
+      "insiderTip": "The walk to Fall Bay is exposed, so bring plenty of water and sun protection."
+    },
+    {
+      "name": "Brandy Cove",
+      "slug": "brandy-cove",
+      "description": "Legend says smugglers used this small, sheltered cove. It offers calm waters perfect for a leisurely swim. The beach is pebbly, but the water is clean and clear. It's a great spot for a quick dip after a coastal walk. There's a steep path down to the cove, so wear appropriate footwear.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, those seeking a calm and sheltered swim.",
+      "notSuitableFor": "Those with limited mobility due to the steep path.",
+      "bestSeason": "June-September",
+      "parking": "Park at Pwlldu Head car park (SA3 2EB) and walk along the coastal path.",
+      "startPoint": {
+        "name": "Pwlldu Head Car Park",
+        "lat": 51.576,
+        "lng": -3.965
+      },
+      "estimatedCost": "Free (parking £3 at Pwlldu Head)",
+      "operatorSlug": null,
+      "insiderTip": "Combine your swim with a walk to Pwlldu Bay for a longer adventure."
+    },
+    {
+      "name": "Pwll Du Bay",
+      "slug": "pwll-du-bay",
+      "description": "Pwll Du Bay is a shingle beach accessible by a walk down a valley. The water is generally calm and clear, making it ideal for swimming. It's a popular spot for picnics and relaxing on the beach. There's no lifeguard service, so swim with caution. The walk to the beach is relatively easy, making it suitable for families.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, those seeking a relatively easy access swim.",
+      "notSuitableFor": "Those seeking a sandy beach.",
+      "bestSeason": "June-September",
+      "parking": "Park at Pwlldu Head car park (SA3 2EB) and walk down the valley.",
+      "startPoint": {
+        "name": "Pwlldu Head Car Park",
+        "lat": 51.576,
+        "lng": -3.965
+      },
+      "estimatedCost": "Free (parking £3 at Pwlldu Head)",
+      "operatorSlug": null,
+      "insiderTip": "Bring sturdy shoes for the walk down the valley, as the path can be uneven."
+    },
+    {
+      "name": "Caswell Bay",
+      "slug": "caswell-bay",
+      "description": "A popular surfing beach, Caswell Bay also offers good swimming conditions. The water is generally clean and the beach is lifeguarded during the summer months. There are plenty of facilities nearby, including cafes and shops. It's a great spot for families and those new to wild swimming. Check the surf report before you go.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, beginners, those seeking a beach with facilities.",
+      "notSuitableFor": "Those seeking a secluded and peaceful swim.",
+      "bestSeason": "June-September",
+      "parking": "Caswell Bay car park (SA3 3BS). £1 per hour.",
+      "startPoint": {
+        "name": "Caswell Bay Car Park",
+        "lat": 51.575,
+        "lng": -3.94
+      },
+      "estimatedCost": "Free (parking £1/hour)",
+      "operatorSlug": null,
+      "insiderTip": "Check the surf report before you go – Caswell can get choppy."
+    },
+    {
+      "name": "Rhossili Bay",
+      "slug": "rhossili-bay",
+      "description": "Rhossili Bay is famous for its stunning views of Worm's Head. The beach is vast and sandy, perfect for a long swim. Be aware of strong currents and waves, especially near Worm's Head. There's a lifeguard service during the summer months. The walk down to the beach is steep, but the views are worth it.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced swimmers comfortable with waves and currents.",
+      "notSuitableFor": "Beginners without supervision.",
+      "bestSeason": "June-September",
+      "parking": "Rhossili car park (SA3 1PL). £6 per day.",
+      "startPoint": {
+        "name": "Rhossili Car Park",
+        "lat": 51.564,
+        "lng": -4.303
+      },
+      "estimatedCost": "Free (parking £6)",
+      "operatorSlug": null,
+      "insiderTip": "Walk to the end of the beach towards Worm's Head at low tide for unique rock formations."
+    },
+    {
+      "name": "Tor Bay rock pools",
+      "slug": "tor-bay-rock-pools",
+      "description": "At low tide, Tor Bay reveals an extensive network of rock pools, perfect for paddling, exploring marine life, and gentle swimming. Ideal for families with young children. Be mindful of sharp rocks and slippery seaweed. The views across Oxwich Bay are stunning.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families with young children, those seeking a safe and shallow swim.",
+      "notSuitableFor": "Serious swimmers wanting a long swim.",
+      "bestSeason": "May-September",
+      "parking": "Tor Bay car park (SA3 1HB). Limited space. Alternatively park at Oxwich and walk.",
+      "startPoint": {
+        "name": "Tor Bay Car Park",
+        "lat": 51.574,
+        "lng": -4.138
+      },
+      "estimatedCost": "Free (parking may apply)",
+      "operatorSlug": null,
+      "insiderTip": "Bring a bucket and net for exploring the rock pools – but remember to put everything back!"
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Gower's coastal weather can be unpredictable. Sea temperatures peak in August, but even then, a wetsuit is recommended. Strong winds and waves can make swimming dangerous, so always check the forecast and tide times before you go. Be aware of sea fog, which can roll in quickly and reduce visibility.",
+    "weatherLinks": [
+      {
+        "name": "Met Office",
+        "url": "https://www.metoffice.gov.uk/weather/forecast/gcpvn095g"
+      },
+      {
+        "name": "Magicseaweed",
+        "url": "https://magicseaweed.com/Gower-Surf-Report/780/"
+      }
+    ],
+    "gearChecklist": [
+      "Wetsuit - Even in summer, the water can be cold.",
+      "Swim cap - For warmth and visibility.",
+      "Towel - A quick-drying microfibre towel is ideal.",
+      "Water shoes - Protect your feet on rocky beaches and in rock pools.",
+      "Dry bag - To keep your valuables safe and dry.",
+      "Brightly coloured float - For increased visibility in the water.",
+      "First-aid kit - For minor injuries.",
+      "Sunscreen - Even on cloudy days, the sun can be strong.",
+      "Water and snacks - Especially for longer swims.",
+      "Whistle - To attract attention in an emergency."
+    ],
+    "gearHire": [
+      {
+        "name": "PJ's Surf Shop",
+        "location": "Llangennith",
+        "url": "https://www.pjs-surfshop.co.uk/"
+      },
+      {
+        "name": "Oxwich Watersports",
+        "location": "Oxwich Bay",
+        "url": "https://oxwichwatersports.co.uk/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "4h",
+          "route": "Via M4"
+        },
+        {
+          "from": "Manchester",
+          "duration": "4h 30m",
+          "route": "Via M6 and M5"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3h",
+          "route": "Via M5 and M4"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "1h 15m",
+          "route": "Via M4"
+        }
+      ],
+      "publicTransport": "Swansea is the nearest train station. From Swansea, take a bus to various Gower villages. The Gower Explorer bus service connects many of the coastal villages during the summer months.",
+      "parkingTips": "Parking can be limited, especially during peak season. Arrive early or use park-and-ride services. Be aware of parking restrictions and charges. Consider carpooling to reduce congestion."
+    },
+    "safety": "Always swim with a buddy. Check tide times and weather conditions before you go. Be aware of currents and rip tides. Avoid swimming near sewage outfalls or in polluted water. Tell someone where you're going and when you expect to be back. In an emergency, call 999 and ask for the Coastguard. Mobile phone signal can be patchy in some areas of Gower."
+  },
+  "faqs": [
+    {
+      "question": "Is wild swimming in Gower safe?",
+      "answer": "Wild swimming carries inherent risks. Check tide times, weather conditions, and be aware of currents. Never swim alone, and always tell someone your plans. Consider wearing a brightly coloured float for visibility. If in doubt, don't go out!"
+    },
+    {
+      "question": "What is the water temperature in Gower?",
+      "answer": "Sea temperatures in Gower typically range from 12-16°C in summer. A wetsuit is recommended, even in August, to stay comfortable for longer swims."
+    },
+    {
+      "question": "Are there any guided wild swimming tours in Gower?",
+      "answer": "While specific 'wild swimming tours' are rare, coasteering companies like Adventure Britain and Gower Activity Centres often include swimming as part of their activities. This is a great way to explore hidden coves with expert guidance."
+    },
+    {
+      "question": "Where can I hire a wetsuit in Gower?",
+      "answer": "PJ's Surf Shop in Llangennith and Oxwich Watersports at Oxwich Bay both offer wetsuit hire. It's advisable to book in advance during peak season."
+    },
+    {
+      "question": "Are there any lifeguards on Gower beaches?",
+      "answer": "Lifeguards are present on popular beaches like Caswell Bay and Rhossili Bay during the summer months (usually from July to September). However, many smaller coves and bays are not lifeguarded, so swim with caution."
+    },
+    {
+      "question": "Can I swim in the Blue Pool at Broughton Bay?",
+      "answer": "Yes, you can swim in the Blue Pool, but it's only accessible at low tide and requires a scramble over rocks. It's a deep pool and suitable for strong swimmers only. Check tide times carefully and be aware of swell conditions."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "PJ's Surf Shop",
+        "slug": "pjs-surf-shop",
+        "address": "Llangennith, Swansea SA3 1JD",
+        "lat": 51.601,
+        "lng": -4.276,
+        "description": "A Gower institution, PJ's is the go-to for surf gear, wetsuits, and all things beach-related. They also offer wetsuit hire and expert advice.",
+        "website": "https://www.pjs-surfshop.co.uk/",
+        "phone": "01792 386054",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 150
+      },
+      {
+        "name": "Oxwich Watersports",
+        "slug": "oxwich-watersports",
+        "address": "Oxwich Bay, Swansea SA3 1LS",
+        "lat": 51.573,
+        "lng": -4.141,
+        "description": "Located right on Oxwich Bay, they offer wetsuit and equipment hire, as well as lessons for various watersports.",
+        "website": "https://oxwichwatersports.co.uk/",
+        "phone": "01792 371662",
+        "services": [
+          "gear sales",
+          "hire",
+          "lessons"
+        ],
+        "googleRating": 4.8,
+        "reviewCount": 100
+      },
+      {
+        "name": "Shoreline Surf Shop",
+        "slug": "shoreline-surf-shop",
+        "address": "32 Newton Rd, Mumbles, Swansea SA3 4AX",
+        "lat": 51.578,
+        "lng": -3.971,
+        "description": "Surf shop located near Mumbles offering equipment sales and rentals. Friendly atmosphere.",
+        "website": "https://www.shorelinesurfshop.co.uk/",
+        "phone": "01792 363366",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 70
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The King Arthur Hotel",
+        "slug": "the-king-arthur-hotel",
+        "address": "Reynoldston, Swansea SA3 1AD",
+        "lat": 51.587,
+        "lng": -4.163,
+        "description": "A Gower institution, this hotel and pub is known for its hearty meals, cosy atmosphere, and beautiful gardens. Perfect for a post-swim pint and a filling meal.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "https://www.kingarthurhotel.co.uk/",
+        "knownFor": "Hearty meals, Sunday lunch, real ales"
+      },
+      {
+        "name": "King's Head",
+        "slug": "kings-head",
+        "address": "Llangennith, Swansea SA3 1JD",
+        "lat": 51.602,
+        "lng": -4.275,
+        "description": "A classic village pub in Llangennith, popular with surfers and walkers. Expect good food, a friendly atmosphere, and a great selection of local beers.",
+        "vibe": "Surfer hangout",
+        "priceRange": "££",
+        "website": "https://www.kingsheadgower.co.uk/",
+        "knownFor": "Post-surf beers, pub classics, live music"
+      },
+      {
+        "name": "Verdi's",
+        "slug": "verdis",
+        "address": "Knab Rock, Mumbles Rd, Mumbles, Swansea SA3 4EE",
+        "lat": 51.578,
+        "lng": -3.97,
+        "description": "Italian cafe and ice cream parlour with a stunning view overlooking Swansea Bay. Perfect for a post-swim treat or a light lunch.",
+        "vibe": "Family-friendly cafe",
+        "priceRange": "£",
+        "website": "https://www.verdis-cafe.co.uk/",
+        "knownFor": "Ice cream, coffee, Italian food"
+      },
+      {
+        "name": "Bay Bistro",
+        "slug": "bay-bistro",
+        "address": "Rhossili, Swansea SA3 1PL",
+        "lat": 51.563,
+        "lng": -4.303,
+        "description": "Located in Rhossili with panoramic views of the bay. Serves delicious food and drinks, perfect after a swim at Rhossili or Fall Bay.",
+        "vibe": "Coastal bistro",
+        "priceRange": "££",
+        "website": "https://www.thebaybistro.co.uk/",
+        "knownFor": "Seafood, cakes, stunning views"
+      },
+      {
+        "name": "The Gower Inn",
+        "slug": "the-gower-inn",
+        "address": "Parkmill, Swansea SA3 2EH",
+        "lat": 51.584,
+        "lng": -4.053,
+        "description": "A traditional pub nestled in the picturesque Parkmill valley, a short distance from Three Cliffs Bay. Serves home cooked meals and local ales in a friendly atmosphere.",
+        "vibe": "Traditional pub",
+        "priceRange": "££",
+        "website": "https://www.thegowerinn.com/",
+        "knownFor": "Home cooked meals, local ales"
+      },
+      {
+        "name": "Beach House Restaurant",
+        "slug": "beach-house-restaurant",
+        "address": "Oxwich Beach, Oxwich, Swansea SA3 1LS",
+        "lat": 51.573,
+        "lng": -4.14,
+        "description": "Fine dining restaurant right on Oxwich beach. Serves gourmet meals with stunning views. A more luxurious post-swim treat.",
+        "vibe": "Fine dining",
+        "priceRange": "£££",
+        "website": "https://www.beachhouseoxwich.co.uk/",
+        "knownFor": "Gourmet food, stunning views, Michelin star"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Three Cliffs Holiday Park",
+        "slug": "three-cliffs-holiday-park",
+        "description": "Camping and caravan site with stunning views of Three Cliffs Bay. Perfect for combining wild swimming with a camping holiday.",
+        "type": "campsite",
+        "priceRange": "££",
+        "nearestSpot": "Three Cliffs Bay (5 min walk)",
+        "website": "https://threecliffsbay.com/"
+      },
+      {
+        "name": "The Gower Hotel",
+        "slug": "the-gower-hotel",
+        "description": "A comfortable hotel in Bishopston, a short drive from many of Gower's best swimming spots. Offers a range of rooms and a restaurant.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Caswell Bay (10 min drive)",
+        "website": "https://www.thegowerhotel.co.uk/"
+      },
+      {
+        "name": "Oxwich Bay Hotel",
+        "slug": "oxwich-bay-hotel",
+        "description": "Located right on Oxwich Bay, this hotel offers easy access to the beach and stunning sea views. Perfect for a relaxing swimming getaway.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Oxwich Bay (on site)",
+        "website": "https://www.oxwichbayhotel.co.uk/"
+      },
+      {
+        "name": "Pitton Cross Camping",
+        "slug": "pitton-cross-camping",
+        "description": "A family-run campsite near Rhossili Bay, offering a peaceful base for exploring the west of Gower.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Rhossili Bay (10 min drive)",
+        "website": "https://www.pittoncross.co.uk/"
+      },
+      {
+        "name": "Oldwalls Gower",
+        "slug": "oldwalls-gower",
+        "description": "A luxury collection of self-catering cottages and lodges, ideal for families or groups looking for a comfortable base for exploring Gower.",
+        "type": "glamping",
+        "priceRange": "£££",
+        "nearestSpot": "Oxwich Bay (10 min drive)",
+        "website": "https://www.oldwallsgower.com/"
+      },
+      {
+        "name": "Shepherd's Hut at Nicholaston Farm",
+        "slug": "shepherds-hut-nicholaston-farm",
+        "description": "Quirky and comfortable shepherd's hut accommodation on a working farm near Nicholaston Burrows. A unique way to experience rural Gower.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Three Cliffs Bay (15 min drive)",
+        "website": null
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Gower Triathlon",
+      "type": "race",
+      "monthTypical": "June",
+      "description": "A challenging triathlon featuring a sea swim in Oxwich Bay, followed by a bike ride and run through the Gower Peninsula.",
+      "website": "https://www.activitywalesevents.org.uk/events/gower-standard-triathlon/",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "registrationCost": 75
+    },
+    {
+      "name": "Gower Walking Festival",
+      "type": "festival",
+      "monthTypical": "September",
+      "description": "A week-long festival celebrating the Gower Peninsula's stunning coastline and countryside, with guided walks exploring various trails and landmarks, often including coastal swims.",
+      "website": "https://www.gowerwalkingfestival.uk/",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "registrationCost": 10
+    },
+    {
+      "name": "Mumbles Raft Race",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "A fun and wacky raft race in Mumbles, raising money for charity. While not strictly wild swimming, many participants take a dip in the sea.",
+      "website": "https://www.mumbleslifeboat.org.uk/",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "registrationCost": 25
+    }
+  ],
+  "keywords": {
+    "primary": "wild swimming gower",
+    "secondary": [
+      "gower wild swimming locations",
+      "best wild swimming spots gower",
+      "open water swimming gower",
+      "gower coast swimming",
+      "swimming gower beaches"
+    ],
+    "longTail": [
+      "where to wild swim in gower peninsula",
+      "safe wild swimming spots gower for families",
+      "wild swimming gower with tidal pools",
+      "guided wild swimming tours gower peninsula",
+      "what to wear wild swimming gower",
+      "wetsuit hire for wild swimming gower",
+      "best time of year for wild swimming gower",
+      "easy access wild swimming spots in gower",
+      "wild swimming rhossili bay",
+      "wild swimming three cliffs bay",
+      "wild swimming blue pool broughton bay",
+      "is wild swimming safe in gower"
+    ],
+    "localIntent": [
+      "wild swimming swansea",
+      "wild swimming mumbles",
+      "wild swimming llangennith",
+      "wild swimming rhossili",
+      "wild swimming oxwich"
+    ],
+    "commercialIntent": [
+      "guided wild swimming gower",
+      "wetsuit hire gower",
+      "wild swimming tours gower",
+      "wild swimming equipment gower",
+      "wild swimming gower price"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Wild Swimming in Pembrokeshire"
+      },
+      {
+        "regionSlug": "snowdonia",
+        "label": "Wild Swimming in Snowdonia"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "surfing",
+        "label": "Surfing in Gower"
+      },
+      {
+        "activityTypeSlug": "coasteering",
+        "label": "Coasteering in Gower"
+      },
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Gower"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Gower Activity Centres",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Nicholaston House, Penmaen, Swansea",
+      "postcode": "SA3 2HL",
+      "lat": 51.585,
+      "lng": -4.084,
+      "phone": "01792 371318",
+      "website": "https://www.goweractivitycentres.co.uk/",
+      "googleRating": null,
+      "reviewCount": null,
+      "description": "Offers a range of outdoor activities, including coasteering, that can be adapted for wild swimming experiences.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "guided-swims",
+        "coasteering",
+        "equipment-rental"
+      ],
+      "priceRange": "££",
+      "notes": "A known operator, offering a good starting point for wild swimming with experienced guides.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "PJ's Surf Shop",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Llangennith, Gower",
+      "postcode": "SA3 1JD",
+      "lat": 51.604,
+      "lng": -4.276,
+      "phone": "01792 386068",
+      "website": null,
+      "googleRating": null,
+      "reviewCount": null,
+      "description": "Provides wetsuit and other gear rentals suitable for wild swimming, located conveniently near Llangennith beach.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "wetsuit-rental",
+        "swimwear",
+        "accessories"
+      ],
+      "priceRange": "£",
+      "notes": "Essential for gear in the Llangennith area.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "The King Arthur Hotel",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Higher Green, Reynoldston, Swansea",
+      "postcode": "SA3 1AD",
+      "lat": 51.582,
+      "lng": -4.172,
+      "phone": "01792 390775",
+      "website": "https://kingarthurhotel.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 1200,
+      "description": "A popular pub and restaurant offering post-swim refreshments and meals in a comfortable setting. Central Gower location.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Great place for a post-swim meal and drink.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "King's Head",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Llangennith, Gower",
+      "postcode": "SA3 1JD",
+      "lat": 51.604,
+      "lng": -4.275,
+      "phone": "01792 386212",
+      "website": null,
+      "googleRating": 4.3,
+      "reviewCount": 600,
+      "description": "A traditional pub near Llangennith beach, offering a convenient spot for food and drinks after a swim.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "A classic post-swim pub option near a popular beach.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Verdi's",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Knab Rock, Mumbles Road, The Mumbles, Swansea",
+      "postcode": "SA3 4EE",
+      "lat": 51.57,
+      "lng": -3.986,
+      "phone": "01792 369965",
+      "website": "https://verdis-cafe.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 2500,
+      "description": "A popular cafe and ice cream parlour in Mumbles, ideal for a post-swim treat with views of the bay.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "coffee",
+        "ice-cream",
+        "food"
+      ],
+      "priceRange": "£",
+      "notes": "Perfect for a post-swim treat with stunning views.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Bay Bistro",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Rhossili Bay, Rhossili, Swansea",
+      "postcode": "SA3 1PL",
+      "lat": 51.576,
+      "lng": -4.304,
+      "phone": "01792 390051",
+      "website": "https://www.thewormhead.co.uk/bay-bistro",
+      "googleRating": 4.5,
+      "reviewCount": 800,
+      "description": "Located with spectacular views over Rhossili Bay, the Bay Bistro is a great place to refuel after your swim.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "Rhossili Bay eatery.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Adventure Britain",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Suite 5, Business Centre, Navigation Park, Abercynon",
+      "postcode": "CF45 4SN",
+      "lat": 51.63,
+      "lng": -3.29,
+      "phone": "01685 888790",
+      "website": "https://www.adventurebritain.com/",
+      "googleRating": 4.8,
+      "reviewCount": 25,
+      "description": "Offers various outdoor adventures around Wales; while not specifically wild swimming, their canyoning and gorge walking could be relevant.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "canyoning",
+        "gorge-walking"
+      ],
+      "priceRange": "££",
+      "notes": "May have some crossover activities suitable for adventurous wild swimmers.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Llangennith Surf School",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Llangennith Beach, Llangennith",
+      "postcode": "SA3 1JD",
+      "lat": 51.605,
+      "lng": -4.275,
+      "phone": "07974 734107",
+      "website": "http://www.llangennithsurfschool.com/",
+      "googleRating": 4.8,
+      "reviewCount": 150,
+      "description": "Primarily a surf school, but they may offer advice or guidance on safe swimming conditions at Llangennith beach.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "surf-lessons",
+        "advice"
+      ],
+      "priceRange": "££",
+      "notes": "Good local knowledge of beach conditions.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Oxwich Watersports",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Oxwich Bay, Oxwich",
+      "postcode": "SA3 1LS",
+      "lat": 51.56,
+      "lng": -4.04,
+      "phone": "07970 289541",
+      "website": "https://oxwichwatersports.co.uk/",
+      "googleRating": 4.8,
+      "reviewCount": 100,
+      "description": "Offers SUP, kayaking and coasteering at Oxwich Bay, which may be relevant to wild swimming enthusiasts.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "sup",
+        "kayaking",
+        "coasteering"
+      ],
+      "priceRange": "££",
+      "notes": "Alternative water sports at Oxwich.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Quest Adventure",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Unit 5, Parc Y Werin, Margam, Port Talbot",
+      "postcode": "SA13 2PJ",
+      "lat": 51.56,
+      "lng": -3.75,
+      "phone": "07515 535825",
+      "website": "https://questadventure.co.uk/",
+      "googleRating": 4.7,
+      "reviewCount": 80,
+      "description": "Offers coasteering and multi-activities around South Wales which could be adapted for wild swimming.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "coasteering",
+        "multi-activities"
+      ],
+      "priceRange": "££",
+      "notes": "Good for Coasteering focused activites",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Rip N Rock",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Based in Port Eynon, Gower",
+      "postcode": "SA3",
+      "lat": 51.56,
+      "lng": -4.15,
+      "phone": "07980 845559",
+      "website": "https://www.ripnrock.co.uk/",
+      "googleRating": 5.0,
+      "reviewCount": 20,
+      "description": "Offers Coasteering and surfing adventures around the Gower coast.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "coasteering",
+        "surfing",
+        "climbing"
+      ],
+      "priceRange": "££",
+      "notes": "A strong coasteering focus.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Three Cliffs Bay",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Three Cliffs Bay, Swansea",
+      "postcode": "SA3 2HD",
+      "lat": 51.58,
+      "lng": -4.06,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.8,
+      "reviewCount": 3000,
+      "description": "A stunning bay known for its iconic three cliffs, sandy beach, and opportunities for wild swimming.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "swimming",
+        "walking",
+        "beach"
+      ],
+      "priceRange": "£",
+      "notes": "A very popular spot. Be aware of currents and tides.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Rhossili Bay",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Rhossili, Swansea",
+      "postcode": "SA3 1PL",
+      "lat": 51.57,
+      "lng": -4.3,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.9,
+      "reviewCount": 4000,
+      "description": "A wide, sandy bay famous for its dramatic coastline and the wreck of the Helvetia, offering good wild swimming conditions.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "swimming",
+        "walking",
+        "beach"
+      ],
+      "priceRange": "£",
+      "notes": "Award winning beach, exposed to the Atlantic",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Port Eynon Beach",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Port Eynon, Swansea",
+      "postcode": "SA3 1NN",
+      "lat": 51.55,
+      "lng": -4.14,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.7,
+      "reviewCount": 1500,
+      "description": "A popular, sheltered beach in Port Eynon village, known for its calm waters suitable for beginner wild swimmers.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "swimming",
+        "walking",
+        "beach"
+      ],
+      "priceRange": "£",
+      "notes": "Sheltered and popular.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Bracelet Bay",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Mumbles, Swansea",
+      "postcode": "SA3 4JT",
+      "lat": 51.56,
+      "lng": -3.98,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.6,
+      "reviewCount": 800,
+      "description": "A small, rocky bay near Mumbles known for its clear waters and rock pools, suitable for a quick swim.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "swimming",
+        "rockpooling",
+        "beach"
+      ],
+      "priceRange": "£",
+      "notes": "Nice cove at the Mumbles Headland.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Langland Bay",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Langland Bay Road, Swansea",
+      "postcode": "SA3 4QR",
+      "lat": 51.572,
+      "lng": -4.007,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.7,
+      "reviewCount": 1800,
+      "description": "A sandy beach with beach huts, popular for swimming and sunbathing.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "swimming",
+        "beach",
+        "coastal walks"
+      ],
+      "priceRange": "£",
+      "notes": "Sandy beach near Mumbles.",
+      "inDatabase": false,
+      "priority": "medium"
+    }
+  ]
+}

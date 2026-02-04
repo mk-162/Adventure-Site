@@ -1,0 +1,980 @@
+{
+  "regionSlug": "pembrokeshire",
+  "activityTypeSlug": "wild-swimming",
+  "title": "Wild Swimming in Pembrokeshire",
+  "strapline": "Dive into crystal-clear waters and hidden coves: Pembrokeshire's wild swimming scene awaits.",
+  "metaTitle": "Wild Swimming Pembrokeshire | Secluded Coves | Adventure Wales",
+  "metaDescription": "Discover the best wild swimming pembrokeshire has to offer! From the Blue Lagoon to Barafundle Bay, find secret spots and essential tips.",
+  "heroAlt": "A wild swimmer emerges from the turquoise waters of the Blue Lagoon, Pembrokeshire, with slate cliffs in the background.",
+  "introduction": "Pembrokeshire Coast National Park isn't just about clifftop walks; it's a wild swimming paradise. The rugged coastline, dotted with secluded coves and boasting unbelievably clear water (on a good day!), makes it ideal for both seasoned wild swimmers and adventurous beginners. What sets Pembrokeshire apart is the sheer variety: you can hurl yourself into the exhilarating depths of the Blue Lagoon, paddle gently in the sheltered waters of Barafundle Bay, or explore hidden sea caves at low tide. \n\nHowever, it's not all sunshine and lollipops. Pembrokeshire waters can be surprisingly cold, even in summer, and the Atlantic swells can turn a millpond into a washing machine in a heartbeat. Respecting the sea is paramount. If you're new to wild swimming, stick to sheltered spots and consider a guided tour – TYF Adventure and Preseli Venture are excellent. \n\n**Wild swimming Pembrokeshire** is best suited to those who enjoy a bit of adventure. You might have to scramble down rocks, navigate slippery seaweed, and keep an eye on the tides. It's perfect for independent spirits who appreciate the raw beauty of the Welsh coastline and the invigorating feeling of immersing themselves in nature. Be warned – the post-swim pasty from The Shed is dangerously addictive. Finding parking near some of the more popular spots can be a nightmare in the summer, so arrive early or be prepared to walk. And don’t even think about swimming after a heavy rainfall, the water quality plummets.\n\nEmbrace the wild, respect the sea, and prepare for an unforgettable **wild swimming pembrokeshire** experience. You might even spot a grey seal! Don't forget that final piece of **wild swimming Pembrokeshire** advice - always check the tides!",
+  "bestSeason": "June-September",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Blue Lagoon (Abereiddy)",
+      "slug": "blue-lagoon-abereiddy",
+      "description": "The flooded slate quarry offers an unforgettable swimming experience. Jump from the varying cliff heights (carefully!), explore the deep, turquoise waters, and feel the rush of the waves. It's incredibly popular so expect company, but the setting is truly unique.",
+      "difficulty": "Moderate",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Thrill-seekers, experienced swimmers looking for a unique setting, those who enjoy a crowd.",
+      "notSuitableFor": "Beginners in rough weather, those with a fear of heights, anyone who hates crowds.",
+      "bestSeason": "June-September (check weather forecast)",
+      "parking": "Abereiddy beach car park. Can get VERY busy. £5 for the day, arrive before 10am in peak season or park further away and walk.",
+      "startPoint": {
+        "name": "Abereiddy Beach Car Park",
+        "lat": 51.9546,
+        "lng": -5.2309
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": "tyf-adventure",
+      "insiderTip": "Walk around the headland to the south for some quieter swimming spots and a different perspective on the lagoon. Be careful on the rocks!"
+    },
+    {
+      "name": "Barafundle Bay",
+      "slug": "barafundle-bay",
+      "description": "Often voted one of the UK's best beaches, Barafundle boasts golden sands and crystal-clear, sheltered waters. It's a bit of a walk to get there, which keeps the crowds at bay. Perfect for a relaxing swim and sunbathing.",
+      "difficulty": "Easy",
+      "duration": "1-3 hours (including walk)",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, beginners, those seeking a beautiful and relatively safe swimming spot.",
+      "notSuitableFor": "Those with mobility issues (due to the walk), surfers looking for waves.",
+      "bestSeason": "June-September",
+      "parking": "Stackpole Quay National Trust car park. £5 for non-members. About a half-mile walk to the beach.",
+      "startPoint": {
+        "name": "Stackpole Quay",
+        "lat": 51.6378,
+        "lng": -4.8955
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": null,
+      "insiderTip": "Pack a picnic and stay for the day. The sunset over Barafundle is magical."
+    },
+    {
+      "name": "Aber Mawr",
+      "slug": "aber-mawr",
+      "description": "A secluded, north-facing beach known for its dramatic scenery and good surf. The swimming can be good here, but only when the waves aren't too big. It's often quieter than other beaches in the area.",
+      "difficulty": "Moderate (depending on conditions)",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced swimmers, surfers (when there are waves), those seeking solitude.",
+      "notSuitableFor": "Beginners, families with young children in rough weather.",
+      "bestSeason": "May-September",
+      "parking": "Small car park near the beach. Free, but fills up quickly. Limited space to park along the road.",
+      "startPoint": {
+        "name": "Aber Mawr Beach Car Park",
+        "lat": 51.9894,
+        "lng": -5.2507
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Check the surf report before you go. This beach can get some serious waves."
+    },
+    {
+      "name": "Caerfai Bay",
+      "slug": "caerfai-bay",
+      "description": "A small, sheltered bay with colourful cliffs and relatively calm waters. It's a popular spot for families and a good place to learn to swim. The purple sandstone cliffs are striking.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, beginners, those seeking a safe and scenic swimming spot.",
+      "notSuitableFor": "Surfers, those seeking solitude.",
+      "bestSeason": "June-September",
+      "parking": "Caerfai Farm campsite car park. Small charge. Limited parking along the road.",
+      "startPoint": {
+        "name": "Caerfai Farm Campsite",
+        "lat": 51.8759,
+        "lng": -5.2831
+      },
+      "estimatedCost": "Free (parking £2-3)",
+      "operatorSlug": null,
+      "insiderTip": "Head to the nearby St Non's Chapel and Well for a bit of history after your swim."
+    },
+    {
+      "name": "Whitesands Bay",
+      "slug": "whitesands-bay",
+      "description": "A large, sandy beach with powerful waves, popular with surfers. The swimming is best on calmer days, but be aware of strong currents. Lifeguards patrol in the summer.",
+      "difficulty": "Moderate (due to currents)",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced swimmers, surfers, those who enjoy a lively beach atmosphere.",
+      "notSuitableFor": "Beginners, families with young children on rough days.",
+      "bestSeason": "May-September",
+      "parking": "Whitesands Bay car park. Can get very busy. Pay and display.",
+      "startPoint": {
+        "name": "Whitesands Bay Car Park",
+        "lat": 51.9343,
+        "lng": -5.2588
+      },
+      "estimatedCost": "Free (parking £5-10)",
+      "operatorSlug": null,
+      "insiderTip": "Check the lifeguard flags before you enter the water. Respect the currents."
+    },
+    {
+      "name": "Porthgain harbour",
+      "slug": "porthgain-harbour",
+      "description": "Swim within the historic harbour walls for a unique experience. The water is usually calm and sheltered, offering a safe and interesting swim with views of the old brickworks.",
+      "difficulty": "Easy",
+      "duration": "30 mins - 1 hour",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families, those seeking a sheltered and historical swim",
+      "notSuitableFor": "Those looking for a natural beach experience, strong wave lovers",
+      "bestSeason": "May-September",
+      "parking": "Porthgain car park. Can be busy, but turnover is decent. Pay and display.",
+      "startPoint": {
+        "name": "Porthgain Harbour",
+        "lat": 51.9145,
+        "lng": -5.2106
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "After your swim, reward yourself with fish and chips at The Shed – it's legendary."
+    },
+    {
+      "name": "Stackpole Quay",
+      "slug": "stackpole-quay",
+      "description": "Swim around the picturesque Stackpole Quay. The water is clear and relatively calm, perfect for a short dip. You can explore the little harbour and enjoy the views of the surrounding coastline. Note that this is also the access point for Barafundle.",
+      "difficulty": "Easy",
+      "duration": "30 mins - 1 hour",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families, those seeking a quick and scenic swim",
+      "notSuitableFor": "Those looking for a long swim or challenging conditions",
+      "bestSeason": "May-September",
+      "parking": "Stackpole Quay National Trust car park. £5 for non-members.",
+      "startPoint": {
+        "name": "Stackpole Quay",
+        "lat": 51.6378,
+        "lng": -4.8955
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": null,
+      "insiderTip": "Combine your swim with a walk to Barafundle Bay or Broad Haven South for a longer adventure."
+    },
+    {
+      "name": "Marloes Sands",
+      "slug": "marloes-sands",
+      "description": "A vast, sandy beach with dramatic rock formations. The swimming can be good, but be aware of strong currents and the open sea. Explore the rock pools at low tide.",
+      "difficulty": "Moderate (due to currents)",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced swimmers, those who enjoy exploring rock pools, wildlife enthusiasts.",
+      "notSuitableFor": "Beginners, families with young children on rough days.",
+      "bestSeason": "May-September",
+      "parking": "Marloes Sands National Trust car park. Pay and display.",
+      "startPoint": {
+        "name": "Marloes Sands National Trust Car Park",
+        "lat": 51.7186,
+        "lng": -5.2058
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": null,
+      "insiderTip": "Keep an eye out for seals! They're often spotted in the area. Check the tide times before you go to make the most of the beach and rock pools."
+    },
+    {
+      "name": "Druidston Haven",
+      "slug": "druidston-haven",
+      "description": "A beautiful, secluded beach backed by towering cliffs. The swimming can be good, but be aware of the tides and the potential for strong waves. It's a bit of a walk down to the beach, which keeps it relatively quiet.",
+      "difficulty": "Moderate (depending on conditions)",
+      "duration": "1-2 hours (including walk)",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced swimmers, those seeking solitude, surfers (sometimes).",
+      "notSuitableFor": "Beginners, families with young children on rough days, those with mobility issues (due to the walk).",
+      "bestSeason": "May-September",
+      "parking": "Druidston Hotel car park (small charge) or limited parking along the road.",
+      "startPoint": {
+        "name": "Druidston Hotel",
+        "lat": 51.7775,
+        "lng": -5.1901
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Stay at the Druidston Hotel for a clifftop retreat with stunning views. The restaurant is excellent."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Pembrokeshire weather can be unpredictable. The sea temperature is cold year-round, usually peaking around 15-16°C in August. Strong winds and swells can make swimming dangerous, so always check the forecast and sea conditions before you go. Coastal fog is also common, so be prepared for reduced visibility.",
+    "weatherLinks": [
+      {
+        "name": "Met Office Coastal Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/coast-and-sea/inshore-waters-forecast"
+      },
+      {
+        "name": "Magicseaweed (surf report)",
+        "url": "https://magicseaweed.com/Pembrokeshire-Surf-Report/70/"
+      }
+    ],
+    "gearChecklist": [
+      "Wetsuit (essential for most of the year)",
+      "Swim cap (helps retain heat)",
+      "Neoprene gloves and socks (for extra warmth)",
+      "Towel (a quick-dry microfibre towel is ideal)",
+      "Warm clothes for after your swim (including a hat and gloves)",
+      "Waterproof bag (to protect your valuables)",
+      "Brightly coloured swim buoy or tow float (for visibility)",
+      "Appropriate footwear (for rocky beaches and coastal paths)",
+      "First-aid kit (including antiseptic wipes and plasters)",
+      "Sunscreen (even on cloudy days!)"
+    ],
+    "gearHire": [
+      {
+        "name": "TYF Adventure",
+        "location": "St Davids",
+        "url": "https://www.tyf.com/"
+      },
+      {
+        "name": "Outer Reef Surf School",
+        "location": "Manorbier",
+        "url": "https://www.outerreefsurfschool.com/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5-6h",
+          "route": "M4"
+        },
+        {
+          "from": "Manchester",
+          "duration": "5-6h",
+          "route": "M6, A483, A40"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "4-5h",
+          "route": "M5, A40"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "2-3h",
+          "route": "M4"
+        }
+      ],
+      "publicTransport": "Haverfordwest and Pembroke Dock are the main train stations. From there, you can catch local buses or the Pembrokeshire Coast Bus (Puffin Shuttle) to reach various coastal locations. The Celtic Coaster bus service is great for exploring the St Davids peninsula.",
+      "parkingTips": "Parking can be a nightmare during peak season. Arrive early, be prepared to walk, and consider using park-and-ride services where available. Some beaches have National Trust car parks, which are free for members."
+    },
+    "safety": "Always swim with a buddy if possible. Be aware of tides, currents, and weather conditions. Check water quality reports, especially after heavy rainfall. Let someone know where you're going and when you expect to be back. In an emergency, dial 999 and ask for the Coastguard. The RNLI provides lifeguard services on some beaches during the summer months. Carry a mobile phone in a waterproof pouch."
+  },
+  "faqs": [
+    {
+      "question": "What's the average sea temperature in Pembrokeshire?",
+      "answer": "The average sea temperature in Pembrokeshire ranges from 10-12°C in winter to 15-17°C in summer. A wetsuit is highly recommended, even in the summer months."
+    },
+    {
+      "question": "Are there any dangerous marine animals in Pembrokeshire waters?",
+      "answer": "While rare, jellyfish are sometimes present. Portuguese Man o' War can occasionally wash up on beaches, but they are easily identifiable. Weever fish can sting if stepped on, so wear shoes or sandals on sandy beaches. Grey seals are common, keep a safe distance and never approach them."
+    },
+    {
+      "question": "Is it safe to swim in the Blue Lagoon?",
+      "answer": "Swimming in the Blue Lagoon is generally safe, but be aware of the depth and potential hazards such as submerged rocks and debris. Check for strong currents, especially after heavy rain. Supervise children closely. Jumping from the cliffs is risky and should be done with caution."
+    },
+    {
+      "question": "Where can I find the best wild swimming spots for beginners?",
+      "answer": "Barafundle Bay, Caerfai Bay, and Porthgain harbour are good options for beginners due to their sheltered waters and relatively calm conditions. Always check the weather forecast and tide times before you go."
+    },
+    {
+      "question": "Do I need a license or permit to wild swim in Pembrokeshire?",
+      "answer": "No, you don't need a license or permit to wild swim in Pembrokeshire. However, be respectful of the environment and follow the Countryside Code. Avoid swimming in areas that are designated as nature reserves or protected areas."
+    },
+    {
+      "question": "Are there any guided wild swimming tours in Pembrokeshire?",
+      "answer": "Yes, several companies offer guided wild swimming tours in Pembrokeshire, including TYF Adventure and Preseli Venture. These tours are a great option for beginners or those who want to explore the coastline with an experienced guide."
+    },
+    {
+      "question": "What should I do if I get into trouble while wild swimming?",
+      "answer": "If you get into trouble while wild swimming, try to stay calm and signal for help. If you're with a buddy, work together to reach safety. If you're alone, try to float on your back and conserve energy. If you can, call for help on your mobile phone (if you have signal). If you see someone else in trouble, dial 999 and ask for the Coastguard."
+    },
+    {
+      "question": "Can I wild swim in Pembrokeshire with my dog?",
+      "answer": "Many beaches in Pembrokeshire are dog-friendly, but some have restrictions during the summer months. Check the local signage before you let your dog off the lead. Be aware of strong currents and tides, and make sure your dog is a strong swimmer."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Ma Simes Surf Hut",
+        "slug": "ma-simes",
+        "address": "4 High St, St Davids, Haverfordwest SA62 6SA",
+        "lat": 51.8811,
+        "lng": -5.2674,
+        "description": "Long established surf shop with wetsuits, boards and all the gear you need for a Pembrokeshire dip or wave. Friendly service and local knowledge.",
+        "website": "https://www.masimes.co.uk/",
+        "phone": "01437 720271",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 120
+      },
+      {
+        "name": "TYF Shop",
+        "slug": "tyf-shop",
+        "address": "7 High St, St Davids, Haverfordwest SA62 6SA",
+        "lat": 51.8804,
+        "lng": -5.2671,
+        "description": "Outdoor adventure specialists with a great range of wetsuits, dry bags, and other essential gear. They also offer expert advice and equipment hire.",
+        "website": "https://www.tyf.com/shop/",
+        "phone": "01437 721611",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 85
+      },
+      {
+        "name": "Coast to Coast Watersports",
+        "slug": "coast-to-coast-watersports",
+        "address": "Unit 3, Milford Marina, Milford Haven SA73 3AA",
+        "lat": 51.716,
+        "lng": -5.0501,
+        "description": "Specialist water sports store in Milford Haven marina. Sells and hires wetsuits, boards, kayaks and all the kit you'll need for an adventure.",
+        "website": "https://www.coasttocoastwatersports.co.uk/",
+        "phone": "01646 698757",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.9,
+        "reviewCount": 75
+      },
+      {
+        "name": "West Wales Wind Surf & Sail",
+        "slug": "west-wales-wind-surf-sail",
+        "address": "Sandy Hill, Newgale, Haverfordwest SA62 6AR",
+        "lat": 51.7909,
+        "lng": -5.1626,
+        "description": "Surf shop located at Newgale beach offering wetsuits, boards and surfing equipment, also watersports gear.",
+        "website": "https://www.westwaleswindsurfandsail.co.uk/",
+        "phone": "01437 720011",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 45
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Shed",
+        "slug": "the-shed",
+        "address": "Porthgain Harbour, Haverfordwest SA62 5BN",
+        "lat": 51.9144,
+        "lng": -5.2098,
+        "description": "Renowned fish and chip restaurant overlooking Porthgain harbour. Fresh, locally sourced seafood cooked to perfection. Expect queues, especially in summer!",
+        "vibe": "Coastal eatery",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Fish and chips, seafood platters"
+      },
+      {
+        "name": "The Sloop Inn",
+        "slug": "the-sloop-inn",
+        "address": "Porthgain, Haverfordwest SA62 5BN",
+        "lat": 51.9148,
+        "lng": -5.2112,
+        "description": "Traditional pub with a stunning location overlooking Porthgain harbour. Serves hearty pub fare and local ales. A great place to relax and soak up the atmosphere.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "https://sloopinn.co.uk/",
+        "knownFor": "Real ales, seafood, harbour views"
+      },
+      {
+        "name": "The Sampler",
+        "slug": "the-sampler",
+        "address": "25 High St, St Davids, Haverfordwest SA62 6SB",
+        "lat": 51.8804,
+        "lng": -5.2667,
+        "description": "Welsh tapas bar located in St Davids. A great spot for sharing some delicious welsh tapas after exploring the coast.",
+        "vibe": "Welsh tapas",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Welsh tapas, local beers"
+      },
+      {
+        "name": "Bench Bar",
+        "slug": "bench-bar",
+        "address": "Newgale, Haverfordwest SA62 6AR",
+        "lat": 51.7902,
+        "lng": -5.1623,
+        "description": "Located on Newgale beach with views over St Bride's Bay. This modern bar is a perfect place to chill after a day of exploring the water.",
+        "vibe": "Beach bar",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Beachside views, cocktails"
+      },
+      {
+        "name": "Cafe Mor",
+        "slug": "cafe-mor",
+        "address": "Freshwater West Beach, Pembroke SA71 5AH",
+        "lat": 51.6651,
+        "lng": -5.0437,
+        "description": "Beachside cafe serving delicious seafood street food. Situated in a converted fishing boat, the seaweed wrap is a must-try.",
+        "vibe": "Beach cafe",
+        "priceRange": "£",
+        "website": "https://www.cafemor.co.uk/",
+        "knownFor": "Seaweed wraps, seafood street food"
+      },
+      {
+        "name": "Grain",
+        "slug": "grain",
+        "address": "St Davids Food Park, St Davids, Haverfordwest SA62 6QU",
+        "lat": 51.8792,
+        "lng": -5.2699,
+        "description": "St Davids Wood fired sourdough pizzas and natural wines. Relaxed atmosphere.",
+        "vibe": "Sourdough pizzas",
+        "priceRange": "££",
+        "website": "https://grainstdavids.com/",
+        "knownFor": "Sourdough pizzas and natural wines"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "St Davids YHA",
+        "slug": "st-davids-yha",
+        "description": "Budget-friendly hostel in St Davids, close to the coast path and local amenities. Great for solo travellers and groups.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Caerfai Bay (2 miles)",
+        "website": "https://www.yha.org.uk/hostel/yha-st-davids"
+      },
+      {
+        "name": "Stackpole Under the Stars",
+        "slug": "stackpole-under-the-stars",
+        "description": "Camping and glamping site near Stackpole Quay, within walking distance of Barafundle Bay and other beautiful beaches.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Barafundle Bay (0.5 miles)",
+        "website": "https://www.stackpoleunderthestars.co.uk/"
+      },
+      {
+        "name": "Tretio Caravan Park",
+        "slug": "tretio-caravan-park",
+        "description": "Caravan park with camping pitches, close to the Blue Lagoon and Abereiddy beach. Ideal for exploring the St Davids peninsula.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Blue Lagoon (1 mile)",
+        "website": "https://www.tretio.com/"
+      },
+      {
+        "name": "Druidston Hotel",
+        "slug": "druidston-hotel",
+        "description": "Boutique hotel with stunning sea views and direct access to Druidston Haven. Perfect for a relaxing coastal getaway.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Druidston Haven (on site)",
+        "website": "https://www.druidstonhotel.com/"
+      },
+      {
+        "name": "Caerfai Bay Caravan & Camping Park",
+        "slug": "caerfai-bay-caravan-camping-park",
+        "description": "Family-friendly campsite right next to Caerfai Bay. Ideal for swimming and exploring the Pembrokeshire coast.",
+        "type": "campsite",
+        "priceRange": "££",
+        "nearestSpot": "Caerfai Bay (0.1 miles)",
+        "website": "http://www.caerfaifarm.co.uk/touring-caravan-camping-park/"
+      },
+      {
+        "name": "Warpool Court Hotel",
+        "slug": "warpool-court-hotel",
+        "description": "Hotel with its own private cove. Great views of the rugged coast.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Caerfai Bay (1 mile)",
+        "website": "https://www.warpoolcourthotel.com/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Wales Swim",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "Open water swimming event held at the Blue Lagoon, Abereiddy, with various distances available.",
+      "website": "https://activitywalesevents.org.uk/",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "registrationCost": 65
+    },
+    {
+      "name": "Saundersfoot Triathlon",
+      "type": "race",
+      "monthTypical": "May",
+      "description": "Triathlon including a swim section held at Saundersfoot beach.",
+      "website": "https://www.activitywalesevents.org.uk/",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "registrationCost": 55
+    },
+    {
+      "name": "The Long Course Weekend",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "A multi-day triathlon event held in Tenby, with a long-distance swim on the first day.",
+      "website": "https://www.longcourseweekend.com/",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "registrationCost": 250
+    }
+  ],
+  "keywords": {
+    "primary": "wild swimming pembrokeshire",
+    "secondary": [
+      "pembrokeshire coast swimming",
+      "wild swimming st davids",
+      "blue lagoon swimming",
+      "barafundle bay swimming",
+      "pembrokeshire sea swimming"
+    ],
+    "longTail": [
+      "wild swimming spots pembrokeshire coast national park",
+      "safe wild swimming pembrokeshire for beginners",
+      "guided wild swimming pembrokeshire tours",
+      "what to wear wild swimming pembrokeshire",
+      "wild swimming pembrokeshire sea temperature",
+      "family friendly wild swimming pembrokeshire",
+      "wild swimming pembrokeshire dogs allowed",
+      "wild swimming pembrokeshire with kids",
+      "best time of year wild swimming pembrokeshire",
+      "wild swimming pembrokeshire no wetsuit",
+      "secret wild swimming spots pembrokeshire"
+    ],
+    "localIntent": [
+      "wild swimming near Tenby",
+      "wild swimming near St Davids",
+      "wild swimming near Haverfordwest",
+      "wild swimming near Milford Haven"
+    ],
+    "commercialIntent": [
+      "wild swimming pembrokeshire guided tours",
+      "wetsuit hire pembrokeshire",
+      "wild swimming equipment pembrokeshire",
+      "best wetsuit for wild swimming pembrokeshire",
+      "book wild swimming experience pembrokeshire"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "eryri-snowdonia",
+        "label": "Wild Swimming in Snowdonia"
+      },
+      {
+        "regionSlug": "brecon-beacons",
+        "label": "Wild Swimming in the Brecon Beacons"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "coasteering",
+        "label": "Coasteering in Pembrokeshire"
+      },
+      {
+        "activityTypeSlug": "surfing",
+        "label": "Surfing in Pembrokeshire"
+      },
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Pembrokeshire"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "TYF Adventure",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "St Davids, Pembrokeshire",
+      "postcode": "SA62 6RD",
+      "lat": 51.8833,
+      "lng": -5.2667,
+      "phone": "01437 721611",
+      "website": "https://www.tyf.com/",
+      "googleRating": 4.7,
+      "reviewCount": 150,
+      "description": "Adventure with purpose. Explore. Inspire. Protect. Offers a range of activities including coasteering and wild swimming.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "guided swims",
+        "equipment hire",
+        "coasteering",
+        "sea-kayaking",
+        "surfing",
+        "climbing",
+        "sup"
+      ],
+      "priceRange": "£££",
+      "notes": "Well-established adventure company in Pembrokeshire.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Preseli Venture",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Mathry, Haverfordwest",
+      "postcode": "SA62 5LB",
+      "lat": 51.95,
+      "lng": -5.1667,
+      "phone": "01348 837709",
+      "website": "https://www.preseliventure.co.uk/",
+      "googleRating": 4.8,
+      "reviewCount": 120,
+      "description": "Coastal adventures in the heart of Pembrokeshire. Offers guided wild swimming experiences and other coastal activities.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "guided swims",
+        "equipment hire",
+        "coasteering",
+        "surfing",
+        "kayaking",
+        "boat-trips"
+      ],
+      "priceRange": "££",
+      "notes": "Offers specific wild swimming tours.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Ma Simes Surf Hut",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "High Street, St Davids",
+      "postcode": "SA62 6SB",
+      "lat": 51.8819,
+      "lng": -5.2664,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.5,
+      "reviewCount": 30,
+      "description": "Surf and outdoor gear shop in St Davids, ideal for getting kitted out for a wild swimming adventure.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "wetsuit hire",
+        "swim accessories",
+        "changing facilities"
+      ],
+      "priceRange": "££",
+      "notes": "Good for picking up essential gear.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "TYF Shop",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "St Davids, Pembrokeshire",
+      "postcode": "SA62 6RD",
+      "lat": 51.8833,
+      "lng": -5.2667,
+      "phone": "01437 721611",
+      "website": "https://www.tyf.com/shop",
+      "googleRating": 4.2,
+      "reviewCount": 20,
+      "description": "TYF Adventure's shop, offering a range of outdoor gear suitable for wild swimming.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "wetsuits",
+        "swimwear",
+        "accessories",
+        "expert advice"
+      ],
+      "priceRange": "£££",
+      "notes": "Reputable brand, good quality gear.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "The Shed",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Porthgain, Haverfordwest",
+      "postcode": "SA62 5BN",
+      "lat": 51.9417,
+      "lng": -5.1833,
+      "phone": "01348 831590",
+      "website": "https://www.theshedporthgain.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 800,
+      "description": "Seafood restaurant in Porthgain, a great place to refuel after a swim.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "outdoor seating",
+        "sea views"
+      ],
+      "priceRange": "££",
+      "notes": "Popular spot, book ahead.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "The Sloop Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Porthgain, Haverfordwest",
+      "postcode": "SA62 5BN",
+      "lat": 51.9411,
+      "lng": -5.1825,
+      "phone": "01348 831449",
+      "website": "https://www.thesloop.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 650,
+      "description": "Traditional pub in Porthgain, perfect for a post-swim pint and meal.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "outdoor seating",
+        "harbour views"
+      ],
+      "priceRange": "££",
+      "notes": "Classic pub atmosphere.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "The Sampler",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "St Davids, Pembrokeshire",
+      "postcode": "SA62 6SA",
+      "lat": 51.8814,
+      "lng": -5.2667,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.7,
+      "reviewCount": 150,
+      "description": "A cafe/restaurant in St Davids. Serves great coffee and delicious food.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "coffee",
+        "cake"
+      ],
+      "priceRange": "££",
+      "notes": "Nice place for coffee & cake",
+      "inDatabase": false,
+      "priority": "low"
+    },
+    {
+      "name": "Bench Bar",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Newgale, Haverfordwest",
+      "postcode": "SA62 6AR",
+      "lat": 51.8496,
+      "lng": -5.2033,
+      "phone": "01437 720074",
+      "website": null,
+      "googleRating": 4.3,
+      "reviewCount": 300,
+      "description": "Bar and restaurant overlooking Newgale beach, ideal for post-swim refreshments.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "beach views",
+        "outdoor seating"
+      ],
+      "priceRange": "££",
+      "notes": "Great location.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Cafe Mor",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Freshwater West, Castlemartin",
+      "postcode": "SA71 5HW",
+      "lat": 51.655,
+      "lng": -5.0883,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.8,
+      "reviewCount": 450,
+      "description": "Street food vendor at Freshwater West, serving delicious seafood dishes.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "fresh seafood",
+        "beach location"
+      ],
+      "priceRange": "££",
+      "notes": "Unique dining experience.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "MUUK Adventures",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Pembroke Dock, Pembrokeshire",
+      "postcode": "SA72",
+      "lat": 51.695,
+      "lng": -4.911,
+      "phone": null,
+      "website": null,
+      "googleRating": 5.0,
+      "reviewCount": 5,
+      "description": "Adventure is out there. Find yours with MUUK. Adventure activities in Pembrokeshire.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "coasteering",
+        "surfing",
+        "kayaking",
+        "mountain-challenges"
+      ],
+      "priceRange": "££",
+      "notes": "Check if they provide specific wild swimming tours.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Activity Pembrokeshire",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Tenby, Pembrokeshire",
+      "postcode": "SA70",
+      "lat": 51.673,
+      "lng": -4.704,
+      "phone": null,
+      "website": null,
+      "googleRating": 5.0,
+      "reviewCount": 10,
+      "description": "Adventure awaits on the Pembrokeshire coast! Adventure activities in Pembrokeshire.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "coasteering",
+        "sea-kayaking"
+      ],
+      "priceRange": "££",
+      "notes": "Check if they provide specific wild swimming tours.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Outer Reef Surf School",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Manorbier, Tenby, Pembrokeshire",
+      "postcode": "SA70",
+      "lat": 51.652,
+      "lng": -4.763,
+      "phone": null,
+      "website": null,
+      "googleRating": 5.0,
+      "reviewCount": 12,
+      "description": "Ride the waves, explore the coast! Adventure activities in Pembrokeshire.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "surfing",
+        "coasteering",
+        "paddle-boarding"
+      ],
+      "priceRange": "££",
+      "notes": "Check if they provide specific wild swimming tours.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Sealyham Activity Centre",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Wolfscastle, Haverfordwest",
+      "postcode": "SA62",
+      "lat": 51.883,
+      "lng": -5.045,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.6,
+      "reviewCount": 14,
+      "description": "Your adventure starts here. Multi-activity centre in Pembrokeshire.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "multi-activity",
+        "coasteering",
+        "bushcraft",
+        "rock-climbing",
+        "kayaking",
+        "gorge-walking"
+      ],
+      "priceRange": "££",
+      "notes": "Check if they provide specific wild swimming tours.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Tenby Adventure",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Tenby, Pembrokeshire",
+      "postcode": "SA70",
+      "lat": 51.673,
+      "lng": -4.704,
+      "phone": null,
+      "website": null,
+      "googleRating": null,
+      "reviewCount": null,
+      "description": "Explore Pembrokeshire's coast with thrilling adventures.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "coasteering",
+        "sea-kayaking"
+      ],
+      "priceRange": "££",
+      "notes": "Check if they provide specific wild swimming tours.",
+      "inDatabase": true,
+      "priority": "low"
+    }
+  ]
+}

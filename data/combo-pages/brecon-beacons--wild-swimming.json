@@ -1,0 +1,780 @@
+{
+  "regionSlug": "brecon-beacons",
+  "activityTypeSlug": "wild-swimming",
+  "title": "Wild Swimming in Brecon Beacons",
+  "strapline": "Plunge into the crystal-clear waters of the Brecon Beacons – waterfalls, rivers, and secret pools await.",
+  "metaTitle": "Wild Swimming Brecon Beacons | Adventure Wales",
+  "metaDescription": "Discover the best wild swimming spots in the Brecon Beacons! Find hidden waterfalls, serene lake swims, and practical tips for your adventure.",
+  "heroAlt": "Wild swimmer under Sgwd yr Eira waterfall, Brecon Beacons",
+  "introduction": "The Brecon Beacons National Park isn't just for hiking and biking, it's a wild swimming paradise. Forget crowded beaches, we're talking pristine waterfalls cascading into deep plunge pools, tranquil rivers winding through valleys, and secluded mountain lakes reflecting the sky. The raw, rugged landscape provides a stunning backdrop for some truly invigorating dips. Wild swimming in Brecon Beacons offers a unique connection with nature, a chance to escape the everyday and immerse yourself in the Welsh wilderness. It's best suited for those with a sense of adventure and a respect for the environment. \n\nHowever, let's be honest, it's not always sunshine and rainbows. The water can be *cold*, even in summer (bring a wetsuit!). Some spots require a bit of a hike to reach, and access isn't always easy. The weather can change in a heartbeat, so preparation is key. But for those willing to embrace the challenges, the rewards are immense. Discovering your own secret swimming hole, feeling the rush of a waterfall on your skin, and the unparalleled peace of floating in a mountain lake - these are experiences you won't forget. Just remember, safety first. Check the weather, tell someone where you're going, and never swim alone. This region is the ultimate location for wild swimming brecon beacons, allowing you to explore the natural beauty of the Brecon Beacons from a totally new perspective.\n\nThe sheer variety of water bodies is amazing. From the famous Sgwd yr Eira plunge pool to the serene Llangorse Lake, there's a swim for every taste and ability. While Llangorse offers family friendly swims and watersports, some of the more remote mountain pools are better suited for experienced wild swimmers only.",
+  "bestSeason": "May-September (wetsuit recommended)",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Sgwd yr Eira Plunge Pool",
+      "slug": "sgwd-yr-eira-plunge-pool",
+      "description": "The most iconic Brecon Beacons swimming spot. You can actually walk behind this spectacular waterfall and then plunge into the refreshing pool below. Expect crowds, especially on weekends, but it's worth it for the experience. The water is cold, even in summer, so a wetsuit is highly recommended.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours round trip",
+      "distance": "5.6km",
+      "elevationGain": "150m",
+      "bestFor": "First-timers, families, photographers",
+      "notSuitableFor": "Those seeking solitude, people with mobility issues (steps involved)",
+      "bestSeason": "May-September",
+      "parking": "Gwaun Hepste car park (CF44 9JF). Can get very busy, arrive early or be prepared to walk further from alternative parking spots along the road.",
+      "startPoint": {
+        "name": "Gwaun Hepste Car Park",
+        "lat": 51.773,
+        "lng": -3.555
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": "adventure-britain",
+      "insiderTip": "Go early (before 9am) or late (after 5pm) to avoid the worst of the crowds. The light is also best for photos at these times."
+    },
+    {
+      "name": "Pont Melin-fach Pools",
+      "slug": "pont-melin-fach-pools",
+      "description": "A series of smaller, shallower pools along the Mellte River, perfect for a more relaxed swim. There are several small waterfalls and rock formations to explore. This spot is much less crowded than Sgwd yr Eira, making it ideal for a peaceful dip.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": "null",
+      "elevationGain": "null",
+      "bestFor": "Families with young children, those seeking a gentle swim",
+      "notSuitableFor": "Serious swimmers looking for a challenging swim",
+      "bestSeason": "June-August",
+      "parking": "Small parking area near the bridge at Pont Melin-fach (SA11 5US).",
+      "startPoint": {
+        "name": "Pont Melin-fach Bridge",
+        "lat": 51.759,
+        "lng": -3.553
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Bring a picnic and enjoy it by the river after your swim. The nearby village of Pontneddfechan has a couple of nice pubs for a post-swim pint."
+    },
+    {
+      "name": "Llangorse Lake",
+      "slug": "llangorse-lake",
+      "description": "The largest natural lake in South Wales, offering calm waters perfect for swimming, kayaking, and paddleboarding. The views of the surrounding mountains are stunning. There's a multi-activity centre on the lake offering various watersports.",
+      "difficulty": "Easy",
+      "duration": "Varies",
+      "distance": "null",
+      "elevationGain": "null",
+      "bestFor": "Families, watersports enthusiasts, those seeking a leisurely swim",
+      "notSuitableFor": "Those seeking a wild and secluded swim",
+      "bestSeason": "May-September",
+      "parking": "Llangorse Multi Activity Centre car park (LD3 7TR) (fee applies).",
+      "startPoint": {
+        "name": "Llangorse Multi Activity Centre",
+        "lat": 51.928,
+        "lng": -3.254
+      },
+      "estimatedCost": "Free (parking/activities extra)",
+      "operatorSlug": "llangorse-multi-activity-centre",
+      "insiderTip": "Hire a kayak or paddleboard to explore the lake fully. Look out for the crannog (artificial island) which is believed to be the only one in Wales."
+    },
+    {
+      "name": "River Usk (Brecon)",
+      "slug": "river-usk-brecon",
+      "description": "A gentle, meandering river that's ideal for a leisurely swim. The stretch near Brecon town is particularly pleasant, with grassy banks and easy access. Be aware of the current, especially after heavy rain.",
+      "difficulty": "Moderate",
+      "duration": "1-2 hours",
+      "distance": "null",
+      "elevationGain": "null",
+      "bestFor": "Experienced river swimmers, those seeking a longer swim",
+      "notSuitableFor": "Beginners, children (due to the current)",
+      "bestSeason": "June-August",
+      "parking": "Various car parks in Brecon town (LD3 7LA).",
+      "startPoint": {
+        "name": "Brecon Promenade",
+        "lat": 51.949,
+        "lng": -3.391
+      },
+      "estimatedCost": "Free (parking fees)",
+      "operatorSlug": null,
+      "insiderTip": "Swim upstream first, then float back down with the current. Stop for a picnic on the riverbank afterwards."
+    },
+    {
+      "name": "Blue Pool (Ystradfellte)",
+      "slug": "blue-pool-ystradfellte",
+      "description": "A small, deep pool fed by a waterfall, known for its striking blue color. The water is very cold and the pool is quite small, but it's a beautiful spot for a quick dip. Requires a short walk from the parking area.",
+      "difficulty": "Moderate",
+      "duration": "1-2 hours",
+      "distance": "null",
+      "elevationGain": "null",
+      "bestFor": "Experienced wild swimmers, those seeking a short, invigorating swim",
+      "notSuitableFor": "Beginners, children (due to the cold water and depth)",
+      "bestSeason": "July-August (but still cold!)",
+      "parking": "Cwm Porth car park (CF44 9JF) (fee applies).",
+      "startPoint": {
+        "name": "Cwm Porth Car Park",
+        "lat": 51.769,
+        "lng": -3.568
+      },
+      "estimatedCost": "Free (parking fees)",
+      "operatorSlug": null,
+      "insiderTip": "Combine your visit with a walk to the nearby caves at Porth yr Ogof. The Blue Pool can be muddy after heavy rain, affecting the colour."
+    },
+    {
+      "name": "Henrhyd Falls Pool",
+      "slug": "henrhyd-falls-pool",
+      "description": "The tallest waterfall in South Wales, with a plunge pool at its base. The pool is deep and cold, but the setting is spectacular. You can walk behind the waterfall, but be prepared to get wet! Access is via a steep path.",
+      "difficulty": "Challenging",
+      "duration": "2-3 hours",
+      "distance": "null",
+      "elevationGain": "null",
+      "bestFor": "Experienced wild swimmers, adventurous types",
+      "notSuitableFor": "Beginners, those with mobility issues",
+      "bestSeason": "May-September",
+      "parking": "National Trust car park at Henrhyd Falls (SA9 1GL) (fee applies).",
+      "startPoint": {
+        "name": "Henrhyd Falls Car Park",
+        "lat": 51.797,
+        "lng": -3.706
+      },
+      "estimatedCost": "Free (parking fees)",
+      "operatorSlug": null,
+      "insiderTip": "Check the waterfall flow before you go – it can be very powerful after heavy rain, making swimming dangerous."
+    },
+    {
+      "name": "Talybont Reservoir",
+      "slug": "talybont-reservoir",
+      "description": "A large reservoir surrounded by forests and mountains. There are several access points for swimming, including a small beach area. The water is generally clean and calm, making it a good option for a longer swim.",
+      "difficulty": "Moderate",
+      "duration": "Varies",
+      "distance": "null",
+      "elevationGain": "null",
+      "bestFor": "Experienced open water swimmers, those seeking a longer swim",
+      "notSuitableFor": "Beginners (due to the size of the reservoir)",
+      "bestSeason": "June-September",
+      "parking": "Various car parks around the reservoir (LD3 7YS).",
+      "startPoint": {
+        "name": "Talybont Reservoir Dam",
+        "lat": 51.917,
+        "lng": -3.294
+      },
+      "estimatedCost": "Free (parking fees)",
+      "operatorSlug": null,
+      "insiderTip": "Explore the eastern side of the reservoir, where you'll find quieter swimming spots and beautiful woodland walks."
+    },
+    {
+      "name": "Grwyne Fawr Reservoir",
+      "slug": "grwyne-fawr-reservoir",
+      "description": "A more remote and peaceful reservoir tucked away in the Black Mountains. The water is clear and cold, and the surrounding scenery is stunning. It requires a bit of a drive along narrow roads to reach, but it's worth it for the tranquility.",
+      "difficulty": "Challenging",
+      "duration": "2-3 hours",
+      "distance": "null",
+      "elevationGain": "null",
+      "bestFor": "Experienced wild swimmers, those seeking solitude and a remote location",
+      "notSuitableFor": "Beginners, those with a fear of heights (the drive is a bit hairy)",
+      "bestSeason": "July-August",
+      "parking": "Small parking area near the dam (NP7 7NN).",
+      "startPoint": {
+        "name": "Grwyne Fawr Reservoir Dam",
+        "lat": 51.934,
+        "lng": -3.14
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Bring a map and compass (or a fully charged phone with GPS), as the area can be difficult to navigate. The views from the top of the dam are incredible."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The Brecon Beacons weather can be unpredictable. Sunshine can quickly turn into rain and fog, especially at higher elevations. Check the forecast before you go and be prepared for all conditions. Water temperatures are generally cold, even in summer, so a wetsuit is highly recommended.",
+    "weatherLinks": [
+      {
+        "name": "Met Office",
+        "url": "https://www.metoffice.gov.uk/"
+      },
+      {
+        "name": "Mountain Weather Information Service",
+        "url": "https://www.mwis.org.uk/"
+      }
+    ],
+    "gearChecklist": [
+      "Wetsuit (essential for most swims)",
+      "Towel (preferably a quick-drying microfibre towel)",
+      "Swim cap (helps retain heat and improve visibility)",
+      "Goggles (to protect your eyes and improve visibility)",
+      "Neoprene gloves and socks (for extra warmth)",
+      "Dry robe or changing robe (for changing outdoors)",
+      "Waterproof bag (to keep your belongings dry)",
+      "First-aid kit (including blister plasters and antiseptic wipes)",
+      "Warm clothes (for after your swim)",
+      "Whistle (for emergencies)"
+    ],
+    "gearHire": [
+      {
+        "name": "Brecon Adventure",
+        "location": "Brecon",
+        "url": "http://www.breconadventure.com/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "3h 30m",
+          "route": "Via M4"
+        },
+        {
+          "from": "Manchester",
+          "duration": "3h 30m",
+          "route": "Via M6 and A40"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "2h 30m",
+          "route": "Via A449 and A40"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "1h",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "Train stations at Abergavenny, Merthyr Tydfil and Llandovery. Limited bus services within the park. The T4 bus service connects Cardiff with Brecon and Newton.",
+      "parkingTips": "Parking can be limited at popular spots, especially on weekends. Arrive early or be prepared to walk further. Pay attention to parking restrictions and park responsibly."
+    },
+    "safety": "Never swim alone. Check the water conditions before you swim and be aware of currents, especially in rivers. Avoid swimming after heavy rain, as water levels can rise quickly. Be aware of hazards such as submerged rocks and debris. Wear a brightly colored swim cap to improve visibility. Tell someone where you're going and when you expect to be back. In case of emergency, call 999 or 112."
+  },
+  "faqs": [
+    {
+      "question": "What's the best time of year for wild swimming in the Brecon Beacons?",
+      "answer": "May to September are generally the best months, but even then, the water can be cold! A wetsuit is recommended. July and August tend to have the warmest water temperatures, but also the biggest crowds."
+    },
+    {
+      "question": "Is wild swimming in the Brecon Beacons safe?",
+      "answer": "Wild swimming always carries some risk, but by taking precautions, you can minimize the danger. Never swim alone, check the water conditions, wear appropriate gear, and tell someone where you're going."
+    },
+    {
+      "question": "Do I need a wetsuit for wild swimming in the Brecon Beacons?",
+      "answer": "While not essential, a wetsuit is highly recommended, especially for longer swims or swimming in waterfalls. The water temperatures are usually quite cold, even in summer."
+    },
+    {
+      "question": "Are there any guided wild swimming tours in the Brecon Beacons?",
+      "answer": "Yes, Adventure Britain and Black Mountain Adventure offer guided wild swimming tours in the Brecon Beacons. These tours are a great option for beginners or those who want to explore the area with an experienced guide."
+    },
+    {
+      "question": "Are there any restrictions on where I can swim in the Brecon Beacons?",
+      "answer": "There are no specific restrictions on where you can swim in the Brecon Beacons, but it's important to respect the environment and avoid swimming in areas that are designated as protected habitats. Also, be mindful of private land and avoid trespassing."
+    },
+    {
+      "question": "Can I bring my dog wild swimming with me?",
+      "answer": "Yes, dogs are generally allowed in most wild swimming spots in the Brecon Beacons, but be responsible and keep them under control. Clean up after your dog and be mindful of other swimmers and wildlife."
+    },
+    {
+      "question": "Where can I rent a wetsuit near Brecon?",
+      "answer": "You can find wetsuit rentals at Brecon Adventure on Lion Street. There might be other local shops so ring ahead to avoid disapointment."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Brecon Adventure",
+        "slug": "brecon-adventure",
+        "address": "11 Lion St, Brecon LD3 7HY",
+        "lat": 51.953,
+        "lng": -3.391,
+        "description": "Offers a wide range of outdoor gear, including wetsuits, swimwear, and accessories. They also offer gear hire for various activities.",
+        "website": "http://www.breconadventure.com/",
+        "phone": "01874 622058",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 85
+      },
+      {
+        "name": "Mountain Warehouse",
+        "slug": "mountain-warehouse-brecon",
+        "address": "Unit 6, Cambrian Ctr, Brecon LD3 7HW",
+        "lat": 51.955,
+        "lng": -3.391,
+        "description": "A large outdoor retailer selling a wide range of clothing and equipment at affordable prices.",
+        "website": "https://www.mountainwarehouse.com/",
+        "phone": "01874 611115",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.2,
+        "reviewCount": 120
+      },
+      {
+        "name": "Trespass",
+        "slug": "trespass-brecon",
+        "address": "Unit 11, Cambrian Centre, Brecon LD3 7HW",
+        "lat": 51.954,
+        "lng": -3.389,
+        "description": "Offers a good selection of outdoor clothing and equipment, including wetsuits and swimwear.",
+        "website": "https://www.trespass.com/",
+        "phone": "01874 625862",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 3.9,
+        "reviewCount": 90
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Felin Fach Griffin",
+        "slug": "the-felin-fach-griffin",
+        "address": "Felin Fach, Brecon LD3 0UB",
+        "lat": 52.071,
+        "lng": -3.358,
+        "description": "A stylish and comfortable pub with a focus on local and seasonal ingredients. Known for its excellent food and selection of ales.",
+        "vibe": "Gastropub",
+        "priceRange": "£££",
+        "website": "https://eatdrinksleep.ltd.uk/felin-fach-griffin/",
+        "knownFor": "Local produce, cosy atmosphere"
+      },
+      {
+        "name": "Angel Inn (Pontneddfechan)",
+        "slug": "angel-inn-pontneddfechan",
+        "address": "Penderyn Rd, Pontneddfechan, Glynneath SA11 5NR",
+        "lat": 51.76,
+        "lng": -3.565,
+        "description": "A traditional pub in the heart of waterfall country, popular with walkers and wild swimmers. Serves hearty pub fare and local ales.",
+        "vibe": "Traditional pub",
+        "priceRange": "££",
+        "website": "null",
+        "knownFor": "Proximity to waterfalls, pub classics"
+      },
+      {
+        "name": "Star Inn (Talybont)",
+        "slug": "star-inn-talybont",
+        "address": "Talybont-on-Usk, Brecon LD3 7JD",
+        "lat": 51.915,
+        "lng": -3.301,
+        "description": "A cosy pub near Talybont Reservoir, offering a warm welcome and traditional pub food. A great spot to relax after a swim in the reservoir.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "null",
+        "knownFor": "Reservoir views, real ales"
+      },
+      {
+        "name": "White Hart (Brecon)",
+        "slug": "white-hart-brecon",
+        "address": "20 High St Superior, Brecon LD3 7AH",
+        "lat": 51.953,
+        "lng": -3.389,
+        "description": "A historic pub in the centre of Brecon, serving a range of beers and pub food. A good option for a post-swim pint in town.",
+        "vibe": "Historic pub",
+        "priceRange": "££",
+        "website": "null",
+        "knownFor": "Central location, pub history"
+      },
+      {
+        "name": "The Old Brew House",
+        "slug": "the-old-brew-house",
+        "address": "1 High St, Brecon LD3 7AL",
+        "lat": 51.954,
+        "lng": -3.39,
+        "description": "A charming cafe in Brecon, perfect for a coffee and cake after a cold swim. They also serve light lunches and snacks.",
+        "vibe": "Cosy cafe",
+        "priceRange": "£",
+        "website": "null",
+        "knownFor": "Coffee, homemade cakes"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "YHA Brecon Beacons",
+        "slug": "yha-brecon-beacons",
+        "description": "A budget-friendly hostel near Brecon, offering dorm rooms and private rooms. A great option for those on a budget who want to explore the area.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "River Usk (Brecon), 5km",
+        "website": "https://www.yha.org.uk/hostel/yha-brecon-beacons"
+      },
+      {
+        "name": "Talybont Farm Campsite",
+        "slug": "talybont-farm-campsite",
+        "description": "A campsite near Talybont Reservoir, offering a peaceful setting and stunning views. A good option for those who want to camp near the water.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Talybont Reservoir, 2km",
+        "website": "null"
+      },
+      {
+        "name": "Peterstone Court",
+        "slug": "peterstone-court",
+        "description": "A luxury hotel near Brecon, offering a comfortable and relaxing stay. A good option for those who want to treat themselves after a long swim.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "River Usk (Brecon), 8km",
+        "website": "https://www.peterstone-court.com/"
+      },
+      {
+        "name": "The Old Rectory Country Hotel",
+        "slug": "the-old-rectory-country-hotel",
+        "description": "A beautiful B&B in Llangorse. Perfect for exploring Llangorse Lake. Has fantastic views.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Llangorse Lake, 0.5km",
+        "website": "http://www.oldrectoryllangorse.co.uk/"
+      },
+      {
+        "name": "Llwyn-y-Fan Bunkhouse",
+        "slug": "llwyn-y-fan-bunkhouse",
+        "description": "A budget friendly bunkhouse that's great for accessing Pen y Fan and the central beacons.",
+        "type": "bunkhouse",
+        "priceRange": "£",
+        "nearestSpot": "Talybont Reservoir, 10km",
+        "website": "https://www.breconbeacons.org/struttures/llwyn-y-fan-bunkhouse/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Llangorse Lake Open Water Swim",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "An open water swimming race held annually at Llangorse Lake, offering various distances.",
+      "website": "https://www.llangorselake.co.uk/",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "registrationCost": 40
+    },
+    {
+      "name": "Brecon Beacons Ultra",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "A running event that may incorporate some river crossings.",
+      "website": "https://www.breconbeaconsultra.com/",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "registrationCost": 95
+    }
+  ],
+  "keywords": {
+    "primary": "wild swimming brecon beacons",
+    "secondary": [
+      "wild swimming waterfalls Brecon Beacons",
+      "river swimming Brecon Beacons",
+      "lake swimming Brecon Beacons",
+      "open water swimming Brecon Beacons",
+      "Brecon Beacons swimming spots"
+    ],
+    "longTail": [
+      "best places for wild swimming in Brecon Beacons",
+      "safe wild swimming spots Brecon Beacons",
+      "wild swimming near waterfalls Brecon Beacons",
+      "wild swimming Brecon Beacons with kids",
+      "wild swimming Brecon Beacons beginners",
+      "what to wear wild swimming Brecon Beacons",
+      "wild swimming Brecon Beacons water temperature",
+      "guided wild swimming tours Brecon Beacons",
+      "wild swimming Brecon Beacons parking",
+      "wild swimming Brecon Beacons accommodation"
+    ],
+    "localIntent": [
+      "wild swimming near Brecon",
+      "wild swimming near Abergavenny",
+      "wild swimming near Hay-on-Wye",
+      "wild swimming near Talybont-on-Usk"
+    ],
+    "commercialIntent": [
+      "guided wild swimming Brecon Beacons",
+      "wild swimming wetsuit hire Brecon Beacons",
+      "wild swimming equipment Brecon Beacons",
+      "book wild swimming tour Brecon Beacons",
+      "wild swimming Brecon Beacons price"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "snowdonia",
+        "label": "Wild Swimming in Snowdonia"
+      },
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Wild Swimming in Pembrokeshire"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Brecon Beacons"
+      },
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in Brecon Beacons"
+      },
+      {
+        "activityTypeSlug": "caving",
+        "label": "Caving in Brecon Beacons"
+      },
+      {
+        "activityTypeSlug": "gorge-walking",
+        "label": "Gorge Walking in Brecon Beacons"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Adventure Britain",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "The Old Rectory, Talachddu, Brecon, Powys",
+      "postcode": "LD3 0LP",
+      "lat": 51.996,
+      "lng": -3.356,
+      "phone": "01874 690672",
+      "website": "https://www.adventurebritain.com/",
+      "googleRating": 4.8,
+      "reviewCount": 150,
+      "description": "Your gateway to unforgettable Welsh adventures, offering guided wild swimming experiences in the Brecon Beacons.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "guided tours",
+        "equipment rental",
+        "safety briefings"
+      ],
+      "priceRange": "££",
+      "notes": "Known operator in the area with a good reputation.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Black Mountain Adventure",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Ty Mawr Farm, Llanfihangel Crucorney, Abergavenny",
+      "postcode": "NP7 7LB",
+      "lat": 51.883,
+      "lng": -3.083,
+      "phone": "01873 890033",
+      "website": "https://www.blackmountainadventure.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 120,
+      "description": "Provides unforgettable adventures in the Brecon Beacons, including guided wild swimming and gorge walking experiences.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "guided tours",
+        "equipment rental",
+        "safety briefings"
+      ],
+      "priceRange": "££",
+      "notes": "Well-established local adventure company.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Local outdoor shops Brecon",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "High Street, Brecon",
+      "postcode": "LD3 7LA",
+      "lat": 51.954,
+      "lng": -3.393,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.0,
+      "reviewCount": 50,
+      "description": "Brecon offers many local outdoor stores where you can buy or rent essential wild swimming gear like wetsuits and safety equipment.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "equipment sales",
+        "equipment rental"
+      ],
+      "priceRange": "££",
+      "notes": "Important for sourcing equipment.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "The Felin Fach Griffin",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Felin Fach, Brecon",
+      "postcode": "LD3 0HP",
+      "lat": 52.111,
+      "lng": -3.362,
+      "phone": "01874 620111",
+      "website": "https://eatdrinksleep.ltd.uk/felin-fach/",
+      "googleRating": 4.6,
+      "reviewCount": 600,
+      "description": "A great place to warm up and enjoy a meal after a wild swim, with a focus on local produce and a cozy atmosphere.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "£££",
+      "notes": "Popular gastropub.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Angel Inn (Pontneddfechan)",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Pontneddfechan, Neath",
+      "postcode": "SA11 5NP",
+      "lat": 51.774,
+      "lng": -3.636,
+      "phone": "01639 722616",
+      "website": null,
+      "googleRating": 4.3,
+      "reviewCount": 350,
+      "description": "A welcoming pub near popular waterfall swimming spots, offering traditional pub fare and local ales.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "Good option near waterfalls.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Star Inn (Talybont)",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Talybont-on-Usk, Brecon",
+      "postcode": "LD3 7YJ",
+      "lat": 51.903,
+      "lng": -3.291,
+      "phone": "01874 676635",
+      "website": null,
+      "googleRating": 4.4,
+      "reviewCount": 280,
+      "description": "A friendly village pub providing hearty meals and a warm atmosphere, ideal after swimming in the nearby Usk Reservoir.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Convenient for Usk Reservoir.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "White Hart (Brecon)",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "23 High St, Brecon",
+      "postcode": "LD3 7AL",
+      "lat": 51.954,
+      "lng": -3.394,
+      "phone": "01874 622175",
+      "website": null,
+      "googleRating": 4.2,
+      "reviewCount": 300,
+      "description": "A traditional pub located in Brecon town offering classic pub food and a selection of drinks to enjoy after a swim.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "Convenient location in Brecon.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Brecon Beacons National Park Visitor Centre (Mountain Centre)",
+      "type": "attraction",
+      "category": "accommodation",
+      "address": "Libanus, Brecon",
+      "postcode": "LD3 8ER",
+      "lat": 51.937,
+      "lng": -3.456,
+      "phone": "01874 623366",
+      "website": "https://www.breconbeacons.org/",
+      "googleRating": 4.5,
+      "reviewCount": 1200,
+      "description": "Provides information about the Brecon Beacons National Park and facilities, and nearby swimming locations. Also includes accomodation.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "information",
+        "accommodation",
+        "food",
+        "parking"
+      ],
+      "priceRange": "££",
+      "notes": "Great starting point for planning your swim.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Waterfall Country",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Pontneddfechan, Glynneath",
+      "postcode": "SA11 5NR",
+      "lat": 51.771,
+      "lng": -3.634,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.7,
+      "reviewCount": 2500,
+      "description": "A network of trails leading to stunning waterfalls, many of which are suitable for wild swimming, and a major draw to the area.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "hiking",
+        "sightseeing",
+        "wild-swimming"
+      ],
+      "priceRange": "£",
+      "notes": "Most popular area for swimming.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Usk Reservoir",
+      "type": "venue",
+      "category": "attraction",
+      "address": "Talybont-on-Usk",
+      "postcode": "LD3 7YJ",
+      "lat": 51.914,
+      "lng": -3.319,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.6,
+      "reviewCount": 300,
+      "description": "A large reservoir offering opportunities for open water swimming with scenic views, and an area to picnic.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "swimming",
+        "walking",
+        "picnics"
+      ],
+      "priceRange": "Free",
+      "notes": "Good for longer swims.",
+      "inDatabase": false,
+      "priority": "high"
+    }
+  ]
+}

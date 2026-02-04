@@ -1,0 +1,809 @@
+{
+  "regionSlug": "south-wales",
+  "activityTypeSlug": "surfing",
+  "title": "Surfing in South Wales",
+  "strapline": "Consistent waves and accessible breaks make South Wales a solid surf spot for all levels.",
+  "metaTitle": "Surfing South Wales | Guide, Spots, Schools | Adventure Wales",
+  "metaDescription": "Find the best surfing South Wales spots, surf schools, and gear shops. Your complete guide to riding the waves in Wales.",
+  "heroAlt": "Surfer riding a wave at Rest Bay, Porthcawl, with the town in the background.",
+  "introduction": "South Wales isn’t always the first place that springs to mind when you think of surfing, but that’s a mistake. While it might not have the raw power of the Atlantic-battered north coast, the Bristol Channel serves up consistent, manageable waves that make it perfect for beginners and intermediates. Porthcawl, in particular, is a surfing hub, boasting several beaches suitable for different abilities and a thriving surf school scene. \n\nBeyond Porthcawl, you'll find breaks further east and west – each with its own quirks. Aberavon offers long, rolling waves, while the Glamorgan Heritage Coast provides more exposed beaches that can pick up bigger swells. But be warned: those Heritage Coast breaks like Llantwit Major and Southerndown demand respect. They're known for strong currents and can get seriously heavy when the swell is up. Check the forecast, know your limits, and don’t be afraid to paddle in if things get hairy. \n\nThe biggest challenge? The tides. The Bristol Channel has some of the highest tidal ranges in the world, so timing is everything. A spot that's firing at high tide can be flat as a pancake a few hours later. Factor in the sometimes murky water (thank you, rivers!), and you'll see why South Wales surfing is as much about knowing the conditions as it is about ripping. Despite these challenges, surfing in South Wales offers fantastic value, beautiful scenery, and a welcoming surf community. Plus, where else can you grab a pasty and a pint after a session?",
+  "bestSeason": "April-October",
+  "difficultyRange": "Easy to Challenging",
+  "priceRange": "Free - £65 guided",
+  "spots": [
+    {
+      "name": "Rest Bay (Porthcawl)",
+      "slug": "rest-bay-porthcawl",
+      "description": "Rest Bay is Porthcawl's most popular surf spot and for good reason. It's a gently sloping sandy beach that produces mellow waves, ideal for learning and longboarding. Expect crowds on sunny days, but the vibe is generally friendly. The beach is easily accessible and has good facilities, including a cafe and surf school.",
+      "difficulty": "Easy",
+      "duration": "1-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, longboarders, families",
+      "notSuitableFor": "Experienced surfers looking for challenging waves",
+      "bestSeason": "All year round",
+      "parking": "Large car park right next to the beach (£1.50/hour or £6 all day). Can fill up quickly in summer.",
+      "startPoint": {
+        "name": "Rest Bay Car Park",
+        "lat": 51.476,
+        "lng": -3.711
+      },
+      "estimatedCost": "Free (parking £6 all day) or £55pp lesson",
+      "operatorSlug": null,
+      "insiderTip": "Park slightly further away on the road for free – but get there early!"
+    },
+    {
+      "name": "Coney Beach",
+      "slug": "coney-beach",
+      "description": "Located right next to Porthcawl's fairground, Coney Beach offers fun, albeit often choppy, waves. It's a good option when Rest Bay is too crowded. However, water quality can be variable due to its proximity to the harbour, so check conditions before paddling out. Avoid after heavy rain.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, improvers, families",
+      "notSuitableFor": "Anyone concerned about water quality after heavy rain.",
+      "bestSeason": "Spring and Summer",
+      "parking": "Various car parks around Porthcawl town centre (£1.50/hour or £6 all day).",
+      "startPoint": {
+        "name": "Coney Beach Car Park",
+        "lat": 51.479,
+        "lng": -3.7
+      },
+      "estimatedCost": "Free (parking £6 all day)",
+      "operatorSlug": null,
+      "insiderTip": "Check the surf cam online before heading down to avoid disappointment."
+    },
+    {
+      "name": "Aberavon Beach",
+      "slug": "aberavon-beach",
+      "description": "Aberavon boasts a long, sandy beach that provides long, rolling waves on its day. It's a great spot for practicing your turns and enjoying a cruisy surf. The beach is exposed, so it can get windy. Best at mid to high tide.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediate surfers, longboarders",
+      "notSuitableFor": "Beginners in strong winds",
+      "bestSeason": "Autumn and Winter",
+      "parking": "Ample free parking along the seafront.",
+      "startPoint": {
+        "name": "Aberavon Seafront Car Park",
+        "lat": 51.571,
+        "lng": -3.786
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "The wave quality improves dramatically with offshore winds."
+    },
+    {
+      "name": "Ogmore-by-Sea",
+      "slug": "ogmore-by-sea",
+      "description": "Ogmore is a rivermouth break that can produce some surprisingly good waves, especially when the swell is up. It's a bit of a trek to the beach from the car park, but the scenery is stunning. Strong currents are common, so be careful. Only surfable at certain tides.",
+      "difficulty": "Moderate",
+      "duration": "2-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced surfers, those seeking a more secluded spot",
+      "notSuitableFor": "Beginners, weak swimmers",
+      "bestSeason": "Autumn and Winter",
+      "parking": "Car park at the top of the cliffs (£5 all day).",
+      "startPoint": {
+        "name": "Ogmore-by-Sea Car Park",
+        "lat": 51.456,
+        "lng": -3.577
+      },
+      "estimatedCost": "Free (parking £5 all day)",
+      "operatorSlug": null,
+      "insiderTip": "Check the Ogmore River level before going – too much runoff makes for unpleasant surfing."
+    },
+    {
+      "name": "Llantwit Major",
+      "slug": "llantwit-major",
+      "description": "Llantwit Major is a powerful reef break that's best left to experienced surfers. It can produce some excellent waves, but it's also known for its strong currents and sharp reef. Only surfable at certain states of the tide. Watch out for rips.",
+      "difficulty": "Challenging",
+      "duration": "1-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced surfers, those comfortable with reef breaks",
+      "notSuitableFor": "Beginners, intermediates",
+      "bestSeason": "Autumn and Winter",
+      "parking": "Car park above the beach (£2/hour or £5 all day).",
+      "startPoint": {
+        "name": "Llantwit Major Beach Car Park",
+        "lat": 51.419,
+        "lng": -3.476
+      },
+      "estimatedCost": "Free (parking £5 all day)",
+      "operatorSlug": null,
+      "insiderTip": "Talk to the locals to get the lowdown on the best entry and exit points."
+    },
+    {
+      "name": "Southerndown",
+      "slug": "southerndown",
+      "description": "Also known as Dunraven Bay, Southerndown is a scenic cove that can produce some decent waves, especially on a big swell. The waves break over rocks and reefs, so it's best suited to experienced surfers. The scenery is fantastic. Tide is crucial.",
+      "difficulty": "Challenging",
+      "duration": "1-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced surfers",
+      "notSuitableFor": "Beginners, intermediates",
+      "bestSeason": "Autumn and Winter",
+      "parking": "Car park at the top of the cliffs (£2/hour or £5 all day).",
+      "startPoint": {
+        "name": "Southerndown Car Park",
+        "lat": 51.432,
+        "lng": -3.548
+      },
+      "estimatedCost": "Free (parking £5 all day)",
+      "operatorSlug": null,
+      "insiderTip": "Be very careful of the submerged rocks and reefs at low tide."
+    },
+    {
+      "name": "Barry Island",
+      "slug": "barry-island",
+      "description": "Made famous by 'Gavin & Stacey', Barry Island's Whitmore Bay can produce a surprisingly fun wave on its day. It's best at mid to high tide. The beach is sheltered, making it a good option in windy conditions. Expect crowds in summer.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners, families",
+      "notSuitableFor": "Experienced surfers seeking powerful waves",
+      "bestSeason": "Spring and Summer",
+      "parking": "Various car parks around Barry Island (expensive in summer).",
+      "startPoint": {
+        "name": "Barry Island Car Park",
+        "lat": 51.394,
+        "lng": -3.271
+      },
+      "estimatedCost": "Free (parking varies, can be expensive)",
+      "operatorSlug": null,
+      "insiderTip": "Combine your surf with a visit to the arcades and funfair for a classic British seaside experience."
+    },
+    {
+      "name": "Langland Bay",
+      "slug": "langland-bay",
+      "description": "Just West of Swansea is Langland Bay, offering cleaner waves and a less busy atmosphere than some of the Porthcawl spots. This bay gets good waves and has a lovely little coffee shop as well!",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediate surfers, those seeking a more relaxed vibe",
+      "notSuitableFor": "Total beginners in stronger swells",
+      "bestSeason": "Autumn and Winter",
+      "parking": "Car park at the top of the cliff (£3 for 2 hours, £5 all day)",
+      "startPoint": {
+        "name": "Langland Bay Car Park",
+        "lat": 51.574,
+        "lng": -3.963
+      },
+      "estimatedCost": "Free (parking varies)",
+      "operatorSlug": null,
+      "insiderTip": "The cafe here is the perfect spot to recover after a long session."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The weather in South Wales can be unpredictable, so it's essential to check the forecast before heading out. Strong winds can make surfing unpleasant, and rain can affect water quality. Watch out for sea fog, which can roll in quickly and reduce visibility.",
+    "weatherLinks": [
+      {
+        "name": "Windguru (Porthcawl)",
+        "url": "https://www.windguru.cz/2206"
+      },
+      {
+        "name": "Magicseaweed (Rest Bay)",
+        "url": "https://magicseaweed.com/Rest-Bay-Surf-Report/735/"
+      }
+    ],
+    "gearChecklist": [
+      "Wetsuit (4/3mm recommended for most of the year)",
+      "Surfboard appropriate for your skill level",
+      "Leash — keeps your board attached to you!",
+      "Wax — for grip on your board",
+      "Surf boots (especially in winter)",
+      "Gloves and hood (for added warmth in winter)",
+      "Towel — a Dryrobe is perfect",
+      "Sunscreen — even on cloudy days",
+      "First-aid kit — for minor cuts and scrapes",
+      "Water bottle and snacks"
+    ],
+    "gearHire": [
+      {
+        "name": "Porthcawl Surf School",
+        "location": "Porthcawl",
+        "url": "https://www.porthcawlsurf.co.uk/"
+      },
+      {
+        "name": "South Wales Surf School",
+        "location": "Southerndown",
+        "url": "https://southwalessurfschool.co.uk/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "3.5h",
+          "route": "Via M4"
+        },
+        {
+          "from": "Manchester",
+          "duration": "4.5h",
+          "route": "Via M6 and M5"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3h",
+          "route": "Via M5 and M4"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "0.5h",
+          "route": "Local roads"
+        }
+      ],
+      "publicTransport": "Porthcawl is accessible by train to Bridgend, followed by a short bus ride. Aberavon has its own train station. Check Transport for Wales for timetables.",
+      "parkingTips": "Parking can be a challenge, especially in Porthcawl during the summer. Arrive early, or be prepared to walk a bit from alternative parking spots."
+    },
+    "safety": "Be aware of strong currents, especially at rivermouths and reef breaks. Check the tide times and swell forecast before heading out. Never surf alone, and always inform someone of your plans. In an emergency, dial 999 and ask for the Coastguard."
+  },
+  "faqs": [
+    {
+      "question": "Is surfing in South Wales good for beginners?",
+      "answer": "Yes! Spots like Rest Bay in Porthcawl offer gentle waves and sandy beaches, making them ideal for learning to surf. Several surf schools in the area provide lessons and equipment hire."
+    },
+    {
+      "question": "What is the best time of year to surf in South Wales?",
+      "answer": "April to October generally offers the best conditions, with warmer water temperatures and consistent swells. Autumn can also be excellent, with bigger waves and fewer crowds."
+    },
+    {
+      "question": "Do I need a wetsuit to surf in South Wales?",
+      "answer": "Yes, you'll need a wetsuit year-round. A 4/3mm wetsuit is recommended for most of the year, while in winter you might want to consider a thicker suit, boots, gloves, and a hood."
+    },
+    {
+      "question": "Where can I rent surf gear in Porthcawl?",
+      "answer": "Porthcawl Surf School and Freewave Surf Academy both offer surfboard and wetsuit hire. You can find them right on Rest Bay beach."
+    },
+    {
+      "question": "Are there any dangerous marine animals in South Wales?",
+      "answer": "While it's rare, jellyfish can sometimes be present in the water, especially during the summer months. Portuguese Man o' War have been spotted, though this is unusual. Generally, the sea is safe."
+    },
+    {
+      "question": "What's the water temperature like in South Wales?",
+      "answer": "Water temperatures range from around 8-10°C in winter to 16-18°C in summer. A good wetsuit is essential year-round."
+    },
+    {
+      "question": "Are there any surf competitions in South Wales?",
+      "answer": "Yes, there are occasional local surf competitions held at Rest Bay. Check with local surf schools for information on upcoming events."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Drift Surf",
+        "slug": "drift-surf",
+        "address": "7 Esplanade, Porthcawl CF36 3YR",
+        "lat": 51.477,
+        "lng": -3.7,
+        "description": "A well-stocked surf shop in the heart of Porthcawl, offering a wide range of boards, wetsuits, and accessories. Friendly and knowledgeable staff.",
+        "website": "https://driftsurf.co.uk/",
+        "phone": "01656 786505",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 150
+      },
+      {
+        "name": "Porthcawl Surf Shop",
+        "slug": "porthcawl-surf-shop",
+        "address": "47a New Rd, Porthcawl CF36 5DH",
+        "lat": 51.475,
+        "lng": -3.709,
+        "description": "A long-established surf shop in Porthcawl, selling surfboards, wetsuits, and surf-related clothing. Offer board repairs too.",
+        "website": null,
+        "phone": "01656 772177",
+        "services": [
+          "gear sales",
+          "repairs"
+        ],
+        "googleRating": 4.2,
+        "reviewCount": 80
+      },
+      {
+        "name": "Surf Lines",
+        "slug": "surf-lines",
+        "address": "Unit 1, Village Farm Industrial Estate, Pyle, Bridgend CF33 6BJ",
+        "lat": 51.537,
+        "lng": -3.675,
+        "description": "Located slightly inland, Surf Lines offers a wide selection of surfboards, wetsuits, and accessories. They have a good reputation for customer service.",
+        "website": "https://www.surflines.co.uk/",
+        "phone": "01656 746740",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 120
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Waterfront",
+        "slug": "the-waterfront",
+        "address": "The Esplanade, Porthcawl CF36 3YR",
+        "lat": 51.477,
+        "lng": -3.702,
+        "description": "A popular pub and restaurant with stunning sea views. Perfect for a post-surf meal and a pint. Known for its seafood dishes and relaxed atmosphere.",
+        "vibe": "Surfer hangout, Relaxed dining",
+        "priceRange": "££",
+        "website": "https://www.sabrain.com/pubs-and-hotels/south-wales/bridgend/the-waterfront",
+        "knownFor": "Seafood, sea views"
+      },
+      {
+        "name": "Hi Tide Inn",
+        "slug": "hi-tide-inn",
+        "address": "Mackworth Rd, Porthcawl CF36 5BT",
+        "lat": 51.479,
+        "lng": -3.694,
+        "description": "A traditional pub near Coney Beach, serving hearty meals and a good selection of beers. Great for families and surfers alike.",
+        "vibe": "Family-friendly pub",
+        "priceRange": "£",
+        "website": "http://www.hitideinn.com/",
+        "knownFor": "Large portions, traditional pub fare"
+      },
+      {
+        "name": "Pelican Fish Bar",
+        "slug": "pelican-fish-bar",
+        "address": "Beach Rd, Ogmore-by-Sea, Bridgend CF32 0PW",
+        "lat": 51.456,
+        "lng": -3.58,
+        "description": "The place to go after a surfing session at Ogmore for some traditional fish and chips.",
+        "vibe": "Coastal Eatery",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Best Fish and Chips after a session"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Seabank Hotel",
+        "slug": "seabank-hotel",
+        "description": "A mid-range hotel overlooking Rest Bay, offering comfortable rooms and sea views. Ideal for surfers looking for convenience.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Rest Bay (0.1 miles)",
+        "website": "https://www.seabankhotel.co.uk/"
+      },
+      {
+        "name": "Trecco Bay Holiday Park",
+        "slug": "trecco-bay-holiday-park",
+        "description": "A large holiday park with a range of accommodation options, from caravans to lodges. Good for families and groups.",
+        "type": "campsite",
+        "priceRange": "££",
+        "nearestSpot": "Rest Bay (1.5 miles)",
+        "website": "https://www.parkdeanresorts.co.uk/location/south-wales/trecco-bay/"
+      },
+      {
+        "name": "The Brentwood Hotel",
+        "slug": "the-brentwood-hotel",
+        "description": "Hotel with very close access to all the surfing action Porthcawl has to offer!",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Rest Bay (0.3 Miles)",
+        "website": null
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Welsh National Surfing Championships",
+      "type": "competition",
+      "monthTypical": "October",
+      "description": "Annual surfing competition held at Rest Bay, showcasing the best surfers in Wales.",
+      "website": null,
+      "relevantActivities": [
+        "surfing"
+      ],
+      "registrationCost": 45
+    }
+  ],
+  "keywords": {
+    "primary": "surfing south wales",
+    "secondary": [
+      "surf schools south wales",
+      "porthcawl surfing",
+      "aberavon surfing",
+      "surf spots south wales",
+      "surfing wales"
+    ],
+    "longTail": [
+      "best surf spots for beginners south wales",
+      "surfboard hire porthcawl",
+      "wetsuit hire south wales",
+      "surfing lessons porthcawl price",
+      "surfing aberavon beach",
+      "surfing ogmore-by-sea conditions",
+      "surfing llantwit major tide times",
+      "surfing southerndown safety",
+      "surfing barry island for beginners",
+      "best time to surf in south wales",
+      "cheap surf lessons south wales",
+      "dog friendly surfing beaches south wales"
+    ],
+    "localIntent": [
+      "surfing near porthcawl",
+      "surfing near bridgend",
+      "surfing near cardiff",
+      "surfing near swansea",
+      "surf shops porthcawl"
+    ],
+    "commercialIntent": [
+      "surf lessons south wales price",
+      "surfboard hire south wales",
+      "book surf lesson porthcawl",
+      "guided surf trip south wales",
+      "wetsuit for sale porthcawl"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "north-wales",
+        "label": "Surfing in North Wales"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "coasteering",
+        "label": "Coasteering in South Wales"
+      },
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in South Wales"
+      },
+      {
+        "activityTypeSlug": "adventure-activities",
+        "label": "Adventure Activities in South Wales"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Porthcawl Surf School",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Rest Bay, Porthcawl CF36 3UW",
+      "postcode": "CF36 3UW",
+      "lat": 51.482,
+      "lng": -3.721,
+      "phone": "07971 135286",
+      "website": "https://www.porthcawlsurf.co.uk/",
+      "googleRating": 4.8,
+      "reviewCount": 150,
+      "description": "Offering surf lessons and coaching for all abilities at Rest Bay, Porthcawl. They provide equipment and instruction.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "surf lessons",
+        "surf coaching",
+        "equipment rental"
+      ],
+      "priceRange": "££",
+      "notes": "A well-established surf school at a popular surfing beach.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "South Wales Surf School",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Southerndown Beach, Vale of Glamorgan CF32 0RT",
+      "postcode": "CF32 0RT",
+      "lat": 51.452,
+      "lng": -3.568,
+      "phone": "07974 638995",
+      "website": "https://www.southwalessurfschool.co.uk/",
+      "googleRating": 4.7,
+      "reviewCount": 120,
+      "description": "Providing surf lessons at Southerndown Beach, focusing on safety and fun. Suitable for beginners to intermediate surfers.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "surf lessons",
+        "group bookings",
+        "private lessons"
+      ],
+      "priceRange": "££",
+      "notes": "Located at another prime surfing location in South Wales.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Freewave Surf Academy",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Rest Bay Watersports Centre, Porthcawl CF36 3UW",
+      "postcode": "CF36 3UW",
+      "lat": 51.483,
+      "lng": -3.722,
+      "phone": "07807 001067",
+      "website": "https://www.freewavesurfacademy.co.uk/",
+      "googleRating": 4.9,
+      "reviewCount": 95,
+      "description": "A surf academy offering lessons and coaching, alongside SUP and other water sports. They aim to develop surfing skills in a safe and supportive environment.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "surf lessons",
+        "surf coaching",
+        "SUP lessons",
+        "equipment rental"
+      ],
+      "priceRange": "££",
+      "notes": "Offers a wide range of water sports activities.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Drift Surf",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "11a Esplanade Ave, Porthcawl CF36 3YR",
+      "postcode": "CF36 3YR",
+      "lat": 51.479,
+      "lng": -3.711,
+      "phone": "01656 786200",
+      "website": "https://driftsurfshop.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 60,
+      "description": "A surf shop providing surfboards, wetsuits, and accessories. They also offer surfboard repairs and rentals.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "surfboard sales",
+        "wetsuit sales",
+        "surf accessories",
+        "surfboard repairs",
+        "surfboard rental"
+      ],
+      "priceRange": "££",
+      "notes": "A key surf shop in Porthcawl.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Porthcawl Surf Shop",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "31 New Rd, Porthcawl CF36 5DH",
+      "postcode": "CF36 5DH",
+      "lat": 51.482,
+      "lng": -3.705,
+      "phone": "01656 772251",
+      "website": null,
+      "googleRating": 4.3,
+      "reviewCount": 40,
+      "description": "A local surf shop in Porthcawl selling surf gear and offering advice. They stock a range of equipment for all levels.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "surfboard sales",
+        "wetsuit sales",
+        "surf accessories"
+      ],
+      "priceRange": "££",
+      "notes": "Another important surf shop in the town.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Surf Lines",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 10 Village Farm Ind Est, Pyle, Bridgend CF33 6BJ",
+      "postcode": "CF33 6BJ",
+      "lat": 51.536,
+      "lng": -3.659,
+      "phone": "01656 743099",
+      "website": "https://www.surflines.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 25,
+      "description": "Offers a wide range of surfing equipment and accessories. They also provide online sales and delivery.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "surfboard sales",
+        "wetsuit sales",
+        "surf accessories",
+        "online sales"
+      ],
+      "priceRange": "££",
+      "notes": "Offers a wider range of equipment and online sales.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "The Waterfront",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "The Harbour, Porthcawl CF36 3BG",
+      "postcode": "CF36 3BG",
+      "lat": 51.479,
+      "lng": -3.708,
+      "phone": "01656 784444",
+      "website": "https://waterfrontporthcawl.co.uk/",
+      "googleRating": 4.2,
+      "reviewCount": 500,
+      "description": "A restaurant and bar located on Porthcawl harbour. Serves a variety of food and drinks with harbour views.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "restaurant",
+        "bar",
+        "harbour views"
+      ],
+      "priceRange": "££",
+      "notes": "Good for a post-surf meal and drinks with a view.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Hi Tide Inn",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Mackworth Rd, Porthcawl CF36 5BT",
+      "postcode": "CF36 5BT",
+      "lat": 51.482,
+      "lng": -3.698,
+      "phone": "01656 782474",
+      "website": "https://www.hitideinn.co.uk/",
+      "googleRating": 4.3,
+      "reviewCount": 400,
+      "description": "A traditional pub in Porthcawl. Offers a wide selection of beers and pub food.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "pub",
+        "food",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "A classic pub option close to the surf.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Pelican Fish Bar",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "16Heol Y Mynydd, Ogmore Vale, Bridgend CF32 7AL",
+      "postcode": "CF32 7AL",
+      "lat": 51.543,
+      "lng": -3.528,
+      "phone": "01656 840698",
+      "website": null,
+      "googleRating": 4.4,
+      "reviewCount": 250,
+      "description": "A popular fish and chip shop in Ogmore. Perfect for a quick and tasty meal after surfing Southerndown.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "fish and chips",
+        "takeaway"
+      ],
+      "priceRange": "£",
+      "notes": "Good option for a quick meal near Southerndown.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Rest Bay",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Rest Bay, Porthcawl CF36 3UW",
+      "postcode": "CF36 3UW",
+      "lat": 51.482,
+      "lng": -3.721,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.6,
+      "reviewCount": 1800,
+      "description": "A popular surfing beach in Porthcawl. Known for its consistent waves and beginner-friendly conditions.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "beach",
+        "surfing"
+      ],
+      "priceRange": "£",
+      "notes": "The primary surfing location in Porthcawl.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Southerndown Beach (Dunraven Bay)",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Southerndown, Vale of Glamorgan CF32 0RP",
+      "postcode": "CF32 0RP",
+      "lat": 51.452,
+      "lng": -3.568,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.7,
+      "reviewCount": 2200,
+      "description": "A scenic beach offering surfing opportunities. Known for its dramatic cliffs and history.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "beach",
+        "surfing"
+      ],
+      "priceRange": "£",
+      "notes": "A popular surfing beach near Ogmore-by-Sea.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Porthcawl RNLI Lifeboat Station",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "The Harbour, Porthcawl CF36 3BG",
+      "postcode": "CF36 3BG",
+      "lat": 51.478,
+      "lng": -3.708,
+      "phone": null,
+      "website": "https://rnli.org/find-my-nearest/lifeboat-stations/porthcawl-lifeboat-station",
+      "googleRating": 4.8,
+      "reviewCount": 30,
+      "description": "Important for water safety, the RNLI provides rescue services. Worth noting for safe surfing practices.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "rescue services",
+        "water safety"
+      ],
+      "priceRange": null,
+      "notes": "A reminder of water safety.",
+      "inDatabase": false,
+      "priority": "low"
+    },
+    {
+      "name": "Ogmore Rivermouth",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Ogmore-by-Sea, Vale of Glamorgan CF32",
+      "postcode": "CF32",
+      "lat": 51.461,
+      "lng": -3.576,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.5,
+      "reviewCount": 100,
+      "description": "A surf spot at the mouth of the Ogmore River, offering good waves on certain tides. Requires experience.",
+      "relevantActivities": [
+        "surfing"
+      ],
+      "services": [
+        "surfing"
+      ],
+      "priceRange": null,
+      "notes": "Surfable location for more advanced surfers when conditions are right.",
+      "inDatabase": false,
+      "priority": "medium"
+    }
+  ]
+}

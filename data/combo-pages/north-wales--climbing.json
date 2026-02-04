@@ -1,0 +1,908 @@
+{
+  "regionSlug": "north-wales",
+  "activityTypeSlug": "climbing",
+  "title": "Climbing in North Wales",
+  "strapline": "From slate quarries to soaring sea cliffs, North Wales climbing serves up proper adventure.",
+  "metaTitle": "Climbing North Wales: Routes, Guides & Gear | Adventure Wales",
+  "metaDescription": "Discover the best climbing North Wales has to offer. Routes for all levels, gear shops, guides, and post-climb pubs.",
+  "heroAlt": "Climber ascending a granite face in the Llanberis Pass, North Wales",
+  "introduction": "North Wales, mate, it's not just hills – it's a climber's playground. Forget the manicured holds of your local wall; we're talking about the raw grit of slate quarries, the sheer granite of the Llanberis Pass, and the exposed limestone sea cliffs of the Great Orme. This isn't climbing, it's an experience.\n\nWhat makes it special? Variety, pure and simple. One day you could be tackling multi-pitch trad routes on Dinas Cromlech, the next bouldering in the Ogwen Valley, and the next sport climbing above the crashing waves at Gogarth. The weather? Unpredictable, like a Welsh rugby match. Sunshine can turn to drizzle in minutes, so you need to be prepared.\n\nWho's it for? Everyone, really. There's beginner-friendly stuff at Tremadog (famous for its sunny aspect) and the indoor walls like Beacon Climbing Centre. But if you're chasing a proper challenge, the Pass and Gogarth will test your nerve and skill. Just remember, North Wales climbing is serious business. Be prepared, know your limits, and respect the mountains. And always, always have a backup plan for that inevitable downpour. Learning about climbing north wales will be one of the greatest experiences you can encounter.",
+  "bestSeason": "April-October",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Flying Buttress, Dinas Cromlech, Llanberis Pass",
+      "slug": "flying-buttress-dinas-cromlech",
+      "description": "A classic multi-pitch trad route on immaculate granite. Expect sustained climbing with fantastic exposure. The views from the top are breathtaking, overlooking the entire Llanberis Pass. A true North Wales climbing experience.",
+      "difficulty": "Challenging",
+      "duration": "6-7 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced trad climbers looking for a memorable day out.",
+      "notSuitableFor": "Beginners or those uncomfortable with exposure.",
+      "bestSeason": "May-September",
+      "parking": "Pay-and-display parking at the Cromlech Boulders car park. Get there early, it fills up fast (especially on weekends).",
+      "startPoint": {
+        "name": "Cromlech Boulders Car Park",
+        "lat": 53.102,
+        "lng": -4.023
+      },
+      "estimatedCost": "Free (parking £6-8)",
+      "operatorSlug": "snowdonia-mountain-guides",
+      "insiderTip": "Check the Cromlech Boulders for a warm-up before tackling the route. And bring plenty of water, it's a long day."
+    },
+    {
+      "name": "Dream of White Horses, Gogarth",
+      "slug": "dream-of-white-horses-gogarth",
+      "description": "A legendary sea cliff route on the Great Orme. Stunning position above the Irish Sea, with challenging and varied climbing. Expect exposure to the elements. This one’s a north wales climbing must.",
+      "difficulty": "Expert",
+      "duration": "5-6 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced climbers comfortable with sea cliff environments.",
+      "notSuitableFor": "Beginners, those afraid of heights, or in strong winds.",
+      "bestSeason": "May-August",
+      "parking": "Pay-and-display parking at South Stack RSPB reserve, then a 20-30 minute walk.",
+      "startPoint": {
+        "name": "South Stack RSPB",
+        "lat": 53.307,
+        "lng": -4.708
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": "raw-adventures",
+      "insiderTip": "Check the tide times! Some sections of the route are only accessible at low tide. Also, be aware of nesting seabirds."
+    },
+    {
+      "name": "Christmas Curry, Tremadog",
+      "slug": "christmas-curry-tremadog",
+      "description": "A popular and relatively easy multi-pitch route on Craig Bwlch y Moch (Tremadog). A good introduction to trad climbing in a beautiful setting. Often climbed as two pitches, though it can be three.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners to intermediate trad climbers.",
+      "notSuitableFor": "Those seeking extreme challenges.",
+      "bestSeason": "April-October",
+      "parking": "Park carefully along the roadside in Tremadog village. Be respectful of residents.",
+      "startPoint": {
+        "name": "Tremadog Village",
+        "lat": 52.954,
+        "lng": -4.156
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Grab a pasty from the bakery in Tremadog village afterwards. Perfect post-climb fuel."
+    },
+    {
+      "name": "Vaynol Slab, Llanberis Pass",
+      "slug": "vaynol-slab-llanberis-pass",
+      "description": "A series of easier slab climbs, perfect for beginners and those looking for a mellow day out. Good for practicing footwork. Can be a bit polished in places. Vaynol Slab provides stunning views of the Llanberis pass.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Beginners and families.",
+      "notSuitableFor": "Experienced climbers seeking a challenge.",
+      "bestSeason": "May-September",
+      "parking": "Small layby near the base of the slab. Can fill up quickly.",
+      "startPoint": {
+        "name": "Layby near Vaynol Slab",
+        "lat": 53.12,
+        "lng": -4.014
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Combine it with a walk along Llyn Peris for a full day out."
+    },
+    {
+      "name": "Main Cliff, Craig y Forwen",
+      "slug": "main-cliff-craig-y-forwen",
+      "description": "A quieter crag compared to the Llanberis Pass, with a good mix of trad and sport routes. Less polished than some of the more popular venues. Often a good option when the Pass is crowded.",
+      "difficulty": "Moderate to Challenging",
+      "duration": "4-5 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediate to experienced climbers looking for a less crowded venue.",
+      "notSuitableFor": "Complete beginners.",
+      "bestSeason": "April-October",
+      "parking": "Park responsibly in the small village of Pentre Uchaf, near the Vaynol Arms.",
+      "startPoint": {
+        "name": "Pentre Uchaf Village",
+        "lat": 53.081,
+        "lng": -3.622
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "The Vaynol Arms in Pentre Uchaf is a great spot for a post-climb pint. And check out the old quarry workings nearby."
+    },
+    {
+      "name": "Mur Y Niwl, Great Orme",
+      "slug": "mur-y-niwl-great-orme",
+      "description": "Offers a range of single pitch sport and trad climbs. The limestone is varied, some polished, some sharp. Stunning views of the Irish Sea.",
+      "difficulty": "Moderate to Challenging",
+      "duration": "4-5 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Sport and trad climbers looking for a variety of routes.",
+      "notSuitableFor": "Those who don't like heights.",
+      "bestSeason": "April-September",
+      "parking": "Park in the Great Orme Summit Car Park, or along the Marine Drive.",
+      "startPoint": {
+        "name": "Great Orme Summit Car Park",
+        "lat": 53.333,
+        "lng": -3.838
+      },
+      "estimatedCost": "Free (parking fees may apply)",
+      "operatorSlug": null,
+      "insiderTip": "Bring binoculars to spot seals basking on the rocks below."
+    },
+    {
+      "name": "Indoor Walls - Beacon Climbing Centre",
+      "slug": "beacon-climbing-centre",
+      "description": "Great for learning the ropes, training, or escaping bad weather. Offers a wide range of routes for all abilities, plus bouldering areas. Full cafe and gear shop on site.",
+      "difficulty": "Easy to Expert",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "All climbers, especially beginners and those looking for indoor training.",
+      "notSuitableFor": "Those seeking a wilderness experience.",
+      "bestSeason": "All year",
+      "parking": "Ample free parking at the centre.",
+      "startPoint": {
+        "name": "Beacon Climbing Centre",
+        "lat": 53.128,
+        "lng": -4.258
+      },
+      "estimatedCost": "£12-15 per session",
+      "operatorSlug": null,
+      "insiderTip": "Check their website for special events and courses."
+    },
+    {
+      "name": "Indoor Walls - Indy Climbing Wall",
+      "slug": "indy-climbing-wall",
+      "description": "A popular indoor wall in Llanfair PG. Wide range of climbing grades to suit beginners right through to experts. Caters for both climbers looking to train and those trying the sport for the first time.",
+      "difficulty": "Easy to Expert",
+      "duration": "2-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "All climbers, especially beginners and those looking for indoor training.",
+      "notSuitableFor": "Those seeking a wilderness experience.",
+      "bestSeason": "All year",
+      "parking": "Ample free parking at the centre.",
+      "startPoint": {
+        "name": "Indy Climbing Wall",
+        "lat": 53.223,
+        "lng": -4.203
+      },
+      "estimatedCost": "£12-15 per session",
+      "operatorSlug": null,
+      "insiderTip": "Great cafe on site for post session snacks."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The weather in North Wales is notoriously unpredictable. Mountain weather can change rapidly, so be prepared for all conditions, even in summer. Check the forecast before you go and be prepared to bail if the weather turns.",
+    "weatherLinks": [
+      {
+        "name": "Mountain Weather Information Service (MWIS)",
+        "url": "https://www.mwis.org.uk/"
+      },
+      {
+        "name": "Met Office",
+        "url": "https://www.metoffice.gov.uk/"
+      }
+    ],
+    "gearChecklist": [
+      "Climbing shoes - Properly fitted and suitable for the rock type.",
+      "Harness - Ensure it fits correctly and is in good condition.",
+      "Helmet - Essential for protecting your head from falling rocks.",
+      "Belay device - ATC or GriGri, depending on your preference.",
+      "Locking carabiners - Several, for belaying and building anchors.",
+      "Rope - Dynamic rope suitable for the length of your routes.",
+      "Quickdraws - Enough for the routes you plan to climb.",
+      "Trad rack - If trad climbing, including cams, nuts, and slings.",
+      "First-aid kit - Including blister treatment and pain relief.",
+      "Water and snacks - Stay hydrated and fuelled throughout the day.",
+      "Waterproof jacket - Essential, even if the forecast looks good."
+    ],
+    "gearHire": [
+      {
+        "name": "Joe Brown's",
+        "location": "Llanberis",
+        "url": "https://www.joe-brown.com/"
+      },
+      {
+        "name": "V12 Outdoor",
+        "location": "Llanberis",
+        "url": "https://v12outdoor.com/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "4.5-5h",
+          "route": "Via M6 and A55"
+        },
+        {
+          "from": "Manchester",
+          "duration": "2-2.5h",
+          "route": "Via M56 and A55"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3-3.5h",
+          "route": "Via M6 and A5"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "4-4.5h",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "Bangor and Llandudno Junction are the main train stations. From there, buses (including the Snowdon Sherpa) provide access to key climbing areas.",
+      "parkingTips": "Parking can be limited, especially in popular areas like the Llanberis Pass. Arrive early or consider using public transport. Park responsibly and avoid blocking access for residents and emergency services."
+    },
+    "safety": "Climbing is inherently dangerous. Always climb within your abilities and be aware of the risks. Check weather conditions and tide times (for sea cliffs). Carry a first-aid kit and know how to use it. Leave a route plan with someone. In an emergency, call 999 and ask for Mountain Rescue."
+  },
+  "faqs": [
+    {
+      "question": "What's the best time of year for climbing in North Wales?",
+      "answer": "April to October generally offers the best conditions, with drier weather and longer daylight hours. However, be prepared for rain at any time of year. Sea cliff climbing is best in the summer months."
+    },
+    {
+      "question": "What grade of climbing is available in North Wales?",
+      "answer": "North Wales has routes for all levels, from beginner-friendly slabs to extremely challenging multi-pitch climbs. Tremadog is good for beginners, while the Llanberis Pass and Gogarth offer more advanced options."
+    },
+    {
+      "question": "Do I need a guide for climbing in North Wales?",
+      "answer": "If you're new to climbing or unfamiliar with the area, hiring a guide is highly recommended. Operators like Plas y Brenin and Snowdonia Mountain Guides offer courses and guided ascents."
+    },
+    {
+      "question": "Where can I hire climbing gear in North Wales?",
+      "answer": "Joe Brown's and V12 Outdoor, both located in Llanberis, offer a wide range of climbing gear for hire."
+    },
+    {
+      "question": "What are the best places to eat after climbing in North Wales?",
+      "answer": "Pete's Eats in Llanberis is a classic climber's cafe, known for its massive portions. The Eric Jones Cafe in Tremadog is another popular spot, especially for those climbing at Tremadog. The Heights Hotel offers more upscale options."
+    },
+    {
+      "question": "Is there climbing in North Wales suitable for beginners?",
+      "answer": "Yes, Tremadog and Vaynol Slab in Llanberis Pass offer many suitable routes. Indoor walls such as Beacon Climbing Centre and Indy Climbing Wall are also perfect for beginners to learn the basics."
+    },
+    {
+      "question": "Are there any sea cliffs for climbing?",
+      "answer": "Yes! The Great Orme and Gogarth are fantastic locations for sea cliff climbing offering single and multi pitch routes with breath taking views."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Joe Brown's",
+        "slug": "joe-browns",
+        "address": "Menai Hall, Llanberis LL55 4EN",
+        "lat": 53.117,
+        "lng": -4.124,
+        "description": "Legendary climbing shop, stocking everything you need for climbing and mountaineering. Known for its knowledgeable staff and wide selection.",
+        "website": "https://www.joe-brown.com/",
+        "phone": "01286 870327",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "boot fitting"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 350
+      },
+      {
+        "name": "V12 Outdoor",
+        "slug": "v12-outdoor",
+        "address": "22-24 High St, Llanberis LL55 4ER",
+        "lat": 53.116,
+        "lng": -4.124,
+        "description": "Well-stocked outdoor shop with a focus on climbing and mountaineering gear. Offers a good range of brands and expert advice.",
+        "website": "https://v12outdoor.com/",
+        "phone": "01286 870333",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "boot fitting"
+        ],
+        "googleRating": 4.4,
+        "reviewCount": 280
+      },
+      {
+        "name": "Cotswold Outdoor",
+        "slug": "cotswold-outdoor",
+        "address": "Unit 3A, Betws-y-Coed, LL24 0AY",
+        "lat": 53.089,
+        "lng": -3.81,
+        "description": "Large outdoor retailer with a wide range of clothing and equipment for various activities, including climbing.",
+        "website": "https://www.cotswoldoutdoor.com/",
+        "phone": "01690 710766",
+        "services": [
+          "gear sales",
+          "boot fitting"
+        ],
+        "googleRating": 4.2,
+        "reviewCount": 150
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Pete's Eats",
+        "slug": "petes-eats",
+        "address": "Llanberis LL55 4EU",
+        "lat": 53.117,
+        "lng": -4.123,
+        "description": "Iconic climber's cafe in Llanberis, famous for its massive portions and hearty food. A must-visit for any climber in the area.",
+        "vibe": "Climber-friendly cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Giant portions"
+      },
+      {
+        "name": "Eric Jones Cafe",
+        "slug": "eric-jones-cafe",
+        "address": "Tremadog LL49 9RB",
+        "lat": 52.955,
+        "lng": -4.156,
+        "description": "Popular cafe in Tremadog, right next to the crag. Known for its good coffee and friendly atmosphere. Perfect for a pre- or post-climb refuel.",
+        "vibe": "Climber-friendly cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Good coffee"
+      },
+      {
+        "name": "Heights Hotel",
+        "slug": "heights-hotel",
+        "address": "Llanberis Pass, Nant Peris LL55 4UH",
+        "lat": 53.109,
+        "lng": -4.018,
+        "description": "Located in the Llanberis Pass, offering stunning views and a more upscale dining experience. Good for a celebratory meal.",
+        "vibe": "Restaurant",
+        "priceRange": "££",
+        "website": "https://www.heightshotel.co.uk/",
+        "knownFor": "Scenic views"
+      },
+      {
+        "name": "Vaynol Arms",
+        "slug": "vaynol-arms",
+        "address": "Pentre Uchaf, Gwynedd LL55 3PD",
+        "lat": 53.081,
+        "lng": -3.622,
+        "description": "Traditional pub in Pentre Uchaf, near Craig y Forwen. Serves good food and real ales. A great spot to relax after a day of climbing.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "http://www.vaynolarms.com/",
+        "knownFor": "Real ales"
+      },
+      {
+        "name": "The Pen-y-Gwryd Hotel",
+        "slug": "pen-y-gwryd-hotel",
+        "address": "Llanberis Pass, Nant Gwynant, LL55 4NT",
+        "lat": 53.082,
+        "lng": -3.967,
+        "description": "A historic hotel at the foot of Snowdon, with a bar and restaurant serving hearty meals. A popular spot for climbers and walkers.",
+        "vibe": "Historic hotel",
+        "priceRange": "££",
+        "website": "http://www.pyg.co.uk/",
+        "knownFor": "Historic significance, good food"
+      },
+      {
+        "name": "Snowdon Mountain Railway Cafe",
+        "slug": "snowdon-mountain-railway-cafe",
+        "address": "Snowdon Summit, Llanberis LL55 4TU",
+        "lat": 53.069,
+        "lng": -4.078,
+        "description": "Located at the summit of Snowdon (accessible by train or hiking), with amazing views. A good option for a coffee or snack.",
+        "vibe": "Cafe",
+        "priceRange": "£",
+        "website": "https://snowdonrailway.co.uk/",
+        "knownFor": "Summit views"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Plas y Brenin",
+        "slug": "plas-y-brenin",
+        "description": "National Mountain Sports Centre offering courses and accommodation. Excellent location for climbing in the Ogwen Valley.",
+        "type": "bunkhouse",
+        "priceRange": "££",
+        "nearestSpot": "Ogwen Valley, 5 mins drive",
+        "website": "https://www.pyb.co.uk/"
+      },
+      {
+        "name": "YHA Snowdon Pen-y-Pass",
+        "slug": "yha-snowdon-pen-y-pass",
+        "description": "Budget-friendly hostel located at the foot of Snowdon. Ideal for climbers and hikers.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Llanberis Pass, 10 mins drive",
+        "website": "https://www.yha.org.uk/hostel/yha-snowdon-pen-y-pass"
+      },
+      {
+        "name": "Camping in the Llanberis Pass",
+        "slug": "camping-llanberis-pass",
+        "description": "Several campsites are located in the Llanberis Pass. A great option for budget travelers.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Llanberis Pass, various distances",
+        "website": null
+      },
+      {
+        "name": "The Royal Victoria Hotel",
+        "slug": "royal-victoria-hotel",
+        "description": "A historic hotel with beautiful gardens and views. Close to the Llanberis path up Snowdon.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Llanberis, 5 mins drive",
+        "website": "https://www.royalvictoria.co.uk/"
+      },
+      {
+        "name": "Bryn Dinas Camping Pods",
+        "slug": "bryn-dinas-camping-pods",
+        "description": "Located a short drive from the Llanberis Pass, these camping pods offer a comfortable alternative to traditional camping.",
+        "type": "glamping",
+        "priceRange": "££",
+        "nearestSpot": "Llanberis Pass, 15 mins drive",
+        "website": "https://www.bryndinas.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "BMC International Climbing Festival",
+      "type": "festival",
+      "monthTypical": "July",
+      "description": "A celebration of climbing, with workshops, talks, and competitions.",
+      "website": "https://www.thebmc.co.uk/",
+      "relevantActivities": [
+        "climbing"
+      ],
+      "registrationCost": 60
+    }
+  ],
+  "keywords": {
+    "primary": "climbing north wales",
+    "secondary": [
+      "north wales climbing routes",
+      "climbing llanberis pass",
+      "tremadog climbing",
+      "gogarth sea cliff climbing",
+      "indoor climbing north wales"
+    ],
+    "longTail": [
+      "best climbing areas north wales",
+      "easy climbing routes north wales",
+      "guided climbing tours north wales",
+      "climbing courses north wales",
+      "sea cliff climbing north wales beginner",
+      "trad climbing llanberis pass",
+      "sport climbing great orme",
+      "rock climbing north wales beginners",
+      "family climbing north wales",
+      "beginner climbing courses snowdonia",
+      "climbing weather forecast north wales",
+      "climbing gear shops llanberis"
+    ],
+    "localIntent": [
+      "climbing near llanberis",
+      "climbing near betws-y-coed",
+      "climbing near snowdon",
+      "climbing near bangor",
+      "climbing near llandudno"
+    ],
+    "commercialIntent": [
+      "climbing guide north wales price",
+      "hire climbing gear llanberis",
+      "book climbing course snowdonia",
+      "guided climbing trips north wales",
+      "north wales climbing holidays"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "south-wales",
+        "label": "Climbing in South Wales"
+      },
+      {
+        "regionSlug": "peak-district",
+        "label": "Climbing in the Peak District"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in North Wales"
+      },
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in North Wales"
+      },
+      {
+        "activityTypeSlug": "watersports",
+        "label": "Watersports in North Wales"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Plas y Brenin",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Capel Curig, Betws-y-Coed LL24 0ET",
+      "postcode": "LL24 0ET",
+      "lat": 53.112,
+      "lng": -3.917,
+      "phone": "01690 720214",
+      "website": "https://www.pyb.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 850,
+      "description": "The National Outdoor Centre, offering a wide range of mountaineering, climbing, and other outdoor courses and activities.",
+      "relevantActivities": [
+        "climbing",
+        "mountaineering",
+        "hiking"
+      ],
+      "services": [
+        "climbing courses",
+        "accommodation",
+        "catering",
+        "mountain skills training"
+      ],
+      "priceRange": "£££",
+      "notes": "Premier climbing training centre in North Wales.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Snowdonia Mountain Guides",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "2 Cwm Glas, Llanberis LL55 4EL",
+      "postcode": "LL55 4EL",
+      "lat": 53.118,
+      "lng": -4.127,
+      "phone": "07786 631558",
+      "website": "https://www.snowdoniamountainguides.com/",
+      "googleRating": 5.0,
+      "reviewCount": 120,
+      "description": "Providing guided climbing, scrambling, and mountaineering experiences in Snowdonia for all skill levels.",
+      "relevantActivities": [
+        "climbing",
+        "scrambling",
+        "mountaineering"
+      ],
+      "services": [
+        "guided climbs",
+        "instruction",
+        "mountain skills courses"
+      ],
+      "priceRange": "££",
+      "notes": "Highly rated guiding service with experienced instructors.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Raw Adventures",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Y Felin, Llanberis LL55 4ER",
+      "postcode": "LL55 4ER",
+      "lat": 53.121,
+      "lng": -4.124,
+      "phone": "01286 870870",
+      "website": "https://raw-adventures.co.uk/",
+      "googleRating": 4.9,
+      "reviewCount": 250,
+      "description": "Offering guided walks, climbs, and other adventures in Snowdonia National Park, suitable for various abilities.",
+      "relevantActivities": [
+        "climbing",
+        "hiking",
+        "scrambling"
+      ],
+      "services": [
+        "guided walks",
+        "climbing courses",
+        "team building"
+      ],
+      "priceRange": "££",
+      "notes": "Well-established adventure company with a range of activities.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Joe Brown's",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Menai Hall, Llanberis LL55 4TE",
+      "postcode": "LL55 4TE",
+      "lat": 53.122,
+      "lng": -4.125,
+      "phone": "01286 870327",
+      "website": "https://www.joe-brown.com/",
+      "googleRating": 4.5,
+      "reviewCount": 400,
+      "description": "Iconic climbing shop founded by Joe Brown, selling a wide range of climbing gear and equipment.",
+      "relevantActivities": [
+        "climbing"
+      ],
+      "services": [
+        "gear sales",
+        "advice",
+        "equipment rental"
+      ],
+      "priceRange": "££",
+      "notes": "Legendary climbing shop with a long history.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "V12 Outdoor",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "High Street, Llanberis LL55 4ER",
+      "postcode": "LL55 4ER",
+      "lat": 53.122,
+      "lng": -4.123,
+      "phone": "01286 870371",
+      "website": "https://www.v12outdoor.com/",
+      "googleRating": 4.4,
+      "reviewCount": 300,
+      "description": "Outdoor equipment retailer offering climbing gear, camping equipment, and clothing.",
+      "relevantActivities": [
+        "climbing",
+        "hiking",
+        "camping"
+      ],
+      "services": [
+        "gear sales",
+        "boot fitting",
+        "expert advice"
+      ],
+      "priceRange": "££",
+      "notes": "Popular outdoor shop in the heart of Llanberis.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Cotswold Outdoor",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 5, Cibyn Industrial Estate, Caernarfon LL55 2BD",
+      "postcode": "LL55 2BD",
+      "lat": 53.13,
+      "lng": -4.285,
+      "phone": "01286 674641",
+      "website": "https://www.cotswoldoutdoor.com/",
+      "googleRating": 4.0,
+      "reviewCount": 150,
+      "description": "Chain retailer of outdoor clothing and equipment, including climbing gear.",
+      "relevantActivities": [
+        "climbing",
+        "hiking"
+      ],
+      "services": [
+        "gear sales",
+        "boot fitting"
+      ],
+      "priceRange": "££",
+      "notes": "Reliable retailer for a wide range of outdoor gear.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Pete's Eats",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "High Street, Llanberis LL55 4EU",
+      "postcode": "LL55 4EU",
+      "lat": 53.121,
+      "lng": -4.122,
+      "phone": "01286 870571",
+      "website": null,
+      "googleRating": 4.4,
+      "reviewCount": 1000,
+      "description": "Legendary cafe serving hearty portions of food, popular with climbers and outdoor enthusiasts.",
+      "relevantActivities": [
+        "climbing",
+        "hiking"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "A must-visit for post-climb fuel.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Eric Jones Cafe",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Tremadog Square, Tremadog, Porthmadog LL49 9RB",
+      "postcode": "LL49 9RB",
+      "lat": 52.928,
+      "lng": -4.139,
+      "phone": "01766 512072",
+      "website": null,
+      "googleRating": 4.5,
+      "reviewCount": 250,
+      "description": "Cafe named after renowned climber Eric Jones, serving breakfast, lunch and cake, popular with climbers.",
+      "relevantActivities": [
+        "climbing"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "Excellent location near Tremadog cliffs.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Heights Hotel",
+      "type": "post_activity",
+      "category": "accommodation",
+      "address": "Llanberis Pass, Nant Peris, Caernarfon LL55 4UU",
+      "postcode": "LL55 4UU",
+      "lat": 53.089,
+      "lng": -4.059,
+      "phone": "01286 870253",
+      "website": "https://www.heightshotel.co.uk/",
+      "googleRating": 4.0,
+      "reviewCount": 450,
+      "description": "Hotel in the Llanberis Pass, popular with climbers and walkers, offering accommodation and food.",
+      "relevantActivities": [
+        "climbing",
+        "hiking"
+      ],
+      "services": [
+        "accommodation",
+        "food",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "Convenient location for climbing in the Llanberis Pass.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Vaynol Arms",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Pentir, Bangor LL57 4EA",
+      "postcode": "LL57 4EA",
+      "lat": 53.163,
+      "lng": -4.175,
+      "phone": "01248 353143",
+      "website": "http://www.vaynolarms.com/",
+      "googleRating": 4.3,
+      "reviewCount": 300,
+      "description": "Traditional pub serving food and drinks, a good spot for a post-climb meal.",
+      "relevantActivities": [
+        "climbing"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "Good option for a relaxed meal after a climb.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "The Pad Climbing Centre",
+      "type": "venue",
+      "category": "activity_provider",
+      "address": "Unit 1A, Cibyn Industrial Estate, Caernarfon LL55 2BD",
+      "postcode": "LL55 2BD",
+      "lat": 53.129,
+      "lng": -4.285,
+      "phone": "01286 677322",
+      "website": "https://www.thepadclimbing.com/",
+      "googleRating": 4.6,
+      "reviewCount": 220,
+      "description": "Indoor climbing centre offering bouldering and roped climbing, catering to all abilities.",
+      "relevantActivities": [
+        "climbing"
+      ],
+      "services": [
+        "indoor climbing",
+        "climbing courses",
+        "gear rental"
+      ],
+      "priceRange": "££",
+      "notes": "Great indoor option, especially on bad weather days.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Beacon Climbing Centre",
+      "type": "venue",
+      "category": "activity_provider",
+      "address": "Unit 1, Cibyn Industrial Estate, Caernarfon LL55 2BD",
+      "postcode": "LL55 2BD",
+      "lat": 53.129,
+      "lng": -4.285,
+      "phone": "01286 677322",
+      "website": "https://www.beaconclimbing.com/",
+      "googleRating": 4.6,
+      "reviewCount": 500,
+      "description": "Large indoor climbing centre with a variety of walls, bouldering areas, and courses.",
+      "relevantActivities": [
+        "climbing"
+      ],
+      "services": [
+        "indoor climbing",
+        "climbing courses",
+        "cafe"
+      ],
+      "priceRange": "££",
+      "notes": "Major climbing destination for all abilities.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Snowdonia Adventures",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Unit 4A, Bryn Cegin Industrial Estate, Bangor LL57 4SU",
+      "postcode": "LL57 4SU",
+      "lat": 53.222,
+      "lng": -4.148,
+      "phone": "01248 670076",
+      "website": "https://www.snowdonia-adventures.co.uk/",
+      "googleRating": 4.8,
+      "reviewCount": 150,
+      "description": "Provides climbing, canyoning, and other adventure activities in Snowdonia.",
+      "relevantActivities": [
+        "climbing",
+        "canyoning"
+      ],
+      "services": [
+        "guided climbs",
+        "adventure tours"
+      ],
+      "priceRange": "££",
+      "notes": "Popular for various outdoor pursuits.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Climbers Shop Ambleside",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Compston Corner, Lake Road, Ambleside LA22 9DJ",
+      "postcode": "LA22 9DJ",
+      "lat": 54.441,
+      "lng": -2.964,
+      "phone": "015394 32733",
+      "website": "https://climbers-shop.co.uk",
+      "googleRating": 4.6,
+      "reviewCount": 640,
+      "description": "Outdoor equipment retailer offering climbing gear, camping equipment, and clothing.",
+      "relevantActivities": [
+        "climbing",
+        "hiking",
+        "camping"
+      ],
+      "services": [
+        "gear sales",
+        "boot fitting",
+        "expert advice"
+      ],
+      "priceRange": "££",
+      "notes": "Popular outdoor shop",
+      "inDatabase": false,
+      "priority": "medium"
+    }
+  ]
+}

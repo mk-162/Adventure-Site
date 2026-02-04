@@ -10,58 +10,51 @@ Each page aggregates: editorial content, bookable activities, related journal po
 
 ---
 
-## Priority Combos (Create These First)
+## Scope — ALL Meaningful Combos
 
-These are the high-search-volume, famous-for-it combos. Ordered by SEO value.
+**Create a combo page for every meaningful activity + region combination.** Don't stop at a fixed list.
 
-### Tier 1 — Must-Have (create first)
+### Source of Truth
 
-| Region | Activity | Why Famous | Target Keyword |
-|--------|----------|-----------|----------------|
-| Snowdonia | Hiking | Snowdon/Yr Wyddfa, Tryfan, Crib Goch, Cadair Idris | "hiking in snowdonia" |
-| Pembrokeshire | Surfing | Freshwater West, Manorbier, Newgale | "surfing in pembrokeshire" |
-| Pembrokeshire | Coasteering | Birthplace of coasteering, St Davids | "coasteering pembrokeshire" |
-| Snowdonia | Climbing | Tryfan, Crib Goch, Idwal Slabs | "climbing in snowdonia" |
-| Gower | Surfing | Llangennith, Rhossili | "surfing in gower" |
-| Snowdonia | Zip Lining | Zip World Velocity, Penrhyn Quarry | "zip lining snowdonia" |
-| Brecon Beacons | Hiking | Pen y Fan, Fan y Big, Sugar Loaf | "hiking brecon beacons" |
-| Snowdonia | Mountain Biking | Coed y Brenin, Antur Stiniog | "mountain biking snowdonia" |
-| Pembrokeshire | Kayaking | Sea kayaking around Ramsey Island | "kayaking pembrokeshire" |
-| Snowdonia | Gorge Walking | Ogwen Valley, Swallow Falls | "gorge walking snowdonia" |
+The database and site data define what regions and activity types exist:
+- **Regions:** Check the DB or site navigation for all region slugs
+- **Activity types:** Check the DB `activity_types` table for all activity type slugs
+- **Existing combo pages:** `ls data/combo-pages/*.json`
 
-### Tier 2 — High Value
+### How to Discover What Needs Creating
 
-| Region | Activity | Why Famous |
-|--------|----------|-----------|
-| Anglesey | Kayaking | Sea kayaking, Menai Strait |
-| Anglesey | Coasteering | Church Bay, South Stack |
-| Gower | Coasteering | Three Cliffs Bay |
-| Brecon Beacons | Mountain Biking | Talybont, Bwlch, Gap routes |
-| Brecon Beacons | Caving | OFD, Porth yr Ogof |
-| Snowdonia | Caving | Cwmorthin, slate mines |
-| Snowdonia | Wild Swimming | Llyn Idwal, Blue Lake, waterfalls |
-| Pembrokeshire | Hiking | Coastal path sections |
-| Gower | Hiking | Worm's Head, Three Cliffs |
-| Mid Wales | Mountain Biking | Elan Valley, Nant yr Arian |
-| Llŷn Peninsula | Surfing | Porth Neigwl (Hell's Mouth) |
-| Wye Valley | Kayaking | River Wye paddling |
+```bash
+# See what combo pages already exist
+ls data/combo-pages/*.json
 
-### Tier 3 — Long Tail
+# Find what's missing — cross-reference regions × activity types from the DB
+# Any combination where real operators/activities exist in that region = create a page
+```
 
-| Region | Activity |
-|--------|----------|
-| North Wales | Climbing |
-| South Wales | Surfing |
-| Carmarthenshire | Hiking |
-| Mid Wales | Hiking |
-| Wye Valley | Hiking |
-| Brecon Beacons | Gorge Walking |
-| Anglesey | Wild Swimming |
-| Gower | Wild Swimming |
-| Snowdonia | Running / Trail Running |
-| Brecon Beacons | Wild Swimming |
-| Pembrokeshire | Wild Swimming |
-| North Wales | Mountain Biking |
+### What Makes a "Meaningful" Combo?
+
+Create a combo page when ANY of these are true:
+- There are real operators running this activity in this region
+- The region is known/famous for this activity
+- People search for "{activity} in {region}" (check Google autocomplete)
+- There are at least 3 specific spots/venues for this activity in the region
+
+**Skip** a combo only if it genuinely doesn't exist (e.g. "surfing in mid-wales" — no coast).
+
+### Priority Guidance (not a fixed list)
+
+Work through combos in this order of priority:
+1. **Famous-for-it combos** — the region is literally known for this activity (Snowdonia hiking, Pembrokeshire coasteering, etc.)
+2. **High search volume** — check Google autocomplete for "{activity} in {region}" — if it autocompletes, there's demand
+3. **Combos where we already have operators in the DB** — content is easier to create when we have real businesses to reference
+4. **Long-tail niche combos** — smaller search volume but less competition, easier to rank
+
+### Discovering New Combos
+
+As new regions or activity types are added to the site, new combos become possible. Periodically:
+1. Query the DB for all region × activityType pairs that have at least 1 activity
+2. Check which pairs have no combo page JSON yet
+3. Create the missing ones
 
 ---
 
@@ -929,17 +922,23 @@ What makes Google rank this page as THE authority:
 
 ## Start Here
 
-Begin with the **Tier 1** list (10 combos). Deliver them in this order:
-1. `snowdonia--hiking`
-2. `pembrokeshire--surfing`
-3. `pembrokeshire--coasteering`
-4. `snowdonia--climbing`
-5. `gower--surfing`
-6. `snowdonia--zip-lining`
-7. `brecon-beacons--hiking`
-8. `snowdonia--mountain-biking`
-9. `pembrokeshire--kayaking`
-10. `snowdonia--gorge-walking`
+### Step 1: Find what's missing
+```bash
+# See existing combo pages
+ls data/combo-pages/*.json
+
+# See existing best-of lists  
+ls data/best-lists/*.json
+```
+
+### Step 2: Pick the next combo to create
+Choose from the most meaningful/high-demand combos that don't have a JSON file yet. Use Google autocomplete to validate demand — type `"{activity} in {region}"` and see if it completes.
+
+### Step 3: Create the JSON file
+Deliver as `data/combo-pages/{region}--{activity}.json` following the schema in this brief.
+
+### Step 4: Repeat
+Keep going until every meaningful activity × region combination has a page. There is no fixed cap — if the combo is real and people search for it, create it.
 
 Each one should take focused research. Don't rush — accuracy and specificity is what makes these pages rank. Generic content is worthless.
 
@@ -976,57 +975,40 @@ These pages **link heavily** to the combo pages (and vice versa), creating a tig
 
 They complement each other. The combo page is the hub. The best-of list is the viral, shareable, snackable version that drives traffic into the hub.
 
-## Priority Lists (Create These First)
+## Scope — ALL Meaningful Best-Of Lists
 
-### Tier 1 — Highest Search Volume
+**Create a best-of list for every combo page, plus standalone lists where search demand exists.**
 
-| URL | Target Keyword | Est. Monthly UK Searches |
-|-----|---------------|-------------------------|
-| `/snowdonia/best-hikes` | "best hikes in snowdonia" | 5,000+ |
-| `/snowdonia/best-walks` | "best walks in snowdonia" | 8,000+ |
-| `/pembrokeshire/best-beaches` | "best beaches in pembrokeshire" | 6,000+ |
-| `/pembrokeshire/best-surf-spots` | "best surf spots pembrokeshire" | 2,000+ |
-| `/brecon-beacons/best-walks` | "best walks brecon beacons" | 4,000+ |
-| `/snowdonia/best-scrambles` | "best scrambles in snowdonia" | 1,500+ |
-| `/gower/best-beaches` | "best beaches in gower" | 3,000+ |
-| `/pembrokeshire/best-coasteering` | "best coasteering pembrokeshire" | 800+ |
-| `/snowdonia/best-mountain-bike-trails` | "best mountain bike trails snowdonia" | 1,500+ |
-| `/anglesey/best-beaches` | "best beaches anglesey" | 2,000+ |
+### Source of Truth
 
-### Tier 2 — Strong Long Tail
+```bash
+# Existing best-of lists
+ls data/best-lists/*.json
 
-| URL | Target Keyword |
-|-----|---------------|
-| `/snowdonia/best-easy-walks` | "easy walks snowdonia" |
-| `/snowdonia/best-family-walks` | "family walks snowdonia" |
-| `/snowdonia/best-dog-walks` | "dog friendly walks snowdonia" |
-| `/snowdonia/best-waterfalls` | "best waterfalls snowdonia" |
-| `/snowdonia/best-wild-swimming` | "wild swimming snowdonia" |
-| `/pembrokeshire/best-walks` | "best walks pembrokeshire" |
-| `/pembrokeshire/best-kayaking-spots` | "best kayaking pembrokeshire" |
-| `/brecon-beacons/best-waterfalls` | "best waterfalls brecon beacons" |
-| `/brecon-beacons/best-easy-walks` | "easy walks brecon beacons" |
-| `/gower/best-walks` | "best walks gower" |
-| `/gower/best-surf-spots` | "best surf spots gower" |
-| `/anglesey/best-walks` | "best walks anglesey" |
-| `/wye-valley/best-walks` | "best walks wye valley" |
-| `/snowdonia/best-lakes` | "best lakes snowdonia" |
-| `/wales/best-adventures` | "best adventures in wales" |
+# Existing combo pages (each one should have at least one best-of list)
+ls data/combo-pages/*.json
+```
 
-### Tier 3 — Niche Authority
+### What Best-Of Lists to Create
 
-| URL | Target Keyword |
-|-----|---------------|
-| `/snowdonia/best-winter-walks` | "winter walks snowdonia" |
-| `/snowdonia/best-sunset-spots` | "best sunset spots snowdonia" |
-| `/pembrokeshire/best-hidden-beaches` | "hidden beaches pembrokeshire" |
-| `/snowdonia/best-camping-spots` | "wild camping snowdonia" |
-| `/brecon-beacons/best-stargazing` | "stargazing brecon beacons" |
-| `/pembrokeshire/best-rock-pools` | "rock pooling pembrokeshire" |
-| `/snowdonia/best-rainy-day-activities` | "rainy day activities snowdonia" |
-| `/gower/best-rock-climbing` | "rock climbing gower" |
-| `/wales/best-zip-lines` | "best zip lines wales" |
-| `/wales/best-gorge-walking` | "gorge walking wales" |
+**Rule 1: One per combo page (minimum).** Every combo page in `data/combo-pages/` should have at least one best-of list. For `snowdonia--hiking`, that's `snowdonia--best-hikes`.
+
+**Rule 2: Variant lists where demand exists.** A single combo can spawn multiple best-of lists. For hiking in Snowdonia:
+- `best-hikes` (main)
+- `best-walks` (different keyword, "walks" vs "hikes")
+- `best-easy-walks` (beginner variant)
+- `best-scrambles` (expert variant)
+- `best-family-walks`, `best-dog-walks`, `best-waterfalls`, etc.
+
+**Rule 3: Validate demand.** Type `"best {X} {region}"` into Google. If it autocompletes or shows results, there's demand — create the list.
+
+**Rule 4: Cross-region lists.** Some lists span all of Wales: `best adventures in wales`, `best zip lines wales`, `best gorge walking wales`. These live at `/wales/best-{slug}`.
+
+### How to Discover New Lists to Create
+1. For each combo page JSON, check if a corresponding `data/best-lists/{region}--best-{slug}.json` exists
+2. Check Google autocomplete for `"best {activity} {region}"` variants
+3. Look for long-tail variants: easy, family, dog-friendly, winter, hidden, etc.
+4. Check "People Also Ask" on Google for the primary keyword — these suggest list angles
 
 ---
 
@@ -1352,9 +1334,14 @@ This is how the pages work together to dominate search:
 
 ## Production Order
 
-**Phase 1**: Combo pages (Tier 1 — 10 pages)
-**Phase 2**: Best-of lists for those same combos (Tier 1 — 10 lists)
-**Phase 3**: Tier 2 combos + Tier 2 best-of lists
-**Phase 4**: Niche/long-tail lists (Tier 3)
+**Combo pages first, then best-of lists.** Combos are the hubs — best-of lists orbit around them.
 
-Start combo pages first — they're the hubs. Then layer best-of lists on top to capture the "best X" keywords and drive traffic into the hubs.
+```
+1. Create combo pages for all famous/high-demand combos (check data/combo-pages/ for what exists)
+2. Create best-of lists that complement existing combo pages (check data/best-lists/ for what exists)
+3. Continue creating combo pages for medium/niche combos
+4. Continue creating best-of lists for those combos
+5. Repeat — as new regions/activities are added, new combos become possible
+```
+
+**There is no fixed number.** Keep creating pages as long as meaningful combos exist. The goal is comprehensive coverage of every real activity × region combination in Wales.

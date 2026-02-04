@@ -2,6 +2,7 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import { AlertTriangle, Mountain, Waves, Cloud, Bike } from "lucide-react";
+import { Newsletter } from "@/components/commercial/Newsletter";
 
 interface SafetyGuide {
   slug: string;
@@ -124,6 +125,9 @@ export default function SafetyPage() {
             </div>
           </div>
         </section>
+
+        {/* Newsletter Signup */}
+        <Newsletter source="safety" />
       </div>
     </div>
   );

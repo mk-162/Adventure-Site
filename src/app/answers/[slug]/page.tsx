@@ -17,6 +17,7 @@ import {
   ArrowRight,
   CheckCircle
 } from "lucide-react";
+import { AdSlot } from "@/components/commercial/AdSlot";
 
 interface AnswerFrontmatter {
   slug: string;
@@ -348,6 +349,11 @@ export default async function AnswerPage({ params }: Props) {
                 </div>
               </section>
             )}
+
+            {/* Ad Slot */}
+            <div className="my-8">
+              <AdSlot slotName="answer-footer" pageType="answer" pageSlug={slug} />
+            </div>
 
             {/* Feedback Section */}
             <div className="mt-10 pt-8 border-t border-gray-200">

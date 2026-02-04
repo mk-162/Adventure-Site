@@ -18,6 +18,7 @@ import {
   Flag,
   Users
 } from "lucide-react";
+import { AdSlot } from "@/components/commercial/AdSlot";
 
 interface ItineraryFrontmatter {
   slug: string;
@@ -507,6 +508,9 @@ export default async function ItineraryDetailPage({ params }: Props) {
                   </div>
                 </div>
               )}
+
+              {/* Ad Slot */}
+              <AdSlot slotName="itinerary-sidebar" pageType="itinerary" pageSlug={slug} />
 
               {/* Contact Support */}
               <div className="flex items-center justify-center gap-2 p-4 rounded-xl bg-[#1e3a4c]/5 border border-[#1e3a4c]/10">

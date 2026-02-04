@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAllRegions } from "@/lib/queries";
 import { MapPin, ChevronRight, Compass } from "lucide-react";
+import { Newsletter } from "@/components/commercial/Newsletter";
 
 export default async function DestinationsPage() {
   const regions = await getAllRegions();
@@ -72,22 +73,26 @@ export default async function DestinationsPage() {
           ))}
         </div>
 
-        {/* CTA Section */}
-        <div className="mt-12 bg-[#1e3a4c] rounded-2xl p-8 lg:p-12 text-center">
-          <Compass className="w-12 h-12 text-[#f97316] mx-auto mb-4" />
-          <h2 className="text-2xl lg:text-3xl font-bold text-white mb-3">
-            Not sure where to start?
-          </h2>
-          <p className="text-white/70 mb-6 max-w-lg mx-auto">
-            Let us help you plan the perfect adventure based on your interests and timeframe.
-          </p>
-          <Link
-            href="/trip-planner"
-            className="inline-flex items-center gap-2 bg-[#f97316] text-white font-bold py-3 px-6 rounded-xl hover:bg-[#f97316]/90 transition-colors"
-          >
-            Start Planning
-            <ChevronRight className="w-5 h-5" />
-          </Link>
+        {/* CTA & Newsletter Section */}
+        <div className="mt-12 space-y-8">
+          <div className="bg-[#1e3a4c] rounded-2xl p-8 lg:p-12 text-center">
+            <Compass className="w-12 h-12 text-[#f97316] mx-auto mb-4" />
+            <h2 className="text-2xl lg:text-3xl font-bold text-white mb-3">
+              Not sure where to start?
+            </h2>
+            <p className="text-white/70 mb-6 max-w-lg mx-auto">
+              Let us help you plan the perfect adventure based on your interests and timeframe.
+            </p>
+            <Link
+              href="/trip-planner"
+              className="inline-flex items-center gap-2 bg-[#f97316] text-white font-bold py-3 px-6 rounded-xl hover:bg-[#f97316]/90 transition-colors"
+            >
+              Start Planning
+              <ChevronRight className="w-5 h-5" />
+            </Link>
+          </div>
+
+          <Newsletter source="destinations" />
         </div>
       </div>
     </div>

@@ -10,6 +10,8 @@ const navLinks = [
   { href: "/itineraries", label: "Itineraries" },
   { href: "/events", label: "Events" },
   { href: "/directory", label: "Directory" },
+  { href: "/guides", label: "Guides" },
+  { href: "/answers", label: "Answers" },
 ];
 
 export function Header() {

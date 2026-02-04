@@ -1,6 +1,7 @@
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
+import { Newsletter } from "@/components/commercial/Newsletter";
 
 interface Guide {
   slug: string;
@@ -145,6 +146,9 @@ export default function GuidesPage() {
             </div>
           </section>
         )}
+
+        {/* Newsletter Signup */}
+        <Newsletter source="guides" />
       </div>
     </div>
   );

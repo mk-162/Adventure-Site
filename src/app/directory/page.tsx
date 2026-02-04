@@ -1,6 +1,7 @@
 import { getOperators, getAllRegions, getAllActivityTypes } from "@/lib/queries";
 import { OperatorCard } from "@/components/cards/operator-card";
 import { ButtonLink } from "@/components/ui/button";
+import { Star, Award } from "lucide-react";
 
 export default async function DirectoryPage() {
   const [operators, regions, activityTypes] = await Promise.all([
@@ -74,13 +75,26 @@ export default async function DirectoryPage() {
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Featured Operators */}
         {featuredOperators.length > 0 && (
-          <section className="mb-12">
-            <h2 className="text-xl font-bold text-[#1e3a4c] mb-6 flex items-center gap-2">
-              Featured Partners
-              <span className="text-xs font-normal text-gray-500 bg-gray-100 px-2 py-1 rounded">
-                Partner
+          <section className="mb-12 bg-gradient-to-br from-[#1e3a4c]/5 via-[#f97316]/5 to-transparent rounded-2xl p-6 border border-[#1e3a4c]/10">
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center gap-3">
+                <div className="bg-[#f97316] text-white p-2 rounded-lg">
+                  <Award className="w-5 h-5" />
+                </div>
+                <div>
+                  <h2 className="text-xl font-bold text-[#1e3a4c]">
+                    Featured Partners
+                  </h2>
+                  <p className="text-sm text-gray-600">
+                    Premium operators trusted by thousands
+                  </p>
+                </div>
+              </div>
+              <span className="hidden sm:flex items-center gap-1 text-xs font-semibold text-[#f97316] bg-[#f97316]/10 px-3 py-1.5 rounded-full border border-[#f97316]/20">
+                <Star className="w-3 h-3 fill-current" />
+                Promoted
               </span>
-            </h2>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {featuredOperators.map((operator) => (
                 <OperatorCard

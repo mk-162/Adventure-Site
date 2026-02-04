@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
+import { AdSlot } from "@/components/commercial/AdSlot";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -101,6 +102,11 @@ export default async function GuidePage({ params }: Props) {
           className="prose prose-lg max-w-none"
           dangerouslySetInnerHTML={{ __html: htmlContent }}
         />
+
+        {/* Ad Slot */}
+        <div className="my-8">
+          <AdSlot slotName="guide-sidebar" pageType="guide" pageSlug={slug} />
+        </div>
 
         {/* Back link */}
         <div className="mt-12 pt-8 border-t">

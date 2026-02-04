@@ -123,7 +123,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
             <div className="flex flex-wrap items-center gap-2 text-xs lg:text-sm font-medium text-gray-200">
               <Link href="/" className="hover:text-white transition-colors">Wales</Link>
               <ChevronRight className="w-4 h-4" />
-              <Link href="/regions" className="hover:text-white transition-colors">Regions</Link>
+              <Link href="/destinations" className="hover:text-white transition-colors">Destinations</Link>
               <ChevronRight className="w-4 h-4" />
               <span className="text-white">{region.name}</span>
             </div>

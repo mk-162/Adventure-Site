@@ -13,6 +13,18 @@ export const metadata: Metadata = {
   title: "Adventure Wales | Your Welsh Adventure Starts Here",
   description: "Discover the wildest corners of Wales, from Snowdonia's misty peaks to Pembrokeshire's rugged coast. Plan unforgettable outdoor experiences across Wales.",
   keywords: "Wales, adventure, outdoor activities, Snowdonia, Pembrokeshire, hiking, coasteering, surfing, mountain biking",
+  openGraph: {
+    title: "Adventure Wales | Your Welsh Adventure Starts Here",
+    description: "Discover the wildest corners of Wales, from Snowdonia's misty peaks to Pembrokeshire's rugged coast. Plan unforgettable outdoor experiences across Wales.",
+    siteName: "Adventure Wales",
+    type: "website",
+    locale: "en_GB",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Adventure Wales | Your Welsh Adventure Starts Here",
+    description: "Discover the wildest corners of Wales, from Snowdonia's misty peaks to Pembrokeshire's rugged coast. Plan unforgettable outdoor experiences across Wales.",
+  },
 };
 
 export default function RootLayout({

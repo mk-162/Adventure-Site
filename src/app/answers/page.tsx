@@ -10,6 +10,7 @@ import {
   ArrowRight,
   Compass
 } from "lucide-react";
+import { Newsletter } from "@/components/commercial/Newsletter";
 
 interface AnswerFrontmatter {
   slug: string;
@@ -316,6 +317,9 @@ export default async function AnswersPage() {
             </div>
           </aside>
         </div>
+
+        {/* Newsletter Signup */}
+        <Newsletter source="answers" />
       </div>
     </div>
   );

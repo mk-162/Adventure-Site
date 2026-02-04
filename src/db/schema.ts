@@ -754,3 +754,61 @@ export const itineraryTagsRelations = relations(itineraryTags, ({ one }) => ({
   itinerary: one(itineraries, { fields: [itineraryTags.itineraryId], references: [itineraries.id] }),
   tag: one(tags, { fields: [itineraryTags.tagId], references: [tags.id] }),
 }));
+
+// Post category enum
+export const postCategoryEnum = pgEnum("post_category", [
+  "guide",
+  "gear",
+  "safety",
+  "seasonal",
+  "news",
+  "trip-report",
+  "spotlight",
+]);
+
+// Blog posts / journal articles
+export const posts = pgTable("posts", {
+  id: serial("id").primaryKey(),
+  siteId: integer("site_id")
+    .references(() => sites.id)
+    .notNull(),
+  slug: varchar("slug", { length: 255 }).notNull(),
+  title: varchar("title", { length: 255 }).notNull(),
+  excerpt: text("excerpt"),
+  content: text("content").notNull(),
+  category: postCategoryEnum("category").notNull(),
+  heroImage: text("hero_image"),
+  author: varchar("author", { length: 100 }),
+  readTimeMinutes: integer("read_time_minutes"),
+  regionId: integer("region_id").references(() => regions.id),
+  activityTypeId: integer("activity_type_id").references(() => activityTypes.id),
+  status: statusEnum("status").default("draft").notNull(),
+  publishedAt: timestamp("published_at"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
+// Post tags junction
+export const postTags = pgTable("post_tags", {
+  id: serial("id").primaryKey(),
+  postId: integer("post_id")
+    .references(() => posts.id)
+    .notNull(),
+  tagId: integer("tag_id")
+    .references(() => tags.id)
+    .notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+// Relations
+export const postsRelations = relations(posts, ({ one, many }) => ({
+  site: one(sites, { fields: [posts.siteId], references: [sites.id] }),
+  region: one(regions, { fields: [posts.regionId], references: [regions.id] }),
+  activityType: one(activityTypes, { fields: [posts.activityTypeId], references: [activityTypes.id] }),
+  postTags: many(postTags),
+}));
+
+export const postTagsRelations = relations(postTags, ({ one }) => ({
+  post: one(posts, { fields: [postTags.postId], references: [posts.id] }),
+  tag: one(tags, { fields: [postTags.tagId], references: [tags.id] }),
+}));

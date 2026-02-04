@@ -23,6 +23,7 @@ const footerLinks = {
   company: [
     { href: "/about", label: "About Us" },
     { href: "/advertise", label: "List Your Business" },
+    { href: "/auth/login", label: "Operator Login" },
     { href: "/press", label: "Press" },
   ],
 };

@@ -1025,3 +1025,33 @@ export const guidePageSpotsRelations = relations(guidePageSpots, ({ one }) => ({
   operator: one(operators, { fields: [guidePageSpots.operatorId], references: [operators.id] }),
   activity: one(activities, { fields: [guidePageSpots.activityId], references: [activities.id] }),
 }));
+
+// =====================
+// USER ACCOUNTS
+// =====================
+
+export const users = pgTable("users", {
+  id: serial("id").primaryKey(),
+  email: varchar("email", { length: 255 }).notNull().unique(),
+  name: varchar("name", { length: 255 }),
+  regionPreference: varchar("region_preference", { length: 100 }),
+  newsletterOptIn: boolean("newsletter_opt_in").default(false),
+  lastLoginAt: timestamp("last_login_at"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export const userFavourites = pgTable("user_favourites", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").references(() => users.id).notNull(),
+  favouriteType: varchar("favourite_type", { length: 50 }).notNull(), // 'event', 'itinerary', 'activity', 'operator'
+  favouriteId: integer("favourite_id").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export const usersRelations = relations(users, ({ many }) => ({
+  favourites: many(userFavourites),
+}));
+
+export const userFavouritesRelations = relations(userFavourites, ({ one }) => ({
+  user: one(users, { fields: [userFavourites.userId], references: [users.id] }),
+}));

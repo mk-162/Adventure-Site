@@ -148,8 +148,8 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [x] Logic: Clicking Heart/Save should trigger Login/Signup modal — already done (login prompt modal)
 - [x] Feature: Customer Dashboard -> View favorited itineraries/partners — /account page with saved items
 - [x] Feature: Email opt-in checkbox during signup — already on login page
-- [ ] UI: Two-column Register section.
-  - [ ] Left: Benefits (Manage itineraries, Track bookings, Notes, Share).
+- [x] UI: Two-column Register section. — already two-column with benefits
+  - [x] Left: Benefits (Manage itineraries, Track bookings, Notes, Share). — benefits listed in left column
   - [ ] Feature idea: Generate social media post of plan.
 - [ ] Logic: Pre-populate Name/Email for logged-in users in messaging.
 - [ ] Logic: Vendor replies must forward to user email.

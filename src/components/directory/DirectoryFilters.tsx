@@ -3,7 +3,7 @@
 import { useState, useMemo } from 'react';
 import { OperatorCard } from '@/components/cards/operator-card';
 import { AdvertiseWidget } from '@/components/commercial/AdvertiseWidget';
-import { Star, Award } from 'lucide-react';
+import { Star, Award, Search } from 'lucide-react';
 
 interface Operator {
   id: number;
@@ -134,13 +134,16 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
             {operators.length}+ Welsh adventure businesses. Adventure providers, gear hire, food, transport — all in one place.
           </p>
 
-          <div className="mt-6">
+          <div className="mt-6 relative max-w-md">
+            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+              <Search className="h-5 w-5 text-gray-400" />
+            </div>
             <input
               type="search"
               placeholder="Search adventure providers..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full max-w-md px-4 py-3 rounded-lg bg-white text-gray-900 placeholder-gray-400 border-2 border-white/20 focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316] outline-none shadow-lg"
+              className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-white text-gray-900 placeholder-gray-400 border-2 border-white focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316] outline-none shadow-lg text-base"
             />
           </div>
         </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Send, Mail, Users, MessageSquare, CheckCircle, X } from "lucide-react";
 import { operators } from "@/db/schema";
 
@@ -27,6 +27,22 @@ export function EnquireAllVendors({
     preferredDates: "",
     message: `I'm interested in the ${itineraryName} trip`,
   });
+
+  // Pre-populate from logged-in user session
+  useEffect(() => {
+    fetch("/api/user/me")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.user) {
+          setFormData((prev) => ({
+            ...prev,
+            name: prev.name || data.user.name || "",
+            email: prev.email || data.user.email || "",
+          }));
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   const operatorCount = operators.length;
 

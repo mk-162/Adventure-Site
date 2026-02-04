@@ -91,14 +91,37 @@ function LoginForm() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#1e3a4c]/5 to-white px-4">
-      <div className="max-w-md w-full">
-        <div className="bg-white p-8 rounded-2xl shadow-lg">
-          {/* Header */}
-          <div className="text-center mb-8">
-            <div className="w-14 h-14 bg-[#1e3a4c] rounded-xl flex items-center justify-center mx-auto mb-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#1e3a4c]/5 to-white px-4 py-12">
+      <div className="max-w-4xl w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 bg-white rounded-2xl shadow-lg overflow-hidden">
+          {/* Left Column: Benefits */}
+          <div className="bg-gradient-to-br from-[#1e3a4c] to-[#2d5a73] p-8 md:p-10 flex flex-col justify-center">
+            <div className="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center mb-6">
               <Mountain className="w-7 h-7 text-white" />
             </div>
+            <h2 className="text-2xl font-bold text-white mb-2">Your Welsh Adventure Starts Here</h2>
+            <p className="text-white/70 mb-8">Create a free account and unlock the best of Adventure Wales.</p>
+            <ul className="space-y-4">
+              {[
+                { icon: "❤️", text: "Save your favourite activities" },
+                { icon: "🗺️", text: "Create custom itineraries" },
+                { icon: "✨", text: "Get personalised recommendations" },
+                { icon: "👥", text: "Share trips with friends" },
+              ].map((benefit) => (
+                <li key={benefit.text} className="flex items-center gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center text-lg">
+                    {benefit.icon}
+                  </span>
+                  <span className="text-white/90 font-medium">{benefit.text}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Right Column: Form */}
+          <div className="p-8 md:p-10">
+          {/* Header */}
+          <div className="text-center mb-8">
             <h1 className="text-2xl font-bold text-[#1e3a4c]">
               {isNewUser ? "Create Your Account" : "Welcome Back"}
             </h1>
@@ -223,6 +246,7 @@ function LoginForm() {
               Are you an operator? Sign in here →
             </Link>
           </div>
+        </div>
         </div>
       </div>
     </div>

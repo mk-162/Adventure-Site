@@ -39,18 +39,15 @@ export async function POST(req: NextRequest) {
         const session = event.data.object as any;
         const operatorId = session.metadata?.operatorId;
         const customerId = session.customer;
+        const subscriptionId = session.subscription;
 
         if (operatorId && customerId) {
-          // Fetch line items to determine tier?
-          // Or just wait for subscription.updated?
-          // Prompt says "update operator billing_tier, stripe_customer_id"
-          // We can update customer ID immediately.
           await db.update(operators)
-            .set({ stripeCustomerId: customerId })
+            .set({
+              stripeCustomerId: customerId,
+              stripeSubscriptionId: subscriptionId || null,
+            })
             .where(eq(operators.id, parseInt(operatorId)));
-
-          // We could try to set tier here if we know the price, but subscription.updated will fire too.
-          // Let's rely on subscription.updated for tier accuracy, or check line items here if needed for speed.
         }
         break;
       }
@@ -66,18 +63,23 @@ export async function POST(req: NextRequest) {
         if (priceId === process.env.STRIPE_VERIFIED_PRICE_ID) tier = "verified";
         if (priceId === process.env.STRIPE_PREMIUM_PRICE_ID) tier = "premium";
 
-        // Find operator by customer ID
         const operator = await db.query.operators.findFirst({
           where: eq(operators.stripeCustomerId, customerId as string),
         });
 
         if (operator) {
-            // Only update if status is active or trialing
-            const isActive = subscription.status === "active" || subscription.status === "trialing";
-            const finalTier = isActive ? tier : "free";
+          const isActive = subscription.status === "active" || subscription.status === "trialing";
+          const finalTier = isActive ? tier : "free";
 
-            await db.update(operators)
-            .set({ billingTier: finalTier })
+          await db.update(operators)
+            .set({
+              billingTier: finalTier,
+              stripeSubscriptionId: subscription.id,
+              stripeSubscriptionStatus: subscription.status,
+              billingPeriodEnd: subscription.current_period_end
+                ? new Date(subscription.current_period_end * 1000)
+                : null,
+            })
             .where(eq(operators.id, operator.id));
         }
         break;
@@ -88,12 +90,33 @@ export async function POST(req: NextRequest) {
         const customerId = subscription.customer;
 
         const operator = await db.query.operators.findFirst({
-            where: eq(operators.stripeCustomerId, customerId as string),
+          where: eq(operators.stripeCustomerId, customerId as string),
         });
 
         if (operator) {
-            await db.update(operators)
-            .set({ billingTier: "free" })
+          await db.update(operators)
+            .set({
+              billingTier: "free",
+              stripeSubscriptionStatus: "canceled",
+              stripeSubscriptionId: null,
+              billingPeriodEnd: null,
+            })
+            .where(eq(operators.id, operator.id));
+        }
+        break;
+      }
+
+      case "invoice.payment_failed": {
+        const invoice = event.data.object as any;
+        const customerId = invoice.customer;
+
+        const operator = await db.query.operators.findFirst({
+          where: eq(operators.stripeCustomerId, customerId as string),
+        });
+
+        if (operator) {
+          await db.update(operators)
+            .set({ stripeSubscriptionStatus: "past_due" })
             .where(eq(operators.id, operator.id));
         }
         break;

@@ -40,6 +40,9 @@ export default async function ClaimsPage() {
       claimStatus: operators.claimStatus,
       billingEmail: operators.billingEmail,
       billingTier: operators.billingTier,
+      stripeSubscriptionStatus: operators.stripeSubscriptionStatus,
+      billingPeriodEnd: operators.billingPeriodEnd,
+      stripeCustomerId: operators.stripeCustomerId,
       verifiedAt: operators.verifiedAt,
       verifiedByEmail: operators.verifiedByEmail,
     })
@@ -55,6 +58,9 @@ export default async function ClaimsPage() {
       claimStatus: operators.claimStatus,
       billingEmail: operators.billingEmail,
       billingTier: operators.billingTier,
+      stripeSubscriptionStatus: operators.stripeSubscriptionStatus,
+      billingPeriodEnd: operators.billingPeriodEnd,
+      stripeCustomerId: operators.stripeCustomerId,
       verifiedAt: operators.verifiedAt,
     })
     .from(operators)
@@ -156,24 +162,7 @@ export default async function ClaimsPage() {
         {claimedOperators.length === 0 ? (
           <div className="bg-gray-50 rounded-xl p-8 text-center text-gray-500">No claimed operators yet.</div>
         ) : (
-          <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-            <table className="w-full">
-              <thead className="bg-gray-50 border-b border-gray-100">
-                <tr>
-                  <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 uppercase">Operator</th>
-                  <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 uppercase">Contact</th>
-                  <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 uppercase">Tier</th>
-                  <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 uppercase">Verified</th>
-                  <th className="text-right px-6 py-3 text-xs font-medium text-gray-500 uppercase">Actions</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100">
-                {claimedOperators.map((op) => (
-                  <OperatorRow key={op.id} op={op} handleImpersonate={handleImpersonate} />
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <OperatorTable operators={claimedOperators} handleImpersonate={handleImpersonate} />
         )}
       </section>
 
@@ -184,24 +173,7 @@ export default async function ClaimsPage() {
             <Users className="h-5 w-5 text-amber-500" />
             Premium Operators ({premiumOperators.length})
           </h2>
-          <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-            <table className="w-full">
-              <thead className="bg-gray-50 border-b border-gray-100">
-                <tr>
-                  <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 uppercase">Operator</th>
-                  <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 uppercase">Contact</th>
-                  <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 uppercase">Tier</th>
-                  <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 uppercase">Verified</th>
-                  <th className="text-right px-6 py-3 text-xs font-medium text-gray-500 uppercase">Actions</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100">
-                {premiumOperators.map((op) => (
-                  <OperatorRow key={op.id} op={op} handleImpersonate={handleImpersonate} />
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <OperatorTable operators={premiumOperators} handleImpersonate={handleImpersonate} />
         </section>
       )}
 
@@ -248,19 +220,62 @@ export default async function ClaimsPage() {
   );
 }
 
-function OperatorRow({ op, handleImpersonate }: {
-  op: {
-    id: number;
-    name: string;
-    slug: string;
-    claimStatus: string;
-    billingEmail: string | null;
-    billingTier: string | null;
-    verifiedAt: Date | null;
-    verifiedByEmail?: string | null;
-  };
+type OperatorData = {
+  id: number;
+  name: string;
+  slug: string;
+  claimStatus: string;
+  billingEmail: string | null;
+  billingTier: string | null;
+  stripeSubscriptionStatus: string | null;
+  billingPeriodEnd: Date | null;
+  stripeCustomerId: string | null;
+  verifiedAt: Date | null;
+  verifiedByEmail?: string | null;
+};
+
+function OperatorTable({ operators: ops, handleImpersonate }: {
+  operators: OperatorData[];
   handleImpersonate: (operatorId: number) => Promise<void>;
 }) {
+  return (
+    <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+      <table className="w-full">
+        <thead className="bg-gray-50 border-b border-gray-100">
+          <tr>
+            <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 uppercase">Operator</th>
+            <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 uppercase">Contact</th>
+            <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 uppercase">Tier</th>
+            <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 uppercase">Payment</th>
+            <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 uppercase">Verified</th>
+            <th className="text-right px-6 py-3 text-xs font-medium text-gray-500 uppercase">Actions</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100">
+          {ops.map((op) => (
+            <OperatorRow key={op.id} op={op} handleImpersonate={handleImpersonate} />
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function OperatorRow({ op, handleImpersonate }: {
+  op: OperatorData;
+  handleImpersonate: (operatorId: number) => Promise<void>;
+}) {
+  const paymentStatusConfig: Record<string, { label: string; className: string }> = {
+    active: { label: "Active", className: "bg-green-100 text-green-700" },
+    trialing: { label: "Trial", className: "bg-blue-100 text-blue-700" },
+    past_due: { label: "Past Due", className: "bg-red-100 text-red-700" },
+    canceled: { label: "Canceled", className: "bg-gray-100 text-gray-600" },
+    unpaid: { label: "Unpaid", className: "bg-red-100 text-red-700" },
+  };
+
+  const subStatus = op.stripeSubscriptionStatus;
+  const payment = subStatus ? paymentStatusConfig[subStatus] || { label: subStatus, className: "bg-gray-100 text-gray-600" } : null;
+
   return (
     <tr className="hover:bg-gray-50">
       <td className="px-6 py-4">
@@ -280,12 +295,27 @@ function OperatorRow({ op, handleImpersonate }: {
           {op.billingTier || "free"}
         </span>
       </td>
+      <td className="px-6 py-4">
+        {payment ? (
+          <div>
+            <span className={`px-2 py-1 rounded-full text-xs font-medium ${payment.className}`}>
+              {payment.label}
+            </span>
+            {op.billingPeriodEnd && (
+              <div className="text-xs text-gray-400 mt-1">
+                {subStatus === "canceled" ? "Ends" : "Renews"} {new Date(op.billingPeriodEnd).toLocaleDateString("en-GB", { day: "numeric", month: "short" })}
+              </div>
+            )}
+          </div>
+        ) : (
+          <span className="text-xs text-gray-400">No subscription</span>
+        )}
+      </td>
       <td className="px-6 py-4 text-sm text-gray-500">
         {op.verifiedAt ? new Date(op.verifiedAt).toLocaleDateString("en-GB") : "—"}
       </td>
       <td className="px-6 py-4 text-right">
         <div className="flex items-center justify-end gap-1">
-          {/* View listing */}
           <Link
             href={`/directory/${op.slug}`}
             className="p-2 text-gray-400 hover:text-gray-600 rounded-lg hover:bg-gray-100"
@@ -294,7 +324,6 @@ function OperatorRow({ op, handleImpersonate }: {
             <Eye className="h-4 w-4" />
           </Link>
 
-          {/* Login as operator */}
           <form action={handleImpersonate.bind(null, op.id)}>
             <button
               type="submit"
@@ -305,10 +334,8 @@ function OperatorRow({ op, handleImpersonate }: {
             </button>
           </form>
 
-          {/* Send magic link */}
           <SendMagicLinkButton operatorId={op.id} email={op.billingEmail || ""} />
 
-          {/* Reset / unclaim */}
           <form action={resetClaim.bind(null, op.id)}>
             <button
               type="submit"

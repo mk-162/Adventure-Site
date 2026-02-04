@@ -527,8 +527,11 @@ export const operators = pgTable("operators", {
   bookingWidgetUrl: text("booking_widget_url"),
   serviceDetails: jsonb("service_details"),
   stripeCustomerId: varchar("stripe_customer_id", { length: 255 }),
+  stripeSubscriptionId: varchar("stripe_subscription_id", { length: 255 }),
+  stripeSubscriptionStatus: varchar("stripe_subscription_status", { length: 50 }), // 'active', 'past_due', 'canceled', 'trialing', etc.
   billingTier: varchar("billing_tier", { length: 50 }).default("free"), // 'free', 'verified', 'premium'
   billingEmail: varchar("billing_email", { length: 255 }),
+  billingPeriodEnd: timestamp("billing_period_end"),
   verifiedAt: timestamp("verified_at"),
   verifiedByEmail: varchar("verified_by_email", { length: 255 }),
   createdAt: timestamp("created_at").defaultNow().notNull(),

@@ -43,9 +43,9 @@ export function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
-            <button className="p-2 text-slate-500 hover:text-[#1e3a4c] transition-colors">
+            <Link href="/search" className="p-2 text-slate-500 hover:text-[#1e3a4c] transition-colors">
               <Search className="h-5 w-5" />
-            </button>
+            </Link>
             <Link
               href="/book"
               className="px-5 py-2.5 bg-[#f97316] hover:bg-orange-600 text-white text-sm font-bold rounded-lg transition-colors shadow-lg shadow-orange-500/20"

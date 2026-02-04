@@ -21,7 +21,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 - [x] Hero: Mobile spacing increased, stats hidden on mobile — FIXED
 - [x] Hero CTA: "Find Your Adventure" → "Browse Itineraries" — FIXED
-- [ ] Nav: "Activities" page needs clearer signposting for users wanting single experiences (vs multi-day itineraries)
+- [x] Activities page — "Single Activities & Experiences" with itineraries cross-link — FIXED
 - [ ] Content: "Tried & Tested Routes" section has missing images
 - [ ] Content: "Ready-Made Adventures" section has missing images
 - [x] Design: Remove prices from itinerary cards — FIXED
@@ -75,7 +75,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 - [ ] Logic: Unsold ad slots must show "Claim listing" or "Advertise here" widgets
 - [ ] Design: Sponsored/Paid listings need distinct "Premium" styling to differentiate from organic content
-- [ ] Enforcement: "Advertise Here" banner/widget missing from many locations -> Fix site-wide.
+- [x] Enforcement: "Advertise Here" banner/widget missing from many locations -> Fix site-wide. — AdvertiseWidget added to events, activities, directory
 - [x] Nav: Replace "Book Now" (top right) with "Advertise" — FIXED
 - [x] "Local Experts" → "Local Businesses" — FIXED
   - [ ] Style: Top slot bolder + image (Premium slot).
@@ -83,13 +83,13 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 **Events / Calendar**
 
 - [x] Calendar page exists at /calendar — verified
-- [ ] Feature: "Races and events worth entering" widget should link to Calendar page
+- [x] Feature: "Races and events worth entering" widget should link to Calendar page — calendar link added to events page
 - [ ] Content: Events need images (add skill/ability to create these when setting up events)
 - [ ] Data: Audit "Register Now" buttons (many 404, e.g., newportmarathon).
-- [ ] UI/Components: Event pages MUST show:
-  - [ ] Occupation/Accommodation Widget
-  - [ ] Local Attraction Widget
-  - [ ] Advertising Widget
+- [x] UI/Components: Event pages MUST show:
+  - [x] Occupation/Accommodation Widget — Where to Stay widget added
+  - [x] Local Attraction Widget — "While You're There" activities widget added
+  - [x] Advertising Widget — "Promote Your Business" widget added
 - [x] "Get the Pass" replaced with "List Your Business" CTA — FIXED
 
 **Email / Newsletter**

@@ -85,7 +85,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [x] Calendar page exists at /calendar — verified
 - [x] Feature: "Races and events worth entering" widget should link to Calendar page — calendar link added to events page
 - [ ] Content: Events need images (add skill/ability to create these when setting up events)
-- [ ] Data: Audit "Register Now" buttons (many 404, e.g., newportmarathon).
+- [x] Data: Audit "Register Now" buttons (many 404, e.g., newportmarathon). — audited 46 URLs, fixed 3, cleared 2 dead
 - [x] UI/Components: Event pages MUST show:
   - [x] Occupation/Accommodation Widget — Where to Stay widget added
   - [x] Local Attraction Widget — "While You're There" activities widget added

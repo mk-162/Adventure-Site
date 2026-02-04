@@ -28,11 +28,13 @@ interface Activity {
     difficulty: string | null;
     lat: string | null;
     lng: string | null;
+    heroImage?: string | null;
   };
   region: {
     id: number;
     name: string;
     slug: string;
+    heroImage?: string | null;
   } | null;
   operator: {
     name: string;
@@ -43,6 +45,7 @@ interface Activity {
     id: number;
     name: string;
     slug: string;
+    heroImage?: string | null;
   } | null;
 }
 

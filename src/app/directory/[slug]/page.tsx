@@ -242,6 +242,11 @@ export default async function OperatorProfilePage({ params }: Props) {
             <a className="border-b-2 border-transparent text-gray-500 hover:text-gray-800 font-semibold text-sm pb-3 whitespace-nowrap transition-colors" href="#about">
               About
             </a>
+            {operator.serviceDetails && Array.isArray(operator.serviceDetails) && operator.serviceDetails.length > 0 && (
+              <a className="border-b-2 border-transparent text-gray-500 hover:text-gray-800 font-semibold text-sm pb-3 whitespace-nowrap transition-colors" href="#services">
+                Services
+              </a>
+            )}
             <a className="border-b-2 border-transparent text-gray-500 hover:text-gray-800 font-semibold text-sm pb-3 whitespace-nowrap transition-colors" href="#reviews">
               Reviews
             </a>
@@ -318,6 +323,71 @@ export default async function OperatorProfilePage({ params }: Props) {
                 </div>
               )}
             </section>
+
+            {/* Services & Pricing */}
+            {operator.serviceDetails && Array.isArray(operator.serviceDetails) && operator.serviceDetails.length > 0 && (
+              <section id="services">
+                <div className="flex items-center justify-between mb-4 sm:mb-6">
+                  <h2 className="text-lg sm:text-xl font-bold text-[#1e3a4c]">
+                    Services & Pricing
+                  </h2>
+                  <span className="text-sm text-gray-500">{(operator.serviceDetails as any[]).length} services</span>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {(operator.serviceDetails as any[]).map((service: any, i: number) => (
+                    <div
+                      key={i}
+                      className="bg-white rounded-2xl border border-gray-200 p-5 hover:shadow-lg transition-shadow"
+                    >
+                      <div className="flex items-start justify-between gap-3 mb-3">
+                        <div>
+                          <h3 className="font-bold text-[#1e3a4c] text-base">
+                            {service.name}
+                          </h3>
+                          {service.category && (
+                            <span className="text-xs text-gray-500 font-medium">
+                              {service.category}
+                            </span>
+                          )}
+                        </div>
+                        {service.price && (
+                          <span className="text-[#f97316] font-bold text-sm whitespace-nowrap">
+                            {service.price}
+                          </span>
+                        )}
+                      </div>
+
+                      <div className="flex flex-wrap gap-3 mb-3">
+                        {service.duration && (
+                          <span className="inline-flex items-center gap-1 text-xs text-gray-600 bg-gray-50 px-2 py-1 rounded-md">
+                            <Clock className="w-3 h-3" />
+                            {service.duration}
+                          </span>
+                        )}
+                        {service.groupSize && (
+                          <span className="inline-flex items-center gap-1 text-xs text-gray-600 bg-gray-50 px-2 py-1 rounded-md">
+                            <Users className="w-3 h-3" />
+                            {service.groupSize}
+                          </span>
+                        )}
+                      </div>
+
+                      {service.includes && (
+                        <p className="text-xs text-gray-500 mb-2">
+                          <span className="font-semibold text-gray-600">Includes:</span> {service.includes}
+                        </p>
+                      )}
+
+                      {service.description && (
+                        <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">
+                          {service.description}
+                        </p>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
 
             {/* Reviews Section */}
             <section id="reviews" className="bg-white rounded-xl p-5 sm:p-6 border border-gray-200">

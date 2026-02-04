@@ -481,6 +481,7 @@ export const operators = pgTable("operators", {
   bookingPartnerRef: varchar("booking_partner_ref", { length: 255 }),
   bookingAffiliateId: varchar("booking_affiliate_id", { length: 255 }),
   bookingWidgetUrl: text("booking_widget_url"),
+  serviceDetails: jsonb("service_details"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });

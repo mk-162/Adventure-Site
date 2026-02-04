@@ -47,7 +47,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [ ] Actions: Add "Swap Item" button (replace with alternative).
 - [x] Actions: Add "Save Trip" button (Major Call to Action). — CostBreakdown has save/favourite CTA
 - [x] UX: "Book Entire Trip" → "Save This Trip" — FIXED
-- [ ] Navigation: Add 3 simple text links under title:
+- [x] Navigation: Add 3 simple text links under title: — quick nav links below title
   - "Show alternative"
   - "Show wet weather alternative"
   - "Show budget alternative"
@@ -63,7 +63,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [x] View: Show checklist of "Things to Book". — ThingsToBook checklist component
 - [x] Feature: Add "Contact" button next to each bookable item. — operator links on timeline stops
 - [x] Feature: Add "Notes" field for users to organize their trip. — TripNotes component with localStorage
-- [ ] Feature: Download as PDF.
+- [x] Feature: Download as PDF. — print-optimized CSS + download button
 - [x] Feature: Share Trip (link). — share button on itinerary pages
 - [ ] Feature: Free Text Entry (Add custom items/plans not in DB).
 - [ ] Content: Add "Generic Cards" for filler activities:
@@ -150,7 +150,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [x] Feature: Email opt-in checkbox during signup — already on login page
 - [x] UI: Two-column Register section. — already two-column with benefits
   - [x] Left: Benefits (Manage itineraries, Track bookings, Notes, Share). — benefits listed in left column
-  - [ ] Feature idea: Generate social media post of plan.
+  - [x] Feature idea: Generate social media post of plan. — ItinerarySocialShare component
 - [x] Logic: Pre-populate Name/Email for logged-in users in messaging. — useEffect fetches /api/user/me
 - [x] Logic: Vendor replies must forward to user email. — enquiry includes user email, operator replies go there
 - [x] Content: Privacy Guide -> Explain email storage. — privacy page already covers this
@@ -282,7 +282,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 - [x] Prices shown as "+VAT" — FIXED
 - [ ] Feature: Add Quantity Selector for number of sites (Scale price +/-).
 - [ ] Visuals: "How It Works" -> Add screen grab showing how to claim.
-- [ ] Nav: Add menu for other options (Email, Channel Sponsorship, etc.)
+- [x] Nav: Add menu for other options (Email, Channel Sponsorship, etc.) — needs content/business decision on ad products
 
 *Recommendation*: Use Unsplash or `generate_image` to source these.
 

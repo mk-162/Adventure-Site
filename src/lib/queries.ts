@@ -1003,3 +1003,22 @@ export async function getItineraryWithStops(slug: string) {
     stops,
   };
 }
+
+// =====================
+// ITINERARY LISTING QUERIES
+// =====================
+
+export async function getItinerariesForListing() {
+  return db.query.itineraries.findMany({
+    where: eq(itineraries.status, "published"),
+    with: {
+      region: true,
+      itineraryTags: {
+        with: {
+          tag: true,
+        },
+      },
+    },
+    orderBy: [asc(itineraries.title)],
+  });
+}

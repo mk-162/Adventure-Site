@@ -8,7 +8,8 @@ import {
   answers,
   activityTypes,
   operators,
-  tags 
+  tags,
+  posts
 } from '@/db/schema';
 import { eq } from 'drizzle-orm';
 
@@ -24,7 +25,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     answersData,
     activityTypesData,
     operatorsData,
-    tagsData
+    tagsData,
+    postsData
   ] = await Promise.all([
     db.select().from(regions).where(eq(regions.status, 'published')),
     db.select().from(activities).where(eq(activities.status, 'published')),
@@ -33,7 +35,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     db.select().from(answers).where(eq(answers.status, 'published')),
     db.select().from(activityTypes),
     db.select().from(operators).where(eq(operators.claimStatus, 'claimed')),
-    db.select().from(tags)
+    db.select().from(tags),
+    db.select().from(posts).where(eq(posts.status, 'published'))
   ]);
 
   const sitemap: MetadataRoute.Sitemap = [];

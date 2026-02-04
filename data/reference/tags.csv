@@ -1,0 +1,53 @@
+id,name,slug,type,description
+16,Abseiling,abseiling,activity,Rope-based descent activities
+19,Bodyboarding,bodyboarding,activity,Wave riding on bodyboards
+15,Canoeing,canoeing,activity,Open canoe activities on rivers and lakes
+8,Caving,caving,activity,Underground cave exploration
+6,Climbing,climbing,activity,Rock climbing and bouldering
+1,Coasteering,coasteering,activity,"Coastal traversing — swimming, climbing, jumping"
+7,Gorge Walking,gorge-walking,activity,River gorge scrambling and waterfall climbing
+5,Hiking,hiking,activity,Hill and mountain walking
+11,Kayaking,kayaking,activity,River and white water kayaking
+3,Mountain Biking,mountain-biking,activity,Off-road cycling on trails and trail centres
+17,Mountain Walking,mountain-walking,activity,High-level mountain routes and scrambles
+18,Paddleboarding,paddleboarding,activity,Stand-up paddleboarding (flat water and surf)
+14,Sailing,sailing,activity,Dinghy and yacht sailing
+4,Sea Kayaking,sea-kayaking,activity,Coastal kayaking and sea tours
+10,Stand Up Paddleboarding,sup,activity,SUP on rivers and coastline
+2,Surfing,surfing,activity,Wave surfing at Welsh beaches
+13,Trail Running,trail-running,activity,Off-road running on mountain and forest trails
+12,Wild Swimming,wild-swimming,activity,Open water swimming in rivers lakes and sea
+9,Zip Lining,zip-lining,activity,High-wire zip line experiences
+27,Beach,beach,terrain,Sandy or rocky beach locations
+20,Coastal,coastal,terrain,Coastline and sea cliff settings
+23,Forest,forest,terrain,Woodland and forest environments
+26,Lake,lake,terrain,Lake and reservoir locations
+21,Mountain,mountain,terrain,Mountain and high ground terrain
+25,River,river,terrain,River valley and gorge settings
+24,Underground,underground,terrain,Cave mine and underground locations
+22,Valley,valley,terrain,Valley and lowland settings
+28,Woodland,woodland,terrain,Dense woodland and managed forest
+29,Easy,easy,difficulty,Suitable for beginners — no experience needed
+30,Moderate,moderate,difficulty,Some fitness required — manageable for most
+31,Challenging,challenging,difficulty,Good fitness and some experience needed
+32,Extreme,extreme,difficulty,Expert level — significant skill and fitness required
+33,Family Friendly,family-friendly,difficulty,Suitable for families with children
+34,Beginner Friendly,beginner-friendly,difficulty,Designed for first-timers
+35,Dog Friendly,dog-friendly,feature,Dogs welcome on this activity/location
+36,Wheelchair Accessible,wheelchair-accessible,feature,Accessible for wheelchair users
+37,Public Transport,public-transport,feature,Reachable by bus or train
+38,Free Parking,free-parking,feature,Free parking available on site
+39,Equipment Provided,equipment-provided,feature,All gear and equipment included
+40,Wetsuit Provided,wetsuit-provided,feature,Wetsuits included in the price
+41,Guided,guided,feature,Led by qualified instructor or guide
+42,Self-Guided,self-guided,feature,Can be done independently without a guide
+43,Year Round,year-round,feature,Available all 12 months
+44,Booking Required,booking-required,feature,Must book in advance
+45,Cafe,cafe,amenity,Cafe or refreshments on site
+46,Toilets,toilets,amenity,Toilet facilities available
+47,Showers,showers,amenity,Shower facilities on site
+48,Bike Shop,bike-shop,amenity,Bike shop or bike hire on site
+49,Camping,camping,amenity,Camping available nearby
+50,WiFi,wifi,amenity,WiFi available
+51,Changing Rooms,changing-rooms,amenity,Changing room facilities
+52,Lockers,lockers,amenity,Secure storage lockers available

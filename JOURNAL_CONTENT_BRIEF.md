@@ -1,5 +1,13 @@
 # Adventure Journal — Content Generation Brief
 
+## Reference Data (USE THESE — don't invent new ones)
+
+- **Tags (52):** [`data/reference/tags.csv`](data/reference/tags.csv) — activity, terrain, difficulty, feature, amenity types
+- **Categories (7):** [`data/reference/categories.csv`](data/reference/categories.csv) — guide, gear, safety, seasonal, news, trip-report, spotlight
+- **Regions (11):** [`data/reference/regions.csv`](data/reference/regions.csv) — all Welsh adventure regions
+
+Every article MUST use tags and categories from these files. Do not create new tags or categories.
+
 ## What This Is
 
 Adventure Wales needs a library of blog/journal articles to populate `/journal`. These drive SEO, support itineraries, and give commercial partners context to appear in.

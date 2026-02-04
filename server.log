@@ -1,0 +1,25 @@
+
+> adventure-site@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+✓ Ready in 1232ms
+○ Compiling /tags ...
+ GET /tags 200 in 6.6s (compile: 5.7s, render: 892ms)
+ GET /tags 200 in 298ms (compile: 7ms, render: 291ms)
+ GET /tags/hiking 200 in 1361ms (compile: 1279ms, render: 82ms)
+ GET /images/wales/snowdonia-wales-1-d896a4e4.jpg 404 in 877ms (compile: 647ms, render: 230ms)
+ GET /tags 200 in 189ms (compile: 5ms, render: 183ms)
+ GET /tags/hiking 200 in 81ms (compile: 24ms, render: 57ms)
+ GET /images/wales/snowdonia-wales-1-d896a4e4.jpg 404 in 208ms (compile: 11ms, render: 198ms)
+✓ Compiled in 792ms
+[?25h

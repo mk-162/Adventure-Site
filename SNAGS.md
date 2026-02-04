@@ -8,7 +8,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 ### 404s Found (Site Audit 2026-02-06)
 
-- [ ] `/for-operators` — 404! This is the operator sales page, was working before. Likely fell out of the Vercel build
+- [x] `/for-operators` — FIXED: redirects to /advertise
 - [x] `/activities/camping` — FIXED: replaced with wild-swimming, links now use /activities?type=X filter
 - [x] `/activities/climbing` — FIXED: links now use /activities?type=climbing filter
 - [x] `/activities/hiking` — FIXED: links now use /activities?type=hiking filter
@@ -24,13 +24,13 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [ ] Nav: "Activities" page needs clearer signposting for users wanting single experiences (vs multi-day itineraries)
 - [ ] Content: "Tried & Tested Routes" section has missing images
 - [ ] Content: "Ready-Made Adventures" section has missing images
-- [ ] Design: Remove prices from "Tried & Tested Routes" and "Ready-Made Adventures" (make it look less like we are selling something)
+- [x] Design: Remove prices from itinerary cards — FIXED
 
 **Itinerary Listings**
 
 - [ ] Visuals: Missing images! Need thumbnails for itinerary cards AND hero images.
-- [ ] Content: Add header text explaining these are "multi-day road trips and itineraries"
-- [ ] Content: "We've reviewed the best, and bring you fantastic plans that are editable and shareable."
+- [x] Content: Add header text — FIXED: "Multi-Day Road Trips & Itineraries"
+- [x] Content: header description updated — FIXED
 - [ ] UI: Add small map on right side linking to each valid itinerary
 
 **Itinerary Details / Planner UX**
@@ -38,15 +38,15 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 *Core Layout & Content*
 
 - [ ] Layout: Top section is "messy" -> Reorganize into "Fact Sheet" style cards.
-- [ ] Title: Under Tour Itinerary, add text "The perfect <x> days <location> road trip"
-- [ ] UI: Remove "Standard weather" and "budget friendly" toggles (clean up).
+- [x] Title: "The perfect X days Y road trip" subtitle — FIXED
+- [x] UI: Toggles replaced with simple text links — FIXED
 
 *Interactivity & Customization*
 
 - [ ] Actions: Add "Remove Item" button to itinerary items.
 - [ ] Actions: Add "Swap Item" button (replace with alternative).
 - [ ] Actions: Add "Save Trip" button (Major Call to Action).
-- [ ] UX: DO NOT use "Book Entire Trip". (We provide the plan, they book the parts).
+- [x] UX: "Book Entire Trip" → "Save This Trip" — FIXED
 - [ ] Navigation: Add 3 simple text links under title:
   - "Show alternative"
   - "Show wet weather alternative"
@@ -76,13 +76,13 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [ ] Logic: Unsold ad slots must show "Claim listing" or "Advertise here" widgets
 - [ ] Design: Sponsored/Paid listings need distinct "Premium" styling to differentiate from organic content
 - [ ] Enforcement: "Advertise Here" banner/widget missing from many locations -> Fix site-wide.
-- [ ] Nav: Replace "Book Now" (top right) with "Advertise".
+- [x] Nav: Replace "Book Now" (top right) with "Advertise" — FIXED
 - [ ] UI: "Local Experts" (Destination pages) -> Rename "Local Businesses".
   - [ ] Style: Top slot bolder + image (Premium slot).
 
 **Events / Calendar**
 
-- [ ] Feature: "Calendar" page missing? If so, build one.
+- [x] Calendar page exists at /calendar — verified
 - [ ] Feature: "Races and events worth entering" widget should link to Calendar page
 - [ ] Content: Events need images (add skill/ability to create these when setting up events)
 - [ ] Data: Audit "Register Now" buttons (many 404, e.g., newportmarathon).
@@ -94,7 +94,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 **Email / Newsletter**
 
-- [ ] Design: Homepage email field (bottom) is clear/invisible
+- [x] Design: Homepage email field (bottom) — FIXED: white bg, visible styling
 - [ ] Feature: Email capture must save to database (Postgres/Vercel) -> Add to to-do list
 
 **Legal / Footer**
@@ -105,7 +105,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 **Directory / Operators**
 
-- [ ] Design: Premium verified partner flags are "ridiculously massive"
+- [x] Premium badges downsized — FIXED
 - [ ] Content: Premium partners need images
 - [ ] Feature: Partners should show locations (add map with drop pins)
 - [ ] Interaction: Clicking a map pin should show a mini link/popup
@@ -117,14 +117,14 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 **Directory / Operator Detail (e.g., /directory/plas-y-brenin)**
 
 - [ ] Content: Main image is low resolution -> Fix source or styling
-- [ ] Design: Logo: If missing, hide container entirely (don't show "square with letter")
-- [ ] Layout: "Premium Partner" badge/text appears twice -> remove duplicate
-- [ ] Functionality: Share button doesn't work
-- [ ] Functionality: Heart/Save button doesn't work
-- [ ] Feature: Add `mailto` link below inquiry form for manual emailing
+- [x] Logo: hidden when missing — FIXED
+- [x] Premium badge duplicate checked — already only shows once
+- [x] Share button — FIXED (Web Share API + clipboard fallback)
+- [x] Heart/Save button — FIXED (login prompt)
+- [x] Feature: Add `mailto` link below inquiry form for manual emailing — FIXED
   - [ ] Subject Line: "From Adventure Wales"
 
-- [ ] Feature: Add `mailto` link below inquiry form for manual emailing
+- [x] Feature: Add `mailto` link below inquiry form for manual emailing — FIXED
   - [ ] Subject Line: "From Adventure Wales"
 
 **Directory (Premium & General)**
@@ -141,7 +141,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [ ] Layout: Hero image aspect ratio is bad for vendor images -> Use conventional rectangle, free up space for utility.
 - [ ] UX: listing page needs "See related companies in area" links (hard to browse).
 - [ ] Action: "Check Availability" -> standard link to Website/Contact (unless integrated booking).
-- [ ] Content: Search results page (from Nav magnifying glass) has no search bar!
+- [x] Search bar added to search results page — FIXED
 
 **User Accounts**
 
@@ -201,7 +201,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 **Region Pages**
 
-- [ ] Logic: Hide "Top Activities", "Experiences", "Where to Stay" links/sections if empty (don't show empty containers)
+- [x] Empty sections already guarded + Top Experiences moved to top — FIXED
 - [ ] Integration: Add Booking.com widget to all "Where to Stay" pages
 - [ ] UI: "Activities", "Operators", etc. links at top look like buttons -> Make them functional anchors/links.
 - [ ] UI: Weather Widget -> Too big. Move to right, make smaller.
@@ -220,7 +220,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 **Map & Geodata**
 
 - [ ] UI: Map POI Tooltips -> Add more info (Image + Link to page).
-- [ ] Bug: Map appears *over* the Navigation bar on scroll (Z-index issue).
+- [x] Map z-index fixed — FIXED
 
 - [ ] Content: "Getting There" link is "very bad" -> Improve or fix
 - [ ] Feature: "Essential Gear" -> Show product grid via Amazon API (engaging/useful items)
@@ -232,7 +232,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 **Guides / Articles (e.g., Guides Homepage)**
 
 - [ ] Content: All articles need images (especially on homepage)
-- [ ] Bug: Markdown syntax is visible in text (needs proper rendering)
+- [x] Markdown renderer enhanced — FIXED
 - [ ] Content: Teaser text is "terrible" -> Needs rewrite/improvement
 - [ ] Design: Include "Top [Activity] Spots" links to locations
 - [ ] Feature: Display Top Partners list (Sponsored/Premium partners first)
@@ -271,15 +271,15 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 **Advertise Page (formerly /for-operators)**
 
-- [ ] URL: Change `/for-operators` to `/advertise`
-- [ ] Content: Hero text -> "Grow your travel business in Wales directory." (Remove "adventure" focus)
-- [ ] Logic: "Already listed?" link -> Open popup with instructions ("Find attraction, use Claim button") instead of jumping to page
-- [ ] Design: Stats Counter -> Remove "Operators" count. Show Activities, Itineraries, Regions.
-- [ ] Layout: Move Price to bottom, Sales benefits to top.
-- [ ] Design: Rename "Verified Listing" to "Enhanced".
+- [x] URL: /for-operators → /advertise — FIXED
+- [x] Content: Hero text updated — FIXED
+- [x] "Already listed?" tooltip with instructions — FIXED
+- [x] Stats Counter: Activities, Itineraries, Regions — FIXED
+- [x] Layout: Pricing moved to bottom — FIXED
+- [x] "Verified Listing" → "Enhanced Listing" — FIXED
 - [ ] Visuals: Add screen grabs of listing types for each column.
-- [ ] Content: Remove "VerifyTrustBad" references (doesn't exist).
-- [ ] Content: Show Prices as "+VAT".
+- [x] "VerifyTrustBad" — not found, no action needed
+- [x] Prices shown as "+VAT" — FIXED
 - [ ] Feature: Add Quantity Selector for number of sites (Scale price +/-).
 - [ ] Visuals: "How It Works" -> Add screen grab showing how to claim.
 - [ ] Nav: Add menu for other options (Email, Channel Sponsorship, etc.)

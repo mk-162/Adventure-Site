@@ -18,6 +18,7 @@ import {
   Compass,
   Home,
   Handshake,
+  BookOpen,
 } from "lucide-react";
 import clsx from "clsx";
 
@@ -28,6 +29,7 @@ const contentNav = [
   { name: "Accommodation", href: "/admin/content/accommodation", icon: Tent },
   { name: "Events", href: "/admin/content/events", icon: Calendar },
   { name: "Answers", href: "/admin/content/answers", icon: MessageCircle },
+  { name: "Guide Pages", href: "/admin/content/guide-pages", icon: BookOpen },
 ];
 
 const commercialNav = [

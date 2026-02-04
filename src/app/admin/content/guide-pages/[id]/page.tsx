@@ -319,12 +319,3 @@ async function createGuidePage(formData: FormData) {
   revalidatePath("/admin/content/guide-pages");
   redirect(`/admin/content/guide-pages/${created.id}`);
 }
-
-function slugify(text: string): string {
-  return text
-    .toLowerCase()
-    .trim()
-    .replace(/[^\w\s-]/g, "")
-    .replace(/[\s_-]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}

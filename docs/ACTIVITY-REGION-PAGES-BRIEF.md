@@ -512,6 +512,193 @@ Example: `data/combo-pages/snowdonia--hiking.json`
 
 ---
 
+## Venue & Business Discovery (Research Task)
+
+While researching each combo page, **also capture every notable venue, business, and attraction** relevant to that activity + region. This builds a hit list to audit the database against and seed missing operators.
+
+This is separate from the editorial content — it's a structured research output that feeds the operator database.
+
+### What to Capture
+
+For each combo page research, find and record:
+
+**a) Activity Providers / Operators**
+- Companies that run this activity in this region
+- Include: guided tours, lessons, rental outfits, centres
+- Example: Surfing in Pembrokeshire → Outer Reef Surf School, Newsurf, Ma Simes, TYF Adventure
+
+**b) Gear & Equipment Shops**
+- Shops that sell or hire gear relevant to this activity
+- Include: outdoor shops, surf shops, bike shops, climbing walls with shops
+- Example: Climbing in Snowdonia → Joe Brown's (Llanberis), Cotswold Outdoor (Betws-y-Coed)
+
+**c) Trail Centres / Venues / Sites**
+- Fixed locations where the activity happens
+- Include: bike parks, climbing walls, surf schools at specific beaches, gorge walking sites
+- Example: MTB South Wales → BikePark Wales, Cwmcarn, Afan Forest, Gethin Woods
+
+**d) Clubs & Associations**
+- Local clubs people can join
+- Example: Hiking in Snowdonia → Snowdonia Society, local rambling groups
+
+**e) Related Attractions**
+- Nearby attractions that complement the activity
+- Example: Hiking Brecon Beacons → National Showcaves, Brecon Mountain Railway
+
+**f) Post-Activity Spots**
+- Cafes, pubs, restaurants where people go after
+- The ones that are KNOWN in the community for this activity
+- Example: Climbing Snowdonia → Pete's Eats (Llanberis), Moel Siabod Cafe (Capel Curig)
+
+### How to Store It
+
+Deliver as a separate `discoveredBusinesses` array in each combo page JSON file. This data is RAW RESEARCH — it will be reviewed and selectively imported into the operators table.
+
+Add to each combo JSON file:
+
+```json
+"discoveredBusinesses": [
+  {
+    "name": "Joe Brown's",
+    "type": "gear_shop",
+    "category": "gear_rental",
+    "address": "High Street, Llanberis, Gwynedd, LL55 4EU",
+    "postcode": "LL55 4EU",
+    "lat": 53.1187,
+    "lng": -4.1296,
+    "phone": "01286 870327",
+    "website": "https://www.joebrown.co.uk",
+    "googleMapsUrl": "https://maps.google.com/?cid=XXXXX",
+    "googleRating": 4.6,
+    "reviewCount": 312,
+    "description": "Legendary climbing and outdoor shop, established 1966. Expert staff, extensive gear range.",
+    "relevantActivities": ["climbing", "hiking", "mountaineering"],
+    "services": ["gear sales", "boot fitting", "climbing gear", "maps", "hire"],
+    "priceRange": "££",
+    "openingHours": "Mon-Sat 9-5:30, Sun 10-4",
+    "socialMedia": {
+      "facebook": "https://facebook.com/joebrowns",
+      "instagram": "@joebrowns"
+    },
+    "notes": "Institution in the climbing community. Named after the legendary climber.",
+    "inDatabase": false,
+    "existingOperatorSlug": null,
+    "priority": "high",
+    "source": "Google Maps + direct research"
+  },
+  {
+    "name": "Pete's Eats",
+    "type": "post_activity",
+    "category": "food_drink",
+    "address": "40 High Street, Llanberis, LL55 4EU",
+    "postcode": "LL55 4EU",
+    "lat": 53.1190,
+    "lng": -4.1285,
+    "phone": "01286 870117",
+    "website": "https://www.petes-eats.co.uk",
+    "googleMapsUrl": null,
+    "googleRating": 4.4,
+    "reviewCount": 1200,
+    "description": "The climber's canteen. Massive portions, expedition photos on the walls.",
+    "relevantActivities": ["climbing", "hiking", "all"],
+    "services": ["cafe", "meals", "takeaway"],
+    "priceRange": "£",
+    "openingHours": "Daily 8am-8pm (varies seasonally)",
+    "socialMedia": {},
+    "notes": "Iconic. Every climber in Snowdonia has eaten here.",
+    "inDatabase": false,
+    "existingOperatorSlug": null,
+    "priority": "high",
+    "source": "Local knowledge + Google"
+  },
+  {
+    "name": "Cwmcarn Forest",
+    "type": "venue",
+    "category": "activity_provider",
+    "address": "Nantcarn Road, Cwmcarn, NP11 7FA",
+    "postcode": "NP11 7FA",
+    "lat": 51.6472,
+    "lng": -3.1264,
+    "phone": null,
+    "website": "https://www.cwmcarn.co.uk",
+    "googleMapsUrl": null,
+    "googleRating": 4.5,
+    "reviewCount": 450,
+    "description": "Trail centre in South Wales valleys. Twrch trail — technical red-grade singletrack.",
+    "relevantActivities": ["mountain-biking"],
+    "services": ["trails", "parking", "cafe"],
+    "priceRange": "£",
+    "openingHours": "Dawn to dusk",
+    "socialMedia": {},
+    "notes": "Twrch trail recently reopened. Key missing venue for South Wales MTB.",
+    "inDatabase": false,
+    "existingOperatorSlug": null,
+    "priority": "critical",
+    "source": "MTB community knowledge"
+  }
+]
+```
+
+### Field Definitions
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `name` | string | Business name |
+| `type` | string | One of: `activity_provider`, `gear_shop`, `venue`, `club`, `attraction`, `post_activity` |
+| `category` | string | Maps to operator category enum: `activity_provider`, `accommodation`, `food_drink`, `gear_rental`, `transport` |
+| `address` | string | Full address |
+| `postcode` | string | UK postcode (for geocoding if lat/lng unknown) |
+| `lat` / `lng` | number | Coordinates (from Google Maps if possible) |
+| `phone` | string | Phone number |
+| `website` | string | Website URL |
+| `googleMapsUrl` | string | Direct Google Maps link (for verification) |
+| `googleRating` | number | Google rating (1-5) |
+| `reviewCount` | number | Number of Google reviews |
+| `description` | string | What they do, why they matter |
+| `relevantActivities` | string[] | Activity type slugs this business relates to |
+| `services` | string[] | What they offer |
+| `priceRange` | string | £, ££, or £££ |
+| `openingHours` | string | Opening hours summary |
+| `socialMedia` | object | Facebook, Instagram, etc. |
+| `notes` | string | Research notes, context, why it's important |
+| `inDatabase` | boolean | Is this already in our operators table? |
+| `existingOperatorSlug` | string\|null | If in DB, what's the slug? |
+| `priority` | string | `critical` (must have), `high`, `medium`, `low` |
+| `source` | string | Where this data came from |
+
+### Research Process Per Combo Page
+
+1. **Search Google Maps** for "{activity} {region}" — capture all relevant businesses
+2. **Search Google** for "best {activity} {region}" — note any businesses/venues mentioned in top results
+3. **Check TripAdvisor/AllTrails/Strava** for venues and popular spots
+4. **Check existing DB** — mark which ones we already have (`inDatabase: true`)
+5. **Flag gaps** — businesses with `priority: critical` that we're missing
+6. **Capture Google ratings** — these become trust signals on the page
+7. **Note postcodes** — even if exact lat/lng unavailable, postcode enables geocoding later
+
+### Minimum Discovery Targets Per Combo Page
+
+| Type | Minimum | Notes |
+|------|---------|-------|
+| Activity providers | 3-5 | All the main ones operating in this area |
+| Gear shops | 1-3 | The go-to shops for this activity |
+| Venues/trail centres | ALL | These are finite and well-known — don't miss any |
+| Post-activity spots | 2-4 | The ones the community actually uses |
+| Clubs | 1-2 | If they exist |
+| Attractions | 1-3 | Complementary things to do nearby |
+
+### What Happens After Research
+
+1. Research AI delivers combo page JSON with `discoveredBusinesses` array
+2. We review the list against the operators DB
+3. Missing critical/high priority businesses get seeded into the operators table
+4. The combo page then auto-populates from the DB
+5. Over time, operators claim their listings and enhance them (commercial flywheel)
+
+This turns the research phase into a **database growth engine** — every combo page researched = 10-20 potential new operator listings.
+
+---
+
 ## Image Requirements
 
 ### Hero Images (1 per page)
@@ -698,6 +885,17 @@ What makes Google rank this page as THE authority:
 - [ ] 3-5 accommodation options nearby (with distance to key spots)
 - [ ] All operator/shop websites verified as working
 - [ ] All phone numbers verified
+
+### Business Discovery
+- [ ] `discoveredBusinesses` array populated in JSON
+- [ ] 3-5 activity providers found (with Google ratings, websites, phone)
+- [ ] 1-3 gear shops found
+- [ ] ALL trail centres/venues/sites captured (none missed)
+- [ ] 2-4 post-activity cafes/pubs found
+- [ ] Each business marked `inDatabase: true/false`
+- [ ] Missing critical businesses flagged with `priority: "critical"`
+- [ ] Google ratings and review counts captured
+- [ ] Postcodes captured for all (enables geocoding)
 
 ### Events
 - [ ] 2-5 relevant recurring events/competitions listed

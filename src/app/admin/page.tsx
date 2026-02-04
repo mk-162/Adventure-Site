@@ -1,5 +1,5 @@
 import { db } from "@/db";
-import { regions, activities, operators, accommodation, events, answers } from "@/db/schema";
+import { regions, activities, operators, accommodation, events, answers, guidePages } from "@/db/schema";
 import { count, eq } from "drizzle-orm";
 import Link from "next/link";
 import {
@@ -9,6 +9,7 @@ import {
   Tent,
   Calendar,
   MessageCircle,
+  BookOpen,
   ArrowRight,
 } from "lucide-react";
 
@@ -20,6 +21,7 @@ async function getStats() {
     accommodationCount,
     eventsCount,
     answersCount,
+    guidePagesCount,
   ] = await Promise.all([
     db.select({ count: count() }).from(regions),
     db.select({ count: count() }).from(activities),
@@ -27,6 +29,7 @@ async function getStats() {
     db.select({ count: count() }).from(accommodation),
     db.select({ count: count() }).from(events),
     db.select({ count: count() }).from(answers),
+    db.select({ count: count() }).from(guidePages),
   ]);
 
   return {
@@ -36,6 +39,7 @@ async function getStats() {
     accommodation: accommodationCount[0]?.count || 0,
     events: eventsCount[0]?.count || 0,
     answers: answersCount[0]?.count || 0,
+    guidePages: guidePagesCount[0]?.count || 0,
   };
 }
 
@@ -84,6 +88,13 @@ export default async function AdminDashboard() {
       icon: MessageCircle,
       href: "/admin/content/answers",
       color: "bg-teal-500",
+    },
+    {
+      name: "Guide Pages",
+      count: stats.guidePages,
+      icon: BookOpen,
+      href: "/admin/content/guide-pages",
+      color: "bg-indigo-500",
     },
   ];
 

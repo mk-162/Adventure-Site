@@ -281,18 +281,29 @@ export default async function RegionPage({ params }: RegionPageProps) {
           
           {/* Main Content (8 cols) */}
           <div className="lg:col-span-8 flex flex-col gap-8 lg:gap-10">
-            
-            {/* Weather Widget */}
-            {region.lat && region.lng && (
-              <WeatherWidget 
-                lat={parseFloat(String(region.lat))} 
-                lng={parseFloat(String(region.lng))} 
-                regionName={region.name} 
-              />
-            )}
 
-            {/* Climate Chart */}
-            <ClimateChart regionSlug={regionSlug} />
+            {/* Top Experiences Grid — prominent at top */}
+            {activities.length > 0 && (
+              <section>
+                <div className="flex justify-between items-end mb-4 lg:mb-5">
+                  <h3 className="text-lg lg:text-xl font-bold text-[#1e3a4c]">Top Experiences</h3>
+                  <Link href={`/${regionSlug}/things-to-do`} className="text-[#1e3a4c] text-sm font-bold hover:underline flex items-center gap-1">
+                    View all <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5">
+                  {activities.slice(0, 4).map((item) => (
+                      <ActivityCard
+                          key={item.activity.id}
+                          activity={item.activity}
+                          region={item.region}
+                          operator={item.operator}
+                          hideOperator={true}
+                      />
+                  ))}
+                </div>
+              </section>
+            )}
 
             {/* Intro */}
             <section>
@@ -329,28 +340,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
               </section>
             )}
 
-            {/* Top Experiences Grid */}
-            {activities.length > 0 && (
-              <section>
-                <div className="flex justify-between items-end mb-4 lg:mb-5">
-                  <h3 className="text-lg lg:text-xl font-bold text-[#1e3a4c]">Top Experiences</h3>
-                  <Link href={`/${regionSlug}/things-to-do`} className="text-[#1e3a4c] text-sm font-bold hover:underline flex items-center gap-1">
-                    View all <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5">
-                  {activities.slice(0, 2).map((item) => (
-                      <ActivityCard
-                          key={item.activity.id}
-                          activity={item.activity}
-                          region={item.region}
-                          operator={item.operator}
-                          hideOperator={true}
-                      />
-                  ))}
-                </div>
-              </section>
-            )}
+            {/* (Top Experiences moved to top of main content) */}
 
             {/* Accommodation Grid */}
             {accommodation.length > 0 && (
@@ -431,11 +421,22 @@ export default async function RegionPage({ params }: RegionPageProps) {
 
           {/* Sidebar (4 cols) */}
           <aside className="lg:col-span-4 space-y-6">
+
+            {/* Weather Widget — compact in sidebar */}
+            {region.lat && region.lng && (
+              <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+                <WeatherWidget 
+                  lat={parseFloat(String(region.lat))} 
+                  lng={parseFloat(String(region.lng))} 
+                  regionName={region.name} 
+                />
+              </div>
+            )}
             
-            {/* Local Experts */}
+            {/* Local Businesses */}
             <div className="bg-white p-5 lg:p-6 rounded-2xl border border-gray-200 shadow-sm">
               <div className="flex justify-between items-center mb-4">
-                <h3 className="text-lg font-bold text-[#1e3a4c]">Local Experts</h3>
+                <h3 className="text-lg font-bold text-[#1e3a4c]">Local Businesses</h3>
                 <Link href="/directory" className="text-xs font-bold text-[#1e3a4c] hover:underline">View all</Link>
               </div>
               <div className="flex flex-col gap-4">
@@ -465,16 +466,16 @@ export default async function RegionPage({ params }: RegionPageProps) {
               </div>
             </div>
 
-            {/* Promo Card */}
+            {/* Advertise CTA */}
             <div className="relative overflow-hidden rounded-2xl bg-[#1e3a4c] text-white p-5 lg:p-6 shadow-md">
               <div className="absolute -right-4 -top-4 text-white/10 rotate-12">
-                <CheckCircle className="w-[120px] h-[120px] lg:w-[150px] lg:h-[150px]" />
+                <Users className="w-[120px] h-[120px] lg:w-[150px] lg:h-[150px]" />
               </div>
-              <h4 className="text-lg font-bold mb-2 relative z-10">Get the Pass</h4>
-              <p className="text-sm text-blue-100 mb-4 relative z-10">Save up to 40% on {region.name} attractions with the Adventure Pass.</p>
-              <button className="w-full bg-white text-[#1e3a4c] font-bold py-2.5 rounded-lg text-sm relative z-10 hover:bg-gray-100 transition-colors">
+              <h4 className="text-lg font-bold mb-2 relative z-10">List Your Business</h4>
+              <p className="text-sm text-blue-100 mb-4 relative z-10">Get discovered by visitors planning their {region.name} trip. Free listing available.</p>
+              <Link href="/advertise" className="block w-full bg-white text-[#1e3a4c] font-bold py-2.5 rounded-lg text-sm relative z-10 hover:bg-gray-100 transition-colors text-center">
                 Learn More
-              </button>
+              </Link>
             </div>
           </aside>
         </div>

@@ -65,10 +65,10 @@ export function Header() {
               </Link>
             )}
             <Link
-              href="/book"
+              href="/advertise"
               className="px-5 py-2.5 bg-[#f97316] hover:bg-orange-600 text-white text-sm font-bold rounded-lg transition-colors shadow-lg shadow-orange-500/20"
             >
-              Book Now
+              Advertise
             </Link>
           </div>
 
@@ -96,6 +96,9 @@ export function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
+                {link.href === "/itineraries" && (
+                  <span className="block text-xs font-normal text-slate-400 mt-0.5">Multi-day road trips</span>
+                )}
               </Link>
             ))}
             <div className="pt-2 px-4 space-y-2">
@@ -118,11 +121,11 @@ export function Header() {
                 </Link>
               )}
               <Link
-                href="/book"
+                href="/advertise"
                 className="block w-full py-3 bg-[#f97316] text-white text-sm font-bold rounded-lg text-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Book Now
+                Advertise
               </Link>
             </div>
           </nav>

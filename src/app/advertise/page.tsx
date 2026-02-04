@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Link from "next/link";
 import {
   Mountain,
   Shield,
@@ -10,27 +9,25 @@ import {
   Search,
   MapPin,
   CalendarRange,
-  Globe,
-  Sparkles,
   BarChart3,
   ArrowRight,
   Mail,
-  Users,
   Map,
   Route,
   Bot,
 } from "lucide-react";
 import { FAQAccordion } from "@/components/operators/FAQAccordion";
 import { RegisterInterestForm } from "@/components/operators/RegisterInterestForm";
+import { AlreadyListedTooltip } from "@/components/operators/AlreadyListedTooltip";
 
 export const metadata: Metadata = {
-  title: "Advertise With Us - Grow Your Adventure Business | Adventure Wales",
+  title: "Advertise With Us - Grow Your Travel Business | Adventure Wales",
   description:
-    "Join 46 Welsh adventure operators already listed on Adventure Wales. Get discovered by thousands of adventure-seekers. Free listing available, verified and premium plans from £9.99/mo per location.",
+    "Get discovered by thousands of visitors planning their next Welsh trip. Free listing available, enhanced and premium plans from £9.99/mo +VAT per location.",
   openGraph: {
-    title: "Advertise With Us - Grow Your Adventure Business | Adventure Wales",
+    title: "Advertise With Us - Grow Your Travel Business | Adventure Wales",
     description:
-      "Join 46 Welsh adventure operators already listed on Adventure Wales. Get discovered by thousands of adventure-seekers.",
+      "Get discovered by thousands of visitors planning their next Welsh trip. Free listing available, enhanced and premium plans.",
     siteName: "Adventure Wales",
     type: "website",
     locale: "en_GB",
@@ -39,14 +36,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Advertise With Us | Adventure Wales",
     description:
-      "Join 46 Welsh adventure operators already listed. Free listing, verified and premium plans available.",
+      "Get discovered by visitors planning Welsh trips. Free listing, enhanced and premium plans available.",
   },
 };
 
 const stats = [
-  { value: "46", label: "Operators", icon: Users },
   { value: "129", label: "Activities", icon: MapPin },
-  { value: "54", label: "Trip Itineraries", icon: Route },
+  { value: "54", label: "Itineraries", icon: Route },
   { value: "12", label: "Regions Covered", icon: Map },
 ];
 
@@ -55,13 +51,13 @@ const benefits = [
     icon: Search,
     title: "Get Discovered",
     description:
-      "Your activities appear in our itinerary planner, used by thousands of visitors planning Welsh adventures. We don't just list you — we recommend you.",
+      "Your activities appear in our itinerary planner, used by thousands of visitors planning Welsh trips. We don't just list you — we recommend you.",
   },
   {
     icon: Shield,
-    title: "Verified Trust Badge",
+    title: "Enhanced Trust Signals",
     description:
-      "Stand out with our 'Verified by Adventure Wales' badge. We check your accreditations, ratings, and reviews so visitors book with confidence.",
+      "Stand out with verified accreditations, ratings, and reviews so visitors book with confidence.",
   },
   {
     icon: Zap,
@@ -95,9 +91,8 @@ const freePlanFeatures = [
   "Appear on region pages",
 ];
 
-const verifiedPlanFeatures = [
+const enhancedPlanFeatures = [
   "Everything in Free, plus:",
-  "\"Verified by Adventure Wales\" trust badge",
   "Full profile with description, photos, gallery",
   "Booking link integration (Beyonk, Rezdy, direct)",
   "Included in trip itineraries",
@@ -107,7 +102,7 @@ const verifiedPlanFeatures = [
 ];
 
 const premiumPlanFeatures = [
-  "Everything in Verified, plus:",
+  "Everything in Enhanced, plus:",
   "Featured placement in search & itineraries",
   "Priority position on region pages",
   "Special offers & promotions displayed",
@@ -119,21 +114,21 @@ const premiumPlanFeatures = [
 const steps = [
   {
     icon: Search,
-    title: "Claim Your Listing",
+    title: "Find Your Listing",
     description:
-      "Find your business in our directory and claim it. We've already started building your profile.",
+      "Find your listing in our directory. We've already started building your profile.",
   },
   {
-    icon: Sparkles,
-    title: "We Do The Work",
+    icon: Mail,
+    title: "Claim & Verify",
     description:
-      "Our AI researches your business — descriptions, photos, ratings, trust signals. You review and approve.",
+      "Click Claim and verify your email. It only takes a moment to confirm ownership.",
   },
   {
     icon: TrendingUp,
-    title: "Go Live & Grow",
+    title: "Update & Go Live",
     description:
-      "Your listing goes live across the site. Appear in itineraries, search results, and trip plans.",
+      "Update your profile and go live. Appear in itineraries, search results, and trip plans.",
   },
 ];
 
@@ -141,7 +136,7 @@ const faqItems = [
   {
     question: "Is my business already listed?",
     answer:
-      "Probably! We've pre-listed 46 Welsh adventure operators. Search our directory to find yours, or contact us to get added.",
+      "Probably! We've pre-listed many Welsh tourism businesses. Search our directory to find yours, or contact us to get added.",
   },
   {
     question: "What does 'per location' mean?",
@@ -159,9 +154,9 @@ const faqItems = [
       "Yes. No contracts, no lock-in. Cancel your subscription anytime and keep your free listing.",
   },
   {
-    question: "What's the Verified badge?",
+    question: "What's the Enhanced Listing?",
     answer:
-      "We check your AALA licensing, Google ratings, TripAdvisor presence, and insurance. Operators who meet our criteria get a green 'Verified' badge that builds visitor trust.",
+      "Enhanced listings include a full profile with photos, booking integration, itinerary placement, and enquiry forwarding — everything you need to convert visitors into customers.",
   },
   {
     question: "Do you take commission on bookings?",
@@ -186,14 +181,15 @@ export default function ForOperatorsPage() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white/90 text-sm font-medium mb-6">
               <Mountain className="h-4 w-4" />
-              For Adventure Operators
+              For Tourism &amp; Travel Businesses
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-              Grow Your Adventure Business with Wales&apos; #1 Directory
+              Grow your travel business in the Wales directory.
             </h1>
             <p className="text-lg sm:text-xl text-white/80 leading-relaxed mb-10 max-w-2xl">
-              Join 46 operators already listed. Get discovered by thousands of
-              adventure-seekers planning their next Welsh trip.
+              Get discovered by thousands of visitors planning their next Welsh
+              trip. List your business, reach new customers, and drive more
+              bookings.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -203,12 +199,7 @@ export default function ForOperatorsPage() {
                 See Plans
                 <ArrowRight className="h-5 w-5" />
               </a>
-              <Link
-                href="/directory"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-colors text-base"
-              >
-                Already listed? Claim your page →
-              </Link>
+              <AlreadyListedTooltip />
             </div>
           </div>
         </div>
@@ -218,7 +209,7 @@ export default function ForOperatorsPage() {
       <section className="relative -mt-8 z-10">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="bg-white rounded-2xl shadow-lg border border-slate-100 py-8 px-6 sm:px-10">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-3 gap-8">
               {stats.map((stat) => (
                 <div key={stat.label} className="text-center">
                   <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#f97316]/10 mb-3">
@@ -237,12 +228,12 @@ export default function ForOperatorsPage() {
         </div>
       </section>
 
-      {/* ============ BENEFITS ============ */}
+      {/* ============ BENEFITS / VALUE PROP ============ */}
       <section className="py-20 sm:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1e3a4c] mb-4">
-              Why List With Adventure Wales?
+              Why List With Us?
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               We don&apos;t just list you — we actively drive bookings to your
@@ -268,6 +259,96 @@ export default function ForOperatorsPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ============ HOW IT WORKS ============ */}
+      <section className="py-20 sm:py-28 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1e3a4c] mb-4">
+              How It Works
+            </h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Getting listed takes minutes. We do the heavy lifting.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {steps.map((step, index) => (
+              <div key={step.title} className="text-center relative">
+                {/* Connector line */}
+                {index < steps.length - 1 && (
+                  <div className="hidden md:block absolute top-12 left-[60%] w-[80%] h-px bg-slate-200" />
+                )}
+                <div className="relative inline-flex items-center justify-center w-24 h-24 rounded-full bg-[#f97316]/10 mb-6">
+                  <step.icon className="h-10 w-10 text-[#f97316]" />
+                  <span className="absolute -top-1 -right-1 w-8 h-8 rounded-full bg-[#1e3a4c] text-white text-sm font-bold flex items-center justify-center">
+                    {index + 1}
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-[#1e3a4c] mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-slate-600 leading-relaxed max-w-xs mx-auto">
+                  {step.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============ FAQ ============ */}
+      <section className="py-20 sm:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1e3a4c] mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-slate-600">
+              Everything you need to know about listing your business.
+            </p>
+          </div>
+          <FAQAccordion items={faqItems} />
+        </div>
+      </section>
+
+      {/* ============ CTA FOOTER ============ */}
+      <section className="py-20 sm:py-28 bg-gradient-to-br from-[#1e3a4c] via-[#1e3a4c] to-[#2d5a73] relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-[#f97316] blur-3xl" />
+          <div className="absolute bottom-10 left-10 w-80 h-80 rounded-full bg-white blur-3xl" />
+        </div>
+
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+            Ready to grow your business?
+          </h2>
+          <p className="text-lg text-white/80 mb-10 max-w-xl mx-auto">
+            Get started free — upgrade when you&apos;re ready. No contracts, no
+            commission, no risk.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <a
+              href="#register"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#f97316] text-white font-semibold rounded-full hover:bg-[#ea580c] transition-colors text-base"
+            >
+              Get Listed Free
+              <ArrowRight className="h-5 w-5" />
+            </a>
+            <a
+              href="mailto:hello@adventurewales.co.uk?subject=Adventure%20Wales%20Listing%20Enquiry"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-colors text-base"
+            >
+              <Mail className="h-5 w-5" />
+              Contact Us
+            </a>
+          </div>
+          <p className="text-white/60 text-sm">
+            <Mail className="inline h-4 w-4 mr-1" />
+            hello@adventurewales.co.uk
+          </p>
         </div>
       </section>
 
@@ -313,7 +394,7 @@ export default function ForOperatorsPage() {
               </a>
             </div>
 
-            {/* VERIFIED — Most Popular */}
+            {/* ENHANCED — Most Popular */}
             <div className="relative bg-white rounded-2xl border-2 border-[#f97316] p-8 shadow-xl lg:-mt-4 lg:mb-0">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                 <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#f97316] text-white text-xs font-bold uppercase tracking-wide">
@@ -322,7 +403,7 @@ export default function ForOperatorsPage() {
                 </span>
               </div>
               <div className="mb-6 mt-2">
-                <h3 className="text-xl font-bold text-[#1e3a4c] mb-1">Verified</h3>
+                <h3 className="text-xl font-bold text-[#1e3a4c] mb-1">Enhanced Listing</h3>
                 <p className="text-sm text-slate-500">
                   Full profile with trust signals
                 </p>
@@ -331,14 +412,15 @@ export default function ForOperatorsPage() {
                 <span className="text-4xl font-extrabold text-[#1e3a4c]">
                   £9.99
                 </span>
+                <span className="text-slate-500 ml-1">+VAT</span>
                 <span className="text-slate-500 ml-2">/ mo</span>
                 <div className="text-sm text-slate-400 mt-1">per location</div>
               </div>
               <p className="text-sm text-[#f97316] font-medium mb-6">
-                or £99/yr — save 17%
+                or £99/yr +VAT — save 17%
               </p>
               <ul className="space-y-3 mb-8">
-                {verifiedPlanFeatures.map((feature, i) => (
+                {enhancedPlanFeatures.map((feature, i) => (
                   <li key={feature} className="flex items-start gap-3">
                     {i === 0 ? (
                       <ArrowRight className="h-5 w-5 text-[#f97316] shrink-0 mt-0.5" />
@@ -361,7 +443,7 @@ export default function ForOperatorsPage() {
                 href="#register"
                 className="block text-center w-full px-6 py-3.5 rounded-full bg-[#f97316] text-white font-semibold hover:bg-[#ea580c] transition-colors"
               >
-                Get Verified
+                Get Enhanced
               </a>
             </div>
 
@@ -377,11 +459,12 @@ export default function ForOperatorsPage() {
                 <span className="text-4xl font-extrabold text-[#1e3a4c]">
                   £29.99
                 </span>
+                <span className="text-slate-500 ml-1">+VAT</span>
                 <span className="text-slate-500 ml-2">/ mo</span>
                 <div className="text-sm text-slate-400 mt-1">per location</div>
               </div>
               <p className="text-sm text-[#f97316] font-medium mb-6">
-                or £299/yr — save 17%
+                or £299/yr +VAT — save 17%
               </p>
               <ul className="space-y-3 mb-8">
                 {premiumPlanFeatures.map((feature, i) => (
@@ -412,116 +495,19 @@ export default function ForOperatorsPage() {
             </div>
           </div>
 
-          {/* Multi-Location Callout */}
-          <div className="mt-12 max-w-3xl mx-auto">
-            <div className="bg-gradient-to-r from-[#1e3a4c] to-[#2d5a73] rounded-2xl p-8 text-white text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/10 mb-4">
-                <Mountain className="h-6 w-6" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Multiple locations?</h3>
-              <p className="text-white/80 mb-6 max-w-xl mx-auto">
-                Operators like Zip World with sites across Wales get a dedicated
-                per-location price. The more locations, the more visibility.
-              </p>
+          {/* Multi-site discounts note */}
+          <div className="mt-10 text-center">
+            <p className="text-slate-600 text-base">
+              Multiple sites?{" "}
               <a
-                href="mailto:hello@adventurewales.co.uk?subject=Multi-site%20pricing%20enquiry"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#f97316] text-white font-semibold hover:bg-[#ea580c] transition-colors"
+                href="mailto:hello@adventurewales.co.uk?subject=Multi-site%20discount%20enquiry"
+                className="text-[#f97316] font-semibold hover:underline"
               >
-                Contact us for multi-site pricing
-                <ArrowRight className="h-5 w-5" />
+                Contact us for multi-site discounts
               </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ============ HOW IT WORKS ============ */}
-      <section className="py-20 sm:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1e3a4c] mb-4">
-              How It Works
-            </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Getting listed takes minutes. We do the heavy lifting.
+              .
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {steps.map((step, index) => (
-              <div key={step.title} className="text-center relative">
-                {/* Connector line */}
-                {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-12 left-[60%] w-[80%] h-px bg-slate-200" />
-                )}
-                <div className="relative inline-flex items-center justify-center w-24 h-24 rounded-full bg-[#f97316]/10 mb-6">
-                  <step.icon className="h-10 w-10 text-[#f97316]" />
-                  <span className="absolute -top-1 -right-1 w-8 h-8 rounded-full bg-[#1e3a4c] text-white text-sm font-bold flex items-center justify-center">
-                    {index + 1}
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold text-[#1e3a4c] mb-3">
-                  {step.title}
-                </h3>
-                <p className="text-slate-600 leading-relaxed max-w-xs mx-auto">
-                  {step.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ============ FAQ ============ */}
-      <section className="py-20 sm:py-28 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1e3a4c] mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-lg text-slate-600">
-              Everything you need to know about listing your business.
-            </p>
-          </div>
-          <FAQAccordion items={faqItems} />
-        </div>
-      </section>
-
-      {/* ============ CTA FOOTER ============ */}
-      <section className="py-20 sm:py-28 bg-gradient-to-br from-[#1e3a4c] via-[#1e3a4c] to-[#2d5a73] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-[#f97316] blur-3xl" />
-          <div className="absolute bottom-10 left-10 w-80 h-80 rounded-full bg-white blur-3xl" />
-        </div>
-
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
-            Ready to grow your adventure business?
-          </h2>
-          <p className="text-lg text-white/80 mb-10 max-w-xl mx-auto">
-            Get started free — upgrade when you&apos;re ready. No contracts, no
-            commission, no risk.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a
-              href="#register"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#f97316] text-white font-semibold rounded-full hover:bg-[#ea580c] transition-colors text-base"
-            >
-              Get Listed Free
-              <ArrowRight className="h-5 w-5" />
-            </a>
-            <a
-              href="mailto:hello@adventurewales.co.uk?subject=Adventure%20Wales%20Operator%20Enquiry"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 border border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-colors text-base"
-            >
-              <Mail className="h-5 w-5" />
-              Contact Us
-            </a>
-          </div>
-          <p className="text-white/60 text-sm">
-            <Mail className="inline h-4 w-4 mr-1" />
-            hello@adventurewales.co.uk
-          </p>
         </div>
       </section>
 

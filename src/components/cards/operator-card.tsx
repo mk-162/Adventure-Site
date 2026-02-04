@@ -34,15 +34,11 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
         <div className="p-6">
           <div className="flex items-start justify-between mb-4">
             <div className="flex items-center gap-3">
-              {operator.logoUrl ? (
+              {operator.logoUrl && (
                 <div
                   className="w-16 h-16 rounded-xl bg-cover bg-center"
                   style={{ backgroundImage: `url('${operator.logoUrl}')` }}
                 />
-              ) : (
-                <div className="w-16 h-16 rounded-xl bg-[#1e3a4c] flex items-center justify-center text-white text-xl font-bold">
-                  {operator.name.charAt(0)}
-                </div>
               )}
               <div>
                 <h3 className="font-bold text-lg text-[#1e3a4c] group-hover:text-[#f97316] transition-colors">
@@ -112,15 +108,11 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
       className="group flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow"
     >
       {/* Logo */}
-      {operator.logoUrl ? (
+      {operator.logoUrl && (
         <div
           className="w-14 h-14 rounded-xl bg-cover bg-center flex-shrink-0"
           style={{ backgroundImage: `url('${operator.logoUrl}')` }}
         />
-      ) : (
-        <div className="w-14 h-14 rounded-xl bg-[#1e3a4c] flex items-center justify-center text-white text-lg font-bold flex-shrink-0">
-          {operator.name.charAt(0)}
-        </div>
       )}
 
       {/* Content */}

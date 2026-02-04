@@ -84,14 +84,14 @@ export function Newsletter() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email"
-                className="flex-1 px-5 py-4 rounded-2xl border-none focus:ring-2 focus:ring-[#f97316] outline-none text-slate-900 shadow-lg"
+                placeholder="Enter your email address"
+                className="flex-1 px-5 py-4 rounded-2xl bg-white border-2 border-white/80 focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316] outline-none text-slate-900 placeholder-slate-400 shadow-lg"
                 required
               />
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="px-8 py-4 bg-[#f97316] hover:bg-orange-600 text-white font-bold rounded-2xl transition-all shadow-lg hover:shadow-xl hover:scale-105 whitespace-nowrap disabled:opacity-50"
+                className="px-8 py-4 bg-[#f97316] hover:bg-orange-600 text-white font-bold rounded-2xl transition-all shadow-lg hover:shadow-xl hover:scale-105 whitespace-nowrap disabled:opacity-50 border-2 border-orange-400"
               >
                 {status === "loading" ? "..." : "Subscribe"}
               </button>

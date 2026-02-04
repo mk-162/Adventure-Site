@@ -136,7 +136,7 @@ export default function MapView({
     : [];
 
   return (
-    <div className={clsx("rounded-xl overflow-hidden", className)} style={{ height }}>
+    <div className={clsx("rounded-xl overflow-hidden relative z-0", className)} style={{ height }}>
       <MapContainer
         center={mapCenter}
         zoom={zoom}

@@ -36,6 +36,6 @@ export default async function DirectoryPage() {
 }
 
 export const metadata = {
-  title: "Adventure Operators | Adventure Wales",
-  description: "30+ vetted Welsh adventure operators. Qualified, insured, and reviewed. Find the right guide for coasteering, hiking, biking, and more.",
+  title: "Adventure Providers | Adventure Wales",
+  description: "30+ vetted Welsh adventure providers. Qualified, insured, and reviewed. Find the right guide for coasteering, hiking, biking, and more.",
 };

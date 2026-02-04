@@ -89,26 +89,15 @@ export default async function OperatorProfilePage({ params }: Props) {
 
   return (
     <div className="min-h-screen pb-24 lg:pb-12">
-      {/* Verification Banner (Premium Only) */}
-      {operator.claimStatus === "premium" && (
-        <div className="bg-gradient-to-r from-[#f97316]/10 to-amber-500/10 border-b border-[#f97316]/20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-            <div className="flex items-center justify-center gap-2 text-sm">
-              <ShieldCheck className="w-4 h-4 text-[#f97316]" />
-              <span className="text-[#1e3a4c] font-semibold">
-                This operator has been independently verified by Adventure Wales
-              </span>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* Verification Banner — only for claimed (non-premium) operators.
+           Premium operators already have a prominent VerifiedBadge next to their name. */}
       {operator.claimStatus === "claimed" && (
         <div className="bg-gradient-to-r from-emerald-50 to-green-50 border-b border-emerald-500/20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <div className="flex items-center justify-center gap-2 text-sm">
               <CheckCircle className="w-4 h-4 text-emerald-600" />
               <span className="text-[#1e3a4c] font-semibold">
-                This operator has been independently verified by Adventure Wales
+                Independently verified by Adventure Wales
               </span>
             </div>
           </div>
@@ -588,9 +577,22 @@ export default async function OperatorProfilePage({ params }: Props) {
                 >
                   Send Enquiry
                 </button>
-                <p className="text-xs text-center text-gray-400">
-                  Or call {operator.phone || "directly"}
-                </p>
+                {operator.email && (
+                  <p className="text-xs text-center text-gray-500 mt-3">
+                    Or email us directly:{" "}
+                    <a 
+                      href={`mailto:${operator.email}?subject=${encodeURIComponent("Enquiry from Adventure Wales")}`}
+                      className="text-[#1e3a4c] hover:text-[#f97316] underline font-medium"
+                    >
+                      {operator.email}
+                    </a>
+                  </p>
+                )}
+                {!operator.email && (
+                  <p className="text-xs text-center text-gray-400">
+                    Or call {operator.phone || "directly"}
+                  </p>
+                )}
               </form>
             </div>
 

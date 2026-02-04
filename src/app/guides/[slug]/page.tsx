@@ -45,27 +45,45 @@ function getGuideContent(slug: string): { title: string; content: string } | nul
   return null;
 }
 
-// Simple markdown to HTML converter
+// Markdown to HTML converter
 function markdownToHtml(md: string): string {
-  return md
-    // Headers
+  let html = md
+    // Images (before links to avoid conflict)
+    .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" class="rounded-xl my-6 w-full" />')
+    // Headers (order matters: h4 before h3 before h2)
+    .replace(/^#### (.+)$/gm, '<h4 class="text-lg font-semibold text-[#1e3a4c] mt-6 mb-3">$1</h4>')
     .replace(/^### (.+)$/gm, '<h3 class="text-xl font-semibold text-[#1e3a4c] mt-8 mb-4">$1</h3>')
     .replace(/^## (.+)$/gm, '<h2 class="text-2xl font-bold text-[#1e3a4c] mt-10 mb-4">$1</h2>')
+    // Horizontal rules
+    .replace(/^---$/gm, '<hr class="my-8 border-gray-200" />')
+    // Bold + Italic combos
+    .replace(/\*\*\*(.+?)\*\*\*/g, '<strong class="font-semibold"><em>$1</em></strong>')
     // Bold
     .replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold">$1</strong>')
     // Italic
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    // Lists
-    .replace(/^- (.+)$/gm, '<li class="ml-4">$1</li>')
-    .replace(/(<li.*<\/li>\n?)+/g, '<ul class="list-disc list-inside space-y-2 my-4">$&</ul>')
-    // Numbered lists
-    .replace(/^\d+\. (.+)$/gm, '<li class="ml-4">$1</li>')
+    // Inline code
+    .replace(/`([^`]+)`/g, '<code class="bg-gray-100 text-[#1e3a4c] px-1.5 py-0.5 rounded text-sm">$1</code>')
+    // Blockquotes
+    .replace(/^>\s?(.+)$/gm, '<blockquote class="border-l-4 border-[#f97316] pl-4 my-4 text-gray-600 italic">$1</blockquote>')
     // Links
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-[#f97316] hover:underline">$1</a>')
-    // Paragraphs
-    .replace(/^(?!<[hul]|<li)(.+)$/gm, '<p class="text-gray-700 leading-relaxed mb-4">$1</p>')
-    // Clean up empty paragraphs
-    .replace(/<p[^>]*>\s*<\/p>/g, "");
+    // Unordered lists
+    .replace(/^[-*] (.+)$/gm, '<li class="ml-4">$1</li>')
+    // Numbered lists
+    .replace(/^\d+\. (.+)$/gm, '<li class="ml-4 list-decimal">$1</li>')
+    // Paragraphs (anything that's not already a tag)
+    .replace(/^(?!<[hublido]|<li|<img|<hr|<code|<str|<em|<a )(.+)$/gm, '<p class="text-gray-700 leading-relaxed mb-4">$1</p>');
+
+  // Wrap consecutive <li> in <ul>
+  html = html.replace(/((?:<li[^>]*>.*<\/li>\s*)+)/g, '<ul class="list-disc list-inside space-y-2 my-4">$1</ul>');
+  // Clean up empty paragraphs
+  html = html.replace(/<p[^>]*>\s*<\/p>/g, "");
+  // Clean double-wrapped blockquotes
+  html = html.replace(/<p[^>]*>(<blockquote)/g, "$1");
+  html = html.replace(/<\/blockquote>)<\/p>/g, "$1");
+
+  return html;
 }
 
 export default async function GuidePage({ params }: Props) {

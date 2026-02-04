@@ -130,16 +130,16 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
             Adventure Directory
           </h1>
           <p className="text-white/80">
-            {operators.length}+ Welsh adventure businesses. Operators, gear hire, food, transport — all in one place.
+            {operators.length}+ Welsh adventure businesses. Adventure providers, gear hire, food, transport — all in one place.
           </p>
 
           <div className="mt-6">
             <input
               type="search"
-              placeholder="Search operators..."
+              placeholder="Search adventure providers..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full max-w-md px-4 py-3 rounded-lg text-gray-900"
+              className="w-full max-w-md px-4 py-3 rounded-lg bg-white text-gray-900 placeholder-gray-400 border-2 border-white/20 focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316] outline-none shadow-lg"
             />
           </div>
         </div>
@@ -237,10 +237,10 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
         <section>
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-xl font-bold text-[#1e3a4c]">
-              All Operators
+              All Adventure Providers
             </h2>
             <p className="text-gray-500 text-sm">
-              Showing {filteredOperators.length} of {operators.length} operators
+              Showing {filteredOperators.length} of {operators.length} providers
             </p>
           </div>
 
@@ -252,7 +252,7 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
             </div>
           ) : (
             <div className="text-center py-16 bg-gray-50 rounded-xl">
-              <p className="text-gray-500 mb-2">No operators found matching your filters</p>
+              <p className="text-gray-500 mb-2">No adventure providers found matching your filters</p>
               <button
                 onClick={() => {
                   setSearchQuery('');

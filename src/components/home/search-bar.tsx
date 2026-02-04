@@ -67,10 +67,19 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
   };
 
   const handleSearch = () => {
-    const params = new URLSearchParams();
-    if (where) params.set("region", where);
-    if (what) params.set("activity", what);
-    window.location.href = `/search?${params.toString()}`;
+    if (where && what) {
+      // Both selected → /snowdonia/things-to-do/hiking
+      window.location.href = `/${where}/things-to-do/${what}`;
+    } else if (where) {
+      // Region only → /snowdonia/things-to-do
+      window.location.href = `/${where}/things-to-do`;
+    } else if (what) {
+      // Activity only → /search?activity=hiking (no region-specific page for this)
+      window.location.href = `/search?activity=${what}`;
+    } else {
+      // Nothing selected → browse all regions
+      window.location.href = `/regions`;
+    }
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {

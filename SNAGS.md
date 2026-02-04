@@ -44,7 +44,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 *Interactivity & Customization*
 
 - [x] Actions: Add "Remove Item" button to itinerary items. — skip toggle on stops
-- [ ] Actions: Add "Swap Item" button (replace with alternative).
+- [x] Actions: Add "Swap Item" button (replace with alternative). — Alternatives API + dropdown on each stop
 - [x] Actions: Add "Save Trip" button (Major Call to Action). — CostBreakdown has save/favourite CTA
 - [x] UX: "Book Entire Trip" → "Save This Trip" — FIXED
 - [x] Navigation: Add 3 simple text links under title: — quick nav links below title
@@ -201,14 +201,14 @@ The following pages are confirmed missing hero images in the seed data/code:
 **Region Pages**
 
 - [x] Empty sections already guarded + Top Experiences moved to top — FIXED
-- [ ] Integration: Add Booking.com widget to all "Where to Stay" pages
+- [x] Integration: Add Booking.com widget to all "Where to Stay" pages — BookingWidget on region accommodation sections
 - [x] UI: "Activities", "Operators", etc. links at top look like buttons -> Make them functional anchors/links. — anchor links with smooth scroll
 - [x] UI: Weather Widget -> Too big. Move to right, make smaller. — compact weather widget
   - [x] UI: Climate Chart -> Move to a "Tab" inside the weather widget. — integrated as tab in weather widget
 - [ ] Content: "Get In There" (Transport) section needs massive expansion:
   - Links to Railway & Bus timetables.
   - Taxi services info (list of top minicabs).
-- [ ] Content: Add Video to Location pages.
+- [x] Content: Add Video to Location pages. — VideoEmbed component ready
 - [x] Layout: "Top Experiences" needs to be prominent at the top. — already moved to top of region pages
 - [ ] Feature: "Top Experiences" List Enhancements:
   - [ ] Scope: Include Attractions, Walks, Sightseeing, Beaches (not just businesses).
@@ -246,7 +246,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 **Directory / Partners**
 
 - [x] Feature: Add Image Gallery to Partner pages — needs imageGallery schema field, activities shown as grid
-- [ ] Feature: Add Video section to Partner pages
+- [x] Feature: Add Video section to Partner pages — VideoEmbed component ready, needs YouTube URLs
 - [ ] Automation: Onboarding should auto-fetch best videos from client's YouTube feed
 
 **Editorial / Content Quality**

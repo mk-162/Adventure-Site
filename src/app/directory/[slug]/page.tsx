@@ -473,21 +473,27 @@ export default async function OperatorProfilePage({ params }: Props) {
 
           {/* Sidebar Column (desktop only) */}
           <aside className="hidden lg:block lg:col-span-4 space-y-6">
-            {/* Booking CTA Card */}
-            {operator.bookingPlatform !== "none" && (
-              <div className="bg-gradient-to-br from-[#f97316]/5 to-amber-50 rounded-xl border border-[#f97316]/20 p-6 shadow-lg shadow-[#f97316]/10">
-                <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">
-                  {operator.bookingPlatform === "direct" ? "Book Direct" : "Book Online"}
-                </h3>
-                <p className="text-sm text-gray-600 mb-4">
-                  {operator.bookingPlatform === "beyonk" 
-                    ? "Instant availability — book securely via Beyonk"
-                    : operator.bookingPlatform === "rezdy"
-                    ? "Check availability and book online via Rezdy"
-                    : operator.bookingPlatform === "fareharbor"
-                    ? "Check availability and book online via FareHarbor"
-                    : "Book directly with the operator"}
-                </p>
+            {/* Action CTA Card — Always visible */}
+            <div className="bg-gradient-to-br from-[#f97316]/5 to-amber-50 rounded-xl border border-[#f97316]/20 p-6 shadow-lg shadow-[#f97316]/10">
+              <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">
+                {operator.bookingPlatform && operator.bookingPlatform !== "none"
+                  ? (operator.bookingPlatform === "direct" ? "Book Direct" : "Book Online")
+                  : "Get In Touch"}
+              </h3>
+              <p className="text-sm text-gray-600 mb-4">
+                {operator.bookingPlatform === "beyonk" 
+                  ? "Instant availability — book securely via Beyonk"
+                  : operator.bookingPlatform === "rezdy"
+                  ? "Check availability and book online via Rezdy"
+                  : operator.bookingPlatform === "fareharbor"
+                  ? "Check availability and book online via FareHarbor"
+                  : operator.bookingPlatform === "direct"
+                  ? "Book directly with the operator"
+                  : "Contact them to check availability and book"}
+              </p>
+
+              <div className="flex flex-col gap-3">
+                {/* Primary — Book or Visit Website */}
                 <a
                   href={operator.bookingWidgetUrl || operator.website || "#"}
                   target="_blank"
@@ -495,17 +501,44 @@ export default async function OperatorProfilePage({ params }: Props) {
                   className="w-full flex items-center justify-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white font-bold py-3 px-4 rounded-xl transition-colors shadow-md shadow-[#f97316]/30"
                 >
                   {operator.bookingPlatform === "beyonk" ? "Book via Beyonk" 
+                    : operator.bookingPlatform === "rezdy" ? "Book via Rezdy"
+                    : operator.bookingPlatform === "fareharbor" ? "Book via FareHarbor"
                     : operator.bookingPlatform === "direct" ? "Book Direct"
-                    : "Book Now"}
+                    : "Visit Website"}
                   <ExternalLink className="w-4 h-4" />
                 </a>
-                {operator.bookingPlatform !== "direct" && (
-                  <p className="text-xs text-center text-gray-400 mt-2 flex items-center justify-center gap-1">
-                    Powered by {operator.bookingPlatform.charAt(0).toUpperCase() + operator.bookingPlatform.slice(1)}
-                  </p>
+
+                {/* Call button */}
+                {operator.phone && (
+                  <a
+                    href={`tel:${operator.phone}`}
+                    className="w-full flex items-center justify-center gap-2 bg-[#1e3a4c] hover:bg-[#1e3a4c]/90 text-white font-bold py-3 px-4 rounded-xl transition-colors"
+                  >
+                    <Phone className="w-4 h-4" />
+                    Call {operator.phone}
+                  </a>
+                )}
+
+                {/* Website link (if booking button isn't already the website) */}
+                {operator.bookingPlatform && operator.bookingPlatform !== "none" && operator.bookingPlatform !== "direct" && operator.website && (
+                  <a
+                    href={operator.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex items-center justify-center gap-2 text-[#1e3a4c] hover:text-[#f97316] font-medium py-2 text-sm transition-colors"
+                  >
+                    <Globe className="w-4 h-4" />
+                    Visit Website
+                  </a>
                 )}
               </div>
-            )}
+
+              {operator.bookingPlatform && operator.bookingPlatform !== "none" && operator.bookingPlatform !== "direct" && (
+                <p className="text-xs text-center text-gray-400 mt-3 flex items-center justify-center gap-1">
+                  Powered by {operator.bookingPlatform.charAt(0).toUpperCase() + operator.bookingPlatform.slice(1)}
+                </p>
+              )}
+            </div>
 
             {/* Quick Enquiry Card */}
             <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-lg shadow-gray-200/50 sticky top-[120px]">
@@ -600,42 +633,19 @@ export default async function OperatorProfilePage({ params }: Props) {
 
       {/* Sticky Bottom Bar (mobile only) */}
       <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 z-50">
-        <div className="flex items-center justify-between max-w-lg mx-auto">
-          <div className="flex flex-col">
-            <span className="text-xs font-medium text-gray-500">
-              {operator.bookingPlatform !== "none" ? "Book with" : "Enquire with"}
-            </span>
-            <span className="text-sm font-bold text-[#1e3a4c] truncate max-w-[150px]">{operator.name}</span>
-          </div>
+        <div className="max-w-lg mx-auto">
           <div className="flex items-center gap-2">
-            {operator.bookingPlatform === "beyonk" ? (
+            {/* Primary CTA — Book or Enquire */}
+            {operator.bookingPlatform && operator.bookingPlatform !== "none" ? (
               <a 
                 href={operator.bookingWidgetUrl || operator.website || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#f97316] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-lg shadow-[#f97316]/30 hover:bg-[#f97316]/90 transition-all active:scale-95 flex items-center gap-2"
+                className="flex-1 bg-[#f97316] text-white py-3 rounded-xl font-bold text-sm shadow-lg shadow-[#f97316]/30 hover:bg-[#f97316]/90 transition-all active:scale-95 flex items-center justify-center gap-2"
               >
-                Book via Beyonk
-                <ExternalLink className="w-4 h-4" />
-              </a>
-            ) : operator.bookingPlatform === "rezdy" || operator.bookingPlatform === "fareharbor" ? (
-              <a 
-                href={operator.bookingWidgetUrl || operator.website || "#"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#f97316] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-lg shadow-[#f97316]/30 hover:bg-[#f97316]/90 transition-all active:scale-95 flex items-center gap-2"
-              >
-                Book Now
-                <ExternalLink className="w-4 h-4" />
-              </a>
-            ) : operator.bookingPlatform === "direct" ? (
-              <a 
-                href={operator.website || "#"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#f97316] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-lg shadow-[#f97316]/30 hover:bg-[#f97316]/90 transition-all active:scale-95 flex items-center gap-2"
-              >
-                Book Direct
+                {operator.bookingPlatform === "beyonk" ? "Book via Beyonk" 
+                  : operator.bookingPlatform === "direct" ? "Book Direct"
+                  : "Book Now"}
                 <ExternalLink className="w-4 h-4" />
               </a>
             ) : (
@@ -643,26 +653,38 @@ export default async function OperatorProfilePage({ params }: Props) {
                 href={operator.website || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#f97316] text-white px-5 py-3 rounded-xl font-bold text-sm shadow-lg shadow-[#f97316]/30 hover:bg-[#f97316]/90 transition-all active:scale-95 flex items-center gap-2"
+                className="flex-1 bg-[#f97316] text-white py-3 rounded-xl font-bold text-sm shadow-lg shadow-[#f97316]/30 hover:bg-[#f97316]/90 transition-all active:scale-95 flex items-center justify-center gap-2"
               >
                 Enquire
                 <ExternalLink className="w-4 h-4" />
               </a>
             )}
+
+            {/* Call button */}
+            {operator.phone && (
+              <a
+                href={`tel:${operator.phone}`}
+                className="bg-[#1e3a4c] text-white p-3 rounded-xl hover:bg-[#1e3a4c]/90 transition-all active:scale-95"
+                aria-label={`Call ${operator.name}`}
+              >
+                <Phone className="w-5 h-5" />
+              </a>
+            )}
+
+            {/* Website button */}
+            {operator.website && (
+              <a
+                href={operator.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-100 text-[#1e3a4c] p-3 rounded-xl hover:bg-gray-200 transition-all active:scale-95"
+                aria-label={`Visit ${operator.name} website`}
+              >
+                <Globe className="w-5 h-5" />
+              </a>
+            )}
           </div>
         </div>
-        {operator.bookingPlatform !== "none" && operator.bookingPlatform !== "direct" && operator.website && (
-          <div className="text-center mt-2">
-            <a 
-              href={operator.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-gray-500 hover:text-[#1e3a4c] underline"
-            >
-              Visit Website
-            </a>
-          </div>
-        )}
       </div>
     </div>
   );

@@ -771,6 +771,22 @@ export const itineraryTagsRelations = relations(itineraryTags, ({ one }) => ({
   tag: one(tags, { fields: [itineraryTags.tagId], references: [tags.id] }),
 }));
 
+// =====================
+// OPERATOR INTEREST TABLE
+// =====================
+
+export const operatorInterest = pgTable("operator_interest", {
+  id: serial("id").primaryKey(),
+  businessName: varchar("business_name", { length: 255 }).notNull(),
+  contactName: varchar("contact_name", { length: 255 }).notNull(),
+  email: varchar("email", { length: 255 }).notNull(),
+  phone: varchar("phone", { length: 50 }),
+  numLocations: integer("num_locations").default(1),
+  planInterest: varchar("plan_interest", { length: 50 }), // 'free', 'verified', 'premium'
+  message: text("message"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
 // Post category enum
 export const postCategoryEnum = pgEnum("post_category", [
   "guide",

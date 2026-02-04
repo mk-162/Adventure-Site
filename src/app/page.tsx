@@ -38,7 +38,9 @@ async function getHomePageData() {
     db.select().from(regions).where(eq(regions.status, "published")).limit(6),
     db.select().from(activities).where(eq(activities.status, "published")).limit(10),
     db.select().from(events).where(eq(events.status, "published")).orderBy(asc(events.dateStart)).limit(10),
-    db.select().from(operators).where(eq(operators.claimStatus, "claimed")).limit(4),
+    db.select().from(operators).where(
+      sql`${operators.claimStatus} IN ('premium', 'claimed')`
+    ).orderBy(sql`CASE WHEN ${operators.claimStatus} = 'premium' THEN 0 ELSE 1 END`).limit(8),
     db.select().from(activityTypes).orderBy(asc(activityTypes.name)),
     getFeaturedItineraries(3),
     getRegionActivityMap(),
@@ -93,6 +95,51 @@ export default async function HomePage() {
           </section>
         ) : (
           <UpcomingEvents events={data.events} />
+        )}
+
+        {/* Trusted Partners */}
+        {data.operators.length > 0 && (
+          <section className="py-12 sm:py-16 bg-gray-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
+              <div className="text-center mb-8">
+                <span className="text-[#f97316] font-bold uppercase tracking-wider text-sm">Trusted Partners</span>
+                <h2 className="mt-2 text-2xl sm:text-3xl font-bold text-[#1e3a4c]">Adventure Providers We Recommend</h2>
+                <p className="mt-2 text-gray-500 max-w-xl mx-auto text-sm">Vetted, insured, and reviewed by real adventurers across Wales.</p>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                {data.operators.map(op => (
+                  <a
+                    key={op.id}
+                    href={`/directory/${op.slug}`}
+                    className="bg-white rounded-xl border border-gray-200 p-4 hover:shadow-md transition-all hover:-translate-y-0.5 text-center group"
+                  >
+                    {op.logoUrl ? (
+                      <img src={op.logoUrl} alt={op.name} className="w-12 h-12 mx-auto rounded-lg object-cover mb-3" />
+                    ) : (
+                      <div className="w-12 h-12 mx-auto rounded-lg bg-[#1e3a4c]/10 flex items-center justify-center text-[#1e3a4c] font-bold text-lg mb-3">
+                        {op.name.charAt(0)}
+                      </div>
+                    )}
+                    <h3 className="font-semibold text-sm text-[#1e3a4c] group-hover:text-[#f97316] transition-colors line-clamp-1">{op.name}</h3>
+                    {op.googleRating && (
+                      <div className="flex items-center justify-center gap-1 mt-1">
+                        <span className="text-yellow-500 text-xs">★</span>
+                        <span className="text-xs text-gray-500">{op.googleRating}</span>
+                      </div>
+                    )}
+                    {op.claimStatus === "premium" && (
+                      <span className="inline-block mt-2 text-[10px] font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-2 py-0.5 rounded-full">Premium</span>
+                    )}
+                  </a>
+                ))}
+              </div>
+              <div className="text-center mt-6">
+                <a href="/directory" className="text-[#f97316] font-bold hover:underline text-sm">
+                  View all providers →
+                </a>
+              </div>
+            </div>
+          </section>
         )}
 
         <Newsletter />

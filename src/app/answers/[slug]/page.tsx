@@ -197,7 +197,70 @@ export default async function AnswerPage({ params }: Props) {
   const data = getAnswer(slug);
 
   if (!data) {
-    notFound();
+    // Show friendly "not found" instead of 404
+    const answersDir = path.join(process.cwd(), "content", "answers");
+    const recentAnswers: AnswerFrontmatter[] = [];
+    if (fs.existsSync(answersDir)) {
+      const files = fs.readdirSync(answersDir).filter(f => f.endsWith(".md")).slice(0, 6);
+      for (const file of files) {
+        const raw = fs.readFileSync(path.join(answersDir, file), "utf-8");
+        const parsed = parseFrontmatter(raw);
+        if (parsed) recentAnswers.push(parsed.frontmatter);
+      }
+    }
+
+    return (
+      <div className="min-h-screen pt-4 lg:pt-8 pb-12">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav className="flex items-center gap-2 text-xs lg:text-sm text-gray-500 mb-6">
+            <Link href="/" className="hover:text-[#1e3a4c]">Home</Link>
+            <ChevronRight className="w-3 h-3" />
+            <Link href="/answers" className="hover:text-[#1e3a4c]">Answers</Link>
+            <ChevronRight className="w-3 h-3" />
+            <span className="text-[#1e3a4c] font-medium">Not found</span>
+          </nav>
+          <div className="text-center py-12">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f97316]/10 mb-6">
+              <HelpCircle className="w-8 h-8 text-[#f97316]" />
+            </div>
+            <h1 className="text-2xl lg:text-3xl font-black text-[#1e3a4c] mb-3">
+              Answer not found
+            </h1>
+            <p className="text-gray-600 text-base lg:text-lg max-w-xl mx-auto mb-8">
+              We don&apos;t have an answer for this question yet. Browse our other answers or ask us directly.
+            </p>
+            {recentAnswers.length > 0 && (
+              <div className="mb-8 text-left">
+                <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4 text-center">
+                  Popular questions
+                </h3>
+                <div className="space-y-3">
+                  {recentAnswers.map((answer) => (
+                    <Link
+                      key={answer.slug}
+                      href={`/answers/${answer.slug}`}
+                      className="group flex items-center justify-between p-4 bg-white rounded-lg border border-gray-200 hover:border-[#1e3a4c]/30 hover:shadow-sm transition-all"
+                    >
+                      <span className="text-gray-800 group-hover:text-[#1e3a4c] font-medium transition-colors">
+                        {answer.question}
+                      </span>
+                      <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#f97316] transition-colors shrink-0" />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+            <Link
+              href="/answers"
+              className="inline-flex items-center gap-2 bg-[#1e3a4c] text-white font-bold py-3 px-6 rounded-full hover:bg-[#2d5568] transition-colors"
+            >
+              Browse All Answers
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   const { frontmatter, quickAnswer, content, relatedQuestions } = data;

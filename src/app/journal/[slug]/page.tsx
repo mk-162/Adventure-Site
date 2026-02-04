@@ -46,7 +46,64 @@ export default async function ArticlePage({ params }: Props) {
   const post = await getPostBySlug(slug);
 
   if (!post) {
-    notFound();
+    // Instead of 404, show a helpful "article not found" page
+    const recentPosts = await getRelatedPosts(0, "guide", 6);
+    return (
+      <div className="min-h-screen bg-white">
+        <div className="bg-slate-50 border-b border-slate-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div className="flex items-center gap-2 text-sm text-slate-600">
+              <Link href="/" className="hover:text-[#1e3a4c] flex items-center gap-1">
+                <Home className="h-4 w-4" />
+                Home
+              </Link>
+              <ChevronRight className="h-4 w-4" />
+              <Link href="/journal" className="hover:text-[#1e3a4c]">Journal</Link>
+              <ChevronRight className="h-4 w-4" />
+              <span className="text-slate-400">Article not found</span>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f97316]/10 mb-6">
+            <Clock className="w-8 h-8 text-[#f97316]" />
+          </div>
+          <h1 className="text-3xl font-bold text-[#1e3a4c] mb-3">Article not found</h1>
+          <p className="text-slate-600 text-lg mb-8">
+            We couldn&apos;t find this article. It may have been moved or is still being written.
+          </p>
+          {recentPosts.length > 0 && (
+            <div className="mb-8">
+              <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-4">
+                Recent articles you might enjoy
+              </h3>
+              <div className="grid md:grid-cols-3 gap-4">
+                {recentPosts.map((related) => (
+                  <Link
+                    key={related.post.id}
+                    href={`/journal/${related.post.slug}`}
+                    className="group text-left p-4 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition-all"
+                  >
+                    <h4 className="font-bold text-[#1e3a4c] group-hover:text-[#f97316] transition-colors line-clamp-2 text-sm">
+                      {related.post.title}
+                    </h4>
+                    {related.post.excerpt && (
+                      <p className="text-xs text-slate-500 mt-1 line-clamp-2">{related.post.excerpt}</p>
+                    )}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+          <Link
+            href="/journal"
+            className="inline-flex items-center gap-2 bg-[#1e3a4c] text-white font-bold py-3 px-6 rounded-full hover:bg-[#2d5568] transition-colors"
+          >
+            Browse All Articles
+          </Link>
+        </div>
+      </div>
+    );
   }
 
   // Fetch related content for sidebar

@@ -1,0 +1,601 @@
+[
+  {
+    "id": 40,
+    "name": "Adventure Britain",
+    "slug": "adventure-britain",
+    "category": "activity_provider",
+    "website": "https://www.adventurebritain.com",
+    "address": "Seven Sisters, Neath SA10 9DT",
+    "regions": [
+      "brecon-beacons",
+      "gower"
+    ],
+    "activityTypes": [
+      "canyoning",
+      "caving",
+      "climbing",
+      "gorge-walking",
+      "mtb"
+    ],
+    "tier": 1
+  },
+  {
+    "id": 41,
+    "name": "BikePark Wales",
+    "slug": "bikepark-wales",
+    "category": "activity_provider",
+    "website": "https://www.bikeparkwales.com",
+    "address": "Pentrebach, Merthyr Tydfil CF48 4TT",
+    "regions": [
+      "brecon-beacons"
+    ],
+    "activityTypes": [
+      "mountain-biking",
+      "coaching",
+      "bike-hire"
+    ],
+    "tier": 1
+  },
+  {
+    "id": 48,
+    "name": "MUUK Adventures",
+    "slug": "muuk-adventures",
+    "category": "activity_provider",
+    "website": "https://www.muuk-adventures.com",
+    "address": "St Davids, Pembrokeshire",
+    "regions": [
+      "pembrokeshire",
+      "snowdonia"
+    ],
+    "activityTypes": [
+      "coasteering",
+      "surfing",
+      "kayaking",
+      "mountain-challenges"
+    ],
+    "tier": 1
+  },
+  {
+    "id": 54,
+    "name": "Plas Menai",
+    "slug": "plas-menai",
+    "category": "activity_provider",
+    "website": "https://www.plasmenai.co.uk",
+    "address": "Caernarfon LL55 1UE",
+    "regions": [
+      "anglesey",
+      "north-wales"
+    ],
+    "activityTypes": [
+      "sailing",
+      "powerboating",
+      "sea-kayaking",
+      "windsurfing"
+    ],
+    "tier": 1
+  },
+  {
+    "id": 39,
+    "name": "Plas y Brenin",
+    "slug": "plas-y-brenin",
+    "category": "activity_provider",
+    "website": "https://pyb.co.uk",
+    "address": "Capel Curig, Conwy LL24 0ET",
+    "regions": [
+      "snowdonia"
+    ],
+    "activityTypes": [
+      "climbing",
+      "mountaineering",
+      "kayaking",
+      "hill-walking",
+      "mtb"
+    ],
+    "tier": 1
+  },
+  {
+    "id": 45,
+    "name": "Snowdonia Mountain Guides",
+    "slug": "snowdonia-mountain-guides",
+    "category": "activity_provider",
+    "website": "https://snowdoniamountainguides.com",
+    "address": "Llanberis area",
+    "regions": [
+      "snowdonia"
+    ],
+    "activityTypes": [
+      "rock-climbing",
+      "scrambling",
+      "hill-walking"
+    ],
+    "tier": 1
+  },
+  {
+    "id": 37,
+    "name": "TYF Adventure",
+    "slug": "tyf-adventure",
+    "category": "activity_provider",
+    "website": "https://www.tyf.com",
+    "address": "20 High Street, St Davids, Pembrokeshire SA62 6SD",
+    "regions": [
+      "pembrokeshire"
+    ],
+    "activityTypes": [
+      "coasteering",
+      "sea-kayaking",
+      "surfing",
+      "climbing",
+      "sup"
+    ],
+    "tier": 1
+  },
+  {
+    "id": 36,
+    "name": "Zip World",
+    "slug": "zip-world",
+    "category": "activity_provider",
+    "website": "https://www.zipworld.co.uk",
+    "address": "Penrhyn Quarry, Bethesda LL57 4YG",
+    "regions": [
+      "snowdonia",
+      "south-wales"
+    ],
+    "activityTypes": [
+      "zip-lining",
+      "quarry-karts",
+      "bounce-below",
+      "adventure"
+    ],
+    "tier": 1
+  },
+  {
+    "id": 65,
+    "name": "AberAdventures",
+    "slug": "aberadventures",
+    "category": "activity_provider",
+    "website": "https://www.aberadventures.co.uk",
+    "address": "Borth, Ceredigion",
+    "regions": [
+      "mid-wales"
+    ],
+    "activityTypes": [
+      "surfing",
+      "sup",
+      "kayaking"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 68,
+    "name": "Abersoch Sailing School",
+    "slug": "abersoch-sailing-school",
+    "category": "activity_provider",
+    "website": "https://www.abersochsailingschool.co.uk",
+    "address": "Abersoch, Llŷn",
+    "regions": [
+      "ll-n-peninsula"
+    ],
+    "activityTypes": [
+      "sailing-courses",
+      "powerboating"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 69,
+    "name": "Abersoch Watersports",
+    "slug": "abersoch-watersports",
+    "category": "activity_provider",
+    "website": "https://www.abersochwatersports.co.uk",
+    "address": "Abersoch, Llŷn",
+    "regions": [
+      "ll-n-peninsula"
+    ],
+    "activityTypes": [
+      "jet-ski",
+      "powerboat-tours",
+      "watersports"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 46,
+    "name": "Activity Pembrokeshire",
+    "slug": "activity-pembrokeshire",
+    "category": "activity_provider",
+    "website": "https://www.activitypembrokeshire.wales",
+    "address": "Stackpole, Pembrokeshire",
+    "regions": [
+      "pembrokeshire"
+    ],
+    "activityTypes": [
+      "coasteering",
+      "sea-kayaking"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 53,
+    "name": "Adventures Wales",
+    "slug": "adventures-wales",
+    "category": "activity_provider",
+    "website": "https://www.adventureswales.co.uk",
+    "address": "Porthcawl, Bridgend CF36 3UU",
+    "regions": [
+      "south-wales",
+      "brecon-beacons"
+    ],
+    "activityTypes": [
+      "multi-activities",
+      "stag-hen",
+      "corporate"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 55,
+    "name": "Anglesey Adventures",
+    "slug": "anglesey-adventures",
+    "category": "activity_provider",
+    "website": "https://www.angleseyadventures.com",
+    "address": "Rhosneigr, Anglesey",
+    "regions": [
+      "anglesey"
+    ],
+    "activityTypes": [
+      "sea-kayaking",
+      "coasteering"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 43,
+    "name": "Antur Stiniog",
+    "slug": "antur-stiniog",
+    "category": "activity_provider",
+    "website": "https://www.anturstiniog.com",
+    "address": "Blaenau Ffestiniog LL41 3NB",
+    "regions": [
+      "snowdonia"
+    ],
+    "activityTypes": [
+      "downhill-mountain-biking",
+      "bike-hire"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 51,
+    "name": "Black Mountain Adventure",
+    "slug": "black-mountain-adventure",
+    "category": "activity_provider",
+    "website": "https://www.visitmidwales.co.uk",
+    "address": "Three Cocks, Brecon LD3 0SD",
+    "regions": [
+      "brecon-beacons"
+    ],
+    "activityTypes": [
+      "multi-activities-mtb",
+      "caving",
+      "sup",
+      "gorge-walking"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 42,
+    "name": "Coed y Brenin (NRW)",
+    "slug": "coed-y-brenin-nrw",
+    "category": "activity_provider",
+    "website": "https://naturalresources.wales",
+    "address": "Dolgellau LL40 2HZ",
+    "regions": [
+      "snowdonia"
+    ],
+    "activityTypes": [
+      "mountain-biking",
+      "walking",
+      "trail-running"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 56,
+    "name": "Funsport Rhosneigr",
+    "slug": "funsport-rhosneigr",
+    "category": "activity_provider",
+    "website": "https://www.funsportonline.co.uk",
+    "address": "Rhosneigr, Anglesey",
+    "regions": [
+      "anglesey"
+    ],
+    "activityTypes": [
+      "kitesurfing",
+      "windsurfing",
+      "lessons",
+      "hire"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 57,
+    "name": "Gecko Surf",
+    "slug": "gecko-surf",
+    "category": "activity_provider",
+    "website": "https://www.geckosurf.co.uk",
+    "address": "Rhosneigr, Anglesey",
+    "regions": [
+      "anglesey"
+    ],
+    "activityTypes": [
+      "surfing",
+      "kitesurfing",
+      "lessons",
+      "hire"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 60,
+    "name": "Gower Activity Centres",
+    "slug": "gower-activity-centres",
+    "category": "activity_provider",
+    "website": "https://www.goweractivitycentres.co.uk",
+    "address": "Gower, Swansea",
+    "regions": [
+      "gower"
+    ],
+    "activityTypes": [
+      "coasteering",
+      "multi-activities"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 70,
+    "name": "Hell's Mouth Surf School",
+    "slug": "hell-s-mouth-surf-school",
+    "category": "activity_provider",
+    "website": "https://www.hellsmouthsurfschool.co.uk",
+    "address": "Porth Neigwl, Llŷn",
+    "regions": [
+      "ll-n-peninsula"
+    ],
+    "activityTypes": [
+      "surfing-lessons"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 62,
+    "name": "Llangennith Surf School",
+    "slug": "llangennith-surf-school",
+    "category": "activity_provider",
+    "website": "https://www.llangennithsurf.co.uk",
+    "address": "Llangennith, Gower",
+    "regions": [
+      "gower"
+    ],
+    "activityTypes": [
+      "surfing-lessons"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 52,
+    "name": "Llangorse Multi Activity Centre",
+    "slug": "llangorse-multi-activity-centre",
+    "category": "activity_provider",
+    "website": "https://www.llangorse.com",
+    "address": "Llangorse, Brecon LD3 7UH",
+    "regions": [
+      "brecon-beacons"
+    ],
+    "activityTypes": [
+      "indoor-climbing",
+      "horse-riding",
+      "zip-lines"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 67,
+    "name": "Llŷn Adventures",
+    "slug": "ll-n-adventures",
+    "category": "activity_provider",
+    "website": "https://www.llynadventures.co.uk",
+    "address": "Abersoch, Llŷn",
+    "regions": [
+      "ll-n-peninsula"
+    ],
+    "activityTypes": [
+      "sea-kayaking",
+      "coasteering",
+      "sup"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 66,
+    "name": "Meadow Springs",
+    "slug": "meadow-springs",
+    "category": "activity_provider",
+    "website": "https://www.visitmidwales.co.uk",
+    "address": "Trefeglwys, Caersws",
+    "regions": [
+      "mid-wales"
+    ],
+    "activityTypes": [
+      "sup",
+      "watersports"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 44,
+    "name": "MountainXperience",
+    "slug": "mountainxperience",
+    "category": "activity_provider",
+    "website": "https://www.mountainxperience.uk",
+    "address": "Llanberis, Gwynedd",
+    "regions": [
+      "snowdonia"
+    ],
+    "activityTypes": [
+      "guided-snowdon-walks",
+      "scrambling"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 64,
+    "name": "One Planet Adventure (Llandegla)",
+    "slug": "one-planet-adventure-llandegla",
+    "category": "activity_provider",
+    "website": "https://www.oneplanetadventure.co.uk",
+    "address": "Llandegla, Wrexham",
+    "regions": [
+      "mid-wales-north-wales"
+    ],
+    "activityTypes": [
+      "mountain-biking",
+      "bike-hire",
+      "cafe"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 49,
+    "name": "Outer Reef Surf School",
+    "slug": "outer-reef-surf-school",
+    "category": "activity_provider",
+    "website": "https://www.outerreefsurfschool.com",
+    "address": "Broadhaven, Pembrokeshire",
+    "regions": [
+      "pembrokeshire"
+    ],
+    "activityTypes": [
+      "surfing",
+      "coasteering",
+      "paddle-boarding"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 63,
+    "name": "Oxwich Watersports",
+    "slug": "oxwich-watersports",
+    "category": "activity_provider",
+    "website": "https://www.oxwichwatersports.co.uk",
+    "address": "Oxwich Bay, Gower",
+    "regions": [
+      "gower"
+    ],
+    "activityTypes": [
+      "sup",
+      "kayaking",
+      "coasteering"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 38,
+    "name": "Preseli Venture",
+    "slug": "preseli-venture",
+    "category": "activity_provider",
+    "website": "https://www.preseliventure.co.uk",
+    "address": "Parcynole Fach, Mathry, Haverfordwest SA62 5HN",
+    "regions": [
+      "pembrokeshire"
+    ],
+    "activityTypes": [
+      "coasteering",
+      "surfing",
+      "kayaking",
+      "boat-trips",
+      "wild-swimming"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 58,
+    "name": "Pro Kitesurfing",
+    "slug": "pro-kitesurfing",
+    "category": "activity_provider",
+    "website": "https://www.prokitesurfing.co.uk",
+    "address": "Newborough Beach, Anglesey",
+    "regions": [
+      "anglesey"
+    ],
+    "activityTypes": [
+      "kitesurfing-lessons"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 61,
+    "name": "Quest Adventure",
+    "slug": "quest-adventure",
+    "category": "activity_provider",
+    "website": "https://www.questadventure.co.uk",
+    "address": "Cardiff/Swansea",
+    "regions": [
+      "south-wales",
+      "gower"
+    ],
+    "activityTypes": [
+      "coasteering",
+      "multi-activities"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 59,
+    "name": "Rip N Rock",
+    "slug": "rip-n-rock",
+    "category": "activity_provider",
+    "website": "https://www.ripnrock.co.uk",
+    "address": "Swansea/Gower",
+    "regions": [
+      "gower",
+      "swansea"
+    ],
+    "activityTypes": [
+      "coasteering",
+      "surfing",
+      "climbing"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 50,
+    "name": "Sealyham Activity Centre",
+    "slug": "sealyham-activity-centre",
+    "category": "activity_provider",
+    "website": "https://www.sealyham.com",
+    "address": "Sealyham, Haverfordwest",
+    "regions": [
+      "pembrokeshire"
+    ],
+    "activityTypes": [
+      "multi-activity-residential"
+    ],
+    "tier": 2
+  },
+  {
+    "id": 47,
+    "name": "Tenby Adventure",
+    "slug": "tenby-adventure",
+    "category": "activity_provider",
+    "website": "https://www.visitpembrokeshire.com",
+    "address": "Tenby, Pembrokeshire",
+    "regions": [
+      "pembrokeshire"
+    ],
+    "activityTypes": [
+      "coasteering",
+      "sea-kayaking"
+    ],
+    "tier": 2
+  }
+]

@@ -28,26 +28,48 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 **Itinerary Listings**
 
+- [ ] Visuals: Missing images! Need thumbnails for itinerary cards AND hero images.
 - [ ] Content: Add header text explaining these are "multi-day road trips and itineraries"
 - [ ] Content: "We've reviewed the best, and bring you fantastic plans that are editable and shareable."
 - [ ] UI: Add small map on right side linking to each valid itinerary
 
-**Itinerary Details**
+**Itinerary Details / Planner UX**
 
-- [ ] Share: Add "Send to a friend" button (WhatsApp, Email, etc) with pre-populated link
-- [ ] Sidebar: Show relevant activities widget (right-hand side)
+*Core Layout & Content*
+
+- [ ] Layout: Top section is "messy" -> Reorganize into "Fact Sheet" style cards.
 - [ ] Title: Under Tour Itinerary, add text "The perfect <x> days <location> road trip"
-- [ ] UI: Remove "Standard weather" and "budget friendly" toggles
-- [ ] UI: Add 3 simple text links under title:
+- [ ] UI: Remove "Standard weather" and "budget friendly" toggles (clean up).
+
+*Interactivity & Customization*
+
+- [ ] Actions: Add "Remove Item" button to itinerary items.
+- [ ] Actions: Add "Swap Item" button (replace with alternative).
+- [ ] Actions: Add "Save Trip" button (Major Call to Action).
+- [ ] UX: DO NOT use "Book Entire Trip". (We provide the plan, they book the parts).
+- [ ] Navigation: Add 3 simple text links under title:
   - "Show alternative"
   - "Show wet weather alternative"
   - "Show budget alternative"
-- [ ] Data: Database update needed to support these alternative itinerary variations
 
-**Basecamp Feature**
+*Basecamp Feature*
 
-- [ ] Input: Allow users to input Postcode or Location
-- [ ] Auth: Add "Sign in to save settings" option
+- [ ] Input: Support Postcodes and Text-based locations (not just GPS/Map).
+- [ ] Functionality: Location must be **Editable** after setting.
+- [ ] Auth: Add "Sign in to save settings" option.
+
+*My Trip View (Locked-in / Saved State)*
+
+- [ ] View: Show checklist of "Things to Book".
+- [ ] Feature: Add "Contact" button next to each bookable item.
+- [ ] Feature: Add "Notes" field for users to organize their trip.
+- [ ] Feature: Download as PDF.
+- [ ] Feature: Share Trip (link).
+- [ ] Feature: Free Text Entry (Add custom items/plans not in DB).
+- [ ] Content: Add "Generic Cards" for filler activities:
+  - "Rest & Relaxation"
+  - "Local Walk"
+  - "Shopping in town"
 
 **Commercial / Ads**
 

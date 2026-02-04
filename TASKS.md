@@ -151,6 +151,31 @@
 
 ---
 
+## 🚀 GROWTH ENGINE (Operation Lighthouse)
+> 📄 See: [`plans/growth-engine-spec.md`](plans/growth-engine-spec.md) — full spec
+
+### Phase 1 (Build Now)
+- [ ] Auto-populate API route (AI research endpoint)
+- [ ] Dashboard "Auto-populate" button with preview
+- [ ] Admin bulk auto-populate page
+- [ ] Simple view counter on operator pages
+- [ ] Temporary premium trial fields in DB
+
+### Phase 2 (Campaigns)
+- [ ] Outbound campaign admin page
+- [ ] Email templates (HTML with page preview)
+- [ ] Campaign email sending via Resend
+- [ ] Trial expiry cron job
+- [ ] Campaign tracking (sent, opened, clicked, claimed)
+
+### Phase 3 (Demo & Polish)
+- [ ] Investor demo page (animated walkthrough at /demo)
+- [ ] "Preview your premium listing" on claim page
+- [ ] Weekly stats emails to operators
+- [ ] Campaign performance dashboard
+
+---
+
 ## 📝 Key Decisions Made
 - **Beyonk > FareHarbor** for Welsh operator booking integration
 - **"Verified by Adventure Wales"** not "Recommended" (advertising standards safe)

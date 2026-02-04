@@ -75,12 +75,22 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 - [ ] Logic: Unsold ad slots must show "Claim listing" or "Advertise here" widgets
 - [ ] Design: Sponsored/Paid listings need distinct "Premium" styling to differentiate from organic content
+- [ ] Enforcement: "Advertise Here" banner/widget missing from many locations -> Fix site-wide.
+- [ ] Nav: Replace "Book Now" (top right) with "Advertise".
+- [ ] UI: "Local Experts" (Destination pages) -> Rename "Local Businesses".
+  - [ ] Style: Top slot bolder + image (Premium slot).
 
 **Events / Calendar**
 
 - [ ] Feature: "Calendar" page missing? If so, build one.
 - [ ] Feature: "Races and events worth entering" widget should link to Calendar page
 - [ ] Content: Events need images (add skill/ability to create these when setting up events)
+- [ ] Data: Audit "Register Now" buttons (many 404, e.g., newportmarathon).
+- [ ] UI/Components: Event pages MUST show:
+  - [ ] Occupation/Accommodation Widget
+  - [ ] Local Attraction Widget
+  - [ ] Advertising Widget
+- [ ] UI: "Get the Pass" widget (Brecon/Destinations) -> Hide for now (doesn't exist), add to wishlist.
 
 **Email / Newsletter**
 
@@ -121,12 +131,29 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 - [ ] Feature: Add Map with drop pins to premium page
 - [ ] Feature: Display metadata (opening times, seasonality, etc.) against partners
+- [ ] SEO: Create landing pages for filtered views (e.g., "Snowdonia Caving"). Needs dedicated URL/Navigation.
+- [ ] UI: Search Box is impossible to see (missing hero?).
+- [ ] Naming: "Operators" -> Find a better name? (Maybe "Adventure Providers"?).
+- [ ] UI/UX: Phone number disappears behind "Quick Inquiry" widget on scroll.
+- [ ] UI: Services/Pricing grid looks like "Add to Basket" buttons -> Change to Menu layout.
+- [ ] Content: "Based on x reviews" -> Show Google logo/link.
+- [ ] UI: "Visit Website" link -> Move to prominent Contact Info block (vital for mobile).
+- [ ] Layout: Hero image aspect ratio is bad for vendor images -> Use conventional rectangle, free up space for utility.
+- [ ] UX: listing page needs "See related companies in area" links (hard to browse).
+- [ ] Action: "Check Availability" -> standard link to Website/Contact (unless integrated booking).
+- [ ] Content: Search results page (from Nav magnifying glass) has no search bar!
 
 **User Accounts**
 
 - [ ] Logic: Clicking Heart/Save should trigger Login/Signup modal
 - [ ] Feature: Customer Dashboard -> View favorited itineraries/partners
 - [ ] Feature: Email opt-in checkbox during signup
+- [ ] UI: Two-column Register section.
+  - [ ] Left: Benefits (Manage itineraries, Track bookings, Notes, Share).
+  - [ ] Feature idea: Generate social media post of plan.
+- [ ] Logic: Pre-populate Name/Email for logged-in users in messaging.
+- [ ] Logic: Vendor replies must forward to user email.
+- [ ] Content: Privacy Guide -> Explain email storage.
 
 **Deals System (Proposal)**
 
@@ -175,6 +202,9 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 - [ ] Logic: Hide "Top Activities", "Experiences", "Where to Stay" links/sections if empty (don't show empty containers)
 - [ ] Integration: Add Booking.com widget to all "Where to Stay" pages
+- [ ] UI: "Activities", "Operators", etc. links at top look like buttons -> Make them functional anchors/links.
+- [ ] UI: Weather Widget -> Too big. Move to right, make smaller.
+  - [ ] UI: Climate Chart -> Move to a "Tab" inside the weather widget.
 
 **Plan Your Visit / Utilities**
 
@@ -194,6 +224,10 @@ The following pages are confirmed missing hero images in the seed data/code:
 - [ ] Feature: Display Top Partners list (Sponsored/Premium partners first)
 - [ ] Feature: Promote itineraries relevant to the specific activity
 - [ ] Feature: Map showing all spots where you can do this activity
+- [ ] SEO: Page Titles/Content needs optimization (e.g., "Guide to Caving in Wales").
+- [ ] Content: Make guides "rich" (images, formatting).
+- [ ] Plan: Deal with missing images on Journal (Plan needed).
+- [ ] Design: Journal links to Itineraries/Operators look boring without images.
 - [ ] Feature: Add Image Galleries (Guides and Activity pages "desperately need" them)
 
 **Directory / Partners**

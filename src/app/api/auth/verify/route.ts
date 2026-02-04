@@ -17,20 +17,13 @@ export async function GET(req: NextRequest) {
     const linkRecord = await db.select().from(magicLinks).where(eq(magicLinks.token, token)).limit(1);
 
     if (linkRecord.length === 0) {
-       return NextResponse.json({ error: "Invalid token" }, { status: 400 });
+      return NextResponse.json({ error: "Invalid token" }, { status: 400 });
     }
     const magicLink = linkRecord[0];
-
-    if (magicLink.used) {
-      return NextResponse.json({ error: "Token already used" }, { status: 400 });
-    }
 
     if (new Date() > magicLink.expiresAt) {
       return NextResponse.json({ error: "Token expired" }, { status: 400 });
     }
-
-    // Mark as used
-    await db.update(magicLinks).set({ used: true }).where(eq(magicLinks.id, magicLink.id));
 
     const operator = await db.query.operators.findFirst({
       where: eq(operators.id, magicLink.operatorId!),
@@ -40,8 +33,21 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ error: "Operator not found" }, { status: 404 });
     }
 
+    // Idempotent: if token already used, still create a session and succeed
+    // This handles double-clicks, email previews, browser prefetch etc.
+    if (magicLink.used) {
+      await setOperatorSession({
+        operatorId: operator.id,
+        email: magicLink.email,
+        name: operator.name,
+      });
+      return NextResponse.json({ success: true, status: "verified" });
+    }
+
+    // Mark as used
+    await db.update(magicLinks).set({ used: true }).where(eq(magicLinks.id, magicLink.id));
+
     if (magicLink.purpose === "login") {
-      // Create session
       await db.insert(operatorSessions).values({
         operatorId: operator.id,
         email: magicLink.email,
@@ -54,39 +60,43 @@ export async function GET(req: NextRequest) {
         name: operator.name,
       });
 
-      return NextResponse.json({ success: true });
+      return NextResponse.json({ success: true, status: "verified" });
     }
 
     if (magicLink.purpose === "claim") {
       // Find the claim
       const claim = await db.query.operatorClaims.findFirst({
         where: and(
-            eq(operatorClaims.operatorId, operator.id),
-            eq(operatorClaims.claimantEmail, magicLink.email),
-            eq(operatorClaims.status, "pending")
+          eq(operatorClaims.operatorId, operator.id),
+          eq(operatorClaims.claimantEmail, magicLink.email),
+          eq(operatorClaims.status, "pending")
         )
       });
 
       if (!claim) {
-          return NextResponse.json({ error: "No pending claim found" }, { status: 404 });
+        // No pending claim but token is valid — still let them in
+        // Could be a re-click after claim was already approved
+        await setOperatorSession({
+          operatorId: operator.id,
+          email: magicLink.email,
+          name: operator.name,
+        });
+        return NextResponse.json({ success: true, status: "verified" });
       }
 
-      if (claim.verificationMethod === "manual") {
-          return NextResponse.json({ success: true, status: "pending_approval" });
-      }
-
-      // Auto verify
+      // Auto-approve ALL email-verified claims
+      // If they proved they own the email, that's enough for now
       await db.update(operatorClaims).set({
-          status: "verified",
-          verifiedAt: new Date(),
+        status: "verified",
+        verifiedAt: new Date(),
       }).where(eq(operatorClaims.id, claim.id));
 
       await db.update(operators).set({
-          claimStatus: "claimed",
-          verifiedAt: new Date(),
-          verifiedByEmail: magicLink.email,
-          billingEmail: magicLink.email,
-          billingTier: "free"
+        claimStatus: "claimed",
+        verifiedAt: new Date(),
+        verifiedByEmail: magicLink.email,
+        billingEmail: magicLink.email,
+        billingTier: "free"
       }).where(eq(operators.id, operator.id));
 
       // Create session

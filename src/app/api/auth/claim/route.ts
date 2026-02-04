@@ -1,9 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db";
 import { operators, operatorClaims, magicLinks } from "@/db/schema";
-import { eq, and, gt, count, sql } from "drizzle-orm";
+import { eq, and, gt, count } from "drizzle-orm";
 import { sendMagicLink } from "@/lib/email";
-import { emailMatchesDomain } from "@/lib/verification";
 
 export async function POST(req: NextRequest) {
   try {
@@ -69,24 +68,16 @@ export async function POST(req: NextRequest) {
 
     // Check if already claimed
     if (operator.claimStatus === "claimed" || operator.claimStatus === "premium") {
-        return NextResponse.json({ error: "This listing has already been claimed." }, { status: 409 });
+      return NextResponse.json({ error: "This listing has already been claimed." }, { status: 409 });
     }
 
-    // Determine verification method
-    let verificationMethod = "manual";
-    if (operator.website && emailMatchesDomain(email, operator.website)) {
-      verificationMethod = "domain_match";
-    } else if (operator.email === email) {
-      verificationMethod = "email_match";
-    }
-
-    // Create claim
+    // All claims verified via email — click the link, you're in
     await db.insert(operatorClaims).values({
       operatorId: operator.id,
       claimantName: name,
       claimantEmail: email,
       claimantRole: role,
-      verificationMethod,
+      verificationMethod: "email",
       status: "pending",
       ipAddress: ip,
     });
@@ -110,8 +101,6 @@ export async function POST(req: NextRequest) {
       token,
       purpose: "claim",
     });
-
-    // TODO: If manual review needed, also sends notification email to admin (Skipping for now as per minimal viable plan)
 
     return NextResponse.json({ success: true });
   } catch (error) {

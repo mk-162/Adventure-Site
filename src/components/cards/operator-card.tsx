@@ -103,54 +103,67 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
 
   // Default card
   return (
-    <Link
-      href={`/directory/${operator.slug}`}
-      className="group flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow"
-    >
-      {/* Logo */}
-      {operator.logoUrl && (
-        <div
-          className="w-14 h-14 rounded-xl bg-cover bg-center flex-shrink-0"
-          style={{ backgroundImage: `url('${operator.logoUrl}')` }}
-        />
-      )}
-
-      {/* Content */}
-      <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2">
-          <h3 className="font-semibold text-[#1e3a4c] group-hover:text-[#f97316] transition-colors truncate">
-            {operator.name}
-          </h3>
-          <VerifiedBadge claimStatus={operator.claimStatus} size="sm" showLabel={false} />
-        </div>
-
-        {operator.address && (
-          <p className="text-sm text-gray-400 flex items-center gap-1 truncate">
-            <MapPin className="h-3 w-3 flex-shrink-0" />
-            {operator.address}
-          </p>
+    <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+      <Link
+        href={`/directory/${operator.slug}`}
+        className="group flex items-center gap-4 p-4"
+      >
+        {/* Logo */}
+        {operator.logoUrl && (
+          <div
+            className="w-14 h-14 rounded-xl bg-cover bg-center flex-shrink-0"
+            style={{ backgroundImage: `url('${operator.logoUrl}')` }}
+          />
         )}
 
-        <div className="flex items-center gap-3 mt-1">
-          {operator.googleRating && (
-            <span className="flex items-center gap-1 text-sm">
-              <Star className="h-3 w-3 fill-[#f97316] text-[#f97316]" />
-              <span className="font-medium">{operator.googleRating}</span>
-            </span>
-          )}
-          {operator.priceRange && (
-            <span className="text-sm text-gray-500">{operator.priceRange}</span>
-          )}
-          {operator.activityTypes && operator.activityTypes.length > 0 && (
-            <span className="text-xs text-gray-400">
-              {operator.activityTypes.slice(0, 2).join(", ")}
-            </span>
-          )}
-        </div>
-      </div>
+        {/* Content */}
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2">
+            <h3 className="font-semibold text-[#1e3a4c] group-hover:text-[#f97316] transition-colors truncate">
+              {operator.name}
+            </h3>
+            <VerifiedBadge claimStatus={operator.claimStatus} size="sm" showLabel={false} />
+          </div>
 
-      {/* Arrow */}
-      <ChevronRight className="h-5 w-5 text-gray-300 group-hover:text-[#f97316] transition-colors flex-shrink-0" />
-    </Link>
+          {operator.address && (
+            <p className="text-sm text-gray-400 flex items-center gap-1 truncate">
+              <MapPin className="h-3 w-3 flex-shrink-0" />
+              {operator.address}
+            </p>
+          )}
+
+          <div className="flex items-center gap-3 mt-1">
+            {operator.googleRating && (
+              <span className="flex items-center gap-1 text-sm">
+                <Star className="h-3 w-3 fill-[#f97316] text-[#f97316]" />
+                <span className="font-medium">{operator.googleRating}</span>
+              </span>
+            )}
+            {operator.priceRange && (
+              <span className="text-sm text-gray-500">{operator.priceRange}</span>
+            )}
+            {operator.activityTypes && operator.activityTypes.length > 0 && (
+              <span className="text-xs text-gray-400">
+                {operator.activityTypes.slice(0, 2).join(", ")}
+              </span>
+            )}
+          </div>
+        </div>
+
+        {/* Arrow */}
+        <ChevronRight className="h-5 w-5 text-gray-300 group-hover:text-[#f97316] transition-colors flex-shrink-0" />
+      </Link>
+
+      {!isClaimed && (
+        <div className="px-4 pb-3 border-t border-gray-100">
+          <Link
+            href="/advertise"
+            className="text-xs text-gray-400 hover:text-[#f97316] transition-colors"
+          >
+            Is this your business? Claim this listing →
+          </Link>
+        </div>
+      )}
+    </div>
   );
 }

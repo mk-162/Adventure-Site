@@ -119,7 +119,7 @@ export default async function OperatorProfilePage({ params }: Props) {
       )}
       
       {/* Hero / Cover Image */}
-      <div className="relative w-full h-48 sm:h-64 lg:h-80 overflow-hidden lg:mx-auto lg:max-w-7xl lg:mt-6 lg:rounded-2xl lg:px-4">
+      <div className="relative w-full h-40 sm:h-52 lg:h-64 overflow-hidden lg:mx-auto lg:max-w-7xl lg:mt-6 lg:rounded-2xl lg:px-4">
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
         <div 
           className="absolute inset-0 bg-cover bg-center lg:rounded-2xl"
@@ -559,9 +559,57 @@ export default async function OperatorProfilePage({ params }: Props) {
               )}
             </div>
 
+            {/* Contact Info */}
+            <div className="bg-white rounded-xl p-5 border border-gray-200 shadow-lg shadow-gray-200/50 sticky top-[120px]">
+              <h4 className="text-sm font-bold text-[#1e3a4c] mb-3">Contact Details</h4>
+              <ul className="space-y-3">
+                {operator.phone && (
+                  <li className="flex items-center gap-3">
+                    <Phone className="w-4 h-4 text-[#1e3a4c]" />
+                    <a href={`tel:${operator.phone}`} className="text-sm text-gray-600 hover:text-[#1e3a4c]">
+                      {operator.phone}
+                    </a>
+                  </li>
+                )}
+                {operator.email && (
+                  <li className="flex items-center gap-3">
+                    <Mail className="w-4 h-4 text-[#1e3a4c]" />
+                    <a href={`mailto:${operator.email}?subject=${encodeURIComponent("Enquiry from Adventure Wales")}`} className="text-sm text-gray-600 hover:text-[#1e3a4c]">
+                      {operator.email}
+                    </a>
+                  </li>
+                )}
+              </ul>
+
+              {/* Prominent action buttons */}
+              <div className="mt-4 space-y-2">
+                {operator.website && (
+                  <a 
+                    href={operator.website} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 w-full py-2.5 bg-[#1e3a4c] hover:bg-[#1e3a4c]/90 text-white font-semibold rounded-xl text-sm transition-colors"
+                  >
+                    <Globe className="w-4 h-4" />
+                    Visit Website
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                )}
+                {operator.email && (
+                  <a 
+                    href={`mailto:${operator.email}?subject=${encodeURIComponent("Enquiry from Adventure Wales")}`}
+                    className="flex items-center justify-center gap-2 w-full py-2.5 border-2 border-[#1e3a4c] text-[#1e3a4c] font-semibold rounded-xl text-sm hover:bg-[#1e3a4c]/5 transition-colors"
+                  >
+                    <Mail className="w-4 h-4" />
+                    Email Directly
+                  </a>
+                )}
+              </div>
+            </div>
+
             {/* Quick Enquiry Card */}
-            <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-lg shadow-gray-200/50 sticky top-[120px]">
-              <h3 className="text-lg font-bold text-[#1e3a4c] mb-4">Quick Enquiry</h3>
+            <div className="bg-gray-50 rounded-xl border border-gray-200 p-6">
+              <h3 className="text-base font-bold text-[#1e3a4c] mb-4">Send a Quick Enquiry</h3>
               <form className="flex flex-col gap-4">
                 <div>
                   <label className="block text-xs font-semibold text-gray-700 mb-1">Your Name</label>
@@ -610,54 +658,6 @@ export default async function OperatorProfilePage({ params }: Props) {
                   </p>
                 )}
               </form>
-            </div>
-
-            {/* Contact Info */}
-            <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
-              <h4 className="text-sm font-bold text-[#1e3a4c] mb-3">Contact Details</h4>
-              <ul className="space-y-3">
-                {operator.phone && (
-                  <li className="flex items-center gap-3">
-                    <Phone className="w-4 h-4 text-[#1e3a4c]" />
-                    <a href={`tel:${operator.phone}`} className="text-sm text-gray-600 hover:text-[#1e3a4c]">
-                      {operator.phone}
-                    </a>
-                  </li>
-                )}
-                {operator.email && (
-                  <li className="flex items-center gap-3">
-                    <Mail className="w-4 h-4 text-[#1e3a4c]" />
-                    <a href={`mailto:${operator.email}?subject=${encodeURIComponent("Enquiry from Adventure Wales")}`} className="text-sm text-gray-600 hover:text-[#1e3a4c]">
-                      {operator.email}
-                    </a>
-                  </li>
-                )}
-              </ul>
-
-              {/* Prominent action buttons */}
-              <div className="mt-4 space-y-2">
-                {operator.website && (
-                  <a 
-                    href={operator.website} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full py-2.5 bg-[#1e3a4c] hover:bg-[#1e3a4c]/90 text-white font-semibold rounded-xl text-sm transition-colors"
-                  >
-                    <Globe className="w-4 h-4" />
-                    Visit Website
-                    <ExternalLink className="w-3 h-3" />
-                  </a>
-                )}
-                {operator.email && (
-                  <a 
-                    href={`mailto:${operator.email}?subject=${encodeURIComponent("Enquiry from Adventure Wales")}`}
-                    className="flex items-center justify-center gap-2 w-full py-2.5 border-2 border-[#1e3a4c] text-[#1e3a4c] font-semibold rounded-xl text-sm hover:bg-[#1e3a4c]/5 transition-colors"
-                  >
-                    <Mail className="w-4 h-4" />
-                    Email Directly
-                  </a>
-                )}
-              </div>
             </div>
 
             {/* Location Map Placeholder */}

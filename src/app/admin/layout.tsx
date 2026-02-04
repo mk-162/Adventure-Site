@@ -167,15 +167,14 @@ export default function AdminLayout({
 
           <div className="flex-1" />
 
-          <span className="text-sm text-gray-500">Adventure Wales Admin</span>
-          
-          <Link
+          <a
             href="/"
-            className="flex items-center gap-2 text-sm text-gray-600 hover:text-[#1e3a4c] transition-colors font-medium"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-sm text-white bg-[#1e3a4c] hover:bg-[#2a4f66] px-3 py-1.5 rounded-lg transition-colors font-medium"
           >
-            <Home className="h-4 w-4" />
-            Back to site
-          </Link>
+            Go to site <span aria-hidden="true">→</span>
+          </a>
         </header>
 
         {/* Page content */}

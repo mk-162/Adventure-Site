@@ -109,10 +109,9 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [ ] Content: Premium partners need images
 - [x] Feature: Partners should show locations (add map with drop pins) — real Leaflet map on operator pages
 - [x] Interaction: Clicking a map pin should show a mini link/popup — already has rich popups with image, link, type badge
-- [ ] Integration: Fetch star ratings from TripAdvisor API and display TripAdvisor logo
+- [ ] Integration: Fetch star ratings from TripAdvisor API and display TripAdvisor logo (noted on multiple pages)
 
 - [x] Interaction: Clicking a map pin should show a mini link/popup — already has rich popups with image, link, type badge
-- [ ] Integration: Fetch star ratings from TripAdvisor API and display TripAdvisor logo
 
 **Directory / Operator Detail (e.g., /directory/plas-y-brenin)**
 

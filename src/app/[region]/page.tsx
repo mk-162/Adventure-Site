@@ -36,6 +36,7 @@ import {
 import { WeatherWidget } from "@/components/weather/WeatherWidget";
 import { ActivitySeasonGuide } from "@/components/weather/ActivitySeasonGuide";
 import { ThisWeekendWidget } from "@/components/events/ThisWeekendWidget";
+import { BookingWidget } from "@/components/commercial/BookingWidget";
 
 interface RegionPageProps {
   params: Promise<{ region: string }>;
@@ -599,6 +600,9 @@ export default async function RegionPage({ params }: RegionPageProps) {
                           region={item.region}
                       />
                   ))}
+                </div>
+                <div className="mt-5">
+                  <BookingWidget regionName={region.name} />
                 </div>
               </section>
             )}

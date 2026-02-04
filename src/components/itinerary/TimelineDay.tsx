@@ -1,14 +1,23 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { ItineraryStop } from "@/types/itinerary";
-import { Flag, Bed, Utensils, Car, CloudRain, PiggyBank, MapPin, Home, Phone, EyeOff, Eye } from "lucide-react";
+import { Flag, Bed, Utensils, Car, CloudRain, PiggyBank, MapPin, Home, Phone, EyeOff, Eye, Shuffle, Loader2, X } from "lucide-react";
 import Link from "next/link";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 import { accommodation } from "@/db/schema";
 import { calculateDistance, calculateDrivingTime } from "@/lib/travel-utils";
 import { getActivityHeroImage } from "@/lib/activity-images";
 import { CustomStopForm } from "./CustomStopForm";
+
+interface AlternativeActivity {
+  id: number;
+  name: string;
+  slug: string;
+  priceFrom: string | null;
+  operatorName: string | null;
+}
 
 type AccommodationData = typeof accommodation.$inferSelect;
 
@@ -239,6 +248,13 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
                                         <button className="text-xs font-bold text-gray-600 bg-gray-100 px-3 py-1.5 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-1">
                                             <MapPin className="w-3 h-3" /> Map
                                         </button>
+                                        {stop.activity && (
+                                            <AlternativesButton
+                                                activityTypeId={stop.activity.activityTypeId}
+                                                regionId={stop.activity.regionId}
+                                                excludeId={stop.activity.id}
+                                            />
+                                        )}
                                     </div>
                                 </div>
                             </div>
@@ -280,6 +296,115 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
               <CustomStopForm itinerarySlug={itinerarySlug} dayNumber={dayNumber} />
             )}
         </div>
+    </div>
+  );
+}
+
+/* ─── Alternatives Button + Panel ─── */
+
+function AlternativesButton({
+  activityTypeId,
+  regionId,
+  excludeId,
+}: {
+  activityTypeId: number | null;
+  regionId: number | null;
+  excludeId: number;
+}) {
+  const [open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [alternatives, setAlternatives] = useState<AlternativeActivity[]>([]);
+  const [fetched, setFetched] = useState(false);
+
+  async function handleClick() {
+    if (open) {
+      setOpen(false);
+      return;
+    }
+
+    setOpen(true);
+
+    if (fetched) return;
+
+    setLoading(true);
+    try {
+      const params = new URLSearchParams();
+      if (activityTypeId) params.set("activityTypeId", String(activityTypeId));
+      if (regionId) params.set("regionId", String(regionId));
+      params.set("excludeId", String(excludeId));
+
+      const res = await fetch(`/api/alternatives?${params.toString()}`);
+      if (res.ok) {
+        const data = await res.json();
+        setAlternatives(data.alternatives ?? []);
+      }
+    } catch {
+      // silently fail
+    } finally {
+      setLoading(false);
+      setFetched(true);
+    }
+  }
+
+  return (
+    <div className="relative">
+      <button
+        onClick={handleClick}
+        className="text-xs font-bold text-purple-600 bg-purple-50 px-3 py-1.5 rounded-lg hover:bg-purple-100 transition-colors flex items-center gap-1"
+      >
+        <Shuffle className="w-3 h-3" />
+        Alternatives?
+      </button>
+
+      {open && (
+        <div className="absolute left-0 top-full mt-2 z-30 w-72 bg-white border border-gray-200 rounded-xl shadow-lg p-3">
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-xs font-bold text-gray-500 uppercase">Similar activities</span>
+            <button onClick={() => setOpen(false)} className="text-gray-400 hover:text-gray-600">
+              <X className="w-3.5 h-3.5" />
+            </button>
+          </div>
+
+          {loading && (
+            <div className="flex items-center justify-center py-4 text-gray-400">
+              <Loader2 className="w-4 h-4 animate-spin" />
+            </div>
+          )}
+
+          {!loading && alternatives.length === 0 && (
+            <p className="text-xs text-gray-400 py-3 text-center">No alternatives found in this area.</p>
+          )}
+
+          {!loading && alternatives.length > 0 && (
+            <div className="space-y-2">
+              {alternatives.map((alt) => (
+                <Link
+                  key={alt.id}
+                  href={`/activities/${alt.slug}`}
+                  className="block p-2.5 rounded-lg border border-gray-100 hover:border-purple-200 hover:bg-purple-50/50 transition-colors group"
+                >
+                  <p className="text-sm font-bold text-[#1e3a4c] group-hover:text-purple-700 leading-tight">
+                    {alt.name}
+                  </p>
+                  <div className="flex items-center justify-between mt-1">
+                    <span className="text-xs text-gray-500">
+                      {alt.operatorName || "Independent"}
+                    </span>
+                    {alt.priceFrom && (
+                      <span className="text-xs font-bold text-green-700">
+                        From £{alt.priceFrom}
+                      </span>
+                    )}
+                  </div>
+                  <span className="text-[10px] font-bold text-purple-500 mt-1 inline-block">
+                    Swap to this →
+                  </span>
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }

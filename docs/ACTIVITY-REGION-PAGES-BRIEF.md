@@ -220,7 +220,107 @@ Real questions people ask. Format for Google Featured Snippets.
 - Answer (2-4 sentences, direct and helpful)
 - Include schema markup data
 
-### 11. Nearby Alternatives
+### 11. Local Directory — Operators, Shops & Services
+**This is what makes the page an authority.** Auto-populated from the operators table, filtered by region + activityType match.
+
+Display ALL matching businesses grouped by category:
+
+**a) Activity Providers** (`category: activity_provider`)
+Operators who run this activity in this region. Show as cards with:
+- Name, logo, tagline
+- Google rating + review count
+- Price range
+- Verified/claimed badge
+- "View Profile" → `/directory/{slug}`
+- "Book Now" button (if booking URL exists)
+
+**b) Gear & Equipment Shops** (`category: gear_rental`)
+Climbing shops, surf shops, bike hire, gear rental. Crucial for authority.
+- Name, address, phone
+- What they stock/hire relevant to this activity
+- Google rating
+- Website link
+- Map pin
+
+**c) Accommodation** (`category: accommodation`)
+Places to stay in this region, filtered to those near activity hotspots.
+- Name, price range, distance to key spots
+- Link to accommodation page
+
+**d) Food & Drink** (`category: food_drink`)
+Post-activity pubs, cafes, restaurants in the area.
+- Name, what they're known for
+- "Climber-friendly", "Surf cafe", etc.
+
+**Content to add per page (in JSON):**
+
+```json
+"localDirectory": {
+  "gearShops": [
+    {
+      "name": "Joe Brown's",
+      "slug": "joe-browns",
+      "address": "High Street, Llanberis, LL55 4EU",
+      "lat": 53.1187,
+      "lng": -4.1296,
+      "description": "Legendary climbing and outdoor shop. Been kitting out Snowdonia's climbers since 1966. Expert staff who actually climb.",
+      "website": "https://www.joebrown.co.uk",
+      "phone": "01286 870327",
+      "services": ["gear sales", "boot fitting", "climbing gear", "maps & guides"],
+      "googleRating": 4.6,
+      "reviewCount": 312
+    }
+  ],
+  "postActivitySpots": [
+    {
+      "name": "Pete's Eats",
+      "slug": "petes-eats",
+      "address": "40 High Street, Llanberis",
+      "description": "The climber's canteen. Legendary portions, walls covered in expedition photos. If you've climbed in Snowdonia, you've eaten at Pete's.",
+      "vibe": "Climber-friendly cafe",
+      "priceRange": "£"
+    }
+  ]
+}
+```
+
+**If operators don't exist in the DB yet**, include them in the JSON so they can be seeded. Every combo page should list at minimum:
+- 2-3 gear/hire shops specific to the activity
+- 3-5 recommended post-activity food spots
+- All activity providers (from DB)
+- 3-5 accommodation options nearby
+
+### 12. Events & Competitions
+Auto-populated from events table (matched by region + event type keywords).
+
+Plus add event data in JSON for well-known recurring events:
+
+```json
+"events": [
+  {
+    "name": "Snowdonia Marathon",
+    "type": "race",
+    "monthTypical": "October",
+    "description": "One of the UK's toughest and most scenic road marathons. Starts and finishes in Llanberis.",
+    "website": "https://snowdoniamarathon.co.uk",
+    "relevantTo": ["running", "hiking"],
+    "capacity": 2500,
+    "registrationCost": 45
+  }
+]
+```
+
+### 13. Related Journal Posts & Guides
+Auto-populated from posts where `regionSlug` matches AND (`activityTypeSlug` matches OR tags overlap).
+
+Show as editorial cards: title, excerpt, hero image, read time, date.
+
+Group into:
+- **Guides**: "How to" and practical guides
+- **Trip Reports**: First-person accounts
+- **News**: Recent updates about this activity/region
+
+### 14. Nearby Alternatives
 Links to adjacent combos:
 - Same activity, different region: "Also try hiking in Brecon Beacons →"
 - Same region, different activity: "Also in Snowdonia: Climbing | Mountain Biking | Gorge Walking"
@@ -334,6 +434,68 @@ Example: `data/combo-pages/snowdonia--hiking.json`
       "answer": "It depends on the route. The Llanberis Path is manageable for most reasonably fit people (6-7 hours return). Crib Goch, at the other extreme, is an exposed knife-edge ridge that requires scrambling experience and a head for heights. Pick your route based on your experience."
     }
   ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Joe Brown's",
+        "slug": "joe-browns",
+        "address": "High Street, Llanberis, LL55 4EU",
+        "lat": 53.1187,
+        "lng": -4.1296,
+        "description": "Legendary climbing and outdoor shop. Been kitting out Snowdonia's climbers since 1966. Expert staff who actually climb.",
+        "website": "https://www.joebrown.co.uk",
+        "phone": "01286 870327",
+        "services": ["gear sales", "boot fitting", "climbing gear", "maps & guides"],
+        "googleRating": 4.6,
+        "reviewCount": 312
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Pete's Eats",
+        "slug": "petes-eats",
+        "address": "40 High Street, Llanberis",
+        "lat": 53.1190,
+        "lng": -4.1285,
+        "description": "The climber's canteen. Legendary portions, walls covered in expedition photos.",
+        "vibe": "Climber-friendly cafe",
+        "priceRange": "£",
+        "website": "https://www.petes-eats.co.uk"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "YHA Snowdon Llanberis",
+        "slug": "yha-snowdon-llanberis",
+        "description": "Budget-friendly hostel right in the heart of Llanberis. Perfect base for Snowdon.",
+        "priceRange": "£",
+        "nearestSpot": "Llanberis Path trailhead — 5 min walk"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Snowdonia Marathon",
+      "type": "race",
+      "monthTypical": "October",
+      "description": "One of the UK's toughest and most scenic road marathons.",
+      "website": "https://snowdoniamarathon.co.uk",
+      "relevantActivities": ["running", "hiking"],
+      "registrationCost": 45
+    }
+  ],
+  "keywords": {
+    "primary": "hiking in snowdonia",
+    "secondary": ["snowdonia hiking routes", "best hikes snowdonia", "walking in snowdonia"],
+    "longTail": [
+      "best easy hikes in snowdonia",
+      "snowdonia hiking routes for beginners",
+      "family walks snowdonia",
+      "dog friendly walks snowdonia"
+    ],
+    "localIntent": ["hiking near llanberis", "walks near betws-y-coed"],
+    "commercialIntent": ["snowdonia guided walks price", "hire hiking gear snowdonia"]
+  },
   "nearbyAlternatives": {
     "sameActivity": [
       { "regionSlug": "brecon-beacons", "label": "Hiking in Brecon Beacons" },
@@ -406,42 +568,164 @@ For each combo page, search YouTube and find 2-4 good videos.
 
 ---
 
-## SEO Requirements
+## SEO & Keyword Strategy
 
-### Per Page
-- **Title tag**: "{Activity} in {Region}: [Compelling Suffix] (2025)" — max 60 chars
-- **Meta description**: Practical, includes keyword, max 155 chars
-- **H1**: "{Activity} in {Region}"
+These pages exist to capture high-intent traffic. Every page targets a primary keyword cluster and a set of long-tail variants. This is the whole point — get this right.
+
+### Keyword Research Per Page
+
+Each JSON file must include a `keywords` block:
+
+```json
+"keywords": {
+  "primary": "hiking in snowdonia",
+  "secondary": [
+    "snowdonia hiking routes",
+    "best hikes snowdonia",
+    "walking in snowdonia",
+    "snowdonia walks"
+  ],
+  "longTail": [
+    "best easy hikes in snowdonia",
+    "snowdonia hiking routes for beginners",
+    "hardest hikes in snowdonia",
+    "snowdonia scrambles",
+    "dog friendly walks snowdonia",
+    "snowdonia hikes with parking",
+    "family walks snowdonia",
+    "snowdonia winter hiking",
+    "snowdonia hiking map",
+    "guided walks snowdonia"
+  ],
+  "localIntent": [
+    "hiking near llanberis",
+    "walks near betws-y-coed",
+    "hikes near beddgelert",
+    "trails near capel curig"
+  ],
+  "commercialIntent": [
+    "snowdonia guided walks price",
+    "hire hiking gear snowdonia",
+    "snowdonia walking holidays",
+    "snowdonia hiking guide book"
+  ]
+}
+```
+
+**How to research keywords:**
+1. Google the primary keyword — note "People Also Ask" questions (use these as FAQs)
+2. Check Google autocomplete — type "{activity} in {region}" and note suggestions
+3. Check related searches at bottom of Google results
+4. Use variations: "hiking" vs "walking" vs "walks" vs "trails" vs "routes"
+5. Include "near {town}" variants for local intent
+6. Include commercial intent: "guided", "hire", "book", "price", "cost"
+
+### On-Page SEO Requirements
+
+- **Title tag**: "{Activity} in {Region}: [Compelling Suffix] | Adventure Wales" — max 60 chars
+  - Example: "Hiking in Snowdonia: Best Routes & Walks | Adventure Wales"
+- **Meta description**: Action-oriented, includes keyword, max 155 chars
+  - Example: "Complete guide to hiking in Snowdonia. 10 best routes from easy valley walks to expert scrambles. Parking, gear, weather advice & booking."
+- **H1**: "{Activity} in {Region}" (exact match primary keyword)
+- **H2s**: Use secondary keywords naturally
+  - "Best Hiking Routes in Snowdonia"
+  - "Where to Hire Gear in Snowdonia"
+  - "Guided Walks in Snowdonia"
+  - "Hiking Conditions & Weather"
 - **URL**: `/{region}/things-to-do/{activity}` (already set up)
-- **Schema markup**: FAQ schema, BreadcrumbList, LocalBusiness (for operators)
-- **Internal links**: Link to individual activity pages, journal posts, itineraries, operator pages
-- **Target keyword density**: 1-2% for primary keyword
 
-### Content Guidelines
-- Minimum 2,000 words per page (across all sections)
-- Use specific place names and details (not "beautiful mountains")
-- Include prices, times, distances — specific numbers rank better
-- Answer the questions people actually Google
-- Be opinionated — "we recommend X over Y because..."
-- Include seasonal information — different months, different advice
+### Schema Markup (auto-generated by the page component)
+- **FAQPage** — every FAQ section
+- **BreadcrumbList** — Home > Region > Things to Do > Activity
+- **LocalBusiness** — every operator/shop listed
+- **ItemList** — for the spots/routes list
+- **Place** — for each spot with lat/lng
+- **Event** — for each listed event
+- **VideoObject** — for each YouTube embed
+- **Article** — for related journal posts
+
+### Internal Linking Strategy
+Every combo page should link to:
+- Individual activity pages (from bookable experiences)
+- Operator directory pages
+- Related journal posts
+- Related itineraries
+- Region page
+- Other combo pages (nearby alternatives)
+- Safety pages
+- Gear guide pages
+
+The page should **receive** links from:
+- Homepage (if featured)
+- Region page sidebar/body
+- Activity type index page
+- Journal posts about this combo
+- Itineraries that include this activity
+- Other combo pages (nearby alternatives)
+
+### Content Authority Signals
+What makes Google rank this page as THE authority:
+
+1. **Depth**: 2,000-4,000 words of original content
+2. **Specificity**: Real place names, grid references, prices, distances — not waffle
+3. **Freshness**: YouTube embeds, event dates, seasonal advice, "updated 2025"
+4. **Local knowledge**: Insider tips, parking secrets, quiet alternatives
+5. **E-E-A-T signals**: Operator listings with Google ratings, verified businesses, real reviews
+6. **User intent coverage**: Informational (routes), navigational (maps), commercial (book/hire), transactional (operators)
+7. **Rich media**: Images, video embeds, maps — all relevant, not stock
+8. **Business listings**: Gear shops, operators, cafes = LOCAL authority that generic blogs can't match
+9. **Structured data**: Schema markup for every entity type
+10. **Internal mesh**: Links to/from every related page on the site
 
 ---
 
 ## Delivery Checklist Per Combo Page
 
+### Content & Data
 - [ ] JSON data file in `data/combo-pages/{region}--{activity}.json`
-- [ ] Hero image (`/images/combo/{region}-{activity}-hero.jpg`)
-- [ ] 5-10 spot images (`/images/combo/{region}-{activity}-{spot-slug}.jpg`)
-- [ ] 6-10 gallery images (`/images/combo/{region}-{activity}-{nn}-{hash}.jpg`)
-- [ ] 2-4 YouTube video IDs verified and working
-- [ ] All lat/lng coordinates verified on a map
-- [ ] All parking info verified (prices, locations)
-- [ ] All operator links verified as working
-- [ ] All prices checked against operator websites
-- [ ] FAQ questions checked against Google "People Also Ask"
-- [ ] Introduction reads naturally and includes keyword
+- [ ] Introduction 300-500 words, includes primary keyword naturally 2-3 times
+- [ ] 5-10 spots/routes with full detail (difficulty, duration, parking, insider tips, lat/lng)
+- [ ] 5-8 FAQs checked against Google "People Also Ask" for primary keyword
 - [ ] Insider tips are genuinely useful (not obvious)
 - [ ] "Not suitable for" warnings are honest and helpful
+- [ ] All prices checked against operator websites (within last month)
+- [ ] All lat/lng coordinates verified on a map
+- [ ] All parking info verified (prices, locations, capacity issues)
+
+### Local Directory
+- [ ] 2-5 gear/hire shops specific to this activity in this region (with addresses, phone, Google rating)
+- [ ] 3-5 post-activity food/drink spots (with vibe description)
+- [ ] 3-5 accommodation options nearby (with distance to key spots)
+- [ ] All operator/shop websites verified as working
+- [ ] All phone numbers verified
+
+### Events
+- [ ] 2-5 relevant recurring events/competitions listed
+- [ ] Event websites verified
+- [ ] Typical months/dates included
+
+### Media
+- [ ] Hero image (`/images/combo/{region}-{activity}-hero.jpg`) — 1920×1080
+- [ ] 5-10 spot images (`/images/combo/{region}-{activity}-{spot-slug}.jpg`) — 1200×800
+- [ ] 6-10 gallery images (`/images/combo/{region}-{activity}-{nn}-{hash}.jpg`) — 1200×800
+- [ ] All images <200KB, properly optimised
+- [ ] All images have descriptive alt text and captions
+
+### YouTube Videos
+- [ ] 2-4 YouTube video IDs verified and currently working
+- [ ] Videos are recent (within last 3 years), quality, genuine creators
+- [ ] Mix of: overview/guide, specific spot, POV/action
+
+### SEO & Keywords
+- [ ] Primary keyword defined
+- [ ] 3-5 secondary keywords
+- [ ] 5-10 long-tail keywords
+- [ ] 2-4 local intent keywords ("near {town}")
+- [ ] 2-4 commercial intent keywords ("hire", "guided", "price")
+- [ ] Meta title max 60 chars, includes primary keyword
+- [ ] Meta description max 155 chars, action-oriented
+- [ ] H2s use secondary keywords naturally
+- [ ] Total content 2,000-4,000 words across all sections
 
 ---
 

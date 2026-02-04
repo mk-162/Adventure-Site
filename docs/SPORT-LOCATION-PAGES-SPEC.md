@@ -383,7 +383,7 @@ COMMERCIAL (managed via admin)
 
 ## Key Decisions Still Needed
 
-1. **Multi-region activities**: BikePark Wales is in Brecon Beacons but also South Wales. Add junction table, or duplicate, or use broader region tagging?
+1. ~~**Multi-region activities**~~ ✅ DONE — `activity_regions` junction table. Per-activity tagging, not site-wide hierarchy.
 
 2. **Untyped activities**: 52 activities have no activityTypeId. These won't show on any sport/location page. Need a cleanup pass to assign types.
 
@@ -392,3 +392,61 @@ COMMERCIAL (managed via admin)
 4. **JSON data files vs DB**: Some content (videos, FAQs, practical info, gear lists) lives in JSON files, not the DB. This is fine for now but means edits need code deploys. Consider moving to DB columns or a JSONB field on guide_pages if admin editing is needed.
 
 5. **Best-of URL structure**: Currently proposed as `/{region}/best-{slug}`. Need to create a new dynamic route. Confirm this doesn't clash with existing `/{region}/[...slug]` catch-all.
+
+---
+
+## Phase 6: Gallery & Social Features (FUTURE)
+
+These are planned enhancements for sport/location pages. Not in initial build — revisit after launch.
+
+### Image Gallery
+- Each sport/location page needs a stunning image gallery (not just a hero)
+- Lightbox viewer with swipe on mobile
+- Mix of: landscape, action, detail, seasonal
+- Images sourced from: our library, operator submissions, user submissions (later)
+- Consider lazy-loaded masonry grid layout
+- Each image: alt text, caption, credit, location tag
+
+### Social / Community Features
+Ideas to explore — turns passive pages into active community hubs:
+
+**User Photo Submissions**
+- "Share your photo" upload on each sport/location page
+- Moderation queue before publishing
+- Credit to user, link to their social
+- Builds UGC (user-generated content) = SEO gold
+- Could require free account signup (email capture)
+
+**Voting / Upvotes**
+- Let users vote up their favourite spots/routes within a page
+- "Community ranking" vs "Our ranking" on best-of lists
+- Simple upvote (no downvote) — like Product Hunt style
+- Shows social proof: "432 people recommend this route"
+- Could influence sort order on the page
+
+**Share Functionality**
+- Share buttons per page AND per individual spot/route
+- Native Web Share API on mobile (clean, no third-party buttons)
+- Copy link, share to WhatsApp, X, Facebook
+- Open Graph meta optimised per page for rich previews
+- Deep-link to specific spots: `/{region}/things-to-do/{activity}#crib-goch`
+
+**Trip Reports / Reviews**
+- Users can submit short trip reports for specific spots
+- "I did this route on [date] — here's how it was"
+- Adds freshness signals for SEO
+- Builds community engagement
+- Could tie into operator reviews
+
+**"I've Done This" Badges**
+- Gamification: tick off spots/routes you've completed
+- Profile page showing your adventure map
+- Encourages return visits to the site
+- Data goldmine for understanding user interests
+
+### Technical Requirements (for planning)
+- User accounts (ties into auth work — magic link flow)
+- Image upload + storage (S3/Cloudflare R2)
+- Moderation queue (admin panel)
+- Vote counting (simple counter, rate-limit by IP/account)
+- Notification system (your photo was approved, your report got 10 upvotes)

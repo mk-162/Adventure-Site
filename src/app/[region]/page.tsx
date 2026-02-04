@@ -22,15 +22,16 @@ import {
   Bus, 
   Cloud, 
   Backpack, 
-  Plane, 
+  Plane,
+  Compass,
 } from "lucide-react";
+import { getAllRegions } from "@/lib/queries";
 import { 
   JsonLd, 
   createTouristDestinationSchema, 
   createBreadcrumbSchema 
 } from "@/components/seo/JsonLd";
 import { WeatherWidget } from "@/components/weather/WeatherWidget";
-import { ClimateChart } from "@/components/weather/ClimateChart";
 import { ActivitySeasonGuide } from "@/components/weather/ActivitySeasonGuide";
 import { ThisWeekendWidget } from "@/components/events/ThisWeekendWidget";
 
@@ -190,6 +191,13 @@ export default async function RegionPage({ params }: RegionPageProps) {
     })
     .slice(0, 3);
 
+  // Check if region has any content at all
+  const hasContent = activities.length > 0 || accommodation.length > 0 || mapEntities.events.length > 0;
+
+  // If no content, fetch other regions to suggest
+  const allRegions = !hasContent ? await getAllRegions() : [];
+  const otherRegions = allRegions.filter(r => r.slug !== regionSlug).slice(0, 6);
+
   // Extract structured content from description
   const introText = extractIntro(region.description) || `Discover the adventures waiting for you in ${region.name}.`;
   const proTips = extractProTips(region.description);
@@ -276,8 +284,63 @@ export default async function RegionPage({ params }: RegionPageProps) {
           </div>
         </div>
 
+        {/* Empty Region State */}
+        {!hasContent && (
+          <div className="mb-12">
+            <div className="bg-gradient-to-br from-[#1e3a4c]/5 to-[#f97316]/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f97316]/10 mb-6">
+                <Compass className="w-8 h-8 text-[#f97316]" />
+              </div>
+              <h2 className="text-2xl lg:text-3xl font-black text-[#1e3a4c] mb-3">
+                We&apos;re still exploring {region.name}
+              </h2>
+              <p className="text-gray-600 text-base lg:text-lg max-w-2xl mx-auto mb-8">
+                We&apos;re busy discovering the best adventures, accommodation, and hidden gems in {region.name}. 
+                Check back soon — or explore one of these other incredible regions in Wales.
+              </p>
+              
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-2xl mx-auto mb-8">
+                {otherRegions.map((r) => (
+                  <Link
+                    key={r.slug}
+                    href={`/${r.slug}`}
+                    className="group flex flex-col items-center gap-2 p-4 bg-white rounded-xl border border-gray-200 hover:border-[#1e3a4c]/30 hover:shadow-md transition-all"
+                  >
+                    <div className="w-12 h-12 rounded-full bg-gray-100 overflow-hidden">
+                      <img 
+                        alt={r.name}
+                        className="w-full h-full object-cover"
+                        src={`/images/regions/${r.slug}-hero.jpg`}
+                      />
+                    </div>
+                    <span className="text-sm font-bold text-[#1e3a4c] group-hover:text-[#f97316] transition-colors">
+                      {r.name}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Link
+                  href="/destinations"
+                  className="inline-flex items-center justify-center gap-2 bg-[#1e3a4c] text-white font-bold py-3 px-6 rounded-full hover:bg-[#2d5568] transition-colors"
+                >
+                  Browse All Regions
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+                <Link
+                  href="/activities"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-[#1e3a4c] font-bold py-3 px-6 rounded-full border border-gray-200 hover:border-[#1e3a4c]/30 transition-colors"
+                >
+                  View All Activities
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* 2-Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 mb-12">
+        {hasContent && <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 mb-12">
           
           {/* Main Content (8 cols) */}
           <div className="lg:col-span-8 flex flex-col gap-8 lg:gap-10">
@@ -422,15 +485,14 @@ export default async function RegionPage({ params }: RegionPageProps) {
           {/* Sidebar (4 cols) */}
           <aside className="lg:col-span-4 space-y-6">
 
-            {/* Weather Widget — compact in sidebar */}
+            {/* Weather Widget — compact in sidebar with climate tab */}
             {region.lat && region.lng && (
-              <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
-                <WeatherWidget 
-                  lat={parseFloat(String(region.lat))} 
-                  lng={parseFloat(String(region.lng))} 
-                  regionName={region.name} 
-                />
-              </div>
+              <WeatherWidget 
+                lat={parseFloat(String(region.lat))} 
+                lng={parseFloat(String(region.lng))} 
+                regionName={region.name}
+                regionSlug={regionSlug}
+              />
             )}
             
             {/* Local Businesses */}

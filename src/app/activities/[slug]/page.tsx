@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getActivityBySlug, getActivities, getAccommodation, getAllActivitySlugs } from "@/lib/queries";
+import { getActivityBySlug, getActivities, getAccommodation, getAllActivitySlugs, getItineraries } from "@/lib/queries";
 import { Badge, DifficultyBadge, PriceBadge } from "@/components/ui/badge";
 import { ButtonLink } from "@/components/ui/button";
 import { ActivityCard } from "@/components/cards/activity-card";
@@ -130,13 +130,16 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
   const { activity, region, operator, activityType } = data;
 
   // Get related activities and nearby accommodation
-  const [relatedActivities, nearbyAccommodation] = await Promise.all([
+  const [relatedActivities, nearbyAccommodation, regionItineraries] = await Promise.all([
     getActivities({
       regionId: region?.id,
       limit: 4,
     }),
     region
       ? getAccommodation({ regionId: region.id, limit: 10 })
+      : Promise.resolve([]),
+    region
+      ? getItineraries({ regionId: region.id, limit: 3 })
       : Promise.resolve([]),
   ]);
 
@@ -501,6 +504,37 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                 Browse every {activityType.name.toLowerCase()} experience, compare operators, and find the best deals in {region.name}.
               </p>
             </Link>
+          </section>
+        )}
+
+        {/* Featured in these trips */}
+        {regionItineraries.length > 0 && (
+          <section className="mt-12">
+            <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">
+              {region?.name} Road Trips
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {regionItineraries.map(({ itinerary, region: iRegion }) => (
+                <Link
+                  key={itinerary.id}
+                  href={`/itineraries/${itinerary.slug}`}
+                  className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition-shadow"
+                >
+                  <div
+                    className="h-32 bg-cover bg-center bg-gray-100"
+                    style={{ backgroundImage: `url('/images/regions/${iRegion?.slug || 'default'}-hero.jpg')` }}
+                  />
+                  <div className="p-4">
+                    <h3 className="font-semibold text-sm text-[#1e3a4c] group-hover:text-[#f97316] transition-colors line-clamp-1">
+                      {itinerary.title}
+                    </h3>
+                    <p className="text-xs text-gray-500 mt-1">
+                      {itinerary.durationDays} days · {iRegion?.name}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </section>
         )}
 

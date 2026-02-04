@@ -36,6 +36,6 @@ export default async function DirectoryPage() {
 }
 
 export const metadata = {
-  title: "Adventure Providers | Adventure Wales",
-  description: "30+ vetted Welsh adventure providers. Qualified, insured, and reviewed. Find the right guide for coasteering, hiking, biking, and more.",
+  title: "Adventure Companies & Guides in Wales — Trusted Local Providers | Adventure Wales",
+  description: "30+ vetted Welsh adventure providers with Google reviews and ratings. Find qualified guides for coasteering, hiking, climbing, kayaking, and mountain biking across Wales.",
 };

@@ -16,8 +16,11 @@ import {
   Star, 
   Filter, 
   ChevronDown,
-  ArrowRight
+  ArrowRight,
+  Compass,
+  Map
 } from "lucide-react";
+import { getAllRegions } from "@/lib/queries";
 
 interface PageProps {
   params: Promise<{
@@ -58,6 +61,103 @@ export default async function ActivityListingPage({ params }: PageProps) {
   const activities = await getActivitiesByType(regionSlug, activityTypeSlug);
   const allActivityTypes = await getAllActivityTypes();
   const comboData = getComboPageData(regionSlug, activityTypeSlug);
+
+  // If no activities found, show a helpful empty state
+  if (activities.length === 0) {
+    // Find other regions that might have this activity type
+    const allRegions = await getAllRegions();
+    const otherRegions = allRegions.filter(r => r.slug !== regionSlug).slice(0, 6);
+    const otherActivityTypes = allActivityTypes
+      .filter((t) => t.id !== activityType.id)
+      .slice(0, 4);
+
+    return (
+      <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-8">
+        {/* Breadcrumbs */}
+        <nav className="flex flex-wrap items-center gap-2 text-xs lg:text-sm text-gray-500 mb-4 lg:mb-6">
+          <Link href="/" className="hover:text-[#1e3a4c]">Home</Link>
+          <ChevronRight className="w-3 h-3" />
+          <Link href={`/${region.slug}`} className="hover:text-[#1e3a4c]">{region.name}</Link>
+          <ChevronRight className="w-3 h-3" />
+          <Link href={`/${region.slug}/things-to-do`} className="hover:text-[#1e3a4c]">Things to Do</Link>
+          <ChevronRight className="w-3 h-3" />
+          <span className="text-[#141515] font-medium">{activityType.name}</span>
+        </nav>
+
+        <div className="bg-gradient-to-br from-[#1e3a4c]/5 to-[#f97316]/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200 mb-10">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f97316]/10 mb-6">
+            <Compass className="w-8 h-8 text-[#f97316]" />
+          </div>
+          <h1 className="text-2xl lg:text-3xl font-black text-[#1e3a4c] mb-3">
+            No {activityType.name} in {region.name} yet
+          </h1>
+          <p className="text-gray-600 text-base lg:text-lg max-w-2xl mx-auto mb-8">
+            We haven&apos;t found any {activityType.name.toLowerCase()} experiences in {region.name} yet, but we&apos;re always adding new adventures. Try one of these nearby regions or explore other activities in {region.name}.
+          </p>
+
+          {/* Other regions to try */}
+          <div className="mb-8">
+            <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">
+              Try {activityType.name} in these regions
+            </h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {otherRegions.map((r) => (
+                <Link
+                  key={r.slug}
+                  href={`/${r.slug}/things-to-do/${activityTypeSlug}`}
+                  className="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 hover:border-[#1e3a4c]/30 hover:shadow-md transition-all text-sm font-medium text-[#1e3a4c]"
+                >
+                  <Map className="w-4 h-4" />
+                  {r.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Other activity types in this region */}
+          <div className="mb-8">
+            <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">
+              Other activities in {region.name}
+            </h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {otherActivityTypes.map((type) => (
+                <Link
+                  key={type.id}
+                  href={`/${region.slug}/things-to-do/${type.slug}`}
+                  className="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 hover:border-[#f97316]/30 hover:shadow-md transition-all text-sm font-medium text-[#1e3a4c]"
+                >
+                  {type.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link
+              href={`/${region.slug}/things-to-do`}
+              className="inline-flex items-center justify-center gap-2 bg-[#1e3a4c] text-white font-bold py-3 px-6 rounded-full hover:bg-[#2d5568] transition-colors"
+            >
+              All Things to Do in {region.name}
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/activities"
+              className="inline-flex items-center justify-center gap-2 bg-white text-[#1e3a4c] font-bold py-3 px-6 rounded-full border border-gray-200 hover:border-[#1e3a4c]/30 transition-colors"
+            >
+              Browse All Activities
+            </Link>
+          </div>
+        </div>
+
+        {/* Combo enrichment content still shows (SEO value) */}
+        {comboData && (
+          <div className="mb-10">
+            <ComboEnrichment data={comboData} regionName={region.name} />
+          </div>
+        )}
+      </main>
+    );
+  }
 
   // 2. Calculate Stats
   const uniqueOperators = new Set(activities.map((a) => a.operator?.id).filter(Boolean));

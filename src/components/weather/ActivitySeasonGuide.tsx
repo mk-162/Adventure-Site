@@ -11,73 +11,73 @@ type SeasonRating = "ideal" | "good" | "possible";
 
 interface ActivitySeason {
   name: string;
+  emoji: string;
   months: (SeasonRating | null)[];
-  description: string;
+  peak: string;
 }
 
-// Activity season matrix (0-11 for Jan-Dec)
 const ACTIVITY_SEASONS: ActivitySeason[] = [
   {
     name: "Coasteering",
+    emoji: "🌊",
     months: [null, null, null, "possible", "ideal", "ideal", "ideal", "ideal", "good", "possible", null, null],
-    description: "Best in summer when water temps are warmer",
+    peak: "Jun–Aug",
   },
   {
     name: "Hiking",
+    emoji: "🥾",
     months: [null, "possible", "good", "ideal", "ideal", "ideal", "ideal", "ideal", "ideal", "good", "possible", null],
-    description: "Spring to autumn for best trail conditions",
+    peak: "Apr–Sep",
   },
   {
     name: "Mountain Biking",
+    emoji: "🚵",
     months: ["possible", "possible", "good", "ideal", "ideal", "ideal", "ideal", "ideal", "ideal", "good", "possible", "possible"],
-    description: "Year-round, but drier months are more enjoyable",
+    peak: "Apr–Sep",
   },
   {
     name: "Surfing",
+    emoji: "🏄",
     months: ["ideal", "ideal", "ideal", "good", "good", "possible", "possible", "possible", "good", "ideal", "ideal", "ideal"],
-    description: "Best swells in autumn and winter",
+    peak: "Oct–Mar",
   },
   {
     name: "Wild Swimming",
+    emoji: "🏊",
     months: [null, null, null, "possible", "good", "ideal", "ideal", "ideal", "good", "possible", null, null],
-    description: "Summer months for comfortable water temps",
+    peak: "Jun–Aug",
   },
   {
     name: "Kayaking",
+    emoji: "🛶",
     months: ["possible", "possible", "good", "ideal", "ideal", "ideal", "ideal", "ideal", "good", "good", "possible", "possible"],
-    description: "Calmer waters in spring and summer",
+    peak: "Apr–Aug",
   },
   {
     name: "Rock Climbing",
+    emoji: "🧗",
     months: ["possible", "possible", "good", "ideal", "ideal", "ideal", "ideal", "ideal", "ideal", "good", "possible", "possible"],
-    description: "Dry conditions essential for safety",
+    peak: "Apr–Sep",
   },
   {
     name: "Caving",
+    emoji: "🦇",
     months: ["good", "good", "ideal", "ideal", "ideal", "ideal", "ideal", "ideal", "ideal", "good", "good", "good"],
-    description: "Year-round, though lower water in summer",
+    peak: "Year-round",
   },
 ];
 
-const MONTH_ABBR = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-const RATING_SYMBOLS = {
-  ideal: "●",
-  good: "○",
-  possible: "·",
-};
-
-const RATING_COLORS = {
-  ideal: "text-emerald-600",
-  good: "text-blue-500",
-  possible: "text-gray-400",
+const RATING_BG = {
+  ideal: "bg-emerald-500",
+  good: "bg-blue-400",
+  possible: "bg-gray-300",
 };
 
 export function ActivitySeasonGuide({
-  regionSlug,
   activityTypes,
 }: ActivitySeasonGuideProps) {
-  // Filter activities if specific types requested
   let activities = ACTIVITY_SEASONS;
   if (activityTypes && activityTypes.length > 0) {
     activities = activities.filter((a) =>
@@ -89,106 +89,73 @@ export function ActivitySeasonGuide({
 
   if (activities.length === 0) return null;
 
+  // Current month highlight
+  const currentMonth = new Date().getMonth();
+
   return (
-    <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
-      <div className="mb-4">
-        <h3 className="font-bold text-[#1e3a4c] text-lg">Activity Seasons</h3>
-        <p className="text-sm text-gray-500">
-          When to enjoy different activities in Wales
-        </p>
+    <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+      <div className="p-4 sm:p-5 border-b border-gray-100">
+        <h3 className="font-bold text-[#1e3a4c]">Best Time to Visit</h3>
+        <p className="text-xs text-gray-500 mt-0.5">Activity conditions by month</p>
       </div>
 
-      {/* Mobile: Stacked cards */}
-      <div className="lg:hidden space-y-4">
+      {/* Season bars */}
+      <div className="divide-y divide-gray-100">
         {activities.map((activity) => (
-          <div key={activity.name} className="border border-gray-200 rounded-lg p-4">
-            <h4 className="font-bold text-[#1e3a4c] mb-2">{activity.name}</h4>
-            <div className="flex gap-2 mb-2">
+          <div key={activity.name} className="px-4 sm:px-5 py-3 hover:bg-gray-50/50 transition-colors">
+            <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center gap-2">
+                <span className="text-sm">{activity.emoji}</span>
+                <span className="text-sm font-semibold text-[#1e3a4c]">{activity.name}</span>
+              </div>
+              <span className="text-xs text-gray-400 font-medium">{activity.peak}</span>
+            </div>
+            {/* Month bar */}
+            <div className="flex gap-0.5 sm:gap-1">
               {activity.months.map((rating, idx) => (
-                <div key={idx} className="flex-1 text-center">
-                  <div className="text-xs text-gray-400 mb-1">{MONTH_ABBR[idx]}</div>
-                  <div
-                    className={clsx(
-                      "text-xl font-bold",
-                      rating ? RATING_COLORS[rating] : "text-gray-200"
-                    )}
-                  >
-                    {rating ? RATING_SYMBOLS[rating] : "·"}
-                  </div>
-                </div>
+                <div
+                  key={idx}
+                  className={clsx(
+                    "flex-1 h-3 sm:h-4 rounded-sm transition-all relative group",
+                    rating ? RATING_BG[rating] : "bg-gray-100",
+                    idx === currentMonth && "ring-2 ring-[#f97316] ring-offset-1"
+                  )}
+                  title={`${MONTHS[idx]}: ${rating || "Not recommended"}`}
+                />
               ))}
             </div>
-            <p className="text-xs text-gray-500">{activity.description}</p>
+            {/* Month labels (desktop only) */}
+            {activity === activities[activities.length - 1] && (
+              <div className="hidden sm:flex gap-0.5 sm:gap-1 mt-1">
+                {MONTHS.map((m, idx) => (
+                  <div key={idx} className={clsx("flex-1 text-center text-[10px]", idx === currentMonth ? "text-[#f97316] font-bold" : "text-gray-400")}>
+                    {m.charAt(0)}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         ))}
       </div>
 
-      {/* Desktop: Table */}
-      <div className="hidden lg:block overflow-x-auto">
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="border-b border-gray-200">
-              <th className="text-left pb-2 pr-4 font-bold text-[#1e3a4c]">
-                Activity
-              </th>
-              {MONTH_ABBR.map((month, idx) => (
-                <th key={idx} className="text-center pb-2 px-1 font-bold text-gray-500 text-xs">
-                  {month}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {activities.map((activity) => (
-              <tr key={activity.name} className="border-b border-gray-100 hover:bg-gray-50">
-                <td className="py-3 pr-4 font-medium text-[#1e3a4c]">
-                  {activity.name}
-                </td>
-                {activity.months.map((rating, idx) => (
-                  <td
-                    key={idx}
-                    className="text-center px-1 py-3"
-                  >
-                    <span
-                      className={clsx(
-                        "text-2xl font-bold",
-                        rating ? RATING_COLORS[rating] : "text-gray-200"
-                      )}
-                      title={rating || "Not recommended"}
-                    >
-                      {rating ? RATING_SYMBOLS[rating] : "·"}
-                    </span>
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
       {/* Legend */}
-      <div className="flex flex-wrap items-center gap-4 mt-6 pt-4 border-t border-gray-200">
-        <div className="flex items-center gap-2">
-          <span className="text-2xl font-bold text-emerald-600">●</span>
-          <span className="text-sm text-gray-600">Ideal conditions</span>
+      <div className="px-4 sm:px-5 py-3 bg-gray-50 flex flex-wrap items-center gap-x-4 gap-y-1">
+        <div className="flex items-center gap-1.5">
+          <div className="w-3 h-3 rounded-sm bg-emerald-500" />
+          <span className="text-xs text-gray-600">Ideal</span>
         </div>
-        <div className="flex items-center gap-2">
-          <span className="text-2xl font-bold text-blue-500">○</span>
-          <span className="text-sm text-gray-600">Good conditions</span>
+        <div className="flex items-center gap-1.5">
+          <div className="w-3 h-3 rounded-sm bg-blue-400" />
+          <span className="text-xs text-gray-600">Good</span>
         </div>
-        <div className="flex items-center gap-2">
-          <span className="text-2xl font-bold text-gray-400">·</span>
-          <span className="text-sm text-gray-600">Possible, not ideal</span>
+        <div className="flex items-center gap-1.5">
+          <div className="w-3 h-3 rounded-sm bg-gray-300" />
+          <span className="text-xs text-gray-600">Possible</span>
         </div>
-      </div>
-
-      {/* Tips */}
-      <div className="mt-4 bg-blue-50 border border-blue-200 rounded-lg p-4">
-        <p className="text-sm text-blue-900">
-          <span className="font-bold">Planning tip:</span> Book operators in advance for
-          peak season (May-September). Winter activities offer better availability and
-          fewer crowds.
-        </p>
+        <div className="flex items-center gap-1.5 ml-auto">
+          <div className="w-3 h-3 rounded-sm ring-2 ring-[#f97316] ring-offset-1 bg-gray-200" />
+          <span className="text-xs text-gray-500">Now</span>
+        </div>
       </div>
     </div>
   );

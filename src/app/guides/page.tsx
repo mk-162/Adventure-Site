@@ -155,6 +155,6 @@ export default function GuidesPage() {
 }
 
 export const metadata = {
-  title: "Guides | Adventure Wales",
-  description: "Practical guides for Welsh adventures - what gear to bring, what to skip, seasonal conditions, and honest activity breakdowns.",
+  title: "Adventure Guides & Tips for Wales — Gear, Seasons & Planning | Adventure Wales",
+  description: "Practical guides for Welsh adventures — what gear to bring, best seasons to visit, activity breakdowns by difficulty, and insider tips from local experts.",
 };

@@ -108,8 +108,7 @@ export function ClimateChart({ regionSlug, compact = false }: ClimateChartProps)
   return (
     <div
       className={clsx(
-        "bg-white rounded-xl border border-gray-200 shadow-sm",
-        compact ? "p-4" : "p-6"
+        compact ? "p-2" : "bg-white rounded-xl border border-gray-200 shadow-sm p-6"
       )}
     >
       <div className="mb-4">

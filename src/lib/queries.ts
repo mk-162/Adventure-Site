@@ -451,6 +451,19 @@ export async function getLocations(options?: {
   return query;
 }
 
+export async function getLocationBySlug(slug: string) {
+  const result = await db
+    .select({
+      location: locations,
+      region: regions,
+    })
+    .from(locations)
+    .leftJoin(regions, eq(locations.regionId, regions.id))
+    .where(and(eq(locations.slug, slug), eq(locations.status, "published")))
+    .limit(1);
+  return result[0] || null;
+}
+
 // =====================
 // TRANSPORT QUERIES
 // =====================

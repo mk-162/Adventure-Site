@@ -109,6 +109,6 @@ export default async function ActivitiesPage() {
 }
 
 export const metadata = {
-  title: "Adventure Activities | Adventure Wales",
-  description: "78 Welsh adventures with real suitability info - who it's for, who should skip it, difficulty, prices, and local tips. Filter by region and type.",
+  title: "Things to Do in Wales — Coasteering, Hiking, Surfing & More | Adventure Wales",
+  description: "Browse 78+ outdoor activities across Wales with honest reviews, difficulty ratings, and prices. Coasteering in Pembrokeshire, hiking in Snowdonia, surfing in Anglesey, and more.",
 };

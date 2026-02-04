@@ -29,7 +29,7 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
     return (
       <Link
         href={`/directory/${operator.slug}`}
-        className="group block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border-2 border-[#f97316]/20"
+        className={`group block rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border-2 border-[#f97316]/20 relative ${isPremium ? "border-l-4 border-l-amber-400 bg-amber-50/30" : "bg-white"}`}
       >
         <div className="p-6">
           <div className="flex items-start justify-between mb-4">
@@ -52,7 +52,13 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
                 )}
               </div>
             </div>
-            <Badge variant="accent">Featured</Badge>
+            {isPremium ? (
+              <span className="inline-flex items-center gap-1 bg-amber-100 text-amber-800 border border-amber-300 text-[10px] font-bold px-2 py-0.5 rounded-full">
+                ✦ Premium
+              </span>
+            ) : (
+              <Badge variant="accent">Featured</Badge>
+            )}
           </div>
 
           {operator.uniqueSellingPoint && (
@@ -103,7 +109,12 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
 
   // Default card
   return (
-    <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+    <div className={`rounded-xl shadow-sm hover:shadow-md transition-shadow relative ${isPremium ? "border-l-4 border-l-amber-400 bg-amber-50/30" : "bg-white"}`}>
+      {isPremium && (
+        <span className="absolute top-2 right-2 z-10 inline-flex items-center gap-1 bg-amber-100 text-amber-800 border border-amber-300 text-[10px] font-bold px-1.5 py-0.5 rounded-full">
+          ✦ Premium
+        </span>
+      )}
       <Link
         href={`/directory/${operator.slug}`}
         className="group flex items-center gap-4 p-4"

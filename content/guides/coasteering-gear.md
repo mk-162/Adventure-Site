@@ -1,60 +1,48 @@
 ---
 slug: coasteering-gear
 title: "What to Wear Coasteering"
-activity: "Coasteering"
 ---
 
 # What to Wear Coasteering
 
-Coasteering in Wales is an exhilarating experience, plunging into the rugged coastline's wild beauty. However, the unforgiving nature of the sea and rocks demands respect and, crucially, the right gear. Proper attire ensures warmth, protection, and freedom of movement, allowing you to fully enjoy the adventure while staying safe from the elements and potential hazards. This guide will detail the essential clothing and equipment for a memorable and secure coasteering experience along the Welsh coast.
+Coasteering in Wales is an unforgettable experience, scrambling and swimming along rugged coastlines. Here's what you *actually* need, focusing on practicality and the specific conditions you'll face here.
 
-## Essential Kit
+## The Essentials
 
-### Wetsuit
-A well-fitting wetsuit is arguably the most important piece of coasteering gear. Look for a full-length wetsuit, ideally 3-5mm thick, to provide adequate insulation against the cold Welsh waters. Consider wetsuits designed specifically for watersports, as these often feature reinforced knees and elbows. Ensure the suit fits snugly but allows for a full range of motion; a suit that’s too tight will restrict movement, while one that’s too loose will allow cold water to flush through.
-
-### Buoyancy Aid
-A buoyancy aid, also known as a Personal Flotation Device (PFD), is essential for safety and provides crucial assistance in the water. Make sure it fits correctly; it should be snug but allow freedom of movement and not ride up when you're in the water. Look for a buoyancy aid specifically designed for watersports, offering a good balance of buoyancy and mobility. Your coasteering operator will typically provide this, but it's vital to ensure it fits correctly.
-
-### Coasteering Helmet
-Protecting your head is paramount when navigating rocky coastlines. A coasteering helmet, similar to a climbing helmet but designed for water use, is crucial. Ensure it fits snugly and securely, covering your forehead and the back of your head. Look for a helmet with good ventilation to prevent overheating and ensure it's CE-certified for watersports use.
-
-### Appropriate Footwear
-Proper footwear provides grip and protection on slippery rocks. Old trainers are not ideal. Ideally, you want specialist coasteering boots, or sturdy wetsuit boots with a good, grippy sole. Avoid sandals or flip-flops, as they offer no protection or support. Consider neoprene socks to wear inside your boots for added warmth and comfort. Look for features such as ankle support and reinforced toes.
+*   **Wetsuit (Full Length, 5mm recommended):** Absolutely critical. The Welsh waters are cold, even in summer. A full-length wetsuit provides essential insulation to prevent hypothermia, allowing you to enjoy the experience safely for a longer period. 5mm is the sweet spot – warm enough without being too restrictive for swimming.
+*   **Buoyancy Aid (BA):** A non-negotiable safety item. Coasteering involves swimming, and a BA keeps you afloat, conserving energy and preventing panic, especially in choppy conditions or if you're a less confident swimmer. Reputable coasteering operators will always provide these, but if you are going alone, do not skip this vital piece of equipment.
+*   **Helmet:** Protection from rocks is crucial. Welsh coastlines are rocky and unforgiving. A helmet safeguards your head from bumps and scrapes during scrambles and potential impacts while swimming near rocks.
+*   **Sturdy Footwear (Old Trainers or Coasteering Shoes):** Protects your feet and provides grip. Sharp barnacles, slippery seaweed, and uneven terrain are common. Old trainers with good grip are ideal. Coasteering-specific shoes are even better, offering enhanced grip and ankle support. No flip-flops or bare feet!
+*   **Swimsuit or Quick-Drying Underwear:** To wear beneath the wetsuit. Avoid cotton as it holds water and stays cold.
+*   **Towel and Warm Clothes for Afterwards:** You'll be wet and likely a bit cold after your coasteering adventure. Warm, dry clothes are essential for recovery.
 
 ## Nice to Have
 
-- **Gloves:** Neoprene gloves offer added warmth and grip, especially during colder months.
-- **Rash Vest:** Worn under your wetsuit, a rash vest can prevent chafing and provide an extra layer of warmth.
-- **Waterproof Camera:** Capture the stunning scenery, but ensure it's securely attached to you.
-- **Dry Bag:** For storing personal items like keys or phones, though it's best to leave valuables on shore.
+*   **Wetsuit Gloves (3mm):** While not essential, gloves significantly improve comfort in colder waters. They protect your hands from the cold and sharp rocks.
+*   **Wetsuit Boots/Socks (3-5mm):** Similar to gloves, boots/socks enhance warmth and prevent blisters from footwear rubbing. Especially good if your chosen footwear isn't designed for water sports.
+*   **Rash Vest:** Provides a thin layer of insulation and reduces chafing under the wetsuit. Particularly useful if you have sensitive skin.
+*   **Waterproof Camera (GoPro or Similar):** Captures the incredible scenery and adrenaline-fueled moments. Ensure it's securely attached to you.
+*   **Dry Bag (Small):** For storing essential items like keys or a phone, but be mindful that you'll be swimming.
+*   **Sunscreen:** Even on overcast days, UV rays can penetrate. Protect exposed skin, especially your face.
 
-## What to Leave at Home
+## Don't Bother With
 
-- **Jewellery:** Rings, necklaces, and bracelets can get snagged and lost.
-- **Valuable Electronics:** Unless completely waterproof and securely attached, leave expensive electronics behind.
+*   **Expensive Jewelry:** Leave it at home. It's likely to get lost or damaged.
+*   **Cotton Clothing (Under Wetsuit):** As mentioned, cotton retains water and makes you colder.
+*   **Bulky Backpacks:** They'll get in the way and make swimming difficult and potentially dangerous.
+*   **Anything You're Worried About Losing/Damaging:** Coasteering is a rugged activity.
 
 ## Hire vs Buy
 
-Many coasteering operators in Wales provide wetsuits, buoyancy aids, and helmets as part of their packages. It's generally more cost-effective to hire these items, especially if you're only coasteering once. However, if you plan on coasteering regularly, investing in your own wetsuit, boots, and helmet may be worthwhile for a better fit and higher quality.
+*   **Wetsuit, Buoyancy Aid, Helmet:** Hiring these locally is generally the best option, especially for beginners. Reputable coasteering operators provide well-maintained, appropriate-sized gear. You also avoid the cost of purchasing potentially bulky items you might only use occasionally.
+*   **Footwear:** If you plan on coasteering regularly, investing in a pair of dedicated coasteering shoes is worthwhile. Otherwise, using old trainers is perfectly adequate.
+*   **Gloves/Boots/Socks:** These are relatively inexpensive and can be worth buying if you coasteer often and are sensitive to the cold.
+*   **Camera:** If you want good quality footage, buy or hire something like a GoPro. If you are looking for an underwater disposable camera, you are more likely to be disappointed.
 
-## Budget Options
+## Wales-Specific Tips
 
-For budget-conscious coasteerers, focus on investing in a good quality wetsuit and footwear, as these are crucial for safety and comfort. You can often find deals on previous-season wetsuits or purchase used equipment in good condition. Consider borrowing a buoyancy aid and helmet from friends or family if possible.
-
-## Packing Checklist
-
-- [ ] Wetsuit
-- [ ] Buoyancy Aid
-- [ ] Coasteering Helmet
-- [ ] Appropriate Footwear (Wetsuit boots or sturdy footwear)
-- [ ] Neoprene Socks (optional)
-- [ ] Neoprene Gloves (optional)
-- [ ] Rash Vest (optional)
-- [ ] Sunscreen
-
-## Pro Tips
-
-- **Test your gear:** Try on your wetsuit and boots before your coasteering trip to ensure a comfortable and secure fit.
-- **Layer up:** On colder days, wear a rash vest under your wetsuit for added warmth.
-- **Secure everything:** Ensure all your gear, including helmets and buoyancy aids, is properly fitted and secured before entering the water.
+*   **Weather is Unpredictable:** Be prepared for sudden changes in conditions. Welsh weather can be notoriously fickle. Check the forecast before you go, but be ready for rain, wind, and sunshine, potentially all in the same day.
+*   **Tidal Range is Significant:** Be aware of the tides. Welsh coastlines have a large tidal range, which can dramatically alter the coasteering route and make some areas inaccessible or dangerous at certain times. Go with a professional guide unless you are experienced and informed.
+*   **Rocky Coastlines:** The terrain is generally more rugged and rocky than some other coasteering locations. Sturdy footwear and a helmet are essential.
+*   **Water Temperature:** The Irish Sea is cold! Even in summer, the water temperature rarely exceeds 15°C (59°F). A good quality wetsuit is essential for comfort and safety.
+*   **Sea Conditions:** Check sea conditions. Winds can pick up suddenly and the sea state can go from calm to rough in a short space of time.

@@ -1,13 +1,11 @@
 import { getEvents, getAllRegions } from "@/lib/queries";
-import { EventCard } from "@/components/cards/event-card";
+import { EventsFilters } from "@/components/events/EventsFilters";
 
 export default async function EventsPage() {
   const [events, regions] = await Promise.all([
     getEvents(),
     getAllRegions(),
   ]);
-
-  const types = ["All Events", "Running", "Triathlon", "Cycling", "MTB", "Festival", "Walking"];
 
   return (
     <div className="min-h-screen pt-16">
@@ -29,45 +27,7 @@ export default async function EventsPage() {
         </div>
       </section>
 
-      {/* Filters */}
-      <section className="bg-white border-b sticky top-16 z-30">
-        <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex gap-2 overflow-x-auto">
-            {types.map((type, i) => (
-              <button
-                key={type}
-                className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
-                  i === 0
-                    ? "bg-[#1e3a4c] text-white"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                }`}
-              >
-                {type}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Events List */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="space-y-4">
-          {events.map((item) => (
-            <EventCard
-              key={item.event.id}
-              event={item.event}
-              region={item.region}
-              variant="list"
-            />
-          ))}
-        </div>
-
-        {events.length === 0 && (
-          <div className="text-center py-16">
-            <p className="text-gray-500">No events found.</p>
-          </div>
-        )}
-      </div>
+      <EventsFilters events={events} />
     </div>
   );
 }

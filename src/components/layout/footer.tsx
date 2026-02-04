@@ -114,7 +114,7 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-slate-100 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-          <p>© 2026 Adventure Wales. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Adventure Wales. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-[#1e3a4c] transition-colors">
               Privacy

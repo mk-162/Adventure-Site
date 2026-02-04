@@ -14,8 +14,8 @@ const heroImages = [
 
 const stats = [
   { icon: Mountain, value: "78", label: "Adventures" },
-  { icon: Waves, value: "11", label: "Regions" },
-  { icon: Bike, value: "15", label: "Trip Plans" },
+  { icon: Waves, value: "12", label: "Regions" },
+  { icon: Bike, value: "54", label: "Trip Plans" },
 ];
 
 export function HeroSection() {

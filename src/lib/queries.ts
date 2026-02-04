@@ -1023,6 +1023,25 @@ export async function getItinerariesForListing() {
   });
 }
 
+export async function getFeaturedItineraries(limit = 3) {
+  // Get itineraries with most stops (most comprehensive)
+  const itinerariesWithStopCounts = await db
+    .select({
+      itinerary: itineraries,
+      region: regions,
+      stopCount: sql<number>`COUNT(${itineraryStops.id})`.as('stop_count'),
+    })
+    .from(itineraries)
+    .leftJoin(regions, eq(itineraries.regionId, regions.id))
+    .leftJoin(itineraryStops, eq(itineraries.id, itineraryStops.itineraryId))
+    .where(eq(itineraries.status, "published"))
+    .groupBy(itineraries.id, regions.id)
+    .orderBy(desc(sql`COUNT(${itineraryStops.id})`))
+    .limit(limit);
+
+  return itinerariesWithStopCounts;
+}
+
 // =====================
 // SLUG QUERIES FOR STATIC GENERATION
 // =====================

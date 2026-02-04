@@ -11,7 +11,6 @@ import {
 import { ItineraryView } from "@/components/itinerary/ItineraryView";
 import { EnquireAllVendors } from "@/components/itinerary/EnquireAllVendors";
 import { getItineraryWithStops, getAccommodation, getAllItinerarySlugs } from "@/lib/queries";
-import { MOCK_ITINERARY, MOCK_STOPS } from "@/lib/mock-itinerary-data";
 
 function getDifficultyColor(difficulty: string): string {
   switch (difficulty?.toLowerCase()) {
@@ -31,23 +30,8 @@ interface Props {
 export default async function ItineraryDetailPage({ params }: Props) {
   const { slug } = await params;
   
-  // Try fetching from DB
-  let data = null;
-  try {
-     data = await getItineraryWithStops(slug);
-  } catch (e) {
-     console.error("DB Fetch failed, falling back if mock available", e);
-  }
-
-  // Fallback to mock data for dev/testing if DB is empty/unreachable
-  if ((!data || !data.stops || data.stops.length === 0) && slug === "ultimate-north-wales-weekend") {
-      data = {
-          itinerary: MOCK_ITINERARY,
-          stops: MOCK_STOPS,
-          region: MOCK_ITINERARY.region,
-          items: []
-      } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
-  }
+  // Fetch itinerary from DB
+  const data = await getItineraryWithStops(slug);
 
   if (!data) {
     notFound();

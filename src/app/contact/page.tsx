@@ -159,10 +159,10 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div className="font-medium mb-1">Phone</div>
-                    <a href="tel:+442920123456" className="text-sm opacity-90 hover:opacity-100">
-                      +44 (0) 29 2012 3456
-                    </a>
-                    <div className="text-xs opacity-75 mt-1">Mon-Fri, 9:00-17:00 GMT</div>
+                    <div className="text-sm opacity-90">
+                      Coming soon
+                    </div>
+                    <div className="text-xs opacity-75 mt-1">Currently email only</div>
                   </div>
                 </div>
 

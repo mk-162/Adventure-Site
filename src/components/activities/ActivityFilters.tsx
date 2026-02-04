@@ -78,6 +78,7 @@ export function ActivityFilters({
   const [selectedActivityType, setSelectedActivityType] = useState(searchParams.get('type') || '');
   const [selectedDifficulty, setSelectedDifficulty] = useState(searchParams.get('difficulty') || '');
   const [selectedPrice, setSelectedPrice] = useState(searchParams.get('price') || '');
+  const [sortBy, setSortBy] = useState(searchParams.get('sort') || 'name');
   const [viewMode, setViewMode] = useState<'grid' | 'map'>('grid');
 
   // Update URL when filters change
@@ -89,6 +90,7 @@ export function ActivityFilters({
     if (selectedActivityType) params.set('type', selectedActivityType);
     if (selectedDifficulty) params.set('difficulty', selectedDifficulty);
     if (selectedPrice) params.set('price', selectedPrice);
+    if (sortBy && sortBy !== 'name') params.set('sort', sortBy);
 
     const queryString = params.toString();
     const newUrl = queryString ? `/activities?${queryString}` : '/activities';
@@ -97,11 +99,11 @@ export function ActivityFilters({
     if (newUrl !== window.location.pathname + window.location.search) {
       router.replace(newUrl, { scroll: false });
     }
-  }, [searchQuery, selectedRegion, selectedActivityType, selectedDifficulty, selectedPrice, router]);
+  }, [searchQuery, selectedRegion, selectedActivityType, selectedDifficulty, selectedPrice, sortBy, router]);
 
-  // Filter activities
+  // Filter and sort activities
   const filteredActivities = useMemo(() => {
-    return initialActivities.filter((item) => {
+    let result = initialActivities.filter((item) => {
       // Text search - filter by activity name
       if (searchQuery) {
         const query = searchQuery.toLowerCase();
@@ -147,7 +149,42 @@ export function ActivityFilters({
 
       return true;
     });
-  }, [initialActivities, searchQuery, selectedRegion, selectedActivityType, selectedDifficulty, selectedPrice]);
+
+    // Sort the filtered results
+    const difficultyOrder: Record<string, number> = {
+      'easy': 1,
+      'moderate': 2,
+      'challenging': 3,
+      'extreme': 4,
+    };
+
+    result.sort((a, b) => {
+      switch (sortBy) {
+        case 'name':
+          return a.activity.name.localeCompare(b.activity.name);
+        
+        case 'price-low':
+          const priceA = a.activity.priceFrom ? parseFloat(a.activity.priceFrom) : Infinity;
+          const priceB = b.activity.priceFrom ? parseFloat(b.activity.priceFrom) : Infinity;
+          return priceA - priceB;
+        
+        case 'price-high':
+          const priceAHigh = a.activity.priceFrom ? parseFloat(a.activity.priceFrom) : -Infinity;
+          const priceBHigh = b.activity.priceFrom ? parseFloat(b.activity.priceFrom) : -Infinity;
+          return priceBHigh - priceAHigh;
+        
+        case 'difficulty':
+          const diffA = difficultyOrder[a.activity.difficulty?.toLowerCase() || ''] || 999;
+          const diffB = difficultyOrder[b.activity.difficulty?.toLowerCase() || ''] || 999;
+          return diffA - diffB;
+        
+        default:
+          return 0;
+      }
+    });
+
+    return result;
+  }, [initialActivities, searchQuery, selectedRegion, selectedActivityType, selectedDifficulty, selectedPrice, sortBy]);
 
   const handleQuickLinkClick = (typeSlug: string) => {
     // If clicking the same type, clear it; otherwise set it
@@ -238,6 +275,17 @@ export function ActivityFilters({
             <option value="budget">Under £50</option>
             <option value="mid">£50 - £100</option>
             <option value="premium">£100+</option>
+          </select>
+          
+          <select 
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value)}
+            className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a4c]/20"
+          >
+            <option value="name">Sort: A-Z</option>
+            <option value="price-low">Sort: Price Low-High</option>
+            <option value="price-high">Sort: Price High-Low</option>
+            <option value="difficulty">Sort: Difficulty</option>
           </select>
         </div>
       </div>
@@ -341,6 +389,7 @@ export function ActivityFilters({
               setSelectedActivityType('');
               setSelectedDifficulty('');
               setSelectedPrice('');
+              setSortBy('name');
             }}
             className="px-6 py-2 bg-[#f97316] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
           >

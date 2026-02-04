@@ -11,7 +11,6 @@ const navLinks = [
   { href: "/events", label: "Events" },
   { href: "/directory", label: "Directory" },
   { href: "/journal", label: "Journal" },
-  { href: "/journal", label: "Journal" },
   { href: "/guides", label: "Guides" },
   { href: "/answers", label: "Answers" },
 ];

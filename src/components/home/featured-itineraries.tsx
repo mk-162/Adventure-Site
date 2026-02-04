@@ -1,65 +1,32 @@
 import Link from "next/link";
 import { Star, ArrowRight } from "lucide-react";
 
-interface Activity {
+interface Itinerary {
+  id: number;
+  title: string;
+  slug: string;
+  tagline: string | null;
+  durationDays: number;
+  difficulty: string | null;
+  priceEstimateFrom: number | null;
+  regionId: number | null;
+}
+
+interface Region {
   id: number;
   name: string;
   slug: string;
-  priceFrom: string | null;
-  priceTo: string | null;
-  duration: string | null;
-  difficulty: string | null;
 }
 
 interface FeaturedItinerariesProps {
-  activities: Activity[];
+  itineraries: Array<{
+    itinerary: Itinerary;
+    region: Region | null;
+    stopCount: number;
+  }>;
 }
 
-// Mock itineraries since we don't have them seeded yet
-const mockItineraries = [
-  {
-    id: 1,
-    title: "Summit Challenge",
-    region: "Snowdonia National Park",
-    duration: "3 DAYS",
-    rating: 4.9,
-    reviews: 126,
-    price: 299,
-    image: "/images/misc/itinerary-group-01-69a29a24.jpg",
-  },
-  {
-    id: 2,
-    title: "River Rapids Adventure",
-    region: "Wye Valley, Llangollen",
-    duration: "1 DAY",
-    rating: 4.8,
-    reviews: 89,
-    price: 85,
-    image: "/images/activities/rafting-hero.jpg",
-  },
-  {
-    id: 3,
-    title: "Coed y Brenin MTB",
-    region: "Coed y Brenin Forest Park",
-    duration: "2 DAYS",
-    rating: 5.0,
-    reviews: 42,
-    price: 150,
-    image: "/images/activities/mountain-biking-hero.jpg",
-  },
-  {
-    id: 4,
-    title: "Family Coastal Camp",
-    region: "Pembrokeshire Coast",
-    duration: "WEEKEND",
-    rating: 4.7,
-    reviews: 210,
-    price: 120,
-    image: "/images/misc/family-adventure-01-41f3f49e.jpg",
-  },
-];
-
-export function FeaturedItineraries({ activities }: FeaturedItinerariesProps) {
+export function FeaturedItineraries({ itineraries }: FeaturedItinerariesProps) {
   return (
     <section className="py-12 sm:py-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
@@ -75,36 +42,37 @@ export function FeaturedItineraries({ activities }: FeaturedItinerariesProps) {
 
         {/* Horizontal scroll on mobile, grid on desktop */}
         <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 sm:overflow-visible no-scrollbar">
-          <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 pb-4 sm:pb-0">
-            {mockItineraries.map((itinerary) => (
+          <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 pb-4 sm:pb-0">
+            {itineraries.map(({ itinerary, region }) => (
               <Link
                 key={itinerary.id}
-                href={`/itineraries/${itinerary.id}`}
+                href={`/itineraries/${itinerary.slug}`}
                 className="flex-shrink-0 w-[260px] sm:w-auto group"
               >
                 <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                   <div
                     className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
-                    style={{ backgroundImage: `url('${itinerary.image}')` }}
+                    style={{ backgroundImage: `url('/images/regions/${region?.slug || 'default'}-hero.jpg')` }}
                   />
                   {/* Gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-lg text-xs font-bold uppercase text-[#1e3a4c]">
-                    {itinerary.duration}
+                    {itinerary.durationDays} DAY{itinerary.durationDays > 1 ? 'S' : ''}
                   </div>
                 </div>
                 <div className="mt-3">
-                  <div className="flex items-center gap-1 text-[#f97316] text-sm font-bold">
-                    <Star className="h-4 w-4 fill-current" />
-                    <span>{itinerary.rating} ({itinerary.reviews})</span>
-                  </div>
-                  <h3 className="text-lg font-bold mt-1 text-[#1e3a4c] group-hover:text-[#1e3a4c] transition-colors">
+                  <h3 className="text-lg font-bold text-[#1e3a4c] group-hover:text-[#1e3a4c] transition-colors">
                     {itinerary.title}
                   </h3>
-                  <p className="text-slate-500 text-sm">{itinerary.region}</p>
-                  <p className="mt-2 font-bold text-[#1e3a4c]">
-                    From £{itinerary.price} <span className="text-slate-500 font-normal text-xs">/ person</span>
-                  </p>
+                  {itinerary.tagline && (
+                    <p className="text-slate-500 text-sm mt-1 line-clamp-2">{itinerary.tagline}</p>
+                  )}
+                  <p className="text-slate-600 text-sm mt-2">{region?.name || 'Wales'}</p>
+                  {itinerary.priceEstimateFrom && (
+                    <p className="mt-2 font-bold text-[#1e3a4c]">
+                      From £{itinerary.priceEstimateFrom} <span className="text-slate-500 font-normal text-xs">/ person</span>
+                    </p>
+                  )}
                 </div>
               </Link>
             ))}

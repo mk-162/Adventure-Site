@@ -264,6 +264,21 @@ export const activityTags = pgTable("activity_tags", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
+// Additional regions for an activity (multi-region tagging)
+// The primary region stays on activities.regionId
+// This table holds EXTRA regions where the activity should also appear
+// e.g. BikePark Wales: primary = brecon-beacons, also appears in south-wales
+export const activityRegions = pgTable("activity_regions", {
+  id: serial("id").primaryKey(),
+  activityId: integer("activity_id")
+    .references(() => activities.id)
+    .notNull(),
+  regionId: integer("region_id")
+    .references(() => regions.id)
+    .notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
 export const accommodationTags = pgTable("accommodation_tags", {
   id: serial("id").primaryKey(),
   accommodationId: integer("accommodation_id")
@@ -685,6 +700,7 @@ export const sitesRelations = relations(sites, ({ many }) => ({
 export const regionsRelations = relations(regions, ({ one, many }) => ({
   site: one(sites, { fields: [regions.siteId], references: [sites.id] }),
   activities: many(activities),
+  activityRegions: many(activityRegions),
   locations: many(locations),
   accommodation: many(accommodation),
   events: many(events),
@@ -706,6 +722,7 @@ export const activitiesRelations = relations(activities, ({ one, many }) => ({
   operator: one(operators, { fields: [activities.operatorId], references: [operators.id] }),
   activityType: one(activityTypes, { fields: [activities.activityTypeId], references: [activityTypes.id] }),
   activityTags: many(activityTags),
+  activityRegions: many(activityRegions),
 }));
 
 export const accommodationRelations = relations(accommodation, ({ one, many }) => ({
@@ -756,6 +773,11 @@ export const tagsRelations = relations(tags, ({ one, many }) => ({
 export const activityTagsRelations = relations(activityTags, ({ one }) => ({
   activity: one(activities, { fields: [activityTags.activityId], references: [activities.id] }),
   tag: one(tags, { fields: [activityTags.tagId], references: [tags.id] }),
+}));
+
+export const activityRegionsRelations = relations(activityRegions, ({ one }) => ({
+  activity: one(activities, { fields: [activityRegions.activityId], references: [activities.id] }),
+  region: one(regions, { fields: [activityRegions.regionId], references: [regions.id] }),
 }));
 
 export const accommodationTagsRelations = relations(accommodationTags, ({ one }) => ({

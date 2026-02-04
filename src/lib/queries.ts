@@ -14,6 +14,7 @@ import {
   answers,
   tags,
   activityTags,
+  activityRegions,
   accommodationTags,
   itineraryTags,
   posts,
@@ -210,11 +211,46 @@ export async function getActivitiesByType(
 
   if (!region || !activityType) return [];
 
-  return getActivities({
+  // Get activities with primary region match
+  const primaryResults = await getActivities({
     regionId: region.id,
     activityTypeId: activityType.id,
     limit,
   });
+
+  // Also get activities multi-tagged to this region via activityRegions junction
+  const multiTagged = await db
+    .select({
+      activity: activities,
+      region: regions,
+      operator: operators,
+      activityType: activityTypes,
+    })
+    .from(activityRegions)
+    .innerJoin(activities, eq(activityRegions.activityId, activities.id))
+    .leftJoin(regions, eq(activities.regionId, regions.id))
+    .leftJoin(operators, eq(activities.operatorId, operators.id))
+    .leftJoin(activityTypes, eq(activities.activityTypeId, activityTypes.id))
+    .where(
+      and(
+        eq(activityRegions.regionId, region.id),
+        eq(activities.activityTypeId, activityType.id),
+        eq(activities.status, "published")
+      )
+    )
+    .orderBy(asc(activities.name));
+
+  // Merge and deduplicate by activity ID
+  const seen = new Set(primaryResults.map((r) => r.activity.id));
+  const combined = [...primaryResults];
+  for (const item of multiTagged) {
+    if (!seen.has(item.activity.id)) {
+      seen.add(item.activity.id);
+      combined.push(item);
+    }
+  }
+
+  return limit ? combined.slice(0, limit) : combined;
 }
 
 // =====================

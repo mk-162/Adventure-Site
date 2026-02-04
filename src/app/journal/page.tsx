@@ -44,6 +44,7 @@ export default function JournalPage() {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedTag, setSelectedTag] = useState("");
   const [loading, setLoading] = useState(true);
+  const [visibleCount, setVisibleCount] = useState(12);
 
   useEffect(() => {
     fetchData();
@@ -51,6 +52,7 @@ export default function JournalPage() {
 
   const fetchData = async () => {
     setLoading(true);
+    setVisibleCount(12);
     try {
       // Fetch posts
       const postsRes = await fetch(
@@ -183,20 +185,25 @@ export default function JournalPage() {
                 <p className="text-slate-500">No articles found. Try adjusting your filters.</p>
               </div>
             ) : (
-              posts.map((post) => {
+              <>
+              {posts.slice(0, visibleCount).map((post) => {
                 const heroImg = post.post.heroImage || categoryFallbackImages[post.post.category] || "/images/activities/hiking-hero.jpg";
                 return (
-                <article
+                <Link
                   key={post.post.id}
-                  className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow"
+                  href={`/journal/${post.post.slug}`}
+                  className="block"
                 >
-                  <div className="grid md:grid-cols-3 gap-6">
+                <article
+                  className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer"
+                >
+                  <div className="grid md:grid-cols-3">
                     <div className="relative h-48 md:h-full min-h-[12rem]">
                       <Image
                         src={heroImg}
                         alt={post.post.title}
                         fill
-                        className="object-cover"
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
                     <div className="md:col-span-2 p-6">
@@ -210,11 +217,11 @@ export default function JournalPage() {
                         </span>
                       </div>
 
-                      <h2 className="text-2xl font-bold text-[#1e3a4c] mb-3 hover:text-[#f97316] transition-colors">
-                        <Link href={`/journal/${post.post.slug}`}>{post.post.title}</Link>
+                      <h2 className="text-xl md:text-2xl font-bold text-[#1e3a4c] mb-3 group-hover:text-[#f97316] transition-colors">
+                        {post.post.title}
                       </h2>
 
-                      <p className="text-slate-600 mb-4 line-clamp-2">{post.post.excerpt}</p>
+                      <p className="text-slate-600 mb-4 line-clamp-3">{post.post.excerpt}</p>
 
                       {/* Tags */}
                       {post.tags && post.tags.length > 0 && (
@@ -232,7 +239,7 @@ export default function JournalPage() {
                       )}
 
                       {/* Meta */}
-                      <div className="flex items-center gap-4 text-sm text-slate-500 mb-4">
+                      <div className="flex items-center gap-4 text-sm text-slate-500">
                         {post.post.author && <span>By {post.post.author}</span>}
                         {post.post.readTimeMinutes && (
                           <span className="flex items-center gap-1">
@@ -240,19 +247,29 @@ export default function JournalPage() {
                             {post.post.readTimeMinutes} min read
                           </span>
                         )}
+                        <span className="ml-auto text-[#f97316] font-semibold group-hover:underline">
+                          Read More →
+                        </span>
                       </div>
-
-                      <Link
-                        href={`/journal/${post.post.slug}`}
-                        className="inline-block text-[#f97316] font-semibold hover:underline"
-                      >
-                        Read More →
-                      </Link>
                     </div>
                   </div>
                 </article>
+                </Link>
                 );
-              })
+              })}
+
+              {/* Load More */}
+              {visibleCount < posts.length && (
+                <div className="text-center pt-4">
+                  <button
+                    onClick={() => setVisibleCount((prev) => prev + 12)}
+                    className="px-8 py-3 bg-[#1e3a4c] text-white rounded-full font-semibold hover:bg-[#2d5568] transition-colors"
+                  >
+                    Load More Articles ({posts.length - visibleCount} remaining)
+                  </button>
+                </div>
+              )}
+              </>
             )}
           </div>
 

@@ -31,13 +31,13 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [ ] Visuals: Missing images! Need thumbnails for itinerary cards AND hero images.
 - [x] Content: Add header text — FIXED: "Multi-Day Road Trips & Itineraries"
 - [x] Content: header description updated — FIXED
-- [ ] UI: Add small map on right side linking to each valid itinerary
+- [x] UI: Add small map on right side linking to each valid itinerary — map in itinerary sidebar
 
 **Itinerary Details / Planner UX**
 
 *Core Layout & Content*
 
-- [ ] Layout: Top section is "messy" -> Reorganize into "Fact Sheet" style cards.
+- [x] Layout: Top section is "messy" -> Reorganize into "Fact Sheet" style cards. — ItineraryFactSheet component
 - [x] Title: "The perfect X days Y road trip" subtitle — FIXED
 - [x] UI: Toggles replaced with simple text links — FIXED
 
@@ -61,10 +61,10 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 *My Trip View (Locked-in / Saved State)*
 
 - [ ] View: Show checklist of "Things to Book".
-- [ ] Feature: Add "Contact" button next to each bookable item.
+- [x] Feature: Add "Contact" button next to each bookable item. — operator links on timeline stops
 - [ ] Feature: Add "Notes" field for users to organize their trip.
 - [ ] Feature: Download as PDF.
-- [ ] Feature: Share Trip (link).
+- [x] Feature: Share Trip (link). — share button on itinerary pages
 - [ ] Feature: Free Text Entry (Add custom items/plans not in DB).
 - [ ] Content: Add "Generic Cards" for filler activities:
   - "Rest & Relaxation"
@@ -153,7 +153,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
   - [ ] Feature idea: Generate social media post of plan.
 - [ ] Logic: Pre-populate Name/Email for logged-in users in messaging.
 - [ ] Logic: Vendor replies must forward to user email.
-- [ ] Content: Privacy Guide -> Explain email storage.
+- [x] Content: Privacy Guide -> Explain email storage. — privacy page already covers this
 
 **Deals System (Proposal)**
 
@@ -237,7 +237,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 - [ ] Design: Include "Top [Activity] Spots" links to locations
 - [x] Feature: Display Top Partners list (Sponsored/Premium partners first) — homepage Trusted Partners section, premium first
 - [x] Feature: Promote itineraries relevant to the specific activity — region itineraries shown on activity detail pages
-- [ ] Feature: Map showing all spots where you can do this activity
+- [x] Feature: Map showing all spots where you can do this activity — activity location maps in sidebar
 - [x] SEO: Page Titles/Content needs optimization (e.g., "Guide to Caving in Wales"). — keyword-rich titles on all main pages
 - [ ] Content: Make guides "rich" (images, formatting).
 - [ ] Plan: Deal with missing images on Journal (Plan needed).

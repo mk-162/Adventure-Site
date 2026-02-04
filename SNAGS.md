@@ -216,6 +216,29 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 *Recommendation*: Use Unsplash or `generate_image` to source these.
 
+### Broken Link Audit Findings (2026-02-04)
+
+*Source: `temp/Broken link report.md` (Xenu Link Sleuth)*
+
+**Internal 404s (Missing Content)**
+
+- [ ] **Answers**: Multiple cross-links broken (e.g., `are-there-accessible-beaches-in-pembrokeshire`, `age-restrictions-for-caving`, `best-time-carmarthenshire`).
+- [ ] **Locations**: `/locations/betws-y-coed` linked from multiple journals is missing.
+- [ ] **Tips**: `/region/tips` pages (e.g., Mid Wales, Pembrokeshire) are missing.
+- [ ] **Journal**: `activity-pembrokeshire` linked from TYF profile is missing.
+
+**External Link Failures (Critical Operator Checks)**
+
+- [ ] **DNS/Host Errors**: The following domains failed to resolve (Operators gone?):
+  - `aberadventures.co.uk`
+  - `broadhavencamping.co.uk`
+  - `llangennithsurf.co.uk`
+  - `oneplanetadventure.co.uk`
+  - `funsportonline.co.uk`
+  - `llynadventures.co.uk`
+- [ ] **SSL/Connectivity Errors**: `adventurewales.co.uk` returning error 12157 (Check SSL/TLS).
+- [ ] **Bot Blocking (Verify Manually)**: TripAdvisor (403) and Google Maps (Timeout) links likely work for humans but blocked the crawler. Needs manual spot check.
+
 ### Notes from Audit
 
 - ✅ 200+ URLs checked across all sections — regions, activities, itineraries, directory, accommodation, events, answers, journal, tags, search

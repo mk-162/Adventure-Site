@@ -679,6 +679,7 @@ export const sitesRelations = relations(sites, ({ many }) => ({
   operators: many(operators),
   advertisers: many(advertisers),
   tags: many(tags),
+  guidePages: many(guidePages),
 }));
 
 export const regionsRelations = relations(regions, ({ one, many }) => ({
@@ -690,6 +691,7 @@ export const regionsRelations = relations(regions, ({ one, many }) => ({
   transport: many(transport),
   itineraries: many(itineraries),
   answers: many(answers),
+  guidePages: many(guidePages),
 }));
 
 export const operatorsRelations = relations(operators, ({ one, many }) => ({
@@ -787,6 +789,95 @@ export const operatorInterest = pgTable("operator_interest", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
+// Guide page type enum
+export const guidePageTypeEnum = pgEnum("guide_page_type", [
+  "combo",
+  "best_of",
+]);
+
+// Guide pages — combo and best-of SEO pages
+export const guidePages = pgTable("guide_pages", {
+  id: serial("id").primaryKey(),
+  siteId: integer("site_id")
+    .references(() => sites.id)
+    .notNull(),
+  type: guidePageTypeEnum("type").notNull(),
+  regionId: integer("region_id")
+    .references(() => regions.id)
+    .notNull(),
+  activityTypeId: integer("activity_type_id")
+    .references(() => activityTypes.id)
+    .notNull(),
+  slug: varchar("slug", { length: 255 }).notNull(),
+  urlPath: varchar("url_path", { length: 255 }).notNull(),
+  title: varchar("title", { length: 255 }).notNull(),
+  h1: varchar("h1", { length: 255 }),
+  strapline: text("strapline"),
+  metaTitle: varchar("meta_title", { length: 255 }),
+  metaDescription: text("meta_description"),
+  heroImage: text("hero_image"),
+  heroAlt: text("hero_alt"),
+  introduction: text("introduction"),
+  bestSeason: varchar("best_season", { length: 100 }),
+  difficultyRange: varchar("difficulty_range", { length: 100 }),
+  priceRange: varchar("price_range", { length: 100 }),
+  dataFile: varchar("data_file", { length: 255 }),
+  keywords: jsonb("keywords"),
+
+  // Commercial fields
+  sponsorOperatorId: integer("sponsor_operator_id").references(() => operators.id),
+  sponsorDisplayName: varchar("sponsor_display_name", { length: 255 }),
+  sponsorTagline: text("sponsor_tagline"),
+  sponsorCtaText: varchar("sponsor_cta_text", { length: 100 }),
+  sponsorCtaUrl: text("sponsor_cta_url"),
+  sponsorExpiresAt: timestamp("sponsor_expires_at"),
+  featuredOperatorIds: jsonb("featured_operator_ids"),
+
+  // SEO tracking
+  targetKeyword: varchar("target_keyword", { length: 255 }),
+  searchVolume: integer("search_volume"),
+  currentRanking: integer("current_ranking"),
+  lastRankCheck: timestamp("last_rank_check"),
+
+  // Status
+  contentStatus: statusEnum("content_status").default("draft").notNull(),
+  priority: integer("priority").default(0),
+  publishedAt: timestamp("published_at"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
+// Guide page spots — individual entries within a guide page
+export const guidePageSpots = pgTable("guide_page_spots", {
+  id: serial("id").primaryKey(),
+  guidePageId: integer("guide_page_id")
+    .references(() => guidePages.id)
+    .notNull(),
+  rank: integer("rank").notNull(),
+  name: varchar("name", { length: 255 }).notNull(),
+  slug: varchar("slug", { length: 255 }),
+  description: text("description"),
+  verdict: text("verdict"),
+  difficulty: varchar("difficulty", { length: 50 }),
+  duration: varchar("duration", { length: 100 }),
+  distance: varchar("distance", { length: 50 }),
+  elevationGain: varchar("elevation_gain", { length: 50 }),
+  bestFor: text("best_for"),
+  notSuitableFor: text("not_suitable_for"),
+  bestSeason: varchar("best_season", { length: 100 }),
+  parking: text("parking"),
+  estimatedCost: varchar("estimated_cost", { length: 100 }),
+  insiderTip: text("insider_tip"),
+  image: text("image"),
+  imageAlt: text("image_alt"),
+  lat: decimal("lat", { precision: 10, scale: 7 }),
+  lng: decimal("lng", { precision: 10, scale: 7 }),
+  operatorId: integer("operator_id").references(() => operators.id),
+  activityId: integer("activity_id").references(() => activities.id),
+  youtubeVideoId: varchar("youtube_video_id", { length: 20 }),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
 // Post category enum
 export const postCategoryEnum = pgEnum("post_category", [
   "guide",
@@ -843,4 +934,19 @@ export const postsRelations = relations(posts, ({ one, many }) => ({
 export const postTagsRelations = relations(postTags, ({ one }) => ({
   post: one(posts, { fields: [postTags.postId], references: [posts.id] }),
   tag: one(tags, { fields: [postTags.tagId], references: [tags.id] }),
+}));
+
+// Guide pages relations
+export const guidePagesRelations = relations(guidePages, ({ one, many }) => ({
+  site: one(sites, { fields: [guidePages.siteId], references: [sites.id] }),
+  region: one(regions, { fields: [guidePages.regionId], references: [regions.id] }),
+  activityType: one(activityTypes, { fields: [guidePages.activityTypeId], references: [activityTypes.id] }),
+  sponsorOperator: one(operators, { fields: [guidePages.sponsorOperatorId], references: [operators.id] }),
+  spots: many(guidePageSpots),
+}));
+
+export const guidePageSpotsRelations = relations(guidePageSpots, ({ one }) => ({
+  guidePage: one(guidePages, { fields: [guidePageSpots.guidePageId], references: [guidePages.id] }),
+  operator: one(operators, { fields: [guidePageSpots.operatorId], references: [operators.id] }),
+  activity: one(activities, { fields: [guidePageSpots.activityId], references: [activities.id] }),
 }));

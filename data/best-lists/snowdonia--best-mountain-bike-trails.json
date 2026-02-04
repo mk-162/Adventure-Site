@@ -1,0 +1,365 @@
+{
+  "regionSlug": "snowdonia",
+  "slug": "best-mountain-bike-trails",
+  "urlPath": "/snowdonia/best-mountain-bike-trails",
+  "title": "9 Best Mountain Bike Trails in Snowdonia",
+  "metaTitle": "9 Best MTB Trails in Snowdonia (2025)",
+  "metaDescription": "Ranked guide to the best mountain bike trails in Snowdonia. Trail centres, wild rides, and uplift runs — from flowy singletrack to gnarly descents.",
+  "h1": "9 Best Mountain Bike Trails in Snowdonia (2025)",
+  "strapline": "From Coed y Brenin's flow trails to Antur Stiniog's gnar — Wales's best riding.",
+  "heroImage": "/images/best-lists/snowdonia-best-mtb-hero.jpg",
+  "heroAlt": "Mountain biker descending a rocky singletrack trail with Snowdonia mountains behind",
+  "updatedDate": "2025-07",
+  "introduction": "Snowdonia is one of the best mountain biking destinations in the UK, full stop. Within the national park and its fringes, you've got purpose-built trail centres with graded routes, gravity parks with uplift, and wild backcountry rides that take you through some of the most dramatic mountain scenery in Wales.\n\nCoed y Brenin pioneered the UK trail centre concept in the 1990s and remains excellent. But the real magic of Snowdonia MTB is the variety: you can session downhill runs at Antur Stiniog in the morning, ride flowy singletrack at Coed y Brenin in the afternoon, and tackle a wild mountain pass on the Marin Trail the next day.\n\nTrail conditions are rain-dependent (this is Snowdonia), but the best-drained trails ride well year-round. Bring mudguards. Always bring mudguards.",
+  "rankingCriteria": "We've ridden all of these trails multiple times in varying conditions. Rankings combine trail quality (surface, flow, features), scenery, facilities, variety of riding, and that grin-factor that makes you want to ride it again immediately.",
+  "comboPageLink": "/snowdonia/things-to-do/mountain-biking",
+  "keywords": {
+    "primary": "best mountain bike trails snowdonia",
+    "secondary": ["snowdonia mountain biking", "mtb snowdonia", "best mtb trails north wales", "mountain biking snowdonia"],
+    "longTail": [
+      "coed y brenin mountain bike trails",
+      "antur stiniog downhill",
+      "best beginner mountain bike trails snowdonia",
+      "penmachno trails snowdonia",
+      "marin trail betws y coed",
+      "snowdonia mtb trail centres"
+    ]
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Coed y Brenin — MBR & Temtiwr",
+      "slug": "coed-y-brenin",
+      "verdict": "The original and still the king. The UK's first purpose-built trail centre is still one of the best.",
+      "image": "/images/best-lists/snowdonia-best-mtb-coed-y-brenin.jpg",
+      "imageAlt": "Mountain biker riding flowing singletrack through forest at Coed y Brenin",
+      "whyItMadeTheList": "Coed y Brenin pioneered mountain biking in the UK when it opened its first purpose-built trail in 1996. Nearly 30 years later, it's still exceptional. The MBR (red grade) trail is the star — flowing singletrack through ancient oak woodland with roots, rocks, berms, and natural features that reward skill. Temtiwr (black) adds technical challenge. The trail centre facilities are excellent and the forest setting is gorgeous. It's the benchmark that other UK trail centres aspire to.",
+      "difficulty": "Moderate-Expert (green to black graded trails)",
+      "duration": "1.5-3 hours per trail",
+      "distance": "7-32km depending on trail",
+      "cost": "Free (parking £3)",
+      "bestFor": "All abilities — genuinely has trails from beginner to expert. The MBR trail is the sweet spot for intermediates.",
+      "skipIf": "You only want downhill/gravity riding — Coed y Brenin is cross-country focused. Head to Antur Stiniog instead.",
+      "insiderTip": "The Caffi Coed y Brenin serves excellent cake and coffee — refuel between loops. Ride the Temtiwr extension off the MBR for the best technical sections. The trails drain well and ride surprisingly well in the wet. Visit midweek to have the trails to yourself.",
+      "season": "Year-round (best April–October)",
+      "parking": {
+        "location": "Coed y Brenin visitor centre",
+        "cost": "£3/day (NRW)",
+        "notes": "Large car park with visitor centre, café, toilets, bike wash. Well-signed from A470.",
+        "lat": 52.8141,
+        "lng": -3.8742
+      },
+      "startPoint": {
+        "name": "Coed y Brenin Visitor Centre",
+        "lat": 52.8141,
+        "lng": -3.8742
+      },
+      "operatorSlug": null,
+      "guidedOption": "Beics Brenin bike hire and skills coaching available at the visitor centre",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 2,
+      "name": "Antur Stiniog",
+      "slug": "antur-stiniog",
+      "verdict": "Wales's best gravity park. Uplift runs on everything from flow trails to gnarly rock gardens.",
+      "image": "/images/best-lists/snowdonia-best-mtb-antur-stiniog.jpg",
+      "imageAlt": "Downhill mountain biker mid-air on a jump at Antur Stiniog",
+      "whyItMadeTheList": "Antur Stiniog is the best gravity riding in Snowdonia and one of the best in the UK. Built in the old Stiniog slate quarries above Blaenau Ffestiniog, it uses uplift vans to shuttle riders to the top of multiple downhill trails. The trails range from smooth flow runs to genuinely gnarly rock gardens through the industrial ruins. The quarry setting is atmospheric and unlike any other trail centre. This is where North Wales gravity riders go.",
+      "difficulty": "Intermediate-Expert (blue to black runs)",
+      "duration": "Full day with uplift passes",
+      "distance": "1.5-3km per run, multiple runs per day",
+      "cost": "£25-35 uplift day pass",
+      "bestFor": "Gravity riders wanting downhill thrills without pedalling uphill. All DH abilities welcome.",
+      "skipIf": "You want cross-country riding or long-distance trails — this is pure downhill.",
+      "insiderTip": "Start on the blue (Benny Blanco) to warm up, then progress to the red and black runs. The quarry features — slate walls, old buildings, drops over ruins — are unique. Book uplift passes online in advance for summer weekends. The café at the bottom serves proper food, not just energy bars.",
+      "season": "March–November (check website for uplift schedule)",
+      "parking": {
+        "location": "Antur Stiniog car park",
+        "cost": "Free with uplift pass",
+        "notes": "Car park at the bottom station. Signed from Blaenau Ffestiniog.",
+        "lat": 52.9842,
+        "lng": -3.9366
+      },
+      "startPoint": {
+        "name": "Antur Stiniog, Blaenau Ffestiniog",
+        "lat": 52.9842,
+        "lng": -3.9366
+      },
+      "operatorSlug": null,
+      "guidedOption": "Full-sus bike hire available on site. Coaching sessions available.",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 3,
+      "name": "Penmachno Trails",
+      "slug": "penmachno-trails",
+      "verdict": "Built by riders, for riders. The most technical natural singletrack in Wales.",
+      "image": "/images/best-lists/snowdonia-best-mtb-penmachno.jpg",
+      "imageAlt": "Tight technical singletrack winding through trees at Penmachno trails",
+      "whyItMadeTheList": "Penmachno is special because it was built and maintained by local volunteers, giving it a raw, natural feel that sanitised trail centres lack. The trails are tight, technical, and rooty — proper natural singletrack that rewards bike handling over fitness. The setting in the Machno Valley is beautiful, and the community spirit is palpable. Riding here feels like mountain biking should feel.",
+      "difficulty": "Intermediate-Expert (red/black natural singletrack)",
+      "duration": "2-3 hours",
+      "distance": "15-22km",
+      "cost": "Free (donations encouraged — these trails are volunteer-maintained)",
+      "bestFor": "Experienced riders who prefer natural, technical singletrack to bermed flow trails",
+      "skipIf": "You're a beginner — there are no easy trails here. The technical features are genuine.",
+      "insiderTip": "Donate to the Penmachno Trail Builders — they maintain these trails voluntarily and deserve the support. The trails can be very muddy in winter. The Machno loop is the classic ride. Park sensibly and don't block the forest access roads.",
+      "season": "April–October (very muddy in winter)",
+      "parking": {
+        "location": "Penmachno Forest car park",
+        "cost": "Free (NRW)",
+        "notes": "Small forest car park. Follow signs from Penmachno village. Limited facilities.",
+        "lat": 53.0244,
+        "lng": -3.8130
+      },
+      "startPoint": {
+        "name": "Penmachno Forest",
+        "lat": 53.0244,
+        "lng": -3.8130
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 4,
+      "name": "Marin Trail (Gwydir Forest)",
+      "slug": "marin-trail",
+      "verdict": "The classic North Wales mountain bike trail — proper cross-country riding with big views.",
+      "image": "/images/best-lists/snowdonia-best-mtb-marin-trail.jpg",
+      "imageAlt": "Mountain biker climbing a forest road with Snowdonia mountains visible through the trees",
+      "whyItMadeTheList": "The Marin Trail was one of the first waymarked mountain bike routes in Wales and it's still a cracker. A red-graded XC loop through Gwydir Forest above Betws-y-Coed, it packs in steep forest road climbs rewarded by flowing singletrack descents through atmospheric forest. The views out to the Snowdonia peaks are stunning. It's a proper workout that tests fitness and bike handling equally.",
+      "difficulty": "Intermediate (red grade)",
+      "duration": "2-3 hours",
+      "distance": "25km",
+      "cost": "Free (parking £3)",
+      "bestFor": "Cross-country riders wanting a solid half-day ride with good climbing and technical descents",
+      "skipIf": "You hate climbing on forest roads — there's a fair amount of fire-road grind. The descents more than compensate.",
+      "insiderTip": "The Marin extension (Cowlyd Killer) adds a more technical section if you want extra mileage. Start from Betws-y-Coed for the easiest access. Beics Betws in the village rents quality bikes if you need hire.",
+      "season": "Year-round (muddy but rideable in winter)",
+      "parking": {
+        "location": "Gwydir Forest car park (Llyn Crafnant road)",
+        "cost": "£3/day",
+        "notes": "Small forest car park. Alternative: park in Betws-y-Coed and ride to the trailhead.",
+        "lat": 53.0936,
+        "lng": -3.8189
+      },
+      "startPoint": {
+        "name": "Gwydir Forest, near Betws-y-Coed",
+        "lat": 53.0936,
+        "lng": -3.8189
+      },
+      "operatorSlug": null,
+      "guidedOption": "Beics Betws bike hire in Betws-y-Coed",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 5,
+      "name": "Gwydir Bach & Mawr",
+      "slug": "gwydir-bach-mawr",
+      "verdict": "Betws-y-Coed's home trails — from gentle family loops to proper technical riding.",
+      "image": "/images/best-lists/snowdonia-best-mtb-gwydir.jpg",
+      "imageAlt": "Wooded singletrack in Gwydir Forest with autumn colours",
+      "whyItMadeTheList": "Gwydir Bach (the smaller loop) and Gwydir Mawr (the bigger loop) between them offer everything from gentle family riding to technical singletrack. Based in the forests around Betws-y-Coed, they're the most accessible trails in Snowdonia — you can be riding within 5 minutes of parking. The Bach loop is perfect for beginners, while Mawr has some excellent technical sections through old mine workings. The Betws-y-Coed infrastructure (bike shops, cafés, accommodation) makes these ideal for a riding weekend.",
+      "difficulty": "Easy-Intermediate (blue-red)",
+      "duration": "1-2.5 hours",
+      "distance": "8-18km",
+      "cost": "Free",
+      "bestFor": "Beginners and families (Bach), intermediates wanting convenient riding (Mawr)",
+      "skipIf": "You want big mountain descents or pure gravity — head to Antur Stiniog.",
+      "insiderTip": "Gwydir Bach is genuinely one of the best beginner MTB trails in Wales — gentle grades, smooth surfaces, and beautiful forest. Perfect for introducing kids to off-road riding. Beics Betws on the A5 rents bikes and can advise on routes for your ability.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Betws-y-Coed car parks or Llyn Elsi car park",
+        "cost": "£3-5/day",
+        "notes": "Multiple options in and around Betws-y-Coed.",
+        "lat": 53.0910,
+        "lng": -3.8025
+      },
+      "startPoint": {
+        "name": "Betws-y-Coed",
+        "lat": 53.0910,
+        "lng": -3.8025
+      },
+      "operatorSlug": null,
+      "guidedOption": "Beics Betws bike hire and skills coaching",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 6,
+      "name": "Dyfi Trails (Machynlleth)",
+      "slug": "dyfi-trails",
+      "verdict": "Home of the Dyfi Enduro and some of the best natural riding in Wales.",
+      "image": "/images/best-lists/snowdonia-best-mtb-dyfi.jpg",
+      "imageAlt": "Technical rock garden on a Dyfi Trail with the Dyfi Valley visible below",
+      "whyItMadeTheList": "The trails around Machynlleth at the southern edge of Snowdonia are legendary in the Welsh MTB community. The famous ClimachX trail is a red-graded enduro-style route with long, technical descents and properly earned climbs. The Dyfi Enduro race uses these trails, and the riding is natural, varied, and challenging. Machynlleth itself is a fantastic mountain biking hub with shops, accommodation, and a welcoming community.",
+      "difficulty": "Intermediate-Expert (red/black)",
+      "duration": "2-4 hours",
+      "distance": "15-30km depending on route",
+      "cost": "Free (donations to trail builders)",
+      "bestFor": "Enduro-style riders who like natural terrain and earned descents",
+      "skipIf": "You want a sanitised trail centre experience — these trails are raw and demanding.",
+      "insiderTip": "The ClimachX trail is the must-ride route. The Dyfi Bike Park offers uplift for pure gravity sessions if you don't want to climb. The Dyfi Distillery in Machynlleth makes an excellent gin — buy a bottle for post-ride celebration.",
+      "season": "April–October (muddy in winter)",
+      "parking": {
+        "location": "Machynlleth town or forest car parks",
+        "cost": "Free-£3",
+        "notes": "Multiple trailheads around the town. Ask at local bike shops for current best access.",
+        "lat": 52.5901,
+        "lng": -3.8531
+      },
+      "startPoint": {
+        "name": "Machynlleth / Dyfi Forest",
+        "lat": 52.5901,
+        "lng": -3.8531
+      },
+      "operatorSlug": null,
+      "guidedOption": "Dyfi Bike Park offers uplift and hire",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 7,
+      "name": "Snowdon (Llanberis Path — descent only)",
+      "slug": "snowdon-llanberis-descent",
+      "verdict": "Ride down from the summit of Wales's highest mountain. Bucket-list stuff.",
+      "image": "/images/best-lists/snowdonia-best-mtb-snowdon.jpg",
+      "imageAlt": "Mountain biker on the rocky upper section of the Llanberis Path with dramatic views",
+      "whyItMadeTheList": "You can ride a mountain bike to the summit of Snowdon (on permitted paths, outside restricted hours) and descend the Llanberis Path. The upper sections are rocky and technical, the middle sections are fast and flowing, and the whole thing comes with views that no trail centre can match. It's an adventure ride rather than a trail centre run — proper mountain biking in the original sense.",
+      "difficulty": "Expert (ungraded mountain riding)",
+      "duration": "4-6 hours (up and down)",
+      "distance": "14.5km return",
+      "cost": "Free (parking £6-10)",
+      "bestFor": "Experienced mountain bikers wanting a genuine mountain adventure",
+      "skipIf": "You're not a confident technical rider — the upper sections are very rocky. Also avoid peak summer weekends when the path is rammed with walkers. Bikes are not allowed on Snowdon between 10am-5pm May-September.",
+      "insiderTip": "The voluntary cycling restriction means you need to start before dawn or go in the evening (May-September) — or ride in the shoulder season (October-April). The Rhyd Ddu and Ranger paths are technically more rideable but even quieter. This is about the experience, not the Strava time.",
+      "season": "October–April (or before 10am / after 5pm May–September)",
+      "parking": {
+        "location": "Llanberis village car parks",
+        "cost": "£6-10/day",
+        "notes": "Start from Llanberis. Check bike restrictions on visitsnowdonia.info before going.",
+        "lat": 53.1193,
+        "lng": -4.1281
+      },
+      "startPoint": {
+        "name": "Llanberis",
+        "lat": 53.1193,
+        "lng": -4.1281
+      },
+      "operatorSlug": null,
+      "guidedOption": null,
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 8,
+      "name": "Coed Llandegla (just outside Snowdonia)",
+      "slug": "coed-llandegla",
+      "verdict": "The best all-round trail centre in North Wales for families and mixed-ability groups.",
+      "image": "/images/best-lists/snowdonia-best-mtb-llandegla.jpg",
+      "imageAlt": "Family riding mountain bikes on a smooth forest trail at Coed Llandegla",
+      "whyItMadeTheList": "Technically just outside the national park boundary, Coed Llandegla is included because it's where most North Wales mountain bikers start their journey. The trail centre has genuinely excellent facilities — café, bike hire, skills area, shop — and trails graded from green (absolute beginner) through to black (expert). The red trail is one of the best intermediate loops in Wales: flowing berms, table-tops, and natural features in a beautiful forest setting.",
+      "difficulty": "All levels (green to black)",
+      "duration": "1-3 hours depending on trail",
+      "distance": "5-21km",
+      "cost": "Free (parking £3, some trails free, others require parking)",
+      "bestFor": "Beginners, families, mixed-ability groups, and anyone wanting a well-run trail centre with full facilities",
+      "skipIf": "You want wild, natural riding — Llandegla is well-maintained and groomed. For raw trails, go to Penmachno.",
+      "insiderTip": "The skills area is free and excellent for practicing jumps and drops. Book ahead for bike hire on summer weekends. The café is genuinely good — not the usual trail centre afterthought. Friday evening sessions in summer are a local tradition.",
+      "season": "Year-round (well-drained trails)",
+      "parking": {
+        "location": "Coed Llandegla visitor centre",
+        "cost": "£3/day",
+        "notes": "Large, well-equipped car park with full facilities. Signed from the A525 near Wrexham.",
+        "lat": 53.0606,
+        "lng": -3.3289
+      },
+      "startPoint": {
+        "name": "Coed Llandegla Visitor Centre",
+        "lat": 53.0606,
+        "lng": -3.3289
+      },
+      "operatorSlug": null,
+      "guidedOption": "Full bike hire, skills coaching, and kids' lessons available on site",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    },
+    {
+      "rank": 9,
+      "name": "Mawddach Trail (Barmouth to Dolgellau)",
+      "slug": "mawddach-trail",
+      "verdict": "Not mountain biking — but the most beautiful bike ride in Wales. Perfect for families.",
+      "image": "/images/best-lists/snowdonia-best-mtb-mawddach.jpg",
+      "imageAlt": "Cyclist on the Mawddach Trail with the estuary and Cadair Idris visible",
+      "whyItMadeTheList": "Strictly speaking, the Mawddach Trail is a flat, traffic-free cycle path along a disused railway line, not a mountain bike trail. But it's so beautiful and so popular that it deserves mention. The 15km route follows the Mawddach Estuary from Barmouth to Dolgellau, crossing the famous Barmouth Bridge, with Cadair Idris as a backdrop. It's the ride that gets families onto bikes in Snowdonia. Any bike will do — you don't need a mountain bike.",
+      "difficulty": "Easy (flat, traffic-free)",
+      "duration": "1.5-2 hours one way",
+      "distance": "15km one way",
+      "cost": "£1 bridge toll",
+      "bestFor": "Families, casual cyclists, anyone wanting a scenic bike ride without the mud and sweat",
+      "skipIf": "You want actual mountain biking — this is a flat path. Beautiful, but flat.",
+      "insiderTip": "Rent bikes in Barmouth, ride to Dolgellau, have lunch at Y Sospan bistro, and ride back. The George III Hotel at Penmaenpool (roughly halfway) has a beer garden overlooking the estuary — essential stopping point.",
+      "season": "Year-round",
+      "parking": {
+        "location": "Barmouth seafront car parks",
+        "cost": "£5-8/day",
+        "notes": "Start from Barmouth for the bridge crossing at the beginning.",
+        "lat": 52.7233,
+        "lng": -4.0558
+      },
+      "startPoint": {
+        "name": "Barmouth Bridge",
+        "lat": 52.7183,
+        "lng": -4.0485
+      },
+      "operatorSlug": null,
+      "guidedOption": "Multiple bike hire shops in Barmouth",
+      "youtubeVideoId": null,
+      "relatedActivitySlug": null,
+      "comboPageAnchor": null
+    }
+  ],
+  "comparisonTable": true,
+  "seasonalPicks": {
+    "spring": { "entries": [1, 4], "note": "Trails drying out, forest coming alive, quieter before summer" },
+    "summer": { "entries": [9, 5], "note": "Best conditions, longest days, family trails at their finest" },
+    "autumn": { "entries": [3, 6], "note": "Golden forests, tackier trails (better grip), thinning crowds" },
+    "winter": { "entries": [1, 8], "note": "Stick to well-drained trail centres. Coed y Brenin and Llandegla ride well year-round" }
+  },
+  "faqs": [
+    {
+      "question": "What's the best mountain bike trail centre in Snowdonia?",
+      "answer": "Coed y Brenin (#1) for overall quality and variety. Coed Llandegla (#8) for families and beginners — it has the best facilities. Antur Stiniog (#2) for gravity riding."
+    },
+    {
+      "question": "Can you mountain bike on Snowdon?",
+      "answer": "Yes, but with restrictions. A voluntary cycling ban applies 10am-5pm from May to September on the busiest paths. Outside these hours and in the off-season, the Llanberis Path is rideable for experienced mountain bikers (#7). Always give way to walkers."
+    },
+    {
+      "question": "Where can I hire a mountain bike in Snowdonia?",
+      "answer": "Beics Betws in Betws-y-Coed, Beics Brenin at Coed y Brenin, and Coed Llandegla trail centre all offer quality hire bikes. Expect £35-60/day for a full-suspension bike. Book ahead in summer."
+    },
+    {
+      "question": "Are Snowdonia trails suitable for beginners?",
+      "answer": "Yes — Gwydir Bach (#5) and Coed Llandegla green trail (#8) are purpose-built for beginners. The Mawddach Trail (#9) is flat and traffic-free, perfect for families. Coed y Brenin also has gentle green trails."
+    }
+  ],
+  "relatedLists": [
+    { "slug": "/snowdonia/best-hikes", "label": "Best Hikes in Snowdonia" },
+    { "slug": "/snowdonia/best-walks", "label": "Best Walks in Snowdonia" }
+  ]
+}

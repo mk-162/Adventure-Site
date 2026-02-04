@@ -10,6 +10,7 @@ import { CloudRain, PiggyBank, Star, Home, MapPin } from "lucide-react";
 import { accommodation, regions } from "@/db/schema";
 import clsx from "clsx";
 import { WeatherWidget } from "@/components/weather/WeatherWidget";
+import { ClimateChart } from "@/components/weather/ClimateChart";
 
 type AccommodationData = typeof accommodation.$inferSelect;
 type RegionData = typeof regions.$inferSelect;
@@ -149,6 +150,9 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, regio
               regionName={region.name} 
               compact
             />
+         )}
+         {region?.slug && (
+            <ClimateChart regionSlug={region.slug} compact />
          )}
          <CostBreakdown stops={stops} mode={mode} itineraryName={itineraryName} />
       </aside>

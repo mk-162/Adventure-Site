@@ -14,7 +14,8 @@
     "db:seed": "tsx scripts/seed.ts",
     "db:import": "tsx scripts/import-content.ts",
     "db:import-itineraries": "tsx scripts/import-json-itineraries.ts",
-    "db:import-journal": "tsx scripts/import-journal-articles.ts"
+    "db:import-journal": "tsx scripts/import-journal-articles.ts",
+    "build:climate": "tsx scripts/build-climate-data.ts"
   },
   "dependencies": {
     "@vercel/postgres": "^0.10.0",

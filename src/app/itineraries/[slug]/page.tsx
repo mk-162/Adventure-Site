@@ -137,9 +137,21 @@ export default async function ItineraryDetailPage({ params }: Props) {
         
         {/* Intro */}
         {itinerary.description && (
-           <div className="prose prose-lg max-w-none mb-10 text-gray-600">
+           <div className="prose prose-lg max-w-none mb-6 text-gray-600">
                <p>{itinerary.description}</p>
            </div>
+        )}
+
+        {/* Best Time to Visit */}
+        {itinerary.bestSeason && (
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 mb-10 flex items-start gap-3">
+            <Calendar className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+            <div>
+              <p className="text-sm text-emerald-900">
+                <span className="font-bold">Best time for this trip:</span> {itinerary.bestSeason}
+              </p>
+            </div>
+          </div>
         )}
 
         {/* Main View Component */}

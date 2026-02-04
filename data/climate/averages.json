@@ -1,0 +1,620 @@
+{
+  "stations": {
+    "valley": {
+      "name": "Valley (Anglesey)",
+      "lat": 53.252,
+      "lng": -4.535,
+      "regions": [
+        "snowdonia",
+        "anglesey",
+        "north-wales",
+        "north-wales-coast"
+      ],
+      "months": [
+        {
+          "month": 1,
+          "name": "January",
+          "maxTemp": 8.4,
+          "minTemp": 3.9,
+          "rainfall": 75.8,
+          "sunshine": 59,
+          "frostDays": 4.9
+        },
+        {
+          "month": 2,
+          "name": "February",
+          "maxTemp": 8.7,
+          "minTemp": 3.9,
+          "rainfall": 62.2,
+          "sunshine": 82.6,
+          "frostDays": 4.2
+        },
+        {
+          "month": 3,
+          "name": "March",
+          "maxTemp": 10.1,
+          "minTemp": 4.5,
+          "rainfall": 55.3,
+          "sunshine": 131.9,
+          "frostDays": 2.7
+        },
+        {
+          "month": 4,
+          "name": "April",
+          "maxTemp": 12.3,
+          "minTemp": 6.1,
+          "rainfall": 52,
+          "sunshine": 177.9,
+          "frostDays": 0.6
+        },
+        {
+          "month": 5,
+          "name": "May",
+          "maxTemp": 15.2,
+          "minTemp": 8.8,
+          "rainfall": 51.2,
+          "sunshine": 223.5,
+          "frostDays": 0
+        },
+        {
+          "month": 6,
+          "name": "June",
+          "maxTemp": 17.5,
+          "minTemp": 11.3,
+          "rainfall": 56,
+          "sunshine": 206.5,
+          "frostDays": 0
+        },
+        {
+          "month": 7,
+          "name": "July",
+          "maxTemp": 18.9,
+          "minTemp": 13,
+          "rainfall": 58.7,
+          "sunshine": 190.6,
+          "frostDays": 0
+        },
+        {
+          "month": 8,
+          "name": "August",
+          "maxTemp": 18.9,
+          "minTemp": 13.3,
+          "rainfall": 69.6,
+          "sunshine": 174.9,
+          "frostDays": 0
+        },
+        {
+          "month": 9,
+          "name": "September",
+          "maxTemp": 17.5,
+          "minTemp": 11.9,
+          "rainfall": 81.7,
+          "sunshine": 139.5,
+          "frostDays": 0
+        },
+        {
+          "month": 10,
+          "name": "October",
+          "maxTemp": 14.6,
+          "minTemp": 9.6,
+          "rainfall": 108.8,
+          "sunshine": 96.8,
+          "frostDays": 0.1
+        },
+        {
+          "month": 11,
+          "name": "November",
+          "maxTemp": 11.4,
+          "minTemp": 6.8,
+          "rainfall": 103.7,
+          "sunshine": 57.4,
+          "frostDays": 0.6
+        },
+        {
+          "month": 12,
+          "name": "December",
+          "maxTemp": 9.3,
+          "minTemp": 4.7,
+          "rainfall": 98.8,
+          "sunshine": 43.9,
+          "frostDays": 3.7
+        }
+      ]
+    },
+    "aberporth": {
+      "name": "Aberporth (West Wales)",
+      "lat": 52.139,
+      "lng": -4.57,
+      "regions": [
+        "pembrokeshire",
+        "gower",
+        "carmarthenshire"
+      ],
+      "months": [
+        {
+          "month": 1,
+          "name": "January",
+          "maxTemp": 7.8,
+          "minTemp": 3.5,
+          "rainfall": 91.2,
+          "sunshine": 59.3,
+          "frostDays": 3.9
+        },
+        {
+          "month": 2,
+          "name": "February",
+          "maxTemp": 8.2,
+          "minTemp": 3.5,
+          "rainfall": 70.7,
+          "sunshine": 79.7,
+          "frostDays": 3.3
+        },
+        {
+          "month": 3,
+          "name": "March",
+          "maxTemp": 9.6,
+          "minTemp": 4.3,
+          "rainfall": 56.3,
+          "sunshine": 128.2,
+          "frostDays": 1.8
+        },
+        {
+          "month": 4,
+          "name": "April",
+          "maxTemp": 11.9,
+          "minTemp": 5.8,
+          "rainfall": 51.6,
+          "sunshine": 175.7,
+          "frostDays": 0.4
+        },
+        {
+          "month": 5,
+          "name": "May",
+          "maxTemp": 14.4,
+          "minTemp": 8.3,
+          "rainfall": 55.5,
+          "sunshine": 205.8,
+          "frostDays": 0
+        },
+        {
+          "month": 6,
+          "name": "June",
+          "maxTemp": 17,
+          "minTemp": 10.9,
+          "rainfall": 57.9,
+          "sunshine": 201.5,
+          "frostDays": 0
+        },
+        {
+          "month": 7,
+          "name": "July",
+          "maxTemp": 18.4,
+          "minTemp": 12.7,
+          "rainfall": 63,
+          "sunshine": 184,
+          "frostDays": 0
+        },
+        {
+          "month": 8,
+          "name": "August",
+          "maxTemp": 18.5,
+          "minTemp": 12.9,
+          "rainfall": 68.9,
+          "sunshine": 165.6,
+          "frostDays": 0
+        },
+        {
+          "month": 9,
+          "name": "September",
+          "maxTemp": 16.9,
+          "minTemp": 11.5,
+          "rainfall": 75.1,
+          "sunshine": 136,
+          "frostDays": 0
+        },
+        {
+          "month": 10,
+          "name": "October",
+          "maxTemp": 13.9,
+          "minTemp": 9.2,
+          "rainfall": 111,
+          "sunshine": 92.6,
+          "frostDays": 0
+        },
+        {
+          "month": 11,
+          "name": "November",
+          "maxTemp": 10.7,
+          "minTemp": 6.4,
+          "rainfall": 116.3,
+          "sunshine": 57.6,
+          "frostDays": 0.5
+        },
+        {
+          "month": 12,
+          "name": "December",
+          "maxTemp": 8.7,
+          "minTemp": 4.4,
+          "rainfall": 108.4,
+          "sunshine": 47.4,
+          "frostDays": 3.2
+        }
+      ]
+    },
+    "cwmystwyth": {
+      "name": "Cwmystwyth (Mid Wales)",
+      "lat": 52.359,
+      "lng": -3.802,
+      "regions": [
+        "brecon-beacons",
+        "mid-wales",
+        "multi-region"
+      ],
+      "months": [
+        {
+          "month": 1,
+          "name": "January",
+          "maxTemp": 6.1,
+          "minTemp": 0.9,
+          "rainfall": 198.4,
+          "sunshine": 34.2,
+          "frostDays": 11.9
+        },
+        {
+          "month": 2,
+          "name": "February",
+          "maxTemp": 6.4,
+          "minTemp": 0.9,
+          "rainfall": 144.7,
+          "sunshine": 59.5,
+          "frostDays": 10.9
+        },
+        {
+          "month": 3,
+          "name": "March",
+          "maxTemp": 8.2,
+          "minTemp": 1.9,
+          "rainfall": 155.4,
+          "sunshine": 82.4,
+          "frostDays": 8.7
+        },
+        {
+          "month": 4,
+          "name": "April",
+          "maxTemp": 10.9,
+          "minTemp": 3.1,
+          "rainfall": 108.8,
+          "sunshine": 136.8,
+          "frostDays": 5.9
+        },
+        {
+          "month": 5,
+          "name": "May",
+          "maxTemp": 14.2,
+          "minTemp": 5.8,
+          "rainfall": 101,
+          "sunshine": 168.2,
+          "frostDays": 1.8
+        },
+        {
+          "month": 6,
+          "name": "June",
+          "maxTemp": 16.2,
+          "minTemp": 8.3,
+          "rainfall": 113,
+          "sunshine": 141.8,
+          "frostDays": 0.2
+        },
+        {
+          "month": 7,
+          "name": "July",
+          "maxTemp": 18,
+          "minTemp": 10.5,
+          "rainfall": 131.8,
+          "sunshine": 145.3,
+          "frostDays": 0
+        },
+        {
+          "month": 8,
+          "name": "August",
+          "maxTemp": 17.9,
+          "minTemp": 10.3,
+          "rainfall": 139.9,
+          "sunshine": 139.1,
+          "frostDays": 0
+        },
+        {
+          "month": 9,
+          "name": "September",
+          "maxTemp": 15.7,
+          "minTemp": 8.4,
+          "rainfall": 150.7,
+          "sunshine": 109.8,
+          "frostDays": 0.2
+        },
+        {
+          "month": 10,
+          "name": "October",
+          "maxTemp": 12.3,
+          "minTemp": 6.2,
+          "rainfall": 214.5,
+          "sunshine": 82.4,
+          "frostDays": 2
+        },
+        {
+          "month": 11,
+          "name": "November",
+          "maxTemp": 9,
+          "minTemp": 3.5,
+          "rainfall": 212.2,
+          "sunshine": 44.9,
+          "frostDays": 5.7
+        },
+        {
+          "month": 12,
+          "name": "December",
+          "maxTemp": 6.8,
+          "minTemp": 1.6,
+          "rainfall": 211.2,
+          "sunshine": 29.6,
+          "frostDays": 10.2
+        }
+      ]
+    },
+    "cardiff": {
+      "name": "Cardiff (South Wales)",
+      "lat": 51.482,
+      "lng": -3.168,
+      "regions": [
+        "south-wales"
+      ],
+      "months": [
+        {
+          "month": 1,
+          "name": "January",
+          "maxTemp": 7.7,
+          "minTemp": 1.9,
+          "rainfall": 125.2,
+          "sunshine": 53.5,
+          "frostDays": 9.8
+        },
+        {
+          "month": 2,
+          "name": "February",
+          "maxTemp": 7.9,
+          "minTemp": 1.9,
+          "rainfall": 91.1,
+          "sunshine": 70.6,
+          "frostDays": 8.8
+        },
+        {
+          "month": 3,
+          "name": "March",
+          "maxTemp": 10.4,
+          "minTemp": 3.8,
+          "rainfall": 99.4,
+          "sunshine": 105.7,
+          "frostDays": 3.8
+        },
+        {
+          "month": 4,
+          "name": "April",
+          "maxTemp": 13.3,
+          "minTemp": 4.9,
+          "rainfall": 59,
+          "sunshine": 165.7,
+          "frostDays": 2.3
+        },
+        {
+          "month": 5,
+          "name": "May",
+          "maxTemp": 16.9,
+          "minTemp": 7.8,
+          "rainfall": 59.6,
+          "sunshine": 189.4,
+          "frostDays": 0.4
+        },
+        {
+          "month": 6,
+          "name": "June",
+          "maxTemp": 19.2,
+          "minTemp": 10.6,
+          "rainfall": 62.7,
+          "sunshine": 180.2,
+          "frostDays": 0
+        },
+        {
+          "month": 7,
+          "name": "July",
+          "maxTemp": 21.6,
+          "minTemp": 12.9,
+          "rainfall": 67.9,
+          "sunshine": 198.6,
+          "frostDays": 0
+        },
+        {
+          "month": 8,
+          "name": "August",
+          "maxTemp": 21.1,
+          "minTemp": 12.4,
+          "rainfall": 76.2,
+          "sunshine": 192.9,
+          "frostDays": 0
+        },
+        {
+          "month": 9,
+          "name": "September",
+          "maxTemp": 18.2,
+          "minTemp": 10.2,
+          "rainfall": 95.2,
+          "sunshine": 140.6,
+          "frostDays": 0
+        },
+        {
+          "month": 10,
+          "name": "October",
+          "maxTemp": 14.6,
+          "minTemp": 7.6,
+          "rainfall": 115.9,
+          "sunshine": 98,
+          "frostDays": 1
+        },
+        {
+          "month": 11,
+          "name": "November",
+          "maxTemp": 11.1,
+          "minTemp": 4.8,
+          "rainfall": 122,
+          "sunshine": 61.7,
+          "frostDays": 4
+        },
+        {
+          "month": 12,
+          "name": "December",
+          "maxTemp": 9,
+          "minTemp": 3.4,
+          "rainfall": 132.7,
+          "sunshine": 43.9,
+          "frostDays": 6.4
+        }
+      ]
+    },
+    "rossonwye": {
+      "name": "Ross-on-Wye",
+      "lat": 51.913,
+      "lng": -2.583,
+      "regions": [
+        "wye-valley"
+      ],
+      "months": [
+        {
+          "month": 1,
+          "name": "January",
+          "maxTemp": 8,
+          "minTemp": 2.2,
+          "rainfall": 76.5,
+          "sunshine": 54.6,
+          "frostDays": 9.2
+        },
+        {
+          "month": 2,
+          "name": "February",
+          "maxTemp": 8.8,
+          "minTemp": 2.4,
+          "rainfall": 60.8,
+          "sunshine": 73.7,
+          "frostDays": 7.8
+        },
+        {
+          "month": 3,
+          "name": "March",
+          "maxTemp": 11.3,
+          "minTemp": 3.3,
+          "rainfall": 48.5,
+          "sunshine": 121.2,
+          "frostDays": 5
+        },
+        {
+          "month": 4,
+          "name": "April",
+          "maxTemp": 14.5,
+          "minTemp": 4.9,
+          "rainfall": 49.4,
+          "sunshine": 169.7,
+          "frostDays": 2.2
+        },
+        {
+          "month": 5,
+          "name": "May",
+          "maxTemp": 17.4,
+          "minTemp": 7.9,
+          "rainfall": 61.7,
+          "sunshine": 197.5,
+          "frostDays": 0.2
+        },
+        {
+          "month": 6,
+          "name": "June",
+          "maxTemp": 20.6,
+          "minTemp": 10.9,
+          "rainfall": 52.3,
+          "sunshine": 198.6,
+          "frostDays": 0
+        },
+        {
+          "month": 7,
+          "name": "July",
+          "maxTemp": 22.4,
+          "minTemp": 12.7,
+          "rainfall": 51.3,
+          "sunshine": 201.5,
+          "frostDays": 0
+        },
+        {
+          "month": 8,
+          "name": "August",
+          "maxTemp": 21.8,
+          "minTemp": 12.7,
+          "rainfall": 60.7,
+          "sunshine": 180.7,
+          "frostDays": 0
+        },
+        {
+          "month": 9,
+          "name": "September",
+          "maxTemp": 19.2,
+          "minTemp": 10.5,
+          "rainfall": 62.9,
+          "sunshine": 139.7,
+          "frostDays": 0
+        },
+        {
+          "month": 10,
+          "name": "October",
+          "maxTemp": 15,
+          "minTemp": 8,
+          "rainfall": 92.4,
+          "sunshine": 101.1,
+          "frostDays": 0.9
+        },
+        {
+          "month": 11,
+          "name": "November",
+          "maxTemp": 10.9,
+          "minTemp": 4.7,
+          "rainfall": 82.9,
+          "sunshine": 62.4,
+          "frostDays": 4.5
+        },
+        {
+          "month": 12,
+          "name": "December",
+          "maxTemp": 8.5,
+          "minTemp": 2.7,
+          "rainfall": 83.2,
+          "sunshine": 46.5,
+          "frostDays": 8.3
+        }
+      ]
+    }
+  },
+  "regionMapping": {
+    "snowdonia": "valley",
+    "anglesey": "valley",
+    "north-wales": "valley",
+    "north-wales-coast": "valley",
+    "pembrokeshire": "aberporth",
+    "gower": "aberporth",
+    "carmarthenshire": "aberporth",
+    "brecon-beacons": "cwmystwyth",
+    "mid-wales": "cwmystwyth",
+    "multi-region": "cwmystwyth",
+    "south-wales": "cardiff",
+    "wye-valley": "rossonwye"
+  },
+  "metadata": {
+    "source": "Met Office Historic Station Data",
+    "generatedAt": "2026-02-04T09:53:23.639Z",
+    "note": "30-year averages calculated from most recent complete data"
+  }
+}

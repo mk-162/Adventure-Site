@@ -30,6 +30,8 @@ import {
   createBreadcrumbSchema 
 } from "@/components/seo/JsonLd";
 import { WeatherWidget } from "@/components/weather/WeatherWidget";
+import { ClimateChart } from "@/components/weather/ClimateChart";
+import { ActivitySeasonGuide } from "@/components/weather/ActivitySeasonGuide";
 
 interface RegionPageProps {
   params: Promise<{ region: string }>;
@@ -280,6 +282,9 @@ export default async function RegionPage({ params }: RegionPageProps) {
               />
             )}
 
+            {/* Climate Chart */}
+            <ClimateChart regionSlug={regionSlug} />
+
             {/* Intro */}
             <section>
               <h3 className="text-lg lg:text-xl font-bold mb-3 text-[#1e3a4c]">Welcome to {region.name}</h3>
@@ -299,6 +304,9 @@ export default async function RegionPage({ params }: RegionPageProps) {
 
             {/* Scenic Gallery */}
             <ScenicGallery regionSlug={regionSlug} regionName={region.name} />
+
+            {/* Activity Season Guide */}
+            <ActivitySeasonGuide regionSlug={regionSlug} />
 
             {/* Top Experiences Grid */}
             <section>

@@ -1,0 +1,925 @@
+{
+  "regionSlug": "snowdonia",
+  "activityTypeSlug": "trail-running",
+  "title": "Trail Running in Snowdonia",
+  "strapline": "Where the trails are as tough as they are beautiful.",
+  "metaTitle": "Trail Running Snowdonia | Technical Trails & Races | Adventure Wales",
+  "metaDescription": "Conquer Snowdonia's challenging trails! Explore routes, find gear, and discover post-run fuel in this ultimate guide to trail running.",
+  "heroAlt": "Trail runner ascending a rocky section of the Snowdon summit race route with a stunning mountain vista in the background.",
+  "introduction": "Snowdonia. The name itself conjures images of jagged peaks, demanding climbs, and weather that can turn on a dime. It's precisely these elements that make it a mecca for trail running. Forget your manicured forest trails – this is where you test yourself against the mountain. \n\nSnowdonia isn't for the faint of heart. We're talking proper mountain running, often over technical terrain. Expect steep ascents, rocky descents, and the ever-present possibility of navigating in low visibility. But the rewards are immense. The views are breathtaking, the sense of accomplishment is unparalleled, and the camaraderie amongst runners is strong. From the iconic Snowdon Race route to the wild traverse of the Carneddau, the challenge is real.\n\nWhether you're a seasoned skyrunner chasing vertical gain or a confident road runner looking to take your first steps into the mountains, Snowdonia offers a spectrum of routes. Start with gentler loops in Coed y Brenin before tackling the bigger peaks. Respect the mountains, prepare properly, and you'll discover some of the most rewarding trail running in the UK. Be warned though; these routes are not always well-marked, and navigation skills are essential, especially in poor weather. The key to enjoying trail running snowdonia is to go prepared, know your limits, and respect the mountain.",
+  "bestSeason": "May-October",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Snowdon Summit Race Route",
+      "slug": "snowdon-summit-race-route",
+      "description": "The classic. Starting in Llanberis, this relentlessly steep route climbs directly to the summit of Snowdon. The terrain is a mix of paved road, rocky paths, and loose scree near the top. It's brutal but iconic, and on a clear day, the views are unmatched. Be prepared for crowds, especially during peak season.",
+      "difficulty": "Challenging",
+      "duration": "3-5 hours round trip",
+      "distance": "16km",
+      "elevationGain": "1,085m",
+      "bestFor": "Experienced trail runners seeking a challenging climb and iconic views.",
+      "notSuitableFor": "Beginners, those with knee problems, or anyone afraid of heights.",
+      "bestSeason": "June-September (check weather conditions)",
+      "parking": "Llanberis has several car parks (e.g. Coed y Glyn, Station Road), but they fill up very early. Expect to pay £5-10. Arrive before 7am in summer or park further out and walk in.",
+      "startPoint": {
+        "name": "Llanberis High Street",
+        "lat": 53.122,
+        "lng": -4.127
+      },
+      "estimatedCost": "Free (parking £5-10)",
+      "operatorSlug": "snowdonia-mountain-guides",
+      "insiderTip": "For a quieter (but longer) ascent, try the Llanberis Path early or late in the day."
+    },
+    {
+      "name": "Moel Siabod Circuit",
+      "slug": "moel-siabod-circuit",
+      "description": "A less crowded alternative to Snowdon, Moel Siabod offers stunning views and varied terrain. This circuit involves some scrambling (Grade 1), especially on the descent, so confidence with hands-on rock is essential. The views from the summit are exceptional, encompassing the Glyderau and Snowdon.",
+      "difficulty": "Challenging",
+      "duration": "4-6 hours round trip",
+      "distance": "9km",
+      "elevationGain": "800m",
+      "bestFor": "Experienced trail runners comfortable with scrambling.",
+      "notSuitableFor": "Beginners, those with a fear of heights, or in wet/icy conditions.",
+      "bestSeason": "May-September",
+      "parking": "Small car park near Bryn Glo Cafe (limited spaces). Arrive early or park in Capel Curig and run to the trailhead (adds distance).",
+      "startPoint": {
+        "name": "Bryn Glo Cafe, Capel Curig",
+        "lat": 53.089,
+        "lng": -3.924
+      },
+      "estimatedCost": "Free (parking may have a small charge)",
+      "operatorSlug": "null",
+      "insiderTip": "The scrambling section is much easier to ascend than descend. Consider doing the route in reverse if you're unsure of your scrambling ability."
+    },
+    {
+      "name": "Glyderau Ridge Run",
+      "slug": "glyderau-ridge-run",
+      "description": "A classic Snowdonia traverse, this route takes you along the dramatic Glyderau ridge, including Glyder Fawr and Glyder Fach. Expect technical terrain, exposed sections, and stunning views (if the weather cooperates!). Navigation skills are crucial, especially in poor visibility. Don't underestimate the 'Cannon Stone'.",
+      "difficulty": "Expert",
+      "duration": "6-7 hours round trip",
+      "distance": "14.5km",
+      "elevationGain": "1,085m",
+      "bestFor": "Very experienced mountain runners with excellent navigation skills.",
+      "notSuitableFor": "Beginners, anyone uncomfortable with exposure, or in poor weather conditions.",
+      "bestSeason": "June-September (only in good weather)",
+      "parking": "Ogwen Cottage car park (very popular, fills up quickly). Alternatively, park along the A5 and walk in.",
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.114,
+        "lng": -4.004
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": "snowdonia-mountain-guides",
+      "insiderTip": "Check the weather forecast religiously. This ridge is extremely exposed and dangerous in strong winds or rain. Carry a bothy bag for emergencies."
+    },
+    {
+      "name": "Carneddau Traverse",
+      "slug": "carneddau-traverse",
+      "description": "A remote and challenging traverse of the Carneddau range. This route offers a true mountain experience, with fewer crowds and wilder terrain than Snowdon. Expect long distances, significant elevation gain, and complex navigation. It's a serious undertaking.",
+      "difficulty": "Expert",
+      "duration": "7-9 hours round trip",
+      "distance": "20km",
+      "elevationGain": "1200m",
+      "bestFor": "Experienced mountain runners seeking a remote and challenging adventure.",
+      "notSuitableFor": "Beginners, anyone uncomfortable with remote terrain, or in poor weather.",
+      "bestSeason": "June-September (only in good weather)",
+      "parking": "Several parking spots available along the A5 near Bethesda or in Gerlan. Check for restrictions.",
+      "startPoint": {
+        "name": "Gerlan",
+        "lat": 53.166,
+        "lng": -4.021
+      },
+      "estimatedCost": "Free (parking may have a small charge)",
+      "operatorSlug": "null",
+      "insiderTip": "Carry extra food and water. There are no facilities along the route. Download offline maps to your phone/GPS device as signal is patchy."
+    },
+    {
+      "name": "Coed y Brenin Trail Runs",
+      "slug": "coed-y-brenin-trail-runs",
+      "description": "A network of purpose-built trails through the forest, Coed y Brenin offers a variety of options for all abilities. Marked trails, smooth surfaces, and less exposure make it a great place to start trail running or for an easier day out. Check out the 'Dragons Back' for a challenging but rewarding run.",
+      "difficulty": "Easy to Moderate",
+      "duration": "1-3 hours",
+      "distance": "5-15km (various routes)",
+      "elevationGain": "Variable, depending on route",
+      "bestFor": "Beginners, families, and those looking for well-maintained trails.",
+      "notSuitableFor": "Experienced mountain runners seeking a technical challenge.",
+      "bestSeason": "Year-round",
+      "parking": "Coed y Brenin Visitor Centre (parking charges apply).",
+      "startPoint": {
+        "name": "Coed y Brenin Visitor Centre",
+        "lat": 52.833,
+        "lng": -3.925
+      },
+      "estimatedCost": "Free (parking £5-7)",
+      "operatorSlug": "coed-y-brenin-nrw",
+      "insiderTip": "Download a map of the trails before you go. While they're well-marked, it's easy to get turned around. The cafe at the visitor center is excellent for post-run refueling."
+    },
+    {
+      "name": "Nant Gwynant Loops",
+      "slug": "nant-gwynant-loops",
+      "description": "Beautiful valley scenery with a range of trail options. You can combine sections of the Watkin Path with valley trails for varied loops. The valley floor offers relatively gentle running, while the Watkin Path provides a challenging ascent towards Snowdon.",
+      "difficulty": "Moderate",
+      "duration": "2-4 hours",
+      "distance": "6-12km (various routes)",
+      "elevationGain": "Variable, depending on route",
+      "bestFor": "Runners looking for a mix of valley and mountain running.",
+      "notSuitableFor": "Those seeking highly technical terrain.",
+      "bestSeason": "May-October",
+      "parking": "Limited parking available along the road in Nant Gwynant. Be respectful of residents and avoid blocking access.",
+      "startPoint": {
+        "name": "Nant Gwynant",
+        "lat": 53.066,
+        "lng": -4.041
+      },
+      "estimatedCost": "Free (parking may have a small charge)",
+      "operatorSlug": "null",
+      "insiderTip": "Combine a run with a dip in Llyn Gwynant for a refreshing post-run treat (if you're brave enough!)."
+    },
+    {
+      "name": "Cwm Idwal to Devil's Kitchen",
+      "slug": "cwm-idwal-to-devils-kitchen",
+      "description": "A stunning run into the heart of Cwm Idwal, a classic glacial cirque. The path climbs steeply to the Devil's Kitchen (Twll Du), a dramatic cleft in the cliffs. The terrain is rocky and uneven, but the scenery is spectacular. Be prepared for strong winds in the cirque.",
+      "difficulty": "Challenging",
+      "duration": "3-4 hours round trip",
+      "distance": "8km",
+      "elevationGain": "600m",
+      "bestFor": "Experienced trail runners seeking dramatic scenery and a challenging climb.",
+      "notSuitableFor": "Beginners, those with knee problems, or in very windy conditions.",
+      "bestSeason": "May-October (check weather conditions)",
+      "parking": "Ogwen Cottage car park (very popular, fills up quickly). Alternatively, park along the A5 and walk in.",
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.114,
+        "lng": -4.004
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": "null",
+      "insiderTip": "Take a moment to appreciate the unique geology of Cwm Idwal, a National Nature Reserve. Look out for rare arctic-alpine plants."
+    },
+    {
+      "name": "Aber Falls Trail",
+      "slug": "aber-falls-trail",
+      "description": "A relatively easy and accessible trail leading to the impressive Aber Falls. The path is well-maintained and offers beautiful views of the valley. It's a good option for a shorter run or for those looking for a less challenging route.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours round trip",
+      "distance": "4.5km",
+      "elevationGain": "120m",
+      "bestFor": "Beginners, families, and those looking for a scenic and accessible trail run.",
+      "notSuitableFor": "Experienced mountain runners seeking a technical challenge.",
+      "bestSeason": "Year-round",
+      "parking": "Aber Falls car park (small charge applies).",
+      "startPoint": {
+        "name": "Aber Falls Car Park",
+        "lat": 53.224,
+        "lng": -3.947
+      },
+      "estimatedCost": "Free (parking £5)",
+      "operatorSlug": "null",
+      "insiderTip": "Visit after heavy rain for the most impressive display from the falls. Extend the run by exploring the trails further up the valley."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Snowdonia's weather is notoriously unpredictable. Conditions can change rapidly from sunshine to rain, wind, and even snow, especially at higher elevations. Check the mountain forecast before you go and be prepared for all eventualities. Strong winds and low visibility can make navigation extremely difficult and dangerous.",
+    "weatherLinks": [
+      {
+        "name": "Mountain Weather Information Service (MWIS)",
+        "url": "https://www.mwis.org.uk/"
+      },
+      {
+        "name": "Met Office Mountain Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain"
+      }
+    ],
+    "gearChecklist": [
+      "Trail running shoes with good grip – essential for rocky and uneven terrain.",
+      "Waterproof jacket and trousers – Snowdonia is known for its rain.",
+      "Warm layers (fleece or down jacket) – even in summer, temperatures can drop quickly at higher elevations.",
+      "Hat and gloves – protect yourself from the wind and cold.",
+      "Navigation tools (map, compass, GPS) – essential for mountain routes, especially in poor visibility.",
+      "Sufficient food and water – carry more than you think you'll need.",
+      "Headtorch – even on shorter runs, it's wise to have a headtorch in case of delays.",
+      "First aid kit – including blister plasters, pain relief, and emergency supplies.",
+      "Charged mobile phone – for emergencies (signal can be patchy in some areas).",
+      "Whistle – for signaling in case of an accident."
+    ],
+    "gearHire": [
+      {
+        "name": "Joe Brown's",
+        "location": "Llanberis",
+        "url": "https://www.joe-brown.com/"
+      },
+      {
+        "name": "V12 Outdoor",
+        "location": "Llanberis",
+        "url": "https://www.v12outdoor.com/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5h",
+          "route": "Via M40 and A5"
+        },
+        {
+          "from": "Manchester",
+          "duration": "2h",
+          "route": "Via M56 and A55"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3h",
+          "route": "Via M6 and A5"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "3h 30m",
+          "route": "Via A470"
+        }
+      ],
+      "publicTransport": "Bangor is the nearest train station. From there, the Snowdon Sherpa bus service connects to many of the popular trail running locations.",
+      "parkingTips": "Parking can be a major challenge, especially during peak season. Arrive early, be prepared to park further out and walk in, and be respectful of local residents."
+    },
+    "safety": "Snowdonia is a mountainous environment, and trail running here requires careful planning and preparation. Tell someone your route and expected return time. Be aware of the weather forecast and be prepared to turn back if conditions deteriorate. Carry appropriate navigation equipment and know how to use it. In case of emergency, call 999 and ask for mountain rescue."
+  },
+  "faqs": [
+    {
+      "question": "What's the best time of year for trail running in Snowdonia?",
+      "answer": "May to October generally offers the best conditions, with drier weather and longer daylight hours. However, even in summer, the weather can be unpredictable, so be prepared for all eventualities. Winter running is possible, but requires experience and specialized equipment."
+    },
+    {
+      "question": "Are the trails in Snowdonia well-marked?",
+      "answer": "Some trails, like those in Coed y Brenin, are well-marked. However, many mountain routes are not, and navigation skills are essential. Carry a map, compass, and/or GPS device and know how to use them."
+    },
+    {
+      "question": "What kind of trail running shoes do I need for Snowdonia?",
+      "answer": "Trail running shoes with good grip are essential for the rocky and uneven terrain. Look for shoes with aggressive lugs and a supportive upper. Consider waterproof or water-resistant shoes if you're running in wet conditions."
+    },
+    {
+      "question": "Is it safe to run alone in Snowdonia?",
+      "answer": "Running alone in the mountains carries risks. It's generally safer to run with a partner or group. If you do run alone, tell someone your route and expected return time, and carry appropriate safety equipment."
+    },
+    {
+      "question": "Where can I find guided trail runs in Snowdonia?",
+      "answer": "Several companies offer guided trail runs in Snowdonia, including Snowdonia Mountain Guides and Plas y Brenin. Guided runs are a great option for beginners or those unfamiliar with the area."
+    },
+    {
+      "question": "Are dogs allowed on the trails in Snowdonia?",
+      "answer": "Dogs are generally allowed on the trails in Snowdonia, but they must be kept under control. Be aware that some areas may have restrictions during lambing season. Always clean up after your dog."
+    },
+    {
+      "question": "How much does it cost to go trail running in Snowdonia?",
+      "answer": "Trail running itself is free, but you'll need to factor in costs for parking, accommodation, food, and gear. Guided runs typically cost between £50 and £80 per person."
+    },
+    {
+      "question": "What's the best way to prepare for a trail running trip to Snowdonia?",
+      "answer": "Train on similar terrain to what you'll encounter in Snowdonia. Practice your navigation skills. Research your routes and be aware of the weather forecast. Pack appropriate gear and be prepared for all eventualities. Start with shorter, easier routes and gradually progress to more challenging ones."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Joe Brown's",
+        "slug": "joe-browns",
+        "address": "Menai Hall, Llanberis, Gwynedd LL55 4EN",
+        "lat": 53.122,
+        "lng": -4.128,
+        "description": "An iconic mountaineering shop with a wide range of equipment and clothing. Known for its expert advice and historical significance.",
+        "website": "https://www.joe-brown.com/",
+        "phone": "01286 870327",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "boot fitting"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 750
+      },
+      {
+        "name": "V12 Outdoor",
+        "slug": "v12-outdoor",
+        "address": "45 High St, Llanberis, Caernarfon LL55 4EU",
+        "lat": 53.122,
+        "lng": -4.126,
+        "description": "Another excellent outdoor shop in Llanberis, offering a wide selection of trail running gear and clothing. Friendly staff and a good range of brands.",
+        "website": "https://www.v12outdoor.com/",
+        "phone": "01286 870380",
+        "services": [
+          "gear sales",
+          "hire",
+          "boot fitting"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 320
+      },
+      {
+        "name": "Run Wales",
+        "slug": "run-wales-shop-caernarfon",
+        "address": "Unit 1 Cibyn Industrial Estate, Caernarfon LL55 2BD",
+        "lat": 53.136,
+        "lng": -4.268,
+        "description": "Specialising in running gear. Excellent knowledge of running shoes and form.",
+        "website": "https://runwales.com/",
+        "phone": "01286 674422",
+        "services": [
+          "gear sales",
+          "boot fitting",
+          "running advice"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 150
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Pete's Eats",
+        "slug": "petes-eats",
+        "address": "40 High St, Llanberis LL55 4EU",
+        "lat": 53.123,
+        "lng": -4.125,
+        "description": "A legendary climber's cafe in Llanberis, known for its massive portions and hearty meals. Perfect for refueling after a long day on the trails.",
+        "vibe": "Climber-friendly cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Giant portions, Full English breakfast"
+      },
+      {
+        "name": "Caffi Siabod",
+        "slug": "caffi-siabod",
+        "address": "Capel Curig, Betws-y-Coed LL24 0EE",
+        "lat": 53.088,
+        "lng": -3.925,
+        "description": "A popular cafe in Capel Curig, offering delicious homemade cakes, sandwiches, and hot meals. A great place to stop before or after a run up Moel Siabod.",
+        "vibe": "Cosy cafe",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Homemade cakes, Excellent coffee"
+      },
+      {
+        "name": "Pinnacle Cafe",
+        "slug": "pinnacle-cafe",
+        "address": "Llanberis Path, Llanberis, Caernarfon LL55 4TF",
+        "lat": 53.105,
+        "lng": -4.113,
+        "description": "A cafe directly on the Llanberis Path up Snowdon. Great place to stock up on supplies or refuel on the way up or down. Basic food but great location.",
+        "vibe": "Trail-side cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Convenient location, Snowdon views"
+      },
+      {
+        "name": "Ty Hyll - The Ugly House",
+        "slug": "ty-hyll",
+        "address": "Betws-y-Coed LL24 0DS",
+        "lat": 53.11,
+        "lng": -3.816,
+        "description": "A quirky tea room with a beautiful garden, located near Betws-y-Coed. Delicious cakes, sandwiches, and teas. A great place to relax and unwind after a run.",
+        "vibe": "Historic tea room",
+        "priceRange": "££",
+        "website": "https://www.tyhyll.co.uk/",
+        "knownFor": "Unique building, Homemade scones"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "YHA Snowdon Pen-y-Pass",
+        "slug": "yha-snowdon-pen-y-pass",
+        "description": "A budget-friendly hostel at the foot of Snowdon, offering easy access to many popular trails. A great option for solo travelers or groups.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Snowdon Summit Race Route (trailhead is right there)",
+        "website": "https://www.yha.org.uk/hostel/yha-snowdon-pen-y-pass"
+      },
+      {
+        "name": "Plas y Brenin",
+        "slug": "plas-y-brenin",
+        "description": "The National Mountain Sports Centre, offering comfortable accommodation and a range of courses and activities. A great base for exploring Snowdonia.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Moel Siabod Circuit (5km)",
+        "website": "https://www.pyb.co.uk/"
+      },
+      {
+        "name": "Bryn Tyrch Inn",
+        "slug": "bryn-tyrch-inn",
+        "description": "A traditional Welsh inn with comfortable rooms and a cozy atmosphere. Located in Capel Curig, offering easy access to many popular trails.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Moel Siabod Circuit (2km)",
+        "website": "http://www.bryntyrchinn.co.uk/"
+      },
+      {
+        "name": "Camping in Snowdonia National Park",
+        "slug": "camping-snowdonia",
+        "description": "Numerous campsites are available throughout Snowdonia, offering a budget-friendly option for those who enjoy camping. Check for permits and restrictions before pitching your tent.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Various, depending on location",
+        "website": null
+      },
+      {
+        "name": "The Royal Victoria Hotel",
+        "slug": "royal-victoria-hotel",
+        "description": "A historic hotel at the foot of Snowdon. Offers comfortable rooms, a restaurant and stunning views.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Snowdon Summit Race Route (8km)",
+        "website": "https://www.royalvictoria.co.uk/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Snowdon Race",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "An iconic fell race from Llanberis to the summit of Snowdon and back. A challenging and prestigious event.",
+      "website": "https://www.snowdonrace.co.uk/",
+      "relevantActivities": [
+        "trail-running"
+      ],
+      "registrationCost": 45
+    },
+    {
+      "name": "Mynydd Du Mountain Marathon",
+      "type": "race",
+      "monthTypical": "June",
+      "description": "A challenging mountain marathon in the Carneddau range.",
+      "website": "https://www.mynydd-du.org.uk/",
+      "relevantActivities": [
+        "trail-running"
+      ],
+      "registrationCost": 55
+    }
+  ],
+  "keywords": {
+    "primary": "trail running snowdonia",
+    "secondary": [
+      "snowdonia trail running routes",
+      "snowdonia fell running",
+      "snowdonia mountain running",
+      "trail running wales",
+      "snowdonia running"
+    ],
+    "longTail": [
+      "best trail running routes snowdonia for beginners",
+      "technical trail running snowdonia",
+      "guided trail runs snowdonia",
+      "trail running snowdon summit",
+      "trail running coed y brenin trails",
+      "trail running snowdonia national park",
+      "trail running routes near llanberis",
+      "trail running routes near betws-y-coed",
+      "dog friendly trail running snowdonia",
+      "snowdonia trail running races",
+      "trail running snowdonia training"
+    ],
+    "localIntent": [
+      "trail running near llanberis",
+      "trail running near betws-y-coed",
+      "trail running near caernarfon",
+      "trail running near snowdon",
+      "trail running near bangor"
+    ],
+    "commercialIntent": [
+      "guided trail running snowdonia",
+      "trail running shoes snowdonia",
+      "trail running gear snowdonia",
+      "trail running tours snowdonia",
+      "trail running snowdonia price"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "brecon-beacons",
+        "label": "Trail Running in Brecon Beacons"
+      },
+      {
+        "regionSlug": "eryri",
+        "label": "Trail Running in Eryri"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "climbing",
+        "label": "Climbing in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "scrambling",
+        "label": "Scrambling in Snowdonia"
+      }
+    ]
+  },
+  "existingOperators": [
+    {
+      "name": "MUUK Adventures",
+      "slug": "muuk-adventures",
+      "description": "Adventure is out there. Find yours with MUUK.",
+      "activities": [
+        "coasteering",
+        "surfing",
+        "kayaking",
+        "mountain-challenges"
+      ],
+      "rating": 5.0,
+      "priceRange": "££"
+    },
+    {
+      "name": "Plas y Brenin",
+      "slug": "plas-y-brenin",
+      "description": "Your adventure starts here in Snowdonia.",
+      "activities": [
+        "climbing",
+        "mountaineering",
+        "kayaking",
+        "hill-walking",
+        "mtb"
+      ],
+      "rating": 4.6,
+      "priceRange": "£££"
+    },
+    {
+      "name": "Snowdonia Mountain Guides",
+      "slug": "snowdonia-mountain-guides",
+      "description": "Explore Snowdonia's peaks with expert local guides.",
+      "activities": [
+        "rock-climbing",
+        "scrambling",
+        "hill-walking"
+      ],
+      "rating": null,
+      "priceRange": "££"
+    },
+    {
+      "name": "Zip World",
+      "slug": "zip-world",
+      "description": "Adventure above and below, in Wales.",
+      "activities": [
+        "zip-lining",
+        "quarry-karts",
+        "bounce-below",
+        "adventure"
+      ],
+      "rating": 4.6,
+      "priceRange": "£££"
+    },
+    {
+      "name": "Antur Stiniog",
+      "slug": "antur-stiniog",
+      "description": "Snowdonia's downhill mountain biking mecca.",
+      "activities": [
+        "downhill-mountain-biking",
+        "bike-hire"
+      ],
+      "rating": 4.7,
+      "priceRange": "££"
+    },
+    {
+      "name": "Coed y Brenin (NRW)",
+      "slug": "coed-y-brenin-nrw",
+      "description": "Adventure awaits in the heart of Snowdonia.",
+      "activities": [
+        "mountain-biking",
+        "walking",
+        "trail-running"
+      ],
+      "rating": 4.6,
+      "priceRange": "£"
+    },
+    {
+      "name": "MountainXperience",
+      "slug": "mountainxperience",
+      "description": "Explore Snowdonia's peaks with expert local guides.",
+      "activities": [
+        "guided-snowdon-walks",
+        "scrambling"
+      ],
+      "rating": 5.0,
+      "priceRange": "££"
+    }
+  ],
+  "discoveredBusinesses": [
+    {
+      "name": "Plas y Brenin",
+      "type": "activity_provider",
+      "category": "activity_provider|accommodation",
+      "address": "Capel Curig, Betws-y-Coed LL24 0ET",
+      "postcode": "LL24 0ET",
+      "lat": 53.1109,
+      "lng": -3.9247,
+      "phone": "01690 720214",
+      "website": "https://www.pyb.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 700,
+      "description": "National Mountain Sports Centre offering courses and guiding in various outdoor activities. A great base for exploring Snowdonia's trails.",
+      "relevantActivities": [
+        "trail-running",
+        "hill-walking",
+        "mountaineering"
+      ],
+      "services": [
+        "guided-runs",
+        "accommodation",
+        "courses",
+        "equipment-hire"
+      ],
+      "priceRange": "£££",
+      "notes": "National Mountain Sports Centre; well-known and respected.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Coed y Brenin (NRW)",
+      "type": "venue",
+      "category": "activity_provider",
+      "address": "Coed y Brenin Forest Park, Dolgellau LL40 2HZ",
+      "postcode": "LL40 2HZ",
+      "lat": 52.8265,
+      "lng": -3.8753,
+      "phone": null,
+      "website": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/coed-y-brenin-forest-park/?lang=en",
+      "googleRating": 4.6,
+      "reviewCount": 1500,
+      "description": "Extensive forest park offering a network of trails suitable for trail running. Known primarily for mountain biking, but also boasts marked walking and running trails.",
+      "relevantActivities": [
+        "trail-running",
+        "mountain-biking",
+        "walking"
+      ],
+      "services": [
+        "trail-access",
+        "parking",
+        "cafe"
+      ],
+      "priceRange": "£",
+      "notes": "Extensive trail network; official NRW site.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Joe Brown's (Llanberis)",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Menai Hall, Llanberis LL55 4EL",
+      "postcode": "LL55 4EL",
+      "lat": 53.1217,
+      "lng": -4.1286,
+      "phone": "01286 870327",
+      "website": "https://www.joe-brown.com/",
+      "googleRating": 4.6,
+      "reviewCount": 600,
+      "description": "Iconic outdoor gear shop in Llanberis. Sells trail running shoes, clothing and equipment.",
+      "relevantActivities": [
+        "trail-running"
+      ],
+      "services": [
+        "retail",
+        "expert-advice"
+      ],
+      "priceRange": "££",
+      "notes": "Well-known gear shop.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "V12 Outdoor",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "High Street, Llanberis LL55 4ER",
+      "postcode": "LL55 4ER",
+      "lat": 53.1235,
+      "lng": -4.1278,
+      "phone": "01286 870375",
+      "website": "https://v12outdoor.com/",
+      "googleRating": 4.5,
+      "reviewCount": 300,
+      "description": "Outdoor gear shop in Llanberis. Stocks a range of trail running equipment.",
+      "relevantActivities": [
+        "trail-running"
+      ],
+      "services": [
+        "retail",
+        "expert-advice"
+      ],
+      "priceRange": "££",
+      "notes": "Another popular gear shop in Llanberis.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Pete's Eats",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "40 High St, Llanberis LL55 4EU",
+      "postcode": "LL55 4EU",
+      "lat": 53.1231,
+      "lng": -4.1255,
+      "phone": "01286 870591",
+      "website": null,
+      "googleRating": 4.3,
+      "reviewCount": 1800,
+      "description": "Legendary cafe in Llanberis, famous for its large portions. A popular spot for post-run refuelling.",
+      "relevantActivities": [
+        "trail-running"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "Institution; huge portions.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Caffi Siabod",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Capel Curig, Betws-y-Coed LL24 0EE",
+      "postcode": "LL24 0EE",
+      "lat": 53.1083,
+      "lng": -3.9067,
+      "phone": "01690 720291",
+      "website": null,
+      "googleRating": 4.4,
+      "reviewCount": 450,
+      "description": "Cafe in Capel Curig, offering good food and drinks. Ideal for a post-run stop.",
+      "relevantActivities": [
+        "trail-running"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "Good location.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Snowdonia Mountain Guides",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Llanberis, Gwynedd (Office address only, no public access)",
+      "postcode": "LL55",
+      "lat": 53.1214,
+      "lng": -4.1284,
+      "phone": null,
+      "website": "https://www.snowdoniamountainguides.com/",
+      "googleRating": null,
+      "reviewCount": null,
+      "description": "Provides guiding services for various mountain activities in Snowdonia. Can offer tailored trail running experiences.",
+      "relevantActivities": [
+        "trail-running",
+        "hill-walking",
+        "scrambling"
+      ],
+      "services": [
+        "guided-runs"
+      ],
+      "priceRange": "££",
+      "notes": "Local guiding company.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "MountainXperience",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Unit 3, The Old Police Station, Llanberis LL55 4HB",
+      "postcode": "LL55 4HB",
+      "lat": 53.1224,
+      "lng": -4.1271,
+      "phone": "01286 870070",
+      "website": "https://www.mountainxperience.com/",
+      "googleRating": 5.0,
+      "reviewCount": 45,
+      "description": "Offers guided walks and scrambling in Snowdonia. They can tailor their walks for trail runners.",
+      "relevantActivities": [
+        "trail-running",
+        "scrambling"
+      ],
+      "services": [
+        "guided-runs"
+      ],
+      "priceRange": "££",
+      "notes": "Good reputation.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Run Wales",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Various locations throughout Wales (check website)",
+      "postcode": null,
+      "lat": 52.4,
+      "lng": -3.5,
+      "phone": null,
+      "website": "https://www.runwales.org.uk/",
+      "googleRating": null,
+      "reviewCount": null,
+      "description": "Association of running clubs and groups across Wales; no central shop, but member shops sell gear. Check website for local retailers.",
+      "relevantActivities": [
+        "trail-running"
+      ],
+      "services": [
+        "retail",
+        "club-information"
+      ],
+      "priceRange": "££",
+      "notes": "Important organisation. Locate local shops.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Ty Hyll (The Ugly House)",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Betws-y-Coed LL24 0DS",
+      "postcode": "LL24 0DS",
+      "lat": 53.1406,
+      "lng": -3.8108,
+      "phone": "01690 710789",
+      "website": "https://www.tyhyll.com/",
+      "googleRating": 4.4,
+      "reviewCount": 1200,
+      "description": "Unique tea room and shop near Betws-y-Coed. A relaxing spot for post-run refreshments.",
+      "relevantActivities": [
+        "trail-running"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "gifts"
+      ],
+      "priceRange": "£",
+      "notes": "Unique location.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Pinnacle Cafe",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Llanberis Path, Llanberis LL55 4UU",
+      "postcode": "LL55 4UU",
+      "lat": 53.0947,
+      "lng": -4.1086,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.5,
+      "reviewCount": 150,
+      "description": "Cafe at the foot of Snowdon, near the Llanberis Path. Great for pre- or post-run fuel.",
+      "relevantActivities": [
+        "trail-running"
+      ],
+      "services": [
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "Conveniently located at the start of a popular trail.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "MUUK Adventures",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Wales (No fixed address)",
+      "postcode": null,
+      "lat": 52.8,
+      "lng": -3.6,
+      "phone": null,
+      "website": "https://muukadventures.com/",
+      "googleRating": 5.0,
+      "reviewCount": 10,
+      "description": "Offers various outdoor adventures in Wales. Could potentially arrange guided trail running.",
+      "relevantActivities": [
+        "trail-running",
+        "coasteering",
+        "surfing"
+      ],
+      "services": [
+        "guided-activities"
+      ],
+      "priceRange": "££",
+      "notes": "Offers multiple outdoor options",
+      "inDatabase": true,
+      "priority": "low"
+    }
+  ]
+}

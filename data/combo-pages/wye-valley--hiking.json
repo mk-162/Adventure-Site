@@ -1,0 +1,834 @@
+{
+  "regionSlug": "wye-valley",
+  "activityTypeSlug": "hiking",
+  "title": "Hiking in Wye Valley",
+  "strapline": "History, hills, and hearty pubs: the Wye Valley delivers a perfect hiking combo.",
+  "metaTitle": "Hiking Wye Valley | Explore the Best Trails | Adventure Wales",
+  "metaDescription": "Discover the best hiking in Wye Valley! Explore Offa's Dyke, Tintern Abbey trails & stunning viewpoints. Plan your Welsh adventure now!",
+  "heroAlt": "Hikers on a grassy hillside overlooking the Wye Valley and the River Wye",
+  "introduction": "The Wye Valley, straddling the border between Wales and England, offers a unique blend of stunning natural beauty and rich history, making it a fantastic destination for **hiking Wye Valley**. Forget the crowded peaks of Snowdonia; here, you'll find a more gentle, rolling landscape, perfect for exploring ancient woodlands, dramatic limestone cliffs, and of course, the winding River Wye itself. The area is steeped in history, from the ruins of Tintern Abbey to the impressive Offa's Dyke Path. \n\nWhat makes it special? The sheer variety. You can tackle challenging climbs with rewarding panoramic views, or enjoy gentle riverside strolls suitable for families. It's less about conquering mountains and more about immersing yourself in the landscape and its stories. The waymarked paths are generally well-maintained, but don't underestimate the mud after rain – proper footwear is essential! The Wye Valley is especially great for those who appreciate a well-deserved pub lunch after a good hike, with many charming establishments nestled in the villages and along the riverbanks. \n\nThat said, navigating the area can be tricky without a car, as public transport is limited in some areas. Some of the steeper climbs are also surprisingly strenuous, so be prepared for a workout. But, if you're looking for a hiking destination that combines beautiful scenery, fascinating history, and a relaxed atmosphere, then the Wye Valley is definitely worth exploring for **hiking Wye Valley**. Just be sure to pack your waterproofs and your appetite!",
+  "bestSeason": "April-October",
+  "difficultyRange": "Easy to Challenging",
+  "priceRange": "Free - £60 guided",
+  "spots": [
+    {
+      "name": "Devil's Pulpit to Tintern Abbey",
+      "slug": "devils-pulpit-tintern-abbey",
+      "description": "A classic Wye Valley hike with stunning views of Tintern Abbey from the Devil's Pulpit viewpoint. The trail descends through woodland to the picturesque village of Tintern, where you can explore the Abbey ruins. Be prepared for some steep sections, especially on the initial climb to the Pulpit.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours round trip",
+      "distance": "8km",
+      "elevationGain": "250m",
+      "bestFor": "History buffs and those seeking iconic views",
+      "notSuitableFor": "People with severe mobility issues due to steep sections",
+      "bestSeason": "Year-round (avoid ice)",
+      "parking": "Designated parking area near St Arvans (charges apply). Arrive early on weekends and holidays.",
+      "startPoint": {
+        "name": "St Arvans Parking",
+        "lat": 51.658,
+        "lng": -2.664
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Skip the Devil's Pulpit on a very busy day and head straight down – the views from elsewhere on the trail are almost as good, and you'll avoid the crowds."
+    },
+    {
+      "name": "Symonds Yat Rock Viewpoint Circuit",
+      "slug": "symonds-yat-rock-viewpoint-circuit",
+      "description": "A relatively easy circuit offering breathtaking views of the River Wye and the surrounding landscape from Symonds Yat Rock. Keep an eye out for peregrine falcons nesting on the cliffs. The route follows well-maintained paths through woodland and along the clifftops.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours round trip",
+      "distance": "5km",
+      "elevationGain": "100m",
+      "bestFor": "Families and those seeking accessible walks with stunning views",
+      "notSuitableFor": "Anyone wanting a very challenging hike.",
+      "bestSeason": "Year-round",
+      "parking": "Large car park at Symonds Yat Rock (charges apply). Can get extremely busy.",
+      "startPoint": {
+        "name": "Symonds Yat Rock Car Park",
+        "lat": 51.834,
+        "lng": -2.635
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "For a quieter experience, visit early in the morning or late in the afternoon. Consider parking in Symonds Yat East and taking the hand ferry across the river for a more scenic (and less crowded) approach."
+    },
+    {
+      "name": "Offa's Dyke Path: Redbrook to Bigsweir",
+      "slug": "offas-dyke-path-redbrook-bigsweir",
+      "description": "A scenic section of the Offa's Dyke Path, following the River Wye between the villages of Redbrook and Bigsweir. This walk offers a mix of riverside paths and woodland trails. Enjoy views of the river and the surrounding countryside.",
+      "difficulty": "Moderate",
+      "duration": "4-5 hours one way",
+      "distance": "12km",
+      "elevationGain": "150m",
+      "bestFor": "Experienced hikers wanting a longer walk with historical significance",
+      "notSuitableFor": "Those without good navigation skills or transport at the end (bus or taxi recommended).",
+      "bestSeason": "Spring-Autumn",
+      "parking": "Limited parking in Redbrook village. Consider using public transport.",
+      "startPoint": {
+        "name": "Redbrook Village",
+        "lat": 51.778,
+        "lng": -2.654
+      },
+      "estimatedCost": "Free (possible bus fare back to starting point)",
+      "operatorSlug": null,
+      "insiderTip": "Stop at Bigsweir House for refreshments before your return journey. The riverside views from the garden are lovely."
+    },
+    {
+      "name": "The Biblins Adventure",
+      "slug": "the-biblins-adventure",
+      "description": "An easy riverside stroll perfect for families, featuring the iconic Biblins suspension bridge. Explore the forest trails and enjoy the natural play areas. It is an ideal spot for a relaxing walk and a picnic.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours round trip",
+      "distance": "3km",
+      "elevationGain": "50m",
+      "bestFor": "Families with young children",
+      "notSuitableFor": "Serious hikers looking for a challenging route.",
+      "bestSeason": "Spring-Autumn",
+      "parking": "Car park at Biblins (charges apply).",
+      "startPoint": {
+        "name": "Biblins Car Park",
+        "lat": 51.849,
+        "lng": -2.614
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Bring a picnic blanket and enjoy lunch by the river. The area is particularly beautiful in the autumn when the leaves are changing colour."
+    },
+    {
+      "name": "Whitecliff Viewpoint and Sculpture Trail",
+      "slug": "whitecliff-viewpoint-sculpture-trail",
+      "description": "A short but rewarding walk to Whitecliff viewpoint, offering panoramic views over the River Wye and the Forest of Dean. Combine it with the nearby sculpture trail for a more extended exploration. The trail features interesting artworks set within the woodland.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours round trip",
+      "distance": "4km",
+      "elevationGain": "75m",
+      "bestFor": "Art lovers and those seeking easy walks with great views.",
+      "notSuitableFor": "Those looking for a remote wilderness experience.",
+      "bestSeason": "Year-round",
+      "parking": "Parking available at the start of the sculpture trail.",
+      "startPoint": {
+        "name": "Sculpture Trail Parking",
+        "lat": 51.803,
+        "lng": -2.588
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Look out for the hidden sculptures along the trail – some are quite subtle! The best time to visit is during the spring or summer when the woodland is lush and green."
+    },
+    {
+      "name": "Wyndcliff and Eagle's Nest (365 Steps)",
+      "slug": "wyndcliff-eagles-nest",
+      "description": "Challenge yourself with a climb up the famous 365 steps to Wyndcliff viewpoint and Eagle's Nest. The effort is rewarded with stunning panoramic views of the Severn Estuary and the surrounding countryside. Be prepared for a steep and strenuous ascent.",
+      "difficulty": "Challenging",
+      "duration": "2-3 hours round trip",
+      "distance": "5km",
+      "elevationGain": "300m",
+      "bestFor": "Fit hikers seeking a challenging climb and rewarding views.",
+      "notSuitableFor": "Anyone with knee problems or a fear of heights.",
+      "bestSeason": "Spring-Autumn (avoid ice on the steps)",
+      "parking": "Limited parking at the base of Wyndcliff.",
+      "startPoint": {
+        "name": "Wyndcliff Car Park",
+        "lat": 51.651,
+        "lng": -2.706
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Take plenty of water, especially on a hot day. The steps can be slippery when wet, so wear appropriate footwear."
+    },
+    {
+      "name": "Trellech Beacon",
+      "slug": "trellech-beacon",
+      "description": "Explore the historic village of Trellech and hike up to the beacon for views across the Wye Valley. The area is rich in archaeological sites and has a fascinating history. The terrain is mostly gentle, with some moderate inclines.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours round trip",
+      "distance": "6km",
+      "elevationGain": "120m",
+      "bestFor": "History enthusiasts and those seeking a peaceful walk in the countryside.",
+      "notSuitableFor": "Thrill-seekers looking for extreme adventures.",
+      "bestSeason": "Year-round",
+      "parking": "Parking available in Trellech village.",
+      "startPoint": {
+        "name": "Trellech Village Centre",
+        "lat": 51.726,
+        "lng": -2.742
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Visit the Trellech Heritage Centre to learn more about the village's history before your hike. There's a nice pub in the village for a post-walk pint."
+    },
+    {
+      "name": "Lady Park Wood Nature Reserve",
+      "slug": "lady-park-wood-nature-reserve",
+      "description": "Immerse yourself in ancient woodland at Lady Park Wood, a National Nature Reserve. Explore the network of trails through the forest and discover its unique ecosystem. The trails are generally easy to navigate, but can be muddy in places.",
+      "difficulty": "Easy",
+      "duration": "2-3 hours",
+      "distance": "Variable, depending on route",
+      "elevationGain": null,
+      "bestFor": "Nature lovers and those seeking a tranquil woodland walk.",
+      "notSuitableFor": "Those seeking panoramic views",
+      "bestSeason": "Year-round (best in spring for bluebells)",
+      "parking": "Small car park at Lady Park Wood entrance.",
+      "startPoint": {
+        "name": "Lady Park Wood Car Park",
+        "lat": 51.816,
+        "lng": -2.617
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Wear waterproof boots, especially after rain. Take your time and enjoy the peace and quiet of the woodland. Look out for the diverse range of fungi in the autumn."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The Wye Valley can experience variable weather conditions, even in the summer. Rain is common, so waterproof clothing is essential. Check the forecast before you set out and be prepared for sudden changes in the weather.",
+    "weatherLinks": [
+      {
+        "name": "Met Office",
+        "url": "https://www.metoffice.gov.uk/weather/forecast/gcm60z1n8"
+      }
+    ],
+    "gearChecklist": [
+      "Waterproof jacket and trousers – essential for unpredictable weather",
+      "Sturdy hiking boots – the trails can be muddy and uneven",
+      "Warm layers – even in summer, temperatures can drop quickly",
+      "Map and compass/GPS – for navigating less well-marked trails",
+      "Water bottle and snacks – stay hydrated and energised",
+      "First-aid kit – for minor injuries",
+      "Sunscreen and hat – protect yourself from the sun, even on cloudy days",
+      "Insect repellent – particularly important in the summer",
+      "Headtorch – in case you get caught out after dark",
+      "Whistle – for emergencies"
+    ],
+    "gearHire": [
+      {
+        "name": "Paddles & Pedals",
+        "location": "Hay-on-Wye",
+        "url": "https://www.paddlesandpedals.co.uk/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "3h",
+          "route": "Via M4 and A449"
+        },
+        {
+          "from": "Manchester",
+          "duration": "3.5h",
+          "route": "Via M6 and M50"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "1.5h",
+          "route": "Via M5 and A40"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "1h",
+          "route": "Via M4 and A48"
+        }
+      ],
+      "publicTransport": "Chepstow and Lydney have train stations with connections to major cities. Bus services are available, but can be infrequent, especially in rural areas. Consider using local taxi services to reach trailheads.",
+      "parkingTips": "Parking can be limited at popular spots, especially during peak season. Arrive early or consider using public transport where possible. Be aware of parking charges and restrictions."
+    },
+    "safety": "Be aware of uneven terrain, especially on steeper sections of the trails. Stay on marked paths and avoid straying into potentially dangerous areas. Carry a map and compass and know how to use them. In case of emergency, dial 999 and ask for Mountain Rescue. Be aware of riverbanks and strong currents."
+  },
+  "faqs": [
+    {
+      "question": "Is the Wye Valley suitable for beginner hikers?",
+      "answer": "Yes, the Wye Valley offers a range of trails suitable for all abilities, including beginners. The Symonds Yat Rock circuit and the Biblins walk are good options for those starting out. Always check the trail difficulty before you go!"
+    },
+    {
+      "question": "What is the best time of year for hiking in the Wye Valley?",
+      "answer": "April to October is generally the best time for **hiking Wye Valley**, with milder weather and longer daylight hours. Spring is particularly beautiful with the bluebells in bloom, while autumn offers stunning foliage colours. However, the Wye Valley can be enjoyed year-round with appropriate gear."
+    },
+    {
+      "question": "Are there any guided hiking tours available in the Wye Valley?",
+      "answer": "While formal guided tours dedicated only to hiking are rare, it's worth checking in with outdoor activity centers for bespoke arrangements. Also keep an eye out for local walking groups that frequently put on trips."
+    },
+    {
+      "question": "Are dogs allowed on hiking trails in the Wye Valley?",
+      "answer": "Yes, dogs are generally allowed on hiking trails in the Wye Valley, but they must be kept under control at all times, particularly near livestock. Be mindful of other trail users and clean up after your dog."
+    },
+    {
+      "question": "Is there good public transportation in the Wye Valley?",
+      "answer": "Public transport is limited, particularly in the more rural areas. Chepstow and Lydney have train stations with links to major cities. Bus services connect some of the villages, but frequencies can be infrequent. Factor this into your planning when **hiking Wye Valley**."
+    },
+    {
+      "question": "What are the parking fees like in Wye Valley hiking areas?",
+      "answer": "Parking fees vary depending on the location. Popular spots like Symonds Yat Rock and the Biblins charge between £3-5 for a day's parking. Some smaller car parks and roadside parking areas are free, but spaces can be limited."
+    },
+    {
+      "question": "How difficult is the Offa's Dyke Path in the Wye Valley?",
+      "answer": "The Offa's Dyke Path in the Wye Valley is generally considered moderate in difficulty. There are some steep climbs and descents, but the path is well-maintained. The terrain can be uneven in places. Consider doing it in sections."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Paddles & Pedals",
+        "slug": "paddles-pedals",
+        "address": "The Old Railway Station, Brecon Rd, Hay-on-Wye, Hereford HR3 5PJ",
+        "lat": 52.079,
+        "lng": -3.123,
+        "description": "Primarily a bike and canoe shop, they also stock essential hiking gear and outdoor clothing. A great place to pick up maps, waterproofs and walking boots.",
+        "website": "https://www.paddlesandpedals.co.uk/",
+        "phone": "01497 820022",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "boot fitting"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 250
+      },
+      {
+        "name": "Mountain Warehouse Monmouth",
+        "slug": "mountain-warehouse-monmouth",
+        "address": "21-23 Monnow St, Monmouth NP25 3EF",
+        "lat": 51.811,
+        "lng": -2.71,
+        "description": "A well-known outdoor retailer offering a wide range of hiking gear and clothing at affordable prices. A good option for budget-conscious hikers.",
+        "website": "https://www.mountainwarehouse.com/",
+        "phone": "01600 714900",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.2,
+        "reviewCount": 150
+      },
+      {
+        "name": "Aldi Monmouth",
+        "slug": "aldi-monmouth",
+        "address": "Monmouth, Rockfield Rd, Monmouth NP25 5BG",
+        "lat": 51.8067185,
+        "lng": -2.7275041,
+        "description": "Sometimes you need inexpensive gear at a low price. Aldi's outdoor section often has affordable options for hiking basics, suitable for short trips, light wear and beginner hikers.",
+        "website": null,
+        "phone": "0800 042 0800",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.4,
+        "reviewCount": 1208
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Old Ferrie Inn",
+        "slug": "the-old-ferrie-inn",
+        "address": "Symonds Yat West, Ross-on-Wye HR9 6BL",
+        "lat": 51.836,
+        "lng": -2.657,
+        "description": "A historic riverside pub with a large beer garden, perfect for relaxing after a hike. Known for its traditional pub fare and stunning views of the River Wye.",
+        "vibe": "Riverside pub",
+        "priceRange": "££",
+        "website": "https://www.oldferrieinn.co.uk/",
+        "knownFor": "Riverside views, Traditional pub food"
+      },
+      {
+        "name": "The Saracens Head Inn",
+        "slug": "the-saracens-head-inn",
+        "address": "Tintern, Chepstow NP16 6SF",
+        "lat": 51.671,
+        "lng": -2.686,
+        "description": "A charming inn located right next to Tintern Abbey, offering a cosy atmosphere and delicious food. A great spot to refuel after exploring the abbey and surrounding trails.",
+        "vibe": "Cosy inn",
+        "priceRange": "££",
+        "website": "https://www.saracensheadinn.co.uk/",
+        "knownFor": "Location near Tintern Abbey, Cosy atmosphere"
+      },
+      {
+        "name": "Kingstone Brewery Tap",
+        "slug": "kingstone-brewery-tap",
+        "address": "Kingstone Brewery, Newcastle, Monmouth NP25 5NS",
+        "lat": 51.736,
+        "lng": -2.752,
+        "description": "A brewery taproom offering a range of locally brewed beers and ciders. A great place to sample some of the Wye Valley's finest beverages after a hike.",
+        "vibe": "Brewery taproom",
+        "priceRange": "£",
+        "website": "https://www.kingstonebrewery.co.uk/",
+        "knownFor": "Local beers and ciders"
+      },
+      {
+        "name": "The Ostrich Inn",
+        "slug": "the-ostrich-inn",
+        "address": "Newland, Coleford GL16 8NP",
+        "lat": 51.753,
+        "lng": -2.612,
+        "description": "A traditional country pub with a welcoming atmosphere and a good selection of ales. Known for its hearty food and friendly service.",
+        "vibe": "Traditional pub",
+        "priceRange": "££",
+        "website": "http://www.ostrichinn.co.uk/",
+        "knownFor": "Hearty food, Friendly service"
+      },
+      {
+        "name": "Bigsweir House",
+        "slug": "bigsweir-house",
+        "address": "Bigsweir, Llandogo, Monmouthshire NP25 4TR",
+        "lat": 51.767,
+        "lng": -2.636,
+        "description": "Beautiful Georgian house and garden, serves tea and cakes, fantastic spot to relax after a hike along the River Wye. Lovely views from the garden.",
+        "vibe": "Historic house and tea rooms",
+        "priceRange": "££",
+        "website": "http://bigsweirhouse.co.uk/",
+        "knownFor": "Tea and cake, Riverside garden"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Wigwam Holidays Symonds Yat",
+        "slug": "wigwam-holidays-symonds-yat",
+        "description": "Glamping pods near Symonds Yat, perfect for a comfortable outdoor experience. Close to many hiking trails.",
+        "type": "glamping",
+        "priceRange": "££",
+        "nearestSpot": "Symonds Yat Rock Viewpoint Circuit, 1km",
+        "website": "https://www.wigwamholidays.com/locations/symonds-yat"
+      },
+      {
+        "name": "Tintern Old Rectory",
+        "slug": "tintern-old-rectory",
+        "description": "A charming B&B in Tintern, offering comfortable rooms and a delicious breakfast. Ideal for exploring Tintern Abbey and the surrounding area.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Devil's Pulpit to Tintern Abbey, 2km",
+        "website": "https://www.tinternoldrectory.co.uk/"
+      },
+      {
+        "name": "The Wyndham Arms",
+        "slug": "the-wyndham-arms",
+        "description": "Located in Clearwell village, cozy, family-run inn, delicious food, near the Sculpture Trail",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Whitecliff viewpoint, 3km",
+        "website": "https://wyndhamarms.com/"
+      },
+      {
+        "name": "Camping at Greenacres Farm",
+        "slug": "camping-at-greenacres-farm",
+        "description": "A family-run campsite with stunning views. Close to hiking trails and the River Wye.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Symonds Yat Rock, 5km",
+        "website": "https://www.greenacresfarm.co.uk/"
+      },
+      {
+        "name": "Hostel Wye Valley",
+        "slug": "hostel-wye-valley",
+        "description": "Budget-friendly accommodation near the River Wye. Great base for exploring the Wye Valley.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Redbrook to Bigsweir, 2km",
+        "website": "https://www.hostelworld.com/p/314630/Wye-Valley/Wye-Valley-Hostel/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Monmouth Raft Race",
+      "type": "race",
+      "monthTypical": "September",
+      "description": "Annual raft race along the River Wye, raising money for local charities.",
+      "website": "https://monmouthraftrace.org.uk/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 100
+    },
+    {
+      "name": "Hay Festival",
+      "type": "festival",
+      "monthTypical": "May",
+      "description": "Annual literary festival in Hay-on-Wye, featuring talks, workshops, and performances.",
+      "website": "https://www.hayfestival.com/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 0
+    }
+  ],
+  "keywords": {
+    "primary": "hiking wye valley",
+    "secondary": [
+      "wye valley walks",
+      "offa's dyke path",
+      "tintern abbey hike",
+      "symonds yat hiking",
+      "wye valley trails"
+    ],
+    "longTail": [
+      "hiking trails near symonds yat",
+      "easy hikes in wye valley",
+      "dog friendly walks wye valley",
+      "walking routes near tintern abbey",
+      "best viewpoints in wye valley for hiking",
+      "offa's dyke path hiking itinerary",
+      "wye valley hiking with kids",
+      "hiking the wye valley long distance path",
+      "self guided hiking wye valley",
+      "wye valley hiking weekend",
+      "challenging hikes in the wye valley",
+      "riverside hikes in the wye valley"
+    ],
+    "localIntent": [
+      "hiking near Monmouth",
+      "hiking near Chepstow",
+      "hiking near Ross-on-Wye",
+      "hiking near Tintern",
+      "walks near Lydney"
+    ],
+    "commercialIntent": [
+      "wye valley guided hikes",
+      "wye valley hiking tours",
+      "best wye valley hiking routes",
+      "hiking maps wye valley",
+      "wye valley hiking holiday"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "brecon-beacons",
+        "label": "Hiking in Brecon Beacons"
+      },
+      {
+        "regionSlug": "snowdonia",
+        "label": "Hiking in Snowdonia"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "canoeing-kayaking",
+        "label": "Canoeing & Kayaking in Wye Valley"
+      },
+      {
+        "activityTypeSlug": "cycling",
+        "label": "Cycling in Wye Valley"
+      },
+      {
+        "activityTypeSlug": "climbing",
+        "label": "Climbing in Wye Valley"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Wye Valley Canoes",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Symonds Yat West, Herefordshire HR9 6BL",
+      "postcode": "HR9 6BL",
+      "lat": 51.912,
+      "lng": -2.648,
+      "phone": "01600 890238",
+      "website": "https://www.wyevalleycanoes.co.uk/",
+      "googleRating": 4.7,
+      "reviewCount": 350,
+      "description": "Wye Valley Canoes provides canoe and kayak hire for exploring the River Wye. While focused on canoeing, they can advise on hiking trails in the area.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "canoe hire",
+        "kayak hire",
+        "guided tours",
+        "hiking advice"
+      ],
+      "priceRange": "££",
+      "notes": "Well-established and located in a scenic area; good source of local information.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Black Mountain Adventure",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Capel-y-ffin, Llanthony, Abergavenny NP7 7NN",
+      "postcode": "NP7 7NN",
+      "lat": 51.948,
+      "lng": -3.128,
+      "phone": "01873 890684",
+      "website": "https://www.blackmountainadventure.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 180,
+      "description": "Black Mountain Adventure offers a range of outdoor activities, including guided hiking and navigation courses. They operate within the Brecon Beacons, near the Wye Valley.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "guided hikes",
+        "navigation courses",
+        "outdoor skills training"
+      ],
+      "priceRange": "£££",
+      "notes": "Offers specialist hiking guidance and training.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Paddles & Pedals",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Oxford Rd, Hay-on-Wye, Hereford HR3 5AJ",
+      "postcode": "HR3 5AJ",
+      "lat": 52.078,
+      "lng": -3.118,
+      "phone": "01497 820022",
+      "website": "https://www.paddlesandpedals.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 120,
+      "description": "Paddles & Pedals provides outdoor gear and bike hire in Hay-on-Wye. Ideal for hikers looking for last-minute supplies or equipment rental.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "bike hire",
+        "outdoor gear sales",
+        "hiking equipment"
+      ],
+      "priceRange": "££",
+      "notes": "Good location for hikers exploring the Hay Bluff area.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "The Old Ferrie Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Symonds Yat, Herefordshire HR9 6BL",
+      "postcode": "HR9 6BL",
+      "lat": 51.912,
+      "lng": -2.651,
+      "phone": "01600 890232",
+      "website": "https://www.oldferrieinn.co.uk/",
+      "googleRating": 4.3,
+      "reviewCount": 850,
+      "description": "A riverside pub in Symonds Yat offering food and drink with stunning views. A great place to relax after a hike.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation",
+        "riverside views"
+      ],
+      "priceRange": "££",
+      "notes": "Very popular and often crowded, but great location.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "The Saracens Head Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Symonds Yat East, Ross-on-Wye HR9 6JL",
+      "postcode": "HR9 6JL",
+      "lat": 51.911,
+      "lng": -2.643,
+      "phone": "01600 890405",
+      "website": "https://www.saracensheadinn.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 700,
+      "description": "A historic inn located in Symonds Yat East, serving traditional pub fare. A perfect stop for refreshments during or after a hike.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation",
+        "river access"
+      ],
+      "priceRange": "££",
+      "notes": "Access by foot ferry from Symonds Yat West.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Kingstone Brewery Tap",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Kingstone Brewery, Tintern, Chepstow NP16 6SE",
+      "postcode": "NP16 6SE",
+      "lat": 51.674,
+      "lng": -2.663,
+      "phone": "01291 689048",
+      "website": "https://www.kingstonebrewery.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 150,
+      "description": "A brewery taproom near Tintern offering local beers. A rewarding stop after exploring the nearby trails.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "beer",
+        "food",
+        "brewery tours"
+      ],
+      "priceRange": "££",
+      "notes": "Great for beer lovers.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "The Ostrich Inn",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "Newland, Coleford GL16 8NJ",
+      "postcode": "GL16 8NJ",
+      "lat": 51.763,
+      "lng": -2.629,
+      "phone": "01594 833199",
+      "website": "https://theostrichinn.com/",
+      "googleRating": 4.5,
+      "reviewCount": 400,
+      "description": "A charming pub in Newland, Forest of Dean, offering traditional pub food and a welcoming atmosphere. A good base for hiking in the surrounding area.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Near popular walking routes.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Bigsweir House",
+      "type": "venue",
+      "category": "accommodation",
+      "address": "Bigsweir Bridge, St Briavels, Lydney GL15 6QX",
+      "postcode": "GL15 6QX",
+      "lat": 51.731,
+      "lng": -2.599,
+      "phone": "01594 530249",
+      "website": "https://bigsweirhouse.co.uk/",
+      "googleRating": 4.7,
+      "reviewCount": 80,
+      "description": "A guest house located near the River Wye, providing comfortable accommodation for hikers. Near Tintern Abbey.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "accommodation",
+        "breakfast"
+      ],
+      "priceRange": "£££",
+      "notes": "A more luxurious stay.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Visit Monmouth Tourist Information Centre",
+      "type": "attraction",
+      "category": "transport",
+      "address": "Shire Hall, Agincourt Square, Monmouth NP25 3DY",
+      "postcode": "NP25 3DY",
+      "lat": 51.811,
+      "lng": -2.713,
+      "phone": "01600 713899",
+      "website": "https://www.visitmonmouthshire.com/",
+      "googleRating": 4.0,
+      "reviewCount": 50,
+      "description": "Provides local information, including hiking routes and transport options. Can assist with planning hikes in the Wye Valley.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "information",
+        "maps",
+        "brochures",
+        "transport advice"
+      ],
+      "priceRange": "£",
+      "notes": "Essential for planning.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Forest of Dean Adventure",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Coleford, GL16 8HF",
+      "postcode": "GL16 8HF",
+      "lat": 51.812,
+      "lng": -2.566,
+      "phone": "01594 834666",
+      "website": "https://www.forestofdeanadventure.co.uk/",
+      "googleRating": 4.7,
+      "reviewCount": 220,
+      "description": "Located close to the Wye Valley, this provider offers various outdoor activities, including guided hikes and navigation training in the Forest of Dean.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "guided hikes",
+        "navigation training",
+        "team building activities"
+      ],
+      "priceRange": "£££",
+      "notes": "Professional guides and varied activities.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Go Outdoors Monmouth",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 3, Monnow Retail Park, Wonastow Rd, Monmouth NP25 5JB",
+      "postcode": "NP25 5JB",
+      "lat": 51.811,
+      "lng": -2.723,
+      "phone": "0330 045 0362",
+      "website": "https://www.gooutdoors.co.uk/stores/monmouth",
+      "googleRating": 4.2,
+      "reviewCount": 320,
+      "description": "Large outdoor retailer offering a wide range of hiking gear, clothing, and equipment. Ideal for stocking up on essentials before a hike.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "gear sales",
+        "clothing sales",
+        "equipment sales"
+      ],
+      "priceRange": "££",
+      "notes": "Good for a wide range of products and price points.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Tintern Abbey",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Tintern, Chepstow NP16 6SE",
+      "postcode": "NP16 6SE",
+      "lat": 51.68,
+      "lng": -2.67,
+      "phone": "01291 681251",
+      "website": "https://cadw.gov.wales/visit/places-to-visit/tintern-abbey",
+      "googleRating": 4.6,
+      "reviewCount": 4000,
+      "description": "Historic abbey ruins. Hiking trails are nearby offering views of the abbey.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "historic tours",
+        "hiking trails",
+        "museum"
+      ],
+      "priceRange": "£",
+      "notes": "Historic site and gateway for a number of walks.",
+      "inDatabase": false,
+      "priority": "high"
+    }
+  ]
+}

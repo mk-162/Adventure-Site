@@ -1,0 +1,966 @@
+{
+  "regionSlug": "anglesey",
+  "activityTypeSlug": "wild-swimming",
+  "title": "Wild Swimming in Anglesey",
+  "strapline": "Discover hidden coves and surprisingly warm (ish!) waters on Anglesey's rugged coastline.",
+  "metaTitle": "Wild Swimming Anglesey | Adventure Wales",
+  "metaDescription": "Dive into adventure with our guide to wild swimming Anglesey! Discover the best spots, safety tips, and local secrets for an unforgettable experience.",
+  "heroAlt": "Swimmer silhouetted against the sunset at Llanddwyn Island, Anglesey",
+  "introduction": "Anglesey, or Ynys Môn as we call it in Welsh, is a wild swimming paradise. Sure, it's not the Med, but the Gulf Stream nudges past, making the waters surprisingly bearable, especially in summer. We're talking turquoise bays, dramatic cliffs, and even the odd shipwreck to explore (safely, of course!). What sets Anglesey apart is its variety. One day you're swimming off a sandy beach at Benllech, the next you're scrambling down to a secluded cove near Rhoscolyn. \n\nWild swimming anglesey offers something for everyone, from families looking for a gentle paddle to experienced swimmers seeking a coastal challenge. The island's relatively small size means you're never far from another stunning location.  However, don't underestimate the Irish Sea! Conditions can change rapidly, so always check the forecast and never swim alone, especially in exposed areas.  Beginners should stick to sheltered bays like Rhoscolyn or Porth Dafarch. More confident swimmers can tackle longer swims around Llanddwyn Island, but be mindful of currents.  And remember, while it's tempting to 'get away from it all', some of the most beautiful spots require a bit of a hike. Plan your access, wear appropriate footwear and pack plenty of water. This isn't a manicured swimming pool; it's wild, beautiful, and demands respect.",
+  "bestSeason": "June-September",
+  "difficultyRange": "Easy to Challenging",
+  "priceRange": "Free - £60 guided",
+  "spots": [
+    {
+      "name": "Llanddwyn Island (Newborough)",
+      "slug": "llanddwyn-island",
+      "description": "A truly magical location. Swim from Newborough beach to Llanddwyn Island (at low tide) or around the island itself for a longer swim. The views of Snowdonia are incredible on a clear day, and the island's ruined chapel adds a touch of history.  Be very aware of the tides; getting cut off is a real risk.",
+      "difficulty": "Moderate",
+      "duration": "1-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced swimmers comfortable with currents and tides.",
+      "notSuitableFor": "Beginners, solo swimmers, anyone unfamiliar with tide tables.",
+      "bestSeason": "June-September",
+      "parking": "Newborough Forest car park (pay and display). Can get very busy, especially in summer. Arrive early!",
+      "startPoint": {
+        "name": "Newborough Beach Car Park",
+        "lat": 53.161,
+        "lng": -4.343
+      },
+      "estimatedCost": "Free (parking £7)",
+      "operatorSlug": "anglesey-adventures",
+      "insiderTip": "Check the tide times religiously! Low tide allows you to walk to the island, but high tide offers a more challenging (and potentially dangerous) swim around it. Don't underestimate the distance."
+    },
+    {
+      "name": "Rhoscolyn Bay",
+      "slug": "rhoscolyn-bay",
+      "description": "A beautiful, sheltered bay perfect for families and beginner wild swimmers. The clear water is ideal for snorkelling, and there are plenty of rock pools to explore.  The beach is easily accessible, and there's a pub nearby for post-swim refreshments. A great spot to learn the basics.",
+      "difficulty": "Easy",
+      "duration": "30 mins - 1 hour",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, beginners, those looking for a relaxing swim.",
+      "notSuitableFor": "Experienced swimmers seeking a challenge.",
+      "bestSeason": "May-September",
+      "parking": "Rhoscolyn car park, directly above the beach. Can get busy in peak season.",
+      "startPoint": {
+        "name": "Rhoscolyn Beach Car Park",
+        "lat": 53.254,
+        "lng": -4.577
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "The Oyster Catcher is great for food but can be expensive. Pack a picnic and enjoy it on the beach for a cheaper alternative."
+    },
+    {
+      "name": "Church Bay",
+      "slug": "church-bay",
+      "description": "A picturesque cove with a rocky beach and crystal-clear water. Popular with kayakers and divers, Church Bay is a great spot for a sheltered swim. Don't miss the Lobster Pot restaurant for fresh seafood afterwards.",
+      "difficulty": "Easy",
+      "duration": "30 mins - 1 hour",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, those looking for a scenic and sheltered swim.",
+      "notSuitableFor": "Those seeking a long, challenging swim.",
+      "bestSeason": "May-September",
+      "parking": "Church Bay car park, a short walk from the beach. Small fee applies.",
+      "startPoint": {
+        "name": "Church Bay Car Park",
+        "lat": 53.409,
+        "lng": -4.566
+      },
+      "estimatedCost": "Free (parking £3)",
+      "operatorSlug": null,
+      "insiderTip": "The Lobster Pot gets incredibly busy, especially on weekends. Book a table in advance to avoid disappointment."
+    },
+    {
+      "name": "Porth Dafarch",
+      "slug": "porth-dafarch",
+      "description": "A popular sandy beach with easy access to the water. Porth Dafarch is a great spot for a quick dip or a longer swim along the coastline. It's also a popular spot for watersports, so be aware of other users. Good facilities including toilets and a cafe.",
+      "difficulty": "Easy",
+      "duration": "30 mins - 1 hour",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, beginners, those looking for a convenient swimming spot.",
+      "notSuitableFor": "Those seeking solitude.",
+      "bestSeason": "May-September",
+      "parking": "Porth Dafarch car park, right next to the beach. Can get very busy.",
+      "startPoint": {
+        "name": "Porth Dafarch Beach Car Park",
+        "lat": 53.303,
+        "lng": -4.612
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Arrive early to secure a parking spot, especially during peak season. The beach cafe is decent, but bring your own snacks and drinks to save money."
+    },
+    {
+      "name": "Cable Bay",
+      "slug": "cable-bay",
+      "description": "Also known as Porth Trecastell, this is a stunning bay with golden sands and crystal-clear waters. There are some rocky outcrops to navigate around, providing some good exploring opportunities. Can get very busy, especially during the summer. Take care entering and exiting the water.",
+      "difficulty": "Moderate",
+      "duration": "45 mins - 1.5 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Those looking for beautiful scenery with a little bit of exploring.",
+      "notSuitableFor": "Complete beginners.",
+      "bestSeason": "May-September",
+      "parking": "Limited parking available in a small car park above the beach. Get there early.",
+      "startPoint": {
+        "name": "Cable Bay Car Park",
+        "lat": 53.215,
+        "lng": -4.557
+      },
+      "estimatedCost": "Free (parking £3)",
+      "operatorSlug": null,
+      "insiderTip": "Check the tide times, as the beach can disappear at high tide. Also, be careful of the rocks; they can be slippery."
+    },
+    {
+      "name": "Benllech",
+      "slug": "benllech",
+      "description": "A large, sandy beach with shallow waters, perfect for families and beginners. Easy access and plenty of facilities make Benllech a convenient choice for a quick dip. Great for paddling and building sandcastles as well as swimming.",
+      "difficulty": "Easy",
+      "duration": "30 mins - 1 hour",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families with young children, beginner swimmers.",
+      "notSuitableFor": "Those seeking a wild or secluded swim.",
+      "bestSeason": "May-September",
+      "parking": "Large car park next to the beach (pay and display).",
+      "startPoint": {
+        "name": "Benllech Beach Car Park",
+        "lat": 53.309,
+        "lng": -4.237
+      },
+      "estimatedCost": "Free (parking £4-6)",
+      "operatorSlug": null,
+      "insiderTip": "The beach can get very busy, especially on weekends. Head to the far end of the beach for a bit more space."
+    },
+    {
+      "name": "Trearddur Bay",
+      "slug": "trearddur-bay",
+      "description": "A popular resort with two sandy beaches separated by a rocky headland. Great for swimming, kayaking, and other watersports. Plenty of cafes and restaurants nearby. Can get quite busy in peak season.",
+      "difficulty": "Easy to Moderate (depending on where you swim)",
+      "duration": "30 mins - 1.5 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, those looking for a mix of swimming and watersports.",
+      "notSuitableFor": "Those seeking a secluded swimming experience.",
+      "bestSeason": "May-September",
+      "parking": "Several car parks in Trearddur Bay (pay and display).",
+      "startPoint": {
+        "name": "Trearddur Bay Beach Car Park",
+        "lat": 53.285,
+        "lng": -4.637
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Explore the rock pools at low tide for some fascinating marine life."
+    },
+    {
+      "name": "Cemlyn Bay",
+      "slug": "cemlyn-bay",
+      "description": "A more remote and rugged bay, known for its shingle beach and wildlife reserve. The waters are generally calm, making it a good spot for a peaceful swim. Keep an eye out for seals and seabirds. More exposed than some of the other bays.",
+      "difficulty": "Moderate",
+      "duration": "45 mins - 1.5 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Those seeking a more secluded and nature-focused swimming experience.",
+      "notSuitableFor": "Those looking for a sandy beach or easy access.",
+      "bestSeason": "May-September",
+      "parking": "Small car park near the Cemlyn Nature Reserve.",
+      "startPoint": {
+        "name": "Cemlyn Nature Reserve Car Park",
+        "lat": 53.426,
+        "lng": -4.507
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Bring binoculars to spot the seabirds nesting on the nearby islands."
+    },
+    {
+      "name": "Silver Bay",
+      "slug": "silver-bay",
+      "description": "A beautiful, sheltered bay with fine sand and turquoise waters. Privately owned, but accessible to the public. Great for swimming and relaxing. Can get busy in the summer. Beautiful and sheltered. Access isn't always obvious.",
+      "difficulty": "Easy",
+      "duration": "30 mins - 1 hour",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, those looking for a picturesque and sheltered swim.",
+      "notSuitableFor": "Those seeking a wild or remote experience.",
+      "bestSeason": "May-September",
+      "parking": "Limited parking available near the entrance to the bay. Be respectful of residents.",
+      "startPoint": {
+        "name": "Silver Bay",
+        "lat": 53.244,
+        "lng": -4.528
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Access to the beach can be tricky; look for the public footpath signs. Be respectful of the private property."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The weather on Anglesey can be unpredictable, even in summer. Sea temperatures typically range from 12-16°C (54-61°F) in the summer months. Strong winds can create choppy conditions, making swimming less enjoyable and potentially dangerous. Always check the forecast and be prepared for sudden changes.",
+    "weatherLinks": [
+      {
+        "name": "Met Office",
+        "url": "https://www.metoffice.gov.uk/weather/forecast/gcv0081g1"
+      },
+      {
+        "name": "Windfinder",
+        "url": "https://www.windfinder.com/forecast/holyhead"
+      }
+    ],
+    "gearChecklist": [
+      "Wetsuit: Even in summer, the water can be cold. A wetsuit will keep you warm and comfortable.",
+      "Swim cap: Helps retain heat and makes you more visible in the water.",
+      "Towel: A quick-drying towel is essential.",
+      "Warm clothing: Layers are key, especially after your swim.",
+      "Waterproof bag: To protect your valuables from getting wet.",
+      "Dry robe: For changing outdoors with privacy and warmth.",
+      "Brightly coloured swim buoy: For visibility in the water, especially important in busy areas.",
+      "Swim shoes or neoprene socks: To protect your feet on rocky beaches.",
+      "First-aid kit: For minor injuries.",
+      "Sunscreen: Even on cloudy days, the sun can be strong."
+    ],
+    "gearHire": [
+      {
+        "name": "Anglesey Adventures",
+        "location": "Various locations",
+        "url": "https://angleseyadventures.com/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5h",
+          "route": "Via M6 and A55"
+        },
+        {
+          "from": "Manchester",
+          "duration": "2h 30m",
+          "route": "Via M56 and A55"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3h 30m",
+          "route": "Via M6 and A55"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "4h 30m",
+          "route": "Via A470 and A55"
+        }
+      ],
+      "publicTransport": "Bangor is the nearest train station, with regular services from major UK cities. From Bangor, take a bus to various towns and villages on Anglesey. The TrawsCymru T2 bus runs the length of the island.",
+      "parkingTips": "Parking can be limited, especially in popular spots during peak season. Arrive early or consider using public transport. Be aware of parking restrictions and fees."
+    },
+    "safety": "Never swim alone. Check the tide times and weather forecast before you go. Be aware of currents and rip tides. Wear a brightly coloured swim buoy to improve visibility. Enter the water slowly to acclimatise to the temperature. If you get into difficulty, signal for help. Emergency contact: 999 (or 112) for Coastguard."
+  },
+  "faqs": [
+    {
+      "question": "What's the best time of year for wild swimming in Anglesey?",
+      "answer": "The best time is generally between June and September when the water is at its warmest and the weather is most settled. However, even in summer, be prepared for cooler temperatures and changing conditions."
+    },
+    {
+      "question": "Are there any guided wild swimming tours in Anglesey?",
+      "answer": "Yes, Anglesey Adventures offers guided wild swimming and coasteering tours, providing a safe and enjoyable experience for all levels. They provide all the necessary equipment and expert guidance."
+    },
+    {
+      "question": "What's the average sea temperature in Anglesey?",
+      "answer": "Sea temperatures in Anglesey typically range from 12-16°C (54-61°F) in the summer months. A wetsuit is highly recommended for comfortable swimming."
+    },
+    {
+      "question": "Are there any dangerous currents or tides in Anglesey?",
+      "answer": "Yes, there are strong currents and tides in some areas, particularly around Llanddwyn Island and the Menai Strait. Always check tide tables and be aware of local conditions before swimming. Avoid swimming during strong tides or in exposed areas."
+    },
+    {
+      "question": "What should I wear for wild swimming in Anglesey?",
+      "answer": "A wetsuit is highly recommended, especially outside of peak summer months. Also wear a brightly coloured swim cap for visibility, and consider swim shoes or neoprene socks for rocky beaches. Always bring warm clothing to change into after your swim."
+    },
+    {
+      "question": "Where can I hire a wetsuit on Anglesey?",
+      "answer": "You can hire wetsuits from Anglesey Adventures. Some watersports shops in Rhosneigr may also offer wetsuit hire, but it's best to check in advance."
+    },
+    {
+      "question": "Is it safe to wild swim in the Menai Strait?",
+      "answer": "The Menai Strait can be a challenging place to swim due to strong currents. Only experienced swimmers should consider swimming there, and it's best to go with a guide or experienced group. Always check tide times and be aware of local conditions."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Anglesey Outdoors",
+        "slug": "anglesey-outdoors",
+        "address": "Unit 5, Penrhos Industrial Estate, Holyhead LL65 2UJ",
+        "lat": 53.301,
+        "lng": -4.628,
+        "description": "A well-stocked outdoor shop selling a range of watersports equipment, including wetsuits, swim caps, and buoyancy aids. They also offer expert advice on local swimming spots.",
+        "website": "https://www.angleseyoutdoors.com/",
+        "phone": "01407 765500",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 150
+      },
+      {
+        "name": "Funsport Rhosneigr",
+        "slug": "funsport-rhosneigr",
+        "address": "Beach Shop, Rhosneigr, Anglesey LL64 5JR",
+        "lat": 53.257,
+        "lng": -4.567,
+        "description": "Focusing mainly on surfing and kitesurfing gear, but they do stock wetsuits and other swimming essentials.",
+        "website": "https://funsportonline.com/",
+        "phone": "01407 810066",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 120
+      },
+      {
+        "name": "Gecko Surf",
+        "slug": "gecko-surf",
+        "address": "The Beach, Rhosneigr, Anglesey LL64 5JR",
+        "lat": 53.257,
+        "lng": -4.568,
+        "description": "Surf shop offering wetsuits and some swimming gear, as well as surfboards. Great for getting advice on conditions.",
+        "website": "https://geckosurf.co.uk/",
+        "phone": "01407 810899",
+        "services": [
+          "gear sales",
+          "hire"
+        ],
+        "googleRating": 4.9,
+        "reviewCount": 95
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Oyster Catcher",
+        "slug": "the-oyster-catcher",
+        "address": "Rhosneigr LL64 5JP",
+        "lat": 53.257,
+        "lng": -4.569,
+        "description": "A stylish restaurant with stunning sea views. Great for a post-swim meal or drink. Can be pricey but the food is excellent. Book in advance!",
+        "vibe": "Upscale restaurant with sea views",
+        "priceRange": "£££",
+        "website": "https://www.oystercatcheranglesey.co.uk/",
+        "knownFor": "Fresh seafood, cocktails, stunning views"
+      },
+      {
+        "name": "Sandy Mount House",
+        "slug": "sandy-mount-house",
+        "address": "Rhosneigr LL64 5JS",
+        "lat": 53.261,
+        "lng": -4.57,
+        "description": "A stylish restaurant and bar with a relaxed atmosphere. Perfect for a post-swim drink or meal. Great atmosphere and friendly staff.",
+        "vibe": "Relaxed restaurant and bar",
+        "priceRange": "££",
+        "website": "https://sandymounthouse.co.uk/",
+        "knownFor": "Pizza, cocktails, lively atmosphere"
+      },
+      {
+        "name": "Wavecrest Cafe",
+        "slug": "wavecrest-cafe",
+        "address": "Trearddur Bay LL65 2BP",
+        "lat": 53.284,
+        "lng": -4.638,
+        "description": "A traditional seaside cafe serving breakfast, lunch, and snacks. Perfect for a quick bite after a swim in Trearddur Bay.",
+        "vibe": "Traditional seaside cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Breakfast, sandwiches, ice cream"
+      },
+      {
+        "name": "The Lobster Pot",
+        "slug": "the-lobster-pot",
+        "address": "Church Bay LL65 4EU",
+        "lat": 53.408,
+        "lng": -4.565,
+        "description": "A charming restaurant serving fresh seafood. A must-visit after a swim in Church Bay. Very popular, book ahead.",
+        "vibe": "Seafood restaurant",
+        "priceRange": "££",
+        "website": "https://www.thelobsterpotrestaurant.co.uk/",
+        "knownFor": "Fresh lobster, seafood platters, local produce"
+      },
+      {
+        "name": "Sosban & The Secret Garden",
+        "slug": "sosban-and-the-secret-garden",
+        "address": "The Old Rectory, Llanfairpwllgwyngyll LL61 5YQ",
+        "lat": 53.221,
+        "lng": -4.204,
+        "description": "A Michelin-starred restaurant offering a unique dining experience. A special treat after a day of swimming. Very exclusive and expensive.",
+        "vibe": "Fine dining",
+        "priceRange": "£££",
+        "website": "https://www.sosbanandthesecretgarden.co.uk/",
+        "knownFor": "Michelin-starred cuisine, tasting menus, unique dining experience"
+      },
+      {
+        "name": "White Eagle",
+        "slug": "white-eagle",
+        "address": "Rhosligwy, Rhosgoch LL66 0DH",
+        "lat": 53.394,
+        "lng": -4.316,
+        "description": "A popular pub near Cemlyn Bay with good food and a welcoming atmosphere. A great place to warm up after a swim.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "https://www.white-eagle.co.uk/",
+        "knownFor": "Pub classics, real ales, sea views"
+      },
+      {
+        "name": "Ann's Pantry",
+        "slug": "anns-pantry",
+        "address": "Moelfre LL72 8HG",
+        "lat": 53.34,
+        "lng": -4.185,
+        "description": "A charming tea room and cafe offering light bites and cakes. Perfect for a post-swim treat after exploring nearby beaches.",
+        "vibe": "Charming tea room",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Cakes, sandwiches, afternoon tea"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Plas Newydd Caravan Park",
+        "slug": "plas-newydd-caravan-park",
+        "description": "A campsite located near Newborough Forest and Llanddwyn Island, offering a budget-friendly option for wild swimmers.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Llanddwyn Island (1 mile)",
+        "website": "https://www.plasnewyddcaravanpark.co.uk/"
+      },
+      {
+        "name": "The Bulkeley Hotel",
+        "slug": "the-bulkeley-hotel",
+        "description": "A historic hotel in Beaumaris, offering comfortable rooms and easy access to the Menai Strait and other swimming spots.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Menai Strait (0.5 miles)",
+        "website": "https://www.bulkeleyhotel.co.uk/"
+      },
+      {
+        "name": "YHA Pen-y-Pass",
+        "slug": "yha-pen-y-pass",
+        "description": "A budget-friendly hostel in Llanberis, ideal for exploring Snowdonia and accessing swimming spots on the mainland side of the Menai Strait.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Menai Strait (5 miles)",
+        "website": "https://www.yha.org.uk/hostel/yha-pen-y-pass"
+      },
+      {
+        "name": "Trearddur Bay Hotel",
+        "slug": "trearddur-bay-hotel",
+        "description": "A comfortable hotel with sea views, perfectly located for swimming in Trearddur Bay.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Trearddur Bay (0.1 miles)",
+        "website": "https://www.trearddurbayhotel.com/"
+      },
+      {
+        "name": "Bryn Cethin Bach",
+        "slug": "bryn-cethin-bach",
+        "description": "A charming B&B near Rhosneigr, offering comfortable accommodation and easy access to the beaches and swimming spots.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Rhosneigr (1 mile)",
+        "website": "https://www.bryncethinbach.co.uk/"
+      },
+      {
+        "name": "Bodnolwyn Caravan Park",
+        "slug": "bodnolwyn-caravan-park",
+        "description": "Located a short drive from Cemlyn Bay, offering camping and caravan pitches. Ideal for those seeking a quieter location with easy access to the coast.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Cemlyn Bay (2 miles)",
+        "website": "https://www.ukcampsite.co.uk/sites/details.asp?revid=6192"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Anglesey Sandman Triathlon",
+      "type": "race",
+      "monthTypical": "September",
+      "description": "A challenging triathlon featuring a swim in Llanddwyn Bay, followed by a bike ride and run through the scenic landscape.",
+      "website": "https://alwaysaimhighevents.com/events/anglesey-sandman-triathlon",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "registrationCost": 140
+    },
+    {
+      "name": "RNLI Beaumaris Lifeboat Open Day",
+      "type": "exhibition",
+      "monthTypical": "August",
+      "description": "An opportunity to learn about the work of the RNLI and see their lifeboat in action. A chance to support a vital service for swimmers and watersports enthusiasts.",
+      "website": "https://rnli.org/",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "registrationCost": null
+    }
+  ],
+  "keywords": {
+    "primary": "wild swimming anglesey",
+    "secondary": [
+      "wild swimming wales",
+      "anglesey swimming spots",
+      "sea swimming anglesey",
+      "open water swimming anglesey",
+      "best beaches for swimming anglesey"
+    ],
+    "longTail": [
+      "safe wild swimming spots anglesey",
+      "best beaches for wild swimming anglesey for beginners",
+      "guided wild swimming tours anglesey",
+      "wild swimming anglesey with kids",
+      "wild swimming anglesey sea temperature",
+      "what to wear for wild swimming anglesey",
+      "dog friendly wild swimming spots anglesey",
+      "wild swimming anglesey rhoscolyn bay",
+      "wild swimming anglesey llanddwyn island",
+      "wild swimming anglesey tides",
+      "wild swimming anglesey safety tips",
+      "cold water swimming anglesey"
+    ],
+    "localIntent": [
+      "wild swimming near holyhead",
+      "wild swimming near beaumaris",
+      "wild swimming near rhosneigr",
+      "wild swimming near llanfairpwllgwyngyll",
+      "wild swimming near aethwy"
+    ],
+    "commercialIntent": [
+      "anglesey wild swimming tours",
+      "wild swimming wetsuit hire anglesey",
+      "book wild swimming guide anglesey",
+      "anglesey swimming adventure prices",
+      "wild swimming lessons anglesey"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "snowdonia",
+        "label": "Wild Swimming in Snowdonia"
+      },
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Wild Swimming in Pembrokeshire"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "coasteering",
+        "label": "Coasteering in Anglesey"
+      },
+      {
+        "activityTypeSlug": "sea-kayaking",
+        "label": "Sea Kayaking in Anglesey"
+      },
+      {
+        "activityTypeSlug": "surfing",
+        "label": "Surfing in Anglesey"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Anglesey Adventures",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Porth Penrhyn, Menai Bridge LL59 5DW",
+      "postcode": "LL59 5DW",
+      "lat": 53.226,
+      "lng": -4.192,
+      "phone": "01248 852752",
+      "website": "https://www.angleseyadventures.com/",
+      "googleRating": 5.0,
+      "reviewCount": 50,
+      "description": "Offers guided coasteering and sea-kayaking adventures, providing expert instruction and equipment for exploring the Anglesey coastline.",
+      "relevantActivities": [
+        "wild-swimming",
+        "coasteering"
+      ],
+      "services": [
+        "guided tours",
+        "equipment rental",
+        "instruction"
+      ],
+      "priceRange": "££",
+      "notes": "A key provider of guided coastal activities; can likely incorporate wild swimming into coasteering sessions.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Anglesey Outdoors",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Parc Mount Pleasant, Llanfairpwllgwyngyll LL61 5YQ",
+      "postcode": "LL61 5YQ",
+      "lat": 53.224,
+      "lng": -4.203,
+      "phone": "01248 714044",
+      "website": "https://angleseyoutdoors.com/",
+      "googleRating": 4.3,
+      "reviewCount": 35,
+      "description": "Sells and rents outdoor gear, including wetsuits, buoyancy aids, and other equipment suitable for wild swimming and watersports.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "gear rental",
+        "equipment sales",
+        "wetsuit hire"
+      ],
+      "priceRange": "££",
+      "notes": "Essential for providing appropriate gear for swimmers.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "The Oyster Catcher",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Pentrefelin, Rhosneigr LL64 5JP",
+      "postcode": "LL64 5JP",
+      "lat": 53.233,
+      "lng": -4.524,
+      "phone": "01407 811118",
+      "website": "https://oystercatcheranglesey.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 1500,
+      "description": "A popular restaurant and bar in Rhosneigr, offering a menu of fresh seafood and local produce, ideal for a post-swim meal.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "restaurant",
+        "bar",
+        "outdoor seating"
+      ],
+      "priceRange": "£££",
+      "notes": "Convenient location for post-swim refreshments after a dip at Rhosneigr beach.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Sandy Mount House",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Rhosneigr LL64 5QX",
+      "postcode": "LL64 5QX",
+      "lat": 53.232,
+      "lng": -4.522,
+      "phone": "01407 253111",
+      "website": "https://sandymounthouse.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 800,
+      "description": "A stylish restaurant and bar offering a relaxed atmosphere and a varied menu, perfect for relaxing after a wild swim.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "restaurant",
+        "bar",
+        "accommodation"
+      ],
+      "priceRange": "£££",
+      "notes": "Good option for a meal and drinks after swimming in the Rhosneigr area.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Wavecrest Cafe",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Trearddur Bay LL65 2AZ",
+      "postcode": "LL65 2AZ",
+      "lat": 53.282,
+      "lng": -4.619,
+      "phone": "01407 860010",
+      "website": null,
+      "googleRating": 4.4,
+      "reviewCount": 300,
+      "description": "A beachfront cafe in Trearddur Bay, serving simple meals, snacks, and hot drinks, ideal for a quick refuel after a swim.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "cafe",
+        "takeaway"
+      ],
+      "priceRange": "£",
+      "notes": "Perfect for a quick and easy post-swim snack or drink at Trearddur Bay.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "The Lobster Pot",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Church Bay, Llanfaethlu LL65 4AR",
+      "postcode": "LL65 4AR",
+      "lat": 53.381,
+      "lng": -4.57,
+      "phone": "01407 730241",
+      "website": null,
+      "googleRating": 4.3,
+      "reviewCount": 600,
+      "description": "A traditional restaurant in Church Bay known for its seafood dishes, offering a delightful meal after a swim in the bay.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "restaurant",
+        "seafood"
+      ],
+      "priceRange": "££",
+      "notes": "A great option for a more formal meal after swimming at Church Bay.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Porth Dafarch Beach",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Porth Dafarch, Holyhead LL65 2PL",
+      "postcode": "LL65 2PL",
+      "lat": 53.292,
+      "lng": -4.644,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.7,
+      "reviewCount": 800,
+      "description": "A sandy beach with clear waters popular for swimming, snorkeling, and watersports. Good access and parking.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "beach",
+        "parking",
+        "watersports"
+      ],
+      "priceRange": "£",
+      "notes": "A popular swimming spot with good facilities.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Trearddur Bay Beach",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Trearddur Bay, Holyhead LL65 2AZ",
+      "postcode": "LL65 2AZ",
+      "lat": 53.283,
+      "lng": -4.617,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.6,
+      "reviewCount": 1200,
+      "description": "A wide sandy bay with calm waters, ideal for swimming and families. Offers stunning views and amenities nearby.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "beach",
+        "parking",
+        "restaurants"
+      ],
+      "priceRange": "£",
+      "notes": "A well-known swimming location suitable for all levels.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Newborough Beach (Llanddwyn Beach)",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Newborough, Llanfairpwllgwyngyll LL61 6SG",
+      "postcode": "LL61 6SG",
+      "lat": 53.159,
+      "lng": -4.418,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.8,
+      "reviewCount": 1800,
+      "description": "A vast sandy beach backed by dunes and forest, popular for walking, swimming, and watersports. Offers stunning views of Llanddwyn Island.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "beach",
+        "parking",
+        "walking trails"
+      ],
+      "priceRange": "£",
+      "notes": "A beautiful and expansive location for wild swimming with diverse scenery.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Rhosneigr Beach",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Rhosneigr LL64 5QX",
+      "postcode": "LL64 5QX",
+      "lat": 53.23,
+      "lng": -4.524,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.5,
+      "reviewCount": 900,
+      "description": "A popular beach for watersports including surfing and swimming, with good facilities and nearby cafes and restaurants.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "beach",
+        "parking",
+        "restaurants"
+      ],
+      "priceRange": "£",
+      "notes": "A well-equipped beach that is great for swimming and other activities.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Church Bay",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Church Bay, Llanfaethlu LL65 4AR",
+      "postcode": "LL65 4AR",
+      "lat": 53.382,
+      "lng": -4.568,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.4,
+      "reviewCount": 500,
+      "description": "A sheltered bay with a sandy beach, popular for swimming and families. It is known for its clear waters and scenic views.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "beach",
+        "parking",
+        "restaurant"
+      ],
+      "priceRange": "£",
+      "notes": "A nice and safe swimming location.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Moelfre Beach",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Moelfre LL72 8HD",
+      "postcode": "LL72 8HD",
+      "lat": 53.353,
+      "lng": -4.253,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.6,
+      "reviewCount": 400,
+      "description": "A picturesque village with a sheltered beach. The location offers beautiful views and calm waters, suitable for swimming.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "beach",
+        "parking",
+        "village shops"
+      ],
+      "priceRange": "£",
+      "notes": "A nice place to visit for a day trip and a relaxing swim.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Plas Menai National Outdoor Centre",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Plas Menai, Caernarfon LL55 1UE",
+      "postcode": "LL55 1UE",
+      "lat": 53.147,
+      "lng": -4.205,
+      "phone": "01248 670964",
+      "website": "https://www.plasmenai.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 350,
+      "description": "Offers a range of water-based activities and training courses on the Menai Strait, with expert instruction and equipment.",
+      "relevantActivities": [
+        "wild-swimming",
+        "sea-kayaking"
+      ],
+      "services": [
+        "training courses",
+        "equipment rental",
+        "guided sessions"
+      ],
+      "priceRange": "£££",
+      "notes": "May offer tailored sessions incorporating open water swimming, although main focus is other watersports.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Funsport Rhosneigr",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Rhosneigr, Anglesey LL64 5JP",
+      "postcode": "LL64 5JP",
+      "lat": 53.232,
+      "lng": -4.525,
+      "phone": "01407 810669",
+      "website": "https://funsportonline.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 100,
+      "description": "Provides kitesurfing and windsurfing lessons and rentals, with equipment for various water sports.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "rental",
+        "lessons"
+      ],
+      "priceRange": "££",
+      "notes": "Though focused on kitesurfing/windsurfing, they rent wetsuits which are useful for swimming.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Gecko Surf",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Rhosneigr, Anglesey LL64",
+      "postcode": "LL64",
+      "lat": 53.23,
+      "lng": -4.52,
+      "phone": null,
+      "website": "http://geckosurf.co.uk/",
+      "googleRating": 4.9,
+      "reviewCount": 50,
+      "description": "Offers surf lessons and hire, a good resource of local knowledge around Rhosneigr beaches.",
+      "relevantActivities": [
+        "wild-swimming"
+      ],
+      "services": [
+        "lessons",
+        "rental"
+      ],
+      "priceRange": "££",
+      "notes": "Provides wetsuits and surf gear - good for cold water swims.",
+      "inDatabase": true,
+      "priority": "low"
+    }
+  ]
+}

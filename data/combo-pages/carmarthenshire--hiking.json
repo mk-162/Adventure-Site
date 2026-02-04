@@ -1,0 +1,916 @@
+{
+  "regionSlug": "carmarthenshire",
+  "activityTypeSlug": "hiking",
+  "title": "Hiking in Carmarthenshire",
+  "strapline": "From myth-laden lakes to dramatic castle hilltops, Carmarthenshire offers hiking for every level.",
+  "metaTitle": "Hiking Carmarthenshire: Trails & Routes | Adventure Wales",
+  "metaDescription": "Discover the best hiking in Carmarthenshire. Explore Llyn y Fan Fach, Brechfa Forest, and more. Plan your adventure today!",
+  "heroAlt": "Hikers on a trail overlooking the Tywi Valley in Carmarthenshire",
+  "introduction": "Carmarthenshire isn't just the 'Garden of Wales'; it's a hiker's paradise. While Snowdonia steals the headlines, the relative quiet of Carmarthenshire offers a more intimate experience with the Welsh landscape. From challenging Black Mountain ascents to gentle ambles through Dinefwr Park, there's something for everyone. Forget the crowds, here you'll find peace and genuinely breathtaking views. \n\nThis isn't to say it's *easy*. The Black Mountain can be unforgiving, and even seemingly gentle trails can turn boggy after rain – so proper footwear and a good map (or GPS) are essential. The beauty of hiking Carmarthenshire lies in its variety. You can conquer a summit one day, and explore ancient woodland the next. And, crucially, you're never far from a cracking pub meal. The Brecon Beacons National Park dips into Carmarthenshire’s east edge, offering some brilliant upland walking.\n\nThe Tywi Valley offers gentler, rolling landscapes ideal for families and less experienced hikers. The network of trails around Aberglasney Gardens and along the river itself provide stunning views and historical interest. However, be prepared for some steep sections, especially on routes leading up to the castles like Carreg Cennen and Dryslwyn. Hiking Carmarthenshire really rewards those seeking to get away from it all, and who enjoy a more authentic experience of the Welsh countryside – boots, map and all!",
+  "bestSeason": "May-October",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Llyn y Fan Fach (Lady of the Lake)",
+      "slug": "llyn-y-fan-fach",
+      "description": "A classic Carmarthenshire hike to the mystical lake where, legend has it, a farmer married a water nymph. The walk involves a steep initial ascent to the escarpment of the Black Mountain range and then levels out, offering stunning panoramic views across the surrounding valleys. The lake itself is beautiful, especially on a clear day.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours round trip",
+      "distance": "8km",
+      "elevationGain": "300m",
+      "bestFor": "Experienced hikers and those with good fitness levels who enjoy a bit of folklore with their views.",
+      "notSuitableFor": "People with knee problems due to the steep initial climb. Can be very exposed in bad weather.",
+      "bestSeason": "May-September",
+      "parking": "Small car park at the foot of the track. Get there early, especially in summer, as it fills up quickly. Alternative parking is available further down the road, adding to the walk.",
+      "startPoint": {
+        "name": "Llyn y Fan Fach Car Park",
+        "lat": 51.895,
+        "lng": -3.728
+      },
+      "estimatedCost": "Free (parking free)",
+      "operatorSlug": null,
+      "insiderTip": "Go early in the morning for the best light and to avoid the crowds. Pack layers – the weather can change quickly on the mountain."
+    },
+    {
+      "name": "Dinefwr Park (NT)",
+      "slug": "dinefwr-park",
+      "description": "A leisurely walk through historic parkland, taking in Dinefwr Castle, Newton House, and the surrounding woodland. This National Trust site offers a variety of trails, ranging from easy strolls to slightly more challenging climbs. Great for families and those looking for a less strenuous hike with plenty of points of interest.",
+      "difficulty": "Easy",
+      "duration": "1-3 hours",
+      "distance": "3-6km",
+      "elevationGain": "Minimal",
+      "bestFor": "Families, history buffs, and those looking for a gentle walk with stunning views.",
+      "notSuitableFor": "Those looking for a challenging mountain hike.",
+      "bestSeason": "All year round",
+      "parking": "National Trust car park at Dinefwr Park. Free for NT members, charges apply for non-members.",
+      "startPoint": {
+        "name": "Dinefwr Park Entrance",
+        "lat": 51.873,
+        "lng": -3.978
+      },
+      "estimatedCost": "Free (parking charges apply if not NT member)",
+      "operatorSlug": null,
+      "insiderTip": "Check the National Trust website for events happening in the park. Time your visit to coincide with a castle tour for a more immersive experience."
+    },
+    {
+      "name": "Brechfa Forest Trails",
+      "slug": "brechfa-forest-trails",
+      "description": "Brechfa Forest offers a network of waymarked trails suitable for all abilities. Explore dense woodland, discover hidden waterfalls, and enjoy the peace and quiet of this beautiful forest. Some trails are also open to mountain bikers, so be aware of your surroundings.",
+      "difficulty": "Easy to Moderate",
+      "duration": "1-4 hours",
+      "distance": "2-10km",
+      "elevationGain": "Variable depending on the trail",
+      "bestFor": "Families, dog walkers, and those looking for a woodland escape.",
+      "notSuitableFor": "Those seeking wide open landscapes.",
+      "bestSeason": "All year round, but can be muddy in winter.",
+      "parking": "Several car parks throughout the forest. Check the Forestry Commission website for locations and charges.",
+      "startPoint": {
+        "name": "Brechfa Forest Car Park",
+        "lat": 51.832,
+        "lng": -4.105
+      },
+      "estimatedCost": "Free (parking charges may apply)",
+      "operatorSlug": null,
+      "insiderTip": "Download a map of the trails before you go, as phone signal can be patchy in the forest. Explore the Gorlech trail for stunning views."
+    },
+    {
+      "name": "Dryslwyn Castle Walk",
+      "slug": "dryslwyn-castle-walk",
+      "description": "A short but steep walk up to the ruins of Dryslwyn Castle, offering panoramic views of the Tywi Valley. The castle itself is steeped in history, and the views from the top are well worth the climb. A great option for a quick and rewarding hike.",
+      "difficulty": "Moderate",
+      "duration": "1-2 hours",
+      "distance": "3km",
+      "elevationGain": "150m",
+      "bestFor": "History enthusiasts, families, and those looking for a short but rewarding hike.",
+      "notSuitableFor": "People with mobility issues due to the steep climb.",
+      "bestSeason": "All year round, but can be slippery in wet weather.",
+      "parking": "Small car park at the base of the hill. ",
+      "startPoint": {
+        "name": "Dryslwyn Castle Car Park",
+        "lat": 51.817,
+        "lng": -4.144
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Bring a picnic to enjoy at the top of the castle ruins. The views are stunning at sunset."
+    },
+    {
+      "name": "Carreg Cennen Castle",
+      "slug": "carreg-cennen-castle",
+      "description": "A dramatic walk to the imposing Carreg Cennen Castle, perched high on a limestone crag. The trail leads through fields and up a steep climb to the castle entrance. Explore the castle ruins and enjoy the breathtaking views of the surrounding countryside. Afterwards, grab a bite at the cafe.",
+      "difficulty": "Moderate",
+      "duration": "2-3 hours",
+      "distance": "5km",
+      "elevationGain": "200m",
+      "bestFor": "Castle lovers, photographers, and those looking for a challenging walk with stunning scenery.",
+      "notSuitableFor": "Those with a fear of heights or mobility issues.",
+      "bestSeason": "All year round, but can be windy on the summit.",
+      "parking": "Car park at Carreg Cennen Castle. Charges apply.",
+      "startPoint": {
+        "name": "Carreg Cennen Castle Car Park",
+        "lat": 51.846,
+        "lng": -3.867
+      },
+      "estimatedCost": "£5 (parking and castle entrance)",
+      "operatorSlug": null,
+      "insiderTip": "Don't miss the cave beneath the castle – it's a bit of a scramble to get down, but well worth it! (Closed at times). Wear sturdy shoes."
+    },
+    {
+      "name": "Aberglasney Gardens Trails",
+      "slug": "aberglasney-gardens-trails",
+      "description": "Explore the beautiful Aberglasney Gardens and the surrounding woodland with a network of well-maintained trails. Discover hidden follies, tranquil ponds, and stunning views. A perfect option for a relaxed and scenic walk.",
+      "difficulty": "Easy",
+      "duration": "1-2 hours",
+      "distance": "2-4km",
+      "elevationGain": "Minimal",
+      "bestFor": "Garden enthusiasts, families, and those looking for a gentle walk in a beautiful setting.",
+      "notSuitableFor": "Those seeking a challenging hike.",
+      "bestSeason": "All year round, especially beautiful in spring and summer.",
+      "parking": "Car park at Aberglasney Gardens. Charges apply.",
+      "startPoint": {
+        "name": "Aberglasney Gardens Entrance",
+        "lat": 51.864,
+        "lng": -4.046
+      },
+      "estimatedCost": "£12 (gardens entrance fee)",
+      "operatorSlug": null,
+      "insiderTip": "Check the Aberglasney Gardens website for events and workshops happening throughout the year. The tearooms are excellent for a post-walk treat."
+    },
+    {
+      "name": "Tywi Valley Path (Llandeilo Section)",
+      "slug": "tywi-valley-path-landeilo",
+      "description": "A section of the long-distance Tywi Valley Path, following the river Tywi through picturesque countryside. This section starts near Llandeilo and offers stunning views of the valley, with options for shorter or longer walks. The path is mostly flat, making it suitable for all abilities.",
+      "difficulty": "Easy",
+      "duration": "2-5 hours",
+      "distance": "5-12km",
+      "elevationGain": "Minimal",
+      "bestFor": "Families, dog walkers, and those looking for a scenic and relaxing walk.",
+      "notSuitableFor": "Those seeking a challenging mountain hike.",
+      "bestSeason": "All year round, but can be muddy in winter.",
+      "parking": "Parking available in Llandeilo town centre. ",
+      "startPoint": {
+        "name": "Llandeilo Bridge",
+        "lat": 51.877,
+        "lng": -3.986
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Stop at The Plough Inn in Rhosmaen for a delicious pub lunch after your walk. Look out for otters along the river!"
+    },
+    {
+      "name": "Black Mountain Edge (Fan Brycheiniog)",
+      "slug": "black-mountain-edge",
+      "description": "A demanding hike along the escarpment of Fan Brycheiniog, the highest point of the Black Mountain. Expect challenging climbs, exposed ridges, and incredible panoramic views. Only for experienced hikers with good navigation skills. Weather can change rapidly.",
+      "difficulty": "Challenging",
+      "duration": "6-7 hours round trip",
+      "distance": "14.5km",
+      "elevationGain": "1085m",
+      "bestFor": "Experienced mountain hikers with excellent fitness and navigation skills.",
+      "notSuitableFor": "Beginners, those with a fear of heights, or anyone without proper equipment and experience.",
+      "bestSeason": "May-September (avoid winter)",
+      "parking": "Near Tafarn y Garreg pub, SA9 1TJ. Limited parking, arrive early.",
+      "startPoint": {
+        "name": "Tafarn y Garreg",
+        "lat": 51.861,
+        "lng": -3.663
+      },
+      "estimatedCost": "Free (allow funds for post-hike pint!)",
+      "operatorSlug": null,
+      "insiderTip": "Take a map and compass and know how to use them. The trig point is often shrouded in cloud, even on a sunny day. Navigation can become extremely difficult."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The weather in Carmarthenshire can be unpredictable, especially on the Black Mountain. Be prepared for sudden changes in conditions, including rain, wind, and fog. Check the forecast before you go and pack layers of clothing.",
+    "weatherLinks": [
+      {
+        "name": "Met Office",
+        "url": "https://www.metoffice.gov.uk/"
+      },
+      {
+        "name": "Mountain Forecast",
+        "url": "https://www.mountain-forecast.com/"
+      }
+    ],
+    "gearChecklist": [
+      "Waterproof jacket and trousers - essential for unpredictable Welsh weather.",
+      "Hiking boots with good ankle support - trails can be rocky and uneven.",
+      "Map and compass (or GPS) - even on well-marked trails, navigation skills are important.",
+      "Plenty of water and snacks - especially on longer hikes.",
+      "Sunscreen and hat - even on cloudy days, the sun can be strong.",
+      "First-aid kit - for minor injuries.",
+      "Warm layers - temperatures can drop quickly, especially at higher elevations.",
+      "Headtorch - in case of unexpected delays or early starts/late finishes.",
+      "Mobile phone - for emergencies (but signal can be patchy in some areas).",
+      "Rucksack - to carry all your essentials."
+    ],
+    "gearHire": [
+      {
+        "name": "Mountain Warehouse",
+        "location": "Carmarthen",
+        "url": "https://www.mountainwarehouse.com/stores/carmarthen/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "4h 30m",
+          "route": "Via M4"
+        },
+        {
+          "from": "Manchester",
+          "duration": "4h",
+          "route": "Via M6 and A483"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3h",
+          "route": "Via A40 and M50"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "1h 30m",
+          "route": "Via M4"
+        }
+      ],
+      "publicTransport": "Carmarthen is the main transport hub, with train services from across the UK. Buses connect Carmarthen to many towns and villages in Carmarthenshire. Check Traveline Cymru for details.",
+      "parkingTips": "Parking can be limited in some popular areas, especially during peak season. Arrive early or consider using public transport. Be aware of parking restrictions and charges."
+    },
+    "safety": "Always tell someone where you are going and when you expect to be back. Check the weather forecast before you set off and be prepared for changing conditions. Be aware of livestock and keep dogs under control. In case of emergency, call 999 (or 112) and ask for mountain rescue."
+  },
+  "faqs": [
+    {
+      "question": "What's the best hike in Carmarthenshire for beginners?",
+      "answer": "Dinefwr Park offers several easy trails suitable for beginners, with minimal elevation gain and well-maintained paths. The Tywi Valley Path (Llandeilo section) is also a good option, being relatively flat and scenic."
+    },
+    {
+      "question": "How difficult is the hike to Llyn y Fan Fach?",
+      "answer": "The hike to Llyn y Fan Fach is considered moderate due to a steep initial ascent. However, the views from the top are well worth the effort. Allow 3-4 hours for the round trip."
+    },
+    {
+      "question": "Are dogs allowed on the hiking trails in Carmarthenshire?",
+      "answer": "Yes, dogs are generally allowed on hiking trails in Carmarthenshire, but they must be kept under control and on a lead, especially near livestock. Some National Trust sites may have specific rules regarding dogs."
+    },
+    {
+      "question": "Is there mountain rescue in Carmarthenshire?",
+      "answer": "Yes, mountain rescue services are available in Carmarthenshire. In case of emergency, call 999 (or 112) and ask for mountain rescue. It is essential to be prepared and equipped for your hike to minimize the risk of needing rescue."
+    },
+    {
+      "question": "What is the best time of year to go hiking in Carmarthenshire?",
+      "answer": "The best time of year for hiking in Carmarthenshire is between May and October, when the weather is generally milder and drier. However, be prepared for rain at any time of year. Avoid hiking on the Black Mountain in winter due to the risk of ice and snow."
+    },
+    {
+      "question": "Are there guided hiking tours available in Carmarthenshire?",
+      "answer": "Yes, while operator data isn't currently in our database, many local guides offer hiking tours in Carmarthenshire, especially on the Black Mountain. A guided tour can be a great option for beginners or those who want to learn more about the area's history and wildlife. Search online for 'guided hiking Carmarthenshire'."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Mountain Warehouse",
+        "slug": "mountain-warehouse-carmarthen",
+        "address": "Unit 1A St Catherine's Walk, Carmarthen SA31 1GA",
+        "lat": 51.853,
+        "lng": -4.315,
+        "description": "Large outdoor retailer with a wide range of hiking gear, clothing, and footwear. Good for budget-friendly options and essential equipment.",
+        "website": "https://www.mountainwarehouse.com/stores/carmarthen/",
+        "phone": "01267 222205",
+        "services": [
+          "gear sales",
+          "clothing",
+          "footwear"
+        ],
+        "googleRating": 4.2,
+        "reviewCount": 150
+      },
+      {
+        "name": "Millets",
+        "slug": "millets-carmarthen",
+        "address": "Unit 1, Parc Trostre Retail Park, Llanelli SA14 9US",
+        "lat": 51.682,
+        "lng": -4.145,
+        "description": "Well-known outdoor retailer offering a variety of hiking gear, clothing, and camping equipment. Caters to various budgets and experience levels.",
+        "website": "https://www.millets.co.uk/",
+        "phone": "0330 053 9154",
+        "services": [
+          "gear sales",
+          "clothing",
+          "footwear",
+          "camping equipment"
+        ],
+        "googleRating": 3.9,
+        "reviewCount": 80
+      },
+      {
+        "name": "Trespass",
+        "slug": "trespass-llanelli",
+        "address": "Parc Trostre Retail Park, Llanelli SA14 9EN",
+        "lat": 51.681,
+        "lng": -4.146,
+        "description": "Value-focused outdoor clothing and equipment retailer. Good for affordable waterproofs and basic hiking gear.",
+        "website": "https://www.trespass.com/",
+        "phone": "01554 772234",
+        "services": [
+          "gear sales",
+          "clothing",
+          "footwear"
+        ],
+        "googleRating": 4.0,
+        "reviewCount": 65
+      },
+      {
+        "name": "Go Outdoors Llanelli",
+        "slug": "go-outdoors-llanelli",
+        "address": "Parc Pemberton, Llanelli SA14 9WA",
+        "lat": 51.685,
+        "lng": -4.156,
+        "description": "Huge outdoor superstore with a vast selection of hiking gear, camping equipment, and clothing. Requires a membership card for discounts.",
+        "website": "https://www.gooutdoors.co.uk/stores/llanelli",
+        "phone": "0344 387 6864",
+        "services": [
+          "gear sales",
+          "clothing",
+          "footwear",
+          "camping equipment",
+          "bike sales"
+        ],
+        "googleRating": 4.3,
+        "reviewCount": 320
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Plough Inn",
+        "slug": "the-plough-inn-rhosmaen",
+        "address": "Rhosmaen, Llandeilo SA19 6NP",
+        "lat": 51.868,
+        "lng": -4.019,
+        "description": "A traditional country pub with a cosy atmosphere and a menu featuring locally sourced ingredients. Famous for its hearty portions and Sunday roasts. A perfect spot to refuel after a hike in the Tywi Valley.",
+        "vibe": "Cosy pub",
+        "priceRange": "££",
+        "website": "https://www.ploughinnrhosmaen.co.uk/",
+        "knownFor": "Hearty portions, Sunday roasts, locally sourced ingredients"
+      },
+      {
+        "name": "The Angel Hotel",
+        "slug": "the-angel-hotel-landeilo",
+        "address": "Broad Street, Llandeilo SA19 6BN",
+        "lat": 51.881,
+        "lng": -3.985,
+        "description": "A stylish hotel with a restaurant and bar offering a sophisticated dining experience. Known for its afternoon tea and fine wines. A great option for a celebratory meal after a challenging hike.",
+        "vibe": "Elegant dining",
+        "priceRange": "£££",
+        "website": "https://www.theangelllandeilo.com/",
+        "knownFor": "Afternoon tea, fine wines, elegant atmosphere"
+      },
+      {
+        "name": "Heavenly",
+        "slug": "heavenly-landeilo",
+        "address": "17 Rhosmaen St, Llandeilo SA19 6HD",
+        "lat": 51.882,
+        "lng": -3.984,
+        "description": "A delightful ice cream parlour and café with a wide range of delicious ice cream flavours, cakes, and light lunches. A perfect spot for a sweet treat after a hike.",
+        "vibe": "Cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Ice cream, cakes, light lunches"
+      },
+      {
+        "name": "Wright's Food Emporium",
+        "slug": "wrights-food-emporium",
+        "address": "Llanarthne SA32 8JU",
+        "lat": 51.831,
+        "lng": -4.211,
+        "description": "A renowned food shop and café offering a selection of local produce, artisan cheeses, and freshly baked bread. A great place to stock up on picnic supplies or enjoy a delicious lunch.",
+        "vibe": "Artisan food shop & cafe",
+        "priceRange": "££",
+        "website": "https://wrightsfood.co.uk/",
+        "knownFor": "Local produce, artisan cheeses, freshly baked bread"
+      },
+      {
+        "name": "Y Polyn",
+        "slug": "y-polyn",
+        "address": "Capel Dewi, Nantgaredig, Carmarthen SA32 7BQ",
+        "lat": 51.828,
+        "lng": -4.279,
+        "description": "A stylish restaurant with a focus on seasonal and locally sourced ingredients. Offers a modern take on Welsh cuisine. Perfect for a celebratory meal after a long day hiking.",
+        "vibe": "Modern Welsh Cuisine",
+        "priceRange": "£££",
+        "website": "https://ypolyn.com/",
+        "knownFor": "Modern Welsh cuisine, seasonal ingredients"
+      },
+      {
+        "name": "The Cawdor Arms Hotel",
+        "slug": "the-cawdor-arms-hotel",
+        "address": "Market Square, Llandeilo SA19 6AH",
+        "lat": 51.881,
+        "lng": -3.986,
+        "description": "A historic coaching inn with a restaurant and bar offering a relaxed atmosphere and a menu featuring classic pub fare. A great spot for a pint and a hearty meal after a hike.",
+        "vibe": "Traditional Pub",
+        "priceRange": "££",
+        "website": "https://www.thecawdor.com/",
+        "knownFor": "Classic pub fare, relaxed atmosphere"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "The Cawdor Arms Hotel",
+        "slug": "the-cawdor-arms-hotel-accommodation",
+        "description": "Historic hotel in the heart of Llandeilo, ideal for exploring Dinefwr Park and the Tywi Valley. Offers comfortable rooms and a traditional Welsh breakfast.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Dinefwr Park (2 miles)",
+        "website": "https://www.thecawdor.com/"
+      },
+      {
+        "name": "The Angel Hotel",
+        "slug": "the-angel-hotel-accommodation",
+        "description": "Stylish hotel in Llandeilo, close to shops and restaurants. Perfect for those seeking a luxurious stay after a long day of hiking.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Dinefwr Park (2 miles)",
+        "website": "https://www.theangelllandeilo.com/"
+      },
+      {
+        "name": "Cwmcrwth Farm B&B",
+        "slug": "cwmcrwth-farm-bb",
+        "description": "A charming B&B on a working farm near Carreg Cennen Castle. Offers comfortable rooms and stunning views of the surrounding countryside.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Carreg Cennen Castle (3 miles)",
+        "website": "https://www.cwmcrwth.co.uk/"
+      },
+      {
+        "name": "Llwynywermod (Prince of Wales's Llwynywermod)",
+        "slug": "llwynywermod",
+        "description": "Luxury accommodation managed by the Prince's Foundation, located a short drive from Llandovery. Beautifully restored farm buildings offering a unique and luxurious experience.",
+        "type": "b&b",
+        "priceRange": "£££",
+        "nearestSpot": "Llyn y Fan Fach (15 miles)",
+        "website": "https://www.foundations.wales/projects/llwynywermod/"
+      },
+      {
+        "name": "Penrhiw Camping & Caravanning Site",
+        "slug": "penrhiw-camping",
+        "description": "A well-maintained campsite near Brechfa Forest, offering pitches for tents and caravans. Ideal for those looking for a budget-friendly option and easy access to hiking trails.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Brechfa Forest (1 mile)",
+        "website": "http://www.penrhiw.co.uk/"
+      },
+      {
+        "name": "Y Talbot",
+        "slug": "y-talbot-llandeilo",
+        "description": "A cosy inn located in Llandeilo providing comfortable rooms. Ideal for exploring the town and surrounding attractions",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Dinefwr Park (1 mile)",
+        "website": "https://ytalbotllandeilo.com/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Brecon Beacons Ultra",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "A challenging ultra-distance running race through the Brecon Beacons National Park, including sections within Carmarthenshire. Several distances available.",
+      "website": "https://www.breconbeaconsultra.com/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 75
+    },
+    {
+      "name": "Fan Dance Race",
+      "type": "race",
+      "monthTypical": "January & July",
+      "description": "A brutal SAS selection test march over Pen y Fan in the Brecon Beacons. Though not strictly within Carmarthenshire, the area is adjacent and some training routes cross over.",
+      "website": "http://thefandancerace.com/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": 55
+    },
+    {
+      "name": "Llandeilo Spring Festival of Food",
+      "type": "festival",
+      "monthTypical": "May",
+      "description": "A celebration of local food and drink in Llandeilo. Great for post-hike refreshment!",
+      "website": "https://llandeilospringfestivaloffood.com/",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "registrationCost": null
+    }
+  ],
+  "keywords": {
+    "primary": "hiking carmarthenshire",
+    "secondary": [
+      "walking carmarthenshire",
+      "black mountain hiking",
+      "llyn y fan fach walk",
+      "tywi valley walks",
+      "carreg cennen castle hike"
+    ],
+    "longTail": [
+      "hiking trails carmarthenshire for families",
+      "best walks in carmarthenshire with dogs",
+      "easy hiking carmarthenshire tywi valley",
+      "challenging hikes carmarthenshire black mountain",
+      "carreg cennen castle walking route",
+      "llyn y fan fach circular walk",
+      "hiking near llandeilo",
+      "dog friendly walks carmarthenshire",
+      "easy hikes in brechfa forest",
+      "hiking maps carmarthenshire",
+      "guided hikes carmarthenshire",
+      "black mountain hiking trails"
+    ],
+    "localIntent": [
+      "hiking near llandeilo",
+      "walks near carmarthen",
+      "hikes near llandovery",
+      "hiking near brecon",
+      "walks around aberglasney gardens"
+    ],
+    "commercialIntent": [
+      "guided hiking tours carmarthenshire",
+      "hiking gear shops carmarthenshire",
+      "best hiking routes carmarthenshire",
+      "hiking maps carmarthenshire price",
+      "book hiking tour carmarthenshire"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "brecon-beacons",
+        "label": "Hiking in the Brecon Beacons"
+      },
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Hiking in Pembrokeshire"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "cycling",
+        "label": "Cycling in Carmarthenshire"
+      },
+      {
+        "activityTypeSlug": "fishing",
+        "label": "Fishing in Carmarthenshire"
+      },
+      {
+        "activityTypeSlug": "kayaking",
+        "label": "Kayaking in Carmarthenshire"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Sticks and Stones Adventures",
+      "type": "activity_provider",
+      "category": "activity_provider",
+      "address": "Heol Cennen, Trapp, Llandeilo",
+      "postcode": "SA19 6UA",
+      "lat": 51.898,
+      "lng": -3.964,
+      "phone": "07970 520512",
+      "website": "http://www.sticksandstonesadventures.co.uk/",
+      "googleRating": 5.0,
+      "reviewCount": 32,
+      "description": "Offers guided hiking and outdoor adventure activities in the Brecon Beacons and Carmarthenshire. Provides tailored experiences for all abilities.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "guided hikes",
+        "navigation training",
+        "team building"
+      ],
+      "priceRange": "££",
+      "notes": "Well-regarded local operator with excellent reviews.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Mountain Warehouse (Carmarthen)",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 2A St Catherine's Walk, Carmarthen",
+      "postcode": "SA31 1GA",
+      "lat": 51.854,
+      "lng": -4.315,
+      "phone": "01267 222922",
+      "website": "https://www.mountainwarehouse.com/",
+      "googleRating": 4.1,
+      "reviewCount": 155,
+      "description": "Retailer offering a wide range of outdoor clothing and equipment. Suitable for hikers of all levels.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "hiking boots",
+        "clothing",
+        "backpacks",
+        "accessories"
+      ],
+      "priceRange": "£",
+      "notes": "Main outdoor equipment retailer in Carmarthen.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "The Plough Inn",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Rhosmaen Street, Llandeilo",
+      "postcode": "SA19 6EN",
+      "lat": 51.881,
+      "lng": -3.996,
+      "phone": "01558 823431",
+      "website": "https://ploughinnllandeilo.co.uk/",
+      "googleRating": 4.3,
+      "reviewCount": 547,
+      "description": "Traditional pub in Llandeilo serving food and drinks. A good place for a post-hike meal.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "££",
+      "notes": "Popular pub with good food and a friendly atmosphere.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "The Angel Hotel",
+      "type": "venue",
+      "category": "food_drink",
+      "address": "54 King St, Llandeilo",
+      "postcode": "SA19 6AA",
+      "lat": 51.881,
+      "lng": -3.992,
+      "phone": "01558 822900",
+      "website": "https://www.theangelllandeilo.com/",
+      "googleRating": 4.4,
+      "reviewCount": 923,
+      "description": "Hotel and restaurant in the heart of Llandeilo. Offers a more upscale dining experience.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "accommodation"
+      ],
+      "priceRange": "£££",
+      "notes": "Upscale dining option for those looking for something special.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Heavenly",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "27 Rhosmaen St, Llandeilo",
+      "postcode": "SA19 6HA",
+      "lat": 51.881,
+      "lng": -3.997,
+      "phone": "01558 824466",
+      "website": "https://heavenlychoc.com/",
+      "googleRating": 4.6,
+      "reviewCount": 303,
+      "description": "Award-winning artisan chocolate shop and cafe. Ideal for a post-hike treat.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "chocolate",
+        "coffee",
+        "ice cream"
+      ],
+      "priceRange": "£",
+      "notes": "Popular spot for chocolate lovers.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Wright's Food Emporium",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Golden Grove Arms, Llanarthney",
+      "postcode": "SA32 8JU",
+      "lat": 51.851,
+      "lng": -4.116,
+      "phone": "01558 668757",
+      "website": "https://wrightsfood.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 844,
+      "description": "Delicatessen, cafe, and restaurant focusing on local produce. Good for a hearty meal.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "food",
+        "drinks",
+        "deli"
+      ],
+      "priceRange": "££",
+      "notes": "Popular destination for foodies.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Brecon Beacons National Park Visitor Centre",
+      "type": "attraction",
+      "category": "accommodation",
+      "address": "Brecon Beacons National Park, Storey Arms, Brecon",
+      "postcode": "LD3 8NL",
+      "lat": 51.883,
+      "lng": -3.478,
+      "phone": "01874 623366",
+      "website": "https://www.breconbeacons.org/",
+      "googleRating": 4.5,
+      "reviewCount": 756,
+      "description": "Visitor centre providing information about the Brecon Beacons National Park.  A good starting point for exploring hiking routes, although technically outside Carmarthenshire the park covers much of the county's upland.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "information",
+        "maps",
+        "accommodation",
+        "parking"
+      ],
+      "priceRange": "£",
+      "notes": "Important resource for planning hikes in the area.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Llyn Brianne Reservoir",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Near Rhandirmwyn, Llandovery",
+      "postcode": "SA20 0ED",
+      "lat": 52.107,
+      "lng": -3.711,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.6,
+      "reviewCount": 250,
+      "description": "Scenic reservoir with walking trails. Offers beautiful views and opportunities for hiking.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "walking trails",
+        "picnic areas",
+        "fishing"
+      ],
+      "priceRange": "Free",
+      "notes": "Scenic hiking location, though often remote.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Dinefwr National Nature Reserve",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Dinefwr Park, Llandeilo",
+      "postcode": "SA19 6RT",
+      "lat": 51.879,
+      "lng": -3.998,
+      "phone": "01558 824512",
+      "website": "https://www.nationaltrust.org.uk/dinefwr",
+      "googleRating": 4.6,
+      "reviewCount": 1800,
+      "description": "National Nature Reserve featuring a medieval castle and estate. Offers walking trails and stunning views.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "walking trails",
+        "castle",
+        "cafe"
+      ],
+      "priceRange": "£",
+      "notes": "Popular walking location with historical interest.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Towy Valley Cycles",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "10 The Square, Llandeilo",
+      "postcode": "SA19 6AD",
+      "lat": 51.881,
+      "lng": -3.994,
+      "phone": "01558 823403",
+      "website": "https://www.towyvalleycycles.co.uk/",
+      "googleRating": 4.8,
+      "reviewCount": 31,
+      "description": "Bike shop offering sales, repairs, and rentals. They likely have outdoor equipment appropriate for hiking.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "bike sales",
+        "bike repairs",
+        "bike rentals",
+        "hiking equipment"
+      ],
+      "priceRange": "££",
+      "notes": "Local bike shop. Possibly stocking hiking gear.",
+      "inDatabase": false,
+      "priority": "low"
+    },
+    {
+      "name": "Carreg Cennen Castle",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Trapp, Llandeilo",
+      "postcode": "SA19 6UA",
+      "lat": 51.893,
+      "lng": -3.961,
+      "phone": "01558 822291",
+      "website": "https://carregcennencastle.wales/",
+      "googleRating": 4.7,
+      "reviewCount": 1600,
+      "description": "Spectacular ruined castle perched on a dramatic limestone crag. Good walking trails surrounding the castle.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "castle",
+        "walking trails",
+        "cafe"
+      ],
+      "priceRange": "£",
+      "notes": "Fantastic views and good walking opportunities.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "National Botanic Garden of Wales",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Middleton Hall, Llanarthne",
+      "postcode": "SA32 8HN",
+      "lat": 51.837,
+      "lng": -4.136,
+      "phone": "01558 667149",
+      "website": "https://botanicgarden.wales/",
+      "googleRating": 4.6,
+      "reviewCount": 4500,
+      "description": "Beautiful gardens offering various walking routes. A good option for a leisurely hike.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "gardens",
+        "walking trails",
+        "cafe",
+        "shops"
+      ],
+      "priceRange": "££",
+      "notes": "Formal gardens and wider trails; great for a less strenuous walk.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Black Mountain Centre",
+      "type": "attraction",
+      "category": "attraction",
+      "address": "Brynamman, Ammanford",
+      "postcode": "SA18 1SE",
+      "lat": 51.822,
+      "lng": -3.896,
+      "phone": "01269 825129",
+      "website": "http://www.blackmountaincentre.co.uk/",
+      "googleRating": 4.4,
+      "reviewCount": 210,
+      "description": "Community centre and starting point for exploring the Black Mountain range. Information and facilities for hikers.",
+      "relevantActivities": [
+        "hiking"
+      ],
+      "services": [
+        "information",
+        "parking",
+        "facilities"
+      ],
+      "priceRange": "£",
+      "notes": "Ideal starting point for hikes in the Black Mountain.",
+      "inDatabase": false,
+      "priority": "high"
+    }
+  ]
+}

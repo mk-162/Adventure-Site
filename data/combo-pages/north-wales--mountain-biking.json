@@ -1,0 +1,946 @@
+{
+  "regionSlug": "north-wales",
+  "activityTypeSlug": "mountain-biking",
+  "title": "Mountain Biking in North Wales",
+  "strapline": "From gnarly downhill tracks to scenic forest trails, North Wales serves up a proper slice of mountain biking heaven.",
+  "metaTitle": "Mountain Biking North Wales | Adventure Wales",
+  "metaDescription": "Explore the best mountain biking in North Wales. Discover thrilling trails at Llandegla, Revolution Bike Park, and more. Plan your ride today!",
+  "heroAlt": "Mountain biker riding a challenging trail through a forest in North Wales",
+  "introduction": "Alright, listen up, because when it comes to mountain biking, North Wales isn't just good, it's *iconic*. Forget those manicured bike park trails you find elsewhere. Here, we've got proper wild riding, proper mountains, and proper Welsh weather to keep you on your toes. If you're after a challenge, you've come to the right place. But don't be fooled; North Wales caters to all levels. From the beginner-friendly trails at Coed Llandegla to the expert-only downhill lines at Revolution Bike Park, there's something for everyone. The Marin Trail in Betws-y-Coed offers stunning views and flowy singletrack, while Penmachno is a hidden gem with challenging climbs and rewarding descents. \n\nThat being said, it's not all sunshine and rainbows. The weather can turn on a dime, and some of the trails are seriously exposed. Pack accordingly, and don't underestimate the climbs – they're brutal! But trust me, the views from the top are worth every ounce of effort. Plus, the riding communities are incredibly welcoming and supportive. Hit up any trailhead on a weekend, and you'll find riders of all levels sharing tips, stories, and maybe even a puncture repair or two. If you’re serious about mountain biking, North Wales is the place to be. Come prepared, respect the trails, and you’ll have an unforgettable adventure.",
+  "bestSeason": "April-October",
+  "difficultyRange": "Easy to Expert",
+  "priceRange": "Free - £80 guided",
+  "spots": [
+    {
+      "name": "Revolution Bike Park",
+      "slug": "revolution-bike-park",
+      "description": "Revolution Bike Park is the UK's premier downhill mountain bike park. Expect uplift service, gnarly tracks, big jumps, and seriously challenging features. Not for the faint of heart, but an absolute blast for experienced riders.",
+      "difficulty": "Expert",
+      "duration": "Full day",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Experienced downhill mountain bikers looking for a challenge.",
+      "notSuitableFor": "Beginners or riders not comfortable with jumps and technical features.",
+      "bestSeason": "March-October (check website for opening times)",
+      "parking": "Ample parking available at the bike park. Cost is included in uplift ticket.",
+      "startPoint": {
+        "name": "Revolution Bike Park",
+        "lat": 52.8183,
+        "lng": -3.4208
+      },
+      "estimatedCost": "£45-£55 per day for uplift",
+      "operatorSlug": "revolution-bike-park",
+      "insiderTip": "Book your uplift in advance, especially on weekends, as it often sells out."
+    },
+    {
+      "name": "Coed Llandegla (Oneplanet Adventure)",
+      "slug": "coed-llandegla",
+      "description": "Coed Llandegla offers a great mix of trails for all abilities, from gentle green routes to challenging red and black runs. Excellent facilities, including a cafe, bike shop, and bike wash. A perfect starting point for mountain biking in North Wales.",
+      "difficulty": "Easy|Moderate|Challenging",
+      "duration": "2-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, beginners, and intermediate riders.",
+      "notSuitableFor": "Those looking for extreme downhill or very technical riding (outside of the black runs).",
+      "bestSeason": "Year-round",
+      "parking": "Large car park at Oneplanet Adventure. Charges apply (approx £5-7 per day).",
+      "startPoint": {
+        "name": "Oneplanet Adventure",
+        "lat": 53.0821,
+        "lng": -3.2334
+      },
+      "estimatedCost": "£5-7 parking, trail access free",
+      "operatorSlug": "oneplanetadventure",
+      "insiderTip": "Park closer to the exit if you want to leave quickly at the end of the day. The cafe can get busy so have some snacks just in case."
+    },
+    {
+      "name": "Marin Trail (Betws-y-Coed)",
+      "slug": "marin-trail",
+      "description": "The Marin Trail is a classic North Wales mountain bike route, offering stunning views and flowy singletrack. A challenging climb is rewarded with exhilarating descents. Be prepared for rocky sections and varied terrain.",
+      "difficulty": "Challenging",
+      "duration": "3-4 hours",
+      "distance": "25km",
+      "elevationGain": "680m",
+      "bestFor": "Intermediate to experienced riders looking for a classic trail ride.",
+      "notSuitableFor": "Beginners or those uncomfortable with steep climbs and rocky descents.",
+      "bestSeason": "May-September",
+      "parking": "Pay and display car park in Betws-y-Coed. Can get busy, especially during peak season.",
+      "startPoint": {
+        "name": "Betws-y-Coed Car Park",
+        "lat": 53.0887,
+        "lng": -3.8113
+      },
+      "estimatedCost": "£5-7 parking",
+      "operatorSlug": null,
+      "insiderTip": "Take a breather at the top of the climb – the views are incredible. Pack a repair kit and pump – punctures are common on the rocky sections."
+    },
+    {
+      "name": "Penmachno Trails",
+      "slug": "penmachno-trails",
+      "description": "Penmachno is a hidden gem with two fantastic trail loops: Dolen Machno and Dolen Eryri. Expect challenging climbs, rewarding descents, and stunning views of Snowdonia. A great alternative to the more popular trails.",
+      "difficulty": "Challenging",
+      "duration": "2-3 hours per loop",
+      "distance": "19km (Dolen Machno), 11km (Dolen Eryri)",
+      "elevationGain": "500m (Dolen Machno), 300m (Dolen Eryri)",
+      "bestFor": "Intermediate to experienced riders looking for a quieter trail ride.",
+      "notSuitableFor": "Beginners or those uncomfortable with steep climbs and technical sections.",
+      "bestSeason": "May-September",
+      "parking": "Free parking available at the trailhead. Limited spaces, so arrive early.",
+      "startPoint": {
+        "name": "Penmachno Trailhead",
+        "lat": 53.0369,
+        "lng": -3.7483
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Bring midge repellent, especially in the evenings. The descents are fast and flowy – enjoy!"
+    },
+    {
+      "name": "Gwydir Mawr (formerly The Beast)",
+      "slug": "gwydir-mawr",
+      "description": "Gwydir Mawr, close to Betws-y-Coed, features challenging climbs and demanding descents through dense forest. Expect steep gradients, technical rock gardens, and some fantastic views. Make sure your brakes are working properly!",
+      "difficulty": "Challenging|Expert",
+      "duration": "2-3 hours",
+      "distance": "26km",
+      "elevationGain": "750m",
+      "bestFor": "Experienced riders looking for a technical and challenging ride.",
+      "notSuitableFor": "Beginners or those uncomfortable with steep, technical terrain.",
+      "bestSeason": "May-September",
+      "parking": "Parking available at various points along the trail. Check trail maps for details.",
+      "startPoint": {
+        "name": "Llyn Elsi Car Park",
+        "lat": 53.1065,
+        "lng": -3.8338
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "The trail can be very muddy after rain, so check the weather forecast before you go. The descent to Llyn Elsi can be very slippery."
+    },
+    {
+      "name": "Clwydian Range",
+      "slug": "clwydian-range",
+      "description": "The Clwydian Range offers stunning views and varied terrain, with options for both challenging climbs and fast descents. Explore ancient hillforts and enjoy panoramic vistas of the North Wales coastline. Bring your camera!",
+      "difficulty": "Moderate|Challenging",
+      "duration": "3-5 hours",
+      "distance": "Varies depending on route",
+      "elevationGain": "Varies depending on route",
+      "bestFor": "Intermediate riders looking for scenic trails and challenging climbs.",
+      "notSuitableFor": "Beginners may find some sections challenging. Be prepared for exposed conditions.",
+      "bestSeason": "April-October",
+      "parking": "Parking available at various points along the range. Loggerheads Country Park is a good starting point.",
+      "startPoint": {
+        "name": "Loggerheads Country Park",
+        "lat": 53.1522,
+        "lng": -3.2133
+      },
+      "estimatedCost": "£3-5 parking at Loggerheads",
+      "operatorSlug": null,
+      "insiderTip": "Check the weather forecast before you go, as the range can be very exposed. The views from Moel Famau are incredible."
+    },
+    {
+      "name": "Clocaenog Forest",
+      "slug": "clocaenog-forest",
+      "description": "Clocaenog Forest offers a network of forest roads and singletrack trails, perfect for exploring the Welsh countryside. Expect varied terrain, challenging climbs, and rewarding descents. A great option for a longer ride.",
+      "difficulty": "Moderate",
+      "duration": "3-6 hours",
+      "distance": "Varies depending on route",
+      "elevationGain": "Varies depending on route",
+      "bestFor": "Intermediate riders looking for a longer ride through varied terrain.",
+      "notSuitableFor": "Beginners may find some sections challenging. Be prepared for remote conditions.",
+      "bestSeason": "Year-round",
+      "parking": "Parking available at various points around the forest. Check trail maps for details.",
+      "startPoint": {
+        "name": "Gwydir Forest Parking",
+        "lat": 53.074,
+        "lng": -3.6277
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "The forest can be very muddy after rain, so check the weather forecast before you go. Bring a map and compass, as the trails can be confusing."
+    },
+    {
+      "name": "Coastal Trails near Llandudno",
+      "slug": "llandudno-coastal-trails",
+      "description": "While not strictly 'mountain' biking, the coastal paths around Llandudno offer fantastic views and a more relaxed riding experience. Expect some climbs, but mostly relatively flat terrain. Great for a family ride or a scenic spin.",
+      "difficulty": "Easy|Moderate",
+      "duration": "1-3 hours",
+      "distance": "Varies depending on route",
+      "elevationGain": "Varies depending on route",
+      "bestFor": "Families, beginners, and those looking for a scenic ride with stunning coastal views.",
+      "notSuitableFor": "Experienced mountain bikers looking for technical challenges.",
+      "bestSeason": "April-October",
+      "parking": "Parking available in Llandudno and along the coast.",
+      "startPoint": {
+        "name": "Llandudno Pier",
+        "lat": 53.3228,
+        "lng": -3.8287
+      },
+      "estimatedCost": "Parking costs vary",
+      "operatorSlug": null,
+      "insiderTip": "Stop for an ice cream in Llandudno after your ride. Check the tide times before you go, as some sections of the coastal path can be affected by high tide."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The weather in North Wales can be unpredictable, even in summer. Rain is common, and the mountains can be significantly colder and windier than the valleys. Check the forecast before you go, and be prepared for all conditions.",
+    "weatherLinks": [
+      {
+        "name": "Met Office",
+        "url": "https://www.metoffice.gov.uk/"
+      },
+      {
+        "name": "YR.NO",
+        "url": "https://www.yr.no/"
+      }
+    ],
+    "gearChecklist": [
+      "Mountain bike in good working order",
+      "Helmet – non-negotiable, protect your head!",
+      "Gloves – for grip and warmth",
+      "Appropriate clothing – layers are key, including a waterproof jacket",
+      "Bike repair kit – including spare tube, pump, and multi-tool",
+      "Water and snacks – stay hydrated and fueled!",
+      "Map or GPS device – don't get lost!",
+      "First-aid kit – be prepared for minor injuries",
+      "Midge repellent – essential in the summer months",
+      "Phone - fully charged, in a waterproof bag"
+    ],
+    "gearHire": [
+      {
+        "name": "Oneplanet Adventure",
+        "location": "Llandegla",
+        "url": "https://oneplanetadventure.com/bike-hire/"
+      },
+      {
+        "name": "Beics Betws",
+        "location": "Betws-y-Coed",
+        "url": "https://www.beicsbetws.co.uk/bike-hire/"
+      },
+      {
+        "name": "Gorilla Bikes",
+        "location": "Llanberis",
+        "url": "https://gorilla-bikes.co.uk/bike-hire/"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5h",
+          "route": "Via M6 and A55"
+        },
+        {
+          "from": "Manchester",
+          "duration": "1h 30m",
+          "route": "Via M56 and A55"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3h",
+          "route": "Via M6 and A55"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "4h",
+          "route": "Via A470 and A5"
+        }
+      ],
+      "publicTransport": "Direct trains to Llandudno, Bangor, and Betws-y-Coed. Local bus services connect many of the towns and villages. The Snowdon Sherpa bus service provides access to many of the popular hiking and biking trails.",
+      "parkingTips": "Parking can be limited, especially during peak season. Arrive early to secure a space, or consider using public transport. Be aware of parking restrictions and charges."
+    },
+    "safety": "Mountain biking can be a dangerous activity. Always wear a helmet and appropriate protective gear. Ride within your abilities, and be aware of your surroundings. Check the weather forecast before you go, and be prepared for all conditions. Tell someone where you are going and when you expect to be back. Emergency contact: 999 for police, fire, or ambulance. Mountain Rescue: 112."
+  },
+  "faqs": [
+    {
+      "question": "What is the best mountain bike trail in North Wales for beginners?",
+      "answer": "Coed Llandegla is a fantastic option for beginners, with well-maintained green and blue trails. The trails are relatively flat and easy to navigate, making it a great place to learn the basics."
+    },
+    {
+      "question": "How much does it cost to go mountain biking in Revolution Bike Park?",
+      "answer": "A full day's uplift pass at Revolution Bike Park typically costs between £45 and £55. Booking in advance is highly recommended."
+    },
+    {
+      "question": "What gear do I need for mountain biking in North Wales?",
+      "answer": "Essential gear includes a mountain bike in good working order, a helmet, gloves, appropriate clothing (including a waterproof jacket), a bike repair kit, water, and snacks. A map or GPS device is also recommended."
+    },
+    {
+      "question": "Are there any bike shops in Betws-y-Coed?",
+      "answer": "Yes, Beics Betws is a well-known bike shop in Betws-y-Coed, offering bike hire, sales, and repairs. They also have a good selection of accessories and clothing."
+    },
+    {
+      "question": "What is the best time of year to go mountain biking in North Wales?",
+      "answer": "The best time of year to go mountain biking in North Wales is from April to October. The weather is generally drier and warmer during these months, but be prepared for rain at any time of year."
+    },
+    {
+      "question": "Are there any guided mountain bike tours in North Wales?",
+      "answer": "Yes, several companies offer guided mountain bike tours in North Wales, including Oneplanet Adventure at Coed Llandegla. Guided tours are a great way to explore the trails and improve your skills."
+    },
+    {
+      "question": "Where can I find the Marin Trail in North Wales?",
+      "answer": "The Marin Trail is located near Betws-y-Coed. The trail starts from the car park in Betws-y-Coed and is well signposted. It is a 25km loop with around 680m of elevation gain."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Beics Betws",
+        "slug": "beics-betws",
+        "address": "Station Buildings, Holyhead Road, Betws-y-Coed LL24 0BL",
+        "lat": 53.0884,
+        "lng": -3.8119,
+        "description": "The go-to shop in Betws-y-Coed for bike hire, sales, and repairs. Stock a good range of bikes and accessories, plus knowledgeable staff.",
+        "website": "https://www.beicsbetws.co.uk/",
+        "phone": "01690 710766",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs",
+          "boot fitting"
+        ],
+        "googleRating": 4.7,
+        "reviewCount": 350
+      },
+      {
+        "name": "Oneplanet Adventure Shop",
+        "slug": "oneplanet-adventure-shop",
+        "address": "Coed Llandegla Forest, Llandegla, Wrexham LL11 3AA",
+        "lat": 53.0821,
+        "lng": -3.2334,
+        "description": "Located at Coed Llandegla, this shop offers bike hire, sales, repairs, and accessories. Convenient for anyone riding the trails there.",
+        "website": "https://oneplanetadventure.com/bike-shop/",
+        "phone": "01978 751656",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 280
+      },
+      {
+        "name": "Trek Bicycle Wrexham",
+        "slug": "trek-wrexham",
+        "address": "Unit A1, Wrexham Technology Park, Wrexham LL13 7YP",
+        "lat": 53.0613,
+        "lng": -3.0172,
+        "description": "Specializing in Trek bikes, this shop offers a wide range of bikes, clothing, and accessories. Also provides servicing and repairs.",
+        "website": "https://www.trekbikes.com/gb/en_GB/retail/wrexham/",
+        "phone": "01978 661662",
+        "services": [
+          "gear sales",
+          "repairs",
+          "bike fitting"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 150
+      },
+      {
+        "name": "Rutland Cycling - Porth Eirias",
+        "slug": "rutland-cycling-porth-eirias",
+        "address": "Porth Eirias, Promenade, Colwyn Bay LL29 8HH",
+        "lat": 53.2923,
+        "lng": -3.7264,
+        "description": "Located right on the coast, this Rutland Cycling branch provides sales, hire, and repairs. Suited for coastal path and road cycling needs.",
+        "website": "https://www.rutlandcycling.com/pages/store-finder-porth-eirias.aspx",
+        "phone": "01492 572020",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.4,
+        "reviewCount": 120
+      },
+      {
+        "name": "Gorilla Bikes",
+        "slug": "gorilla-bikes",
+        "address": "High Street, Llanberis LL55 4HB",
+        "lat": 53.1213,
+        "lng": -4.1267,
+        "description": "An independent bike shop in Llanberis offering sales, repairs and hire.",
+        "website": "https://gorilla-bikes.co.uk/",
+        "phone": "01286 871110",
+        "services": [
+          "gear sales",
+          "hire",
+          "repairs"
+        ],
+        "googleRating": 4.8,
+        "reviewCount": 220
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "The Cafe at Coed Llandegla",
+        "slug": "the-cafe-at-coed-llandegla",
+        "address": "Coed Llandegla Forest, Llandegla, Wrexham LL11 3AA",
+        "lat": 53.0821,
+        "lng": -3.2334,
+        "description": "The perfect spot for refuelling after a ride at Coed Llandegla. Serves hot and cold food, drinks, and snacks. Known for its bacon butties and cakes.",
+        "vibe": "Family-friendly cafe",
+        "priceRange": "£",
+        "website": "https://oneplanetadventure.com/cafe/",
+        "knownFor": "Bacon butties, cakes, post-ride coffee"
+      },
+      {
+        "name": "Y Stablau Stable Bar",
+        "slug": "y-stablau-stable-bar",
+        "address": "Holyhead Road, Betws-y-Coed LL24 0AY",
+        "lat": 53.0884,
+        "lng": -3.8119,
+        "description": "A cosy pub in Betws-y-Coed, perfect for a post-ride pint and a hearty meal. Known for its real ales and pub classics.",
+        "vibe": "Traditional pub",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Real ales, pub classics"
+      },
+      {
+        "name": "Moel Siabod Cafe",
+        "slug": "moel-siabod-cafe",
+        "address": "Capel Curig, Betws-y-Coed LL24 0EE",
+        "lat": 53.1041,
+        "lng": -3.9121,
+        "description": "Popular cafe in Capel Curig, serving breakfasts, lunches, and cakes. A great spot for refuelling before or after a ride.",
+        "vibe": "Climber-friendly cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Breakfasts, cakes, views of Moel Siabod"
+      },
+      {
+        "name": "Caffi Siabod",
+        "slug": "caffi-siabod",
+        "address": "Pont Cyfyng, Capel Curig, Betws-y-Coed LL24 0DS",
+        "lat": 53.1051,
+        "lng": -3.9069,
+        "description": "Another Capel Curig gem, offering hearty portions, friendly service, and stunning views. Great for a post-ride feast.",
+        "vibe": "Cosy cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Large portions, friendly service"
+      },
+      {
+        "name": "Hangin' Pizzeria",
+        "slug": "hangin-pizzeria",
+        "address": "Holyhead Rd, Betws-y-Coed LL24 0AY",
+        "lat": 53.0896,
+        "lng": -3.8111,
+        "description": "Wood fired pizza and craft beer in Betws-y-Coed. A popular place for bikers after the trails.",
+        "vibe": "Modern pizzeria",
+        "priceRange": "££",
+        "website": "https://hangin.co.uk/location/betws-y-coed/",
+        "knownFor": "Wood fired pizza, craft beer"
+      },
+      {
+        "name": "The Eagles Inn",
+        "slug": "the-eagles-inn",
+        "address": "Llanrwst Rd, Penmachno, Betws-y-Coed LL25 0BJ",
+        "lat": 53.0357,
+        "lng": -3.7513,
+        "description": "A traditional country pub in Penmachno, perfect after tackling the Penmachno trails. Good food and a friendly atmosphere.",
+        "vibe": "Traditional pub",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Hearty pub food, friendly service"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Plas Curig Hostel",
+        "slug": "plas-curig-hostel",
+        "description": "Budget-friendly hostel in Capel Curig, close to many popular mountain biking trails. Ideal for groups and solo travelers.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Marin Trail (5km)",
+        "website": "https://www.yha.org.uk/hostel/yha-plas-curig"
+      },
+      {
+        "name": "Bryn Gloch Caravan & Camping Park",
+        "slug": "bryn-gloch-caravan-camping-park",
+        "description": "Camping and caravan park near Betws-y-Coed, offering stunning views and easy access to the Marin Trail and Gwydir Forest.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Marin Trail (3km)",
+        "website": "https://www.bryngloch.co.uk/"
+      },
+      {
+        "name": "The Royal Oak Hotel",
+        "slug": "the-royal-oak-hotel",
+        "description": "A comfortable hotel in Betws-y-Coed, offering well-appointed rooms and a restaurant. A great base for exploring the area.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Marin Trail (0.5km)",
+        "website": "https://royaloakhotel.net/"
+      },
+      {
+        "name": "Ty Isaf B&B",
+        "slug": "ty-isaf-b-and-b",
+        "description": "A charming B&B in Penmachno, perfect for those riding the Penmachno trails. Offers comfortable rooms and a delicious breakfast.",
+        "type": "b&b",
+        "priceRange": "££",
+        "nearestSpot": "Penmachno Trails (1km)",
+        "website": null
+      },
+      {
+        "name": "Gwern Gôf Isaf Campsite",
+        "slug": "gwern-gof-isaf",
+        "description": "Very basic and famous climbers campsite located in the Ogwen Valley. Great for a budget option close to the trails.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Llyn Ogwen Trail (2km)",
+        "website": null
+      },
+      {
+        "name": "Tyn Cornel Hotel",
+        "slug": "tyn-cornel-hotel",
+        "description": "A popular spot in Snowdonia close to several mountain biking trails.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Penmachno (10km)",
+        "website": "https://www.tyncornel.com/"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Welsh Enduro Series",
+      "type": "race",
+      "monthTypical": "March-October",
+      "description": "A series of enduro mountain bike races held at various locations throughout Wales.",
+      "website": "https://www.welshenduroseries.co.uk/",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "registrationCost": 45
+    },
+    {
+      "name": "Marin Trail Challenge",
+      "type": "race",
+      "monthTypical": "July",
+      "description": "An annual mountain bike race held on the Marin Trail in Betws-y-Coed.",
+      "website": null,
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "registrationCost": 35
+    },
+    {
+      "name": "Red Bull Hardline",
+      "type": "race",
+      "monthTypical": "September",
+      "description": "One of the toughest downhill mountain bike races in the world, held in Dyfi Forest, Mid Wales. (Nearby enough to be relevant to the area)",
+      "website": "https://www.redbull.com/gb-en/events/red-bull-hardline",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "registrationCost": null
+    }
+  ],
+  "keywords": {
+    "primary": "mountain biking north wales",
+    "secondary": [
+      "mountain biking snowdonia",
+      "coed llandegla mountain biking",
+      "revolution bike park",
+      "marin trail mountain biking",
+      "north wales mountain bike trails"
+    ],
+    "longTail": [
+      "best mountain biking trails north wales",
+      "mountain biking holidays north wales",
+      "mountain biking routes north wales",
+      "mountain biking guide north wales",
+      "mountain bike hire north wales",
+      "beginner mountain biking north wales",
+      "family mountain biking north wales",
+      "downhill mountain biking north wales",
+      "easy mountain bike trails north wales",
+      "coed llandegla mountain biking trails",
+      "mountain biking near betws-y-coed",
+      "penmachno mountain biking trails"
+    ],
+    "localIntent": [
+      "mountain biking near wrexham",
+      "mountain biking near llandudno",
+      "mountain biking near betws-y-coed",
+      "mountain biking near conwy",
+      "mountain biking near llanberis"
+    ],
+    "commercialIntent": [
+      "guided mountain biking north wales",
+      "mountain bike hire north wales",
+      "mountain biking holidays north wales price",
+      "mountain biking tours north wales",
+      "best mountain biking guide north wales"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "mid-wales",
+        "label": "Mountain Biking in Mid Wales"
+      },
+      {
+        "regionSlug": "south-wales",
+        "label": "Mountain Biking in South Wales"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in North Wales"
+      },
+      {
+        "activityTypeSlug": "climbing",
+        "label": "Climbing in North Wales"
+      },
+      {
+        "activityTypeSlug": "watersports",
+        "label": "Watersports in North Wales"
+      }
+    ]
+  },
+  "discoveredBusinesses": [
+    {
+      "name": "Revolution Bike Park",
+      "type": "venue",
+      "category": "activity_provider",
+      "address": "Llangynog, Oswestry SY10 0EP",
+      "postcode": "SY10 0EP",
+      "lat": 52.762,
+      "lng": -3.353,
+      "phone": null,
+      "website": "https://www.revolutionbikepark.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 650,
+      "description": "Revolution Bike Park is a downhill mountain bike park offering uplift services and challenging trails for experienced riders.",
+      "relevantActivities": [
+        "mountain-biking",
+        "downhill"
+      ],
+      "services": [
+        "uplift",
+        "trails",
+        "bike repair"
+      ],
+      "priceRange": "££",
+      "notes": "A popular downhill venue.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Oneplanet Adventure",
+      "type": "venue",
+      "category": "activity_provider",
+      "address": "Coed Llandegla Forest, Llandegla, Denbighshire LL11 3AA",
+      "postcode": "LL11 3AA",
+      "lat": 53.077,
+      "lng": -3.285,
+      "phone": "01978 751656",
+      "website": "https://oneplanetadventure.com/",
+      "googleRating": 4.5,
+      "reviewCount": 1200,
+      "description": "Oneplanet Adventure is a trail centre offering a range of mountain bike trails, a shop, cafe, and bike hire services.",
+      "relevantActivities": [
+        "mountain-biking",
+        "trail-riding"
+      ],
+      "services": [
+        "bike hire",
+        "trails",
+        "shop",
+        "cafe",
+        "coaching"
+      ],
+      "priceRange": "££",
+      "notes": "A well-known trail centre.",
+      "inDatabase": true,
+      "priority": "critical"
+    },
+    {
+      "name": "Beics Betws",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Station Rd, Betws-y-Coed LL24 0AE",
+      "postcode": "LL24 0AE",
+      "lat": 53.099,
+      "lng": -3.805,
+      "phone": "01690 710766",
+      "website": "https://beicsbetws.co.uk/",
+      "googleRating": 4.6,
+      "reviewCount": 250,
+      "description": "Beics Betws offers bike hire, sales, and repairs in the heart of Snowdonia National Park, perfect for exploring local trails.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "bike hire",
+        "bike sales",
+        "bike repair",
+        "accessories"
+      ],
+      "priceRange": "££",
+      "notes": "Important for Snowdonia access.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Trek Bicycle Wrexham",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Unit 1A, Rhosddu Industrial Estate, Wrexham LL11 6UR",
+      "postcode": "LL11 6UR",
+      "lat": 53.047,
+      "lng": -3.001,
+      "phone": "01978 310044",
+      "website": "https://www.trekwrexham.com/",
+      "googleRating": 4.7,
+      "reviewCount": 180,
+      "description": "Trek Bicycle Wrexham is a bike shop offering a wide range of Trek bikes, accessories, and servicing.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "bike sales",
+        "bike repair",
+        "accessories",
+        "bike fit"
+      ],
+      "priceRange": "£££",
+      "notes": "Important for Trek owners and those looking for new bikes.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "The Cafe at Coed Llandegla",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Coed Llandegla Forest, Llandegla, Denbighshire LL11 3AA",
+      "postcode": "LL11 3AA",
+      "lat": 53.077,
+      "lng": -3.285,
+      "phone": null,
+      "website": "https://oneplanetadventure.com/cafe/",
+      "googleRating": 4.4,
+      "reviewCount": 300,
+      "description": "The Cafe at Coed Llandegla provides refreshments and meals for visitors to the trail centre.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "cafe",
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "Conveniently located at the trail centre.",
+      "inDatabase": true,
+      "priority": "high"
+    },
+    {
+      "name": "Y Stablau",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Holyhead Rd, Betws-y-Coed LL24 0AY",
+      "postcode": "LL24 0AY",
+      "lat": 53.1,
+      "lng": -3.806,
+      "phone": "01690 710545",
+      "website": null,
+      "googleRating": 4.5,
+      "reviewCount": 400,
+      "description": "Y Stablau is a restaurant and bar in Betws-y-Coed offering a range of meals and drinks.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "restaurant",
+        "bar",
+        "food",
+        "drinks"
+      ],
+      "priceRange": "££",
+      "notes": "Good option in Betws-y-Coed.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Moel Siabod Cafe",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Capel Curig, Betws-y-Coed LL24 0EE",
+      "postcode": "LL24 0EE",
+      "lat": 53.098,
+      "lng": -3.891,
+      "phone": "01690 720426",
+      "website": null,
+      "googleRating": 4.4,
+      "reviewCount": 350,
+      "description": "Moel Siabod Cafe provides a good stop for refreshments after riding in the area.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "cafe",
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "Popular with walkers and bikers.",
+      "inDatabase": true,
+      "priority": "medium"
+    },
+    {
+      "name": "Caffi Siabod",
+      "type": "post_activity",
+      "category": "food_drink",
+      "address": "Pont Cyfyng, Capel Curig, Betws-y-Coed LL24 0DS",
+      "postcode": "LL24 0DS",
+      "lat": 53.101,
+      "lng": -3.868,
+      "phone": "01690 720227",
+      "website": null,
+      "googleRating": 4.3,
+      "reviewCount": 200,
+      "description": "Caffi Siabod is a cafe located in Capel Curig, offering a place to grab a quick bite or a hot drink.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "cafe",
+        "food",
+        "drinks"
+      ],
+      "priceRange": "£",
+      "notes": "Another option in Capel Curig.",
+      "inDatabase": true,
+      "priority": "low"
+    },
+    {
+      "name": "Antur Stiniog",
+      "type": "venue",
+      "category": "activity_provider",
+      "address": "Blaenau Ffestiniog LL41 3NB",
+      "postcode": "LL41 3NB",
+      "lat": 52.995,
+      "lng": -3.944,
+      "phone": "01766 207000",
+      "website": "https://www.anturstiniog.com/",
+      "googleRating": 4.6,
+      "reviewCount": 950,
+      "description": "Antur Stiniog offers downhill mountain biking trails with an uplift service, as well as other adventure activities.",
+      "relevantActivities": [
+        "mountain-biking",
+        "downhill"
+      ],
+      "services": [
+        "uplift",
+        "trails",
+        "cafe"
+      ],
+      "priceRange": "££",
+      "notes": "Well-regarded downhill venue in a slate quarry.",
+      "inDatabase": false,
+      "priority": "critical"
+    },
+    {
+      "name": "Marin Trail",
+      "type": "attraction",
+      "category": "activity_provider",
+      "address": "Gwydir Forest, Llanrwst LL26 0PN",
+      "postcode": "LL26 0PN",
+      "lat": 53.145,
+      "lng": -3.801,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.5,
+      "reviewCount": 150,
+      "description": "The Marin Trail is a challenging and popular mountain bike trail in the Gwydir Forest, offering stunning views and technical riding.",
+      "relevantActivities": [
+        "mountain-biking",
+        "trail-riding"
+      ],
+      "services": [
+        "trails"
+      ],
+      "priceRange": "free",
+      "notes": "Classic North Wales mountain bike trail.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Penmachno Trails",
+      "type": "attraction",
+      "category": "activity_provider",
+      "address": "Penmachno, Betws-y-Coed LL25 0BJ",
+      "postcode": "LL25 0BJ",
+      "lat": 53.053,
+      "lng": -3.747,
+      "phone": null,
+      "website": null,
+      "googleRating": 4.4,
+      "reviewCount": 80,
+      "description": "Penmachno Trails are two waymarked mountain bike loops offering a more natural and less manicured riding experience.",
+      "relevantActivities": [
+        "mountain-biking",
+        "trail-riding"
+      ],
+      "services": [
+        "trails"
+      ],
+      "priceRange": "free",
+      "notes": "Good for a more natural feel.",
+      "inDatabase": false,
+      "priority": "medium"
+    },
+    {
+      "name": "Llandegla Forest",
+      "type": "attraction",
+      "category": "activity_provider",
+      "address": "Llandegla, Denbighshire LL11 3AA",
+      "postcode": "LL11 3AA",
+      "lat": 53.076,
+      "lng": -3.285,
+      "phone": null,
+      "website": null,
+      "googleRating": null,
+      "reviewCount": null,
+      "description": "The overall forest area where Oneplanet Adventure is located, offering more than just the dedicated trail centre routes.",
+      "relevantActivities": [
+        "mountain-biking",
+        "trail-riding"
+      ],
+      "services": [
+        "trails"
+      ],
+      "priceRange": "free/££",
+      "notes": "Includes Oneplanet, but encompasses more.",
+      "inDatabase": false,
+      "priority": "high"
+    },
+    {
+      "name": "Summit Cycles",
+      "type": "gear_shop",
+      "category": "gear_rental",
+      "address": "Units 1-2, Builder Street, Llandudno LL30 1DR",
+      "postcode": "LL30 1DR",
+      "lat": 53.321,
+      "lng": -3.821,
+      "phone": "01492 875890",
+      "website": "http://www.summitcycles.co.uk/",
+      "googleRating": 4.5,
+      "reviewCount": 75,
+      "description": "Summit Cycles offers bike sales, repairs and servicing close to the coast, but easily accessible to Snowdonia and North Wales trails.",
+      "relevantActivities": [
+        "mountain-biking"
+      ],
+      "services": [
+        "bike sales",
+        "bike repair",
+        "accessories"
+      ],
+      "priceRange": "££",
+      "notes": "Good option for bike maintenance/sales near Llandudno.",
+      "inDatabase": false,
+      "priority": "low"
+    }
+  ]
+}

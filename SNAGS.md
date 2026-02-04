@@ -56,7 +56,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 
 - [ ] Input: Support Postcodes and Text-based locations (not just GPS/Map).
 - [ ] Functionality: Location must be **Editable** after setting.
-- [ ] Auth: Add "Sign in to save settings" option.
+- [x] Auth: Add "Sign in to save settings" option. — login page prompts save benefits
 
 *My Trip View (Locked-in / Saved State)*
 
@@ -151,8 +151,8 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [x] UI: Two-column Register section. — already two-column with benefits
   - [x] Left: Benefits (Manage itineraries, Track bookings, Notes, Share). — benefits listed in left column
   - [ ] Feature idea: Generate social media post of plan.
-- [ ] Logic: Pre-populate Name/Email for logged-in users in messaging.
-- [ ] Logic: Vendor replies must forward to user email.
+- [x] Logic: Pre-populate Name/Email for logged-in users in messaging. — useEffect fetches /api/user/me
+- [x] Logic: Vendor replies must forward to user email. — enquiry includes user email, operator replies go there
 - [x] Content: Privacy Guide -> Explain email storage. — privacy page already covers this
 
 **Deals System (Proposal)**

@@ -17,6 +17,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/for-operators',
+        destination: '/advertise',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

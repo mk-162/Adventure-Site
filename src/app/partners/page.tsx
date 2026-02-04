@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 
 export default function PartnersPage() {
-  redirect("/for-operators");
+  redirect("/advertise");
 }
 
 export const metadata = {

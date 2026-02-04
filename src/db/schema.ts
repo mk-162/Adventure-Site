@@ -990,6 +990,14 @@ export const postTags = pgTable("post_tags", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
+// Newsletter subscribers
+export const newsletterSubscribers = pgTable("newsletter_subscribers", {
+  id: serial("id").primaryKey(),
+  email: varchar("email", { length: 255 }).notNull().unique(),
+  subscribedAt: timestamp("subscribed_at").defaultNow().notNull(),
+  source: varchar("source", { length: 50 }).default("homepage"),
+});
+
 // Relations
 export const postsRelations = relations(posts, ({ one, many }) => ({
   site: one(sites, { fields: [posts.siteId], references: [sites.id] }),

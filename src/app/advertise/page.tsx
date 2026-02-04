@@ -24,11 +24,11 @@ import { FAQAccordion } from "@/components/operators/FAQAccordion";
 import { RegisterInterestForm } from "@/components/operators/RegisterInterestForm";
 
 export const metadata: Metadata = {
-  title: "List Your Adventure Business | Adventure Wales",
+  title: "Advertise With Us - Grow Your Adventure Business | Adventure Wales",
   description:
     "Join 46 Welsh adventure operators already listed on Adventure Wales. Get discovered by thousands of adventure-seekers. Free listing available, verified and premium plans from £9.99/mo per location.",
   openGraph: {
-    title: "List Your Adventure Business | Adventure Wales",
+    title: "Advertise With Us - Grow Your Adventure Business | Adventure Wales",
     description:
       "Join 46 Welsh adventure operators already listed on Adventure Wales. Get discovered by thousands of adventure-seekers.",
     siteName: "Adventure Wales",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "List Your Adventure Business | Adventure Wales",
+    title: "Advertise With Us | Adventure Wales",
     description:
       "Join 46 Welsh adventure operators already listed. Free listing, verified and premium plans available.",
   },

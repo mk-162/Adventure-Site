@@ -41,7 +41,7 @@ export default function ContactPage() {
             <p className="text-gray-600 text-sm mt-2">Response within 24 hours</p>
           </div>
 
-          <Link href="/for-operators" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#f97316] transition-all group">
+          <Link href="/advertise" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#f97316] transition-all group">
             <MessageCircle className="w-8 h-8 text-[#f97316] mb-4 group-hover:scale-110 transition-transform" />
             <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">List Your Business</h3>
             <p className="text-gray-600 text-sm">Partner with us to reach more adventurers</p>

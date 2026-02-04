@@ -261,9 +261,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
           <div className="flex overflow-x-auto border-b border-gray-200 gap-4 lg:gap-8 no-scrollbar">
             <TabLink href={`/${regionSlug}`} label="Overview" active />
             <TabLink href={`/${regionSlug}/things-to-do`} label="Things to Do" />
-            <TabLink href={`/${regionSlug}/routes`} label="Routes & Maps" />
             <TabLink href={`/${regionSlug}/where-to-stay`} label="Where to Stay" />
-            <TabLink href={`/${regionSlug}/tips`} label="Local Tips" />
           </div>
         </div>
 
@@ -411,38 +409,6 @@ export default async function RegionPage({ params }: RegionPageProps) {
           {/* Sidebar (4 cols) */}
           <aside className="lg:col-span-4 space-y-6">
             
-            {/* Quick Plan Widget */}
-            <div className="bg-white p-5 lg:p-6 rounded-2xl border border-gray-200 shadow-sm lg:sticky lg:top-28">
-              <div className="flex items-center gap-2 mb-4">
-                <Plane className="w-5 h-5 text-[#1e3a4c]" />
-                <h3 className="text-lg font-bold text-[#1e3a4c]">Quick Plan</h3>
-              </div>
-              <form className="flex flex-col gap-4">
-                <div>
-                  <label className="text-xs font-bold text-gray-500 uppercase mb-1 block">Dates</label>
-                  <div className="flex items-center bg-gray-100 rounded-lg px-3 h-10 border border-transparent focus-within:border-[#1e3a4c] transition-colors">
-                    <Calendar className="w-5 h-5 text-gray-400" />
-                    <input className="bg-transparent border-none text-sm w-full focus:ring-0 focus:outline-none ml-2" placeholder="Select dates" type="text"/>
-                  </div>
-                </div>
-                <div>
-                  <label className="text-xs font-bold text-gray-500 uppercase mb-1 block">Interests</label>
-                  <div className="flex items-center bg-gray-100 rounded-lg px-3 h-10 border border-transparent focus-within:border-[#1e3a4c] transition-colors">
-                    <Heart className="w-5 h-5 text-gray-400" />
-                    <select className="bg-transparent border-none text-sm w-full focus:ring-0 focus:outline-none ml-2 appearance-none">
-                      <option>Hiking & Walking</option>
-                      <option>Adventure Sports</option>
-                      <option>Family Fun</option>
-                      <option>Water Activities</option>
-                    </select>
-                  </div>
-                </div>
-                <button className="w-full bg-[#f97316] text-white font-bold h-10 rounded-lg hover:bg-[#f97316]/90 transition-colors mt-2" type="button">
-                  Create Itinerary
-                </button>
-              </form>
-            </div>
-
             {/* Local Experts */}
             <div className="bg-white p-5 lg:p-6 rounded-2xl border border-gray-200 shadow-sm">
               <div className="flex justify-between items-center mb-4">

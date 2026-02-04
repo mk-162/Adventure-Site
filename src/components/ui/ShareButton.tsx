@@ -5,7 +5,7 @@ import { Share2 } from "lucide-react";
 
 interface ShareButtonProps {
   title: string;
-  variant?: "icon" | "button";
+  variant?: "icon" | "button" | "icon-only";
   className?: string;
 }
 
@@ -26,6 +26,19 @@ export function ShareButton({ title, variant = "button", className }: ShareButto
       setTimeout(() => setCopied(false), 2000);
     }
   };
+
+  if (variant === "icon-only") {
+    return (
+      <button
+        onClick={handleShare}
+        className={className || "text-gray-500 hover:text-[#1e3a4c] transition-colors"}
+        aria-label="Share"
+        title={copied ? "Link copied!" : "Share"}
+      >
+        <Share2 className="w-5 h-5" />
+      </button>
+    );
+  }
 
   if (variant === "icon") {
     return (

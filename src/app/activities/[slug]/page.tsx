@@ -374,16 +374,40 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                 <p className="text-gray-500 text-sm">per person</p>
               </div>
 
-              {activity.bookingUrl ? (
-                <ButtonLink
-                  href={activity.bookingUrl}
-                  variant="accent"
-                  fullWidth
-                  external
-                >
-                  Check Availability
-                  <ExternalLink className="h-4 w-4" />
-                </ButtonLink>
+              {activity.bookingAffiliateUrl ? (
+                <>
+                  <ButtonLink
+                    href={activity.bookingAffiliateUrl}
+                    variant="accent"
+                    fullWidth
+                    external
+                  >
+                    Book Now
+                    <ExternalLink className="h-4 w-4" />
+                  </ButtonLink>
+                  {activity.bookingPlatform && activity.bookingPlatform !== "none" && activity.bookingPlatform !== "direct" && (
+                    <p className="text-xs text-center text-gray-400 mt-2">
+                      Powered by {activity.bookingPlatform.charAt(0).toUpperCase() + activity.bookingPlatform.slice(1)}
+                    </p>
+                  )}
+                </>
+              ) : activity.bookingUrl ? (
+                <>
+                  <ButtonLink
+                    href={activity.bookingUrl}
+                    variant="accent"
+                    fullWidth
+                    external
+                  >
+                    Check Availability
+                    <ExternalLink className="h-4 w-4" />
+                  </ButtonLink>
+                  {activity.bookingPlatform && activity.bookingPlatform !== "none" && activity.bookingPlatform !== "direct" && (
+                    <p className="text-xs text-center text-gray-400 mt-2">
+                      Powered by {activity.bookingPlatform.charAt(0).toUpperCase() + activity.bookingPlatform.slice(1)}
+                    </p>
+                  )}
+                </>
               ) : (
                 <ButtonLink href="/contact" variant="accent" fullWidth>
                   Enquire Now

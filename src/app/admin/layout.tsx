@@ -17,6 +17,7 @@ import {
   X,
   Compass,
   Home,
+  Handshake,
 } from "lucide-react";
 import clsx from "clsx";
 
@@ -31,6 +32,7 @@ const contentNav = [
 
 const commercialNav = [
   { name: "Claims", href: "/admin/commercial/claims", icon: CheckSquare },
+  { name: "Partner Mapping", href: "/admin/commercial/partners", icon: Handshake },
   { name: "Advertisers", href: "/admin/commercial/advertisers", icon: Building2 },
   { name: "Campaigns", href: "/admin/commercial/campaigns", icon: Megaphone },
 ];

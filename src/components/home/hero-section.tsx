@@ -5,11 +5,11 @@ import { ArrowRight, Mountain, Waves, Bike } from "lucide-react";
 import { useEffect, useState, useCallback } from "react";
 
 const heroImages = [
-  "/images/misc/homepage-hero-01-09087a8a.jpg",
-  "/images/misc/homepage-hero-02-b5069db7.jpg",
-  "/images/misc/homepage-hero-03-355a010f.jpg",
-  "/images/misc/homepage-hero-04-6a86aa0d.jpg",
-  "/images/misc/homepage-hero-05-a11e63e5.jpg",
+  "/images/wales/snowdon-mountain-2ab3d50c.jpg",
+  "/images/wales/pembrokeshire-coast-wales-c17a15f1.jpg",
+  "/images/wales/lake-snowdonia-d1b0cede.jpg",
+  "/images/wales/welsh-hills-62834fea.jpg",
+  "/images/wales/forest-snowdonia-a143e852.jpg",
 ];
 
 const stats = [

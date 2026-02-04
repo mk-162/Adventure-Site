@@ -36,6 +36,14 @@ export const operatorCategoryEnum = pgEnum("operator_category", [
   "transport",
 ]);
 
+export const bookingPlatformEnum = pgEnum("booking_platform", [
+  "none",
+  "beyonk",
+  "rezdy",
+  "fareharbor",
+  "direct",
+]);
+
 export const adminRoleEnum = pgEnum("admin_role", [
   "super",
   "admin",
@@ -130,6 +138,9 @@ export const activities = pgTable("activities", {
   minAge: integer("min_age"),
   season: varchar("season", { length: 255 }),
   bookingUrl: text("booking_url"),
+  bookingPlatform: bookingPlatformEnum("booking_platform").default("none").notNull(),
+  bookingPartnerRef: varchar("booking_partner_ref", { length: 255 }),
+  bookingAffiliateUrl: text("booking_affiliate_url"),
   sourceUrl: text("source_url"),
   status: statusEnum("status").default("draft").notNull(),
   completenessScore: integer("completeness_score").default(0),
@@ -466,6 +477,10 @@ export const operators = pgTable("operators", {
   serviceTypes: text("service_types").array(),
   regions: text("regions").array(),
   activityTypes: text("activity_types").array(),
+  bookingPlatform: bookingPlatformEnum("booking_platform").default("none").notNull(),
+  bookingPartnerRef: varchar("booking_partner_ref", { length: 255 }),
+  bookingAffiliateId: varchar("booking_affiliate_id", { length: 255 }),
+  bookingWidgetUrl: text("booking_widget_url"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });

@@ -12,6 +12,9 @@ interface ActivityCardProps {
     priceTo: string | null;
     duration: string | null;
     difficulty: string | null;
+    bookingPlatform?: string | null;
+    bookingAffiliateUrl?: string | null;
+    bookingUrl?: string | null;
   };
   region?: {
     name: string;
@@ -187,6 +190,14 @@ export function ActivityCard({
         {activity.difficulty && (
           <div className="absolute top-3 right-3">
             <DifficultyBadge level={activity.difficulty} />
+          </div>
+        )}
+        {activity.bookingPlatform && activity.bookingPlatform !== "none" && (
+          <div className="absolute top-3 left-3">
+            <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-emerald-500/90 text-white text-[10px] font-bold uppercase tracking-wider backdrop-blur-sm">
+              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+              Instant Book
+            </span>
           </div>
         )}
       </div>

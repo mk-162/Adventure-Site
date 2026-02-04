@@ -10,16 +10,14 @@ interface SearchPageProps {
   searchParams: {
     region?: string;
     activity?: string;
-    when?: string;
   };
 }
 
 async function getSearchResults(filters: {
   regionSlug?: string;
   activitySlug?: string;
-  when?: string;
 }) {
-  const { regionSlug, activitySlug, when } = filters;
+  const { regionSlug, activitySlug } = filters;
 
   // Get region if specified
   let region = null;
@@ -161,7 +159,6 @@ async function SearchResults({ searchParams }: SearchPageProps) {
   const results = await getSearchResults({
     regionSlug: searchParams.region,
     activitySlug: searchParams.activity,
-    when: searchParams.when,
   });
 
   const totalResults = 
@@ -169,7 +166,7 @@ async function SearchResults({ searchParams }: SearchPageProps) {
     results.itineraries.length + 
     results.accommodation.length;
 
-  const hasFilters = searchParams.region || searchParams.activity || searchParams.when;
+  const hasFilters = searchParams.region || searchParams.activity;
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -193,12 +190,6 @@ async function SearchResults({ searchParams }: SearchPageProps) {
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Compass className="h-4 w-4" />
                 <span className="font-medium">{results.activityType.name}</span>
-              </div>
-            )}
-            {searchParams.when && (
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-                <Calendar className="h-4 w-4" />
-                <span className="font-medium capitalize">{searchParams.when.replace("-", " ")}</span>
               </div>
             )}
             {!hasFilters && (

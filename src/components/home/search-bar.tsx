@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { MapPin, Compass, Calendar, Search, ArrowRight, Mountain, Waves, Footprints } from "lucide-react";
+import { useMemo, useState } from "react";
+import { MapPin, Compass, Search, ArrowRight, Mountain, Waves, Footprints } from "lucide-react";
 
 interface Region {
   id: number;
@@ -19,6 +19,8 @@ interface ActivityType {
 interface SearchBarProps {
   regions: Region[];
   activityTypes: ActivityType[];
+  /** Map of region slug → activity type slugs available in that region */
+  regionActivityMap?: Record<string, string[]>;
 }
 
 // Icon mapping for activity types
@@ -41,40 +43,33 @@ const regionIconMap: Record<string, string> = {
   "gower-peninsula": "🌅",
 };
 
-// Time options
-const timeOptions = [
-  { value: "", label: "Anytime" },
-  { value: "this-weekend", label: "This Weekend" },
-  { value: "this-month", label: "This Month" },
-  { value: "spring", label: "Spring (Mar-May)" },
-  { value: "summer", label: "Summer (Jun-Aug)" },
-  { value: "autumn", label: "Autumn (Sep-Nov)" },
-  { value: "winter", label: "Winter (Dec-Feb)" },
-  { value: "january", label: "January" },
-  { value: "february", label: "February" },
-  { value: "march", label: "March" },
-  { value: "april", label: "April" },
-  { value: "may", label: "May" },
-  { value: "june", label: "June" },
-  { value: "july", label: "July" },
-  { value: "august", label: "August" },
-  { value: "september", label: "September" },
-  { value: "october", label: "October" },
-  { value: "november", label: "November" },
-  { value: "december", label: "December" },
-];
-
-export function SearchBar({ regions, activityTypes }: SearchBarProps) {
+export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: SearchBarProps) {
   const [where, setWhere] = useState("");
   const [what, setWhat] = useState("");
-  const [when, setWhen] = useState("");
   const [focusedField, setFocusedField] = useState<string | null>(null);
+
+  // Filter activity types based on selected region
+  const filteredActivityTypes = useMemo(() => {
+    if (!where || !regionActivityMap[where]) return activityTypes;
+    const allowedSlugs = new Set(regionActivityMap[where]);
+    return activityTypes.filter((at) => allowedSlugs.has(at.slug));
+  }, [where, activityTypes, regionActivityMap]);
+
+  // Reset activity selection if it's no longer valid for the chosen region
+  const handleRegionChange = (regionSlug: string) => {
+    setWhere(regionSlug);
+    if (regionSlug && regionActivityMap[regionSlug]) {
+      const allowed = new Set(regionActivityMap[regionSlug]);
+      if (what && !allowed.has(what)) {
+        setWhat("");
+      }
+    }
+  };
 
   const handleSearch = () => {
     const params = new URLSearchParams();
     if (where) params.set("region", where);
     if (what) params.set("activity", what);
-    if (when) params.set("when", when);
     window.location.href = `/search?${params.toString()}`;
   };
 
@@ -93,7 +88,7 @@ export function SearchBar({ regions, activityTypes }: SearchBarProps) {
           ${focusedField ? 'ring-2 ring-[#f97316]/20 shadow-orange-500/10' : ''}
         `}
       >
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_auto] gap-3 sm:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_auto] gap-3 sm:gap-4">
           {/* WHERE */}
           <div className="relative">
             <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2.5">
@@ -103,7 +98,7 @@ export function SearchBar({ regions, activityTypes }: SearchBarProps) {
               <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 text-[#1e3a4c] h-5 w-5 transition-colors group-focus-within:text-[#f97316]" />
               <select
                 value={where}
-                onChange={(e) => setWhere(e.target.value)}
+                onChange={(e) => handleRegionChange(e.target.value)}
                 onFocus={() => setFocusedField("where")}
                 onBlur={() => setFocusedField(null)}
                 onKeyPress={handleKeyPress}
@@ -152,10 +147,10 @@ export function SearchBar({ regions, activityTypes }: SearchBarProps) {
               >
                 <option value="">Any Adventure</option>
                 {/* Water Activities */}
-                {activityTypes.filter(at => ['surfing', 'kayaking', 'coasteering'].includes(at.slug)).length > 0 && (
+                {filteredActivityTypes.filter(at => ['surfing', 'kayaking', 'coasteering', 'sea-kayaking', 'sup', 'wild-swimming'].includes(at.slug)).length > 0 && (
                   <optgroup label="🌊 Water Adventures">
-                    {activityTypes
-                      .filter(at => ['surfing', 'kayaking', 'coasteering'].includes(at.slug))
+                    {filteredActivityTypes
+                      .filter(at => ['surfing', 'kayaking', 'coasteering', 'sea-kayaking', 'sup', 'wild-swimming'].includes(at.slug))
                       .map(type => (
                         <option key={type.id} value={type.slug}>
                           {type.name}
@@ -164,10 +159,10 @@ export function SearchBar({ regions, activityTypes }: SearchBarProps) {
                   </optgroup>
                 )}
                 {/* Mountain Activities */}
-                {activityTypes.filter(at => ['hiking', 'climbing', 'mountain-biking'].includes(at.slug)).length > 0 && (
+                {filteredActivityTypes.filter(at => ['hiking', 'climbing', 'mountain-biking', 'trail-running', 'caving', 'canyoning'].includes(at.slug)).length > 0 && (
                   <optgroup label="⛰️ Mountain Adventures">
-                    {activityTypes
-                      .filter(at => ['hiking', 'climbing', 'mountain-biking'].includes(at.slug))
+                    {filteredActivityTypes
+                      .filter(at => ['hiking', 'climbing', 'mountain-biking', 'trail-running', 'caving', 'canyoning'].includes(at.slug))
                       .map(type => (
                         <option key={type.id} value={type.slug}>
                           {type.name}
@@ -176,10 +171,10 @@ export function SearchBar({ regions, activityTypes }: SearchBarProps) {
                   </optgroup>
                 )}
                 {/* Other Activities */}
-                {activityTypes.filter(at => !['surfing', 'kayaking', 'coasteering', 'hiking', 'climbing', 'mountain-biking'].includes(at.slug)).length > 0 && (
+                {filteredActivityTypes.filter(at => !['surfing', 'kayaking', 'coasteering', 'sea-kayaking', 'sup', 'wild-swimming', 'hiking', 'climbing', 'mountain-biking', 'trail-running', 'caving', 'canyoning'].includes(at.slug)).length > 0 && (
                   <optgroup label="🎯 Other Adventures">
-                    {activityTypes
-                      .filter(at => !['surfing', 'kayaking', 'coasteering', 'hiking', 'climbing', 'mountain-biking'].includes(at.slug))
+                    {filteredActivityTypes
+                      .filter(at => !['surfing', 'kayaking', 'coasteering', 'sea-kayaking', 'sup', 'wild-swimming', 'hiking', 'climbing', 'mountain-biking', 'trail-running', 'caving', 'canyoning'].includes(at.slug))
                       .map(type => (
                         <option key={type.id} value={type.slug}>
                           {type.name}
@@ -187,38 +182,6 @@ export function SearchBar({ regions, activityTypes }: SearchBarProps) {
                       ))}
                   </optgroup>
                 )}
-              </select>
-            </div>
-          </div>
-
-          {/* WHEN */}
-          <div className="relative">
-            <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2.5">
-              When
-            </label>
-            <div className="relative group">
-              <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 text-[#1e3a4c] h-5 w-5 transition-colors group-focus-within:text-[#f97316]" />
-              <select
-                value={when}
-                onChange={(e) => setWhen(e.target.value)}
-                onFocus={() => setFocusedField("when")}
-                onBlur={() => setFocusedField(null)}
-                onKeyPress={handleKeyPress}
-                className="
-                  w-full h-14 pl-12 pr-4 
-                  bg-slate-50 border-2 border-slate-200 rounded-xl 
-                  font-medium text-base text-slate-900
-                  focus:bg-white focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316]/20 
-                  hover:border-slate-300
-                  transition-all duration-200
-                  appearance-none cursor-pointer
-                "
-              >
-                {timeOptions.map(option => (
-                  <option key={option.value} value={option.value}>
-                    {option.label}
-                  </option>
-                ))}
               </select>
             </div>
           </div>

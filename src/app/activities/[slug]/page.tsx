@@ -11,6 +11,7 @@ import type { MapMarker } from "@/components/ui/MapView";
 import { ActivityLocationMap } from "@/components/maps/ActivityLocationMap";
 import { ClaimListingBanner } from "@/components/operators/ClaimListingBanner";
 import { AdvertiseWidget } from "@/components/commercial/AdvertiseWidget";
+import { TopTip } from "@/components/widgets/TopTip";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import { 
   MapPin, Clock, Calendar, Users, Star, 
@@ -472,6 +473,39 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
               )}
             </div>
 
+            {/* Sidebar Location Map */}
+            {activity.lat && activity.lng && (
+              <div className="mt-4 bg-white rounded-2xl border p-4 shadow-sm">
+                <h3 className="font-bold text-sm text-[#1e3a4c] mb-3 flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-[#f97316]" />
+                  Location
+                </h3>
+                <MapView
+                  markers={[{
+                    id: `sidebar-activity-${activity.id}`,
+                    lat: parseFloat(String(activity.lat)),
+                    lng: parseFloat(String(activity.lng)),
+                    type: "activity" as const,
+                    title: activity.name,
+                  }]}
+                  center={[parseFloat(String(activity.lat)), parseFloat(String(activity.lng))]}
+                  zoom={13}
+                  height="200px"
+                  interactive={false}
+                  className="rounded-xl"
+                />
+                <a
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${activity.lat},${activity.lng}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 flex items-center justify-center gap-2 text-xs font-semibold text-[#1e3a4c] hover:text-[#f97316] bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 transition-colors w-full"
+                >
+                  <Navigation className="w-3.5 h-3.5" />
+                  Get Directions
+                </a>
+              </div>
+            )}
+
             {/* Claim Listing CTA — sidebar */}
             {operator && operator.claimStatus !== "claimed" && operator.claimStatus !== "premium" && (
               <div className="mt-4">
@@ -486,6 +520,13 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
             {/* Advertise Widget */}
             <div className="mt-4">
               <AdvertiseWidget context={region?.name} />
+
+            {/* Contextual Top Tip */}
+            {activity.localTip && (
+              <div className="mt-4">
+                <TopTip tip={activity.localTip} context={region?.name || undefined} />
+              </div>
+            )}
             </div>
           </div>
         </div>

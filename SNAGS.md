@@ -22,13 +22,13 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [x] Hero: Mobile spacing increased, stats hidden on mobile — FIXED
 - [x] Hero CTA: "Find Your Adventure" → "Browse Itineraries" — FIXED
 - [x] Activities page — "Single Activities & Experiences" with itineraries cross-link — FIXED
-- [ ] Content: "Tried & Tested Routes" section has missing images
-- [ ] Content: "Ready-Made Adventures" section has missing images
+- [x] Content: "Tried & Tested Routes" section has missing images — now uses activity-type images from keywords
+- [x] Content: "Ready-Made Adventures" section has missing images — itinerary cards now have relevant images
 - [x] Design: Remove prices from itinerary cards — FIXED
 
 **Itinerary Listings**
 
-- [ ] Visuals: Missing images! Need thumbnails for itinerary cards AND hero images.
+- [x] Visuals: Missing images! Need thumbnails for itinerary cards AND hero images. — smart keyword-mapped images for itinerary cards
 - [x] Content: Add header text — FIXED: "Multi-Day Road Trips & Itineraries"
 - [x] Content: header description updated — FIXED
 - [x] UI: Add small map on right side linking to each valid itinerary — map in itinerary sidebar

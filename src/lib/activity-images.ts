@@ -9,31 +9,85 @@ const localActivityImages = new Set([
   "trail-running", "wildlife-boat-tour", "wild-swimming", "windsurfing", "zip-lining",
 ]);
 
-export function getActivityHeroImage(
+// Slug aliases for activities whose slug doesn't contain the type name directly
+const slugAliases: Record<string, string> = {
+  "mtb": "mountain-biking",
+  "downhill": "mountain-biking",
+  "biking": "mountain-biking",
+  "cycling": "mountain-biking",
+  "paddle": "paddleboarding",
+  "canoe": "kayaking",
+  "canoeing": "kayaking",
+  "abseil": "climbing",
+  "abseiling": "climbing",
+  "bouldering": "climbing",
+  "cave": "caving",
+  "gorge": "gorge-walking",
+  "scrambling": "gorge-scrambling",
+  "raft": "rafting",
+  "swim": "wild-swimming",
+  "swimming": "wild-swimming",
+  "surf": "surfing",
+  "bodyboard": "surfing",
+  "zipline": "zip-lining",
+  "zip": "zip-lining",
+  "ropes": "high-ropes",
+  "trek": "hiking",
+  "trekking": "hiking",
+  "walk": "hiking",
+  "walking": "hiking",
+  "mine": "mine-exploration",
+  "boat": "boat-tour",
+  "wildlife": "wildlife-boat-tour",
+  "windsurf": "windsurfing",
+  "run": "trail-running",
+  "running": "trail-running",
+};
+
+/**
+ * Resolve an activity type slug from the activityType or by matching against the activity slug.
+ */
+export function resolveActivityTypeSlug(
   activitySlug: string,
-  activityTypeSlug?: string | null
-): string {
-  // Try activity type first
+  activityTypeSlug?: string | null,
+): string | null {
   if (activityTypeSlug && localActivityImages.has(activityTypeSlug)) {
-    return `/images/activities/${activityTypeSlug}-hero.jpg`;
+    return activityTypeSlug;
   }
-  // Try to match from slug
-  const slugParts = activitySlug.toLowerCase().split("-");
-  for (const part of slugParts) {
-    if (localActivityImages.has(part)) {
-      return `/images/activities/${part}-hero.jpg`;
-    }
-  }
-  // Check compound matches
+
+  // Check compound matches first (more specific)
   const compoundMatches = [
-    "gorge-walking", "gorge-scrambling", "sea-kayaking", "mountain-biking",
-    "trail-running", "wild-swimming", "zip-lining", "boat-tour",
-    "wildlife-boat-tour", "mine-exploration", "high-ropes", "hiking-scrambling",
+    "gorge-scrambling", "gorge-walking", "sea-kayaking", "mine-exploration",
+    "mountain-biking", "trail-running", "wild-swimming", "boat-tour",
+    "wildlife-boat-tour", "high-ropes", "zip-lining", "hiking-scrambling",
   ];
   for (const match of compoundMatches) {
     if (activitySlug.includes(match)) {
-      return `/images/activities/${match}-hero.jpg`;
+      return match;
     }
+  }
+
+  // Try slug parts with aliases
+  const slugParts = activitySlug.toLowerCase().split("-");
+  for (const part of slugParts) {
+    if (localActivityImages.has(part)) {
+      return part;
+    }
+    if (slugAliases[part] && localActivityImages.has(slugAliases[part])) {
+      return slugAliases[part];
+    }
+  }
+
+  return null;
+}
+
+export function getActivityHeroImage(
+  activitySlug: string,
+  activityTypeSlug?: string | null,
+): string {
+  const typeSlug = resolveActivityTypeSlug(activitySlug, activityTypeSlug);
+  if (typeSlug) {
+    return `/images/activities/${typeSlug}-hero.jpg`;
   }
   return "/images/activities/hiking-hero.jpg";
 }

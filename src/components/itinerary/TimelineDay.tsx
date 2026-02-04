@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { ItineraryStop } from "@/types/itinerary";
-import { Flag, Bed, Utensils, Car, CloudRain, PiggyBank, MapPin, Home } from "lucide-react";
+import { Flag, Bed, Utensils, Car, CloudRain, PiggyBank, MapPin, Home, Phone } from "lucide-react";
+import Link from "next/link";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 import { accommodation } from "@/db/schema";
 import { calculateDistance, calculateDrivingTime } from "@/lib/travel-utils";
@@ -190,11 +191,19 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp }: TimelineDayPro
                                     </p>
 
                                     {/* Actions / Links */}
-                                    <div className="mt-4 flex gap-3">
+                                    <div className="mt-4 flex flex-wrap gap-3">
                                         {(stop.activityId || (mode === "wet" && stop.wetAltActivityId) || (mode === "budget" && stop.budgetAltActivityId)) && (
                                             <button className="text-xs font-bold bg-[#1e3a4c] text-white px-3 py-1.5 rounded-lg hover:bg-[#1e3a4c]/90 transition-colors">
                                                 View Details
                                             </button>
+                                        )}
+                                        {stop.operator?.slug && (
+                                            <Link
+                                                href={`/directory/${stop.operator.slug}`}
+                                                className="text-xs font-bold text-[#f97316] bg-[#f97316]/10 px-3 py-1.5 rounded-lg hover:bg-[#f97316]/20 transition-colors flex items-center gap-1"
+                                            >
+                                                <Phone className="w-3 h-3" /> Contact / Book
+                                            </Link>
                                         )}
                                         <button className="text-xs font-bold text-gray-600 bg-gray-100 px-3 py-1.5 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-1">
                                             <MapPin className="w-3 h-3" /> Map

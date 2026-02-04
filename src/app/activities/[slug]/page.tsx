@@ -60,25 +60,85 @@ const localActivityImages = new Set([
   "trail-running", "wildlife-boat-tour", "wild-swimming", "windsurfing", "zip-lining",
 ]);
 
-function getActivityHeroImage(activitySlug: string, activityTypeSlug?: string | null): string {
+// Slug aliases for activities whose slug doesn't contain the type name directly
+const slugAliases: Record<string, string> = {
+  "mtb": "mountain-biking",
+  "downhill": "mountain-biking",
+  "biking": "mountain-biking",
+  "cycling": "mountain-biking",
+  "paddle": "paddleboarding",
+  "canoe": "kayaking",
+  "canoeing": "kayaking",
+  "abseil": "climbing",
+  "abseiling": "climbing",
+  "bouldering": "climbing",
+  "cave": "caving",
+  "gorge": "gorge-walking",
+  "scrambling": "gorge-scrambling",
+  "raft": "rafting",
+  "swim": "wild-swimming",
+  "swimming": "wild-swimming",
+  "surf": "surfing",
+  "bodyboard": "surfing",
+  "zipline": "zip-lining",
+  "zip": "zip-lining",
+  "ropes": "high-ropes",
+  "trek": "hiking",
+  "trekking": "hiking",
+  "walk": "hiking",
+  "walking": "hiking",
+  "mine": "mine-exploration",
+  "boat": "boat-tour",
+  "wildlife": "wildlife-boat-tour",
+  "windsurf": "windsurfing",
+  "run": "trail-running",
+  "running": "trail-running",
+};
+
+function getActivityHeroImage(
+  activitySlug: string,
+  activityTypeSlug?: string | null,
+  activityTypeHeroImage?: string | null,
+  regionSlug?: string | null,
+): string {
   // Try activity type first
   if (activityTypeSlug && localActivityImages.has(activityTypeSlug)) {
     return `/images/activities/${activityTypeSlug}-hero.jpg`;
   }
-  // Try to match from slug
-  const slugParts = activitySlug.toLowerCase().split("-");
-  for (const part of slugParts) {
-    if (localActivityImages.has(part)) {
-      return `/images/activities/${part}-hero.jpg`;
-    }
-  }
-  // Check compound matches
-  const compoundMatches = ["gorge-walking", "sea-kayaking", "mountain-biking", "trail-running", "wild-swimming", "zip-lining"];
+
+  // Check compound matches first (more specific)
+  const compoundMatches = [
+    "gorge-scrambling", "gorge-walking", "sea-kayaking", "mine-exploration",
+    "mountain-biking", "trail-running", "wild-swimming", "boat-tour",
+    "wildlife-boat-tour", "high-ropes", "zip-lining", "hiking-scrambling",
+  ];
   for (const match of compoundMatches) {
     if (activitySlug.includes(match)) {
       return `/images/activities/${match}-hero.jpg`;
     }
   }
+
+  // Try to match from slug parts, including aliases
+  const slugParts = activitySlug.toLowerCase().split("-");
+  for (const part of slugParts) {
+    if (localActivityImages.has(part)) {
+      return `/images/activities/${part}-hero.jpg`;
+    }
+    if (slugAliases[part] && localActivityImages.has(slugAliases[part])) {
+      return `/images/activities/${slugAliases[part]}-hero.jpg`;
+    }
+  }
+
+  // Activity type hero image from DB (e.g. Unsplash URL)
+  if (activityTypeHeroImage) {
+    return activityTypeHeroImage;
+  }
+
+  // Region hero image fallback
+  if (regionSlug) {
+    return `/images/regions/${regionSlug}-hero.jpg`;
+  }
+
   return "/images/activities/hiking-hero.jpg";
 }
 
@@ -178,8 +238,13 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
       });
     });
 
-  // Get hero image based on activity type
-  const heroImage = getActivityHeroImage(activity.slug, activityType?.slug);
+  // Get hero image based on activity type with full fallback chain
+  const heroImage = getActivityHeroImage(
+    activity.slug,
+    activityType?.slug,
+    activityType?.heroImage,
+    region?.slug,
+  );
 
   // Create breadcrumb items
   const breadcrumbItems = [

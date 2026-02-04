@@ -156,6 +156,11 @@ export default async function ItineraryDetailPage({ params }: Props) {
           itineraryName={itinerary.title} 
           accommodations={accommodations} 
           region={region}
+          durationDays={itinerary.durationDays}
+          difficulty={itinerary.difficulty}
+          bestSeason={itinerary.bestSeason}
+          priceEstimateFrom={itinerary.priceEstimateFrom}
+          priceEstimateTo={itinerary.priceEstimateTo}
         />
 
         {/* Enquire All Vendors CTA */}

@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { MarkdownRenderer } from "@/components/markdown-renderer";
 import { 
   ChevronRight, 
   MapPin, 
@@ -10,6 +9,7 @@ import {
   Heart
 } from "lucide-react";
 import { ItineraryView } from "@/components/itinerary/ItineraryView";
+import { ItineraryFactSheet } from "@/components/itinerary/ItineraryFactSheet";
 import { EnquireAllVendors } from "@/components/itinerary/EnquireAllVendors";
 import { ShareButton } from "@/components/ui/ShareButton";
 import { getItineraryWithStops, getAccommodation, getAllItinerarySlugs } from "@/lib/queries";
@@ -140,22 +140,13 @@ export default async function ItineraryDetailPage({ params }: Props) {
           </div>
         </div>
         
-        {/* Intro */}
+        {/* Trip Fact Sheet */}
         {itinerary.description && (
-           <div className="mb-6 text-gray-600">
-               <MarkdownRenderer content={itinerary.description} />
-           </div>
-        )}
-
-        {/* Best Time to Visit */}
-        {itinerary.bestSeason && (
-          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 mb-10 flex items-start gap-3">
-            <Calendar className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-            <div>
-              <p className="text-sm text-emerald-900">
-                <span className="font-bold">Best time for this trip:</span> {itinerary.bestSeason}
-              </p>
-            </div>
+          <div className="mb-8">
+            <ItineraryFactSheet 
+              description={itinerary.description} 
+              title={itinerary.title} 
+            />
           </div>
         )}
 

@@ -113,54 +113,43 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp }: TimelineDayPro
                         <div className="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
                             {/* Thumbnail + Content row */}
                             <div className="flex">
-                                {/* Thumbnail */}
-                                {type === 'activity' && stop.activity && (
-                                    <div className="hidden sm:block relative w-32 lg:w-40 shrink-0">
-                                        <div
-                                            className="absolute inset-0 bg-cover bg-center"
-                                            style={{
-                                                backgroundImage: `url('${getActivityHeroImage(
-                                                    stop.activity.slug,
-                                                    stop.activityType?.slug
-                                                )}')`
-                                            }}
-                                        />
-                                        {/* Type icon overlay */}
-                                        <div className="absolute bottom-2 left-2 p-1.5 bg-white/90 backdrop-blur-sm rounded-lg shadow-sm">
-                                            <Flag className="w-4 h-4 text-blue-600" />
+                                {/* Thumbnail — shown for every stop */}
+                                {(() => {
+                                    // Resolve image: use activity data if available, otherwise derive from stop title
+                                    const slug = stop.activity?.slug || title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+                                    const typeSlug = stop.activityType?.slug || null;
+                                    const heroImg = getActivityHeroImage(slug, typeSlug);
+
+                                    const iconMap = {
+                                        activity: { icon: <Flag className="w-4 h-4 text-blue-600" />, bg: "bg-blue-50", iconLg: <Flag className="w-8 h-8 text-blue-200" /> },
+                                        accommodation: { icon: <Bed className="w-4 h-4 text-green-600" />, bg: "bg-green-50", iconLg: <Bed className="w-8 h-8 text-green-200" /> },
+                                        food: { icon: <Utensils className="w-4 h-4 text-orange-600" />, bg: "bg-orange-50", iconLg: <Utensils className="w-8 h-8 text-orange-200" /> },
+                                        transport: { icon: <Car className="w-4 h-4 text-gray-600" />, bg: "bg-gray-100", iconLg: <Car className="w-8 h-8 text-gray-300" /> },
+                                    };
+                                    const stopIcon = iconMap[type as keyof typeof iconMap] || iconMap.activity;
+
+                                    // Activity-type stops always get a photo thumbnail
+                                    const usePhoto = type === "activity";
+
+                                    return (
+                                        <div className={`hidden sm:block relative w-32 lg:w-40 shrink-0 ${usePhoto ? "" : stopIcon.bg}`}>
+                                            {usePhoto ? (
+                                                <div
+                                                    className="absolute inset-0 bg-cover bg-center"
+                                                    style={{ backgroundImage: `url('${heroImg}')` }}
+                                                />
+                                            ) : (
+                                                <div className="absolute inset-0 flex items-center justify-center">
+                                                    {stopIcon.iconLg}
+                                                </div>
+                                            )}
+                                            {/* Type icon badge */}
+                                            <div className="absolute bottom-2 left-2 p-1.5 bg-white/90 backdrop-blur-sm rounded-lg shadow-sm">
+                                                {stopIcon.icon}
+                                            </div>
                                         </div>
-                                    </div>
-                                )}
-                                {type === 'accommodation' && (
-                                    <div className="hidden sm:block relative w-32 lg:w-40 shrink-0 bg-green-50">
-                                        <div className="absolute inset-0 flex items-center justify-center">
-                                            <Bed className="w-8 h-8 text-green-300" />
-                                        </div>
-                                        <div className="absolute bottom-2 left-2 p-1.5 bg-white/90 backdrop-blur-sm rounded-lg shadow-sm">
-                                            <Bed className="w-4 h-4 text-green-600" />
-                                        </div>
-                                    </div>
-                                )}
-                                {type === 'food' && (
-                                    <div className="hidden sm:block relative w-32 lg:w-40 shrink-0 bg-orange-50">
-                                        <div className="absolute inset-0 flex items-center justify-center">
-                                            <Utensils className="w-8 h-8 text-orange-300" />
-                                        </div>
-                                        <div className="absolute bottom-2 left-2 p-1.5 bg-white/90 backdrop-blur-sm rounded-lg shadow-sm">
-                                            <Utensils className="w-4 h-4 text-orange-600" />
-                                        </div>
-                                    </div>
-                                )}
-                                {type === 'transport' && (
-                                    <div className="hidden sm:block relative w-32 lg:w-40 shrink-0 bg-gray-50">
-                                        <div className="absolute inset-0 flex items-center justify-center">
-                                            <Car className="w-8 h-8 text-gray-300" />
-                                        </div>
-                                        <div className="absolute bottom-2 left-2 p-1.5 bg-white/90 backdrop-blur-sm rounded-lg shadow-sm">
-                                            <Car className="w-4 h-4 text-gray-600" />
-                                        </div>
-                                    </div>
-                                )}
+                                    );
+                                })()}
 
                                 {/* Content */}
                                 <div className="flex-1 p-5">

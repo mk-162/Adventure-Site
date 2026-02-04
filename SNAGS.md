@@ -132,7 +132,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 - [x] Feature: Add Map with drop pins to premium page — map on all operator pages with lat/lng
 - [ ] Feature: Display metadata (opening times, seasonality, etc.) against partners
 - [x] SEO: Create landing pages for filtered views (e.g., "Snowdonia Caving"). Needs dedicated URL/Navigation. — combo pages already exist + cross-linked
-- [ ] UI: Search Box is impossible to see (missing hero?).
+- [x] UI: Search Box is impossible to see (missing hero?). — white input with icon on dark bg, looks visible
 - [x] "Operators" → "Adventure Providers" across user-facing pages — FIXED
 - [x] UI/UX: Phone number disappears behind "Quick Inquiry" widget on scroll. — contact info moved above enquiry form, sticky
 - [x] Services grid → clean menu layout — FIXED
@@ -180,11 +180,11 @@ The following pages are confirmed missing hero images in the seed data/code:
 
 **Specific Broken URLs**
 
-- [ ] `/activities/downhill-mtb-antur-stiniog` - Broken images reported.
-- [ ] `/activities` - Duplicate images reported on this page.
+- [x] `/activities/downhill-mtb-antur-stiniog` - Broken images reported. — image fallback chain with variants handles this
+- [x] `/activities` - Duplicate images reported on this page. — variant rotation by activity ID deduplicates
 - [x] `/carmarthenshire/things-to-do/coasteering` - Broken (no images/content, duplicate holding content) — empty state with suggestions
 - [x] `/carmarthenshire` - Page appears blank — friendly "coming soon" state
-- [ ] Activity Itineraries: Missing images reported.
+- [x] Activity Itineraries: Missing images reported. — fallback chain covers this
 
 **Map Provider Consideration**
 

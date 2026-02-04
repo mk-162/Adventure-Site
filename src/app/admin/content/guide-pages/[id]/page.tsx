@@ -72,11 +72,11 @@ async function updateGuidePage(id: number, formData: FormData) {
   const contentStatus = formData.get("contentStatus") as "draft" | "review" | "published" | "archived";
   const priority = parseInt(formData.get("priority") as string) || 0;
   const targetKeyword = formData.get("targetKeyword") as string;
-  const searchVolume = parseInt(formData.get("searchVolume") as string) || null;
-  const currentRanking = parseInt(formData.get("currentRanking") as string) || null;
+  const searchVolume = parseInt(formData.get("searchVolume") as string) || undefined;
+  const currentRanking = parseInt(formData.get("currentRanking") as string) || undefined;
 
   // Commercial fields
-  const sponsorOperatorId = parseInt(formData.get("sponsorOperatorId") as string) || null;
+  const sponsorOperatorId = parseInt(formData.get("sponsorOperatorId") as string) || undefined;
   const sponsorDisplayName = formData.get("sponsorDisplayName") as string;
   const sponsorTagline = formData.get("sponsorTagline") as string;
   const sponsorCtaText = formData.get("sponsorCtaText") as string;
@@ -111,30 +111,30 @@ async function updateGuidePage(id: number, formData: FormData) {
       regionId,
       activityTypeId,
       slug,
-      urlPath: urlPath || null,
-      h1: h1 || null,
-      strapline: strapline || null,
-      metaTitle: metaTitle || null,
-      metaDescription: metaDescription || null,
-      heroImage: heroImage || null,
-      heroAlt: heroAlt || null,
-      introduction: introduction || null,
-      bestSeason: bestSeason || null,
-      difficultyRange: difficultyRange || null,
-      priceRange: priceRange || null,
-      dataFile: dataFile || null,
+      urlPath: urlPath || undefined,
+      h1: h1 || undefined,
+      strapline: strapline || undefined,
+      metaTitle: metaTitle || undefined,
+      metaDescription: metaDescription || undefined,
+      heroImage: heroImage || undefined,
+      heroAlt: heroAlt || undefined,
+      introduction: introduction || undefined,
+      bestSeason: bestSeason || undefined,
+      difficultyRange: difficultyRange || undefined,
+      priceRange: priceRange || undefined,
+      dataFile: dataFile || undefined,
       keywords,
       contentStatus,
       priority,
-      targetKeyword: targetKeyword || null,
+      targetKeyword: targetKeyword || undefined,
       searchVolume,
       currentRanking,
       sponsorOperatorId,
-      sponsorDisplayName: sponsorDisplayName || null,
-      sponsorTagline: sponsorTagline || null,
-      sponsorCtaText: sponsorCtaText || null,
-      sponsorCtaUrl: sponsorCtaUrl || null,
-      sponsorExpiresAt: sponsorExpiresAtRaw ? new Date(sponsorExpiresAtRaw) : null,
+      sponsorDisplayName: sponsorDisplayName || undefined,
+      sponsorTagline: sponsorTagline || undefined,
+      sponsorCtaText: sponsorCtaText || undefined,
+      sponsorCtaUrl: sponsorCtaUrl || undefined,
+      sponsorExpiresAt: sponsorExpiresAtRaw ? new Date(sponsorExpiresAtRaw) : undefined,
       featuredOperatorIds,
       updatedAt: new Date(),
     })

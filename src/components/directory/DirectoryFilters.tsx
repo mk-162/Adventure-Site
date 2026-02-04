@@ -9,10 +9,16 @@ interface Operator {
   name: string;
   slug: string;
   category: string | null;
-  claimStatus: string | null;
-  regions?: Array<{ id: number; slug: string; name: string }>;
-  activityTypes?: Array<{ id: number; slug: string; name: string }>;
-  googleRating?: string | null;
+  claimStatus: "stub" | "claimed" | "premium";
+  regions: string[] | null;
+  activityTypes: string[] | null;
+  googleRating: string | null;
+  tagline: string | null;
+  address: string | null;
+  reviewCount: number | null;
+  priceRange: string | null;
+  uniqueSellingPoint: string | null;
+  logoUrl: string | null;
 }
 
 interface Region {
@@ -61,7 +67,7 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
 
       // Region filter
       if (selectedRegion) {
-        const hasRegion = operator.regions?.some(r => r.slug === selectedRegion);
+        const hasRegion = operator.regions && operator.regions.includes(selectedRegion);
         if (!hasRegion) {
           return false;
         }
@@ -69,7 +75,7 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
 
       // Activity type filter
       if (selectedActivityType) {
-        const hasActivityType = operator.activityTypes?.some(at => at.slug === selectedActivityType);
+        const hasActivityType = operator.activityTypes && operator.activityTypes.includes(selectedActivityType);
         if (!hasActivityType) {
           return false;
         }

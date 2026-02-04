@@ -29,7 +29,7 @@ async function getFavouritesWithDetails(userId: number) {
         }
         case "itinerary": {
           const i = await db.query.itineraries.findFirst({ where: eq(itineraries.id, fav.favouriteId) });
-          if (i) item = { id: i.id, name: i.name, slug: `/itineraries/${i.slug}` };
+          if (i) item = { id: i.id, name: i.title, slug: `/itineraries/${i.slug}` };
           break;
         }
         case "activity": {

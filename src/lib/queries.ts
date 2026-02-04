@@ -968,12 +968,14 @@ export async function getItineraryWithStops(slug: string) {
     .select({
       stop: itineraryStops,
       activity: activities,
+      activityType: activityTypes,
       accomm: accommodation,
       location: locations,
       operator: operators,
     })
     .from(itineraryStops)
     .leftJoin(activities, eq(itineraryStops.activityId, activities.id))
+    .leftJoin(activityTypes, eq(activities.activityTypeId, activityTypes.id))
     .leftJoin(accommodation, eq(itineraryStops.accommodationId, accommodation.id))
     .leftJoin(locations, eq(itineraryStops.locationId, locations.id))
     .leftJoin(operators, eq(itineraryStops.operatorId, operators.id))
@@ -1004,6 +1006,7 @@ export async function getItineraryWithStops(slug: string) {
   const stops = stopsData.map(row => ({
     ...row.stop,
     activity: row.activity,
+    activityType: row.activityType,
     accommodation: row.accomm,
     location: row.location,
     operator: row.operator,

@@ -1,10 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import { ItineraryStop } from "@/types/itinerary";
 import { Flag, Bed, Utensils, Car, CloudRain, PiggyBank, MapPin, Home } from "lucide-react";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 import { accommodation } from "@/db/schema";
 import { calculateDistance, calculateDrivingTime } from "@/lib/travel-utils";
+import { getActivityHeroImage } from "@/lib/activity-images";
 
 type AccommodationData = typeof accommodation.$inferSelect;
 
@@ -108,10 +110,68 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp }: TimelineDayPro
                             </span>
                         )}
 
-                        <div className="bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-shadow">
-                            <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
-                                <div>
+                        <div className="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                            {/* Thumbnail + Content row */}
+                            <div className="flex">
+                                {/* Thumbnail */}
+                                {type === 'activity' && stop.activity && (
+                                    <div className="hidden sm:block relative w-32 lg:w-40 shrink-0">
+                                        <div
+                                            className="absolute inset-0 bg-cover bg-center"
+                                            style={{
+                                                backgroundImage: `url('${getActivityHeroImage(
+                                                    stop.activity.slug,
+                                                    stop.activityType?.slug
+                                                )}')`
+                                            }}
+                                        />
+                                        {/* Type icon overlay */}
+                                        <div className="absolute bottom-2 left-2 p-1.5 bg-white/90 backdrop-blur-sm rounded-lg shadow-sm">
+                                            <Flag className="w-4 h-4 text-blue-600" />
+                                        </div>
+                                    </div>
+                                )}
+                                {type === 'accommodation' && (
+                                    <div className="hidden sm:block relative w-32 lg:w-40 shrink-0 bg-green-50">
+                                        <div className="absolute inset-0 flex items-center justify-center">
+                                            <Bed className="w-8 h-8 text-green-300" />
+                                        </div>
+                                        <div className="absolute bottom-2 left-2 p-1.5 bg-white/90 backdrop-blur-sm rounded-lg shadow-sm">
+                                            <Bed className="w-4 h-4 text-green-600" />
+                                        </div>
+                                    </div>
+                                )}
+                                {type === 'food' && (
+                                    <div className="hidden sm:block relative w-32 lg:w-40 shrink-0 bg-orange-50">
+                                        <div className="absolute inset-0 flex items-center justify-center">
+                                            <Utensils className="w-8 h-8 text-orange-300" />
+                                        </div>
+                                        <div className="absolute bottom-2 left-2 p-1.5 bg-white/90 backdrop-blur-sm rounded-lg shadow-sm">
+                                            <Utensils className="w-4 h-4 text-orange-600" />
+                                        </div>
+                                    </div>
+                                )}
+                                {type === 'transport' && (
+                                    <div className="hidden sm:block relative w-32 lg:w-40 shrink-0 bg-gray-50">
+                                        <div className="absolute inset-0 flex items-center justify-center">
+                                            <Car className="w-8 h-8 text-gray-300" />
+                                        </div>
+                                        <div className="absolute bottom-2 left-2 p-1.5 bg-white/90 backdrop-blur-sm rounded-lg shadow-sm">
+                                            <Car className="w-4 h-4 text-gray-600" />
+                                        </div>
+                                    </div>
+                                )}
+
+                                {/* Content */}
+                                <div className="flex-1 p-5">
                                     <h4 className="font-bold text-[#1e3a4c] text-lg flex flex-wrap items-center gap-2">
+                                        {/* Mobile-only type icon */}
+                                        <span className="sm:hidden">
+                                            {type === 'activity' && <Flag className="w-4 h-4 text-blue-600 inline" />}
+                                            {type === 'accommodation' && <Bed className="w-4 h-4 text-green-600 inline" />}
+                                            {type === 'food' && <Utensils className="w-4 h-4 text-orange-600 inline" />}
+                                            {type === 'transport' && <Car className="w-4 h-4 text-gray-600 inline" />}
+                                        </span>
                                         {title}
                                         {stop.operator?.claimStatus && (
                                             <VerifiedBadge 
@@ -139,26 +199,19 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp }: TimelineDayPro
                                     <p className="text-gray-600 leading-relaxed text-sm">
                                         {description}
                                     </p>
-                                </div>
-                                <div className="shrink-0 self-start sm:self-auto hidden sm:block">
-                                    {/* Icon based on type */}
-                                    {type === 'activity' && <div className="p-2 bg-blue-50 text-blue-600 rounded-lg"><Flag className="w-6 h-6" /></div>}
-                                    {type === 'accommodation' && <div className="p-2 bg-green-50 text-green-600 rounded-lg"><Bed className="w-6 h-6" /></div>}
-                                    {type === 'food' && <div className="p-2 bg-orange-50 text-orange-600 rounded-lg"><Utensils className="w-6 h-6" /></div>}
-                                    {type === 'transport' && <div className="p-2 bg-gray-50 text-gray-600 rounded-lg"><Car className="w-6 h-6" /></div>}
-                                </div>
-                            </div>
 
-                            {/* Actions / Links */}
-                            <div className="mt-4 flex gap-3">
-                                {(stop.activityId || (mode === "wet" && stop.wetAltActivityId) || (mode === "budget" && stop.budgetAltActivityId)) && (
-                                    <button className="text-xs font-bold bg-[#1e3a4c] text-white px-3 py-1.5 rounded-lg hover:bg-[#1e3a4c]/90 transition-colors">
-                                        Book Now
-                                    </button>
-                                )}
-                                <button className="text-xs font-bold text-gray-600 bg-gray-100 px-3 py-1.5 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-1">
-                                    <MapPin className="w-3 h-3" /> Map
-                                </button>
+                                    {/* Actions / Links */}
+                                    <div className="mt-4 flex gap-3">
+                                        {(stop.activityId || (mode === "wet" && stop.wetAltActivityId) || (mode === "budget" && stop.budgetAltActivityId)) && (
+                                            <button className="text-xs font-bold bg-[#1e3a4c] text-white px-3 py-1.5 rounded-lg hover:bg-[#1e3a4c]/90 transition-colors">
+                                                Book Now
+                                            </button>
+                                        )}
+                                        <button className="text-xs font-bold text-gray-600 bg-gray-100 px-3 py-1.5 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-1">
+                                            <MapPin className="w-3 h-3" /> Map
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 

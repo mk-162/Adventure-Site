@@ -53,18 +53,7 @@ export default function AdminLayout({
   };
 
   return (
-    <>
-    {/* Hide the main site header & footer when admin layout is active */}
-    <style dangerouslySetInnerHTML={{ __html: `
-      body:has(.admin-layout) > header,
-      body:has(.admin-layout) > footer,
-      body:has(.admin-layout) > main > header,
-      body:has(.admin-layout) > main > footer,
-      body:has(.admin-layout) > main ~ footer {
-        display: none !important;
-      }
-    ` }} />
-    <div className="min-h-screen bg-gray-50 admin-layout">
+    <div className="min-h-screen bg-gray-50">
       {/* Mobile sidebar overlay */}
       {sidebarOpen && (
         <div
@@ -177,18 +166,12 @@ export default function AdminLayout({
 
           <div className="flex-1" />
 
-          <Link
-            href="/"
-            className="text-sm font-medium text-gray-500 hover:text-[#1e3a4c] transition-colors mr-4"
-          >
-            ← Back to site
-          </Link>
+          <span className="text-sm text-gray-500">Adventure Wales Admin</span>
         </header>
 
         {/* Page content */}
         <main className="p-4 lg:p-8">{children}</main>
       </div>
     </div>
-    </>
   );
 }

@@ -34,10 +34,11 @@ export default function CookiesPage() {
         {/* Quick Actions */}
         <div className="bg-[#1e3a4c]/5 rounded-2xl p-6 mb-12">
           <h2 className="font-bold text-[#1e3a4c] mb-4">Manage Your Preferences</h2>
-          <p className="text-gray-600 text-sm mb-4">
-            We only use essential cookies required for the site to function. You can manage cookies through your browser settings.
-          </p>
           <div className="flex flex-wrap gap-4">
+            <button className="px-6 py-3 bg-[#1e3a4c] text-white font-semibold rounded-xl hover:bg-[#2a5570] transition-colors flex items-center gap-2">
+              <Settings className="w-5 h-5" />
+              Cookie Settings
+            </button>
             <Link
               href="/privacy"
               className="px-6 py-3 bg-white text-[#1e3a4c] font-semibold rounded-xl border-2 border-[#1e3a4c] hover:bg-[#1e3a4c] hover:text-white transition-colors"
@@ -200,10 +201,13 @@ export default function CookiesPage() {
             </h2>
             
             <h3 className="text-xl font-bold text-[#1e3a4c] mt-6 mb-3">On Our Website</h3>
-            <p className="text-gray-600 mb-6">
-              We only use essential cookies. You can manage cookies through your browser settings 
-              using the links below.
+            <p className="text-gray-600 mb-4">
+              You can manage your cookie preferences at any time using our cookie settings tool. 
+              Click the "Cookie Settings" button below or in our website footer.
             </p>
+            <button className="px-6 py-3 bg-[#1e3a4c] text-white font-semibold rounded-xl hover:bg-[#2a5570] transition-colors mb-6">
+              Update Cookie Preferences
+            </button>
 
             <h3 className="text-xl font-bold text-[#1e3a4c] mt-6 mb-3">In Your Browser</h3>
             <p className="text-gray-600 mb-4">

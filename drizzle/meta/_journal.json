@@ -15,6 +15,13 @@
       "when": 1770217239424,
       "tag": "0001_flaky_power_man",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1770224397836,
+      "tag": "0002_wandering_cardiac",
+      "breakpoints": true
     }
   ]
 }

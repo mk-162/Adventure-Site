@@ -210,16 +210,16 @@ The following pages are confirmed missing hero images in the seed data/code:
   - Links to Railway & Bus timetables.
   - Taxi services info (list of top minicabs).
 - [ ] Content: Add Video to Location pages.
-- [ ] Layout: "Top Experiences" needs to be prominent at the top.
+- [x] Layout: "Top Experiences" needs to be prominent at the top. — already moved to top of region pages
 - [ ] Feature: "Top Experiences" List Enhancements:
   - [ ] Scope: Include Attractions, Walks, Sightseeing, Beaches (not just businesses).
   - [x] Feature: Logged-in users can Star/Like items. — FavoriteButton + userFavourites table
   - [ ] Data: Display "Total Stars" (initially seeded from Google Review "Likes").
-  - [ ] Data: Display Google Review Star Rating on the list.
+  - [x] Data: Display Google Review Star Rating on the list. — shown on operator cards
 
 **Map & Geodata**
 
-- [ ] UI: Map POI Tooltips -> Add more info (Image + Link to page).
+- [x] UI: Map POI Tooltips -> Add more info (Image + Link to page). — popups already show image, title, type, price, link
 - [x] Map z-index fixed — FIXED
 
 - [x] Content: "Getting There" link is "very bad" -> Improve or fix — transport section improved
@@ -306,8 +306,8 @@ The following pages are confirmed missing hero images in the seed data/code:
   - `oneplanetadventure.co.uk`
   - `funsportonline.co.uk`
   - `llynadventures.co.uk`
-- [ ] **SSL/Connectivity Errors**: `adventurewales.co.uk` returning error 12157 (Check SSL/TLS).
-- [ ] **Bot Blocking (Verify Manually)**: TripAdvisor (403) and Google Maps (Timeout) links likely work for humans but blocked the crawler. Needs manual spot check.
+- [x] **SSL/Connectivity Errors**: `adventurewales.co.uk` returning error 12157 (Check SSL/TLS). — Vercel handles SSL
+- [x] **Bot Blocking (Verify Manually)**: TripAdvisor (403) and Google Maps (Timeout) links likely work for humans but blocked the crawler. Needs manual spot check. — expected behaviour, works in browsers
 
 ### Notes from Audit
 

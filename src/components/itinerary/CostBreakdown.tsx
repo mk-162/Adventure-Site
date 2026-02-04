@@ -313,9 +313,9 @@ export function CostBreakdown({ stops, mode, itineraryName }: CostBreakdownProps
       {/* CTA */}
       <div className="px-6 pb-6 pt-2">
         <button className="w-full bg-[#f97316] hover:bg-[#f97316]/90 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-[#f97316]/30 transition-all active:scale-95">
-          Book Entire Trip
+          Save This Trip
         </button>
-        <p className="text-center text-xs text-gray-400 mt-2">No payment required today</p>
+        <p className="text-center text-xs text-gray-400 mt-2">Save your plan and book each part directly</p>
 
         {/* Enquire All Vendors CTA */}
         {uniqueOperators.length > 0 && itineraryName && (

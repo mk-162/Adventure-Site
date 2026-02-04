@@ -193,7 +193,7 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp }: TimelineDayPro
                                     <div className="mt-4 flex gap-3">
                                         {(stop.activityId || (mode === "wet" && stop.wetAltActivityId) || (mode === "budget" && stop.budgetAltActivityId)) && (
                                             <button className="text-xs font-bold bg-[#1e3a4c] text-white px-3 py-1.5 rounded-lg hover:bg-[#1e3a4c]/90 transition-colors">
-                                                Book Now
+                                                View Details
                                             </button>
                                         )}
                                         <button className="text-xs font-bold text-gray-600 bg-gray-100 px-3 py-1.5 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-1">

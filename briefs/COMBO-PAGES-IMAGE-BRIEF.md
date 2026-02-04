@@ -34,39 +34,66 @@ Example: `/snowdonia/best-hikes`
 
 ---
 
-## 2. Tier 1 — Do These First (10 Combos + 10 Best-Of Lists)
+## 2. Source of Truth — Where to Find What Pages Need Images
+
+**DO NOT work from a hardcoded list.** The pages are data-driven. Always read the live data to discover what exists and what needs images.
 
 ### Combo Pages
+**Master data:** `data/combo-pages/*.json`
 
-| # | File slug | Region | Activity | Hero image path |
-|---|----------|--------|----------|----------------|
-| 1 | `snowdonia--hiking` | Snowdonia | Hiking | `/images/combo/snowdonia-hiking-hero.jpg` |
-| 2 | `pembrokeshire--surfing` | Pembrokeshire | Surfing | `/images/combo/pembrokeshire-surfing-hero.jpg` |
-| 3 | `pembrokeshire--coasteering` | Pembrokeshire | Coasteering | `/images/combo/pembrokeshire-coasteering-hero.jpg` |
-| 4 | `snowdonia--climbing` | Snowdonia | Climbing | `/images/combo/snowdonia-climbing-hero.jpg` |
-| 5 | `gower--surfing` | Gower | Surfing | `/images/combo/gower-surfing-hero.jpg` |
-| 6 | `snowdonia--zip-lining` | Snowdonia | Zip Lining | `/images/combo/snowdonia-zip-lining-hero.jpg` |
-| 7 | `brecon-beacons--hiking` | Brecon Beacons | Hiking | `/images/combo/brecon-beacons-hiking-hero.jpg` |
-| 8 | `snowdonia--mountain-biking` | Snowdonia | Mountain Biking | `/images/combo/snowdonia-mountain-biking-hero.jpg` |
-| 9 | `pembrokeshire--kayaking` | Pembrokeshire | Kayaking | `/images/combo/pembrokeshire-kayaking-hero.jpg` |
-| 10 | `snowdonia--gorge-walking` | Snowdonia | Gorge Walking | `/images/combo/snowdonia-gorge-walking-hero.jpg` |
+Each file is named `{region}--{activity}.json`. To find all combo pages that need images:
+```bash
+ls data/combo-pages/*.json
+```
 
-### Best-Of Lists
+Each JSON file contains:
+- `regionSlug` + `activityTypeSlug` → determines image paths
+- `heroImage` → the hero image path this page expects (may not exist yet)
+- `spots[]` → array of spots, each with an `image` field → spot image paths
+- `gallery[]` → array of gallery images with `src` field
 
-| # | File slug | Hero image path |
-|---|----------|----------------|
-| 1 | `snowdonia--best-hikes` | `/images/best-lists/snowdonia-best-hikes-hero.jpg` |
-| 2 | `snowdonia--best-walks` | `/images/best-lists/snowdonia-best-walks-hero.jpg` |
-| 3 | `pembrokeshire--best-beaches` | `/images/best-lists/pembrokeshire-best-beaches-hero.jpg` |
-| 4 | `pembrokeshire--best-surf-spots` | `/images/best-lists/pembrokeshire-best-surf-spots-hero.jpg` |
-| 5 | `brecon-beacons--best-walks` | `/images/best-lists/brecon-beacons-best-walks-hero.jpg` |
-| 6 | `snowdonia--best-scrambles` | `/images/best-lists/snowdonia-best-scrambles-hero.jpg` |
-| 7 | `gower--best-beaches` | `/images/best-lists/gower-best-beaches-hero.jpg` |
-| 8 | `pembrokeshire--best-coasteering` | `/images/best-lists/pembrokeshire-best-coasteering-hero.jpg` |
-| 9 | `snowdonia--best-mountain-bike-trails` | `/images/best-lists/snowdonia-best-mountain-bike-trails-hero.jpg` |
-| 10 | `anglesey--best-beaches` | `/images/best-lists/anglesey-best-beaches-hero.jpg` |
+**To find which images are missing:**
+```bash
+# List all image paths referenced in combo page JSON files
+grep -roh '"\/images\/combo\/[^"]*"' data/combo-pages/ | sort -u
 
-**Estimated total for Tier 1: ~290 images** (10 combo pages × ~17 avg + 10 best-of lists × ~12 avg)
+# Check which ones don't exist yet
+grep -roh '"/images/combo/[^"]*"' data/combo-pages/ | tr -d '"' | while read img; do
+  [ ! -f "public${img}" ] && echo "MISSING: ${img}"
+done
+```
+
+### Best-Of List Pages
+**Master data:** `data/best-lists/*.json`
+
+Each file is named `{region}--best-{slug}.json`. Same pattern:
+```bash
+ls data/best-lists/*.json
+```
+
+Each JSON file contains:
+- `heroImage` → hero image path
+- `entries[]` → array of ranked entries, each with an `image` field
+
+### The Content Brief (for future pages not yet created)
+**Reference:** `docs/ACTIVITY-REGION-PAGES-BRIEF.md`
+
+This defines the full roadmap of Tier 1/2/3 combo pages and best-of lists. If a page is listed there but has no JSON file yet in `data/combo-pages/` or `data/best-lists/`, it doesn't need images yet — the content comes first, images follow.
+
+### Activity & Region Master Lists
+These define what regions and activity types exist on the site:
+- **Regions:** Check the database or `data/wales/regions/` for all region slugs
+- **Activity types:** Check the database or existing combo page JSON files for activity slugs
+
+### How to Determine What Needs Images Right Now
+```
+1. Read data/combo-pages/*.json → extract all image paths referenced
+2. Read data/best-lists/*.json → extract all image paths referenced
+3. Check which files exist in public/images/combo/ and public/images/best-lists/
+4. The delta = what you need to source
+```
+
+This approach scales. As new combo pages and best-of lists are added, this brief still works — just re-run the discovery.
 
 ---
 
@@ -182,20 +209,29 @@ Use these sources **in this order**. Exhaust higher tiers before falling to lowe
   - [Walking in Wales](https://www.flickr.com/groups/walkinginwales/)
 - **Attribution format:** "Photo by {Name} / Flickr / CC BY 2.0"
 
-**Flickr search terms per combo (use these exactly):**
+**How to build Flickr search terms for any combo page:**
 
-| Combo | Search Terms |
-|-------|-------------|
-| Hiking Snowdonia | `snowdon hiking`, `tryfan`, `crib goch`, `cadair idris`, `cwm idwal`, `pen yr ole wen` |
-| Surfing Pembrokeshire | `freshwater west surfing`, `newgale surf`, `manorbier beach`, `whitesands bay` |
-| Coasteering Pembrokeshire | `coasteering pembrokeshire`, `st davids coasteering`, `cliff jumping wales`, `abereiddy` |
-| Climbing Snowdonia | `tryfan climbing`, `idwal slabs`, `snowdonia rock climbing`, `llanberis pass climbing` |
-| Surfing Gower | `llangennith surfing`, `rhossili bay surf`, `gower surf`, `langland bay` |
-| Zip Lining Snowdonia | `zip world`, `velocity zip line`, `penrhyn quarry zip` |
-| Hiking Brecon Beacons | `pen y fan`, `brecon beacons walking`, `fan y big`, `sugar loaf mountain wales` |
-| MTB Snowdonia | `coed y brenin MTB`, `antur stiniog`, `mountain biking snowdonia` |
-| Kayaking Pembrokeshire | `sea kayaking pembrokeshire`, `ramsey island kayak`, `blue lagoon abereiddy` |
-| Gorge Walking Snowdonia | `gorge walking wales`, `canyoning snowdonia`, `ogwen valley gorge` |
+1. Read the combo page JSON: `cat data/combo-pages/{region}--{activity}.json`
+2. Extract spot names: `jq -r '.spots[].name' data/combo-pages/{region}--{activity}.json`
+3. Search for: `"{spot name}"`, `"{spot name} {activity}"`, `"{region} {activity}"`
+
+**Pattern:** The spot names in the JSON ARE your search terms. They're real Welsh place names — Flickr has photos tagged with them.
+
+**Example for any combo page:**
+```bash
+# Get search terms from the data
+REGION="snowdonia"
+ACTIVITY="hiking"
+echo "${REGION} ${ACTIVITY}"
+jq -r '.spots[].name' "data/combo-pages/${REGION}--${ACTIVITY}.json"
+# Output: Snowdon via Llanberis Path, Crib Goch, Tryfan North Ridge, etc.
+# → Search Flickr for: "llanberis path", "crib goch", "tryfan", etc.
+```
+
+**Also try these generic patterns per search:**
+- `"{activity} {region}"` — e.g. "hiking snowdonia"
+- `"{activity} wales"` — broader fallback
+- `"{spot name}"` — the specific location, no activity keyword needed
 
 #### Unsplash
 - **URL:** https://unsplash.com
@@ -492,54 +528,40 @@ Email operators. Template:
 
 ---
 
-## 11. Per-Spot Image Guidance (Tier 1 Combos)
+## 11. How to Determine What Each Spot Image Should Show
 
-### 1. Snowdonia — Hiking
-| Spot | What to shoot/find |
-|------|--------------------|
-| Snowdon Llanberis Path | Hikers on wide path with summit visible ahead |
-| Crib Goch | Knife-edge ridge with exposure visible, scrambler in frame |
-| Tryfan North Ridge | Rocky scramble, distinctive jagged profile of Tryfan |
-| Cadair Idris | Llyn Cau crater lake or summit ridge |
-| Cwm Idwal | Devil's Kitchen, ice-scratched slabs, cwm lake |
-| Y Garn | Ridge walk, views back to Ogwen Valley |
-| Snowdon Horseshoe | Wide panorama of the horseshoe ridge from Crib Goch to Lliwedd |
-| Nantlle Ridge | Quiet ridge with views of Snowdon |
+**Don't guess.** Read the combo page JSON file for the page you're working on. Each spot in the `spots[]` array tells you exactly what you need:
 
-### 2. Pembrokeshire — Surfing
-| Spot | What to shoot/find |
-|------|--------------------|
-| Freshwater West | Big open beach with waves, surfers in water |
-| Newgale | Long beach with pebble bank, surf school vibes |
-| Manorbier | Castle in background, surfers in foreground |
-| Whitesands Bay | St Davids headland visible, clean waves |
-| Broadhaven South | Dramatic cliffs framing the surf |
+```bash
+# Example: read all spots for snowdonia--hiking
+cat data/combo-pages/snowdonia--hiking.json | jq '.spots[] | {name, slug, description, image, imageAlt}'
+```
 
-### 3. Pembrokeshire — Coasteering
-| Spot | What to shoot/find |
-|------|--------------------|
-| Abereiddy Blue Lagoon | Flooded quarry, cliff jumpers |
-| St Davids Head | Group on rocks, Atlantic backdrop |
-| Stackpole | Dramatic sea arches, swimmers |
-| Porthgain | Harbour area, cliff traversing |
+Each spot object contains:
+- `name` — the location name (e.g. "Crib Goch", "Freshwater West")
+- `slug` — used in the image filename
+- `description` — tells you what's distinctive about the place → use this to inform your image search
+- `image` — the expected image path
+- `imageAlt` — describes what the ideal image should show
 
-### 4. Snowdonia — Climbing
-| Spot | What to shoot/find |
-|------|--------------------|
-| Tryfan | Climber on distinctive rock, valley below |
-| Idwal Slabs | Trad climbing, wide angle showing the full slab |
-| Llanberis Pass | Multi-pitch on the pass walls |
-| Clogwyn Du'r Arddu (Cloggy) | Big cliff, exposed climbing |
+**Use `imageAlt` as your search brief.** If it says "Hikers on the Llanberis Path with Snowdon summit ahead", that's exactly what you're looking for.
 
-### 5. Gower — Surfing
-| Spot | What to shoot/find |
-|------|--------------------|
-| Llangennith | Classic surf beach, Worm's Head in background |
-| Rhossili Bay | Aerial/high angle showing full sweep of beach |
-| Langland Bay | Smaller bay, surfers, accessible feel |
-| Caswell Bay | Family-friendly surf scene |
+**Use `name` as your primary search term.** The spot names are real Welsh places — search for them directly on Flickr, Unsplash, Wikimedia, etc.
 
-### 6–10: Use the same approach — find the 5-10 key spots listed in the content brief (`docs/ACTIVITY-REGION-PAGES-BRIEF.md`) and source an image that unmistakably shows THAT specific place.
+### General Guidance by Activity Type
+
+| Activity | What makes a great spot image |
+|----------|------------------------------|
+| Hiking | Hikers visible on path/ridge, the specific landscape feature (lake, summit, ridge) identifiable |
+| Surfing | Surfers in water, the specific beach recognisable from its shape/cliffs/landmarks |
+| Coasteering | Cliff jumping or traversing, group in wetsuits, dramatic rock/sea |
+| Climbing | Climber on rock face, ropes visible, distinctive rock formation identifiable |
+| Mountain Biking | Rider on trail, terrain visible (forest, quarry, mountain), dust/mud spray |
+| Kayaking | Paddler in scenic water, coastal/river features visible |
+| Gorge Walking | Group in wetsuits in gorge, waterfall features, wet rock |
+| Zip Lining | Person mid-flight, quarry/landscape backdrop, speed/height conveyed |
+| Wild Swimming | Swimmer in natural water body (lake, sea, waterfall pool), scenic backdrop |
+| Caving | Helmet lights, underground features, dramatic formations |
 
 ---
 
@@ -585,31 +607,54 @@ For each combo, deliver:
 
 ## 14. Priority Order
 
+**Always work from the live data files.** Priority is:
+
 ```
-Phase 1: Tier 1 combo page heroes (10 images) ← START HERE
-Phase 2: Tier 1 combo page spot images (~70 images)
-Phase 3: Tier 1 combo page gallery images (~80 images)
-Phase 4: Tier 1 best-of list heroes (10 images)
-Phase 5: Tier 1 best-of list entry images (~120 images)
-Phase 6: Tier 2 combo pages + best-of lists
-Phase 7: Tier 3 pages
+1. Hero images for all existing combo pages (data/combo-pages/*.json)
+2. Spot images for all existing combo pages
+3. Gallery images for all existing combo pages
+4. Hero images for all existing best-of lists (data/best-lists/*.json)
+5. Entry images for all existing best-of lists
 ```
 
-Get the 10 hero images first. They're the most visible and set the tone for everything else. Then work through spots and galleries systematically, one combo at a time.
+**Within each phase**, prioritise pages that already have content JSON but no images. Use this to find them:
+
+```bash
+# Find combo pages with no hero image yet
+for f in data/combo-pages/*.json; do
+  hero=$(jq -r '.heroImage // empty' "$f")
+  [ -n "$hero" ] && [ ! -f "public${hero}" ] && echo "NEEDS HERO: $f → $hero"
+done
+```
+
+Heroes are the most visible — they set the tone. Get those first, then fill in spots and galleries per page.
 
 ---
 
 ## 15. What Already Exists (Don't Duplicate)
 
-The repo already has:
-- `public/images/regions/` — 11 region hero images (Unsplash sourced)
-- `public/images/activities/` — ~23 activity hero images (Openverse + Unsplash)
-- `public/images/wales/` — 110 Welsh landscape photos
-- `public/images/journal/` — 128 journal post heroes
+Before sourcing anything, check what's already in the repo:
 
-**You can reuse/adapt existing images** if they fit a combo page's needs (e.g. a Snowdonia region hero could work as a gallery image for a Snowdonia combo page). But combo page heroes and spot images should ideally be unique — don't just copy the generic region hero.
+```bash
+# See all existing image folders and counts
+for dir in public/images/*/; do echo "$(find "$dir" -type f | wc -l) images in $dir"; done
 
-Check `public/images/attributions.json` before sourcing — we may already have a usable image of a specific location.
+# Check attributions for images of a specific location
+grep -i "snowdon" public/images/attributions.json
+
+# Find existing Welsh landscape images that might work
+ls public/images/wales/
+```
+
+Key existing folders:
+- `public/images/regions/` — region hero images
+- `public/images/activities/` — activity hero images
+- `public/images/wales/` — general Welsh landscape photos
+- `public/images/journal/` — journal post heroes
+
+**You can reuse/adapt existing images** if they fit a combo page's needs (e.g. a Snowdonia region hero could work as a gallery image for a Snowdonia combo page). But combo page heroes and spot images should ideally be unique — don't just copy a generic hero.
+
+Always check `public/images/attributions.json` before sourcing — we may already have a usable image of that specific location.
 
 ---
 

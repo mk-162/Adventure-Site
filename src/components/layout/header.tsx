@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/itineraries", label: "Itineraries" },
   { href: "/events", label: "Events" },
   { href: "/directory", label: "Directory" },
+  { href: "/journal", label: "Journal" },
   { href: "/guides", label: "Guides" },
   { href: "/answers", label: "Answers" },
 ];

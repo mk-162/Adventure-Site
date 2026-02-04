@@ -18,6 +18,7 @@ import {
   itineraryTags,
   posts,
   postTags,
+  itineraryStops,
 } from "@/db/schema";
 import { eq, and, ilike, desc, asc, sql } from "drizzle-orm";
 
@@ -940,4 +941,65 @@ export async function getPostsForSidebar(options?: {
     .where(and(...conditions))
     .orderBy(desc(posts.publishedAt))
     .limit(options?.limit || 5);
+}
+
+// =====================
+// ITINERARY STOPS QUERIES
+// =====================
+
+export async function getItineraryWithStops(slug: string) {
+  const itineraryResult = await getItineraryBySlug(slug);
+  if (!itineraryResult) return null;
+
+  const stopsData = await db
+    .select({
+      stop: itineraryStops,
+      activity: activities,
+      accomm: accommodation,
+      location: locations,
+      operator: operators,
+    })
+    .from(itineraryStops)
+    .leftJoin(activities, eq(itineraryStops.activityId, activities.id))
+    .leftJoin(accommodation, eq(itineraryStops.accommodationId, accommodation.id))
+    .leftJoin(locations, eq(itineraryStops.locationId, locations.id))
+    .leftJoin(operators, eq(itineraryStops.operatorId, operators.id))
+    .where(eq(itineraryStops.itineraryId, itineraryResult.itinerary.id))
+    .orderBy(asc(itineraryStops.dayNumber), asc(itineraryStops.orderIndex));
+
+  // Fetch wet/budget alt activities separately
+  const wetAltIds = stopsData
+    .map(s => s.stop.wetAltActivityId)
+    .filter((id): id is number => id !== null);
+  const budgetAltIds = stopsData
+    .map(s => s.stop.budgetAltActivityId)
+    .filter((id): id is number => id !== null);
+
+  const allAltIds = [...new Set([...wetAltIds, ...budgetAltIds])];
+  let altActivitiesMap: Record<number, typeof activities.$inferSelect> = {};
+
+  if (allAltIds.length > 0) {
+    const altResults = await db
+      .select()
+      .from(activities)
+      .where(sql`${activities.id} IN (${sql.join(allAltIds.map(id => sql`${id}`), sql`, `)})`);
+    for (const a of altResults) {
+      altActivitiesMap[a.id] = a;
+    }
+  }
+
+  const stops = stopsData.map(row => ({
+    ...row.stop,
+    activity: row.activity,
+    accommodation: row.accomm,
+    location: row.location,
+    operator: row.operator,
+    wetAltActivity: row.stop.wetAltActivityId ? altActivitiesMap[row.stop.wetAltActivityId] || null : null,
+    budgetAltActivity: row.stop.budgetAltActivityId ? altActivitiesMap[row.stop.budgetAltActivityId] || null : null,
+  }));
+
+  return {
+    ...itineraryResult,
+    stops,
+  };
 }

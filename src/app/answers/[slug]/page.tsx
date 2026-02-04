@@ -192,7 +192,8 @@ interface Props {
 }
 
 export default async function AnswerPage({ params }: Props) {
-  const { slug } = await params;
+  const { slug: rawSlug } = await params;
+  const slug = rawSlug.toLowerCase();
   const data = getAnswer(slug);
 
   if (!data) {

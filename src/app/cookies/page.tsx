@@ -23,7 +23,7 @@ export default function CookiesPage() {
             </h1>
           </div>
           <p className="text-gray-600 text-lg">
-            Last updated: January 2024
+            Last updated: February 2026
           </p>
           <p className="text-gray-600 mt-4">
             This Cookie Policy explains how Adventure Wales uses cookies and similar technologies 

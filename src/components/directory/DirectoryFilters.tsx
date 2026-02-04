@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { OperatorCard } from '@/components/cards/operator-card';
+import { AdvertiseWidget } from '@/components/commercial/AdvertiseWidget';
 import { Star, Award } from 'lucide-react';
 
 interface Operator {
@@ -246,8 +247,15 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
 
           {regularOperators.length > 0 ? (
             <div className="space-y-4">
-              {regularOperators.map((operator) => (
-                <OperatorCard key={operator.id} operator={operator} />
+              {regularOperators.map((operator, index) => (
+                <div key={operator.id}>
+                  <OperatorCard operator={operator} />
+                  {index === 5 && regularOperators.length > 6 && (
+                    <div className="mt-4">
+                      <AdvertiseWidget variant="banner" context="the Adventure Wales Directory" />
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           ) : (

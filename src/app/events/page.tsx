@@ -22,9 +22,12 @@ export default async function EventsPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
             Races & Events
           </h1>
-          <p className="text-white/80">
-            Trail runs, triathlons, MTB races, and adventure festivals across Wales. With honest difficulty info so you know what you're signing up for.
+          <p className="text-white/80 mb-3">
+            Trail runs, triathlons, MTB races, and adventure festivals across Wales. With honest difficulty info so you know what you&apos;re signing up for.
           </p>
+          <a href="/calendar" className="text-[#f97316] font-semibold text-sm hover:underline">
+            View Calendar →
+          </a>
 
           {/* Event image strip */}
           <div className="flex gap-3 mt-6 overflow-x-auto pb-2 scrollbar-hide">

@@ -9,6 +9,7 @@ import dynamic from "next/dynamic";
 import type { MapMarker } from "@/components/ui/MapView";
 import { ActivityLocationMap } from "@/components/maps/ActivityLocationMap";
 import { ClaimListingBanner } from "@/components/operators/ClaimListingBanner";
+import { AdvertiseWidget } from "@/components/commercial/AdvertiseWidget";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import { 
   MapPin, Clock, Calendar, Users, Star, 
@@ -477,6 +478,11 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                 />
               </div>
             )}
+
+            {/* Advertise Widget */}
+            <div className="mt-4">
+              <AdvertiseWidget context={region?.name} />
+            </div>
           </div>
         </div>
 

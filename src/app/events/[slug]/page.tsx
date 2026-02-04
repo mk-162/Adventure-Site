@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getEventBySlug, getEvents, getAllEventSlugs } from "@/lib/queries";
+import { getEventBySlug, getEvents, getAllEventSlugs, getAccommodationByRegion, getActivitiesByRegion } from "@/lib/queries";
 import { 
   MapPin, Calendar, Clock, Users, ExternalLink, 
   ChevronRight, Ticket, Trophy, Mountain, Navigation
@@ -44,8 +44,12 @@ export default async function EventPage({ params }: Props) {
 
   const { event, region } = data;
 
-  // Get related events
-  const relatedEvents = await getEvents({ limit: 4 });
+  // Get related events + nearby accommodation/activities
+  const [relatedEvents, nearbyAccommodation, nearbyActivities] = await Promise.all([
+    getEvents({ limit: 4 }),
+    region ? getAccommodationByRegion(region.slug, 3) : Promise.resolve([]),
+    region ? getActivitiesByRegion(region.slug, 3) : Promise.resolve([]),
+  ]);
 
   // Determine event category icon
   const getCategoryIcon = (type: string | null) => {
@@ -374,6 +378,73 @@ export default async function EventPage({ params }: Props) {
                     </div>
                   )}
                 </div>
+              </div>
+
+              {/* Where to Stay */}
+              {nearbyAccommodation.length > 0 && (
+                <div className="bg-white rounded-xl p-6 shadow-sm">
+                  <h3 className="font-bold text-[#1e3a4c] mb-4">Where to Stay</h3>
+                  <div className="space-y-3">
+                    {nearbyAccommodation.map(({ accommodation: acc }) => (
+                      <Link
+                        key={acc.id}
+                        href={`/stay/${acc.slug}`}
+                        className="flex items-center gap-3 p-2 -mx-2 rounded-lg hover:bg-gray-50 transition-colors"
+                      >
+                        <div className="w-10 h-10 bg-[#1e3a4c]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <MapPin className="h-4 w-4 text-[#1e3a4c]" />
+                        </div>
+                        <div className="min-w-0">
+                          <p className="font-medium text-sm text-[#1e3a4c] truncate">{acc.name}</p>
+                          <p className="text-xs text-gray-500 truncate">{acc.type || "Accommodation"}</p>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                  {region && (
+                    <Link href={`/${region.slug}/stay`} className="block text-center text-sm text-[#f97316] font-medium hover:underline mt-3 pt-3 border-t">
+                      See all accommodation →
+                    </Link>
+                  )}
+                </div>
+              )}
+
+              {/* Things to Do */}
+              {nearbyActivities.length > 0 && (
+                <div className="bg-white rounded-xl p-6 shadow-sm">
+                  <h3 className="font-bold text-[#1e3a4c] mb-4">While You&apos;re There</h3>
+                  <div className="space-y-3">
+                    {nearbyActivities.map(({ activity: act, activityType }) => (
+                      <Link
+                        key={act.id}
+                        href={`/activities/${act.slug}`}
+                        className="flex items-center gap-3 p-2 -mx-2 rounded-lg hover:bg-gray-50 transition-colors"
+                      >
+                        <div className="w-10 h-10 bg-[#f97316]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Mountain className="h-4 w-4 text-[#f97316]" />
+                        </div>
+                        <div className="min-w-0">
+                          <p className="font-medium text-sm text-[#1e3a4c] truncate">{act.name}</p>
+                          <p className="text-xs text-gray-500 truncate">{activityType?.name || "Activity"}</p>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                  {region && (
+                    <Link href={`/${region.slug}/things-to-do`} className="block text-center text-sm text-[#f97316] font-medium hover:underline mt-3 pt-3 border-t">
+                      More things to do →
+                    </Link>
+                  )}
+                </div>
+              )}
+
+              {/* Advertise */}
+              <div className="bg-gradient-to-br from-[#f97316]/5 to-[#f97316]/10 rounded-xl p-6 shadow-sm border border-[#f97316]/20">
+                <h3 className="font-bold text-[#1e3a4c] mb-2">Promote Your Business</h3>
+                <p className="text-sm text-gray-600 mb-3">Reach thousands of adventure seekers visiting this page.</p>
+                <Link href="/advertise" className="inline-flex items-center gap-1 text-[#f97316] font-bold text-sm hover:underline">
+                  Advertise here →
+                </Link>
               </div>
 
               {/* Add Your Event CTA */}

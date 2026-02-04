@@ -23,11 +23,13 @@ export default async function ActivitiesPage() {
           </div>
           
           <h1 className="text-3xl lg:text-4xl font-bold text-[#1e3a4c] mb-3">
-            What Can You Do in Wales
+            Single Activities & Experiences
           </h1>
-          <p className="text-gray-600 max-w-2xl">
-            78 activities with honest suitability info. Filter by region, type, difficulty, and budget
-            to find what actually fits your group.
+          <p className="text-gray-600 max-w-2xl mb-4">
+            Individual adventures you can book as standalone experiences — from coasteering and kayaking to mountain biking and gorge walking. Filter by region, type, difficulty, and budget.
+          </p>
+          <p className="text-sm text-gray-500">
+            Looking for multi-day trips? Check out our <Link href="/itineraries" className="text-[#f97316] font-semibold hover:underline">road trip itineraries</Link> instead.
           </p>
         </div>
 

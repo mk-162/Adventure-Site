@@ -1,5 +1,5 @@
 interface JsonLdProps {
-  data: Record<string, any>;
+  data: Record<string, any> | null;
 }
 
 /**
@@ -7,6 +7,7 @@ interface JsonLdProps {
  * Renders schema.org JSON-LD markup in a script tag
  */
 export function JsonLd({ data }: JsonLdProps) {
+  if (!data) return null;
   return (
     <script
       type="application/ld+json"

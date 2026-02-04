@@ -160,7 +160,7 @@ def is_blocked_url(url: str) -> bool:
     return any(b in url for b in BLOCKED_DOMAINS)
 
 
-def try_openverse(query: str) -> dict | None:
+def try_openverse(query: str, retry: int = 2) -> dict | None:
     """Search Openverse and try to download. Returns image data or None."""
     try:
         r = requests.get(OPENVERSE_API, params={
@@ -169,10 +169,13 @@ def try_openverse(query: str) -> dict | None:
             "page_size": 15,
             "aspect_ratio": "wide",
         }, headers=OPENVERSE_HEADERS, timeout=10)
+        if r.status_code == 403 and retry > 0:
+            time.sleep(5)
+            return try_openverse(query, retry - 1)
         r.raise_for_status()
         results = r.json().get("results", [])
     except Exception as e:
-        print(f"    [OV search error] {e}")
+        print(f"    [OV error] {e}")
         return None
 
     # Try each result until we find one that downloads quickly
@@ -340,14 +343,14 @@ def main():
 
         query = build_query(art)
 
-        # Try Openverse first
-        result = try_openverse(query)
-        source_label = "OV"
+        # Try Unsplash first (faster, more reliable)
+        result = try_unsplash(query)
+        source_label = "US"
 
-        # Fall back to Unsplash
+        # Fall back to Openverse
         if not result:
-            result = try_unsplash(query)
-            source_label = "US"
+            result = try_openverse(query)
+            source_label = "OV"
 
         if not result:
             print(f"    [SKIP] No results: {query}")
@@ -413,7 +416,7 @@ def main():
             print(f"    [CHECKPOINT] {downloaded} done (OV:{ov_count} US:{us_count})")
             sys.stdout.flush()
 
-        time.sleep(0.5)  # Gentle on APIs
+        time.sleep(1.5)  # Respect API rate limits
 
     save_attributions(attributions)
 

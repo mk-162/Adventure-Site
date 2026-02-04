@@ -6,6 +6,8 @@ import { TimelineDay } from "./TimelineDay";
 import { CostBreakdown } from "./CostBreakdown";
 import { BasecampPicker } from "./BasecampPicker";
 import { TripNotes } from "./TripNotes";
+import { ThingsToBook } from "./ThingsToBook";
+import { useLocalStorageSet } from "./useItineraryLocalState";
 import { ItineraryStop } from "@/types/itinerary";
 import { CloudRain, PiggyBank, Star, Home, MapPin, Clock, Mountain, Sun, PoundSterling, Map } from "lucide-react";
 import { accommodation, regions } from "@/db/schema";
@@ -20,6 +22,8 @@ interface ItineraryViewProps {
   stops: ItineraryStop[];
   accommodations?: AccommodationData[];
   itineraryName?: string;
+  itinerarySlug?: string;
+  itineraryId?: number;
   region?: RegionData | null;
   durationDays?: number | null;
   difficulty?: string | null;
@@ -28,10 +32,13 @@ interface ItineraryViewProps {
   priceEstimateTo?: string | null;
 }
 
-export function ItineraryView({ stops, accommodations = [], itineraryName, region, durationDays, difficulty, bestSeason, priceEstimateFrom, priceEstimateTo }: ItineraryViewProps) {
+export function ItineraryView({ stops, accommodations = [], itineraryName, itinerarySlug, itineraryId, region, durationDays, difficulty, bestSeason, priceEstimateFrom, priceEstimateTo }: ItineraryViewProps) {
   const [mode, setMode] = useState<"standard" | "wet" | "budget">("standard");
   const [basecamp, setBasecamp] = useState<AccommodationData | null>(null);
   const [showBasecampPicker, setShowBasecampPicker] = useState(false);
+
+  // Skipped stops state (persisted in localStorage)
+  const skippedStops = useLocalStorageSet(`aw-skipped-${itinerarySlug || "default"}`);
 
   const days = Array.from(new Set(stops.map(s => s.dayNumber))).sort((a,b) => a-b);
   const stopsByDay = days.map(day => ({
@@ -146,7 +153,7 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, regio
                </p>
              )}
              {stopsByDay.map(day => (
-                <TimelineDay key={day.dayNumber} dayNumber={day.dayNumber} stops={day.stops} mode={mode} basecamp={basecamp} />
+                <TimelineDay key={day.dayNumber} dayNumber={day.dayNumber} stops={day.stops} mode={mode} basecamp={basecamp} skippedStops={skippedStops} />
              ))}
         </section>
 
@@ -251,7 +258,10 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, regio
          {region?.slug && (
             <ClimateChart regionSlug={region.slug} compact />
          )}
-         <CostBreakdown stops={stops} mode={mode} itineraryName={itineraryName} />
+         <CostBreakdown stops={stops} mode={mode} itineraryName={itineraryName} itineraryId={itineraryId} />
+         {itinerarySlug && (
+           <ThingsToBook stops={stops} itinerarySlug={itinerarySlug} mode={mode} />
+         )}
          {itineraryName && (
            <TripNotes itinerarySlug={itineraryName.toLowerCase().replace(/[^a-z0-9]+/g, "-")} />
          )}

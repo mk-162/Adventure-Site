@@ -54,3 +54,150 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
 }
+
+/* ===== Print Styles for Itinerary PDF ===== */
+@media print {
+  /* Reset page */
+  @page {
+    size: A4;
+    margin: 1.5cm 2cm;
+  }
+
+  body {
+    font-size: 11pt;
+    color: #000 !important;
+    background: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Hide everything non-essential */
+  nav,
+  footer,
+  .print\\:hidden,
+  [data-print-hide] {
+    display: none !important;
+  }
+
+  /* Show print-only elements */
+  .print\\:block {
+    display: block !important;
+  }
+
+  /* Sidebar, map, weather, interactive controls */
+  aside,
+  .leaflet-container,
+  [class*="ItineraryMap"],
+  [class*="WeatherWidget"],
+  [class*="ClimateChart"],
+  [class*="BasecampPicker"],
+  [class*="TripNotes"],
+  button,
+  [role="dialog"] {
+    display: none !important;
+  }
+
+  /* But keep the print button visible conceptually — it triggers print, no need to show */
+
+  /* Allow the cost breakdown to display in print (we re-show it in a print-friendly way) */
+  [data-print-show] {
+    display: block !important;
+  }
+
+  /* Full width the main content (remove grid) */
+  .grid {
+    display: block !important;
+  }
+
+  .lg\\:col-span-8,
+  .lg\\:col-span-4 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Remove shadows, rounded corners for cleaner print */
+  .shadow-lg,
+  .shadow-md,
+  .shadow-sm,
+  .shadow-2xl,
+  .shadow-xl {
+    box-shadow: none !important;
+  }
+
+  .rounded-2xl,
+  .rounded-xl,
+  .rounded-lg {
+    border-radius: 4px !important;
+  }
+
+  /* Hero image: constrain height for print */
+  .group.h-\\[300px\\],
+  .group.h-\\[400px\\],
+  .group.h-\\[500px\\],
+  [class*="h-[300px]"],
+  [class*="h-[400px]"],
+  [class*="h-[500px]"] {
+    height: 200px !important;
+    max-height: 200px !important;
+    page-break-after: avoid;
+  }
+
+  /* Timeline day cards: avoid page breaks within */
+  [class*="TimelineDay"],
+  section {
+    page-break-inside: avoid;
+  }
+
+  /* Remove sticky positioning */
+  .sticky {
+    position: static !important;
+  }
+
+  /* Remove fixed mobile bottom bar */
+  .fixed {
+    display: none !important;
+  }
+
+  /* Remove gradients / dark backgrounds for readability */
+  .bg-gradient-to-t,
+  .bg-gradient-to-r,
+  .bg-gradient-to-br {
+    background: rgba(30, 58, 76, 0.8) !important;
+  }
+
+  /* Ensure text is visible */
+  h1, h2, h3, h4 {
+    color: #1e3a4c !important;
+    page-break-after: avoid;
+  }
+
+  p, span, div {
+    orphans: 2;
+    widows: 2;
+  }
+
+  /* Links: show URL after link text */
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #666;
+  }
+
+  /* But not for internal/anchor links */
+  a[href^="#"]::after,
+  a[href^="/"]::after,
+  a[href^="javascript"]::after {
+    content: "" !important;
+  }
+
+  /* Print footer branding */
+  .print-footer {
+    display: block !important;
+    text-align: center;
+    padding-top: 1em;
+    border-top: 1px solid #ccc;
+    font-size: 9pt;
+    color: #666;
+    page-break-before: avoid;
+  }
+}

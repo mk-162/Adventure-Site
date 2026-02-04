@@ -153,7 +153,9 @@ export default async function ItineraryDetailPage({ params }: Props) {
         {/* Main View Component */}
         <ItineraryView 
           stops={stops || []} 
-          itineraryName={itinerary.title} 
+          itineraryName={itinerary.title}
+          itinerarySlug={slug}
+          itineraryId={itinerary.id}
           accommodations={accommodations} 
           region={region}
           durationDays={itinerary.durationDays}

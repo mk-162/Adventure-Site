@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { ItineraryStop } from "@/types/itinerary";
-import { Flag, Bed, Utensils, Car, CloudRain, PiggyBank, MapPin, Home, Phone } from "lucide-react";
+import { Flag, Bed, Utensils, Car, CloudRain, PiggyBank, MapPin, Home, Phone, EyeOff, Eye } from "lucide-react";
 import Link from "next/link";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 import { accommodation } from "@/db/schema";
@@ -11,14 +11,21 @@ import { getActivityHeroImage } from "@/lib/activity-images";
 
 type AccommodationData = typeof accommodation.$inferSelect;
 
+interface SkippedStopsState {
+  has: (id: string) => boolean;
+  toggle: (id: string) => void;
+  loaded: boolean;
+}
+
 interface TimelineDayProps {
   dayNumber: number;
   stops: ItineraryStop[];
   mode: "standard" | "wet" | "budget";
   basecamp?: AccommodationData | null;
+  skippedStops?: SkippedStopsState;
 }
 
-export function TimelineDay({ dayNumber, stops, mode, basecamp }: TimelineDayProps) {
+export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops }: TimelineDayProps) {
   // Calculate travel time from basecamp to first stop
   const firstStop = stops[0];
   const lastStop = stops[stops.length - 1];
@@ -82,6 +89,9 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp }: TimelineDayPro
             )}
 
             {stops.map((stop, index) => {
+                // Check if this stop is skipped
+                const isSkipped = skippedStops?.loaded && skippedStops.has(String(stop.id));
+
                 // Determine content based on mode
                 let title = stop.title;
                 let description = stop.description;
@@ -100,9 +110,9 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp }: TimelineDayPro
                 }
 
                 return (
-                    <div key={stop.id} className="relative pl-8">
+                    <div key={stop.id} className={`relative pl-8 ${isSkipped ? "opacity-50" : ""}`}>
                         {/* Dot on timeline */}
-                        <div className="absolute left-[-5px] top-6 w-3 h-3 bg-white border-2 border-[#1e3a4c] rounded-full z-10"></div>
+                        <div className={`absolute left-[-5px] top-6 w-3 h-3 bg-white border-2 rounded-full z-10 ${isSkipped ? "border-gray-300" : "border-[#1e3a4c]"}`}></div>
 
                         {/* Time if available */}
                         {stop.startTime && (
@@ -111,7 +121,7 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp }: TimelineDayPro
                             </span>
                         )}
 
-                        <div className="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                        <div className={`bg-white rounded-xl border shadow-sm hover:shadow-md transition-shadow overflow-hidden ${isSkipped ? "border-gray-200/50" : "border-gray-200"}`}>
                             {/* Thumbnail + Content row */}
                             <div className="flex">
                                 {/* Thumbnail — shown for every stop */}

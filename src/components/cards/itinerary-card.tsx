@@ -25,16 +25,64 @@ interface ItineraryCardProps {
   className?: string;
 }
 
+// Map keywords in title/tags to activity type images
+const activityKeywords: Record<string, string> = {
+  coasteering: "coasteering",
+  surf: "surfing",
+  kayak: "kayaking",
+  "sea kayak": "sea-kayaking",
+  climb: "climbing",
+  "mountain bike": "mountain-biking",
+  mtb: "mountain-biking",
+  biking: "mountain-biking",
+  hik: "hiking",
+  walk: "hiking",
+  cave: "caving",
+  gorge: "gorge-walking",
+  swim: "wild-swimming",
+  paddleboard: "paddleboarding",
+  sup: "paddleboarding",
+  raft: "rafting",
+  zip: "zip-lining",
+  adrenaline: "coasteering",
+  trail: "hiking",
+  summit: "hiking",
+  photography: "hiking",
+};
+
+function getItineraryImage(
+  slug: string,
+  title: string,
+  tags?: { tag: { name: string; slug: string } }[],
+  regionSlug?: string | null
+): string {
+  const lowerTitle = title.toLowerCase();
+  const lowerSlug = slug.toLowerCase();
+  const searchText = `${lowerTitle} ${lowerSlug} ${(tags || []).map(t => t.tag.slug).join(" ")}`;
+  
+  // Check keywords
+  for (const [keyword, actType] of Object.entries(activityKeywords)) {
+    if (searchText.includes(keyword)) {
+      return `/images/activities/${actType}-hero.jpg`;
+    }
+  }
+  
+  // Fall back to region image
+  if (regionSlug) {
+    return `/images/regions/${regionSlug}-hero.jpg`;
+  }
+  
+  return "/images/activities/hiking-hero.jpg";
+}
+
 export function ItineraryCard({
   itinerary,
   region,
   tags,
   className,
 }: ItineraryCardProps) {
-  // Construct image path based on region slug as requested
-  const imagePath = region
-    ? `/images/regions/${region.slug}-hero.jpg`
-    : "/images/placeholder-hero.jpg";
+  // Smart image: try itinerary-specific, then tag-based activity type, then region
+  const imagePath = getItineraryImage(itinerary.slug, itinerary.title, tags, region?.slug);
 
   const difficultyColor = (difficulty: string | null | undefined) => {
     switch (difficulty?.toLowerCase()) {

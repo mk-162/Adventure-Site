@@ -25,10 +25,60 @@ interface LineItem {
   childDiscount: boolean; // true = children typically get ~50% off
 }
 
-export function CostBreakdown({ stops, mode, itineraryName }: CostBreakdownProps) {
+export function CostBreakdown({ stops, mode, itineraryName, itineraryId }: CostBreakdownProps) {
   const [adults, setAdults] = useState(2);
   const [children, setChildren] = useState(0);
   const [expanded, setExpanded] = useState(true);
+
+  // Save Trip state
+  const [saved, setSaved] = useState(false);
+  const [saveLoading, setSaveLoading] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
+  const [showLoginPrompt, setShowLoginPrompt] = useState(false);
+
+  useEffect(() => {
+    if (!itineraryId) return;
+    fetch("/api/user/me")
+      .then((res) => res.json())
+      .then((data) => {
+        setIsAuthenticated(!!data.user);
+        if (data.user) {
+          fetch(`/api/user/favourites?type=itinerary`)
+            .then((res) => res.json())
+            .then((favData) => {
+              const isSaved = favData.favourites?.some(
+                (f: any) => f.type === "itinerary" && f.itemId === itineraryId
+              );
+              setSaved(!!isSaved);
+            });
+        }
+      })
+      .catch(() => setIsAuthenticated(false));
+  }, [itineraryId]);
+
+  async function handleSaveTrip() {
+    if (!itineraryId) return;
+
+    if (!isAuthenticated) {
+      setShowLoginPrompt(true);
+      return;
+    }
+
+    setSaveLoading(true);
+    try {
+      const res = await fetch("/api/user/favourites", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type: "itinerary", id: itineraryId }),
+      });
+      const data = await res.json();
+      setSaved(data.saved);
+    } catch {
+      // Silently fail
+    } finally {
+      setSaveLoading(false);
+    }
+  }
 
   // Build line items from stops
   const lineItems: LineItem[] = stops
@@ -314,10 +364,22 @@ export function CostBreakdown({ stops, mode, itineraryName }: CostBreakdownProps
 
       {/* CTA */}
       <div className="px-6 pb-6 pt-2">
-        <button className="w-full bg-[#f97316] hover:bg-[#f97316]/90 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-[#f97316]/30 transition-all active:scale-95">
-          Save This Trip
+        <button
+          onClick={handleSaveTrip}
+          disabled={saveLoading}
+          className={clsx(
+            "w-full font-bold py-3.5 rounded-xl shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2",
+            saved
+              ? "bg-green-600 hover:bg-green-700 text-white shadow-green-600/30"
+              : "bg-[#f97316] hover:bg-[#f97316]/90 text-white shadow-[#f97316]/30"
+          )}
+        >
+          <Heart className={clsx("w-5 h-5 transition-all", saved ? "fill-white" : "")} />
+          {saveLoading ? "Saving…" : saved ? "Saved!" : "Save This Trip"}
         </button>
-        <p className="text-center text-xs text-gray-400 mt-2">Save your plan and book each part directly</p>
+        <p className="text-center text-xs text-gray-400 mt-2">
+          {saved ? "This trip is saved to your adventures" : "Save your plan and book each part directly"}
+        </p>
 
         {/* Enquire All Vendors CTA */}
         {uniqueOperators.length > 0 && itineraryName && (
@@ -333,6 +395,45 @@ export function CostBreakdown({ stops, mode, itineraryName }: CostBreakdownProps
           </div>
         )}
       </div>
+
+      {/* Login prompt modal */}
+      {showLoginPrompt && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
+          onClick={() => setShowLoginPrompt(false)}
+        >
+          <div
+            className="bg-white rounded-2xl p-8 max-w-md mx-4 shadow-xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex flex-col items-center text-center gap-4">
+              <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
+                <Heart className="w-8 h-8 text-[#f97316]" />
+              </div>
+              <h2 className="text-2xl font-bold text-[#1e3a4c]">
+                Save this trip
+              </h2>
+              <p className="text-gray-600">
+                Sign in to save this itinerary to your adventures so you can find it later.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 w-full mt-2">
+                <Link
+                  href={`/login?from=${typeof window !== "undefined" ? encodeURIComponent(window.location.pathname) : ""}`}
+                  className="flex-1 px-6 py-3 bg-[#f97316] text-white font-semibold rounded-lg hover:bg-[#ea580c] transition-colors text-center"
+                >
+                  Sign in to save
+                </Link>
+                <button
+                  onClick={() => setShowLoginPrompt(false)}
+                  className="flex-1 px-6 py-3 bg-gray-100 text-gray-700 font-semibold rounded-lg hover:bg-gray-200 transition-colors"
+                >
+                  Maybe later
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

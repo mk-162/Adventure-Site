@@ -1,13 +1,18 @@
 "use client";
 
 import { ItineraryStop } from "@/types/itinerary";
+import { EnquireAllVendors } from "./EnquireAllVendors";
+import { operators } from "@/db/schema";
+
+type Operator = typeof operators.$inferSelect;
 
 interface CostBreakdownProps {
   stops: ItineraryStop[];
   mode: "standard" | "wet" | "budget";
+  itineraryName?: string;
 }
 
-export function CostBreakdown({ stops, mode }: CostBreakdownProps) {
+export function CostBreakdown({ stops, mode, itineraryName }: CostBreakdownProps) {
   // Calculate total costs based on mode
   let totalMin = 0;
   let totalMax = 0;
@@ -30,6 +35,15 @@ export function CostBreakdown({ stops, mode }: CostBreakdownProps) {
     totalMin += min;
     totalMax += max;
   });
+
+  // Extract unique operators from stops
+  const uniqueOperators = Array.from(
+    new Map(
+      stops
+        .filter(stop => stop.operator)
+        .map(stop => [stop.operator!.id, stop.operator!])
+    ).values()
+  ) as Operator[];
 
   return (
     <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 sticky top-24">
@@ -54,6 +68,20 @@ export function CostBreakdown({ stops, mode }: CostBreakdownProps) {
             Book Entire Trip
         </button>
         <p className="text-center text-xs text-gray-400 mt-3">No payment required today</p>
+
+        {/* Enquire All Vendors CTA */}
+        {uniqueOperators.length > 0 && itineraryName && (
+          <div className="mt-4 pt-4 border-t border-gray-200">
+            <p className="text-xs text-gray-500 text-center mb-3">
+              Or send an enquiry to all operators
+            </p>
+            <EnquireAllVendors 
+              operators={uniqueOperators}
+              itineraryName={itineraryName}
+              variant="sidebar"
+            />
+          </div>
+        )}
     </div>
   );
 }

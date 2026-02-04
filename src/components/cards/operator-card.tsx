@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { MapPin, Star, CheckCircle, ChevronRight } from "lucide-react";
+import { MapPin, Star, ChevronRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 
 interface OperatorCardProps {
   operator: {
@@ -44,16 +45,14 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
                 </div>
               )}
               <div>
-                <div className="flex items-center gap-2">
-                  <h3 className="font-bold text-lg text-[#1e3a4c] group-hover:text-[#f97316] transition-colors">
-                    {operator.name}
-                  </h3>
-                  {isClaimed && (
-                    <CheckCircle className="h-5 w-5 text-green-500" />
-                  )}
+                <h3 className="font-bold text-lg text-[#1e3a4c] group-hover:text-[#f97316] transition-colors">
+                  {operator.name}
+                </h3>
+                <div className="flex items-center gap-2 mt-1">
+                  <VerifiedBadge claimStatus={operator.claimStatus} size="lg" />
                 </div>
                 {operator.tagline && (
-                  <p className="text-sm text-gray-500">{operator.tagline}</p>
+                  <p className="text-sm text-gray-500 mt-1">{operator.tagline}</p>
                 )}
               </div>
             </div>
@@ -130,9 +129,7 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
           <h3 className="font-semibold text-[#1e3a4c] group-hover:text-[#f97316] transition-colors truncate">
             {operator.name}
           </h3>
-          {isClaimed && (
-            <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
-          )}
+          <VerifiedBadge claimStatus={operator.claimStatus} size="sm" showLabel={false} />
         </div>
 
         {operator.address && (

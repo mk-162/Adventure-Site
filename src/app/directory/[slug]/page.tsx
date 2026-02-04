@@ -6,6 +6,7 @@ import {
   getAllActivityTypes
 } from "@/lib/queries";
 import { ActivityCard } from "@/components/cards/activity-card";
+import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 import { 
   ChevronRight, 
   MapPin, 
@@ -16,6 +17,7 @@ import {
   Clock,
   CheckCircle,
   Shield,
+  ShieldCheck,
   Award,
   Users,
   Calendar,
@@ -84,6 +86,32 @@ export default async function OperatorProfilePage({ params }: Props) {
 
   return (
     <div className="min-h-screen pb-24 lg:pb-12">
+      {/* Verification Banner (Premium Only) */}
+      {operator.claimStatus === "premium" && (
+        <div className="bg-gradient-to-r from-[#f97316]/10 to-amber-500/10 border-b border-[#f97316]/20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div className="flex items-center justify-center gap-2 text-sm">
+              <ShieldCheck className="w-4 h-4 text-[#f97316]" />
+              <span className="text-[#1e3a4c] font-semibold">
+                This operator has been independently verified by Adventure Wales
+              </span>
+            </div>
+          </div>
+        </div>
+      )}
+      {operator.claimStatus === "claimed" && (
+        <div className="bg-gradient-to-r from-emerald-50 to-green-50 border-b border-emerald-500/20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div className="flex items-center justify-center gap-2 text-sm">
+              <CheckCircle className="w-4 h-4 text-emerald-600" />
+              <span className="text-[#1e3a4c] font-semibold">
+                This operator has been independently verified by Adventure Wales
+              </span>
+            </div>
+          </div>
+        </div>
+      )}
+      
       {/* Hero / Cover Image */}
       <div className="relative w-full h-48 sm:h-64 lg:h-80 overflow-hidden lg:mx-auto lg:max-w-7xl lg:mt-6 lg:rounded-2xl lg:px-4">
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
@@ -132,9 +160,12 @@ export default async function OperatorProfilePage({ params }: Props) {
 
               {/* Info */}
               <div className="flex flex-col items-center lg:items-start text-center lg:text-left pb-2 lg:pb-4">
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1e3a4c] leading-tight">
-                  {operator.name}
-                </h1>
+                <div className="flex items-center gap-3 flex-wrap justify-center lg:justify-start">
+                  <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1e3a4c] leading-tight">
+                    {operator.name}
+                  </h1>
+                  <VerifiedBadge claimStatus={operator.claimStatus} size="lg" />
+                </div>
                 {operator.tagline && (
                   <p className="text-gray-500 text-sm sm:text-base mt-1">{operator.tagline}</p>
                 )}

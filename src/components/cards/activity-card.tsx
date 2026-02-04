@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MapPin, Clock, Star } from "lucide-react";
 import { Badge, DifficultyBadge, PriceBadge } from "@/components/ui/badge";
+import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 
 interface ActivityCardProps {
   activity: {
@@ -20,6 +21,7 @@ interface ActivityCardProps {
     name: string;
     slug: string;
     googleRating: string | null;
+    claimStatus?: "stub" | "claimed" | "premium";
   } | null;
   activityType?: {
     slug: string;
@@ -119,15 +121,24 @@ export function ActivityCard({
               {activity.name}
             </h3>
             {operator && (
-              <p className="text-sm text-gray-500 flex items-center gap-1">
-                {operator.name}
-                {operator.googleRating && (
-                  <span className="flex items-center text-[#f97316]">
-                    <Star className="h-3 w-3 fill-current" />
-                    {operator.googleRating}
-                  </span>
+              <div className="flex items-center gap-2 text-sm">
+                <span className="text-gray-500 flex items-center gap-1">
+                  {operator.name}
+                  {operator.googleRating && (
+                    <span className="flex items-center text-[#f97316] ml-1">
+                      <Star className="h-3 w-3 fill-current" />
+                      {operator.googleRating}
+                    </span>
+                  )}
+                </span>
+                {operator.claimStatus && (
+                  <VerifiedBadge 
+                    claimStatus={operator.claimStatus} 
+                    size="sm" 
+                    showLabel={false}
+                  />
                 )}
-              </p>
+              </div>
             )}
             {region && (
               <p className="text-sm text-gray-400 flex items-center gap-1 mt-1">
@@ -187,15 +198,24 @@ export function ActivityCard({
         </h3>
 
         {operator && !hideOperator && (
-          <p className="text-sm text-gray-500 mb-1 flex items-center gap-1">
-            {operator.name}
-            {operator.googleRating && (
-              <span className="flex items-center text-[#f97316]">
-                <Star className="h-3 w-3 fill-current" />
-                {operator.googleRating}
-              </span>
+          <div className="text-sm mb-1 flex items-center gap-1.5">
+            <span className="text-gray-500 flex items-center gap-1">
+              {operator.name}
+              {operator.googleRating && (
+                <span className="flex items-center text-[#f97316] ml-0.5">
+                  <Star className="h-3 w-3 fill-current" />
+                  {operator.googleRating}
+                </span>
+              )}
+            </span>
+            {operator.claimStatus && (
+              <VerifiedBadge 
+                claimStatus={operator.claimStatus} 
+                size="sm" 
+                showLabel={false}
+              />
             )}
-          </p>
+          </div>
         )}
 
         {region && (

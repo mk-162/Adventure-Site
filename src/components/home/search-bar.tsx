@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { MapPin, Compass, Calendar, Search } from "lucide-react";
+import { MapPin, Compass, Calendar, Search, ArrowRight, Mountain, Waves, Footprints } from "lucide-react";
 
 interface Region {
   id: number;
@@ -9,112 +9,248 @@ interface Region {
   slug: string;
 }
 
-interface SearchBarProps {
-  regions: Region[];
+interface ActivityType {
+  id: number;
+  name: string;
+  slug: string;
+  icon: string | null;
 }
 
-export function SearchBar({ regions }: SearchBarProps) {
+interface SearchBarProps {
+  regions: Region[];
+  activityTypes: ActivityType[];
+}
+
+// Icon mapping for activity types
+const activityIconMap: Record<string, React.ReactNode> = {
+  hiking: <Footprints className="h-4 w-4" />,
+  coasteering: <Waves className="h-4 w-4" />,
+  surfing: <Waves className="h-4 w-4" />,
+  kayaking: <Waves className="h-4 w-4" />,
+  climbing: <Mountain className="h-4 w-4" />,
+  "mountain-biking": <Mountain className="h-4 w-4" />,
+};
+
+// Region icon mapping
+const regionIconMap: Record<string, string> = {
+  snowdonia: "🏔️",
+  pembrokeshire: "🌊",
+  "brecon-beacons": "⛰️",
+  "cardiff-vale": "🏙️",
+  "anglesey-coast": "🏖️",
+  "gower-peninsula": "🌅",
+};
+
+// Time options
+const timeOptions = [
+  { value: "", label: "Anytime" },
+  { value: "this-weekend", label: "This Weekend" },
+  { value: "this-month", label: "This Month" },
+  { value: "spring", label: "Spring (Mar-May)" },
+  { value: "summer", label: "Summer (Jun-Aug)" },
+  { value: "autumn", label: "Autumn (Sep-Nov)" },
+  { value: "winter", label: "Winter (Dec-Feb)" },
+  { value: "january", label: "January" },
+  { value: "february", label: "February" },
+  { value: "march", label: "March" },
+  { value: "april", label: "April" },
+  { value: "may", label: "May" },
+  { value: "june", label: "June" },
+  { value: "july", label: "July" },
+  { value: "august", label: "August" },
+  { value: "september", label: "September" },
+  { value: "october", label: "October" },
+  { value: "november", label: "November" },
+  { value: "december", label: "December" },
+];
+
+export function SearchBar({ regions, activityTypes }: SearchBarProps) {
   const [where, setWhere] = useState("");
   const [what, setWhat] = useState("");
   const [when, setWhen] = useState("");
-
-  const activityTypes = [
-    "Any Activity",
-    "Hiking",
-    "Coasteering",
-    "Surfing",
-    "Mountain Biking",
-    "Kayaking",
-    "Climbing",
-    "Zip Lining",
-  ];
+  const [focusedField, setFocusedField] = useState<string | null>(null);
 
   const handleSearch = () => {
     const params = new URLSearchParams();
     if (where) params.set("region", where);
     if (what) params.set("activity", what);
-    if (when) {
-      const dateObj = new Date(when);
-      const monthName = dateObj.toLocaleString("default", { month: "long" });
-      params.set("month", monthName);
-    }
+    if (when) params.set("when", when);
     window.location.href = `/search?${params.toString()}`;
   };
 
+  const handleKeyPress = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
+
   return (
-    <div className="relative -mt-16 sm:-mt-20 z-10 px-4 sm:px-6 max-w-5xl mx-auto">
-      <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-6 border border-slate-100">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {/* Where */}
-          <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
+    <div className="relative -mt-16 sm:-mt-20 z-10 px-4 sm:px-6 max-w-6xl mx-auto">
+      <div 
+        className={`
+          bg-white rounded-2xl shadow-2xl p-4 sm:p-6 border border-slate-100
+          transition-shadow duration-300
+          ${focusedField ? 'ring-2 ring-[#f97316]/20 shadow-orange-500/10' : ''}
+        `}
+      >
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_auto] gap-3 sm:gap-4">
+          {/* WHERE */}
+          <div className="relative">
+            <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2.5">
               Where
             </label>
-            <div className="relative">
-              <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 text-[#1e3a4c] h-5 w-5" />
+            <div className="relative group">
+              <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 text-[#1e3a4c] h-5 w-5 transition-colors group-focus-within:text-[#f97316]" />
               <select
                 value={where}
                 onChange={(e) => setWhere(e.target.value)}
-                className="w-full h-12 pl-10 pr-4 bg-slate-50 border border-slate-200 rounded-lg font-medium focus:ring-2 focus:ring-[#1e3a4c] focus:border-transparent appearance-none text-slate-900"
+                onFocus={() => setFocusedField("where")}
+                onBlur={() => setFocusedField(null)}
+                onKeyPress={handleKeyPress}
+                className="
+                  w-full h-14 pl-12 pr-4 
+                  bg-slate-50 border-2 border-slate-200 rounded-xl 
+                  font-medium text-base text-slate-900
+                  focus:bg-white focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316]/20 
+                  hover:border-slate-300
+                  transition-all duration-200
+                  appearance-none cursor-pointer
+                "
               >
-                <option value="">All Destinations</option>
+                <option value="">Anywhere in Wales</option>
                 {regions.map((region) => (
                   <option key={region.id} value={region.slug}>
-                    {region.name}
+                    {regionIconMap[region.slug] || "📍"} {region.name}
                   </option>
                 ))}
               </select>
             </div>
           </div>
 
-          {/* What */}
-          <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
+          {/* WHAT */}
+          <div className="relative">
+            <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2.5">
               What
             </label>
-            <div className="relative">
-              <Compass className="absolute left-3 top-1/2 -translate-y-1/2 text-[#1e3a4c] h-5 w-5" />
+            <div className="relative group">
+              <Compass className="absolute left-4 top-1/2 -translate-y-1/2 text-[#1e3a4c] h-5 w-5 transition-colors group-focus-within:text-[#f97316]" />
               <select
                 value={what}
                 onChange={(e) => setWhat(e.target.value)}
-                className="w-full h-12 pl-10 pr-4 bg-slate-50 border border-slate-200 rounded-lg font-medium focus:ring-2 focus:ring-[#1e3a4c] focus:border-transparent appearance-none text-slate-900"
+                onFocus={() => setFocusedField("what")}
+                onBlur={() => setFocusedField(null)}
+                onKeyPress={handleKeyPress}
+                className="
+                  w-full h-14 pl-12 pr-4 
+                  bg-slate-50 border-2 border-slate-200 rounded-xl 
+                  font-medium text-base text-slate-900
+                  focus:bg-white focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316]/20 
+                  hover:border-slate-300
+                  transition-all duration-200
+                  appearance-none cursor-pointer
+                "
               >
-                {activityTypes.map((activity) => (
-                  <option key={activity} value={activity === "Any Activity" ? "" : activity.toLowerCase()}>
-                    {activity}
+                <option value="">Any Adventure</option>
+                {/* Water Activities */}
+                {activityTypes.filter(at => ['surfing', 'kayaking', 'coasteering'].includes(at.slug)).length > 0 && (
+                  <optgroup label="🌊 Water Adventures">
+                    {activityTypes
+                      .filter(at => ['surfing', 'kayaking', 'coasteering'].includes(at.slug))
+                      .map(type => (
+                        <option key={type.id} value={type.slug}>
+                          {type.name}
+                        </option>
+                      ))}
+                  </optgroup>
+                )}
+                {/* Mountain Activities */}
+                {activityTypes.filter(at => ['hiking', 'climbing', 'mountain-biking'].includes(at.slug)).length > 0 && (
+                  <optgroup label="⛰️ Mountain Adventures">
+                    {activityTypes
+                      .filter(at => ['hiking', 'climbing', 'mountain-biking'].includes(at.slug))
+                      .map(type => (
+                        <option key={type.id} value={type.slug}>
+                          {type.name}
+                        </option>
+                      ))}
+                  </optgroup>
+                )}
+                {/* Other Activities */}
+                {activityTypes.filter(at => !['surfing', 'kayaking', 'coasteering', 'hiking', 'climbing', 'mountain-biking'].includes(at.slug)).length > 0 && (
+                  <optgroup label="🎯 Other Adventures">
+                    {activityTypes
+                      .filter(at => !['surfing', 'kayaking', 'coasteering', 'hiking', 'climbing', 'mountain-biking'].includes(at.slug))
+                      .map(type => (
+                        <option key={type.id} value={type.slug}>
+                          {type.name}
+                        </option>
+                      ))}
+                  </optgroup>
+                )}
+              </select>
+            </div>
+          </div>
+
+          {/* WHEN */}
+          <div className="relative">
+            <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2.5">
+              When
+            </label>
+            <div className="relative group">
+              <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 text-[#1e3a4c] h-5 w-5 transition-colors group-focus-within:text-[#f97316]" />
+              <select
+                value={when}
+                onChange={(e) => setWhen(e.target.value)}
+                onFocus={() => setFocusedField("when")}
+                onBlur={() => setFocusedField(null)}
+                onKeyPress={handleKeyPress}
+                className="
+                  w-full h-14 pl-12 pr-4 
+                  bg-slate-50 border-2 border-slate-200 rounded-xl 
+                  font-medium text-base text-slate-900
+                  focus:bg-white focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316]/20 
+                  hover:border-slate-300
+                  transition-all duration-200
+                  appearance-none cursor-pointer
+                "
+              >
+                {timeOptions.map(option => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
                   </option>
                 ))}
               </select>
             </div>
           </div>
 
-          {/* When */}
-          <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
-              When
-            </label>
-            <div className="relative">
-              <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 text-[#1e3a4c] h-5 w-5" />
-              <input
-                type="date"
-                value={when}
-                onChange={(e) => setWhen(e.target.value)}
-                className="w-full h-12 pl-10 pr-4 bg-slate-50 border border-slate-200 rounded-lg font-medium focus:ring-2 focus:ring-[#1e3a4c] focus:border-transparent text-slate-900"
-              />
-            </div>
-          </div>
-
-          {/* Search Button */}
-          <div className="flex items-end">
+          {/* SEARCH BUTTON */}
+          <div className="flex items-end md:pb-0">
             <button
               onClick={handleSearch}
-              className="w-full h-12 bg-[#f97316] hover:bg-orange-600 text-white font-bold rounded-lg flex items-center justify-center gap-2 transition-colors shadow-lg shadow-orange-500/20"
+              className="
+                w-full md:w-auto md:px-8 h-14 
+                bg-gradient-to-r from-[#f97316] to-orange-600 
+                hover:from-orange-600 hover:to-[#f97316]
+                text-white font-bold rounded-xl 
+                flex items-center justify-center gap-2 
+                transition-all duration-200 
+                shadow-lg shadow-orange-500/30
+                hover:shadow-xl hover:shadow-orange-500/40
+                hover:scale-[1.02]
+                active:scale-[0.98]
+              "
             >
               <Search className="h-5 w-5" />
-              Search
+              <span className="hidden sm:inline">Search</span>
+              <ArrowRight className="h-5 w-5 hidden sm:inline" />
             </button>
           </div>
         </div>
+
+        {/* Helper text */}
+        <p className="mt-4 text-xs text-slate-500 text-center">
+          Find your perfect Welsh adventure • {activityTypes.length} activity types • {regions.length} regions
+        </p>
       </div>
     </div>
   );

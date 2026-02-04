@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { ItineraryStop } from "@/types/itinerary";
+import { accommodation } from "@/db/schema";
 import clsx from "clsx";
 import "leaflet/dist/leaflet.css";
 
@@ -28,9 +29,12 @@ const Polyline = dynamic(
   { ssr: false }
 );
 
+type AccommodationData = typeof accommodation.$inferSelect;
+
 interface ItineraryMapProps {
   stops: ItineraryStop[];
   mode: "standard" | "wet" | "budget";
+  basecamp?: AccommodationData | null;
   className?: string;
 }
 
@@ -42,7 +46,7 @@ const dayColors = [
   "#a855f7", // Day 5: Purple
 ];
 
-export function ItineraryMap({ stops, mode, className }: ItineraryMapProps) {
+export function ItineraryMap({ stops, mode, basecamp, className }: ItineraryMapProps) {
   const [isMounted, setIsMounted] = useState(false);
   const [L, setL] = useState<typeof import("leaflet") | null>(null);
   const [activeDay, setActiveDay] = useState<number | null>(null);
@@ -111,8 +115,60 @@ export function ItineraryMap({ stops, mode, className }: ItineraryMapProps) {
     });
   };
 
+  const createBasecampIcon = () => {
+    return L.divIcon({
+      className: "basecamp-marker",
+      html: `<div style="
+        background-color: #f97316;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 3px solid white;
+        box-shadow: 0 3px 10px rgba(249,115,22,0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 18px;
+      ">🏠</div>`,
+      iconSize: [36, 36],
+      iconAnchor: [18, 18],
+      popupAnchor: [0, -18],
+    });
+  };
+
   const routePositions = mapStops.map(s => [s.lat, s.lng] as [number, number]);
   const uniqueDays = Array.from(new Set(mapStops.map(s => s.dayNumber))).sort((a,b) => a-b);
+
+  // Basecamp connections - dashed lines from basecamp to first/last stops of each day
+  const basecampConnections: Array<{ day: number; positions: [number, number][] }> = [];
+  if (basecamp && basecamp.lat && basecamp.lng) {
+    const basecampPos: [number, number] = [Number(basecamp.lat), Number(basecamp.lng)];
+    
+    uniqueDays.forEach(day => {
+      const dayStops = mapStops.filter(s => s.dayNumber === day);
+      if (dayStops.length > 0) {
+        const firstStop = dayStops[0];
+        const lastStop = dayStops[dayStops.length - 1];
+        
+        // Line from basecamp to first stop
+        if (firstStop.lat && firstStop.lng) {
+          basecampConnections.push({
+            day,
+            positions: [basecampPos, [firstStop.lat as number, firstStop.lng as number]]
+          });
+        }
+        
+        // Line from last stop back to basecamp (only if different from first)
+        if (lastStop.lat && lastStop.lng && dayStops.length > 1) {
+          basecampConnections.push({
+            day,
+            positions: [[lastStop.lat as number, lastStop.lng as number], basecampPos]
+          });
+        }
+      }
+    });
+  }
 
   return (
     <div className={clsx("rounded-xl overflow-hidden relative group h-[400px] w-full", className)}>
@@ -154,6 +210,18 @@ export function ItineraryMap({ stops, mode, className }: ItineraryMapProps) {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
+        {/* Basecamp dashed lines */}
+        {basecampConnections.map((connection, idx) => (
+          <Polyline
+            key={`basecamp-${idx}`}
+            positions={connection.positions}
+            color="#f97316"
+            weight={3}
+            opacity={0.6}
+            dashArray="8, 8"
+          />
+        ))}
+
         {routePositions.length > 1 && (
             <Polyline
             positions={routePositions}
@@ -162,6 +230,26 @@ export function ItineraryMap({ stops, mode, className }: ItineraryMapProps) {
             opacity={0.6}
             dashArray="1, 0"
             />
+        )}
+
+        {/* Basecamp marker */}
+        {basecamp && basecamp.lat && basecamp.lng && (
+          <Marker
+            position={[Number(basecamp.lat), Number(basecamp.lng)]}
+            icon={createBasecampIcon()}
+          >
+            <Popup>
+              <div className="min-w-[200px]">
+                <span className="text-xs font-bold text-[#f97316] uppercase tracking-wider mb-1 block">
+                  Your Basecamp
+                </span>
+                <h3 className="font-bold text-[#1e3a4c]">{basecamp.name}</h3>
+                {basecamp.type && (
+                  <p className="text-sm text-gray-600 mt-1">{basecamp.type}</p>
+                )}
+              </div>
+            </Popup>
+          </Marker>
         )}
 
         {mapStops.map((stop) => {

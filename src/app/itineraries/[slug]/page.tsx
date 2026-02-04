@@ -9,7 +9,8 @@ import {
   Heart
 } from "lucide-react";
 import { ItineraryView } from "@/components/itinerary/ItineraryView";
-import { getItineraryBySlug } from "@/lib/queries";
+import { EnquireAllVendors } from "@/components/itinerary/EnquireAllVendors";
+import { getItineraryBySlug, getAccommodation } from "@/lib/queries";
 import { MOCK_ITINERARY, MOCK_STOPS } from "@/lib/mock-itinerary-data";
 
 function getDifficultyColor(difficulty: string): string {
@@ -53,6 +54,26 @@ export default async function ItineraryDetailPage({ params }: Props) {
   }
 
   const { itinerary, stops, region } = data;
+
+  // Fetch accommodation for this region (for basecamp selection)
+  let accommodations: any[] = [];
+  if (itinerary.regionId) {
+    try {
+      const accommodationResults = await getAccommodation({ regionId: itinerary.regionId });
+      accommodations = accommodationResults.map(r => r.accommodation);
+    } catch (e) {
+      console.error("Error fetching accommodation:", e);
+    }
+  }
+
+  // Extract unique operators from stops
+  const uniqueOperators = Array.from(
+    new Map(
+      stops
+        .filter(stop => stop.operator)
+        .map(stop => [stop.operator!.id, stop.operator!])
+    ).values()
+  );
 
   return (
     <div className="min-h-screen pt-4 lg:pt-6 pb-24 lg:pb-12 bg-gray-50/50">
@@ -138,7 +159,17 @@ export default async function ItineraryDetailPage({ params }: Props) {
         )}
 
         {/* Main View Component */}
-        <ItineraryView stops={stops || []} />
+        <ItineraryView stops={stops || []} itineraryName={itinerary.title} accommodations={accommodations} />
+
+        {/* Enquire All Vendors CTA */}
+        {uniqueOperators.length > 0 && (
+          <div className="mt-10 lg:mt-16">
+            <EnquireAllVendors 
+              operators={uniqueOperators}
+              itineraryName={itinerary.title}
+            />
+          </div>
+        )}
 
       </div>
 
@@ -153,12 +184,20 @@ export default async function ItineraryDetailPage({ params }: Props) {
             <Heart className="w-5 h-5" />
             <span className="text-[10px] font-medium">Save</span>
           </button>
-          <button className="flex-1 bg-[#f97316] hover:bg-[#f97316]/90 text-white font-bold rounded-xl h-12 flex items-center justify-center gap-2 shadow-lg shadow-[#f97316]/20 transition-all active:scale-95">
-            <span>Enquire</span>
-            <span className="bg-white/20 px-2 py-0.5 rounded text-xs font-medium">
-              From £{itinerary.priceEstimateFrom || "TBC"}
-            </span>
-          </button>
+          {uniqueOperators.length > 0 ? (
+            <EnquireAllVendors 
+              operators={uniqueOperators}
+              itineraryName={itinerary.title}
+              variant="mobile"
+            />
+          ) : (
+            <button className="flex-1 bg-[#f97316] hover:bg-[#f97316]/90 text-white font-bold rounded-xl h-12 flex items-center justify-center gap-2 shadow-lg shadow-[#f97316]/20 transition-all active:scale-95">
+              <span>Enquire</span>
+              <span className="bg-white/20 px-2 py-0.5 rounded text-xs font-medium">
+                From £{itinerary.priceEstimateFrom || "TBC"}
+              </span>
+            </button>
+          )}
         </div>
       </div>
     </div>

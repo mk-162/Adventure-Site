@@ -1,15 +1,52 @@
 "use client";
 
 import { ItineraryStop } from "@/types/itinerary";
-import { Flag, Bed, Utensils, Car, CloudRain, PiggyBank, MapPin } from "lucide-react";
+import { Flag, Bed, Utensils, Car, CloudRain, PiggyBank, MapPin, Home } from "lucide-react";
+import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
+import { accommodation } from "@/db/schema";
+import { calculateDistance, calculateDrivingTime } from "@/lib/travel-utils";
+
+type AccommodationData = typeof accommodation.$inferSelect;
 
 interface TimelineDayProps {
   dayNumber: number;
   stops: ItineraryStop[];
   mode: "standard" | "wet" | "budget";
+  basecamp?: AccommodationData | null;
 }
 
-export function TimelineDay({ dayNumber, stops, mode }: TimelineDayProps) {
+export function TimelineDay({ dayNumber, stops, mode, basecamp }: TimelineDayProps) {
+  // Calculate travel time from basecamp to first stop
+  const firstStop = stops[0];
+  const lastStop = stops[stops.length - 1];
+  
+  let travelFromBasecamp: string | null = null;
+  let travelToBasecamp: string | null = null;
+
+  if (basecamp && basecamp.lat && basecamp.lng) {
+    // Travel FROM basecamp
+    if (firstStop?.lat && firstStop?.lng) {
+      const distance = calculateDistance(
+        Number(basecamp.lat),
+        Number(basecamp.lng),
+        Number(firstStop.lat),
+        Number(firstStop.lng)
+      );
+      travelFromBasecamp = calculateDrivingTime(distance);
+    }
+
+    // Travel TO basecamp
+    if (lastStop?.lat && lastStop?.lng) {
+      const distance = calculateDistance(
+        Number(lastStop.lat),
+        Number(lastStop.lng),
+        Number(basecamp.lat),
+        Number(basecamp.lng)
+      );
+      travelToBasecamp = calculateDrivingTime(distance);
+    }
+  }
+
   return (
     <div className="mb-8 relative pl-0 sm:pl-4">
         {/* Day Header */}
@@ -21,6 +58,26 @@ export function TimelineDay({ dayNumber, stops, mode }: TimelineDayProps) {
         </div>
 
         <div className="border-l-2 border-gray-200 ml-6 space-y-8 pb-8 -mt-6 pt-10">
+            {/* Travel FROM Basecamp */}
+            {travelFromBasecamp && (
+                <div className="relative pl-8 pb-4">
+                    <div className="absolute left-[-5px] top-6 w-3 h-3 bg-white border-2 border-[#f97316] rounded-full z-10"></div>
+                    <div className="bg-orange-50 border border-orange-200 rounded-lg p-3 flex items-center gap-3">
+                        <div className="bg-[#f97316] p-1.5 rounded-lg">
+                            <Home className="w-4 h-4 text-white" />
+                        </div>
+                        <div className="flex-1">
+                            <div className="text-xs font-bold text-gray-500 uppercase">From Basecamp</div>
+                            <div className="text-sm font-bold text-[#1e3a4c]">{basecamp?.name}</div>
+                        </div>
+                    </div>
+                    <div className="mt-4 flex items-center gap-2 text-xs text-gray-500 font-medium pl-1">
+                        <Car className="w-4 h-4" />
+                        <span>{travelFromBasecamp} drive</span>
+                    </div>
+                </div>
+            )}
+
             {stops.map((stop, index) => {
                 // Determine content based on mode
                 let title = stop.title;
@@ -56,6 +113,13 @@ export function TimelineDay({ dayNumber, stops, mode }: TimelineDayProps) {
                                 <div>
                                     <h4 className="font-bold text-[#1e3a4c] text-lg flex flex-wrap items-center gap-2">
                                         {title}
+                                        {stop.operator?.claimStatus && (
+                                            <VerifiedBadge 
+                                                claimStatus={stop.operator.claimStatus} 
+                                                size="sm" 
+                                                showLabel={false}
+                                            />
+                                        )}
                                         {isAlt && (
                                             <span className="bg-blue-100 text-blue-700 text-xs px-2 py-0.5 rounded-full flex items-center gap-1 whitespace-nowrap">
                                                 {mode === "wet" ? <CloudRain className="w-3 h-3" /> : <PiggyBank className="w-3 h-3" />}
@@ -63,6 +127,11 @@ export function TimelineDay({ dayNumber, stops, mode }: TimelineDayProps) {
                                             </span>
                                         )}
                                     </h4>
+                                    {stop.operator && (
+                                        <p className="text-xs text-gray-500 mt-0.5">
+                                            by {stop.operator.name}
+                                        </p>
+                                    )}
                                     <div className="flex items-center gap-3 mt-1 mb-3 text-sm text-gray-500">
                                         {stop.duration && <span>{stop.duration}</span>}
                                         {cost && <span>• {cost}</span>}
@@ -103,6 +172,26 @@ export function TimelineDay({ dayNumber, stops, mode }: TimelineDayProps) {
                     </div>
                 );
             })}
+
+            {/* Travel TO Basecamp */}
+            {travelToBasecamp && (
+                <div className="relative pl-8 pt-4">
+                    <div className="absolute left-[-5px] top-6 w-3 h-3 bg-white border-2 border-[#f97316] rounded-full z-10"></div>
+                    <div className="mt-4 mb-4 flex items-center gap-2 text-xs text-gray-500 font-medium pl-1">
+                        <Car className="w-4 h-4" />
+                        <span>{travelToBasecamp} drive</span>
+                    </div>
+                    <div className="bg-orange-50 border border-orange-200 rounded-lg p-3 flex items-center gap-3">
+                        <div className="bg-[#f97316] p-1.5 rounded-lg">
+                            <Home className="w-4 h-4 text-white" />
+                        </div>
+                        <div className="flex-1">
+                            <div className="text-xs font-bold text-gray-500 uppercase">Return to Basecamp</div>
+                            <div className="text-sm font-bold text-[#1e3a4c]">{basecamp?.name}</div>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     </div>
   );

@@ -110,6 +110,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     },
     {
+      url: `${BASE_URL}/journal`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.8,
+    },
+    {
       url: `${BASE_URL}/tags`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
@@ -254,6 +260,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: tag.createdAt || new Date(),
       changeFrequency: 'weekly',
       priority: 0.7,
+    });
+  });
+
+  // Post/Journal pages
+  postsData.forEach((post) => {
+    sitemap.push({
+      url: `${BASE_URL}/journal/${post.slug}`,
+      lastModified: post.updatedAt || post.createdAt || new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
     });
   });
 

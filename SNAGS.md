@@ -146,7 +146,7 @@ Format: `- [ ] what's wrong (page/url if helpful)`
 **User Accounts**
 
 - [x] Logic: Clicking Heart/Save should trigger Login/Signup modal — already done (login prompt modal)
-- [ ] Feature: Customer Dashboard -> View favorited itineraries/partners
+- [x] Feature: Customer Dashboard -> View favorited itineraries/partners — /account page with saved items
 - [ ] Feature: Email opt-in checkbox during signup
 - [ ] UI: Two-column Register section.
   - [ ] Left: Benefits (Manage itineraries, Track bookings, Notes, Share).
@@ -213,7 +213,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 - [ ] Layout: "Top Experiences" needs to be prominent at the top.
 - [ ] Feature: "Top Experiences" List Enhancements:
   - [ ] Scope: Include Attractions, Walks, Sightseeing, Beaches (not just businesses).
-  - [ ] Feature: Logged-in users can Star/Like items.
+  - [x] Feature: Logged-in users can Star/Like items. — FavoriteButton + userFavourites table
   - [ ] Data: Display "Total Stars" (initially seeded from Google Review "Likes").
   - [ ] Data: Display Google Review Star Rating on the list.
 
@@ -253,7 +253,7 @@ The following pages are confirmed missing hero images in the seed data/code:
 **Editorial / Content Quality**
 
 - [ ] Content: General editorial is "boring" -> Needs improvement
-- [ ] Feature: "Top Tip" widget (splash in relevant places)
+- [x] Feature: "Top Tip" widget (splash in relevant places) — TopTip component with real local tips
 - [ ] Content: "Packer Jumper" is not effective -> Improve or replace
 - [ ] Process: Create a "Deep Research Skill" for AI agents to generate genuinely useful, region-specific tips/skills
 

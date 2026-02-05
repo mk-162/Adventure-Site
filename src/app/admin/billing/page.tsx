@@ -34,10 +34,9 @@ export default async function AdminBillingPage() {
   const verified = allOperators.filter(o => o.billingTier === "verified");
   const free = allOperators.filter(o => o.billingTier === "free" || !o.billingTier);
 
-  // Revenue calc
+  // Revenue calc — only premium is paid (verified/enhanced is free)
   const premiumRevenue = premium.length * 29.99;
-  const verifiedRevenue = verified.length * 9.99;
-  const totalMRR = premiumRevenue + verifiedRevenue;
+  const totalMRR = premiumRevenue;
 
   return (
     <div className="space-y-8">
@@ -58,9 +57,9 @@ export default async function AdminBillingPage() {
           <p className="text-xs text-slate-400">£{premiumRevenue.toFixed(2)}/mo</p>
         </div>
         <div className="bg-white p-5 rounded-lg shadow-sm border">
-          <p className="text-sm text-slate-500 uppercase tracking-wider">Verified</p>
+          <p className="text-sm text-slate-500 uppercase tracking-wider">Enhanced</p>
           <p className="text-3xl font-bold text-blue-600 mt-1">{verified.length}</p>
-          <p className="text-xs text-slate-400">£{verifiedRevenue.toFixed(2)}/mo</p>
+          <p className="text-xs text-slate-400">Free tier</p>
         </div>
         <div className="bg-white p-5 rounded-lg shadow-sm border">
           <p className="text-sm text-slate-500 uppercase tracking-wider">Free</p>

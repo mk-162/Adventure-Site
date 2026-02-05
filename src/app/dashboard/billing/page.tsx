@@ -23,7 +23,7 @@ export default async function BillingPage() {
 
       <BillingContent
         currentTier={operator.billingTier || "free"}
-        verifiedPriceId={process.env.STRIPE_VERIFIED_PRICE_ID || ""}
+        verifiedPriceId=""
         premiumPriceId={process.env.STRIPE_PREMIUM_PRICE_ID || ""}
       />
     </div>

@@ -60,10 +60,13 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
         </section>
       )}
 
-      {/* Top Tips (first instance) */}
-      {data.topTips && data.topTips.length > 0 && (
+      {/* Top Tips — tiered (first timer / regular) or flat list */}
+      {(data.tieredTips || (data.topTips && data.topTips.length > 0)) && (
         <section>
-          <TopTips tips={data.topTips} />
+          <TopTips
+            tips={data.topTips || []}
+            tieredTips={data.tieredTips}
+          />
         </section>
       )}
 

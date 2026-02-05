@@ -98,6 +98,10 @@ export interface ComboPageData {
     isPlaceholder?: boolean;
   };
   topTips?: string[];
+  tieredTips?: {
+    firstTimer: string[];
+    regular: string[];
+  };
   honestTruth?: {
     great: string[];
     notGreat: string[];

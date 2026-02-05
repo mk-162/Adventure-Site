@@ -1149,3 +1149,31 @@ export async function getAllTagSlugs() {
     .from(tags);
   return result.map((r) => r.slug);
 }
+
+// =====================
+// ACTIVITY TYPE BY REGION
+// =====================
+
+/**
+ * Get activity types that have at least one activity in a region
+ * Returns activity type + count of activities
+ */
+export async function getActivityTypesForRegion(regionId: number) {
+  const result = await db
+    .select({
+      activityType: activityTypes,
+      count: sql<number>`count(${activities.id})`,
+    })
+    .from(activities)
+    .innerJoin(activityTypes, eq(activities.activityTypeId, activityTypes.id))
+    .where(
+      and(
+        eq(activities.regionId, regionId),
+        eq(activities.status, "published")
+      )
+    )
+    .groupBy(activityTypes.id)
+    .orderBy(desc(sql`count(${activities.id})`));
+
+  return result;
+}

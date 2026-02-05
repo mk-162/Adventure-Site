@@ -12,6 +12,8 @@ import MapView from "@/components/ui/MapView";
 import { ShareButton } from "@/components/ui/ShareButton";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import { JsonLd, createLocalBusinessSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
+import { ViewTracker } from "@/components/ui/ViewTracker";
+import { getEffectiveTier, isTrialActive } from "@/lib/trial-utils";
 import { 
   ChevronRight, 
   MapPin, 
@@ -85,6 +87,10 @@ export default async function OperatorProfilePage({ params }: Props) {
   const operator = data;
   const activities = data.activities || [];
   const trustSignals = formatTrustSignals(operator.trustSignals);
+
+  const effectiveTier = getEffectiveTier(operator as any);
+  const isTrial = isTrialActive(operator as any);
+  const isPremium = effectiveTier === "premium";
 
   // Get activity types for this operator's activities
   const activityTypes = await getAllActivityTypes();
@@ -179,7 +185,7 @@ export default async function OperatorProfilePage({ params }: Props) {
                   <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary leading-tight">
                     {operator.name}
                   </h1>
-                  <VerifiedBadge claimStatus={operator.claimStatus} size="lg" />
+                  <VerifiedBadge claimStatus={effectiveTier as any} isTrial={isTrial} size="lg" />
                 </div>
                 {operator.tagline && (
                   <p className="text-gray-500 text-sm sm:text-base mt-1">{operator.tagline}</p>
@@ -301,7 +307,7 @@ export default async function OperatorProfilePage({ params }: Props) {
             </section>
 
             {/* Claim Banner — inline for mobile (sidebar handles desktop) */}
-            {operator.claimStatus !== "claimed" && operator.claimStatus !== "premium" && (
+            {operator.claimStatus !== "claimed" && !isPremium && (
               <div className="lg:hidden">
                 <ClaimListingBanner
                   operatorSlug={operator.slug}
@@ -494,7 +500,7 @@ export default async function OperatorProfilePage({ params }: Props) {
           {/* Sidebar Column (desktop only) */}
           <aside className="hidden lg:block lg:col-span-4 space-y-6">
             {/* Claim CTA - Only if not claimed */}
-            {operator.claimStatus !== "claimed" && operator.claimStatus !== "premium" && (
+            {operator.claimStatus !== "claimed" && !isPremium && (
               <ClaimListingBanner
                 operatorSlug={operator.slug}
                 operatorName={operator.name}
@@ -829,6 +835,7 @@ export default async function OperatorProfilePage({ params }: Props) {
           </div>
         </div>
       </div>
+      <ViewTracker pageType="operator" pageSlug={operator.slug} operatorId={operator.id} />
     </div>
   );
 }

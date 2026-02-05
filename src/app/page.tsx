@@ -13,6 +13,7 @@ import { Newsletter } from "@/components/home/newsletter";
 import { JsonLd, createWebSiteSchema, createOrganizationSchema } from "@/components/seo/JsonLd";
 import { getFeaturedItineraries } from "@/lib/queries";
 import { ThisWeekendWidget } from "@/components/events/ThisWeekendWidget";
+import { getEffectiveTier } from "@/lib/trial-utils";
 
 /** Build a map of region slug → activity type slugs that exist in that region */
 async function _getRegionActivityMap(): Promise<Record<string, string[]>> {
@@ -47,8 +48,11 @@ async function _getHomePageData() {
     db.select().from(activities).where(eq(activities.status, "published")).limit(10),
     db.select().from(events).where(eq(events.status, "published")).orderBy(asc(events.dateStart)).limit(10),
     db.select().from(operators).where(
-      sql`${operators.claimStatus} IN ('premium', 'claimed')`
-    ).orderBy(sql`CASE WHEN ${operators.claimStatus} = 'premium' THEN 0 ELSE 1 END`).limit(8),
+      sql`(${operators.claimStatus} IN ('premium', 'claimed') OR (${operators.trialTier} = 'premium' AND ${operators.trialExpiresAt} > NOW()))`
+    ).orderBy(sql`CASE
+      WHEN ${operators.claimStatus} = 'premium' THEN 0
+      WHEN ${operators.trialTier} = 'premium' AND ${operators.trialExpiresAt} > NOW() THEN 0
+      ELSE 1 END`).limit(8),
     db.select().from(activityTypes).orderBy(asc(activityTypes.name)),
     getFeaturedItineraries(3),
     getRegionActivityMap(),
@@ -141,7 +145,7 @@ export default async function HomePage() {
                         <span className="text-xs text-gray-500">{op.googleRating}</span>
                       </div>
                     )}
-                    {op.claimStatus === "premium" && (
+                    {getEffectiveTier(op as any) === "premium" && (
                       <span className="inline-block mt-2 text-[10px] font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-2 py-0.5 rounded-full" aria-label="Sponsored listing">Sponsored</span>
                     )}
                   </a>

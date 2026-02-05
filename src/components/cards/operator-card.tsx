@@ -2,6 +2,7 @@ import Link from "next/link";
 import { MapPin, Star, ChevronRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
+import { getEffectiveTier, isTrialActive } from "@/lib/trial-utils";
 
 interface OperatorCardProps {
   operator: {
@@ -17,13 +18,21 @@ interface OperatorCardProps {
     activityTypes: string[] | null;
     uniqueSellingPoint: string | null;
     logoUrl: string | null;
+    // Trial fields
+    billingTier?: string | null;
+    trialTier?: string | null;
+    trialExpiresAt?: Date | null;
   };
   variant?: "default" | "featured" | "compact";
 }
 
 export function OperatorCard({ operator, variant = "default" }: OperatorCardProps) {
-  const isClaimed = operator.claimStatus === "claimed" || operator.claimStatus === "premium";
-  const isPremium = operator.claimStatus === "premium";
+  const effectiveTier = getEffectiveTier(operator as any);
+  const isTrial = isTrialActive(operator as any);
+
+  // Use effectiveTier for premium check
+  const isPremium = effectiveTier === "premium";
+  const isClaimed = operator.claimStatus === "claimed" || isPremium;
 
   if (variant === "featured") {
     return (
@@ -45,7 +54,7 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
                   {operator.name}
                 </h3>
                 <div className="flex items-center gap-2 mt-1">
-                  <VerifiedBadge claimStatus={operator.claimStatus} size="lg" />
+                  <VerifiedBadge claimStatus={effectiveTier as any} isTrial={isTrial} size="lg" />
                 </div>
                 {operator.tagline && (
                   <p className="text-sm text-gray-500 mt-1">{operator.tagline}</p>
@@ -133,7 +142,7 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
             <h3 className="font-semibold text-primary group-hover:text-accent-hover transition-colors truncate">
               {operator.name}
             </h3>
-            <VerifiedBadge claimStatus={operator.claimStatus} size="sm" showLabel={false} />
+            <VerifiedBadge claimStatus={effectiveTier as any} isTrial={isTrial} size="sm" showLabel={false} />
           </div>
 
           {operator.address && (

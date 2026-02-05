@@ -11,6 +11,7 @@ import {
   pgEnum,
   unique,
   index,
+  date,
 } from "drizzle-orm/pg-core";
 import { relations } from "drizzle-orm";
 
@@ -652,6 +653,12 @@ export const operators = pgTable("operators", {
   adminNotes: text("admin_notes"), // internal CRM notes
   verifiedAt: timestamp("verified_at"),
   verifiedByEmail: varchar("verified_by_email", { length: 255 }),
+  // Trial fields
+  trialTier: varchar("trial_tier", { length: 50 }), // 'enhanced' or 'premium'
+  trialStartedAt: timestamp("trial_started_at"),
+  trialExpiresAt: timestamp("trial_expires_at"),
+  trialConvertedAt: timestamp("trial_converted_at"), // null = not converted
+  trialSource: varchar("trial_source", { length: 100 }), // 'outreach', 'self_service', 'campaign_xyz'
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 }, (table) => [
@@ -1227,6 +1234,59 @@ export const guidePageSpotsRelations = relations(guidePageSpots, ({ one }) => ({
   operator: one(operators, { fields: [guidePageSpots.operatorId], references: [operators.id] }),
   activity: one(activities, { fields: [guidePageSpots.activityId], references: [activities.id] }),
 }));
+
+// =====================
+// ANALYTICS & GROWTH
+// =====================
+
+export const pageViews = pgTable("page_views", {
+  id: serial("id").primaryKey(),
+  siteId: integer("site_id").references(() => sites.id).notNull(),
+  pageType: varchar("page_type", { length: 50 }).notNull(), // 'operator', 'activity', 'itinerary', 'event'
+  pageSlug: varchar("page_slug", { length: 255 }).notNull(),
+  operatorId: integer("operator_id").references(() => operators.id), // null for non-operator pages
+  viewDate: date("view_date").notNull(), // aggregate by day
+  viewCount: integer("view_count").default(0).notNull(),
+  uniqueVisitors: integer("unique_visitors").default(0).notNull(),
+}, (table) => [
+  index("page_views_operator_id_idx").on(table.operatorId),
+  index("page_views_page_slug_idx").on(table.pageSlug),
+  index("page_views_date_idx").on(table.viewDate),
+  // Unique constraint for upsert
+  unique("page_views_unique").on(table.siteId, table.pageType, table.pageSlug, table.viewDate),
+]);
+
+export const outreachCampaigns = pgTable("outreach_campaigns", {
+  id: serial("id").primaryKey(),
+  siteId: integer("site_id").references(() => sites.id).notNull(),
+  name: varchar("name", { length: 255 }).notNull(),
+  slug: varchar("slug", { length: 255 }).notNull(),
+  subject: varchar("subject", { length: 255 }),
+  bodyTemplate: text("body_template"), // HTML email template
+  status: varchar("status", { length: 50 }).default("draft").notNull(), // draft, sending, sent, paused
+  sentCount: integer("sent_count").default(0),
+  openedCount: integer("opened_count").default(0),
+  clickedCount: integer("clicked_count").default(0),
+  claimedCount: integer("claimed_count").default(0), // operators who claimed listing after email
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  sentAt: timestamp("sent_at"),
+});
+
+export const outreachRecipients = pgTable("outreach_recipients", {
+  id: serial("id").primaryKey(),
+  campaignId: integer("campaign_id").references(() => outreachCampaigns.id).notNull(),
+  operatorId: integer("operator_id").references(() => operators.id).notNull(),
+  email: varchar("email", { length: 255 }).notNull(),
+  status: varchar("status", { length: 50 }).default("pending").notNull(), // pending, sent, opened, clicked, bounced, unsubscribed
+  sentAt: timestamp("sent_at"),
+  openedAt: timestamp("opened_at"),
+  clickedAt: timestamp("clicked_at"),
+  claimedAt: timestamp("claimed_at"),
+}, (table) => [
+  index("outreach_recipients_campaign_id_idx").on(table.campaignId),
+  index("outreach_recipients_operator_id_idx").on(table.operatorId),
+  unique("outreach_unique_recipient").on(table.campaignId, table.operatorId),
+]);
 
 // =====================
 // USER ACCOUNTS

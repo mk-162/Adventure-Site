@@ -13,6 +13,7 @@ import { ClaimListingBanner } from "@/components/operators/ClaimListingBanner";
 import { AdvertiseWidget } from "@/components/commercial/AdvertiseWidget";
 import { TopTip } from "@/components/widgets/TopTip";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
+import { ViewTracker } from "@/components/ui/ViewTracker";
 import { 
   MapPin, Clock, Calendar, Users, Star, 
   CheckCircle, XCircle, ExternalLink, Share2, Navigation
@@ -670,6 +671,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
         )}
       </div>
     </div>
+    <ViewTracker pageType="activity" pageSlug={activity.slug} operatorId={operator?.id} />
     </>
   );
 }

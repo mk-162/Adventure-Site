@@ -11,7 +11,7 @@ import {
   tags,
   posts
 } from '@/db/schema';
-import { eq } from 'drizzle-orm';
+import { eq, sql } from 'drizzle-orm';
 
 const BASE_URL = 'https://adventurewales.co.uk';
 
@@ -34,7 +34,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     db.select({ slug: events.slug, createdAt: events.createdAt }).from(events).where(eq(events.status, 'published')),
     db.select({ slug: answers.slug, createdAt: answers.createdAt }).from(answers).where(eq(answers.status, 'published')),
     db.select({ slug: activityTypes.slug }).from(activityTypes),
-    db.select({ slug: operators.slug, createdAt: operators.createdAt }).from(operators).where(eq(operators.claimStatus, 'claimed')),
+    db.select({ slug: operators.slug, createdAt: operators.createdAt }).from(operators).where(
+      sql`(${operators.claimStatus} IN ('claimed', 'premium') OR (${operators.trialTier} = 'premium' AND ${operators.trialExpiresAt} > NOW()))`
+    ),
     db.select({ slug: tags.slug, createdAt: tags.createdAt }).from(tags),
     db.select({ slug: posts.slug, createdAt: posts.createdAt, updatedAt: posts.updatedAt }).from(posts).where(eq(posts.status, 'published'))
   ]);

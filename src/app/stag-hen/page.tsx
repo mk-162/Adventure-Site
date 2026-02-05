@@ -191,7 +191,6 @@ export default async function StagHenPage() {
           {stagOperators.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {stagOperators.map(op => (
-                // @ts-expect-error - OperatorCard expects a specific type but Drizzle returns inferred type which might have minor mismatch in nullability or added fields
                 <OperatorCard key={op.id} operator={op} />
               ))}
             </div>

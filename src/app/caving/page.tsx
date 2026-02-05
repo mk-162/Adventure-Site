@@ -615,13 +615,13 @@ export default async function CavingHubPage() {
                   <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent-hover transition-colors">
                     {row.itinerary.title}
                   </h3>
-                  {row.itinerary.days && (
+                  {row.itinerary.durationDays && (
                     <div className="text-sm text-accent-hover font-medium mb-2">
-                      {row.itinerary.days} days
+                      {row.itinerary.durationDays} days
                     </div>
                   )}
                   <p className="text-sm text-gray-600 line-clamp-2">
-                    {row.itinerary.summary}
+                    {row.itinerary.description}
                   </p>
                 </Link>
               ))}
@@ -665,26 +665,20 @@ export default async function CavingHubPage() {
                   className="group bg-white rounded-2xl overflow-hidden shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-accent-hover/30 transition-all"
                 >
                   <div className="h-40 bg-gray-200 relative">
-                    {row.accommodation.images?.[0] ? (
-                      <img
-                        src={row.accommodation.images[0]}
-                        alt={row.accommodation.name}
-                        className="w-full h-full object-cover"
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-gray-400">
-                        <Home className="h-12 w-12" />
-                      </div>
-                    )}
+                    <div className="w-full h-full flex items-center justify-center text-gray-400">
+                      <Home className="h-12 w-12" />
+                    </div>
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-primary mb-1 group-hover:text-accent-hover transition-colors">
                       {row.accommodation.name}
                     </h3>
-                    <div className="flex items-center gap-1 text-xs text-gray-500 mb-2">
-                      <MapPin className="h-3 w-3" />
-                      {row.accommodation.location}
-                    </div>
+                    {row.accommodation.address && (
+                      <div className="flex items-center gap-1 text-xs text-gray-500 mb-2">
+                        <MapPin className="h-3 w-3" />
+                        {row.accommodation.address}
+                      </div>
+                    )}
                     {row.accommodation.priceFrom && (
                       <div className="text-sm font-semibold text-primary">
                         From £{row.accommodation.priceFrom}/night

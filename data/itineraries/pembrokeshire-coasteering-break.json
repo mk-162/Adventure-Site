@@ -1,227 +1,358 @@
 {
   "slug": "pembrokeshire-coasteering-break",
   "title": "Pembrokeshire Coasteering Break",
-  "tagline": "Two days of cliff jumping and coastal thrills",
+  "tagline": "Two days of cliff jumping and coastal thrills in the birthplace of coasteering",
   "region": "pembrokeshire",
   "days": 2,
   "difficulty": "moderate",
   "bestSeason": "May-September",
-  "groupType": "friends, couples",
-  "priceFrom": 350,
-  "priceTo": 600,
-  "budgetPriceFrom": 200,
-  "budgetPriceTo": 350,
+  "groupType": "couples, friends, stag/hen groups",
+  "priceFrom": 300,
+  "priceTo": 450,
+  "budgetPriceFrom": 100,
+  "budgetPriceTo": 200,
   "highlights": [
-    "TYF coasteering",
-    "Blue Lagoon",
-    "St Davids"
+    "TYF coasteering at the birthplace of the sport",
+    "Abereiddy Blue Lagoon",
+    "St Davids - Britain's smallest city"
   ],
   "activityTypes": [
     "coasteering",
+    "wild-swimming",
     "kayaking"
   ],
   "suitableFor": "Active couples or groups of friends who enjoy a physical challenge and aren't afraid of heights or cold water. Confident swimmers are essential.",
   "notSuitableFor": "Those with significant mobility issues, a fear of heights, or who are not comfortable swimming in the sea. Young children may find it too challenging.",
-  "weatherDependency": "high",
+  "weatherDependency": "medium",
   "packingEssentials": [
     "Swimsuit",
-    "Towel",
-    "Sturdy footwear (old trainers are ideal)",
+    "Towel (quick-dry recommended)",
+    "Sturdy footwear (old trainers are ideal for coasteering)",
     "Waterproof jacket",
-    "Sunscreen",
-    "Change of clothes"
+    "Sunscreen (sea reflection intensifies UV)",
+    "Change of warm clothes for after",
+    "Snacks and water",
+    "Dry bag for valuables"
   ],
+  "drivingTimes": {
+    "fromCardiff": "2hr 45min via M4/A40",
+    "fromBristol": "3hr via M5/M4/A40",
+    "fromLondon": "5hr via M4/A40",
+    "fromBirmingham": "3hr 30min via M5/M50/A40",
+    "stDavidsToPorthgain": "10min",
+    "stDavidsToAbereiddy": "15min",
+    "stDavidsToWhitesands": "10min"
+  },
   "stops": [
     {
       "day": 1,
       "orderIndex": 1,
       "time": "09:00",
       "type": "activity",
-      "title": "Coasteering Classic",
-      "description": "Explore the Pembrokeshire coastline by swimming, scrambling, and jumping into the sea with TYF Adventure. Expect thrilling cliff jumps and hidden coves.",
-      "duration": "3.5 hours",
-      "costFrom": 60,
-      "costTo": 60,
-      "lat": 51.881,
-      "lng": -5.266,
-      "travelToNext": "5 minute walk",
-      "travelMode": "walk",
+      "title": "Coasteering at Abereiddy Blue Lagoon",
+      "description": "Experience coasteering where it was invented! TYF Adventure pioneered the sport here in 1986. Jump from cliffs into the stunning turquoise Blue Lagoon (a flooded slate quarry), explore sea caves, scramble across rocks, and swim in the Atlantic. All equipment provided including wetsuit, helmet, and buoyancy aid. Sessions tailored to group ability with jumps from 1m to 10m (all optional).",
+      "duration": "3-3.5 hours",
+      "operator": "TYF Adventure",
+      "operatorUrl": "https://www.tyf.com/coasteering",
+      "operatorPhone": "01437 721611",
+      "alternativeOperators": [
+        {
+          "name": "Celtic Quest Coasteering",
+          "url": "https://www.celticquestcoasteering.com",
+          "location": "Abereiddy",
+          "price": "from £50pp",
+          "notes": "Smaller groups, great reviews"
+        },
+        {
+          "name": "Preseli Venture",
+          "url": "https://www.preseliventure.co.uk",
+          "location": "Solva area",
+          "price": "from £55pp",
+          "notes": "Eco-focused, also offers wild swimming"
+        }
+      ],
+      "bookingEssential": true,
+      "costFrom": 55,
+      "costTo": 75,
+      "lat": 51.9333,
+      "lng": -5.2000,
+      "travelToNext": "10min drive to Porthgain",
+      "travelMode": "drive",
+      "requirements": {
+        "minAge": 8,
+        "swimAbility": "Must be able to swim 25m confidently",
+        "fitness": "Reasonable - involves climbing, swimming, jumping"
+      },
+      "insiderTip": "The Blue Lagoon was a slate quarry until 1910 when a storm breached the sea wall. The turquoise colour comes from minerals in the rock. Book the morning session for calmer seas and better light for photos.",
       "wetAlt": {
-        "title": "St Davids Cathedral Visit",
-        "description": "Explore the magnificent St Davids Cathedral, a historic pilgrimage site. Learn about its history and admire the architecture.",
+        "title": "St Davids Cathedral Tour",
+        "description": "Explore Britain's smallest city and its magnificent 12th-century cathedral. The cathedral sits in a hidden valley - stunning architecture and 1,400 years of history. Free to enter, guided tours available.",
         "costFrom": 0,
-        "costTo": 5
+        "costTo": 8,
+        "website": "https://www.stdavidscathedral.org.uk"
       },
       "budgetAlt": {
-        "title": "Explore St Davids",
-        "description": "Wander the streets of St Davids, the UK's smallest city, visit the ruins of the Bishop's Palace.",
+        "title": "Coastal Path Walk: Abereiddy to Porthgain",
+        "description": "Beautiful 2.5-mile section of the Pembrokeshire Coast Path. Dramatic cliffs, wildlife, and ends at Porthgain harbour for lunch. Free!",
         "costFrom": 0,
         "costTo": 0
-      }
+      },
+      "postcode": "SA62 6DT"
     },
     {
       "day": 1,
       "orderIndex": 2,
-      "time": "12:30",
+      "time": "13:00",
       "type": "food",
-      "title": "The Refectory",
+      "title": "The Sloop Inn",
       "foodType": "lunch",
-      "description": "A cafe in St Davids with local produce and a great lunch menu.",
-      "costFrom": 15,
-      "costTo": 25,
-      "lat": 51.8815,
-      "lng": -5.2665,
-      "travelToNext": "10 minute drive",
-      "travelMode": "walk",
-      "budgetAlt": {
-        "title": "Packed lunch at Porthclais Harbour",
-        "description": "Enjoy your own sandwiches with stunning views of Porthclais Harbour."
+      "description": "Iconic harbourside pub in the picturesque former quarry village of Porthgain. Famous for fresh local seafood, crab sandwiches, and hearty pub classics. Book ahead for weekend lunches as it gets packed. Outdoor seating overlooking the harbour.",
+      "costFrom": 12,
+      "costTo": 28,
+      "lat": 51.9428,
+      "lng": -5.1831,
+      "website": "https://www.sloop.co.uk",
+      "phone": "01348 831449",
+      "openingHours": "12-3pm, 6-9pm (food)",
+      "travelToNext": "20min drive to St Davids",
+      "travelMode": "drive",
+      "insiderTip": "The crab sandwich is legendary - caught locally that day. Arrive before 12:30 for a harbour-view table without booking.",
+      "alternative": {
+        "title": "The Shed Bistro (Porthgain)",
+        "description": "More upmarket fish restaurant in the old harbour buildings. Excellent seafood platters. Booking essential.",
+        "costFrom": 25,
+        "costTo": 45
       },
-      "postcode": "SA62 6SL"
+      "budgetAlt": {
+        "title": "Beach picnic at Whitesands",
+        "description": "Pick up supplies from St Davids Food & Wine and picnic on Pembrokeshire's best surfing beach."
+      },
+      "postcode": "SA62 5BN"
     },
     {
       "day": 1,
       "orderIndex": 3,
-      "time": "14:00",
+      "time": "15:00",
       "type": "activity",
-      "title": "Sea Kayaking Safari",
-      "description": "After lunch, embark on a sea kayaking adventure with TYF, exploring the coastline from a different perspective. Keep an eye out for seals and seabirds.",
-      "duration": "3.5 hours",
-      "costFrom": 60,
-      "costTo": 85,
-      "lat": 51.881,
-      "lng": -5.266,
-      "travelToNext": "20 minute drive",
-      "travelMode": "drive",
+      "title": "Explore St Davids",
+      "description": "Britain's smallest city (population ~1,800) is a delight to explore. Visit the stunning 12th-century cathedral hidden in a valley, browse independent shops, art galleries, and cafes. The Bishop's Palace ruins are worth the entrance fee.",
+      "duration": "2-3 hours",
+      "costFrom": 0,
+      "costTo": 12,
+      "costNote": "Cathedral free, Bishop's Palace £6, parking £4-8",
+      "lat": 51.8810,
+      "lng": -5.2660,
+      "travelToNext": "Walk to accommodation",
+      "travelMode": "walk",
+      "insiderTip": "The cathedral is hidden from the main square - walk down past the shops to discover it. Evensong at 6pm is beautiful and free.",
       "wetAlt": {
-        "title": "Oriel y Parc Gallery and Visitor Centre",
-        "description": "Browse local art and learn about the Pembrokeshire Coast National Park. Includes a cafe.",
+        "title": "Oriel y Parc Gallery & Visitor Centre",
+        "description": "Modern gallery with exhibitions about Pembrokeshire's landscape and culture. Free entry, excellent cafe, and a great rainy day stop.",
         "costFrom": 0,
-        "costTo": 0
-      },
-      "budgetAlt": {
-        "title": "Walk the Pembrokeshire Coast Path",
-        "description": "Hike a section of the Pembrokeshire Coast Path, taking in the rugged scenery. Many start points near St Davids.",
-        "costFrom": 0,
-        "costTo": 0
+        "costTo": 0,
+        "website": "https://www.orielyparc.co.uk"
       }
     },
     {
       "day": 1,
       "orderIndex": 4,
-      "time": "17:30",
+      "time": "18:00",
       "type": "accommodation",
       "title": "St Davids YHA",
-      "description": "A comfortable and affordable hostel in the heart of St Davids, perfect for budget-conscious adventurers.",
-      "costFrom": 25,
-      "costTo": 70,
-      "lat": 51.88,
-      "lng": -5.265,
-      "travelToNext": "10 minute drive",
+      "description": "Modern eco-friendly hostel built from sustainable materials, a 10-minute walk from the city centre. Private rooms and dorms available. Self-catering kitchen, lounge with log burner, and bike storage. One of YHA's flagship properties.",
+      "costFrom": 18,
+      "costTo": 50,
+      "costNote": "Dorms from £18, private rooms from £45",
+      "lat": 51.8830,
+      "lng": -5.2580,
+      "website": "https://www.yha.org.uk/hostel/yha-st-davids",
+      "phone": "0345 371 9146",
+      "travelToNext": "15min walk to Whitesands",
       "travelMode": "drive",
+      "insiderTip": "Book a private room with cathedral view if available. The communal kitchen is excellent for self-catering - there's a Coop in St Davids for supplies.",
       "budgetAlt": {
-        "title": "TYF Cliff-top Campsite",
-        "description": "Camping with stunning coastal views near St Davids at Porthclais Harbour. Great for a budget outdoor stay.",
-        "costFrom": 15,
-        "costTo": 30
+        "title": "Caerfai Bay Campsite",
+        "description": "Beautiful clifftop campsite walking distance from St Davids. Sea views from many pitches. Basic facilities but stunning location. Organic farm with small shop.",
+        "costFrom": 12,
+        "costTo": 25,
+        "website": "https://www.caerfaibay.co.uk"
       },
-      "postcode": "SA62 6SE"
+      "premiumAlt": {
+        "title": "Twr y Felin Hotel",
+        "description": "Contemporary boutique hotel in a converted windmill tower. Art-filled interiors, excellent restaurant, and spa. A proper treat.",
+        "costFrom": 150,
+        "costTo": 250,
+        "website": "https://www.twryfelinhotel.com"
+      },
+      "postcode": "SA62 6PR"
     },
     {
       "day": 2,
       "orderIndex": 1,
       "time": "09:00",
       "type": "activity",
-      "title": "Coasteering",
-      "description": "Experience the thrill of coasteering at the Blue Lagoon with MUUK Adventures. Scramble, swim and jump in this famous location.",
-      "duration": "Half day",
-      "costFrom": 50,
-      "costTo": 70,
-      "lat": 51.931,
-      "lng": -5.203,
-      "travelToNext": "15 minute drive",
+      "title": "Sea Kayaking around Ramsey Island",
+      "description": "Paddle around the dramatic coastline near Ramsey Island, home to grey seals, porpoises, and rich birdlife. Suitable for beginners with a guided session. See sea caves, arches, and possibly seals hauled out on rocks. All equipment provided.",
+      "duration": "3-4 hours",
+      "operator": "TYF Adventure",
+      "operatorUrl": "https://www.tyf.com/sea-kayaking",
+      "operatorPhone": "01437 721611",
+      "alternativeOperators": [
+        {
+          "name": "Thousand Islands Expeditions",
+          "description": "Boat trips to Ramsey Island for wildlife watching if kayaking not preferred",
+          "url": "https://www.thousandislands.co.uk",
+          "price": "from £35pp"
+        }
+      ],
+      "bookingEssential": true,
+      "costFrom": 55,
+      "costTo": 85,
+      "lat": 51.8650,
+      "lng": -5.3250,
+      "travelToNext": "25min drive to Whitesands Beach",
       "travelMode": "drive",
+      "requirements": {
+        "minAge": 12,
+        "swimAbility": "Must be able to swim",
+        "fitness": "Moderate upper body strength helpful"
+      },
+      "insiderTip": "Ask your guide to take you into Cathedral Cave if conditions allow - it's like paddling into a natural amphitheatre. Morning sessions often have calmer seas.",
       "wetAlt": {
-        "title": "National Wool Museum",
-        "description": "Discover the history of the Welsh wool industry, located a short drive from the coast.",
-        "costFrom": 7,
-        "costTo": 9
+        "title": "Second Coasteering Session",
+        "description": "If you loved yesterday's coasteering, book another session at a different location for variety. Try Preseli Venture at Solva for a different perspective.",
+        "costFrom": 55,
+        "costTo": 75
       },
       "budgetAlt": {
-        "title": "Explore Abereiddy Beach",
-        "description": "Walk along the dramatic coastline around the Blue Lagoon, taking in the views.",
-        "costFrom": 0,
-        "costTo": 0
+        "title": "Ramsey Island Boat Trip",
+        "description": "Non-landing boat trip around Ramsey Island with Thousand Islands. See grey seals, porpoises, and seabirds without getting in the water. Great alternative if weather turns.",
+        "costFrom": 35,
+        "costTo": 45
       }
     },
     {
       "day": 2,
       "orderIndex": 2,
-      "time": "13:00",
+      "time": "13:30",
       "type": "food",
-      "title": "The Sloop Inn",
+      "title": "Cwych Cafe (St Davids)",
       "foodType": "lunch",
-      "description": "A traditional pub in Porthgain, serving classic pub fare with a sea view.",
-      "costFrom": 15,
-      "costTo": 25,
-      "lat": 51.9355,
-      "lng": -5.1833,
-      "travelToNext": "20 minute drive",
+      "description": "Popular cafe in the centre of St Davids serving excellent coffee, homemade cakes, and light lunches. Welsh rarebit, soups, and local produce. Vegetarian-friendly.",
+      "costFrom": 8,
+      "costTo": 18,
+      "lat": 51.8820,
+      "lng": -5.2680,
+      "openingHours": "9am-5pm",
+      "travelToNext": "10min drive to Whitesands",
       "travelMode": "drive",
-      "budgetAlt": {
-        "title": "Picnic at Porthgain Harbour",
-        "description": "Enjoy your own lunch overlooking the picturesque Porthgain Harbour."
+      "alternative": {
+        "title": "Sampler (St Davids)",
+        "description": "Tapas-style small plates and excellent wine. More of a treat for a longer lunch."
       },
-      "postcode": "SA62 6DP"
+      "budgetAlt": {
+        "title": "St Davids Food & Wine + picnic",
+        "description": "Excellent deli with local cheeses, meats, and bread. Perfect for a beach picnic at Whitesands."
+      },
+      "postcode": "SA62 6RQ"
     },
     {
       "day": 2,
       "orderIndex": 3,
       "time": "15:00",
       "type": "activity",
-      "title": "Boat Trip - Ramsey Island",
-      "description": "Take a boat trip from St Justinian to Ramsey Island, a haven for wildlife. Spot seals, seabirds and maybe even dolphins.",
+      "title": "Whitesands Beach Afternoon",
+      "description": "End your trip at Pembrokeshire's premier beach. Whitesands (Traeth Mawr) offers golden sand, excellent waves for swimming or surfing, and views to Ramsey Island. Surf hire available if you want to catch a wave. Blue Flag beach with lifeguards in summer.",
       "duration": "2-3 hours",
-      "costFrom": 45,
-      "costTo": 65,
-      "lat": 51.862,
-      "lng": -5.329,
-      "travelToNext": null,
-      "travelMode": null,
-      "wetAlt": {
-        "title": "Solva Woollen Mill",
-        "description": "Explore a working woollen mill, and learn about the traditional craft of weaving.",
-        "costFrom": 0,
-        "costTo": 0
+      "costFrom": 0,
+      "costTo": 30,
+      "costNote": "Parking £6-8, surfboard hire £15-20",
+      "lat": 51.8940,
+      "lng": -5.2990,
+      "surfHire": {
+        "operator": "Ma Sime's Surf Shack",
+        "price": "Boards from £15, wetsuits from £10",
+        "location": "Beach car park"
       },
-      "budgetAlt": {
-        "title": "Walk the St Justinian Peninsula",
-        "description": "Hike along the coastal path from St Justinian, with views of Ramsey Island.",
+      "travelToNext": "Journey home via A40",
+      "travelMode": "drive",
+      "insiderTip": "The beach cafe does excellent chips. If you're an early riser, this is one of the best sunrise spots in Wales - the sun comes up over the headland.",
+      "wetAlt": {
+        "title": "Cardigan Guildhall Market",
+        "description": "If rain sets in, drive 30 mins to Cardigan for their excellent covered market. Local produce, crafts, and a great cafe.",
         "costFrom": 0,
-        "costTo": 0
-      }
+        "costTo": 20
+      },
+      "postcode": "SA62 6PS"
     }
   ],
   "costBreakdown": {
     "standard": {
-      "activities": 215,
+      "activities": 185,
       "accommodation": 50,
       "food": 60,
-      "transport": 25,
-      "total": 350
+      "transport": 55,
+      "total": 350,
+      "notes": "Based on 2 adults, hostel accommodation, 2 activities"
     },
     "budget": {
-      "activities": 50,
-      "accommodation": 15,
-      "food": 20,
-      "transport": 15,
-      "total": 100
+      "activities": 55,
+      "accommodation": 24,
+      "food": 25,
+      "transport": 40,
+      "total": 144,
+      "notes": "Camping, one paid activity, packed lunches"
+    },
+    "premium": {
+      "activities": 200,
+      "accommodation": 200,
+      "food": 100,
+      "transport": 60,
+      "total": 560,
+      "notes": "Boutique hotel, all activities, restaurant meals"
     }
   },
   "knowBeforeYouGo": {
-    "weather": "Pembrokeshire weather can be unpredictable, even in summer. Be prepared for rain and wind, and check the forecast before you go. Sea temperatures are cold, even in summer, wetsuits are essential for coasteering and kayaking.",
-    "traffic": "Traffic can be heavy in Pembrokeshire during peak season, especially around St Davids and the coastal roads. Allow extra time for travel and parking. Parking at popular spots like the Blue Lagoon can fill up quickly, arrive early or consider using public transport.",
-    "booking": "Coasteering and kayaking activities should be booked in advance, especially during peak season. Accommodation also fills up quickly, so book early to avoid disappointment. Ramsey Island boat trips are also popular and should be booked ahead of time.",
-    "fitness": "This trip requires a moderate level of fitness. Coasteering and kayaking involve swimming, scrambling, and some physical exertion. You should be comfortable swimming in the sea and able to walk for several hours."
-  }
+    "weather": "Pembrokeshire has a mild but changeable maritime climate. Sea temperatures are cold (14-17°C in summer) but wetsuits make coasteering comfortable. Atlantic swells can make activities weather-dependent - operators will switch locations or reschedule if needed.",
+    "traffic": "The A40 can get congested, especially around Carmarthen. Allow extra time on summer weekends. St Davids parking is limited and fills quickly in peak season - arrive before 10am or use the Puffin Shuttle bus from Haverfordwest.",
+    "booking": "Coasteering and kayaking MUST be booked in advance, especially in summer. Same-day bookings are rarely possible. Book accommodation early for summer weekends - Pembrokeshire is extremely popular.",
+    "fitness": "Coasteering requires reasonable fitness, swimming ability, and a willingness to get fully immersed in cold water. All jumps are optional - you can climb down if you prefer. Sea kayaking requires moderate upper body strength but suitable for beginners.",
+    "puffinShuttle": "The Celtic Coaster (Puffin Shuttle) bus runs in summer connecting St Davids with key beaches and the coast path. Useful for linear walks. Runs late May to early September.",
+    "seals": "Grey seals breed on Pembrokeshire's beaches October-December. Keep your distance (at least 50m) if you see any - disturbing them is illegal and dangerous."
+  },
+  "extensions": {
+    "addDay": {
+      "title": "Add Skomer Island Puffin Trip",
+      "description": "Extend your trip with a day trip to Skomer Island (April-July) to see the famous puffin colony. Boats from Martin's Haven, booking essential weeks in advance.",
+      "costFrom": 30,
+      "costTo": 50,
+      "website": "https://www.welshwildlife.org/skomer-skokholm"
+    },
+    "alternative": {
+      "title": "Surf Day at Newgale",
+      "description": "Swap kayaking for a surf lesson at Newgale Beach - Pembrokeshire's longest beach with consistent waves. Newsurf and others offer lessons.",
+      "costFrom": 40,
+      "costTo": 55
+    }
+  },
+  "mapRoute": {
+    "start": {
+      "name": "Abereiddy Blue Lagoon",
+      "lat": 51.9333,
+      "lng": -5.2000
+    },
+    "waypoints": [
+      {"name": "Porthgain", "lat": 51.9428, "lng": -5.1831},
+      {"name": "St Davids", "lat": 51.8810, "lng": -5.2660},
+      {"name": "Whitesands Beach", "lat": 51.8940, "lng": -5.2990}
+    ],
+    "totalDriving": "Approximately 45 minutes total over 2 days (excluding travel to/from Pembrokeshire)"
+  },
+  "lastUpdated": "2025-02-06",
+  "researchSources": [
+    "TYF Adventure official website",
+    "Celtic Quest Coasteering",
+    "Pembrokeshire Coast National Park",
+    "Perplexity AI research 2025"
+  ]
 }

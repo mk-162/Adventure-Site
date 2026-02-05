@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { BookOpen } from "lucide-react";
-import { getAllPosts, getAllTags, getItineraries, getOperators } from "@/lib/queries";
+import { getAllPosts, getAllTags, getItineraries, getOperators, getPostsCount } from "@/lib/queries";
 import JournalClient from "@/components/journal/JournalClient";
 
 export const metadata: Metadata = {
@@ -23,25 +23,28 @@ export default async function JournalPage({ searchParams }: Props) {
   const params = await searchParams;
   const selectedCategory = (typeof params.category === "string" ? params.category : "") || "";
   const selectedTag = (typeof params.tag === "string" ? params.tag : "") || "";
+  const currentPage = Number(typeof params.page === "string" ? params.page : "1") || 1;
+  const perPage = 12;
+  const offset = (currentPage - 1) * perPage;
 
   // Fetch all data server-side in parallel
-  const [postsData, tagsData, itinerariesData, operatorsData] = await Promise.all([
+  const [postsData, totalCount, tagsData, itinerariesData, operatorsData] = await Promise.all([
     getAllPosts({
       category: selectedCategory || undefined,
       tagSlug: selectedTag || undefined,
-      limit: 12,
+      limit: perPage,
+      offset: offset,
+    }),
+    getPostsCount({
+      category: selectedCategory || undefined,
+      tagSlug: selectedTag || undefined,
     }),
     getAllTags(),
     getItineraries({ limit: 5 }),
     getOperators({ limit: 5 }),
   ]);
 
-  // Get total count for the current filter
-  const totalPosts = await getAllPosts({
-    category: selectedCategory || undefined,
-    tagSlug: selectedTag || undefined,
-  });
-  const totalCount = totalPosts.length;
+  const totalPages = Math.ceil(totalCount / perPage);
 
   // Filter tags to post-related ones
   const postTags = tagsData.filter((t) => t.type === "activity" || t.type === "terrain" || t.type === "region");
@@ -61,13 +64,15 @@ export default async function JournalPage({ searchParams }: Props) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <JournalClient
-          initialPosts={postsData}
+          posts={postsData}
           tags={postTags}
           itineraries={itinerariesData}
           operators={operatorsData}
           selectedCategory={selectedCategory}
           selectedTag={selectedTag}
           totalCount={totalCount}
+          totalPages={totalPages}
+          currentPage={currentPage}
         />
       </div>
     </div>

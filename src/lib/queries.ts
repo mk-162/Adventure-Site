@@ -928,6 +928,37 @@ export async function getAllPosts(options?: {
   return postsWithTags;
 }
 
+export async function getPostsCount(options?: {
+  category?: string;
+  tagSlug?: string;
+}) {
+  const conditions = [eq(posts.status, "published")];
+
+  if (options?.category) {
+    conditions.push(eq(posts.category, options.category as any));
+  }
+
+  if (options?.tagSlug) {
+    const tag = await getTagBySlug(options.tagSlug);
+    if (!tag) return 0;
+
+    const result = await db
+      .select({ count: sql<number>`count(*)` })
+      .from(posts)
+      .innerJoin(postTags, eq(posts.id, postTags.postId))
+      .where(and(...conditions, eq(postTags.tagId, tag.id)));
+
+    return Number(result[0]?.count || 0);
+  }
+
+  const result = await db
+    .select({ count: sql<number>`count(*)` })
+    .from(posts)
+    .where(and(...conditions));
+
+  return Number(result[0]?.count || 0);
+}
+
 export async function getPostBySlug(slug: string) {
   const result = await db
     .select({

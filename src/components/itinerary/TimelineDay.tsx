@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { type JSX, useState } from "react";
 import Image from "next/image";
 import { ItineraryStop } from "@/types/itinerary";
 import { Flag, Bed, Utensils, Car, CloudRain, PiggyBank, MapPin, Home, Phone, EyeOff, Eye, Shuffle, Loader2, X, Coffee, Footprints, ShoppingBag, Umbrella, Beer, Camera } from "lucide-react";

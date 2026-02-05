@@ -64,8 +64,21 @@ Consider buying used gear from reputable sources (ensure it's been properly insp
 - [ ] Rope
 - [ ] Appropriate Clothing Layers
 
+## Where to Climb in Wales
+
+*   **Snowdonia:** The heartland of Welsh climbing. Idwal Slabs for beginners, the Llanberis Pass for sport and trad across all grades, and Gogarth on Anglesey's Holy Island for world-class sea cliff climbing. The slate quarries of Dinorwig above Llanberis offer unique friction climbing. [Find climbing in Snowdonia](/snowdonia/things-to-do/climbing).
+*   **Gower Peninsula:** Accessible limestone sea cliffs with shorter routes and coastal views. Great for beginners and intermediates. The crags around Rhossili and Oxwich are popular. [Find climbing on the Gower](/gower/things-to-do/climbing).
+*   **North Wales Coast:** The Great Orme at Llandudno has excellent limestone sport climbing. Craig y Forwyn near Kinmel Bay is a great crag for building confidence on sport routes.
+*   **Pembrokeshire:** Dramatic sea cliff climbing for experienced trad climbers. St Govans area and the Castlemartin range offer incredible positions.
+*   **Brecon Beacons:** Smaller crags but quieter. Good for a day out without the Snowdonia crowds.
+
 ## Pro Tips
 
-- **Check the Weather:** Welsh weather can change rapidly. Always check the forecast before heading out and pack accordingly.
-- **Communicate with Your Partner:** Ensure clear communication throughout the climb, especially regarding belaying and rope management.
-- **Respect the Environment:** Leave no trace behind. Pack out all trash and minimize your impact on the crag.
+- **Check the weather obsessively:** Welsh weather can change in minutes. Wet rock is dangerous rock. Use the Met Office and MWIS forecasts, and be honest about turning around if conditions shift.
+- **Communicate with your partner:** Clear calls between climber and belayer matter. Wind on Welsh crags can drown out voices — agree signals in advance.
+- **Know the rock type:** Snowdonia granite, Gower limestone, Dinorwig slate — they all climb differently. Slate friction climbing is an education in trust.
+- **Respect the environment:** Leave no trace. Many Welsh crags are in sensitive areas with nesting birds — check BMC Regional Access Database for seasonal restrictions.
+
+---
+
+Gear sorted? [Find climbing across Wales](/activities/climbing) or check our [mountain safety guide](/safety/mountain-safety).

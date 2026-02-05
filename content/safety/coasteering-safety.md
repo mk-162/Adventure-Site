@@ -61,3 +61,7 @@ Avoid coasteering during periods of high winds, heavy rain, or rough seas. Stron
 ## The Bottom Line
 
 Coasteering is an amazing way to explore the Welsh coastline. By understanding the risks, taking appropriate precautions, and choosing a reputable operator, you can ensure a safe and unforgettable experience. Remember, preparation and respect for the sea are key to a successful and enjoyable coasteering adventure.
+
+---
+
+Ready to go? [Find coasteering across Wales](/activities/coasteering) or read our [coasteering gear guide](/guides/coasteering-gear). Want to know more about the activity? Check our [guide to coasteering in Wales](/activities/coasteering).

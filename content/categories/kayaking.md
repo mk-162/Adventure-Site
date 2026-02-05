@@ -40,6 +40,18 @@ Okay, so you've never done this before? Don't expect to be a pro straight away! 
 
 ## How It Compares
 
-*   **Kayaking/Canoeing vs. Coasteering:** Coasteering is all about scrambling along rocks and jumping into the sea. It's more adrenaline-fueled and physically demanding. Kayaking/Canoeing offers a more relaxed pace and the chance to explore further afield.
-*   **Kayaking/Canoeing vs. Surfing:** Surfing requires a lot of skill and patience. You'll spend most of your time wiping out. Kayaking/Canoeing is easier to pick up and allows you to cover more ground.
-*   **Kayaking/Canoeing vs. Gorge Walking:** Gorge walking involves hiking and swimming through a river gorge. It's a great way to experience the Welsh countryside up close. Kayaking/Canoeing offers a similar experience but from the water. Choose based on if you prefer walking or paddling!
+*   **Kayaking/Canoeing vs. [Coasteering](/activities/coasteering):** Coasteering is all about scrambling along rocks and jumping into the sea. It's more adrenaline-fueled and physically demanding. Kayaking/Canoeing offers a more relaxed pace and the chance to explore further afield.
+*   **Kayaking/Canoeing vs. [Surfing](/activities/surfing):** Surfing requires a lot of skill and patience. You'll spend most of your time wiping out. Kayaking/Canoeing is easier to pick up and allows you to cover more ground.
+*   **Kayaking/Canoeing vs. [Gorge Walking](/activities/gorge-walking):** Gorge walking involves hiking and swimming through a river gorge. It's a great way to experience the Welsh countryside up close. Kayaking/Canoeing offers a similar experience but from the water. Choose based on if you prefer walking or paddling!
+
+## Top Spots
+
+*   **St Davids Peninsula (Pembrokeshire):** Arguably the best sea kayaking in Wales. Paddle past sea caves, arches, and the dramatic cliffs of Ramsey Island. Dolphins and seals are regular sightings. [Find kayaking in Pembrokeshire](/pembrokeshire/things-to-do/kayaking).
+*   **Anglesey coastline:** Excellent sea kayaking with sea stacks, caves, and sheltered bays. The South Stack area is spectacular. Less crowded than Pembrokeshire. [Find kayaking in Anglesey](/anglesey/things-to-do/kayaking).
+*   **River Wye (Wye Valley):** The classic Welsh canoe trip. Gentle, meandering river through stunning scenery from Hay-on-Wye to Monmouth. Multi-day trips available with riverside camping.
+*   **Llŷn Peninsula:** Remote and beautiful sea kayaking. The stretch around Bardsey Island (weather permitting) is a true adventure.
+*   **Cardigan Bay:** Paddle with dolphins. Cardigan Bay is home to the UK's largest resident population of bottlenose dolphins. New Quay is the best launch point.
+
+---
+
+Ready to paddle? [Find kayaking across Wales](/activities/kayaking) or read our [water safety guide](/safety/water-safety).

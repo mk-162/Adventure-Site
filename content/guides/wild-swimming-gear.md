@@ -54,14 +54,25 @@ title: "Wild Swimming Kit Guide"
 *   **Tow Float:** Affordable to buy, but some locations may have them available for hire.
 *   **Everything else:** Generally cheaper to buy your own essentials (towel, warm layers, etc.)
 
+## Top Wild Swimming Spots in Wales
+
+*   **Blue Lagoon, Abereiddy (Pembrokeshire):** A flooded slate quarry with deep, cold, incredibly clear water. Dramatic but the entry/exit is rocky — water shoes essential. Genuinely freezing even in August.
+*   **Llyn Padarn (Snowdonia):** A large lake near Llanberis with easy access and mountain views. Popular with open water swimmers. Water quality is good but temperatures rarely top 16°C.
+*   **Fairy Glen, Betws-y-Coed (Snowdonia):** A magical river pool surrounded by rock walls and trees. Access involves a short walk. Currents can be strong after rain — check conditions.
+*   **Barafundle Bay (Pembrokeshire):** Sheltered sea swimming in crystal-clear water. The walk down keeps crowds manageable. One of the best beach swims in Wales. [Find wild swimming in Pembrokeshire](/pembrokeshire/things-to-do/wild-swimming).
+*   **River Usk near Crickhowell (Brecon Beacons):** Gentle river swimming with gravel beaches. Warmer than mountain lakes but still fresh. [Find wild swimming in the Brecon Beacons](/brecon-beacons/things-to-do/wild-swimming).
+*   **Llyn Idwal (Snowdonia):** Dramatic glacial lake below the Devil's Kitchen. Very cold, very atmospheric, and a short walk from the road.
+
 ## Wales-Specific Tips
 
-*   **Check Water Quality:** Before swimming, check for any pollution warnings or algae blooms from Natural Resources Wales.
-*   **Be Aware of Tides:** Coastal swimming requires careful attention to tide times and currents. Consult tide tables and be cautious.
-*   **Respect the Weather:** The weather in Wales can change rapidly. Check the forecast before you go and be prepared for all conditions.
-*   **Tell Someone Your Plans:** Let someone know where you're going and when you expect to be back, especially if you're swimming alone.
-*   **Watch Out for Livestock:** Be mindful of livestock grazing near swimming spots, especially sheep. Keep a safe distance and keep dogs under control.
-*   **Leave No Trace:** Pack out everything you pack in, and leave the area as you found it.
-*   **Rivers vs. Sea:** Rivers will be colder than the sea, and more subject to strong currents.
-*   **Parking:** Many wild swimming locations are in remote areas with limited parking. Arrive early or be prepared to walk a bit.
-*   **Welsh Water Temperature:** It's generally cooler than you might think! Be prepared, and don't underestimate how cold the water can be.
+*   **Check water quality:** Natural Resources Wales publishes bathing water quality reports. After heavy rain, river and sea water quality can drop — give it 48 hours.
+*   **Tides are critical for sea swimming:** Pembrokeshire's tidal range is massive. Beaches that look perfect at low tide become impassable at high tide. Check tide tables.
+*   **Respect the weather:** If it's been raining hard, rivers rise fast. The Fairy Glen can go from a gentle pool to a raging torrent overnight. Don't swim in flooded rivers.
+*   **Tell someone your plans:** Especially for remote spots. Many wild swimming locations have zero phone signal.
+*   **Rivers vs. sea:** Welsh rivers are generally colder than the sea (mountain-fed) and can have surprisingly strong currents. The sea is warmer but has tides and swell to consider.
+*   **Parking is limited:** Popular spots like the Blue Lagoon and Fairy Glen have tiny car parks that fill by 10am in summer. Arrive early or be prepared to walk.
+*   **Temperature reality:** Llyn Idwal is around 8-10°C even in July. The Blue Lagoon is similar. River Usk might hit 16°C in a warm August. Acclimatise gradually — don't jump straight in.
+
+---
+
+Ready for the water? [Find wild swimming across Wales](/activities/wild-swimming) or read our [water safety guide](/safety/water-safety).

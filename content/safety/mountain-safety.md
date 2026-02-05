@@ -64,3 +64,7 @@ Common issues that lead to problems in the Welsh mountains include:
 ## The Bottom Line
 
 The mountains of Wales offer incredible rewards, but they demand respect and preparation. By understanding the risks, planning carefully, and exercising good judgment, you can significantly increase your chances of having a safe and enjoyable adventure. Remember, it's always better to turn back than to push on and get into trouble. Enjoy the mountains, but be safe.
+
+---
+
+Planning a mountain day? [Find hiking across Wales](/activities/hiking) or read our [hiking gear guide](/guides/hiking-gear). For climbing, check our [climbing gear guide](/guides/climbing-gear). Weather worries? Our [weather awareness guide](/safety/weather-awareness) has you covered.

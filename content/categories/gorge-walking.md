@@ -42,6 +42,16 @@ The water is cold, even with a wetsuit. You'll get used to it eventually (sort o
 
 ## How It Compares
 
-*   **Gorge Walking vs. Coasteering:** Both involve exploring the coastline, but coasteering is more about traversing along rocky coastlines, often with swims between sections. Gorge walking is exclusively in freshwater rivers and involves more scrambling. Coasteering is generally less enclosed.
-*   **Gorge Walking vs. Hiking:** Hiking is generally a dry activity, while gorge walking guarantees you'll be soaked. Gorge walking is more adrenaline-pumping and requires less endurance, but more upper-body strength.
-*   **Gorge Walking vs. White Water Rafting/Kayaking:** Whitewater rafting/kayaking is more about navigating rapids in a boat, while gorge walking is about direct interaction with the river on foot. Gorge walking offers a closer connection with nature.
+*   **Gorge Walking vs. [Coasteering](/activities/coasteering):** Both involve adventure and water, but coasteering is about traversing along rocky coastlines with sea swimming and cliff jumps. Gorge walking is exclusively in freshwater rivers and involves more scrambling through enclosed gorges. Coasteering is generally more open.
+*   **Gorge Walking vs. [Hiking](/activities/hiking):** Hiking is generally a dry activity, while gorge walking guarantees you'll be soaked. Gorge walking is more adrenaline-pumping and requires less endurance, but more upper-body strength.
+*   **Gorge Walking vs. White Water Rafting/[Kayaking](/activities/kayaking):** Whitewater rafting/kayaking is more about navigating rapids in a boat, while gorge walking is about direct interaction with the river on foot. Gorge walking offers a closer connection with nature.
+
+## Top Spots
+
+*   **Ystradfellte & Pontneddfechan (Brecon Beacons):** The classic Welsh gorge walking area. Multiple gorges with waterfalls, plunge pools, and dramatic rock formations. Sgwd yr Eira — the waterfall you walk behind — is the highlight.
+*   **Afon Ddu, Snowdonia:** Steeper, more technical gorges with bigger jumps and more powerful water. Better suited to those who want a serious adrenaline hit.
+*   **Tawe Valley (Brecon Beacons):** Gentler gorges good for families and beginners. The limestone scenery is beautiful and operators here cater well to mixed-ability groups.
+
+---
+
+Ready to get stuck in? [Find gorge walking in the Brecon Beacons](/brecon-beacons/things-to-do/gorge-walking) or [browse all gorge walking across Wales](/activities/gorge-walking).

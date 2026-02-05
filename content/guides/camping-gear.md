@@ -70,8 +70,22 @@ Prioritize buying quality used gear from reputable outdoor stores or online mark
 -   [ ] Rubbish bags
 -   [ ] Toiletries
 
+## Top Camping Spots in Wales
+
+*   **Hillfort campsite, Llanmadoc (Gower):** Small, simple site on the edge of the Gower AONB. Walk to Whiteford Sands and Rhossili from your tent. Book early — it fills up fast.
+*   **Shell Island, Llanbedr (Snowdonia):** Massive, wild-feeling site with direct beach access. Slightly chaotic but kids love it. The causeway floods at high tide — check times.
+*   **Cwmcarn Forest, near Newport:** Woodland camping with mountain biking trails on your doorstep. [Find mountain biking in South Wales](/south-wales/things-to-do/mountain-biking).
+*   **Trefalen Farm, St Davids (Pembrokeshire):** Small campsite minutes from the coast path. Perfect base for [coasteering](/pembrokeshire/things-to-do/coasteering) and coastal walking.
+*   **Llyn Gwynant, Snowdonia:** Lakeside camping with Snowdon views. Swim in the lake, hike from the tent, watch the sun set behind the mountains. One of the best locations in Wales.
+*   **Priory Mill Farm, Brecon Beacons:** Quiet site near the Usk Valley. Great for [gorge walking](/brecon-beacons/things-to-do/gorge-walking) and caving, with stargazing from the Dark Sky Reserve on clear nights.
+
 ## Pro Tips
 
--   **Waterproof Everything:** Use dry bags or plastic bags to protect your gear from rain.
--   **Test Your Gear:** Set up your tent and test your stove at home before your trip.
--   **Leave No Trace:** Pack out all your trash, minimize campfire impact, and respect wildlife.
+-   **Waterproof everything:** Use dry bags or plastic bags to protect gear from rain. In Wales, it *will* rain at some point.
+-   **Test your gear at home:** Set up your tent and test your stove before you arrive. Discovering a broken pole in a Welsh field at dusk is miserable.
+-   **Respect the pitch:** Leave no trace. Pack out all rubbish, use designated fire pits only, and respect wildlife.
+-   **Wild camping etiquette:** Wild camping is technically tolerated (not legal) in some upland areas of Snowdonia and the Brecon Beacons. Pitch late, leave early, and leave zero trace. Stay above the enclosed farmland line and away from roads.
+
+---
+
+Kit packed? [Find adventures near your campsite](/activities) or read our [weather awareness guide](/safety/weather-awareness).

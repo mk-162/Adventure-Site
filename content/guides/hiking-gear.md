@@ -46,13 +46,23 @@ Forget the endless gear lists. This is about what you *actually* need to enjoy h
 
 Generally, items like waterproof jackets, navigation tools, and essential safety equipment are worth investing in if you plan to hike regularly.
 
+## Where to Go Hiking in Wales
+
+*   **Snowdonia National Park:** Home to Snowdon (Yr Wyddfa) and the dramatic Glyderau and Carneddau ranges. Everything from gentle lakeside walks to serious scrambles like Crib Goch. [Find hiking in Snowdonia](/snowdonia/things-to-do/hiking).
+*   **Brecon Beacons:** Pen y Fan is the popular choice, but the waterfall walks around Ystradfellte and the Black Mountains ridge are arguably better. [Find hiking in the Brecon Beacons](/brecon-beacons/things-to-do/hiking).
+*   **Pembrokeshire Coast Path:** 186 miles of stunning coastal walking. Pick a section — St Davids to Solva or Tenby to Manorbier are both excellent. [Find hiking in Pembrokeshire](/pembrokeshire/things-to-do/hiking).
+*   **Llŷn Peninsula:** Quiet coastal paths with views to Bardsey Island. Empty even in summer. [Find hiking on the Llŷn Peninsula](/llyn-peninsula/things-to-do/hiking).
+*   **Wye Valley:** Lower-level walking through ancient woodland. The stretch from Tintern to Monmouth is gorgeous in autumn.
+
 ## Wales-Specific Tips
 
-*   **Weather:** Be prepared for *anything*. Check the mountain weather forecast before you go (e.g., Met Office Mountain Forecast). Conditions can change rapidly, even in summer.
-*   **Terrain:** Expect a mix of challenging terrain, from rocky scree slopes to boggy moorland. Good footwear and navigation skills are essential.
-*   **Remoteness:** Parts of Wales are very remote. Tell someone your planned route and expected return time.
-*   **Livestock:** Be aware of livestock, especially sheep, grazing on open land. Keep dogs under control and on a lead near livestock.
-*   **Right to Roam:** Wales has extensive "Right to Roam" access, but be respectful of the environment and follow the Countryside Code.
-*   **Language:** Brush up on basic Welsh phrases (like "bore da" - good morning) to enhance your experience.
+*   **Weather:** Be prepared for *anything*. Check the mountain weather forecast (Met Office Mountain Forecast or MWIS) before you go. Conditions on Snowdon's summit can be 15°C colder than the car park.
+*   **Terrain:** Expect everything from rocky scree to knee-deep bog. The Carneddau and Rhinogydd ranges are particularly rough underfoot. Good boots earn their keep in Wales.
+*   **Remoteness:** Parts of Snowdonia, the Rhinogydd, and Mid Wales are genuinely remote. Tell someone your route and expected return time. Carry a whistle and emergency shelter.
+*   **Livestock:** Sheep are everywhere on open hillsides. Keep dogs on leads near livestock — Welsh farmers take this seriously, and they're right to.
+*   **Right to Roam:** Wales has extensive open access land, but respect the Countryside Code. Close gates, stick to paths through farmland, and take your litter home.
+*   **Language:** Trail names and place names are Welsh. "Cwm" means valley, "llyn" means lake, "afon" means river. Learning a few words helps with navigation and locals appreciate the effort.
 
-By packing smart and being prepared for the specific challenges of hiking in Wales, you can enjoy the breathtaking scenery and have a safe and memorable adventure.
+---
+
+Packed and ready? [Find hiking across Wales](/activities/hiking) or read our [mountain safety guide](/safety/mountain-safety).

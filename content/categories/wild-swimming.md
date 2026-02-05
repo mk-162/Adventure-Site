@@ -62,5 +62,18 @@ Okay, here's the truth: Your first wild swim *will* be a shock to the system. Ev
 
 ## How It Compares
 
-*   **Wild Swimming vs. Coasteering:** Coasteering is more active and involves climbing, scrambling, and jumping into the sea. Wild swimming is purely about being in the water. If you're looking for an adrenaline rush, choose coasteering. If you prefer a more peaceful experience, go for wild swimming.
-*   **Wild Swimming vs. Gorge Walking/Canyoning:** Both involve getting wet in a natural environment, but gorge walking is mostly on foot. Wild swimming is focused on the water itself. Gorge walking offers more variety in terms of terrain and activities, while wild swimming is simpler and more focused.
+*   **Wild Swimming vs. [Coasteering](/activities/coasteering):** Coasteering is more active and involves climbing, scrambling, and jumping into the sea. Wild swimming is purely about being in the water. If you're looking for an adrenaline rush, choose coasteering. If you prefer a more peaceful experience, go for wild swimming.
+*   **Wild Swimming vs. [Gorge Walking](/activities/gorge-walking):** Both involve getting wet in a natural environment, but gorge walking is mostly on foot. Wild swimming is focused on the water itself. Gorge walking offers more variety in terms of terrain and activities, while wild swimming is simpler and more focused.
+
+## Top Spots
+
+*   **Blue Lagoon, Abereiddy (Pembrokeshire):** Flooded slate quarry with dramatic cliffs and deep, crystal-clear water. Genuinely freezing even in summer — bring a wetsuit or a thick skin. The entry/exit is rocky.
+*   **Llyn Padarn (Snowdonia):** Large lake near Llanberis with easy access, mountain views, and decent water quality. Popular with open water swimming groups. [Find wild swimming in Snowdonia](/snowdonia/things-to-do/wild-swimming).
+*   **Barafundle Bay (Pembrokeshire):** Sheltered, turquoise sea swimming that looks Mediterranean until you feel the temperature. The walk down keeps crowds manageable. [Find wild swimming in Pembrokeshire](/pembrokeshire/things-to-do/wild-swimming).
+*   **River Usk near Crickhowell (Brecon Beacons):** Gentle river swimming with gravel beaches. One of the warmer options in Wales (relatively). Beautiful valley setting. [Find wild swimming in the Brecon Beacons](/brecon-beacons/things-to-do/wild-swimming).
+*   **Llyn Idwal (Snowdonia):** Dramatic glacial lake in a spectacular cwm below the Devil's Kitchen. Cold, atmospheric, and a short walk from the road.
+*   **Fairy Glen, Betws-y-Coed (Snowdonia):** An enchanting river pool in a narrow gorge. Beautiful but check water levels — it can be dangerous after heavy rain.
+
+---
+
+Ready for a dip? [Find wild swimming across Wales](/activities/wild-swimming) or read our [wild swimming gear guide](/guides/wild-swimming-gear). Stay safe with our [water safety guide](/safety/water-safety).

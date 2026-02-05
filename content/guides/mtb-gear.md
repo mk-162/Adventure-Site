@@ -62,10 +62,23 @@ Let's be real. You're coming to Wales to shred. Forget the Instagram influencer 
 *   **Helmet/Pads:** Can be hired but hygiene could be a factor. If you plan to do this sport at all I would recommend buying your own.
 *   **Everything Else:** Bring your own. Knowing your own gear makes repairs easier.
 
+## Top Trails in Wales
+
+*   **Coed y Brenin, Snowdonia:** The granddaddy. Cyflym Coch (red) is a classic fast-flowing trail through ancient forest. MinorTaur (red) in Gwydir Forest nearby offers more natural, technical riding. [Find mountain biking in Snowdonia](/snowdonia/things-to-do/mountain-biking).
+*   **Antur Stiniog:** Uplift-served downhill in the Blaenau Ffestiniog slate quarries. Steep, loose, technical, and addictive. Not for beginners — the reds here would be blacks elsewhere.
+*   **BikePark Wales, Merthyr Tydfil:** More sculpted trails with berms, jumps, and flow. Great progression from green to black. The café serves possibly the best post-ride burger in Wales. [Find mountain biking in the Brecon Beacons](/brecon-beacons/things-to-do/mountain-biking).
+*   **Coed Llandegla:** Brilliant for building skills. The reds are fast and flowy, and the facilities are excellent. Easy access from Chester, Liverpool, and Manchester.
+*   **Afan Forest Park:** The Wall and Blade trails are South Wales classics — raw, natural-feeling rides through deep valleys. Rougher than purpose-built centres but incredibly rewarding.
+
 ## Wales-Specific Tips
 
-*   **Weather:** Be prepared for anything. Pack layers and be prepared to change your plans if the weather turns bad. Check the forecast before you go, but don't rely on it.
-*   **Terrain:** Welsh trails are typically rocky, rooty, and technical. Be prepared for steep climbs and challenging descents.
-*   **Navigation:** Signal can be patchy in remote areas. Download offline maps before you go and consider carrying a paper map and compass as backup.
-*   **Respect the Land:** Stay on marked trails, leave no trace, and be considerate of other trail users.
-*   **Midges:** In summer, midges can be a nuisance. Consider bringing insect repellent.
+*   **Weather:** Welsh rain isn't gentle drizzle — it's horizontal, persistent, and gets everywhere. Pack layers, assume it'll rain, and be pleasantly surprised when it doesn't.
+*   **Terrain:** Welsh trails are rocky, rooty, and technical by UK standards. If you're used to smooth trail centre flow, the natural trails will be a rude awakening. Start easier than you think.
+*   **Navigation:** Signal is patchy in Snowdonia valleys and Afan Forest. Download offline maps (Trailforks or Komoot) before you leave. At trail centres, the routes are signed — follow the colour codes.
+*   **Respect the land:** Stay on marked trails, close gates, and give way to walkers and horses. Welsh mountain biking access depends on people riding responsibly.
+*   **Midges:** June-August evenings in sheltered valleys are midge hell. Smidge repellent works better than most. Don't stop for long in sheltered spots.
+*   **Mud is inevitable:** Welsh trails are muddy 8 months of the year. Mudguards aren't glamorous but they save your face and eyes. Running tubeless with lower pressures gives better grip on wet roots.
+
+---
+
+Ready to ride? [Find mountain biking across Wales](/activities/mountain-biking) or read our [cycling safety guide](/safety/cycling-safety).

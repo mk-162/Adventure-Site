@@ -40,5 +40,16 @@ Your first time caving will likely be a shock to the system. You'll be surprised
 Caving is a very different experience compared to gorge walking or coasteering. While all three involve adventure and physical challenges, caving is primarily an underground experience, focusing on exploration and navigation in enclosed spaces. Gorge walking is about navigating a river gorge, often involving swimming, scrambling, and jumping. Coasteering is all about exploring the coastline by climbing, swimming, and jumping off rocks.
 
 *   **Choose Caving if:** You enjoy problem-solving, exploring hidden places, and challenging yourself physically in a unique environment.
-*   **Choose Gorge Walking if:** You enjoy water-based activities, scrambling over rocks, and experiencing the power of nature in a more open environment.
-*   **Choose Coasteering if:** You enjoy swimming, jumping off cliffs, and exploring the rugged coastline.
+*   **Choose [Gorge Walking](/activities/gorge-walking) if:** You enjoy water-based activities, scrambling over rocks, and experiencing the power of nature in a more open environment.
+*   **Choose [Coasteering](/activities/coasteering) if:** You enjoy swimming, jumping off cliffs, and exploring the rugged coastline.
+
+## Top Spots
+
+*   **Porth yr Ogof (Brecon Beacons):** The largest cave entrance in Wales. Walk-in access to see the river disappear underground. A good taster for non-cavers.
+*   **Ogof Ffynnon Ddu (OFD):** One of the deepest and longest caves in the UK. The top entrance trips are moderate; the through trips are serious multi-hour endeavours for experienced cavers.
+*   **Dan yr Ogof Showcaves:** Not proper caving, but a fascinating family-friendly introduction to the underground world. Three connected caves with impressive formations.
+*   **Go Below, Conwy:** Explore disused mines with underground zip lines, boat crossings, and via ferratas. A brilliant option that blends caving with adventure activities.
+
+---
+
+Ready to go underground? [Find caving in the Brecon Beacons](/brecon-beacons/things-to-do/caving) or [browse all caving experiences across Wales](/activities/caving).

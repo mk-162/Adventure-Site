@@ -56,3 +56,7 @@ Thorough preparation is key to a safe and enjoyable experience in Wales.
 ## The Bottom Line
 
 Welsh weather can be unpredictable, but with careful planning and preparation, you can enjoy the stunning scenery and outdoor activities Wales has to offer. Be aware of the risks, pack appropriately, monitor the weather, and don't hesitate to turn back if conditions worsen. A little bit of common sense goes a long way in ensuring a safe and memorable experience.
+
+---
+
+Planning your trip? Check our seasonal guides for [spring](/guides/spring-adventures), [summer](/guides/summer-adventures), [autumn](/guides/autumn-adventures), and [winter](/guides/winter-adventures) adventures. For mountain-specific advice, read our [mountain safety guide](/safety/mountain-safety). Heading near water? Our [water safety guide](/safety/water-safety) is essential reading.

@@ -75,3 +75,7 @@ Stay vigilant and be aware of your surroundings:
 ## The Bottom Line
 
 Enjoy the beautiful Welsh waters, but always prioritize safety. By understanding the risks, preparing adequately, and staying vigilant, you can significantly reduce the likelihood of accidents. Respect the power of water, make informed decisions, and have a safe and memorable experience. Don't let overconfidence or complacency lead to tragedy. Be smart, be safe, and enjoy the water responsibly.
+
+---
+
+Planning water activities? [Find wild swimming](/activities/wild-swimming), [surfing](/activities/surfing), [kayaking](/activities/kayaking), or [coasteering](/activities/coasteering) across Wales. For gear, check our [wild swimming kit guide](/guides/wild-swimming-gear) or [coasteering gear guide](/guides/coasteering-gear).

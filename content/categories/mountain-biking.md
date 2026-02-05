@@ -41,4 +41,16 @@ Don't expect to be amazing on your first time. Start with a green or blue trail 
 ## How It Compares
 
 *   **Mountain Biking vs. Road Cycling:** Road cycling is about speed, endurance, and covering long distances on smooth surfaces. Mountain biking is about technical skill, conquering challenging terrain, and a more intense physical workout in shorter bursts. If you love the thrill of speed and the feeling of the wind in your hair, stick to the road. If you prefer a more rugged, technical, and adventurous experience, try mountain biking.
-*   **Mountain Biking vs. Hiking:** Both get you outdoors and exploring nature. Hiking is about a slower pace, taking in the scenery, and a more sustained physical effort. Mountain biking is faster, more adrenaline-fueled, and requires more skill. If you want a peaceful and contemplative experience, choose hiking. If you want a more exciting and challenging workout, go mountain biking.
+*   **Mountain Biking vs. [Hiking](/activities/hiking):** Both get you outdoors and exploring nature. Hiking is about a slower pace, taking in the scenery, and a more sustained physical effort. Mountain biking is faster, more adrenaline-fueled, and requires more skill. If you want a peaceful and contemplative experience, choose hiking. If you want a more exciting and challenging workout, go mountain biking.
+
+## Top Spots
+
+*   **Coed y Brenin (Snowdonia):** Wales's original trail centre and still one of the best. Trails from green to black through ancient forest with excellent drainage. The café is a bonus.
+*   **Antur Stiniog (Blaenau Ffestiniog):** Uplift-served downhill in dramatic slate quarry landscape. Steep, fast, and technical. For intermediate to expert riders.
+*   **BikePark Wales (Merthyr Tydfil):** South Wales's answer to Antur Stiniog. Sculpted trails with berms, jumps, and flow. Better for progression — the green and blue runs are genuinely fun.
+*   **Coed Llandegla (near Wrexham):** Best beginner-friendly trail centre in Wales. Well-built trails, great facilities, and easy access from North West England.
+*   **Afan Forest Park (South Wales):** Raw, natural-feeling trails through dramatic valleys. The Wall and Blade are classic rides.
+
+---
+
+Ready to ride? [Find mountain biking across Wales](/activities/mountain-biking) or read our [mountain biking gear guide](/guides/mtb-gear). Need safety info? Check our [cycling safety guide](/safety/cycling-safety).

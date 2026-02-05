@@ -74,6 +74,18 @@ Your first time rock climbing will probably be more tiring and confusing than yo
 
 ## How It Compares
 
-*   **Rock Climbing vs. Hiking:** Hiking is about the journey; climbing is about conquering a specific challenge. Climbing is much more physically and mentally demanding.
-*   **Rock Climbing vs. Coasteering:** Coasteering is about exploring the coastline through swimming, scrambling, and jumping. Climbing is more focused and technical, requiring specialized gear and skills.
-*   **Rock Climbing vs. Mountain Biking:** Both are adventurous outdoor activities, but climbing is more of a full-body workout that requires patience and mental focus. Mountain biking is more about speed, adrenaline, and covering distance.
+*   **Rock Climbing vs. [Hiking](/activities/hiking):** Hiking is about the journey; climbing is about conquering a specific challenge. Climbing is much more physically and mentally demanding.
+*   **Rock Climbing vs. [Coasteering](/activities/coasteering):** Coasteering is about exploring the coastline through swimming, scrambling, and jumping. Climbing is more focused and technical, requiring specialized gear and skills.
+*   **Rock Climbing vs. [Mountain Biking](/activities/mountain-biking):** Both are adventurous outdoor activities, but climbing is more of a full-body workout that requires patience and mental focus. Mountain biking is more about speed, adrenaline, and covering distance.
+
+## Top Spots
+
+*   **Llanberis Pass (Snowdonia):** The Mecca of Welsh climbing. Dinas Cromlech (home to the famous Cenotaph Corner), Cloggy (Clogwyn Du'r Arddu on Snowdon's north face), and countless crags for all grades.
+*   **Idwal Slabs (Snowdonia):** The classic introduction to outdoor climbing in Wales. Low-angle slabs with friction climbing — brilliant for learning technique.
+*   **Gogarth, Holy Island (Anglesey):** World-class sea cliff climbing. Serious, exposed, and absolutely magnificent. For experienced trad climbers only.
+*   **Tremadog (Snowdonia):** Sheltered roadside crags with excellent sport and trad routes. A good bad-weather option — the cliffs face south and dry quickly.
+*   **Great Orme (Llandudno):** Accessible limestone sport climbing with sea views. Good range of grades and a short walk from the car park.
+
+---
+
+Ready to climb? [Find climbing across Wales](/activities/climbing) or read our [climbing gear guide](/guides/climbing-gear). Need to check safety? Our [mountain safety guide](/safety/mountain-safety) has you covered.

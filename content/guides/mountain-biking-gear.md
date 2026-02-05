@@ -69,8 +69,21 @@ Prioritize essential safety gear like a helmet and gloves. Look for sales and di
 - [ ] Map/GPS device
 - [ ] Energy bars/snacks
 
+## Where to Ride in Wales
+
+*   **Coed y Brenin (Snowdonia):** The original Welsh trail centre. Brilliant drainage, excellent facilities, trails from blue to black. The Cyflym Coch red run is a classic. [Find mountain biking in Snowdonia](/snowdonia/things-to-do/mountain-biking).
+*   **Antur Stiniog (Blaenau Ffestiniog):** Uplift-served downhill. Steep, technical, fast. Not for beginners. The slate landscape is otherworldly.
+*   **BikePark Wales (Merthyr Tydfil):** Uplift-served park with more sculpted, flowing trails than Antur Stiniog. Great progression from blue to black. [Find mountain biking in the Brecon Beacons](/brecon-beacons/things-to-do/mountain-biking).
+*   **Coed Llandegla (near Wrexham):** Excellent for beginners and intermediates. Well-built trails, good café, and easy access from North West England. Fast-flowing reds are genuinely fun.
+*   **Afan Forest Park (South Wales):** Multiple trails through dramatic valleys. The Wall and Blade trails are classics. Slightly rougher than purpose-built bike parks.
+
 ## Pro Tips
 
-- Pre-ride inspection: Before each ride, check your bike for any loose bolts, worn tires, or other potential issues.
-- Chain lubrication: Keep your chain clean and lubricated for smooth shifting and longer chain life.
-- Pack strategically: Distribute weight evenly in your hydration pack to avoid back pain.
+- **Pre-ride inspection:** Before each ride, check for loose bolts, worn brake pads, and tyre pressure. Welsh descents punish weak brakes.
+- **Chain lubrication:** Wales is wet. Clean and lube your chain after every ride, or it'll be toast within a week. Wet lube over dry lube — this is Wales.
+- **Pack strategically:** Put the heaviest items at the bottom of your hydration pack, close to your back. Unbalanced weight makes technical riding sketchy.
+- **Carry cash:** Not all trail centre cafés take cards, especially the smaller ones.
+
+---
+
+Bike sorted? [Find mountain biking across Wales](/activities/mountain-biking) or read our [cycling safety guide](/safety/cycling-safety).

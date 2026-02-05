@@ -44,8 +44,20 @@ Your first hike in Wales is likely to be harder than you expect. Even a "moderat
 
 ## How It Compares
 
-*   **Hiking vs. Coasteering:** Hiking is about exploring the land; coasteering is about exploring the coast in a much more *physical* way. If you want adrenaline, jumps, and swimming in the sea, choose coasteering. If you prefer a more contemplative experience with stunning views, go hiking.
+*   **Hiking vs. [Coasteering](/activities/coasteering):** Hiking is about exploring the land; coasteering is about exploring the coast in a much more *physical* way. If you want adrenaline, jumps, and swimming in the sea, choose coasteering. If you prefer a more contemplative experience with stunning views, go hiking.
 
-*   **Hiking vs. Mountain Biking:** Both are great ways to see the countryside, but mountain biking is faster and more technical. If you enjoy the challenge of navigating trails on two wheels, and you don't mind getting muddy, mountain biking is a good option. Hiking allows you to appreciate the scenery at a more leisurely pace.
+*   **Hiking vs. [Mountain Biking](/activities/mountain-biking):** Both are great ways to see the countryside, but mountain biking is faster and more technical. If you enjoy the challenge of navigating trails on two wheels, and you don't mind getting muddy, mountain biking is a good option. Hiking allows you to appreciate the scenery at a more leisurely pace.
 
-*   **Hiking vs. Gorge Walking/Canyoning:** Similar to coasteering, gorge walking and canyoning are much more focused on the water element, with swimming, scrambling, and potentially rappelling down waterfalls. Hiking is a drier, more land-based activity.
+*   **Hiking vs. [Gorge Walking](/activities/gorge-walking):** Gorge walking and canyoning are much more focused on the water element, with swimming, scrambling, and potentially rappelling down waterfalls. Hiking is a drier, more land-based activity.
+
+## Top Spots
+
+*   **Snowdon (Yr Wyddfa):** Six routes to the summit, from the gentle Llanberis Path to the knife-edge scramble of Crib Goch. The Snowdon Horseshoe is one of the finest mountain walks in Britain.
+*   **Pen y Fan (Brecon Beacons):** The highest peak in South Wales. The direct route from Storey Arms is short but steep. The ridge walk east to Cribyn is more rewarding.
+*   **Pembrokeshire Coast Path:** 186 miles of National Trail hugging dramatic cliffs and sandy beaches. Walk it in sections — St Davids to Solva is a perfect day.
+*   **Cadair Idris (Southern Snowdonia):** Often overlooked in favour of Snowdon. The Minffordd Path through the nature reserve is one of the best mountain walks in Wales.
+*   **The Carneddau (Snowdonia):** Wild, empty, and enormous. The highest plateau in England and Wales, home to wild ponies. For experienced walkers who want solitude.
+
+---
+
+Ready to walk? [Find hiking across Wales](/activities/hiking) or read our [mountain safety guide](/safety/mountain-safety). Need gear advice? Check our [hiking kit guide](/guides/hiking-gear).

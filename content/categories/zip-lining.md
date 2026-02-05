@@ -39,5 +39,16 @@ It's scarier than it looks from the ground! Even though you're safely harnessed,
 
 ## How It Compares
 
-*   **Zip Lines vs. Coasteering:** If you love heights and adrenaline but prefer to stay dry, zip lines are for you. Coasteering is all about the sea, jumping off cliffs into the water and exploring the coastline. Choose coasteering if you love swimming and the ocean.
-*   **Zip Lines vs. Gorge Walking:** Both involve navigating natural obstacles, but gorge walking is more about teamwork and problem-solving as you scramble up a river. Zip lining is more of an individual challenge against your own fear of heights. If you like getting wet and working as a team, go for gorge walking.
+*   **Zip Lines vs. [Coasteering](/activities/coasteering):** If you love heights and adrenaline but prefer to stay dry, zip lines are for you. Coasteering is all about the sea, jumping off cliffs into the water and exploring the coastline. Choose coasteering if you love swimming and the ocean.
+*   **Zip Lines vs. [Gorge Walking](/activities/gorge-walking):** Both involve navigating natural obstacles, but gorge walking is more about teamwork and problem-solving as you scramble up a river. Zip lining is more of an individual challenge against your own fear of heights. If you like getting wet and working as a team, go for gorge walking.
+
+## Top Spots
+
+*   **Velocity 2, Zip World Penrhyn Quarry (Bethesda):** The fastest zip line in Europe and the longest in the Northern Hemisphere. You hit over 100mph across a massive slate quarry. It's absolutely terrifying and absolutely brilliant. Book well ahead — it sells out daily in summer.
+*   **Zip World Titan (Blaenau Ffestiniog):** The largest zip zone in Europe. Four people ride side-by-side across the quarry. More social than Velocity, still a massive adrenaline hit.
+*   **Zip World Caverns (Blaenau Ffestiniog):** Underground zip lines, rope bridges, and free-fall drops in the old Llechwedd slate mines. Runs year-round, rain-proof, and utterly unique. Perfect for a wet day.
+*   **Bounce Below (Blaenau Ffestiniog):** Giant underground trampolines in a slate cavern. Not technically zip lining, but part of the Zip World family and enormous fun for families.
+
+---
+
+Ready for the big one? [Find zip lines in Snowdonia](/snowdonia/things-to-do/zip-lining) or [browse all aerial adventures across Wales](/activities/zip-lining).

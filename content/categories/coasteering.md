@@ -40,4 +40,15 @@ The water *will* be colder than you expect, even with a wetsuit. You *will* prob
 
 **Coasteering vs. Gorge Walking:** Both involve getting wet and scrambling around in nature, but coasteering is all about the sea, while gorge walking takes place in rivers and canyons. Coasteering offers the thrill of cliff jumping and the unpredictability of the ocean, while gorge walking is more about navigating waterfalls and swimming in freshwater pools. If you prefer saltwater and coastal views, go for coasteering. If you prefer calmer waters and lush green scenery, gorge walking might be a better fit.
 
-**Coasteering vs. Kayaking:** Kayaking is a great way to explore the coastline at a more relaxed pace, while coasteering is more active and adventurous. Kayaking is ideal for those who want to cover more ground and see the coastline from a different perspective, while coasteering is better for those who want a more hands-on, adrenaline-pumping experience.
+**Coasteering vs. [Kayaking](/activities/kayaking):** Kayaking is a great way to explore the coastline at a more relaxed pace, while coasteering is more active and adventurous. Kayaking is ideal for those who want to cover more ground and see the coastline from a different perspective, while coasteering is better for those who want a more hands-on, adrenaline-pumping experience.
+
+## Top Spots
+
+*   **Blue Lagoon, Abereiddy (Pembrokeshire):** The iconic Welsh coasteering spot. A flooded slate quarry with deep water jumps, sea caves, and crystal-clear (freezing) water.
+*   **St Davids Peninsula (Pembrokeshire):** Multiple coasteering routes from sheltered bays to exposed headlands. The variety here means guides can match routes to conditions and group ability.
+*   **Rhoscolyn (Anglesey):** Brilliant sea caves, arches, and gullies. Different geology from Pembrokeshire — smoother rock, tighter spaces, equally exciting.
+*   **Llŷn Peninsula:** More remote and less crowded. The coasteering around Aberdaron and Porth Oer is wild and beautiful.
+
+---
+
+Ready to jump in? [Find coasteering in Pembrokeshire](/pembrokeshire/things-to-do/coasteering) or [browse all coasteering across Wales](/activities/coasteering). New to it? Read our [coasteering safety guide](/safety/coasteering-safety).

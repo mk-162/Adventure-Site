@@ -39,10 +39,21 @@ Coasteering in Wales is an unforgettable experience, scrambling and swimming alo
 *   **Gloves/Boots/Socks:** These are relatively inexpensive and can be worth buying if you coasteer often and are sensitive to the cold.
 *   **Camera:** If you want good quality footage, buy or hire something like a GoPro. If you are looking for an underwater disposable camera, you are more likely to be disappointed.
 
+## Where to Go Coasteering in Wales
+
+*   **Pembrokeshire** is the coasteering capital of Wales. The Blue Lagoon at Abereiddy, the cliffs around St Davids, and the bays near Solva offer world-class coasteering with crystal-clear water and dramatic rock formations. [Find coasteering in Pembrokeshire](/pembrokeshire/things-to-do/coasteering).
+*   **Anglesey** has a completely different character — sea caves, narrow gullies, and interesting geology. Less crowded than Pembrokeshire in peak season. [Find coasteering in Anglesey](/anglesey/things-to-do/coasteering).
+*   **The Gower Peninsula** is closer to South Wales cities and has beautiful coastline around Mumbles and the south coast. [Find coasteering on the Gower](/gower/things-to-do/coasteering).
+*   **The Llŷn Peninsula** offers more remote, uncrowded coasteering in stunning settings. [Find coasteering on the Llŷn Peninsula](/llyn-peninsula/things-to-do/coasteering).
+
 ## Wales-Specific Tips
 
-*   **Weather is Unpredictable:** Be prepared for sudden changes in conditions. Welsh weather can be notoriously fickle. Check the forecast before you go, but be ready for rain, wind, and sunshine, potentially all in the same day.
-*   **Tidal Range is Significant:** Be aware of the tides. Welsh coastlines have a large tidal range, which can dramatically alter the coasteering route and make some areas inaccessible or dangerous at certain times. Go with a professional guide unless you are experienced and informed.
-*   **Rocky Coastlines:** The terrain is generally more rugged and rocky than some other coasteering locations. Sturdy footwear and a helmet are essential.
-*   **Water Temperature:** The Irish Sea is cold! Even in summer, the water temperature rarely exceeds 15°C (59°F). A good quality wetsuit is essential for comfort and safety.
-*   **Sea Conditions:** Check sea conditions. Winds can pick up suddenly and the sea state can go from calm to rough in a short space of time.
+*   **Weather is unpredictable:** Welsh weather can swing from sunshine to squall in minutes. Check the forecast, but pack as if it'll rain regardless.
+*   **Tidal range is huge:** Welsh coastlines have some of the largest tidal ranges in the world. This dramatically alters routes — sections accessible at low tide become impassable (or dangerous) at high tide. Go with a professional guide unless you have real local knowledge.
+*   **Rocky coastlines:** Pembrokeshire's rock is volcanic and grippy, which is a plus. Anglesey has smoother, more slippery formations. Footwear matters either way.
+*   **Water temperature:** The Irish Sea rarely exceeds 15°C even in August. At Abereiddy's Blue Lagoon, it's often colder — genuinely freezing is how most people describe it. A good 5mm wetsuit is essential, not just recommended.
+*   **Sea conditions:** The Irish Sea can turn rough quickly. Swell, wind chop, and tidal currents all affect safety. Experienced guides check conditions constantly and will reroute or cancel if needed.
+
+---
+
+Ready to get in the water? [Find coasteering across Wales](/activities/coasteering) or read our [coasteering safety guide](/safety/coasteering-safety).

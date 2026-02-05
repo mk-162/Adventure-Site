@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Star, ChevronRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
@@ -44,10 +45,15 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
           <div className="flex items-start justify-between mb-4">
             <div className="flex items-center gap-3">
               {operator.logoUrl && (
-                <div
-                  className="w-16 h-16 rounded-xl bg-cover bg-center"
-                  style={{ backgroundImage: `url('${operator.logoUrl}')` }}
-                />
+                <div className="relative w-16 h-16 rounded-xl overflow-hidden shrink-0">
+                  <Image
+                    src={operator.logoUrl}
+                    alt={operator.name}
+                    fill
+                    className="object-cover"
+                    sizes="64px"
+                  />
+                </div>
               )}
               <div>
                 <h3 className="font-bold text-lg text-primary group-hover:text-accent-hover transition-colors">
@@ -130,10 +136,15 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
       >
         {/* Logo */}
         {operator.logoUrl && (
-          <div
-            className="w-14 h-14 rounded-xl bg-cover bg-center flex-shrink-0"
-            style={{ backgroundImage: `url('${operator.logoUrl}')` }}
-          />
+          <div className="relative w-14 h-14 rounded-xl overflow-hidden flex-shrink-0">
+            <Image
+              src={operator.logoUrl}
+              alt={operator.name}
+              fill
+              className="object-cover"
+              sizes="56px"
+            />
+          </div>
         )}
 
         {/* Content */}

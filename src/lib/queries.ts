@@ -20,9 +20,8 @@ import {
   posts,
   postTags,
   itineraryStops,
-  pageViews,
 } from "@/db/schema";
-import { eq, and, ilike, desc, asc, sql, gte } from "drizzle-orm";
+import { eq, and, ilike, desc, asc, sql, arrayContains, gte } from "drizzle-orm";
 
 // =====================
 // SITE QUERIES
@@ -263,6 +262,8 @@ export async function getOperators(options?: {
   activityTypeSlug?: string;
   claimStatus?: "stub" | "claimed" | "premium";
   category?: string;
+  minRating?: number;
+  query?: string;
   limit?: number;
   offset?: number;
 }) {
@@ -277,6 +278,31 @@ export async function getOperators(options?: {
     conditions.push(eq(operators.category, options.category as any));
   }
 
+  if (options?.regionSlug) {
+    conditions.push(arrayContains(operators.regions, [options.regionSlug]));
+  }
+
+  if (options?.activityTypeSlug) {
+    conditions.push(arrayContains(operators.activityTypes, [options.activityTypeSlug]));
+  }
+
+  if (options?.minRating) {
+    conditions.push(gte(operators.googleRating, options.minRating.toString()));
+  }
+
+  if (options?.query) {
+    const search = `%${options.query}%`;
+    conditions.push(sql`(${operators.name} ILIKE ${search} OR ${operators.tagline} ILIKE ${search})`);
+  }
+
+  // Count query
+  const countResult = await db
+    .select({ count: sql<number>`count(*)` })
+    .from(operators)
+    .where(and(...conditions));
+
+  const total = Number(countResult[0]?.count || 0);
+
   let query = db
     .select()
     .from(operators)
@@ -290,7 +316,13 @@ export async function getOperators(options?: {
     query = query.limit(options.limit) as typeof query;
   }
 
-  return query;
+  if (options?.offset) {
+    query = query.offset(options.offset) as typeof query;
+  }
+
+  const result = await query;
+
+  return { operators: result, total };
 }
 
 export async function getOperatorBySlug(slug: string) {
@@ -311,41 +343,6 @@ export async function getOperatorWithActivities(slug: string) {
   return {
     ...operator,
     activities: operatorActivities,
-  };
-}
-
-export async function getOperatorViewStats(operatorId: number, days: number = 30) {
-  const endDate = new Date();
-  const startDate = new Date();
-  startDate.setDate(endDate.getDate() - days);
-
-  // Format date as string YYYY-MM-DD for comparison if needed, but Drizzle date helper might handle Date object if column is `date`
-  // Actually schema uses `date` type which often requires string in Drizzle/Postgres
-  const startDateStr = startDate.toISOString().split('T')[0];
-
-  const dailyViews = await db
-    .select({
-      date: pageViews.viewDate,
-      views: pageViews.viewCount,
-      uniqueVisitors: pageViews.uniqueVisitors,
-    })
-    .from(pageViews)
-    .where(
-      and(
-        eq(pageViews.operatorId, operatorId),
-        gte(pageViews.viewDate, startDateStr)
-      )
-    )
-    .orderBy(asc(pageViews.viewDate));
-
-  // Calculate totals
-  const totalViews = dailyViews.reduce((sum, day) => sum + day.views, 0);
-  const totalUnique = dailyViews.reduce((sum, day) => sum + day.uniqueVisitors, 0);
-
-  return {
-    daily: dailyViews,
-    totalViews,
-    totalUnique,
   };
 }
 
@@ -962,37 +959,6 @@ export async function getAllPosts(options?: {
   );
 
   return postsWithTags;
-}
-
-export async function getPostsCount(options?: {
-  category?: string;
-  tagSlug?: string;
-}) {
-  const conditions = [eq(posts.status, "published")];
-
-  if (options?.category) {
-    conditions.push(eq(posts.category, options.category as any));
-  }
-
-  if (options?.tagSlug) {
-    const tag = await getTagBySlug(options.tagSlug);
-    if (!tag) return 0;
-
-    const result = await db
-      .select({ count: sql<number>`count(*)` })
-      .from(posts)
-      .innerJoin(postTags, eq(posts.id, postTags.postId))
-      .where(and(...conditions, eq(postTags.tagId, tag.id)));
-
-    return Number(result[0]?.count || 0);
-  }
-
-  const result = await db
-    .select({ count: sql<number>`count(*)` })
-    .from(posts)
-    .where(and(...conditions));
-
-  return Number(result[0]?.count || 0);
 }
 
 export async function getPostBySlug(slug: string) {

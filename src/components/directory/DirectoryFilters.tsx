@@ -1,10 +1,11 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useEffect, Suspense } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { OperatorCard } from '@/components/cards/operator-card';
 import { AdvertiseWidget } from '@/components/commercial/AdvertiseWidget';
-import { Star, Award, Search } from 'lucide-react';
-import { getEffectiveTier } from '@/lib/trial-utils';
+import { Search, Award, X } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
 
 interface Operator {
   id: number;
@@ -21,9 +22,6 @@ interface Operator {
   priceRange: string | null;
   uniqueSellingPoint: string | null;
   logoUrl: string | null;
-  billingTier?: string | null;
-  trialTier?: string | null;
-  trialExpiresAt?: Date | null;
 }
 
 interface Region {
@@ -42,6 +40,7 @@ interface DirectoryFiltersProps {
   operators: Operator[];
   regions: Region[];
   activityTypes: ActivityType[];
+  totalCount: number;
 }
 
 const categoryLabels: Record<string, string> = {
@@ -52,79 +51,53 @@ const categoryLabels: Record<string, string> = {
   accommodation: "🏠 Accommodation",
 };
 
-export function DirectoryFilters({ operators, regions, activityTypes }: DirectoryFiltersProps) {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedRegion, setSelectedRegion] = useState('');
-  const [selectedActivityType, setSelectedActivityType] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('');
-  const [selectedRating, setSelectedRating] = useState('');
+function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount }: DirectoryFiltersProps) {
+  const router = useRouter();
+  const searchParams = useSearchParams();
 
-  // Filter operators
-  const filteredOperators = useMemo(() => {
-    return operators.filter((operator) => {
-      // Search filter - case-insensitive includes
-      if (searchQuery) {
-        const query = searchQuery.toLowerCase();
-        if (!operator.name.toLowerCase().includes(query)) {
-          return false;
-        }
+  // Initialize state from URL
+  const [searchQuery, setSearchQuery] = useState(searchParams.get('q') || '');
+  const selectedRegion = searchParams.get('region') || '';
+  const selectedActivityType = searchParams.get('activity') || '';
+  const selectedCategory = searchParams.get('category') || '';
+  const selectedRating = searchParams.get('rating') || '';
+
+  // Debounce search update
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      const currentQ = searchParams.get('q') || '';
+      if (searchQuery !== currentQ) {
+        updateFilter('q', searchQuery);
       }
+    }, 300);
+    return () => clearTimeout(timeoutId);
+  }, [searchQuery, searchParams]);
 
-      // Region filter
-      if (selectedRegion) {
-        const hasRegion = operator.regions && operator.regions.includes(selectedRegion);
-        if (!hasRegion) {
-          return false;
-        }
-      }
+  const updateFilter = (key: string, value: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (value) {
+      params.set(key, value);
+    } else {
+      params.delete(key);
+    }
+    // Reset to page 1 on filter change
+    params.delete('page');
 
-      // Activity type filter
-      if (selectedActivityType) {
-        const hasActivityType = operator.activityTypes && operator.activityTypes.includes(selectedActivityType);
-        if (!hasActivityType) {
-          return false;
-        }
-      }
+    router.replace(`/directory?${params.toString()}`, { scroll: false });
+  };
 
-      // Category filter
-      if (selectedCategory) {
-        if (operator.category !== selectedCategory) {
-          return false;
-        }
-      }
+  const clearAllFilters = () => {
+    router.replace('/directory', { scroll: false });
+    setSearchQuery('');
+  };
 
-      // Rating filter
-      if (selectedRating) {
-        const rating = operator.googleRating ? parseFloat(operator.googleRating) : 0;
-        switch (selectedRating) {
-          case '4+':
-            if (rating < 4) return false;
-            break;
-          case '4.5+':
-            if (rating < 4.5) return false;
-            break;
-        }
-      }
+  const availableCategories = Object.keys(categoryLabels);
 
-      return true;
-    });
-  }, [operators, searchQuery, selectedRegion, selectedActivityType, selectedCategory, selectedRating]);
+  // Separate featured from regular (from the current page of results)
+  const featuredOperators = operators.filter(op => op.claimStatus === "premium");
+  const regularOperators = operators.filter(op => op.claimStatus !== "premium");
 
-  // Get available categories from the data
-  const availableCategories = useMemo(() => {
-    const cats = new Set(operators.map(op => op.category).filter(Boolean));
-    return Array.from(cats).sort();
-  }, [operators]);
-
-  // Separate featured from regular
-  const featuredOperators = filteredOperators.filter(op => {
-    const tier = getEffectiveTier(op as any);
-    return tier === "premium";
-  });
-  const regularOperators = filteredOperators.filter(op => {
-    const tier = getEffectiveTier(op as any);
-    return tier !== "premium";
-  });
+  const hasActiveFilters = selectedRegion || selectedActivityType || selectedCategory || selectedRating || searchQuery;
 
   return (
     <>
@@ -141,7 +114,7 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
             Adventure Directory
           </h1>
           <p className="text-white/80">
-            {operators.length}+ Welsh adventure businesses. Adventure providers, gear hire, food, transport — all in one place.
+            {totalCount}+ Welsh adventure businesses. Adventure providers, gear hire, food, transport — all in one place.
           </p>
 
           <div className="mt-6 relative max-w-md">
@@ -164,28 +137,29 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
       {/* Filters */}
       <section className="bg-white border-b sticky top-16 z-30">
         <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 items-center">
             <label htmlFor="category-filter" className="sr-only">Filter by category</label>
             <select 
               id="category-filter"
               value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)}
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm"
+              onChange={(e) => updateFilter('category', e.target.value)}
+              className="border border-gray-200 rounded-lg px-3 py-2 text-sm max-w-[180px]"
               aria-label="Filter by category"
             >
               <option value="">All Categories</option>
               {availableCategories.map((cat) => (
-                <option key={cat} value={cat!}>
-                  {categoryLabels[cat!] || cat}
+                <option key={cat} value={cat}>
+                  {categoryLabels[cat] || cat}
                 </option>
               ))}
             </select>
+
             <label htmlFor="region-filter" className="sr-only">Filter by region</label>
             <select 
               id="region-filter"
               value={selectedRegion}
-              onChange={(e) => setSelectedRegion(e.target.value)}
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm"
+              onChange={(e) => updateFilter('region', e.target.value)}
+              className="border border-gray-200 rounded-lg px-3 py-2 text-sm max-w-[180px]"
               aria-label="Filter by region"
             >
               <option value="">All Regions</option>
@@ -195,12 +169,13 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
                 </option>
               ))}
             </select>
+
             <label htmlFor="activity-filter" className="sr-only">Filter by activity</label>
             <select 
               id="activity-filter"
               value={selectedActivityType}
-              onChange={(e) => setSelectedActivityType(e.target.value)}
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm"
+              onChange={(e) => updateFilter('activity', e.target.value)}
+              className="border border-gray-200 rounded-lg px-3 py-2 text-sm max-w-[180px]"
               aria-label="Filter by activity type"
             >
               <option value="">All Activities</option>
@@ -210,19 +185,65 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
                 </option>
               ))}
             </select>
+
             <label htmlFor="rating-filter" className="sr-only">Filter by rating</label>
             <select 
               id="rating-filter"
               value={selectedRating}
-              onChange={(e) => setSelectedRating(e.target.value)}
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm"
+              onChange={(e) => updateFilter('rating', e.target.value)}
+              className="border border-gray-200 rounded-lg px-3 py-2 text-sm max-w-[140px]"
               aria-label="Filter by rating"
             >
               <option value="">Rating: Any</option>
-              <option value="4+">4+ Stars</option>
-              <option value="4.5+">4.5+ Stars</option>
+              <option value="4">4+ Stars</option>
+              <option value="4.5">4.5+ Stars</option>
             </select>
+
+            {hasActiveFilters && (
+              <button
+                onClick={clearAllFilters}
+                className="text-sm text-red-600 hover:text-red-700 font-medium ml-auto sm:ml-2 whitespace-nowrap"
+              >
+                Clear all
+              </button>
+            )}
           </div>
+
+          {/* Active Filter Chips */}
+          {hasActiveFilters && (
+            <div className="flex flex-wrap gap-2 mt-3">
+              {searchQuery && (
+                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-gray-100 text-gray-800 hover:bg-gray-200">
+                  Search: {searchQuery}
+                  <button onClick={() => { setSearchQuery(''); updateFilter('q', ''); }} className="ml-1 text-gray-500 hover:text-gray-900"><X className="h-3 w-3" /></button>
+                </Badge>
+              )}
+              {selectedCategory && (
+                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-gray-100 text-gray-800 hover:bg-gray-200">
+                  {categoryLabels[selectedCategory] || selectedCategory}
+                  <button onClick={() => updateFilter('category', '')} className="ml-1 text-gray-500 hover:text-gray-900"><X className="h-3 w-3" /></button>
+                </Badge>
+              )}
+              {selectedRegion && (
+                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-gray-100 text-gray-800 hover:bg-gray-200">
+                  {regions.find(r => r.slug === selectedRegion)?.name || selectedRegion}
+                  <button onClick={() => updateFilter('region', '')} className="ml-1 text-gray-500 hover:text-gray-900"><X className="h-3 w-3" /></button>
+                </Badge>
+              )}
+              {selectedActivityType && (
+                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-gray-100 text-gray-800 hover:bg-gray-200">
+                  {activityTypes.find(t => t.slug === selectedActivityType)?.name || selectedActivityType}
+                  <button onClick={() => updateFilter('activity', '')} className="ml-1 text-gray-500 hover:text-gray-900"><X className="h-3 w-3" /></button>
+                </Badge>
+              )}
+              {selectedRating && (
+                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-gray-100 text-gray-800 hover:bg-gray-200">
+                  {selectedRating}+ Stars
+                  <button onClick={() => updateFilter('rating', '')} className="ml-1 text-gray-500 hover:text-gray-900"><X className="h-3 w-3" /></button>
+                </Badge>
+              )}
+            </div>
+          )}
         </div>
       </section>
 
@@ -267,11 +288,11 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
               All Adventure Providers
             </h2>
             <p className="text-gray-500 text-sm">
-              Showing {filteredOperators.length} of {operators.length} providers
+              Showing {operators.length} of {totalCount} providers
             </p>
           </div>
 
-          {regularOperators.length > 0 ? (
+          {operators.length > 0 ? (
             <div className="space-y-4">
               {regularOperators.map((operator, index) => (
                 <div key={operator.id}>
@@ -288,13 +309,7 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
             <div className="text-center py-16 bg-gray-50 rounded-xl">
               <p className="text-gray-500 mb-2">No adventure providers found matching your filters</p>
               <button
-                onClick={() => {
-                  setSearchQuery('');
-                  setSelectedRegion('');
-                  setSelectedActivityType('');
-                  setSelectedCategory('');
-                  setSelectedRating('');
-                }}
+                onClick={clearAllFilters}
                 className="text-accent-hover hover:text-accent-hover font-medium text-sm"
               >
                 Clear all filters
@@ -304,5 +319,13 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
         </section>
       </div>
     </>
+  );
+}
+
+export function DirectoryFilters(props: DirectoryFiltersProps) {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-white" />}>
+      <DirectoryFiltersContent {...props} />
+    </Suspense>
   );
 }

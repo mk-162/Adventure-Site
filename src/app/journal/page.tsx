@@ -28,7 +28,7 @@ export default async function JournalPage({ searchParams }: Props) {
   const offset = (currentPage - 1) * perPage;
 
   // Fetch all data server-side in parallel
-  const [postsData, totalCount, tagsData, itinerariesData, operatorsData] = await Promise.all([
+  const [postsData, totalCount, tagsData, itinerariesData, { operators: operatorsData }] = await Promise.all([
     getAllPosts({
       category: selectedCategory || undefined,
       tagSlug: selectedTag || undefined,

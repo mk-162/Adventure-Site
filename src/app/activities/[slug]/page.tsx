@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { getActivityBySlug, getActivities, getAccommodation, getAllActivitySlugs, getItineraries } from "@/lib/queries";
 import { Badge, DifficultyBadge, PriceBadge } from "@/components/ui/badge";
 import { ButtonLink } from "@/components/ui/button";
@@ -268,15 +269,16 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
       <div className="min-h-screen pt-16">
       {/* Hero Gallery */}
       <section className="relative h-[50vh] min-h-[400px]">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('${heroImage}')`,
-          }}
-        >
-          {/* Gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/60" />
-        </div>
+        <Image
+          src={heroImage}
+          alt={activity.name}
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        {/* Gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/60 z-10" />
 
         {/* Actions */}
         <div className="absolute top-4 right-4 flex gap-2">

@@ -1,93 +1,107 @@
-"use client";
-
-import Link from "next/link";
-import { useSearchParams } from "next/navigation";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import Link from 'next/link';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { clsx } from 'clsx';
 
 interface PaginationProps {
   currentPage: number;
   totalPages: number;
+  baseUrl: string;
+  searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export function Pagination({ currentPage, totalPages }: PaginationProps) {
-  const searchParams = useSearchParams();
+export function Pagination({ currentPage, totalPages, baseUrl, searchParams }: PaginationProps) {
+  if (totalPages <= 1) return null;
 
-  const createPageURL = (pageNumber: number | string) => {
-    const params = new URLSearchParams(searchParams.toString());
-    params.set("page", pageNumber.toString());
-    return `?${params.toString()}`;
+  const createPageUrl = (page: number) => {
+    const params = new URLSearchParams();
+    Object.entries(searchParams).forEach(([key, value]) => {
+      if (key !== 'page' && value) {
+        if (Array.isArray(value)) {
+          value.forEach(v => params.append(key, v));
+        } else {
+          params.append(key, value);
+        }
+      }
+    });
+    if (page > 1) {
+      params.set('page', page.toString());
+    }
+    const queryString = params.toString();
+    return `${baseUrl}${queryString ? `?${queryString}` : ''}`;
   };
 
-  if (totalPages <= 1) return null;
+  const pages = [];
+
+  for (let i = 1; i <= totalPages; i++) {
+    if (
+      i === 1 ||
+      i === totalPages ||
+      (i >= currentPage - 1 && i <= currentPage + 1)
+    ) {
+      pages.push(i);
+    } else if (
+      (i === currentPage - 2 && i > 1) ||
+      (i === currentPage + 2 && i < totalPages)
+    ) {
+      pages.push('...');
+    }
+  }
+
+  // Dedup ellipses
+  const uniquePages = pages.filter((page, index, self) => {
+    return page !== '...' || self[index - 1] !== '...';
+  });
 
   return (
     <div className="flex justify-center items-center gap-2 mt-12">
-      {/* Previous */}
       {currentPage > 1 ? (
         <Link
-          href={createPageURL(currentPage - 1)}
-          className="p-2 rounded-full border border-slate-200 hover:bg-slate-50 transition-colors text-slate-600"
+          href={createPageUrl(currentPage - 1)}
+          className="p-2 rounded-full hover:bg-gray-100 text-gray-600 transition-colors"
           aria-label="Previous page"
         >
-          <ChevronLeft className="h-5 w-5" />
+          <ChevronLeft className="w-5 h-5" />
         </Link>
       ) : (
-        <span className="p-2 rounded-full border border-slate-100 text-slate-300 cursor-not-allowed">
-          <ChevronLeft className="h-5 w-5" />
+        <span className="p-2 rounded-full text-gray-300 cursor-not-allowed">
+          <ChevronLeft className="w-5 h-5" />
         </span>
       )}
 
-      {/* Page Numbers */}
       <div className="flex items-center gap-1">
-        {[...Array(totalPages)].map((_, i) => {
-          const page = i + 1;
-
-          // Show first, last, current, and surrounding pages
-          // Logic: 1 ... 4 5 6 ... 12
-          const isFirst = page === 1;
-          const isLast = page === totalPages;
-          const isNearCurrent = page >= currentPage - 1 && page <= currentPage + 1;
-
-          const showPage = isFirst || isLast || isNearCurrent;
-          const showEllipsisStart = page === currentPage - 2 && page > 1;
-          const showEllipsisEnd = page === currentPage + 2 && page < totalPages;
-
-          if (showPage) {
-             return (
-              <Link
-                key={page}
-                href={createPageURL(page)}
-                className={`w-10 h-10 flex items-center justify-center rounded-full text-sm font-medium transition-colors ${
-                  currentPage === page
-                    ? "bg-primary text-white"
-                    : "text-slate-600 hover:bg-slate-50"
-                }`}
-              >
-                {page}
-              </Link>
-            );
-          }
-
-          if (showEllipsisStart || showEllipsisEnd) {
-              return <span key={page} className="text-slate-400 px-1">...</span>;
-          }
-
-          return null;
-        })}
+        {uniquePages.map((page, i) => (
+          typeof page === 'number' ? (
+            <Link
+              key={page}
+              href={createPageUrl(page)}
+              className={clsx(
+                "w-10 h-10 flex items-center justify-center rounded-full text-sm font-semibold transition-colors",
+                currentPage === page
+                  ? "bg-primary text-white shadow-md"
+                  : "text-gray-600 hover:bg-gray-100"
+              )}
+            >
+              {page}
+            </Link>
+          ) : (
+            <span key={`ellipsis-${i}`} className="w-10 h-10 flex items-center justify-center text-gray-400">
+              ...
+            </span>
+          )
+        ))}
       </div>
 
-      {/* Next */}
       {currentPage < totalPages ? (
         <Link
-          href={createPageURL(currentPage + 1)}
-          className="p-2 rounded-full border border-slate-200 hover:bg-slate-50 transition-colors text-slate-600"
+          href={createPageUrl(currentPage + 1)}
+          className="p-2 rounded-full hover:bg-gray-100 text-gray-600 transition-colors"
           aria-label="Next page"
         >
-          <ChevronRight className="h-5 w-5" />
+          <ChevronRight className="w-5 h-5" />
         </Link>
       ) : (
-        <span className="p-2 rounded-full border border-slate-100 text-slate-300 cursor-not-allowed">
-          <ChevronRight className="h-5 w-5" />
+        <span className="p-2 rounded-full text-gray-300 cursor-not-allowed">
+          <ChevronRight className="w-5 h-5" />
         </span>
       )}
     </div>

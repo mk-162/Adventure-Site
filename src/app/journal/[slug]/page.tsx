@@ -109,7 +109,7 @@ export default async function ArticlePage({ params }: Props) {
   }
 
   // Fetch related content for sidebar
-  const [relatedPosts, itineraries, operators, locations] = await Promise.all([
+  const [relatedPosts, itineraries, { operators }, locations] = await Promise.all([
     getRelatedPosts(post.post.id, post.post.category, 3),
     getItineraries({ regionId: post.post.regionId || undefined, limit: 5 }),
     getOperators({ limit: 5 }),

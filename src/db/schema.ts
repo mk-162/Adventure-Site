@@ -1015,6 +1015,7 @@ export const postCategoryEnum = pgEnum("post_category", [
   "news",
   "trip-report",
   "spotlight",
+  "opinion",
 ]);
 
 // Blog posts / journal articles

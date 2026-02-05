@@ -258,8 +258,8 @@
       "description": "Enjoy a pub lunch at the Stackpole Inn, known for its local ales and seasonal dishes.",
       "costFrom": 20,
       "costTo": 30,
-      "lat": 51.616,
-      "lng": -4.891,
+      "lat": 51.6309,
+      "lng": -4.9142,
       "travelToNext": "Walk",
       "travelMode": "walk",
       "budgetAlt": {

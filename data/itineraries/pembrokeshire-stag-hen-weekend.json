@@ -69,8 +69,8 @@
       "description": "A popular harbourside bistro in Porthgain, serving fresh seafood and local produce.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 51.943,
-      "lng": -5.238,
+      "lat": 51.9348,
+      "lng": -5.1838,
       "travelToNext": "20min drive to Whitesands",
       "travelMode": "drive",
       "budgetAlt": {

@@ -162,8 +162,8 @@
       "description": "A traditional pub in Porthgain, serving classic pub fare with a sea view.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 51.919,
-      "lng": -5.197,
+      "lat": 51.9355,
+      "lng": -5.1833,
       "travelToNext": "20 minute drive",
       "travelMode": "drive",
       "budgetAlt": {

@@ -68,8 +68,8 @@
       "description": "A harbourside restaurant serving fresh seafood and hearty pub fare.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 51.929,
-      "lng": -5.229,
+      "lat": 51.9348,
+      "lng": -5.1838,
       "travelToNext": "20 min drive",
       "travelMode": "drive",
       "budgetAlt": {

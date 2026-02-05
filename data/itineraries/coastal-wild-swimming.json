@@ -71,8 +71,8 @@
       "description": "A traditional pub in Porthgain harbour serving hearty Welsh fare and fresh seafood.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 51.9267,
-      "lng": -5.2297,
+      "lat": 51.9355,
+      "lng": -5.1833,
       "travelToNext": "25min drive via B4330",
       "travelMode": "drive",
       "budgetAlt": {
@@ -164,8 +164,8 @@
       "description": "A popular pub near Stackpole Quay serving delicious food and local ales.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 51.6145,
-      "lng": -4.8922,
+      "lat": 51.6309,
+      "lng": -4.9142,
       "travelToNext": "5min drive via minor roads",
       "travelMode": "drive",
       "budgetAlt": {
@@ -257,8 +257,8 @@
       "description": "A cafe and pottery studio near Marloes Sands, serving delicious lunches and cakes.",
       "costFrom": 10,
       "costTo": 20,
-      "lat": 51.6939,
-      "lng": -5.188,
+      "lat": 51.7293,
+      "lng": -5.1617,
       "travelToNext": "1hr drive via A4076 and A40",
       "travelMode": "drive",
       "budgetAlt": {
@@ -311,7 +311,7 @@
     }
   },
   "knowBeforeYouGo": {
-    "weather": "Pembrokeshire weather is unpredictable. Pack for all conditions, even in summer. Sea temperatures are usually cool, around 14-17°C in summer. Check tide times before swimming.",
+    "weather": "Pembrokeshire weather is unpredictable. Pack for all conditions, even in summer. Sea temperatures are usually cool, around 14-17\u00b0C in summer. Check tide times before swimming.",
     "traffic": "Traffic can be heavy in peak season, especially around St Davids and Tenby. Parking can be challenging, arrive early or use park and ride schemes where available. The A40 is prone to congestion.",
     "booking": "Book guided activities and accommodation well in advance, especially for summer months. Some campsites require pre-booking.",
     "fitness": "This trip requires a moderate level of fitness. Be prepared for short coastal walks, swimming in open water, and potentially some scrambling over rocks."

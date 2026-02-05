@@ -1,6 +1,6 @@
 {
   "slug": "wales-under-50-budget",
-  "title": "Wales Adventure Under £50",
+  "title": "Wales Adventure Under \u00a350",
   "tagline": "Proof that the best things in Wales are free (or nearly)",
   "region": "multi",
   "days": 3,
@@ -229,8 +229,8 @@
       "description": "A traditional pub in Porthgain serving hearty meals and local ales.",
       "costFrom": 12,
       "costTo": 22,
-      "lat": 51.9291,
-      "lng": -5.2209,
+      "lat": 51.9355,
+      "lng": -5.1833,
       "travelToNext": "30min drive to Whitesands",
       "travelMode": "drive",
       "budgetAlt": {

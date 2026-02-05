@@ -202,13 +202,13 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
           </div>
 
           {/* Filter Bar */}
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-4 max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-4 max-w-3xl mx-auto">
+            <div className="flex flex-col sm:flex-row gap-4">
               {/* Region */}
               <select 
                 value={selectedRegion}
                 onChange={(e) => setSelectedRegion(e.target.value)}
-                className="w-full px-4 py-3 bg-gray-50 border-none rounded-xl text-[#1e3a4c] font-medium focus:ring-2 focus:ring-[#f97316] focus:bg-white transition-all"
+                className="flex-1 px-4 py-3 bg-gray-50 border-none rounded-xl text-[#1e3a4c] font-medium focus:ring-2 focus:ring-[#f97316] focus:bg-white transition-all"
               >
                 <option value="">All Regions</option>
                 {regions.map((r) => (
@@ -220,7 +220,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
               <select 
                 value={selectedDifficulty}
                 onChange={(e) => setSelectedDifficulty(e.target.value)}
-                className="w-full px-4 py-3 bg-gray-50 border-none rounded-xl text-[#1e3a4c] font-medium focus:ring-2 focus:ring-[#f97316] focus:bg-white transition-all"
+                className="flex-1 px-4 py-3 bg-gray-50 border-none rounded-xl text-[#1e3a4c] font-medium focus:ring-2 focus:ring-[#f97316] focus:bg-white transition-all"
               >
                 <option value="">Any Difficulty</option>
                 <option value="easy">Easy</option>
@@ -228,45 +228,11 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
                 <option value="challenging">Challenging</option>
                 <option value="extreme">Extreme</option>
               </select>
-
-              {/* Duration */}
-              <select 
-                value={selectedDuration}
-                onChange={(e) => setSelectedDuration(e.target.value)}
-                className="w-full px-4 py-3 bg-gray-50 border-none rounded-xl text-[#1e3a4c] font-medium focus:ring-2 focus:ring-[#f97316] focus:bg-white transition-all"
-              >
-                <option value="">Any Duration</option>
-                <option value="weekend">Weekend (1-3 days)</option>
-                <option value="week">Week (4-7 days)</option>
-                <option value="extended">Extended (8+ days)</option>
-              </select>
-
-               {/* Budget */}
-               <select 
-                value={selectedBudget}
-                onChange={(e) => setSelectedBudget(e.target.value)}
-                className="w-full px-4 py-3 bg-gray-50 border-none rounded-xl text-[#1e3a4c] font-medium focus:ring-2 focus:ring-[#f97316] focus:bg-white transition-all"
-              >
-                <option value="">Any Budget</option>
-                <option value="budget">Value (&lt;£500)</option>
-                <option value="mid">Mid-Range (£500-£1.5k)</option>
-                <option value="luxury">Premium (&gt;£1.5k)</option>
-              </select>
             </div>
             
-            {/* Search Input (Optional expansion) */}
-            <div className="mt-4 pt-4 border-t border-gray-100 flex items-center gap-3">
-               <Search className="w-5 h-5 text-gray-400" />
-               <input 
-                 type="text"
-                 placeholder="Search by keywords..."
-                 value={searchQuery}
-                 onChange={(e) => setSearchQuery(e.target.value)}
-                 className="flex-1 bg-transparent border-none focus:ring-0 text-[#1e3a4c] placeholder:text-gray-400"
-               />
-               <div className="text-sm text-gray-400">
-                 {filteredItineraries.length} Results
-               </div>
+            {/* Results count */}
+            <div className="mt-3 text-center text-sm text-gray-400">
+              {filteredItineraries.length} itineraries
             </div>
           </div>
         </div>

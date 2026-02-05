@@ -216,28 +216,11 @@ export function ActivityFilters({
     <>
       {/* Search & Filters */}
       <div className="bg-white rounded-xl border border-gray-200 p-4 mb-8 shadow-sm">
-        {/* Search */}
-        <div className="flex items-center gap-3 mb-4 pb-4 border-b border-gray-100">
-          <Search className="w-5 h-5 text-gray-400" />
-          <input 
-            type="text"
-            placeholder="Search activities..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="flex-1 text-sm bg-transparent border-none focus:outline-none focus:ring-0"
-          />
-        </div>
-        
-        {/* Filters */}
-        <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
-          <Filter className="w-4 h-4" />
-          <span className="font-medium">Filters</span>
-        </div>
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-col sm:flex-row gap-3">
           <select 
             value={selectedRegion}
             onChange={(e) => setSelectedRegion(e.target.value)}
-            className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a4c]/20"
+            className="flex-1 px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#f97316]/30 focus:bg-white transition-all"
           >
             <option value="">All Regions</option>
             {regions.map(region => (
@@ -248,47 +231,12 @@ export function ActivityFilters({
           <select 
             value={selectedActivityType}
             onChange={(e) => setSelectedActivityType(e.target.value)}
-            className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a4c]/20"
+            className="flex-1 px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#f97316]/30 focus:bg-white transition-all"
           >
             <option value="">All Activity Types</option>
             {activityTypes.map(type => (
               <option key={type.id} value={type.slug}>{type.name}</option>
             ))}
-          </select>
-          
-          <select 
-            value={selectedDifficulty}
-            onChange={(e) => setSelectedDifficulty(e.target.value)}
-            className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a4c]/20"
-          >
-            <option value="">Any Difficulty</option>
-            <option value="easy">Easy</option>
-            <option value="moderate">Moderate</option>
-            <option value="challenging">Challenging</option>
-            <option value="extreme">Extreme</option>
-          </select>
-          
-          <select 
-            value={selectedPrice}
-            onChange={(e) => setSelectedPrice(e.target.value)}
-            className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a4c]/20"
-          >
-            <option value="">Any Price</option>
-            <option value="free">Free</option>
-            <option value="budget">Under £50</option>
-            <option value="mid">£50 - £100</option>
-            <option value="premium">£100+</option>
-          </select>
-          
-          <select 
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value)}
-            className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a4c]/20"
-          >
-            <option value="name">Sort: A-Z</option>
-            <option value="price-low">Sort: Price Low-High</option>
-            <option value="price-high">Sort: Price High-Low</option>
-            <option value="difficulty">Sort: Difficulty</option>
           </select>
         </div>
       </div>

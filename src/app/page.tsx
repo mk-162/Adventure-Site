@@ -1,3 +1,5 @@
+import Image from "next/image";
+import { unstable_cache } from "next/cache";
 import { db } from "@/db";
 import { regions, activities, events, operators, activityTypes } from "@/db/schema";
 import { eq, desc, asc, sql } from "drizzle-orm";
@@ -13,7 +15,7 @@ import { getFeaturedItineraries } from "@/lib/queries";
 import { ThisWeekendWidget } from "@/components/events/ThisWeekendWidget";
 
 /** Build a map of region slug → activity type slugs that exist in that region */
-async function getRegionActivityMap(): Promise<Record<string, string[]>> {
+async function _getRegionActivityMap(): Promise<Record<string, string[]>> {
   const rows = await db
     .select({
       regionSlug: regions.slug,
@@ -33,7 +35,13 @@ async function getRegionActivityMap(): Promise<Record<string, string[]>> {
   return map;
 }
 
-async function getHomePageData() {
+const getRegionActivityMap = unstable_cache(
+  _getRegionActivityMap,
+  ["region-activity-map"],
+  { revalidate: 300, tags: ["content"] }
+);
+
+async function _getHomePageData() {
   const [regionsData, activitiesData, eventsData, operatorsData, activityTypesData, featuredItinerariesData, regionActivityMap] = await Promise.all([
     db.select().from(regions).where(eq(regions.status, "published")).limit(6),
     db.select().from(activities).where(eq(activities.status, "published")).limit(10),
@@ -56,6 +64,12 @@ async function getHomePageData() {
     regionActivityMap,
   };
 }
+
+const getHomePageData = unstable_cache(
+  _getHomePageData,
+  ["homepage-data"],
+  { revalidate: 300, tags: ["content"] }
+);
 
 export default async function HomePage() {
   const data = await getHomePageData();
@@ -114,7 +128,7 @@ export default async function HomePage() {
                     className="bg-white rounded-xl border border-gray-200 p-4 hover:shadow-md transition-all hover:-translate-y-0.5 text-center group"
                   >
                     {op.logoUrl ? (
-                      <img src={op.logoUrl} alt={op.name} className="w-12 h-12 mx-auto rounded-lg object-cover mb-3" />
+                      <Image src={op.logoUrl} alt={op.name} width={48} height={48} className="w-12 h-12 mx-auto rounded-lg object-cover mb-3" />
                     ) : (
                       <div className="w-12 h-12 mx-auto rounded-lg bg-[#1e3a4c]/10 flex items-center justify-center text-[#1e3a4c] font-bold text-lg mb-3">
                         {op.name.charAt(0)}

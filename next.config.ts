@@ -21,6 +21,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  outputFileTracingExcludes: {
+    "*": ["./public/images/**"],
+  },
   async redirects() {
     return [
       {

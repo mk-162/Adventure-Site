@@ -51,7 +51,7 @@ function getSeasonFromMonth(month: string | null): string {
   if (!month) return "all";
   
   for (const season of SEASONS) {
-    if (season.value !== "all" && season.months.includes(month as any)) {
+    if (season.value !== "all" && "months" in season && (season.months as readonly string[]).includes(month)) {
       return season.value;
     }
   }

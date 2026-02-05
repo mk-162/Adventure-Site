@@ -519,3 +519,33 @@ export async function generateStaticParams() {
   const slugs = await getAllEventSlugs();
   return slugs.map((slug) => ({ slug }));
 }
+
+export async function generateMetadata({ params }: Props) {
+  const { slug } = await params;
+  const data = await getEventBySlug(slug);
+  if (!data) {
+    return { title: "Event Not Found | Adventure Wales" };
+  }
+
+  const { event, region } = data;
+  const regionName = region?.name || "Wales";
+  const dateStr = event.dateStart
+    ? new Date(event.dateStart).toLocaleDateString("en-GB", { month: "long", year: "numeric" })
+    : "";
+  const typeStr = event.type ? `${event.type} ` : "";
+
+  const title = `${event.name} — ${typeStr}Event in ${regionName}${dateStr ? ` (${dateStr})` : ""} | Adventure Wales`;
+  const description = event.description?.slice(0, 155)
+    || `${event.name} — ${typeStr}adventure event in ${regionName}.${dateStr ? ` ${dateStr}.` : ""} Find details, tickets, and more.`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      siteName: "Adventure Wales",
+    },
+  };
+}

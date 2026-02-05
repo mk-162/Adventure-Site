@@ -240,7 +240,31 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
+  const data = await getItineraryWithStops(slug);
+  if (!data) {
+    return { title: `Itinerary Not Found | Adventure Wales` };
+  }
+
+  const { itinerary, region, stops } = data;
+  const activityCount = stops?.filter(s => s.stopType === "activity").length || 0;
+  const regionName = region?.name || "Wales";
+  const days = itinerary.durationDays ?? 1;
+  const difficulty = itinerary.difficulty
+    ? itinerary.difficulty.charAt(0).toUpperCase() + itinerary.difficulty.slice(1)
+    : "";
+
+  const title = `${itinerary.title} — ${days}-Day ${regionName} Itinerary | Adventure Wales`;
+  const description = itinerary.tagline
+    || `${days}-day ${difficulty.toLowerCase()} itinerary in ${regionName} with ${activityCount} activities. ${itinerary.description?.slice(0, 120) || "Plan your Welsh adventure."}`;
+
   return {
-    title: `Itinerary: ${slug} | Adventure Wales`,
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      siteName: "Adventure Wales",
+    },
   };
 }

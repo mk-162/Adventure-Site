@@ -842,8 +842,25 @@ export async function generateMetadata({ params }: Props) {
     return { title: "Provider Not Found" };
   }
 
+  const regionInfo = operator.regions?.length ? ` in ${operator.regions.slice(0, 2).join(" & ")}` : " in Wales";
+  const ratingInfo = operator.googleRating ? ` Rated ${operator.googleRating}★` : "";
+  const activityInfo = operator.activityTypes?.length
+    ? ` offering ${operator.activityTypes.slice(0, 3).join(", ")}`
+    : "";
+
+  const title = `${operator.name} — Adventure Provider${regionInfo} | Adventure Wales`;
+  const description = operator.tagline
+    || operator.description?.slice(0, 150)
+    || `${operator.name}${activityInfo}${regionInfo}.${ratingInfo} Book your Welsh adventure today.`;
+
   return {
-    title: `${operator.name} | Adventure Wales`,
-    description: operator.tagline || operator.description?.slice(0, 160) || `${operator.name} - Adventure provider in Wales`,
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      siteName: "Adventure Wales",
+    },
   };
 }

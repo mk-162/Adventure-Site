@@ -208,7 +208,7 @@ const regionTransport: Record<string, TransportInfo> = {
     ],
     carFree: "Challenging but possible for the main towns. Bus 4/4A connects Bangor–Llangefni–Holyhead regularly. Buses to Beaumaris run frequently. However, remote beaches and coastal areas are difficult to reach without a car. Cycling is excellent on quiet lanes.",
   },
-  "gower-peninsula": {
+  "gower": {
     trainStations: [
       { name: "Swansea", info: "Main gateway to Gower. GWR direct from London Paddington (~2 hrs 40 min fastest). Transport for Wales from Cardiff (~1 hr) & Manchester (~4 hrs). 20 min drive to Mumbles." },
       { name: "Llanelli", info: "Western approach. Transport for Wales & GWR services. Useful for north Gower via Gowerton." },
@@ -235,7 +235,7 @@ const regionTransport: Record<string, TransportInfo> = {
     ],
     carFree: "Yes — Gower is one of the best rural areas in Wales for car-free visits. The Gower Explorer bus network from Swansea reaches all main beaches. Route 118 to Rhossili and 116 to Llangennith run hourly on weekdays. Sunday services run in high summer. The swanseabaywithoutacar.co.uk website has detailed planning info.",
   },
-  "ceredigion-cardigan-bay": {
+  "mid-wales": {
     trainStations: [
       { name: "Aberystwyth", info: "Cambrian line terminus. ~3 hrs 20 min from Birmingham International, ~1 hr 50 min from Shrewsbury. Near-hourly service. Change at Shrewsbury for London/Manchester." },
       { name: "Machynlleth", info: "Junction for Cambrian & Cambrian Coast lines. Change here for Barmouth, Harlech and Pwllheli." },
@@ -260,7 +260,7 @@ const regionTransport: Record<string, TransportInfo> = {
     ],
     carFree: "Feasible with planning. Train to Aberystwyth is straightforward and scenic. Traws Cymru buses T1, T2, and T5 connect to other towns. Coastal villages like New Quay and Aberaeron reachable by T5/X50 bus. Remote inland areas are harder without a car.",
   },
-  "south-wales-valleys": {
+  "south-wales": {
     trainStations: [
       { name: "Cardiff Central", info: "Main hub — GWR from London Paddington (~1 hr 50 min fastest). Transport for Wales from Manchester (~3.5 hrs), Birmingham (~2 hrs). Gateway to all valley lines." },
       { name: "Merthyr Tydfil", info: "Valley Lines terminus. Every 15–30 min from Cardiff (~1 hr). Being upgraded as part of South Wales Metro with new Stadler tram-trains." },
@@ -287,7 +287,7 @@ const regionTransport: Record<string, TransportInfo> = {
     ],
     carFree: "Excellent — the best-connected region in Wales by public transport. Valley Lines trains run frequently from Cardiff to Merthyr Tydfil, Treherbert, Aberdare, Rhymney & Ebbw Vale. New South Wales Metro tram-trains increasing frequency to every 15 min. Buses fill gaps between valleys.",
   },
-  "north-wales-coast": {
+  "north-wales": {
     trainStations: [
       { name: "Rhyl", info: "North Wales Main Line. Avanti West Coast from London Euston (~2 hrs 40 min direct). Transport for Wales from Manchester (~1.5 hrs). Major resort town." },
       { name: "Colwyn Bay", info: "North Wales Main Line. ~10 min from Rhyl. Transport for Wales and Avanti services." },
@@ -341,6 +341,57 @@ const regionTransport: Record<string, TransportInfo> = {
       { route: "Parking: Tintern", info: "Tintern Old Station car park (free). Limited roadside parking in the village." },
     ],
     carFree: "Possible but limited. Bus 69 from Chepstow follows the Wye Valley through Tintern to Monmouth (Mon–Sat). Train to Chepstow is easy from Bristol, Cardiff or Gloucester. For deeper exploration of the valley and Forest of Dean, a car is helpful. The Wye Valley Walk is accessible from Chepstow station on foot.",
+  },
+  "llyn-peninsula": {
+    trainStations: [
+      { name: "Pwllheli", info: "Cambrian Coast line terminus. Scenic route from Machynlleth/Shrewsbury (~3 hrs). Change at Shrewsbury for London/Birmingham." },
+      { name: "Criccieth", info: "Cambrian Coast line. Small coastal town, good base for south Llŷn." },
+      { name: "Porthmadog", info: "Cambrian Coast line + Ffestiniog Railway. Junction for Snowdonia and Llŷn. ~3 hrs from Shrewsbury." },
+      { name: "Abererch", info: "Request stop between Pwllheli and Porthmadog. Quiet access to southern beaches." },
+    ],
+    busServices: [
+      { name: "1/1A", info: "Caernarfon to Pwllheli via Clynnog Fawr, Trefor & Nefyn. The main north coast route, roughly hourly Mon–Sat." },
+      { name: "17/18", info: "Pwllheli to Aberdaron via Llanbedrog & Abersoch. Serves the southern tip. Limited service." },
+      { name: "Traws Cymru T2", info: "Bangor to Aberystwyth via Caernarfon & Porthmadog. Connects Llŷn to Snowdonia and Mid Wales." },
+      { name: "Bws Gwynedd", info: "Local demand-responsive service covering rural Llŷn. Book via app or phone." },
+    ],
+    airports: [
+      { name: "Liverpool John Lennon", info: "~2.5 hrs drive via A55/A487 (110 miles)" },
+      { name: "Manchester", info: "~3 hrs drive via M56/A55/A487 (130 miles)" },
+    ],
+    driving: [
+      { route: "From London", info: "~5.5 hrs via M40/M6/A55/A487 (290 miles)" },
+      { route: "From Birmingham", info: "~3.5 hrs via M54/A5/A487 (150 miles)" },
+      { route: "From Manchester", info: "~3 hrs via M56/A55/A487 (130 miles)" },
+      { route: "Parking: Aberdaron", info: "Pay & display car park near the beach. £5/day. Can fill up in peak summer." },
+      { route: "Parking: Porth Neigwl", info: "Small National Trust car park (free for NT members). Very limited spaces — arrive early." },
+    ],
+    carFree: "Difficult. Bus services exist but are infrequent, especially to the western tip. Train to Pwllheli works as a base, but exploring Aberdaron, Hell's Mouth (Porth Neigwl), and the coastal path requires either a car, cycling, or a lot of patience with bus timetables. Cycling the quiet lanes is excellent if you're fit.",
+  },
+  carmarthenshire: {
+    trainStations: [
+      { name: "Carmarthen", info: "Main hub. Transport for Wales from Swansea (~45 min), Cardiff (~1 hr 45 min). GWR from London Paddington (~4 hrs via Swansea)." },
+      { name: "Llandeilo", info: "Heart of Wales line (Swansea to Shrewsbury). Beautiful scenic route, 4 trains per day. Gateway to the Towy Valley." },
+      { name: "Llandovery", info: "Heart of Wales line. Northern Carmarthenshire, gateway to the Brecon Beacons' western edges." },
+      { name: "Kidwelly", info: "Main line between Carmarthen and Swansea. Access to Kidwelly Castle and the coastal area." },
+    ],
+    busServices: [
+      { name: "Traws Cymru T1", info: "Carmarthen to Aberystwyth via Lampeter & Aberaeron. Key north-south route through rural west Wales." },
+      { name: "280/281", info: "Carmarthen to Llandeilo and surrounding villages. Regular Mon–Sat service." },
+      { name: "103", info: "Carmarthen to Pendine via Laugharne (Dylan Thomas country). Limited service." },
+      { name: "fflecsi Carmarthenshire", info: "On-demand bus covering areas around Carmarthen and Llandeilo. Book via fflecsi app." },
+    ],
+    airports: [
+      { name: "Cardiff", info: "~1.5 hrs drive via M4/A48 (80 miles)" },
+      { name: "Bristol", info: "~2.5 hrs drive via M4/M48 (130 miles)" },
+    ],
+    driving: [
+      { route: "From London", info: "~4 hrs via M4/A48 (230 miles). Exit M4 at Pont Abraham." },
+      { route: "From Cardiff", info: "~1.5 hrs via M4/A48 (80 miles)" },
+      { route: "From Swansea", info: "~40 min via A48 (30 miles)" },
+      { route: "From Birmingham", info: "~3 hrs via M5/M4/A48 (150 miles)" },
+    ],
+    carFree: "The Heart of Wales line is one of Britain's most scenic railway journeys and connects Llandeilo and Llandovery. Carmarthen has reasonable bus links. However, many of the county's best outdoor spots (Brechfa Forest, the Towy Valley trails) are remote — a car is strongly recommended for adventure activities.",
   },
 };
 

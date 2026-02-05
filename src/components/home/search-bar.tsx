@@ -48,12 +48,22 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
   const [what, setWhat] = useState("");
   const [focusedField, setFocusedField] = useState<string | null>(null);
 
+  // Deduplicate activity types by slug (defensive — prevents stale cache doubling)
+  const uniqueActivityTypes = useMemo(() => {
+    const seen = new Set<string>();
+    return activityTypes.filter((at) => {
+      if (seen.has(at.slug)) return false;
+      seen.add(at.slug);
+      return true;
+    });
+  }, [activityTypes]);
+
   // Filter activity types based on selected region
   const filteredActivityTypes = useMemo(() => {
-    if (!where || !regionActivityMap[where]) return activityTypes;
+    if (!where || !regionActivityMap[where]) return uniqueActivityTypes;
     const allowedSlugs = new Set(regionActivityMap[where]);
-    return activityTypes.filter((at) => allowedSlugs.has(at.slug));
-  }, [where, activityTypes, regionActivityMap]);
+    return uniqueActivityTypes.filter((at) => allowedSlugs.has(at.slug));
+  }, [where, uniqueActivityTypes, regionActivityMap]);
 
   // Reset activity selection if it's no longer valid for the chosen region
   const handleRegionChange = (regionSlug: string) => {
@@ -221,7 +231,7 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
 
         {/* Helper text */}
         <p className="mt-4 text-xs text-slate-500 text-center">
-          Find your perfect Welsh adventure • {activityTypes.length} activity types • {regions.length} regions
+          Find your perfect Welsh adventure • {uniqueActivityTypes.length} activity types • {regions.length} regions
         </p>
       </div>
     </div>

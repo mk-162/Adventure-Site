@@ -2,6 +2,396 @@
 
 Drop anything you notice here. One line per snag. I'll fix and tick them off.
 
+##Coded feedback
+Step 0 — Architecture Map (evidence-based)
+Router & rendering
+
+App Router (Next.js src/app structure). The root layout and pages live under src/app, confirming App Router usage.
+
+Server Components + DB calls: Pages like / and /directory fetch directly from the DB in server components (db + Drizzle), with some unstable_cache for the homepage only.
+
+Client Components for interactive filters & search: e.g., DirectoryFilters and home SearchBar are use client with useState/useMemo.
+
+Data access layer
+
+Drizzle ORM is the DB access layer (src/lib/queries.ts), with Vercel Postgres dependencies in package.json.
+
+Styling system
+
+Tailwind CSS utility classes are used throughout components and layouts; Tailwind is in dev deps.
+
+State management
+
+Local component state with useState and memoized filtering in components like DirectoryFilters and SearchBar.
+
+Search & filters
+
+Homepage SearchBar routes via window.location to /search?activity=… or region pages.
+
+Directory filters are client-side only (no URL sync) and only filter the 50 operators fetched server-side.
+
+DB access patterns
+
+Operators are fetched with getOperators({ limit: 50 }) for directory listing; filters are applied in-memory on the client. getOperators exposes regionSlug/activityTypeSlug options but doesn’t implement them in SQL today.
+
+Analytics/monitoring
+
+Cookie banner exists, but no actual analytics integration is wired in layout (no Vercel Analytics, GA scripts, etc.).
+
+Top 10 Pages (by product importance)
+Grounded in sitemap + navigation:
+
+Homepage — /
+
+Directory listing — /directory
+
+Directory detail — /directory/[slug] (operators in sitemap)
+
+Search — /search (header nav + page exists)
+
+Activities — /activities
+
+Destinations/Regions hub — /destinations and /regions
+
+Events — /events
+
+Itineraries — /itineraries
+
+Journal — /journal
+
+My Adventures (favorites/account flow) — /my-adventures is linked from header for logged-in users.
+
+Executive Summary (≤12 bullets)
+Search is partially broken: /search?q= is rendered in the UI and JSON-LD but not actually used in DB queries, so text search does nothing.
+
+Directory filters aren’t shareable: all filters are client state with no URL sync; users can’t copy/share filtered results or reload filters.
+
+Directory filtering is client-only with only the first 50 operators fetched; the DB query doesn’t support region/activity filters even though the options exist in code.
+
+Images on key directory pages bypass Next/Image (logo + hero are img/CSS background), hurting LCP and optimization opportunities.
+
+Sitemap includes region+activity pages for all combinations, likely generating many thin or empty pages that could be indexed without content.
+
+Type safety is intentionally disabled for builds, which increases regression risk in production deployments.
+
+A11y gaps in directory filters: search input and selects lack explicit labels/ARIA attributes; relying on placeholders only isn’t sufficient for screen readers.
+
+Search results page does not reflect current query (input isn’t bound to searchParams.q), which hurts UX clarity and trust.
+
+Operator detail pages lack structured data despite existing JSON-LD helpers for other content types—missed SEO for LocalBusiness/Place pages.
+
+Homepage uses cached queries but other listings don’t (no caching or revalidation on directory/search), risking unnecessary DB load under traffic spikes.
+
+Prioritized Backlog Table (Impact × Effort)
+ID	Title	Impact	Effort	Area	Evidence	Proposed Fix (1–3 bullets)
+QW-1	Make /search?q functional	H	S	UX/SEO/Perf	Search UI & JSON-LD use q, but queries ignore it.	Add q to searchParams; apply ilike filters for name/description on activities, itineraries, accommodation. Bind input value to q.
+QW-2	Add accessible labels to directory filters	M	S	A11y	Search + select inputs have no labels or aria attributes.【F:src/components/directory/DirectoryFilters.tsx†L137-L200	Add <label className="sr-only">…</label> + id/aria-label for search & selects.
+QW-3	Sync directory filters with URL	M	M	UX/SEO	Filters are local state; no URL sync/shareability.	Use useSearchParams + useRouter to initialize state from URL and update query string on change.
+QW-4	Bind search input to query state	M	S	UX	Search input doesn’t reflect current query state.	Set defaultValue={searchParams.q ?? ""} (or controlled input) and show query chips.
+HL-1	Server-side directory filtering + pagination	H	M	Perf/UX	Only 50 operators fetched; filters are client-only; query options not implemented.	Implement regionSlug/activityTypeSlug in getOperators, add pagination params, and render paged results server-side.
+HL-2	Replace CSS background / <img> with Next/Image for directory pages	M	M	Perf	Operator logos and hero images use img/CSS backgrounds.	Use <Image> with sizes and priority for hero; add remotePatterns for logo domains.
+HL-3	Add LocalBusiness schema to operator detail pages	M	M	SEO	JSON-LD helpers exist but operator detail page doesn’t use them.	Add a createLocalBusinessSchema helper and render <JsonLd> on operator pages.
+HL-4	Reduce thin/empty sitemap entries	M	M	SEO	Sitemap generates every region × activityType page, regardless of content.	Use region→activityType map (like home page) to emit only combinations with content.
+BB-1	Build a shared filter/search design system	H	L	UX/A11y	Filter/search UI differs across pages; no shared components beyond OperatorCard.	Introduce reusable FilterChip, SelectField, SearchField, EmptyState, Skeleton.
+BB-2	Re-enable type safety + CI checks	H	M	Workflow	ignoreBuildErrors: true allows broken builds in prod.	Remove ignoreBuildErrors, add CI tsc --noEmit and next lint.
+BB-3	Add testing for critical flows	M	M	Workflow	No testing scripts beyond lint/build in package.json.	Add test script and minimal Playwright for search + directory flows.
+Quick Wins Patch Set (Top 5)
+These are suggested patches; no code changes were applied.
+
+1) Wire up /search?q + bind input value
+Files: src/app/search/page.tsx (lines ~9–90, 206–222)
+Why: Search query is present in UI but ignored in DB; JSON-LD SearchAction points to /search?q=.
+
+diff --git a/src/app/search/page.tsx b/src/app/search/page.tsx
+@@
+ interface SearchPageProps {
+   searchParams: {
+     region?: string;
+     activity?: string;
++    q?: string;
+   };
+ }
+@@
+ async function getSearchResults(filters: {
+   regionSlug?: string;
+   activitySlug?: string;
++  query?: string;
+ }) {
+-  const { regionSlug, activitySlug } = filters;
++  const { regionSlug, activitySlug, query } = filters;
+@@
+-  const activityConditions = [eq(activities.status, "published")];
++  const activityConditions = [eq(activities.status, "published")];
+   if (region) activityConditions.push(eq(activities.regionId, region.id));
+   if (activityType) activityConditions.push(eq(activities.activityTypeId, activityType.id));
++  if (query) {
++    activityConditions.push(
++      or(
++        ilike(activities.name, `%${query}%`),
++        ilike(activities.description, `%${query}%`)
++      )
++    );
++  }
+@@
+-  const itineraryConditions = [eq(itineraries.status, "published")];
++  const itineraryConditions = [eq(itineraries.status, "published")];
+   if (region) itineraryConditions.push(eq(itineraries.regionId, region.id));
++  if (query) {
++    itineraryConditions.push(
++      or(
++        ilike(itineraries.title, `%${query}%`),
++        ilike(itineraries.description, `%${query}%`)
++      )
++    );
++  }
+@@
+-  const accommodationConditions = [eq(accommodation.status, "published")];
++  const accommodationConditions = [eq(accommodation.status, "published")];
+   if (region) accommodationConditions.push(eq(accommodation.regionId, region.id));
++  if (query) {
++    accommodationConditions.push(
++      or(
++        ilike(accommodation.name, `%${query}%`),
++        ilike(accommodation.description, `%${query}%`)
++      )
++    );
++  }
+@@
+   const results = await getSearchResults({
+     regionSlug: searchParams.region,
+     activitySlug: searchParams.activity,
++    query: searchParams.q?.trim(),
+   });
+@@
+-  <input
++  <input
+     type="text"
+     name="q"
+     placeholder="Search adventures, activities, regions..."
++    defaultValue={searchParams.q ?? ""}
+     className="w-full ..."
+   />
+2) Add labels/ARIA for directory filters (A11y quick fix)
+File: src/components/directory/DirectoryFilters.tsx (lines ~137–200)
+Why: Inputs lack labels and rely on placeholders, which is insufficient for screen readers.
+
+diff --git a/src/components/directory/DirectoryFilters.tsx b/src/components/directory/DirectoryFilters.tsx
+@@
+-<input
++<label htmlFor="directory-search" className="sr-only">Search providers</label>
++<input
++  id="directory-search"
+   type="search"
+   placeholder="Search adventure providers..."
+@@
+-<select
++<label htmlFor="category-filter" className="sr-only">Filter by category</label>
++<select
++  id="category-filter"
+@@
+-<select
++<label htmlFor="region-filter" className="sr-only">Filter by region</label>
++<select
++  id="region-filter"
+@@
+-<select
++<label htmlFor="activity-filter" className="sr-only">Filter by activity</label>
++<select
++  id="activity-filter"
+@@
+-<select
++<label htmlFor="rating-filter" className="sr-only">Filter by rating</label>
++<select
++  id="rating-filter"
+3) Sync directory filters with the URL (shareable)
+File: src/components/directory/DirectoryFilters.tsx (lines ~51–117)
+Why: Current state is not shareable or reload-safe.
+
+diff --git a/src/components/directory/DirectoryFilters.tsx b/src/components/directory/DirectoryFilters.tsx
+@@
+-import { useState, useMemo } from 'react';
++import { useState, useMemo, useEffect } from 'react';
++import { useRouter, useSearchParams } from 'next/navigation';
+@@
+   const [searchQuery, setSearchQuery] = useState('');
+@@
++  const router = useRouter();
++  const searchParams = useSearchParams();
++
++  useEffect(() => {
++    setSearchQuery(searchParams.get('q') ?? '');
++    setSelectedRegion(searchParams.get('region') ?? '');
++    setSelectedActivityType(searchParams.get('activity') ?? '');
++    setSelectedCategory(searchParams.get('category') ?? '');
++    setSelectedRating(searchParams.get('rating') ?? '');
++  }, [searchParams]);
++
++  const updateUrl = (next: Record<string, string>) => {
++    const params = new URLSearchParams(searchParams);
++    Object.entries(next).forEach(([key, value]) => {
++      if (value) params.set(key, value);
++      else params.delete(key);
++    });
++    router.replace(`/directory?${params.toString()}`, { scroll: false });
++  };
+4) Add LocalBusiness schema for operator pages
+Files: src/components/seo/JsonLd.tsx, src/app/directory/[slug]/page.tsx
+Why: Operator pages are prime for LocalBusiness schema but currently output no JSON-LD. Helpers already exist for other types.
+
+diff --git a/src/components/seo/JsonLd.tsx b/src/components/seo/JsonLd.tsx
+@@
++export function createLocalBusinessSchema(operator: {
++  name: string;
++  slug: string;
++  description?: string | null;
++  address?: string | null;
++  website?: string | null;
++  phone?: string | null;
++  googleRating?: string | null;
++}, siteUrl: string = "https://adventurewales.co.uk") {
++  return {
++    "@context": "https://schema.org",
++    "@type": "LocalBusiness",
++    "name": operator.name,
++    "url": `${siteUrl}/directory/${operator.slug}`,
++    "description": operator.description ?? undefined,
++    "address": operator.address ? { "@type": "PostalAddress", "streetAddress": operator.address, "addressCountry": "GB" } : undefined,
++    "telephone": operator.phone ?? undefined,
++    "aggregateRating": operator.googleRating ? {
++      "@type": "AggregateRating",
++      "ratingValue": operator.googleRating,
++      "bestRating": "5"
++    } : undefined
++  };
++}
+diff --git a/src/app/directory/[slug]/page.tsx b/src/app/directory/[slug]/page.tsx
+@@
+-import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
++import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
++import { JsonLd, createLocalBusinessSchema } from "@/components/seo/JsonLd";
+@@
+ return (
+   <div className="min-h-screen pb-24 lg:pb-12">
++    <JsonLd data={createLocalBusinessSchema(operator)} />
+5) Bind search input to query state (UX clarity)
+File: src/app/search/page.tsx (lines ~206–222)
+Why: Users can’t see the current query after navigating from the homepage search or an external link.
+
+-<input
++<input
+   type="text"
+   name="q"
+   placeholder="Search adventures, activities, regions..."
++  defaultValue={searchParams.q ?? ""}
+   className="w-full ..."
+/>
+UI Improvement Plan
+Listing Page (Directory) — Before/After
+Before (current):
+
+Filters are sticky but not reflected in URL, so results aren’t shareable or reload-safe.
+
+Search only matches provider names, not tags/tagline/USP, reducing findability.
+
+No filter chips to show active filters or quick clear.
+
+After (proposed):
+
+URL-synced filters (e.g., /directory?region=pembrokeshire&rating=4.5+).
+
+Active filter chips + “Clear all” near results count.
+
+Search matches name + tagline + activity types for better discovery.
+
+Detail Page (Operator) — Before/After
+Before (current):
+
+Hero image uses CSS background; logo uses <img> (no optimization).
+
+No structured data for LocalBusiness (missed SEO).
+
+After (proposed):
+
+Use next/image for hero and logo with priority for LCP and responsive sizes.
+
+Add LocalBusiness schema + BreadcrumbList JSON-LD for stronger SERP results.
+
+Add “Last updated” or “Claimed” trust signals in the profile header to improve credibility.
+
+Consistent Layout System Proposal
+Spacing scale: 4/8/12/16/24/32/48/64.
+
+Typography scale: text-sm, text-base, text-lg, text-xl, text-2xl, text-3xl with consistent line heights.
+
+Layout primitives: Section, Container, Stack, Grid with fixed max width (e.g., max-w-7xl already in use).
+
+Reusable UI Components to Standardize
+Card (image + meta + CTA)
+
+Badge and FilterChip
+
+SearchField
+
+SelectField
+
+EmptyState
+
+Skeleton
+
+Pagination
+
+Workflow Upgrade Plan
+Minimal CI Checklist & Scripts
+Add: npm run lint and npm run typecheck to CI.
+
+Add new script: "typecheck": "tsc --noEmit".
+
+Remove: ignoreBuildErrors: true after issues are resolved.
+
+Branch/PR Template
+Title format: feat/, fix/, perf/, seo/.
+
+Checklist: UI screenshots, accessibility check, search/filter behavior, DB query impact.
+
+Definition of Done (new pages/features)
+Metadata + OG tags
+
+Structured data (JSON-LD where applicable)
+
+Lighthouse > 85 on mobile
+
+Keyboard + screen reader check for forms/filters
+
+Query params preserved for shareable filters
+
+30/60/90 Day Roadmap
+0–30 Days
+
+Fix /search?q (functional search).
+
+Add URL-synced directory filters + filter chips.
+
+A11y labels for filters and inputs.
+
+31–60 Days
+
+Move directory filtering to server-side with pagination; implement missing region/activity filters in getOperators.
+
+Introduce LocalBusiness JSON-LD for operator pages.
+
+Reduce sitemap to pages with real content using region→activity map.
+
+61–90 Days
+
+Replace directory hero + logo images with Next/Image for LCP improvement.
+
+Standardize UI primitives (Card, FilterChip, Skeleton, EmptyState).
+
+Re-enable strict TypeScript and add CI gating checks.
+
+
+
+
 **Progress: 150/171 fixed (88%)** — Last updated 2026-06-06
 
 ### Remaining 21 items (categorised):

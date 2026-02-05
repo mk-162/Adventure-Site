@@ -25,7 +25,7 @@ export default async function JournalPage({ searchParams }: Props) {
   const selectedTag = (typeof params.tag === "string" ? params.tag : "") || "";
 
   // Fetch all data server-side in parallel
-  const [postsData, tagsData, itinerariesData, operatorsData] = await Promise.all([
+  const [postsData, tagsData, itinerariesData, { operators: operatorsData }] = await Promise.all([
     getAllPosts({
       category: selectedCategory || undefined,
       tagSlug: selectedTag || undefined,

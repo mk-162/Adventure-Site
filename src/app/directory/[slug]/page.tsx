@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { 
   getOperatorWithActivities,
   getOperators,
@@ -91,9 +92,9 @@ export default async function OperatorProfilePage({ params }: Props) {
 
   // Get related operators in the same region
   const primaryRegion = operator.regions && operator.regions.length > 0 ? operator.regions[0] : null;
-  let relatedOperators: Awaited<ReturnType<typeof getOperators>> = [];
+  let relatedOperators: Awaited<ReturnType<typeof getOperators>>["operators"] = [];
   if (primaryRegion) {
-    const allOps = await getOperators({ limit: 50 });
+    const { operators: allOps } = await getOperators({ limit: 50 });
     relatedOperators = allOps
       .filter(op => op.id !== operator.id && op.regions && op.regions.includes(primaryRegion))
       .slice(0, 4);
@@ -130,15 +131,15 @@ export default async function OperatorProfilePage({ params }: Props) {
       
       {/* Hero / Cover Image */}
       <div className="relative w-full h-40 sm:h-52 lg:h-64 overflow-hidden lg:mx-auto lg:max-w-7xl lg:mt-6 lg:rounded-2xl lg:px-4">
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
-        <div 
-          className="absolute inset-0 bg-cover bg-center lg:rounded-2xl"
-          style={{ 
-            backgroundImage: operator.coverImage 
-              ? `url('${operator.coverImage}')` 
-              : `url('/images/activities/hiking-hero.jpg')` 
-          }}
+        <Image
+          src={operator.coverImage || '/images/activities/hiking-hero.jpg'}
+          alt={`${operator.name} cover`}
+          fill
+          className="object-cover lg:rounded-2xl"
+          priority
+          sizes="(max-width: 1024px) 100vw, 1280px"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
 
         {/* Cover Actions (desktop) */}
         <div className="absolute top-4 right-4 lg:right-8 z-20 hidden lg:flex gap-2">
@@ -164,12 +165,16 @@ export default async function OperatorProfilePage({ params }: Props) {
             <div className="flex flex-col items-center lg:flex-row lg:items-end gap-4 lg:gap-6">
               {/* Logo */}
               {operator.logoUrl && (
-                <div className="h-28 w-28 sm:h-32 sm:w-32 lg:h-40 lg:w-40 rounded-2xl bg-white p-2 shadow-lg ring-1 ring-black/5">
-                  <img 
-                    src={operator.logoUrl} 
-                    alt={operator.name}
-                    className="w-full h-full rounded-xl object-cover"
-                  />
+                <div className="relative h-28 w-28 sm:h-32 sm:w-32 lg:h-40 lg:w-40 rounded-2xl bg-white p-2 shadow-lg ring-1 ring-black/5 overflow-hidden">
+                  <div className="relative w-full h-full rounded-xl overflow-hidden">
+                    <Image
+                      src={operator.logoUrl}
+                      alt={operator.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 128px, 160px"
+                    />
+                  </div>
                 </div>
               )}
 
@@ -723,7 +728,9 @@ export default async function OperatorProfilePage({ params }: Props) {
                 >
                   <div className="flex items-center gap-3 mb-2">
                     {relOp.logoUrl ? (
-                      <img src={relOp.logoUrl} alt={relOp.name} className="w-10 h-10 rounded-lg object-cover" />
+                      <div className="relative w-10 h-10 rounded-lg overflow-hidden shrink-0">
+                        <Image src={relOp.logoUrl} alt={relOp.name} fill className="object-cover" sizes="40px" />
+                      </div>
                     ) : (
                       <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
                         {relOp.name.charAt(0)}
@@ -835,7 +842,7 @@ export default async function OperatorProfilePage({ params }: Props) {
 
 // Generate static params for all operators
 export async function generateStaticParams() {
-  const operators = await getOperators({ limit: 100 });
+  const { operators } = await getOperators({ limit: 100 });
   
   return operators.map(op => ({
     slug: op.slug

@@ -8,7 +8,7 @@ export async function GET(request: Request) {
     : undefined;
 
   try {
-    const operators = await getOperators({ limit });
+    const { operators } = await getOperators({ limit });
     return NextResponse.json(operators);
   } catch (error) {
     console.error("Error fetching operators:", error);

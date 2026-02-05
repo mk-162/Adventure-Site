@@ -21,7 +21,7 @@ import {
   postTags,
   itineraryStops,
 } from "@/db/schema";
-import { eq, and, ilike, desc, asc, sql } from "drizzle-orm";
+import { eq, and, ilike, desc, asc, sql, arrayContains, gte } from "drizzle-orm";
 
 // =====================
 // SITE QUERIES
@@ -262,6 +262,8 @@ export async function getOperators(options?: {
   activityTypeSlug?: string;
   claimStatus?: "stub" | "claimed" | "premium";
   category?: string;
+  minRating?: number;
+  query?: string;
   limit?: number;
   offset?: number;
 }) {
@@ -276,6 +278,31 @@ export async function getOperators(options?: {
     conditions.push(eq(operators.category, options.category as any));
   }
 
+  if (options?.regionSlug) {
+    conditions.push(arrayContains(operators.regions, [options.regionSlug]));
+  }
+
+  if (options?.activityTypeSlug) {
+    conditions.push(arrayContains(operators.activityTypes, [options.activityTypeSlug]));
+  }
+
+  if (options?.minRating) {
+    conditions.push(gte(operators.googleRating, options.minRating.toString()));
+  }
+
+  if (options?.query) {
+    const search = `%${options.query}%`;
+    conditions.push(sql`(${operators.name} ILIKE ${search} OR ${operators.tagline} ILIKE ${search})`);
+  }
+
+  // Count query
+  const countResult = await db
+    .select({ count: sql<number>`count(*)` })
+    .from(operators)
+    .where(and(...conditions));
+
+  const total = Number(countResult[0]?.count || 0);
+
   let query = db
     .select()
     .from(operators)
@@ -289,7 +316,13 @@ export async function getOperators(options?: {
     query = query.limit(options.limit) as typeof query;
   }
 
-  return query;
+  if (options?.offset) {
+    query = query.offset(options.offset) as typeof query;
+  }
+
+  const result = await query;
+
+  return { operators: result, total };
 }
 
 export async function getOperatorBySlug(slug: string) {

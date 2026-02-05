@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { 
   ChevronRight, 
   MapPin, 
@@ -78,11 +79,15 @@ export default async function ItineraryDetailPage({ params }: Props) {
 
         {/* Hero Section */}
         <div className="relative w-full rounded-2xl overflow-hidden mb-6 lg:mb-10 group h-[300px] sm:h-[400px] lg:h-[500px]">
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent z-10" />
-          <div 
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-            style={{ backgroundImage: `url('/images/regions/${region?.slug || 'default'}-hero.jpg')` }}
+          <Image
+            src={`/images/regions/${region?.slug || 'default'}-hero.jpg`}
+            alt={itinerary.title}
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
+            priority
+            sizes="(max-width: 1280px) 100vw, 1280px"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent z-10" />
 
           {/* Duration Badge */}
           <div className="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg z-20">

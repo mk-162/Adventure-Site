@@ -115,8 +115,8 @@ export async function POST(req: NextRequest) {
           .set({
             billingTier: isActive ? tier : "free",
             stripeSubscriptionStatus: sub.status,
-            billingPeriodEnd: sub.current_period_end
-              ? new Date(sub.current_period_end * 1000)
+            billingPeriodEnd: (sub as any).current_period_end
+              ? new Date(((sub as any).current_period_end as number) * 1000)
               : null,
           })
           .where(eq(operators.id, operator.id));

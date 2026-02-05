@@ -460,7 +460,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
     notFound();
   }
 
-  const [activities, accommodation, operators, mapEntities, activityTypesWithCount, bestLists] = await Promise.all([
+  const [activities, accommodation, { operators }, mapEntities, activityTypesWithCount, bestLists] = await Promise.all([
     getActivitiesByRegion(regionSlug, 6),
     getAccommodationByRegion(regionSlug, 4),
     getOperators({ limit: 3 }),

@@ -10,6 +10,7 @@ import {
   jsonb,
   pgEnum,
   unique,
+  index,
 } from "drizzle-orm/pg-core";
 import { relations } from "drizzle-orm";
 
@@ -102,7 +103,11 @@ export const regions = pgTable("regions", {
   completenessScore: integer("completeness_score").default(0),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("regions_site_id_idx").on(table.siteId),
+  index("regions_slug_idx").on(table.slug),
+  index("regions_status_idx").on(table.status),
+]);
 
 // Activity types taxonomy
 export const activityTypes = pgTable("activity_types", {
@@ -115,7 +120,10 @@ export const activityTypes = pgTable("activity_types", {
   icon: varchar("icon", { length: 100 }),
   heroImage: text("hero_image"),
   description: text("description"),
-});
+}, (table) => [
+  index("activity_types_site_id_idx").on(table.siteId),
+  index("activity_types_slug_idx").on(table.slug),
+]);
 
 // Activities/experiences
 export const activities = pgTable("activities", {
@@ -147,7 +155,14 @@ export const activities = pgTable("activities", {
   completenessScore: integer("completeness_score").default(0),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("activities_site_id_idx").on(table.siteId),
+  index("activities_region_id_idx").on(table.regionId),
+  index("activities_operator_id_idx").on(table.operatorId),
+  index("activities_activity_type_id_idx").on(table.activityTypeId),
+  index("activities_slug_idx").on(table.slug),
+  index("activities_status_idx").on(table.status),
+]);
 
 // Locations/spots
 export const locations = pgTable("locations", {
@@ -168,7 +183,12 @@ export const locations = pgTable("locations", {
   crowdLevel: varchar("crowd_level", { length: 50 }),
   status: statusEnum("status").default("draft").notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("locations_site_id_idx").on(table.siteId),
+  index("locations_region_id_idx").on(table.regionId),
+  index("locations_slug_idx").on(table.slug),
+  index("locations_status_idx").on(table.status),
+]);
 
 // Accommodation
 export const accommodation = pgTable("accommodation", {
@@ -193,7 +213,12 @@ export const accommodation = pgTable("accommodation", {
   description: text("description"),
   status: statusEnum("status").default("draft").notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("accommodation_site_id_idx").on(table.siteId),
+  index("accommodation_region_id_idx").on(table.regionId),
+  index("accommodation_slug_idx").on(table.slug),
+  index("accommodation_status_idx").on(table.status),
+]);
 
 // Events
 export const events = pgTable("events", {
@@ -235,7 +260,14 @@ export const events = pgTable("events", {
   ticketUrl: text("ticket_url"),
   difficulty: varchar("difficulty", { length: 50 }), // 'beginner', 'intermediate', 'advanced', 'elite'
   ageRange: varchar("age_range", { length: 100 }), // 'all-ages', '18+', 'family-friendly'
-});
+}, (table) => [
+  index("events_site_id_idx").on(table.siteId),
+  index("events_region_id_idx").on(table.regionId),
+  index("events_operator_id_idx").on(table.operatorId),
+  index("events_slug_idx").on(table.slug),
+  index("events_status_idx").on(table.status),
+  index("events_date_start_idx").on(table.dateStart),
+]);
 
 // Event Saves (Hearts)
 export const eventSaves = pgTable("event_saves", {
@@ -244,7 +276,9 @@ export const eventSaves = pgTable("event_saves", {
   sessionId: varchar("session_id", { length: 255 }).notNull(), // anonymous session or operator ID
   createdAt: timestamp("created_at").defaultNow().notNull(),
 }, (table) => [
-  { uniqueSave: unique("unique_event_save").on(table.eventId, table.sessionId) }
+  { uniqueSave: unique("unique_event_save").on(table.eventId, table.sessionId) },
+  index("event_saves_event_id_idx").on(table.eventId),
+  index("event_saves_session_id_idx").on(table.sessionId),
 ]);
 
 // Transport options
@@ -266,7 +300,10 @@ export const transport = pgTable("transport", {
   lng: decimal("lng", { precision: 10, scale: 7 }),
   notes: text("notes"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("transport_site_id_idx").on(table.siteId),
+  index("transport_region_id_idx").on(table.regionId),
+]);
 
 // Tags
 export const tags = pgTable("tags", {
@@ -279,7 +316,11 @@ export const tags = pgTable("tags", {
   type: tagTypeEnum("type").notNull(),
   description: text("description"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("tags_site_id_idx").on(table.siteId),
+  index("tags_slug_idx").on(table.slug),
+  index("tags_type_idx").on(table.type),
+]);
 
 // Tag junction tables
 export const activityTags = pgTable("activity_tags", {
@@ -291,7 +332,10 @@ export const activityTags = pgTable("activity_tags", {
     .references(() => tags.id)
     .notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("activity_tags_activity_id_idx").on(table.activityId),
+  index("activity_tags_tag_id_idx").on(table.tagId),
+]);
 
 // Additional regions for an activity (multi-region tagging)
 // The primary region stays on activities.regionId
@@ -306,7 +350,10 @@ export const activityRegions = pgTable("activity_regions", {
     .references(() => regions.id)
     .notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("activity_regions_activity_id_idx").on(table.activityId),
+  index("activity_regions_region_id_idx").on(table.regionId),
+]);
 
 export const accommodationTags = pgTable("accommodation_tags", {
   id: serial("id").primaryKey(),
@@ -317,7 +364,10 @@ export const accommodationTags = pgTable("accommodation_tags", {
     .references(() => tags.id)
     .notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("accommodation_tags_accommodation_id_idx").on(table.accommodationId),
+  index("accommodation_tags_tag_id_idx").on(table.tagId),
+]);
 
 export const locationTags = pgTable("location_tags", {
   id: serial("id").primaryKey(),
@@ -328,7 +378,10 @@ export const locationTags = pgTable("location_tags", {
     .references(() => tags.id)
     .notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("location_tags_location_id_idx").on(table.locationId),
+  index("location_tags_tag_id_idx").on(table.tagId),
+]);
 
 export const itineraryTags = pgTable("itinerary_tags", {
   id: serial("id").primaryKey(),
@@ -339,7 +392,10 @@ export const itineraryTags = pgTable("itinerary_tags", {
     .references(() => tags.id)
     .notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("itinerary_tags_itinerary_id_idx").on(table.itineraryId),
+  index("itinerary_tags_tag_id_idx").on(table.tagId),
+]);
 
 // Itineraries
 export const itineraries = pgTable("itineraries", {
@@ -362,7 +418,12 @@ export const itineraries = pgTable("itineraries", {
   completenessScore: integer("completeness_score").default(0),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("itineraries_site_id_idx").on(table.siteId),
+  index("itineraries_region_id_idx").on(table.regionId),
+  index("itineraries_slug_idx").on(table.slug),
+  index("itineraries_status_idx").on(table.status),
+]);
 
 // Itinerary day items (legacy — kept for migration compatibility)
 export const itineraryItems = pgTable("itinerary_items", {
@@ -380,7 +441,12 @@ export const itineraryItems = pgTable("itinerary_items", {
   description: text("description"),
   duration: varchar("duration", { length: 100 }),
   travelTimeToNext: varchar("travel_time_to_next", { length: 100 }),
-});
+}, (table) => [
+  index("itinerary_items_itinerary_id_idx").on(table.itineraryId),
+  index("itinerary_items_activity_id_idx").on(table.activityId),
+  index("itinerary_items_accommodation_id_idx").on(table.accommodationId),
+  index("itinerary_items_location_id_idx").on(table.locationId),
+]);
 
 // Stop type enum
 export const stopTypeEnum = pgEnum("stop_type", [
@@ -466,7 +532,14 @@ export const itineraryStops = pgTable("itinerary_stops", {
 
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("itinerary_stops_itinerary_id_idx").on(table.itineraryId),
+  index("itinerary_stops_activity_id_idx").on(table.activityId),
+  index("itinerary_stops_accommodation_id_idx").on(table.accommodationId),
+  index("itinerary_stops_location_id_idx").on(table.locationId),
+  index("itinerary_stops_operator_id_idx").on(table.operatorId),
+  index("itinerary_stops_day_order_idx").on(table.dayNumber, table.orderIndex),
+]);
 
 // FAQ/Answer engine pages
 export const answers = pgTable("answers", {
@@ -483,7 +556,12 @@ export const answers = pgTable("answers", {
   status: statusEnum("status").default("draft").notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("answers_site_id_idx").on(table.siteId),
+  index("answers_region_id_idx").on(table.regionId),
+  index("answers_slug_idx").on(table.slug),
+  index("answers_status_idx").on(table.status),
+]);
 
 // =====================
 // COMMERCIAL TABLES
@@ -563,7 +641,13 @@ export const operators = pgTable("operators", {
   verifiedByEmail: varchar("verified_by_email", { length: 255 }),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("operators_site_id_idx").on(table.siteId),
+  index("operators_account_id_idx").on(table.accountId),
+  index("operators_slug_idx").on(table.slug),
+  index("operators_claim_status_idx").on(table.claimStatus),
+  index("operators_category_idx").on(table.category),
+]);
 
 // Partner offers/promotions
 export const operatorOffers = pgTable("operator_offers", {
@@ -576,7 +660,9 @@ export const operatorOffers = pgTable("operator_offers", {
   validFrom: timestamp("valid_from"),
   validUntil: timestamp("valid_until"),
   status: statusEnum("status").default("draft").notNull(),
-});
+}, (table) => [
+  index("operator_offers_operator_id_idx").on(table.operatorId),
+]);
 
 // Advertisers
 export const advertisers = pgTable("advertisers", {
@@ -589,7 +675,9 @@ export const advertisers = pgTable("advertisers", {
   website: text("website"),
   status: statusEnum("status").default("draft").notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("advertisers_site_id_idx").on(table.siteId),
+]);
 
 // Ad campaigns
 export const adCampaigns = pgTable("ad_campaigns", {
@@ -607,7 +695,10 @@ export const adCampaigns = pgTable("ad_campaigns", {
   budget: decimal("budget", { precision: 10, scale: 2 }),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("ad_campaigns_site_id_idx").on(table.siteId),
+  index("ad_campaigns_advertiser_id_idx").on(table.advertiserId),
+]);
 
 // Ad creatives
 export const adCreatives = pgTable("ad_creatives", {
@@ -623,7 +714,9 @@ export const adCreatives = pgTable("ad_creatives", {
   targetingActivities: text("targeting_activities").array(),
   priority: integer("priority").default(0),
   status: statusEnum("status").default("draft").notNull(),
-});
+}, (table) => [
+  index("ad_creatives_campaign_id_idx").on(table.campaignId),
+]);
 
 // Ad slots configuration
 export const adSlots = pgTable("ad_slots", {
@@ -893,7 +986,11 @@ export const magicLinks = pgTable("magic_links", {
   used: boolean("used").default(false).notNull(),
   expiresAt: timestamp("expires_at").notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("magic_links_email_idx").on(table.email),
+  index("magic_links_token_idx").on(table.token),
+  index("magic_links_operator_id_idx").on(table.operatorId),
+]);
 
 export const operatorSessions = pgTable("operator_sessions", {
   id: serial("id").primaryKey(),
@@ -903,7 +1000,10 @@ export const operatorSessions = pgTable("operator_sessions", {
   role: varchar("role", { length: 100 }),
   lastLoginAt: timestamp("last_login_at").defaultNow().notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("operator_sessions_operator_id_idx").on(table.operatorId),
+  index("operator_sessions_email_idx").on(table.email),
+]);
 
 export const operatorClaims = pgTable("operator_claims", {
   id: serial("id").primaryKey(),
@@ -918,7 +1018,10 @@ export const operatorClaims = pgTable("operator_claims", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
   verifiedAt: timestamp("verified_at"),
   expiresAt: timestamp("expires_at"),
-});
+}, (table) => [
+  index("operator_claims_operator_id_idx").on(table.operatorId),
+  index("operator_claims_status_idx").on(table.status),
+]);
 
 // Guide page type enum
 export const guidePageTypeEnum = pgEnum("guide_page_type", [
@@ -976,7 +1079,14 @@ export const guidePages = pgTable("guide_pages", {
   publishedAt: timestamp("published_at"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("guide_pages_site_id_idx").on(table.siteId),
+  index("guide_pages_region_id_idx").on(table.regionId),
+  index("guide_pages_activity_type_id_idx").on(table.activityTypeId),
+  index("guide_pages_slug_idx").on(table.slug),
+  index("guide_pages_url_path_idx").on(table.urlPath),
+  index("guide_pages_content_status_idx").on(table.contentStatus),
+]);
 
 // Guide page spots — individual entries within a guide page
 export const guidePageSpots = pgTable("guide_page_spots", {
@@ -1007,7 +1117,11 @@ export const guidePageSpots = pgTable("guide_page_spots", {
   activityId: integer("activity_id").references(() => activities.id),
   youtubeVideoId: varchar("youtube_video_id", { length: 20 }),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("guide_page_spots_guide_page_id_idx").on(table.guidePageId),
+  index("guide_page_spots_operator_id_idx").on(table.operatorId),
+  index("guide_page_spots_activity_id_idx").on(table.activityId),
+]);
 
 // Post category enum
 export const postCategoryEnum = pgEnum("post_category", [
@@ -1041,7 +1155,14 @@ export const posts = pgTable("posts", {
   publishedAt: timestamp("published_at"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("posts_site_id_idx").on(table.siteId),
+  index("posts_slug_idx").on(table.slug),
+  index("posts_category_idx").on(table.category),
+  index("posts_region_id_idx").on(table.regionId),
+  index("posts_activity_type_id_idx").on(table.activityTypeId),
+  index("posts_status_idx").on(table.status),
+]);
 
 // Post tags junction
 export const postTags = pgTable("post_tags", {
@@ -1053,7 +1174,10 @@ export const postTags = pgTable("post_tags", {
     .references(() => tags.id)
     .notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
-});
+}, (table) => [
+  index("post_tags_post_id_idx").on(table.postId),
+  index("post_tags_tag_id_idx").on(table.tagId),
+]);
 
 // Newsletter subscribers
 export const newsletterSubscribers = pgTable("newsletter_subscribers", {

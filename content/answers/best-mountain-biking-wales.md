@@ -7,28 +7,47 @@ question: "Where is the Best Mountain Biking in Wales?"
 
 ## Quick Answer
 
-The "best" mountain biking in Wales depends on your skill and desired style, but Snowdonia is generally considered a top destination. For downhill thrills and uplift services, Antur Stiniog is hard to beat. For natural trails with stunning scenery, the trails around Betws-y-Coed, including MinorTaur and Temtiwr, are excellent choices.
+Wales is one of the best mountain biking destinations in the UK, full stop. For trail centres with graded routes, **Coed y Brenin** in Snowdonia is the classic choice. For uplift-served downhill, **Antur Stiniog** (raw and technical) and **BikePark Wales** (sculpted and flowy) are both excellent. For beginners, **Coed Llandegla** is hard to beat. Your "best" depends on what kind of riding you're after.
 
 ## The Detail
 
-Wales offers a huge variety of mountain biking, from purpose-built trail centres to wild, natural routes. Here's a breakdown to help you choose:
+### Trail Centres (Graded, Maintained Trails)
 
-*   **Snowdonia (North Wales):** This is the mountain biking mecca of Wales, home to Antur Stiniog, a dedicated downhill mountain bike park with uplift services. Expect challenging, graded trails (green to black) and a fast-paced experience. Nearby, the Gwydir Forest near Betws-y-Coed offers a mix of trail centre loops like MinorTaur (red graded) and Temtiwr (blue graded), plus plenty of unmarked natural trails for the adventurous. Expect rocky terrain, technical features, and stunning forest scenery.
-*   **Mid Wales (Brecon Beacons & surrounding areas):** This area is known for its natural trails and epic, cross-country riding. The trails tend to be less manicured than trail centres, demanding good bike handling skills and navigation. Expect long climbs, rewarding descents, and remote landscapes.
-*   **South Wales (Afan Forest Park, BikePark Wales):** Afan Forest Park was one of the original Welsh trail centres and still offers a good mix of trails for all abilities. BikePark Wales is a dedicated uplift-serviced bike park near Merthyr Tydfil, similar to Antur Stiniog but often with a wider range of trail styles including flow trails.
+*   **Coed y Brenin (Snowdonia):** The granddaddy of Welsh trail centres and still one of the best. Ancient forest setting, excellent drainage (rideable year-round), and trails from gentle green loops to the fast, technical black runs. The Cyflym Coch red run is a Welsh classic. Great café, good facilities. [Find mountain biking in Snowdonia](/snowdonia/things-to-do/mountain-biking).
+*   **Coed Llandegla (near Wrexham):** The best beginner-to-intermediate centre in Wales. Well-built trails, brilliant facilities including bike wash and café, and easy access from Chester, Liverpool, and Manchester. The reds are genuinely fun — fast-flowing with well-built berms and features. If you're new to mountain biking, start here.
+*   **Afan Forest Park (South Wales):** Multiple trails through dramatic valleys. The Wall and Blade trails are classics — rougher and more natural-feeling than purpose-built centres, with proper climbs and rewarding descents. Less manicured than Coed y Brenin, but that's part of the appeal. [Find mountain biking in South Wales](/south-wales/things-to-do/mountain-biking).
+*   **Gwydir Forest / Betws-y-Coed (Snowdonia):** Home to the MinorTaur (red) and Temtiwr (blue) trails. More natural than purpose-built trail centres, threading through the forest above Betws-y-Coed with stunning views. Technical and demanding.
 
-**Consider these factors when choosing:**
+### Uplift-Served Bike Parks
 
-*   **Skill Level:** Are you a beginner, intermediate, or expert rider? Antur Stiniog is best for experienced riders. Gwydir Forest has options for most levels.
-*   **Trail Preference:** Do you prefer fast-paced downhill, technical cross-country, or flowy trails?
-*   **Uplift Services:** Do you want the convenience of an uplift service, or are you happy to pedal to the top? Antur Stiniog and BikePark Wales offer uplift services.
-*   **Natural vs. Man-made:** Do you prefer riding natural trails or purpose-built trail centre routes?
+*   **Antur Stiniog (Blaenau Ffestiniog):** Pure downhill in a dramatic slate quarry landscape. Steep, loose, and technical — the reds here would be blacks at most trail centres. For intermediate to expert riders. The uplift minibus takes you to the top; gravity does the rest. Raw and addictive.
+*   **BikePark Wales (Merthyr Tydfil):** More sculpted than Antur Stiniog, with berms, jumps, and progressive trail design. Green and blue runs are genuine fun (not just fire roads), making it better for building skills. The blacks are still serious. Excellent café — possibly the best post-ride burger in Wales. [Find mountain biking in the Brecon Beacons](/brecon-beacons/things-to-do/mountain-biking).
+
+### Natural / Backcountry Riding
+
+*   **Brecon Beacons:** Epic cross-country on bridleways and ancient drovers' roads. Long climbs, massive views, and rewarding descents on natural terrain. Less infrastructure than trail centres — you need good navigation and self-sufficiency.
+*   **Snowdonia backcountry:** The Marin Trail near Betws-y-Coed, the Penmachno trails, and countless unmarked bridleways offer wild, technical riding through some of the most dramatic scenery in Wales. For experienced riders comfortable with rough terrain and navigation.
+*   **Mid Wales:** Largely undiscovered for mountain biking. Long rides on ancient tracks through empty hills. The riding around Machynlleth and the Cambrian Mountains is wild and beautiful.
+
+## Best Time to Ride
+
+*   **Spring (April-May) & Autumn (September-October):** Sweet spot. Cooler temperatures, fewer people, trails often in good condition. Autumn colours through Coed y Brenin forest are stunning.
+*   **Summer:** Driest trails but busiest centres. Book bike hire ahead for weekends. Midweek is dramatically quieter.
+*   **Winter:** Trail centres with good drainage (Coed y Brenin, Llandegla) are rideable year-round. Natural trails get properly boggy. Shorter days mean planning matters.
+
+Check our [mountain biking gear guide](/guides/mtb-gear) for what to bring.
 
 ## The Smart Choice
 
-For adrenaline-fueled downhill, I'd head straight to Antur Stiniog. For a more natural experience with great views, I'd explore the Gwydir Forest trails near Betws-y-Coed.
+*   **Complete beginner?** Coed Llandegla, green trail, hire bike. Work up from there.
+*   **Intermediate looking for a great day out?** Coed y Brenin reds, or BikePark Wales blues and reds.
+*   **Experienced rider wanting a challenge?** Antur Stiniog or the Snowdonia backcountry trails.
+*   **Visiting with mixed abilities?** BikePark Wales — the green-to-black range means everyone can ride.
+
+[Browse all mountain biking across Wales](/activities/mountain-biking)
 
 ## Related Questions
 
-- What are the best mountain bike trail centres in Wales?
-- What is the best time of year to go mountain biking in Wales?
+- [What gear do I need for mountain biking in Wales?](/guides/mtb-gear)
+- [What should I expect on my first mountain biking experience?](/answers/first-time-mountain-biking)
+- [What is the best time to go mountain biking in Wales?](/answers/best-time-mountain-biking-wales)

@@ -1,34 +1,61 @@
 ---
 slug: wales-in-the-rain
-question: "What to Do in Wales When It Rains?"
+question: "Is it always raining in Wales?"
 ---
 
-# What to Do in Wales When It Rains?
+# Is It Always Raining in Wales?
 
 ## Quick Answer
 
-Don't let a bit of rain ruin your Welsh adventure! Wales offers plenty of exciting activities that are either unaffected or even enhanced by wet weather. Consider heading underground for an adventure, embracing the elements with watersports, or enjoying the thrill of indoor or sheltered attractions.
+No. But it rains more than most of England, and it can rain at any time of year with zero notice. The western mountains (Snowdonia) get the worst of it — Snowdon's summit sees over 4,000mm of rain per year, making it one of the wettest places in the UK. Pembrokeshire's coast is significantly drier. The honest answer: pack waterproofs, plan for rain, and be pleasantly surprised when the sun comes out. Because when it does, Wales is spectacular.
 
 ## The Detail
 
-Wales has many options to keep you entertained, even when the weather isn't cooperating:
+### The Numbers
 
-*   **Embrace the Water:** Since you're likely to get wet anyway, why not try activities like white water rafting in Snowdonia or coasteering in Pembrokeshire? Surfing lessons are also a great option; you're already in the water! Sea kayaking tours can be incredible in the mist, offering a unique perspective on the coastline.
-*   **Go Underground:** Explore the depths of the Welsh landscape at Bounce Below, an underground trampoline park in a slate mine in Snowdonia. Alternatively, try a guided underground adventure in a real mine for a fascinating and sheltered experience.
-*   **Adrenaline Rush (Mostly Covered):** Zip World's Velocity 2 zip line is exhilarating regardless of the weather. The Zip World Fforest Coaster is a toboggan run on rails, that runs through the trees, offering some shelter, and plenty of thrills.
-*   **Mountain Biking (Dress Appropriately):** While a sunny ride is ideal, many mountain biking trails, like the MinorTaur and Temtiwr trails in Snowdonia, are still great fun in the rain. Downhill mountain biking at Antur Stiniog is another option, just be prepared for mud!
-*   **Climbing (Indoor Options):** Both Snowdonia and Pembrokeshire offer rock climbing taster sessions and full days. Some providers have access to indoor climbing walls if the outdoor rock is too wet.
+*   **Snowdonia mountains:** 3,000-4,500mm per year. That's genuinely wet — three to four times the UK average.
+*   **Pembrokeshire coast:** 900-1,100mm per year. Actually drier than many parts of England.
+*   **Brecon Beacons:** 1,500-2,500mm depending on altitude.
+*   **Coastal towns (Tenby, Aberystwyth):** 900-1,200mm — perfectly manageable.
 
-**Activities to Avoid (or Re-evaluate):**
+The pattern is clear: altitude = rain. Coastal = drier. Valleys = somewhere in between.
 
-*   **Hiking Exposed Peaks:** While experienced hikers may still tackle Snowdon or Crib Goch in the rain, visibility can be severely limited, and conditions can become treacherous. Consider lower-level walks or postpone if possible.
-*   **Exposed Rock Climbing:** Rock climbing on exposed faces becomes significantly more difficult and dangerous when wet. Opt for indoor options or reschedule.
+### Month by Month
+
+*   **January-March:** Wet and cold. The wettest period in the mountains. Shorter days mean less time to dodge the showers.
+*   **April-May:** Improving. April can still be wet but May is often one of the driest months. Spring sunshine in Pembrokeshire can be genuinely glorious.
+*   **June-August:** The driest period, but "dry" is relative. You'll get rain in every summer month. July and August average 10-14 rainy days. The good news: summer rain often comes in showers rather than day-long downpours, so you can work around it.
+*   **September-October:** September is often excellent — late summer warmth without the crowds. October gets wetter as autumn storms arrive.
+*   **November-December:** Wet, windy, and dark. But atmospheric, and the mountains in winter are extraordinary.
+
+### What the Rain Actually Means
+
+Welsh rain isn't always the torrential downpour you might imagine. It's often:
+*   **Drizzle:** Persistent, fine rain that doesn't seem like much but soaks you through if you're not wearing waterproofs. The Snowdonia speciality.
+*   **Passing showers:** Especially in summer. Rain moves through, sun appears, repeat. Having waterproofs you can throw on and off is key.
+*   **Horizontal rain:** In the mountains with wind. This is the one that gets people. Wind-driven rain defeats inadequate waterproofs quickly.
+*   **Biblical downpours:** Less common but real. Usually short-lived. The waterfalls look incredible afterwards.
+
+## What to Do When It Rains
+
+Rain doesn't have to ruin your trip. Some activities are better in the rain:
+
+*   **[Caving](/activities/caving):** Underground, constant 10°C, completely rain-proof. The Brecon Beacons caves are a perfect wet-weather option.
+*   **Zip World underground attractions:** Bounce Below and Zip World Caverns in Blaenau Ffestiniog run rain or shine. [Find zip lines in Snowdonia](/snowdonia/things-to-do/zip-lining).
+*   **Castles:** Caernarfon, Conwy, Harlech, Caerphilly — all impressive in the rain. Atmospheric, even.
+*   **[Gorge walking](/activities/gorge-walking):** You're getting wet anyway. Rain makes the waterfalls more impressive.
+*   **[Coasteering](/activities/coasteering):** Already in the sea. Light rain makes no difference.
+*   **Museums and galleries:** The National Slate Museum (Llanberis), St Fagans National Museum of History (Cardiff), and the National Library of Wales (Aberystwyth) are all excellent.
+*   **Pubs:** Wales has genuinely fantastic pubs. A rainy afternoon in a proper Welsh pub with a fire, a pint, and a pie is not wasted time.
+
+Read our full guide: [What to do in Wales when it rains](/answers/what-to-do-wales-rain).
 
 ## The Smart Choice
 
-Personally, I'd head to Snowdonia and opt for the Underground Adventure. It's a unique and fascinating way to experience Welsh history and geology, and you're guaranteed to stay dry! If you're after adrenaline, Velocity 2 is hard to beat in any weather. If you want to embrace the elements, coasteering in Pembrokeshire is an unforgettable experience.
+Don't avoid Wales because of the rain — you'd miss out on one of the most beautiful parts of the UK. Instead: pack a proper waterproof jacket (sealed seams, not a fashion rain coat), bring waterproof trousers, and plan each day with a mix of outdoor and indoor options. Check the Met Office forecast each morning and be flexible. The people who enjoy Wales most are the ones who stop fighting the weather and start working with it.
 
 ## Related Questions
 
-*   What are the best family-friendly activities in Wales?
-*   What is the best time of year to visit Wales for outdoor adventures?
+- [What to do in Wales when it rains](/answers/what-to-do-wales-rain)
+- [What should I pack for hiking in Wales?](/guides/hiking-gear)
+- [Welsh weather — what to expect](/safety/weather-awareness)

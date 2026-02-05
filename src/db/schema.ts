@@ -538,6 +538,9 @@ export const operators = pgTable("operators", {
   claimStatus: claimStatusEnum("claim_status").default("stub").notNull(),
   claimedByEmail: varchar("claimed_by_email", { length: 255 }),
   claimedAt: timestamp("claimed_at"),
+  dataSource: varchar("data_source", { length: 50 }).default("manual"), // 'manual', 'google_places', 'research', 'operator_claimed'
+  lastVerifiedAt: timestamp("last_verified_at"), // last time data was verified against source
+  googlePlaceId: varchar("google_place_id", { length: 255 }), // for dedup + refresh
   trustSignals: jsonb("trust_signals"),
   serviceTypes: text("service_types").array(),
   regions: text("regions").array(),

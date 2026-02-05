@@ -123,6 +123,7 @@ async function main() {
         .set({
           googleRating: String(newRating),
           reviewCount: newCount,
+          lastVerifiedAt: new Date(),
         })
         .where(eq(operators.id, op.id));
 

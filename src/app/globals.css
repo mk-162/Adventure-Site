@@ -19,6 +19,12 @@
   --border: #e2e8f0;
 }
 
+html, body {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);

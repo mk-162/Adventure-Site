@@ -13,7 +13,6 @@ import {
   Star, 
   Calendar, 
   Bike, 
-  Backpack,
   MessageCircle,
   ChevronDown,
   ArrowRight,
@@ -303,56 +302,16 @@ export default async function MountainBikingHubPage() {
         </div>
       </section>
 
-      {/* Gear Guide */}
-      <section className="py-16">
+      {/* Beginner's Guide Banner */}
+      <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-primary text-sm font-semibold mb-4">
-              <Backpack className="h-4 w-4" />
-              Gear Guide
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
-              What Bike Do You Need?
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Match your bike to the terrain
+          <div className="bg-primary/5 border border-primary/10 rounded-xl p-4 text-center">
+            <p className="text-gray-600">
+              New to mountain biking?{" "}
+              <Link href="/guides/getting-started-mountain-biking" className="text-primary font-medium hover:text-accent-hover">
+                Check our getting started guide →
+              </Link>
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {mountainBikingHub.gearGuide.bikeTypes.map((bike) => (
-              <div
-                key={bike.type}
-                className="bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              >
-                <h3 className="text-xl font-bold text-primary mb-2">
-                  {bike.type}
-                </h3>
-                <p className="text-sm text-gray-700 mb-3 leading-relaxed">
-                  {bike.description}
-                </p>
-                <div className="text-xs px-3 py-1.5 bg-primary/10 text-primary rounded-full inline-block font-medium">
-                  {bike.bestFor}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="bg-primary/5 rounded-2xl p-8 border-2 border-primary/20">
-            <h3 className="text-2xl font-bold text-primary mb-4">
-              Essential Kit
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-              {mountainBikingHub.gearGuide.essentialKit.map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-2 text-gray-700"
-                >
-                  <div className="w-2 h-2 rounded-full bg-accent-hover flex-shrink-0" />
-                  <span className="text-sm">{item}</span>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>

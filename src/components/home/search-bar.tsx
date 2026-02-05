@@ -47,6 +47,7 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
   const [where, setWhere] = useState("");
   const [what, setWhat] = useState("");
   const [focusedField, setFocusedField] = useState<string | null>(null);
+  const [resetNotice, setResetNotice] = useState(false);
 
   // Deduplicate activity types by slug (defensive — prevents stale cache doubling)
   const uniqueActivityTypes = useMemo(() => {
@@ -72,6 +73,8 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
       const allowed = new Set(regionActivityMap[regionSlug]);
       if (what && !allowed.has(what)) {
         setWhat("");
+        setResetNotice(true);
+        setTimeout(() => setResetNotice(false), 3000);
       }
     }
   };
@@ -228,6 +231,15 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
             </button>
           </div>
         </div>
+
+        {/* Reset notice */}
+        {resetNotice && (
+          <div className="mt-3 text-center animate-in fade-in duration-300">
+            <p className="text-xs text-amber-600 bg-amber-50 inline-block px-3 py-1.5 rounded-full">
+              Activity reset — not available in this region
+            </p>
+          </div>
+        )}
 
         {/* Helper text */}
         <p className="mt-4 text-xs text-slate-500 text-center">

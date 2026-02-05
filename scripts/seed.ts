@@ -134,6 +134,11 @@ async function seed() {
     { name: "Underground Trampolines", slug: "underground-trampolines", icon: "arrow-up" },
     { name: "Toboggan", slug: "toboggan", icon: "arrow-down" },
     { name: "Scenic Railway", slug: "scenic-railway", icon: "train" },
+    { name: "Stag & Hen Parties", slug: "stag-hen", icon: "party-popper" },
+    { name: "Sightseeing", slug: "sightseeing", icon: "camera" },
+    { name: "Attractions", slug: "attractions", icon: "landmark" },
+    { name: "Quad Biking", slug: "quad-biking", icon: "car" },
+    { name: "White Water Rafting", slug: "white-water-rafting", icon: "waves" },
   ];
 
   const activityTypeMap: Record<string, number> = {};

@@ -504,6 +504,10 @@ export const itineraryStops = pgTable("itinerary_stops", {
   costFrom: decimal("cost_from", { precision: 10, scale: 2 }),
   costTo: decimal("cost_to", { precision: 10, scale: 2 }),
 
+  // Generic stops
+  isGeneric: boolean("is_generic").default(false),
+  icon: varchar("icon", { length: 50 }),
+
   // Wet weather alternative
   wetAltTitle: varchar("wet_alt_title", { length: 255 }),
   wetAltDescription: text("wet_alt_description"),
@@ -636,6 +640,15 @@ export const operators = pgTable("operators", {
   billingPeriodEnd: timestamp("billing_period_end"),
   billingCustomAmount: decimal("billing_custom_amount", { precision: 10, scale: 2 }), // per-listing price override
   billingNotes: text("billing_notes"), // discount/extra notes
+
+  // Group & stag/hen fields
+  groupFriendly: boolean("group_friendly").default(false),
+  groupMinSize: integer("group_min_size"),
+  groupMaxSize: integer("group_max_size"),
+  groupPriceFrom: integer("group_price_from"), // pence
+  stagHenPackages: boolean("stag_hen_packages").default(false),
+  youtubeVideoId: varchar("youtube_video_id", { length: 20 }),
+
   adminNotes: text("admin_notes"), // internal CRM notes
   verifiedAt: timestamp("verified_at"),
   verifiedByEmail: varchar("verified_by_email", { length: 255 }),

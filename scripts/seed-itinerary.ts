@@ -1,5 +1,6 @@
 import "dotenv/config";
 import { sql } from "@vercel/postgres";
+import { genericStops } from "../src/lib/generic-stops";
 
 async function seedItinerary() {
   console.log("🌱 Seeding itinerary...");
@@ -142,6 +143,22 @@ async function seedItinerary() {
       53.06, -4.07, 0.00
     )
   `;
+
+  // Day 2: Generic Stop (Pub Lunch)
+  const pubLunch = genericStops.find(s => s.slug === "pub-lunch");
+  if (pubLunch) {
+    await sql`
+      INSERT INTO itinerary_stops (
+        itinerary_id, day_number, order_index, stop_type,
+        title, description, icon, is_generic,
+        start_time, duration
+      ) VALUES (
+        ${itineraryId}, 2, 2, 'freeform',
+        ${pubLunch.title}, ${pubLunch.description}, ${pubLunch.icon}, true,
+        '15:00', '1.5 hours'
+      )
+    `;
+  }
 
   console.log("✅ Itinerary seeded successfully!");
   process.exit(0);

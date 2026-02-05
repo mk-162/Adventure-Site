@@ -44,7 +44,7 @@ export function ActivityGallery({ activityType, activityName }: ActivityGalleryP
   return (
     <>
       <section className="py-8">
-        <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">
+        <h2 className="text-xl font-bold text-primary mb-4">
           Photo Gallery
         </h2>
         

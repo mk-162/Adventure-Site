@@ -37,7 +37,7 @@ export function TopTip({ tip, context, variant = "card" }: TopTipProps) {
     <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl border border-amber-200/50 p-5">
       <div className="flex items-center gap-2 mb-2">
         <Lightbulb className="w-5 h-5 text-amber-500" />
-        <h4 className="font-bold text-[#1e3a4c] text-sm">
+        <h4 className="font-bold text-primary text-sm">
           {context ? `${context} Tip` : "Top Tip"}
         </h4>
       </div>

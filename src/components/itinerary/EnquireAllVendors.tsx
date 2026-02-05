@@ -72,7 +72,7 @@ export function EnquireAllVendors({
       <>
         <button
           onClick={() => setIsModalOpen(true)}
-          className="w-full bg-gradient-to-r from-[#1e3a4c] to-[#2c5468] hover:from-[#152833] hover:to-[#1e3a4c] text-white font-bold py-3 rounded-xl transition-all active:scale-95 flex items-center justify-center gap-2 shadow-md"
+          className="w-full bg-gradient-to-r from-primary to-[#2c5468] hover:from-[#152833] hover:to-primary text-white font-bold py-3 rounded-xl transition-all active:scale-95 flex items-center justify-center gap-2 shadow-md"
         >
           <Send className="w-4 h-4" />
           Enquire All {operatorCount} Vendors
@@ -88,7 +88,7 @@ export function EnquireAllVendors({
       <>
         <button
           onClick={() => setIsModalOpen(true)}
-          className="flex-1 bg-[#ea580c] hover:bg-[#ea580c]/90 text-white font-bold rounded-xl h-12 flex items-center justify-center gap-2 shadow-lg shadow-[#ea580c]/20 transition-all active:scale-95"
+          className="flex-1 bg-accent-hover hover:bg-accent-hover/90 text-white font-bold rounded-xl h-12 flex items-center justify-center gap-2 shadow-lg shadow-accent-hover/20 transition-all active:scale-95"
         >
           <Send className="w-4 h-4" />
           <span>Enquire All ({operatorCount})</span>
@@ -101,7 +101,7 @@ export function EnquireAllVendors({
   // Main CTA section variant
   return (
     <>
-      <section className="bg-gradient-to-br from-[#1e3a4c] via-[#2c5468] to-[#1e3a4c] rounded-2xl overflow-hidden shadow-2xl">
+      <section className="bg-gradient-to-br from-primary via-[#2c5468] to-primary rounded-2xl overflow-hidden shadow-2xl">
         <div className="p-8 lg:p-10">
           {/* Header */}
           <div className="text-center mb-8">
@@ -109,7 +109,7 @@ export function EnquireAllVendors({
               Ready to Book This Adventure?
             </h2>
             <p className="text-gray-200 text-lg">
-              Send one enquiry to all <span className="font-bold text-[#ea580c]">{operatorCount} operators</span> on this itinerary
+              Send one enquiry to all <span className="font-bold text-accent-hover">{operatorCount} operators</span> on this itinerary
             </p>
           </div>
 
@@ -126,7 +126,7 @@ export function EnquireAllVendors({
                     style={{ backgroundImage: `url('${operator.logoUrl}')` }}
                   />
                 ) : (
-                  <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-[#1e3a4c] text-xl font-bold shadow-lg group-hover:scale-110 transition-transform">
+                  <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-primary text-xl font-bold shadow-lg group-hover:scale-110 transition-transform">
                     {operator.name.charAt(0)}
                   </div>
                 )}
@@ -148,7 +148,7 @@ export function EnquireAllVendors({
           <div className="flex justify-center">
             <button
               onClick={() => setIsModalOpen(true)}
-              className="bg-[#ea580c] hover:bg-[#e86506] text-white font-bold text-lg px-10 py-4 rounded-xl shadow-xl shadow-[#ea580c]/30 transition-all active:scale-95 flex items-center gap-3 group"
+              className="bg-accent-hover hover:bg-[#e86506] text-white font-bold text-lg px-10 py-4 rounded-xl shadow-xl shadow-accent-hover/30 transition-all active:scale-95 flex items-center gap-3 group"
             >
               <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               Enquire All Vendors
@@ -176,8 +176,8 @@ export function EnquireAllVendors({
         <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
           {/* Modal Header */}
           <div className="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between rounded-t-2xl">
-            <h3 className="text-2xl font-bold text-[#1e3a4c] flex items-center gap-2">
-              <Mail className="w-6 h-6 text-[#ea580c]" />
+            <h3 className="text-2xl font-bold text-primary flex items-center gap-2">
+              <Mail className="w-6 h-6 text-accent-hover" />
               Enquire About {itineraryName}
             </h3>
             <button
@@ -194,11 +194,11 @@ export function EnquireAllVendors({
               <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6 animate-bounce">
                 <CheckCircle className="w-12 h-12 text-green-600" />
               </div>
-              <h4 className="text-2xl font-bold text-[#1e3a4c] mb-3">
+              <h4 className="text-2xl font-bold text-primary mb-3">
                 Enquiry Sent Successfully!
               </h4>
               <p className="text-gray-600 text-lg mb-4">
-                Your enquiry has been sent to <span className="font-bold text-[#ea580c]">{operatorCount} operators</span>
+                Your enquiry has been sent to <span className="font-bold text-accent-hover">{operatorCount} operators</span>
               </p>
               <p className="text-gray-500">
                 They'll be in touch within 24-48 hours to help plan your adventure.
@@ -224,7 +224,7 @@ export function EnquireAllVendors({
                           style={{ backgroundImage: `url('${operator.logoUrl}')` }}
                         />
                       ) : (
-                        <div className="w-6 h-6 rounded-full bg-[#1e3a4c] flex items-center justify-center text-white text-xs font-bold">
+                        <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold">
                           {operator.name.charAt(0)}
                         </div>
                       )}
@@ -248,7 +248,7 @@ export function EnquireAllVendors({
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c]/20 outline-none transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-accent-hover focus:ring-2 focus:ring-accent-hover/20 outline-none transition-all"
                       placeholder="John Smith"
                     />
                   </div>
@@ -261,7 +261,7 @@ export function EnquireAllVendors({
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c]/20 outline-none transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-accent-hover focus:ring-2 focus:ring-accent-hover/20 outline-none transition-all"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -276,7 +276,7 @@ export function EnquireAllVendors({
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c]/20 outline-none transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-accent-hover focus:ring-2 focus:ring-accent-hover/20 outline-none transition-all"
                       placeholder="+44 7XXX XXXXXX"
                     />
                   </div>
@@ -288,7 +288,7 @@ export function EnquireAllVendors({
                       type="text"
                       value={formData.groupSize}
                       onChange={(e) => setFormData({ ...formData, groupSize: e.target.value })}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c]/20 outline-none transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-accent-hover focus:ring-2 focus:ring-accent-hover/20 outline-none transition-all"
                       placeholder="e.g. 2 adults, 1 child"
                     />
                   </div>
@@ -302,7 +302,7 @@ export function EnquireAllVendors({
                     type="text"
                     value={formData.preferredDates}
                     onChange={(e) => setFormData({ ...formData, preferredDates: e.target.value })}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c]/20 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-accent-hover focus:ring-2 focus:ring-accent-hover/20 outline-none transition-all"
                     placeholder="e.g. June 2024 or flexible"
                   />
                 </div>
@@ -317,7 +317,7 @@ export function EnquireAllVendors({
                     rows={6}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c]/20 outline-none transition-all resize-none"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-accent-hover focus:ring-2 focus:ring-accent-hover/20 outline-none transition-all resize-none"
                     placeholder="Tell the operators about your requirements..."
                   />
                 </div>
@@ -334,7 +334,7 @@ export function EnquireAllVendors({
                 </button>
                 <button
                   type="submit"
-                  className="flex-1 bg-[#ea580c] hover:bg-[#e86506] text-white font-bold px-6 py-3 rounded-xl shadow-lg shadow-[#ea580c]/30 transition-all active:scale-95 flex items-center justify-center gap-2"
+                  className="flex-1 bg-accent-hover hover:bg-[#e86506] text-white font-bold px-6 py-3 rounded-xl shadow-lg shadow-accent-hover/30 transition-all active:scale-95 flex items-center justify-center gap-2"
                 >
                   <Send className="w-5 h-5" />
                   Send to {operatorCount} Operators

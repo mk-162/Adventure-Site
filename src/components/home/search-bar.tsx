@@ -107,7 +107,7 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
         className={`
           bg-white rounded-2xl shadow-2xl p-4 sm:p-6 border border-slate-100
           transition-shadow duration-300
-          ${focusedField ? 'ring-2 ring-[#ea580c]/20 shadow-orange-500/10' : ''}
+          ${focusedField ? 'ring-2 ring-accent-hover/20 shadow-orange-500/10' : ''}
         `}
       >
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_auto] gap-3 sm:gap-4">
@@ -117,7 +117,7 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
               Where
             </label>
             <div className="relative group">
-              <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 text-[#1e3a4c] h-5 w-5 transition-colors group-focus-within:text-[#ea580c]" />
+              <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 text-primary h-5 w-5 transition-colors group-focus-within:text-accent-hover" />
               <select
                 value={where}
                 onChange={(e) => handleRegionChange(e.target.value)}
@@ -128,7 +128,7 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
                   w-full h-14 pl-12 pr-4 
                   bg-slate-50 border-2 border-slate-200 rounded-xl 
                   font-medium text-base text-slate-900
-                  focus:bg-white focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c]/20 
+                  focus:bg-white focus:border-accent-hover focus:ring-2 focus:ring-accent-hover/20 
                   hover:border-slate-300
                   transition-all duration-200
                   appearance-none cursor-pointer
@@ -150,7 +150,7 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
               What
             </label>
             <div className="relative group">
-              <Compass className="absolute left-4 top-1/2 -translate-y-1/2 text-[#1e3a4c] h-5 w-5 transition-colors group-focus-within:text-[#ea580c]" />
+              <Compass className="absolute left-4 top-1/2 -translate-y-1/2 text-primary h-5 w-5 transition-colors group-focus-within:text-accent-hover" />
               <select
                 value={what}
                 onChange={(e) => setWhat(e.target.value)}
@@ -161,7 +161,7 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
                   w-full h-14 pl-12 pr-4 
                   bg-slate-50 border-2 border-slate-200 rounded-xl 
                   font-medium text-base text-slate-900
-                  focus:bg-white focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c]/20 
+                  focus:bg-white focus:border-accent-hover focus:ring-2 focus:ring-accent-hover/20 
                   hover:border-slate-300
                   transition-all duration-200
                   appearance-none cursor-pointer
@@ -214,8 +214,8 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
               onClick={handleSearch}
               className="
                 w-full md:w-auto md:px-8 h-14 
-                bg-gradient-to-r from-[#ea580c] to-orange-600 
-                hover:from-orange-600 hover:to-[#ea580c]
+                bg-gradient-to-r from-accent-hover to-orange-600 
+                hover:from-orange-600 hover:to-accent-hover
                 text-white font-bold rounded-xl 
                 flex items-center justify-center gap-2 
                 transition-all duration-200 

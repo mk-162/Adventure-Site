@@ -160,15 +160,15 @@ function markdownToHtml(md: string): string {
     // Headers with IDs for TOC anchor links
     .replace(/^#### (.+)$/gm, (_match, text) => {
       const id = text.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-      return `<h4 id="${id}" class="text-lg font-semibold text-[#1e3a4c] mt-6 mb-3">${text}</h4>`;
+      return `<h4 id="${id}" class="text-lg font-semibold text-primary mt-6 mb-3">${text}</h4>`;
     })
     .replace(/^### (.+)$/gm, (_match: string, text: string) => {
       const id = text.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-      return `<h3 id="${id}" class="text-xl font-semibold text-[#1e3a4c] mt-8 mb-4">${text}</h3>`;
+      return `<h3 id="${id}" class="text-xl font-semibold text-primary mt-8 mb-4">${text}</h3>`;
     })
     .replace(/^## (.+)$/gm, (_match: string, text: string) => {
       const id = text.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-      return `<h2 id="${id}" class="text-2xl font-bold text-[#1e3a4c] mt-10 mb-4">${text}</h2>`;
+      return `<h2 id="${id}" class="text-2xl font-bold text-primary mt-10 mb-4">${text}</h2>`;
     })
     // Horizontal rules
     .replace(/^---$/gm, '<hr class="my-8 border-gray-200" />')
@@ -179,11 +179,11 @@ function markdownToHtml(md: string): string {
     // Italic
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
     // Inline code
-    .replace(/`([^`]+)`/g, '<code class="bg-gray-100 text-[#1e3a4c] px-1.5 py-0.5 rounded text-sm">$1</code>')
+    .replace(/`([^`]+)`/g, '<code class="bg-gray-100 text-primary px-1.5 py-0.5 rounded text-sm">$1</code>')
     // Blockquotes
-    .replace(/^>\s?(.+)$/gm, '<blockquote class="border-l-4 border-[#ea580c] pl-4 my-4 text-gray-600 italic">$1</blockquote>')
+    .replace(/^>\s?(.+)$/gm, '<blockquote class="border-l-4 border-accent-hover pl-4 my-4 text-gray-600 italic">$1</blockquote>')
     // Links
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-[#ea580c] hover:underline">$1</a>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-accent-hover hover:underline">$1</a>')
     // Unordered lists
     .replace(/^[-*] (.+)$/gm, '<li class="ml-4">$1</li>')
     // Numbered lists
@@ -227,7 +227,7 @@ export default async function GuidePage({ params }: Props) {
       <JsonLd data={createBreadcrumbSchema(breadcrumbItems)} />
       <div className="min-h-screen pt-16">
         {/* Hero */}
-        <section className="bg-[#1e3a4c] py-12">
+        <section className="bg-primary py-12">
           <div className="max-w-4xl mx-auto px-4">
             <nav className="text-sm text-gray-400 mb-4">
               <Link href="/" className="hover:text-white">
@@ -261,7 +261,7 @@ export default async function GuidePage({ params }: Props) {
                       <li key={h.id}>
                         <a
                           href={`#${h.id}`}
-                          className={`block text-sm hover:text-[#ea580c] transition-colors ${
+                          className={`block text-sm hover:text-accent-hover transition-colors ${
                             h.level === 2
                               ? "pl-4 text-gray-700 font-medium"
                               : "pl-6 text-gray-500"
@@ -281,7 +281,7 @@ export default async function GuidePage({ params }: Props) {
               {/* Mobile TOC */}
               {headings.length >= 3 && (
                 <details className="lg:hidden mb-8 bg-white rounded-xl border border-gray-200 overflow-hidden">
-                  <summary className="flex cursor-pointer items-center justify-between p-4 font-bold text-[#1e3a4c] select-none">
+                  <summary className="flex cursor-pointer items-center justify-between p-4 font-bold text-primary select-none">
                     <span>📑 Table of Contents</span>
                     <svg className="w-5 h-5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
                   </summary>
@@ -290,7 +290,7 @@ export default async function GuidePage({ params }: Props) {
                       <li key={h.id}>
                         <a
                           href={`#${h.id}`}
-                          className={`block text-sm hover:text-[#ea580c] transition-colors ${
+                          className={`block text-sm hover:text-accent-hover transition-colors ${
                             h.level === 2 ? "text-gray-700 font-medium" : "pl-4 text-gray-500"
                           }`}
                         >
@@ -329,9 +329,9 @@ export default async function GuidePage({ params }: Props) {
               </div>
 
               {/* CTA Banner */}
-              <div className="my-10 bg-gradient-to-r from-[#1e3a4c] to-[#2d5568] rounded-2xl p-8 text-white relative overflow-hidden">
+              <div className="my-10 bg-gradient-to-r from-primary to-[#2d5568] rounded-2xl p-8 text-white relative overflow-hidden">
                 <div className="absolute -right-16 -top-16 w-48 h-48 bg-white/5 rounded-full blur-2xl" />
-                <div className="absolute -left-8 -bottom-8 w-32 h-32 bg-[#ea580c]/20 rounded-full blur-xl" />
+                <div className="absolute -left-8 -bottom-8 w-32 h-32 bg-accent-hover/20 rounded-full blur-xl" />
                 <div className="relative z-10">
                   <h2 className="text-2xl font-bold mb-2">Ready for an adventure?</h2>
                   <p className="text-white/80 mb-5 max-w-lg">
@@ -339,7 +339,7 @@ export default async function GuidePage({ params }: Props) {
                   </p>
                   <Link
                     href={activityLink.href}
-                    className="inline-flex items-center gap-2 bg-[#ea580c] hover:bg-[#ea580c] text-white font-bold py-3 px-6 rounded-full transition-colors"
+                    className="inline-flex items-center gap-2 bg-accent-hover hover:bg-accent-hover text-white font-bold py-3 px-6 rounded-full transition-colors"
                   >
                     {activityLink.label}
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
@@ -350,7 +350,7 @@ export default async function GuidePage({ params }: Props) {
               {/* Related Guides */}
               {relatedGuides.length > 0 && (
                 <section className="mt-12 pt-8 border-t border-gray-200">
-                  <h2 className="text-xl font-bold text-[#1e3a4c] mb-6">
+                  <h2 className="text-xl font-bold text-primary mb-6">
                     Related Guides
                   </h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -358,9 +358,9 @@ export default async function GuidePage({ params }: Props) {
                       <Link
                         key={g.slug}
                         href={`/guides/${g.slug}`}
-                        className="group block bg-white rounded-xl border border-gray-200 p-5 hover:shadow-md hover:border-[#ea580c]/40 transition-all"
+                        className="group block bg-white rounded-xl border border-gray-200 p-5 hover:shadow-md hover:border-accent-hover/40 transition-all"
                       >
-                        <h3 className="font-semibold text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors">
+                        <h3 className="font-semibold text-primary group-hover:text-accent-hover transition-colors">
                           {g.title}
                         </h3>
                         <span className="text-sm text-gray-500 mt-2 inline-flex items-center gap-1">
@@ -376,7 +376,7 @@ export default async function GuidePage({ params }: Props) {
               <div className="mt-12 pt-8 border-t">
                 <Link
                   href="/guides"
-                  className="text-[#ea580c] hover:underline flex items-center gap-2"
+                  className="text-accent-hover hover:underline flex items-center gap-2"
                 >
                   ← Back to all guides
                 </Link>

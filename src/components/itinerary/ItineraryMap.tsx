@@ -41,7 +41,7 @@ interface ItineraryMapProps {
 const dayColors = [
   "#3b82f6", // Day 1: Blue
   "#22c55e", // Day 2: Green
-  "#ea580c", // Day 3: Orange
+  "var(--color-accent)", // Day 3: Orange
   "#ef4444", // Day 4: Red
   "#a855f7", // Day 5: Purple
 ];
@@ -119,7 +119,7 @@ export function ItineraryMap({ stops, mode, basecamp, className }: ItineraryMapP
     return L.divIcon({
       className: "basecamp-marker",
       html: `<div style="
-        background-color: #ea580c;
+        background-color: var(--color-accent);
         width: 36px;
         height: 36px;
         border-radius: 50%;
@@ -215,7 +215,7 @@ export function ItineraryMap({ stops, mode, basecamp, className }: ItineraryMapP
           <Polyline
             key={`basecamp-${idx}`}
             positions={connection.positions}
-            color="#ea580c"
+            color="var(--color-accent)"
             weight={3}
             opacity={0.6}
             dashArray="8, 8"
@@ -240,10 +240,10 @@ export function ItineraryMap({ stops, mode, basecamp, className }: ItineraryMapP
           >
             <Popup>
               <div className="min-w-[200px]">
-                <span className="text-xs font-bold text-[#ea580c] uppercase tracking-wider mb-1 block">
+                <span className="text-xs font-bold text-accent-hover uppercase tracking-wider mb-1 block">
                   Your Basecamp
                 </span>
-                <h3 className="font-bold text-[#1e3a4c]">{basecamp.name}</h3>
+                <h3 className="font-bold text-primary">{basecamp.name}</h3>
                 {basecamp.type && (
                   <p className="text-sm text-gray-600 mt-1">{basecamp.type}</p>
                 )}
@@ -267,7 +267,7 @@ export function ItineraryMap({ stops, mode, basecamp, className }: ItineraryMapP
                             <span className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 block">
                                 Day {stop.dayNumber}
                             </span>
-                            <h3 className="font-bold text-[#1e3a4c]">{stop.displayTitle}</h3>
+                            <h3 className="font-bold text-primary">{stop.displayTitle}</h3>
                             <p className="text-sm text-gray-600 mt-1 line-clamp-2">{stop.description}</p>
                         </div>
                     </Popup>

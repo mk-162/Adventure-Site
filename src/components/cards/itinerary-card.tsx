@@ -104,7 +104,7 @@ export function ItineraryCard({
     <Link
       href={`/itineraries/${itinerary.slug}`}
       className={cn(
-        "group bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all duration-300 hover:border-[#1e3a4c]/30 flex flex-col h-full",
+        "group bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all duration-300 hover:border-primary/30 flex flex-col h-full",
         className
       )}
     >
@@ -118,7 +118,7 @@ export function ItineraryCard({
 
         {/* Duration Badge */}
         {itinerary.durationDays && (
-          <div className="absolute top-3 right-3 bg-[#1e3a4c] text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
+          <div className="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
             <Clock className="w-3 h-3" />
             {itinerary.durationDays} DAY{itinerary.durationDays > 1 ? "S" : ""}
           </div>
@@ -127,7 +127,7 @@ export function ItineraryCard({
         {/* Region Badge */}
         {region && (
           <div className="absolute bottom-3 left-3">
-            <span className="bg-white/90 backdrop-blur-sm text-[#1e3a4c] text-xs font-medium px-2 py-1 rounded-md flex items-center gap-1">
+            <span className="bg-white/90 backdrop-blur-sm text-primary text-xs font-medium px-2 py-1 rounded-md flex items-center gap-1">
               <MapPin className="w-3 h-3" />
               {region.name}
             </span>
@@ -137,7 +137,7 @@ export function ItineraryCard({
 
       {/* Card Content */}
       <div className="p-5 flex flex-col flex-grow">
-        <h3 className="font-bold text-lg text-[#1e3a4c] mb-2 group-hover:text-[#ea580c] transition-colors line-clamp-2">
+        <h3 className="font-bold text-lg text-primary mb-2 group-hover:text-accent-hover transition-colors line-clamp-2">
           {itinerary.title}
         </h3>
 

@@ -66,7 +66,7 @@ export default function GuidePageForm({
                   name="title"
                   required
                   defaultValue={guidePage?.title || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="e.g., Hiking in Snowdonia"
                 />
               </div>
@@ -83,7 +83,7 @@ export default function GuidePageForm({
                   name="type"
                   required
                   defaultValue={guidePage?.type || "combo"}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 >
                   <option value="combo">Combo Page</option>
                   <option value="best_of">Best-Of Page</option>
@@ -104,7 +104,7 @@ export default function GuidePageForm({
                   name="regionId"
                   required
                   defaultValue={guidePage?.regionId || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 >
                   <option value="">Select a region</option>
                   {allRegions.map((r: any) => (
@@ -127,7 +127,7 @@ export default function GuidePageForm({
                   name="activityTypeId"
                   required
                   defaultValue={guidePage?.activityTypeId || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 >
                   <option value="">Select an activity type</option>
                   {allActivityTypes.map((at: any) => (
@@ -152,7 +152,7 @@ export default function GuidePageForm({
                   id="slug"
                   name="slug"
                   defaultValue={guidePage?.slug || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="e.g., snowdonia--hiking"
                 />
                 <p className="text-sm text-gray-500 mt-1">
@@ -172,7 +172,7 @@ export default function GuidePageForm({
                   id="urlPath"
                   name="urlPath"
                   defaultValue={guidePage?.urlPath || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="e.g., /snowdonia/things-to-do/hiking"
                 />
               </div>
@@ -190,7 +190,7 @@ export default function GuidePageForm({
                 id="h1"
                 name="h1"
                 defaultValue={guidePage?.h1 || ""}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="e.g., 10 Best Hikes in Snowdonia (2025)"
               />
             </div>
@@ -207,7 +207,7 @@ export default function GuidePageForm({
                 id="strapline"
                 name="strapline"
                 defaultValue={guidePage?.strapline || ""}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="Short strapline for the page"
               />
             </div>
@@ -224,7 +224,7 @@ export default function GuidePageForm({
                   id="contentStatus"
                   name="contentStatus"
                   defaultValue={guidePage?.contentStatus || "draft"}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 >
                   <option value="draft">Draft</option>
                   <option value="review">Review</option>
@@ -245,7 +245,7 @@ export default function GuidePageForm({
                   id="priority"
                   name="priority"
                   defaultValue={guidePage?.priority || 0}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="0"
                 />
                 <p className="text-sm text-gray-500 mt-1">
@@ -265,7 +265,7 @@ export default function GuidePageForm({
                   id="siteId"
                   name="siteId"
                   defaultValue={guidePage?.siteId || 1}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 />
               </div>
             </div>
@@ -290,7 +290,7 @@ export default function GuidePageForm({
                 id="metaTitle"
                 name="metaTitle"
                 defaultValue={guidePage?.metaTitle || ""}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="SEO title (max 60 chars)"
               />
             </div>
@@ -307,7 +307,7 @@ export default function GuidePageForm({
                 name="metaDescription"
                 rows={2}
                 defaultValue={guidePage?.metaDescription || ""}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="SEO description (max 160 chars)"
               />
             </div>
@@ -325,7 +325,7 @@ export default function GuidePageForm({
                   id="targetKeyword"
                   name="targetKeyword"
                   defaultValue={guidePage?.targetKeyword || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="e.g., hiking in snowdonia"
                 />
               </div>
@@ -342,7 +342,7 @@ export default function GuidePageForm({
                   id="searchVolume"
                   name="searchVolume"
                   defaultValue={guidePage?.searchVolume || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="Monthly searches"
                 />
               </div>
@@ -359,7 +359,7 @@ export default function GuidePageForm({
                   id="currentRanking"
                   name="currentRanking"
                   defaultValue={guidePage?.currentRanking || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="Google position"
                 />
               </div>
@@ -378,7 +378,7 @@ export default function GuidePageForm({
                 rows={6}
                 value={keywordsText}
                 onChange={(e) => setKeywordsText(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent font-mono text-sm"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent font-mono text-sm"
                 placeholder={`{
   "primary": "hiking in snowdonia",
   "secondary": ["snowdonia walks", "walks in snowdonia"],
@@ -409,7 +409,7 @@ export default function GuidePageForm({
                   id="sponsorOperatorId"
                   name="sponsorOperatorId"
                   defaultValue={guidePage?.sponsorOperatorId || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 >
                   <option value="">No sponsor</option>
                   {allOperators.map((op: any) => (
@@ -432,7 +432,7 @@ export default function GuidePageForm({
                   id="sponsorDisplayName"
                   name="sponsorDisplayName"
                   defaultValue={guidePage?.sponsorDisplayName || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="Name shown on the page"
                 />
               </div>
@@ -450,7 +450,7 @@ export default function GuidePageForm({
                 id="sponsorTagline"
                 name="sponsorTagline"
                 defaultValue={guidePage?.sponsorTagline || ""}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="Sponsor tagline text"
               />
             </div>
@@ -468,7 +468,7 @@ export default function GuidePageForm({
                   id="sponsorCtaText"
                   name="sponsorCtaText"
                   defaultValue={guidePage?.sponsorCtaText || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="e.g., Book Now"
                 />
               </div>
@@ -485,7 +485,7 @@ export default function GuidePageForm({
                   id="sponsorCtaUrl"
                   name="sponsorCtaUrl"
                   defaultValue={guidePage?.sponsorCtaUrl || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="https://..."
                 />
               </div>
@@ -508,7 +508,7 @@ export default function GuidePageForm({
                           .split("T")[0]
                       : ""
                   }
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 />
               </div>
             </div>
@@ -526,7 +526,7 @@ export default function GuidePageForm({
                 rows={2}
                 value={featuredIdsText}
                 onChange={(e) => setFeaturedIdsText(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent font-mono text-sm"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent font-mono text-sm"
                 placeholder='[1, 5, 12]'
               />
             </div>
@@ -550,7 +550,7 @@ export default function GuidePageForm({
                   id="heroImage"
                   name="heroImage"
                   defaultValue={guidePage?.heroImage || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="https://..."
                 />
               </div>
@@ -567,7 +567,7 @@ export default function GuidePageForm({
                   id="heroAlt"
                   name="heroAlt"
                   defaultValue={guidePage?.heroAlt || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="Descriptive alt text"
                 />
               </div>
@@ -585,7 +585,7 @@ export default function GuidePageForm({
                 name="introduction"
                 rows={8}
                 defaultValue={guidePage?.introduction || ""}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="Write the introduction in markdown..."
               />
             </div>
@@ -603,7 +603,7 @@ export default function GuidePageForm({
                   id="bestSeason"
                   name="bestSeason"
                   defaultValue={guidePage?.bestSeason || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="e.g., Spring to Autumn"
                 />
               </div>
@@ -620,7 +620,7 @@ export default function GuidePageForm({
                   id="difficultyRange"
                   name="difficultyRange"
                   defaultValue={guidePage?.difficultyRange || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="e.g., Easy to Challenging"
                 />
               </div>
@@ -637,7 +637,7 @@ export default function GuidePageForm({
                   id="priceRange"
                   name="priceRange"
                   defaultValue={guidePage?.priceRange || ""}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="e.g., Free to £50"
                 />
               </div>
@@ -655,7 +655,7 @@ export default function GuidePageForm({
                 id="dataFile"
                 name="dataFile"
                 defaultValue={guidePage?.dataFile || ""}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="e.g., data/combo-pages/snowdonia--hiking.json"
               />
             </div>
@@ -672,7 +672,7 @@ export default function GuidePageForm({
           </Link>
           <button
             type="submit"
-            className="px-6 py-2 bg-[#ea580c] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
+            className="px-6 py-2 bg-accent-hover text-white rounded-lg hover:bg-accent-hover transition-colors"
           >
             {guidePage ? "Save Changes" : "Create Guide Page"}
           </button>
@@ -689,7 +689,7 @@ export default function GuidePageForm({
             <button
               type="button"
               onClick={() => setShowSpotForm(!showSpotForm)}
-              className="flex items-center gap-2 px-4 py-2 bg-[#ea580c] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
+              className="flex items-center gap-2 px-4 py-2 bg-accent-hover text-white rounded-lg hover:bg-accent-hover transition-colors"
             >
               <Plus className="h-4 w-4" />
               Add Spot
@@ -716,7 +716,7 @@ export default function GuidePageForm({
                       type="text"
                       name="spotName"
                       required
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent text-sm"
                       placeholder="Spot name"
                     />
                   </div>
@@ -729,7 +729,7 @@ export default function GuidePageForm({
                       name="spotRank"
                       required
                       defaultValue={spots.length + 1}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent text-sm"
                     />
                   </div>
                   <div>
@@ -739,7 +739,7 @@ export default function GuidePageForm({
                     <input
                       type="text"
                       name="spotDifficulty"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent text-sm"
                       placeholder="e.g., Moderate"
                     />
                   </div>
@@ -752,7 +752,7 @@ export default function GuidePageForm({
                   <textarea
                     name="spotDescription"
                     rows={3}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-sm"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent text-sm"
                     placeholder="Describe this spot..."
                   />
                 </div>
@@ -764,7 +764,7 @@ export default function GuidePageForm({
                   <input
                     type="text"
                     name="spotVerdict"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-sm"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent text-sm"
                     placeholder="One-line verdict (for best-of lists)"
                   />
                 </div>
@@ -777,7 +777,7 @@ export default function GuidePageForm({
                     <input
                       type="text"
                       name="spotDuration"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent text-sm"
                       placeholder="e.g., 3-4 hours"
                     />
                   </div>
@@ -788,7 +788,7 @@ export default function GuidePageForm({
                     <input
                       type="text"
                       name="spotDistance"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent text-sm"
                       placeholder="e.g., 8km"
                     />
                   </div>
@@ -799,7 +799,7 @@ export default function GuidePageForm({
                     <input
                       type="text"
                       name="spotElevationGain"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent text-sm"
                       placeholder="e.g., 500m"
                     />
                   </div>
@@ -810,7 +810,7 @@ export default function GuidePageForm({
                     <input
                       type="text"
                       name="spotEstimatedCost"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent text-sm"
                       placeholder="e.g., Free"
                     />
                   </div>
@@ -824,7 +824,7 @@ export default function GuidePageForm({
                     <input
                       type="text"
                       name="spotBestFor"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent text-sm"
                       placeholder="e.g., Experienced hikers, photographers"
                     />
                   </div>
@@ -835,7 +835,7 @@ export default function GuidePageForm({
                     <input
                       type="text"
                       name="spotBestSeason"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent text-sm"
                       placeholder="e.g., May-September"
                     />
                   </div>
@@ -848,7 +848,7 @@ export default function GuidePageForm({
                   <textarea
                     name="spotInsiderTip"
                     rows={2}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-sm"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent text-sm"
                     placeholder="A local tip that most guides don't mention..."
                   />
                 </div>
@@ -860,7 +860,7 @@ export default function GuidePageForm({
                   <input
                     type="text"
                     name="spotParking"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-sm"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent text-sm"
                     placeholder="Parking info..."
                   />
                 </div>
@@ -873,7 +873,7 @@ export default function GuidePageForm({
                     <input
                       type="text"
                       name="spotImage"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent text-sm"
                       placeholder="https://..."
                     />
                   </div>
@@ -884,7 +884,7 @@ export default function GuidePageForm({
                     <input
                       type="text"
                       name="spotImageAlt"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent text-sm"
                       placeholder="Alt text"
                     />
                   </div>
@@ -901,7 +901,7 @@ export default function GuidePageForm({
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-[#ea580c] text-white rounded-lg hover:bg-[#ea580c] transition-colors text-sm"
+                  className="px-4 py-2 bg-accent-hover text-white rounded-lg hover:bg-accent-hover transition-colors text-sm"
                 >
                   Add Spot
                 </button>

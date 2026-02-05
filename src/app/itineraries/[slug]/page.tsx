@@ -69,11 +69,11 @@ export default async function ItineraryDetailPage({ params }: Props) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs */}
         <div className="flex items-center gap-2 text-sm text-gray-500 mb-4 lg:mb-6">
-          <Link href="/" className="hover:text-[#1e3a4c]">Home</Link>
+          <Link href="/" className="hover:text-primary">Home</Link>
           <ChevronRight className="w-4 h-4" />
-          <Link href="/itineraries" className="hover:text-[#1e3a4c]">Itineraries</Link>
+          <Link href="/itineraries" className="hover:text-primary">Itineraries</Link>
           <ChevronRight className="w-4 h-4" />
-          <span className="text-[#1e3a4c] font-medium truncate">{itinerary.title}</span>
+          <span className="text-primary font-medium truncate">{itinerary.title}</span>
         </div>
 
         {/* Hero Section */}
@@ -85,7 +85,7 @@ export default async function ItineraryDetailPage({ params }: Props) {
           />
 
           {/* Duration Badge */}
-          <div className="absolute top-4 right-4 bg-[#1e3a4c] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg z-20">
+          <div className="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg z-20">
             {itinerary.durationDays ?? 1} DAY{(itinerary.durationDays ?? 1) > 1 ? "S" : ""}
           </div>
 
@@ -144,15 +144,15 @@ export default async function ItineraryDetailPage({ params }: Props) {
         <div className="lg:hidden mb-6">
           <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-200 flex justify-between divide-x divide-gray-200">
             <div className="flex flex-col items-center flex-1">
-              <span className="text-xl font-bold text-[#1e3a4c]">{stops?.filter(i => i.stopType === "activity").length || 0}</span>
+              <span className="text-xl font-bold text-primary">{stops?.filter(i => i.stopType === "activity").length || 0}</span>
               <span className="text-xs text-gray-500 uppercase">Activities</span>
             </div>
             <div className="flex flex-col items-center flex-1">
-              <span className="text-xl font-bold text-[#1e3a4c]">{Math.max(0, (itinerary.durationDays ?? 1) - 1)}</span>
+              <span className="text-xl font-bold text-primary">{Math.max(0, (itinerary.durationDays ?? 1) - 1)}</span>
               <span className="text-xs text-gray-500 uppercase">Nights</span>
             </div>
             <div className="flex flex-col items-center flex-1">
-              <span className="text-xl font-bold text-[#1e3a4c]">
+              <span className="text-xl font-bold text-primary">
                 £{itinerary.priceEstimateFrom || "TBC"}
               </span>
               <span className="text-xs text-gray-500 uppercase">From</span>
@@ -210,7 +210,7 @@ export default async function ItineraryDetailPage({ params }: Props) {
           <FavoriteButton
             itemId={itinerary.id}
             itemType="itinerary"
-            className="flex flex-col items-center justify-center w-14 gap-1 text-gray-500 hover:text-[#1e3a4c] transition-colors"
+            className="flex flex-col items-center justify-center w-14 gap-1 text-gray-500 hover:text-primary transition-colors"
             iconClassName="w-5 h-5"
           />
           {uniqueOperators.length > 0 ? (
@@ -220,7 +220,7 @@ export default async function ItineraryDetailPage({ params }: Props) {
               variant="mobile"
             />
           ) : (
-            <button className="flex-1 bg-[#ea580c] hover:bg-[#ea580c]/90 text-white font-bold rounded-xl h-12 flex items-center justify-center gap-2 shadow-lg shadow-[#ea580c]/20 transition-all active:scale-95">
+            <button className="flex-1 bg-accent-hover hover:bg-accent-hover/90 text-white font-bold rounded-xl h-12 flex items-center justify-center gap-2 shadow-lg shadow-accent-hover/20 transition-all active:scale-95">
               <span>Enquire</span>
               <span className="bg-white/20 px-2 py-0.5 rounded text-xs font-medium">
                 From £{itinerary.priceEstimateFrom || "TBC"}

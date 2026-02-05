@@ -142,14 +142,14 @@ export default function HelpPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-gray-500 mb-8">
-          <Link href="/" className="hover:text-[#1e3a4c]">Home</Link>
+          <Link href="/" className="hover:text-primary">Home</Link>
           <ChevronRight className="w-4 h-4" />
-          <span className="text-[#1e3a4c] font-medium">Help Center</span>
+          <span className="text-primary font-medium">Help Center</span>
         </div>
 
         {/* Header */}
         <div className="mb-12 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-[#1e3a4c] mb-4">
+          <h1 className="text-4xl lg:text-5xl font-bold text-primary mb-4">
             How Can We Help?
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
@@ -163,7 +163,7 @@ export default function HelpPage() {
               <input
                 type="text"
                 placeholder="Search for help articles..."
-                className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1e3a4c]/20 focus:border-[#1e3a4c] text-lg"
+                className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-lg"
               />
             </div>
           </div>
@@ -171,23 +171,23 @@ export default function HelpPage() {
 
         {/* Quick Links */}
         <div className="grid md:grid-cols-3 gap-6 mb-16">
-          <Link href="/contact" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#ea580c] transition-all group text-center">
-            <Mail className="w-10 h-10 text-[#ea580c] mx-auto mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">Email Support</h3>
+          <Link href="/contact" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-accent-hover transition-all group text-center">
+            <Mail className="w-10 h-10 text-accent-hover mx-auto mb-4 group-hover:scale-110 transition-transform" />
+            <h3 className="text-lg font-bold text-primary mb-2">Email Support</h3>
             <p className="text-gray-600 text-sm">Get help from our team within 24 hours</p>
           </Link>
 
-          <a href="tel:+442920123456" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#ea580c] transition-all group text-center">
-            <Phone className="w-10 h-10 text-[#ea580c] mx-auto mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">Phone Support</h3>
+          <a href="tel:+442920123456" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-accent-hover transition-all group text-center">
+            <Phone className="w-10 h-10 text-accent-hover mx-auto mb-4 group-hover:scale-110 transition-transform" />
+            <h3 className="text-lg font-bold text-primary mb-2">Phone Support</h3>
             <p className="text-gray-600 text-sm">+44 (0) 29 2012 3456<br />Mon-Fri, 9:00-17:00</p>
           </a>
 
-          <div className="bg-gradient-to-br from-[#1e3a4c] to-[#2a5570] rounded-2xl p-6 text-white text-center">
+          <div className="bg-gradient-to-br from-primary to-[#2a5570] rounded-2xl p-6 text-white text-center">
             <MessageCircle className="w-10 h-10 mx-auto mb-4" />
             <h3 className="text-lg font-bold mb-2">Live Chat</h3>
             <p className="text-sm opacity-90 mb-4">Available Mon-Fri, 9:00-17:00</p>
-            <button className="px-4 py-2 bg-white text-[#1e3a4c] font-semibold rounded-lg hover:bg-gray-100 transition-colors text-sm">
+            <button className="px-4 py-2 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors text-sm">
               Start Chat
             </button>
           </div>
@@ -195,7 +195,7 @@ export default function HelpPage() {
 
         {/* FAQ Categories */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-[#1e3a4c] mb-8 text-center">
+          <h2 className="text-2xl font-bold text-primary mb-8 text-center">
             Frequently Asked Questions
           </h2>
 
@@ -203,18 +203,18 @@ export default function HelpPage() {
             {faqCategories.map((category, idx) => (
               <div key={idx} className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 bg-[#ea580c]/10 rounded-xl flex items-center justify-center">
-                    <category.icon className="w-5 h-5 text-[#ea580c]" />
+                  <div className="w-10 h-10 bg-accent-hover/10 rounded-xl flex items-center justify-center">
+                    <category.icon className="w-5 h-5 text-accent-hover" />
                   </div>
-                  <h3 className="text-xl font-bold text-[#1e3a4c]">{category.title}</h3>
+                  <h3 className="text-xl font-bold text-primary">{category.title}</h3>
                 </div>
 
                 <div className="space-y-4">
                   {category.faqs.map((faq, faqIdx) => (
                     <details key={faqIdx} className="group">
                       <summary className="flex items-start gap-2 cursor-pointer list-none">
-                        <ChevronRight className="w-5 h-5 text-[#1e3a4c] mt-0.5 flex-shrink-0 transition-transform group-open:rotate-90" />
-                        <span className="font-medium text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors">
+                        <ChevronRight className="w-5 h-5 text-primary mt-0.5 flex-shrink-0 transition-transform group-open:rotate-90" />
+                        <span className="font-medium text-primary group-hover:text-accent-hover transition-colors">
                           {faq.question}
                         </span>
                       </summary>
@@ -231,37 +231,37 @@ export default function HelpPage() {
 
         {/* Popular Topics */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-[#1e3a4c] mb-6 text-center">Popular Help Topics</h2>
+          <h2 className="text-2xl font-bold text-primary mb-6 text-center">Popular Help Topics</h2>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/safety" className="bg-[#1e3a4c]/5 rounded-xl p-4 hover:bg-[#1e3a4c]/10 transition-colors">
-              <div className="font-medium text-[#1e3a4c] mb-1">Safety Guidelines</div>
+            <Link href="/safety" className="bg-primary/5 rounded-xl p-4 hover:bg-primary/10 transition-colors">
+              <div className="font-medium text-primary mb-1">Safety Guidelines</div>
               <div className="text-sm text-gray-600">Learn about our safety standards</div>
             </Link>
-            <Link href="/terms" className="bg-[#1e3a4c]/5 rounded-xl p-4 hover:bg-[#1e3a4c]/10 transition-colors">
-              <div className="font-medium text-[#1e3a4c] mb-1">Terms of Service</div>
+            <Link href="/terms" className="bg-primary/5 rounded-xl p-4 hover:bg-primary/10 transition-colors">
+              <div className="font-medium text-primary mb-1">Terms of Service</div>
               <div className="text-sm text-gray-600">Understand your rights and obligations</div>
             </Link>
-            <Link href="/privacy" className="bg-[#1e3a4c]/5 rounded-xl p-4 hover:bg-[#1e3a4c]/10 transition-colors">
-              <div className="font-medium text-[#1e3a4c] mb-1">Privacy Policy</div>
+            <Link href="/privacy" className="bg-primary/5 rounded-xl p-4 hover:bg-primary/10 transition-colors">
+              <div className="font-medium text-primary mb-1">Privacy Policy</div>
               <div className="text-sm text-gray-600">How we handle your data</div>
             </Link>
-            <Link href="/advertise" className="bg-[#1e3a4c]/5 rounded-xl p-4 hover:bg-[#1e3a4c]/10 transition-colors">
-              <div className="font-medium text-[#1e3a4c] mb-1">Become a Partner</div>
+            <Link href="/advertise" className="bg-primary/5 rounded-xl p-4 hover:bg-primary/10 transition-colors">
+              <div className="font-medium text-primary mb-1">Become a Partner</div>
               <div className="text-sm text-gray-600">List your activities with us</div>
             </Link>
-            <Link href="/destinations" className="bg-[#1e3a4c]/5 rounded-xl p-4 hover:bg-[#1e3a4c]/10 transition-colors">
-              <div className="font-medium text-[#1e3a4c] mb-1">Destinations Guide</div>
+            <Link href="/destinations" className="bg-primary/5 rounded-xl p-4 hover:bg-primary/10 transition-colors">
+              <div className="font-medium text-primary mb-1">Destinations Guide</div>
               <div className="text-sm text-gray-600">Explore regions across Wales</div>
             </Link>
-            <Link href="/contact" className="bg-[#1e3a4c]/5 rounded-xl p-4 hover:bg-[#1e3a4c]/10 transition-colors">
-              <div className="font-medium text-[#1e3a4c] mb-1">Contact Us</div>
+            <Link href="/contact" className="bg-primary/5 rounded-xl p-4 hover:bg-primary/10 transition-colors">
+              <div className="font-medium text-primary mb-1">Contact Us</div>
               <div className="text-sm text-gray-600">Get personalized support</div>
             </Link>
           </div>
         </section>
 
         {/* Still Need Help */}
-        <section className="bg-gradient-to-br from-[#1e3a4c] to-[#2a5570] rounded-2xl p-8 lg:p-12 text-white text-center">
+        <section className="bg-gradient-to-br from-primary to-[#2a5570] rounded-2xl p-8 lg:p-12 text-white text-center">
           <h2 className="text-3xl font-bold mb-4">Still Need Help?</h2>
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
             Our friendly support team is here to answer any questions you have about 
@@ -270,13 +270,13 @@ export default function HelpPage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               href="/contact"
-              className="px-8 py-3 bg-[#ea580c] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors"
+              className="px-8 py-3 bg-accent-hover text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors"
             >
               Contact Support
             </Link>
             <a
               href="mailto:support@adventurewales.co.uk"
-              className="px-8 py-3 bg-white text-[#1e3a4c] font-semibold rounded-xl hover:bg-gray-100 transition-colors"
+              className="px-8 py-3 bg-white text-primary font-semibold rounded-xl hover:bg-gray-100 transition-colors"
             >
               Email Us
             </a>

@@ -56,7 +56,7 @@ export function Breadcrumbs() {
         <li>
           <Link 
             href="/" 
-            className="flex items-center hover:text-[#1e3a4c] transition-colors"
+            className="flex items-center hover:text-primary transition-colors"
             title="Home"
           >
             <Home className="h-4 w-4" />
@@ -69,7 +69,7 @@ export function Breadcrumbs() {
             <ChevronRight className="h-4 w-4 text-slate-400 mx-1 flex-shrink-0" />
             {crumb.isLast ? (
               <span 
-                className="font-medium text-[#1e3a4c] truncate max-w-[150px] sm:max-w-none" 
+                className="font-medium text-primary truncate max-w-[150px] sm:max-w-none" 
                 aria-current="page"
                 title={crumb.label}
               >
@@ -78,7 +78,7 @@ export function Breadcrumbs() {
             ) : (
               <Link 
                 href={crumb.href}
-                className="hover:text-[#ea580c] transition-colors truncate max-w-[100px] sm:max-w-none"
+                className="hover:text-accent-hover transition-colors truncate max-w-[100px] sm:max-w-none"
                 title={crumb.label}
               >
                 {crumb.label}

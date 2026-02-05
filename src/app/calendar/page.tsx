@@ -128,13 +128,13 @@ export default async function CalendarPage({ searchParams }: PageProps) {
   return (
     <div className="min-h-screen bg-gray-50 pb-20">
       {/* Hero Banner */}
-      <div className="relative bg-[#1e3a4c] py-16 sm:py-24 overflow-hidden">
+      <div className="relative bg-primary py-16 sm:py-24 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute inset-0 bg-[url('/images/events-hero-placeholder.jpg')] bg-cover bg-center opacity-20" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a4c] to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <span className="inline-block py-1 px-3 rounded-full bg-[#ea580c]/20 text-[#ea580c] text-xs font-bold uppercase tracking-wider mb-4 border border-[#ea580c]/30">
+          <span className="inline-block py-1 px-3 rounded-full bg-accent-hover/20 text-accent-hover text-xs font-bold uppercase tracking-wider mb-4 border border-accent-hover/30">
             Adventure Calendar
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6">
@@ -162,7 +162,7 @@ export default async function CalendarPage({ searchParams }: PageProps) {
                 <input type="hidden" name="region" value={regionSlug} />
               </form>
             </div>
-            <button className="bg-[#ea580c] text-white px-8 py-3 rounded-full font-bold hover:bg-[#ea580c] transition-colors">
+            <button className="bg-accent-hover text-white px-8 py-3 rounded-full font-bold hover:bg-accent-hover transition-colors">
               Search
             </button>
           </div>
@@ -214,7 +214,7 @@ export default async function CalendarPage({ searchParams }: PageProps) {
             {groupEventsByMonth(filteredEvents).map((group) => (
               <div key={group.monthLabel}>
                 <div className="sticky top-0 z-10 bg-gray-50/95 backdrop-blur py-3 mb-4 border-b border-gray-200">
-                  <h2 className="text-xl font-bold text-[#1e3a4c]">{group.monthLabel}</h2>
+                  <h2 className="text-xl font-bold text-primary">{group.monthLabel}</h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {group.events.map((event) => (
@@ -252,7 +252,7 @@ export default async function CalendarPage({ searchParams }: PageProps) {
         )}
 
         {/* Add Your Event CTA */}
-        <div className="mt-16 bg-[#ea580c] rounded-2xl p-8 sm:p-12 text-center text-white relative overflow-hidden">
+        <div className="mt-16 bg-accent-hover rounded-2xl p-8 sm:p-12 text-center text-white relative overflow-hidden">
           <div className="relative z-10 max-w-2xl mx-auto">
             <h2 className="text-3xl font-black mb-4">Organising an event?</h2>
             <p className="text-lg text-white/90 mb-8">
@@ -261,7 +261,7 @@ export default async function CalendarPage({ searchParams }: PageProps) {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/auth/login" // Should link to operator dashboard or login
-                className="bg-[#1e3a4c] hover:bg-[#152a38] text-white font-bold py-3 px-8 rounded-full transition-colors"
+                className="bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded-full transition-colors"
               >
                 List Your Event
               </Link>
@@ -288,7 +288,7 @@ function FilterLink({ active, href, label }: { active: boolean; href: string; la
       href={href}
       className={cn(
         "px-3 py-1.5 text-sm font-medium rounded-md transition-colors",
-        active ? "bg-white text-[#1e3a4c] shadow-sm" : "text-gray-500 hover:text-gray-900"
+        active ? "bg-white text-primary shadow-sm" : "text-gray-500 hover:text-gray-900"
       )}
     >
       {label}
@@ -302,7 +302,7 @@ function ViewLink({ active, view, icon: Icon, label }: { active: boolean; view: 
       href={`?view=${view}`} // This simplifies keeping other params, ideally use a hook to merge params
       className={cn(
         "flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md transition-colors",
-        active ? "bg-white text-[#1e3a4c] shadow-sm" : "text-gray-500 hover:text-gray-900"
+        active ? "bg-white text-primary shadow-sm" : "text-gray-500 hover:text-gray-900"
       )}
     >
       <Icon className="w-4 h-4" />
@@ -321,7 +321,7 @@ function EventCard({ event }: { event: typeof events.$inferSelect }) {
         {event.heroImage ? (
           <Image src={event.heroImage} alt={event.name} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         ) : (
-           <div className="w-full h-full bg-[#1e3a4c]/10 flex items-center justify-center text-[#1e3a4c]/20">
+           <div className="w-full h-full bg-primary/10 flex items-center justify-center text-primary/20">
              <CalendarIcon className="w-12 h-12" />
            </div>
         )}
@@ -334,18 +334,18 @@ function EventCard({ event }: { event: typeof events.$inferSelect }) {
           <div className="text-xs font-bold text-gray-500 uppercase">
             {event.dateStart ? new Date(event.dateStart).toLocaleDateString("en-GB", { month: "short" }) : "TBC"}
           </div>
-          <div className="text-xl font-black text-[#1e3a4c]">
+          <div className="text-xl font-black text-primary">
              {event.dateStart ? new Date(event.dateStart).getDate() : "?"}
           </div>
         </div>
       </div>
       <div className="p-5 flex flex-col flex-1">
         <div className="mb-2">
-          <span className="text-xs font-bold text-[#ea580c] uppercase tracking-wide">
+          <span className="text-xs font-bold text-accent-hover uppercase tracking-wide">
             {event.type || "Event"}
           </span>
         </div>
-        <h3 className="text-lg font-bold text-[#1e3a4c] mb-2 line-clamp-2 group-hover:text-[#ea580c] transition-colors">
+        <h3 className="text-lg font-bold text-primary mb-2 line-clamp-2 group-hover:text-accent-hover transition-colors">
           {event.name}
         </h3>
         {event.location && (
@@ -358,7 +358,7 @@ function EventCard({ event }: { event: typeof events.$inferSelect }) {
            <span className="font-medium text-gray-900">
              {event.registrationCost ? `From £${Number(event.registrationCost).toFixed(0)}` : "Free"}
            </span>
-           <span className="text-[#ea580c] font-medium flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+           <span className="text-accent-hover font-medium flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
              View Details <ChevronDown className="w-4 h-4 -rotate-90" />
            </span>
         </div>
@@ -377,7 +377,7 @@ function EmptyState() {
       <p className="text-gray-500 max-w-md mx-auto">
         We couldn't find any events matching your filters. Try adjusting your search criteria or selecting a different date range.
       </p>
-      <Link href="/calendar" className="inline-block mt-6 text-[#ea580c] font-bold hover:underline">
+      <Link href="/calendar" className="inline-block mt-6 text-accent-hover font-bold hover:underline">
         Clear all filters
       </Link>
     </div>

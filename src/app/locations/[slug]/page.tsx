@@ -50,16 +50,16 @@ export default async function LocationPage({ params }: Props) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-xs lg:text-sm text-gray-500 mb-6">
-            <Link href="/" className="hover:text-[#1e3a4c]">Home</Link>
+            <Link href="/" className="hover:text-primary">Home</Link>
             <ChevronRight className="w-3 h-3" />
-            <span className="text-[#1e3a4c] font-medium">Location</span>
+            <span className="text-primary font-medium">Location</span>
           </nav>
 
-          <div className="bg-gradient-to-br from-[#1e3a4c]/5 to-[#ea580c]/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#ea580c]/10 mb-6">
-              <Compass className="w-8 h-8 text-[#ea580c]" />
+          <div className="bg-gradient-to-br from-primary/5 to-accent-hover/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent-hover/10 mb-6">
+              <Compass className="w-8 h-8 text-accent-hover" />
             </div>
-            <h1 className="text-2xl lg:text-3xl font-black text-[#1e3a4c] mb-3">
+            <h1 className="text-2xl lg:text-3xl font-black text-primary mb-3">
               This location page is coming soon
             </h1>
             <p className="text-gray-600 text-base lg:text-lg max-w-2xl mx-auto mb-8">
@@ -76,7 +76,7 @@ export default async function LocationPage({ params }: Props) {
                     <Link
                       key={item.location.id}
                       href={`/locations/${item.location.slug}`}
-                      className="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 hover:border-[#1e3a4c]/30 hover:shadow-md transition-all text-sm font-medium text-[#1e3a4c]"
+                      className="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 hover:border-primary/30 hover:shadow-md transition-all text-sm font-medium text-primary"
                     >
                       <MapPin className="w-4 h-4" />
                       {item.location.name}
@@ -89,14 +89,14 @@ export default async function LocationPage({ params }: Props) {
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
                 href="/destinations"
-                className="inline-flex items-center justify-center gap-2 bg-[#1e3a4c] text-white font-bold py-3 px-6 rounded-full hover:bg-[#2d5568] transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-primary text-white font-bold py-3 px-6 rounded-full hover:bg-[#2d5568] transition-colors"
               >
                 Browse Regions
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 href="/activities"
-                className="inline-flex items-center justify-center gap-2 bg-white text-[#1e3a4c] font-bold py-3 px-6 rounded-full border border-gray-200 hover:border-[#1e3a4c]/30 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-white text-primary font-bold py-3 px-6 rounded-full border border-gray-200 hover:border-primary/30 transition-colors"
               >
                 Find Activities
               </Link>
@@ -114,20 +114,20 @@ export default async function LocationPage({ params }: Props) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs */}
         <nav className="flex flex-wrap items-center gap-2 text-xs lg:text-sm text-gray-500 mb-6">
-          <Link href="/" className="hover:text-[#1e3a4c]">Home</Link>
+          <Link href="/" className="hover:text-primary">Home</Link>
           <ChevronRight className="w-3 h-3" />
           {region && (
             <>
-              <Link href={`/${region.slug}`} className="hover:text-[#1e3a4c]">{region.name}</Link>
+              <Link href={`/${region.slug}`} className="hover:text-primary">{region.name}</Link>
               <ChevronRight className="w-3 h-3" />
             </>
           )}
-          <span className="text-[#1e3a4c] font-medium">{location.name}</span>
+          <span className="text-primary font-medium">{location.name}</span>
         </nav>
 
         {/* Header */}
         <header className="mb-8">
-          <h1 className="text-3xl lg:text-4xl font-black text-[#1e3a4c] mb-3">{location.name}</h1>
+          <h1 className="text-3xl lg:text-4xl font-black text-primary mb-3">{location.name}</h1>
           {region && (
             <div className="flex items-center gap-2 text-gray-500">
               <MapPin className="w-4 h-4" />
@@ -148,8 +148,8 @@ export default async function LocationPage({ params }: Props) {
           {location.parkingInfo && (
             <div className="bg-white rounded-xl border border-gray-200 p-5">
               <div className="flex items-center gap-2 mb-2">
-                <Car className="w-5 h-5 text-[#1e3a4c]" />
-                <h3 className="font-bold text-[#1e3a4c]">Parking</h3>
+                <Car className="w-5 h-5 text-primary" />
+                <h3 className="font-bold text-primary">Parking</h3>
               </div>
               <p className="text-gray-600 text-sm">{location.parkingInfo}</p>
             </div>
@@ -157,8 +157,8 @@ export default async function LocationPage({ params }: Props) {
           {location.accessNotes && (
             <div className="bg-white rounded-xl border border-gray-200 p-5">
               <div className="flex items-center gap-2 mb-2">
-                <Info className="w-5 h-5 text-[#1e3a4c]" />
-                <h3 className="font-bold text-[#1e3a4c]">Access Notes</h3>
+                <Info className="w-5 h-5 text-primary" />
+                <h3 className="font-bold text-primary">Access Notes</h3>
               </div>
               <p className="text-gray-600 text-sm">{location.accessNotes}</p>
             </div>
@@ -166,8 +166,8 @@ export default async function LocationPage({ params }: Props) {
           {location.bestTime && (
             <div className="bg-white rounded-xl border border-gray-200 p-5">
               <div className="flex items-center gap-2 mb-2">
-                <Clock className="w-5 h-5 text-[#1e3a4c]" />
-                <h3 className="font-bold text-[#1e3a4c]">Best Time to Visit</h3>
+                <Clock className="w-5 h-5 text-primary" />
+                <h3 className="font-bold text-primary">Best Time to Visit</h3>
               </div>
               <p className="text-gray-600 text-sm">{location.bestTime}</p>
             </div>
@@ -175,8 +175,8 @@ export default async function LocationPage({ params }: Props) {
           {location.facilities && (
             <div className="bg-white rounded-xl border border-gray-200 p-5">
               <div className="flex items-center gap-2 mb-2">
-                <Info className="w-5 h-5 text-[#1e3a4c]" />
-                <h3 className="font-bold text-[#1e3a4c]">Facilities</h3>
+                <Info className="w-5 h-5 text-primary" />
+                <h3 className="font-bold text-primary">Facilities</h3>
               </div>
               <p className="text-gray-600 text-sm">{location.facilities}</p>
             </div>
@@ -184,14 +184,14 @@ export default async function LocationPage({ params }: Props) {
         </div>
 
         {/* CTA */}
-        <div className="bg-[#1e3a4c] rounded-2xl p-6 lg:p-8 text-white text-center">
+        <div className="bg-primary rounded-2xl p-6 lg:p-8 text-white text-center">
           <h2 className="text-xl font-bold mb-2">Explore more of {region?.name || "Wales"}</h2>
           <p className="text-white/80 text-sm mb-4">Find activities and accommodation nearby.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             {region && (
               <Link
                 href={`/${region.slug}/things-to-do`}
-                className="inline-flex items-center justify-center gap-2 bg-white text-[#1e3a4c] font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-white text-primary font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition-colors"
               >
                 Things to Do
                 <ArrowRight className="w-4 h-4" />

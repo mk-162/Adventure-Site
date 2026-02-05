@@ -96,13 +96,13 @@ export function FavouriteButton({ type, id, className = "", size = "md" }: Favou
             <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-4">
               <Heart className="w-8 h-8 text-red-400" />
             </div>
-            <h3 className="text-xl font-bold text-[#1e3a4c] mb-2">Save your favourites</h3>
+            <h3 className="text-xl font-bold text-primary mb-2">Save your favourites</h3>
             <p className="text-slate-500 mb-6">
               Create a free account to save adventures, events, and operators you love.
             </p>
             <Link
               href="/login"
-              className="block w-full bg-[#ea580c] hover:bg-orange-600 text-white font-bold py-3 rounded-lg transition-colors mb-3"
+              className="block w-full bg-accent-hover hover:bg-orange-600 text-white font-bold py-3 rounded-lg transition-colors mb-3"
             >
               Sign up free
             </Link>

@@ -22,8 +22,8 @@ export function Badge({
         size === "md" && "px-3 py-1 text-sm",
         // Variants
         variant === "default" && "bg-gray-100 text-gray-700",
-        variant === "primary" && "bg-[#1e3a4c] text-white",
-        variant === "accent" && "bg-[#ea580c] text-white",
+        variant === "primary" && "bg-primary text-white",
+        variant === "accent" && "bg-accent-hover text-white",
         variant === "success" && "bg-green-100 text-green-700",
         variant === "warning" && "bg-amber-100 text-amber-700",
         variant === "outline" && "border border-gray-200 text-gray-600",
@@ -69,7 +69,7 @@ export function PriceBadge({ from, to }: { from?: number | null; to?: number | n
   const display = to && to !== from ? `£${from}-${to}` : `£${from}`;
 
   return (
-    <span className="text-sm font-semibold text-[#1e3a4c]">
+    <span className="text-sm font-semibold text-primary">
       From {display}
     </span>
   );

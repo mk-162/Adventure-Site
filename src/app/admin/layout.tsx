@@ -68,7 +68,7 @@ export default function AdminLayout({
       {/* Sidebar */}
       <aside
         className={clsx(
-          "fixed inset-y-0 left-0 z-50 w-64 bg-[#1e3a4c] transform transition-transform lg:translate-x-0",
+          "fixed inset-y-0 left-0 z-50 w-64 bg-primary transform transition-transform lg:translate-x-0",
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >
@@ -89,7 +89,7 @@ export default function AdminLayout({
             className={clsx(
               "flex items-center gap-3 px-3 py-2 rounded-lg mb-4 transition-colors",
               pathname === "/admin"
-                ? "bg-[#ea580c] text-white"
+                ? "bg-accent-hover text-white"
                 : "text-white/70 hover:bg-white/10 hover:text-white"
             )}
             onClick={() => setSidebarOpen(false)}
@@ -110,7 +110,7 @@ export default function AdminLayout({
                 className={clsx(
                   "flex items-center gap-3 px-3 py-2 rounded-lg mb-1 transition-colors",
                   isActive(item.href)
-                    ? "bg-[#ea580c] text-white"
+                    ? "bg-accent-hover text-white"
                     : "text-white/70 hover:bg-white/10 hover:text-white"
                 )}
                 onClick={() => setSidebarOpen(false)}
@@ -133,7 +133,7 @@ export default function AdminLayout({
                 className={clsx(
                   "flex items-center gap-3 px-3 py-2 rounded-lg mb-1 transition-colors",
                   isActive(item.href)
-                    ? "bg-[#ea580c] text-white"
+                    ? "bg-accent-hover text-white"
                     : "text-white/70 hover:bg-white/10 hover:text-white"
                 )}
                 onClick={() => setSidebarOpen(false)}
@@ -173,7 +173,7 @@ export default function AdminLayout({
             href="/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-white bg-[#1e3a4c] hover:bg-[#2a4f66] px-3 py-1.5 rounded-lg transition-colors font-medium"
+            className="inline-flex items-center gap-1.5 text-sm text-white bg-primary hover:bg-[#2a4f66] px-3 py-1.5 rounded-lg transition-colors font-medium"
           >
             Go to site <span aria-hidden="true">→</span>
           </a>

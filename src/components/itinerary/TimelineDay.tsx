@@ -72,24 +72,24 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
     <div className="mb-8 relative pl-0 sm:pl-4">
         {/* Day Header */}
         <div className="flex items-center gap-4 mb-6">
-            <div className="bg-[#ea580c] text-white font-bold text-xl w-12 h-12 rounded-xl flex items-center justify-center shadow-md z-10 relative shrink-0">
+            <div className="bg-accent-hover text-white font-bold text-xl w-12 h-12 rounded-xl flex items-center justify-center shadow-md z-10 relative shrink-0">
                 {String(dayNumber).padStart(2, '0')}
             </div>
-            <h3 className="text-xl font-bold text-[#1e3a4c]">Day {dayNumber}</h3>
+            <h3 className="text-xl font-bold text-primary">Day {dayNumber}</h3>
         </div>
 
         <div className="border-l-2 border-gray-200 ml-6 space-y-8 pb-8 -mt-6 pt-10">
             {/* Travel FROM Basecamp */}
             {travelFromBasecamp && (
                 <div className="relative pl-8 pb-4">
-                    <div className="absolute left-[-5px] top-6 w-3 h-3 bg-white border-2 border-[#ea580c] rounded-full z-10"></div>
+                    <div className="absolute left-[-5px] top-6 w-3 h-3 bg-white border-2 border-accent-hover rounded-full z-10"></div>
                     <div className="bg-orange-50 border border-orange-200 rounded-lg p-3 flex items-center gap-3">
-                        <div className="bg-[#ea580c] p-1.5 rounded-lg">
+                        <div className="bg-accent-hover p-1.5 rounded-lg">
                             <Home className="w-4 h-4 text-white" />
                         </div>
                         <div className="flex-1">
                             <div className="text-xs font-bold text-gray-500 uppercase">From Basecamp</div>
-                            <div className="text-sm font-bold text-[#1e3a4c]">{basecamp?.name}</div>
+                            <div className="text-sm font-bold text-primary">{basecamp?.name}</div>
                         </div>
                     </div>
                     <div className="mt-4 flex items-center gap-2 text-xs text-gray-500 font-medium pl-1">
@@ -123,7 +123,7 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
                 return (
                     <div key={stop.id} className={`relative pl-8 ${isSkipped ? "opacity-50" : ""}`}>
                         {/* Dot on timeline */}
-                        <div className={`absolute left-[-5px] top-6 w-3 h-3 bg-white border-2 rounded-full z-10 ${isSkipped ? "border-gray-300" : "border-[#1e3a4c]"}`}></div>
+                        <div className={`absolute left-[-5px] top-6 w-3 h-3 bg-white border-2 rounded-full z-10 ${isSkipped ? "border-gray-300" : "border-primary"}`}></div>
 
                         {/* Time if available */}
                         {stop.startTime && (
@@ -176,7 +176,7 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
                                 {/* Content */}
                                 <div className="flex-1 p-5">
                                     <div className="flex items-start justify-between gap-2">
-                                    <h4 className={`font-bold text-lg flex flex-wrap items-center gap-2 ${isSkipped ? "text-gray-400 line-through" : "text-[#1e3a4c]"}`}>
+                                    <h4 className={`font-bold text-lg flex flex-wrap items-center gap-2 ${isSkipped ? "text-gray-400 line-through" : "text-primary"}`}>
                                         {/* Mobile-only type icon */}
                                         <span className="sm:hidden">
                                             {type === 'activity' && <Flag className="w-4 h-4 text-blue-600 inline" />}
@@ -205,7 +205,7 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
                                         onClick={() => skippedStops.toggle(String(stop.id))}
                                         className={`shrink-0 p-1.5 rounded-lg transition-colors ${
                                           isSkipped
-                                            ? "text-gray-400 hover:text-[#1e3a4c] hover:bg-gray-100"
+                                            ? "text-gray-400 hover:text-primary hover:bg-gray-100"
                                             : "text-gray-300 hover:text-gray-500 hover:bg-gray-100"
                                         }`}
                                         title={isSkipped ? "Include this stop" : "Skip this stop"}
@@ -233,14 +233,14 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
                                     {/* Actions / Links */}
                                     <div className="mt-4 flex flex-wrap gap-3">
                                         {(stop.activityId || (mode === "wet" && stop.wetAltActivityId) || (mode === "budget" && stop.budgetAltActivityId)) && (
-                                            <button className="text-xs font-bold bg-[#1e3a4c] text-white px-3 py-1.5 rounded-lg hover:bg-[#1e3a4c]/90 transition-colors">
+                                            <button className="text-xs font-bold bg-primary text-white px-3 py-1.5 rounded-lg hover:bg-primary/90 transition-colors">
                                                 View Details
                                             </button>
                                         )}
                                         {stop.operator?.slug && (
                                             <Link
                                                 href={`/directory/${stop.operator.slug}`}
-                                                className="text-xs font-bold text-[#ea580c] bg-[#ea580c]/10 px-3 py-1.5 rounded-lg hover:bg-[#ea580c]/20 transition-colors flex items-center gap-1"
+                                                className="text-xs font-bold text-accent-hover bg-accent-hover/10 px-3 py-1.5 rounded-lg hover:bg-accent-hover/20 transition-colors flex items-center gap-1"
                                             >
                                                 <Phone className="w-3 h-3" /> Contact / Book
                                             </Link>
@@ -274,18 +274,18 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
             {/* Travel TO Basecamp */}
             {travelToBasecamp && (
                 <div className="relative pl-8 pt-4">
-                    <div className="absolute left-[-5px] top-6 w-3 h-3 bg-white border-2 border-[#ea580c] rounded-full z-10"></div>
+                    <div className="absolute left-[-5px] top-6 w-3 h-3 bg-white border-2 border-accent-hover rounded-full z-10"></div>
                     <div className="mt-4 mb-4 flex items-center gap-2 text-xs text-gray-500 font-medium pl-1">
                         <Car className="w-4 h-4" />
                         <span>{travelToBasecamp} drive</span>
                     </div>
                     <div className="bg-orange-50 border border-orange-200 rounded-lg p-3 flex items-center gap-3">
-                        <div className="bg-[#ea580c] p-1.5 rounded-lg">
+                        <div className="bg-accent-hover p-1.5 rounded-lg">
                             <Home className="w-4 h-4 text-white" />
                         </div>
                         <div className="flex-1">
                             <div className="text-xs font-bold text-gray-500 uppercase">Return to Basecamp</div>
-                            <div className="text-sm font-bold text-[#1e3a4c]">{basecamp?.name}</div>
+                            <div className="text-sm font-bold text-primary">{basecamp?.name}</div>
                         </div>
                     </div>
                 </div>
@@ -383,7 +383,7 @@ function AlternativesButton({
                   href={`/activities/${alt.slug}`}
                   className="block p-2.5 rounded-lg border border-gray-100 hover:border-purple-200 hover:bg-purple-50/50 transition-colors group"
                 >
-                  <p className="text-sm font-bold text-[#1e3a4c] group-hover:text-purple-700 leading-tight">
+                  <p className="text-sm font-bold text-primary group-hover:text-purple-700 leading-tight">
                     {alt.name}
                   </p>
                   <div className="flex items-center justify-between mt-1">

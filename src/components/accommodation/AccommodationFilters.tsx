@@ -123,7 +123,7 @@ export function AccommodationFilters({ accommodations, regions }: AccommodationF
           <select 
             value={selectedRegion}
             onChange={(e) => setSelectedRegion(e.target.value)}
-            className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a4c]/20"
+            className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20"
           >
             <option value="">All Regions</option>
             {regions.map(region => (
@@ -135,7 +135,7 @@ export function AccommodationFilters({ accommodations, regions }: AccommodationF
           <select 
             value={selectedType}
             onChange={(e) => setSelectedType(e.target.value)}
-            className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a4c]/20"
+            className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20"
           >
             {accommodationTypes.map(type => (
               <option key={type.value} value={type.value}>{type.label}</option>
@@ -146,7 +146,7 @@ export function AccommodationFilters({ accommodations, regions }: AccommodationF
           <select 
             value={selectedPrice}
             onChange={(e) => setSelectedPrice(e.target.value)}
-            className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#1e3a4c]/20"
+            className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20"
           >
             <option value="">Any Price</option>
             <option value="budget">Budget (Under £50)</option>
@@ -167,8 +167,8 @@ export function AccommodationFilters({ accommodations, regions }: AccommodationF
               onClick={() => setSelectedType(type.value)}
               className={`flex items-center gap-2 px-4 py-2 border rounded-full text-sm whitespace-nowrap transition-colors ${
                 selectedType === type.value
-                  ? 'bg-[#1e3a4c] text-white border-[#1e3a4c]'
-                  : 'bg-white border-gray-200 hover:border-[#1e3a4c] hover:text-[#1e3a4c]'
+                  ? 'bg-primary text-white border-primary'
+                  : 'bg-white border-gray-200 hover:border-primary hover:text-primary'
               }`}
             >
               <Icon className="w-4 h-4" />
@@ -210,7 +210,7 @@ export function AccommodationFilters({ accommodations, regions }: AccommodationF
               setSelectedType('');
               setSelectedPrice('');
             }}
-            className="text-[#ea580c] hover:text-[#ea580c] font-medium text-sm"
+            className="text-accent-hover hover:text-accent-hover font-medium text-sm"
           >
             Clear all filters
           </button>
@@ -219,7 +219,7 @@ export function AccommodationFilters({ accommodations, regions }: AccommodationF
 
       {/* Region Cards */}
       <section className="mt-12">
-        <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Browse by Region</h2>
+        <h2 className="text-xl font-bold text-primary mb-4">Browse by Region</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
           {regions.slice(0, 8).map(region => (
             <Link

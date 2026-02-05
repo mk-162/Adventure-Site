@@ -31,7 +31,7 @@ export function AlreadyListedTooltip() {
       {open && (
         <div className="absolute left-0 sm:left-auto sm:right-0 top-full mt-3 w-80 bg-white text-slate-700 rounded-xl shadow-xl border border-slate-200 p-5 z-50">
           <div className="flex items-start gap-3">
-            <Info className="h-5 w-5 text-[#ea580c] shrink-0 mt-0.5" />
+            <Info className="h-5 w-5 text-accent-hover shrink-0 mt-0.5" />
             <p className="text-sm leading-relaxed">
               Find your attraction in our directory and click the{" "}
               <strong>&lsquo;Claim&rsquo;</strong> button on your listing page.

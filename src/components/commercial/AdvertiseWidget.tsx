@@ -8,7 +8,7 @@ interface AdvertiseWidgetProps {
 export function AdvertiseWidget({ variant = "sidebar", context }: AdvertiseWidgetProps) {
   if (variant === "banner") {
     return (
-      <div className="bg-gradient-to-r from-[#1e3a4c] to-[#2a5570] rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="bg-gradient-to-r from-primary to-[#2a5570] rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
           <h3 className="font-bold text-white text-lg">
             {context ? `Advertise in ${context}` : "Advertise Your Business"}
@@ -19,7 +19,7 @@ export function AdvertiseWidget({ variant = "sidebar", context }: AdvertiseWidge
         </div>
         <Link
           href="/advertise"
-          className="inline-flex items-center gap-2 bg-[#ea580c] hover:bg-[#ea580c] text-white font-bold px-6 py-3 rounded-xl transition-colors whitespace-nowrap"
+          className="inline-flex items-center gap-2 bg-accent-hover hover:bg-accent-hover text-white font-bold px-6 py-3 rounded-xl transition-colors whitespace-nowrap"
         >
           Learn More
         </Link>
@@ -33,7 +33,7 @@ export function AdvertiseWidget({ variant = "sidebar", context }: AdvertiseWidge
         <p className="text-sm text-gray-500 mb-2">
           {context ? `Your business could appear here for "${context}"` : "Your business could appear here"}
         </p>
-        <Link href="/advertise" className="text-[#ea580c] font-semibold text-sm hover:underline">
+        <Link href="/advertise" className="text-accent-hover font-semibold text-sm hover:underline">
           Advertise with us →
         </Link>
       </div>
@@ -42,14 +42,14 @@ export function AdvertiseWidget({ variant = "sidebar", context }: AdvertiseWidge
 
   // sidebar (default)
   return (
-    <div className="bg-gradient-to-br from-[#ea580c]/5 to-[#ea580c]/10 rounded-xl p-6 shadow-sm border border-[#ea580c]/20">
-      <h3 className="font-bold text-[#1e3a4c] mb-2">
+    <div className="bg-gradient-to-br from-accent-hover/5 to-accent-hover/10 rounded-xl p-6 shadow-sm border border-accent-hover/20">
+      <h3 className="font-bold text-primary mb-2">
         {context ? `Promote in ${context}` : "Promote Your Business"}
       </h3>
       <p className="text-sm text-gray-600 mb-3">
         Reach thousands of adventure seekers visiting this page.
       </p>
-      <Link href="/advertise" className="inline-flex items-center gap-1 text-[#ea580c] font-bold text-sm hover:underline">
+      <Link href="/advertise" className="inline-flex items-center gap-1 text-accent-hover font-bold text-sm hover:underline">
         Advertise here →
       </Link>
     </div>

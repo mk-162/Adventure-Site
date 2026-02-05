@@ -28,21 +28,21 @@ export function MarkdownRenderer({ content }: { content: string }) {
       if (line.startsWith("### ")) {
         flushList();
         elements.push(
-          <h3 key={`h3-${idx}`} className="text-2xl font-bold text-[#1e3a4c] mt-8 mb-4">
+          <h3 key={`h3-${idx}`} className="text-2xl font-bold text-primary mt-8 mb-4">
             {line.substring(4)}
           </h3>
         );
       } else if (line.startsWith("## ")) {
         flushList();
         elements.push(
-          <h2 key={`h2-${idx}`} className="text-3xl font-bold text-[#1e3a4c] mt-10 mb-6">
+          <h2 key={`h2-${idx}`} className="text-3xl font-bold text-primary mt-10 mb-6">
             {line.substring(3)}
           </h2>
         );
       } else if (line.startsWith("# ")) {
         flushList();
         elements.push(
-          <h1 key={`h1-${idx}`} className="text-4xl font-bold text-[#1e3a4c] mt-12 mb-8">
+          <h1 key={`h1-${idx}`} className="text-4xl font-bold text-primary mt-12 mb-8">
             {line.substring(2)}
           </h1>
         );
@@ -76,7 +76,7 @@ export function MarkdownRenderer({ content }: { content: string }) {
 
   const parseInline = (text: string) => {
     // Bold **text**
-    text = text.replace(/\*\*(.+?)\*\*/g, '<strong class="font-bold text-[#1e3a4c]">$1</strong>');
+    text = text.replace(/\*\*(.+?)\*\*/g, '<strong class="font-bold text-primary">$1</strong>');
     
     // Italic *text*
     text = text.replace(/\*(.+?)\*/g, '<em class="italic">$1</em>');
@@ -84,7 +84,7 @@ export function MarkdownRenderer({ content }: { content: string }) {
     // Links [text](url)
     text = text.replace(
       /\[([^\]]+)\]\(([^\)]+)\)/g,
-      '<a href="$2" class="text-[#ea580c] hover:underline font-semibold">$1</a>'
+      '<a href="$2" class="text-accent-hover hover:underline font-semibold">$1</a>'
     );
     
     // Code `text`

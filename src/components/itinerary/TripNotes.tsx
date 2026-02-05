@@ -40,7 +40,7 @@ export function TripNotes({ itinerarySlug }: TripNotesProps) {
     return (
       <button
         onClick={() => setIsOpen(true)}
-        className="w-full flex items-center justify-center gap-2 py-3 text-sm font-medium text-gray-500 hover:text-[#1e3a4c] border border-dashed border-gray-300 hover:border-[#1e3a4c] rounded-xl transition-colors"
+        className="w-full flex items-center justify-center gap-2 py-3 text-sm font-medium text-gray-500 hover:text-primary border border-dashed border-gray-300 hover:border-primary rounded-xl transition-colors"
       >
         <StickyNote className="w-4 h-4" />
         Add Trip Notes
@@ -51,7 +51,7 @@ export function TripNotes({ itinerarySlug }: TripNotesProps) {
   return (
     <div className="bg-amber-50/50 rounded-xl border border-amber-200/50 p-4">
       <div className="flex items-center justify-between mb-3">
-        <h4 className="text-sm font-bold text-[#1e3a4c] flex items-center gap-2">
+        <h4 className="text-sm font-bold text-primary flex items-center gap-2">
           <StickyNote className="w-4 h-4 text-amber-500" />
           My Trip Notes
         </h4>

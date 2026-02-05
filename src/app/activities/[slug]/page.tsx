@@ -298,19 +298,19 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                 <div>
                   {operator && (
                     <div className="flex items-center gap-2 mb-2">
-                      <div className="w-8 h-8 bg-[#1e3a4c] rounded-full flex items-center justify-center text-white text-xs font-bold">
+                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-xs font-bold">
                         {operator.name.charAt(0)}
                       </div>
                       <span className="text-sm text-gray-600">{operator.name}</span>
                       {operator.googleRating && (
                         <span className="flex items-center gap-1 text-sm">
-                          <Star className="h-4 w-4 fill-[#ea580c] text-[#ea580c]" />
+                          <Star className="h-4 w-4 fill-accent-hover text-accent-hover" />
                           {operator.googleRating}
                         </span>
                       )}
                     </div>
                   )}
-                  <h1 className="text-2xl md:text-3xl font-bold text-[#1e3a4c]">
+                  <h1 className="text-2xl md:text-3xl font-bold text-primary">
                     {activity.name}
                   </h1>
                 </div>
@@ -365,7 +365,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
           <div className="lg:col-span-2 space-y-8">
             {/* Description */}
             <section>
-              <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">
+              <h2 className="text-xl font-bold text-primary mb-4">
                 About This Experience
               </h2>
               <p className="text-gray-600">
@@ -394,7 +394,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
 
             {/* What's Included */}
             <section>
-              <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">
+              <h2 className="text-xl font-bold text-primary mb-4">
                 What's Included
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -426,12 +426,12 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
             {/* Meeting Point & Location Map */}
             {activity.meetingPoint && (
               <section>
-                <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">
+                <h2 className="text-xl font-bold text-primary mb-4">
                   Meeting Point
                 </h2>
                 <div className="bg-gray-100 rounded-xl p-4">
                   <p className="flex items-center gap-2 text-gray-700">
-                    <MapPin className="h-5 w-5 text-[#ea580c]" />
+                    <MapPin className="h-5 w-5 text-accent-hover" />
                     {activity.meetingPoint}
                   </p>
                 </div>
@@ -444,7 +444,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                 href={`https://www.google.com/maps/dir/?api=1&destination=${activity.lat},${activity.lng}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-[#1e3a4c] hover:text-[#ea580c] bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl px-4 py-2.5 transition-colors"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent-hover bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl px-4 py-2.5 transition-colors"
               >
                 <Navigation className="w-4 h-4" />
                 Get Directions
@@ -521,14 +521,14 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                     href={`/directory/${operator.slug}`}
                     className="flex items-center gap-3 hover:bg-gray-50 rounded-lg p-2 -m-2 transition-colors"
                   >
-                    <div className="w-10 h-10 bg-[#1e3a4c] rounded-full flex items-center justify-center text-white font-bold">
+                    <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">
                       {operator.name.charAt(0)}
                     </div>
                     <div>
-                      <p className="font-semibold text-[#1e3a4c]">{operator.name}</p>
+                      <p className="font-semibold text-primary">{operator.name}</p>
                       {operator.googleRating && (
                         <p className="text-sm text-gray-500 flex items-center gap-1">
-                          <Star className="h-3 w-3 fill-[#ea580c] text-[#ea580c]" />
+                          <Star className="h-3 w-3 fill-accent-hover text-accent-hover" />
                           {operator.googleRating}
                         </p>
                       )}
@@ -541,8 +541,8 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
             {/* Sidebar Location Map */}
             {activity.lat && activity.lng && (
               <div className="mt-4 bg-white rounded-2xl border p-4 shadow-sm">
-                <h3 className="font-bold text-sm text-[#1e3a4c] mb-3 flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-[#ea580c]" />
+                <h3 className="font-bold text-sm text-primary mb-3 flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-accent-hover" />
                   Location
                 </h3>
                 <MapView
@@ -563,7 +563,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                   href={`https://www.google.com/maps/dir/?api=1&destination=${activity.lat},${activity.lng}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 flex items-center justify-center gap-2 text-xs font-semibold text-[#1e3a4c] hover:text-[#ea580c] bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 transition-colors w-full"
+                  className="mt-3 flex items-center justify-center gap-2 text-xs font-semibold text-primary hover:text-accent-hover bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 transition-colors w-full"
                 >
                   <Navigation className="w-3.5 h-3.5" />
                   Get Directions
@@ -604,7 +604,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
           <section className="mt-12">
             <Link
               href={`/${region.slug}/things-to-do/${activityType.slug}`}
-              className="block bg-gradient-to-r from-[#1e3a4c] to-[#2a5570] rounded-xl p-6 hover:shadow-lg transition-shadow"
+              className="block bg-gradient-to-r from-primary to-[#2a5570] rounded-xl p-6 hover:shadow-lg transition-shadow"
             >
               <h2 className="text-lg font-bold text-white mb-1">
                 All {activityType.name} in {region.name} →
@@ -619,7 +619,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
         {/* Featured in these trips */}
         {regionItineraries.length > 0 && (
           <section className="mt-12">
-            <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">
+            <h2 className="text-xl font-bold text-primary mb-4">
               {region?.name} Road Trips
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -634,7 +634,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                     style={{ backgroundImage: `url('/images/regions/${iRegion?.slug || 'default'}-hero.jpg')` }}
                   />
                   <div className="p-4">
-                    <h3 className="font-semibold text-sm text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors line-clamp-1">
+                    <h3 className="font-semibold text-sm text-primary group-hover:text-accent-hover transition-colors line-clamp-1">
                       {itinerary.title}
                     </h3>
                     <p className="text-xs text-gray-500 mt-1">
@@ -650,7 +650,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
         {/* Related Activities */}
         {relatedActivities.length > 0 && (
           <section className="mt-12">
-            <h2 className="text-xl font-bold text-[#1e3a4c] mb-6">
+            <h2 className="text-xl font-bold text-primary mb-6">
               More Adventures Nearby
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -697,7 +697,7 @@ function getActivityTip(activityTypeSlug: string): string {
 function InfoPill({ icon: Icon, label }: { icon: any; label: string }) {
   return (
     <div className="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full whitespace-nowrap">
-      <Icon className="h-4 w-4 text-[#ea580c]" />
+      <Icon className="h-4 w-4 text-accent-hover" />
       <span className="text-sm text-gray-700">{label}</span>
     </div>
   );

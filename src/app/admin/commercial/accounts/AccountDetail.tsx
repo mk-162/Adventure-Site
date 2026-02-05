@@ -89,7 +89,7 @@ export function AccountDetail({ account, linkedOperators, unlinkedOperators }: {
         onClick={() => setExpanded(!expanded)}
       >
         <div className="flex items-center gap-4">
-          <div className="bg-[#1e3a4c] w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold">
+          <div className="bg-primary w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold">
             {account.name.charAt(0)}
           </div>
           <div>
@@ -169,7 +169,7 @@ export function AccountDetail({ account, linkedOperators, unlinkedOperators }: {
               </div>
               <div className="flex gap-2">
                 <button type="submit" disabled={isPending}
-                  className="px-4 py-2 bg-[#ea580c] text-white rounded-lg text-sm font-medium hover:bg-[#ea580c] disabled:opacity-50">
+                  className="px-4 py-2 bg-accent-hover text-white rounded-lg text-sm font-medium hover:bg-accent-hover disabled:opacity-50">
                   {isPending ? "Saving..." : "Save Changes"}
                 </button>
                 <button type="button" onClick={() => setEditing(false)}
@@ -196,7 +196,7 @@ export function AccountDetail({ account, linkedOperators, unlinkedOperators }: {
               </div>
               <div className="flex items-center gap-1">
                 <button onClick={() => setEditing(true)}
-                  className="p-2 text-gray-400 hover:text-[#ea580c] rounded-lg hover:bg-orange-50" title="Edit account">
+                  className="p-2 text-gray-400 hover:text-accent-hover rounded-lg hover:bg-orange-50" title="Edit account">
                   <Edit className="h-4 w-4" />
                 </button>
                 <button onClick={handleDelete}
@@ -217,7 +217,7 @@ export function AccountDetail({ account, linkedOperators, unlinkedOperators }: {
                 {linkedOperators.map((op) => (
                   <div key={op.id} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                     <div className="flex items-center gap-3">
-                      <Link href={`/directory/${op.slug}`} className="font-medium text-sm text-gray-900 hover:text-[#ea580c]">
+                      <Link href={`/directory/${op.slug}`} className="font-medium text-sm text-gray-900 hover:text-accent-hover">
                         {op.name}
                       </Link>
                       <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${
@@ -259,7 +259,7 @@ export function AccountDetail({ account, linkedOperators, unlinkedOperators }: {
                             </span>
                           )}
                           <button onClick={() => setEditingOpId(op.id)}
-                            className="p-1.5 text-gray-400 hover:text-[#ea580c] rounded hover:bg-orange-50" title="Edit billing">
+                            className="p-1.5 text-gray-400 hover:text-accent-hover rounded hover:bg-orange-50" title="Edit billing">
                             <Edit className="h-3 w-3" />
                           </button>
                           <button onClick={() => handleUnlink(op.id)} disabled={isPending}
@@ -285,7 +285,7 @@ export function AccountDetail({ account, linkedOperators, unlinkedOperators }: {
                     key={op.id}
                     onClick={() => handleLink(op.id)}
                     disabled={isPending}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-gray-600 bg-gray-50 border border-gray-200 rounded-lg hover:border-[#ea580c] hover:text-[#ea580c] transition-colors disabled:opacity-50"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-gray-600 bg-gray-50 border border-gray-200 rounded-lg hover:border-accent-hover hover:text-accent-hover transition-colors disabled:opacity-50"
                   >
                     <Link2 className="h-3 w-3" />
                     {op.name}

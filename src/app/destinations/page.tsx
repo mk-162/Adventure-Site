@@ -30,12 +30,12 @@ export default async function DestinationsPage() {
         {/* Header */}
         <div className="mb-8">
           <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
-            <Link href="/" className="hover:text-[#1e3a4c]">Home</Link>
+            <Link href="/" className="hover:text-primary">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <span className="text-[#1e3a4c] font-medium">Destinations</span>
+            <span className="text-primary font-medium">Destinations</span>
           </div>
           
-          <h1 className="text-3xl lg:text-4xl font-bold text-[#1e3a4c] mb-3">
+          <h1 className="text-3xl lg:text-4xl font-bold text-primary mb-3">
             Where in Wales
           </h1>
           <p className="text-gray-600 max-w-2xl">
@@ -56,7 +56,7 @@ export default async function DestinationsPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6 lg:p-10">
-              <span className="bg-[#ea580c] text-white text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block">
+              <span className="bg-accent-hover text-white text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block">
                 Featured
               </span>
               <h2 className="text-3xl lg:text-4xl font-black text-white mb-2">{regions[0].name}</h2>
@@ -70,7 +70,7 @@ export default async function DestinationsPage() {
         {/* Explore the Map Section */}
         <section className="mb-12">
           <div className="mb-6">
-            <h2 className="text-2xl lg:text-3xl font-bold text-[#1e3a4c] mb-2">
+            <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-2">
               Explore the Map
             </h2>
             <p className="text-gray-600">
@@ -121,8 +121,8 @@ export default async function DestinationsPage() {
 
         {/* CTA & Newsletter Section */}
         <div className="mt-12 space-y-8">
-          <div className="bg-[#1e3a4c] rounded-2xl p-8 lg:p-12 text-center">
-            <Compass className="w-12 h-12 text-[#ea580c] mx-auto mb-4" />
+          <div className="bg-primary rounded-2xl p-8 lg:p-12 text-center">
+            <Compass className="w-12 h-12 text-accent-hover mx-auto mb-4" />
             <h2 className="text-2xl lg:text-3xl font-bold text-white mb-3">
               Not sure which region?
             </h2>
@@ -131,7 +131,7 @@ export default async function DestinationsPage() {
             </p>
             <Link
               href="/trip-planner"
-              className="inline-flex items-center gap-2 bg-[#ea580c] text-white font-bold py-3 px-6 rounded-xl hover:bg-[#ea580c]/90 transition-colors"
+              className="inline-flex items-center gap-2 bg-accent-hover text-white font-bold py-3 px-6 rounded-xl hover:bg-accent-hover/90 transition-colors"
             >
               Start Planning
               <ChevronRight className="w-5 h-5" />

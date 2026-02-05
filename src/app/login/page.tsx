@@ -71,17 +71,17 @@ function LoginForm() {
 
   if (submitted) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#1e3a4c]/5 to-white px-4">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-primary/5 to-white px-4">
         <div className="max-w-md w-full bg-white p-8 rounded-2xl shadow-lg text-center">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <Mail className="w-8 h-8 text-green-600" />
           </div>
-          <h2 className="text-2xl font-bold text-[#1e3a4c] mb-2">Check your email</h2>
+          <h2 className="text-2xl font-bold text-primary mb-2">Check your email</h2>
           <p className="text-slate-600 mb-6">
             We&apos;ve sent a sign-in link to <strong>{email}</strong>. Click it to access your adventures.
           </p>
           <p className="text-sm text-slate-400">Didn&apos;t get it? Check spam or{" "}
-            <button onClick={() => setSubmitted(false)} className="text-[#ea580c] hover:underline font-medium">
+            <button onClick={() => setSubmitted(false)} className="text-accent-hover hover:underline font-medium">
               try again
             </button>
           </p>
@@ -91,11 +91,11 @@ function LoginForm() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#1e3a4c]/5 to-white px-4 py-12">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-primary/5 to-white px-4 py-12">
       <div className="max-w-4xl w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 bg-white rounded-2xl shadow-lg overflow-hidden">
           {/* Left Column: Benefits */}
-          <div className="bg-gradient-to-br from-[#1e3a4c] to-[#2d5a73] p-8 md:p-10 flex flex-col justify-center">
+          <div className="bg-gradient-to-br from-primary to-[#2d5a73] p-8 md:p-10 flex flex-col justify-center">
             <div className="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center mb-6">
               <Mountain className="w-7 h-7 text-white" />
             </div>
@@ -122,7 +122,7 @@ function LoginForm() {
           <div className="p-8 md:p-10">
           {/* Header */}
           <div className="text-center mb-8">
-            <h1 className="text-2xl font-bold text-[#1e3a4c]">
+            <h1 className="text-2xl font-bold text-primary">
               {isNewUser ? "Create Your Account" : "Welcome Back"}
             </h1>
             <p className="text-slate-500 mt-1">
@@ -173,7 +173,7 @@ function LoginForm() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 placeholder="you@example.com"
-                className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-slate-900"
+                className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-hover focus:border-transparent text-slate-900"
               />
             </div>
 
@@ -189,7 +189,7 @@ function LoginForm() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="What should we call you?"
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-slate-900"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-hover focus:border-transparent text-slate-900"
                   />
                 </div>
 
@@ -198,7 +198,7 @@ function LoginForm() {
                     type="checkbox"
                     checked={newsletter}
                     onChange={(e) => setNewsletter(e.target.checked)}
-                    className="mt-1 w-4 h-4 text-[#ea580c] border-slate-300 rounded focus:ring-[#ea580c]"
+                    className="mt-1 w-4 h-4 text-accent-hover border-slate-300 rounded focus:ring-accent-hover"
                   />
                   <span className="text-sm text-slate-600">
                     Send me the best Welsh adventures, events, and deals. No spam, unsubscribe anytime.
@@ -210,7 +210,7 @@ function LoginForm() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-[#ea580c] hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-lg transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+              className="w-full bg-accent-hover hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-lg transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
             >
               {loading ? (
                 "Sending link..."
@@ -227,14 +227,14 @@ function LoginForm() {
             {isNewUser ? (
               <>
                 Already have an account?{" "}
-                <button onClick={() => setIsNewUser(false)} className="text-[#ea580c] font-medium hover:underline">
+                <button onClick={() => setIsNewUser(false)} className="text-accent-hover font-medium hover:underline">
                   Sign in
                 </button>
               </>
             ) : (
               <>
                 New here?{" "}
-                <button onClick={() => setIsNewUser(true)} className="text-[#ea580c] font-medium hover:underline">
+                <button onClick={() => setIsNewUser(true)} className="text-accent-hover font-medium hover:underline">
                   Create an account
                 </button>
               </>

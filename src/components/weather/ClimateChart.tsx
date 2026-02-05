@@ -112,7 +112,7 @@ export function ClimateChart({ regionSlug, compact = false }: ClimateChartProps)
       )}
     >
       <div className="mb-4">
-        <h3 className={clsx("font-bold text-[#1e3a4c]", compact ? "text-sm" : "text-base")}>
+        <h3 className={clsx("font-bold text-primary", compact ? "text-sm" : "text-base")}>
           Climate Overview
         </h3>
         <p className={clsx("text-gray-500", compact ? "text-xs" : "text-sm")}>
@@ -204,7 +204,7 @@ export function ClimateChart({ regionSlug, compact = false }: ClimateChartProps)
               </button>
 
               {/* Header */}
-              <p className="font-bold text-[#1e3a4c] text-sm mb-2.5">{m.name}</p>
+              <p className="font-bold text-primary text-sm mb-2.5">{m.name}</p>
 
               {/* Stats grid */}
               <div className="space-y-2 text-xs">
@@ -276,7 +276,7 @@ export function ClimateChart({ regionSlug, compact = false }: ClimateChartProps)
               })
               .join(" ")}
             fill="none"
-            stroke="#ea580c"
+            stroke="var(--color-accent)"
             strokeWidth={compact ? "2" : "3"}
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -308,7 +308,7 @@ export function ClimateChart({ regionSlug, compact = false }: ClimateChartProps)
           <span className="text-gray-600">Rainfall</span>
         </div>
         <div className="flex items-center gap-1">
-          <div className="w-4 h-0.5 bg-[#ea580c] rounded" />
+          <div className="w-4 h-0.5 bg-accent-hover rounded" />
           <span className="text-gray-600">Max temp</span>
         </div>
         <div className="flex items-center gap-1">

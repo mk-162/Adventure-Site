@@ -573,11 +573,11 @@ export default async function RegionPage({ params }: RegionPageProps) {
         {/* Empty Region State */}
         {!hasContent && (
           <div className="mb-12">
-            <div className="bg-gradient-to-br from-[#1e3a4c]/5 to-[#ea580c]/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#ea580c]/10 mb-6">
-                <Compass className="w-8 h-8 text-[#ea580c]" />
+            <div className="bg-gradient-to-br from-primary/5 to-accent-hover/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent-hover/10 mb-6">
+                <Compass className="w-8 h-8 text-accent-hover" />
               </div>
-              <h2 className="text-2xl lg:text-3xl font-black text-[#1e3a4c] mb-3">
+              <h2 className="text-2xl lg:text-3xl font-black text-primary mb-3">
                 We&apos;re still exploring {region.name}
               </h2>
               <p className="text-gray-600 text-base lg:text-lg max-w-2xl mx-auto mb-8">
@@ -590,7 +590,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
                   <Link
                     key={r.slug}
                     href={`/${r.slug}`}
-                    className="group flex flex-col items-center gap-2 p-4 bg-white rounded-xl border border-gray-200 hover:border-[#1e3a4c]/30 hover:shadow-md transition-all"
+                    className="group flex flex-col items-center gap-2 p-4 bg-white rounded-xl border border-gray-200 hover:border-primary/30 hover:shadow-md transition-all"
                   >
                     <div className="w-12 h-12 rounded-full bg-gray-100 overflow-hidden">
                       <img 
@@ -599,7 +599,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
                         src={`/images/regions/${r.slug}-hero.jpg`}
                       />
                     </div>
-                    <span className="text-sm font-bold text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors">
+                    <span className="text-sm font-bold text-primary group-hover:text-accent-hover transition-colors">
                       {r.name}
                     </span>
                   </Link>
@@ -609,14 +609,14 @@ export default async function RegionPage({ params }: RegionPageProps) {
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Link
                   href="/destinations"
-                  className="inline-flex items-center justify-center gap-2 bg-[#1e3a4c] text-white font-bold py-3 px-6 rounded-full hover:bg-[#2d5568] transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-primary text-white font-bold py-3 px-6 rounded-full hover:bg-[#2d5568] transition-colors"
                 >
                   Browse All Regions
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
                   href="/activities"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-[#1e3a4c] font-bold py-3 px-6 rounded-full border border-gray-200 hover:border-[#1e3a4c]/30 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-primary font-bold py-3 px-6 rounded-full border border-gray-200 hover:border-primary/30 transition-colors"
                 >
                   View All Activities
                 </Link>
@@ -635,8 +635,8 @@ export default async function RegionPage({ params }: RegionPageProps) {
             {activities.length > 0 && (
               <section id="activities" className="scroll-mt-32">
                 <div className="flex justify-between items-end mb-4 lg:mb-5">
-                  <h3 className="text-lg lg:text-xl font-bold text-[#1e3a4c]">Top Experiences</h3>
-                  <Link href={`/${regionSlug}/things-to-do`} className="text-[#1e3a4c] text-sm font-bold hover:underline flex items-center gap-1">
+                  <h3 className="text-lg lg:text-xl font-bold text-primary">Top Experiences</h3>
+                  <Link href={`/${regionSlug}/things-to-do`} className="text-primary text-sm font-bold hover:underline flex items-center gap-1">
                     View all <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -656,14 +656,14 @@ export default async function RegionPage({ params }: RegionPageProps) {
 
             {/* Intro */}
             <section>
-              <h3 className="text-lg lg:text-xl font-bold mb-3 text-[#1e3a4c]">Welcome to {region.name}</h3>
+              <h3 className="text-lg lg:text-xl font-bold mb-3 text-primary">Welcome to {region.name}</h3>
               <p className="text-gray-600 leading-relaxed text-sm lg:text-base">
                  {introText}
               </p>
               
               {proTips.length > 0 && (
-                <div className="flex items-start gap-3 bg-[#1e3a4c]/5 p-4 rounded-xl border-l-4 border-[#1e3a4c] mt-4">
-                  <CheckCircle className="w-5 h-5 text-[#1e3a4c] shrink-0 mt-0.5" />
+                <div className="flex items-start gap-3 bg-primary/5 p-4 rounded-xl border-l-4 border-primary mt-4">
+                  <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                   <p className="text-sm text-gray-700">
                     <strong>Top Tip:</strong> {proTips[0]}
                   </p>
@@ -695,8 +695,8 @@ export default async function RegionPage({ params }: RegionPageProps) {
             {accommodation.length > 0 && (
               <section id="accommodation" className="scroll-mt-32">
                 <div className="flex justify-between items-end mb-4 lg:mb-5">
-                  <h3 className="text-lg lg:text-xl font-bold text-[#1e3a4c]">Where to Stay</h3>
-                  <Link href={`/${regionSlug}/where-to-stay`} className="text-[#1e3a4c] text-sm font-bold hover:underline flex items-center gap-1">
+                  <h3 className="text-lg lg:text-xl font-bold text-primary">Where to Stay</h3>
+                  <Link href={`/${regionSlug}/where-to-stay`} className="text-primary text-sm font-bold hover:underline flex items-center gap-1">
                     View all <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -717,7 +717,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
 
             {/* Interactive Map Section */}
             <section id="map" className="scroll-mt-32">
-              <h3 className="text-lg lg:text-xl font-bold mb-4 text-[#1e3a4c]">Explore the Region</h3>
+              <h3 className="text-lg lg:text-xl font-bold mb-4 text-primary">Explore the Region</h3>
               <RegionMap
                 markers={mapMarkers}
                 center={region.lat && region.lng ? [parseFloat(String(region.lat)), parseFloat(String(region.lng))] : undefined}
@@ -749,13 +749,13 @@ export default async function RegionPage({ params }: RegionPageProps) {
 
             {/* Getting There — Transport Section */}
             <section id="getting-there" className="scroll-mt-32">
-              <h3 className="text-lg lg:text-xl font-bold mb-4 text-[#1e3a4c]">Getting There</h3>
+              <h3 className="text-lg lg:text-xl font-bold mb-4 text-primary">Getting There</h3>
               <TransportSection regionSlug={regionSlug} descriptionText={gettingThere} />
             </section>
 
             {/* Plan Your Visit Accordion */}
             <section>
-              <h3 className="text-lg lg:text-xl font-bold mb-4 text-[#1e3a4c]">Plan Your Visit</h3>
+              <h3 className="text-lg lg:text-xl font-bold mb-4 text-primary">Plan Your Visit</h3>
               <div className="flex flex-col gap-3">
                 <AccordionItem 
                     icon={Cloud} 
@@ -788,8 +788,8 @@ export default async function RegionPage({ params }: RegionPageProps) {
             {/* Local Businesses */}
             <div id="directory" className="scroll-mt-32 bg-white p-5 lg:p-6 rounded-2xl border border-gray-200 shadow-sm">
               <div className="flex justify-between items-center mb-4">
-                <h3 className="text-lg font-bold text-[#1e3a4c]">Local Businesses</h3>
-                <Link href="/directory" className="text-xs font-bold text-[#1e3a4c] hover:underline">View all</Link>
+                <h3 className="text-lg font-bold text-primary">Local Businesses</h3>
+                <Link href="/directory" className="text-xs font-bold text-primary hover:underline">View all</Link>
               </div>
               <div className="flex flex-col gap-4">
                 {operators.map((op) => (
@@ -798,13 +798,13 @@ export default async function RegionPage({ params }: RegionPageProps) {
                             {op.logoUrl ? (
                                 <img alt={op.name} className="w-full h-full object-cover" src={op.logoUrl} />
                             ) : (
-                                <div className="w-full h-full flex items-center justify-center bg-[#1e3a4c]/10 text-[#1e3a4c] font-bold">
+                                <div className="w-full h-full flex items-center justify-center bg-primary/10 text-primary font-bold">
                                     {op.name.charAt(0)}
                                 </div>
                             )}
                         </div>
                         <div className="flex-1 min-w-0">
-                            <p className="text-sm font-bold truncate text-[#1e3a4c]">{op.name}</p>
+                            <p className="text-sm font-bold truncate text-primary">{op.name}</p>
                             <div className="flex items-center gap-1">
                                 <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
                                 <span className="text-xs text-gray-500">{op.googleRating || "5.0"} ({op.reviewCount || 100} reviews)</span>
@@ -819,13 +819,13 @@ export default async function RegionPage({ params }: RegionPageProps) {
             </div>
 
             {/* Advertise CTA */}
-            <div className="relative overflow-hidden rounded-2xl bg-[#1e3a4c] text-white p-5 lg:p-6 shadow-md">
+            <div className="relative overflow-hidden rounded-2xl bg-primary text-white p-5 lg:p-6 shadow-md">
               <div className="absolute -right-4 -top-4 text-white/10 rotate-12">
                 <Users className="w-[120px] h-[120px] lg:w-[150px] lg:h-[150px]" />
               </div>
               <h4 className="text-lg font-bold mb-2 relative z-10">List Your Business</h4>
               <p className="text-sm text-blue-100 mb-4 relative z-10">Get discovered by visitors planning their {region.name} trip. Free listing available.</p>
-              <Link href="/advertise" className="block w-full bg-white text-[#1e3a4c] font-bold py-2.5 rounded-lg text-sm relative z-10 hover:bg-gray-100 transition-colors text-center">
+              <Link href="/advertise" className="block w-full bg-white text-primary font-bold py-2.5 rounded-lg text-sm relative z-10 hover:bg-gray-100 transition-colors text-center">
                 Learn More
               </Link>
             </div>
@@ -834,14 +834,14 @@ export default async function RegionPage({ params }: RegionPageProps) {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-[#ea580c] p-6 lg:p-10 text-center relative overflow-hidden">
+      <div className="bg-accent-hover p-6 lg:p-10 text-center relative overflow-hidden">
         <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
         <div className="relative z-10 flex flex-col items-center gap-4 max-w-xl mx-auto">
           <h2 className="text-white text-xl lg:text-2xl font-black leading-tight tracking-tight">
             Ready to plan your {region.name} adventure?
           </h2>
           <p className="text-white/80 text-sm font-medium">Create a custom itinerary in minutes.</p>
-          <button className="bg-[#1e3a4c] text-white text-sm lg:text-base font-bold py-3 lg:py-4 px-6 lg:px-8 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all flex items-center justify-center gap-2">
+          <button className="bg-primary text-white text-sm lg:text-base font-bold py-3 lg:py-4 px-6 lg:px-8 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all flex items-center justify-center gap-2">
             Start Planning
             <ArrowRight className="w-5 h-5" />
           </button>
@@ -857,9 +857,9 @@ function StatCard({ label, value, icon: Icon }: { label: string; value: number; 
     <div className="flex flex-col gap-1 rounded-xl p-4 lg:p-5 border border-gray-200 bg-white hover:shadow-md transition-shadow cursor-pointer group">
       <div className="flex justify-between items-start">
         <p className="text-gray-500 text-xs lg:text-sm font-medium">{label}</p>
-        <Icon className="text-[#1e3a4c] group-hover:scale-110 transition-transform w-5 h-5 lg:w-6 lg:h-6" />
+        <Icon className="text-primary group-hover:scale-110 transition-transform w-5 h-5 lg:w-6 lg:h-6" />
       </div>
-      <p className="text-xl lg:text-2xl font-bold text-[#1e3a4c]">{value}</p>
+      <p className="text-xl lg:text-2xl font-bold text-primary">{value}</p>
     </div>
   );
 }
@@ -868,7 +868,7 @@ function AnchorTab({ href, label }: { href: string; label: string }) {
   return (
     <a 
       href={href} 
-      className="flex flex-col items-center justify-center border-b-[3px] border-transparent pb-3 px-2 shrink-0 transition-colors text-gray-500 hover:text-[#1e3a4c] hover:border-[#1e3a4c]/40"
+      className="flex flex-col items-center justify-center border-b-[3px] border-transparent pb-3 px-2 shrink-0 transition-colors text-gray-500 hover:text-primary hover:border-primary/40"
     >
       <p className="text-sm font-bold whitespace-nowrap">{label}</p>
     </a>
@@ -881,8 +881,8 @@ function TabLink({ href, label, active = false }: { href: string; label: string;
       href={href} 
       className={`flex flex-col items-center justify-center border-b-[3px] pb-3 px-2 shrink-0 transition-colors ${
         active 
-        ? "border-[#1e3a4c] text-[#1e3a4c]" 
-        : "border-transparent text-gray-500 hover:text-[#1e3a4c]"
+        ? "border-primary text-primary" 
+        : "border-transparent text-gray-500 hover:text-primary"
       }`}
     >
       <p className="text-sm font-bold whitespace-nowrap">{label}</p>
@@ -892,7 +892,7 @@ function TabLink({ href, label, active = false }: { href: string; label: string;
 
 function MapFilterPill({ label, icon }: { label: string; icon: string }) {
   return (
-    <span className="px-3 py-1.5 rounded-full border border-gray-200 bg-white text-xs font-medium whitespace-nowrap cursor-pointer hover:bg-gray-50 text-[#1e3a4c]">
+    <span className="px-3 py-1.5 rounded-full border border-gray-200 bg-white text-xs font-medium whitespace-nowrap cursor-pointer hover:bg-gray-50 text-primary">
       {icon} {label}
     </span>
   );
@@ -903,10 +903,10 @@ function AccordionItem({ icon: Icon, title, content }: { icon: any; title: strin
     <details className="group bg-white rounded-xl overflow-hidden border border-gray-200">
       <summary className="flex items-center justify-between p-4 cursor-pointer list-none">
         <div className="flex items-center gap-3">
-          <div className="bg-[#1e3a4c]/10 p-2 rounded-lg">
-            <Icon className="text-[#1e3a4c] w-5 h-5" />
+          <div className="bg-primary/10 p-2 rounded-lg">
+            <Icon className="text-primary w-5 h-5" />
           </div>
-          <span className="font-bold text-[#1e3a4c]">{title}</span>
+          <span className="font-bold text-primary">{title}</span>
         </div>
         <ChevronRight className="text-gray-400 transition-transform group-open:rotate-90 w-5 h-5" />
       </summary>
@@ -934,12 +934,12 @@ function TransportSection({ regionSlug, descriptionText }: { regionSlug: string;
             <div className="bg-blue-50 p-2 rounded-lg">
               <Train className="w-5 h-5 text-blue-600" />
             </div>
-            <h4 className="font-bold text-sm text-[#1e3a4c]">By Train</h4>
+            <h4 className="font-bold text-sm text-primary">By Train</h4>
           </div>
           <ul className="space-y-2">
             {transport.trainStations.map((station) => (
               <li key={station.name} className="text-sm">
-                <span className="font-semibold text-[#1e3a4c]">{station.name}</span>
+                <span className="font-semibold text-primary">{station.name}</span>
                 <p className="text-gray-500 text-xs mt-0.5">{station.info}</p>
               </li>
             ))}
@@ -952,12 +952,12 @@ function TransportSection({ regionSlug, descriptionText }: { regionSlug: string;
             <div className="bg-orange-50 p-2 rounded-lg">
               <Bus className="w-5 h-5 text-orange-600" />
             </div>
-            <h4 className="font-bold text-sm text-[#1e3a4c]">By Bus</h4>
+            <h4 className="font-bold text-sm text-primary">By Bus</h4>
           </div>
           <ul className="space-y-2">
             {transport.busServices.map((service) => (
               <li key={service.name} className="text-sm">
-                <span className="font-semibold text-[#1e3a4c]">{service.name}</span>
+                <span className="font-semibold text-primary">{service.name}</span>
                 <p className="text-gray-500 text-xs mt-0.5">{service.info}</p>
               </li>
             ))}
@@ -970,12 +970,12 @@ function TransportSection({ regionSlug, descriptionText }: { regionSlug: string;
             <div className="bg-green-50 p-2 rounded-lg">
               <Car className="w-5 h-5 text-green-600" />
             </div>
-            <h4 className="font-bold text-sm text-[#1e3a4c]">By Car</h4>
+            <h4 className="font-bold text-sm text-primary">By Car</h4>
           </div>
           <ul className="space-y-2">
             {transport.driving.map((route) => (
               <li key={route.route} className="text-sm">
-                <span className="font-semibold text-[#1e3a4c]">{route.route}</span>
+                <span className="font-semibold text-primary">{route.route}</span>
                 <p className="text-gray-500 text-xs mt-0.5">{route.info}</p>
               </li>
             ))}
@@ -988,12 +988,12 @@ function TransportSection({ regionSlug, descriptionText }: { regionSlug: string;
             <div className="bg-purple-50 p-2 rounded-lg">
               <Plane className="w-5 h-5 text-purple-600" />
             </div>
-            <h4 className="font-bold text-sm text-[#1e3a4c]">By Air</h4>
+            <h4 className="font-bold text-sm text-primary">By Air</h4>
           </div>
           <ul className="space-y-2">
             {transport.airports.map((airport) => (
               <li key={airport.name} className="text-sm">
-                <span className="font-semibold text-[#1e3a4c]">{airport.name}</span>
+                <span className="font-semibold text-primary">{airport.name}</span>
                 <p className="text-gray-500 text-xs mt-0.5">{airport.info}</p>
               </li>
             ))}

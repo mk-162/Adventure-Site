@@ -28,10 +28,10 @@ export function ComboSpotCard({ spot, index }: { spot: ComboSpot; index: number 
       <div className="p-5 pb-3">
         <div className="flex items-start justify-between gap-3 mb-3">
           <div className="flex items-center gap-3">
-            <span className="w-8 h-8 rounded-full bg-[#1e3a4c] text-white text-sm font-bold flex items-center justify-center shrink-0">
+            <span className="w-8 h-8 rounded-full bg-primary text-white text-sm font-bold flex items-center justify-center shrink-0">
               {index + 1}
             </span>
-            <h3 className="font-bold text-[#1e3a4c] text-lg leading-tight">{spot.name}</h3>
+            <h3 className="font-bold text-primary text-lg leading-tight">{spot.name}</h3>
           </div>
           <span className={`px-2.5 py-1 rounded-full text-xs font-semibold shrink-0 ${getDifficultyColor(spot.difficulty)}`}>
             {spot.difficulty}
@@ -44,31 +44,31 @@ export function ComboSpotCard({ spot, index }: { spot: ComboSpot; index: number 
         <div className="flex flex-wrap gap-3 text-xs text-gray-500">
           {spot.duration && (
             <span className="flex items-center gap-1">
-              <Clock className="w-3.5 h-3.5 text-[#ea580c]" />
+              <Clock className="w-3.5 h-3.5 text-accent-hover" />
               {spot.duration}
             </span>
           )}
           {spot.distance && (
             <span className="flex items-center gap-1">
-              <Ruler className="w-3.5 h-3.5 text-[#ea580c]" />
+              <Ruler className="w-3.5 h-3.5 text-accent-hover" />
               {spot.distance}
             </span>
           )}
           {spot.elevationGain && (
             <span className="flex items-center gap-1">
-              <TrendingUp className="w-3.5 h-3.5 text-[#ea580c]" />
+              <TrendingUp className="w-3.5 h-3.5 text-accent-hover" />
               ↑{spot.elevationGain}
             </span>
           )}
           {spot.estimatedCost && (
             <span className="flex items-center gap-1">
-              <PoundSterling className="w-3.5 h-3.5 text-[#ea580c]" />
+              <PoundSterling className="w-3.5 h-3.5 text-accent-hover" />
               {spot.estimatedCost}
             </span>
           )}
           {spot.bestSeason && (
             <span className="flex items-center gap-1">
-              <Calendar className="w-3.5 h-3.5 text-[#ea580c]" />
+              <Calendar className="w-3.5 h-3.5 text-accent-hover" />
               {spot.bestSeason}
             </span>
           )}
@@ -91,7 +91,7 @@ export function ComboSpotCard({ spot, index }: { spot: ComboSpot; index: number 
             href={`https://www.google.com/maps/dir/?api=1&destination=${spot.startPoint.lat},${spot.startPoint.lng}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-xs font-medium text-[#1e3a4c] hover:text-[#ea580c] transition-colors"
+            className="inline-flex items-center gap-1.5 text-xs font-medium text-primary hover:text-accent-hover transition-colors"
           >
             <MapPin className="w-3.5 h-3.5" />
             Get directions to {spot.startPoint.name}

@@ -152,7 +152,7 @@ export function ScenicGallery({ regionSlug, regionName }: ScenicGalleryProps) {
   return (
     <>
       <section className="mb-8 lg:mb-10">
-        <h3 className="text-lg lg:text-xl font-bold mb-4 text-[#1e3a4c]">
+        <h3 className="text-lg lg:text-xl font-bold mb-4 text-primary">
           Discover {regionName}
         </h3>
         

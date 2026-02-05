@@ -129,16 +129,16 @@ export default async function AnswersPage() {
           <div className="mb-8">
             {/* Breadcrumbs */}
             <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
-              <Link href="/" className="hover:text-[#1e3a4c]">
+              <Link href="/" className="hover:text-primary">
                 Home
               </Link>
               <ChevronRight className="w-4 h-4" />
-              <span className="text-[#1e3a4c] font-medium">
+              <span className="text-primary font-medium">
                 Answers &amp; Guides
               </span>
             </div>
 
-            <h1 className="text-3xl lg:text-4xl font-bold text-[#1e3a4c] mb-3">
+            <h1 className="text-3xl lg:text-4xl font-bold text-primary mb-3">
               Quick Answers
             </h1>
             <p className="text-gray-600 max-w-2xl">

@@ -22,14 +22,14 @@ export async function sendMagicLink({
 
   const html = `
     <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
-      <div style="background: #1e3a4c; padding: 24px; text-align: center;">
+      <div style="background: var(--color-primary); padding: 24px; text-align: center;">
         <h1 style="color: white; margin: 0;">Adventure Wales</h1>
       </div>
       <div style="padding: 32px; background: #f9fafb;">
-        <h2 style="color: #1e3a4c;">${purpose === "claim" ? "Verify Your Listing" : "Sign In"}</h2>
+        <h2 style="color: var(--color-primary);">${purpose === "claim" ? "Verify Your Listing" : "Sign In"}</h2>
         <p>Hi! Click the button below to ${purpose === "claim" ? "verify and manage" : "access"} the <strong>${operatorName}</strong> listing on Adventure Wales.</p>
         <div style="text-align: center; margin: 32px 0;">
-          <a href="${url}" style="background: #ea580c; color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
+          <a href="${url}" style="background: var(--color-accent); color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
             ${purpose === "claim" ? "Verify My Listing →" : "Sign In →"}
           </a>
         </div>

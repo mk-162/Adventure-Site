@@ -38,7 +38,7 @@ export default function RootLayout({
       <body className={`${font.variable} font-sans antialiased text-slate-900 bg-slate-50`}>
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:top-4 focus:left-4 focus:px-4 focus:py-2 focus:bg-[#1e3a4c] focus:text-white focus:rounded-lg focus:font-bold focus:text-sm focus:shadow-lg"
+          className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:top-4 focus:left-4 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg focus:font-bold focus:text-sm focus:shadow-lg"
         >
           Skip to main content
         </a>

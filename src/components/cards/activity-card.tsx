@@ -245,7 +245,7 @@ export function ActivityCard({
         {/* Content */}
         <div className="flex-1 p-4 flex flex-col justify-between">
           <div>
-            <h3 className="font-semibold text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors line-clamp-1">
+            <h3 className="font-semibold text-primary group-hover:text-accent-hover transition-colors line-clamp-1">
               {activity.name}
             </h3>
             {operator && (
@@ -253,7 +253,7 @@ export function ActivityCard({
                 <span className="text-gray-500 flex items-center gap-1">
                   {operator.name}
                   {operator.googleRating && (
-                    <span className="flex items-center text-[#ea580c] ml-1">
+                    <span className="flex items-center text-accent-hover ml-1">
                       <Star className="h-3 w-3 fill-current" />
                       {operator.googleRating}
                     </span>
@@ -329,7 +329,7 @@ export function ActivityCard({
 
       {/* Content */}
       <div className="p-4">
-        <h3 className="font-bold text-[#1e3a4c] mb-1 group-hover:text-[#ea580c] transition-colors line-clamp-1">
+        <h3 className="font-bold text-primary mb-1 group-hover:text-accent-hover transition-colors line-clamp-1">
           {activity.name}
         </h3>
 
@@ -338,7 +338,7 @@ export function ActivityCard({
             <span className="text-gray-500 flex items-center gap-1">
               {operator.name}
               {operator.googleRating && (
-                <span className="flex items-center text-[#ea580c] ml-0.5">
+                <span className="flex items-center text-accent-hover ml-0.5">
                   <Star className="h-3 w-3 fill-current" />
                   {operator.googleRating}
                 </span>

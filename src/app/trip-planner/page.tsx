@@ -32,7 +32,7 @@ export default async function TripPlannerPage() {
   ]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#1e3a4c] to-[#1e3a4c]/90 pt-8 pb-16">
+    <div className="min-h-screen bg-gradient-to-b from-primary to-primary/90 pt-8 pb-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mb-10">
@@ -56,12 +56,12 @@ export default async function TripPlannerPage() {
               {["Dates", "Region", "Interests", "Review"].map((step, i) => (
                 <div key={step} className="flex items-center">
                   <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
-                    i === 0 ? "bg-[#ea580c] text-white" : "bg-gray-200 text-gray-500"
+                    i === 0 ? "bg-accent-hover text-white" : "bg-gray-200 text-gray-500"
                   }`}>
                     {i + 1}
                   </div>
                   <span className={`ml-2 text-sm hidden sm:inline ${
-                    i === 0 ? "text-[#1e3a4c] font-medium" : "text-gray-400"
+                    i === 0 ? "text-primary font-medium" : "text-gray-400"
                   }`}>
                     {step}
                   </span>
@@ -74,8 +74,8 @@ export default async function TripPlannerPage() {
           <div className="p-6 sm:p-8">
             {/* Step 1: Dates */}
             <section className="mb-8">
-              <h2 className="text-xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                <Calendar className="w-5 h-5 text-[#ea580c]" />
+              <h2 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                <Calendar className="w-5 h-5 text-accent-hover" />
                 When are you visiting?
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -83,14 +83,14 @@ export default async function TripPlannerPage() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Start Date</label>
                   <input 
                     type="date" 
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#1e3a4c] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">End Date</label>
                   <input 
                     type="date" 
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#1e3a4c] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent"
                   />
                 </div>
               </div>
@@ -99,7 +99,7 @@ export default async function TripPlannerPage() {
                 {["Weekend", "1 Week", "2 Weeks"].map(opt => (
                   <button 
                     key={opt}
-                    className="px-3 py-1 text-sm bg-gray-100 hover:bg-[#1e3a4c]/10 rounded-full transition-colors"
+                    className="px-3 py-1 text-sm bg-gray-100 hover:bg-primary/10 rounded-full transition-colors"
                   >
                     {opt}
                   </button>
@@ -109,15 +109,15 @@ export default async function TripPlannerPage() {
 
             {/* Step 2: Region */}
             <section className="mb-8">
-              <h2 className="text-xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                <MapPin className="w-5 h-5 text-[#ea580c]" />
+              <h2 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                <MapPin className="w-5 h-5 text-accent-hover" />
                 Where do you want to go?
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {regions.slice(0, 6).map(region => (
                   <button
                     key={region.id}
-                    className="relative h-24 rounded-xl overflow-hidden group border-2 border-transparent hover:border-[#ea580c] transition-all"
+                    className="relative h-24 rounded-xl overflow-hidden group border-2 border-transparent hover:border-accent-hover transition-all"
                   >
                     <div 
                       className="absolute inset-0 bg-cover bg-center"
@@ -130,27 +130,27 @@ export default async function TripPlannerPage() {
                   </button>
                 ))}
               </div>
-              <button className="mt-3 text-sm text-[#1e3a4c] font-medium hover:underline">
+              <button className="mt-3 text-sm text-primary font-medium hover:underline">
                 + Show all regions
               </button>
             </section>
 
             {/* Step 3: Interests */}
             <section className="mb-8">
-              <h2 className="text-xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                <Heart className="w-5 h-5 text-[#ea580c]" />
+              <h2 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                <Heart className="w-5 h-5 text-accent-hover" />
                 What are you interested in?
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {activityTypes.slice(0, 9).map(type => (
                   <button
                     key={type.id}
-                    className="flex items-center gap-3 p-4 rounded-xl border border-gray-200 hover:border-[#ea580c] hover:bg-[#ea580c]/5 transition-all text-left"
+                    className="flex items-center gap-3 p-4 rounded-xl border border-gray-200 hover:border-accent-hover hover:bg-accent-hover/5 transition-all text-left"
                   >
-                    <div className="w-10 h-10 rounded-lg bg-[#1e3a4c]/10 flex items-center justify-center text-[#1e3a4c]">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
                       <Mountain className="w-5 h-5" />
                     </div>
-                    <span className="font-medium text-[#1e3a4c] text-sm">{type.name}</span>
+                    <span className="font-medium text-primary text-sm">{type.name}</span>
                   </button>
                 ))}
               </div>
@@ -158,15 +158,15 @@ export default async function TripPlannerPage() {
 
             {/* Step 4: Group */}
             <section className="mb-8">
-              <h2 className="text-xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                <Users className="w-5 h-5 text-[#ea580c]" />
+              <h2 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                <Users className="w-5 h-5 text-accent-hover" />
                 Who's coming?
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {["Solo", "Couple", "Family", "Group"].map(opt => (
                   <button
                     key={opt}
-                    className="p-4 rounded-xl border border-gray-200 hover:border-[#ea580c] hover:bg-[#ea580c]/5 transition-all font-medium text-[#1e3a4c]"
+                    className="p-4 rounded-xl border border-gray-200 hover:border-accent-hover hover:bg-accent-hover/5 transition-all font-medium text-primary"
                   >
                     {opt}
                   </button>
@@ -175,7 +175,7 @@ export default async function TripPlannerPage() {
             </section>
 
             {/* Generate Button */}
-            <button className="w-full bg-[#ea580c] hover:bg-[#ea580c]/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-[#ea580c]/30 transition-all flex items-center justify-center gap-2">
+            <button className="w-full bg-accent-hover hover:bg-accent-hover/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-accent-hover/30 transition-all flex items-center justify-center gap-2">
               <Sparkles className="w-5 h-5" />
               Generate My Itinerary
             </button>

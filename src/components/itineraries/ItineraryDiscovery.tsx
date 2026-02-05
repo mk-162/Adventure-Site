@@ -193,7 +193,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
         {/* HERO SECTION */}
         <div className="mb-12">
           <div className="text-center mb-8">
-            <h1 className="text-4xl lg:text-5xl font-bold text-[#1e3a4c] mb-4">
+            <h1 className="text-4xl lg:text-5xl font-bold text-primary mb-4">
               Multi-Day Road Trips & Itineraries
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -208,7 +208,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
               <select 
                 value={selectedRegion}
                 onChange={(e) => setSelectedRegion(e.target.value)}
-                className="flex-1 px-4 py-3 bg-gray-50 border-none rounded-xl text-[#1e3a4c] font-medium focus:ring-2 focus:ring-[#ea580c] focus:bg-white transition-all"
+                className="flex-1 px-4 py-3 bg-gray-50 border-none rounded-xl text-primary font-medium focus:ring-2 focus:ring-accent-hover focus:bg-white transition-all"
               >
                 <option value="">All Regions</option>
                 {regions.map((r) => (
@@ -220,7 +220,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
               <select 
                 value={selectedDifficulty}
                 onChange={(e) => setSelectedDifficulty(e.target.value)}
-                className="flex-1 px-4 py-3 bg-gray-50 border-none rounded-xl text-[#1e3a4c] font-medium focus:ring-2 focus:ring-[#ea580c] focus:bg-white transition-all"
+                className="flex-1 px-4 py-3 bg-gray-50 border-none rounded-xl text-primary font-medium focus:ring-2 focus:ring-accent-hover focus:bg-white transition-all"
               >
                 <option value="">Any Difficulty</option>
                 <option value="easy">Easy</option>
@@ -245,8 +245,8 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
               className={cn(
                 "flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all",
                 viewMode === "grid" 
-                  ? "bg-white text-[#1e3a4c] shadow-sm" 
-                  : "text-gray-500 hover:text-[#1e3a4c]"
+                  ? "bg-white text-primary shadow-sm" 
+                  : "text-gray-500 hover:text-primary"
               )}
             >
               <Grid className="w-4 h-4" />
@@ -257,8 +257,8 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
               className={cn(
                 "flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all",
                 viewMode === "map" 
-                  ? "bg-white text-[#1e3a4c] shadow-sm" 
-                  : "text-gray-500 hover:text-[#1e3a4c]"
+                  ? "bg-white text-primary shadow-sm" 
+                  : "text-gray-500 hover:text-primary"
               )}
             >
               <MapIcon className="w-4 h-4" />
@@ -281,7 +281,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
             
             {/* Featured Itinerary Hero Card */}
             {featuredItinerary && (
-              <div className="relative rounded-3xl overflow-hidden bg-[#1e3a4c] text-white shadow-2xl">
+              <div className="relative rounded-3xl overflow-hidden bg-primary text-white shadow-2xl">
                 <div className="grid lg:grid-cols-2">
                   <div className="relative h-64 lg:h-auto min-h-[400px]">
                     <div 
@@ -290,12 +290,12 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
                         backgroundImage: `url('${featuredItinerary.region ? `/images/regions/${featuredItinerary.region.slug}-hero.jpg` : '/images/placeholder-hero.jpg'}')` 
                       }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#1e3a4c]/80 to-transparent lg:hidden" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent lg:hidden" />
                   </div>
                   
                   <div className="p-8 lg:p-12 flex flex-col justify-center">
                     <div className="flex items-center gap-3 mb-6">
-                      <span className="bg-[#ea580c] text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+                      <span className="bg-accent-hover text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
                         Featured Adventure
                       </span>
                       {featuredItinerary.region && (
@@ -319,7 +319,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
                     <div className="grid grid-cols-2 gap-6 mb-8">
                        <div className="flex items-center gap-3">
                          <div className="bg-white/10 p-2 rounded-lg">
-                           <Clock className="w-5 h-5 text-[#ea580c]" />
+                           <Clock className="w-5 h-5 text-accent-hover" />
                          </div>
                          <div>
                            <div className="text-xs text-gray-400 uppercase tracking-wider">Duration</div>
@@ -329,7 +329,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
                        
                        <div className="flex items-center gap-3">
                          <div className="bg-white/10 p-2 rounded-lg">
-                           <Mountain className="w-5 h-5 text-[#ea580c]" />
+                           <Mountain className="w-5 h-5 text-accent-hover" />
                          </div>
                          <div>
                            <div className="text-xs text-gray-400 uppercase tracking-wider">Difficulty</div>
@@ -340,7 +340,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
                        {featuredItinerary.priceEstimateFrom && (
                          <div className="flex items-center gap-3">
                            <div className="bg-white/10 p-2 rounded-lg">
-                             <div className="w-5 h-5 flex items-center justify-center text-[#ea580c] font-bold">£</div>
+                             <div className="w-5 h-5 flex items-center justify-center text-accent-hover font-bold">£</div>
                            </div>
                            <div>
                              <div className="text-xs text-gray-400 uppercase tracking-wider">From</div>
@@ -352,7 +352,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
                        {featuredItinerary.bestSeason && (
                          <div className="flex items-center gap-3">
                            <div className="bg-white/10 p-2 rounded-lg">
-                             <Calendar className="w-5 h-5 text-[#ea580c]" />
+                             <Calendar className="w-5 h-5 text-accent-hover" />
                            </div>
                            <div>
                              <div className="text-xs text-gray-400 uppercase tracking-wider">Best Season</div>
@@ -364,7 +364,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
                     
                     <Link 
                       href={`/itineraries/${featuredItinerary.slug}`}
-                      className="inline-flex items-center gap-2 bg-[#ea580c] text-white font-bold py-4 px-8 rounded-xl hover:bg-[#ea580c] transition-colors self-start"
+                      className="inline-flex items-center gap-2 bg-accent-hover text-white font-bold py-4 px-8 rounded-xl hover:bg-accent-hover transition-colors self-start"
                     >
                       View Itinerary
                       <ChevronRight className="w-5 h-5" />
@@ -401,7 +401,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
                      setSelectedDuration("");
                      setSelectedBudget("");
                    }}
-                   className="text-[#ea580c] font-medium hover:underline"
+                   className="text-accent-hover font-medium hover:underline"
                  >
                    Clear all filters
                  </button>

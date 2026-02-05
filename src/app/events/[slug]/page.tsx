@@ -85,7 +85,7 @@ export default async function EventPage({ params }: Props) {
 
       <div className="min-h-screen bg-gray-50">
         {/* Hero */}
-        <section className="relative h-[40vh] min-h-[300px] bg-[#1e3a4c]">
+        <section className="relative h-[40vh] min-h-[300px] bg-primary">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-40"
             style={{
@@ -104,7 +104,7 @@ export default async function EventPage({ params }: Props) {
 
             {/* Type badge */}
             {event.type && (
-              <span className="inline-flex items-center gap-1 bg-[#ea580c] text-white text-xs font-medium px-3 py-1 rounded-full w-fit mb-3">
+              <span className="inline-flex items-center gap-1 bg-accent-hover text-white text-xs font-medium px-3 py-1 rounded-full w-fit mb-3">
                 <CategoryIcon className="h-3 w-3" />
                 {event.type}
               </span>
@@ -149,7 +149,7 @@ export default async function EventPage({ params }: Props) {
             <div className="lg:col-span-2 space-y-8">
               {/* Date Banner */}
               <div className="bg-white rounded-xl p-6 shadow-sm flex flex-col sm:flex-row items-start sm:items-center gap-6">
-                <div className="flex-shrink-0 bg-[#1e3a4c] text-white rounded-xl p-4 text-center min-w-[100px]">
+                <div className="flex-shrink-0 bg-primary text-white rounded-xl p-4 text-center min-w-[100px]">
                   <div className="text-3xl font-bold">
                     {event.dateStart ? new Date(event.dateStart).getDate() : "TBC"}
                   </div>
@@ -165,7 +165,7 @@ export default async function EventPage({ params }: Props) {
                   )}
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-xl font-bold text-[#1e3a4c] mb-1">Event Date</h2>
+                  <h2 className="text-xl font-bold text-primary mb-1">Event Date</h2>
                   <p className="text-gray-600 mb-2">
                     {formatDate(event.dateStart)}
                     {event.dateEnd && event.dateEnd !== event.dateStart && (
@@ -185,7 +185,7 @@ export default async function EventPage({ params }: Props) {
 
               {/* Description */}
               <div className="bg-white rounded-xl p-6 shadow-sm">
-                <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">About This Event</h2>
+                <h2 className="text-xl font-bold text-primary mb-4">About This Event</h2>
                 <div className="prose prose-blue max-w-none text-gray-600 leading-relaxed">
                   <p>{event.description || `Join us for ${event.name}, an exciting ${event.type || 'adventure'} event in ${region?.name || 'Wales'}. Challenge yourself and experience the best of Welsh outdoor events.`}</p>
                 </div>
@@ -204,7 +204,7 @@ export default async function EventPage({ params }: Props) {
               {/* Weather Forecast (Conditional) */}
               {isWithin7Days && event.lat && event.lng && (
                 <div className="bg-white rounded-xl p-6 shadow-sm">
-                  <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Weather Forecast</h2>
+                  <h2 className="text-xl font-bold text-primary mb-4">Weather Forecast</h2>
                   <WeatherWidget
                     lat={Number(event.lat)}
                     lng={Number(event.lng)}
@@ -216,14 +216,14 @@ export default async function EventPage({ params }: Props) {
 
               {/* Event Details */}
               <div className="bg-white rounded-xl p-6 shadow-sm">
-                <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Event Details</h2>
+                <h2 className="text-xl font-bold text-primary mb-4">Event Details</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="flex items-start gap-3">
-                    <div className="p-2 bg-[#1e3a4c]/10 rounded-lg">
-                      <Calendar className="h-5 w-5 text-[#1e3a4c]" />
+                    <div className="p-2 bg-primary/10 rounded-lg">
+                      <Calendar className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <p className="font-medium text-[#1e3a4c]">Date</p>
+                      <p className="font-medium text-primary">Date</p>
                       <p className="text-gray-600 text-sm">
                         {formatShortDate(event.dateStart)}
                         {event.dateEnd && ` - ${formatShortDate(event.dateEnd)}`}
@@ -232,22 +232,22 @@ export default async function EventPage({ params }: Props) {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="p-2 bg-[#1e3a4c]/10 rounded-lg">
-                      <MapPin className="h-5 w-5 text-[#1e3a4c]" />
+                    <div className="p-2 bg-primary/10 rounded-lg">
+                      <MapPin className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <p className="font-medium text-[#1e3a4c]">Location</p>
+                      <p className="font-medium text-primary">Location</p>
                       <p className="text-gray-600 text-sm">{event.location || "TBC"}</p>
                     </div>
                   </div>
 
                   {event.capacity && (
                     <div className="flex items-start gap-3">
-                      <div className="p-2 bg-[#1e3a4c]/10 rounded-lg">
-                        <Users className="h-5 w-5 text-[#1e3a4c]" />
+                      <div className="p-2 bg-primary/10 rounded-lg">
+                        <Users className="h-5 w-5 text-primary" />
                       </div>
                       <div>
-                        <p className="font-medium text-[#1e3a4c]">Capacity</p>
+                        <p className="font-medium text-primary">Capacity</p>
                         <p className="text-gray-600 text-sm">{event.capacity} participants</p>
                       </div>
                     </div>
@@ -255,11 +255,11 @@ export default async function EventPage({ params }: Props) {
 
                   {event.registrationCost && (
                     <div className="flex items-start gap-3">
-                      <div className="p-2 bg-[#1e3a4c]/10 rounded-lg">
-                        <Ticket className="h-5 w-5 text-[#1e3a4c]" />
+                      <div className="p-2 bg-primary/10 rounded-lg">
+                        <Ticket className="h-5 w-5 text-primary" />
                       </div>
                       <div>
-                        <p className="font-medium text-[#1e3a4c]">Entry Fee</p>
+                        <p className="font-medium text-primary">Entry Fee</p>
                         <p className="text-gray-600 text-sm">From £{Number(event.registrationCost).toFixed(0)}</p>
                       </div>
                     </div>
@@ -267,11 +267,11 @@ export default async function EventPage({ params }: Props) {
 
                   {event.difficulty && (
                     <div className="flex items-start gap-3">
-                      <div className="p-2 bg-[#1e3a4c]/10 rounded-lg">
-                        <Mountain className="h-5 w-5 text-[#1e3a4c]" />
+                      <div className="p-2 bg-primary/10 rounded-lg">
+                        <Mountain className="h-5 w-5 text-primary" />
                       </div>
                       <div>
-                        <p className="font-medium text-[#1e3a4c]">Difficulty</p>
+                        <p className="font-medium text-primary">Difficulty</p>
                         <p className="text-gray-600 text-sm capitalize">{event.difficulty}</p>
                       </div>
                     </div>
@@ -282,7 +282,7 @@ export default async function EventPage({ params }: Props) {
               {/* Location Map */}
               {event.lat && event.lng && (
                 <div className="bg-white rounded-xl p-6 shadow-sm">
-                  <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Location</h2>
+                  <h2 className="text-xl font-bold text-primary mb-4">Location</h2>
                   <MapView
                     markers={[{
                       id: event.id,
@@ -306,7 +306,7 @@ export default async function EventPage({ params }: Props) {
                       href={`https://www.google.com/maps/dir/?api=1&destination=${event.lat},${event.lng}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-sm font-medium text-[#ea580c] hover:underline"
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-accent-hover hover:underline"
                     >
                       <Navigation className="h-4 w-4" />
                       Get Directions
@@ -323,7 +323,7 @@ export default async function EventPage({ params }: Props) {
                 {/* Price */}
                 {event.registrationCost && (
                   <div className="mb-4">
-                    <div className="text-2xl font-bold text-[#1e3a4c]">
+                    <div className="text-2xl font-bold text-primary">
                       £{Number(event.registrationCost).toFixed(0)}
                       <span className="text-base font-normal text-gray-500"> entry fee</span>
                     </div>
@@ -336,7 +336,7 @@ export default async function EventPage({ params }: Props) {
                     href={event.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full bg-[#ea580c] text-white font-semibold py-3 px-4 rounded-lg hover:bg-[#ea580c] transition-colors"
+                    className="flex items-center justify-center gap-2 w-full bg-accent-hover text-white font-semibold py-3 px-4 rounded-lg hover:bg-accent-hover transition-colors"
                   >
                     <Ticket className="h-5 w-5" />
                     Register Now
@@ -355,18 +355,18 @@ export default async function EventPage({ params }: Props) {
                 <div className="mt-6 pt-6 border-t space-y-3">
                   <div className="flex items-center justify-between text-sm">
                     <span className="text-gray-500">Event Type</span>
-                    <span className="font-medium text-[#1e3a4c]">{event.type || "Adventure"}</span>
+                    <span className="font-medium text-primary">{event.type || "Adventure"}</span>
                   </div>
                   {event.capacity && (
                     <div className="flex items-center justify-between text-sm">
                       <span className="text-gray-500">Capacity</span>
-                      <span className="font-medium text-[#1e3a4c]">{event.capacity}</span>
+                      <span className="font-medium text-primary">{event.capacity}</span>
                     </div>
                   )}
                   {region && (
                     <div className="flex items-center justify-between text-sm">
                       <span className="text-gray-500">Region</span>
-                      <Link href={`/${region.slug}`} className="font-medium text-[#ea580c] hover:underline">
+                      <Link href={`/${region.slug}`} className="font-medium text-accent-hover hover:underline">
                         {region.name}
                       </Link>
                     </div>
@@ -374,7 +374,7 @@ export default async function EventPage({ params }: Props) {
                   {event.ageRange && (
                     <div className="flex items-center justify-between text-sm">
                       <span className="text-gray-500">Age Range</span>
-                      <span className="font-medium text-[#1e3a4c] capitalize">{event.ageRange}</span>
+                      <span className="font-medium text-primary capitalize">{event.ageRange}</span>
                     </div>
                   )}
                 </div>
@@ -383,7 +383,7 @@ export default async function EventPage({ params }: Props) {
               {/* Where to Stay */}
               {nearbyAccommodation.length > 0 && (
                 <div className="bg-white rounded-xl p-6 shadow-sm">
-                  <h3 className="font-bold text-[#1e3a4c] mb-4">Where to Stay</h3>
+                  <h3 className="font-bold text-primary mb-4">Where to Stay</h3>
                   <div className="space-y-3">
                     {nearbyAccommodation.map(({ accommodation: acc }) => (
                       <Link
@@ -391,18 +391,18 @@ export default async function EventPage({ params }: Props) {
                         href={`/stay/${acc.slug}`}
                         className="flex items-center gap-3 p-2 -mx-2 rounded-lg hover:bg-gray-50 transition-colors"
                       >
-                        <div className="w-10 h-10 bg-[#1e3a4c]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <MapPin className="h-4 w-4 text-[#1e3a4c]" />
+                        <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <MapPin className="h-4 w-4 text-primary" />
                         </div>
                         <div className="min-w-0">
-                          <p className="font-medium text-sm text-[#1e3a4c] truncate">{acc.name}</p>
+                          <p className="font-medium text-sm text-primary truncate">{acc.name}</p>
                           <p className="text-xs text-gray-500 truncate">{acc.type || "Accommodation"}</p>
                         </div>
                       </Link>
                     ))}
                   </div>
                   {region && (
-                    <Link href={`/${region.slug}/stay`} className="block text-center text-sm text-[#ea580c] font-medium hover:underline mt-3 pt-3 border-t">
+                    <Link href={`/${region.slug}/stay`} className="block text-center text-sm text-accent-hover font-medium hover:underline mt-3 pt-3 border-t">
                       See all accommodation →
                     </Link>
                   )}
@@ -412,7 +412,7 @@ export default async function EventPage({ params }: Props) {
               {/* Things to Do */}
               {nearbyActivities.length > 0 && (
                 <div className="bg-white rounded-xl p-6 shadow-sm">
-                  <h3 className="font-bold text-[#1e3a4c] mb-4">While You&apos;re There</h3>
+                  <h3 className="font-bold text-primary mb-4">While You&apos;re There</h3>
                   <div className="space-y-3">
                     {nearbyActivities.map(({ activity: act, activityType }) => (
                       <Link
@@ -420,18 +420,18 @@ export default async function EventPage({ params }: Props) {
                         href={`/activities/${act.slug}`}
                         className="flex items-center gap-3 p-2 -mx-2 rounded-lg hover:bg-gray-50 transition-colors"
                       >
-                        <div className="w-10 h-10 bg-[#ea580c]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <Mountain className="h-4 w-4 text-[#ea580c]" />
+                        <div className="w-10 h-10 bg-accent-hover/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Mountain className="h-4 w-4 text-accent-hover" />
                         </div>
                         <div className="min-w-0">
-                          <p className="font-medium text-sm text-[#1e3a4c] truncate">{act.name}</p>
+                          <p className="font-medium text-sm text-primary truncate">{act.name}</p>
                           <p className="text-xs text-gray-500 truncate">{activityType?.name || "Activity"}</p>
                         </div>
                       </Link>
                     ))}
                   </div>
                   {region && (
-                    <Link href={`/${region.slug}/things-to-do`} className="block text-center text-sm text-[#ea580c] font-medium hover:underline mt-3 pt-3 border-t">
+                    <Link href={`/${region.slug}/things-to-do`} className="block text-center text-sm text-accent-hover font-medium hover:underline mt-3 pt-3 border-t">
                       More things to do →
                     </Link>
                   )}
@@ -439,19 +439,19 @@ export default async function EventPage({ params }: Props) {
               )}
 
               {/* Advertise */}
-              <div className="bg-gradient-to-br from-[#ea580c]/5 to-[#ea580c]/10 rounded-xl p-6 shadow-sm border border-[#ea580c]/20">
-                <h3 className="font-bold text-[#1e3a4c] mb-2">Promote Your Business</h3>
+              <div className="bg-gradient-to-br from-accent-hover/5 to-accent-hover/10 rounded-xl p-6 shadow-sm border border-accent-hover/20">
+                <h3 className="font-bold text-primary mb-2">Promote Your Business</h3>
                 <p className="text-sm text-gray-600 mb-3">Reach thousands of adventure seekers visiting this page.</p>
-                <Link href="/advertise" className="inline-flex items-center gap-1 text-[#ea580c] font-bold text-sm hover:underline">
+                <Link href="/advertise" className="inline-flex items-center gap-1 text-accent-hover font-bold text-sm hover:underline">
                   Advertise here →
                 </Link>
               </div>
 
               {/* Add Your Event CTA */}
-              <div className="bg-[#1e3a4c] rounded-xl p-6 shadow-sm text-center text-white">
+              <div className="bg-primary rounded-xl p-6 shadow-sm text-center text-white">
                  <h3 className="font-bold text-lg mb-2">Own this event?</h3>
                  <p className="text-sm text-gray-300 mb-4">Claim it to manage details and promote it to more people.</p>
-                 <Link href="/contact" className="text-[#ea580c] font-bold text-sm hover:underline">
+                 <Link href="/contact" className="text-accent-hover font-bold text-sm hover:underline">
                    Contact Us to Claim
                  </Link>
               </div>
@@ -465,8 +465,8 @@ export default async function EventPage({ params }: Props) {
           <section className="bg-white py-12">
             <div className="max-w-7xl mx-auto px-4">
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold text-[#1e3a4c]">More Events</h2>
-                <Link href="/events" className="text-[#ea580c] font-medium hover:underline">
+                <h2 className="text-2xl font-bold text-primary">More Events</h2>
+                <Link href="/events" className="text-accent-hover font-medium hover:underline">
                   View all events →
                 </Link>
               </div>
@@ -481,7 +481,7 @@ export default async function EventPage({ params }: Props) {
                       className="bg-gray-50 rounded-xl p-4 hover:shadow-md transition-shadow"
                     >
                       <div className="flex items-center gap-3 mb-3">
-                        <div className="bg-[#1e3a4c] text-white rounded-lg p-2 text-center min-w-[50px]">
+                        <div className="bg-primary text-white rounded-lg p-2 text-center min-w-[50px]">
                           <div className="text-lg font-bold">
                             {item.event.dateStart ? new Date(item.event.dateStart).getDate() : "?"}
                           </div>
@@ -493,9 +493,9 @@ export default async function EventPage({ params }: Props) {
                         </div>
                         <div>
                           {item.event.type && (
-                            <span className="text-xs text-[#ea580c] font-medium">{item.event.type}</span>
+                            <span className="text-xs text-accent-hover font-medium">{item.event.type}</span>
                           )}
-                          <h3 className="font-semibold text-[#1e3a4c] line-clamp-1">{item.event.name}</h3>
+                          <h3 className="font-semibold text-primary line-clamp-1">{item.event.name}</h3>
                         </div>
                       </div>
                       {item.event.location && (

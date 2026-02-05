@@ -8,14 +8,14 @@ export default function AboutPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-gray-500 mb-8">
-          <Link href="/" className="hover:text-[#1e3a4c]">Home</Link>
+          <Link href="/" className="hover:text-primary">Home</Link>
           <ChevronRight className="w-4 h-4" />
-          <span className="text-[#1e3a4c] font-medium">About</span>
+          <span className="text-primary font-medium">About</span>
         </div>
 
         {/* Hero Section */}
         <div className="mb-16">
-          <h1 className="text-4xl lg:text-5xl font-bold text-[#1e3a4c] mb-6">
+          <h1 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
             About Adventure Wales
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl">
@@ -27,13 +27,13 @@ export default function AboutPage() {
 
         {/* Mission Grid */}
         <section className="mb-16">
-          <h2 className="text-2xl lg:text-3xl font-bold text-[#1e3a4c] mb-8">Our Mission</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-8">Our Mission</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
-              <div className="w-12 h-12 bg-[#ea580c]/10 rounded-xl flex items-center justify-center mb-4">
-                <Mountain className="w-6 h-6 text-[#ea580c]" />
+              <div className="w-12 h-12 bg-accent-hover/10 rounded-xl flex items-center justify-center mb-4">
+                <Mountain className="w-6 h-6 text-accent-hover" />
               </div>
-              <h3 className="text-xl font-bold text-[#1e3a4c] mb-3">Discover Adventures</h3>
+              <h3 className="text-xl font-bold text-primary mb-3">Discover Adventures</h3>
               <p className="text-gray-600">
                 We showcase the best adventure activities Wales has to offer, from iconic 
                 experiences to hidden gems waiting to be explored.
@@ -41,10 +41,10 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
-              <div className="w-12 h-12 bg-[#ea580c]/10 rounded-xl flex items-center justify-center mb-4">
-                <Heart className="w-6 h-6 text-[#ea580c]" />
+              <div className="w-12 h-12 bg-accent-hover/10 rounded-xl flex items-center justify-center mb-4">
+                <Heart className="w-6 h-6 text-accent-hover" />
               </div>
-              <h3 className="text-xl font-bold text-[#1e3a4c] mb-3">Support Local</h3>
+              <h3 className="text-xl font-bold text-primary mb-3">Support Local</h3>
               <p className="text-gray-600">
                 We partner with local operators and communities to ensure your adventures 
                 support the people and places that make Wales special.
@@ -52,10 +52,10 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
-              <div className="w-12 h-12 bg-[#ea580c]/10 rounded-xl flex items-center justify-center mb-4">
-                <Target className="w-6 h-6 text-[#ea580c]" />
+              <div className="w-12 h-12 bg-accent-hover/10 rounded-xl flex items-center justify-center mb-4">
+                <Target className="w-6 h-6 text-accent-hover" />
               </div>
-              <h3 className="text-xl font-bold text-[#1e3a4c] mb-3">Plan with Ease</h3>
+              <h3 className="text-xl font-bold text-primary mb-3">Plan with Ease</h3>
               <p className="text-gray-600">
                 From detailed guides to real-time availability, we provide everything you 
                 need to plan the perfect Welsh adventure with confidence.
@@ -68,7 +68,7 @@ export default function AboutPage() {
         <section className="mb-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-2xl lg:text-3xl font-bold text-[#1e3a4c] mb-6">Our Story</h2>
+              <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-600">
                 <p>
                   Adventure Wales was born from a simple observation: Wales has some of the most 
@@ -86,7 +86,7 @@ export default function AboutPage() {
                   bodies to showcase responsible, sustainable adventures that celebrate Wales' 
                   natural beauty while supporting the communities that call it home.
                 </p>
-                <p className="text-[#1e3a4c] font-semibold">
+                <p className="text-primary font-semibold">
                   Whether you're planning your first visit or you're a seasoned adventurer looking 
                   for your next challenge, we're here to help you discover what makes Wales 
                   extraordinary.
@@ -128,34 +128,34 @@ export default function AboutPage() {
 
         {/* Values Section */}
         <section className="mb-16">
-          <h2 className="text-2xl lg:text-3xl font-bold text-[#1e3a4c] mb-8 text-center">What We Stand For</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-8 text-center">What We Stand For</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#1e3a4c] rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl text-white font-bold">🏔️</span>
               </div>
-              <h3 className="font-bold text-[#1e3a4c] mb-2">Authenticity</h3>
+              <h3 className="font-bold text-primary mb-2">Authenticity</h3>
               <p className="text-sm text-gray-600">Real experiences, vetted operators, honest reviews</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#1e3a4c] rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl text-white font-bold">🌱</span>
               </div>
-              <h3 className="font-bold text-[#1e3a4c] mb-2">Sustainability</h3>
+              <h3 className="font-bold text-primary mb-2">Sustainability</h3>
               <p className="text-sm text-gray-600">Protecting Wales for future generations</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#1e3a4c] rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl text-white font-bold">🤝</span>
               </div>
-              <h3 className="font-bold text-[#1e3a4c] mb-2">Community</h3>
+              <h3 className="font-bold text-primary mb-2">Community</h3>
               <p className="text-sm text-gray-600">Supporting local businesses and culture</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#1e3a4c] rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl text-white font-bold">✨</span>
               </div>
-              <h3 className="font-bold text-[#1e3a4c] mb-2">Excellence</h3>
+              <h3 className="font-bold text-primary mb-2">Excellence</h3>
               <p className="text-sm text-gray-600">Curating only the finest adventures</p>
             </div>
           </div>
@@ -163,7 +163,7 @@ export default function AboutPage() {
 
         {/* Team Section */}
         <section className="mb-16">
-          <div className="bg-gradient-to-br from-[#1e3a4c] to-[#2a5570] rounded-2xl p-8 lg:p-12 text-white text-center">
+          <div className="bg-gradient-to-br from-primary to-[#2a5570] rounded-2xl p-8 lg:p-12 text-white text-center">
             <Users className="w-12 h-12 mx-auto mb-6 opacity-90" />
             <h2 className="text-2xl lg:text-3xl font-bold mb-4">Meet Our Team</h2>
             <p className="text-lg opacity-90 max-w-2xl mx-auto mb-8">
@@ -192,7 +192,7 @@ export default function AboutPage() {
 
         {/* CTA Section */}
         <section className="text-center">
-          <h2 className="text-2xl lg:text-3xl font-bold text-[#1e3a4c] mb-4">
+          <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-4">
             Ready to Start Your Adventure?
           </h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -201,13 +201,13 @@ export default function AboutPage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               href="/activities"
-              className="px-8 py-3 bg-[#ea580c] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors"
+              className="px-8 py-3 bg-accent-hover text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors"
             >
               Explore Activities
             </Link>
             <Link
               href="/destinations"
-              className="px-8 py-3 bg-white text-[#1e3a4c] font-semibold rounded-xl border-2 border-[#1e3a4c] hover:bg-[#1e3a4c] hover:text-white transition-colors"
+              className="px-8 py-3 bg-white text-primary font-semibold rounded-xl border-2 border-primary hover:bg-primary hover:text-white transition-colors"
             >
               Browse Destinations
             </Link>

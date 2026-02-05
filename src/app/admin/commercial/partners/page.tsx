@@ -150,7 +150,7 @@ export default function PartnersPage() {
   if (loading) {
     return (
       <div className="flex items-center justify-center py-20">
-        <div className="animate-spin h-8 w-8 border-4 border-[#ea580c] border-t-transparent rounded-full" />
+        <div className="animate-spin h-8 w-8 border-4 border-accent-hover border-t-transparent rounded-full" />
       </div>
     );
   }
@@ -185,7 +185,7 @@ export default function PartnersPage() {
             placeholder="Search operators..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+            className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-accent-hover focus:border-transparent"
           />
         </div>
         <div className="relative">
@@ -193,7 +193,7 @@ export default function PartnersPage() {
           <select
             value={filter}
             onChange={(e) => setFilter(e.target.value as BookingPlatform | "all")}
-            className="pl-10 pr-8 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent appearance-none bg-white"
+            className="pl-10 pr-8 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-accent-hover focus:border-transparent appearance-none bg-white"
           >
             <option value="all">All Platforms</option>
             <option value="none">Not Mapped</option>
@@ -208,8 +208,8 @@ export default function PartnersPage() {
 
       {/* Bulk Actions */}
       {selected.size > 0 && (
-        <div className="flex items-center gap-3 mb-4 p-3 bg-[#ea580c]/5 border border-[#ea580c]/20 rounded-lg">
-          <span className="text-sm font-medium text-[#1e3a4c]">
+        <div className="flex items-center gap-3 mb-4 p-3 bg-accent-hover/5 border border-accent-hover/20 rounded-lg">
+          <span className="text-sm font-medium text-primary">
             {selected.size} selected
           </span>
           <span className="text-gray-300">|</span>
@@ -228,7 +228,7 @@ export default function PartnersPage() {
           <button
             onClick={handleBulkUpdate}
             disabled={isPending}
-            className="px-4 py-1.5 bg-[#ea580c] text-white text-sm font-medium rounded-lg hover:bg-[#ea580c] disabled:opacity-50 transition-colors"
+            className="px-4 py-1.5 bg-accent-hover text-white text-sm font-medium rounded-lg hover:bg-accent-hover disabled:opacity-50 transition-colors"
           >
             {isPending ? "Updating..." : "Apply"}
           </button>
@@ -252,7 +252,7 @@ export default function PartnersPage() {
                     type="checkbox"
                     checked={filtered.length > 0 && selected.size === filtered.length}
                     onChange={toggleAll}
-                    className="rounded border-gray-300 text-[#ea580c] focus:ring-[#ea580c]"
+                    className="rounded border-gray-300 text-accent-hover focus:ring-accent-hover"
                   />
                 </th>
                 <th className="text-left px-4 py-3 text-sm font-medium text-gray-500">
@@ -283,12 +283,12 @@ export default function PartnersPage() {
                       type="checkbox"
                       checked={selected.has(op.id)}
                       onChange={() => toggleSelect(op.id)}
-                      className="rounded border-gray-300 text-[#ea580c] focus:ring-[#ea580c]"
+                      className="rounded border-gray-300 text-accent-hover focus:ring-accent-hover"
                     />
                   </td>
                   <td className="px-4 py-3">
                     <div className="flex items-center gap-3">
-                      <div className="bg-[#1e3a4c] w-8 h-8 rounded-lg flex items-center justify-center text-white text-xs font-bold shrink-0">
+                      <div className="bg-primary w-8 h-8 rounded-lg flex items-center justify-center text-white text-xs font-bold shrink-0">
                         {op.name.charAt(0)}
                       </div>
                       <div>
@@ -413,7 +413,7 @@ export default function PartnersPage() {
                       <td className="px-4 py-3 text-right">
                         <button
                           onClick={() => startEdit(op)}
-                          className="p-2 text-gray-400 hover:text-[#ea580c] rounded-lg hover:bg-orange-50 transition-colors"
+                          className="p-2 text-gray-400 hover:text-accent-hover rounded-lg hover:bg-orange-50 transition-colors"
                           title="Edit"
                         >
                           <Edit className="h-4 w-4" />
@@ -453,7 +453,7 @@ function StatCard({
         <div className={`w-2.5 h-2.5 rounded-full ${color}`} />
         <span className="text-xs font-medium text-gray-500">{label}</span>
       </div>
-      <span className="text-2xl font-bold text-[#1e3a4c]">{count}</span>
+      <span className="text-2xl font-bold text-primary">{count}</span>
     </div>
   );
 }

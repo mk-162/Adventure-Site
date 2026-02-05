@@ -72,7 +72,7 @@ export default function EnterprisePage() {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#1e3a4c] via-[#1e3a4c] to-[#0f2a3c] text-white py-20 sm:py-28">
+      <section className="bg-gradient-to-br from-primary via-primary to-[#0f2a3c] text-white py-20 sm:py-28">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-1.5 rounded-full text-sm font-medium mb-6">
             <Zap className="w-4 h-4 text-orange-400" />
@@ -114,7 +114,7 @@ export default function EnterprisePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {stats.map(stat => (
               <div key={stat.label}>
-                <div className="text-3xl font-black text-[#1e3a4c]">{stat.value}</div>
+                <div className="text-3xl font-black text-primary">{stat.value}</div>
                 <div className="text-sm text-slate-500 mt-1">{stat.label}</div>
               </div>
             ))}
@@ -126,7 +126,7 @@ export default function EnterprisePage() {
       <section className="py-16 sm:py-20 bg-slate-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-black text-[#1e3a4c] mb-3">
+            <h2 className="text-3xl sm:text-4xl font-black text-primary mb-3">
               What We Offer
             </h2>
             <p className="text-slate-600 max-w-xl mx-auto">
@@ -138,11 +138,11 @@ export default function EnterprisePage() {
             {packages.map(pkg => (
               <div key={pkg.name} className="bg-white rounded-2xl border border-slate-200 p-6 hover:shadow-lg transition-shadow">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-[#1e3a4c] text-white p-2.5 rounded-xl shrink-0">
+                  <div className="bg-primary text-white p-2.5 rounded-xl shrink-0">
                     <pkg.icon className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#1e3a4c]">{pkg.name}</h3>
+                    <h3 className="text-lg font-bold text-primary">{pkg.name}</h3>
                     <p className="text-sm text-slate-600 mt-1">{pkg.description}</p>
                   </div>
                 </div>
@@ -164,7 +164,7 @@ export default function EnterprisePage() {
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-black text-[#1e3a4c] mb-3">
+            <h2 className="text-3xl sm:text-4xl font-black text-primary mb-3">
               Why Advertise With Us
             </h2>
           </div>
@@ -173,7 +173,7 @@ export default function EnterprisePage() {
               <div className="bg-orange-100 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Target className="w-6 h-6 text-orange-600" />
               </div>
-              <h3 className="font-bold text-[#1e3a4c] mb-2">High-Intent Audience</h3>
+              <h3 className="font-bold text-primary mb-2">High-Intent Audience</h3>
               <p className="text-sm text-slate-600">
                 People on Adventure Wales are planning trips — not browsing. They&apos;re searching for activities, comparing options, and ready to book.
               </p>
@@ -182,7 +182,7 @@ export default function EnterprisePage() {
               <div className="bg-orange-100 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Globe className="w-6 h-6 text-orange-600" />
               </div>
-              <h3 className="font-bold text-[#1e3a4c] mb-2">Wales-Focused, Not Generic</h3>
+              <h3 className="font-bold text-primary mb-2">Wales-Focused, Not Generic</h3>
               <p className="text-sm text-slate-600">
                 We&apos;re not TripAdvisor. Every page is built around Welsh adventures. Your message reaches people who specifically want Wales.
               </p>
@@ -191,7 +191,7 @@ export default function EnterprisePage() {
               <div className="bg-orange-100 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <BarChart3 className="w-6 h-6 text-orange-600" />
               </div>
-              <h3 className="font-bold text-[#1e3a4c] mb-2">Transparent Reporting</h3>
+              <h3 className="font-bold text-primary mb-2">Transparent Reporting</h3>
               <p className="text-sm text-slate-600">
                 Full analytics on impressions, clicks, and engagement. No vanity metrics — just clear data on what your campaign delivered.
               </p>
@@ -203,7 +203,7 @@ export default function EnterprisePage() {
       {/* Ideal For */}
       <section className="py-16 sm:py-20 bg-slate-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl font-black text-[#1e3a4c] mb-8 text-center">Perfect For</h2>
+          <h2 className="text-2xl font-black text-primary mb-8 text-center">Perfect For</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               "Tourism boards & destination marketing",
@@ -225,7 +225,7 @@ export default function EnterprisePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 sm:py-20 bg-[#1e3a4c] text-white">
+      <section className="py-16 sm:py-20 bg-primary text-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl sm:text-4xl font-black mb-4">
             Ready to Reach Welsh Adventurers?

@@ -49,9 +49,9 @@ export default async function JournalPage({ searchParams }: Props) {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <div className="bg-gradient-to-br from-[#1e3a4c] to-[#2d5568] text-white py-20">
+      <div className="bg-gradient-to-br from-primary to-[#2d5568] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <BookOpen className="h-16 w-16 mx-auto mb-6 text-[#ea580c]" />
+          <BookOpen className="h-16 w-16 mx-auto mb-6 text-accent-hover" />
           <h1 className="text-5xl font-bold mb-4">The Adventure Journal</h1>
           <p className="text-xl text-slate-200 max-w-2xl mx-auto">
             Stories, guides, and insights from the heart of Welsh adventure

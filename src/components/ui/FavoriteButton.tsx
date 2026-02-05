@@ -94,7 +94,7 @@ export function FavoriteButton({
               <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center">
                 <Heart className="w-8 h-8 text-red-400" />
               </div>
-              <h2 className="text-2xl font-bold text-[#1e3a4c]">
+              <h2 className="text-2xl font-bold text-primary">
                 Save your favourites
               </h2>
               <p className="text-gray-600">
@@ -103,7 +103,7 @@ export function FavoriteButton({
               <div className="flex flex-col sm:flex-row gap-3 w-full mt-2">
                 <Link
                   href="/login"
-                  className="flex-1 px-6 py-3 bg-[#ea580c] text-white font-semibold rounded-lg hover:bg-[#ea580c] transition-colors text-center"
+                  className="flex-1 px-6 py-3 bg-accent-hover text-white font-semibold rounded-lg hover:bg-accent-hover transition-colors text-center"
                 >
                   Sign up free
                 </Link>

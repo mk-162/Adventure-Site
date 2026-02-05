@@ -76,22 +76,22 @@ export default async function TagPage({ params }: TagPageProps) {
         <div className="mb-8">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
-            <Link href="/" className="hover:text-[#1e3a4c]">
+            <Link href="/" className="hover:text-primary">
               Home
             </Link>
             <ChevronRight className="w-4 h-4" />
-            <Link href="/tags" className="hover:text-[#1e3a4c]">
+            <Link href="/tags" className="hover:text-primary">
               Tags
             </Link>
             <ChevronRight className="w-4 h-4" />
-            <span className="text-[#1e3a4c] font-medium">{tag.name}</span>
+            <span className="text-primary font-medium">{tag.name}</span>
           </div>
 
           <div className="flex items-center gap-3 mb-3">
-             <h1 className="text-3xl lg:text-4xl font-bold text-[#1e3a4c]">
+             <h1 className="text-3xl lg:text-4xl font-bold text-primary">
                 {tag.name}
              </h1>
-             <span className="px-3 py-1 rounded-full bg-[#1e3a4c]/10 text-[#1e3a4c] text-sm font-medium capitalize">
+             <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium capitalize">
                 {tag.type.replace("_", " ")}
              </span>
           </div>
@@ -110,7 +110,7 @@ export default async function TagPage({ params }: TagPageProps) {
           {activities.length > 0 && (
             <section>
                 <div className="flex items-center justify-between mb-6">
-                    <h2 className="text-2xl font-bold text-[#1e3a4c]">
+                    <h2 className="text-2xl font-bold text-primary">
                         Activities
                     </h2>
                     <span className="text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded-md">
@@ -143,7 +143,7 @@ export default async function TagPage({ params }: TagPageProps) {
           {accommodation.length > 0 && (
              <section>
                  <div className="flex items-center justify-between mb-6">
-                    <h2 className="text-2xl font-bold text-[#1e3a4c]">
+                    <h2 className="text-2xl font-bold text-primary">
                         Places to Stay
                     </h2>
                     <span className="text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded-md">
@@ -171,7 +171,7 @@ export default async function TagPage({ params }: TagPageProps) {
           {itineraries.length > 0 && (
             <section>
                  <div className="flex items-center justify-between mb-6">
-                    <h2 className="text-2xl font-bold text-[#1e3a4c]">
+                    <h2 className="text-2xl font-bold text-primary">
                         Itineraries
                     </h2>
                     <span className="text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded-md">
@@ -183,7 +183,7 @@ export default async function TagPage({ params }: TagPageProps) {
                         <Link
                             key={item.itinerary.id}
                             href={`/itineraries/${item.itinerary.slug}`}
-                            className="group bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all duration-300 hover:border-[#1e3a4c]/30 block"
+                            className="group bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all duration-300 hover:border-primary/30 block"
                         >
                             {/* Card Image */}
                             <div className="relative h-48 overflow-hidden bg-gray-100">
@@ -194,14 +194,14 @@ export default async function TagPage({ params }: TagPageProps) {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                                 
                                 {item.itinerary.durationDays && (
-                                    <div className="absolute top-3 right-3 bg-[#1e3a4c] text-white text-xs font-bold px-3 py-1.5 rounded-full">
+                                    <div className="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-full">
                                     {item.itinerary.durationDays} DAY{item.itinerary.durationDays > 1 ? "S" : ""}
                                     </div>
                                 )}
 
                                 {item.region && (
                                     <div className="absolute bottom-3 left-3">
-                                    <span className="bg-white/90 backdrop-blur-sm text-[#1e3a4c] text-xs font-medium px-2 py-1 rounded flex items-center gap-1">
+                                    <span className="bg-white/90 backdrop-blur-sm text-primary text-xs font-medium px-2 py-1 rounded flex items-center gap-1">
                                         <MapPin className="w-3 h-3" />
                                         {item.region.name}
                                     </span>
@@ -211,7 +211,7 @@ export default async function TagPage({ params }: TagPageProps) {
 
                             {/* Card Content */}
                             <div className="p-5">
-                                <h3 className="font-bold text-lg text-[#1e3a4c] mb-2 group-hover:text-[#ea580c] transition-colors line-clamp-2">
+                                <h3 className="font-bold text-lg text-primary mb-2 group-hover:text-accent-hover transition-colors line-clamp-2">
                                 {item.itinerary.title}
                                 </h3>
                                 
@@ -237,7 +237,7 @@ export default async function TagPage({ params }: TagPageProps) {
                                 {item.itinerary.priceEstimateFrom && (
                                 <div className="flex items-center justify-between pt-3 border-t border-gray-100">
                                     <span className="text-xs text-gray-500">Estimated cost</span>
-                                    <span className="font-bold text-[#1e3a4c]">
+                                    <span className="font-bold text-primary">
                                     £{item.itinerary.priceEstimateFrom}
                                     {item.itinerary.priceEstimateTo && item.itinerary.priceEstimateTo !== item.itinerary.priceEstimateFrom && (
                                         <span> - £{item.itinerary.priceEstimateTo}</span>
@@ -255,8 +255,8 @@ export default async function TagPage({ params }: TagPageProps) {
           {/* Related Tags */}
           {otherTags.length > 0 && (
              <section className="pt-8 border-t border-gray-100">
-                <h3 className="text-xl font-bold text-[#1e3a4c] mb-6 flex items-center gap-2">
-                    <Tag className="w-5 h-5 text-[#ea580c]" />
+                <h3 className="text-xl font-bold text-primary mb-6 flex items-center gap-2">
+                    <Tag className="w-5 h-5 text-accent-hover" />
                     Related {tag.type.replace("_", " ")} Tags
                 </h3>
                 <div className="flex flex-wrap gap-3">
@@ -264,7 +264,7 @@ export default async function TagPage({ params }: TagPageProps) {
                         <Link
                             key={t.id}
                             href={`/tags/${t.slug}`}
-                            className="bg-gray-50 hover:bg-white border border-gray-200 hover:border-[#ea580c] text-gray-700 hover:text-[#ea580c] px-4 py-2 rounded-full transition-all duration-300 text-sm font-medium"
+                            className="bg-gray-50 hover:bg-white border border-gray-200 hover:border-accent-hover text-gray-700 hover:text-accent-hover px-4 py-2 rounded-full transition-all duration-300 text-sm font-medium"
                         >
                             {t.name}
                         </Link>

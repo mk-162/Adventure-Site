@@ -36,7 +36,7 @@ export default async function CampaignsAdmin() {
         </div>
         <Link
           href="/admin/commercial/campaigns/new"
-          className="flex items-center gap-2 px-4 py-2 bg-[#ea580c] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
+          className="flex items-center gap-2 px-4 py-2 bg-accent-hover text-white rounded-lg hover:bg-accent-hover transition-colors"
         >
           <Plus className="h-5 w-5" />
           New Campaign
@@ -118,7 +118,7 @@ export default async function CampaignsAdmin() {
                   <div className="flex items-center justify-end gap-2">
                     <Link
                       href={`/admin/commercial/campaigns/${campaign.id}`}
-                      className="p-2 text-gray-400 hover:text-[#ea580c]"
+                      className="p-2 text-gray-400 hover:text-accent-hover"
                       title="Edit"
                     >
                       <Edit className="h-4 w-4" />

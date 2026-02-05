@@ -20,7 +20,7 @@ export default async function DirectoryPage() {
       {/* Claim CTA */}
       <div className="max-w-7xl mx-auto px-4 pb-8">
         <section className="mt-12 bg-gray-50 rounded-2xl p-8 text-center">
-          <h3 className="text-xl font-bold text-[#1e3a4c] mb-2">
+          <h3 className="text-xl font-bold text-primary mb-2">
             Run an adventure business in Wales?
           </h3>
           <p className="text-gray-600 mb-4">

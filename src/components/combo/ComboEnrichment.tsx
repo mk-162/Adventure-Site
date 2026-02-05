@@ -26,7 +26,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
     <div className="space-y-10">
       {/* Editorial Introduction */}
       <section>
-        <div className="bg-gradient-to-br from-[#1e3a4c] to-[#2d5a73] rounded-2xl p-6 sm:p-8 text-white">
+        <div className="bg-gradient-to-br from-primary to-[#2d5a73] rounded-2xl p-6 sm:p-8 text-white">
           <p className="text-lg sm:text-xl leading-relaxed text-white/90 font-light">
             {data.strapline}
           </p>
@@ -44,15 +44,15 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       <section>
         <div className="grid grid-cols-3 gap-3">
           <div className="bg-white rounded-xl border border-gray-200 p-4 text-center">
-            <div className="text-lg font-bold text-[#1e3a4c]">{data.bestSeason}</div>
+            <div className="text-lg font-bold text-primary">{data.bestSeason}</div>
             <div className="text-xs text-gray-500 mt-1">Best Season</div>
           </div>
           <div className="bg-white rounded-xl border border-gray-200 p-4 text-center">
-            <div className="text-lg font-bold text-[#1e3a4c]">{data.difficultyRange}</div>
+            <div className="text-lg font-bold text-primary">{data.difficultyRange}</div>
             <div className="text-xs text-gray-500 mt-1">Difficulty</div>
           </div>
           <div className="bg-white rounded-xl border border-gray-200 p-4 text-center">
-            <div className="text-lg font-bold text-[#1e3a4c]">{data.priceRange}</div>
+            <div className="text-lg font-bold text-primary">{data.priceRange}</div>
             <div className="text-xs text-gray-500 mt-1">Price Range</div>
           </div>
         </div>
@@ -61,7 +61,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       {/* Top Spots */}
       {data.spots.length > 0 && (
         <section>
-          <h2 className="text-xl sm:text-2xl font-bold text-[#1e3a4c] mb-2">
+          <h2 className="text-xl sm:text-2xl font-bold text-primary mb-2">
             Best Spots for {data.title}
           </h2>
           <p className="text-gray-500 text-sm mb-6">
@@ -72,8 +72,8 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
           {spotsWithCoords.length > 0 && (
             <div className="bg-white rounded-xl border border-gray-200 p-4 mb-6">
               <div className="flex items-center gap-2 mb-3">
-                <MapPin className="w-4 h-4 text-[#ea580c]" />
-                <span className="text-sm font-semibold text-[#1e3a4c]">
+                <MapPin className="w-4 h-4 text-accent-hover" />
+                <span className="text-sm font-semibold text-primary">
                   {spotsWithCoords.length} spots on the map
                 </span>
               </div>
@@ -86,7 +86,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors text-sm"
                   >
-                    <span className="w-5 h-5 rounded-full bg-[#1e3a4c] text-white text-[10px] font-bold flex items-center justify-center shrink-0">
+                    <span className="w-5 h-5 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0">
                       {i + 1}
                     </span>
                     <span className="text-gray-700 truncate">{spot.name}</span>
@@ -108,7 +108,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       {/* Practical Info */}
       {data.practicalInfo && (
         <section>
-          <h2 className="text-xl sm:text-2xl font-bold text-[#1e3a4c] mb-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-primary mb-6">
             Need to Know
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -142,8 +142,8 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
             {data.practicalInfo.gearChecklist && (
               <div className="bg-white border border-gray-200 rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-3">
-                  <ShoppingBag className="w-5 h-5 text-[#1e3a4c]" />
-                  <h3 className="font-bold text-[#1e3a4c] text-sm">Gear Checklist</h3>
+                  <ShoppingBag className="w-5 h-5 text-primary" />
+                  <h3 className="font-bold text-primary text-sm">Gear Checklist</h3>
                 </div>
                 <div className="grid grid-cols-1 gap-1.5">
                   {data.practicalInfo.gearChecklist.slice(0, 8).map((item, i) => (
@@ -180,8 +180,8 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
             {(data.practicalInfo.transportNotes || data.practicalInfo.parkingNotes) && (
               <div className="bg-white border border-gray-200 rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-3">
-                  <MapPin className="w-5 h-5 text-[#1e3a4c]" />
-                  <h3 className="font-bold text-[#1e3a4c] text-sm">Getting There</h3>
+                  <MapPin className="w-5 h-5 text-primary" />
+                  <h3 className="font-bold text-primary text-sm">Getting There</h3>
                 </div>
                 {data.practicalInfo.transportNotes && (
                   <p className="text-xs text-gray-700 leading-relaxed mb-2">{data.practicalInfo.transportNotes}</p>
@@ -198,21 +198,21 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       {/* Local Gear Shops */}
       {data.localDirectory?.gearShops && data.localDirectory.gearShops.length > 0 && (
         <section>
-          <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Local Gear Shops</h2>
+          <h2 className="text-xl font-bold text-primary mb-4">Local Gear Shops</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {data.localDirectory.gearShops.map((shop, i) => (
               <div key={i} className="bg-white rounded-xl border border-gray-200 p-4">
-                <h3 className="font-bold text-[#1e3a4c] text-sm mb-1">{shop.name}</h3>
+                <h3 className="font-bold text-primary text-sm mb-1">{shop.name}</h3>
                 <p className="text-xs text-gray-500 mb-2">{shop.address}</p>
                 <p className="text-xs text-gray-600 mb-3 line-clamp-2">{shop.description}</p>
                 <div className="flex gap-2">
                   {shop.website && (
                     <a href={shop.website} target="_blank" rel="noopener noreferrer"
-                      className="text-xs font-medium text-[#ea580c] hover:underline">Website</a>
+                      className="text-xs font-medium text-accent-hover hover:underline">Website</a>
                   )}
                   {shop.phone && (
                     <a href={`tel:${shop.phone}`}
-                      className="text-xs font-medium text-[#1e3a4c] hover:underline">{shop.phone}</a>
+                      className="text-xs font-medium text-primary hover:underline">{shop.phone}</a>
                   )}
                 </div>
               </div>
@@ -224,15 +224,15 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       {/* Events */}
       {data.events && data.events.length > 0 && (
         <section>
-          <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Events & Races</h2>
+          <h2 className="text-xl font-bold text-primary mb-4">Events & Races</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {data.events.map((event, i) => (
               <div key={i} className="bg-white rounded-xl border border-gray-200 p-4 flex gap-4">
-                <div className="w-12 h-12 rounded-lg bg-[#ea580c]/10 flex items-center justify-center shrink-0">
-                  <Calendar className="w-5 h-5 text-[#ea580c]" />
+                <div className="w-12 h-12 rounded-lg bg-accent-hover/10 flex items-center justify-center shrink-0">
+                  <Calendar className="w-5 h-5 text-accent-hover" />
                 </div>
                 <div className="min-w-0">
-                  <h3 className="font-bold text-[#1e3a4c] text-sm">{event.name}</h3>
+                  <h3 className="font-bold text-primary text-sm">{event.name}</h3>
                   <p className="text-xs text-gray-500 mb-1">
                     {event.monthTypical} • {event.type}
                     {event.registrationCost ? ` • £${event.registrationCost}` : ""}
@@ -240,7 +240,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
                   <p className="text-xs text-gray-600 line-clamp-2">{event.description}</p>
                   {event.website && (
                     <a href={event.website} target="_blank" rel="noopener noreferrer"
-                      className="text-xs font-medium text-[#ea580c] hover:underline mt-1 inline-block">More info →</a>
+                      className="text-xs font-medium text-accent-hover hover:underline mt-1 inline-block">More info →</a>
                   )}
                 </div>
               </div>
@@ -252,7 +252,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       {/* FAQs */}
       {data.faqs && data.faqs.length > 0 && (
         <section>
-          <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">
+          <h2 className="text-xl font-bold text-primary mb-4">
             Frequently Asked Questions
           </h2>
           <FAQAccordion items={data.faqs.map((f) => ({ question: f.question, answer: f.answer }))} />
@@ -262,19 +262,19 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       {/* Nearby Alternatives */}
       {data.nearbyAlternatives && (
         <section>
-          <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Explore More</h2>
+          <h2 className="text-xl font-bold text-primary mb-4">Explore More</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {data.nearbyAlternatives.sameActivity?.map((alt, i) => (
               <Link
                 key={`sa-${i}`}
                 href={`/${alt.regionSlug}/things-to-do/${data.activityTypeSlug}`}
-                className="flex items-center gap-3 bg-white rounded-xl border border-gray-200 p-4 hover:border-[#ea580c] hover:shadow-sm transition-all"
+                className="flex items-center gap-3 bg-white rounded-xl border border-gray-200 p-4 hover:border-accent-hover hover:shadow-sm transition-all"
               >
-                <div className="w-10 h-10 rounded-lg bg-[#1e3a4c]/10 flex items-center justify-center shrink-0">
-                  <MapPin className="w-5 h-5 text-[#1e3a4c]" />
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="font-semibold text-[#1e3a4c] text-sm">{alt.label}</p>
+                  <p className="font-semibold text-primary text-sm">{alt.label}</p>
                   <p className="text-xs text-gray-500">Same activity, different region</p>
                 </div>
                 <ArrowRight className="w-4 h-4 text-gray-400 ml-auto" />
@@ -284,13 +284,13 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
               <Link
                 key={`sr-${i}`}
                 href={`/${data.regionSlug}/things-to-do/${alt.activityTypeSlug}`}
-                className="flex items-center gap-3 bg-white rounded-xl border border-gray-200 p-4 hover:border-[#ea580c] hover:shadow-sm transition-all"
+                className="flex items-center gap-3 bg-white rounded-xl border border-gray-200 p-4 hover:border-accent-hover hover:shadow-sm transition-all"
               >
-                <div className="w-10 h-10 rounded-lg bg-[#ea580c]/10 flex items-center justify-center shrink-0">
-                  <ArrowRight className="w-5 h-5 text-[#ea580c]" />
+                <div className="w-10 h-10 rounded-lg bg-accent-hover/10 flex items-center justify-center shrink-0">
+                  <ArrowRight className="w-5 h-5 text-accent-hover" />
                 </div>
                 <div>
-                  <p className="font-semibold text-[#1e3a4c] text-sm">{alt.label}</p>
+                  <p className="font-semibold text-primary text-sm">{alt.label}</p>
                   <p className="text-xs text-gray-500">Same region, different activity</p>
                 </div>
                 <ArrowRight className="w-4 h-4 text-gray-400 ml-auto" />

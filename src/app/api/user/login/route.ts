@@ -51,14 +51,14 @@ export async function POST(req: NextRequest) {
         subject: "Sign in to Adventure Wales",
         html: `
           <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
-            <div style="background: #1e3a4c; padding: 24px; text-align: center;">
+            <div style="background: var(--color-primary); padding: 24px; text-align: center;">
               <h1 style="color: white; margin: 0;">Adventure Wales</h1>
             </div>
             <div style="padding: 32px; background: #f9fafb;">
-              <h2 style="color: #1e3a4c;">Sign In</h2>
+              <h2 style="color: var(--color-primary);">Sign In</h2>
               <p>Hey${user.name ? ` ${user.name}` : ""}! Click below to sign in to your Adventure Wales account.</p>
               <div style="text-align: center; margin: 32px 0;">
-                <a href="${verifyUrl}" style="background: #ea580c; color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
+                <a href="${verifyUrl}" style="background: var(--color-accent); color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
                   Sign In →
                 </a>
               </div>

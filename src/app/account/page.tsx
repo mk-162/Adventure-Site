@@ -70,7 +70,7 @@ export default async function AccountPage() {
         <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-2xl font-bold text-[#1e3a4c]">
+              <h1 className="text-2xl font-bold text-primary">
                 {user.name || "Adventurer"}
               </h1>
               <p className="text-gray-500 text-sm">{user.email}</p>
@@ -88,26 +88,26 @@ export default async function AccountPage() {
         {/* Saved Items */}
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <div className="flex items-center gap-2 mb-6">
-            <Heart className="w-5 h-5 text-[#ea580c]" />
-            <h2 className="text-lg font-bold text-[#1e3a4c]">Saved Items</h2>
+            <Heart className="w-5 h-5 text-accent-hover" />
+            <h2 className="text-lg font-bold text-primary">Saved Items</h2>
             <span className="text-sm text-gray-400 ml-auto">{favourites.length} saved</span>
           </div>
 
           {favourites.length === 0 ? (
             <div className="text-center py-12">
               <Heart className="w-12 h-12 text-gray-200 mx-auto mb-4" />
-              <h3 className="font-semibold text-[#1e3a4c] mb-2">Nothing saved yet</h3>
+              <h3 className="font-semibold text-primary mb-2">Nothing saved yet</h3>
               <p className="text-gray-500 text-sm mb-6">
                 Tap the heart icon on activities, itineraries, and providers to save them here.
               </p>
               <div className="flex flex-wrap justify-center gap-3">
-                <Link href="/activities" className="text-sm font-medium text-[#ea580c] hover:underline">
+                <Link href="/activities" className="text-sm font-medium text-accent-hover hover:underline">
                   Browse activities →
                 </Link>
-                <Link href="/itineraries" className="text-sm font-medium text-[#ea580c] hover:underline">
+                <Link href="/itineraries" className="text-sm font-medium text-accent-hover hover:underline">
                   Browse itineraries →
                 </Link>
-                <Link href="/directory" className="text-sm font-medium text-[#ea580c] hover:underline">
+                <Link href="/directory" className="text-sm font-medium text-accent-hover hover:underline">
                   Browse providers →
                 </Link>
               </div>
@@ -123,11 +123,11 @@ export default async function AccountPage() {
                     href={fav.link}
                     className="flex items-center gap-4 py-3 hover:bg-gray-50 -mx-3 px-3 rounded-lg transition-colors"
                   >
-                    <div className="w-10 h-10 rounded-lg bg-[#ea580c]/10 flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-5 h-5 text-[#ea580c]" />
+                    <div className="w-10 h-10 rounded-lg bg-accent-hover/10 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-5 h-5 text-accent-hover" />
                     </div>
                     <div className="min-w-0 flex-1">
-                      <p className="font-medium text-sm text-[#1e3a4c] truncate">{fav.name}</p>
+                      <p className="font-medium text-sm text-primary truncate">{fav.name}</p>
                       <p className="text-xs text-gray-400 capitalize">{fav.favouriteType}</p>
                     </div>
                     <span className="text-xs text-gray-300">→</span>
@@ -144,15 +144,15 @@ export default async function AccountPage() {
             href="/itineraries"
             className="bg-white rounded-xl border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
           >
-            <Route className="w-6 h-6 text-[#1e3a4c] mx-auto mb-2" />
-            <p className="text-sm font-semibold text-[#1e3a4c]">Plan a Trip</p>
+            <Route className="w-6 h-6 text-primary mx-auto mb-2" />
+            <p className="text-sm font-semibold text-primary">Plan a Trip</p>
           </Link>
           <Link
             href="/events"
             className="bg-white rounded-xl border border-gray-200 p-4 hover:shadow-md transition-shadow text-center"
           >
-            <Calendar className="w-6 h-6 text-[#1e3a4c] mx-auto mb-2" />
-            <p className="text-sm font-semibold text-[#1e3a4c]">Find Events</p>
+            <Calendar className="w-6 h-6 text-primary mx-auto mb-2" />
+            <p className="text-sm font-semibold text-primary">Find Events</p>
           </Link>
         </div>
       </div>

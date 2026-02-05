@@ -116,8 +116,8 @@ export default async function HomePage() {
           <section className="py-12 sm:py-16 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
               <div className="text-center mb-8">
-                <span className="text-[#ea580c] font-bold uppercase tracking-wider text-sm">Trusted Partners</span>
-                <h2 className="mt-2 text-2xl sm:text-3xl font-bold text-[#1e3a4c]">Adventure Providers We Recommend</h2>
+                <span className="text-accent-hover font-bold uppercase tracking-wider text-sm">Trusted Partners</span>
+                <h2 className="mt-2 text-2xl sm:text-3xl font-bold text-primary">Adventure Providers We Recommend</h2>
                 <p className="mt-2 text-gray-500 max-w-xl mx-auto text-sm">Vetted, insured, and reviewed by real adventurers across Wales.</p>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -130,11 +130,11 @@ export default async function HomePage() {
                     {op.logoUrl ? (
                       <Image src={op.logoUrl} alt={op.name} width={48} height={48} className="w-12 h-12 mx-auto rounded-lg object-cover mb-3" />
                     ) : (
-                      <div className="w-12 h-12 mx-auto rounded-lg bg-[#1e3a4c]/10 flex items-center justify-center text-[#1e3a4c] font-bold text-lg mb-3">
+                      <div className="w-12 h-12 mx-auto rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-lg mb-3">
                         {op.name.charAt(0)}
                       </div>
                     )}
-                    <h3 className="font-semibold text-sm text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors line-clamp-1">{op.name}</h3>
+                    <h3 className="font-semibold text-sm text-primary group-hover:text-accent-hover transition-colors line-clamp-1">{op.name}</h3>
                     {op.googleRating && (
                       <div className="flex items-center justify-center gap-1 mt-1">
                         <span className="text-yellow-500 text-xs">★</span>
@@ -148,7 +148,7 @@ export default async function HomePage() {
                 ))}
               </div>
               <div className="text-center mt-6">
-                <a href="/directory" className="text-[#ea580c] font-bold hover:underline text-sm">
+                <a href="/directory" className="text-accent-hover font-bold hover:underline text-sm">
                   View all providers →
                 </a>
               </div>

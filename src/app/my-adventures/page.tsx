@@ -94,7 +94,7 @@ export default async function MyAdventuresPage() {
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h1 className="text-2xl font-bold text-[#1e3a4c]">
+            <h1 className="text-2xl font-bold text-primary">
               {user.name ? `${user.name}'s Adventures` : "My Adventures"}
             </h1>
             <p className="text-slate-500">{user.email}</p>
@@ -113,7 +113,7 @@ export default async function MyAdventuresPage() {
                   <div className={`w-10 h-10 rounded-lg flex items-center justify-center mb-2 ${config.colour}`}>
                     <Icon className="w-5 h-5" />
                   </div>
-                  <div className="text-2xl font-bold text-[#1e3a4c]">{items.length}</div>
+                  <div className="text-2xl font-bold text-primary">{items.length}</div>
                   <div className="text-sm text-slate-500">{config.label} saved</div>
                 </div>
               );
@@ -125,12 +125,12 @@ export default async function MyAdventuresPage() {
         {favourites.length === 0 ? (
           <div className="bg-white rounded-2xl p-12 shadow-sm text-center">
             <Heart className="w-12 h-12 text-slate-300 mx-auto mb-4" />
-            <h2 className="text-xl font-bold text-[#1e3a4c] mb-2">No saved adventures yet</h2>
+            <h2 className="text-xl font-bold text-primary mb-2">No saved adventures yet</h2>
             <p className="text-slate-500 mb-6">
               Tap the heart icon on any activity, itinerary, event, or operator to save it here.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <Link href="/itineraries" className="px-4 py-2 bg-[#1e3a4c] text-white rounded-lg text-sm font-medium hover:bg-[#152833]">
+              <Link href="/itineraries" className="px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-[#152833]">
                 Browse itineraries
               </Link>
               <Link href="/activities" className="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-200">
@@ -155,7 +155,7 @@ export default async function MyAdventuresPage() {
                       <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${config.colour}`}>
                         <Icon className="w-4 h-4" />
                       </div>
-                      <h2 className="text-lg font-bold text-[#1e3a4c]">
+                      <h2 className="text-lg font-bold text-primary">
                         Saved {config.label}
                       </h2>
                       <span className="text-sm text-slate-400">({items.length})</span>
@@ -168,7 +168,7 @@ export default async function MyAdventuresPage() {
                           className="flex items-center justify-between p-4 hover:bg-slate-50 transition-colors"
                         >
                           <div>
-                            <div className="font-medium text-[#1e3a4c]">{fav.item!.name}</div>
+                            <div className="font-medium text-primary">{fav.item!.name}</div>
                             {fav.item!.extra && (
                               <div className="text-sm text-slate-400">{fav.item!.extra}</div>
                             )}

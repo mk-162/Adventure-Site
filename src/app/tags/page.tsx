@@ -37,14 +37,14 @@ export default async function TagsPage() {
         <div className="mb-8">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
-            <Link href="/" className="hover:text-[#1e3a4c]">
+            <Link href="/" className="hover:text-primary">
               Home
             </Link>
             <ChevronRight className="w-4 h-4" />
-            <span className="text-[#1e3a4c] font-medium">Tags</span>
+            <span className="text-primary font-medium">Tags</span>
           </div>
 
-          <h1 className="text-3xl lg:text-4xl font-bold text-[#1e3a4c] mb-3">
+          <h1 className="text-3xl lg:text-4xl font-bold text-primary mb-3">
             Browse by Tag
           </h1>
           <p className="text-gray-600 max-w-2xl">
@@ -56,8 +56,8 @@ export default async function TagsPage() {
         <div className="space-y-12">
           {sortedCategories.map((category) => (
             <div key={category} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-              <h2 className="text-xl font-bold text-[#1e3a4c] mb-6 capitalize flex items-center gap-2">
-                <Tag className="w-5 h-5 text-[#ea580c]" />
+              <h2 className="text-xl font-bold text-primary mb-6 capitalize flex items-center gap-2">
+                <Tag className="w-5 h-5 text-accent-hover" />
                 {category.replace("_", " ")} Tags
               </h2>
 
@@ -66,12 +66,12 @@ export default async function TagsPage() {
                   <Link
                     key={tag.id}
                     href={`/tags/${tag.slug}`}
-                    className="flex items-center justify-between p-4 rounded-xl border border-gray-100 hover:border-[#1e3a4c]/30 hover:shadow-md transition-all duration-300 bg-gray-50/50 hover:bg-white group"
+                    className="flex items-center justify-between p-4 rounded-xl border border-gray-100 hover:border-primary/30 hover:shadow-md transition-all duration-300 bg-gray-50/50 hover:bg-white group"
                   >
-                    <span className="font-medium text-gray-700 group-hover:text-[#1e3a4c]">
+                    <span className="font-medium text-gray-700 group-hover:text-primary">
                       {tag.name}
                     </span>
-                    <span className="text-xs font-semibold bg-white text-[#ea580c] px-2 py-1 rounded-full border border-gray-100 group-hover:border-[#ea580c]/20">
+                    <span className="text-xs font-semibold bg-white text-accent-hover px-2 py-1 rounded-full border border-gray-100 group-hover:border-accent-hover/20">
                       {tag.count}
                     </span>
                   </Link>

@@ -85,7 +85,7 @@ export function CardTitle({
   return (
     <Component
       className={clsx(
-        "font-bold text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors",
+        "font-bold text-primary group-hover:text-accent-hover transition-colors",
         className
       )}
     >

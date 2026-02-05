@@ -32,10 +32,10 @@ export function FeaturedItineraries({ itineraries }: FeaturedItinerariesProps) {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
           <div>
-            <span className="text-[#ea580c] font-bold uppercase tracking-wider text-sm">Tried & Tested Routes</span>
-            <h2 className="mt-2 text-3xl font-bold text-[#1e3a4c]">Ready-Made Adventures</h2>
+            <span className="text-accent-hover font-bold uppercase tracking-wider text-sm">Tried & Tested Routes</span>
+            <h2 className="mt-2 text-3xl font-bold text-primary">Ready-Made Adventures</h2>
           </div>
-          <Link href="/itineraries" className="hidden sm:flex items-center text-[#1e3a4c] font-bold hover:underline">
+          <Link href="/itineraries" className="hidden sm:flex items-center text-primary font-bold hover:underline">
             View All <ArrowRight className="ml-1 h-5 w-5" />
           </Link>
         </div>
@@ -56,12 +56,12 @@ export function FeaturedItineraries({ itineraries }: FeaturedItinerariesProps) {
                   />
                   {/* Gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-lg text-xs font-bold uppercase text-[#1e3a4c]">
+                  <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-lg text-xs font-bold uppercase text-primary">
                     {itinerary.durationDays ?? 1} DAY{(itinerary.durationDays ?? 1) > 1 ? 'S' : ''}
                   </div>
                 </div>
                 <div className="mt-3">
-                  <h3 className="text-lg font-bold text-[#1e3a4c] group-hover:text-[#1e3a4c] transition-colors">
+                  <h3 className="text-lg font-bold text-primary group-hover:text-primary transition-colors">
                     {itinerary.title}
                   </h3>
                   {itinerary.tagline && (
@@ -74,7 +74,7 @@ export function FeaturedItineraries({ itineraries }: FeaturedItinerariesProps) {
           </div>
         </div>
 
-        <Link href="/itineraries" className="sm:hidden block w-full mt-6 py-3 text-center text-[#1e3a4c] font-bold border border-slate-200 rounded-xl hover:bg-slate-50">
+        <Link href="/itineraries" className="sm:hidden block w-full mt-6 py-3 text-center text-primary font-bold border border-slate-200 rounded-xl hover:bg-slate-50">
           View All Itineraries
         </Link>
       </div>

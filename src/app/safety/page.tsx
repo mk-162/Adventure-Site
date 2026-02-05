@@ -45,10 +45,10 @@ export default function SafetyPage() {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero */}
-      <section className="bg-[#1e3a4c] py-12">
+      <section className="bg-primary py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-4 mb-4">
-            <AlertTriangle className="w-10 h-10 text-[#ea580c]" />
+            <AlertTriangle className="w-10 h-10 text-accent-hover" />
             <h1 className="text-3xl md:text-4xl font-bold text-white">
               Safety Information
             </h1>
@@ -82,12 +82,12 @@ export default function SafetyPage() {
             <Link
               key={guide.slug}
               href={`/safety/${guide.slug}`}
-              className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-[#ea580c] transition-all"
+              className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-accent-hover transition-all"
             >
-              <div className="text-[#1e3a4c] mb-4">
+              <div className="text-primary mb-4">
                 {iconMap[guide.slug] || <AlertTriangle className="w-8 h-8" />}
               </div>
-              <h3 className="text-lg font-semibold text-[#1e3a4c] mb-2">
+              <h3 className="text-lg font-semibold text-primary mb-2">
                 {guide.title}
               </h3>
               <p className="text-gray-600 text-sm line-clamp-3">
@@ -99,12 +99,12 @@ export default function SafetyPage() {
 
         {/* General Safety Tips */}
         <section className="mt-12 bg-gray-50 rounded-lg p-8">
-          <h2 className="text-2xl font-bold text-[#1e3a4c] mb-6">
+          <h2 className="text-2xl font-bold text-primary mb-6">
             General Safety Tips
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h3 className="font-semibold text-[#1e3a4c] mb-2">Before You Go</h3>
+              <h3 className="font-semibold text-primary mb-2">Before You Go</h3>
               <ul className="text-gray-700 space-y-2">
                 <li>• Check weather forecasts</li>
                 <li>• Tell someone your plans and expected return time</li>
@@ -114,7 +114,7 @@ export default function SafetyPage() {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-[#1e3a4c] mb-2">While Out</h3>
+              <h3 className="font-semibold text-primary mb-2">While Out</h3>
               <ul className="text-gray-700 space-y-2">
                 <li>• Carry a fully charged phone</li>
                 <li>• Bring a map and know how to use it</li>

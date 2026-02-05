@@ -145,7 +145,7 @@ export function BillingContent({ currentTier, enhancedPriceId, premiumPriceId }:
             <button
               onClick={() => handleUpgrade(premiumPriceId)}
               disabled={!!loading || !premiumPriceId}
-              className="w-full py-2.5 px-4 rounded-lg bg-[#1e3a4c] text-white font-bold hover:bg-[#152833] disabled:opacity-50 transition-colors shadow-lg text-sm"
+              className="w-full py-2.5 px-4 rounded-lg bg-primary text-white font-bold hover:bg-[#152833] disabled:opacity-50 transition-colors shadow-lg text-sm"
             >
               {loading === premiumPriceId ? "Processing..." : "Upgrade to Premium"}
             </button>
@@ -153,7 +153,7 @@ export function BillingContent({ currentTier, enhancedPriceId, premiumPriceId }:
         </div>
 
         {/* Enterprise / Corporate */}
-        <div className="rounded-xl border border-slate-200 bg-gradient-to-br from-[#1e3a4c] to-[#152833] p-5 flex flex-col text-white">
+        <div className="rounded-xl border border-slate-200 bg-gradient-to-br from-primary to-[#152833] p-5 flex flex-col text-white">
           <div className="mb-4">
             <div className="flex items-center gap-2">
               <Rocket className="w-5 h-5 text-orange-400" />

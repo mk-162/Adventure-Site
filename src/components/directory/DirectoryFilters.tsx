@@ -119,7 +119,7 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
   return (
     <>
       {/* Search */}
-      <section className="bg-[#1e3a4c] py-12">
+      <section className="bg-primary py-12">
         <div className="max-w-7xl mx-auto px-4">
           <nav className="text-white/70 text-sm mb-4">
             <a href="/" className="hover:text-white">Home</a>
@@ -143,7 +143,7 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
               placeholder="Search adventure providers..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-white text-gray-900 placeholder-gray-400 border-2 border-white focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c] outline-none shadow-lg text-base"
+              className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-white text-gray-900 placeholder-gray-400 border-2 border-white focus:border-accent-hover focus:ring-2 focus:ring-accent-hover outline-none shadow-lg text-base"
             />
           </div>
         </div>
@@ -205,14 +205,14 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Featured Operators */}
         {featuredOperators.length > 0 && (
-          <section className="mb-12 bg-gradient-to-br from-[#1e3a4c]/5 via-[#ea580c]/5 to-transparent rounded-2xl p-6 border border-[#1e3a4c]/10">
+          <section className="mb-12 bg-gradient-to-br from-primary/5 via-accent-hover/5 to-transparent rounded-2xl p-6 border border-primary/10">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-3">
-                <div className="bg-[#ea580c] text-white p-2 rounded-lg">
+                <div className="bg-accent-hover text-white p-2 rounded-lg">
                   <Award className="w-5 h-5" />
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold text-[#1e3a4c]">
+                  <h2 className="text-xl font-bold text-primary">
                     Sponsored Partners
                   </h2>
                   <p className="text-sm text-gray-600">
@@ -239,7 +239,7 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
         {/* All Operators */}
         <section>
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl font-bold text-[#1e3a4c]">
+            <h2 className="text-xl font-bold text-primary">
               All Adventure Providers
             </h2>
             <p className="text-gray-500 text-sm">
@@ -271,7 +271,7 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
                   setSelectedCategory('');
                   setSelectedRating('');
                 }}
-                className="text-[#ea580c] hover:text-[#ea580c] font-medium text-sm"
+                className="text-accent-hover hover:text-accent-hover font-medium text-sm"
               >
                 Clear all filters
               </button>

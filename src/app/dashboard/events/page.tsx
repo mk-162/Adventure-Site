@@ -21,12 +21,12 @@ export default async function DashboardEventsPage() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-[#1e3a4c]">My Events</h1>
+          <h1 className="text-2xl font-bold text-primary">My Events</h1>
           <p className="text-gray-500">Manage your events and listings</p>
         </div>
         <Link
           href="/dashboard/events/new"
-          className="flex items-center gap-2 bg-[#ea580c] text-white px-4 py-2 rounded-lg font-bold hover:bg-[#ea580c] transition-colors"
+          className="flex items-center gap-2 bg-accent-hover text-white px-4 py-2 rounded-lg font-bold hover:bg-accent-hover transition-colors"
         >
           <Plus className="w-5 h-5" />
           Add Event
@@ -39,13 +39,13 @@ export default async function DashboardEventsPage() {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-4">
               <Calendar className="w-8 h-8 text-gray-400" />
             </div>
-            <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">No events yet</h3>
+            <h3 className="text-lg font-bold text-primary mb-2">No events yet</h3>
             <p className="text-gray-500 mb-6 max-w-md mx-auto">
               Create your first event listing to reach thousands of outdoor enthusiasts across Wales.
             </p>
             <Link
               href="/dashboard/events/new"
-              className="inline-flex items-center gap-2 text-[#ea580c] font-bold hover:underline"
+              className="inline-flex items-center gap-2 text-accent-hover font-bold hover:underline"
             >
               Create an event
             </Link>
@@ -65,7 +65,7 @@ export default async function DashboardEventsPage() {
                     )}
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#1e3a4c] text-lg mb-1">{event.name}</h3>
+                    <h3 className="font-bold text-primary text-lg mb-1">{event.name}</h3>
                     <div className="flex flex-wrap gap-3 text-sm text-gray-500">
                       <span className="flex items-center gap-1">
                         <Clock className="w-4 h-4" />
@@ -92,11 +92,11 @@ export default async function DashboardEventsPage() {
                   </div>
 
                   {event.isPromoted ? (
-                    <span className="flex items-center gap-1 text-xs font-bold text-[#ea580c]">
+                    <span className="flex items-center gap-1 text-xs font-bold text-accent-hover">
                       <Star className="w-3 h-3 fill-current" /> Promoted
                     </span>
                   ) : (
-                    <button className="text-sm font-medium text-[#ea580c] hover:underline">
+                    <button className="text-sm font-medium text-accent-hover hover:underline">
                       Promote
                     </button>
                   )}

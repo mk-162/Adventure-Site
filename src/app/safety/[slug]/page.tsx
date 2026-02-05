@@ -35,8 +35,8 @@ function getSafetyContent(slug: string): { title: string; content: string } | nu
 function markdownToHtml(md: string): string {
   return md
     // Headers
-    .replace(/^### (.+)$/gm, '<h3 class="text-xl font-semibold text-[#1e3a4c] mt-8 mb-4">$1</h3>')
-    .replace(/^## (.+)$/gm, '<h2 class="text-2xl font-bold text-[#1e3a4c] mt-10 mb-4">$1</h2>')
+    .replace(/^### (.+)$/gm, '<h3 class="text-xl font-semibold text-primary mt-8 mb-4">$1</h3>')
+    .replace(/^## (.+)$/gm, '<h2 class="text-2xl font-bold text-primary mt-10 mb-4">$1</h2>')
     // Bold
     .replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold">$1</strong>')
     // Italic
@@ -45,7 +45,7 @@ function markdownToHtml(md: string): string {
     .replace(/^- (.+)$/gm, '<li class="ml-4">$1</li>')
     .replace(/(<li.*<\/li>\n?)+/g, '<ul class="list-disc list-inside space-y-2 my-4">$&</ul>')
     // Links
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-[#ea580c] hover:underline">$1</a>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-accent-hover hover:underline">$1</a>')
     // Paragraphs
     .replace(/^(?!<[hul]|<li)(.+)$/gm, '<p class="text-gray-700 leading-relaxed mb-4">$1</p>')
     // Clean up
@@ -65,7 +65,7 @@ export default async function SafetyGuidePage({ params }: Props) {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero */}
-      <section className="bg-[#1e3a4c] py-12">
+      <section className="bg-primary py-12">
         <div className="max-w-4xl mx-auto px-4">
           <nav className="text-sm text-gray-400 mb-4">
             <Link href="/safety" className="hover:text-white">
@@ -75,7 +75,7 @@ export default async function SafetyGuidePage({ params }: Props) {
             <span className="text-white">{guide.title}</span>
           </nav>
           <div className="flex items-center gap-4">
-            <AlertTriangle className="w-10 h-10 text-[#ea580c]" />
+            <AlertTriangle className="w-10 h-10 text-accent-hover" />
             <h1 className="text-3xl md:text-4xl font-bold text-white">
               {guide.title}
             </h1>
@@ -108,7 +108,7 @@ export default async function SafetyGuidePage({ params }: Props) {
         <div className="mt-12 pt-8 border-t">
           <Link
             href="/safety"
-            className="text-[#ea580c] hover:underline flex items-center gap-2"
+            className="text-accent-hover hover:underline flex items-center gap-2"
           >
             ← Back to safety information
           </Link>

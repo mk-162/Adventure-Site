@@ -52,7 +52,7 @@ export function ThingsToBook({ stops, itinerarySlug, mode }: ThingsToBookProps) 
   return (
     <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#1e3a4c] to-[#2d5a73] px-5 py-3">
+      <div className="bg-gradient-to-r from-primary to-[#2d5a73] px-5 py-3">
         <h3 className="text-white font-bold text-sm flex items-center gap-2">
           <ClipboardList className="w-4 h-4" />
           Things to Book
@@ -108,7 +108,7 @@ export function ThingsToBook({ stops, itinerarySlug, mode }: ThingsToBookProps) 
                     "text-sm font-medium block transition-colors",
                     checked
                       ? "text-green-700 line-through"
-                      : "text-[#1e3a4c]"
+                      : "text-primary"
                   )}
                 >
                   Book {item.label}
@@ -130,7 +130,7 @@ export function ThingsToBook({ stops, itinerarySlug, mode }: ThingsToBookProps) 
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  className="shrink-0 text-[#ea580c] hover:text-[#ea580c] p-1 rounded-md hover:bg-orange-50 transition-colors"
+                  className="shrink-0 text-accent-hover hover:text-accent-hover p-1 rounded-md hover:bg-orange-50 transition-colors"
                   title="Book now"
                 >
                   <ExternalLink className="w-4 h-4" />

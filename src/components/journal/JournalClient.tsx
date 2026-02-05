@@ -13,7 +13,7 @@ const categories = [
   { value: "seasonal", label: "Seasonal", color: "#f59e0b", image: "/images/misc/seasonal-autumn-01-b078c4e2.jpg", description: "What to do each season across Wales" },
   { value: "news", label: "News", color: "#a855f7", image: "/images/misc/events-festival-01-33fb98e2.jpg", description: "Latest from the Welsh adventure scene" },
   { value: "trip-report", label: "Trip Reports", color: "#14b8a6", image: "/images/activities/coasteering-hero.jpg", description: "Real stories from real adventures in Wales" },
-  { value: "spotlight", label: "Spotlight", color: "#ea580c", image: "/images/misc/partner-business-01-7f12dce4.jpg", description: "Profiles of Wales' best adventure operators" },
+  { value: "spotlight", label: "Spotlight", color: "var(--color-accent)", image: "/images/misc/partner-business-01-7f12dce4.jpg", description: "Profiles of Wales' best adventure operators" },
 ];
 
 const categoryColors: Record<string, string> = {
@@ -23,7 +23,7 @@ const categoryColors: Record<string, string> = {
   seasonal: "#f59e0b",
   news: "#a855f7",
   "trip-report": "#14b8a6",
-  spotlight: "#ea580c",
+  spotlight: "var(--color-accent)",
 };
 
 const categoryFallbackImages: Record<string, string> = {
@@ -118,7 +118,7 @@ export default function JournalClient({
               onClick={() => handleCategoryChange(cat.value)}
               className={`group relative overflow-hidden rounded-xl h-32 transition-all ${
                 selectedCategory === cat.value
-                  ? "ring-3 ring-[#ea580c] shadow-xl scale-[1.02]"
+                  ? "ring-3 ring-accent-hover shadow-xl scale-[1.02]"
                   : "hover:shadow-lg hover:scale-[1.01]"
               }`}
             >
@@ -141,7 +141,7 @@ export default function JournalClient({
                 <p className="text-white text-xs leading-tight line-clamp-2">{cat.description}</p>
               </div>
               {selectedCategory === cat.value && (
-                <div className="absolute top-2 right-2 bg-[#ea580c] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">✓</div>
+                <div className="absolute top-2 right-2 bg-accent-hover text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">✓</div>
               )}
             </button>
           ))}
@@ -149,7 +149,7 @@ export default function JournalClient({
         {selectedCategory && (
           <button
             onClick={() => handleCategoryChange(selectedCategory)}
-            className="text-sm text-slate-500 hover:text-[#ea580c] transition-colors"
+            className="text-sm text-slate-500 hover:text-accent-hover transition-colors"
           >
             ← Show all articles
           </button>
@@ -165,7 +165,7 @@ export default function JournalClient({
                 onClick={() => handleTagChange(tag.slug)}
                 className={`px-3 py-1 rounded-full text-xs font-medium transition-all ${
                   selectedTag === tag.slug
-                    ? "bg-[#ea580c] text-white"
+                    ? "bg-accent-hover text-white"
                     : "bg-slate-50 text-slate-600 hover:bg-slate-100 border border-slate-200"
                 }`}
               >
@@ -216,7 +216,7 @@ export default function JournalClient({
                             </span>
                           </div>
 
-                          <h2 className="text-xl md:text-2xl font-bold text-[#1e3a4c] mb-3 group-hover:text-[#ea580c] transition-colors">
+                          <h2 className="text-xl md:text-2xl font-bold text-primary mb-3 group-hover:text-accent-hover transition-colors">
                             {post.post.title}
                           </h2>
 
@@ -246,7 +246,7 @@ export default function JournalClient({
                                 {post.post.readTimeMinutes} min read
                               </span>
                             )}
-                            <span className="ml-auto text-[#ea580c] font-semibold group-hover:underline">
+                            <span className="ml-auto text-accent-hover font-semibold group-hover:underline">
                               Read More →
                             </span>
                           </div>
@@ -263,7 +263,7 @@ export default function JournalClient({
                   <button
                     onClick={handleLoadMore}
                     disabled={loadingMore}
-                    className="px-8 py-3 bg-[#1e3a4c] text-white rounded-full font-semibold hover:bg-[#2d5568] transition-colors disabled:opacity-50"
+                    className="px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-[#2d5568] transition-colors disabled:opacity-50"
                   >
                     {loadingMore ? (
                       <span className="flex items-center gap-2">
@@ -284,7 +284,7 @@ export default function JournalClient({
         <div className="space-y-8">
           {/* Popular Itineraries */}
           <div className="bg-slate-50 rounded-2xl p-6">
-            <h3 className="text-xl font-bold text-[#1e3a4c] mb-4">Popular Itineraries</h3>
+            <h3 className="text-xl font-bold text-primary mb-4">Popular Itineraries</h3>
             <div className="space-y-3">
               {itineraries.map((item: any) => (
                 <Link
@@ -292,7 +292,7 @@ export default function JournalClient({
                   href={`/itineraries/${item.itinerary.slug}`}
                   className="block p-3 bg-white rounded-lg hover:shadow-md transition-shadow border border-slate-200"
                 >
-                  <h4 className="font-semibold text-[#1e3a4c] text-sm mb-1">
+                  <h4 className="font-semibold text-primary text-sm mb-1">
                     {item.itinerary.title}
                   </h4>
                   {item.itinerary.tagline && (
@@ -305,7 +305,7 @@ export default function JournalClient({
 
           {/* Featured Operators */}
           <div className="bg-slate-50 rounded-2xl p-6">
-            <h3 className="text-xl font-bold text-[#1e3a4c] mb-4">Featured Operators</h3>
+            <h3 className="text-xl font-bold text-primary mb-4">Featured Operators</h3>
             <div className="space-y-3">
               {operators.map((op: any) => (
                 <Link
@@ -313,7 +313,7 @@ export default function JournalClient({
                   href={`/directory/${op.slug}`}
                   className="block p-3 bg-white rounded-lg hover:shadow-md transition-shadow border border-slate-200"
                 >
-                  <h4 className="font-semibold text-[#1e3a4c] text-sm mb-1">{op.name}</h4>
+                  <h4 className="font-semibold text-primary text-sm mb-1">{op.name}</h4>
                   {op.tagline && (
                     <p className="text-xs text-slate-600 line-clamp-2">{op.tagline}</p>
                   )}
@@ -324,13 +324,13 @@ export default function JournalClient({
 
           {/* Browse by Tag */}
           <div className="bg-slate-50 rounded-2xl p-6">
-            <h3 className="text-xl font-bold text-[#1e3a4c] mb-4">Browse by Tag</h3>
+            <h3 className="text-xl font-bold text-primary mb-4">Browse by Tag</h3>
             <div className="flex flex-wrap gap-2">
               {tags.slice(0, 20).map((tag: any) => (
                 <Link
                   key={tag.slug}
                   href={`/tags/${tag.slug}`}
-                  className="px-3 py-1 bg-white text-slate-700 text-xs rounded-full hover:bg-[#ea580c] hover:text-white transition-colors border border-slate-200"
+                  className="px-3 py-1 bg-white text-slate-700 text-xs rounded-full hover:bg-accent-hover hover:text-white transition-colors border border-slate-200"
                 >
                   {tag.name}
                 </Link>

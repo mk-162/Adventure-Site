@@ -42,7 +42,7 @@ export function ShareEventButton({ eventName, eventUrl }: ShareEventButtonProps)
         onClick={handleShare}
         className="flex flex-col items-center gap-1 group"
       >
-        <div className="p-3 rounded-full bg-gray-100 text-gray-500 hover:bg-[#1e3a4c] hover:text-white transition-all duration-300">
+        <div className="p-3 rounded-full bg-gray-100 text-gray-500 hover:bg-primary hover:text-white transition-all duration-300">
           <Share2 className="w-6 h-6" />
         </div>
         <span className="text-xs font-medium text-gray-500">Share</span>

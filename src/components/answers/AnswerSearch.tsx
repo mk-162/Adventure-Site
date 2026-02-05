@@ -122,8 +122,8 @@ export function AnswerSearch({ answers, regions }: AnswerSearchProps) {
             onClick={() => setActiveTag(activeTag === tag ? null : tag)}
             className={`px-3 py-1.5 text-sm rounded-full border transition-colors ${
               activeTag === tag
-                ? "bg-[#1e3a4c] text-white border-[#1e3a4c]"
-                : "bg-gray-100 hover:bg-[#1e3a4c]/10 text-gray-700 border-gray-200"
+                ? "bg-primary text-white border-primary"
+                : "bg-gray-100 hover:bg-primary/10 text-gray-700 border-gray-200"
             }`}
           >
             {tag}
@@ -158,8 +158,8 @@ export function AnswerSearch({ answers, regions }: AnswerSearchProps) {
           {/* Featured Questions (only when not filtering) */}
           {featuredQuestions.length > 0 && (
             <section className="mb-10">
-              <h2 className="text-xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                <Compass className="w-5 h-5 text-[#ea580c]" />
+              <h2 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                <Compass className="w-5 h-5 text-accent-hover" />
                 Popular Questions
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -167,13 +167,13 @@ export function AnswerSearch({ answers, regions }: AnswerSearchProps) {
                   <Link
                     key={answer.slug}
                     href={`/answers/${answer.slug}`}
-                    className="group bg-white rounded-xl p-5 border border-gray-200 hover:border-[#1e3a4c]/30 hover:shadow-md transition-all"
+                    className="group bg-white rounded-xl p-5 border border-gray-200 hover:border-primary/30 hover:shadow-md transition-all"
                   >
                     <div className="flex items-start gap-3 mb-3">
-                      <div className="p-2 bg-[#1e3a4c]/10 rounded-lg text-[#1e3a4c] shrink-0">
+                      <div className="p-2 bg-primary/10 rounded-lg text-primary shrink-0">
                         <HelpCircle className="w-5 h-5" />
                       </div>
-                      <h3 className="font-semibold text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors line-clamp-2">
+                      <h3 className="font-semibold text-primary group-hover:text-accent-hover transition-colors line-clamp-2">
                         {answer.question}
                       </h3>
                     </div>
@@ -192,8 +192,8 @@ export function AnswerSearch({ answers, regions }: AnswerSearchProps) {
           {/* Questions by Category */}
           {categories.map((category) => (
             <section key={category} className="mb-8">
-              <h2 className="text-lg font-bold text-[#1e3a4c] mb-4 flex items-center gap-2 pb-2 border-b border-gray-200">
-                <Tag className="w-4 h-4 text-[#ea580c]" />
+              <h2 className="text-lg font-bold text-primary mb-4 flex items-center gap-2 pb-2 border-b border-gray-200">
+                <Tag className="w-4 h-4 text-accent-hover" />
                 {category}
                 <span className="text-sm font-normal text-gray-400">
                   ({byCategory[category].length})
@@ -204,23 +204,23 @@ export function AnswerSearch({ answers, regions }: AnswerSearchProps) {
                   <Link
                     key={answer.slug}
                     href={`/answers/${answer.slug}`}
-                    className="group flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-100 hover:border-[#1e3a4c]/20 hover:shadow-sm transition-all"
+                    className="group flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-100 hover:border-primary/20 hover:shadow-sm transition-all"
                   >
-                    <HelpCircle className="w-5 h-5 text-gray-300 group-hover:text-[#ea580c] shrink-0 mt-0.5 transition-colors" />
+                    <HelpCircle className="w-5 h-5 text-gray-300 group-hover:text-accent-hover shrink-0 mt-0.5 transition-colors" />
                     <div className="flex-1 min-w-0">
-                      <h3 className="font-medium text-gray-800 group-hover:text-[#1e3a4c] transition-colors line-clamp-1">
+                      <h3 className="font-medium text-gray-800 group-hover:text-primary transition-colors line-clamp-1">
                         {answer.question}
                       </h3>
                       <p className="text-sm text-gray-500 mt-1 line-clamp-1">
                         {answer.quickAnswer.replace(/\*\*/g, "")}
                       </p>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-[#ea580c] shrink-0 self-center transition-colors" />
+                    <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-accent-hover shrink-0 self-center transition-colors" />
                   </Link>
                 ))}
 
                 {!isFiltered && byCategory[category].length > 8 && (
-                  <button className="text-sm text-[#1e3a4c] font-medium hover:underline pl-8">
+                  <button className="text-sm text-primary font-medium hover:underline pl-8">
                     View all {byCategory[category].length} questions →
                   </button>
                 )}
@@ -241,7 +241,7 @@ export function AnswerSearch({ answers, regions }: AnswerSearchProps) {
                   setQuery("");
                   setActiveTag(null);
                 }}
-                className="text-[#ea580c] font-medium hover:underline"
+                className="text-accent-hover font-medium hover:underline"
               >
                 Show all questions
               </button>
@@ -254,8 +254,8 @@ export function AnswerSearch({ answers, regions }: AnswerSearchProps) {
           <div className="sticky top-24 space-y-6">
             {/* Browse by Region */}
             <div className="bg-white rounded-xl border border-gray-200 p-5 shadow-sm">
-              <h3 className="font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-[#ea580c]" />
+              <h3 className="font-bold text-primary mb-4 flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-accent-hover" />
                 Browse by Region
               </h3>
               <ul className="space-y-2">
@@ -276,7 +276,7 @@ export function AnswerSearch({ answers, regions }: AnswerSearchProps) {
             </div>
 
             {/* CTA Card */}
-            <div className="bg-[#1e3a4c] rounded-xl p-6 text-white relative overflow-hidden">
+            <div className="bg-primary rounded-xl p-6 text-white relative overflow-hidden">
               <div className="absolute -right-10 -top-10 w-32 h-32 bg-white/10 rounded-full blur-2xl" />
               <h3 className="text-xl font-bold mb-2 relative z-10">
                 Can&apos;t find an answer?
@@ -286,15 +286,15 @@ export function AnswerSearch({ answers, regions }: AnswerSearchProps) {
               </p>
               <Link
                 href="/contact"
-                className="block w-full py-3 bg-white text-[#1e3a4c] font-bold rounded-lg text-sm text-center hover:bg-gray-100 transition-colors relative z-10"
+                className="block w-full py-3 bg-white text-primary font-bold rounded-lg text-sm text-center hover:bg-gray-100 transition-colors relative z-10"
               >
                 Ask a Question
               </Link>
             </div>
 
             {/* Quick Stats */}
-            <div className="bg-[#ea580c]/10 rounded-xl p-5 border border-[#ea580c]/20">
-              <p className="text-3xl font-bold text-[#1e3a4c]">
+            <div className="bg-accent-hover/10 rounded-xl p-5 border border-accent-hover/20">
+              <p className="text-3xl font-bold text-primary">
                 {answers.length}
               </p>
               <p className="text-sm text-gray-600">Questions answered</p>

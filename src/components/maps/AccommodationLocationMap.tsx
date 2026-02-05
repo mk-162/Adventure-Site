@@ -30,7 +30,7 @@ export function AccommodationLocationMap({
 
   return (
     <div className="bg-white rounded-xl p-6 shadow-sm">
-      <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">
+      <h2 className="text-xl font-bold text-primary mb-4">
         Location & Nearby Activities
       </h2>
       <MapView

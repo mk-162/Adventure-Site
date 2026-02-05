@@ -23,7 +23,7 @@ export function ActivityLocationMap({ markers, center, nearbyCount }: ActivityLo
 
   return (
     <section>
-      <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">
+      <h2 className="text-xl font-bold text-primary mb-4">
         Location & Nearby Accommodation
       </h2>
       <MapView

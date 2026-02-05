@@ -22,7 +22,7 @@ export function FAQAccordion({ items }: { items: FAQItem[] }) {
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
             className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-slate-50 transition-colors"
           >
-            <span className="font-semibold text-[#1e3a4c] pr-4">
+            <span className="font-semibold text-primary pr-4">
               {item.question}
             </span>
             <ChevronDown

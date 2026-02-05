@@ -60,7 +60,7 @@ export default function GuidesPage() {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero */}
-      <section className="bg-[#1e3a4c] py-12">
+      <section className="bg-primary py-12">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Honest Guides
@@ -75,7 +75,7 @@ export default function GuidesPage() {
         {/* Activity Guides */}
         {categoryGuides.length > 0 && (
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-[#1e3a4c] mb-6">
+            <h2 className="text-2xl font-bold text-primary mb-6">
               Activity Guides
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -83,9 +83,9 @@ export default function GuidesPage() {
                 <Link
                   key={guide.slug}
                   href={`/guides/${guide.slug}`}
-                  className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-[#ea580c] transition-all"
+                  className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-accent-hover transition-all"
                 >
-                  <h3 className="text-lg font-semibold text-[#1e3a4c] mb-2 capitalize">
+                  <h3 className="text-lg font-semibold text-primary mb-2 capitalize">
                     {guide.title}
                   </h3>
                   <p className="text-gray-600 text-sm line-clamp-2">
@@ -100,7 +100,7 @@ export default function GuidesPage() {
         {/* Gear Guides */}
         {gearGuides.length > 0 && (
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-[#1e3a4c] mb-6">
+            <h2 className="text-2xl font-bold text-primary mb-6">
               Gear Guides
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -108,9 +108,9 @@ export default function GuidesPage() {
                 <Link
                   key={guide.slug}
                   href={`/guides/${guide.slug}`}
-                  className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-[#ea580c] transition-all"
+                  className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-accent-hover transition-all"
                 >
-                  <h3 className="text-lg font-semibold text-[#1e3a4c] mb-2 capitalize">
+                  <h3 className="text-lg font-semibold text-primary mb-2 capitalize">
                     {guide.title}
                   </h3>
                   <p className="text-gray-600 text-sm line-clamp-2">
@@ -125,7 +125,7 @@ export default function GuidesPage() {
         {/* Seasonal Guides */}
         {seasonalGuides.length > 0 && (
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-[#1e3a4c] mb-6">
+            <h2 className="text-2xl font-bold text-primary mb-6">
               Seasonal Guides
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -133,9 +133,9 @@ export default function GuidesPage() {
                 <Link
                   key={guide.slug}
                   href={`/guides/${guide.slug}`}
-                  className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-[#ea580c] transition-all"
+                  className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-accent-hover transition-all"
                 >
-                  <h3 className="text-lg font-semibold text-[#1e3a4c] mb-2 capitalize">
+                  <h3 className="text-lg font-semibold text-primary mb-2 capitalize">
                     {guide.title}
                   </h3>
                   <p className="text-gray-600 text-sm line-clamp-2">

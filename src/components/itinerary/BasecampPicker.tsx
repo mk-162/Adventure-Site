@@ -131,14 +131,14 @@ function PostcodeSearch({
             <div className="text-[10px] font-bold text-blue-500 uppercase tracking-wider">
               Your Location
             </div>
-            <div className="text-sm font-bold text-[#1e3a4c] truncate">
+            <div className="text-sm font-bold text-primary truncate">
               {currentLocation.label}
             </div>
           </div>
         </div>
         <button
           onClick={handleChange}
-          className="text-sm font-bold text-[#ea580c] hover:text-[#ea580c]/80 transition-colors whitespace-nowrap"
+          className="text-sm font-bold text-accent-hover hover:text-accent-hover/80 transition-colors whitespace-nowrap"
         >
           Change
         </button>
@@ -156,7 +156,7 @@ function PostcodeSearch({
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => results.length > 0 && setShowResults(true)}
           placeholder="Enter postcode or town (e.g. SA1 1DP, Swansea)"
-          className="w-full pl-9 pr-10 py-3 rounded-xl border-2 border-gray-200 focus:border-[#ea580c] focus:outline-none text-sm placeholder:text-gray-400 transition-colors"
+          className="w-full pl-9 pr-10 py-3 rounded-xl border-2 border-gray-200 focus:border-accent-hover focus:outline-none text-sm placeholder:text-gray-400 transition-colors"
           autoFocus
         />
         {isSearching && (
@@ -287,8 +287,8 @@ export function BasecampPicker({
         {/* Header */}
         <div className="p-6 border-b border-gray-200 flex items-center justify-between">
           <div>
-            <h2 className="text-2xl font-bold text-[#1e3a4c] flex items-center gap-2">
-              <Home className="w-6 h-6 text-[#ea580c]" />
+            <h2 className="text-2xl font-bold text-primary flex items-center gap-2">
+              <Home className="w-6 h-6 text-accent-hover" />
               Select Your Basecamp
             </h2>
             <p className="text-sm text-gray-600 mt-1">
@@ -333,18 +333,18 @@ export function BasecampPicker({
                 className={clsx(
                   "w-full text-left p-4 rounded-xl border-2 transition-all hover:shadow-md",
                   selectedId === acc.id
-                    ? "border-[#ea580c] bg-orange-50"
+                    ? "border-accent-hover bg-orange-50"
                     : "border-gray-200 bg-white hover:border-gray-300"
                 )}
               >
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
                     <div className="flex items-start gap-2">
-                      <h3 className="font-bold text-[#1e3a4c] text-lg">
+                      <h3 className="font-bold text-primary text-lg">
                         {acc.name}
                       </h3>
                       {selectedId === acc.id && (
-                        <span className="bg-[#ea580c] text-white text-xs font-bold px-2 py-0.5 rounded-full shrink-0">
+                        <span className="bg-accent-hover text-white text-xs font-bold px-2 py-0.5 rounded-full shrink-0">
                           SELECTED
                         </span>
                       )}
@@ -376,7 +376,7 @@ export function BasecampPicker({
                       </div>
                     )}
                     {acc.drivingTime && !acc.drivingTimeToUser && (
-                      <div className="mt-2 text-[#ea580c] font-bold text-sm">
+                      <div className="mt-2 text-accent-hover font-bold text-sm">
                         {acc.drivingTime} drive
                       </div>
                     )}
@@ -399,7 +399,7 @@ export function BasecampPicker({
                     className={clsx(
                       "w-5 h-5 rounded-full border-2 shrink-0 mt-1 transition-all",
                       selectedId === acc.id
-                        ? "border-[#ea580c] bg-[#ea580c]"
+                        ? "border-accent-hover bg-accent-hover"
                         : "border-gray-300"
                     )}
                   >
@@ -427,7 +427,7 @@ export function BasecampPicker({
             className={clsx(
               "flex-1 px-6 py-3 font-bold rounded-xl transition-all",
               selectedId !== null
-                ? "bg-[#ea580c] text-white hover:bg-[#ea580c]/90 shadow-lg shadow-[#ea580c]/20"
+                ? "bg-accent-hover text-white hover:bg-accent-hover/90 shadow-lg shadow-accent-hover/20"
                 : "bg-gray-200 text-gray-400 cursor-not-allowed"
             )}
           >

@@ -30,7 +30,7 @@ export function BookingWidget({ regionName, checkIn, checkOut }: BookingWidgetPr
           <Bed className="w-5 h-5 text-white" />
         </div>
         <div>
-          <h4 className="font-bold text-[#1e3a4c] text-sm lg:text-base">
+          <h4 className="font-bold text-primary text-sm lg:text-base">
             Find accommodation in {regionName}
           </h4>
           <p className="text-xs text-gray-500">

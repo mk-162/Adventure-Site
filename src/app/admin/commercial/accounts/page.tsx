@@ -61,7 +61,7 @@ export default async function AccountsPage() {
       <div className="grid grid-cols-3 gap-4">
         <div className="bg-white rounded-xl border border-gray-100 p-4 shadow-sm">
           <div className="flex items-center gap-2 mb-2">
-            <Building2 className="h-4 w-4 text-[#1e3a4c]" />
+            <Building2 className="h-4 w-4 text-primary" />
             <span className="text-xs font-medium text-gray-500">Accounts</span>
           </div>
           <p className="text-2xl font-bold text-gray-900">{accounts.length}</p>
@@ -85,27 +85,27 @@ export default async function AccountsPage() {
       {/* Create New Account */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
         <h2 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
-          <Plus className="h-5 w-5 text-[#ea580c]" />
+          <Plus className="h-5 w-5 text-accent-hover" />
           New Account
         </h2>
         <form action={createAccount} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <input name="name" placeholder="Company name *" required
-            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent" />
+            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-accent-hover focus:border-transparent" />
           <input name="contactName" placeholder="Contact name"
-            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent" />
+            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-accent-hover focus:border-transparent" />
           <input name="primaryEmail" type="email" placeholder="Email"
-            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent" />
+            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-accent-hover focus:border-transparent" />
           <input name="primaryPhone" placeholder="Phone"
-            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent" />
+            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-accent-hover focus:border-transparent" />
           <input name="billingEmail" type="email" placeholder="Billing email (if different)"
-            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent" />
+            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-accent-hover focus:border-transparent" />
           <input name="billingCustomAmount" type="number" step="0.01" placeholder="Custom £/mo"
-            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent" />
+            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-accent-hover focus:border-transparent" />
           <input name="billingNotes" placeholder="Billing notes (discounts, extras)"
-            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent" />
+            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-accent-hover focus:border-transparent" />
           <div className="flex items-end">
             <button type="submit"
-              className="w-full px-4 py-2 bg-[#ea580c] text-white rounded-lg hover:bg-[#ea580c] text-sm font-medium transition-colors">
+              className="w-full px-4 py-2 bg-accent-hover text-white rounded-lg hover:bg-accent-hover text-sm font-medium transition-colors">
               Create Account
             </button>
           </div>

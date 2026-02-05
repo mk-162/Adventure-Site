@@ -67,7 +67,7 @@ export function EventCalendar({ events }: EventCalendarProps) {
     <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
       {/* Header */}
       <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-gray-50">
-        <h2 className="text-lg font-bold text-[#1e3a4c]">
+        <h2 className="text-lg font-bold text-primary">
           {MONTHS[month]} {year}
         </h2>
         <div className="flex gap-2">
@@ -116,7 +116,7 @@ export function EventCalendar({ events }: EventCalendarProps) {
                   className={cn(
                     "aspect-square rounded-lg flex flex-col items-center justify-start pt-2 relative transition-colors hover:bg-gray-50",
                     isToday && "bg-blue-50 font-bold text-blue-600",
-                    isSelected && "ring-2 ring-[#ea580c] ring-offset-1 bg-orange-50"
+                    isSelected && "ring-2 ring-accent-hover ring-offset-1 bg-orange-50"
                   )}
                 >
                   <span className={cn("text-sm", isToday && "font-bold")}>{day}</span>
@@ -127,7 +127,7 @@ export function EventCalendar({ events }: EventCalendarProps) {
                           key={e.id}
                           className={cn(
                             "w-1.5 h-1.5 rounded-full",
-                            e.isFeatured ? "bg-[#ea580c]" : "bg-[#1e3a4c]"
+                            e.isFeatured ? "bg-accent-hover" : "bg-primary"
                           )}
                         />
                       ))}
@@ -146,7 +146,7 @@ export function EventCalendar({ events }: EventCalendarProps) {
         {selectedDate && (
           <div className="lg:w-80 border-t lg:border-t-0 lg:border-l border-gray-200 p-4 bg-gray-50/50">
             <div className="mb-4 flex items-center justify-between">
-              <h3 className="font-bold text-[#1e3a4c]">
+              <h3 className="font-bold text-primary">
                 {selectedDate.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" })}
               </h3>
               <button
@@ -167,16 +167,16 @@ export function EventCalendar({ events }: EventCalendarProps) {
                     href={`/events/${event.slug}`}
                     className={cn(
                       "block bg-white p-3 rounded-lg border shadow-sm hover:shadow-md transition-shadow group",
-                      event.isFeatured ? "border-[#ea580c]/30" : "border-gray-200"
+                      event.isFeatured ? "border-accent-hover/30" : "border-gray-200"
                     )}
                   >
                     <div className="flex justify-between items-start mb-1">
-                      <span className="text-xs font-bold text-[#ea580c]">
+                      <span className="text-xs font-bold text-accent-hover">
                         {event.dateStart ? new Date(event.dateStart).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) : 'All Day'}
                       </span>
-                      {event.isFeatured && <Star className="w-3 h-3 text-[#ea580c] fill-[#ea580c]" />}
+                      {event.isFeatured && <Star className="w-3 h-3 text-accent-hover fill-accent-hover" />}
                     </div>
-                    <h4 className="font-bold text-[#1e3a4c] text-sm mb-1 group-hover:text-[#ea580c] transition-colors">
+                    <h4 className="font-bold text-primary text-sm mb-1 group-hover:text-accent-hover transition-colors">
                       {event.name}
                     </h4>
                     {event.location && (

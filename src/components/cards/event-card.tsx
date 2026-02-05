@@ -41,17 +41,17 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
         <div className="flex items-center gap-4">
           {/* Date Badge */}
           <div className="w-14 text-center flex-shrink-0">
-            <div className="text-xs font-semibold text-[#ea580c] uppercase">
+            <div className="text-xs font-semibold text-accent-hover uppercase">
               {date.month}
             </div>
-            <div className="text-2xl font-bold text-[#1e3a4c]">
+            <div className="text-2xl font-bold text-primary">
               {date.day || "—"}
             </div>
           </div>
 
           {/* Event Info */}
           <div>
-            <h3 className="font-semibold text-[#1e3a4c]">{event.name}</h3>
+            <h3 className="font-semibold text-primary">{event.name}</h3>
             <p className="text-sm text-gray-500">
               {event.location || region?.name || "Wales"}
             </p>
@@ -67,7 +67,7 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
           )}
           <Link
             href={`/events/${event.slug}`}
-            className="px-4 py-2 border border-gray-200 text-sm font-medium text-gray-700 rounded-full hover:border-[#ea580c] hover:text-[#ea580c] transition-colors"
+            className="px-4 py-2 border border-gray-200 text-sm font-medium text-gray-700 rounded-full hover:border-accent-hover hover:text-accent-hover transition-colors"
           >
             Details
           </Link>
@@ -83,13 +83,13 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
         className="group block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow"
       >
         {/* Image placeholder */}
-        <div className="relative h-48 bg-gradient-to-br from-[#1e3a4c] to-[#2d5066]">
+        <div className="relative h-48 bg-gradient-to-br from-primary to-[#2d5066]">
           {/* Date Badge */}
           <div className="absolute top-4 left-4 bg-white rounded-lg px-3 py-2 text-center">
-            <div className="text-xs font-semibold text-[#ea580c] uppercase">
+            <div className="text-xs font-semibold text-accent-hover uppercase">
               {date.month}
             </div>
-            <div className="text-xl font-bold text-[#1e3a4c]">
+            <div className="text-xl font-bold text-primary">
               {date.day || "—"}
             </div>
           </div>
@@ -99,7 +99,7 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
         </div>
 
         <div className="p-4">
-          <h3 className="font-bold text-lg text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors mb-2">
+          <h3 className="font-bold text-lg text-primary group-hover:text-accent-hover transition-colors mb-2">
             {event.name}
           </h3>
 
@@ -117,7 +117,7 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
           <div className="flex items-center justify-between">
             {event.type && <TypeBadge type={event.type} />}
             {event.registrationCost && (
-              <span className="text-sm font-semibold text-[#1e3a4c]">
+              <span className="text-sm font-semibold text-primary">
                 From £{event.registrationCost}
               </span>
             )}
@@ -134,17 +134,17 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
       className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
     >
       {/* Header with date */}
-      <div className="bg-[#1e3a4c] p-4 flex items-center gap-4">
+      <div className="bg-primary p-4 flex items-center gap-4">
         <div className="bg-white rounded-lg px-3 py-2 text-center">
-          <div className="text-xs font-semibold text-[#ea580c] uppercase">
+          <div className="text-xs font-semibold text-accent-hover uppercase">
             {date.month}
           </div>
-          <div className="text-xl font-bold text-[#1e3a4c]">
+          <div className="text-xl font-bold text-primary">
             {date.day || "—"}
           </div>
         </div>
         <div className="flex-1">
-          <h3 className="font-bold text-white group-hover:text-[#ea580c] transition-colors line-clamp-1">
+          <h3 className="font-bold text-white group-hover:text-accent-hover transition-colors line-clamp-1">
             {event.name}
           </h3>
           <p className="text-white/70 text-sm flex items-center gap-1">
@@ -164,7 +164,7 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
         <div className="flex items-center justify-between">
           {event.type && <TypeBadge type={event.type} />}
           {event.registrationCost && (
-            <span className="text-sm font-semibold text-[#1e3a4c]">
+            <span className="text-sm font-semibold text-primary">
               From £{event.registrationCost}
             </span>
           )}

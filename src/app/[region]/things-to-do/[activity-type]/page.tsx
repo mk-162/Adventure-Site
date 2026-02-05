@@ -75,20 +75,20 @@ export default async function ActivityListingPage({ params }: PageProps) {
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-8">
         {/* Breadcrumbs */}
         <nav className="flex flex-wrap items-center gap-2 text-xs lg:text-sm text-gray-500 mb-4 lg:mb-6">
-          <Link href="/" className="hover:text-[#1e3a4c]">Home</Link>
+          <Link href="/" className="hover:text-primary">Home</Link>
           <ChevronRight className="w-3 h-3" />
-          <Link href={`/${region.slug}`} className="hover:text-[#1e3a4c]">{region.name}</Link>
+          <Link href={`/${region.slug}`} className="hover:text-primary">{region.name}</Link>
           <ChevronRight className="w-3 h-3" />
-          <Link href={`/${region.slug}/things-to-do`} className="hover:text-[#1e3a4c]">Things to Do</Link>
+          <Link href={`/${region.slug}/things-to-do`} className="hover:text-primary">Things to Do</Link>
           <ChevronRight className="w-3 h-3" />
           <span className="text-[#141515] font-medium">{activityType.name}</span>
         </nav>
 
-        <div className="bg-gradient-to-br from-[#1e3a4c]/5 to-[#ea580c]/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200 mb-10">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#ea580c]/10 mb-6">
-            <Compass className="w-8 h-8 text-[#ea580c]" />
+        <div className="bg-gradient-to-br from-primary/5 to-accent-hover/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200 mb-10">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent-hover/10 mb-6">
+            <Compass className="w-8 h-8 text-accent-hover" />
           </div>
-          <h1 className="text-2xl lg:text-3xl font-black text-[#1e3a4c] mb-3">
+          <h1 className="text-2xl lg:text-3xl font-black text-primary mb-3">
             No {activityType.name} in {region.name} yet
           </h1>
           <p className="text-gray-600 text-base lg:text-lg max-w-2xl mx-auto mb-8">
@@ -105,7 +105,7 @@ export default async function ActivityListingPage({ params }: PageProps) {
                 <Link
                   key={r.slug}
                   href={`/${r.slug}/things-to-do/${activityTypeSlug}`}
-                  className="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 hover:border-[#1e3a4c]/30 hover:shadow-md transition-all text-sm font-medium text-[#1e3a4c]"
+                  className="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 hover:border-primary/30 hover:shadow-md transition-all text-sm font-medium text-primary"
                 >
                   <Map className="w-4 h-4" />
                   {r.name}
@@ -124,7 +124,7 @@ export default async function ActivityListingPage({ params }: PageProps) {
                 <Link
                   key={type.id}
                   href={`/${region.slug}/things-to-do/${type.slug}`}
-                  className="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 hover:border-[#ea580c]/30 hover:shadow-md transition-all text-sm font-medium text-[#1e3a4c]"
+                  className="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 hover:border-accent-hover/30 hover:shadow-md transition-all text-sm font-medium text-primary"
                 >
                   {type.name}
                 </Link>
@@ -135,14 +135,14 @@ export default async function ActivityListingPage({ params }: PageProps) {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href={`/${region.slug}/things-to-do`}
-              className="inline-flex items-center justify-center gap-2 bg-[#1e3a4c] text-white font-bold py-3 px-6 rounded-full hover:bg-[#2d5568] transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-primary text-white font-bold py-3 px-6 rounded-full hover:bg-[#2d5568] transition-colors"
             >
               All Things to Do in {region.name}
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
               href="/activities"
-              className="inline-flex items-center justify-center gap-2 bg-white text-[#1e3a4c] font-bold py-3 px-6 rounded-full border border-gray-200 hover:border-[#1e3a4c]/30 transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-white text-primary font-bold py-3 px-6 rounded-full border border-gray-200 hover:border-primary/30 transition-colors"
             >
               Browse All Activities
             </Link>
@@ -180,11 +180,11 @@ export default async function ActivityListingPage({ params }: PageProps) {
     <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-8">
       {/* Breadcrumbs */}
       <nav className="flex flex-wrap items-center gap-2 text-xs lg:text-sm text-gray-500 mb-4 lg:mb-6">
-        <Link href="/" className="hover:text-[#1e3a4c]">
+        <Link href="/" className="hover:text-primary">
           Home
         </Link>
         <ChevronRight className="w-3 h-3" />
-        <Link href={`/${region.slug}`} className="hover:text-[#1e3a4c]">
+        <Link href={`/${region.slug}`} className="hover:text-primary">
           {region.name}
         </Link>
         <ChevronRight className="w-3 h-3" />
@@ -193,7 +193,7 @@ export default async function ActivityListingPage({ params }: PageProps) {
 
       {/* Page Header */}
       <div className="mb-6 lg:mb-8">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight mb-2 text-[#1e3a4c]">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight mb-2 text-primary">
           {activityType.name} in {region.name}
         </h1>
         <p className="text-sm lg:text-lg text-gray-500 max-w-3xl">
@@ -204,19 +204,19 @@ export default async function ActivityListingPage({ params }: PageProps) {
       {/* Stats Row */}
       <div className="flex gap-3 mb-4 lg:mb-6 overflow-x-auto no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 sm:overflow-visible">
         <div className="flex min-w-[100px] flex-1 flex-col gap-1 rounded-xl border border-gray-200 p-3 lg:p-4 items-center text-center bg-white shadow-sm shrink-0 sm:shrink">
-          <p className="text-xl lg:text-2xl font-bold text-[#1e3a4c]">{activities.length}</p>
+          <p className="text-xl lg:text-2xl font-bold text-primary">{activities.length}</p>
           <p className="text-gray-500 text-xs font-medium uppercase tracking-wider">
             Experiences
           </p>
         </div>
         <div className="flex min-w-[100px] flex-1 flex-col gap-1 rounded-xl border border-gray-200 p-3 lg:p-4 items-center text-center bg-white shadow-sm shrink-0 sm:shrink">
-          <p className="text-xl lg:text-2xl font-bold text-[#1e3a4c]">{uniqueOperators.size}</p>
+          <p className="text-xl lg:text-2xl font-bold text-primary">{uniqueOperators.size}</p>
           <p className="text-gray-500 text-xs font-medium uppercase tracking-wider">
             Operators
           </p>
         </div>
         <div className="flex min-w-[100px] flex-1 flex-col gap-1 rounded-xl border border-gray-200 p-3 lg:p-4 items-center text-center bg-white shadow-sm shrink-0 sm:shrink">
-          <p className="text-xl lg:text-2xl font-bold text-[#1e3a4c]">
+          <p className="text-xl lg:text-2xl font-bold text-primary">
             {displayMinPrice ? `£${displayMinPrice}+` : "N/A"}
           </p>
           <p className="text-gray-500 text-xs font-medium uppercase tracking-wider">
@@ -228,19 +228,19 @@ export default async function ActivityListingPage({ params }: PageProps) {
       {/* Sticky Filter Bar */}
       <div className="sticky top-[64px] z-40 bg-[#f7f7f7] py-2 mb-4 lg:mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 border-b border-gray-200 lg:border-none">
         <div className="flex gap-2 overflow-x-auto no-scrollbar lg:overflow-visible pb-2">
-          <button className="flex h-9 shrink-0 items-center gap-2 rounded-xl bg-white border border-gray-200 px-4 shadow-sm hover:border-[#1e3a4c] transition-colors text-sm font-medium text-[#1e3a4c]">
+          <button className="flex h-9 shrink-0 items-center gap-2 rounded-xl bg-white border border-gray-200 px-4 shadow-sm hover:border-primary transition-colors text-sm font-medium text-primary">
             Difficulty
             <ChevronDown className="w-4 h-4" />
           </button>
-          <button className="flex h-9 shrink-0 items-center gap-2 rounded-xl bg-white border border-gray-200 px-4 shadow-sm hover:border-[#1e3a4c] transition-colors text-sm font-medium text-[#1e3a4c]">
+          <button className="flex h-9 shrink-0 items-center gap-2 rounded-xl bg-white border border-gray-200 px-4 shadow-sm hover:border-primary transition-colors text-sm font-medium text-primary">
             Price
             <ChevronDown className="w-4 h-4" />
           </button>
-          <button className="flex h-9 shrink-0 items-center gap-2 rounded-xl bg-white border border-gray-200 px-4 shadow-sm hover:border-[#1e3a4c] transition-colors text-sm font-medium text-[#1e3a4c]">
+          <button className="flex h-9 shrink-0 items-center gap-2 rounded-xl bg-white border border-gray-200 px-4 shadow-sm hover:border-primary transition-colors text-sm font-medium text-primary">
             Duration
             <ChevronDown className="w-4 h-4" />
           </button>
-          <button className="flex h-9 shrink-0 items-center gap-2 rounded-xl bg-[#1e3a4c] text-white px-4 shadow-sm hover:bg-[#1e3a4c]/90 transition-colors text-sm font-medium">
+          <button className="flex h-9 shrink-0 items-center gap-2 rounded-xl bg-primary text-white px-4 shadow-sm hover:bg-primary/90 transition-colors text-sm font-medium">
             <Filter className="w-4 h-4" />
             All Filters
           </button>
@@ -254,7 +254,7 @@ export default async function ActivityListingPage({ params }: PageProps) {
         </p>
         <div className="flex items-center gap-2">
           <span className="text-sm text-gray-500 hidden sm:inline">Sort:</span>
-          <select className="bg-transparent border-none text-sm font-bold focus:ring-0 cursor-pointer p-0 text-[#1e3a4c]">
+          <select className="bg-transparent border-none text-sm font-bold focus:ring-0 cursor-pointer p-0 text-primary">
             <option>Recommended</option>
             <option>Price: Low to High</option>
             <option>Rating</option>
@@ -275,8 +275,8 @@ export default async function ActivityListingPage({ params }: PageProps) {
 
         {/* Featured Operator Banner (inserted after 3rd item if available) */}
         {featuredOperator && (
-          <div className="col-span-1 sm:col-span-2 lg:col-span-2 w-full rounded-2xl bg-[#1e3a4c] text-white overflow-hidden relative my-4 lg:my-6 min-h-[250px] flex items-center">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#1e3a4c] via-[#1e3a4c]/90 to-transparent z-10" />
+          <div className="col-span-1 sm:col-span-2 lg:col-span-2 w-full rounded-2xl bg-primary text-white overflow-hidden relative my-4 lg:my-6 min-h-[250px] flex items-center">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-transparent z-10" />
             {featuredOperator.coverImage && (
               <div
                 className="absolute inset-0 w-full h-full bg-cover bg-center opacity-40"
@@ -284,7 +284,7 @@ export default async function ActivityListingPage({ params }: PageProps) {
               />
             )}
             <div className="relative z-20 p-6 lg:p-8 flex flex-col items-start gap-3 lg:gap-4 max-w-lg">
-              <span className="bg-[#ea580c] text-white text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">
+              <span className="bg-accent-hover text-white text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">
                 Featured Operator
               </span>
               <h2 className="text-xl lg:text-2xl font-black leading-tight">
@@ -296,7 +296,7 @@ export default async function ActivityListingPage({ params }: PageProps) {
               </p>
               <Link
                 href={`/directory/${featuredOperator.slug}`}
-                className="mt-1 bg-white text-[#1e3a4c] hover:bg-gray-100 font-bold py-2.5 lg:py-3 px-5 lg:px-6 rounded-xl transition-colors flex items-center gap-2 text-sm lg:text-base"
+                className="mt-1 bg-white text-primary hover:bg-gray-100 font-bold py-2.5 lg:py-3 px-5 lg:px-6 rounded-xl transition-colors flex items-center gap-2 text-sm lg:text-base"
               >
                 View Their Trips <ArrowRight className="w-4 h-4" />
               </Link>
@@ -323,12 +323,12 @@ export default async function ActivityListingPage({ params }: PageProps) {
 
       {/* About Section (Accordion) */}
       <div className="mb-8 lg:mb-12">
-        <h2 className="text-xl lg:text-2xl font-bold mb-4 text-[#1e3a4c]">
+        <h2 className="text-xl lg:text-2xl font-bold mb-4 text-primary">
           About {activityType.name}
         </h2>
         <div className="bg-white rounded-xl p-5 lg:p-6 border border-gray-200 shadow-sm">
           <details className="group mb-4" open>
-            <summary className="flex justify-between items-center font-bold cursor-pointer list-none text-[#1e3a4c]">
+            <summary className="flex justify-between items-center font-bold cursor-pointer list-none text-primary">
               <span>What to Expect</span>
               <ChevronDown className="transition-transform group-open:rotate-180 w-5 h-5" />
             </summary>
@@ -339,7 +339,7 @@ export default async function ActivityListingPage({ params }: PageProps) {
           </details>
           <div className="h-px bg-gray-200 my-4" />
           <details className="group">
-            <summary className="flex justify-between items-center font-bold cursor-pointer list-none text-[#1e3a4c]">
+            <summary className="flex justify-between items-center font-bold cursor-pointer list-none text-primary">
               <span>Requirements</span>
               <ChevronDown className="transition-transform group-open:rotate-180 w-5 h-5" />
             </summary>
@@ -352,7 +352,7 @@ export default async function ActivityListingPage({ params }: PageProps) {
 
       {/* You Might Also Like */}
       <div className="mb-8">
-        <h3 className="text-xl lg:text-2xl font-bold mb-4 text-[#1e3a4c]">
+        <h3 className="text-xl lg:text-2xl font-bold mb-4 text-primary">
           You Might Also Like
         </h3>
         <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 sm:overflow-visible no-scrollbar">
@@ -365,14 +365,14 @@ export default async function ActivityListingPage({ params }: PageProps) {
               >
                 <div className="w-full aspect-[4/3] rounded-lg bg-gray-200 relative overflow-hidden mb-2">
                   {/* Placeholder for activity type image if available, otherwise gray bg */}
-                  <div className="absolute inset-0 bg-[#1e3a4c]/10 flex items-center justify-center">
-                    <span className="text-[#1e3a4c] font-bold text-xs">
+                  <div className="absolute inset-0 bg-primary/10 flex items-center justify-center">
+                    <span className="text-primary font-bold text-xs">
                       {type.name}
                     </span>
                   </div>
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors" />
                 </div>
-                <p className="font-bold text-sm leading-tight text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors">
+                <p className="font-bold text-sm leading-tight text-primary group-hover:text-accent-hover transition-colors">
                   {type.name}
                 </p>
                 <p className="text-xs text-gray-500 mt-0.5">Explore</p>
@@ -383,10 +383,10 @@ export default async function ActivityListingPage({ params }: PageProps) {
               href={`/${region.slug}/things-to-do`}
               className="flex-shrink-0 w-[140px] sm:w-auto group hidden lg:block"
             >
-              <div className="w-full aspect-[4/3] rounded-lg bg-[#1e3a4c]/10 flex items-center justify-center hover:bg-[#1e3a4c]/20 transition-colors">
-                <ArrowRight className="text-[#1e3a4c] w-8 h-8" />
+              <div className="w-full aspect-[4/3] rounded-lg bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
+                <ArrowRight className="text-primary w-8 h-8" />
               </div>
-              <p className="font-bold text-sm leading-tight text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors mt-2">
+              <p className="font-bold text-sm leading-tight text-primary group-hover:text-accent-hover transition-colors mt-2">
                 View All Activities
               </p>
               <p className="text-xs text-gray-500 mt-0.5">Browse everything</p>

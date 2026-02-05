@@ -174,23 +174,23 @@ export default function ForOperatorsPage() {
   return (
     <div className="bg-white">
       {/* ═══ STICKY PRICING BAR ═══ */}
-      <div className="sticky top-0 z-50 bg-[#1e3a4c] text-white py-2.5 text-center text-sm font-medium shadow-md">
+      <div className="sticky top-0 z-50 bg-primary text-white py-2.5 text-center text-sm font-medium shadow-md">
         <span className="hidden sm:inline">🏴󠁧󠁢󠁷󠁬󠁳󠁿 </span>
         Enhanced listings from{" "}
-        <span className="font-bold text-[#ea580c]">£9.99/mo</span> — TripAdvisor
+        <span className="font-bold text-accent-hover">£9.99/mo</span> — TripAdvisor
         charges £65+.{" "}
         <a
           href="#pricing"
-          className="underline underline-offset-2 hover:text-[#ea580c] transition-colors"
+          className="underline underline-offset-2 hover:text-accent-hover transition-colors"
         >
           See plans ↓
         </a>
       </div>
 
       {/* ═══ HERO ═══ */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#1e3a4c] via-[#1e3a4c] to-[#2d5a73]">
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-[#2d5a73]">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-[#ea580c] blur-3xl" />
+          <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-accent-hover blur-3xl" />
           <div className="absolute bottom-10 right-20 w-96 h-96 rounded-full bg-white blur-3xl" />
         </div>
 
@@ -203,7 +203,7 @@ export default function ForOperatorsPage() {
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
               Grow Your Wales Adventure Business for Just{" "}
-              <span className="text-[#ea580c]">£9.99/mo</span>
+              <span className="text-accent-hover">£9.99/mo</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-white/80 leading-relaxed mb-10 max-w-2xl">
@@ -214,7 +214,7 @@ export default function ForOperatorsPage() {
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <a
                 href="#register"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#ea580c] text-white font-semibold rounded-full hover:bg-[#ea580c] transition-colors text-base shadow-lg shadow-orange-500/25"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent-hover text-white font-semibold rounded-full hover:bg-accent-hover transition-colors text-base shadow-lg shadow-orange-500/25"
               >
                 Claim Free &amp; Upgrade
                 <ArrowRight className="h-5 w-5" />
@@ -238,10 +238,10 @@ export default function ForOperatorsPage() {
             <div className="grid grid-cols-3 gap-8">
               {stats.map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#ea580c]/10 mb-3">
-                    <stat.icon className="h-6 w-6 text-[#ea580c]" />
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent-hover/10 mb-3">
+                    <stat.icon className="h-6 w-6 text-accent-hover" />
                   </div>
-                  <div className="text-3xl sm:text-4xl font-extrabold text-[#1e3a4c]">
+                  <div className="text-3xl sm:text-4xl font-extrabold text-primary">
                     {stat.value}
                   </div>
                   <div className="text-sm text-slate-500 font-medium mt-1">
@@ -258,7 +258,7 @@ export default function ForOperatorsPage() {
       <section id="pricing" className="py-20 sm:py-24 scroll-mt-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1e3a4c] mb-4">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary mb-4">
               What You Get — At a Glance
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
@@ -277,22 +277,22 @@ export default function ForOperatorsPage() {
                   </th>
                   <th className="py-5 px-4 text-center w-[20%]">
                     <div className="text-sm font-semibold text-slate-600">Free</div>
-                    <div className="text-2xl font-extrabold text-[#1e3a4c] mt-1">£0</div>
+                    <div className="text-2xl font-extrabold text-primary mt-1">£0</div>
                     <div className="text-xs text-slate-400">forever</div>
                   </th>
-                  <th className="py-5 px-4 text-center w-[28%] bg-[#ea580c]/5 border-x-2 border-[#ea580c]/20 relative">
-                    <span className="absolute -top-0.5 left-1/2 -translate-x-1/2 -translate-y-full inline-flex items-center gap-1 px-3 py-1 rounded-t-lg bg-[#ea580c] text-white text-xs font-bold uppercase tracking-wide">
+                  <th className="py-5 px-4 text-center w-[28%] bg-accent-hover/5 border-x-2 border-accent-hover/20 relative">
+                    <span className="absolute -top-0.5 left-1/2 -translate-x-1/2 -translate-y-full inline-flex items-center gap-1 px-3 py-1 rounded-t-lg bg-accent-hover text-white text-xs font-bold uppercase tracking-wide">
                       <Star className="h-3 w-3" /> Recommended
                     </span>
-                    <div className="text-sm font-semibold text-[#ea580c]">Enhanced</div>
-                    <div className="text-2xl font-extrabold text-[#1e3a4c] mt-1">
+                    <div className="text-sm font-semibold text-accent-hover">Enhanced</div>
+                    <div className="text-2xl font-extrabold text-primary mt-1">
                       £9.99<span className="text-sm font-normal text-slate-500">/mo</span>
                     </div>
                     <div className="text-xs text-slate-400">+VAT · per location</div>
                   </th>
                   <th className="py-5 px-4 text-center w-[22%]">
                     <div className="text-sm font-semibold text-slate-600">Premium</div>
-                    <div className="text-2xl font-extrabold text-[#1e3a4c] mt-1">
+                    <div className="text-2xl font-extrabold text-primary mt-1">
                       £29.99<span className="text-sm font-normal text-slate-500">/mo</span>
                     </div>
                     <div className="text-xs text-slate-400">+VAT · per location</div>
@@ -305,13 +305,13 @@ export default function ForOperatorsPage() {
                     key={row.feature}
                     className={i % 2 === 0 ? "bg-white" : "bg-slate-50/50"}
                   >
-                    <td className="py-4 px-6 text-sm font-medium text-[#1e3a4c]">
+                    <td className="py-4 px-6 text-sm font-medium text-primary">
                       {row.feature}
                     </td>
                     <td className="py-4 px-4 text-center">
                       <CellValue value={row.free} />
                     </td>
-                    <td className="py-4 px-4 text-center bg-[#ea580c]/5 border-x-2 border-[#ea580c]/20">
+                    <td className="py-4 px-4 text-center bg-accent-hover/5 border-x-2 border-accent-hover/20">
                       <CellValue value={row.enhanced} />
                     </td>
                     <td className="py-4 px-4 text-center">
@@ -327,7 +327,7 @@ export default function ForOperatorsPage() {
           <div className="md:hidden space-y-6">
             {/* Free mobile */}
             <div className="rounded-2xl border border-slate-200 p-6">
-              <h3 className="text-lg font-bold text-[#1e3a4c]">Free — £0</h3>
+              <h3 className="text-lg font-bold text-primary">Free — £0</h3>
               <p className="text-sm text-slate-500 mb-4">Basic directory listing</p>
               <ul className="space-y-2 text-sm text-slate-600">
                 <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-slate-400 mt-0.5 shrink-0" />Basic listing (name, link)</li>
@@ -337,11 +337,11 @@ export default function ForOperatorsPage() {
               </ul>
             </div>
             {/* Enhanced mobile */}
-            <div className="rounded-2xl border-2 border-[#ea580c] p-6 relative shadow-lg">
-              <span className="absolute -top-3 left-4 inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#ea580c] text-white text-xs font-bold">
+            <div className="rounded-2xl border-2 border-accent-hover p-6 relative shadow-lg">
+              <span className="absolute -top-3 left-4 inline-flex items-center gap-1 px-3 py-1 rounded-full bg-accent-hover text-white text-xs font-bold">
                 <Star className="h-3 w-3" /> Recommended
               </span>
-              <h3 className="text-lg font-bold text-[#1e3a4c] mt-2">Enhanced — £9.99/mo <span className="text-sm font-normal text-slate-500">+VAT</span></h3>
+              <h3 className="text-lg font-bold text-primary mt-2">Enhanced — £9.99/mo <span className="text-sm font-normal text-slate-500">+VAT</span></h3>
               <p className="text-sm text-slate-500 mb-4">Full profile &amp; bookings</p>
               <ul className="space-y-2 text-sm text-slate-600">
                 <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-emerald-500 mt-0.5 shrink-0" />Full profile, photos &amp; gallery</li>
@@ -352,13 +352,13 @@ export default function ForOperatorsPage() {
             </div>
             {/* Premium mobile */}
             <div className="rounded-2xl border border-slate-200 p-6">
-              <h3 className="text-lg font-bold text-[#1e3a4c]">Premium — £29.99/mo <span className="text-sm font-normal text-slate-500">+VAT</span></h3>
+              <h3 className="text-lg font-bold text-primary">Premium — £29.99/mo <span className="text-sm font-normal text-slate-500">+VAT</span></h3>
               <p className="text-sm text-slate-500 mb-4">Maximum visibility</p>
               <ul className="space-y-2 text-sm text-slate-600">
-                <li className="flex items-start gap-2"><Star className="h-4 w-4 text-[#1e3a4c] mt-0.5 shrink-0" />Everything in Enhanced</li>
-                <li className="flex items-start gap-2"><Star className="h-4 w-4 text-[#1e3a4c] mt-0.5 shrink-0" />Featured search &amp; itinerary placement</li>
-                <li className="flex items-start gap-2"><Star className="h-4 w-4 text-[#1e3a4c] mt-0.5 shrink-0" />Instant lead alerts</li>
-                <li className="flex items-start gap-2"><Star className="h-4 w-4 text-[#1e3a4c] mt-0.5 shrink-0" />Dedicated account manager</li>
+                <li className="flex items-start gap-2"><Star className="h-4 w-4 text-primary mt-0.5 shrink-0" />Everything in Enhanced</li>
+                <li className="flex items-start gap-2"><Star className="h-4 w-4 text-primary mt-0.5 shrink-0" />Featured search &amp; itinerary placement</li>
+                <li className="flex items-start gap-2"><Star className="h-4 w-4 text-primary mt-0.5 shrink-0" />Instant lead alerts</li>
+                <li className="flex items-start gap-2"><Star className="h-4 w-4 text-primary mt-0.5 shrink-0" />Dedicated account manager</li>
               </ul>
             </div>
           </div>
@@ -366,7 +366,7 @@ export default function ForOperatorsPage() {
           <div className="text-center mt-8">
             <a
               href="#register"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#ea580c] text-white font-semibold rounded-full hover:bg-[#ea580c] transition-colors text-base shadow-lg shadow-orange-500/20"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent-hover text-white font-semibold rounded-full hover:bg-accent-hover transition-colors text-base shadow-lg shadow-orange-500/20"
             >
               Claim Your Free Listing
               <ArrowRight className="h-5 w-5" />
@@ -382,7 +382,7 @@ export default function ForOperatorsPage() {
       <section className="py-20 sm:py-24 bg-slate-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1e3a4c] mb-4">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary mb-4">
               See the Difference
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
@@ -415,8 +415,8 @@ export default function ForOperatorsPage() {
             </div>
 
             {/* Enhanced */}
-            <div className="bg-white rounded-2xl border-2 border-[#ea580c] p-8 relative shadow-lg">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#ea580c]/10 text-[#ea580c] text-xs font-semibold mb-6 uppercase tracking-wide">
+            <div className="bg-white rounded-2xl border-2 border-accent-hover p-8 relative shadow-lg">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent-hover/10 text-accent-hover text-xs font-semibold mb-6 uppercase tracking-wide">
                 <Sparkles className="h-3.5 w-3.5" /> Enhanced Listing
               </span>
               <div className="space-y-4">
@@ -430,7 +430,7 @@ export default function ForOperatorsPage() {
                     <div className="h-[60px] rounded-lg bg-gradient-to-br from-sky-100 to-indigo-100" />
                   </div>
                 </div>
-                <div className="h-4 bg-[#1e3a4c] rounded w-3/4" />
+                <div className="h-4 bg-primary rounded w-3/4" />
                 <div className="flex items-center gap-2">
                   <div className="flex -space-x-0.5">
                     {[...Array(5)].map((_, i) => (
@@ -442,7 +442,7 @@ export default function ForOperatorsPage() {
                 <div className="h-3 bg-slate-100 rounded w-full" />
                 <div className="h-3 bg-slate-100 rounded w-5/6" />
                 <div className="mt-4 flex flex-wrap gap-2">
-                  <div className="h-8 bg-[#ea580c] rounded-full px-4 flex items-center">
+                  <div className="h-8 bg-accent-hover rounded-full px-4 flex items-center">
                     <span className="text-xs text-white font-medium">Book Now</span>
                   </div>
                   <div className="h-8 bg-emerald-50 border border-emerald-200 rounded-full px-3 flex items-center gap-1">
@@ -463,7 +463,7 @@ export default function ForOperatorsPage() {
       <section className="py-20 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1e3a4c] mb-4">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary mb-4">
               Why Operators Choose Us
             </h2>
           </div>
@@ -471,10 +471,10 @@ export default function ForOperatorsPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* Visibility */}
             <div className="text-center p-8">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#ea580c]/10 mb-5">
-                <Eye className="h-8 w-8 text-[#ea580c]" />
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent-hover/10 mb-5">
+                <Eye className="h-8 w-8 text-accent-hover" />
               </div>
-              <h3 className="text-xl font-bold text-[#1e3a4c] mb-3">
+              <h3 className="text-xl font-bold text-primary mb-3">
                 Be Found First
               </h3>
               <p className="text-slate-600 leading-relaxed">
@@ -484,10 +484,10 @@ export default function ForOperatorsPage() {
 
             {/* Bookings */}
             <div className="text-center p-8">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#ea580c]/10 mb-5">
-                <MousePointerClick className="h-8 w-8 text-[#ea580c]" />
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent-hover/10 mb-5">
+                <MousePointerClick className="h-8 w-8 text-accent-hover" />
               </div>
-              <h3 className="text-xl font-bold text-[#1e3a4c] mb-3">
+              <h3 className="text-xl font-bold text-primary mb-3">
                 Direct Bookings, Zero Commission
               </h3>
               <p className="text-slate-600 leading-relaxed">
@@ -497,10 +497,10 @@ export default function ForOperatorsPage() {
 
             {/* Trust */}
             <div className="text-center p-8">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#ea580c]/10 mb-5">
-                <Users className="h-8 w-8 text-[#ea580c]" />
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent-hover/10 mb-5">
+                <Users className="h-8 w-8 text-accent-hover" />
               </div>
-              <h3 className="text-xl font-bold text-[#1e3a4c] mb-3">
+              <h3 className="text-xl font-bold text-primary mb-3">
                 Built-In Trust
               </h3>
               <p className="text-slate-600 leading-relaxed">
@@ -515,7 +515,7 @@ export default function ForOperatorsPage() {
       <section className="py-20 sm:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1e3a4c] mb-4">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary mb-4">
               Live in 3 Steps
             </h2>
             <p className="text-lg text-slate-600">
@@ -529,13 +529,13 @@ export default function ForOperatorsPage() {
                 {index < steps.length - 1 && (
                   <div className="hidden md:block absolute top-12 left-[60%] w-[80%] h-px bg-slate-200" />
                 )}
-                <div className="relative inline-flex items-center justify-center w-24 h-24 rounded-full bg-[#ea580c]/10 mb-6">
-                  <step.icon className="h-10 w-10 text-[#ea580c]" />
-                  <span className="absolute -top-1 -right-1 w-8 h-8 rounded-full bg-[#1e3a4c] text-white text-sm font-bold flex items-center justify-center">
+                <div className="relative inline-flex items-center justify-center w-24 h-24 rounded-full bg-accent-hover/10 mb-6">
+                  <step.icon className="h-10 w-10 text-accent-hover" />
+                  <span className="absolute -top-1 -right-1 w-8 h-8 rounded-full bg-primary text-white text-sm font-bold flex items-center justify-center">
                     {index + 1}
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-[#1e3a4c] mb-3">
+                <h3 className="text-xl font-bold text-primary mb-3">
                   {step.title}
                 </h3>
                 <p className="text-slate-600 leading-relaxed max-w-xs mx-auto">
@@ -550,12 +550,12 @@ export default function ForOperatorsPage() {
       {/* ═══ SPONSORSHIP TEASE ═══ */}
       <section className="py-20 sm:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="bg-gradient-to-br from-[#1e3a4c] to-[#2d5a73] rounded-3xl p-10 sm:p-14 text-center relative overflow-hidden">
+          <div className="bg-gradient-to-br from-primary to-[#2d5a73] rounded-3xl p-10 sm:p-14 text-center relative overflow-hidden">
             <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-[#ea580c] blur-3xl" />
+              <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-accent-hover blur-3xl" />
             </div>
             <div className="relative">
-              <Megaphone className="h-12 w-12 text-[#ea580c] mx-auto mb-6" />
+              <Megaphone className="h-12 w-12 text-accent-hover mx-auto mb-6" />
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
                 Looking for Bigger Impact?
               </h2>
@@ -566,7 +566,7 @@ export default function ForOperatorsPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="mailto:hello@adventurewales.co.uk?subject=Sponsorship%20Enquiry"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#ea580c] text-white font-semibold rounded-full hover:bg-[#ea580c] transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent-hover text-white font-semibold rounded-full hover:bg-accent-hover transition-colors"
                 >
                   <Mail className="h-5 w-5" />
                   Enquire About Sponsorship
@@ -587,7 +587,7 @@ export default function ForOperatorsPage() {
       <section className="py-20 sm:py-24 bg-slate-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1e3a4c] mb-4">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary mb-4">
               Trusted by Welsh Adventure Operators
             </h2>
           </div>
@@ -598,12 +598,12 @@ export default function ForOperatorsPage() {
                 key={t.name}
                 className="bg-white rounded-2xl border border-slate-100 p-8 shadow-sm"
               >
-                <Quote className="h-8 w-8 text-[#ea580c]/30 mb-4" />
+                <Quote className="h-8 w-8 text-accent-hover/30 mb-4" />
                 <p className="text-slate-700 leading-relaxed mb-6 italic">
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <div>
-                  <p className="font-semibold text-[#1e3a4c]">{t.name}</p>
+                  <p className="font-semibold text-primary">{t.name}</p>
                   <p className="text-sm text-slate-500">{t.business}</p>
                 </div>
               </div>
@@ -616,7 +616,7 @@ export default function ForOperatorsPage() {
       <section className="py-20 sm:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1e3a4c] mb-4">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary mb-4">
               Simple, Transparent Pricing
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
@@ -627,10 +627,10 @@ export default function ForOperatorsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto items-start">
             {/* FREE */}
             <div className="bg-white rounded-2xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-[#1e3a4c] mb-1">Free</h3>
+              <h3 className="text-xl font-bold text-primary mb-1">Free</h3>
               <p className="text-sm text-slate-500 mb-6">Get discovered</p>
               <div className="mb-8">
-                <span className="text-4xl font-extrabold text-[#1e3a4c]">£0</span>
+                <span className="text-4xl font-extrabold text-primary">£0</span>
                 <span className="text-slate-500 ml-2">/ forever</span>
               </div>
               <ul className="space-y-3 mb-8">
@@ -643,27 +643,27 @@ export default function ForOperatorsPage() {
               </ul>
               <a
                 href="#register"
-                className="block text-center w-full px-6 py-3 rounded-full border-2 border-[#1e3a4c] text-[#1e3a4c] font-semibold hover:bg-[#1e3a4c] hover:text-white transition-colors"
+                className="block text-center w-full px-6 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors"
               >
                 Get Listed Free
               </a>
             </div>
 
             {/* ENHANCED */}
-            <div className="relative bg-white rounded-2xl border-2 border-[#ea580c] p-8 shadow-xl lg:-mt-4">
+            <div className="relative bg-white rounded-2xl border-2 border-accent-hover p-8 shadow-xl lg:-mt-4">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#ea580c] text-white text-xs font-bold uppercase tracking-wide">
+                <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-accent-hover text-white text-xs font-bold uppercase tracking-wide">
                   <Star className="h-3.5 w-3.5" />
                   Most Popular
                 </span>
               </div>
-              <h3 className="text-xl font-bold text-[#1e3a4c] mb-1 mt-2">Enhanced</h3>
+              <h3 className="text-xl font-bold text-primary mb-1 mt-2">Enhanced</h3>
               <p className="text-sm text-slate-500 mb-6">Full profile &amp; bookings</p>
               <div className="mb-2">
-                <span className="text-4xl font-extrabold text-[#1e3a4c]">£9.99</span>
+                <span className="text-4xl font-extrabold text-primary">£9.99</span>
                 <span className="text-slate-500 ml-1">+VAT /mo</span>
               </div>
-              <p className="text-sm text-[#ea580c] font-medium mb-6">
+              <p className="text-sm text-accent-hover font-medium mb-6">
                 or £99/yr +VAT — save 17%
               </p>
               <ul className="space-y-3 mb-8">
@@ -675,14 +675,14 @@ export default function ForOperatorsPage() {
                   "Monthly performance report",
                 ].map((f) => (
                   <li key={f} className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 text-[#ea580c] shrink-0 mt-0.5" />
+                    <CheckCircle className="h-5 w-5 text-accent-hover shrink-0 mt-0.5" />
                     <span className="text-slate-600 text-sm">{f}</span>
                   </li>
                 ))}
               </ul>
               <a
                 href="#register"
-                className="block text-center w-full px-6 py-3.5 rounded-full bg-[#ea580c] text-white font-semibold hover:bg-[#ea580c] transition-colors"
+                className="block text-center w-full px-6 py-3.5 rounded-full bg-accent-hover text-white font-semibold hover:bg-accent-hover transition-colors"
               >
                 Get Enhanced
               </a>
@@ -690,13 +690,13 @@ export default function ForOperatorsPage() {
 
             {/* PREMIUM */}
             <div className="bg-white rounded-2xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-[#1e3a4c] mb-1">Premium</h3>
+              <h3 className="text-xl font-bold text-primary mb-1">Premium</h3>
               <p className="text-sm text-slate-500 mb-6">Maximum visibility</p>
               <div className="mb-2">
-                <span className="text-4xl font-extrabold text-[#1e3a4c]">£29.99</span>
+                <span className="text-4xl font-extrabold text-primary">£29.99</span>
                 <span className="text-slate-500 ml-1">+VAT /mo</span>
               </div>
-              <p className="text-sm text-[#ea580c] font-medium mb-6">
+              <p className="text-sm text-accent-hover font-medium mb-6">
                 or £299/yr +VAT — save 17%
               </p>
               <ul className="space-y-3 mb-8">
@@ -709,14 +709,14 @@ export default function ForOperatorsPage() {
                   "Dedicated account support",
                 ].map((f, i) => (
                   <li key={f} className="flex items-start gap-3">
-                    <Star className="h-5 w-5 text-[#1e3a4c] shrink-0 mt-0.5" />
-                    <span className={`text-sm ${i === 0 ? "text-[#1e3a4c] font-medium" : "text-slate-600"}`}>{f}</span>
+                    <Star className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                    <span className={`text-sm ${i === 0 ? "text-primary font-medium" : "text-slate-600"}`}>{f}</span>
                   </li>
                 ))}
               </ul>
               <a
                 href="#register"
-                className="block text-center w-full px-6 py-3 rounded-full border-2 border-[#1e3a4c] text-[#1e3a4c] font-semibold hover:bg-[#1e3a4c] hover:text-white transition-colors"
+                className="block text-center w-full px-6 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors"
               >
                 Go Premium
               </a>
@@ -727,7 +727,7 @@ export default function ForOperatorsPage() {
             Multiple sites?{" "}
             <a
               href="mailto:hello@adventurewales.co.uk?subject=Multi-site%20discount%20enquiry"
-              className="text-[#ea580c] font-semibold hover:underline"
+              className="text-accent-hover font-semibold hover:underline"
             >
               Contact us for multi-site discounts
             </a>
@@ -740,7 +740,7 @@ export default function ForOperatorsPage() {
       <section className="py-20 sm:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1e3a4c] mb-4">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary mb-4">
               Quick Answers
             </h2>
           </div>
@@ -752,7 +752,7 @@ export default function ForOperatorsPage() {
       <section id="register" className="py-20 sm:py-24 scroll-mt-20">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1e3a4c] mb-4">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary mb-4">
               Claim Your Listing Today
             </h2>
             <p className="text-lg text-slate-600">
@@ -778,12 +778,12 @@ export default function ForOperatorsPage() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-3">
           <p className="text-sm text-slate-700 font-medium">
             Enhanced listings from{" "}
-            <span className="font-bold text-[#ea580c]">£9.99/mo</span>
+            <span className="font-bold text-accent-hover">£9.99/mo</span>
             <span className="hidden sm:inline"> — no commission, no lock-in</span>
           </p>
           <a
             href="#register"
-            className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#ea580c] text-white text-sm font-semibold rounded-full hover:bg-[#ea580c] transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-2.5 bg-accent-hover text-white text-sm font-semibold rounded-full hover:bg-accent-hover transition-colors"
           >
             Claim Free &amp; Upgrade
             <ArrowRight className="h-4 w-4" />

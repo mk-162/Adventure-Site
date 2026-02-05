@@ -47,13 +47,13 @@ export function SendMagicLinkButton({ operatorId, email }: { operatorId: number;
           value={targetEmail}
           onChange={(e) => setTargetEmail(e.target.value)}
           placeholder="email@example.com"
-          className="w-48 px-2 py-1 text-xs border border-gray-200 rounded-lg focus:ring-1 focus:ring-[#ea580c] focus:border-transparent"
+          className="w-48 px-2 py-1 text-xs border border-gray-200 rounded-lg focus:ring-1 focus:ring-accent-hover focus:border-transparent"
           autoFocus
         />
         <button
           onClick={handleSend}
           disabled={isPending}
-          className="px-2 py-1.5 text-xs font-medium text-white bg-[#ea580c] rounded-lg hover:bg-[#ea580c] disabled:opacity-50"
+          className="px-2 py-1.5 text-xs font-medium text-white bg-accent-hover rounded-lg hover:bg-accent-hover disabled:opacity-50"
         >
           {isPending ? "..." : "Send"}
         </button>

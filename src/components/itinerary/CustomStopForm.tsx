@@ -93,7 +93,7 @@ export function CustomStopForm({ itinerarySlug, dayNumber }: CustomStopFormProps
           />
           <button
             onClick={addStop}
-            className="px-3 py-2 bg-[#1e3a4c] text-white text-sm font-medium rounded-lg hover:bg-[#1e3a4c]/90"
+            className="px-3 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90"
           >
             Add
           </button>
@@ -107,7 +107,7 @@ export function CustomStopForm({ itinerarySlug, dayNumber }: CustomStopFormProps
       ) : (
         <button
           onClick={() => setIsOpen(true)}
-          className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-[#1e3a4c] transition-colors"
+          className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-primary transition-colors"
         >
           <Plus className="w-3.5 h-3.5" />
           Add your own stop

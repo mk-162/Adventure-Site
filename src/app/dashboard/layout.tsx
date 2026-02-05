@@ -28,7 +28,7 @@ export default async function DashboardLayout({
   return (
     <div className="min-h-screen bg-slate-50 flex">
       {/* Sidebar */}
-      <aside className="w-64 bg-[#1e3a4c] text-white flex-shrink-0 hidden md:block">
+      <aside className="w-64 bg-primary text-white flex-shrink-0 hidden md:block">
         <div className="p-6">
           <Link href="/dashboard" className="text-xl font-bold text-white no-underline">
             Adventure Wales

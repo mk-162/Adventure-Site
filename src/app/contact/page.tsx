@@ -8,14 +8,14 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-gray-500 mb-8">
-          <Link href="/" className="hover:text-[#1e3a4c]">Home</Link>
+          <Link href="/" className="hover:text-primary">Home</Link>
           <ChevronRight className="w-4 h-4" />
-          <span className="text-[#1e3a4c] font-medium">Contact</span>
+          <span className="text-primary font-medium">Contact</span>
         </div>
 
         {/* Header */}
         <div className="mb-12 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-[#1e3a4c] mb-4">
+          <h1 className="text-4xl lg:text-5xl font-bold text-primary mb-4">
             Get in Touch
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -26,24 +26,24 @@ export default function ContactPage() {
 
         {/* Quick Links */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
-          <Link href="/help" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#ea580c] transition-all group">
-            <HelpCircle className="w-8 h-8 text-[#ea580c] mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">Help Center</h3>
+          <Link href="/help" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-accent-hover transition-all group">
+            <HelpCircle className="w-8 h-8 text-accent-hover mb-4 group-hover:scale-110 transition-transform" />
+            <h3 className="text-lg font-bold text-primary mb-2">Help Center</h3>
             <p className="text-gray-600 text-sm">Browse FAQs and self-service guides</p>
           </Link>
 
           <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
-            <Mail className="w-8 h-8 text-[#ea580c] mb-4" />
-            <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">Email Support</h3>
-            <a href="mailto:support@adventurewales.co.uk" className="text-[#ea580c] hover:underline text-sm">
+            <Mail className="w-8 h-8 text-accent-hover mb-4" />
+            <h3 className="text-lg font-bold text-primary mb-2">Email Support</h3>
+            <a href="mailto:support@adventurewales.co.uk" className="text-accent-hover hover:underline text-sm">
               support@adventurewales.co.uk
             </a>
             <p className="text-gray-600 text-sm mt-2">Response within 24 hours</p>
           </div>
 
-          <Link href="/advertise" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#ea580c] transition-all group">
-            <MessageCircle className="w-8 h-8 text-[#ea580c] mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">List Your Business</h3>
+          <Link href="/advertise" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-accent-hover transition-all group">
+            <MessageCircle className="w-8 h-8 text-accent-hover mb-4 group-hover:scale-110 transition-transform" />
+            <h3 className="text-lg font-bold text-primary mb-2">List Your Business</h3>
             <p className="text-gray-600 text-sm">Partner with us to reach more adventurers</p>
           </Link>
         </div>
@@ -51,7 +51,7 @@ export default function ContactPage() {
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           {/* Contact Form */}
           <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#1e3a4c] mb-6">Send us a Message</h2>
+            <h2 className="text-2xl font-bold text-primary mb-6">Send us a Message</h2>
             <form className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -62,7 +62,7 @@ export default function ContactPage() {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1e3a4c]/20 focus:border-[#1e3a4c] transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                   placeholder="John Smith"
                 />
               </div>
@@ -76,7 +76,7 @@ export default function ContactPage() {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1e3a4c]/20 focus:border-[#1e3a4c] transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                   placeholder="john@example.com"
                 />
               </div>
@@ -89,7 +89,7 @@ export default function ContactPage() {
                   id="subject"
                   name="subject"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1e3a4c]/20 focus:border-[#1e3a4c] transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                 >
                   <option value="">Select a topic...</option>
                   <option value="booking">Booking Enquiry</option>
@@ -110,14 +110,14 @@ export default function ContactPage() {
                   name="message"
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#1e3a4c]/20 focus:border-[#1e3a4c] transition-colors resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors resize-none"
                   placeholder="Tell us how we can help..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full px-8 py-3 bg-[#ea580c] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors flex items-center justify-center gap-2"
+                className="w-full px-8 py-3 bg-accent-hover text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors flex items-center justify-center gap-2"
               >
                 <Send className="w-5 h-5" />
                 Send Message
@@ -131,7 +131,7 @@ export default function ContactPage() {
 
           {/* Contact Info & Image */}
           <div className="space-y-8">
-            <div className="bg-gradient-to-br from-[#1e3a4c] to-[#2a5570] rounded-2xl p-8 text-white">
+            <div className="bg-gradient-to-br from-primary to-[#2a5570] rounded-2xl p-8 text-white">
               <h3 className="text-xl font-bold mb-6">Contact Information</h3>
               
               <div className="space-y-4">
@@ -202,8 +202,8 @@ export default function ContactPage() {
             </div>
 
             {/* Response Time */}
-            <div className="bg-[#ea580c]/10 border border-[#ea580c]/20 rounded-2xl p-6">
-              <h4 className="font-bold text-[#1e3a4c] mb-2">Fast Response Times</h4>
+            <div className="bg-accent-hover/10 border border-accent-hover/20 rounded-2xl p-6">
+              <h4 className="font-bold text-primary mb-2">Fast Response Times</h4>
               <p className="text-sm text-gray-600 mb-3">
                 Our dedicated support team is here to help with any questions about activities, 
                 bookings, or planning your Welsh adventure.
@@ -219,7 +219,7 @@ export default function ContactPage() {
 
         {/* FAQ Teaser */}
         <section className="bg-white rounded-2xl p-8 lg:p-12 border border-gray-200 text-center">
-          <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4">
+          <h2 className="text-2xl font-bold text-primary mb-4">
             Looking for Quick Answers?
           </h2>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
@@ -228,7 +228,7 @@ export default function ContactPage() {
           </p>
           <Link
             href="/help"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#1e3a4c] text-white font-semibold rounded-xl hover:bg-[#2a5570] transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-[#2a5570] transition-colors"
           >
             <HelpCircle className="w-5 h-5" />
             Visit Help Center

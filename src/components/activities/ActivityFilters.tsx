@@ -220,7 +220,7 @@ export function ActivityFilters({
           <select 
             value={selectedRegion}
             onChange={(e) => setSelectedRegion(e.target.value)}
-            className="flex-1 px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#ea580c]/30 focus:bg-white transition-all"
+            className="flex-1 px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-accent-hover/30 focus:bg-white transition-all"
           >
             <option value="">All Regions</option>
             {regions.map(region => (
@@ -231,7 +231,7 @@ export function ActivityFilters({
           <select 
             value={selectedActivityType}
             onChange={(e) => setSelectedActivityType(e.target.value)}
-            className="flex-1 px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#ea580c]/30 focus:bg-white transition-all"
+            className="flex-1 px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-accent-hover/30 focus:bg-white transition-all"
           >
             <option value="">All Activity Types</option>
             {activityTypes.map(type => (
@@ -249,8 +249,8 @@ export function ActivityFilters({
             onClick={() => handleQuickLinkClick(type.slug)}
             className={`flex items-center gap-2 px-4 py-2 border rounded-full text-sm whitespace-nowrap transition-colors ${
               selectedActivityType === type.slug
-                ? 'bg-[#1e3a4c] text-white border-[#1e3a4c]'
-                : 'bg-white border-gray-200 hover:border-[#1e3a4c] hover:text-[#1e3a4c]'
+                ? 'bg-primary text-white border-primary'
+                : 'bg-white border-gray-200 hover:border-primary hover:text-primary'
             }`}
           >
             {type.name}
@@ -270,8 +270,8 @@ export function ActivityFilters({
             onClick={() => setViewMode('grid')}
             className={`flex items-center gap-2 px-3 py-1.5 rounded-md text-sm transition-colors ${
               viewMode === 'grid'
-                ? 'bg-white text-[#1e3a4c] shadow-sm'
-                : 'text-gray-600 hover:text-[#1e3a4c]'
+                ? 'bg-white text-primary shadow-sm'
+                : 'text-gray-600 hover:text-primary'
             }`}
           >
             <Grid className="w-4 h-4" />
@@ -281,8 +281,8 @@ export function ActivityFilters({
             onClick={() => setViewMode('map')}
             className={`flex items-center gap-2 px-3 py-1.5 rounded-md text-sm transition-colors ${
               viewMode === 'map'
-                ? 'bg-white text-[#1e3a4c] shadow-sm'
-                : 'text-gray-600 hover:text-[#1e3a4c]'
+                ? 'bg-white text-primary shadow-sm'
+                : 'text-gray-600 hover:text-primary'
             }`}
           >
             <MapIcon className="w-4 h-4" />
@@ -342,7 +342,7 @@ export function ActivityFilters({
               setSelectedPrice('');
               setSortBy('name');
             }}
-            className="px-6 py-2 bg-[#ea580c] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
+            className="px-6 py-2 bg-accent-hover text-white rounded-lg hover:bg-accent-hover transition-colors"
           >
             Clear all filters
           </button>

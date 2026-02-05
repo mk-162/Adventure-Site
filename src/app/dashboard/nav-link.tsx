@@ -12,7 +12,7 @@ export function NavLink({ href, children }: { href: string; children: React.Reac
       href={href}
       className={`block px-4 py-2 rounded-md text-sm font-medium transition-colors ${
         isActive
-          ? "bg-[#ea580c] text-white"
+          ? "bg-accent-hover text-white"
           : "text-slate-300 hover:bg-white/10 hover:text-white"
       }`}
     >

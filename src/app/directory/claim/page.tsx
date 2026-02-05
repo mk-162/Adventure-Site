@@ -12,9 +12,9 @@ export default function ClaimListingPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <div className="bg-gradient-to-br from-[#1e3a4c] to-[#2d5568] text-white py-20">
+      <div className="bg-gradient-to-br from-primary to-[#2d5568] text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <ShieldCheck className="h-16 w-16 mx-auto mb-6 text-[#ea580c]" />
+          <ShieldCheck className="h-16 w-16 mx-auto mb-6 text-accent-hover" />
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Claim Your Business Listing
           </h1>
@@ -27,7 +27,7 @@ export default function ClaimListingPage() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* How it works */}
-        <h2 className="text-3xl font-bold text-[#1e3a4c] mb-8 text-center">
+        <h2 className="text-3xl font-bold text-primary mb-8 text-center">
           How It Works
         </h2>
 
@@ -53,10 +53,10 @@ export default function ClaimListingPage() {
             },
           ].map((item) => (
             <div key={item.step} className="text-center">
-              <div className="w-12 h-12 bg-[#ea580c] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+              <div className="w-12 h-12 bg-accent-hover text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                 {item.step}
               </div>
-              <h3 className="text-xl font-bold text-[#1e3a4c] mb-2">
+              <h3 className="text-xl font-bold text-primary mb-2">
                 {item.title}
               </h3>
               <p className="text-slate-600">{item.description}</p>
@@ -66,7 +66,7 @@ export default function ClaimListingPage() {
 
         {/* What you get */}
         <div className="bg-slate-50 rounded-2xl p-8 mb-16">
-          <h2 className="text-2xl font-bold text-[#1e3a4c] mb-6">
+          <h2 className="text-2xl font-bold text-primary mb-6">
             What You Get (Free)
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
@@ -87,7 +87,7 @@ export default function ClaimListingPage() {
         </div>
 
         {/* CTA */}
-        <div className="text-center bg-gradient-to-br from-[#1e3a4c] to-[#2d5568] rounded-2xl p-12 text-white">
+        <div className="text-center bg-gradient-to-br from-primary to-[#2d5568] rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">Ready to Get Listed?</h2>
           <p className="text-slate-200 mb-8 max-w-lg mx-auto">
             Email us with your business name, website, and what you offer.
@@ -95,7 +95,7 @@ export default function ClaimListingPage() {
           </p>
           <a
             href="mailto:hello@adventurewales.co.uk?subject=Claim%20My%20Listing&body=Business%20name%3A%0AWebsite%3A%0AWhat%20we%20offer%3A%0ALocation%3A%0A"
-            className="inline-flex items-center gap-2 bg-[#ea580c] text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-[#ea580c] transition-colors"
+            className="inline-flex items-center gap-2 bg-accent-hover text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-accent-hover transition-colors"
           >
             <Mail className="h-5 w-5" />
             Claim Your Listing

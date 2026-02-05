@@ -30,7 +30,7 @@ export function ImportButton() {
         <button
             onClick={handleImport}
             disabled={loading}
-            className="flex items-center gap-2 px-4 py-2 bg-[#1e3a4c] text-white rounded-lg hover:bg-[#152a38] transition-colors disabled:opacity-50"
+            className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors disabled:opacity-50"
         >
             {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Download className="h-4 w-4" />}
             Import from EventBrite

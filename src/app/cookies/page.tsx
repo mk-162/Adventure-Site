@@ -7,18 +7,18 @@ export default function CookiesPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-gray-500 mb-8">
-          <Link href="/" className="hover:text-[#1e3a4c]">Home</Link>
+          <Link href="/" className="hover:text-primary">Home</Link>
           <ChevronRight className="w-4 h-4" />
-          <span className="text-[#1e3a4c] font-medium">Cookie Policy</span>
+          <span className="text-primary font-medium">Cookie Policy</span>
         </div>
 
         {/* Header */}
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-12 h-12 bg-[#1e3a4c] rounded-xl flex items-center justify-center">
+            <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
               <Cookie className="w-6 h-6 text-white" />
             </div>
-            <h1 className="text-4xl lg:text-5xl font-bold text-[#1e3a4c]">
+            <h1 className="text-4xl lg:text-5xl font-bold text-primary">
               Cookie Policy
             </h1>
           </div>
@@ -32,14 +32,14 @@ export default function CookiesPage() {
         </div>
 
         {/* Quick Actions */}
-        <div className="bg-[#1e3a4c]/5 rounded-2xl p-6 mb-12">
-          <h2 className="font-bold text-[#1e3a4c] mb-4">Manage Your Preferences</h2>
+        <div className="bg-primary/5 rounded-2xl p-6 mb-12">
+          <h2 className="font-bold text-primary mb-4">Manage Your Preferences</h2>
           <p className="text-gray-600 text-sm mb-4">
             Most browsers let you control cookies through their settings. You can block or delete cookies at any time.
           </p>
           <Link
             href="/privacy"
-            className="inline-flex px-6 py-3 bg-[#1e3a4c] text-white font-semibold rounded-xl hover:bg-[#2a5570] transition-colors"
+            className="inline-flex px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-[#2a5570] transition-colors"
           >
             Privacy Policy
           </Link>
@@ -48,7 +48,7 @@ export default function CookiesPage() {
         {/* Content */}
         <div className="prose prose-lg max-w-none">
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4">What Are Cookies?</h2>
+            <h2 className="text-2xl font-bold text-primary mb-4">What Are Cookies?</h2>
             <p className="text-gray-600 mb-4">
               Cookies are small text files placed on your device when you visit a website. They are 
               widely used to make websites work more efficiently and provide information to website owners.
@@ -60,7 +60,7 @@ export default function CookiesPage() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4">How We Use Cookies</h2>
+            <h2 className="text-2xl font-bold text-primary mb-4">How We Use Cookies</h2>
             <p className="text-gray-600 mb-4">
               We use cookies for several purposes:
             </p>
@@ -73,21 +73,21 @@ export default function CookiesPage() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-              <Shield className="w-6 h-6 text-[#ea580c]" />
+            <h2 className="text-2xl font-bold text-primary mb-4 flex items-center gap-2">
+              <Shield className="w-6 h-6 text-accent-hover" />
               Types of Cookies We Use
             </h2>
 
             <div className="space-y-6">
               <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
-                <h3 className="text-xl font-bold text-[#1e3a4c] mb-3">1. Strictly Necessary Cookies</h3>
+                <h3 className="text-xl font-bold text-primary mb-3">1. Strictly Necessary Cookies</h3>
                 <p className="text-gray-600 mb-4">
                   These cookies are essential for the website to function and cannot be switched off. 
                   They are usually only set in response to actions you take, such as setting privacy 
                   preferences, logging in, or filling in forms.
                 </p>
                 <div className="bg-gray-50 rounded-xl p-4 text-sm">
-                  <div className="font-semibold text-[#1e3a4c] mb-2">Examples:</div>
+                  <div className="font-semibold text-primary mb-2">Examples:</div>
                   <ul className="list-disc pl-5 text-gray-600 space-y-1">
                     <li>Authentication cookies (keep you logged in)</li>
                     <li>Security cookies (prevent fraud)</li>
@@ -102,8 +102,8 @@ export default function CookiesPage() {
               </div>
 
               <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
-                <h3 className="text-xl font-bold text-[#1e3a4c] mb-3 flex items-center gap-2">
-                  <BarChart className="w-5 h-5 text-[#ea580c]" />
+                <h3 className="text-xl font-bold text-primary mb-3 flex items-center gap-2">
+                  <BarChart className="w-5 h-5 text-accent-hover" />
                   2. Performance & Analytics Cookies
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -111,7 +111,7 @@ export default function CookiesPage() {
                   and reporting information anonymously. This helps us improve how our website works.
                 </p>
                 <div className="bg-gray-50 rounded-xl p-4 text-sm mb-4">
-                  <div className="font-semibold text-[#1e3a4c] mb-2">Examples:</div>
+                  <div className="font-semibold text-primary mb-2">Examples:</div>
                   <ul className="list-disc pl-5 text-gray-600 space-y-1">
                     <li>Google Analytics (page views, traffic sources, user behavior)</li>
                     <li>Hotjar (heatmaps, session recordings)</li>
@@ -134,13 +134,13 @@ export default function CookiesPage() {
               </div>
 
               <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
-                <h3 className="text-xl font-bold text-[#1e3a4c] mb-3">3. Functionality Cookies</h3>
+                <h3 className="text-xl font-bold text-primary mb-3">3. Functionality Cookies</h3>
                 <p className="text-gray-600 mb-4">
                   These cookies enable enhanced functionality and personalization, such as remembering 
                   your preferences, language settings, and region.
                 </p>
                 <div className="bg-gray-50 rounded-xl p-4 text-sm">
-                  <div className="font-semibold text-[#1e3a4c] mb-2">Examples:</div>
+                  <div className="font-semibold text-primary mb-2">Examples:</div>
                   <ul className="list-disc pl-5 text-gray-600 space-y-1">
                     <li>Language preferences</li>
                     <li>Region/location selection</li>
@@ -155,13 +155,13 @@ export default function CookiesPage() {
               </div>
 
               <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
-                <h3 className="text-xl font-bold text-[#1e3a4c] mb-3">4. Marketing & Advertising Cookies</h3>
+                <h3 className="text-xl font-bold text-primary mb-3">4. Marketing & Advertising Cookies</h3>
                 <p className="text-gray-600 mb-4">
                   These cookies track your online activity to help us deliver more relevant advertising 
                   and measure the effectiveness of our marketing campaigns.
                 </p>
                 <div className="bg-gray-50 rounded-xl p-4 text-sm">
-                  <div className="font-semibold text-[#1e3a4c] mb-2">Examples:</div>
+                  <div className="font-semibold text-primary mb-2">Examples:</div>
                   <ul className="list-disc pl-5 text-gray-600 space-y-1">
                     <li>Google Ads (retargeting, conversion tracking)</li>
                     <li>Facebook Pixel (ad targeting, campaign measurement)</li>
@@ -178,7 +178,7 @@ export default function CookiesPage() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4">Third-Party Cookies</h2>
+            <h2 className="text-2xl font-bold text-primary mb-4">Third-Party Cookies</h2>
             <p className="text-gray-600 mb-4">
               Some cookies are set by third-party services that appear on our pages. We do not control 
               these cookies. Common third parties include:
@@ -192,21 +192,21 @@ export default function CookiesPage() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-              <Settings className="w-6 h-6 text-[#ea580c]" />
+            <h2 className="text-2xl font-bold text-primary mb-4 flex items-center gap-2">
+              <Settings className="w-6 h-6 text-accent-hover" />
               Managing Your Cookie Preferences
             </h2>
             
-            <h3 className="text-xl font-bold text-[#1e3a4c] mt-6 mb-3">On Our Website</h3>
+            <h3 className="text-xl font-bold text-primary mt-6 mb-3">On Our Website</h3>
             <p className="text-gray-600 mb-4">
               You can manage your cookie preferences at any time using our cookie settings tool. 
               You can manage cookies through your browser settings.
             </p>
-            <button className="px-6 py-3 bg-[#1e3a4c] text-white font-semibold rounded-xl hover:bg-[#2a5570] transition-colors mb-6">
+            <button className="px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-[#2a5570] transition-colors mb-6">
               Update Cookie Preferences
             </button>
 
-            <h3 className="text-xl font-bold text-[#1e3a4c] mt-6 mb-3">In Your Browser</h3>
+            <h3 className="text-xl font-bold text-primary mt-6 mb-3">In Your Browser</h3>
             <p className="text-gray-600 mb-4">
               Most browsers allow you to control cookies through their settings. You can typically:
             </p>
@@ -225,30 +225,30 @@ export default function CookiesPage() {
               </p>
             </div>
 
-            <h3 className="text-xl font-bold text-[#1e3a4c] mt-6 mb-3">Browser-Specific Instructions</h3>
+            <h3 className="text-xl font-bold text-primary mt-6 mb-3">Browser-Specific Instructions</h3>
             <div className="bg-gray-50 rounded-xl p-6">
               <ul className="space-y-2 text-sm text-gray-700">
                 <li>
                   <strong>Chrome:</strong>{" "}
-                  <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" className="text-[#ea580c] hover:underline">
+                  <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" className="text-accent-hover hover:underline">
                     Cookie settings guide
                   </a>
                 </li>
                 <li>
                   <strong>Firefox:</strong>{" "}
-                  <a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer" target="_blank" rel="noopener noreferrer" className="text-[#ea580c] hover:underline">
+                  <a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer" target="_blank" rel="noopener noreferrer" className="text-accent-hover hover:underline">
                     Cookie settings guide
                   </a>
                 </li>
                 <li>
                   <strong>Safari:</strong>{" "}
-                  <a href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac" target="_blank" rel="noopener noreferrer" className="text-[#ea580c] hover:underline">
+                  <a href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac" target="_blank" rel="noopener noreferrer" className="text-accent-hover hover:underline">
                     Cookie settings guide
                   </a>
                 </li>
                 <li>
                   <strong>Edge:</strong>{" "}
-                  <a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" className="text-[#ea580c] hover:underline">
+                  <a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" className="text-accent-hover hover:underline">
                     Cookie settings guide
                   </a>
                 </li>
@@ -257,23 +257,23 @@ export default function CookiesPage() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4">Opt-Out of Targeted Advertising</h2>
+            <h2 className="text-2xl font-bold text-primary mb-4">Opt-Out of Targeted Advertising</h2>
             <p className="text-gray-600 mb-4">
               You can opt out of personalized advertising from participating companies:
             </p>
             <ul className="list-disc pl-6 text-gray-600 space-y-2">
               <li>
-                <a href="https://www.youronlinechoices.com/uk/" target="_blank" rel="noopener noreferrer" className="text-[#ea580c] hover:underline">
+                <a href="https://www.youronlinechoices.com/uk/" target="_blank" rel="noopener noreferrer" className="text-accent-hover hover:underline">
                   Your Online Choices (UK/EU)
                 </a>
               </li>
               <li>
-                <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-[#ea580c] hover:underline">
+                <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-accent-hover hover:underline">
                   Google Ads Settings
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/ads/preferences" target="_blank" rel="noopener noreferrer" className="text-[#ea580c] hover:underline">
+                <a href="https://www.facebook.com/ads/preferences" target="_blank" rel="noopener noreferrer" className="text-accent-hover hover:underline">
                   Facebook Ad Preferences
                 </a>
               </li>
@@ -281,7 +281,7 @@ export default function CookiesPage() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4">Do Not Track</h2>
+            <h2 className="text-2xl font-bold text-primary mb-4">Do Not Track</h2>
             <p className="text-gray-600 mb-4">
               Some browsers support a "Do Not Track" (DNT) feature. Currently, there is no industry 
               standard for how to respond to DNT signals, so our website does not respond to DNT 
@@ -290,7 +290,7 @@ export default function CookiesPage() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4">Updates to This Policy</h2>
+            <h2 className="text-2xl font-bold text-primary mb-4">Updates to This Policy</h2>
             <p className="text-gray-600 mb-4">
               We may update this Cookie Policy periodically to reflect changes in our practices or 
               legal requirements. We'll notify you of significant changes by posting a notice on our 
@@ -299,13 +299,13 @@ export default function CookiesPage() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4">Contact Us</h2>
-            <div className="bg-[#1e3a4c]/5 rounded-xl p-6">
+            <h2 className="text-2xl font-bold text-primary mb-4">Contact Us</h2>
+            <div className="bg-primary/5 rounded-xl p-6">
               <p className="text-gray-600 mb-4">
                 If you have questions about our use of cookies, please contact us:
               </p>
               <div className="text-gray-700 space-y-2">
-                <p><strong>Email:</strong> <a href="mailto:privacy@adventurewales.co.uk" className="text-[#ea580c] hover:underline">privacy@adventurewales.co.uk</a></p>
+                <p><strong>Email:</strong> <a href="mailto:privacy@adventurewales.co.uk" className="text-accent-hover hover:underline">privacy@adventurewales.co.uk</a></p>
                 <p><strong>Post:</strong><br />
                   Data Protection Officer<br />
                   Adventure Wales<br />
@@ -320,11 +320,11 @@ export default function CookiesPage() {
 
         {/* Related Links */}
         <div className="mt-12 pt-8 border-t border-gray-200">
-          <h3 className="font-bold text-[#1e3a4c] mb-4">Related Policies</h3>
+          <h3 className="font-bold text-primary mb-4">Related Policies</h3>
           <div className="flex flex-wrap gap-4">
-            <Link href="/privacy" className="text-[#ea580c] hover:underline">Privacy Policy</Link>
-            <Link href="/terms" className="text-[#ea580c] hover:underline">Terms of Service</Link>
-            <Link href="/contact" className="text-[#ea580c] hover:underline">Contact Us</Link>
+            <Link href="/privacy" className="text-accent-hover hover:underline">Privacy Policy</Link>
+            <Link href="/terms" className="text-accent-hover hover:underline">Terms of Service</Link>
+            <Link href="/contact" className="text-accent-hover hover:underline">Contact Us</Link>
           </div>
         </div>
       </div>

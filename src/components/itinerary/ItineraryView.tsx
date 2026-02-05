@@ -68,7 +68,7 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
           {!basecamp && accommodations.length > 0 && (
             <button
               onClick={() => setShowBasecampPicker(true)}
-              className="bg-gradient-to-r from-[#1e3a4c] to-[#2d5466] text-white p-4 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-all group"
+              className="bg-gradient-to-r from-primary to-[#2d5466] text-white p-4 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-all group"
             >
               <div className="flex items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
@@ -87,22 +87,22 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
 
           {/* Basecamp Selected Banner */}
           {basecamp && (
-            <div className="bg-white p-4 rounded-xl shadow-sm border-2 border-[#ea580c]">
+            <div className="bg-white p-4 rounded-xl shadow-sm border-2 border-accent-hover">
               <div className="flex items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
-                  <div className="bg-[#ea580c] p-2 rounded-lg">
+                  <div className="bg-accent-hover p-2 rounded-lg">
                     <Home className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <div className="text-xs font-bold text-[#ea580c] uppercase tracking-wider">Your Basecamp</div>
-                    <div className="font-bold text-[#1e3a4c]">{basecamp.name}</div>
+                    <div className="text-xs font-bold text-accent-hover uppercase tracking-wider">Your Basecamp</div>
+                    <div className="font-bold text-primary">{basecamp.name}</div>
                     {userLocation && (
                       <div className="text-xs text-gray-500 mt-0.5 flex items-center gap-1">
                         <MapPin className="w-3 h-3" />
                         Travelling from {userLocation.label}
                         <button
                           onClick={() => setShowBasecampPicker(true)}
-                          className="text-[#ea580c] hover:text-[#ea580c]/80 font-semibold ml-1"
+                          className="text-accent-hover hover:text-accent-hover/80 font-semibold ml-1"
                         >
                           Change
                         </button>
@@ -112,7 +112,7 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
                 </div>
                 <button
                   onClick={() => setShowBasecampPicker(true)}
-                  className="text-sm font-bold text-[#ea580c] hover:text-[#ea580c]/80 transition-colors"
+                  className="text-sm font-bold text-accent-hover hover:text-accent-hover/80 transition-colors"
                 >
                   Change
                 </button>
@@ -128,8 +128,8 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
                 className={clsx(
                     "font-semibold transition-colors",
                     mode === "standard" 
-                        ? "text-[#1e3a4c] underline underline-offset-4" 
-                        : "text-gray-500 hover:text-[#1e3a4c]"
+                        ? "text-primary underline underline-offset-4" 
+                        : "text-gray-500 hover:text-primary"
                 )}
             >
                 Standard itinerary
@@ -167,7 +167,7 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
 
         {/* Timeline */}
         <section>
-             <h2 className="text-2xl font-bold text-[#1e3a4c] mb-2">Your Itinerary</h2>
+             <h2 className="text-2xl font-bold text-primary mb-2">Your Itinerary</h2>
              {(days.length > 0 || region) && (
                <p className="text-gray-500 mb-8">
                  The perfect {days.length} day{days.length !== 1 ? "s" : ""}{region ? ` ${region.name}` : ""} road trip
@@ -185,7 +185,7 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
          {/* Quick Fact Sheet */}
          {(durationDays || difficulty || bestSeason || region || stops.length > 0) && (
            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
-             <div className="bg-gradient-to-r from-[#1e3a4c] to-[#2d5a73] px-5 py-3">
+             <div className="bg-gradient-to-r from-primary to-[#2d5a73] px-5 py-3">
                <h3 className="text-white font-bold text-sm flex items-center gap-2">
                  <Map className="w-4 h-4" />
                  Trip Overview
@@ -199,7 +199,7 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
                    </div>
                    <div>
                      <div className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Duration</div>
-                     <div className="text-sm font-bold text-[#1e3a4c]">{durationDays} day{durationDays !== 1 ? "s" : ""}</div>
+                     <div className="text-sm font-bold text-primary">{durationDays} day{durationDays !== 1 ? "s" : ""}</div>
                    </div>
                  </div>
                )}
@@ -210,7 +210,7 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
                    </div>
                    <div>
                      <div className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Difficulty</div>
-                     <div className="text-sm font-bold text-[#1e3a4c] capitalize">{difficulty}</div>
+                     <div className="text-sm font-bold text-primary capitalize">{difficulty}</div>
                    </div>
                  </div>
                )}
@@ -221,7 +221,7 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
                    </div>
                    <div>
                      <div className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Best Season</div>
-                     <div className="text-sm font-bold text-[#1e3a4c]">{bestSeason}</div>
+                     <div className="text-sm font-bold text-primary">{bestSeason}</div>
                    </div>
                  </div>
                )}
@@ -232,7 +232,7 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
                    </div>
                    <div>
                      <div className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Budget Estimate</div>
-                     <div className="text-sm font-bold text-[#1e3a4c]">
+                     <div className="text-sm font-bold text-primary">
                        {priceEstimateFrom && priceEstimateTo
                          ? `£${priceEstimateFrom}–£${priceEstimateTo}`
                          : `From £${priceEstimateFrom || priceEstimateTo}`}
@@ -247,7 +247,7 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
                    </div>
                    <div>
                      <div className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Region</div>
-                     <div className="text-sm font-bold text-[#1e3a4c]">{region.name}</div>
+                     <div className="text-sm font-bold text-primary">{region.name}</div>
                    </div>
                  </div>
                )}
@@ -258,7 +258,7 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
                    </div>
                    <div>
                      <div className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Stops</div>
-                     <div className="text-sm font-bold text-[#1e3a4c]">
+                     <div className="text-sm font-bold text-primary">
                        {stops.length} stop{stops.length !== 1 ? "s" : ""} across {days.length} day{days.length !== 1 ? "s" : ""}
                      </div>
                    </div>

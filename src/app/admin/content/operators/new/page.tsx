@@ -98,7 +98,7 @@ export default async function NewOperatorPage() {
                 id="name"
                 name="name"
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="e.g., Snowdonia Adventures"
               />
               <p className="text-sm text-gray-500 mt-1">Slug will be auto-generated from name</p>
@@ -112,7 +112,7 @@ export default async function NewOperatorPage() {
                 id="category"
                 name="category"
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
               >
                 <option value="">Select a category</option>
                 <option value="activity_provider">Activity Provider</option>
@@ -131,7 +131,7 @@ export default async function NewOperatorPage() {
                 id="description"
                 name="description"
                 rows={4}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="Brief description of the operator..."
               />
             </div>
@@ -171,7 +171,7 @@ export default async function NewOperatorPage() {
                 type="url"
                 id="website"
                 name="website"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="https://example.com"
               />
             </div>
@@ -185,7 +185,7 @@ export default async function NewOperatorPage() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="contact@example.com"
                 />
               </div>
@@ -198,7 +198,7 @@ export default async function NewOperatorPage() {
                   type="tel"
                   id="phone"
                   name="phone"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="+44 1234 567890"
                 />
               </div>
@@ -212,7 +212,7 @@ export default async function NewOperatorPage() {
                 id="address"
                 name="address"
                 rows={2}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="Full address..."
               />
             </div>
@@ -231,7 +231,7 @@ export default async function NewOperatorPage() {
             <select
               id="priceRange"
               name="priceRange"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
             >
               <option value="">Select price range</option>
               <option value="£">£ - Budget</option>
@@ -260,7 +260,7 @@ export default async function NewOperatorPage() {
                       id={`region-${region.id}`}
                       name="regions"
                       value={region.slug}
-                      className="rounded text-[#ea580c] focus:ring-[#ea580c]"
+                      className="rounded text-accent-hover focus:ring-accent-hover"
                     />
                     <label htmlFor={`region-${region.id}`} className="text-sm text-gray-700">
                       {region.name}
@@ -282,7 +282,7 @@ export default async function NewOperatorPage() {
                       id={`activity-${activityType.id}`}
                       name="activityTypes"
                       value={activityType.slug}
-                      className="rounded text-[#ea580c] focus:ring-[#ea580c]"
+                      className="rounded text-accent-hover focus:ring-accent-hover"
                     />
                     <label htmlFor={`activity-${activityType.id}`} className="text-sm text-gray-700">
                       {activityType.name}
@@ -304,7 +304,7 @@ export default async function NewOperatorPage() {
           </Link>
           <button
             type="submit"
-            className="px-6 py-2 bg-[#ea580c] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
+            className="px-6 py-2 bg-accent-hover text-white rounded-lg hover:bg-accent-hover transition-colors"
           >
             Create Operator
           </button>

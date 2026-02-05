@@ -57,7 +57,7 @@ export function Newsletter() {
       style={{ backgroundImage: `url('${bgImage}')` }}
     >
       {/* Gradient overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a4c]/90 via-[#1e3a4c]/85 to-[#ea580c]/80" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/85 to-accent-hover/80" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
@@ -85,13 +85,13 @@ export function Newsletter() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email address"
-                className="flex-1 px-5 py-4 rounded-2xl bg-white border-2 border-white/80 focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c] outline-none text-slate-900 placeholder-slate-400 shadow-lg"
+                className="flex-1 px-5 py-4 rounded-2xl bg-white border-2 border-white/80 focus:border-accent-hover focus:ring-2 focus:ring-accent-hover outline-none text-slate-900 placeholder-slate-400 shadow-lg"
                 required
               />
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="px-8 py-4 bg-[#ea580c] hover:bg-orange-600 text-white font-bold rounded-2xl transition-all shadow-lg hover:shadow-xl hover:scale-105 whitespace-nowrap disabled:opacity-50 border-2 border-orange-400"
+                className="px-8 py-4 bg-accent-hover hover:bg-orange-600 text-white font-bold rounded-2xl transition-all shadow-lg hover:shadow-xl hover:scale-105 whitespace-nowrap disabled:opacity-50 border-2 border-orange-400"
               >
                 {status === "loading" ? "..." : "Subscribe"}
               </button>

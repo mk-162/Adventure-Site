@@ -1,11 +1,16 @@
 @import "tailwindcss";
 @import "leaflet/dist/leaflet.css";
 
+@theme {
+  --color-primary: #1e3a4c;
+  --color-primary-dark: #152a38;
+  --color-primary-light: #2a5470;
+  --color-accent: #ea580c;
+  --color-accent-hover: #c2410c;
+  --color-accent-light: rgba(234, 88, 12, 0.125);
+}
+
 :root {
-  --primary: #1e3a4c;
-  --primary-dark: #152a38;
-  --accent: #ea580c;
-  --accent-hover: #c2410c;
   --background: #ffffff;
   --foreground: #171717;
   --muted: #f8fafc;

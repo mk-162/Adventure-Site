@@ -25,16 +25,16 @@ export function ThisWeekendWidget({
       <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
         <div className="flex items-center gap-3 mb-4">
           <div className="bg-orange-100 p-2 rounded-lg">
-            <Calendar className="w-5 h-5 text-[#ea580c]" />
+            <Calendar className="w-5 h-5 text-accent-hover" />
           </div>
-          <h3 className="text-lg font-bold text-[#1e3a4c]">{title}</h3>
+          <h3 className="text-lg font-bold text-primary">{title}</h3>
         </div>
         <p className="text-gray-500 text-sm mb-4">
           No events found. Check out what's coming up later!
         </p>
         <Link
           href="/calendar"
-          className="text-[#ea580c] text-sm font-bold hover:underline flex items-center gap-1"
+          className="text-accent-hover text-sm font-bold hover:underline flex items-center gap-1"
         >
           View Full Calendar <ChevronRight className="w-4 h-4" />
         </Link>
@@ -48,16 +48,16 @@ export function ThisWeekendWidget({
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="bg-orange-100 p-2 rounded-lg">
-              <Calendar className="w-5 h-5 text-[#ea580c]" />
+              <Calendar className="w-5 h-5 text-accent-hover" />
             </div>
             <div>
-              <span className="text-xs font-bold text-[#ea580c] uppercase tracking-wider">{subtitle}</span>
-              <h3 className="text-lg font-bold text-[#1e3a4c] leading-tight">{title}</h3>
+              <span className="text-xs font-bold text-accent-hover uppercase tracking-wider">{subtitle}</span>
+              <h3 className="text-lg font-bold text-primary leading-tight">{title}</h3>
             </div>
           </div>
           <Link
             href={viewAllLink}
-            className="text-xs font-bold text-gray-400 hover:text-[#1e3a4c] transition-colors"
+            className="text-xs font-bold text-gray-400 hover:text-primary transition-colors"
           >
             View All
           </Link>
@@ -76,12 +76,12 @@ export function ThisWeekendWidget({
                 <span className="block text-xs font-bold text-gray-400 uppercase">
                   {event.dateStart ? new Date(event.dateStart).toLocaleDateString('en-GB', { weekday: 'short' }) : 'SAT'}
                 </span>
-                <span className="block text-xl font-black text-[#1e3a4c]">
+                <span className="block text-xl font-black text-primary">
                   {event.dateStart ? new Date(event.dateStart).getDate() : '25'}
                 </span>
               </div>
               <div className="min-w-0">
-                <h4 className="font-bold text-[#1e3a4c] text-sm truncate group-hover:text-[#ea580c] transition-colors">
+                <h4 className="font-bold text-primary text-sm truncate group-hover:text-accent-hover transition-colors">
                   {event.name}
                 </h4>
                 <div className="flex items-center gap-1 text-xs text-gray-500 mt-1">

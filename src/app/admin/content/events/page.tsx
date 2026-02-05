@@ -47,7 +47,7 @@ export default async function EventsAdmin() {
           <ImportButton />
           <Link
             href="/admin/content/events/new"
-            className="flex items-center gap-2 px-4 py-2 bg-[#ea580c] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
+            className="flex items-center gap-2 px-4 py-2 bg-accent-hover text-white rounded-lg hover:bg-accent-hover transition-colors"
           >
             <Plus className="h-5 w-5" />
             Add Event
@@ -110,7 +110,7 @@ export default async function EventsAdmin() {
                     <Link href={`/events/${event.slug}`} className="p-2 text-gray-400 hover:text-gray-600" title="View">
                       <Eye className="h-4 w-4" />
                     </Link>
-                    <Link href={`/admin/content/events/${event.id}`} className="p-2 text-gray-400 hover:text-[#ea580c]" title="Edit">
+                    <Link href={`/admin/content/events/${event.id}`} className="p-2 text-gray-400 hover:text-accent-hover" title="Edit">
                       <Edit className="h-4 w-4" />
                     </Link>
                     <button className="p-2 text-gray-400 hover:text-red-500" title="Delete">

@@ -115,7 +115,7 @@ export default async function ClaimsPage() {
                 {pendingClaims.map((claim) => (
                   <tr key={claim.id} className="hover:bg-gray-50">
                     <td className="px-6 py-4">
-                      <Link href={`/directory/${claim.operatorSlug}`} className="font-medium text-gray-900 hover:text-[#ea580c]">
+                      <Link href={`/directory/${claim.operatorSlug}`} className="font-medium text-gray-900 hover:text-accent-hover">
                         {claim.operatorName}
                       </Link>
                     </td>
@@ -279,7 +279,7 @@ function OperatorRow({ op, handleImpersonate }: {
   return (
     <tr className="hover:bg-gray-50">
       <td className="px-6 py-4">
-        <Link href={`/directory/${op.slug}`} className="font-medium text-gray-900 hover:text-[#ea580c]">
+        <Link href={`/directory/${op.slug}`} className="font-medium text-gray-900 hover:text-accent-hover">
           {op.name}
         </Link>
       </td>
@@ -327,7 +327,7 @@ function OperatorRow({ op, handleImpersonate }: {
           <form action={handleImpersonate.bind(null, op.id)}>
             <button
               type="submit"
-              className="p-2 text-gray-400 hover:text-[#ea580c] rounded-lg hover:bg-orange-50"
+              className="p-2 text-gray-400 hover:text-accent-hover rounded-lg hover:bg-orange-50"
               title="Login as this operator"
             >
               <LogIn className="h-4 w-4" />

@@ -133,7 +133,7 @@ export default async function AccommodationPage({ params }: Props) {
       <JsonLd data={createBreadcrumbSchema(breadcrumbItems)} />
       <div className="min-h-screen bg-gray-50">
       {/* Hero */}
-      <section className="relative h-[40vh] min-h-[300px] bg-[#1e3a4c]">
+      <section className="relative h-[40vh] min-h-[300px] bg-primary">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-40"
           style={{
@@ -192,7 +192,7 @@ export default async function AccommodationPage({ params }: Props) {
           <div className="lg:col-span-2 space-y-8">
             {/* Description */}
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">About This Property</h2>
+              <h2 className="text-xl font-bold text-primary mb-4">About This Property</h2>
               <p className="text-gray-600 leading-relaxed">
                 {accommodation.description || `${accommodation.name} offers comfortable accommodation in ${region?.name || 'Wales'}, perfect for adventure seekers looking for a place to rest and recharge.`}
               </p>
@@ -201,12 +201,12 @@ export default async function AccommodationPage({ params }: Props) {
             {/* Adventure Features */}
             {features.length > 0 && (
               <div className="bg-white rounded-2xl p-6 shadow-sm">
-                <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Adventure Features</h2>
+                <h2 className="text-xl font-bold text-primary mb-4">Adventure Features</h2>
                 <div className="flex flex-wrap gap-2">
                   {features.map((feature) => (
                     <span
                       key={feature}
-                      className="inline-flex items-center gap-1 bg-[#1e3a4c]/10 text-[#1e3a4c] text-sm px-3 py-1.5 rounded-full"
+                      className="inline-flex items-center gap-1 bg-primary/10 text-primary text-sm px-3 py-1.5 rounded-full"
                     >
                       <Mountain className="h-4 w-4" />
                       {feature}
@@ -218,18 +218,18 @@ export default async function AccommodationPage({ params }: Props) {
 
             {/* Amenities (placeholder) */}
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Amenities</h2>
+              <h2 className="text-xl font-bold text-primary mb-4">Amenities</h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 <div className="flex items-center gap-2 text-gray-600">
-                  <Wifi className="h-5 w-5 text-[#1e3a4c]" />
+                  <Wifi className="h-5 w-5 text-primary" />
                   <span>Free WiFi</span>
                 </div>
                 <div className="flex items-center gap-2 text-gray-600">
-                  <Car className="h-5 w-5 text-[#1e3a4c]" />
+                  <Car className="h-5 w-5 text-primary" />
                   <span>Parking</span>
                 </div>
                 <div className="flex items-center gap-2 text-gray-600">
-                  <Mountain className="h-5 w-5 text-[#1e3a4c]" />
+                  <Mountain className="h-5 w-5 text-primary" />
                   <span>Gear Storage</span>
                 </div>
               </div>
@@ -258,7 +258,7 @@ export default async function AccommodationPage({ params }: Props) {
               {/* Price */}
               <div className="mb-4">
                 {accommodation.priceFrom && (
-                  <div className="text-2xl font-bold text-[#1e3a4c]">
+                  <div className="text-2xl font-bold text-primary">
                     From £{Number(accommodation.priceFrom).toFixed(0)}
                     {accommodation.priceTo && (
                       <span>-£{Number(accommodation.priceTo).toFixed(0)}</span>
@@ -275,7 +275,7 @@ export default async function AccommodationPage({ params }: Props) {
                     href={accommodation.bookingUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full bg-[#ea580c] text-white font-semibold py-3 px-4 rounded-lg hover:bg-[#ea580c] transition-colors"
+                    className="flex items-center justify-center gap-2 w-full bg-accent-hover text-white font-semibold py-3 px-4 rounded-lg hover:bg-accent-hover transition-colors"
                   >
                     <Calendar className="h-5 w-5" />
                     Check Availability
@@ -287,7 +287,7 @@ export default async function AccommodationPage({ params }: Props) {
                     href={accommodation.airbnbUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full border-2 border-[#1e3a4c] text-[#1e3a4c] font-semibold py-3 px-4 rounded-lg hover:bg-[#1e3a4c]/5 transition-colors"
+                    className="flex items-center justify-center gap-2 w-full border-2 border-primary text-primary font-semibold py-3 px-4 rounded-lg hover:bg-primary/5 transition-colors"
                   >
                     View on Airbnb
                     <ExternalLink className="h-4 w-4" />
@@ -298,7 +298,7 @@ export default async function AccommodationPage({ params }: Props) {
                     href={accommodation.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full text-[#1e3a4c] font-medium py-2"
+                    className="flex items-center justify-center gap-2 w-full text-primary font-medium py-2"
                   >
                     <Globe className="h-4 w-4" />
                     Visit Website
@@ -322,7 +322,7 @@ export default async function AccommodationPage({ params }: Props) {
       {/* Nearby Accommodation */}
       {nearbyAccommodation.length > 1 && (
         <section className="max-w-7xl mx-auto px-4 py-12">
-          <h2 className="text-2xl font-bold text-[#1e3a4c] mb-6">
+          <h2 className="text-2xl font-bold text-primary mb-6">
             More Places to Stay in {region?.name}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

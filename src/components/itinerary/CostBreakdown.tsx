@@ -229,8 +229,8 @@ export function CostBreakdown({ stops, mode, itineraryName, itineraryId }: CostB
       {/* Header */}
       <div className="p-6 pb-0">
         <div className="flex items-center justify-between mb-1">
-          <h3 className="text-xl font-bold text-[#1e3a4c]">Trip Cost</h3>
-          <span className="font-bold capitalize text-xs bg-gray-100 text-[#1e3a4c] px-2 py-1 rounded">
+          <h3 className="text-xl font-bold text-primary">Trip Cost</h3>
+          <span className="font-bold capitalize text-xs bg-gray-100 text-primary px-2 py-1 rounded">
             {mode}
           </span>
         </div>
@@ -254,7 +254,7 @@ export function CostBreakdown({ stops, mode, itineraryName, itineraryId }: CostB
               >
                 <Minus className="w-3.5 h-3.5 text-gray-600" />
               </button>
-              <span className="text-lg font-bold text-[#1e3a4c] tabular-nums">{adults}</span>
+              <span className="text-lg font-bold text-primary tabular-nums">{adults}</span>
               <button
                 onClick={() => setAdults(Math.min(20, adults + 1))}
                 className="w-7 h-7 rounded-lg bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-100 transition-colors"
@@ -274,7 +274,7 @@ export function CostBreakdown({ stops, mode, itineraryName, itineraryId }: CostB
               >
                 <Minus className="w-3.5 h-3.5 text-gray-600" />
               </button>
-              <span className="text-lg font-bold text-[#1e3a4c] tabular-nums">{children}</span>
+              <span className="text-lg font-bold text-primary tabular-nums">{children}</span>
               <button
                 onClick={() => setChildren(Math.min(20, children + 1))}
                 className="w-7 h-7 rounded-lg bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-100 transition-colors"
@@ -350,8 +350,8 @@ export function CostBreakdown({ stops, mode, itineraryName, itineraryId }: CostB
       {/* Totals */}
       <div className="px-6 py-4 bg-gray-50/50">
         <div className="flex justify-between items-center mb-1">
-          <span className="text-sm font-bold text-[#1e3a4c]">Group Total</span>
-          <span className="text-lg font-black text-[#ea580c]">{formatRange(totalMin, totalMax)}</span>
+          <span className="text-sm font-bold text-primary">Group Total</span>
+          <span className="text-lg font-black text-accent-hover">{formatRange(totalMin, totalMax)}</span>
         </div>
         <div className="flex justify-between items-center">
           <span className="text-xs text-gray-500">Per person avg.</span>
@@ -371,7 +371,7 @@ export function CostBreakdown({ stops, mode, itineraryName, itineraryId }: CostB
             "w-full font-bold py-3.5 rounded-xl shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2",
             saved
               ? "bg-green-600 hover:bg-green-700 text-white shadow-green-600/30"
-              : "bg-[#ea580c] hover:bg-[#ea580c]/90 text-white shadow-[#ea580c]/30"
+              : "bg-accent-hover hover:bg-accent-hover/90 text-white shadow-accent-hover/30"
           )}
         >
           <Heart className={clsx("w-5 h-5 transition-all", saved ? "fill-white" : "")} />
@@ -408,9 +408,9 @@ export function CostBreakdown({ stops, mode, itineraryName, itineraryId }: CostB
           >
             <div className="flex flex-col items-center text-center gap-4">
               <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
-                <Heart className="w-8 h-8 text-[#ea580c]" />
+                <Heart className="w-8 h-8 text-accent-hover" />
               </div>
-              <h2 className="text-2xl font-bold text-[#1e3a4c]">
+              <h2 className="text-2xl font-bold text-primary">
                 Save this trip
               </h2>
               <p className="text-gray-600">
@@ -419,7 +419,7 @@ export function CostBreakdown({ stops, mode, itineraryName, itineraryId }: CostB
               <div className="flex flex-col sm:flex-row gap-3 w-full mt-2">
                 <Link
                   href={`/login?from=${typeof window !== "undefined" ? encodeURIComponent(window.location.pathname) : ""}`}
-                  className="flex-1 px-6 py-3 bg-[#ea580c] text-white font-semibold rounded-lg hover:bg-[#ea580c] transition-colors text-center"
+                  className="flex-1 px-6 py-3 bg-accent-hover text-white font-semibold rounded-lg hover:bg-accent-hover transition-colors text-center"
                 >
                   Sign in to save
                 </Link>

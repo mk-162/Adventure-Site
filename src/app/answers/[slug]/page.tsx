@@ -108,19 +108,19 @@ function markdownToHtml(md: string): string {
     // Headers — with IDs for anchor linking
     .replace(/^#### (.+)$/gm, (_match: string, text: string) => {
       const id = text.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-      return `<h4 id="${id}" class="text-lg font-semibold text-[#1e3a4c] mt-6 mb-3">${text}</h4>`;
+      return `<h4 id="${id}" class="text-lg font-semibold text-primary mt-6 mb-3">${text}</h4>`;
     })
     .replace(/^### (.+)$/gm, (_match: string, text: string) => {
       const id = text.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-      return `<h3 id="${id}" class="text-xl font-semibold text-[#1e3a4c] mt-8 mb-4">${text}</h3>`;
+      return `<h3 id="${id}" class="text-xl font-semibold text-primary mt-8 mb-4">${text}</h3>`;
     })
     .replace(/^## (.+)$/gm, (_match: string, text: string) => {
       const id = text.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-      return `<h2 id="${id}" class="text-2xl font-bold text-[#1e3a4c] mt-10 mb-4">${text}</h2>`;
+      return `<h2 id="${id}" class="text-2xl font-bold text-primary mt-10 mb-4">${text}</h2>`;
     })
     .replace(/^# (.+)$/gm, '')
     // Bold
-    .replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold text-[#1e3a4c]">$1</strong>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold text-primary">$1</strong>')
     // Italic
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
     // Tables
@@ -139,7 +139,7 @@ function markdownToHtml(md: string): string {
       return `<div class="overflow-x-auto my-6 rounded-xl border border-gray-200"><table class="w-full">${match}</table></div>`;
     })
     // Unordered lists
-    .replace(/^- (.+)$/gm, '<li class="flex items-start gap-3 py-1"><span class="text-[#ea580c] shrink-0">•</span><span>$1</span></li>')
+    .replace(/^- (.+)$/gm, '<li class="flex items-start gap-3 py-1"><span class="text-accent-hover shrink-0">•</span><span>$1</span></li>')
     .replace(/(<li[\s\S]*?<\/li>\n?)+/g, (match) => {
       if (match.includes('flex items-start')) {
         return `<ul class="space-y-1 my-4">${match}</ul>`;
@@ -147,7 +147,7 @@ function markdownToHtml(md: string): string {
       return match;
     })
     // Links
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-[#ea580c] hover:underline font-medium">$1</a>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-accent-hover hover:underline font-medium">$1</a>')
     // Paragraphs
     .replace(/^(?!<[hultd]|<li|<div|<tr)(.+)$/gm, (match, p1) => {
       if (p1.trim()) {
@@ -247,17 +247,17 @@ export default async function AnswerPage({ params }: Props) {
       <div className="min-h-screen pt-4 lg:pt-8 pb-12">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex items-center gap-2 text-xs lg:text-sm text-gray-500 mb-6">
-            <Link href="/" className="hover:text-[#1e3a4c]">Home</Link>
+            <Link href="/" className="hover:text-primary">Home</Link>
             <ChevronRight className="w-3 h-3" />
-            <Link href="/answers" className="hover:text-[#1e3a4c]">Answers</Link>
+            <Link href="/answers" className="hover:text-primary">Answers</Link>
             <ChevronRight className="w-3 h-3" />
-            <span className="text-[#1e3a4c] font-medium">Not found</span>
+            <span className="text-primary font-medium">Not found</span>
           </nav>
           <div className="text-center py-12">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#ea580c]/10 mb-6">
-              <HelpCircle className="w-8 h-8 text-[#ea580c]" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent-hover/10 mb-6">
+              <HelpCircle className="w-8 h-8 text-accent-hover" />
             </div>
-            <h1 className="text-2xl lg:text-3xl font-black text-[#1e3a4c] mb-3">
+            <h1 className="text-2xl lg:text-3xl font-black text-primary mb-3">
               Answer not found
             </h1>
             <p className="text-gray-600 text-base lg:text-lg max-w-xl mx-auto mb-8">
@@ -273,12 +273,12 @@ export default async function AnswerPage({ params }: Props) {
                     <Link
                       key={answer.slug}
                       href={`/answers/${answer.slug}`}
-                      className="group flex items-center justify-between p-4 bg-white rounded-lg border border-gray-200 hover:border-[#1e3a4c]/30 hover:shadow-sm transition-all"
+                      className="group flex items-center justify-between p-4 bg-white rounded-lg border border-gray-200 hover:border-primary/30 hover:shadow-sm transition-all"
                     >
-                      <span className="text-gray-800 group-hover:text-[#1e3a4c] font-medium transition-colors">
+                      <span className="text-gray-800 group-hover:text-primary font-medium transition-colors">
                         {answer.question}
                       </span>
-                      <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#ea580c] transition-colors shrink-0" />
+                      <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-accent-hover transition-colors shrink-0" />
                     </Link>
                   ))}
                 </div>
@@ -286,7 +286,7 @@ export default async function AnswerPage({ params }: Props) {
             )}
             <Link
               href="/answers"
-              className="inline-flex items-center gap-2 bg-[#1e3a4c] text-white font-bold py-3 px-6 rounded-full hover:bg-[#2d5568] transition-colors"
+              className="inline-flex items-center gap-2 bg-primary text-white font-bold py-3 px-6 rounded-full hover:bg-[#2d5568] transition-colors"
             >
               Browse All Answers
               <ArrowRight className="w-4 h-4" />
@@ -326,19 +326,19 @@ export default async function AnswerPage({ params }: Props) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs (Desktop) */}
         <div className="hidden lg:flex flex-wrap items-center gap-2 mb-6 text-sm">
-          <Link href="/" className="text-gray-500 hover:text-[#1e3a4c] transition-colors">Home</Link>
+          <Link href="/" className="text-gray-500 hover:text-primary transition-colors">Home</Link>
           <ChevronRight className="w-4 h-4 text-gray-400" />
           {frontmatter.region && (
             <>
-              <Link href={`/${frontmatter.region}`} className="text-gray-500 hover:text-[#1e3a4c] transition-colors">
+              <Link href={`/${frontmatter.region}`} className="text-gray-500 hover:text-primary transition-colors">
                 {formatRegionName(frontmatter.region)}
               </Link>
               <ChevronRight className="w-4 h-4 text-gray-400" />
             </>
           )}
-          <Link href="/answers" className="text-gray-500 hover:text-[#1e3a4c] transition-colors">Answers</Link>
+          <Link href="/answers" className="text-gray-500 hover:text-primary transition-colors">Answers</Link>
           <ChevronRight className="w-4 h-4 text-gray-400" />
-          <span className="text-[#1e3a4c] font-medium truncate max-w-xs">
+          <span className="text-primary font-medium truncate max-w-xs">
             {frontmatter.question.length > 40 ? frontmatter.question.slice(0, 40) + "..." : frontmatter.question}
           </span>
         </div>
@@ -349,7 +349,7 @@ export default async function AnswerPage({ params }: Props) {
           <article className="lg:col-span-8">
             {/* Article Header */}
             <header className="pb-6 lg:pb-8 border-b border-gray-200 mb-6 lg:mb-8">
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black leading-tight tracking-tight text-[#1e3a4c]">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black leading-tight tracking-tight text-primary">
                 {frontmatter.question}
               </h1>
 
@@ -432,7 +432,7 @@ export default async function AnswerPage({ params }: Props) {
             {headings.length >= 2 && (
               <div className="lg:hidden mb-8">
                 <details className="group bg-white rounded-lg border border-gray-200 overflow-hidden">
-                  <summary className="flex cursor-pointer items-center justify-between p-4 font-bold text-[#1e3a4c] select-none">
+                  <summary className="flex cursor-pointer items-center justify-between p-4 font-bold text-primary select-none">
                     <span>📑 Jump to Section</span>
                     <ChevronRight className="w-5 h-5 transition-transform duration-300 group-open:rotate-90" />
                   </summary>
@@ -441,7 +441,7 @@ export default async function AnswerPage({ params }: Props) {
                       <li key={h.id}>
                         <a
                           href={`#${h.id}`}
-                          className={`block text-sm hover:text-[#ea580c] transition-colors ${
+                          className={`block text-sm hover:text-accent-hover transition-colors ${
                             h.level === 2 ? "text-gray-700 font-medium" : "pl-4 text-gray-500"
                           }`}
                         >
@@ -463,8 +463,8 @@ export default async function AnswerPage({ params }: Props) {
             {/* People Also Ask / Related Questions */}
             {relatedQuestions.length > 0 && (
               <section className="mt-10 pt-6 border-t border-gray-200">
-                <h2 className="text-xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                  <HelpCircle className="w-5 h-5 text-[#ea580c]" />
+                <h2 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                  <HelpCircle className="w-5 h-5 text-accent-hover" />
                   Related Questions
                 </h2>
                 <div className="flex flex-col gap-3">
@@ -474,12 +474,12 @@ export default async function AnswerPage({ params }: Props) {
                       <Link
                         key={i}
                         href={`/answers/${questionSlug}`}
-                        className="group flex items-center justify-between p-4 bg-white rounded-lg border border-gray-200 hover:border-[#1e3a4c]/30 hover:shadow-sm transition-all"
+                        className="group flex items-center justify-between p-4 bg-white rounded-lg border border-gray-200 hover:border-primary/30 hover:shadow-sm transition-all"
                       >
-                        <span className="text-gray-800 group-hover:text-[#1e3a4c] font-medium transition-colors">
+                        <span className="text-gray-800 group-hover:text-primary font-medium transition-colors">
                           {question}
                         </span>
-                        <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#ea580c] transition-colors shrink-0" />
+                        <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-accent-hover transition-colors shrink-0" />
                       </Link>
                     );
                   })}
@@ -495,9 +495,9 @@ export default async function AnswerPage({ params }: Props) {
             {/* Feedback Section */}
             <div className="mt-10 pt-8 border-t border-gray-200">
               <div className="flex flex-col gap-4 text-center">
-                <p className="text-lg font-bold text-[#1e3a4c]">Was this guide helpful?</p>
+                <p className="text-lg font-bold text-primary">Was this guide helpful?</p>
                 <div className="flex justify-center gap-4">
-                  <button className="flex items-center gap-2 px-6 py-2 bg-[#1e3a4c]/10 text-[#1e3a4c] rounded-lg hover:bg-[#1e3a4c]/20 transition-colors font-medium">
+                  <button className="flex items-center gap-2 px-6 py-2 bg-primary/10 text-primary rounded-lg hover:bg-primary/20 transition-colors font-medium">
                     <ThumbsUp className="w-5 h-5" /> Yes
                   </button>
                   <button className="flex items-center gap-2 px-6 py-2 bg-gray-100 text-gray-600 rounded-lg hover:bg-gray-200 transition-colors font-medium">
@@ -510,8 +510,8 @@ export default async function AnswerPage({ params }: Props) {
             {/* Related Answers (visible on all screens, useful for mobile) */}
             {relatedAnswers.length > 0 && (
               <section className="mt-10 pt-8 border-t border-gray-200">
-                <h2 className="text-xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                  <HelpCircle className="w-5 h-5 text-[#ea580c]" />
+                <h2 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                  <HelpCircle className="w-5 h-5 text-accent-hover" />
                   More Answers{frontmatter.region ? ` about ${formatRegionName(frontmatter.region)}` : ""}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -519,10 +519,10 @@ export default async function AnswerPage({ params }: Props) {
                     <Link
                       key={answer.slug}
                       href={`/answers/${answer.slug}`}
-                      className="group flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-[#1e3a4c]/30 hover:shadow-sm transition-all"
+                      className="group flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-primary/30 hover:shadow-sm transition-all"
                     >
-                      <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-[#ea580c] shrink-0 mt-1 transition-colors" />
-                      <span className="text-sm text-gray-700 group-hover:text-[#1e3a4c] font-medium transition-colors line-clamp-2">
+                      <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-accent-hover shrink-0 mt-1 transition-colors" />
+                      <span className="text-sm text-gray-700 group-hover:text-primary font-medium transition-colors line-clamp-2">
                         {answer.question}
                       </span>
                     </Link>
@@ -531,7 +531,7 @@ export default async function AnswerPage({ params }: Props) {
                 <div className="mt-4 text-center">
                   <Link
                     href="/answers"
-                    className="inline-flex items-center gap-2 text-sm text-[#ea580c] font-medium hover:underline"
+                    className="inline-flex items-center gap-2 text-sm text-accent-hover font-medium hover:underline"
                   >
                     Browse all answers <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -544,7 +544,7 @@ export default async function AnswerPage({ params }: Props) {
           <aside className="hidden lg:block lg:col-span-4">
             <div className="sticky top-24 flex flex-col gap-6">
               {/* CTA Card */}
-              <div className="bg-[#1e3a4c] rounded-xl p-6 text-white relative overflow-hidden">
+              <div className="bg-primary rounded-xl p-6 text-white relative overflow-hidden">
                 <div className="absolute -right-10 -top-10 w-32 h-32 bg-white/10 rounded-full blur-2xl" />
                 <h3 className="text-xl font-bold mb-2 relative z-10">Book an Adventure</h3>
                 <p className="text-white/80 text-sm mb-4 relative z-10">
@@ -552,7 +552,7 @@ export default async function AnswerPage({ params }: Props) {
                 </p>
                 <Link
                   href={frontmatter.region ? `/${frontmatter.region}/things-to-do` : "/activities"}
-                  className="block w-full py-3 bg-white text-[#1e3a4c] font-bold rounded-lg text-sm text-center hover:bg-gray-100 transition-colors relative z-10"
+                  className="block w-full py-3 bg-white text-primary font-bold rounded-lg text-sm text-center hover:bg-gray-100 transition-colors relative z-10"
                 >
                   Find Activities
                 </Link>
@@ -561,8 +561,8 @@ export default async function AnswerPage({ params }: Props) {
               {/* More Questions */}
               {relatedAnswers.length > 0 && (
                 <div className="bg-white rounded-xl border border-gray-200 p-5 shadow-sm">
-                  <h3 className="font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                    <HelpCircle className="w-4 h-4 text-[#ea580c]" />
+                  <h3 className="font-bold text-primary mb-4 flex items-center gap-2">
+                    <HelpCircle className="w-4 h-4 text-accent-hover" />
                     More Questions
                   </h3>
                   <ul className="space-y-3">
@@ -570,7 +570,7 @@ export default async function AnswerPage({ params }: Props) {
                       <li key={answer.slug}>
                         <Link
                           href={`/answers/${answer.slug}`}
-                          className="flex items-start gap-2 text-sm text-gray-600 hover:text-[#1e3a4c] transition-colors"
+                          className="flex items-start gap-2 text-sm text-gray-600 hover:text-primary transition-colors"
                         >
                           <ChevronRight className="w-4 h-4 shrink-0 mt-0.5" />
                           <span className="line-clamp-2">{answer.question}</span>
@@ -580,7 +580,7 @@ export default async function AnswerPage({ params }: Props) {
                   </ul>
                   <Link
                     href="/answers"
-                    className="block mt-4 text-sm text-[#ea580c] font-medium hover:underline"
+                    className="block mt-4 text-sm text-accent-hover font-medium hover:underline"
                   >
                     View all questions →
                   </Link>
@@ -598,7 +598,7 @@ export default async function AnswerPage({ params }: Props) {
                   <div className="absolute inset-0 flex items-center justify-center bg-black/10 hover:bg-black/20 transition-colors cursor-pointer">
                     <Link
                       href={`/${frontmatter.region}`}
-                      className="bg-white/90 backdrop-blur text-[#1e3a4c] px-4 py-2 rounded-lg font-bold text-sm shadow-sm flex items-center gap-2"
+                      className="bg-white/90 backdrop-blur text-primary px-4 py-2 rounded-lg font-bold text-sm shadow-sm flex items-center gap-2"
                     >
                       <MapPin className="w-4 h-4" />
                       Explore {formatRegionName(frontmatter.region)}

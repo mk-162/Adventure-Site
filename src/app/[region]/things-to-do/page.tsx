@@ -23,7 +23,7 @@ export default async function ActivitiesPage({ params }: ActivitiesPageProps) {
   return (
     <div className="min-h-screen pt-16">
       {/* Header */}
-      <section className="bg-[#1e3a4c] py-12">
+      <section className="bg-primary py-12">
         <div className="max-w-7xl mx-auto px-4">
           {/* Breadcrumb */}
           <nav className="text-white/70 text-sm mb-4">
@@ -103,7 +103,7 @@ function FilterChip({
 }) {
   const classes = `px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
     active
-      ? "bg-[#1e3a4c] text-white"
+      ? "bg-primary text-white"
       : "bg-gray-100 text-gray-600 hover:bg-gray-200"
   }`;
 

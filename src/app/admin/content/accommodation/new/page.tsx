@@ -96,7 +96,7 @@ export default async function NewAccommodationPage() {
                 id="name"
                 name="name"
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="e.g., Mountain View Lodge"
               />
               <p className="text-sm text-gray-500 mt-1">Slug will be auto-generated from name</p>
@@ -110,7 +110,7 @@ export default async function NewAccommodationPage() {
                 <select
                   id="type"
                   name="type"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 >
                   <option value="">Select type</option>
                   <option value="hotel">Hotel</option>
@@ -131,7 +131,7 @@ export default async function NewAccommodationPage() {
                 <select
                   id="regionId"
                   name="regionId"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 >
                   <option value="">Select region</option>
                   {allRegions.map((region) => (
@@ -151,7 +151,7 @@ export default async function NewAccommodationPage() {
                 id="description"
                 name="description"
                 rows={4}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="Brief description..."
               />
             </div>
@@ -164,7 +164,7 @@ export default async function NewAccommodationPage() {
                 id="adventureFeatures"
                 name="adventureFeatures"
                 rows={2}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="e.g., Bike storage, drying room, gear rental..."
               />
             </div>
@@ -177,7 +177,7 @@ export default async function NewAccommodationPage() {
                 id="status"
                 name="status"
                 defaultValue="draft"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
               >
                 <option value="draft">Draft</option>
                 <option value="review">Review</option>
@@ -202,7 +202,7 @@ export default async function NewAccommodationPage() {
                 id="address"
                 name="address"
                 rows={2}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="Full address..."
               />
             </div>
@@ -216,7 +216,7 @@ export default async function NewAccommodationPage() {
                   type="text"
                   id="lat"
                   name="lat"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="e.g., 53.0685"
                 />
               </div>
@@ -229,7 +229,7 @@ export default async function NewAccommodationPage() {
                   type="text"
                   id="lng"
                   name="lng"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="e.g., -4.0762"
                 />
               </div>
@@ -243,7 +243,7 @@ export default async function NewAccommodationPage() {
                 type="url"
                 id="website"
                 name="website"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="https://example.com"
               />
             </div>
@@ -266,7 +266,7 @@ export default async function NewAccommodationPage() {
                   id="priceFrom"
                   name="priceFrom"
                   step="0.01"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="e.g., 75.00"
                 />
               </div>
@@ -280,7 +280,7 @@ export default async function NewAccommodationPage() {
                   id="priceTo"
                   name="priceTo"
                   step="0.01"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                   placeholder="e.g., 150.00"
                 />
               </div>
@@ -294,7 +294,7 @@ export default async function NewAccommodationPage() {
                 type="url"
                 id="bookingUrl"
                 name="bookingUrl"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="https://example.com/book"
               />
             </div>
@@ -307,7 +307,7 @@ export default async function NewAccommodationPage() {
                 type="url"
                 id="airbnbUrl"
                 name="airbnbUrl"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="https://airbnb.com/..."
               />
             </div>
@@ -323,7 +323,7 @@ export default async function NewAccommodationPage() {
                 step="0.1"
                 min="0"
                 max="5"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="e.g., 4.5"
               />
             </div>
@@ -340,7 +340,7 @@ export default async function NewAccommodationPage() {
           </Link>
           <button
             type="submit"
-            className="px-6 py-2 bg-[#ea580c] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
+            className="px-6 py-2 bg-accent-hover text-white rounded-lg hover:bg-accent-hover transition-colors"
           >
             Create Accommodation
           </button>

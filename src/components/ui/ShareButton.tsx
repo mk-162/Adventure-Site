@@ -31,7 +31,7 @@ export function ShareButton({ title, variant = "button", className }: ShareButto
     return (
       <button
         onClick={handleShare}
-        className={className || "text-gray-500 hover:text-[#1e3a4c] transition-colors"}
+        className={className || "text-gray-500 hover:text-primary transition-colors"}
         aria-label="Share"
         title={copied ? "Link copied!" : "Share"}
       >
@@ -44,7 +44,7 @@ export function ShareButton({ title, variant = "button", className }: ShareButto
     return (
       <button
         onClick={handleShare}
-        className={className || "flex flex-col items-center justify-center w-14 gap-1 text-gray-500 hover:text-[#1e3a4c] transition-colors"}
+        className={className || "flex flex-col items-center justify-center w-14 gap-1 text-gray-500 hover:text-primary transition-colors"}
         aria-label="Share"
       >
         <Share2 className="w-5 h-5" />
@@ -56,7 +56,7 @@ export function ShareButton({ title, variant = "button", className }: ShareButto
   return (
     <button
       onClick={handleShare}
-      className={className || "inline-flex items-center gap-2 px-4 py-2 bg-[#ea580c]/10 hover:bg-[#ea580c]/20 text-[#ea580c] font-semibold text-sm rounded-full border border-[#ea580c]/30 transition-colors"}
+      className={className || "inline-flex items-center gap-2 px-4 py-2 bg-accent-hover/10 hover:bg-accent-hover/20 text-accent-hover font-semibold text-sm rounded-full border border-accent-hover/30 transition-colors"}
       aria-label="Share"
     >
       <Share2 className="w-4 h-4" />

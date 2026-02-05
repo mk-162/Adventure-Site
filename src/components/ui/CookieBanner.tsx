@@ -64,14 +64,14 @@ export function CookieBanner() {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 animate-in slide-in-from-bottom duration-500">
-      <div className="max-w-4xl mx-auto bg-[#1e3a4c] text-white rounded-2xl shadow-2xl overflow-hidden">
+      <div className="max-w-4xl mx-auto bg-primary text-white rounded-2xl shadow-2xl overflow-hidden">
         {/* Main bar */}
         <div className="p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <Cookie className="w-8 h-8 text-[#ea580c] flex-shrink-0 hidden sm:block" />
+          <Cookie className="w-8 h-8 text-accent-hover flex-shrink-0 hidden sm:block" />
           <div className="flex-1">
             <p className="text-sm sm:text-base">
               We use cookies to improve your experience and analyse site traffic.{" "}
-              <Link href="/cookies" className="underline text-[#ea580c] hover:text-orange-400">
+              <Link href="/cookies" className="underline text-accent-hover hover:text-orange-400">
                 Learn more
               </Link>
             </p>
@@ -85,7 +85,7 @@ export function CookieBanner() {
             </button>
             <button
               onClick={handleAcceptAll}
-              className="flex-1 sm:flex-initial px-6 py-2.5 text-sm font-bold bg-[#ea580c] hover:bg-orange-700 rounded-lg transition-colors"
+              className="flex-1 sm:flex-initial px-6 py-2.5 text-sm font-bold bg-accent-hover hover:bg-orange-700 rounded-lg transition-colors"
             >
               Accept All
             </button>
@@ -114,7 +114,7 @@ export function CookieBanner() {
               </div>
               <div className="relative">
                 <input type="checkbox" checked disabled className="sr-only" />
-                <div className="w-10 h-5 bg-[#ea580c] rounded-full opacity-60 cursor-not-allowed" />
+                <div className="w-10 h-5 bg-accent-hover rounded-full opacity-60 cursor-not-allowed" />
                 <div className="absolute top-0.5 left-5 w-4 h-4 bg-white rounded-full" />
               </div>
             </label>
@@ -126,7 +126,7 @@ export function CookieBanner() {
                 <p className="text-xs text-white/50">Help us understand how visitors use the site.</p>
               </div>
               <div className="relative" onClick={() => setPreferences(p => ({ ...p, analytics: !p.analytics }))}>
-                <div className={`w-10 h-5 rounded-full transition-colors ${preferences.analytics ? "bg-[#ea580c]" : "bg-white/20"}`} />
+                <div className={`w-10 h-5 rounded-full transition-colors ${preferences.analytics ? "bg-accent-hover" : "bg-white/20"}`} />
                 <div className={`absolute top-0.5 w-4 h-4 bg-white rounded-full transition-all ${preferences.analytics ? "left-5" : "left-0.5"}`} />
               </div>
             </label>
@@ -138,7 +138,7 @@ export function CookieBanner() {
                 <p className="text-xs text-white/50">Used for targeted advertising and promotions.</p>
               </div>
               <div className="relative" onClick={() => setPreferences(p => ({ ...p, marketing: !p.marketing }))}>
-                <div className={`w-10 h-5 rounded-full transition-colors ${preferences.marketing ? "bg-[#ea580c]" : "bg-white/20"}`} />
+                <div className={`w-10 h-5 rounded-full transition-colors ${preferences.marketing ? "bg-accent-hover" : "bg-white/20"}`} />
                 <div className={`absolute top-0.5 w-4 h-4 bg-white rounded-full transition-all ${preferences.marketing ? "left-5" : "left-0.5"}`} />
               </div>
             </label>

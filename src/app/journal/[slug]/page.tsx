@@ -13,7 +13,7 @@ const categoryColors: Record<string, string> = {
   seasonal: "#f59e0b",
   news: "#a855f7",
   "trip-report": "#14b8a6",
-  spotlight: "#ea580c",
+  spotlight: "var(--color-accent)",
 };
 
 type Props = {
@@ -53,22 +53,22 @@ export default async function ArticlePage({ params }: Props) {
         <div className="bg-slate-50 border-b border-slate-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div className="flex items-center gap-2 text-sm text-slate-600">
-              <Link href="/" className="hover:text-[#1e3a4c] flex items-center gap-1">
+              <Link href="/" className="hover:text-primary flex items-center gap-1">
                 <Home className="h-4 w-4" />
                 Home
               </Link>
               <ChevronRight className="h-4 w-4" />
-              <Link href="/journal" className="hover:text-[#1e3a4c]">Journal</Link>
+              <Link href="/journal" className="hover:text-primary">Journal</Link>
               <ChevronRight className="h-4 w-4" />
               <span className="text-slate-400">Article not found</span>
             </div>
           </div>
         </div>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#ea580c]/10 mb-6">
-            <Clock className="w-8 h-8 text-[#ea580c]" />
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent-hover/10 mb-6">
+            <Clock className="w-8 h-8 text-accent-hover" />
           </div>
-          <h1 className="text-3xl font-bold text-[#1e3a4c] mb-3">Article not found</h1>
+          <h1 className="text-3xl font-bold text-primary mb-3">Article not found</h1>
           <p className="text-slate-600 text-lg mb-8">
             We couldn&apos;t find this article. It may have been moved or is still being written.
           </p>
@@ -84,7 +84,7 @@ export default async function ArticlePage({ params }: Props) {
                     href={`/journal/${related.post.slug}`}
                     className="group text-left p-4 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition-all"
                   >
-                    <h4 className="font-bold text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors line-clamp-2 text-sm">
+                    <h4 className="font-bold text-primary group-hover:text-accent-hover transition-colors line-clamp-2 text-sm">
                       {related.post.title}
                     </h4>
                     {related.post.excerpt && (
@@ -97,7 +97,7 @@ export default async function ArticlePage({ params }: Props) {
           )}
           <Link
             href="/journal"
-            className="inline-flex items-center gap-2 bg-[#1e3a4c] text-white font-bold py-3 px-6 rounded-full hover:bg-[#2d5568] transition-colors"
+            className="inline-flex items-center gap-2 bg-primary text-white font-bold py-3 px-6 rounded-full hover:bg-[#2d5568] transition-colors"
           >
             Browse All Articles
           </Link>
@@ -149,12 +149,12 @@ export default async function ArticlePage({ params }: Props) {
         <div className="bg-slate-50 border-b border-slate-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div className="flex items-center gap-2 text-sm text-slate-600">
-              <Link href="/" className="hover:text-[#1e3a4c] flex items-center gap-1">
+              <Link href="/" className="hover:text-primary flex items-center gap-1">
                 <Home className="h-4 w-4" />
                 Home
               </Link>
               <ChevronRight className="h-4 w-4" />
-              <Link href="/journal" className="hover:text-[#1e3a4c]">
+              <Link href="/journal" className="hover:text-primary">
                 Journal
               </Link>
               <ChevronRight className="h-4 w-4" />
@@ -180,7 +180,7 @@ export default async function ArticlePage({ params }: Props) {
               </div>
 
               {/* Title */}
-              <h1 className="text-5xl font-bold text-[#1e3a4c] mb-6">{post.post.title}</h1>
+              <h1 className="text-5xl font-bold text-primary mb-6">{post.post.title}</h1>
 
               {/* Meta */}
               <div className="flex items-center gap-6 text-slate-600 mb-8 pb-8 border-b border-slate-200">
@@ -225,7 +225,7 @@ export default async function ArticlePage({ params }: Props) {
                       <Link
                         key={tag.id}
                         href={`/tags/${tag.slug}`}
-                        className="inline-flex items-center gap-1 px-3 py-1.5 bg-slate-100 text-slate-700 text-sm rounded-full hover:bg-[#1e3a4c] hover:text-white transition-colors"
+                        className="inline-flex items-center gap-1 px-3 py-1.5 bg-slate-100 text-slate-700 text-sm rounded-full hover:bg-primary hover:text-white transition-colors"
                       >
                         <TagIcon className="h-3 w-3" />
                         {tag.name}
@@ -239,7 +239,7 @@ export default async function ArticlePage({ params }: Props) {
               <div className="mb-12 pb-8 border-b border-slate-200">
                 <h3 className="text-sm font-semibold text-slate-500 mb-3">SHARE THIS ARTICLE</h3>
                 <div className="flex gap-3">
-                  <button className="flex items-center gap-2 px-4 py-2 bg-[#1e3a4c] text-white rounded-lg hover:bg-[#2d5568] transition-colors">
+                  <button className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-[#2d5568] transition-colors">
                     <Share2 className="h-4 w-4" />
                     Share
                   </button>
@@ -249,7 +249,7 @@ export default async function ArticlePage({ params }: Props) {
               {/* Related Articles */}
               {relatedPosts.length > 0 && (
                 <div>
-                  <h3 className="text-2xl font-bold text-[#1e3a4c] mb-6">Related Articles</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-6">Related Articles</h3>
                   <div className="grid md:grid-cols-3 gap-6">
                     {relatedPosts.map((related) => (
                       <Link
@@ -267,7 +267,7 @@ export default async function ArticlePage({ params }: Props) {
                             />
                           </div>
                         )}
-                        <h4 className="font-bold text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors line-clamp-2">
+                        <h4 className="font-bold text-primary group-hover:text-accent-hover transition-colors line-clamp-2">
                           {related.post.title}
                         </h4>
                       </Link>
@@ -282,7 +282,7 @@ export default async function ArticlePage({ params }: Props) {
               {/* Related Itineraries */}
               {itineraries.length > 0 && (
                 <div className="bg-slate-50 rounded-2xl p-6">
-                  <h3 className="text-xl font-bold text-[#1e3a4c] mb-4">Related Itineraries</h3>
+                  <h3 className="text-xl font-bold text-primary mb-4">Related Itineraries</h3>
                   <div className="space-y-3">
                     {itineraries.map((item) => (
                       <Link
@@ -290,7 +290,7 @@ export default async function ArticlePage({ params }: Props) {
                         href={`/itineraries/${item.itinerary.slug}`}
                         className="block p-3 bg-white rounded-lg hover:shadow-md transition-shadow border border-slate-200"
                       >
-                        <h4 className="font-semibold text-[#1e3a4c] text-sm mb-1">
+                        <h4 className="font-semibold text-primary text-sm mb-1">
                           {item.itinerary.title}
                         </h4>
                         {item.itinerary.tagline && (
@@ -307,7 +307,7 @@ export default async function ArticlePage({ params }: Props) {
               {/* Relevant Operators */}
               {operators.length > 0 && (
                 <div className="bg-slate-50 rounded-2xl p-6">
-                  <h3 className="text-xl font-bold text-[#1e3a4c] mb-4">Relevant Operators</h3>
+                  <h3 className="text-xl font-bold text-primary mb-4">Relevant Operators</h3>
                   <div className="space-y-3">
                     {operators.map((op) => (
                       <Link
@@ -315,7 +315,7 @@ export default async function ArticlePage({ params }: Props) {
                         href={`/directory/${op.slug}`}
                         className="block p-3 bg-white rounded-lg hover:shadow-md transition-shadow border border-slate-200"
                       >
-                        <h4 className="font-semibold text-[#1e3a4c] text-sm mb-1">{op.name}</h4>
+                        <h4 className="font-semibold text-primary text-sm mb-1">{op.name}</h4>
                         {op.tagline && (
                           <p className="text-xs text-slate-600 line-clamp-2">{op.tagline}</p>
                         )}
@@ -328,7 +328,7 @@ export default async function ArticlePage({ params }: Props) {
               {/* Nearby Locations */}
               {locations.length > 0 && (
                 <div className="bg-slate-50 rounded-2xl p-6">
-                  <h3 className="text-xl font-bold text-[#1e3a4c] mb-4">Nearby Locations</h3>
+                  <h3 className="text-xl font-bold text-primary mb-4">Nearby Locations</h3>
                   <div className="space-y-3">
                     {locations.map((item) => (
                       <Link
@@ -336,7 +336,7 @@ export default async function ArticlePage({ params }: Props) {
                         href={`/locations/${item.location.slug}`}
                         className="block p-3 bg-white rounded-lg hover:shadow-md transition-shadow border border-slate-200"
                       >
-                        <h4 className="font-semibold text-[#1e3a4c] text-sm">
+                        <h4 className="font-semibold text-primary text-sm">
                           {item.location.name}
                         </h4>
                       </Link>
@@ -348,7 +348,7 @@ export default async function ArticlePage({ params }: Props) {
               {/* More from Category */}
               {relatedPosts.length > 0 && (
                 <div className="bg-slate-50 rounded-2xl p-6">
-                  <h3 className="text-xl font-bold text-[#1e3a4c] mb-4">
+                  <h3 className="text-xl font-bold text-primary mb-4">
                     More from {post.post.category.replace("-", " ")}
                   </h3>
                   <div className="space-y-3">
@@ -358,7 +358,7 @@ export default async function ArticlePage({ params }: Props) {
                         href={`/journal/${related.post.slug}`}
                         className="block p-3 bg-white rounded-lg hover:shadow-md transition-shadow border border-slate-200"
                       >
-                        <h4 className="font-semibold text-[#1e3a4c] text-sm line-clamp-2">
+                        <h4 className="font-semibold text-primary text-sm line-clamp-2">
                           {related.post.title}
                         </h4>
                       </Link>

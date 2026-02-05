@@ -17,19 +17,19 @@ export default async function ActivitiesPage() {
         {/* Header */}
         <div className="mb-8">
           <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
-            <Link href="/" className="hover:text-[#1e3a4c]">Home</Link>
+            <Link href="/" className="hover:text-primary">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <span className="text-[#1e3a4c] font-medium">Activities</span>
+            <span className="text-primary font-medium">Activities</span>
           </div>
           
-          <h1 className="text-3xl lg:text-4xl font-bold text-[#1e3a4c] mb-3">
+          <h1 className="text-3xl lg:text-4xl font-bold text-primary mb-3">
             Single Activities & Experiences
           </h1>
           <p className="text-gray-600 max-w-2xl mb-4">
             Individual adventures you can book as standalone experiences — from coasteering and kayaking to mountain biking and gorge walking. Filter by region, type, difficulty, and budget.
           </p>
           <p className="text-sm text-gray-500">
-            Looking for multi-day trips? Check out our <Link href="/itineraries" className="text-[#ea580c] font-semibold hover:underline">road trip itineraries</Link> instead.
+            Looking for multi-day trips? Check out our <Link href="/itineraries" className="text-accent-hover font-semibold hover:underline">road trip itineraries</Link> instead.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export default async function ActivitiesPage() {
 
         {/* Popular Activity + Region combos (SEO keyword links) */}
         <section className="mt-12">
-          <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Popular Searches</h2>
+          <h2 className="text-xl font-bold text-primary mb-4">Popular Searches</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { type: "coasteering", region: "pembrokeshire" },
@@ -72,7 +72,7 @@ export default async function ActivitiesPage() {
                 <Link
                   key={`${type}-${region}`}
                   href={`/${region}/things-to-do/${type}`}
-                  className="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-[#ea580c] hover:text-[#ea580c] transition-colors"
+                  className="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-accent-hover hover:text-accent-hover transition-colors"
                 >
                   {typeName} in {regionName}
                 </Link>
@@ -83,7 +83,7 @@ export default async function ActivitiesPage() {
 
         {/* Browse by Region */}
         <section className="mt-12">
-          <h2 className="text-xl font-bold text-[#1e3a4c] mb-4">Browse by Region</h2>
+          <h2 className="text-xl font-bold text-primary mb-4">Browse by Region</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {regions.slice(0, 8).map(region => (
               <Link

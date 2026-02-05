@@ -159,7 +159,7 @@ function CollapsibleCard({
   };
 
   const iconStyles = {
-    default: "bg-[#1e3a4c]/10 text-[#1e3a4c]",
+    default: "bg-primary/10 text-primary",
     warning: "bg-amber-100 text-amber-700",
     success: "bg-emerald-100 text-emerald-700",
     info: "bg-blue-100 text-blue-700",
@@ -174,7 +174,7 @@ function CollapsibleCard({
         <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 ${iconStyles[variant]}`}>
           <Icon className="w-5 h-5" />
         </div>
-        <span className="font-semibold text-[#1e3a4c] flex-1 text-sm">{title}</span>
+        <span className="font-semibold text-primary flex-1 text-sm">{title}</span>
         <ChevronDown className={`w-4 h-4 text-gray-400 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
       {open && <div className="px-4 pb-4 pt-0">{children}</div>}
@@ -203,9 +203,9 @@ export function ItineraryFactSheet({ description, title }: ItineraryFactSheetPro
 
       {/* Highlights - always visible */}
       {highlights && (
-        <div className="bg-gradient-to-br from-[#1e3a4c] to-[#2d5a73] rounded-xl p-5 text-white">
+        <div className="bg-gradient-to-br from-primary to-[#2d5a73] rounded-xl p-5 text-white">
           <div className="flex items-center gap-2 mb-3">
-            <Sparkles className="w-5 h-5 text-[#ea580c]" />
+            <Sparkles className="w-5 h-5 text-accent-hover" />
             <h3 className="font-bold text-sm uppercase tracking-wide">Highlights</h3>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -253,8 +253,8 @@ export function ItineraryFactSheet({ description, title }: ItineraryFactSheetPro
       {costs && (
         <div className="bg-white border border-gray-200 rounded-xl p-5">
           <div className="flex items-center gap-2 mb-4">
-            <PoundSterling className="w-5 h-5 text-[#1e3a4c]" />
-            <h3 className="font-bold text-[#1e3a4c] text-sm">Cost Breakdown</h3>
+            <PoundSterling className="w-5 h-5 text-primary" />
+            <h3 className="font-bold text-primary text-sm">Cost Breakdown</h3>
           </div>
           <div className="grid grid-cols-2 gap-4">
             {/* Standard */}
@@ -267,8 +267,8 @@ export function ItineraryFactSheet({ description, title }: ItineraryFactSheetPro
                 </div>
               ))}
               <div className="border-t border-gray-200 pt-2 flex justify-between items-center">
-                <span className="font-bold text-[#1e3a4c] text-sm">Total</span>
-                <span className="font-bold text-[#1e3a4c] text-lg">£{costs.standardTotal}</span>
+                <span className="font-bold text-primary text-sm">Total</span>
+                <span className="font-bold text-primary text-lg">£{costs.standardTotal}</span>
               </div>
             </div>
             {/* Budget */}
@@ -281,8 +281,8 @@ export function ItineraryFactSheet({ description, title }: ItineraryFactSheetPro
                 </div>
               ))}
               <div className="border-t border-gray-200 pt-2 flex justify-between items-center">
-                <span className="font-bold text-[#1e3a4c] text-sm">Total</span>
-                <span className="font-bold text-[#ea580c] text-lg">£{costs.budgetTotal}</span>
+                <span className="font-bold text-primary text-sm">Total</span>
+                <span className="font-bold text-accent-hover text-lg">£{costs.budgetTotal}</span>
               </div>
             </div>
           </div>
@@ -307,8 +307,8 @@ export function ItineraryFactSheet({ description, title }: ItineraryFactSheetPro
       {knowBefore && knowBefore.subSections && knowBefore.subSections.length > 0 && (
         <div className="space-y-2">
           <div className="flex items-center gap-2 px-1">
-            <Info className="w-4 h-4 text-[#1e3a4c]" />
-            <h3 className="font-bold text-[#1e3a4c] text-sm">Know Before You Go</h3>
+            <Info className="w-4 h-4 text-primary" />
+            <h3 className="font-bold text-primary text-sm">Know Before You Go</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             {knowBefore.subSections.map((sub, i) => {

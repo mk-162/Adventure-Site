@@ -25,12 +25,12 @@ const baseStyles =
   "inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2";
 
 const variants = {
-  primary: "bg-[#1e3a4c] text-white hover:bg-[#152a38] focus:ring-[#1e3a4c]",
+  primary: "bg-primary text-white hover:bg-primary-dark focus:ring-primary",
   secondary: "bg-gray-100 text-gray-700 hover:bg-gray-200 focus:ring-gray-300",
-  accent: "bg-[#ea580c] text-white hover:bg-[#ea580c] focus:ring-[#ea580c]",
+  accent: "bg-accent-hover text-white hover:bg-accent-hover focus:ring-accent-hover",
   outline:
-    "border border-gray-200 text-gray-700 hover:border-[#ea580c] hover:text-[#ea580c] focus:ring-[#ea580c]",
-  ghost: "text-gray-600 hover:text-[#1e3a4c] hover:bg-gray-100 focus:ring-gray-300",
+    "border border-gray-200 text-gray-700 hover:border-accent-hover hover:text-accent-hover focus:ring-accent-hover",
+  ghost: "text-gray-600 hover:text-primary hover:bg-gray-100 focus:ring-gray-300",
 };
 
 const sizes = {

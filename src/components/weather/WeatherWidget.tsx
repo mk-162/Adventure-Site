@@ -99,7 +99,7 @@ export function WeatherWidget({ lat, lng, regionName, compact = false, regionSlu
       {/* Header with optional tabs */}
       <div className="px-3 pt-3 pb-0">
         <div className="flex items-center justify-between mb-2">
-          <h3 className="font-bold text-sm text-[#1e3a4c]">{regionName} Weather</h3>
+          <h3 className="font-bold text-sm text-primary">{regionName} Weather</h3>
         </div>
 
         {showTabs && (
@@ -109,7 +109,7 @@ export function WeatherWidget({ lat, lng, regionName, compact = false, regionSlu
               className={clsx(
                 "text-xs font-semibold pb-2 px-2 border-b-2 transition-colors",
                 activeTab === "now"
-                  ? "border-[#1e3a4c] text-[#1e3a4c]"
+                  ? "border-primary text-primary"
                   : "border-transparent text-gray-400 hover:text-gray-600"
               )}
             >
@@ -120,7 +120,7 @@ export function WeatherWidget({ lat, lng, regionName, compact = false, regionSlu
               className={clsx(
                 "text-xs font-semibold pb-2 px-2 border-b-2 transition-colors flex items-center gap-1",
                 activeTab === "climate"
-                  ? "border-[#1e3a4c] text-[#1e3a4c]"
+                  ? "border-primary text-primary"
                   : "border-transparent text-gray-400 hover:text-gray-600"
               )}
             >
@@ -136,10 +136,10 @@ export function WeatherWidget({ lat, lng, regionName, compact = false, regionSlu
         <div className="p-3 pt-2">
           {/* Current conditions row */}
           <div className="flex items-center gap-3 mb-3">
-            <CurrentIcon className="w-8 h-8 text-[#ea580c] flex-shrink-0" />
+            <CurrentIcon className="w-8 h-8 text-accent-hover flex-shrink-0" />
             <div className="flex-1 min-w-0">
               <div className="flex items-baseline gap-2">
-                <span className="text-2xl font-bold text-[#1e3a4c]">{data.current.temp}°C</span>
+                <span className="text-2xl font-bold text-primary">{data.current.temp}°C</span>
                 <span className="text-xs text-gray-500 capitalize truncate">{data.current.description}</span>
               </div>
               <div className="flex gap-3 text-xs text-gray-500 mt-0.5">
@@ -165,15 +165,15 @@ export function WeatherWidget({ lat, lng, regionName, compact = false, regionSlu
                 <div key={day.date} className="flex flex-col items-center gap-0.5">
                   <span className="text-[9px] uppercase font-bold text-gray-400">{dayName}</span>
                   <DayIcon className="w-3.5 h-3.5 text-gray-500" />
-                  <span className="text-[10px] font-bold text-[#1e3a4c]">{day.high}°</span>
+                  <span className="text-[10px] font-bold text-primary">{day.high}°</span>
                 </div>
               );
             })}
           </div>
 
           {/* Best for - compact */}
-          <div className="bg-[#1e3a4c]/5 rounded-lg px-2.5 py-2 text-[11px] mt-2">
-            <span className="font-bold text-[#1e3a4c]">Best for: </span>
+          <div className="bg-primary/5 rounded-lg px-2.5 py-2 text-[11px] mt-2">
+            <span className="font-bold text-primary">Best for: </span>
             <span className="text-gray-600">{getBestFor(data.current)}</span>
           </div>
         </div>

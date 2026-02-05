@@ -53,8 +53,8 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
               </div>
             </div>
             {isPremium ? (
-              <span className="inline-flex items-center gap-1 bg-amber-100 text-amber-800 border border-amber-300 text-[10px] font-bold px-2 py-0.5 rounded-full">
-                ✦ Premium
+              <span className="inline-flex items-center gap-1 bg-amber-100 text-amber-800 border border-amber-300 text-[10px] font-bold px-2 py-0.5 rounded-full" aria-label="Sponsored listing">
+                Sponsored
               </span>
             ) : (
               <Badge variant="accent">Featured</Badge>
@@ -111,8 +111,8 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
   return (
     <div className={`rounded-xl shadow-sm hover:shadow-md transition-shadow relative ${isPremium ? "border-l-4 border-l-amber-400 bg-amber-50/30" : "bg-white"}`}>
       {isPremium && (
-        <span className="absolute top-2 right-2 z-10 inline-flex items-center gap-1 bg-amber-100 text-amber-800 border border-amber-300 text-[10px] font-bold px-1.5 py-0.5 rounded-full">
-          ✦ Premium
+        <span className="absolute top-2 right-2 z-10 inline-flex items-center gap-1 bg-amber-100 text-amber-800 border border-amber-300 text-[10px] font-bold px-1.5 py-0.5 rounded-full" aria-label="Sponsored listing">
+          Sponsored
         </span>
       )}
       <Link

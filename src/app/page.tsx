@@ -128,7 +128,7 @@ export default async function HomePage() {
                       </div>
                     )}
                     {op.claimStatus === "premium" && (
-                      <span className="inline-block mt-2 text-[10px] font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-2 py-0.5 rounded-full">Premium</span>
+                      <span className="inline-block mt-2 text-[10px] font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-2 py-0.5 rounded-full" aria-label="Sponsored listing">Sponsored</span>
                     )}
                   </a>
                 ))}

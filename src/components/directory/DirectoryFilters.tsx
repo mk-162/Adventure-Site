@@ -213,16 +213,15 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
                 </div>
                 <div>
                   <h2 className="text-xl font-bold text-[#1e3a4c]">
-                    Featured Partners
+                    Sponsored Partners
                   </h2>
                   <p className="text-sm text-gray-600">
-                    Premium providers trusted by thousands
+                    Paid partners — vetted and trusted
                   </p>
                 </div>
               </div>
-              <span className="hidden sm:flex items-center gap-1 text-xs font-semibold text-[#ea580c] bg-[#ea580c]/10 px-3 py-1.5 rounded-full border border-[#ea580c]/20">
-                <Star className="w-3 h-3 fill-current" />
-                Promoted
+              <span className="hidden sm:flex items-center gap-1 text-xs font-semibold text-amber-800 bg-amber-100 px-3 py-1.5 rounded-full border border-amber-300" aria-label="Sponsored listings">
+                Sponsored
               </span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

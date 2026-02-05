@@ -325,8 +325,8 @@ function EventCard({ event }: { event: typeof events.$inferSelect }) {
            </div>
         )}
         {event.isPromoted && (
-          <div className="absolute top-2 right-2 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-1 rounded">
-            Promoted
+          <div className="absolute top-2 right-2 bg-amber-100 text-amber-800 border border-amber-300 text-[10px] font-bold px-2 py-1 rounded-full" aria-label="Sponsored listing">
+            Sponsored
           </div>
         )}
         <div className="absolute top-2 left-2 bg-white/90 backdrop-blur rounded-lg p-2 text-center min-w-[50px]">

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin, Clock, Star } from "lucide-react";
+import { MapPin, Clock, Star, Ticket, Camera } from "lucide-react";
 import { Badge, DifficultyBadge, PriceBadge } from "@/components/ui/badge";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 
@@ -228,6 +228,10 @@ export function ActivityCard({
     region?.heroImage,
   );
 
+  const isAttraction = activityType?.slug === "attractions";
+  const isSightseeing = activityType?.slug === "sightseeing";
+  const isPassive = isAttraction || isSightseeing;
+
   if (variant === "horizontal") {
     return (
       <Link
@@ -284,14 +288,22 @@ export function ActivityCard({
                   {activity.duration}
                 </span>
               )}
-              {activity.difficulty && (
+              {!isPassive && activity.difficulty && (
                 <DifficultyBadge level={activity.difficulty} />
               )}
             </div>
-            <PriceBadge
-              from={activity.priceFrom ? parseFloat(activity.priceFrom) : null}
-              to={activity.priceTo ? parseFloat(activity.priceTo) : null}
-            />
+
+            {isPassive ? (
+               <div className="flex items-center gap-1 text-sm font-bold text-primary">
+                 <span className="text-xs font-normal text-gray-500">Entry</span>
+                 {activity.priceFrom ? `£${parseFloat(activity.priceFrom).toFixed(2)}` : "Free"}
+               </div>
+            ) : (
+              <PriceBadge
+                from={activity.priceFrom ? parseFloat(activity.priceFrom) : null}
+                to={activity.priceTo ? parseFloat(activity.priceTo) : null}
+              />
+            )}
           </div>
         </div>
       </Link>
@@ -312,11 +324,22 @@ export function ActivityCard({
         />
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        {activity.difficulty && (
+
+        {!isPassive && activity.difficulty && (
           <div className="absolute top-3 right-3">
             <DifficultyBadge level={activity.difficulty} />
           </div>
         )}
+
+        {isPassive && (
+          <div className="absolute top-3 right-3">
+            <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-white/90 text-primary text-[10px] font-bold uppercase tracking-wider backdrop-blur-sm">
+              {isAttraction ? <Ticket className="w-3 h-3" /> : <Camera className="w-3 h-3" />}
+              {isAttraction ? "Attraction" : "Sightseeing"}
+            </span>
+          </div>
+        )}
+
         {activity.bookingPlatform && activity.bookingPlatform !== "none" && (
           <div className="absolute top-3 left-3">
             <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-emerald-500/90 text-white text-[10px] font-bold uppercase tracking-wider backdrop-blur-sm">
@@ -368,10 +391,18 @@ export function ActivityCard({
               {activity.duration}
             </span>
           )}
-          <PriceBadge
-            from={activity.priceFrom ? parseFloat(activity.priceFrom) : null}
-            to={activity.priceTo ? parseFloat(activity.priceTo) : null}
-          />
+
+          {isPassive ? (
+             <div className="flex items-center gap-1 text-sm font-bold text-primary">
+               <span className="text-xs font-normal text-gray-500">Entry</span>
+               {activity.priceFrom ? `£${parseFloat(activity.priceFrom).toFixed(2)}` : "Free"}
+             </div>
+          ) : (
+            <PriceBadge
+              from={activity.priceFrom ? parseFloat(activity.priceFrom) : null}
+              to={activity.priceTo ? parseFloat(activity.priceTo) : null}
+            />
+          )}
         </div>
       </div>
     </Link>

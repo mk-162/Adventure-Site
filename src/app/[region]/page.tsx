@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getRegionWithStats, getActivitiesByRegion, getAccommodationByRegion, getOperators, getRegionEntitiesForMap, getActivityTypesForRegion } from "@/lib/queries";
 import type { MapMarker } from "@/components/ui/MapView";
-import { ActivityCard } from "@/components/cards/activity-card";
+import { TopExperiences } from "@/components/regions/TopExperiences";
 import { AccommodationCard } from "@/components/cards/accommodation-card";
 import { RegionMap } from "@/components/ui/RegionMap";
 import { ScenicGallery } from "@/components/regions/scenic-gallery";
@@ -461,7 +461,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
   }
 
   const [activities, accommodation, operators, mapEntities, activityTypesWithCount, bestLists] = await Promise.all([
-    getActivitiesByRegion(regionSlug, 6),
+    getActivitiesByRegion(regionSlug, 30),
     getAccommodationByRegion(regionSlug, 4),
     getOperators({ limit: 3 }),
     getRegionEntitiesForMap(region.id),
@@ -688,25 +688,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
 
             {/* Top Experiences Grid — prominent at top */}
             {activities.length > 0 && (
-              <section id="activities" className="scroll-mt-32">
-                <div className="flex justify-between items-end mb-4 lg:mb-5">
-                  <h3 className="text-lg lg:text-xl font-bold text-primary">Top Experiences</h3>
-                  <Link href={`/${regionSlug}/things-to-do`} className="text-primary text-sm font-bold hover:underline flex items-center gap-1">
-                    View all <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5">
-                  {activities.slice(0, 4).map((item) => (
-                      <ActivityCard
-                          key={item.activity.id}
-                          activity={item.activity}
-                          region={item.region}
-                          operator={item.operator}
-                          hideOperator={true}
-                      />
-                  ))}
-                </div>
-              </section>
+              <TopExperiences activities={activities} regionSlug={regionSlug} />
             )}
 
             {/* Explore by Activity Grid */}

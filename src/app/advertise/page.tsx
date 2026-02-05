@@ -23,6 +23,7 @@ import {
 import { FAQAccordion } from "@/components/operators/FAQAccordion";
 import { RegisterInterestForm } from "@/components/operators/RegisterInterestForm";
 import { AlreadyListedTooltip } from "@/components/operators/AlreadyListedTooltip";
+import { PricingSection } from "@/components/commercial/PricingSection";
 
 export const metadata: Metadata = {
   title:
@@ -612,129 +613,10 @@ export default function ForOperatorsPage() {
         </div>
       </section>
 
-      {/* ═══ PRICING CARDS ═══ */}
-      <section className="py-20 sm:py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary mb-4">
-              Simple, Transparent Pricing
-            </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              No contracts. No commission. Cancel anytime.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto items-start">
-            {/* FREE */}
-            <div className="bg-white rounded-2xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-primary mb-1">Free</h3>
-              <p className="text-sm text-slate-500 mb-6">Get discovered</p>
-              <div className="mb-8">
-                <span className="text-4xl font-extrabold text-primary">£0</span>
-                <span className="text-slate-500 ml-2">/ forever</span>
-              </div>
-              <ul className="space-y-3 mb-8">
-                {["Basic listing (name, link)", "Directory & region pages", "Claim & verify ownership"].map((f) => (
-                  <li key={f} className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 text-slate-400 shrink-0 mt-0.5" />
-                    <span className="text-slate-600 text-sm">{f}</span>
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="#register"
-                className="block text-center w-full px-6 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors"
-              >
-                Get Listed Free
-              </a>
-            </div>
-
-            {/* ENHANCED */}
-            <div className="relative bg-white rounded-2xl border-2 border-accent-hover p-8 shadow-xl lg:-mt-4">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-accent-hover text-white text-xs font-bold uppercase tracking-wide">
-                  <Star className="h-3.5 w-3.5" />
-                  Most Popular
-                </span>
-              </div>
-              <h3 className="text-xl font-bold text-primary mb-1 mt-2">Enhanced</h3>
-              <p className="text-sm text-slate-500 mb-6">Full profile &amp; bookings</p>
-              <div className="mb-2">
-                <span className="text-4xl font-extrabold text-primary">£9.99</span>
-                <span className="text-slate-500 ml-1">+VAT /mo</span>
-              </div>
-              <p className="text-sm text-accent-hover font-medium mb-6">
-                or £99/yr +VAT — save 17%
-              </p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "Full profile, photos & gallery",
-                  "Included in trip itineraries",
-                  "Booking widget integration",
-                  "Enquiry forwarding to inbox",
-                  "Monthly performance report",
-                ].map((f) => (
-                  <li key={f} className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 text-accent-hover shrink-0 mt-0.5" />
-                    <span className="text-slate-600 text-sm">{f}</span>
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="#register"
-                className="block text-center w-full px-6 py-3.5 rounded-full bg-accent-hover text-white font-semibold hover:bg-accent-hover transition-colors"
-              >
-                Get Enhanced
-              </a>
-            </div>
-
-            {/* PREMIUM */}
-            <div className="bg-white rounded-2xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-primary mb-1">Premium</h3>
-              <p className="text-sm text-slate-500 mb-6">Maximum visibility</p>
-              <div className="mb-2">
-                <span className="text-4xl font-extrabold text-primary">£29.99</span>
-                <span className="text-slate-500 ml-1">+VAT /mo</span>
-              </div>
-              <p className="text-sm text-accent-hover font-medium mb-6">
-                or £299/yr +VAT — save 17%
-              </p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "Everything in Enhanced, plus:",
-                  "Featured in search & itineraries",
-                  "Instant lead notifications",
-                  "Special offers displayed",
-                  "Competitor benchmarking",
-                  "Dedicated account support",
-                ].map((f, i) => (
-                  <li key={f} className="flex items-start gap-3">
-                    <Star className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                    <span className={`text-sm ${i === 0 ? "text-primary font-medium" : "text-slate-600"}`}>{f}</span>
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="#register"
-                className="block text-center w-full px-6 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors"
-              >
-                Go Premium
-              </a>
-            </div>
-          </div>
-
-          <p className="text-center text-slate-600 text-sm mt-8">
-            Multiple sites?{" "}
-            <a
-              href="mailto:hello@adventurewales.co.uk?subject=Multi-site%20discount%20enquiry"
-              className="text-accent-hover font-semibold hover:underline"
-            >
-              Contact us for multi-site discounts
-            </a>
-            .
-          </p>
-        </div>
-      </section>
+      {/* ═══ PRICING CARDS (Client Component) ═══ */}
+      <div id="pricing" className="scroll-mt-20">
+        <PricingSection />
+      </div>
 
       {/* ═══ FAQ ═══ */}
       <section className="py-20 sm:py-24 bg-slate-50">

@@ -1,10 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter, useSearchParams } from "next/navigation";
 import { BookOpen, Clock, Tag as TagIcon } from "lucide-react";
+import { Pagination } from "@/components/ui/Pagination";
 
 const categories = [
   { value: "guide", label: "Guides", color: "#3b82f6", image: "/images/activities/hiking-hero.jpg", description: "Expert tips and how-tos for Welsh adventures" },
@@ -37,75 +36,43 @@ const categoryFallbackImages: Record<string, string> = {
 };
 
 interface JournalClientProps {
-  initialPosts: any[];
+  posts: any[];
   tags: any[];
   itineraries: any[];
   operators: any[];
   selectedCategory: string;
   selectedTag: string;
   totalCount: number;
+  totalPages: number;
+  currentPage: number;
 }
 
 export default function JournalClient({
-  initialPosts,
+  posts,
   tags,
   itineraries,
   operators,
   selectedCategory,
   selectedTag,
   totalCount,
+  totalPages,
+  currentPage,
 }: JournalClientProps) {
-  const router = useRouter();
-  const [posts, setPosts] = useState(initialPosts);
-  const [visibleCount, setVisibleCount] = useState(12);
-  const [loadingMore, setLoadingMore] = useState(false);
-  const [allLoaded, setAllLoaded] = useState(initialPosts.length >= totalCount);
 
-  const handleCategoryChange = (category: string) => {
+  const createCategoryURL = (category: string) => {
     const newCategory = selectedCategory === category ? "" : category;
     const params = new URLSearchParams();
     if (newCategory) params.set("category", newCategory);
-    router.push(`/journal${params.toString() ? `?${params.toString()}` : ""}`);
+    return `/journal${params.toString() ? `?${params.toString()}` : ""}`;
   };
 
-  const handleTagChange = (tagSlug: string) => {
+  const createTagURL = (tagSlug: string) => {
     const newTag = selectedTag === tagSlug ? "" : tagSlug;
     const params = new URLSearchParams();
     if (selectedCategory) params.set("category", selectedCategory);
     if (newTag) params.set("tag", newTag);
-    router.push(`/journal${params.toString() ? `?${params.toString()}` : ""}`);
+    return `/journal${params.toString() ? `?${params.toString()}` : ""}`;
   };
-
-  const handleLoadMore = async () => {
-    setLoadingMore(true);
-    try {
-      const params = new URLSearchParams();
-      if (selectedCategory) params.set("category", selectedCategory);
-      if (selectedTag) params.set("tagSlug", selectedTag);
-      params.set("offset", String(posts.length));
-      params.set("limit", "12");
-
-      const res = await fetch(`/api/posts?${params.toString()}`);
-      const morePosts = await res.json();
-
-      if (morePosts.length === 0) {
-        setAllLoaded(true);
-      } else {
-        setPosts((prev) => [...prev, ...morePosts]);
-        if (posts.length + morePosts.length >= totalCount) {
-          setAllLoaded(true);
-        }
-      }
-    } catch (error) {
-      console.error("Error loading more posts:", error);
-    } finally {
-      setLoadingMore(false);
-    }
-  };
-
-  // For initial render, use visibleCount for client-side "load more" of already-fetched posts
-  // Once we fetch from API, show all fetched posts
-  const displayPosts = posts;
 
   return (
     <>
@@ -113,9 +80,9 @@ export default function JournalClient({
       <div className="mb-10">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-6">
           {categories.map((cat) => (
-            <button
+            <Link
               key={cat.value}
-              onClick={() => handleCategoryChange(cat.value)}
+              href={createCategoryURL(cat.value)}
               className={`group relative overflow-hidden rounded-xl h-32 transition-all ${
                 selectedCategory === cat.value
                   ? "ring-3 ring-accent-hover shadow-xl scale-[1.02]"
@@ -143,16 +110,16 @@ export default function JournalClient({
               {selectedCategory === cat.value && (
                 <div className="absolute top-2 right-2 bg-accent-hover text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">✓</div>
               )}
-            </button>
+            </Link>
           ))}
         </div>
         {selectedCategory && (
-          <button
-            onClick={() => handleCategoryChange(selectedCategory)}
+          <Link
+            href="/journal"
             className="text-sm text-slate-500 hover:text-accent-hover transition-colors"
           >
             ← Show all articles
-          </button>
+          </Link>
         )}
 
         {/* Tag pills */}
@@ -160,9 +127,9 @@ export default function JournalClient({
           <div className="flex flex-wrap gap-2">
             <span className="text-sm text-slate-500 self-center mr-2">Filter by tag:</span>
             {tags.slice(0, 10).map((tag) => (
-              <button
+              <Link
                 key={tag.slug}
-                onClick={() => handleTagChange(tag.slug)}
+                href={createTagURL(tag.slug)}
                 className={`px-3 py-1 rounded-full text-xs font-medium transition-all ${
                   selectedTag === tag.slug
                     ? "bg-accent-hover text-white"
@@ -170,7 +137,7 @@ export default function JournalClient({
                 }`}
               >
                 {tag.name}
-              </button>
+              </Link>
             ))}
           </div>
         )}
@@ -180,14 +147,14 @@ export default function JournalClient({
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* LEFT: Article cards (2/3) */}
         <div className="lg:col-span-2 space-y-6">
-          {displayPosts.length === 0 ? (
+          {posts.length === 0 ? (
             <div className="text-center py-12 bg-slate-50 rounded-2xl">
               <BookOpen className="h-12 w-12 text-slate-300 mx-auto mb-4" />
               <p className="text-slate-500">No articles found. Try adjusting your filters.</p>
             </div>
           ) : (
             <>
-              {displayPosts.map((post: any) => {
+              {posts.map((post: any) => {
                 const heroImg = post.post.heroImage || categoryFallbackImages[post.post.category] || "/images/activities/hiking-hero.jpg";
                 return (
                   <Link
@@ -257,25 +224,12 @@ export default function JournalClient({
                 );
               })}
 
-              {/* Load More */}
-              {!allLoaded && (
-                <div className="text-center pt-4">
-                  <button
-                    onClick={handleLoadMore}
-                    disabled={loadingMore}
-                    className="px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-[#2d5568] transition-colors disabled:opacity-50"
-                  >
-                    {loadingMore ? (
-                      <span className="flex items-center gap-2">
-                        <span className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></span>
-                        Loading...
-                      </span>
-                    ) : (
-                      `Load More Articles`
-                    )}
-                  </button>
-                </div>
-              )}
+              {/* Pagination */}
+              <Pagination currentPage={currentPage} totalPages={totalPages} />
+
+              <div className="text-center mt-4 text-sm text-slate-500">
+                Showing {(currentPage - 1) * 12 + 1}-{Math.min(currentPage * 12, totalCount)} of {totalCount} articles
+              </div>
             </>
           )}
         </div>

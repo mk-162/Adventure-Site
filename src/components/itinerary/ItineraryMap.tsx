@@ -172,7 +172,7 @@ export function ItineraryMap({ stops, mode, basecamp, className }: ItineraryMapP
 
   return (
     <div className={clsx("rounded-xl overflow-hidden relative group h-[400px] w-full", className)}>
-      <div className="absolute top-4 left-4 right-4 z-[400] flex flex-wrap gap-2 pointer-events-none">
+      <div className="absolute top-4 right-4 z-[400] flex flex-wrap gap-2 pointer-events-none">
         <div className="bg-white/90 backdrop-blur-sm p-1.5 rounded-lg shadow-md border border-gray-200 pointer-events-auto flex gap-1">
           <button
             onClick={() => setActiveDay(null)}

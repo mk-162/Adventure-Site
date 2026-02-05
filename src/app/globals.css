@@ -74,13 +74,12 @@ html {
   /* Hide everything non-essential */
   nav,
   footer,
-  .print\\:hidden,
   [data-print-hide] {
     display: none !important;
   }
 
   /* Show print-only elements */
-  .print\\:block {
+  [data-print-show] {
     display: block !important;
   }
 
@@ -109,8 +108,7 @@ html {
     display: block !important;
   }
 
-  .lg\\:col-span-8,
-  .lg\\:col-span-4 {
+  [class*="col-span"] {
     width: 100% !important;
     max-width: 100% !important;
   }
@@ -131,12 +129,8 @@ html {
   }
 
   /* Hero image: constrain height for print */
-  .group.h-\\[300px\\],
-  .group.h-\\[400px\\],
-  .group.h-\\[500px\\],
-  [class*="h-[300px]"],
-  [class*="h-[400px]"],
-  [class*="h-[500px]"] {
+  [data-hero-image],
+  .group[style*="height"] {
     height: 200px !important;
     max-height: 200px !important;
     page-break-after: avoid;

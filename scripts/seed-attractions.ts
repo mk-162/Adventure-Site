@@ -60,24 +60,22 @@ async function seedAttractions() {
       continue;
     }
 
-    await sql`
-      INSERT INTO activities (
-        site_id, region_id, operator_id, activity_type_id, name, slug,
-        description, booking_url, lat, lng, price_from, status
-      ) VALUES (
-        ${siteId}, ${regionId}, NULL, ${attractionsTypeId},
-        ${attr.name}, ${attr.slug}, ${attr.description}, ${attr.website},
-        ${attr.lat}, ${attr.lng}, ${attr.priceFrom}, 'published'
-      )
-      ON CONFLICT (site_id, slug) DO UPDATE SET
-        name = EXCLUDED.name,
-        description = EXCLUDED.description,
-        booking_url = EXCLUDED.booking_url,
-        lat = EXCLUDED.lat,
-        lng = EXCLUDED.lng,
-        price_from = EXCLUDED.price_from,
-        status = 'published'
-    `;
+    // Check if already exists
+    const existing = await sql`SELECT id FROM activities WHERE site_id = ${siteId} AND slug = ${attr.slug} LIMIT 1`;
+    if (existing.rows.length > 0) {
+      await sql`UPDATE activities SET name = ${attr.name}, description = ${attr.description}, booking_url = ${attr.website}, lat = ${attr.lat}, lng = ${attr.lng}, price_from = ${attr.priceFrom}, status = 'published' WHERE id = ${existing.rows[0].id}`;
+    } else {
+      await sql`
+        INSERT INTO activities (
+          site_id, region_id, operator_id, activity_type_id, name, slug,
+          description, booking_url, lat, lng, price_from, status
+        ) VALUES (
+          ${siteId}, ${regionId}, NULL, ${attractionsTypeId},
+          ${attr.name}, ${attr.slug}, ${attr.description}, ${attr.website},
+          ${attr.lat}, ${attr.lng}, ${attr.priceFrom}, 'published'
+        )
+      `;
+    }
     count++;
   }
 

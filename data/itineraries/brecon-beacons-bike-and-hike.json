@@ -1,222 +1,332 @@
 {
   "slug": "brecon-beacons-bike-and-hike",
   "title": "Brecon Bike & Hike",
-  "tagline": "BikePark Wales meets mountain summits",
+  "tagline": "BikePark Wales meets mountain summits - the ultimate South Wales adventure weekend",
   "region": "brecon-beacons",
   "days": 3,
-  "difficulty": "difficult",
+  "difficulty": "challenging",
   "bestSeason": "April-October",
-  "groupType": "fitness enthusiasts",
+  "groupType": "friends, couples, solo adventurers",
   "priceFrom": 450,
-  "priceTo": 850,
-  "budgetPriceFrom": 250,
-  "budgetPriceTo": 500,
+  "priceTo": 700,
+  "budgetPriceFrom": 170,
+  "budgetPriceTo": 350,
   "highlights": [
-    "BikePark Wales",
-    "Pen y Fan",
-    "Taff Trail"
+    "BikePark Wales - 40+ mountain bike trails",
+    "Pen y Fan summit (886m) - highest peak in South Wales",
+    "Waterfall Country (Four Falls Trail)"
   ],
   "activityTypes": [
     "mountain-biking",
-    "hiking"
+    "hiking",
+    "gorge-walking"
   ],
-  "suitableFor": "Experienced mountain bikers and hikers with a good level of fitness who enjoy challenging trails and varied terrain. Confident navigating in potentially exposed conditions.",
-  "notSuitableFor": "Beginner cyclists or hikers, those with limited fitness, or anyone uncomfortable with heights or changeable weather conditions. Also not ideal for families with young children.",
-  "weatherDependency": "high",
+  "suitableFor": "Experienced mountain bikers and hikers with good fitness who enjoy challenging trails and varied terrain. Confident navigating in potentially exposed conditions.",
+  "notSuitableFor": "Beginner cyclists or hikers, those with limited fitness, or anyone uncomfortable with heights or changeable weather conditions. Not ideal for families with young children.",
+  "weatherDependency": "medium",
   "packingEssentials": [
     "Waterproof jacket and trousers",
     "Hiking boots with good ankle support",
     "Mountain bike helmet and gloves",
-    "High-energy snacks",
-    "Navigation tools (map, compass, GPS)"
+    "High-energy snacks and gels",
+    "Navigation tools (OS map OL12, compass, GPS)",
+    "First-aid kit",
+    "Bike repair kit (tubes, pump, multi-tool)",
+    "Sunscreen and sunglasses",
+    "Warm layers (summit temperature can be 10°C lower)"
   ],
+  "drivingTimes": {
+    "fromCardiff": "45min via A470",
+    "fromBristol": "1hr 15min via M4/A470",
+    "fromBirmingham": "2hr via M5/A470",
+    "fromLondon": "3hr 30min via M4/A470",
+    "merthyrToBikePark": "15min",
+    "bikeParkToStoreyArms": "30min",
+    "storeyArmsToPontneddfechan": "35min"
+  },
   "stops": [
     {
       "day": 1,
       "orderIndex": 1,
       "time": "09:00",
       "type": "activity",
-      "title": "BikePark Wales - Full Day Riding",
-      "description": "Spend the day tackling the varied trails at BikePark Wales, from flowy blues to challenging black runs. Lift pass required.",
-      "duration": "6 hours",
-      "costFrom": 8,
-      "costTo": 32.5,
-      "lat": 51.725,
-      "lng": -3.37,
-      "travelToNext": "5 minute drive",
+      "title": "BikePark Wales - Uplift Day",
+      "description": "Hit the UK's premier purpose-built mountain bike park. 40+ trails from green (beginner) to pro (terrifying). Uplift service takes you to the top, you ride down - repeat all day. Trails include flowing berms, jumps, rock gardens, and technical descents. Cafe, shop, and bike wash on site.",
+      "duration": "Full day (5-6 hours riding)",
+      "operator": "BikePark Wales",
+      "operatorUrl": "https://www.bikeparkwales.com",
+      "operatorPhone": "01685 371122",
+      "bookingEssential": true,
+      "costFrom": 48,
+      "costTo": 55,
+      "costNote": "Day uplift pass. Weekend prices higher.",
+      "bikeHire": {
+        "available": true,
+        "price": "from £80/day full-suspension",
+        "note": "Book ahead - limited stock"
+      },
+      "coaching": {
+        "available": true,
+        "price": "from £120 half-day group, £200 private",
+        "note": "Highly recommended for improving technique"
+      },
+      "lat": 51.7433,
+      "lng": -3.3972,
+      "travelToNext": "15min drive to Merthyr",
       "travelMode": "drive",
+      "trailRecommendations": {
+        "beginner": "Badgers Run (green) - flowing berms, pump track warm-up",
+        "intermediate": "Willy Waver (blue) - swooping turns, small jumps",
+        "advanced": "Dai Hard (red) - technical rock gardens, drops",
+        "expert": "Rim Dinger (black) - steep chutes, gnarly rocks"
+      },
+      "insiderTip": "Arrive before 9am opening to get first uplift and fresh trails. Bring knee pads - even reds have rocky sections. The cafe burgers are excellent post-ride fuel. Book uplift online in advance - walk-ups sometimes available but not guaranteed.",
       "wetAlt": {
-        "title": "BikePark Wales Cafe & Skills Area",
-        "description": "Enjoy the cafe and covered skills area to hone your technique before venturing out when the rain subsides.",
-        "costFrom": 0,
-        "costTo": 10
+        "title": "BikePark runs in rain!",
+        "description": "Trails are purpose-built and drain well. Some riders prefer wet conditions - less dust, more grip. Only closed in extreme weather. Pack waterproofs and embrace it.",
+        "costFrom": 48,
+        "costTo": 55
       },
       "budgetAlt": {
-        "title": "Taff Trail Exploration",
-        "description": "Ride a section of the Taff Trail, a mostly flat, traffic-free path.",
+        "title": "Taff Trail Cycling",
+        "description": "Ride the Taff Trail - 55 miles from Cardiff Bay to Brecon. Join at Merthyr for the scenic valley section. Free!",
         "costFrom": 0,
         "costTo": 0
-      }
+      },
+      "postcode": "CF48 2HT"
     },
     {
       "day": 1,
       "orderIndex": 2,
-      "time": "16:00",
+      "time": "15:00",
       "type": "food",
       "title": "BikePark Wales Cafe",
-      "foodType": "lunch",
-      "description": "Refuel with burgers and hot food in BikePark Wales cafe with great views of the mountain.",
+      "foodType": "late lunch",
+      "description": "Refuel at the on-site cafe with burgers, wraps, and excellent coffee. Log burner for cold days, outdoor deck for sunny ones. Filled with muddy, happy bikers.",
       "costFrom": 10,
-      "costTo": 20,
-      "lat": 51.725,
-      "lng": -3.37,
-      "travelToNext": "30min drive",
+      "costTo": 18,
+      "lat": 51.7433,
+      "lng": -3.3972,
+      "travelToNext": "25min drive to accommodation",
       "travelMode": "drive",
-      "budgetAlt": {
-        "title": "Packed lunch at BikePark Wales picnic area",
-        "description": "Bring your own food and enjoy the park's picnic area."
+      "alternative": {
+        "title": "Nant Ddu Lodge",
+        "description": "Country pub en route to the Beacons. Good food and real ales."
       },
-      "postcode": "CF48 1YU"
+      "postcode": "CF48 2HT"
     },
     {
       "day": 1,
       "orderIndex": 3,
       "time": "17:00",
       "type": "accommodation",
-      "title": "Twin Trails B&B",
-      "description": "A cyclist-friendly B&B located close to BikePark Wales. Offers secure bike storage and hearty breakfasts.",
-      "costFrom": 35,
-      "costTo": 60,
-      "lat": 51.7445,
-      "lng": -3.3505,
-      "travelToNext": "45min drive to Storey Arms Car Park",
+      "title": "The Roost Merthyr Tydfil",
+      "description": "Purpose-built accommodation near BikePark Wales. Self-catering with secure bike storage, drying room, and jet wash. Family and dog-friendly. Perfect bikers' base.",
+      "costFrom": 25,
+      "costTo": 50,
+      "costNote": "per person per night",
+      "lat": 51.7498,
+      "lng": -3.3752,
+      "website": "https://roostmerthyr.co.uk",
+      "phone": "Contact via website",
+      "travelToNext": "30min drive to Storey Arms",
       "travelMode": "drive",
+      "features": ["Bike storage", "Drying room", "Jet wash", "Self-catering kitchen"],
+      "insiderTip": "Book the whole place if you're a group - works out great value. The drying room is essential if you've been riding in Welsh rain.",
       "budgetAlt": {
-        "title": "Grawen Camping",
-        "description": "A campsite near BikePark Wales, offering basic facilities and a budget-friendly option.",
-        "costFrom": 15,
-        "costTo": 30
+        "title": "YHA Brecon Beacons",
+        "description": "Modern eco-hostel in the heart of the Beacons. Dorms and private rooms. Good communal areas.",
+        "costFrom": 18,
+        "costTo": 40,
+        "website": "https://www.yha.org.uk/hostel/yha-brecon-beacons"
       },
-      "postcode": "CF48 4AH"
+      "premiumAlt": {
+        "title": "Llangoed Hall",
+        "description": "Stunning country house hotel with spa. Proper treat after a day of riding.",
+        "costFrom": 200,
+        "costTo": 350
+      },
+      "postcode": "CF48 2SX"
     },
     {
       "day": 2,
       "orderIndex": 1,
-      "time": "09:00",
+      "time": "07:00",
       "type": "activity",
-      "title": "Pen y Fan Hike (via Storey Arms)",
-      "description": "Hike to the summit of Pen y Fan, the highest peak in South Wales. Expect a challenging but rewarding climb with panoramic views.",
+      "title": "Pen y Fan Summit Hike",
+      "description": "Tackle the highest peak in South Wales (886m) via the classic Storey Arms route. The 6-mile round trip takes 3-4 hours. Views from the summit stretch to Snowdonia, the Bristol Channel, and beyond on clear days. The twin peaks of Corn Du and Pen y Fan are iconic.",
       "duration": "3-4 hours",
       "costFrom": 0,
-      "costTo": 0,
-      "lat": 51.883,
-      "lng": -3.437,
-      "travelToNext": "15 minute drive",
-      "travelMode": "drive",
+      "costTo": 5,
+      "costNote": "Free hike, parking £5 at Storey Arms",
+      "lat": 51.8841,
+      "lng": -3.4369,
+      "travelToNext": "On foot - return to car park",
+      "travelMode": "walk",
+      "routeOptions": [
+        {
+          "name": "Storey Arms (most popular)",
+          "distance": "6 miles",
+          "difficulty": "Moderate",
+          "note": "Busiest route - parking fills early"
+        },
+        {
+          "name": "Pont ar Daf (gentler)",
+          "distance": "4 miles",
+          "difficulty": "Easy-moderate",
+          "note": "Quieter alternative, less steep"
+        },
+        {
+          "name": "Tommy Jones (circular)",
+          "distance": "8 miles",
+          "difficulty": "Challenging",
+          "note": "Fuller experience, adds Cribyn peak"
+        }
+      ],
+      "insiderTip": "Start EARLY (before 7am) to beat the crowds and get parking. The Storey Arms car park fills by 9am on sunny weekends. Alternative: use the smaller car park at Pont ar Daf for a gentler approach. Check MWIS for weather - summit can be wild when valley is calm.",
       "wetAlt": {
-        "title": "Brecon Mountain Railway",
-        "description": "Enjoy scenic views of the Brecon Beacons from a vintage steam train, a relaxing alternative to hiking.",
-        "costFrom": 15,
-        "costTo": 25
+        "title": "Dan yr Ogof Show Caves",
+        "description": "Explore Britain's largest showcase caves - underground waterfalls, formations, and a dinosaur park. Family-friendly all-weather attraction.",
+        "costFrom": 18,
+        "costTo": 22,
+        "website": "https://www.showcaves.co.uk"
       },
       "budgetAlt": {
-        "title": "Lower-Level Walking near Pont ar Daf",
-        "description": "Explore the gentler trails around Pont ar Daf car park, avoiding the exposed summit.",
+        "title": "Corn Du only",
+        "description": "If time or energy is limited, hike to Corn Du (873m) - almost as high as Pen y Fan with fewer crowds. Turn back before the final push to Pen y Fan.",
         "costFrom": 0,
-        "costTo": 0
-      }
+        "costTo": 5
+      },
+      "postcode": "LD3 8NL"
     },
     {
       "day": 2,
       "orderIndex": 2,
-      "time": "13:00",
+      "time": "12:00",
       "type": "food",
-      "title": "The Red Dragon Tea Room",
+      "title": "The Tai'r Bull (Libanus)",
       "foodType": "lunch",
-      "description": "Cosy tea room in Brecon town centre serving sandwiches, cakes, and hot drinks.",
-      "costFrom": 8,
-      "costTo": 15,
-      "lat": 51.9445,
-      "lng": -3.3935,
-      "travelToNext": "30min drive",
+      "description": "Traditional village pub just down from the Beacons. Hearty Welsh food, real ales, and a warm welcome for muddy hikers. Large portions ideal post-summit.",
+      "costFrom": 12,
+      "costTo": 22,
+      "lat": 51.8912,
+      "lng": -3.4725,
+      "openingHours": "12-3pm, 6-9pm (food)",
+      "travelToNext": "35min drive to Pontneddfechan",
       "travelMode": "drive",
-      "budgetAlt": {
-        "title": "Packed lunch at Pen y Fan summit",
-        "description": "Enjoy a picnic with spectacular views."
+      "alternative": {
+        "title": "Storey Arms Cafe (seasonal)",
+        "description": "Basic refreshments at the car park. Can be closed off-season."
       },
-      "postcode": "LD3 7DX"
+      "budgetAlt": {
+        "title": "Picnic at the summit",
+        "description": "Pack lunch and enjoy it on top of Pen y Fan (weather permitting). Nothing beats a sarnie with a view."
+      },
+      "postcode": "LD3 8NL"
     },
     {
       "day": 2,
       "orderIndex": 3,
-      "time": "14:30",
+      "time": "14:00",
       "type": "activity",
-      "title": "Waterfall Country Gorge Walking",
-      "description": "Explore the stunning waterfalls of Waterfall Country with a guided gorge walking experience, scrambling up rivers and jumping into pools.",
-      "duration": "2-3 hours",
-      "costFrom": 65,
-      "costTo": 95,
-      "lat": 51.808,
-      "lng": -3.56,
-      "travelToNext": "20min drive",
+      "title": "Four Falls Trail (Waterfall Country)",
+      "description": "Walk the famous Four Falls Trail in Waterfall Country. The 5-mile circular route takes you past four stunning waterfalls including Sgwd yr Eira where you can walk behind the water. Magical forest setting, dramatic gorges, and ancient woodland.",
+      "duration": "3-4 hours",
+      "costFrom": 0,
+      "costTo": 7,
+      "costNote": "Free walk, parking £5-7 at Pontneddfechan or Cwm Porth",
+      "lat": 51.7817,
+      "lng": -3.5728,
+      "travelToNext": "40min drive to accommodation",
       "travelMode": "drive",
+      "waterfalls": [
+        {"name": "Sgwd Clun-Gwyn", "note": "First fall, powerful cascade"},
+        {"name": "Sgwd Isaf Clun-Gwyn", "note": "Lower fall"},
+        {"name": "Sgwd y Pannwr", "note": "Fuller's fall"},
+        {"name": "Sgwd yr Eira", "note": "Walk behind the curtain of water!"}
+      ],
+      "insiderTip": "Wear shoes with grip - the paths are slippery, especially near the falls. Sgwd yr Eira (Fall of Snow) is the highlight - you can walk along a rocky ledge behind the waterfall. The paths can be muddy after rain but that makes the waterfalls more impressive.",
       "wetAlt": {
-        "title": "Craig y Nos Castle Tour",
-        "description": "Explore the historic Craig y Nos Castle, with its opera house and fascinating history.",
-        "costFrom": 8,
-        "costTo": 12
+        "title": "Waterfalls are BETTER in rain!",
+        "description": "Waterfall Country is called that for a reason. After rain, the falls are at their most dramatic. Bring waterproofs and embrace the moisture."
       },
       "budgetAlt": {
-        "title": "Self-Guided Waterfall Walk",
-        "description": "Explore a smaller waterfall on your own, like Sgwd Gwladus (Lady Falls).",
+        "title": "Short circuit to Sgwd yr Eira only",
+        "description": "If tired from Pen y Fan, walk the shorter route from Cwm Porth to just Sgwd yr Eira (2 miles round trip). Still magical.",
         "costFrom": 0,
-        "costTo": 0
-      }
+        "costTo": 5
+      },
+      "postcode": "SA11 5US"
     },
     {
       "day": 2,
       "orderIndex": 4,
       "time": "18:00",
       "type": "accommodation",
-      "title": "Craig y Nos Castle",
-      "description": "A historic castle offering comfortable rooms and beautiful grounds, perfect for a relaxing evening.",
-      "costFrom": 80,
-      "costTo": 150,
-      "lat": 51.828,
-      "lng": -3.68,
-      "travelToNext": "1 hour to Talybont-on-Usk",
+      "title": "YHA Brecon Beacons",
+      "description": "Modern eco-hostel in the Usk Valley. Private rooms and dorms, self-catering kitchen, and stunning valley views. Sustainable building with green credentials. Good base for day 3.",
+      "costFrom": 18,
+      "costTo": 45,
+      "lat": 51.8712,
+      "lng": -3.3925,
+      "website": "https://www.yha.org.uk/hostel/yha-brecon-beacons",
+      "phone": "0345 371 9517",
+      "travelToNext": "30min drive to gorge walking",
       "travelMode": "drive",
+      "insiderTip": "The common room has huge windows overlooking the valley. Book a private room with valley view if you want to wake up to something special.",
       "budgetAlt": {
-        "title": "Waterfall Country Campsite",
-        "description": "A campsite close to Waterfall Country, offering a budget-friendly overnight option.",
-        "costFrom": 15,
-        "costTo": 25
+        "title": "Camping at Cwm Porth",
+        "description": "Basic campsite in Waterfall Country. Fall asleep to the sound of the river.",
+        "costFrom": 10,
+        "costTo": 18
       },
-      "postcode": "SA9 1GJ"
+      "postcode": "LD3 7LQ"
     },
     {
       "day": 3,
       "orderIndex": 1,
       "time": "09:00",
       "type": "activity",
-      "title": "Taff Trail Cycling (Talybont-on-Usk)",
-      "description": "Cycle a scenic section of the Taff Trail, starting from Talybont-on-Usk and enjoying the canal-side views.",
-      "duration": "3-4 hours",
-      "costFrom": 0,
-      "costTo": 0,
-      "lat": 51.889,
-      "lng": -3.31,
-      "travelToNext": "15 min drive to Llangorse Lake",
+      "title": "Gorge Walking Adventure",
+      "description": "Scramble through a spectacular river gorge, climbing waterfalls, jumping into plunge pools, and sliding down natural water chutes. All equipment provided including wetsuit, helmet, and buoyancy aid. A wild and wet finale to your weekend.",
+      "duration": "3 hours",
+      "operator": "Adventures Wales",
+      "operatorUrl": "https://www.adventureswales.co.uk",
+      "operatorPhone": "01685 384814",
+      "alternativeOperators": [
+        {
+          "name": "Hawk Adventures",
+          "url": "https://www.hawkadventures.co.uk",
+          "price": "from £55pp (half-day)",
+          "notes": "Also offers caving, climbing"
+        },
+        {
+          "name": "Blue Ocean Activities",
+          "url": "https://www.blueoceanactivities.co.uk",
+          "price": "from £35pp",
+          "notes": "Budget-friendly option"
+        }
+      ],
+      "bookingEssential": true,
+      "costFrom": 45,
+      "costTo": 70,
+      "lat": 51.7950,
+      "lng": -3.5650,
+      "travelToNext": "15min drive",
       "travelMode": "drive",
+      "requirements": {
+        "minAge": 7,
+        "swimAbility": "Must be able to swim 25m",
+        "fitness": "Moderate - involves climbing, swimming, jumping"
+      },
+      "insiderTip": "Gorge walking is actually MORE fun after rain - bigger waterfalls, fuller pools. Sessions rarely cancelled unless water levels are dangerous. Bring an old pair of trainers that can get soaked.",
       "wetAlt": {
-        "title": "Brecon Cathedral Visit",
-        "description": "Explore the historic Brecon Cathedral, a peaceful and architecturally impressive building.",
-        "costFrom": 0,
-        "costTo": 5
+        "title": "Still go gorge walking!",
+        "description": "You're getting wet anyway! Gorge walking in the rain is brilliant - you barely notice because you're already soaked. Trust the experience."
       },
       "budgetAlt": {
-        "title": "Taff Trail Walking",
-        "description": "Walk along a section of the Taff Trail instead of cycling.",
+        "title": "DIY Waterfall Plunge Pool",
+        "description": "Some plunge pools below waterfalls are accessible for wild swimming (e.g., Sgwd Gwladus). Only for confident swimmers who know the risks. Free but requires research and caution.",
         "costFrom": 0,
         "costTo": 0
       }
@@ -224,71 +334,95 @@
     {
       "day": 3,
       "orderIndex": 2,
-      "time": "13:00",
+      "time": "12:30",
       "type": "food",
-      "title": "The White Swan Inn (Llangorse)",
+      "title": "The Angel Hotel (Abergavenny)",
       "foodType": "lunch",
-      "description": "Traditional pub in Llangorse, serving hearty pub fare and local ales.",
-      "costFrom": 12,
-      "costTo": 25,
-      "lat": 51.917391,
-      "lng": -3.263354,
-      "travelToNext": "5 min drive to Llangorse Lake",
+      "description": "Treat yourself to lunch at this acclaimed gastro-pub in Abergavenny - the food capital of Wales. Local produce, excellent cooking, and a reward for a weekend of adventure.",
+      "costFrom": 18,
+      "costTo": 35,
+      "lat": 51.8220,
+      "lng": -3.0178,
+      "website": "https://www.angelabergavenny.com",
+      "travelToNext": "Journey home",
       "travelMode": "drive",
-      "budgetAlt": {
-        "title": "Packed lunch by the canal",
-        "description": "Enjoy a picnic at Llangorse Lake"
-      },
-      "postcode": "LD3 7PX"
-    },
-    {
-      "day": 3,
-      "orderIndex": 3,
-      "time": "14:30",
-      "type": "activity",
-      "title": "Paddle Boarding at Llangorse Lake",
-      "description": "Enjoy a relaxing paddle boarding session on Llangorse Lake, surrounded by stunning scenery.",
-      "duration": "2-3 hours",
-      "costFrom": 45,
-      "costTo": 85,
-      "lat": 51.923,
-      "lng": -3.26,
-      "travelToNext": "End of Itinerary",
-      "travelMode": "drive",
-      "wetAlt": {
-        "title": "Llangorse Multi Activity Centre",
-        "description": "Llangorse Multi Activity Centre is close by offering a variety of indoors activities.",
-        "costFrom": 25,
-        "costTo": 50
+      "alternative": {
+        "title": "The Walnut Tree",
+        "description": "Michelin-starred restaurant nearby for a real blow-out. Book weeks ahead."
       },
       "budgetAlt": {
-        "title": "Walk around Llangorse Lake",
-        "description": "Enjoy a walk around the lake, taking in the views.",
-        "costFrom": 0,
-        "costTo": 0
-      }
+        "title": "Market Hall Abergavenny",
+        "description": "The covered market has excellent delis, bakers, and a cafe. Great for a cheaper but quality lunch."
+      },
+      "postcode": "NP7 5EN"
     }
   ],
   "costBreakdown": {
     "standard": {
       "activities": 253,
-      "accommodation": 175,
+      "accommodation": 130,
       "food": 70,
       "transport": 50,
-      "total": 548
+      "total": 503,
+      "notes": "Based on 2 adults, hostel/bunkhouse, all activities, bring own bike"
     },
     "budget": {
       "activities": 60,
-      "accommodation": 30,
-      "food": 30,
+      "accommodation": 36,
+      "food": 35,
       "transport": 50,
-      "total": 170
+      "total": 181,
+      "notes": "Camping, one day BikePark, packed lunches, DIY alternatives"
+    },
+    "premium": {
+      "activities": 350,
+      "accommodation": 400,
+      "food": 150,
+      "transport": 60,
+      "total": 960,
+      "notes": "Country hotel, bike hire, coaching, restaurant meals"
     }
   },
   "knowBeforeYouGo": {
-    "weather": "The Brecon Beacons weather is notoriously unpredictable. Be prepared for all conditions, even in summer. Mountain weather can change rapidly.",
-    "traffic": "Traffic can be heavy, especially during peak season (summer weekends and bank holidays). Parking at popular spots like Pen y Fan and Waterfall Country can be challenging – arrive early or consider public transport.",
-    "booking": "BikePark Wales lift passes and coaching sessions should be booked in advance, especially during peak season. Guided gorge walking experiences also require advance booking. Accommodation can fill up quickly, so book well in advance.",
-    "fitness": "This itinerary requires a good level of fitness. The Pen y Fan hike is strenuous, and the mountain biking at BikePark Wales involves steep climbs and technical descents."
-  }
+    "weather": "The Brecon Beacons are known for unpredictable weather - 2,000mm of rain per year! Always pack full waterproofs even on sunny forecasts. Mountain weather can change in minutes. BikePark Wales trails are all-weather but can be muddy.",
+    "traffic": "The A470 can be congested on summer weekends, especially heading to Cardiff. Parking at Pen y Fan (Storey Arms) fills by 9am on sunny weekends - arrive early or use alternatives. Waterfall Country parking is limited - arrive early.",
+    "booking": "BikePark Wales uplift passes should be booked in advance online, especially for weekends and school holidays. Gorge walking needs 48+ hours notice. Bike hire is limited - book well ahead.",
+    "fitness": "This itinerary is demanding. BikePark Wales requires good bike handling skills and fitness for repeated runs. Pen y Fan is a proper mountain hike with 600m+ elevation gain. Gorge walking needs swimming ability and some scrambling. Be honest about your fitness.",
+    "bikeTransport": "If bringing your own bike, ensure you have a suitable rack or van. BikePark has bike wash facilities. If hiring, book well in advance as stock is limited, especially full-suspension bikes.",
+    "emergencies": "Mountain rescue covers the Brecon Beacons. Mobile signal is patchy on summits and in valleys. Let someone know your plans. The national park has mountain weather stations - check before heading out."
+  },
+  "extensions": {
+    "addDay": {
+      "title": "Add Caving at Dan yr Ogof",
+      "description": "Explore underground cave systems with a guided adventure trip. Go beyond the show caves into real caving passages.",
+      "costFrom": 65,
+      "costTo": 95
+    },
+    "alternative": {
+      "title": "Second BikePark Day",
+      "description": "Skip the waterfalls and add another day at BikePark Wales. Progress from blue to red trails or try black runs.",
+      "costFrom": 48,
+      "costTo": 55
+    }
+  },
+  "mapRoute": {
+    "start": {
+      "name": "BikePark Wales",
+      "lat": 51.7433,
+      "lng": -3.3972
+    },
+    "waypoints": [
+      {"name": "Pen y Fan (Storey Arms)", "lat": 51.8841, "lng": -3.4369},
+      {"name": "Waterfall Country", "lat": 51.7817, "lng": -3.5728},
+      {"name": "Gorge Walking", "lat": 51.7950, "lng": -3.5650}
+    ],
+    "totalDriving": "Approximately 2.5 hours total over 3 days"
+  },
+  "lastUpdated": "2025-02-06",
+  "researchSources": [
+    "BikePark Wales official website",
+    "Adventures Wales",
+    "Visit Wales",
+    "Perplexity AI research 2025"
+  ]
 }

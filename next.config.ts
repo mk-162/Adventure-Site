@@ -24,6 +24,11 @@ const nextConfig: NextConfig = {
         destination: '/advertise',
         permanent: true,
       },
+      {
+        source: '/activities/stag-hen',
+        destination: '/stag-hen',
+        permanent: true,
+      },
     ];
   },
 };

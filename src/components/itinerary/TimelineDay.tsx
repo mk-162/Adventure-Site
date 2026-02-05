@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { ItineraryStop } from "@/types/itinerary";
-import { Flag, Bed, Utensils, Car, CloudRain, PiggyBank, MapPin, Home, Phone, EyeOff, Eye, Shuffle, Loader2, X } from "lucide-react";
+import { Flag, Bed, Utensils, Car, CloudRain, PiggyBank, MapPin, Home, Phone, EyeOff, Eye, Shuffle, Loader2, X, Coffee, Footprints, ShoppingBag, Umbrella, Beer, Camera } from "lucide-react";
 import Link from "next/link";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 import { accommodation } from "@/db/schema";
@@ -120,6 +120,8 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
                     isAlt = true;
                 }
 
+                const isGeneric = stop.isGeneric;
+
                 return (
                     <div key={stop.id} className={`relative pl-8 ${isSkipped ? "opacity-50" : ""}`}>
                         {/* Dot on timeline */}
@@ -148,6 +150,44 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
                                         food: { icon: <Utensils className="w-4 h-4 text-orange-600" />, bg: "bg-orange-50", iconLg: <Utensils className="w-8 h-8 text-orange-200" /> },
                                         transport: { icon: <Car className="w-4 h-4 text-gray-600" />, bg: "bg-gray-100", iconLg: <Car className="w-8 h-8 text-gray-300" /> },
                                     };
+
+                                    // Handle generic icons
+                                    if (isGeneric && stop.icon) {
+                                        const genericIconMap: Record<string, JSX.Element> = {
+                                            coffee: <Coffee className="w-4 h-4 text-amber-700" />,
+                                            footprints: <Footprints className="w-4 h-4 text-emerald-600" />,
+                                            "shopping-bag": <ShoppingBag className="w-4 h-4 text-pink-600" />,
+                                            umbrella: <Umbrella className="w-4 h-4 text-blue-500" />,
+                                            beer: <Beer className="w-4 h-4 text-amber-500" />,
+                                            car: <Car className="w-4 h-4 text-gray-600" />,
+                                            camera: <Camera className="w-4 h-4 text-purple-600" />,
+                                        };
+                                        const icon = genericIconMap[stop.icon] || <Flag className="w-4 h-4 text-gray-500" />;
+
+                                        // Large versions for background
+                                        const genericIconLgMap: Record<string, JSX.Element> = {
+                                            coffee: <Coffee className="w-8 h-8 text-amber-200" />,
+                                            footprints: <Footprints className="w-8 h-8 text-emerald-200" />,
+                                            "shopping-bag": <ShoppingBag className="w-8 h-8 text-pink-200" />,
+                                            umbrella: <Umbrella className="w-8 h-8 text-blue-200" />,
+                                            beer: <Beer className="w-8 h-8 text-amber-200" />,
+                                            car: <Car className="w-8 h-8 text-gray-300" />,
+                                            camera: <Camera className="w-8 h-8 text-purple-200" />,
+                                        };
+                                        const iconLg = genericIconLgMap[stop.icon] || <Flag className="w-8 h-8 text-gray-200" />;
+
+                                        return (
+                                            <div className="hidden sm:block relative w-32 lg:w-40 shrink-0 bg-gray-50/50">
+                                                <div className="absolute inset-0 flex items-center justify-center">
+                                                    {iconLg}
+                                                </div>
+                                                <div className="absolute bottom-2 left-2 p-1.5 bg-white/90 backdrop-blur-sm rounded-lg shadow-sm">
+                                                    {icon}
+                                                </div>
+                                            </div>
+                                        );
+                                    }
+
                                     const stopIcon = iconMap[type as keyof typeof iconMap] || iconMap.activity;
 
                                     // Activity-type stops always get a photo thumbnail
@@ -224,7 +264,7 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
                                     )}
                                     <div className="flex items-center gap-3 mt-1 mb-3 text-sm text-gray-500">
                                         {stop.duration && <span>{stop.duration}</span>}
-                                        {cost && <span>• {cost}</span>}
+                                        {!isGeneric && cost && <span>• {cost}</span>}
                                     </div>
                                     <p className="text-gray-600 leading-relaxed text-sm">
                                         {description}
@@ -232,12 +272,12 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
 
                                     {/* Actions / Links */}
                                     <div className="mt-4 flex flex-wrap gap-3">
-                                        {(stop.activityId || (mode === "wet" && stop.wetAltActivityId) || (mode === "budget" && stop.budgetAltActivityId)) && (
+                                        {!isGeneric && (stop.activityId || (mode === "wet" && stop.wetAltActivityId) || (mode === "budget" && stop.budgetAltActivityId)) && (
                                             <button className="text-xs font-bold bg-primary text-white px-3 py-1.5 rounded-lg hover:bg-primary/90 transition-colors">
                                                 View Details
                                             </button>
                                         )}
-                                        {stop.operator?.slug && (
+                                        {!isGeneric && stop.operator?.slug && (
                                             <Link
                                                 href={`/directory/${stop.operator.slug}`}
                                                 className="text-xs font-bold text-accent-hover bg-accent-hover/10 px-3 py-1.5 rounded-lg hover:bg-accent-hover/20 transition-colors flex items-center gap-1"
@@ -245,10 +285,12 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
                                                 <Phone className="w-3 h-3" /> Contact / Book
                                             </Link>
                                         )}
-                                        <button className="text-xs font-bold text-gray-600 bg-gray-100 px-3 py-1.5 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-1">
-                                            <MapPin className="w-3 h-3" /> Map
-                                        </button>
-                                        {stop.activity && (
+                                        {!isGeneric && (
+                                            <button className="text-xs font-bold text-gray-600 bg-gray-100 px-3 py-1.5 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-1">
+                                                <MapPin className="w-3 h-3" /> Map
+                                            </button>
+                                        )}
+                                        {!isGeneric && stop.activity && (
                                             <AlternativesButton
                                                 activityTypeId={stop.activity.activityTypeId}
                                                 regionId={stop.activity.regionId}

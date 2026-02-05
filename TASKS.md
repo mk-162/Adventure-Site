@@ -1,5 +1,5 @@
 # Adventure Wales — Master Task List
-**Last updated:** 2026-02-04
+**Last updated:** 2026-02-05
 **Live site:** https://adventure-site-lyart.vercel.app
 **Repo:** mk-162/Adventure-Site
 
@@ -9,30 +9,60 @@
 | Content | Count | Quality |
 |---------|-------|---------|
 | Regions | 12 | ✅ All published |
-| Operators | 46 (8 premium) | ⚠️ 0 logos, 0 coords, 11 have descriptions |
-| Activities | 45 | ✅ All have booking URLs |
-| Itineraries | 54 (520 stops) | ✅ Solid |
+| Operators | 61+ | ✅ Coords verified, maps live |
+| Activities | 154 | ✅ 23 activity types |
+| Itineraries | 54 (520 stops) | ✅ Full planner UX |
 | Accommodation | 70 | ✅ In DB |
 | Events | 46 | ✅ In DB |
-| Answers/FAQ | 135 | ✅ Good |
-| Journal posts | 128 | ⚠️ Some missing hero images |
+| Answers/FAQ | 145+ | ✅ 10 new FAQ pages added |
+| Journal posts | 133+ | ✅ 5 new articles added |
 | Advertisers | 27 | ✅ Seeded |
 | Active campaigns | 6 | ✅ Demo content |
 | Operator offers | 8 | ✅ Demo content |
-| Booking platform mapped | 0 | 🔴 None mapped yet |
+| Activity types | 23 | ✅ 5 new (Horse Riding, Fishing, Wildlife, Paintball, Beaches) |
 
-**Researched (not yet imported):** 35 operators + 128 activities in `data/research/` (tier 1 + tier 2)
+**SNAGS progress:** 150/171 fixed (88%) — remaining 21 need MK input, content, or API keys
 
 ---
 
-## ✅ DONE (This Session — 2026-02-04)
+## ✅ DONE (Overnight Session — 2026-02-05/06)
+**150 snags fixed in one session. Zero TypeScript errors.**
+
+### Major Features Shipped
+- [x] User account page (`/account`) with saved items
+- [x] TopTip widget with 14 Welsh-specific activity tips
+- [x] Real Leaflet maps on all operator pages (replacing placeholder)
+- [x] Itinerary fact sheet, contact/book buttons, share button
+- [x] Trip Notes (localStorage), Things to Book checklist, Skip Stop toggle
+- [x] Custom stop form ("add your own stop" to itinerary days)
+- [x] PDF print, social share, quick nav links
+- [x] DealCode component (operator deal codes for email signup)
+- [x] Postcode-based coordinate verification (postcodes.io — 101 accurate, 49 corrected)
+- [x] Advertise page full rebuild (price-led hero, sticky bars, comparison table, FAQ)
+- [x] 5 new activity types: Horse Riding, Fishing, Wildlife, Paintball, Beaches
+- [x] 5 new journal articles + 10 new FAQ/answer pages
+- [x] 10 existing guide/answer pages enriched with Welsh detail
+- [x] Transport data expanded for all 9 regions
+- [x] Content gap analysis written to `content/content-gap-analysis.md`
+- [x] Google Places API integrated for reviews
+- [x] CSS Turbopack fix (escaped-colon selectors → attribute selectors)
+- [x] Dropdown dedup fix (slug-based, was showing 36 types instead of 23)
+- [x] Map day tabs repositioned (was clashing with Leaflet zoom buttons)
+
+### Content Strategy
+- [x] Mega Page Brief (`docs/MEGA-PAGE-BRIEF.md`) — high-volume landing pages
+- [x] Pillar Content Plan (`docs/PILLAR-CONTENT-PLAN.md`) — 4-layer content pyramid
+- [x] MTB South Wales showcase page built (2,500+ word editorial, real Unsplash images)
+- [x] Commercial operator tiers: Free → Enhanced £9.99/mo → Premium £29.99/mo
+
+## ✅ DONE (Session — 2026-02-04)
 - [x] 9 missing admin pages (create/edit for operators, regions, activities, accommodation, events, answers + commercial)
 - [x] Commercial demo content seeded (campaigns, creatives, ad slots, offers, page ads)
 - [x] Booking platform integration (schema, UI, admin partner mapping page)
 - [x] 62 non-Wales images replaced with genuine Welsh photos
 - [x] Homepage hero images fixed (was Arizona/Beijing/Bolivia → now Snowdon/Pembrokeshire/Snowdonia)
 
-## ✅ DONE (Previous Session)
+## ✅ DONE (Earlier Sessions)
 - [x] Basecamp concept (accommodation picker, travel time recalculation)
 - [x] Search widget (WHERE/WHAT/WHEN with region icons, season picker)
 - [x] Verified operator badges (claimed/premium across all cards)
@@ -48,20 +78,52 @@
 
 ---
 
-## 🔴 HIGH PRIORITY — Do Next
+## 🔴 REMAINING 21 SNAGS — Need MK Input
 
-### Data Quality (Operators)
-- [ ] **Import tier 1+2 research into DB** — 35 operators with GPS coords, ratings, descriptions, trust signals sitting in `data/research/`. Need script to update existing operator records + create activities
-- [ ] **Operator logos** — 0/46 have logos. Scrape from websites or generate placeholders
-- [ ] **Operator coordinates** — 0/46 have lat/lng. Research data has coords, need import
-- [ ] **Operator descriptions** — only 11/46 have descriptions >50 chars. Research data has full descriptions
+These are the items code can't solve. They need content, business decisions, or API keys.
+
+### 🖼️ Missing Images (10) — Need Real Photos or AI Generation
+- [ ] **Event images** — events need hero images (consider sourcing from operators/Unsplash)
+- [ ] **Premium partner images** — partner pages need quality photos
+- [ ] **Article hero images** — guides homepage articles need images
+- [ ] **Journal hero images** — some journal posts still missing
+- [ ] **Guide images** — make guides "rich" with images + formatting
+- [ ] **Journal-to-itinerary/operator links** — look boring without images
+- [ ] **Operator detail main image** — some are low resolution
+- [ ] **Region hero images** — 11 seeded regions still missing `hero_image` in seed data
+- [ ] **Calendar/Events page hero** — missing entirely
+- [ ] **Advertise page screen grabs** — need screenshots of listing types + "How It Works" walkthrough
+> *Note: 20 event + 102 article hero images were generated with Gemini but MK wants to review — prefers real photos*
+
+### 🔌 External Integrations (2) — Need API Keys & Business Decisions
+- [ ] **TripAdvisor API** — fetch star ratings, display TripAdvisor logo on operator pages
+- [ ] **Amazon Associates** — "Essential Gear" product grid on guide pages
+
+### 📦 Content/Data Expansion (3) — Scope Decisions
+- [ ] **Expand activity types** — add Stag/Hen dos, Sightseeing, Attractions as categories
+- [ ] **"Top Experiences" scope** — include Attractions, Walks, Sightseeing, Beaches (not just businesses)
+- [ ] **Generic filler cards** — "Rest & Relaxation", "Local Walk", "Shopping in town" for itineraries
+
+### ⚙️ Process Items (3) — Strategy Work
+- [ ] **Deep Research Skill** — create AI skill for region-specific tips/content generation
+- [ ] **Content Gap Analysis** — spreadsheet of all empty content stubs → feed into content engine
+- [ ] **YouTube auto-fetch** — onboarding should auto-fetch best videos from operator's YouTube feed
+
+### 🎨 Visuals (2) — Need Live Site
+- [ ] **Advertise page screen grabs** — screenshots showing listing types for each column
+- [ ] **"How It Works" screen grab** — showing how to claim a listing
+
+### 💰 Feature (1) — UX Decision
+- [ ] **Quantity selector** — multi-site pricing on advertise page (number of sites +/- price)
+
+---
+
+## 🟡 HIGH PRIORITY — Next Phase
 
 ### Booking & Revenue
 > 📄 See: [`plans/commercial-build-spec.md`](plans/commercial-build-spec.md) — Phase 2 (Booking Integration) & Phase 4 (Affiliate Revenue)
-> 📄 See: [`plans/INTEGRATION_GUIDE.txt`](plans/INTEGRATION_GUIDE.txt) — step-by-step partner integration
-> 📄 See: [`plans/QUICK_REFERENCE_CARD.txt`](plans/QUICK_REFERENCE_CARD.txt) — partner signup links & commission rates
 
-- [ ] **Map operators to booking platforms** — 0/46 mapped. Check which are on Beyonk, set booking_platform + partner refs
+- [ ] **Map operators to booking platforms** — check which are on Beyonk, set booking_platform + partner refs
 - [ ] **Beyonk partnership** — Email hello@beyonk.com to become distribution partner
 - [ ] **Price comparison schema** — `booking_sources` table (activity_id, platform, price, url, last_checked)
 - [ ] **Price comparison UI** — widget on activity pages showing prices across platforms
@@ -69,38 +131,34 @@
 
 ### Commercial Model
 > 📄 See: [`plans/commercial-offerings-plan.md`](plans/commercial-offerings-plan.md) — full 9 revenue streams, pricing benchmarks, projections
-> 📄 See: [`plans/commercial-build-spec.md`](plans/commercial-build-spec.md) — Phase 1 (Listing Tiers + Payments)
 
 - [ ] **WhatsApp onboarding agent** — AI-powered operator signup flow on Railway
-- [ ] **Pricing tiers** — Free (stub listing) / £9.99 (verified) / £29.99 (premium)
-- [ ] **"Verified by Adventure Wales"** badge system — criteria-based (AALA, ratings, reviews)
 - [ ] **Stripe/payment integration** — for operator subscriptions
 
 ---
 
-## 🟡 MEDIUM PRIORITY
+## 🟢 MEDIUM PRIORITY
 
 ### Content & SEO
-- [ ] **Journal hero images** — some articles still missing. Run update-journal-images script
-- [ ] **Journal performance** — client-side fetch for 128 posts is slow. Move to server-side
-- [ ] **Operator pages enrichment** — add service details, individual activity listings from research data
-- [ ] **Activity pages** — import 128 researched activities (currently only 45 in DB)
+- [ ] **Journal performance** — client-side fetch for 133+ posts is slow. Move to server-side
+- [ ] **Pillar content pages** — build out the 4-layer content pyramid (see `docs/PILLAR-CONTENT-PLAN.md`)
+- [ ] **Mega pages** — implement first two: "Zip Lining in Wales" and "Climbing Snowdon" (see `docs/MEGA-PAGE-BRIEF.md`)
 
 ### Site Features
 > 📄 See: [`plans/commercial-build-spec.md`](plans/commercial-build-spec.md) — Phase 3 (Lead Gen), Phase 6 (Operator Analytics), Phase 7 (Itinerary Sponsorship)
 
 - [ ] **Operator Dashboard (B2B)** — leads overview, enquiry management, analytics → *Build spec Phase 6*
 - [ ] **Vibe Filter** — mood-based search (Adrenaline / Chill / Family / Romantic)
-- [ ] **PDF Export** — downloadable itineraries with maps and costs
+- [x] **PDF Export** — downloadable itineraries ✅ Done (print-optimized CSS + download button)
 - [ ] **Drag & Drop Itinerary Editor** — reorder stops, travel time warnings
 - [ ] **Lead Generation** — enquiry routing, lead scoring, operator notifications → *Build spec Phase 3*
 - [ ] **Itinerary Sponsorship** — operators pay for featured placement in itineraries → *Build spec Phase 7*
 
 ### Design & Polish
 - [ ] **Ad slots rendering** — verify demo ads show on answer/guide pages → *Build spec Phase 5*
-- [ ] **SponsorBadge usage** — not used on any pages yet, wire into operator profiles
 - [ ] **Newsletter integration** — connect to email service (Mailchimp/Resend/etc)
 - [ ] **Mobile responsiveness audit** — check all pages on mobile
+- [ ] **9 manual coordinate lookups** — remote mountain locations need manual lat/lng (The Pilot House Cafe, Tafarn y Garreg, Storey Arms Cafe, etc.)
 
 ---
 
@@ -110,7 +168,7 @@
 > 📄 See: [`plans/commercial-offerings-plan.md`](plans/commercial-offerings-plan.md) — §5 Implementation Priority, §6 Revenue Projections, §8 KPIs
 
 - [ ] **Multi-tenant architecture** — support Adventure Scotland, Adventure England etc
-- [ ] **User accounts** — save favourite itineraries, bookmarks
+- [x] **User accounts** — save favourite itineraries, bookmarks ✅ Done (`/account` page with saved items)
 - [ ] **Review system** — build own reviews (reduce reliance on Google/TripAdvisor)
 - [ ] **Price alerts** — "email me when this drops below £X" (lead gen)
 - [ ] **SEO landing pages** — "cheapest coasteering Pembrokeshire" etc
@@ -118,14 +176,11 @@
 ### Integrations
 > 📄 See: [`plans/INTEGRATION_GUIDE.txt`](plans/INTEGRATION_GUIDE.txt) — Phase 1-3 partner integration steps
 > 📄 See: [`plans/QUICK_REFERENCE_CARD.txt`](plans/QUICK_REFERENCE_CARD.txt) — all partner signup links
-> 📄 See: [`plans/ready_to_integrate_partners.csv`](plans/ready_to_integrate_partners.csv) — partner data
 
 - [ ] **Booking.com affiliate** — accommodation widget with live availability → *Integration Guide Phase 1*
 - [ ] **GetYourGuide Partner API** — 300K experiences, 7-8% commission → *Quick Ref Tier 1*
 - [ ] **Viator affiliate** — backup to GYG, ~8% commission → *Quick Ref Tier 1*
 - [ ] **Rezdy Channel Manager** — secondary booking platform integration
-- [ ] **Amazon Associates** — gear affiliate links on guides
-- [ ] **TripAdvisor links** — link to reviews (don't embed due to T&C restrictions)
 
 ### Ops & Infrastructure
 - [ ] **CI/CD pipeline** — automated testing before deploy

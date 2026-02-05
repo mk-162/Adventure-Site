@@ -1,12 +1,14 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getRegionWithStats, getActivitiesByRegion, getAccommodationByRegion, getOperators, getRegionEntitiesForMap } from "@/lib/queries";
+import { getRegionWithStats, getActivitiesByRegion, getAccommodationByRegion, getOperators, getRegionEntitiesForMap, getActivityTypesForRegion } from "@/lib/queries";
 import type { MapMarker } from "@/components/ui/MapView";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { AccommodationCard } from "@/components/cards/accommodation-card";
 import { RegionMap } from "@/components/ui/RegionMap";
 import { ScenicGallery } from "@/components/regions/scenic-gallery";
+import { getBestListsForRegion } from "@/lib/best-list-data";
+import { BestOfCard } from "@/components/content/BestOfCard";
 import { 
   Map, 
   Heart, 

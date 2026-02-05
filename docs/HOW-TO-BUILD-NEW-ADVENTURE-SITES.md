@@ -312,11 +312,23 @@ curl -s "https://api.postcodes.io/postcodes/{POSTCODE}" | jq '.result | {lat: .l
 
 This is where the site goes from data to destination. Each piece of content gets its own dedicated research-and-write session.
 
+### Forum-first research (MANDATORY)
+
+Before writing any content, research the relevant forums. Official websites tell you what businesses want you to know. Forums tell you what you actually need to know. The `aw-deep-research` skill has a full list of sport-specific forums (Singletrack, UKClimbing, Walkhighlands, Magic Seaweed, Song of the Paddle, etc.) and mandatory search patterns.
+
+### Tiered tips (MANDATORY)
+
+Every combo page needs TWO sets of tips:
+- **🟢 First Timer** — practical basics (accommodation with jet wash, cycling distance to trails, what to download, gear hire)
+- **🔴 Regular / Returning** — insider knowledge (which spots drain best, where locals actually eat, what's overrated, current changes)
+
+This stops experienced visitors being bored by basics, and gives newcomers the confidence they need.
+
 ### The content creation process (per page):
 
 ```
 ┌─────────────────────────┐
-│ 1. DEEP RESEARCH        │ — web search, competitor analysis, local sources
+│ 1. DEEP RESEARCH        │ — forums first, then web search, competitor analysis
 │    (30-60 min per page)  │ — Skill: aw-deep-research
 ├─────────────────────────┤
 │ 2. CONTENT WRITING      │ — editorial, tips, expert quotes, honest assessment
@@ -351,7 +363,8 @@ Start with the highest-traffic combos. For Wales, this was:
 | `metaTitle` | SEO-optimised title | 50-60 chars |
 | `metaDescription` | SEO meta description | 150-160 chars |
 | `editorial` | Long-form markdown guide | 1,500-2,500 words |
-| `topTips` | Specific, actionable tips | 5-8 tips |
+| `topTips` | Flat list fallback tips | 5-8 tips |
+| `tieredTips` | First Timer + Regular tips (preferred over flat) | 6-10 each tier |
 | `localTakes` | Expert quotes with photo/bio | 1-3 per page |
 | `featuredExpert` | Extended expert panel | 1 per page |
 | `honestTruth` | What's great / what's not | 4-6 each |

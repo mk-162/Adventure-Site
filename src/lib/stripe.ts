@@ -28,13 +28,13 @@ export function getStripeDashboardUrl(path: string = ""): string {
 
 /** Price IDs from env */
 export const STRIPE_PRICES = {
-  verified: process.env.STRIPE_VERIFIED_PRICE_ID || "",
+  enhanced: process.env.STRIPE_ENHANCED_PRICE_ID || "",
   premium: process.env.STRIPE_PREMIUM_PRICE_ID || "",
 } as const;
 
 /** Map a Stripe price ID to a billing tier */
 export function priceIdToTier(priceId: string): "free" | "verified" | "premium" {
-  if (priceId === STRIPE_PRICES.verified) return "verified";
+  if (priceId === STRIPE_PRICES.enhanced) return "verified"; // "Enhanced" maps to "verified" in DB
   if (priceId === STRIPE_PRICES.premium) return "premium";
   return "free";
 }

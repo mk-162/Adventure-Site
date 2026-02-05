@@ -63,7 +63,7 @@ export async function POST(req: NextRequest) {
 
         // Map price to tier
         let tier = "free";
-        if (priceId === process.env.STRIPE_VERIFIED_PRICE_ID) tier = "verified";
+        if (priceId === process.env.STRIPE_ENHANCED_PRICE_ID) tier = "verified"; // Enhanced = verified in DB
         if (priceId === process.env.STRIPE_PREMIUM_PRICE_ID) tier = "premium";
 
         const operator = await db.query.operators.findFirst({

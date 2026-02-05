@@ -1,24 +1,24 @@
 {
   "slug": "wye-valley-canoe-and-climb",
   "title": "Wye Valley Canoe & Climb",
-  "tagline": "Paddle the Wye, scale the cliffs",
+  "tagline": "Paddle the Wye, scale the cliffs, explore ancient ruins in one of Britain's most beautiful river valleys",
   "region": "wye-valley",
   "days": 2,
   "difficulty": "moderate",
   "bestSeason": "April-October",
-  "groupType": "friends, couples",
-  "priceFrom": 250,
-  "priceTo": 450,
-  "budgetPriceFrom": 120,
-  "budgetPriceTo": 250,
+  "groupType": "couples, friends, small groups",
+  "priceFrom": 280,
+  "priceTo": 420,
+  "budgetPriceFrom": 100,
+  "budgetPriceTo": 180,
   "highlights": [
-    "Wye canoeing",
-    "Symonds Yat climbing",
-    "Tintern Abbey walk"
+    "River Wye canoeing through AONB",
+    "Rock climbing at Symonds Yat",
+    "Tintern Abbey exploration"
   ],
   "activityTypes": [
-    "kayaking",
-    "climbing",
+    "canoeing",
+    "rock-climbing",
     "hiking"
   ],
   "suitableFor": "Active friends or couples who enjoy outdoor adventures and are comfortable with some physical exertion. Some prior experience with canoeing or climbing is helpful but not essential.",
@@ -29,127 +29,206 @@
     "Hiking boots",
     "Sunscreen",
     "Hat",
-    "Water bottle"
+    "Water bottle",
+    "Quick-dry clothes",
+    "Small dry bag for valuables",
+    "Camera (waterproof bag recommended)"
   ],
+  "drivingTimes": {
+    "fromBristol": "45-60min via M4/M48",
+    "fromCardiff": "50-70min via M4/A449",
+    "fromBirmingham": "1hr 30min via M5/M50",
+    "fromLondon": "2hr 30min via M4",
+    "symondsYatToTintern": "20min",
+    "monmouthToSymondsYat": "15min",
+    "rossonWyeToSymondsYat": "15min"
+  },
   "stops": [
     {
       "day": 1,
       "orderIndex": 1,
-      "time": "09:00",
+      "time": "09:30",
       "type": "activity",
-      "title": "Canoeing on the River Wye",
-      "description": "Enjoy a guided canoe trip down the scenic River Wye, taking in the stunning views of the valley.",
-      "duration": "3 hours",
-      "costFrom": 45,
-      "costTo": 65,
-      "lat": 51.9013,
-      "lng": -2.6344,
-      "travelToNext": "15min drive via B4164",
-      "travelMode": "drive",
+      "title": "River Wye Canoeing",
+      "description": "Paddle through the stunning Wye Valley AONB, drifting past ancient woodland, limestone cliffs, and wildlife. Half-day trips typically run from Symonds Yat to Monmouth (7 miles) or shorter options available. All equipment provided including canoe, paddles, buoyancy aids. No experience needed - guides give full instruction.",
+      "duration": "3-4 hours",
+      "operator": "Wye Canoes",
+      "operatorUrl": "https://www.wyecanoes.co.uk",
+      "operatorPhone": "01600 890129",
+      "alternativeOperators": [
+        {
+          "name": "Symonds Yat Canoe Hire",
+          "url": "https://www.canoerentalherefordshire.co.uk",
+          "price": "from £20pp half-day",
+          "notes": "Budget-friendly, dog-friendly"
+        },
+        {
+          "name": "Ross-on-Wye Canoe Hire",
+          "url": "https://www.rosstowncanoes.co.uk",
+          "price": "from £35pp",
+          "notes": "Longer routes available"
+        },
+        {
+          "name": "Wyedean Canoe Hire",
+          "url": "https://www.wyedean.co.uk",
+          "price": "from £15-20/hour",
+          "notes": "Hourly options if less time"
+        }
+      ],
+      "bookingEssential": true,
+      "costFrom": 25,
+      "costTo": 45,
+      "lat": 51.8453,
+      "lng": -2.6414,
+      "travelToNext": "On the water to Ye Olde Ferrie Inn",
+      "travelMode": "canoe",
+      "requirements": {
+        "minAge": 5,
+        "swimAbility": "Recommended but buoyancy aids provided"
+      },
+      "insiderTip": "Watch for kingfishers flashing electric blue along the banks. Keep quiet and you might see herons and cormorants. The section below Symonds Yat has some minor rapids - exciting but not scary!",
       "wetAlt": {
-        "title": "Clearwell Caves",
-        "description": "Explore the fascinating Clearwell Caves, an ancient iron mine system.",
-        "costFrom": 12,
-        "costTo": 15
+        "title": "Puzzlewood Film Set",
+        "description": "Mystical ancient woodland used in Star Wars, Doctor Who, and many other films. Atmospheric in any weather - arguably better in mist! Entry £8-10.",
+        "costFrom": 8,
+        "costTo": 10,
+        "website": "https://www.puzzlewood.net"
       },
       "budgetAlt": {
-        "title": "Walk along the Wye Valley Walk",
-        "description": "Enjoy a free walk along the Wye Valley Walk, following the riverbank.",
+        "title": "Wye Valley Walk Section",
+        "description": "Walk the stunning Wye Valley Walk from Symonds Yat Rock to Monmouth (7 miles). Free apart from parking. Get the bus back.",
         "costFrom": 0,
-        "costTo": 0
-      }
+        "costTo": 5
+      },
+      "postcode": "HR9 6JL"
     },
     {
       "day": 1,
       "orderIndex": 2,
-      "time": "12:30",
+      "time": "13:30",
       "type": "food",
-      "title": "The Saracen's Head Inn",
+      "title": "Ye Olde Ferrie Inn",
       "foodType": "lunch",
-      "description": "A traditional pub with beautiful river views, serving classic pub fare.",
-      "costFrom": 15,
+      "description": "Historic riverside pub at Symonds Yat East, accessible by the hand-pulled rope ferry (one of only a handful in Britain). Famous for good pub food, real ales, and spectacular setting. Outdoor seating by the river.",
+      "costFrom": 12,
       "costTo": 25,
-      "lat": 51.8279,
-      "lng": -2.6445,
-      "travelToNext": "5min drive to Symonds Yat Rock Car Park",
-      "travelMode": "drive",
-      "budgetAlt": {
-        "title": "Packed lunch at Symonds Yat Rock",
-        "description": "Enjoy your own sandwiches with spectacular views from Symonds Yat Rock."
+      "lat": 51.8489,
+      "lng": -2.6328,
+      "website": "https://www.yeoldeferrieinn.com",
+      "phone": "01600 890232",
+      "openingHours": "12-3pm, 6-9pm (food)",
+      "ferryInfo": "Hand-pulled rope ferry operates dawn-dusk, 80p donation",
+      "travelToNext": "5min walk (via ferry) or 15min drive",
+      "travelMode": "walk",
+      "insiderTip": "Take the rope ferry across - it's a unique experience and the ferryman has worked the crossing for decades. Book a table on the terrace for river views.",
+      "alternative": {
+        "title": "The Saracens Head Inn (Symonds Yat East)",
+        "description": "Another riverside pub with its own ferry. Good food and accommodation."
       },
-      "postcode": "GL16 7EU"
+      "budgetAlt": {
+        "title": "Picnic at Symonds Yat Rock",
+        "description": "Pick up supplies and picnic at the famous viewpoint 500ft above the Wye. Peregrine falcons nest on the cliffs."
+      },
+      "postcode": "HR9 6BL"
     },
     {
       "day": 1,
       "orderIndex": 3,
-      "time": "14:00",
+      "time": "15:30",
       "type": "activity",
-      "title": "Rock Climbing at Symonds Yat",
-      "description": "Try outdoor rock climbing at Symonds Yat, suitable for beginners with guidance from an instructor.",
-      "duration": "3 hours",
-      "costFrom": 50,
-      "costTo": 80,
-      "lat": 51.8261,
-      "lng": -2.6327,
-      "travelToNext": "30min drive to Monmouth",
+      "title": "Symonds Yat Rock Viewpoint",
+      "description": "Climb the 500ft to Symonds Yat Rock for one of the finest viewpoints in Britain. The River Wye loops dramatically below, and peregrine falcons often soar at eye level. RSPB volunteers often on site with telescopes (April-August).",
+      "duration": "1-1.5 hours",
+      "costFrom": 0,
+      "costTo": 4,
+      "costNote": "Free access, parking £3-4",
+      "lat": 51.8550,
+      "lng": -2.6389,
+      "travelToNext": "30min drive to Tintern",
       "travelMode": "drive",
+      "insiderTip": "Evening light is magical here. The peregrines returned to nest in 1982 after decades of absence - now they're a regular sight. The cafe at the top serves good cakes.",
       "wetAlt": {
-        "title": "Visit Raglan Castle",
-        "description": "Explore the impressive ruins of Raglan Castle, a late medieval fortress.",
+        "title": "Dean Heritage Centre",
+        "description": "Museum exploring the Forest of Dean's mining and industrial heritage. Indoor exhibitions plus outdoor trails through woodland. Good for families.",
         "costFrom": 8,
-        "costTo": 10
-      },
-      "budgetAlt": {
-        "title": "Hike to Symonds Yat Rock viewpoint",
-        "description": "Enjoy the stunning views from the top of Symonds Yat Rock after a short, steep hike.",
-        "costFrom": 0,
-        "costTo": 0
+        "costTo": 12,
+        "website": "https://www.deanheritagecentre.com"
       }
     },
     {
       "day": 1,
       "orderIndex": 4,
-      "time": "17:30",
+      "time": "18:00",
       "type": "accommodation",
-      "title": "The King's Head Hotel, Monmouth",
-      "description": "A historic hotel in the heart of Monmouth, offering comfortable rooms and a restaurant.",
-      "costFrom": 90,
-      "costTo": 150,
-      "lat": 51.8128,
-      "lng": -2.7152,
-      "travelToNext": "20min drive to Tintern Abbey",
-      "travelMode": "drive",
+      "title": "The Anchor Inn (Tintern)",
+      "description": "Charming riverside pub with rooms right next to Tintern Abbey. Traditional decor, cosy bar with real ales, and excellent restaurant using local produce. Perfect base for abbey exploration.",
+      "costFrom": 85,
+      "costTo": 130,
+      "costNote": "per room B&B",
+      "lat": 51.6963,
+      "lng": -2.6773,
+      "website": "https://www.theanchortintern.co.uk",
+      "phone": "01291 689582",
+      "travelToNext": "2min walk to Tintern Abbey",
+      "travelMode": "walk",
+      "insiderTip": "Room 3 has views of the abbey ruins - magical when lit up at night. Book dinner in the restaurant - the steaks are excellent.",
       "budgetAlt": {
-        "title": "Wigwam Holidays, Wye Valley",
-        "description": "Glamping in a wigwam cabin for a more affordable and unique experience.",
-        "costFrom": 50,
-        "costTo": 80
+        "title": "St Briavels Castle YHA",
+        "description": "Sleep in a 13th-century castle! Atmospheric hostel with medieval banquet hall. Basic but unforgettable. 15min drive from Tintern.",
+        "costFrom": 20,
+        "costTo": 35,
+        "website": "https://www.yha.org.uk/hostel/yha-st-briavels-castle"
       },
-      "postcode": "NP25 3XE"
+      "campingAlt": {
+        "title": "Wye Valley Camping (Whitebrook)",
+        "description": "Small, peaceful campsite in the valley. Basic facilities but beautiful setting.",
+        "costFrom": 15,
+        "costTo": 25
+      },
+      "postcode": "NP16 6SE"
     },
     {
       "day": 2,
       "orderIndex": 1,
       "time": "09:00",
       "type": "activity",
-      "title": "Explore Tintern Abbey",
-      "description": "Wander through the stunning ruins of Tintern Abbey, a masterpiece of Gothic architecture.",
-      "duration": "2 hours",
-      "costFrom": 10,
-      "costTo": 12,
-      "lat": 51.6975,
-      "lng": -2.6832,
-      "travelToNext": "5 min walk to Old Station Tintern",
-      "travelMode": "walk",
+      "title": "Rock Climbing Introduction",
+      "description": "Guided rock climbing session on the limestone crags near Symonds Yat or Wintour's Leap. Suitable for complete beginners - all equipment provided and expert instruction. Learn to climb, belay, and abseil on real rock in a stunning setting.",
+      "duration": "3-4 hours",
+      "operator": "Wye Adventures",
+      "operatorUrl": "https://www.wye-adventures.co.uk",
+      "operatorPhone": "01291 628100",
+      "alternativeOperators": [
+        {
+          "name": "Adventure Wye",
+          "url": "https://www.adventurewye.co.uk",
+          "price": "from £60pp",
+          "notes": "Also offers caving, coasteering"
+        }
+      ],
+      "bookingEssential": true,
+      "costFrom": 50,
+      "costTo": 90,
+      "costNote": "Half-day session per person",
+      "lat": 51.8490,
+      "lng": -2.6350,
+      "travelToNext": "30min drive to Tintern Abbey",
+      "travelMode": "drive",
+      "requirements": {
+        "minAge": 8,
+        "fitness": "Reasonable upper body strength helpful"
+      },
+      "insiderTip": "Ask for Wintour's Leap if you want drama - it's a 200ft limestone cliff overlooking the Wye. Symonds Yat crags are more beginner-friendly with varied routes.",
       "wetAlt": {
-        "title": "Chepstow Museum",
-        "description": "Learn about the history of Chepstow and the local area.",
-        "costFrom": 5,
-        "costTo": 7
+        "title": "Go Ape (Forest of Dean)",
+        "description": "High ropes adventure through the trees at this popular treetop course. Book in advance.",
+        "costFrom": 35,
+        "costTo": 45,
+        "website": "https://goape.co.uk"
       },
       "budgetAlt": {
-        "title": "Walk along the River Wye at Tintern",
-        "description": "Enjoy a scenic walk along the banks of the River Wye at Tintern, free of charge.",
+        "title": "Wye Valley Walk to The Buckstone",
+        "description": "Hike from Staunton to The Buckstone - a famous rocking stone with panoramic views. 4-mile circular walk, free.",
         "costFrom": 0,
         "costTo": 0
       }
@@ -157,71 +236,118 @@
     {
       "day": 2,
       "orderIndex": 2,
-      "time": "11:30",
-      "type": "food",
-      "title": "Old Station Tintern",
-      "foodType": "brunch",
-      "description": "A charming cafe in a converted railway station with views over the River Wye.",
-      "costFrom": 12,
-      "costTo": 20,
-      "lat": 51.6989,
-      "lng": -2.6821,
-      "travelToNext": "45min drive to Forest of Dean Sculpture Trail",
-      "travelMode": "drive",
-      "budgetAlt": {
-        "title": "Picnic at the Tintern Abbey grounds",
-        "description": "Pack a picnic to enjoy while taking in the magnificent views of Tintern Abbey."
-      },
-      "postcode": "NP16 6SE"
+      "time": "13:00",
+      "type": "activity",
+      "title": "Tintern Abbey",
+      "description": "Explore the romantic ruins of this magnificent 12th-century Cistercian abbey. Wordsworth wrote about it, Turner painted it - the Gothic arches against the sky are unforgettable. Allow 1-2 hours to explore fully.",
+      "duration": "1.5 hours",
+      "operator": "Cadw",
+      "operatorUrl": "https://cadw.gov.wales/visit/places-to-visit/tintern-abbey",
+      "costFrom": 8,
+      "costTo": 13,
+      "costNote": "Adult £8.60, Child £5.20, Family £24.70 (2024 prices)",
+      "lat": 51.6974,
+      "lng": -2.6768,
+      "openingHours": "10am-5pm daily (summer), reduced winter hours",
+      "travelToNext": "2min walk",
+      "travelMode": "walk",
+      "insiderTip": "Late afternoon light through the ruined windows is magical for photos. The audio guide (included) tells fascinating stories of monastic life. Combined ticket with Raglan Castle available.",
+      "wetAlt": {
+        "title": "Abbey still good!",
+        "description": "Ruins are atmospheric in any weather - arguably more romantic in mist or light rain. Bring waterproofs and embrace it."
+      }
     },
     {
       "day": 2,
       "orderIndex": 3,
-      "time": "13:30",
-      "type": "activity",
-      "title": "Forest of Dean Sculpture Trail",
-      "description": "Discover contemporary sculptures nestled within the beautiful Forest of Dean woodland.",
-      "duration": "2 hours",
-      "costFrom": 0,
-      "costTo": 0,
-      "lat": 51.8395,
-      "lng": -2.5695,
-      "travelToNext": "End of trip",
+      "time": "14:30",
+      "type": "food",
+      "title": "The Moon and Sixpence (Tintern)",
+      "foodType": "late lunch",
+      "description": "Excellent cafe/restaurant opposite Tintern Abbey. Local produce, homemade cakes, and good coffee. Vegetarian-friendly. Perfect post-abbey refuel.",
+      "costFrom": 10,
+      "costTo": 22,
+      "lat": 51.6980,
+      "lng": -2.6760,
+      "openingHours": "10am-5pm",
+      "travelToNext": "Journey home",
       "travelMode": "drive",
-      "wetAlt": {
-        "title": "Dean Heritage Centre",
-        "description": "Explore the history and heritage of the Forest of Dean.",
-        "costFrom": 8,
-        "costTo": 10
+      "alternative": {
+        "title": "The Wild Hare (Tintern)",
+        "description": "Casual eatery with wood-fired pizzas and local beers. Outdoor seating."
       },
       "budgetAlt": {
-        "title": "Free entry to the Forest of Dean Sculpture Trail",
-        "description": "Enjoy the public art on display throughout the forest.",
-        "costFrom": 0,
-        "costTo": 0
-      }
+        "title": "Abbey Mill Tea Room",
+        "description": "Simple cafe with outdoor seating by the river. Good for a quick sandwich."
+      },
+      "postcode": "NP16 6SE"
     }
   ],
   "costBreakdown": {
     "standard": {
       "activities": 105,
-      "accommodation": 120,
-      "food": 47,
+      "accommodation": 110,
+      "food": 55,
       "transport": 35,
-      "total": 307
+      "total": 305,
+      "notes": "Based on 2 adults, pub B&B, 2 activities"
     },
     "budget": {
-      "activities": 0,
-      "accommodation": 50,
-      "food": 20,
+      "activities": 35,
+      "accommodation": 40,
+      "food": 25,
       "transport": 30,
-      "total": 100
+      "total": 130,
+      "notes": "Hostel/camping, one paid activity, packed lunches"
+    },
+    "premium": {
+      "activities": 150,
+      "accommodation": 160,
+      "food": 100,
+      "transport": 40,
+      "total": 450,
+      "notes": "Boutique B&B, all activities, restaurant meals"
     }
   },
   "knowBeforeYouGo": {
-    "weather": "The Wye Valley can experience variable weather, even in summer. Pack layers and waterproof clothing. Check the forecast before you go.",
-    "traffic": "Traffic can be heavy in the Symonds Yat area, especially during peak season and weekends. Arrive early to secure parking at popular spots like Symonds Yat Rock.",
-    "booking": "Advance booking is highly recommended for canoeing, climbing, and accommodation, especially during school holidays. Tintern Abbey often has timed ticket entry which can be booked online.",
-    "fitness": "This trip requires a moderate level of fitness due to the canoeing, climbing, and hiking. Be prepared for some uphill walking and physical exertion."
-  }
+    "weather": "The Wye Valley has a mild, sheltered climate but expect some rain (it is Wales!). Canoeing runs in most conditions except heavy floods. Rock climbing may be cancelled in heavy rain as wet rock is slippery.",
+    "traffic": "Weekend traffic on the A466 along the Wye Valley can be heavy, especially on sunny days. Parking at Symonds Yat Rock fills early. Consider arriving early or using the main car park and walking up.",
+    "booking": "Canoe hire and climbing sessions should be booked in advance, especially for weekends. Tintern Abbey doesn't require advance booking but online tickets are slightly cheaper.",
+    "fitness": "This itinerary requires moderate fitness. Canoeing is suitable for beginners. Rock climbing requires some upper body strength but guides adapt to ability. Walking to viewpoints involves some hills.",
+    "flooding": "The Wye can flood after heavy rain. Operators will contact you if sessions are cancelled. In these conditions, the wild valley looks dramatic - bring waterproofs and enjoy the walks instead.",
+    "border": "The Wye Valley straddles the England-Wales border. Symonds Yat is in England (Herefordshire), Tintern is in Wales (Monmouthshire). Phone signal is patchy throughout."
+  },
+  "extensions": {
+    "addDay": {
+      "title": "Add Caving Adventure",
+      "description": "Explore underground cave systems in the Forest of Dean with Adventure Wye. Squeeze through passages, see formations, and experience total darkness.",
+      "costFrom": 60,
+      "costTo": 85
+    },
+    "alternative": {
+      "title": "Forest of Dean MTB",
+      "description": "Swap climbing for mountain biking at the Pedalabikeaway trails in the Forest of Dean. Blue, red, and black graded trails plus skills area.",
+      "costFrom": 30,
+      "costTo": 50
+    }
+  },
+  "mapRoute": {
+    "start": {
+      "name": "Symonds Yat (canoe launch)",
+      "lat": 51.8453,
+      "lng": -2.6414
+    },
+    "waypoints": [
+      {"name": "Ye Olde Ferrie Inn", "lat": 51.8489, "lng": -2.6328},
+      {"name": "Symonds Yat Rock", "lat": 51.8550, "lng": -2.6389},
+      {"name": "Tintern Abbey", "lat": 51.6974, "lng": -2.6768}
+    ],
+    "totalDriving": "Approximately 1 hour total over 2 days"
+  },
+  "lastUpdated": "2025-02-06",
+  "researchSources": [
+    "Wye Canoes",
+    "Cadw Wales",
+    "Perplexity AI research 2025"
+  ]
 }

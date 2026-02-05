@@ -1,0 +1,1137 @@
+# Content Gap Audit Report
+
+**Generated:** 2026-02-05T19:59:03.334Z
+
+## Summary
+
+| Severity | Count |
+|----------|-------|
+| 🔴 Critical | 22 |
+| 🟠 High | 42 |
+| 🟡 Medium | 13 |
+| 🟢 Low | 286 |
+| **Total** | **363** |
+| Auto-fixable | 313 |
+
+## By Category
+
+| Category | Gaps |
+|----------|------|
+| Combo Pages | 241 |
+| Operators | 61 |
+| Events | 45 |
+| Activities | 7 |
+| Journal | 5 |
+| Activity Types | 3 |
+| Regions | 1 |
+
+## Operators
+
+- 🔴 **Operator "Adventures Wales" missing: no cover image, no logo, no phone, no email**
+  - Page: `/directory/adventures-wales`
+  - Fix: Fill 4 missing fields
+- 🔴 **Operator "Afan Forest Park" missing: no cover image, no logo, no phone, no email**
+  - Page: `/directory/afan-forest-park`
+  - Fix: Fill 4 missing fields
+- 🔴 **Operator "Celtic Trail Cycle Shuttle" missing: no cover image, no logo, no coordinates, no Google rating**
+  - Page: `/directory/celtic-trail-shuttle`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Cwmcarn Forest" missing: no cover image, no logo, no phone, no email**
+  - Page: `/directory/cwmcarn-forest`
+  - Fix: Fill 4 missing fields
+- 🔴 **Operator "Gethin Woods (Bike Park Merthyr)" missing: no cover image, no logo, no phone, no email**
+  - Page: `/directory/gethin-woods-bike-park`
+  - Fix: Fill 4 missing fields
+- 🔴 **Operator "Gigrin Farm Red Kite Feeding" missing: no cover image, no logo, no phone, no email**
+  - Page: `/directory/gigrin-farm`
+  - Fix: Fill 4 missing fields
+- 🔴 **Operator "Grange Trekking Centre" missing: no cover image, no logo, no phone, no email**
+  - Page: `/directory/grange-trekking-centre`
+  - Fix: Fill 4 missing fields
+- 🔴 **Operator "Heatherton World of Activities" missing: no cover image, no logo, no phone, no email**
+  - Page: `/directory/heatherton-world-of-activities`
+  - Fix: Fill 4 missing fields
+- 🔴 **Operator "Hell's Mouth Surf School" missing: no cover image, no logo, no phone, no email**
+  - Page: `/directory/hells-mouth-surf-school`
+  - Fix: Fill 4 missing fields
+- 🔴 **Operator "Hell's Mouth Surf School" missing: no description, no cover image, no logo, no coordinates**
+  - Page: `/directory/hell-s-mouth-surf-school`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Llandysul Angling Association" missing: no cover image, no logo, no phone, no email, no Google rating**
+  - Page: `/directory/llandysul-angling-association`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Llŷn Adventures" missing: no description, no cover image, no logo, no coordinates**
+  - Page: `/directory/ll-n-adventures`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Llŷn Adventures" missing: no cover image, no logo, no phone, no email**
+  - Page: `/directory/llyn-adventures`
+  - Fix: Fill 4 missing fields
+- 🔴 **Operator "Ma Simes Surf Hut" missing: no cover image, no logo, no coordinates, no Google rating**
+  - Page: `/directory/ma-simes-surf-hut`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Paddles & Pedals" missing: no cover image, no logo, no coordinates, no Google rating**
+  - Page: `/directory/paddles-and-pedals`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Pembrokeshire Coastal Bus" missing: no cover image, no logo, no coordinates, no Google rating**
+  - Page: `/directory/pembrokeshire-coastal-bus`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Taskforce Paintball" missing: no cover image, no logo, no phone, no email**
+  - Page: `/directory/taskforce-paintball`
+  - Fix: Fill 4 missing fields
+- 🔴 **Operator "The Fishing Passport" missing: no cover image, no logo, no coordinates, no phone, no email, no Google rating**
+  - Page: `/directory/the-fishing-passport`
+  - Fix: Fill 6 missing fields *(auto-fixable)*
+- 🔴 **Operator "The Pen-y-Gwryd Hotel" missing: no cover image, no logo, no coordinates, no Google rating**
+  - Page: `/directory/pen-y-gwryd-hotel`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "The Pinnacle Café" missing: no cover image, no logo, no coordinates, no Google rating**
+  - Page: `/directory/pinnacle-cafe`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Trans Wales Trails" missing: no cover image, no logo, no phone, no email**
+  - Page: `/directory/trans-wales-trails`
+  - Fix: Fill 4 missing fields
+- 🔴 **Operator "Wildlife Trust of South & West Wales" missing: no cover image, no logo, no coordinates, no email**
+  - Page: `/directory/wildlife-trust-south-west-wales`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🟠 **Operator "AberAdventures" missing: no cover image, no logo**
+  - Page: `/directory/aberadventures`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Abersoch Sailing School" missing: no cover image, no logo**
+  - Page: `/directory/abersoch-sailing-school`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Abersoch Watersports" missing: no cover image, no logo**
+  - Page: `/directory/abersoch-watersports`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Activity Pembrokeshire" missing: no cover image, no logo**
+  - Page: `/directory/activity-pembrokeshire`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Adventure Britain" missing: no cover image, no logo**
+  - Page: `/directory/adventure-britain`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Adventures Wales" missing: no cover image, no logo**
+  - Page: `/directory/adventures-wales`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Anglesey Adventures" missing: no cover image, no logo**
+  - Page: `/directory/anglesey-adventures`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Antur Stiniog" missing: no cover image, no logo**
+  - Page: `/directory/antur-stiniog`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Beics Betws" missing: no cover image, no logo, no coordinates**
+  - Page: `/directory/beics-betws`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "BikePark Wales" missing: no cover image, no logo**
+  - Page: `/directory/bikepark-wales`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Black Mountain Adventure" missing: no cover image, no logo**
+  - Page: `/directory/black-mountain-adventure`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Caffi Caban" missing: no cover image, no logo, no coordinates**
+  - Page: `/directory/caffi-caban`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Cantref Riding Centre" missing: no cover image, no logo, no email**
+  - Page: `/directory/cantref-riding-centre`
+  - Fix: Fill 3 missing fields
+- 🟠 **Operator "Coed y Brenin (NRW)" missing: no cover image, no logo**
+  - Page: `/directory/coed-y-brenin-nrw`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Funsport Rhosneigr" missing: no cover image, no logo**
+  - Page: `/directory/funsport-rhosneigr`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Gecko Surf" missing: no cover image, no logo**
+  - Page: `/directory/gecko-surf`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Gower Activity Centres" missing: no cover image, no logo**
+  - Page: `/directory/gower-activity-centres`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Llangennith Surf School" missing: no cover image, no logo**
+  - Page: `/directory/llangennith-surf-school`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Llangorse Multi Activity Centre" missing: no cover image, no logo**
+  - Page: `/directory/llangorse-multi-activity-centre`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "MUUK Adventures" missing: no cover image, no logo**
+  - Page: `/directory/muuk-adventures`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Meadow Springs" missing: no cover image, no logo**
+  - Page: `/directory/meadow-springs`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "MountainXperience" missing: no cover image, no logo**
+  - Page: `/directory/mountainxperience`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "One Planet Adventure (Llandegla)" missing: no cover image, no logo**
+  - Page: `/directory/one-planet-adventure-llandegla`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Outer Reef Surf School" missing: no cover image, no logo**
+  - Page: `/directory/outer-reef-surf-school`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Oxwich Watersports" missing: no cover image, no logo**
+  - Page: `/directory/oxwich-watersports`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Plas Menai" missing: no cover image, no logo**
+  - Page: `/directory/plas-menai`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Plas y Brenin" missing: no cover image, no logo**
+  - Page: `/directory/plas-y-brenin`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Preseli Venture" missing: no cover image, no logo**
+  - Page: `/directory/preseli-venture`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Pro Kitesurfing" missing: no cover image, no logo**
+  - Page: `/directory/pro-kitesurfing`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Quest Adventure" missing: no cover image, no logo**
+  - Page: `/directory/quest-adventure`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Rip N Rock" missing: no cover image, no logo**
+  - Page: `/directory/rip-n-rock`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Sealyham Activity Centre" missing: no cover image, no logo**
+  - Page: `/directory/sealyham-activity-centre`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Snowdon Sherpa" missing: no cover image, no logo, no coordinates**
+  - Page: `/directory/snowdon-sherpa`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Snowdonia Mountain Guides" missing: no cover image, no logo**
+  - Page: `/directory/snowdonia-mountain-guides`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Summit to Sea Hire" missing: no cover image, no logo, no coordinates**
+  - Page: `/directory/summit-to-sea-hire`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "TYF Adventure" missing: no cover image, no logo**
+  - Page: `/directory/tyf-adventure`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Tenby Adventure" missing: no cover image, no logo**
+  - Page: `/directory/tenby-adventure`
+  - Fix: Fill 2 missing fields
+- 🟠 **Operator "The Stackpole Inn" missing: no cover image, no logo, no coordinates**
+  - Page: `/directory/stackpole-inn`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Zip World" missing: no cover image, no logo**
+  - Page: `/directory/zip-world`
+  - Fix: Fill 2 missing fields
+
+## Activity Types
+
+- 🟠 **Activity type "Scenic Railway" has 0 activities**
+  - Page: `/activities?type=scenic-railway`
+  - Fix: Seed activities for this type or remove type *(auto-fixable)*
+- 🟠 **Activity type "Running" has 0 activities**
+  - Page: `/activities?type=running`
+  - Fix: Seed activities for this type or remove type *(auto-fixable)*
+- 🟠 **Activity type "Gorge Walking" has 0 activities**
+  - Page: `/activities?type=gorge-walking`
+  - Fix: Seed activities for this type or remove type *(auto-fixable)*
+
+## Activities
+
+- 🟡 **Activity "Ropes Course" has 55 char description (min 100)**
+  - Page: `/activities/ropes-course`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Kayak Rental" has 71 char description (min 100)**
+  - Page: `/activities/kayak-rental`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Blade Trail" has 81 char description (min 100)**
+  - Page: `/activities/afan-blade-trail`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "RYA Start Windsurfing" has 86 char description (min 100)**
+  - Page: `/activities/rya-start-windsurfing`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Gethin Woods - Uplift DH" has 87 char description (min 100)**
+  - Page: `/activities/gethin-woods-uplift-dh`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Y Wal Trail" has 95 char description (min 100)**
+  - Page: `/activities/afan-y-wal-trail`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Penhydd Trail" has 99 char description (min 100)**
+  - Page: `/activities/afan-penhydd-trail`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+
+## Regions
+
+- 🟡 **Region "All Wales" has thin description**
+  - Page: `/all-wales`
+  - Fix: Write 200+ word region overview *(auto-fixable)*
+
+## Journal
+
+- 🟡 **Journal "10 Welsh Beaches That'll Make You Forget About Cornwall" missing hero image**
+  - Page: `/journal/welsh-beaches-forget-cornwall`
+  - Fix: Source or generate article hero image
+- 🟡 **Journal "Horse Riding in Wales: 5 Epic Trail Rides You Need to Try" missing hero image**
+  - Page: `/journal/horse-riding-wales-epic-trail-rides`
+  - Fix: Source or generate article hero image
+- 🟡 **Journal "Stag & Hen Party Adventures in Wales: Beyond the Pub Crawl" missing hero image**
+  - Page: `/journal/stag-hen-party-adventures-wales`
+  - Fix: Source or generate article hero image
+- 🟡 **Journal "The Complete Guide to Sea Fishing in Wales" missing hero image**
+  - Page: `/journal/complete-guide-sea-fishing-wales`
+  - Fix: Source or generate article hero image
+- 🟡 **Journal "Wales' Best Wildlife Encounters: From Puffins to Red Kites" missing hero image**
+  - Page: `/journal/wales-best-wildlife-encounters`
+  - Fix: Source or generate article hero image
+
+## Events
+
+- 🟢 **Event "ABP Newport Marathon Festival" has thin description**
+  - Page: `/events/abp-newport-marathon-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Abersoch 10K" has thin description**
+  - Page: `/events/abersoch-10k`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Abersoch Dinghy Week" has thin description**
+  - Page: `/events/abersoch-dinghy-week`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Adventure Travel World Summit" has thin description**
+  - Page: `/events/adventure-travel-world-summit`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Anglesey Trail Half Marathon" has thin description**
+  - Page: `/events/anglesey-trail-half-marathon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Barry Island 10K" has thin description**
+  - Page: `/events/barry-island-10k`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Beast of the Beacons" has thin description**
+  - Page: `/events/beast-of-the-beacons`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Berghaus Dragon's Back Race" has thin description**
+  - Page: `/events/berghaus-dragon-s-back-race`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Caerphilly Trail Races" has thin description**
+  - Page: `/events/caerphilly-trail-races`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Cardiff Bay Water Festival" has thin description**
+  - Page: `/events/cardiff-bay-water-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Cardiff Half Marathon" has thin description**
+  - Page: `/events/cardiff-half-marathon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Chepstow Running Festival" has thin description**
+  - Page: `/events/chepstow-running-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Coed y Brenin Enduro" has thin description**
+  - Page: `/events/coed-y-brenin-enduro`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Conwy Half Marathon" has thin description**
+  - Page: `/events/conwy-half-marathon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Dragon Ride" has thin description**
+  - Page: `/events/dragon-ride`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Dragons Back Race" has thin description**
+  - Page: `/events/dragons-back-race`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Etape Eryri" has thin description**
+  - Page: `/events/etape-eryri`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Great Welsh Marathon & Half" has thin description**
+  - Page: `/events/great-welsh-marathon-half`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Green Man Festival" has thin description**
+  - Page: `/events/green-man-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "IRONKIDS Wales" has thin description**
+  - Page: `/events/ironkids-wales`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "IRONMAN Wales" has thin description**
+  - Page: `/events/ironman-wales`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Jones O Gymru Anglesey Half Marathon" has thin description**
+  - Page: `/events/jones-o-gymru-anglesey-half-marathon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llandudno Triathlon" has thin description**
+  - Page: `/events/llandudno-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llanelli Half Marathon & 10K" has thin description**
+  - Page: `/events/llanelli-half-marathon-10k`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Man vs Horse Marathon" has thin description**
+  - Page: `/events/man-vs-horse-marathon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Medieval Backyard Ultra" has thin description**
+  - Page: `/events/medieval-backyard-ultra`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Nick Beer Llandudno 10K" has thin description**
+  - Page: `/events/nick-beer-llandudno-10k`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Ogwen Yr Helgi Du" has thin description**
+  - Page: `/events/ogwen-yr-helgi-du`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Pembrokeshire Coast Path Festival" has thin description**
+  - Page: `/events/pembrokeshire-coast-path-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Pendine Sands Races" has thin description**
+  - Page: `/events/pendine-sands-races`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Radyr Trail Races" has thin description**
+  - Page: `/events/radyr-trail-races`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Red Bull Hardline" has thin description**
+  - Page: `/events/red-bull-hardline`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Red Warrior Challenge" has thin description**
+  - Page: `/events/red-warrior-challenge`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Rhosneigr Wave Classic" has thin description**
+  - Page: `/events/rhosneigr-wave-classic`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "SheUltra" has thin description**
+  - Page: `/events/sheultra`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Snowdonia Walking Festival" has thin description**
+  - Page: `/events/snowdonia-walking-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Swansea Half Marathon" has thin description**
+  - Page: `/events/swansea-half-marathon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Tour of Britain (Wales Stages)" has thin description**
+  - Page: `/events/tour-of-britain-wales-stages`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Trail Marathon Wales" has thin description**
+  - Page: `/events/trail-marathon-wales`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Trails & Tarmac Winter Backyard Ultra" has thin description**
+  - Page: `/events/trails-tarmac-winter-backyard-ultra`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Wakestock" has thin description**
+  - Page: `/events/wakestock`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Wales Coast Path Festival" has thin description**
+  - Page: `/events/wales-coast-path-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Welsh Gravity Enduro Series" has thin description**
+  - Page: `/events/welsh-gravity-enduro-series`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Welsh One Day Hill Climb" has thin description**
+  - Page: `/events/welsh-one-day-hill-climb`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "World Bog Snorkelling Championships" has thin description**
+  - Page: `/events/world-bog-snorkelling-championships`
+  - Fix: Write proper event description *(auto-fixable)*
+
+## Combo Pages
+
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/coasteering`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/surfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/climbing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/wild-swimming`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/coasteering`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/surfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/mountain-biking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/climbing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/pembrokeshire/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/hiking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/coasteering`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/mountain-biking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/climbing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/wild-swimming`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/hiking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/coasteering`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/surfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/wild-swimming`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/coasteering`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/surfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/mountain-biking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/climbing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/wild-swimming`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/coasteering`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/surfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/climbing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/hiking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/surfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/mountain-biking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/climbing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/anglesey/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/mountain-biking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/climbing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/coasteering`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/surfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/mountain-biking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/climbing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/wild-swimming`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/carmarthenshire/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/hiking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/coasteering`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/climbing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/wild-swimming`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/hiking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/coasteering`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/surfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/mountain-biking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/climbing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/wild-swimming`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+

@@ -1,0 +1,3289 @@
+{
+  "generatedAt": "2026-02-05T19:59:03.333Z",
+  "stats": {
+    "total": 363,
+    "critical": 22,
+    "high": 42,
+    "medium": 13,
+    "low": 286,
+    "autoFixable": 313,
+    "byCategory": {
+      "Operators": 61,
+      "Activity Types": 3,
+      "Activities": 7,
+      "Regions": 1,
+      "Journal": 5,
+      "Events": 45,
+      "Combo Pages": 241
+    }
+  },
+  "gaps": [
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/adventures-wales",
+      "slug": "adventures-wales",
+      "issue": "Operator \"Adventures Wales\" missing: no cover image, no logo, no phone, no email",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/afan-forest-park",
+      "slug": "afan-forest-park",
+      "issue": "Operator \"Afan Forest Park\" missing: no cover image, no logo, no phone, no email",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/celtic-trail-shuttle",
+      "slug": "celtic-trail-shuttle",
+      "issue": "Operator \"Celtic Trail Cycle Shuttle\" missing: no cover image, no logo, no coordinates, no Google rating",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/cwmcarn-forest",
+      "slug": "cwmcarn-forest",
+      "issue": "Operator \"Cwmcarn Forest\" missing: no cover image, no logo, no phone, no email",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/gethin-woods-bike-park",
+      "slug": "gethin-woods-bike-park",
+      "issue": "Operator \"Gethin Woods (Bike Park Merthyr)\" missing: no cover image, no logo, no phone, no email",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/gigrin-farm",
+      "slug": "gigrin-farm",
+      "issue": "Operator \"Gigrin Farm Red Kite Feeding\" missing: no cover image, no logo, no phone, no email",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/grange-trekking-centre",
+      "slug": "grange-trekking-centre",
+      "issue": "Operator \"Grange Trekking Centre\" missing: no cover image, no logo, no phone, no email",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/heatherton-world-of-activities",
+      "slug": "heatherton-world-of-activities",
+      "issue": "Operator \"Heatherton World of Activities\" missing: no cover image, no logo, no phone, no email",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/hells-mouth-surf-school",
+      "slug": "hells-mouth-surf-school",
+      "issue": "Operator \"Hell's Mouth Surf School\" missing: no cover image, no logo, no phone, no email",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/hell-s-mouth-surf-school",
+      "slug": "hell-s-mouth-surf-school",
+      "issue": "Operator \"Hell's Mouth Surf School\" missing: no description, no cover image, no logo, no coordinates",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/llandysul-angling-association",
+      "slug": "llandysul-angling-association",
+      "issue": "Operator \"Llandysul Angling Association\" missing: no cover image, no logo, no phone, no email, no Google rating",
+      "fix": "Fill 5 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/ll-n-adventures",
+      "slug": "ll-n-adventures",
+      "issue": "Operator \"Llŷn Adventures\" missing: no description, no cover image, no logo, no coordinates",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/llyn-adventures",
+      "slug": "llyn-adventures",
+      "issue": "Operator \"Llŷn Adventures\" missing: no cover image, no logo, no phone, no email",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/ma-simes-surf-hut",
+      "slug": "ma-simes-surf-hut",
+      "issue": "Operator \"Ma Simes Surf Hut\" missing: no cover image, no logo, no coordinates, no Google rating",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/paddles-and-pedals",
+      "slug": "paddles-and-pedals",
+      "issue": "Operator \"Paddles & Pedals\" missing: no cover image, no logo, no coordinates, no Google rating",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/pembrokeshire-coastal-bus",
+      "slug": "pembrokeshire-coastal-bus",
+      "issue": "Operator \"Pembrokeshire Coastal Bus\" missing: no cover image, no logo, no coordinates, no Google rating",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/taskforce-paintball",
+      "slug": "taskforce-paintball",
+      "issue": "Operator \"Taskforce Paintball\" missing: no cover image, no logo, no phone, no email",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/the-fishing-passport",
+      "slug": "the-fishing-passport",
+      "issue": "Operator \"The Fishing Passport\" missing: no cover image, no logo, no coordinates, no phone, no email, no Google rating",
+      "fix": "Fill 6 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/pen-y-gwryd-hotel",
+      "slug": "pen-y-gwryd-hotel",
+      "issue": "Operator \"The Pen-y-Gwryd Hotel\" missing: no cover image, no logo, no coordinates, no Google rating",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/pinnacle-cafe",
+      "slug": "pinnacle-cafe",
+      "issue": "Operator \"The Pinnacle Café\" missing: no cover image, no logo, no coordinates, no Google rating",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/trans-wales-trails",
+      "slug": "trans-wales-trails",
+      "issue": "Operator \"Trans Wales Trails\" missing: no cover image, no logo, no phone, no email",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "critical",
+      "page": "/directory/wildlife-trust-south-west-wales",
+      "slug": "wildlife-trust-south-west-wales",
+      "issue": "Operator \"Wildlife Trust of South & West Wales\" missing: no cover image, no logo, no coordinates, no email",
+      "fix": "Fill 4 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Activity Types",
+      "severity": "high",
+      "page": "/activities?type=scenic-railway",
+      "slug": "scenic-railway",
+      "issue": "Activity type \"Scenic Railway\" has 0 activities",
+      "fix": "Seed activities for this type or remove type",
+      "autoFixable": true
+    },
+    {
+      "category": "Activity Types",
+      "severity": "high",
+      "page": "/activities?type=running",
+      "slug": "running",
+      "issue": "Activity type \"Running\" has 0 activities",
+      "fix": "Seed activities for this type or remove type",
+      "autoFixable": true
+    },
+    {
+      "category": "Activity Types",
+      "severity": "high",
+      "page": "/activities?type=gorge-walking",
+      "slug": "gorge-walking",
+      "issue": "Activity type \"Gorge Walking\" has 0 activities",
+      "fix": "Seed activities for this type or remove type",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/aberadventures",
+      "slug": "aberadventures",
+      "issue": "Operator \"AberAdventures\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/abersoch-sailing-school",
+      "slug": "abersoch-sailing-school",
+      "issue": "Operator \"Abersoch Sailing School\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/abersoch-watersports",
+      "slug": "abersoch-watersports",
+      "issue": "Operator \"Abersoch Watersports\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/activity-pembrokeshire",
+      "slug": "activity-pembrokeshire",
+      "issue": "Operator \"Activity Pembrokeshire\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/adventure-britain",
+      "slug": "adventure-britain",
+      "issue": "Operator \"Adventure Britain\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/adventures-wales",
+      "slug": "adventures-wales",
+      "issue": "Operator \"Adventures Wales\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/anglesey-adventures",
+      "slug": "anglesey-adventures",
+      "issue": "Operator \"Anglesey Adventures\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/antur-stiniog",
+      "slug": "antur-stiniog",
+      "issue": "Operator \"Antur Stiniog\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/beics-betws",
+      "slug": "beics-betws",
+      "issue": "Operator \"Beics Betws\" missing: no cover image, no logo, no coordinates",
+      "fix": "Fill 3 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/bikepark-wales",
+      "slug": "bikepark-wales",
+      "issue": "Operator \"BikePark Wales\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/black-mountain-adventure",
+      "slug": "black-mountain-adventure",
+      "issue": "Operator \"Black Mountain Adventure\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/caffi-caban",
+      "slug": "caffi-caban",
+      "issue": "Operator \"Caffi Caban\" missing: no cover image, no logo, no coordinates",
+      "fix": "Fill 3 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/cantref-riding-centre",
+      "slug": "cantref-riding-centre",
+      "issue": "Operator \"Cantref Riding Centre\" missing: no cover image, no logo, no email",
+      "fix": "Fill 3 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/coed-y-brenin-nrw",
+      "slug": "coed-y-brenin-nrw",
+      "issue": "Operator \"Coed y Brenin (NRW)\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/funsport-rhosneigr",
+      "slug": "funsport-rhosneigr",
+      "issue": "Operator \"Funsport Rhosneigr\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/gecko-surf",
+      "slug": "gecko-surf",
+      "issue": "Operator \"Gecko Surf\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/gower-activity-centres",
+      "slug": "gower-activity-centres",
+      "issue": "Operator \"Gower Activity Centres\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/llangennith-surf-school",
+      "slug": "llangennith-surf-school",
+      "issue": "Operator \"Llangennith Surf School\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/llangorse-multi-activity-centre",
+      "slug": "llangorse-multi-activity-centre",
+      "issue": "Operator \"Llangorse Multi Activity Centre\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/muuk-adventures",
+      "slug": "muuk-adventures",
+      "issue": "Operator \"MUUK Adventures\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/meadow-springs",
+      "slug": "meadow-springs",
+      "issue": "Operator \"Meadow Springs\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/mountainxperience",
+      "slug": "mountainxperience",
+      "issue": "Operator \"MountainXperience\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/one-planet-adventure-llandegla",
+      "slug": "one-planet-adventure-llandegla",
+      "issue": "Operator \"One Planet Adventure (Llandegla)\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/outer-reef-surf-school",
+      "slug": "outer-reef-surf-school",
+      "issue": "Operator \"Outer Reef Surf School\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/oxwich-watersports",
+      "slug": "oxwich-watersports",
+      "issue": "Operator \"Oxwich Watersports\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/plas-menai",
+      "slug": "plas-menai",
+      "issue": "Operator \"Plas Menai\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/plas-y-brenin",
+      "slug": "plas-y-brenin",
+      "issue": "Operator \"Plas y Brenin\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/preseli-venture",
+      "slug": "preseli-venture",
+      "issue": "Operator \"Preseli Venture\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/pro-kitesurfing",
+      "slug": "pro-kitesurfing",
+      "issue": "Operator \"Pro Kitesurfing\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/quest-adventure",
+      "slug": "quest-adventure",
+      "issue": "Operator \"Quest Adventure\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/rip-n-rock",
+      "slug": "rip-n-rock",
+      "issue": "Operator \"Rip N Rock\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/sealyham-activity-centre",
+      "slug": "sealyham-activity-centre",
+      "issue": "Operator \"Sealyham Activity Centre\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/snowdon-sherpa",
+      "slug": "snowdon-sherpa",
+      "issue": "Operator \"Snowdon Sherpa\" missing: no cover image, no logo, no coordinates",
+      "fix": "Fill 3 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/snowdonia-mountain-guides",
+      "slug": "snowdonia-mountain-guides",
+      "issue": "Operator \"Snowdonia Mountain Guides\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/summit-to-sea-hire",
+      "slug": "summit-to-sea-hire",
+      "issue": "Operator \"Summit to Sea Hire\" missing: no cover image, no logo, no coordinates",
+      "fix": "Fill 3 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/tyf-adventure",
+      "slug": "tyf-adventure",
+      "issue": "Operator \"TYF Adventure\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/tenby-adventure",
+      "slug": "tenby-adventure",
+      "issue": "Operator \"Tenby Adventure\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/stackpole-inn",
+      "slug": "stackpole-inn",
+      "issue": "Operator \"The Stackpole Inn\" missing: no cover image, no logo, no coordinates",
+      "fix": "Fill 3 missing fields",
+      "autoFixable": true
+    },
+    {
+      "category": "Operators",
+      "severity": "high",
+      "page": "/directory/zip-world",
+      "slug": "zip-world",
+      "issue": "Operator \"Zip World\" missing: no cover image, no logo",
+      "fix": "Fill 2 missing fields",
+      "autoFixable": false
+    },
+    {
+      "category": "Activities",
+      "severity": "medium",
+      "page": "/activities/ropes-course",
+      "slug": "ropes-course",
+      "issue": "Activity \"Ropes Course\" has 55 char description (min 100)",
+      "fix": "Generate or write a proper description",
+      "autoFixable": true
+    },
+    {
+      "category": "Activities",
+      "severity": "medium",
+      "page": "/activities/kayak-rental",
+      "slug": "kayak-rental",
+      "issue": "Activity \"Kayak Rental\" has 71 char description (min 100)",
+      "fix": "Generate or write a proper description",
+      "autoFixable": true
+    },
+    {
+      "category": "Activities",
+      "severity": "medium",
+      "page": "/activities/afan-blade-trail",
+      "slug": "afan-blade-trail",
+      "issue": "Activity \"Blade Trail\" has 81 char description (min 100)",
+      "fix": "Generate or write a proper description",
+      "autoFixable": true
+    },
+    {
+      "category": "Activities",
+      "severity": "medium",
+      "page": "/activities/rya-start-windsurfing",
+      "slug": "rya-start-windsurfing",
+      "issue": "Activity \"RYA Start Windsurfing\" has 86 char description (min 100)",
+      "fix": "Generate or write a proper description",
+      "autoFixable": true
+    },
+    {
+      "category": "Activities",
+      "severity": "medium",
+      "page": "/activities/gethin-woods-uplift-dh",
+      "slug": "gethin-woods-uplift-dh",
+      "issue": "Activity \"Gethin Woods - Uplift DH\" has 87 char description (min 100)",
+      "fix": "Generate or write a proper description",
+      "autoFixable": true
+    },
+    {
+      "category": "Activities",
+      "severity": "medium",
+      "page": "/activities/afan-y-wal-trail",
+      "slug": "afan-y-wal-trail",
+      "issue": "Activity \"Y Wal Trail\" has 95 char description (min 100)",
+      "fix": "Generate or write a proper description",
+      "autoFixable": true
+    },
+    {
+      "category": "Activities",
+      "severity": "medium",
+      "page": "/activities/afan-penhydd-trail",
+      "slug": "afan-penhydd-trail",
+      "issue": "Activity \"Penhydd Trail\" has 99 char description (min 100)",
+      "fix": "Generate or write a proper description",
+      "autoFixable": true
+    },
+    {
+      "category": "Regions",
+      "severity": "medium",
+      "page": "/all-wales",
+      "slug": "all-wales",
+      "issue": "Region \"All Wales\" has thin description",
+      "fix": "Write 200+ word region overview",
+      "autoFixable": true
+    },
+    {
+      "category": "Journal",
+      "severity": "medium",
+      "page": "/journal/welsh-beaches-forget-cornwall",
+      "slug": "welsh-beaches-forget-cornwall",
+      "issue": "Journal \"10 Welsh Beaches That'll Make You Forget About Cornwall\" missing hero image",
+      "fix": "Source or generate article hero image",
+      "autoFixable": false
+    },
+    {
+      "category": "Journal",
+      "severity": "medium",
+      "page": "/journal/horse-riding-wales-epic-trail-rides",
+      "slug": "horse-riding-wales-epic-trail-rides",
+      "issue": "Journal \"Horse Riding in Wales: 5 Epic Trail Rides You Need to Try\" missing hero image",
+      "fix": "Source or generate article hero image",
+      "autoFixable": false
+    },
+    {
+      "category": "Journal",
+      "severity": "medium",
+      "page": "/journal/stag-hen-party-adventures-wales",
+      "slug": "stag-hen-party-adventures-wales",
+      "issue": "Journal \"Stag & Hen Party Adventures in Wales: Beyond the Pub Crawl\" missing hero image",
+      "fix": "Source or generate article hero image",
+      "autoFixable": false
+    },
+    {
+      "category": "Journal",
+      "severity": "medium",
+      "page": "/journal/complete-guide-sea-fishing-wales",
+      "slug": "complete-guide-sea-fishing-wales",
+      "issue": "Journal \"The Complete Guide to Sea Fishing in Wales\" missing hero image",
+      "fix": "Source or generate article hero image",
+      "autoFixable": false
+    },
+    {
+      "category": "Journal",
+      "severity": "medium",
+      "page": "/journal/wales-best-wildlife-encounters",
+      "slug": "wales-best-wildlife-encounters",
+      "issue": "Journal \"Wales' Best Wildlife Encounters: From Puffins to Red Kites\" missing hero image",
+      "fix": "Source or generate article hero image",
+      "autoFixable": false
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/abp-newport-marathon-festival",
+      "slug": "abp-newport-marathon-festival",
+      "issue": "Event \"ABP Newport Marathon Festival\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/abersoch-10k",
+      "slug": "abersoch-10k",
+      "issue": "Event \"Abersoch 10K\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/abersoch-dinghy-week",
+      "slug": "abersoch-dinghy-week",
+      "issue": "Event \"Abersoch Dinghy Week\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/adventure-travel-world-summit",
+      "slug": "adventure-travel-world-summit",
+      "issue": "Event \"Adventure Travel World Summit\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/anglesey-trail-half-marathon",
+      "slug": "anglesey-trail-half-marathon",
+      "issue": "Event \"Anglesey Trail Half Marathon\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/barry-island-10k",
+      "slug": "barry-island-10k",
+      "issue": "Event \"Barry Island 10K\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/beast-of-the-beacons",
+      "slug": "beast-of-the-beacons",
+      "issue": "Event \"Beast of the Beacons\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/berghaus-dragon-s-back-race",
+      "slug": "berghaus-dragon-s-back-race",
+      "issue": "Event \"Berghaus Dragon's Back Race\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/caerphilly-trail-races",
+      "slug": "caerphilly-trail-races",
+      "issue": "Event \"Caerphilly Trail Races\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/cardiff-bay-water-festival",
+      "slug": "cardiff-bay-water-festival",
+      "issue": "Event \"Cardiff Bay Water Festival\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/cardiff-half-marathon",
+      "slug": "cardiff-half-marathon",
+      "issue": "Event \"Cardiff Half Marathon\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/chepstow-running-festival",
+      "slug": "chepstow-running-festival",
+      "issue": "Event \"Chepstow Running Festival\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/coed-y-brenin-enduro",
+      "slug": "coed-y-brenin-enduro",
+      "issue": "Event \"Coed y Brenin Enduro\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/conwy-half-marathon",
+      "slug": "conwy-half-marathon",
+      "issue": "Event \"Conwy Half Marathon\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/dragon-ride",
+      "slug": "dragon-ride",
+      "issue": "Event \"Dragon Ride\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/dragons-back-race",
+      "slug": "dragons-back-race",
+      "issue": "Event \"Dragons Back Race\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/etape-eryri",
+      "slug": "etape-eryri",
+      "issue": "Event \"Etape Eryri\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/great-welsh-marathon-half",
+      "slug": "great-welsh-marathon-half",
+      "issue": "Event \"Great Welsh Marathon & Half\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/green-man-festival",
+      "slug": "green-man-festival",
+      "issue": "Event \"Green Man Festival\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/ironkids-wales",
+      "slug": "ironkids-wales",
+      "issue": "Event \"IRONKIDS Wales\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/ironman-wales",
+      "slug": "ironman-wales",
+      "issue": "Event \"IRONMAN Wales\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/jones-o-gymru-anglesey-half-marathon",
+      "slug": "jones-o-gymru-anglesey-half-marathon",
+      "issue": "Event \"Jones O Gymru Anglesey Half Marathon\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/llandudno-triathlon",
+      "slug": "llandudno-triathlon",
+      "issue": "Event \"Llandudno Triathlon\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/llanelli-half-marathon-10k",
+      "slug": "llanelli-half-marathon-10k",
+      "issue": "Event \"Llanelli Half Marathon & 10K\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/man-vs-horse-marathon",
+      "slug": "man-vs-horse-marathon",
+      "issue": "Event \"Man vs Horse Marathon\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/medieval-backyard-ultra",
+      "slug": "medieval-backyard-ultra",
+      "issue": "Event \"Medieval Backyard Ultra\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/nick-beer-llandudno-10k",
+      "slug": "nick-beer-llandudno-10k",
+      "issue": "Event \"Nick Beer Llandudno 10K\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/ogwen-yr-helgi-du",
+      "slug": "ogwen-yr-helgi-du",
+      "issue": "Event \"Ogwen Yr Helgi Du\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/pembrokeshire-coast-path-festival",
+      "slug": "pembrokeshire-coast-path-festival",
+      "issue": "Event \"Pembrokeshire Coast Path Festival\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/pendine-sands-races",
+      "slug": "pendine-sands-races",
+      "issue": "Event \"Pendine Sands Races\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/radyr-trail-races",
+      "slug": "radyr-trail-races",
+      "issue": "Event \"Radyr Trail Races\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/red-bull-hardline",
+      "slug": "red-bull-hardline",
+      "issue": "Event \"Red Bull Hardline\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/red-warrior-challenge",
+      "slug": "red-warrior-challenge",
+      "issue": "Event \"Red Warrior Challenge\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/rhosneigr-wave-classic",
+      "slug": "rhosneigr-wave-classic",
+      "issue": "Event \"Rhosneigr Wave Classic\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/sheultra",
+      "slug": "sheultra",
+      "issue": "Event \"SheUltra\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/snowdonia-walking-festival",
+      "slug": "snowdonia-walking-festival",
+      "issue": "Event \"Snowdonia Walking Festival\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/swansea-half-marathon",
+      "slug": "swansea-half-marathon",
+      "issue": "Event \"Swansea Half Marathon\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/tour-of-britain-wales-stages",
+      "slug": "tour-of-britain-wales-stages",
+      "issue": "Event \"Tour of Britain (Wales Stages)\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/trail-marathon-wales",
+      "slug": "trail-marathon-wales",
+      "issue": "Event \"Trail Marathon Wales\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/trails-tarmac-winter-backyard-ultra",
+      "slug": "trails-tarmac-winter-backyard-ultra",
+      "issue": "Event \"Trails & Tarmac Winter Backyard Ultra\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/wakestock",
+      "slug": "wakestock",
+      "issue": "Event \"Wakestock\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/wales-coast-path-festival",
+      "slug": "wales-coast-path-festival",
+      "issue": "Event \"Wales Coast Path Festival\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/welsh-gravity-enduro-series",
+      "slug": "welsh-gravity-enduro-series",
+      "issue": "Event \"Welsh Gravity Enduro Series\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/welsh-one-day-hill-climb",
+      "slug": "welsh-one-day-hill-climb",
+      "issue": "Event \"Welsh One Day Hill Climb\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Events",
+      "severity": "low",
+      "page": "/events/world-bog-snorkelling-championships",
+      "slug": "world-bog-snorkelling-championships",
+      "issue": "Event \"World Bog Snorkelling Championships\" has thin description",
+      "fix": "Write proper event description",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/zip-lining",
+      "slug": "mid-wales--zip-lining",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/coasteering",
+      "slug": "mid-wales--coasteering",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/sea-kayaking",
+      "slug": "mid-wales--sea-kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/surfing",
+      "slug": "mid-wales--surfing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/climbing",
+      "slug": "mid-wales--climbing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/caving",
+      "slug": "mid-wales--caving",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/wild-swimming",
+      "slug": "mid-wales--wild-swimming",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/kayaking",
+      "slug": "mid-wales--kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/canyoning",
+      "slug": "mid-wales--canyoning",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/sup",
+      "slug": "mid-wales--sup",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/running",
+      "slug": "mid-wales--running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/trail-running",
+      "slug": "mid-wales--trail-running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/gorge-walking",
+      "slug": "mid-wales--gorge-walking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/underground-trampolines",
+      "slug": "mid-wales--underground-trampolines",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/toboggan",
+      "slug": "mid-wales--toboggan",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/scenic-railway",
+      "slug": "mid-wales--scenic-railway",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/horse-riding",
+      "slug": "mid-wales--horse-riding",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/fishing",
+      "slug": "mid-wales--fishing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/wildlife-birdwatching",
+      "slug": "mid-wales--wildlife-birdwatching",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/paintball-laser-tag",
+      "slug": "mid-wales--paintball-laser-tag",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/mid-wales/things-to-do/beaches",
+      "slug": "mid-wales--beaches",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/snowdonia/things-to-do/coasteering",
+      "slug": "snowdonia--coasteering",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/snowdonia/things-to-do/sea-kayaking",
+      "slug": "snowdonia--sea-kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/snowdonia/things-to-do/surfing",
+      "slug": "snowdonia--surfing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/snowdonia/things-to-do/kayaking",
+      "slug": "snowdonia--kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/snowdonia/things-to-do/canyoning",
+      "slug": "snowdonia--canyoning",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/snowdonia/things-to-do/sup",
+      "slug": "snowdonia--sup",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/snowdonia/things-to-do/running",
+      "slug": "snowdonia--running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/snowdonia/things-to-do/underground-trampolines",
+      "slug": "snowdonia--underground-trampolines",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/snowdonia/things-to-do/toboggan",
+      "slug": "snowdonia--toboggan",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/snowdonia/things-to-do/scenic-railway",
+      "slug": "snowdonia--scenic-railway",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/snowdonia/things-to-do/horse-riding",
+      "slug": "snowdonia--horse-riding",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/snowdonia/things-to-do/fishing",
+      "slug": "snowdonia--fishing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/snowdonia/things-to-do/wildlife-birdwatching",
+      "slug": "snowdonia--wildlife-birdwatching",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/snowdonia/things-to-do/paintball-laser-tag",
+      "slug": "snowdonia--paintball-laser-tag",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/snowdonia/things-to-do/beaches",
+      "slug": "snowdonia--beaches",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/zip-lining",
+      "slug": "pembrokeshire--zip-lining",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/sea-kayaking",
+      "slug": "pembrokeshire--sea-kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/mountain-biking",
+      "slug": "pembrokeshire--mountain-biking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/climbing",
+      "slug": "pembrokeshire--climbing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/caving",
+      "slug": "pembrokeshire--caving",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/canyoning",
+      "slug": "pembrokeshire--canyoning",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/sup",
+      "slug": "pembrokeshire--sup",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/running",
+      "slug": "pembrokeshire--running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/trail-running",
+      "slug": "pembrokeshire--trail-running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/gorge-walking",
+      "slug": "pembrokeshire--gorge-walking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/underground-trampolines",
+      "slug": "pembrokeshire--underground-trampolines",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/toboggan",
+      "slug": "pembrokeshire--toboggan",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/scenic-railway",
+      "slug": "pembrokeshire--scenic-railway",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/horse-riding",
+      "slug": "pembrokeshire--horse-riding",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/fishing",
+      "slug": "pembrokeshire--fishing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/wildlife-birdwatching",
+      "slug": "pembrokeshire--wildlife-birdwatching",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/paintball-laser-tag",
+      "slug": "pembrokeshire--paintball-laser-tag",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/pembrokeshire/things-to-do/beaches",
+      "slug": "pembrokeshire--beaches",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/zip-lining",
+      "slug": "llyn-peninsula--zip-lining",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/hiking",
+      "slug": "llyn-peninsula--hiking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/coasteering",
+      "slug": "llyn-peninsula--coasteering",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/sea-kayaking",
+      "slug": "llyn-peninsula--sea-kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/mountain-biking",
+      "slug": "llyn-peninsula--mountain-biking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/climbing",
+      "slug": "llyn-peninsula--climbing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/caving",
+      "slug": "llyn-peninsula--caving",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/wild-swimming",
+      "slug": "llyn-peninsula--wild-swimming",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/kayaking",
+      "slug": "llyn-peninsula--kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/canyoning",
+      "slug": "llyn-peninsula--canyoning",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/sup",
+      "slug": "llyn-peninsula--sup",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/running",
+      "slug": "llyn-peninsula--running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/trail-running",
+      "slug": "llyn-peninsula--trail-running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/gorge-walking",
+      "slug": "llyn-peninsula--gorge-walking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/underground-trampolines",
+      "slug": "llyn-peninsula--underground-trampolines",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/toboggan",
+      "slug": "llyn-peninsula--toboggan",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/scenic-railway",
+      "slug": "llyn-peninsula--scenic-railway",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/horse-riding",
+      "slug": "llyn-peninsula--horse-riding",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/fishing",
+      "slug": "llyn-peninsula--fishing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/wildlife-birdwatching",
+      "slug": "llyn-peninsula--wildlife-birdwatching",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/paintball-laser-tag",
+      "slug": "llyn-peninsula--paintball-laser-tag",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/llyn-peninsula/things-to-do/beaches",
+      "slug": "llyn-peninsula--beaches",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/zip-lining",
+      "slug": "north-wales--zip-lining",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/hiking",
+      "slug": "north-wales--hiking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/coasteering",
+      "slug": "north-wales--coasteering",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/sea-kayaking",
+      "slug": "north-wales--sea-kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/surfing",
+      "slug": "north-wales--surfing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/caving",
+      "slug": "north-wales--caving",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/wild-swimming",
+      "slug": "north-wales--wild-swimming",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/kayaking",
+      "slug": "north-wales--kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/canyoning",
+      "slug": "north-wales--canyoning",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/sup",
+      "slug": "north-wales--sup",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/running",
+      "slug": "north-wales--running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/trail-running",
+      "slug": "north-wales--trail-running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/gorge-walking",
+      "slug": "north-wales--gorge-walking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/underground-trampolines",
+      "slug": "north-wales--underground-trampolines",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/toboggan",
+      "slug": "north-wales--toboggan",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/scenic-railway",
+      "slug": "north-wales--scenic-railway",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/horse-riding",
+      "slug": "north-wales--horse-riding",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/fishing",
+      "slug": "north-wales--fishing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/wildlife-birdwatching",
+      "slug": "north-wales--wildlife-birdwatching",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/paintball-laser-tag",
+      "slug": "north-wales--paintball-laser-tag",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/north-wales/things-to-do/beaches",
+      "slug": "north-wales--beaches",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/zip-lining",
+      "slug": "wye-valley--zip-lining",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/coasteering",
+      "slug": "wye-valley--coasteering",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/sea-kayaking",
+      "slug": "wye-valley--sea-kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/surfing",
+      "slug": "wye-valley--surfing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/mountain-biking",
+      "slug": "wye-valley--mountain-biking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/climbing",
+      "slug": "wye-valley--climbing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/caving",
+      "slug": "wye-valley--caving",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/wild-swimming",
+      "slug": "wye-valley--wild-swimming",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/canyoning",
+      "slug": "wye-valley--canyoning",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/sup",
+      "slug": "wye-valley--sup",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/running",
+      "slug": "wye-valley--running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/trail-running",
+      "slug": "wye-valley--trail-running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/gorge-walking",
+      "slug": "wye-valley--gorge-walking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/underground-trampolines",
+      "slug": "wye-valley--underground-trampolines",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/toboggan",
+      "slug": "wye-valley--toboggan",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/scenic-railway",
+      "slug": "wye-valley--scenic-railway",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/horse-riding",
+      "slug": "wye-valley--horse-riding",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/fishing",
+      "slug": "wye-valley--fishing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/wildlife-birdwatching",
+      "slug": "wye-valley--wildlife-birdwatching",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/paintball-laser-tag",
+      "slug": "wye-valley--paintball-laser-tag",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/wye-valley/things-to-do/beaches",
+      "slug": "wye-valley--beaches",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/zip-lining",
+      "slug": "brecon-beacons--zip-lining",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/coasteering",
+      "slug": "brecon-beacons--coasteering",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/sea-kayaking",
+      "slug": "brecon-beacons--sea-kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/surfing",
+      "slug": "brecon-beacons--surfing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/climbing",
+      "slug": "brecon-beacons--climbing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/kayaking",
+      "slug": "brecon-beacons--kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/canyoning",
+      "slug": "brecon-beacons--canyoning",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/sup",
+      "slug": "brecon-beacons--sup",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/running",
+      "slug": "brecon-beacons--running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/trail-running",
+      "slug": "brecon-beacons--trail-running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/underground-trampolines",
+      "slug": "brecon-beacons--underground-trampolines",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/toboggan",
+      "slug": "brecon-beacons--toboggan",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/scenic-railway",
+      "slug": "brecon-beacons--scenic-railway",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/horse-riding",
+      "slug": "brecon-beacons--horse-riding",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/fishing",
+      "slug": "brecon-beacons--fishing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/wildlife-birdwatching",
+      "slug": "brecon-beacons--wildlife-birdwatching",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/paintball-laser-tag",
+      "slug": "brecon-beacons--paintball-laser-tag",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/brecon-beacons/things-to-do/beaches",
+      "slug": "brecon-beacons--beaches",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/zip-lining",
+      "slug": "anglesey--zip-lining",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/hiking",
+      "slug": "anglesey--hiking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/sea-kayaking",
+      "slug": "anglesey--sea-kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/surfing",
+      "slug": "anglesey--surfing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/mountain-biking",
+      "slug": "anglesey--mountain-biking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/climbing",
+      "slug": "anglesey--climbing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/caving",
+      "slug": "anglesey--caving",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/canyoning",
+      "slug": "anglesey--canyoning",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/sup",
+      "slug": "anglesey--sup",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/running",
+      "slug": "anglesey--running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/trail-running",
+      "slug": "anglesey--trail-running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/gorge-walking",
+      "slug": "anglesey--gorge-walking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/underground-trampolines",
+      "slug": "anglesey--underground-trampolines",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/toboggan",
+      "slug": "anglesey--toboggan",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/scenic-railway",
+      "slug": "anglesey--scenic-railway",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/horse-riding",
+      "slug": "anglesey--horse-riding",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/fishing",
+      "slug": "anglesey--fishing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/wildlife-birdwatching",
+      "slug": "anglesey--wildlife-birdwatching",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/paintball-laser-tag",
+      "slug": "anglesey--paintball-laser-tag",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/anglesey/things-to-do/beaches",
+      "slug": "anglesey--beaches",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/zip-lining",
+      "slug": "gower--zip-lining",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/sea-kayaking",
+      "slug": "gower--sea-kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/mountain-biking",
+      "slug": "gower--mountain-biking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/climbing",
+      "slug": "gower--climbing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/caving",
+      "slug": "gower--caving",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/kayaking",
+      "slug": "gower--kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/canyoning",
+      "slug": "gower--canyoning",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/sup",
+      "slug": "gower--sup",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/running",
+      "slug": "gower--running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/trail-running",
+      "slug": "gower--trail-running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/gorge-walking",
+      "slug": "gower--gorge-walking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/underground-trampolines",
+      "slug": "gower--underground-trampolines",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/toboggan",
+      "slug": "gower--toboggan",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/scenic-railway",
+      "slug": "gower--scenic-railway",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/horse-riding",
+      "slug": "gower--horse-riding",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/fishing",
+      "slug": "gower--fishing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/wildlife-birdwatching",
+      "slug": "gower--wildlife-birdwatching",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/paintball-laser-tag",
+      "slug": "gower--paintball-laser-tag",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/gower/things-to-do/beaches",
+      "slug": "gower--beaches",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/zip-lining",
+      "slug": "carmarthenshire--zip-lining",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/coasteering",
+      "slug": "carmarthenshire--coasteering",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/sea-kayaking",
+      "slug": "carmarthenshire--sea-kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/surfing",
+      "slug": "carmarthenshire--surfing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/mountain-biking",
+      "slug": "carmarthenshire--mountain-biking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/climbing",
+      "slug": "carmarthenshire--climbing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/caving",
+      "slug": "carmarthenshire--caving",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/wild-swimming",
+      "slug": "carmarthenshire--wild-swimming",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/kayaking",
+      "slug": "carmarthenshire--kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/canyoning",
+      "slug": "carmarthenshire--canyoning",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/sup",
+      "slug": "carmarthenshire--sup",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/running",
+      "slug": "carmarthenshire--running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/trail-running",
+      "slug": "carmarthenshire--trail-running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/gorge-walking",
+      "slug": "carmarthenshire--gorge-walking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/underground-trampolines",
+      "slug": "carmarthenshire--underground-trampolines",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/toboggan",
+      "slug": "carmarthenshire--toboggan",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/scenic-railway",
+      "slug": "carmarthenshire--scenic-railway",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/horse-riding",
+      "slug": "carmarthenshire--horse-riding",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/fishing",
+      "slug": "carmarthenshire--fishing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/wildlife-birdwatching",
+      "slug": "carmarthenshire--wildlife-birdwatching",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/paintball-laser-tag",
+      "slug": "carmarthenshire--paintball-laser-tag",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/carmarthenshire/things-to-do/beaches",
+      "slug": "carmarthenshire--beaches",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/zip-lining",
+      "slug": "south-wales--zip-lining",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/hiking",
+      "slug": "south-wales--hiking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/coasteering",
+      "slug": "south-wales--coasteering",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/sea-kayaking",
+      "slug": "south-wales--sea-kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/climbing",
+      "slug": "south-wales--climbing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/caving",
+      "slug": "south-wales--caving",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/wild-swimming",
+      "slug": "south-wales--wild-swimming",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/kayaking",
+      "slug": "south-wales--kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/canyoning",
+      "slug": "south-wales--canyoning",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/sup",
+      "slug": "south-wales--sup",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/running",
+      "slug": "south-wales--running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/trail-running",
+      "slug": "south-wales--trail-running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/gorge-walking",
+      "slug": "south-wales--gorge-walking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/underground-trampolines",
+      "slug": "south-wales--underground-trampolines",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/toboggan",
+      "slug": "south-wales--toboggan",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/scenic-railway",
+      "slug": "south-wales--scenic-railway",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/horse-riding",
+      "slug": "south-wales--horse-riding",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/fishing",
+      "slug": "south-wales--fishing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/wildlife-birdwatching",
+      "slug": "south-wales--wildlife-birdwatching",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/paintball-laser-tag",
+      "slug": "south-wales--paintball-laser-tag",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/south-wales/things-to-do/beaches",
+      "slug": "south-wales--beaches",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/zip-lining",
+      "slug": "all-wales--zip-lining",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/hiking",
+      "slug": "all-wales--hiking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/coasteering",
+      "slug": "all-wales--coasteering",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/sea-kayaking",
+      "slug": "all-wales--sea-kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/surfing",
+      "slug": "all-wales--surfing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/mountain-biking",
+      "slug": "all-wales--mountain-biking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/climbing",
+      "slug": "all-wales--climbing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/caving",
+      "slug": "all-wales--caving",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/wild-swimming",
+      "slug": "all-wales--wild-swimming",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/kayaking",
+      "slug": "all-wales--kayaking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/canyoning",
+      "slug": "all-wales--canyoning",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/sup",
+      "slug": "all-wales--sup",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/running",
+      "slug": "all-wales--running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/trail-running",
+      "slug": "all-wales--trail-running",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/gorge-walking",
+      "slug": "all-wales--gorge-walking",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/underground-trampolines",
+      "slug": "all-wales--underground-trampolines",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/toboggan",
+      "slug": "all-wales--toboggan",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/scenic-railway",
+      "slug": "all-wales--scenic-railway",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/horse-riding",
+      "slug": "all-wales--horse-riding",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/fishing",
+      "slug": "all-wales--fishing",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/wildlife-birdwatching",
+      "slug": "all-wales--wildlife-birdwatching",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/paintball-laser-tag",
+      "slug": "all-wales--paintball-laser-tag",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    },
+    {
+      "category": "Combo Pages",
+      "severity": "low",
+      "page": "/all-wales/things-to-do/beaches",
+      "slug": "all-wales--beaches",
+      "issue": "Combo page has no enrichment data file",
+      "fix": "Run deep research skill to generate combo content",
+      "autoFixable": true
+    }
+  ]
+}

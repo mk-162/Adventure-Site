@@ -1,0 +1,609 @@
+{
+  "generatedAt": "2026-02-05T19:59:07.620Z",
+  "stats": {
+    "total": 44,
+    "byPriority": {
+      "p1": 26,
+      "p2": 10,
+      "p3": 8
+    },
+    "byCategory": {
+      "combo_page": 10,
+      "article": 6,
+      "answer": 8,
+      "operator_enrichment": 20
+    }
+  },
+  "tasks": [
+    {
+      "id": "combo-south-wales-stag-hen",
+      "priority": 1,
+      "category": "combo_page",
+      "title": "Research & write: Stag & Hen in South Wales",
+      "description": "Create enrichment data for the Stag & Hen in South Wales combo page. Research forum posts, operator reviews, local tips, and write 1,500-2,500 word editorial with tiered tips.",
+      "inputs": {
+        "region": "south-wales",
+        "activityType": "stag-hen"
+      },
+      "outputPath": "data/combo-pages/south-wales--stag-hen.json",
+      "estimatedTime": "20-30 min per page",
+      "agentPrompt": "You are researching \"Stag & Hen in South Wales\" for Adventure Wales.\n\nRead the deep research skill at /home/minigeek/clawd/skills/aw-deep-research/SKILL.md — follow it exactly.\n\nResearch this combo using forum-first approach:\n1. Search relevant forums for real user experiences\n2. Find 3-5 insider tips for first-timers AND regulars\n3. Research specific operators, pricing, and reviews\n4. Write a 1,500-2,500 word editorial that passes the \"would a local bookmark this?\" test\n5. Include honest assessments (what's great AND what's not)\n\nOutput the enrichment data as JSON to: data/combo-pages/south-wales--stag-hen.json\nFollow the ComboPageData TypeScript interface in src/lib/combo-data.ts.\n\nCommit when done: git add -A && git commit -m \"research: Stag & Hen in South Wales combo page\""
+    },
+    {
+      "id": "combo-brecon-beacons-stag-hen",
+      "priority": 1,
+      "category": "combo_page",
+      "title": "Research & write: Stag & Hen in Brecon Beacons",
+      "description": "Create enrichment data for the Stag & Hen in Brecon Beacons combo page. Research forum posts, operator reviews, local tips, and write 1,500-2,500 word editorial with tiered tips.",
+      "inputs": {
+        "region": "brecon-beacons",
+        "activityType": "stag-hen"
+      },
+      "outputPath": "data/combo-pages/brecon-beacons--stag-hen.json",
+      "estimatedTime": "20-30 min per page",
+      "agentPrompt": "You are researching \"Stag & Hen in Brecon Beacons\" for Adventure Wales.\n\nRead the deep research skill at /home/minigeek/clawd/skills/aw-deep-research/SKILL.md — follow it exactly.\n\nResearch this combo using forum-first approach:\n1. Search relevant forums for real user experiences\n2. Find 3-5 insider tips for first-timers AND regulars\n3. Research specific operators, pricing, and reviews\n4. Write a 1,500-2,500 word editorial that passes the \"would a local bookmark this?\" test\n5. Include honest assessments (what's great AND what's not)\n\nOutput the enrichment data as JSON to: data/combo-pages/brecon-beacons--stag-hen.json\nFollow the ComboPageData TypeScript interface in src/lib/combo-data.ts.\n\nCommit when done: git add -A && git commit -m \"research: Stag & Hen in Brecon Beacons combo page\""
+    },
+    {
+      "id": "article-stag-weekend-wales-guide-2026",
+      "priority": 1,
+      "category": "article",
+      "title": "Write article: The Ultimate Guide to a Stag Weekend in Wales (2026)",
+      "description": "Comprehensive guide covering Cardiff, Brecon Beacons, Snowdonia, and Pembrokeshire. Activities, accommodation, nightlife, costs, planning tips.",
+      "inputs": {
+        "slug": "stag-weekend-wales-guide-2026"
+      },
+      "outputPath": "content/articles/stag-weekend-wales-guide-2026.md",
+      "estimatedTime": "30-45 min",
+      "agentPrompt": "Write a journal article for Adventure Wales: \"The Ultimate Guide to a Stag Weekend in Wales (2026)\"\n\nRead the content writer skill at /home/minigeek/clawd/skills/aw-content-writer/SKILL.md.\n\nRequirements:\n- 1,500-2,500 words\n- UK English, conversational but informative tone\n- Real operator names, real prices, real places\n- Include internal links to existing AW pages where relevant\n- Schema-ready FAQ section at the end\n- Comprehensive guide covering Cardiff, Brecon Beacons, Snowdonia, and Pembrokeshire. Activities, accommodation, nightlife, costs, planning tips.\n\nOutput as markdown to: content/articles/stag-weekend-wales-guide-2026.md\nThen import to database using the journal import script."
+    },
+    {
+      "id": "article-hen-weekend-wales-guide-2026",
+      "priority": 1,
+      "category": "article",
+      "title": "Write article: The Ultimate Guide to a Hen Weekend in Wales (2026)",
+      "description": "Adventure hen parties, spa weekends, city breaks, and coastal retreats. Activities, accommodation, planning tips, themed ideas.",
+      "inputs": {
+        "slug": "hen-weekend-wales-guide-2026"
+      },
+      "outputPath": "content/articles/hen-weekend-wales-guide-2026.md",
+      "estimatedTime": "30-45 min",
+      "agentPrompt": "Write a journal article for Adventure Wales: \"The Ultimate Guide to a Hen Weekend in Wales (2026)\"\n\nRead the content writer skill at /home/minigeek/clawd/skills/aw-content-writer/SKILL.md.\n\nRequirements:\n- 1,500-2,500 words\n- UK English, conversational but informative tone\n- Real operator names, real prices, real places\n- Include internal links to existing AW pages where relevant\n- Schema-ready FAQ section at the end\n- Adventure hen parties, spa weekends, city breaks, and coastal retreats. Activities, accommodation, planning tips, themed ideas.\n\nOutput as markdown to: content/articles/hen-weekend-wales-guide-2026.md\nThen import to database using the journal import script."
+    },
+    {
+      "id": "answer-stag-weekend-wales-cost",
+      "priority": 1,
+      "category": "answer",
+      "title": "Write FAQ: How much does a stag weekend in Wales cost?",
+      "description": "Research and write a 300-500 word answer with real data, operator mentions, and internal links.",
+      "inputs": {
+        "slug": "stag-weekend-wales-cost",
+        "question": "How much does a stag weekend in Wales cost?"
+      },
+      "outputPath": "content/answers/stag-weekend-wales-cost.md",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Write an FAQ answer for Adventure Wales: \"How much does a stag weekend in Wales cost?\"\n\n300-500 words. Include:\n- Direct, useful answer in the first paragraph\n- Specific prices, operators, locations\n- Internal links to relevant AW pages\n- End with a call-to-action\n\nOutput to: content/answers/stag-weekend-wales-cost.md"
+    },
+    {
+      "id": "answer-best-hen-party-activities-wales",
+      "priority": 1,
+      "category": "answer",
+      "title": "Write FAQ: Best adventure activities for hen parties in Wales",
+      "description": "Research and write a 300-500 word answer with real data, operator mentions, and internal links.",
+      "inputs": {
+        "slug": "best-hen-party-activities-wales",
+        "question": "Best adventure activities for hen parties in Wales"
+      },
+      "outputPath": "content/answers/best-hen-party-activities-wales.md",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Write an FAQ answer for Adventure Wales: \"Best adventure activities for hen parties in Wales\"\n\n300-500 words. Include:\n- Direct, useful answer in the first paragraph\n- Specific prices, operators, locations\n- Internal links to relevant AW pages\n- End with a call-to-action\n\nOutput to: content/answers/best-hen-party-activities-wales.md"
+    },
+    {
+      "id": "operator-adventures-wales",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: adventures-wales",
+      "description": "Operator \"Adventures Wales\" missing: no cover image, no logo, no phone, no email",
+      "inputs": {
+        "slug": "adventures-wales"
+      },
+      "outputPath": "data/research/operators/adventures-wales.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/adventures-wales on Adventure Wales.\n\nCurrent issues: Operator \"Adventures Wales\" missing: no cover image, no logo, no phone, no email\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/adventures-wales.json"
+    },
+    {
+      "id": "operator-afan-forest-park",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: afan-forest-park",
+      "description": "Operator \"Afan Forest Park\" missing: no cover image, no logo, no phone, no email",
+      "inputs": {
+        "slug": "afan-forest-park"
+      },
+      "outputPath": "data/research/operators/afan-forest-park.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/afan-forest-park on Adventure Wales.\n\nCurrent issues: Operator \"Afan Forest Park\" missing: no cover image, no logo, no phone, no email\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/afan-forest-park.json"
+    },
+    {
+      "id": "operator-celtic-trail-shuttle",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: celtic-trail-shuttle",
+      "description": "Operator \"Celtic Trail Cycle Shuttle\" missing: no cover image, no logo, no coordinates, no Google rating",
+      "inputs": {
+        "slug": "celtic-trail-shuttle"
+      },
+      "outputPath": "data/research/operators/celtic-trail-shuttle.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/celtic-trail-shuttle on Adventure Wales.\n\nCurrent issues: Operator \"Celtic Trail Cycle Shuttle\" missing: no cover image, no logo, no coordinates, no Google rating\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/celtic-trail-shuttle.json"
+    },
+    {
+      "id": "operator-cwmcarn-forest",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: cwmcarn-forest",
+      "description": "Operator \"Cwmcarn Forest\" missing: no cover image, no logo, no phone, no email",
+      "inputs": {
+        "slug": "cwmcarn-forest"
+      },
+      "outputPath": "data/research/operators/cwmcarn-forest.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/cwmcarn-forest on Adventure Wales.\n\nCurrent issues: Operator \"Cwmcarn Forest\" missing: no cover image, no logo, no phone, no email\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/cwmcarn-forest.json"
+    },
+    {
+      "id": "operator-gethin-woods-bike-park",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: gethin-woods-bike-park",
+      "description": "Operator \"Gethin Woods (Bike Park Merthyr)\" missing: no cover image, no logo, no phone, no email",
+      "inputs": {
+        "slug": "gethin-woods-bike-park"
+      },
+      "outputPath": "data/research/operators/gethin-woods-bike-park.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/gethin-woods-bike-park on Adventure Wales.\n\nCurrent issues: Operator \"Gethin Woods (Bike Park Merthyr)\" missing: no cover image, no logo, no phone, no email\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/gethin-woods-bike-park.json"
+    },
+    {
+      "id": "operator-gigrin-farm",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: gigrin-farm",
+      "description": "Operator \"Gigrin Farm Red Kite Feeding\" missing: no cover image, no logo, no phone, no email",
+      "inputs": {
+        "slug": "gigrin-farm"
+      },
+      "outputPath": "data/research/operators/gigrin-farm.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/gigrin-farm on Adventure Wales.\n\nCurrent issues: Operator \"Gigrin Farm Red Kite Feeding\" missing: no cover image, no logo, no phone, no email\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/gigrin-farm.json"
+    },
+    {
+      "id": "operator-grange-trekking-centre",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: grange-trekking-centre",
+      "description": "Operator \"Grange Trekking Centre\" missing: no cover image, no logo, no phone, no email",
+      "inputs": {
+        "slug": "grange-trekking-centre"
+      },
+      "outputPath": "data/research/operators/grange-trekking-centre.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/grange-trekking-centre on Adventure Wales.\n\nCurrent issues: Operator \"Grange Trekking Centre\" missing: no cover image, no logo, no phone, no email\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/grange-trekking-centre.json"
+    },
+    {
+      "id": "operator-heatherton-world-of-activities",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: heatherton-world-of-activities",
+      "description": "Operator \"Heatherton World of Activities\" missing: no cover image, no logo, no phone, no email",
+      "inputs": {
+        "slug": "heatherton-world-of-activities"
+      },
+      "outputPath": "data/research/operators/heatherton-world-of-activities.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/heatherton-world-of-activities on Adventure Wales.\n\nCurrent issues: Operator \"Heatherton World of Activities\" missing: no cover image, no logo, no phone, no email\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/heatherton-world-of-activities.json"
+    },
+    {
+      "id": "operator-hells-mouth-surf-school",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: hells-mouth-surf-school",
+      "description": "Operator \"Hell's Mouth Surf School\" missing: no cover image, no logo, no phone, no email",
+      "inputs": {
+        "slug": "hells-mouth-surf-school"
+      },
+      "outputPath": "data/research/operators/hells-mouth-surf-school.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/hells-mouth-surf-school on Adventure Wales.\n\nCurrent issues: Operator \"Hell's Mouth Surf School\" missing: no cover image, no logo, no phone, no email\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/hells-mouth-surf-school.json"
+    },
+    {
+      "id": "operator-hell-s-mouth-surf-school",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: hell-s-mouth-surf-school",
+      "description": "Operator \"Hell's Mouth Surf School\" missing: no description, no cover image, no logo, no coordinates",
+      "inputs": {
+        "slug": "hell-s-mouth-surf-school"
+      },
+      "outputPath": "data/research/operators/hell-s-mouth-surf-school.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/hell-s-mouth-surf-school on Adventure Wales.\n\nCurrent issues: Operator \"Hell's Mouth Surf School\" missing: no description, no cover image, no logo, no coordinates\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/hell-s-mouth-surf-school.json"
+    },
+    {
+      "id": "operator-llandysul-angling-association",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: llandysul-angling-association",
+      "description": "Operator \"Llandysul Angling Association\" missing: no cover image, no logo, no phone, no email, no Google rating",
+      "inputs": {
+        "slug": "llandysul-angling-association"
+      },
+      "outputPath": "data/research/operators/llandysul-angling-association.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/llandysul-angling-association on Adventure Wales.\n\nCurrent issues: Operator \"Llandysul Angling Association\" missing: no cover image, no logo, no phone, no email, no Google rating\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/llandysul-angling-association.json"
+    },
+    {
+      "id": "operator-ll-n-adventures",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: ll-n-adventures",
+      "description": "Operator \"Llŷn Adventures\" missing: no description, no cover image, no logo, no coordinates",
+      "inputs": {
+        "slug": "ll-n-adventures"
+      },
+      "outputPath": "data/research/operators/ll-n-adventures.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/ll-n-adventures on Adventure Wales.\n\nCurrent issues: Operator \"Llŷn Adventures\" missing: no description, no cover image, no logo, no coordinates\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/ll-n-adventures.json"
+    },
+    {
+      "id": "operator-llyn-adventures",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: llyn-adventures",
+      "description": "Operator \"Llŷn Adventures\" missing: no cover image, no logo, no phone, no email",
+      "inputs": {
+        "slug": "llyn-adventures"
+      },
+      "outputPath": "data/research/operators/llyn-adventures.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/llyn-adventures on Adventure Wales.\n\nCurrent issues: Operator \"Llŷn Adventures\" missing: no cover image, no logo, no phone, no email\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/llyn-adventures.json"
+    },
+    {
+      "id": "operator-ma-simes-surf-hut",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: ma-simes-surf-hut",
+      "description": "Operator \"Ma Simes Surf Hut\" missing: no cover image, no logo, no coordinates, no Google rating",
+      "inputs": {
+        "slug": "ma-simes-surf-hut"
+      },
+      "outputPath": "data/research/operators/ma-simes-surf-hut.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/ma-simes-surf-hut on Adventure Wales.\n\nCurrent issues: Operator \"Ma Simes Surf Hut\" missing: no cover image, no logo, no coordinates, no Google rating\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/ma-simes-surf-hut.json"
+    },
+    {
+      "id": "operator-paddles-and-pedals",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: paddles-and-pedals",
+      "description": "Operator \"Paddles & Pedals\" missing: no cover image, no logo, no coordinates, no Google rating",
+      "inputs": {
+        "slug": "paddles-and-pedals"
+      },
+      "outputPath": "data/research/operators/paddles-and-pedals.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/paddles-and-pedals on Adventure Wales.\n\nCurrent issues: Operator \"Paddles & Pedals\" missing: no cover image, no logo, no coordinates, no Google rating\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/paddles-and-pedals.json"
+    },
+    {
+      "id": "operator-pembrokeshire-coastal-bus",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: pembrokeshire-coastal-bus",
+      "description": "Operator \"Pembrokeshire Coastal Bus\" missing: no cover image, no logo, no coordinates, no Google rating",
+      "inputs": {
+        "slug": "pembrokeshire-coastal-bus"
+      },
+      "outputPath": "data/research/operators/pembrokeshire-coastal-bus.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/pembrokeshire-coastal-bus on Adventure Wales.\n\nCurrent issues: Operator \"Pembrokeshire Coastal Bus\" missing: no cover image, no logo, no coordinates, no Google rating\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/pembrokeshire-coastal-bus.json"
+    },
+    {
+      "id": "operator-taskforce-paintball",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: taskforce-paintball",
+      "description": "Operator \"Taskforce Paintball\" missing: no cover image, no logo, no phone, no email",
+      "inputs": {
+        "slug": "taskforce-paintball"
+      },
+      "outputPath": "data/research/operators/taskforce-paintball.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/taskforce-paintball on Adventure Wales.\n\nCurrent issues: Operator \"Taskforce Paintball\" missing: no cover image, no logo, no phone, no email\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/taskforce-paintball.json"
+    },
+    {
+      "id": "operator-the-fishing-passport",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: the-fishing-passport",
+      "description": "Operator \"The Fishing Passport\" missing: no cover image, no logo, no coordinates, no phone, no email, no Google rating",
+      "inputs": {
+        "slug": "the-fishing-passport"
+      },
+      "outputPath": "data/research/operators/the-fishing-passport.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/the-fishing-passport on Adventure Wales.\n\nCurrent issues: Operator \"The Fishing Passport\" missing: no cover image, no logo, no coordinates, no phone, no email, no Google rating\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/the-fishing-passport.json"
+    },
+    {
+      "id": "operator-pen-y-gwryd-hotel",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: pen-y-gwryd-hotel",
+      "description": "Operator \"The Pen-y-Gwryd Hotel\" missing: no cover image, no logo, no coordinates, no Google rating",
+      "inputs": {
+        "slug": "pen-y-gwryd-hotel"
+      },
+      "outputPath": "data/research/operators/pen-y-gwryd-hotel.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/pen-y-gwryd-hotel on Adventure Wales.\n\nCurrent issues: Operator \"The Pen-y-Gwryd Hotel\" missing: no cover image, no logo, no coordinates, no Google rating\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/pen-y-gwryd-hotel.json"
+    },
+    {
+      "id": "operator-pinnacle-cafe",
+      "priority": 1,
+      "category": "operator_enrichment",
+      "title": "Enrich operator: pinnacle-cafe",
+      "description": "Operator \"The Pinnacle Café\" missing: no cover image, no logo, no coordinates, no Google rating",
+      "inputs": {
+        "slug": "pinnacle-cafe"
+      },
+      "outputPath": "data/research/operators/pinnacle-cafe.json",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Research and enrich the operator at /directory/pinnacle-cafe on Adventure Wales.\n\nCurrent issues: Operator \"The Pinnacle Café\" missing: no cover image, no logo, no coordinates, no Google rating\n\nUse the adventure research skill at /home/minigeek/clawd/skills/adventure-research/SKILL.md.\n\nResearch their website, Google reviews, TripAdvisor, and forums. Fill all missing fields.\nOutput research data to: data/research/operators/pinnacle-cafe.json"
+    },
+    {
+      "id": "combo-snowdonia-stag-hen",
+      "priority": 2,
+      "category": "combo_page",
+      "title": "Research & write: Stag & Hen in Snowdonia",
+      "description": "Create enrichment data for the Stag & Hen in Snowdonia combo page. Research forum posts, operator reviews, local tips, and write 1,500-2,500 word editorial with tiered tips.",
+      "inputs": {
+        "region": "snowdonia",
+        "activityType": "stag-hen"
+      },
+      "outputPath": "data/combo-pages/snowdonia--stag-hen.json",
+      "estimatedTime": "20-30 min per page",
+      "agentPrompt": "You are researching \"Stag & Hen in Snowdonia\" for Adventure Wales.\n\nRead the deep research skill at /home/minigeek/clawd/skills/aw-deep-research/SKILL.md — follow it exactly.\n\nResearch this combo using forum-first approach:\n1. Search relevant forums for real user experiences\n2. Find 3-5 insider tips for first-timers AND regulars\n3. Research specific operators, pricing, and reviews\n4. Write a 1,500-2,500 word editorial that passes the \"would a local bookmark this?\" test\n5. Include honest assessments (what's great AND what's not)\n\nOutput the enrichment data as JSON to: data/combo-pages/snowdonia--stag-hen.json\nFollow the ComboPageData TypeScript interface in src/lib/combo-data.ts.\n\nCommit when done: git add -A && git commit -m \"research: Stag & Hen in Snowdonia combo page\""
+    },
+    {
+      "id": "combo-pembrokeshire-stag-hen",
+      "priority": 2,
+      "category": "combo_page",
+      "title": "Research & write: Stag & Hen in Pembrokeshire",
+      "description": "Create enrichment data for the Stag & Hen in Pembrokeshire combo page. Research forum posts, operator reviews, local tips, and write 1,500-2,500 word editorial with tiered tips.",
+      "inputs": {
+        "region": "pembrokeshire",
+        "activityType": "stag-hen"
+      },
+      "outputPath": "data/combo-pages/pembrokeshire--stag-hen.json",
+      "estimatedTime": "20-30 min per page",
+      "agentPrompt": "You are researching \"Stag & Hen in Pembrokeshire\" for Adventure Wales.\n\nRead the deep research skill at /home/minigeek/clawd/skills/aw-deep-research/SKILL.md — follow it exactly.\n\nResearch this combo using forum-first approach:\n1. Search relevant forums for real user experiences\n2. Find 3-5 insider tips for first-timers AND regulars\n3. Research specific operators, pricing, and reviews\n4. Write a 1,500-2,500 word editorial that passes the \"would a local bookmark this?\" test\n5. Include honest assessments (what's great AND what's not)\n\nOutput the enrichment data as JSON to: data/combo-pages/pembrokeshire--stag-hen.json\nFollow the ComboPageData TypeScript interface in src/lib/combo-data.ts.\n\nCommit when done: git add -A && git commit -m \"research: Stag & Hen in Pembrokeshire combo page\""
+    },
+    {
+      "id": "combo-gower-stag-hen",
+      "priority": 2,
+      "category": "combo_page",
+      "title": "Research & write: Stag & Hen in Gower",
+      "description": "Create enrichment data for the Stag & Hen in Gower combo page. Research forum posts, operator reviews, local tips, and write 1,500-2,500 word editorial with tiered tips.",
+      "inputs": {
+        "region": "gower",
+        "activityType": "stag-hen"
+      },
+      "outputPath": "data/combo-pages/gower--stag-hen.json",
+      "estimatedTime": "20-30 min per page",
+      "agentPrompt": "You are researching \"Stag & Hen in Gower\" for Adventure Wales.\n\nRead the deep research skill at /home/minigeek/clawd/skills/aw-deep-research/SKILL.md — follow it exactly.\n\nResearch this combo using forum-first approach:\n1. Search relevant forums for real user experiences\n2. Find 3-5 insider tips for first-timers AND regulars\n3. Research specific operators, pricing, and reviews\n4. Write a 1,500-2,500 word editorial that passes the \"would a local bookmark this?\" test\n5. Include honest assessments (what's great AND what's not)\n\nOutput the enrichment data as JSON to: data/combo-pages/gower--stag-hen.json\nFollow the ComboPageData TypeScript interface in src/lib/combo-data.ts.\n\nCommit when done: git add -A && git commit -m \"research: Stag & Hen in Gower combo page\""
+    },
+    {
+      "id": "combo-pembrokeshire-sea-kayaking",
+      "priority": 2,
+      "category": "combo_page",
+      "title": "Research & write: Sea Kayaking in Pembrokeshire",
+      "description": "Create enrichment data for the Sea Kayaking in Pembrokeshire combo page. Research forum posts, operator reviews, local tips, and write 1,500-2,500 word editorial with tiered tips.",
+      "inputs": {
+        "region": "pembrokeshire",
+        "activityType": "sea-kayaking"
+      },
+      "outputPath": "data/combo-pages/pembrokeshire--sea-kayaking.json",
+      "estimatedTime": "20-30 min per page",
+      "agentPrompt": "You are researching \"Sea Kayaking in Pembrokeshire\" for Adventure Wales.\n\nRead the deep research skill at /home/minigeek/clawd/skills/aw-deep-research/SKILL.md — follow it exactly.\n\nResearch this combo using forum-first approach:\n1. Search relevant forums for real user experiences\n2. Find 3-5 insider tips for first-timers AND regulars\n3. Research specific operators, pricing, and reviews\n4. Write a 1,500-2,500 word editorial that passes the \"would a local bookmark this?\" test\n5. Include honest assessments (what's great AND what's not)\n\nOutput the enrichment data as JSON to: data/combo-pages/pembrokeshire--sea-kayaking.json\nFollow the ComboPageData TypeScript interface in src/lib/combo-data.ts.\n\nCommit when done: git add -A && git commit -m \"research: Sea Kayaking in Pembrokeshire combo page\""
+    },
+    {
+      "id": "combo-snowdonia-canyoning",
+      "priority": 2,
+      "category": "combo_page",
+      "title": "Research & write: Canyoning in Snowdonia",
+      "description": "Create enrichment data for the Canyoning in Snowdonia combo page. Research forum posts, operator reviews, local tips, and write 1,500-2,500 word editorial with tiered tips.",
+      "inputs": {
+        "region": "snowdonia",
+        "activityType": "canyoning"
+      },
+      "outputPath": "data/combo-pages/snowdonia--canyoning.json",
+      "estimatedTime": "20-30 min per page",
+      "agentPrompt": "You are researching \"Canyoning in Snowdonia\" for Adventure Wales.\n\nRead the deep research skill at /home/minigeek/clawd/skills/aw-deep-research/SKILL.md — follow it exactly.\n\nResearch this combo using forum-first approach:\n1. Search relevant forums for real user experiences\n2. Find 3-5 insider tips for first-timers AND regulars\n3. Research specific operators, pricing, and reviews\n4. Write a 1,500-2,500 word editorial that passes the \"would a local bookmark this?\" test\n5. Include honest assessments (what's great AND what's not)\n\nOutput the enrichment data as JSON to: data/combo-pages/snowdonia--canyoning.json\nFollow the ComboPageData TypeScript interface in src/lib/combo-data.ts.\n\nCommit when done: git add -A && git commit -m \"research: Canyoning in Snowdonia combo page\""
+    },
+    {
+      "id": "article-adventure-activities-stag-hen-wales",
+      "priority": 2,
+      "category": "article",
+      "title": "Write article: 10 Adventure Activities for Your Stag/Hen Do in Wales",
+      "description": "Ranked list of the best group adventure activities with operator recommendations, pricing, and group size info.",
+      "inputs": {
+        "slug": "adventure-activities-stag-hen-wales"
+      },
+      "outputPath": "content/articles/adventure-activities-stag-hen-wales.md",
+      "estimatedTime": "30-45 min",
+      "agentPrompt": "Write a journal article for Adventure Wales: \"10 Adventure Activities for Your Stag/Hen Do in Wales\"\n\nRead the content writer skill at /home/minigeek/clawd/skills/aw-content-writer/SKILL.md.\n\nRequirements:\n- 1,500-2,500 words\n- UK English, conversational but informative tone\n- Real operator names, real prices, real places\n- Include internal links to existing AW pages where relevant\n- Schema-ready FAQ section at the end\n- Ranked list of the best group adventure activities with operator recommendations, pricing, and group size info.\n\nOutput as markdown to: content/articles/adventure-activities-stag-hen-wales.md\nThen import to database using the journal import script."
+    },
+    {
+      "id": "article-cardiff-vs-snowdonia-stag-hen",
+      "priority": 2,
+      "category": "article",
+      "title": "Write article: Cardiff vs Snowdonia: Where Should You Plan Your Stag/Hen?",
+      "description": "Comparison guide: city nightlife + activities vs mountain adventure + lodges. Pros, cons, costs, sample itineraries.",
+      "inputs": {
+        "slug": "cardiff-vs-snowdonia-stag-hen"
+      },
+      "outputPath": "content/articles/cardiff-vs-snowdonia-stag-hen.md",
+      "estimatedTime": "30-45 min",
+      "agentPrompt": "Write a journal article for Adventure Wales: \"Cardiff vs Snowdonia: Where Should You Plan Your Stag/Hen?\"\n\nRead the content writer skill at /home/minigeek/clawd/skills/aw-content-writer/SKILL.md.\n\nRequirements:\n- 1,500-2,500 words\n- UK English, conversational but informative tone\n- Real operator names, real prices, real places\n- Include internal links to existing AW pages where relevant\n- Schema-ready FAQ section at the end\n- Comparison guide: city nightlife + activities vs mountain adventure + lodges. Pros, cons, costs, sample itineraries.\n\nOutput as markdown to: content/articles/cardiff-vs-snowdonia-stag-hen.md\nThen import to database using the journal import script."
+    },
+    {
+      "id": "answer-outdoor-activities-wales-winter",
+      "priority": 2,
+      "category": "answer",
+      "title": "Write FAQ: Can you do outdoor activities in Wales in winter?",
+      "description": "Research and write a 300-500 word answer with real data, operator mentions, and internal links.",
+      "inputs": {
+        "slug": "outdoor-activities-wales-winter",
+        "question": "Can you do outdoor activities in Wales in winter?"
+      },
+      "outputPath": "content/answers/outdoor-activities-wales-winter.md",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Write an FAQ answer for Adventure Wales: \"Can you do outdoor activities in Wales in winter?\"\n\n300-500 words. Include:\n- Direct, useful answer in the first paragraph\n- Specific prices, operators, locations\n- Internal links to relevant AW pages\n- End with a call-to-action\n\nOutput to: content/answers/outdoor-activities-wales-winter.md"
+    },
+    {
+      "id": "answer-group-accommodation-wales-stag-hen",
+      "priority": 2,
+      "category": "answer",
+      "title": "Write FAQ: Best group accommodation in Wales for stag and hen parties",
+      "description": "Research and write a 300-500 word answer with real data, operator mentions, and internal links.",
+      "inputs": {
+        "slug": "group-accommodation-wales-stag-hen",
+        "question": "Best group accommodation in Wales for stag and hen parties"
+      },
+      "outputPath": "content/answers/group-accommodation-wales-stag-hen.md",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Write an FAQ answer for Adventure Wales: \"Best group accommodation in Wales for stag and hen parties\"\n\n300-500 words. Include:\n- Direct, useful answer in the first paragraph\n- Specific prices, operators, locations\n- Internal links to relevant AW pages\n- End with a call-to-action\n\nOutput to: content/answers/group-accommodation-wales-stag-hen.md"
+    },
+    {
+      "id": "answer-cardiff-nightlife-stag-parties",
+      "priority": 2,
+      "category": "answer",
+      "title": "Write FAQ: Best nightlife in Cardiff for stag parties",
+      "description": "Research and write a 300-500 word answer with real data, operator mentions, and internal links.",
+      "inputs": {
+        "slug": "cardiff-nightlife-stag-parties",
+        "question": "Best nightlife in Cardiff for stag parties"
+      },
+      "outputPath": "content/answers/cardiff-nightlife-stag-parties.md",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Write an FAQ answer for Adventure Wales: \"Best nightlife in Cardiff for stag parties\"\n\n300-500 words. Include:\n- Direct, useful answer in the first paragraph\n- Specific prices, operators, locations\n- Internal links to relevant AW pages\n- End with a call-to-action\n\nOutput to: content/answers/cardiff-nightlife-stag-parties.md"
+    },
+    {
+      "id": "combo-mid-wales-horse-riding",
+      "priority": 3,
+      "category": "combo_page",
+      "title": "Research & write: Horse Riding in Mid Wales",
+      "description": "Create enrichment data for the Horse Riding in Mid Wales combo page. Research forum posts, operator reviews, local tips, and write 1,500-2,500 word editorial with tiered tips.",
+      "inputs": {
+        "region": "mid-wales",
+        "activityType": "horse-riding"
+      },
+      "outputPath": "data/combo-pages/mid-wales--horse-riding.json",
+      "estimatedTime": "20-30 min per page",
+      "agentPrompt": "You are researching \"Horse Riding in Mid Wales\" for Adventure Wales.\n\nRead the deep research skill at /home/minigeek/clawd/skills/aw-deep-research/SKILL.md — follow it exactly.\n\nResearch this combo using forum-first approach:\n1. Search relevant forums for real user experiences\n2. Find 3-5 insider tips for first-timers AND regulars\n3. Research specific operators, pricing, and reviews\n4. Write a 1,500-2,500 word editorial that passes the \"would a local bookmark this?\" test\n5. Include honest assessments (what's great AND what's not)\n\nOutput the enrichment data as JSON to: data/combo-pages/mid-wales--horse-riding.json\nFollow the ComboPageData TypeScript interface in src/lib/combo-data.ts.\n\nCommit when done: git add -A && git commit -m \"research: Horse Riding in Mid Wales combo page\""
+    },
+    {
+      "id": "combo-carmarthenshire-fishing",
+      "priority": 3,
+      "category": "combo_page",
+      "title": "Research & write: Fishing in Carmarthenshire",
+      "description": "Create enrichment data for the Fishing in Carmarthenshire combo page. Research forum posts, operator reviews, local tips, and write 1,500-2,500 word editorial with tiered tips.",
+      "inputs": {
+        "region": "carmarthenshire",
+        "activityType": "fishing"
+      },
+      "outputPath": "data/combo-pages/carmarthenshire--fishing.json",
+      "estimatedTime": "20-30 min per page",
+      "agentPrompt": "You are researching \"Fishing in Carmarthenshire\" for Adventure Wales.\n\nRead the deep research skill at /home/minigeek/clawd/skills/aw-deep-research/SKILL.md — follow it exactly.\n\nResearch this combo using forum-first approach:\n1. Search relevant forums for real user experiences\n2. Find 3-5 insider tips for first-timers AND regulars\n3. Research specific operators, pricing, and reviews\n4. Write a 1,500-2,500 word editorial that passes the \"would a local bookmark this?\" test\n5. Include honest assessments (what's great AND what's not)\n\nOutput the enrichment data as JSON to: data/combo-pages/carmarthenshire--fishing.json\nFollow the ComboPageData TypeScript interface in src/lib/combo-data.ts.\n\nCommit when done: git add -A && git commit -m \"research: Fishing in Carmarthenshire combo page\""
+    },
+    {
+      "id": "combo-pembrokeshire-wildlife",
+      "priority": 3,
+      "category": "combo_page",
+      "title": "Research & write: Wildlife in Pembrokeshire",
+      "description": "Create enrichment data for the Wildlife in Pembrokeshire combo page. Research forum posts, operator reviews, local tips, and write 1,500-2,500 word editorial with tiered tips.",
+      "inputs": {
+        "region": "pembrokeshire",
+        "activityType": "wildlife"
+      },
+      "outputPath": "data/combo-pages/pembrokeshire--wildlife.json",
+      "estimatedTime": "20-30 min per page",
+      "agentPrompt": "You are researching \"Wildlife in Pembrokeshire\" for Adventure Wales.\n\nRead the deep research skill at /home/minigeek/clawd/skills/aw-deep-research/SKILL.md — follow it exactly.\n\nResearch this combo using forum-first approach:\n1. Search relevant forums for real user experiences\n2. Find 3-5 insider tips for first-timers AND regulars\n3. Research specific operators, pricing, and reviews\n4. Write a 1,500-2,500 word editorial that passes the \"would a local bookmark this?\" test\n5. Include honest assessments (what's great AND what's not)\n\nOutput the enrichment data as JSON to: data/combo-pages/pembrokeshire--wildlife.json\nFollow the ComboPageData TypeScript interface in src/lib/combo-data.ts.\n\nCommit when done: git add -A && git commit -m \"research: Wildlife in Pembrokeshire combo page\""
+    },
+    {
+      "id": "article-wales-castle-trail",
+      "priority": 3,
+      "category": "article",
+      "title": "Write article: Wales Castle Trail: 10 Castles You Can't Miss",
+      "description": "Curated castle route linking to nearby adventure activities. Cross-sell adventure + heritage.",
+      "inputs": {
+        "slug": "wales-castle-trail"
+      },
+      "outputPath": "content/articles/wales-castle-trail.md",
+      "estimatedTime": "30-45 min",
+      "agentPrompt": "Write a journal article for Adventure Wales: \"Wales Castle Trail: 10 Castles You Can't Miss\"\n\nRead the content writer skill at /home/minigeek/clawd/skills/aw-content-writer/SKILL.md.\n\nRequirements:\n- 1,500-2,500 words\n- UK English, conversational but informative tone\n- Real operator names, real prices, real places\n- Include internal links to existing AW pages where relevant\n- Schema-ready FAQ section at the end\n- Curated castle route linking to nearby adventure activities. Cross-sell adventure + heritage.\n\nOutput as markdown to: content/articles/wales-castle-trail.md\nThen import to database using the journal import script."
+    },
+    {
+      "id": "article-rainy-day-adventures-wales",
+      "priority": 3,
+      "category": "article",
+      "title": "Write article: Rainy Day Adventures in Wales: 15 Indoor & Sheltered Activities",
+      "description": "Weather backup plans that are actually fun. Underground trampolines, caving, indoor surf, climbing walls, museums.",
+      "inputs": {
+        "slug": "rainy-day-adventures-wales"
+      },
+      "outputPath": "content/articles/rainy-day-adventures-wales.md",
+      "estimatedTime": "30-45 min",
+      "agentPrompt": "Write a journal article for Adventure Wales: \"Rainy Day Adventures in Wales: 15 Indoor & Sheltered Activities\"\n\nRead the content writer skill at /home/minigeek/clawd/skills/aw-content-writer/SKILL.md.\n\nRequirements:\n- 1,500-2,500 words\n- UK English, conversational but informative tone\n- Real operator names, real prices, real places\n- Include internal links to existing AW pages where relevant\n- Schema-ready FAQ section at the end\n- Weather backup plans that are actually fun. Underground trampolines, caving, indoor surf, climbing walls, museums.\n\nOutput as markdown to: content/articles/rainy-day-adventures-wales.md\nThen import to database using the journal import script."
+    },
+    {
+      "id": "answer-castles-to-visit-wales",
+      "priority": 3,
+      "category": "answer",
+      "title": "Write FAQ: What castles can you visit in Wales?",
+      "description": "Research and write a 300-500 word answer with real data, operator mentions, and internal links.",
+      "inputs": {
+        "slug": "castles-to-visit-wales",
+        "question": "What castles can you visit in Wales?"
+      },
+      "outputPath": "content/answers/castles-to-visit-wales.md",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Write an FAQ answer for Adventure Wales: \"What castles can you visit in Wales?\"\n\n300-500 words. Include:\n- Direct, useful answer in the first paragraph\n- Specific prices, operators, locations\n- Internal links to relevant AW pages\n- End with a call-to-action\n\nOutput to: content/answers/castles-to-visit-wales.md"
+    },
+    {
+      "id": "answer-free-things-to-do-wales",
+      "priority": 3,
+      "category": "answer",
+      "title": "Write FAQ: Best free things to do in Wales",
+      "description": "Research and write a 300-500 word answer with real data, operator mentions, and internal links.",
+      "inputs": {
+        "slug": "free-things-to-do-wales",
+        "question": "Best free things to do in Wales"
+      },
+      "outputPath": "content/answers/free-things-to-do-wales.md",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Write an FAQ answer for Adventure Wales: \"Best free things to do in Wales\"\n\n300-500 words. Include:\n- Direct, useful answer in the first paragraph\n- Specific prices, operators, locations\n- Internal links to relevant AW pages\n- End with a call-to-action\n\nOutput to: content/answers/free-things-to-do-wales.md"
+    },
+    {
+      "id": "answer-wales-family-adventure-holiday",
+      "priority": 3,
+      "category": "answer",
+      "title": "Write FAQ: Is Wales good for a family adventure holiday?",
+      "description": "Research and write a 300-500 word answer with real data, operator mentions, and internal links.",
+      "inputs": {
+        "slug": "wales-family-adventure-holiday",
+        "question": "Is Wales good for a family adventure holiday?"
+      },
+      "outputPath": "content/answers/wales-family-adventure-holiday.md",
+      "estimatedTime": "10-15 min",
+      "agentPrompt": "Write an FAQ answer for Adventure Wales: \"Is Wales good for a family adventure holiday?\"\n\n300-500 words. Include:\n- Direct, useful answer in the first paragraph\n- Specific prices, operators, locations\n- Internal links to relevant AW pages\n- End with a call-to-action\n\nOutput to: content/answers/wales-family-adventure-holiday.md"
+    }
+  ]
+}

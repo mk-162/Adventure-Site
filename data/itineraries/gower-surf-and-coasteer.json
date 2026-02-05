@@ -1,174 +1,239 @@
 {
   "slug": "gower-surf-and-coasteer",
   "title": "Gower Surf & Coasteer",
-  "tagline": "Wales' original AONB, waves and cliffs",
+  "tagline": "Wales' original AONB - catching waves and exploring cliffs on Britain's first Area of Outstanding Natural Beauty",
   "region": "gower",
   "days": 2,
   "difficulty": "moderate",
-  "bestSeason": "May-September",
-  "groupType": "friends, couples",
-  "priceFrom": 290,
-  "priceTo": 550,
-  "budgetPriceFrom": 180,
-  "budgetPriceTo": 300,
+  "bestSeason": "May-October",
+  "groupType": "couples, friends, active groups",
+  "priceFrom": 350,
+  "priceTo": 500,
+  "budgetPriceFrom": 95,
+  "budgetPriceTo": 180,
   "highlights": [
-    "Llangennith surfing",
-    "Gower coasteering",
-    "Rhossili Bay"
+    "Surfing at Llangennith - Wales' best surf beach",
+    "Gower coasteering adventures",
+    "Rhossili Bay - Britain's best beach"
   ],
   "activityTypes": [
     "surfing",
-    "coasteering"
+    "coasteering",
+    "coastal-walking"
   ],
   "suitableFor": "Active couples and friends who enjoy outdoor adventures and aren't afraid of a bit of a challenge. Must be comfortable in the water.",
   "notSuitableFor": "Those with limited mobility, a strong aversion to cold water, or those seeking a purely relaxing holiday.",
   "weatherDependency": "medium",
   "packingEssentials": [
     "Swimsuit",
-    "Towel",
+    "Towel (quick-dry)",
     "Sunscreen",
     "Waterproof jacket",
-    "Sturdy walking shoes"
+    "Sturdy walking shoes",
+    "Old trainers (for coasteering)",
+    "Warm layers for after water activities",
+    "Camera (waterproof if possible)"
   ],
+  "drivingTimes": {
+    "fromCardiff": "1hr via M4/A4067",
+    "fromBristol": "1hr 30min via M4/M5",
+    "fromBirmingham": "2hr 30min via M5/M4",
+    "swanseaToLlangennith": "30min",
+    "mumblesToRhossili": "45min",
+    "llangennithToThreeCliffs": "25min"
+  },
   "stops": [
     {
       "day": 1,
       "orderIndex": 1,
-      "time": "09:00",
+      "time": "09:30",
       "type": "activity",
-      "title": "Surfing Lesson",
-      "description": "Learn to ride the waves at Llangennith, one of Gower's best surfing beaches. Includes instruction and board hire.",
-      "duration": "2.5 hours",
-      "costFrom": 40,
-      "costTo": 65,
-      "lat": 51.597,
-      "lng": -4.268,
-      "travelToNext": "15min drive via B4247",
+      "title": "Surf Lesson at Llangennith",
+      "description": "Learn to surf at Wales' premier surf beach. Llangennith has consistent Atlantic swells and is ideal for beginners. 2-hour lessons include all equipment (wetsuit, board, boots) and qualified instruction. You'll be standing up by the end!",
+      "duration": "2-2.5 hours",
+      "operator": "Llangennith Surf School",
+      "operatorUrl": "https://www.llangennithsurfschool.com",
+      "operatorPhone": "07817 334894",
+      "alternativeOperators": [
+        {
+          "name": "South Wales Surf Lessons",
+          "url": "https://www.southwalessurflessons.co.uk",
+          "price": "£40pp (£35 for groups 4+)",
+          "location": "Hillend Campsite"
+        },
+        {
+          "name": "Progress Surf School",
+          "url": "https://www.swanseasurfing.com",
+          "price": "from £25pp (large groups)",
+          "location": "Caswell Bay or Llangennith"
+        },
+        {
+          "name": "Gower Activity Centres",
+          "url": "https://www.goweractivitycentres.co.uk",
+          "price": "£40pp",
+          "location": "Rhossili"
+        }
+      ],
+      "bookingEssential": true,
+      "costFrom": 35,
+      "costTo": 45,
+      "lat": 51.5756,
+      "lng": -4.2847,
+      "travelToNext": "10min drive to Hillend",
       "travelMode": "drive",
+      "requirements": {
+        "minAge": 8,
+        "swimAbility": "Must be comfortable in water",
+        "fitness": "Reasonable"
+      },
+      "insiderTip": "Book the morning lesson - waves are often cleaner and the beach less crowded. PJ's Surf Shop at Hillend rents boards year-round if you want to practice later (from £15/day).",
       "wetAlt": {
-        "title": "National Waterfront Museum (Swansea)",
-        "description": "Explore Swansea's maritime history at this indoor museum. Great for a rainy day.",
-        "costFrom": 0,
-        "costTo": 0
+        "title": "Gower Heritage Centre",
+        "description": "Traditional working watermill with craft workshops, farm animals, and a good cafe. Family-friendly indoor option on a wet day.",
+        "costFrom": 8,
+        "costTo": 12,
+        "website": "https://www.gowerheritagecentre.co.uk"
       },
       "budgetAlt": {
-        "title": "Bodyboarding at Llangennith",
-        "description": "Rent a bodyboard and enjoy the waves at Llangennith Beach.",
-        "costFrom": 10,
-        "costTo": 15
-      }
+        "title": "Self-guided surf (board hire only)",
+        "description": "Rent a board and wetsuit from PJ's Surf Shop and hit the waves yourself. Only if you have previous experience.",
+        "costFrom": 15,
+        "costTo": 25
+      },
+      "postcode": "SA3 1HZ"
     },
     {
       "day": 1,
       "orderIndex": 2,
       "time": "12:30",
       "type": "food",
-      "title": "The Beach House Restaurant",
+      "title": "King's Head (Llangennith)",
       "foodType": "lunch",
-      "description": "Enjoy fresh seafood with stunning views of Oxwich Bay. A popular spot for lunch.",
-      "costFrom": 20,
-      "costTo": 35,
-      "lat": 51.558,
-      "lng": -4.165,
-      "travelToNext": "25min drive via A4118",
+      "description": "Classic Gower pub just up from the beach, popular with surfers. Good pub grub, local ales, and beer garden. The burgers are excellent fuel after surfing.",
+      "costFrom": 12,
+      "costTo": 22,
+      "lat": 51.5778,
+      "lng": -4.2625,
+      "openingHours": "12-3pm, 6-9pm (food)",
+      "travelToNext": "15min drive to Rhossili",
       "travelMode": "drive",
-      "budgetAlt": {
-        "title": "Packed lunch at Three Cliffs Bay",
-        "description": "Enjoy your lunch with fantastic views"
+      "alternative": {
+        "title": "Edith's (Port Eynon)",
+        "description": "Beach cafe with stunning views. Simple but excellent - try the crab rolls."
       },
-      "postcode": "SA3 1LS"
+      "budgetAlt": {
+        "title": "Hillend Campsite Shop",
+        "description": "Basic supplies and hot drinks. Grab a pasty and eat on the dunes with ocean views."
+      },
+      "postcode": "SA3 1HX"
     },
     {
       "day": 1,
       "orderIndex": 3,
       "time": "14:30",
       "type": "activity",
-      "title": "Coasteering with Quest Adventure",
-      "description": "Explore the Gower coastline from a unique perspective, scrambling, swimming, and jumping into the sea. Wetsuit and safety gear provided.",
-      "duration": "3 hours",
-      "costFrom": 50,
-      "costTo": 75,
-      "lat": 51.546,
-      "lng": -4.215,
-      "travelToNext": "15min drive via A4118",
-      "travelMode": "drive",
-      "wetAlt": {
-        "title": "LC Swansea",
-        "description": "Indoor waterpark with slides and pools. Good fun for all ages.",
-        "costFrom": 15,
-        "costTo": 25
+      "title": "Rhossili Bay Walk & Worm's Head",
+      "description": "Walk the dramatic 3-mile sweep of Rhossili Bay (often voted Britain's best beach) then attempt the tidal crossing to Worm's Head - a serpent-shaped peninsula accessible only 2.5 hours either side of low tide. Check tide times before setting off!",
+      "duration": "3-4 hours",
+      "costFrom": 0,
+      "costTo": 8,
+      "costNote": "Free walk, parking £6-8",
+      "lat": 51.5659,
+      "lng": -4.2902,
+      "travelToNext": "5min walk to Rhossili",
+      "travelMode": "walk",
+      "tideInfo": {
+        "note": "Worm's Head crossing is ONLY possible 2.5 hours before and after low tide. Check tide times at the Coastwatch Lookout or online before attempting.",
+        "website": "https://www.nationaltrust.org.uk/rhossili-and-south-gower-coast"
       },
-      "budgetAlt": {
-        "title": "Coastal walk to Three Cliffs Bay",
-        "description": "Hike along the cliffs to Three Cliffs Bay and enjoy the views.",
+      "insiderTip": "The causeway is slippery - wear shoes with grip, not flip flops. Getting stranded is common - the NT Coastguard has rescued many people. Time it right and it's magical.",
+      "wetAlt": {
+        "title": "National Trust Visitor Centre",
+        "description": "Learn about Gower's unique AONB status, shipwrecks, and wildlife. Small but interesting exhibition.",
         "costFrom": 0,
         "costTo": 0
-      }
+      },
+      "budgetAlt": {
+        "title": "Beach walk only",
+        "description": "Skip Worm's Head and just walk the beach. Equally stunning and you can go anytime regardless of tides."
+      },
+      "postcode": "SA3 1PR"
     },
     {
       "day": 1,
       "orderIndex": 4,
-      "time": "18:30",
+      "time": "18:00",
       "type": "accommodation",
-      "title": "The King Arthur Hotel",
-      "description": "Traditional hotel in Reynoldston, a good base for exploring the Gower. Offers comfortable rooms and a restaurant.",
-      "costFrom": 100,
-      "costTo": 200,
-      "lat": 51.586838,
-      "lng": -4.188504,
-      "travelToNext": "20min drive via A4118",
-      "travelMode": "drive",
+      "title": "Hillend Campsite",
+      "description": "Legendary surf campsite right behind the dunes at Llangennith. Wake up to the sound of waves. Basic but brilliant - showers, toilets, small shop. Book pitch in advance for weekends.",
+      "costFrom": 12,
+      "costTo": 22,
+      "costNote": "per person per night",
+      "lat": 51.5752,
+      "lng": -4.2858,
+      "website": "https://www.hillend.co.uk",
+      "phone": "01792 386204",
+      "travelToNext": "Walk to beach",
+      "travelMode": "walk",
+      "insiderTip": "Pitch near the back for shelter from wind, or at the front for dawn surf checks from your tent. Gets busy on sunny weekends - book ahead or arrive early Friday.",
       "budgetAlt": {
-        "title": "Llangennith Campsite",
-        "description": "Camping with basic facilities. A cheap option close to the beach.",
-        "costFrom": 15,
-        "costTo": 30
+        "title": "Wild camp (be responsible)",
+        "description": "Wild camping is technically not permitted but tolerated if you're discreet, leave no trace, and camp away from main paths. Please respect the AONB."
       },
-      "postcode": "SA3 1AG"
-    },
-    {
-      "day": 1,
-      "orderIndex": 5,
-      "time": "19:30",
-      "type": "food",
-      "title": "The Britannia Inn",
-      "foodType": "Dinner",
-      "description": "Traditional pub food in a relaxed atmosphere.",
-      "costFrom": 15,
-      "costTo": 25,
-      "lat": 51.585,
-      "lng": -4.205,
-      "travelToNext": "0",
-      "travelMode": "none",
-      "budgetAlt": {
-        "title": "Cook your own dinner at the campsite",
-        "description": "Bring your own food and enjoy a simple meal"
+      "premiumAlt": {
+        "title": "King Arthur Hotel (Reynoldston)",
+        "description": "Charming country pub with rooms in the heart of Gower. Excellent restaurant, cosy rooms, real fires. Perfect after a day in the sea.",
+        "costFrom": 100,
+        "costTo": 150,
+        "website": "https://www.kingarthurhotel.co.uk"
       },
-      "postcode": "SA3 1AS"
+      "postcode": "SA3 1HZ"
     },
     {
       "day": 2,
       "orderIndex": 1,
       "time": "09:00",
       "type": "activity",
-      "title": "Walk to Worm's Head",
-      "description": "Walk across the causeway to Worm's Head at low tide and explore this unique tidal island. Check tide times before you set off!",
+      "title": "Gower Coasteering",
+      "description": "Explore Gower's rugged coastline by jumping, swimming, and scrambling. Guided sessions take you to hidden coves, through sea caves, and off cliff jumps (all optional). All equipment provided including wetsuit, helmet, and buoyancy aid.",
       "duration": "3 hours",
-      "costFrom": 0,
-      "costTo": 0,
-      "lat": 51.562,
-      "lng": -4.29,
-      "travelToNext": "10min drive via A4118",
+      "operator": "Adventure Beyond",
+      "operatorUrl": "https://www.adventure-beyond.co.uk",
+      "operatorPhone": "01639 701446",
+      "alternativeOperators": [
+        {
+          "name": "TYF Gower",
+          "url": "https://www.tyf.com",
+          "notes": "The original coasteering pioneers also operate on Gower"
+        },
+        {
+          "name": "Gower Adventures",
+          "url": "https://www.goweradventures.co.uk",
+          "price": "from £40pp"
+        }
+      ],
+      "bookingEssential": true,
+      "costFrom": 45,
+      "costTo": 65,
+      "lat": 51.5350,
+      "lng": -4.1150,
+      "travelToNext": "25min drive to Three Cliffs Bay",
       "travelMode": "drive",
+      "requirements": {
+        "minAge": 8,
+        "swimAbility": "Must be able to swim 25m",
+        "fitness": "Reasonable"
+      },
+      "insiderTip": "All jumps are optional - guides will always offer an alternative route if you don't want to jump. The water feels cold at first but the wetsuit does its job. You'll be warm within 5 minutes.",
       "wetAlt": {
-        "title": "Gower Heritage Centre",
-        "description": "Learn about the Gower's history and heritage at this interesting centre. Has indoor and outdoor exhibits.",
-        "costFrom": 7,
-        "costTo": 10
+        "title": "Second surf session",
+        "description": "Head back to Llangennith for another go at surfing. You'll be amazed how much you improve on day 2.",
+        "costFrom": 35,
+        "costTo": 45
       },
       "budgetAlt": {
-        "title": "Explore Rhossili Bay",
-        "description": "Walk along the beach and admire the views of Rhossili Bay.",
+        "title": "Free wild swim at Fall Bay",
+        "description": "Hidden cove with natural arch. Bring your own kit and swim off the rocks. Beautiful but exposed - only for confident swimmers. Access via coastal path from Rhossili.",
         "costFrom": 0,
         "costTo": 0
       }
@@ -178,69 +243,115 @@
       "orderIndex": 2,
       "time": "12:30",
       "type": "food",
-      "title": "The Bay Bistro & Coffee House",
+      "title": "Three Cliffs Coffee Shop",
       "foodType": "lunch",
-      "description": "Casual cafe with sandwiches and ice cream.",
-      "costFrom": 10,
-      "costTo": 20,
-      "lat": 51.569,
-      "lng": -4.287,
-      "travelToNext": "1 hours drive via A4118",
-      "travelMode": "drive",
-      "budgetAlt": {
-        "title": "Picnic at Rhossili Downs",
-        "description": "Enjoy your lunch with a fantastic view from the top of the hill."
+      "description": "Simple cafe near Three Cliffs Bay serving excellent toasties, cakes, and coffee. Small terrace with views. Perfect pit-stop before or after exploring the bay.",
+      "costFrom": 8,
+      "costTo": 15,
+      "lat": 51.5606,
+      "lng": -4.1082,
+      "travelToNext": "15min walk to Three Cliffs Bay",
+      "travelMode": "walk",
+      "alternative": {
+        "title": "Pobbles Beach Cafe (if open)",
+        "description": "Seasonal beach shack closer to the sand."
       },
-      "postcode": "SA3 1PN"
+      "budgetAlt": {
+        "title": "Packed lunch on the beach",
+        "description": "Pick up supplies from Penmaen Stores and picnic on one of Gower's most beautiful beaches."
+      },
+      "postcode": "SA3 2HL"
     },
     {
       "day": 2,
       "orderIndex": 3,
-      "time": "13:30",
+      "time": "14:00",
       "type": "activity",
-      "title": "SUP Boarding at Oxwich Bay",
-      "description": "Enjoy the calm waters of Oxwich Bay on a Stand Up Paddleboard. Great for all levels of experience.",
-      "duration": "2 hours",
-      "costFrom": 35,
-      "costTo": 55,
-      "lat": 51.558,
-      "lng": -4.165,
-      "travelToNext": "0",
-      "travelMode": "none",
+      "title": "Three Cliffs Bay Exploration",
+      "description": "End your trip at one of Britain's most photographed beaches. Three Cliffs Bay features three limestone peaks, a ruined castle, stepping stones across the river, and golden sand. Walk from Penmaen Burrows or Parkmill - the approach is part of the magic.",
+      "duration": "2-3 hours",
+      "costFrom": 0,
+      "costTo": 6,
+      "costNote": "Free access, parking £4-6 at Penmaen or Parkmill",
+      "lat": 51.5630,
+      "lng": -4.1070,
+      "travelToNext": "1hr drive to Cardiff via M4, 1hr 30min to Bristol",
+      "travelMode": "drive",
+      "insiderTip": "Low tide is best - you can walk all the way along the sand and cross the stepping stones. At high tide, the beach is smaller but you can still access via the sand dunes. Pennard Castle ruin on the cliff is worth the climb.",
       "wetAlt": {
-        "title": "Swansea Museum",
-        "description": "Explore Swansea's history at this interesting museum.",
+        "title": "Mumbles exploration",
+        "description": "Head to Mumbles for ice cream (Joe's is legendary), browse the independent shops, and walk the pier. Classic seaside town with cafes and pubs.",
         "costFrom": 0,
-        "costTo": 0
-      },
-      "budgetAlt": {
-        "title": "Swim at Oxwich Bay",
-        "description": "Enjoy a swim in the sea",
-        "costFrom": 0,
-        "costTo": 0
+        "costTo": 15
       }
     }
   ],
   "costBreakdown": {
     "standard": {
       "activities": 125,
-      "accommodation": 150,
-      "food": 80,
-      "transport": 25,
-      "total": 380
+      "accommodation": 40,
+      "food": 55,
+      "transport": 35,
+      "total": 255,
+      "notes": "Based on 2 adults, camping, 2 activities"
     },
     "budget": {
-      "activities": 20,
-      "accommodation": 20,
-      "food": 30,
+      "activities": 35,
+      "accommodation": 24,
+      "food": 25,
       "transport": 25,
-      "total": 95
+      "total": 109,
+      "notes": "Camping, one surf lesson, packed lunches"
+    },
+    "premium": {
+      "activities": 150,
+      "accommodation": 150,
+      "food": 100,
+      "transport": 40,
+      "total": 440,
+      "notes": "Country hotel, all activities, restaurant meals"
     }
   },
   "knowBeforeYouGo": {
-    "weather": "Gower weather can be unpredictable. Be prepared for sunshine and showers, especially outside of summer. Check the forecast before you go.",
-    "traffic": "Traffic can be heavy on the A4118, especially during peak season. Allow extra time for travel. Parking at popular beaches can fill up quickly – arrive early or consider using public transport.",
-    "booking": "Coasteering and surfing lessons should be booked in advance, especially during school holidays. Accommodation also books up quickly, so reserve early to avoid disappointment.",
-    "fitness": "A moderate level of fitness is required for coasteering and walking. Be prepared for some scrambling and swimming. Check tide times for the walk to Worm's Head."
-  }
+    "weather": "Gower has a mild climate but can be unpredictable. Sea temperatures are chilly (14-16°C in summer) but wetsuits make all activities comfortable. Coastal winds can be strong - great for surfing, not so great for beach lounging.",
+    "traffic": "The A4118 through Gower gets very congested on sunny weekends - allow extra time. Parking at popular beaches (Rhossili, Three Cliffs) fills by 10am in summer. Arrive early or use the Gower Explorer bus.",
+    "booking": "Surfing lessons and coasteering should be booked in advance, especially for weekends. Summer accommodation on Gower is in high demand - Hillend Campsite and popular campsites book up fast.",
+    "fitness": "A moderate level of fitness is required for coasteering and walking. Surfing is suitable for beginners but you'll use muscles you didn't know you had! The walk to Three Cliffs Bay involves some hills and sand dunes.",
+    "tides": "Check tide times for Worm's Head crossing (2.5 hours either side of low tide only). Three Cliffs Bay is more accessible at low tide. Surf is usually best on incoming tides with offshore (easterly) winds.",
+    "gowerExplorer": "The Gower Explorer bus runs in summer connecting Swansea with key Gower villages and beaches. Useful for linear coastal path walks or to avoid parking hassle."
+  },
+  "extensions": {
+    "addDay": {
+      "title": "Add SUP Adventure",
+      "description": "Try stand-up paddleboarding in sheltered Oxwich Bay or Port Eynon. SUP Gower and others offer lessons and rentals.",
+      "costFrom": 35,
+      "costTo": 50
+    },
+    "alternative": {
+      "title": "Wild Swimming Trail",
+      "description": "Swap coasteering for a self-guided wild swimming tour: Blue Pool (Broughton Bay), Fall Bay, and Pobbles Beach. Bring your own kit and adventure mindset.",
+      "costFrom": 0,
+      "costTo": 10
+    }
+  },
+  "mapRoute": {
+    "start": {
+      "name": "Llangennith Beach",
+      "lat": 51.5756,
+      "lng": -4.2847
+    },
+    "waypoints": [
+      {"name": "Rhossili Bay", "lat": 51.5659, "lng": -4.2902},
+      {"name": "Port Eynon", "lat": 51.5450, "lng": -4.2087},
+      {"name": "Three Cliffs Bay", "lat": 51.5630, "lng": -4.1070}
+    ],
+    "totalDriving": "Approximately 45 minutes total over 2 days"
+  },
+  "lastUpdated": "2025-02-06",
+  "researchSources": [
+    "Llangennith Surf School",
+    "South Wales Surf Lessons",
+    "National Trust Gower",
+    "Perplexity AI research 2025"
+  ]
 }

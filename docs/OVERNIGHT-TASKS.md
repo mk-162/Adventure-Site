@@ -4,7 +4,7 @@
 Make every Adventure Wales landing page amazing with deep research from Perplexity + Brave Search.
 
 ## Tools Available
-- **Perplexity API**: (key stored in .env - do not commit keys to repo) (stored in .env)
+- **Perplexity API**: (key stored in .env - do not commit keys to repo)
 - **Research utils**: scripts/research-utils.ts
 - **Brave Search**: via web_search tool
 - **NO image generation** - text content only

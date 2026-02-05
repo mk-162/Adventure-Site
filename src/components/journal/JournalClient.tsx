@@ -225,7 +225,15 @@ export default function JournalClient({
               })}
 
               {/* Pagination */}
-              <Pagination currentPage={currentPage} totalPages={totalPages} />
+              <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                baseUrl="/journal"
+                searchParams={{
+                  ...(selectedCategory ? { category: selectedCategory } : {}),
+                  ...(selectedTag ? { tag: selectedTag } : {}),
+                }}
+              />
 
               <div className="text-center mt-4 text-sm text-slate-500">
                 Showing {(currentPage - 1) * 12 + 1}-{Math.min(currentPage * 12, totalCount)} of {totalCount} articles

@@ -44,23 +44,93 @@ A mountain biker visiting Wales for 3 days doesn't just need trail recommendatio
 
 **If it's not in our database, it can't go in an itinerary. So the database must contain everything a visitor might want to do, see, eat, or visit — not just adventure activities.**
 
+## The Tier System
+
+Everything in the database has a tier. The tier determines how prominently it appears, whether it gets its own landing page, and how much content investment it gets.
+
+### Tier 1: Destination Draws
+*The reasons people visit the area. What they Google. What they tell their friends about.*
+
+These are the headline attractions — both businesses and natural landmarks:
+- **Zip World** (business) — people travel to Snowdonia specifically for this
+- **Snowdon** (landmark) — people travel to Wales specifically to climb it
+- **Coasteering in Pembrokeshire** (activity category) — a destination activity
+- **Pen y Fan** (landmark) — the iconic Brecon Beacons hike
+- **Surf Snowdonia** (business) — people plan trips around it
+- **Skomer Island puffins** (natural attraction) — seasonal destination draw
+
+**Treatment**: Full, rich landing pages. Deep content. SEO priority. These pages must be genuinely best-in-class — better than Visit Wales, better than TripAdvisor. These are the pages that rank and drive traffic.
+
+**Rule**: If someone Googles this thing + "Wales", we should be on page 1.
+
+### Tier 2: Trip Enhancers
+*Things that make a good trip great. People don't travel FOR these, but they're glad they found them.*
+
+- **Castles** — Harlech, Conwy, Caernarfon (worth a detour)
+- **Waterfalls** — Sgwd yr Eira, Pistyll Rhaeadr (afternoon activity)
+- **Good pubs** — The Pen-y-Gwryd Hotel, The Stackpole Inn (adventure-friendly)
+- **Cafes** — cyclist pit stops, post-hike coffee spots
+- **Beaches** — for a rest day or afternoon
+- **Scenic viewpoints** — photo ops, sunset spots
+- **Local food experiences** — markets, farm shops, Welsh cakes
+
+**Treatment**: Appear in itineraries, on region pages, and in "what else to do" sections. May get their own page if there's genuine search demand (e.g. "best pubs near Snowdon"), but don't create thin standalone pages just for the sake of it. Group them into useful lists instead.
+
+**Rule**: These appear wherever a T1 activity is recommended. "After your coasteering session, the Stackpole Inn is a 5-minute walk."
+
+### Tier 3: Practical Services
+*Useful data that makes trip planning smooth. Nobody Googles these, but everyone needs them.*
+
+- **Gear shops** — where to buy/rent if you forgot something
+- **Bike washes** — essential for MTB trips
+- **Outdoor stores** — for last-minute kit
+- **Parking** — specific car parks, costs, alternatives
+- **Transport** — bus stops, train stations, shuttle services
+- **Medical** — nearest A&E, pharmacies (for remote areas)
+
+**Treatment**: Data points within itineraries and region pages. Never standalone pages. "There's a bike wash at the Coed y Brenin car park" is a line item, not a landing page.
+
+**Rule**: T3 never gets its own URL. It lives inside T1 and T2 content.
+
+## SEO Strategy: Depth Over Breadth
+
+### What We Build Landing Pages For
+- **T1 attractions and activities** — rich, authoritative, best-in-class
+- **Region + activity combos** — "coasteering in Pembrokeshire", "mountain biking Snowdonia"
+- **Trip planning intent** — "weekend adventure Wales", "3 days in Snowdonia"
+- **Genuine questions** — "is coasteering safe", "best time to climb Snowdon"
+
+### What We DON'T Build Landing Pages For
+- Individual T3 services (no page for a bike wash)
+- Thin operator listings with no real content (that's spam)
+- Activity types with no Welsh presence (no bungee jumping page if there's nothing to link to)
+- Duplicate/near-duplicate pages that cannibalise each other
+
+### Content Quality Bar
+Every page must pass this test:
+1. **Would a real person bookmark this?** If not, don't publish it.
+2. **Does it contain information you can't get from the first Google result?** If not, what's the point?
+3. **Does it help someone plan or book something?** If not, it's just content for content's sake.
+
 ## What Goes In The Database
 
-### Adventure Activities (core)
-Coasteering, climbing, kayaking, surfing, mountain biking, hiking, caving, gorge walking, wild swimming, paddleboarding, horse riding, fishing, zip-lining, etc.
+### Activities (T1)
+Coasteering, climbing, kayaking, surfing, mountain biking, hiking, caving, gorge walking, wild swimming, paddleboarding, horse riding, fishing, zip-lining, etc. Each linked to real operators with real prices.
 
-### Points of Interest (essential for trip planning)
-- **Heritage & Culture**: Castles, ruins, historic houses, museums, galleries
-- **Natural Landmarks**: Waterfalls, viewpoints, scenic walks, lakes, beaches
-- **Food & Drink**: Pubs, restaurants, cafes — especially adventure-friendly ones (dog-friendly, muddy boots welcome, drying rooms, bike racks)
-- **Attractions**: Adventure parks, gardens, markets, craft centres
-- **Practical**: Bike washes, gear shops, outdoor stores, pharmacies near remote areas
+### Attractions & Landmarks (T1 + T2)
+Snowdon, castles, waterfalls, beaches, islands, parks. These need a `tier` field so we know which get landing pages and which are itinerary data.
 
-### Accommodation
+### Operators (T1 + T2)
+Adventure providers, accommodation, food & drink. Quality over quantity — a well-researched listing with 10 fields filled is worth more than 50 stubs.
+
+### Accommodation (T2)
 Hotels, hostels, B&Bs, campsites, glamping, bunkhouses — matched to regions and activities.
 
-### Events
+### Events (T1 + T2)
 Races, festivals, competitions, seasonal activities.
+
+### Services (T3)
+Gear shops, bike washes, transport, parking — data only, no standalone pages.
 
 ## Content Philosophy
 

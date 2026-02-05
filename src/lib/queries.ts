@@ -20,8 +20,9 @@ import {
   posts,
   postTags,
   itineraryStops,
+  pageViews,
 } from "@/db/schema";
-import { eq, and, ilike, desc, asc, sql } from "drizzle-orm";
+import { eq, and, ilike, desc, asc, sql, gte } from "drizzle-orm";
 
 // =====================
 // SITE QUERIES
@@ -310,6 +311,41 @@ export async function getOperatorWithActivities(slug: string) {
   return {
     ...operator,
     activities: operatorActivities,
+  };
+}
+
+export async function getOperatorViewStats(operatorId: number, days: number = 30) {
+  const endDate = new Date();
+  const startDate = new Date();
+  startDate.setDate(endDate.getDate() - days);
+
+  // Format date as string YYYY-MM-DD for comparison if needed, but Drizzle date helper might handle Date object if column is `date`
+  // Actually schema uses `date` type which often requires string in Drizzle/Postgres
+  const startDateStr = startDate.toISOString().split('T')[0];
+
+  const dailyViews = await db
+    .select({
+      date: pageViews.viewDate,
+      views: pageViews.viewCount,
+      uniqueVisitors: pageViews.uniqueVisitors,
+    })
+    .from(pageViews)
+    .where(
+      and(
+        eq(pageViews.operatorId, operatorId),
+        gte(pageViews.viewDate, startDateStr)
+      )
+    )
+    .orderBy(asc(pageViews.viewDate));
+
+  // Calculate totals
+  const totalViews = dailyViews.reduce((sum, day) => sum + day.views, 0);
+  const totalUnique = dailyViews.reduce((sum, day) => sum + day.uniqueVisitors, 0);
+
+  return {
+    daily: dailyViews,
+    totalViews,
+    totalUnique,
   };
 }
 

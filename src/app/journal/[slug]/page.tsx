@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { Clock, Tag as TagIcon, Share2, Home, ChevronRight } from "lucide-react";
 import { getPostBySlug, getRelatedPosts, getItineraries, getOperators, getLocations } from "@/lib/queries";
 import { MarkdownRenderer } from "@/components/markdown-renderer";
+import { AdSlot } from "@/components/commercial/AdSlot";
+import { AdvertiseWidget } from "@/components/commercial/AdvertiseWidget";
 
 const categoryColors: Record<string, string> = {
   guide: "#3b82f6",
@@ -235,6 +237,16 @@ export default async function ArticlePage({ params }: Props) {
                 </div>
               )}
 
+              {/* Ad Slot - Banner */}
+              <div className="mb-8">
+                <AdSlot
+                  slotName="journal-footer"
+                  pageType="journal"
+                  pageSlug={slug}
+                  fallback={<AdvertiseWidget variant="banner" context="Journal" />}
+                />
+              </div>
+
               {/* Share buttons */}
               <div className="mb-12 pb-8 border-b border-slate-200">
                 <h3 className="text-sm font-semibold text-slate-500 mb-3">SHARE THIS ARTICLE</h3>
@@ -279,6 +291,14 @@ export default async function ArticlePage({ params }: Props) {
 
             {/* RIGHT: Sidebar (1/3) */}
             <aside className="space-y-8">
+              {/* Ad Slot */}
+              <AdSlot
+                slotName="journal-sidebar"
+                pageType="journal"
+                pageSlug={slug}
+                fallback={<AdvertiseWidget variant="sidebar" context="Journal" />}
+              />
+
               {/* Related Itineraries */}
               {itineraries.length > 0 && (
                 <div className="bg-slate-50 rounded-2xl p-6">

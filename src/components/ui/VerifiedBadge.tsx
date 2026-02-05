@@ -5,7 +5,8 @@ export type ClaimStatus = "stub" | "claimed" | "premium";
 export type BadgeSize = "sm" | "md" | "lg";
 
 interface VerifiedBadgeProps {
-  claimStatus: ClaimStatus;
+  claimStatus: ClaimStatus; // or the effective tier
+  isTrial?: boolean;
   size?: BadgeSize;
   showLabel?: boolean;
   className?: string;
@@ -13,15 +14,18 @@ interface VerifiedBadgeProps {
 
 export function VerifiedBadge({
   claimStatus,
+  isTrial,
   size = "md",
   showLabel = true,
   className,
 }: VerifiedBadgeProps) {
-  // Don't render anything for stub operators
-  if (claimStatus === "stub") {
+  // Don't render anything for stub operators (unless it's a trial which effectively makes it premium)
+  if (claimStatus === "stub" && !isTrial) {
     return null;
   }
 
+  // Treat as premium if it says premium OR if it's a trial (which upgrades to premium)
+  // Caller should pass effective tier as claimStatus, but we can double check
   const isPremium = claimStatus === "premium";
 
   // Size-specific styles
@@ -121,19 +125,31 @@ export function VerifiedBadge({
           )}
         />
       )}
+
+      {isTrial && (
+        <span className="absolute -top-1 -right-1 flex h-2.5 w-2.5">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-sky-500"></span>
+        </span>
+      )}
+      {isTrial && showLabel && size !== 'sm' && (
+          <span className="ml-1 text-[10px] bg-sky-100 text-sky-800 px-1.5 py-0.5 rounded-full border border-sky-200">
+              Trial
+          </span>
+      )}
     </div>
   );
 }
 
 // Convenience exports
-export function VerifiedBadgeSm({ claimStatus }: { claimStatus: ClaimStatus }) {
-  return <VerifiedBadge claimStatus={claimStatus} size="sm" showLabel={false} />;
+export function VerifiedBadgeSm({ claimStatus, isTrial }: { claimStatus: ClaimStatus; isTrial?: boolean }) {
+  return <VerifiedBadge claimStatus={claimStatus} isTrial={isTrial} size="sm" showLabel={false} />;
 }
 
-export function VerifiedBadgeMd({ claimStatus }: { claimStatus: ClaimStatus }) {
-  return <VerifiedBadge claimStatus={claimStatus} size="md" />;
+export function VerifiedBadgeMd({ claimStatus, isTrial }: { claimStatus: ClaimStatus; isTrial?: boolean }) {
+  return <VerifiedBadge claimStatus={claimStatus} isTrial={isTrial} size="md" />;
 }
 
-export function VerifiedBadgeLg({ claimStatus }: { claimStatus: ClaimStatus }) {
-  return <VerifiedBadge claimStatus={claimStatus} size="lg" />;
+export function VerifiedBadgeLg({ claimStatus, isTrial }: { claimStatus: ClaimStatus; isTrial?: boolean }) {
+  return <VerifiedBadge claimStatus={claimStatus} isTrial={isTrial} size="lg" />;
 }

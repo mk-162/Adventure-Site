@@ -18,6 +18,7 @@ import {
   CheckCircle
 } from "lucide-react";
 import { AdSlot } from "@/components/commercial/AdSlot";
+import { AdvertiseWidget } from "@/components/commercial/AdvertiseWidget";
 import { 
   JsonLd, 
   createFAQPageSchema, 
@@ -428,6 +429,16 @@ export default async function AnswerPage({ params }: Props) {
               </div>
             )}
 
+            {/* Mobile Ad */}
+            <div className="lg:hidden mb-8">
+               <AdSlot
+                slotName="answer-mobile-mid"
+                pageType="answer"
+                pageSlug={slug}
+                fallback={<AdvertiseWidget variant="inline" context="Answers" />}
+              />
+            </div>
+
             {/* Table of Contents (Mobile - collapsible) */}
             {headings.length >= 2 && (
               <div className="lg:hidden mb-8">
@@ -489,7 +500,12 @@ export default async function AnswerPage({ params }: Props) {
 
             {/* Ad Slot */}
             <div className="my-8">
-              <AdSlot slotName="answer-footer" pageType="answer" pageSlug={slug} />
+              <AdSlot
+                slotName="answer-footer"
+                pageType="answer"
+                pageSlug={slug}
+                fallback={<AdvertiseWidget variant="banner" context="Answers" />}
+              />
             </div>
 
             {/* Feedback Section */}
@@ -543,6 +559,14 @@ export default async function AnswerPage({ params }: Props) {
           {/* Sidebar (Desktop only) */}
           <aside className="hidden lg:block lg:col-span-4">
             <div className="sticky top-24 flex flex-col gap-6">
+              {/* Ad Slot */}
+              <AdSlot
+                slotName="answer-sidebar"
+                pageType="answer"
+                pageSlug={slug}
+                fallback={<AdvertiseWidget variant="sidebar" context="Answers" />}
+              />
+
               {/* CTA Card */}
               <div className="bg-primary rounded-xl p-6 text-white relative overflow-hidden">
                 <div className="absolute -right-10 -top-10 w-32 h-32 bg-white/10 rounded-full blur-2xl" />

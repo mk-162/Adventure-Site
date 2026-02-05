@@ -15,6 +15,7 @@ import { ItineraryPrintButton } from "@/components/itinerary/ItineraryPrintButto
 import { ItineraryQuickNav } from "@/components/itinerary/ItineraryQuickNav";
 import { ShareButton } from "@/components/ui/ShareButton";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
+import { ViewTracker } from "@/components/ui/ViewTracker";
 import { getItineraryWithStops, getAccommodation, getAllItinerarySlugs } from "@/lib/queries";
 
 function getDifficultyColor(difficulty: string): string {
@@ -229,6 +230,7 @@ export default async function ItineraryDetailPage({ params }: Props) {
           )}
         </div>
       </div>
+      <ViewTracker pageType="itinerary" pageSlug={slug} />
     </div>
   );
 }

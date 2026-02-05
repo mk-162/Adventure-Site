@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import { OperatorCard } from '@/components/cards/operator-card';
 import { AdvertiseWidget } from '@/components/commercial/AdvertiseWidget';
 import { Star, Award, Search } from 'lucide-react';
+import { getEffectiveTier } from '@/lib/trial-utils';
 
 interface Operator {
   id: number;
@@ -20,6 +21,9 @@ interface Operator {
   priceRange: string | null;
   uniqueSellingPoint: string | null;
   logoUrl: string | null;
+  billingTier?: string | null;
+  trialTier?: string | null;
+  trialExpiresAt?: Date | null;
 }
 
 interface Region {
@@ -113,8 +117,14 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
   }, [operators]);
 
   // Separate featured from regular
-  const featuredOperators = filteredOperators.filter(op => op.claimStatus === "premium");
-  const regularOperators = filteredOperators.filter(op => op.claimStatus !== "premium");
+  const featuredOperators = filteredOperators.filter(op => {
+    const tier = getEffectiveTier(op as any);
+    return tier === "premium";
+  });
+  const regularOperators = filteredOperators.filter(op => {
+    const tier = getEffectiveTier(op as any);
+    return tier !== "premium";
+  });
 
   return (
     <>

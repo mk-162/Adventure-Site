@@ -10,14 +10,16 @@ interface SearchPageProps {
   searchParams: {
     region?: string;
     activity?: string;
+    q?: string;
   };
 }
 
 async function getSearchResults(filters: {
   regionSlug?: string;
   activitySlug?: string;
+  query?: string;
 }) {
-  const { regionSlug, activitySlug } = filters;
+  const { regionSlug, activitySlug, query } = filters;
 
   // Get region if specified
   let region = null;
@@ -45,6 +47,14 @@ async function getSearchResults(filters: {
   const activityConditions = [eq(activities.status, "published")];
   if (region) activityConditions.push(eq(activities.regionId, region.id));
   if (activityType) activityConditions.push(eq(activities.activityTypeId, activityType.id));
+  if (query) {
+    activityConditions.push(
+      or(
+        ilike(activities.name, `%${query}%`),
+        ilike(activities.description, `%${query}%`)
+      )!
+    );
+  }
 
   // Fetch activities with joins
   const activitiesResults = await db
@@ -62,6 +72,14 @@ async function getSearchResults(filters: {
   // Build itinerary conditions
   const itineraryConditions = [eq(itineraries.status, "published")];
   if (region) itineraryConditions.push(eq(itineraries.regionId, region.id));
+  if (query) {
+    itineraryConditions.push(
+      or(
+        ilike(itineraries.title, `%${query}%`),
+        ilike(itineraries.description, `%${query}%`)
+      )!
+    );
+  }
 
   // Fetch itineraries
   const itinerariesResults = await db
@@ -77,6 +95,14 @@ async function getSearchResults(filters: {
   // Build accommodation conditions
   const accommodationConditions = [eq(accommodation.status, "published")];
   if (region) accommodationConditions.push(eq(accommodation.regionId, region.id));
+  if (query) {
+    accommodationConditions.push(
+      or(
+        ilike(accommodation.name, `%${query}%`),
+        ilike(accommodation.description, `%${query}%`)
+      )!
+    );
+  }
 
   // Fetch accommodation
   const accommodationResults = await db
@@ -159,6 +185,7 @@ async function SearchResults({ searchParams }: SearchPageProps) {
   const results = await getSearchResults({
     regionSlug: searchParams.region,
     activitySlug: searchParams.activity,
+    query: searchParams.q?.trim(),
   });
 
   const totalResults = 
@@ -211,6 +238,7 @@ async function SearchResults({ searchParams }: SearchPageProps) {
                 type="text"
                 name="q"
                 placeholder="Search adventures, activities, regions..."
+                defaultValue={searchParams.q ?? ""}
                 className="w-full pl-12 pr-28 py-4 rounded-xl bg-white text-slate-900 placeholder-slate-400 border-2 border-white/80 focus:border-accent-hover focus:ring-2 focus:ring-accent-hover outline-none shadow-lg text-base"
               />
               <button

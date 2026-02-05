@@ -19,6 +19,66 @@ export function JsonLd({ data }: JsonLdProps) {
 }
 
 /**
+ * Helper function to create LocalBusiness schema for operator pages
+ */
+export function createLocalBusinessSchema(operator: {
+  name: string;
+  slug: string;
+  description?: string | null;
+  address?: string | null;
+  website?: string | null;
+  phone?: string | null;
+  email?: string | null;
+  googleRating?: string | null;
+  reviewCount?: number | null;
+  lat?: string | null;
+  lng?: string | null;
+  coverImage?: string | null;
+  priceRange?: string | null;
+}, siteUrl: string = "https://adventurewales.co.uk") {
+  const schema: Record<string, any> = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": operator.name,
+    "url": `${siteUrl}/directory/${operator.slug}`,
+  };
+
+  if (operator.description) schema.description = operator.description;
+  if (operator.website) schema.sameAs = [operator.website];
+  if (operator.phone) schema.telephone = operator.phone;
+  if (operator.email) schema.email = operator.email;
+  if (operator.coverImage) schema.image = operator.coverImage;
+  if (operator.priceRange) schema.priceRange = operator.priceRange;
+
+  if (operator.address) {
+    schema.address = {
+      "@type": "PostalAddress",
+      "streetAddress": operator.address,
+      "addressCountry": "GB",
+    };
+  }
+
+  if (operator.lat && operator.lng) {
+    schema.geo = {
+      "@type": "GeoCoordinates",
+      "latitude": parseFloat(operator.lat),
+      "longitude": parseFloat(operator.lng),
+    };
+  }
+
+  if (operator.googleRating) {
+    schema.aggregateRating = {
+      "@type": "AggregateRating",
+      "ratingValue": parseFloat(operator.googleRating),
+      "bestRating": "5",
+      ...(operator.reviewCount && { "reviewCount": operator.reviewCount }),
+    };
+  }
+
+  return schema;
+}
+
+/**
  * Helper function to create WebSite schema
  */
 export function createWebSiteSchema(siteUrl: string = "https://adventurewales.co.uk") {

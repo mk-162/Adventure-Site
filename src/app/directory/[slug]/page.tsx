@@ -11,6 +11,7 @@ import { ClaimListingBanner } from "@/components/operators/ClaimListingBanner";
 import MapView from "@/components/ui/MapView";
 import { ShareButton } from "@/components/ui/ShareButton";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
+import { JsonLd, createLocalBusinessSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 import { 
   ChevronRight, 
   MapPin, 
@@ -104,6 +105,14 @@ export default async function OperatorProfilePage({ params }: Props) {
 
   return (
     <div className="min-h-screen pb-24 lg:pb-12">
+      {/* Structured Data */}
+      <JsonLd data={createLocalBusinessSchema(operator)} />
+      <JsonLd data={createBreadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Directory", url: "/directory" },
+        { name: operator.name, url: `/directory/${operator.slug}` },
+      ])} />
+
       {/* Verification Banner — only for claimed (non-premium) operators.
            Premium operators already have a prominent VerifiedBadge next to their name. */}
       {operator.claimStatus === "claimed" && (

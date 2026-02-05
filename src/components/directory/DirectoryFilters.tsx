@@ -135,10 +135,12 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
           </p>
 
           <div className="mt-6 relative max-w-md">
+            <label htmlFor="directory-search" className="sr-only">Search providers</label>
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
               <Search className="h-5 w-5 text-gray-400" />
             </div>
             <input
+              id="directory-search"
               type="search"
               placeholder="Search adventure providers..."
               value={searchQuery}
@@ -153,10 +155,13 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
       <section className="bg-white border-b sticky top-16 z-30">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex flex-wrap gap-2">
+            <label htmlFor="category-filter" className="sr-only">Filter by category</label>
             <select 
+              id="category-filter"
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
               className="border border-gray-200 rounded-lg px-3 py-2 text-sm"
+              aria-label="Filter by category"
             >
               <option value="">All Categories</option>
               {availableCategories.map((cat) => (
@@ -165,10 +170,13 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
                 </option>
               ))}
             </select>
+            <label htmlFor="region-filter" className="sr-only">Filter by region</label>
             <select 
+              id="region-filter"
               value={selectedRegion}
               onChange={(e) => setSelectedRegion(e.target.value)}
               className="border border-gray-200 rounded-lg px-3 py-2 text-sm"
+              aria-label="Filter by region"
             >
               <option value="">All Regions</option>
               {regions.map((region) => (
@@ -177,10 +185,13 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
                 </option>
               ))}
             </select>
+            <label htmlFor="activity-filter" className="sr-only">Filter by activity</label>
             <select 
+              id="activity-filter"
               value={selectedActivityType}
               onChange={(e) => setSelectedActivityType(e.target.value)}
               className="border border-gray-200 rounded-lg px-3 py-2 text-sm"
+              aria-label="Filter by activity type"
             >
               <option value="">All Activities</option>
               {activityTypes.map((type) => (
@@ -189,10 +200,13 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
                 </option>
               ))}
             </select>
+            <label htmlFor="rating-filter" className="sr-only">Filter by rating</label>
             <select 
+              id="rating-filter"
               value={selectedRating}
               onChange={(e) => setSelectedRating(e.target.value)}
               className="border border-gray-200 rounded-lg px-3 py-2 text-sm"
+              aria-label="Filter by rating"
             >
               <option value="">Rating: Any</option>
               <option value="4+">4+ Stars</option>

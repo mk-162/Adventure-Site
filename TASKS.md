@@ -104,10 +104,10 @@ These are the items code can't solve. They need content, business decisions, or 
 - [ ] **"Top Experiences" scope** — include Attractions, Walks, Sightseeing, Beaches (not just businesses)
 - [ ] **Generic filler cards** — "Rest & Relaxation", "Local Walk", "Shopping in town" for itineraries
 
-### ⚙️ Process Items (3) — Strategy Work
-- [ ] **Deep Research Skill** — create AI skill for region-specific tips/content generation
-- [ ] **Content Gap Analysis** — spreadsheet of all empty content stubs → feed into content engine
-- [ ] **YouTube auto-fetch** — onboarding should auto-fetch best videos from operator's YouTube feed
+### ⚙️ Process Items (3) — ✅ DONE
+- [x] **Deep Research Skill** — 3-stage pipeline: audit → queue → research. Skill at `clawd/skills/aw-deep-research/SKILL.md`
+- [x] **Content Gap Analysis** — `npm run audit:content` scans DB, outputs JSON + markdown. Found 363 gaps (22 critical, 313 auto-fixable)
+- [x] **YouTube auto-fetch** — `npm run youtube:fetch` scrapes operator websites for embeds, falls back to YouTube API. Works in dry-run + live mode
 
 ### 🎨 Visuals (2) — Need Live Site
 - [ ] **Advertise page screen grabs** — screenshots showing listing types for each column

@@ -1,20 +1,20 @@
 {
   "slug": "snowdonia-adventure-weekend",
   "title": "Snowdonia Adventure Weekend",
-  "tagline": "Zip lines, summit hikes, and gorge scrambling",
+  "tagline": "Zip lines, summit hikes, and gorge scrambling in Wales' most dramatic landscape",
   "region": "snowdonia",
   "days": 3,
   "difficulty": "moderate",
   "bestSeason": "May-September",
   "groupType": "families, friends",
-  "priceFrom": 550,
-  "priceTo": 950,
-  "budgetPriceFrom": 350,
-  "budgetPriceTo": 600,
+  "priceFrom": 500,
+  "priceTo": 850,
+  "budgetPriceFrom": 200,
+  "budgetPriceTo": 400,
   "highlights": [
-    "Zip World",
-    "Snowdon summit",
-    "Gorge walking"
+    "Velocity 2 - World's fastest zip line",
+    "Snowdon summit via Llanberis Path",
+    "Gorge walking with qualified guides"
   ],
   "activityTypes": [
     "zip-lining",
@@ -25,17 +25,27 @@
   "notSuitableFor": "Individuals with significant mobility issues or a fear of heights. Those seeking a relaxing or luxurious getaway may find this itinerary too active.",
   "weatherDependency": "medium",
   "packingEssentials": [
-    "Waterproof jacket and trousers",
+    "Waterproof jacket and trousers (essential - rain is common)",
     "Hiking boots with good ankle support",
     "Layers of clothing (fleece, base layers)",
     "Backpack (20-30L)",
     "Sunscreen and hat",
-    "Water bottle or hydration pack",
-    "Snacks",
-    "Head torch",
+    "Water bottle or hydration pack (2L minimum for Snowdon)",
+    "High-energy snacks",
+    "Head torch (for early starts or cave activities)",
     "First-aid kit",
-    "Map and compass or GPS device (and know how to use them!)"
+    "OS Map OL17 Snowdonia or GPS device",
+    "Swimsuit and quick-dry towel (for gorge walking)"
   ],
+  "drivingTimes": {
+    "fromManchester": "1hr 45min via M56/A55",
+    "fromLiverpool": "1hr 30min via A55",
+    "fromBirmingham": "2hr 30min via M6/A5",
+    "fromLondon": "4hr 30min via M40/M6/A5",
+    "penrhynToBala": "1hr 10min via A5",
+    "balaToBetwsYCoed": "45min via A5",
+    "betwsYCoedToPenrhyn": "50min via A5"
+  },
   "stops": [
     {
       "day": 1,
@@ -43,44 +53,60 @@
       "time": "09:00",
       "type": "activity",
       "title": "Velocity 2 Zip Line",
-      "description": "Experience the thrill of flying over Penrhyn Quarry on the world's fastest zip line. Enjoy breathtaking views as you reach speeds of over 100mph.",
-      "duration": "2.5 hours",
-      "costFrom": 89,
-      "costTo": 109,
+      "description": "Experience the thrill of flying over Penrhyn Quarry on the world's fastest zip line, reaching speeds over 100mph. The experience includes a safety briefing, gear fitting, and two flights - first tandem, then solo. Book via zipworld.co.uk at least 2 weeks ahead for weekends.",
+      "duration": "2-2.5 hours",
+      "operator": "Zip World",
+      "operatorUrl": "https://www.zipworld.co.uk/adventures/velocity",
+      "operatorPhone": "01248 601444",
+      "bookingEssential": true,
+      "costFrom": 85,
+      "costTo": 110,
       "lat": 53.1775,
       "lng": -4.0856,
-      "travelToNext": "30min drive via A5",
+      "travelToNext": "35min drive via A5 to Llanberis",
       "travelMode": "drive",
+      "insiderTip": "Book the first slot of the day (usually 9am) for the best chance of clear weather and shorter queues. The zip line operates in most weather conditions except high winds.",
+      "requirements": {
+        "minHeight": "1.2m",
+        "maxWeight": "120kg",
+        "minAge": 10
+      },
       "wetAlt": {
-        "title": "Bounce Below",
-        "description": "Jump and explore giant trampolines in a disused slate mine. Fun for all ages, regardless of the weather.",
+        "title": "Bounce Below (Llechwedd)",
+        "description": "Jump and explore giant trampolines suspended in a vast underground cavern - a disused Victorian slate mine. Weather-proof fun that's unique to Wales.",
         "costFrom": 25,
-        "costTo": 35
+        "costTo": 35,
+        "operatorUrl": "https://www.zipworld.co.uk/adventures/bounce-below"
       },
       "budgetAlt": {
         "title": "Walk around Llyn Ogwen",
-        "description": "Enjoy a scenic walk around Llyn Ogwen, taking in the stunning mountain views. A great free activity.",
+        "description": "Free scenic walk around beautiful Llyn Ogwen with stunning views of Tryfan and the Glyderau. Easy 2-mile circuit, often less crowded than Snowdon paths.",
         "costFrom": 0,
-        "costTo": 0
-      }
+        "costTo": 5,
+        "note": "Parking £5/day at Ogwen car park"
+      },
+      "postcode": "LL57 4YG"
     },
     {
       "day": 1,
       "orderIndex": 2,
-      "time": "12:30",
+      "time": "12:00",
       "type": "food",
       "title": "Pete's Eats",
       "foodType": "lunch",
-      "description": "A legendary cafe in Llanberis, famous for its hearty portions and climber-friendly atmosphere.",
-      "costFrom": 12,
-      "costTo": 20,
-      "lat": 53.12,
-      "lng": -4.127,
-      "travelToNext": "5min walk",
+      "description": "THE legendary mountaineering cafe in Llanberis - a rite of passage for anyone visiting Snowdonia. Famous for enormous portions of hearty comfort food. The Pete's Big Breakfast and veggie chilli are legendary. Expect queues at weekends but the atmosphere is worth it.",
+      "costFrom": 10,
+      "costTo": 18,
+      "lat": 53.1195,
+      "lng": -4.1268,
+      "openingHours": "8am-5pm (varies seasonally)",
+      "website": "https://www.petes-eats.co.uk",
+      "travelToNext": "10min walk to Llanberis Path start",
       "travelMode": "walk",
+      "insiderTip": "If Pete's is rammed, try Electric Mountain Cafe (5min away) or Gallt-y-Glyn for pub grub with lake views.",
       "budgetAlt": {
         "title": "Packed lunch at Llyn Padarn",
-        "description": "Enjoy your packed lunch with a view of Llyn Padarn and the surrounding mountains."
+        "description": "Pack sandwiches from Spar in Llanberis and enjoy with stunning lake and mountain views at one of the picnic benches."
       },
       "postcode": "LL55 4SL"
     },
@@ -89,24 +115,28 @@
       "orderIndex": 3,
       "time": "14:00",
       "type": "activity",
-      "title": "Llanberis Path Guided Walk (partial)",
-      "description": "Hike a section of the Llanberis Path, the easiest route to the summit of Snowdon. Enjoy the views without the full summit challenge, suitable for families. Turn back when feeling tired.",
-      "duration": "3 hours",
-      "costFrom": 45,
+      "title": "Llanberis Path Guided Walk",
+      "description": "The Llanberis Path is the longest but most gradual route to Snowdon's summit. For families or those wanting a gentler day, aim for the halfway point at the Halfway House (no longer a cafe but great viewpoint). Mountain guides available through Snowdonia Adventures or walk independently.",
+      "duration": "3-4 hours (halfway) or 6-7 hours (summit)",
+      "operator": "Snowdonia Adventures",
+      "operatorUrl": "https://www.snowdonia-adventures.co.uk",
+      "costFrom": 0,
       "costTo": 65,
-      "lat": 53.119,
-      "lng": -4.131,
-      "travelToNext": "15min drive to YHA Snowdon Llanberis",
+      "lat": 53.1192,
+      "lng": -4.1312,
+      "travelToNext": "15min drive to accommodation",
       "travelMode": "drive",
+      "insiderTip": "Parking at Llanberis Victoria Hotel car park is cheaper than council car park. Alternatively, take the Snowdon Sherpa bus from Betws-y-Coed to avoid parking hassle.",
       "wetAlt": {
         "title": "National Slate Museum",
-        "description": "Learn about the history of the slate industry in North Wales at this fascinating museum. It's free!",
+        "description": "Fascinating free museum exploring North Wales' slate mining heritage. Great for all ages with working demonstrations, historic buildings, and the longest zip line in Wales is just next door.",
         "costFrom": 0,
-        "costTo": 0
+        "costTo": 0,
+        "website": "https://museum.wales/slate"
       },
       "budgetAlt": {
-        "title": "Walk around Padarn Country Park",
-        "description": "Explore the scenic Padarn Country Park, with views of the lake and mountains.",
+        "title": "Padarn Country Park Trail",
+        "description": "Explore the beautiful woodland and lakeside paths of Padarn Country Park. Free entry, free parking in winter. Includes views of Dolbadarn Castle.",
         "costFrom": 0,
         "costTo": 0
       }
@@ -114,89 +144,120 @@
     {
       "day": 1,
       "orderIndex": 4,
-      "time": "17:00",
+      "time": "17:30",
       "type": "accommodation",
       "title": "YHA Snowdon Llanberis",
-      "description": "A comfortable and well-located hostel in Llanberis, ideal for exploring Snowdonia.",
-      "costFrom": 25,
-      "costTo": 70,
-      "lat": 53.124,
-      "lng": -4.124,
-      "travelToNext": "20min drive to Pen-y-Pass",
-      "travelMode": "drive",
+      "description": "Modern, purpose-built hostel with private rooms and dorms, right in Llanberis village. Great communal kitchen, lounge with mountain views, and friendly staff with local knowledge. Book direct via YHA for best rates.",
+      "costFrom": 20,
+      "costTo": 60,
+      "costNote": "per person/night - dorms from £20, private rooms from £45",
+      "lat": 53.1240,
+      "lng": -4.1240,
+      "website": "https://www.yha.org.uk/hostel/yha-snowdon-llanberis",
+      "phone": "0345 371 9534",
+      "travelToNext": "Walk to Llanberis Path start 10min",
+      "travelMode": "walk",
+      "insiderTip": "Book a private room with mountain view if available. The hostel has a drying room - essential for wet gear.",
       "budgetAlt": {
-        "title": "The Snowdon Inn (Y Fricsan) Campsite",
-        "description": "A budget-friendly campsite in Llanberis, offering stunning views of Snowdon.",
-        "costFrom": 15,
-        "costTo": 30
+        "title": "Jesse James Bunkhouse",
+        "description": "Legendary climbers' bunkhouse in Llanberis with real character. Basic but cosy, with kitchen and common room. Popular with mountaineers.",
+        "costFrom": 18,
+        "costTo": 25,
+        "phone": "07970 962 222"
+      },
+      "premiumAlt": {
+        "title": "Plas Coch Guest House",
+        "description": "Comfortable B&B with excellent breakfasts and mountain views. Run by outdoor enthusiasts who can offer great local tips.",
+        "costFrom": 85,
+        "costTo": 120
       },
       "postcode": "LL55 4HP"
     },
     {
       "day": 2,
       "orderIndex": 1,
-      "time": "08:00",
+      "time": "07:00",
       "type": "activity",
       "title": "Snowdon Summit Hike (Llanberis Path)",
-      "description": "Hike to the summit of Snowdon via the Llanberis Path, the easiest and most popular route. Enjoy panoramic views from the top (weather permitting).",
+      "description": "Early start for Snowdon summit (1085m) via the Llanberis Path - the most gradual but longest route (9 miles return). Allow 6-7 hours. The summit cafe (Hafod Eryri) is usually open 10am-4pm. Check weather via Mountain Weather Information Service (MWIS) the night before.",
       "duration": "6-7 hours",
-      "costFrom": 60,
+      "operator": "Independent or guided",
+      "guidedOption": {
+        "operator": "Raw Adventures",
+        "url": "https://www.rawadventures.co.uk/snowdon-guided-walks",
+        "price": "from £65pp"
+      },
+      "costFrom": 0,
       "costTo": 80,
-      "lat": 53.119,
-      "lng": -4.131,
-      "travelToNext": "15 min drive to restaurant in Capel Curig",
+      "costNote": "Free if walking independently, £60-80 for guided walk",
+      "lat": 53.1192,
+      "lng": -4.1312,
+      "travelToNext": "25min drive to Capel Curig",
       "travelMode": "drive",
+      "insiderTip": "Start by 7am to beat the crowds - Snowdon gets very busy from 10am onwards. The Llanberis Path follows the railway so you can take the train down if legs are tired (book in advance, £25 single).",
+      "weatherNote": "Check MWIS (mwis.org.uk) the night before. The summit can be 10°C colder than the valley with wind chill making it feel arctic even in summer.",
       "wetAlt": {
-        "title": "Electric Mountain",
-        "description": "Take a tour of the Dinorwig Power Station, a hydroelectric power station built inside a mountain.",
+        "title": "Electric Mountain Tour",
+        "description": "Fascinating underground tour of Dinorwig Power Station, Europe's largest pumped-storage hydroelectric scheme, built inside a mountain. Great for rainy days.",
         "costFrom": 12,
-        "costTo": 15
+        "costTo": 15,
+        "website": "https://www.electricmountain.co.uk"
       },
       "budgetAlt": {
-        "title": "Walk around Llyn Peris",
-        "description": "A flat and easy walk around Llyn Peris, with views of the mountains and the village of Llanberis.",
+        "title": "Cwm Idwal National Nature Reserve",
+        "description": "Dramatic glacial cwm with easy 3-mile circular walk. Charles Darwin studied the geology here. Free entry, parking £5.",
         "costFrom": 0,
-        "costTo": 0
+        "costTo": 5
       }
     },
     {
       "day": 2,
       "orderIndex": 2,
-      "time": "16:00",
+      "time": "15:00",
       "type": "food",
       "title": "Moel Siabod Cafe",
-      "foodType": "late lunch/early dinner",
-      "description": "A cosy cafe in Capel Curig, serving delicious homemade food and cakes.",
-      "costFrom": 15,
-      "costTo": 25,
-      "lat": 53.092,
-      "lng": -3.899,
+      "foodType": "late lunch",
+      "description": "Welcoming cafe in Capel Curig village serving excellent homemade cakes, soups, and hot meals. Perfect refuel after a mountain day. Dog-friendly with outdoor seating.",
+      "costFrom": 12,
+      "costTo": 22,
+      "lat": 53.0920,
+      "lng": -3.8990,
+      "openingHours": "9am-5pm daily",
       "travelToNext": "5min drive to Plas y Brenin",
       "travelMode": "drive",
+      "alternative": {
+        "title": "Pinnacle Cafe (Capel Curig)",
+        "description": "Another great option with hearty food and outdoor gear shop attached."
+      },
       "budgetAlt": {
-        "title": "Packed lunch on the shores of Llyn Ogwen",
-        "description": "Enjoy a picnic with spectacular mountain views."
+        "title": "Picnic at Llynnau Mymbyr",
+        "description": "Stunning twin lakes with iconic Snowdon views - the classic Snowdonia postcard shot. Free parking at viewpoint layby."
       },
       "postcode": "LL24 0ED"
     },
     {
       "day": 2,
       "orderIndex": 3,
-      "time": "17:30",
+      "time": "17:00",
       "type": "accommodation",
-      "title": "Plas y Brenin",
-      "description": "A world-renowned national mountain centre, offering comfortable accommodation and a range of outdoor activities.",
-      "costFrom": 80,
-      "costTo": 150,
-      "lat": 53.102823,
-      "lng": -3.907092,
-      "travelToNext": "25min drive to Bala area",
+      "title": "Plas y Brenin National Outdoor Centre",
+      "description": "Wales' premier outdoor centre, run by Mountain Training. Modern rooms, excellent restaurant, bar, and climbing wall. Perfect base for serious adventurers. Non-residents can use the bar and cafe.",
+      "costFrom": 75,
+      "costTo": 140,
+      "costNote": "B&B rates per person",
+      "lat": 53.1028,
+      "lng": -3.9071,
+      "website": "https://www.pyb.co.uk",
+      "phone": "01690 720214",
+      "travelToNext": "45min drive to Bala via A5/A494",
       "travelMode": "drive",
+      "insiderTip": "Book dinner in the restaurant - quality is excellent and you won't want to drive out. The bar often has live music on weekends.",
       "budgetAlt": {
-        "title": "Ben's Bunkhouse",
-        "description": "A budget-friendly bunkhouse in Nant Peris, close to many hiking trails.",
-        "costFrom": 25,
-        "costTo": 40
+        "title": "Bryn Gwynant YHA",
+        "description": "Beautiful Victorian mansion hostel in stunning lakeside location between Capel Curig and Beddgelert. One of the most scenic hostels in the UK.",
+        "costFrom": 18,
+        "costTo": 45,
+        "website": "https://www.yha.org.uk/hostel/yha-bryn-gwynant"
       },
       "postcode": "LL24 0EL"
     },
@@ -205,45 +266,73 @@
       "orderIndex": 1,
       "time": "09:00",
       "type": "activity",
-      "title": "Gorge Walking",
-      "description": "Experience the thrill of scrambling through a natural gorge, climbing waterfalls, and swimming in plunge pools with Adventure Britain.",
+      "title": "Gorge Walking Adventure",
+      "description": "Scramble up a river gorge, climb waterfalls, slide down natural water chutes, and jump into plunge pools. All equipment provided including wetsuit, helmet, and buoyancy aid. Sessions run near Bala with experienced instructors. Book minimum 48hrs in advance.",
       "duration": "3-4 hours",
-      "costFrom": 65,
-      "costTo": 95,
-      "lat": 52.911,
-      "lng": -3.601,
+      "operator": "Adventure Britain",
+      "operatorUrl": "https://www.adventurebritain.com/gorge-walking-wales",
+      "operatorPhone": "01onal 521 081",
+      "alternativeOperators": [
+        {
+          "name": "White Water Active (Llangollen)",
+          "url": "https://whitewateractive.co.uk/gorge-walking-wales",
+          "price": "£55 adult, £50 child (8-16)"
+        },
+        {
+          "name": "Snowdonia Adventure Activities",
+          "url": "https://www.snowdonia-activities.co.uk",
+          "price": "from £50pp"
+        }
+      ],
+      "costFrom": 50,
+      "costTo": 75,
+      "lat": 52.9110,
+      "lng": -3.6010,
       "travelToNext": "15min drive to Bala town",
       "travelMode": "drive",
+      "requirements": {
+        "minAge": 8,
+        "swimAbility": "Must be able to swim 25m",
+        "fitness": "Reasonable fitness required"
+      },
+      "insiderTip": "Gorge walking is MORE fun in light rain - the waterfalls are bigger! Sessions rarely cancelled unless river levels are dangerously high.",
       "wetAlt": {
-        "title": "National White Water Centre - spectator visit",
-        "description": "Watch the white water rafting action from the river bank cafe at the National White Water Centre.",
+        "title": "National White Water Centre (Spectator)",
+        "description": "Watch the rafting action from the riverside cafe. Free to watch, plus you can book a last-minute rafting session if inspired (from £52/hr).",
         "costFrom": 0,
-        "costTo": 0
+        "costTo": 0,
+        "website": "https://www.nationalwhitewatercentre.co.uk"
       },
       "budgetAlt": {
-        "title": "Walk around Bala Lake",
-        "description": "Enjoy a scenic walk along the shores of Bala Lake, the largest natural lake in Wales.",
+        "title": "Bala Lake Walk",
+        "description": "Peaceful 9-mile walk around Wales' largest natural lake (Llyn Tegid). Can take the narrow gauge railway one way. Railway: £8 adult.",
         "costFrom": 0,
-        "costTo": 0
+        "costTo": 8
       }
     },
     {
       "day": 3,
       "orderIndex": 2,
-      "time": "13:00",
+      "time": "13:30",
       "type": "food",
-      "title": "White Lion Royal Hotel",
+      "title": "The White Lion Royal Hotel",
       "foodType": "lunch",
-      "description": "A traditional pub in Bala, serving hearty Welsh food and local ales.",
-      "costFrom": 15,
-      "costTo": 25,
-      "lat": 52.916784,
-      "lng": -3.673121,
-      "travelToNext": "Departure",
+      "description": "Historic coaching inn in the heart of Bala serving excellent pub food and local Welsh ales. Warm welcome, hearty portions. Good vegetarian options.",
+      "costFrom": 12,
+      "costTo": 22,
+      "lat": 52.9168,
+      "lng": -3.6731,
+      "website": "https://www.whitelionhotel.com",
+      "openingHours": "Food served 12-2:30pm, 6-9pm",
+      "travelToNext": "Journey home",
       "travelMode": "drive",
+      "alternative": {
+        "title": "Plas yn Dre",
+        "description": "Traditional Welsh restaurant with local produce. Slightly upmarket."
+      },
       "budgetAlt": {
-        "title": "Picnic by Bala Lake",
-        "description": "Enjoy your own provisions with a beautiful view."
+        "title": "Bala Lake Cafe",
+        "description": "Simple lakeside cafe with sandwiches, hot drinks, and ice cream. Outdoor seating with views."
       },
       "postcode": "LL23 7SH"
     }
@@ -254,20 +343,71 @@
       "accommodation": 160,
       "food": 60,
       "transport": 66,
-      "total": 500
+      "total": 500,
+      "notes": "Based on 2 adults sharing, mid-range options, own transport"
     },
     "budget": {
-      "activities": 65,
-      "accommodation": 40,
+      "activities": 50,
+      "accommodation": 36,
       "food": 30,
-      "transport": 66,
-      "total": 201
+      "transport": 50,
+      "total": 166,
+      "notes": "Hostels, packed lunches, one paid activity, budget alternatives"
+    },
+    "premium": {
+      "activities": 300,
+      "accommodation": 280,
+      "food": 120,
+      "transport": 80,
+      "total": 780,
+      "notes": "Guided activities, B&B accommodation, restaurant meals"
     }
   },
   "knowBeforeYouGo": {
-    "weather": "Snowdonia's weather can be unpredictable, even in summer. Be prepared for rain, wind, and sunshine all in one day. Check the forecast before you go and pack accordingly.",
-    "traffic": "Traffic can be heavy, especially during peak season. Allow extra time for travel, especially on the A5 and A470. Parking at popular spots like Pen-y-Pass and Llanberis fills up quickly, so arrive early or use public transport.",
-    "booking": "Advance booking is essential for Zip World activities and recommended for guided walks and accommodation, particularly during school holidays.",
-    "fitness": "This itinerary requires a moderate level of fitness. The Snowdon hike is challenging, and gorge walking involves scrambling and swimming. Make sure you are prepared for the physical demands of the activities."
-  }
+    "weather": "Snowdonia's weather is notoriously unpredictable - it can rain 200+ days per year. Always check MWIS (Mountain Weather Information Service) the night before mountain activities. Pack waterproofs even on sunny forecasts. Summit temperature is typically 10°C lower than valleys.",
+    "traffic": "The A5 through Snowdonia gets very congested on sunny weekends. Allow 30% extra travel time in peak season. Pen-y-Pass car park fills by 7am on summer weekends - use Sherpa buses from Llanberis instead. Parking apps: PayByPhone widely accepted.",
+    "booking": "Zip World activities sell out weeks in advance for weekends - book as early as possible (up to 6 months ahead). Gorge walking needs minimum 48hr notice. Accommodation in Llanberis books up fast for summer weekends.",
+    "fitness": "This itinerary requires moderate fitness. Snowdon via Llanberis is challenging (9 miles, 950m elevation gain). Gorge walking involves swimming, scrambling, and some jumping. Most activities need to be comfortable walking on uneven ground for 2+ hours.",
+    "mobileSignal": "Mobile signal is patchy in the mountains. Download offline maps (OS Maps app or Google Maps). Tell someone your plans before heading to remote areas.",
+    "sherpaService": "The Snowdon Sherpa bus service runs year-round connecting key locations without a car: Bangor, Llanberis, Pen-y-Pass, Nant Peris. £2 per ride, day ticket £5. Very useful for linear walks."
+  },
+  "extensions": {
+    "addDay": {
+      "title": "Add White Water Rafting",
+      "description": "Extend your trip with a morning at the National White Water Centre on the River Tryweryn. Class 3-4 rapids, suitable for beginners with good fitness.",
+      "costFrom": 52,
+      "costTo": 84,
+      "operator": "National White Water Centre",
+      "website": "https://www.nationalwhitewatercentre.co.uk"
+    },
+    "alternative": {
+      "title": "Via Ferrata at Zip World",
+      "description": "Swap the Snowdon hike for a Via Ferrata adventure - scaling the quarry walls on metal rungs and wire bridges. Thrilling but less demanding than a full mountain day.",
+      "costFrom": 55,
+      "costTo": 75,
+      "website": "https://www.zipworld.co.uk/adventures/via-ferrata"
+    }
+  },
+  "mapRoute": {
+    "start": {
+      "name": "Penrhyn Quarry (Zip World)",
+      "lat": 53.1775,
+      "lng": -4.0856
+    },
+    "waypoints": [
+      {"name": "Llanberis", "lat": 53.1195, "lng": -4.1268},
+      {"name": "Snowdon Summit", "lat": 53.0685, "lng": -4.0763},
+      {"name": "Capel Curig", "lat": 53.0920, "lng": -3.8990},
+      {"name": "Bala", "lat": 52.9168, "lng": -3.6731}
+    ],
+    "totalDriving": "Approximately 2-3 hours total across 3 days"
+  },
+  "lastUpdated": "2025-02-06",
+  "researchSources": [
+    "Zip World official website",
+    "National White Water Centre",
+    "Mountain Weather Information Service",
+    "YHA booking system",
+    "Perplexity AI research 2025"
+  ]
 }

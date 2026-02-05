@@ -8,11 +8,13 @@ import { sql } from '@vercel/postgres';
 import { snowdoniaData } from '../data/regions/snowdonia';
 import { pembrokeshireData } from '../data/regions/pembrokeshire';
 import { breconBeaconsData } from '../data/regions/brecon-beacons';
+import { gowerData } from '../data/regions/gower';
 
 const regionDataMap: Record<string, any> = {
   snowdonia: snowdoniaData,
   pembrokeshire: pembrokeshireData,
   'brecon-beacons': breconBeaconsData,
+  gower: gowerData,
 };
 
 // Build a rich description from the data

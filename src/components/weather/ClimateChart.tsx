@@ -276,7 +276,7 @@ export function ClimateChart({ regionSlug, compact = false }: ClimateChartProps)
               })
               .join(" ")}
             fill="none"
-            stroke="#f97316"
+            stroke="#ea580c"
             strokeWidth={compact ? "2" : "3"}
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -308,7 +308,7 @@ export function ClimateChart({ regionSlug, compact = false }: ClimateChartProps)
           <span className="text-gray-600">Rainfall</span>
         </div>
         <div className="flex items-center gap-1">
-          <div className="w-4 h-0.5 bg-[#f97316] rounded" />
+          <div className="w-4 h-0.5 bg-[#ea580c] rounded" />
           <span className="text-gray-600">Max temp</span>
         </div>
         <div className="flex items-center gap-1">

@@ -30,8 +30,8 @@ export default function AboutPage() {
           <h2 className="text-2xl lg:text-3xl font-bold text-[#1e3a4c] mb-8">Our Mission</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
-              <div className="w-12 h-12 bg-[#f97316]/10 rounded-xl flex items-center justify-center mb-4">
-                <Mountain className="w-6 h-6 text-[#f97316]" />
+              <div className="w-12 h-12 bg-[#ea580c]/10 rounded-xl flex items-center justify-center mb-4">
+                <Mountain className="w-6 h-6 text-[#ea580c]" />
               </div>
               <h3 className="text-xl font-bold text-[#1e3a4c] mb-3">Discover Adventures</h3>
               <p className="text-gray-600">
@@ -41,8 +41,8 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
-              <div className="w-12 h-12 bg-[#f97316]/10 rounded-xl flex items-center justify-center mb-4">
-                <Heart className="w-6 h-6 text-[#f97316]" />
+              <div className="w-12 h-12 bg-[#ea580c]/10 rounded-xl flex items-center justify-center mb-4">
+                <Heart className="w-6 h-6 text-[#ea580c]" />
               </div>
               <h3 className="text-xl font-bold text-[#1e3a4c] mb-3">Support Local</h3>
               <p className="text-gray-600">
@@ -52,8 +52,8 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
-              <div className="w-12 h-12 bg-[#f97316]/10 rounded-xl flex items-center justify-center mb-4">
-                <Target className="w-6 h-6 text-[#f97316]" />
+              <div className="w-12 h-12 bg-[#ea580c]/10 rounded-xl flex items-center justify-center mb-4">
+                <Target className="w-6 h-6 text-[#ea580c]" />
               </div>
               <h3 className="text-xl font-bold text-[#1e3a4c] mb-3">Plan with Ease</h3>
               <p className="text-gray-600">
@@ -201,7 +201,7 @@ export default function AboutPage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               href="/activities"
-              className="px-8 py-3 bg-[#f97316] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors"
+              className="px-8 py-3 bg-[#ea580c] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors"
             >
               Explore Activities
             </Link>

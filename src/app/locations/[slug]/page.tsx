@@ -55,9 +55,9 @@ export default async function LocationPage({ params }: Props) {
             <span className="text-[#1e3a4c] font-medium">Location</span>
           </nav>
 
-          <div className="bg-gradient-to-br from-[#1e3a4c]/5 to-[#f97316]/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f97316]/10 mb-6">
-              <Compass className="w-8 h-8 text-[#f97316]" />
+          <div className="bg-gradient-to-br from-[#1e3a4c]/5 to-[#ea580c]/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#ea580c]/10 mb-6">
+              <Compass className="w-8 h-8 text-[#ea580c]" />
             </div>
             <h1 className="text-2xl lg:text-3xl font-black text-[#1e3a4c] mb-3">
               This location page is coming soon

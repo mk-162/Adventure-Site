@@ -210,7 +210,7 @@ export function AccommodationFilters({ accommodations, regions }: AccommodationF
               setSelectedType('');
               setSelectedPrice('');
             }}
-            className="text-[#f97316] hover:text-[#ea580c] font-medium text-sm"
+            className="text-[#ea580c] hover:text-[#ea580c] font-medium text-sm"
           >
             Clear all filters
           </button>

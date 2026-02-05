@@ -50,8 +50,8 @@ export function UpcomingEvents({ events }: UpcomingEventsProps) {
                 href={`/events/${event.slug}`}
                 className={`group flex items-center gap-4 sm:gap-6 p-4 sm:p-6 rounded-2xl hover:bg-slate-50 hover:shadow-md transition-all duration-300 ${index !== 0 ? "border-t border-slate-100" : ""}`}
               >
-                <div className="shrink-0 w-16 sm:w-20 text-center bg-slate-100 group-hover:bg-[#f97316]/10 rounded-2xl py-3 transition-colors">
-                  <span className="block text-[#f97316] font-bold text-xs sm:text-sm uppercase">
+                <div className="shrink-0 w-16 sm:w-20 text-center bg-slate-100 group-hover:bg-[#ea580c]/10 rounded-2xl py-3 transition-colors">
+                  <span className="block text-[#ea580c] font-bold text-xs sm:text-sm uppercase">
                     {date.month}
                   </span>
                   <span className="block text-2xl sm:text-3xl font-black text-[#1e3a4c]">

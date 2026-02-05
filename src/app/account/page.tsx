@@ -88,7 +88,7 @@ export default async function AccountPage() {
         {/* Saved Items */}
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <div className="flex items-center gap-2 mb-6">
-            <Heart className="w-5 h-5 text-[#f97316]" />
+            <Heart className="w-5 h-5 text-[#ea580c]" />
             <h2 className="text-lg font-bold text-[#1e3a4c]">Saved Items</h2>
             <span className="text-sm text-gray-400 ml-auto">{favourites.length} saved</span>
           </div>
@@ -101,13 +101,13 @@ export default async function AccountPage() {
                 Tap the heart icon on activities, itineraries, and providers to save them here.
               </p>
               <div className="flex flex-wrap justify-center gap-3">
-                <Link href="/activities" className="text-sm font-medium text-[#f97316] hover:underline">
+                <Link href="/activities" className="text-sm font-medium text-[#ea580c] hover:underline">
                   Browse activities →
                 </Link>
-                <Link href="/itineraries" className="text-sm font-medium text-[#f97316] hover:underline">
+                <Link href="/itineraries" className="text-sm font-medium text-[#ea580c] hover:underline">
                   Browse itineraries →
                 </Link>
-                <Link href="/directory" className="text-sm font-medium text-[#f97316] hover:underline">
+                <Link href="/directory" className="text-sm font-medium text-[#ea580c] hover:underline">
                   Browse providers →
                 </Link>
               </div>
@@ -123,8 +123,8 @@ export default async function AccountPage() {
                     href={fav.link}
                     className="flex items-center gap-4 py-3 hover:bg-gray-50 -mx-3 px-3 rounded-lg transition-colors"
                   >
-                    <div className="w-10 h-10 rounded-lg bg-[#f97316]/10 flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-5 h-5 text-[#f97316]" />
+                    <div className="w-10 h-10 rounded-lg bg-[#ea580c]/10 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-5 h-5 text-[#ea580c]" />
                     </div>
                     <div className="min-w-0 flex-1">
                       <p className="font-medium text-sm text-[#1e3a4c] truncate">{fav.name}</p>

@@ -54,7 +54,7 @@ export default function PrivacyPage() {
         <div className="prose prose-lg max-w-none">
           <section id="information-we-collect" className="mb-10">
             <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-              <Eye className="w-6 h-6 text-[#f97316]" />
+              <Eye className="w-6 h-6 text-[#ea580c]" />
               1. Information We Collect
             </h2>
             
@@ -73,7 +73,7 @@ export default function PrivacyPage() {
               <li><strong>Usage Data:</strong> Pages viewed, search queries, clicks, time spent on pages</li>
               <li><strong>Device Information:</strong> IP address, browser type, operating system, device identifiers</li>
               <li><strong>Location Data:</strong> Approximate location based on IP address (precise location only with your permission)</li>
-              <li><strong>Cookies and Similar Technologies:</strong> See our <Link href="/cookies" className="text-[#f97316] hover:underline">Cookie Policy</Link></li>
+              <li><strong>Cookies and Similar Technologies:</strong> See our <Link href="/cookies" className="text-[#ea580c] hover:underline">Cookie Policy</Link></li>
             </ul>
 
             <h3 className="text-xl font-bold text-[#1e3a4c] mt-6 mb-3">Information from Third Parties</h3>
@@ -140,7 +140,7 @@ export default function PrivacyPage() {
 
           <section id="your-rights" className="mb-10">
             <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-              <UserCheck className="w-6 h-6 text-[#f97316]" />
+              <UserCheck className="w-6 h-6 text-[#ea580c]" />
               6. Your Rights Under GDPR
             </h2>
             <p className="text-gray-600 mb-4">You have the right to:</p>
@@ -155,7 +155,7 @@ export default function PrivacyPage() {
               <li><strong>Lodge a Complaint:</strong> File a complaint with the UK Information Commissioner's Office (ICO)</li>
             </ul>
             <p className="text-gray-600 mt-4">
-              To exercise these rights, contact us at <a href="mailto:privacy@adventurewales.co.uk" className="text-[#f97316] hover:underline">privacy@adventurewales.co.uk</a>.
+              To exercise these rights, contact us at <a href="mailto:privacy@adventurewales.co.uk" className="text-[#ea580c] hover:underline">privacy@adventurewales.co.uk</a>.
             </p>
           </section>
 
@@ -163,7 +163,7 @@ export default function PrivacyPage() {
             <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4">7. Cookies and Tracking Technologies</h2>
             <p className="text-gray-600 mb-4">
               We use cookies and similar technologies to enhance your experience, analyze usage, and deliver 
-              personalized content. For detailed information, please see our <Link href="/cookies" className="text-[#f97316] hover:underline">Cookie Policy</Link>.
+              personalized content. For detailed information, please see our <Link href="/cookies" className="text-[#ea580c] hover:underline">Cookie Policy</Link>.
             </p>
             <p className="text-gray-600">
               You can manage cookie preferences through your browser settings or our cookie consent tool.
@@ -172,7 +172,7 @@ export default function PrivacyPage() {
 
           <section id="security" className="mb-10">
             <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-              <Lock className="w-6 h-6 text-[#f97316]" />
+              <Lock className="w-6 h-6 text-[#ea580c]" />
               8. Data Security
             </h2>
             <p className="text-gray-600 mb-4">
@@ -198,7 +198,7 @@ export default function PrivacyPage() {
             </p>
             <p className="text-gray-600">
               If you believe we have collected data from a child, contact us immediately at{" "}
-              <a href="mailto:privacy@adventurewales.co.uk" className="text-[#f97316] hover:underline">privacy@adventurewales.co.uk</a>.
+              <a href="mailto:privacy@adventurewales.co.uk" className="text-[#ea580c] hover:underline">privacy@adventurewales.co.uk</a>.
             </p>
           </section>
 
@@ -232,7 +232,7 @@ export default function PrivacyPage() {
 
           <section id="contact" className="mb-10">
             <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-              <Mail className="w-6 h-6 text-[#f97316]" />
+              <Mail className="w-6 h-6 text-[#ea580c]" />
               12. Contact Us
             </h2>
             <div className="bg-[#1e3a4c]/5 rounded-xl p-6">
@@ -240,7 +240,7 @@ export default function PrivacyPage() {
                 For questions about this Privacy Policy or to exercise your rights, contact our Data Protection Officer:
               </p>
               <div className="text-gray-700 space-y-2">
-                <p><strong>Email:</strong> <a href="mailto:privacy@adventurewales.co.uk" className="text-[#f97316] hover:underline">privacy@adventurewales.co.uk</a></p>
+                <p><strong>Email:</strong> <a href="mailto:privacy@adventurewales.co.uk" className="text-[#ea580c] hover:underline">privacy@adventurewales.co.uk</a></p>
                 <p><strong>Post:</strong><br />
                   Data Protection Officer<br />
                   Adventure Wales<br />
@@ -258,9 +258,9 @@ export default function PrivacyPage() {
         <div className="mt-12 pt-8 border-t border-gray-200">
           <h3 className="font-bold text-[#1e3a4c] mb-4">Related Policies</h3>
           <div className="flex flex-wrap gap-4">
-            <Link href="/terms" className="text-[#f97316] hover:underline">Terms of Service</Link>
-            <Link href="/cookies" className="text-[#f97316] hover:underline">Cookie Policy</Link>
-            <Link href="/contact" className="text-[#f97316] hover:underline">Contact Us</Link>
+            <Link href="/terms" className="text-[#ea580c] hover:underline">Terms of Service</Link>
+            <Link href="/cookies" className="text-[#ea580c] hover:underline">Cookie Policy</Link>
+            <Link href="/contact" className="text-[#ea580c] hover:underline">Contact Us</Link>
           </div>
         </div>
       </div>

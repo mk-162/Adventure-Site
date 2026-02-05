@@ -104,7 +104,7 @@ export default async function EventPage({ params }: Props) {
 
             {/* Type badge */}
             {event.type && (
-              <span className="inline-flex items-center gap-1 bg-[#f97316] text-white text-xs font-medium px-3 py-1 rounded-full w-fit mb-3">
+              <span className="inline-flex items-center gap-1 bg-[#ea580c] text-white text-xs font-medium px-3 py-1 rounded-full w-fit mb-3">
                 <CategoryIcon className="h-3 w-3" />
                 {event.type}
               </span>
@@ -306,7 +306,7 @@ export default async function EventPage({ params }: Props) {
                       href={`https://www.google.com/maps/dir/?api=1&destination=${event.lat},${event.lng}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-sm font-medium text-[#f97316] hover:underline"
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-[#ea580c] hover:underline"
                     >
                       <Navigation className="h-4 w-4" />
                       Get Directions
@@ -336,7 +336,7 @@ export default async function EventPage({ params }: Props) {
                     href={event.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full bg-[#f97316] text-white font-semibold py-3 px-4 rounded-lg hover:bg-[#ea580c] transition-colors"
+                    className="flex items-center justify-center gap-2 w-full bg-[#ea580c] text-white font-semibold py-3 px-4 rounded-lg hover:bg-[#ea580c] transition-colors"
                   >
                     <Ticket className="h-5 w-5" />
                     Register Now
@@ -366,7 +366,7 @@ export default async function EventPage({ params }: Props) {
                   {region && (
                     <div className="flex items-center justify-between text-sm">
                       <span className="text-gray-500">Region</span>
-                      <Link href={`/${region.slug}`} className="font-medium text-[#f97316] hover:underline">
+                      <Link href={`/${region.slug}`} className="font-medium text-[#ea580c] hover:underline">
                         {region.name}
                       </Link>
                     </div>
@@ -402,7 +402,7 @@ export default async function EventPage({ params }: Props) {
                     ))}
                   </div>
                   {region && (
-                    <Link href={`/${region.slug}/stay`} className="block text-center text-sm text-[#f97316] font-medium hover:underline mt-3 pt-3 border-t">
+                    <Link href={`/${region.slug}/stay`} className="block text-center text-sm text-[#ea580c] font-medium hover:underline mt-3 pt-3 border-t">
                       See all accommodation →
                     </Link>
                   )}
@@ -420,8 +420,8 @@ export default async function EventPage({ params }: Props) {
                         href={`/activities/${act.slug}`}
                         className="flex items-center gap-3 p-2 -mx-2 rounded-lg hover:bg-gray-50 transition-colors"
                       >
-                        <div className="w-10 h-10 bg-[#f97316]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <Mountain className="h-4 w-4 text-[#f97316]" />
+                        <div className="w-10 h-10 bg-[#ea580c]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Mountain className="h-4 w-4 text-[#ea580c]" />
                         </div>
                         <div className="min-w-0">
                           <p className="font-medium text-sm text-[#1e3a4c] truncate">{act.name}</p>
@@ -431,7 +431,7 @@ export default async function EventPage({ params }: Props) {
                     ))}
                   </div>
                   {region && (
-                    <Link href={`/${region.slug}/things-to-do`} className="block text-center text-sm text-[#f97316] font-medium hover:underline mt-3 pt-3 border-t">
+                    <Link href={`/${region.slug}/things-to-do`} className="block text-center text-sm text-[#ea580c] font-medium hover:underline mt-3 pt-3 border-t">
                       More things to do →
                     </Link>
                   )}
@@ -439,10 +439,10 @@ export default async function EventPage({ params }: Props) {
               )}
 
               {/* Advertise */}
-              <div className="bg-gradient-to-br from-[#f97316]/5 to-[#f97316]/10 rounded-xl p-6 shadow-sm border border-[#f97316]/20">
+              <div className="bg-gradient-to-br from-[#ea580c]/5 to-[#ea580c]/10 rounded-xl p-6 shadow-sm border border-[#ea580c]/20">
                 <h3 className="font-bold text-[#1e3a4c] mb-2">Promote Your Business</h3>
                 <p className="text-sm text-gray-600 mb-3">Reach thousands of adventure seekers visiting this page.</p>
-                <Link href="/advertise" className="inline-flex items-center gap-1 text-[#f97316] font-bold text-sm hover:underline">
+                <Link href="/advertise" className="inline-flex items-center gap-1 text-[#ea580c] font-bold text-sm hover:underline">
                   Advertise here →
                 </Link>
               </div>
@@ -451,7 +451,7 @@ export default async function EventPage({ params }: Props) {
               <div className="bg-[#1e3a4c] rounded-xl p-6 shadow-sm text-center text-white">
                  <h3 className="font-bold text-lg mb-2">Own this event?</h3>
                  <p className="text-sm text-gray-300 mb-4">Claim it to manage details and promote it to more people.</p>
-                 <Link href="/contact" className="text-[#f97316] font-bold text-sm hover:underline">
+                 <Link href="/contact" className="text-[#ea580c] font-bold text-sm hover:underline">
                    Contact Us to Claim
                  </Link>
               </div>
@@ -466,7 +466,7 @@ export default async function EventPage({ params }: Props) {
             <div className="max-w-7xl mx-auto px-4">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-2xl font-bold text-[#1e3a4c]">More Events</h2>
-                <Link href="/events" className="text-[#f97316] font-medium hover:underline">
+                <Link href="/events" className="text-[#ea580c] font-medium hover:underline">
                   View all events →
                 </Link>
               </div>
@@ -493,7 +493,7 @@ export default async function EventPage({ params }: Props) {
                         </div>
                         <div>
                           {item.event.type && (
-                            <span className="text-xs text-[#f97316] font-medium">{item.event.type}</span>
+                            <span className="text-xs text-[#ea580c] font-medium">{item.event.type}</span>
                           )}
                           <h3 className="font-semibold text-[#1e3a4c] line-clamp-1">{item.event.name}</h3>
                         </div>

@@ -13,7 +13,7 @@ const categories = [
   { value: "seasonal", label: "Seasonal", color: "#f59e0b", image: "/images/misc/seasonal-autumn-01-b078c4e2.jpg", description: "What to do each season across Wales" },
   { value: "news", label: "News", color: "#a855f7", image: "/images/misc/events-festival-01-33fb98e2.jpg", description: "Latest from the Welsh adventure scene" },
   { value: "trip-report", label: "Trip Reports", color: "#14b8a6", image: "/images/activities/coasteering-hero.jpg", description: "Real stories from real adventures in Wales" },
-  { value: "spotlight", label: "Spotlight", color: "#f97316", image: "/images/misc/partner-business-01-7f12dce4.jpg", description: "Profiles of Wales' best adventure operators" },
+  { value: "spotlight", label: "Spotlight", color: "#ea580c", image: "/images/misc/partner-business-01-7f12dce4.jpg", description: "Profiles of Wales' best adventure operators" },
 ];
 
 const categoryColors: Record<string, string> = {
@@ -23,7 +23,7 @@ const categoryColors: Record<string, string> = {
   seasonal: "#f59e0b",
   news: "#a855f7",
   "trip-report": "#14b8a6",
-  spotlight: "#f97316",
+  spotlight: "#ea580c",
 };
 
 const categoryFallbackImages: Record<string, string> = {
@@ -118,7 +118,7 @@ export default function JournalClient({
               onClick={() => handleCategoryChange(cat.value)}
               className={`group relative overflow-hidden rounded-xl h-32 transition-all ${
                 selectedCategory === cat.value
-                  ? "ring-3 ring-[#f97316] shadow-xl scale-[1.02]"
+                  ? "ring-3 ring-[#ea580c] shadow-xl scale-[1.02]"
                   : "hover:shadow-lg hover:scale-[1.01]"
               }`}
             >
@@ -141,7 +141,7 @@ export default function JournalClient({
                 <p className="text-white text-xs leading-tight line-clamp-2">{cat.description}</p>
               </div>
               {selectedCategory === cat.value && (
-                <div className="absolute top-2 right-2 bg-[#f97316] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">✓</div>
+                <div className="absolute top-2 right-2 bg-[#ea580c] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">✓</div>
               )}
             </button>
           ))}
@@ -149,7 +149,7 @@ export default function JournalClient({
         {selectedCategory && (
           <button
             onClick={() => handleCategoryChange(selectedCategory)}
-            className="text-sm text-slate-500 hover:text-[#f97316] transition-colors"
+            className="text-sm text-slate-500 hover:text-[#ea580c] transition-colors"
           >
             ← Show all articles
           </button>
@@ -165,7 +165,7 @@ export default function JournalClient({
                 onClick={() => handleTagChange(tag.slug)}
                 className={`px-3 py-1 rounded-full text-xs font-medium transition-all ${
                   selectedTag === tag.slug
-                    ? "bg-[#f97316] text-white"
+                    ? "bg-[#ea580c] text-white"
                     : "bg-slate-50 text-slate-600 hover:bg-slate-100 border border-slate-200"
                 }`}
               >
@@ -216,7 +216,7 @@ export default function JournalClient({
                             </span>
                           </div>
 
-                          <h2 className="text-xl md:text-2xl font-bold text-[#1e3a4c] mb-3 group-hover:text-[#f97316] transition-colors">
+                          <h2 className="text-xl md:text-2xl font-bold text-[#1e3a4c] mb-3 group-hover:text-[#ea580c] transition-colors">
                             {post.post.title}
                           </h2>
 
@@ -246,7 +246,7 @@ export default function JournalClient({
                                 {post.post.readTimeMinutes} min read
                               </span>
                             )}
-                            <span className="ml-auto text-[#f97316] font-semibold group-hover:underline">
+                            <span className="ml-auto text-[#ea580c] font-semibold group-hover:underline">
                               Read More →
                             </span>
                           </div>
@@ -330,7 +330,7 @@ export default function JournalClient({
                 <Link
                   key={tag.slug}
                   href={`/tags/${tag.slug}`}
-                  className="px-3 py-1 bg-white text-slate-700 text-xs rounded-full hover:bg-[#f97316] hover:text-white transition-colors border border-slate-200"
+                  className="px-3 py-1 bg-white text-slate-700 text-xs rounded-full hover:bg-[#ea580c] hover:text-white transition-colors border border-slate-200"
                 >
                   {tag.name}
                 </Link>

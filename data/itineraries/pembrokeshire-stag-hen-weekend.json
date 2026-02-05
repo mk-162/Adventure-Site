@@ -76,7 +76,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Whitesands Beach",
         "description": "Enjoy your own sandwiches and snacks with stunning views of Whitesands Bay."
-      }
+      },
+      "postcode": "SA62 6DP"
     },
     {
       "day": 1,
@@ -123,7 +124,8 @@
         "description": "Bring your tents and enjoy stunning sea views from this eco-friendly campsite near St Davids.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "SA62 6SE"
     },
     {
       "day": 1,
@@ -142,7 +144,8 @@
       "budgetAlt": {
         "title": "Picnic on the beach",
         "description": "Grab some supplies at the local shop and find a scenic spot to eat."
-      }
+      },
+      "postcode": "SA62 6SA"
     },
     {
       "day": 2,
@@ -188,7 +191,8 @@
       "budgetAlt": {
         "title": "Packed Lunch",
         "description": "Enjoy a pre-prepared lunch at a scenic spot."
-      }
+      },
+      "postcode": "SA62 6RB"
     },
     {
       "day": 2,

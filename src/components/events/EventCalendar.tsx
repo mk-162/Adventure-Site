@@ -116,7 +116,7 @@ export function EventCalendar({ events }: EventCalendarProps) {
                   className={cn(
                     "aspect-square rounded-lg flex flex-col items-center justify-start pt-2 relative transition-colors hover:bg-gray-50",
                     isToday && "bg-blue-50 font-bold text-blue-600",
-                    isSelected && "ring-2 ring-[#f97316] ring-offset-1 bg-orange-50"
+                    isSelected && "ring-2 ring-[#ea580c] ring-offset-1 bg-orange-50"
                   )}
                 >
                   <span className={cn("text-sm", isToday && "font-bold")}>{day}</span>
@@ -127,7 +127,7 @@ export function EventCalendar({ events }: EventCalendarProps) {
                           key={e.id}
                           className={cn(
                             "w-1.5 h-1.5 rounded-full",
-                            e.isFeatured ? "bg-[#f97316]" : "bg-[#1e3a4c]"
+                            e.isFeatured ? "bg-[#ea580c]" : "bg-[#1e3a4c]"
                           )}
                         />
                       ))}
@@ -167,16 +167,16 @@ export function EventCalendar({ events }: EventCalendarProps) {
                     href={`/events/${event.slug}`}
                     className={cn(
                       "block bg-white p-3 rounded-lg border shadow-sm hover:shadow-md transition-shadow group",
-                      event.isFeatured ? "border-[#f97316]/30" : "border-gray-200"
+                      event.isFeatured ? "border-[#ea580c]/30" : "border-gray-200"
                     )}
                   >
                     <div className="flex justify-between items-start mb-1">
-                      <span className="text-xs font-bold text-[#f97316]">
+                      <span className="text-xs font-bold text-[#ea580c]">
                         {event.dateStart ? new Date(event.dateStart).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) : 'All Day'}
                       </span>
-                      {event.isFeatured && <Star className="w-3 h-3 text-[#f97316] fill-[#f97316]" />}
+                      {event.isFeatured && <Star className="w-3 h-3 text-[#ea580c] fill-[#ea580c]" />}
                     </div>
-                    <h4 className="font-bold text-[#1e3a4c] text-sm mb-1 group-hover:text-[#f97316] transition-colors">
+                    <h4 className="font-bold text-[#1e3a4c] text-sm mb-1 group-hover:text-[#ea580c] transition-colors">
                       {event.name}
                     </h4>
                     {event.location && (

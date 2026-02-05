@@ -83,7 +83,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Llyn Padarn",
         "description": "Enjoy your own lunch while overlooking the beautiful Llyn Padarn."
-      }
+      },
+      "postcode": "LL55 4SL"
     },
     {
       "day": 1,
@@ -130,7 +131,8 @@
         "description": "Camping option near Llanberis, offering stunning views and basic facilities.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "LL55 4HP"
     },
     {
       "day": 2,
@@ -169,14 +171,15 @@
       "description": "Relaxed restaurant with pub fare just north of Llangollen.",
       "costFrom": 10,
       "costTo": 20,
-      "lat": 53.0066,
-      "lng": -3.0951,
+      "lat": 53.010992,
+      "lng": -3.090813,
       "travelToNext": "30 min drive",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed lunch at Bala Lake",
         "description": "Enjoy your own lunch overlooking the water."
-      }
+      },
+      "postcode": "LL14 1UG"
     },
     {
       "day": 2,
@@ -223,7 +226,8 @@
         "description": "Camping near St Davids, with stunning coastal views.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "SA62 5AA"
     },
     {
       "day": 3,
@@ -269,7 +273,8 @@
       "budgetAlt": {
         "title": "Picnic Lunch",
         "description": "Pack a lunch to enjoy at Whitesands Beach."
-      }
+      },
+      "postcode": "SA62 6SA"
     },
     {
       "day": 3,
@@ -316,7 +321,8 @@
         "description": "Placeholder - will include budget accommodation",
         "costFrom": 25,
         "costTo": 50
-      }
+      },
+      "postcode": "LD3 9AN"
     },
     {
       "day": 4,
@@ -362,7 +368,8 @@
       "budgetAlt": {
         "title": "Packed Lunch",
         "description": "Enjoy a picnic lunch at the top of Pen y Fan."
-      }
+      },
+      "postcode": "LD3 7YA"
     },
     {
       "day": 4,
@@ -409,7 +416,8 @@
         "description": "Placeholder - will include budget accommodation",
         "costFrom": 25,
         "costTo": 50
-      }
+      },
+      "postcode": "LD3 9AN"
     },
     {
       "day": 5,
@@ -448,14 +456,15 @@
       "description": "An award-winning hotel with hearty and locally-sourced meals.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 51.6312,
-      "lng": -4.0927,
+      "lat": 51.586838,
+      "lng": -4.188504,
       "travelToNext": "1 hours drive",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed Lunch",
         "description": "Enjoy a picnic lunch overlooking Three Cliffs Bay."
-      }
+      },
+      "postcode": "SA3 1AG"
     },
     {
       "day": 5,
@@ -493,8 +502,8 @@
       "description": "Placeholder - will include accommodation in Gower",
       "costFrom": 70,
       "costTo": 150,
-      "lat": 51.591,
-      "lng": -4.0458,
+      "lat": 51.58606,
+      "lng": -4.044194,
       "travelToNext": "First stop next day",
       "travelMode": "drive",
       "budgetAlt": {
@@ -502,7 +511,8 @@
         "description": "Placeholder - will include budget accommodation",
         "costFrom": 25,
         "costTo": 50
-      }
+      },
+      "postcode": "SA3 3JN"
     },
     {
       "day": 6,
@@ -541,14 +551,15 @@
       "description": "Traditional Welsh pub in the Brecon Beacons.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 51.7301,
-      "lng": -3.313,
+      "lat": 51.732656,
+      "lng": -3.320929,
       "travelToNext": "1 hours drive",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed Lunch",
         "description": "Enjoy a picnic lunch overlooking The Rock Inn."
-      }
+      },
+      "postcode": "CF48 4AQ"
     },
     {
       "day": 6,
@@ -595,7 +606,8 @@
         "description": "Placeholder - will include budget accommodation",
         "costFrom": 25,
         "costTo": 50
-      }
+      },
+      "postcode": "LD3 9AN"
     },
     {
       "day": 7,
@@ -641,7 +653,8 @@
       "budgetAlt": {
         "title": "Picnic",
         "description": "Enjoy a picnic overlooking the castle."
-      }
+      },
+      "postcode": "CF83 1NB"
     }
   ],
   "costBreakdown": {

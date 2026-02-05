@@ -68,14 +68,15 @@
       "description": "A popular pizzeria with delicious wood-fired pizzas and a relaxed atmosphere.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 53.1164,
-      "lng": -3.8052,
+      "lat": 53.118531,
+      "lng": -3.826165,
       "travelToNext": "30min drive via A5",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed lunch at Llyn Ogwen",
         "description": "Enjoy stunning views of Tryfan while having a picnic by the lake."
-      }
+      },
+      "postcode": "LL27 0JB"
     },
     {
       "day": 1,
@@ -122,7 +123,8 @@
         "description": "Camping and caravan site with good facilities, a short drive from Conwy.",
         "costFrom": 30,
         "costTo": 50
-      }
+      },
+      "postcode": "LL32 8BG"
     },
     {
       "day": 2,
@@ -168,7 +170,8 @@
       "budgetAlt": {
         "title": "Packed lunch on the beach",
         "description": "Enjoy your own sandwiches on Llandudno's North Shore beach."
-      }
+      },
+      "postcode": "LL30 1AT"
     },
     {
       "day": 2,

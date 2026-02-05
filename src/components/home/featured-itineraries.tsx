@@ -32,7 +32,7 @@ export function FeaturedItineraries({ itineraries }: FeaturedItinerariesProps) {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
           <div>
-            <span className="text-[#f97316] font-bold uppercase tracking-wider text-sm">Tried & Tested Routes</span>
+            <span className="text-[#ea580c] font-bold uppercase tracking-wider text-sm">Tried & Tested Routes</span>
             <h2 className="mt-2 text-3xl font-bold text-[#1e3a4c]">Ready-Made Adventures</h2>
           </div>
           <Link href="/itineraries" className="hidden sm:flex items-center text-[#1e3a4c] font-bold hover:underline">

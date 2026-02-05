@@ -133,7 +133,7 @@ export default async function CalendarPage({ searchParams }: PageProps) {
           <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a4c] to-transparent" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <span className="inline-block py-1 px-3 rounded-full bg-[#f97316]/20 text-[#f97316] text-xs font-bold uppercase tracking-wider mb-4 border border-[#f97316]/30">
+          <span className="inline-block py-1 px-3 rounded-full bg-[#ea580c]/20 text-[#ea580c] text-xs font-bold uppercase tracking-wider mb-4 border border-[#ea580c]/30">
             Adventure Calendar
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6">
@@ -161,7 +161,7 @@ export default async function CalendarPage({ searchParams }: PageProps) {
                 <input type="hidden" name="region" value={regionSlug} />
               </form>
             </div>
-            <button className="bg-[#f97316] text-white px-8 py-3 rounded-full font-bold hover:bg-[#ea580c] transition-colors">
+            <button className="bg-[#ea580c] text-white px-8 py-3 rounded-full font-bold hover:bg-[#ea580c] transition-colors">
               Search
             </button>
           </div>
@@ -251,7 +251,7 @@ export default async function CalendarPage({ searchParams }: PageProps) {
         )}
 
         {/* Add Your Event CTA */}
-        <div className="mt-16 bg-[#f97316] rounded-2xl p-8 sm:p-12 text-center text-white relative overflow-hidden">
+        <div className="mt-16 bg-[#ea580c] rounded-2xl p-8 sm:p-12 text-center text-white relative overflow-hidden">
           <div className="relative z-10 max-w-2xl mx-auto">
             <h2 className="text-3xl font-black mb-4">Organising an event?</h2>
             <p className="text-lg text-white/90 mb-8">
@@ -340,11 +340,11 @@ function EventCard({ event }: { event: typeof events.$inferSelect }) {
       </div>
       <div className="p-5 flex flex-col flex-1">
         <div className="mb-2">
-          <span className="text-xs font-bold text-[#f97316] uppercase tracking-wide">
+          <span className="text-xs font-bold text-[#ea580c] uppercase tracking-wide">
             {event.type || "Event"}
           </span>
         </div>
-        <h3 className="text-lg font-bold text-[#1e3a4c] mb-2 line-clamp-2 group-hover:text-[#f97316] transition-colors">
+        <h3 className="text-lg font-bold text-[#1e3a4c] mb-2 line-clamp-2 group-hover:text-[#ea580c] transition-colors">
           {event.name}
         </h3>
         {event.location && (
@@ -357,7 +357,7 @@ function EventCard({ event }: { event: typeof events.$inferSelect }) {
            <span className="font-medium text-gray-900">
              {event.registrationCost ? `From £${Number(event.registrationCost).toFixed(0)}` : "Free"}
            </span>
-           <span className="text-[#f97316] font-medium flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+           <span className="text-[#ea580c] font-medium flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
              View Details <ChevronDown className="w-4 h-4 -rotate-90" />
            </span>
         </div>
@@ -376,7 +376,7 @@ function EmptyState() {
       <p className="text-gray-500 max-w-md mx-auto">
         We couldn't find any events matching your filters. Try adjusting your search criteria or selecting a different date range.
       </p>
-      <Link href="/calendar" className="inline-block mt-6 text-[#f97316] font-bold hover:underline">
+      <Link href="/calendar" className="inline-block mt-6 text-[#ea580c] font-bold hover:underline">
         Clear all filters
       </Link>
     </div>

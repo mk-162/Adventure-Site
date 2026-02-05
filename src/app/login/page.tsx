@@ -81,7 +81,7 @@ function LoginForm() {
             We&apos;ve sent a sign-in link to <strong>{email}</strong>. Click it to access your adventures.
           </p>
           <p className="text-sm text-slate-400">Didn&apos;t get it? Check spam or{" "}
-            <button onClick={() => setSubmitted(false)} className="text-[#f97316] hover:underline font-medium">
+            <button onClick={() => setSubmitted(false)} className="text-[#ea580c] hover:underline font-medium">
               try again
             </button>
           </p>
@@ -173,7 +173,7 @@ function LoginForm() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 placeholder="you@example.com"
-                className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f97316] focus:border-transparent text-slate-900"
+                className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-slate-900"
               />
             </div>
 
@@ -189,7 +189,7 @@ function LoginForm() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="What should we call you?"
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f97316] focus:border-transparent text-slate-900"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ea580c] focus:border-transparent text-slate-900"
                   />
                 </div>
 
@@ -198,7 +198,7 @@ function LoginForm() {
                     type="checkbox"
                     checked={newsletter}
                     onChange={(e) => setNewsletter(e.target.checked)}
-                    className="mt-1 w-4 h-4 text-[#f97316] border-slate-300 rounded focus:ring-[#f97316]"
+                    className="mt-1 w-4 h-4 text-[#ea580c] border-slate-300 rounded focus:ring-[#ea580c]"
                   />
                   <span className="text-sm text-slate-600">
                     Send me the best Welsh adventures, events, and deals. No spam, unsubscribe anytime.
@@ -210,7 +210,7 @@ function LoginForm() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-[#f97316] hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-lg transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+              className="w-full bg-[#ea580c] hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-lg transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
             >
               {loading ? (
                 "Sending link..."
@@ -227,14 +227,14 @@ function LoginForm() {
             {isNewUser ? (
               <>
                 Already have an account?{" "}
-                <button onClick={() => setIsNewUser(false)} className="text-[#f97316] font-medium hover:underline">
+                <button onClick={() => setIsNewUser(false)} className="text-[#ea580c] font-medium hover:underline">
                   Sign in
                 </button>
               </>
             ) : (
               <>
                 New here?{" "}
-                <button onClick={() => setIsNewUser(true)} className="text-[#f97316] font-medium hover:underline">
+                <button onClick={() => setIsNewUser(true)} className="text-[#ea580c] font-medium hover:underline">
                   Create an account
                 </button>
               </>

@@ -87,14 +87,14 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
 
           {/* Basecamp Selected Banner */}
           {basecamp && (
-            <div className="bg-white p-4 rounded-xl shadow-sm border-2 border-[#f97316]">
+            <div className="bg-white p-4 rounded-xl shadow-sm border-2 border-[#ea580c]">
               <div className="flex items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
-                  <div className="bg-[#f97316] p-2 rounded-lg">
+                  <div className="bg-[#ea580c] p-2 rounded-lg">
                     <Home className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <div className="text-xs font-bold text-[#f97316] uppercase tracking-wider">Your Basecamp</div>
+                    <div className="text-xs font-bold text-[#ea580c] uppercase tracking-wider">Your Basecamp</div>
                     <div className="font-bold text-[#1e3a4c]">{basecamp.name}</div>
                     {userLocation && (
                       <div className="text-xs text-gray-500 mt-0.5 flex items-center gap-1">
@@ -102,7 +102,7 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
                         Travelling from {userLocation.label}
                         <button
                           onClick={() => setShowBasecampPicker(true)}
-                          className="text-[#f97316] hover:text-[#f97316]/80 font-semibold ml-1"
+                          className="text-[#ea580c] hover:text-[#ea580c]/80 font-semibold ml-1"
                         >
                           Change
                         </button>
@@ -112,7 +112,7 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
                 </div>
                 <button
                   onClick={() => setShowBasecampPicker(true)}
-                  className="text-sm font-bold text-[#f97316] hover:text-[#f97316]/80 transition-colors"
+                  className="text-sm font-bold text-[#ea580c] hover:text-[#ea580c]/80 transition-colors"
                 >
                   Change
                 </button>

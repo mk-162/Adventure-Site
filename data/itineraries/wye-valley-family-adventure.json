@@ -76,7 +76,8 @@
       "budgetAlt": {
         "title": "packed lunch at scenic spot",
         "description": "Layby near Symonds Yat Rock"
-      }
+      },
+      "postcode": "HR2 8LG"
     },
     {
       "day": 1,
@@ -114,8 +115,8 @@
       "description": "A family-friendly inn with comfortable rooms and a welcoming atmosphere.",
       "costFrom": 90,
       "costTo": 150,
-      "lat": 51.7614,
-      "lng": -2.6786,
+      "lat": 51.756341,
+      "lng": -2.674834,
       "travelToNext": "30 min drive to Puzzlewood",
       "travelMode": "drive",
       "budgetAlt": {
@@ -123,7 +124,8 @@
         "description": "Camping at a designated campsite in the Forest of Dean.",
         "costFrom": 20,
         "costTo": 40
-      }
+      },
+      "postcode": "NP25 4TT"
     },
     {
       "day": 2,
@@ -169,7 +171,8 @@
       "budgetAlt": {
         "title": "Packed Lunch",
         "description": "Eat a packed lunch at a picnic spot in the Forest of Dean"
-      }
+      },
+      "postcode": "CF83 1NB"
     },
     {
       "day": 2,

@@ -80,7 +80,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Llyn Llydaw",
         "description": "Enjoy your packed lunch with stunning views of Llyn Llydaw and Snowdon's peaks."
-      }
+      },
+      "postcode": "LL55 4NU"
     },
     {
       "day": 1,
@@ -100,7 +101,8 @@
         "description": "Pitch your tent at this campsite in Llanberis for a budget-friendly option.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "LL55 4HP"
     },
     {
       "day": 2,
@@ -166,7 +168,8 @@
         "description": "A campsite near Llanfairfechan, offering basic facilities and stunning views of the coast.",
         "costFrom": 15,
         "costTo": 25
-      }
+      },
+      "postcode": "LL55 4EA"
     },
     {
       "day": 3,
@@ -179,7 +182,7 @@
       "costFrom": 0,
       "costTo": 0,
       "lat": 53.1,
-      "lng": -4.0,
+      "lng": -4,
       "travelToNext": "5 minutes drive to Ogwen Valley",
       "travelMode": "drive",
       "wetAlt": {
@@ -212,7 +215,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Castell y Gwynt",
         "description": "Savour your lunch amidst the unique rock formations and breathtaking scenery atop Glyder Fach."
-      }
+      },
+      "postcode": "LL55 4SL"
     }
   ],
   "costBreakdown": {

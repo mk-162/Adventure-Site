@@ -61,7 +61,7 @@ interface MapViewProps {
 const markerColors: Record<MarkerType, string> = {
   activity: "#3b82f6", // blue
   accommodation: "#22c55e", // green
-  operator: "#f97316", // orange
+  operator: "#ea580c", // orange
   event: "#ef4444", // red
   location: "#a855f7", // purple
   transport: "#1f2937", // gray/black
@@ -153,7 +153,7 @@ export default function MapView({
         {showRoute && routePositions.length > 1 && (
           <Polyline
             positions={routePositions}
-            color="#f97316"
+            color="#ea580c"
             weight={3}
             opacity={0.8}
             dashArray="10, 10"
@@ -182,7 +182,7 @@ export default function MapView({
                 <div className="flex items-start justify-between gap-2">
                   <h3 className="font-semibold text-[#1e3a4c] text-sm leading-tight">
                     {showRoute && (
-                      <span className="inline-flex items-center justify-center w-5 h-5 bg-[#f97316] text-white text-xs rounded-full mr-1">
+                      <span className="inline-flex items-center justify-center w-5 h-5 bg-[#ea580c] text-white text-xs rounded-full mr-1">
                         {index + 1}
                       </span>
                     )}
@@ -199,14 +199,14 @@ export default function MapView({
                   <p className="text-gray-600 text-xs mt-1">{marker.subtitle}</p>
                 )}
                 {marker.price && (
-                  <p className="text-[#f97316] font-semibold text-sm mt-1">
+                  <p className="text-[#ea580c] font-semibold text-sm mt-1">
                     {marker.price}
                   </p>
                 )}
                 {marker.link && (
                   <Link
                     href={marker.link}
-                    className="block mt-2 text-xs text-[#f97316] hover:underline font-medium"
+                    className="block mt-2 text-xs text-[#ea580c] hover:underline font-medium"
                   >
                     View Details →
                   </Link>

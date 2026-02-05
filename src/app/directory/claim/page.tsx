@@ -14,7 +14,7 @@ export default function ClaimListingPage() {
       {/* Hero */}
       <div className="bg-gradient-to-br from-[#1e3a4c] to-[#2d5568] text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <ShieldCheck className="h-16 w-16 mx-auto mb-6 text-[#f97316]" />
+          <ShieldCheck className="h-16 w-16 mx-auto mb-6 text-[#ea580c]" />
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Claim Your Business Listing
           </h1>
@@ -53,7 +53,7 @@ export default function ClaimListingPage() {
             },
           ].map((item) => (
             <div key={item.step} className="text-center">
-              <div className="w-12 h-12 bg-[#f97316] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+              <div className="w-12 h-12 bg-[#ea580c] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                 {item.step}
               </div>
               <h3 className="text-xl font-bold text-[#1e3a4c] mb-2">
@@ -95,7 +95,7 @@ export default function ClaimListingPage() {
           </p>
           <a
             href="mailto:hello@adventurewales.co.uk?subject=Claim%20My%20Listing&body=Business%20name%3A%0AWebsite%3A%0AWhat%20we%20offer%3A%0ALocation%3A%0A"
-            className="inline-flex items-center gap-2 bg-[#f97316] text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-[#ea580c] transition-colors"
+            className="inline-flex items-center gap-2 bg-[#ea580c] text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-[#ea580c] transition-colors"
           >
             <Mail className="h-5 w-5" />
             Claim Your Listing

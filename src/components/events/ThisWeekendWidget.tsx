@@ -25,7 +25,7 @@ export function ThisWeekendWidget({
       <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
         <div className="flex items-center gap-3 mb-4">
           <div className="bg-orange-100 p-2 rounded-lg">
-            <Calendar className="w-5 h-5 text-[#f97316]" />
+            <Calendar className="w-5 h-5 text-[#ea580c]" />
           </div>
           <h3 className="text-lg font-bold text-[#1e3a4c]">{title}</h3>
         </div>
@@ -34,7 +34,7 @@ export function ThisWeekendWidget({
         </p>
         <Link
           href="/calendar"
-          className="text-[#f97316] text-sm font-bold hover:underline flex items-center gap-1"
+          className="text-[#ea580c] text-sm font-bold hover:underline flex items-center gap-1"
         >
           View Full Calendar <ChevronRight className="w-4 h-4" />
         </Link>
@@ -48,10 +48,10 @@ export function ThisWeekendWidget({
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="bg-orange-100 p-2 rounded-lg">
-              <Calendar className="w-5 h-5 text-[#f97316]" />
+              <Calendar className="w-5 h-5 text-[#ea580c]" />
             </div>
             <div>
-              <span className="text-xs font-bold text-[#f97316] uppercase tracking-wider">{subtitle}</span>
+              <span className="text-xs font-bold text-[#ea580c] uppercase tracking-wider">{subtitle}</span>
               <h3 className="text-lg font-bold text-[#1e3a4c] leading-tight">{title}</h3>
             </div>
           </div>
@@ -81,7 +81,7 @@ export function ThisWeekendWidget({
                 </span>
               </div>
               <div className="min-w-0">
-                <h4 className="font-bold text-[#1e3a4c] text-sm truncate group-hover:text-[#f97316] transition-colors">
+                <h4 className="font-bold text-[#1e3a4c] text-sm truncate group-hover:text-[#ea580c] transition-colors">
                   {event.name}
                 </h4>
                 <div className="flex items-center gap-1 text-xs text-gray-500 mt-1">

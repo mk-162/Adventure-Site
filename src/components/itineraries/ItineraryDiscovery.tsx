@@ -208,7 +208,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
               <select 
                 value={selectedRegion}
                 onChange={(e) => setSelectedRegion(e.target.value)}
-                className="flex-1 px-4 py-3 bg-gray-50 border-none rounded-xl text-[#1e3a4c] font-medium focus:ring-2 focus:ring-[#f97316] focus:bg-white transition-all"
+                className="flex-1 px-4 py-3 bg-gray-50 border-none rounded-xl text-[#1e3a4c] font-medium focus:ring-2 focus:ring-[#ea580c] focus:bg-white transition-all"
               >
                 <option value="">All Regions</option>
                 {regions.map((r) => (
@@ -220,7 +220,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
               <select 
                 value={selectedDifficulty}
                 onChange={(e) => setSelectedDifficulty(e.target.value)}
-                className="flex-1 px-4 py-3 bg-gray-50 border-none rounded-xl text-[#1e3a4c] font-medium focus:ring-2 focus:ring-[#f97316] focus:bg-white transition-all"
+                className="flex-1 px-4 py-3 bg-gray-50 border-none rounded-xl text-[#1e3a4c] font-medium focus:ring-2 focus:ring-[#ea580c] focus:bg-white transition-all"
               >
                 <option value="">Any Difficulty</option>
                 <option value="easy">Easy</option>
@@ -295,7 +295,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
                   
                   <div className="p-8 lg:p-12 flex flex-col justify-center">
                     <div className="flex items-center gap-3 mb-6">
-                      <span className="bg-[#f97316] text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+                      <span className="bg-[#ea580c] text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
                         Featured Adventure
                       </span>
                       {featuredItinerary.region && (
@@ -319,7 +319,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
                     <div className="grid grid-cols-2 gap-6 mb-8">
                        <div className="flex items-center gap-3">
                          <div className="bg-white/10 p-2 rounded-lg">
-                           <Clock className="w-5 h-5 text-[#f97316]" />
+                           <Clock className="w-5 h-5 text-[#ea580c]" />
                          </div>
                          <div>
                            <div className="text-xs text-gray-400 uppercase tracking-wider">Duration</div>
@@ -329,7 +329,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
                        
                        <div className="flex items-center gap-3">
                          <div className="bg-white/10 p-2 rounded-lg">
-                           <Mountain className="w-5 h-5 text-[#f97316]" />
+                           <Mountain className="w-5 h-5 text-[#ea580c]" />
                          </div>
                          <div>
                            <div className="text-xs text-gray-400 uppercase tracking-wider">Difficulty</div>
@@ -340,7 +340,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
                        {featuredItinerary.priceEstimateFrom && (
                          <div className="flex items-center gap-3">
                            <div className="bg-white/10 p-2 rounded-lg">
-                             <div className="w-5 h-5 flex items-center justify-center text-[#f97316] font-bold">£</div>
+                             <div className="w-5 h-5 flex items-center justify-center text-[#ea580c] font-bold">£</div>
                            </div>
                            <div>
                              <div className="text-xs text-gray-400 uppercase tracking-wider">From</div>
@@ -352,7 +352,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
                        {featuredItinerary.bestSeason && (
                          <div className="flex items-center gap-3">
                            <div className="bg-white/10 p-2 rounded-lg">
-                             <Calendar className="w-5 h-5 text-[#f97316]" />
+                             <Calendar className="w-5 h-5 text-[#ea580c]" />
                            </div>
                            <div>
                              <div className="text-xs text-gray-400 uppercase tracking-wider">Best Season</div>
@@ -364,7 +364,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
                     
                     <Link 
                       href={`/itineraries/${featuredItinerary.slug}`}
-                      className="inline-flex items-center gap-2 bg-[#f97316] text-white font-bold py-4 px-8 rounded-xl hover:bg-[#ea580c] transition-colors self-start"
+                      className="inline-flex items-center gap-2 bg-[#ea580c] text-white font-bold py-4 px-8 rounded-xl hover:bg-[#ea580c] transition-colors self-start"
                     >
                       View Itinerary
                       <ChevronRight className="w-5 h-5" />
@@ -401,7 +401,7 @@ export function ItineraryDiscovery({ initialItineraries, regions }: ItineraryDis
                      setSelectedDuration("");
                      setSelectedBudget("");
                    }}
-                   className="text-[#f97316] font-medium hover:underline"
+                   className="text-[#ea580c] font-medium hover:underline"
                  >
                    Clear all filters
                  </button>

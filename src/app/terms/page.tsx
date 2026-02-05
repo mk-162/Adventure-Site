@@ -32,9 +32,9 @@ export default function TermsPage() {
         </div>
 
         {/* Important Notice */}
-        <div className="bg-[#f97316]/10 border-l-4 border-[#f97316] rounded-xl p-6 mb-8">
+        <div className="bg-[#ea580c]/10 border-l-4 border-[#ea580c] rounded-xl p-6 mb-8">
           <div className="flex gap-3">
-            <AlertTriangle className="w-6 h-6 text-[#f97316] flex-shrink-0 mt-1" />
+            <AlertTriangle className="w-6 h-6 text-[#ea580c] flex-shrink-0 mt-1" />
             <div>
               <h3 className="font-bold text-[#1e3a4c] mb-2">Important Notice</h3>
               <p className="text-gray-700 text-sm">
@@ -71,7 +71,7 @@ export default function TermsPage() {
             <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4">1. Acceptance of Terms</h2>
             <p className="text-gray-600 mb-4">
               By accessing or using Adventure Wales ("we", "us", "our"), you ("user", "you", "your") 
-              agree to be bound by these Terms of Service and our <Link href="/privacy" className="text-[#f97316] hover:underline">Privacy Policy</Link>.
+              agree to be bound by these Terms of Service and our <Link href="/privacy" className="text-[#ea580c] hover:underline">Privacy Policy</Link>.
             </p>
             <p className="text-gray-600 mb-4">
               If you do not agree to these Terms, you may not use our services. We reserve the right 
@@ -158,7 +158,7 @@ export default function TermsPage() {
 
           <section id="risk" className="mb-10">
             <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-              <AlertTriangle className="w-6 h-6 text-[#f97316]" />
+              <AlertTriangle className="w-6 h-6 text-[#ea580c]" />
               5. Assumption of Risk
             </h2>
             
@@ -309,7 +309,7 @@ export default function TermsPage() {
             <h3 className="text-xl font-bold text-[#1e3a4c] mt-6 mb-3">11.2 Dispute Resolution</h3>
             <p className="text-gray-600 mb-4">
               We encourage resolving disputes informally. Contact us at{" "}
-              <a href="mailto:legal@adventurewales.co.uk" className="text-[#f97316] hover:underline">legal@adventurewales.co.uk</a>{" "}
+              <a href="mailto:legal@adventurewales.co.uk" className="text-[#ea580c] hover:underline">legal@adventurewales.co.uk</a>{" "}
               before pursuing legal action.
             </p>
 
@@ -328,7 +328,7 @@ export default function TermsPage() {
               <li><strong>Waiver:</strong> Our failure to enforce any right does not constitute a waiver of that right.</li>
               <li><strong>Assignment:</strong> You may not assign these Terms. We may assign our rights and obligations to affiliates or successors.</li>
               <li><strong>Force Majeure:</strong> We are not liable for delays or failures due to circumstances beyond our reasonable control.</li>
-              <li><strong>Contact:</strong> For questions about these Terms, contact <a href="mailto:legal@adventurewales.co.uk" className="text-[#f97316] hover:underline">legal@adventurewales.co.uk</a>.</li>
+              <li><strong>Contact:</strong> For questions about these Terms, contact <a href="mailto:legal@adventurewales.co.uk" className="text-[#ea580c] hover:underline">legal@adventurewales.co.uk</a>.</li>
             </ul>
           </section>
         </div>
@@ -341,7 +341,7 @@ export default function TermsPage() {
           </p>
           <a
             href="mailto:legal@adventurewales.co.uk"
-            className="inline-block px-6 py-3 bg-[#f97316] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors"
+            className="inline-block px-6 py-3 bg-[#ea580c] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors"
           >
             Contact Legal Team
           </a>
@@ -351,10 +351,10 @@ export default function TermsPage() {
         <div className="mt-12 pt-8 border-t border-gray-200">
           <h3 className="font-bold text-[#1e3a4c] mb-4">Related Policies</h3>
           <div className="flex flex-wrap gap-4">
-            <Link href="/privacy" className="text-[#f97316] hover:underline">Privacy Policy</Link>
-            <Link href="/cookies" className="text-[#f97316] hover:underline">Cookie Policy</Link>
-            <Link href="/help" className="text-[#f97316] hover:underline">Help Center</Link>
-            <Link href="/contact" className="text-[#f97316] hover:underline">Contact Us</Link>
+            <Link href="/privacy" className="text-[#ea580c] hover:underline">Privacy Policy</Link>
+            <Link href="/cookies" className="text-[#ea580c] hover:underline">Cookie Policy</Link>
+            <Link href="/help" className="text-[#ea580c] hover:underline">Help Center</Link>
+            <Link href="/contact" className="text-[#ea580c] hover:underline">Contact Us</Link>
           </div>
         </div>
       </div>

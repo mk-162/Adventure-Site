@@ -94,7 +94,7 @@ export function EventsFilters({ events }: EventsFiltersProps) {
             <p className="text-gray-500 mb-2">No events found for {selectedType}</p>
             <button
               onClick={() => setSelectedType('All Events')}
-              className="text-[#f97316] hover:text-[#ea580c] font-medium text-sm"
+              className="text-[#ea580c] hover:text-[#ea580c] font-medium text-sm"
             >
               Show all events
             </button>

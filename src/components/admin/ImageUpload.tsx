@@ -163,20 +163,20 @@ export default function ImageUpload({
             onClick={() => !uploading && fileInputRef.current?.click()}
             className={`relative flex flex-col items-center justify-center rounded-lg border-2 border-dashed p-8 cursor-pointer transition-colors ${
               dragOver
-                ? "border-[#f97316] bg-orange-50"
+                ? "border-[#ea580c] bg-orange-50"
                 : "border-gray-300 bg-gray-50 hover:border-gray-400 hover:bg-gray-100"
             } ${uploading ? "pointer-events-none opacity-60" : ""}`}
           >
             {uploading ? (
               <>
-                <Loader2 className="h-8 w-8 text-[#f97316] animate-spin mb-2" />
+                <Loader2 className="h-8 w-8 text-[#ea580c] animate-spin mb-2" />
                 <p className="text-sm text-gray-600">Uploading…</p>
               </>
             ) : (
               <>
                 <Upload className="h-8 w-8 text-gray-400 mb-2" />
                 <p className="text-sm text-gray-600">
-                  <span className="font-medium text-[#f97316]">
+                  <span className="font-medium text-[#ea580c]">
                     Click to upload
                   </span>{" "}
                   or drag and drop
@@ -208,7 +208,7 @@ export default function ImageUpload({
                     setUrl(e.target.value);
                     setError("");
                   }}
-                  className="flex-1 px-3 py-1.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+                  className="flex-1 px-3 py-1.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
                 />
               </div>
             ) : (

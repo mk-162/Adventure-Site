@@ -19,7 +19,7 @@ export function AdvertiseWidget({ variant = "sidebar", context }: AdvertiseWidge
         </div>
         <Link
           href="/advertise"
-          className="inline-flex items-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white font-bold px-6 py-3 rounded-xl transition-colors whitespace-nowrap"
+          className="inline-flex items-center gap-2 bg-[#ea580c] hover:bg-[#ea580c] text-white font-bold px-6 py-3 rounded-xl transition-colors whitespace-nowrap"
         >
           Learn More
         </Link>
@@ -33,7 +33,7 @@ export function AdvertiseWidget({ variant = "sidebar", context }: AdvertiseWidge
         <p className="text-sm text-gray-500 mb-2">
           {context ? `Your business could appear here for "${context}"` : "Your business could appear here"}
         </p>
-        <Link href="/advertise" className="text-[#f97316] font-semibold text-sm hover:underline">
+        <Link href="/advertise" className="text-[#ea580c] font-semibold text-sm hover:underline">
           Advertise with us →
         </Link>
       </div>
@@ -42,14 +42,14 @@ export function AdvertiseWidget({ variant = "sidebar", context }: AdvertiseWidge
 
   // sidebar (default)
   return (
-    <div className="bg-gradient-to-br from-[#f97316]/5 to-[#f97316]/10 rounded-xl p-6 shadow-sm border border-[#f97316]/20">
+    <div className="bg-gradient-to-br from-[#ea580c]/5 to-[#ea580c]/10 rounded-xl p-6 shadow-sm border border-[#ea580c]/20">
       <h3 className="font-bold text-[#1e3a4c] mb-2">
         {context ? `Promote in ${context}` : "Promote Your Business"}
       </h3>
       <p className="text-sm text-gray-600 mb-3">
         Reach thousands of adventure seekers visiting this page.
       </p>
-      <Link href="/advertise" className="inline-flex items-center gap-1 text-[#f97316] font-bold text-sm hover:underline">
+      <Link href="/advertise" className="inline-flex items-center gap-1 text-[#ea580c] font-bold text-sm hover:underline">
         Advertise here →
       </Link>
     </div>

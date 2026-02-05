@@ -72,7 +72,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
           {spotsWithCoords.length > 0 && (
             <div className="bg-white rounded-xl border border-gray-200 p-4 mb-6">
               <div className="flex items-center gap-2 mb-3">
-                <MapPin className="w-4 h-4 text-[#f97316]" />
+                <MapPin className="w-4 h-4 text-[#ea580c]" />
                 <span className="text-sm font-semibold text-[#1e3a4c]">
                   {spotsWithCoords.length} spots on the map
                 </span>
@@ -208,7 +208,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
                 <div className="flex gap-2">
                   {shop.website && (
                     <a href={shop.website} target="_blank" rel="noopener noreferrer"
-                      className="text-xs font-medium text-[#f97316] hover:underline">Website</a>
+                      className="text-xs font-medium text-[#ea580c] hover:underline">Website</a>
                   )}
                   {shop.phone && (
                     <a href={`tel:${shop.phone}`}
@@ -228,8 +228,8 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {data.events.map((event, i) => (
               <div key={i} className="bg-white rounded-xl border border-gray-200 p-4 flex gap-4">
-                <div className="w-12 h-12 rounded-lg bg-[#f97316]/10 flex items-center justify-center shrink-0">
-                  <Calendar className="w-5 h-5 text-[#f97316]" />
+                <div className="w-12 h-12 rounded-lg bg-[#ea580c]/10 flex items-center justify-center shrink-0">
+                  <Calendar className="w-5 h-5 text-[#ea580c]" />
                 </div>
                 <div className="min-w-0">
                   <h3 className="font-bold text-[#1e3a4c] text-sm">{event.name}</h3>
@@ -240,7 +240,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
                   <p className="text-xs text-gray-600 line-clamp-2">{event.description}</p>
                   {event.website && (
                     <a href={event.website} target="_blank" rel="noopener noreferrer"
-                      className="text-xs font-medium text-[#f97316] hover:underline mt-1 inline-block">More info →</a>
+                      className="text-xs font-medium text-[#ea580c] hover:underline mt-1 inline-block">More info →</a>
                   )}
                 </div>
               </div>
@@ -268,7 +268,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
               <Link
                 key={`sa-${i}`}
                 href={`/${alt.regionSlug}/things-to-do/${data.activityTypeSlug}`}
-                className="flex items-center gap-3 bg-white rounded-xl border border-gray-200 p-4 hover:border-[#f97316] hover:shadow-sm transition-all"
+                className="flex items-center gap-3 bg-white rounded-xl border border-gray-200 p-4 hover:border-[#ea580c] hover:shadow-sm transition-all"
               >
                 <div className="w-10 h-10 rounded-lg bg-[#1e3a4c]/10 flex items-center justify-center shrink-0">
                   <MapPin className="w-5 h-5 text-[#1e3a4c]" />
@@ -284,10 +284,10 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
               <Link
                 key={`sr-${i}`}
                 href={`/${data.regionSlug}/things-to-do/${alt.activityTypeSlug}`}
-                className="flex items-center gap-3 bg-white rounded-xl border border-gray-200 p-4 hover:border-[#f97316] hover:shadow-sm transition-all"
+                className="flex items-center gap-3 bg-white rounded-xl border border-gray-200 p-4 hover:border-[#ea580c] hover:shadow-sm transition-all"
               >
-                <div className="w-10 h-10 rounded-lg bg-[#f97316]/10 flex items-center justify-center shrink-0">
-                  <ArrowRight className="w-5 h-5 text-[#f97316]" />
+                <div className="w-10 h-10 rounded-lg bg-[#ea580c]/10 flex items-center justify-center shrink-0">
+                  <ArrowRight className="w-5 h-5 text-[#ea580c]" />
                 </div>
                 <div>
                   <p className="font-semibold text-[#1e3a4c] text-sm">{alt.label}</p>

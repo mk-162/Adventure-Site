@@ -74,7 +74,7 @@ export default function CookiesPage() {
 
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-              <Shield className="w-6 h-6 text-[#f97316]" />
+              <Shield className="w-6 h-6 text-[#ea580c]" />
               Types of Cookies We Use
             </h2>
 
@@ -103,7 +103,7 @@ export default function CookiesPage() {
 
               <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
                 <h3 className="text-xl font-bold text-[#1e3a4c] mb-3 flex items-center gap-2">
-                  <BarChart className="w-5 h-5 text-[#f97316]" />
+                  <BarChart className="w-5 h-5 text-[#ea580c]" />
                   2. Performance & Analytics Cookies
                 </h3>
                 <p className="text-gray-600 mb-4">
@@ -193,7 +193,7 @@ export default function CookiesPage() {
 
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-              <Settings className="w-6 h-6 text-[#f97316]" />
+              <Settings className="w-6 h-6 text-[#ea580c]" />
               Managing Your Cookie Preferences
             </h2>
             
@@ -230,25 +230,25 @@ export default function CookiesPage() {
               <ul className="space-y-2 text-sm text-gray-700">
                 <li>
                   <strong>Chrome:</strong>{" "}
-                  <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" className="text-[#f97316] hover:underline">
+                  <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" className="text-[#ea580c] hover:underline">
                     Cookie settings guide
                   </a>
                 </li>
                 <li>
                   <strong>Firefox:</strong>{" "}
-                  <a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer" target="_blank" rel="noopener noreferrer" className="text-[#f97316] hover:underline">
+                  <a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer" target="_blank" rel="noopener noreferrer" className="text-[#ea580c] hover:underline">
                     Cookie settings guide
                   </a>
                 </li>
                 <li>
                   <strong>Safari:</strong>{" "}
-                  <a href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac" target="_blank" rel="noopener noreferrer" className="text-[#f97316] hover:underline">
+                  <a href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac" target="_blank" rel="noopener noreferrer" className="text-[#ea580c] hover:underline">
                     Cookie settings guide
                   </a>
                 </li>
                 <li>
                   <strong>Edge:</strong>{" "}
-                  <a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" className="text-[#f97316] hover:underline">
+                  <a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" className="text-[#ea580c] hover:underline">
                     Cookie settings guide
                   </a>
                 </li>
@@ -263,17 +263,17 @@ export default function CookiesPage() {
             </p>
             <ul className="list-disc pl-6 text-gray-600 space-y-2">
               <li>
-                <a href="https://www.youronlinechoices.com/uk/" target="_blank" rel="noopener noreferrer" className="text-[#f97316] hover:underline">
+                <a href="https://www.youronlinechoices.com/uk/" target="_blank" rel="noopener noreferrer" className="text-[#ea580c] hover:underline">
                   Your Online Choices (UK/EU)
                 </a>
               </li>
               <li>
-                <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-[#f97316] hover:underline">
+                <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-[#ea580c] hover:underline">
                   Google Ads Settings
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/ads/preferences" target="_blank" rel="noopener noreferrer" className="text-[#f97316] hover:underline">
+                <a href="https://www.facebook.com/ads/preferences" target="_blank" rel="noopener noreferrer" className="text-[#ea580c] hover:underline">
                   Facebook Ad Preferences
                 </a>
               </li>
@@ -305,7 +305,7 @@ export default function CookiesPage() {
                 If you have questions about our use of cookies, please contact us:
               </p>
               <div className="text-gray-700 space-y-2">
-                <p><strong>Email:</strong> <a href="mailto:privacy@adventurewales.co.uk" className="text-[#f97316] hover:underline">privacy@adventurewales.co.uk</a></p>
+                <p><strong>Email:</strong> <a href="mailto:privacy@adventurewales.co.uk" className="text-[#ea580c] hover:underline">privacy@adventurewales.co.uk</a></p>
                 <p><strong>Post:</strong><br />
                   Data Protection Officer<br />
                   Adventure Wales<br />
@@ -322,9 +322,9 @@ export default function CookiesPage() {
         <div className="mt-12 pt-8 border-t border-gray-200">
           <h3 className="font-bold text-[#1e3a4c] mb-4">Related Policies</h3>
           <div className="flex flex-wrap gap-4">
-            <Link href="/privacy" className="text-[#f97316] hover:underline">Privacy Policy</Link>
-            <Link href="/terms" className="text-[#f97316] hover:underline">Terms of Service</Link>
-            <Link href="/contact" className="text-[#f97316] hover:underline">Contact Us</Link>
+            <Link href="/privacy" className="text-[#ea580c] hover:underline">Privacy Policy</Link>
+            <Link href="/terms" className="text-[#ea580c] hover:underline">Terms of Service</Link>
+            <Link href="/contact" className="text-[#ea580c] hover:underline">Contact Us</Link>
           </div>
         </div>
       </div>

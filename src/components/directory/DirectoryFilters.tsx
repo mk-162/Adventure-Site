@@ -143,7 +143,7 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
               placeholder="Search adventure providers..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-white text-gray-900 placeholder-gray-400 border-2 border-white focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316] outline-none shadow-lg text-base"
+              className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-white text-gray-900 placeholder-gray-400 border-2 border-white focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c] outline-none shadow-lg text-base"
             />
           </div>
         </div>
@@ -205,10 +205,10 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Featured Operators */}
         {featuredOperators.length > 0 && (
-          <section className="mb-12 bg-gradient-to-br from-[#1e3a4c]/5 via-[#f97316]/5 to-transparent rounded-2xl p-6 border border-[#1e3a4c]/10">
+          <section className="mb-12 bg-gradient-to-br from-[#1e3a4c]/5 via-[#ea580c]/5 to-transparent rounded-2xl p-6 border border-[#1e3a4c]/10">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-3">
-                <div className="bg-[#f97316] text-white p-2 rounded-lg">
+                <div className="bg-[#ea580c] text-white p-2 rounded-lg">
                   <Award className="w-5 h-5" />
                 </div>
                 <div>
@@ -220,7 +220,7 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
                   </p>
                 </div>
               </div>
-              <span className="hidden sm:flex items-center gap-1 text-xs font-semibold text-[#f97316] bg-[#f97316]/10 px-3 py-1.5 rounded-full border border-[#f97316]/20">
+              <span className="hidden sm:flex items-center gap-1 text-xs font-semibold text-[#ea580c] bg-[#ea580c]/10 px-3 py-1.5 rounded-full border border-[#ea580c]/20">
                 <Star className="w-3 h-3 fill-current" />
                 Promoted
               </span>
@@ -272,7 +272,7 @@ export function DirectoryFilters({ operators, regions, activityTypes }: Director
                   setSelectedCategory('');
                   setSelectedRating('');
                 }}
-                className="text-[#f97316] hover:text-[#ea580c] font-medium text-sm"
+                className="text-[#ea580c] hover:text-[#ea580c] font-medium text-sm"
               >
                 Clear all filters
               </button>

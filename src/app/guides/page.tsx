@@ -83,7 +83,7 @@ export default function GuidesPage() {
                 <Link
                   key={guide.slug}
                   href={`/guides/${guide.slug}`}
-                  className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-[#f97316] transition-all"
+                  className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-[#ea580c] transition-all"
                 >
                   <h3 className="text-lg font-semibold text-[#1e3a4c] mb-2 capitalize">
                     {guide.title}
@@ -108,7 +108,7 @@ export default function GuidesPage() {
                 <Link
                   key={guide.slug}
                   href={`/guides/${guide.slug}`}
-                  className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-[#f97316] transition-all"
+                  className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-[#ea580c] transition-all"
                 >
                   <h3 className="text-lg font-semibold text-[#1e3a4c] mb-2 capitalize">
                     {guide.title}
@@ -133,7 +133,7 @@ export default function GuidesPage() {
                 <Link
                   key={guide.slug}
                   href={`/guides/${guide.slug}`}
-                  className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-[#f97316] transition-all"
+                  className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-[#ea580c] transition-all"
                 >
                   <h3 className="text-lg font-semibold text-[#1e3a4c] mb-2 capitalize">
                     {guide.title}

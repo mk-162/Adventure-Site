@@ -53,7 +53,7 @@ export function ActivitiesRow() {
         <div className="text-center mt-8">
           <Link 
             href="/activities" 
-            className="inline-flex items-center gap-2 text-[#1e3a4c] font-bold hover:text-[#f97316] transition-colors"
+            className="inline-flex items-center gap-2 text-[#1e3a4c] font-bold hover:text-[#ea580c] transition-colors"
           >
             View all 18 activity types <ArrowRight className="w-4 h-4" />
           </Link>

@@ -75,7 +75,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Three Cliffs Bay",
         "description": "Enjoy your lunch with fantastic views"
-      }
+      },
+      "postcode": "SA3 1LS"
     },
     {
       "day": 1,
@@ -113,8 +114,8 @@
       "description": "Traditional hotel in Reynoldston, a good base for exploring the Gower. Offers comfortable rooms and a restaurant.",
       "costFrom": 100,
       "costTo": 200,
-      "lat": 51.585,
-      "lng": -4.195,
+      "lat": 51.586838,
+      "lng": -4.188504,
       "travelToNext": "20min drive via A4118",
       "travelMode": "drive",
       "budgetAlt": {
@@ -122,7 +123,8 @@
         "description": "Camping with basic facilities. A cheap option close to the beach.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "SA3 1AG"
     },
     {
       "day": 1,
@@ -141,7 +143,8 @@
       "budgetAlt": {
         "title": "Cook your own dinner at the campsite",
         "description": "Bring your own food and enjoy a simple meal"
-      }
+      },
+      "postcode": "SA3 1AS"
     },
     {
       "day": 2,
@@ -187,7 +190,8 @@
       "budgetAlt": {
         "title": "Picnic at Rhossili Downs",
         "description": "Enjoy your lunch with a fantastic view from the top of the hill."
-      }
+      },
+      "postcode": "SA3 1PN"
     },
     {
       "day": 2,

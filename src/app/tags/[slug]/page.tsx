@@ -211,7 +211,7 @@ export default async function TagPage({ params }: TagPageProps) {
 
                             {/* Card Content */}
                             <div className="p-5">
-                                <h3 className="font-bold text-lg text-[#1e3a4c] mb-2 group-hover:text-[#f97316] transition-colors line-clamp-2">
+                                <h3 className="font-bold text-lg text-[#1e3a4c] mb-2 group-hover:text-[#ea580c] transition-colors line-clamp-2">
                                 {item.itinerary.title}
                                 </h3>
                                 
@@ -256,7 +256,7 @@ export default async function TagPage({ params }: TagPageProps) {
           {otherTags.length > 0 && (
              <section className="pt-8 border-t border-gray-100">
                 <h3 className="text-xl font-bold text-[#1e3a4c] mb-6 flex items-center gap-2">
-                    <Tag className="w-5 h-5 text-[#f97316]" />
+                    <Tag className="w-5 h-5 text-[#ea580c]" />
                     Related {tag.type.replace("_", " ")} Tags
                 </h3>
                 <div className="flex flex-wrap gap-3">
@@ -264,7 +264,7 @@ export default async function TagPage({ params }: TagPageProps) {
                         <Link
                             key={t.id}
                             href={`/tags/${t.slug}`}
-                            className="bg-gray-50 hover:bg-white border border-gray-200 hover:border-[#f97316] text-gray-700 hover:text-[#f97316] px-4 py-2 rounded-full transition-all duration-300 text-sm font-medium"
+                            className="bg-gray-50 hover:bg-white border border-gray-200 hover:border-[#ea580c] text-gray-700 hover:text-[#ea580c] px-4 py-2 rounded-full transition-all duration-300 text-sm font-medium"
                         >
                             {t.name}
                         </Link>

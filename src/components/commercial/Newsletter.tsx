@@ -62,7 +62,7 @@ export function Newsletter({ source = "website", className }: NewsletterProps) {
   return (
     <div className={`bg-[#1e3a4c] rounded-xl p-6 ${className}`}>
       <div className="flex items-center gap-3 mb-4">
-        <div className="bg-[#f97316] p-2 rounded-lg">
+        <div className="bg-[#ea580c] p-2 rounded-lg">
           <Mail className="h-5 w-5 text-white" />
         </div>
         <h3 className="text-lg font-semibold text-white">
@@ -81,7 +81,7 @@ export function Newsletter({ source = "website", className }: NewsletterProps) {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Your email address"
           required
-          className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#f97316]"
+          className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#ea580c]"
         />
 
         <label className="flex items-start gap-2 text-sm text-gray-300">
@@ -89,11 +89,11 @@ export function Newsletter({ source = "website", className }: NewsletterProps) {
             type="checkbox"
             checked={gdprConsent}
             onChange={(e) => setGdprConsent(e.target.checked)}
-            className="mt-1 rounded border-white/30 bg-white/10 text-[#f97316] focus:ring-[#f97316]"
+            className="mt-1 rounded border-white/30 bg-white/10 text-[#ea580c] focus:ring-[#ea580c]"
           />
           <span>
             I agree to receive emails and accept the{" "}
-            <a href="/privacy" className="text-[#f97316] hover:underline">
+            <a href="/privacy" className="text-[#ea580c] hover:underline">
               privacy policy
             </a>
           </span>
@@ -109,7 +109,7 @@ export function Newsletter({ source = "website", className }: NewsletterProps) {
         <button
           type="submit"
           disabled={status === "loading"}
-          className="w-full py-3 bg-[#f97316] text-white font-medium rounded-lg hover:bg-[#ea580c] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+          className="w-full py-3 bg-[#ea580c] text-white font-medium rounded-lg hover:bg-[#ea580c] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
         >
           {status === "loading" ? (
             <>

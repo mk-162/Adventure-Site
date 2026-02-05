@@ -136,7 +136,7 @@ export function WeatherWidget({ lat, lng, regionName, compact = false, regionSlu
         <div className="p-3 pt-2">
           {/* Current conditions row */}
           <div className="flex items-center gap-3 mb-3">
-            <CurrentIcon className="w-8 h-8 text-[#f97316] flex-shrink-0" />
+            <CurrentIcon className="w-8 h-8 text-[#ea580c] flex-shrink-0" />
             <div className="flex-1 min-w-0">
               <div className="flex items-baseline gap-2">
                 <span className="text-2xl font-bold text-[#1e3a4c]">{data.current.temp}°C</span>

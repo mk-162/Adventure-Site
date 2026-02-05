@@ -26,23 +26,23 @@ export default function ContactPage() {
 
         {/* Quick Links */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
-          <Link href="/help" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#f97316] transition-all group">
-            <HelpCircle className="w-8 h-8 text-[#f97316] mb-4 group-hover:scale-110 transition-transform" />
+          <Link href="/help" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#ea580c] transition-all group">
+            <HelpCircle className="w-8 h-8 text-[#ea580c] mb-4 group-hover:scale-110 transition-transform" />
             <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">Help Center</h3>
             <p className="text-gray-600 text-sm">Browse FAQs and self-service guides</p>
           </Link>
 
           <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
-            <Mail className="w-8 h-8 text-[#f97316] mb-4" />
+            <Mail className="w-8 h-8 text-[#ea580c] mb-4" />
             <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">Email Support</h3>
-            <a href="mailto:support@adventurewales.co.uk" className="text-[#f97316] hover:underline text-sm">
+            <a href="mailto:support@adventurewales.co.uk" className="text-[#ea580c] hover:underline text-sm">
               support@adventurewales.co.uk
             </a>
             <p className="text-gray-600 text-sm mt-2">Response within 24 hours</p>
           </div>
 
-          <Link href="/advertise" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#f97316] transition-all group">
-            <MessageCircle className="w-8 h-8 text-[#f97316] mb-4 group-hover:scale-110 transition-transform" />
+          <Link href="/advertise" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#ea580c] transition-all group">
+            <MessageCircle className="w-8 h-8 text-[#ea580c] mb-4 group-hover:scale-110 transition-transform" />
             <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">List Your Business</h3>
             <p className="text-gray-600 text-sm">Partner with us to reach more adventurers</p>
           </Link>
@@ -117,7 +117,7 @@ export default function ContactPage() {
 
               <button
                 type="submit"
-                className="w-full px-8 py-3 bg-[#f97316] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors flex items-center justify-center gap-2"
+                className="w-full px-8 py-3 bg-[#ea580c] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors flex items-center justify-center gap-2"
               >
                 <Send className="w-5 h-5" />
                 Send Message
@@ -202,7 +202,7 @@ export default function ContactPage() {
             </div>
 
             {/* Response Time */}
-            <div className="bg-[#f97316]/10 border border-[#f97316]/20 rounded-2xl p-6">
+            <div className="bg-[#ea580c]/10 border border-[#ea580c]/20 rounded-2xl p-6">
               <h4 className="font-bold text-[#1e3a4c] mb-2">Fast Response Times</h4>
               <p className="text-sm text-gray-600 mb-3">
                 Our dedicated support team is here to help with any questions about activities, 

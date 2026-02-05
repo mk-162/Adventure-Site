@@ -171,14 +171,14 @@ export default function HelpPage() {
 
         {/* Quick Links */}
         <div className="grid md:grid-cols-3 gap-6 mb-16">
-          <Link href="/contact" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#f97316] transition-all group text-center">
-            <Mail className="w-10 h-10 text-[#f97316] mx-auto mb-4 group-hover:scale-110 transition-transform" />
+          <Link href="/contact" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#ea580c] transition-all group text-center">
+            <Mail className="w-10 h-10 text-[#ea580c] mx-auto mb-4 group-hover:scale-110 transition-transform" />
             <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">Email Support</h3>
             <p className="text-gray-600 text-sm">Get help from our team within 24 hours</p>
           </Link>
 
-          <a href="tel:+442920123456" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#f97316] transition-all group text-center">
-            <Phone className="w-10 h-10 text-[#f97316] mx-auto mb-4 group-hover:scale-110 transition-transform" />
+          <a href="tel:+442920123456" className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#ea580c] transition-all group text-center">
+            <Phone className="w-10 h-10 text-[#ea580c] mx-auto mb-4 group-hover:scale-110 transition-transform" />
             <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">Phone Support</h3>
             <p className="text-gray-600 text-sm">+44 (0) 29 2012 3456<br />Mon-Fri, 9:00-17:00</p>
           </a>
@@ -203,8 +203,8 @@ export default function HelpPage() {
             {faqCategories.map((category, idx) => (
               <div key={idx} className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 bg-[#f97316]/10 rounded-xl flex items-center justify-center">
-                    <category.icon className="w-5 h-5 text-[#f97316]" />
+                  <div className="w-10 h-10 bg-[#ea580c]/10 rounded-xl flex items-center justify-center">
+                    <category.icon className="w-5 h-5 text-[#ea580c]" />
                   </div>
                   <h3 className="text-xl font-bold text-[#1e3a4c]">{category.title}</h3>
                 </div>
@@ -214,7 +214,7 @@ export default function HelpPage() {
                     <details key={faqIdx} className="group">
                       <summary className="flex items-start gap-2 cursor-pointer list-none">
                         <ChevronRight className="w-5 h-5 text-[#1e3a4c] mt-0.5 flex-shrink-0 transition-transform group-open:rotate-90" />
-                        <span className="font-medium text-[#1e3a4c] group-hover:text-[#f97316] transition-colors">
+                        <span className="font-medium text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors">
                           {faq.question}
                         </span>
                       </summary>
@@ -270,7 +270,7 @@ export default function HelpPage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               href="/contact"
-              className="px-8 py-3 bg-[#f97316] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors"
+              className="px-8 py-3 bg-[#ea580c] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors"
             >
               Contact Support
             </Link>

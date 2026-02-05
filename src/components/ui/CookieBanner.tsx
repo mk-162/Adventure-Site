@@ -31,11 +31,11 @@ export function CookieBanner() {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 animate-in slide-in-from-bottom duration-500">
       <div className="max-w-4xl mx-auto bg-[#1e3a4c] text-white rounded-2xl shadow-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-        <Cookie className="w-8 h-8 text-[#f97316] flex-shrink-0 hidden sm:block" />
+        <Cookie className="w-8 h-8 text-[#ea580c] flex-shrink-0 hidden sm:block" />
         <div className="flex-1">
           <p className="text-sm sm:text-base">
             We use cookies to improve your experience and analyse site traffic.{" "}
-            <Link href="/cookies" className="underline text-[#f97316] hover:text-orange-400">
+            <Link href="/cookies" className="underline text-[#ea580c] hover:text-orange-400">
               Learn more
             </Link>
           </p>
@@ -49,7 +49,7 @@ export function CookieBanner() {
           </button>
           <button
             onClick={handleAccept}
-            className="flex-1 sm:flex-initial px-6 py-2.5 text-sm font-bold bg-[#f97316] hover:bg-orange-600 rounded-lg transition-colors"
+            className="flex-1 sm:flex-initial px-6 py-2.5 text-sm font-bold bg-[#ea580c] hover:bg-orange-600 rounded-lg transition-colors"
           >
             Accept
           </button>

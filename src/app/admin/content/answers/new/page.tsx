@@ -69,7 +69,7 @@ export default async function NewAnswerPage() {
             type="text"
             required
             placeholder="What's the best time to visit Snowdonia?"
-            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
           />
         </div>
 
@@ -81,7 +81,7 @@ export default async function NewAnswerPage() {
             name="quickAnswer"
             rows={3}
             placeholder="A brief 1-2 sentence answer..."
-            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
           />
         </div>
 
@@ -93,7 +93,7 @@ export default async function NewAnswerPage() {
             name="fullContent"
             rows={12}
             placeholder="Detailed answer with markdown formatting..."
-            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent font-mono text-sm"
+            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent font-mono text-sm"
           />
         </div>
 
@@ -103,7 +103,7 @@ export default async function NewAnswerPage() {
           </label>
           <select
             name="regionId"
-            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
           >
             <option value="">No specific region</option>
             {allRegions.map((r) => (
@@ -120,7 +120,7 @@ export default async function NewAnswerPage() {
           </label>
           <select
             name="status"
-            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
           >
             <option value="draft">Draft</option>
             <option value="published">Published</option>
@@ -130,7 +130,7 @@ export default async function NewAnswerPage() {
         <div className="flex gap-4 pt-4">
           <button
             type="submit"
-            className="px-6 py-2 bg-[#f97316] text-white rounded-lg hover:bg-[#ea580c] transition-colors font-medium"
+            className="px-6 py-2 bg-[#ea580c] text-white rounded-lg hover:bg-[#ea580c] transition-colors font-medium"
           >
             Create Answer
           </button>

@@ -85,27 +85,27 @@ export default async function AccountsPage() {
       {/* Create New Account */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
         <h2 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
-          <Plus className="h-5 w-5 text-[#f97316]" />
+          <Plus className="h-5 w-5 text-[#ea580c]" />
           New Account
         </h2>
         <form action={createAccount} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <input name="name" placeholder="Company name *" required
-            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#f97316] focus:border-transparent" />
+            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent" />
           <input name="contactName" placeholder="Contact name"
-            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#f97316] focus:border-transparent" />
+            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent" />
           <input name="primaryEmail" type="email" placeholder="Email"
-            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#f97316] focus:border-transparent" />
+            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent" />
           <input name="primaryPhone" placeholder="Phone"
-            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#f97316] focus:border-transparent" />
+            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent" />
           <input name="billingEmail" type="email" placeholder="Billing email (if different)"
-            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#f97316] focus:border-transparent" />
+            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent" />
           <input name="billingCustomAmount" type="number" step="0.01" placeholder="Custom £/mo"
-            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#f97316] focus:border-transparent" />
+            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent" />
           <input name="billingNotes" placeholder="Billing notes (discounts, extras)"
-            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#f97316] focus:border-transparent" />
+            className="px-3 py-2 border border-gray-200 rounded-lg text-sm focus:ring-2 focus:ring-[#ea580c] focus:border-transparent" />
           <div className="flex items-end">
             <button type="submit"
-              className="w-full px-4 py-2 bg-[#f97316] text-white rounded-lg hover:bg-[#ea580c] text-sm font-medium transition-colors">
+              className="w-full px-4 py-2 bg-[#ea580c] text-white rounded-lg hover:bg-[#ea580c] text-sm font-medium transition-colors">
               Create Account
             </button>
           </div>

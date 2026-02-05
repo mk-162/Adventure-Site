@@ -573,9 +573,9 @@ export default async function RegionPage({ params }: RegionPageProps) {
         {/* Empty Region State */}
         {!hasContent && (
           <div className="mb-12">
-            <div className="bg-gradient-to-br from-[#1e3a4c]/5 to-[#f97316]/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f97316]/10 mb-6">
-                <Compass className="w-8 h-8 text-[#f97316]" />
+            <div className="bg-gradient-to-br from-[#1e3a4c]/5 to-[#ea580c]/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#ea580c]/10 mb-6">
+                <Compass className="w-8 h-8 text-[#ea580c]" />
               </div>
               <h2 className="text-2xl lg:text-3xl font-black text-[#1e3a4c] mb-3">
                 We&apos;re still exploring {region.name}
@@ -599,7 +599,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
                         src={`/images/regions/${r.slug}-hero.jpg`}
                       />
                     </div>
-                    <span className="text-sm font-bold text-[#1e3a4c] group-hover:text-[#f97316] transition-colors">
+                    <span className="text-sm font-bold text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors">
                       {r.name}
                     </span>
                   </Link>
@@ -834,7 +834,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-[#f97316] p-6 lg:p-10 text-center relative overflow-hidden">
+      <div className="bg-[#ea580c] p-6 lg:p-10 text-center relative overflow-hidden">
         <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
         <div className="relative z-10 flex flex-col items-center gap-4 max-w-xl mx-auto">
           <h2 className="text-white text-xl lg:text-2xl font-black leading-tight tracking-tight">

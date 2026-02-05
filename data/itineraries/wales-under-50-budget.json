@@ -1,6 +1,6 @@
 {
   "slug": "wales-under-50-budget",
-  "title": "Wales Adventure Under \u00a350",
+  "title": "Wales Adventure Under £50",
   "tagline": "Proof that the best things in Wales are free (or nearly)",
   "region": "multi",
   "days": 3,
@@ -70,14 +70,15 @@
       "description": "A cafe at the visitor centre with sandwiches, cakes, and hot drinks.",
       "costFrom": 8,
       "costTo": 15,
-      "lat": 52.822,
-      "lng": -3.869,
+      "lat": 52.822373,
+      "lng": -3.878772,
       "travelToNext": "1 hour drive to wild swimming location",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed lunch at scenic spot",
         "description": "Picnic by the River Mawddach near Ganllwyd."
-      }
+      },
+      "postcode": "LL40 2HS"
     },
     {
       "day": 1,
@@ -115,8 +116,8 @@
       "description": "Find a suitable wild camping spot (check local regulations) near Llyn Ogwen for a truly immersive experience. Remember to leave no trace!",
       "costFrom": 0,
       "costTo": 0,
-      "lat": 53.1239,
-      "lng": -4.0012,
+      "lat": 53.123302,
+      "lng": -4.020493,
       "travelToNext": "30 min drive to Llanberis",
       "travelMode": "drive",
       "budgetAlt": {
@@ -124,7 +125,8 @@
         "description": "Budget-friendly campsite in Llanberis with excellent facilities and a sociable atmosphere.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "LL57 3LZ"
     },
     {
       "day": 2,
@@ -170,7 +172,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Llyn Padarn",
         "description": "Enjoy your own sandwiches and snacks with a view of the lake."
-      }
+      },
+      "postcode": "LL55 4SL"
     },
     {
       "day": 2,
@@ -190,7 +193,8 @@
         "description": "Find a discreet wild camping spot along the Pembrokeshire Coast Path. Be responsible and leave no trace.",
         "costFrom": 0,
         "costTo": 0
-      }
+      },
+      "postcode": "SA62 6SE"
     },
     {
       "day": 3,
@@ -236,7 +240,8 @@
       "budgetAlt": {
         "title": "Picnic at Porthgain Harbour",
         "description": "Enjoy your own lunch with views of the picturesque harbor."
-      }
+      },
+      "postcode": "SA62 6DP"
     },
     {
       "day": 3,

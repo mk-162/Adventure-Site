@@ -69,14 +69,15 @@
       "description": "A traditional pub serving classic pub fare and local ales.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 51.819,
-      "lng": -3.705,
+      "lat": 51.824857,
+      "lng": -3.684015,
       "travelToNext": "20min drive via A4059",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed lunch at Craig y Nos Country Park",
         "description": "Enjoy your own sandwiches overlooking the scenic Craig y Nos Castle"
-      }
+      },
+      "postcode": "SA9 1GL"
     },
     {
       "day": 1,
@@ -123,7 +124,8 @@
         "description": "A campsite near Merthyr Tydfil, offering a budget-friendly option for families who enjoy camping.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "CF47 8RN"
     },
     {
       "day": 2,

@@ -77,7 +77,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Broad Beach",
         "description": "Enjoy pre-made food at the nearby Broad Beach. Free parking available"
-      }
+      },
+      "postcode": "LL64 5QN"
     },
     {
       "day": 1,
@@ -124,7 +125,8 @@
         "description": "Budget-friendly bunkhouse accommodation in the heart of Rhosneigr.",
         "costFrom": 25,
         "costTo": 40
-      }
+      },
+      "postcode": "LL64 5QN"
     },
     {
       "day": 1,
@@ -145,7 +147,8 @@
         "description": "Prepare food yourself for a cheaper meal",
         "costFrom": 5,
         "costTo": 10
-      }
+      },
+      "postcode": "LL64 5QN"
     },
     {
       "day": 2,
@@ -193,7 +196,8 @@
         "description": "Pack a lunch and drive to a scenic viewpoint along the coast for a picnic with a view.",
         "costFrom": 5,
         "costTo": 10
-      }
+      },
+      "postcode": "LL64 5RB"
     },
     {
       "day": 2,

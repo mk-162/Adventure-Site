@@ -118,7 +118,7 @@ export function ActivitySeasonGuide({
                   className={clsx(
                     "flex-1 h-3 sm:h-4 rounded-sm transition-all relative group",
                     rating ? RATING_BG[rating] : "bg-gray-100",
-                    idx === currentMonth && "ring-2 ring-[#f97316] ring-offset-1"
+                    idx === currentMonth && "ring-2 ring-[#ea580c] ring-offset-1"
                   )}
                   title={`${MONTHS[idx]}: ${rating || "Not recommended"}`}
                 />
@@ -128,7 +128,7 @@ export function ActivitySeasonGuide({
             {activity === activities[activities.length - 1] && (
               <div className="hidden sm:flex gap-0.5 sm:gap-1 mt-1">
                 {MONTHS.map((m, idx) => (
-                  <div key={idx} className={clsx("flex-1 text-center text-[10px]", idx === currentMonth ? "text-[#f97316] font-bold" : "text-gray-400")}>
+                  <div key={idx} className={clsx("flex-1 text-center text-[10px]", idx === currentMonth ? "text-[#ea580c] font-bold" : "text-gray-400")}>
                     {m.charAt(0)}
                   </div>
                 ))}
@@ -153,7 +153,7 @@ export function ActivitySeasonGuide({
           <span className="text-xs text-gray-600">Possible</span>
         </div>
         <div className="flex items-center gap-1.5 ml-auto">
-          <div className="w-3 h-3 rounded-sm ring-2 ring-[#f97316] ring-offset-1 bg-gray-200" />
+          <div className="w-3 h-3 rounded-sm ring-2 ring-[#ea580c] ring-offset-1 bg-gray-200" />
           <span className="text-xs text-gray-500">Now</span>
         </div>
       </div>

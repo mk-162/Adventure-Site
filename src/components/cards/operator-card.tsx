@@ -29,7 +29,7 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
     return (
       <Link
         href={`/directory/${operator.slug}`}
-        className={`group block rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border-2 border-[#f97316]/20 relative ${isPremium ? "border-l-4 border-l-amber-400 bg-amber-50/30" : "bg-white"}`}
+        className={`group block rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border-2 border-[#ea580c]/20 relative ${isPremium ? "border-l-4 border-l-amber-400 bg-amber-50/30" : "bg-white"}`}
       >
         <div className="p-6">
           <div className="flex items-start justify-between mb-4">
@@ -41,7 +41,7 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
                 />
               )}
               <div>
-                <h3 className="font-bold text-lg text-[#1e3a4c] group-hover:text-[#f97316] transition-colors">
+                <h3 className="font-bold text-lg text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors">
                   {operator.name}
                 </h3>
                 <div className="flex items-center gap-2 mt-1">
@@ -71,7 +71,7 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
             <div className="flex items-center gap-4">
               {operator.googleRating && (
                 <span className="flex items-center gap-1 text-sm">
-                  <Star className="h-4 w-4 fill-[#f97316] text-[#f97316]" />
+                  <Star className="h-4 w-4 fill-[#ea580c] text-[#ea580c]" />
                   <span className="font-semibold">{operator.googleRating}</span>
                   {operator.reviewCount && (
                     <span className="text-gray-400">
@@ -130,7 +130,7 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
         {/* Content */}
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2">
-            <h3 className="font-semibold text-[#1e3a4c] group-hover:text-[#f97316] transition-colors truncate">
+            <h3 className="font-semibold text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors truncate">
               {operator.name}
             </h3>
             <VerifiedBadge claimStatus={operator.claimStatus} size="sm" showLabel={false} />
@@ -146,7 +146,7 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
           <div className="flex items-center gap-3 mt-1">
             {operator.googleRating && (
               <span className="flex items-center gap-1 text-sm">
-                <Star className="h-3 w-3 fill-[#f97316] text-[#f97316]" />
+                <Star className="h-3 w-3 fill-[#ea580c] text-[#ea580c]" />
                 <span className="font-medium">{operator.googleRating}</span>
               </span>
             )}
@@ -162,14 +162,14 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
         </div>
 
         {/* Arrow */}
-        <ChevronRight className="h-5 w-5 text-gray-300 group-hover:text-[#f97316] transition-colors flex-shrink-0" />
+        <ChevronRight className="h-5 w-5 text-gray-300 group-hover:text-[#ea580c] transition-colors flex-shrink-0" />
       </Link>
 
       {!isClaimed && (
         <div className="px-4 pb-3 border-t border-gray-100">
           <Link
             href="/advertise"
-            className="text-xs text-gray-400 hover:text-[#f97316] transition-colors"
+            className="text-xs text-gray-400 hover:text-[#ea580c] transition-colors"
           >
             Is this your business? Claim this listing →
           </Link>

@@ -139,7 +139,7 @@ function markdownToHtml(md: string): string {
       return `<div class="overflow-x-auto my-6 rounded-xl border border-gray-200"><table class="w-full">${match}</table></div>`;
     })
     // Unordered lists
-    .replace(/^- (.+)$/gm, '<li class="flex items-start gap-3 py-1"><span class="text-[#f97316] shrink-0">•</span><span>$1</span></li>')
+    .replace(/^- (.+)$/gm, '<li class="flex items-start gap-3 py-1"><span class="text-[#ea580c] shrink-0">•</span><span>$1</span></li>')
     .replace(/(<li[\s\S]*?<\/li>\n?)+/g, (match) => {
       if (match.includes('flex items-start')) {
         return `<ul class="space-y-1 my-4">${match}</ul>`;
@@ -147,7 +147,7 @@ function markdownToHtml(md: string): string {
       return match;
     })
     // Links
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-[#f97316] hover:underline font-medium">$1</a>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-[#ea580c] hover:underline font-medium">$1</a>')
     // Paragraphs
     .replace(/^(?!<[hultd]|<li|<div|<tr)(.+)$/gm, (match, p1) => {
       if (p1.trim()) {
@@ -254,8 +254,8 @@ export default async function AnswerPage({ params }: Props) {
             <span className="text-[#1e3a4c] font-medium">Not found</span>
           </nav>
           <div className="text-center py-12">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f97316]/10 mb-6">
-              <HelpCircle className="w-8 h-8 text-[#f97316]" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#ea580c]/10 mb-6">
+              <HelpCircle className="w-8 h-8 text-[#ea580c]" />
             </div>
             <h1 className="text-2xl lg:text-3xl font-black text-[#1e3a4c] mb-3">
               Answer not found
@@ -278,7 +278,7 @@ export default async function AnswerPage({ params }: Props) {
                       <span className="text-gray-800 group-hover:text-[#1e3a4c] font-medium transition-colors">
                         {answer.question}
                       </span>
-                      <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#f97316] transition-colors shrink-0" />
+                      <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#ea580c] transition-colors shrink-0" />
                     </Link>
                   ))}
                 </div>
@@ -441,7 +441,7 @@ export default async function AnswerPage({ params }: Props) {
                       <li key={h.id}>
                         <a
                           href={`#${h.id}`}
-                          className={`block text-sm hover:text-[#f97316] transition-colors ${
+                          className={`block text-sm hover:text-[#ea580c] transition-colors ${
                             h.level === 2 ? "text-gray-700 font-medium" : "pl-4 text-gray-500"
                           }`}
                         >
@@ -464,7 +464,7 @@ export default async function AnswerPage({ params }: Props) {
             {relatedQuestions.length > 0 && (
               <section className="mt-10 pt-6 border-t border-gray-200">
                 <h2 className="text-xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                  <HelpCircle className="w-5 h-5 text-[#f97316]" />
+                  <HelpCircle className="w-5 h-5 text-[#ea580c]" />
                   Related Questions
                 </h2>
                 <div className="flex flex-col gap-3">
@@ -479,7 +479,7 @@ export default async function AnswerPage({ params }: Props) {
                         <span className="text-gray-800 group-hover:text-[#1e3a4c] font-medium transition-colors">
                           {question}
                         </span>
-                        <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#f97316] transition-colors shrink-0" />
+                        <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#ea580c] transition-colors shrink-0" />
                       </Link>
                     );
                   })}
@@ -511,7 +511,7 @@ export default async function AnswerPage({ params }: Props) {
             {relatedAnswers.length > 0 && (
               <section className="mt-10 pt-8 border-t border-gray-200">
                 <h2 className="text-xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                  <HelpCircle className="w-5 h-5 text-[#f97316]" />
+                  <HelpCircle className="w-5 h-5 text-[#ea580c]" />
                   More Answers{frontmatter.region ? ` about ${formatRegionName(frontmatter.region)}` : ""}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -521,7 +521,7 @@ export default async function AnswerPage({ params }: Props) {
                       href={`/answers/${answer.slug}`}
                       className="group flex items-start gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-[#1e3a4c]/30 hover:shadow-sm transition-all"
                     >
-                      <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-[#f97316] shrink-0 mt-1 transition-colors" />
+                      <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-[#ea580c] shrink-0 mt-1 transition-colors" />
                       <span className="text-sm text-gray-700 group-hover:text-[#1e3a4c] font-medium transition-colors line-clamp-2">
                         {answer.question}
                       </span>
@@ -531,7 +531,7 @@ export default async function AnswerPage({ params }: Props) {
                 <div className="mt-4 text-center">
                   <Link
                     href="/answers"
-                    className="inline-flex items-center gap-2 text-sm text-[#f97316] font-medium hover:underline"
+                    className="inline-flex items-center gap-2 text-sm text-[#ea580c] font-medium hover:underline"
                   >
                     Browse all answers <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -562,7 +562,7 @@ export default async function AnswerPage({ params }: Props) {
               {relatedAnswers.length > 0 && (
                 <div className="bg-white rounded-xl border border-gray-200 p-5 shadow-sm">
                   <h3 className="font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                    <HelpCircle className="w-4 h-4 text-[#f97316]" />
+                    <HelpCircle className="w-4 h-4 text-[#ea580c]" />
                     More Questions
                   </h3>
                   <ul className="space-y-3">
@@ -580,7 +580,7 @@ export default async function AnswerPage({ params }: Props) {
                   </ul>
                   <Link
                     href="/answers"
-                    className="block mt-4 text-sm text-[#f97316] font-medium hover:underline"
+                    className="block mt-4 text-sm text-[#ea580c] font-medium hover:underline"
                   >
                     View all questions →
                   </Link>

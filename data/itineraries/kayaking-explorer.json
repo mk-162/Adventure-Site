@@ -75,7 +75,8 @@
       "budgetAlt": {
         "title": "Packed Lunch at Broad Beach",
         "description": "Enjoy your sandwiches overlooking the Irish Sea."
-      }
+      },
+      "postcode": "LL64 5QN"
     },
     {
       "day": 1,
@@ -122,7 +123,8 @@
         "description": "A more budget-friendly option with caravan and camping pitches near Cemaes Bay. Requires a 25 minute drive north.",
         "costFrom": 20,
         "costTo": 60
-      }
+      },
+      "postcode": "LL65 2UP"
     },
     {
       "day": 2,
@@ -168,7 +170,8 @@
       "budgetAlt": {
         "title": "Picnic Lunch at Church Bay",
         "description": "Enjoy a picnic lunch on the beach at Church Bay."
-      }
+      },
+      "postcode": "LL65 4LD"
     },
     {
       "day": 2,
@@ -215,7 +218,8 @@
         "description": "Stay in a caravan or pitch a tent at Cemaes Bay Caravan Park - it's cheaper and more basic.",
         "costFrom": 20,
         "costTo": 60
-      }
+      },
+      "postcode": "LL65 4LD"
     },
     {
       "day": 3,

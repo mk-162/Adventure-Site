@@ -137,7 +137,7 @@ export function ItineraryCard({
 
       {/* Card Content */}
       <div className="p-5 flex flex-col flex-grow">
-        <h3 className="font-bold text-lg text-[#1e3a4c] mb-2 group-hover:text-[#f97316] transition-colors line-clamp-2">
+        <h3 className="font-bold text-lg text-[#1e3a4c] mb-2 group-hover:text-[#ea580c] transition-colors line-clamp-2">
           {itinerary.title}
         </h3>
 

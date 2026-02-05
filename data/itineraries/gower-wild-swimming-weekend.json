@@ -76,7 +76,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Overton Mere",
         "description": "Enjoy your own picnic with views of the sea"
-      }
+      },
+      "postcode": "SA3 1NX"
     },
     {
       "day": 1,
@@ -123,7 +124,8 @@
         "description": "Camping fields close to the beach.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "SA3 1NX"
     },
     {
       "day": 2,
@@ -169,7 +171,8 @@
       "budgetAlt": {
         "title": "Packed lunch on Pennard Cliffs",
         "description": "Enjoy your picnic whilst overlooking the cliffs"
-      }
+      },
+      "postcode": "SA3 2HB"
     },
     {
       "day": 2,

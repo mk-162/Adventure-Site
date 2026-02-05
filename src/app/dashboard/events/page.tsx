@@ -26,7 +26,7 @@ export default async function DashboardEventsPage() {
         </div>
         <Link
           href="/dashboard/events/new"
-          className="flex items-center gap-2 bg-[#f97316] text-white px-4 py-2 rounded-lg font-bold hover:bg-[#ea580c] transition-colors"
+          className="flex items-center gap-2 bg-[#ea580c] text-white px-4 py-2 rounded-lg font-bold hover:bg-[#ea580c] transition-colors"
         >
           <Plus className="w-5 h-5" />
           Add Event
@@ -45,7 +45,7 @@ export default async function DashboardEventsPage() {
             </p>
             <Link
               href="/dashboard/events/new"
-              className="inline-flex items-center gap-2 text-[#f97316] font-bold hover:underline"
+              className="inline-flex items-center gap-2 text-[#ea580c] font-bold hover:underline"
             >
               Create an event
             </Link>
@@ -92,11 +92,11 @@ export default async function DashboardEventsPage() {
                   </div>
 
                   {event.isPromoted ? (
-                    <span className="flex items-center gap-1 text-xs font-bold text-[#f97316]">
+                    <span className="flex items-center gap-1 text-xs font-bold text-[#ea580c]">
                       <Star className="w-3 h-3 fill-current" /> Promoted
                     </span>
                   ) : (
-                    <button className="text-sm font-medium text-[#f97316] hover:underline">
+                    <button className="text-sm font-medium text-[#ea580c] hover:underline">
                       Promote
                     </button>
                   )}

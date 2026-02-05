@@ -351,7 +351,7 @@ export function CostBreakdown({ stops, mode, itineraryName, itineraryId }: CostB
       <div className="px-6 py-4 bg-gray-50/50">
         <div className="flex justify-between items-center mb-1">
           <span className="text-sm font-bold text-[#1e3a4c]">Group Total</span>
-          <span className="text-lg font-black text-[#f97316]">{formatRange(totalMin, totalMax)}</span>
+          <span className="text-lg font-black text-[#ea580c]">{formatRange(totalMin, totalMax)}</span>
         </div>
         <div className="flex justify-between items-center">
           <span className="text-xs text-gray-500">Per person avg.</span>
@@ -371,7 +371,7 @@ export function CostBreakdown({ stops, mode, itineraryName, itineraryId }: CostB
             "w-full font-bold py-3.5 rounded-xl shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2",
             saved
               ? "bg-green-600 hover:bg-green-700 text-white shadow-green-600/30"
-              : "bg-[#f97316] hover:bg-[#f97316]/90 text-white shadow-[#f97316]/30"
+              : "bg-[#ea580c] hover:bg-[#ea580c]/90 text-white shadow-[#ea580c]/30"
           )}
         >
           <Heart className={clsx("w-5 h-5 transition-all", saved ? "fill-white" : "")} />
@@ -408,7 +408,7 @@ export function CostBreakdown({ stops, mode, itineraryName, itineraryId }: CostB
           >
             <div className="flex flex-col items-center text-center gap-4">
               <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
-                <Heart className="w-8 h-8 text-[#f97316]" />
+                <Heart className="w-8 h-8 text-[#ea580c]" />
               </div>
               <h2 className="text-2xl font-bold text-[#1e3a4c]">
                 Save this trip
@@ -419,7 +419,7 @@ export function CostBreakdown({ stops, mode, itineraryName, itineraryId }: CostB
               <div className="flex flex-col sm:flex-row gap-3 w-full mt-2">
                 <Link
                   href={`/login?from=${typeof window !== "undefined" ? encodeURIComponent(window.location.pathname) : ""}`}
-                  className="flex-1 px-6 py-3 bg-[#f97316] text-white font-semibold rounded-lg hover:bg-[#ea580c] transition-colors text-center"
+                  className="flex-1 px-6 py-3 bg-[#ea580c] text-white font-semibold rounded-lg hover:bg-[#ea580c] transition-colors text-center"
                 >
                   Sign in to save
                 </Link>

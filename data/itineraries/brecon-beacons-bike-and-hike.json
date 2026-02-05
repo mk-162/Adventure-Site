@@ -75,7 +75,8 @@
       "budgetAlt": {
         "title": "Packed lunch at BikePark Wales picnic area",
         "description": "Bring your own food and enjoy the park's picnic area."
-      }
+      },
+      "postcode": "CF48 1YU"
     },
     {
       "day": 1,
@@ -95,7 +96,8 @@
         "description": "A campsite near BikePark Wales, offering basic facilities and a budget-friendly option.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "CF48 4AH"
     },
     {
       "day": 2,
@@ -141,7 +143,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Pen y Fan summit",
         "description": "Enjoy a picnic with spectacular views."
-      }
+      },
+      "postcode": "LD3 7DX"
     },
     {
       "day": 2,
@@ -188,7 +191,8 @@
         "description": "A campsite close to Waterfall Country, offering a budget-friendly overnight option.",
         "costFrom": 15,
         "costTo": 25
-      }
+      },
+      "postcode": "SA9 1GJ"
     },
     {
       "day": 3,
@@ -227,14 +231,15 @@
       "description": "Traditional pub in Llangorse, serving hearty pub fare and local ales.",
       "costFrom": 12,
       "costTo": 25,
-      "lat": 51.9218,
-      "lng": -3.2619,
+      "lat": 51.917391,
+      "lng": -3.263354,
       "travelToNext": "5 min drive to Llangorse Lake",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed lunch by the canal",
         "description": "Enjoy a picnic at Llangorse Lake"
-      }
+      },
+      "postcode": "LD3 7PX"
     },
     {
       "day": 3,

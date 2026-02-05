@@ -66,7 +66,7 @@ export function Header() {
             )}
             <Link
               href="/advertise"
-              className="px-5 py-2.5 bg-[#f97316] hover:bg-orange-600 text-white text-sm font-bold rounded-lg transition-colors shadow-lg shadow-orange-500/20"
+              className="px-5 py-2.5 bg-[#ea580c] hover:bg-orange-600 text-white text-sm font-bold rounded-lg transition-colors shadow-lg shadow-orange-500/20"
             >
               Advertise
             </Link>
@@ -122,7 +122,7 @@ export function Header() {
               )}
               <Link
                 href="/advertise"
-                className="block w-full py-3 bg-[#f97316] text-white text-sm font-bold rounded-lg text-center"
+                className="block w-full py-3 bg-[#ea580c] text-white text-sm font-bold rounded-lg text-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Advertise

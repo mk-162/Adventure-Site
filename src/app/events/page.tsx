@@ -25,7 +25,7 @@ export default async function EventsPage() {
           <p className="text-white/80 mb-3">
             Trail runs, triathlons, MTB races, and adventure festivals across Wales. With honest difficulty info so you know what you&apos;re signing up for.
           </p>
-          <a href="/calendar" className="text-[#f97316] font-semibold text-sm hover:underline">
+          <a href="/calendar" className="text-[#ea580c] font-semibold text-sm hover:underline">
             View Calendar →
           </a>
 
@@ -43,7 +43,7 @@ export default async function EventsPage() {
       <EventsFilters events={events} />
 
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="bg-[#f97316] rounded-2xl p-8 sm:p-12 text-center text-white relative overflow-hidden">
+        <div className="bg-[#ea580c] rounded-2xl p-8 sm:p-12 text-center text-white relative overflow-hidden">
           <div className="relative z-10 max-w-2xl mx-auto">
             <h2 className="text-3xl font-black mb-4">Organising an event?</h2>
             <p className="text-lg text-white/90 mb-8">

@@ -102,7 +102,7 @@ export default async function HomePage() {
           <section className="py-12 sm:py-16 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
               <div className="text-center mb-8">
-                <span className="text-[#f97316] font-bold uppercase tracking-wider text-sm">Trusted Partners</span>
+                <span className="text-[#ea580c] font-bold uppercase tracking-wider text-sm">Trusted Partners</span>
                 <h2 className="mt-2 text-2xl sm:text-3xl font-bold text-[#1e3a4c]">Adventure Providers We Recommend</h2>
                 <p className="mt-2 text-gray-500 max-w-xl mx-auto text-sm">Vetted, insured, and reviewed by real adventurers across Wales.</p>
               </div>
@@ -120,7 +120,7 @@ export default async function HomePage() {
                         {op.name.charAt(0)}
                       </div>
                     )}
-                    <h3 className="font-semibold text-sm text-[#1e3a4c] group-hover:text-[#f97316] transition-colors line-clamp-1">{op.name}</h3>
+                    <h3 className="font-semibold text-sm text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors line-clamp-1">{op.name}</h3>
                     {op.googleRating && (
                       <div className="flex items-center justify-center gap-1 mt-1">
                         <span className="text-yellow-500 text-xs">★</span>
@@ -134,7 +134,7 @@ export default async function HomePage() {
                 ))}
               </div>
               <div className="text-center mt-6">
-                <a href="/directory" className="text-[#f97316] font-bold hover:underline text-sm">
+                <a href="/directory" className="text-[#ea580c] font-bold hover:underline text-sm">
                   View all providers →
                 </a>
               </div>

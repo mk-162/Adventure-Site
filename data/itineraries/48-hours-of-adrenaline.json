@@ -81,7 +81,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Llyn Stwlan viewpoint",
         "description": "Enjoy your own sandwiches with stunning views of the reservoir."
-      }
+      },
+      "postcode": "LL41 3HD"
     },
     {
       "day": 1,
@@ -128,7 +129,8 @@
         "description": "Basic campsite, close to town of Llanberis, cheaper",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "LL55 4NU"
     },
     {
       "day": 2,
@@ -202,7 +204,8 @@
         "description": "Another budget accommodation in the area",
         "costFrom": 25,
         "costTo": 70
-      }
+      },
+      "postcode": "SA62 6SE"
     }
   ],
   "costBreakdown": {

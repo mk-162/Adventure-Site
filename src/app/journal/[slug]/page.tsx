@@ -13,7 +13,7 @@ const categoryColors: Record<string, string> = {
   seasonal: "#f59e0b",
   news: "#a855f7",
   "trip-report": "#14b8a6",
-  spotlight: "#f97316",
+  spotlight: "#ea580c",
 };
 
 type Props = {
@@ -65,8 +65,8 @@ export default async function ArticlePage({ params }: Props) {
           </div>
         </div>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f97316]/10 mb-6">
-            <Clock className="w-8 h-8 text-[#f97316]" />
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#ea580c]/10 mb-6">
+            <Clock className="w-8 h-8 text-[#ea580c]" />
           </div>
           <h1 className="text-3xl font-bold text-[#1e3a4c] mb-3">Article not found</h1>
           <p className="text-slate-600 text-lg mb-8">
@@ -84,7 +84,7 @@ export default async function ArticlePage({ params }: Props) {
                     href={`/journal/${related.post.slug}`}
                     className="group text-left p-4 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition-all"
                   >
-                    <h4 className="font-bold text-[#1e3a4c] group-hover:text-[#f97316] transition-colors line-clamp-2 text-sm">
+                    <h4 className="font-bold text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors line-clamp-2 text-sm">
                       {related.post.title}
                     </h4>
                     {related.post.excerpt && (
@@ -267,7 +267,7 @@ export default async function ArticlePage({ params }: Props) {
                             />
                           </div>
                         )}
-                        <h4 className="font-bold text-[#1e3a4c] group-hover:text-[#f97316] transition-colors line-clamp-2">
+                        <h4 className="font-bold text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors line-clamp-2">
                           {related.post.title}
                         </h4>
                       </Link>

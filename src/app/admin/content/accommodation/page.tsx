@@ -42,7 +42,7 @@ export default async function AccommodationAdmin() {
         </div>
         <Link
           href="/admin/content/accommodation/new"
-          className="flex items-center gap-2 px-4 py-2 bg-[#f97316] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
+          className="flex items-center gap-2 px-4 py-2 bg-[#ea580c] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
         >
           <Plus className="h-5 w-5" />
           Add Property
@@ -99,7 +99,7 @@ export default async function AccommodationAdmin() {
                     <Link href={`/accommodation/${item.slug}`} className="p-2 text-gray-400 hover:text-gray-600" title="View">
                       <Eye className="h-4 w-4" />
                     </Link>
-                    <Link href={`/admin/content/accommodation/${item.id}`} className="p-2 text-gray-400 hover:text-[#f97316]" title="Edit">
+                    <Link href={`/admin/content/accommodation/${item.id}`} className="p-2 text-gray-400 hover:text-[#ea580c]" title="Edit">
                       <Edit className="h-4 w-4" />
                     </Link>
                     <button className="p-2 text-gray-400 hover:text-red-500" title="Delete">

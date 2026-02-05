@@ -68,14 +68,15 @@
       "description": "A charming gastropub known for its delicious, locally sourced food and cosy atmosphere.",
       "costFrom": 20,
       "costTo": 35,
-      "lat": 52.093,
-      "lng": -3.332,
+      "lat": 52.09709,
+      "lng": -3.328923,
       "travelToNext": "25min drive via A470",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed lunch at Llangorse Lake",
         "description": "Enjoy a picnic with beautiful views of the lake and surrounding mountains."
-      }
+      },
+      "postcode": "LD2 3YX"
     },
     {
       "day": 1,
@@ -113,8 +114,8 @@
       "description": "A comfortable and well-located hostel, perfect for exploring the area and ideal for stargazing.",
       "costFrom": 25,
       "costTo": 70,
-      "lat": 51.9,
-      "lng": -3.44,
+      "lat": 51.915821,
+      "lng": -3.450206,
       "travelToNext": "15min drive via A470",
       "travelMode": "drive",
       "budgetAlt": {
@@ -122,7 +123,8 @@
         "description": "A basic but affordable bunkhouse near Pen y Fan.",
         "costFrom": 25,
         "costTo": 40
-      }
+      },
+      "postcode": "LD3 8NE"
     },
     {
       "day": 1,
@@ -134,14 +136,15 @@
       "description": "Prepare your own dinner using the hostel's kitchen facilities, taking advantage of the dark skies.",
       "costFrom": 5,
       "costTo": 10,
-      "lat": 51.9,
-      "lng": -3.44,
+      "lat": 51.915821,
+      "lng": -3.450206,
       "travelToNext": "5min walk",
       "travelMode": "walk",
       "budgetAlt": {
         "title": "Packed Dinner",
         "description": "Picnic with pre-packed snacks at the campsite"
-      }
+      },
+      "postcode": "LD3 8NE"
     },
     {
       "day": 1,
@@ -180,8 +183,8 @@
       "description": "Enjoy a simple breakfast at the hostel before heading out for the day.",
       "costFrom": 5,
       "costTo": 10,
-      "lat": 51.9,
-      "lng": -3.44,
+      "lat": 51.915821,
+      "lng": -3.450206,
       "travelToNext": "15min drive via A470",
       "travelMode": "drive",
       "budgetAlt": {
@@ -189,7 +192,8 @@
         "description": "Bring your own breakfast and prepare it in the hostel kitchen.",
         "costFrom": 2,
         "costTo": 5
-      }
+      },
+      "postcode": "LD3 8NE"
     },
     {
       "day": 2,

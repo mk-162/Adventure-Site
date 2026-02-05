@@ -220,7 +220,7 @@ export default async function ItineraryDetailPage({ params }: Props) {
               variant="mobile"
             />
           ) : (
-            <button className="flex-1 bg-[#f97316] hover:bg-[#f97316]/90 text-white font-bold rounded-xl h-12 flex items-center justify-center gap-2 shadow-lg shadow-[#f97316]/20 transition-all active:scale-95">
+            <button className="flex-1 bg-[#ea580c] hover:bg-[#ea580c]/90 text-white font-bold rounded-xl h-12 flex items-center justify-center gap-2 shadow-lg shadow-[#ea580c]/20 transition-all active:scale-95">
               <span>Enquire</span>
               <span className="bg-white/20 px-2 py-0.5 rounded text-xs font-medium">
                 From £{itinerary.priceEstimateFrom || "TBC"}

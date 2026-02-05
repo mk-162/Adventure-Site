@@ -81,7 +81,7 @@ export function AccommodationCard({
 
       {/* Content */}
       <div className="p-4">
-        <h3 className="font-bold text-[#1e3a4c] mb-1 group-hover:text-[#f97316] transition-colors line-clamp-1">
+        <h3 className="font-bold text-[#1e3a4c] mb-1 group-hover:text-[#ea580c] transition-colors line-clamp-1">
           {accommodation.name}
         </h3>
 
@@ -95,7 +95,7 @@ export function AccommodationCard({
         <div className="flex items-center justify-between mb-3">
           {accommodation.googleRating && (
             <span className="flex items-center gap-1 text-sm">
-              <Star className="h-4 w-4 fill-[#f97316] text-[#f97316]" />
+              <Star className="h-4 w-4 fill-[#ea580c] text-[#ea580c]" />
               <span className="font-medium">{accommodation.googleRating}</span>
             </span>
           )}

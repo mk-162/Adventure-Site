@@ -76,7 +76,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Pontsticill Reservoir",
         "description": "Enjoy your own food with scenic views of the reservoir."
-      }
+      },
+      "postcode": "CF48 3HG"
     },
     {
       "day": 1,
@@ -123,7 +124,8 @@
         "description": "Budget-friendly hostel near Cardiff Central Station.",
         "costFrom": 25,
         "costTo": 40
-      }
+      },
+      "postcode": "CF10 4UW"
     },
     {
       "day": 2,
@@ -169,7 +171,8 @@
       "budgetAlt": {
         "title": "Picnic at Rhossili Bay",
         "description": "Enjoy a packed lunch overlooking the iconic Worm's Head."
-      }
+      },
+      "postcode": "SA2 7JU"
     },
     {
       "day": 2,
@@ -207,8 +210,8 @@
       "description": "Charming hotel near Three Cliffs Bay, perfect for exploring the Gower.",
       "costFrom": 120,
       "costTo": 200,
-      "lat": 51.5873,
-      "lng": -4.1571,
+      "lat": 51.57733,
+      "lng": -4.161966,
       "travelToNext": "2 hour drive to Brecon Beacons",
       "travelMode": "drive",
       "budgetAlt": {
@@ -216,7 +219,8 @@
         "description": "Pitch your tent with stunning coastal views.",
         "costFrom": 20,
         "costTo": 30
-      }
+      },
+      "postcode": "SA3 2HN"
     },
     {
       "day": 3,
@@ -255,14 +259,15 @@
       "description": "Traditional Welsh food.",
       "costFrom": 20,
       "costTo": 30,
-      "lat": 51.9348,
-      "lng": -3.3357,
+      "lat": 51.935733,
+      "lng": -3.344616,
       "travelToNext": "1 hour drive",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Picnic near Talybont Reservoir",
         "description": "Enjoy a picnic by the water."
-      }
+      },
+      "postcode": "LD3 7UY"
     },
     {
       "day": 3,
@@ -309,7 +314,8 @@
         "description": "Camp on the banks of the River Usk.",
         "costFrom": 20,
         "costTo": 30
-      }
+      },
+      "postcode": "LD3 8AQ"
     },
     {
       "day": 4,
@@ -348,14 +354,15 @@
       "description": "Traditional pub food with a great atmosphere.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 51.9247,
-      "lng": -3.2479,
+      "lat": 51.919418,
+      "lng": -3.245351,
       "travelToNext": "Departure",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Picnic by Llangorse Lake",
         "description": "Enjoy a final picnic before heading home."
-      }
+      },
+      "postcode": "LD3 7SZ"
     }
   ],
   "costBreakdown": {

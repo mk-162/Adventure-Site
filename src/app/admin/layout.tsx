@@ -87,7 +87,7 @@ export default function AdminLayout({
             className={clsx(
               "flex items-center gap-3 px-3 py-2 rounded-lg mb-4 transition-colors",
               pathname === "/admin"
-                ? "bg-[#f97316] text-white"
+                ? "bg-[#ea580c] text-white"
                 : "text-white/70 hover:bg-white/10 hover:text-white"
             )}
             onClick={() => setSidebarOpen(false)}
@@ -108,7 +108,7 @@ export default function AdminLayout({
                 className={clsx(
                   "flex items-center gap-3 px-3 py-2 rounded-lg mb-1 transition-colors",
                   isActive(item.href)
-                    ? "bg-[#f97316] text-white"
+                    ? "bg-[#ea580c] text-white"
                     : "text-white/70 hover:bg-white/10 hover:text-white"
                 )}
                 onClick={() => setSidebarOpen(false)}
@@ -131,7 +131,7 @@ export default function AdminLayout({
                 className={clsx(
                   "flex items-center gap-3 px-3 py-2 rounded-lg mb-1 transition-colors",
                   isActive(item.href)
-                    ? "bg-[#f97316] text-white"
+                    ? "bg-[#ea580c] text-white"
                     : "text-white/70 hover:bg-white/10 hover:text-white"
                 )}
                 onClick={() => setSidebarOpen(false)}

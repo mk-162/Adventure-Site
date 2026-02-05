@@ -42,7 +42,7 @@
       "costFrom": 45,
       "costTo": 65,
       "lat": 52.15,
-      "lng": -3.0,
+      "lng": -3,
       "travelToNext": "15min drive via minor roads",
       "travelMode": "drive",
       "wetAlt": {
@@ -68,14 +68,15 @@
       "description": "A traditional pub with hearty lunches and local ales. Popular with walkers and kayakers.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 52.222,
-      "lng": -3.155,
+      "lat": 52.212763,
+      "lng": -3.144375,
       "travelToNext": "20min drive via A44",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed lunch at Llyn Clywedog",
         "description": "Enjoy your packed lunch overlooking the stunning views of Llyn Clywedog reservoir."
-      }
+      },
+      "postcode": "LD8 2RP"
     },
     {
       "day": 1,
@@ -111,8 +112,8 @@
       "description": "A comfortable hotel in the heart of the Elan Valley, perfect for exploring the area. Has a great restaurant and bar.",
       "costFrom": 80,
       "costTo": 150,
-      "lat": 52.27,
-      "lng": -3.55,
+      "lat": 52.277828,
+      "lng": -3.543451,
       "travelToNext": "30min drive to Llyn Clywedog",
       "travelMode": "drive",
       "budgetAlt": {
@@ -120,7 +121,8 @@
         "description": "A basic but affordable hostel in nearby Staylittle, surrounded by forest trails.",
         "costFrom": 20,
         "costTo": 40
-      }
+      },
+      "postcode": "LD1 6NY"
     },
     {
       "day": 2,
@@ -159,14 +161,15 @@
       "description": "A small cafe with a fantastic view. Serves coffee, cakes, and light lunches.",
       "costFrom": 10,
       "costTo": 20,
-      "lat": 52.468,
-      "lng": -3.578,
+      "lat": 52.460958,
+      "lng": -3.56604,
       "travelToNext": "20min drive via B4518",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Picnic at Clywedog Dam",
         "description": "Enjoy a packed lunch with panoramic views from the top of the Clywedog Dam."
-      }
+      },
+      "postcode": "SY18 6NF"
     },
     {
       "day": 2,

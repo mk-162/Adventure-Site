@@ -70,7 +70,7 @@ export default function NotFound() {
           <p className="text-sm font-medium mb-3">Need help planning your adventure?</p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#f97316] hover:bg-orange-600 text-white text-sm font-bold rounded-lg transition-colors shadow-lg"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#ea580c] hover:bg-orange-600 text-white text-sm font-bold rounded-lg transition-colors shadow-lg"
           >
             Get in Touch
           </Link>

@@ -220,7 +220,7 @@ export function ActivityFilters({
           <select 
             value={selectedRegion}
             onChange={(e) => setSelectedRegion(e.target.value)}
-            className="flex-1 px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#f97316]/30 focus:bg-white transition-all"
+            className="flex-1 px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#ea580c]/30 focus:bg-white transition-all"
           >
             <option value="">All Regions</option>
             {regions.map(region => (
@@ -231,7 +231,7 @@ export function ActivityFilters({
           <select 
             value={selectedActivityType}
             onChange={(e) => setSelectedActivityType(e.target.value)}
-            className="flex-1 px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#f97316]/30 focus:bg-white transition-all"
+            className="flex-1 px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#ea580c]/30 focus:bg-white transition-all"
           >
             <option value="">All Activity Types</option>
             {activityTypes.map(type => (
@@ -342,7 +342,7 @@ export function ActivityFilters({
               setSelectedPrice('');
               setSortBy('name');
             }}
-            className="px-6 py-2 bg-[#f97316] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
+            className="px-6 py-2 bg-[#ea580c] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
           >
             Clear all filters
           </button>

@@ -58,7 +58,7 @@ export async function POST(req: NextRequest) {
               <h2 style="color: #1e3a4c;">Sign In</h2>
               <p>Hey${user.name ? ` ${user.name}` : ""}! Click below to sign in to your Adventure Wales account.</p>
               <div style="text-align: center; margin: 32px 0;">
-                <a href="${verifyUrl}" style="background: #f97316; color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
+                <a href="${verifyUrl}" style="background: #ea580c; color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
                   Sign In →
                 </a>
               </div>

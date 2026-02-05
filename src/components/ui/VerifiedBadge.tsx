@@ -49,11 +49,11 @@ export function VerifiedBadge({
   // Color schemes
   const colors = isPremium
     ? {
-        bg: "bg-gradient-to-r from-[#f97316]/10 to-amber-500/10",
-        border: "border-[#f97316]/30",
-        text: "text-[#f97316]",
-        icon: "text-[#f97316]",
-        shadow: "shadow-[#f97316]/5",
+        bg: "bg-gradient-to-r from-[#ea580c]/10 to-amber-500/10",
+        border: "border-[#ea580c]/30",
+        text: "text-[#ea580c]",
+        icon: "text-[#ea580c]",
+        shadow: "shadow-[#ea580c]/5",
       }
     : {
         bg: "bg-gradient-to-r from-emerald-50 to-green-50",

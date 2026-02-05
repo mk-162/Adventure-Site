@@ -71,14 +71,15 @@
       "description": "A traditional pub in Pontneddfechan serving hearty meals and local ales. A great place to refuel after gorge walking.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 51.778,
-      "lng": -3.59,
+      "lat": 51.824857,
+      "lng": -3.684015,
       "travelToNext": "20min drive via A4059 and A470",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed lunch at Pontneddfechan picnic area",
         "description": "Enjoy a picnic lunch by the river in the village."
-      }
+      },
+      "postcode": "SA9 1GL"
     },
     {
       "day": 1,
@@ -116,8 +117,8 @@
       "description": "A modern hostel with stunning views, located close to Pen y Fan. Perfect for solo travellers looking for a social atmosphere.",
       "costFrom": 25,
       "costTo": 70,
-      "lat": 51.902,
-      "lng": -3.42,
+      "lat": 51.915821,
+      "lng": -3.450206,
       "travelToNext": "15min drive to Pen y Fan",
       "travelMode": "drive",
       "budgetAlt": {
@@ -125,7 +126,8 @@
         "description": "A basic but comfortable bunkhouse near Libanus, offering affordable accommodation.",
         "costFrom": 25,
         "costTo": 40
-      }
+      },
+      "postcode": "LD3 8NE"
     },
     {
       "day": 2,
@@ -164,8 +166,8 @@
       "description": "A modern hotel and restaurant near Pen y Fan, with a varied menu and comfortable setting.",
       "costFrom": 20,
       "costTo": 35,
-      "lat": 51.845,
-      "lng": -3.392,
+      "lat": 51.833451,
+      "lng": -3.382073,
       "travelToNext": "1 hour drive via A470 and A4059",
       "travelMode": "drive",
       "budgetAlt": {
@@ -173,7 +175,8 @@
         "description": "Enjoy a picnic lunch by the water.",
         "costFrom": 5,
         "costTo": 10
-      }
+      },
+      "postcode": "CF48 2UT"
     },
     {
       "day": 2,
@@ -220,7 +223,8 @@
         "description": "A B&B just outside Merthyr",
         "costFrom": 35,
         "costTo": 60
-      }
+      },
+      "postcode": "CF48 3DA"
     },
     {
       "day": 3,
@@ -259,14 +263,15 @@
       "description": "A cafe located at Llangorse Lake, offering sandwiches, cakes and drinks. Enjoy the views from the outdoor seating area.",
       "costFrom": 10,
       "costTo": 20,
-      "lat": 51.923,
-      "lng": -3.26,
+      "lat": 51.917391,
+      "lng": -3.263354,
       "travelToNext": "30min drive via A40",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Picnic by Llangorse Lake",
         "description": "Enjoy a packed lunch with lake views."
-      }
+      },
+      "postcode": "LD3 7PX"
     },
     {
       "day": 3,
@@ -304,8 +309,8 @@
       "description": "Set in the Black Mountains, this hostel is remote with great views, close to Hay-on-Wye.",
       "costFrom": 25,
       "costTo": 65,
-      "lat": 52.01,
-      "lng": -3.14,
+      "lat": 52.01997,
+      "lng": -3.137441,
       "travelToNext": "Various",
       "travelMode": "drive",
       "budgetAlt": {
@@ -313,7 +318,8 @@
         "description": "A basic but comfortable bunkhouse",
         "costFrom": 25,
         "costTo": 45
-      }
+      },
+      "postcode": "HR3 5QJ"
     },
     {
       "day": 4,
@@ -352,14 +358,15 @@
       "description": "A popular pub in Llangynidr, serving traditional pub food and local ales.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 51.915,
-      "lng": -3.21,
+      "lat": 51.905607,
+      "lng": -3.212567,
       "travelToNext": "Drive to next location or home.",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Picnic by the canal in Llangynidr",
         "description": "Enjoy a packed lunch by the canal."
-      }
+      },
+      "postcode": "NP8 1RS"
     }
   ],
   "costBreakdown": {

@@ -117,7 +117,7 @@ export default async function AdminDashboard() {
               <div className={`${card.color} p-3 rounded-lg`}>
                 <card.icon className="h-6 w-6 text-white" />
               </div>
-              <ArrowRight className="h-5 w-5 text-gray-400 group-hover:text-[#f97316] transition-colors" />
+              <ArrowRight className="h-5 w-5 text-gray-400 group-hover:text-[#ea580c] transition-colors" />
             </div>
             <div>
               <p className="text-3xl font-bold text-gray-900">{card.count}</p>
@@ -135,27 +135,27 @@ export default async function AdminDashboard() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           <Link
             href="/admin/content/activities/new"
-            className="flex items-center justify-center gap-2 p-4 rounded-lg border border-gray-200 hover:border-[#f97316] hover:text-[#f97316] transition-colors"
+            className="flex items-center justify-center gap-2 p-4 rounded-lg border border-gray-200 hover:border-[#ea580c] hover:text-[#ea580c] transition-colors"
           >
             <Compass className="h-5 w-5" />
             Add Activity
           </Link>
           <Link
             href="/admin/content/operators/new"
-            className="flex items-center justify-center gap-2 p-4 rounded-lg border border-gray-200 hover:border-[#f97316] hover:text-[#f97316] transition-colors"
+            className="flex items-center justify-center gap-2 p-4 rounded-lg border border-gray-200 hover:border-[#ea580c] hover:text-[#ea580c] transition-colors"
           >
             <Users className="h-5 w-5" />
             Add Operator
           </Link>
           <Link
             href="/admin/commercial/claims"
-            className="flex items-center justify-center gap-2 p-4 rounded-lg border border-gray-200 hover:border-[#f97316] hover:text-[#f97316] transition-colors"
+            className="flex items-center justify-center gap-2 p-4 rounded-lg border border-gray-200 hover:border-[#ea580c] hover:text-[#ea580c] transition-colors"
           >
             Review Claims
           </Link>
           <Link
             href="/"
-            className="flex items-center justify-center gap-2 p-4 rounded-lg border border-gray-200 hover:border-[#f97316] hover:text-[#f97316] transition-colors"
+            className="flex items-center justify-center gap-2 p-4 rounded-lg border border-gray-200 hover:border-[#ea580c] hover:text-[#ea580c] transition-colors"
           >
             View Site
           </Link>

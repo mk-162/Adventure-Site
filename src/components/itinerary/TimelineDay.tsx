@@ -72,7 +72,7 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
     <div className="mb-8 relative pl-0 sm:pl-4">
         {/* Day Header */}
         <div className="flex items-center gap-4 mb-6">
-            <div className="bg-[#f97316] text-white font-bold text-xl w-12 h-12 rounded-xl flex items-center justify-center shadow-md z-10 relative shrink-0">
+            <div className="bg-[#ea580c] text-white font-bold text-xl w-12 h-12 rounded-xl flex items-center justify-center shadow-md z-10 relative shrink-0">
                 {String(dayNumber).padStart(2, '0')}
             </div>
             <h3 className="text-xl font-bold text-[#1e3a4c]">Day {dayNumber}</h3>
@@ -82,9 +82,9 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
             {/* Travel FROM Basecamp */}
             {travelFromBasecamp && (
                 <div className="relative pl-8 pb-4">
-                    <div className="absolute left-[-5px] top-6 w-3 h-3 bg-white border-2 border-[#f97316] rounded-full z-10"></div>
+                    <div className="absolute left-[-5px] top-6 w-3 h-3 bg-white border-2 border-[#ea580c] rounded-full z-10"></div>
                     <div className="bg-orange-50 border border-orange-200 rounded-lg p-3 flex items-center gap-3">
-                        <div className="bg-[#f97316] p-1.5 rounded-lg">
+                        <div className="bg-[#ea580c] p-1.5 rounded-lg">
                             <Home className="w-4 h-4 text-white" />
                         </div>
                         <div className="flex-1">
@@ -240,7 +240,7 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
                                         {stop.operator?.slug && (
                                             <Link
                                                 href={`/directory/${stop.operator.slug}`}
-                                                className="text-xs font-bold text-[#f97316] bg-[#f97316]/10 px-3 py-1.5 rounded-lg hover:bg-[#f97316]/20 transition-colors flex items-center gap-1"
+                                                className="text-xs font-bold text-[#ea580c] bg-[#ea580c]/10 px-3 py-1.5 rounded-lg hover:bg-[#ea580c]/20 transition-colors flex items-center gap-1"
                                             >
                                                 <Phone className="w-3 h-3" /> Contact / Book
                                             </Link>
@@ -274,13 +274,13 @@ export function TimelineDay({ dayNumber, stops, mode, basecamp, skippedStops, it
             {/* Travel TO Basecamp */}
             {travelToBasecamp && (
                 <div className="relative pl-8 pt-4">
-                    <div className="absolute left-[-5px] top-6 w-3 h-3 bg-white border-2 border-[#f97316] rounded-full z-10"></div>
+                    <div className="absolute left-[-5px] top-6 w-3 h-3 bg-white border-2 border-[#ea580c] rounded-full z-10"></div>
                     <div className="mt-4 mb-4 flex items-center gap-2 text-xs text-gray-500 font-medium pl-1">
                         <Car className="w-4 h-4" />
                         <span>{travelToBasecamp} drive</span>
                     </div>
                     <div className="bg-orange-50 border border-orange-200 rounded-lg p-3 flex items-center gap-3">
-                        <div className="bg-[#f97316] p-1.5 rounded-lg">
+                        <div className="bg-[#ea580c] p-1.5 rounded-lg">
                             <Home className="w-4 h-4 text-white" />
                         </div>
                         <div className="flex-1">

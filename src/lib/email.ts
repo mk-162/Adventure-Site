@@ -29,7 +29,7 @@ export async function sendMagicLink({
         <h2 style="color: #1e3a4c;">${purpose === "claim" ? "Verify Your Listing" : "Sign In"}</h2>
         <p>Hi! Click the button below to ${purpose === "claim" ? "verify and manage" : "access"} the <strong>${operatorName}</strong> listing on Adventure Wales.</p>
         <div style="text-align: center; margin: 32px 0;">
-          <a href="${url}" style="background: #f97316; color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
+          <a href="${url}" style="background: #ea580c; color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
             ${purpose === "claim" ? "Verify My Listing →" : "Sign In →"}
           </a>
         </div>

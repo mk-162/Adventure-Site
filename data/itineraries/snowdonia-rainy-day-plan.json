@@ -77,7 +77,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Llyn Ogwen",
         "description": "Enjoy your own lunch beside the stunning Llyn Ogwen lake."
-      }
+      },
+      "postcode": "LL41 3UD"
     },
     {
       "day": 1,
@@ -115,8 +116,8 @@
       "description": "National Mountaineering Centre providing comfortable rooms and a lively atmosphere, perfect for outdoor enthusiasts.",
       "costFrom": 80,
       "costTo": 150,
-      "lat": 53.096,
-      "lng": -3.91,
+      "lat": 53.102823,
+      "lng": -3.907092,
       "travelToNext": "30min drive via A5 and B4407",
       "travelMode": "drive",
       "budgetAlt": {
@@ -124,7 +125,8 @@
         "description": "Budget-friendly bunkhouse accommodation in Nant Peris.",
         "costFrom": 25,
         "costTo": 40
-      }
+      },
+      "postcode": "LL24 0EL"
     },
     {
       "day": 1,
@@ -143,7 +145,8 @@
       "budgetAlt": {
         "title": "Local Chip Shop",
         "description": "Grab a takeaway and eat by the lake"
-      }
+      },
+      "postcode": "LL55 4TP"
     },
     {
       "day": 2,
@@ -189,7 +192,8 @@
       "budgetAlt": {
         "title": "Packed Lunch at Bala Lake",
         "description": "Enjoy a picnic by the shores of the largest natural lake in Wales."
-      }
+      },
+      "postcode": "LL23 7RR"
     },
     {
       "day": 2,

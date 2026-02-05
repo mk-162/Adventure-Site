@@ -57,7 +57,7 @@ export default async function TagsPage() {
           {sortedCategories.map((category) => (
             <div key={category} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
               <h2 className="text-xl font-bold text-[#1e3a4c] mb-6 capitalize flex items-center gap-2">
-                <Tag className="w-5 h-5 text-[#f97316]" />
+                <Tag className="w-5 h-5 text-[#ea580c]" />
                 {category.replace("_", " ")} Tags
               </h2>
 
@@ -71,7 +71,7 @@ export default async function TagsPage() {
                     <span className="font-medium text-gray-700 group-hover:text-[#1e3a4c]">
                       {tag.name}
                     </span>
-                    <span className="text-xs font-semibold bg-white text-[#f97316] px-2 py-1 rounded-full border border-gray-100 group-hover:border-[#f97316]/20">
+                    <span className="text-xs font-semibold bg-white text-[#ea580c] px-2 py-1 rounded-full border border-gray-100 group-hover:border-[#ea580c]/20">
                       {tag.count}
                     </span>
                   </Link>

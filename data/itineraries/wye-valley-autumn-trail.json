@@ -75,7 +75,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Yat Rock viewpoint",
         "description": "Enjoy your own picnic with stunning views."
-      }
+      },
+      "postcode": "GL16 7EU"
     },
     {
       "day": 1,
@@ -113,8 +114,8 @@
       "description": "Boutique guesthouse in Tintern, ideal for a relaxing evening after a day of activities.",
       "costFrom": 100,
       "costTo": 150,
-      "lat": 51.6911,
-      "lng": -2.6769,
+      "lat": 51.696551,
+      "lng": -2.675942,
       "travelToNext": "30 min drive",
       "travelMode": "drive",
       "budgetAlt": {
@@ -122,7 +123,8 @@
         "description": "Rural campsite with basic facilities.",
         "costFrom": 15,
         "costTo": 25
-      }
+      },
+      "postcode": "NP16 6SH"
     },
     {
       "day": 2,
@@ -161,14 +163,15 @@
       "description": "A traditional village pub with a cozy atmosphere and good food.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 51.7994,
-      "lng": -2.6522,
+      "lat": 51.802287,
+      "lng": -2.665397,
       "travelToNext": "30 min drive",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Picnic lunch at Offa's Dyke",
         "description": "Enjoy your packed lunch whilst enjoying the views from Offa's Dyke."
-      }
+      },
+      "postcode": "GL16 8PE"
     },
     {
       "day": 2,

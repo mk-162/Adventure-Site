@@ -51,7 +51,7 @@ export function AddToCalendarButton({ event }: AddToCalendarButtonProps) {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 text-sm font-bold text-[#1e3a4c] hover:text-[#f97316] transition-colors"
+        className="flex items-center gap-2 text-sm font-bold text-[#1e3a4c] hover:text-[#ea580c] transition-colors"
       >
         <CalendarPlus className="w-4 h-4" />
         Add to Calendar

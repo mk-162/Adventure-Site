@@ -27,7 +27,7 @@ export default async function RegionsAdmin() {
         </div>
         <Link
           href="/admin/content/regions/new"
-          className="flex items-center gap-2 px-4 py-2 bg-[#f97316] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
+          className="flex items-center gap-2 px-4 py-2 bg-[#ea580c] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
         >
           <Plus className="h-5 w-5" />
           Add Region
@@ -79,7 +79,7 @@ export default async function RegionsAdmin() {
                   <div className="flex items-center gap-2">
                     <div className="w-24 h-2 bg-gray-200 rounded-full overflow-hidden">
                       <div
-                        className="h-full bg-[#f97316]"
+                        className="h-full bg-[#ea580c]"
                         style={{
                           width: `${region.completenessScore || 0}%`,
                         }}
@@ -101,7 +101,7 @@ export default async function RegionsAdmin() {
                     </Link>
                     <Link
                       href={`/admin/content/regions/${region.id}`}
-                      className="p-2 text-gray-400 hover:text-[#f97316]"
+                      className="p-2 text-gray-400 hover:text-[#ea580c]"
                       title="Edit"
                     >
                       <Edit className="h-4 w-4" />

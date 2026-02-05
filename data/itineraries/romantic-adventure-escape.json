@@ -76,7 +76,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Porthclais Harbour",
         "description": "Enjoy a picnic with beautiful harbour views."
-      }
+      },
+      "postcode": "SA62 6SL"
     },
     {
       "day": 1,
@@ -123,7 +124,8 @@
         "description": "Budget friendly hostel located in St Davids",
         "costFrom": 25,
         "costTo": 70
-      }
+      },
+      "postcode": "SA62 6SE"
     },
     {
       "day": 2,
@@ -162,14 +164,15 @@
       "description": "Cafe with art gallery near Whitesands beach.",
       "costFrom": 12,
       "costTo": 20,
-      "lat": 51.8915,
-      "lng": -5.3035,
+      "lat": 51.883845,
+      "lng": -5.30216,
       "travelToNext": "30min drive",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed Lunch at Newgale",
         "description": "Enjoy a Picnic on the longest beach in Pembrokeshire"
-      }
+      },
+      "postcode": "SA62 6PY"
     },
     {
       "day": 2,
@@ -216,7 +219,8 @@
         "description": "Campsite located on Newgale beach.",
         "costFrom": 15,
         "costTo": 25
-      }
+      },
+      "postcode": "SA62 5AA"
     },
     {
       "day": 3,
@@ -262,7 +266,8 @@
       "budgetAlt": {
         "title": "Picnic at Barafundle Bay",
         "description": "Enjoy a packed lunch at the beautiful Barafundle Bay."
-      }
+      },
+      "postcode": "SA62 6RB"
     },
     {
       "day": 3,

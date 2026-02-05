@@ -181,9 +181,9 @@ function markdownToHtml(md: string): string {
     // Inline code
     .replace(/`([^`]+)`/g, '<code class="bg-gray-100 text-[#1e3a4c] px-1.5 py-0.5 rounded text-sm">$1</code>')
     // Blockquotes
-    .replace(/^>\s?(.+)$/gm, '<blockquote class="border-l-4 border-[#f97316] pl-4 my-4 text-gray-600 italic">$1</blockquote>')
+    .replace(/^>\s?(.+)$/gm, '<blockquote class="border-l-4 border-[#ea580c] pl-4 my-4 text-gray-600 italic">$1</blockquote>')
     // Links
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-[#f97316] hover:underline">$1</a>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-[#ea580c] hover:underline">$1</a>')
     // Unordered lists
     .replace(/^[-*] (.+)$/gm, '<li class="ml-4">$1</li>')
     // Numbered lists
@@ -261,7 +261,7 @@ export default async function GuidePage({ params }: Props) {
                       <li key={h.id}>
                         <a
                           href={`#${h.id}`}
-                          className={`block text-sm hover:text-[#f97316] transition-colors ${
+                          className={`block text-sm hover:text-[#ea580c] transition-colors ${
                             h.level === 2
                               ? "pl-4 text-gray-700 font-medium"
                               : "pl-6 text-gray-500"
@@ -290,7 +290,7 @@ export default async function GuidePage({ params }: Props) {
                       <li key={h.id}>
                         <a
                           href={`#${h.id}`}
-                          className={`block text-sm hover:text-[#f97316] transition-colors ${
+                          className={`block text-sm hover:text-[#ea580c] transition-colors ${
                             h.level === 2 ? "text-gray-700 font-medium" : "pl-4 text-gray-500"
                           }`}
                         >
@@ -331,7 +331,7 @@ export default async function GuidePage({ params }: Props) {
               {/* CTA Banner */}
               <div className="my-10 bg-gradient-to-r from-[#1e3a4c] to-[#2d5568] rounded-2xl p-8 text-white relative overflow-hidden">
                 <div className="absolute -right-16 -top-16 w-48 h-48 bg-white/5 rounded-full blur-2xl" />
-                <div className="absolute -left-8 -bottom-8 w-32 h-32 bg-[#f97316]/20 rounded-full blur-xl" />
+                <div className="absolute -left-8 -bottom-8 w-32 h-32 bg-[#ea580c]/20 rounded-full blur-xl" />
                 <div className="relative z-10">
                   <h2 className="text-2xl font-bold mb-2">Ready for an adventure?</h2>
                   <p className="text-white/80 mb-5 max-w-lg">
@@ -339,7 +339,7 @@ export default async function GuidePage({ params }: Props) {
                   </p>
                   <Link
                     href={activityLink.href}
-                    className="inline-flex items-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white font-bold py-3 px-6 rounded-full transition-colors"
+                    className="inline-flex items-center gap-2 bg-[#ea580c] hover:bg-[#ea580c] text-white font-bold py-3 px-6 rounded-full transition-colors"
                   >
                     {activityLink.label}
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
@@ -358,9 +358,9 @@ export default async function GuidePage({ params }: Props) {
                       <Link
                         key={g.slug}
                         href={`/guides/${g.slug}`}
-                        className="group block bg-white rounded-xl border border-gray-200 p-5 hover:shadow-md hover:border-[#f97316]/40 transition-all"
+                        className="group block bg-white rounded-xl border border-gray-200 p-5 hover:shadow-md hover:border-[#ea580c]/40 transition-all"
                       >
-                        <h3 className="font-semibold text-[#1e3a4c] group-hover:text-[#f97316] transition-colors">
+                        <h3 className="font-semibold text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors">
                           {g.title}
                         </h3>
                         <span className="text-sm text-gray-500 mt-2 inline-flex items-center gap-1">
@@ -376,7 +376,7 @@ export default async function GuidePage({ params }: Props) {
               <div className="mt-12 pt-8 border-t">
                 <Link
                   href="/guides"
-                  className="text-[#f97316] hover:underline flex items-center gap-2"
+                  className="text-[#ea580c] hover:underline flex items-center gap-2"
                 >
                   ← Back to all guides
                 </Link>

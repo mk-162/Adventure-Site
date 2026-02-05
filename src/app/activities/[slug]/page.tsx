@@ -304,7 +304,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                       <span className="text-sm text-gray-600">{operator.name}</span>
                       {operator.googleRating && (
                         <span className="flex items-center gap-1 text-sm">
-                          <Star className="h-4 w-4 fill-[#f97316] text-[#f97316]" />
+                          <Star className="h-4 w-4 fill-[#ea580c] text-[#ea580c]" />
                           {operator.googleRating}
                         </span>
                       )}
@@ -431,7 +431,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                 </h2>
                 <div className="bg-gray-100 rounded-xl p-4">
                   <p className="flex items-center gap-2 text-gray-700">
-                    <MapPin className="h-5 w-5 text-[#f97316]" />
+                    <MapPin className="h-5 w-5 text-[#ea580c]" />
                     {activity.meetingPoint}
                   </p>
                 </div>
@@ -444,7 +444,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                 href={`https://www.google.com/maps/dir/?api=1&destination=${activity.lat},${activity.lng}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-[#1e3a4c] hover:text-[#f97316] bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl px-4 py-2.5 transition-colors"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-[#1e3a4c] hover:text-[#ea580c] bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl px-4 py-2.5 transition-colors"
               >
                 <Navigation className="w-4 h-4" />
                 Get Directions
@@ -528,7 +528,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                       <p className="font-semibold text-[#1e3a4c]">{operator.name}</p>
                       {operator.googleRating && (
                         <p className="text-sm text-gray-500 flex items-center gap-1">
-                          <Star className="h-3 w-3 fill-[#f97316] text-[#f97316]" />
+                          <Star className="h-3 w-3 fill-[#ea580c] text-[#ea580c]" />
                           {operator.googleRating}
                         </p>
                       )}
@@ -542,7 +542,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
             {activity.lat && activity.lng && (
               <div className="mt-4 bg-white rounded-2xl border p-4 shadow-sm">
                 <h3 className="font-bold text-sm text-[#1e3a4c] mb-3 flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-[#f97316]" />
+                  <MapPin className="w-4 h-4 text-[#ea580c]" />
                   Location
                 </h3>
                 <MapView
@@ -563,7 +563,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                   href={`https://www.google.com/maps/dir/?api=1&destination=${activity.lat},${activity.lng}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 flex items-center justify-center gap-2 text-xs font-semibold text-[#1e3a4c] hover:text-[#f97316] bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 transition-colors w-full"
+                  className="mt-3 flex items-center justify-center gap-2 text-xs font-semibold text-[#1e3a4c] hover:text-[#ea580c] bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 transition-colors w-full"
                 >
                   <Navigation className="w-3.5 h-3.5" />
                   Get Directions
@@ -634,7 +634,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                     style={{ backgroundImage: `url('/images/regions/${iRegion?.slug || 'default'}-hero.jpg')` }}
                   />
                   <div className="p-4">
-                    <h3 className="font-semibold text-sm text-[#1e3a4c] group-hover:text-[#f97316] transition-colors line-clamp-1">
+                    <h3 className="font-semibold text-sm text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors line-clamp-1">
                       {itinerary.title}
                     </h3>
                     <p className="text-xs text-gray-500 mt-1">
@@ -697,7 +697,7 @@ function getActivityTip(activityTypeSlug: string): string {
 function InfoPill({ icon: Icon, label }: { icon: any; label: string }) {
   return (
     <div className="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full whitespace-nowrap">
-      <Icon className="h-4 w-4 text-[#f97316]" />
+      <Icon className="h-4 w-4 text-[#ea580c]" />
       <span className="text-sm text-gray-700">{label}</span>
     </div>
   );

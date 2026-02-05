@@ -70,14 +70,15 @@
       "description": "A traditional pub serving hearty meals and local ales near Pontneddfechan.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 51.7971,
-      "lng": -3.5802,
+      "lat": 51.824857,
+      "lng": -3.684015,
       "travelToNext": "2min drive to parking spot",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed lunch at Pontneddfechan picnic site",
         "description": "Enjoy your sandwiches by the river Neath near the Angel Inn."
-      }
+      },
+      "postcode": "SA9 1GL"
     },
     {
       "day": 1,
@@ -124,7 +125,8 @@
         "description": "A campsite near Ystradfellte, providing basic facilities and a budget-friendly option.",
         "costFrom": 15,
         "costTo": 25
-      }
+      },
+      "postcode": "SA9 1GJ"
     },
     {
       "day": 2,
@@ -170,7 +172,8 @@
       "budgetAlt": {
         "title": "Packed lunch at a scenic viewpoint",
         "description": "Enjoy sandwiches at a scenic spot near Aberdare, offering views of the valleys."
-      }
+      },
+      "postcode": "SA9 1GB"
     },
     {
       "day": 2,

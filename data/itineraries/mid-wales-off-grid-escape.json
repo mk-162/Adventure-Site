@@ -68,14 +68,15 @@
       "description": "A traditional hotel restaurant with views over the valley serving classic Welsh dishes.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 52.273,
-      "lng": -3.538,
+      "lat": 52.277828,
+      "lng": -3.543451,
       "travelToNext": "10min drive to Garreg Ddu Dam",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed lunch at Garreg Ddu Dam",
         "description": "Bring your own lunch to enjoy by the dam"
-      }
+      },
+      "postcode": "LD1 6NY"
     },
     {
       "day": 1,
@@ -122,7 +123,8 @@
         "description": "Find a secluded spot for a truly off-grid camping experience.",
         "costFrom": 5,
         "costTo": 10
-      }
+      },
+      "postcode": "SY17 5RP"
     },
     {
       "day": 1,
@@ -134,8 +136,8 @@
       "description": "Prepare a simple meal at the accommodation",
       "costFrom": 5,
       "costTo": 10,
-      "lat": 52.557,
-      "lng": -3.615,
+      "lat": 52.550205,
+      "lng": -3.630322,
       "travelToNext": "N/A",
       "travelMode": "N/A",
       "budgetAlt": {
@@ -143,7 +145,8 @@
         "description": "Prepare a simple meal at the accommodation",
         "costFrom": 5,
         "costTo": 10
-      }
+      },
+      "postcode": "SY19 7DD"
     },
     {
       "day": 2,
@@ -182,14 +185,15 @@
       "description": "A cafe near Llyn Clywedog which offer lunch and cakes",
       "costFrom": 10,
       "costTo": 20,
-      "lat": 52.47,
-      "lng": -3.59,
+      "lat": 52.467553,
+      "lng": -3.60056,
       "travelToNext": "30min drive via A470",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Picnic by Llyn Clywedog",
         "description": "Enjoy packed lunch with beautiful views"
-      }
+      },
+      "postcode": "SY18 6NU"
     },
     {
       "day": 2,
@@ -236,7 +240,8 @@
         "description": "Several campsites available within a short drive of Machynlleth.",
         "costFrom": 10,
         "costTo": 20
-      }
+      },
+      "postcode": "SY20 8AU"
     },
     {
       "day": 2,
@@ -257,7 +262,8 @@
         "description": "Prepare a simple meal at the hostel",
         "costFrom": 5,
         "costTo": 10
-      }
+      },
+      "postcode": "SY20 8BN"
     },
     {
       "day": 3,
@@ -303,7 +309,8 @@
       "budgetAlt": {
         "title": "Packed lunch",
         "description": "Picnic in Dolgellau town park."
-      }
+      },
+      "postcode": "LL40 2EU"
     },
     {
       "day": 3,

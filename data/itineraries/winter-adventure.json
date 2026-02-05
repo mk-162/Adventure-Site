@@ -76,7 +76,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Llyn Peris viewpoint",
         "description": "Enjoy your own prepared food with panoramic views of Llyn Peris."
-      }
+      },
+      "postcode": "LL55 4SL"
     },
     {
       "day": 1,
@@ -96,7 +97,8 @@
         "description": "Pitch your tent at this friendly campsite near Llanberis.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "LL55 4HP"
     },
     {
       "day": 2,
@@ -162,14 +164,15 @@
       "description": "A traditional pub in Llan Ffestiniog, serving hearty meals and local ales.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 52.9669,
-      "lng": -3.8986,
+      "lat": 52.971518,
+      "lng": -3.913175,
       "travelToNext": "45min drive via A5",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Picnic by Llyn Ogwen",
         "description": "Enjoy a packed lunch with stunning views of Llyn Ogwen and Tryfan."
-      }
+      },
+      "postcode": "LL41 4RF"
     }
   ],
   "costBreakdown": {

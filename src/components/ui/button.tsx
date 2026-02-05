@@ -27,9 +27,9 @@ const baseStyles =
 const variants = {
   primary: "bg-[#1e3a4c] text-white hover:bg-[#152a38] focus:ring-[#1e3a4c]",
   secondary: "bg-gray-100 text-gray-700 hover:bg-gray-200 focus:ring-gray-300",
-  accent: "bg-[#f97316] text-white hover:bg-[#ea580c] focus:ring-[#f97316]",
+  accent: "bg-[#ea580c] text-white hover:bg-[#ea580c] focus:ring-[#ea580c]",
   outline:
-    "border border-gray-200 text-gray-700 hover:border-[#f97316] hover:text-[#f97316] focus:ring-[#f97316]",
+    "border border-gray-200 text-gray-700 hover:border-[#ea580c] hover:text-[#ea580c] focus:ring-[#ea580c]",
   ghost: "text-gray-600 hover:text-[#1e3a4c] hover:bg-gray-100 focus:ring-gray-300",
 };
 

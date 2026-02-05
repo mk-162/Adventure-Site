@@ -56,7 +56,7 @@ export function ShareButton({ title, variant = "button", className }: ShareButto
   return (
     <button
       onClick={handleShare}
-      className={className || "inline-flex items-center gap-2 px-4 py-2 bg-[#f97316]/10 hover:bg-[#f97316]/20 text-[#f97316] font-semibold text-sm rounded-full border border-[#f97316]/30 transition-colors"}
+      className={className || "inline-flex items-center gap-2 px-4 py-2 bg-[#ea580c]/10 hover:bg-[#ea580c]/20 text-[#ea580c] font-semibold text-sm rounded-full border border-[#ea580c]/30 transition-colors"}
       aria-label="Share"
     >
       <Share2 className="w-4 h-4" />

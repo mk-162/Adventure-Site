@@ -56,7 +56,7 @@ export default async function TripPlannerPage() {
               {["Dates", "Region", "Interests", "Review"].map((step, i) => (
                 <div key={step} className="flex items-center">
                   <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
-                    i === 0 ? "bg-[#f97316] text-white" : "bg-gray-200 text-gray-500"
+                    i === 0 ? "bg-[#ea580c] text-white" : "bg-gray-200 text-gray-500"
                   }`}>
                     {i + 1}
                   </div>
@@ -75,7 +75,7 @@ export default async function TripPlannerPage() {
             {/* Step 1: Dates */}
             <section className="mb-8">
               <h2 className="text-xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                <Calendar className="w-5 h-5 text-[#f97316]" />
+                <Calendar className="w-5 h-5 text-[#ea580c]" />
                 When are you visiting?
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -110,14 +110,14 @@ export default async function TripPlannerPage() {
             {/* Step 2: Region */}
             <section className="mb-8">
               <h2 className="text-xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                <MapPin className="w-5 h-5 text-[#f97316]" />
+                <MapPin className="w-5 h-5 text-[#ea580c]" />
                 Where do you want to go?
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {regions.slice(0, 6).map(region => (
                   <button
                     key={region.id}
-                    className="relative h-24 rounded-xl overflow-hidden group border-2 border-transparent hover:border-[#f97316] transition-all"
+                    className="relative h-24 rounded-xl overflow-hidden group border-2 border-transparent hover:border-[#ea580c] transition-all"
                   >
                     <div 
                       className="absolute inset-0 bg-cover bg-center"
@@ -138,14 +138,14 @@ export default async function TripPlannerPage() {
             {/* Step 3: Interests */}
             <section className="mb-8">
               <h2 className="text-xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                <Heart className="w-5 h-5 text-[#f97316]" />
+                <Heart className="w-5 h-5 text-[#ea580c]" />
                 What are you interested in?
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {activityTypes.slice(0, 9).map(type => (
                   <button
                     key={type.id}
-                    className="flex items-center gap-3 p-4 rounded-xl border border-gray-200 hover:border-[#f97316] hover:bg-[#f97316]/5 transition-all text-left"
+                    className="flex items-center gap-3 p-4 rounded-xl border border-gray-200 hover:border-[#ea580c] hover:bg-[#ea580c]/5 transition-all text-left"
                   >
                     <div className="w-10 h-10 rounded-lg bg-[#1e3a4c]/10 flex items-center justify-center text-[#1e3a4c]">
                       <Mountain className="w-5 h-5" />
@@ -159,14 +159,14 @@ export default async function TripPlannerPage() {
             {/* Step 4: Group */}
             <section className="mb-8">
               <h2 className="text-xl font-bold text-[#1e3a4c] mb-4 flex items-center gap-2">
-                <Users className="w-5 h-5 text-[#f97316]" />
+                <Users className="w-5 h-5 text-[#ea580c]" />
                 Who's coming?
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {["Solo", "Couple", "Family", "Group"].map(opt => (
                   <button
                     key={opt}
-                    className="p-4 rounded-xl border border-gray-200 hover:border-[#f97316] hover:bg-[#f97316]/5 transition-all font-medium text-[#1e3a4c]"
+                    className="p-4 rounded-xl border border-gray-200 hover:border-[#ea580c] hover:bg-[#ea580c]/5 transition-all font-medium text-[#1e3a4c]"
                   >
                     {opt}
                   </button>
@@ -175,7 +175,7 @@ export default async function TripPlannerPage() {
             </section>
 
             {/* Generate Button */}
-            <button className="w-full bg-[#f97316] hover:bg-[#f97316]/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-[#f97316]/30 transition-all flex items-center justify-center gap-2">
+            <button className="w-full bg-[#ea580c] hover:bg-[#ea580c]/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-[#ea580c]/30 transition-all flex items-center justify-center gap-2">
               <Sparkles className="w-5 h-5" />
               Generate My Itinerary
             </button>

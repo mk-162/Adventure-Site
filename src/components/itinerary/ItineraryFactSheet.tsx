@@ -205,7 +205,7 @@ export function ItineraryFactSheet({ description, title }: ItineraryFactSheetPro
       {highlights && (
         <div className="bg-gradient-to-br from-[#1e3a4c] to-[#2d5a73] rounded-xl p-5 text-white">
           <div className="flex items-center gap-2 mb-3">
-            <Sparkles className="w-5 h-5 text-[#f97316]" />
+            <Sparkles className="w-5 h-5 text-[#ea580c]" />
             <h3 className="font-bold text-sm uppercase tracking-wide">Highlights</h3>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -282,7 +282,7 @@ export function ItineraryFactSheet({ description, title }: ItineraryFactSheetPro
               ))}
               <div className="border-t border-gray-200 pt-2 flex justify-between items-center">
                 <span className="font-bold text-[#1e3a4c] text-sm">Total</span>
-                <span className="font-bold text-[#f97316] text-lg">£{costs.budgetTotal}</span>
+                <span className="font-bold text-[#ea580c] text-lg">£{costs.budgetTotal}</span>
               </div>
             </div>
           </div>

@@ -44,31 +44,31 @@ export function ComboSpotCard({ spot, index }: { spot: ComboSpot; index: number 
         <div className="flex flex-wrap gap-3 text-xs text-gray-500">
           {spot.duration && (
             <span className="flex items-center gap-1">
-              <Clock className="w-3.5 h-3.5 text-[#f97316]" />
+              <Clock className="w-3.5 h-3.5 text-[#ea580c]" />
               {spot.duration}
             </span>
           )}
           {spot.distance && (
             <span className="flex items-center gap-1">
-              <Ruler className="w-3.5 h-3.5 text-[#f97316]" />
+              <Ruler className="w-3.5 h-3.5 text-[#ea580c]" />
               {spot.distance}
             </span>
           )}
           {spot.elevationGain && (
             <span className="flex items-center gap-1">
-              <TrendingUp className="w-3.5 h-3.5 text-[#f97316]" />
+              <TrendingUp className="w-3.5 h-3.5 text-[#ea580c]" />
               ↑{spot.elevationGain}
             </span>
           )}
           {spot.estimatedCost && (
             <span className="flex items-center gap-1">
-              <PoundSterling className="w-3.5 h-3.5 text-[#f97316]" />
+              <PoundSterling className="w-3.5 h-3.5 text-[#ea580c]" />
               {spot.estimatedCost}
             </span>
           )}
           {spot.bestSeason && (
             <span className="flex items-center gap-1">
-              <Calendar className="w-3.5 h-3.5 text-[#f97316]" />
+              <Calendar className="w-3.5 h-3.5 text-[#ea580c]" />
               {spot.bestSeason}
             </span>
           )}
@@ -91,7 +91,7 @@ export function ComboSpotCard({ spot, index }: { spot: ComboSpot; index: number 
             href={`https://www.google.com/maps/dir/?api=1&destination=${spot.startPoint.lat},${spot.startPoint.lng}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-xs font-medium text-[#1e3a4c] hover:text-[#f97316] transition-colors"
+            className="inline-flex items-center gap-1.5 text-xs font-medium text-[#1e3a4c] hover:text-[#ea580c] transition-colors"
           >
             <MapPin className="w-3.5 h-3.5" />
             Get directions to {spot.startPoint.name}

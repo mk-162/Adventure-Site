@@ -77,24 +77,24 @@ export default async function RegionTipsPage({ params }: Props) {
                 className="group flex items-start gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-[#1e3a4c]/30 hover:shadow-md transition-all"
               >
                 <div className="shrink-0 mt-0.5">
-                  <Lightbulb className="w-5 h-5 text-[#f97316]" />
+                  <Lightbulb className="w-5 h-5 text-[#ea580c]" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-bold text-[#1e3a4c] group-hover:text-[#f97316] transition-colors mb-1">
+                  <h3 className="font-bold text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors mb-1">
                     {item.answer.question}
                   </h3>
                   {item.answer.quickAnswer && (
                     <p className="text-sm text-gray-600 line-clamp-2">{item.answer.quickAnswer}</p>
                   )}
                 </div>
-                <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-[#f97316] shrink-0 transition-colors" />
+                <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-[#ea580c] shrink-0 transition-colors" />
               </Link>
             ))}
           </div>
         ) : (
-          <div className="bg-gradient-to-br from-[#1e3a4c]/5 to-[#f97316]/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200 mb-10">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f97316]/10 mb-6">
-              <Compass className="w-8 h-8 text-[#f97316]" />
+          <div className="bg-gradient-to-br from-[#1e3a4c]/5 to-[#ea580c]/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200 mb-10">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#ea580c]/10 mb-6">
+              <Compass className="w-8 h-8 text-[#ea580c]" />
             </div>
             <h2 className="text-2xl font-black text-[#1e3a4c] mb-3">
               Tips for {region.name} coming soon

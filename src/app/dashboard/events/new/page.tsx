@@ -88,7 +88,7 @@ export default function NewEventPage() {
         {/* Basic Info */}
         <section className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 sm:p-8">
           <h2 className="text-xl font-bold text-[#1e3a4c] mb-6 flex items-center gap-2">
-            <Info className="w-5 h-5 text-[#f97316]" /> Basic Information
+            <Info className="w-5 h-5 text-[#ea580c]" /> Basic Information
           </h2>
 
           <div className="grid grid-cols-1 gap-6">
@@ -98,7 +98,7 @@ export default function NewEventPage() {
                 type="text"
                 name="name"
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent outline-none"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none"
                 placeholder="e.g. Snowdonia Trail Marathon"
               />
             </div>
@@ -108,7 +108,7 @@ export default function NewEventPage() {
               <textarea
                 name="description"
                 rows={4}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent outline-none"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none"
                 placeholder="Describe your event..."
               />
             </div>
@@ -118,7 +118,7 @@ export default function NewEventPage() {
                 <label className="block text-sm font-bold text-gray-700 mb-2">Type / Category</label>
                 <select
                   name="type"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent outline-none bg-white"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none bg-white"
                 >
                   <option value="Running">Running</option>
                   <option value="Cycling">Cycling</option>
@@ -138,7 +138,7 @@ export default function NewEventPage() {
                   <input
                     type="url"
                     name="heroImage"
-                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent outline-none"
+                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none"
                     placeholder="https://..."
                   />
                 </div>
@@ -150,7 +150,7 @@ export default function NewEventPage() {
         {/* Date & Location */}
         <section className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 sm:p-8">
           <h2 className="text-xl font-bold text-[#1e3a4c] mb-6 flex items-center gap-2">
-            <Calendar className="w-5 h-5 text-[#f97316]" /> Date & Location
+            <Calendar className="w-5 h-5 text-[#ea580c]" /> Date & Location
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -160,7 +160,7 @@ export default function NewEventPage() {
                 type="datetime-local"
                 name="dateStart"
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent outline-none"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none"
               />
             </div>
 
@@ -169,7 +169,7 @@ export default function NewEventPage() {
               <input
                 type="datetime-local"
                 name="dateEnd"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent outline-none"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none"
               />
             </div>
 
@@ -180,7 +180,7 @@ export default function NewEventPage() {
                 <input
                   type="text"
                   name="location"
-                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent outline-none"
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none"
                   placeholder="e.g. Llanberis, Snowdonia"
                 />
               </div>
@@ -192,7 +192,7 @@ export default function NewEventPage() {
                 type="number"
                 step="any"
                 name="lat"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent outline-none"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none"
                 placeholder="53.1234"
               />
             </div>
@@ -203,7 +203,7 @@ export default function NewEventPage() {
                 type="number"
                 step="any"
                 name="lng"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent outline-none"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none"
                 placeholder="-4.1234"
               />
             </div>
@@ -213,7 +213,7 @@ export default function NewEventPage() {
         {/* Details */}
         <section className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 sm:p-8">
           <h2 className="text-xl font-bold text-[#1e3a4c] mb-6 flex items-center gap-2">
-            <Ticket className="w-5 h-5 text-[#f97316]" /> Event Details
+            <Ticket className="w-5 h-5 text-[#ea580c]" /> Event Details
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -224,7 +224,7 @@ export default function NewEventPage() {
                 <input
                   type="url"
                   name="website"
-                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent outline-none"
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none"
                   placeholder="https://..."
                 />
               </div>
@@ -237,7 +237,7 @@ export default function NewEventPage() {
                 <input
                   type="url"
                   name="ticketUrl"
-                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent outline-none"
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none"
                   placeholder="https://..."
                 />
               </div>
@@ -250,7 +250,7 @@ export default function NewEventPage() {
                 min="0"
                 step="0.01"
                 name="registrationCost"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent outline-none"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none"
                 placeholder="0.00"
               />
             </div>
@@ -261,7 +261,7 @@ export default function NewEventPage() {
                 type="number"
                 min="0"
                 name="capacity"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent outline-none"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none"
                 placeholder="e.g. 500"
               />
             </div>
@@ -270,7 +270,7 @@ export default function NewEventPage() {
               <label className="block text-sm font-bold text-gray-700 mb-2">Difficulty</label>
               <select
                 name="difficulty"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent outline-none bg-white"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none bg-white"
               >
                 <option value="">Select difficulty...</option>
                 <option value="beginner">Beginner</option>
@@ -284,7 +284,7 @@ export default function NewEventPage() {
               <label className="block text-sm font-bold text-gray-700 mb-2">Age Range</label>
               <select
                 name="ageRange"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent outline-none bg-white"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none bg-white"
               >
                 <option value="">Select age range...</option>
                 <option value="all-ages">All Ages</option>
@@ -300,7 +300,7 @@ export default function NewEventPage() {
         <section className="bg-[#1e3a4c] rounded-xl shadow-sm p-6 sm:p-8 text-white">
           <div className="flex items-start gap-4">
             <div className="p-2 bg-white/10 rounded-lg">
-              <Star className="w-6 h-6 text-[#f97316] fill-[#f97316]" />
+              <Star className="w-6 h-6 text-[#ea580c] fill-[#ea580c]" />
             </div>
             <div>
               <h2 className="text-xl font-bold mb-2">Promote this Event?</h2>
@@ -309,8 +309,8 @@ export default function NewEventPage() {
                 <span className="opacity-70 ml-1">(Requires Verified or Premium plan)</span>
               </p>
               <label className="flex items-center gap-3 cursor-pointer group">
-                <input type="checkbox" name="promote" className="w-5 h-5 rounded border-gray-500 text-[#f97316] focus:ring-[#f97316]" />
-                <span className="font-bold group-hover:text-[#f97316] transition-colors">Yes, promote this event</span>
+                <input type="checkbox" name="promote" className="w-5 h-5 rounded border-gray-500 text-[#ea580c] focus:ring-[#ea580c]" />
+                <span className="font-bold group-hover:text-[#ea580c] transition-colors">Yes, promote this event</span>
               </label>
             </div>
           </div>
@@ -332,7 +332,7 @@ export default function NewEventPage() {
           <button
             type="submit"
             disabled={loading}
-            className="bg-[#f97316] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#ea580c] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+            className="bg-[#ea580c] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#ea580c] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
           >
             {loading && <Loader2 className="w-4 h-4 animate-spin" />}
             Submit Event

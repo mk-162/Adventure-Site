@@ -76,7 +76,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Llyn Ogwen",
         "description": "Enjoy your own lunch with a view."
-      }
+      },
+      "postcode": "LL55 4SL"
     },
     {
       "day": 1,
@@ -114,8 +115,8 @@
       "description": "A well-regarded activity centre and hotel near Capel Curig, offering comfortable rooms and a relaxed atmosphere. Great for outdoor enthusiasts.",
       "costFrom": 80,
       "costTo": 150,
-      "lat": 53.096,
-      "lng": -3.91,
+      "lat": 53.102823,
+      "lng": -3.907092,
       "travelToNext": "45 min drive via A5",
       "travelMode": "drive",
       "budgetAlt": {
@@ -123,7 +124,8 @@
         "description": "A budget-friendly hostel in a stunning location, perfect for hikers and outdoor adventurers.",
         "costFrom": 25,
         "costTo": 80
-      }
+      },
+      "postcode": "LL24 0EL"
     },
     {
       "day": 2,
@@ -162,14 +164,15 @@
       "description": "Cosy cafe beside the River Dee",
       "costFrom": 8,
       "costTo": 12,
-      "lat": 52.91,
-      "lng": -3.661,
+      "lat": 52.916784,
+      "lng": -3.673121,
       "travelToNext": "End Trip",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed Lunch",
         "description": "Enjoy a cheap lunch by the river"
-      }
+      },
+      "postcode": "LL23 7SH"
     }
   ],
   "costBreakdown": {

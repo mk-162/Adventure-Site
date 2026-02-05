@@ -55,7 +55,7 @@ export function RegisterInterestForm({ preselectedPlan }: RegisterInterestFormPr
         <p className="text-slate-600 max-w-md mx-auto">
           We&apos;ve received your details and will be in touch within 24 hours.
           In the meantime, you can{" "}
-          <a href="/directory" className="text-[#f97316] hover:underline font-medium">
+          <a href="/directory" className="text-[#ea580c] hover:underline font-medium">
             browse our directory
           </a>{" "}
           to find your listing.
@@ -77,7 +77,7 @@ export function RegisterInterestForm({ preselectedPlan }: RegisterInterestFormPr
             required
             value={formData.businessName}
             onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
-            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316]/20 outline-none transition-all text-slate-900"
+            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c]/20 outline-none transition-all text-slate-900"
             placeholder="e.g. Zip World"
           />
         </div>
@@ -91,7 +91,7 @@ export function RegisterInterestForm({ preselectedPlan }: RegisterInterestFormPr
             required
             value={formData.contactName}
             onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
-            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316]/20 outline-none transition-all text-slate-900"
+            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c]/20 outline-none transition-all text-slate-900"
             placeholder="Your name"
           />
         </div>
@@ -108,7 +108,7 @@ export function RegisterInterestForm({ preselectedPlan }: RegisterInterestFormPr
             required
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316]/20 outline-none transition-all text-slate-900"
+            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c]/20 outline-none transition-all text-slate-900"
             placeholder="you@business.co.uk"
           />
         </div>
@@ -121,7 +121,7 @@ export function RegisterInterestForm({ preselectedPlan }: RegisterInterestFormPr
             id="phone"
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316]/20 outline-none transition-all text-slate-900"
+            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c]/20 outline-none transition-all text-slate-900"
             placeholder="01234 567890"
           />
         </div>
@@ -139,7 +139,7 @@ export function RegisterInterestForm({ preselectedPlan }: RegisterInterestFormPr
             max={50}
             value={formData.numLocations}
             onChange={(e) => setFormData({ ...formData, numLocations: parseInt(e.target.value) || 1 })}
-            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316]/20 outline-none transition-all text-slate-900"
+            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c]/20 outline-none transition-all text-slate-900"
           />
         </div>
         <div>
@@ -150,7 +150,7 @@ export function RegisterInterestForm({ preselectedPlan }: RegisterInterestFormPr
             id="planInterest"
             value={formData.planInterest}
             onChange={(e) => setFormData({ ...formData, planInterest: e.target.value })}
-            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316]/20 outline-none transition-all text-slate-900 bg-white"
+            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c]/20 outline-none transition-all text-slate-900 bg-white"
           >
             <option value="free">Free</option>
             <option value="verified">Verified (£9.99/mo)</option>
@@ -168,7 +168,7 @@ export function RegisterInterestForm({ preselectedPlan }: RegisterInterestFormPr
           rows={3}
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316]/20 outline-none transition-all text-slate-900 resize-none"
+          className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c]/20 outline-none transition-all text-slate-900 resize-none"
           placeholder="Tell us about your business or any questions..."
         />
       </div>
@@ -180,7 +180,7 @@ export function RegisterInterestForm({ preselectedPlan }: RegisterInterestFormPr
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#f97316] text-white font-semibold rounded-full hover:bg-[#ea580c] focus:ring-2 focus:ring-[#f97316] focus:ring-offset-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#ea580c] text-white font-semibold rounded-full hover:bg-[#ea580c] focus:ring-2 focus:ring-[#ea580c] focus:ring-offset-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {status === "submitting" ? (
           <>

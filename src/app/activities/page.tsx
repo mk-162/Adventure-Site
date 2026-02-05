@@ -29,7 +29,7 @@ export default async function ActivitiesPage() {
             Individual adventures you can book as standalone experiences — from coasteering and kayaking to mountain biking and gorge walking. Filter by region, type, difficulty, and budget.
           </p>
           <p className="text-sm text-gray-500">
-            Looking for multi-day trips? Check out our <Link href="/itineraries" className="text-[#f97316] font-semibold hover:underline">road trip itineraries</Link> instead.
+            Looking for multi-day trips? Check out our <Link href="/itineraries" className="text-[#ea580c] font-semibold hover:underline">road trip itineraries</Link> instead.
           </p>
         </div>
 
@@ -72,7 +72,7 @@ export default async function ActivitiesPage() {
                 <Link
                   key={`${type}-${region}`}
                   href={`/${region}/things-to-do/${type}`}
-                  className="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-[#f97316] hover:text-[#f97316] transition-colors"
+                  className="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-[#ea580c] hover:text-[#ea580c] transition-colors"
                 >
                   {typeName} in {regionName}
                 </Link>

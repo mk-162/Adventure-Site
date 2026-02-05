@@ -115,14 +115,15 @@
       "description": "A traditional pub serving hearty Welsh lunches near Dowlais.",
       "costFrom": 20,
       "costTo": 30,
-      "lat": 51.7504,
-      "lng": -3.3417,
+      "lat": 51.743551,
+      "lng": -3.352041,
       "travelToNext": "Return to Cardiff",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Takeaway Fish and Chips in Merthyr Tydfil",
         "description": "Affordable and classic option."
-      }
+      },
+      "postcode": "CF48 4AH"
     }
   ],
   "costBreakdown": {

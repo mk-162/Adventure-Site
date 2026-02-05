@@ -76,7 +76,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Whitesands Beach",
         "description": "Enjoy sandwiches with a stunning view."
-      }
+      },
+      "postcode": "SA62 6SE"
     },
     {
       "day": 1,
@@ -123,7 +124,8 @@
         "description": "A more basic campsite closer to the beach.",
         "costFrom": 15,
         "costTo": 25
-      }
+      },
+      "postcode": "SA62 6SE"
     },
     {
       "day": 2,
@@ -162,14 +164,15 @@
       "description": "Small cafe near St Justinians offering classic lunches.",
       "costFrom": 10,
       "costTo": 20,
-      "lat": 51.8693,
-      "lng": -5.3095,
+      "lat": 51.872789,
+      "lng": -5.299983,
       "travelToNext": "45min drive via A487",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Picnic lunch at Abereiddy Blue Lagoon",
         "description": "Bring your own food and enjoy a scenic picnic."
-      }
+      },
+      "postcode": "SA62 6RS"
     },
     {
       "day": 2,
@@ -216,7 +219,8 @@
         "description": "Campsite near the beach.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "SA62 5AA"
     },
     {
       "day": 3,
@@ -262,7 +266,8 @@
       "budgetAlt": {
         "title": "Packed Lunch at Barafundle Bay",
         "description": "Enjoy a scenic beach picnic."
-      }
+      },
+      "postcode": "SA71 5DA"
     },
     {
       "day": 3,
@@ -300,8 +305,8 @@
       "description": "Cottages and camping facilities near Stackpole Quay, ideal for families exploring the area.",
       "costFrom": 80,
       "costTo": 200,
-      "lat": 51.615,
-      "lng": -4.889,
+      "lat": 51.626142,
+      "lng": -4.900882,
       "travelToNext": "30min drive via A477",
       "travelMode": "drive",
       "budgetAlt": {
@@ -309,7 +314,8 @@
         "description": "Campsite close to the beach.",
         "costFrom": 15,
         "costTo": 25
-      }
+      },
+      "postcode": "SA71 5LS"
     },
     {
       "day": 4,
@@ -348,14 +354,15 @@
       "description": "Street food cafe at Freshwater West.",
       "costFrom": 10,
       "costTo": 20,
-      "lat": 51.658,
-      "lng": -5.048,
+      "lat": 51.663629,
+      "lng": -5.029768,
       "travelToNext": "0min drive",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Picnic lunch at Freshwater West",
         "description": "Enjoy a scenic beach picnic."
-      }
+      },
+      "postcode": "SA71 5AG"
     }
   ],
   "costBreakdown": {

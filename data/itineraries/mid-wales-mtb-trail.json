@@ -74,7 +74,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Llyn Clywedog",
         "description": "Enjoy your own lunch at the scenic Llyn Clywedog reservoir."
-      }
+      },
+      "postcode": "SY20 8AU"
     },
     {
       "day": 1,
@@ -121,7 +122,8 @@
         "description": "Find a suitable spot in Hafren Forest to pitch a tent. Ensure you leave no trace. (Permits may be required; check local regulations)",
         "costFrom": 0,
         "costTo": 0
-      }
+      },
+      "postcode": "SY17 5RP"
     },
     {
       "day": 2,
@@ -167,7 +169,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Coed y Brenin",
         "description": "Bring your own food and enjoy it at the picnic area."
-      }
+      },
+      "postcode": "LL40 2HG"
     },
     {
       "day": 2,
@@ -214,7 +217,8 @@
         "description": "Find a suitable spot in Llandegla Forest to pitch a tent. Ensure you leave no trace. (Permits may be required; check local regulations)",
         "costFrom": 0,
         "costTo": 0
-      }
+      },
+      "postcode": "LL11 3AB"
     },
     {
       "day": 3,
@@ -260,7 +264,8 @@
       "budgetAlt": {
         "title": "Packed lunch",
         "description": "Enjoy a final lunch at Llandegla Forest before departing. Bring your own."
-      }
+      },
+      "postcode": "LL11 3AB"
     }
   ],
   "costBreakdown": {

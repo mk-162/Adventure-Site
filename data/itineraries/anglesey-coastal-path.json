@@ -68,14 +68,15 @@
       "description": "A cosy cafe near South Stack, serving sandwiches, soups, and cakes with sea views.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 53.3065,
-      "lng": -4.6995,
+      "lat": 53.303971,
+      "lng": -4.686903,
       "travelToNext": "20min drive to Trearddur Bay",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed lunch at South Stack viewpoint",
         "description": "Enjoy your own sandwiches with panoramic views."
-      }
+      },
+      "postcode": "LL65 1YH"
     },
     {
       "day": 1,
@@ -122,7 +123,8 @@
         "description": "Pitch your tent amidst the trees for a budget-friendly overnight stay.",
         "costFrom": 25,
         "costTo": 40
-      }
+      },
+      "postcode": "LL65 2UP"
     },
     {
       "day": 2,
@@ -215,7 +217,8 @@
         "description": "Pitch your tent amidst the trees for a budget-friendly overnight stay.",
         "costFrom": 25,
         "costTo": 40
-      }
+      },
+      "postcode": "LL55 2LQ"
     },
     {
       "day": 3,
@@ -261,7 +264,8 @@
       "budgetAlt": {
         "title": "Bring your own snack",
         "description": "Enjoy your own packed snacks with waterfront views."
-      }
+      },
+      "postcode": "LL58 8RA"
     },
     {
       "day": 3,

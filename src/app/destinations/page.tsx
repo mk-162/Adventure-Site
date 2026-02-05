@@ -56,7 +56,7 @@ export default async function DestinationsPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6 lg:p-10">
-              <span className="bg-[#f97316] text-white text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block">
+              <span className="bg-[#ea580c] text-white text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block">
                 Featured
               </span>
               <h2 className="text-3xl lg:text-4xl font-black text-white mb-2">{regions[0].name}</h2>
@@ -122,7 +122,7 @@ export default async function DestinationsPage() {
         {/* CTA & Newsletter Section */}
         <div className="mt-12 space-y-8">
           <div className="bg-[#1e3a4c] rounded-2xl p-8 lg:p-12 text-center">
-            <Compass className="w-12 h-12 text-[#f97316] mx-auto mb-4" />
+            <Compass className="w-12 h-12 text-[#ea580c] mx-auto mb-4" />
             <h2 className="text-2xl lg:text-3xl font-bold text-white mb-3">
               Not sure which region?
             </h2>
@@ -131,7 +131,7 @@ export default async function DestinationsPage() {
             </p>
             <Link
               href="/trip-planner"
-              className="inline-flex items-center gap-2 bg-[#f97316] text-white font-bold py-3 px-6 rounded-xl hover:bg-[#f97316]/90 transition-colors"
+              className="inline-flex items-center gap-2 bg-[#ea580c] text-white font-bold py-3 px-6 rounded-xl hover:bg-[#ea580c]/90 transition-colors"
             >
               Start Planning
               <ChevronRight className="w-5 h-5" />

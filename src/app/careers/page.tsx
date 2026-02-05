@@ -81,7 +81,7 @@ export default function CareersPage() {
 
         {/* Hero Section */}
         <div className="mb-16 text-center">
-          <div className="inline-flex items-center gap-2 bg-[#f97316]/10 px-4 py-2 rounded-full text-[#f97316] font-medium text-sm mb-6">
+          <div className="inline-flex items-center gap-2 bg-[#ea580c]/10 px-4 py-2 rounded-full text-[#ea580c] font-medium text-sm mb-6">
             <Briefcase className="w-4 h-4" />
             We're Hiring!
           </div>
@@ -102,8 +102,8 @@ export default function CareersPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, idx) => (
               <div key={idx} className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm text-center">
-                <div className="w-14 h-14 bg-[#f97316]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="w-7 h-7 text-[#f97316]" />
+                <div className="w-14 h-14 bg-[#ea580c]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <value.icon className="w-7 h-7 text-[#ea580c]" />
                 </div>
                 <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">{value.title}</h3>
                 <p className="text-sm text-gray-600">{value.description}</p>
@@ -176,8 +176,8 @@ export default function CareersPage() {
             <div className="grid md:grid-cols-2 gap-4">
               {perks.map((perk, idx) => (
                 <div key={idx} className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-[#f97316]/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Award className="w-4 h-4 text-[#f97316]" />
+                  <div className="w-6 h-6 bg-[#ea580c]/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Award className="w-4 h-4 text-[#ea580c]" />
                   </div>
                   <span className="text-gray-700">{perk}</span>
                 </div>
@@ -193,7 +193,7 @@ export default function CareersPage() {
           </h2>
           <div className="space-y-4">
             {openRoles.map((role, idx) => (
-              <div key={idx} className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md hover:border-[#f97316] transition-all p-6">
+              <div key={idx} className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md hover:border-[#ea580c] transition-all p-6">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-[#1e3a4c] mb-2">{role.title}</h3>
@@ -214,7 +214,7 @@ export default function CareersPage() {
                   </div>
                   <a
                     href={`mailto:careers@adventurewales.co.uk?subject=Application: ${role.title}`}
-                    className="px-6 py-3 bg-[#f97316] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors whitespace-nowrap text-center"
+                    className="px-6 py-3 bg-[#ea580c] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors whitespace-nowrap text-center"
                   >
                     Apply Now
                   </a>
@@ -252,7 +252,7 @@ export default function CareersPage() {
           </h2>
           <div className="grid md:grid-cols-4 gap-6">
             <div className="text-center">
-              <div className="w-12 h-12 bg-[#f97316] text-white rounded-xl flex items-center justify-center mx-auto mb-4 font-bold text-xl">
+              <div className="w-12 h-12 bg-[#ea580c] text-white rounded-xl flex items-center justify-center mx-auto mb-4 font-bold text-xl">
                 1
               </div>
               <h3 className="font-bold text-[#1e3a4c] mb-2">Apply</h3>
@@ -261,7 +261,7 @@ export default function CareersPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 bg-[#f97316] text-white rounded-xl flex items-center justify-center mx-auto mb-4 font-bold text-xl">
+              <div className="w-12 h-12 bg-[#ea580c] text-white rounded-xl flex items-center justify-center mx-auto mb-4 font-bold text-xl">
                 2
               </div>
               <h3 className="font-bold text-[#1e3a4c] mb-2">Initial Call</h3>
@@ -270,7 +270,7 @@ export default function CareersPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 bg-[#f97316] text-white rounded-xl flex items-center justify-center mx-auto mb-4 font-bold text-xl">
+              <div className="w-12 h-12 bg-[#ea580c] text-white rounded-xl flex items-center justify-center mx-auto mb-4 font-bold text-xl">
                 3
               </div>
               <h3 className="font-bold text-[#1e3a4c] mb-2">Meet the Team</h3>
@@ -279,7 +279,7 @@ export default function CareersPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 bg-[#f97316] text-white rounded-xl flex items-center justify-center mx-auto mb-4 font-bold text-xl">
+              <div className="w-12 h-12 bg-[#ea580c] text-white rounded-xl flex items-center justify-center mx-auto mb-4 font-bold text-xl">
                 4
               </div>
               <h3 className="font-bold text-[#1e3a4c] mb-2">Decision</h3>
@@ -300,7 +300,7 @@ export default function CareersPage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <a
               href="mailto:careers@adventurewales.co.uk"
-              className="px-8 py-3 bg-[#f97316] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors"
+              className="px-8 py-3 bg-[#ea580c] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors"
             >
               Get in Touch
             </a>

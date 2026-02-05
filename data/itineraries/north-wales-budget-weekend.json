@@ -76,7 +76,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Glaslyn Osprey Project viewpoint",
         "description": "A great spot to enjoy your lunch and hopefully see Ospreys (seasonal)"
-      }
+      },
+      "postcode": "LL40 1LF"
     },
     {
       "day": 1,
@@ -169,7 +170,8 @@
       "budgetAlt": {
         "title": "Packed lunch at the Coed y Brenin picnic area",
         "description": "Enjoy your own food with views of the forest."
-      }
+      },
+      "postcode": "LL40 2HG"
     },
     {
       "day": 2,
@@ -179,7 +181,7 @@
       "title": "Explore Swallow Falls",
       "description": "Visit the highest continuous waterfall in Wales. Small entry fee applies.",
       "duration": "1 hour",
-      "costFrom": 2.0,
+      "costFrom": 2,
       "costTo": 2.5,
       "lat": 53.1158,
       "lng": -3.7912,
@@ -201,7 +203,7 @@
   ],
   "costBreakdown": {
     "standard": {
-      "activities": 2.0,
+      "activities": 2,
       "accommodation": 12.5,
       "food": 40,
       "transport": 25,

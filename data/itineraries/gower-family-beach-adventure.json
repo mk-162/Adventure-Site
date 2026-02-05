@@ -75,7 +75,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Llangennith dunes",
         "description": "Enjoy your own sandwiches with amazing beach views"
-      }
+      },
+      "postcode": "SA3 1JA"
     },
     {
       "day": 1,
@@ -122,7 +123,8 @@
         "description": "A well-maintained campsite with stunning views across Rhossili Bay.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "SA3 1PN"
     },
     {
       "day": 2,
@@ -170,7 +172,8 @@
         "description": "Enjoy your own food with incredible beach views",
         "costFrom": 0,
         "costTo": 0
-      }
+      },
+      "postcode": "SA3 2HB"
     },
     {
       "day": 2,
@@ -217,7 +220,8 @@
         "description": "A unique camping experience with incredible views.  Obtain necessary permits beforehand.",
         "costFrom": 5,
         "costTo": 10
-      }
+      },
+      "postcode": "SA3 2HB"
     },
     {
       "day": 3,
@@ -265,7 +269,8 @@
         "description": "Find a quiet spot on Oxwich Point and enjoy a picnic lunch with stunning views.",
         "costFrom": 0,
         "costTo": 0
-      }
+      },
+      "postcode": "SA3 1LS"
     },
     {
       "day": 3,

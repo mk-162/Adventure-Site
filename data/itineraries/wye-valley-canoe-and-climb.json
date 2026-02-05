@@ -76,7 +76,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Symonds Yat Rock",
         "description": "Enjoy your own sandwiches with spectacular views from Symonds Yat Rock."
-      }
+      },
+      "postcode": "GL16 7EU"
     },
     {
       "day": 1,
@@ -123,7 +124,8 @@
         "description": "Glamping in a wigwam cabin for a more affordable and unique experience.",
         "costFrom": 50,
         "costTo": 80
-      }
+      },
+      "postcode": "NP25 3XE"
     },
     {
       "day": 2,
@@ -169,7 +171,8 @@
       "budgetAlt": {
         "title": "Picnic at the Tintern Abbey grounds",
         "description": "Pack a picnic to enjoy while taking in the magnificent views of Tintern Abbey."
-      }
+      },
+      "postcode": "NP16 6SE"
     },
     {
       "day": 2,

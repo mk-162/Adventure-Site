@@ -28,7 +28,7 @@ export function SponsorBadge({
           className="rounded-full object-cover"
         />
       ) : (
-        <span className="w-5 h-5 bg-[#f97316] rounded-full flex items-center justify-center text-white text-xs font-bold">
+        <span className="w-5 h-5 bg-[#ea580c] rounded-full flex items-center justify-center text-white text-xs font-bold">
           {operatorName.charAt(0)}
         </span>
       )}

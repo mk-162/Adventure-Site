@@ -75,7 +75,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Porthgain Harbour",
         "description": "Enjoy your own picnic while watching the boats bob in the harbour."
-      }
+      },
+      "postcode": "SA62 6DP"
     },
     {
       "day": 1,
@@ -122,7 +123,8 @@
         "description": "A basic campsite near St Davids, offering stunning views.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "SA62 6SE"
     },
     {
       "day": 1,
@@ -141,7 +143,8 @@
       "budgetAlt": {
         "title": "Shop in St Davids",
         "description": "Buy food from the supermarket to cook at the YHA or campsite."
-      }
+      },
+      "postcode": "SA62 6SA"
     },
     {
       "day": 2,
@@ -207,14 +210,15 @@
       "description": "A cafe right on the beach.",
       "costFrom": 10,
       "costTo": 20,
-      "lat": 51.892,
-      "lng": -5.303,
+      "lat": 51.892034,
+      "lng": -5.290796,
       "travelToNext": "1 hour drive",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed lunch at Whitesands",
         "description": "Enjoy your own picnic."
-      }
+      },
+      "postcode": "SA62 6PT"
     },
     {
       "day": 2,

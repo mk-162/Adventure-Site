@@ -23,7 +23,7 @@ export function Badge({
         // Variants
         variant === "default" && "bg-gray-100 text-gray-700",
         variant === "primary" && "bg-[#1e3a4c] text-white",
-        variant === "accent" && "bg-[#f97316] text-white",
+        variant === "accent" && "bg-[#ea580c] text-white",
         variant === "success" && "bg-green-100 text-green-700",
         variant === "warning" && "bg-amber-100 text-amber-700",
         variant === "outline" && "border border-gray-200 text-gray-600",

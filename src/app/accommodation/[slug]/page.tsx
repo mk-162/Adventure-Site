@@ -275,7 +275,7 @@ export default async function AccommodationPage({ params }: Props) {
                     href={accommodation.bookingUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full bg-[#f97316] text-white font-semibold py-3 px-4 rounded-lg hover:bg-[#ea580c] transition-colors"
+                    className="flex items-center justify-center gap-2 w-full bg-[#ea580c] text-white font-semibold py-3 px-4 rounded-lg hover:bg-[#ea580c] transition-colors"
                   >
                     <Calendar className="h-5 w-5" />
                     Check Availability

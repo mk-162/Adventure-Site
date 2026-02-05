@@ -75,7 +75,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Llyn Peris viewpoint",
         "description": "Enjoy your own food with views of the lake and Dinorwic Quarry."
-      }
+      },
+      "postcode": "LL55 4SL"
     },
     {
       "day": 1,
@@ -122,7 +123,8 @@
         "description": "A campsite close to Llanberis with basic amenities.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "LL55 4HP"
     },
     {
       "day": 1,
@@ -141,7 +143,8 @@
       "budgetAlt": {
         "title": "Cook your own meal at the hostel",
         "description": "Use the hostel's kitchen facilities to prepare a simple meal."
-      }
+      },
+      "postcode": "LL55 4PX"
     },
     {
       "day": 2,
@@ -187,7 +190,8 @@
       "budgetAlt": {
         "title": "Packed lunch by Llyn Ogwen",
         "description": "Enjoy a picnic with a view of the lake and surrounding mountains."
-      }
+      },
+      "postcode": "LL24 0ED"
     },
     {
       "day": 2,
@@ -233,7 +237,8 @@
       "budgetAlt": {
         "title": "Stop at a roadside viewpoint",
         "description": "Take a flask of tea or coffee and enjoy the views from a scenic viewpoint."
-      }
+      },
+      "postcode": "LL24 0DS"
     }
   ],
   "costBreakdown": {

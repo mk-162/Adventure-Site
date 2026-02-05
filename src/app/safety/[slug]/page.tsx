@@ -45,7 +45,7 @@ function markdownToHtml(md: string): string {
     .replace(/^- (.+)$/gm, '<li class="ml-4">$1</li>')
     .replace(/(<li.*<\/li>\n?)+/g, '<ul class="list-disc list-inside space-y-2 my-4">$&</ul>')
     // Links
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-[#f97316] hover:underline">$1</a>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-[#ea580c] hover:underline">$1</a>')
     // Paragraphs
     .replace(/^(?!<[hul]|<li)(.+)$/gm, '<p class="text-gray-700 leading-relaxed mb-4">$1</p>')
     // Clean up
@@ -75,7 +75,7 @@ export default async function SafetyGuidePage({ params }: Props) {
             <span className="text-white">{guide.title}</span>
           </nav>
           <div className="flex items-center gap-4">
-            <AlertTriangle className="w-10 h-10 text-[#f97316]" />
+            <AlertTriangle className="w-10 h-10 text-[#ea580c]" />
             <h1 className="text-3xl md:text-4xl font-bold text-white">
               {guide.title}
             </h1>
@@ -108,7 +108,7 @@ export default async function SafetyGuidePage({ params }: Props) {
         <div className="mt-12 pt-8 border-t">
           <Link
             href="/safety"
-            className="text-[#f97316] hover:underline flex items-center gap-2"
+            className="text-[#ea580c] hover:underline flex items-center gap-2"
           >
             ← Back to safety information
           </Link>

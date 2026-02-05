@@ -138,7 +138,7 @@ function ResultCard({
         </div>
       </div>
       <div className="p-5">
-        <h3 className="font-bold text-lg text-slate-900 mb-2 group-hover:text-[#f97316] transition-colors line-clamp-1">
+        <h3 className="font-bold text-lg text-slate-900 mb-2 group-hover:text-[#ea580c] transition-colors line-clamp-1">
           {title}
         </h3>
         {location && (
@@ -200,7 +200,7 @@ async function SearchResults({ searchParams }: SearchPageProps) {
           </div>
 
           <p className="mt-6 text-white/80 text-lg">
-            Found <span className="font-bold text-[#f97316]">{totalResults}</span> results
+            Found <span className="font-bold text-[#ea580c]">{totalResults}</span> results
           </p>
 
           {/* Search Bar */}
@@ -211,11 +211,11 @@ async function SearchResults({ searchParams }: SearchPageProps) {
                 type="text"
                 name="q"
                 placeholder="Search adventures, activities, regions..."
-                className="w-full pl-12 pr-28 py-4 rounded-xl bg-white text-slate-900 placeholder-slate-400 border-2 border-white/80 focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316] outline-none shadow-lg text-base"
+                className="w-full pl-12 pr-28 py-4 rounded-xl bg-white text-slate-900 placeholder-slate-400 border-2 border-white/80 focus:border-[#ea580c] focus:ring-2 focus:ring-[#ea580c] outline-none shadow-lg text-base"
               />
               <button
                 type="submit"
-                className="absolute right-2 top-1/2 -translate-y-1/2 px-6 py-2.5 bg-[#f97316] hover:bg-orange-600 text-white font-bold rounded-lg transition-colors text-sm"
+                className="absolute right-2 top-1/2 -translate-y-1/2 px-6 py-2.5 bg-[#ea580c] hover:bg-orange-600 text-white font-bold rounded-lg transition-colors text-sm"
               >
                 Search
               </button>
@@ -237,7 +237,7 @@ async function SearchResults({ searchParams }: SearchPageProps) {
             </p>
             <Link
               href="/"
-              className="inline-flex items-center gap-2 bg-[#f97316] hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-bold transition-colors"
+              className="inline-flex items-center gap-2 bg-[#ea580c] hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-bold transition-colors"
             >
               Back to Home
               <ArrowRight className="h-5 w-5" />
@@ -249,7 +249,7 @@ async function SearchResults({ searchParams }: SearchPageProps) {
             {results.activities.length > 0 && (
               <section className="mb-12">
                 <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                  <Compass className="h-6 w-6 text-[#f97316]" />
+                  <Compass className="h-6 w-6 text-[#ea580c]" />
                   Activities
                   <span className="text-base font-normal text-slate-500">
                     ({results.activities.length})
@@ -275,7 +275,7 @@ async function SearchResults({ searchParams }: SearchPageProps) {
             {results.itineraries.length > 0 && (
               <section className="mb-12">
                 <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                  <Calendar className="h-6 w-6 text-[#f97316]" />
+                  <Calendar className="h-6 w-6 text-[#ea580c]" />
                   Itineraries
                   <span className="text-base font-normal text-slate-500">
                     ({results.itineraries.length})
@@ -301,7 +301,7 @@ async function SearchResults({ searchParams }: SearchPageProps) {
             {results.accommodation.length > 0 && (
               <section className="mb-12">
                 <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                  <MapPin className="h-6 w-6 text-[#f97316]" />
+                  <MapPin className="h-6 w-6 text-[#ea580c]" />
                   Accommodation
                   <span className="text-base font-normal text-slate-500">
                     ({results.accommodation.length})
@@ -333,7 +333,7 @@ export default function SearchPage(props: SearchPageProps) {
   return (
     <Suspense fallback={
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#f97316]"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#ea580c]"></div>
       </div>
     }>
       <SearchResults {...props} />

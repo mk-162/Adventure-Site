@@ -1,0 +1,2635 @@
+[
+  {
+    "title": "Lizzies cafe",
+    "type": "food",
+    "oldLat": 52.9958,
+    "oldLng": -3.9372,
+    "postcode": "LL41 3HD",
+    "newLat": 52.995385,
+    "newLng": -3.937789,
+    "drift": 0.1,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "48-hours-of-adrenaline.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "YHA Snowdon Pen-y-Pass",
+    "type": "accommodation",
+    "oldLat": 53.08,
+    "oldLng": -4.02,
+    "postcode": "LL55 4NU",
+    "newLat": 53.080873,
+    "newLng": -4.020655,
+    "drift": 0.1,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "48-hours-of-adrenaline.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "TYF Cliff-top Campsite",
+    "type": "accommodation",
+    "oldLat": 51.881,
+    "oldLng": -5.266,
+    "postcode": "SA62 6SE",
+    "newLat": 51.880856,
+    "newLng": -5.265898,
+    "drift": 0,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "48-hours-of-adrenaline.json",
+      "pembrokeshire-family-coastal.json",
+      "pembrokeshire-island-hopping.json",
+      "romantic-adventure-escape.json",
+      "wales-under-50-budget.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Pete's Eats",
+    "type": "food",
+    "oldLat": 53.119,
+    "oldLng": -4.127,
+    "postcode": "LL55 4SL",
+    "newLat": 53.118993,
+    "newLng": -4.126979,
+    "drift": 0,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "adrenaline-junkie-weekend.json",
+      "beginners-adventure-taster.json",
+      "family-adventure-week.json",
+      "photography-adventure.json",
+      "snowdonia-adventure-weekend.json",
+      "snowdonia-dog-friendly.json",
+      "snowdonia-wild-camping-trail.json",
+      "snowdonia-without-a-car.json",
+      "snowdonia-zip-world-tour.json",
+      "summit-challenge.json",
+      "wales-first-timer-sampler.json",
+      "wales-grand-tour.json",
+      "wales-under-50-budget.json",
+      "wales-without-a-car.json",
+      "winter-adventure.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Ben's Bunkhouse",
+    "type": "accommodation",
+    "oldLat": 53.1039,
+    "oldLng": -4.0541,
+    "postcode": "LL55 4UL",
+    "newLat": 53.098411,
+    "newLng": -4.070994,
+    "drift": 1.3,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "adrenaline-junkie-weekend.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Riverside Cafe, Bala",
+    "type": "food",
+    "oldLat": 52.9124,
+    "oldLng": -3.5958,
+    "postcode": "LL23 7NG",
+    "newLat": 52.912214,
+    "newLng": -3.595536,
+    "drift": 0,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "adrenaline-junkie-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Sea Shanty Cafe",
+    "type": "food",
+    "oldLat": 53.3065,
+    "oldLng": -4.6995,
+    "postcode": "LL65 1YH",
+    "newLat": 53.303971,
+    "newLng": -4.686903,
+    "drift": 0.9,
+    "district": "Isle of Anglesey",
+    "country": "Wales",
+    "files": [
+      "anglesey-coastal-path.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Trearddur Bay Hotel",
+    "type": "accommodation",
+    "oldLat": 53.281,
+    "oldLng": -4.63,
+    "postcode": "LL65 2UP",
+    "newLat": 53.282393,
+    "newLng": -4.630428,
+    "drift": 0.2,
+    "district": "Isle of Anglesey",
+    "country": "Wales",
+    "files": [
+      "anglesey-coastal-path.json",
+      "kayaking-explorer.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Pilot House Cafe",
+    "type": "food",
+    "oldLat": 53.1263,
+    "oldLng": -4.4113,
+    "postcode": "",
+    "newLat": 0,
+    "newLng": 0,
+    "drift": 0,
+    "district": "",
+    "country": "",
+    "files": [
+      "anglesey-coastal-path.json"
+    ],
+    "status": "no_postcode"
+  },
+  {
+    "title": "Plas Menai Accommodation",
+    "type": "accommodation",
+    "oldLat": 53.133,
+    "oldLng": -4.27,
+    "postcode": "LL55 2LQ",
+    "newLat": 53.133168,
+    "newLng": -4.268862,
+    "drift": 0.1,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "anglesey-coastal-path.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Red Boat Ice Cream Parlour",
+    "type": "food",
+    "oldLat": 53.264,
+    "oldLng": -4.082,
+    "postcode": "LL58 8RA",
+    "newLat": 53.264839,
+    "newLng": -4.087292,
+    "drift": 0.4,
+    "district": "Isle of Anglesey",
+    "country": "Wales",
+    "files": [
+      "anglesey-coastal-path.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Oyster Catcher",
+    "type": "food",
+    "oldLat": 53.2332,
+    "oldLng": -4.5251,
+    "postcode": "LL64 5QN",
+    "newLat": 53.231748,
+    "newLng": -4.519624,
+    "drift": 0.4,
+    "district": "Isle of Anglesey",
+    "country": "Wales",
+    "files": [
+      "anglesey-family-adventure.json",
+      "anglesey-kitesurfing-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Surf's Edge Apartment",
+    "type": "accommodation",
+    "oldLat": 53.232,
+    "oldLng": -4.522,
+    "postcode": "LL64 5QN",
+    "newLat": 53.231748,
+    "newLng": -4.519624,
+    "drift": 0.2,
+    "district": "Isle of Anglesey",
+    "country": "Wales",
+    "files": [
+      "anglesey-family-adventure.json",
+      "anglesey-kitesurfing-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Sea Shanty Cafe",
+    "type": "food",
+    "oldLat": 53.2815,
+    "oldLng": -4.631,
+    "postcode": "LL65 2UP",
+    "newLat": 53.282393,
+    "newLng": -4.630428,
+    "drift": 0.1,
+    "district": "Isle of Anglesey",
+    "country": "Wales",
+    "files": [
+      "anglesey-family-adventure.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Rhosneigr Kitchen",
+    "type": "food",
+    "oldLat": 53.232,
+    "oldLng": -4.521,
+    "postcode": "LL64 5QN",
+    "newLat": 53.231748,
+    "newLng": -4.519624,
+    "drift": 0.1,
+    "district": "Isle of Anglesey",
+    "country": "Wales",
+    "files": [
+      "anglesey-kitesurfing-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Sandy Mount House",
+    "type": "food",
+    "oldLat": 53.2333,
+    "oldLng": -4.5222,
+    "postcode": "LL64 5RB",
+    "newLat": 53.232713,
+    "newLng": -4.519036,
+    "drift": 0.2,
+    "district": "Isle of Anglesey",
+    "country": "Wales",
+    "files": [
+      "anglesey-kitesurfing-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Plas y Brenin",
+    "type": "accommodation",
+    "oldLat": 53.096,
+    "oldLng": -3.91,
+    "postcode": "LL24 0EL",
+    "newLat": 53.102823,
+    "newLng": -3.907092,
+    "drift": 0.8,
+    "district": "Conwy",
+    "country": "Wales",
+    "files": [
+      "beginners-adventure-taster.json",
+      "photography-adventure.json",
+      "snowdonia-adventure-weekend.json",
+      "snowdonia-rainy-day-plan.json",
+      "snowdonia-without-a-car.json",
+      "wales-first-timer-sampler.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Riverside Cafe Bala",
+    "type": "food",
+    "oldLat": 52.91,
+    "oldLng": -3.661,
+    "postcode": "LL23 7SH",
+    "newLat": 52.916784,
+    "newLng": -3.673121,
+    "drift": 1.1,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "beginners-adventure-taster.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "BikePark Wales Cafe",
+    "type": "food",
+    "oldLat": 51.725,
+    "oldLng": -3.37,
+    "postcode": "CF48 1YU",
+    "newLat": 51.725393,
+    "newLng": -3.370973,
+    "drift": 0.1,
+    "district": "Merthyr Tydfil",
+    "country": "Wales",
+    "files": [
+      "brecon-beacons-bike-and-hike.json",
+      "south-wales-bikepark-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Twin Trails B&B",
+    "type": "accommodation",
+    "oldLat": 51.7445,
+    "oldLng": -3.3505,
+    "postcode": "CF48 4AH",
+    "newLat": 51.743551,
+    "newLng": -3.352041,
+    "drift": 0.1,
+    "district": "Merthyr Tydfil",
+    "country": "Wales",
+    "files": [
+      "brecon-beacons-bike-and-hike.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Red Dragon Tea Room",
+    "type": "food",
+    "oldLat": 51.9445,
+    "oldLng": -3.3935,
+    "postcode": "LD3 7DX",
+    "newLat": 51.944697,
+    "newLng": -3.391078,
+    "drift": 0.2,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "brecon-beacons-bike-and-hike.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Craig y Nos Castle",
+    "type": "accommodation",
+    "oldLat": 51.828,
+    "oldLng": -3.68,
+    "postcode": "SA9 1GJ",
+    "newLat": 51.829334,
+    "newLng": -3.682861,
+    "drift": 0.2,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "brecon-beacons-bike-and-hike.json",
+      "brecon-beacons-gorge-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The White Swan Inn (Llangorse)",
+    "type": "food",
+    "oldLat": 51.9218,
+    "oldLng": -3.2619,
+    "postcode": "LD3 7PX",
+    "newLat": 51.917391,
+    "newLng": -3.263354,
+    "drift": 0.5,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "brecon-beacons-bike-and-hike.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Felin Fach Griffin",
+    "type": "food",
+    "oldLat": 52.093,
+    "oldLng": -3.332,
+    "postcode": "LD2 3YX",
+    "newLat": 52.09709,
+    "newLng": -3.328923,
+    "drift": 0.5,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "brecon-beacons-dark-sky.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "YHA Brecon Beacons",
+    "type": "accommodation",
+    "oldLat": 51.9,
+    "oldLng": -3.44,
+    "postcode": "LD3 8NE",
+    "newLat": 51.915821,
+    "newLng": -3.450206,
+    "drift": 1.9,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "brecon-beacons-dark-sky.json",
+      "caving-and-climbing.json",
+      "solo-traveler-trail.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Self-catering at YHA Brecon Beacons",
+    "type": "food",
+    "oldLat": 51.9,
+    "oldLng": -3.44,
+    "postcode": "LD3 8NE",
+    "newLat": 51.915821,
+    "newLng": -3.450206,
+    "drift": 1.9,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "brecon-beacons-dark-sky.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Breakfast at YHA Brecon Beacons",
+    "type": "food",
+    "oldLat": 51.9,
+    "oldLng": -3.44,
+    "postcode": "LD3 8NE",
+    "newLat": 51.915821,
+    "newLng": -3.450206,
+    "drift": 1.9,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "brecon-beacons-dark-sky.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Tafarn y Garreg",
+    "type": "food",
+    "oldLat": 51.886,
+    "oldLng": -3.44,
+    "postcode": "",
+    "newLat": 0,
+    "newLng": 0,
+    "drift": 0,
+    "district": "",
+    "country": "",
+    "files": [
+      "brecon-beacons-dark-sky.json"
+    ],
+    "status": "no_postcode"
+  },
+  {
+    "title": "The Old White Horse Inn",
+    "type": "food",
+    "oldLat": 51.819,
+    "oldLng": -3.705,
+    "postcode": "SA9 1GL",
+    "newLat": 51.824857,
+    "newLng": -3.684015,
+    "drift": 1.6,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "brecon-beacons-family-weekend.json",
+      "brecon-beacons-gorge-weekend.json",
+      "solo-traveler-trail.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Premier Inn Merthyr Tydfil",
+    "type": "accommodation",
+    "oldLat": 51.75,
+    "oldLng": -3.38,
+    "postcode": "CF47 8RN",
+    "newLat": 51.750042,
+    "newLng": -3.379918,
+    "drift": 0,
+    "district": "Merthyr Tydfil",
+    "country": "Wales",
+    "files": [
+      "brecon-beacons-family-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Storey Arms Cafe",
+    "type": "food",
+    "oldLat": 51.8835,
+    "oldLng": -3.4375,
+    "postcode": "",
+    "newLat": 0,
+    "newLng": 0,
+    "drift": 0,
+    "district": "",
+    "country": "",
+    "files": [
+      "brecon-beacons-family-weekend.json"
+    ],
+    "status": "no_postcode"
+  },
+  {
+    "title": "The Pen y Cae Inn",
+    "type": "food",
+    "oldLat": 51.8176,
+    "oldLng": -3.6752,
+    "postcode": "SA9 1GB",
+    "newLat": 51.817673,
+    "newLng": -3.67452,
+    "drift": 0,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "brecon-beacons-gorge-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Old Waterwheel Tearoom",
+    "type": "food",
+    "oldLat": 51.81,
+    "oldLng": -3.55,
+    "postcode": "CF44 9JE",
+    "newLat": 51.811543,
+    "newLng": -3.551072,
+    "drift": 0.2,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "brecon-beacons-waterfall-country.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Waterfall Country Campsite",
+    "type": "accommodation",
+    "oldLat": 51.809,
+    "oldLng": -3.57,
+    "postcode": "CF44 9JG",
+    "newLat": 51.807193,
+    "newLng": -3.57799,
+    "drift": 0.6,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "brecon-beacons-waterfall-country.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Lamb Inn",
+    "type": "food",
+    "oldLat": 51.812,
+    "oldLng": -3.548,
+    "postcode": "CF44 9JE",
+    "newLat": 51.811543,
+    "newLng": -3.551072,
+    "drift": 0.2,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "brecon-beacons-waterfall-country.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Red Lion Inn",
+    "type": "food",
+    "oldLat": 51.77,
+    "oldLng": -3.48,
+    "postcode": "",
+    "newLat": 0,
+    "newLng": 0,
+    "drift": 0,
+    "district": "",
+    "country": "",
+    "files": [
+      "brecon-beacons-waterfall-country.json"
+    ],
+    "status": "no_postcode"
+  },
+  {
+    "title": "The River Cafe",
+    "type": "food",
+    "oldLat": 52.092,
+    "oldLng": -3.161,
+    "postcode": "HR3 5SG",
+    "newLat": 52.090563,
+    "newLng": -3.16837,
+    "drift": 0.5,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "caving-and-climbing.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Craig y Nos Castle Tea Room",
+    "type": "food",
+    "oldLat": 51.828,
+    "oldLng": -3.68,
+    "postcode": "SA9 1GJ",
+    "newLat": 51.829334,
+    "newLng": -3.682861,
+    "drift": 0.2,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "caving-and-climbing.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Sloop Inn",
+    "type": "food",
+    "oldLat": 51.9355,
+    "oldLng": -5.1833,
+    "postcode": "SA62 6DP",
+    "newLat": 51.932977,
+    "newLng": -5.181277,
+    "drift": 0.3,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "coastal-wild-swimming.json",
+      "pembrokeshire-coasteering-break.json",
+      "wales-under-50-budget.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "St Davids YHA",
+    "type": "accommodation",
+    "oldLat": 51.881,
+    "oldLng": -5.266,
+    "postcode": "SA62 6SE",
+    "newLat": 51.880856,
+    "newLng": -5.265898,
+    "drift": 0,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "coastal-wild-swimming.json",
+      "pembrokeshire-coasteering-break.json",
+      "pembrokeshire-stag-hen-weekend.json",
+      "pembrokeshire-surf-week.json",
+      "pembrokeshire-surf-week.json",
+      "pembrokeshire-winter-coast.json",
+      "wales-first-timer-sampler.json",
+      "wales-without-a-car.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Stackpole Inn",
+    "type": "food",
+    "oldLat": 51.6309,
+    "oldLng": -4.9142,
+    "postcode": "SA71 5DA",
+    "newLat": 51.631292,
+    "newLng": -4.913365,
+    "drift": 0.1,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "coastal-wild-swimming.json",
+      "pembrokeshire-family-coastal.json",
+      "pembrokeshire-island-hopping.json",
+      "pembrokeshire-surf-week.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Stackpole Centre (National Trust)",
+    "type": "accommodation",
+    "oldLat": 51.616,
+    "oldLng": -4.891,
+    "postcode": "SA71 5LS",
+    "newLat": 51.626142,
+    "newLng": -4.900882,
+    "drift": 1.3,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "coastal-wild-swimming.json",
+      "pembrokeshire-family-coastal.json",
+      "pembrokeshire-island-hopping.json",
+      "pembrokeshire-surf-week.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Runwayskiln",
+    "type": "food",
+    "oldLat": 51.7293,
+    "oldLng": -5.1617,
+    "postcode": "SA62 3QS",
+    "newLat": 51.732891,
+    "newLng": -5.160594,
+    "drift": 0.4,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "coastal-wild-swimming.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Hangin' Pizzeria",
+    "type": "food",
+    "oldLat": 53.092,
+    "oldLng": -3.8,
+    "postcode": "LL24 0AE",
+    "newLat": 53.092432,
+    "newLng": -3.800791,
+    "drift": 0.1,
+    "district": "Conwy",
+    "country": "Wales",
+    "files": [
+      "family-adventure-week.json",
+      "photography-adventure.json",
+      "snowdonia-without-a-car.json",
+      "snowdonia-zip-world-tour.json",
+      "wales-first-timer-sampler.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Treks Bunkhouse",
+    "type": "accommodation",
+    "oldLat": 52.99,
+    "oldLng": -3.95,
+    "postcode": "LL41 3PY",
+    "newLat": 52.990073,
+    "newLng": -3.947578,
+    "drift": 0.2,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "family-adventure-week.json",
+      "mountain-biking-epic.json",
+      "snowdonia-zip-world-tour.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Arete Outdoor Centre",
+    "type": "accommodation",
+    "oldLat": 53.1406,
+    "oldLng": -4.1771,
+    "postcode": "LL55 4EA",
+    "newLat": 53.141582,
+    "newLng": -4.176989,
+    "drift": 0.1,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "family-adventure-week.json",
+      "summit-challenge.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Cyfyng Falls Cafe",
+    "type": "food",
+    "oldLat": 52.83,
+    "oldLng": -3.87,
+    "postcode": "LL40 2LF",
+    "newLat": 52.828364,
+    "newLng": -3.869991,
+    "drift": 0.2,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "family-adventure-week.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Bala Backpackers",
+    "type": "accommodation",
+    "oldLat": 52.91,
+    "oldLng": -3.59,
+    "postcode": "LL23 7HA",
+    "newLat": 52.909385,
+    "newLng": -3.591283,
+    "drift": 0.1,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "family-adventure-week.json",
+      "mountain-biking-epic.json",
+      "snowdonia-zip-world-tour.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Oneplanet Adventure Cafe",
+    "type": "food",
+    "oldLat": 53.06,
+    "oldLng": -3.19,
+    "postcode": "LL11 3AB",
+    "newLat": 53.058328,
+    "newLng": -3.187833,
+    "drift": 0.2,
+    "district": "Denbighshire",
+    "country": "Wales",
+    "files": [
+      "family-adventure-week.json",
+      "mid-wales-mtb-trail.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Platts Farm",
+    "type": "accommodation",
+    "oldLat": 53.24,
+    "oldLng": -3.95,
+    "postcode": "LL33 0ER",
+    "newLat": 53.244634,
+    "newLng": -3.957742,
+    "drift": 0.7,
+    "district": "Conwy",
+    "country": "Wales",
+    "files": [
+      "family-adventure-week.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Bay Bistro & Coffee Shop",
+    "type": "food",
+    "oldLat": 51.569,
+    "oldLng": -4.287,
+    "postcode": "SA3 1PN",
+    "newLat": 51.568553,
+    "newLng": -4.285783,
+    "drift": 0.1,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "gower-couples-escape.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The King Arthur Hotel",
+    "type": "accommodation",
+    "oldLat": 51.5941,
+    "oldLng": -4.1841,
+    "postcode": "SA3 1AG",
+    "newLat": 51.586838,
+    "newLng": -4.188504,
+    "drift": 0.9,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "gower-couples-escape.json",
+      "gower-surf-and-coasteer.json",
+      "wales-grand-tour.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Restaurant at The King Arthur Hotel",
+    "type": "food",
+    "oldLat": 51.5941,
+    "oldLng": -4.1841,
+    "postcode": "SA3 1AG",
+    "newLat": 51.586838,
+    "newLng": -4.188504,
+    "drift": 0.9,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "gower-couples-escape.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Oxwich Bay Hotel Restaurant",
+    "type": "food",
+    "oldLat": 51.558,
+    "oldLng": -4.165,
+    "postcode": "SA3 1LS",
+    "newLat": 51.558312,
+    "newLng": -4.169172,
+    "drift": 0.3,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "gower-couples-escape.json",
+      "gower-family-beach-adventure.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The King's Head, Llangennith",
+    "type": "food",
+    "oldLat": 51.5967,
+    "oldLng": -4.2693,
+    "postcode": "SA3 1JA",
+    "newLat": 51.598778,
+    "newLng": -4.270983,
+    "drift": 0.3,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "gower-day-trip-from-cardiff.json",
+      "gower-family-beach-adventure.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Rhosili Bunkhouse",
+    "type": "accommodation",
+    "oldLat": 51.5695,
+    "oldLng": -4.2865,
+    "postcode": "SA3 1PN",
+    "newLat": 51.568553,
+    "newLng": -4.285783,
+    "drift": 0.1,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "gower-family-beach-adventure.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Three Cliffs Coffee Shop",
+    "type": "food",
+    "oldLat": 51.5775,
+    "oldLng": -4.115,
+    "postcode": "SA3 2HB",
+    "newLat": 51.57757,
+    "newLng": -4.116772,
+    "drift": 0.1,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "gower-family-beach-adventure.json",
+      "gower-wild-swimming-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Three Cliffs Bay Campsite",
+    "type": "accommodation",
+    "oldLat": 51.578,
+    "oldLng": -4.114,
+    "postcode": "SA3 2HB",
+    "newLat": 51.57757,
+    "newLng": -4.116772,
+    "drift": 0.2,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "gower-family-beach-adventure.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Beach House Restaurant",
+    "type": "food",
+    "oldLat": 51.558,
+    "oldLng": -4.165,
+    "postcode": "SA3 1LS",
+    "newLat": 51.558312,
+    "newLng": -4.169172,
+    "drift": 0.3,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "gower-surf-and-coasteer.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Britannia Inn",
+    "type": "food",
+    "oldLat": 51.585,
+    "oldLng": -4.205,
+    "postcode": "SA3 1AS",
+    "newLat": 51.582995,
+    "newLng": -4.208832,
+    "drift": 0.3,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "gower-surf-and-coasteer.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Bay Bistro & Coffee House",
+    "type": "food",
+    "oldLat": 51.569,
+    "oldLng": -4.287,
+    "postcode": "SA3 1PN",
+    "newLat": 51.568553,
+    "newLng": -4.285783,
+    "drift": 0.1,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "gower-surf-and-coasteer.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Ship Inn, Port Eynon",
+    "type": "food",
+    "oldLat": 51.5462,
+    "oldLng": -4.2148,
+    "postcode": "SA3 1NX",
+    "newLat": 51.546745,
+    "newLng": -4.214993,
+    "drift": 0.1,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "gower-wild-swimming-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Port Eynon Beach Campsite",
+    "type": "accommodation",
+    "oldLat": 51.5465,
+    "oldLng": -4.216,
+    "postcode": "SA3 1NX",
+    "newLat": 51.546745,
+    "newLng": -4.214993,
+    "drift": 0.1,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "gower-wild-swimming-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Bay Cafe",
+    "type": "food",
+    "oldLat": 53.2315,
+    "oldLng": -4.521,
+    "postcode": "LL64 5QN",
+    "newLat": 53.231748,
+    "newLng": -4.519624,
+    "drift": 0.1,
+    "district": "Isle of Anglesey",
+    "country": "Wales",
+    "files": [
+      "kayaking-explorer.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Wavecrest Cafe",
+    "type": "food",
+    "oldLat": 53.381,
+    "oldLng": -4.52,
+    "postcode": "LL65 4LD",
+    "newLat": 53.37849,
+    "newLng": -4.51893,
+    "drift": 0.3,
+    "district": "Isle of Anglesey",
+    "country": "Wales",
+    "files": [
+      "kayaking-explorer.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Church Bay Cottages",
+    "type": "accommodation",
+    "oldLat": 53.381,
+    "oldLng": -4.52,
+    "postcode": "LL65 4LD",
+    "newLat": 53.37849,
+    "newLng": -4.51893,
+    "drift": 0.3,
+    "district": "Isle of Anglesey",
+    "country": "Wales",
+    "files": [
+      "kayaking-explorer.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Marram Grass Cafe",
+    "type": "food",
+    "oldLat": 53.136,
+    "oldLng": -4.41,
+    "postcode": "",
+    "newLat": 0,
+    "newLng": 0,
+    "drift": 0,
+    "district": "",
+    "country": "",
+    "files": [
+      "kayaking-explorer.json"
+    ],
+    "status": "no_postcode"
+  },
+  {
+    "title": "Riverside Cafe Machynlleth",
+    "type": "food",
+    "oldLat": 52.59,
+    "oldLng": -3.85,
+    "postcode": "SY20 8AU",
+    "newLat": 52.590143,
+    "newLng": -3.848685,
+    "drift": 0.1,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "mid-wales-mtb-trail.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Hafren Forest Hideaway",
+    "type": "accommodation",
+    "oldLat": 52.5,
+    "oldLng": -3.6,
+    "postcode": "SY17 5RP",
+    "newLat": 52.499918,
+    "newLng": -3.597449,
+    "drift": 0.2,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "mid-wales-mtb-trail.json",
+      "mid-wales-off-grid-escape.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Cafe at Coed y Brenin Visitor Centre",
+    "type": "food",
+    "oldLat": 52.78,
+    "oldLng": -3.88,
+    "postcode": "LL40 2HG",
+    "newLat": 52.779849,
+    "newLng": -3.88084,
+    "drift": 0.1,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "mid-wales-mtb-trail.json",
+      "north-wales-budget-weekend.json",
+      "photography-adventure.json",
+      "snowdonia-without-a-car.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Lodge (Llandegla)",
+    "type": "accommodation",
+    "oldLat": 53.056,
+    "oldLng": -3.191,
+    "postcode": "LL11 3AB",
+    "newLat": 53.058328,
+    "newLng": -3.187833,
+    "drift": 0.3,
+    "district": "Denbighshire",
+    "country": "Wales",
+    "files": [
+      "mid-wales-mtb-trail.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Elan Valley Hotel Restaurant",
+    "type": "food",
+    "oldLat": 52.273,
+    "oldLng": -3.538,
+    "postcode": "LD1 6NY",
+    "newLat": 52.277828,
+    "newLng": -3.543451,
+    "drift": 0.7,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "mid-wales-off-grid-escape.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Self Catering",
+    "type": "food",
+    "oldLat": 52.557,
+    "oldLng": -3.615,
+    "postcode": "SY19 7DD",
+    "newLat": 52.550205,
+    "newLng": -3.630322,
+    "drift": 1.3,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "mid-wales-off-grid-escape.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Old Mill Cafe",
+    "type": "food",
+    "oldLat": 52.47,
+    "oldLng": -3.59,
+    "postcode": "SY18 6NU",
+    "newLat": 52.467553,
+    "newLng": -3.60056,
+    "drift": 0.8,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "mid-wales-off-grid-escape.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Machynlleth YHA",
+    "type": "accommodation",
+    "oldLat": 52.59,
+    "oldLng": -3.85,
+    "postcode": "SY20 8AU",
+    "newLat": 52.590143,
+    "newLng": -3.848685,
+    "drift": 0.1,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "mid-wales-off-grid-escape.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Red Lion Hotel",
+    "type": "food",
+    "oldLat": 52.593,
+    "oldLng": -3.855,
+    "postcode": "SY20 8BN",
+    "newLat": 52.592722,
+    "newLng": -3.854566,
+    "drift": 0,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "mid-wales-off-grid-escape.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Royal Ship Hotel",
+    "type": "food",
+    "oldLat": 52.751,
+    "oldLng": -3.88,
+    "postcode": "LL40 2EU",
+    "newLat": 52.752878,
+    "newLng": -3.880211,
+    "drift": 0.2,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "mid-wales-off-grid-escape.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Harp Inn, New Radnor",
+    "type": "food",
+    "oldLat": 52.222,
+    "oldLng": -3.155,
+    "postcode": "LD8 2RP",
+    "newLat": 52.212763,
+    "newLng": -3.144375,
+    "drift": 1.3,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "mid-wales-river-adventure.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Elan Valley Hotel",
+    "type": "accommodation",
+    "oldLat": 52.27,
+    "oldLng": -3.55,
+    "postcode": "LD1 6NY",
+    "newLat": 52.277828,
+    "newLng": -3.543451,
+    "drift": 1,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "mid-wales-river-adventure.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Clywedog Sailing Club Cafe",
+    "type": "food",
+    "oldLat": 52.468,
+    "oldLng": -3.578,
+    "postcode": "SY18 6NF",
+    "newLat": 52.460958,
+    "newLng": -3.56604,
+    "drift": 1.1,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "mid-wales-river-adventure.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Siop Meurig",
+    "type": "food",
+    "oldLat": 52.754,
+    "oldLng": -3.882,
+    "postcode": "LL40 2HA",
+    "newLat": 52.75499,
+    "newLng": -3.881961,
+    "drift": 0.1,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "mountain-biking-epic.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Bunkhouse, Brecon Beacons",
+    "type": "accommodation",
+    "oldLat": 51.94,
+    "oldLng": -3.43,
+    "postcode": "LD3 8PD",
+    "newLat": 51.942573,
+    "newLng": -3.438339,
+    "drift": 0.6,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "mountain-biking-epic.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Red Kite Cafe at BikePark Wales",
+    "type": "food",
+    "oldLat": 51.7576,
+    "oldLng": -3.3416,
+    "postcode": "CF48 3HG",
+    "newLat": 51.760926,
+    "newLng": -3.345474,
+    "drift": 0.5,
+    "district": "Merthyr Tydfil",
+    "country": "Wales",
+    "files": [
+      "multi-sport-challenge.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Coal Exchange Hotel Cardiff",
+    "type": "accommodation",
+    "oldLat": 51.4695,
+    "oldLng": -3.1638,
+    "postcode": "CF10 4UW",
+    "newLat": 51.46963,
+    "newLng": -3.163208,
+    "drift": 0,
+    "district": "Cardiff",
+    "country": "Wales",
+    "files": [
+      "multi-sport-challenge.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Gower Inn",
+    "type": "food",
+    "oldLat": 51.5988,
+    "oldLng": -4.0669,
+    "postcode": "SA2 7JU",
+    "newLat": 51.602586,
+    "newLng": -4.067941,
+    "drift": 0.4,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "multi-sport-challenge.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The King Arthur Hotel, Reynoldston",
+    "type": "accommodation",
+    "oldLat": 51.5873,
+    "oldLng": -4.1571,
+    "postcode": "SA3 2HN",
+    "newLat": 51.57733,
+    "newLng": -4.161966,
+    "drift": 1.2,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "multi-sport-challenge.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Old Rectory Country Hotel",
+    "type": "food",
+    "oldLat": 51.9348,
+    "oldLng": -3.3357,
+    "postcode": "LD3 7UY",
+    "newLat": 51.935733,
+    "newLng": -3.344616,
+    "drift": 0.6,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "multi-sport-challenge.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Peterstone Court, Brecon",
+    "type": "accommodation",
+    "oldLat": 51.9362,
+    "oldLng": -3.4002,
+    "postcode": "LD3 8AQ",
+    "newLat": 51.936781,
+    "newLng": -3.39364,
+    "drift": 0.5,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "multi-sport-challenge.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Castle Inn, Llangorse",
+    "type": "food",
+    "oldLat": 51.9247,
+    "oldLng": -3.2479,
+    "postcode": "LD3 7SZ",
+    "newLat": 51.919418,
+    "newLng": -3.245351,
+    "drift": 0.6,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "multi-sport-challenge.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Heights Cafe & Bistro",
+    "type": "food",
+    "oldLat": 53.2184,
+    "oldLng": -4.1431,
+    "postcode": "LL57 4LS",
+    "newLat": 53.218462,
+    "newLng": -4.142721,
+    "drift": 0,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "north-wales-adrenaline-day.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Groes Inn",
+    "type": "food",
+    "oldLat": 53.2437,
+    "oldLng": -3.8333,
+    "postcode": "LL32 8SR",
+    "newLat": 53.240357,
+    "newLng": -3.834361,
+    "drift": 0.4,
+    "district": "Conwy",
+    "country": "Wales",
+    "files": [
+      "north-wales-adrenaline-day.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Plas Brondanw Gardens and Accommodation",
+    "type": "accommodation",
+    "oldLat": 53.0073,
+    "oldLng": -4.0481,
+    "postcode": "",
+    "newLat": 0,
+    "newLng": 0,
+    "drift": 0,
+    "district": "",
+    "country": "",
+    "files": [
+      "north-wales-adrenaline-day.json"
+    ],
+    "status": "no_postcode"
+  },
+  {
+    "title": "Bistro @ Cymer",
+    "type": "food",
+    "oldLat": 52.7401,
+    "oldLng": -3.8772,
+    "postcode": "LL40 1LF",
+    "newLat": 52.740498,
+    "newLng": -3.878433,
+    "drift": 0.1,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "north-wales-budget-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Camping at Llyn Gwynant Campsite",
+    "type": "accommodation",
+    "oldLat": 53.0561,
+    "oldLng": -3.9986,
+    "postcode": "",
+    "newLat": 0,
+    "newLng": 0,
+    "drift": 0,
+    "district": "",
+    "country": "",
+    "files": [
+      "north-wales-budget-weekend.json"
+    ],
+    "status": "no_postcode"
+  },
+  {
+    "title": "Hangin' Pizzeria Betws-y-Coed",
+    "type": "food",
+    "oldLat": 53.1164,
+    "oldLng": -3.8052,
+    "postcode": "LL27 0JB",
+    "newLat": 53.118531,
+    "newLng": -3.826165,
+    "drift": 1.4,
+    "district": "Conwy",
+    "country": "Wales",
+    "files": [
+      "north-wales-coast-family-fun.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Castle Hotel, Conwy",
+    "type": "accommodation",
+    "oldLat": 53.2836,
+    "oldLng": -3.8284,
+    "postcode": "LL32 8BG",
+    "newLat": 53.282922,
+    "newLng": -3.829298,
+    "drift": 0.1,
+    "district": "Conwy",
+    "country": "Wales",
+    "files": [
+      "north-wales-coast-family-fun.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Home Cookin' Llandudno",
+    "type": "food",
+    "oldLat": 53.3243,
+    "oldLng": -3.8206,
+    "postcode": "LL30 1AT",
+    "newLat": 53.322695,
+    "newLng": -3.821615,
+    "drift": 0.2,
+    "district": "Conwy",
+    "country": "Wales",
+    "files": [
+      "north-wales-coast-family-fun.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Refectory",
+    "type": "food",
+    "oldLat": 51.8815,
+    "oldLng": -5.2665,
+    "postcode": "SA62 6SL",
+    "newLat": 51.881114,
+    "newLng": -5.266294,
+    "drift": 0,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-coasteering-break.json",
+      "pembrokeshire-island-hopping.json",
+      "romantic-adventure-escape.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Bishops Kitchen",
+    "type": "food",
+    "oldLat": 51.881,
+    "oldLng": -5.266,
+    "postcode": "SA62 6SE",
+    "newLat": 51.880856,
+    "newLng": -5.265898,
+    "drift": 0,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-family-coastal.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Mill Cafe St Justinians",
+    "type": "food",
+    "oldLat": 51.8693,
+    "oldLng": -5.3095,
+    "postcode": "SA62 6RS",
+    "newLat": 51.872789,
+    "newLng": -5.299983,
+    "drift": 0.8,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-family-coastal.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Preseli Venture Eco Lodge",
+    "type": "accommodation",
+    "oldLat": 51.902,
+    "oldLng": -5.075,
+    "postcode": "SA62 5AA",
+    "newLat": 51.904582,
+    "newLng": -5.07167,
+    "drift": 0.4,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-family-coastal.json",
+      "romantic-adventure-escape.json",
+      "wales-grand-tour.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Cafe Mor",
+    "type": "food",
+    "oldLat": 51.658,
+    "oldLng": -5.048,
+    "postcode": "SA71 5AG",
+    "newLat": 51.663629,
+    "newLng": -5.029768,
+    "drift": 1.4,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-family-coastal.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Mooring",
+    "type": "food",
+    "oldLat": 51.672,
+    "oldLng": -4.701,
+    "postcode": "SA70 7JD",
+    "newLat": 51.672133,
+    "newLng": -4.701269,
+    "drift": 0,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-island-hopping.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Shed Bistro",
+    "type": "food",
+    "oldLat": 51.9348,
+    "oldLng": -5.1838,
+    "postcode": "SA62 6DP",
+    "newLat": 51.932977,
+    "newLng": -5.181277,
+    "drift": 0.3,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-stag-hen-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Bishops",
+    "type": "food",
+    "oldLat": 51.881,
+    "oldLng": -5.265,
+    "postcode": "SA62 6SA",
+    "newLat": 51.881004,
+    "newLng": -5.26476,
+    "drift": 0,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-stag-hen-weekend.json",
+      "pembrokeshire-winter-coast.json",
+      "wales-grand-tour.json",
+      "wales-without-a-car.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Grain",
+    "type": "food",
+    "oldLat": 51.88,
+    "oldLng": -5.266,
+    "postcode": "SA62 6RB",
+    "newLat": 51.880081,
+    "newLng": -5.266583,
+    "drift": 0,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-stag-hen-weekend.json",
+      "romantic-adventure-escape.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Whitesands Beach Cafe",
+    "type": "food",
+    "oldLat": 51.892,
+    "oldLng": -5.303,
+    "postcode": "SA62 6PT",
+    "newLat": 51.892034,
+    "newLng": -5.290796,
+    "drift": 0.8,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-surf-week.json",
+      "wales-first-timer-sampler.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Refuel Cafe Bar",
+    "type": "food",
+    "oldLat": 51.881,
+    "oldLng": -5.266,
+    "postcode": "SA62 6SE",
+    "newLat": 51.880856,
+    "newLng": -5.265898,
+    "drift": 0,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-surf-week.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Duke of Edinburgh Inn",
+    "type": "food",
+    "oldLat": 51.858,
+    "oldLng": -5.12,
+    "postcode": "SA62 6AR",
+    "newLat": 51.855492,
+    "newLng": -5.116139,
+    "drift": 0.4,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-surf-week.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Newgale Campsite",
+    "type": "accommodation",
+    "oldLat": 51.858,
+    "oldLng": -5.12,
+    "postcode": "SA62 6AR",
+    "newLat": 51.855492,
+    "newLng": -5.116139,
+    "drift": 0.4,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-surf-week.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Hope & Anchor",
+    "type": "food",
+    "oldLat": 51.672,
+    "oldLng": -4.701,
+    "postcode": "SA70 7JD",
+    "newLat": 51.672133,
+    "newLng": -4.701269,
+    "drift": 0,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-surf-week.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Shed at Porthgain",
+    "type": "food",
+    "oldLat": 51.9348,
+    "oldLng": -5.1838,
+    "postcode": "SA62 6DP",
+    "newLat": 51.932977,
+    "newLng": -5.181277,
+    "drift": 0.3,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-winter-coast.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Whitesands Beach Cafe",
+    "type": "food",
+    "oldLat": 51.892,
+    "oldLng": -5.303,
+    "postcode": "SA62 6PT",
+    "newLat": 51.892034,
+    "newLng": -5.290796,
+    "drift": 0.8,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "pembrokeshire-winter-coast.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "YHA Snowdon Llanberis",
+    "type": "accommodation",
+    "oldLat": 53.122,
+    "oldLng": -4.131,
+    "postcode": "LL55 4HP",
+    "newLat": 53.122115,
+    "newLng": -4.130839,
+    "drift": 0,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "photography-adventure.json",
+      "snowdonia-adventure-weekend.json",
+      "snowdonia-dog-friendly.json",
+      "snowdonia-without-a-car.json",
+      "summit-challenge.json",
+      "wales-first-timer-sampler.json",
+      "wales-grand-tour.json",
+      "wales-without-a-car.json",
+      "winter-adventure.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Pebbles Yard Gallery & Cafe",
+    "type": "food",
+    "oldLat": 51.8915,
+    "oldLng": -5.3035,
+    "postcode": "SA62 6PY",
+    "newLat": 51.883845,
+    "newLng": -5.30216,
+    "drift": 0.9,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "romantic-adventure-escape.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Moel Siabod Cafe",
+    "type": "food",
+    "oldLat": 53.092,
+    "oldLng": -3.899,
+    "postcode": "LL24 0ED",
+    "newLat": 53.093737,
+    "newLng": -3.8951,
+    "drift": 0.3,
+    "district": "Conwy",
+    "country": "Wales",
+    "files": [
+      "snowdonia-adventure-weekend.json",
+      "snowdonia-dog-friendly.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "White Lion Royal Hotel",
+    "type": "food",
+    "oldLat": 52.9104,
+    "oldLng": -3.6512,
+    "postcode": "LL23 7SH",
+    "newLat": 52.916784,
+    "newLng": -3.673121,
+    "drift": 1.6,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "snowdonia-adventure-weekend.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Heights",
+    "type": "food",
+    "oldLat": 53.1251,
+    "oldLng": -4.1289,
+    "postcode": "LL55 4PX",
+    "newLat": 53.123721,
+    "newLng": -4.130052,
+    "drift": 0.2,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "snowdonia-dog-friendly.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Y Stablau - The Stables",
+    "type": "food",
+    "oldLat": 53.1045,
+    "oldLng": -3.8693,
+    "postcode": "LL24 0DS",
+    "newLat": 53.101241,
+    "newLng": -3.86911,
+    "drift": 0.4,
+    "district": "Conwy",
+    "country": "Wales",
+    "files": [
+      "snowdonia-dog-friendly.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Caffi Blaenau",
+    "type": "food",
+    "oldLat": 52.9942,
+    "oldLng": -3.9367,
+    "postcode": "LL41 3UD",
+    "newLat": 52.993606,
+    "newLng": -3.936621,
+    "drift": 0.1,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "snowdonia-rainy-day-plan.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Heights Hotel",
+    "type": "food",
+    "oldLat": 53.1167,
+    "oldLng": -4.1242,
+    "postcode": "LL55 4TP",
+    "newLat": 53.116517,
+    "newLng": -4.12315,
+    "drift": 0.1,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "snowdonia-rainy-day-plan.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Bala Spice",
+    "type": "food",
+    "oldLat": 52.9103,
+    "oldLng": -3.5971,
+    "postcode": "LL23 7RR",
+    "newLat": 52.910191,
+    "newLng": -3.597543,
+    "drift": 0,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "snowdonia-rainy-day-plan.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Hiker's Cafe",
+    "type": "food",
+    "oldLat": 53.0799,
+    "oldLng": -4.0196,
+    "postcode": "LL55 4NU",
+    "newLat": 53.080873,
+    "newLng": -4.020655,
+    "drift": 0.1,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "snowdonia-wild-camping-trail.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Wild Camp (Coed y Brenin)",
+    "type": "accommodation",
+    "oldLat": 52.822,
+    "oldLng": -3.869,
+    "postcode": "LL40 2HS",
+    "newLat": 52.822373,
+    "newLng": -3.878772,
+    "drift": 0.7,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "snowdonia-wild-camping-trail.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Coed y Brenin Cafe",
+    "type": "food",
+    "oldLat": 52.822,
+    "oldLng": -3.869,
+    "postcode": "LL40 2HS",
+    "newLat": 52.822373,
+    "newLng": -3.878772,
+    "drift": 0.7,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "snowdonia-wild-camping-trail.json",
+      "snowdonia-zip-world-tour.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Nant Ddu Lodge Hotel",
+    "type": "food",
+    "oldLat": 51.845,
+    "oldLng": -3.392,
+    "postcode": "CF48 2UT",
+    "newLat": 51.833451,
+    "newLng": -3.382073,
+    "drift": 1.5,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "solo-traveler-trail.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Grawen Camping",
+    "type": "accommodation",
+    "oldLat": 51.758,
+    "oldLng": -3.362,
+    "postcode": "CF48 3DA",
+    "newLat": 51.758362,
+    "newLng": -3.362002,
+    "drift": 0,
+    "district": "Merthyr Tydfil",
+    "country": "Wales",
+    "files": [
+      "solo-traveler-trail.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Llangorse Lake Cafe",
+    "type": "food",
+    "oldLat": 51.923,
+    "oldLng": -3.26,
+    "postcode": "LD3 7PX",
+    "newLat": 51.917391,
+    "newLng": -3.263354,
+    "drift": 0.7,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "solo-traveler-trail.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "YHA Llanbedr",
+    "type": "accommodation",
+    "oldLat": 52.01,
+    "oldLng": -3.14,
+    "postcode": "HR3 5QJ",
+    "newLat": 52.01997,
+    "newLng": -3.137441,
+    "drift": 1.1,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "solo-traveler-trail.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Bridge Inn",
+    "type": "food",
+    "oldLat": 51.915,
+    "oldLng": -3.21,
+    "postcode": "NP8 1RS",
+    "newLat": 51.905607,
+    "newLng": -3.212567,
+    "drift": 1.1,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "solo-traveler-trail.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The New Inn, Pontsticill",
+    "type": "accommodation",
+    "oldLat": 51.7868,
+    "oldLng": -3.3709,
+    "postcode": "CF48 2TU",
+    "newLat": 51.789051,
+    "newLng": -3.372017,
+    "drift": 0.3,
+    "district": "Merthyr Tydfil",
+    "country": "Wales",
+    "files": [
+      "south-wales-bikepark-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The New Inn Restaurant",
+    "type": "food",
+    "oldLat": 51.7868,
+    "oldLng": -3.3709,
+    "postcode": "CF48 2TU",
+    "newLat": 51.789051,
+    "newLng": -3.372017,
+    "drift": 0.3,
+    "district": "Merthyr Tydfil",
+    "country": "Wales",
+    "files": [
+      "south-wales-bikepark-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Red House, Merthyr Tydfil",
+    "type": "food",
+    "oldLat": 51.7477,
+    "oldLng": -3.3795,
+    "postcode": "CF47 8UX",
+    "newLat": 51.747499,
+    "newLng": -3.379044,
+    "drift": 0,
+    "district": "Merthyr Tydfil",
+    "country": "Wales",
+    "files": [
+      "south-wales-bikepark-weekend.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Red Dragon, Penderyn",
+    "type": "food",
+    "oldLat": 51.8163,
+    "oldLng": -3.4817,
+    "postcode": "",
+    "newLat": 0,
+    "newLng": 0,
+    "drift": 0,
+    "district": "",
+    "country": "",
+    "files": [
+      "south-wales-day-trip-cardiff.json"
+    ],
+    "status": "no_postcode"
+  },
+  {
+    "title": "The Aberglais Inn, Pant",
+    "type": "food",
+    "oldLat": 51.7504,
+    "oldLng": -3.3417,
+    "postcode": "CF48 4AH",
+    "newLat": 51.743551,
+    "newLng": -3.352041,
+    "drift": 1,
+    "district": "Merthyr Tydfil",
+    "country": "Wales",
+    "files": [
+      "south-wales-day-trip-cardiff.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Pen-y-Pass Cafe",
+    "type": "food",
+    "oldLat": 53.08,
+    "oldLng": -4.02,
+    "postcode": "LL55 4NU",
+    "newLat": 53.080873,
+    "newLng": -4.020655,
+    "drift": 0.1,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "summit-challenge.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Ogwen Snack Bar",
+    "type": "food",
+    "oldLat": 53.125,
+    "oldLng": -3.988,
+    "postcode": "",
+    "newLat": 0,
+    "newLng": 0,
+    "drift": 0,
+    "district": "",
+    "country": "",
+    "files": [
+      "summit-challenge.json"
+    ],
+    "status": "no_postcode"
+  },
+  {
+    "title": "Plas Coch Hotel",
+    "type": "food",
+    "oldLat": 52.9103,
+    "oldLng": -3.5906,
+    "postcode": "LL23 7HA",
+    "newLat": 52.909385,
+    "newLng": -3.591283,
+    "drift": 0.1,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "wales-first-timer-sampler.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Plassey Caravan Park Restaurant",
+    "type": "food",
+    "oldLat": 53.0066,
+    "oldLng": -3.0951,
+    "postcode": "LL14 1UG",
+    "newLat": 53.010992,
+    "newLng": -3.090813,
+    "drift": 0.6,
+    "district": "Wrexham",
+    "country": "Wales",
+    "files": [
+      "wales-grand-tour.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Accommodation near Brecon Beacons (to be added)",
+    "type": "accommodation",
+    "oldLat": 51.9481,
+    "oldLng": -3.3946,
+    "postcode": "LD3 9AN",
+    "newLat": 51.948041,
+    "newLng": -3.393422,
+    "drift": 0.1,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "wales-grand-tour.json",
+      "wales-grand-tour.json",
+      "wales-grand-tour.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Old Ford Inn",
+    "type": "food",
+    "oldLat": 51.9348,
+    "oldLng": -3.3227,
+    "postcode": "LD3 7YA",
+    "newLat": 51.933254,
+    "newLng": -3.326128,
+    "drift": 0.3,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "wales-grand-tour.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Accommodation near Gower Peninsula (to be added)",
+    "type": "accommodation",
+    "oldLat": 51.591,
+    "oldLng": -4.0458,
+    "postcode": "SA3 3JN",
+    "newLat": 51.58606,
+    "newLng": -4.044194,
+    "drift": 0.6,
+    "district": "Swansea",
+    "country": "Wales",
+    "files": [
+      "wales-grand-tour.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Rock Inn",
+    "type": "food",
+    "oldLat": 51.7301,
+    "oldLng": -3.313,
+    "postcode": "CF48 4AQ",
+    "newLat": 51.732656,
+    "newLng": -3.320929,
+    "drift": 0.6,
+    "district": "Merthyr Tydfil",
+    "country": "Wales",
+    "files": [
+      "wales-grand-tour.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Butchers Arms",
+    "type": "food",
+    "oldLat": 51.5535,
+    "oldLng": -3.2178,
+    "postcode": "CF83 1NB",
+    "newLat": 51.552602,
+    "newLng": -3.215273,
+    "drift": 0.2,
+    "district": "Cardiff",
+    "country": "Wales",
+    "files": [
+      "wales-grand-tour.json",
+      "wye-valley-family-adventure.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Cafe Coed y Brenin",
+    "type": "food",
+    "oldLat": 52.822,
+    "oldLng": -3.869,
+    "postcode": "LL40 2HS",
+    "newLat": 52.822373,
+    "newLng": -3.878772,
+    "drift": 0.7,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "wales-under-50-budget.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Wild Camping near Llyn Ogwen",
+    "type": "accommodation",
+    "oldLat": 53.1239,
+    "oldLng": -4.0012,
+    "postcode": "LL57 3LZ",
+    "newLat": 53.123302,
+    "newLng": -4.020493,
+    "drift": 1.3,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "wales-under-50-budget.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "Baravin",
+    "type": "food",
+    "oldLat": 52.4144,
+    "oldLng": -4.0835,
+    "postcode": "SY23 1HS",
+    "newLat": 52.414586,
+    "newLng": -4.083621,
+    "drift": 0,
+    "district": "Ceredigion",
+    "country": "Wales",
+    "files": [
+      "wales-without-a-car.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Aberystwyth Accommodation (Independent)",
+    "type": "accommodation",
+    "oldLat": 52.4144,
+    "oldLng": -4.0835,
+    "postcode": "SY23 1HS",
+    "newLat": 52.414586,
+    "newLng": -4.083621,
+    "drift": 0,
+    "district": "Ceredigion",
+    "country": "Wales",
+    "files": [
+      "wales-without-a-car.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Gourmet Pig",
+    "type": "food",
+    "oldLat": 51.9549,
+    "oldLng": -4.9851,
+    "postcode": "SA65 9RL",
+    "newLat": 51.953708,
+    "newLng": -4.989248,
+    "drift": 0.3,
+    "district": "Pembrokeshire",
+    "country": "Wales",
+    "files": [
+      "wales-without-a-car.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Builth Wells Accommodation (independent)",
+    "type": "accommodation",
+    "oldLat": 52.1595,
+    "oldLng": -3.4087,
+    "postcode": "LD2 3TA",
+    "newLat": 52.158117,
+    "newLng": -3.409958,
+    "drift": 0.2,
+    "district": "Powys",
+    "country": "Wales",
+    "files": [
+      "wales-without-a-car.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Shrewsbury Coffee House",
+    "type": "food",
+    "oldLat": 52.7088,
+    "oldLng": -2.7555,
+    "postcode": "SY1 1PQ",
+    "newLat": 52.709065,
+    "newLng": -2.75532,
+    "drift": 0,
+    "district": "Shropshire",
+    "country": "England",
+    "files": [
+      "wales-without-a-car.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Pengwern Arms",
+    "type": "food",
+    "oldLat": 52.9669,
+    "oldLng": -3.8986,
+    "postcode": "LL41 4RF",
+    "newLat": 52.971518,
+    "newLng": -3.913175,
+    "drift": 1.1,
+    "district": "Gwynedd",
+    "country": "Wales",
+    "files": [
+      "winter-adventure.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The Saracen's Head Inn",
+    "type": "food",
+    "oldLat": 51.8428,
+    "oldLng": -2.6019,
+    "postcode": "GL16 7EU",
+    "newLat": 51.839173,
+    "newLng": -2.601496,
+    "drift": 0.4,
+    "district": "Forest of Dean",
+    "country": "England",
+    "files": [
+      "wye-valley-autumn-trail.json",
+      "wye-valley-canoe-and-climb.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Wild Hare, Tintern",
+    "type": "accommodation",
+    "oldLat": 51.6911,
+    "oldLng": -2.6769,
+    "postcode": "NP16 6SH",
+    "newLat": 51.696551,
+    "newLng": -2.675942,
+    "drift": 0.6,
+    "district": "Monmouthshire",
+    "country": "Wales",
+    "files": [
+      "wye-valley-autumn-trail.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The George Inn, Redbrook",
+    "type": "food",
+    "oldLat": 51.7994,
+    "oldLng": -2.6522,
+    "postcode": "GL16 8PE",
+    "newLat": 51.802287,
+    "newLng": -2.665397,
+    "drift": 1,
+    "district": "Forest of Dean",
+    "country": "England",
+    "files": [
+      "wye-valley-autumn-trail.json"
+    ],
+    "status": "updated"
+  },
+  {
+    "title": "The King's Head Hotel, Monmouth",
+    "type": "accommodation",
+    "oldLat": 51.8128,
+    "oldLng": -2.7152,
+    "postcode": "NP25 3XE",
+    "newLat": 51.81265,
+    "newLng": -2.71503,
+    "drift": 0,
+    "district": "Monmouthshire",
+    "country": "Wales",
+    "files": [
+      "wye-valley-canoe-and-climb.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "Old Station Tintern",
+    "type": "food",
+    "oldLat": 51.6989,
+    "oldLng": -2.6821,
+    "postcode": "NP16 6SE",
+    "newLat": 51.699298,
+    "newLng": -2.682928,
+    "drift": 0.1,
+    "district": "Monmouthshire",
+    "country": "Wales",
+    "files": [
+      "wye-valley-canoe-and-climb.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Saracens Head Inn",
+    "type": "food",
+    "oldLat": 51.9176,
+    "oldLng": -2.6643,
+    "postcode": "HR2 8LG",
+    "newLat": 51.920139,
+    "newLng": -2.66945,
+    "drift": 0.5,
+    "district": "Herefordshire, County of",
+    "country": "England",
+    "files": [
+      "wye-valley-family-adventure.json"
+    ],
+    "status": "ok"
+  },
+  {
+    "title": "The Wyndham Arms",
+    "type": "accommodation",
+    "oldLat": 51.7614,
+    "oldLng": -2.6786,
+    "postcode": "NP25 4TT",
+    "newLat": 51.756341,
+    "newLng": -2.674834,
+    "drift": 0.6,
+    "district": "Monmouthshire",
+    "country": "Wales",
+    "files": [
+      "wye-valley-family-adventure.json"
+    ],
+    "status": "updated"
+  }
+]

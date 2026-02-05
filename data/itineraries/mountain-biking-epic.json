@@ -74,7 +74,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Llyn Cynwch",
         "description": "Enjoy your own sandwiches with a view of the lake near Dolgellau."
-      }
+      },
+      "postcode": "LL40 2HA"
     },
     {
       "day": 1,
@@ -121,7 +122,8 @@
         "description": "Wild camping is generally not permitted but find a paid campsite near Ffestiniog.",
         "costFrom": 15,
         "costTo": 25
-      }
+      },
+      "postcode": "LL41 3PY"
     },
     {
       "day": 2,
@@ -159,8 +161,8 @@
       "description": "A comfortable and bike-friendly bunkhouse in Brecon Beacons.",
       "costFrom": 25,
       "costTo": 45,
-      "lat": 51.94,
-      "lng": -3.43,
+      "lat": 51.942573,
+      "lng": -3.438339,
       "travelToNext": "45min drive to Llandegla Forest",
       "travelMode": "drive",
       "budgetAlt": {
@@ -168,7 +170,8 @@
         "description": "Wild camping is generally not permitted but find a paid campsite near Brecon Beacons.",
         "costFrom": 15,
         "costTo": 25
-      }
+      },
+      "postcode": "LD3 8PD"
     },
     {
       "day": 3,
@@ -215,7 +218,8 @@
         "description": "Wild camping is generally not permitted but find a paid campsite near Bala.",
         "costFrom": 15,
         "costTo": 25
-      }
+      },
+      "postcode": "LL23 7HA"
     },
     {
       "day": 4,

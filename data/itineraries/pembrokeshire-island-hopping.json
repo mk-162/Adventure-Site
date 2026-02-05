@@ -75,7 +75,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Whitesands Beach",
         "description": "Enjoy your own picnic at Whitesands Beach with stunning views."
-      }
+      },
+      "postcode": "SA62 6SL"
     },
     {
       "day": 1,
@@ -122,7 +123,8 @@
         "description": "Find a spot and camp along the coast.",
         "costFrom": 0,
         "costTo": 0
-      }
+      },
+      "postcode": "SA62 6SE"
     },
     {
       "day": 2,
@@ -168,7 +170,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Barafundle Bay",
         "description": "Enjoy a picnic at the beautiful Barafundle Bay."
-      }
+      },
+      "postcode": "SA71 5DA"
     },
     {
       "day": 2,
@@ -206,8 +209,8 @@
       "description": "Cottages and camping facilities near Stackpole Quay, offering a comfortable base for exploring the area.",
       "costFrom": 80,
       "costTo": 200,
-      "lat": 51.616,
-      "lng": -4.891,
+      "lat": 51.626142,
+      "lng": -4.900882,
       "travelToNext": "30min drive to Tenby",
       "travelMode": "drive",
       "budgetAlt": {
@@ -215,7 +218,8 @@
         "description": "Campsite close to Broadhaven South Beach.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "SA71 5LS"
     },
     {
       "day": 3,
@@ -261,7 +265,8 @@
       "budgetAlt": {
         "title": "Picnic on Castle Beach",
         "description": "Enjoy a picnic on Castle Beach in Tenby."
-      }
+      },
+      "postcode": "SA70 7JD"
     },
     {
       "day": 3,

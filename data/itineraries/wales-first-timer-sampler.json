@@ -77,7 +77,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Llyn Padarn",
         "description": "Enjoy your own picnic by the beautiful Llyn Padarn lake in Llanberis."
-      }
+      },
+      "postcode": "LL55 4SL"
     },
     {
       "day": 1,
@@ -124,7 +125,8 @@
         "description": "Camping near Llanberis",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "LL55 4HP"
     },
     {
       "day": 2,
@@ -170,7 +172,8 @@
       "budgetAlt": {
         "title": "Picnic by Llyn Tegid",
         "description": "Enjoy your own packed lunch by the lake."
-      }
+      },
+      "postcode": "LL23 7HA"
     },
     {
       "day": 2,
@@ -205,7 +208,8 @@
         "description": "Camping with stunning coastal views near St Davids.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "SA62 6SE"
     },
     {
       "day": 3,
@@ -244,14 +248,15 @@
       "description": "Beach cafe with a great view serving lunch",
       "costFrom": 10,
       "costTo": 20,
-      "lat": 51.892,
-      "lng": -5.303,
+      "lat": 51.892034,
+      "lng": -5.290796,
       "travelToNext": "Walk along Whitesands beach",
       "travelMode": "walk",
       "budgetAlt": {
         "title": "Picnic on Whitesands Beach",
         "description": "Bring your own packed lunch to enjoy on the beach."
-      }
+      },
+      "postcode": "SA62 6PT"
     },
     {
       "day": 3,
@@ -304,8 +309,8 @@
       "description": "Adventure Hotel in Capel Curig, 10 mins from Betws-y-Coed.",
       "costFrom": 80,
       "costTo": 150,
-      "lat": 53.096,
-      "lng": -3.91,
+      "lat": 53.102823,
+      "lng": -3.907092,
       "travelToNext": "Short drive",
       "travelMode": "drive",
       "budgetAlt": {
@@ -313,7 +318,8 @@
         "description": "Budget accommodation near Snowdon",
         "costFrom": 25,
         "costTo": 40
-      }
+      },
+      "postcode": "LL24 0EL"
     },
     {
       "day": 4,
@@ -359,7 +365,8 @@
       "budgetAlt": {
         "title": "Picnic by the River Conwy",
         "description": "Enjoy a picnic by the picturesque River Conwy in Betws-y-Coed."
-      }
+      },
+      "postcode": "LL24 0AE"
     },
     {
       "day": 4,

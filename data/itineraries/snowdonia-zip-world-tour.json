@@ -76,7 +76,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Llyn Padarn",
         "description": "Enjoy a picnic lunch with views of the lake and Dolbadarn Castle."
-      }
+      },
+      "postcode": "LL55 4SL"
     },
     {
       "day": 1,
@@ -123,7 +124,8 @@
         "description": "Camping at the foot of Snowdon, offering basic facilities and stunning views.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "LL41 3PY"
     },
     {
       "day": 2,
@@ -169,7 +171,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Gwydir Forest",
         "description": "Find a secluded spot for a picnic surrounded by nature."
-      }
+      },
+      "postcode": "LL24 0AE"
     },
     {
       "day": 2,
@@ -216,7 +219,8 @@
         "description": "Save money by booking a bed in a shared dormitory.",
         "costFrom": 20,
         "costTo": 25
-      }
+      },
+      "postcode": "LL23 7HA"
     },
     {
       "day": 3,
@@ -255,14 +259,15 @@
       "description": "A cafe located at Coed y Brenin Forest Park visitor center.",
       "costFrom": 10,
       "costTo": 20,
-      "lat": 52.822,
-      "lng": -3.869,
+      "lat": 52.822373,
+      "lng": -3.878772,
       "travelToNext": "2h drive",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed lunch at a scenic spot",
         "description": "Enjoy a picnic lunch with views of the lake and mountains."
-      }
+      },
+      "postcode": "LL40 2HS"
     },
     {
       "day": 3,

@@ -75,7 +75,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Llyn Padarn",
         "description": "Enjoy your own packed lunch with stunning views of Llyn Padarn."
-      }
+      },
+      "postcode": "LL55 4SL"
     },
     {
       "day": 1,
@@ -122,7 +123,8 @@
         "description": "Camping in Llanberis - bring your own tent!",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "LL55 4HP"
     },
     {
       "day": 2,
@@ -168,7 +170,8 @@
       "budgetAlt": {
         "title": "Picnic by the River Llugwy",
         "description": "Enjoy your packed dinner at a scenic spot by the river."
-      }
+      },
+      "postcode": "LL24 0AE"
     },
     {
       "day": 2,
@@ -179,8 +182,8 @@
       "description": "Adventure centre near Betws-y-Coed; it's a bit further by bus but offers a higher standard of accommodation at a reasonable price.",
       "costFrom": 80,
       "costTo": 150,
-      "lat": 53.096,
-      "lng": -3.91,
+      "lat": 53.102823,
+      "lng": -3.907092,
       "travelToNext": "45 min bus and train to Dolgellau",
       "travelMode": "bus + train",
       "budgetAlt": {
@@ -188,7 +191,8 @@
         "description": "Campsite with basic facilities; much cheaper than hotels.",
         "costFrom": 15,
         "costTo": 25
-      }
+      },
+      "postcode": "LL24 0EL"
     },
     {
       "day": 3,
@@ -234,7 +238,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Coed y Brenin",
         "description": "Enjoy your own packed lunch amidst the trees."
-      }
+      },
+      "postcode": "LL40 2HG"
     },
     {
       "day": 3,

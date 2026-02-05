@@ -41,7 +41,7 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
         <div className="flex items-center gap-4">
           {/* Date Badge */}
           <div className="w-14 text-center flex-shrink-0">
-            <div className="text-xs font-semibold text-[#f97316] uppercase">
+            <div className="text-xs font-semibold text-[#ea580c] uppercase">
               {date.month}
             </div>
             <div className="text-2xl font-bold text-[#1e3a4c]">
@@ -67,7 +67,7 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
           )}
           <Link
             href={`/events/${event.slug}`}
-            className="px-4 py-2 border border-gray-200 text-sm font-medium text-gray-700 rounded-full hover:border-[#f97316] hover:text-[#f97316] transition-colors"
+            className="px-4 py-2 border border-gray-200 text-sm font-medium text-gray-700 rounded-full hover:border-[#ea580c] hover:text-[#ea580c] transition-colors"
           >
             Details
           </Link>
@@ -86,7 +86,7 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
         <div className="relative h-48 bg-gradient-to-br from-[#1e3a4c] to-[#2d5066]">
           {/* Date Badge */}
           <div className="absolute top-4 left-4 bg-white rounded-lg px-3 py-2 text-center">
-            <div className="text-xs font-semibold text-[#f97316] uppercase">
+            <div className="text-xs font-semibold text-[#ea580c] uppercase">
               {date.month}
             </div>
             <div className="text-xl font-bold text-[#1e3a4c]">
@@ -99,7 +99,7 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
         </div>
 
         <div className="p-4">
-          <h3 className="font-bold text-lg text-[#1e3a4c] group-hover:text-[#f97316] transition-colors mb-2">
+          <h3 className="font-bold text-lg text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors mb-2">
             {event.name}
           </h3>
 
@@ -136,7 +136,7 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
       {/* Header with date */}
       <div className="bg-[#1e3a4c] p-4 flex items-center gap-4">
         <div className="bg-white rounded-lg px-3 py-2 text-center">
-          <div className="text-xs font-semibold text-[#f97316] uppercase">
+          <div className="text-xs font-semibold text-[#ea580c] uppercase">
             {date.month}
           </div>
           <div className="text-xl font-bold text-[#1e3a4c]">
@@ -144,7 +144,7 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
           </div>
         </div>
         <div className="flex-1">
-          <h3 className="font-bold text-white group-hover:text-[#f97316] transition-colors line-clamp-1">
+          <h3 className="font-bold text-white group-hover:text-[#ea580c] transition-colors line-clamp-1">
             {event.name}
           </h3>
           <p className="text-white/70 text-sm flex items-center gap-1">

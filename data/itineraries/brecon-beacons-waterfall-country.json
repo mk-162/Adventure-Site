@@ -75,7 +75,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Pontneddfechan picnic site",
         "description": "Enjoy your own food at the scenic picnic area near the village."
-      }
+      },
+      "postcode": "CF44 9JE"
     },
     {
       "day": 1,
@@ -113,8 +114,8 @@
       "description": "A well-maintained campsite located close to the waterfalls, ideal for experiencing the natural beauty of the area.",
       "costFrom": 15,
       "costTo": 25,
-      "lat": 51.809,
-      "lng": -3.57,
+      "lat": 51.807193,
+      "lng": -3.57799,
       "travelToNext": "25 min drive via A4059",
       "travelMode": "drive",
       "budgetAlt": {
@@ -122,7 +123,8 @@
         "description": "If you are experienced and responsible, you can obtain a permit for wild camping in certain areas.",
         "costFrom": 0,
         "costTo": 0
-      }
+      },
+      "postcode": "CF44 9JG"
     },
     {
       "day": 1,
@@ -141,7 +143,8 @@
       "budgetAlt": {
         "title": "Cook your own at the campsite",
         "description": "Prepare a simple meal using your camping stove and supplies."
-      }
+      },
+      "postcode": "CF44 9JE"
     },
     {
       "day": 2,

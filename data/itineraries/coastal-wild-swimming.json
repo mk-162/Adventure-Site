@@ -78,7 +78,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Porthgain Harbour",
         "description": "Enjoy your own picnic overlooking the picturesque harbour at Porthgain."
-      }
+      },
+      "postcode": "SA62 6DP"
     },
     {
       "day": 1,
@@ -125,7 +126,8 @@
         "description": "A scenic campsite overlooking the coast near Porthclais harbour.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "SA62 6SE"
     },
     {
       "day": 2,
@@ -171,7 +173,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Stackpole Estate",
         "description": "Enjoy a picnic lunch amidst the beautiful grounds of Stackpole Estate."
-      }
+      },
+      "postcode": "SA71 5DA"
     },
     {
       "day": 2,
@@ -209,8 +212,8 @@
       "description": "Cottages and camping available at this National Trust centre within Stackpole Estate. Perfect for nature lovers.",
       "costFrom": 80,
       "costTo": 200,
-      "lat": 51.616,
-      "lng": -4.891,
+      "lat": 51.626142,
+      "lng": -4.900882,
       "travelToNext": "5min drive via minor roads",
       "travelMode": "drive",
       "budgetAlt": {
@@ -218,7 +221,8 @@
         "description": "A campsite with basic facilities near the beach in Broadhaven.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "SA71 5LS"
     },
     {
       "day": 3,
@@ -264,7 +268,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Marloes Sands",
         "description": "Enjoy a picnic lunch overlooking the dramatic cliffs and golden sands of Marloes Sands."
-      }
+      },
+      "postcode": "SA62 3QS"
     },
     {
       "day": 3,
@@ -311,7 +316,7 @@
     }
   },
   "knowBeforeYouGo": {
-    "weather": "Pembrokeshire weather is unpredictable. Pack for all conditions, even in summer. Sea temperatures are usually cool, around 14-17\u00b0C in summer. Check tide times before swimming.",
+    "weather": "Pembrokeshire weather is unpredictable. Pack for all conditions, even in summer. Sea temperatures are usually cool, around 14-17°C in summer. Check tide times before swimming.",
     "traffic": "Traffic can be heavy in peak season, especially around St Davids and Tenby. Parking can be challenging, arrive early or use park and ride schemes where available. The A40 is prone to congestion.",
     "booking": "Book guided activities and accommodation well in advance, especially for summer months. Some campsites require pre-booking.",
     "fitness": "This trip requires a moderate level of fitness. Be prepared for short coastal walks, swimming in open water, and potentially some scrambling over rocks."

@@ -102,7 +102,7 @@ export function FavouriteButton({ type, id, className = "", size = "md" }: Favou
             </p>
             <Link
               href="/login"
-              className="block w-full bg-[#f97316] hover:bg-orange-600 text-white font-bold py-3 rounded-lg transition-colors mb-3"
+              className="block w-full bg-[#ea580c] hover:bg-orange-600 text-white font-bold py-3 rounded-lg transition-colors mb-3"
             >
               Sign up free
             </Link>

@@ -130,7 +130,7 @@ export function ThingsToBook({ stops, itinerarySlug, mode }: ThingsToBookProps) 
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  className="shrink-0 text-[#f97316] hover:text-[#ea580c] p-1 rounded-md hover:bg-orange-50 transition-colors"
+                  className="shrink-0 text-[#ea580c] hover:text-[#ea580c] p-1 rounded-md hover:bg-orange-50 transition-colors"
                   title="Book now"
                 >
                   <ExternalLink className="w-4 h-4" />

@@ -84,7 +84,7 @@ export function MarkdownRenderer({ content }: { content: string }) {
     // Links [text](url)
     text = text.replace(
       /\[([^\]]+)\]\(([^\)]+)\)/g,
-      '<a href="$2" class="text-[#f97316] hover:underline font-semibold">$1</a>'
+      '<a href="$2" class="text-[#ea580c] hover:underline font-semibold">$1</a>'
     );
     
     // Code `text`

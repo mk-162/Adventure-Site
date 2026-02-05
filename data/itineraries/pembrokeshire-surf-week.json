@@ -72,14 +72,15 @@
       "description": "Enjoy a casual lunch with stunning views of Whitesands Bay. Offers sandwiches, burgers, and hot drinks.",
       "costFrom": 10,
       "costTo": 20,
-      "lat": 51.892,
-      "lng": -5.303,
+      "lat": 51.892034,
+      "lng": -5.290796,
       "travelToNext": "20min drive via A487",
       "travelMode": "drive",
       "budgetAlt": {
         "title": "Packed Lunch at Porthgain Harbour",
         "description": "Enjoy your own packed lunch with views of the picturesque Porthgain Harbour."
-      }
+      },
+      "postcode": "SA62 6PT"
     },
     {
       "day": 1,
@@ -126,7 +127,8 @@
         "description": "Camping option near Porthclais Harbour with stunning views. Basic facilities available.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "SA62 6SE"
     },
     {
       "day": 2,
@@ -172,7 +174,8 @@
       "budgetAlt": {
         "title": "Packed Lunch at Abereiddy Blue Lagoon",
         "description": "Bring your own lunch and enjoy it with views of the stunning Blue Lagoon."
-      }
+      },
+      "postcode": "SA62 6SE"
     },
     {
       "day": 2,
@@ -219,7 +222,8 @@
         "description": "Camping option near Porthclais Harbour with stunning views. Basic facilities available.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "SA62 6SE"
     },
     {
       "day": 3,
@@ -265,7 +269,8 @@
       "budgetAlt": {
         "title": "Picnic at Barafundle Bay",
         "description": "Pack a lunch and enjoy a picnic on the beach at Barafundle Bay."
-      }
+      },
+      "postcode": "SA71 5DA"
     },
     {
       "day": 3,
@@ -303,8 +308,8 @@
       "description": "Stay in a cottage or camp at the Stackpole Centre, a great base for exploring the area.",
       "costFrom": 80,
       "costTo": 200,
-      "lat": 51.616,
-      "lng": -4.891,
+      "lat": 51.626142,
+      "lng": -4.900882,
       "travelToNext": "40 min drive to Newgale",
       "travelMode": "drive",
       "budgetAlt": {
@@ -312,7 +317,8 @@
         "description": "Pitch your tent at the campsite.",
         "costFrom": 20,
         "costTo": 30
-      }
+      },
+      "postcode": "SA71 5LS"
     },
     {
       "day": 4,
@@ -358,7 +364,8 @@
       "budgetAlt": {
         "title": "Packed Lunch on Newgale Beach",
         "description": "Enjoy a packed lunch with amazing views."
-      }
+      },
+      "postcode": "SA62 6AR"
     },
     {
       "day": 4,
@@ -405,7 +412,8 @@
         "description": "Wild camping (only for those experienced)",
         "costFrom": 0,
         "costTo": 0
-      }
+      },
+      "postcode": "SA62 6AR"
     },
     {
       "day": 5,
@@ -451,7 +459,8 @@
       "budgetAlt": {
         "title": "Picnic in Tenby",
         "description": "Enjoy a final picnic."
-      }
+      },
+      "postcode": "SA70 7JD"
     },
     {
       "day": 5,

@@ -75,7 +75,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Rhossili Bay",
         "description": "Enjoy your sandwiches with stunning ocean views."
-      }
+      },
+      "postcode": "SA3 1PN"
     },
     {
       "day": 1,
@@ -113,8 +114,8 @@
       "description": "A charming hotel in Reynoldston, offering comfortable rooms and a traditional pub atmosphere.",
       "costFrom": 100,
       "costTo": 200,
-      "lat": 51.5941,
-      "lng": -4.1841,
+      "lat": 51.586838,
+      "lng": -4.188504,
       "travelToNext": "10 min drive to Three Cliffs Bay",
       "travelMode": "drive",
       "budgetAlt": {
@@ -122,7 +123,8 @@
         "description": "Camp under the stars near Llangennith Beach.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "SA3 1AG"
     },
     {
       "day": 1,
@@ -134,14 +136,15 @@
       "description": "Enjoy a hearty Welsh meal at the hotel's restaurant.",
       "costFrom": 25,
       "costTo": 40,
-      "lat": 51.5941,
-      "lng": -4.1841,
+      "lat": 51.586838,
+      "lng": -4.188504,
       "travelToNext": "0 min ",
       "travelMode": "walk",
       "budgetAlt": {
         "title": "Picnic dinner at the hotel",
         "description": "Pick up supplies at local shop."
-      }
+      },
+      "postcode": "SA3 1AG"
     },
     {
       "day": 2,
@@ -187,7 +190,8 @@
       "budgetAlt": {
         "title": "Packed lunch on Oxwich Bay",
         "description": "Enjoy your sandwiches with a beautiful view of the sea."
-      }
+      },
+      "postcode": "SA3 1LS"
     },
     {
       "day": 2,

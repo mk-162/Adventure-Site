@@ -20,7 +20,7 @@ export function ClaimListingBanner({
     return (
       <div className="bg-gradient-to-br from-[#1e3a4c] to-[#2d5a73] rounded-xl p-5 text-white">
         <div className="flex items-center gap-2 mb-3">
-          <Shield className="w-5 h-5 text-[#f97316]" />
+          <Shield className="w-5 h-5 text-[#ea580c]" />
           <span className="font-bold text-sm">Is this your business?</span>
         </div>
         <p className="text-white/80 text-xs leading-relaxed mb-4">
@@ -28,21 +28,21 @@ export function ClaimListingBanner({
         </p>
         <ul className="space-y-1.5 mb-4">
           <li className="flex items-center gap-2 text-xs text-white/90">
-            <CheckCircle className="w-3.5 h-3.5 text-[#f97316] shrink-0" />
+            <CheckCircle className="w-3.5 h-3.5 text-[#ea580c] shrink-0" />
             Update your description &amp; photos
           </li>
           <li className="flex items-center gap-2 text-xs text-white/90">
-            <CheckCircle className="w-3.5 h-3.5 text-[#f97316] shrink-0" />
+            <CheckCircle className="w-3.5 h-3.5 text-[#ea580c] shrink-0" />
             Get enquiry notifications
           </li>
           <li className="flex items-center gap-2 text-xs text-white/90">
-            <CheckCircle className="w-3.5 h-3.5 text-[#f97316] shrink-0" />
+            <CheckCircle className="w-3.5 h-3.5 text-[#ea580c] shrink-0" />
             Free to claim — upgrade anytime
           </li>
         </ul>
         <Link
           href={`/claim/${operatorSlug}`}
-          className="block w-full text-center px-4 py-2.5 bg-[#f97316] hover:bg-[#ea580c] text-white text-sm font-semibold rounded-lg transition-colors"
+          className="block w-full text-center px-4 py-2.5 bg-[#ea580c] hover:bg-[#ea580c] text-white text-sm font-semibold rounded-lg transition-colors"
         >
           Claim Listing
         </Link>
@@ -71,12 +71,12 @@ export function ClaimListingBanner({
 
   // Full variant — prominent banner for stub pages
   return (
-    <div className={`rounded-2xl overflow-hidden ${isStub ? "border-2 border-[#f97316]" : "border border-gray-200"}`}>
+    <div className={`rounded-2xl overflow-hidden ${isStub ? "border-2 border-[#ea580c]" : "border border-gray-200"}`}>
       <div className="bg-gradient-to-r from-[#1e3a4c] via-[#1e3a4c] to-[#2d5a73] p-6 sm:p-8">
         <div className="flex flex-col sm:flex-row gap-6 items-start">
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-2">
-              {isStub && <Sparkles className="w-5 h-5 text-[#f97316]" />}
+              {isStub && <Sparkles className="w-5 h-5 text-[#ea580c]" />}
               <h3 className="text-white font-bold text-lg">
                 {isStub ? "This listing needs your help!" : `Own ${operatorName}?`}
               </h3>
@@ -88,25 +88,25 @@ export function ClaimListingBanner({
             </p>
             <div className="flex flex-wrap gap-x-6 gap-y-2 mb-5">
               <div className="flex items-center gap-1.5 text-white/90 text-xs">
-                <CheckCircle className="w-4 h-4 text-[#f97316]" />
+                <CheckCircle className="w-4 h-4 text-[#ea580c]" />
                 Free to claim
               </div>
               <div className="flex items-center gap-1.5 text-white/90 text-xs">
-                <CheckCircle className="w-4 h-4 text-[#f97316]" />
+                <CheckCircle className="w-4 h-4 text-[#ea580c]" />
                 Edit your listing
               </div>
               <div className="flex items-center gap-1.5 text-white/90 text-xs">
-                <CheckCircle className="w-4 h-4 text-[#f97316]" />
+                <CheckCircle className="w-4 h-4 text-[#ea580c]" />
                 Get enquiry alerts
               </div>
               <div className="flex items-center gap-1.5 text-white/90 text-xs">
-                <CheckCircle className="w-4 h-4 text-[#f97316]" />
+                <CheckCircle className="w-4 h-4 text-[#ea580c]" />
                 Verified badge
               </div>
             </div>
             <Link
               href={`/claim/${operatorSlug}`}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#f97316] hover:bg-[#ea580c] text-white font-semibold rounded-xl transition-colors text-sm"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#ea580c] hover:bg-[#ea580c] text-white font-semibold rounded-xl transition-colors text-sm"
             >
               <Shield className="w-4 h-4" />
               Claim This Listing — It&apos;s Free

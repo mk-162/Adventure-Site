@@ -76,7 +76,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Porthclais Harbour",
         "description": "Enjoy your own sandwiches with stunning views of Porthclais Harbour."
-      }
+      },
+      "postcode": "SA62 6SL"
     },
     {
       "day": 1,
@@ -123,7 +124,8 @@
         "description": "Camping with stunning coastal views near St Davids at Porthclais Harbour. Great for a budget outdoor stay.",
         "costFrom": 15,
         "costTo": 30
-      }
+      },
+      "postcode": "SA62 6SE"
     },
     {
       "day": 2,
@@ -169,7 +171,8 @@
       "budgetAlt": {
         "title": "Picnic at Porthgain Harbour",
         "description": "Enjoy your own lunch overlooking the picturesque Porthgain Harbour."
-      }
+      },
+      "postcode": "SA62 6DP"
     },
     {
       "day": 2,

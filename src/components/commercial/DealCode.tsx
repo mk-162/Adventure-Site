@@ -36,16 +36,16 @@ export function DealCode({ code, description, operatorName, expiryDate }: DealCo
   const isExpired = expiryDate ? new Date(expiryDate) < new Date() : false;
 
   return (
-    <div className="border-2 border-dashed border-[#f97316]/40 rounded-xl p-4 bg-orange-50/50 relative overflow-hidden">
+    <div className="border-2 border-dashed border-[#ea580c]/40 rounded-xl p-4 bg-orange-50/50 relative overflow-hidden">
       {/* Orange accent stripe */}
-      <div className="absolute top-0 left-0 w-1 h-full bg-[#f97316]" />
+      <div className="absolute top-0 left-0 w-1 h-full bg-[#ea580c]" />
 
       <div className="pl-3">
         {/* Header */}
         <div className="flex items-start justify-between gap-3">
           <div className="flex items-center gap-2">
-            <Tag className="w-4 h-4 text-[#f97316]" />
-            <span className="text-xs font-bold text-[#f97316] uppercase tracking-wider">
+            <Tag className="w-4 h-4 text-[#ea580c]" />
+            <span className="text-xs font-bold text-[#ea580c] uppercase tracking-wider">
               Deal
             </span>
           </div>
@@ -75,7 +75,7 @@ export function DealCode({ code, description, operatorName, expiryDate }: DealCo
                 ? "bg-green-100 text-green-600"
                 : isExpired
                   ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                  : "bg-[#f97316] text-white hover:bg-[#f97316]/90 shadow-sm"
+                  : "bg-[#ea580c] text-white hover:bg-[#ea580c]/90 shadow-sm"
             }`}
             title={copied ? "Copied!" : "Copy code"}
           >

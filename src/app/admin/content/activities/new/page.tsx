@@ -97,7 +97,7 @@ export default async function NewActivityPage() {
                 id="name"
                 name="name"
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
                 placeholder="e.g., Coastal Kayaking Experience"
               />
               <p className="text-sm text-gray-500 mt-1">Slug will be auto-generated from name</p>
@@ -111,7 +111,7 @@ export default async function NewActivityPage() {
                 id="description"
                 name="description"
                 rows={4}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
                 placeholder="Brief description of the activity..."
               />
             </div>
@@ -124,7 +124,7 @@ export default async function NewActivityPage() {
                 <select
                   id="regionId"
                   name="regionId"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
                 >
                   <option value="">Select region</option>
                   {allRegions.map((region) => (
@@ -142,7 +142,7 @@ export default async function NewActivityPage() {
                 <select
                   id="operatorId"
                   name="operatorId"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
                 >
                   <option value="">Select operator</option>
                   {allOperators.map((operator) => (
@@ -160,7 +160,7 @@ export default async function NewActivityPage() {
                 <select
                   id="activityTypeId"
                   name="activityTypeId"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
                 >
                   <option value="">Select type</option>
                   {allActivityTypes.map((activityType) => (
@@ -189,7 +189,7 @@ export default async function NewActivityPage() {
                 id="priceFrom"
                 name="priceFrom"
                 step="0.01"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
                 placeholder="e.g., 45.00"
               />
             </div>
@@ -203,7 +203,7 @@ export default async function NewActivityPage() {
                 id="priceTo"
                 name="priceTo"
                 step="0.01"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
                 placeholder="e.g., 95.00"
               />
             </div>
@@ -216,7 +216,7 @@ export default async function NewActivityPage() {
                 type="text"
                 id="duration"
                 name="duration"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
                 placeholder="e.g., 3 hours"
               />
             </div>
@@ -229,7 +229,7 @@ export default async function NewActivityPage() {
                 type="url"
                 id="bookingUrl"
                 name="bookingUrl"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
                 placeholder="https://example.com/book"
               />
             </div>
@@ -249,7 +249,7 @@ export default async function NewActivityPage() {
               <select
                 id="difficulty"
                 name="difficulty"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
               >
                 <option value="">Select difficulty</option>
                 <option value="easy">Easy</option>
@@ -268,7 +268,7 @@ export default async function NewActivityPage() {
                 type="number"
                 id="minAge"
                 name="minAge"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
                 placeholder="e.g., 12"
               />
             </div>
@@ -281,7 +281,7 @@ export default async function NewActivityPage() {
                 type="text"
                 id="season"
                 name="season"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f97316] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent"
                 placeholder="e.g., Year-round, Summer only"
               />
             </div>
@@ -298,7 +298,7 @@ export default async function NewActivityPage() {
           </Link>
           <button
             type="submit"
-            className="px-6 py-2 bg-[#f97316] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
+            className="px-6 py-2 bg-[#ea580c] text-white rounded-lg hover:bg-[#ea580c] transition-colors"
           >
             Create Activity
           </button>

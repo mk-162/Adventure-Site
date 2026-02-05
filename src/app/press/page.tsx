@@ -131,16 +131,16 @@ export default function PressPage() {
               <a
                 key={idx}
                 href={item.link}
-                className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md hover:border-[#f97316] transition-all p-6 group"
+                className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md hover:border-[#ea580c] transition-all p-6 group"
               >
-                <div className="w-12 h-12 bg-[#f97316]/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#f97316]/20 transition-colors">
-                  <item.icon className="w-6 h-6 text-[#f97316]" />
+                <div className="w-12 h-12 bg-[#ea580c]/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#ea580c]/20 transition-colors">
+                  <item.icon className="w-6 h-6 text-[#ea580c]" />
                 </div>
                 <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600 mb-3">{item.description}</p>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-gray-500">{item.fileSize}</span>
-                  <Download className="w-4 h-4 text-[#f97316]" />
+                  <Download className="w-4 h-4 text-[#ea580c]" />
                 </div>
               </a>
             ))}
@@ -206,23 +206,23 @@ export default function PressPage() {
                 </div>
               </div>
 
-              <div className="bg-[#f97316]/10 border border-[#f97316]/20 rounded-2xl p-6">
+              <div className="bg-[#ea580c]/10 border border-[#ea580c]/20 rounded-2xl p-6">
                 <h3 className="font-bold text-[#1e3a4c] mb-3">Key Differentiators</h3>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#f97316] mt-0.5">▸</span>
+                    <span className="text-[#ea580c] mt-0.5">▸</span>
                     <span>Wales-focused: Deep local knowledge and relationships</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#f97316] mt-0.5">▸</span>
+                    <span className="text-[#ea580c] mt-0.5">▸</span>
                     <span>Quality-vetted: All operators meet safety and service standards</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#f97316] mt-0.5">▸</span>
+                    <span className="text-[#ea580c] mt-0.5">▸</span>
                     <span>Sustainable tourism: Committed to environmental responsibility</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#f97316] mt-0.5">▸</span>
+                    <span className="text-[#ea580c] mt-0.5">▸</span>
                     <span>Local support: Benefiting Welsh communities and businesses</span>
                   </li>
                 </ul>
@@ -271,10 +271,10 @@ export default function PressPage() {
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 rounded-xl" style={{ backgroundColor: '#f97316' }}></div>
+                    <div className="w-16 h-16 rounded-xl" style={{ backgroundColor: '#ea580c' }}></div>
                     <div>
                       <div className="font-medium text-[#1e3a4c]">Orange</div>
-                      <div className="text-sm text-gray-500">#f97316</div>
+                      <div className="text-sm text-gray-500">#ea580c</div>
                     </div>
                   </div>
                 </div>
@@ -334,7 +334,7 @@ export default function PressPage() {
           </p>
           <a
             href="mailto:press@adventurewales.co.uk"
-            className="inline-flex items-center gap-2 px-8 py-3 bg-[#f97316] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-[#ea580c] text-white font-semibold rounded-xl hover:bg-[#ea6a0a] transition-colors"
           >
             <Mail className="w-5 h-5" />
             Contact Press Team

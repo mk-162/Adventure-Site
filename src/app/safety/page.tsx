@@ -48,7 +48,7 @@ export default function SafetyPage() {
       <section className="bg-[#1e3a4c] py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-4 mb-4">
-            <AlertTriangle className="w-10 h-10 text-[#f97316]" />
+            <AlertTriangle className="w-10 h-10 text-[#ea580c]" />
             <h1 className="text-3xl md:text-4xl font-bold text-white">
               Safety Information
             </h1>
@@ -82,7 +82,7 @@ export default function SafetyPage() {
             <Link
               key={guide.slug}
               href={`/safety/${guide.slug}`}
-              className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-[#f97316] transition-all"
+              className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg hover:border-[#ea580c] transition-all"
             >
               <div className="text-[#1e3a4c] mb-4">
                 {iconMap[guide.slug] || <AlertTriangle className="w-8 h-8" />}

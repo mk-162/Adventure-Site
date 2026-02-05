@@ -103,7 +103,7 @@ export function FavoriteButton({
               <div className="flex flex-col sm:flex-row gap-3 w-full mt-2">
                 <Link
                   href="/login"
-                  className="flex-1 px-6 py-3 bg-[#f97316] text-white font-semibold rounded-lg hover:bg-[#ea580c] transition-colors text-center"
+                  className="flex-1 px-6 py-3 bg-[#ea580c] text-white font-semibold rounded-lg hover:bg-[#ea580c] transition-colors text-center"
                 >
                   Sign up free
                 </Link>

@@ -74,7 +74,8 @@
       "budgetAlt": {
         "title": "Packed lunch at Gethin Woodland Park",
         "description": "Picnic spot with views a short walk from the BikePark Wales parking."
-      }
+      },
+      "postcode": "CF48 1YU"
     },
     {
       "day": 1,
@@ -121,7 +122,8 @@
         "description": "Wild camping around Pontsticill Reservoir (check local regulations and leave no trace).",
         "costFrom": 0,
         "costTo": 10
-      }
+      },
+      "postcode": "CF48 2TU"
     },
     {
       "day": 1,
@@ -140,7 +142,8 @@
       "budgetAlt": {
         "title": "Cook your own meal at campsite/accommodation",
         "description": "Bring camping stove or use provided facilities."
-      }
+      },
+      "postcode": "CF48 2TU"
     },
     {
       "day": 2,
@@ -186,7 +189,8 @@
       "budgetAlt": {
         "title": "Packed lunch at the Red House",
         "description": "Enjoy your own food on the grounds of the Red House."
-      }
+      },
+      "postcode": "CF47 8UX"
     },
     {
       "day": 2,

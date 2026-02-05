@@ -380,7 +380,7 @@ export default async function OperatorProfilePage({ params }: Props) {
                         </div>
                       </div>
                       {service.price && (
-                        <span className="text-[#f97316] font-bold text-sm whitespace-nowrap sm:text-right">
+                        <span className="text-[#ea580c] font-bold text-sm whitespace-nowrap sm:text-right">
                           {service.price}
                         </span>
                       )}
@@ -494,7 +494,7 @@ export default async function OperatorProfilePage({ params }: Props) {
             )}
 
             {/* Action CTA Card — Always visible */}
-            <div className="bg-gradient-to-br from-[#f97316]/5 to-amber-50 rounded-xl border border-[#f97316]/20 p-6 shadow-lg shadow-[#f97316]/10">
+            <div className="bg-gradient-to-br from-[#ea580c]/5 to-amber-50 rounded-xl border border-[#ea580c]/20 p-6 shadow-lg shadow-[#ea580c]/10">
               <h3 className="text-lg font-bold text-[#1e3a4c] mb-2">
                 {operator.bookingPlatform && operator.bookingPlatform !== "none"
                   ? (operator.bookingPlatform === "direct" ? "Book Direct" : "Book Online")
@@ -518,7 +518,7 @@ export default async function OperatorProfilePage({ params }: Props) {
                   href={operator.bookingWidgetUrl || operator.website || "#"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white font-bold py-3 px-4 rounded-xl transition-colors shadow-md shadow-[#f97316]/30"
+                  className="w-full flex items-center justify-center gap-2 bg-[#ea580c] hover:bg-[#ea580c] text-white font-bold py-3 px-4 rounded-xl transition-colors shadow-md shadow-[#ea580c]/30"
                 >
                   {operator.bookingPlatform === "beyonk" ? "Book via Beyonk" 
                     : operator.bookingPlatform === "rezdy" ? "Book via Rezdy"
@@ -545,7 +545,7 @@ export default async function OperatorProfilePage({ params }: Props) {
                     href={operator.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full flex items-center justify-center gap-2 text-[#1e3a4c] hover:text-[#f97316] font-medium py-2 text-sm transition-colors"
+                    className="w-full flex items-center justify-center gap-2 text-[#1e3a4c] hover:text-[#ea580c] font-medium py-2 text-sm transition-colors"
                   >
                     <Globe className="w-4 h-4" />
                     Visit Website
@@ -638,7 +638,7 @@ export default async function OperatorProfilePage({ params }: Props) {
                 </div>
                 <button 
                   type="button"
-                  className="w-full bg-[#f97316] hover:bg-[#f97316]/90 text-white font-bold py-3 px-4 rounded-xl transition-colors mt-2"
+                  className="w-full bg-[#ea580c] hover:bg-[#ea580c]/90 text-white font-bold py-3 px-4 rounded-xl transition-colors mt-2"
                 >
                   Send Enquiry
                 </button>
@@ -647,7 +647,7 @@ export default async function OperatorProfilePage({ params }: Props) {
                     Or email us directly:{" "}
                     <a 
                       href={`mailto:${operator.email}?subject=${encodeURIComponent("Enquiry from Adventure Wales")}`}
-                      className="text-[#1e3a4c] hover:text-[#f97316] underline font-medium"
+                      className="text-[#1e3a4c] hover:text-[#ea580c] underline font-medium"
                     >
                       {operator.email}
                     </a>
@@ -682,7 +682,7 @@ export default async function OperatorProfilePage({ params }: Props) {
                   href={`https://www.google.com/maps/dir/?api=1&destination=${operator.lat},${operator.lng}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-center py-2 text-xs font-medium text-[#f97316] hover:bg-gray-50 transition-colors border-t border-gray-200"
+                  className="block text-center py-2 text-xs font-medium text-[#ea580c] hover:bg-gray-50 transition-colors border-t border-gray-200"
                 >
                   Get Directions →
                 </a>
@@ -700,7 +700,7 @@ export default async function OperatorProfilePage({ params }: Props) {
               </h2>
               <Link
                 href={`/directory?region=${primaryRegion}`}
-                className="text-sm text-[#f97316] hover:text-[#ea580c] font-medium flex items-center gap-1"
+                className="text-sm text-[#ea580c] hover:text-[#ea580c] font-medium flex items-center gap-1"
               >
                 View all <ArrowRight className="w-4 h-4" />
               </Link>
@@ -721,7 +721,7 @@ export default async function OperatorProfilePage({ params }: Props) {
                       </div>
                     )}
                     <div className="min-w-0">
-                      <h3 className="font-semibold text-[#1e3a4c] text-sm truncate group-hover:text-[#f97316] transition-colors">
+                      <h3 className="font-semibold text-[#1e3a4c] text-sm truncate group-hover:text-[#ea580c] transition-colors">
                         {relOp.name}
                       </h3>
                       {relOp.googleRating && (
@@ -754,7 +754,7 @@ export default async function OperatorProfilePage({ params }: Props) {
                   <Link
                     key={typeSlug}
                     href={`/${primaryRegion}/things-to-do/${typeSlug}`}
-                    className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e3a4c] hover:border-[#f97316] hover:text-[#f97316] transition-colors"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e3a4c] hover:border-[#ea580c] hover:text-[#ea580c] transition-colors"
                   >
                     {typeName} in {regionDisplayName}
                   </Link>
@@ -775,7 +775,7 @@ export default async function OperatorProfilePage({ params }: Props) {
                 href={operator.bookingWidgetUrl || operator.website || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 bg-[#f97316] text-white py-3 rounded-xl font-bold text-sm shadow-lg shadow-[#f97316]/30 hover:bg-[#f97316]/90 transition-all active:scale-95 flex items-center justify-center gap-2"
+                className="flex-1 bg-[#ea580c] text-white py-3 rounded-xl font-bold text-sm shadow-lg shadow-[#ea580c]/30 hover:bg-[#ea580c]/90 transition-all active:scale-95 flex items-center justify-center gap-2"
               >
                 {operator.bookingPlatform === "beyonk" ? "Book via Beyonk" 
                   : operator.bookingPlatform === "direct" ? "Book Direct"
@@ -787,7 +787,7 @@ export default async function OperatorProfilePage({ params }: Props) {
                 href={operator.website || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 bg-[#f97316] text-white py-3 rounded-xl font-bold text-sm shadow-lg shadow-[#f97316]/30 hover:bg-[#f97316]/90 transition-all active:scale-95 flex items-center justify-center gap-2"
+                className="flex-1 bg-[#ea580c] text-white py-3 rounded-xl font-bold text-sm shadow-lg shadow-[#ea580c]/30 hover:bg-[#ea580c]/90 transition-all active:scale-95 flex items-center justify-center gap-2"
               >
                 Enquire
                 <ExternalLink className="w-4 h-4" />

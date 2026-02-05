@@ -84,9 +84,9 @@ export default async function ActivityListingPage({ params }: PageProps) {
           <span className="text-[#141515] font-medium">{activityType.name}</span>
         </nav>
 
-        <div className="bg-gradient-to-br from-[#1e3a4c]/5 to-[#f97316]/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200 mb-10">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f97316]/10 mb-6">
-            <Compass className="w-8 h-8 text-[#f97316]" />
+        <div className="bg-gradient-to-br from-[#1e3a4c]/5 to-[#ea580c]/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200 mb-10">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#ea580c]/10 mb-6">
+            <Compass className="w-8 h-8 text-[#ea580c]" />
           </div>
           <h1 className="text-2xl lg:text-3xl font-black text-[#1e3a4c] mb-3">
             No {activityType.name} in {region.name} yet
@@ -124,7 +124,7 @@ export default async function ActivityListingPage({ params }: PageProps) {
                 <Link
                   key={type.id}
                   href={`/${region.slug}/things-to-do/${type.slug}`}
-                  className="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 hover:border-[#f97316]/30 hover:shadow-md transition-all text-sm font-medium text-[#1e3a4c]"
+                  className="flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 hover:border-[#ea580c]/30 hover:shadow-md transition-all text-sm font-medium text-[#1e3a4c]"
                 >
                   {type.name}
                 </Link>
@@ -284,7 +284,7 @@ export default async function ActivityListingPage({ params }: PageProps) {
               />
             )}
             <div className="relative z-20 p-6 lg:p-8 flex flex-col items-start gap-3 lg:gap-4 max-w-lg">
-              <span className="bg-[#f97316] text-white text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">
+              <span className="bg-[#ea580c] text-white text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">
                 Featured Operator
               </span>
               <h2 className="text-xl lg:text-2xl font-black leading-tight">
@@ -372,7 +372,7 @@ export default async function ActivityListingPage({ params }: PageProps) {
                   </div>
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors" />
                 </div>
-                <p className="font-bold text-sm leading-tight text-[#1e3a4c] group-hover:text-[#f97316] transition-colors">
+                <p className="font-bold text-sm leading-tight text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors">
                   {type.name}
                 </p>
                 <p className="text-xs text-gray-500 mt-0.5">Explore</p>
@@ -386,7 +386,7 @@ export default async function ActivityListingPage({ params }: PageProps) {
               <div className="w-full aspect-[4/3] rounded-lg bg-[#1e3a4c]/10 flex items-center justify-center hover:bg-[#1e3a4c]/20 transition-colors">
                 <ArrowRight className="text-[#1e3a4c] w-8 h-8" />
               </div>
-              <p className="font-bold text-sm leading-tight text-[#1e3a4c] group-hover:text-[#f97316] transition-colors mt-2">
+              <p className="font-bold text-sm leading-tight text-[#1e3a4c] group-hover:text-[#ea580c] transition-colors mt-2">
                 View All Activities
               </p>
               <p className="text-xs text-gray-500 mt-0.5">Browse everything</p>

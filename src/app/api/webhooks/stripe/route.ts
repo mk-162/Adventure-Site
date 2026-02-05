@@ -29,9 +29,11 @@ export async function POST(req: NextRequest) {
       process.env.STRIPE_WEBHOOK_SECRET
     );
   } catch (err: any) {
-    console.error("Webhook signature verification failed:", err.message);
+    console.error("[Stripe Webhook] Signature verification failed:", err.message);
     return NextResponse.json({ error: "Invalid signature" }, { status: 400 });
   }
+
+  console.log(`[Stripe Webhook] ${event.type} (${event.id})`);
 
   try {
     switch (event.type) {
@@ -48,6 +50,7 @@ export async function POST(req: NextRequest) {
               stripeSubscriptionId: subscriptionId || null,
             })
             .where(eq(operators.id, parseInt(operatorId)));
+          console.log(`[Stripe Webhook] Linked customer ${customerId} to operator ${operatorId}`);
         }
         break;
       }
@@ -68,12 +71,18 @@ export async function POST(req: NextRequest) {
         });
 
         if (operator) {
-          const isActive = subscription.status === "active" || subscription.status === "trialing";
+          const isActive = ["active", "trialing"].includes(subscription.status);
           const finalTier = isActive ? tier : "free";
+
+          // Also update claimStatus to match billing tier
+          const claimStatus = finalTier === "premium" ? "premium" as const
+            : finalTier === "verified" ? "claimed" as const
+            : operator.claimStatus;
 
           await db.update(operators)
             .set({
               billingTier: finalTier,
+              claimStatus,
               stripeSubscriptionId: subscription.id,
               stripeSubscriptionStatus: subscription.status,
               billingPeriodEnd: subscription.current_period_end
@@ -81,6 +90,10 @@ export async function POST(req: NextRequest) {
                 : null,
             })
             .where(eq(operators.id, operator.id));
+
+          console.log(`[Stripe Webhook] Operator ${operator.id} (${operator.name}): tier=${finalTier}, status=${subscription.status}`);
+        } else {
+          console.warn(`[Stripe Webhook] No operator found for customer ${customerId}`);
         }
         break;
       }
@@ -97,11 +110,34 @@ export async function POST(req: NextRequest) {
           await db.update(operators)
             .set({
               billingTier: "free",
+              claimStatus: "claimed", // Keep claimed, just downgrade from premium
               stripeSubscriptionStatus: "canceled",
               stripeSubscriptionId: null,
               billingPeriodEnd: null,
             })
             .where(eq(operators.id, operator.id));
+
+          console.log(`[Stripe Webhook] Operator ${operator.id} (${operator.name}): subscription canceled, downgraded to free`);
+        }
+        break;
+      }
+
+      case "invoice.paid": {
+        const invoice = event.data.object as any;
+        const customerId = invoice.customer;
+
+        const operator = await db.query.operators.findFirst({
+          where: eq(operators.stripeCustomerId, customerId as string),
+        });
+
+        if (operator) {
+          // Clear any past_due status on successful payment
+          if (operator.stripeSubscriptionStatus === "past_due") {
+            await db.update(operators)
+              .set({ stripeSubscriptionStatus: "active" })
+              .where(eq(operators.id, operator.id));
+            console.log(`[Stripe Webhook] Operator ${operator.id}: payment recovered, status → active`);
+          }
         }
         break;
       }
@@ -118,12 +154,18 @@ export async function POST(req: NextRequest) {
           await db.update(operators)
             .set({ stripeSubscriptionStatus: "past_due" })
             .where(eq(operators.id, operator.id));
+
+          console.log(`[Stripe Webhook] Operator ${operator.id} (${operator.name}): payment failed, status → past_due`);
+          // TODO: Send email notification about failed payment
         }
         break;
       }
+
+      default:
+        console.log(`[Stripe Webhook] Unhandled event type: ${event.type}`);
     }
   } catch (err: any) {
-    console.error("Webhook processing failed:", err.message);
+    console.error(`[Stripe Webhook] Processing failed for ${event.type}:`, err.message);
     return NextResponse.json({ error: "Webhook handler failed" }, { status: 500 });
   }
 

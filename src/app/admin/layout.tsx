@@ -19,6 +19,7 @@ import {
   Home,
   Handshake,
   BookOpen,
+  CreditCard,
 } from "lucide-react";
 import clsx from "clsx";
 
@@ -33,6 +34,7 @@ const contentNav = [
 ];
 
 const commercialNav = [
+  { name: "Billing", href: "/admin/billing", icon: CreditCard },
   { name: "Claims", href: "/admin/commercial/claims", icon: CheckSquare },
   { name: "Accounts", href: "/admin/commercial/accounts", icon: Building2 },
   { name: "Partner Mapping", href: "/admin/commercial/partners", icon: Handshake },

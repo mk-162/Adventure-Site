@@ -3,6 +3,7 @@ import { db } from "@/db";
 import { operators, activities } from "@/db/schema";
 import { eq, count } from "drizzle-orm";
 import Link from "next/link";
+import { UpgradeSuccessBanner } from "./upgrade-success-banner";
 
 export default async function DashboardPage() {
   const session = await getOperatorSession();
@@ -37,9 +38,10 @@ export default async function DashboardPage() {
 
   return (
     <div className="space-y-8">
+      <UpgradeSuccessBanner />
       <div>
         <h1 className="text-2xl font-bold text-slate-900">Welcome back, {session.name}</h1>
-        <p className="text-slate-600">Here's what's happening with your listing today.</p>
+        <p className="text-slate-600">Here&apos;s what&apos;s happening with your listing today.</p>
       </div>
 
       {/* Stats Grid */}

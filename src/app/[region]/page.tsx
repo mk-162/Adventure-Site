@@ -5,6 +5,7 @@ import { getRegionWithStats, getActivitiesByRegion, getAccommodationByRegion, ge
 import type { MapMarker } from "@/components/ui/MapView";
 import { TopExperiences } from "@/components/regions/TopExperiences";
 import { AccommodationCard } from "@/components/cards/accommodation-card";
+import { FallbackImage } from "@/components/ui/FallbackImage";
 import { RegionMap } from "@/components/ui/RegionMap";
 import { ScenicGallery } from "@/components/regions/scenic-gallery";
 import { getBestListsForRegion } from "@/lib/best-list-data";
@@ -705,14 +706,10 @@ export default async function RegionPage({ params }: RegionPageProps) {
                       className="group relative overflow-hidden rounded-xl bg-white border border-gray-200 hover:border-primary/30 hover:shadow-lg transition-all"
                     >
                       <div className="aspect-[4/3] relative bg-gradient-to-br from-primary/10 to-accent-hover/10">
-                        <img
+                        <FallbackImage
                           src={`/images/activities/${item.activityType.slug}-hero.jpg`}
                           alt={item.activityType.name}
                           className="w-full h-full object-cover"
-                          onError={(e) => {
-                            // Fallback to gradient background if image doesn't exist
-                            e.currentTarget.style.display = 'none';
-                          }}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                         

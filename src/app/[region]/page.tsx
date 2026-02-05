@@ -409,11 +409,13 @@ export default async function RegionPage({ params }: RegionPageProps) {
     notFound();
   }
 
-  const [activities, accommodation, operators, mapEntities] = await Promise.all([
+  const [activities, accommodation, operators, mapEntities, activityTypesWithCount, bestLists] = await Promise.all([
     getActivitiesByRegion(regionSlug, 6),
     getAccommodationByRegion(regionSlug, 4),
     getOperators({ limit: 3 }),
     getRegionEntitiesForMap(region.id),
+    getActivityTypesForRegion(region.id),
+    Promise.resolve(getBestListsForRegion(regionSlug)),
   ]);
 
   // Prepare map markers for all entities in the region
@@ -656,6 +658,51 @@ export default async function RegionPage({ params }: RegionPageProps) {
               </section>
             )}
 
+            {/* Explore by Activity Grid */}
+            {activityTypesWithCount.length > 0 && (
+              <section className="scroll-mt-32">
+                <div className="flex justify-between items-end mb-4 lg:mb-5">
+                  <h3 className="text-lg lg:text-xl font-bold text-primary">Explore by Activity</h3>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-4">
+                  {activityTypesWithCount.map((item) => (
+                    <Link
+                      key={item.activityType.id}
+                      href={`/${regionSlug}/things-to-do/${item.activityType.slug}`}
+                      className="group relative overflow-hidden rounded-xl bg-white border border-gray-200 hover:border-primary/30 hover:shadow-lg transition-all"
+                    >
+                      <div className="aspect-[4/3] relative bg-gradient-to-br from-primary/10 to-accent-hover/10">
+                        <img
+                          src={`/images/activities/${item.activityType.slug}-hero.jpg`}
+                          alt={item.activityType.name}
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            // Fallback to gradient background if image doesn't exist
+                            e.currentTarget.style.display = 'none';
+                          }}
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                        
+                        {/* Count badge */}
+                        <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm text-primary px-2 py-1 rounded-full text-xs font-bold">
+                          {Number(item.count)}
+                        </div>
+                      </div>
+                      
+                      <div className="p-3">
+                        <h4 className="font-bold text-sm text-primary group-hover:text-accent-hover transition-colors line-clamp-2">
+                          {item.activityType.name}
+                        </h4>
+                        <p className="text-xs text-gray-500 mt-1">
+                          {Number(item.count)} experience{Number(item.count) !== 1 ? 's' : ''}
+                        </p>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            )}
+
             {/* Intro */}
             <section>
               <h3 className="text-lg lg:text-xl font-bold mb-3 text-primary">Welcome to {region.name}</h3>
@@ -691,7 +738,25 @@ export default async function RegionPage({ params }: RegionPageProps) {
               </section>
             )}
 
-            {/* (Top Experiences moved to top of main content) */}
+            {/* Our Top Picks - Best-Of Lists */}
+            {bestLists.length > 0 && (
+              <section className="scroll-mt-32">
+                <div className="flex justify-between items-end mb-4 lg:mb-5">
+                  <h3 className="text-lg lg:text-xl font-bold text-primary">Our Top Picks</h3>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5">
+                  {bestLists.map((list) => (
+                    <BestOfCard
+                      key={list.slug}
+                      title={list.title}
+                      strapline={list.strapline}
+                      href={list.urlPath}
+                      count={list.entries.length}
+                    />
+                  ))}
+                </div>
+              </section>
+            )}
 
             {/* Accommodation Grid */}
             {accommodation.length > 0 && (

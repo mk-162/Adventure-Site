@@ -13,6 +13,13 @@ import {
 import type { ComboPageData } from "@/lib/combo-data";
 import { ComboSpotCard } from "./ComboSpotCard";
 import { FAQAccordion } from "@/components/operators/FAQAccordion";
+import { LocalTake } from "@/components/content/LocalTake";
+import { TopTips } from "@/components/content/TopTips";
+import { FeaturedExpert } from "@/components/content/FeaturedExpert";
+import { HonestTruth } from "@/components/content/HonestTruth";
+import { ProTip } from "@/components/content/ProTip";
+import { ImageCredit } from "@/components/content/ImageCredit";
+import ReactMarkdown from "react-markdown";
 
 interface ComboEnrichmentProps {
   data: ComboPageData;
@@ -32,13 +39,33 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
           </p>
         </div>
         <div className="mt-6 prose prose-slate max-w-none">
-          {data.introduction.split("\n\n").map((para, i) => (
-            <p key={i} className="text-gray-600 leading-relaxed text-sm sm:text-base">
-              {para}
-            </p>
-          ))}
+          {data.editorial ? (
+            <ReactMarkdown>{data.editorial}</ReactMarkdown>
+          ) : (
+            data.introduction.split("\n\n").map((para, i) => (
+              <p key={i} className="text-gray-600 leading-relaxed text-sm sm:text-base">
+                {para}
+              </p>
+            ))
+          )}
         </div>
       </section>
+
+      {/* Local Takes */}
+      {data.localTakes && data.localTakes.length > 0 && (
+        <section>
+          {data.localTakes.map((take, index) => (
+            <LocalTake key={index} {...take} />
+          ))}
+        </section>
+      )}
+
+      {/* Top Tips (first instance) */}
+      {data.topTips && data.topTips.length > 0 && (
+        <section>
+          <TopTips tips={data.topTips} />
+        </section>
+      )}
 
       {/* Quick Facts */}
       <section>
@@ -57,6 +84,13 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
           </div>
         </div>
       </section>
+
+      {/* Featured Expert */}
+      {data.featuredExpert && (
+        <section>
+          <FeaturedExpert {...data.featuredExpert} />
+        </section>
+      )}
 
       {/* Top Spots */}
       {data.spots.length > 0 && (
@@ -100,6 +134,51 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {data.spots.map((spot, i) => (
               <ComboSpotCard key={spot.slug} spot={spot} index={i} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Honest Truth */}
+      {data.honestTruth && (
+        <section>
+          <HonestTruth {...data.honestTruth} />
+        </section>
+      )}
+
+      {/* Where To Eat */}
+      {data.whereToEat && data.whereToEat.length > 0 && (
+        <section>
+          <h2 className="text-xl sm:text-2xl font-bold text-primary mb-4">Where To Eat</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {data.whereToEat.map((place, i) => (
+              <div key={i} className="bg-white rounded-xl border border-gray-200 p-5">
+                <h3 className="font-bold text-primary text-base mb-2">{place.name}</h3>
+                <p className="text-xs text-gray-500 mb-3">{place.location}</p>
+                <p className="text-sm text-gray-700 mb-3 leading-relaxed">{place.description}</p>
+                <div className="inline-block bg-accent/10 text-accent text-xs font-semibold px-2 py-1 rounded">
+                  Best for: {place.bestFor}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Where To Stay */}
+      {data.whereToStay && data.whereToStay.length > 0 && (
+        <section>
+          <h2 className="text-xl sm:text-2xl font-bold text-primary mb-4">Where To Stay</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {data.whereToStay.map((place, i) => (
+              <div key={i} className="bg-white rounded-xl border border-gray-200 p-5">
+                <h3 className="font-bold text-primary text-base mb-1">{place.name}</h3>
+                <p className="text-xs text-gray-500 mb-2">{place.location} • {place.priceRange}</p>
+                <p className="text-sm text-gray-700 mb-3 leading-relaxed">{place.description}</p>
+                <div className="inline-block bg-primary/10 text-primary text-xs font-semibold px-2 py-1 rounded">
+                  {place.bestFor}
+                </div>
+              </div>
             ))}
           </div>
         </section>
@@ -295,6 +374,23 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
                 </div>
                 <ArrowRight className="w-4 h-4 text-gray-400 ml-auto" />
               </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Image Credits */}
+      {data.imageCredits && data.imageCredits.length > 0 && (
+        <section>
+          <h2 className="text-lg font-bold text-primary mb-3">Image Credits</h2>
+          <div className="bg-gray-50 rounded-xl p-4 space-y-2">
+            {data.imageCredits.map((credit, i) => (
+              <ImageCredit
+                key={i}
+                photographer={credit.photographer}
+                source={credit.source}
+                sourceUrl={credit.sourceUrl}
+              />
             ))}
           </div>
         </section>

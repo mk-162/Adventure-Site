@@ -79,6 +79,50 @@ export interface ComboPageData {
     sameActivity?: { regionSlug: string; label: string }[];
     sameRegion?: { activityTypeSlug: string; label: string }[];
   };
+  // New enriched content fields (all optional for backward compatibility)
+  localTakes?: Array<{
+    name: string;
+    role: string;
+    business: string;
+    photo: string;
+    quote: string;
+    operatorSlug?: string;
+    isPlaceholder?: boolean;
+  }>;
+  featuredExpert?: {
+    name: string;
+    credentials: string;
+    photo: string;
+    perspective: string; // markdown
+    operatorSlug?: string;
+    isPlaceholder?: boolean;
+  };
+  topTips?: string[];
+  honestTruth?: {
+    great: string[];
+    notGreat: string[];
+  };
+  editorial?: string; // long-form markdown (can replace/supplement introduction)
+  whereToEat?: Array<{
+    name: string;
+    description: string;
+    location: string;
+    bestFor: string;
+  }>;
+  whereToStay?: Array<{
+    name: string;
+    description: string;
+    location: string;
+    priceRange: string;
+    bestFor: string;
+  }>;
+  imageCredits?: Array<{
+    image: string;
+    photographer: string;
+    source: string;
+    sourceUrl?: string;
+    licence: string;
+  }>;
 }
 
 /**

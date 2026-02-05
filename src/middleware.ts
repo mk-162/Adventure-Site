@@ -1,7 +1,10 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import * as jose from "jose";
 
-export function middleware(request: NextRequest) {
+const JWT_SECRET_RAW = process.env.JWT_SECRET || process.env.ADMIN_SECRET || "dev-secret";
+
+export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Don't protect the login page itself
@@ -21,8 +24,27 @@ export function middleware(request: NextRequest) {
 
     // Check for admin token in cookies
     const adminToken = request.cookies.get("admin_token")?.value;
-    if (adminToken === adminPassword) {
-      return NextResponse.next();
+
+    if (adminToken) {
+      // Try JWT verification first
+      try {
+        const secret = new TextEncoder().encode(JWT_SECRET_RAW);
+        const { payload } = await jose.jwtVerify(adminToken, secret);
+        if (payload.id !== undefined && payload.email) {
+          // Valid JWT session — add user info to headers for downstream use
+          const response = NextResponse.next();
+          response.headers.set("x-admin-email", payload.email as string);
+          response.headers.set("x-admin-role", (payload.role as string) || "viewer");
+          return response;
+        }
+      } catch {
+        // Not a valid JWT — try legacy
+      }
+
+      // Legacy: raw password match
+      if (adminToken === adminPassword) {
+        return NextResponse.next();
+      }
     }
 
     // Check for basic auth header (useful for API/programmatic access)

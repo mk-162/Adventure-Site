@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { getEvents, getAllRegions } from "@/lib/queries";
 import { EventCalendar } from "@/components/events/EventCalendar";
@@ -318,7 +319,7 @@ function EventCard({ event }: { event: typeof events.$inferSelect }) {
     >
       <div className="relative h-48 bg-gray-200 overflow-hidden">
         {event.heroImage ? (
-          <img src={event.heroImage} alt={event.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <Image src={event.heroImage} alt={event.name} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 100vw, 33vw" />
         ) : (
            <div className="w-full h-full bg-[#1e3a4c]/10 flex items-center justify-center text-[#1e3a4c]/20">
              <CalendarIcon className="w-12 h-12" />

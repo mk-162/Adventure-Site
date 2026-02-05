@@ -176,6 +176,11 @@
 
 ---
 
+## 💡 Ideas
+- [ ] Reset
+
+---
+
 ## 📝 Key Decisions Made
 - **Beyonk > FareHarbor** for Welsh operator booking integration
 - **"Verified by Adventure Wales"** not "Recommended" (advertising standards safe)

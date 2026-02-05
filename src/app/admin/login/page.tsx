@@ -4,6 +4,7 @@ import { Suspense, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
 function LoginForm() {
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -20,14 +21,14 @@ function LoginForm() {
       const res = await fetch("/api/auth/admin-login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ password }),
+        body: JSON.stringify(email ? { email, password } : { password }),
       });
 
       if (res.ok) {
         router.push(from);
         router.refresh();
       } else {
-        setError("Invalid password");
+        setError("Invalid credentials");
       }
     } catch {
       setError("Something went wrong");
@@ -38,6 +39,25 @@ function LoginForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      <div>
+        <label
+          htmlFor="email"
+          className="block text-sm font-medium text-gray-700 mb-1"
+        >
+          Email <span className="text-gray-400 font-normal">(optional)</span>
+        </label>
+        <input
+          id="email"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none"
+          placeholder="admin@adventurewales.co.uk"
+          autoComplete="email"
+          autoFocus
+        />
+      </div>
+
       <div>
         <label
           htmlFor="password"
@@ -51,9 +71,9 @@ function LoginForm() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ea580c] focus:border-transparent outline-none"
-          placeholder="Enter admin password"
+          placeholder="Enter password"
           required
-          autoFocus
+          autoComplete="current-password"
         />
       </div>
 
@@ -66,6 +86,10 @@ function LoginForm() {
       >
         {loading ? "Signing in…" : "Sign In"}
       </button>
+
+      <p className="text-xs text-gray-400 text-center">
+        Leave email blank for shared admin access
+      </p>
     </form>
   );
 }
@@ -79,7 +103,7 @@ export default function AdminLoginPage() {
             Adventure Admin
           </h1>
           <p className="text-gray-500 text-center text-sm mb-6">
-            Enter the admin password to continue
+            Sign in to manage your site
           </p>
           <Suspense fallback={<div className="h-32" />}>
             <LoginForm />

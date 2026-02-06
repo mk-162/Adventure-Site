@@ -6,7 +6,7 @@ import { GradingGuide } from "@/components/mtb/GradingGuide";
 import { SeasonGuide } from "@/components/mtb/SeasonGuide";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { RegionMap } from "@/components/ui/RegionMap";
-import { getActivities, getEvents, getActivityTypeBySlug } from "@/lib/queries";
+import { getActivities, getEvents, getActivityTypeBySlug, getItineraries, getPostsForSidebar } from "@/lib/queries";
 import { 
   Mountain, 
   Map, 
@@ -19,6 +19,10 @@ import {
   Navigation,
   TrendingUp,
   MapPin,
+  Compass,
+  BookOpen,
+  Home,
+  Sparkles,
 } from "lucide-react";
 import { JsonLd, createTouristDestinationSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 
@@ -48,6 +52,20 @@ export default async function MountainBikingHubPage() {
     e.event.name?.toLowerCase().includes("bike") ||
     e.event.name?.toLowerCase().includes("enduro")
   ).slice(0, 6);
+
+  // Fetch related itineraries
+  const allItineraries = await getItineraries({ limit: 50 });
+  const relatedItineraries = allItineraries.filter(row => 
+    row.itinerary.title?.toLowerCase().includes("bike") ||
+    row.itinerary.title?.toLowerCase().includes("mtb") ||
+    row.itinerary.title?.toLowerCase().includes("cycling") ||
+    row.itinerary.description?.toLowerCase().includes("mountain biking")
+  ).slice(0, 4);
+
+  // Fetch related blog posts
+  const relatedPosts = activityType 
+    ? await getPostsForSidebar({ activityTypeId: activityType.id, limit: 4 })
+    : [];
 
   // Prepare map markers for trail centres
   const mapMarkers = mountainBikingHub.trailCentres.map((centre) => ({
@@ -398,6 +416,212 @@ export default async function MountainBikingHubPage() {
           </div>
         </section>
       )}
+
+      {/* Related Itineraries */}
+      {relatedItineraries.length > 0 && (
+        <section className="bg-gray-50 py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-primary text-sm font-semibold mb-4">
+                <Compass className="h-4 w-4" />
+                Trip Ideas
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
+                MTB Trip Itineraries
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Multi-day biking adventures through Wales
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {relatedItineraries.map((row) => (
+                <Link
+                  key={row.itinerary.id}
+                  href={`/itineraries/${row.itinerary.slug}`}
+                  className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-primary transition-all"
+                >
+                  <div className="text-sm text-accent-hover font-semibold mb-2">
+                    {row.itinerary.durationDays} days • {row.itinerary.difficulty || "All levels"}
+                  </div>
+                  <h3 className="text-lg font-bold text-primary mb-2 group-hover:text-accent-hover transition-colors">
+                    {row.itinerary.title}
+                  </h3>
+                  {row.itinerary.tagline && (
+                    <p className="text-sm text-gray-600 line-clamp-2">
+                      {row.itinerary.tagline}
+                    </p>
+                  )}
+                </Link>
+              ))}
+            </div>
+
+            <div className="text-center mt-8">
+              <Link
+                href="/itineraries"
+                className="inline-flex items-center gap-2 text-primary hover:text-accent-hover font-semibold"
+              >
+                View all itineraries <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Related Blog Posts */}
+      {relatedPosts.length > 0 && (
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-primary text-sm font-semibold mb-4">
+                <BookOpen className="h-4 w-4" />
+                From the Journal
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
+                MTB Stories & Guides
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {relatedPosts.map((post) => (
+                <Link
+                  key={post.id}
+                  href={`/journal/${post.slug}`}
+                  className="group bg-white rounded-2xl overflow-hidden shadow-sm border-2 border-gray-200 hover:shadow-lg transition-all"
+                >
+                  {post.heroImage && (
+                    <div className="aspect-video bg-gray-100 overflow-hidden">
+                      <img 
+                        src={post.heroImage} 
+                        alt={post.title || ""} 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                      />
+                    </div>
+                  )}
+                  <div className="p-4">
+                    <h3 className="font-bold text-primary group-hover:text-accent-hover transition-colors line-clamp-2">
+                      {post.title}
+                    </h3>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            <div className="text-center mt-8">
+              <Link
+                href="/journal"
+                className="inline-flex items-center gap-2 text-primary hover:text-accent-hover font-semibold"
+              >
+                Read more articles <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Combine Your Adventure */}
+      <section className="bg-primary/5 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-primary text-sm font-semibold mb-4">
+              <Sparkles className="h-4 w-4" />
+              Multi-Activity Adventures
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
+              Combine Biking With...
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Make the most of your Welsh adventure
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Link href="/hiking" className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-accent-hover transition-all text-center">
+              <div className="text-4xl mb-3">🥾</div>
+              <h3 className="font-bold text-primary group-hover:text-accent-hover mb-2">Hiking</h3>
+              <p className="text-sm text-gray-600">Same mountains, different pace — explore on foot</p>
+            </Link>
+            <Link href="/climbing" className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-accent-hover transition-all text-center">
+              <div className="text-4xl mb-3">🧗</div>
+              <h3 className="font-bold text-primary group-hover:text-accent-hover mb-2">Rock Climbing</h3>
+              <p className="text-sm text-gray-600">Go vertical — Snowdonia has world-class crags</p>
+            </Link>
+            <Link href="/surfing" className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-accent-hover transition-all text-center">
+              <div className="text-4xl mb-3">🏄</div>
+              <h3 className="font-bold text-primary group-hover:text-accent-hover mb-2">Surfing</h3>
+              <p className="text-sm text-gray-600">Rest your legs and catch waves on the Welsh coast</p>
+            </Link>
+            <Link href="/wild-swimming" className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-accent-hover transition-all text-center">
+              <div className="text-4xl mb-3">🏊</div>
+              <h3 className="font-bold text-primary group-hover:text-accent-hover mb-2">Wild Swimming</h3>
+              <p className="text-sm text-gray-600">Cool off in mountain lakes after a trail session</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Accommodation Links */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-primary text-sm font-semibold mb-4">
+              <Home className="h-4 w-4" />
+              Where to Stay
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
+              Biker-Friendly Accommodation
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Find places to stay near Wales&apos;s best trail centres
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link 
+              href="/accommodation?region=snowdonia"
+              className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-primary transition-all"
+            >
+              <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent-hover">
+                Snowdonia
+              </h3>
+              <p className="text-sm text-gray-600 mb-3">
+                Stay near Coed y Brenin, Antur Stiniog, and Dyfi Bike Park
+              </p>
+              <span className="text-sm text-accent-hover font-semibold flex items-center gap-1">
+                Browse stays <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+            <Link 
+              href="/accommodation?region=brecon-beacons"
+              className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-primary transition-all"
+            >
+              <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent-hover">
+                Brecon Beacons
+              </h3>
+              <p className="text-sm text-gray-600 mb-3">
+                Base yourself for BikePark Wales — the UK&apos;s biggest uplift park
+              </p>
+              <span className="text-sm text-accent-hover font-semibold flex items-center gap-1">
+                Browse stays <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+            <Link 
+              href="/accommodation?region=south-wales"
+              className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-primary transition-all"
+            >
+              <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent-hover">
+                South Wales
+              </h3>
+              <p className="text-sm text-gray-600 mb-3">
+                Stay near Afan Forest Park and Cwmcarn for legendary trail riding
+              </p>
+              <span className="text-sm text-accent-hover font-semibold flex items-center gap-1">
+                Browse stays <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* FAQ */}
       <section className="bg-gray-50 py-16">

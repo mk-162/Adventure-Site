@@ -6,6 +6,7 @@ import { HikingGradingGuide } from "@/components/hiking/HikingGradingGuide";
 import { HikingSeasonGuide } from "@/components/hiking/HikingSeasonGuide";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { RegionMap } from "@/components/ui/RegionMap";
+import { QuickAnswerBox, HubSidebar } from "@/components/activity-hub";
 import { getActivities, getEvents, getActivityTypeBySlug, getItineraries, getPostsForSidebar } from "@/lib/queries";
 import { 
   Mountain, 
@@ -27,6 +28,10 @@ import {
   BookOpen,
   Home,
   Sparkles,
+  Clock,
+  PoundSterling,
+  Users,
+  Gauge,
 } from "lucide-react";
 import { JsonLd, createTouristDestinationSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 
@@ -155,31 +160,153 @@ export default async function HikingHubPage() {
             <ChevronDown className="h-5 w-5" />
           </a>
         </div>
-      </section>
 
-      {/* Breadcrumbs */}
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <ol className="flex items-center gap-2 text-sm text-gray-600">
-          <li>
-            <Link href="/" className="hover:text-primary transition-colors">
-              Home
-            </Link>
-          </li>
-          <li>/</li>
-          <li className="text-primary font-medium">Hiking in Wales</li>
-        </ol>
-      </nav>
-
-      {/* Introduction */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="prose prose-lg max-w-4xl mx-auto">
-          {hikingHub.introduction.split('\n\n').map((paragraph, i) => (
-            <p key={i} className="text-gray-700 leading-relaxed mb-4">
-              {paragraph}
-            </p>
-          ))}
+        {/* Quick Answer Box */}
+        <div className="absolute bottom-0 left-0 right-0 translate-y-1/2 z-20 px-4">
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Calendar className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Best Time</span>
+                </div>
+                <div className="font-bold text-gray-900">May-Oct</div>
+              </div>
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <PoundSterling className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Cost</span>
+                </div>
+                <div className="font-bold text-gray-900">Free</div>
+              </div>
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Gauge className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Difficulty</span>
+                </div>
+                <div className="font-bold text-gray-900">All Levels</div>
+              </div>
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Clock className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Duration</span>
+                </div>
+                <div className="font-bold text-gray-900">1-8 hours</div>
+              </div>
+              <div className="col-span-2 md:col-span-1">
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Users className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Best For</span>
+                </div>
+                <div className="font-bold text-gray-900 text-sm">Everyone</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* Spacer for quick answer box */}
+      <div className="h-20 md:h-16" />
+
+      {/* 2-Column Layout */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Breadcrumbs */}
+        <nav className="mb-6">
+          <ol className="flex items-center gap-2 text-sm text-gray-600">
+            <li>
+              <Link href="/" className="hover:text-primary transition-colors">
+                Home
+              </Link>
+            </li>
+            <li>/</li>
+            <li className="text-primary font-medium">Hiking in Wales</li>
+          </ol>
+        </nav>
+
+        <div className="flex gap-8 lg:gap-12">
+          {/* Main Content */}
+          <main className="flex-1 min-w-0">
+            {/* Quick Answer Box - Where Should I Go? */}
+            <div className="mb-10">
+              <QuickAnswerBox
+                bestForBeginners={{
+                  label: "Best for Beginners",
+                  venue: "Llanberis Path (Snowdon)",
+                  link: "/snowdonia/things-to-do/hiking",
+                  reason: "Gradual ascent, clear path, café at summit",
+                }}
+                bestOverall={{
+                  label: "Best Overall",
+                  venue: "Snowdon Horseshoe",
+                  link: "/snowdonia/things-to-do/hiking",
+                  reason: "Classic ridge walk, stunning views, proper mountain day",
+                }}
+                bestValue={{
+                  label: "Best Value",
+                  venue: "Pen y Fan",
+                  link: "/brecon-beacons/things-to-do/hiking",
+                  reason: "Free parking nearby, quick summit, iconic views",
+                }}
+                bestForFamilies={{
+                  label: "Best for Families",
+                  venue: "Waterfall Country",
+                  link: "/brecon-beacons/things-to-do/hiking",
+                  reason: "Easy trails, spectacular waterfalls, adventure feel",
+                }}
+                bestForExperts={{
+                  label: "Best for Experts",
+                  venue: "Tryfan North Ridge",
+                  link: "/snowdonia/things-to-do/hiking",
+                  reason: "Grade 1 scramble, exposed sections, iconic summit leap",
+                }}
+              />
+            </div>
+
+            {/* Introduction */}
+            <section className="mb-12" id="overview">
+              <div className="prose prose-lg max-w-none">
+                {hikingHub.introduction.split('\n\n').map((paragraph, i) => (
+                  <p key={i} className="text-gray-700 leading-relaxed mb-4">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </section>
+          </main>
+
+          {/* Sidebar */}
+          <HubSidebar
+            activityType="hiking"
+            navItems={[
+              { id: "overview", label: "Overview" },
+              { id: "trails", label: "Featured Trails" },
+              { id: "map", label: "Trail Map" },
+              { id: "regions", label: "By Region" },
+              { id: "difficulty", label: "Difficulty Grades" },
+              { id: "seasons", label: "When to Walk" },
+              { id: "safety", label: "Safety" },
+              { id: "gear", label: "Gear Guide" },
+              { id: "national-trails", label: "National Trails" },
+              { id: "faqs", label: "FAQs" },
+            ]}
+            primaryCTA={{
+              label: "Find Trails",
+              href: "#trails",
+              variant: "accent",
+            }}
+            secondaryCTA={{
+              label: "Book Guided Walk",
+              href: "/activities/type/hiking",
+            }}
+            weather={{
+              temp: 8,
+              condition: "cloudy",
+              wind: 20,
+              location: "Snowdonia",
+            }}
+          />
+        </div>
+      </div>
 
       {/* Featured Trails */}
       <section id="trails" className="bg-gray-50 py-16">

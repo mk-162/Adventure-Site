@@ -1113,6 +1113,71 @@ function TransportSection({ regionSlug, descriptionText }: { regionSlug: string;
           <p className="text-emerald-700 text-sm leading-relaxed">{transport.carFree}</p>
         </div>
       )}
+
+      {/* Quick Links - Timetables & Taxis */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {/* Timetable Links */}
+        <div className="bg-gray-50 rounded-xl border border-gray-200 p-4">
+          <h4 className="font-bold text-sm text-primary mb-3">📅 Timetables & Journey Planners</h4>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <a href="https://www.traveline.cymru/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
+                Traveline Cymru
+              </a>
+              <span className="text-gray-500 text-xs block">All Wales bus & train times</span>
+            </li>
+            <li>
+              <a href="https://tfwrail.wales/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
+                Transport for Wales Rail
+              </a>
+              <span className="text-gray-500 text-xs block">Train times & ticket booking</span>
+            </li>
+            <li>
+              <a href="https://www.nationalrail.co.uk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
+                National Rail
+              </a>
+              <span className="text-gray-500 text-xs block">UK-wide train planner</span>
+            </li>
+            <li>
+              <a href="https://fflecsi.wales/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
+                fflecsi
+              </a>
+              <span className="text-gray-500 text-xs block">On-demand bus booking app</span>
+            </li>
+          </ul>
+        </div>
+
+        {/* Taxi & Car Hire */}
+        <div className="bg-gray-50 rounded-xl border border-gray-200 p-4">
+          <h4 className="font-bold text-sm text-primary mb-3">🚕 Taxis & Car Hire</h4>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <a href="https://www.uber.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
+                Uber
+              </a>
+              <span className="text-gray-500 text-xs block">Available in larger towns</span>
+            </li>
+            <li>
+              <a href="https://www.google.com/search?q=taxi+near+me+wales" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
+                Find Local Taxis
+              </a>
+              <span className="text-gray-500 text-xs block">Search for nearby taxi firms</span>
+            </li>
+            <li>
+              <a href="https://www.enterprise.co.uk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
+                Enterprise
+              </a>
+              <span className="text-gray-500 text-xs block">Car hire — multiple Welsh locations</span>
+            </li>
+            <li>
+              <a href="https://www.sixt.co.uk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
+                Sixt
+              </a>
+              <span className="text-gray-500 text-xs block">Car hire — Cardiff, Swansea, stations</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

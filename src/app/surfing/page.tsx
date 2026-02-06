@@ -6,6 +6,7 @@ import { SurfGradingGuide } from "@/components/surfing/SurfGradingGuide";
 import { SurfSeasonGuide } from "@/components/surfing/SurfSeasonGuide";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { RegionMap } from "@/components/ui/RegionMap";
+import { QuickAnswerBox, HubSidebar } from "@/components/activity-hub";
 import { getActivities, getEvents, getActivityTypeBySlug, getItineraries, getPostsForSidebar } from "@/lib/queries";
 import { 
   Waves, 
@@ -26,6 +27,10 @@ import {
   BookOpen,
   Home,
   Sparkles,
+  Clock,
+  PoundSterling,
+  Users,
+  Gauge,
 } from "lucide-react";
 import { JsonLd, createTouristDestinationSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 
@@ -153,31 +158,153 @@ export default async function SurfingHubPage() {
             <ChevronDown className="h-5 w-5" />
           </a>
         </div>
-      </section>
 
-      {/* Breadcrumbs */}
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <ol className="flex items-center gap-2 text-sm text-gray-600">
-          <li>
-            <Link href="/" className="hover:text-primary transition-colors">
-              Home
-            </Link>
-          </li>
-          <li>/</li>
-          <li className="text-primary font-medium">Surfing in Wales</li>
-        </ol>
-      </nav>
-
-      {/* Introduction */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="prose prose-lg max-w-4xl mx-auto">
-          {surfingHub.introduction.split('\n\n').map((paragraph, i) => (
-            <p key={i} className="text-gray-700 leading-relaxed mb-4">
-              {paragraph}
-            </p>
-          ))}
+        {/* Quick Answer Box */}
+        <div className="absolute bottom-0 left-0 right-0 translate-y-1/2 z-20 px-4">
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Calendar className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Best Time</span>
+                </div>
+                <div className="font-bold text-gray-900">Sep-Nov</div>
+              </div>
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <PoundSterling className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Lesson</span>
+                </div>
+                <div className="font-bold text-gray-900">£35-55</div>
+              </div>
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Gauge className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Difficulty</span>
+                </div>
+                <div className="font-bold text-gray-900">All Levels</div>
+              </div>
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Clock className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Session</span>
+                </div>
+                <div className="font-bold text-gray-900">2-3 hours</div>
+              </div>
+              <div className="col-span-2 md:col-span-1">
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Users className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Best For</span>
+                </div>
+                <div className="font-bold text-gray-900 text-sm">Everyone</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* Spacer for quick answer box */}
+      <div className="h-20 md:h-16" />
+
+      {/* 2-Column Layout */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Breadcrumbs */}
+        <nav className="mb-6">
+          <ol className="flex items-center gap-2 text-sm text-gray-600">
+            <li>
+              <Link href="/" className="hover:text-primary transition-colors">
+                Home
+              </Link>
+            </li>
+            <li>/</li>
+            <li className="text-primary font-medium">Surfing in Wales</li>
+          </ol>
+        </nav>
+
+        <div className="flex gap-8 lg:gap-12">
+          {/* Main Content */}
+          <main className="flex-1 min-w-0">
+            {/* Quick Answer Box - Where Should I Go? */}
+            <div className="mb-10">
+              <QuickAnswerBox
+                bestForBeginners={{
+                  label: "Best for Beginners",
+                  venue: "Llangennith, Gower",
+                  link: "/gower/things-to-do/surfing",
+                  reason: "Consistent beach break, gentle waves, surf schools galore",
+                }}
+                bestOverall={{
+                  label: "Best Overall",
+                  venue: "Freshwater West",
+                  link: "/pembrokeshire/things-to-do/surfing",
+                  reason: "Powerful swells, beautiful setting, Pembrokeshire's finest",
+                }}
+                bestValue={{
+                  label: "Best Value",
+                  venue: "Porthcawl",
+                  link: "/south-wales/things-to-do/surfing",
+                  reason: "Multiple breaks, good facilities, easy access",
+                }}
+                bestForFamilies={{
+                  label: "Best for Families",
+                  venue: "Caswell Bay",
+                  link: "/gower/things-to-do/surfing",
+                  reason: "Sheltered, lifeguarded, great café",
+                }}
+                bestForExperts={{
+                  label: "Best for Experts",
+                  venue: "Hell's Mouth (Porth Neigwl)",
+                  link: "/llyn-peninsula/things-to-do/surfing",
+                  reason: "Heavy beach break, powerful swells, Welsh Pipeline",
+                }}
+              />
+            </div>
+
+            {/* Introduction */}
+            <section className="mb-12" id="overview">
+              <div className="prose prose-lg max-w-none">
+                {surfingHub.introduction.split('\n\n').map((paragraph, i) => (
+                  <p key={i} className="text-gray-700 leading-relaxed mb-4">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </section>
+          </main>
+
+          {/* Sidebar */}
+          <HubSidebar
+            activityType="surfing"
+            navItems={[
+              { id: "overview", label: "Overview" },
+              { id: "surf-spots", label: "Surf Spots" },
+              { id: "map", label: "Map" },
+              { id: "regions", label: "By Region" },
+              { id: "skill-levels", label: "Skill Levels" },
+              { id: "seasons", label: "When to Surf" },
+              { id: "safety", label: "Safety" },
+              { id: "gear", label: "Gear Guide" },
+              { id: "schools", label: "Surf Schools" },
+              { id: "faqs", label: "FAQs" },
+            ]}
+            primaryCTA={{
+              label: "Find Surf Spots",
+              href: "#surf-spots",
+              variant: "accent",
+            }}
+            secondaryCTA={{
+              label: "Book Surf Lesson",
+              href: "/activities/type/surfing",
+            }}
+            weather={{
+              temp: 14,
+              condition: "mixed",
+              wind: 12,
+              location: "Pembrokeshire",
+            }}
+          />
+        </div>
+      </div>
 
       {/* Surf Spot League Table */}
       <section id="surf-spots" className="bg-gray-50 py-16">

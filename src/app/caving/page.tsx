@@ -5,6 +5,7 @@ import { ShowCaveCard, AdventureCaveCard, OperatorCard, DifficultyGuide } from "
 import { SeasonGuide } from "@/components/mtb/SeasonGuide";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { RegionMap } from "@/components/ui/RegionMap";
+import { QuickAnswerBox, HubSidebar } from "@/components/activity-hub";
 import { getActivities, getActivityTypeBySlug, getItineraries, getAccommodationByRegion } from "@/lib/queries";
 import {
   Mountain,
@@ -24,6 +25,9 @@ import {
   Lightbulb,
   MapPin,
   Home,
+  Clock,
+  PoundSterling,
+  Gauge,
 } from "lucide-react";
 import { JsonLd, createTouristDestinationSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 
@@ -148,31 +152,153 @@ export default async function CavingHubPage() {
             <ChevronDown className="h-5 w-5" />
           </a>
         </div>
-      </section>
 
-      {/* Breadcrumbs */}
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <ol className="flex items-center gap-2 text-sm text-gray-600">
-          <li>
-            <Link href="/" className="hover:text-primary transition-colors">
-              Home
-            </Link>
-          </li>
-          <li>/</li>
-          <li className="text-primary font-medium">Caving in Wales</li>
-        </ol>
-      </nav>
-
-      {/* Introduction */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="prose prose-lg max-w-4xl mx-auto">
-          {cavingHub.introduction.split("\n\n").map((paragraph, i) => (
-            <p key={i} className="text-gray-700 leading-relaxed mb-4">
-              {paragraph}
-            </p>
-          ))}
+        {/* Quick Answer Box */}
+        <div className="absolute bottom-0 left-0 right-0 translate-y-1/2 z-20 px-4">
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Calendar className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Best Time</span>
+                </div>
+                <div className="font-bold text-gray-900">Year-round</div>
+              </div>
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <PoundSterling className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Price</span>
+                </div>
+                <div className="font-bold text-gray-900">£45-85</div>
+              </div>
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Gauge className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Difficulty</span>
+                </div>
+                <div className="font-bold text-gray-900">All Levels</div>
+              </div>
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Clock className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Duration</span>
+                </div>
+                <div className="font-bold text-gray-900">2-6 hours</div>
+              </div>
+              <div className="col-span-2 md:col-span-1">
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Users className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Best For</span>
+                </div>
+                <div className="font-bold text-gray-900 text-sm">Adventurers</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* Spacer for quick answer box */}
+      <div className="h-20 md:h-16" />
+
+      {/* 2-Column Layout */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Breadcrumbs */}
+        <nav className="mb-6">
+          <ol className="flex items-center gap-2 text-sm text-gray-600">
+            <li>
+              <Link href="/" className="hover:text-primary transition-colors">
+                Home
+              </Link>
+            </li>
+            <li>/</li>
+            <li className="text-primary font-medium">Caving in Wales</li>
+          </ol>
+        </nav>
+
+        <div className="flex gap-8 lg:gap-12">
+          {/* Main Content */}
+          <main className="flex-1 min-w-0">
+            {/* Quick Answer Box - Where Should I Go? */}
+            <div className="mb-10">
+              <QuickAnswerBox
+                bestForBeginners={{
+                  label: "Best for Beginners",
+                  venue: "Dan yr Ogof Show Caves",
+                  link: "/brecon-beacons/things-to-do/caving",
+                  reason: "Lit walkways, no crawling, suitable for all ages",
+                }}
+                bestOverall={{
+                  label: "Best Overall",
+                  venue: "Porth yr Ogof",
+                  link: "/brecon-beacons/things-to-do/caving",
+                  reason: "Spectacular river cave, accessible adventure caving",
+                }}
+                bestValue={{
+                  label: "Best Value",
+                  venue: "National Showcaves Centre",
+                  link: "/brecon-beacons/things-to-do/caving",
+                  reason: "Multiple caves, dinosaur park included, family day out",
+                }}
+                bestForFamilies={{
+                  label: "Best for Families",
+                  venue: "Dan yr Ogof",
+                  link: "/brecon-beacons/things-to-do/caving",
+                  reason: "Three show caves, no experience needed, café on-site",
+                }}
+                bestForExperts={{
+                  label: "Best for Experts",
+                  venue: "Ogof Ffynnon Ddu",
+                  link: "/brecon-beacons/things-to-do/caving",
+                  reason: "Britain's deepest cave, 50km passages, club access only",
+                }}
+              />
+            </div>
+
+            {/* Introduction */}
+            <section className="mb-12" id="overview">
+              <div className="prose prose-lg max-w-none">
+                {cavingHub.introduction.split("\n\n").map((paragraph, i) => (
+                  <p key={i} className="text-gray-700 leading-relaxed mb-4">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </section>
+          </main>
+
+          {/* Sidebar */}
+          <HubSidebar
+            activityType="caving"
+            navItems={[
+              { id: "overview", label: "Overview" },
+              { id: "show-caves", label: "Show Caves" },
+              { id: "adventure-caves", label: "Adventure Caves" },
+              { id: "map", label: "Cave Map" },
+              { id: "operators", label: "Operators" },
+              { id: "difficulty", label: "Difficulty Levels" },
+              { id: "regions", label: "By Region" },
+              { id: "seasons", label: "When to Go" },
+              { id: "gear", label: "Gear Guide" },
+              { id: "faqs", label: "FAQs" },
+            ]}
+            primaryCTA={{
+              label: "Find Show Caves",
+              href: "#show-caves",
+              variant: "accent",
+            }}
+            secondaryCTA={{
+              label: "Book Caving Trip",
+              href: "/activities/type/caving",
+            }}
+            weather={{
+              temp: 10,
+              condition: "underground",
+              wind: 0,
+              location: "Brecon Beacons",
+            }}
+          />
+        </div>
+      </div>
 
       {/* Show Caves Section */}
       <section id="show-caves" className="bg-gray-50 py-16">

@@ -29,11 +29,12 @@ export function CustomStopForm({ itinerarySlug, dayNumber }: CustomStopFormProps
     }
   });
 
-  const addStop = () => {
-    if (!text.trim()) return;
+  const addStop = (overrideText?: string) => {
+    const stopText = overrideText ?? text;
+    if (!stopText.trim()) return;
     const newStop: CustomStop = {
       id: `custom-${Date.now()}`,
-      text: text.trim(),
+      text: stopText.trim(),
       dayNumber,
     };
     
@@ -81,28 +82,51 @@ export function CustomStopForm({ itinerarySlug, dayNumber }: CustomStopFormProps
 
       {/* Add form */}
       {isOpen ? (
-        <div className="flex gap-2">
-          <input
-            type="text"
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && addStop()}
-            placeholder="e.g. Pick up hire car, Visit Portmeirion..."
-            className="flex-1 text-sm px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
-            autoFocus
-          />
-          <button
-            onClick={addStop}
-            className="px-3 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90"
-          >
-            Add
-          </button>
-          <button
-            onClick={() => { setIsOpen(false); setText(""); }}
-            className="px-2 text-gray-400 hover:text-gray-600"
-          >
-            <X className="w-4 h-4" />
-          </button>
+        <div className="space-y-2">
+          {/* Quick add buttons */}
+          <div className="flex flex-wrap gap-1.5">
+            {[
+              "☕ Rest & Relaxation",
+              "🚶 Local Walk",
+              "🛍️ Shopping in town",
+              "🍽️ Lunch break",
+              "📸 Photo stop",
+            ].map((option) => (
+              <button
+                key={option}
+                onClick={() => addStop(option)}
+                className="text-xs px-2.5 py-1.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-full transition-colors"
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+          
+          {/* Custom input */}
+          <div className="flex gap-2">
+            <input
+              type="text"
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && addStop()}
+              placeholder="Or type your own..."
+              className="flex-1 text-sm px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
+              autoFocus
+            />
+            <button
+              onClick={addStop}
+              disabled={!text.trim()}
+              className="px-3 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90 disabled:opacity-50"
+            >
+              Add
+            </button>
+            <button
+              onClick={() => { setIsOpen(false); setText(""); }}
+              className="px-2 text-gray-400 hover:text-gray-600"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
         </div>
       ) : (
         <button

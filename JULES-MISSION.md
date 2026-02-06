@@ -34,10 +34,16 @@ geograph.org.uk/search.php?q=snowdon+summit
 geograph.org.uk/search.php?q=pembrokeshire+coast
 ```
 
+### Image Requirements
+- **Minimum resolution: 1024px** on shortest edge
+- **Target: 10 images per spot** (for cherry-picking)
+- Prefer landscape orientation for heroes
+- Mix of: wide establishing shots, detail shots, action if available
+
 ### Image Data to Capture
 For each image found:
 ```csv
-spot_slug,image_url,source,license,author,attribution_text,resolution,description
+spot_slug,image_url,source,license,author,attribution_text,width,height,orientation,description
 ```
 
 ---
@@ -474,26 +480,35 @@ Target: 15-20 crags
 ```
 Find Creative Commons licensed images for Pembrokeshire and Gower beaches.
 
+REQUIREMENTS:
+- Minimum resolution: 1024px on shortest edge
+- Target: 10 images per beach (for cherry-picking best ones)
+- Mix of: aerial/wide shots, beach-level views, detail shots, people if available
+- Prefer landscape orientation
+
 Search:
 - commons.wikimedia.org/wiki/Category:Beaches_of_Pembrokeshire
 - commons.wikimedia.org/wiki/Category:Gower_Peninsula
 - geograph.org.uk (search each beach name)
+- flickr.com/creativecommons (search beach names)
 
 For each image capture:
 - spot_slug (matching our beach slugs)
-- image_url (full resolution)
-- thumbnail_url (if available)
+- image_url (full resolution direct link)
 - source (wikimedia/geograph/flickr/unsplash)
 - license (CC-BY-SA-4.0, CC-BY-2.0, Public Domain, etc.)
 - author
-- attribution_text (ready to use)
-- resolution (WxH)
-- description
+- attribution_text (ready to use, formatted)
+- width (pixels)
+- height (pixels)
+- orientation (landscape/portrait/square)
+- description (what's in the image)
 
-Priority: Find 2-3 images per Tier A beach, 1-2 per Tier B.
+Skip images under 1024px on shortest edge.
 
 Output: CSV file
-Target: 50-70 images
+Beaches covered: ~30
+Target: 300 images (10 per beach)
 ```
 
 ---
@@ -503,10 +518,16 @@ Target: 50-70 images
 Find Creative Commons licensed images for Llŷn, Anglesey, 
 and Snowdonia coast beaches.
 
-[Same approach as IMG-1]
+REQUIREMENTS:
+- Minimum resolution: 1024px on shortest edge
+- Target: 10 images per beach
+- Mix of shots, prefer landscape orientation
+
+[Same fields and approach as IMG-1]
 
 Output: CSV file
-Target: 40-50 images
+Beaches covered: ~35
+Target: 350 images (10 per beach)
 ```
 
 ---
@@ -515,17 +536,23 @@ Target: 40-50 images
 ```
 Find Creative Commons licensed images for Welsh mountains and hiking trails.
 
+REQUIREMENTS:
+- Minimum resolution: 1024px on shortest edge
+- Target: 10 images per trail/peak
+- Mix of: summit views, trail scenes, dramatic landscapes, walkers on paths
+- Prefer landscape orientation
+
 Search:
 - commons.wikimedia.org/wiki/Category:Mountains_of_Wales
 - commons.wikimedia.org/wiki/Category:Snowdonia
 - commons.wikimedia.org/wiki/Category:Brecon_Beacons
-- geograph.org.uk (search peak names)
+- geograph.org.uk (search peak names, trail names)
 
-Priority: Summit views, trail scenes, dramatic landscapes.
-Find 2-3 images per major peak/trail.
+[Same fields as IMG-1]
 
 Output: CSV file
-Target: 60-80 images
+Trails/peaks covered: ~75
+Target: 750 images (10 per location)
 ```
 
 ---
@@ -534,16 +561,23 @@ Target: 60-80 images
 ```
 Find Creative Commons licensed images for Welsh surf spots and water sports.
 
+REQUIREMENTS:
+- Minimum resolution: 1024px on shortest edge
+- Target: 10 images per surf break
+- Include: Surfing action, wave shots, beach scenes, kayaking, SUP, coasteering
+- Action shots highly valued
+
 Search:
 - commons.wikimedia.org/wiki/Category:Surfing_in_Wales
-- flickr.com/creativecommons (search: wales surfing, gower surf)
+- flickr.com/creativecommons (search: wales surfing, gower surf, llangennith)
 - geograph.org.uk
+- unsplash.com (for generic surf action if needed)
 
-Include: Surfing action shots, beach scenes at surf spots,
-kayaking, paddleboarding, coasteering.
+[Same fields as IMG-1]
 
 Output: CSV file
-Target: 30-40 images
+Breaks covered: ~35
+Target: 350 images (10 per break)
 ```
 
 ---
@@ -552,15 +586,22 @@ Target: 30-40 images
 ```
 Find Creative Commons licensed images for Welsh wild swimming spots.
 
+REQUIREMENTS:
+- Minimum resolution: 1024px on shortest edge
+- Target: 10 images per swimming spot
+- Include: Lake scenes, river pools, waterfall pools, people swimming if available
+- Blue Lagoon Abereiddy is high priority
+
 Search:
-- commons.wikimedia.org (search lake names)
-- geograph.org.uk (search: swimming, wild swimming, lakes)
+- commons.wikimedia.org (search lake names: Llyn Idwal, Llyn Padarn, etc.)
+- geograph.org.uk (search: lake names, waterfall names)
 - flickr.com/creativecommons
 
-Include: Lake scenes, river pools, waterfall pools, Blue Lagoon.
+[Same fields as IMG-1]
 
 Output: CSV file
-Target: 30-40 images
+Spots covered: ~45
+Target: 450 images (10 per spot)
 ```
 
 ---
@@ -569,18 +610,27 @@ Target: 30-40 images
 ```
 Find Creative Commons licensed ACTIVITY images - people doing adventures.
 
+REQUIREMENTS:
+- Minimum resolution: 1024px on shortest edge
+- These are GENERIC activity shots, not location-specific
+- For hero images, headers, category pages
+- Prefer images showing people actively engaged
+
 Search across sources for:
-- Mountain biking action
-- Hiking/walking groups
-- Climbing
-- Coasteering groups
+- Mountain biking action (Wales preferred, UK acceptable)
+- Hiking/walking groups on mountains
+- Rock climbing action
+- Coasteering groups jumping/swimming
 - Families on beaches
 - Camping/adventure lifestyle
+- Kayaking/paddleboarding
 
-These are for hero images, headers, and general adventure content.
+Tag each image with activity type for easy filtering.
+
+[Same fields as IMG-1, add: activity_type field]
 
 Output: CSV file
-Target: 40-50 images
+Target: 100 images (mix across all activity types)
 ```
 
 ---
@@ -654,5 +704,7 @@ Jules delivers to:
 | Tier B spots | 100-120 |
 | Unique descriptions | 100% |
 | Coordinates verified | 100% |
-| Images sourced | 250+ |
+| **Images sourced** | **2,000+** |
+| Images per spot | 10 |
+| Minimum resolution | 1024px shortest edge |
 | Images with attribution | 100% |

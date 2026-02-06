@@ -1,0 +1,123 @@
+{
+  "name": "Cwmcarn Forest",
+  "slug": "cwmcarn-forest",
+  "website": "https://www.cwmcarnforest.co.uk/",
+  "contact": {
+    "phone": "01495 272001",
+    "email": "cwmcarn-vc@caerphilly.gov.uk"
+  },
+  "location": {
+    "address": "Cwmcarn Forest Drive, Crosskeys, Caerphilly, NP11 7FA",
+    "coordinates": {
+      "lat": 51.6359449,
+      "lng": -3.1143582
+    },
+    "directions": "Take M4 Junction 28, heading north on A467 past Risca and Crosskeys towards Abercarn. Turn right at fifth roundabout, Cwmcarn Forest centre is signposted from there. Nearest train station is Crosskeys."
+  },
+  "media": {
+    "coverImage": "https://www.cwmcarnforest.co.uk/wp-content/themes/cwmcarn/images/home.jpg",
+    "logo": "https://www.cwmcarnforest.co.uk/wp-content/themes/cwmcarn/images/cwmcarn_logo.svg",
+    "gallery": [
+      "https://www.cwmcarnforest.co.uk/wp-content/uploads/2021/05/CwmcarnForestDrive-135-300x200.jpg",
+      "https://www.cwmcarnforest.co.uk/wp-content/uploads/2021/05/CwmcarnForestDrive-60.jpg",
+      "https://www.cwmcarnforest.co.uk/wp-content/uploads/2021/07/CwmcarnForestDrive-100.jpg",
+      "https://www.cwmcarnforest.co.uk/wp-content/uploads/2020/10/Aerial-view-of-Cwmcarn-lodges-and-lake-smaller.jpg"
+    ]
+  },
+  "reviews": {
+    "google": {
+      "rating": 4.8,
+      "reviewCount": 1477
+    },
+    "alltrails": {
+      "rating": 4.0,
+      "reviewCount": 492
+    },
+    "komoot": {
+      "rating": 4.3
+    }
+  },
+  "description": "Set in the heart of the South Wales valleys, Cwmcarn Forest is a haven where nature has reclaimed a previously mined landscape, transforming it into peaceful woodlands with spectacular views stretching to the Bristol Channel and Brecon Beacons. Just 10 minutes from Junction 28 of the M4, this accessible destination offers everything from a scenic 7-mile forest drive with eight stop-off points, adventure playgrounds, and sensory trails, to a modern visitor centre with café, gift shop, and camping facilities.\n\nCwmcarn is renowned as a mountain biking paradise, featuring five purpose-built trails catering to all skill levels. The blue-graded Pwca offers an accessible introduction, while the legendary red-graded Twrch and Cafall trails deliver 13km+ of hand-built singletrack through remote forest terrain. For adrenaline seekers, the black-graded Pedalhounds and the extreme-rated Y Mynydd downhill—designed by Phil Saxena and considered one of the UK's best DH venues—provide serious challenge. On-site uplift services, bike hire from PS Cycles, and a bike wash complete the package.\n\nBeyond biking, Cwmcarn offers diverse walking trails from gentle 1-mile strolls along the Nantcarn stream to the challenging 9-mile 1807 Walk and the rewarding climb to Twmbarlwm Iron Age hillfort. Families enjoy the Wildlife Explorer Challenge, adventure playgrounds, and the Visit Wales 4-star graded campsite with glamping pods and lodges. Ravens Café serves locally-sourced meals overlooking the river, making Cwmcarn a complete outdoor destination for day trips or extended stays.",
+  "activities": [
+    "Mountain Biking",
+    "Walking",
+    "Hiking",
+    "Downhill MTB",
+    "Forest Drive",
+    "Camping",
+    "Glamping",
+    "Wildlife Watching",
+    "Orienteering"
+  ],
+  "trails": [
+    {
+      "name": "Pwca",
+      "grade": "Blue (Moderate)",
+      "type": "XC"
+    },
+    {
+      "name": "Cafall",
+      "grade": "Red (Difficult)",
+      "type": "XC",
+      "elevation": "400m+",
+      "description": "Tough climbs and tight hand-built singletrack with fantastic steep and technical descents"
+    },
+    {
+      "name": "Twrch",
+      "grade": "Red (Difficult)",
+      "type": "XC",
+      "length": "13km",
+      "description": "Legendary trail, virtually entire route on purpose-built singletrack, rideable in all weather"
+    },
+    {
+      "name": "Pedalhounds",
+      "grade": "Black (Severe)",
+      "type": "Downhill"
+    },
+    {
+      "name": "Y Mynydd",
+      "grade": "Double Black (Extreme)",
+      "type": "Downhill",
+      "description": "Designed by Phil Saxena, one of the best DH venues in the UK"
+    }
+  ],
+  "facilities": [
+    "Visitor Centre",
+    "Café (Ravens Café)",
+    "Gift Shop",
+    "Toilets",
+    "Pay & Display Parking",
+    "Bike Hire (PS Cycles)",
+    "Bike Wash",
+    "Uplift Service (Cwmdown)",
+    "Campsite",
+    "Glamping Pods",
+    "Lodges",
+    "Adventure Playground",
+    "Picnic Areas",
+    "BBQ Spots"
+  ],
+  "openingHours": {
+    "visitorCentre": {
+      "easterToSeptember": "Daily 9am-5pm",
+      "octoberToEaster": "Mon-Thu & Sat-Sun 9am-5pm, Fri 9am-4:30pm"
+    },
+    "forestDrive": {
+      "winter": "Weekends only, 10am-2pm (exit by 4pm)"
+    }
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/cwmcarnforest/",
+    "instagram": "https://www.instagram.com/explore/locations/25428148/cwmcarn-forest-drive/",
+    "youtube": "https://www.youtube.com/playlist?list=PLsxHEf6LxVbEGJPDBEN0taNkY1xwdAxjH"
+  },
+  "managedBy": "Caerphilly County Borough Council (in partnership with Natural Resources Wales)",
+  "sources": [
+    "https://www.cwmcarnforest.co.uk/",
+    "https://naturalresources.wales/days-out/places-to-visit/south-east-wales/cwm-carn-forest/?lang=en",
+    "https://www.mbwales.com/agents/cwmcarn/",
+    "https://www.visitwales.com/attraction/visitor-centre/cwmcarn-forest-and-visitor-centre-536431",
+    "https://valleysregionalpark.wales/gateways/cwmcarn-forest/"
+  ],
+  "researchedAt": "2026-02-06T23:15:00Z"
+}

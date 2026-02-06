@@ -10,6 +10,12 @@ import { pembrokeshireData } from '../data/regions/pembrokeshire';
 import { breconBeaconsData } from '../data/regions/brecon-beacons';
 import { gowerData } from '../data/regions/gower';
 import { angleseyData } from '../data/regions/anglesey';
+import { northWalesData } from '../data/regions/north-wales';
+import { southWalesData } from '../data/regions/south-wales';
+import { midWalesData } from '../data/regions/mid-wales';
+import { wyeValleyData } from '../data/regions/wye-valley';
+import { llynPeninsulaData } from '../data/regions/llyn-peninsula';
+import { carmarthenshireData } from '../data/regions/carmarthenshire';
 
 const regionDataMap: Record<string, any> = {
   snowdonia: snowdoniaData,
@@ -17,6 +23,12 @@ const regionDataMap: Record<string, any> = {
   'brecon-beacons': breconBeaconsData,
   gower: gowerData,
   anglesey: angleseyData,
+  'north-wales': northWalesData,
+  'south-wales': southWalesData,
+  'mid-wales': midWalesData,
+  'wye-valley': wyeValleyData,
+  'llyn-peninsula': llynPeninsulaData,
+  carmarthenshire: carmarthenshireData,
 };
 
 // Build a rich description from the data

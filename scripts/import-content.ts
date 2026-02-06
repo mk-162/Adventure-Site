@@ -184,48 +184,67 @@ async function importLocations() {
 async function importEvents() {
   console.log("\n🎪 Importing events...");
   const contentDir = path.join(__dirname, "../content");
-  const csvPath = path.join(contentDir, "events.csv");
+  const eventsDir = path.join(contentDir, "events");
   
-  if (!fs.existsSync(csvPath)) {
-    console.log("   ⚠️ events.csv not found, skipping");
+  // Collect all event CSV files
+  const files: string[] = [];
+
+  // Check for main events.csv
+  const mainEventsPath = path.join(contentDir, "events.csv");
+  if (fs.existsSync(mainEventsPath)) {
+    files.push(mainEventsPath);
+  }
+
+  // Check for CSVs in events subdirectory
+  if (fs.existsSync(eventsDir)) {
+    const eventFiles = fs.readdirSync(eventsDir).filter(f => f.endsWith(".csv"));
+    eventFiles.forEach(f => files.push(path.join(eventsDir, f)));
+  }
+
+  if (files.length === 0) {
+    console.log("   ⚠️ No event CSV files found, skipping");
     return;
   }
 
-  const data = parseCSV(fs.readFileSync(csvPath, "utf-8"));
   const siteId = await getSiteId();
   let imported = 0;
   let skipped = 0;
 
-  for (const row of data) {
-    const regionId = await getRegionId(row["Region"]);
-    if (!regionId) {
-      console.log(`   ⚠️ Region not found: ${row["Region"]}, skipping ${row["Event Name"]}`);
-      skipped++;
-      continue;
-    }
+  for (const filePath of files) {
+    console.log(`   📄 Processing ${path.relative(contentDir, filePath)}...`);
+    const data = parseCSV(fs.readFileSync(filePath, "utf-8"));
 
-    const slug = slugify(row["Event Name"]);
-    const cost = parsePrice(row["Registration Cost (£)"]);
+    for (const row of data) {
+      const regionId = await getRegionId(row["Region"]);
+      if (!regionId) {
+        console.log(`   ⚠️ Region not found: ${row["Region"]}, skipping ${row["Event Name"]}`);
+        skipped++;
+        continue;
+      }
 
-    try {
-      await sql`
-        INSERT INTO events (site_id, region_id, name, slug, type, description, month_typical, location, website, registration_cost, capacity, status)
-        VALUES (
-          ${siteId}, ${regionId}, ${row["Event Name"]}, ${slug}, ${row["Type"]},
-          ${row["description"] || row["Description"] || null},
-          ${row["Date(s)/Month"] || null}, ${row["Location"] || null},
-          ${row["Website"] || null}, ${cost.from},
-          ${row["Participant Capacity"] || null}, 'published'
-        )
-        ON CONFLICT (slug) DO UPDATE SET
-          description = EXCLUDED.description,
-          month_typical = EXCLUDED.month_typical,
-          registration_cost = EXCLUDED.registration_cost
-      `;
-      imported++;
-    } catch (e: any) {
-      console.log(`   ❌ Error importing ${row["Event Name"]}: ${e.message}`);
-      skipped++;
+      const slug = slugify(row["Event Name"]);
+      const cost = parsePrice(row["Registration Cost (£)"]);
+
+      try {
+        await sql`
+          INSERT INTO events (site_id, region_id, name, slug, type, description, month_typical, location, website, registration_cost, capacity, status)
+          VALUES (
+            ${siteId}, ${regionId}, ${row["Event Name"]}, ${slug}, ${row["Type"]},
+            ${row["description"] || row["Description"] || null},
+            ${row["Date(s)/Month"] || null}, ${row["Location"] || null},
+            ${row["Website"] || null}, ${cost.from},
+            ${row["Participant Capacity"] || null}, 'published'
+          )
+          ON CONFLICT (slug) DO UPDATE SET
+            description = EXCLUDED.description,
+            month_typical = EXCLUDED.month_typical,
+            registration_cost = EXCLUDED.registration_cost
+        `;
+        imported++;
+      } catch (e: any) {
+        console.log(`   ❌ Error importing ${row["Event Name"]}: ${e.message}`);
+        skipped++;
+      }
     }
   }
   console.log(`   ✅ Imported ${imported}, skipped ${skipped}`);

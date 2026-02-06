@@ -12,6 +12,7 @@ Operating playbooks for building Adventure Wales. These are the rules we follow.
 | [IMAGE-STRATEGY.md](IMAGE-STRATEGY.md) | How to source, license, and use images |
 | [DATA-QUALITY.md](DATA-QUALITY.md) | Scoring rubric, tiers, tagging taxonomy |
 | [JULES-TASKS.md](JULES-TASKS.md) | Research task prompts for Jules |
+| [CONTENT-WORKFLOW.md](CONTENT-WORKFLOW.md) | How research becomes quality pages |
 | [ULTIMATE-CONTENT-PLAN.md](ULTIMATE-CONTENT-PLAN.md) | Overall content architecture |
 
 ## The Golden Rules

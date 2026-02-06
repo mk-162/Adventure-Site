@@ -190,7 +190,7 @@ export default async function LocationPage({ params }: Props) {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             {region && (
               <Link
-                href={`/${region.slug}/things-to-do`}
+                href={`/${region.slug}`}
                 className="inline-flex items-center justify-center gap-2 bg-white text-primary font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition-colors"
               >
                 Things to Do

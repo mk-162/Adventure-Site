@@ -1,0 +1,130 @@
+{
+  "operatorId": "gigrin-farm",
+  "name": "Gigrin Farm Red Kite Feeding Centre",
+  "slug": "gigrin-farm-red-kite-feeding",
+  "category": "wildlife",
+  "subcategory": "birdwatching",
+  
+  "contact": {
+    "phone": "01597 810243",
+    "phoneNote": "10am to 5pm on days when the farm is open",
+    "email": "office@gigrin.co.uk",
+    "website": "https://www.gigrin.co.uk"
+  },
+  
+  "address": {
+    "street": "South Street",
+    "town": "Rhayader",
+    "county": "Powys",
+    "postcode": "LD6 5BL",
+    "what3words": "restore.reconnect.diplomat"
+  },
+  
+  "coordinates": {
+    "lat": 52.2998,
+    "lng": -3.5086
+  },
+  
+  "images": {
+    "cover": "https://images.squarespace-cdn.com/content/v1/66cf401883c8ba4ca3e98425/195f136d-5b3f-4fb1-a613-0eae9662522a/Sky+Gigrin+Farm.jpg",
+    "coverAlt": "Hundreds of red kites soaring in the sky above Gigrin Farm during feeding time",
+    "logo": null,
+    "logoNote": "No distinct logo found - uses text-based branding",
+    "gallery": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/66cf401883c8ba4ca3e98425/d9dc2705-0291-44f5-98e8-ba913fb1e64c/red-kite.png",
+        "alt": "Close-up of a red kite in flight"
+      }
+    ]
+  },
+  
+  "description": {
+    "short": "The UK's premier Red Kite feeding station, where hundreds of these magnificent raptors gather daily for a spectacular aerial display.",
+    "full": "Gigrin Farm is a small family-run farm in the heart of Mid Wales, now world-famous as the UK's official Red Kite Feeding Centre. Located just half a mile from the market town of Rhayader, overlooking both the Wye and Elan Valleys, the farm attracts between 300 and 600 wild Red Kites every single day for a truly breathtaking spectacle that has been running since 1992.\n\nThe feeding station was established following a request from the RSPB when Red Kites were on the verge of extinction in the UK. Founder Eithel Powell began feeding the birds daily, and over three decades later, the Kites have thrived and are no longer endangered. The farm has played a pivotal role in one of conservation's greatest success stories. Visitors can watch from comfortable general hides or specialist photographic hides positioned just metres from where the Kites feed.\n\nThe Red Kite Centre offers a complete visitor experience with a coffee shop serving homemade cakes and refreshments, a gift shop, picnic site, and scenic farm walk. The farm is particularly special as it's home to several rare leucistic (white) Red Kites - there are thought to be only around 10 in the world, and three visit Gigrin regularly. As Simon King from Springwatch put it: \"For Red Kites like you've probably never seen them before\" - this is truly a world-class wildlife experience."
+  },
+  
+  "openingTimes": {
+    "general": "Open 12:30pm to 5pm",
+    "feedingTime": "3pm (March-October) / 2pm (November-February)",
+    "closedDays": ["Thursday", "Friday"],
+    "note": "Open every day during school holidays. Closed Christmas period (20th-26th Dec). Check website for exact dates."
+  },
+  
+  "pricing": {
+    "adult": 12.00,
+    "concession": 10.00,
+    "child": 7.50,
+    "childAgeRange": "4-15",
+    "under3": "Free",
+    "family": 37.00,
+    "familyNote": "2 adults + 2 children",
+    "dogs": "First dog free per adult, £5 per additional dog",
+    "currency": "GBP"
+  },
+  
+  "reviews": {
+    "google": {
+      "rating": 4.7,
+      "reviewCount": 2100,
+      "note": "Approximate - unable to fetch live data due to API limits"
+    },
+    "tripadvisor": {
+      "note": "Unable to fetch - blocked by TripAdvisor"
+    },
+    "testimonials": [
+      {
+        "quote": "For Red Kites like you've probably never seen them before",
+        "author": "Simon King",
+        "source": "Springwatch"
+      },
+      {
+        "quote": "It is quite an incredible sight to witness as the daily feeding starts and these magnificent birds gradually circle in from all directions.",
+        "author": "Paul Williams"
+      },
+      {
+        "quote": "A magical experience to see so many birds swooping down. Get a place in a hide - it's well worth it. Nice walk. Lovely site, friendly staff, nice cafe - can recommend the cake.",
+        "author": "Anna Reeves"
+      }
+    ]
+  },
+  
+  "features": [
+    "Wheelchair accessible hides",
+    "Coffee shop",
+    "Gift shop",
+    "Photographic hides",
+    "Photography workshops",
+    "Dog friendly",
+    "Family friendly",
+    "Coach groups welcome",
+    "School trips available",
+    "Rare leucistic (white) red kites",
+    "Farm walk",
+    "Picnic area"
+  ],
+  
+  "bookingRequired": true,
+  "bookingNote": "Booking ahead recommended - numbers limited daily to prevent overcrowding",
+  
+  "socialMedia": {
+    "instagram": "https://www.instagram.com/gigrinfarm",
+    "facebook": "https://www.facebook.com/GigrinFarmOffical"
+  },
+  
+  "history": {
+    "established": 1992,
+    "founder": "Eithel Powell",
+    "currentOwnership": "Dominique Powell and Thomas Brickwood (family-owned)",
+    "conservationNote": "Official RSPB Red Kite Feeding Station since 1992/93. Instrumental in saving Red Kites from extinction in the UK."
+  },
+  
+  "researchMetadata": {
+    "researchedAt": "2026-02-06",
+    "sources": [
+      "https://www.gigrin.co.uk",
+      "https://www.gigrin.co.uk/about",
+      "https://www.gigrin.co.uk/red-kite-feeding"
+    ],
+    "notes": "TripAdvisor blocked access. Google reviews approximated. No distinct logo image found on website - uses text-based branding. Coordinates derived from what3words address."
+  }
+}

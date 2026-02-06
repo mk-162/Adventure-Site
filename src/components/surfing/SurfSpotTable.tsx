@@ -142,7 +142,7 @@ export function SurfSpotTable({ spots }: SurfSpotTableProps) {
                 </td>
                 <td className="px-4 py-4">
                   <Link 
-                    href={`/${spot.regionSlug}/things-to-do/surfing`}
+                    href={`/${spot.regionSlug}/surfing`}
                     className="text-sm text-gray-600 hover:text-accent-hover transition-colors"
                   >
                     {spot.region}

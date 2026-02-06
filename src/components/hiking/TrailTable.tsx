@@ -181,7 +181,7 @@ export function TrailTable({ trails }: TrailTableProps) {
                 </td>
                 <td className="px-4 py-4">
                   <Link 
-                    href={`/${trail.regionSlug}/things-to-do/hiking`}
+                    href={`/${trail.regionSlug}/hiking`}
                     className="text-sm text-gray-600 hover:text-accent-hover transition-colors"
                   >
                     {trail.region}

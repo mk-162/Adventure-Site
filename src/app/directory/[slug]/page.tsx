@@ -975,7 +975,7 @@ export default async function OperatorProfilePage({ params }: Props) {
                 return (
                   <Link
                     key={typeSlug}
-                    href={`/${primaryRegion}/things-to-do/${typeSlug}`}
+                    href={`/${primaryRegion}/${typeSlug}`}
                     className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-primary hover:border-accent-hover hover:text-accent-hover transition-colors"
                   >
                     {typeName} in {regionDisplayName}

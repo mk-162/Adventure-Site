@@ -120,7 +120,7 @@ export default async function AccommodationPage({ params }: Props) {
     { name: 'Accommodation', url: '/accommodation' },
   ];
   if (region) {
-    breadcrumbItems.push({ name: region.name, url: `/${region.slug}/where-to-stay` });
+    breadcrumbItems.push({ name: region.name, url: `/${region.slug}/stay` });
   }
   breadcrumbItems.push({ name: accommodation.name, url: `/accommodation/${slug}` });
 
@@ -147,7 +147,7 @@ export default async function AccommodationPage({ params }: Props) {
             <ChevronRight className="h-4 w-4" />
             {region && (
               <>
-                <Link href={`/${region.slug}/where-to-stay`} className="hover:text-white">
+                <Link href={`/${region.slug}/stay`} className="hover:text-white">
                   {region.name} Stays
                 </Link>
                 <ChevronRight className="h-4 w-4" />

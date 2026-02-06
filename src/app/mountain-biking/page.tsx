@@ -234,31 +234,31 @@ export default async function MountainBikingHubPage() {
                 bestForBeginners={{
                   label: "Best for Beginners",
                   venue: "Coed Llandegla",
-                  link: "/north-wales/things-to-do/mountain-biking",
+                  link: "/north-wales/mountain-biking",
                   reason: "Progressive trails, great facilities, confidence-building",
                 }}
                 bestOverall={{
                   label: "Best Overall",
                   venue: "BikePark Wales",
-                  link: "/brecon-beacons/things-to-do/mountain-biking",
+                  link: "/brecon-beacons/mountain-biking",
                   reason: "40+ trails, all grades, UK's biggest uplift park",
                 }}
                 bestValue={{
                   label: "Best Value",
                   venue: "Coed y Brenin",
-                  link: "/snowdonia/things-to-do/mountain-biking",
+                  link: "/snowdonia/mountain-biking",
                   reason: "Free world-class trails, pay only for parking",
                 }}
                 bestForFamilies={{
                   label: "Best for Families",
                   venue: "Afan Forest Park",
-                  link: "/south-wales/things-to-do/mountain-biking",
+                  link: "/south-wales/mountain-biking",
                   reason: "Mix of grades, scenic, good cafe",
                 }}
                 bestForExperts={{
                   label: "Best for Experts",
                   venue: "Antur Stiniog",
-                  link: "/snowdonia/things-to-do/mountain-biking",
+                  link: "/snowdonia/mountain-biking",
                   reason: "Steepest DH in Wales, slate quarry gnar",
                 }}
               />
@@ -297,7 +297,7 @@ export default async function MountainBikingHubPage() {
             }}
             secondaryCTA={{
               label: "Book MTB Experience",
-              href: "/activities/type/mountain-biking",
+              href: "/mountain-biking",
             }}
             weather={{
               temp: 12,
@@ -376,7 +376,7 @@ export default async function MountainBikingHubPage() {
             {mountainBikingHub.regions.map((region) => (
               <Link
                 key={region.slug}
-                href={`/${region.slug}/things-to-do/mountain-biking`}
+                href={`/${region.slug}/mountain-biking`}
                 className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-xl hover:border-primary transition-all duration-300 hover:-translate-y-1"
               >
                 <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-accent-hover transition-colors">
@@ -580,7 +580,7 @@ export default async function MountainBikingHubPage() {
 
             <div className="text-center mt-8">
               <Link
-                href="/activities/type/mountain-biking"
+                href="/mountain-biking"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl hover:bg-accent-hover transition-colors font-semibold"
               >
                 Browse all mountain biking experiences

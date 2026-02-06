@@ -705,7 +705,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
                   {activityTypesWithCount.map((item) => (
                     <Link
                       key={item.activityType.id}
-                      href={`/${regionSlug}/things-to-do/${item.activityType.slug}`}
+                      href={`/${regionSlug}/${item.activityType.slug}`}
                       className="group relative overflow-hidden rounded-xl bg-white border border-gray-200 hover:border-primary/30 hover:shadow-lg transition-all"
                     >
                       <div className="aspect-[4/3] relative bg-gradient-to-br from-primary/10 to-accent-hover/10">
@@ -796,7 +796,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
               <section id="accommodation" className="scroll-mt-32">
                 <div className="flex justify-between items-end mb-4 lg:mb-5">
                   <h3 className="text-lg lg:text-xl font-bold text-primary">Where to Stay</h3>
-                  <Link href={`/${regionSlug}/where-to-stay`} className="text-primary text-sm font-bold hover:underline flex items-center gap-1">
+                  <Link href={`/${regionSlug}/stay`} className="text-primary text-sm font-bold hover:underline flex items-center gap-1">
                     View all <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>

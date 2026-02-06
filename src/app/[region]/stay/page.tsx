@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
-import { getRegionBySlug, getAccommodationByRegion } from "@/lib/queries";
+import Link from "next/link";
+import { getRegionBySlug, getAccommodationByRegion, getAllRegions } from "@/lib/queries";
 import { AccommodationCard } from "@/components/cards/accommodation-card";
-import { MapPin, Mountain, Waves, Compass, Tent, Home } from "lucide-react";
+import { MapPin, Mountain, Compass } from "lucide-react";
 
 interface AccommodationPageProps {
   params: Promise<{ region: string }>;
@@ -128,6 +129,27 @@ const regionalGuides: Record<string, {
   },
 };
 
+export async function generateStaticParams() {
+  const regionsData = await getAllRegions();
+  return regionsData.map((region) => ({
+    region: region.slug,
+  }));
+}
+
+export async function generateMetadata({ params }: AccommodationPageProps) {
+  const { region: regionSlug } = await params;
+  const region = await getRegionBySlug(regionSlug);
+  
+  if (!region) {
+    return { title: "Accommodation Not Found" };
+  }
+  
+  return {
+    title: `Where to Stay in ${region.name} | Adventure Wales`,
+    description: `Find adventure-friendly accommodation in ${region.name}. Hostels, bunkhouses, hotels and B&Bs perfect for outdoor activities.`,
+  };
+}
+
 export default async function AccommodationPage({ params }: AccommodationPageProps) {
   const { region: regionSlug } = await params;
   const region = await getRegionBySlug(regionSlug);
@@ -147,11 +169,11 @@ export default async function AccommodationPage({ params }: AccommodationPagePro
       <section className="bg-primary py-12">
         <div className="max-w-7xl mx-auto px-4">
           <nav className="text-white/70 text-sm mb-4">
-            <a href="/" className="hover:text-white">Home</a>
+            <Link href="/" className="hover:text-white">Home</Link>
             <span className="mx-2">›</span>
-            <a href={`/${regionSlug}`} className="hover:text-white">{region.name}</a>
+            <Link href={`/${regionSlug}`} className="hover:text-white">{region.name}</Link>
             <span className="mx-2">›</span>
-            <span className="text-white">Where to Stay</span>
+            <span className="text-white">Stay</span>
           </nav>
 
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">

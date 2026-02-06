@@ -135,7 +135,7 @@ export default async function StagHenPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {popularActivities.map((activity) => (
-              <Link key={activity.slug} href={`/activities/type/${activity.slug}`} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
+              <Link key={activity.slug} href={`/${activity.slug}`} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">{activity.name}</h3>
                   <p className="text-sm text-gray-500 mb-4 h-10">{activity.desc}</p>
@@ -162,7 +162,7 @@ export default async function StagHenPage() {
           <h2 className="text-3xl font-bold text-primary mb-12 text-center">Explore by Region</h2>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             {regionsList.map((region) => (
-              <Link key={region.slug} href={`/${region.slug}/things-to-do/stag-hen`} className="group relative h-80 rounded-2xl overflow-hidden flex items-end p-6">
+              <Link key={region.slug} href={`/${region.slug}/stag-hen`} className="group relative h-80 rounded-2xl overflow-hidden flex items-end p-6">
                 <Image
                   src={region.img}
                   alt={region.name}

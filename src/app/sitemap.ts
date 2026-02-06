@@ -174,6 +174,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   );
 
+  // Activity hub pages (manual pages)
+  const activityHubs = ['mountain-biking', 'coasteering', 'hiking', 'surfing', 'caving'];
+  activityHubs.forEach((hub) => {
+    sitemap.push({
+      url: `${BASE_URL}/${hub}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    });
+  });
+
   // Region pages
   regionsData.forEach((region) => {
     sitemap.push({
@@ -183,24 +194,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     });
     
-    // Region sub-pages
-    sitemap.push(
-      {
-        url: `${BASE_URL}/${region.slug}/things-to-do`,
-        lastModified: region.createdAt || new Date(),
-        changeFrequency: 'daily',
-        priority: 0.8,
-      },
-      {
-        url: `${BASE_URL}/${region.slug}/where-to-stay`,
-        lastModified: region.createdAt || new Date(),
-        changeFrequency: 'daily',
-        priority: 0.7,
-      }
-    );
+    // Region stay page (NEW URL - was /where-to-stay)
+    sitemap.push({
+      url: `${BASE_URL}/${region.slug}/stay`,
+      lastModified: region.createdAt || new Date(),
+      changeFrequency: 'daily',
+      priority: 0.7,
+    });
   });
 
-  // Activity pages
+  // Individual activity/experience pages
   activitiesData.forEach((activity) => {
     sitemap.push({
       url: `${BASE_URL}/activities/${activity.slug}`,
@@ -250,10 +253,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   });
 
-  // Activity type pages (region + activity type combinations)
+  // Combo pages: region + activity type (NEW URL - was /{region}/things-to-do/{activity})
   comboPagesData.forEach((combo) => {
     sitemap.push({
-      url: `${BASE_URL}/${combo.regionSlug}/things-to-do/${combo.activityTypeSlug}`,
+      url: `${BASE_URL}/${combo.regionSlug}/${combo.activityTypeSlug}`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.6,

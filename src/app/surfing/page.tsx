@@ -230,31 +230,31 @@ export default async function SurfingHubPage() {
                 bestForBeginners={{
                   label: "Best for Beginners",
                   venue: "Llangennith, Gower",
-                  link: "/gower/things-to-do/surfing",
+                  link: "/gower/surfing",
                   reason: "Consistent beach break, gentle waves, surf schools galore",
                 }}
                 bestOverall={{
                   label: "Best Overall",
                   venue: "Freshwater West",
-                  link: "/pembrokeshire/things-to-do/surfing",
+                  link: "/pembrokeshire/surfing",
                   reason: "Powerful swells, beautiful setting, Pembrokeshire's finest",
                 }}
                 bestValue={{
                   label: "Best Value",
                   venue: "Porthcawl",
-                  link: "/south-wales/things-to-do/surfing",
+                  link: "/south-wales/surfing",
                   reason: "Multiple breaks, good facilities, easy access",
                 }}
                 bestForFamilies={{
                   label: "Best for Families",
                   venue: "Caswell Bay",
-                  link: "/gower/things-to-do/surfing",
+                  link: "/gower/surfing",
                   reason: "Sheltered, lifeguarded, great café",
                 }}
                 bestForExperts={{
                   label: "Best for Experts",
                   venue: "Hell's Mouth (Porth Neigwl)",
-                  link: "/llyn-peninsula/things-to-do/surfing",
+                  link: "/llyn-peninsula/surfing",
                   reason: "Heavy beach break, powerful swells, Welsh Pipeline",
                 }}
               />
@@ -294,7 +294,7 @@ export default async function SurfingHubPage() {
             }}
             secondaryCTA={{
               label: "Book Surf Lesson",
-              href: "/activities/type/surfing",
+              href: "/surfing",
             }}
             weather={{
               temp: 14,
@@ -373,7 +373,7 @@ export default async function SurfingHubPage() {
             {surfingHub.regions.map((region) => (
               <Link
                 key={region.slug}
-                href={`/${region.slug}/things-to-do/surfing`}
+                href={`/${region.slug}/surfing`}
                 className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-xl hover:border-primary transition-all duration-300 hover:-translate-y-1"
               >
                 <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-accent-hover transition-colors">
@@ -662,7 +662,7 @@ export default async function SurfingHubPage() {
 
             <div className="text-center mt-8">
               <Link
-                href="/activities/type/surfing"
+                href="/surfing"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl hover:bg-accent-hover transition-colors font-semibold"
               >
                 Browse all surfing experiences

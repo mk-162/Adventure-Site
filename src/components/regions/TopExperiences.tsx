@@ -104,7 +104,7 @@ export function TopExperiences({ activities, regionSlug }: TopExperiencesProps) 
 
       <div className="mt-6 text-center sm:text-right">
          <Link
-            href={`/${regionSlug}/things-to-do`}
+            href={`/${regionSlug}`}
             className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:text-accent-hover transition-colors"
          >
             View all {activeTab !== "all" ? activeTab : "experiences"}

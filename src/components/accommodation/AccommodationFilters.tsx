@@ -224,7 +224,7 @@ export function AccommodationFilters({ accommodations, regions }: AccommodationF
           {regions.slice(0, 8).map(region => (
             <Link
               key={region.id}
-              href={`/${region.slug}/where-to-stay`}
+              href={`/${region.slug}/stay`}
               className="relative h-32 rounded-xl overflow-hidden group"
             >
               <div 

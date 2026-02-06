@@ -232,31 +232,31 @@ export default async function CoasteeringHubPage() {
                 bestForBeginners={{
                   label: "Best for Beginners",
                   venue: "Abereiddy (Blue Lagoon)",
-                  link: "/pembrokeshire/things-to-do/coasteering",
+                  link: "/pembrokeshire/coasteering",
                   reason: "Sheltered, gradual jumps, the birthplace of coasteering",
                 }}
                 bestOverall={{
                   label: "Best Overall",
                   venue: "St Davids Peninsula",
-                  link: "/pembrokeshire/things-to-do/coasteering",
+                  link: "/pembrokeshire/coasteering",
                   reason: "Dramatic cliffs, sea caves, wildlife encounters",
                 }}
                 bestValue={{
                   label: "Best Value",
                   venue: "Rhossili, Gower",
-                  link: "/gower/things-to-do/coasteering",
+                  link: "/gower/coasteering",
                   reason: "Spectacular scenery, multiple operators, good facilities",
                 }}
                 bestForFamilies={{
                   label: "Best for Families",
                   venue: "Three Cliffs Bay",
-                  link: "/gower/things-to-do/coasteering",
+                  link: "/gower/coasteering",
                   reason: "Shorter sessions, sheltered spots, seal sightings",
                 }}
                 bestForExperts={{
                   label: "Best for Experts",
                   venue: "Stackpole",
-                  link: "/pembrokeshire/things-to-do/coasteering",
+                  link: "/pembrokeshire/coasteering",
                   reason: "High jumps, sea arches, challenging swims",
                 }}
               />
@@ -294,7 +294,7 @@ export default async function CoasteeringHubPage() {
             }}
             secondaryCTA={{
               label: "Book Coasteering",
-              href: "/activities/type/coasteering",
+              href: "/coasteering",
             }}
             weather={{
               temp: 15,
@@ -420,7 +420,7 @@ export default async function CoasteeringHubPage() {
             {coasteeringHub.regions.map((region) => (
               <Link
                 key={region.slug}
-                href={`/${region.slug}/things-to-do/coasteering`}
+                href={`/${region.slug}/coasteering`}
                 className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-xl hover:border-primary transition-all duration-300 hover:-translate-y-1"
               >
                 <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-accent-hover transition-colors">
@@ -658,7 +658,7 @@ export default async function CoasteeringHubPage() {
 
             <div className="text-center mt-8">
               <Link
-                href="/activities/type/coasteering"
+                href="/coasteering"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl hover:bg-accent-hover transition-colors font-semibold"
               >
                 Browse all coasteering experiences

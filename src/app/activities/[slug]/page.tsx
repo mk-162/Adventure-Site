@@ -631,7 +631,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
         {region && activityType && (
           <section className="mt-12">
             <Link
-              href={`/${region.slug}/things-to-do/${activityType.slug}`}
+              href={`/${region.slug}/${activityType.slug}`}
               className="block bg-gradient-to-r from-primary to-[#2a5570] rounded-xl p-6 hover:shadow-lg transition-shadow"
             >
               <h2 className="text-lg font-bold text-white mb-1">

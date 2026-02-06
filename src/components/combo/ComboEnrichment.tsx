@@ -349,7 +349,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
             {data.nearbyAlternatives.sameActivity?.map((alt, i) => (
               <Link
                 key={`sa-${i}`}
-                href={`/${alt.regionSlug}/things-to-do/${data.activityTypeSlug}`}
+                href={`/${alt.regionSlug}/${data.activityTypeSlug}`}
                 className="flex items-center gap-3 bg-white rounded-xl border border-gray-200 p-4 hover:border-accent-hover hover:shadow-sm transition-all"
               >
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
@@ -365,7 +365,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
             {data.nearbyAlternatives.sameRegion?.map((alt, i) => (
               <Link
                 key={`sr-${i}`}
-                href={`/${data.regionSlug}/things-to-do/${alt.activityTypeSlug}`}
+                href={`/${data.regionSlug}/${alt.activityTypeSlug}`}
                 className="flex items-center gap-3 bg-white rounded-xl border border-gray-200 p-4 hover:border-accent-hover hover:shadow-sm transition-all"
               >
                 <div className="w-10 h-10 rounded-lg bg-accent-hover/10 flex items-center justify-center shrink-0">

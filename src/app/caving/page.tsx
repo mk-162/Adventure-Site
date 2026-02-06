@@ -224,31 +224,31 @@ export default async function CavingHubPage() {
                 bestForBeginners={{
                   label: "Best for Beginners",
                   venue: "Dan yr Ogof Show Caves",
-                  link: "/brecon-beacons/things-to-do/caving",
+                  link: "/brecon-beacons/caving",
                   reason: "Lit walkways, no crawling, suitable for all ages",
                 }}
                 bestOverall={{
                   label: "Best Overall",
                   venue: "Porth yr Ogof",
-                  link: "/brecon-beacons/things-to-do/caving",
+                  link: "/brecon-beacons/caving",
                   reason: "Spectacular river cave, accessible adventure caving",
                 }}
                 bestValue={{
                   label: "Best Value",
                   venue: "National Showcaves Centre",
-                  link: "/brecon-beacons/things-to-do/caving",
+                  link: "/brecon-beacons/caving",
                   reason: "Multiple caves, dinosaur park included, family day out",
                 }}
                 bestForFamilies={{
                   label: "Best for Families",
                   venue: "Dan yr Ogof",
-                  link: "/brecon-beacons/things-to-do/caving",
+                  link: "/brecon-beacons/caving",
                   reason: "Three show caves, no experience needed, café on-site",
                 }}
                 bestForExperts={{
                   label: "Best for Experts",
                   venue: "Ogof Ffynnon Ddu",
-                  link: "/brecon-beacons/things-to-do/caving",
+                  link: "/brecon-beacons/caving",
                   reason: "Britain's deepest cave, 50km passages, club access only",
                 }}
               />
@@ -288,7 +288,7 @@ export default async function CavingHubPage() {
             }}
             secondaryCTA={{
               label: "Book Caving Trip",
-              href: "/activities/type/caving",
+              href: "/caving",
             }}
             weather={{
               temp: 10,
@@ -707,7 +707,7 @@ export default async function CavingHubPage() {
 
             <div className="text-center mt-8">
               <Link
-                href="/activities/type/caving"
+                href="/caving"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl hover:bg-accent-hover transition-colors font-semibold"
               >
                 Browse all caving experiences

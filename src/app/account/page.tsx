@@ -21,15 +21,15 @@ async function getFavourites(userId: number) {
       }
       case "itinerary": {
         const [item] = await db.select({ title: itineraries.title, slug: itineraries.slug }).from(itineraries).where(eq(itineraries.id, fav.favouriteId));
-        return item ? { ...fav, name: item.title, link: `/itineraries/${item.slug}`, icon: "itinerary" } : null;
+        return item ? { ...fav, name: item.title, link: `/itineraries/activities/${item.slug}`, icon: "itinerary" } : null;
       }
       case "operator": {
         const [item] = await db.select({ name: operators.name, slug: operators.slug }).from(operators).where(eq(operators.id, fav.favouriteId));
-        return item ? { ...fav, name: item.name, link: `/directory/${item.slug}`, icon: "operator" } : null;
+        return item ? { ...fav, name: item.name, link: `/directory/activities/${item.slug}`, icon: "operator" } : null;
       }
       case "event": {
         const [item] = await db.select({ name: events.name, slug: events.slug }).from(events).where(eq(events.id, fav.favouriteId));
-        return item ? { ...fav, name: item.name, link: `/events/${item.slug}`, icon: "event" } : null;
+        return item ? { ...fav, name: item.name, link: `/events/activities/${item.slug}`, icon: "event" } : null;
       }
       default:
         return null;

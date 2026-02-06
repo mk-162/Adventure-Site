@@ -81,11 +81,11 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
 
   const handleSearch = () => {
     if (where && what) {
-      // Both selected → /snowdonia/things-to-do/hiking
-      window.location.href = `/${where}/things-to-do/${what}`;
+      // Both selected → /snowdonia/hiking
+      window.location.href = `/${where}/${what}`;
     } else if (where) {
-      // Region only → /snowdonia/things-to-do
-      window.location.href = `/${where}/things-to-do`;
+      // Region only → /snowdonia
+      window.location.href = `/${where}`;
     } else if (what) {
       // Activity only → /search?activity=hiking (no region-specific page for this)
       window.location.href = `/search?activity=${what}`;

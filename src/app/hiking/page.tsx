@@ -232,31 +232,31 @@ export default async function HikingHubPage() {
                 bestForBeginners={{
                   label: "Best for Beginners",
                   venue: "Llanberis Path (Snowdon)",
-                  link: "/snowdonia/things-to-do/hiking",
+                  link: "/snowdonia/hiking",
                   reason: "Gradual ascent, clear path, café at summit",
                 }}
                 bestOverall={{
                   label: "Best Overall",
                   venue: "Snowdon Horseshoe",
-                  link: "/snowdonia/things-to-do/hiking",
+                  link: "/snowdonia/hiking",
                   reason: "Classic ridge walk, stunning views, proper mountain day",
                 }}
                 bestValue={{
                   label: "Best Value",
                   venue: "Pen y Fan",
-                  link: "/brecon-beacons/things-to-do/hiking",
+                  link: "/brecon-beacons/hiking",
                   reason: "Free parking nearby, quick summit, iconic views",
                 }}
                 bestForFamilies={{
                   label: "Best for Families",
                   venue: "Waterfall Country",
-                  link: "/brecon-beacons/things-to-do/hiking",
+                  link: "/brecon-beacons/hiking",
                   reason: "Easy trails, spectacular waterfalls, adventure feel",
                 }}
                 bestForExperts={{
                   label: "Best for Experts",
                   venue: "Tryfan North Ridge",
-                  link: "/snowdonia/things-to-do/hiking",
+                  link: "/snowdonia/hiking",
                   reason: "Grade 1 scramble, exposed sections, iconic summit leap",
                 }}
               />
@@ -296,7 +296,7 @@ export default async function HikingHubPage() {
             }}
             secondaryCTA={{
               label: "Book Guided Walk",
-              href: "/activities/type/hiking",
+              href: "/hiking",
             }}
             weather={{
               temp: 8,
@@ -375,7 +375,7 @@ export default async function HikingHubPage() {
             {hikingHub.regions.map((region) => (
               <Link
                 key={region.slug}
-                href={`/${region.slug}/things-to-do/hiking`}
+                href={`/${region.slug}/hiking`}
                 className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-xl hover:border-primary transition-all duration-300 hover:-translate-y-1"
               >
                 <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-accent-hover transition-colors">
@@ -632,7 +632,7 @@ export default async function HikingHubPage() {
 
             <div className="text-center mt-8">
               <Link
-                href="/activities/type/hiking"
+                href="/hiking"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl hover:bg-accent-hover transition-colors font-semibold"
               >
                 Browse all walking experiences

@@ -96,18 +96,18 @@ const moreActivities = [
 
 // Activity + Region combos for SEO
 const popularCombos = [
-  { activity: "Coasteering", region: "Pembrokeshire", slug: "/pembrokeshire/things-to-do/coasteering" },
-  { activity: "Mountain Biking", region: "Snowdonia", slug: "/snowdonia/things-to-do/mountain-biking" },
-  { activity: "Hiking", region: "Brecon Beacons", slug: "/brecon-beacons/things-to-do/hiking" },
-  { activity: "Surfing", region: "Gower", slug: "/gower/things-to-do/surfing" },
-  { activity: "Climbing", region: "Snowdonia", slug: "/snowdonia/things-to-do/climbing" },
-  { activity: "Sea Kayaking", region: "Anglesey", slug: "/anglesey/things-to-do/sea-kayaking" },
-  { activity: "Zip Lining", region: "Snowdonia", slug: "/snowdonia/things-to-do/zip-lining" },
-  { activity: "Wild Swimming", region: "Pembrokeshire", slug: "/pembrokeshire/things-to-do/wild-swimming" },
-  { activity: "Caving", region: "Brecon Beacons", slug: "/brecon-beacons/things-to-do/caving" },
-  { activity: "Gorge Walking", region: "Brecon Beacons", slug: "/brecon-beacons/things-to-do/gorge-walking" },
-  { activity: "Coasteering", region: "Anglesey", slug: "/anglesey/things-to-do/coasteering" },
-  { activity: "Mountain Biking", region: "Brecon Beacons", slug: "/brecon-beacons/things-to-do/mountain-biking" },
+  { activity: "Coasteering", region: "Pembrokeshire", slug: "/pembrokeshire/coasteering" },
+  { activity: "Mountain Biking", region: "Snowdonia", slug: "/snowdonia/mountain-biking" },
+  { activity: "Hiking", region: "Brecon Beacons", slug: "/brecon-beacons/hiking" },
+  { activity: "Surfing", region: "Gower", slug: "/gower/surfing" },
+  { activity: "Climbing", region: "Snowdonia", slug: "/snowdonia/climbing" },
+  { activity: "Sea Kayaking", region: "Anglesey", slug: "/anglesey/sea-kayaking" },
+  { activity: "Zip Lining", region: "Snowdonia", slug: "/snowdonia/zip-lining" },
+  { activity: "Wild Swimming", region: "Pembrokeshire", slug: "/pembrokeshire/wild-swimming" },
+  { activity: "Caving", region: "Brecon Beacons", slug: "/brecon-beacons/caving" },
+  { activity: "Gorge Walking", region: "Brecon Beacons", slug: "/brecon-beacons/gorge-walking" },
+  { activity: "Coasteering", region: "Anglesey", slug: "/anglesey/coasteering" },
+  { activity: "Mountain Biking", region: "Brecon Beacons", slug: "/brecon-beacons/mountain-biking" },
 ];
 
 export default function ActivitiesPage() {
@@ -242,7 +242,7 @@ export default function ActivitiesPage() {
               {secondaryActivities.map((activity) => (
                 <Link
                   key={activity.slug}
-                  href={`/activities/type/${activity.slug}`}
+                  href={`/${activity.slug}`}
                   className="group relative overflow-hidden rounded-xl bg-gray-900 aspect-[4/5]"
                 >
                   <Image
@@ -317,7 +317,7 @@ export default function ActivitiesPage() {
               {secondaryActivities.map((activity) => (
                 <Link
                   key={activity.slug}
-                  href={`/activities/type/${activity.slug}`}
+                  href={`/${activity.slug}`}
                   className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-primary hover:text-primary transition-colors"
                 >
                   {activity.name}
@@ -326,7 +326,7 @@ export default function ActivitiesPage() {
               {moreActivities.map((activity) => (
                 <Link
                   key={activity.slug}
-                  href={`/activities/type/${activity.slug}`}
+                  href={`/${activity.slug}`}
                   className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-primary hover:text-primary transition-colors"
                 >
                   {activity.name}

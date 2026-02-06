@@ -532,7 +532,7 @@ export default async function AnswerPage({ params }: Props) {
                   Ready to explore? Find guided adventures in {frontmatter.region ? formatRegionName(frontmatter.region) : "Wales"}.
                 </p>
                 <Link
-                  href={frontmatter.region ? `/${frontmatter.region}/things-to-do` : "/activities"}
+                  href={frontmatter.region ? `/${frontmatter.region}` : "/activities"}
                   className="block w-full py-3 bg-white text-primary font-bold rounded-lg text-sm text-center hover:bg-gray-100 transition-colors relative z-10"
                 >
                   Find Activities
@@ -611,7 +611,7 @@ export default async function AnswerPage({ params }: Props) {
                   Ready to explore? Find guided adventures in {frontmatter.region ? formatRegionName(frontmatter.region) : "Wales"}.
                 </p>
                 <Link
-                  href={frontmatter.region ? `/${frontmatter.region}/things-to-do` : "/activities"}
+                  href={frontmatter.region ? `/${frontmatter.region}` : "/activities"}
                   className="block w-full py-3 bg-white text-primary font-bold rounded-lg text-sm text-center hover:bg-gray-100 transition-colors relative z-10"
                 >
                   Find Activities

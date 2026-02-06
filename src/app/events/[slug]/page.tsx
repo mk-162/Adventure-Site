@@ -432,7 +432,7 @@ export default async function EventPage({ params }: Props) {
                     ))}
                   </div>
                   {region && (
-                    <Link href={`/${region.slug}/things-to-do`} className="block text-center text-sm text-accent-hover font-medium hover:underline mt-3 pt-3 border-t">
+                    <Link href={`/${region.slug}`} className="block text-center text-sm text-accent-hover font-medium hover:underline mt-3 pt-3 border-t">
                       More things to do →
                     </Link>
                   )}

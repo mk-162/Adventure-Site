@@ -135,7 +135,7 @@ export function TrailCentreTable({ centres }: TrailCentreTableProps) {
                 </td>
                 <td className="px-4 py-4">
                   <Link 
-                    href={`/${centre.regionSlug}/things-to-do/mountain-biking`}
+                    href={`/${centre.regionSlug}/mountain-biking`}
                     className="text-sm text-gray-600 hover:text-accent-hover transition-colors"
                   >
                     {centre.region}

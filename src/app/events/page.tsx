@@ -1,7 +1,7 @@
 import { getEvents, getEventMonths } from "@/lib/queries";
 import { EventsClient } from "@/components/events/EventsClient";
 import { EventGridCard } from "@/components/events/EventGridCard";
-import { EventPagination } from "@/components/events/EventPagination";
+// Pagination removed - loading all events for proper month grouping
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -12,24 +12,19 @@ export default async function EventsPage({
 }: {
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
-  const page = Number(searchParams.page) || 1;
   const category = typeof searchParams.type === 'string' ? searchParams.type : undefined;
   const month = typeof searchParams.month === 'string' ? searchParams.month : undefined;
-  const limit = 12; // 12 items per page
-  const offset = (page - 1) * limit;
 
   const [eventsData, months] = await Promise.all([
     getEvents({
       type: category,
       month,
-      limit,
-      offset
+      // No limit - load all events for proper month grouping
     }),
     getEventMonths(),
   ]);
 
   const { events, total } = eventsData;
-  const totalPages = Math.ceil(total / limit);
 
   // Group events by month for display
   const groupedEvents: { monthKey: string; monthLabel: string; events: typeof events }[] = [];
@@ -185,9 +180,6 @@ export default async function EventsPage({
             </div>
           </div>
         </div>
-
-        {/* Pagination */}
-        <EventPagination totalPages={totalPages} />
 
       </main>
     </div>

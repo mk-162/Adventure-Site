@@ -6,7 +6,7 @@ import { SurfGradingGuide } from "@/components/surfing/SurfGradingGuide";
 import { SurfSeasonGuide } from "@/components/surfing/SurfSeasonGuide";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { RegionMap } from "@/components/ui/RegionMap";
-import { getActivities, getEvents, getActivityTypeBySlug } from "@/lib/queries";
+import { getActivities, getEvents, getActivityTypeBySlug, getItineraries, getPostsForSidebar } from "@/lib/queries";
 import { 
   Waves, 
   Map, 
@@ -22,6 +22,10 @@ import {
   Shield,
   GraduationCap,
   AlertTriangle,
+  Compass,
+  BookOpen,
+  Home,
+  Sparkles,
 } from "lucide-react";
 import { JsonLd, createTouristDestinationSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 

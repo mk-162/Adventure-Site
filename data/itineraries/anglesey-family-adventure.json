@@ -1,62 +1,103 @@
 {
   "slug": "anglesey-family-adventure",
   "title": "Anglesey Family Adventure",
-  "tagline": "Island adventures for all the family",
+  "tagline": "Island adventures for all the family on Wales' beautiful Isle of Anglesey",
   "region": "anglesey",
   "days": 2,
   "difficulty": "easy",
-  "bestSeason": "June-August",
+  "bestSeason": "May-September (puffins best June-July)",
   "groupType": "families",
-  "priceFrom": 350,
-  "priceTo": 750,
-  "budgetPriceFrom": 200,
-  "budgetPriceTo": 400,
+  "priceFrom": 300,
+  "priceTo": 550,
+  "budgetPriceFrom": 100,
+  "budgetPriceTo": 250,
   "highlights": [
-    "Beach kayaking",
-    "Coastal walks",
-    "Puffin spotting"
+    "Family-friendly sea kayaking",
+    "Puffin spotting boat trip",
+    "South Stack seabird cliffs"
   ],
   "activityTypes": [
     "kayaking",
-    "hiking"
+    "wildlife",
+    "coastal-walking"
   ],
   "suitableFor": "Families with children aged 8 and up who enjoy outdoor activities and are comfortable with easy physical exertion. Also suitable for active grandparents.",
   "notSuitableFor": "Those with limited mobility or a strong aversion to water activities. Very young children (under 5) may find some activities challenging.",
   "weatherDependency": "medium",
   "packingEssentials": [
     "Waterproof jacket",
-    "Sunscreen",
-    "Walking boots",
-    "Swimsuit",
-    "Binoculars"
+    "Sunscreen (essential - sea reflection intensifies UV)",
+    "Walking boots or sturdy trainers",
+    "Swimsuit and towel",
+    "Binoculars (for wildlife spotting)",
+    "Warm layers for boat trips",
+    "Camera",
+    "Packed lunches/snacks"
   ],
+  "drivingTimes": {
+    "fromManchester": "1hr 45min via A55",
+    "fromLiverpool": "1hr 30min via A55",
+    "fromChester": "1hr 15min via A55",
+    "fromBirmingham": "2hr 30min via M6/A55",
+    "rhosneigToBeaumaris": "35min across island",
+    "beaumarisTToSouthStack": "45min",
+    "menaiToRhosneigr": "30min"
+  },
   "stops": [
     {
       "day": 1,
       "orderIndex": 1,
-      "time": "09:00",
+      "time": "09:30",
       "type": "activity",
-      "title": "Sea Kayaking with Anglesey Adventures",
-      "description": "Explore the Anglesey coastline from the sea in a guided kayaking tour. Suitable for all levels, with options for shorter or longer paddles.",
-      "duration": "3 hours",
-      "costFrom": 55,
-      "costTo": 75,
-      "lat": 53.231,
-      "lng": -4.52,
-      "travelToNext": "15min drive via B4545",
+      "title": "Family Sea Kayaking",
+      "description": "Explore the Anglesey coastline from sit-on-top kayaks - perfect for families and beginners. Guided sessions take you along sheltered bays, past sea caves, and hopefully seal sightings. All equipment provided including wetsuits and buoyancy aids. Sessions adapt to conditions and group ability.",
+      "duration": "2-3 hours",
+      "operator": "Anglesey Adventures",
+      "operatorUrl": "https://www.angleseyadventures.com",
+      "operatorPhone": "01407 860060",
+      "alternativeOperators": [
+        {
+          "name": "B-Active Rhoscolyn",
+          "url": "https://b-active-rhoscolyn.co.uk",
+          "price": "£45/adult half-day",
+          "notes": "Family-friendly, great reviews, NW coast"
+        },
+        {
+          "name": "Sea Kayaking Wales",
+          "url": "https://www.seakayakingwales.com",
+          "price": "from £50pp",
+          "notes": "British Canoeing courses, opened kayak centre Sept 2024"
+        }
+      ],
+      "bookingEssential": true,
+      "costFrom": 45,
+      "costTo": 65,
+      "costNote": "Per person, all equipment included",
+      "lat": 53.2550,
+      "lng": -4.5680,
+      "travelToNext": "20min drive to Rhosneigr",
       "travelMode": "drive",
+      "requirements": {
+        "minAge": 8,
+        "swimAbility": "Not required but recommended",
+        "fitness": "Easy - suitable for beginners"
+      },
+      "insiderTip": "Book the morning session - winds often pick up in the afternoon. Sit-on-top kayaks are very stable and easy for kids to reboard if they fall off. Bring water and a snack.",
       "wetAlt": {
-        "title": "Anglesey Transport Museum",
-        "description": "Discover vintage cars, motorcycles, and other vehicles at this fascinating museum.",
-        "costFrom": 7,
-        "costTo": 10
+        "title": "Anglesey Sea Zoo",
+        "description": "All-weather family attraction with local marine life, shark tunnel, and outdoor activities. Seals, lobsters, seahorses and more. Kids love the touch pools.",
+        "costFrom": 12,
+        "costTo": 16,
+        "website": "https://www.angleseyseazoo.co.uk"
       },
       "budgetAlt": {
-        "title": "Beach Exploration at Rhosneigr",
-        "description": "Spend the morning building sandcastles and exploring the rock pools at Rhosneigr Beach.",
+        "title": "Rockpooling at Rhoscolyn",
+        "description": "Free morning exploring the fantastic rock pools at Rhoscolyn. Look for crabs, anemones, and small fish. Best 1-2 hours after low tide.",
         "costFrom": 0,
-        "costTo": 0
-      }
+        "costTo": 5,
+        "note": "Parking £3-5"
+      },
+      "postcode": "LL65 2NQ"
     },
     {
       "day": 1,
@@ -65,167 +106,201 @@
       "type": "food",
       "title": "The Oyster Catcher",
       "foodType": "lunch",
-      "description": "A relaxed gastropub with stunning sea views and a menu featuring local seafood and pub classics.",
-      "costFrom": 15,
+      "description": "Gastropub overlooking Rhosneigr beach with excellent family menu. Fresh local seafood, hearty pub classics, and kids' portions. Great outdoor terrace for sunny days. Dog-friendly too.",
+      "costFrom": 12,
       "costTo": 25,
       "lat": 53.2332,
       "lng": -4.5251,
-      "travelToNext": "2min walk",
+      "website": "https://www.oystercatcheranglesey.co.uk",
+      "openingHours": "12-3pm, 6-9pm (food)",
+      "travelToNext": "5min walk to beach",
       "travelMode": "walk",
+      "insiderTip": "Book a table if visiting at weekend lunchtime - it gets busy. The fish and chips are excellent.",
+      "alternative": {
+        "title": "The Bay Cafe (Rhosneigr)",
+        "description": "Casual beachfront cafe with sandwiches, burgers, and ice cream. Kid-friendly and quick."
+      },
       "budgetAlt": {
-        "title": "Packed lunch at Rhosneigr Beach",
-        "description": "Enjoy a picnic lunch with views of the beach."
+        "title": "Picnic on Rhosneigr Beach",
+        "description": "Pick up supplies from the village shop and picnic on the sand. There's also a chip shop for takeaway."
       },
       "postcode": "LL64 5QN"
     },
     {
       "day": 1,
       "orderIndex": 3,
-      "time": "14:00",
+      "time": "14:30",
       "type": "activity",
-      "title": "Coastal Walk to Porth Trecastell (Cable Bay)",
-      "description": "Take a scenic coastal walk from Rhosneigr to Porth Trecastell, a beautiful sandy beach known for its surfing. Enjoy the views and keep an eye out for wildlife.",
-      "duration": "2 hours",
+      "title": "Llanddwyn Island Coastal Walk",
+      "description": "Walk to magical Llanddwyn Island through Newborough Forest and across beautiful sandy beaches. The 'island' is accessible on foot except at very high tides. See the lighthouse (Tŵr Mawr), St Dwynwen's cross, and pilot cottages. Perfect for little explorers.",
+      "duration": "2-3 hours",
       "costFrom": 0,
-      "costTo": 0,
-      "lat": 53.2332,
-      "lng": -4.5251,
-      "travelToNext": "20min drive via A4080",
+      "costTo": 8,
+      "costNote": "Free access, parking £5-8 at Newborough Beach",
+      "lat": 53.1350,
+      "lng": -4.4080,
+      "travelToNext": "25min drive to Beaumaris",
       "travelMode": "drive",
+      "insiderTip": "Walk through Newborough Forest for the shade, then emerge onto the vast beach. The island is named after St Dwynwen, the Welsh patron saint of lovers. At low tide you can walk all the way around.",
       "wetAlt": {
-        "title": "Oriel Mon",
-        "description": "Explore the history and art of Anglesey at this museum and gallery.",
-        "costFrom": 7,
-        "costTo": 10
+        "title": "Foel Farm Park",
+        "description": "Working farm with hands-on animal feeding, tractor rides, and play areas. Perfect for younger kids on a rainy day.",
+        "costFrom": 10,
+        "costTo": 14,
+        "website": "https://www.foelfarm.co.uk"
       },
       "budgetAlt": {
-        "title": "Relax on Rhosneigr Beach",
-        "description": "Spend the afternoon relaxing on the sand and enjoying the sea breeze.",
+        "title": "Beach afternoon at Newborough",
+        "description": "Skip Llanddwyn and just enjoy the vast sandy beach at Newborough. Great for sandcastles and paddling.",
         "costFrom": 0,
-        "costTo": 0
-      }
+        "costTo": 8
+      },
+      "postcode": "LL61 6SG"
     },
     {
       "day": 1,
       "orderIndex": 4,
-      "time": "17:00",
+      "time": "17:30",
       "type": "accommodation",
-      "title": "Surf's Edge Apartment",
-      "description": "A comfortable and well-equipped self-catering apartment in the heart of Rhosneigr, perfect for families.",
-      "costFrom": 120,
+      "title": "Beaumaris Area Self-Catering",
+      "description": "Stay near Beaumaris for easy access to tomorrow's boat trip. Plenty of family cottages, B&Bs, and guesthouses in this charming castle town. Walk to fish and chips and ice cream!",
+      "costFrom": 100,
       "costTo": 180,
-      "lat": 53.232,
-      "lng": -4.522,
-      "travelToNext": "30min drive to Trearddur Bay",
-      "travelMode": "drive",
+      "costNote": "Per night for family apartment/cottage",
+      "lat": 53.2635,
+      "lng": -4.0932,
+      "travelToNext": "Walk to Beaumaris Pier",
+      "travelMode": "walk",
+      "recommendedOptions": [
+        {
+          "name": "Liverpool Arms Hotel",
+          "note": "Family-friendly pub with rooms right on the seafront",
+          "priceFrom": 90
+        },
+        {
+          "name": "Castle Court Hotel",
+          "note": "Comfortable family rooms near the castle",
+          "priceFrom": 110
+        }
+      ],
+      "insiderTip": "Stay in Beaumaris itself if possible - the evening stroll along the seafront with ice cream is a lovely end to the day. Plenty of restaurants for family dinner.",
       "budgetAlt": {
-        "title": "Rhosneigr Bunkhouse",
-        "description": "A budget-friendly bunkhouse offering basic accommodation for travellers.",
-        "costFrom": 30,
-        "costTo": 40
+        "title": "Camping at Llanfaes",
+        "description": "Family campsite just outside Beaumaris. Basic but convenient and great value.",
+        "costFrom": 20,
+        "costTo": 35
       },
-      "postcode": "LL64 5QN"
+      "postcode": "LL58 8AB"
     },
     {
       "day": 2,
       "orderIndex": 1,
-      "time": "09:00",
+      "time": "09:30",
       "type": "activity",
-      "title": "Puffin Island Boat Trip from Beaumaris",
-      "description": "Take a boat trip to Puffin Island to observe the puffins and other seabirds in their natural habitat. Booking essential.",
+      "title": "Puffin Island Boat Trip",
+      "description": "Boat trip from Beaumaris Pier to Puffin Island to see the famous puffin colony (best June-July), grey seals hauled out on rocks, and cormorants. 1.5-hour circular trip with commentary. Keep cameras ready!",
       "duration": "1.5 hours",
-      "costFrom": 25,
-      "costTo": 35,
-      "lat": 53.273,
-      "lng": -4.08,
-      "travelToNext": "10min drive to Trearddur Bay",
-      "travelMode": "drive",
+      "operator": "Seacoast Safaris",
+      "operatorUrl": "https://www.seacoastsafaris.co.uk",
+      "operatorPhone": "01248 811822",
+      "alternativeOperators": [
+        {
+          "name": "Starida",
+          "url": "https://www.staridaanglesey.co.uk",
+          "price": "from £15/adult, £10/child",
+          "notes": "Also runs from Beaumaris"
+        }
+      ],
+      "bookingEssential": true,
+      "costFrom": 15,
+      "costTo": 25,
+      "lat": 53.2625,
+      "lng": -4.0900,
+      "travelToNext": "On foot in Beaumaris",
+      "travelMode": "walk",
+      "requirements": {
+        "minAge": "No minimum - babies welcome",
+        "note": "Not landing on island, just circling"
+      },
+      "seasonalNote": "Puffins are present late April to early August. Peak season is June. Outside puffin season, you'll still see seals and seabirds.",
+      "insiderTip": "Book the first trip of the day for calmer seas and more active wildlife. Puffins are most visible in June-July. Bring binoculars and warm layers even on sunny days - it's cooler at sea.",
       "wetAlt": {
         "title": "Beaumaris Castle",
-        "description": "Explore the impressive ruins of this unfinished medieval castle.",
+        "description": "Explore this impressive UNESCO World Heritage castle. Unfinished but fascinating - kids love the walls and towers. Medieval re-enactments sometimes run in summer.",
         "costFrom": 8,
-        "costTo": 10
+        "costTo": 12,
+        "website": "https://cadw.gov.wales/visit/places-to-visit/beaumaris-castle",
+        "note": "Adult £9, Child £5.40, Family £24.70 (Cadw 2024)"
       },
       "budgetAlt": {
-        "title": "Walk along Beaumaris Pier",
-        "description": "Enjoy views of the Menai Strait and Puffin Island from Beaumaris Pier.",
+        "title": "Beaumaris Pier Walk",
+        "description": "Free walk along the pier with views to Puffin Island, the Menai Strait, and Snowdonia across the water.",
         "costFrom": 0,
         "costTo": 0
-      }
+      },
+      "postcode": "LL58 8BS"
     },
     {
       "day": 2,
       "orderIndex": 2,
-      "time": "11:00",
-      "type": "activity",
-      "title": "Trearddur Bay Beach Day",
-      "description": "Spend the morning at Trearddur Bay. Relax on the beach, swim in the sea, or enjoy a picnic.",
-      "duration": "2 hours",
-      "costFrom": 0,
-      "costTo": 0,
-      "lat": 53.281,
-      "lng": -4.63,
-      "travelToNext": "5min walk",
-      "travelMode": "walk",
-      "wetAlt": {
-        "title": "Holyhead Maritime Museum",
-        "description": "Discover the maritime history of Holyhead at this museum.",
-        "costFrom": 5,
-        "costTo": 7
+      "time": "11:30",
+      "type": "food",
+      "title": "Fish & Chips in Beaumaris",
+      "foodType": "late breakfast/early lunch",
+      "description": "Grab fish and chips from one of Beaumaris's excellent chippies and eat on the pier or green. Classic British seaside experience!",
+      "costFrom": 8,
+      "costTo": 14,
+      "lat": 53.2635,
+      "lng": -4.0925,
+      "recommended": [
+        "The Teras (award-winning)",
+        "Beaumaris Fish & Chips"
+      ],
+      "travelToNext": "40min drive via A55 and A5025",
+      "travelMode": "drive",
+      "alternative": {
+        "title": "Red Boat Ice Cream Parlour",
+        "description": "Famous Anglesey ice cream parlour. Grab a cone after fish and chips!"
       },
       "budgetAlt": {
-        "title": "Rockpooling at Trearddur Bay",
-        "description": "Explore the rock pools at low tide and discover marine life.",
-        "costFrom": 0,
-        "costTo": 0
+        "title": "Supermarket picnic",
+        "description": "Pick up lunch from the Co-op and eat on the green by the castle."
       }
     },
     {
       "day": 2,
       "orderIndex": 3,
-      "time": "13:00",
-      "type": "food",
-      "title": "Sea Shanty Cafe",
-      "foodType": "lunch",
-      "description": "A casual cafe serving light lunches, snacks, and drinks with sea views.",
-      "costFrom": 10,
-      "costTo": 15,
-      "lat": 53.2815,
-      "lng": -4.631,
-      "travelToNext": "30min drive to South Stack",
-      "travelMode": "drive",
-      "budgetAlt": {
-        "title": "Packed lunch at Trearddur Bay",
-        "description": "Enjoy a picnic lunch overlooking the bay."
-      },
-      "postcode": "LL65 2UP"
-    },
-    {
-      "day": 2,
-      "orderIndex": 4,
-      "time": "14:30",
+      "time": "13:30",
       "type": "activity",
-      "title": "South Stack RSPB Reserve",
-      "description": "Visit South Stack, a dramatic coastal headland and RSPB reserve. Walk to the lighthouse and look out for seabirds and seals. Be aware it's a steep walk down to the lighthouse.",
-      "duration": "2 hours",
+      "title": "South Stack Cliffs & RSPB Reserve",
+      "description": "Visit the dramatic South Stack lighthouse headland - one of Wales' most spectacular viewpoints. The RSPB reserve has thousands of nesting seabirds (spring/summer) including puffins, guillemots, and razorbills. Ellin's Tower visitor centre has telescopes and knowledgeable staff.",
+      "duration": "2-3 hours",
       "costFrom": 0,
-      "costTo": 0,
-      "lat": 53.306,
-      "lng": -4.7,
-      "travelToNext": null,
-      "travelMode": null,
+      "costTo": 5,
+      "costNote": "Free RSPB reserve, parking £3-5",
+      "lat": 53.3060,
+      "lng": -4.6994,
+      "rspbInfo": {
+        "note": "The 400 steps down to the lighthouse are worth it but challenging for little legs. Main clifftop views don't require the descent.",
+        "website": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/south-stack-cliffs"
+      },
+      "travelToNext": "Journey home via A55",
+      "travelMode": "drive",
+      "insiderTip": "The cafe at Ellin's Tower is excellent. RSPB volunteers often have telescopes trained on nesting birds - free guided viewing! The lighthouse tours run in summer if you want to go inside (book ahead).",
       "wetAlt": {
-        "title": "Ellin's Tower Visitor Centre",
-        "description": "Learn about the wildlife of South Stack at this visitor centre.",
-        "costFrom": 0,
-        "costTo": 0
+        "title": "Pili Palas Nature World",
+        "description": "Tropical butterfly house and animal encounters - snakes, meerkats, and more. All-weather family attraction near Menai Bridge.",
+        "costFrom": 11,
+        "costTo": 14,
+        "website": "https://www.pilipalas.co.uk"
       },
       "budgetAlt": {
-        "title": "Coastal walk along South Stack cliffs",
-        "description": "Enjoy a free walk along the cliff tops with stunning views.",
+        "title": "Clifftop walk only",
+        "description": "Walk the clifftops without descending to the lighthouse. Still spectacular views and free apart from parking.",
         "costFrom": 0,
-        "costTo": 0
-      }
+        "costTo": 5
+      },
+      "postcode": "LL65 1YH"
     }
   ],
   "costBreakdown": {
@@ -234,20 +309,69 @@
       "accommodation": 150,
       "food": 50,
       "transport": 35,
-      "total": 350
+      "total": 350,
+      "notes": "Based on 2 adults + 2 children, self-catering apartment"
     },
     "budget": {
       "activities": 25,
-      "accommodation": 30,
-      "food": 20,
+      "accommodation": 35,
+      "food": 25,
       "transport": 25,
-      "total": 100
+      "total": 110,
+      "notes": "Camping, one paid activity, packed lunches, free beaches"
+    },
+    "premium": {
+      "activities": 150,
+      "accommodation": 200,
+      "food": 80,
+      "transport": 40,
+      "total": 470,
+      "notes": "Hotel, all activities, restaurant meals"
     }
   },
   "knowBeforeYouGo": {
-    "weather": "Anglesey weather can be unpredictable, even in summer. Pack layers and be prepared for rain. Sea conditions can also change quickly, so pay attention to local forecasts before water activities.",
-    "traffic": "Traffic can be heavy in Anglesey during peak season, especially around popular tourist spots like Beaumaris and Trearddur Bay. Arrive early to secure parking, particularly at South Stack. The A55 can get congested.",
-    "booking": "Boat trips to Puffin Island and kayaking tours should be booked in advance, especially during the summer months. Accommodation also fills up quickly, so book early to avoid disappointment.",
-    "fitness": "This itinerary involves some walking and light physical activity. A reasonable level of fitness is required. South Stack involves some steep steps."
-  }
+    "weather": "Anglesey has a mild maritime climate but can be unpredictable. Pack layers and waterproofs. Sea trips can be bumpy - bring seasickness remedies if prone. Boat trips may be cancelled in bad weather.",
+    "traffic": "The A55 can be congested, especially at the Britannia Bridge. Allow extra time on summer weekends. Parking at popular beaches (Newborough, Rhosneigr) fills early on sunny days - arrive before 10am.",
+    "booking": "Boat trips to Puffin Island MUST be booked in advance, especially in puffin season (June-July). Kayaking also needs advance booking. Accommodation books up fast for summer holidays.",
+    "fitness": "This itinerary is designed for families with children 8+. The coastal walk to Llanddwyn is about 3 miles return on sand (easy). South Stack has 400 steps to the lighthouse (optional - views from top are still great).",
+    "puffins": "Puffins are only on Anglesey from late April to early August. Peak viewing is June-July. Outside this season, you'll see seals and other seabirds instead.",
+    "menaiCrossings": "Two crossings from mainland: Britannia Bridge (A55, carries trains) and Menai Suspension Bridge (A5, older but scenic). Britannia is usually faster but check for roadworks."
+  },
+  "extensions": {
+    "addDay": {
+      "title": "Add Zip World Fforest (Betws-y-Coed)",
+      "description": "30min drive to the mainland for Zip World Fforest - tree-top adventures, Fforest Coaster, and the Plummet. Great for adventurous families.",
+      "costFrom": 25,
+      "costTo": 45,
+      "website": "https://www.zipworld.co.uk/locations/betws-y-coed"
+    },
+    "alternative": {
+      "title": "RIB Ride Adventure",
+      "description": "Swap the kayaking for a high-speed RIB ride around the Anglesey coast. Thrilling wildlife spotting for older kids.",
+      "costFrom": 30,
+      "costTo": 50
+    }
+  },
+  "mapRoute": {
+    "start": {
+      "name": "Trearddur Bay (kayaking)",
+      "lat": 53.2550,
+      "lng": -4.5680
+    },
+    "waypoints": [
+      {"name": "Rhosneigr", "lat": 53.2332, "lng": -4.5251},
+      {"name": "Newborough / Llanddwyn", "lat": 53.1350, "lng": -4.4080},
+      {"name": "Beaumaris", "lat": 53.2635, "lng": -4.0932},
+      {"name": "South Stack", "lat": 53.3060, "lng": -4.6994}
+    ],
+    "totalDriving": "Approximately 1.5-2 hours total over 2 days"
+  },
+  "lastUpdated": "2025-02-06",
+  "researchSources": [
+    "Anglesey Adventures",
+    "B-Active Rhoscolyn",
+    "Seacoast Safaris",
+    "RSPB South Stack",
+    "Perplexity AI research 2025"
+  ]
 }

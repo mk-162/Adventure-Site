@@ -157,3 +157,8 @@ export default async function EventsPage({
     </div>
   );
 }
+
+export const metadata = {
+  title: "Welsh Races & Adventure Events 2026 — Trail Runs, MTB, Triathlons | Adventure Wales",
+  description: "Find races and adventure events across Wales. Trail running, mountain biking, triathlons, swimming events, and outdoor festivals with dates, entry fees, and difficulty info.",
+};

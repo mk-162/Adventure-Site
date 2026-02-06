@@ -135,7 +135,7 @@ export default async function StagHenPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {popularActivities.map((activity) => (
-              <Link key={activity.slug} href={`/activities?type=${activity.slug}`} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
+              <Link key={activity.slug} href={`/activities/${activity.slug}`} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">{activity.name}</h3>
                   <p className="text-sm text-gray-500 mb-4 h-10">{activity.desc}</p>

@@ -247,7 +247,7 @@ export default function ActivitiesPage() {
               {secondaryActivities.map((activity) => (
                 <Link
                   key={activity.slug}
-                  href={`/activities?type=${activity.slug}`}
+                  href={`/activities/${activity.slug}`}
                   className="group relative overflow-hidden rounded-xl bg-gray-900 aspect-[4/5]"
                 >
                   <Image
@@ -322,7 +322,7 @@ export default function ActivitiesPage() {
               {secondaryActivities.map((activity) => (
                 <Link
                   key={activity.slug}
-                  href={`/activities?type=${activity.slug}`}
+                  href={`/activities/${activity.slug}`}
                   className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-primary hover:text-primary transition-colors"
                 >
                   {activity.name}
@@ -331,7 +331,7 @@ export default function ActivitiesPage() {
               {moreActivities.map((activity) => (
                 <Link
                   key={activity.slug}
-                  href={`/activities?type=${activity.slug}`}
+                  href={`/activities/${activity.slug}`}
                   className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-primary hover:text-primary transition-colors"
                 >
                   {activity.name}

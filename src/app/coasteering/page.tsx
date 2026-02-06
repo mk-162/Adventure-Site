@@ -535,7 +535,7 @@ export default async function CoasteeringHubPage() {
 
             <div className="text-center mt-8">
               <Link
-                href="/activities?type=coasteering"
+                href="/activities/coasteering"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl hover:bg-accent-hover transition-colors font-semibold"
               >
                 Browse all coasteering experiences

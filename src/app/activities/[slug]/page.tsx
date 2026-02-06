@@ -1,6 +1,16 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
+
+// Activity type slugs that have dedicated mega pages — redirect to them
+const activityTypeMegaPages = new Set([
+  "mountain-biking",
+  "coasteering",
+  "surfing",
+  "hiking",
+  "caving",
+  // Add more as mega pages are built
+]);
 import Image from "next/image";
 import { getActivityBySlug, getActivities, getAccommodation, getAllActivitySlugs, getItineraries } from "@/lib/queries";
 import { Badge, DifficultyBadge, PriceBadge } from "@/components/ui/badge";
@@ -147,6 +157,14 @@ function getActivityHeroImage(
 // Generate metadata for SEO
 export async function generateMetadata({ params }: ActivityPageProps): Promise<Metadata> {
   const { slug } = await params;
+
+  // Activity type slugs redirect to mega pages — skip metadata
+  if (activityTypeMegaPages.has(slug)) {
+    return {
+      title: 'Redirecting...',
+    };
+  }
+
   const data = await getActivityBySlug(slug);
 
   if (!data) {
@@ -184,6 +202,12 @@ export async function generateMetadata({ params }: ActivityPageProps): Promise<M
 
 export default async function ActivityPage({ params }: ActivityPageProps) {
   const { slug } = await params;
+
+  // Redirect activity type slugs to their dedicated mega pages
+  if (activityTypeMegaPages.has(slug)) {
+    redirect(`/${slug}`);
+  }
+
   const data = await getActivityBySlug(slug);
 
   if (!data) {

@@ -113,7 +113,7 @@ const popularCombos = [
 export default function ActivitiesPage() {
   return (
     <>
-      <JsonLd schema={createBreadcrumbSchema([
+      <JsonLd data={createBreadcrumbSchema([
         { name: "Home", url: "https://adventurewales.co.uk" },
         { name: "Activities", url: "https://adventurewales.co.uk/activities" },
       ])} />
@@ -310,10 +310,19 @@ export default function ActivitiesPage() {
             </div>
 
             <div className="flex flex-wrap gap-2">
-              {[...primaryActivities, ...secondaryActivities].map((activity) => (
+              {primaryActivities.map((activity) => (
                 <Link
                   key={activity.slug}
-                  href={activity.hasMegaPage ? `/${activity.slug}` : `/activities?type=${activity.slug}`}
+                  href={`/${activity.slug}`}
+                  className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-primary hover:text-primary transition-colors"
+                >
+                  {activity.name}
+                </Link>
+              ))}
+              {secondaryActivities.map((activity) => (
+                <Link
+                  key={activity.slug}
+                  href={`/activities?type=${activity.slug}`}
                   className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-primary hover:text-primary transition-colors"
                 >
                   {activity.name}

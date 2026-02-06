@@ -7,15 +7,21 @@
 - Network:       http://192.168.0.2:3000
 
 ✓ Starting...
-Attention: Next.js now collects completely anonymous telemetry regarding usage.
-This information is used to shape Next.js' roadmap and prioritize features.
-You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
-https://nextjs.org/telemetry
-
-✓ Ready in 1487ms
-○ Compiling /test-weather ...
- GET /test-weather 200 in 6.6s (compile: 5.7s, render: 917ms)
- GET /api/weather?lat=53.07&lng=-4.04 200 in 918ms (compile: 895ms, render: 23ms)
- GET /api/weather?lat=53.07&lng=-4.04 200 in 17ms (compile: 5ms, render: 12ms)
- GET /api/weather?lat=53.07&lng=-4.04 200 in 11ms (compile: 3ms, render: 8ms)
-✓ Compiled in 139ms
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+✓ Ready in 1626ms
+○ Compiling /activities/[slug] ...
+⨯ Error: DATABASE_URL environment variable is required
+    at module evaluation (src/db/index.ts:6:9)
+    at module evaluation (src/lib/queries.ts:1:1)
+    at module evaluation (src/app/activities/[slug]/page.tsx:5:1)
+  4 |
+  5 | if (!process.env.DATABASE_URL) {
+> 6 |   throw new Error("DATABASE_URL environment variable is required");
+    |         ^
+  7 | }
+  8 | const sql = neon(process.env.DATABASE_URL);
+  9 | export const db = drizzle(sql, { schema }); {
+  type: 'Error',
+  page: '/activities/hiking-snowdon'
+}
+ GET /activities/hiking-snowdon 500 in 8.4s (compile: 8.2s, render: 180ms)

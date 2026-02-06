@@ -24,6 +24,7 @@ import { FAQAccordion } from "@/components/operators/FAQAccordion";
 import { RegisterInterestForm } from "@/components/operators/RegisterInterestForm";
 import { AlreadyListedTooltip } from "@/components/operators/AlreadyListedTooltip";
 import { PricingSection } from "@/components/commercial/PricingSection";
+import { CommentsSection } from "@/components/comments/CommentsSection";
 
 export const metadata: Metadata = {
   title:
@@ -593,7 +594,7 @@ export default function ForOperatorsPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {testimonials.map((t) => (
               <div
                 key={t.name}
@@ -609,6 +610,10 @@ export default function ForOperatorsPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-16 border-t border-slate-200 pt-16">
+            <CommentsSection pageSlug="advertise" pageType="advertiser" title="Say Thank You" />
           </div>
         </div>
       </section>

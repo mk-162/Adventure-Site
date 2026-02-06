@@ -70,6 +70,12 @@ export const tagTypeEnum = pgEnum("tag_type", [
   "region",
 ]);
 
+export const commentStatusEnum = pgEnum("comment_status", [
+  "pending",
+  "approved",
+  "rejected",
+]);
+
 // =====================
 // CORE CONTENT TABLES
 // =====================
@@ -1312,8 +1318,51 @@ export const userFavourites = pgTable("user_favourites", {
 
 export const usersRelations = relations(users, ({ many }) => ({
   favourites: many(userFavourites),
+  comments: many(comments),
 }));
 
 export const userFavouritesRelations = relations(userFavourites, ({ one }) => ({
   user: one(users, { fields: [userFavourites.userId], references: [users.id] }),
+}));
+
+
+// =====================
+// COMMENTS
+// =====================
+
+export const comments = pgTable("comments", {
+  id: serial("id").primaryKey(),
+  pageSlug: varchar("page_slug", { length: 255 }).notNull(),
+  pageType: varchar("page_type", { length: 50 }).notNull(), // 'activity', 'operator', 'advertiser'
+  userId: integer("user_id").references(() => users.id), // Optional, linked to users if logged in
+  sessionId: varchar("session_id", { length: 255 }), // For tracking anonymous submissions
+  audioUrl: text("audio_url"),
+  transcript: text("transcript"), // Full text
+  summary: text("summary"), // AI summarized/cleaned version
+  status: commentStatusEnum("status").default("pending").notNull(),
+  votes: integer("votes").default(0).notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+}, (table) => [
+  index("comments_page_slug_idx").on(table.pageSlug),
+  index("comments_page_type_idx").on(table.pageType),
+  index("comments_status_idx").on(table.status),
+]);
+
+export const commentVotes = pgTable("comment_votes", {
+  id: serial("id").primaryKey(),
+  commentId: integer("comment_id").references(() => comments.id).notNull(),
+  sessionId: varchar("session_id", { length: 255 }).notNull(), // Prevent duplicate votes
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+}, (table) => [
+  index("comment_votes_comment_id_idx").on(table.commentId),
+  unique("unique_comment_vote").on(table.commentId, table.sessionId),
+]);
+
+export const commentsRelations = relations(comments, ({ one, many }) => ({
+  user: one(users, { fields: [comments.userId], references: [users.id] }),
+  commentVotes: many(commentVotes),
+}));
+
+export const commentVotesRelations = relations(commentVotes, ({ one }) => ({
+  comment: one(comments, { fields: [commentVotes.commentId], references: [comments.id] }),
 }));

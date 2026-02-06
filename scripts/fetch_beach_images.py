@@ -2,199 +2,248 @@ import csv
 import json
 import urllib.request
 import urllib.parse
-import os
-import time
 import re
-
-# Configuration
-FILES = [
-    'content/spots/beaches/anglesey.csv',
-    'content/spots/beaches/llyn.csv',
-    'content/spots/beaches/snowdonia-coast.csv',
-    'content/spots/beaches/ceredigion.csv'
-]
-OUTPUT_FILE = 'content/images/beaches-north.csv'
-MIN_SIZE = 1024
-USER_AGENT = 'BeachImageBot/1.0 (internal-tool)'
-EXCLUSIONS = ' -Australia -Sydney -Melbourne -NZ -"New Zealand" -"New South Wales"'
+import time
+import sys
+import os
 
 def clean_html(raw_html):
     if not raw_html:
-        return ''
+        return ""
     cleanr = re.compile('<.*?>')
     cleantext = re.sub(cleanr, '', raw_html)
     return cleantext.strip()
 
-def get_beaches(files):
-    beaches = []
-    for filepath in files:
-        if not os.path.exists(filepath):
-            print(f"Warning: File not found {filepath}")
-            continue
-
-        with open(filepath, 'r', encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                beaches.append({
-                    'slug': row['slug'],
-                    'name': row['name'],
-                    'region': row.get('region', '')
-                })
-    return beaches
-
-def search_commons(query, limit=50):
+def search_images(query, limit=20):
     base_url = "https://commons.wikimedia.org/w/api.php"
     params = {
         "action": "query",
         "generator": "search",
+        "gsrnamespace": "6",
         "gsrsearch": query,
-        "gsrnamespace": "6", # File namespace
         "gsrlimit": str(limit),
         "prop": "imageinfo",
         "iiprop": "url|size|extmetadata",
         "format": "json"
     }
-
     url = base_url + "?" + urllib.parse.urlencode(params)
-    req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
-
     try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Bot/1.0 (internal research tool)'})
         with urllib.request.urlopen(req) as response:
-            data = json.loads(response.read().decode('utf-8'))
-            return data
+            data = json.loads(response.read().decode())
+            return data.get("query", {}).get("pages", {})
     except Exception as e:
-        print(f"Error searching for {query}: {e}")
-        return None
+        sys.stderr.write(f"Error searching for {query}: {e}\n")
+        return {}
 
-def is_valid_image(url, title):
-    url_lower = url.lower()
-    title_lower = title.lower()
+def clean_beach_name(name):
+    # Remove text in parentheses
+    name = re.sub(r'\s*\(.*?\)', '', name)
+    return name.strip()
 
-    # Valid extensions
-    valid_exts = ('.jpg', '.jpeg', '.png', '.webp')
-    if not url_lower.endswith(valid_exts):
-        return False
+def process_beach(slug, name, region):
+    images = []
+    cleaned_name = clean_beach_name(name)
 
-    # Invalid terms (books, scans, pdfs)
-    # Also check for Australia keywords in title just in case
-    invalid_terms = ['pdf', 'djvu', 'page', 'scan', 'book', 'text', 'extract', 'australia', 'sydney', 'melbourne']
-    if any(term in title_lower for term in invalid_terms):
-        return False
+    # Strategy: First try quoted (strict), then unquoted (loose)
+    base_queries = []
+    base_queries.append((name, region))
+    if cleaned_name != name:
+        base_queries.append((cleaned_name, region))
 
-    return True
+    # Add 'Beach' if not present
+    if "beach" not in cleaned_name.lower() and "bay" not in cleaned_name.lower() and "sands" not in cleaned_name.lower():
+        base_queries.append((f"{cleaned_name} Beach", region))
 
-def process_beaches():
-    beaches = get_beaches(FILES)
+    # Aliases
+    aliases = {
+        "blue-pool-bay": [("Blue Pool", "Broughton"), ("Blue Pool", "Gower")],
+        "hunts-bay": [("Deep Slade", "Gower"), ("Deep Slade", "")],
+        "broad-haven-north": [("Broad Haven", "Pembrokeshire")],
+        "tenby-north": [("North Beach", "Tenby")],
+        "tenby-south": [("South Beach", "Tenby")],
+        "tor-bay": [("Tor Bay", "Gower")] # Enforce Gower for Tor Bay
+    }
 
-    # Ensure output dir exists
-    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
+    if slug in aliases:
+        base_queries.extend(aliases[slug])
 
-    with open(OUTPUT_FILE, 'w', newline='', encoding='utf-8') as f:
-        fieldnames = ['slug', 'image_url', 'width', 'height', 'license', 'author', 'source_url', 'title']
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
+    # Construct actual query strings
+    queries = []
+    for n, r in base_queries:
+        if r:
+            queries.append(f'"{n}" {r}')
+        else:
+            queries.append(f'"{n}"')
 
-        for beach in beaches:
-            print(f"Processing {beach['name']} ({beach['slug']})...")
+    # Fallback unquoted
+    for n, r in base_queries:
+        if r:
+            queries.append(f"{n} {r}")
+        else:
+            queries.append(f"{n}")
 
-            search_terms = []
+    # Fallback with Wales quoted
+    for n, r in base_queries:
+        queries.append(f'"{n}" Wales')
 
-            # Base names
-            name = beach['name']
-            primary_name = name.split('(')[0].strip() if '(' in name else name
+    found_images = {} # Deduplicate by URL or pageid
 
-            # Strategy 1: Full Name + Wales + Exclusions
-            search_terms.append(f"{name} Wales{EXCLUSIONS}")
+    # Validation keywords
+    validation_keywords = {'wales', 'cymru'}
+    if region.lower() == 'pembrokeshire':
+        validation_keywords.add('pembs')
+        validation_keywords.add('pembrokeshire')
+    if region.lower() == 'gower':
+        validation_keywords.add('swansea')
+        validation_keywords.add('gower')
 
-            # Strategy 2: Primary Name + Wales (if different)
-            if primary_name != name:
-                search_terms.append(f"{primary_name} Wales{EXCLUSIONS}")
+    # Specific keywords required for ambiguous places
+    required_keywords = {}
+    if slug == "tenby-north":
+        required_keywords = {'tenby'}
+    if slug == "tor-bay":
+        required_keywords = {'gower'} # Must mention Gower to avoid Devon
 
-            # Strategy 3: Primary Name + Cymru
-            search_terms.append(f"{primary_name} Cymru{EXCLUSIONS}")
+    blacklisted_authors = ["Internet Archive Book Images"]
+    blacklisted_terms = [
+        "Maine", "Sydney", "Australia", "New York", "Massachusetts", "Ohio", "Galapagos", "Rhodes",
+        "New South Wales", "NSW", "Devon", "Harlech", "Kinmel", "North Wales"
+    ]
 
-            # Strategy 4: Primary Name + "beach" + Wales
-            search_terms.append(f"{primary_name} beach Wales{EXCLUSIONS}")
+    # Visual keywords to ensure it's a beach image (simple heuristic)
+    visual_keywords = {'beach', 'bay', 'sand', 'coast', 'sea', 'ocean', 'cliff', 'view', 'scenic', 'water', 'wave', 'dune', 'shore'}
 
-            # Strategy 5: Special handling for "Main Beach"
-            if "Main Beach" in primary_name:
-                simplified = primary_name.replace("Main Beach", "Beach")
-                search_terms.append(f"{simplified} Wales{EXCLUSIONS}")
+    for q in queries:
+        if len(found_images) >= 10:
+            break
 
-            # Special cases for tricky beaches
-            if beach['slug'] == 'blue-pool-ceibwr':
-                 search_terms.append(f"Ceibwr Bay{EXCLUSIONS}")
-            if beach['slug'] == 'new-quay-harbour':
-                 search_terms.append(f"New Quay Ceredigion{EXCLUSIONS}")
-            if beach['slug'] == 'cwmtydu':
-                 search_terms.append(f"Cwmtydu{EXCLUSIONS}")
-            if beach['slug'] == 'machroes':
-                 search_terms.append(f"Machroes{EXCLUSIONS}")
-            if beach['slug'] == 'porth-ysgo':
-                 search_terms.append(f"Porth Ysgo{EXCLUSIONS}")
+        sys.stderr.write(f"Searching for {q}...\n")
+        results = search_images(q, limit=20)
 
-            images_found = []
-            seen_urls = set()
+        for page_id, page_data in results.items():
+            if len(found_images) >= 10:
+                break
 
-            for term in search_terms:
-                if len(images_found) >= 10:
-                    break
+            if "imageinfo" not in page_data:
+                continue
 
-                print(f"  Searching: {term}")
-                data = search_commons(term, limit=50)
+            info = page_data["imageinfo"][0]
+            width = info.get("width", 0)
+            height = info.get("height", 0)
 
-                if not data or 'query' not in data or 'pages' not in data['query']:
+            if width < 1024:
+                continue
+
+            url = info.get("url")
+            if url in found_images:
+                continue
+
+            extmetadata = info.get("extmetadata", {})
+            if not url.lower().endswith(('.jpg', '.jpeg', '.png', '.webp')):
+                continue
+
+            license_short = extmetadata.get("LicenseShortName", {}).get("value", "Unknown")
+            artist_html = extmetadata.get("Artist", {}).get("value", "")
+            author = clean_html(artist_html)
+
+            if author in blacklisted_authors:
+                continue
+
+            attribution_html = extmetadata.get("Attribution", {}).get("value", "")
+            attribution_text = clean_html(attribution_html)
+            if not attribution_text:
+                attribution_text = f"{name} by {author} ({license_short})"
+
+            description_html = extmetadata.get("ImageDescription", {}).get("value", "")
+            description = clean_html(description_html)
+            title = page_data.get("title", "")
+            categories_str = extmetadata.get("Categories", {}).get("value", "")
+
+            text_to_check = (description + " " + categories_str + " " + title).lower()
+
+            # Blacklist check
+            if any(term.lower() in text_to_check for term in blacklisted_terms):
+                continue
+
+            # General Location Validation
+            if not any(kw in text_to_check for kw in validation_keywords):
+                continue
+
+            # Specific Requirement Check
+            if required_keywords and not any(kw in text_to_check for kw in required_keywords):
+                continue
+
+            # Visual Relevance Check (skip if it seems to be a map or document or random object)
+            # Charts often have "Chart" in title/desc
+            if "chart" in text_to_check or "map" in text_to_check or "plan" in text_to_check:
+                continue
+
+            # Ensure at least one visual keyword is present (unless name itself has it, which it usually does)
+            # But "Tenby North Beach" name has "Beach". "Amroth" does not.
+            # If name has no visual keyword, enforce one from list.
+            if "beach" not in name.lower() and "bay" not in name.lower() and "sands" not in name.lower():
+                 if not any(vk in text_to_check for vk in visual_keywords):
+                     continue
+
+            source = "Wikimedia Commons"
+
+            image_entry = {
+                "spot_slug": slug,
+                "image_url": url,
+                "source": source,
+                "license": license_short,
+                "author": author,
+                "attribution_text": attribution_text,
+                "width": width,
+                "height": height,
+                "description": description
+            }
+
+            found_images[url] = image_entry
+
+        time.sleep(0.2)
+
+    return list(found_images.values())
+
+def main():
+    input_files = [
+        "content/spots/beaches/pembrokeshire.csv",
+        "content/spots/beaches/gower.csv"
+    ]
+    output_file = "content/images/beaches-south.csv"
+
+    all_images = []
+
+    for file_path in input_files:
+        if not os.path.exists(file_path):
+            sys.stderr.write(f"File not found: {file_path}\n")
+            continue
+
+        with open(file_path, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                slug = row.get("slug")
+                name = row.get("name")
+                region = row.get("region")
+
+                if not slug or not name:
                     continue
 
-                pages = data['query']['pages']
+                sys.stderr.write(f"Processing {name} ({slug})...\n")
+                beach_images = process_beach(slug, name, region)
+                all_images.extend(beach_images)
+                sys.stderr.write(f"Found {len(beach_images)} images for {name}\n")
 
-                for page_id, page_data in pages.items():
-                    if len(images_found) >= 10:
-                        break
+    # Write to CSV
+    fieldnames = ["spot_slug", "image_url", "source", "license", "author", "attribution_text", "width", "height", "description"]
 
-                    if 'imageinfo' not in page_data:
-                        continue
+    with open(output_file, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(all_images)
 
-                    info = page_data['imageinfo'][0]
-                    width = info.get('width', 0)
-                    height = info.get('height', 0)
-                    url = info['url']
-                    title = page_data.get('title', '').replace('File:', '')
-
-                    if width >= MIN_SIZE or height >= MIN_SIZE:
-                        if url in seen_urls:
-                            continue
-
-                        if not is_valid_image(url, title):
-                            continue
-
-                        seen_urls.add(url)
-
-                        # Metadata
-                        ext = info.get('extmetadata', {})
-                        license_short = ext.get('LicenseShortName', {}).get('value', 'Unknown')
-                        artist_html = ext.get('Artist', {}).get('value', 'Unknown')
-                        artist = clean_html(artist_html)
-
-                        description_url = info.get('descriptionurl', '')
-
-                        image_entry = {
-                            'slug': beach['slug'],
-                            'image_url': url,
-                            'width': width,
-                            'height': height,
-                            'license': license_short,
-                            'author': artist,
-                            'source_url': description_url,
-                            'title': title
-                        }
-
-                        images_found.append(image_entry)
-                        writer.writerow(image_entry)
-                        f.flush()
-
-            print(f"  Found {len(images_found)} images.")
-            time.sleep(0.5) # Be nice to API
+    sys.stderr.write(f"Done. Wrote {len(all_images)} images to {output_file}\n")
 
 if __name__ == "__main__":
-    process_beaches()
+    main()

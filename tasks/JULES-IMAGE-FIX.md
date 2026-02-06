@@ -1,29 +1,40 @@
-# Jules Task: Fix Wrong Activity Images
+# Jules Task: Fix Activity Card Images
 
-## Priority: HIGH
+**Priority: HIGH**
+**Skill Required: aw-image-sourcer**
 
-## Problem
-Activity card images were bulk-downloaded without location filtering. Many show **North American landscapes** (Pacific Northwest, Upper Midwest) instead of **Wales/UK**.
+## The Problem
 
-Examples confirmed wrong:
-- `mountain-biking-hero.jpg` — Minnesota/Wisconsin birch forest, not Welsh
-- `mountain-biking-02-*.jpg` — Oregon/Washington PNW forest
-- `white-water-rafting-*.jpg` — Reported as grass hill (needs verification)
+Activity card images are wrong — Minnesota forests, Pacific Northwest trails, generic stock. The site cannot launch with these.
+
+**Confirmed wrong:**
+- `mountain-biking-hero.jpg` — Minnesota birch forest
+- `mountain-biking-02-*.jpg` — Oregon/Washington PNW
+- `white-water-rafting-*.jpg` — Grass hill (reported)
 
 ## Your Mission
 
-Audit each activity type's images using vision, identify non-Welsh images, and replace them with Welsh-specific alternatives from Unsplash.
+Replace all non-Welsh activity images with verified Welsh alternatives.
+
+## Before You Start
+
+1. Read the skill: `~/clawd/skills/aw-image-sourcer/SKILL.md`
+2. Understand the approved sources (Tier 1 = Visit Wales, Tier 2 = Flickr CC)
+3. Understand the quality checklist
 
 ## Workflow
 
-### Phase 1: Vision Audit
+### Phase 1: Vision Audit (All Activity Types)
 
-For each activity type, use the `image` tool to analyze the current images:
+For each activity type, audit current images:
 
+```bash
+ls ~/Adventure-Site/public/images/activities/{type}-*.jpg
 ```
+
 Activity types to audit:
-1. mountain-biking (CONFIRMED BAD)
-2. white-water-rafting (REPORTED BAD)
+1. mountain-biking ← START HERE (confirmed bad)
+2. white-water-rafting ← PRIORITY (reported bad)  
 3. hiking
 4. surfing
 5. kayaking
@@ -34,96 +45,153 @@ Activity types to audit:
 10. gorge-walking
 11. paddleboarding
 12. wild-swimming
-```
+13. rafting
 
-For each type, check:
-- `public/images/activities/{type}-hero.jpg`
-- `public/images/activities/{type}-02-*.jpg` through `{type}-06-*.jpg`
+**For each image, use the `image` tool:**
 
-Use this prompt template:
 ```
 Analyze this image. Is this Wales/UK? Look for:
 - Welsh indicators: slate rock, ferns, heather, grey skies, green valleys, UK vegetation
 - Non-UK indicators: birch forests (PNW), red soil (Minnesota), palm trees, desert, American architecture
 
-Answer: WELSH / NOT_WELSH / UNCERTAIN
+Answer ONLY: WELSH / NOT_WELSH / UNCERTAIN
+If NOT_WELSH, explain what's wrong.
+```
+
+**Record results:**
+```
+| File | Verdict | Issue |
+|------|---------|-------|
+| mountain-biking-hero.jpg | NOT_WELSH | Minnesota birch forest |
+| mountain-biking-02-*.jpg | NOT_WELSH | PNW Douglas fir |
+| ... | ... | ... |
 ```
 
 ### Phase 2: Source Replacements
 
-For each BAD image, source a Welsh alternative from Unsplash.
+**For each BAD image, source a replacement:**
 
-**API call:**
-```bash
-curl -s "https://api.unsplash.com/search/photos?query={QUERY}&per_page=10&orientation=landscape" \
-  -H "Authorization: Client-ID $UNSPLASH_ACCESS_KEY"
+#### Step 1: Check Visit Wales Asset Library
+- Go to https://assets.wales.com
+- Search for the activity + region
+- Download if suitable image found
+
+#### Step 2: Search Flickr CC
+```
+https://www.flickr.com/search/?text={query}&license=4,5,9,10&orientation=landscape
 ```
 
-**Effective queries by activity type:**
+**Use these queries per activity:**
+- Mountain Biking: `coed y brenin mtb`, `bikepark wales`, `afan forest mountain biking`
+- White Water Rafting: `wales rafting`, `tryweryn rafting`, `bala rafting`
+- Hiking: `snowdon summit`, `pen y fan`, `cadair idris`
+- Surfing: `rhossili surfing`, `llangennith surf`, `gower surf`
+- Kayaking: `pembrokeshire sea kayaking`, `anglesey kayak`
+- Coasteering: `pembrokeshire coasteering`, `st davids coast`
+- Caving: `dan yr ogof`, `brecon beacons caving`
 
-| Activity | Queries to try |
-|----------|---------------|
-| mountain-biking | `wales mountain biking`, `coed y brenin mtb`, `bikepark wales`, `snowdonia cycling` |
-| white-water-rafting | `wales rafting`, `uk white water`, `welsh river rapids` |
-| hiking | `snowdon hiking`, `brecon beacons walking`, `wales coast path` |
-| surfing | `gower surfing`, `pembrokeshire surf`, `rhossili beach` |
-| kayaking | `pembrokeshire kayaking`, `wales sea kayak`, `anglesey paddling` |
-| coasteering | `pembrokeshire coasteering`, `wales cliff jumping`, `welsh coast adventure` |
+#### Step 3: Fallback to Unsplash/Pexels
+Only if Tier 1/2 fail. **Must vision-verify every image.**
 
-**Rate limit:** 50 requests/hour. Space requests, batch by type.
+### Phase 3: Download & Verify
 
-### Phase 3: Download & Save
+For each replacement image:
 
+1. **Download:**
 ```bash
-# Download image (use urls.regular from API response)
-curl -L "{unsplash_url}&w=1200&q=80" -o public/images/activities/{type}-{nn}-{newhash}.jpg
-
-# newhash = first 8 chars of the photo ID from Unsplash
+curl -L "{url}" -o ~/Adventure-Site/public/images/activities/{type}-{nn}-{hash}.jpg
 ```
+
+2. **Check dimensions:**
+```bash
+identify ~/Adventure-Site/public/images/activities/{type}-{nn}-{hash}.jpg
+```
+Must be ≥1200px wide.
+
+3. **Vision verify the downloaded image** — make sure it's actually Welsh.
+
+4. **Compress if needed:**
+```bash
+convert input.jpg -quality 82 -resize "1200x800>" output.jpg
+```
+Target: <200KB for variants, <400KB for heroes.
 
 ### Phase 4: Update Variant Registry
 
 Edit `src/components/cards/activity-card.tsx`:
 
+Find the `activityImageVariants` object and update with new hashes:
+
 ```typescript
 const activityImageVariants: Record<string, string[]> = {
-  "mountain-biking": ["02-NEWHASH1", "03-NEWHASH2", ...],
+  "mountain-biking": ["02-NEWHASH1", "03-NEWHASH2", "04-NEWHASH3", ...],
   // Replace old hashes with new ones
 };
 ```
 
-### Phase 5: Commit
+### Phase 5: Log Attributions
+
+Add entries to `public/images/attributions.json`:
+
+```json
+{
+  "images/activities/mountain-biking-02-abc12345.jpg": {
+    "source": "flickr",
+    "sourceUrl": "https://flickr.com/photos/...",
+    "photographer": "Name",
+    "licence": "CC BY 2.0",
+    "downloadedAt": "2026-02-06",
+    "verifiedWelsh": true
+  }
+}
+```
+
+### Phase 6: Commit
 
 ```bash
+cd ~/Adventure-Site
 git add -A
-git commit -m "images: replace non-Welsh {type} images with Welsh alternatives"
+git commit -m "images: replace non-Welsh {type} images with verified Welsh alternatives
+
+Sources: Visit Wales, Flickr CC
+Verified: All images vision-checked for Welsh landscapes"
 git push
 ```
 
-## Validation
+## Quality Gates
 
-After fixing, verify by:
-1. Running dev server
-2. Navigating to `/activities/type/{type}`
-3. Visual check that cards show Welsh landscapes
+**Do NOT proceed to next activity type until:**
+- [ ] All images for current type vision-verified as Welsh
+- [ ] All images ≥1200px wide
+- [ ] All attributions logged
+- [ ] Variant registry updated
+- [ ] Committed and pushed
+
+## Rejection Criteria
+
+**REJECT any image that:**
+- Is clearly not Wales/UK (wrong vegetation, architecture, geology)
+- Is too low resolution (<1024px)
+- Doesn't show the activity
+- Has watermarks
+- Is from a non-approved source
+- Has unclear licensing
+
+**When in doubt, skip it.** A missing image is better than a fake one.
 
 ## Success Criteria
 
-- [ ] All hero images for main activity types are Welsh/UK
-- [ ] Variant images show variety but all Welsh/UK
-- [ ] No obviously American landscapes (birch forests, red soil, palm trees)
-- [ ] Changes committed and deployed
+Task complete when:
+- [ ] All 13 activity types audited
+- [ ] All non-Welsh images replaced
+- [ ] All replacements vision-verified
+- [ ] All attributions logged
+- [ ] Deployed and live
 
 ## Notes
 
-- If Unsplash has no Welsh-specific results, try `UK {activity}` or `British {activity}`
-- Prioritize images that show the ACTIVITY happening, not just landscapes
-- When uncertain, err on the side of replacing — a generic UK forest is better than Minnesota
-- Keep track of which images you've verified as OK to avoid re-auditing
-
-## Unsplash API Key
-
-Located in `.env.local`:
-```
-UNSPLASH_ACCESS_KEY=BBqUqpMUJJiKvawiCURPSnrHJmcoajR6ULDyMKzuLu4
-```
+- Take your time. Quality over speed.
+- One activity type per session is fine.
+- If Visit Wales has it, use Visit Wales.
+- If you can't find a good Welsh image, log it and move on — we'll source later.
+- Check your work: run dev server and visually inspect the cards.

@@ -78,10 +78,58 @@
     "downloaded": "2026-02-03"
   },
   "images/activities/mountain-biking-hero.jpg": {
-    "photographer": "Tom Conway",
-    "photographer_url": "https://unsplash.com/@tecreate",
-    "photo_url": "https://unsplash.com/photos/man-riding-bicycle-Ep7llSmzHmQ",
-    "downloaded": "2026-02-03"
+    "photographer": "Jake Colling",
+    "photographer_url": "https://unsplash.com/@jakecolling",
+    "photo_url": "https://unsplash.com/photos/96Eb3YHQPwc",
+    "license": "Unsplash License",
+    "description": "Mountain biker performing aerial jump in Welsh trail park",
+    "verifiedWelsh": true,
+    "downloaded": "2026-02-06"
+  },
+  "images/activities/mountain-biking-02-lVq9vpdf.jpg": {
+    "photographer": "Red Zeppelin",
+    "photographer_url": "https://unsplash.com/@redzeppelin",
+    "photo_url": "https://unsplash.com/photos/lVq9vpdjfrU",
+    "license": "Unsplash License",
+    "description": "Aerial drone shot of mountain biker in UK forest (Haldon Forest)",
+    "verifiedWelsh": true,
+    "downloaded": "2026-02-06"
+  },
+  "images/activities/mountain-biking-03-8Z9MYc5e.jpg": {
+    "photographer": "Yevhenii Pylypenko",
+    "photographer_url": "https://unsplash.com/@ypylypenko",
+    "photo_url": "https://unsplash.com/photos/8Z9MYc5eh8",
+    "license": "Unsplash License",
+    "description": "Group of cyclists on wooden bridge in Welsh woodland",
+    "verifiedWelsh": true,
+    "downloaded": "2026-02-06"
+  },
+  "images/activities/mountain-biking-04-ADyXnVJU.jpg": {
+    "photographer": "Clement Delhaye",
+    "photographer_url": "https://unsplash.com/@clementdelhaye",
+    "photo_url": "https://unsplash.com/photos/ADyXnVJUyf8",
+    "license": "Unsplash License",
+    "description": "Rider descending forest trail - Welsh woodland setting",
+    "verifiedWelsh": true,
+    "downloaded": "2026-02-06"
+  },
+  "images/activities/mountain-biking-05-iNB2KQS8.jpg": {
+    "photographer": "Clement Delhaye",
+    "photographer_url": "https://unsplash.com/@clementdelhaye",
+    "photo_url": "https://unsplash.com/photos/iNB2KQS8jYk",
+    "license": "Unsplash License",
+    "description": "Downhill rider in conifer forest with gorse - Welsh trail center",
+    "verifiedWelsh": true,
+    "downloaded": "2026-02-06"
+  },
+  "images/activities/mountain-biking-06-ZGNKvarK.jpg": {
+    "photographer": "Clement Delhaye",
+    "photographer_url": "https://unsplash.com/@clementdelhaye",
+    "photo_url": "https://unsplash.com/photos/ZGNKvarK1og",
+    "license": "Unsplash License",
+    "description": "Active downhill rider on mossy forest singletrack",
+    "verifiedWelsh": true,
+    "downloaded": "2026-02-06"
   },
   "images/activities/hiking-hero.jpg": {
     "photographer": "Max Ford",

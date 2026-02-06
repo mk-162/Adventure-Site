@@ -72,7 +72,7 @@ const activityImageVariants: Record<string, string[]> = {
   "gorge-walking": ["02-0027dfcc", "03-6eada4af", "04-d40b6bff", "05-507fc51c", "06-956385b9"],
   "hiking": ["03-96151002", "04-2bf15ed9", "05-c7cb2f1e", "06-74fc1189"],
   "kayaking": ["02-570fb957", "03-bcd19dc4", "04-ba6d1e33", "05-758c3658", "06-656475f5"],
-  "mountain-biking": ["02-1fe6646f", "03-ce257a7c", "04-63e4b2e0", "05-ebb64387", "06-f0231015"],
+  "mountain-biking": ["02-lVq9vpdf", "03-8Z9MYc5e", "04-ADyXnVJU", "05-iNB2KQS8", "06-ZGNKvarK"],
   "paddleboarding": ["02-30a88c24", "03-02927bb8", "04-c0cf2a01", "05-46f4408f", "06-f35e1c4d"],
   "rafting": ["02-0d9b00f9", "03-3b5d5ae0", "04-bd3fe82b", "05-ed393aad", "06-e544a7c2"],
   "surfing": ["02-1ef1420b", "03-fc8506a1", "04-9bfdc377", "05-1b64a41d", "06-74705f6a"],

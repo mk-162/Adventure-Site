@@ -35,6 +35,7 @@ import {
   createBreadcrumbSchema 
 } from "@/components/seo/JsonLd";
 import { ActivityWeatherAlert } from "@/components/weather/ActivityWeatherAlert";
+import { CommentsSection } from "@/components/comments/CommentsSection";
 
 const MapView = dynamic(() => import("@/components/ui/MapView"), {
   loading: () => (
@@ -673,6 +674,11 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
             </div>
           </section>
         )}
+
+        {/* Community Tips */}
+        <div className="mt-12">
+            <CommentsSection pageSlug={activity.slug} pageType="activity" title="Community Tips" />
+        </div>
 
         {/* Related Activities */}
         {relatedActivities.length > 0 && (

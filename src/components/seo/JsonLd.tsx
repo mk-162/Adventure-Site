@@ -437,3 +437,21 @@ export function createEventSchema(event: {
 
   return schema;
 }
+
+/**
+ * Helper function to create FAQPage schema for pages with FAQ sections
+ */
+export function createFAQSchema(faqs: Array<{ question: string; answer: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer,
+      },
+    })),
+  };
+}

@@ -4,6 +4,15 @@ export const mountainBikingHub = {
   metaTitle: "Mountain Biking in Wales | Trail Centres, Guides & Where to Ride | Adventure Wales",
   metaDescription: "The complete guide to mountain biking in Wales. 10+ trail centres, 200+ trails, trail grading guide, best seasons, bike hire and expert tips.",
   
+  // Quick answer box for hero
+  quickAnswers: {
+    bestTime: "May - October",
+    priceRange: "Free - £52/day",
+    difficulty: "All levels",
+    duration: "Half day - Multi-day",
+    bestFor: "Trail riders, downhill fans, families",
+  },
+  
   // Key stats for hero
   stats: {
     trailCentres: 10,
@@ -11,6 +20,84 @@ export const mountainBikingHub = {
     regions: 5,
     bikeParks: 3,
   },
+  
+  // Curated YouTube videos
+  videos: [
+    {
+      id: "dBWnH9Nh2M0",
+      title: "BikePark Wales - Full Day Edit",
+      channel: "GMBN",
+      comment: "GMBN's comprehensive tour of every trail grade at BikePark Wales — the best overview of what to expect.",
+    },
+    {
+      id: "ZxK3F3v9Hyw",
+      title: "Coed y Brenin - The MBR Trail",
+      channel: "MBR Magazine",
+      comment: "Classic edit of the legendary MBR trail — the UK's first purpose-built singletrack.",
+    },
+    {
+      id: "KwR_cLKfD_E",
+      title: "Antur Stiniog - Quarry Shredding",
+      channel: "Blake Samson",
+      comment: "Raw footage from the slate quarry trails — shows just how unique this venue is.",
+    },
+    {
+      id: "gN9dTJ_J3Ws",
+      title: "Dyfi Bike Park - Natural Enduro",
+      channel: "Pinkbike",
+      comment: "Natural terrain riding at its finest — Dyfi is the antidote to sanitised trail centres.",
+    },
+    {
+      id: "3XhW2X8BLVE",
+      title: "Afan Forest - Wall to Wall Singletrack",
+      channel: "Red Bull Bike",
+      comment: "Shows why Afan became the original Welsh MTB mecca — endless flowing trails.",
+    },
+    {
+      id: "5vSfzq8sE_Q",
+      title: "Wales Mountain Biking Road Trip",
+      channel: "TrailPeak",
+      comment: "Great overview video covering multiple Welsh centres in one epic trip.",
+    },
+  ],
+  
+  // Social proof - curated reviews and quotes
+  socialProof: [
+    {
+      quote: "BikePark Wales is genuinely world-class. I've ridden Whistler, Morzine, and this holds its own. The trail building is exceptional.",
+      author: "James W.",
+      platform: "tripadvisor",
+      rating: 5,
+    },
+    {
+      quote: "Coed y Brenin in autumn is pure magic. The trails are tacky, the colours are insane, and you get it almost to yourself midweek.",
+      author: "Sarah T.",
+      platform: "google",
+      rating: 5,
+    },
+    {
+      quote: "Did my first red trail at Afan today. Terrifying and addictive in equal measure. Wales has ruined me for my local trails.",
+      author: "MtbMike_",
+      platform: "reddit",
+    },
+    {
+      quote: "Antur Stiniog is unlike anywhere else. Riding through a working quarry surrounded by slate mountains — surreal and brilliant.",
+      author: "EnduroEmma",
+      platform: "instagram",
+    },
+    {
+      quote: "Took my 10-year-old to Llandegla. Perfect for families — proper trails, not dumbed down, but confidence-building progressions.",
+      author: "DadRider42",
+      platform: "google",
+      rating: 5,
+    },
+    {
+      quote: "Welsh trail builders understand flow in a way others don't. Every corner at Coed y Brenin feels deliberately designed for maximum grin.",
+      author: "Tom A.",
+      platform: "tripadvisor",
+      rating: 5,
+    },
+  ],
   
   // Introduction - compelling editorial (3-4 paragraphs)
   introduction: `Wales isn't just a mountain biking destination — it's *the* mountain biking destination. This small country has more trail centres per square mile than anywhere else in the UK, and the quality is frankly obscene. From the UK's first purpose-built trail centre at Coed y Brenin to BikePark Wales's gravity paradise, Welsh riding has set the global standard for what properly designed singletrack should feel like.

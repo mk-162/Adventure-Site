@@ -23,8 +23,14 @@ import {
   BookOpen,
   Home,
   Sparkles,
+  Play,
+  Quote,
+  Clock,
+  PoundSterling,
+  Users,
+  Gauge,
 } from "lucide-react";
-import { JsonLd, createTouristDestinationSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
+import { JsonLd, createTouristDestinationSchema, createBreadcrumbSchema, createFAQSchema } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: mountainBikingHub.metaTitle,
@@ -95,10 +101,18 @@ export default async function MountainBikingHubPage() {
     }
   );
 
+  const faqSchema = createFAQSchema(
+    mountainBikingHub.faqs.map(faq => ({
+      question: faq.question,
+      answer: faq.answer,
+    }))
+  );
+
   return (
     <>
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={destinationSchema} />
+      <JsonLd data={faqSchema} />
 
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
@@ -147,7 +161,53 @@ export default async function MountainBikingHubPage() {
             <ChevronDown className="h-5 w-5" />
           </a>
         </div>
+
+        {/* Quick Answer Box */}
+        <div className="absolute bottom-0 left-0 right-0 translate-y-1/2 z-20 px-4">
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Calendar className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Best Time</span>
+                </div>
+                <div className="font-bold text-gray-900">{mountainBikingHub.quickAnswers.bestTime}</div>
+              </div>
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <PoundSterling className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Price</span>
+                </div>
+                <div className="font-bold text-gray-900">{mountainBikingHub.quickAnswers.priceRange}</div>
+              </div>
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Gauge className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Difficulty</span>
+                </div>
+                <div className="font-bold text-gray-900">{mountainBikingHub.quickAnswers.difficulty}</div>
+              </div>
+              <div>
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Clock className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Duration</span>
+                </div>
+                <div className="font-bold text-gray-900">{mountainBikingHub.quickAnswers.duration}</div>
+              </div>
+              <div className="col-span-2 md:col-span-1">
+                <div className="flex items-center justify-center gap-1.5 text-primary mb-1">
+                  <Users className="h-4 w-4" />
+                  <span className="text-xs font-medium uppercase tracking-wide">Best For</span>
+                </div>
+                <div className="font-bold text-gray-900 text-sm">{mountainBikingHub.quickAnswers.bestFor}</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+      {/* Spacer for quick answer box */}
+      <div className="h-20 md:h-16" />
 
       {/* Breadcrumbs */}
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -317,6 +377,89 @@ export default async function MountainBikingHubPage() {
           </div>
 
           <SeasonGuide seasons={mountainBikingHub.seasonGuide} />
+        </div>
+      </section>
+
+      {/* Video Hub */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-primary text-sm font-semibold mb-4">
+              <Play className="h-4 w-4" />
+              Video Guide
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
+              See the Trails in Action
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Curated videos from the best Welsh MTB content creators
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {mountainBikingHub.videos.map((video) => (
+              <div key={video.id} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200">
+                <div className="aspect-video">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${video.id}`}
+                    title={video.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="font-bold text-primary mb-1">{video.title}</h3>
+                  <p className="text-xs text-gray-500 mb-2">by {video.channel}</p>
+                  <p className="text-sm text-gray-600">{video.comment}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof */}
+      <section className="bg-gray-50 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-primary text-sm font-semibold mb-4">
+              <Quote className="h-4 w-4" />
+              What Riders Say
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
+              Real Reviews from Real Riders
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {mountainBikingHub.socialProof.map((item, i) => (
+              <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200">
+                <div className="flex items-center gap-2 mb-3">
+                  {item.rating && (
+                    <div className="flex">
+                      {[...Array(item.rating)].map((_, j) => (
+                        <Star key={j} className="h-4 w-4 fill-amber-400 text-amber-400" />
+                      ))}
+                    </div>
+                  )}
+                  <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${
+                    item.platform === 'tripadvisor' ? 'bg-green-100 text-green-700' :
+                    item.platform === 'google' ? 'bg-blue-100 text-blue-700' :
+                    item.platform === 'reddit' ? 'bg-orange-100 text-orange-700' :
+                    'bg-pink-100 text-pink-700'
+                  }`}>
+                    {item.platform}
+                  </span>
+                </div>
+                <blockquote className="text-gray-700 mb-3 italic">
+                  &ldquo;{item.quote}&rdquo;
+                </blockquote>
+                <p className="text-sm font-medium text-gray-900">— {item.author}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ChevronRight, ArrowLeft, MapPin, Filter } from "lucide-react";
-import { getActivitiesByType, getActivityTypes } from "@/lib/queries";
+import { getActivitiesByActivityType } from "@/lib/queries";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { JsonLd, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 
@@ -57,7 +57,7 @@ export default async function ActivityTypePage({ params }: ActivityTypePageProps
     notFound();
   }
 
-  const activities = await getActivitiesByType(type);
+  const activities = await getActivitiesByActivityType(type);
 
   const breadcrumbItems = [
     { name: "Home", url: "/" },

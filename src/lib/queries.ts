@@ -199,6 +199,14 @@ export async function getActivitiesByRegion(regionSlug: string, limit?: number) 
   return getActivities({ regionId: region.id, limit });
 }
 
+// Get all activities of a given type (no region filter)
+export async function getActivitiesByActivityType(activityTypeSlug: string, limit?: number) {
+  const activityType = await getActivityTypeBySlug(activityTypeSlug);
+  if (!activityType) return [];
+
+  return getActivities({ activityTypeId: activityType.id, limit });
+}
+
 export async function getActivitiesByType(
   regionSlug: string,
   activityTypeSlug: string,

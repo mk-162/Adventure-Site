@@ -7,6 +7,7 @@ import { comments, commentVotes } from "@/db/schema";
 import { eq, and, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { cookies } from "next/headers";
+import { getUserSession } from "@/lib/user-auth";
 
 // Initialize OpenAI
 // Note: This relies on OPENAI_API_KEY being present in environment variables
@@ -76,19 +77,21 @@ export async function submitComment(prevState: any, formData: FormData) {
     const pageSlug = formData.get("pageSlug") as string;
     const pageType = formData.get("pageType") as string;
 
-    // Get Session ID (spam protection)
+    // Get Session ID (spam protection) & User Session
     const cookieStore = await cookies();
     let sessionId = cookieStore.get("aw_session_id")?.value;
 
-    // Create session if missing (though middleware usually handles this)
+    // Create anonymous session if missing
     if (!sessionId) {
       sessionId = crypto.randomUUID();
-      // We can't set cookies in server action directly easily without response,
-      // but we assume client has one. If not, we use this random one for the DB write.
     }
 
+    // Check for logged in user
+    const userSession = await getUserSession();
+    const userId = userSession?.userId;
+
     // Check for existing submission on this page by this session
-    // (Simple spam protection)
+    // (Simple spam protection) - Allow multiple if logged in maybe? keeping strict for now.
     const existing = await db.query.comments.findFirst({
         where: and(
             eq(comments.pageSlug, pageSlug),
@@ -111,6 +114,7 @@ export async function submitComment(prevState: any, formData: FormData) {
       pageSlug,
       pageType,
       sessionId,
+      userId: userId || null, // Link to user if logged in
       audioUrl,
       transcript,
       summary,
@@ -139,6 +143,9 @@ export async function getComments(pageSlug: string) {
       eq(comments.status, 'approved')
     ),
     orderBy: (comments, { desc }) => [desc(comments.votes), desc(comments.createdAt)],
+    with: {
+      user: true, // Fetch user details
+    }
   });
 }
 
@@ -173,8 +180,6 @@ export async function voteForComment(commentId: number) {
         .where(eq(comments.id, commentId));
     });
 
-    // We don't know the page slug here easily to revalidate,
-    // so we might rely on client optimistic update or passed-in path.
     return { success: true };
   } catch (error) {
     console.error("Voting error:", error);

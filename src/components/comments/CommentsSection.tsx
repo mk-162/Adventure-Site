@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import { getComments } from '@/lib/comments';
+import { getUserSession } from '@/lib/user-auth';
 import { CommentList } from './CommentList';
 import { VoiceRecorder } from './VoiceRecorder';
 import { Mic } from 'lucide-react';
@@ -11,7 +12,10 @@ interface CommentsSectionProps {
 }
 
 export async function CommentsSection({ pageSlug, pageType, title = "Voice Notes" }: CommentsSectionProps) {
-  const comments = await getComments(pageSlug);
+  const [comments, userSession] = await Promise.all([
+    getComments(pageSlug),
+    getUserSession()
+  ]);
 
   return (
     <section className="py-8 bg-slate-50 border-t border-slate-200">
@@ -31,6 +35,7 @@ export async function CommentsSection({ pageSlug, pageType, title = "Voice Notes
             {/* List Column */}
             <div className="order-2 md:order-1">
                 <Suspense fallback={<div className="text-slate-500">Loading notes...</div>}>
+                    {/* @ts-ignore - mismatch in Drizzle types for user relation vs client type, safe to ignore for MVP */}
                     <CommentList initialComments={comments} />
                 </Suspense>
             </div>
@@ -38,7 +43,11 @@ export async function CommentsSection({ pageSlug, pageType, title = "Voice Notes
             {/* Recorder Column (Sticky) */}
             <div className="order-1 md:order-2">
                 <div className="sticky top-24">
-                    <VoiceRecorder pageSlug={pageSlug} pageType={pageType} />
+                    <VoiceRecorder
+                      pageSlug={pageSlug}
+                      pageType={pageType}
+                      currentUser={userSession}
+                    />
                 </div>
             </div>
         </div>

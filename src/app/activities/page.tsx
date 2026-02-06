@@ -168,14 +168,12 @@ export default function ActivitiesPage() {
               </p>
             </div>
 
-            <div className="grid gap-6 lg:gap-8">
-              {primaryActivities.map((activity, index) => (
+            <div className="grid md:grid-cols-2 gap-6">
+              {primaryActivities.map((activity) => (
                 <Link
                   key={activity.slug}
                   href={`/${activity.slug}`}
-                  className={`group relative overflow-hidden rounded-2xl bg-gray-900 ${
-                    index === 0 ? "lg:h-[400px]" : "lg:h-[320px]"
-                  } h-[280px]`}
+                  className="group relative overflow-hidden rounded-2xl bg-gray-900 h-[320px]"
                 >
                   {/* Background Image */}
                   <div className="absolute inset-0">
@@ -184,43 +182,40 @@ export default function ActivitiesPage() {
                       alt={activity.name}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                   </div>
 
                   {/* Content */}
-                  <div className="absolute inset-0 p-6 lg:p-8 flex flex-col justify-end">
-                    <div className="flex flex-wrap gap-2 mb-3">
-                      {activity.regions.map((region) => (
+                  <div className="absolute inset-0 p-5 flex flex-col justify-end">
+                    <div className="flex flex-wrap gap-1.5 mb-2">
+                      {activity.regions.slice(0, 2).map((region) => (
                         <span
                           key={region}
-                          className="px-2 py-1 bg-white/20 backdrop-blur-sm rounded text-xs font-medium text-white"
+                          className="px-2 py-0.5 bg-white/20 backdrop-blur-sm rounded text-xs font-medium text-white"
                         >
                           {region}
                         </span>
                       ))}
                     </div>
                     
-                    <h3 className="text-2xl lg:text-3xl font-bold text-white mb-1">
+                    <h3 className="text-xl lg:text-2xl font-bold text-white mb-1">
                       {activity.name}
                     </h3>
-                    <p className="text-accent-hover font-semibold text-sm mb-2">
-                      {activity.tagline}
-                    </p>
-                    <p className="text-white/80 text-sm lg:text-base max-w-2xl mb-4 line-clamp-2">
+                    <p className="text-white/70 text-sm mb-3 line-clamp-2">
                       {activity.description}
                     </p>
 
                     <div className="flex items-center justify-between">
-                      <div className="flex gap-4 text-sm text-white/70">
+                      <div className="flex gap-3 text-xs text-white/60">
                         {Object.entries(activity.stats).map(([key, value]) => (
                           <span key={key}>
                             <strong className="text-white">{value}</strong> {key}
                           </span>
                         ))}
                       </div>
-                      <span className="flex items-center gap-1 text-accent-hover font-semibold text-sm group-hover:gap-2 transition-all">
+                      <span className="inline-flex items-center gap-2 px-4 py-2 bg-accent-hover text-white text-sm font-bold rounded-lg group-hover:bg-orange-600 transition-colors">
                         View Guide <ArrowRight className="w-4 h-4" />
                       </span>
                     </div>

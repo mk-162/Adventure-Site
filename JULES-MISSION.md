@@ -472,7 +472,751 @@ Target: 15-20 crags
 
 ---
 
-### Phase 2: Image Sourcing (6 parallel tasks)
+### Phase 2: Operators & Providers (8 parallel tasks)
+
+---
+
+#### TASK OP-1: MTB Operators & Guides
+```
+Research ALL mountain biking operators, guides, and tour companies in Wales.
+
+Include: Guided rides, skills coaching, uplift services, multi-day tours,
+bike hire with guiding, women's MTB groups, youth coaching.
+
+For each operator capture:
+- slug, name
+- type (guide/coaching/tours/uplift/hire/club)
+- region_base
+- regions_served (comma-separated)
+- activities (mtb, gravel, ebike, etc.)
+- address, lat, lon
+- phone, email, website
+- social_instagram, social_facebook
+- price_from (lowest session price)
+- booking_url
+- spots_served (comma-separated spot slugs where they operate)
+- description (100-150 words - what makes them good)
+- specialties (e.g., "women's coaching", "kids", "advanced skills")
+- quality_score (1-10: reputation, reviews, professionalism)
+- source_urls
+
+Output: CSV file
+Target: 30-40 operators
+```
+
+---
+
+#### TASK OP-2: Surf Schools & Coaches
+```
+Research ALL surf schools, SUP schools, and coaching in Wales.
+
+Include: Surf lessons, SUP hire/lessons, surf camps, 
+kids programs, adaptive surfing.
+
+[Same fields as OP-1]
+activities: surfing, sup, bodyboarding, etc.
+
+Output: CSV file
+Target: 25-35 operators
+```
+
+---
+
+#### TASK OP-3: Coasteering & Adventure Operators
+```
+Research ALL coasteering, gorge walking, and multi-activity 
+adventure operators in Wales.
+
+Include: Coasteering, gorge walking, canyoning, 
+multi-activity days, stag/hen adventures.
+
+[Same fields as OP-1]
+
+Output: CSV file
+Target: 20-30 operators
+```
+
+---
+
+#### TASK OP-4: Climbing & Mountaineering Guides
+```
+Research ALL climbing instructors, mountaineering guides, 
+and outdoor education providers in Wales.
+
+Include: Rock climbing instruction, mountaineering,
+winter skills, navigation courses, ML/MIA training.
+
+[Same fields as OP-1]
+
+Output: CSV file
+Target: 25-35 operators
+```
+
+---
+
+#### TASK OP-5: Kayak, Canoe & Paddlesport Operators
+```
+Research ALL kayaking, canoeing, and paddlesport 
+operators in Wales.
+
+Include: Sea kayaking, river kayaking, canoe tours,
+white water, sit-on-top hire, guided trips.
+
+[Same fields as OP-1]
+
+Output: CSV file
+Target: 20-30 operators
+```
+
+---
+
+#### TASK OP-6: Walking & Hiking Guides
+```
+Research ALL walking guides, hiking tour companies,
+and outdoor leaders in Wales.
+
+Include: Guided walks, mountain leaders, navigation courses,
+multi-day treks, themed walks (photography, wildlife, history).
+
+[Same fields as OP-1]
+
+Output: CSV file
+Target: 20-30 operators
+```
+
+---
+
+#### TASK OP-7: Equipment Hire
+```
+Research ALL outdoor equipment hire businesses in Wales.
+
+Include: Bike hire, wetsuit hire, kayak hire, camping gear,
+climbing gear, SUP hire (standalone, not attached to schools).
+
+For each capture:
+- slug, name
+- type (bike-hire/wetsuit-hire/kayak-hire/camping/multi)
+- region
+- address, lat, lon
+- phone, email, website
+- equipment_types (comma-separated)
+- price_examples (e.g., "MTB £40/day, E-bike £60/day")
+- booking_required (yes/no/recommended)
+- delivery_available (yes/no)
+- description
+- source_urls
+
+Output: CSV file
+Target: 40-50 hire locations
+```
+
+---
+
+#### TASK OP-8: Outdoor Centres & Multi-Activity Providers
+```
+Research ALL outdoor education centres and multi-activity 
+providers in Wales.
+
+Include: PGL-style centres, school trip providers, 
+corporate team building, youth centres, 
+residential adventure centres.
+
+[Same fields as OP-1]
+Add: residential (yes/no), group_size_min, group_size_max
+
+Output: CSV file
+Target: 25-35 centres
+```
+
+---
+
+### Phase 3: Accommodation (5 parallel tasks)
+
+---
+
+#### TASK ACC-1: Campsites Near Adventure Spots
+```
+Research ALL campsites near major adventure spots in Wales.
+
+Priority: Sites within 10 mins of trail centres, beaches, 
+mountains, surf spots.
+
+For each capture:
+- slug, name
+- type (campsite/glamping/wild-camping-tolerated)
+- region
+- address, lat, lon
+- phone, email, website
+- booking_url
+- price_from (per night)
+- facilities (showers,toilets,shop,cafe,wifi,electric-hookup)
+- tent_pitches (yes/no/number)
+- campervan_ok (yes/no)
+- dogs_allowed (yes/no/on-lead)
+- near_spots (comma-separated spot slugs within 15 min drive)
+- open_season (all-year/Mar-Oct/etc)
+- description (what makes it good for adventurers)
+- quality_score (1-10)
+- source_urls
+
+Output: CSV file
+Target: 60-80 campsites
+```
+
+---
+
+#### TASK ACC-2: Hostels & Bunkhouses
+```
+Research ALL hostels, bunkhouses, and bothies in Wales.
+
+Include: YHA hostels, independent hostels, climbing huts,
+bunkhouses, mountain bothies.
+
+For each capture:
+- slug, name
+- type (yha-hostel/indie-hostel/bunkhouse/bothy/climbing-hut)
+- region
+- address, lat, lon
+- phone, email, website
+- booking_url
+- price_from (dorm bed)
+- private_rooms (yes/no)
+- self_catering (yes/no)
+- meals_available (yes/no)
+- drying_room (yes/no)
+- bike_storage (yes/no)
+- near_spots (comma-separated)
+- open_season
+- description
+- quality_score
+- source_urls
+
+Output: CSV file
+Target: 40-60 hostels/bunkhouses
+```
+
+---
+
+#### TASK ACC-3: Adventure-Friendly B&Bs & Hotels
+```
+Research B&Bs and small hotels that actively cater to 
+adventure travelers in Wales.
+
+Criteria: Bike storage, drying rooms, early breakfast,
+packed lunches, gear wash, near adventure spots.
+
+For each capture:
+- slug, name
+- type (b&b/guesthouse/inn/small-hotel)
+- region
+- address, lat, lon
+- phone, email, website
+- booking_url
+- price_from (per room)
+- adventure_friendly_features (comma-separated)
+- near_spots
+- description
+- quality_score
+- source_urls
+
+Output: CSV file
+Target: 40-50 properties
+```
+
+---
+
+#### TASK ACC-4: Glamping & Unique Stays
+```
+Research glamping sites and unique accommodation for 
+adventure travelers in Wales.
+
+Include: Safari tents, yurts, pods, treehouses, 
+shepherds huts, converted barns near adventure spots.
+
+[Same fields as ACC-1, adjust type field]
+
+Output: CSV file
+Target: 30-40 sites
+```
+
+---
+
+#### TASK ACC-5: Camping Pods & Micro-Lodges
+```
+Research camping pods and micro-lodges at or near 
+adventure destinations in Wales.
+
+Include: Trail centre pods, beach pods, mountain pods.
+
+[Same fields as ACC-1]
+
+Output: CSV file
+Target: 25-35 sites
+```
+
+---
+
+### Phase 4: Food & Drink (4 parallel tasks)
+
+---
+
+#### TASK FOOD-1: Post-Adventure Cafes
+```
+Research the BEST cafes near adventure spots in Wales.
+
+The ones people go to after a ride/hike/surf.
+Include: Trail centre cafes, beach cafes, mountain cafes.
+
+For each capture:
+- slug, name
+- type (cafe/coffee-shop/beach-cafe/trail-cafe)
+- region
+- address, lat, lon
+- phone, website
+- google_maps_url
+- near_spots (which adventure spots is this the go-to for)
+- specialty (what they're known for - "massive portions", "best coffee")
+- vegan_options (yes/no/good)
+- dog_friendly (yes/no/outside-only)
+- outdoor_seating (yes/no)
+- bike_parking (yes/no)
+- hours (if known)
+- price_range (£/££/£££)
+- description (why adventurers love it)
+- quality_score
+- source_urls
+
+Output: CSV file
+Target: 80-100 cafes
+```
+
+---
+
+#### TASK FOOD-2: Post-Adventure Pubs
+```
+Research the BEST pubs near adventure spots in Wales.
+
+The ones with good food, local ales, muddy boots welcome.
+
+For each capture:
+- slug, name
+- type (pub/inn/gastropub)
+- region
+- address, lat, lon
+- phone, website
+- google_maps_url
+- near_spots
+- food_served (yes/no/times)
+- real_ale (yes/no)
+- dog_friendly
+- outdoor_seating
+- accommodation (yes/no - if rooms above)
+- known_for
+- description
+- quality_score
+- source_urls
+
+Output: CSV file
+Target: 60-80 pubs
+```
+
+---
+
+#### TASK FOOD-3: Beach & Surf Cafes
+```
+Research ALL cafes and food spots at or near Welsh beaches.
+
+Include: Beach kiosks, surf cafes, ice cream spots, 
+fish & chips near beaches.
+
+[Same fields as FOOD-1]
+
+Output: CSV file
+Target: 50-60 spots
+```
+
+---
+
+#### TASK FOOD-4: Mountain & Remote Refreshments
+```
+Research refreshment stops accessible during adventures.
+
+Include: Summit cafes, remote tea rooms, mountain railway cafes,
+seasonal vans at popular spots.
+
+[Same fields as FOOD-1]
+Add: seasonal (yes/no/months)
+
+Output: CSV file
+Target: 30-40 spots
+```
+
+---
+
+### Phase 5: Transport & Access (4 parallel tasks)
+
+---
+
+#### TASK TRANS-1: Train Stations for Adventures
+```
+Research train stations useful for accessing adventure spots.
+
+For each capture:
+- slug, name
+- region
+- lat, lon
+- line (Cambrian, Heart of Wales, Valley Lines, etc.)
+- operator (TfW, etc.)
+- nearby_spots (within 30 min - bus, taxi, or bike)
+- bike_spaces (number or "reservable")
+- taxi_rank (yes/no)
+- bus_connections (route numbers)
+- car_park (yes/no/spaces)
+- adventure_notes (e.g., "Perfect for Mawddach Trail", "Buses to Snowdon")
+- source_urls
+
+Focus on: Stations actually useful for adventure access, not all stations.
+
+Output: CSV file
+Target: 40-50 stations
+```
+
+---
+
+#### TASK TRANS-2: Bus Routes for Adventures
+```
+Research bus routes that access adventure destinations.
+
+For each capture:
+- route_number
+- operator
+- route_name (e.g., "Snowdon Sherpa")
+- region
+- key_stops (comma-separated)
+- spots_served (adventure spots accessible)
+- frequency (hourly/2-hourly/etc)
+- seasonal (yes/no/months)
+- bikes_allowed (yes/no/sometimes)
+- sunday_service (yes/no)
+- useful_for (what adventures this enables)
+- timetable_url
+- source_urls
+
+Focus on: Routes that actually help access adventure spots.
+
+Output: CSV file
+Target: 30-40 routes
+```
+
+---
+
+#### TASK TRANS-3: Parking Deep-Dive
+```
+Research DETAILED parking information for top adventure spots.
+
+For each capture:
+- spot_slug (matching existing spots)
+- parking_name (if named, e.g., "Pen y Pass", "Stackpole Quay")
+- lat, lon
+- spaces (number or estimate)
+- cost (free/£X per day/pay-and-display)
+- payment_method (cash/card/app)
+- app_name (if applicable - JustPark, RingGo, etc.)
+- height_limit (for vans)
+- overnight_allowed (yes/no/tolerated)
+- fills_by (e.g., "9am summer weekends")
+- overflow_option (where to go when full)
+- notes (practical tips)
+- source_urls
+
+Target: Top 100 spots with detailed parking info
+```
+
+---
+
+#### TASK TRANS-4: Taxi & Transfer Services
+```
+Research taxi and transfer services useful for adventurers.
+
+Include: Station pickups, trailhead drops, gear-friendly taxis,
+minibus services for groups.
+
+For each capture:
+- name
+- region
+- phone, website
+- booking_method (call/app/online)
+- vehicle_types (car/estate/minibus/4x4)
+- bikes_carried (number)
+- kayaks_ok (yes/no)
+- muddy_gear_ok (yes/no)
+- areas_covered
+- airport_transfers (yes/no)
+- approximate_rates
+- notes
+- source_urls
+
+Output: CSV file
+Target: 40-50 services
+```
+
+---
+
+### Phase 6: Events & Calendar (3 parallel tasks)
+
+---
+
+#### TASK EVENT-1: Annual Races & Competitions
+```
+Research ALL annual adventure races and competitions in Wales.
+
+Include: MTB races, fell runs, triathlons, swim events,
+cycling sportives, adventure races, ultra events.
+
+For each capture:
+- slug, name
+- type (mtb-race/fell-run/triathlon/sportive/ultra/adventure-race/swim)
+- region
+- spot_slug (main venue/location)
+- date_typical (e.g., "3rd weekend September")
+- date_2025, date_2026 (if known)
+- distance_options (e.g., "10km, 25km, 50km")
+- entry_price_from
+- entry_closes
+- participants (typical numbers)
+- website
+- organizer
+- description
+- quality_score (how well-regarded is this event)
+- source_urls
+
+Output: CSV file
+Target: 60-80 events
+```
+
+---
+
+#### TASK EVENT-2: Festivals & Gatherings
+```
+Research ALL outdoor/adventure festivals in Wales.
+
+Include: Adventure festivals, bike festivals, surf festivals,
+outdoor film nights, camping festivals with adventure focus.
+
+For each capture:
+- slug, name
+- type (festival/gathering/expo/show)
+- region
+- location
+- date_typical
+- duration_days
+- camping_included (yes/no/optional)
+- ticket_price_from
+- website
+- description
+- activities (what can you do there)
+- source_urls
+
+Output: CSV file
+Target: 25-35 events
+```
+
+---
+
+#### TASK EVENT-3: Regular Clubs & Groups
+```
+Research regular adventure clubs and group meetups in Wales.
+
+Include: MTB clubs, running clubs, hiking groups, 
+swimming groups, climbing clubs.
+
+For each capture:
+- slug, name
+- type (club/group/meetup)
+- activity
+- region_base
+- meeting_frequency (weekly/monthly/etc)
+- meeting_day (if regular)
+- open_to_visitors (yes/no)
+- membership_required (yes/no/optional)
+- membership_cost
+- website, social_links
+- contact
+- description
+- skill_level (all/beginner/intermediate/advanced)
+- source_urls
+
+Output: CSV file
+Target: 50-70 clubs
+```
+
+---
+
+### Phase 7: Practical Info (4 parallel tasks)
+
+---
+
+#### TASK INFO-1: Webcams & Conditions Sources
+```
+Research webcams and live conditions sources for Welsh 
+adventure locations.
+
+For each capture:
+- spot_slug (or area if general)
+- type (webcam/surf-forecast/weather-station/snow-report)
+- name
+- url
+- what_it_shows (e.g., "beach and waves", "summit view", "car park")
+- update_frequency (live/hourly/etc)
+- reliability (1-5)
+- source
+
+Also capture forecast sources:
+- Magic Seaweed spot IDs
+- Windguru spot IDs
+- Mountain Weather Info links
+- Met Office location links
+
+Output: CSV file
+Target: 80-100 sources
+```
+
+---
+
+#### TASK INFO-2: Emergency & Safety Info
+```
+Research emergency and safety information for adventure areas.
+
+For each capture:
+- region
+- mountain_rescue_team
+- lifeboat_station (if coastal)
+- coastguard_sector
+- nearest_hospital
+- nearest_minor_injuries
+- phone_signal_notes (known dead spots)
+- what3words for key locations
+- safety_notes
+
+Also capture:
+- Beach hazard information
+- Known mountain hazards
+- Tide information sources
+
+Output: CSV file
+Target: Cover all 10 regions
+```
+
+---
+
+#### TASK INFO-3: Wildlife Spotting
+```
+Research wildlife spotting opportunities at adventure locations.
+
+For each capture:
+- spot_slug (or create new for dedicated wildlife spots)
+- species (dolphins/seals/puffins/red-kites/ospreys/etc)
+- best_season
+- best_time (dawn/dusk/etc)
+- reliability (1-5 - how likely to see)
+- viewing_spot_lat, viewing_spot_lon
+- notes (tips for spotting)
+- source_urls
+
+Focus on: Dolphins Cardigan Bay, seals Pembrokeshire, 
+puffins Skomer, red kites Mid Wales, ospreys, rare birds.
+
+Output: CSV file
+Target: 40-50 wildlife spots
+```
+
+---
+
+#### TASK INFO-4: Local History & Legends
+```
+Research interesting history and legends for adventure locations.
+
+For each capture:
+- spot_slug
+- story_title
+- story_type (legend/history/folklore/literary)
+- summary (100-200 words)
+- connection_to_spot
+- source_urls
+
+Include: Myths, famous events, literary connections,
+historical significance that makes spots more interesting.
+
+Output: CSV file
+Target: 60-80 stories
+```
+
+---
+
+### Phase 8: Routes & GPX (3 parallel tasks)
+
+---
+
+#### TASK GPX-1: MTB Route Sources
+```
+Research where to find GPX files for Welsh MTB routes.
+
+For each route capture:
+- spot_slug (trail/route)
+- gpx_source (komoot/strava/trailforks/official/other)
+- gpx_url (direct link if possible)
+- source_quality (official/user-verified/user-uploaded)
+- last_verified_date
+- notes
+
+Also capture: General sources for Wales MTB GPX files.
+
+Output: CSV file
+Target: Cover all MTB trails in database
+```
+
+---
+
+#### TASK GPX-2: Hiking Route Sources
+```
+Research where to find GPX files for Welsh hiking routes.
+
+[Same approach as GPX-1]
+
+Include: OS Maps routes, Komoot, Outdooractive, 
+walking organization routes.
+
+Output: CSV file
+Target: Cover all hiking trails in database
+```
+
+---
+
+#### TASK GPX-3: Cycling & Road Route Sources
+```
+Research road cycling and gravel routes in Wales.
+
+Capture both routes and GPX sources.
+
+For new routes capture:
+- slug, name
+- type (road/gravel/mixed)
+- region
+- start_lat, start_lon
+- distance_km
+- ascent_m
+- difficulty
+- highlights
+- gpx_url
+- source_urls
+
+Output: CSV file
+Target: 30-40 routes
+```
+
+---
+
+### Phase 9: Image Sourcing (6 parallel tasks)
 
 ---
 
@@ -660,30 +1404,69 @@ Target: 100 images (mix across all activity types)
 Jules delivers to:
 ```
 /jules-output/
-├── beaches/
-│   ├── pembrokeshire.csv
-│   ├── gower.csv
-│   ├── llyn.csv
-│   ├── anglesey.csv
-│   ├── ceredigion.csv
-│   └── snowdonia-coast.csv
-├── surfing/
-│   ├── gower.csv
-│   ├── pembrokeshire.csv
-│   ├── llyn-north.csv
-│   └── south-wales.csv
-├── hiking/
-│   ├── snowdonia-summits.csv
-│   ├── brecon-beacons.csv
-│   ├── coastal-walks.csv
-│   └── waterfalls-woodland.csv
-├── swimming/
-│   ├── lakes.csv
-│   ├── rivers-waterfalls.csv
-│   └── sea-tidal.csv
-├── activities/
+├── spots/
+│   ├── beaches/
+│   │   ├── pembrokeshire.csv
+│   │   ├── gower.csv
+│   │   ├── llyn.csv
+│   │   ├── anglesey.csv
+│   │   ├── ceredigion.csv
+│   │   └── snowdonia-coast.csv
+│   ├── surfing/
+│   │   ├── gower.csv
+│   │   ├── pembrokeshire.csv
+│   │   ├── llyn-north.csv
+│   │   └── south-wales.csv
+│   ├── hiking/
+│   │   ├── snowdonia-summits.csv
+│   │   ├── brecon-beacons.csv
+│   │   ├── coastal-walks.csv
+│   │   └── waterfalls-woodland.csv
+│   ├── swimming/
+│   │   ├── lakes.csv
+│   │   ├── rivers-waterfalls.csv
+│   │   └── sea-tidal.csv
+│   └── activities/
+│       ├── coasteering.csv
+│       └── climbing.csv
+├── operators/
+│   ├── mtb.csv
+│   ├── surf.csv
 │   ├── coasteering.csv
-│   └── climbing.csv
+│   ├── climbing.csv
+│   ├── kayak.csv
+│   ├── walking.csv
+│   ├── hire.csv
+│   └── centres.csv
+├── accommodation/
+│   ├── campsites.csv
+│   ├── hostels.csv
+│   ├── b&bs.csv
+│   ├── glamping.csv
+│   └── pods.csv
+├── food/
+│   ├── cafes.csv
+│   ├── pubs.csv
+│   ├── beach-cafes.csv
+│   └── mountain-cafes.csv
+├── transport/
+│   ├── trains.csv
+│   ├── buses.csv
+│   ├── parking.csv
+│   └── taxis.csv
+├── events/
+│   ├── races.csv
+│   ├── festivals.csv
+│   └── clubs.csv
+├── info/
+│   ├── webcams.csv
+│   ├── emergency.csv
+│   ├── wildlife.csv
+│   └── legends.csv
+├── routes/
+│   ├── mtb-gpx.csv
+│   ├── hiking-gpx.csv
+│   └── cycling.csv
 └── images/
     ├── beaches-south.csv
     ├── beaches-north.csv
@@ -695,16 +1478,215 @@ Jules delivers to:
 
 ---
 
+---
+
+### Phase 10: Ongoing Improvement (Daily Rotation)
+
+These tasks run on rotation to continuously improve data quality.
+
+---
+
+#### TASK DAILY-1: Verify & Enrich Tier A Spots
+```
+Take 5 Tier A spots from the database. For each:
+
+1. Verify all coordinates are accurate (check Google Maps)
+2. Verify contact info is current (websites, phones)
+3. Find any missing data fields
+4. Check for new operators serving this spot
+5. Find any new images (min 1024px)
+6. Check for recent reviews/trip reports for new info
+7. Update description if new info found
+
+Output: Updates CSV with changes
+Run: Daily, rotating through all Tier A spots
+```
+
+---
+
+#### TASK DAILY-2: Find Missing Spots
+```
+Look for adventure spots we may have missed in [REGION].
+
+Search for:
+- Beaches not in our database
+- Trails not covered
+- Swimming spots
+- New climbing areas
+- Hidden gems mentioned in blogs/forums
+
+Cross-reference with: Local tourism sites, hiking blogs,
+TripAdvisor, Google Maps, AllTrails, UKClimbing.
+
+Output: New spots CSV
+Run: Daily, rotating through regions
+```
+
+---
+
+#### TASK DAILY-3: Operator Updates
+```
+Verify and update operator information.
+
+For 10 operators:
+1. Check website is live
+2. Verify phone/email
+3. Check for price changes
+4. Look for new services
+5. Check reviews for quality signals
+6. Verify spots served
+
+Output: Updates CSV
+Run: Daily, rotating through all operators
+```
+
+---
+
+#### TASK DAILY-4: Event Calendar Updates
+```
+Check for new events and update dates.
+
+1. Search for newly announced events
+2. Update dates for known annual events
+3. Check for cancelled/changed events
+4. Find entry prices and deadlines
+5. Add any new events found
+
+Output: Events updates CSV
+Run: Weekly focus, monthly full sweep
+```
+
+---
+
+#### TASK DAILY-5: New Image Search
+```
+Search for new CC images for spots with <10 images.
+
+Priority: Tier A spots first, then Tier B.
+Minimum: 1024px shortest edge.
+
+Output: New images CSV
+Run: Daily, rotating through spots
+```
+
+---
+
+#### TASK DAILY-6: Content Gap Analysis
+```
+Analyze what competitors have that we don't.
+
+Check: Visit Wales, mbwales, specific operator sites.
+
+Look for:
+- Spots they feature that we're missing
+- Info they have that we don't
+- Better descriptions/angles
+- Features we should add
+
+Output: Gap analysis report
+Run: Weekly
+```
+
+---
+
+#### TASK DAILY-7: Seasonal Updates
+```
+Update seasonal information based on current month.
+
+- Which spots are in season now?
+- What events are coming up?
+- Seasonal warnings to add?
+- Operator seasonal hours?
+- Beach lifeguard schedules?
+
+Output: Seasonal updates CSV
+Run: Monthly
+```
+
+---
+
+#### TASK DAILY-8: Review Mining
+```
+Mine TripAdvisor, Google Reviews for insights on spots.
+
+For each spot, extract:
+- Common praise (what people love)
+- Common complaints (what to warn about)
+- Practical tips from reviews
+- Quality signals (is it getting better/worse?)
+
+Output: Review insights CSV
+Run: Daily, rotating through spots
+```
+
+---
+
+## Daily Task Allocation
+
+With 100 tasks/day available, suggested allocation:
+
+### Initial Build (Weeks 1-2)
+| Phase | Tasks | Days |
+|-------|-------|------|
+| Phase 1: Spots | 18 | 1 |
+| Phase 2: Operators | 8 | 1 |
+| Phase 3: Accommodation | 5 | 1 |
+| Phase 4: Food & Drink | 4 | 1 |
+| Phase 5: Transport | 4 | 1 |
+| Phase 6: Events | 3 | 1 |
+| Phase 7: Practical | 4 | 1 |
+| Phase 8: GPX | 3 | 1 |
+| Phase 9: Images | 6 | 2-3 |
+| **Total Initial** | **55** | **~10 days** |
+
+### Ongoing (After Initial Build)
+Daily mix of:
+- 10-20 verification tasks (DAILY-1, DAILY-3)
+- 10-20 enrichment tasks (DAILY-2, DAILY-5)
+- 5-10 update tasks (DAILY-4, DAILY-7)
+- 5-10 analysis tasks (DAILY-6, DAILY-8)
+
+---
+
 ## Success Metrics
 
+### Spots & Content
 | Metric | Target |
 |--------|--------|
-| Total spots | 200+ |
+| Total adventure spots | 250+ |
 | Tier A spots | 40-50 |
-| Tier B spots | 100-120 |
+| Tier B spots | 120-150 |
 | Unique descriptions | 100% |
 | Coordinates verified | 100% |
-| **Images sourced** | **2,000+** |
+
+### Operators & Services
+| Metric | Target |
+|--------|--------|
+| Operators/providers | 200+ |
+| Accommodation | 200+ |
+| Cafes & pubs | 150+ |
+| Equipment hire | 50+ |
+
+### Practical Data
+| Metric | Target |
+|--------|--------|
+| Transport links | 100+ |
+| Events calendar | 100+ |
+| Webcams/conditions | 80+ |
+| Wildlife spots | 40+ |
+
+### Images
+| Metric | Target |
+|--------|--------|
+| Total images | 2,500+ |
 | Images per spot | 10 |
-| Minimum resolution | 1024px shortest edge |
-| Images with attribution | 100% |
+| Minimum resolution | 1024px |
+| Full attribution | 100% |
+
+### Ongoing Quality
+| Metric | Target |
+|--------|--------|
+| Tier A spots verified | Monthly |
+| Operator info checked | Quarterly |
+| Event dates updated | Monthly |
+| New spots added | Weekly |

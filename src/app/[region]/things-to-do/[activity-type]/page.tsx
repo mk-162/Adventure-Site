@@ -9,6 +9,7 @@ import {
 import { getComboPageData } from "@/lib/combo-data";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { ComboEnrichment } from "@/components/combo/ComboEnrichment";
+import { CommentsSection } from "@/components/comments/CommentsSection";
 import { 
   ChevronRight, 
   MapPin, 
@@ -348,6 +349,16 @@ export default async function ActivityListingPage({ params }: PageProps) {
             </p>
           </details>
         </div>
+      </div>
+
+      {/* Voice Tips Section */}
+      <div className="mb-10">
+        <CommentsSection 
+          pageSlug={`${activityTypeSlug}-${regionSlug}`} 
+          pageType="combo" 
+          title="Local Tips"
+          subtitle={`Been ${activityType.name.toLowerCase()} in ${region.name}? Share what you learned.`}
+        />
       </div>
 
       {/* You Might Also Like */}

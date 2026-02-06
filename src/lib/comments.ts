@@ -1,12 +1,13 @@
 'use server';
 
 import { OpenAI } from "openai";
-import { put } from "@vercel/blob";
 import { db } from "@/db";
 import { comments, commentVotes } from "@/db/schema";
 import { eq, and, sql } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { cookies } from "next/headers";
+import { writeFile } from "fs/promises";
+import path from "path";
 
 // Initialize OpenAI
 // Note: This relies on OPENAI_API_KEY being present in environment variables
@@ -16,17 +17,32 @@ const openai = new OpenAI({
 
 export type CommentStatus = 'pending' | 'approved' | 'rejected';
 
+// Use Vercel Blob in production, local storage in dev
+async function uploadAudio(file: File): Promise<string> {
+  const filename = `${Date.now()}-${file.name}`;
+  
+  if (process.env.BLOB_READ_WRITE_TOKEN) {
+    // Production: Use Vercel Blob
+    const { put } = await import("@vercel/blob");
+    const blob = await put(`comments/${filename}`, file, { access: 'public' });
+    return blob.url;
+  } else {
+    // Dev: Save to local public folder
+    const buffer = Buffer.from(await file.arrayBuffer());
+    const localPath = path.join(process.cwd(), 'public', 'audio-comments', filename);
+    await writeFile(localPath, buffer);
+    return `/audio-comments/${filename}`;
+  }
+}
+
 export async function processAudio(formData: FormData) {
   const file = formData.get("audio") as File;
   if (!file) {
     throw new Error("No audio file provided");
   }
 
-  // 1. Upload to Vercel Blob (permanent storage for playback)
-  // We do this first so we have a URL to save to the DB
-  const blob = await put(`comments/${Date.now()}-${file.name}`, file, {
-    access: 'public',
-  });
+  // 1. Upload audio (Blob or local)
+  const audioUrl = await uploadAudio(file);
 
   // 2. Transcribe using OpenAI Whisper
   // We need to send the file to OpenAI.
@@ -37,7 +53,7 @@ export async function processAudio(formData: FormData) {
   });
 
   return {
-    audioUrl: blob.url,
+    audioUrl: audioUrl,
     transcript: transcription.text,
   };
 }

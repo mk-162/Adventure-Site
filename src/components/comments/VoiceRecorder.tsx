@@ -117,9 +117,9 @@ export function VoiceRecorder({ pageSlug, pageType, onSuccess }: VoiceRecorderPr
     return (
       <div className="bg-green-50 p-6 rounded-lg text-center animate-in fade-in zoom-in duration-300">
         <CheckCircle className="w-12 h-12 text-green-600 mx-auto mb-3" />
-        <h3 className="text-lg font-bold text-green-800">Thanks for sharing!</h3>
-        <p className="text-green-700">Your voice note is live.</p>
-        <Button onClick={resetRecording} variant="outline" className="mt-4">Leave another?</Button>
+        <h3 className="text-lg font-bold text-green-800">Tip shared! 🙌</h3>
+        <p className="text-green-700">Thanks — this helps other adventurers.</p>
+        <Button onClick={resetRecording} variant="outline" className="mt-4">Add another tip</Button>
       </div>
     );
   }
@@ -139,8 +139,8 @@ export function VoiceRecorder({ pageSlug, pageType, onSuccess }: VoiceRecorderPr
     <div className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
       {/* Header */}
       <div className="mb-4 text-center">
-        <h3 className="font-semibold text-slate-900">Leave a Voice Note</h3>
-        <p className="text-sm text-slate-500">Share your tips or thanks in seconds!</p>
+        <h3 className="font-semibold text-slate-900">🎤 Leave a Tip</h3>
+        <p className="text-sm text-slate-500">30 seconds. What do you wish you'd known?</p>
       </div>
 
       {/* Main Action Area */}

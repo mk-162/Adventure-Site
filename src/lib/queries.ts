@@ -274,8 +274,20 @@ export async function getOperators(options?: {
   query?: string;
   limit?: number;
   offset?: number;
+  sortBy?: "recommended" | "rating" | "name" | "distance";
+  lat?: number;
+  lng?: number;
+  maxDistanceKm?: number;
 }) {
   const conditions = [];
+  const hasGeo = typeof options?.lat === "number" && typeof options?.lng === "number";
+  const distanceExpression = hasGeo
+    ? sql<number>`(6371 * acos(
+        cos(radians(${options?.lat})) * cos(radians(${operators.lat})) *
+        cos(radians(${operators.lng}) - radians(${options?.lng})) +
+        sin(radians(${options?.lat})) * sin(radians(${operators.lat}))
+      ))`
+    : null;
 
   if (options?.claimStatus) {
     conditions.push(eq(operators.claimStatus, options.claimStatus));
@@ -303,6 +315,14 @@ export async function getOperators(options?: {
     conditions.push(sql`(${operators.name} ILIKE ${search} OR ${operators.tagline} ILIKE ${search})`);
   }
 
+  if (hasGeo && options?.maxDistanceKm && distanceExpression) {
+    conditions.push(sql`
+      ${operators.lat} IS NOT NULL
+      AND ${operators.lng} IS NOT NULL
+      AND ${distanceExpression} <= ${options.maxDistanceKm}
+    `);
+  }
+
   // Count query
   const countResult = await db
     .select({ count: sql<number>`count(*)` })
@@ -313,11 +333,24 @@ export async function getOperators(options?: {
 
   let query = db
     .select()
-    .from(operators)
-    .orderBy(asc(operators.name));
+    .from(operators);
 
   if (conditions.length > 0) {
     query = query.where(and(...conditions)) as typeof query;
+  }
+
+  if (options?.sortBy === "distance" && distanceExpression) {
+    query = query.orderBy(sql`${distanceExpression} ASC NULLS LAST`, asc(operators.name)) as typeof query;
+  } else if (options?.sortBy === "rating") {
+    query = query.orderBy(desc(operators.googleRating), asc(operators.name)) as typeof query;
+  } else if (options?.sortBy === "recommended") {
+    query = query.orderBy(
+      desc(sql`CASE WHEN ${operators.claimStatus} = 'premium' THEN 1 ELSE 0 END`),
+      desc(operators.googleRating),
+      asc(operators.name)
+    ) as typeof query;
+  } else {
+    query = query.orderBy(asc(operators.name)) as typeof query;
   }
 
   if (options?.limit) {

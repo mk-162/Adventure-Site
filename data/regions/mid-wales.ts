@@ -23,7 +23,7 @@ Adventure here is about remoteness and self-reliance. The riding at Nant yr Aria
     { label: 'Heritage Railway', value: 'Vale of Rheidol', detail: "12 miles, narrow gauge, Devil's Bridge" },
     { label: 'Dolphins', value: 'Cardigan Bay SAC', detail: 'Largest UK pod of bottlenose dolphins' },
     { label: 'Population', value: 'Very sparse', detail: 'Least populated part of Wales' },
-    { label: 'Historic Town', value: 'Machynlleth', detail: 'Owain Glyndŵr's parliament, CAT base' },
+    { label: 'Historic Town', value: 'Machynlleth', detail: "Owain Glyndŵr's parliament, CAT base" },
     { label: 'Cambrian Line', value: 'Scenic railway', detail: 'Shrewsbury to Aberystwyth and coast' },
   ],
 
@@ -32,7 +32,7 @@ Adventure here is about remoteness and self-reliance. The riding at Nant yr Aria
     { rank: 2, activity: 'Wildlife Watching', description: 'Red kites at feeding stations, Cardigan Bay dolphins' },
     { rank: 3, activity: 'Remote Hiking', description: 'Cambrian Mountains—empty hills, bog-trotting, wild camping' },
     { rank: 4, activity: 'Road Cycling', description: 'Empty roads, challenging climbs, touring country' },
-    { rank: 5, activity: 'Heritage Railways', description: 'Vale of Rheidol to Devil's Bridge, narrow gauge' },
+    { rank: 5, activity: 'Heritage Railways', description: "Vale of Rheidol to Devil's Bridge, narrow gauge" },
     { rank: 6, activity: 'Reservoir Walking', description: 'Elan Valley estate—dams, woodland, Victorian engineering' },
     { rank: 7, activity: 'Wild Swimming', description: 'Mountain rivers, reservoir edges, Cardigan Bay beaches' },
     { rank: 8, activity: 'Stargazing', description: 'Dark skies across the Cambrian interior' },
@@ -50,7 +50,7 @@ Adventure here is about remoteness and self-reliance. The riding at Nant yr Aria
   insiderTips: [
     { tip: 'Red kite feeding', detail: 'Nant yr Arian feeding at 3pm (2pm winter). Arrive early for front-row seats. 100+ birds.' },
     { tip: 'Elan Valley timing', detail: 'Visit after heavy rain when reservoirs overflow the dams. Spectacular.' },
-    { tip: 'Devil's Bridge combo', detail: 'Take the Vale of Rheidol railway up, walk the waterfalls, bus back.' },
+    { tip: "Devil's Bridge combo", detail: 'Take the Vale of Rheidol railway up, walk the waterfalls, bus back.' },
     { tip: 'Sweet Lamb rally stages', detail: 'The rally driving venue opens for MTB some weekends. Unique terrain.' },
     { tip: 'Aberystwyth cliff railway', detail: 'Constitution Hill for sunset views. Camera Battery essential.' },
   ],
@@ -58,14 +58,14 @@ Adventure here is about remoteness and self-reliance. The riding at Nant yr Aria
   topExperiences: [
     { name: 'Nant yr Arian Mountain Biking', type: 'mountain-biking', duration: '3-5 hours', difficulty: 'All levels', description: 'Red and black trails through Cambrian forests.', priceRange: 'Free (bike hire £40)' },
     { name: 'Red Kite Feeding', type: 'wildlife', duration: '1-2 hours', difficulty: 'Any', description: 'Watch 100+ red kites swoop for food at Nant yr Arian.', priceRange: 'Free (parking £3)' },
-    { name: 'Vale of Rheidol Railway', type: 'heritage', duration: '2.5 hours return', difficulty: 'Any', description: 'Steam train through Rheidol Valley to Devil's Bridge.', priceRange: '£22-28' },
+    { name: 'Vale of Rheidol Railway', type: 'heritage', duration: '2.5 hours return', difficulty: 'Any', description: "Steam train through Rheidol Valley to Devil's Bridge.", priceRange: '£22-28' },
     { name: 'Elan Valley Walk', type: 'hiking', duration: '3-5 hours', difficulty: 'Moderate', description: 'Walk the estate past Victorian dams and reservoirs.', priceRange: 'Free' },
     { name: 'Cardigan Bay Dolphin Trip', type: 'wildlife', duration: '2-3 hours', difficulty: 'Any', description: 'Boat trip from Aberystwyth or New Quay for dolphins.', priceRange: '£25-40' },
     { name: 'Hafod Estate Walk', type: 'hiking', duration: '2-3 hours', difficulty: 'Easy', description: 'Georgian landscaped estate with waterfalls and follies.', priceRange: 'Free' },
   ],
 
   faqs: [
-    { question: 'Is Mid Wales boring?', answer: 'Only if you need crowds. It's vast, empty, and beautiful. The mountain biking is world-class. The wildlife is exceptional. It's adventure for people who want space.' },
+    { question: 'Is Mid Wales boring?', answer: "Only if you need crowds. It's vast, empty, and beautiful. The mountain biking is world-class. The wildlife is exceptional. It's adventure for people who want space." },
     { question: 'How do I get there?', answer: 'Train to Aberystwyth on the Cambrian Line (scenic, 3+ hours from Shrewsbury). Driving gives most flexibility—the roads are empty.' },
     { question: 'Where should I stay?', answer: 'Aberystwyth for facilities and coast. Rhayader for Elan Valley. Machynlleth for CAT and inland adventures.' },
   ],

@@ -20,7 +20,7 @@ The valley has that rare quality of feeling wild while remaining accessible. Can
     { label: 'Wye Valley Walk', value: '136 miles', detail: 'Plynlimon to Chepstow' },
     { label: 'Key Landmark', value: 'Tintern Abbey', detail: '12th-century Cistercian ruins' },
     { label: 'Distance from London', value: '2.5 hours', detail: 'Closest Welsh adventure region to capital' },
-    { label: 'Climbing', value: 'Wintour's Leap, Symonds Yat', detail: 'Limestone crags, sport and trad' },
+    { label: 'Climbing', value: "Wintour's Leap, Symonds Yat", detail: 'Limestone crags, sport and trad' },
     { label: 'Forest of Dean', value: '42 sq miles', detail: 'Ancient woodland, MTB trails' },
     { label: 'Wildlife', value: 'Peregrine falcons', detail: "Symonds Yat—one of UK's best viewing spots" },
     { label: 'Border Character', value: 'Welsh/English', detail: 'Historic frontier, mixed culture' },
@@ -30,7 +30,7 @@ The valley has that rare quality of feeling wild while remaining accessible. Can
   bestFor: [
     { rank: 1, activity: 'Canoeing & Kayaking', description: 'Multi-day river trips from Hay-on-Wye to Chepstow' },
     { rank: 2, activity: 'Walking', description: '136-mile Wye Valley Walk through gorge and woodland' },
-    { rank: 3, activity: 'Rock Climbing', description: 'Limestone crags at Symonds Yat and Wintour's Leap' },
+    { rank: 3, activity: 'Rock Climbing', description: "Limestone crags at Symonds Yat and Wintour's Leap" },
     { rank: 4, activity: 'Mountain Biking', description: 'Forest of Dean trails—family to expert' },
     { rank: 5, activity: 'Heritage Exploration', description: 'Tintern Abbey, Chepstow Castle, Raglan Castle' },
     { rank: 6, activity: 'Wildlife Watching', description: 'Peregrine falcons at Symonds Yat Rock' },
@@ -61,7 +61,7 @@ The valley has that rare quality of feeling wild while remaining accessible. Can
     { name: 'Symonds Yat Peregrines', type: 'wildlife', duration: '2-3 hours', difficulty: 'Easy', description: 'Watch nesting peregrines with RSPB volunteers. Free.', priceRange: 'Free' },
     { name: 'Forest of Dean Mountain Biking', type: 'mountain-biking', duration: '3-5 hours', difficulty: 'All levels', description: 'Trails from family green to expert black.', priceRange: '£25-40 bike hire' },
     { name: 'Wye Valley Walk: Tintern Section', type: 'hiking', duration: '4-5 hours', difficulty: 'Moderate', description: 'Classic section through the gorge past the abbey.', priceRange: 'Free' },
-    { name: 'Rock Climbing at Wintour's Leap', type: 'climbing', duration: '4-5 hours', difficulty: 'Various', description: 'Limestone crags above the river. Trad and sport routes.', priceRange: 'Free (guide £80-120)' },
+    { name: "Rock Climbing at Wintour's Leap", type: 'climbing', duration: '4-5 hours', difficulty: 'Various', description: 'Limestone crags above the river. Trad and sport routes.', priceRange: 'Free (guide £80-120)' },
   ],
 
   faqs: [
@@ -71,7 +71,7 @@ The valley has that rare quality of feeling wild while remaining accessible. Can
   ],
 
   hiddenGems: [
-    { name: 'Devil's Pulpit', type: 'Viewpoint', description: 'Limestone outcrop with views down to Tintern Abbey. According to legend, the devil preached to monks here.', location: 'Above Tintern' },
+    { name: 'Devil\'s Pulpit', type: 'Viewpoint', description: 'Limestone outcrop with views down to Tintern Abbey. According to legend, the devil preached to monks here.', location: 'Above Tintern' },
     { name: 'Puzzlewood', type: 'Fantasy forest', description: 'Moss-covered ancient woodland. Filming location for Star Wars, Doctor Who.', location: 'Forest of Dean' },
   ],
 

@@ -26,7 +26,7 @@ import { Button } from '@/components/ui/button';
 import { AudioWaveform, generateWaveformData } from './AudioWaveform';
 import { submitComment } from '@/lib/comments';
 
-type OverlayState = 'intro' | 'recording' | 'review' | 'success' | 'rejected' | 'refine';
+type OverlayState = 'intro' | 'recording' | 'review' | 'success' | 'rejected' | 'refine' | 'error';
 
 interface VoiceTipsOverlayProps {
   isOpen: boolean;
@@ -163,7 +163,17 @@ export function VoiceTipsOverlay({
 
     } catch (err) {
       console.error('Microphone access error:', err);
-      alert('Could not access microphone. Please check permissions.');
+      const error = err as Error;
+      if (error.name === 'NotAllowedError' || error.name === 'PermissionDeniedError') {
+        setState('error');
+        setModerationReason('Microphone access denied. Please allow microphone access in your browser settings and try again.');
+      } else if (error.name === 'NotFoundError') {
+        setState('error');
+        setModerationReason('No microphone found. Please connect a microphone and try again.');
+      } else {
+        setState('error');
+        setModerationReason('Could not access microphone. Please check your browser permissions.');
+      }
     }
   };
 
@@ -346,6 +356,17 @@ export function VoiceTipsOverlay({
               setState('intro');
             }}
             onCancel={onClose}
+          />
+        )}
+
+        {state === 'error' && (
+          <ErrorState
+            reason={moderationReason}
+            onRetry={() => {
+              setModerationReason(null);
+              setState('intro');
+            }}
+            onClose={onClose}
           />
         )}
       </div>
@@ -996,6 +1017,61 @@ function RefineState({
       <p className="text-center text-slate-400 text-xs mt-6 font-medium">
         Don't worry, your draft is saved.
       </p>
+    </div>
+  );
+}
+
+function ErrorState({
+  reason,
+  onRetry,
+  onClose,
+}: {
+  reason: string | null;
+  onRetry: () => void;
+  onClose: () => void;
+}) {
+  return (
+    <div className="p-8 flex flex-col items-center text-center">
+      <div className="mb-6 flex items-center justify-center size-16 rounded-full bg-red-50 text-red-500">
+        <AlertTriangle className="w-9 h-9" />
+      </div>
+      
+      <h2 className="text-slate-900 text-2xl font-bold leading-tight mb-4">
+        Microphone Error
+      </h2>
+      
+      <div className="space-y-6 w-full">
+        <p className="text-slate-600 text-base leading-relaxed px-2">
+          {reason || 'We couldn\'t access your microphone. Please check your browser permissions and try again.'}
+        </p>
+        
+        <div className="w-full bg-slate-100 rounded-lg p-5 text-left">
+          <p className="text-slate-700 text-sm font-medium mb-2">To enable microphone access:</p>
+          <ol className="text-slate-600 text-sm space-y-1 list-decimal list-inside">
+            <li>Click the lock/info icon in your browser's address bar</li>
+            <li>Find "Microphone" in the permissions</li>
+            <li>Change it to "Allow"</li>
+            <li>Refresh the page if needed</li>
+          </ol>
+        </div>
+      </div>
+
+      <div className="mt-8 w-full flex flex-col gap-3">
+        <Button
+          onClick={onRetry}
+          className="h-12"
+        >
+          <Mic className="w-5 h-5 mr-2" />
+          Try Again
+        </Button>
+        <Button
+          onClick={onClose}
+          variant="outline"
+          className="h-12"
+        >
+          Close
+        </Button>
+      </div>
     </div>
   );
 }

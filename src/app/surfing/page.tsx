@@ -55,6 +55,20 @@ export default async function SurfingHubPage() {
     e.event.name?.toLowerCase().includes("wave")
   ).slice(0, 6);
 
+  // Fetch related itineraries (filter for surf-related ones)
+  const allItineraries = await getItineraries({ limit: 50 });
+  const relatedItineraries = allItineraries.filter(row => 
+    row.itinerary.title?.toLowerCase().includes("surf") ||
+    row.itinerary.title?.toLowerCase().includes("beach") ||
+    row.itinerary.title?.toLowerCase().includes("coast") ||
+    row.itinerary.description?.toLowerCase().includes("surfing")
+  ).slice(0, 4);
+
+  // Fetch related blog posts
+  const relatedPosts = activityType 
+    ? await getPostsForSidebar({ activityTypeId: activityType.id, limit: 4 })
+    : [];
+
   // Prepare map markers for surf spots
   const mapMarkers = surfingHub.surfSpots.map((spot) => ({
     id: spot.slug,
@@ -576,6 +590,212 @@ export default async function SurfingHubPage() {
           </div>
         </section>
       )}
+
+      {/* Related Itineraries */}
+      {relatedItineraries.length > 0 && (
+        <section className="bg-gray-50 py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-primary text-sm font-semibold mb-4">
+                <Compass className="h-4 w-4" />
+                Trip Ideas
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
+                Surf Trip Itineraries
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Plan your perfect Welsh surf adventure with our curated trips
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {relatedItineraries.map((row) => (
+                <Link
+                  key={row.itinerary.id}
+                  href={`/itineraries/${row.itinerary.slug}`}
+                  className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-primary transition-all"
+                >
+                  <div className="text-sm text-accent-hover font-semibold mb-2">
+                    {row.itinerary.durationDays} days • {row.itinerary.difficulty || "All levels"}
+                  </div>
+                  <h3 className="text-lg font-bold text-primary mb-2 group-hover:text-accent-hover transition-colors">
+                    {row.itinerary.title}
+                  </h3>
+                  {row.itinerary.tagline && (
+                    <p className="text-sm text-gray-600 line-clamp-2">
+                      {row.itinerary.tagline}
+                    </p>
+                  )}
+                </Link>
+              ))}
+            </div>
+
+            <div className="text-center mt-8">
+              <Link
+                href="/itineraries"
+                className="inline-flex items-center gap-2 text-primary hover:text-accent-hover font-semibold"
+              >
+                View all itineraries <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Related Blog Posts */}
+      {relatedPosts.length > 0 && (
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-primary text-sm font-semibold mb-4">
+                <BookOpen className="h-4 w-4" />
+                From the Journal
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
+                Surfing Stories & Guides
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {relatedPosts.map((post) => (
+                <Link
+                  key={post.id}
+                  href={`/journal/${post.slug}`}
+                  className="group bg-white rounded-2xl overflow-hidden shadow-sm border-2 border-gray-200 hover:shadow-lg transition-all"
+                >
+                  {post.heroImage && (
+                    <div className="aspect-video bg-gray-100 overflow-hidden">
+                      <img 
+                        src={post.heroImage} 
+                        alt={post.title || ""} 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                      />
+                    </div>
+                  )}
+                  <div className="p-4">
+                    <h3 className="font-bold text-primary group-hover:text-accent-hover transition-colors line-clamp-2">
+                      {post.title}
+                    </h3>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            <div className="text-center mt-8">
+              <Link
+                href="/journal"
+                className="inline-flex items-center gap-2 text-primary hover:text-accent-hover font-semibold"
+              >
+                Read more articles <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Combine Your Adventure */}
+      <section className="bg-primary/5 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-primary text-sm font-semibold mb-4">
+              <Sparkles className="h-4 w-4" />
+              Multi-Activity Adventures
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
+              Combine Surfing With...
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Make the most of your trip with these perfect activity pairings
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Link href="/coasteering" className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-accent-hover transition-all text-center">
+              <div className="text-4xl mb-3">🪨</div>
+              <h3 className="font-bold text-primary group-hover:text-accent-hover mb-2">Coasteering</h3>
+              <p className="text-sm text-gray-600">Same coastline, different thrill — cliff jumping and cave exploring</p>
+            </Link>
+            <Link href="/kayaking" className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-accent-hover transition-all text-center">
+              <div className="text-4xl mb-3">🛶</div>
+              <h3 className="font-bold text-primary group-hover:text-accent-hover mb-2">Sea Kayaking</h3>
+              <p className="text-sm text-gray-600">Explore sea caves and hidden coves on calmer days</p>
+            </Link>
+            <Link href="/hiking" className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-accent-hover transition-all text-center">
+              <div className="text-4xl mb-3">🥾</div>
+              <h3 className="font-bold text-primary group-hover:text-accent-hover mb-2">Coastal Hiking</h3>
+              <p className="text-sm text-gray-600">Walk the Pembrokeshire Coast Path between surf sessions</p>
+            </Link>
+            <Link href="/wild-swimming" className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-accent-hover transition-all text-center">
+              <div className="text-4xl mb-3">🏊</div>
+              <h3 className="font-bold text-primary group-hover:text-accent-hover mb-2">Wild Swimming</h3>
+              <p className="text-sm text-gray-600">When the waves are flat, find lakes and rivers to explore</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Accommodation Links */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-primary text-sm font-semibold mb-4">
+              <Home className="h-4 w-4" />
+              Where to Stay
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
+              Surf-Friendly Accommodation
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Find places to stay near Wales&apos;s best surf spots
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link 
+              href="/accommodation?region=pembrokeshire"
+              className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-primary transition-all"
+            >
+              <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent-hover">
+                Pembrokeshire
+              </h3>
+              <p className="text-sm text-gray-600 mb-3">
+                Stay near Freshwater West, Whitesands, and Newgale
+              </p>
+              <span className="text-sm text-accent-hover font-semibold flex items-center gap-1">
+                Browse stays <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+            <Link 
+              href="/accommodation?region=gower"
+              className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-primary transition-all"
+            >
+              <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent-hover">
+                Gower Peninsula
+              </h3>
+              <p className="text-sm text-gray-600 mb-3">
+                Base yourself for Llangennith, Caswell Bay, and Langland
+              </p>
+              <span className="text-sm text-accent-hover font-semibold flex items-center gap-1">
+                Browse stays <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+            <Link 
+              href="/accommodation?region=llyn-peninsula"
+              className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-primary transition-all"
+            >
+              <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent-hover">
+                Llŷn Peninsula
+              </h3>
+              <p className="text-sm text-gray-600 mb-3">
+                Stay near Hell&apos;s Mouth and the North Wales surf beaches
+              </p>
+              <span className="text-sm text-accent-hover font-semibold flex items-center gap-1">
+                Browse stays <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* FAQ */}
       <section className="bg-gray-50 py-16">

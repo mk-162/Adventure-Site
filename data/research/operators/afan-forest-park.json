@@ -1,0 +1,241 @@
+{
+  "operatorId": "afan-forest-park",
+  "name": "Afan Forest Park",
+  "slug": "afan-forest-park",
+  "category": "mountain-biking",
+  "subcategory": "trail-centre",
+  
+  "contact": {
+    "phone": "01639 850564",
+    "phoneNote": "Afan Forest Park Visitor Centre",
+    "email": null,
+    "emailNote": "Contact form available at afanforestpark.com/contact - no direct email published",
+    "website": "https://afanforestpark.com"
+  },
+  
+  "address": {
+    "street": "Afan Forest Park Visitor Centre, Cynonville",
+    "town": "Port Talbot",
+    "county": "Neath Port Talbot",
+    "postcode": "SA13 3HG",
+    "what3words": "attend.stance.selects"
+  },
+  
+  "coordinates": {
+    "lat": 51.6742177,
+    "lng": -3.6522502
+  },
+  
+  "images": {
+    "cover": "https://afanforestpark.com/wp-content/uploads/elementor/thumbs/Mountain-Biker-Through-Afan-Forrest-qg3a5r632eozoehdc41unpkq96auua44cbe9gfqg80.jpg",
+    "coverAlt": "Mountain biker riding through the lush green trails of Afan Forest Park",
+    "logo": "https://afanforestpark.com/wp-content/uploads/2023/07/afan_forest_parc_logo.svg",
+    "logoNote": "Official Afan Forest Park / Parc Coedwig Afan logo with wave symbol",
+    "gallery": [
+      {
+        "url": "https://afanforestpark.com/wp-content/uploads/elementor/thumbs/DSC_7137_5504-x-8256_no_watermark_5504-x-8256_facebook-qg2zvbxrrtm2cijjchtojooanq2igck6ew4pzuyqao.jpg",
+        "alt": "Mountain biker navigating forest trails at Afan"
+      },
+      {
+        "url": "https://afanforestpark.com/wp-content/uploads/elementor/thumbs/Mountain-Biker-View-of-Swansea-Bay-qg2zdoivftg8c46iev5vq50p392dwyhmnj4hkt4v4w.jpg",
+        "alt": "Mountain biker with panoramic view of Swansea Bay"
+      },
+      {
+        "url": "https://afanforestpark.com/wp-content/uploads/elementor/thumbs/NPTC-Afan-mountain-biking-0017-qg3a7ud695jxh7g550k076lls007y2enanl3ukmye8.jpg",
+        "alt": "Mountain biking action shot on Afan trails"
+      },
+      {
+        "url": "https://afanforestpark.com/wp-content/uploads/elementor/thumbs/Biker-Taking-in-Views-of-Afan-Valley-e1582812857250-qg3a8og0bup3sq8g9dk2ez0csbvysdq22sgn7fecv4.jpg",
+        "alt": "Mountain biker taking in views of the Afan Valley"
+      }
+    ]
+  },
+  
+  "description": {
+    "short": "One of Britain's most iconic mountain biking destinations, featuring over 100km of all-weather singletrack trails set in the stunning Afan Valley, South Wales.",
+    "full": "Afan Forest Park is one of the world's most established mountain biking destinations, boasting more all-weather singletrack than any other mountain biking centre in Wales. Located in the heart of the Afan Valley, this former coal mining valley has been transformed into a trail riding paradise, offering six superb flowing trails ranging from 7km to over 40km, plus an extreme-graded bike park at Gyfylchi.\n\nThe trails cater to all abilities, from the green-graded Rookie trail and skills park perfect for beginners, through the blue-graded Blue Scar for developing riders, to the renowned red-graded Penhydd, Y Wal (The Wall), White's Level and Blade trails. For those seeking the ultimate challenge, the black-graded W2 trail linking Y Wal and White's Level features some of the most demanding descents and technical singletrack sections in the UK. The gentle Rheilfordd Trail follows the valley floor along an old railway line, perfect for families.\n\nThe Afan Forest Park Visitor Centre serves as the main hub, offering bike hire, repairs, showers, bike wash, and the Base Wales café. The South Wales Miners' Museum within the visitor centre tells the story of the valley's industrial heritage. With stunning scenery, world-class trails maintained by dedicated volunteers, and excellent facilities, Afan Forest Park delivers an unforgettable mountain biking experience where traces of industrial history have been gently reclaimed by nature."
+  },
+  
+  "openingTimes": {
+    "general": "Trails accessible 24 hours",
+    "visitorCentre": "Check website for current hours",
+    "note": "Car park and visitor centre managed by Neath Port Talbot Council. Trail conditions may vary - check Natural Resources Wales updates."
+  },
+  
+  "pricing": {
+    "parking": {
+      "upTo1Hour": 1.10,
+      "upTo4Hours": 2.75,
+      "allDay": 3.75,
+      "annualPass": 55.00,
+      "allParkAnnualPass": 90.00,
+      "allParkNote": "Covers Gnoll, Margam and Afan"
+    },
+    "showers": 1.50,
+    "showerNote": "Cash only - tokens from visitor centre",
+    "trails": "Free",
+    "currency": "GBP"
+  },
+  
+  "trails": [
+    {
+      "name": "Rookie Trail & Skills Park",
+      "grade": "Green (Easy)",
+      "distance": "6km",
+      "climb": "145m",
+      "time": "30 mins - 2 hours",
+      "description": "Perfect introductory route for newcomers with optional 2.4km blue loop"
+    },
+    {
+      "name": "Rheilfordd Cycle Trail",
+      "grade": "Green (Easy)",
+      "distance": "14.7km",
+      "climb": "266m",
+      "time": "1.5-2 hours",
+      "description": "Gentle trail following old railway track through the valley"
+    },
+    {
+      "name": "Blue Scar Trail",
+      "grade": "Blue (Moderate)",
+      "distance": "7.1km",
+      "climb": "313m",
+      "time": "1-1.5 hours",
+      "description": "Progression trail for riders competent on green routes"
+    },
+    {
+      "name": "Penhydd",
+      "grade": "Red (Difficult)",
+      "distance": "14.4km",
+      "climb": "525m",
+      "time": "1.5-3 hours",
+      "description": "Classic South Wales trail mixing forest road climbs with flowing singletrack"
+    },
+    {
+      "name": "Y Wal (The Wall)",
+      "grade": "Red (Difficult)",
+      "distance": "18.7km",
+      "climb": "746m",
+      "time": "1.5-3 hours",
+      "description": "Some of the best singletrack descents in the UK"
+    },
+    {
+      "name": "W2 Trail",
+      "grade": "Black (Severe)",
+      "distance": "Link trail",
+      "description": "Links Y Wal and White's Level - 42km challenging combined ride"
+    }
+  ],
+  
+  "reviews": {
+    "google": {
+      "rating": 4.7,
+      "reviewCount": 1332,
+      "lastChecked": "2026-02-06"
+    },
+    "tripadvisor": {
+      "note": "Unable to fetch - blocked by TripAdvisor"
+    },
+    "testimonials": [
+      {
+        "quote": "Good choice of bike trails, cheap car parking, food available & toilets on site.",
+        "source": "Google Reviews"
+      },
+      {
+        "quote": "Great trails for all levels, good parking and visitor centre/cafe.",
+        "source": "Google Reviews"
+      },
+      {
+        "quote": "Lovely place to walk, run or mountain bike.",
+        "source": "Google Reviews"
+      },
+      {
+        "quote": "What a beautiful place with stunning views! Afan Forest has loads of walking trails and several mountain bike trails.",
+        "author": "Bob JOE",
+        "source": "Google Reviews - Local Guide"
+      }
+    ]
+  },
+  
+  "features": [
+    "6+ mountain bike trails",
+    "Skills park",
+    "Bike hire",
+    "Bike repair services",
+    "Bike wash",
+    "Showers",
+    "Café (Base Wales)",
+    "Visitor centre",
+    "South Wales Miners Museum",
+    "Children's adventure play area",
+    "Walking trails",
+    "Dog friendly",
+    "Family friendly",
+    "Wheelchair accessible (Rookie & Blue Scar trails)",
+    "EV charging point",
+    "Waymarked trails",
+    "Car parking"
+  ],
+  
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "accessibleTrails": ["Rookie Trail", "Blue Scar Trail"],
+    "note": "Suitable for adaptive cycles, adaptive wheelchairs and mobility scooters"
+  },
+  
+  "bookingRequired": false,
+  "bookingNote": "No booking required for trails. Bike hire available on site.",
+  
+  "socialMedia": {
+    "twitter": "https://twitter.com/afanforestpark",
+    "facebook": "https://www.facebook.com/AfanForestPark",
+    "youtube": "https://www.youtube.com/afanforestpark",
+    "instagram": "https://www.instagram.com/afanforestpark",
+    "pinterest": "https://www.pinterest.co.uk/afanforestpark"
+  },
+  
+  "managedBy": {
+    "trails": "Natural Resources Wales",
+    "visitorCentre": "Neath Port Talbot Council",
+    "trailMaintenance": "Afan Trail Volunteers"
+  },
+  
+  "alternativeStartPoints": [
+    {
+      "name": "Glyncorrwg Mountain Bike Centre",
+      "address": "Ynyscorrwg Park, Glyncorrwg, Port Talbot, SA13 3EA",
+      "what3words": "shorthand.camps.lunching",
+      "trails": ["White's Level", "Blade", "Skyline"]
+    },
+    {
+      "name": "Rhyslyn Car Park",
+      "address": "Pontrhydyfen, Port Talbot, SA12 9SG",
+      "what3words": "coil.banks.shed"
+    },
+    {
+      "name": "Gyfylchi Bike Park",
+      "what3words": "reserving.eternity.treetop",
+      "note": "Skills park and walking trails"
+    }
+  ],
+  
+  "gettingThere": {
+    "byRoad": "Leave M4 at J40, follow brown signage along A4107 for Afan Forest Park. Approximately 6 miles from motorway.",
+    "byTrain": "Port Talbot Parkway Railway Station on main line from London Paddington",
+    "byBus": "Bus stops at Pontrhydyfen/Oakwood, Afan Forest Park Visitor Centre, Cymmer and Glyncorrwg",
+    "byBike": "Sustrans Cycle Route 887 from Aberavon Seafront"
+  },
+  
+  "researchMetadata": {
+    "researchedAt": "2026-02-06",
+    "sources": [
+      "https://afanforestpark.com",
+      "https://afanforestpark.com/mountain-biking/",
+      "https://afanforestpark.com/how-to-get-here/",
+      "https://afanforestpark.com/visitor-facilities-attractions/",
+      "https://naturalresources.wales/days-out/places-to-visit/south-west-wales/afan-forest-park-visitor-centre/?lang=en",
+      "https://dramaticheart.wales/discover-our-area/activity/afan-forest-park-visitor-centre/",
+      "Google Maps"
+    ],
+    "notes": "TripAdvisor blocked access. No direct email address published - contact via form only. Phone number confirmed via Google Maps listing. Managed jointly by Natural Resources Wales (trails) and Neath Port Talbot Council (visitor centre/parking)."
+  }
+}

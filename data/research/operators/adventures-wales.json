@@ -1,0 +1,154 @@
+{
+  "name": "Adventures Wales",
+  "slug": "adventures-wales",
+  "tradingName": "Adventures Activity Centre",
+  "website": "https://www.adventureswales.co.uk",
+  "contact": {
+    "phone": "01656 782300",
+    "email": "enquiries@adventureswales.co.uk",
+    "address": {
+      "street": "Parc Newydd Farm, Moor Lane",
+      "locality": "Nottage",
+      "town": "Porthcawl",
+      "county": "Bridgend",
+      "postcode": "CF36 3EX",
+      "country": "Wales"
+    }
+  },
+  "location": {
+    "lat": 51.502313,
+    "lng": -3.716217,
+    "region": "South Wales",
+    "nearestCities": ["Cardiff", "Swansea", "Bridgend"]
+  },
+  "images": {
+    "logo": "https://www.adventureswales.co.uk/wp-content/uploads/2014/11/adventures-wales-logo.png",
+    "cover": "https://www.adventureswales.co.uk/wp-content/uploads/2020/10/canyoning-and-gorge-walking.jpg",
+    "gallery": [
+      "https://www.adventureswales.co.uk/wp-content/uploads/2020/11/gorge-walking-and-canyoning15.jpg",
+      "https://www.adventureswales.co.uk/wp-content/uploads/2020/11/gorge-scrambling2.jpg",
+      "https://www.adventureswales.co.uk/wp-content/uploads/2014/11/white-water-rafting2.jpg",
+      "https://www.adventureswales.co.uk/wp-content/uploads/2014/11/surfing2.jpg",
+      "https://www.adventureswales.co.uk/wp-content/uploads/2020/11/gorge-walking-and-canyoning24.jpg",
+      "https://www.adventureswales.co.uk/wp-content/uploads/2020/07/girl-in-gorge.jpg"
+    ]
+  },
+  "description": {
+    "short": "Award-winning outdoor activity centre in South Wales offering adventure experiences for groups, schools, stag/hen parties, and families - just 20 minutes from Cardiff.",
+    "full": "Adventures Wales has been delivering high-quality outdoor adventure experiences since 2004 from their dedicated activity centre in Porthcawl, South Wales. Located just 20 minutes from Cardiff and Swansea, with the Brecon Beacons National Park on their doorstep, they offer the perfect gateway to some of Wales' most spectacular landscapes. As a fully licensed AALA (Adventure Activities Licensing Authority) centre, safety is paramount while delivering unforgettable experiences.\n\nTheir comprehensive range of activities spans both land and water adventures, including gorge walking and canyoning in the Brecon Beacons, coasteering along the stunning Gower and Pembrokeshire coastlines, surfing lessons at Rest Bay beach, white water rafting, paddleboarding, and kayaking. On-site facilities include quad bike tracks, a paintball arena, climbing towers, high ropes courses, zip slides, and axe throwing. This diversity makes them ideal for any group seeking adventure.\n\nThe team is led by qualified professionals including Mountain Instructors and International Mountain Leaders with experience guiding expeditions worldwide, from Everest Base Camp to Kilimanjaro. Adventures Wales caters to a wide range of clients including school residential trips, corporate team building events, stag and hen weekends, family activity days, and children's birthday parties. Their dedication to excellence earned them the Wales Prestige Awards 'Outdoor Company of the Year' for 2022/23, and they've been featured on BBC, GQ Magazine, and Sky Extreme Channel."
+  },
+  "ratings": {
+    "tripadvisor": {
+      "rating": 4.9,
+      "reviewCount": 132,
+      "ranking": "#1 of Fun & Games in Porthcawl",
+      "url": "https://www.tripadvisor.com/Attraction_Review-g672145-d2716335-Reviews-Adventures_Activity_Centre-Porthcawl_Bridgend_County_South_Wales_Wales.html"
+    },
+    "google": {
+      "rating": 4.9,
+      "reviewCount": 150,
+      "note": "Estimated based on TripAdvisor parity - verify manually"
+    }
+  },
+  "activities": [
+    "Gorge Walking",
+    "Canyoning",
+    "Coasteering",
+    "Surfing",
+    "Paddleboarding (SUP)",
+    "Kayaking",
+    "White Water Rafting",
+    "Raft Building",
+    "Rock Climbing",
+    "Abseiling",
+    "High Ropes",
+    "Zip Lines",
+    "Quad Biking",
+    "Paintball",
+    "Laser Tag",
+    "Axe Throwing",
+    "Bushcraft",
+    "Muddy Assault Course",
+    "Team Building"
+  ],
+  "audiences": [
+    "Schools & Colleges",
+    "Corporate & Team Building",
+    "Stag Weekends",
+    "Hen Weekends",
+    "Families",
+    "Children's Parties",
+    "Youth Groups",
+    "Individuals"
+  ],
+  "accreditations": [
+    {
+      "name": "AALA",
+      "fullName": "Adventure Activities Licensing Authority",
+      "description": "Fully licensed activity centre"
+    },
+    {
+      "name": "AMI",
+      "fullName": "Association of Mountaineering Instructors"
+    },
+    {
+      "name": "SLSGB",
+      "fullName": "Surf Life Saving GB"
+    },
+    {
+      "name": "UIMLA",
+      "fullName": "Union of International Mountain Leader Associations"
+    },
+    {
+      "name": "ASI",
+      "fullName": "Academy of Surfing Instructors"
+    }
+  ],
+  "awards": [
+    {
+      "name": "Outdoor Company of the Year",
+      "awarder": "Wales Prestige Awards",
+      "year": "2022/23"
+    }
+  ],
+  "features": {
+    "accommodation": true,
+    "onSiteActivities": true,
+    "offSiteActivities": true,
+    "catering": true,
+    "freeWifi": true,
+    "viewingAreas": true,
+    "groupDiscounts": true,
+    "giftVouchers": true,
+    "residentialPackages": true
+  },
+  "founded": 2004,
+  "socialMedia": {
+    "facebook": "https://www.facebook.com/adventureswales",
+    "twitter": "https://twitter.com/adventureswales",
+    "youtube": "https://www.youtube.com/adventureswales"
+  },
+  "operatingHours": {
+    "note": "Contact for availability. Winter break typically mid-December to early January."
+  },
+  "pricing": {
+    "startingFrom": 35,
+    "currency": "GBP",
+    "note": "Prices from £35pp for activities, £55pp midweek coasteering, £69pp full day coasteering"
+  },
+  "metadata": {
+    "researchedAt": "2026-02-06",
+    "sources": [
+      "https://www.adventureswales.co.uk/",
+      "https://www.adventureswales.co.uk/about-us/",
+      "https://www.adventureswales.co.uk/contact-us/",
+      "https://www.visitwales.com/activity/activity/adventures-wales-526641",
+      "https://www.tripadvisor.com/Attraction_Review-g672145-d2716335-Reviews-Adventures_Activity_Centre-Porthcawl_Bridgend_County_South_Wales_Wales.html",
+      "https://westwalescentre.co.uk/rallies/venue-parc-newydd-farm/"
+    ],
+    "needsVerification": [
+      "Google rating and review count",
+      "Social media URLs"
+    ]
+  }
+}

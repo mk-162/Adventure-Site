@@ -1,1 +1,1 @@
-{"ignoreCommand": "if [ \"$SKIP_DEPLOY\" = \"true\" ]; then exit 0; fi; exit 1"}
+{}

@@ -8,19 +8,20 @@
 ## Current Gap
 | What we have | What exists | Gap |
 |--------------|-------------|-----|
-| ~100 events | 500-1000+ events | Missing 80%+ |
+| ~100 events | 1000-2000+ events | Missing 90%+ |
 
-We're missing:
-- Most local running clubs' races
-- Charity walks and fun runs
-- Smaller MTB events
-- Open water swimming races
-- Adventure festivals
-- Outdoor fitness events
-- Climbing competitions
-- Kayak/canoe races
-- Beach events
-- Community outdoor events
+We're missing ENTIRE categories:
+- **Kids & Family** — Forest schools, outdoor birthday parties, family adventure days, nature trails, wildlife events
+- **Music & Festivals** — Outdoor music festivals, green gatherings, beach parties, folk festivals
+- **Food & Drink** — Food festivals, foraging walks, outdoor dining events, beer festivals
+- **Wellness & Mindfulness** — Outdoor yoga, wild swimming groups, forest bathing, retreat weekends
+- **Wildlife & Nature** — Birdwatching events, seal watching trips, stargazing nights, conservation days
+- **Heritage & Culture** — Outdoor theatre, historical reenactments, castle events, Welsh culture festivals
+- **Seasonal Events** — Christmas markets, harvest festivals, summer fairs, bonfire nights
+- **Water Recreation** — Paddleboarding meetups, kayak tours, coasteering days, sailing regattas
+- **Running & Walking** — Parkruns, charity walks, night hikes, walking festivals
+- **Cycling** — Sportives, BMX jams, family bike rides, cycling festivals
+- **Adventure Sports** — Climbing comps, caving trips, zip wire events, adventure races
 
 ---
 
@@ -97,59 +98,207 @@ We're missing:
 | **British Heart Foundation** | bhf.org.uk/events | Challenge events |
 | **Tŷ Hafan** | tyhafan.org | Welsh children's hospice events |
 
+### 8. Kids & Family Events
+| Source | URL | What to find |
+|--------|-----|--------------|
+| **National Trust Wales** | nationaltrust.org.uk/wales | Family trails, Easter hunts, nature events |
+| **Urdd** | urdd.cymru | Welsh youth outdoor activities |
+| **Cadw** | cadw.gov.wales/events | Castle events, heritage days |
+| **RSPB Wales** | rspb.org.uk/wales | Wildlife events, kids activities |
+| **Wildlife Trust Wales** | wtwales.org | Nature reserves events |
+| **Forestry Wales** | naturalresources.wales | Forest activities, trails |
+| **Go Ape Wales** | goape.co.uk | Adventure events |
+| **Folly Farm** | folly-farm.co.uk | Family events |
+| **Techniquest** | techniquest.org | Science outdoor events |
+| **Netmums Wales** | netmums.com/wales | Family events listings |
+| **Mumsnet Local** | mumsnet.com/local/wales | Community family events |
+
+### 9. Music & Outdoor Festivals
+| Source | URL | What to find |
+|--------|-----|--------------|
+| **Green Man Festival** | greenman.net | Major Welsh festival |
+| **Festival No.6** | festivalnumber6.com | Portmeirion festival |
+| **Llangollen Eisteddfod** | llangollen.net | International music |
+| **Focus Wales** | focuswales.com | Wrexham music festival |
+| **Sŵn Festival** | swnfest.com | Cardiff music |
+| **eFestivals Wales** | efestivals.co.uk/festivals/regions/wales | All Welsh festivals |
+| **Skiddle Wales** | skiddle.com/wales | Event listings |
+| **Ents24 Wales** | ents24.com/wales | Gig listings |
+| **BBC Wales Events** | bbc.co.uk/wales/events | Major events |
+| **Songkick Wales** | songkick.com | Outdoor gigs |
+| **Hay Festival** | hayfestival.com | Literary + outdoor |
+| **Abergavenny Food Festival** | abergavennyfoodfestival.com | Food + outdoors |
+
+### 10. Food, Drink & Foraging
+| Source | URL | What to find |
+|--------|-----|--------------|
+| **Abergavenny Food Festival** | abergavennyfoodfestival.com | Major food fest |
+| **Narberth Food Festival** | narberthfoodfestival.com | Pembrokeshire food |
+| **Mold Food Festival** | moldfoodfestival.co.uk | North Wales food |
+| **Cardiff Food & Drink Festival** | cardiff.gov.uk | Capital city food |
+| **Wild Food UK** | wildfooduk.com/events | Foraging courses |
+| **Fat Hen Wild Food** | fathen.org | Wild food events |
+| **Beer festivals Wales** | Search CAMRA Wales | Real ale outdoors |
+| **Welsh vineyards** | winesofwales.co.uk | Vineyard events |
+
+### 11. Wellness & Outdoor Fitness
+| Source | URL | What to find |
+|--------|-----|--------------|
+| **Wild Swimming Wales** | Facebook groups | OW swim meetups |
+| **Outdoor Swimmer events** | outdoorswimmer.com/events | Swim events |
+| **British Wheel of Yoga Wales** | bwy.org.uk | Outdoor yoga |
+| **Retreats Wales** | Search retreat sites | Wellness weekends |
+| **Forest bathing Wales** | Search | Nature therapy |
+| **Outdoor bootcamps** | Various | Fitness events |
+| **CrossFit Wales boxes** | Various | Outdoor WODs |
+| **Tough Mudder / Spartan** | toughmudder.co.uk | OCR events |
+
+### 12. Wildlife & Stargazing
+| Source | URL | What to find |
+|--------|-----|--------------|
+| **Dark Sky Wales** | darkskywales.org | Stargazing events |
+| **Brecon Beacons Dark Sky** | breconbeacons.org/stargazing | Astro events |
+| **Snowdonia Dark Skies** | eryri.llyw.cymru | Northern stargazing |
+| **Sea Trust Wales** | seatrust.org.uk | Marine wildlife |
+| **Whale & Dolphin Conservation** | uk.whales.org | Cetacean events |
+| **Seal watching Pembrokeshire** | Various operators | Wildlife trips |
+| **RSPB reserves** | rspb.org.uk | Birdwatching events |
+
+### 13. Heritage & Outdoor Culture
+| Source | URL | What to find |
+|--------|-----|--------------|
+| **Cadw** | cadw.gov.wales | Castle events, heritage |
+| **National Museum Wales** | museum.wales | Outdoor exhibits |
+| **St Fagans events** | museum.wales/stfagans | Living history |
+| **Eisteddfod** | eisteddfod.wales | National cultural festival |
+| **Urdd Eisteddfod** | urdd.cymru | Youth eisteddfod |
+| **Open Doors Wales** | cadw.gov.wales/opendoors | Heritage weekends |
+| **Blaenavon World Heritage** | visitblaenavon.co.uk | Industrial heritage |
+
+### 14. Seasonal & Community
+| Source | URL | What to find |
+|--------|-----|--------------|
+| **Visit Wales seasonal** | visitwales.com | Christmas, Easter, Summer |
+| **Local council events** | All Welsh councils | Community events |
+| **Town/village Facebook groups** | Facebook | Hyperlocal events |
+| **What's On Wales** | whatsonwales.co.uk | Regional listings |
+| **Buzz Magazine** | buzzmagazine.co.uk | Cardiff events |
+| **Daily Post events** | dailypost.co.uk | North Wales events |
+| **South Wales Argus** | southwalesargus.co.uk | SE Wales events |
+| **Pembrokeshire Herald** | pembrokeshire-herald.com | West Wales |
+| **Farmers markets Wales** | fmiw.co.uk | Outdoor markets |
+
 ---
 
 ## Event Categories to Discover
 
-### Running (expect 150+ events)
+### Running & Walking (expect 200+ events)
 - [ ] Trail marathons & ultras
 - [ ] Fell races (Welsh Fell Runners calendar)
 - [ ] Road races (10K, half, full marathons)
-- [ ] Fun runs (5K, colour runs, charity)
+- [ ] Fun runs (5K, colour runs)
+- [ ] Charity walks (Cancer Research, BHF, etc.)
 - [ ] Cross country (Welsh league)
-- [ ] Obstacle/mud runs
-- [ ] Night runs
+- [ ] Obstacle/mud runs (Tough Mudder, etc.)
+- [ ] Night runs/walks
+- [ ] Walking festivals
+- [ ] Parkruns (list locations, not individual dates)
 
-### Cycling (expect 80+ events)
+### Cycling (expect 100+ events)
 - [ ] Road sportives
-- [ ] MTB enduros
-- [ ] Downhill races
+- [ ] MTB enduros & races
+- [ ] Downhill comps
 - [ ] Gravel events
 - [ ] Time trials
-- [ ] Criteriums
 - [ ] Cyclocross
-- [ ] BMX events
+- [ ] BMX jams
+- [ ] Family bike rides
+- [ ] Cycling festivals
 
-### Triathlon & Multi-Sport (expect 40+ events)
-- [ ] Sprint triathlons
-- [ ] Olympic distance
-- [ ] 70.3 / Ironman
+### Triathlon & Multi-Sport (expect 50+ events)
+- [ ] Sprint/Olympic/70.3/Ironman triathlons
 - [ ] Aquathlon / Duathlon
 - [ ] Swimrun events
 - [ ] Adventure races
+- [ ] Multi-sport challenges
 
-### Water Sports (expect 30+ events)
+### Water Sports (expect 80+ events)
 - [ ] Open water swim races
-- [ ] SUP races
+- [ ] Wild swimming meetups
+- [ ] SUP races & tours
 - [ ] Kayak/canoe events
 - [ ] Surf competitions
 - [ ] Rowing regattas
+- [ ] Coasteering days
+- [ ] Sailing events
+- [ ] Paddle festivals
 
-### Outdoor & Adventure (expect 50+ events)
-- [ ] Hiking festivals
-- [ ] Adventure festivals
-- [ ] Climbing comps
-- [ ] Orienteering
-- [ ] Outdoor fitness (CrossFit, bootcamp events)
-- [ ] Beach events
-
-### Family & Community (expect 100+ events)
-- [ ] Charity walks
-- [ ] Park runs (list as single entry with locations)
-- [ ] Community fun runs
-- [ ] Beach clean-up events
+### Kids & Family (expect 200+ events)
 - [ ] Family adventure days
+- [ ] Forest school sessions
+- [ ] Nature trails & hunts
+- [ ] Castle events (Cadw)
+- [ ] Wildlife activities (RSPB, Wildlife Trust)
 - [ ] School holiday activities
+- [ ] Outdoor birthday party venues
+- [ ] Go Ape type adventures
+- [ ] Farm events (Folly Farm etc.)
+- [ ] Beach days & seaside events
+
+### Music & Outdoor Festivals (expect 100+ events)
+- [ ] Green Man, Festival No.6, etc.
+- [ ] Outdoor gigs & concerts
+- [ ] Folk festivals
+- [ ] Eisteddfodau (National, Urdd, local)
+- [ ] Beach parties
+- [ ] Summer festivals
+- [ ] Hay Festival & literary outdoors
+
+### Food, Drink & Foraging (expect 80+ events)
+- [ ] Food festivals (Abergavenny, Narberth, Mold)
+- [ ] Farmers markets (regular outdoor markets)
+- [ ] Foraging walks & courses
+- [ ] Beer/cider festivals
+- [ ] Vineyard events
+- [ ] Outdoor dining experiences
+- [ ] Food trails
+
+### Wildlife & Nature (expect 60+ events)
+- [ ] Birdwatching events
+- [ ] Seal/dolphin watching trips
+- [ ] Stargazing nights (Dark Sky events)
+- [ ] Conservation volunteer days
+- [ ] Nature photography walks
+- [ ] Bat walks
+- [ ] Rockpool rambles
+
+### Wellness & Outdoor Fitness (expect 50+ events)
+- [ ] Outdoor yoga retreats
+- [ ] Forest bathing
+- [ ] Wild swimming groups
+- [ ] Bootcamp events
+- [ ] CrossFit outdoor WODs
+- [ ] Mindfulness in nature
+- [ ] Wellness weekends
+
+### Heritage & Culture (expect 60+ events)
+- [ ] Castle events & reenactments
+- [ ] Open Doors heritage days
+- [ ] St Fagans living history
+- [ ] Industrial heritage events
+- [ ] Outdoor theatre
+- [ ] Welsh culture celebrations
+
+### Seasonal & Community (expect 150+ events)
+- [ ] Christmas markets & events
+- [ ] Easter activities
+- [ ] Harvest festivals
+- [ ] Bonfire nights
+- [ ] Summer fairs
+- [ ] Beach clean-ups
+- [ ] Community sports days
+- [ ] Village fetes
+- [ ] Agricultural shows
 
 ---
 
@@ -263,12 +412,27 @@ Events needing human review:
 
 | Metric | Target |
 |--------|--------|
-| Total events discovered | 400+ |
-| Events with confirmed dates | 70%+ |
-| Events with website link | 90%+ |
-| Events with price info | 60%+ |
-| Events with coordinates | 80%+ |
-| Events with description | 50%+ |
+| **Total events discovered** | **1000+** |
+| Events with confirmed dates | 60%+ |
+| Events with website link | 85%+ |
+| Events with price info | 50%+ |
+| Events with coordinates | 70%+ |
+| Events with description | 40%+ |
+
+### Category Minimums
+| Category | Minimum Events |
+|----------|----------------|
+| Running & Walking | 200 |
+| Kids & Family | 200 |
+| Seasonal & Community | 150 |
+| Music & Festivals | 100 |
+| Cycling | 100 |
+| Water Sports | 80 |
+| Food & Drink | 80 |
+| Wildlife & Nature | 60 |
+| Heritage & Culture | 60 |
+| Triathlon | 50 |
+| Wellness & Fitness | 50 |
 
 ---
 
@@ -315,14 +479,33 @@ site:britishcycling.org.uk wales 2026
 
 ---
 
-## Success = 400+ Quality Events
+## Success = 1000+ Events Across All Categories
 
-Current: ~100 events
-Target: 400+ events with:
-- Accurate dates (or TBC if not announced)
-- Working website links
-- Correct locations with coordinates
-- Proper categorization
-- Brief but useful descriptions
+**Current:** ~100 events (mostly races)
+**Target:** 1000+ events covering:
+
+- ✅ Races & competitive sports
+- ✅ Kids & family adventures
+- ✅ Music & outdoor festivals  
+- ✅ Food, drink & foraging
+- ✅ Wildlife & nature experiences
+- ✅ Heritage & cultural outdoor events
+- ✅ Seasonal celebrations
+- ✅ Community gatherings
+- ✅ Wellness & outdoor fitness
+
+**Think beyond races.** Wales has:
+- Castle concerts and outdoor theatre
+- Food festivals in every market town
+- Dark sky stargazing events
+- Seal watching boat trips
+- Forest school for kids every weekend
+- Wild swimming meetups
+- Foraging walks through ancient woodlands
+- Eisteddfodau celebrating Welsh culture
+- Christmas markets in historic towns
+- Beach clean-ups bringing communities together
+
+**Every outdoor experience someone could book, attend, or participate in.**
 
 Go find them all. 🏴󠁧󠁢󠁷󠁬󠁳󠁿

@@ -136,8 +136,8 @@ export default async function ActivityTypePage({ params }: ActivityTypePageProps
                           key={row.activity.id}
                           activity={row.activity}
                           region={row.region}
-                          operator={row.operator}
                           activityType={row.activityType}
+                          variant="listing"
                         />
                       ))}
                     </div>

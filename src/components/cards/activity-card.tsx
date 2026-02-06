@@ -33,7 +33,7 @@ interface ActivityCardProps {
     heroImage?: string | null;
   } | null;
   image?: string;
-  variant?: "default" | "compact" | "horizontal";
+  variant?: "default" | "compact" | "horizontal" | "listing";
   hideOperator?: boolean;
 }
 
@@ -231,6 +231,51 @@ export function ActivityCard({
   const isAttraction = activityType?.slug === "attractions";
   const isSightseeing = activityType?.slug === "sightseeing";
   const isPassive = isAttraction || isSightseeing;
+
+  // Simple listing card - minimal info
+  if (variant === "listing") {
+    return (
+      <Link
+        href={`/activities/${activity.slug}`}
+        className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200"
+      >
+        {/* Image */}
+        <div className="relative h-36 overflow-hidden">
+          <div
+            className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+            style={{ backgroundImage: `url('${imageUrl}')` }}
+          />
+        </div>
+
+        {/* Content */}
+        <div className="p-3">
+          <h3 className="font-semibold text-primary text-sm group-hover:text-accent-hover transition-colors line-clamp-2 mb-1">
+            {activity.name}
+          </h3>
+          
+          {region && (
+            <p className="text-xs text-gray-500 flex items-center gap-1 mb-2">
+              <MapPin className="h-3 w-3" />
+              {region.name}
+            </p>
+          )}
+
+          <div className="flex items-center justify-between">
+            {activity.duration && (
+              <span className="text-xs text-gray-400">
+                {activity.duration}
+              </span>
+            )}
+            {activity.priceFrom && (
+              <span className="text-sm font-semibold text-primary">
+                From £{parseFloat(activity.priceFrom).toFixed(0)}
+              </span>
+            )}
+          </div>
+        </div>
+      </Link>
+    );
+  }
 
   if (variant === "horizontal") {
     return (

@@ -523,6 +523,42 @@ export default async function AnswerPage({ params }: Props) {
               </div>
             </div>
 
+            {/* Mobile Sidebar Content */}
+            <div className="lg:hidden space-y-6 mb-10">
+              <div className="bg-primary rounded-xl p-6 text-white relative overflow-hidden">
+                <div className="absolute -right-10 -top-10 w-32 h-32 bg-white/10 rounded-full blur-2xl" />
+                <h3 className="text-xl font-bold mb-2 relative z-10">Book an Adventure</h3>
+                <p className="text-white/80 text-sm mb-4 relative z-10">
+                  Ready to explore? Find guided adventures in {frontmatter.region ? formatRegionName(frontmatter.region) : "Wales"}.
+                </p>
+                <Link
+                  href={frontmatter.region ? `/${frontmatter.region}/things-to-do` : "/activities"}
+                  className="block w-full py-3 bg-white text-primary font-bold rounded-lg text-sm text-center hover:bg-gray-100 transition-colors relative z-10"
+                >
+                  Find Activities
+                </Link>
+              </div>
+
+              {frontmatter.region && (
+                <div className="rounded-xl overflow-hidden h-40 relative shadow-sm border border-gray-200">
+                  <img 
+                    alt={`Map of ${formatRegionName(frontmatter.region)}`}
+                    className="w-full h-full object-cover"
+                    src={`/images/regions/${frontmatter.region}-hero.jpg`}
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/10 hover:bg-black/20 transition-colors cursor-pointer">
+                    <Link
+                      href={`/${frontmatter.region}`}
+                      className="bg-white/90 backdrop-blur text-primary px-4 py-2 rounded-lg font-bold text-sm shadow-sm flex items-center gap-2"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      Explore {formatRegionName(frontmatter.region)}
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+
             {/* Related Answers (visible on all screens, useful for mobile) */}
             {relatedAnswers.length > 0 && (
               <section className="mt-10 pt-8 border-t border-gray-200">
@@ -616,7 +652,7 @@ export default async function AnswerPage({ params }: Props) {
                 <div className="rounded-xl overflow-hidden h-40 relative shadow-sm border border-gray-200">
                   <img 
                     alt={`Map of ${formatRegionName(frontmatter.region)}`}
-                    className="w-full h-full object-cover opacity-80"
+                    className="w-full h-full object-cover"
                     src={`/images/regions/${frontmatter.region}-hero.jpg`}
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/10 hover:bg-black/20 transition-colors cursor-pointer">

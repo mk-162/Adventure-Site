@@ -87,11 +87,12 @@ export default async function EventPage({ params }: Props) {
         {/* Hero */}
         <section className="relative h-[40vh] min-h-[300px] bg-primary">
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-40"
+            className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: `url('${heroImage}')`,
             }}
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
           <div className="relative h-full max-w-7xl mx-auto px-4 flex flex-col justify-end pb-8">
             {/* Breadcrumb */}
             <nav className="flex items-center gap-2 text-sm text-gray-300 mb-4">

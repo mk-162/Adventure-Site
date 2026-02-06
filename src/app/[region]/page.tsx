@@ -565,7 +565,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
               src={`/images/regions/${regionSlug}-hero.jpg`}
             />
             {/* Gradient overlay for text readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
           </div>
 
           <div className="absolute top-4 right-4 flex gap-2 lg:hidden z-20">
@@ -609,7 +609,10 @@ export default async function RegionPage({ params }: RegionPageProps) {
         </div>
 
         {/* Sticky Section Nav */}
-        <nav className="sticky top-[64px] z-40 bg-white/80 backdrop-blur-md pt-2 pb-3 lg:pb-4 mb-4 lg:mb-6 -mx-4 px-4 sm:mx-0 sm:px-0">
+        <nav
+          className="sticky z-40 bg-white/80 backdrop-blur-md pt-2 pb-3 lg:pb-4 mb-4 lg:mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"
+          style={{ top: "var(--header-height)" }}
+        >
           <div className="flex overflow-x-auto border-b border-gray-200 gap-4 lg:gap-8 no-scrollbar">
             {activities.length > 0 && (
               <AnchorTab href="#activities" label="Activities" />

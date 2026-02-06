@@ -112,7 +112,7 @@ export default async function OperatorProfilePage({ params }: Props) {
     : null;
 
   return (
-    <div className="min-h-screen pb-24 lg:pb-12">
+    <div className="min-h-screen pb-24 lg:pb-12 has-bottom-bar">
       {/* Structured Data */}
       <JsonLd data={createLocalBusinessSchema(operator)} />
       <JsonLd data={createBreadcrumbSchema([
@@ -501,6 +501,205 @@ export default async function OperatorProfilePage({ params }: Props) {
                 )}
               </div>
             </section>
+          </div>
+
+          {/* Mobile Sidebar Content */}
+          <div className="lg:hidden space-y-6">
+            {operator.claimStatus !== "claimed" && !isPremium && (
+              <ClaimListingBanner
+                operatorSlug={operator.slug}
+                operatorName={operator.name}
+                variant="inline"
+              />
+            )}
+
+            <div className="bg-gradient-to-br from-accent-hover/5 to-amber-50 rounded-xl border border-accent-hover/20 p-6 shadow-lg shadow-accent-hover/10">
+              <h3 className="text-lg font-bold text-primary mb-2">
+                {operator.bookingPlatform && operator.bookingPlatform !== "none"
+                  ? (operator.bookingPlatform === "direct" ? "Book Direct" : "Book Online")
+                  : "Get In Touch"}
+              </h3>
+              <p className="text-sm text-gray-600 mb-4">
+                {operator.bookingPlatform === "beyonk" 
+                  ? "Instant availability — book securely via Beyonk"
+                  : operator.bookingPlatform === "rezdy"
+                  ? "Check availability and book online via Rezdy"
+                  : operator.bookingPlatform === "fareharbor"
+                  ? "Check availability and book online via FareHarbor"
+                  : operator.bookingPlatform === "direct"
+                  ? "Book directly with the provider"
+                  : "Contact them to check availability and book"}
+              </p>
+
+              <div className="flex flex-col gap-3">
+                <a
+                  href={operator.bookingWidgetUrl || operator.website || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 bg-accent-hover hover:bg-accent-hover text-white font-bold py-3 px-4 rounded-xl transition-colors shadow-md shadow-accent-hover/30"
+                >
+                  {operator.bookingPlatform === "beyonk" ? "Book via Beyonk" 
+                    : operator.bookingPlatform === "rezdy" ? "Book via Rezdy"
+                    : operator.bookingPlatform === "fareharbor" ? "Book via FareHarbor"
+                    : operator.bookingPlatform === "direct" ? "Book Direct"
+                    : "Visit Website"}
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+
+                {operator.phone && (
+                  <a
+                    href={`tel:${operator.phone}`}
+                    className="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded-xl transition-colors"
+                  >
+                    <Phone className="w-4 h-4" />
+                    Call {operator.phone}
+                  </a>
+                )}
+
+                {operator.bookingPlatform && operator.bookingPlatform !== "none" && operator.bookingPlatform !== "direct" && operator.website && (
+                  <a
+                    href={operator.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex items-center justify-center gap-2 text-primary hover:text-accent-hover font-medium py-2 text-sm transition-colors"
+                  >
+                    <Globe className="w-4 h-4" />
+                    Visit Website
+                  </a>
+                )}
+              </div>
+
+              {operator.bookingPlatform && operator.bookingPlatform !== "none" && operator.bookingPlatform !== "direct" && (
+                <p className="text-xs text-center text-gray-400 mt-3 flex items-center justify-center gap-1">
+                  Powered by {operator.bookingPlatform.charAt(0).toUpperCase() + operator.bookingPlatform.slice(1)}
+                </p>
+              )}
+            </div>
+
+            <div className="bg-white rounded-xl p-5 border border-gray-200 shadow-lg shadow-gray-200/50">
+              <h4 className="text-sm font-bold text-primary mb-3">Contact Details</h4>
+              <ul className="space-y-3">
+                {operator.phone && (
+                  <li className="flex items-center gap-3">
+                    <Phone className="w-4 h-4 text-primary" />
+                    <a href={`tel:${operator.phone}`} className="text-sm text-gray-600 hover:text-primary">
+                      {operator.phone}
+                    </a>
+                  </li>
+                )}
+                {operator.email && (
+                  <li className="flex items-center gap-3">
+                    <Mail className="w-4 h-4 text-primary" />
+                    <a href={`mailto:${operator.email}?subject=${encodeURIComponent("Enquiry from Adventure Wales")}`} className="text-sm text-gray-600 hover:text-primary">
+                      {operator.email}
+                    </a>
+                  </li>
+                )}
+              </ul>
+
+              <div className="mt-4 space-y-2">
+                {operator.website && (
+                  <a 
+                    href={operator.website} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 w-full py-2.5 bg-primary hover:bg-primary/90 text-white font-semibold rounded-xl text-sm transition-colors"
+                  >
+                    <Globe className="w-4 h-4" />
+                    Visit Website
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                )}
+                {operator.email && (
+                  <a 
+                    href={`mailto:${operator.email}?subject=${encodeURIComponent("Enquiry from Adventure Wales")}`}
+                    className="flex items-center justify-center gap-2 w-full py-2.5 border-2 border-primary text-primary font-semibold rounded-xl text-sm hover:bg-primary/5 transition-colors"
+                  >
+                    <Mail className="w-4 h-4" />
+                    Email Directly
+                  </a>
+                )}
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-xl border border-gray-200 p-6">
+              <h3 className="text-base font-bold text-primary mb-4">Send a Quick Enquiry</h3>
+              <form className="flex flex-col gap-4">
+                <div>
+                  <label className="block text-xs font-semibold text-gray-700 mb-1">Your Name</label>
+                  <input 
+                    type="text"
+                    className="w-full rounded-lg bg-gray-50 border-gray-200 text-sm focus:ring-primary focus:border-primary px-4 py-2.5"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold text-gray-700 mb-1">Email</label>
+                  <input 
+                    type="email"
+                    className="w-full rounded-lg bg-gray-50 border-gray-200 text-sm focus:ring-primary focus:border-primary px-4 py-2.5"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold text-gray-700 mb-1">Message</label>
+                  <textarea 
+                    className="w-full rounded-lg bg-gray-50 border-gray-200 text-sm focus:ring-primary focus:border-primary resize-none px-4 py-2.5"
+                    rows={3}
+                    placeholder="I'm interested in..."
+                  />
+                </div>
+                <button 
+                  type="button"
+                  className="w-full bg-accent-hover hover:bg-accent-hover/90 text-white font-bold py-3 px-4 rounded-xl transition-colors mt-2"
+                >
+                  Send Enquiry
+                </button>
+                {operator.email && (
+                  <p className="text-xs text-center text-gray-500 mt-3">
+                    Or email us directly:{" "}
+                    <a 
+                      href={`mailto:${operator.email}?subject=${encodeURIComponent("Enquiry from Adventure Wales")}`}
+                      className="text-primary hover:text-accent-hover underline font-medium"
+                    >
+                      {operator.email}
+                    </a>
+                  </p>
+                )}
+                {!operator.email && (
+                  <p className="text-xs text-center text-gray-400">
+                    Or call {operator.phone || "directly"}
+                  </p>
+                )}
+              </form>
+            </div>
+
+            {(operator.lat && operator.lng) && (
+              <div className="rounded-xl overflow-hidden shadow-sm border border-gray-200">
+                <MapView
+                  markers={[{
+                    id: `operator-${operator.id}`,
+                    lat: parseFloat(String(operator.lat)),
+                    lng: parseFloat(String(operator.lng)),
+                    type: "operator" as const,
+                    title: operator.name,
+                    subtitle: operator.address?.split(",")[0] || undefined,
+                    link: `/directory/${operator.slug}`,
+                  }]}
+                  height="200px"
+                  zoom={13}
+                  interactive={false}
+                />
+                <a
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${operator.lat},${operator.lng}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center py-2 text-xs font-medium text-accent-hover hover:bg-gray-50 transition-colors border-t border-gray-200"
+                >
+                  Get Directions →
+                </a>
+              </div>
+            )}
           </div>
 
           {/* Sidebar Column (desktop only) */}

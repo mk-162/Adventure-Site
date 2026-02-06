@@ -54,7 +54,7 @@ export default async function DestinationsPage() {
               className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
               style={{ backgroundImage: `url('/images/regions/${regions[0].slug}-hero.jpg')` }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6 lg:p-10">
               <span className="bg-accent-hover text-white text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block">
                 Featured
@@ -107,7 +107,7 @@ export default async function DestinationsPage() {
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                 style={{ backgroundImage: `url('/images/regions/${region.slug}-hero.jpg')` }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 p-5">
                 <h3 className="text-xl font-bold text-white mb-1">{region.name}</h3>
                 <p className="text-white/70 text-sm flex items-center gap-1">

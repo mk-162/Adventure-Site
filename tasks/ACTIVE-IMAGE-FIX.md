@@ -8,7 +8,7 @@ Audit and fix images for all 23 activity types. Check hero + all variants (02-06
 
 | # | Activity Type | Priority | Status |
 |---|---------------|----------|--------|
-| 1 | mountain-biking | 🔴 HIGH | ❌ All wrong (confirmed) |
+| 1 | mountain-biking | 🔴 HIGH | ✅ FIXED (6 verified Welsh MTB shots) |
 | 2 | rafting | 🔴 HIGH | ❌ Reported wrong |
 | 3 | hiking | 🔴 HIGH | ⏳ Needs audit |
 | 4 | surfing | 🔴 HIGH | ⏳ Needs audit |

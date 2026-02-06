@@ -55,8 +55,29 @@ Check which component uses the image:
 grep -r "filename" src/
 ```
 
+## Itinerary Thumbnails (Homepage)
+
+**Problem:** Itineraries on homepage have no dedicated images — falling back to region heroes which may be wrong or missing.
+
+**Fix options:**
+1. Add `heroImage` to each itinerary in DB
+2. Create `/images/itineraries/{slug}-hero.jpg` for each
+3. Use combo images (activity+region) as fallback
+
+**Itineraries to image:**
+- snowdonia-adventure-weekend
+- pembrokeshire-coasteering-break
+- family-adventure-week
+- (check full list in DB)
+
+Each itinerary image should:
+- Show the main activity of that itinerary
+- Be recognisably in the right region
+- Be pro quality action shot
+
 ## Priority
 
 1. Homepage CTA images (visible on main page)
-2. About page images
-3. Other misc images
+2. **Itinerary thumbnails** (visible on homepage)
+3. About page images
+4. Other misc images

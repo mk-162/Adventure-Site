@@ -232,24 +232,21 @@ export function ActivityCard({
   const isSightseeing = activityType?.slug === "sightseeing";
   const isPassive = isAttraction || isSightseeing;
 
-  // Simple listing card - minimal info
+  // Simple listing card - minimal info, no link
   if (variant === "listing") {
     return (
-      <Link
-        href={`/activities/${activity.slug}`}
-        className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200"
-      >
+      <div className="bg-white rounded-xl overflow-hidden shadow-sm">
         {/* Image */}
         <div className="relative h-36 overflow-hidden">
           <div
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+            className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url('${imageUrl}')` }}
           />
         </div>
 
         {/* Content */}
         <div className="p-3">
-          <h3 className="font-semibold text-primary text-sm group-hover:text-accent-hover transition-colors line-clamp-2 mb-1">
+          <h3 className="font-semibold text-primary text-sm line-clamp-2 mb-1">
             {activity.name}
           </h3>
           
@@ -273,7 +270,7 @@ export function ActivityCard({
             )}
           </div>
         </div>
-      </Link>
+      </div>
     );
   }
 

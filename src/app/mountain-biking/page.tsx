@@ -6,6 +6,7 @@ import { GradingGuide } from "@/components/mtb/GradingGuide";
 import { SeasonGuide } from "@/components/mtb/SeasonGuide";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { RegionMap } from "@/components/ui/RegionMap";
+import { QuickAnswerBox, HubSidebar } from "@/components/activity-hub";
 import { getActivities, getEvents, getActivityTypeBySlug, getItineraries, getPostsForSidebar } from "@/lib/queries";
 import { 
   Mountain, 
@@ -209,31 +210,106 @@ export default async function MountainBikingHubPage() {
       {/* Spacer for quick answer box */}
       <div className="h-20 md:h-16" />
 
-      {/* Breadcrumbs */}
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <ol className="flex items-center gap-2 text-sm text-gray-600">
-          <li>
-            <Link href="/" className="hover:text-primary transition-colors">
-              Home
-            </Link>
-          </li>
-          <li>/</li>
-          <li className="text-primary font-medium">Mountain Biking in Wales</li>
-        </ol>
-      </nav>
+      {/* 2-Column Layout */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Breadcrumbs */}
+        <nav className="mb-6">
+          <ol className="flex items-center gap-2 text-sm text-gray-600">
+            <li>
+              <Link href="/" className="hover:text-primary transition-colors">
+                Home
+              </Link>
+            </li>
+            <li>/</li>
+            <li className="text-primary font-medium">Mountain Biking in Wales</li>
+          </ol>
+        </nav>
 
-      {/* Introduction */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="prose prose-lg max-w-4xl mx-auto">
-          {mountainBikingHub.introduction.split('\n\n').map((paragraph, i) => (
-            <p key={i} className="text-gray-700 leading-relaxed mb-4">
-              {paragraph}
-            </p>
-          ))}
+        <div className="flex gap-8 lg:gap-12">
+          {/* Main Content */}
+          <main className="flex-1 min-w-0">
+            {/* Quick Answer Box - Where Should I Go? */}
+            <div className="mb-10">
+              <QuickAnswerBox
+                bestForBeginners={{
+                  label: "Best for Beginners",
+                  venue: "Coed Llandegla",
+                  link: "/north-wales/things-to-do/mountain-biking",
+                  reason: "Progressive trails, great facilities, confidence-building",
+                }}
+                bestOverall={{
+                  label: "Best Overall",
+                  venue: "BikePark Wales",
+                  link: "/brecon-beacons/things-to-do/mountain-biking",
+                  reason: "40+ trails, all grades, UK's biggest uplift park",
+                }}
+                bestValue={{
+                  label: "Best Value",
+                  venue: "Coed y Brenin",
+                  link: "/snowdonia/things-to-do/mountain-biking",
+                  reason: "Free world-class trails, pay only for parking",
+                }}
+                bestForFamilies={{
+                  label: "Best for Families",
+                  venue: "Afan Forest Park",
+                  link: "/south-wales/things-to-do/mountain-biking",
+                  reason: "Mix of grades, scenic, good cafe",
+                }}
+                bestForExperts={{
+                  label: "Best for Experts",
+                  venue: "Antur Stiniog",
+                  link: "/snowdonia/things-to-do/mountain-biking",
+                  reason: "Steepest DH in Wales, slate quarry gnar",
+                }}
+              />
+            </div>
+
+            {/* Introduction */}
+            <section className="mb-12" id="overview">
+              <div className="prose prose-lg max-w-none">
+                {mountainBikingHub.introduction.split('\n\n').map((paragraph, i) => (
+                  <p key={i} className="text-gray-700 leading-relaxed mb-4">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </section>
+          </main>
+
+          {/* Sidebar */}
+          <HubSidebar
+            activityType="mountain-biking"
+            navItems={[
+              { id: "overview", label: "Overview" },
+              { id: "trail-centres", label: "Trail Centres" },
+              { id: "map", label: "Map" },
+              { id: "regions", label: "By Region" },
+              { id: "grades", label: "Trail Grades" },
+              { id: "seasons", label: "When to Visit" },
+              { id: "videos", label: "Videos" },
+              { id: "experiences", label: "Book Experiences" },
+              { id: "faqs", label: "FAQs" },
+            ]}
+            primaryCTA={{
+              label: "Find Trail Centres",
+              href: "#trail-centres",
+              variant: "accent",
+            }}
+            secondaryCTA={{
+              label: "Book MTB Experience",
+              href: "/activities/type/mountain-biking",
+            }}
+            weather={{
+              temp: 12,
+              condition: "mixed",
+              wind: 15,
+              location: "Snowdonia",
+            }}
+          />
         </div>
-      </section>
+      </div>
 
-      {/* Trail Centre League Table */}
+      {/* Trail Centre League Table - Full Width */}
       <section id="trail-centres" className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

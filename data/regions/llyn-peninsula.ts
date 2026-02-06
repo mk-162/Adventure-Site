@@ -22,7 +22,7 @@ Adventure here means solitude. The surfing at Porth Oer (Whistling Sands) and Po
     { label: 'Welsh Language', value: '70%+ first language', detail: 'One of the most Welsh-speaking areas' },
     { label: 'Main Villages', value: 'Abersoch, Aberdaron, Pwllheli', detail: 'Sailing town, pilgrimage end, market town' },
     { label: 'Whistling Sands', value: 'Porth Oer', detail: 'Beach that squeaks when you walk on it' },
-    { label: 'Tre\'r Ceiri', value: 'Iron Age hillfort', detail: '150 stone huts, 1800 years old' },
+    { label: "Tre'r Ceiri", value: "Iron Age hillfort", detail: "150 stone huts, 1800 years old" },
     { label: 'Distance from Snowdonia', value: '30-45 minutes', detail: 'Beyond the mountains, into the sea' },
     { label: 'Population', value: '~20,000', detail: 'Sparse, agricultural, traditional' },
   ],

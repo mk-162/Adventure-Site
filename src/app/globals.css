@@ -17,6 +17,8 @@
   --muted: #f8fafc;
   --muted-foreground: #64748b;
   --border: #e2e8f0;
+  --header-height: 64px;
+  --bottom-bar-height: 88px;
 }
 
 html, body {
@@ -46,6 +48,29 @@ body {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+/* Leaflet stacking fixes */
+.leaflet-container,
+.leaflet-pane {
+  z-index: 0;
+}
+
+.leaflet-control-container,
+.leaflet-top,
+.leaflet-bottom,
+.leaflet-control {
+  z-index: 10;
+}
+
+.leaflet-popup {
+  z-index: 20;
+}
+
+/* Utility for fixed bottom bars */
+.has-bottom-bar {
+  padding-bottom: calc(var(--bottom-bar-height) + env(safe-area-inset-bottom));
 }
 
 /* Custom scrollbar */

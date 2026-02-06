@@ -180,6 +180,115 @@ export function ItineraryView({ stops, accommodations = [], itineraryName, itine
 
       </div>
 
+      {/* Mobile Sidebar Content */}
+      <div className="lg:hidden space-y-6">
+        {(durationDays || difficulty || bestSeason || region || stops.length > 0) && (
+          <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
+            <div className="bg-gradient-to-r from-primary to-[#2d5a73] px-5 py-3">
+              <h3 className="text-white font-bold text-sm flex items-center gap-2">
+                <Map className="w-4 h-4" />
+                Trip Overview
+              </h3>
+            </div>
+            <div className="p-5 space-y-3">
+              {durationDays && (
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center">
+                    <Clock className="w-4 h-4 text-blue-600" />
+                  </div>
+                  <div>
+                    <div className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Duration</div>
+                    <div className="text-sm font-bold text-primary">{durationDays} day{durationDays !== 1 ? "s" : ""}</div>
+                  </div>
+                </div>
+              )}
+              {difficulty && (
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-orange-50 flex items-center justify-center">
+                    <Mountain className="w-4 h-4 text-orange-600" />
+                  </div>
+                  <div>
+                    <div className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Difficulty</div>
+                    <div className="text-sm font-bold text-primary capitalize">{difficulty}</div>
+                  </div>
+                </div>
+              )}
+              {bestSeason && (
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-green-50 flex items-center justify-center">
+                    <Sun className="w-4 h-4 text-green-600" />
+                  </div>
+                  <div>
+                    <div className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Best Season</div>
+                    <div className="text-sm font-bold text-primary">{bestSeason}</div>
+                  </div>
+                </div>
+              )}
+              {(priceEstimateFrom || priceEstimateTo) && (
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-amber-50 flex items-center justify-center">
+                    <PoundSterling className="w-4 h-4 text-amber-600" />
+                  </div>
+                  <div>
+                    <div className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Budget Estimate</div>
+                    <div className="text-sm font-bold text-primary">
+                      {priceEstimateFrom && priceEstimateTo
+                        ? `£${priceEstimateFrom}–£${priceEstimateTo}`
+                        : `From £${priceEstimateFrom || priceEstimateTo}`}
+                    </div>
+                  </div>
+                </div>
+              )}
+              {region && (
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-purple-50 flex items-center justify-center">
+                    <MapPin className="w-4 h-4 text-purple-600" />
+                  </div>
+                  <div>
+                    <div className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Region</div>
+                    <div className="text-sm font-bold text-primary">{region.name}</div>
+                  </div>
+                </div>
+              )}
+              {stops.length > 0 && (
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-teal-50 flex items-center justify-center">
+                    <Star className="w-4 h-4 text-teal-600" />
+                  </div>
+                  <div>
+                    <div className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Stops</div>
+                    <div className="text-sm font-bold text-primary">
+                      {stops.length} stop{stops.length !== 1 ? "s" : ""} across {days.length} day{days.length !== 1 ? "s" : ""}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
+        {region?.lat && region?.lng && (
+          <WeatherWidget 
+            lat={parseFloat(String(region.lat))} 
+            lng={parseFloat(String(region.lng))} 
+            regionName={region.name} 
+            compact
+          />
+        )}
+        {region?.slug && (
+          <ClimateChart regionSlug={region.slug} compact />
+        )}
+        <div id="itinerary-costs">
+          <CostBreakdown stops={stops} mode={mode} itineraryName={itineraryName} itineraryId={itineraryId} />
+        </div>
+        {itinerarySlug && (
+          <ThingsToBook stops={stops} itinerarySlug={itinerarySlug} mode={mode} />
+        )}
+        {itineraryName && (
+          <TripNotes itinerarySlug={itineraryName.toLowerCase().replace(/[^a-z0-9]+/g, "-")} />
+        )}
+      </div>
+
       {/* Right Column: Sidebar */}
       <aside className="hidden lg:block lg:col-span-4 space-y-6">
          {/* Quick Fact Sheet */}

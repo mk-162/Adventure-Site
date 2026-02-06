@@ -67,7 +67,7 @@ export default async function ItineraryDetailPage({ params }: Props) {
   );
 
   return (
-    <div className="min-h-screen pt-4 lg:pt-6 pb-24 lg:pb-12 bg-gray-50/50">
+    <div className="min-h-screen pt-4 lg:pt-6 pb-24 lg:pb-12 bg-gray-50/50 has-bottom-bar">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs */}
         <div className="flex items-center gap-2 text-sm text-gray-500 mb-4 lg:mb-6">

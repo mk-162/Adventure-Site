@@ -53,7 +53,7 @@ export default async function SurfingHubPage() {
 
   // Fetch surf-related events
   const allSurfTypes = ["Surfing", "Surf", "Watersports"];
-  const surfEvents = await getEvents({ limit: 50 });
+  const { events: surfEvents } = await getEvents({ limit: 50 });
   const events = surfEvents.filter(e => 
     allSurfTypes.some(t => e.event.type?.includes(t)) || 
     e.event.name?.toLowerCase().includes("surf") ||

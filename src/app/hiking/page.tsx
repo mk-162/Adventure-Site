@@ -54,7 +54,7 @@ export default async function HikingHubPage() {
 
   // Fetch hiking-related events
   const allHikingTypes = ["Walking", "Hiking", "Trail", "Mountain", "Fell"];
-  const hikingEvents = await getEvents({ limit: 50 });
+  const { events: hikingEvents } = await getEvents({ limit: 50 });
   const events = hikingEvents.filter(e => 
     allHikingTypes.some(t => e.event.type?.includes(t)) || 
     e.event.name?.toLowerCase().includes("walk") ||

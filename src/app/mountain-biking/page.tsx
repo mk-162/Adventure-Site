@@ -52,7 +52,7 @@ export default async function MountainBikingHubPage() {
 
   // Fetch MTB-related events
   const allMtbTypes = ["MTB Enduro", "MTB Downhill", "Cycling", "Sportive"];
-  const mtbEvents = await getEvents({ limit: 50 });
+  const { events: mtbEvents } = await getEvents({ limit: 50 });
   const events = mtbEvents.filter(e => 
     allMtbTypes.some(t => e.event.type?.includes(t)) || 
     e.event.name?.toLowerCase().includes("mtb") || 

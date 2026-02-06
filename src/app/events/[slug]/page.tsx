@@ -45,7 +45,7 @@ export default async function EventPage({ params }: Props) {
   const { event, region } = data;
 
   // Get related events + nearby accommodation/activities
-  const [relatedEvents, nearbyAccommodation, nearbyActivities] = await Promise.all([
+  const [{ events: relatedEvents }, nearbyAccommodation, nearbyActivities] = await Promise.all([
     getEvents({ limit: 4 }),
     region ? getAccommodationByRegion(region.slug, 3) : Promise.resolve([]),
     region ? getActivitiesByRegion(region.slug, 3) : Promise.resolve([]),

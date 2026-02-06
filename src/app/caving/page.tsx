@@ -292,7 +292,7 @@ export default async function CavingHubPage() {
             }}
             weather={{
               temp: 10,
-              condition: "underground",
+              condition: "cloudy",
               wind: 0,
               location: "Brecon Beacons",
             }}

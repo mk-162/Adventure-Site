@@ -452,6 +452,7 @@ export async function getAccommodationByRegion(regionSlug: string, limit?: numbe
 export async function getEvents(options?: {
   regionId?: number;
   type?: string;
+  month?: string;
   limit?: number;
   offset?: number;
 }) {
@@ -461,8 +462,30 @@ export async function getEvents(options?: {
     conditions.push(eq(events.regionId, options.regionId));
   }
   if (options?.type) {
-    conditions.push(eq(events.type, options.type));
+    conditions.push(ilike(events.type, `%${options.type}%`));
   }
+  if (options?.month) {
+    // options.month is 'YYYY-MM'
+    const startDate = new Date(`${options.month}-01`);
+    const endDate = new Date(startDate);
+    endDate.setMonth(endDate.getMonth() + 1);
+
+    const dateFilter = and(
+      gte(events.dateStart, startDate),
+      sql`${events.dateStart} < ${endDate.toISOString()}`
+    );
+    if (dateFilter) {
+      conditions.push(dateFilter);
+    }
+  }
+
+  // Count query
+  const countResult = await db
+    .select({ count: sql<number>`count(*)` })
+    .from(events)
+    .where(and(...conditions));
+
+  const total = Number(countResult[0]?.count || 0);
 
   let query = db
     .select({
@@ -472,13 +495,31 @@ export async function getEvents(options?: {
     .from(events)
     .leftJoin(regions, eq(events.regionId, regions.id))
     .where(and(...conditions))
-    .orderBy(asc(events.name));
+    .orderBy(asc(events.dateStart), asc(events.name));
 
   if (options?.limit) {
     query = query.limit(options.limit) as typeof query;
   }
+  if (options?.offset) {
+    query = query.offset(options.offset) as typeof query;
+  }
 
-  return query;
+  const data = await query;
+  return { events: data, total };
+}
+
+export async function getEventMonths() {
+  const result = await db
+    .select({
+      month: sql<string>`to_char(${events.dateStart}, 'YYYY-MM')`,
+      label: sql<string>`to_char(${events.dateStart}, 'Month YYYY')`,
+    })
+    .from(events)
+    .where(eq(events.status, "published"))
+    .groupBy(sql`to_char(${events.dateStart}, 'YYYY-MM')`, sql`to_char(${events.dateStart}, 'Month YYYY')`)
+    .orderBy(desc(sql`to_char(${events.dateStart}, 'YYYY-MM')`));
+
+  return result.map(r => ({ value: r.month, label: r.label }));
 }
 
 export async function getEventBySlug(slug: string) {

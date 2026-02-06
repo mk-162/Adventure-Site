@@ -59,7 +59,7 @@ export default async function CoasteeringHubPage() {
 
   // Fetch related events
   const allTypes = ["Coasteering", "Adventure", "Watersports"];
-  const allEvents = await getEvents({ limit: 50 });
+  const { events: allEvents } = await getEvents({ limit: 50 });
   const events = allEvents.filter(e => 
     allTypes.some(t => e.event.type?.includes(t)) || 
     e.event.name?.toLowerCase().includes("coasteer")

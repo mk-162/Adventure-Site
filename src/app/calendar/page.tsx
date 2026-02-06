@@ -34,7 +34,7 @@ export default async function CalendarPage({ searchParams }: PageProps) {
   const view = params.view || "list"; // 'list' | 'calendar' | 'map'
 
   // Fetch all events with region data
-  const allEvents = await getEvents();
+  const { events: allEvents } = await getEvents();
 
   return (
     <div className="min-h-screen bg-gray-50 pb-20">

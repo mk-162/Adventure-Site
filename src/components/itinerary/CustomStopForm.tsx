@@ -114,7 +114,7 @@ export function CustomStopForm({ itinerarySlug, dayNumber }: CustomStopFormProps
               autoFocus
             />
             <button
-              onClick={addStop}
+              onClick={() => addStop()}
               disabled={!text.trim()}
               className="px-3 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90 disabled:opacity-50"
             >

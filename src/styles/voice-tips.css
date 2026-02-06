@@ -1,0 +1,262 @@
+/* Voice Tips Component Styles */
+
+/* ===== Animations ===== */
+@keyframes voice-tips-pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+@keyframes voice-tips-wave {
+  0%, 100% {
+    transform: scaleY(0.4);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes voice-tips-wave-fast {
+  0%, 100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes voice-tips-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes voice-tips-zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes voice-tips-countdown-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* ===== Utility Classes ===== */
+.voice-tips-pulse-recording {
+  animation: voice-tips-pulse 1.5s infinite;
+}
+
+.voice-tips-wave-bar {
+  animation: voice-tips-wave 1.2s ease-in-out infinite;
+}
+
+.voice-tips-wave-bar-fast {
+  animation: voice-tips-wave-fast 0.6s ease-in-out infinite;
+}
+
+.voice-tips-fade-in {
+  animation: voice-tips-fade-in 0.3s ease-out forwards;
+}
+
+.voice-tips-zoom-in {
+  animation: voice-tips-zoom-in 0.3s ease-out forwards;
+}
+
+.voice-tips-countdown-warning {
+  animation: voice-tips-countdown-pulse 0.5s ease-in-out infinite;
+}
+
+/* ===== Overlay Backdrop ===== */
+.voice-tips-overlay {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: rgba(15, 23, 42, 0.6);
+}
+
+/* ===== Recording Waveform Container ===== */
+.voice-tips-waveform {
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 58, 76, 0.05),
+    rgba(30, 58, 76, 0.02)
+  );
+  border: 1px solid rgba(30, 58, 76, 0.1);
+}
+
+/* ===== Playback Progress Bar ===== */
+.voice-tips-progress-bar {
+  background: linear-gradient(
+    to right,
+    #1e3a4c 0%,
+    #1e3a4c var(--progress, 0%),
+    #e2e8f0 var(--progress, 0%),
+    #e2e8f0 100%
+  );
+  transition: background 0.1s ease;
+}
+
+/* ===== Card Styles ===== */
+.voice-tips-card {
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.voice-tips-card:hover {
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.08);
+}
+
+.voice-tips-card.is-playing {
+  border-color: rgba(30, 58, 76, 0.3);
+  box-shadow: 0 0 0 2px rgba(30, 58, 76, 0.1);
+}
+
+/* ===== Play Button ===== */
+.voice-tips-play-btn {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.voice-tips-play-btn:hover {
+  transform: scale(1.05);
+}
+
+.voice-tips-play-btn:active {
+  transform: scale(0.95);
+}
+
+/* ===== Vote Button Animation ===== */
+.voice-tips-vote-btn {
+  transition: color 0.2s ease, transform 0.15s ease;
+}
+
+.voice-tips-vote-btn:hover {
+  transform: scale(1.1);
+}
+
+.voice-tips-vote-btn:active {
+  transform: scale(0.9);
+}
+
+.voice-tips-vote-btn.voted {
+  color: var(--color-primary);
+}
+
+/* ===== Duration Badge ===== */
+.voice-tips-duration-badge {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ===== Speed Control Button ===== */
+.voice-tips-speed-btn {
+  font-variant-numeric: tabular-nums;
+  min-width: 2.5rem;
+}
+
+/* ===== Modal Gradient Header ===== */
+.voice-tips-modal-header {
+  background: linear-gradient(
+    to right,
+    #1e3a4c,
+    #2a5470
+  );
+}
+
+/* ===== Custom Scrollbar for Tips List ===== */
+.voice-tips-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.voice-tips-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.voice-tips-list::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 20px;
+}
+
+/* Dark mode scrollbar */
+@media (prefers-color-scheme: dark) {
+  .voice-tips-list::-webkit-scrollbar-thumb {
+    background-color: #4b5563;
+  }
+}
+
+/* ===== Empty State ===== */
+.voice-tips-empty {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 58, 76, 0.03),
+    rgba(30, 58, 76, 0.01)
+  );
+  border: 2px dashed rgba(30, 58, 76, 0.15);
+}
+
+/* ===== Success Animation ===== */
+@keyframes voice-tips-success-check {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.voice-tips-success-icon {
+  animation: voice-tips-success-check 0.5s ease-out forwards;
+}
+
+/* ===== Skeleton Loading ===== */
+@keyframes voice-tips-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.voice-tips-skeleton {
+  background: linear-gradient(
+    90deg,
+    #f1f5f9 0%,
+    #e2e8f0 50%,
+    #f1f5f9 100%
+  );
+  background-size: 200% 100%;
+  animation: voice-tips-shimmer 1.5s infinite;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 640px) {
+  .voice-tips-waveform {
+    height: 100px;
+  }
+}

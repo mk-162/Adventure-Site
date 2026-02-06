@@ -1,0 +1,114 @@
+{
+  "name": "BikePark Wales",
+  "slug": "bikepark-wales-gethin-woods",
+  "alternateNames": ["BPW", "Gethin Woods Bike Park"],
+  "contact": {
+    "phone": "01685 709450",
+    "email": "reception@bikeparkwales.com",
+    "website": "https://www.bikeparkwales.com"
+  },
+  "location": {
+    "address": {
+      "line1": "Gethin Woodland Centre",
+      "line2": "Abercanaid",
+      "city": "Merthyr Tydfil",
+      "postcode": "CF48 1YZ",
+      "country": "Wales"
+    },
+    "coordinates": {
+      "lat": 51.721688,
+      "lng": -3.376937
+    },
+    "plusCode": "9C3RPJCF+M6"
+  },
+  "images": {
+    "logo": "https://www.bikeparkwales.com/images/BPW_Logo_RGB_thick_border.svg",
+    "logoFallback": "https://www.bikeparkwales.com/images/Favicon_sm%201.png",
+    "cover": "https://bpwcontent.imgix.net/BIKEPARKWALES_2024_IANLEANPHOTO_393_beb9727ce3.jpg",
+    "gallery": [
+      "https://bpwcontent.imgix.net/BPW_SHOOT_1_IANLEANPHOTO_2024_83_4601a27c72.jpg",
+      "https://bpwcontent.imgix.net/NEW_BPW_SEPT_2025_124_16899a26b0.jpg",
+      "https://bpwcontent.imgix.net/BIKEPARKWALES_2024_IANLEANPHOTO_296_d3ef8aebbe.jpg",
+      "https://bpwcontent.imgix.net/AL_BIKEPARK_WALES_14923101_a8cefe4c1a.JPG",
+      "https://bpwcontent.imgix.net/BIKEPARKWALES_2024_IANLEANPHOTO_30_62dc9521a6.jpg",
+      "https://bpwcontent.imgix.net/20240717fod156_6363815c69.jpg",
+      "https://bpwcontent.imgix.net/BPW_SHOOT_1_IANLEANPHOTO_2024_265_0455614ee0.jpg"
+    ]
+  },
+  "description": {
+    "short": "The UK's premier mountain bike park featuring 50+ trails across 5 difficulty levels, with vehicular uplift service and world-class facilities in the Welsh valleys.",
+    "full": "BikePark Wales is the UK's greatest and most diverse selection of all-weather mountain bike trails, set in the stunning Gethin Woods near Merthyr Tydfil. Picture a ski resort, remove the snow and replace the pistes with an array of sweeping, flowy bike trails meandering to the bottom of the mountain—add a bunch of adrenalin and a big sprinkle of fun, and you're pretty much there.\n\nFounded in 2013 by passionate mountain bikers Rowan Sorrell and Martin Astley, BikePark Wales has grown into a bucket-list destination for riders worldwide. The park offers over 50 trails spanning 50km+ of downhill terrain, catering to everyone from complete beginners on the famous Kermit trail to seasoned professionals tackling technical black runs. A vehicular uplift service transports you to the top, maximising your riding time and descent count.\n\nBeyond the trails, BikePark Wales provides complete packages including Trek bike and equipment hire, nationally acclaimed coaching from experienced instructors, and a welcoming on-site café. The park is committed to making mountain biking accessible to all—from adaptive bike passes to beginner packages—while constantly evolving and improving the riding experience. Whether you're here for a single day of thrills or becoming an annual member, BikePark Wales delivers an exhilarating way to spend time in the Welsh mountains."
+  },
+  "reviews": {
+    "google": {
+      "rating": 4.8,
+      "reviewCount": 2986,
+      "url": "https://www.google.com/maps/place/BikePark+Wales/",
+      "lastUpdated": "2026-02-06"
+    },
+    "highlights": [
+      "Disneyland for bikes",
+      "Amazing place, well run, well set up with an amazing selection of trails",
+      "Just top quality every time we come"
+    ]
+  },
+  "features": {
+    "trails": {
+      "count": "50+",
+      "totalDistance": "50km+",
+      "difficulties": 5,
+      "types": ["Downhill", "Flow", "Technical", "Beginner", "Expert"]
+    },
+    "services": [
+      "Vehicular uplift service",
+      "Mountain bike hire (Enduro, Downhill, E-bikes)",
+      "Protective gear rental",
+      "Professional coaching",
+      "Guided sessions",
+      "On-site café (Woodland Cafe)",
+      "Bike workshop",
+      "Photography service"
+    ],
+    "passes": [
+      {
+        "name": "Uplift Pass",
+        "description": "Maximise your downhill fun with bus transport to the top"
+      },
+      {
+        "name": "Pedal Access Pass",
+        "description": "Earn your turns at your own pace, options for e-bikes and standard bikes",
+        "priceFrom": 19
+      },
+      {
+        "name": "Annual Members Pass",
+        "description": "Regular access with exclusive perks, cheaper than a gym membership"
+      }
+    ],
+    "accessibility": [
+      "Wheelchair-accessible entrance",
+      "Adaptive Bike Pass available"
+    ]
+  },
+  "operatingHours": {
+    "note": "Typically Thursday-Monday, varies by season",
+    "weekendOpen": "08:00"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/BikeParkWales/",
+    "instagram": "https://www.instagram.com/bikepark_wales/",
+    "youtube": "https://www.youtube.com/@BikeParkWalesOfficial"
+  },
+  "founded": "2013-08-24",
+  "founders": ["Rowan Sorrell", "Martin Astley", "Liz Sorrell", "Anna Astley"],
+  "activityTypes": ["Mountain Biking", "Downhill MTB", "Enduro"],
+  "priceRange": "££",
+  "researchMetadata": {
+    "researchedAt": "2026-02-06T23:15:00Z",
+    "sources": [
+      "https://www.bikeparkwales.com",
+      "https://www.bikeparkwales.com/about/about-us",
+      "Google Maps"
+    ],
+    "confidence": "high"
+  }
+}

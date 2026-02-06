@@ -1,35 +1,35 @@
-name,slug,website,email,phone,regions,category,service_types,description,lat,lng,address,group_friendly
-BikePark Wales,bikepark-wales,https://www.bikeparkwales.com,info@bikeparkwales.com,,South Wales,activity_provider,Uplift Service|Coaching|Equipment Hire|Women's Specific,"The UK's premier mountain bike park with uplift service and diverse trails.",51.717,-3.361,"Merthyr Tydfil",true
-Oneplanet Adventure,oneplanet-adventure,https://oneplanetadventure.com,hello@oneplanetadventure.com,,North Wales,activity_provider,Coaching|Guided Rides|Youth Coaching|Women's Specific,"Located in Coed Llandegla Forest, offering courses and guided rides.",53.056,-3.212,"Llandegla",true
-Antur Stiniog,antur-stiniog,https://www.anturstiniog.com,,,North Wales,activity_provider,Uplift Service,"Uplift assisted downhill mountain biking in Snowdonia.",52.994,-3.939,"Blaenau Ffestiniog",true
-Dyfi Bike Park,dyfi-bike-park,https://www.dyfibikepark.co.uk,,,Mid Wales,activity_provider,Uplift Service|Coaching,"Created by the Athertons, offering world-class downhill trails.",52.625,-3.858,"Machynlleth",true
-Beics Brenin,beics-brenin,https://www.beicsbrenin.co.uk,,,North Wales,activity_provider,Equipment Hire|Coaching,"The trail head bike shop at Coed y Brenin.",52.809,-3.896,"Dolgellau",false
-Campbell Coaching,campbell-coaching,https://campbellcoaching.eu,,,South Wales,activity_provider,Skills Coaching|Women's Specific|Youth Coaching,"Professional MTB skills coaching and leadership awards.",51.650,-3.800,"Afan Forest",true
-WyeMTB,wye-mtb,https://wyemtb.co.uk,,,Mid Wales,activity_provider,Guided Rides|Skills Coaching|Uplift Service,"Mountain bike coaching and guiding in the Wye Valley and Brecon Beacons.",51.850,-2.700,"Monmouth",true
-Tom Hutton MTB,tom-hutton-mtb,https://tomhuttonmtb.co.uk,,,North Wales,activity_provider,Multi-day Tours|Guided Rides,"Specialists in big mountain guiding and adventures in Snowdonia.",53.073,-4.041,"Snowdonia",true
-Mountain Bike Wales,mountain-bike-wales,https://www.mtb.wales,,,Mid Wales,activity_provider,Guided Rides|Multi-day Tours,"Guided mountain biking holidays and weekends in Mid Wales.",52.415,-3.611,"Machynlleth",true
-Afan A Blast,afan-a-blast,,,,South Wales,activity_provider,Coaching|Guided Rides,"Coaching and guiding services in the Afan Valley.",51.644,-3.738,"Afan Valley",true
-Pedal MTB,pedal-mtb,https://pedalmtb.co.uk,,,North Wales,activity_provider,Skills Coaching|Guided Rides|Women's Specific,"MTB instruction and guiding in North Wales.",53.136,-3.816,"Betws-y-Coed",true
-Black Mountains Cycle Centre,black-mountains-cycle-centre,https://blackmountainscyclecentre.com,,,South Wales,activity_provider,Uplift Service,"Downhill and freeride centre in the Black Mountains.",51.933,-3.064,"Abergavenny",true
-Ride High MTB,ride-high-mtb,,,,North Wales,activity_provider,Skills Coaching,"Mountain bike skills coaching.",53.1,-3.8,"North Wales",false
-Pro Ride MTB,pro-ride-mtb,,,,North Wales,activity_provider,Skills Coaching,"Coaching and skills development.",53.1,-3.8,"Llandegla",false
-Adrenaline MTB,adrenaline-mtb,,,,North Wales,activity_provider,Skills Coaching|Guided Rides,"Adventure and coaching provider.",53.0,-3.9,"Snowdonia",true
-Gaynor Lee Coaching,gaynor-lee-coaching,,,,North Wales,activity_provider,Skills Coaching|Women's Specific,"Female specific coaching and guiding.",53.0,-3.9,"Snowdonia",false
-Snowdonia MTB Days,snowdonia-mtb-days,,,,North Wales,activity_provider,Guided Rides,"Guided rides on Snowdon and surrounding peaks.",53.068,-4.076,"Llanberis",true
-Bike Corris,bike-corris,https://bikecorris.co.uk,,,Mid Wales,activity_provider,Coaching|Guided Rides,"Personalised coaching and guiding in the Dyfi Forest.",52.641,-3.837,"Corris",true
-Elan Valley Lodge,elan-valley-lodge,,,,Mid Wales,activity_provider,Multi-day Tours,"Accommodation and guided riding packages.",52.283,-3.550,"Rhayader",true
-Drover Cycles,drover-cycles,https://www.drovercycles.co.uk,,,Mid Wales,activity_provider,Equipment Hire|Guided Rides,"Bike hire and guided tours in the Brecon Beacons.",52.040,-3.143,"Hay-on-Wye",true
-The Gap Wales,the-gap-wales,,,,South Wales,activity_provider,Guided Rides,"Guided rides on the classic Gap route.",51.945,-3.393,"Brecon",true
-Wild Trails Wales,wild-trails-wales,https://wildtrailswales.com,,,South Wales,activity_provider,Guided Rides|Women's Specific,"Guided trail running and mountain biking.",51.5,-3.2,"South Wales",true
-H+I Adventures,h-plus-i-adventures,https://www.mountainbikeworldwide.com,,,North Wales,activity_provider,Multi-day Tours,"International MTB travel experts with Wales tours.",53.0,-4.0,"Wales (Global)",true
-MTB Leadership,mtb-leadership,,,,South Wales,activity_provider,Skills Coaching,"Leadership training and assessment.",51.7,-3.4,"Merthyr Tydfil",false
-Gone Mountain Biking,gone-mountain-biking,,,,North Wales,activity_provider,Guided Rides|Coaching,"Bespoke guiding and coaching.",53.0,-3.9,"North Wales",false
-Summit Cycles,summit-cycles,,,,Mid Wales,activity_provider,Equipment Hire,"Bike shop and hire in Machynlleth.",52.590,-3.850,"Machynlleth",false
-Pearce Cycles,pearce-cycles,https://www.pearcecycles.co.uk,,,Mid Wales,activity_provider,Uplift Service,"Uplift service at Hopton and Bucknell.",52.370,-2.750,"Ludlow (Border)",true
-Caersws DH,caersws-dh,,,,Mid Wales,activity_provider,Uplift Service,"Downhill tracks and uplift.",52.518,-3.430,"Caersws",true
-Pedalabikeaway,pedalabikeaway,,,,South Wales,activity_provider,Equipment Hire|Coaching,"Forest of Dean / Wye Valley area.",51.800,-2.600,"Wye Valley",true
-Ace Adventure,ace-adventure,,,,South Wales,activity_provider,Guided Rides|Coaching,"Adventure activities including MTB.",51.6,-3.9,"South Wales",true
-Ty Nant Outdoors,ty-nant-outdoors,,,,North Wales,activity_provider,Guided Rides|Coaching,"Outdoor adventure provider.",52.970,-3.170,"Llangollen",true
-Adventure Parc Snowdonia,adventure-parc-snowdonia,,,,North Wales,activity_provider,Skills Coaching|Equipment Hire,"Adventure park with pump track and trails.",53.189,-3.839,"Dolgarrog",true
-Forest Freeride,forest-freeride,,,,North Wales,activity_provider,Uplift Service,"Uplift in North Wales.",53.0,-3.5,"Denbigh",true
-Revolution Bike Park,revolution-bike-park,,,,North Wales,activity_provider,Uplift Service,"Freeride and downhill park (Check status).",52.793,-3.344,"Llangynog",true
+name,slug,website,email,phone,regions,category,service_types,description,lat,lng,address,group_friendly,logo_url
+BikePark Wales,bikepark-wales,https://www.bikeparkwales.com,info@bikeparkwales.com,,South Wales,activity_provider,Uplift Service|Coaching|Equipment Hire|Women's Specific,The UK's premier mountain bike park with uplift service and diverse trails.,51.717,-3.361,Merthyr Tydfil,true,
+Oneplanet Adventure,oneplanet-adventure,https://oneplanetadventure.com,hello@oneplanetadventure.com,,North Wales,activity_provider,Coaching|Guided Rides|Youth Coaching|Women's Specific,"Located in Coed Llandegla Forest, offering courses and guided rides.",53.056,-3.212,Llandegla,true,https://garbmipansiok1l0.public.blob.vercel-storage.com/operators/oneplanet-adventure/logo.png
+Antur Stiniog,antur-stiniog,https://www.anturstiniog.com,,,North Wales,activity_provider,Uplift Service,Uplift assisted downhill mountain biking in Snowdonia.,52.994,-3.939,Blaenau Ffestiniog,true,
+Dyfi Bike Park,dyfi-bike-park,https://www.dyfibikepark.co.uk,,,Mid Wales,activity_provider,Uplift Service|Coaching,"Created by the Athertons, offering world-class downhill trails.",52.625,-3.858,Machynlleth,true,https://garbmipansiok1l0.public.blob.vercel-storage.com/operators/dyfi-bike-park/logo.png
+Beics Brenin,beics-brenin,https://www.beicsbrenin.co.uk,,,North Wales,activity_provider,Equipment Hire|Coaching,The trail head bike shop at Coed y Brenin.,52.809,-3.896,Dolgellau,false,https://garbmipansiok1l0.public.blob.vercel-storage.com/operators/beics-brenin/logo.png
+Campbell Coaching,campbell-coaching,https://campbellcoaching.eu,,,South Wales,activity_provider,Skills Coaching|Women's Specific|Youth Coaching,Professional MTB skills coaching and leadership awards.,51.650,-3.800,Afan Forest,true,https://garbmipansiok1l0.public.blob.vercel-storage.com/operators/campbell-coaching/logo.png
+WyeMTB,wye-mtb,https://wyemtb.co.uk,,,Mid Wales,activity_provider,Guided Rides|Skills Coaching|Uplift Service,Mountain bike coaching and guiding in the Wye Valley and Brecon Beacons.,51.850,-2.700,Monmouth,true,https://garbmipansiok1l0.public.blob.vercel-storage.com/operators/wye-mtb/logo.png
+Tom Hutton MTB,tom-hutton-mtb,https://tomhuttonmtb.co.uk,,,North Wales,activity_provider,Multi-day Tours|Guided Rides,Specialists in big mountain guiding and adventures in Snowdonia.,53.073,-4.041,Snowdonia,true,https://garbmipansiok1l0.public.blob.vercel-storage.com/operators/tom-hutton-mtb/logo.png
+Mountain Bike Wales,mountain-bike-wales,https://www.mtb.wales,,,Mid Wales,activity_provider,Guided Rides|Multi-day Tours,Guided mountain biking holidays and weekends in Mid Wales.,52.415,-3.611,Machynlleth,true,https://garbmipansiok1l0.public.blob.vercel-storage.com/operators/mountain-bike-wales/logo.png
+Afan A Blast,afan-a-blast,,,,South Wales,activity_provider,Coaching|Guided Rides,Coaching and guiding services in the Afan Valley.,51.644,-3.738,Afan Valley,true,
+Pedal MTB,pedal-mtb,https://pedalmtb.co.uk,,,North Wales,activity_provider,Skills Coaching|Guided Rides|Women's Specific,MTB instruction and guiding in North Wales.,53.136,-3.816,Betws-y-Coed,true,https://garbmipansiok1l0.public.blob.vercel-storage.com/operators/pedal-mtb/logo.png
+Black Mountains Cycle Centre,black-mountains-cycle-centre,https://blackmountainscyclecentre.com,,,South Wales,activity_provider,Uplift Service,Downhill and freeride centre in the Black Mountains.,51.933,-3.064,Abergavenny,true,https://garbmipansiok1l0.public.blob.vercel-storage.com/operators/black-mountains-cycle-centre/logo.png
+Ride High MTB,ride-high-mtb,,,,North Wales,activity_provider,Skills Coaching,Mountain bike skills coaching.,53.1,-3.8,North Wales,false,
+Pro Ride MTB,pro-ride-mtb,,,,North Wales,activity_provider,Skills Coaching,Coaching and skills development.,53.1,-3.8,Llandegla,false,
+Adrenaline MTB,adrenaline-mtb,,,,North Wales,activity_provider,Skills Coaching|Guided Rides,Adventure and coaching provider.,53.0,-3.9,Snowdonia,true,
+Gaynor Lee Coaching,gaynor-lee-coaching,,,,North Wales,activity_provider,Skills Coaching|Women's Specific,Female specific coaching and guiding.,53.0,-3.9,Snowdonia,false,
+Snowdonia MTB Days,snowdonia-mtb-days,,,,North Wales,activity_provider,Guided Rides,Guided rides on Snowdon and surrounding peaks.,53.068,-4.076,Llanberis,true,
+Bike Corris,bike-corris,https://bikecorris.co.uk,,,Mid Wales,activity_provider,Coaching|Guided Rides,Personalised coaching and guiding in the Dyfi Forest.,52.641,-3.837,Corris,true,https://garbmipansiok1l0.public.blob.vercel-storage.com/operators/bike-corris/logo.png
+Elan Valley Lodge,elan-valley-lodge,,,,Mid Wales,activity_provider,Multi-day Tours,Accommodation and guided riding packages.,52.283,-3.550,Rhayader,true,
+Drover Cycles,drover-cycles,https://www.drovercycles.co.uk,,,Mid Wales,activity_provider,Equipment Hire|Guided Rides,Bike hire and guided tours in the Brecon Beacons.,52.040,-3.143,Hay-on-Wye,true,https://garbmipansiok1l0.public.blob.vercel-storage.com/operators/drover-cycles/logo.png
+The Gap Wales,the-gap-wales,,,,South Wales,activity_provider,Guided Rides,Guided rides on the classic Gap route.,51.945,-3.393,Brecon,true,
+Wild Trails Wales,wild-trails-wales,https://wildtrailswales.com,,,South Wales,activity_provider,Guided Rides|Women's Specific,Guided trail running and mountain biking.,51.5,-3.2,South Wales,true,https://garbmipansiok1l0.public.blob.vercel-storage.com/operators/wild-trails-wales/logo.png
+H+I Adventures,h-plus-i-adventures,https://www.mountainbikeworldwide.com,,,North Wales,activity_provider,Multi-day Tours,International MTB travel experts with Wales tours.,53.0,-4.0,Wales (Global),true,https://garbmipansiok1l0.public.blob.vercel-storage.com/operators/h-plus-i-adventures/logo.png
+MTB Leadership,mtb-leadership,,,,South Wales,activity_provider,Skills Coaching,Leadership training and assessment.,51.7,-3.4,Merthyr Tydfil,false,
+Gone Mountain Biking,gone-mountain-biking,,,,North Wales,activity_provider,Guided Rides|Coaching,Bespoke guiding and coaching.,53.0,-3.9,North Wales,false,
+Summit Cycles,summit-cycles,,,,Mid Wales,activity_provider,Equipment Hire,Bike shop and hire in Machynlleth.,52.590,-3.850,Machynlleth,false,
+Pearce Cycles,pearce-cycles,https://www.pearcecycles.co.uk,,,Mid Wales,activity_provider,Uplift Service,Uplift service at Hopton and Bucknell.,52.370,-2.750,Ludlow (Border),true,https://garbmipansiok1l0.public.blob.vercel-storage.com/operators/pearce-cycles/logo.png
+Caersws DH,caersws-dh,,,,Mid Wales,activity_provider,Uplift Service,Downhill tracks and uplift.,52.518,-3.430,Caersws,true,
+Pedalabikeaway,pedalabikeaway,,,,South Wales,activity_provider,Equipment Hire|Coaching,Forest of Dean / Wye Valley area.,51.800,-2.600,Wye Valley,true,
+Ace Adventure,ace-adventure,,,,South Wales,activity_provider,Guided Rides|Coaching,Adventure activities including MTB.,51.6,-3.9,South Wales,true,
+Ty Nant Outdoors,ty-nant-outdoors,,,,North Wales,activity_provider,Guided Rides|Coaching,Outdoor adventure provider.,52.970,-3.170,Llangollen,true,
+Adventure Parc Snowdonia,adventure-parc-snowdonia,,,,North Wales,activity_provider,Skills Coaching|Equipment Hire,Adventure park with pump track and trails.,53.189,-3.839,Dolgarrog,true,
+Forest Freeride,forest-freeride,,,,North Wales,activity_provider,Uplift Service,Uplift in North Wales.,53.0,-3.5,Denbigh,true,
+Revolution Bike Park,revolution-bike-park,,,,North Wales,activity_provider,Uplift Service,Freeride and downhill park (Check status).,52.793,-3.344,Llangynog,true,

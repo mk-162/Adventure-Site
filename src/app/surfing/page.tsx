@@ -535,7 +535,7 @@ export default async function SurfingHubPage() {
 
             <div className="text-center mt-8">
               <Link
-                href="/activities/surfing"
+                href="/activities/type/surfing"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl hover:bg-accent-hover transition-colors font-semibold"
               >
                 Browse all surfing experiences

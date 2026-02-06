@@ -33,6 +33,30 @@ export default async function ActivitiesPage() {
           </p>
         </div>
 
+        {/* Activity Mega Guides - prominent links to comprehensive pages */}
+        <section className="mb-10 p-6 bg-gradient-to-br from-primary/5 to-accent-hover/5 rounded-2xl border border-primary/10">
+          <h2 className="text-xl font-bold text-primary mb-2">📚 Complete Activity Guides</h2>
+          <p className="text-gray-600 text-sm mb-4">Deep-dive guides with trail centres, spots, grading systems, and insider tips.</p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+            {[
+              { href: "/mountain-biking", label: "Mountain Biking", emoji: "🚴" },
+              { href: "/coasteering", label: "Coasteering", emoji: "🌊" },
+              { href: "/hiking", label: "Hiking", emoji: "🥾" },
+              { href: "/surfing", label: "Surfing", emoji: "🏄" },
+              { href: "/caving", label: "Caving", emoji: "🦇" },
+            ].map(({ href, label, emoji }) => (
+              <Link
+                key={href}
+                href={href}
+                className="flex items-center gap-2 px-4 py-3 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition-all group"
+              >
+                <span className="text-xl">{emoji}</span>
+                <span className="font-semibold text-gray-800 group-hover:text-primary">{label}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* Client-side filters and results */}
         <Suspense fallback={<div className="animate-pulse bg-gray-100 rounded-xl h-96" />}>
           <ActivityFilters

@@ -9,10 +9,11 @@ const footerLinks = {
     { href: "/anglesey", label: "Anglesey" },
   ],
   activities: [
-    { href: "/activities?type=hiking", label: "Hiking" },
-    { href: "/activities?type=coasteering", label: "Coasteering" },
-    { href: "/activities?type=mountain-biking", label: "Mountain Biking" },
-    { href: "/activities?type=kayaking", label: "Kayaking" },
+    { href: "/hiking", label: "Hiking" },
+    { href: "/coasteering", label: "Coasteering" },
+    { href: "/mountain-biking", label: "Mountain Biking" },
+    { href: "/surfing", label: "Surfing" },
+    { href: "/caving", label: "Caving" },
   ],
   support: [
     { href: "/help", label: "Help Center" },

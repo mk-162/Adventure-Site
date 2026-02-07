@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAccommodation, getAllRegions } from "@/lib/queries";
 import { AccommodationFilters } from "@/components/accommodation/AccommodationFilters";
+import { QuirkyStaysWidget } from "@/components/accommodation/QuirkyStaysWidget";
 import { ChevronRight } from "lucide-react";
 
 export default async function AccommodationListingPage() {
@@ -33,6 +34,11 @@ export default async function AccommodationListingPage() {
           accommodations={accommodations}
           regions={regions}
         />
+      </div>
+
+      {/* Quirky Stays Section */}
+      <div className="bg-slate-50 mt-12">
+        <QuirkyStaysWidget limit={4} />
       </div>
     </div>
   );

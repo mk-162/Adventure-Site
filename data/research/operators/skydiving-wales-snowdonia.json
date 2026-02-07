@@ -1,0 +1,286 @@
+{
+  "name": "Skydiving Wales (Snowdonia)",
+  "slug": "skydiving-wales-snowdonia",
+  "tradingName": "Skydiving Snowdonia",
+  "website": "https://skydivingwales.com/",
+  "contact": {
+    "phone": "01938 555860",
+    "email": null,
+    "emailNote": "Contact form available on website - no direct email published",
+    "bookingUrl": "https://skydivingwales.com/wp/skydiving-options/",
+    "address": {
+      "street": "Llanbedr Airfield",
+      "locality": "Llanbedr",
+      "town": "Barmouth",
+      "county": "Gwynedd",
+      "postcode": "LL45 2PH",
+      "country": "Wales"
+    }
+  },
+  "location": {
+    "lat": 52.8167,
+    "lng": -4.1167,
+    "region": "North Wales",
+    "nearestCities": ["Barmouth", "Harlech", "Dolgellau", "Porthmadog"],
+    "landmarks": ["Snowdon", "Snowdonia National Park", "Cardigan Bay", "Harlech Castle", "Cader Idris"]
+  },
+  "images": {
+    "logo": null,
+    "cover": null,
+    "gallery": [],
+    "note": "Images available on skydivingwales.com website and social media"
+  },
+  "operationalStatus": {
+    "status": "TEMPORARILY CLOSED",
+    "reason": "Unable to secure Chief Instructor for 2025 season",
+    "note": "British Skydiving requires all operations to be overseen by a Chief Instructor. Skydive Snowdonia has been unable to acquire one for the current season.",
+    "statusDate": "2025",
+    "futureProspects": "May resume operations when CI position is filled"
+  },
+  "description": {
+    "short": "Spectacular tandem skydiving over Mount Snowdon, Snowdonia National Park, and Cardigan Bay - Wales' most scenic dropzone. Currently closed pending Chief Instructor appointment.",
+    "full": "Skydiving Snowdonia operates from the historic Llanbedr Airfield in the heart of Snowdonia National Park, offering what many consider to be the most spectacular skydiving views in the UK. With Mount Snowdon standing at 3,560ft and jumps taking place from 7,000ft to 13,000ft, you'll literally be flying above Wales' highest mountain.\n\nThe location is simply breathtaking. Even the flight up gives you terrific views of Mount Snowdon and the Snowdonia National Park, the coast of Cardigan Bay, the Llŷn Peninsula, and on exceptionally clear days, you can even see across to Ireland. During freefall and your parachute descent, you're treated to unparalleled 360-degree views of this stunning part of Wales.\n\nLlanbedr Airfield has a rich aviation history, historically owned by the military and used as a training airfield for fast jet pilots from RAF Valley on Anglesey. Today it's under the control of Snowdonia Aerospace LLP and serves as a base for various aviation activities including Whizzard Helicopters who offer helicopter tours and flights.\n\nThe area surrounding the dropzone is perfect for a weekend adventure. There's a range of local accommodation from campsites to hotels, a café/bistro on the airfield, plenty of parking, and the beaches in the area are fantastic - perfect for relaxing after the exhilaration of your skydive. The coastal towns of Barmouth and Harlech are nearby, along with countless walking trails and outdoor activities.\n\n**IMPORTANT: Due to British Skydiving requirements, operations are currently suspended until a Chief Instructor can be appointed. Check the website or call before booking.**"
+  },
+  "ratings": {
+    "tripadvisor": null,
+    "google": null,
+    "facebook": {
+      "note": "Check Facebook page for customer reviews and updates on operational status"
+    }
+  },
+  "activities": [
+    "Tandem Skydiving (7,000ft)",
+    "Tandem Skydiving (10,000ft)",
+    "Tandem Skydiving (13,000ft)",
+    "Charity Skydives",
+    "Gift Vouchers",
+    "Video & Photo Packages"
+  ],
+  "jumpDetails": {
+    "jumpHeights": [
+      {
+        "altitude": 7000,
+        "freefallTime": "10 seconds",
+        "totalExperience": "Approx 4-5 minutes from exit to landing",
+        "status": "When operational"
+      },
+      {
+        "altitude": 10000,
+        "freefallTime": "30 seconds",
+        "totalExperience": "Approx 5-7 minutes from exit to landing",
+        "status": "When operational"
+      },
+      {
+        "altitude": 13000,
+        "freefallTime": "50 seconds",
+        "totalExperience": "Approx 7-9 minutes from exit to landing",
+        "status": "Coming soon (when operational)"
+      }
+    ],
+    "aircraft": "Various (check current operations)",
+    "parachuteSystem": "Tandem rig certified to British Skydiving standards"
+  },
+  "audiences": [
+    "Adventure seekers",
+    "Snowdonia tourists",
+    "Mountain lovers",
+    "Charity fundraisers",
+    "Photography enthusiasts",
+    "Bucket list skydivers"
+  ],
+  "accreditations": [
+    {
+      "name": "British Skydiving",
+      "fullName": "British Skydiving (formerly BPA)",
+      "description": "Operates under British Skydiving regulations when active"
+    }
+  ],
+  "features": {
+    "accommodation": false,
+    "accommodationNearby": "Wide range locally - from camping to hotels in Barmouth, Harlech, and surrounding area",
+    "onSiteActivities": false,
+    "otherOnSiteOperators": "Whizzard Helicopters (helicopter tours and flights)",
+    "catering": true,
+    "cafeFacilities": "Café/bistro on airfield serving food and drinks",
+    "freeWifi": null,
+    "parking": "Plenty of free parking",
+    "viewingAreas": true,
+    "groupDiscounts": null,
+    "giftVouchers": true,
+    "videoPackages": true,
+    "charityJumps": true,
+    "scenicLocation": "Outstanding - considered UK's most scenic skydive location"
+  },
+  "requirements": {
+    "minAge": 16,
+    "minAgeNote": "Under 18s require parental consent and BPA medical forms",
+    "maxAge": null,
+    "maxAgeNote": "Over 40s require BPA medical form. Over 70s require GP approval.",
+    "minWeight": "7 stone (44kg)",
+    "maxWeight": "15 stone (95kg)",
+    "weightNote": "Must be proportionate to height. Contact centre if close to limits.",
+    "minHeight": "4ft 11in (150cm)",
+    "healthRestrictions": [
+      "BPA medical declaration required",
+      "GP approval for certain conditions",
+      "No pregnancy",
+      "No alcohol/drugs 24 hours before",
+      "Reasonable fitness level"
+    ],
+    "whatToWear": "Comfortable clothes, trainers or boots, warm layers"
+  },
+  "operatingSchedule": {
+    "season": "Typically spring-autumn when operational",
+    "days": "Weekend operations primarily",
+    "weatherDependent": true,
+    "currentStatus": "CLOSED - No Chief Instructor for 2025 season",
+    "note": "Check website for latest operational updates"
+  },
+  "pricing": {
+    "deposit": {
+      "amount": 50,
+      "currency": "GBP",
+      "note": "When operational - £50 deposit per person"
+    },
+    "tandem7k": {
+      "priceFrom": "From £50 deposit",
+      "note": "Full pricing TBC when operations resume"
+    },
+    "tandem10k": {
+      "priceFrom": "From £50 deposit",
+      "note": "Full pricing TBC when operations resume"
+    },
+    "tandem13k": {
+      "priceFrom": "From £50 deposit",
+      "status": "Coming soon",
+      "note": "Full pricing TBC when operations resume"
+    },
+    "videoPackages": {
+      "from": 110,
+      "currency": "GBP",
+      "note": "Video packages from £110 - capture priceless moments"
+    },
+    "charityJump": {
+      "minimumSponsorship": 395,
+      "note": "Raise £395+ for charity and jump for free"
+    },
+    "giftVouchers": "Available from £50"
+  },
+  "views": {
+    "primary": "Mount Snowdon (Yr Wyddfa)",
+    "secondary": ["Snowdonia National Park", "Cardigan Bay", "Llŷn Peninsula", "Cader Idris", "Rhinog Mountains"],
+    "clearDayViews": "Ireland, Wicklow Mountains, entire North Wales coast",
+    "altitude": "You'll be ABOVE Snowdon (3,560ft) when jumping from 7k+",
+    "description": "The UK's most spectacular skydiving views - jump above Wales' highest mountain with 360° panoramic views"
+  },
+  "whatMakesItSpecial": [
+    "Jump ABOVE Mount Snowdon - Wales' highest peak",
+    "Unrivalled views of Snowdonia National Park",
+    "360° panoramic mountain and coastal views",
+    "See Ireland on clear days",
+    "Historic RAF airfield with aviation heritage",
+    "Perfect add-on to Snowdonia adventure holiday",
+    "Coastal beaches nearby for post-jump relaxation",
+    "Helicopter tours available on same site (Whizzard)",
+    "Considered by many as UK's most scenic dropzone"
+  ],
+  "socialMedia": {
+    "facebook": "https://www.facebook.com/skydivingwales/",
+    "instagram": null,
+    "note": "Check Facebook for operational updates"
+  },
+  "bookingProcess": {
+    "currentStatus": "Bookings suspended until Chief Instructor appointed",
+    "futureSteps": [
+      "Check website for operational status",
+      "Call 01938 555860 to confirm availability",
+      "Choose your altitude (7k, 10k, or 13k when available)",
+      "Choose your date",
+      "Pay £50 deposit",
+      "Receive confirmation and briefing details",
+      "Arrive at Llanbedr Airfield",
+      "Complete training and safety briefing",
+      "Get kitted up and meet instructor",
+      "Scenic flight with views of Snowdon",
+      "Jump and experience mountain freefall",
+      "Parachute ride with 360° Snowdonia views",
+      "Land and relive the experience!"
+    ],
+    "arrivalTime": "TBC when operational - typically 3-4 hours total"
+  },
+  "faqs": [
+    {
+      "question": "When will Skydiving Snowdonia reopen?",
+      "answer": "Operations are suspended until a qualified Chief Instructor can be appointed - a British Skydiving requirement. Check the website or Facebook page for updates."
+    },
+    {
+      "question": "What makes Snowdonia special for skydiving?",
+      "answer": "You're jumping above Mount Snowdon itself! At 7,000ft+ you'll be higher than Wales' tallest peak (3,560ft) with unmatched 360° views of mountains, coastline, and on clear days, Ireland."
+    },
+    {
+      "question": "Can I combine this with other Snowdonia activities?",
+      "answer": "Absolutely! The area is Wales' adventure capital. Climbing Snowdon, zip lining at Zip World, surfing at nearby beaches, visiting castles - it's perfect for an adventure weekend."
+    },
+    {
+      "question": "Is the weather more challenging here?",
+      "answer": "Mountain weather can be changeable, so jumps may be postponed more frequently than coastal sites. But the views make it worth the wait!"
+    }
+  ],
+  "founded": null,
+  "localArea": {
+    "attractions": [
+      "Mount Snowdon - Wales' highest peak (3,560ft)",
+      "Harlech Castle - UNESCO World Heritage site",
+      "Barmouth - Victorian seaside town with beach",
+      "Cader Idris - legendary mountain",
+      "Shell Island - camping and beaches",
+      "Zip World Slate Caverns - underground adventure",
+      "Snowdonia Railway - scenic mountain train",
+      "Portmeirion - Italianate village"
+    ],
+    "description": "Llanbedr sits in the heart of Snowdonia National Park with mountains, beaches, castles, and adventure activities all around"
+  },
+  "metadata": {
+    "researchedAt": "2026-02-07",
+    "sources": [
+      "https://skydivingwales.com/",
+      "https://skydivingwales.com/wp/skydiving-options/",
+      "https://skydivingwales.com/wp/location/",
+      "https://skydivingwales.com/wp/video/"
+    ],
+    "needsVerification": [
+      "Exact reopening timeline and date",
+      "Full pricing structure when operational",
+      "13,000ft jump availability status",
+      "Current aircraft in use",
+      "Video package details",
+      "Official high-res images",
+      "Social media accounts",
+      "Updated contact email"
+    ],
+    "instagramHashtags": ["#skydivingwales", "#snowdonia", "#mountsnowdon", "#llanbedr", "#cardiganbay"],
+    "photographySources": [
+      "Official website skydivingwales.com",
+      "Facebook page @skydivingwales",
+      "Search #skydivingsnowdonia on Instagram",
+      "Customer testimonials on website",
+      "Drone footage of Llanbedr area"
+    ],
+    "notes": [
+      "CRITICAL: Currently not operational due to Chief Instructor requirement",
+      "When operational, this is THE most scenic skydiving location in Wales",
+      "Jumping above Snowdon is unique selling point",
+      "Perfect for tourists already visiting Snowdonia",
+      "Weather can be more challenging than coastal sites",
+      "Historic airfield adds interest",
+      "Whizzard Helicopters partnership opportunity for multi-activity content"
+    ],
+    "contentOpportunities": [
+      "Feature the 'jumping above Snowdon' angle heavily",
+      "Link to Snowdonia tourism content",
+      "Create 'Most Scenic Skydives UK' list featuring this",
+      "Pair with other Snowdonia adventures for itineraries",
+      "When operational, this should be premium-featured"
+    ]
+  }
+}

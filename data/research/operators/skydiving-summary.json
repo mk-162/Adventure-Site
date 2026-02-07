@@ -1,0 +1,269 @@
+{
+  "activity": "skydiving",
+  "researchCompleted": "2026-02-07",
+  "totalOperators": 3,
+  "operatingNow": 2,
+  "temporarilyClosed": 1,
+  
+  "summary": {
+    "overview": "Wales has three skydiving dropzones offering spectacular coastal and mountain views. Two are currently operating (Swansea and Haverfordwest) with Snowdonia temporarily closed pending Chief Instructor appointment.",
+    "priceRange": "£250-£320 for tandem jumps",
+    "heightRange": "7,000ft - 15,000ft",
+    "bestFor": "Coastal views (Swansea, Haverfordwest) or mountain scenery (Snowdonia when operational)",
+    "season": "March-November typically"
+  },
+
+  "operators": [
+    {
+      "name": "Skydive Swansea (GoSkydive)",
+      "slug": "skydive-swansea",
+      "status": "OPERATING",
+      "location": "Swansea Airport, South Wales",
+      "priceFrom": 269,
+      "jumpHeights": ["10,000ft", "15,000ft"],
+      "maxFreefall": "60 seconds",
+      "views": "Gower Peninsula, Bristol Channel",
+      "uniqueSellingPoint": "Highest jumps in Wales (15,000ft), part of UK's leading operator GoSkydive",
+      "bestFor": "Maximum freefall time, established reputation, coastal views",
+      "contact": {
+        "phone": "0333 005 0050",
+        "website": "https://www.goskydive.com/skydive-swansea/"
+      },
+      "dataFile": "skydive-swansea.json"
+    },
+    {
+      "name": "Skyline Skydiving Haverfordwest",
+      "slug": "skyline-skydiving-haverfordwest",
+      "status": "OPERATING",
+      "location": "Haverfordwest, Pembrokeshire",
+      "priceFrom": 250,
+      "jumpHeights": ["7,000ft", "10,000ft"],
+      "maxFreefall": "30 seconds",
+      "views": "Pembrokeshire Coast National Park, St Brides Bay",
+      "uniqueSellingPoint": "Most affordable option, only dropzone in West Wales, Pembrokeshire Coast views",
+      "bestFor": "Budget-conscious jumpers, Pembrokeshire tourists, coastal scenery",
+      "weightLimits": "Lower than most - 15st men, 13st women",
+      "contact": {
+        "phone": "020 7424 5522",
+        "website": "https://skylineskydiving.co.uk/prices-locations/wales/"
+      },
+      "dataFile": "skyline-skydiving-haverfordwest.json"
+    },
+    {
+      "name": "Skydiving Wales (Snowdonia)",
+      "slug": "skydiving-wales-snowdonia",
+      "status": "TEMPORARILY CLOSED",
+      "statusReason": "Awaiting Chief Instructor appointment (British Skydiving requirement)",
+      "location": "Llanbedr Airfield, Snowdonia",
+      "priceFrom": null,
+      "jumpHeights": ["7,000ft", "10,000ft", "13,000ft (planned)"],
+      "maxFreefall": "50 seconds (at 13k)",
+      "views": "Mount Snowdon, Snowdonia National Park, Cardigan Bay",
+      "uniqueSellingPoint": "JUMP ABOVE MOUNT SNOWDON - most scenic skydive in UK",
+      "bestFor": "Scenic mountain views, Snowdonia tourists, photography",
+      "futureProspects": "May reopen when Chief Instructor position filled",
+      "contact": {
+        "phone": "01938 555860",
+        "website": "https://skydivingwales.com/"
+      },
+      "dataFile": "skydiving-wales-snowdonia.json"
+    }
+  ],
+
+  "regionalBreakdown": {
+    "southWales": {
+      "operators": ["Skydive Swansea"],
+      "characteristics": "Coastal jumping, highest altitude available, easy access from M4",
+      "bestFor": "Cardiff/Swansea visitors, maximum freefall"
+    },
+    "westWales": {
+      "operators": ["Skyline Skydiving Haverfordwest"],
+      "characteristics": "Most affordable, Pembrokeshire coastline, island views",
+      "bestFor": "Budget jumpers, Pembrokeshire tourists"
+    },
+    "northWales": {
+      "operators": ["Skydiving Wales Snowdonia (closed)"],
+      "characteristics": "Mountain scenery, jumping above Snowdon, 360° views",
+      "bestFor": "Scenic photography, Snowdonia adventurers"
+    }
+  },
+
+  "contentTypes": {
+    "tandemSkydiving": {
+      "description": "First-time jumps with experienced instructor",
+      "suitableFor": "Complete beginners, bucket list tickers",
+      "ageRange": "16+ (parental consent under 18)",
+      "duration": "3-4 hours total experience",
+      "training": "30-45 min briefing",
+      "priceRange": "£250-£320"
+    },
+    "charityJumps": {
+      "description": "Raise money for charity, jump for free",
+      "minimumSponsorship": "£395+",
+      "charities": "3,000+ partnered charities",
+      "popularWith": "Fundraisers, corporate teams, memorial jumps"
+    },
+    "affCourses": {
+      "description": "Accelerated Freefall - learn to skydive solo",
+      "availability": "Contact operators for AFF training",
+      "duration": "Multi-day course",
+      "outcome": "British Skydiving solo license"
+    },
+    "giftVouchers": {
+      "description": "Perfect gifts for thrill-seekers",
+      "validity": "12 months typically",
+      "flexibility": "Recipient chooses date and location",
+      "priceRange": "From £50 deposit or full experience"
+    }
+  },
+
+  "requirements": {
+    "age": {
+      "minimum": 16,
+      "under18": "Requires parental consent and witnessed medical form",
+      "over40": "Requires BPA medical form 115A",
+      "over70": "Requires GP sign-off and pre-assessment"
+    },
+    "weight": {
+      "typical": "15-18 stone maximum (varies by centre)",
+      "haverfordwest": "Stricter - 15st men, 13st women",
+      "surcharges": "£10-£30 for weights over 15 stone at some centres",
+      "note": "Must be proportionate to height"
+    },
+    "health": {
+      "medicalForm": "BPA medical declaration required",
+      "gpApproval": "Needed for certain conditions",
+      "pregnancy": "Not permitted",
+      "alcohol": "No alcohol 24 hours before jump",
+      "fitness": "Reasonable fitness level required"
+    },
+    "whatToWear": "Comfortable clothes, trainers/boots, warm layers for altitude"
+  },
+
+  "bestTimeOfYear": {
+    "season": "March - November",
+    "peak": "June - August (best weather, longest days, books up fast)",
+    "shoulder": "April-May, September-October (good conditions, quieter)",
+    "weather": "All skydiving is weather-dependent - be flexible with dates"
+  },
+
+  "videoPackages": {
+    "availability": "All operators offer video/photo packages",
+    "options": [
+      "Handcam (instructor's wrist camera) - £80-£119",
+      "Freefall cam (separate cameraman) - £140-£169",
+      "Both cameras - £185-£209",
+      "VR experience (Haverfordwest) - price TBC"
+    ],
+    "recommendation": "Highly recommended - it's a once-in-a-lifetime experience worth capturing"
+  },
+
+  "views": {
+    "swansea": {
+      "primary": "Gower Peninsula - golden beaches and coastal cliffs",
+      "secondary": "Bristol Channel, Mumbles, Three Cliffs Bay",
+      "clearDays": "Devon, Cornwall, Brecon Beacons",
+      "viewRadius": "50+ miles"
+    },
+    "haverfordwest": {
+      "primary": "Pembrokeshire Coast National Park",
+      "secondary": "St Brides Bay, Skomer Island, Irish Sea",
+      "clearDays": "Ireland, Wicklow Mountains",
+      "viewRadius": "50+ miles"
+    },
+    "snowdonia": {
+      "primary": "Mount Snowdon (you jump ABOVE it at 3,560ft)",
+      "secondary": "Snowdonia National Park, Cardigan Bay, Llŷn Peninsula",
+      "clearDays": "Ireland, entire North Wales coast",
+      "viewRadius": "60+ miles",
+      "note": "360° panoramic mountain views - considered UK's most scenic skydive"
+    }
+  },
+
+  "photographySources": {
+    "official": [
+      "GoSkydive website and Instagram @goskydive",
+      "Skyline Skydiving website",
+      "Skydiving Wales website"
+    ],
+    "instagram": [
+      "#skydiveswansea",
+      "#skydivewales",
+      "#tandemskydive",
+      "#gowerpeninsula",
+      "#pembrokeshire",
+      "#snowdonia"
+    ],
+    "userGenerated": [
+      "TripAdvisor customer photos",
+      "Facebook reviews and albums",
+      "YouTube jump videos"
+    ],
+    "stock": "Unsplash, Pexels - search 'skydiving Wales', 'tandem skydive', 'parachute'"
+  },
+
+  "seoKeywords": [
+    "skydiving Wales",
+    "tandem skydive Wales",
+    "parachuting Wales",
+    "skydive Swansea",
+    "skydive Pembrokeshire",
+    "skydive Snowdonia",
+    "charity skydive Wales",
+    "skydiving near me",
+    "Wales adventure activities",
+    "bucket list Wales"
+  ],
+
+  "contentOpportunities": {
+    "blogPosts": [
+      "First-Time Skydiving Guide: What to Expect",
+      "Skydiving in Wales vs England: Which is Better?",
+      "Best Skydiving Locations in the UK",
+      "How to Prepare for Your First Tandem Jump",
+      "Charity Skydiving: Raise Money While You Fly",
+      "Skydiving Above Mount Snowdon: The Ultimate Adventure"
+    ],
+    "itineraries": [
+      "Adrenaline Weekend: Skydiving + Coasteering in Pembrokeshire",
+      "Snowdonia Adventure: Skydiving + Zip World + Climbing Snowdon",
+      "Gower Adventure Weekend: Skydiving + Surfing + Coastal Walks"
+    ],
+    "comparisons": [
+      "Swansea vs Haverfordwest vs Snowdonia: Which Dropzone?",
+      "7,000ft vs 15,000ft: Is Higher Worth It?",
+      "Wales vs Other UK Skydiving Destinations"
+    ]
+  },
+
+  "nextSteps": {
+    "dataImport": "Import operator JSONs into database via admin panel",
+    "imageGathering": "Source high-quality images from operators and stock libraries",
+    "operatorOutreach": "Contact operators for official partnerships, images, and pricing verification",
+    "contentCreation": "Write blog posts and itineraries featuring skydiving",
+    "seoOptimization": "Optimize hub page and operator pages for search",
+    "socialMedia": "Create Instagram/Facebook content promoting Wales skydiving"
+  },
+
+  "verificationNeeded": [
+    "Exact 15,000ft upgrade pricing at Swansea",
+    "Current operational status of Snowdonia (check regularly)",
+    "High-resolution official images from all operators",
+    "Google Business Profile reviews and ratings",
+    "Specific aircraft models used",
+    "Video package pricing at Haverfordwest",
+    "AFF course availability and pricing",
+    "Group discount structures"
+  ],
+
+  "notes": [
+    "Snowdonia's closure is temporary but indefinite - monitor for reopening",
+    "GoSkydive (Swansea) is part of major UK operator - reliable and professional",
+    "Haverfordwest is best value but has stricter weight limits - important to note",
+    "All three offer spectacular views - Wales is genuinely special for skydiving",
+    "Charity jumps are a huge market in UK - emphasize £395 sponsorship option",
+    "Video packages are expensive but highly recommended - upsell opportunity",
+    "Weather is biggest variable - all sites are weather-dependent",
+    "Combine with other Wales adventures for multi-day itineraries"
+  ]
+}

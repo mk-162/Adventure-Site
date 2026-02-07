@@ -1215,3 +1215,9 @@
 2026-02-07 20:41:47 No more pending tasks
 2026-02-07 20:41:47 Launched 1 tasks this run
 2026-02-07 20:41:47 --- Monitor run complete ---
+2026-02-07 20:50:03 --- Monitor run started ---
+2026-02-07 20:50:06 Active sessions: 1 / 15
+2026-02-07 20:50:10 Available slots: 14
+2026-02-07 20:50:10 No more pending tasks
+2026-02-07 20:50:10 Launched 0 tasks this run
+2026-02-07 20:50:10 --- Monitor run complete ---

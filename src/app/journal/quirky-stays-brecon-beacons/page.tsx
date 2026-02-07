@@ -27,7 +27,7 @@ The rooms are simple — don't expect luxury — but that's part of the charm. T
     whyItsQuirky: "Sleep in the actual ruins of a 12th-century priory. The bar is in the medieval cellar. Ghosts entirely optional.",
     perfectFor: "History buffs, hikers, photographers, and anyone who appreciates genuine atmosphere over boutique polish",
     bookingUrl: "https://www.llanthonypriory.co.uk",
-    image: "/images/regions/brecon-beacons-hero.jpg",
+    image: "/images/regions/region-wales-40027-640-assets-wales.jpg",
   },
   {
     rank: 2,
@@ -42,7 +42,7 @@ This is genuinely off-grid — no electricity, no WiFi, no phone signal. Light c
     whyItsQuirky: "A spherical tent suspended in the trees, as seen on TV. Completely off-grid, completely peaceful, completely unlike anywhere else.",
     perfectFor: "Couples wanting romance and adventure, TV design fans, digital detoxers",
     bookingUrl: "https://www.sheepskinlife.com/relax-explore/red-kite-tree-tent",
-    image: "/images/regions/brecon-beacons-hero.jpg",
+    image: "/images/regions/region-wales-40045-640-assets-wales.jpg",
   },
   {
     rank: 3,
@@ -57,7 +57,7 @@ Even if ghosts aren't your bag, the castle is spectacular — all carved wood, s
     whyItsQuirky: "A Victorian opera singer's Gothic castle, complete with resident ghosts and an onsite opera house. Diva energy guaranteed.",
     perfectFor: "Ghost hunters, opera lovers, anyone who's ever wanted to dramatically sweep down a castle staircase",
     bookingUrl: "https://www.craigynoscastle.co.uk",
-    image: "/images/regions/brecon-beacons-hero.jpg",
+    image: "/images/regions/region-wales-40079-640-assets-wales.jpg",
   },
   {
     rank: 4,
@@ -72,7 +72,7 @@ There's a communal kitchen and hammock circle, but each dome is private enough t
     whyItsQuirky: "Geodesic domes with private wood-fired hot tubs in a wildflower meadow. You chop your own firewood. It's weirdly rewarding.",
     perfectFor: "Couples, book lovers visiting Hay, hikers, anyone who enjoys the satisfaction of lighting a fire",
     bookingUrl: "https://www.cosyundercanvas.co.uk",
-    image: "/images/regions/brecon-beacons-hero.jpg",
+    image: "/images/regions/region-wales-40119-640-assets-wales.jpg",
   },
   {
     rank: 5,
@@ -87,7 +87,7 @@ You're right on the Monmouthshire & Brecon Canal, with towpath walking and cycli
     whyItsQuirky: "A proper village pub with proper rooms — radical in its ordinariness. Log fires, local ale, and landlords who actually want you there.",
     perfectFor: "Walkers, cyclists, real ale enthusiasts, anyone who thinks chain hotels have stolen our souls",
     bookingUrl: "https://www.starinntalybont.co.uk",
-    image: "/images/regions/brecon-beacons-hero.jpg",
+    image: "/images/regions/region-wales-40172-640-assets-wales.jpg",
   },
 ];
 

@@ -28,7 +28,7 @@ The hot tub treehouse (yes, really) has a cedar wood tub on the deck with views 
     whyItsQuirky: "Completely off-grid treehouses with wood-fired hot tubs suspended in an ancient Welsh forest. No WiFi, no signal, no problem.",
     perfectFor: "Couples wanting a romantic escape or anyone desperate for a digital detox",
     bookingUrl: "https://www.living-room.co",
-    image: "/images/accommodation/quirky/living-room-treehouses.jpg",
+    image: "/images/regions/snowdonia-hero.jpg",
   },
   {
     rank: 2,
@@ -43,7 +43,7 @@ It's famously where cult TV series "The Prisoner" was filmed, and the surreal at
     whyItsQuirky: "An entire Italianate village in the middle of Snowdonia, built by a maverick architect. It's like waking up in a fever dream — but a beautiful one.",
     perfectFor: "Architecture nerds, The Prisoner fans, and anyone who appreciates beautiful eccentricity",
     bookingUrl: "https://portmeirion.wales/stay",
-    image: "/images/accommodation/quirky/portmeirion.jpg",
+    image: "/images/regions/snowdonia-hero.jpg",
   },
   {
     rank: 3,
@@ -58,7 +58,7 @@ This isn't polished, corporate accommodation — it's charming, personal, and wo
     whyItsQuirky: "Sleep on a converted boat in a secret cove on a stunning estuary. Kayak from your bedroom door. Watch the tide come and go.",
     perfectFor: "Water lovers, romantics, and anyone who fantasises about running away to sea",
     bookingUrl: "https://www.smugglerscove.info/",
-    image: "/images/accommodation/quirky/smugglers-cove.jpg",
+    image: "/images/regions/snowdonia-hero.jpg",
   },
   {
     rank: 4,
@@ -73,7 +73,7 @@ There's something wonderfully Welsh about this — industrial heritage meets out
     whyItsQuirky: "Glamping above a working slate mine with underground zip lines and trampolines literally beneath your feet. Adventure on tap.",
     perfectFor: "Thrill-seekers, families, and anyone who wants Zip World on the doorstep",
     bookingUrl: "https://llechwedd.co.uk/glamping/",
-    image: "/images/accommodation/quirky/llechwedd-glamping.jpg",
+    image: "/images/regions/snowdonia-hero.jpg",
   },
   {
     rank: 5,
@@ -88,7 +88,7 @@ What makes it special is the balance — enough comfort (proper beds, wood burne
     whyItsQuirky: "Award-winning yurts and shepherd's huts overlooking one of Britain's most beautiful estuaries. Eco-friendly without being uncomfortable.",
     perfectFor: "Eco-conscious adventurers, families, and cyclists doing the Mawddach Trail",
     bookingUrl: "https://www.graigwen.co.uk/",
-    image: "/images/accommodation/quirky/graig-wen.jpg",
+    image: "/images/regions/snowdonia-hero.jpg",
   },
 ];
 

@@ -26,7 +26,7 @@ The location is spectacular but remote — bring supplies, as the nearest shop i
     whyItsQuirky: "Sleep next to a working lighthouse, with the beam sweeping overhead. Maritime history and dramatic sea views.",
     perfectFor: "Photographers, maritime enthusiasts, families wanting a unique adventure",
     bookingUrl: "https://www.trinityhouse.co.uk/point-lynas-lighthouse",
-    image: "/images/accommodation/quirky/point-lynas.jpg",
+    image: "/images/regions/anglesey-hero.jpg",
   },
   {
     rank: 2,
@@ -41,7 +41,7 @@ Yes, it's expensive. Yes, it's fancy. But if you're celebrating something or jus
     whyItsQuirky: "A full-blown French château overlooking the Menai Strait. Victorian romance meets Welsh adventure.",
     perfectFor: "Couples celebrating, wedding parties, Francophiles who can't quite afford France",
     bookingUrl: "https://www.chateaurhianfa.com",
-    image: "/images/accommodation/quirky/chateau-rhianfa.jpg",
+    image: "/images/regions/anglesey-hero.jpg",
   },
   {
     rank: 3,
@@ -56,7 +56,7 @@ It's compact — this is a windmill, after all — but perfectly formed for coup
     whyItsQuirky: "A converted windmill with circular rooms and spiral staircases. 200 years of history in a compact, cozy space.",
     perfectFor: "Couples, history lovers, anyone who's ever looked at a windmill and wondered what it's like inside",
     bookingUrl: "https://www.underthethatch.co.uk/melin-newydd",
-    image: "/images/accommodation/quirky/melin-newydd.jpg",
+    image: "/images/regions/anglesey-hero.jpg",
   },
   {
     rank: 4,
@@ -71,7 +71,7 @@ What makes it quirky is the atmosphere — it's a proper surf town B&B run by pe
     whyItsQuirky: "Surfer-chic boutique B&B in Anglesey's outdoor capital. Proper coffee, legendary breakfasts, beach on your doorstep.",
     perfectFor: "Surfers, kitesurfers, couples, anyone who appreciates design and a good breakfast",
     bookingUrl: "https://www.theoystercatcheranglesey.co.uk",
-    image: "/images/accommodation/quirky/oyster-catcher.jpg",
+    image: "/images/regions/anglesey-hero.jpg",
   },
   {
     rank: 5,
@@ -86,7 +86,7 @@ It's quirky because it's the opposite of polished hospitality — it's functiona
     whyItsQuirky: "Sleep at the National Outdoor Centre and wake up on the water. Functional, communal, adventure-first accommodation.",
     perfectFor: "Paddlers, sailors, outdoor enthusiasts, anyone who prioritises access over thread count",
     bookingUrl: "https://www.plasmenai.co.uk",
-    image: "/images/accommodation/quirky/plas-menai.jpg",
+    image: "/images/regions/anglesey-hero.jpg",
   },
 ];
 

@@ -26,7 +26,7 @@ The glamping tents are beautifully kitted out — fairy lights, rugs, and enough
     whyItsQuirky: "Glamping with views over Britain's most beautiful beach. Wake up, walk down to the sand, wonder why you ever lived in a city.",
     perfectFor: "Beach lovers, families, photographers, anyone who wants the WOW factor",
     bookingUrl: "https://www.threecliffsbay.com",
-    image: "/images/accommodation/quirky/three-cliffs-glamping.jpg",
+    image: "/images/regions/gower-hero.jpg",
   },
   {
     rank: 2,
@@ -41,7 +41,7 @@ You're in the centre of the peninsula here, with easy access to beaches in both 
     whyItsQuirky: "A characterful village pub with surprisingly stylish rooms. Local ales, homemade food, and landlords who know every secret beach.",
     perfectFor: "Walkers, surfers, foodies, anyone who appreciates a proper pub",
     bookingUrl: "https://www.kingarthurhotel.co.uk",
-    image: "/images/accommodation/quirky/king-arthur.jpg",
+    image: "/images/regions/gower-hero.jpg",
   },
   {
     rank: 3,
@@ -56,7 +56,7 @@ From here, you can walk to Three Cliffs Bay through the woods, explore the buria
     whyItsQuirky: "Victorian hunting lodge with a Neolithic burial chamber in the garden. History layered on history, with very comfortable beds.",
     perfectFor: "History lovers, couples wanting romance, anyone who's ever fantasised about owning a country estate",
     bookingUrl: "https://www.parc-le-breos.co.uk",
-    image: "/images/accommodation/quirky/parc-le-breos.jpg",
+    image: "/images/regions/gower-hero.jpg",
   },
   {
     rank: 4,
@@ -71,7 +71,7 @@ Port Eynon is one of the Gower's best beaches, with excellent rock pooling at lo
     whyItsQuirky: "A former lifeboat station on the beach, now a youth hostel. Maritime history, budget prices, unbeatable location.",
     perfectFor: "Budget travelers, solo adventurers, families, surfers, anyone who values location over luxury",
     bookingUrl: "https://www.yha.org.uk/hostel/yha-port-eynon",
-    image: "/images/accommodation/quirky/port-eynon-yha.jpg",
+    image: "/images/regions/gower-hero.jpg",
   },
   {
     rank: 5,
@@ -86,7 +86,7 @@ The hot tubs are wood-fired and private to each tent. There's a farm shop on sit
     whyItsQuirky: "Safari tents with private hot tubs overlooking the wild side of Gower. Grown-up glamping with proper style.",
     perfectFor: "Couples, small groups, anyone wanting peace and stargazing",
     bookingUrl: "https://www.oldwallsgower.co.uk",
-    image: "/images/accommodation/quirky/oldwalls-glamping.jpg",
+    image: "/images/regions/gower-hero.jpg",
   },
 ];
 

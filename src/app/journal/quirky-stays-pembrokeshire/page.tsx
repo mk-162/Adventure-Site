@@ -27,7 +27,7 @@ The site also has more conventional yurts and domes, but let's be honest — you
     whyItsQuirky: "Literally sleep in a UFO or a converted passenger jet. Nothing else needs to be said.",
     perfectFor: "Families with kids, aviation enthusiasts, UFO believers, and anyone who appreciates pure absurdity",
     bookingUrl: "https://www.applecamping.co.uk",
-    image: "/images/accommodation/quirky/apple-camping-ufo.jpg",
+    image: "/images/regions/pembrokeshire-hero.jpg",
   },
   {
     rank: 2,
@@ -42,7 +42,7 @@ Florence Springs also has treehouses and luxury yurts if hobbits aren't your thi
     whyItsQuirky: "Actual hobbit houses with round doors, grass roofs, and hot tubs. Gandalf would approve.",
     perfectFor: "Lord of the Rings fans, families, couples wanting something magical",
     bookingUrl: "https://www.florencesprings.co.uk",
-    image: "/images/accommodation/quirky/florence-springs-hobbit.jpg",
+    image: "/images/regions/pembrokeshire-hero.jpg",
   },
   {
     rank: 3,
@@ -57,7 +57,7 @@ What makes it special is the contrast — modern luxury inside ancient walls. Yo
     whyItsQuirky: "A genuine 12th-century Norman castle, restored to boutique hotel standards. Sleep where knights once stood guard.",
     perfectFor: "Couples celebrating something special, history lovers, anyone who's ever wanted to live in a castle",
     bookingUrl: "https://www.rochcastle.com",
-    image: "/images/accommodation/quirky/roch-castle.jpg",
+    image: "/images/regions/pembrokeshire-hero.jpg",
   },
   {
     rank: 4,
@@ -72,7 +72,7 @@ The accommodation ranges from simple bell tents to the extraordinary Fforest Dom
     whyItsQuirky: "Geodesic domes, riverside glamping, and a community vibe that'll make you question city life. Plus, pizza from a barn.",
     perfectFor: "Groups of friends, families, festival lovers, anyone seeking community",
     bookingUrl: "https://www.coldatnight.co.uk",
-    image: "/images/accommodation/quirky/fforest-farm.jpg",
+    image: "/images/regions/pembrokeshire-hero.jpg",
   },
   {
     rank: 5,
@@ -87,7 +87,7 @@ What makes it quirky is the setup — it's basically a summer camp for adults. B
     whyItsQuirky: "An adventure activity basecamp where you sleep, eat, and play with fellow thrill-seekers. Summer camp vibes, adult adventures.",
     perfectFor: "Solo travelers, adventure groups, anyone who wants to coasteer and make friends",
     bookingUrl: "https://www.preseliventure.co.uk",
-    image: "/images/accommodation/quirky/preseli-venture.jpg",
+    image: "/images/regions/pembrokeshire-hero.jpg",
   },
 ];
 

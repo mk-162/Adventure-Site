@@ -1,0 +1,5496 @@
+[
+  {
+    "name": "Green Man Festival",
+    "location": "Brecon Beacons",
+    "region": "Brecon Beacons",
+    "description": "Green Man isn't just a music festival; it's a temporary escape into a world of art, science, and Welsh folklore nestled in the stunning Brecon Beacons. Dedicated areas for children and families make it a perfect family adventure.",
+    "date": "August",
+    "type": "Festival",
+    "url": "https://www.greenman.net",
+    "cost": "Ticketed",
+    "tags": [
+      "festival",
+      "music",
+      "family",
+      "outdoors"
+    ]
+  },
+  {
+    "name": "Hay Festival",
+    "location": "Hay-on-Wye",
+    "region": "Mid Wales",
+    "description": "The world-famous literary festival offering a huge programme for children and families, dubbed 'Haydays', featuring authors, workshops, and creative activities.",
+    "date": "May - June",
+    "type": "Festival",
+    "url": "https://www.hayfestival.com",
+    "cost": "Ticketed",
+    "tags": [
+      "festival",
+      "arts",
+      "family",
+      "educational"
+    ]
+  },
+  {
+    "name": "Royal Welsh Agricultural Show",
+    "location": "Builth Wells",
+    "region": "Mid Wales",
+    "description": "The pinnacle of the British agricultural calendar. A massive four-day event showcasing Welsh livestock, food, and rural life. Huge amounts of entertainment for kids and families.",
+    "date": "July",
+    "type": "Show",
+    "url": "https://rwas.wales/royal-welsh-show/",
+    "cost": "Ticketed",
+    "tags": [
+      "show",
+      "farming",
+      "animals",
+      "family"
+    ]
+  },
+  {
+    "name": "Wales Airshow",
+    "location": "Swansea Bay",
+    "region": "South Wales",
+    "description": "A spectacular two-day aerial extravaganza over Swansea Bay. Watch the Red Arrows and other displays from the beach. Completely free to attend.",
+    "date": "July",
+    "type": "Show",
+    "url": "https://www.walesairshow.com",
+    "cost": "Free",
+    "tags": [
+      "show",
+      "aviation",
+      "family",
+      "free"
+    ]
+  },
+  {
+    "name": "National Eisteddfod",
+    "location": "Varies (Wales)",
+    "region": "Wales",
+    "description": "A celebration of Welsh culture, language, and arts. The 'Maes' offers a family-friendly environment with plenty of activities for children, music, and food.",
+    "date": "August",
+    "type": "Festival",
+    "url": "https://eisteddfod.wales",
+    "cost": "Ticketed",
+    "tags": [
+      "festival",
+      "culture",
+      "family",
+      "welsh"
+    ]
+  },
+  {
+    "name": "Llangollen International Musical Eisteddfod",
+    "location": "Llangollen",
+    "region": "North Wales",
+    "description": "Each year around 4,000 performers from across the globe head to the small Welsh town of Llangollen. A colorful, vibrant family-friendly festival promoting peace and goodwill.",
+    "date": "July",
+    "type": "Festival",
+    "url": "https://international-eisteddfod.co.uk",
+    "cost": "Ticketed",
+    "tags": [
+      "festival",
+      "music",
+      "culture",
+      "family"
+    ]
+  },
+  {
+    "name": "The Good Life Society Summer Camp",
+    "location": "Hawarden",
+    "region": "North Wales",
+    "description": "Intimate, boutique gatherings focused on the great outdoors, craft, music, and food. Very family-oriented with a focus on nature connection.",
+    "date": "Summer",
+    "type": "Festival",
+    "url": "https://thegoodlifesociety.co.uk",
+    "cost": "Ticketed",
+    "tags": [
+      "festival",
+      "outdoors",
+      "craft",
+      "family"
+    ]
+  },
+  {
+    "name": "Cardiff Bay Water Festival",
+    "location": "Cardiff Bay",
+    "region": "South Wales",
+    "description": "A multi-sport event featuring open water swimming, SUP races, and kayaking. Families are welcome to enjoy the festival atmosphere and shorter courses.",
+    "date": "July",
+    "type": "Festival",
+    "url": "https://www.cardiffharbour.com",
+    "cost": "Free to watch",
+    "tags": [
+      "festival",
+      "watersports",
+      "family",
+      "outdoors"
+    ]
+  },
+  {
+    "name": "Snowdonia Walking Festival",
+    "location": "Betws-y-Coed",
+    "region": "Snowdonia",
+    "description": "Guided walks for all abilities, including family-friendly rambles, to explore the stunning trails of Snowdonia National Park.",
+    "date": "October",
+    "type": "Festival",
+    "url": "https://www.snowdonia.gov.wales",
+    "cost": "Varies",
+    "tags": [
+      "walking",
+      "nature",
+      "family",
+      "outdoors"
+    ]
+  },
+  {
+    "name": "Pembrokeshire Coast Path Festival",
+    "location": "Pembrokeshire",
+    "region": "Pembrokeshire",
+    "description": "Guided walks, workshops, and talks celebrating the coast path. Includes family-friendly walks suitable for children.",
+    "date": "May",
+    "type": "Festival",
+    "url": "https://www.pembrokeshirecoast.org.uk",
+    "cost": "Varies",
+    "tags": [
+      "walking",
+      "coast",
+      "nature",
+      "family"
+    ]
+  },
+  {
+    "name": "Winter Walk at Dyffryn Gardens",
+    "location": "Dyffryn Gardens",
+    "region": "South Wales",
+    "description": "A quiet winter walk is a great way to look after your body and mind. Explore the gardens and see the winter blooms.",
+    "date": "February",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/dyffryn-gardens",
+    "cost": "Entry fee",
+    "tags": [
+      "walking",
+      "garden",
+      "winter",
+      "nature"
+    ]
+  },
+  {
+    "name": "Junior Parkrun at Plas Newydd",
+    "location": "Plas Newydd House and Garden",
+    "region": "Anglesey",
+    "description": "A free, fun, and friendly weekly 2k event for juniors (4 to 14 year olds). Held every Sunday morning.",
+    "date": "Sundays",
+    "type": "Sport",
+    "url": "https://www.nationaltrust.org.uk/plas-newydd-house-and-garden",
+    "cost": "Free",
+    "tags": [
+      "running",
+      "kids",
+      "active",
+      "outdoors"
+    ]
+  },
+  {
+    "name": "Stackpole Striders",
+    "location": "Stackpole Estate",
+    "region": "Pembrokeshire",
+    "description": "Join us for a free run or walk with amazing views of the landscape. Suitable for all abilities.",
+    "date": "Recurring",
+    "type": "Nature",
+    "url": "https://www.nationaltrust.org.uk/stackpole",
+    "cost": "Free",
+    "tags": [
+      "walking",
+      "running",
+      "nature",
+      "community"
+    ]
+  },
+  {
+    "name": "Coffee Morning at Stackpole Centre",
+    "location": "Stackpole Estate",
+    "region": "Pembrokeshire",
+    "description": "Join us for an informative coffee morning at Stackpole centre to learn more about the estate and our work.",
+    "date": "February 7",
+    "type": "Community",
+    "url": "https://www.nationaltrust.org.uk/stackpole",
+    "cost": "Free",
+    "tags": [
+      "community",
+      "talk",
+      "indoor"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Bodnant Garden",
+    "location": "Bodnant Garden",
+    "region": "North Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/bodnant-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "garden"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Bodnant Garden",
+    "location": "Bodnant Garden",
+    "region": "North Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/bodnant-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "garden"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Bodnant Garden",
+    "location": "Bodnant Garden",
+    "region": "North Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/bodnant-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "garden"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Bodnant Garden",
+    "location": "Bodnant Garden",
+    "region": "North Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/bodnant-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "garden"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Bodnant Garden",
+    "location": "Bodnant Garden",
+    "region": "North Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/bodnant-garden",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "garden"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Penrhyn Castle",
+    "location": "Penrhyn Castle",
+    "region": "North Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/penrhyn-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Penrhyn Castle",
+    "location": "Penrhyn Castle",
+    "region": "North Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/penrhyn-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Penrhyn Castle",
+    "location": "Penrhyn Castle",
+    "region": "North Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/penrhyn-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Penrhyn Castle",
+    "location": "Penrhyn Castle",
+    "region": "North Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/penrhyn-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Penrhyn Castle",
+    "location": "Penrhyn Castle",
+    "region": "North Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/penrhyn-castle",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Plas Newydd House and Garden",
+    "location": "Plas Newydd House and Garden",
+    "region": "Anglesey",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/plas-newydd-house-and-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Plas Newydd House and Garden",
+    "location": "Plas Newydd House and Garden",
+    "region": "Anglesey",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/plas-newydd-house-and-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Plas Newydd House and Garden",
+    "location": "Plas Newydd House and Garden",
+    "region": "Anglesey",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/plas-newydd-house-and-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Plas Newydd House and Garden",
+    "location": "Plas Newydd House and Garden",
+    "region": "Anglesey",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/plas-newydd-house-and-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Plas Newydd House and Garden",
+    "location": "Plas Newydd House and Garden",
+    "region": "Anglesey",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/plas-newydd-house-and-garden",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Erddig",
+    "location": "Erddig",
+    "region": "North Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/erddig",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Erddig",
+    "location": "Erddig",
+    "region": "North Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/erddig",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Erddig",
+    "location": "Erddig",
+    "region": "North Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/erddig",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Erddig",
+    "location": "Erddig",
+    "region": "North Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/erddig",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Erddig",
+    "location": "Erddig",
+    "region": "North Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/erddig",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Chirk Castle",
+    "location": "Chirk Castle",
+    "region": "North Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/chirk-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Chirk Castle",
+    "location": "Chirk Castle",
+    "region": "North Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/chirk-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Chirk Castle",
+    "location": "Chirk Castle",
+    "region": "North Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/chirk-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Chirk Castle",
+    "location": "Chirk Castle",
+    "region": "North Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/chirk-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Chirk Castle",
+    "location": "Chirk Castle",
+    "region": "North Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/chirk-castle",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Powis Castle and Garden",
+    "location": "Powis Castle and Garden",
+    "region": "Mid Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/powis-castle-and-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Powis Castle and Garden",
+    "location": "Powis Castle and Garden",
+    "region": "Mid Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/powis-castle-and-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Powis Castle and Garden",
+    "location": "Powis Castle and Garden",
+    "region": "Mid Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/powis-castle-and-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Powis Castle and Garden",
+    "location": "Powis Castle and Garden",
+    "region": "Mid Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/powis-castle-and-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Powis Castle and Garden",
+    "location": "Powis Castle and Garden",
+    "region": "Mid Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/powis-castle-and-garden",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Dyffryn Gardens",
+    "location": "Dyffryn Gardens",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/dyffryn-gardens",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "garden"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Dyffryn Gardens",
+    "location": "Dyffryn Gardens",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/dyffryn-gardens",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "garden"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Dyffryn Gardens",
+    "location": "Dyffryn Gardens",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/dyffryn-gardens",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "garden"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Dyffryn Gardens",
+    "location": "Dyffryn Gardens",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/dyffryn-gardens",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "garden"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Dyffryn Gardens",
+    "location": "Dyffryn Gardens",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/dyffryn-gardens",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "garden"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Tredegar House",
+    "location": "Tredegar House",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/tredegar-house",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Tredegar House",
+    "location": "Tredegar House",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/tredegar-house",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Tredegar House",
+    "location": "Tredegar House",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/tredegar-house",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Tredegar House",
+    "location": "Tredegar House",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/tredegar-house",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Tredegar House",
+    "location": "Tredegar House",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/tredegar-house",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Colby Woodland Garden",
+    "location": "Colby Woodland Garden",
+    "region": "Pembrokeshire",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/colby-woodland-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "garden"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Colby Woodland Garden",
+    "location": "Colby Woodland Garden",
+    "region": "Pembrokeshire",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/colby-woodland-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "garden"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Colby Woodland Garden",
+    "location": "Colby Woodland Garden",
+    "region": "Pembrokeshire",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/colby-woodland-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "garden"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Colby Woodland Garden",
+    "location": "Colby Woodland Garden",
+    "region": "Pembrokeshire",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/colby-woodland-garden",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "garden"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Colby Woodland Garden",
+    "location": "Colby Woodland Garden",
+    "region": "Pembrokeshire",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Garden",
+    "url": "https://www.nationaltrust.org.uk/colby-woodland-garden",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "garden"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Stackpole Estate",
+    "location": "Stackpole Estate",
+    "region": "Pembrokeshire",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Nature",
+    "url": "https://www.nationaltrust.org.uk/stackpole",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "nature"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Stackpole Estate",
+    "location": "Stackpole Estate",
+    "region": "Pembrokeshire",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Nature",
+    "url": "https://www.nationaltrust.org.uk/stackpole",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "nature"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Stackpole Estate",
+    "location": "Stackpole Estate",
+    "region": "Pembrokeshire",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Nature",
+    "url": "https://www.nationaltrust.org.uk/stackpole",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "nature"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Stackpole Estate",
+    "location": "Stackpole Estate",
+    "region": "Pembrokeshire",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Nature",
+    "url": "https://www.nationaltrust.org.uk/stackpole",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "nature"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Stackpole Estate",
+    "location": "Stackpole Estate",
+    "region": "Pembrokeshire",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Nature",
+    "url": "https://www.nationaltrust.org.uk/stackpole",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "nature"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at Stackpole Estate",
+    "location": "Stackpole Estate",
+    "region": "Pembrokeshire",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Nature",
+    "url": "https://www.nationaltrust.org.uk/stackpole",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "nature"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Dinefwr",
+    "location": "Dinefwr",
+    "region": "Carmarthenshire",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/dinefwr",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Dinefwr",
+    "location": "Dinefwr",
+    "region": "Carmarthenshire",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/dinefwr",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Dinefwr",
+    "location": "Dinefwr",
+    "region": "Carmarthenshire",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/dinefwr",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Dinefwr",
+    "location": "Dinefwr",
+    "region": "Carmarthenshire",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/dinefwr",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Dinefwr",
+    "location": "Dinefwr",
+    "region": "Carmarthenshire",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/dinefwr",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Llanerchaeron",
+    "location": "Llanerchaeron",
+    "region": "Mid Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/llanerchaeron",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Llanerchaeron",
+    "location": "Llanerchaeron",
+    "region": "Mid Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/llanerchaeron",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Llanerchaeron",
+    "location": "Llanerchaeron",
+    "region": "Mid Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/llanerchaeron",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Llanerchaeron",
+    "location": "Llanerchaeron",
+    "region": "Mid Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/llanerchaeron",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Llanerchaeron",
+    "location": "Llanerchaeron",
+    "region": "Mid Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/llanerchaeron",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Plas yn Rhiw",
+    "location": "Plas yn Rhiw",
+    "region": "Ll\u0177n Peninsula",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/plas-yn-rhiw",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Plas yn Rhiw",
+    "location": "Plas yn Rhiw",
+    "region": "Ll\u0177n Peninsula",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/plas-yn-rhiw",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Plas yn Rhiw",
+    "location": "Plas yn Rhiw",
+    "region": "Ll\u0177n Peninsula",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/plas-yn-rhiw",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Plas yn Rhiw",
+    "location": "Plas yn Rhiw",
+    "region": "Ll\u0177n Peninsula",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/plas-yn-rhiw",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Plas yn Rhiw",
+    "location": "Plas yn Rhiw",
+    "region": "Ll\u0177n Peninsula",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://www.nationaltrust.org.uk/plas-yn-rhiw",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Caerphilly Castle",
+    "location": "Caerphilly Castle",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/caerphilly-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Caerphilly Castle",
+    "location": "Caerphilly Castle",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/caerphilly-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Caerphilly Castle",
+    "location": "Caerphilly Castle",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/caerphilly-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Caerphilly Castle",
+    "location": "Caerphilly Castle",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/caerphilly-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Caerphilly Castle",
+    "location": "Caerphilly Castle",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/caerphilly-castle",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Conwy Castle",
+    "location": "Conwy Castle",
+    "region": "North Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/conwy-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Conwy Castle",
+    "location": "Conwy Castle",
+    "region": "North Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/conwy-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Conwy Castle",
+    "location": "Conwy Castle",
+    "region": "North Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/conwy-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Conwy Castle",
+    "location": "Conwy Castle",
+    "region": "North Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/conwy-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Conwy Castle",
+    "location": "Conwy Castle",
+    "region": "North Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/conwy-castle",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Beaumaris Castle",
+    "location": "Beaumaris Castle",
+    "region": "Anglesey",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/beaumaris-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Beaumaris Castle",
+    "location": "Beaumaris Castle",
+    "region": "Anglesey",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/beaumaris-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Beaumaris Castle",
+    "location": "Beaumaris Castle",
+    "region": "Anglesey",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/beaumaris-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Beaumaris Castle",
+    "location": "Beaumaris Castle",
+    "region": "Anglesey",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/beaumaris-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Beaumaris Castle",
+    "location": "Beaumaris Castle",
+    "region": "Anglesey",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/beaumaris-castle",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Caernarfon Castle",
+    "location": "Caernarfon Castle",
+    "region": "North Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/caernarfon-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Caernarfon Castle",
+    "location": "Caernarfon Castle",
+    "region": "North Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/caernarfon-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Caernarfon Castle",
+    "location": "Caernarfon Castle",
+    "region": "North Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/caernarfon-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Caernarfon Castle",
+    "location": "Caernarfon Castle",
+    "region": "North Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/caernarfon-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Caernarfon Castle",
+    "location": "Caernarfon Castle",
+    "region": "North Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/caernarfon-castle",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Harlech Castle",
+    "location": "Harlech Castle",
+    "region": "Snowdonia",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/harlech-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Harlech Castle",
+    "location": "Harlech Castle",
+    "region": "Snowdonia",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/harlech-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Harlech Castle",
+    "location": "Harlech Castle",
+    "region": "Snowdonia",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/harlech-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Harlech Castle",
+    "location": "Harlech Castle",
+    "region": "Snowdonia",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/harlech-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Harlech Castle",
+    "location": "Harlech Castle",
+    "region": "Snowdonia",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/harlech-castle",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Raglan Castle",
+    "location": "Raglan Castle",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/raglan-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Raglan Castle",
+    "location": "Raglan Castle",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/raglan-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Raglan Castle",
+    "location": "Raglan Castle",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/raglan-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Raglan Castle",
+    "location": "Raglan Castle",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/raglan-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Raglan Castle",
+    "location": "Raglan Castle",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/raglan-castle",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Chepstow Castle",
+    "location": "Chepstow Castle",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/chepstow-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Chepstow Castle",
+    "location": "Chepstow Castle",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/chepstow-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Chepstow Castle",
+    "location": "Chepstow Castle",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/chepstow-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Chepstow Castle",
+    "location": "Chepstow Castle",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/chepstow-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Chepstow Castle",
+    "location": "Chepstow Castle",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/chepstow-castle",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Castell Coch",
+    "location": "Castell Coch",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/castell-coch",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Castell Coch",
+    "location": "Castell Coch",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/castell-coch",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Castell Coch",
+    "location": "Castell Coch",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/castell-coch",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Castell Coch",
+    "location": "Castell Coch",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/castell-coch",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Castell Coch",
+    "location": "Castell Coch",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/castell-coch",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Tretower Court and Castle",
+    "location": "Tretower Court and Castle",
+    "region": "Brecon Beacons",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/tretower-court-and-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Tretower Court and Castle",
+    "location": "Tretower Court and Castle",
+    "region": "Brecon Beacons",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/tretower-court-and-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Tretower Court and Castle",
+    "location": "Tretower Court and Castle",
+    "region": "Brecon Beacons",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/tretower-court-and-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Tretower Court and Castle",
+    "location": "Tretower Court and Castle",
+    "region": "Brecon Beacons",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/tretower-court-and-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Tretower Court and Castle",
+    "location": "Tretower Court and Castle",
+    "region": "Brecon Beacons",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/tretower-court-and-castle",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at St Davids Bishop's Palace",
+    "location": "St Davids Bishop's Palace",
+    "region": "Pembrokeshire",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/st-davids-bishops-palace",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at St Davids Bishop's Palace",
+    "location": "St Davids Bishop's Palace",
+    "region": "Pembrokeshire",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/st-davids-bishops-palace",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at St Davids Bishop's Palace",
+    "location": "St Davids Bishop's Palace",
+    "region": "Pembrokeshire",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/st-davids-bishops-palace",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at St Davids Bishop's Palace",
+    "location": "St Davids Bishop's Palace",
+    "region": "Pembrokeshire",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/st-davids-bishops-palace",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at St Davids Bishop's Palace",
+    "location": "St Davids Bishop's Palace",
+    "region": "Pembrokeshire",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/st-davids-bishops-palace",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Kidwelly Castle",
+    "location": "Kidwelly Castle",
+    "region": "Carmarthenshire",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/kidwelly-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Kidwelly Castle",
+    "location": "Kidwelly Castle",
+    "region": "Carmarthenshire",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/kidwelly-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Kidwelly Castle",
+    "location": "Kidwelly Castle",
+    "region": "Carmarthenshire",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/kidwelly-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Kidwelly Castle",
+    "location": "Kidwelly Castle",
+    "region": "Carmarthenshire",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/kidwelly-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Kidwelly Castle",
+    "location": "Kidwelly Castle",
+    "region": "Carmarthenshire",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/kidwelly-castle",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Criccieth Castle",
+    "location": "Criccieth Castle",
+    "region": "Ll\u0177n Peninsula",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/criccieth-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Criccieth Castle",
+    "location": "Criccieth Castle",
+    "region": "Ll\u0177n Peninsula",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/criccieth-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Criccieth Castle",
+    "location": "Criccieth Castle",
+    "region": "Ll\u0177n Peninsula",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/criccieth-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Criccieth Castle",
+    "location": "Criccieth Castle",
+    "region": "Ll\u0177n Peninsula",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/criccieth-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Criccieth Castle",
+    "location": "Criccieth Castle",
+    "region": "Ll\u0177n Peninsula",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/criccieth-castle",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Rhuddlan Castle",
+    "location": "Rhuddlan Castle",
+    "region": "North Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/rhuddlan-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Rhuddlan Castle",
+    "location": "Rhuddlan Castle",
+    "region": "North Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/rhuddlan-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Rhuddlan Castle",
+    "location": "Rhuddlan Castle",
+    "region": "North Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/rhuddlan-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Rhuddlan Castle",
+    "location": "Rhuddlan Castle",
+    "region": "North Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/rhuddlan-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Rhuddlan Castle",
+    "location": "Rhuddlan Castle",
+    "region": "North Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/rhuddlan-castle",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Denbigh Castle",
+    "location": "Denbigh Castle",
+    "region": "North Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/denbigh-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Denbigh Castle",
+    "location": "Denbigh Castle",
+    "region": "North Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/denbigh-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Denbigh Castle",
+    "location": "Denbigh Castle",
+    "region": "North Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/denbigh-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Denbigh Castle",
+    "location": "Denbigh Castle",
+    "region": "North Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/denbigh-castle",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Denbigh Castle",
+    "location": "Denbigh Castle",
+    "region": "North Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://cadw.gov.wales/visit/places-to-visit/denbigh-castle",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at St Fagans National Museum of History",
+    "location": "St Fagans National Museum of History",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://museum.wales/stfagans/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at St Fagans National Museum of History",
+    "location": "St Fagans National Museum of History",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://museum.wales/stfagans/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at St Fagans National Museum of History",
+    "location": "St Fagans National Museum of History",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://museum.wales/stfagans/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at St Fagans National Museum of History",
+    "location": "St Fagans National Museum of History",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://museum.wales/stfagans/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at St Fagans National Museum of History",
+    "location": "St Fagans National Museum of History",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://museum.wales/stfagans/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at National Museum Cardiff",
+    "location": "National Museum Cardiff",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://museum.wales/cardiff/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at National Museum Cardiff",
+    "location": "National Museum Cardiff",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://museum.wales/cardiff/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at National Museum Cardiff",
+    "location": "National Museum Cardiff",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://museum.wales/cardiff/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at National Museum Cardiff",
+    "location": "National Museum Cardiff",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://museum.wales/cardiff/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at National Museum Cardiff",
+    "location": "National Museum Cardiff",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://museum.wales/cardiff/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Big Pit National Coal Museum",
+    "location": "Big Pit National Coal Museum",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://museum.wales/bigpit/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Big Pit National Coal Museum",
+    "location": "Big Pit National Coal Museum",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://museum.wales/bigpit/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Big Pit National Coal Museum",
+    "location": "Big Pit National Coal Museum",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://museum.wales/bigpit/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Big Pit National Coal Museum",
+    "location": "Big Pit National Coal Museum",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://museum.wales/bigpit/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Big Pit National Coal Museum",
+    "location": "Big Pit National Coal Museum",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://museum.wales/bigpit/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at National Slate Museum",
+    "location": "National Slate Museum",
+    "region": "Snowdonia",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://museum.wales/slate/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at National Slate Museum",
+    "location": "National Slate Museum",
+    "region": "Snowdonia",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://museum.wales/slate/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at National Slate Museum",
+    "location": "National Slate Museum",
+    "region": "Snowdonia",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://museum.wales/slate/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at National Slate Museum",
+    "location": "National Slate Museum",
+    "region": "Snowdonia",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://museum.wales/slate/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at National Slate Museum",
+    "location": "National Slate Museum",
+    "region": "Snowdonia",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://museum.wales/slate/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at National Wool Museum",
+    "location": "National Wool Museum",
+    "region": "Carmarthenshire",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://museum.wales/wool/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at National Wool Museum",
+    "location": "National Wool Museum",
+    "region": "Carmarthenshire",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://museum.wales/wool/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at National Wool Museum",
+    "location": "National Wool Museum",
+    "region": "Carmarthenshire",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://museum.wales/wool/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at National Wool Museum",
+    "location": "National Wool Museum",
+    "region": "Carmarthenshire",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://museum.wales/wool/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at National Wool Museum",
+    "location": "National Wool Museum",
+    "region": "Carmarthenshire",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://museum.wales/wool/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at National Waterfront Museum",
+    "location": "National Waterfront Museum",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://museum.wales/swansea/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at National Waterfront Museum",
+    "location": "National Waterfront Museum",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://museum.wales/swansea/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at National Waterfront Museum",
+    "location": "National Waterfront Museum",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://museum.wales/swansea/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at National Waterfront Museum",
+    "location": "National Waterfront Museum",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://museum.wales/swansea/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at National Waterfront Museum",
+    "location": "National Waterfront Museum",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://museum.wales/swansea/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at National Roman Legion Museum",
+    "location": "National Roman Legion Museum",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Heritage",
+    "url": "https://museum.wales/roman/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at National Roman Legion Museum",
+    "location": "National Roman Legion Museum",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Heritage",
+    "url": "https://museum.wales/roman/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at National Roman Legion Museum",
+    "location": "National Roman Legion Museum",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Heritage",
+    "url": "https://museum.wales/roman/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at National Roman Legion Museum",
+    "location": "National Roman Legion Museum",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Heritage",
+    "url": "https://museum.wales/roman/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "heritage"
+    ]
+  },
+  {
+    "name": "Festive Season Events at National Roman Legion Museum",
+    "location": "National Roman Legion Museum",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Heritage",
+    "url": "https://museum.wales/roman/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "heritage"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at National Botanic Garden of Wales",
+    "location": "National Botanic Garden of Wales",
+    "region": "Carmarthenshire",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Garden",
+    "url": "https://botanicgarden.wales/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "garden"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at National Botanic Garden of Wales",
+    "location": "National Botanic Garden of Wales",
+    "region": "Carmarthenshire",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Garden",
+    "url": "https://botanicgarden.wales/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "garden"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at National Botanic Garden of Wales",
+    "location": "National Botanic Garden of Wales",
+    "region": "Carmarthenshire",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Garden",
+    "url": "https://botanicgarden.wales/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "garden"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at National Botanic Garden of Wales",
+    "location": "National Botanic Garden of Wales",
+    "region": "Carmarthenshire",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Garden",
+    "url": "https://botanicgarden.wales/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "garden"
+    ]
+  },
+  {
+    "name": "Festive Season Events at National Botanic Garden of Wales",
+    "location": "National Botanic Garden of Wales",
+    "region": "Carmarthenshire",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Garden",
+    "url": "https://botanicgarden.wales/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "garden"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Aberglasney Gardens",
+    "location": "Aberglasney Gardens",
+    "region": "Carmarthenshire",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Garden",
+    "url": "https://aberglasney.org/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "garden"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Aberglasney Gardens",
+    "location": "Aberglasney Gardens",
+    "region": "Carmarthenshire",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Garden",
+    "url": "https://aberglasney.org/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "garden"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Aberglasney Gardens",
+    "location": "Aberglasney Gardens",
+    "region": "Carmarthenshire",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Garden",
+    "url": "https://aberglasney.org/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "garden"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Aberglasney Gardens",
+    "location": "Aberglasney Gardens",
+    "region": "Carmarthenshire",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Garden",
+    "url": "https://aberglasney.org/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "garden"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Aberglasney Gardens",
+    "location": "Aberglasney Gardens",
+    "region": "Carmarthenshire",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Garden",
+    "url": "https://aberglasney.org/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "garden"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Margam Country Park",
+    "location": "Margam Country Park",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Nature",
+    "url": "http://www.margamcountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "nature"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Margam Country Park",
+    "location": "Margam Country Park",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Nature",
+    "url": "http://www.margamcountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "nature"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Margam Country Park",
+    "location": "Margam Country Park",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Nature",
+    "url": "http://www.margamcountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "nature"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Margam Country Park",
+    "location": "Margam Country Park",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Nature",
+    "url": "http://www.margamcountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "nature"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Margam Country Park",
+    "location": "Margam Country Park",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Nature",
+    "url": "http://www.margamcountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "nature"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at Margam Country Park",
+    "location": "Margam Country Park",
+    "region": "South Wales",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Nature",
+    "url": "http://www.margamcountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "nature"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Pembrey Country Park",
+    "location": "Pembrey Country Park",
+    "region": "Carmarthenshire",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Nature",
+    "url": "https://www.pembreycountrypark.wales/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "nature"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Pembrey Country Park",
+    "location": "Pembrey Country Park",
+    "region": "Carmarthenshire",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Nature",
+    "url": "https://www.pembreycountrypark.wales/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "nature"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Pembrey Country Park",
+    "location": "Pembrey Country Park",
+    "region": "Carmarthenshire",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Nature",
+    "url": "https://www.pembreycountrypark.wales/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "nature"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Pembrey Country Park",
+    "location": "Pembrey Country Park",
+    "region": "Carmarthenshire",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Nature",
+    "url": "https://www.pembreycountrypark.wales/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "nature"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Pembrey Country Park",
+    "location": "Pembrey Country Park",
+    "region": "Carmarthenshire",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Nature",
+    "url": "https://www.pembreycountrypark.wales/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "nature"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at Pembrey Country Park",
+    "location": "Pembrey Country Park",
+    "region": "Carmarthenshire",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Nature",
+    "url": "https://www.pembreycountrypark.wales/",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "nature"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Gnoll Estate Country Park",
+    "location": "Gnoll Estate Country Park",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Nature",
+    "url": "http://www.gnollestatecountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "nature"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Gnoll Estate Country Park",
+    "location": "Gnoll Estate Country Park",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Nature",
+    "url": "http://www.gnollestatecountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "nature"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Gnoll Estate Country Park",
+    "location": "Gnoll Estate Country Park",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Nature",
+    "url": "http://www.gnollestatecountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "nature"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Gnoll Estate Country Park",
+    "location": "Gnoll Estate Country Park",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Nature",
+    "url": "http://www.gnollestatecountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "nature"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Gnoll Estate Country Park",
+    "location": "Gnoll Estate Country Park",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Nature",
+    "url": "http://www.gnollestatecountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "nature"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at Gnoll Estate Country Park",
+    "location": "Gnoll Estate Country Park",
+    "region": "South Wales",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Nature",
+    "url": "http://www.gnollestatecountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "nature"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Cosmeston Lakes Country Park",
+    "location": "Cosmeston Lakes Country Park",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Nature",
+    "url": "https://www.valeofglamorgan.gov.uk/en/enjoying/Coast-and-Countryside/Cosmeston-Lakes-Country-Park/Cosmeston-Lakes-Country-Park.aspx",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "nature"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Cosmeston Lakes Country Park",
+    "location": "Cosmeston Lakes Country Park",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Nature",
+    "url": "https://www.valeofglamorgan.gov.uk/en/enjoying/Coast-and-Countryside/Cosmeston-Lakes-Country-Park/Cosmeston-Lakes-Country-Park.aspx",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "nature"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Cosmeston Lakes Country Park",
+    "location": "Cosmeston Lakes Country Park",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Nature",
+    "url": "https://www.valeofglamorgan.gov.uk/en/enjoying/Coast-and-Countryside/Cosmeston-Lakes-Country-Park/Cosmeston-Lakes-Country-Park.aspx",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "nature"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Cosmeston Lakes Country Park",
+    "location": "Cosmeston Lakes Country Park",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Nature",
+    "url": "https://www.valeofglamorgan.gov.uk/en/enjoying/Coast-and-Countryside/Cosmeston-Lakes-Country-Park/Cosmeston-Lakes-Country-Park.aspx",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "nature"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Cosmeston Lakes Country Park",
+    "location": "Cosmeston Lakes Country Park",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Nature",
+    "url": "https://www.valeofglamorgan.gov.uk/en/enjoying/Coast-and-Countryside/Cosmeston-Lakes-Country-Park/Cosmeston-Lakes-Country-Park.aspx",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "nature"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at Cosmeston Lakes Country Park",
+    "location": "Cosmeston Lakes Country Park",
+    "region": "South Wales",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Nature",
+    "url": "https://www.valeofglamorgan.gov.uk/en/enjoying/Coast-and-Countryside/Cosmeston-Lakes-Country-Park/Cosmeston-Lakes-Country-Park.aspx",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "nature"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Bryngarw Country Park",
+    "location": "Bryngarw Country Park",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Nature",
+    "url": "https://www.bryngarwcountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "nature"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Bryngarw Country Park",
+    "location": "Bryngarw Country Park",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Nature",
+    "url": "https://www.bryngarwcountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "nature"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Bryngarw Country Park",
+    "location": "Bryngarw Country Park",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Nature",
+    "url": "https://www.bryngarwcountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "nature"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Bryngarw Country Park",
+    "location": "Bryngarw Country Park",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Nature",
+    "url": "https://www.bryngarwcountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "nature"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Bryngarw Country Park",
+    "location": "Bryngarw Country Park",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Nature",
+    "url": "https://www.bryngarwcountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "nature"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at Bryngarw Country Park",
+    "location": "Bryngarw Country Park",
+    "region": "South Wales",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Nature",
+    "url": "https://www.bryngarwcountrypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "nature"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Welsh Wildlife Centre (Cilgerran)",
+    "location": "Welsh Wildlife Centre (Cilgerran)",
+    "region": "Pembrokeshire",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Wildlife",
+    "url": "https://www.welshwildlife.org/visit/welsh-wildlife-centre",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Welsh Wildlife Centre (Cilgerran)",
+    "location": "Welsh Wildlife Centre (Cilgerran)",
+    "region": "Pembrokeshire",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Wildlife",
+    "url": "https://www.welshwildlife.org/visit/welsh-wildlife-centre",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Welsh Wildlife Centre (Cilgerran)",
+    "location": "Welsh Wildlife Centre (Cilgerran)",
+    "region": "Pembrokeshire",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Wildlife",
+    "url": "https://www.welshwildlife.org/visit/welsh-wildlife-centre",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Welsh Wildlife Centre (Cilgerran)",
+    "location": "Welsh Wildlife Centre (Cilgerran)",
+    "region": "Pembrokeshire",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Wildlife",
+    "url": "https://www.welshwildlife.org/visit/welsh-wildlife-centre",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Welsh Wildlife Centre (Cilgerran)",
+    "location": "Welsh Wildlife Centre (Cilgerran)",
+    "region": "Pembrokeshire",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Wildlife",
+    "url": "https://www.welshwildlife.org/visit/welsh-wildlife-centre",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at Welsh Wildlife Centre (Cilgerran)",
+    "location": "Welsh Wildlife Centre (Cilgerran)",
+    "region": "Pembrokeshire",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Wildlife",
+    "url": "https://www.welshwildlife.org/visit/welsh-wildlife-centre",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at RSPB Conwy",
+    "location": "RSPB Conwy",
+    "region": "North Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/conwy/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at RSPB Conwy",
+    "location": "RSPB Conwy",
+    "region": "North Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/conwy/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at RSPB Conwy",
+    "location": "RSPB Conwy",
+    "region": "North Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/conwy/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at RSPB Conwy",
+    "location": "RSPB Conwy",
+    "region": "North Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/conwy/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Festive Season Events at RSPB Conwy",
+    "location": "RSPB Conwy",
+    "region": "North Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/conwy/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at RSPB Conwy",
+    "location": "RSPB Conwy",
+    "region": "North Wales",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/conwy/",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at RSPB Ynys-hir",
+    "location": "RSPB Ynys-hir",
+    "region": "Mid Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/ynys-hir/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at RSPB Ynys-hir",
+    "location": "RSPB Ynys-hir",
+    "region": "Mid Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/ynys-hir/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at RSPB Ynys-hir",
+    "location": "RSPB Ynys-hir",
+    "region": "Mid Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/ynys-hir/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at RSPB Ynys-hir",
+    "location": "RSPB Ynys-hir",
+    "region": "Mid Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/ynys-hir/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Festive Season Events at RSPB Ynys-hir",
+    "location": "RSPB Ynys-hir",
+    "region": "Mid Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/ynys-hir/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at RSPB Ynys-hir",
+    "location": "RSPB Ynys-hir",
+    "region": "Mid Wales",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/ynys-hir/",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at RSPB Newport Wetlands",
+    "location": "RSPB Newport Wetlands",
+    "region": "South Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/newport-wetlands/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at RSPB Newport Wetlands",
+    "location": "RSPB Newport Wetlands",
+    "region": "South Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/newport-wetlands/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at RSPB Newport Wetlands",
+    "location": "RSPB Newport Wetlands",
+    "region": "South Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/newport-wetlands/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at RSPB Newport Wetlands",
+    "location": "RSPB Newport Wetlands",
+    "region": "South Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/newport-wetlands/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Festive Season Events at RSPB Newport Wetlands",
+    "location": "RSPB Newport Wetlands",
+    "region": "South Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/newport-wetlands/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at RSPB Newport Wetlands",
+    "location": "RSPB Newport Wetlands",
+    "region": "South Wales",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/newport-wetlands/",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at RSPB South Stack",
+    "location": "RSPB South Stack",
+    "region": "Anglesey",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/south-stack-cliffs/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at RSPB South Stack",
+    "location": "RSPB South Stack",
+    "region": "Anglesey",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/south-stack-cliffs/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at RSPB South Stack",
+    "location": "RSPB South Stack",
+    "region": "Anglesey",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/south-stack-cliffs/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at RSPB South Stack",
+    "location": "RSPB South Stack",
+    "region": "Anglesey",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/south-stack-cliffs/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Festive Season Events at RSPB South Stack",
+    "location": "RSPB South Stack",
+    "region": "Anglesey",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/south-stack-cliffs/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at RSPB South Stack",
+    "location": "RSPB South Stack",
+    "region": "Anglesey",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/south-stack-cliffs/",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at RSPB Lake Vyrnwy",
+    "location": "RSPB Lake Vyrnwy",
+    "region": "Mid Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/lake-vyrnwy/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at RSPB Lake Vyrnwy",
+    "location": "RSPB Lake Vyrnwy",
+    "region": "Mid Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/lake-vyrnwy/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at RSPB Lake Vyrnwy",
+    "location": "RSPB Lake Vyrnwy",
+    "region": "Mid Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/lake-vyrnwy/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at RSPB Lake Vyrnwy",
+    "location": "RSPB Lake Vyrnwy",
+    "region": "Mid Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/lake-vyrnwy/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Festive Season Events at RSPB Lake Vyrnwy",
+    "location": "RSPB Lake Vyrnwy",
+    "region": "Mid Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/lake-vyrnwy/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at RSPB Lake Vyrnwy",
+    "location": "RSPB Lake Vyrnwy",
+    "region": "Mid Wales",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Wildlife",
+    "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/lake-vyrnwy/",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Gigrin Farm Red Kite Feeding Centre",
+    "location": "Gigrin Farm Red Kite Feeding Centre",
+    "region": "Mid Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Wildlife",
+    "url": "https://www.gigrin.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Gigrin Farm Red Kite Feeding Centre",
+    "location": "Gigrin Farm Red Kite Feeding Centre",
+    "region": "Mid Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Wildlife",
+    "url": "https://www.gigrin.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Gigrin Farm Red Kite Feeding Centre",
+    "location": "Gigrin Farm Red Kite Feeding Centre",
+    "region": "Mid Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Wildlife",
+    "url": "https://www.gigrin.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Gigrin Farm Red Kite Feeding Centre",
+    "location": "Gigrin Farm Red Kite Feeding Centre",
+    "region": "Mid Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Wildlife",
+    "url": "https://www.gigrin.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Gigrin Farm Red Kite Feeding Centre",
+    "location": "Gigrin Farm Red Kite Feeding Centre",
+    "region": "Mid Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Wildlife",
+    "url": "https://www.gigrin.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at Gigrin Farm Red Kite Feeding Centre",
+    "location": "Gigrin Farm Red Kite Feeding Centre",
+    "region": "Mid Wales",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Wildlife",
+    "url": "https://www.gigrin.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Skomer Island",
+    "location": "Skomer Island",
+    "region": "Pembrokeshire",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Wildlife",
+    "url": "https://www.welshwildlife.org/visit/skomer-island",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Skomer Island",
+    "location": "Skomer Island",
+    "region": "Pembrokeshire",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Wildlife",
+    "url": "https://www.welshwildlife.org/visit/skomer-island",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Skomer Island",
+    "location": "Skomer Island",
+    "region": "Pembrokeshire",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Wildlife",
+    "url": "https://www.welshwildlife.org/visit/skomer-island",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Skomer Island",
+    "location": "Skomer Island",
+    "region": "Pembrokeshire",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Wildlife",
+    "url": "https://www.welshwildlife.org/visit/skomer-island",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Skomer Island",
+    "location": "Skomer Island",
+    "region": "Pembrokeshire",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Wildlife",
+    "url": "https://www.welshwildlife.org/visit/skomer-island",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at Skomer Island",
+    "location": "Skomer Island",
+    "region": "Pembrokeshire",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Wildlife",
+    "url": "https://www.welshwildlife.org/visit/skomer-island",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Greenwood Family Park",
+    "location": "Greenwood Family Park",
+    "region": "North Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Family",
+    "url": "https://www.greenwoodfamilypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "family"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Greenwood Family Park",
+    "location": "Greenwood Family Park",
+    "region": "North Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Family",
+    "url": "https://www.greenwoodfamilypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "family"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Greenwood Family Park",
+    "location": "Greenwood Family Park",
+    "region": "North Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Family",
+    "url": "https://www.greenwoodfamilypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "family"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Greenwood Family Park",
+    "location": "Greenwood Family Park",
+    "region": "North Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Family",
+    "url": "https://www.greenwoodfamilypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "family"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Greenwood Family Park",
+    "location": "Greenwood Family Park",
+    "region": "North Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Family",
+    "url": "https://www.greenwoodfamilypark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "family"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Folly Farm Adventure Park and Zoo",
+    "location": "Folly Farm Adventure Park and Zoo",
+    "region": "Pembrokeshire",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Family",
+    "url": "https://www.folly-farm.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "family"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Folly Farm Adventure Park and Zoo",
+    "location": "Folly Farm Adventure Park and Zoo",
+    "region": "Pembrokeshire",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Family",
+    "url": "https://www.folly-farm.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "family"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Folly Farm Adventure Park and Zoo",
+    "location": "Folly Farm Adventure Park and Zoo",
+    "region": "Pembrokeshire",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Family",
+    "url": "https://www.folly-farm.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "family"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Folly Farm Adventure Park and Zoo",
+    "location": "Folly Farm Adventure Park and Zoo",
+    "region": "Pembrokeshire",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Family",
+    "url": "https://www.folly-farm.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "family"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Folly Farm Adventure Park and Zoo",
+    "location": "Folly Farm Adventure Park and Zoo",
+    "region": "Pembrokeshire",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Family",
+    "url": "https://www.folly-farm.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "family"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Manor Wildlife Park",
+    "location": "Manor Wildlife Park",
+    "region": "Pembrokeshire",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Family",
+    "url": "https://www.manorwildlifepark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "family"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Manor Wildlife Park",
+    "location": "Manor Wildlife Park",
+    "region": "Pembrokeshire",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Family",
+    "url": "https://www.manorwildlifepark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "family"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Manor Wildlife Park",
+    "location": "Manor Wildlife Park",
+    "region": "Pembrokeshire",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Family",
+    "url": "https://www.manorwildlifepark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "family"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Manor Wildlife Park",
+    "location": "Manor Wildlife Park",
+    "region": "Pembrokeshire",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Family",
+    "url": "https://www.manorwildlifepark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "family"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Manor Wildlife Park",
+    "location": "Manor Wildlife Park",
+    "region": "Pembrokeshire",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Family",
+    "url": "https://www.manorwildlifepark.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "family"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Welsh Mountain Zoo",
+    "location": "Welsh Mountain Zoo",
+    "region": "North Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Wildlife",
+    "url": "https://www.welshmountainzoo.org/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Welsh Mountain Zoo",
+    "location": "Welsh Mountain Zoo",
+    "region": "North Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Wildlife",
+    "url": "https://www.welshmountainzoo.org/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Welsh Mountain Zoo",
+    "location": "Welsh Mountain Zoo",
+    "region": "North Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Wildlife",
+    "url": "https://www.welshmountainzoo.org/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Welsh Mountain Zoo",
+    "location": "Welsh Mountain Zoo",
+    "region": "North Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Wildlife",
+    "url": "https://www.welshmountainzoo.org/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Welsh Mountain Zoo",
+    "location": "Welsh Mountain Zoo",
+    "region": "North Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Wildlife",
+    "url": "https://www.welshmountainzoo.org/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at Welsh Mountain Zoo",
+    "location": "Welsh Mountain Zoo",
+    "region": "North Wales",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Wildlife",
+    "url": "https://www.welshmountainzoo.org/",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "wildlife"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at National Showcaves Centre for Wales (Dan yr Ogof)",
+    "location": "National Showcaves Centre for Wales (Dan yr Ogof)",
+    "region": "Brecon Beacons",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Nature",
+    "url": "https://www.showcaves.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "nature"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at National Showcaves Centre for Wales (Dan yr Ogof)",
+    "location": "National Showcaves Centre for Wales (Dan yr Ogof)",
+    "region": "Brecon Beacons",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Nature",
+    "url": "https://www.showcaves.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "nature"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at National Showcaves Centre for Wales (Dan yr Ogof)",
+    "location": "National Showcaves Centre for Wales (Dan yr Ogof)",
+    "region": "Brecon Beacons",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Nature",
+    "url": "https://www.showcaves.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "nature"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at National Showcaves Centre for Wales (Dan yr Ogof)",
+    "location": "National Showcaves Centre for Wales (Dan yr Ogof)",
+    "region": "Brecon Beacons",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Nature",
+    "url": "https://www.showcaves.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "nature"
+    ]
+  },
+  {
+    "name": "Festive Season Events at National Showcaves Centre for Wales (Dan yr Ogof)",
+    "location": "National Showcaves Centre for Wales (Dan yr Ogof)",
+    "region": "Brecon Beacons",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Nature",
+    "url": "https://www.showcaves.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "nature"
+    ]
+  },
+  {
+    "name": "Seasonal Wildlife Spotting at National Showcaves Centre for Wales (Dan yr Ogof)",
+    "location": "National Showcaves Centre for Wales (Dan yr Ogof)",
+    "region": "Brecon Beacons",
+    "description": "Discover the changing wildlife of the season. From spring arrivals to autumn migrants, there's always something to see.",
+    "date": "All Year",
+    "type": "Nature",
+    "url": "https://www.showcaves.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "wildlife",
+      "nature",
+      "educational",
+      "nature"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Zip World (Various)",
+    "location": "Zip World (Various)",
+    "region": "North Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Family",
+    "url": "https://www.zipworld.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "family"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Zip World (Various)",
+    "location": "Zip World (Various)",
+    "region": "North Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Family",
+    "url": "https://www.zipworld.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "family"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Zip World (Various)",
+    "location": "Zip World (Various)",
+    "region": "North Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Family",
+    "url": "https://www.zipworld.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "family"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Zip World (Various)",
+    "location": "Zip World (Various)",
+    "region": "North Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Family",
+    "url": "https://www.zipworld.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "family"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Zip World (Various)",
+    "location": "Zip World (Various)",
+    "region": "North Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Family",
+    "url": "https://www.zipworld.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "family"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Ffestiniog & Welsh Highland Railways",
+    "location": "Ffestiniog & Welsh Highland Railways",
+    "region": "Snowdonia",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Family",
+    "url": "https://www.festrail.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "family"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Ffestiniog & Welsh Highland Railways",
+    "location": "Ffestiniog & Welsh Highland Railways",
+    "region": "Snowdonia",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Family",
+    "url": "https://www.festrail.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "family"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Ffestiniog & Welsh Highland Railways",
+    "location": "Ffestiniog & Welsh Highland Railways",
+    "region": "Snowdonia",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Family",
+    "url": "https://www.festrail.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "family"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Ffestiniog & Welsh Highland Railways",
+    "location": "Ffestiniog & Welsh Highland Railways",
+    "region": "Snowdonia",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Family",
+    "url": "https://www.festrail.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "family"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Ffestiniog & Welsh Highland Railways",
+    "location": "Ffestiniog & Welsh Highland Railways",
+    "region": "Snowdonia",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Family",
+    "url": "https://www.festrail.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "family"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Talyllyn Railway",
+    "location": "Talyllyn Railway",
+    "region": "Mid Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Family",
+    "url": "https://www.talyllyn.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "family"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Talyllyn Railway",
+    "location": "Talyllyn Railway",
+    "region": "Mid Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Family",
+    "url": "https://www.talyllyn.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "family"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Talyllyn Railway",
+    "location": "Talyllyn Railway",
+    "region": "Mid Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Family",
+    "url": "https://www.talyllyn.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "family"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Talyllyn Railway",
+    "location": "Talyllyn Railway",
+    "region": "Mid Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Family",
+    "url": "https://www.talyllyn.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "family"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Talyllyn Railway",
+    "location": "Talyllyn Railway",
+    "region": "Mid Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Family",
+    "url": "https://www.talyllyn.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "family"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Vale of Rheidol Railway",
+    "location": "Vale of Rheidol Railway",
+    "region": "Mid Wales",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Family",
+    "url": "https://www.rheidolrailway.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "family"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Vale of Rheidol Railway",
+    "location": "Vale of Rheidol Railway",
+    "region": "Mid Wales",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Family",
+    "url": "https://www.rheidolrailway.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "family"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Vale of Rheidol Railway",
+    "location": "Vale of Rheidol Railway",
+    "region": "Mid Wales",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Family",
+    "url": "https://www.rheidolrailway.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "family"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Vale of Rheidol Railway",
+    "location": "Vale of Rheidol Railway",
+    "region": "Mid Wales",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Family",
+    "url": "https://www.rheidolrailway.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "family"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Vale of Rheidol Railway",
+    "location": "Vale of Rheidol Railway",
+    "region": "Mid Wales",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Family",
+    "url": "https://www.rheidolrailway.co.uk/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "family"
+    ]
+  },
+  {
+    "name": "February Half Term Trails at Brecon Mountain Railway",
+    "location": "Brecon Mountain Railway",
+    "region": "Brecon Beacons",
+    "description": "Family-friendly trails and activities are often held during the February half term. Check the specific venue website for the latest details on what's on.",
+    "date": "February Half Term",
+    "type": "Family",
+    "url": "https://www.bmr.wales/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "outdoors",
+      "trail",
+      "family"
+    ]
+  },
+  {
+    "name": "Easter Holiday Activities at Brecon Mountain Railway",
+    "location": "Brecon Mountain Railway",
+    "region": "Brecon Beacons",
+    "description": "Celebrate Easter with seasonal activities. Many venues host egg hunts, spring trails, and family crafts during the school holidays.",
+    "date": "Easter Holidays",
+    "type": "Family",
+    "url": "https://www.bmr.wales/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "easter",
+      "spring",
+      "family"
+    ]
+  },
+  {
+    "name": "Summer Holiday Adventures at Brecon Mountain Railway",
+    "location": "Brecon Mountain Railway",
+    "region": "Brecon Beacons",
+    "description": "Make the most of the summer break with outdoor family fun. Expect nature trails, games, and special events running throughout the summer holidays.",
+    "date": "July - August",
+    "type": "Family",
+    "url": "https://www.bmr.wales/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "summer",
+      "outdoors",
+      "family"
+    ]
+  },
+  {
+    "name": "Halloween and Autumn Trails at Brecon Mountain Railway",
+    "location": "Brecon Mountain Railway",
+    "region": "Brecon Beacons",
+    "description": "Spooky trails and autumn adventures are a staple at this time of year. Discover fungi, pumpkins, and seasonal stories.",
+    "date": "October Half Term",
+    "type": "Family",
+    "url": "https://www.bmr.wales/",
+    "cost": "Check website",
+    "tags": [
+      "kids",
+      "family",
+      "halloween",
+      "autumn",
+      "family"
+    ]
+  },
+  {
+    "name": "Festive Season Events at Brecon Mountain Railway",
+    "location": "Brecon Mountain Railway",
+    "region": "Brecon Beacons",
+    "description": "Enjoy the magic of the season with festive decorations, winter walks, and holiday-themed activities.",
+    "date": "December",
+    "type": "Family",
+    "url": "https://www.bmr.wales/",
+    "cost": "Check website",
+    "tags": [
+      "family",
+      "christmas",
+      "festive",
+      "winter",
+      "family"
+    ]
+  }
+]

@@ -1,0 +1,1741 @@
+[
+  {
+    "name": "Hay Festival",
+    "description": "World famous literary and arts festival in the book town of Hay-on-Wye.",
+    "location": "Hay-on-Wye",
+    "region": "mid-wales",
+    "category": "festival",
+    "dateStart": "2025-05-22",
+    "month": "May",
+    "website": "https://www.hayfestival.com"
+  },
+  {
+    "name": "Green Man Festival",
+    "description": "Independent music and arts festival in the Brecon Beacons.",
+    "location": "Crickhowell",
+    "region": "mid-wales",
+    "category": "festival",
+    "dateStart": "2025-08-14",
+    "month": "August",
+    "website": "https://www.greenman.net"
+  },
+  {
+    "name": "Royal Welsh Show",
+    "description": "The pinnacle event in the British agricultural calendar.",
+    "location": "Llanelwedd, Builth Wells",
+    "region": "mid-wales",
+    "category": "agricultural-show",
+    "dateStart": "2025-07-21",
+    "month": "July",
+    "website": "https://rwas.wales/royal-welsh-show/"
+  },
+  {
+    "name": "Wales Airshow",
+    "description": "Spectacular aerial displays over Swansea Bay.",
+    "location": "Swansea",
+    "region": "south-wales",
+    "category": "festival",
+    "month": "July",
+    "website": "https://walesairshow.com/"
+  },
+  {
+    "name": "In It Together Festival",
+    "description": "Music and arts festival in Margam.",
+    "location": "Margam",
+    "region": "south-wales",
+    "category": "festival",
+    "month": "May",
+    "website": "https://inittogetherfestival.com/"
+  },
+  {
+    "name": "Pride Cymru",
+    "description": "Wales' biggest celebration of equality and diversity.",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "category": "community",
+    "month": "June",
+    "website": "https://www.pridecymru.com/"
+  },
+  {
+    "name": "Llangollen International Musical Eisteddfod",
+    "description": "A unique celebration of global music and dance.",
+    "location": "Llangollen",
+    "region": "north-wales",
+    "category": "festival",
+    "month": "July",
+    "website": "https://international-eisteddfod.co.uk/"
+  },
+  {
+    "name": "National Eisteddfod",
+    "description": "The largest cultural festival in Europe, celebrating Welsh language and culture.",
+    "location": "Varies",
+    "region": "varies",
+    "category": "festival",
+    "month": "August",
+    "website": "https://eisteddfod.wales/"
+  },
+  {
+    "name": "Swn Festival",
+    "description": "Multi-venue music festival in Cardiff focusing on new music.",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "category": "festival",
+    "month": "October",
+    "website": "https://swnfest.com/"
+  },
+  {
+    "name": "Abergavenny Food Festival",
+    "description": "One of the most high-profile food festivals in the UK.",
+    "location": "Abergavenny",
+    "region": "south-wales",
+    "category": "food-festival",
+    "month": "September",
+    "website": "https://www.abergavennyfoodfestival.com/"
+  },
+  {
+    "name": "Narberth Food Festival",
+    "description": "Lively weekend festival with local producers and chef demos.",
+    "location": "Narberth",
+    "region": "pembrokeshire",
+    "category": "food-festival",
+    "month": "September",
+    "website": "https://www.narberthfoodfestival.com/"
+  },
+  {
+    "name": "Conwy Honey Fair",
+    "description": "One of Britain\u2019s oldest food festivals, dating back over 700 years.",
+    "location": "Conwy",
+    "region": "north-wales",
+    "category": "food-festival",
+    "month": "September",
+    "dateStart": "2025-09-13"
+  },
+  {
+    "name": "Caerphilly Food & Drink Festival",
+    "description": "Town centre festival with culinary delights and street entertainment.",
+    "location": "Caerphilly",
+    "region": "south-wales",
+    "category": "food-festival",
+    "month": "April"
+  },
+  {
+    "name": "Cowbridge Food and Drink Festival",
+    "description": "Food festival taking over the town and Old Hall Gardens.",
+    "location": "Cowbridge",
+    "region": "south-wales",
+    "category": "food-festival",
+    "month": "May"
+  },
+  {
+    "name": "Cardigan River and Food Festival",
+    "description": "Celebrating local food and the River Teifi.",
+    "location": "Cardigan",
+    "region": "mid-wales",
+    "category": "food-festival",
+    "month": "August"
+  },
+  {
+    "name": "Newtown Food Festival",
+    "description": "Free event with Welsh food, drink and music.",
+    "location": "Newtown",
+    "region": "mid-wales",
+    "category": "food-festival",
+    "month": "September"
+  },
+  {
+    "name": "Mold Food and Drink Festival",
+    "description": "Showcasing produce from Mold and surrounding areas.",
+    "location": "Mold",
+    "region": "north-wales",
+    "category": "food-festival",
+    "month": "September"
+  },
+  {
+    "name": "Neath Food and Drink Festival",
+    "description": "Celebration of local produce in Neath's Victorian Market.",
+    "location": "Neath",
+    "region": "south-wales",
+    "category": "food-festival",
+    "month": "October"
+  },
+  {
+    "name": "Llangollen Food Festival",
+    "description": "Delicious local produce and cookery demonstrations.",
+    "location": "Llangollen",
+    "region": "north-wales",
+    "category": "food-festival",
+    "month": "October"
+  },
+  {
+    "name": "Portmeirion Food and Craft Fair",
+    "description": "Festive fair in the stunning Italianate village.",
+    "location": "Portmeirion",
+    "region": "north-wales",
+    "category": "food-festival",
+    "month": "December"
+  },
+  {
+    "name": "Porthcawl Christmas Day Swim",
+    "description": "Annual festive swim raising money for charity.",
+    "location": "Porthcawl",
+    "region": "south-wales",
+    "category": "seasonal",
+    "dateStart": "2025-12-25"
+  },
+  {
+    "name": "Tenby Boxing Day Swim",
+    "description": "Long-standing fancy dress swim on North Beach.",
+    "location": "Tenby",
+    "region": "pembrokeshire",
+    "category": "seasonal",
+    "dateStart": "2025-12-26"
+  },
+  {
+    "name": "Saundersfoot New Year's Day Swim",
+    "description": "Massive festive swim with thousands of participants.",
+    "location": "Saundersfoot",
+    "region": "pembrokeshire",
+    "category": "seasonal",
+    "dateStart": "2026-01-01"
+  },
+  {
+    "name": "Barry Island New Year's Day Swim",
+    "description": "Refreshing dip at Whitmore Bay.",
+    "location": "Barry Island",
+    "region": "south-wales",
+    "category": "seasonal",
+    "dateStart": "2026-01-01"
+  },
+  {
+    "name": "Whole Earth Man v Horse",
+    "description": "Runners compete against horses in Llanwrtyd Wells.",
+    "location": "Llanwrtyd Wells",
+    "region": "mid-wales",
+    "category": "sport",
+    "month": "June"
+  },
+  {
+    "name": "World Bog Snorkelling Championships",
+    "description": "Unique sporting event in the Waen Rhydd peat bog.",
+    "location": "Llanwrtyd Wells",
+    "region": "mid-wales",
+    "category": "sport",
+    "month": "August"
+  },
+  {
+    "name": "Ironman Wales",
+    "description": "Gruelling triathlon hosted in Tenby.",
+    "location": "Tenby",
+    "region": "pembrokeshire",
+    "category": "sport",
+    "month": "September"
+  },
+  {
+    "name": "Cardiff Half Marathon",
+    "description": "One of the UK's biggest and best road races.",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "category": "sport",
+    "month": "October"
+  },
+  {
+    "name": "Royal Welsh Winter Fair",
+    "description": "Prime stock show and Christmas shopping event.",
+    "location": "Llanelwedd",
+    "region": "mid-wales",
+    "category": "agricultural-show",
+    "month": "November"
+  },
+  {
+    "name": "Cardiff Christmas Market",
+    "description": "Crafts and gifts in the city centre.",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "November-December"
+  },
+  {
+    "name": "Swansea Christmas Market",
+    "description": "Festive stalls in Oxford Street.",
+    "location": "Swansea",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "November-December"
+  },
+  {
+    "name": "Llandeilo Festival of Senses",
+    "description": "Pre-Christmas festival of food, art and entertainment.",
+    "location": "Llandeilo",
+    "region": "mid-wales",
+    "category": "seasonal",
+    "month": "November"
+  },
+  {
+    "name": "Hay Festival Winter Weekend",
+    "description": "Literary events, food and vintage fair.",
+    "location": "Hay-on-Wye",
+    "region": "mid-wales",
+    "category": "festival",
+    "month": "November"
+  },
+  {
+    "name": "Wonderwool Wales",
+    "description": "Festival of wool and natural fibres.",
+    "location": "Builth Wells",
+    "region": "mid-wales",
+    "category": "festival",
+    "month": "April"
+  },
+  {
+    "name": "Aberystwyth & Ceredigion County Show",
+    "description": "Agricultural show with livestock and entertainment.",
+    "location": "Aberystwyth",
+    "region": "mid-wales",
+    "category": "agricultural-show",
+    "month": "June"
+  },
+  {
+    "name": "Cardigan County Show",
+    "description": "Livestock judging, dog show and food hall.",
+    "location": "Cardigan",
+    "region": "mid-wales",
+    "category": "agricultural-show",
+    "month": "August"
+  },
+  {
+    "name": "Brecon County Show",
+    "description": "Oldest agricultural society show in the UK.",
+    "location": "Brecon",
+    "region": "mid-wales",
+    "category": "agricultural-show",
+    "month": "August"
+  },
+  {
+    "name": "Anglesey County Show",
+    "description": "Two-day agricultural event at Mona Showground.",
+    "location": "Anglesey",
+    "region": "north-wales",
+    "category": "agricultural-show",
+    "month": "August"
+  },
+  {
+    "name": "Pembrokeshire County Show",
+    "description": "Pembrokeshire's biggest agricultural event.",
+    "location": "Haverfordwest",
+    "region": "pembrokeshire",
+    "category": "agricultural-show",
+    "month": "August"
+  },
+  {
+    "name": "Usk Show",
+    "description": "Celebrating Monmouthshire farming and rural life.",
+    "location": "Usk",
+    "region": "south-wales",
+    "category": "agricultural-show",
+    "month": "September"
+  },
+  {
+    "name": "Between The Trees",
+    "description": "Festival of music, art and nature in woodlands.",
+    "location": "Merthyr Mawr",
+    "region": "south-wales",
+    "category": "festival",
+    "month": "August"
+  },
+  {
+    "name": "The Big Retreat Festival",
+    "description": "Wellness, music and nature festival.",
+    "location": "Lawrenny",
+    "region": "pembrokeshire",
+    "category": "wellness",
+    "month": "May"
+  },
+  {
+    "name": "Tafwyl",
+    "description": "Welsh language arts and culture festival in Cardiff.",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "category": "festival",
+    "month": "July"
+  },
+  {
+    "name": "Focus Wales",
+    "description": "International showcase festival in Wrexham.",
+    "location": "Wrexham",
+    "region": "north-wales",
+    "category": "festival",
+    "month": "May"
+  },
+  {
+    "name": "Machynlleth Comedy Festival",
+    "description": "Comedy festival in the heart of Wales.",
+    "location": "Machynlleth",
+    "region": "mid-wales",
+    "category": "festival",
+    "month": "May"
+  },
+  {
+    "name": "Aberystwyth Comedy Festival",
+    "description": "Comedy by the sea.",
+    "location": "Aberystwyth",
+    "region": "mid-wales",
+    "category": "festival",
+    "month": "October"
+  },
+  {
+    "name": "Laugharne Weekend",
+    "description": "Arts and literary festival celebrating Dylan Thomas.",
+    "location": "Laugharne",
+    "region": "south-wales",
+    "category": "festival",
+    "month": "April"
+  },
+  {
+    "name": "Elvis Festival",
+    "description": "Largest Elvis festival in the world.",
+    "location": "Porthcawl",
+    "region": "south-wales",
+    "category": "festival",
+    "month": "September"
+  },
+  {
+    "name": "Steelhouse Festival",
+    "description": "Classic rock festival on a mountain top.",
+    "location": "Ebbw Vale",
+    "region": "south-wales",
+    "category": "festival",
+    "month": "July"
+  },
+  {
+    "name": "Gottwood Festival",
+    "description": "Electronic music and arts festival.",
+    "location": "Anglesey",
+    "region": "north-wales",
+    "category": "festival",
+    "month": "June"
+  },
+  {
+    "name": "Cardiff Parkrun",
+    "description": "Weekly free 5k timed run at Cardiff. Open to all abilities.",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Newport Parkrun",
+    "description": "Weekly free 5k timed run at Newport. Open to all abilities.",
+    "location": "Newport",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Swansea Bay Parkrun",
+    "description": "Weekly free 5k timed run at Swansea Bay. Open to all abilities.",
+    "location": "Swansea Bay",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Conwy Parkrun",
+    "description": "Weekly free 5k timed run at Conwy. Open to all abilities.",
+    "location": "Conwy",
+    "region": "north-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Penrhyn Parkrun",
+    "description": "Weekly free 5k timed run at Penrhyn. Open to all abilities.",
+    "location": "Penrhyn",
+    "region": "north-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Aberystwyth Parkrun",
+    "description": "Weekly free 5k timed run at Aberystwyth. Open to all abilities.",
+    "location": "Aberystwyth",
+    "region": "mid-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Haverfordwest Parkrun",
+    "description": "Weekly free 5k timed run at Haverfordwest. Open to all abilities.",
+    "location": "Haverfordwest",
+    "region": "pembrokeshire",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Pontypridd Parkrun",
+    "description": "Weekly free 5k timed run at Pontypridd. Open to all abilities.",
+    "location": "Pontypridd",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Barry Island Parkrun",
+    "description": "Weekly free 5k timed run at Barry Island. Open to all abilities.",
+    "location": "Barry Island",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Porthcawl Parkrun",
+    "description": "Weekly free 5k timed run at Porthcawl. Open to all abilities.",
+    "location": "Porthcawl",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Pontypool Parkrun",
+    "description": "Weekly free 5k timed run at Pontypool. Open to all abilities.",
+    "location": "Pontypool",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Cwmbran Parkrun",
+    "description": "Weekly free 5k timed run at Cwmbran. Open to all abilities.",
+    "location": "Cwmbran",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Llanelli Coast Parkrun",
+    "description": "Weekly free 5k timed run at Llanelli Coast. Open to all abilities.",
+    "location": "Llanelli Coast",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Merthyr Tydfil Parkrun",
+    "description": "Weekly free 5k timed run at Merthyr Tydfil. Open to all abilities.",
+    "location": "Merthyr Tydfil",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Brecon Parkrun",
+    "description": "Weekly free 5k timed run at Brecon. Open to all abilities.",
+    "location": "Brecon",
+    "region": "mid-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Newtown Parkrun",
+    "description": "Weekly free 5k timed run at Newtown. Open to all abilities.",
+    "location": "Newtown",
+    "region": "mid-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Dolgellau Parkrun",
+    "description": "Weekly free 5k timed run at Dolgellau. Open to all abilities.",
+    "location": "Dolgellau",
+    "region": "mid-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Colby Parkrun",
+    "description": "Weekly free 5k timed run at Colby. Open to all abilities.",
+    "location": "Colby",
+    "region": "pembrokeshire",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Wepre Parkrun",
+    "description": "Weekly free 5k timed run at Wepre. Open to all abilities.",
+    "location": "Wepre",
+    "region": "north-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Erddig Parkrun",
+    "description": "Weekly free 5k timed run at Erddig. Open to all abilities.",
+    "location": "Erddig",
+    "region": "north-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Gnoll Parkrun",
+    "description": "Weekly free 5k timed run at Gnoll. Open to all abilities.",
+    "location": "Gnoll",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Maesteg Parkrun",
+    "description": "Weekly free 5k timed run at Maesteg. Open to all abilities.",
+    "location": "Maesteg",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Penallta Parkrun",
+    "description": "Weekly free 5k timed run at Penallta. Open to all abilities.",
+    "location": "Penallta",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Rogiet Parkrun",
+    "description": "Weekly free 5k timed run at Rogiet. Open to all abilities.",
+    "location": "Rogiet",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Severn Bridge Parkrun",
+    "description": "Weekly free 5k timed run at Severn Bridge. Open to all abilities.",
+    "location": "Severn Bridge",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Llyn Llech Owain Parkrun",
+    "description": "Weekly free 5k timed run at Llyn Llech Owain. Open to all abilities.",
+    "location": "Llyn Llech Owain",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Nant y Pandy Parkrun",
+    "description": "Weekly free 5k timed run at Nant y Pandy. Open to all abilities.",
+    "location": "Nant y Pandy",
+    "region": "north-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Newborough Forest Parkrun",
+    "description": "Weekly free 5k timed run at Newborough Forest. Open to all abilities.",
+    "location": "Newborough Forest",
+    "region": "north-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Bala Parkrun",
+    "description": "Weekly free 5k timed run at Bala. Open to all abilities.",
+    "location": "Bala",
+    "region": "mid-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Hafan Pwllheli Parkrun",
+    "description": "Weekly free 5k timed run at Hafan Pwllheli. Open to all abilities.",
+    "location": "Hafan Pwllheli",
+    "region": "north-wales",
+    "category": "community",
+    "recurringSchedule": "Every Saturday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Cardiff Riverside Farmers Market",
+    "description": "Local produce market in Cardiff Riverside featuring Welsh food and drink.",
+    "location": "Cardiff Riverside",
+    "region": "south-wales",
+    "category": "market",
+    "recurringSchedule": "Every Sunday",
+    "isRecurring": true
+  },
+  {
+    "name": "Cardiff Roath Farmers Market",
+    "description": "Local produce market in Cardiff Roath featuring Welsh food and drink.",
+    "location": "Cardiff Roath",
+    "region": "south-wales",
+    "category": "market",
+    "recurringSchedule": "Every Saturday",
+    "isRecurring": true
+  },
+  {
+    "name": "Cardiff Rhiwbina Farmers Market",
+    "description": "Local produce market in Cardiff Rhiwbina featuring Welsh food and drink.",
+    "location": "Cardiff Rhiwbina",
+    "region": "south-wales",
+    "category": "market",
+    "recurringSchedule": "Every Friday",
+    "isRecurring": true
+  },
+  {
+    "name": "Swansea Uplands Farmers Market",
+    "description": "Local produce market in Swansea Uplands featuring Welsh food and drink.",
+    "location": "Swansea Uplands",
+    "region": "south-wales",
+    "category": "market",
+    "recurringSchedule": "Last Saturday of month",
+    "isRecurring": true
+  },
+  {
+    "name": "Swansea Marina Farmers Market",
+    "description": "Local produce market in Swansea Marina featuring Welsh food and drink.",
+    "location": "Swansea Marina",
+    "region": "south-wales",
+    "category": "market",
+    "recurringSchedule": "Second Sunday of month",
+    "isRecurring": true
+  },
+  {
+    "name": "Mumbles Farmers Market",
+    "description": "Local produce market in Mumbles featuring Welsh food and drink.",
+    "location": "Mumbles",
+    "region": "south-wales",
+    "category": "market",
+    "recurringSchedule": "Second Saturday of month",
+    "isRecurring": true
+  },
+  {
+    "name": "Aberystwyth Farmers Market",
+    "description": "Local produce market in Aberystwyth featuring Welsh food and drink.",
+    "location": "Aberystwyth",
+    "region": "mid-wales",
+    "category": "market",
+    "recurringSchedule": "First and Third Saturday",
+    "isRecurring": true
+  },
+  {
+    "name": "Haverfordwest Farmers Market",
+    "description": "Local produce market in Haverfordwest featuring Welsh food and drink.",
+    "location": "Haverfordwest",
+    "region": "pembrokeshire",
+    "category": "market",
+    "recurringSchedule": "Every Friday",
+    "isRecurring": true
+  },
+  {
+    "name": "St Davids Farmers Market",
+    "description": "Local produce market in St Davids featuring Welsh food and drink.",
+    "location": "St Davids",
+    "region": "pembrokeshire",
+    "category": "market",
+    "recurringSchedule": "Thursdays (seasonal)",
+    "isRecurring": true
+  },
+  {
+    "name": "Fishguard Farmers Market",
+    "description": "Local produce market in Fishguard featuring Welsh food and drink.",
+    "location": "Fishguard",
+    "region": "pembrokeshire",
+    "category": "market",
+    "recurringSchedule": "Saturday mornings",
+    "isRecurring": true
+  },
+  {
+    "name": "Brecon Farmers Market",
+    "description": "Local produce market in Brecon featuring Welsh food and drink.",
+    "location": "Brecon",
+    "region": "mid-wales",
+    "category": "market",
+    "recurringSchedule": "Second Saturday",
+    "isRecurring": true
+  },
+  {
+    "name": "Hay-on-Wye Farmers Market",
+    "description": "Local produce market in Hay-on-Wye featuring Welsh food and drink.",
+    "location": "Hay-on-Wye",
+    "region": "mid-wales",
+    "category": "market",
+    "recurringSchedule": "Thursdays",
+    "isRecurring": true
+  },
+  {
+    "name": "Llandrindod Wells Farmers Market",
+    "description": "Local produce market in Llandrindod Wells featuring Welsh food and drink.",
+    "location": "Llandrindod Wells",
+    "region": "mid-wales",
+    "category": "market",
+    "recurringSchedule": "Fridays",
+    "isRecurring": true
+  },
+  {
+    "name": "Machynlleth Farmers Market",
+    "description": "Local produce market in Machynlleth featuring Welsh food and drink.",
+    "location": "Machynlleth",
+    "region": "mid-wales",
+    "category": "market",
+    "recurringSchedule": "Wednesdays",
+    "isRecurring": true
+  },
+  {
+    "name": "Newtown Farmers Market",
+    "description": "Local produce market in Newtown featuring Welsh food and drink.",
+    "location": "Newtown",
+    "region": "mid-wales",
+    "category": "market",
+    "recurringSchedule": "Tuesdays",
+    "isRecurring": true
+  },
+  {
+    "name": "Welshpool Farmers Market",
+    "description": "Local produce market in Welshpool featuring Welsh food and drink.",
+    "location": "Welshpool",
+    "region": "mid-wales",
+    "category": "market",
+    "recurringSchedule": "First Friday",
+    "isRecurring": true
+  },
+  {
+    "name": "Cowbridge Farmers Market",
+    "description": "Local produce market in Cowbridge featuring Welsh food and drink.",
+    "location": "Cowbridge",
+    "region": "south-wales",
+    "category": "market",
+    "recurringSchedule": "First and Third Saturday",
+    "isRecurring": true
+  },
+  {
+    "name": "Usk Farmers Market",
+    "description": "Local produce market in Usk featuring Welsh food and drink.",
+    "location": "Usk",
+    "region": "south-wales",
+    "category": "market",
+    "recurringSchedule": "First and Third Saturday",
+    "isRecurring": true
+  },
+  {
+    "name": "Abergavenny Farmers Market",
+    "description": "Local produce market in Abergavenny featuring Welsh food and drink.",
+    "location": "Abergavenny",
+    "region": "south-wales",
+    "category": "market",
+    "recurringSchedule": "Fourth Thursday",
+    "isRecurring": true
+  },
+  {
+    "name": "Chepstow Farmers Market",
+    "description": "Local produce market in Chepstow featuring Welsh food and drink.",
+    "location": "Chepstow",
+    "region": "south-wales",
+    "category": "market",
+    "recurringSchedule": "Second and Fourth Sunday",
+    "isRecurring": true
+  },
+  {
+    "name": "Monmouth Farmers Market",
+    "description": "Local produce market in Monmouth featuring Welsh food and drink.",
+    "location": "Monmouth",
+    "region": "south-wales",
+    "category": "market",
+    "recurringSchedule": "Fridays",
+    "isRecurring": true
+  },
+  {
+    "name": "Carmarthen Farmers Market",
+    "description": "Local produce market in Carmarthen featuring Welsh food and drink.",
+    "location": "Carmarthen",
+    "region": "south-wales",
+    "category": "market",
+    "recurringSchedule": "Wednesdays and Saturdays",
+    "isRecurring": true
+  },
+  {
+    "name": "Llandeilo Farmers Market",
+    "description": "Local produce market in Llandeilo featuring Welsh food and drink.",
+    "location": "Llandeilo",
+    "region": "mid-wales",
+    "category": "market",
+    "recurringSchedule": "First Saturday",
+    "isRecurring": true
+  },
+  {
+    "name": "Pembroke Farmers Market",
+    "description": "Local produce market in Pembroke featuring Welsh food and drink.",
+    "location": "Pembroke",
+    "region": "pembrokeshire",
+    "category": "market",
+    "recurringSchedule": "Fortnightly",
+    "isRecurring": true
+  },
+  {
+    "name": "Tenby Farmers Market",
+    "description": "Local produce market in Tenby featuring Welsh food and drink.",
+    "location": "Tenby",
+    "region": "pembrokeshire",
+    "category": "market",
+    "recurringSchedule": "Seasonal",
+    "isRecurring": true
+  },
+  {
+    "name": "Crickhowell Walking Festival",
+    "description": "Walking festival in Crickhowell offering guided walks for all abilities.",
+    "location": "Crickhowell",
+    "region": "mid-wales",
+    "category": "walking-festival",
+    "month": "March"
+  },
+  {
+    "name": "Chepstow Walking Festival",
+    "description": "Walking festival in Chepstow offering guided walks for all abilities.",
+    "location": "Chepstow",
+    "region": "south-wales",
+    "category": "walking-festival",
+    "month": "April"
+  },
+  {
+    "name": "Talgarth Walking Festival",
+    "description": "Walking festival in Talgarth offering guided walks for all abilities.",
+    "location": "Talgarth",
+    "region": "mid-wales",
+    "category": "walking-festival",
+    "month": "May"
+  },
+  {
+    "name": "Gower Walking Festival",
+    "description": "Walking festival in Gower offering guided walks for all abilities.",
+    "location": "Gower",
+    "region": "south-wales",
+    "category": "walking-festival",
+    "month": "June"
+  },
+  {
+    "name": "Hay Walking Festival",
+    "description": "Walking festival in Hay-on-Wye offering guided walks for all abilities.",
+    "location": "Hay-on-Wye",
+    "region": "mid-wales",
+    "category": "walking-festival",
+    "month": "October"
+  },
+  {
+    "name": "Barmouth Walking Festival",
+    "description": "Walking festival in Barmouth offering guided walks for all abilities.",
+    "location": "Barmouth",
+    "region": "mid-wales",
+    "category": "walking-festival",
+    "month": "September"
+  },
+  {
+    "name": "Prestatyn Walking Festival",
+    "description": "Walking festival in Prestatyn offering guided walks for all abilities.",
+    "location": "Prestatyn",
+    "region": "north-wales",
+    "category": "walking-festival",
+    "month": "May"
+  },
+  {
+    "name": "Wrexham Walking Festival",
+    "description": "Walking festival in Wrexham offering guided walks for all abilities.",
+    "location": "Wrexham",
+    "region": "north-wales",
+    "category": "walking-festival",
+    "month": "June"
+  },
+  {
+    "name": "Kington Walking Festival",
+    "description": "Walking festival in Kington/Border offering guided walks for all abilities.",
+    "location": "Kington/Border",
+    "region": "mid-wales",
+    "category": "walking-festival",
+    "month": "September"
+  },
+  {
+    "name": "Llanwrtyd Wells Walking Festival",
+    "description": "Walking festival in Llanwrtyd Wells offering guided walks for all abilities.",
+    "location": "Llanwrtyd Wells",
+    "region": "mid-wales",
+    "category": "walking-festival",
+    "month": "September"
+  },
+  {
+    "name": "Urdd Eisteddfod",
+    "description": "One of Europe's largest youth touring festivals.",
+    "location": "Margam Park",
+    "region": "south-wales",
+    "category": "festival",
+    "month": "May",
+    "website": "https://www.urdd.cymru/en/eisteddfod/"
+  },
+  {
+    "name": "Swansea Pride",
+    "description": "Celebrating the LGBTQ+ community in Swansea.",
+    "location": "Swansea",
+    "region": "south-wales",
+    "category": "community",
+    "month": "May"
+  },
+  {
+    "name": "North Wales Pride",
+    "description": "Pride event for North Wales.",
+    "location": "Bangor",
+    "region": "north-wales",
+    "category": "community",
+    "month": "July"
+  },
+  {
+    "name": "Long Course Weekend",
+    "description": "Multi-sport festival in Pembrokeshire.",
+    "location": "Tenby",
+    "region": "pembrokeshire",
+    "category": "sport",
+    "month": "June"
+  },
+  {
+    "name": "Dragon Ride",
+    "description": "One of the UK's most prestigious sportives.",
+    "location": "Margam",
+    "region": "south-wales",
+    "category": "sport",
+    "month": "June"
+  },
+  {
+    "name": "Cardiff Triathlon",
+    "description": "Triathlon in Cardiff Bay.",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "category": "sport",
+    "month": "June"
+  },
+  {
+    "name": "Swansea Triathlon",
+    "description": "City centre triathlon.",
+    "location": "Swansea",
+    "region": "south-wales",
+    "category": "sport",
+    "month": "May"
+  },
+  {
+    "name": "Slateman Triathlon",
+    "description": "Adventure triathlon in Snowdonia.",
+    "location": "Llanberis",
+    "region": "north-wales",
+    "category": "sport",
+    "month": "June"
+  },
+  {
+    "name": "Sandman Triathlon",
+    "description": "Triathlon at Newborough Forest.",
+    "location": "Anglesey",
+    "region": "north-wales",
+    "category": "sport",
+    "month": "September"
+  },
+  {
+    "name": "Snowman Triathlon",
+    "description": "The toughest triathlon in the UK.",
+    "location": "Plas y Brenin",
+    "region": "north-wales",
+    "category": "sport",
+    "month": "August"
+  },
+  {
+    "name": "Welsh Perry and Cider Festival",
+    "description": "Celebrating Welsh perry and cider.",
+    "location": "Caldicot",
+    "region": "south-wales",
+    "category": "food-festival",
+    "month": "May"
+  },
+  {
+    "name": "RSPB Conwy Guided Walks",
+    "description": "Regular nature walks at the reserve.",
+    "location": "Conwy",
+    "region": "north-wales",
+    "category": "nature",
+    "recurringSchedule": "Weekly"
+  },
+  {
+    "name": "Newport Wetlands Guided Walks",
+    "description": "Bird watching and nature walks.",
+    "location": "Newport",
+    "region": "south-wales",
+    "category": "nature",
+    "recurringSchedule": "Weekly"
+  },
+  {
+    "name": "WWT Llanelli Wetland Centre Events",
+    "description": "Workshops and guided tours.",
+    "location": "Llanelli",
+    "region": "south-wales",
+    "category": "nature",
+    "recurringSchedule": "Weekly"
+  },
+  {
+    "name": "Elan Valley Dark Skies Events",
+    "description": "Stargazing in the Dark Sky Park.",
+    "location": "Rhayader",
+    "region": "mid-wales",
+    "category": "nature",
+    "month": "Various"
+  },
+  {
+    "name": "Brecon Beacons Dark Sky Festival",
+    "description": "Celebrating the night sky.",
+    "location": "Libanus",
+    "region": "mid-wales",
+    "category": "festival",
+    "month": "September"
+  },
+  {
+    "name": "Porthcawl Jazz Festival",
+    "description": "Jazz by the sea.",
+    "location": "Porthcawl",
+    "region": "south-wales",
+    "category": "festival",
+    "month": "April"
+  },
+  {
+    "name": "Tenby Blues Festival",
+    "description": "Blues music festival.",
+    "location": "Tenby",
+    "region": "pembrokeshire",
+    "category": "festival",
+    "month": "November"
+  },
+  {
+    "name": "Fishguard Folk Festival",
+    "description": "Traditional folk music.",
+    "location": "Fishguard",
+    "region": "pembrokeshire",
+    "category": "festival",
+    "month": "May"
+  },
+  {
+    "name": "Tredegar House Folk Festival",
+    "description": "Folk music and dance.",
+    "location": "Newport",
+    "region": "south-wales",
+    "category": "festival",
+    "month": "May"
+  },
+  {
+    "name": "Merthyr Rising Festival",
+    "description": "Music, arts and political festival.",
+    "location": "Merthyr Tydfil",
+    "region": "south-wales",
+    "category": "festival",
+    "month": "May"
+  },
+  {
+    "name": "Monmouth Festival",
+    "description": "One of the UK's largest free music festivals.",
+    "location": "Monmouth",
+    "region": "south-wales",
+    "category": "festival",
+    "month": "July"
+  },
+  {
+    "name": "Llandudno Victorian Extravaganza",
+    "description": "Victorian street fair and steam engines.",
+    "location": "Llandudno",
+    "region": "north-wales",
+    "category": "festival",
+    "month": "May"
+  },
+  {
+    "name": "Narberth A Cappella Voice Festival",
+    "description": "Celebration of unaccompanied singing.",
+    "location": "Narberth",
+    "region": "pembrokeshire",
+    "category": "festival",
+    "month": "May"
+  },
+  {
+    "name": "Cardiff Food and Drink Festival",
+    "description": "Summer food festival in Cardiff Bay.",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "category": "food-festival",
+    "month": "July"
+  },
+  {
+    "name": "Swansea Fringe",
+    "description": "Music, comedy and arts festival.",
+    "location": "Swansea",
+    "region": "south-wales",
+    "category": "festival",
+    "month": "October"
+  },
+  {
+    "name": "Tenby Arts Festival",
+    "description": "Celebration of arts and culture.",
+    "location": "Tenby",
+    "region": "pembrokeshire",
+    "category": "festival",
+    "month": "September"
+  },
+  {
+    "name": "Gwyl Fwyd Caernarfon",
+    "description": "One of the biggest food festivals in Wales.",
+    "location": "Caernarfon",
+    "region": "north-wales",
+    "category": "food-festival",
+    "month": "May"
+  },
+  {
+    "name": "Beaumaris Food Festival",
+    "description": "Food festival in a stunning castle setting.",
+    "location": "Beaumaris",
+    "region": "north-wales",
+    "category": "food-festival",
+    "month": "September"
+  },
+  {
+    "name": "Llangollen Fringe Festival",
+    "description": "Music, comedy and spoken word.",
+    "location": "Llangollen",
+    "region": "north-wales",
+    "category": "festival",
+    "month": "July"
+  },
+  {
+    "name": "Bellis Brothers Pumpkin Picking",
+    "description": "Annual pumpkin picking event at Wrexham.",
+    "location": "Wrexham",
+    "region": "north-wales",
+    "category": "seasonal",
+    "month": "October"
+  },
+  {
+    "name": "Powell's Farm Pumpkin Picking",
+    "description": "Annual pumpkin picking event at Brecon.",
+    "location": "Brecon",
+    "region": "mid-wales",
+    "category": "seasonal",
+    "month": "October"
+  },
+  {
+    "name": "Forage Farm Pumpkin Picking",
+    "description": "Annual pumpkin picking event at Cowbridge.",
+    "location": "Cowbridge",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "October"
+  },
+  {
+    "name": "Clearwell Farm Pumpkin Picking",
+    "description": "Annual pumpkin picking event at Newport.",
+    "location": "Newport",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "October"
+  },
+  {
+    "name": "Manorfon Farm Pumpkin Picking",
+    "description": "Annual pumpkin picking event at Abergele.",
+    "location": "Abergele",
+    "region": "north-wales",
+    "category": "seasonal",
+    "month": "October"
+  },
+  {
+    "name": "Pembrokeshire Pumpkins Pumpkin Picking",
+    "description": "Annual pumpkin picking event at Moylegrove.",
+    "location": "Moylegrove",
+    "region": "pembrokeshire",
+    "category": "seasonal",
+    "month": "October"
+  },
+  {
+    "name": "Windsor Farm Pumpkin Picking",
+    "description": "Annual pumpkin picking event at Lamphey.",
+    "location": "Lamphey",
+    "region": "pembrokeshire",
+    "category": "seasonal",
+    "month": "October"
+  },
+  {
+    "name": "Brooksgrove Farm Pumpkin Picking",
+    "description": "Annual pumpkin picking event at Haverfordwest.",
+    "location": "Haverfordwest",
+    "region": "pembrokeshire",
+    "category": "seasonal",
+    "month": "October"
+  },
+  {
+    "name": "Ty Poeth Farm Pumpkin Picking",
+    "description": "Annual pumpkin picking event at Pontypool.",
+    "location": "Pontypool",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "October"
+  },
+  {
+    "name": "Billy Bob's Farm Pumpkin Picking",
+    "description": "Annual pumpkin picking event at Llangybi.",
+    "location": "Llangybi",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "October"
+  },
+  {
+    "name": "Cardiff Santa Dash Santa Fun Run",
+    "description": "Annual santa fun run event at Cardiff.",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "December"
+  },
+  {
+    "name": "Newtown Santa Run Santa Fun Run",
+    "description": "Annual santa fun run event at Newtown.",
+    "location": "Newtown",
+    "region": "mid-wales",
+    "category": "seasonal",
+    "month": "December"
+  },
+  {
+    "name": "Llandudno Santa Dash Santa Fun Run",
+    "description": "Annual santa fun run event at Llandudno.",
+    "location": "Llandudno",
+    "region": "north-wales",
+    "category": "seasonal",
+    "month": "December"
+  },
+  {
+    "name": "Barry Island Santa Run Santa Fun Run",
+    "description": "Annual santa fun run event at Barry Island.",
+    "location": "Barry Island",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "December"
+  },
+  {
+    "name": "Aberystwyth Santa Run Santa Fun Run",
+    "description": "Annual santa fun run event at Aberystwyth.",
+    "location": "Aberystwyth",
+    "region": "mid-wales",
+    "category": "seasonal",
+    "month": "December"
+  },
+  {
+    "name": "Tenby Santa Run Santa Fun Run",
+    "description": "Annual santa fun run event at Tenby.",
+    "location": "Tenby",
+    "region": "pembrokeshire",
+    "category": "seasonal",
+    "month": "December"
+  },
+  {
+    "name": "Brecon Santa Run Santa Fun Run",
+    "description": "Annual santa fun run event at Brecon.",
+    "location": "Brecon",
+    "region": "mid-wales",
+    "category": "seasonal",
+    "month": "December"
+  },
+  {
+    "name": "Merthyr Santa Run Santa Fun Run",
+    "description": "Annual santa fun run event at Merthyr Tydfil.",
+    "location": "Merthyr Tydfil",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "December"
+  },
+  {
+    "name": "Pontypool Santa Run Santa Fun Run",
+    "description": "Annual santa fun run event at Pontypool.",
+    "location": "Pontypool",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "December"
+  },
+  {
+    "name": "Swansea Santa Run Santa Fun Run",
+    "description": "Annual santa fun run event at Swansea.",
+    "location": "Swansea",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "December"
+  },
+  {
+    "name": "Tredegar House Easter Hunt Easter Egg Hunt",
+    "description": "Annual easter egg hunt event at Newport.",
+    "location": "Newport",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "April"
+  },
+  {
+    "name": "Dyffryn Gardens Easter Hunt Easter Egg Hunt",
+    "description": "Annual easter egg hunt event at Vale of Glamorgan.",
+    "location": "Vale of Glamorgan",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "April"
+  },
+  {
+    "name": "Penrhyn Castle Easter Hunt Easter Egg Hunt",
+    "description": "Annual easter egg hunt event at Bangor.",
+    "location": "Bangor",
+    "region": "north-wales",
+    "category": "seasonal",
+    "month": "April"
+  },
+  {
+    "name": "Plas Newydd Easter Hunt Easter Egg Hunt",
+    "description": "Annual easter egg hunt event at Anglesey.",
+    "location": "Anglesey",
+    "region": "north-wales",
+    "category": "seasonal",
+    "month": "April"
+  },
+  {
+    "name": "Bodnant Garden Easter Hunt Easter Egg Hunt",
+    "description": "Annual easter egg hunt event at Conwy.",
+    "location": "Conwy",
+    "region": "north-wales",
+    "category": "seasonal",
+    "month": "April"
+  },
+  {
+    "name": "Erddig Easter Hunt Easter Egg Hunt",
+    "description": "Annual easter egg hunt event at Wrexham.",
+    "location": "Wrexham",
+    "region": "north-wales",
+    "category": "seasonal",
+    "month": "April"
+  },
+  {
+    "name": "Chirk Castle Easter Hunt Easter Egg Hunt",
+    "description": "Annual easter egg hunt event at Wrexham.",
+    "location": "Wrexham",
+    "region": "north-wales",
+    "category": "seasonal",
+    "month": "April"
+  },
+  {
+    "name": "Powis Castle Easter Hunt Easter Egg Hunt",
+    "description": "Annual easter egg hunt event at Welshpool.",
+    "location": "Welshpool",
+    "region": "mid-wales",
+    "category": "seasonal",
+    "month": "April"
+  },
+  {
+    "name": "Llanerchaeron Easter Hunt Easter Egg Hunt",
+    "description": "Annual easter egg hunt event at Aberaeron.",
+    "location": "Aberaeron",
+    "region": "mid-wales",
+    "category": "seasonal",
+    "month": "April"
+  },
+  {
+    "name": "Stackpole Easter Hunt Easter Egg Hunt",
+    "description": "Annual easter egg hunt event at Pembroke.",
+    "location": "Pembroke",
+    "region": "pembrokeshire",
+    "category": "seasonal",
+    "month": "April"
+  },
+  {
+    "name": "Colby Woodland Garden Easter Hunt Easter Egg Hunt",
+    "description": "Annual easter egg hunt event at Amroth.",
+    "location": "Amroth",
+    "region": "pembrokeshire",
+    "category": "seasonal",
+    "month": "April"
+  },
+  {
+    "name": "Cardiff Sparks in the Park Fireworks Display",
+    "description": "Annual fireworks display event at Cardiff.",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "November"
+  },
+  {
+    "name": "Swansea Fireworks Display",
+    "description": "Annual fireworks display event at Swansea.",
+    "location": "Swansea",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "November"
+  },
+  {
+    "name": "Llandudno Fireworks Fireworks Display",
+    "description": "Annual fireworks display event at Llandudno.",
+    "location": "Llandudno",
+    "region": "north-wales",
+    "category": "seasonal",
+    "month": "November"
+  },
+  {
+    "name": "Aberystwyth Fireworks Fireworks Display",
+    "description": "Annual fireworks display event at Aberystwyth.",
+    "location": "Aberystwyth",
+    "region": "mid-wales",
+    "category": "seasonal",
+    "month": "November"
+  },
+  {
+    "name": "Caerphilly Castle Fireworks Fireworks Display",
+    "description": "Annual fireworks display event at Caerphilly.",
+    "location": "Caerphilly",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "November"
+  },
+  {
+    "name": "Pontypridd Fireworks Fireworks Display",
+    "description": "Annual fireworks display event at Pontypridd.",
+    "location": "Pontypridd",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "November"
+  },
+  {
+    "name": "Barry Island Fireworks Fireworks Display",
+    "description": "Annual fireworks display event at Barry Island.",
+    "location": "Barry Island",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "November"
+  },
+  {
+    "name": "Carmarthen Fireworks Fireworks Display",
+    "description": "Annual fireworks display event at Carmarthen.",
+    "location": "Carmarthen",
+    "region": "south-wales",
+    "category": "seasonal",
+    "month": "November"
+  },
+  {
+    "name": "Milford Haven Fireworks Fireworks Display",
+    "description": "Annual fireworks display event at Milford Haven.",
+    "location": "Milford Haven",
+    "region": "pembrokeshire",
+    "category": "seasonal",
+    "month": "November"
+  },
+  {
+    "name": "Welshpool Fireworks Fireworks Display",
+    "description": "Annual fireworks display event at Welshpool.",
+    "location": "Welshpool",
+    "region": "mid-wales",
+    "category": "seasonal",
+    "month": "November"
+  },
+  {
+    "name": "Cardiff Junior Parkrun",
+    "description": "Weekly free 2k timed run for juniors at Cardiff.",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Sunday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Newport Junior Parkrun",
+    "description": "Weekly free 2k timed run for juniors at Newport.",
+    "location": "Newport",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Sunday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Swansea Junior Parkrun",
+    "description": "Weekly free 2k timed run for juniors at Swansea.",
+    "location": "Swansea",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Sunday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Conwy Junior Parkrun",
+    "description": "Weekly free 2k timed run for juniors at Conwy.",
+    "location": "Conwy",
+    "region": "north-wales",
+    "category": "community",
+    "recurringSchedule": "Every Sunday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Aberystwyth Junior Parkrun",
+    "description": "Weekly free 2k timed run for juniors at Aberystwyth.",
+    "location": "Aberystwyth",
+    "region": "mid-wales",
+    "category": "community",
+    "recurringSchedule": "Every Sunday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Pontypridd Junior Parkrun",
+    "description": "Weekly free 2k timed run for juniors at Pontypridd.",
+    "location": "Pontypridd",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Sunday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Barry Junior Parkrun",
+    "description": "Weekly free 2k timed run for juniors at Barry.",
+    "location": "Barry",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Sunday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Porthcawl Junior Parkrun",
+    "description": "Weekly free 2k timed run for juniors at Porthcawl.",
+    "location": "Porthcawl",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Sunday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Llanelli Junior Parkrun",
+    "description": "Weekly free 2k timed run for juniors at Llanelli.",
+    "location": "Llanelli",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Sunday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Merthyr Junior Parkrun",
+    "description": "Weekly free 2k timed run for juniors at Merthyr.",
+    "location": "Merthyr",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Sunday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Brecon Junior Parkrun",
+    "description": "Weekly free 2k timed run for juniors at Brecon.",
+    "location": "Brecon",
+    "region": "mid-wales",
+    "category": "community",
+    "recurringSchedule": "Every Sunday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Newtown Junior Parkrun",
+    "description": "Weekly free 2k timed run for juniors at Newtown.",
+    "location": "Newtown",
+    "region": "mid-wales",
+    "category": "community",
+    "recurringSchedule": "Every Sunday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Wepre Junior Parkrun",
+    "description": "Weekly free 2k timed run for juniors at Wepre.",
+    "location": "Wepre",
+    "region": "north-wales",
+    "category": "community",
+    "recurringSchedule": "Every Sunday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Gnoll Junior Parkrun",
+    "description": "Weekly free 2k timed run for juniors at Gnoll.",
+    "location": "Gnoll",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Sunday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  },
+  {
+    "name": "Bridgend Junior Parkrun",
+    "description": "Weekly free 2k timed run for juniors at Bridgend.",
+    "location": "Bridgend",
+    "region": "south-wales",
+    "category": "community",
+    "recurringSchedule": "Every Sunday 9:00am",
+    "isRecurring": true,
+    "website": "https://www.parkrun.org.uk"
+  }
+]

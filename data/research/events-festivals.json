@@ -1,0 +1,2234 @@
+[
+  {
+    "name": "Aberaeron Carnival",
+    "type": "Cultural",
+    "date": "TBC 2026",
+    "location": "Aberaeron",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Annual event held in Wales."
+  },
+  {
+    "name": "Aberaeron Mackerel Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Aberaeron",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Premier food and drink event in Aberaeron, showcasing the best of Welsh produce."
+  },
+  {
+    "name": "Abergavenny Food Festival",
+    "type": "Food & Drink",
+    "date": "19-20 September 2026",
+    "location": "Abergavenny",
+    "region": "brecon-beacons",
+    "website": "https://www.abergavennyfoodfestival.com",
+    "description": "The 'Glastonbury of Food Festivals', attracting top chefs, food writers, and over 30,000 visitors to the market town of Abergavenny. Features masterclasses, street food, and producer markets."
+  },
+  {
+    "name": "Abergavenny Steam Rally",
+    "type": "Agricultural Show",
+    "date": "TBC 2026",
+    "location": "Abergavenny",
+    "region": "brecon-beacons",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Abergavenny Writing Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Abergavenny",
+    "region": "brecon-beacons",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Aberjazz",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Abertillery Blues Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Abertillery",
+    "region": "south-wales",
+    "website": "",
+    "description": "Celebrating the best of blues music in Abertillery with live performances from UK and international acts."
+  },
+  {
+    "name": "Aberystwyth & Ceredigion County Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Aberystwyth",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Aberystwyth Arts Centre Summer Season",
+    "type": "Arts",
+    "date": "July/August 2026 (TBC)",
+    "location": "Aberystwyth",
+    "region": "mid-wales",
+    "website": "",
+    "description": "A celebration of visual and performing arts in Aberystwyth, featuring exhibitions and workshops."
+  },
+  {
+    "name": "Aberystwyth Comedy Festival",
+    "type": "Comedy",
+    "date": "TBC 2026",
+    "location": "Aberystwyth",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Stand-up comedy festival in Aberystwyth featuring established names and rising stars."
+  },
+  {
+    "name": "Aberystwyth Cycle Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Aberystwyth",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Annual event held in Wales."
+  },
+  {
+    "name": "Aberystwyth Sea2shore Food Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Aberystwyth",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Showcasing the finest local produce from Aberystwyth and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Angle Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Anglesey Agricultural Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Anglesey",
+    "region": "anglesey",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Anglesey Oyster & Welsh Produce Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Anglesey",
+    "region": "anglesey",
+    "website": "",
+    "description": "Premier food and drink event in Anglesey, showcasing the best of Welsh produce."
+  },
+  {
+    "name": "Balter Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Banff Mountain Film Festival Tour (Wales)",
+    "type": "Film",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Screenings of independent and international films in Wales, celebrating cinema culture."
+  },
+  {
+    "name": "Bangor Music Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Bangor",
+    "region": "north-wales",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Barmouth Kite Festival",
+    "type": "Outdoors & Active",
+    "date": "TBC 2026",
+    "location": "Barmouth",
+    "region": "snowdonia",
+    "website": "",
+    "description": "Annual outdoors & active event held in Wales."
+  },
+  {
+    "name": "Barmouth Walking Festival",
+    "type": "Outdoors & Active",
+    "date": "TBC 2026",
+    "location": "Barmouth",
+    "region": "snowdonia",
+    "website": "",
+    "description": "Guided walks and hiking events exploring the beautiful landscapes around Barmouth for all abilities."
+  },
+  {
+    "name": "Beaumaris Arts Festival",
+    "type": "Arts",
+    "date": "TBC 2026",
+    "location": "Beaumaris",
+    "region": "anglesey",
+    "website": "",
+    "description": "A celebration of visual and performing arts in Beaumaris, featuring exhibitions and workshops."
+  },
+  {
+    "name": "Beaumaris Food Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Beaumaris",
+    "region": "anglesey",
+    "website": "",
+    "description": "Showcasing the finest local produce from Beaumaris and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Bedwellty Agricultural Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Beguildy Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Between The Trees",
+    "type": "Festival",
+    "date": "August 2026",
+    "location": "Merthyr Mawr",
+    "region": "south-wales",
+    "website": "https://betweenthetrees.co.uk",
+    "description": "A festival of nature, science, and music held in a 100-acre woodland at Merthyr Mawr. Focuses on indie-folk music and connecting with nature."
+  },
+  {
+    "name": "Beulah Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Beyond the Border Storytelling Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Big Cheese Festival",
+    "type": "Food & Drink",
+    "date": "July 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Premier food and drink event in Wales, showcasing the best of Welsh produce."
+  },
+  {
+    "name": "Big Love Festival",
+    "type": "Festival",
+    "date": "July 2026",
+    "location": "Usk",
+    "region": "south-wales",
+    "website": "https://biglovefestival.co.uk",
+    "description": "Small, independent festival with a big heart. Features music, circus, and performance art in a wild and wonderful setting."
+  },
+  {
+    "name": "Bite Food Festival, Cardiff",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "website": "",
+    "description": "Showcasing the finest local produce from Cardiff and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Brechfa Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Brecon Baroque Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Brecon",
+    "region": "brecon-beacons",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Brecon Beacons Food Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Brecon",
+    "region": "brecon-beacons",
+    "website": "",
+    "description": "Showcasing the finest local produce from Brecon and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Brecon County Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Brecon",
+    "region": "brecon-beacons",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Brecon Jazz Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Brecon",
+    "region": "brecon-beacons",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Bridgend County Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Bridgend",
+    "region": "south-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Builth Wells Antiques Fair",
+    "type": "Agricultural Show",
+    "date": "TBC 2026",
+    "location": "Builth Wells",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Caerleon Arts Festival",
+    "type": "Arts",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "A celebration of visual and performing arts in Wales, featuring exhibitions and workshops."
+  },
+  {
+    "name": "Caernarfon Food Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Caernarfon",
+    "region": "north-wales",
+    "website": "",
+    "description": "Showcasing the finest local produce from Caernarfon and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Caerphilly Big Cheese",
+    "type": "Food & Drink",
+    "date": "July 2026 (TBC)",
+    "location": "Caerphilly",
+    "region": "south-wales",
+    "website": "",
+    "description": "Premier food and drink event in Caerphilly, showcasing the best of Welsh produce."
+  },
+  {
+    "name": "Caerphilly Food Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Caerphilly",
+    "region": "south-wales",
+    "website": "",
+    "description": "Showcasing the finest local produce from Caerphilly and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Caerphilly Little Cheese",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Caerphilly",
+    "region": "south-wales",
+    "website": "",
+    "description": "Premier food and drink event in Caerphilly, showcasing the best of Welsh produce."
+  },
+  {
+    "name": "Caio Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Camp Good Life",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Camrose Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Cardiff Animation Festival",
+    "type": "Film",
+    "date": "TBC 2026",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "website": "",
+    "description": "Annual film event held in Wales."
+  },
+  {
+    "name": "Cardiff Children's Literature Festival",
+    "type": "Literature",
+    "date": "TBC 2026",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "website": "",
+    "description": "Literature festival in Cardiff bringing together authors, poets, and readers."
+  },
+  {
+    "name": "Cardiff Comedy Festival",
+    "type": "Comedy",
+    "date": "TBC 2026",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "website": "",
+    "description": "Stand-up comedy festival in Cardiff featuring established names and rising stars."
+  },
+  {
+    "name": "Cardiff Film Festival",
+    "type": "Film",
+    "date": "TBC 2026",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "website": "",
+    "description": "Screenings of independent and international films in Cardiff, celebrating cinema culture."
+  },
+  {
+    "name": "Cardiff Harbour Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Cardiff International Food and Drink Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "website": "",
+    "description": "Showcasing the finest local produce from Cardiff and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Cardigan Barley Saturday",
+    "type": "Festival",
+    "date": "April 2026 (TBC)",
+    "location": "Cardigan",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Cardigan Bay Seafood Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Cardigan",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Premier food and drink event in Cardigan, showcasing the best of Welsh produce."
+  },
+  {
+    "name": "Cardigan River and Food Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Cardigan",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Showcasing the finest local produce from Cardigan and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Cardigan Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Cardigan",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Castell Roc",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Castlemartin Show",
+    "type": "Arts",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Celtic Blue Rock Community Arts Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Chepstow Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Chepstow",
+    "region": "south-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Chepstow Walking Festival",
+    "type": "Outdoors & Active",
+    "date": "TBC 2026",
+    "location": "Chepstow",
+    "region": "south-wales",
+    "website": "",
+    "description": "Guided walks and hiking events exploring the beautiful landscapes around Chepstow for all abilities."
+  },
+  {
+    "name": "Cilycwm Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Coleford Music Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Colwyn Bay 1940s Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Colwyn Bay",
+    "region": "north-wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Colwyn Bay Prom Xtra",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Colwyn Bay",
+    "region": "north-wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Conwy Pirate Weekend",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Conwy",
+    "region": "north-wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Cowbridge Food and Drink Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Cowbridge",
+    "region": "south-wales",
+    "website": "",
+    "description": "Showcasing the finest local produce from Cowbridge and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Crickhowell Walking Festival",
+    "type": "Outdoors & Active",
+    "date": "TBC 2026",
+    "location": "Crickhowell",
+    "region": "brecon-beacons",
+    "website": "",
+    "description": "Guided walks and hiking events exploring the beautiful landscapes around Crickhowell for all abilities."
+  },
+  {
+    "name": "Cylch y Frenni Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Denbigh and Flint Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Denbigh",
+    "region": "north-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Devauden Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual event held in Wales."
+  },
+  {
+    "name": "Dinefwr Literature Festival",
+    "type": "Literature",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Literature festival in Wales bringing together authors, poets, and readers."
+  },
+  {
+    "name": "Eglwyswrw Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Eglwyswrw",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Eisteddfod",
+    "type": "Cultural",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Wales' premier cultural festival celebrating music, literature, and performance."
+  },
+  {
+    "name": "Elvis Festival Porthcawl",
+    "type": "Festival",
+    "date": "September 2026",
+    "location": "Porthcawl",
+    "region": "south-wales",
+    "website": "https://www.elvisfestival.co.uk",
+    "description": "The largest Elvis festival in Europe. Thousands of Elvis fans and tribute artists descend on the seaside town of Porthcawl for a weekend of rock 'n' roll."
+  },
+  {
+    "name": "Erwood Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Escape into the Park",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Fire in the Mountain",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Fishguard Folk Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Fishguard",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Fishguard International Music Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Fishguard",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Popular music festival held in Fishguard, featuring live performances and local talent."
+  },
+  {
+    "name": "Fishguard Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Fishguard",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Focus Wales",
+    "type": "Music",
+    "date": "May 2026",
+    "location": "Wrexham",
+    "region": "north-wales",
+    "website": "https://www.focuswales.com",
+    "description": "International showcase festival placing the music industry spotlight on the emerging talent that Wales has to offer the world, alongside a selection of the best new acts from across the globe."
+  },
+  {
+    "name": "Gelligaer Farmers Hunt Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Gladstone's Library Hearth Festival",
+    "type": "Arts",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual arts event held in Wales."
+  },
+  {
+    "name": "Gottwood Festival",
+    "type": "Music",
+    "date": "June 2026",
+    "location": "Llanfaethlu",
+    "region": "anglesey",
+    "website": "https://www.gottwood.co.uk",
+    "description": "Independent electronic music and arts festival set in the woods of the Carreglwyd Estate on Anglesey. Known for its mystical atmosphere and underground lineup."
+  },
+  {
+    "name": "Gower Chilli Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Gower",
+    "region": "gower",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Gower Folk Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Gower",
+    "region": "gower",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Gower Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Gower",
+    "region": "gower",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Gower Walking Festival",
+    "type": "Outdoors & Active",
+    "date": "TBC 2026",
+    "location": "Gower",
+    "region": "gower",
+    "website": "",
+    "description": "Guided walks and hiking events exploring the beautiful landscapes around Gower for all abilities."
+  },
+  {
+    "name": "Green Man Festival",
+    "type": "Music",
+    "date": "August 2026 (Sold Out)",
+    "location": "Crickhowell",
+    "region": "brecon-beacons",
+    "website": "https://www.greenman.net",
+    "description": "Independent music and arts festival located in the Brecon Beacons. Known for its non-corporate ethos, diverse lineup (folk, indie, electronica), and stunning mountain backdrop."
+  },
+  {
+    "name": "Gregynog Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Gregynog Music Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Gwynfe Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "G\u0175yl Fair y Canhwyllau",
+    "type": "Agricultural Show",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Hammerfest",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Hamper Llangollen",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Llangollen",
+    "region": "north-wales",
+    "website": "",
+    "description": "Premier food and drink event in Llangollen, showcasing the best of Welsh produce."
+  },
+  {
+    "name": "Haverfordwest Beer and Cider Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Haverfordwest",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "A celebration of real ales and ciders in Haverfordwest, often featuring live music and local food."
+  },
+  {
+    "name": "Hay Bike Fest",
+    "type": "Literature",
+    "date": "TBC 2026",
+    "location": "Hay",
+    "region": "brecon-beacons",
+    "website": "",
+    "description": "Annual event held in Wales."
+  },
+  {
+    "name": "Hay Festival",
+    "type": "Literature",
+    "date": "21-31 May 2026",
+    "location": "Hay-on-Wye",
+    "region": "brecon-beacons",
+    "website": "https://www.hayfestival.com",
+    "description": "World-renowned literature and arts festival in the book town of Hay-on-Wye. Brings together writers, politicians, comedians, and musicians for 10 days of debate and celebration."
+  },
+  {
+    "name": "Hayscastle Show",
+    "type": "Literature",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Holyhead Maritime Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Holyhead",
+    "region": "anglesey",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "HowTheLightGetsIn",
+    "type": "Festival",
+    "date": "May 2026",
+    "location": "Hay-on-Wye",
+    "region": "brecon-beacons",
+    "website": "https://howthelightgetsin.org",
+    "description": "The world's largest philosophy and music festival, held in Hay-on-Wye. Combines debates and talks from leading thinkers with music, comedy, and cabaret."
+  },
+  {
+    "name": "HowTheLightGetsIn Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Hub Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "In It Together Festival",
+    "type": "Festival",
+    "date": "23-25 May 2026",
+    "location": "Margam",
+    "region": "south-wales",
+    "website": "https://www.inittogetherfestival.com",
+    "description": "A diverse music festival at Old Park Farm, Margam. Features major international acts across multiple stages, catering to all tastes from pop to dance."
+  },
+  {
+    "name": "Inside Out Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "International Film Festival of Wales",
+    "type": "Film",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Screenings of independent and international films in Wales, celebrating cinema culture."
+  },
+  {
+    "name": "Iris Prize Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Kallida Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Keeston Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Kendall Mountain Festival Tour (Wales)",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Kenfig Hill & Pyle Agricultural Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Knighton Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Knighton",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Kotatsu Japanese Animation Festival",
+    "type": "Film",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual film event held in Wales."
+  },
+  {
+    "name": "Lampeter Beer Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Lampeter",
+    "region": "mid-wales",
+    "website": "",
+    "description": "A celebration of real ales and ciders in Lampeter, often featuring live music and local food."
+  },
+  {
+    "name": "Lampeter Food Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Lampeter",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Showcasing the finest local produce from Lampeter and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Lampeter Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Lampeter",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Lampeter Stallion Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Lampeter",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Land of the Tres",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Laugharne Weekend",
+    "type": "Comedy",
+    "date": "TBC 2026",
+    "location": "Laugharne",
+    "region": "carmarthenshire",
+    "website": "",
+    "description": "Annual comedy event held in Wales."
+  },
+  {
+    "name": "Let&#039;s Rock",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Llanafan Fawr Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Llanbadarn Fynydd Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Llanberis Mountain Film Festival",
+    "type": "Film",
+    "date": "TBC 2026",
+    "location": "Llanberis",
+    "region": "snowdonia",
+    "website": "",
+    "description": "Screenings of independent and international films in Llanberis, celebrating cinema culture."
+  },
+  {
+    "name": "Llanddarog Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Llandeilo Festival of Senses",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Llandeilo",
+    "region": "carmarthenshire",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Llandeilo Lit Fest",
+    "type": "Literature",
+    "date": "TBC 2026",
+    "location": "Llandeilo",
+    "region": "carmarthenshire",
+    "website": "",
+    "description": "Annual literature event held in Wales."
+  },
+  {
+    "name": "Llandeloy Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Llandovery Sheep Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Llandovery",
+    "region": "carmarthenshire",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Llandrindod Wells Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Llandrindod Wells",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Llandrindod Wells Victorian Festival",
+    "type": "Cultural",
+    "date": "August 2026 (TBC)",
+    "location": "Llandrindod Wells",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Annual cultural event held in Wales."
+  },
+  {
+    "name": "Llandudno Victorian Extravaganza",
+    "type": "Cultural",
+    "date": "TBC 2026",
+    "location": "Llandudno",
+    "region": "north-wales",
+    "website": "",
+    "description": "Annual cultural event held in Wales."
+  },
+  {
+    "name": "Llandyfaelog Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Llandysul Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Llandysul",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Llangadog Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Llangollen Balloon Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Llangollen",
+    "region": "north-wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Llangollen Fringe Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Llangollen",
+    "region": "north-wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Llangollen International Musical Eisteddfod",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Llangollen",
+    "region": "north-wales",
+    "website": "",
+    "description": "Wales' premier cultural festival celebrating music, literature, and performance."
+  },
+  {
+    "name": "Llangynidr Agricultural Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Llanigon Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Llansawel Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Llantrisant & District Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Llantrisant",
+    "region": "south-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Llanwrthwl Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Love Trails Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Machen Agricultural Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Machynlleth Comedy Festival",
+    "type": "Comedy",
+    "date": "May 2026",
+    "location": "Machynlleth",
+    "region": "mid-wales",
+    "website": "https://machcomedyfest.co.uk",
+    "description": "A unique experiment in stand-up comedy taking over the town of Machynlleth. Intimate venues and a focus on new material make it a favourite for comedians and fans alike."
+  },
+  {
+    "name": "Machynlleth Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Machynlleth",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Machynlleth Music Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Machynlleth",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Popular music festival held in Machynlleth, featuring live performances and local talent."
+  },
+  {
+    "name": "Martletwy Show",
+    "type": "Arts",
+    "date": "Summer 2026 (TBC)",
+    "location": "Martletwy",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Menai Seafood Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Premier food and drink event in Wales, showcasing the best of Welsh produce."
+  },
+  {
+    "name": "Merthyr Food Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Merthyr",
+    "region": "south-wales",
+    "website": "",
+    "description": "Showcasing the finest local produce from Merthyr and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Merthyr Rising",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Merthyr",
+    "region": "south-wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Mid Wales Beer Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "mid-wales",
+    "website": "",
+    "description": "A celebration of real ales and ciders in Wales, often featuring live music and local food."
+  },
+  {
+    "name": "Mold Blues & Soul Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Mold",
+    "region": "north-wales",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Mold Food & Drink Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Mold",
+    "region": "north-wales",
+    "website": "",
+    "description": "Showcasing the finest local produce from Mold and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Monmouth Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Monmouth",
+    "region": "anglesey",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Monmouthshire Food Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "anglesey",
+    "website": "",
+    "description": "Showcasing the finest local produce from Wales and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Monmouthshire Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "anglesey",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Monmouthshire Walking Festival",
+    "type": "Outdoors & Active",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "anglesey",
+    "website": "",
+    "description": "Guided walks and hiking events exploring the beautiful landscapes around Wales for all abilities."
+  },
+  {
+    "name": "Mumbles Oyster Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Mumbles",
+    "region": "gower",
+    "website": "",
+    "description": "Premier food and drink event in Mumbles, showcasing the best of Welsh produce."
+  },
+  {
+    "name": "Myddfai Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Narberth A Cappella Voice Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Narberth",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Narberth Food Festival",
+    "type": "Food & Drink",
+    "date": "September 2026",
+    "location": "Narberth",
+    "region": "pembrokeshire",
+    "website": "https://www.narberthfoodfestival.com",
+    "description": "A friendly food festival in the Pembrokeshire market town of Narberth. Features stalls, street food, live music, and chef demonstrations."
+  },
+  {
+    "name": "National Eisteddfod of Wales",
+    "type": "Cultural",
+    "date": "1-8 August 2026",
+    "location": "Llantwd",
+    "region": "pembrokeshire",
+    "website": "https://eisteddfod.wales",
+    "description": "Wales' premier cultural festival and one of Europe's largest travelling festivals. Celebrating Welsh music, literature, and performance entirely in the Welsh language (with translation available). 2026 location: Llantwd, Pembrokeshire."
+  },
+  {
+    "name": "Neath Comedy Festival",
+    "type": "Comedy",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Stand-up comedy festival in Wales featuring established names and rising stars."
+  },
+  {
+    "name": "Neath Food and Drink Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Showcasing the finest local produce from Wales and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Nevern Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Nevern",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "New Quay Music Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "New Quay",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Popular music festival held in New Quay, featuring live performances and local talent."
+  },
+  {
+    "name": "Newport Food Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Newport",
+    "region": "south-wales",
+    "website": "",
+    "description": "Showcasing the finest local produce from Newport and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Newtown Food Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Newtown",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Showcasing the finest local produce from Newtown and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "Nolton & Roch Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "North Wales International Music Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "north-wales",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Ocean Film Festival Tour (Wales)",
+    "type": "Film",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Screenings of independent and international films in Wales, celebrating cinema culture."
+  },
+  {
+    "name": "Pembroke Farmers Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Pembroke",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Pembrokeshire County Show",
+    "type": "Agricultural Show",
+    "date": "August 2026",
+    "location": "Haverfordwest",
+    "region": "pembrokeshire",
+    "website": "https://www.pembsshow.org",
+    "description": "Wales' largest three-day agricultural county show. Features livestock, showjumping, food halls, and family entertainment."
+  },
+  {
+    "name": "Pembrokeshire Fish Week",
+    "type": "Festival",
+    "date": "June 2026 (TBC)",
+    "location": "Pembrokeshire",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Penybont Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Pontardawe Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Pontarddulais Agricultural Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Pontypridd Big Bite",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Pontypridd",
+    "region": "south-wales",
+    "website": "",
+    "description": "Premier food and drink event in Pontypridd, showcasing the best of Welsh produce."
+  },
+  {
+    "name": "Porthcawl Jazz Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Porthcawl",
+    "region": "south-wales",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Prestatyn Walking Festival",
+    "type": "Outdoors & Active",
+    "date": "TBC 2026",
+    "location": "Prestatyn",
+    "region": "north-wales",
+    "website": "",
+    "description": "Guided walks and hiking events exploring the beautiful landscapes around Prestatyn for all abilities."
+  },
+  {
+    "name": "Presteigne & Norton Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Presteigne",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Presteigne Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Presteigne",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Pumsaint Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Radnor Valley Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Real Ale Ramble",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual event held in Wales."
+  },
+  {
+    "name": "Real Ale Wobble",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Rhandirmwyn Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Rhayader Show",
+    "type": "Literature",
+    "date": "Summer 2026 (TBC)",
+    "location": "Rhayader",
+    "region": "brecon-beacons",
+    "website": "",
+    "description": "The annual agricultural show for Rhayader, featuring livestock classes, equestrian events, and rural crafts."
+  },
+  {
+    "name": "Rhyl Air Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Rhyl",
+    "region": "north-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Rock the Park Wrexham",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Wrexham",
+    "region": "north-wales",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Royal Welsh Show",
+    "type": "Agricultural Show",
+    "date": "July 2026",
+    "location": "Llanelwedd",
+    "region": "mid-wales",
+    "website": "https://rwas.wales",
+    "description": "The pinnacle event in the British agricultural calendar. Four days of livestock competitions, forestry, horticulture, crafts, and entertainment at the showground in Llanelwedd."
+  },
+  {
+    "name": "Royal Welsh Smallholding and Countryside Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Royal Welsh Spring Festival",
+    "type": "Festival",
+    "date": "May 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Royal Welsh Winter Fair",
+    "type": "Agricultural Show",
+    "date": "November/December 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Ruthin Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Ruthin",
+    "region": "north-wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Saundersfoot New Year's Day Swim",
+    "type": "Outdoors & Active",
+    "date": "1 January 2027",
+    "location": "Saundersfoot",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Thousands of swimmers brave the cold waters of Saundersfoot for charity on New Year's Day. A major highlight of the festive calendar."
+  },
+  {
+    "name": "Sennybridge Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Sesiwn Fawr Dolgellau",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Dolgellau",
+    "region": "snowdonia",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Sinemaes",
+    "type": "Film",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual film event held in Wales."
+  },
+  {
+    "name": "Snowdonia Outdoor Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Snowdonia",
+    "region": "snowdonia",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "South Pembrokeshire Hunt Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Pembrokeshire",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "St Clears Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "St Clears",
+    "region": "carmarthenshire",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "St Davids Cathedral Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "St Davids",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "St. Harmon Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "anglesey",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Steelhouse Festival",
+    "type": "Music",
+    "date": "July 2026",
+    "location": "Ebbw Vale",
+    "region": "south-wales",
+    "website": "https://www.steelhousefestival.com",
+    "description": "The Welsh international classic rock festival. Held at Hafod-y-Dafal Farm on the edge of the Brecon Beacons, it's the UK's highest altitude music festival."
+  },
+  {
+    "name": "Swansea Bay Beer & Cider Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Swansea",
+    "region": "gower",
+    "website": "",
+    "description": "A celebration of real ales and ciders in Swansea, often featuring live music and local food."
+  },
+  {
+    "name": "Swansea Bay Film Festival",
+    "type": "Film",
+    "date": "TBC 2026",
+    "location": "Swansea",
+    "region": "gower",
+    "website": "",
+    "description": "Screenings of independent and international films in Swansea, celebrating cinema culture."
+  },
+  {
+    "name": "Swansea Fringe",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Swansea",
+    "region": "gower",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Swansea International Jazz Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Swansea",
+    "region": "gower",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Swn Festival",
+    "type": "Music",
+    "date": "October 2026",
+    "location": "Cardiff",
+    "region": "south-wales",
+    "website": "https://swnfest.com",
+    "description": "Award-winning multi-venue music festival in Cardiff, focused on new music and emerging artists from Wales and beyond."
+  },
+  {
+    "name": "Talgarth Walking Festival",
+    "type": "Arts",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Guided walks and hiking events exploring the beautiful landscapes around Wales for all abilities."
+  },
+  {
+    "name": "Talley Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Talybont Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Tenby Arts Festival",
+    "type": "Arts",
+    "date": "TBC 2026",
+    "location": "Tenby",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "A celebration of visual and performing arts in Tenby, featuring exhibitions and workshops."
+  },
+  {
+    "name": "Tenby Blues Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Tenby",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Tenby Boxing Day Swim",
+    "type": "Outdoors & Active",
+    "date": "26 December 2026",
+    "location": "Tenby",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "A festive tradition where hundreds of brave swimmers take a dip in the sea at North Beach, Tenby, usually in fancy dress."
+  },
+  {
+    "name": "The Big Retreat Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "The Big Tribute Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "The Big Welsh Bite Food Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Showcasing the finest local produce from Wales and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "The Good Life Experience",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "The Square Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Tivyside Agricultural Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Top of the Woods Film Festival",
+    "type": "Film",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Screenings of independent and international films in Wales, celebrating cinema culture."
+  },
+  {
+    "name": "Trapp Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Tredegar House Folk Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Tredegar",
+    "region": "south-wales",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Unearthed Festival",
+    "type": "Arts",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual arts event held in Wales."
+  },
+  {
+    "name": "United Counties Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Urdd National Eisteddfod",
+    "type": "Cultural",
+    "date": "TBC 2026",
+    "location": "Various",
+    "region": "wales",
+    "website": "",
+    "description": "Wales' premier cultural festival celebrating music, literature, and performance."
+  },
+  {
+    "name": "Usk Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Usk",
+    "region": "south-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Vale of Glamorgan Agricultural Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Vale of Glamorgan",
+    "region": "south-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Vale of Glamorgan Festival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Vale of Glamorgan",
+    "region": "south-wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Vale of Glamorgan Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Vale of Glamorgan",
+    "region": "south-wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Velvet Coalmine",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Wales Airshow",
+    "type": "Festival",
+    "date": "July 2026",
+    "location": "Swansea",
+    "region": "gower",
+    "website": "",
+    "description": "The Wales Airshow takes to the skies over Swansea Bay. Features breathtaking aerobatic displays, military aircraft, and ground displays."
+  },
+  {
+    "name": "Wales International Film Festival",
+    "type": "Film",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Screenings of independent and international films in Wales, celebrating cinema culture."
+  },
+  {
+    "name": "Wales One World Film Festival",
+    "type": "Film",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Screenings of independent and international films in Wales, celebrating cinema culture."
+  },
+  {
+    "name": "Walrus Dip",
+    "type": "Outdoors & Active",
+    "date": "26 December 2026",
+    "location": "Pembrey",
+    "region": "carmarthenshire",
+    "website": "",
+    "description": "The annual Cefn Sidan Walrus Dip at Pembrey Country Park. A Boxing Day tradition."
+  },
+  {
+    "name": "Welsh Dairy Show",
+    "type": "Agricultural Show",
+    "date": "Summer 2026 (TBC)",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show showcasing livestock, rural crafts, and family entertainment."
+  },
+  {
+    "name": "Welsh Perry and Cider Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "A celebration of real ales and ciders in Wales, often featuring live music and local food."
+  },
+  {
+    "name": "Welshpool Country Music Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Welshpool",
+    "region": "mid-wales",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  },
+  {
+    "name": "Westival",
+    "type": "Festival",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Annual festival event held in Wales."
+  },
+  {
+    "name": "Whitesands New Year's Day Swim",
+    "type": "Outdoors & Active",
+    "date": "1 January 2027",
+    "location": "St Davids",
+    "region": "pembrokeshire",
+    "website": "",
+    "description": "A refreshing start to the year with a dip at Whitesands Bay, St Davids."
+  },
+  {
+    "name": "Wonderwool Wales",
+    "type": "Agricultural Show",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Traditional agricultural show in Wales celebrating rural life, livestock, and crafts."
+  },
+  {
+    "name": "World Alternate Games",
+    "type": "Festival",
+    "date": "August 2026",
+    "location": "Llanwrtyd Wells",
+    "region": "mid-wales",
+    "website": "",
+    "description": "A quirky Olympics featuring Bog Snorkelling, Man vs Horse, and other unusual sports in Llanwrtyd Wells."
+  },
+  {
+    "name": "Wow Film Festival",
+    "type": "Film",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Screenings of independent and international films in Wales, celebrating cinema culture."
+  },
+  {
+    "name": "Wrexham Food Festival",
+    "type": "Food & Drink",
+    "date": "TBC 2026",
+    "location": "Wrexham",
+    "region": "north-wales",
+    "website": "",
+    "description": "Showcasing the finest local produce from Wrexham and the surrounding region, with stalls, demos, and entertainment."
+  },
+  {
+    "name": "X Music Festival",
+    "type": "Music",
+    "date": "TBC 2026",
+    "location": "Wales",
+    "region": "wales",
+    "website": "",
+    "description": "Live music festival featuring a diverse lineup of artists."
+  }
+]

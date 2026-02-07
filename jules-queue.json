@@ -1,5 +1,10 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "title": "Fix: Attraction Images - Bounce Below, Zip World, etc",
+      "prompt": "Read /home/minigeek/clawd/jules-tasks/attraction-image-research.md for full instructions. Summary: Itinerary stops like Bounce Below and Velocity 2 are showing wrong images (lakes, dogs). Research each branded Welsh attraction, source verified Welsh images from approved sources (Visit Wales, Wikimedia, Geograph, Flickr CC), vision-verify each image shows the correct attraction, download to /public/images/attractions/, create src/data/attraction-images.ts mapping, and update src/lib/activity-images.ts to check attractions before falling back to activity type. Key attractions: Bounce Below (underground trampolines), Velocity 2 (quarry zip line), Zip World Fforest Coaster, Go Ape Forest of Dean, Surf Snowdonia, Dan yr Ogof Caves. Commit with descriptive message."
+    }
+  ],
   "completed": [
     "Editorial: Enrich Beach Data - Tags",
     "Editorial: Enrich Hiking Data - Tags",

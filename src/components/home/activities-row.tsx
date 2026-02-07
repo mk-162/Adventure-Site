@@ -8,6 +8,7 @@ import {
   TreePine,
   Anchor,
   Footprints,
+  Plane,
   ArrowRight
 } from "lucide-react";
 
@@ -19,7 +20,7 @@ const activities = [
   { name: "Wild Swimming", slug: "wild-swimming", icon: Droplets },
   { name: "Climbing", slug: "climbing", icon: TreePine },
   { name: "Coasteering", slug: "coasteering", icon: Wind },
-  { name: "Gorge Walking", slug: "gorge-walking", icon: Footprints },
+  { name: "Skydiving", slug: "skydiving", icon: Plane },
 ];
 
 export function ActivitiesRow() {

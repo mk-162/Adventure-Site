@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Sparkles, Castle, TreePine, Waves } from "lucide-react";
+import { MapPin, Sparkles, Castle, TreePine, Waves, Mountain, Compass, Ship, Building } from "lucide-react";
 
 // SEO metadata
 export const metadata: Metadata = {

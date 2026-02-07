@@ -249,7 +249,7 @@ export default function QuirkyStaysGower() {
                 </p>
                 
                 <p className="text-slate-600 mb-6">
-                  {stay.description}
+                  {stay.highlight}
                 </p>
                 
                 {/* Features */}

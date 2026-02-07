@@ -1,7 +1,7 @@
 import { getEvents, getEventMonths } from "@/lib/queries";
 import { EventsClient } from "@/components/events/EventsClient";
 import { EventGridCard } from "@/components/events/EventGridCard";
-// Pagination removed - loading all events for proper month grouping
+import { EventPagination } from "@/components/events/EventPagination";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -12,75 +12,44 @@ export default async function EventsPage({
 }: {
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
+  const page = Number(searchParams.page) || 1;
   const category = typeof searchParams.type === 'string' ? searchParams.type : undefined;
   const month = typeof searchParams.month === 'string' ? searchParams.month : undefined;
+  const limit = 12; // 12 items per page
+  const offset = (page - 1) * limit;
 
   const [eventsData, months] = await Promise.all([
     getEvents({
       type: category,
       month,
-      // No limit - load all events for proper month grouping
+      limit,
+      offset
     }),
     getEventMonths(),
   ]);
 
   const { events, total } = eventsData;
+  const totalPages = Math.ceil(total / limit);
 
   // Group events by month for display
-  const groupedEvents: { monthKey: string; monthLabel: string; events: typeof events }[] = [];
-  
-  // Create a map to collect events by month
-  const monthMap = new Map<string, typeof events>();
-  
+  const groupedEvents: { monthLabel: string; events: typeof events }[] = [];
+
   events.forEach((item) => {
-    let monthKey = "9999-99"; // Sort unknown dates last
-    let monthLabel = "Date TBC";
-    
+    let monthLabel = "Upcoming Events";
     if (item.event.dateStart) {
-      const date = new Date(item.event.dateStart);
-      const year = date.getFullYear();
-      const month = date.getMonth() + 1;
-      monthKey = `${year}-${month.toString().padStart(2, '0')}`;
-      monthLabel = date.toLocaleString('en-GB', { month: 'long', year: 'numeric' });
+      monthLabel = item.event.dateStart.toLocaleString('default', { month: 'long', year: 'numeric' });
     } else if (item.event.monthTypical) {
-      // Parse "October (TBC)" or "May" format
-      const monthMatch = item.event.monthTypical.match(/^(\w+)/);
-      if (monthMatch) {
-        const monthNames = ['january', 'february', 'march', 'april', 'may', 'june', 
-                          'july', 'august', 'september', 'october', 'november', 'december'];
-        const monthIdx = monthNames.findIndex(m => m.startsWith(monthMatch[1].toLowerCase()));
-        if (monthIdx !== -1) {
-          monthKey = `2026-${(monthIdx + 1).toString().padStart(2, '0')}`;
-          monthLabel = `${monthMatch[1]} 2026 (TBC)`;
-        } else {
-          monthLabel = item.event.monthTypical;
-        }
-      }
+       // Try to parse typical month if dateStart is missing
+       monthLabel = item.event.monthTypical;
     }
 
-    if (!monthMap.has(monthKey)) {
-      monthMap.set(monthKey, []);
+    const lastGroup = groupedEvents[groupedEvents.length - 1];
+    if (lastGroup && lastGroup.monthLabel === monthLabel) {
+      lastGroup.events.push(item);
+    } else {
+      groupedEvents.push({ monthLabel, events: [item] });
     }
-    monthMap.get(monthKey)!.push(item);
   });
-
-  // Convert map to sorted array
-  Array.from(monthMap.entries())
-    .sort((a, b) => a[0].localeCompare(b[0]))
-    .forEach(([monthKey, monthEvents]) => {
-      // Get the label from the first event
-      let monthLabel = "Date TBC";
-      const firstWithDate = monthEvents.find(e => e.event.dateStart);
-      if (firstWithDate) {
-        const date = new Date(firstWithDate.event.dateStart!);
-        monthLabel = date.toLocaleString('en-GB', { month: 'long', year: 'numeric' });
-      } else if (monthEvents[0]?.event.monthTypical) {
-        const monthMatch = monthEvents[0].event.monthTypical.match(/^(\w+)/);
-        monthLabel = monthMatch ? `${monthMatch[1]} 2026` : monthEvents[0].event.monthTypical;
-      }
-      
-      groupedEvents.push({ monthKey, monthLabel, events: monthEvents });
-    });
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 transition-colors duration-300 pt-16">
@@ -180,6 +149,9 @@ export default async function EventsPage({
             </div>
           </div>
         </div>
+
+        {/* Pagination */}
+        <EventPagination totalPages={totalPages} />
 
       </main>
     </div>

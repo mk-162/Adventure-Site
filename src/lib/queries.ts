@@ -517,21 +517,15 @@ export async function getEvents(options?: {
 }
 
 export async function getEventMonths() {
-  const now = new Date();
-  const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
-  
   const result = await db
     .select({
       month: sql<string>`to_char(${events.dateStart}, 'YYYY-MM')`,
       label: sql<string>`to_char(${events.dateStart}, 'Month YYYY')`,
     })
     .from(events)
-    .where(and(
-      eq(events.status, "published"),
-      gte(events.dateStart, startOfMonth)
-    ))
+    .where(eq(events.status, "published"))
     .groupBy(sql`to_char(${events.dateStart}, 'YYYY-MM')`, sql`to_char(${events.dateStart}, 'Month YYYY')`)
-    .orderBy(asc(sql`to_char(${events.dateStart}, 'YYYY-MM')`));
+    .orderBy(desc(sql`to_char(${events.dateStart}, 'YYYY-MM')`));
 
   return result.map(r => ({ value: r.month, label: r.label }));
 }

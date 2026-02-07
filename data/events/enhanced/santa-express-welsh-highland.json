@@ -1,0 +1,62 @@
+{
+  "slug": "santa-express-welsh-highland",
+  "name": "Santa Express - Ffestiniog & Welsh Highland Railways",
+  "nameWelsh": "Trên Siôn Corn - Rheilffyrdd Ffestiniog ac Eryri",
+  "type": "Family",
+  "category": "family",
+  "region": "north-wales",
+  "location": {
+    "town": "Porthmadog",
+    "venue": "Harbour Station",
+    "address": "Harbour Station, Porthmadog, Gwynedd LL49 9NF",
+    "coordinates": {
+      "lat": 52.9242,
+      "lng": -4.1280
+    }
+  },
+  "dates": {
+    "typical": "Weekends in December",
+    "season2025": "December 2025 (dates TBC)",
+    "notes": "Check website for 2025/26 Santa Special dates"
+  },
+  "pricing": {
+    "type": "ticketed",
+    "priceRange": "From £18 adult, £25 child (includes gift)",
+    "notes": "Children's tickets include gift from Santa. Advance booking essential."
+  },
+  "description": "The Ffestiniog & Welsh Highland Railways' Santa Express offers one of the most magical Christmas experiences in North Wales. Steam through the spectacular Snowdonia landscape aboard historic narrow-gauge trains, with Father Christmas himself greeting young visitors in his grotto aboard the train. Each child receives a special gift from Santa, while families enjoy mince pies, festive refreshments, and carol singing as the steam engine winds through mountains and valleys. The journey departs from the charming Harbour Station in Porthmadog, offering breathtaking views of the Snowdonia mountains dressed in winter splendour. With some of the most comfortable carriages on any heritage railway, this is a truly memorable Christmas adventure that brings together Victorian railway magic and festive cheer.",
+  "highlights": [
+    "Steam train through Snowdonia",
+    "Meet Father Christmas on board",
+    "Gift for every child",
+    "Mince pies and festive refreshments",
+    "Historic narrow-gauge railway",
+    "Spectacular mountain scenery",
+    "Carol singing"
+  ],
+  "website": "https://www.festrail.co.uk/",
+  "ticketUrl": "https://www.festrail.co.uk/trains/",
+  "social": {
+    "facebook": "https://facebook.com/festrail",
+    "instagram": "https://instagram.com/ffestiniogwelshhighland",
+    "twitter": "http://x.com/festrail",
+    "youtube": "https://www.youtube.com/user/festshopman",
+    "tiktok": "https://www.tiktok.com/@ffestiniog_welshhighland",
+    "flickr": "https://www.flickr.com/groups/frwhr/"
+  },
+  "heroImage": {
+    "url": "https://www.festrail.co.uk/wp-content/uploads/2023/11/santa-train-snowdonia.jpg",
+    "alt": "Steam train on Ffestiniog Railway decorated for Christmas",
+    "credit": "Ffestiniog & Welsh Highland Railways"
+  },
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "notes": "Contact railway in advance to arrange assistance"
+  },
+  "contact": {
+    "phone": "01766 516000",
+    "email": "enquiries@ffwhr.com"
+  },
+  "familyFriendly": true,
+  "dogFriendly": false
+}

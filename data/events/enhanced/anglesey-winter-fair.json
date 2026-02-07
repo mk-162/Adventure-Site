@@ -1,0 +1,64 @@
+{
+  "slug": "anglesey-winter-fair",
+  "name": "Anglesey Winter Fair",
+  "nameWelsh": "Sioe Aeaf Môn",
+  "type": "Agricultural Show",
+  "category": "family",
+  "region": "north-wales",
+  "location": {
+    "town": "Gwalchmai",
+    "venue": "Anglesey Showground",
+    "address": "Jones Bros Pavilion and Cadarn Hall, Anglesey Showground, Gwalchmai, Holyhead LL65 4RW",
+    "coordinates": {
+      "lat": 53.2612,
+      "lng": -4.4139
+    }
+  },
+  "dates": {
+    "typical": "Second weekend of November",
+    "season2025": "8-9 November 2025",
+    "openingHours": "All day Saturday and Sunday"
+  },
+  "pricing": {
+    "type": "ticketed",
+    "admission": {
+      "adult": "£5 (cash only)",
+      "under16": "Free",
+      "yfcMembers": "£2 with valid membership card"
+    }
+  },
+  "description": "The Anglesey Winter Fair celebrates 31 years of bringing farmers, local businesses, and the wider community together in the weeks leading up to Christmas. Held entirely indoors within purpose-built, heated exhibition halls at the Anglesey Showground, this beloved event ensures comfort and accessibility rain or shine. The two-day fair showcases the best of Welsh rural life with livestock competitions featuring sheep, cattle, and horses, alongside produce shows, cookery, crafts, floral displays, and photography competitions. The welcoming, family-friendly atmosphere makes it a unique opportunity to experience authentic Welsh agricultural heritage, support local producers, and find wonderful artisan gifts perfect for the festive season.",
+  "highlights": [
+    "Livestock competitions (sheep, cattle, horses)",
+    "Produce and food competitions",
+    "Cookery, crafts, and floral displays",
+    "Photography competition",
+    "Indoor heated venue",
+    "Local artisan stalls",
+    "Family-friendly atmosphere"
+  ],
+  "website": "https://www.angleseyshow.org.uk/winter-fair",
+  "ticketUrl": "https://showingscene.com/events/sioe-aeaf-mon-anglesey-winter-show-nov-2025",
+  "social": {
+    "facebook": "https://www.facebook.com/SioeMon/",
+    "instagram": "https://www.instagram.com/sioemon/",
+    "twitter": "https://twitter.com/AngleseyShow1",
+    "youtube": "https://www.youtube.com/channel/UCE77yknGEYhIgHXx4ftVN4A"
+  },
+  "heroImage": {
+    "url": "https://www.angleseyshow.org.uk/_files/ugd/828705_wintershow2024.jpg",
+    "alt": "Livestock judging at Anglesey Winter Fair in indoor pavilion",
+    "credit": "Anglesey Agricultural Society"
+  },
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "notes": "Indoor venue with accessible facilities"
+  },
+  "contact": {
+    "phone": "01407 720072",
+    "email": "info@angleseyshow.org.uk"
+  },
+  "organizer": "Anglesey Agricultural Society",
+  "familyFriendly": true,
+  "dogFriendly": false
+}

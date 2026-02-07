@@ -1,0 +1,34 @@
+{
+  "slug": "beaumaris-festival",
+  "name": "Beaumaris Festival",
+  "category": "cultural",
+  "dates": {
+    "start": "2026-05-20",
+    "end": "2026-05-26"
+  },
+  "location": {
+    "name": "Beaumaris",
+    "region": "Anglesey",
+    "coordinates": {
+      "lat": 53.2631,
+      "lng": -4.0913
+    }
+  },
+  "description": "In the shadow of Edward I's magnificent castle, Beaumaris Festival brings world-class music to one of Wales' most picturesque medieval towns. This intimate bilingual festival (Gŵyl Beaumaris) showcases everything from young artists making their debuts to renowned performers, with classical recitals, opera, jazz, and choral evensong filling historic venues. The Bulkeley Hotel hosts intimate jazz evenings, Canolfan Beaumaris resonates with chamber music, and St Mary's Church provides a sublime backdrop for sacred works. What sets it apart is the warmth of welcome – festival talks give audiences insight into the music, and the compact town means performers and visitors naturally mingle in cafés and on cobbled streets. A cultural gem on the Menai Strait.",
+  "heroImage": {
+    "url": "https://images.squarespace-cdn.com/content/v1/4fd1028ee4b02be53c65dfb3/1631203040726-XIPD2FKQB4S4N9U2B0HZ/Beaumaris+Festival.jpg",
+    "alt": "Musicians performing at Beaumaris Festival",
+    "credit": "Beaumaris Festival"
+  },
+  "website": "https://www.beaumarisfestival.org/",
+  "tickets": {
+    "required": true,
+    "priceRange": "£8-25",
+    "url": "https://www.beaumarisfestival.org/buy-tickets"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/Beaumaris-Festival-69216460947/",
+    "instagram": "https://www.instagram.com/beaumaris_festival/"
+  },
+  "tags": ["classical", "music", "opera", "jazz", "choral", "arts"]
+}

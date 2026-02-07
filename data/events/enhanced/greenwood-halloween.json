@@ -1,0 +1,52 @@
+{
+  "slug": "greenwood-halloween",
+  "name": "SpookWood at GreenWood Family Park",
+  "category": "family",
+  "type": "halloween-event",
+  "dates": {
+    "year": 2026,
+    "start": "2026-10-24",
+    "end": "2026-11-01",
+    "recurring": "Late October to early November annually (October half term)"
+  },
+  "location": {
+    "venue": "GreenWood Family Park",
+    "town": "Y Felinheli",
+    "region": "snowdonia",
+    "postcode": "LL56 4QN",
+    "coordinates": {
+      "lat": 53.18056,
+      "lng": -4.19583
+    }
+  },
+  "description": "SpookWood transforms North Wales' award-winning eco-park into a family-friendly Halloween wonderland. Wander enchanting forest paths adorned with spectacular giant pumpkins, meet friendly witches and wizards, and enjoy spooky-themed activities throughout the woodland setting. Young adventurers can tackle the haunted BareFoot Trail, ride the Green Dragon Roller Coaster in costume, and explore magical TreeTop Towers. The Solar Splash water ride becomes delightfully eerie, while craft activities let little ones create their own Halloween treasures. With all regular rides and attractions open plus special seasonal entertainment, SpookWood delivers thrills without terrors—perfect for families seeking autumnal fun beneath Snowdonia's colourful canopy.",
+  "entry": {
+    "type": "paid",
+    "adultPrice": 10.00,
+    "childPrice": 10.00,
+    "familyPrice": 95.00,
+    "notes": "Family bundle for 4 people. Under 18 months free. Online booking recommended."
+  },
+  "heroImage": {
+    "url": "https://www.greenwoodfamilypark.co.uk/wp-content/uploads/2024/10/spookwood-pumpkins.jpg",
+    "alt": "Giant pumpkin display at SpookWood GreenWood Family Park",
+    "credit": "GreenWood Family Park"
+  },
+  "social": {
+    "website": "https://www.greenwoodfamilypark.co.uk/",
+    "facebook": "https://www.facebook.com/greenwoodfamilypark/",
+    "instagram": "https://www.instagram.com/greenwood_f_p/",
+    "tiktok": "https://www.tiktok.com/@greenwood_family_park",
+    "youtube": "https://www.youtube.com/user/greenwoodfp/"
+  },
+  "highlights": [
+    "Spectacular giant pumpkin displays",
+    "Family-friendly spooky theming",
+    "Haunted BareFoot Trail",
+    "All regular rides and attractions included",
+    "Halloween craft activities",
+    "Costume encouraged"
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

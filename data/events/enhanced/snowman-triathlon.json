@@ -1,0 +1,132 @@
+{
+  "slug": "snowman-triathlon",
+  "name": "Snowman Triathlon",
+  "type": "triathlon",
+  "category": "multi-sport",
+  "date": "2026-07-26",
+  "year": 2026,
+  "location": {
+    "name": "Plas y Brenin, Capel Curig",
+    "region": "Snowdonia",
+    "country": "Wales",
+    "start": {
+      "name": "Llynnau Mymbyr",
+      "coordinates": {
+        "lat": 53.1049,
+        "lng": -3.9391
+      }
+    },
+    "finish": {
+      "name": "Plas y Brenin",
+      "coordinates": {
+        "lat": 53.1049,
+        "lng": -3.9391
+      }
+    }
+  },
+  "distances": [
+    {
+      "name": "Sprint Triathlon",
+      "swim": "400m",
+      "bike": "23km",
+      "run": "5km",
+      "price_from": 42.99
+    },
+    {
+      "name": "Standard (Olympic) Triathlon",
+      "swim": "1500m",
+      "bike": "45km",
+      "run": "10km",
+      "price_from": 105.99,
+      "run_includes": "Summit of Moel Siabod (872m)"
+    },
+    {
+      "name": "Legend (70.3 / Half Ironman)",
+      "swim": "1.9km",
+      "bike": "90km",
+      "run": "21km",
+      "price_from": 145.99
+    },
+    {
+      "name": "Sprint Duathlon",
+      "bike": "23km",
+      "run": "5km",
+      "price_from": 42.99
+    },
+    {
+      "name": "1500m Open Water Swim",
+      "swim": "1500m",
+      "price_from": 42.99
+    },
+    {
+      "name": "2.4 Mile Open Water Swim",
+      "swim": "3.86km",
+      "price_from": 42.99
+    }
+  ],
+  "difficulty": {
+    "rating": 5,
+    "scale": 5,
+    "label": "Extreme",
+    "technical": "Mountain terrain run including summit of Moel Siabod"
+  },
+  "description": "Crowned Welsh Triathlon Event of the Year 2021, the Snowman is notorious as the UK's toughest multi-terrain triathlon. Swim in the crystal waters of Llynnau Mymbyr beneath the shadow of Yr Wyddfa (Snowdon), tackle one of Britain's finest bike courses through Beddgelert, Blaenau Ffestiniog, and the Crimea Pass, then summit Moel Siabod (872m) on foot. The Standard distance alone features 1,200m of climbing on the bike and a mountain summit on the run. Just when you think you're done, another challenge awaits. This is triathlon for those who want more than transitions and flat courses—it's an adrenaline-fuelled adventure through Snowdonia's most spectacular terrain.",
+  "who_its_for": "Experienced triathletes seeking the ultimate UK challenge. Sprint distance suits intermediate athletes; Standard and Legend distances demand serious mountain fitness and trail running ability.",
+  "whats_special": [
+    "UK's toughest multi-terrain triathlon",
+    "Welsh Triathlon Event of the Year 2021",
+    "Summit of Moel Siabod (872m) on run leg",
+    "World-class bike course through Snowdonia",
+    "Freshwater lake swim with mountain backdrop"
+  ],
+  "entry": {
+    "method": "tiered-pricing",
+    "fee": {
+      "sprint_from": 42.99,
+      "standard_from": 105.99,
+      "legend_from": 145.99,
+      "currency": "GBP"
+    },
+    "registration_url": "https://alwaysaimhighevents.com/events/snowman-triathlon",
+    "minimum_age": 17
+  },
+  "included": [
+    "Lively event village with music and commentary",
+    "Family friendly vibes with family finishes",
+    "On course support with marshals and pick up vehicles",
+    "Unique Adventure Championships finisher memento",
+    "Professional chip timing and online results",
+    "Bilingual event (English and Welsh)"
+  ],
+  "cutoff": {
+    "swim_exit": "55 minutes",
+    "bike_complete": "4 hours 25 minutes",
+    "run_complete": "3 hours",
+    "notes": "Strict cutoffs for athlete and volunteer safety"
+  },
+  "mandatory_kit": [
+    "Waterproof jacket with hood and taped seams",
+    "Trail/fell running shoes",
+    "Hat and gloves",
+    "Whistle",
+    "Emergency food",
+    "Foil blanket",
+    "Water",
+    "Mobile phone"
+  ],
+  "website": "https://alwaysaimhighevents.com/events/snowman-triathlon",
+  "organizer": "Always Aim High Events",
+  "social": {
+    "instagram": "@aahevents",
+    "facebook": "alwaysaimhigh"
+  },
+  "photos": [
+    {
+      "url": "https://alwaysaimhighevents.com/events/snowman-triathlon",
+      "source": "Always Aim High Events",
+      "type": "official"
+    }
+  ],
+  "enhanced": true,
+  "enhanced_date": "2026-02-07"
+}

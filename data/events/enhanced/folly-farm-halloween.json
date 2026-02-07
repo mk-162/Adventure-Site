@@ -1,0 +1,54 @@
+{
+  "slug": "folly-farm-halloween",
+  "name": "Folly Farm Spooktacular Halloween",
+  "category": "family",
+  "type": "halloween-event",
+  "dates": {
+    "year": 2026,
+    "start": "2026-10-18",
+    "end": "2026-11-02",
+    "recurring": "Daily throughout October half term and weekends in October"
+  },
+  "location": {
+    "venue": "Folly Farm Adventure Park and Zoo",
+    "town": "Begelly",
+    "region": "pembrokeshire",
+    "postcode": "SA68 0XA",
+    "coordinates": {
+      "lat": 51.746866,
+      "lng": -4.73095
+    }
+  },
+  "description": "Wales's best-loved family attraction transforms for Halloween with spooktacular activities included with regular admission. Join Meep the Sheep and the Folly entertainments team for not-too-scary seasonal fun across the zoo, barn, fairground and play areas. Hunt for spooky scarecrows hidden throughout the park, tackle the Halloween trail with special prizes, and enjoy the Dung Detective workshop. Meet farmyard favourites in spooky costume at the Barn, then explore the zoo where keepers share creepy creature facts. The vintage fairground operates with added atmosphere, while soft play offers indoor thrills. Perfect for little monsters and their families seeking award-winning Halloween entertainment.",
+  "entry": {
+    "type": "paid",
+    "adultPrice": 29.00,
+    "childPrice": 27.00,
+    "familyPrice": 108.00,
+    "notes": "Halloween activities included with regular admission. Under 2s free. 5% online discount available. Family of 4 ticket."
+  },
+  "heroImage": {
+    "url": "https://www.folly-farm.co.uk/wp-content/uploads/folly-halloween-scarecrows.jpg",
+    "alt": "Spooky scarecrow hunt at Folly Farm Halloween",
+    "credit": "Folly Farm"
+  },
+  "social": {
+    "website": "https://www.folly-farm.co.uk/",
+    "facebook": "https://www.facebook.com/FollyFarm",
+    "instagram": "https://www.instagram.com/FollyFarmWales/",
+    "twitter": "https://twitter.com/FollyFarmWales",
+    "tiktok": "https://www.tiktok.com/@follyfarmwalesofficial",
+    "youtube": "https://www.youtube.com/user/FollyFarmWales"
+  },
+  "highlights": [
+    "Spooky scarecrow search throughout park",
+    "Halloween trail with prizes",
+    "Dung Detective workshop",
+    "Costume character meet and greets",
+    "All zoo and farm animals to visit",
+    "Vintage fairground and rides",
+    "Activities included with admission"
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

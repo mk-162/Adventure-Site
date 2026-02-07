@@ -1,0 +1,35 @@
+{
+  "slug": "llangollen-international-eisteddfod",
+  "name": "Llangollen International Musical Eisteddfod",
+  "category": "cultural",
+  "dates": {
+    "start": "2026-07-07",
+    "end": "2026-07-12"
+  },
+  "location": {
+    "name": "Royal International Pavilion, Llangollen",
+    "region": "Denbighshire",
+    "coordinates": {
+      "lat": 52.9692,
+      "lng": -3.1722
+    }
+  },
+  "description": "Born from the ashes of World War II with a mission of peace through song, Llangollen International Musical Eisteddfod has spent nearly 80 years proving that music transcends borders. Each July, the beautiful Dee Valley welcomes around 4,000 performers from over 50 countries, their traditional costumes turning the small Welsh town into a kaleidoscope of world cultures. Choirs from Kazakhstan compete alongside dancers from Indonesia, while folk groups from Patagonia share stages with Welsh harpists. The atmosphere crackles with friendly rivalry as the week builds toward the coveted 'Choir of the World' competition. As Dylan Thomas proclaimed, it truly is 'the best thing that's happened in Wales' – a testament to harmony and reconciliation through music and dance.",
+  "heroImage": {
+    "url": "https://international-eisteddfod.co.uk/wp-content/uploads/2024/01/slide1-2.jpg",
+    "alt": "International performers at Llangollen Eisteddfod",
+    "credit": "Llangollen International Musical Eisteddfod"
+  },
+  "website": "https://international-eisteddfod.co.uk/",
+  "tickets": {
+    "required": true,
+    "priceRange": "Varies by event",
+    "url": "https://boxoffice.international-eisteddfod.co.uk/"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/llangollen",
+    "youtube": "https://www.youtube.com/user/Llangollen1947",
+    "instagram": "https://www.instagram.com/llangollen_eisteddfod"
+  },
+  "tags": ["music", "dance", "international", "competition", "choirs", "folk", "cultural"]
+}

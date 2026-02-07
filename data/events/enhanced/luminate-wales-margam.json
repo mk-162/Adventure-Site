@@ -1,0 +1,63 @@
+{
+  "slug": "luminate-wales-margam",
+  "name": "Luminate Wales - Margam Country Park",
+  "nameWelsh": "Luminate Cymru - Parc Gwledig Margam",
+  "type": "Festival",
+  "category": "family",
+  "region": "south-wales",
+  "location": {
+    "town": "Port Talbot",
+    "venue": "Margam Country Park",
+    "address": "Margam Country Park, Port Talbot SA13 2TJ",
+    "coordinates": {
+      "lat": 51.5575,
+      "lng": -3.7236
+    }
+  },
+  "dates": {
+    "typical": "Mid-November to New Year's Eve",
+    "season2025": "17 November - 31 December 2025",
+    "openingHours": "Entry from 4:30pm to 8pm daily"
+  },
+  "pricing": {
+    "type": "ticketed",
+    "priceRange": "From £16 adult, £10 child",
+    "notes": "Tickets must be pre-booked online. Limited availability per timeslot."
+  },
+  "description": "Luminate transforms the historic grounds and castle of Margam Country Park into a breathtaking illuminated winter wonderland. This enchanting mile-long trail, created by world-leading lighting designers, guides visitors through stunning new installations and music-synchronized displays set against the spectacular backdrop of Margam's ancient parkland. Having welcomed over one million visitors nationwide, Luminate offers a truly immersive festive experience with interactive lighting moments, a magical Rainbow Path, enchanting Light Rose Gardens, and the magnificent Light Manor display. Each step reveals new wonders—from Winter Fairies dancing through the trees to colourful views across the historic landscape. Friendly stewards guide you along the route, making this a perfect winter evening for the whole family.",
+  "highlights": [
+    "Mile-long illuminated trail",
+    "Music-synchronized lighting",
+    "Historic Margam Castle backdrop",
+    "Rainbow Path and Light Rose Garden",
+    "Interactive experiences",
+    "Wishing Wall",
+    "Enchanted Woodland",
+    "Food and drink available"
+  ],
+  "website": "https://luminate.live/margam-country-park",
+  "ticketUrl": "https://bookings.luminate.live/tickets/margam-country-park/calendar",
+  "social": {
+    "facebook": "https://www.facebook.com/luminateuk",
+    "instagram": "https://www.instagram.com/luminateuk",
+    "twitter": "https://twitter.com/luminate_uk",
+    "tiktok": "https://www.tiktok.com/@luminateuk",
+    "youtube": "https://www.youtube.com/@luminate3633"
+  },
+  "heroImage": {
+    "url": "https://luminate.live/wp-content/uploads/2023/08/margam-light-trail-rainbow.jpg",
+    "alt": "Colourful illuminated light trail at Margam Country Park",
+    "credit": "Luminate"
+  },
+  "duration": "60-90 minutes",
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "notes": "Trail is suitable for wheelchairs and pushchairs"
+  },
+  "parking": {
+    "available": true,
+    "notes": "On-site parking, charges may apply"
+  },
+  "familyFriendly": true,
+  "dogFriendly": true
+}

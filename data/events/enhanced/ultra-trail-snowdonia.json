@@ -1,0 +1,120 @@
+{
+  "slug": "ultra-trail-snowdonia",
+  "name": "Snowdonia Ultra Trail Marathon Eryri",
+  "type": "trail-running",
+  "category": "ultra-marathon",
+  "date": "2026-07-12",
+  "year": 2026,
+  "location": {
+    "name": "Llanberis, Gwynedd",
+    "region": "Snowdonia",
+    "country": "Wales",
+    "start": {
+      "name": "Llanberis",
+      "coordinates": {
+        "lat": 53.1193,
+        "lng": -4.1285
+      }
+    },
+    "finish": {
+      "name": "Llanberis",
+      "coordinates": {
+        "lat": 53.1193,
+        "lng": -4.1285
+      }
+    }
+  },
+  "distance": {
+    "value": 57,
+    "unit": "km",
+    "display": "35.3 miles"
+  },
+  "elevation": {
+    "gain": 2199,
+    "unit": "m",
+    "profile": "mountainous"
+  },
+  "difficulty": {
+    "rating": 5,
+    "scale": 5,
+    "label": "Extreme",
+    "technical": "Technical mountain trails with significant exposure"
+  },
+  "itra_points": 3,
+  "utmb_indexed": true,
+  "description": "A UTMB-indexed ultra through Snowdonia's most breathtaking terrain. The 57km route leaves Llanberis via Maesgwm, drops to Rhyd Ddu, then explores the hidden valleys of Cwm Trwsgl and Cwm Pennant before rejoining the marathon route at Nant Gwynant. The final challenge: ascending Yr Wyddfa (Snowdon) via the PyG track to the Finger Stone, followed by a glorious 7km descent to a heroes' welcome. With 2,199m of climbing across mountain paths, forest trails, slate quarries, and ancient tracks, this is a trail runner's paradise. Earn your 3 ITRA points and experience Wales' finest mountain running.",
+  "who_its_for": "Experienced ultra runners with mountain running experience. Strong navigation skills recommended. Minimum age 20.",
+  "whats_special": [
+    "UTMB Indexed with 3 ITRA points",
+    "Summit of Yr Wyddfa (Snowdon) on route",
+    "Hidden valleys of Cwm Trwsgl and Cwm Pennant",
+    "Diverse terrain: mountain, forest, slate quarries",
+    "Part of multi-distance weekend event"
+  ],
+  "distances_available": [
+    {
+      "name": "Ultra Marathon",
+      "distance": "57km",
+      "elevation": "2199m",
+      "itra_points": 3
+    },
+    {
+      "name": "Marathon",
+      "distance": "43km",
+      "elevation": "1685m",
+      "itra_points": 2
+    },
+    {
+      "name": "Half Marathon",
+      "distance": "21km",
+      "elevation": "800m"
+    },
+    {
+      "name": "10K",
+      "distance": "10km",
+      "elevation": "400m"
+    }
+  ],
+  "entry": {
+    "method": "tiered-pricing",
+    "fee": {
+      "tier_1": 94.99,
+      "tier_2": 97.99,
+      "tier_3": 99.99,
+      "tier_4": 104.99,
+      "currency": "GBP"
+    },
+    "instalments_available": true,
+    "instalments_deadline": "2026-03-01",
+    "registration_url": "https://alwaysaimhighevents.com/events/snowdonia-trail-marathon-eryri",
+    "minimum_age": 20
+  },
+  "cutoffs": [
+    {"point": "Rhyd Ddu (Mile 6.7)", "time": "08:10", "pace": "4mph"},
+    {"point": "Beddgelert (Mile 19.4)", "time": "11:20", "pace": "4mph"},
+    {"point": "Pen y Pass (Mile 27.3)", "time": "14:15", "pace": "3.6mph"},
+    {"point": "Finish (Mile 35.3)", "time": "18:00", "pace": "2.6mph"}
+  ],
+  "aid_stations": 5,
+  "start_time": "06:30",
+  "mandatory_kit": [
+    "Waterproof jacket and trousers (taped seams, attached hood)",
+    "Trail/fell running shoes",
+    "Hat and gloves",
+    "Whistle",
+    "Emergency food",
+    "Foil blanket",
+    "Water",
+    "Mobile phone",
+    "Reusable race cup or bottle"
+  ],
+  "cupless_race": true,
+  "website": "https://alwaysaimhighevents.com/events/snowdonia-trail-marathon-eryri",
+  "organizer": "Always Aim High Events",
+  "social": {
+    "instagram": "@aahevents",
+    "facebook": "alwaysaimhigh"
+  },
+  "enhanced": true,
+  "enhanced_date": "2026-02-07"
+}

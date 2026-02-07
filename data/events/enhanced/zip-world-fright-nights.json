@@ -1,0 +1,59 @@
+{
+  "slug": "zip-world-fright-nights",
+  "name": "Zip World Ffear Fforest",
+  "category": "family",
+  "type": "halloween-event",
+  "dates": {
+    "year": 2026,
+    "start": "2026-10-10",
+    "end": "2026-11-03",
+    "recurring": "Selected evenings October to early November, 7:30pm-10:30pm"
+  },
+  "location": {
+    "venue": "Zip World Betws-y-Coed",
+    "town": "Betws-y-Coed",
+    "region": "snowdonia",
+    "postcode": "LL24 0HX",
+    "coordinates": {
+      "lat": 53.092,
+      "lng": -3.801
+    }
+  },
+  "description": "North Wales' most thrilling Halloween scare experience takes over Zip World's forest adventure site after dark. Ffear Fforest transforms the woodland into a realm of terror as you navigate scare zones between adrenaline-pumping adventures. Brave two rides on the Cursed Coaster—the UK's only alpine coaster of its kind—as it hurtles through the haunted forest at 25mph. Bounce through darkness on the illuminated Treetop Nets while creatures lurk below. This immersive scare experience suits older children and adults seeking genuine Halloween thrills beyond typical family-friendly fare. Ages 10+ recommended for scare zones, with the Coaster and Nets providing high-energy escapes between frights.",
+  "entry": {
+    "type": "paid",
+    "adultPrice": 40.00,
+    "childPrice": 40.00,
+    "notes": "Age 10+ recommended. Includes two Cursed Coaster rides and Treetop Nets access. Advance booking essential."
+  },
+  "heroImage": {
+    "url": "https://www.zipworld.co.uk/images/ffear-fforest-halloween.jpg",
+    "alt": "Ffear Fforest scare experience at Zip World",
+    "credit": "Zip World"
+  },
+  "social": {
+    "website": "https://www.zipworld.co.uk/",
+    "facebook": "https://www.facebook.com/zipworlduk",
+    "instagram": "https://www.instagram.com/zip_world",
+    "twitter": "https://twitter.com/ZipWorldUK",
+    "tiktok": "https://www.tiktok.com/@zipworld",
+    "youtube": "https://www.youtube.com/@ZipworldUK"
+  },
+  "highlights": [
+    "Immersive forest scare zones",
+    "Two Cursed Coaster rides included",
+    "Treetop Nets after dark",
+    "Evening event 7:30pm-10:30pm",
+    "Age 10+ recommended",
+    "Multiple event nights throughout season"
+  ],
+  "relatedEvents": [
+    {
+      "name": "Monsters of the Mine",
+      "location": "Zip World Tower Colliery, Aberdare",
+      "description": "Underground Halloween scare in a South Wales coal mine"
+    }
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

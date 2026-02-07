@@ -1,0 +1,34 @@
+{
+  "slug": "fishguard-folk-festival",
+  "name": "Fishguard Folk Festival",
+  "category": "festival",
+  "dates": {
+    "start": "2026-05-22",
+    "end": "2026-05-25"
+  },
+  "location": {
+    "name": "Fishguard",
+    "region": "Pembrokeshire",
+    "coordinates": {
+      "lat": 51.9940,
+      "lng": -4.9730
+    }
+  },
+  "description": "Set against the dramatic Pembrokeshire coastline, Fishguard Folk Festival is a glorious celebration of Celtic music traditions held every Late May Bank Holiday. What makes this festival special is its grassroots spirit – organised by volunteers from the local Tuesday night folk session, most events are completely free. The harbour town fills with spontaneous sessions in pubs, Welsh folk ballads drifting from church halls, and workshops teaching everything from clog dancing to bodhrán rhythms. With acts from Wales, Ireland, Brittany, and beyond, the festival honours the rich tapestry of Celtic heritage while embracing folk music's evolving sounds. It's intimate, welcoming, and authentically Welsh – a festival where strangers become friends over shared songs and sea views.",
+  "heroImage": {
+    "url": "https://www.fishfolkfest.co.uk/",
+    "alt": "Fishguard Folk Festival performance",
+    "credit": "Fishguard Folk Festival"
+  },
+  "website": "https://www.fishfolkfest.co.uk/",
+  "tickets": {
+    "required": false,
+    "priceRange": "Mostly free, headline acts £10-25",
+    "url": "https://www.fishfolkfest.co.uk/"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/fishguardfolk/",
+    "instagram": "https://www.instagram.com/fishguardfolkfestival/"
+  },
+  "tags": ["folk", "music", "celtic", "traditional", "sessions", "free"]
+}

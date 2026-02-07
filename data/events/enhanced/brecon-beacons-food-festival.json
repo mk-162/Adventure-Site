@@ -1,0 +1,45 @@
+{
+  "slug": "brecon-beacons-food-festival",
+  "name": "Brecon Beacons Food Festival",
+  "category": "festival",
+  "type": "food-festival",
+  "dates": {
+    "year": 2026,
+    "start": "2026-10-03",
+    "end": "2026-10-03",
+    "recurring": "First Saturday of October annually"
+  },
+  "location": {
+    "venue": "Brecon Market Hall",
+    "town": "Brecon",
+    "region": "brecon-beacons",
+    "coordinates": {
+      "lat": 51.9451,
+      "lng": -3.3938
+    }
+  },
+  "description": "One of Wales's premier food festivals brings together over 60 of the finest food and drink producers from in and around the Bannau Brycheiniog (Brecon Beacons) National Park. Held in the historic Brecon Market Hall, this one-day celebration showcases the exceptional produce of this renowned foodie region. Taste artisan cheeses, local meats, craft beers, and Welsh specialities while meeting the passionate producers behind them. A programme of talks and cooking demonstrations from special guest chefs adds to the day's entertainment. Run as a non-profit event by dedicated volunteers, this festival embodies the community spirit of Welsh food culture.",
+  "entry": {
+    "type": "free",
+    "notes": "Free entry. 9.30am-4.30pm"
+  },
+  "heroImage": {
+    "url": "https://breconbeaconsfoodfestival.co.uk/wp-content/uploads/2019/10/2019-home-main-image.jpg",
+    "alt": "Brecon Beacons Food Festival in the Market Hall",
+    "credit": "Brecon Beacons Food Festival"
+  },
+  "social": {
+    "website": "https://breconbeaconsfoodfestival.co.uk/",
+    "facebook": "https://www.facebook.com/BreconBeaconsFoodFestival/"
+  },
+  "highlights": [
+    "Over 60 food and drink exhibitors",
+    "Historic Market Hall venue",
+    "Guest chef demonstrations",
+    "Meet the producers",
+    "Non-profit community event",
+    "Heart of Bannau Brycheiniog National Park"
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

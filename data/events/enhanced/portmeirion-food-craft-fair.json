@@ -1,0 +1,50 @@
+{
+  "slug": "portmeirion-food-craft-fair",
+  "name": "Portmeirion Christmas Fair",
+  "nameWelsh": "Ffair Nadolig Portmeirion",
+  "category": "festival",
+  "type": "food-festival",
+  "dates": {
+    "year": 2026,
+    "start": "2026-12-04",
+    "end": "2026-12-06",
+    "recurring": "First weekend of December annually"
+  },
+  "location": {
+    "venue": "Portmeirion Village",
+    "town": "Penrhyndeudraeth",
+    "region": "snowdonia",
+    "postcode": "LL48 6ER",
+    "coordinates": {
+      "lat": 52.9119,
+      "lng": -4.0955
+    }
+  },
+  "description": "Experience the magic of a Welsh Christmas at Portmeirion's enchanting Food & Craft Fair. This three-day celebration transforms the iconic Italianate village into a festive wonderland, showcasing the very best of Welsh food, drink, gifts and entertainment. Artisan stalls are spread throughout the fairy-tale village's piazzas and grand halls, featuring only handmade-in-Wales products from registered Welsh businesses. Live entertainment includes Welsh male voice choirs, brass bands, and traditional musicians. The unique architectural backdrop of domes, colonnades and pastel buildings creates an unforgettable setting for Christmas shopping and seasonal indulgence.",
+  "entry": {
+    "type": "paid",
+    "price": "Adults £10, Children (5-15) £5, Under 5s free",
+    "notes": "9.30am-5.30pm. Membership holders free with valid card. Free shuttle bus from Porthmadog."
+  },
+  "heroImage": {
+    "url": "https://portmeirion.wales/oimgnn/Food%20Festival/GFC%20Stalls%20and%20scenic/600/Gwyl%20Fwyd%20salutation%20square.jpg",
+    "alt": "Portmeirion Christmas Fair stalls in the Italian-style village square",
+    "credit": "Portmeirion Ltd"
+  },
+  "social": {
+    "website": "https://portmeirion.wales/visit/whats-on/food-and-craft-fair",
+    "facebook": "https://en-gb.facebook.com/Portmeirion/",
+    "instagram": "https://www.instagram.com/visit_portmeirion/",
+    "twitter": "https://twitter.com/portmeirion"
+  },
+  "highlights": [
+    "Unique Italianate village setting",
+    "Welsh male voice choir performances",
+    "All products handmade in Wales",
+    "Festive entertainment programme",
+    "Hotel and village accommodation available",
+    "Free park and ride from Porthmadog"
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

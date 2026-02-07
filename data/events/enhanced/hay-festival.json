@@ -1,0 +1,37 @@
+{
+  "slug": "hay-festival",
+  "name": "Hay Festival",
+  "category": "cultural",
+  "dates": {
+    "start": "2026-05-21",
+    "end": "2026-05-31"
+  },
+  "location": {
+    "name": "Hay-on-Wye",
+    "region": "Powys",
+    "coordinates": {
+      "lat": 52.0745,
+      "lng": -3.1243
+    }
+  },
+  "description": "Dubbed 'the Woodstock of the mind' by Bill Clinton, Hay Festival transforms the charming book town of Hay-on-Wye into the world's greatest celebration of ideas and imagination. For eleven days each May, the Welsh Borders buzz with conversations between the greatest writers, thinkers, scientists, and artists of our time. Set against rolling hills and ancient bookshops, festival-goers wander between marquees hosting Nobel laureates and debut novelists alike, breaking for champagne picnics on the grass. The atmosphere is uniquely democratic – where else might you queue behind Ian McEwan at the coffee stand, then hear a discussion on black holes? A pilgrimage for book lovers and curious minds everywhere.",
+  "heroImage": {
+    "url": "https://www.hayfestival.com/hay-on-wye/img/press-photos/highres/2024/Hay-Festival-Hay-on-Wye-2023-site.jpg",
+    "alt": "Aerial view of Hay Festival site",
+    "credit": "Sam Hardwick"
+  },
+  "website": "https://www.hayfestival.com/",
+  "tickets": {
+    "required": true,
+    "priceRange": "Free - £15+ per event",
+    "url": "https://www.hayfestival.com/hay-festival-tickets.aspx"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/hayfestival",
+    "twitter": "https://twitter.com/hayfestival",
+    "instagram": "https://www.instagram.com/hayfestival/",
+    "youtube": "https://www.youtube.com/c/hayfestivalofficial",
+    "tiktok": "https://www.tiktok.com/@hayfestival"
+  },
+  "tags": ["literature", "ideas", "talks", "authors", "books", "cultural"]
+}

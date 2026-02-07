@@ -1,0 +1,66 @@
+{
+  "slug": "techniquest-christmas",
+  "name": "Christmas at Techniquest",
+  "nameWelsh": "Nadolig yn Techniquest",
+  "type": "Family",
+  "category": "family",
+  "region": "south-wales",
+  "location": {
+    "town": "Cardiff",
+    "venue": "Techniquest Science Centre",
+    "address": "Stuart Street, Cardiff Bay, Cardiff CF10 5BW",
+    "coordinates": {
+      "lat": 51.4647,
+      "lng": -3.1632
+    }
+  },
+  "dates": {
+    "typical": "Throughout December and school holidays",
+    "season2025": "December 2025 - January 2026",
+    "openingHours": "Check website for seasonal hours (extended during school holidays)"
+  },
+  "pricing": {
+    "type": "ticketed",
+    "priceRange": "From £8.50 child, £10.50 adult",
+    "familyTicket": "Family tickets available",
+    "notes": "Pre-booking recommended during school holidays"
+  },
+  "description": "Techniquest brings festive science to Cardiff Bay with special Christmas-themed activities and shows during the holiday season. Wales' leading science discovery centre offers over 100 hands-on exhibits that spark curiosity in visitors of all ages, with seasonal programming adding extra sparkle during winter. Live science shows explore the fascinating chemistry of Christmas, from the science of snow to explosive demonstrations that captivate young audiences. The state-of-the-art planetarium offers star tours perfect for winter nights, while hands-on Lab workshops let families create their own festive experiments. Located in the heart of Cardiff Bay, Techniquest provides the perfect wet-weather destination for families seeking educational entertainment during the Christmas holidays.",
+  "highlights": [
+    "100+ hands-on exhibits",
+    "Festive-themed science shows",
+    "Planetarium star tours",
+    "Lab workshops",
+    "Indoor venue - perfect for any weather",
+    "Cardiff Bay waterfront location"
+  ],
+  "website": "https://www.techniquest.org/",
+  "ticketUrl": "https://tickets.techniquest.org/",
+  "social": {
+    "facebook": "https://www.facebook.com/TQcardiff/",
+    "instagram": "https://www.instagram.com/tqcardiff/",
+    "twitter": "https://twitter.com/Techniquest",
+    "linkedin": "https://www.linkedin.com/company/techniquest-science-centre"
+  },
+  "heroImage": {
+    "url": "https://www.techniquest.org/wp-content/uploads/2023/01/techniquest-science-exhibits.jpg",
+    "alt": "Families exploring interactive exhibits at Techniquest",
+    "credit": "Techniquest"
+  },
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "notes": "Fully accessible venue with lift access"
+  },
+  "contact": {
+    "phone": "029 2047 5475",
+    "email": "info@techniquest.org"
+  },
+  "nearbyAttractions": [
+    "Cardiff Bay Barrage",
+    "Wales Millennium Centre",
+    "Norwegian Church"
+  ],
+  "charityNumber": "517722",
+  "familyFriendly": true,
+  "dogFriendly": false
+}

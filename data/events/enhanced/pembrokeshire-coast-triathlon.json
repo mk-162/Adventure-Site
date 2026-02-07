@@ -1,0 +1,75 @@
+{
+  "slug": "pembrokeshire-coast-triathlon",
+  "name": "Pembrokeshire Coast Triathlon",
+  "type": "triathlon",
+  "category": "coastal-triathlon",
+  "date": "2026-07-11",
+  "year": 2026,
+  "location": {
+    "name": "Broad Haven, Pembrokeshire",
+    "region": "Pembrokeshire Coast National Park",
+    "country": "Wales",
+    "start": {
+      "name": "Broad Haven Beach",
+      "coordinates": {
+        "lat": 51.7825,
+        "lng": -5.1114
+      }
+    },
+    "finish": {
+      "name": "Broad Haven Beach",
+      "coordinates": {
+        "lat": 51.7825,
+        "lng": -5.1114
+      }
+    }
+  },
+  "distances": [
+    {
+      "name": "Sprint",
+      "swim": "750m",
+      "bike": "20km",
+      "run": "5km"
+    },
+    {
+      "name": "Olympic / Standard",
+      "swim": "1500m",
+      "bike": "40km",
+      "run": "10km"
+    }
+  ],
+  "difficulty": {
+    "rating": 3,
+    "scale": 5,
+    "label": "Moderate-Hard",
+    "technical": "Open water sea swim, hilly bike, coastal path run"
+  },
+  "description": "Set within the stunning Pembrokeshire Coast National Park, this triathlon offers one of Britain's most picturesque race settings. The swim takes place in the safe, crystal-clear waters of Broad Haven beach, monitored by experienced kayakers and the inshore lifeboat. The bike course weaves through Pembrokeshire's rolling countryside with rewarding climbs and exhilarating descents. But it's the run that steals the show—the first 3km follows the beach and coast path with spectacular views across St Bride's Bay. Cross the finish line on the golden sands with Welsh cakes waiting. This is triathlon as it should be: challenging, beautiful, and unmistakably Welsh.",
+  "who_its_for": "Intermediate to experienced triathletes who appreciate stunning scenery. Sea swim experience recommended. Perfect for those seeking a memorable race in a National Park setting.",
+  "whats_special": [
+    "Pembrokeshire Coast National Park setting",
+    "Beach start and finish",
+    "Coastal path running with bay views",
+    "Welsh cakes at the finish line",
+    "Sea swim in safe, sheltered bay"
+  ],
+  "entry": {
+    "method": "direct-entry",
+    "fee": {
+      "sprint_from": 55,
+      "olympic_from": 75,
+      "currency": "GBP"
+    },
+    "registration_url": "https://www.allabouttriathlons.co.uk/",
+    "minimum_age": 17
+  },
+  "swim_safety": [
+    "Experienced kayak support",
+    "Inshore lifeboat on standby",
+    "Shore-friendly course"
+  ],
+  "website": "https://www.allabouttriathlons.co.uk/",
+  "enhanced": true,
+  "enhanced_date": "2026-02-07",
+  "notes": "Event typically held mid-July. Check official website for exact 2026 date and entry."
+}

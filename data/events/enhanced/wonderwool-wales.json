@@ -1,0 +1,35 @@
+{
+  "slug": "wonderwool-wales",
+  "name": "Wonderwool Wales",
+  "category": "cultural",
+  "dates": {
+    "start": "2026-04-25",
+    "end": "2026-04-26"
+  },
+  "location": {
+    "name": "Royal Welsh Showground",
+    "region": "Builth Wells, Powys",
+    "coordinates": {
+      "lat": 52.1465,
+      "lng": -3.4083
+    }
+  },
+  "description": "Celebrating its 20th anniversary in 2026, Wonderwool Wales is the UK's largest wool, yarn, and natural fibre festival – a paradise for knitters, spinners, weavers, and textile artists. Spread across three halls, over 220 carefully curated exhibitors display everything from hand-dyed Welsh mountain wool to antique spinning wheels, felting supplies to contemporary textile art. The atmosphere is wonderfully tactile – visitors can't resist touching the rainbow of yarns, trying out equipment, and chatting with passionate makers. Outside, street food stalls fuel the shopping spree, while workshops teach techniques from beginner crochet to advanced weaving. Award-winning and utterly unique, it's a celebration of slow crafting and the rich heritage of Welsh wool.",
+  "heroImage": {
+    "url": "https://wonderwoolwales.co.uk/wp-content/uploads/2025/08/Wonderwool-420.jpg",
+    "alt": "Colourful yarn displays at Wonderwool Wales",
+    "credit": "Wonderwool Wales"
+  },
+  "website": "https://wonderwoolwales.co.uk/",
+  "tickets": {
+    "required": true,
+    "priceRange": "Day tickets available",
+    "url": "https://wonderwoolwales.ticketsrv.co.uk/product-collection/5"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/WonderwoolWales/",
+    "twitter": "https://x.com/wonderwoolwales",
+    "instagram": "https://www.instagram.com/wonderwoolwales/"
+  },
+  "tags": ["wool", "crafts", "knitting", "weaving", "textiles", "fibre", "artisan"]
+}

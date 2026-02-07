@@ -1,0 +1,82 @@
+{
+  "slug": "coed-y-brenin-enduro",
+  "name": "Coed y Brenin Enduro",
+  "type": "mountain-biking",
+  "category": "mtb-enduro",
+  "date": "2026-06-20",
+  "year": 2026,
+  "location": {
+    "name": "Coed y Brenin Forest Park",
+    "region": "Snowdonia",
+    "country": "Wales",
+    "start": {
+      "name": "Coed y Brenin Visitor Centre",
+      "coordinates": {
+        "lat": 52.8114,
+        "lng": -3.8878
+      }
+    },
+    "finish": {
+      "name": "Coed y Brenin Visitor Centre",
+      "coordinates": {
+        "lat": 52.8114,
+        "lng": -3.8878
+      }
+    }
+  },
+  "distance": {
+    "stages": "5-7 timed stages",
+    "total_km": 35,
+    "display": "35km with timed descents"
+  },
+  "elevation": {
+    "gain": 1200,
+    "unit": "m",
+    "profile": "technical descents"
+  },
+  "difficulty": {
+    "rating": 4,
+    "scale": 5,
+    "label": "Hard",
+    "technical": "Technical singletrack, roots, rocks, drops"
+  },
+  "description": "Coed y Brenin is the birthplace of purpose-built mountain bike trails in the UK, and this enduro puts you on some of Britain's finest singletrack. The format is classic enduro: pedal between stages on flowing liaison trails, then race against the clock on technical descents. Expect rocky chutes, rooty sections, bermed corners, and natural features that test your handling skills. The ancient forest provides a stunning backdrop—towering conifers, rushing rivers, and that unmistakable Welsh woodland atmosphere. Whether you're a seasoned racer or enduro newcomer, Coed y Brenin delivers world-class riding in a legendary location.",
+  "who_its_for": "Intermediate to advanced mountain bikers with enduro or trail centre experience. Good descending skills essential. Full suspension bike recommended.",
+  "whats_special": [
+    "Birthplace of UK purpose-built MTB trails",
+    "World-class singletrack in ancient forest",
+    "Multiple timed stages on natural terrain",
+    "Stunning Snowdonia forest setting",
+    "Legendary Welsh trail heritage"
+  ],
+  "categories": [
+    "Elite Men",
+    "Elite Women",
+    "Open Men",
+    "Open Women",
+    "Masters (40+)",
+    "Vets (50+)"
+  ],
+  "entry": {
+    "method": "direct-entry",
+    "fee": {
+      "senior": 65,
+      "junior": 45,
+      "currency": "GBP"
+    },
+    "registration_url": "https://www.rootsandrain.com",
+    "minimum_age": 16
+  },
+  "equipment_required": [
+    "Full-face helmet (mandatory)",
+    "Full suspension MTB recommended",
+    "Knee pads recommended",
+    "Gloves",
+    "Eye protection"
+  ],
+  "website": "https://www.mbwales.com/destinations/coed-y-brenin/",
+  "forest_info": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/coed-y-brenin-forest-park/",
+  "enhanced": true,
+  "enhanced_date": "2026-02-07",
+  "notes": "Check official MTB Wales and Roots & Rain for latest enduro race dates and registration."
+}

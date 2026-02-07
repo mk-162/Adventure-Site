@@ -1,0 +1,94 @@
+{
+  "slug": "man-vs-mountain",
+  "name": "Man vs Mountain (Yr Wyddfa)",
+  "type": "trail-running",
+  "category": "mountain-race",
+  "date": "2026-09-05",
+  "year": 2026,
+  "location": {
+    "name": "Llanberis, Gwynedd",
+    "region": "Snowdonia",
+    "country": "Wales",
+    "start": {
+      "name": "Llanberis",
+      "coordinates": {
+        "lat": 53.1193,
+        "lng": -4.1285
+      }
+    },
+    "finish": {
+      "name": "Llanberis",
+      "coordinates": {
+        "lat": 53.1193,
+        "lng": -4.1285
+      }
+    }
+  },
+  "distance": {
+    "value": 23,
+    "unit": "km",
+    "display": "14.3 miles"
+  },
+  "elevation": {
+    "gain": 1085,
+    "unit": "m",
+    "summit": 1085,
+    "profile": "mountain summit"
+  },
+  "difficulty": {
+    "rating": 4,
+    "scale": 5,
+    "label": "Very Hard",
+    "technical": "Mountain trails with significant ascent to Wales' highest peak"
+  },
+  "description": "Man vs Mountain is the ultimate showdown between runner and Wales' highest peak. Starting in Llanberis, the route climbs to the summit of Yr Wyddfa (Snowdon) at 1,085m before descending back to the finish. With a mix of technical mountain paths, loose rock, and stunning ridgeline running, this is pure mountain racing at its finest. The views from the summit on a clear day stretch to Ireland, the Isle of Man, and the Lake District. But this race isn't about the scenery—it's about conquering the mountain. Whether you race the clock or race yourself, crossing that finish line after summiting Snowdon is an achievement to treasure.",
+  "who_its_for": "Trail runners with mountain experience. Good fitness essential. Not recommended for beginners or those uncomfortable on exposed mountain terrain.",
+  "whats_special": [
+    "Summit of Yr Wyddfa (Snowdon) - Wales' highest peak",
+    "1,085m total ascent",
+    "Technical mountain trail racing",
+    "Spectacular panoramic views from summit",
+    "Part of Always Aim High Events calendar"
+  ],
+  "distances_available": [
+    {
+      "name": "Full",
+      "distance": "23km",
+      "elevation": "1085m"
+    },
+    {
+      "name": "Half",
+      "distance": "11km",
+      "elevation": "500m"
+    }
+  ],
+  "entry": {
+    "method": "tiered-pricing",
+    "fee": {
+      "full_from": 45.99,
+      "half_from": 35.99,
+      "currency": "GBP"
+    },
+    "registration_url": "https://alwaysaimhighevents.com/events",
+    "minimum_age": 18
+  },
+  "mandatory_kit": [
+    "Waterproof jacket with hood and taped seams",
+    "Trail/fell running shoes",
+    "Hat and gloves",
+    "Whistle",
+    "Emergency food",
+    "Foil blanket",
+    "Water (minimum 500ml)",
+    "Mobile phone"
+  ],
+  "website": "https://alwaysaimhighevents.com/events",
+  "organizer": "Always Aim High Events",
+  "social": {
+    "instagram": "@aahevents",
+    "facebook": "alwaysaimhigh"
+  },
+  "enhanced": true,
+  "enhanced_date": "2026-02-07",
+  "notes": "Event details subject to confirmation. Check official website for 2026 specifics."
+}

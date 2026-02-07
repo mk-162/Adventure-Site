@@ -1,0 +1,54 @@
+{
+  "slug": "dan-yr-ogof-events",
+  "name": "Dan yr Ogof National Showcaves Seasonal Events",
+  "category": "family",
+  "type": "attraction-event",
+  "dates": {
+    "year": 2026,
+    "start": "2026-03-28",
+    "end": "2026-11-01",
+    "recurring": "Open Easter to October half term. Special events during school holidays."
+  },
+  "location": {
+    "venue": "Dan yr Ogof - The National Showcaves Centre for Wales",
+    "town": "Abercrave",
+    "region": "brecon-beacons",
+    "postcode": "SA9 1GJ",
+    "coordinates": {
+      "lat": 51.830684,
+      "lng": -3.687325
+    }
+  },
+  "description": "Britain's greatest natural wonder awaits at Wales's National Showcaves, where prehistoric adventure unfolds across ten attractions on one ticket. Descend into three spectacular caves—Dan yr Ogof, Cathedral Cave and Bone Cave—where illuminated formations reveal millions of years of geological history. Above ground, encounter over 200 life-sized dinosaurs in one of the world's largest dinosaur parks, from fearsome T-Rex to gentle giants. Explore the reconstructed Iron Age Village and mysterious Millennium Stone Circles. Meet the gentle Shire Horses, discover geological treasures in the museum, and let children loose in outdoor adventure play areas. School holidays bring special events including dinosaur hunts and cave exploration activities.",
+  "entry": {
+    "type": "paid",
+    "adultPrice": 22.70,
+    "childPrice": 17.95,
+    "notes": "Children aged 3-16. Under 2s free. One ticket includes all 10 attractions. Download app for augmented reality dinosaurs and treasure hunt."
+  },
+  "heroImage": {
+    "url": "https://www.showcaves.co.uk/images/cathedral-cave-formations.jpg",
+    "alt": "Illuminated rock formations inside Cathedral Cave at Dan yr Ogof",
+    "credit": "National Showcaves Centre for Wales"
+  },
+  "social": {
+    "website": "https://www.showcaves.co.uk/",
+    "bookings": "https://www.showcavesbookings.co.uk/"
+  },
+  "highlights": [
+    "Three spectacular showcaves to explore",
+    "200+ life-sized dinosaur models",
+    "Iron Age Village reconstruction",
+    "Millennium Stone Circles",
+    "Shire Horse Centre",
+    "Geological museum",
+    "Adventure play areas",
+    "AR dinosaur app with treasure hunt",
+    "One ticket covers 10 attractions"
+  ],
+  "awards": [
+    "Voted Britain's Greatest Natural Wonder (Radio Times readers poll)"
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

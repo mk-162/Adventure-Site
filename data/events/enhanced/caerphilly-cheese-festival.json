@@ -1,0 +1,49 @@
+{
+  "slug": "caerphilly-cheese-festival",
+  "name": "Caerphilly Cheese Festival",
+  "nameWelsh": "Gŵyl Caws Caerffili",
+  "category": "festival",
+  "type": "food-festival",
+  "dates": {
+    "year": 2026,
+    "start": "2026-08-29",
+    "end": "2026-08-30",
+    "recurring": "August Bank Holiday weekend annually"
+  },
+  "location": {
+    "venue": "Caerphilly Town Centre & Castle Grounds",
+    "town": "Caerphilly",
+    "region": "south-wales-valleys",
+    "postcode": "CF83 1JL",
+    "coordinates": {
+      "lat": 51.5762,
+      "lng": -3.2234
+    }
+  },
+  "description": "Wales's cheesiest celebration returns for a fantastic weekend of live music, great food and a whole load of fun in the shadow of Britain's second-largest castle. The Caerphilly Cheese Festival transforms the town centre with food, drink and craft stalls, a funfair, and street entertainers. Three live music stages host over 25 acts across the weekend: The Green Lady Stage, Castle Moat Stage, and the impressive Leaning Tower Main Stage. Sample the famous Caerphilly cheese alongside local producers, hot food concessions and craft stalls. Dog-friendly with a sensory sanctuary for those who need a quieter moment, this free-entry festival offers something for everyone.",
+  "entry": {
+    "type": "free",
+    "notes": "Free entry. Saturday 10am-7pm, Sunday 10am-5pm"
+  },
+  "heroImage": {
+    "url": "https://www.caerphillycheesefestival.co.uk/wp-content/uploads/2019/09/cheese-fest-2019-02.jpg",
+    "alt": "Caerphilly Cheese Festival crowds with castle backdrop",
+    "credit": "Caerphilly County Borough Council"
+  },
+  "social": {
+    "website": "https://www.caerphillycheesefestival.co.uk/",
+    "facebook": "https://www.facebook.com/TheBigCheeseCaerphilly/",
+    "instagram": "https://www.instagram.com/visitcaerphilly/",
+    "twitter": "https://twitter.com/Visitcaerphilly"
+  },
+  "highlights": [
+    "Three live music stages",
+    "Over 25 musical acts",
+    "Famous Caerphilly cheese producers",
+    "Funfair and street entertainers",
+    "Adjacent to Caerphilly Castle",
+    "Dog-friendly with sensory sanctuary"
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

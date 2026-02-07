@@ -1,0 +1,54 @@
+{
+  "slug": "greenwood-summer-events",
+  "name": "GreenWood Family Park Summer Adventures",
+  "category": "family",
+  "type": "summer-event",
+  "dates": {
+    "year": 2026,
+    "start": "2026-07-18",
+    "end": "2026-09-01",
+    "recurring": "Throughout Welsh school summer holidays (mid-July to early September)"
+  },
+  "location": {
+    "venue": "GreenWood Family Park",
+    "town": "Y Felinheli",
+    "region": "snowdonia",
+    "postcode": "LL56 4QN",
+    "coordinates": {
+      "lat": 53.18056,
+      "lng": -4.19583
+    }
+  },
+  "description": "North Wales' award-winning eco-park bursts with summer holiday adventures beneath Snowdonia's towering peaks. Splash down the Solar Splash—the world's first solar-powered water ride—and race the Green Dragon Roller Coaster through the woodland. Brave the BareFoot Trail's sensory challenges, climb the mighty TreeTop Towers, and glide across the park on the Forest Glider zipline. Summer brings extended opening hours, outdoor shows featuring magic and entertainment, plus Giant Quest treasure hunts. The park's sustainable ethos means eco-crafts join regular activities, while the soft play and cafe provide shady retreats. Perfect for active families seeking outdoor adventures with an environmental conscience.",
+  "entry": {
+    "type": "paid",
+    "adultPrice": 24.55,
+    "childPrice": 24.55,
+    "familyPrice": 97.00,
+    "notes": "Peak season online prices. Under 1m reduced rate (£10.90). Under 18 months free. Family bundle for 4."
+  },
+  "heroImage": {
+    "url": "https://www.greenwoodfamilypark.co.uk/wp-content/uploads/solar-splash-summer.jpg",
+    "alt": "Solar Splash water ride at GreenWood Family Park in summer",
+    "credit": "GreenWood Family Park"
+  },
+  "social": {
+    "website": "https://www.greenwoodfamilypark.co.uk/",
+    "facebook": "https://www.facebook.com/greenwoodfamilypark/",
+    "instagram": "https://www.instagram.com/greenwood_f_p/",
+    "tiktok": "https://www.tiktok.com/@greenwood_family_park",
+    "youtube": "https://www.youtube.com/user/greenwoodfp/"
+  },
+  "highlights": [
+    "Solar Splash water ride",
+    "Green Dragon Roller Coaster",
+    "Forest Glider zipline",
+    "TreeTop Towers adventure playground",
+    "BareFoot Trail sensory walk",
+    "Live entertainment and magic shows",
+    "Giant Quest treasure hunt",
+    "Eco-friendly craft activities"
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

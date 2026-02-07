@@ -1,0 +1,40 @@
+{
+  "slug": "anglesey-county-show",
+  "name": "Anglesey County Show",
+  "nameWelsh": "Sioe Môn",
+  "coordinates": { "lat": 53.2538, "lng": -4.3888 },
+  "heroImage": {
+    "url": "https://www.angleseyshow.org.uk/_files/ugd/828705_header.jpg",
+    "alt": "Anglesey Show livestock parade in the main ring with Snowdonia backdrop",
+    "source": "Anglesey Agricultural Society",
+    "attribution": "Phil Hen"
+  },
+  "description": "Set against the stunning backdrop of Anglesey—the 'Mother of Wales'—this beloved two-day agricultural show celebrates the island's rich farming heritage each August. From champion Welsh Black cattle to graceful horse displays, the Anglesey Show brings together generations of farming families alongside visitors seeking an authentic slice of rural Ynys Môn. Wander through trade stands showcasing local crafts, taste artisan produce from island producers, and let the kids loose in the all-new Entertainment Zone. It's the perfect family adventure where Celtic tradition meets contemporary country fun, all wrapped in that unmistakable Anglesey warmth.",
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/SioeMon/",
+    "instagram": "https://www.instagram.com/sioemon/",
+    "twitter": "https://twitter.com/AngleseyShow1",
+    "youtube": "https://www.youtube.com/channel/UCE77yknGEYhIgHXx4ftVN4A"
+  },
+  "category": "festival",
+  "dates2026": {
+    "start": "2026-08-11",
+    "end": "2026-08-12",
+    "confirmed": true
+  },
+  "isRecurring": true,
+  "recurringSchedule": "Second week of August annually (Tue-Wed)",
+  "pricing": {
+    "adult": "TBC",
+    "child": "TBC",
+    "notes": "Tickets available via website"
+  },
+  "venue": {
+    "name": "Anglesey Showground",
+    "address": "Tŷ Glyn Williams, The Showground, Gwalchmai, Holyhead, Anglesey, LL65 4RW"
+  },
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07",
+  "sourceUrls": ["https://www.angleseyshow.org.uk/"],
+  "confidence": "high"
+}

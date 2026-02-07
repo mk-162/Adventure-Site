@@ -1,0 +1,39 @@
+{
+  "slug": "pembrokeshire-county-show",
+  "name": "Pembrokeshire County Show",
+  "coordinates": { "lat": 51.8207, "lng": -4.9847 },
+  "heroImage": {
+    "url": "https://www.pembsshow.org/media/hero-image.jpg",
+    "alt": "Pembrokeshire County Show main arena with livestock and crowds",
+    "source": "Pembrokeshire Agricultural Society",
+    "attribution": null
+  },
+  "description": "Where coastal Pembrokeshire meets farming tradition, this two-day extravaganza at Withybush Showground has been celebrating agricultural excellence since 1784. Watch champion livestock compete for prestigious rosettes, marvel at skilled sheepdog trials, and discover why Pembrokeshire's food and farming scene is the envy of Wales. The show perfectly captures the spirit of this spectacular county—from the farmers who work the ancient Celtic landscape to the artisan producers crafting world-class Welsh products. Gates open at 8am for those early birds who know the best discoveries happen before the crowds arrive.",
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/pembscountyshow/",
+    "instagram": "https://instagram.com/pembsshow",
+    "twitter": "https://twitter.com/pembscountyshow",
+    "youtube": null
+  },
+  "category": "festival",
+  "dates2026": {
+    "start": "2026-08-19",
+    "end": "2026-08-20",
+    "confirmed": true
+  },
+  "isRecurring": true,
+  "recurringSchedule": "Third week of August annually (Wed-Thu)",
+  "pricing": {
+    "adult": "TBC",
+    "child": "TBC",
+    "notes": "Tickets available closer to event"
+  },
+  "venue": {
+    "name": "Haverfordwest Showground",
+    "address": "Withybush Road, Haverfordwest, Pembrokeshire, SA62 4BW"
+  },
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07",
+  "sourceUrls": ["https://www.pembsshow.org/"],
+  "confidence": "high"
+}

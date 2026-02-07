@@ -1,0 +1,37 @@
+{
+  "slug": "hay-festival-winter-weekend",
+  "name": "Hay Festival Winter Weekend",
+  "category": "cultural",
+  "dates": {
+    "start": "2026-11-26",
+    "end": "2026-11-29"
+  },
+  "location": {
+    "name": "Hay-on-Wye",
+    "region": "Powys",
+    "coordinates": {
+      "lat": 52.0745,
+      "lng": -3.1243
+    }
+  },
+  "description": "As autumn leaves fall and fires are lit in Hay's famous bookshops, Winter Weekend brings the magic of Hay Festival to the cosy season. This intimate four-day gathering offers the same world-class authors, thinkers, and conversations as the main festival, but with a distinctly festive warmth. Wrapped in scarves and clutching hot drinks, audiences settle in for readings, debates, and discoveries, with Christmas book shopping an irresistible bonus. The newly restored Hay Castle provides a stunning backdrop, while events for families make it a literary adventure for all ages. It's the perfect antidote to the dark November evenings – a celebration of ideas, imagination, and the simple pleasure of gathering around stories as winter draws in.",
+  "heroImage": {
+    "url": "https://www.hayfestival.com/hay-on-wye/img/press-photos/highres/2024/Hay-Festival-Hay-on-Wye-2023-site.jpg",
+    "alt": "Aerial view of Hay-on-Wye",
+    "credit": "Hay Festival / Sam Hardwick"
+  },
+  "website": "https://www.hayfestival.com/winter-weekend/",
+  "tickets": {
+    "required": true,
+    "priceRange": "Varies per event",
+    "url": "https://www.hayfestival.com/winter-weekend/"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/hayfestival",
+    "twitter": "https://twitter.com/hayfestival",
+    "instagram": "https://www.instagram.com/hayfestival/",
+    "youtube": "https://www.youtube.com/c/hayfestivalofficial",
+    "tiktok": "https://www.tiktok.com/@hayfestival"
+  },
+  "tags": ["literature", "ideas", "books", "winter", "christmas", "family"]
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "grizzly-ultramarathon-wales",
+  "name": "Grizzly Ultramarathon Wales",
+  "type": "trail-running",
+  "category": "ultra-marathon",
+  "date": "2026-03-14",
+  "year": 2026,
+  "location": {
+    "name": "Black Mountains / Brecon Beacons",
+    "region": "Brecon Beacons National Park",
+    "country": "Wales",
+    "start": {
+      "name": "Crickhowell",
+      "coordinates": {
+        "lat": 51.8586,
+        "lng": -3.1408
+      }
+    },
+    "finish": {
+      "name": "Crickhowell",
+      "coordinates": {
+        "lat": 51.8586,
+        "lng": -3.1408
+      }
+    }
+  },
+  "distance": {
+    "value": 45,
+    "unit": "km",
+    "display": "28 miles"
+  },
+  "elevation": {
+    "gain": 2000,
+    "unit": "m",
+    "profile": "mountainous"
+  },
+  "difficulty": {
+    "rating": 5,
+    "scale": 5,
+    "label": "Extreme",
+    "technical": "Technical mountain trails, navigation required, exposed ridgelines"
+  },
+  "description": "A brutal early-season test through the wild heart of the Black Mountains. The Grizzly Ultramarathon delivers everything Wales does best: unforgiving ascents, technical descents, and vast empty landscapes that make you feel genuinely alone with the mountains. Starting from the picturesque town of Crickhowell, the route climbs into the Black Mountains, traversing exposed ridgelines, boggy moorland, and ancient drovers' paths. March conditions add an extra layer of challenge—expect cold, wind, and potentially snow at altitude. This isn't a race for the faint-hearted, but for those who embrace the wild, it's an unforgettable journey through some of Wales' most spectacular and least-trodden terrain.",
+  "who_its_for": "Experienced ultra runners with strong navigation skills and mountain running experience. Not recommended for beginners. Winter kit essential for March conditions.",
+  "whats_special": [
+    "Wild, remote Black Mountains terrain",
+    "Early season challenge (March)",
+    "Technical navigation required",
+    "Stunning Brecon Beacons scenery",
+    "True mountain ultra experience"
+  ],
+  "entry": {
+    "method": "direct-entry",
+    "fee": {
+      "amount": 75,
+      "currency": "GBP"
+    },
+    "minimum_age": 21
+  },
+  "mandatory_kit": [
+    "Waterproof jacket and trousers (taped seams)",
+    "Full leg cover",
+    "Long sleeve base layer",
+    "Hat and gloves",
+    "Buff/neck cover",
+    "Whistle",
+    "Emergency food (minimum 1000 calories)",
+    "Foil blanket",
+    "First aid kit",
+    "Water (minimum 1L capacity)",
+    "Mobile phone (fully charged)",
+    "Map and compass",
+    "GPS recommended",
+    "Head torch with spare batteries"
+  ],
+  "navigation": {
+    "type": "self-navigation",
+    "gpx_provided": true,
+    "checkpoints": "Mandatory checkpoints with cutoff times"
+  },
+  "enhanced": true,
+  "enhanced_date": "2026-02-07",
+  "notes": "Research specific organiser and dates for 2026. Multiple Welsh ultras use 'Grizzly' branding - confirm exact event."
+}

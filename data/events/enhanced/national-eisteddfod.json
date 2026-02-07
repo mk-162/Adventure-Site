@@ -1,0 +1,39 @@
+{
+  "slug": "national-eisteddfod",
+  "name": "National Eisteddfod of Wales",
+  "welshName": "Eisteddfod Genedlaethol Cymru",
+  "category": "cultural",
+  "dates": {
+    "start": "2026-08-01",
+    "end": "2026-08-08"
+  },
+  "location": {
+    "name": "Llantwd (Y Garreg Las)",
+    "region": "North Pembrokeshire",
+    "coordinates": {
+      "lat": 51.9546,
+      "lng": -4.7783
+    },
+    "note": "Location changes annually - 2026 celebrates 850 years since the first Eisteddfod"
+  },
+  "description": "The largest touring cultural festival in Europe and one of the world's great celebrations of language and identity, the National Eisteddfod is the beating heart of Welsh culture. For one week each August, a temporary city rises in a different Welsh community, hosting thousands of competitors in poetry, music, art, dance, and drama – all through the medium of Welsh. The pinnacle is the Chairing and Crowning ceremonies, ancient rituals honouring the best poets. In 2026, the festival arrives in north Pembrokeshire to celebrate 850 years since Lord Rhys hosted the first Eisteddfod at Cardigan Castle in 1176. Beyond competition, the 'Maes' teems with live music, theatre, crafts, food, and the joyous chaos of a nation gathering to celebrate its language and heritage.",
+  "heroImage": {
+    "url": "https://eisteddfod.wales/sites/default/files/styles/hero/public/2024-08/2.jpg",
+    "alt": "EISTEDDFOD letters on the Maes",
+    "credit": "Eisteddfod Genedlaethol Cymru"
+  },
+  "website": "https://eisteddfod.wales/",
+  "tickets": {
+    "required": true,
+    "priceRange": "Day and season tickets available",
+    "url": "https://eisteddfod.wales/"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/eisteddfod",
+    "instagram": "https://www.instagram.com/eisteddfod",
+    "tiktok": "https://www.tiktok.com/@eisteddfodgenedlaethol",
+    "youtube": "https://www.youtube.com/EisteddfodGenedlaetholCymru",
+    "linkedin": "https://www.linkedin.com/company/eisteddfod-genedlaethol-cymru/"
+  },
+  "tags": ["welsh", "language", "poetry", "music", "drama", "cultural", "traditional", "competition"]
+}

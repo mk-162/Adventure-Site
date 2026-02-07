@@ -1,0 +1,38 @@
+{
+  "slug": "urdd-eisteddfod",
+  "name": "Urdd Eisteddfod",
+  "welshName": "Eisteddfod yr Urdd",
+  "category": "cultural",
+  "dates": {
+    "start": "2026-05-23",
+    "end": "2026-05-29"
+  },
+  "location": {
+    "name": "Ynys Môn (Anglesey)",
+    "region": "Isle of Anglesey",
+    "coordinates": {
+      "lat": 53.2300,
+      "lng": -4.3000
+    },
+    "note": "Location changes annually - 2026 extends to 7 days for the first time"
+  },
+  "description": "The National Youth Festival of Wales, Eisteddfod yr Urdd is the largest youth festival in Europe – a vibrant explosion of creativity, competition, and Welsh-language celebration. Organised by Urdd Gobaith Cymru (Wales' national youth movement), the week-long festival sees over 15,000 young people competing in everything from solo singing to robotics, poetry recital to street dance. In 2026, it expands to seven days for the first time, arriving on the beautiful isle of Anglesey. The 'Maes' buzzes with energy: teenagers in traditional costume prepare for folk dancing, children rehearse drama pieces, and proud families cheer from packed pavilions. It's where future stars are born and where Welsh culture passes joyfully to the next generation.",
+  "heroImage": {
+    "url": "https://www.urdd.cymru/media/images/Eisteddfod_yr_Urdd.width-1920.jpg",
+    "alt": "Young performers at Eisteddfod yr Urdd",
+    "credit": "Urdd Gobaith Cymru"
+  },
+  "website": "https://www.urdd.cymru/en/eisteddfod/",
+  "tickets": {
+    "required": true,
+    "priceRange": "Day and season tickets available",
+    "url": "https://www.urdd.cymru/en/eisteddfod/"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/Urdd-Gobaith-Cymru-174206662592389/",
+    "instagram": "https://www.instagram.com/urddgobaithcymru/",
+    "twitter": "https://www.twitter.com/urdd",
+    "youtube": "https://www.youtube.com/channel/UCo4eTewLpug0_dyuoWCikag"
+  },
+  "tags": ["youth", "welsh", "competition", "music", "drama", "dance", "cultural", "children"]
+}

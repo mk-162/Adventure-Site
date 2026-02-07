@@ -1,0 +1,55 @@
+{
+  "slug": "folly-farm-summer",
+  "name": "Folly Farm Summer Holiday Fun",
+  "category": "family",
+  "type": "summer-event",
+  "dates": {
+    "year": 2026,
+    "start": "2026-07-18",
+    "end": "2026-09-01",
+    "recurring": "Daily throughout Welsh school summer holidays (mid-July to early September)"
+  },
+  "location": {
+    "venue": "Folly Farm Adventure Park and Zoo",
+    "town": "Begelly",
+    "region": "pembrokeshire",
+    "postcode": "SA68 0XA",
+    "coordinates": {
+      "lat": 51.746866,
+      "lng": -4.73095
+    }
+  },
+  "description": "Wales's 'Best Day Out' comes alive with summer activities across four fantastic attractions in one. Watch spectacular penguin feeds, marvel at the lion pride, and get close to giraffes, rhinos and meerkats at the award-winning zoo. The Jolly Barn offers hands-on farmyard experiences with daily animal handling sessions, while the vintage fairground spins with traditional fun. Adventure playgrounds, the Pembrokeshire Wheel and indoor soft play ensure non-stop entertainment. Summer brings extended opening hours, special keeper talks, and additional outdoor activities. With free return visits within seven days, families can spread their Folly adventure across multiple sun-soaked days.",
+  "entry": {
+    "type": "paid",
+    "adultPrice": 29.00,
+    "childPrice": 27.00,
+    "familyPrice": 108.00,
+    "notes": "Same prices year-round—no school holiday price increases. Under 2s free. 5% online discount. Free return within 7 days."
+  },
+  "heroImage": {
+    "url": "https://www.folly-farm.co.uk/wp-content/uploads/folly-summer-penguins.jpg",
+    "alt": "Penguin feeding time at Folly Farm Zoo in summer",
+    "credit": "Folly Farm"
+  },
+  "social": {
+    "website": "https://www.folly-farm.co.uk/",
+    "facebook": "https://www.facebook.com/FollyFarm",
+    "instagram": "https://www.instagram.com/FollyFarmWales/",
+    "twitter": "https://twitter.com/FollyFarmWales",
+    "tiktok": "https://www.tiktok.com/@follyfarmwalesofficial",
+    "youtube": "https://www.youtube.com/user/FollyFarmWales"
+  },
+  "highlights": [
+    "Award-winning zoo with lions, penguins, rhinos",
+    "Jolly Barn animal handling sessions",
+    "Vintage fairground rides",
+    "Pembrokeshire Wheel",
+    "Indoor and outdoor play areas",
+    "Extended summer opening hours",
+    "Free return visit within 7 days",
+    "Same prices year-round"
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

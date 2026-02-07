@@ -10,14 +10,16 @@ interface EventsClientProps {
   totalEvents: number;
 }
 
-const CATEGORIES = [
-  'All Events',
-  'Running',
-  'Triathlon',
-  'Cycling',
-  'MTB',
-  'Walking',
-  'Festival'
+// Category labels and their search terms (for ilike matching)
+const CATEGORIES: { label: string; search: string }[] = [
+  { label: 'All Events', search: '' },
+  { label: 'Running', search: 'Running' }, // matches Running, Ultra Running, Trail Running
+  { label: 'Triathlon', search: 'Triathlon' },
+  { label: 'Swimming', search: 'Swimming' }, // matches Open Water Swimming
+  { label: 'Festival', search: 'Festival' },
+  { label: 'Heritage', search: 'Heritage' },
+  { label: 'Family', search: 'Family' },
+  { label: 'Wildlife', search: 'Wildlife' },
 ];
 
 export function EventsClient({ availableMonths, totalEvents }: EventsClientProps) {
@@ -46,10 +48,9 @@ export function EventsClient({ availableMonths, totalEvents }: EventsClientProps
     [searchParams]
   );
 
-  const handleCategoryChange = (category: string) => {
+  const handleCategoryChange = (category: { label: string; search: string }) => {
     // If selecting "All Events", remove 'type' param
-    const val = category === 'All Events' ? '' : category;
-    router.push(`?${createQueryString('type', val)}`, { scroll: false });
+    router.push(`?${createQueryString('type', category.search)}`, { scroll: false });
   };
 
   const handleMonthChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -63,16 +64,16 @@ export function EventsClient({ availableMonths, totalEvents }: EventsClientProps
           <div className="flex items-center gap-2 overflow-x-auto hide-scrollbar pb-1 sm:pb-0">
             {CATEGORIES.map((category) => (
               <button
-                key={category}
+                key={category.label}
                 onClick={() => handleCategoryChange(category)}
                 className={cn(
                   "px-5 py-2 rounded-full text-sm font-bold whitespace-nowrap transition-all",
-                  currentCategory === category || (category === 'All Events' && !searchParams.get('type'))
+                  currentCategory === category.search || (category.search === '' && !searchParams.get('type'))
                     ? "bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-md"
                     : "bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-primary hover:text-primary dark:hover:text-primary"
                 )}
               >
-                {category}
+                {category.label}
               </button>
             ))}
 

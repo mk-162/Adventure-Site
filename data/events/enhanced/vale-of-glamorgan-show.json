@@ -1,0 +1,39 @@
+{
+  "slug": "vale-of-glamorgan-show",
+  "name": "Vale of Glamorgan Show",
+  "coordinates": { "lat": 51.4853, "lng": -3.3831 },
+  "heroImage": {
+    "url": "https://www.valeofglamorganshow.co.uk/wp-content/uploads/hero-show.jpg",
+    "alt": "Vale of Glamorgan Show main ring with livestock and visitors",
+    "source": "Vale of Glamorgan Agricultural Society",
+    "attribution": null
+  },
+  "description": "Established in 1772—making it one of the very oldest agricultural societies on record—the Vale Show transforms the Penllyn showground into South Wales's largest one-day event every August Wednesday. Over 20,000 visitors from town and countryside converge to celebrate everything that makes the Vale special: from champion livestock and horses to 200+ trade stands showcasing local crafts and produce. It's where farming tradition meets festival atmosphere, where vintage tractors share the spotlight with cutting-edge country pursuits, and where the whole of the Vale comes together for one spectacular day.",
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/Vale-of-Glamorgan-Agricultural-Show-100064625562365/",
+    "instagram": "https://www.instagram.com/thevale.show/",
+    "twitter": null,
+    "youtube": null
+  },
+  "category": "festival",
+  "dates2026": {
+    "start": "2026-08-12",
+    "end": "2026-08-12",
+    "confirmed": true
+  },
+  "isRecurring": true,
+  "recurringSchedule": "A Wednesday in mid-August annually",
+  "pricing": {
+    "adult": "TBC",
+    "child": "TBC",
+    "notes": "Tickets available via website"
+  },
+  "venue": {
+    "name": "Penllyn Showground",
+    "address": "Penllyn, Vale of Glamorgan"
+  },
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07",
+  "sourceUrls": ["https://www.valeofglamorganshow.co.uk/"],
+  "confidence": "high"
+}

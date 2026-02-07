@@ -1,0 +1,39 @@
+{
+  "slug": "royal-welsh-winter-fair",
+  "name": "Royal Welsh Winter Fair",
+  "coordinates": { "lat": 52.1581, "lng": -3.4076 },
+  "heroImage": {
+    "url": "https://rwas.wales/wp-content/uploads/2024/12/winter-fair-hero.jpg",
+    "alt": "Royal Welsh Winter Fair with Christmas shoppers and livestock",
+    "source": "Royal Welsh Agricultural Society",
+    "attribution": "RWAS"
+  },
+  "description": "When the Llanelwedd showground transforms into a festive wonderland each late November, you know the Christmas season has truly begun. One of Europe's finest prime stock shows meets Wales's most spectacular Christmas shopping experience across two packed days. Watch champion cattle, sheep, and pigs compete for prestigious winter titles while the legendary Food Hall tempts you with the finest Welsh producers showcasing their seasonal delights. From artisan gifts to farming equipment, from mulled wine to prize-winning Welsh lamb—the Winter Fair is where farming, food, and festivities collide in the most wonderfully Welsh way possible.",
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/RoyalWelshAgriculturalSociety",
+    "instagram": "https://www.instagram.com/royal_welsh_show/",
+    "twitter": "https://twitter.com/royalwelshshow",
+    "youtube": "https://www.youtube.com/user/RoyalWelshShow"
+  },
+  "category": "festival",
+  "dates2026": {
+    "start": "2026-11-30",
+    "end": "2026-12-01",
+    "confirmed": true
+  },
+  "isRecurring": true,
+  "recurringSchedule": "Last Monday-Tuesday of November annually",
+  "pricing": {
+    "adult": "TBC",
+    "child": "TBC",
+    "notes": "Tickets via rwas.ticketsrv.co.uk"
+  },
+  "venue": {
+    "name": "Royal Welsh Showground",
+    "address": "Llanelwedd, Builth Wells, Powys, LD2 3SY"
+  },
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07",
+  "sourceUrls": ["https://rwas.wales/winter-fair/"],
+  "confidence": "high"
+}

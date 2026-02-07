@@ -1,0 +1,39 @@
+{
+  "slug": "chepstow-show",
+  "name": "Chepstow Show",
+  "coordinates": { "lat": 51.6381, "lng": -2.6681 },
+  "heroImage": {
+    "url": "https://www.chepstowshow.co.uk/images/show-main.jpg",
+    "alt": "Chepstow Show at the racecourse with livestock parade",
+    "source": "Chepstow Agricultural Society",
+    "attribution": null
+  },
+  "description": "Combining the unique setting of Chepstow Racecourse with traditional agricultural show heritage, this one-day August spectacular offers something genuinely different. Watch livestock parades circle the famous turf, cheer on competitors in hundreds of classes from horses to homecraft, and discover the new circus workshop and live music stage. With entry from just 9am and under-16s free, it's an affordable family adventure in the beautiful Wye Valley borderlands. The craft and food halls, the horticulture marquee, and the warm welcome from the Chepstow Agricultural Society make this a show with real heart.",
+  "socialLinks": {
+    "facebook": null,
+    "instagram": null,
+    "twitter": null,
+    "youtube": null
+  },
+  "category": "festival",
+  "dates2026": {
+    "start": "2026-08-08",
+    "end": "2026-08-08",
+    "confirmed": false
+  },
+  "isRecurring": true,
+  "recurringSchedule": "First or second Saturday in August annually",
+  "pricing": {
+    "adult": "£12",
+    "child": "Free under 16",
+    "notes": "Pay on gate"
+  },
+  "venue": {
+    "name": "Chepstow Racecourse",
+    "address": "St Lawrence Road, Chepstow, NP16 6EH"
+  },
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07",
+  "sourceUrls": ["https://www.chepstowshow.co.uk/"],
+  "confidence": "medium"
+}

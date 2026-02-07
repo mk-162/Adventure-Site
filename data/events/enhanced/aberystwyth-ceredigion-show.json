@@ -1,0 +1,41 @@
+{
+  "slug": "aberystwyth-ceredigion-show",
+  "name": "Aberystwyth & Ceredigion County Show",
+  "nameWelsh": "Sioe Aberystwyth",
+  "coordinates": { "lat": 52.4125, "lng": -4.0266 },
+  "heroImage": {
+    "url": "https://sioeaberystwythshow.co.uk/wp-content/uploads/hero-main.jpg",
+    "alt": "Aberystwyth Show with livestock competitions and Ceredigion hills",
+    "source": "Sioe Aberystwyth Show",
+    "attribution": null
+  },
+  "description": "Nestled in the rolling Ceredigion countryside between Aberystwyth and Capel Bangor, this one-day agricultural gem brings together the best of Mid Wales farming on a single glorious June Saturday. From prize cattle and sheep to poultry and horses, watch dedicated farmers compete for coveted titles while the whole family enjoys attractions that make Welsh shows legendary. It's compact enough to feel intimate yet packed with enough to fill an adventurous day—making it the perfect introduction to authentic Welsh agricultural shows for those new to the scene.",
+  "socialLinks": {
+    "facebook": null,
+    "instagram": null,
+    "twitter": null,
+    "youtube": null
+  },
+  "category": "festival",
+  "dates2026": {
+    "start": "2026-06-13",
+    "end": "2026-06-13",
+    "confirmed": true
+  },
+  "isRecurring": true,
+  "recurringSchedule": "Second Saturday in June annually",
+  "pricing": {
+    "adult": "TBC",
+    "child": "TBC",
+    "notes": "Available via ticketsrv.co.uk"
+  },
+  "venue": {
+    "name": "Gelli Angharad Fields",
+    "address": "On the A44 between Aberystwyth & Capel Bangor, SY23 3HP",
+    "what3words": "bikes.settle.publisher"
+  },
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07",
+  "sourceUrls": ["https://sioeaberystwythshow.co.uk/"],
+  "confidence": "high"
+}

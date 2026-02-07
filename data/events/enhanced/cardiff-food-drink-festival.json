@@ -1,0 +1,47 @@
+{
+  "slug": "cardiff-food-drink-festival",
+  "name": "Cardiff Food & Drink Festival",
+  "category": "festival",
+  "type": "food-festival",
+  "dates": {
+    "year": 2026,
+    "start": "2026-06-26",
+    "end": "2026-06-28",
+    "recurring": "Last weekend of June annually (Friday-Sunday)"
+  },
+  "location": {
+    "venue": "Roald Dahl Plass",
+    "town": "Cardiff Bay",
+    "region": "cardiff",
+    "coordinates": {
+      "lat": 51.4636,
+      "lng": -3.1631
+    }
+  },
+  "description": "Wales's capital city celebrates its culinary scene at this spectacular three-day festival in the stunning waterfront setting of Roald Dahl Plass, Cardiff Bay. Described as 'a love letter to Welsh produce', the festival brings together artisan cheeses, craft ciders, and local specialities from producers across Wales. The Producers Fair and Farmers Market showcase over 50 stalls of gorgeous goodies, while the Street Food Piazza serves up flavours from around the world. The swinging Bandstand provides a soundtrack of live music, and the Craft*folk-curated Crafters Market offers unique handmade treasures. With the iconic Wales Millennium Centre as a backdrop, this is Welsh food culture at its finest.",
+  "entry": {
+    "type": "free",
+    "notes": "Free entry. Friday 12:00-22:00, Saturday 11:00-22:00, Sunday 11:00-19:00"
+  },
+  "heroImage": {
+    "url": "https://www.visitcardiff.com/media/o4dd4kfk/caf-2024-2.jpg",
+    "alt": "Cardiff Food & Drink Festival at Roald Dahl Plass with crowds enjoying stalls",
+    "credit": "Visit Cardiff"
+  },
+  "social": {
+    "website": "https://www.visitcardiff.com/food-drink/",
+    "facebook": "https://www.facebook.com/VisitCardiff/",
+    "instagram": "https://www.instagram.com/visitcardiff/",
+    "twitter": "https://x.com/VisitCardiff"
+  },
+  "highlights": [
+    "Stunning Cardiff Bay waterfront setting",
+    "Producers Fair with artisan Welsh produce",
+    "Farmers Market with 50+ stalls",
+    "Street Food Piazza international flavours",
+    "Live music on the Bandstand",
+    "Crafters Market handmade goods"
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

@@ -1,0 +1,156 @@
+[
+  {
+    "name": "Ty Coch Inn",
+    "location": "Porthdinllaen, Morfa Nefyn",
+    "what_makes_it_unique": "Iconic pub located directly on the beach, accessible only by foot or via the golf course. Known for its stunning location and lively atmosphere.",
+    "images": {
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Ty_Coch_Inn%2C_Porthdinllaen_-_geograph.org.uk_-_1720847.jpg/640px-Ty_Coch_Inn%2C_Porthdinllaen_-_geograph.org.uk_-_1720847.jpg"
+    },
+    "price": "£80-£150",
+    "booking_link": "https://www.tycoch.co.uk",
+    "description": "This traditional pub and B&B offers a comfortable basecamp for exploring the waters and coast of the Llŷn Peninsula. Expect a relaxed, friendly atmosphere, hearty meals, and a welcome pint after a day of adventure. It's a great spot to swap stories with other travelers and locals alike."
+  },
+  {
+    "name": "Porth Iago Camping (Tyddyn Mawr)",
+    "location": "Rhoshirwaun, near Aberdaron",
+    "what_makes_it_unique": "A simple campsite located directly above the stunning Porth Iago cove, offering incredible sunset views and direct beach access.",
+    "images": {
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Porth_Iago_-_geograph.org.uk_-_1465803.jpg/640px-Porth_Iago_-_geograph.org.uk_-_1465803.jpg"
+    },
+    "price": "£20-£30",
+    "booking_link": "https://www.porthiago.co.uk",
+    "description": "Famous campsite just above Porth Iago beach. Very unique location offering direct access to a sheltered cove perfect for swimming and sunsets."
+  },
+  {
+    "name": "Bert's Kitchen Garden",
+    "location": "Trefor",
+    "what_makes_it_unique": "Eco-friendly campsite set in a kitchen garden with a strong focus on sustainability, foraging, and connecting with nature.",
+    "images": {
+      "cover": null
+    },
+    "price": "£25-£50",
+    "booking_link": "https://bertskg.com",
+    "description": "A unique eco-campsite nestled in a kitchen garden. Offers a peaceful retreat with a focus on sustainable living and nature connection."
+  },
+  {
+    "name": "Away From It All",
+    "location": "Ceidio, Pwllheli",
+    "what_makes_it_unique": "Luxury geodesic glamping domes situated on a working farm with panoramic views of the Llŷn Peninsula and Snowdonia mountains.",
+    "images": {
+      "cover": null
+    },
+    "price": "£90-£150",
+    "booking_link": "https://www.away-from-it-all.co.uk",
+    "description": "Luxury glamping domes on a working farm on the Llŷn Peninsula. Enjoy panoramic views of the mountains and coast with hot tubs available."
+  },
+  {
+    "name": "Brook Cottage Shepherd Huts",
+    "location": "Pwllheli",
+    "what_makes_it_unique": "Hand-crafted luxury shepherd huts set in a tranquil wildflower meadow, offering a romantic and secluded getaway.",
+    "images": {
+      "cover": null
+    },
+    "price": "£100-£180",
+    "booking_link": "https://www.brookcottageshepherdhuts.co.uk",
+    "description": "Luxury shepherd huts in a tranquil setting. Perfect for couples looking for a romantic escape with high-end amenities."
+  },
+  {
+    "name": "Whistling Sands Campsite",
+    "location": "Porthor (Whistling Sands)",
+    "what_makes_it_unique": "Located near the famous 'Whistling Sands' beach (Porthor), managed by the National Trust, offering a back-to-nature experience.",
+    "images": {
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Porth_Oer_-_Whistling_Sands_-_geograph.org.uk_-_300762.jpg/640px-Porth_Oer_-_Whistling_Sands_-_geograph.org.uk_-_300762.jpg"
+    },
+    "price": "£15-£30",
+    "booking_link": "https://www.nationaltrust.org.uk",
+    "description": "Pitch your tent on the stunning Llŷn Peninsula near Porthor beach. A no-frills campsite that's all about location and direct access to the coast."
+  },
+  {
+    "name": "Aberdaron YHA",
+    "location": "Aberdaron",
+    "what_makes_it_unique": "Situated at the very tip of the Llŷn Peninsula, overlooking the bay and close to the departure point for Bardsey Island.",
+    "images": {
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Aberdaron_Bay_-_geograph.org.uk_-_469502.jpg/640px-Aberdaron_Bay_-_geograph.org.uk_-_469502.jpg"
+    },
+    "price": "£25-£60",
+    "booking_link": "https://www.yha.org.uk",
+    "description": "This Llŷn Peninsula hostel is a no-frills basecamp for exploring the rugged coastline. Expect a social atmosphere and easy access to the beach and coastal path."
+  },
+  {
+    "name": "West Wales Windsurf",
+    "location": "Glan y Don, Abersoch",
+    "what_makes_it_unique": "A specialist watersports campsite tailored for windsurfers and surfers, located close to prime spots like Hell's Mouth.",
+    "images": {
+      "cover": null
+    },
+    "price": "£15-£30",
+    "booking_link": "https://www.westwaleswindsurf.co.uk",
+    "description": "This no-frills campsite is all about maximizing your time in the water. Expect a laid-back vibe where wetsuits and sandy feet are the norm."
+  },
+  {
+    "name": "Aberafon Camping",
+    "location": "Gyrn Goch",
+    "what_makes_it_unique": "A unique coastal campsite with its own private beach access, offering stunning sea views and a peaceful atmosphere.",
+    "images": {
+      "cover": null
+    },
+    "price": "£15-£30",
+    "booking_link": "https://www.aberafon.co.uk",
+    "description": "Beachfront site with private beach access. Ideal for families and couples looking for a quiet seaside retreat."
+  },
+  {
+    "name": "Castell Deudraeth",
+    "location": "Minffordd (near Portmeirion)",
+    "what_makes_it_unique": "A Victorian castellated mansion located within the grounds of the Italianate village of Portmeirion, offering a unique historic stay.",
+    "images": {
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Castell_Deudraeth%2C_Portmeirion_-_geograph.org.uk_-_1730032.jpg/640px-Castell_Deudraeth%2C_Portmeirion_-_geograph.org.uk_-_1730032.jpg"
+    },
+    "price": "£150-£300",
+    "booking_link": "https://portmeirion.wales",
+    "description": "Stay in a unique Victorian mansion just outside the famous Portmeirion village. Combines historic charm with modern luxury."
+  },
+  {
+    "name": "The Little Thatch Barn",
+    "location": "Rhiw",
+    "what_makes_it_unique": "A charming, traditional thatched barn conversion in a remote location with breathtaking views of Hell's Mouth bay.",
+    "images": {
+      "cover": null
+    },
+    "price": "£80-£150",
+    "booking_link": "https://www.airbnb.co.uk",
+    "description": "A beautifully converted thatched barn offering a unique and cozy stay. Perfect for a romantic getaway with stunning coastal views."
+  },
+  {
+    "name": "Dwyros Campsite",
+    "location": "Aberdaron",
+    "what_makes_it_unique": "Perched on the cliffs overlooking Aberdaron Bay, this campsite offers simple facilities but unbeatable panoramic views.",
+    "images": {
+      "cover": null
+    },
+    "price": "£15-£25",
+    "booking_link": "http://www.dwyros.co.uk",
+    "description": "Overlooking Aberdaron bay. Simple and scenic campsite offering a true back-to-basics experience with incredible views."
+  },
+  {
+    "name": "Lion Hotel",
+    "location": "Tudweiliog",
+    "what_makes_it_unique": "A historic coaching inn dating back to the 18th century, known for its traditional character and proximity to the coastal path.",
+    "images": {
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Lion_Hotel%2C_Tudweiliog_-_geograph.org.uk_-_297594.jpg/640px-Lion_Hotel%2C_Tudweiliog_-_geograph.org.uk_-_297594.jpg"
+    },
+    "price": "£70-£120",
+    "booking_link": "https://www.lionhoteltudweiliog.co.uk",
+    "description": "A traditional country pub with rooms, offering a warm welcome and hearty food. A great stopover for walkers on the Llŷn Coastal Path."
+  },
+  {
+    "name": "Plas Bodegroes",
+    "location": "Efailnewydd, near Pwllheli",
+    "what_makes_it_unique": "A Grade II listed Georgian country house set in beautiful grounds, formerly a Michelin-starred restaurant with rooms.",
+    "images": {
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Plas_Bodegroes_-_geograph.org.uk_-_1738722.jpg/640px-Plas_Bodegroes_-_geograph.org.uk_-_1738722.jpg"
+    },
+    "price": "£120-£200",
+    "booking_link": "https://www.plasbodegroes.co.uk",
+    "description": "Historic country house offering elegant accommodation and renowned dining. A sophisticated retreat for food lovers."
+  }
+]

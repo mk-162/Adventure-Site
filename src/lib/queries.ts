@@ -455,8 +455,16 @@ export async function getEvents(options?: {
   month?: string;
   limit?: number;
   offset?: number;
+  includePast?: boolean;
 }) {
   const conditions = [eq(events.status, "published")];
+
+  // By default, only show future events (from start of current month)
+  if (!options?.includePast) {
+    const now = new Date();
+    const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+    conditions.push(gte(events.dateStart, startOfMonth));
+  }
 
   if (options?.regionId) {
     conditions.push(eq(events.regionId, options.regionId));
@@ -509,15 +517,21 @@ export async function getEvents(options?: {
 }
 
 export async function getEventMonths() {
+  const now = new Date();
+  const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+  
   const result = await db
     .select({
       month: sql<string>`to_char(${events.dateStart}, 'YYYY-MM')`,
       label: sql<string>`to_char(${events.dateStart}, 'Month YYYY')`,
     })
     .from(events)
-    .where(eq(events.status, "published"))
+    .where(and(
+      eq(events.status, "published"),
+      gte(events.dateStart, startOfMonth)
+    ))
     .groupBy(sql`to_char(${events.dateStart}, 'YYYY-MM')`, sql`to_char(${events.dateStart}, 'Month YYYY')`)
-    .orderBy(desc(sql`to_char(${events.dateStart}, 'YYYY-MM')`));
+    .orderBy(asc(sql`to_char(${events.dateStart}, 'YYYY-MM')`));
 
   return result.map(r => ({ value: r.month, label: r.label }));
 }

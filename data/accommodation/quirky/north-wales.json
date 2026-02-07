@@ -1,0 +1,407 @@
+[
+  {
+    "name": "Llechwedd Glamping",
+    "type": "Safari Lodge",
+    "location": "Blaenau Ffestiniog",
+    "region": "Snowdonia",
+    "website": "https://llechwedd.co.uk/stay",
+    "priceRange": "£££",
+    "description": "Perched on a rugged hillside overlooking the historic Llechwedd Slate Caverns, these luxurious safari lodges offer a unique blend of industrial heritage and comfort. Wake up to panoramic views of the slate landscape and enjoy direct access to some of North Wales' most thrilling adventures.",
+    "features": [
+      "Wood-burning stove",
+      "Private deck with views",
+      "Luxury bedding",
+      "En-suite facilities",
+      "Kitchenette"
+    ],
+    "adventureFriendly": "Located directly at the Zip World Llechwedd site, offering immediate access to Titan 2, Bounce Below, and Caverns.",
+    "bestFor": [
+      "Families",
+      "Couples",
+      "Adventure seekers"
+    ],
+    "proximity": [
+      "Zip World Llechwedd: On-site",
+      "Antur Stiniog MTB: 5 mins drive",
+      "Cwmorthin Slate Mine: 10 mins drive"
+    ]
+  },
+  {
+    "name": "Portmeirion Village",
+    "type": "Hotel & Cottages",
+    "location": "Minffordd, Penrhyndeudraeth",
+    "region": "Snowdonia",
+    "website": "https://portmeirion.wales/stay",
+    "priceRange": "££££",
+    "description": "Stay in the heart of the iconic Italianate village designed by Clough Williams-Ellis. Choose from rooms in the main hotel, the Castell Deudraeth, or one of the whimsical self-catering cottages scattered throughout the village. A truly surreal and beautiful experience.",
+    "features": [
+      "Access to village gardens",
+      "Unique architecture",
+      "Fine dining restaurants",
+      "Estuary views",
+      "Spa facilities"
+    ],
+    "adventureFriendly": "A great base for exploring the southern Snowdonia coast and mountains.",
+    "bestFor": [
+      "Couples",
+      "Architecture lovers",
+      "Luxury seekers"
+    ],
+    "proximity": [
+      "Ffestiniog Railway: 5 mins drive",
+      "Zip World Llechwedd: 20 mins drive",
+      "Harlech Castle: 15 mins drive"
+    ]
+  },
+  {
+    "name": "Chateau Rhianfa",
+    "type": "Hotel",
+    "location": "Menai Bridge, Anglesey",
+    "region": "Anglesey",
+    "website": "https://chateaurhianfa.com",
+    "priceRange": "££££",
+    "description": "A fairytale French-style château overlooking the Menai Strait. Built in 1849, this Grade II listed building features turrets, spires, and elegant interiors. It offers a luxurious and romantic escape with stunning views of Snowdonia.",
+    "features": [
+      "French château architecture",
+      "Views of Menai Strait",
+      "Luxury rooms",
+      "Fine dining",
+      "Gardens"
+    ],
+    "adventureFriendly": "Located near the Menai Strait for RIB rides and kayaking, and a short drive to Snowdonia.",
+    "bestFor": [
+      "Couples",
+      "Romantic getaways",
+      "Luxury seekers"
+    ],
+    "proximity": [
+      "RibRide (Menai Bridge): 5 mins drive",
+      "Zip World Penrhyn Quarry: 15 mins drive",
+      "Beaumaris Castle: 10 mins drive"
+    ]
+  },
+  {
+    "name": "The Windmill",
+    "type": "Converted Windmill",
+    "location": "Llangefni, Anglesey",
+    "region": "Anglesey",
+    "website": "https://www.thewindmillanglesey.co.uk",
+    "priceRange": "£££",
+    "description": "A beautifully restored 18th-century windmill offering unique self-catering accommodation. The circular rooms and top-floor living area provide 360-degree views of the island. A distinctive landmark transformed into a comfortable holiday home.",
+    "features": [
+      "360-degree views",
+      "Circular rooms",
+      "Historic building",
+      "Modern interior",
+      "Private garden"
+    ],
+    "adventureFriendly": "Centrally located on Anglesey, making it a good base for exploring the island's coast and beaches.",
+    "bestFor": [
+      "Families",
+      "Groups",
+      "Unique stays"
+    ],
+    "proximity": [
+      "Red Wharf Bay: 15 mins drive",
+      "Newborough Forest: 20 mins drive",
+      "Zip World Penrhyn Quarry: 25 mins drive"
+    ]
+  },
+  {
+    "name": "Crashpad Lodges at Yr Helfa",
+    "type": "Eco Lodge",
+    "location": "Llanberis / Snowdon",
+    "region": "Snowdonia",
+    "website": "https://www.yrhelfa.co.uk",
+    "priceRange": "£££",
+    "description": "An off-grid mountain lodge located halfway up Snowdon, accessible only by foot or 4x4. Offers a truly remote and immersive mountain experience. Powered by renewable energy, it's a sustainable retreat in the heart of the national park.",
+    "features": [
+      "Off-grid location",
+      "Mountain views",
+      "Wood-burning stove",
+      "Sustainable design",
+      "Remote setting"
+    ],
+    "adventureFriendly": "Located directly on the slopes of Snowdon, perfect for hikers and climbers.",
+    "bestFor": [
+      "Hikers",
+      "Climbers",
+      "Eco-conscious travellers"
+    ],
+    "proximity": [
+      "Snowdon Summit: Hiking distance",
+      "Llanberis Path: Direct access",
+      "Zip World Penrhyn Quarry: 20 mins drive (from Llanberis)"
+    ]
+  },
+  {
+    "name": "Living Room Treehouses",
+    "type": "Treehouse",
+    "location": "Machynlleth",
+    "region": "Mid Wales / Snowdonia Border",
+    "website": "https://www.living-room.co",
+    "priceRange": "£££",
+    "description": "Six enchanting treehouses hidden deep in a Welsh valley. These sustainable structures are built high into the canopy, offering a magical and secluded escape. With wood-burning stoves and spring water showers, it's a back-to-nature experience with a touch of luxury.",
+    "features": [
+      "Treehouse accommodation",
+      "Wood-burning stove",
+      "Secluded woodland setting",
+      "Sustainable design",
+      "Canopy views"
+    ],
+    "adventureFriendly": "Located near the Dyfi Valley for mountain biking and hiking.",
+    "bestFor": [
+      "Couples",
+      "Nature lovers",
+      "Escapism"
+    ],
+    "proximity": [
+      "Dyfi Bike Park: 15 mins drive",
+      "CAT (Centre for Alternative Technology): 10 mins drive",
+      "Snowdonia National Park: bordering"
+    ]
+  },
+  {
+    "name": "Wonderland House",
+    "type": "Themed House",
+    "location": "Penmaenmawr",
+    "region": "North Wales Coast",
+    "website": "https://wonderlandhouse.co.uk",
+    "priceRange": "£££",
+    "description": "An Alice in Wonderland themed holiday home featuring whimsical decor, chequerboard floors, and tea party settings. A playful and eccentric property that brings the classic story to life, offering magnificent sea views.",
+    "features": [
+      "Themed decor",
+      "Sea views",
+      "Large group accommodation",
+      "Whimsical design",
+      "Games room"
+    ],
+    "adventureFriendly": "Located on the North Wales coast, close to beaches and Snowdonia.",
+    "bestFor": [
+      "Groups",
+      "Families",
+      "Themed parties"
+    ],
+    "proximity": [
+      "Conwy Castle: 10 mins drive",
+      "Zip World Penrhyn Quarry: 15 mins drive",
+      "Llandudno: 15 mins drive"
+    ]
+  },
+  {
+    "name": "The Laundry Retreat",
+    "type": "Luxury Roundhouse",
+    "location": "Denbigh",
+    "region": "North East Wales",
+    "website": "https://thelaundryretreat.co.uk",
+    "priceRange": "£££",
+    "description": "Luxury eco-roundhouses set within a walled garden near Denbigh. These timber-framed structures offer a blend of rustic charm and modern comfort, with stunning views of the Clwydian Range. A peaceful and adult-only sanctuary.",
+    "features": [
+      "Roundhouse design",
+      "Walled garden setting",
+      "Luxury interiors",
+      "Views of Clwydian Range",
+      "Adults only"
+    ],
+    "adventureFriendly": "Close to the Clwydian Range for hiking and cycling.",
+    "bestFor": [
+      "Couples",
+      "Quiet retreats",
+      "Luxury glamping"
+    ],
+    "proximity": [
+      "Clwydian Range AONB: 10 mins drive",
+      "Offa's Dyke Path: nearby",
+      "Snowdonia National Park: 40 mins drive"
+    ]
+  },
+  {
+    "name": "Slate Mountain Glamping",
+    "type": "Glamping Pod",
+    "location": "Blaenau Ffestiniog",
+    "region": "Snowdonia",
+    "website": "https://slatemountain.co.uk/glamping",
+    "priceRange": "££",
+    "description": "Glamping pods situated on a steep hillside at Llechwedd, offering dramatic views over the slate quarry and the Moelwynion mountains. A comfortable and convenient base for exploring the industrial heritage and adventure activities of the area.",
+    "features": [
+      "Hillside location",
+      "Quarry views",
+      "En-suite facilities",
+      "Comfortable pods",
+      "Decking area"
+    ],
+    "adventureFriendly": "On-site at Llechwedd Slate Caverns for Zip World and mine tours.",
+    "bestFor": [
+      "Couples",
+      "Small families",
+      "Adventure seekers"
+    ],
+    "proximity": [
+      "Zip World Llechwedd: On-site",
+      "Antur Stiniog MTB: 5 mins drive",
+      "Ffestiniog Railway: 5 mins drive"
+    ]
+  },
+  {
+    "name": "Gwyrfai Valley Railway Carriage",
+    "type": "Converted Railway Carriage",
+    "location": "Dinas, Caernarfon",
+    "region": "Snowdonia",
+    "website": "https://www.quirkyaccom.com/gwyrfai-valley-railway-carriage",
+    "priceRange": "££",
+    "description": "A thoughtfully converted railway carriage located near the Welsh Highland Railway. Offers a nostalgic and cozy stay with original features and modern amenities. Situated in a peaceful valley setting.",
+    "features": [
+      "Converted carriage",
+      "Original features",
+      "Valley setting",
+      "Near heritage railway",
+      "Garden area"
+    ],
+    "adventureFriendly": "Close to Caernarfon and the western slopes of Snowdonia.",
+    "bestFor": [
+      "Couples",
+      "Train enthusiasts",
+      "Nostalgia seekers"
+    ],
+    "proximity": [
+      "Welsh Highland Railway: nearby",
+      "Caernarfon Castle: 10 mins drive",
+      "Snowdon Ranger Path: 15 mins drive"
+    ]
+  },
+  {
+    "name": "The Old Rectory",
+    "type": "Historic House",
+    "location": "Conwy",
+    "region": "North Wales Coast",
+    "website": "https://www.nationaltrust.org.uk/holidays/the-old-rectory-conwy",
+    "priceRange": "£££",
+    "description": "A National Trust holiday cottage located directly on the Conwy estuary, famously known as the house 'with the best view in Wales' looking towards Conwy Castle. A historic and atmospheric property with a unique waterside setting.",
+    "features": [
+      "Estuary views",
+      "Historic building",
+      "National Trust property",
+      "Unique location",
+      "Garden"
+    ],
+    "adventureFriendly": "Great base for exploring Conwy and the northern Snowdonia coast.",
+    "bestFor": [
+      "History buffs",
+      "Families",
+      "View seekers"
+    ],
+    "proximity": [
+      "Conwy Castle: Views of / 5 mins drive",
+      "Zip World Penrhyn Quarry: 20 mins drive",
+      "Llandudno: 10 mins drive"
+    ]
+  },
+  {
+    "name": "Quarryman's Cottage",
+    "type": "Historic Cottage",
+    "location": "Llanberis",
+    "region": "Snowdonia",
+    "website": "https://www.nationaltrust.org.uk/holidays",
+    "priceRange": "££",
+    "description": "Stay in a traditional slate worker's cottage in the heart of Llanberis. These cottages offer a glimpse into the past with thick stone walls and cozy fireplaces, while providing a comfortable base for modern adventures.",
+    "features": [
+      "Traditional architecture",
+      "Slate construction",
+      "Village location",
+      "Wood burner",
+      "History"
+    ],
+    "adventureFriendly": "Located in Llanberis, the outdoor capital of Wales, with easy access to Snowdon and Padarn Lake.",
+    "bestFor": [
+      "Hikers",
+      "History enthusiasts",
+      "Couples"
+    ],
+    "proximity": [
+      "Snowdon Mountain Railway: Walking distance",
+      "National Slate Museum: Walking distance",
+      "Zip World Penrhyn Quarry: 15 mins drive"
+    ]
+  },
+  {
+    "name": "Aberdaron Shepherd's Huts",
+    "type": "Shepherd's Hut",
+    "location": "Aberdaron, Llŷn Peninsula",
+    "region": "Llŷn Peninsula",
+    "website": "https://aberdaronshepherdshuts.co.uk",
+    "priceRange": "££",
+    "description": "Charming shepherd's huts located on the tip of the Llŷn Peninsula. These cozy retreats offer a simple and peaceful escape with stunning coastal views. Perfect for stargazing and enjoying the remote beauty of the area.",
+    "features": [
+      "Shepherd's hut style",
+      "Coastal location",
+      "Sea views",
+      "Peaceful setting",
+      "Outdoor seating"
+    ],
+    "adventureFriendly": "Ideal for exploring the coastal path and beaches of the Llŷn Peninsula.",
+    "bestFor": [
+      "Couples",
+      "Solo travellers",
+      "Coastal walkers"
+    ],
+    "proximity": [
+      "Aberdaron Beach: Walking distance",
+      "Wales Coast Path: Direct access",
+      "Bardsey Island Boat Trips: nearby"
+    ]
+  },
+  {
+    "name": "Little Dragon",
+    "type": "Glamping Pod",
+    "location": "Waunfawr",
+    "region": "Snowdonia",
+    "website": "https://www.littledragon.wales",
+    "priceRange": "££",
+    "description": "Unique, dragon-inspired glamping pods offering a fun and comfortable stay. Located near Caernarfon, these pods are well-equipped and provide a great base for families and couples exploring North Wales.",
+    "features": [
+      "Unique design",
+      "Comfortable interior",
+      "Rural setting",
+      "Family friendly",
+      "Outdoor space"
+    ],
+    "adventureFriendly": "Good location for accessing both the coast and the mountains of Snowdonia.",
+    "bestFor": [
+      "Families",
+      "Couples",
+      "Fun seekers"
+    ],
+    "proximity": [
+      "Caernarfon Castle: 10 mins drive",
+      "Snowdon Ranger Path: 10 mins drive",
+      "Zip World Penrhyn Quarry: 25 mins drive"
+    ]
+  },
+  {
+    "name": "Plas y Brenin",
+    "type": "Adventure Centre",
+    "location": "Capel Curig",
+    "region": "Snowdonia",
+    "website": "https://pyb.co.uk",
+    "priceRange": "££",
+    "description": "Stay at the National Outdoor Centre for a truly immersive adventure experience. Accommodation ranges from en-suite rooms to bunkhouses, all set within a historic building with stunning views of the Snowdon Horseshoe. Rub shoulders with world-class instructors and fellow adventurers.",
+    "features": [
+      "Historic centre",
+      "Mountain views",
+      "On-site bar & meals",
+      "Gear drying rooms",
+      "Expert advice"
+    ],
+    "adventureFriendly": "The ultimate base for serious outdoor enthusiasts, with courses and activities on the doorstep.",
+    "bestFor": [
+      "Solo adventurers",
+      "Groups",
+      "Course participants"
+    ],
+    "proximity": [
+      "Tryfan & Glyderau: Walking distance",
+      "Snowdon: 10 mins drive",
+      "Zip World Fforest: 10 mins drive"
+    ]
+  }
+]

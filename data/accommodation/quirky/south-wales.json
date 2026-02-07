@@ -1,0 +1,300 @@
+[
+  {
+    "name": "Cwmcarn Forest Glamping",
+    "type": "Glamping Pods & Lodges",
+    "location": "Cwmcarn, Newport",
+    "region": "south-wales",
+    "website": "https://www.cwmcarnforest.co.uk",
+    "priceRange": "£50-£120 per night",
+    "description": "Nestled within the Cwmcarn Forest, these glamping pods and luxury lodges offer a serene escape surrounded by woodland. The site is a haven for mountain bikers and walkers, with trails starting right from the door.",
+    "features": [
+      "Glamping Pods",
+      "Luxury Lodges",
+      "Forest Setting",
+      "Bike Wash",
+      "Cafe On-site"
+    ],
+    "adventureFriendly": "Located directly on the Cwmcarn Forest Drive with access to world-class mountain bike trails and hiking routes.",
+    "bestFor": [
+      "Mountain Bikers",
+      "Couples",
+      "Families"
+    ],
+    "proximity": [
+      "Cwmcarn Forest Drive",
+      "Twmbarlwm",
+      "Newport"
+    ]
+  },
+  {
+    "name": "Rock UK Summit Centre",
+    "type": "Activity Centre Accommodation",
+    "location": "Trelewis, Merthyr Tydfil",
+    "region": "south-wales",
+    "website": "https://rockuk.org/centres/summit-centre/",
+    "priceRange": "£25-£60 per person",
+    "description": "Situated on the site of the former Trelewis drift mine, this centre offers bunkhouse accommodation alongside extensive climbing and activity facilities. It provides a unique blend of industrial heritage and modern adventure.",
+    "features": [
+      "Climbing Walls",
+      "Man-made Caving",
+      "Bunkhouse",
+      "Cafe",
+      "Meeting Rooms"
+    ],
+    "adventureFriendly": "On-site climbing walls, bouldering, and caving, plus easy access to the Taff Trail and Bike Park Wales.",
+    "bestFor": [
+      "Groups",
+      "Schools",
+      "Climbers",
+      "Cyclists"
+    ],
+    "proximity": [
+      "Bike Park Wales",
+      "Taff Trail",
+      "Caerphilly Castle"
+    ]
+  },
+  {
+    "name": "Craig y Nos Castle",
+    "type": "Castle Hotel",
+    "location": "Pen-y-cae, Upper Swansea Valley",
+    "region": "south-wales",
+    "website": "https://www.craigynoscastle.com",
+    "priceRange": "£80-£180 per night",
+    "description": "This historic castle in the Brecon Beacons was once the home of opera singer Adelina Patti. It offers a dramatic stay with ghost tours, a theatre, and stunning grounds in the Upper Swansea Valley.",
+    "features": [
+      "Historic Castle",
+      "Opera House",
+      "Ghost Tours",
+      "Dog Friendly",
+      "Restaurant"
+    ],
+    "adventureFriendly": "Located in the Geopark with direct access to hiking trails and the Dan yr Ogof caves nearby.",
+    "bestFor": [
+      "Couples",
+      "History Buffs",
+      "Dog Owners"
+    ],
+    "proximity": [
+      "Dan yr Ogof Caves",
+      "Henrhyd Falls",
+      "Brecon Beacons"
+    ]
+  },
+  {
+    "name": "Llechwen Hall Hotel",
+    "type": "Country House Hotel",
+    "location": "Llanfabon, Pontypridd",
+    "region": "south-wales",
+    "website": "https://www.llechwen.co.uk",
+    "priceRange": "£70-£150 per night",
+    "description": "Perched on a hilltop overlooking the valleys, this charming country house hotel offers panoramic views and a peaceful retreat. The building, a former schoolhouse, retains its historic character while providing modern comforts.",
+    "features": [
+      "Panoramic Views",
+      "Restaurant",
+      "Terrace",
+      "Events Venue",
+      "Historic Building"
+    ],
+    "adventureFriendly": "A comfortable base for exploring the Taff Trail and nearby mountain biking hubs.",
+    "bestFor": [
+      "Couples",
+      "Relaxed Travelers",
+      "Foodies"
+    ],
+    "proximity": [
+      "Pontypridd",
+      "Taff Trail",
+      "Caerphilly Castle"
+    ]
+  },
+  {
+    "name": "Heritage Park Hotel",
+    "type": "Hotel",
+    "location": "Trehafod, Rhondda",
+    "region": "south-wales",
+    "website": "https://www.heritageparkhotel.co.uk",
+    "priceRange": "£60-£120 per night",
+    "description": "Located adjacent to the Rhondda Heritage Park, this modern hotel is steeped in the industrial history of the valleys. It serves as an excellent base for exploring the local mining heritage and the surrounding hills.",
+    "features": [
+      "Restaurant",
+      "Gym",
+      "Bar",
+      "Modern Rooms",
+      "Heritage Site Access"
+    ],
+    "adventureFriendly": "Ideally situated for visitors to the Rhondda Heritage Park and close to walking routes in the Rhondda.",
+    "bestFor": [
+      "Families",
+      "History Enthusiasts",
+      "Business Travelers"
+    ],
+    "proximity": [
+      "Rhondda Heritage Park",
+      "Barry Sidings Country Park",
+      "Pontypridd"
+    ]
+  },
+  {
+    "name": "West Usk Lighthouse",
+    "type": "Lighthouse B&B",
+    "location": "St Brides, Newport",
+    "region": "south-wales",
+    "website": "https://www.westusklighthouse.co.uk",
+    "priceRange": "£120-£200 per night",
+    "description": "A truly unique bed and breakfast located in a converted lighthouse overlooking the Usk estuary. Guests can enjoy circular rooms, a rooftop hot tub, and sweeping views across the Bristol Channel.",
+    "features": [
+      "Lighthouse Stay",
+      "Rooftop Hot Tub",
+      "Sea Views",
+      "Circular Rooms",
+      "Romantic Setting"
+    ],
+    "adventureFriendly": "Offers a quirky and memorable stay near the Wales Coast Path and the wetlands reserve.",
+    "bestFor": [
+      "Couples",
+      "Romantic Getaways",
+      "Architecture Lovers"
+    ],
+    "proximity": [
+      "Newport Wetlands",
+      "Wales Coast Path",
+      "Tredegar House"
+    ]
+  },
+  {
+    "name": "Llanthony Priory Hotel",
+    "type": "Historic Inn",
+    "location": "Llanthony, Black Mountains",
+    "region": "south-wales",
+    "website": "https://www.llanthonypriory.co.uk",
+    "priceRange": "£80-£140 per night",
+    "description": "Set within the ruined walls of a 12th-century Augustinian priory, this hotel offers an atmospheric and secluded stay in the Black Mountains. It is a favorite among hikers and those seeking a digital detox.",
+    "features": [
+      "Historic Ruins",
+      "Remote Location",
+      "Bar",
+      "Traditional Food",
+      "Dark Skies"
+    ],
+    "adventureFriendly": "Located directly on the Offa's Dyke Path and surrounded by prime hiking terrain in the Black Mountains.",
+    "bestFor": [
+      "Hikers",
+      "History Buffs",
+      "Escapists"
+    ],
+    "proximity": [
+      "Offa's Dyke Path",
+      "Black Mountains",
+      "Hay-on-Wye"
+    ]
+  },
+  {
+    "name": "Dare Valley Country Park Accommodation",
+    "type": "Hotel & Camping",
+    "location": "Aberdare",
+    "region": "south-wales",
+    "website": "https://www.darevalleycountrypark.co.uk",
+    "priceRange": "£40-£100 per night",
+    "description": "Situated in a country park reclaimed from a former colliery, this accommodation offers hotel rooms and camping options. The park is a designated Dark Sky Discovery Site and features lakes and trails.",
+    "features": [
+      "Dark Sky Discovery Site",
+      "Lakes",
+      "Cafe",
+      "Bike Hire",
+      "Camping"
+    ],
+    "adventureFriendly": "Direct access to walking and cycling trails within the park, and close to Zip World Tower.",
+    "bestFor": [
+      "Families",
+      "Cyclists",
+      "Nature Lovers"
+    ],
+    "proximity": [
+      "Zip World Tower",
+      "Bike Park Wales",
+      "Brecon Beacons"
+    ]
+  },
+  {
+    "name": "Afan Lodge",
+    "type": "Alpine Lodge",
+    "location": "Afan Valley",
+    "region": "south-wales",
+    "website": "https://www.afanlodge.co.uk",
+    "priceRange": "£70-£130 per night",
+    "description": "This Swiss-style alpine lodge in the heart of the Afan Valley is designed specifically for outdoor enthusiasts. With stunning views and bike-friendly facilities, it's a perfect base for tackling the local trails.",
+    "features": [
+      "Bike Storage",
+      "Drying Room",
+      "Restaurant",
+      "Valley Views",
+      "Bar"
+    ],
+    "adventureFriendly": "Tailor-made for mountain bikers with secure storage and wash facilities, right near the Afan Forest Park trails.",
+    "bestFor": [
+      "Mountain Bikers",
+      "Hikers",
+      "Groups"
+    ],
+    "proximity": [
+      "Afan Forest Park",
+      "Glyncorrwg Mountain Bike Centre",
+      "Port Talbot"
+    ]
+  },
+  {
+    "name": "Bryn Bettws Lodge",
+    "type": "Log Cabins & Lodge",
+    "location": "Afan Forest",
+    "region": "south-wales",
+    "website": "https://www.brynbettws.com",
+    "priceRange": "£60-£150 per night",
+    "description": "Located high in the Afan Forest, this lodge offers log cabins and group accommodation directly on the mountain bike trails. It provides a rustic and immersive woodland experience.",
+    "features": [
+      "Log Cabins",
+      "Bike Park On-site",
+      "Group Accommodation",
+      "Woodland Setting",
+      "Cafe"
+    ],
+    "adventureFriendly": "Situated directly on the 'The Wall' mountain bike trail, making it an ideal ski-in/ski-out style location for bikers.",
+    "bestFor": [
+      "Mountain Bikers",
+      "Groups",
+      "Schools"
+    ],
+    "proximity": [
+      "Afan Forest Park Trails",
+      "Go Ape Margam",
+      "Neath"
+    ]
+  },
+  {
+    "name": "Clyngwyn Bunkhouse",
+    "type": "Bunkhouse & Shepherds Hut",
+    "location": "Pontneddfechan",
+    "region": "south-wales",
+    "website": "https://www.bunkhouse-south-wales.co.uk",
+    "priceRange": "£20-£50 per person",
+    "description": "A converted farm bunkhouse and shepherd's hut located in the heart of Waterfall Country. It offers a simple, communal base for exploring the famous Four Falls Trail and surrounding gorges.",
+    "features": [
+      "Near Waterfalls",
+      "Fire Pit",
+      "Farm Setting",
+      "Cafe On-site",
+      "Simple Accommodation"
+    ],
+    "adventureFriendly": "Perfectly positioned for gorge walking, canyoning, and hiking the waterfall trails.",
+    "bestFor": [
+      "Hikers",
+      "Groups",
+      "Canyoning Enthusiasts"
+    ],
+    "proximity": [
+      "Four Falls Trail",
+      "Sgwd yr Eira",
+      "Dinas Rock"
+    ]
+  }
+]

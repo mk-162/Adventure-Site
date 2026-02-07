@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Glamping at Parkwood Outdoors, Dolygaer",
+    "location": "Pontsticill, Merthyr Tydfil",
+    "what_makes_it_unique": "Situated on the edge of the Pontsticill Reservoir with stunning views and access to adventure activities like kayaking and gorge walking directly on site.",
+    "images": [
+      "https://bannaubrycheiniog.org/app/uploads/2025/07/Parkowwood-Outdoors-Dolygaer-Glamping--scaled.jpg"
+    ],
+    "price": "From £80 per night",
+    "booking_link": "https://dolygaeroutdoor.co.uk/accommodations/"
+  },
+  {
+    "name": "Aber Glamping",
+    "location": "Talybont-on-Usk",
+    "what_makes_it_unique": "Stay in a geodesic dome or bell tent set in a wildflower meadow with panoramic views of the Black Mountains. Features a communal kitchen and fire pit area.",
+    "images": [
+      "https://bannaubrycheiniog.org/app/uploads/2024/12/20230520_110551.avif"
+    ],
+    "price": "From £95 per night",
+    "booking_link": "http://www.aberglamping.co.uk"
+  },
+  {
+    "name": "Woodland Park Glamping",
+    "location": "Llandefalle",
+    "what_makes_it_unique": "Eco-friendly glamping pods nestled in ancient woodland, perfect for nature lovers seeking tranquility. Each pod has its own private decking area.",
+    "images": [
+      "https://bannaubrycheiniog.org/app/uploads/2024/12/woodland-park-glamping-campers-kitchen3-1920w-e1735561495732.webp"
+    ],
+    "price": "From £100 per night",
+    "booking_link": "https://www.woodlandparkglamping.co.uk/"
+  },
+  {
+    "name": "Beacons Bluff Escapes",
+    "location": "Llangorse",
+    "what_makes_it_unique": "Lakeside cabins with direct access to Llangorse Lake for wild swimming and kayaking. Offers stunning sunset views over the water.",
+    "images": [
+      "https://bannaubrycheiniog.org/app/uploads/2024/12/6-min.jpg"
+    ],
+    "price": "From £120 per night",
+    "booking_link": "https://www.beaconsbluff.co.uk"
+  },
+  {
+    "name": "Camp Cynrig Glamping Village",
+    "location": "Cantref, Brecon",
+    "what_makes_it_unique": "A unique tipi village and cabin set in a quiet spot by the river Cynrig, offering a true off-grid experience with solar lighting and composting toilets.",
+    "images": [
+      "https://bannaubrycheiniog.org/app/uploads/2024/12/4b2294_0002db4989be4101ad7a8fc79e3726a8mv2.webp"
+    ],
+    "price": "From £90 per night",
+    "booking_link": "http://www.breconglampingvillage.co.uk"
+  },
+  {
+    "name": "Coity Bach Farm Glamping",
+    "location": "Talybont-on-Usk",
+    "what_makes_it_unique": "Traditional gypsy caravans and pods on a working farm, offering a nostalgic and rustic stay. Guests can meet the farm animals.",
+    "images": [
+      "https://bannaubrycheiniog.org/app/uploads/2024/12/IMG_4241-1-scaled-1.jpeg"
+    ],
+    "price": "From £85 per night",
+    "booking_link": "https://coitybach.co.uk/"
+  },
+  {
+    "name": "Argoed Barns",
+    "location": "Brecon",
+    "what_makes_it_unique": "A luxury shepherd's hut with a hot tub, set in a peaceful location with panoramic views of the Brecon Beacons. Ideal for romantic getaways.",
+    "images": [
+      "https://bannaubrycheiniog.org/app/uploads/2024/12/Shepards-hut-2-600x400-1.jpg"
+    ],
+    "price": "From £110 per night",
+    "booking_link": "http://www.argoedbarns.co.uk"
+  },
+  {
+    "name": "Toad and Snail Glamping",
+    "location": "Brecon",
+    "what_makes_it_unique": "Stay in a lovingly restored GWR brake van for a truly unique railway-themed accommodation experience. Includes a private wood-fired hot tub.",
+    "images": [
+      "https://bannaubrycheiniog.org/app/uploads/2024/12/164-scaled-e1734461908221.jpg"
+    ],
+    "price": "From £100 per night",
+    "booking_link": "https://toadandsnailglamping.com"
+  },
+  {
+    "name": "Cantref Adventure Farm",
+    "location": "Cantref, Brecon",
+    "what_makes_it_unique": "Camping pods located on a popular adventure farm, offering free entry to the farm park for guests. Great for families with young children.",
+    "images": [
+      "https://bannaubrycheiniog.org/app/uploads/2024/12/cantref-holidays-pods-2.webp"
+    ],
+    "price": "From £70 per night",
+    "booking_link": "https://www.cantref.com/"
+  },
+  {
+    "name": "Dan-yr-Ogof Showcaves Campsite",
+    "location": "Abercrave",
+    "what_makes_it_unique": "Camping and caravanning site located at the National Showcaves Centre for Wales, surrounded by over 200 life-sized dinosaur models.",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Dan_yr_Ogof_-_geograph.org.uk_-_17186.jpg/640px-Dan_yr_Ogof_-_geograph.org.uk_-_17186.jpg"
+    ],
+    "price": "From £25 per night",
+    "booking_link": "https://www.showcaves.co.uk/stay-at-dan-yr-ogof/campsite"
+  }
+]

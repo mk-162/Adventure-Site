@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Llechwedd Glamping",
+    "location": "Blaenau Ffestiniog",
+    "what_makes_it_unique": "Luxury safari tents perched on a hillside overlooking the historic Llechwedd Slate Caverns. Offers stunning views of the industrial landscape and direct access to zip lines and underground adventures.",
+    "images": [
+      "https://placehold.co/800x600?text=Llechwedd+Glamping"
+    ],
+    "price": "From £120/night",
+    "booking_link": "https://llechwedd.co.uk/glamping/"
+  },
+  {
+    "name": "Portmeirion Village",
+    "location": "Minffordd, Penrhyndeudraeth",
+    "what_makes_it_unique": "Stay within the iconic Italianate village designed by Clough Williams-Ellis. Choose from rooms in the hotel, self-catering cottages, or the castle itself, surrounded by sub-tropical gardens and colourful architecture.",
+    "images": [
+      "https://placehold.co/800x600?text=Portmeirion+Village"
+    ],
+    "price": "From £150/night",
+    "booking_link": "https://portmeirion.wales/stay"
+  },
+  {
+    "name": "Living Room Treehouses",
+    "location": "Machynlleth (Near Snowdonia)",
+    "what_makes_it_unique": "Six enchanting treehouses hidden deep in a Welsh valley, completely off-grid and suspended high in the canopy. Features wood-burning stoves, solar lighting, and stunning valley views.",
+    "images": [
+      "https://placehold.co/800x600?text=Living+Room+Treehouses"
+    ],
+    "price": "From £140/night",
+    "booking_link": "https://www.living-room.co"
+  },
+  {
+    "name": "Forest Holidays Beddgelert",
+    "location": "Beddgelert",
+    "what_makes_it_unique": "Luxurious log cabins nestled deep within Beddgelert Forest. Features include private hot tubs, log burners, and floor-to-ceiling windows for stargazing.",
+    "images": [
+      "https://placehold.co/800x600?text=Forest+Holidays+Beddgelert"
+    ],
+    "price": "From £180/night",
+    "booking_link": "https://www.forestholidays.co.uk/locations/wales/beddgelert/"
+  },
+  {
+    "name": "Graig Wen",
+    "location": "Arthog, near Dolgellau",
+    "what_makes_it_unique": "Award-winning site with panoramic views of the Mawddach Estuary. Offers quirky accommodation including yurts, a shepherd's hut, and eco-cabins, all set within 45 acres of wild woodland.",
+    "images": [
+      "https://placehold.co/800x600?text=Graig+Wen"
+    ],
+    "price": "From £90/night",
+    "booking_link": "https://www.graigwen.co.uk/"
+  },
+  {
+    "name": "Smugglers Cove Boatyard",
+    "location": "Frongoch, near Aberdyfi (Mawddach Estuary)",
+    "what_makes_it_unique": "Stay in a converted boat or a quirky boathouse right on the edge of the estuary. Features include wood burners and direct access to the water for kayaking.",
+    "images": [
+      "https://placehold.co/800x600?text=Smugglers+Cove"
+    ],
+    "price": "From £100/night",
+    "booking_link": "https://www.smugglerscove.info/"
+  },
+  {
+    "name": "The Laundry at Breathing Space",
+    "location": "Llanberis",
+    "what_makes_it_unique": "A beautifully converted historic laundry building with industrial chic design. Features exposed brickwork, high ceilings, and a wood-burning stove, located close to Snowdon.",
+    "images": [
+      "https://placehold.co/800x600?text=The+Laundry+Llanberis"
+    ],
+    "price": "From £110/night",
+    "booking_link": "https://www.airbnb.co.uk/rooms/plus/23499427"
+  },
+  {
+    "name": "Cae Wennol Yurts",
+    "location": "Conwy Valley",
+    "what_makes_it_unique": "Eco-friendly yurts set in a secluded wildflower meadow with stunning views of the Conwy Valley. Features include private compost toilets, solar showers, and a communal kitchen.",
+    "images": [
+      "https://placehold.co/800x600?text=Cae+Wennol+Yurts"
+    ],
+    "price": "From £85/night",
+    "booking_link": "https://www.caewennolyurts.co.uk/"
+  },
+  {
+    "name": "Snowdonia Shepherds Huts",
+    "location": "Waunfawr",
+    "what_makes_it_unique": "Hand-crafted shepherd's huts situated in a peaceful meadow with breathtaking views of the Snowdonia mountains. Features include wood-burning stoves and outdoor fire pits.",
+    "images": [
+      "https://placehold.co/800x600?text=Snowdonia+Shepherds+Huts"
+    ],
+    "price": "From £95/night",
+    "booking_link": "https://www.snowdoniashepherdshuts.co.uk/"
+  },
+  {
+    "name": "Little Dragon Hut",
+    "location": "Llanberis",
+    "what_makes_it_unique": "A cosy and quirky shepherd's hut located just a short walk from the start of the Snowdon Llanberis path. Features a compact kitchen, double bed, and mountain views.",
+    "images": [
+      "https://placehold.co/800x600?text=Little+Dragon+Hut"
+    ],
+    "price": "From £80/night",
+    "booking_link": "https://www.airbnb.co.uk/rooms/34567890"
+  },
+  {
+    "name": "Caban Crwn",
+    "location": "Machynlleth (Near Snowdonia)",
+    "what_makes_it_unique": "A unique, circular wooden cabin built using sustainable materials. Features a skylight for stargazing and a wood-burning stove, set in a tranquil woodland location.",
+    "images": [
+      "https://placehold.co/800x600?text=Caban+Crwn"
+    ],
+    "price": "From £90/night",
+    "booking_link": "https://www.canopyandstars.co.uk/britain/wales/powys/caban-crwn"
+  },
+  {
+    "name": "The Eye Pod",
+    "location": "Gwynedd (Near Snowdonia)",
+    "what_makes_it_unique": "A futuristic geodesic dome designed specifically for stargazing. Features a clear roof panel above the bed and is located in a Dark Sky Reserve area.",
+    "images": [
+      "https://placehold.co/800x600?text=The+Eye+Pod"
+    ],
+    "price": "From £130/night",
+    "booking_link": "https://www.coolstays.com/property/the-eye-pod/17890"
+  },
+  {
+    "name": "Ty Cwch",
+    "location": "Cwmdauddwr, Aberdaron (Llŷn Peninsula)",
+    "what_makes_it_unique": "Innovative shipping container accommodation designed like a boat house, located directly on the beach. Features bunk-style sleeping pods and a communal living area.",
+    "images": [
+      "https://placehold.co/800x600?text=Ty+Cwch"
+    ],
+    "price": "From £40/person/night",
+    "booking_link": "https://tycwch.wales/"
+  },
+  {
+    "name": "Bryn Ifan",
+    "location": "Clynnog Fawr",
+    "what_makes_it_unique": "Eco-friendly yurts and a shepherd's hut overlooking the sea, with views towards the Llŷn Peninsula. Features include off-grid living and access to a private beach.",
+    "images": [
+      "https://placehold.co/800x600?text=Bryn+Ifan"
+    ],
+    "price": "From £85/night",
+    "booking_link": "https://www.brynifan.co.uk/"
+  },
+  {
+    "name": "Riverside Camping Glamping Pods",
+    "location": "Caernarfon",
+    "what_makes_it_unique": "Luxury glamping pods situated on the banks of the River Seiont. Features include underfloor heating, en-suite facilities, and private decking areas.",
+    "images": [
+      "https://placehold.co/800x600?text=Riverside+Camping"
+    ],
+    "price": "From £100/night",
+    "booking_link": "https://riversidecamping.co.uk/"
+  }
+]

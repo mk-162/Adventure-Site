@@ -1,0 +1,116 @@
+[
+  {
+    "name": "Three Cliffs Bay Holiday Park",
+    "location": "Penmaen, Gower",
+    "what_makes_it_unique": "Five-star holiday park offering luxury glamping tents and yurts, located a short walk from the iconic Three Cliffs Bay beach with panoramic coastal views.",
+    "images": [
+      "https://cdn.bookablecloud.com/files/tenants/000/000/001/P1049817-1000w.jpg",
+      "https://cdn.bookablecloud.com/files/tenants/000/000/001/P1049826_309eb2cf-3a74-401e-8ed0-e6f4250f72e4-750w.jpg"
+    ],
+    "price": "Check website",
+    "booking_link": "https://threecliffsbay.com/book"
+  },
+  {
+    "name": "Pitton Cross Camping",
+    "location": "Rhossili, Gower",
+    "what_makes_it_unique": "Features quirky shepherd huts and panoramic sea views towards Worm's Head. On-site facilities include a kite shop and a disc golf course.",
+    "images": [
+      "https://www.pittoncross.co.uk/wp-content/uploads/2025/03/roof-tent-img.jpg"
+    ],
+    "price": "Check website",
+    "booking_link": "https://www.pittoncross.co.uk/pitton-cross-booking/"
+  },
+  {
+    "name": "Scamperholidays",
+    "location": "Rhossili, Gower",
+    "what_makes_it_unique": "Specialises in unique glamping experiences, offering shepherd huts, timber tents, and tiki huts, often situated at Pitton Cross with stunning coastal access.",
+    "images": [],
+    "price": "Check website",
+    "booking_link": "https://scamperholidays.co.uk"
+  },
+  {
+    "name": "Parc-Le-Breos House",
+    "location": "Parkmill, Gower",
+    "what_makes_it_unique": "A historic Victorian hunting lodge set in extensive grounds, operating as a guest house and pony trekking centre.",
+    "images": [
+      "https://parc-le-breos.co.uk/wp-content/uploads/2024/04/headerimagecut.jpg",
+      "https://parc-le-breos.co.uk/wp-content/uploads/2025/01/parc-le-breos-at-night-758-1044.jpg"
+    ],
+    "price": "Check website",
+    "booking_link": "https://parc-le-breos.co.uk"
+  },
+  {
+    "name": "Clyne Farm Centre",
+    "location": "Mayals, Swansea/Gower",
+    "what_makes_it_unique": "Offers 9 unique holiday rentals in converted farm buildings and hosts the 'Muddiest Assault Course in the World' (Challenge Valley).",
+    "images": [],
+    "price": "Check website",
+    "booking_link": "https://clynefarm.com"
+  },
+  {
+    "name": "The King Arthur Hotel",
+    "location": "Reynoldston, Gower",
+    "what_makes_it_unique": "A traditional country inn with characterful cottages situated directly on the village green, steeped in local history.",
+    "images": [
+      "https://www.kingarthurhotel.co.uk/wp-content/uploads/2025/01/Events-King-Arthur-Hotel.jpg"
+    ],
+    "price": "Check website",
+    "booking_link": "https://www.kingarthurhotel.co.uk"
+  },
+  {
+    "name": "Oxwich Bay Hotel - Secret Garden Pods",
+    "location": "Oxwich, Gower",
+    "what_makes_it_unique": "Exclusive 'Secret Garden Pods' set within private walled gardens, just steps from the sweeping sands of Oxwich Bay.",
+    "images": [],
+    "price": "Check website",
+    "booking_link": "https://www.oxwichbayhotel.co.uk"
+  },
+  {
+    "name": "Bank Farm Leisure",
+    "location": "Horton, Gower",
+    "what_makes_it_unique": "Offers timber glamping pods with breathtaking views over Port Eynon Bay, featuring a heated swimming pool and roof terrace.",
+    "images": [],
+    "price": "Check website",
+    "booking_link": "https://www.bankfarmleisure.co.uk"
+  },
+  {
+    "name": "Gower Camping (Kennexstone Farm)",
+    "location": "Llangennith, Gower",
+    "what_makes_it_unique": "Glamping pods situated on a working farm near the famous Llangennith surfing beach.",
+    "images": [
+      "https://gowercamping.co.uk/wp-content/uploads/2025/03/Kennexstone-Entrance-1024x478.jpg"
+    ],
+    "price": "Check website",
+    "booking_link": "https://gowercamping.co.uk"
+  },
+  {
+    "name": "Nicholaston Farm",
+    "location": "Penmaen, Gower",
+    "what_makes_it_unique": "Family-run farm with glamping facilities, farm shop, and café, located near Three Cliffs Bay and Tor Bay.",
+    "images": [
+      "https://www.nicholastonfarm.co.uk/wp-content/uploads/2023/10/caravan-and-view-450x450.jpg"
+    ],
+    "price": "Check website",
+    "booking_link": "https://www.nicholastonfarm.co.uk"
+  },
+  {
+    "name": "Greenways of Gower",
+    "location": "Oxwich, Gower",
+    "what_makes_it_unique": "Luxury lodges with spectacular sea views over Oxwich Bay, offering a high-end holiday park experience.",
+    "images": [
+      "https://premierleisureparks.com/assets/images/greenways-of-gower/greenways-of-gower-caravan-view-with-decking-over-looking-oxwich-bay-beach.jpg"
+    ],
+    "price": "Check website",
+    "booking_link": "https://premierleisureparks.com/greenways-of-gower/"
+  },
+  {
+    "name": "Hael Farm Cottages",
+    "location": "Southgate / Port Eynon, Gower",
+    "what_makes_it_unique": "Charming cottages including 'Oxwich View' and 'Port Eynon Beach Cottage', offering peaceful stays near the coast.",
+    "images": [
+      "https://www.haelfarmcottages.co.uk/wp-content/uploads/2024/04/IMG_4249-scaled-1.jpg"
+    ],
+    "price": "Check website",
+    "booking_link": "https://www.haelfarmcottages.co.uk"
+  }
+]

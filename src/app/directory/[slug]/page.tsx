@@ -15,7 +15,7 @@ import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import { JsonLd, createLocalBusinessSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 import { ViewTracker } from "@/components/ui/ViewTracker";
 import { getEffectiveTier, isTrialActive } from "@/lib/trial-utils";
-import { VoiceTipsSection } from "@/components/voice-tips";
+import { CommentsSection } from "@/components/comments/CommentsSection";
 import { 
   ChevronRight, 
   MapPin, 

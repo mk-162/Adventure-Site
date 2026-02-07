@@ -1,7 +1,7 @@
 'use client';
 
-import { Play, Pause, Heart, Clock } from 'lucide-react';
-import { useState, useRef, useEffect } from 'react';
+import { Play, Pause, Heart, Clock, User } from 'lucide-react';
+import { useState, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { voteForComment } from '@/lib/comments';
 
@@ -11,6 +11,9 @@ interface Comment {
   audioUrl: string | null;
   votes: number;
   createdAt: Date;
+  user?: {
+    name: string | null;
+  } | null;
 }
 
 interface CommentListProps {
@@ -86,6 +89,13 @@ function CommentCard({ comment, onVote }: { comment: Comment, onVote: (id: numbe
             </p>
 
             <div className="flex items-center gap-4 mt-2 text-xs text-slate-500">
+                {/* Author Name */}
+                <span className="flex items-center text-primary font-medium">
+                    <User className="w-3 h-3 mr-1" />
+                    {comment.user?.name || "Adventure Fan"}
+                </span>
+
+                {/* Date */}
                 <span className="flex items-center">
                     <Clock className="w-3 h-3 mr-1" />
                     {new Date(comment.createdAt).toLocaleDateString()}

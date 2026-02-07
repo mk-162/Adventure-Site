@@ -25,3 +25,5 @@
   page: '/activities/hiking-snowdon'
 }
  GET /activities/hiking-snowdon 500 in 8.4s (compile: 8.2s, render: 180ms)
+✓ Compiled in 4.9s
+✓ Compiled in 720ms

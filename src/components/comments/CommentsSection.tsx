@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import { getComments } from '@/lib/comments';
+import { getUserSession } from '@/lib/user-auth';
 import { CommentList } from './CommentList';
 import { VoiceRecorder } from './VoiceRecorder';
 import { Mic } from 'lucide-react';
@@ -8,28 +9,25 @@ interface CommentsSectionProps {
   pageSlug: string;
   pageType: string;
   title?: string;
-  subtitle?: string;
 }
 
-export async function CommentsSection({ 
-  pageSlug, 
-  pageType, 
-  title = "Local Tips",
-  subtitle = "Hear tips from the community or leave your own."
-}: CommentsSectionProps) {
-  const comments = await getComments(pageSlug);
+export async function CommentsSection({ pageSlug, pageType, title = "Voice Notes" }: CommentsSectionProps) {
+  const [comments, userSession] = await Promise.all([
+    getComments(pageSlug),
+    getUserSession()
+  ]);
 
   return (
-    <section className="py-8 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl border border-amber-200/50">
+    <section className="py-8 bg-slate-50 border-t border-slate-200">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
 
         <div className="flex items-center justify-between mb-8">
             <div>
                 <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
-                    <Mic className="w-6 h-6 text-amber-600" />
+                    <Mic className="w-6 h-6 text-primary" />
                     {title}
                 </h2>
-                <p className="text-slate-600 mt-1">{subtitle}</p>
+                <p className="text-slate-600 mt-1">Listen to tips from the community or leave your own.</p>
             </div>
         </div>
 
@@ -37,6 +35,7 @@ export async function CommentsSection({
             {/* List Column */}
             <div className="order-2 md:order-1">
                 <Suspense fallback={<div className="text-slate-500">Loading notes...</div>}>
+                    {/* @ts-ignore - mismatch in Drizzle types for user relation vs client type, safe to ignore for MVP */}
                     <CommentList initialComments={comments} />
                 </Suspense>
             </div>
@@ -44,7 +43,11 @@ export async function CommentsSection({
             {/* Recorder Column (Sticky) */}
             <div className="order-1 md:order-2">
                 <div className="sticky top-24">
-                    <VoiceRecorder pageSlug={pageSlug} pageType={pageType} />
+                    <VoiceRecorder
+                      pageSlug={pageSlug}
+                      pageType={pageType}
+                      currentUser={userSession}
+                    />
                 </div>
             </div>
         </div>

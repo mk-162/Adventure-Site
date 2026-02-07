@@ -24,7 +24,7 @@ import { FAQAccordion } from "@/components/operators/FAQAccordion";
 import { RegisterInterestForm } from "@/components/operators/RegisterInterestForm";
 import { AlreadyListedTooltip } from "@/components/operators/AlreadyListedTooltip";
 import { PricingSection } from "@/components/commercial/PricingSection";
-import { VoiceTipsSection } from "@/components/voice-tips";
+import { CommentsSection } from "@/components/comments/CommentsSection";
 
 export const metadata: Metadata = {
   title:
@@ -613,13 +613,7 @@ export default function ForOperatorsPage() {
           </div>
 
           <div className="mt-16 border-t border-slate-200 pt-16">
-            <VoiceTipsSection 
-              pageSlug="advertise" 
-              pageType="advertiser" 
-              pageName="Adventure Wales"
-              title="Say Thank You" 
-              subtitle="Share your experience advertising with us."
-            />
+            <CommentsSection pageSlug="advertise" pageType="advertiser" title="Say Thank You" />
           </div>
         </div>
       </section>

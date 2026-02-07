@@ -1,0 +1,36 @@
+{
+  "slug": "beyond-the-border",
+  "name": "Beyond the Border International Storytelling Festival",
+  "category": "cultural",
+  "dates": {
+    "start": "2027-07-02",
+    "end": "2027-07-04",
+    "note": "Biennial festival - held every odd year (2025, 2027, etc.)"
+  },
+  "location": {
+    "name": "Dinefwr Castle & Newton House",
+    "region": "Llandeilo, Carmarthenshire",
+    "coordinates": {
+      "lat": 51.8628,
+      "lng": -3.9962
+    }
+  },
+  "description": "For over 25 years, Beyond the Border has been Wales' leading celebration of the ancient art of storytelling – a biennial gathering that brings the world's finest tale-tellers to the magical grounds of Dinefwr Castle. Set amid ancient oaks and wandering deer, this intimate festival weaves together myths from every continent, from Welsh Mabinogion tales to African griot traditions, from Nordic sagas to Native American legends. The atmosphere is enchanting: stories told in candlelit tents, music drifting across the parkland, and children gathered around performers under centuries-old trees. As much about deep listening as performance, the festival celebrates our shared human heritage of oral tradition – proving that in a digital age, the power of a well-told story remains undiminished.",
+  "heroImage": {
+    "url": "https://beyondtheborder.com/wp-content/uploads/2023/07/BTB-Festival-Header.jpg",
+    "alt": "Storytelling performance at Beyond the Border",
+    "credit": "Beyond the Border Storytelling Festival"
+  },
+  "website": "https://beyondtheborder.com/",
+  "tickets": {
+    "required": true,
+    "priceRange": "Day and weekend tickets available",
+    "url": "https://beyondtheborder.com/"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/BTBStorytelling/",
+    "twitter": "https://twitter.com/btbstorytelling",
+    "youtube": "https://www.youtube.com/BTBStorytelling"
+  },
+  "tags": ["storytelling", "oral tradition", "myths", "legends", "folklore", "world cultures"]
+}

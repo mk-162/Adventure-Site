@@ -1,0 +1,48 @@
+{
+  "slug": "cardigan-river-food-festival",
+  "name": "Cardigan River & Food Festival",
+  "nameWelsh": "Gŵyl Fwyd ac Afon Aberteifi",
+  "category": "festival",
+  "type": "food-festival",
+  "dates": {
+    "year": 2026,
+    "start": "2026-08-15",
+    "end": "2026-08-15",
+    "recurring": "Mid-August annually (usually Saturday)"
+  },
+  "location": {
+    "venue": "Cardigan Town Centre",
+    "town": "Cardigan",
+    "region": "ceredigion",
+    "coordinates": {
+      "lat": 52.0833,
+      "lng": -4.6600
+    }
+  },
+  "description": "Now in its 27th year, the Cardigan River & Food Festival is a beloved community regeneration project celebrating the produce and culture of this historic West Wales market town. This not-for-profit event supports local artists and suppliers, with all proceeds going back into the community. The festival transforms Cardigan's centre with food stalls, live entertainment on the main stage, and activities celebrating the town's connection to the River Teifi. Run by Menter Aberteifi with support from Ceredigion County Council and Food & Drink Wales, this family-friendly event offers free entry for under-18s and a complimentary park and ride service.",
+  "entry": {
+    "type": "paid",
+    "price": "Adults £5, Under 18s free",
+    "notes": "Tickets via TicketSource. Free park & ride from Briscwm Field."
+  },
+  "heroImage": {
+    "url": "http://www.cardigan-food-festival.co.uk/uploads/1/3/2/3/132344181/food-festival-1_orig.jpg",
+    "alt": "Cardigan River & Food Festival crowds and stalls",
+    "credit": "Cardigan Food Festival / Menter Aberteifi"
+  },
+  "social": {
+    "website": "http://www.cardigan-food-festival.co.uk/",
+    "facebook": "https://www.facebook.com/CardiganFoodFestival/",
+    "twitter": "https://twitter.com/CardiFoodFest"
+  },
+  "highlights": [
+    "27 years of community celebration",
+    "River Teifi heritage activities",
+    "Main stage live entertainment",
+    "Not-for-profit community event",
+    "Free entry for under 18s",
+    "Complimentary park & ride service"
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

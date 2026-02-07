@@ -1,0 +1,46 @@
+{
+  "slug": "lampeter-food-festival",
+  "name": "Lampeter Food Festival",
+  "nameWelsh": "Gŵyl Fwyd Llanbed",
+  "category": "festival",
+  "type": "food-festival",
+  "dates": {
+    "year": 2026,
+    "start": "2026-07-18",
+    "end": "2026-07-18",
+    "recurring": "Usually July annually"
+  },
+  "location": {
+    "venue": "College Street",
+    "town": "Lampeter",
+    "region": "ceredigion",
+    "coordinates": {
+      "lat": 52.1137,
+      "lng": -4.0780
+    }
+  },
+  "description": "A vibrant community celebration in the heart of this historic university town, Lampeter Food Festival brings together local producers, artisan food stalls, and live entertainment in the charming streets of Ceredigion's inland market town. Organised by Lampeter Events, this popular festival showcases the best of Welsh produce from the surrounding agricultural heartland. The town's rich heritage as home to Wales's oldest university campus provides a unique backdrop for sampling local cheeses, meats, baked goods, and craft beverages. A beloved fixture in the local calendar, the festival embodies the warmth and community spirit of rural West Wales.",
+  "entry": {
+    "type": "free",
+    "notes": "Free entry"
+  },
+  "heroImage": {
+    "url": "https://scontent.xx.fbcdn.net/v/t1.6435-9/s960x960/118784917_1176074544517641_6282826359137145854_n.jpg",
+    "alt": "Lampeter Food Festival crowds and stalls on College Street",
+    "credit": "Lampeter Food Festival"
+  },
+  "social": {
+    "website": "https://linktr.ee/lampeterfoodfest",
+    "facebook": "https://www.facebook.com/Lampeterfoodfestival/"
+  },
+  "highlights": [
+    "Historic university town setting",
+    "Local artisan producers",
+    "Live entertainment",
+    "Community-run event",
+    "Heart of rural Ceredigion",
+    "Traditional market town atmosphere"
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

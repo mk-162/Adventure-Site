@@ -1,0 +1,32 @@
+{
+  "slug": "festival-no6",
+  "name": "Festival No.6",
+  "category": "festival",
+  "status": "discontinued",
+  "dates": {
+    "note": "Festival ended after 2017 edition"
+  },
+  "location": {
+    "name": "Portmeirion",
+    "region": "Gwynedd",
+    "coordinates": {
+      "lat": 52.9147,
+      "lng": -4.0907
+    }
+  },
+  "description": "Festival No.6 was an award-winning arts, music, and culture festival that transformed the fantastical Italianate village of Portmeirion into a weekend wonderland. Named after Patrick McGoohan's character in The Prisoner (filmed at Portmeirion), the festival ran from 2012 to 2017, earning a reputation as the UK's most unique festival setting. Eclectic lineups ranged from New Order to Noel Gallagher, with comedy, spoken word, and avant-garde performances in Portmeirion's surreal piazzas and woodland stages. Though the main festival has ended, Portmeirion continues to host smaller events, and the village remains a magical destination – living proof that the festival's spirit of creative escapism endures in this extraordinary place.",
+  "heroImage": {
+    "url": "https://portmeirion.wales/media/images/festival-no6.jpg",
+    "alt": "Festival No.6 at Portmeirion",
+    "credit": "Festival No.6"
+  },
+  "website": "https://portmeirion.wales/",
+  "tickets": {
+    "required": false,
+    "note": "Festival discontinued - see Portmeirion events page for current events"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/festivalnumber6/"
+  },
+  "tags": ["music", "arts", "culture", "portmeirion", "discontinued"]
+}

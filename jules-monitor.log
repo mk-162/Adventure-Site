@@ -1221,3 +1221,10 @@
 2026-02-07 20:50:10 No more pending tasks
 2026-02-07 20:50:10 Launched 0 tasks this run
 2026-02-07 20:50:10 --- Monitor run complete ---
+2026-02-07 20:50:40 --- Monitor run started ---
+2026-02-07 20:50:43 Active sessions: 1 / 15
+2026-02-07 20:50:46 Available slots: 14
+2026-02-07 20:50:51 ✅ Launched: Images: Quirky Accommodation - 25 Properties -> sessions/14488229416816641698
+2026-02-07 20:50:53 No more pending tasks
+2026-02-07 20:50:53 Launched 1 tasks this run
+2026-02-07 20:50:53 --- Monitor run complete ---

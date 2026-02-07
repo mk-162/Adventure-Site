@@ -26,7 +26,7 @@ const accommodations = [
     "price": "From £80-£150",
     "sleeps": "2-6",
     "highlight": "Iconic pub located directly on the beach, accessible only by foot or via the golf course. Known for its stunning location and lively atmosphere.",
-    "image": "/images/accommodation/quirky/ty-coch-inn.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.tycoch.co.uk",
     "features": [],
     "bestFor": "Adventure seekers"
@@ -39,7 +39,7 @@ const accommodations = [
     "price": "From £20-£30",
     "sleeps": "2-6",
     "highlight": "A simple campsite located directly above the stunning Porth Iago cove, offering incredible sunset views and direct beach access.",
-    "image": "/images/accommodation/quirky/porth-iago-camping-tyddyn-mawr.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.porthiago.co.uk",
     "features": [],
     "bestFor": "Adventure seekers"
@@ -52,7 +52,7 @@ const accommodations = [
     "price": "From £25-£50",
     "sleeps": "2-6",
     "highlight": "Eco-friendly campsite set in a kitchen garden with a strong focus on sustainability, foraging, and connecting with nature.",
-    "image": "/images/accommodation/quirky/bert-s-kitchen-garden.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://bertskg.com",
     "features": [],
     "bestFor": "Adventure seekers"
@@ -65,7 +65,7 @@ const accommodations = [
     "price": "From £90-£150",
     "sleeps": "2-6",
     "highlight": "Luxury geodesic glamping domes situated on a working farm with panoramic views of the Llŷn Peninsula and Snowdonia mountains.",
-    "image": "/images/accommodation/quirky/away-from-it-all.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.away-from-it-all.co.uk",
     "features": [],
     "bestFor": "Adventure seekers"
@@ -78,7 +78,7 @@ const accommodations = [
     "price": "From £100-£180",
     "sleeps": "2-6",
     "highlight": "Hand-crafted luxury shepherd huts set in a tranquil wildflower meadow, offering a romantic and secluded getaway.",
-    "image": "/images/accommodation/quirky/brook-cottage-shepherd-huts.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.brookcottageshepherdhuts.co.uk",
     "features": [],
     "bestFor": "Adventure seekers"
@@ -91,7 +91,7 @@ const accommodations = [
     "price": "From £15-£30",
     "sleeps": "2-6",
     "highlight": "Located near the famous 'Whistling Sands' beach (Porthor), managed by the National Trust, offering a back-to-nature experience.",
-    "image": "/images/accommodation/quirky/whistling-sands-campsite.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.nationaltrust.org.uk",
     "features": [],
     "bestFor": "Adventure seekers"
@@ -104,7 +104,7 @@ const accommodations = [
     "price": "From £25-£60",
     "sleeps": "2-6",
     "highlight": "Situated at the very tip of the Llŷn Peninsula, overlooking the bay and close to the departure point for Bardsey Island.",
-    "image": "/images/accommodation/quirky/aberdaron-yha.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.yha.org.uk",
     "features": [],
     "bestFor": "Adventure seekers"
@@ -117,7 +117,7 @@ const accommodations = [
     "price": "From £15-£30",
     "sleeps": "2-6",
     "highlight": "A specialist watersports campsite tailored for windsurfers and surfers, located close to prime spots like Hell's Mouth.",
-    "image": "/images/accommodation/quirky/west-wales-windsurf.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.westwaleswindsurf.co.uk",
     "features": [],
     "bestFor": "Adventure seekers"
@@ -130,7 +130,7 @@ const accommodations = [
     "price": "From £15-£30",
     "sleeps": "2-6",
     "highlight": "A unique coastal campsite with its own private beach access, offering stunning sea views and a peaceful atmosphere.",
-    "image": "/images/accommodation/quirky/aberafon-camping.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.aberafon.co.uk",
     "features": [],
     "bestFor": "Adventure seekers"
@@ -143,7 +143,7 @@ const accommodations = [
     "price": "From £150-£300",
     "sleeps": "2-6",
     "highlight": "A Victorian castellated mansion located within the grounds of the Italianate village of Portmeirion, offering a unique historic stay.",
-    "image": "/images/accommodation/quirky/castell-deudraeth.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://portmeirion.wales",
     "features": [],
     "bestFor": "Adventure seekers"
@@ -156,7 +156,7 @@ const accommodations = [
     "price": "From £80-£150",
     "sleeps": "2-6",
     "highlight": "A charming, traditional thatched barn conversion in a remote location with breathtaking views of Hell's Mouth bay.",
-    "image": "/images/accommodation/quirky/the-little-thatch-barn.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.airbnb.co.uk",
     "features": [],
     "bestFor": "Adventure seekers"
@@ -169,7 +169,7 @@ const accommodations = [
     "price": "From £15-£25",
     "sleeps": "2-6",
     "highlight": "Perched on the cliffs overlooking Aberdaron Bay, this campsite offers simple facilities but unbeatable panoramic views.",
-    "image": "/images/accommodation/quirky/dwyros-campsite.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "http://www.dwyros.co.uk",
     "features": [],
     "bestFor": "Adventure seekers"
@@ -182,7 +182,7 @@ const accommodations = [
     "price": "From £70-£120",
     "sleeps": "2-6",
     "highlight": "A historic coaching inn dating back to the 18th century, known for its traditional character and proximity to the coastal path.",
-    "image": "/images/accommodation/quirky/lion-hotel.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.lionhoteltudweiliog.co.uk",
     "features": [],
     "bestFor": "Adventure seekers"
@@ -195,7 +195,7 @@ const accommodations = [
     "price": "From £120-£200",
     "sleeps": "2-6",
     "highlight": "A Grade II listed Georgian country house set in beautiful grounds, formerly a Michelin-starred restaurant with rooms.",
-    "image": "/images/accommodation/quirky/plas-bodegroes.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.plasbodegroes.co.uk",
     "features": [],
     "bestFor": "Adventure seekers"

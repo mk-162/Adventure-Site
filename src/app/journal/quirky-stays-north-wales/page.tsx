@@ -26,7 +26,7 @@ const accommodations = [
     "price": "From £££",
     "sleeps": "2-6",
     "highlight": "Perched on a rugged hillside overlooking the historic Llechw...",
-    "image": "/images/accommodation/quirky/llechwedd-glamping.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://llechwedd.co.uk/stay",
     "features": [
       "Wood-burning stove",
@@ -44,7 +44,7 @@ const accommodations = [
     "price": "From ££££",
     "sleeps": "2-6",
     "highlight": "Stay in the heart of the iconic Italianate village designed ...",
-    "image": "/images/accommodation/quirky/portmeirion-village.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://portmeirion.wales/stay",
     "features": [
       "Access to village gardens",
@@ -62,7 +62,7 @@ const accommodations = [
     "price": "From ££££",
     "sleeps": "2-6",
     "highlight": "A fairytale French-style château overlooking the Menai Strai...",
-    "image": "/images/accommodation/quirky/chateau-rhianfa.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://chateaurhianfa.com",
     "features": [
       "French château architecture",
@@ -80,7 +80,7 @@ const accommodations = [
     "price": "From £££",
     "sleeps": "2-6",
     "highlight": "A beautifully restored 18th-century windmill offering unique...",
-    "image": "/images/accommodation/quirky/the-windmill.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.thewindmillanglesey.co.uk",
     "features": [
       "360-degree views",
@@ -98,7 +98,7 @@ const accommodations = [
     "price": "From £££",
     "sleeps": "2-6",
     "highlight": "An off-grid mountain lodge located halfway up Snowdon, acces...",
-    "image": "/images/accommodation/quirky/crashpad-lodges-at-yr-helfa.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.yrhelfa.co.uk",
     "features": [
       "Off-grid location",
@@ -116,7 +116,7 @@ const accommodations = [
     "price": "From £££",
     "sleeps": "2-6",
     "highlight": "Six enchanting treehouses hidden deep in a Welsh valley. The...",
-    "image": "/images/accommodation/quirky/living-room-treehouses.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.living-room.co",
     "features": [
       "Treehouse accommodation",
@@ -134,7 +134,7 @@ const accommodations = [
     "price": "From £££",
     "sleeps": "2-6",
     "highlight": "An Alice in Wonderland themed holiday home featuring whimsic...",
-    "image": "/images/accommodation/quirky/wonderland-house.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://wonderlandhouse.co.uk",
     "features": [
       "Themed decor",
@@ -152,7 +152,7 @@ const accommodations = [
     "price": "From £££",
     "sleeps": "2-6",
     "highlight": "Luxury eco-roundhouses set within a walled garden near Denbi...",
-    "image": "/images/accommodation/quirky/the-laundry-retreat.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://thelaundryretreat.co.uk",
     "features": [
       "Roundhouse design",
@@ -170,7 +170,7 @@ const accommodations = [
     "price": "From ££",
     "sleeps": "2-6",
     "highlight": "Glamping pods situated on a steep hillside at Llechwedd, off...",
-    "image": "/images/accommodation/quirky/slate-mountain-glamping.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://slatemountain.co.uk/glamping",
     "features": [
       "Hillside location",
@@ -188,7 +188,7 @@ const accommodations = [
     "price": "From ££",
     "sleeps": "2-6",
     "highlight": "A thoughtfully converted railway carriage located near the W...",
-    "image": "/images/accommodation/quirky/gwyrfai-valley-railway-carriage.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.quirkyaccom.com/gwyrfai-valley-railway-carriage",
     "features": [
       "Converted carriage",
@@ -206,7 +206,7 @@ const accommodations = [
     "price": "From £££",
     "sleeps": "2-6",
     "highlight": "A National Trust holiday cottage located directly on the Con...",
-    "image": "/images/accommodation/quirky/the-old-rectory.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.nationaltrust.org.uk/holidays/the-old-rectory-conwy",
     "features": [
       "Estuary views",
@@ -224,7 +224,7 @@ const accommodations = [
     "price": "From ££",
     "sleeps": "2-6",
     "highlight": "Stay in a traditional slate worker's cottage in the heart of...",
-    "image": "/images/accommodation/quirky/quarryman-s-cottage.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.nationaltrust.org.uk/holidays",
     "features": [
       "Traditional architecture",
@@ -242,7 +242,7 @@ const accommodations = [
     "price": "From ££",
     "sleeps": "2-6",
     "highlight": "Charming shepherd's huts located on the tip of the Llŷn Peni...",
-    "image": "/images/accommodation/quirky/aberdaron-shepherd-s-huts.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://aberdaronshepherdshuts.co.uk",
     "features": [
       "Shepherd's hut style",
@@ -260,7 +260,7 @@ const accommodations = [
     "price": "From ££",
     "sleeps": "2-6",
     "highlight": "Unique, dragon-inspired glamping pods offering a fun and com...",
-    "image": "/images/accommodation/quirky/little-dragon.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.littledragon.wales",
     "features": [
       "Unique design",
@@ -278,7 +278,7 @@ const accommodations = [
     "price": "From ££",
     "sleeps": "2-6",
     "highlight": "Stay at the National Outdoor Centre for a truly immersive ad...",
-    "image": "/images/accommodation/quirky/plas-y-brenin.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://pyb.co.uk",
     "features": [
       "Historic centre",

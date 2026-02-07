@@ -26,7 +26,7 @@ const accommodations = [
     "price": "From £50-£120 per night",
     "sleeps": "2-6",
     "highlight": "Nestled within the Cwmcarn Forest, these glamping pods and l...",
-    "image": "/images/accommodation/quirky/cwmcarn-forest-glamping.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.cwmcarnforest.co.uk",
     "features": [
       "Glamping Pods",
@@ -44,7 +44,7 @@ const accommodations = [
     "price": "From £25-£60 per person",
     "sleeps": "2-6",
     "highlight": "Situated on the site of the former Trelewis drift mine, this...",
-    "image": "/images/accommodation/quirky/rock-uk-summit-centre.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://rockuk.org/centres/summit-centre/",
     "features": [
       "Climbing Walls",
@@ -62,7 +62,7 @@ const accommodations = [
     "price": "From £80-£180 per night",
     "sleeps": "2-6",
     "highlight": "This historic castle in the Brecon Beacons was once the home...",
-    "image": "/images/accommodation/quirky/craig-y-nos-castle.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.craigynoscastle.com",
     "features": [
       "Historic Castle",
@@ -80,7 +80,7 @@ const accommodations = [
     "price": "From £70-£150 per night",
     "sleeps": "2-6",
     "highlight": "Perched on a hilltop overlooking the valleys, this charming ...",
-    "image": "/images/accommodation/quirky/llechwen-hall-hotel.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.llechwen.co.uk",
     "features": [
       "Panoramic Views",
@@ -98,7 +98,7 @@ const accommodations = [
     "price": "From £60-£120 per night",
     "sleeps": "2-6",
     "highlight": "Located adjacent to the Rhondda Heritage Park, this modern h...",
-    "image": "/images/accommodation/quirky/heritage-park-hotel.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.heritageparkhotel.co.uk",
     "features": [
       "Restaurant",
@@ -116,7 +116,7 @@ const accommodations = [
     "price": "From £120-£200 per night",
     "sleeps": "2-6",
     "highlight": "A truly unique bed and breakfast located in a converted ligh...",
-    "image": "/images/accommodation/quirky/west-usk-lighthouse.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.westusklighthouse.co.uk",
     "features": [
       "Lighthouse Stay",
@@ -134,7 +134,7 @@ const accommodations = [
     "price": "From £80-£140 per night",
     "sleeps": "2-6",
     "highlight": "Set within the ruined walls of a 12th-century Augustinian pr...",
-    "image": "/images/accommodation/quirky/llanthony-priory-hotel.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.llanthonypriory.co.uk",
     "features": [
       "Historic Ruins",
@@ -152,7 +152,7 @@ const accommodations = [
     "price": "From £40-£100 per night",
     "sleeps": "2-6",
     "highlight": "Situated in a country park reclaimed from a former colliery,...",
-    "image": "/images/accommodation/quirky/dare-valley-country-park-accommodation.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.darevalleycountrypark.co.uk",
     "features": [
       "Dark Sky Discovery Site",
@@ -170,7 +170,7 @@ const accommodations = [
     "price": "From £70-£130 per night",
     "sleeps": "2-6",
     "highlight": "This Swiss-style alpine lodge in the heart of the Afan Valle...",
-    "image": "/images/accommodation/quirky/afan-lodge.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.afanlodge.co.uk",
     "features": [
       "Bike Storage",
@@ -188,7 +188,7 @@ const accommodations = [
     "price": "From £60-£150 per night",
     "sleeps": "2-6",
     "highlight": "Located high in the Afan Forest, this lodge offers log cabin...",
-    "image": "/images/accommodation/quirky/bryn-bettws-lodge.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.brynbettws.com",
     "features": [
       "Log Cabins",
@@ -206,7 +206,7 @@ const accommodations = [
     "price": "From £20-£50 per person",
     "sleeps": "2-6",
     "highlight": "A converted farm bunkhouse and shepherd's hut located in the...",
-    "image": "/images/accommodation/quirky/clyngwyn-bunkhouse.jpg",
+    "image": "/images/regions/mid-wales-hero.jpg",
     "bookingUrl": "https://www.bunkhouse-south-wales.co.uk",
     "features": [
       "Near Waterfalls",

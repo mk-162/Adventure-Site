@@ -70,7 +70,6 @@ export function FeaturedItineraries({ itineraries }: FeaturedItinerariesProps) {
                 </div>
               </Link>
             ))}
-          </div>
         </div>
 
         <Link href="/itineraries" className="sm:hidden block w-full mt-6 py-3 text-center text-primary font-bold border border-slate-200 rounded-xl hover:bg-slate-50">

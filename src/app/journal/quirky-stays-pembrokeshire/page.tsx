@@ -1,434 +1,243 @@
 import { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import { MapPin, ExternalLink, Bed, Star, TreePine, Mountain } from "lucide-react";
+import { MapPin, ExternalLink, ChevronLeft, Clock, User, Sparkles } from "lucide-react";
 
-// SEO metadata
 export const metadata: Metadata = {
-  title: "15 Quirky Places to Stay in Pembrokeshire (2026) | Best Unique Accommodation & Coastal Stays",
-  description: "Discover the most unique and unusual accommodation in Pembrokeshire - from converted airplanes and UFO glamping to historic castles and clifftop lighthouses. The best quirky places to stay on the Welsh coast.",
-  keywords: "quirky accommodation Pembrokeshire, unique stays Pembrokeshire, glamping Pembrokeshire, unusual places to stay Wales, best places to stay Pembrokeshire, coastal accommodation Wales",
+  title: "Top 5 Quirkiest Places to Stay in Pembrokeshire (2026) | Adventure Wales",
+  description: "Sleep in a UFO, a converted jet plane, or a hobbit house — discover Pembrokeshire's most wonderfully weird accommodation options.",
   openGraph: {
-    title: "15 Quirky Places to Stay in Pembrokeshire",
-    description: "UFO glamping, castle stays, clifftop hostels and more - the most unique places to stay on the Pembrokeshire coast",
+    title: "Top 5 Quirkiest Places to Stay in Pembrokeshire",
+    description: "UFO glamping, converted aircraft, and hobbit houses on the Welsh coast",
     type: "article",
     images: ["/images/journal/quirky-stays-pembrokeshire-hero.jpg"],
   },
 };
 
-// Accommodation data from JSON
-const accommodations = [
+const stays = [
   {
-    name: "Apple Camping",
-    location: "Tenby",
-    slug: "apple-camping",
-    description: "Apple Camping offers some of the most eccentric glamping in the UK. Guests can stay in a converted Etihad Airbus, a UFO, a Jet Star plane, or a Pacman-inspired dome. It's a quirky, fun-filled site perfect for those looking for something completely different.",
+    rank: 1,
+    name: "Apple Camping UFO & Jet Star",
+    location: "Redberth, near Tenby",
     price: "From £100/night",
-    sleeps: "2-6",
-    highlight: "Sleep in a plane, UFO or Pacman dome",
-    image: "/images/accommodation/quirky/apple-camping.jpg",
+    description: `This might be the maddest accommodation in Wales — and we're absolutely here for it. Apple Camping has a genuine UFO (yes, a spaceship-shaped pod you can sleep in) and a converted Jet Star aircraft fuselage. Both are completely functional accommodation, with proper beds, heating, and all the essentials.
+
+The UFO sleeps two and has porthole windows, mood lighting, and a distinctly "we've landed in a Welsh field" vibe. The Jet Star keeps its airline windows and overhead luggage bins, repurposed into the strangest glamping experience you'll ever have.
+
+The site also has more conventional yurts and domes, but let's be honest — you're here for the UFO. It's gloriously ridiculous, surprisingly comfortable, and guaranteed to be the most memorable place you've ever slept.`,
+    whyItsQuirky: "Literally sleep in a UFO or a converted passenger jet. Nothing else needs to be said.",
+    perfectFor: "Families with kids, aviation enthusiasts, UFO believers, and anyone who appreciates pure absurdity",
     bookingUrl: "https://www.applecamping.co.uk",
-    features: ["UFO", "Jet Star Plane", "Pacman Dome", "Witch's Hat"],
-    bestFor: "Families and sci-fi fans",
+    image: "/images/accommodation/quirky/apple-camping-ufo.jpg",
   },
   {
-    name: "Florence Springs Glamping",
+    rank: 2,
+    name: "Florence Springs Hobbit Houses",
     location: "Tenby",
-    slug: "florence-springs",
-    description: "This luxury glamping village offers hobbit houses, yurts, and treehouses, each with private wood-fired hot tubs. Set in a tranquil location, it provides a magical escape with a focus on relaxation and nature.",
     price: "From £120/night",
-    sleeps: "2-6",
-    highlight: "Hobbit houses with private hot tubs",
-    image: "/images/accommodation/quirky/florence-springs.jpg",
+    description: `Burrowed into the hillside at Florence Springs are a collection of hobbit houses that look like they've been lifted straight from the Shire. With curved doors, round windows, and grass-covered roofs, these are as close to Middle Earth as you'll get in West Wales.
+
+Inside, they're surprisingly spacious — proper beds, fully equipped kitchens, and en-suite bathrooms. Many have private hot tubs on their decks, and the whole site has a tranquil, fairy-tale atmosphere.
+
+Florence Springs also has treehouses and luxury yurts if hobbits aren't your thing (though frankly, we don't trust anyone who doesn't want to sleep in a hobbit house). There's a fishing lake, nature trails, and you're just a few miles from Tenby's beaches.`,
+    whyItsQuirky: "Actual hobbit houses with round doors, grass roofs, and hot tubs. Gandalf would approve.",
+    perfectFor: "Lord of the Rings fans, families, couples wanting something magical",
     bookingUrl: "https://www.florencesprings.co.uk",
-    features: ["Hobbit Houses", "Treehouses", "Private Hot Tubs", "Fishing Lake"],
-    bestFor: "Couples and families seeking luxury glamping",
+    image: "/images/accommodation/quirky/florence-springs-hobbit.jpg",
   },
   {
-    name: "Top of the Woods",
-    location: "Boncath",
-    slug: "top-of-the-woods",
-    description: "An award-winning eco-luxury glamping site located in 27 acres of wildflower meadows and ancient woodland. Accommodation includes safari lodges and pioneer camps, offering a back-to-nature experience with creature comforts.",
-    price: "From £90/night",
-    sleeps: "2-5",
-    highlight: "Dark sky location in ancient woodland",
-    image: "/images/accommodation/quirky/top-of-the-woods.jpg",
-    bookingUrl: "https://www.topofthewoods.co.uk",
-    features: ["Safari Lodges", "Pioneer Camps", "Dark Sky Location", "Dog Friendly"],
-    bestFor: "Nature lovers and dog owners",
-  },
-  {
+    rank: 3,
     name: "Roch Castle",
-    location: "Roch",
-    slug: "roch-castle",
-    description: "A spectacularly restored 12th-century castle perched on a rocky outcrop, offering panoramic views of St Brides Bay. It operates as a luxury hotel with six en-suite bedrooms, blending historic architecture with modern art and design.",
-    price: "From £200/night",
-    sleeps: "2",
-    highlight: "Sleep in a 12th-century castle",
-    image: "/images/accommodation/quirky/roch-castle.jpg",
+    location: "Roch, near St Davids",
+    price: "From £250/night",
+    description: `If you're going to stay in a castle, make it a proper one. Roch Castle is a 12th-century Norman fortress perched on a volcanic outcrop with panoramic views across St Brides Bay. It's been immaculately restored into a luxury boutique hotel, but it still feels distinctly castle-y — thick stone walls, winding staircases, and a genuine medieval atmosphere.
+
+Each of the six rooms is individually designed, with huge beds, designer bathrooms, and views that stretch to the Preseli Hills. The Tower Suite, in the original Norman tower, is particularly spectacular.
+
+What makes it special is the contrast — modern luxury inside ancient walls. You're in a castle, but you have underfloor heating and a rainfall shower. Breakfast is served in the medieval hall, and there's a hot tub in the courtyard. Properly pinch-yourself stuff.`,
+    whyItsQuirky: "A genuine 12th-century Norman castle, restored to boutique hotel standards. Sleep where knights once stood guard.",
+    perfectFor: "Couples celebrating something special, history lovers, anyone who's ever wanted to live in a castle",
     bookingUrl: "https://www.rochcastle.com",
-    features: ["Historic Castle", "Panoramic Views", "Luxury Suites", "Adults Only"],
-    bestFor: "Couples and history buffs",
+    image: "/images/accommodation/quirky/roch-castle.jpg",
   },
   {
-    name: "Twr y Felin Hotel",
-    location: "St Davids",
-    slug: "twr-y-felin",
-    description: "Wales' first contemporary art hotel, created from a former windmill. It features over 100 pieces of specially commissioned art and offers luxury accommodation with a unique, modern aesthetic in the heart of St Davids.",
-    price: "From £180/night",
-    sleeps: "2",
-    highlight: "Converted windmill art hotel",
-    image: "/images/accommodation/quirky/twr-y-felin.jpg",
-    bookingUrl: "https://www.twryfelinhotel.com",
-    features: ["Converted Windmill", "Art Gallery", "AA Rosette Restaurant", "Luxury Rooms"],
-    bestFor: "Art lovers and foodies",
-  },
-  {
-    name: "Druidstone Hotel",
-    location: "Broad Haven",
-    slug: "druidstone-hotel",
-    description: "A bohemian, family-run hotel perched on the cliff edge above Druidston Haven. Known for its eccentric charm, relaxed atmosphere, and stunning views, it has been a favorite of artists and walkers for decades.",
-    price: "From £100/night",
-    sleeps: "2-4",
-    highlight: "Clifftop bohemian retreat",
-    image: "/images/accommodation/quirky/druidstone-hotel.jpg",
-    bookingUrl: "https://www.druidstone.co.uk",
-    features: ["Clifftop Location", "Cellar Bar", "Sea Views", "Eclectic Decor"],
-    bestFor: "Walkers and creatives",
-  },
-  {
-    name: "Beavers Retreat Glamping",
-    location: "Tenby",
-    slug: "beavers-retreat",
-    description: "A family-run glamping site offering a range of geodomes and bell tents. Guests can enjoy wood-fired hot tubs and unique alpaca trekking experiences, all set within the beautiful Pembrokeshire countryside.",
-    price: "From £80/night",
-    sleeps: "2-4",
-    highlight: "Geodomes with alpaca trekking",
-    image: "/images/accommodation/quirky/beavers-retreat.jpg",
-    bookingUrl: "https://www.beaversretreat.co.uk",
-    features: ["Geodomes", "Hot Tubs", "Alpaca Trekking", "Dog Friendly"],
-    bestFor: "Families and animal lovers",
-  },
-  {
-    name: "The Little Retreat",
-    location: "Lawrenny",
-    slug: "the-little-retreat",
-    description: "Set in the grounds of the historic Lawrenny Park estate, this site offers luxury geodomes and stargazing tents. It focuses on wellbeing with wild swimming, foraging, and yoga opportunities in a secluded woodland setting.",
-    price: "From £100/night",
-    sleeps: "2-4",
-    highlight: "Wellness-focused woodland glamping",
-    image: "/images/accommodation/quirky/the-little-retreat.jpg",
-    bookingUrl: "https://www.thelittleretreat.co.uk",
-    features: ["Luxury Domes", "Stargazing", "Woodland Setting", "Wellbeing Activities"],
-    bestFor: "Wellness seekers and couples",
-  },
-  {
-    name: "YHA Pwll Deri",
-    location: "Goodwick",
-    slug: "yha-pwll-deri",
-    description: "A remote cottage hostel with one of the most spectacular locations in Wales, perched 400ft above the sea on the rugged Strumble Head coast. It offers simple accommodation with breathtaking sunsets and direct coast path access.",
-    price: "From £25/night",
-    sleeps: "Multiple",
-    highlight: "Clifftop hostel 400ft above the sea",
-    image: "/images/accommodation/quirky/yha-pwll-deri.jpg",
-    bookingUrl: "https://www.yha.org.uk/hostel/yha-pwll-deri",
-    features: ["Clifftop Location", "Remote", "Sea Views", "Self-Catering"],
-    bestFor: "Hikers and budget travelers",
-  },
-  {
-    name: "West Blockhouse Fort",
-    location: "Dale",
-    slug: "west-blockhouse-fort",
-    description: "A Victorian coastal artillery fort managed by the Landmark Trust. Guests stay within the historic fortifications, enjoying dramatic sea views and a unique insight into military history.",
-    price: "From £300/night",
-    sleeps: "8",
-    highlight: "Stay in a Victorian fort",
-    image: "/images/accommodation/quirky/west-blockhouse-fort.jpg",
-    bookingUrl: "https://www.landmarktrust.org.uk",
-    features: ["Historic Fort", "Sea Views", "Sleeps 8", "Unique Architecture"],
-    bestFor: "Groups and history enthusiasts",
-  },
-  {
+    rank: 4,
     name: "Fforest Farm",
-    location: "Cilgerran",
-    slug: "fforest-farm",
-    description: "A 200-acre farm bordering the Teifi Marshes nature reserve, offering geodomes, crog lofts, and garden shacks. It features an on-site cedar barrel sauna, a relaxed pub, and easy access to river and woodland adventures.",
-    price: "From £100/night",
-    sleeps: "2-6",
-    highlight: "200-acre farm with onsen and pub",
-    image: "/images/accommodation/quirky/fforest-farm.jpg",
+    location: "Cilgerran, near Cardigan",
+    price: "From £110/night",
+    description: `Fforest is the kind of place that makes you reconsider your entire lifestyle. This 200-acre farm on the banks of the Teifi River has been transformed into a glamping paradise — geodesic domes, safari tents, and cabins scattered through ancient woodland and wildflower meadows.
+
+There's a farm shop, a pizza barn, communal fire pits, and a riverside beach. The atmosphere is laid-back and community-minded — you'll probably end up chatting to strangers around the fire and making plans to swim in the river at dawn.
+
+The accommodation ranges from simple bell tents to the extraordinary Fforest Dome — a transparent geodesic structure where you can stargaze from your bed. It's glamping done with genuine style and soul.`,
+    whyItsQuirky: "Geodesic domes, riverside glamping, and a community vibe that'll make you question city life. Plus, pizza from a barn.",
+    perfectFor: "Groups of friends, families, festival lovers, anyone seeking community",
     bookingUrl: "https://www.coldatnight.co.uk",
-    features: ["Geodomes", "Onsen", "Cedar Sauna", "River Access", "Pub"],
-    bestFor: "Active families and nature lovers",
+    image: "/images/accommodation/quirky/fforest-farm.jpg",
   },
   {
-    name: "Aros yn Pentre Glas",
-    location: "Hebron",
-    slug: "aros-yn-pentre-glas",
-    description: "This unique site features a converted bus and a cosy cabin, offering a quirky off-grid experience in the Preseli Hills. It focuses on sustainability and low-impact living.",
-    price: "From £80/night",
-    sleeps: "2-4",
-    highlight: "Off-grid converted bus in the hills",
-    image: "/images/accommodation/quirky/aros-yn-pentre-glas.jpg",
-    bookingUrl: "https://www.airbnb.co.uk",
-    features: ["Converted Bus", "Cabin", "Off-grid", "Eco-friendly"],
-    bestFor: "Couples and eco-conscious travelers",
-  },
-  {
-    name: "Ty Felin",
-    location: "Newport",
-    slug: "ty-felin",
-    description: "A beautiful, accessible barn conversion located near the coast in Newport. It combines traditional character with modern accessibility features, making it an inclusive base for exploring the National Park.",
-    price: "From £150/night",
-    sleeps: "8",
-    highlight: "Accessible barn conversion",
-    image: "/images/accommodation/quirky/ty-felin.jpg",
-    bookingUrl: "https://www.hostunusual.com/property/ty-felin/",
-    features: ["Accessible", "Barn Conversion", "Sleeps 8", "Coastal Location"],
-    bestFor: "Groups and families",
-  },
-  {
-    name: "Celtic Camping & Bunkhouses",
-    location: "St Davids",
-    slug: "celtic-camping",
-    description: "A rustic, no-frills site with sweeping sea views over the Irish Sea. It offers huge camping fields and basic bunkhouse accommodation in converted farm buildings, popular with large groups and outdoor education centers.",
-    price: "From £10/night",
-    sleeps: "Multiple",
-    highlight: "Sea views and coast path access",
-    image: "/images/accommodation/quirky/celtic-camping.jpg",
-    bookingUrl: "https://www.celtic-camping.co.uk",
-    features: ["Sea Views", "Group Accommodation", "Rustic", "Coast Path Access"],
-    bestFor: "Groups and rugged campers",
-  },
-  {
-    name: "Strumble Head Lighthouse Cottage",
-    location: "Goodwick",
-    slug: "strumble-head-lighthouse",
-    description: "Stay in the former keeper's cottage at the iconic Strumble Head Lighthouse. While you can't stay in the tower itself, the cottage offers an unmatched location on a rocky island accessed by a footbridge, surrounded by the wild sea.",
-    price: "From £150/night",
-    sleeps: "4",
-    highlight: "Lighthouse cottage on rocky island",
-    image: "/images/accommodation/quirky/strumble-head-lighthouse.jpg",
-    bookingUrl: "https://www.trinityhouse.co.uk",
-    features: ["Lighthouse Cottage", "Remote", "Island Location", "Spectacular Views"],
-    bestFor: "Couples and lighthouse enthusiasts",
+    rank: 5,
+    name: "Preseli Venture Eco Lodge",
+    location: "Mathry, near St Davids",
+    price: "From £60/night",
+    description: `If you're coming to Pembrokeshire for adventure — coasteering, sea kayaking, surfing — there's no better basecamp than Preseli Venture. This eco-lodge is run by the adventure company of the same name, so you can roll out of bed and straight into the action.
+
+The accommodation is dorm-style or private rooms, with a communal kitchen, cozy lounge with wood burner, and drying room for your soggy wetsuits. It's not luxury, but it's clean, comfortable, and perfectly designed for active trips.
+
+What makes it quirky is the setup — it's basically a summer camp for adults. Book a coasteering and accommodation package, eat communal meals, swap stories with fellow adventurers. If you're traveling solo, this is where you'll make friends.`,
+    whyItsQuirky: "An adventure activity basecamp where you sleep, eat, and play with fellow thrill-seekers. Summer camp vibes, adult adventures.",
+    perfectFor: "Solo travelers, adventure groups, anyone who wants to coasteer and make friends",
+    bookingUrl: "https://www.preseliventure.co.uk",
+    image: "/images/accommodation/quirky/preseli-venture.jpg",
   },
 ];
 
-export default function QuirkyStaysPembrokeshire() {
+export default function QuirkyStaysPembrokeshirePage() {
   return (
-    <main className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px]">
-        <Image
-          src="/images/journal/quirky-stays-pembrokeshire-hero.jpg"
-          alt="Quirky accommodation on the Pembrokeshire coast"
-          fill
-          className="object-cover"
-          priority
+    <article className="min-h-screen bg-white">
+      {/* Hero */}
+      <header className="relative h-[50vh] min-h-[400px] flex items-end">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/regions/pembrokeshire-hero.jpg')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16">
-          <div className="max-w-4xl">
-            <span className="inline-block px-3 py-1 bg-accent text-white text-sm font-semibold rounded-full mb-4">
-              Accommodation Guide
-            </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              15 Quirky Places to Stay in Pembrokeshire
-            </h1>
-            <p className="text-xl text-white/90 max-w-2xl">
-              From sleeping in converted aircraft and UFO domes to historic castles and clifftop lighthouses — Pembrokeshire offers some of the most eccentric and magical places to stay in Wales.
-            </p>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+        
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 pb-12 w-full">
+          <Link 
+            href="/journal/quirky-stays" 
+            className="inline-flex items-center gap-1 text-white/80 hover:text-white text-sm mb-4"
+          >
+            <ChevronLeft className="h-4 w-4" />
+            All Quirky Stays
+          </Link>
+          
+          <div className="flex items-center gap-2 text-accent-hover text-sm font-bold mb-3">
+            <Sparkles className="h-4 w-4" />
+            QUIRKY ACCOMMODATION
           </div>
-        </div>
-      </section>
-
-      {/* Intro Section */}
-      <section className="max-w-4xl mx-auto px-4 py-12">
-        <div className="prose prose-lg max-w-none">
-          <p className="text-xl text-slate-600 leading-relaxed">
-            Pembrokeshire isn't just about stunning coastline (though it's spectacular). It's about finding places that match the wild, creative spirit of the coast. We've tracked down the most unusual, beautiful, and downright extraordinary places to stay — from glamping in hobbit houses to sleeping in Victorian forts.
+          
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+            Top 5 Quirkiest Places to Stay in Pembrokeshire
+          </h1>
+          
+          <p className="text-lg text-white/90 max-w-2xl">
+            From UFO glamping to Norman castles and hobbit houses — Pembrokeshire does weird accommodation better than anywhere.
           </p>
           
-          <div className="bg-slate-50 border-l-4 border-accent p-6 my-8 not-prose">
-            <h3 className="font-bold text-lg mb-2">What makes our picks different?</h3>
-            <ul className="space-y-2 text-slate-600">
-              <li>✓ Every listing is verified and bookable</li>
-              <li>✓ Hand-picked for uniqueness and character</li>
-              <li>✓ Adventure-focused — perfect for coastal exploration</li>
-              <li>✓ All budgets from £10 to £300/night</li>
-            </ul>
+          <div className="flex items-center gap-4 mt-6 text-white/70 text-sm">
+            <span className="flex items-center gap-1">
+              <User className="h-4 w-4" />
+              Adventure Wales Team
+            </span>
+            <span className="flex items-center gap-1">
+              <Clock className="h-4 w-4" />
+              8 min read
+            </span>
           </div>
         </div>
-      </section>
+      </header>
 
-      {/* Accommodation Grid */}
-      <section className="max-w-7xl mx-auto px-4 py-8">
-        <div className="space-y-16">
-          {accommodations.map((stay, index) => (
-            <article 
-              key={stay.slug}
-              id={stay.slug}
-              className="grid md:grid-cols-2 gap-8 items-center"
-            >
-              {/* Image - alternating sides */}
-              <div className={`relative h-[400px] rounded-2xl overflow-hidden ${index % 2 === 1 ? 'md:order-2' : ''}`}>
-                <Image
-                  src={stay.image}
-                  alt={`${stay.name} - ${stay.highlight}`}
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold text-slate-800">
-                  #{index + 1}
-                </div>
+      {/* Intro */}
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+        <div className="prose prose-lg">
+          <p className="text-xl text-slate-600 leading-relaxed">
+            Pembrokeshire has always attracted creative, slightly eccentric people — and that shows in the accommodation. This corner of Wales has UFOs, jet planes, hobbit houses, and Norman castles available for overnight stays.
+          </p>
+          <p className="text-slate-600">
+            We've rounded up the five most gloriously weird places to sleep on the Pembrokeshire coast. These aren't just beds — they're talking points, Instagram opportunities, and genuine adventures in themselves.
+          </p>
+        </div>
+      </div>
+
+      {/* Listicle */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
+        {stays.map((stay, index) => (
+          <section key={stay.name} className="mb-16 scroll-mt-24" id={`stay-${stay.rank}`}>
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold shadow-lg">
+                {stay.rank}
               </div>
-              
-              {/* Content */}
-              <div className={index % 2 === 1 ? 'md:order-1' : ''}>
-                <div className="flex items-center gap-2 text-slate-500 text-sm mb-2">
-                  <MapPin className="w-4 h-4" />
-                  {stay.location}
-                </div>
-                
-                <h2 className="text-3xl font-bold text-slate-900 mb-2">
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-primary">
                   {stay.name}
                 </h2>
-                
-                <p className="text-accent font-semibold mb-4">
-                  {stay.highlight}
+                <p className="text-slate-500 flex items-center gap-1">
+                  <MapPin className="h-4 w-4" />
+                  {stay.location} • {stay.price}
                 </p>
-                
-                <p className="text-slate-600 mb-6">
-                  {stay.highlight}
-                </p>
-                
-                {/* Features */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {stay.features.map((feature) => (
-                    <span 
-                      key={feature}
-                      className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full"
-                    >
-                      {feature}
-                    </span>
-                  ))}
-                </div>
-                
-                {/* Details */}
-                <div className="flex items-center gap-6 mb-6 text-sm">
-                  <div className="flex items-center gap-2">
-                    <Bed className="w-4 h-4 text-slate-400" />
-                    <span>Sleeps {stay.sleeps}</span>
-                  </div>
-                  <div className="font-bold text-accent text-lg">
-                    {stay.price}
-                  </div>
-                </div>
-                
-                {/* Best for */}
-                <p className="text-sm text-slate-500 mb-6">
-                  <strong>Best for:</strong> {stay.bestFor}
-                </p>
-                
-                {/* CTA */}
-                <a
-                  href={stay.bookingUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-lg transition-colors"
-                >
-                  Check Availability
-                  <ExternalLink className="w-4 h-4" />
-                </a>
               </div>
-            </article>
-          ))}
-        </div>
-      </section>
+            </div>
 
-      {/* SEO Content Section */}
-      <section className="bg-slate-50 py-16 mt-16">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="prose prose-lg max-w-none">
-            <h2>Why Choose Quirky Accommodation in Pembrokeshire?</h2>
-            <p>
-              Pembrokeshire has one of the most beautiful coastlines in Britain, with dramatic cliffs, secret coves, and some of the best coastal walking in the UK. Why pair that with a boring hotel when you can sleep in a UFO, a castle, or a lighthouse?
+            <div className="aspect-[16/9] rounded-2xl overflow-hidden bg-slate-100 mb-6">
+              <div 
+                className="w-full h-full bg-cover bg-center"
+                style={{ backgroundImage: `url('${stay.image}')` }}
+              />
+            </div>
+
+            <div className="prose prose-lg max-w-none mb-6">
+              {stay.description.split('\n\n').map((para, i) => (
+                <p key={i} className="text-slate-700">{para}</p>
+              ))}
+            </div>
+
+            <div className="bg-accent-hover/10 border-l-4 border-accent-hover rounded-r-xl p-6 mb-6">
+              <p className="font-bold text-primary mb-1 flex items-center gap-2">
+                <Sparkles className="h-4 w-4 text-accent-hover" />
+                Why it's quirky
+              </p>
+              <p className="text-slate-700">{stay.whyItsQuirky}</p>
+            </div>
+
+            <p className="text-slate-600 mb-4">
+              <span className="font-semibold">Perfect for:</span> {stay.perfectFor}
             </p>
-            <p>
-              The best accommodation in Pembrokeshire puts you in the landscape and becomes part of your adventure. Wake up to sea views from a clifftop fort. Fall asleep in a hobbit house listening to owls. Watch the sunset from your hot tub after a day on the Coast Path.
-            </p>
-            
-            <h3>Best Areas to Stay in Pembrokeshire</h3>
-            <ul>
-              <li><strong>Tenby:</strong> Beautiful walled town, beaches, and the most quirky glamping options</li>
-              <li><strong>St Davids:</strong> Britain's smallest city, cathedral, great coastal access</li>
-              <li><strong>Broad Haven:</strong> Surfing, clifftop walks, relaxed atmosphere</li>
-              <li><strong>Newport:</strong> Preseli Hills, quieter coast, great for hiking</li>
-              <li><strong>Dale:</strong> Watersports hub, sheltered bay, historic fort</li>
-            </ul>
-            
-            <h3>Booking Tips for Pembrokeshire</h3>
-            <ul>
-              <li><strong>Book early:</strong> Quirky stays book up fast, especially summer weekends</li>
-              <li><strong>Shoulder season:</strong> May and September offer great weather and fewer crowds</li>
-              <li><strong>Coast Path:</strong> Many stays offer direct access to the Pembrokeshire Coast Path</li>
-              <li><strong>Coastal adventures:</strong> Consider proximity to coasteering, surfing, and boat trips</li>
-            </ul>
+
+            <a
+              href={stay.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 transition-colors"
+            >
+              Check Availability
+              <ExternalLink className="h-4 w-4" />
+            </a>
+
+            {index < stays.length - 1 && (
+              <hr className="mt-12 border-slate-200" />
+            )}
+          </section>
+        ))}
+      </div>
+
+      {/* Bottom CTA */}
+      <section className="bg-slate-50 py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-2xl font-bold text-primary mb-4">
+            Explore More Quirky Stays
+          </h2>
+          <p className="text-slate-600 mb-8">
+            Every region of Wales has its own collection of weird and wonderful places to stay.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link href="/journal/quirky-stays-snowdonia" className="px-4 py-2 bg-white border border-slate-200 rounded-full text-sm font-semibold text-primary hover:border-primary transition-colors">
+              Snowdonia
+            </Link>
+            <Link href="/journal/quirky-stays-brecon-beacons" className="px-4 py-2 bg-white border border-slate-200 rounded-full text-sm font-semibold text-primary hover:border-primary transition-colors">
+              Brecon Beacons
+            </Link>
+            <Link href="/journal/quirky-stays-anglesey" className="px-4 py-2 bg-white border border-slate-200 rounded-full text-sm font-semibold text-primary hover:border-primary transition-colors">
+              Anglesey
+            </Link>
+            <Link href="/journal/quirky-stays-gower" className="px-4 py-2 bg-white border border-slate-200 rounded-full text-sm font-semibold text-primary hover:border-primary transition-colors">
+              Gower
+            </Link>
+            <Link href="/journal/quirky-stays" className="px-4 py-2 bg-primary text-white rounded-full text-sm font-semibold hover:bg-primary/90 transition-colors">
+              View All Regions →
+            </Link>
           </div>
         </div>
       </section>
-
-      {/* Related Content */}
-      <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-2xl font-bold mb-8">Explore More Quirky Stays in Wales</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          <Link href="/journal/quirky-stays-anglesey" className="group">
-            <div className="relative h-48 rounded-xl overflow-hidden mb-4">
-              <Image
-                src="/images/regions/anglesey-hero.jpg"
-                alt="Anglesey"
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <h3 className="font-semibold group-hover:text-accent transition-colors">
-              Quirky Stays: Anglesey →
-            </h3>
-            <p className="text-sm text-slate-500">Lighthouses, yurts and coastal glamping</p>
-          </Link>
-          
-          <Link href="/journal/quirky-stays-snowdonia" className="group">
-            <div className="relative h-48 rounded-xl overflow-hidden mb-4">
-              <Image
-                src="/images/regions/snowdonia-hero.jpg"
-                alt="Snowdonia"
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <h3 className="font-semibold group-hover:text-accent transition-colors">
-              Quirky Stays: Snowdonia →
-            </h3>
-            <p className="text-sm text-slate-500">Treehouses, slate mine glamping and mountain lodges</p>
-          </Link>
-          
-          <Link href="/journal/quirky-stays-gower" className="group">
-            <div className="relative h-48 rounded-xl overflow-hidden mb-4">
-              <Image
-                src="/images/regions/gower-hero.jpg"
-                alt="Gower Peninsula"
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <h3 className="font-semibold group-hover:text-accent transition-colors">
-              Quirky Stays: Gower →
-            </h3>
-            <p className="text-sm text-slate-500">Shepherd huts and coastal pods</p>
-          </Link>
-        </div>
-      </section>
-    </main>
+    </article>
   );
 }

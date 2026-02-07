@@ -1,369 +1,251 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, ExternalLink, Bed, Star, TreePine, Mountain } from "lucide-react";
+import { MapPin, ExternalLink, Star, ChevronLeft, Clock, User, Sparkles } from "lucide-react";
 
-// SEO metadata
 export const metadata: Metadata = {
-  title: "12 Quirky Places to Stay in Snowdonia (2026) | Treehouses, Glamping & Unique Stays",
-  description: "Discover the most unique and unusual accommodation in Snowdonia - from luxury treehouses and safari tents to converted boats and off-grid cabins. Hand-picked quirky stays for adventure seekers.",
-  keywords: "quirky accommodation Snowdonia, unique stays Snowdonia, treehouse Snowdonia, glamping Snowdonia, unusual places to stay Wales, best accommodation Snowdonia",
+  title: "Top 5 Quirkiest Places to Stay in Snowdonia (2026) | Adventure Wales",
+  description: "From magical treehouses to Italianate villages and slate mine glamping - discover the 5 most wonderfully weird places to stay in Snowdonia National Park.",
   openGraph: {
-    title: "12 Quirky Places to Stay in Snowdonia",
-    description: "Treehouses, glamping, converted boats and more - the most unique places to stay in Snowdonia National Park",
+    title: "Top 5 Quirkiest Places to Stay in Snowdonia",
+    description: "Treehouses, converted boats, and a surreal Italian village - Snowdonia's most unique accommodation",
     type: "article",
     images: ["/images/journal/quirky-stays-snowdonia-hero.jpg"],
   },
 };
 
-// Accommodation data
-const accommodations = [
+const stays = [
   {
+    rank: 1,
     name: "Living Room Treehouses",
     location: "Machynlleth",
-    slug: "living-room-treehouses",
-    description: "Six enchanting treehouses hidden deep in a Welsh valley, completely off-grid and suspended high in the canopy. Features wood-burning stoves, solar lighting, and stunning valley views. Perfect for a digital detox.",
     price: "From £140/night",
-    sleeps: "2-4",
-    highlight: "Completely off-grid treehouse experience",
-    image: "/images/accommodation/quirky/living-room-treehouses.jpg",
+    description: `If you've ever dreamed of living in a treehouse, this is where dreams come true. Nestled in a hidden valley near Machynlleth, the Living Room Treehouses are genuinely magical — six hand-crafted wooden structures suspended high in the tree canopy, completely off-grid and utterly peaceful.
+
+Each treehouse has a wood-burning stove, solar lighting, and floor-to-ceiling windows that make you feel like you're floating in the forest. There's no WiFi, no TV, no phone signal — and that's entirely the point. You'll fall asleep to owls and wake up to birdsong.
+
+The hot tub treehouse (yes, really) has a cedar wood tub on the deck with views across the valley. It's the kind of place that makes you wonder why you ever bothered with hotels.`,
+    whyItsQuirky: "Completely off-grid treehouses with wood-fired hot tubs suspended in an ancient Welsh forest. No WiFi, no signal, no problem.",
+    perfectFor: "Couples wanting a romantic escape or anyone desperate for a digital detox",
     bookingUrl: "https://www.living-room.co",
-    features: ["Off-grid", "Wood burner", "Hot tub option", "Private"],
-    bestFor: "Couples seeking romance and adventure",
+    image: "/images/accommodation/quirky/living-room-treehouses.jpg",
   },
   {
+    rank: 2,
     name: "Portmeirion Village",
     location: "Minffordd",
-    slug: "portmeirion",
-    description: "Stay within the iconic Italianate village designed by Clough Williams-Ellis. Choose from rooms in the hotel, self-catering cottages, or the castle itself. Wander sub-tropical gardens and colourful piazzas.",
     price: "From £150/night",
-    sleeps: "2-6",
-    highlight: "Sleep in an architectural masterpiece",
-    image: "/images/accommodation/quirky/portmeirion.jpg",
+    description: `Portmeirion is quite possibly the strangest place in Wales — and we mean that as the highest compliment. This Italianate village, built by eccentric architect Clough Williams-Ellis between 1925 and 1975, looks like it was airlifted from the Amalfi Coast and dropped into the Snowdonia countryside.
+
+You can actually stay here, in rooms scattered throughout the village — from the grand hotel to quirky self-catering cottages with names like "Angel" and "The Gatehouse". Wander through sub-tropical gardens (yes, palm trees in Wales), past pastel-coloured buildings, ornate fountains, and architectural salvage from demolished English stately homes.
+
+It's famously where cult TV series "The Prisoner" was filmed, and the surreal atmosphere remains. Breakfast on the terrace overlooking the estuary, with peacocks strutting past, is unlike anywhere else in Britain.`,
+    whyItsQuirky: "An entire Italianate village in the middle of Snowdonia, built by a maverick architect. It's like waking up in a fever dream — but a beautiful one.",
+    perfectFor: "Architecture nerds, The Prisoner fans, and anyone who appreciates beautiful eccentricity",
     bookingUrl: "https://portmeirion.wales/stay",
-    features: ["Historic", "Spa", "Restaurants", "Gardens"],
-    bestFor: "Architecture lovers and The Prisoner fans",
+    image: "/images/accommodation/quirky/portmeirion.jpg",
   },
   {
-    name: "Forest Holidays Beddgelert",
-    location: "Beddgelert",
-    slug: "forest-holidays-beddgelert",
-    description: "Luxurious log cabins nestled deep within Beddgelert Forest with private hot tubs and floor-to-ceiling windows. Wake up to red squirrels on your deck and fall asleep under the stars.",
-    price: "From £180/night",
-    sleeps: "2-8",
-    highlight: "Hot tub under the stars in ancient forest",
-    image: "/images/accommodation/quirky/forest-holidays-beddgelert.jpg",
-    bookingUrl: "https://www.forestholidays.co.uk/locations/wales/beddgelert/",
-    features: ["Hot tub", "Log burner", "Pet-friendly", "WiFi"],
-    bestFor: "Families and groups wanting forest immersion",
+    rank: 3,
+    name: "Smugglers Cove Boatyard",
+    location: "Mawddach Estuary",
+    price: "From £100/night",
+    description: `Hidden on the edge of the Mawddach Estuary — arguably the most beautiful estuary in Britain — Smugglers Cove is the kind of place you stumble upon and never want to leave. Stay in a converted boat or one of the quirky boathouses, each with wood burners, private decks, and direct water access.
+
+The setting is impossibly romantic. Watch the sun set over Cader Idris from your deck, kayak straight out from your doorstep, or just sit with a glass of wine and wonder how you got so lucky. At low tide, you can walk across the sand to the village of Fairbourne.
+
+This isn't polished, corporate accommodation — it's charming, personal, and wonderfully eccentric. The kind of place with character you can't manufacture.`,
+    whyItsQuirky: "Sleep on a converted boat in a secret cove on a stunning estuary. Kayak from your bedroom door. Watch the tide come and go.",
+    perfectFor: "Water lovers, romantics, and anyone who fantasises about running away to sea",
+    bookingUrl: "https://www.smugglerscove.info/",
+    image: "/images/accommodation/quirky/smugglers-cove.jpg",
   },
   {
-    name: "Llechwedd Glamping",
+    rank: 4,
+    name: "Llechwedd Slate Caverns Glamping",
     location: "Blaenau Ffestiniog",
-    slug: "llechwedd-glamping",
-    description: "Luxury safari tents perched on a hillside overlooking the historic Llechwedd Slate Caverns. Direct access to Zip World adventures and underground experiences. Industrial heritage meets glamping luxury.",
     price: "From £120/night",
-    sleeps: "2-6",
-    highlight: "Glamping above a working slate mine",
-    image: "/images/accommodation/quirky/llechwedd-glamping.jpg",
+    description: `Where else can you go glamping on the edge of an active slate mine, with direct access to underground adventures? Llechwedd's safari tents are perched on a hillside overlooking the caverns, with views of the mountains and the mine's industrial heritage.
+
+By day, you can bounce on underground trampolines at Bounce Below, zoom through caverns on Titan (the longest underground zip line in Europe), or explore the deep mine tours. By night, retreat to your tent with its proper beds, wood burner, and deck with mountain views.
+
+There's something wonderfully Welsh about this — industrial heritage meets outdoor adventure meets comfortable camping. The onsite cafe does excellent Welsh cakes, and there's a real sense of being somewhere with history and purpose.`,
+    whyItsQuirky: "Glamping above a working slate mine with underground zip lines and trampolines literally beneath your feet. Adventure on tap.",
+    perfectFor: "Thrill-seekers, families, and anyone who wants Zip World on the doorstep",
     bookingUrl: "https://llechwedd.co.uk/glamping/",
-    features: ["Safari tent", "Adventure access", "Mountain views", "Restaurant"],
-    bestFor: "Thrill-seekers wanting Zip World on the doorstep",
+    image: "/images/accommodation/quirky/llechwedd-glamping.jpg",
   },
   {
+    rank: 5,
     name: "Graig Wen",
     location: "Arthog, near Dolgellau",
-    slug: "graig-wen",
-    description: "Award-winning eco-site with panoramic views of the Mawddach Estuary. Choose between yurts, a shepherd's hut, and eco-cabins set within 45 acres of wild woodland. Camping with comfort.",
     price: "From £90/night",
-    sleeps: "2-5",
-    highlight: "Mawddach Estuary views from your yurt",
-    image: "/images/accommodation/quirky/graig-wen.jpg",
+    description: `Graig Wen has won multiple awards for its eco-friendly approach, but don't let the sustainability credentials fool you — this is also genuinely gorgeous accommodation in a jaw-dropping location. Choose from yurts, a shepherd's hut, or eco-cabins, all with panoramic views across the Mawddach Estuary.
+
+The site sprawls across 45 acres of wild woodland, with direct access to the Mawddach Trail for cycling and walking. You can kayak or paddleboard from the shore, watch ospreys fishing in the estuary, or just lie in your yurt watching the light change over the water.
+
+What makes it special is the balance — enough comfort (proper beds, wood burners, hot showers) without losing the connection to nature. The owners are passionate and knowledgeable, and the communal fire pit is a great place to swap adventure stories.`,
+    whyItsQuirky: "Award-winning yurts and shepherd's huts overlooking one of Britain's most beautiful estuaries. Eco-friendly without being uncomfortable.",
+    perfectFor: "Eco-conscious adventurers, families, and cyclists doing the Mawddach Trail",
     bookingUrl: "https://www.graigwen.co.uk/",
-    features: ["Yurts", "Shepherd's hut", "Eco-friendly", "Estuary views"],
-    bestFor: "Eco-conscious adventurers",
-  },
-  {
-    name: "Smugglers Cove Boatyard",
-    location: "Frongoch, Mawddach Estuary",
-    slug: "smugglers-cove",
-    description: "Stay in a converted boat or quirky boathouse right on the edge of the estuary. Wood burners, direct water access for kayaking, and sunsets that'll stop you in your tracks.",
-    price: "From £100/night",
-    sleeps: "2-4",
-    highlight: "Sleep on a boat in a secret cove",
-    image: "/images/accommodation/quirky/smugglers-cove.jpg",
-    bookingUrl: "https://www.smugglerscove.info/",
-    features: ["Converted boat", "Kayak access", "Wood burner", "Secluded"],
-    bestFor: "Water lovers and romantics",
-  },
-  {
-    name: "The Laundry at Breathing Space",
-    location: "Llanberis",
-    slug: "the-laundry-llanberis",
-    description: "A beautifully converted historic laundry building with industrial chic design. Exposed brickwork, high ceilings, and a wood-burning stove. Minutes from Snowdon's summit paths.",
-    price: "From £110/night",
-    sleeps: "2",
-    highlight: "Industrial chic at the foot of Snowdon",
-    image: "/images/accommodation/quirky/the-laundry.jpg",
-    bookingUrl: "https://www.airbnb.co.uk/rooms/plus/23499427",
-    features: ["Converted building", "Wood burner", "Snowdon access", "Character"],
-    bestFor: "Couples wanting Snowdon on the doorstep",
-  },
-  {
-    name: "Cae Wennol Yurts",
-    location: "Conwy Valley",
-    slug: "cae-wennol-yurts",
-    description: "Eco-friendly yurts in a secluded wildflower meadow with stunning Conwy Valley views. Compost toilets, solar showers, and a communal kitchen. Simple living done beautifully.",
-    price: "From £85/night",
-    sleeps: "2-5",
-    highlight: "Wildflower meadow with valley views",
-    image: "/images/accommodation/quirky/cae-wennol.jpg",
-    bookingUrl: "https://www.caewennolyurts.co.uk/",
-    features: ["Yurt", "Eco-friendly", "Meadow setting", "Valley views"],
-    bestFor: "Budget-conscious nature lovers",
-  },
-  {
-    name: "Plas Cadnant Hidden Gardens Cottages",
-    location: "Menai Bridge (edge of Snowdonia)",
-    slug: "plas-cadnant",
-    description: "Historic cottages set within secret Victorian gardens being lovingly restored. Explore hidden valleys, waterfalls, and woodland walks right from your door.",
-    price: "From £130/night",
-    sleeps: "2-6",
-    highlight: "Stay in a secret Victorian garden",
-    image: "/images/accommodation/quirky/plas-cadnant.jpg",
-    bookingUrl: "https://www.plascadnant.co.uk/",
-    features: ["Historic", "Gardens", "Waterfalls", "Peaceful"],
-    bestFor: "Garden lovers and history buffs",
-  },
-  {
-    name: "Epic Retreats Shepherd's Huts",
-    location: "Various Snowdonia locations",
-    slug: "epic-retreats",
-    description: "Pop-up luxury shepherd's huts in spectacular secret locations across Snowdonia. Each retreat is in a different jaw-dropping spot - book the location, not just the hut.",
-    price: "From £160/night",
-    sleeps: "2",
-    highlight: "Secret locations revealed on booking",
-    image: "/images/accommodation/quirky/epic-retreats.jpg",
-    bookingUrl: "https://www.epicretreats.wales/",
-    features: ["Shepherd's hut", "Secret locations", "Luxury", "Exclusive"],
-    bestFor: "Adventurers who love surprises",
+    image: "/images/accommodation/quirky/graig-wen.jpg",
   },
 ];
 
-export default function QuirkyStaysSnowdonia() {
+export default function QuirkyStaysSnowdoniaPage() {
   return (
-    <main className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px]">
-        <Image
-          src="/images/journal/quirky-stays-snowdonia-hero.jpg"
-          alt="Treehouse accommodation in Snowdonia with mountain views"
-          fill
-          className="object-cover"
-          priority
+    <article className="min-h-screen bg-white">
+      {/* Hero */}
+      <header className="relative h-[50vh] min-h-[400px] flex items-end">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/regions/snowdonia-hero.jpg')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16">
-          <div className="max-w-4xl">
-            <span className="inline-block px-3 py-1 bg-accent text-white text-sm font-semibold rounded-full mb-4">
-              Accommodation Guide
-            </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              12 Quirky Places to Stay in Snowdonia
-            </h1>
-            <p className="text-xl text-white/90 max-w-2xl">
-              Forget boring hotels. From treehouses suspended in ancient woodland to converted boats on secret estuaries — these are the most extraordinary places to sleep in Wales's most dramatic national park.
-            </p>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+        
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 pb-12 w-full">
+          <Link 
+            href="/journal/quirky-stays" 
+            className="inline-flex items-center gap-1 text-white/80 hover:text-white text-sm mb-4"
+          >
+            <ChevronLeft className="h-4 w-4" />
+            All Quirky Stays
+          </Link>
+          
+          <div className="flex items-center gap-2 text-accent-hover text-sm font-bold mb-3">
+            <Sparkles className="h-4 w-4" />
+            QUIRKY ACCOMMODATION
           </div>
-        </div>
-      </section>
-
-      {/* Intro Section */}
-      <section className="max-w-4xl mx-auto px-4 py-12">
-        <div className="prose prose-lg max-w-none">
-          <p className="text-xl text-slate-600 leading-relaxed">
-            Snowdonia isn't just about the mountains (though they're spectacular). It's about the places that make you feel like you've stepped into another world. We've hunted down the most unusual, beautiful, and downright magical places to stay — accommodation that's part of the adventure, not just a place to crash.
+          
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+            Top 5 Quirkiest Places to Stay in Snowdonia
+          </h1>
+          
+          <p className="text-lg text-white/90 max-w-2xl">
+            From treehouses suspended in ancient woodland to an entire Italianate village — these are the most wonderfully weird places to sleep in the national park.
           </p>
           
-          <div className="bg-slate-50 border-l-4 border-accent p-6 my-8 not-prose">
-            <h3 className="font-bold text-lg mb-2">What makes our picks different?</h3>
-            <ul className="space-y-2 text-slate-600">
-              <li>✓ We've verified every listing is real and bookable</li>
-              <li>✓ Hand-picked for uniqueness, not just luxury</li>
-              <li>✓ Adventure-focused — great bases for exploring</li>
-              <li>✓ Mix of budgets from £85 to £180/night</li>
-            </ul>
+          <div className="flex items-center gap-4 mt-6 text-white/70 text-sm">
+            <span className="flex items-center gap-1">
+              <User className="h-4 w-4" />
+              Adventure Wales Team
+            </span>
+            <span className="flex items-center gap-1">
+              <Clock className="h-4 w-4" />
+              8 min read
+            </span>
           </div>
         </div>
-      </section>
+      </header>
 
-      {/* Accommodation Grid */}
-      <section className="max-w-7xl mx-auto px-4 py-8">
-        <div className="space-y-16">
-          {accommodations.map((stay, index) => (
-            <article 
-              key={stay.slug}
-              id={stay.slug}
-              className="grid md:grid-cols-2 gap-8 items-center"
-            >
-              {/* Image - alternating sides */}
-              <div className={`relative h-[400px] rounded-2xl overflow-hidden ${index % 2 === 1 ? 'md:order-2' : ''}`}>
-                <Image
-                  src={stay.image}
-                  alt={`${stay.name} - ${stay.highlight}`}
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold text-slate-800">
-                  #{index + 1}
-                </div>
+      {/* Intro */}
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+        <div className="prose prose-lg">
+          <p className="text-xl text-slate-600 leading-relaxed">
+            Let's be honest — anyone can book a Travelodge. But if you're coming to Snowdonia for adventure, why would you sleep somewhere boring? The national park is full of accommodation that's as memorable as the mountains themselves.
+          </p>
+          <p className="text-slate-600">
+            We've scoured the region for the quirkiest, most unusual, most "you have to see it to believe it" places to stay. These aren't just beds — they're experiences. From off-grid treehouses with hot tubs to glamping above underground zip lines, here are our top 5 picks for staying weird in Snowdonia.
+          </p>
+        </div>
+      </div>
+
+      {/* Listicle */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
+        {stays.map((stay, index) => (
+          <section key={stay.name} className="mb-16 scroll-mt-24" id={`stay-${stay.rank}`}>
+            {/* Rank badge */}
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold shadow-lg">
+                {stay.rank}
               </div>
-              
-              {/* Content */}
-              <div className={index % 2 === 1 ? 'md:order-1' : ''}>
-                <div className="flex items-center gap-2 text-slate-500 text-sm mb-2">
-                  <MapPin className="w-4 h-4" />
-                  {stay.location}
-                </div>
-                
-                <h2 className="text-3xl font-bold text-slate-900 mb-2">
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-primary">
                   {stay.name}
                 </h2>
-                
-                <p className="text-accent font-semibold mb-4">
-                  {stay.highlight}
+                <p className="text-slate-500 flex items-center gap-1">
+                  <MapPin className="h-4 w-4" />
+                  {stay.location} • {stay.price}
                 </p>
-                
-                <p className="text-slate-600 mb-6">
-                  {stay.highlight}
-                </p>
-                
-                {/* Features */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {stay.features.map((feature) => (
-                    <span 
-                      key={feature}
-                      className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full"
-                    >
-                      {feature}
-                    </span>
-                  ))}
-                </div>
-                
-                {/* Details */}
-                <div className="flex items-center gap-6 mb-6 text-sm">
-                  <div className="flex items-center gap-2">
-                    <Bed className="w-4 h-4 text-slate-400" />
-                    <span>Sleeps {stay.sleeps}</span>
-                  </div>
-                  <div className="font-bold text-accent text-lg">
-                    {stay.price}
-                  </div>
-                </div>
-                
-                {/* Best for */}
-                <p className="text-sm text-slate-500 mb-6">
-                  <strong>Best for:</strong> {stay.bestFor}
-                </p>
-                
-                {/* CTA */}
-                <a
-                  href={stay.bookingUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-lg transition-colors"
-                >
-                  Check Availability
-                  <ExternalLink className="w-4 h-4" />
-                </a>
               </div>
-            </article>
-          ))}
-        </div>
-      </section>
+            </div>
 
-      {/* SEO Content Section */}
-      <section className="bg-slate-50 py-16 mt-16">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="prose prose-lg max-w-none">
-            <h2>Why Choose Quirky Accommodation in Snowdonia?</h2>
-            <p>
-              Standard hotels have their place, but Snowdonia deserves something special. When you're surrounded by 3,000-foot peaks, ancient oak forests, and crystal-clear lakes, why sleep somewhere ordinary?
+            {/* Image */}
+            <div className="aspect-[16/9] rounded-2xl overflow-hidden bg-slate-100 mb-6">
+              <div 
+                className="w-full h-full bg-cover bg-center"
+                style={{ backgroundImage: `url('${stay.image}')` }}
+              />
+            </div>
+
+            {/* Content */}
+            <div className="prose prose-lg max-w-none mb-6">
+              {stay.description.split('\n\n').map((para, i) => (
+                <p key={i} className="text-slate-700">{para}</p>
+              ))}
+            </div>
+
+            {/* Quirky callout */}
+            <div className="bg-accent-hover/10 border-l-4 border-accent-hover rounded-r-xl p-6 mb-6">
+              <p className="font-bold text-primary mb-1 flex items-center gap-2">
+                <Sparkles className="h-4 w-4 text-accent-hover" />
+                Why it's quirky
+              </p>
+              <p className="text-slate-700">{stay.whyItsQuirky}</p>
+            </div>
+
+            {/* Perfect for */}
+            <p className="text-slate-600 mb-4">
+              <span className="font-semibold">Perfect for:</span> {stay.perfectFor}
             </p>
-            <p>
-              The best accommodation in Snowdonia puts you in the landscape, not just near it. Wake up in a treehouse as dawn light hits Cadair Idris. Fall asleep in a converted boat listening to the tide on the Mawddach. Watch stars from your hot tub after a day conquering Snowdon.
-            </p>
-            
-            <h3>Best Areas to Stay in Snowdonia</h3>
-            <ul>
-              <li><strong>Beddgelert:</strong> Perfect base for Snowdon, beautiful village, forest lodges nearby</li>
-              <li><strong>Blaenau Ffestiniog:</strong> Zip World adventures, industrial heritage, slate cavern glamping</li>
-              <li><strong>Dolgellau:</strong> Mawddach Estuary, Cader Idris access, quieter than the north</li>
-              <li><strong>Betws-y-Coed:</strong> Classic base, waterfalls, good transport links</li>
-              <li><strong>Llanberis:</strong> Snowdon's doorstep, mountain railway, climber's hub</li>
-            </ul>
-            
-            <h3>Booking Tips</h3>
-            <ul>
-              <li><strong>Book early:</strong> Quirky stays book up months ahead, especially weekends</li>
-              <li><strong>Midweek deals:</strong> Many offer significant discounts Sunday-Thursday</li>
-              <li><strong>Minimum stays:</strong> Expect 2-3 night minimums, especially in peak season</li>
-              <li><strong>Check access:</strong> Some remote stays require 4x4 or walking — part of the charm</li>
-            </ul>
+
+            {/* CTA */}
+            <a
+              href={stay.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 transition-colors"
+            >
+              Check Availability
+              <ExternalLink className="h-4 w-4" />
+            </a>
+
+            {index < stays.length - 1 && (
+              <hr className="mt-12 border-slate-200" />
+            )}
+          </section>
+        ))}
+      </div>
+
+      {/* Bottom CTA */}
+      <section className="bg-slate-50 py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-2xl font-bold text-primary mb-4">
+            Explore More Quirky Stays
+          </h2>
+          <p className="text-slate-600 mb-8">
+            Every region of Wales has its own collection of weird and wonderful places to stay. 
+            From Pembrokeshire's UFO glamping to Anglesey's lighthouse cottages.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link href="/journal/quirky-stays-pembrokeshire" className="px-4 py-2 bg-white border border-slate-200 rounded-full text-sm font-semibold text-primary hover:border-primary transition-colors">
+              Pembrokeshire
+            </Link>
+            <Link href="/journal/quirky-stays-brecon-beacons" className="px-4 py-2 bg-white border border-slate-200 rounded-full text-sm font-semibold text-primary hover:border-primary transition-colors">
+              Brecon Beacons
+            </Link>
+            <Link href="/journal/quirky-stays-anglesey" className="px-4 py-2 bg-white border border-slate-200 rounded-full text-sm font-semibold text-primary hover:border-primary transition-colors">
+              Anglesey
+            </Link>
+            <Link href="/journal/quirky-stays-gower" className="px-4 py-2 bg-white border border-slate-200 rounded-full text-sm font-semibold text-primary hover:border-primary transition-colors">
+              Gower
+            </Link>
+            <Link href="/journal/quirky-stays" className="px-4 py-2 bg-primary text-white rounded-full text-sm font-semibold hover:bg-primary/90 transition-colors">
+              View All Regions →
+            </Link>
           </div>
         </div>
       </section>
-
-      {/* Related Content */}
-      <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-2xl font-bold mb-8">Plan Your Snowdonia Adventure</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          <Link href="/destinations/snowdonia" className="group">
-            <div className="relative h-48 rounded-xl overflow-hidden mb-4">
-              <Image
-                src="/images/regions/snowdonia-hero.jpg"
-                alt="Snowdonia National Park"
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <h3 className="font-semibold group-hover:text-accent transition-colors">
-              Explore Snowdonia →
-            </h3>
-            <p className="text-sm text-slate-500">Activities, guides and local tips</p>
-          </Link>
-          
-          <Link href="/hiking" className="group">
-            <div className="relative h-48 rounded-xl overflow-hidden mb-4">
-              <Image
-                src="/images/activities/hiking-hero.jpg"
-                alt="Hiking in Snowdonia"
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <h3 className="font-semibold group-hover:text-accent transition-colors">
-              Best Hikes in Snowdonia →
-            </h3>
-            <p className="text-sm text-slate-500">From Snowdon to hidden gems</p>
-          </Link>
-          
-          <Link href="/journal/quirky-stays-pembrokeshire" className="group">
-            <div className="relative h-48 rounded-xl overflow-hidden mb-4">
-              <Image
-                src="/images/regions/pembrokeshire-hero.jpg"
-                alt="Pembrokeshire Coast"
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <h3 className="font-semibold group-hover:text-accent transition-colors">
-              Quirky Stays: Pembrokeshire →
-            </h3>
-            <p className="text-sm text-slate-500">Coastal cabins and clifftop glamping</p>
-          </Link>
-        </div>
-      </section>
-    </main>
+    </article>
   );
 }

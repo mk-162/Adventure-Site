@@ -70,14 +70,14 @@ const primaryActivities = [
 
 // Secondary activities - popular but no mega page yet
 const secondaryActivities = [
-  { name: "Zip Lining", slug: "zip-lining", image: "/images/activities/zip-lining.jpg", tagline: "World's fastest zip lines", region: "Snowdonia" },
-  { name: "Climbing", slug: "climbing", image: "/images/activities/climbing.jpg", tagline: "Legendary crags & sea cliffs", region: "Snowdonia" },
-  { name: "Kayaking", slug: "kayaking", image: "/images/activities/kayaking.jpg", tagline: "Sea, river & lake paddling", region: "Pembrokeshire" },
-  { name: "Wild Swimming", slug: "wild-swimming", image: "/images/activities/wild-swimming.jpg", tagline: "Lakes, waterfalls & coast", region: "Snowdonia" },
-  { name: "Gorge Walking", slug: "gorge-walking", image: "/images/activities/gorge-walking.jpg", tagline: "Welsh adventure classic", region: "Brecon Beacons" },
-  { name: "Paddleboarding", slug: "paddleboarding", image: "/images/activities/paddleboarding.jpg", tagline: "SUP on stunning waters", region: "Gower" },
-  { name: "Canyoning", slug: "canyoning", image: "/images/activities/canyoning.jpg", tagline: "Waterfalls & gorges", region: "Snowdonia" },
-  { name: "White Water Rafting", slug: "white-water-rafting", image: "/images/activities/rafting.jpg", tagline: "Rapids & thrills", region: "Mid Wales" },
+  { name: "Zip Lining", slug: "zip-lining", image: "/images/activities/zip-lining-hero.jpg", tagline: "World's fastest zip lines", region: "Snowdonia" },
+  { name: "Climbing", slug: "climbing", image: "/images/activities/climbing-hero.jpg", tagline: "Legendary crags & sea cliffs", region: "Snowdonia" },
+  { name: "Kayaking", slug: "kayaking", image: "/images/activities/kayaking-hero.jpg", tagline: "Sea, river & lake paddling", region: "Pembrokeshire" },
+  { name: "Wild Swimming", slug: "wild-swimming", image: "/images/activities/wild-swimming-hero.jpg", tagline: "Lakes, waterfalls & coast", region: "Snowdonia" },
+  { name: "Gorge Walking", slug: "gorge-walking", image: "/images/activities/gorge-walking-hero.jpg", tagline: "Welsh adventure classic", region: "Brecon Beacons" },
+  { name: "Paddleboarding", slug: "paddleboarding", image: "/images/activities/paddleboarding-hero.jpg", tagline: "SUP on stunning waters", region: "Gower" },
+  { name: "Canyoning", slug: "canyoning", image: "/images/activities/canyoning-hero.jpg", tagline: "Waterfalls & gorges", region: "Snowdonia" },
+  { name: "White Water Rafting", slug: "white-water-rafting", image: "/images/activities/rafting-hero.jpg", tagline: "Rapids & thrills", region: "Mid Wales" },
 ];
 
 // More activities for comprehensive coverage

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { RegionMap } from "@/components/ui/RegionMap";
 import { getActivities, getActivityTypeBySlug, getItineraries, getEvents } from "@/lib/queries";
@@ -47,10 +46,9 @@ export const metadata: Metadata = {
 
 export default async function ActivityHubPage() {
   const activityType = await getActivityTypeBySlug(activityConfig.slug);
-  if (!activityType) notFound();
 
   const [activitiesData, allItineraries, eventsData] = await Promise.all([
-    getActivities({ activityTypeId: activityType.id, limit: 12 }),
+    activityType ? getActivities({ activityTypeId: activityType.id, limit: 12 }) : Promise.resolve([]),
     getItineraries({ limit: 50 }),
     getEvents({ limit: 50 }),
   ]);

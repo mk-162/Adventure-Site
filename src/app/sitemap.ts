@@ -175,7 +175,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   );
 
   // Activity hub pages (manual pages)
-  const activityHubs = ['mountain-biking', 'coasteering', 'hiking', 'surfing', 'caving'];
+  const activityHubs = ['mountain-biking', 'coasteering', 'hiking', 'surfing', 'caving', 'stag-hen'];
   activityHubs.forEach((hub) => {
     sitemap.push({
       url: `${BASE_URL}/${hub}`,

@@ -175,20 +175,6 @@ function CellValue({ value }: { value: string | boolean }) {
 export default function ForOperatorsPage() {
   return (
     <div className="bg-white">
-      {/* ═══ STICKY PRICING BAR ═══ */}
-      <div className="sticky top-0 z-50 bg-primary text-white py-2.5 text-center text-sm font-medium shadow-md">
-        <span className="hidden sm:inline">🏴󠁧󠁢󠁷󠁬󠁳󠁿 </span>
-        Enhanced listings from{" "}
-        <span className="font-bold text-accent-hover">£9.99/mo</span> — TripAdvisor
-        charges £65+.{" "}
-        <a
-          href="#pricing"
-          className="underline underline-offset-2 hover:text-accent-hover transition-colors"
-        >
-          See plans ↓
-        </a>
-      </div>
-
       {/* ═══ HERO ═══ */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-[#2d5a73]">
         <div className="absolute inset-0 opacity-10">

@@ -1,7 +1,7 @@
 #!/bin/bash
 # Jules Queue Monitor - Launches pending tasks when slots are available
 
-JULES_KEY="AQ.Ab8RN6JxgzF9ckeBL_SjGAZTVOfgMCMY-tWg9WnwkLZYE0caTA"
+JULES_KEY="AQ.Ab8RN6JB-DQFy_ehQOsK6GTpSPFIg11JwgUOga2oQsfP8zD2PQ"
 SOURCE="sources/github/mk-162/Adventure-Site"
 QUEUE_FILE="/home/minigeek/Adventure-Site/jules-queue.json"
 LOG_FILE="/home/minigeek/Adventure-Site/jules-monitor.log"

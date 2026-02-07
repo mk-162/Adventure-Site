@@ -14,43 +14,17 @@ interface QuirkyStay {
   image?: string;
 }
 
-// Curated list of the quirkiest stays
+// Curated list of the quirkiest stays — ordered with imaged items first
 const QUIRKY_STAYS: QuirkyStay[] = [
   {
-    name: "Living Room Treehouses",
-    type: "Treehouse",
-    location: "Machynlleth",
+    name: "Portmeirion Village",
+    type: "Unique Village",
+    location: "Minffordd",
     region: "Snowdonia",
     priceRange: "£150-300",
-    description: "Magical treehouses in a hidden valley. Disconnect and immerse in nature in beautifully crafted structures.",
+    description: "Stay in a surreal Italianate village. Unlike anywhere else in Wales.",
     slug: "quirky-stays-snowdonia",
-  },
-  {
-    name: "Red Kite Tree Tent",
-    type: "Tree Tent",
-    location: "Newbridge-on-Wye",
-    region: "Brecon Beacons",
-    priceRange: "£120-200",
-    description: "Suspended spherical tent in the canopy. Featured on George Clarke's Amazing Spaces.",
-    slug: "quirky-stays-brecon-beacons",
-  },
-  {
-    name: "Apple Camping UFO & Jet",
-    type: "Quirky",
-    location: "Redberth",
-    region: "Pembrokeshire",
-    priceRange: "£100-250",
-    description: "Sleep in a UFO or a converted Jet Star plane. A truly unique Pembrokeshire adventure base.",
-    slug: "quirky-stays-pembrokeshire",
-  },
-  {
-    name: "Florence Springs Hobbit House",
-    type: "Hobbit House",
-    location: "Tenby",
-    region: "Pembrokeshire",
-    priceRange: "£100-200",
-    description: "Hobbit houses, treehouses and yurts with hot tubs, just outside Tenby.",
-    slug: "quirky-stays-pembrokeshire",
+    image: "/images/accommodation/quirky/portmeirion-village.jpg",
   },
   {
     name: "Llanthony Priory Hotel",
@@ -60,15 +34,47 @@ const QUIRKY_STAYS: QuirkyStay[] = [
     priceRange: "£80-150",
     description: "Hotel built into the ruins of a 12th-century priory. Truly atmospheric.",
     slug: "quirky-stays-brecon-beacons",
+    image: "/images/accommodation/quirky/llanthony-priory.jpg",
   },
   {
-    name: "Portmeirion Village",
-    type: "Unique Village",
-    location: "Minffordd",
+    name: "Denmark Farm Eco Lodge",
+    type: "Eco Lodge",
+    location: "Lampeter",
+    region: "Mid Wales",
+    priceRange: "£80-150",
+    description: "Award-winning eco retreat with living roofs, surrounded by wildlife and woodland.",
+    slug: "quirky-stays-mid-wales",
+    image: "/images/accommodation/quirky/eco-lodge-wales.jpg",
+  },
+  {
+    name: "Glamping Pod Retreat",
+    type: "Glamping",
+    location: "Various",
+    region: "Wales",
+    priceRange: "£100-200",
+    description: "Cozy pods with hot tubs and fire pits. The perfect blend of camping and comfort.",
+    slug: "quirky-stays",
+    image: "/images/accommodation/quirky/glamping-pod-wales.jpg",
+  },
+  {
+    name: "Living Room Treehouses",
+    type: "Treehouse",
+    location: "Machynlleth",
     region: "Snowdonia",
     priceRange: "£150-300",
-    description: "Stay in a surreal Italianate village. Unlike anywhere else in Wales.",
+    description: "Magical treehouses in a hidden valley. Disconnect and immerse in nature in beautifully crafted structures.",
     slug: "quirky-stays-snowdonia",
+    // NEEDS IMAGE: Living Room Treehouses Machynlleth
+  },
+  {
+    name: "Red Kite Tree Tent",
+    type: "Tree Tent",
+    location: "Newbridge-on-Wye",
+    region: "Brecon Beacons",
+    priceRange: "£120-200",
+    description: "Suspended spherical tent in the canopy. Featured on George Clarke's Amazing Spaces.",
+    slug: "quirky-stays-brecon-beacons",
+    // NEEDS IMAGE: Red Kite Tree Tent spherical tent
   },
 ];
 
@@ -79,6 +85,8 @@ const typeIcons: Record<string, typeof TreePine> = {
   "Hobbit House": Tent,
   "Quirky": Sparkles,
   "Unique Village": Castle,
+  "Eco Lodge": TreePine,
+  "Glamping": Tent,
 };
 
 interface QuirkyStaysWidgetProps {

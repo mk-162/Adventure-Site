@@ -7867,5 +7867,45 @@
     "licence": "Unsplash Licence",
     "description": "water falls on brown rocky mountain",
     "downloadedAt": "2026-02"
+  },
+  "images/accommodation/quirky/portmeirion-village.jpg": {
+    "source": "wikimedia-commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portmeirion_Village_Wales_(48054713647).jpg",
+    "photographer": "Wikimedia Commons contributor",
+    "licence": "CC BY-SA 2.0",
+    "description": "Portmeirion Village, Wales - Italianate architecture in Snowdonia",
+    "downloadedAt": "2026-02-07",
+    "verifiedWelsh": true,
+    "dimensions": "6000x3376"
+  },
+  "images/accommodation/quirky/llanthony-priory.jpg": {
+    "source": "wikimedia-commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Llanthony_Priory_in_the_snow.jpg",
+    "photographer": "Wikimedia Commons contributor",
+    "licence": "CC BY-SA",
+    "description": "Llanthony Priory in snow, Brecon Beacons - historic priory with hotel",
+    "downloadedAt": "2026-02-07",
+    "verifiedWelsh": true,
+    "dimensions": "3872x2592"
+  },
+  "images/accommodation/quirky/eco-lodge-wales.jpg": {
+    "source": "geograph",
+    "sourceUrl": "https://www.geograph.org.uk/photo/6058036",
+    "photographer": "Geograph contributor",
+    "licence": "CC BY-SA 2.0",
+    "description": "Denmark Farm Eco Lodge near Lampeter, Wales - wooden eco accommodation with living roof",
+    "downloadedAt": "2026-02-07",
+    "verifiedWelsh": true,
+    "dimensions": "1600x1200"
+  },
+  "images/accommodation/quirky/glamping-pod-wales.jpg": {
+    "source": "geograph",
+    "sourceUrl": "https://www.geograph.org.uk/photo/8147202",
+    "photographer": "Geograph contributor",
+    "licence": "CC BY-SA 2.0",
+    "description": "Glamping pod with hot tub and fire pit, Wales",
+    "downloadedAt": "2026-02-07",
+    "verifiedWelsh": true,
+    "dimensions": "4032x2268"
   }
 }

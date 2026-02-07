@@ -8,34 +8,34 @@ import { Map, Calendar, MessageCircle, ChevronDown, ArrowRight, MapPin, Star, Cl
 import { JsonLd, createTouristDestinationSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 
 const activityConfig = {
-  slug: "wild-swimming",
-  name: "Wild Swimming",
-  title: "Wild Swimming in Wales",
-  strapline: "Discover hidden waterfalls, mountain lakes, river pools, and secret sea coves across Wales",
-  metaTitle: "Wild Swimming in Wales | Lakes, Waterfalls & Sea Swimming | Adventure Wales",
-  metaDescription: "Discover the best wild swimming spots in Wales. From mountain lakes to hidden waterfalls, sea coves to river pools. Guides, safety tips, and swimming communities.",
-  heroImage: "/images/activities/wild-swimming-hero.jpg",
-  icon: "🏊",
-  stats: { lakes: "400+", waterfalls: "200+", beaches: "200+", rivers: "50+" },
-  quickFacts: { bestTime: "Jun-Sep", price: "Free-£25", difficulty: "All Levels", duration: "1-3 hours", bestFor: "Everyone" },
+  slug: "rock-climbing",
+  name: "Rock Climbing",
+  title: "Rock Climbing in Wales",
+  strapline: "From Snowdonia's legendary crags to Pembrokeshire sea cliffs — world-class climbing on every type of rock",
+  metaTitle: "Rock Climbing in Wales | Crags, Sea Cliffs & Indoor Walls | Adventure Wales",
+  metaDescription: "Discover rock climbing in Wales. World-famous crags in Snowdonia, sea cliff climbing in Pembrokeshire, and indoor walls for beginners. Guides and courses for all levels.",
+  heroImage: "/images/activities/rock-climbing-hero.jpg",
+  icon: "🧗",
+  stats: { crags: "500+", routes: "10,000+", seaCliffs: "50km", indoorWalls: "15+" },
+  quickFacts: { bestTime: "Apr-Oct", price: "£50-120", difficulty: "All Levels", duration: "Half/Full day", bestFor: "Adventurers" },
   regions: [
-    { name: "Snowdonia", slug: "snowdonia", tagline: "Mountain lakes and waterfalls", highlights: ["Llyn Idwal", "Fairy Glen pools", "Llyn Gwynant"] },
-    { name: "Pembrokeshire", slug: "pembrokeshire", tagline: "Hidden coves and sea swims", highlights: ["Blue Lagoon", "Barafundle Bay", "Aber Bach"] },
-    { name: "Brecon Beacons", slug: "brecon-beacons", tagline: "Waterfall country", highlights: ["Sgwd yr Eira", "Horseshoe Falls", "Four Falls Trail"] },
-    { name: "Gower", slug: "gower", tagline: "Sheltered bays and tidal pools", highlights: ["Brandy Cove", "Fall Bay", "Worm's Head pools"] },
+    { name: "Snowdonia", slug: "snowdonia", tagline: "Legendary mountain crags", highlights: ["Tremadog", "Llanberis Pass", "Ogwen Valley"] },
+    { name: "Pembrokeshire", slug: "pembrokeshire", tagline: "World-class sea cliffs", highlights: ["St Davids Head", "Stackpole", "Range East"] },
+    { name: "Gower", slug: "gower", tagline: "Limestone coastal climbing", highlights: ["Rhossili", "Oxwich", "Fall Bay"] },
+    { name: "North Wales", slug: "north-wales", tagline: "Slate and limestone", highlights: ["Great Orme", "Holyhead Mountain", "Llandudno"] },
   ],
   relatedActivities: [
-    { name: "Coasteering", slug: "coasteering", emoji: "🧗" },
-    { name: "Paddleboarding", slug: "paddleboarding", emoji: "🏄" },
-    { name: "Kayaking", slug: "kayaking", emoji: "🛶" },
+    { name: "Bouldering", slug: "bouldering", emoji: "🪨" },
+    { name: "Coasteering", slug: "coasteering", emoji: "🌊" },
+    { name: "Gorge Walking", slug: "gorge-walking", emoji: "🏞️" },
     { name: "Hiking", slug: "hiking", emoji: "🥾" },
   ],
   faqs: [
-    { question: "Is wild swimming safe?", answer: "Wild swimming can be safe with proper precautions. Never swim alone, check conditions beforehand, know your limits, and be aware of cold water shock. Start slowly in cold water and consider joining a local swimming group." },
-    { question: "When is the best time to wild swim?", answer: "June to September offers the warmest water (15-20°C). Many swimmers go year-round with wetsuits. Early morning is magical for calm water and wildlife. Avoid swimming after heavy rain when rivers run fast and cold." },
-    { question: "Do I need a wetsuit?", answer: "Not essential in summer, but recommended. Welsh water rarely exceeds 18°C even in August. A wetsuit extends your season and keeps you warm longer. Many swimmers use just a swimsuit for short dips." },
-    { question: "Are there any rules about wild swimming?", answer: "In Wales, you can swim in the sea freely. Rivers and lakes vary — some are on private land. Always respect the environment, don't disturb wildlife, and take nothing but photos. The Outdoor Swimming Society has access information." },
-    { question: "What should I bring?", answer: "Towel and warm layers for after, a bright swim cap (visibility), water shoes for rocky entries, and a dry bag for valuables. In cooler months, a hot drink in a flask makes all the difference." },
+    { question: "Do I need experience to try rock climbing?", answer: "No! Beginners can start with an indoor climbing session or a guided outdoor taster day. Qualified instructors teach all the basics including safety, movement, and belaying. Many people get hooked after just one session." },
+    { question: "Is rock climbing safe?", answer: "With proper instruction and equipment, climbing is a safe adventure sport. You'll always be on a rope secured by a trained belayer. Guides manage risk through route selection, equipment checks, and safety briefings." },
+    { question: "What equipment do I need?", answer: "For guided sessions, everything is provided: harness, helmet, climbing shoes, and ropes. You just need comfortable clothes you can move in and layers for outdoor climbing. Experienced climbers can hire or bring their own gear." },
+    { question: "What's the difference between indoor and outdoor climbing?", answer: "Indoor walls offer controlled conditions to learn technique and build strength. Outdoor climbing on real rock is more varied and adventurous — you'll read natural features and deal with weather. Most climbers do both!" },
+    { question: "Can children go rock climbing?", answer: "Absolutely! Many centres offer climbing from age 4-5 on indoor walls. Outdoor sessions typically start from age 8+. It's brilliant for confidence, problem-solving, and physical development." },
   ],
 };
 
@@ -56,14 +56,14 @@ export default async function ActivityHubPage() {
   ]);
 
   const relatedItineraries = allItineraries.filter(row => 
-    row.itinerary.title?.toLowerCase().includes("swim") ||
-    row.itinerary.title?.toLowerCase().includes("water") ||
-    row.itinerary.description?.toLowerCase().includes("swimming")
+    row.itinerary.title?.toLowerCase().includes("climb") ||
+    row.itinerary.title?.toLowerCase().includes("adventure") ||
+    row.itinerary.description?.toLowerCase().includes("climbing")
   ).slice(0, 4);
 
   const relatedEvents = eventsData.events.filter(e => 
-    e.event.name?.toLowerCase().includes("swim") ||
-    e.event.type?.toLowerCase().includes("swimming")
+    e.event.name?.toLowerCase().includes("climb") ||
+    e.event.type?.toLowerCase().includes("climbing")
   ).slice(0, 4);
 
   const mapMarkers = activitiesData.filter(row => row.activity.lat && row.activity.lng).map((row) => ({
@@ -102,7 +102,7 @@ export default async function ActivityHubPage() {
             ))}
           </div>
           <a href="#experiences" className="inline-flex items-center gap-2 bg-accent-hover hover:bg-accent text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:scale-105 shadow-lg">
-            Find Swim Spots <ChevronDown className="h-5 w-5" />
+            Find Climbing <ChevronDown className="h-5 w-5" />
           </a>
         </div>
         <div className="absolute bottom-0 left-0 right-0 translate-y-1/2 z-20 px-4">
@@ -121,7 +121,7 @@ export default async function ActivityHubPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <nav className="mb-6"><ol className="flex items-center gap-2 text-sm text-gray-600"><li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li><li>/</li><li className="text-primary font-medium">{activityConfig.title}</li></ol></nav>
         <div className="prose prose-lg max-w-none mb-12">
-          <p className="text-gray-700 leading-relaxed">Wales is a wild swimmer's paradise. From the icy mountain lakes of Snowdonia to the hidden coves of Pembrokeshire, from thundering waterfall pools to gentle river bends, there's a swim for every mood and ability. Join the growing community of Welsh wild swimmers.</p>
+          <p className="text-gray-700 leading-relaxed">Wales is a climbing mecca. The crags of Snowdonia forged British mountaineering, the sea cliffs of Pembrokeshire are world-renowned, and limestone edges dot the coastline. Whether you're a complete beginner or chasing hard grades, Wales has the rock for you.</p>
         </div>
       </div>
       <section className="bg-gray-50 py-16">
@@ -145,7 +145,7 @@ export default async function ActivityHubPage() {
       {mapMarkers.length > 0 && (
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Find Swim Spots Near You</h2></div>
+            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Find Climbing Near You</h2></div>
             <div className="rounded-2xl overflow-hidden shadow-lg border-2 border-gray-200"><RegionMap markers={mapMarkers} center={[52.0, -4.0]} zoom={7} height="500px" /></div>
           </div>
         </section>
@@ -153,7 +153,7 @@ export default async function ActivityHubPage() {
       {activitiesData.length > 0 && (
         <section id="experiences" className="bg-gray-50 py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Guided {activityConfig.name} Experiences</h2></div>
+            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Book {activityConfig.name} Experiences</h2></div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {activitiesData.map((row) => (<ActivityCard key={row.activity.id} activity={row.activity} region={row.region} operator={row.operator} activityType={activityType} />))}
             </div>
@@ -179,10 +179,10 @@ export default async function ActivityHubPage() {
       </section>
       <section className="bg-primary py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Take the Plunge?</h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">From icy mountain tarns to hidden waterfalls, discover your perfect wild swimming spot in Wales</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Climb?</h2>
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">From your first moves on an indoor wall to multi-pitch adventures on sea cliffs, discover rock climbing in Wales</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href={`/activities/type/${activityConfig.slug}`} className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-semibold hover:bg-gray-100 transition-colors">Find Swim Spots <ArrowRight className="h-5 w-5" /></Link>
+            <Link href={`/activities/type/${activityConfig.slug}`} className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-semibold hover:bg-gray-100 transition-colors">Browse All Experiences <ArrowRight className="h-5 w-5" /></Link>
           </div>
         </div>
       </section>

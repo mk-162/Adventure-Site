@@ -8,34 +8,34 @@ import { Map, Calendar, MessageCircle, ChevronDown, ArrowRight, MapPin, Star, Cl
 import { JsonLd, createTouristDestinationSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 
 const activityConfig = {
-  slug: "wild-swimming",
-  name: "Wild Swimming",
-  title: "Wild Swimming in Wales",
-  strapline: "Discover hidden waterfalls, mountain lakes, river pools, and secret sea coves across Wales",
-  metaTitle: "Wild Swimming in Wales | Lakes, Waterfalls & Sea Swimming | Adventure Wales",
-  metaDescription: "Discover the best wild swimming spots in Wales. From mountain lakes to hidden waterfalls, sea coves to river pools. Guides, safety tips, and swimming communities.",
-  heroImage: "/images/activities/wild-swimming-hero.jpg",
-  icon: "🏊",
-  stats: { lakes: "400+", waterfalls: "200+", beaches: "200+", rivers: "50+" },
-  quickFacts: { bestTime: "Jun-Sep", price: "Free-£25", difficulty: "All Levels", duration: "1-3 hours", bestFor: "Everyone" },
+  slug: "canoeing",
+  name: "Canoeing",
+  title: "Canoeing in Wales",
+  strapline: "Peaceful river journeys through ancient valleys, from gentle family floats to multi-day wilderness expeditions",
+  metaTitle: "Canoeing in Wales | River Trips, Tours & Adventures | Adventure Wales",
+  metaDescription: "Discover canoeing in Wales. Paddle the River Wye, explore Snowdonia's lakes, or take a family trip on the Brecon Beacons canals. Tours for all abilities.",
+  heroImage: "/images/activities/canoeing-hero.jpg",
+  icon: "🛶",
+  stats: { rivers: "30+", canals: "100+ miles", operators: "20+", lakes: "50+" },
+  quickFacts: { bestTime: "Apr-Oct", price: "£35-70", difficulty: "All Levels", duration: "2-8 hours", bestFor: "Families" },
   regions: [
-    { name: "Snowdonia", slug: "snowdonia", tagline: "Mountain lakes and waterfalls", highlights: ["Llyn Idwal", "Fairy Glen pools", "Llyn Gwynant"] },
-    { name: "Pembrokeshire", slug: "pembrokeshire", tagline: "Hidden coves and sea swims", highlights: ["Blue Lagoon", "Barafundle Bay", "Aber Bach"] },
-    { name: "Brecon Beacons", slug: "brecon-beacons", tagline: "Waterfall country", highlights: ["Sgwd yr Eira", "Horseshoe Falls", "Four Falls Trail"] },
-    { name: "Gower", slug: "gower", tagline: "Sheltered bays and tidal pools", highlights: ["Brandy Cove", "Fall Bay", "Worm's Head pools"] },
+    { name: "Wye Valley", slug: "wye-valley", tagline: "Classic British river canoeing", highlights: ["Multi-day trips", "Monmouth to Chepstow", "Gentle gradient"] },
+    { name: "Brecon Beacons", slug: "brecon-beacons", tagline: "Canal and river adventures", highlights: ["Monmouthshire Canal", "River Usk", "Mountain backdrop"] },
+    { name: "Snowdonia", slug: "snowdonia", tagline: "Mountain lakes and rivers", highlights: ["Llyn Padarn", "Mawddach Estuary", "Wild camping trips"] },
+    { name: "Mid Wales", slug: "mid-wales", tagline: "Remote and tranquil paddling", highlights: ["River Teifi", "Tregaron Bog", "Otter spotting"] },
   ],
   relatedActivities: [
-    { name: "Coasteering", slug: "coasteering", emoji: "🧗" },
-    { name: "Paddleboarding", slug: "paddleboarding", emoji: "🏄" },
     { name: "Kayaking", slug: "kayaking", emoji: "🛶" },
-    { name: "Hiking", slug: "hiking", emoji: "🥾" },
+    { name: "Paddleboarding", slug: "paddleboarding", emoji: "🏄" },
+    { name: "Wild Swimming", slug: "wild-swimming", emoji: "🏊" },
+    { name: "Fishing", slug: "fishing", emoji: "🎣" },
   ],
   faqs: [
-    { question: "Is wild swimming safe?", answer: "Wild swimming can be safe with proper precautions. Never swim alone, check conditions beforehand, know your limits, and be aware of cold water shock. Start slowly in cold water and consider joining a local swimming group." },
-    { question: "When is the best time to wild swim?", answer: "June to September offers the warmest water (15-20°C). Many swimmers go year-round with wetsuits. Early morning is magical for calm water and wildlife. Avoid swimming after heavy rain when rivers run fast and cold." },
-    { question: "Do I need a wetsuit?", answer: "Not essential in summer, but recommended. Welsh water rarely exceeds 18°C even in August. A wetsuit extends your season and keeps you warm longer. Many swimmers use just a swimsuit for short dips." },
-    { question: "Are there any rules about wild swimming?", answer: "In Wales, you can swim in the sea freely. Rivers and lakes vary — some are on private land. Always respect the environment, don't disturb wildlife, and take nothing but photos. The Outdoor Swimming Society has access information." },
-    { question: "What should I bring?", answer: "Towel and warm layers for after, a bright swim cap (visibility), water shoes for rocky entries, and a dry bag for valuables. In cooler months, a hot drink in a flask makes all the difference." },
+    { question: "What's the best river for beginners?", answer: "The River Wye is perfect for beginners — it's wide, gentle, and has plenty of operators offering guided trips with all equipment. The Monmouthshire & Brecon Canal is even calmer with no current." },
+    { question: "Can I take children canoeing?", answer: "Absolutely! Canoes are stable and great for families. Many operators take children from age 4-5 in family canoes. Calm rivers and canals are ideal for young paddlers." },
+    { question: "Do I need my own canoe?", answer: "No — operators provide Canadian canoes, paddles, buoyancy aids, and waterproof bags. Some offer multi-day trips with camping equipment and shuttle services." },
+    { question: "What's the difference between canoeing and kayaking?", answer: "Canoes are open boats where you kneel or sit on a raised seat, using a single-bladed paddle. They're more stable and better for carrying gear. Kayaks are enclosed with double-bladed paddles." },
+    { question: "Can I camp along the river?", answer: "Yes! Multi-day trips on the Wye and other rivers include wild camping on riverside sites. Operators can arrange permits and provide camping equipment if needed." },
   ],
 };
 
@@ -56,14 +56,14 @@ export default async function ActivityHubPage() {
   ]);
 
   const relatedItineraries = allItineraries.filter(row => 
-    row.itinerary.title?.toLowerCase().includes("swim") ||
-    row.itinerary.title?.toLowerCase().includes("water") ||
-    row.itinerary.description?.toLowerCase().includes("swimming")
+    row.itinerary.title?.toLowerCase().includes(activityConfig.slug) ||
+    row.itinerary.title?.toLowerCase().includes("paddle") ||
+    row.itinerary.description?.toLowerCase().includes(activityConfig.slug)
   ).slice(0, 4);
 
   const relatedEvents = eventsData.events.filter(e => 
-    e.event.name?.toLowerCase().includes("swim") ||
-    e.event.type?.toLowerCase().includes("swimming")
+    e.event.name?.toLowerCase().includes(activityConfig.slug) ||
+    e.event.name?.toLowerCase().includes("paddle")
   ).slice(0, 4);
 
   const mapMarkers = activitiesData.filter(row => row.activity.lat && row.activity.lng).map((row) => ({
@@ -102,7 +102,7 @@ export default async function ActivityHubPage() {
             ))}
           </div>
           <a href="#experiences" className="inline-flex items-center gap-2 bg-accent-hover hover:bg-accent text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:scale-105 shadow-lg">
-            Find Swim Spots <ChevronDown className="h-5 w-5" />
+            Find Experiences <ChevronDown className="h-5 w-5" />
           </a>
         </div>
         <div className="absolute bottom-0 left-0 right-0 translate-y-1/2 z-20 px-4">
@@ -121,7 +121,7 @@ export default async function ActivityHubPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <nav className="mb-6"><ol className="flex items-center gap-2 text-sm text-gray-600"><li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li><li>/</li><li className="text-primary font-medium">{activityConfig.title}</li></ol></nav>
         <div className="prose prose-lg max-w-none mb-12">
-          <p className="text-gray-700 leading-relaxed">Wales is a wild swimmer's paradise. From the icy mountain lakes of Snowdonia to the hidden coves of Pembrokeshire, from thundering waterfall pools to gentle river bends, there's a swim for every mood and ability. Join the growing community of Welsh wild swimmers.</p>
+          <p className="text-gray-700 leading-relaxed">Wales offers exceptional {activityConfig.name.toLowerCase()} experiences, from gentle river journeys to multi-day wilderness adventures. The River Wye is a classic British canoe trail, while Snowdonia's lakes and the Brecon Beacons canals provide stunning alternatives.</p>
         </div>
       </div>
       <section className="bg-gray-50 py-16">
@@ -145,7 +145,7 @@ export default async function ActivityHubPage() {
       {mapMarkers.length > 0 && (
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Find Swim Spots Near You</h2></div>
+            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Find {activityConfig.name} Near You</h2></div>
             <div className="rounded-2xl overflow-hidden shadow-lg border-2 border-gray-200"><RegionMap markers={mapMarkers} center={[52.0, -4.0]} zoom={7} height="500px" /></div>
           </div>
         </section>
@@ -153,11 +153,21 @@ export default async function ActivityHubPage() {
       {activitiesData.length > 0 && (
         <section id="experiences" className="bg-gray-50 py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Guided {activityConfig.name} Experiences</h2></div>
+            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Book {activityConfig.name} Experiences</h2></div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {activitiesData.map((row) => (<ActivityCard key={row.activity.id} activity={row.activity} region={row.region} operator={row.operator} activityType={activityType} />))}
             </div>
             <div className="text-center mt-8"><Link href={`/activities/type/${activityConfig.slug}`} className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl hover:bg-accent-hover transition-colors font-semibold">View all experiences <ArrowRight className="h-5 w-5" /></Link></div>
+          </div>
+        </section>
+      )}
+      {relatedItineraries.length > 0 && (
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12"><div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-primary text-sm font-semibold mb-4"><Compass className="h-4 w-4" />Trip Ideas</div><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">{activityConfig.name} Trip Itineraries</h2></div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {relatedItineraries.map((row) => (<Link key={row.itinerary.id} href={`/itineraries/${row.itinerary.slug}`} className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-lg hover:border-primary transition-all"><div className="text-sm text-accent-hover font-semibold mb-2">{row.itinerary.durationDays} days</div><h3 className="text-lg font-bold text-primary mb-2 group-hover:text-accent-hover transition-colors">{row.itinerary.title}</h3></Link>))}
+            </div>
           </div>
         </section>
       )}
@@ -179,10 +189,10 @@ export default async function ActivityHubPage() {
       </section>
       <section className="bg-primary py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Take the Plunge?</h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">From icy mountain tarns to hidden waterfalls, discover your perfect wild swimming spot in Wales</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Start Paddling?</h2>
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">From peaceful family floats to multi-day river expeditions, find your perfect {activityConfig.name.toLowerCase()} adventure in Wales</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href={`/activities/type/${activityConfig.slug}`} className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-semibold hover:bg-gray-100 transition-colors">Find Swim Spots <ArrowRight className="h-5 w-5" /></Link>
+            <Link href={`/activities/type/${activityConfig.slug}`} className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-semibold hover:bg-gray-100 transition-colors">Browse All Experiences <ArrowRight className="h-5 w-5" /></Link>
           </div>
         </div>
       </section>

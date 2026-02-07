@@ -8,34 +8,34 @@ import { Map, Calendar, MessageCircle, ChevronDown, ArrowRight, MapPin, Star, Cl
 import { JsonLd, createTouristDestinationSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 
 const activityConfig = {
-  slug: "wild-swimming",
-  name: "Wild Swimming",
-  title: "Wild Swimming in Wales",
-  strapline: "Discover hidden waterfalls, mountain lakes, river pools, and secret sea coves across Wales",
-  metaTitle: "Wild Swimming in Wales | Lakes, Waterfalls & Sea Swimming | Adventure Wales",
-  metaDescription: "Discover the best wild swimming spots in Wales. From mountain lakes to hidden waterfalls, sea coves to river pools. Guides, safety tips, and swimming communities.",
-  heroImage: "/images/activities/wild-swimming-hero.jpg",
-  icon: "🏊",
-  stats: { lakes: "400+", waterfalls: "200+", beaches: "200+", rivers: "50+" },
-  quickFacts: { bestTime: "Jun-Sep", price: "Free-£25", difficulty: "All Levels", duration: "1-3 hours", bestFor: "Everyone" },
+  slug: "windsurfing",
+  name: "Windsurfing",
+  title: "Windsurfing in Wales",
+  strapline: "Classic wind-powered adventure on Welsh waters — from beginner lakes to wave sailing on the coast",
+  metaTitle: "Windsurfing in Wales | Lessons, Hire & Best Spots | Adventure Wales",
+  metaDescription: "Discover windsurfing in Wales. RYA lessons, equipment hire, and the best spots from Rhosneigr to Gower. Learn to windsurf on Welsh lakes and beaches.",
+  heroImage: "/images/activities/windsurfing-hero.jpg",
+  icon: "🏄",
+  stats: { spots: "40+", centres: "15+", lakes: "30+", beaches: "50+" },
+  quickFacts: { bestTime: "Apr-Oct", price: "£50-120", difficulty: "Moderate", duration: "2-4 hours", bestFor: "Everyone" },
   regions: [
-    { name: "Snowdonia", slug: "snowdonia", tagline: "Mountain lakes and waterfalls", highlights: ["Llyn Idwal", "Fairy Glen pools", "Llyn Gwynant"] },
-    { name: "Pembrokeshire", slug: "pembrokeshire", tagline: "Hidden coves and sea swims", highlights: ["Blue Lagoon", "Barafundle Bay", "Aber Bach"] },
-    { name: "Brecon Beacons", slug: "brecon-beacons", tagline: "Waterfall country", highlights: ["Sgwd yr Eira", "Horseshoe Falls", "Four Falls Trail"] },
-    { name: "Gower", slug: "gower", tagline: "Sheltered bays and tidal pools", highlights: ["Brandy Cove", "Fall Bay", "Worm's Head pools"] },
+    { name: "Anglesey", slug: "anglesey", tagline: "Consistent coastal winds", highlights: ["Rhosneigr", "Trearddur Bay", "Menai Strait"] },
+    { name: "Gower", slug: "gower", tagline: "Swansea Bay and beyond", highlights: ["Oxwich Bay", "Port Eynon", "Llangennith"] },
+    { name: "Pembrokeshire", slug: "pembrokeshire", tagline: "Atlantic swell sessions", highlights: ["Newgale", "Dale", "Freshwater West"] },
+    { name: "Mid Wales", slug: "mid-wales", tagline: "Lake sailing paradise", highlights: ["Bala Lake", "Elan Valley", "Llangorse Lake"] },
   ],
   relatedActivities: [
-    { name: "Coasteering", slug: "coasteering", emoji: "🧗" },
-    { name: "Paddleboarding", slug: "paddleboarding", emoji: "🏄" },
-    { name: "Kayaking", slug: "kayaking", emoji: "🛶" },
-    { name: "Hiking", slug: "hiking", emoji: "🥾" },
+    { name: "Kitesurfing", slug: "kitesurfing", emoji: "🪁" },
+    { name: "Sailing", slug: "sailing", emoji: "⛵" },
+    { name: "Paddleboarding", slug: "paddleboarding", emoji: "🏄‍♀️" },
+    { name: "Surfing", slug: "surfing", emoji: "🌊" },
   ],
   faqs: [
-    { question: "Is wild swimming safe?", answer: "Wild swimming can be safe with proper precautions. Never swim alone, check conditions beforehand, know your limits, and be aware of cold water shock. Start slowly in cold water and consider joining a local swimming group." },
-    { question: "When is the best time to wild swim?", answer: "June to September offers the warmest water (15-20°C). Many swimmers go year-round with wetsuits. Early morning is magical for calm water and wildlife. Avoid swimming after heavy rain when rivers run fast and cold." },
-    { question: "Do I need a wetsuit?", answer: "Not essential in summer, but recommended. Welsh water rarely exceeds 18°C even in August. A wetsuit extends your season and keeps you warm longer. Many swimmers use just a swimsuit for short dips." },
-    { question: "Are there any rules about wild swimming?", answer: "In Wales, you can swim in the sea freely. Rivers and lakes vary — some are on private land. Always respect the environment, don't disturb wildlife, and take nothing but photos. The Outdoor Swimming Society has access information." },
-    { question: "What should I bring?", answer: "Towel and warm layers for after, a bright swim cap (visibility), water shoes for rocky entries, and a dry bag for valuables. In cooler months, a hot drink in a flask makes all the difference." },
+    { question: "Is windsurfing hard to learn?", answer: "The basics come quickly — most beginners are sailing back and forth within their first lesson. Progression from there takes practice. Modern wide boards and stable rigs make learning much easier than it used to be. RYA Start Windsurfing courses teach everything you need." },
+    { question: "What's the difference between windsurfing and kitesurfing?", answer: "Windsurfing uses a sail attached to the board — you hold the boom and steer by tilting the rig. Kitesurfing uses a kite flying above you, controlled by a bar. Windsurfing is arguably easier to learn; kitesurfing is more extreme. Many people do both!" },
+    { question: "What wind do I need?", answer: "Beginners need light, steady winds (8-15 knots) for stable learning. Intermediate and advanced sailors can handle 15-30+ knots with smaller sails. Wales gets excellent wind, especially spring and autumn, with plenty of sub-20 knot days for learning." },
+    { question: "Can I windsurf on lakes?", answer: "Absolutely! Lakes like Bala and Llangorse are perfect for learning — no tides, waves, or currents to worry about. Several Welsh lakes have windsurf centres. Inland sailing extends your season as coastal conditions can be challenging in winter." },
+    { question: "What equipment is provided for lessons?", answer: "RYA centres provide everything: wetsuit, buoyancy aid, board, sail, and harness. Modern beginner kit is much more forgiving than old-school equipment. You'll typically use a large stable board and small sail to start, progressing as skills develop." },
   ],
 };
 
@@ -56,14 +56,14 @@ export default async function ActivityHubPage() {
   ]);
 
   const relatedItineraries = allItineraries.filter(row => 
-    row.itinerary.title?.toLowerCase().includes("swim") ||
+    row.itinerary.title?.toLowerCase().includes("windsurf") ||
     row.itinerary.title?.toLowerCase().includes("water") ||
-    row.itinerary.description?.toLowerCase().includes("swimming")
+    row.itinerary.description?.toLowerCase().includes("windsurfing")
   ).slice(0, 4);
 
   const relatedEvents = eventsData.events.filter(e => 
-    e.event.name?.toLowerCase().includes("swim") ||
-    e.event.type?.toLowerCase().includes("swimming")
+    e.event.name?.toLowerCase().includes("windsurf") ||
+    e.event.type?.toLowerCase().includes("watersport")
   ).slice(0, 4);
 
   const mapMarkers = activitiesData.filter(row => row.activity.lat && row.activity.lng).map((row) => ({
@@ -102,7 +102,7 @@ export default async function ActivityHubPage() {
             ))}
           </div>
           <a href="#experiences" className="inline-flex items-center gap-2 bg-accent-hover hover:bg-accent text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:scale-105 shadow-lg">
-            Find Swim Spots <ChevronDown className="h-5 w-5" />
+            Find Lessons <ChevronDown className="h-5 w-5" />
           </a>
         </div>
         <div className="absolute bottom-0 left-0 right-0 translate-y-1/2 z-20 px-4">
@@ -121,7 +121,7 @@ export default async function ActivityHubPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <nav className="mb-6"><ol className="flex items-center gap-2 text-sm text-gray-600"><li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li><li>/</li><li className="text-primary font-medium">{activityConfig.title}</li></ol></nav>
         <div className="prose prose-lg max-w-none mb-12">
-          <p className="text-gray-700 leading-relaxed">Wales is a wild swimmer's paradise. From the icy mountain lakes of Snowdonia to the hidden coves of Pembrokeshire, from thundering waterfall pools to gentle river bends, there's a swim for every mood and ability. Join the growing community of Welsh wild swimmers.</p>
+          <p className="text-gray-700 leading-relaxed">Windsurfing remains one of the most accessible wind sports, and Wales offers excellent conditions. From the renowned spots at Rhosneigr to calm lake sailing at Bala, there's progression for every level. RYA centres provide quality instruction on modern, forgiving equipment.</p>
         </div>
       </div>
       <section className="bg-gray-50 py-16">
@@ -145,7 +145,7 @@ export default async function ActivityHubPage() {
       {mapMarkers.length > 0 && (
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Find Swim Spots Near You</h2></div>
+            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Find Windsurfing Near You</h2></div>
             <div className="rounded-2xl overflow-hidden shadow-lg border-2 border-gray-200"><RegionMap markers={mapMarkers} center={[52.0, -4.0]} zoom={7} height="500px" /></div>
           </div>
         </section>
@@ -153,11 +153,11 @@ export default async function ActivityHubPage() {
       {activitiesData.length > 0 && (
         <section id="experiences" className="bg-gray-50 py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Guided {activityConfig.name} Experiences</h2></div>
+            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">{activityConfig.name} Schools & Hire</h2></div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {activitiesData.map((row) => (<ActivityCard key={row.activity.id} activity={row.activity} region={row.region} operator={row.operator} activityType={activityType} />))}
             </div>
-            <div className="text-center mt-8"><Link href={`/activities/type/${activityConfig.slug}`} className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl hover:bg-accent-hover transition-colors font-semibold">View all experiences <ArrowRight className="h-5 w-5" /></Link></div>
+            <div className="text-center mt-8"><Link href={`/activities/type/${activityConfig.slug}`} className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl hover:bg-accent-hover transition-colors font-semibold">View all centres <ArrowRight className="h-5 w-5" /></Link></div>
           </div>
         </section>
       )}
@@ -179,10 +179,10 @@ export default async function ActivityHubPage() {
       </section>
       <section className="bg-primary py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Take the Plunge?</h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">From icy mountain tarns to hidden waterfalls, discover your perfect wild swimming spot in Wales</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Catch the Wind?</h2>
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">From first sails to wave riding, discover windsurfing in Wales</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href={`/activities/type/${activityConfig.slug}`} className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-semibold hover:bg-gray-100 transition-colors">Find Swim Spots <ArrowRight className="h-5 w-5" /></Link>
+            <Link href={`/activities/type/${activityConfig.slug}`} className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-semibold hover:bg-gray-100 transition-colors">Find a Centre <ArrowRight className="h-5 w-5" /></Link>
           </div>
         </div>
       </section>

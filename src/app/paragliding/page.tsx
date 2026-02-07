@@ -8,34 +8,34 @@ import { Map, Calendar, MessageCircle, ChevronDown, ArrowRight, MapPin, Star, Cl
 import { JsonLd, createTouristDestinationSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 
 const activityConfig = {
-  slug: "wild-swimming",
-  name: "Wild Swimming",
-  title: "Wild Swimming in Wales",
-  strapline: "Discover hidden waterfalls, mountain lakes, river pools, and secret sea coves across Wales",
-  metaTitle: "Wild Swimming in Wales | Lakes, Waterfalls & Sea Swimming | Adventure Wales",
-  metaDescription: "Discover the best wild swimming spots in Wales. From mountain lakes to hidden waterfalls, sea coves to river pools. Guides, safety tips, and swimming communities.",
-  heroImage: "/images/activities/wild-swimming-hero.jpg",
-  icon: "🏊",
-  stats: { lakes: "400+", waterfalls: "200+", beaches: "200+", rivers: "50+" },
-  quickFacts: { bestTime: "Jun-Sep", price: "Free-£25", difficulty: "All Levels", duration: "1-3 hours", bestFor: "Everyone" },
+  slug: "paragliding",
+  name: "Paragliding",
+  title: "Paragliding in Wales",
+  strapline: "Soar above dramatic mountains, coastal cliffs, and valleys — experience the freedom of flight over Wales",
+  metaTitle: "Paragliding in Wales | Tandem Flights & Courses | Adventure Wales",
+  metaDescription: "Experience paragliding in Wales. Tandem flights for beginners, pilot courses, and ridge soaring along the Black Mountains and Snowdonia. Fly with BHPA-qualified instructors.",
+  heroImage: "/images/activities/paragliding-hero.jpg",
+  icon: "🪂",
+  stats: { sites: "50+", schools: "10+", ridgeKm: "100+", thermals: "Epic" },
+  quickFacts: { bestTime: "Mar-Oct", price: "£100-200", difficulty: "Beginner OK", duration: "2-4 hours", bestFor: "Adventurers" },
   regions: [
-    { name: "Snowdonia", slug: "snowdonia", tagline: "Mountain lakes and waterfalls", highlights: ["Llyn Idwal", "Fairy Glen pools", "Llyn Gwynant"] },
-    { name: "Pembrokeshire", slug: "pembrokeshire", tagline: "Hidden coves and sea swims", highlights: ["Blue Lagoon", "Barafundle Bay", "Aber Bach"] },
-    { name: "Brecon Beacons", slug: "brecon-beacons", tagline: "Waterfall country", highlights: ["Sgwd yr Eira", "Horseshoe Falls", "Four Falls Trail"] },
-    { name: "Gower", slug: "gower", tagline: "Sheltered bays and tidal pools", highlights: ["Brandy Cove", "Fall Bay", "Worm's Head pools"] },
+    { name: "Brecon Beacons", slug: "brecon-beacons", tagline: "Black Mountains thermals", highlights: ["Hay Bluff", "Llangorse Lake", "Crickhowell"] },
+    { name: "Mid Wales", slug: "mid-wales", tagline: "Ridge soaring paradise", highlights: ["Long Mynd", "Plynlimon", "Elan Valley"] },
+    { name: "Snowdonia", slug: "snowdonia", tagline: "Mountain flights", highlights: ["Cadair Idris", "Moel Siabod", "Rhinogs"] },
+    { name: "Gower", slug: "gower", tagline: "Coastal ridge flying", highlights: ["Rhossili Down", "Cefn Bryn", "Port Eynon"] },
   ],
   relatedActivities: [
-    { name: "Coasteering", slug: "coasteering", emoji: "🧗" },
-    { name: "Paddleboarding", slug: "paddleboarding", emoji: "🏄" },
-    { name: "Kayaking", slug: "kayaking", emoji: "🛶" },
     { name: "Hiking", slug: "hiking", emoji: "🥾" },
+    { name: "Coasteering", slug: "coasteering", emoji: "🌊" },
+    { name: "Mountain Biking", slug: "mountain-biking", emoji: "🚵" },
+    { name: "Wild Swimming", slug: "wild-swimming", emoji: "🏊" },
   ],
   faqs: [
-    { question: "Is wild swimming safe?", answer: "Wild swimming can be safe with proper precautions. Never swim alone, check conditions beforehand, know your limits, and be aware of cold water shock. Start slowly in cold water and consider joining a local swimming group." },
-    { question: "When is the best time to wild swim?", answer: "June to September offers the warmest water (15-20°C). Many swimmers go year-round with wetsuits. Early morning is magical for calm water and wildlife. Avoid swimming after heavy rain when rivers run fast and cold." },
-    { question: "Do I need a wetsuit?", answer: "Not essential in summer, but recommended. Welsh water rarely exceeds 18°C even in August. A wetsuit extends your season and keeps you warm longer. Many swimmers use just a swimsuit for short dips." },
-    { question: "Are there any rules about wild swimming?", answer: "In Wales, you can swim in the sea freely. Rivers and lakes vary — some are on private land. Always respect the environment, don't disturb wildlife, and take nothing but photos. The Outdoor Swimming Society has access information." },
-    { question: "What should I bring?", answer: "Towel and warm layers for after, a bright swim cap (visibility), water shoes for rocky entries, and a dry bag for valuables. In cooler months, a hot drink in a flask makes all the difference." },
+    { question: "Can beginners try paragliding?", answer: "Absolutely! Tandem flights let you experience paragliding with a qualified pilot who handles everything. You just enjoy the flight. It's perfect for a first taste of flying. No experience needed." },
+    { question: "Is paragliding safe?", answer: "With proper training and equipment, paragliding is a safe adventure sport. Tandem pilots are BHPA-qualified with extensive experience. Weather conditions are carefully assessed — you won't fly if conditions aren't suitable." },
+    { question: "How long do flights last?", answer: "Tandem flights typically last 15-30 minutes, depending on conditions. Ridge soaring in good thermals can extend flights significantly. Your whole experience including briefing, hike to launch, and landing takes 2-4 hours." },
+    { question: "What do I need to wear?", answer: "Sturdy shoes or boots for the hike to launch, warm layers (it's cooler at altitude), and clothes you can move in. Avoid loose items that might catch in the lines. Operators provide harnesses and helmets." },
+    { question: "Can I learn to fly solo?", answer: "Yes! BHPA-registered schools offer Elementary Pilot courses (typically 4-5 days) that teach you to fly independently. Progress to Club Pilot and beyond with more training. Wales has excellent learning conditions." },
   ],
 };
 
@@ -56,14 +56,14 @@ export default async function ActivityHubPage() {
   ]);
 
   const relatedItineraries = allItineraries.filter(row => 
-    row.itinerary.title?.toLowerCase().includes("swim") ||
-    row.itinerary.title?.toLowerCase().includes("water") ||
-    row.itinerary.description?.toLowerCase().includes("swimming")
+    row.itinerary.title?.toLowerCase().includes("paraglid") ||
+    row.itinerary.title?.toLowerCase().includes("fly") ||
+    row.itinerary.description?.toLowerCase().includes("paragliding")
   ).slice(0, 4);
 
   const relatedEvents = eventsData.events.filter(e => 
-    e.event.name?.toLowerCase().includes("swim") ||
-    e.event.type?.toLowerCase().includes("swimming")
+    e.event.name?.toLowerCase().includes("paraglid") ||
+    e.event.type?.toLowerCase().includes("flying")
   ).slice(0, 4);
 
   const mapMarkers = activitiesData.filter(row => row.activity.lat && row.activity.lng).map((row) => ({
@@ -102,7 +102,7 @@ export default async function ActivityHubPage() {
             ))}
           </div>
           <a href="#experiences" className="inline-flex items-center gap-2 bg-accent-hover hover:bg-accent text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:scale-105 shadow-lg">
-            Find Swim Spots <ChevronDown className="h-5 w-5" />
+            Find Flights <ChevronDown className="h-5 w-5" />
           </a>
         </div>
         <div className="absolute bottom-0 left-0 right-0 translate-y-1/2 z-20 px-4">
@@ -121,7 +121,7 @@ export default async function ActivityHubPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <nav className="mb-6"><ol className="flex items-center gap-2 text-sm text-gray-600"><li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li><li>/</li><li className="text-primary font-medium">{activityConfig.title}</li></ol></nav>
         <div className="prose prose-lg max-w-none mb-12">
-          <p className="text-gray-700 leading-relaxed">Wales is a wild swimmer's paradise. From the icy mountain lakes of Snowdonia to the hidden coves of Pembrokeshire, from thundering waterfall pools to gentle river bends, there's a swim for every mood and ability. Join the growing community of Welsh wild swimmers.</p>
+          <p className="text-gray-700 leading-relaxed">Wales offers exceptional paragliding with diverse sites from coastal ridges to mountain thermals. The Black Mountains are legendary for cross-country flying, while Snowdonia provides dramatic mountain scenery. Tandem flights make this incredible experience accessible to everyone.</p>
         </div>
       </div>
       <section className="bg-gray-50 py-16">
@@ -145,7 +145,7 @@ export default async function ActivityHubPage() {
       {mapMarkers.length > 0 && (
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Find Swim Spots Near You</h2></div>
+            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Find {activityConfig.name} Near You</h2></div>
             <div className="rounded-2xl overflow-hidden shadow-lg border-2 border-gray-200"><RegionMap markers={mapMarkers} center={[52.0, -4.0]} zoom={7} height="500px" /></div>
           </div>
         </section>
@@ -153,7 +153,7 @@ export default async function ActivityHubPage() {
       {activitiesData.length > 0 && (
         <section id="experiences" className="bg-gray-50 py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Guided {activityConfig.name} Experiences</h2></div>
+            <div className="text-center mb-12"><h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Book {activityConfig.name} Experiences</h2></div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {activitiesData.map((row) => (<ActivityCard key={row.activity.id} activity={row.activity} region={row.region} operator={row.operator} activityType={activityType} />))}
             </div>
@@ -179,10 +179,10 @@ export default async function ActivityHubPage() {
       </section>
       <section className="bg-primary py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Take the Plunge?</h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">From icy mountain tarns to hidden waterfalls, discover your perfect wild swimming spot in Wales</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Fly?</h2>
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">From tandem taster flights to learning to fly solo, discover paragliding in Wales</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href={`/activities/type/${activityConfig.slug}`} className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-semibold hover:bg-gray-100 transition-colors">Find Swim Spots <ArrowRight className="h-5 w-5" /></Link>
+            <Link href={`/activities/type/${activityConfig.slug}`} className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-semibold hover:bg-gray-100 transition-colors">Book a Flight <ArrowRight className="h-5 w-5" /></Link>
           </div>
         </div>
       </section>

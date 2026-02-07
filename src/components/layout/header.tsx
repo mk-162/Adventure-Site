@@ -72,13 +72,21 @@ export function Header() {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-slate-600"
-          >
-            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          {/* Mobile CTA + Menu Button */}
+          <div className="lg:hidden flex items-center gap-2">
+            <Link
+              href="/advertise"
+              className="px-3 py-1.5 bg-accent-hover hover:bg-orange-600 text-white text-xs font-bold rounded-lg transition-colors"
+            >
+              Advertise
+            </Link>
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="p-2 text-slate-600"
+            >
+              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}

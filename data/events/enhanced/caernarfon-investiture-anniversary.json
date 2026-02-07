@@ -1,0 +1,46 @@
+{
+  "slug": "caernarfon-investiture-anniversary",
+  "title": "Caernarfon Castle Investiture Anniversary",
+  "titleCy": "Pen-blwydd Arwisgiad Castell Caernarfon",
+  "category": "heritage",
+  "dates": {
+    "fixed": true,
+    "annual": "July 1",
+    "note": "Anniversary of the 1969 Investiture of the Prince of Wales"
+  },
+  "location": {
+    "name": "Caernarfon Castle",
+    "region": "Gwynedd",
+    "coordinates": {
+      "lat": 53.1391,
+      "lng": -4.2770
+    }
+  },
+  "description": "Caernarfon Castle, one of the most magnificent medieval fortresses in Europe, holds deep significance in Welsh and British royal history. On July 1, 1969, the castle hosted the investiture of Prince Charles as Prince of Wales, watched by 500 million television viewers worldwide. This UNESCO World Heritage Site, built by Edward I between 1283-1330, features distinctive polygonal towers and banded coloured stonework inspired by the Walls of Constantinople. The castle houses the Royal Welch Fusiliers Museum and offers panoramic views from its Eagle Tower. Anniversary commemorations celebrate this historic connection while visitors can explore the fortress-palace that has witnessed centuries of Welsh history, from medieval rebellion to modern ceremony.",
+  "heroImage": {
+    "url": "https://cadw.gov.wales/sites/default/files/styles/hero/public/2019-10/Caernarfon_Castle_0.jpg",
+    "alt": "Caernarfon Castle's distinctive polygonal towers and town walls",
+    "credit": "Cadw / Crown Copyright",
+    "source": "Cadw"
+  },
+  "socialLinks": {
+    "website": "https://cadw.gov.wales/visit/places-to-visit/castell-caernarfon",
+    "twitter": "https://twitter.com/cadwwales",
+    "instagram": "https://www.instagram.com/cadwcymruwales",
+    "facebook": "https://www.facebook.com/CadwWales"
+  },
+  "tags": ["heritage", "castle", "royal-history", "unesco", "museum"],
+  "pricing": {
+    "type": "paid",
+    "note": "Standard Cadw admission applies; free for Cadw members"
+  },
+  "accessibility": {
+    "wheelchairAccessible": "partial",
+    "note": "Lift access to upper levels of Inner East Gatehouse; ground floor accessible"
+  },
+  "metadata": {
+    "source": "Cadw",
+    "lastVerified": "2026-02-07",
+    "enhancedBy": "research"
+  }
+}

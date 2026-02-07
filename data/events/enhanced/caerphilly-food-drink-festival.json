@@ -1,0 +1,47 @@
+{
+  "slug": "caerphilly-food-drink-festival",
+  "name": "Caerphilly Food & Drink Festival",
+  "category": "festival",
+  "type": "food-festival",
+  "dates": {
+    "year": 2026,
+    "start": "2026-04-18",
+    "end": "2026-04-18",
+    "recurring": "Usually April annually"
+  },
+  "location": {
+    "venue": "Caerphilly Town Centre",
+    "town": "Caerphilly",
+    "region": "south-wales-valleys",
+    "coordinates": {
+      "lat": 51.5749,
+      "lng": -3.2179
+    }
+  },
+  "description": "Wales's largest spring food festival transforms Caerphilly town centre into a bustling marketplace in the shadow of Britain's second-largest castle. Over 80 food and drink stalls line Cardiff Road and The Twyn, offering everything from Welsh delicacies to international street food. Combined with the Caerphilly Artisan Market, Castle Court Craft & Food Market, and Crafty Legs' Craft Fair, the total exceeds 100 traders. Enjoy cookery demonstrations throughout the day, street entertainers keeping crowds delighted, and easy access to Ffos Caerffili's shipping container market. Dog-friendly and with excellent coach parking, this council-supported event draws visitors from across South Wales.",
+  "entry": {
+    "type": "free",
+    "notes": "Free entry. 9am-5pm"
+  },
+  "heroImage": {
+    "url": "https://www.caerphillyfoodfestival.co.uk/wp-content/uploads/2018/03/caerphilly-food-festival-2018-01-1.jpg",
+    "alt": "Caerphilly Food Festival crowds with castle in background",
+    "credit": "Caerphilly County Borough Council"
+  },
+  "social": {
+    "website": "https://www.caerphillyfoodfestival.co.uk/",
+    "facebook": "https://www.facebook.com/visitcaerphilly",
+    "instagram": "https://www.instagram.com/visitcaerphilly",
+    "twitter": "https://twitter.com/visitcaerphilly"
+  },
+  "highlights": [
+    "Over 100 stalls across multiple markets",
+    "Cookery demonstrations",
+    "Street entertainers",
+    "Adjacent to Caerphilly Castle",
+    "Dog-friendly event",
+    "Free coach parking with advance booking"
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

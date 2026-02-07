@@ -1,0 +1,57 @@
+{
+  "slug": "christmas-at-bute-park",
+  "name": "Christmas at Bute Park",
+  "nameWelsh": "Nadolig ym Mharc Bute",
+  "type": "Festival",
+  "category": "family",
+  "region": "south-wales",
+  "location": {
+    "town": "Cardiff",
+    "venue": "Bute Park",
+    "address": "Bute Park, Cardiff CF10 3ER",
+    "coordinates": {
+      "lat": 51.4871,
+      "lng": -3.1902
+    }
+  },
+  "dates": {
+    "typical": "Late November to late December",
+    "season2025": "November - December 2025 (dates TBC)",
+    "notes": "Check website for 2026 dates"
+  },
+  "pricing": {
+    "type": "ticketed",
+    "priceRange": "From £18 adult, £12 child",
+    "notes": "Pre-booking essential, family tickets available"
+  },
+  "description": "Christmas at Bute Park is Wales' premier festive light trail, welcoming over half a million visitors to the heart of Cardiff since its launch in 2021. This enchanting mile-long illuminated journey winds through Bute Park's picturesque grounds in the shadow of historic Cardiff Castle, featuring 15 mesmerising light zones created by world-leading lighting designers. Music-synchronized lighting installations, interactive displays, and magical moments await visitors of all ages on this 60-90 minute stroll through a glowing winter wonderland. The Christmas Village adds to the experience with crackling local food, delicious drinks, and plenty of festive cheer, making it an unmissable night out for families, friends, and couples alike.",
+  "highlights": [
+    "Mile-long illuminated trail",
+    "15 unique light zones",
+    "Music-synchronized displays",
+    "Interactive lighting experiences",
+    "Christmas Village food and drink",
+    "Cardiff Castle backdrop",
+    "Inclusive and accessible design"
+  ],
+  "website": "https://christmasatbutepark.com/",
+  "ticketUrl": "https://christmasatbute.seetickets.com/",
+  "social": {
+    "facebook": "https://www.facebook.com/xmasatbutepark",
+    "instagram": "https://instagram.com/xmasatbutepark",
+    "twitter": "https://twitter.com/xmasatbutepark"
+  },
+  "heroImage": {
+    "url": "https://christmasatbutepark.com/wp-content/uploads/2023/09/christmas-bute-park-light-trail.jpg",
+    "alt": "Illuminated light trail through trees at Christmas at Bute Park",
+    "credit": "From The Fields / Christmas at Bute Park"
+  },
+  "duration": "60-90 minutes",
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "notes": "Trail designed with all ages, backgrounds and abilities in mind"
+  },
+  "organizer": "From The Fields",
+  "familyFriendly": true,
+  "dogFriendly": false
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "cadw-open-doors",
+  "title": "Cadw Open Doors",
+  "titleCy": "Drysau Agored Cadw",
+  "category": "heritage",
+  "dates": {
+    "fixed": false,
+    "annual": "September",
+    "note": "Usually two weekends in September - part of European Heritage Days"
+  },
+  "location": {
+    "name": "Caernarfon Castle",
+    "region": "Gwynedd",
+    "coordinates": {
+      "lat": 53.1391,
+      "lng": -4.2770
+    },
+    "note": "Flagship venue shown - over 200 sites participate across Wales"
+  },
+  "description": "Open Doors is Wales' annual contribution to the European Heritage Days initiative, organised and funded by Cadw. Each September, more than 200 of Wales' historic sites, landmarks and hidden gems offer visitors free entry, special events, or exclusive guided tours. The festival celebrates Wales' rich built heritage, encouraging exploration of lesser-known sites and hidden treasures - many of which are usually closed to the public. From medieval castles and Tudor manor houses to Victorian industrial sites and ancient chapels, Open Doors reveals the stories behind Wales' most remarkable buildings. It's an unmissable opportunity to discover architectural gems and local history you might otherwise never see.",
+  "heroImage": {
+    "url": "https://cadw.gov.wales/sites/default/files/styles/main_image/public/2023-06/caernarfon-castle-aerial.jpg",
+    "alt": "Aerial view of Caernarfon Castle and town walls",
+    "credit": "Cadw / Crown Copyright",
+    "source": "Cadw"
+  },
+  "socialLinks": {
+    "website": "https://cadw.gov.wales/visit/whats-on/open-doors",
+    "twitter": "https://twitter.com/cadwwales",
+    "instagram": "https://www.instagram.com/cadwcymruwales",
+    "facebook": "https://www.facebook.com/CadwWales"
+  },
+  "tags": ["heritage", "free-entry", "historic-buildings", "european-heritage-days", "castles"],
+  "pricing": {
+    "type": "free",
+    "note": "Free entry to participating venues during Open Doors"
+  },
+  "accessibility": {
+    "wheelchairAccessible": "varies",
+    "note": "Accessibility varies by venue - check individual sites"
+  },
+  "contact": {
+    "email": "OpenDoors@gov.wales"
+  },
+  "metadata": {
+    "source": "Cadw",
+    "lastVerified": "2026-02-07",
+    "enhancedBy": "research"
+  }
+}

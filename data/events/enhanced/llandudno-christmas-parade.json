@@ -1,0 +1,60 @@
+{
+  "slug": "llandudno-christmas-parade",
+  "name": "Llandudno Christmas Parade",
+  "nameWelsh": "Gorymdaith Nadolig Llandudno",
+  "type": "Festival",
+  "category": "family",
+  "region": "north-wales",
+  "location": {
+    "town": "Llandudno",
+    "venue": "Llandudno Town Centre",
+    "address": "From Llandudno Railway Station through Mostyn Street, Llandudno LL30 2RP",
+    "coordinates": {
+      "lat": 53.3241,
+      "lng": -3.8277
+    }
+  },
+  "dates": {
+    "typical": "First Saturday of December",
+    "season2025": "Saturday 6 December 2025, 4pm",
+    "startTime": "4pm from Llandudno Railway Station"
+  },
+  "pricing": {
+    "type": "free",
+    "notes": "Free community event"
+  },
+  "description": "The Llandudno Christmas Parade is North Wales' most spectacular festive procession, transforming the Victorian seaside resort into a magical wonderland as dusk falls. Starting from Llandudno Railway Station at 4pm, the parade winds through the town's elegant streets—along Vaughan Street, into the main shopping thoroughfare of Mostyn Street, past the Town Hall on Lloyd Street, down Madoc Street, and back to the station. Illuminated floats, marching bands, costumed characters, and of course Father Christmas himself create an enchanting spectacle that draws thousands of families to the streets. The parade marks the official start of the Christmas season in Llandudno, with the town's beautiful Victorian buildings and twinkling lights providing a picture-perfect backdrop.",
+  "highlights": [
+    "Illuminated floats and displays",
+    "Father Christmas appearance",
+    "Marching bands and performers",
+    "Victorian town setting",
+    "Free family event",
+    "Official Christmas season launch"
+  ],
+  "website": "https://www.llandudno.gov.uk/",
+  "social": {
+    "facebook": "https://www.facebook.com/LlandudnoChristmasParade/",
+    "instagram": "https://www.instagram.com/visitconwy/",
+    "twitter": "https://twitter.com/visitconwy"
+  },
+  "heroImage": {
+    "url": "https://www.visitconwy.org.uk/dbimgs/Llandudno%20Christmas%20Parade.jpg",
+    "alt": "Llandudno Christmas Parade with illuminated floats on Mostyn Street",
+    "credit": "Visit Conwy"
+  },
+  "paradeRoute": [
+    "Llandudno Railway Station (start)",
+    "Vaughan Street",
+    "Mostyn Street",
+    "Lloyd Street (Town Hall)",
+    "Madoc Street",
+    "Return to Station"
+  ],
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "notes": "Street-level viewing along parade route"
+  },
+  "familyFriendly": true,
+  "dogFriendly": true
+}

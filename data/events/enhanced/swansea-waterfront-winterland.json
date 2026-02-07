@@ -1,0 +1,65 @@
+{
+  "slug": "swansea-waterfront-winterland",
+  "name": "Swansea Waterfront Winterland",
+  "nameWelsh": "Gwledd y Gaeaf ar y Glannau Abertawe",
+  "type": "Festival",
+  "category": "family",
+  "region": "south-wales",
+  "location": {
+    "town": "Swansea",
+    "venue": "Museum Park",
+    "address": "Museum Park, Oystermouth Road, Swansea SA1 3ST",
+    "coordinates": {
+      "lat": 51.6189,
+      "lng": -3.9364
+    }
+  },
+  "dates": {
+    "typical": "Late November to early January",
+    "season2025": "21 November 2025 - 4 January 2026",
+    "openingHours": {
+      "weekdays": "2pm-10pm (until 17 Dec)",
+      "weekends": "11am-10pm",
+      "schoolHolidays": "11am-10pm (17-24 Dec), 11am-6pm (27 Dec-4 Jan)"
+    },
+    "closures": "Closed Christmas Day and Boxing Day"
+  },
+  "pricing": {
+    "type": "mixed",
+    "freeEntry": true,
+    "attractionPrices": {
+      "iceSkating": "From £12",
+      "bigWheel": "From £5",
+      "fairgroundRides": "Various prices"
+    },
+    "notes": "Free entry to site, individual rides and attractions ticketed"
+  },
+  "description": "Swansea Waterfront Winterland transforms Museum Park into a spectacular winter playground, featuring South Wales' most magical festive experience. The 40-metre Big Wheel towers above the site with over 10,000 twinkling lights, offering breathtaking views across Swansea Bay. The undercover ice rink provides a magical skating experience regardless of weather, while thrilling fairground rides including the Moon-dancer, Freak Out, and Ice Jet deliver adrenaline-pumping excitement. New for 2025, the live music stage hosts entertainment Friday through Sunday evenings, and the Christmas Tree maze offers whimsical family fun. The Alpine Bar and cosy heated seating areas provide the perfect spot to warm up with mulled wine and deluxe hot chocolates.",
+  "highlights": [
+    "40m Big Wheel with 10,000 lights",
+    "Undercover ice skating rink",
+    "Fairground rides for all ages",
+    "Alpine Bar and food stalls",
+    "Live music stage (Fri-Sun)",
+    "Christmas Tree maze",
+    "Grinch Train for kids"
+  ],
+  "website": "https://www.visitswanseabay.com/swansea-christmas/waterfront-winterland/",
+  "ticketUrl": "https://swanseawaterfrontwinterland.seetickets.com/",
+  "social": {
+    "facebook": "https://www.facebook.com/EnjoySwansea",
+    "instagram": "https://www.instagram.com/enjoyswansea/",
+    "twitter": "https://twitter.com/visitswanseabay"
+  },
+  "heroImage": {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,g_xy_center,h_640,w_640/v1/clients/swansea/Winterland_Big_Wheel_aad40a68-99e7-4f79-9f38-d3ed41f1b45e.jpg",
+    "alt": "Swansea Waterfront Winterland Big Wheel lit up at night",
+    "credit": "Visit Swansea Bay"
+  },
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "notes": "Wheelchair-friendly Big Wheel cabin available, undercover viewing area for ice rink"
+  },
+  "familyFriendly": true,
+  "dogFriendly": false
+}

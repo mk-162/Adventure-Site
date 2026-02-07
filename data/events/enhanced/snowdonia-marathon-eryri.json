@@ -1,0 +1,103 @@
+{
+  "slug": "snowdonia-marathon-eryri",
+  "name": "Marathon Eryri (Snowdonia Marathon)",
+  "type": "road-running",
+  "category": "marathon",
+  "date": "2026-10-24",
+  "year": 2026,
+  "edition": 42,
+  "location": {
+    "name": "Llanberis, Gwynedd",
+    "region": "Snowdonia",
+    "country": "Wales",
+    "start": {
+      "name": "Llanberis",
+      "coordinates": {
+        "lat": 53.1193,
+        "lng": -4.1285
+      }
+    },
+    "finish": {
+      "name": "Llanberis",
+      "coordinates": {
+        "lat": 53.1193,
+        "lng": -4.1285
+      }
+    }
+  },
+  "distance": {
+    "value": 42.195,
+    "unit": "km",
+    "display": "26.2 miles"
+  },
+  "elevation": {
+    "gain": 1100,
+    "unit": "ft",
+    "highest_point": 1200,
+    "profile": "mountainous"
+  },
+  "difficulty": {
+    "rating": 5,
+    "scale": 5,
+    "label": "Extreme",
+    "technical": "Moderate - Mixed road and trail surfaces"
+  },
+  "description": "The 42nd edition of Marathon Eryri is one of Britain's most iconic and challenging road marathons, weaving through the spectacular heart of Snowdonia National Park. Starting in the mountain village of Llanberis, runners climb to Pen y Pass (1,100ft) before descending through Beddgelert and tackling the punishing Bwlch y Groes climb. The route showcases Wales' most dramatic scenery—rugged mountain peaks, ancient slate quarries, and pristine valleys. This isn't a PB course; it's a test of character. With 12 feed stations, legendary crowd support, and a heroes' welcome back in Llanberis, Marathon Eryri delivers an unforgettable experience for runners who want more than a flat, fast race. Perfect for experienced marathoners seeking adventure over speed.",
+  "who_its_for": "Experienced marathoners seeking a challenging mountain course with spectacular scenery. Not recommended for first-time marathoners or those chasing personal bests.",
+  "whats_special": [
+    "One of the UK's most scenic marathon routes",
+    "Circumnavigates Yr Wyddfa (Snowdon)",
+    "Historic 42-year legacy",
+    "Exceptional crowd support in villages",
+    "Post-race slate coaster finisher memento"
+  ],
+  "entry": {
+    "method": "ballot",
+    "fee": {
+      "amount": 50,
+      "currency": "GBP"
+    },
+    "ballot_opens": "2025-12-01",
+    "ballot_closes": "2025-12-08",
+    "results_announced": "2026-01-01",
+    "registration_url": "https://www.marathoneryri.com/enter-the-race",
+    "notes": "Places allocated by ballot only. Transfers available March 1 - September 30, 2026."
+  },
+  "included": [
+    "Entry to Marathon Eryri",
+    "12 hydration and fuel stations",
+    "Medical support",
+    "Baggage handling",
+    "Bespoke race tee",
+    "Finisher slate coaster",
+    "Race water bottle",
+    "Post-race tea and biscuits",
+    "Free sports massage (donation optional)",
+    "Entry to Marathon Eryri Expo"
+  ],
+  "cutoff": {
+    "time": "6 hours 30 minutes",
+    "notes": "Staged cutoffs at key points"
+  },
+  "start_time": "10:30",
+  "website": "https://www.marathoneryri.com",
+  "social": {
+    "instagram": "@marathoneryri",
+    "facebook": "MarathonEryri"
+  },
+  "photos": [
+    {
+      "url": "https://www.sportpictures.cymru/Galleries/Galeri-2025-Gallery/Marathon-Eryri-2025",
+      "source": "Sport Pictures Cymru",
+      "type": "official_gallery"
+    }
+  ],
+  "partners": [
+    "Ronhill",
+    "Mountain Fuel",
+    "Pete Bland Sports",
+    "Tenovus Cancer Care"
+  ],
+  "enhanced": true,
+  "enhanced_date": "2026-02-07"
+}

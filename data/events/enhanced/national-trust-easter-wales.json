@@ -1,0 +1,48 @@
+{
+  "slug": "national-trust-easter-wales",
+  "title": "National Trust Easter Trails Wales",
+  "titleCy": "Llwybrau Pasg yr Ymddiriedolaeth Genedlaethol Cymru",
+  "category": "family",
+  "dates": {
+    "fixed": false,
+    "annual": "Easter holidays",
+    "note": "Usually mid-March to mid-April, including Easter weekend",
+    "date2026": "March 21 - April 27, 2026 (varies by venue)"
+  },
+  "location": {
+    "name": "Erddig Hall and Garden",
+    "region": "Wrexham",
+    "coordinates": {
+      "lat": 53.0389,
+      "lng": -2.9911
+    },
+    "note": "Flagship venue shown - trails at multiple NT Wales properties"
+  },
+  "description": "National Trust Easter Trails bring family-friendly fun to historic houses, gardens, and landscapes across Wales during the spring holidays. Children can embark on exciting outdoor adventures, solving puzzles, tackling challenges, and following trails to claim their chocolate reward. Properties like Erddig, Bodnant Garden, Powis Castle, and Dyffryn Gardens each offer unique trails set within stunning grounds. Activities might include natural play areas, craft sessions, storytelling, and wildlife spotting alongside the egg hunts. It's the perfect way to enjoy Wales' most beautiful heritage sites while keeping children entertained with age-appropriate quests. Many properties also host additional seasonal activities throughout the Easter break.",
+  "heroImage": {
+    "url": "https://www.nationaltrust.org.uk/images/1431806823584-1159588.jpg",
+    "alt": "Children on Easter trail in National Trust garden",
+    "credit": "National Trust",
+    "source": "National Trust"
+  },
+  "socialLinks": {
+    "website": "https://www.nationaltrust.org.uk/visit/whats-on/easter-egg-hunts",
+    "twitter": "https://twitter.com/NTWales",
+    "instagram": "https://www.instagram.com/nationaltrust",
+    "facebook": "https://www.facebook.com/nationaltrustwales"
+  },
+  "tags": ["easter", "family", "trails", "gardens", "outdoors", "children"],
+  "pricing": {
+    "type": "paid",
+    "note": "Trail fee plus normal admission; free for NT members (trail fee may still apply)"
+  },
+  "accessibility": {
+    "wheelchairAccessible": "varies",
+    "note": "Accessibility varies by property - check individual venues"
+  },
+  "metadata": {
+    "source": "National Trust",
+    "lastVerified": "2026-02-07",
+    "enhancedBy": "research"
+  }
+}

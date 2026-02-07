@@ -1,0 +1,49 @@
+{
+  "slug": "great-british-food-margam",
+  "title": "Great British Food Festival at Margam Park",
+  "titleCy": "Gŵyl Bwyd Prydain Fawr ym Mharc Margam",
+  "category": "family",
+  "dates": {
+    "fixed": false,
+    "annual": "Summer",
+    "note": "Usually a weekend in July or August"
+  },
+  "location": {
+    "name": "Margam Country Park",
+    "region": "Neath Port Talbot",
+    "coordinates": {
+      "lat": 51.5613,
+      "lng": -3.7266
+    }
+  },
+  "description": "The Great British Food Festival brings a celebration of artisan food and drink to the magnificent setting of Margam Country Park in South Wales. This family-friendly festival showcases a fantastic variety of independent traders, producers, and street food vendors from across Britain. Visitors can browse stalls laden with cheeses, chutneys, cakes, craft beers, and locally produced treats, while live cooking demonstrations inspire culinary adventures. Set within the beautiful 850-acre park with its Grade I listed Orangery, ruined abbey, and herd of deer, the festival combines gourmet delights with outdoor exploration. Dogs are welcome, and car parking is included in the ticket price - perfect for a foodie family day out.",
+  "heroImage": {
+    "url": "https://greatbritishfoodfestival.com/images/venues/margam-park.jpg",
+    "alt": "Food stalls at Great British Food Festival with Margam Park backdrop",
+    "credit": "Great British Food Festival",
+    "source": "Great British Food Festival"
+  },
+  "socialLinks": {
+    "website": "https://greatbritishfoodfestival.com/margam-park",
+    "facebook": "https://www.facebook.com/GreatBritishFoodFestival",
+    "instagram": "https://www.instagram.com/gbfoodfestival"
+  },
+  "tags": ["food-festival", "family", "artisan", "outdoor", "dog-friendly"],
+  "pricing": {
+    "type": "paid",
+    "note": "Ticket prices vary; under 5s free; family tickets available; parking included"
+  },
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "note": "Country park setting - main festival area accessible"
+  },
+  "openingHours": {
+    "saturday": "10:00-17:30",
+    "sunday": "10:00-17:00"
+  },
+  "metadata": {
+    "source": "Great British Food Festival",
+    "lastVerified": "2026-02-07",
+    "enhancedBy": "research"
+  }
+}

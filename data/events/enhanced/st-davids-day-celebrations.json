@@ -1,0 +1,47 @@
+{
+  "slug": "st-davids-day-celebrations",
+  "title": "St David's Day Celebrations",
+  "titleCy": "Dathliadau Dydd Gŵyl Dewi Sant",
+  "category": "cultural",
+  "dates": {
+    "fixed": true,
+    "annual": "March 1",
+    "note": "Fixed annual date - Wales' national day"
+  },
+  "location": {
+    "name": "St Davids Cathedral",
+    "region": "Pembrokeshire",
+    "coordinates": {
+      "lat": 51.8813,
+      "lng": -5.2686
+    },
+    "note": "Flagship venue - celebrations held throughout Wales"
+  },
+  "description": "St David's Day (Dydd Gŵyl Dewi Sant) on March 1st celebrates Wales' patron saint and national identity. Across Wales, communities mark the occasion with parades, concerts, eisteddfodau, and traditional festivities. Cardiff hosts the largest parade, while the tiny city of St Davids in Pembrokeshire offers intimate celebrations at the magnificent 12th-century cathedral built on the site where Dewi Sant established his monastery. Expect to see daffodils and leeks worn proudly, traditional Welsh costume, stirring male voice choirs, and the irresistible aroma of Welsh cakes. Many enjoy cawl (traditional lamb broth) and bara brith (speckled bread), embracing Dewi's famous words: 'Gwnewch y pethau bychain' - do the little things.",
+  "heroImage": {
+    "url": "https://www.visitwales.com/sites/default/files/styles/listing_image/public/2023-01/St-Davids-Day-Parade-Cardiff.jpg",
+    "alt": "St David's Day parade in Cardiff with Welsh flags and traditional costume",
+    "credit": "Visit Wales / Crown Copyright",
+    "source": "Visit Wales"
+  },
+  "socialLinks": {
+    "website": "https://www.visitwales.com/annual-holidays/st-davids-day",
+    "twitter": "https://twitter.com/visitwales",
+    "instagram": "https://www.instagram.com/visitwales",
+    "facebook": "https://www.facebook.com/visitwales"
+  },
+  "tags": ["national-day", "parade", "heritage", "culture", "tradition", "free"],
+  "pricing": {
+    "type": "free",
+    "note": "Most public celebrations are free; some venues may charge"
+  },
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "note": "Varies by venue - Cardiff parade route is accessible"
+  },
+  "metadata": {
+    "source": "Visit Wales",
+    "lastVerified": "2026-02-07",
+    "enhancedBy": "research"
+  }
+}

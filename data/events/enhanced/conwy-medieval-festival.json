@@ -1,0 +1,45 @@
+{
+  "slug": "conwy-medieval-festival",
+  "title": "Conwy Medieval Christmas & Torchlit Parade",
+  "titleCy": "Nadolig Canoloesol Conwy a Gorymdaith Ffagl",
+  "category": "cultural",
+  "dates": {
+    "fixed": false,
+    "annual": "December",
+    "note": "Usually first weekend of December"
+  },
+  "location": {
+    "name": "Conwy Town Centre",
+    "region": "Conwy",
+    "coordinates": {
+      "lat": 53.2801,
+      "lng": -3.8266
+    },
+    "note": "Parade through medieval walled town beneath Conwy Castle"
+  },
+  "description": "The Conwy Medieval Christmas Torchlit Parade transforms this ancient walled town into a magical medieval spectacle. Set against the stunning backdrop of Edward I's UNESCO World Heritage castle, the event brings history to life as costumed characters parade through narrow streets illuminated by flickering torchlight. The atmospheric procession winds through Conwy's remarkably complete 13th-century town walls, creating an enchanting festive experience unlike any other. Visitors can explore Christmas markets, enjoy street performers, sample local food and drink, and soak up the unique atmosphere of one of Britain's best-preserved medieval towns. The event perfectly blends Conwy's rich heritage with seasonal celebration.",
+  "heroImage": {
+    "url": "https://www.visitconwy.org.uk/imageresizer/?image=%2Fdbimgs%2FConwy%20Castle%20at%20night.jpg&action=ContentCard",
+    "alt": "Conwy Castle illuminated at night with town walls",
+    "credit": "Visit Conwy",
+    "source": "Visit Conwy"
+  },
+  "socialLinks": {
+    "website": "https://www.visitconwy.org.uk/whats-on",
+    "facebook": "https://www.facebook.com/conwymedievalchristmas"
+  },
+  "tags": ["christmas", "parade", "medieval", "heritage", "family", "torchlit"],
+  "pricing": {
+    "type": "free",
+    "note": "Free street event"
+  },
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "note": "Town centre streets - some areas cobbled"
+  },
+  "metadata": {
+    "source": "Visit Conwy",
+    "lastVerified": "2026-02-07",
+    "enhancedBy": "research"
+  }
+}

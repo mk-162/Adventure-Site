@@ -1,0 +1,52 @@
+{
+  "slug": "cardiff-christmas-market",
+  "name": "Cardiff Christmas Market",
+  "nameWelsh": "Marchnad y Nadolig Caerdydd",
+  "type": "Festival",
+  "category": "festival",
+  "region": "south-wales",
+  "location": {
+    "town": "Cardiff",
+    "venue": "Cardiff City Centre",
+    "address": "St John Street, Working Street, Trinity Street & Hills Street, Cardiff CF10 1WG",
+    "coordinates": {
+      "lat": 51.4804,
+      "lng": -3.1795
+    }
+  },
+  "dates": {
+    "typical": "Mid-November to 23 December",
+    "season2025": "12 November - 23 December 2025",
+    "season2026": "12 November - 23 December 2026",
+    "openingHours": "Daily during market period"
+  },
+  "pricing": {
+    "type": "free",
+    "notes": "Free entry to market stalls"
+  },
+  "description": "Cardiff Christmas Market transforms the heart of the Welsh capital into a winter wonderland of creativity and festive cheer. Organised by CraftFolk, this beloved outdoor market stretches through the pedestrianised streets around St John Street and Working Street, offering a carefully curated selection of handmade gifts, artisan crafts, and Welsh produce. Over 100 wooden chalets showcase local artists, designers, and food producers, making it the perfect destination for unique Christmas gifts. The market's bilingual atmosphere, with Welsh and English signage, celebrates Cardiff's cultural heritage while the twinkling lights and festive decorations create an enchanting shopping experience in the shadow of Cardiff Castle.",
+  "highlights": [
+    "Over 100 handcrafted stalls",
+    "Local Welsh artists and designers",
+    "Artisan food and drink",
+    "Bilingual Welsh/English experience",
+    "Central Cardiff location"
+  ],
+  "website": "https://www.cardiffchristmasmarket.com/",
+  "social": {
+    "facebook": "https://www.facebook.com/CardiffChristmasMarket/",
+    "instagram": "https://www.instagram.com/cardiffchristmasmarket",
+    "twitter": "https://twitter.com/cardiffxmasmrkt"
+  },
+  "heroImage": {
+    "url": "https://www.cardiffchristmasmarket.com/wp-content/uploads/2021/11/christmas-market-stalls.jpg",
+    "alt": "Cardiff Christmas Market wooden chalets with festive decorations",
+    "credit": "Cardiff Christmas Market"
+  },
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "notes": "Pedestrianised streets with level access"
+  },
+  "familyFriendly": true,
+  "dogFriendly": true
+}

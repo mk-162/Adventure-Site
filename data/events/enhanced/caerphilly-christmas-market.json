@@ -1,0 +1,61 @@
+{
+  "slug": "caerphilly-christmas-market",
+  "name": "Caerphilly Christmas Market",
+  "nameWelsh": "Marchnad Nadolig Caerffili",
+  "type": "Festival",
+  "category": "festival",
+  "region": "south-wales",
+  "location": {
+    "town": "Caerphilly",
+    "venue": "Caerphilly Town Centre & Castle",
+    "address": "Caerphilly Town Centre, CF83 1JL",
+    "coordinates": {
+      "lat": 51.5764,
+      "lng": -3.2182
+    }
+  },
+  "dates": {
+    "typical": "Last Saturday of November",
+    "season2025": "Saturday 29 November 2025",
+    "openingHours": "9am-6pm"
+  },
+  "pricing": {
+    "type": "free",
+    "notes": "Free entry to market. Admission charges apply to enter Caerphilly Castle."
+  },
+  "description": "Caerphilly Christmas Market is one of Wales' most beloved festive events, voted the third-best Christmas market in the UK by BBC Countryfile Magazine. Set in the historic market town beneath the imposing silhouette of Caerphilly Castle—the largest castle in Wales—this traditional market features over 100 food, craft, and gift stalls spreading through the town centre streets. Street theatre performers and live entertainment create a magical atmosphere as visitors browse unique handmade gifts, Welsh produce, and festive treats. The castle provides a spectacular backdrop, and the nearby Artisan Market at Twyn Community Centre extends the shopping experience for a perfect pre-Christmas day out.",
+  "highlights": [
+    "Over 100 stalls",
+    "BBC Countryfile top 3 UK market",
+    "Caerphilly Castle backdrop",
+    "Street theatre entertainment",
+    "Local Welsh produce",
+    "Artisan crafts and gifts"
+  ],
+  "website": "https://www.caerphillychristmasmarket.co.uk/",
+  "social": {
+    "facebook": "https://www.facebook.com/visitcaerphilly",
+    "instagram": "https://www.instagram.com/visitcaerphilly",
+    "twitter": "https://twitter.com/Visitcaerphilly",
+    "youtube": "https://www.youtube.com/channel/UCev7meazopXL09E-QhvX7WQ"
+  },
+  "heroImage": {
+    "url": "https://www.visitcaerphilly.com/dbimgs/Christmas%20Market%20(22).jpg",
+    "alt": "Caerphilly Christmas Market with castle in background",
+    "credit": "Visit Caerphilly"
+  },
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "notes": "Town centre streets, some cobbled areas near castle"
+  },
+  "contact": {
+    "phone": "01443 866390",
+    "email": "events@caerphilly.gov.uk"
+  },
+  "transport": {
+    "byRoad": "Exit Junction 32 of M4, take A470 then A468 and follow signs for Caerphilly",
+    "coachParking": "Available with advance booking"
+  },
+  "familyFriendly": true,
+  "dogFriendly": true
+}

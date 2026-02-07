@@ -1,0 +1,47 @@
+{
+  "slug": "llangollen-food-festival",
+  "name": "Llangollen Food Festival",
+  "category": "festival",
+  "type": "food-festival",
+  "dates": {
+    "year": 2026,
+    "start": "2026-10-10",
+    "end": "2026-10-11",
+    "recurring": "Usually second weekend of October"
+  },
+  "location": {
+    "venue": "Llangollen Town Centre",
+    "town": "Llangollen",
+    "region": "north-wales",
+    "coordinates": {
+      "lat": 52.9705,
+      "lng": -3.1714
+    }
+  },
+  "description": "Set in one of Wales's most picturesque valleys, Llangollen Food Festival delivers two unforgettable days of local flavours in the heart of North Wales. This charming town, famous for its International Eisteddfod, becomes a celebration of regional produce with chef demonstrations, live music, and family entertainment spread across multiple venues. Browse stalls from passionate local producers, sample artisan foods, and discover the culinary heritage of the Dee Valley. Sponsored by The Corn Mill and Penderyn Distillery, this free-entry festival perfectly captures the warmth and quality of Welsh food culture.",
+  "entry": {
+    "type": "free",
+    "notes": "Free entry. 10am-5pm both days"
+  },
+  "heroImage": {
+    "url": "https://llangollenfoodfestival.com/wp-content/uploads/2024/09/llangollen-food-festival-1.jpg",
+    "alt": "Llangollen Food Festival in the scenic Dee Valley town",
+    "credit": "Llangollen Food Festival"
+  },
+  "social": {
+    "website": "https://llangollenfoodfestival.com/",
+    "facebook": "https://www.facebook.com/Hamper-Llangollen-231359816904146/",
+    "instagram": "https://www.instagram.com/llangollenfoodfestival/",
+    "twitter": "https://twitter.com/HamperLlangolle"
+  },
+  "highlights": [
+    "Chef demonstrations",
+    "Live music entertainment",
+    "Family-friendly activities",
+    "Scenic Dee Valley setting",
+    "Multiple town venues",
+    "Local artisan producers"
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

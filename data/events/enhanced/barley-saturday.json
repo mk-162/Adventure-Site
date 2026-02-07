@@ -1,0 +1,44 @@
+{
+  "slug": "barley-saturday",
+  "title": "Barley Saturday (Sadwrn Barlys)",
+  "titleCy": "Sadwrn Barlys",
+  "category": "cultural",
+  "dates": {
+    "fixed": false,
+    "annual": "Last Saturday in April",
+    "date2026": "April 25, 2026"
+  },
+  "location": {
+    "name": "Cardigan Town Centre",
+    "region": "Ceredigion",
+    "coordinates": {
+      "lat": 52.0833,
+      "lng": -4.6612
+    }
+  },
+  "description": "Barley Saturday (Sadwrn Barlys) is a cherished tradition unique to Cardigan, dating back to the 19th century. Originally a hiring fair where farmers came to town to recruit workers and inspect stallions for breeding, today's celebration places magnificent horses centre stage. The morning features judging of various horse competitions, followed by the spectacular main event at 2pm: a grand parade of horses through Cardigan's historic streets. The equine procession is followed by an eclectic convoy of vintage cars, motorcycles, tractors, horse-drawn carriages, milk floats, and traditional gypsy wagons. The event draws crowds from across Wales and beyond, with even Wales' First Minister joining the celebrations in recent years.",
+  "heroImage": {
+    "url": "https://www.visitwales.com/sites/default/files/styles/hero_image/public/2019-04/Cardigan-Barley-Saturday.jpg",
+    "alt": "Horses parading through Cardigan streets on Barley Saturday",
+    "credit": "Visit Wales / Crown Copyright",
+    "source": "Visit Wales"
+  },
+  "socialLinks": {
+    "website": "https://www.discoverceredigion.wales/",
+    "facebook": "https://www.facebook.com/visitcardigan"
+  },
+  "tags": ["tradition", "horses", "parade", "heritage", "rural", "free"],
+  "pricing": {
+    "type": "free",
+    "note": "Free street event"
+  },
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "note": "Town centre streets - parade viewing accessible"
+  },
+  "metadata": {
+    "source": "Visit Wales / Discover Ceredigion",
+    "lastVerified": "2026-02-07",
+    "enhancedBy": "research"
+  }
+}

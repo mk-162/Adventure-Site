@@ -1,0 +1,45 @@
+{
+  "slug": "winter-solstice-bryn-celli-ddu",
+  "title": "Winter Solstice at Bryn Celli Ddu",
+  "titleCy": "Hirddydd Gaeaf ym Mryn Celli Ddu",
+  "category": "heritage",
+  "dates": {
+    "fixed": true,
+    "annual": "December 21",
+    "note": "Winter Solstice - shortest day of the year. Note: the tomb is astronomically aligned to the Summer Solstice sunrise"
+  },
+  "location": {
+    "name": "Bryn Celli Ddu Chambered Tomb",
+    "region": "Anglesey",
+    "coordinates": {
+      "lat": 53.2066,
+      "lng": -4.2352
+    }
+  },
+  "description": "Bryn Celli Ddu ('the mound in the dark grove') is one of Wales' most atmospheric prehistoric sites, and Winter Solstice brings a special gathering to this ancient Neolithic chambered tomb on Anglesey. While the passage is famously aligned to the Summer Solstice sunrise, the modern-day Anglesey Druid Order has celebrated Winter Solstice here for over 20 years. As daylight fades on the shortest day, participants gather for a ceremony honouring Welsh mythology, the Mabinogi, and the symbolic return of the sun. Offerings are made to the spirits of land, sea, and sky, and the Mari Lwyd - the ghostly horse skull of Welsh tradition - often makes an appearance. It's a profound connection to 5,000 years of human ritual at this sacred site.",
+  "heroImage": {
+    "url": "https://cadw.gov.wales/sites/default/files/styles/hero/public/2019-05/Bryn-Celli-Ddu-entrance.jpg",
+    "alt": "Stone entrance passage to Bryn Celli Ddu burial chamber",
+    "credit": "Cadw / Crown Copyright",
+    "source": "Cadw"
+  },
+  "socialLinks": {
+    "website": "https://cadw.gov.wales/visit/places-to-visit/bryn-celli-ddu-chambered-tomb",
+    "twitter": "https://twitter.com/cadwwales",
+    "instagram": "https://www.instagram.com/cadwcymruwales"
+  },
+  "tags": ["prehistoric", "neolithic", "solstice", "spiritual", "heritage", "free"],
+  "pricing": {
+    "type": "free",
+    "note": "Free access - Cadw-managed site"
+  },
+  "accessibility": {
+    "wheelchairAccessible": false,
+    "note": "Rural site with muddy footpath; low passage entrance to chamber"
+  },
+  "metadata": {
+    "source": "Cadw / Wales Online",
+    "lastVerified": "2026-02-07",
+    "enhancedBy": "research"
+  }
+}

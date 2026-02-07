@@ -1,0 +1,51 @@
+{
+  "slug": "swansea-christmas-market",
+  "name": "Swansea Christmas Market",
+  "nameWelsh": "Marchnad Nadolig Abertawe",
+  "type": "Festival",
+  "category": "festival",
+  "region": "south-wales",
+  "location": {
+    "town": "Swansea",
+    "venue": "Swansea City Centre",
+    "address": "Oxford Street and Portland Street, Swansea SA1 3AN",
+    "coordinates": {
+      "lat": 51.6214,
+      "lng": -3.9436
+    }
+  },
+  "dates": {
+    "typical": "Late November to 22 December",
+    "season2025": "29 November - 22 December 2025",
+    "openingHours": "Mon-Sat 9:30am-5pm, Sun 10:30am-4:30pm"
+  },
+  "pricing": {
+    "type": "free",
+    "notes": "Free entry to browse the market"
+  },
+  "description": "Swansea Christmas Market brings festive magic to Wales' second city with a charming collection of traditional chalets lining Oxford Street and Portland Street. Talented local crafters, traditional traders, and delicious street food vendors create an authentic Christmas shopping experience in the heart of Swansea. The Alpine Bar offers a cosy retreat with sheltered seating, deluxe hot chocolates, and warming mulled wine—the perfect treat after browsing the stalls. The Caroller's Cabin serves as the hub for festive entertainment, hosting school choirs and carol singers throughout the season, while also providing a sparkly Santa scene for magical family photos.",
+  "highlights": [
+    "Traditional wooden chalets",
+    "Local crafters and artisans",
+    "Alpine Bar with mulled wine",
+    "Caroller's Cabin entertainment",
+    "Street food vendors"
+  ],
+  "website": "https://www.visitswanseabay.com/swansea-christmas/christmas-market/",
+  "social": {
+    "facebook": "https://www.facebook.com/swanseachristmasmarket",
+    "instagram": "https://www.instagram.com/enjoyswansea/",
+    "twitter": "https://twitter.com/visitswanseabay"
+  },
+  "heroImage": {
+    "url": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,g_xy_center,h_640,w_640,x_1417,y_896/v1/clients/swansea/Swansea_Christmas_Market_2_98cd4ddf-6f56-4ac1-bdbb-dfd74a8db5fa.jpg",
+    "alt": "Young couple exploring Swansea Christmas Market at night",
+    "credit": "Visit Swansea Bay"
+  },
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "notes": "City centre pedestrian area"
+  },
+  "familyFriendly": true,
+  "dogFriendly": true
+}

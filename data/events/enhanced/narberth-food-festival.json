@@ -1,0 +1,48 @@
+{
+  "slug": "narberth-food-festival",
+  "name": "Narberth Food Festival",
+  "nameWelsh": "Gŵyl Fwyd Arberth",
+  "category": "festival",
+  "type": "food-festival",
+  "dates": {
+    "year": 2026,
+    "start": "2026-09-26",
+    "end": "2026-09-27",
+    "recurring": "Last weekend of September annually"
+  },
+  "location": {
+    "venue": "Town Moor",
+    "town": "Narberth",
+    "region": "pembrokeshire",
+    "coordinates": {
+      "lat": 51.7972,
+      "lng": -4.7364
+    }
+  },
+  "description": "Now in its 26th year, Narberth Food Festival is one of Wales's longest-established and friendliest food celebrations. Set alongside the Town Moor in the heart of this charming Pembrokeshire market town, the two-day event brings together passionate local producers, guest chefs demonstrating their skills, and live music throughout the weekend. Run entirely by volunteers as a not-for-profit event, it embodies the community spirit of Welsh food culture. The festival site connects seamlessly with Narberth's award-winning high street, packed with independent shops, cafes, and restaurants. Free park and ride facilities ensure easy access.",
+  "entry": {
+    "type": "paid",
+    "notes": "Free entry for under 16s. Adult tickets available."
+  },
+  "heroImage": {
+    "url": "https://www.narberthfoodfestival.com/wp-content/uploads/2024/02/narberth_food_festival_116.webp",
+    "alt": "Narberth Food Festival crowds enjoying food stalls",
+    "credit": "Narberth Food Festival"
+  },
+  "social": {
+    "website": "https://www.narberthfoodfestival.com/",
+    "facebook": "https://www.facebook.com/NarberthFoodFestival",
+    "instagram": "https://www.instagram.com/narberthfoodfestival",
+    "twitter": "https://twitter.com/narberthfood"
+  },
+  "highlights": [
+    "26 years of celebrating Welsh food",
+    "Guest chef demonstrations",
+    "Live music throughout weekend",
+    "Local artisan food stalls",
+    "Award-winning town centre to explore",
+    "Free park and ride"
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

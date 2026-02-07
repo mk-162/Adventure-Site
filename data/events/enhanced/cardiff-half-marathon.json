@@ -1,0 +1,129 @@
+{
+  "slug": "cardiff-half-marathon",
+  "name": "Cardiff Half Marathon",
+  "type": "road-running",
+  "category": "half-marathon",
+  "date": "2026-10-04",
+  "year": 2026,
+  "location": {
+    "name": "Cardiff City Centre",
+    "region": "South Wales",
+    "country": "Wales",
+    "start": {
+      "name": "Cardiff Castle",
+      "coordinates": {
+        "lat": 51.4822,
+        "lng": -3.1812
+      }
+    },
+    "finish": {
+      "name": "Cardiff Civic Centre",
+      "coordinates": {
+        "lat": 51.4835,
+        "lng": -3.1780
+      }
+    }
+  },
+  "distance": {
+    "value": 21.0975,
+    "unit": "km",
+    "display": "13.1 miles"
+  },
+  "elevation": {
+    "gain": 50,
+    "unit": "m",
+    "profile": "flat"
+  },
+  "difficulty": {
+    "rating": 2,
+    "scale": 5,
+    "label": "Accessible",
+    "technical": "Flat, fast road course on closed roads"
+  },
+  "description": "The UK's second-largest half marathon and Wales' biggest mass participation event, Cardiff Half is a flat, fast, and phenomenally well-supported race through the Welsh capital. Starting near Cardiff Castle, the closed-road course winds past iconic landmarks—the Principality Stadium, Cardiff Bay, and Roath Park—before a triumphant finish in the Civic Centre. With 27,500 runners and thousands of spectators lining the streets, the atmosphere is electric. Part of the SuperHalfs series alongside Prague, Lisbon, Copenhagen, and Valencia, this is PB territory with a party atmosphere. Whether you're chasing a time or soaking up the experience, Cardiff Half delivers.",
+  "who_its_for": "All abilities welcome. Perfect for first-timers seeking a supportive, well-organised event or experienced runners chasing personal bests on a fast course.",
+  "whats_special": [
+    "UK's second-largest half marathon",
+    "Part of SuperHalfs international series",
+    "Flat, PB-friendly course",
+    "Exceptional crowd support (27,500+ runners)",
+    "Iconic Cardiff landmarks throughout"
+  ],
+  "entry": {
+    "method": "ballot",
+    "fee": {
+      "uk_ballot": 58,
+      "international_ballot": 70,
+      "currency": "GBP"
+    },
+    "ballot_opens": "2025-09-01",
+    "ballot_closes": "2025-10-19",
+    "results_announced": "2025-10-23",
+    "registration_url": "https://www.cardiffhalfmarathon.co.uk/take-part/register/",
+    "skip_ballot_options": [
+      "Run for charity (various partners)",
+      "Business Challenge teams",
+      "International Tour Operators"
+    ],
+    "notes": "Ballot entry due to high demand. Registration deadline September 1, 2026."
+  },
+  "included": [
+    "Race pack with number and timing chip",
+    "Fully closed road course",
+    "Course entertainment and live music",
+    "Finisher medal",
+    "Technical finisher tee (or Climate Action Fund donation)",
+    "Training app access (Coopah)",
+    "Event village and feed stations",
+    "Live tracking via Run 4 Wales app",
+    "Finish time pacers"
+  ],
+  "cutoff": {
+    "time": "4 hours",
+    "notes": "Must complete 13.1 miles within 4 hours"
+  },
+  "start_time": "10:00",
+  "minimum_age": 17,
+  "website": "https://www.cardiffhalfmarathon.co.uk",
+  "social": {
+    "instagram": "@run4wales",
+    "facebook": "Cardiffhalf",
+    "twitter": "@cardiffhalf",
+    "hashtag": "#CardiffHalf"
+  },
+  "charity_partner": {
+    "name": "NSPCC",
+    "role": "Lead Charity",
+    "charity_entry_available": true,
+    "pledge_amount": 300
+  },
+  "photos": [
+    {
+      "url": "https://farm66.staticflickr.com/65535/54836177105_04a591005a_b.jpg",
+      "source": "Cardiff Half Official",
+      "type": "action",
+      "alt": "Runners on Cardiff Half course 2025"
+    },
+    {
+      "url": "https://farm66.staticflickr.com/65535/54836099358_475bd880fa_b.jpg",
+      "source": "Cardiff Half Official",
+      "type": "action",
+      "alt": "Mass start Cardiff Half Marathon"
+    },
+    {
+      "url": "https://farm66.staticflickr.com/65535/54835939046_52fc3bae3a_b.jpg",
+      "source": "Cardiff Half Official",
+      "type": "finish",
+      "alt": "Finishers at Cardiff Half Marathon"
+    }
+  ],
+  "partners": [
+    "HIGH5",
+    "Cardiff University",
+    "Principality",
+    "Brecon Carreg"
+  ],
+  "superhalfs_series": true,
+  "enhanced": true,
+  "enhanced_date": "2026-02-07"
+}

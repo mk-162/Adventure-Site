@@ -1,0 +1,47 @@
+{
+  "slug": "cadw-halloween-events",
+  "title": "Cadw Halloween Events",
+  "titleCy": "Digwyddiadau Calan Gaeaf Cadw",
+  "category": "family",
+  "dates": {
+    "fixed": false,
+    "annual": "October half term",
+    "note": "Usually late October, coinciding with school half term"
+  },
+  "location": {
+    "name": "Caerphilly Castle",
+    "region": "Caerphilly",
+    "coordinates": {
+      "lat": 51.5783,
+      "lng": -3.2205
+    },
+    "note": "Flagship venue shown - events at multiple Cadw castles across Wales"
+  },
+  "description": "Wales' ancient castles become wonderfully spooky during Cadw's Halloween programme, offering family-friendly frights throughout October half term. Historic fortresses like Caerphilly, Raglan, Conwy, and Caernarfon transform into haunted halls with ghost trails, creepy crafts, face painting, and seasonal activities. Brave families can join ghost hunts through candlelit corridors, while younger visitors enjoy less scary crafts and trails by day. Special evening events offer atmospheric after-dark experiences in these genuinely ancient settings - what better backdrop for Halloween than a medieval castle with 800 years of history? Events range from free daytime trails to ticketed ghost tours, so there's something for all ages and appetites for adventure.",
+  "heroImage": {
+    "url": "https://cadw.gov.wales/sites/default/files/styles/hero/public/2019-10/Caerphilly-Castle-Halloween.jpg",
+    "alt": "Caerphilly Castle decorated for Halloween with atmospheric lighting",
+    "credit": "Cadw / Crown Copyright",
+    "source": "Cadw"
+  },
+  "socialLinks": {
+    "website": "https://cadw.gov.wales/visit/whats-on/find-a-cadw-event",
+    "twitter": "https://twitter.com/cadwwales",
+    "instagram": "https://www.instagram.com/cadwcymruwales",
+    "facebook": "https://www.facebook.com/CadwWales"
+  },
+  "tags": ["halloween", "family", "castles", "spooky", "half-term", "children"],
+  "pricing": {
+    "type": "mixed",
+    "note": "Some activities free with admission; special events may require booking"
+  },
+  "accessibility": {
+    "wheelchairAccessible": "varies",
+    "note": "Accessibility varies by castle - Caerphilly has good ground floor access"
+  },
+  "metadata": {
+    "source": "Cadw",
+    "lastVerified": "2026-02-07",
+    "enhancedBy": "research"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "mold-food-drink-festival",
+  "name": "Mold Food & Drink Festival",
+  "category": "festival",
+  "type": "food-festival",
+  "dates": {
+    "year": 2026,
+    "start": "2026-09-19",
+    "end": "2026-09-20",
+    "recurring": "Third weekend of September annually"
+  },
+  "location": {
+    "venue": "Mold Town Centre",
+    "town": "Mold",
+    "region": "north-wales",
+    "coordinates": {
+      "lat": 53.1680,
+      "lng": -3.1380
+    }
+  },
+  "description": "Celebrating its landmark 20th year in 2026, Mold Food & Drink Festival has grown into North Wales's premier food celebration. The two-day event transforms Mold town centre into a foodie paradise with exhibition stands from local producers, a dedicated cookery theatre featuring chef demonstrations, and a lively music stage with bands performing throughout the weekend. Run by a dedicated volunteer committee, this community-driven festival showcases the best of Welsh and regional produce. From artisan cheeses to craft beers, fresh bakes to street food, there's something to tempt every palate in this friendly Flintshire market town.",
+  "entry": {
+    "type": "paid",
+    "notes": "Tickets available via Ticketebo"
+  },
+  "heroImage": {
+    "url": "https://moldfoodfestival.co.uk/wp-content/uploads/2025/04/DSC_8464-1.jpg",
+    "alt": "Mold Food Festival exhibitor stalls with crowds",
+    "credit": "Mold Food & Drink Festival"
+  },
+  "social": {
+    "website": "https://moldfoodfestival.co.uk/",
+    "facebook": "https://www.facebook.com/moldfoodfest",
+    "instagram": "https://www.instagram.com/moldfoodfest/",
+    "twitter": "https://twitter.com/moldfoodfest",
+    "tiktok": "https://www.tiktok.com/@moldfoodfest"
+  },
+  "highlights": [
+    "20th anniversary celebration in 2026",
+    "Cookery theatre demonstrations",
+    "Live music stage",
+    "Over 100 exhibitors",
+    "Street food vendors",
+    "Community volunteer-run event"
+  ],
+  "nearbyOperators": [],
+  "lastVerified": "2026-02-07"
+}

@@ -1,0 +1,116 @@
+{
+  "slug": "dragon-ride-letape-wales",
+  "name": "Dragon Ride L'Etape Wales",
+  "type": "cycling",
+  "category": "sportive",
+  "date": "2026-06-14",
+  "year": 2026,
+  "location": {
+    "name": "Margam Park, Port Talbot",
+    "region": "Brecon Beacons / South Wales",
+    "country": "Wales",
+    "start": {
+      "name": "Margam Park",
+      "coordinates": {
+        "lat": 51.5528,
+        "lng": -3.7331
+      }
+    },
+    "finish": {
+      "name": "Margam Park",
+      "coordinates": {
+        "lat": 51.5528,
+        "lng": -3.7331
+      }
+    }
+  },
+  "distances": [
+    {
+      "name": "Dragon Devil",
+      "distance_km": 300,
+      "distance_miles": 186,
+      "elevation_m": 5500,
+      "difficulty": "Extreme"
+    },
+    {
+      "name": "Gran Fondo",
+      "distance_km": 230,
+      "distance_miles": 143,
+      "elevation_m": 4000,
+      "difficulty": "Very Hard"
+    },
+    {
+      "name": "Medio Fondo",
+      "distance_km": 170,
+      "distance_miles": 106,
+      "elevation_m": 2800,
+      "difficulty": "Hard"
+    },
+    {
+      "name": "Cymru Classic",
+      "distance_km": 100,
+      "distance_miles": 62,
+      "elevation_m": 1500,
+      "difficulty": "Moderate"
+    }
+  ],
+  "difficulty": {
+    "rating": 5,
+    "scale": 5,
+    "label": "Legendary",
+    "technical": "Challenging mountain roads with steep gradients"
+  },
+  "description": "Hailed as the UK's toughest and most prestigious cycling sportive, Dragon Ride takes 4,500 brave riders through the dramatic peaks of the Brecon Beacons. For 2026, routes are reversed, transforming legendary descents into punishing new climbs. The infamous Devil's Elbow returns as a timed King and Queen of the Mountain challenge. From the Gran Fondo's 4,000m of climbing to the epic 300km Dragon Devil, every route delivers world-class cycling through landscapes that will host the 2027 Tour de France Grand Départ. This isn't just a ride—it's a pilgrimage for cyclists who want to test themselves against one of Europe's most demanding courses.",
+  "who_its_for": "Strong, experienced cyclists seeking a serious challenge. The Cymru Classic suits improvers; Gran Fondo and Dragon Devil are for seasoned sportive riders with excellent fitness.",
+  "whats_special": [
+    "UK's most legendary sportive",
+    "2027 Tour de France Grand Départ scenery",
+    "King & Queen of the Mountain timed climbs",
+    "Reversed routes for 2026",
+    "Limited to 4,500 riders"
+  ],
+  "entry": {
+    "method": "tiered-release",
+    "fee": {
+      "amount_from": 75,
+      "amount_to": 125,
+      "currency": "GBP",
+      "notes": "Price varies by route and entry tier"
+    },
+    "registration_url": "https://www.dragonride.co.uk/",
+    "notes": "Final release of places in Spring 2026. Event typically sells out."
+  },
+  "included": [
+    "Fully signed and marshalled route",
+    "Feed stations with nutrition",
+    "Epic finisher medal",
+    "Hot food at finish",
+    "Event village access",
+    "Mechanical support on route"
+  ],
+  "website": "https://www.dragonride.co.uk",
+  "social": {
+    "instagram": "@DragonRideWales",
+    "facebook": "DragonRideWales",
+    "twitter": "@DragonRideWales"
+  },
+  "charity_partner": {
+    "name": "Macmillan Cancer Support",
+    "charity_entry_available": true
+  },
+  "photos": [
+    {
+      "url": "http://sportograf.com/en/event/20400",
+      "source": "Sportograf",
+      "type": "official_photos"
+    }
+  ],
+  "partners": [
+    "Santini",
+    "Wahoo",
+    "High5",
+    "Erdinger Alkoholfrei"
+  ],
+  "enhanced": true,
+  "enhanced_date": "2026-02-07"
+}

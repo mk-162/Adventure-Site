@@ -1,0 +1,44 @@
+{
+  "slug": "tregaron-harness-racing-festival",
+  "title": "Tregaron Festival of Harness Racing",
+  "titleCy": "Gŵyl Rasio Harnes Tregaron",
+  "category": "cultural",
+  "dates": {
+    "fixed": false,
+    "annual": "August Bank Holiday weekend",
+    "note": "Three-day festival on last weekend of August"
+  },
+  "location": {
+    "name": "Tregaron Trotting Track",
+    "region": "Ceredigion",
+    "coordinates": {
+      "lat": 52.2184,
+      "lng": -3.9348
+    }
+  },
+  "description": "The Tregaron Festival of Harness Racing is the UK's biggest celebration of harness racing, drawing competitors and spectators from across Britain and Ireland to this small market town in the heart of Ceredigion. This thrilling three-day festival showcases top-class trotting and pacing, with around 10-12 races per day featuring the finest harness racing horses in the country. The highlight is the prestigious Clasur Cymru (Welsh Classic), where the nation's highest-rated pacers compete in elimination heats and a dramatic final. Set in the stunning Welsh countryside, this action-packed weekend offers something for everyone, combining elite equestrian sport with a festive atmosphere and warm Welsh hospitality.",
+  "heroImage": {
+    "url": "https://www.westwalesholidaycottages.co.uk/uploads/images/attractions/tregaron-trotting.jpg",
+    "alt": "Harness racing at Tregaron Trotting Track",
+    "credit": "Tregaron Trotting Club",
+    "source": "Tregaron Trotting Club"
+  },
+  "socialLinks": {
+    "website": "http://www.tregarontrotting.com/",
+    "facebook": "https://www.facebook.com/TregaronTrotting"
+  },
+  "tags": ["horse-racing", "sport", "festival", "rural", "tradition"],
+  "pricing": {
+    "type": "paid",
+    "note": "Admission charges apply"
+  },
+  "accessibility": {
+    "wheelchairAccessible": true,
+    "note": "Track-side viewing accessible"
+  },
+  "metadata": {
+    "source": "Tregaron Trotting Club",
+    "lastVerified": "2026-02-07",
+    "enhancedBy": "research"
+  }
+}

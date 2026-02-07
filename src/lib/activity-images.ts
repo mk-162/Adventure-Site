@@ -1,6 +1,8 @@
 // Shared utility for resolving activity hero images
 // Used by activity detail pages and itinerary timeline thumbnails
 
+import { attractionImages } from "@/data/attraction-images";
+
 const localActivityImages = new Set([
   "archery", "boat-tour", "caving", "climbing", "coasteering",
   "gorge-scrambling", "gorge-walking", "high-ropes", "hiking",
@@ -85,6 +87,11 @@ export function getActivityHeroImage(
   activitySlug: string,
   activityTypeSlug?: string | null,
 ): string {
+  // Check for specific attraction match first
+  if (attractionImages[activitySlug]) {
+    return attractionImages[activitySlug];
+  }
+
   const typeSlug = resolveActivityTypeSlug(activitySlug, activityTypeSlug);
   if (typeSlug) {
     return `/images/activities/${typeSlug}-hero.jpg`;

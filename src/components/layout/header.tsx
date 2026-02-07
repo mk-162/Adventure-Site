@@ -92,7 +92,7 @@ export function Header() {
         {/* Mobile Menu */}
         <div
           className={`lg:hidden overflow-hidden transition-[max-height] duration-300 ease-out ${
-            mobileMenuOpen ? "max-h-[400px]" : "max-h-0"
+            mobileMenuOpen ? "max-h-[600px]" : "max-h-0"
           }`}
         >
           <nav className="py-4 space-y-2 border-t border-slate-200">
@@ -109,7 +109,7 @@ export function Header() {
                 )}
               </Link>
             ))}
-            <div className="pt-2 px-4 space-y-2">
+            <div className="pt-4 px-4 space-y-3 border-t border-slate-100 mt-2">
               {userLoggedIn ? (
                 <Link
                   href="/my-adventures"
@@ -130,10 +130,10 @@ export function Header() {
               )}
               <Link
                 href="/advertise"
-                className="block w-full py-3 bg-accent-hover text-white text-sm font-bold rounded-lg text-center"
+                className="block w-full py-4 bg-accent-hover hover:bg-orange-600 text-white text-base font-bold rounded-xl text-center shadow-lg shadow-orange-500/25 transition-all"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Advertise
+                🚀 Advertise Your Business
               </Link>
             </div>
           </nav>

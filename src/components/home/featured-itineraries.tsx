@@ -40,14 +40,13 @@ export function FeaturedItineraries({ itineraries }: FeaturedItinerariesProps) {
           </Link>
         </div>
 
-        {/* Horizontal scroll on mobile, grid on desktop */}
-        <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 sm:overflow-visible no-scrollbar">
-          <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 pb-4 sm:pb-0">
+        {/* 2-col grid on mobile, 3-col on desktop */}
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
             {itineraries.map(({ itinerary, region }) => (
               <Link
                 key={itinerary.id}
                 href={`/itineraries/${itinerary.slug}`}
-                className="flex-shrink-0 w-[260px] sm:w-auto group"
+                className="group"
               >
                 <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                   <div

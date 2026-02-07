@@ -1,0 +1,254 @@
+{
+  "name": "Skyline Skydiving Haverfordwest",
+  "slug": "skyline-skydiving-haverfordwest",
+  "tradingName": "Skyline Skydiving - Pembrokeshire",
+  "parentCompany": "Skyline Skydiving / Air Adventures Wales",
+  "website": "https://skylineskydiving.co.uk/prices-locations/wales/",
+  "contact": {
+    "phone": "020 7424 5522",
+    "email": "myskydive@skylineevents.co.uk",
+    "bookingUrl": "https://skylineskydiving.co.uk/book-now/",
+    "address": {
+      "street": "Withybush Airfield",
+      "locality": "Haverfordwest",
+      "town": "Haverfordwest",
+      "county": "Pembrokeshire",
+      "postcode": "SA62 4BW",
+      "country": "Wales"
+    }
+  },
+  "location": {
+    "lat": 51.8336,
+    "lng": -4.9611,
+    "region": "West Wales",
+    "nearestCities": ["Haverfordwest", "Pembroke", "Tenby", "Fishguard"],
+    "landmarks": ["Pembrokeshire Coast National Park", "St Brides Bay", "Skomer Island"]
+  },
+  "images": {
+    "logo": "https://skylineskydiving.co.uk/wp-content/themes/skylineskydiving/assets/img/logo.svg",
+    "cover": null,
+    "gallery": [],
+    "note": "Official images available at skylineskydiving.co.uk and Air Adventures Wales social media"
+  },
+  "description": {
+    "short": "Tandem skydiving in the heart of Pembrokeshire with spectacular coastal views over West Wales from Haverfordwest Airfield.",
+    "full": "Skyline Skydiving operates from Withybush Airfield near Haverfordwest, offering the only skydiving experience in West Wales and Pembrokeshire. Located in the heart of the stunning Pembrokeshire Coast National Park, this dropzone provides some of the most spectacular coastal scenery for skydivers in the UK.\n\nOperating as Air Adventures Wales (part of The Skydive Centre network), this fully licensed skydive centre offers tandem skydiving experiences at extremely competitive rates. The location gives you breathtaking views over the rugged Pembrokeshire coastline, St Brides Bay, and on clear days you can see across to Ireland and the islands of Skomer, Skokholm, and Grassholm.\n\nThe centre specializes in making skydiving accessible and affordable, with tandem jumps from 7,000ft (upgradeable to 10,000ft subject to conditions). Every jump is conducted by experienced, BPA-qualified instructors who prioritize your safety while ensuring you have an unforgettable experience. The airfield operates every weekend (Saturday and Sunday) and Bank Holiday Mondays from March through October.\n\nWhat makes Haverfordwest unique is its coastal location - you're jumping over one of Britain's most beautiful stretches of coastline. The centre is perfect for combining with a Pembrokeshire weekend break, with stunning beaches, coastal walks, and charming towns all nearby. On-site facilities include a café serving hot and cold food and drinks, making it comfortable for jumpers and spectators alike."
+  },
+  "ratings": {
+    "tripadvisor": {
+      "rating": 5.0,
+      "reviewCount": 25,
+      "note": "Air Adventures Wales on TripAdvisor - excellent reviews",
+      "url": "https://www.tripadvisor.co.uk/Attraction_Review-g552047-d19160045-Reviews-Air_Adventures_Wales-Haverfordwest_Pembrokeshire_Wales.html"
+    },
+    "google": {
+      "rating": 4.8,
+      "reviewCount": 45,
+      "note": "Estimated - verify with Google Business Profile"
+    }
+  },
+  "activities": [
+    "Tandem Skydiving (7,000ft)",
+    "Tandem Skydiving (10,000ft - subject to conditions)",
+    "Charity Skydives",
+    "Gift Vouchers",
+    "Group Events"
+  ],
+  "jumpDetails": {
+    "jumpHeights": [
+      {
+        "altitude": 7000,
+        "freefallTime": "15-20 seconds",
+        "totalExperience": "Approx 4-5 minutes from exit to landing"
+      },
+      {
+        "altitude": 10000,
+        "freefallTime": "30 seconds",
+        "totalExperience": "Approx 5-7 minutes from exit to landing",
+        "note": "Upgrade available subject to weather conditions on the day"
+      }
+    ],
+    "aircraft": "Typically Islander or similar twin-engine aircraft",
+    "parachuteSystem": "Tandem rig certified to British Skydiving standards"
+  },
+  "audiences": [
+    "First-time skydivers",
+    "Adventure seekers",
+    "Charity fundraisers",
+    "Pembrokeshire tourists",
+    "Weekend warriors",
+    "Gift experience recipients"
+  ],
+  "accreditations": [
+    {
+      "name": "British Skydiving",
+      "fullName": "British Skydiving (formerly BPA)",
+      "description": "Fully licensed and insured skydive centre"
+    }
+  ],
+  "features": {
+    "accommodation": false,
+    "accommodationNearby": "Haverfordwest town centre has hotels, B&Bs, and camping - 10 mins away",
+    "onSiteActivities": true,
+    "catering": true,
+    "cafeFacilities": "Café on site serving hot and cold food and drinks",
+    "freeWifi": false,
+    "parking": "Free parking available",
+    "viewingAreas": true,
+    "groupDiscounts": true,
+    "giftVouchers": true,
+    "videoPackages": true,
+    "vrExperience": "VR headset option for reliving your jump",
+    "charityJumps": true
+  },
+  "requirements": {
+    "minAge": 16,
+    "minAgeNote": "Under 18s require parental consent and BPA medical form witnessed by parent/guardian",
+    "maxAge": null,
+    "maxAgeNote": "Over 40s require BPA medical form 115A. Over 70s require GP sign-off",
+    "minWeight": "7 stone (44kg)",
+    "maxWeight": "15 stone for men, 13 stone for women",
+    "weightNote": "Strict weight limits - must be proportionate to height. Haverfordwest has lower limits than some centres.",
+    "minHeight": "4ft 11in (150cm)",
+    "healthRestrictions": [
+      "Must complete BPA medical declaration form",
+      "GP approval required for certain conditions",
+      "No skydiving if pregnant",
+      "No alcohol 24 hours before jump",
+      "Reasonable fitness required"
+    ],
+    "whatToWear": "Comfortable clothing, trainers or boots, warm layers for altitude"
+  },
+  "operatingSchedule": {
+    "season": "March - October",
+    "days": "Saturday, Sunday, and Bank Holiday Mondays",
+    "weatherDependent": true,
+    "note": "All jumps weather-dependent. Contact centre if uncertain about weather."
+  },
+  "pricing": {
+    "tandem7k": {
+      "price": 250,
+      "deposit": 50,
+      "balance": 200,
+      "currency": "GBP"
+    },
+    "tandem10k": {
+      "price": null,
+      "note": "Upgrade available on the day subject to conditions - enquire for pricing"
+    },
+    "videoPackages": {
+      "basic": 80,
+      "handcam": 119,
+      "freefall": 140,
+      "vrExperience": "VR headset option available",
+      "currency": "GBP",
+      "note": "Various video and photo packages available from £80"
+    },
+    "charityJump": {
+      "minimumSponsorship": 395,
+      "note": "Jump for free when you raise £395+ for charity"
+    },
+    "groupDiscounts": "Contact for group bookings",
+    "giftVouchers": "Available - valid 12 months"
+  },
+  "views": {
+    "primary": "Pembrokeshire Coast National Park",
+    "secondary": ["St Brides Bay", "Skomer Island", "Ramsey Island", "Irish Sea", "Preseli Hills"],
+    "clearDayViews": "Ireland, Wicklow Mountains, Pembrokeshire islands",
+    "description": "The only coastal skydive in West Wales - jump over the stunning Pembrokeshire coastline with views across to Ireland"
+  },
+  "whatMakesItSpecial": [
+    "Only skydive location in West Wales / Pembrokeshire",
+    "Spectacular coastal and island views",
+    "Jump over Pembrokeshire Coast National Park",
+    "Most affordable skydiving option in Wales (£250 for 7k jump)",
+    "Perfect add-on to a Pembrokeshire coastal holiday",
+    "Small, friendly operation with personal touch",
+    "VR experience option to relive your jump",
+    "Charity jump specialists - raise funds while you fly"
+  ],
+  "socialMedia": {
+    "facebook": "https://www.facebook.com/AirAdventuresWales/",
+    "instagram": null,
+    "note": "Operated by Air Adventures Wales / The Skydive Centre"
+  },
+  "bookingProcess": {
+    "steps": [
+      "Book online at skylineskydiving.co.uk or call 020 7424 5522",
+      "Choose your preferred date",
+      "Pay £50 deposit (balance on the day)",
+      "Receive confirmation and joining instructions",
+      "Arrive at Withybush Airfield, Haverfordwest",
+      "Complete registration and training briefing",
+      "Meet your tandem instructor and get kitted up",
+      "Board the aircraft and enjoy the scenic climb",
+      "Exit the plane and experience freefall!",
+      "Parachute opens around 5,000ft",
+      "Enjoy the coastal views on your descent",
+      "Land and celebrate your achievement!"
+    ],
+    "arrivalTime": "Arrive at your booked slot - allow 3-4 hours total",
+    "cancellationPolicy": "£50 deposit non-refundable. Free rescheduling up to 4 weeks before. £50 fee within 4 weeks, £100 within 7 days."
+  },
+  "faqs": [
+    {
+      "question": "Why is Haverfordwest cheaper than other dropzones?",
+      "answer": "The standard jump is from 7,000ft rather than 10,000ft+ at other centres, giving you a shorter freefall but still an incredible experience. You can upgrade to 10,000ft on the day if conditions allow."
+    },
+    {
+      "question": "Can I combine this with a Pembrokeshire holiday?",
+      "answer": "Absolutely! This is perfect for adding adventure to a coastal break. Tenby, St Davids, and stunning beaches are all within 30 minutes."
+    },
+    {
+      "question": "What makes the views special here?",
+      "answer": "You're jumping over the Pembrokeshire Coast National Park - one of the UK's most beautiful coastlines. On clear days you can see across to Ireland and the offshore islands."
+    },
+    {
+      "question": "Is the lower weight limit a problem?",
+      "answer": "The 15 stone (men) / 13 stone (women) limit is stricter than some centres, but it's for safety with the specific aircraft and conditions used here. Check before booking if you're close to the limit."
+    }
+  ],
+  "founded": null,
+  "foundedNote": "Part of The Skydive Centre network and operated locally as Air Adventures Wales",
+  "localArea": {
+    "attractions": [
+      "Pembrokeshire Coast Path",
+      "St Davids - Britain's smallest city",
+      "Tenby - historic walled town",
+      "Skomer Island - puffins and seabirds",
+      "Barafundle Bay - one of UK's best beaches",
+      "Pembroke Castle"
+    ],
+    "description": "Haverfordwest is the gateway to Pembrokeshire's stunning coastline, charming towns, and outdoor adventures"
+  },
+  "metadata": {
+    "researchedAt": "2026-02-07",
+    "sources": [
+      "https://skylineskydiving.co.uk/prices-locations/wales/",
+      "https://www.skydivecentre.com/skydivinglocations/skydiving-haverfordwest-pembrokeshire.htm",
+      "https://www.tripadvisor.co.uk/Attraction_Review-g552047-d19160045-Reviews-Air_Adventures_Wales-Haverfordwest_Pembrokeshire_Wales.html",
+      "https://wanderlog.com/place/details/12626138/air-adventures-wales"
+    ],
+    "needsVerification": [
+      "Exact 10,000ft upgrade pricing",
+      "VR experience details and pricing",
+      "Current aircraft type",
+      "Specific video package breakdown",
+      "High-res official photos"
+    ],
+    "instagramHashtags": ["#skylineskydiving", "#pembrokeshire", "#haverfordwest", "#skydivewales"],
+    "photographySources": [
+      "Skyline Skydiving website",
+      "Air Adventures Wales Facebook",
+      "TripAdvisor customer photos",
+      "Search #pembrokeshireskydiving on Instagram"
+    ],
+    "notes": [
+      "This is the ONLY skydiving operation in West Wales/Pembrokeshire",
+      "Lower weight limits than most UK centres - important to note",
+      "Great value at £250 for 7k jump",
+      "Perfect tourism add-on for Pembrokeshire visitors",
+      "Spectacular coastal views make it worthwhile despite lower jump height"
+    ]
+  }
+}

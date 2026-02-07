@@ -1,0 +1,233 @@
+{
+  "name": "Skydive Swansea (GoSkydive)",
+  "slug": "skydive-swansea",
+  "tradingName": "GoSkydive - Swansea Dropzone",
+  "website": "https://www.goskydive.com/skydive-swansea/",
+  "contact": {
+    "phone": "0333 005 0050",
+    "email": "info@goskydive.com",
+    "bookingUrl": "https://www.goskydive.com/jump-options-prices/",
+    "address": {
+      "street": "Swansea Airport",
+      "locality": "Fairwood Common",
+      "town": "Swansea",
+      "county": "Swansea",
+      "postcode": "SA2 7JU",
+      "country": "Wales"
+    }
+  },
+  "location": {
+    "lat": 51.6053,
+    "lng": -4.0678,
+    "region": "South Wales",
+    "nearestCities": ["Swansea", "Cardiff", "Port Talbot"],
+    "landmarks": ["Gower Peninsula", "Bristol Channel", "Mumbles"]
+  },
+  "images": {
+    "logo": "https://www.goskydive.com/wp-content/themes/goskydive/assets/images/logo.svg",
+    "cover": null,
+    "gallery": [],
+    "note": "Official images available at goskydive.com - check media gallery and Instagram @goskydive"
+  },
+  "description": {
+    "short": "Experience the thrill of tandem skydiving over the stunning Gower Peninsula and Bristol Channel at Wales' premier dropzone with GoSkydive.",
+    "full": "GoSkydive's Swansea dropzone offers the ultimate skydiving experience over one of Wales' most beautiful coastal landscapes. Located at Swansea Airport, just 6 miles from Swansea city centre, this is the newest addition to the GoSkydive family and brings world-class skydiving to South Wales.\n\nWith jumps available from both 10,000ft and 15,000ft, you'll experience between 30-60 seconds of breathtaking freefall at speeds of up to 125mph before your parachute opens and you glide peacefully back to earth. The views are spectacular - soar above the stunning Gower Peninsula coastline, the glittering Bristol Channel, and on clear days you can see across to Devon and Cornwall.\n\nGoSkydive is one of the UK's leading tandem skydiving operators with tens of thousands of successful jumps. Every instructor is highly experienced and qualified, ensuring your safety while making sure you have the time of your life. The dropzone operates every weekend (Saturday and Sunday) from March through November, plus weekdays for larger groups and bank holiday Mondays.\n\nWhether you're jumping for the first time, doing a charity skydive, or gifting an experience to someone special, Swansea offers convenient access from across Wales and the West of England. The site has café facilities on-site, ample parking, and a welcoming atmosphere perfect for nervous first-timers and excited thrill-seekers alike."
+  },
+  "ratings": {
+    "trustpilot": {
+      "rating": 4.8,
+      "reviewCount": 5000,
+      "note": "GoSkydive company-wide rating - verify specific Swansea reviews",
+      "url": "https://www.trustpilot.com/review/goskydive.com"
+    },
+    "google": {
+      "rating": 4.9,
+      "reviewCount": 200,
+      "note": "Estimated - verify with Google Business Profile"
+    }
+  },
+  "activities": [
+    "Tandem Skydiving (10,000ft)",
+    "Tandem Skydiving (15,000ft)",
+    "Charity Skydives",
+    "Group Skydiving Events",
+    "Gift Experience Vouchers"
+  ],
+  "jumpDetails": {
+    "jumpHeights": [
+      {
+        "altitude": 10000,
+        "freefallTime": "30-40 seconds",
+        "totalExperience": "Approx 5-7 minutes from exit to landing"
+      },
+      {
+        "altitude": 15000,
+        "freefallTime": "60 seconds",
+        "totalExperience": "Approx 7-9 minutes from exit to landing",
+        "note": "Upgrade available - arrange with dropzone after booking"
+      }
+    ],
+    "aircraft": "Various (typically Cessna Caravan or similar)",
+    "parachuteSystem": "Tandem rig certified to British Skydiving standards"
+  },
+  "audiences": [
+    "First-time skydivers",
+    "Thrill-seekers",
+    "Charity fundraisers",
+    "Gift experience recipients",
+    "Groups & celebrations",
+    "Bucket list adventurers"
+  ],
+  "accreditations": [
+    {
+      "name": "British Skydiving",
+      "fullName": "British Skydiving (formerly BPA)",
+      "description": "Member club operating under British Skydiving regulations"
+    }
+  ],
+  "features": {
+    "accommodation": false,
+    "onSiteActivities": true,
+    "catering": true,
+    "cafeFacilities": "Café and bar on site at Swansea Airport",
+    "freeWifi": true,
+    "parking": "Free parking available",
+    "viewingAreas": true,
+    "groupDiscounts": true,
+    "giftVouchers": true,
+    "videoPackages": true,
+    "charityJumps": true
+  },
+  "requirements": {
+    "minAge": 16,
+    "minAgeNote": "Under 18s require parental consent and BPA medical form witnessed by parent/guardian",
+    "maxAge": null,
+    "maxAgeNote": "Aged 40-69 require medical form 115A. Aged 70+ require pre-booking assessment and GP sign-off",
+    "minWeight": "7 stone (44kg)",
+    "maxWeight": "18 stone (114kg)",
+    "weightNote": "Surcharge applies: £10 for 15-16st, £20 for 16-17st, £30 for 17-18st. Weight must be proportionate to height.",
+    "minHeight": "4ft 11in (150cm)",
+    "healthRestrictions": [
+      "Must complete BPA medical declaration form",
+      "Certain medical conditions require GP approval",
+      "No skydiving if pregnant",
+      "No alcohol or drugs 24 hours before jump",
+      "Reasonable fitness level required"
+    ],
+    "whatToWear": "Comfortable clothes you can move in, trainers or boots (no sandals), layers for cooler weather at altitude"
+  },
+  "operatingSchedule": {
+    "season": "March - November",
+    "days": "Saturday and Sunday, plus Bank Holidays",
+    "groupBookings": "Weekdays available for larger groups",
+    "weatherDependent": true,
+    "note": "All jumps are weather-dependent. Contact dropzone on day of jump if uncertain."
+  },
+  "pricing": {
+    "tandem10k": {
+      "price": 269,
+      "deposit": 50,
+      "balance": 219,
+      "currency": "GBP"
+    },
+    "tandem15k": {
+      "price": null,
+      "note": "Upgrade available - contact for pricing"
+    },
+    "videoPackages": {
+      "handcam": 119,
+      "freefall": 169,
+      "both": 209,
+      "currency": "GBP",
+      "note": "Highly recommended - capture your jump!"
+    },
+    "charityJump": {
+      "minimumSponsorship": 395,
+      "note": "Jump for free when you raise £395+ for a partnered charity"
+    },
+    "groupDiscounts": "Available - contact for pricing",
+    "giftVouchers": "Available - valid 12 months"
+  },
+  "views": {
+    "primary": "Gower Peninsula coastline",
+    "secondary": ["Bristol Channel", "Mumbles", "Three Cliffs Bay", "Rhossili Bay", "Swansea Bay"],
+    "clearDayViews": "Devon, Cornwall, Brecon Beacons",
+    "description": "One of the UK's most scenic coastal skydives with panoramic views of the Gower Peninsula's golden beaches and dramatic coastline"
+  },
+  "whatMakesItSpecial": [
+    "Only skydive location in South Wales at Swansea",
+    "Spectacular coastal views over Gower Peninsula",
+    "Part of GoSkydive - UK's leading tandem operator",
+    "Easy access from Cardiff, Swansea, and M4 corridor",
+    "15,000ft jumps available for maximum freefall time",
+    "Professional video packages to capture every moment",
+    "Experienced, friendly instructors with thousands of jumps",
+    "Café facilities and free parking on site"
+  ],
+  "socialMedia": {
+    "instagram": "https://www.instagram.com/goskydive/",
+    "facebook": "https://www.facebook.com/GoSkydive/",
+    "twitter": "https://twitter.com/goskydive",
+    "youtube": "https://www.youtube.com/@GoSkydive"
+  },
+  "bookingProcess": {
+    "steps": [
+      "Book online at goskydive.com or call 0333 005 0050",
+      "Choose your jump date (subject to availability)",
+      "Pay £50 deposit (balance due on the day)",
+      "Receive confirmation email with all details",
+      "Arrive at Swansea Airport on your jump day",
+      "Complete registration and safety briefing (30-45 mins)",
+      "Get kitted up and meet your instructor",
+      "Board the aircraft and enjoy the scenic flight up",
+      "JUMP! Experience the thrill of freefall",
+      "Parachute ride back to earth with stunning views",
+      "Land safely and celebrate your achievement!"
+    ],
+    "arrivalTime": "Arrive at your booked time slot - allow 3-4 hours total",
+    "cancellationPolicy": "£50 deposit non-refundable. Free rescheduling up to 4 weeks before jump. £50 fee within 4 weeks, £100 fee within 7 days."
+  },
+  "faqs": [
+    {
+      "question": "Is it safe?",
+      "answer": "Yes! Tandem skydiving is very safe. GoSkydive has an excellent safety record with thousands of successful jumps. All equipment is regularly serviced and your instructor is highly experienced and qualified."
+    },
+    {
+      "question": "How long does it take?",
+      "answer": "Allow 3-4 hours from arrival to finish. This includes registration, training, kitting up, the flight, the jump, and landing. The freefall itself is 30-60 seconds depending on altitude."
+    },
+    {
+      "question": "What if the weather is bad?",
+      "answer": "Skydiving is weather-dependent. If conditions aren't suitable, you'll be contacted to reschedule. Always check with the dropzone on the day if you're unsure."
+    },
+    {
+      "question": "Can I bring spectators?",
+      "answer": "Absolutely! Friends and family are welcome to watch. There's a viewing area and café facilities on site."
+    }
+  ],
+  "founded": 2023,
+  "foundedNote": "Newest addition to GoSkydive family (GoSkydive established 2005)",
+  "metadata": {
+    "researchedAt": "2026-02-07",
+    "sources": [
+      "https://www.goskydive.com/skydive-swansea/",
+      "https://www.goskydive.com/jump-options-prices/",
+      "https://www.goskydive.com/the-experience/",
+      "https://www.goskydive.com/faq/",
+      "https://www.goskydive.com/dropzone/skydive-centre-swansea/"
+    ],
+    "needsVerification": [
+      "Exact pricing for 15,000ft upgrade",
+      "Google Business Profile reviews",
+      "Specific aircraft models used",
+      "High-res official images for gallery"
+    ],
+    "instagramHashtags": ["#skydiveswansea", "#goskydive", "#tandemskydive", "#gowerpeninsula"],
+    "photographySources": [
+      "Official GoSkydive website gallery",
+      "GoSkydive Instagram @goskydive",
+      "Search #skydiveswansea on Instagram",
+      "Customer photos on TripAdvisor/Facebook reviews"
+    ]
+  }
+}

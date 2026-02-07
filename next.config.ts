@@ -36,6 +36,28 @@ const nextConfig: NextConfig = {
         destination: '/stag-hen',
         permanent: true,
       },
+      // Activity hub redirects - old routes to new hub pages
+      {
+        source: '/activities/type/:slug',
+        destination: '/:slug',
+        permanent: true,
+      },
+      {
+        source: '/activities/:slug',
+        destination: '/:slug',
+        permanent: true,
+      },
+      // SUP redirect to paddleboarding
+      {
+        source: '/sup',
+        destination: '/paddleboarding',
+        permanent: true,
+      },
+      {
+        source: '/sea-kayaking',
+        destination: '/kayaking',
+        permanent: true,
+      },
     ];
   },
 };

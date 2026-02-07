@@ -14,6 +14,9 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Stag & Hen Weekends in Wales | Adventure Wales",
   description: "Plan the ultimate stag or hen party in Wales. Adventure packages, city nightlife, and group-friendly activities from Cardiff to Snowdonia.",
+  alternates: {
+    canonical: "https://adventurewales.co.uk/stag-hen",
+  },
 };
 
 export default async function StagHenPage() {

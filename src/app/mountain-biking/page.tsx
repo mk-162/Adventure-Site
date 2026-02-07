@@ -36,6 +36,9 @@ import { JsonLd, createTouristDestinationSchema, createBreadcrumbSchema, createF
 export const metadata: Metadata = {
   title: mountainBikingHub.metaTitle,
   description: mountainBikingHub.metaDescription,
+  alternates: {
+    canonical: "https://adventurewales.co.uk/mountain-biking",
+  },
   openGraph: {
     title: mountainBikingHub.metaTitle,
     description: mountainBikingHub.metaDescription,

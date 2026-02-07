@@ -87,8 +87,8 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
       // Region only → /snowdonia
       window.location.href = `/${where}`;
     } else if (what) {
-      // Activity only → /search?activity=hiking (no region-specific page for this)
-      window.location.href = `/search?activity=${what}`;
+      // Activity only → hub page like /hiking
+      window.location.href = `/${what}`;
     } else {
       // Nothing selected → browse all regions
       window.location.href = `/regions`;

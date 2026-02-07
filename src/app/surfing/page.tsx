@@ -37,6 +37,9 @@ import { JsonLd, createTouristDestinationSchema, createBreadcrumbSchema } from "
 export const metadata: Metadata = {
   title: surfingHub.metaTitle,
   description: surfingHub.metaDescription,
+  alternates: {
+    canonical: "https://adventurewales.co.uk/surfing",
+  },
   openGraph: {
     title: surfingHub.metaTitle,
     description: surfingHub.metaDescription,

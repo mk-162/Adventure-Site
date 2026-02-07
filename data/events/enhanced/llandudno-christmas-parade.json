@@ -17,7 +17,10 @@
   "dates": {
     "typical": "First Saturday of December",
     "season2025": "Saturday 6 December 2025, 4pm",
-    "startTime": "4pm from Llandudno Railway Station"
+    "startTime": "4pm from Llandudno Railway Station",
+    "year": 2026,
+    "date": "2026-11-21",
+    "recurring": "Third Saturday of November"
   },
   "pricing": {
     "type": "free",
@@ -56,5 +59,6 @@
     "notes": "Street-level viewing along parade route"
   },
   "familyFriendly": true,
-  "dogFriendly": true
+  "dogFriendly": true,
+  "lastVerified": "2026-02-07"
 }

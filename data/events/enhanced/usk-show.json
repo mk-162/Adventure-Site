@@ -1,14 +1,17 @@
 {
   "slug": "usk-show",
   "name": "Usk Show",
-  "coordinates": { "lat": 51.7033, "lng": -2.8751 },
+  "coordinates": {
+    "lat": 51.7033,
+    "lng": -2.8751
+  },
   "heroImage": {
     "url": "https://www.uskshow.co.uk/wp-content/uploads/2019/02/usk-show-horse-show.jpg",
     "alt": "Usk Show horse competition with riders in the main arena",
     "source": "Usk Show",
     "attribution": null
   },
-  "description": "Since 1844, every second Saturday in September, Usk Farmers' Club has hosted what's become one of the biggest one-day agricultural shows in the entire UK. Spread across 100 acres near picturesque Gwernesney, the show features eleven competition sections—from cattle and sheep to showjumping and the ever-popular companion dog show. Marvel at Bob Hogg's legendary Dog & Duck display, browse 300+ trade stands, and feast your way through the craft marquee and food market. It's Monmouthshire farming at its finest, with enough attractions to keep the whole family entertained from gates-open at 8am.",
+  "description": "Since 1844, every second Saturday in September, Usk Farmers' Club has hosted what's become one of the biggest one-day agricultural shows in the entire UK. Spread across 100 acres near picturesque Gwernesney, the show features eleven competition sections—from cattle and sheep to showjumping and the ever-popular companion dog show. Marvel at Bob Hogg's legendary Dog & Duck display, browse 300+ trade stands, and feast your way through the craft marquee and food market. It's Monmouthshire farming at its finest, with enough attractions to keep the whole family entertained from gates-open at 8am. This charming show features livestock competitions, craft exhibitions, vintage machinery, and family entertainment, drawing visitors from across Monmouthshire and the Welsh Borders.",
   "socialLinks": {
     "facebook": "https://en-gb.facebook.com/usk.show/",
     "instagram": null,
@@ -34,6 +37,9 @@
   },
   "nearbyOperators": [],
   "lastVerified": "2026-02-07",
-  "sourceUrls": ["https://www.uskshow.co.uk/"],
-  "confidence": "high"
+  "sourceUrls": [
+    "https://www.uskshow.co.uk/"
+  ],
+  "confidence": "high",
+  "website": "https://www.uskshow.co.uk/"
 }

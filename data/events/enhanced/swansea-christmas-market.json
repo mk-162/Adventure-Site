@@ -17,13 +17,17 @@
   "dates": {
     "typical": "Late November to 22 December",
     "season2025": "29 November - 22 December 2025",
-    "openingHours": "Mon-Sat 9:30am-5pm, Sun 10:30am-4:30pm"
+    "openingHours": "Mon-Sat 9:30am-5pm, Sun 10:30am-4:30pm",
+    "year": 2026,
+    "start": "2026-11-14",
+    "end": "2026-12-24",
+    "recurring": "Mid-November to Christmas Eve"
   },
   "pricing": {
     "type": "free",
     "notes": "Free entry to browse the market"
   },
-  "description": "Swansea Christmas Market brings festive magic to Wales' second city with a charming collection of traditional chalets lining Oxford Street and Portland Street. Talented local crafters, traditional traders, and delicious street food vendors create an authentic Christmas shopping experience in the heart of Swansea. The Alpine Bar offers a cosy retreat with sheltered seating, deluxe hot chocolates, and warming mulled wine—the perfect treat after browsing the stalls. The Caroller's Cabin serves as the hub for festive entertainment, hosting school choirs and carol singers throughout the season, while also providing a sparkly Santa scene for magical family photos.",
+  "description": "Swansea Christmas Market brings festive magic to Wales' second city with a charming collection of traditional chalets lining Oxford Street and Portland Street. Talented local crafters, traditional traders, and delicious street food vendors create an authentic Christmas shopping experience in the heart of Swansea. The Alpine Bar offers a cosy retreat with sheltered seating, deluxe hot chocolates, and warming mulled wine—the perfect treat after browsing the stalls. The Caroller's Cabin serves as the hub for festive entertainment, hosting school choirs and carol singers throughout the season, while also providing a sparkly Santa scene for magical family photos. The market brings a taste of European Christmas traditions to the heart of Swansea.",
   "highlights": [
     "Traditional wooden chalets",
     "Local crafters and artisans",
@@ -47,5 +51,6 @@
     "notes": "City centre pedestrian area"
   },
   "familyFriendly": true,
-  "dogFriendly": true
+  "dogFriendly": true,
+  "lastVerified": "2026-02-07"
 }

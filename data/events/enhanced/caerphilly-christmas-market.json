@@ -17,7 +17,11 @@
   "dates": {
     "typical": "Last Saturday of November",
     "season2025": "Saturday 29 November 2025",
-    "openingHours": "9am-6pm"
+    "openingHours": "9am-6pm",
+    "year": 2026,
+    "start": "2026-11-21",
+    "end": "2026-12-23",
+    "recurring": "Late November to Christmas"
   },
   "pricing": {
     "type": "free",
@@ -57,5 +61,6 @@
     "coachParking": "Available with advance booking"
   },
   "familyFriendly": true,
-  "dogFriendly": true
+  "dogFriendly": true,
+  "lastVerified": "2026-02-07"
 }

@@ -17,7 +17,11 @@
   "dates": {
     "typical": "Second weekend of November",
     "season2025": "8-9 November 2025",
-    "openingHours": "All day Saturday and Sunday"
+    "openingHours": "All day Saturday and Sunday",
+    "year": 2026,
+    "start": "2026-12-05",
+    "end": "2026-12-06",
+    "recurring": "First weekend of December"
   },
   "pricing": {
     "type": "ticketed",
@@ -60,5 +64,6 @@
   },
   "organizer": "Anglesey Agricultural Society",
   "familyFriendly": true,
-  "dogFriendly": false
+  "dogFriendly": false,
+  "lastVerified": "2026-02-07"
 }

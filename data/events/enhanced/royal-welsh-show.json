@@ -1,14 +1,17 @@
 {
   "slug": "royal-welsh-show",
   "name": "Royal Welsh Show",
-  "coordinates": { "lat": 52.1581, "lng": -3.4076 },
+  "coordinates": {
+    "lat": 52.1581,
+    "lng": -3.4076
+  },
   "heroImage": {
     "url": "https://rwas.wales/wp-content/uploads/2024/07/RWS24-Day-4-148.jpg",
     "alt": "Crowds enjoying the Royal Welsh Show main arena with livestock parade",
     "source": "Royal Welsh Agricultural Society",
     "attribution": "RWAS"
   },
-  "description": "The pinnacle event in the British agricultural calendar, the Royal Welsh Show transforms the Llanelwedd showground into Wales's largest temporary town for four glorious days each July. This isn't just a show—it's where farming heritage meets festival atmosphere, with prize-winning livestock parading alongside thrilling equestrian displays, forestry demonstrations, and countryside sports. Explore over 1,000 trade stands, discover artisan Welsh food producers, and experience the heart of rural Wales. Whether you're a farming family checking out the latest machinery or visitors seeking an authentic Welsh day out, the Royal Welsh delivers memories that last far beyond the final rosette.",
+  "description": "The pinnacle event in the British agricultural calendar, the Royal Welsh Show transforms the Llanelwedd showground into Wales's largest temporary town for four glorious days each July. This isn't just a show—it's where farming heritage meets festival atmosphere, with prize-winning livestock parading alongside thrilling equestrian displays, forestry demonstrations, and countryside sports. Explore over 1,000 trade stands, discover artisan Welsh food producers, and experience the heart of rural Wales. Whether you're a farming family checking out the latest machinery or visitors seeking an authentic Welsh day out, the Royal Welsh delivers memories that last far beyond the final rosette. Entry tickets include access to all arenas, exhibitions, and demonstrations, making it exceptional value for a full day out.",
   "socialLinks": {
     "facebook": "https://www.facebook.com/RoyalWelshAgriculturalSociety",
     "instagram": "https://www.instagram.com/royal_welsh_show/",
@@ -34,6 +37,10 @@
   },
   "nearbyOperators": [],
   "lastVerified": "2026-02-07",
-  "sourceUrls": ["https://rwas.wales/royal-welsh-show/", "https://rwas.ticketsrv.co.uk/tickets/1491"],
-  "confidence": "high"
+  "sourceUrls": [
+    "https://rwas.wales/royal-welsh-show/",
+    "https://rwas.ticketsrv.co.uk/tickets/1491"
+  ],
+  "confidence": "high",
+  "website": "https://rwas.wales/royal-welsh-show/"
 }

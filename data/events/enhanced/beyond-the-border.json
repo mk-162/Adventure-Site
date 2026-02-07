@@ -3,9 +3,11 @@
   "name": "Beyond the Border International Storytelling Festival",
   "category": "cultural",
   "dates": {
-    "start": "2027-07-02",
-    "end": "2027-07-04",
-    "note": "Biennial festival - held every odd year (2025, 2027, etc.)"
+    "start": "2026-07-03",
+    "end": "2026-07-05",
+    "note": "Biennial festival - held every odd year (2025, 2027, etc.)",
+    "year": 2026,
+    "recurring": "First weekend of July"
   },
   "location": {
     "name": "Dinefwr Castle & Newton House",
@@ -32,5 +34,13 @@
     "twitter": "https://twitter.com/btbstorytelling",
     "youtube": "https://www.youtube.com/BTBStorytelling"
   },
-  "tags": ["storytelling", "oral tradition", "myths", "legends", "folklore", "world cultures"]
+  "tags": [
+    "storytelling",
+    "oral tradition",
+    "myths",
+    "legends",
+    "folklore",
+    "world cultures"
+  ],
+  "lastVerified": "2026-02-07"
 }

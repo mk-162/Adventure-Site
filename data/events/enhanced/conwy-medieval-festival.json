@@ -6,7 +6,11 @@
   "dates": {
     "fixed": false,
     "annual": "December",
-    "note": "Usually first weekend of December"
+    "note": "Usually first weekend of December",
+    "year": 2026,
+    "start": "2026-05-23",
+    "end": "2026-05-25",
+    "recurring": "Late May Bank Holiday weekend"
   },
   "location": {
     "name": "Conwy Town Centre",
@@ -28,7 +32,14 @@
     "website": "https://www.visitconwy.org.uk/whats-on",
     "facebook": "https://www.facebook.com/conwymedievalchristmas"
   },
-  "tags": ["christmas", "parade", "medieval", "heritage", "family", "torchlit"],
+  "tags": [
+    "christmas",
+    "parade",
+    "medieval",
+    "heritage",
+    "family",
+    "torchlit"
+  ],
   "pricing": {
     "type": "free",
     "note": "Free street event"
@@ -41,5 +52,7 @@
     "source": "Visit Conwy",
     "lastVerified": "2026-02-07",
     "enhancedBy": "research"
-  }
+  },
+  "website": "https://www.visitconwy.org.uk/",
+  "lastVerified": "2026-02-07"
 }

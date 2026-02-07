@@ -27,7 +27,14 @@
     "website": "https://www.discoverceredigion.wales/",
     "facebook": "https://www.facebook.com/visitcardigan"
   },
-  "tags": ["tradition", "horses", "parade", "heritage", "rural", "free"],
+  "tags": [
+    "tradition",
+    "horses",
+    "parade",
+    "heritage",
+    "rural",
+    "free"
+  ],
   "pricing": {
     "type": "free",
     "note": "Free street event"
@@ -40,5 +47,7 @@
     "source": "Visit Wales / Discover Ceredigion",
     "lastVerified": "2026-02-07",
     "enhancedBy": "research"
-  }
+  },
+  "website": "https://www.visitcardigan.com/barley-saturday/",
+  "lastVerified": "2026-02-07"
 }

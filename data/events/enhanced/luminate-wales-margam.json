@@ -17,7 +17,11 @@
   "dates": {
     "typical": "Mid-November to New Year's Eve",
     "season2025": "17 November - 31 December 2025",
-    "openingHours": "Entry from 4:30pm to 8pm daily"
+    "openingHours": "Entry from 4:30pm to 8pm daily",
+    "year": 2026,
+    "start": "2026-11-20",
+    "end": "2027-01-03",
+    "recurring": "Late November to early January"
   },
   "pricing": {
     "type": "ticketed",
@@ -59,5 +63,6 @@
     "notes": "On-site parking, charges may apply"
   },
   "familyFriendly": true,
-  "dogFriendly": true
+  "dogFriendly": true,
+  "lastVerified": "2026-02-07"
 }

@@ -19,12 +19,12 @@
       "lng": -4.19583
     }
   },
-  "description": "SpookWood transforms North Wales' award-winning eco-park into a family-friendly Halloween wonderland. Wander enchanting forest paths adorned with spectacular giant pumpkins, meet friendly witches and wizards, and enjoy spooky-themed activities throughout the woodland setting. Young adventurers can tackle the haunted BareFoot Trail, ride the Green Dragon Roller Coaster in costume, and explore magical TreeTop Towers. The Solar Splash water ride becomes delightfully eerie, while craft activities let little ones create their own Halloween treasures. With all regular rides and attractions open plus special seasonal entertainment, SpookWood delivers thrills without terrors—perfect for families seeking autumnal fun beneath Snowdonia's colourful canopy.",
+  "description": "SpookWood transforms North Wales' award-winning eco-park into a family-friendly Halloween wonderland. Wander enchanting forest paths adorned with spectacular giant pumpkins, meet friendly witches and wizards, and enjoy spooky-themed activities throughout the woodland setting. Young adventurers can tackle the haunted BareFoot Trail, ride the Green Dragon Roller Coaster in costume, and explore magical TreeTop Towers. The Solar Splash water ride becomes delightfully eerie, while craft activities let little ones create their own Halloween treasures. With all regular rides and attractions open plus special seasonal entertainment, SpookWood delivers thrills without terrors—perfect for families seeking autumnal fun beneath Snowdonia's colourful canopy. The park transforms with seasonal decorations and special activities that bring the magic of autumn to life.",
   "entry": {
     "type": "paid",
-    "adultPrice": 10.00,
-    "childPrice": 10.00,
-    "familyPrice": 95.00,
+    "adultPrice": 10,
+    "childPrice": 10,
+    "familyPrice": 95,
     "notes": "Family bundle for 4 people. Under 18 months free. Online booking recommended."
   },
   "heroImage": {

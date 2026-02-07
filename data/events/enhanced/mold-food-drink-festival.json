@@ -14,11 +14,11 @@
     "town": "Mold",
     "region": "north-wales",
     "coordinates": {
-      "lat": 53.1680,
-      "lng": -3.1380
+      "lat": 53.168,
+      "lng": -3.138
     }
   },
-  "description": "Celebrating its landmark 20th year in 2026, Mold Food & Drink Festival has grown into North Wales's premier food celebration. The two-day event transforms Mold town centre into a foodie paradise with exhibition stands from local producers, a dedicated cookery theatre featuring chef demonstrations, and a lively music stage with bands performing throughout the weekend. Run by a dedicated volunteer committee, this community-driven festival showcases the best of Welsh and regional produce. From artisan cheeses to craft beers, fresh bakes to street food, there's something to tempt every palate in this friendly Flintshire market town.",
+  "description": "Celebrating its landmark 20th year in 2026, Mold Food & Drink Festival has grown into North Wales's premier food celebration. The two-day event transforms Mold town centre into a foodie paradise with exhibition stands from local producers, a dedicated cookery theatre featuring chef demonstrations, and a lively music stage with bands performing throughout the weekend. Run by a dedicated volunteer committee, this community-driven festival showcases the best of Welsh and regional produce. From artisan cheeses to craft beers, fresh bakes to street food, there's something to tempt every palate in this friendly Flintshire market town. The festival transforms Mold's historic streets into a celebration of local producers and culinary talent.",
   "entry": {
     "type": "paid",
     "notes": "Tickets available via Ticketebo"

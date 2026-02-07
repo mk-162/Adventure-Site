@@ -20,7 +20,7 @@
       "name": "Cardiff Civic Centre",
       "coordinates": {
         "lat": 51.4835,
-        "lng": -3.1780
+        "lng": -3.178
       }
     }
   },
@@ -40,7 +40,7 @@
     "label": "Accessible",
     "technical": "Flat, fast road course on closed roads"
   },
-  "description": "The UK's second-largest half marathon and Wales' biggest mass participation event, Cardiff Half is a flat, fast, and phenomenally well-supported race through the Welsh capital. Starting near Cardiff Castle, the closed-road course winds past iconic landmarks—the Principality Stadium, Cardiff Bay, and Roath Park—before a triumphant finish in the Civic Centre. With 27,500 runners and thousands of spectators lining the streets, the atmosphere is electric. Part of the SuperHalfs series alongside Prague, Lisbon, Copenhagen, and Valencia, this is PB territory with a party atmosphere. Whether you're chasing a time or soaking up the experience, Cardiff Half delivers.",
+  "description": "The UK's second-largest half marathon and Wales' biggest mass participation event, Cardiff Half is a flat, fast, and phenomenally well-supported race through the Welsh capital. Starting near Cardiff Castle, the closed-road course winds past iconic landmarks—the Principality Stadium, Cardiff Bay, and Roath Park—before a triumphant finish in the Civic Centre. With 27,500 runners and thousands of spectators lining the streets, the atmosphere is electric. Part of the SuperHalfs series alongside Prague, Lisbon, Copenhagen, and Valencia, this is PB territory with a party atmosphere. Whether you're chasing a time or soaking up the experience, Cardiff Half delivers. The event has become a fixture in the Welsh sporting calendar, uniting communities across Cardiff in celebration of running, health, and achievement.",
   "who_its_for": "All abilities welcome. Perfect for first-timers seeking a supportive, well-organised event or experienced runners chasing personal bests on a fast course.",
   "whats_special": [
     "UK's second-largest half marathon",
@@ -125,5 +125,6 @@
   ],
   "superhalfs_series": true,
   "enhanced": true,
-  "enhanced_date": "2026-02-07"
+  "enhanced_date": "2026-02-07",
+  "lastVerified": "2026-02-07"
 }

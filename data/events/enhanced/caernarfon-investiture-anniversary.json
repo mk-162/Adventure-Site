@@ -6,14 +6,15 @@
   "dates": {
     "fixed": true,
     "annual": "July 1",
-    "note": "Anniversary of the 1969 Investiture of the Prince of Wales"
+    "note": "Various events throughout 2026",
+    "year": 2026
   },
   "location": {
     "name": "Caernarfon Castle",
     "region": "Gwynedd",
     "coordinates": {
       "lat": 53.1391,
-      "lng": -4.2770
+      "lng": -4.277
     }
   },
   "description": "Caernarfon Castle, one of the most magnificent medieval fortresses in Europe, holds deep significance in Welsh and British royal history. On July 1, 1969, the castle hosted the investiture of Prince Charles as Prince of Wales, watched by 500 million television viewers worldwide. This UNESCO World Heritage Site, built by Edward I between 1283-1330, features distinctive polygonal towers and banded coloured stonework inspired by the Walls of Constantinople. The castle houses the Royal Welch Fusiliers Museum and offers panoramic views from its Eagle Tower. Anniversary commemorations celebrate this historic connection while visitors can explore the fortress-palace that has witnessed centuries of Welsh history, from medieval rebellion to modern ceremony.",
@@ -29,7 +30,13 @@
     "instagram": "https://www.instagram.com/cadwcymruwales",
     "facebook": "https://www.facebook.com/CadwWales"
   },
-  "tags": ["heritage", "castle", "royal-history", "unesco", "museum"],
+  "tags": [
+    "heritage",
+    "castle",
+    "royal-history",
+    "unesco",
+    "museum"
+  ],
   "pricing": {
     "type": "paid",
     "note": "Standard Cadw admission applies; free for Cadw members"
@@ -42,5 +49,7 @@
     "source": "Cadw",
     "lastVerified": "2026-02-07",
     "enhancedBy": "research"
-  }
+  },
+  "website": "https://cadw.gov.wales/visit/places-to-visit/caernarfon-castle",
+  "lastVerified": "2026-02-07"
 }

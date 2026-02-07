@@ -6,7 +6,10 @@
   "dates": {
     "fixed": true,
     "annual": "March 1",
-    "note": "Fixed annual date - Wales' national day"
+    "note": "Fixed annual date - Wales' national day",
+    "year": 2026,
+    "date": "2026-03-01",
+    "recurring": "March 1st annually"
   },
   "location": {
     "name": "St Davids Cathedral",
@@ -30,7 +33,14 @@
     "instagram": "https://www.instagram.com/visitwales",
     "facebook": "https://www.facebook.com/visitwales"
   },
-  "tags": ["national-day", "parade", "heritage", "culture", "tradition", "free"],
+  "tags": [
+    "national-day",
+    "parade",
+    "heritage",
+    "culture",
+    "tradition",
+    "free"
+  ],
   "pricing": {
     "type": "free",
     "note": "Most public celebrations are free; some venues may charge"
@@ -43,5 +53,7 @@
     "source": "Visit Wales",
     "lastVerified": "2026-02-07",
     "enhancedBy": "research"
-  }
+  },
+  "website": "https://www.visitwales.com/inspire-me/traditions-history/st-davids-day",
+  "lastVerified": "2026-02-07"
 }

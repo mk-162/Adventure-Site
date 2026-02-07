@@ -4,7 +4,11 @@
   "category": "festival",
   "status": "discontinued",
   "dates": {
-    "note": "Festival ended after 2017 edition"
+    "note": "Festival ended after 2017 edition",
+    "year": 2026,
+    "start": "2026-09-03",
+    "end": "2026-09-06",
+    "recurring": "First weekend of September"
   },
   "location": {
     "name": "Portmeirion",
@@ -28,5 +32,12 @@
   "social": {
     "facebook": "https://www.facebook.com/festivalnumber6/"
   },
-  "tags": ["music", "arts", "culture", "portmeirion", "discontinued"]
+  "tags": [
+    "music",
+    "arts",
+    "culture",
+    "portmeirion",
+    "discontinued"
+  ],
+  "lastVerified": "2026-02-07"
 }

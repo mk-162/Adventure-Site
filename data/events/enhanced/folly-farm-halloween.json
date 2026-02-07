@@ -19,12 +19,12 @@
       "lng": -4.73095
     }
   },
-  "description": "Wales's best-loved family attraction transforms for Halloween with spooktacular activities included with regular admission. Join Meep the Sheep and the Folly entertainments team for not-too-scary seasonal fun across the zoo, barn, fairground and play areas. Hunt for spooky scarecrows hidden throughout the park, tackle the Halloween trail with special prizes, and enjoy the Dung Detective workshop. Meet farmyard favourites in spooky costume at the Barn, then explore the zoo where keepers share creepy creature facts. The vintage fairground operates with added atmosphere, while soft play offers indoor thrills. Perfect for little monsters and their families seeking award-winning Halloween entertainment.",
+  "description": "Wales's best-loved family attraction transforms for Halloween with spooktacular activities included with regular admission. Join Meep the Sheep and the Folly entertainments team for not-too-scary seasonal fun across the zoo, barn, fairground and play areas. Hunt for spooky scarecrows hidden throughout the park, tackle the Halloween trail with special prizes, and enjoy the Dung Detective workshop. Meet farmyard favourites in spooky costume at the Barn, then explore the zoo where keepers share creepy creature facts. The vintage fairground operates with added atmosphere, while soft play offers indoor thrills. Perfect for little monsters and their families seeking award-winning Halloween entertainment. With thousands of pumpkins to explore and friendly Halloween characters to meet, this is spooky fun for the whole family.",
   "entry": {
     "type": "paid",
-    "adultPrice": 29.00,
-    "childPrice": 27.00,
-    "familyPrice": 108.00,
+    "adultPrice": 29,
+    "childPrice": 27,
+    "familyPrice": 108,
     "notes": "Halloween activities included with regular admission. Under 2s free. 5% online discount available. Family of 4 ticket."
   },
   "heroImage": {

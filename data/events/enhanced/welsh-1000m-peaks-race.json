@@ -42,21 +42,66 @@
     "technical": "Serious mountain navigation, scrambling, extreme exposure"
   },
   "summits": [
-    {"name": "Foel-fras", "height": 942},
-    {"name": "Foel Grach", "height": 976},
-    {"name": "Carnedd Llewelyn", "height": 1064},
-    {"name": "Yr Elen", "height": 962},
-    {"name": "Carnedd Dafydd", "height": 1044},
-    {"name": "Pen yr Ole Wen", "height": 978},
-    {"name": "Tryfan", "height": 918},
-    {"name": "Glyder Fach", "height": 994},
-    {"name": "Glyder Fawr", "height": 1001},
-    {"name": "Y Garn", "height": 947},
-    {"name": "Elidir Fawr", "height": 924},
-    {"name": "Mynydd Perfedd", "height": 812},
-    {"name": "Foel-goch", "height": 831},
-    {"name": "Carnedd Ugain (Crib y Ddysgl)", "height": 1065},
-    {"name": "Yr Wyddfa (Snowdon)", "height": 1085}
+    {
+      "name": "Foel-fras",
+      "height": 942
+    },
+    {
+      "name": "Foel Grach",
+      "height": 976
+    },
+    {
+      "name": "Carnedd Llewelyn",
+      "height": 1064
+    },
+    {
+      "name": "Yr Elen",
+      "height": 962
+    },
+    {
+      "name": "Carnedd Dafydd",
+      "height": 1044
+    },
+    {
+      "name": "Pen yr Ole Wen",
+      "height": 978
+    },
+    {
+      "name": "Tryfan",
+      "height": 918
+    },
+    {
+      "name": "Glyder Fach",
+      "height": 994
+    },
+    {
+      "name": "Glyder Fawr",
+      "height": 1001
+    },
+    {
+      "name": "Y Garn",
+      "height": 947
+    },
+    {
+      "name": "Elidir Fawr",
+      "height": 924
+    },
+    {
+      "name": "Mynydd Perfedd",
+      "height": 812
+    },
+    {
+      "name": "Foel-goch",
+      "height": 831
+    },
+    {
+      "name": "Carnedd Ugain (Crib y Ddysgl)",
+      "height": 1065
+    },
+    {
+      "name": "Yr Wyddfa (Snowdon)",
+      "height": 1085
+    }
   ],
   "description": "The Welsh 1000m Peaks Race is one of Britain's most demanding fell races—a traverse of all 15 peaks over 3,000ft in Wales, completed in a single continuous effort. From Aber Falls to Nant Peris, runners navigate 22 miles and 10,000ft of ascent across the Carneddau, Glyderau, and Snowdon massifs. This is serious mountain running: expect scrambling on Tryfan, exposed ridges, and navigation challenges in any conditions. The roll call of summits reads like a who's who of Welsh mountains, culminating in Wales' highest peak, Yr Wyddfa. Few races offer such a complete test of mountain running ability. Finish this, and you've truly conquered Wales.",
   "who_its_for": "Expert fell runners and mountain athletes only. Excellent navigation skills mandatory. Scrambling experience required (especially Tryfan). Not for inexperienced runners.",
@@ -101,5 +146,12 @@
   "website": "http://welsh1000m.co.uk/",
   "governing_body": "Fell Runners Association",
   "enhanced": true,
-  "enhanced_date": "2026-02-07"
+  "enhanced_date": "2026-02-07",
+  "heroImage": {
+    "url": "https://www.welsh1000m.co.uk/wp-content/uploads/welsh-peaks-race.jpg",
+    "alt": "Runners on the Welsh 1000m Peaks Race",
+    "source": "Welsh 1000m Peaks Race",
+    "credit": "Race organisers"
+  },
+  "lastVerified": "2026-02-07"
 }

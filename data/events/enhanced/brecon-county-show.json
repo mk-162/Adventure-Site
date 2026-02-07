@@ -1,14 +1,17 @@
 {
   "slug": "brecon-county-show",
   "name": "Brecon County Show",
-  "coordinates": { "lat": 51.9407, "lng": -3.3759 },
+  "coordinates": {
+    "lat": 51.9407,
+    "lng": -3.3759
+  },
   "heroImage": {
     "url": "https://www.breconcountyshow.co.uk/images/hero-main.jpg",
     "alt": "Brecon County Show main ring with Brecon Beacons backdrop",
     "source": "Brecknockshire Agricultural Society",
     "attribution": null
   },
-  "description": "Claiming the extraordinary title of the oldest agricultural society in the United Kingdom (established 1755!), the Brecknockshire Agricultural Society's annual show is living history wrapped in a thoroughly modern family day out. Set against the magnificent Brecon Beacons, this one-day spectacular draws over 19,000 visitors to witness everything from traditional livestock judging to the death-defying Paul Hannam Quad Stunt Show. With 300+ trade stands, a fantastic food hall, vintage tractors, and the kids' favourites making appearances, it's 271 years of Welsh farming tradition served with contemporary flair.",
+  "description": "Claiming the extraordinary title of the oldest agricultural society in the United Kingdom (established 1755!), the Brecknockshire Agricultural Society's annual show is living history wrapped in a thoroughly modern family day out. Set against the magnificent Brecon Beacons, this one-day spectacular draws over 19,000 visitors to witness everything from traditional livestock judging to the death-defying Paul Hannam Quad Stunt Show. With 300+ trade stands, a fantastic food hall, vintage tractors, and the kids' favourites making appearances, it's 271 years of Welsh farming tradition served with contemporary flair. The show features impressive livestock competitions, equestrian events, trade stands, and entertainment areas, offering a genuine taste of Welsh rural life. The hound parade and sheepdog demonstrations are particular crowd favourites.",
   "socialLinks": {
     "facebook": "https://www.facebook.com/BreconCountyShow",
     "instagram": "https://www.instagram.com/breconcountyshow/",
@@ -34,6 +37,9 @@
   },
   "nearbyOperators": [],
   "lastVerified": "2026-02-07",
-  "sourceUrls": ["https://www.breconcountyshow.co.uk/"],
-  "confidence": "high"
+  "sourceUrls": [
+    "https://www.breconcountyshow.co.uk/"
+  ],
+  "confidence": "high",
+  "website": "https://www.breconcountyshow.co.uk/"
 }

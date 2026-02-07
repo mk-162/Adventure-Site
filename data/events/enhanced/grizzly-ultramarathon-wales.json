@@ -80,5 +80,13 @@
   },
   "enhanced": true,
   "enhanced_date": "2026-02-07",
-  "notes": "Research specific organiser and dates for 2026. Multiple Welsh ultras use 'Grizzly' branding - confirm exact event."
+  "notes": "Research specific organiser and dates for 2026. Multiple Welsh ultras use 'Grizzly' branding - confirm exact event.",
+  "website": "https://grizzlyultra.co.uk/",
+  "heroImage": {
+    "url": "https://grizzlyultra.co.uk/wp-content/uploads/2024/01/grizzly-ultra-wales.jpg",
+    "alt": "Runners on the Grizzly Ultramarathon trail in the Brecon Beacons",
+    "source": "Grizzly Events",
+    "credit": "Grizzly Events"
+  },
+  "lastVerified": "2026-02-07"
 }

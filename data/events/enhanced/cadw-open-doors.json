@@ -6,14 +6,17 @@
   "dates": {
     "fixed": false,
     "annual": "September",
-    "note": "Usually two weekends in September - part of European Heritage Days"
+    "note": "Usually two weekends in September - part of European Heritage Days",
+    "year": 2026,
+    "season": "September 2026",
+    "recurring": "September annually"
   },
   "location": {
     "name": "Caernarfon Castle",
     "region": "Gwynedd",
     "coordinates": {
       "lat": 53.1391,
-      "lng": -4.2770
+      "lng": -4.277
     },
     "note": "Flagship venue shown - over 200 sites participate across Wales"
   },
@@ -30,7 +33,13 @@
     "instagram": "https://www.instagram.com/cadwcymruwales",
     "facebook": "https://www.facebook.com/CadwWales"
   },
-  "tags": ["heritage", "free-entry", "historic-buildings", "european-heritage-days", "castles"],
+  "tags": [
+    "heritage",
+    "free-entry",
+    "historic-buildings",
+    "european-heritage-days",
+    "castles"
+  ],
   "pricing": {
     "type": "free",
     "note": "Free entry to participating venues during Open Doors"
@@ -46,5 +55,7 @@
     "source": "Cadw",
     "lastVerified": "2026-02-07",
     "enhancedBy": "research"
-  }
+  },
+  "website": "https://cadw.gov.wales/visit/whats-on/open-doors",
+  "lastVerified": "2026-02-07"
 }

@@ -1,14 +1,17 @@
 {
   "slug": "chepstow-show",
   "name": "Chepstow Show",
-  "coordinates": { "lat": 51.6381, "lng": -2.6681 },
+  "coordinates": {
+    "lat": 51.6381,
+    "lng": -2.6681
+  },
   "heroImage": {
     "url": "https://www.chepstowshow.co.uk/images/show-main.jpg",
     "alt": "Chepstow Show at the racecourse with livestock parade",
     "source": "Chepstow Agricultural Society",
     "attribution": null
   },
-  "description": "Combining the unique setting of Chepstow Racecourse with traditional agricultural show heritage, this one-day August spectacular offers something genuinely different. Watch livestock parades circle the famous turf, cheer on competitors in hundreds of classes from horses to homecraft, and discover the new circus workshop and live music stage. With entry from just 9am and under-16s free, it's an affordable family adventure in the beautiful Wye Valley borderlands. The craft and food halls, the horticulture marquee, and the warm welcome from the Chepstow Agricultural Society make this a show with real heart.",
+  "description": "Combining the unique setting of Chepstow Racecourse with traditional agricultural show heritage, this one-day August spectacular offers something genuinely different. Watch livestock parades circle the famous turf, cheer on competitors in hundreds of classes from horses to homecraft, and discover the new circus workshop and live music stage. With entry from just 9am and under-16s free, it's an affordable family adventure in the beautiful Wye Valley borderlands. The craft and food halls, the horticulture marquee, and the warm welcome from the Chepstow Agricultural Society make this a show with real heart. Located in the scenic Wye Valley, the show features livestock competitions, equestrian events, craft marquees, vintage vehicles, and entertainment for all ages, drawing visitors from both Wales and England.",
   "socialLinks": {
     "facebook": null,
     "instagram": null,
@@ -34,6 +37,9 @@
   },
   "nearbyOperators": [],
   "lastVerified": "2026-02-07",
-  "sourceUrls": ["https://www.chepstowshow.co.uk/"],
-  "confidence": "medium"
+  "sourceUrls": [
+    "https://www.chepstowshow.co.uk/"
+  ],
+  "confidence": "medium",
+  "website": "https://www.chepstowshow.co.uk/"
 }

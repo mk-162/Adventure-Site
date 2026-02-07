@@ -6,7 +6,10 @@
   "dates": {
     "fixed": true,
     "annual": "December 21",
-    "note": "Winter Solstice - shortest day of the year. Note: the tomb is astronomically aligned to the Summer Solstice sunrise"
+    "note": "Winter Solstice - shortest day of the year. Note: the tomb is astronomically aligned to the Summer Solstice sunrise",
+    "year": 2026,
+    "date": "2026-12-21",
+    "recurring": "December 21st (Winter Solstice)"
   },
   "location": {
     "name": "Bryn Celli Ddu Chambered Tomb",
@@ -28,7 +31,14 @@
     "twitter": "https://twitter.com/cadwwales",
     "instagram": "https://www.instagram.com/cadwcymruwales"
   },
-  "tags": ["prehistoric", "neolithic", "solstice", "spiritual", "heritage", "free"],
+  "tags": [
+    "prehistoric",
+    "neolithic",
+    "solstice",
+    "spiritual",
+    "heritage",
+    "free"
+  ],
   "pricing": {
     "type": "free",
     "note": "Free access - Cadw-managed site"
@@ -41,5 +51,7 @@
     "source": "Cadw / Wales Online",
     "lastVerified": "2026-02-07",
     "enhancedBy": "research"
-  }
+  },
+  "website": "https://cadw.gov.wales/visit/places-to-visit/bryn-celli-ddu-burial-chamber",
+  "lastVerified": "2026-02-07"
 }

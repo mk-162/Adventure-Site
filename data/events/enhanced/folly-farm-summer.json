@@ -19,12 +19,12 @@
       "lng": -4.73095
     }
   },
-  "description": "Wales's 'Best Day Out' comes alive with summer activities across four fantastic attractions in one. Watch spectacular penguin feeds, marvel at the lion pride, and get close to giraffes, rhinos and meerkats at the award-winning zoo. The Jolly Barn offers hands-on farmyard experiences with daily animal handling sessions, while the vintage fairground spins with traditional fun. Adventure playgrounds, the Pembrokeshire Wheel and indoor soft play ensure non-stop entertainment. Summer brings extended opening hours, special keeper talks, and additional outdoor activities. With free return visits within seven days, families can spread their Folly adventure across multiple sun-soaked days.",
+  "description": "Wales's 'Best Day Out' comes alive with summer activities across four fantastic attractions in one. Watch spectacular penguin feeds, marvel at the lion pride, and get close to giraffes, rhinos and meerkats at the award-winning zoo. The Jolly Barn offers hands-on farmyard experiences with daily animal handling sessions, while the vintage fairground spins with traditional fun. Adventure playgrounds, the Pembrokeshire Wheel and indoor soft play ensure non-stop entertainment. Summer brings extended opening hours, special keeper talks, and additional outdoor activities. With free return visits within seven days, families can spread their Folly adventure across multiple sun-soaked days. With daily keeper talks, feeding sessions, and interactive experiences, summer at Folly Farm creates lasting family memories.",
   "entry": {
     "type": "paid",
-    "adultPrice": 29.00,
-    "childPrice": 27.00,
-    "familyPrice": 108.00,
+    "adultPrice": 29,
+    "childPrice": 27,
+    "familyPrice": 108,
     "notes": "Same prices year-round—no school holiday price increases. Under 2s free. 5% online discount. Free return within 7 days."
   },
   "heroImage": {

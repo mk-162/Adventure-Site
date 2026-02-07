@@ -6,7 +6,10 @@
   "dates": {
     "fixed": false,
     "annual": "October half term",
-    "note": "Usually late October, coinciding with school half term"
+    "note": "Usually late October, coinciding with school half term",
+    "year": 2026,
+    "season": "October half-term 2026",
+    "recurring": "October half-term annually"
   },
   "location": {
     "name": "Caerphilly Castle",
@@ -30,7 +33,14 @@
     "instagram": "https://www.instagram.com/cadwcymruwales",
     "facebook": "https://www.facebook.com/CadwWales"
   },
-  "tags": ["halloween", "family", "castles", "spooky", "half-term", "children"],
+  "tags": [
+    "halloween",
+    "family",
+    "castles",
+    "spooky",
+    "half-term",
+    "children"
+  ],
   "pricing": {
     "type": "mixed",
     "note": "Some activities free with admission; special events may require booking"
@@ -43,5 +53,7 @@
     "source": "Cadw",
     "lastVerified": "2026-02-07",
     "enhancedBy": "research"
-  }
+  },
+  "website": "https://cadw.gov.wales/",
+  "lastVerified": "2026-02-07"
 }

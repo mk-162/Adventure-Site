@@ -42,7 +42,7 @@
   },
   "itra_points": 3,
   "utmb_indexed": true,
-  "description": "A UTMB-indexed ultra through Snowdonia's most breathtaking terrain. The 57km route leaves Llanberis via Maesgwm, drops to Rhyd Ddu, then explores the hidden valleys of Cwm Trwsgl and Cwm Pennant before rejoining the marathon route at Nant Gwynant. The final challenge: ascending Yr Wyddfa (Snowdon) via the PyG track to the Finger Stone, followed by a glorious 7km descent to a heroes' welcome. With 2,199m of climbing across mountain paths, forest trails, slate quarries, and ancient tracks, this is a trail runner's paradise. Earn your 3 ITRA points and experience Wales' finest mountain running.",
+  "description": "A UTMB-indexed ultra through Snowdonia's most breathtaking terrain. The 57km route leaves Llanberis via Maesgwm, drops to Rhyd Ddu, then explores the hidden valleys of Cwm Trwsgl and Cwm Pennant before rejoining the marathon route at Nant Gwynant. The final challenge: ascending Yr Wyddfa (Snowdon) via the PyG track to the Finger Stone, followed by a glorious 7km descent to a heroes' welcome. With 2,199m of climbing across mountain paths, forest trails, slate quarries, and ancient tracks, this is a trail runner's paradise. Earn your 3 ITRA points and experience Wales' finest mountain running. The event has become a pilgrimage for trail runners seeking UTMB qualification points in one of Britain's most spectacular mountain environments.",
   "who_its_for": "Experienced ultra runners with mountain running experience. Strong navigation skills recommended. Minimum age 20.",
   "whats_special": [
     "UTMB Indexed with 3 ITRA points",
@@ -90,10 +90,26 @@
     "minimum_age": 20
   },
   "cutoffs": [
-    {"point": "Rhyd Ddu (Mile 6.7)", "time": "08:10", "pace": "4mph"},
-    {"point": "Beddgelert (Mile 19.4)", "time": "11:20", "pace": "4mph"},
-    {"point": "Pen y Pass (Mile 27.3)", "time": "14:15", "pace": "3.6mph"},
-    {"point": "Finish (Mile 35.3)", "time": "18:00", "pace": "2.6mph"}
+    {
+      "point": "Rhyd Ddu (Mile 6.7)",
+      "time": "08:10",
+      "pace": "4mph"
+    },
+    {
+      "point": "Beddgelert (Mile 19.4)",
+      "time": "11:20",
+      "pace": "4mph"
+    },
+    {
+      "point": "Pen y Pass (Mile 27.3)",
+      "time": "14:15",
+      "pace": "3.6mph"
+    },
+    {
+      "point": "Finish (Mile 35.3)",
+      "time": "18:00",
+      "pace": "2.6mph"
+    }
   ],
   "aid_stations": 5,
   "start_time": "06:30",
@@ -116,5 +132,12 @@
     "facebook": "alwaysaimhigh"
   },
   "enhanced": true,
-  "enhanced_date": "2026-02-07"
+  "enhanced_date": "2026-02-07",
+  "heroImage": {
+    "url": "https://alwaysaimhighevents.com/wp-content/uploads/2023/05/snowdonia-trail-marathon-eryri.jpg",
+    "alt": "Trail runners on mountain path during Ultra Trail Snowdonia",
+    "source": "Always Aim High Events",
+    "credit": "AAH Events"
+  },
+  "lastVerified": "2026-02-07"
 }

@@ -2,14 +2,17 @@
   "slug": "cardigan-county-show",
   "name": "Cardigan County Show",
   "nameWelsh": "Sioe Sir Aberteifi",
-  "coordinates": { "lat": 52.0699, "lng": -4.6691 },
+  "coordinates": {
+    "lat": 52.0699,
+    "lng": -4.6691
+  },
   "heroImage": {
     "url": "https://cardigancountyshow.org.uk/wp-content/uploads/hero-cattle.jpg",
     "alt": "Cardigan County Show cattle ring with competitors and spectators",
     "source": "Cardigan County Show",
     "attribution": null
   },
-  "description": "West Wales's premier agricultural show brings together the finest cattle, sheep, pigs, goats, and horses for a spectacular celebration of rural life in the heart of Ceredigion. From heavyweight draught horses to delicate poultry displays, this show has been the August highlight for farming families across West Wales for generations. Vintage machinery enthusiasts will find plenty to admire, while the whole family can explore trade stands brimming with country goods. It's authentic Welsh agriculture at its competitive best, set in the beautiful countryside between coast and mountains.",
+  "description": "West Wales's premier agricultural show brings together the finest cattle, sheep, pigs, goats, and horses for a spectacular celebration of rural life in the heart of Ceredigion. From heavyweight draught horses to delicate poultry displays, this show has been the August highlight for farming families across West Wales for generations. Vintage machinery enthusiasts will find plenty to admire, while the whole family can explore trade stands brimming with country goods. It's authentic Welsh agriculture at its competitive best, set in the beautiful countryside between coast and mountains. This traditional agricultural show brings together farming communities from across West Wales, featuring livestock judging, craft exhibitions, vintage vehicles, and family entertainment in a stunning rural setting.",
   "socialLinks": {
     "facebook": "https://www.facebook.com/CardiganAgriShow/",
     "instagram": null,
@@ -36,6 +39,9 @@
   },
   "nearbyOperators": [],
   "lastVerified": "2026-02-07",
-  "sourceUrls": ["https://cardigancountyshow.org.uk/"],
-  "confidence": "high"
+  "sourceUrls": [
+    "https://cardigancountyshow.org.uk/"
+  ],
+  "confidence": "high",
+  "website": "https://cardigancountyshow.org.uk/"
 }

@@ -16,10 +16,10 @@
     "region": "ceredigion",
     "coordinates": {
       "lat": 52.0833,
-      "lng": -4.6600
+      "lng": -4.66
     }
   },
-  "description": "Now in its 27th year, the Cardigan River & Food Festival is a beloved community regeneration project celebrating the produce and culture of this historic West Wales market town. This not-for-profit event supports local artists and suppliers, with all proceeds going back into the community. The festival transforms Cardigan's centre with food stalls, live entertainment on the main stage, and activities celebrating the town's connection to the River Teifi. Run by Menter Aberteifi with support from Ceredigion County Council and Food & Drink Wales, this family-friendly event offers free entry for under-18s and a complimentary park and ride service.",
+  "description": "Now in its 27th year, the Cardigan River & Food Festival is a beloved community regeneration project celebrating the produce and culture of this historic West Wales market town. This not-for-profit event supports local artists and suppliers, with all proceeds going back into the community. The festival transforms Cardigan's centre with food stalls, live entertainment on the main stage, and activities celebrating the town's connection to the River Teifi. Run by Menter Aberteifi with support from Ceredigion County Council and Food & Drink Wales, this family-friendly event offers free entry for under-18s and a complimentary park and ride service. The festival celebrates Cardigan's rich food heritage and its connection to the River Teifi.",
   "entry": {
     "type": "paid",
     "price": "Adults £5, Under 18s free",

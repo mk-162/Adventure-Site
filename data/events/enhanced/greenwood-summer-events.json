@@ -19,12 +19,12 @@
       "lng": -4.19583
     }
   },
-  "description": "North Wales' award-winning eco-park bursts with summer holiday adventures beneath Snowdonia's towering peaks. Splash down the Solar Splash—the world's first solar-powered water ride—and race the Green Dragon Roller Coaster through the woodland. Brave the BareFoot Trail's sensory challenges, climb the mighty TreeTop Towers, and glide across the park on the Forest Glider zipline. Summer brings extended opening hours, outdoor shows featuring magic and entertainment, plus Giant Quest treasure hunts. The park's sustainable ethos means eco-crafts join regular activities, while the soft play and cafe provide shady retreats. Perfect for active families seeking outdoor adventures with an environmental conscience.",
+  "description": "North Wales' award-winning eco-park bursts with summer holiday adventures beneath Snowdonia's towering peaks. Splash down the Solar Splash—the world's first solar-powered water ride—and race the Green Dragon Roller Coaster through the woodland. Brave the BareFoot Trail's sensory challenges, climb the mighty TreeTop Towers, and glide across the park on the Forest Glider zipline. Summer brings extended opening hours, outdoor shows featuring magic and entertainment, plus Giant Quest treasure hunts. The park's sustainable ethos means eco-crafts join regular activities, while the soft play and cafe provide shady retreats. Perfect for active families seeking outdoor adventures with an environmental conscience. The park's eco-friendly ethos means families can enjoy active outdoor fun while learning about sustainability.",
   "entry": {
     "type": "paid",
     "adultPrice": 24.55,
     "childPrice": 24.55,
-    "familyPrice": 97.00,
+    "familyPrice": 97,
     "notes": "Peak season online prices. Under 1m reduced rate (£10.90). Under 18 months free. Family bundle for 4."
   },
   "heroImage": {

@@ -71,5 +71,12 @@
   "website": "https://www.allabouttriathlons.co.uk/",
   "enhanced": true,
   "enhanced_date": "2026-02-07",
-  "notes": "Event typically held mid-July. Check official website for exact 2026 date and entry."
+  "notes": "Event typically held mid-July. Check official website for exact 2026 date and entry.",
+  "heroImage": {
+    "url": "https://www.visitpembrokeshire.com/wp-content/uploads/pembrokeshire-coast-triathlon.jpg",
+    "alt": "Triathletes swimming at Pembrokeshire Coast Triathlon",
+    "source": "Activity Wales Events",
+    "credit": "Activity Wales"
+  },
+  "lastVerified": "2026-02-07"
 }

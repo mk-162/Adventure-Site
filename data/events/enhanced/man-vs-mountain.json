@@ -90,5 +90,12 @@
   },
   "enhanced": true,
   "enhanced_date": "2026-02-07",
-  "notes": "Event details subject to confirmation. Check official website for 2026 specifics."
+  "notes": "Event details subject to confirmation. Check official website for 2026 specifics.",
+  "heroImage": {
+    "url": "https://alwaysaimhighevents.com/wp-content/uploads/2023/04/man-vs-mountain-snowdon.jpg",
+    "alt": "Trail runner ascending Snowdon during Man vs Mountain race",
+    "source": "Always Aim High Events",
+    "credit": "AAH Events"
+  },
+  "lastVerified": "2026-02-07"
 }

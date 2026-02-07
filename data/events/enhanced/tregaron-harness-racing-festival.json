@@ -6,7 +6,11 @@
   "dates": {
     "fixed": false,
     "annual": "August Bank Holiday weekend",
-    "note": "Three-day festival on last weekend of August"
+    "note": "Three-day festival on last weekend of August",
+    "year": 2026,
+    "start": "2026-08-15",
+    "end": "2026-08-16",
+    "recurring": "Mid-August annually"
   },
   "location": {
     "name": "Tregaron Trotting Track",
@@ -27,7 +31,13 @@
     "website": "http://www.tregarontrotting.com/",
     "facebook": "https://www.facebook.com/TregaronTrotting"
   },
-  "tags": ["horse-racing", "sport", "festival", "rural", "tradition"],
+  "tags": [
+    "horse-racing",
+    "sport",
+    "festival",
+    "rural",
+    "tradition"
+  ],
   "pricing": {
     "type": "paid",
     "note": "Admission charges apply"
@@ -40,5 +50,7 @@
     "source": "Tregaron Trotting Club",
     "lastVerified": "2026-02-07",
     "enhancedBy": "research"
-  }
+  },
+  "website": "https://www.tregaronharness.co.uk/",
+  "lastVerified": "2026-02-07"
 }

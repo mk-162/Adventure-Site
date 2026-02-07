@@ -31,7 +31,14 @@
     "instagram": "https://www.instagram.com/nationaltrust",
     "facebook": "https://www.facebook.com/nationaltrustwales"
   },
-  "tags": ["easter", "family", "trails", "gardens", "outdoors", "children"],
+  "tags": [
+    "easter",
+    "family",
+    "trails",
+    "gardens",
+    "outdoors",
+    "children"
+  ],
   "pricing": {
     "type": "paid",
     "note": "Trail fee plus normal admission; free for NT members (trail fee may still apply)"
@@ -44,5 +51,7 @@
     "source": "National Trust",
     "lastVerified": "2026-02-07",
     "enhancedBy": "research"
-  }
+  },
+  "website": "https://www.nationaltrust.org.uk/visit/wales",
+  "lastVerified": "2026-02-07"
 }

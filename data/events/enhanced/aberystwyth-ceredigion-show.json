@@ -2,14 +2,17 @@
   "slug": "aberystwyth-ceredigion-show",
   "name": "Aberystwyth & Ceredigion County Show",
   "nameWelsh": "Sioe Aberystwyth",
-  "coordinates": { "lat": 52.4125, "lng": -4.0266 },
+  "coordinates": {
+    "lat": 52.4125,
+    "lng": -4.0266
+  },
   "heroImage": {
     "url": "https://sioeaberystwythshow.co.uk/wp-content/uploads/hero-main.jpg",
     "alt": "Aberystwyth Show with livestock competitions and Ceredigion hills",
     "source": "Sioe Aberystwyth Show",
     "attribution": null
   },
-  "description": "Nestled in the rolling Ceredigion countryside between Aberystwyth and Capel Bangor, this one-day agricultural gem brings together the best of Mid Wales farming on a single glorious June Saturday. From prize cattle and sheep to poultry and horses, watch dedicated farmers compete for coveted titles while the whole family enjoys attractions that make Welsh shows legendary. It's compact enough to feel intimate yet packed with enough to fill an adventurous day—making it the perfect introduction to authentic Welsh agricultural shows for those new to the scene.",
+  "description": "Nestled in the rolling Ceredigion countryside between Aberystwyth and Capel Bangor, this one-day agricultural gem brings together the best of Mid Wales farming on a single glorious June Saturday. From prize cattle and sheep to poultry and horses, watch dedicated farmers compete for coveted titles while the whole family enjoys attractions that make Welsh shows legendary. It's compact enough to feel intimate yet packed with enough to fill an adventurous day—making it the perfect introduction to authentic Welsh agricultural shows for those new to the scene. The event brings together farmers, livestock breeders, and rural craftspeople from across Ceredigion and beyond, offering something for all ages from spectacular show jumping to vintage machinery displays and traditional Welsh entertainment.",
   "socialLinks": {
     "facebook": null,
     "instagram": null,
@@ -36,6 +39,9 @@
   },
   "nearbyOperators": [],
   "lastVerified": "2026-02-07",
-  "sourceUrls": ["https://sioeaberystwythshow.co.uk/"],
-  "confidence": "high"
+  "sourceUrls": [
+    "https://sioeaberystwythshow.co.uk/"
+  ],
+  "confidence": "high",
+  "website": "https://sioeaberystwythshow.co.uk/"
 }

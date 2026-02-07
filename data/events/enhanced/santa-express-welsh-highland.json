@@ -11,13 +11,17 @@
     "address": "Harbour Station, Porthmadog, Gwynedd LL49 9NF",
     "coordinates": {
       "lat": 52.9242,
-      "lng": -4.1280
+      "lng": -4.128
     }
   },
   "dates": {
     "typical": "Weekends in December",
     "season2025": "December 2025 (dates TBC)",
-    "notes": "Check website for 2025/26 Santa Special dates"
+    "notes": "Check website for 2025/26 Santa Special dates",
+    "year": 2026,
+    "start": "2026-11-28",
+    "end": "2026-12-24",
+    "recurring": "Late November to Christmas Eve"
   },
   "pricing": {
     "type": "ticketed",
@@ -58,5 +62,6 @@
     "email": "enquiries@ffwhr.com"
   },
   "familyFriendly": true,
-  "dogFriendly": false
+  "dogFriendly": false,
+  "lastVerified": "2026-02-07"
 }

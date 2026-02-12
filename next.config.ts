@@ -2,7 +2,12 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // Externalize heavy packages to reduce serverless function size
-  serverExternalPackages: ['sharp', 'openai'],
+  serverExternalPackages: ['sharp', 'openai', '@img/sharp-linux-x64', 'stripe'],
+  
+  // Reduce bundle size
+  experimental: {
+    optimizePackageImports: ['lucide-react', 'drizzle-orm'],
+  },
   images: {
     remotePatterns: [
       {

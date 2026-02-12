@@ -1,20 +1,17 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { Mic, Square, RotateCcw, Send, Loader2, CheckCircle, XCircle } from 'lucide-react';
+import { Mic, Square, Play, RotateCcw, Send, Loader2, CheckCircle, XCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { submitComment } from '@/lib/comments';
-import { UserToken } from '@/lib/user-auth';
-import Link from 'next/link';
 
 interface VoiceRecorderProps {
   pageSlug: string;
   pageType: string;
-  currentUser?: UserToken | null;
   onSuccess?: () => void;
 }
 
-export function VoiceRecorder({ pageSlug, pageType, currentUser, onSuccess }: VoiceRecorderProps) {
+export function VoiceRecorder({ pageSlug, pageType, onSuccess }: VoiceRecorderProps) {
   const [isRecording, setIsRecording] = useState(false);
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
@@ -47,11 +44,13 @@ export function VoiceRecorder({ pageSlug, pageType, currentUser, onSuccess }: Vo
       };
 
       mediaRecorderRef.current.onstop = () => {
-        const blob = new Blob(chunksRef.current, { type: 'audio/webm' });
+        const blob = new Blob(chunksRef.current, { type: 'audio/webm' }); // webm is standard for MediaRecorder
         setAudioBlob(blob);
         const url = URL.createObjectURL(blob);
         setAudioUrl(url);
         setStatus('review');
+
+        // Stop all tracks to release mic
         stream.getTracks().forEach(track => track.stop());
       };
 
@@ -85,6 +84,7 @@ export function VoiceRecorder({ pageSlug, pageType, currentUser, onSuccess }: Vo
 
     setStatus('submitting');
 
+    // Convert Blob to File
     const file = new File([audioBlob], "voice-note.webm", { type: "audio/webm" });
     const formData = new FormData();
     formData.append("audio", file);
@@ -92,6 +92,7 @@ export function VoiceRecorder({ pageSlug, pageType, currentUser, onSuccess }: Vo
     formData.append("pageType", pageType);
 
     try {
+      // Call Server Action
       const result = await submitComment(null, formData);
 
       if (result.success) {
@@ -116,9 +117,9 @@ export function VoiceRecorder({ pageSlug, pageType, currentUser, onSuccess }: Vo
     return (
       <div className="bg-green-50 p-6 rounded-lg text-center animate-in fade-in zoom-in duration-300">
         <CheckCircle className="w-12 h-12 text-green-600 mx-auto mb-3" />
-        <h3 className="text-lg font-bold text-green-800">Thanks for sharing!</h3>
-        <p className="text-green-700">Your voice note is live.</p>
-        <Button onClick={resetRecording} variant="outline" className="mt-4">Leave another?</Button>
+        <h3 className="text-lg font-bold text-green-800">Tip shared! 🙌</h3>
+        <p className="text-green-700">Thanks — this helps other adventurers.</p>
+        <Button onClick={resetRecording} variant="outline" className="mt-4">Add another tip</Button>
       </div>
     );
   }
@@ -128,7 +129,7 @@ export function VoiceRecorder({ pageSlug, pageType, currentUser, onSuccess }: Vo
       <div className="bg-red-50 p-6 rounded-lg text-center animate-in fade-in zoom-in duration-300">
         <XCircle className="w-12 h-12 text-red-600 mx-auto mb-3" />
         <h3 className="text-lg font-bold text-red-800">Note Flagged</h3>
-        <p className="text-red-700">Thanks for your contribution, but it didn&apos;t meet our community guidelines.</p>
+        <p className="text-red-700">Thanks for your contribution, but it didn't meet our community guidelines (e.g. offensive content). Please try again!</p>
         <Button onClick={resetRecording} variant="outline" className="mt-4">Try Again</Button>
       </div>
     );
@@ -138,17 +139,8 @@ export function VoiceRecorder({ pageSlug, pageType, currentUser, onSuccess }: Vo
     <div className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
       {/* Header */}
       <div className="mb-4 text-center">
-        <h3 className="font-semibold text-slate-900">Leave a Voice Note</h3>
-        <p className="text-sm text-slate-500">Share your tips or thanks in seconds!</p>
-        {currentUser ? (
-          <p className="text-xs text-primary mt-1 font-medium">
-            Posting as {currentUser.name || "User"}
-          </p>
-        ) : (
-          <p className="text-xs text-slate-400 mt-1">
-            Posting anonymously
-          </p>
-        )}
+        <h3 className="font-semibold text-slate-900">🎤 Leave a Tip</h3>
+        <p className="text-sm text-slate-500">30 seconds. What do you wish you'd known?</p>
       </div>
 
       {/* Main Action Area */}
@@ -202,18 +194,6 @@ export function VoiceRecorder({ pageSlug, pageType, currentUser, onSuccess }: Vo
                 Post Note
               </Button>
             </div>
-
-            {/* Login Prompt */}
-            {!currentUser && (
-              <div className="text-center pt-2 border-t border-slate-100">
-                <p className="text-xs text-slate-500">
-                  Want to save this to your profile?{" "}
-                  <Link href="/login" className="text-primary hover:underline font-medium">
-                    Log in first
-                  </Link>
-                </p>
-              </div>
-            )}
           </div>
         )}
 

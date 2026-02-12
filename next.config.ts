@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Externalize heavy packages to reduce serverless function size
+  serverExternalPackages: ['sharp', 'openai'],
   images: {
     remotePatterns: [
       {

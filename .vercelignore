@@ -1,0 +1,30 @@
+# Logs
+*.log
+jules-monitor.log
+
+# Test files
+__tests__/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Development files
+.env.local
+.env.development
+*.md
+!README.md
+
+# Large assets (served from CDN)
+public/images/large/
+
+# MCP server source (only API route needed)
+mcp-server/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/

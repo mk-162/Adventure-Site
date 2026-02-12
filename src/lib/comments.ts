@@ -17,6 +17,27 @@ const openai = new OpenAI({
 
 export type CommentStatus = 'pending' | 'approved' | 'rejected';
 
+export type VoiceTip = {
+  id: number;
+  audioUrl: string | null;
+  title: string | null;
+  summary: string | null;
+  transcript: string | null;
+  duration: number | null;
+  votes: number;
+  pageType: string;
+  pageSlug: string;
+  createdAt: Date;
+  authorName: string | null;
+  authorAvatar: string | null;
+  waveformData: number[] | null;
+  user?: {
+    id: number;
+    name: string | null;
+    image: string | null;
+  } | null;
+};
+
 export async function processAudio(formData: FormData) {
   const file = formData.get("audio") as File;
   if (!file) {
@@ -100,7 +121,7 @@ export async function submitComment(prevState: any, formData: FormData) {
     });
 
     if (existing) {
-        return { success: false, message: "You have already left a comment on this page." };
+        return { success: false, message: "You have already left a comment on this page.", title: null, summary: null, moderationReason: null };
     }
 
     // 1. Process Audio & Transcribe (Server-Side Whisper)
@@ -125,19 +146,19 @@ export async function submitComment(prevState: any, formData: FormData) {
     revalidatePath(`/${pageType === 'activity' ? 'activities' : pageType === 'operator' ? 'directory' : 'advertise'}/${pageSlug}`);
 
     if (status === 'rejected') {
-        return { success: true, status: 'rejected', message: "Comment received but flagged by moderation." };
+        return { success: true, status: 'rejected', message: "Comment received but flagged by moderation.", title: null, summary: null, moderationReason: null };
     }
 
-    return { success: true, status: 'approved', message: "Comment posted successfully!" };
+    return { success: true, status: 'approved', message: "Comment posted successfully!", title: null, summary, moderationReason: null };
 
   } catch (error) {
     console.error("Submit comment error:", error);
-    return { success: false, message: "Failed to process comment. Please try again." };
+    return { success: false, message: "Failed to process comment. Please try again.", title: null, summary: null, moderationReason: null };
   }
 }
 
-export async function getComments(pageSlug: string) {
-  return await db.query.comments.findMany({
+export async function getComments(pageSlug: string): Promise<VoiceTip[]> {
+  const results = await db.query.comments.findMany({
     where: and(
       eq(comments.pageSlug, pageSlug),
       eq(comments.status, 'approved')
@@ -147,9 +168,31 @@ export async function getComments(pageSlug: string) {
       user: true, // Fetch user details
     }
   });
+
+  return results.map(comment => ({
+    id: comment.id,
+    audioUrl: comment.audioUrl,
+    title: null,
+    summary: comment.summary,
+    transcript: comment.transcript,
+    duration: null,
+    votes: comment.votes,
+    pageType: comment.pageType,
+    pageSlug: comment.pageSlug,
+    createdAt: comment.createdAt,
+    authorName: comment.user?.name || null,
+    authorAvatar: null, // User table doesn't have avatars
+    waveformData: null,
+    user: comment.user ? {
+      id: comment.user.id,
+      name: comment.user.name,
+      image: null,
+    } : null,
+  }));
 }
 
-export async function voteForComment(commentId: number) {
+export async function voteForComment(commentId: number, _type: 'up' | 'down' = 'up') {
+  // Note: downvote not implemented yet, only upvotes are stored
   const cookieStore = await cookies();
   let sessionId = cookieStore.get("aw_session_id")?.value;
 
@@ -185,4 +228,36 @@ export async function voteForComment(commentId: number) {
     console.error("Voting error:", error);
     return { success: false, message: "Failed to vote" };
   }
+}
+
+export async function getTopTips(limit: number = 5): Promise<VoiceTip[]> {
+  const results = await db.query.comments.findMany({
+    where: eq(comments.status, 'approved'),
+    orderBy: (comments, { desc }) => [desc(comments.votes), desc(comments.createdAt)],
+    limit,
+    with: {
+      user: true,
+    }
+  });
+
+  return results.map(comment => ({
+    id: comment.id,
+    audioUrl: comment.audioUrl,
+    title: null, // Comments don't have titles, can derive from pageSlug
+    summary: comment.summary,
+    transcript: comment.transcript,
+    duration: null, // Could store this in DB if needed
+    votes: comment.votes,
+    pageType: comment.pageType,
+    pageSlug: comment.pageSlug,
+    createdAt: comment.createdAt,
+    authorName: comment.user?.name || null,
+    authorAvatar: null, // User table doesn't have avatars
+    waveformData: null, // Not stored yet
+    user: comment.user ? {
+      id: comment.user.id,
+      name: comment.user.name,
+      image: null,
+    } : null,
+  }));
 }

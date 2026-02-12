@@ -179,32 +179,29 @@ async function searchEvents(params: any) {
     ));
   }
   if (startDate) {
-    conditions.push(gte(events.startDate, new Date(startDate)));
+    conditions.push(gte(events.dateStart, new Date(startDate)));
   }
   if (endDate) {
-    conditions.push(lte(events.startDate, new Date(endDate)));
+    conditions.push(lte(events.dateStart, new Date(endDate)));
   }
   if (eventType) {
-    conditions.push(eq(events.eventType, eventType));
+    conditions.push(eq(events.type, eventType));
   }
   
   const results = await db.query.events.findMany({
     where: conditions.length > 0 ? and(...conditions) : undefined,
     limit,
-    orderBy: (events, { asc }) => [asc(events.startDate)],
-    with: {
-      region: true
-    }
+    orderBy: (events, { asc }) => [asc(events.dateStart)]
   });
 
   return results.map(e => ({
     name: e.name,
     slug: e.slug,
     description: e.description,
-    region: e.region?.name || 'Wales',
-    startDate: e.startDate,
-    endDate: e.endDate,
-    eventType: e.eventType,
+    location: e.location,
+    startDate: e.dateStart,
+    endDate: e.dateEnd,
+    eventType: e.type,
     website: e.website,
     url: `https://adventurewales.co.uk/events/${e.slug}`
   }));
@@ -216,7 +213,7 @@ async function searchItineraries(params: any) {
   let whereClause;
   if (query) {
     whereClause = or(
-      ilike(itineraries.name, `%${query}%`),
+      ilike(itineraries.title, `%${query}%`),
       ilike(itineraries.description, `%${query}%`)
     );
   }
@@ -230,11 +227,12 @@ async function searchItineraries(params: any) {
   });
 
   return results.map(i => ({
-    name: i.name,
+    name: i.title,
     slug: i.slug,
     description: i.description,
+    tagline: i.tagline,
     region: i.region?.name || 'Wales',
-    duration: i.duration,
+    durationDays: i.durationDays,
     difficulty: i.difficulty,
     url: `https://adventurewales.co.uk/itineraries/${i.slug}`
   }));

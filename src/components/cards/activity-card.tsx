@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MapPin, Clock, Star, Ticket, Camera } from "lucide-react";
 import { Badge, DifficultyBadge, PriceBadge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 
 interface ActivityCardProps {
@@ -235,7 +236,7 @@ export function ActivityCard({
   // Simple listing card - minimal info, no link
   if (variant === "listing") {
     return (
-      <div className="bg-white rounded-xl overflow-hidden shadow-sm">
+      <Card className="overflow-hidden">
         {/* Image */}
         <div className="relative h-36 overflow-hidden">
           <div
@@ -245,7 +246,7 @@ export function ActivityCard({
         </div>
 
         {/* Content */}
-        <div className="p-3">
+        <CardContent className="p-3">
           <h3 className="font-semibold text-primary text-sm line-clamp-2 mb-1">
             {activity.name}
           </h3>
@@ -269,17 +270,16 @@ export function ActivityCard({
               </span>
             )}
           </div>
-        </div>
-      </div>
+        </CardContent>
+      </Card>
     );
   }
 
   if (variant === "horizontal") {
     return (
-      <Link
-        href={`/activities/${activity.slug}`}
-        className="group flex bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
-      >
+      <Link href={`/activities/${activity.slug}`} className="block">
+        <Card className="group flex overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">
+
         {/* Image */}
         <div className="relative w-32 h-32 flex-shrink-0 overflow-hidden">
           <div
@@ -289,7 +289,7 @@ export function ActivityCard({
         </div>
 
         {/* Content */}
-        <div className="flex-1 p-4 flex flex-col justify-between">
+        <CardContent className="flex-1 p-4 flex flex-col justify-between">
           <div>
             <h3 className="font-semibold text-primary group-hover:text-accent-hover transition-colors line-clamp-1">
               {activity.name}
@@ -347,17 +347,17 @@ export function ActivityCard({
               />
             )}
           </div>
-        </div>
+        </CardContent>
+        </Card>
       </Link>
     );
   }
 
   // Default vertical card
   return (
-    <Link
-      href={`/activities/${activity.slug}`}
-      className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-    >
+    <Link href={`/activities/${activity.slug}`} className="block">
+      <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
         <div
@@ -393,7 +393,7 @@ export function ActivityCard({
       </div>
 
       {/* Content */}
-      <div className="p-4">
+      <CardContent className="p-4">
         <h3 className="font-bold text-primary mb-1 group-hover:text-accent-hover transition-colors line-clamp-1">
           {activity.name}
         </h3>
@@ -446,7 +446,8 @@ export function ActivityCard({
             />
           )}
         </div>
-      </div>
+      </CardContent>
+      </Card>
     </Link>
   );
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Star, ChevronRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 import { getEffectiveTier, isTrialActive } from "@/lib/trial-utils";
 
@@ -37,11 +38,9 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
 
   if (variant === "featured") {
     return (
-      <Link
-        href={`/directory/${operator.slug}`}
-        className={`group block rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border-2 border-accent-hover/20 relative ${isPremium ? "border-l-4 border-l-amber-400 bg-amber-50/30" : "bg-white"}`}
-      >
-        <div className="p-6">
+      <Link href={`/directory/${operator.slug}`} className="block">
+        <Card className={`group hover:shadow-xl transition-shadow border-2 border-accent-hover/20 relative ${isPremium ? "border-l-4 border-l-amber-400 bg-amber-50/30" : ""}`}>
+        <CardContent className="p-6">
           <div className="flex items-start justify-between mb-4">
             <div className="flex items-center gap-3">
               {operator.logoUrl && (
@@ -117,14 +116,15 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
               )}
             </div>
           )}
-        </div>
+        </CardContent>
+        </Card>
       </Link>
     );
   }
 
   // Default card
   return (
-    <div className={`rounded-xl shadow-sm hover:shadow-md transition-shadow relative ${isPremium ? "border-l-4 border-l-amber-400 bg-amber-50/30" : "bg-white"}`}>
+    <Card className={`hover:shadow-md transition-shadow relative ${isPremium ? "border-l-4 border-l-amber-400 bg-amber-50/30" : ""}`}>
       {isPremium && (
         <span className="absolute top-2 right-2 z-10 inline-flex items-center gap-1 bg-amber-100 text-amber-800 border border-amber-300 text-[10px] font-bold px-1.5 py-0.5 rounded-full" aria-label="Sponsored listing">
           Sponsored
@@ -195,6 +195,6 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
           </Link>
         </div>
       )}
-    </div>
+    </Card>
   );
 }

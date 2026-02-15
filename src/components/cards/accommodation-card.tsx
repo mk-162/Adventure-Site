@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MapPin, Star, Bike, Shirt } from "lucide-react";
 import { Badge, PriceBadge, TypeBadge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 
 interface AccommodationCardProps {
   accommodation: {
@@ -60,10 +61,8 @@ export function AccommodationCard({
   const imageUrl = image || placeholderImages[typeKey] || placeholderImages.default;
 
   return (
-    <Link
-      href={`/accommodation/${accommodation.slug}`}
-      className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-    >
+    <Link href={`/accommodation/${accommodation.slug}`} className="block">
+      <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
         <div
@@ -80,7 +79,7 @@ export function AccommodationCard({
       </div>
 
       {/* Content */}
-      <div className="p-4">
+      <CardContent className="p-4">
         <h3 className="font-bold text-primary mb-1 group-hover:text-accent-hover transition-colors line-clamp-1">
           {accommodation.name}
         </h3>
@@ -119,7 +118,8 @@ export function AccommodationCard({
             ))}
           </div>
         )}
-      </div>
+      </CardContent>
+      </Card>
     </Link>
   );
 }

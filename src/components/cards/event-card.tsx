@@ -37,7 +37,8 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
 
   if (variant === "list") {
     return (
-      <div className="flex items-center justify-between bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+      <Card className="flex items-center justify-between hover:shadow-md transition-shadow">
+        <CardContent className="flex items-center justify-between w-full p-4">
         {/* Left: Date + Info */}
         <div className="flex items-center gap-4">
           {/* Date Badge */}
@@ -73,16 +74,16 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
             Details
           </Link>
         </div>
-      </div>
+        </CardContent>
+      </Card>
     );
   }
 
   if (variant === "featured") {
     return (
-      <Link
-        href={`/events/${event.slug}`}
-        className="group block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow"
-      >
+      <Link href={`/events/${event.slug}`} className="block">
+        <Card className="group overflow-hidden hover:shadow-xl transition-shadow">
+
         {/* Image placeholder */}
         <div className="relative h-48 bg-gradient-to-br from-primary to-[#2d5066]">
           {/* Date Badge */}
@@ -99,7 +100,7 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
           </Badge>
         </div>
 
-        <div className="p-4">
+        <CardContent className="p-4">
           <h3 className="font-bold text-lg text-primary group-hover:text-accent-hover transition-colors mb-2">
             {event.name}
           </h3>
@@ -123,17 +124,17 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
               </span>
             )}
           </div>
-        </div>
+        </CardContent>
+        </Card>
       </Link>
     );
   }
 
   // Default card
   return (
-    <Link
-      href={`/events/${event.slug}`}
-      className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
-    >
+    <Link href={`/events/${event.slug}`} className="block">
+      <Card className="group overflow-hidden hover:shadow-lg transition-shadow">
+
       {/* Header with date */}
       <div className="bg-primary p-4 flex items-center gap-4">
         <div className="bg-white rounded-lg px-3 py-2 text-center">
@@ -155,7 +156,7 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
         </div>
       </div>
 
-      <div className="p-4">
+      <CardContent className="p-4">
         {event.description && (
           <p className="text-sm text-gray-600 line-clamp-2 mb-3">
             {event.description}
@@ -170,7 +171,8 @@ export function EventCard({ event, region, variant = "default" }: EventCardProps
             </span>
           )}
         </div>
-      </div>
+      </CardContent>
+      </Card>
     </Link>
   );
 }

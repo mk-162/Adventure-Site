@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Clock, Mountain, MapPin, Tag } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Card, CardContent } from "@/components/ui/card";
 
 interface ItineraryCardProps {
   itinerary: {
@@ -101,13 +102,9 @@ export function ItineraryCard({
   };
 
   return (
-    <Link
-      href={`/itineraries/${itinerary.slug}`}
-      className={cn(
-        "group bg-white rounded-2xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all duration-300 hover:border-primary/30 flex flex-col h-full",
-        className
-      )}
-    >
+    <Link href={`/itineraries/${itinerary.slug}`} className={cn("block h-full", className)}>
+      <Card className="group overflow-hidden border border-gray-200 hover:shadow-lg transition-all duration-300 hover:border-primary/30 flex flex-col h-full">
+
       {/* Card Image */}
       <div className="relative h-48 overflow-hidden bg-gray-100 shrink-0">
         <div
@@ -136,7 +133,7 @@ export function ItineraryCard({
       </div>
 
       {/* Card Content */}
-      <div className="p-5 flex flex-col flex-grow">
+      <CardContent className="p-5 flex flex-col flex-grow">
         <h3 className="font-bold text-lg text-primary mb-2 group-hover:text-accent-hover transition-colors line-clamp-2">
           {itinerary.title}
         </h3>
@@ -178,7 +175,8 @@ export function ItineraryCard({
 
           {/* Price removed — we don't want to look like we're selling */}
         </div>
-      </div>
+      </CardContent>
+      </Card>
     </Link>
   );
 }

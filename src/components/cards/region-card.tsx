@@ -35,10 +35,9 @@ export function RegionCard({ region, image, stats }: RegionCardProps) {
   const imageUrl = image || regionImages[region.slug] || regionImages.default;
 
   return (
-    <Link
-      href={`/${region.slug}`}
-      className="group relative h-64 rounded-2xl overflow-hidden"
-    >
+    <Link href={`/${region.slug}`} className="block h-64">
+      <Card className="group relative h-full overflow-hidden">
+
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -67,6 +66,7 @@ export function RegionCard({ region, image, stats }: RegionCardProps) {
           </div>
         )}
       </div>
+      </Card>
     </Link>
   );
 }

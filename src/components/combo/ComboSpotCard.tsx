@@ -1,3 +1,4 @@
+import { Card, CardContent } from "@/components/ui/card";
 import {
   MapPin,
   Clock,
@@ -23,9 +24,9 @@ function getDifficultyColor(difficulty: string) {
 
 export function ComboSpotCard({ spot, index }: { spot: ComboSpot; index: number }) {
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+    <Card className="overflow-hidden hover:shadow-md transition-shadow">
       {/* Header */}
-      <div className="p-5 pb-3">
+      <CardContent className="p-5 pb-3">
         <div className="flex items-start justify-between gap-3 mb-3">
           <div className="flex items-center gap-3">
             <span className="w-8 h-8 rounded-full bg-primary text-white text-sm font-bold flex items-center justify-center shrink-0">
@@ -73,10 +74,10 @@ export function ComboSpotCard({ spot, index }: { spot: ComboSpot; index: number 
             </span>
           )}
         </div>
-      </div>
+      </CardContent>
 
       {/* Details */}
-      <div className="border-t border-gray-100 px-5 py-3 bg-gray-50/50 space-y-2">
+      <CardContent className="border-t border-gray-100 px-5 py-3 bg-gray-50/50 space-y-2">
         {spot.bestFor && (
           <p className="text-xs"><span className="font-semibold text-emerald-700">Best for:</span> <span className="text-gray-600">{spot.bestFor}</span></p>
         )}
@@ -103,7 +104,7 @@ export function ComboSpotCard({ spot, index }: { spot: ComboSpot; index: number 
             <p className="text-xs text-amber-800"><span className="font-semibold">Insider tip:</span> {spot.insiderTip}</p>
           </div>
         )}
-      </div>
-    </div>
+      </CardContent>
+    </Card>
   );
 }

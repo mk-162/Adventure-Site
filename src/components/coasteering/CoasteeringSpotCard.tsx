@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
 import { 
   MapPin, 
   Star,
@@ -55,11 +56,11 @@ export function CoasteeringSpotCards({ spots }: CoasteeringSpotCardProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {spots.map((spot) => (
-        <div
+        <Card
           key={spot.slug}
-          className="bg-white rounded-2xl border-2 border-gray-200 shadow-sm hover:shadow-lg transition-all overflow-hidden"
+          className="border-2 shadow-sm hover:shadow-lg transition-all overflow-hidden"
         >
-          <div className="p-6">
+          <CardContent className="p-6">
             <div className="flex items-start justify-between mb-3">
               <div>
                 <h3 className="text-xl font-bold text-primary mb-1">
@@ -116,10 +117,10 @@ export function CoasteeringSpotCards({ spots }: CoasteeringSpotCardProps) {
                 <>More info <ChevronDown className="h-4 w-4" /></>
               )}
             </button>
-          </div>
+          </CardContent>
 
           {expandedId === spot.slug && (
-            <div className="border-t border-gray-200 p-6 bg-gray-50 space-y-4">
+            <CardContent className="border-t border-gray-200 p-6 bg-gray-50 space-y-4">
               <p className="text-sm text-gray-700 leading-relaxed">
                 {spot.description}
               </p>
@@ -158,9 +159,9 @@ export function CoasteeringSpotCards({ spots }: CoasteeringSpotCardProps) {
               >
                 Get Directions
               </a>
-            </div>
+            </CardContent>
           )}
-        </div>
+        </Card>
       ))}
     </div>
   );

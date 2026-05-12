@@ -1,4 +1,4 @@
-import jwt from "jsonwebtoken";
+import * as jose from "jose";
 import { cookies } from "next/headers";
 import { db } from "@/db";
 import { adminUsers } from "@/db/schema";
@@ -8,8 +8,9 @@ const _JWT_SECRET = process.env.JWT_SECRET || process.env.ADMIN_SECRET;
 if (!_JWT_SECRET && process.env.NODE_ENV === "production") {
   throw new Error("JWT_SECRET or ADMIN_SECRET must be set in production");
 }
-const JWT_SECRET = _JWT_SECRET ?? "";
+const SECRET_KEY = new TextEncoder().encode(_JWT_SECRET ?? "");
 const COOKIE_NAME = "admin_token";
+const ALG = "HS256";
 
 export interface AdminSession {
   id: number;
@@ -21,17 +22,31 @@ export interface AdminSession {
 /**
  * Create a signed JWT for an admin user.
  */
-export function createAdminToken(payload: AdminSession): string {
-  return jwt.sign(payload, JWT_SECRET, { expiresIn: "7d" });
+export async function createAdminToken(payload: AdminSession): Promise<string> {
+  return new jose.SignJWT({ ...payload })
+    .setProtectedHeader({ alg: ALG })
+    .setIssuedAt()
+    .setExpirationTime("7d")
+    .sign(SECRET_KEY);
 }
 
 /**
  * Verify an admin JWT token. Returns the session or null.
  */
-export function verifyAdminToken(token: string): AdminSession | null {
+export async function verifyAdminToken(token: string): Promise<AdminSession | null> {
   try {
-    const decoded = jwt.verify(token, JWT_SECRET) as AdminSession;
-    if (decoded.id && decoded.email) return decoded;
+    const { payload } = await jose.jwtVerify(token, SECRET_KEY);
+    if (
+      typeof payload.id === "number" &&
+      typeof payload.email === "string"
+    ) {
+      return {
+        id: payload.id,
+        email: payload.email,
+        name: (payload.name as string | null) ?? null,
+        role: (payload.role as AdminSession["role"]) ?? "viewer",
+      };
+    }
   } catch {
     // Invalid or expired token
   }
@@ -82,5 +97,5 @@ export async function authenticateAdmin(
     role: user[0].role,
   };
 
-  return { token: createAdminToken(session), session };
+  return { token: await createAdminToken(session), session };
 }

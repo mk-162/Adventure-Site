@@ -25,7 +25,7 @@ export async function POST(request: Request) {
     const cookieHeader = request.headers.get("cookie") ?? "";
     const adminTokenMatch = cookieHeader.match(/(?:^|;\s*)admin_token=([^;]+)/);
     const adminTokenValue = adminTokenMatch ? decodeURIComponent(adminTokenMatch[1]) : null;
-    const adminSession = adminTokenValue ? verifyAdminToken(adminTokenValue) : null;
+    const adminSession = adminTokenValue ? await verifyAdminToken(adminTokenValue) : null;
     if (!operatorSession && !adminSession) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }

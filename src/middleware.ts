@@ -24,9 +24,25 @@ export async function middleware(request: NextRequest) {
     const adminPassword =
       process.env.ADMIN_PASSWORD || process.env.ADMIN_SECRET;
 
-    // If no password is set, allow access (dev mode)
+    // Fail closed: if no secret is configured, deny all admin access.
+    // In dev you must still set ADMIN_PASSWORD (or ALLOW_OPEN_ADMIN_DEV=1).
     if (!adminPassword) {
-      return NextResponse.next();
+      if (
+        process.env.NODE_ENV !== "production" &&
+        process.env.ALLOW_OPEN_ADMIN_DEV === "1"
+      ) {
+        return NextResponse.next();
+      }
+      const body = JSON.stringify({ error: "Admin is not configured on this server" });
+      if (pathname.startsWith("/api/")) {
+        return new NextResponse(body, {
+          status: 503,
+          headers: { "Content-Type": "application/json" },
+        });
+      }
+      const loginUrl = new URL("/admin/login", request.url);
+      loginUrl.searchParams.set("error", "misconfigured");
+      return NextResponse.redirect(loginUrl);
     }
 
     // Check for admin token in cookies

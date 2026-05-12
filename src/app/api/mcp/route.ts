@@ -373,10 +373,54 @@ async function handleMCPRequest(request: MCPRequest) {
   }
 }
 
+// Constant-time string comparison to prevent timing attacks
+function safeEqual(a: string, b: string): boolean {
+  const aBytes = new TextEncoder().encode(a);
+  const bBytes = new TextEncoder().encode(b);
+  if (aBytes.length !== bBytes.length) return false;
+  return crypto.subtle
+    ? crypto.subtle.timingSafeEqual
+      ? false // handled below via timingSafeEqual
+      : aBytes.every((v, i) => v === bBytes[i])
+    : aBytes.every((v, i) => v === bBytes[i]);
+}
+
+function timingSafeStringEqual(a: string, b: string): boolean {
+  try {
+    const aBytes = new TextEncoder().encode(a.padEnd(64));
+    const bBytes = new TextEncoder().encode(b.padEnd(64));
+    // Node crypto.timingSafeEqual works on equal-length buffers
+    const { timingSafeEqual } = require('crypto') as typeof import('crypto');
+    return timingSafeEqual(Buffer.from(aBytes), Buffer.from(bBytes)) && a.length === b.length;
+  } catch {
+    return safeEqual(a, b);
+  }
+}
+
 // POST handler for MCP requests
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
+
+    // tools/call requires a valid MCP_API_KEY bearer token
+    if (body?.method === 'tools/call') {
+      const mcpKey = process.env.MCP_API_KEY;
+      if (!mcpKey) {
+        return NextResponse.json(
+          { jsonrpc: '2.0', id: body.id ?? null, error: { code: -32001, message: 'Unauthorized' } },
+          { status: 401 }
+        );
+      }
+      const authHeader = request.headers.get('authorization') ?? '';
+      const token = authHeader.startsWith('Bearer ') ? authHeader.slice(7) : '';
+      if (!timingSafeStringEqual(token, mcpKey)) {
+        return NextResponse.json(
+          { jsonrpc: '2.0', id: body.id ?? null, error: { code: -32001, message: 'Unauthorized' } },
+          { status: 401 }
+        );
+      }
+    }
+
     const response = await handleMCPRequest(body);
     return NextResponse.json(response);
   } catch (error: any) {

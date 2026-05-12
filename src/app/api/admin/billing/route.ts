@@ -19,17 +19,19 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Stripe not configured" }, { status: 503 });
   }
 
-  const { action, operatorId, priceId } = await req.json();
-
-  const operator = await db.query.operators.findFirst({
-    where: eq(operators.id, operatorId),
-  });
-
-  if (!operator) {
-    return NextResponse.json({ error: "Operator not found" }, { status: 404 });
-  }
-
+  let action: string | undefined;
   try {
+    const body = await req.json();
+    action = body.action;
+    const { operatorId, priceId } = body;
+
+    const operator = await db.query.operators.findFirst({
+      where: eq(operators.id, operatorId),
+    });
+
+    if (!operator) {
+      return NextResponse.json({ error: "Operator not found" }, { status: 404 });
+    }
     switch (action) {
       case "create-customer": {
         if (operator.stripeCustomerId) {

@@ -3,6 +3,7 @@ import path from 'path';
 import { mkdir } from 'fs/promises';
 import sharp from 'sharp';
 import { getOperatorSession } from '@/lib/auth';
+import { verifyAdminToken } from '@/lib/admin-auth';
 
 const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
 const MAX_SIZE = 5 * 1024 * 1024; // 5MB
@@ -19,9 +20,13 @@ const ALLOWED_FOLDERS = [
 export async function POST(request: Request) {
   try {
     // Auth check — only operators and admins can upload
-    const session = await getOperatorSession();
-    const adminToken = request.headers.get("cookie")?.includes("admin_token");
-    if (!session && !adminToken) {
+    const operatorSession = await getOperatorSession();
+    // Parse admin_token cookie value and verify it as a JWT
+    const cookieHeader = request.headers.get("cookie") ?? "";
+    const adminTokenMatch = cookieHeader.match(/(?:^|;\s*)admin_token=([^;]+)/);
+    const adminTokenValue = adminTokenMatch ? decodeURIComponent(adminTokenMatch[1]) : null;
+    const adminSession = adminTokenValue ? verifyAdminToken(adminTokenValue) : null;
+    if (!operatorSession && !adminSession) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 

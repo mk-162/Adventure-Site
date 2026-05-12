@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --max-warnings=624",
+    "lint": "eslint . --max-warnings=623",
     "typecheck": "tsc --noEmit",
     "prepare": "husky",
     "db:generate": "drizzle-kit generate",
@@ -27,7 +27,6 @@
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
     "@vercel/blob": "^2.1.0",
-    "@vercel/postgres": "^0.10.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "csv-parse": "^6.1.0",

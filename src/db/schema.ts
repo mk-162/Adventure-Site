@@ -773,6 +773,18 @@ export const pageAds = pgTable("page_ads", {
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
 
+// Ad impression events
+export const adImpressions = pgTable("ad_impressions", {
+  id: serial("id").primaryKey(),
+  slotName: varchar("slot_name", { length: 100 }).notNull(),
+  pageType: varchar("page_type", { length: 100 }).notNull(),
+  pageSlug: varchar("page_slug", { length: 255 }),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+}, (table) => [
+  index("ad_impressions_slot_name_idx").on(table.slotName),
+  index("ad_impressions_page_type_idx").on(table.pageType),
+]);
+
 // Page sponsors
 export const pageSponsors = pgTable("page_sponsors", {
   id: serial("id").primaryKey(),

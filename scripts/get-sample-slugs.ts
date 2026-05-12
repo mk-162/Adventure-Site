@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { sql } from "@vercel/postgres";
+import { sql } from "./sql";
 
 async function main() {
   const regions = await sql`SELECT slug FROM regions WHERE status='published' LIMIT 3`;

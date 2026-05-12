@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 
-import { sql } from '@vercel/postgres';
+import { sql } from './sql';
 import * as fs from 'fs';
 import * as path from 'path';
 

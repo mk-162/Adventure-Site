@@ -1,4 +1,4 @@
-import { sql } from '@vercel/postgres';
+import { sql } from './sql';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'js-yaml';

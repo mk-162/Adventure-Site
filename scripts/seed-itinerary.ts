@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { sql } from "@vercel/postgres";
+import { sql } from "./sql";
 import { genericStops } from "../src/lib/generic-stops";
 
 async function seedItinerary() {

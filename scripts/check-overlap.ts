@@ -1,6 +1,6 @@
-// @ts-nocheck TODO: fix @vercel/postgres Primitive type mismatches when consolidating to Drizzle (Phase 3.3)
+// @ts-nocheck TODO: fix SQL adapter type mismatches when consolidating to Drizzle (Phase 3.3)
 import "dotenv/config";
-import { sql } from "@vercel/postgres";
+import { sql } from "./sql";
 import { readdirSync } from "fs";
 import { join } from "path";
 

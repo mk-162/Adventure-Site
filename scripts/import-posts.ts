@@ -1,5 +1,5 @@
 #!/usr/bin/env tsx
-import { sql } from '@vercel/postgres';
+import { sql } from './sql';
 import { readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 

@@ -47,7 +47,7 @@ TECHNICAL NOTES:
 ---------------
 - Fixed frontmatter parsing edge case (handled 'yaml' line before ---)
 - Implemented field length validation to prevent varchar overflow errors
-- Used @vercel/postgres directly as requested
+- Used the shared Neon SQL adapter
 - All timestamps set to NOW()
 - Region slugs successfully mapped to region IDs
 

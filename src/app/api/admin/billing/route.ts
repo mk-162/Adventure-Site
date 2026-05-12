@@ -129,6 +129,6 @@ export async function POST(req: NextRequest) {
     }
   } catch (err: any) {
     console.error(`[Admin Billing] ${action} failed:`, err.message);
-    return NextResponse.json({ error: err.message }, { status: 500 });
+    return NextResponse.json({ error: "Internal error" }, { status: 500 });
   }
 }

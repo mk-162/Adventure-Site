@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db";
+import { validateCmsBody, isAllowedFilterKey } from "@/lib/api/validate";
 import {
   regions,
   activities,
@@ -112,10 +113,10 @@ export async function GET(
   
   const conditions = [];
 
-  // Basic filters from query params (exclude special params)
+  // Basic filters from query params — only allow-listed keys accepted
   for (const [key, value] of searchParams.entries()) {
     if (['limit', 'offset', 'search', 'sort', 'order', 'id'].includes(key)) continue;
-    
+    if (!isAllowedFilterKey(contentType, key)) continue;
     if (key in table) {
       conditions.push(eq(table[key], value));
     }
@@ -151,8 +152,8 @@ export async function GET(
     const results = await query;
     return NextResponse.json(results);
   } catch (error: any) {
-    console.error(error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    console.error("[CMS GET]", error);
+    return NextResponse.json({ error: "Internal error" }, { status: 500 });
   }
 }
 
@@ -168,8 +169,13 @@ export async function POST(
   }
 
   try {
-    const body = await request.json();
-    
+    const rawBody = await request.json();
+    const validated = validateCmsBody(contentType, rawBody);
+    if (!validated.success) {
+      return NextResponse.json({ error: "Validation failed", issues: validated.issues }, { status: 400 });
+    }
+    const body: Record<string, unknown> = validated.data;
+
     // Calculate completeness score if applicable
     if ('completenessScore' in table) {
       body.completenessScore = calculateCompleteness(contentType, body);
@@ -183,11 +189,11 @@ export async function POST(
       }
     }
 
-    const result = await db.insert(table).values(body).returning() as any[];
+    const result = await db.insert(table).values(body as any).returning() as any[];
     return NextResponse.json(result[0]);
   } catch (error: any) {
-    console.error(error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    console.error("[CMS POST]", error);
+    return NextResponse.json({ error: "Internal error" }, { status: 500 });
   }
 }
 
@@ -203,35 +209,41 @@ export async function PATCH(
   }
 
   try {
-    const body = await request.json();
-    const { id, ...updates } = body;
+    const rawBody = await request.json();
+    const { id, ...patchFields } = rawBody as Record<string, unknown>;
 
     if (!id) {
       return NextResponse.json({ error: "ID required in body" }, { status: 400 });
     }
 
+    const validated = validateCmsBody(contentType, patchFields);
+    if (!validated.success) {
+      return NextResponse.json({ error: "Validation failed", issues: validated.issues }, { status: 400 });
+    }
+    const updates: Record<string, unknown> = validated.data;
+
     // Calculate completeness score if applicable
     if ('completenessScore' in table) {
-      const current = await db.select().from(table).where(eq(table.id, id)).limit(1);
+      const current = await db.select().from(table).where(eq(table.id, id as number)).limit(1);
       if (current.length > 0) {
         const merged = { ...current[0], ...updates };
         updates.completenessScore = calculateCompleteness(contentType, merged);
       }
     }
-    
+
     if ('updatedAt' in table) {
       updates.updatedAt = new Date();
     }
 
     const result = await db.update(table)
-      .set(updates)
-      .where(eq(table.id, id))
+      .set(updates as any)
+      .where(eq(table.id, id as number))
       .returning() as any[];
 
     return NextResponse.json(result[0]);
   } catch (error: any) {
-    console.error(error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    console.error("[CMS PATCH]", error);
+    return NextResponse.json({ error: "Internal error" }, { status: 500 });
   }
 }
 
@@ -269,7 +281,7 @@ export async function DELETE(
       return NextResponse.json(result[0]);
     }
   } catch (error: any) {
-    console.error(error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    console.error("[CMS DELETE]", error);
+    return NextResponse.json({ error: "Internal error" }, { status: 500 });
   }
 }

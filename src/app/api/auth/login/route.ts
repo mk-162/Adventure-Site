@@ -3,6 +3,10 @@ import { db } from "@/db";
 import { operators, magicLinks } from "@/db/schema";
 import { eq, or } from "drizzle-orm";
 import { sendMagicLink } from "@/lib/email";
+import { checkRateLimit } from "@/lib/rate-limit";
+
+const RATE_LIMIT_EMAIL = { limit: 5, windowMs: 60 * 60 * 1000 };   // 5 per email per hour
+const RATE_LIMIT_IP    = { limit: 20, windowMs: 60 * 60 * 1000 };  // 20 per IP per hour
 
 export async function POST(req: NextRequest) {
   try {
@@ -11,6 +15,15 @@ export async function POST(req: NextRequest) {
 
     if (!email) {
       return NextResponse.json({ error: "Email is required" }, { status: 400 });
+    }
+
+    // Rate limiting
+    const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
+    if (!checkRateLimit(`login:email:${email}`, RATE_LIMIT_EMAIL.limit, RATE_LIMIT_EMAIL.windowMs)) {
+      return NextResponse.json({ error: "Too many requests. Please try again later." }, { status: 429 });
+    }
+    if (!checkRateLimit(`login:ip:${ip}`, RATE_LIMIT_IP.limit, RATE_LIMIT_IP.windowMs)) {
+      return NextResponse.json({ error: "Too many requests. Please try again later." }, { status: 429 });
     }
 
     // Find operators associated with this email
@@ -27,14 +40,6 @@ export async function POST(req: NextRequest) {
       // "Returns success"
       return NextResponse.json({ success: true });
     }
-
-    // Rate limiting logic could go here (5 per email per hour)
-
-    // Send link for each operator (or just the first one if we assume unique)
-    // To avoid spam, if > 3 maybe we group them?
-    // For now, I'll just handle the first one or loop.
-    // The prompt implies a simple login flow.
-    // I'll send for ALL matching operators.
 
     for (const operator of matchingOperators) {
       const token = crypto.randomUUID();

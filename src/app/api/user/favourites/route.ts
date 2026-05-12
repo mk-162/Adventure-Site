@@ -13,7 +13,7 @@ export async function GET(req: NextRequest) {
 
   const type = req.nextUrl.searchParams.get("type"); // optional filter
 
-  let conditions = [eq(userFavourites.userId, session.userId)];
+  const conditions = [eq(userFavourites.userId, session.userId)];
   if (type) {
     conditions.push(eq(userFavourites.favouriteType, type));
   }

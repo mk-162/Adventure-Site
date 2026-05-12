@@ -278,7 +278,7 @@ export async function getTopTips(limit: number = 5): Promise<VoiceTip[]> {
 
 export async function voteForComment(commentId: number, voteType: 'up' | 'down' = 'up') {
   const cookieStore = await cookies();
-  let sessionId = cookieStore.get("aw_session_id")?.value;
+  const sessionId = cookieStore.get("aw_session_id")?.value;
 
   if (!sessionId) return { success: false, message: "No session found" };
 
@@ -322,7 +322,7 @@ export async function voteForComment(commentId: number, voteType: 'up' | 'down' 
 
 export async function updateTipSummary(tipId: number, newTitle: string, newSummary: string) {
   const cookieStore = await cookies();
-  let sessionId = cookieStore.get("aw_session_id")?.value;
+  const sessionId = cookieStore.get("aw_session_id")?.value;
 
   if (!sessionId) return { success: false, message: "No session found" };
 
@@ -355,7 +355,7 @@ export async function updateTipSummary(tipId: number, newTitle: string, newSumma
 
 export async function deleteTip(tipId: number) {
   const cookieStore = await cookies();
-  let sessionId = cookieStore.get("aw_session_id")?.value;
+  const sessionId = cookieStore.get("aw_session_id")?.value;
 
   if (!sessionId) return { success: false, message: "No session found" };
 

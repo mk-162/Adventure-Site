@@ -1192,7 +1192,7 @@ export async function getItineraryWithStops(slug: string) {
     .filter((id): id is number => id !== null);
 
   const allAltIds = [...new Set([...wetAltIds, ...budgetAltIds])];
-  let altActivitiesMap: Record<number, typeof activities.$inferSelect> = {};
+  const altActivitiesMap: Record<number, typeof activities.$inferSelect> = {};
 
   if (allAltIds.length > 0) {
     const altResults = await db

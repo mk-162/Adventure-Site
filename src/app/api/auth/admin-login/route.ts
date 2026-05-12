@@ -5,10 +5,10 @@ export async function POST(request: Request) {
   const body = await request.json();
   const { email, password } = body;
 
-  // Support both new (email + password) and legacy (password only) flows
-  const result = email
-    ? await authenticateAdmin(email, password)
-    : await authenticateAdmin(password || body.password);
+  if (!email || !password) {
+    return NextResponse.json({ error: "email and password are required" }, { status: 400 });
+  }
+  const result = await authenticateAdmin(email, password);
 
   if (!result) {
     return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });

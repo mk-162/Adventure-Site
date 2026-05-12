@@ -26,29 +26,15 @@ export function createAdminToken(payload: AdminSession): string {
 }
 
 /**
- * Verify an admin token. Returns the session or null.
- * Also handles legacy shared-password tokens (plain string match).
+ * Verify an admin JWT token. Returns the session or null.
  */
 export function verifyAdminToken(token: string): AdminSession | null {
-  // Try JWT first
   try {
     const decoded = jwt.verify(token, JWT_SECRET) as AdminSession;
     if (decoded.id && decoded.email) return decoded;
   } catch {
-    // Not a JWT — check legacy shared password
+    // Invalid or expired token
   }
-
-  // Legacy: token is the raw ADMIN_PASSWORD
-  const adminPassword = process.env.ADMIN_PASSWORD || process.env.ADMIN_SECRET;
-  if (adminPassword && token === adminPassword) {
-    return {
-      id: 0,
-      email: "admin@local",
-      name: "Legacy Admin",
-      role: "super",
-    };
-  }
-
   return null;
 }
 
@@ -64,27 +50,11 @@ export async function getAdminSession(): Promise<AdminSession | null> {
 
 /**
  * Authenticate an admin by email + password.
- * Falls back to shared ADMIN_PASSWORD for backwards compatibility.
  */
 export async function authenticateAdmin(
   emailOrPassword: string,
-  password?: string
+  password: string
 ): Promise<{ token: string; session: AdminSession } | null> {
-  // If only one arg provided, try legacy shared password
-  if (!password) {
-    const adminPassword = process.env.ADMIN_PASSWORD || process.env.ADMIN_SECRET;
-    if (adminPassword && emailOrPassword === adminPassword) {
-      const session: AdminSession = {
-        id: 0,
-        email: "admin@local",
-        name: "Legacy Admin",
-        role: "super",
-      };
-      return { token: createAdminToken(session), session };
-    }
-    return null;
-  }
-
   // Email + password flow: look up admin user
   const adminPassword = process.env.ADMIN_PASSWORD || process.env.ADMIN_SECRET;
 

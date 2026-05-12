@@ -9,6 +9,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
+import { timingSafeEqual } from 'crypto';
 import { db } from '@/db';
 import { 
   activities, 
@@ -373,27 +374,13 @@ async function handleMCPRequest(request: MCPRequest) {
   }
 }
 
-// Constant-time string comparison to prevent timing attacks
-function safeEqual(a: string, b: string): boolean {
-  const aBytes = new TextEncoder().encode(a);
-  const bBytes = new TextEncoder().encode(b);
-  if (aBytes.length !== bBytes.length) return false;
-  return crypto.subtle
-    ? crypto.subtle.timingSafeEqual
-      ? false // handled below via timingSafeEqual
-      : aBytes.every((v, i) => v === bBytes[i])
-    : aBytes.every((v, i) => v === bBytes[i]);
-}
-
 function timingSafeStringEqual(a: string, b: string): boolean {
   try {
     const aBytes = new TextEncoder().encode(a.padEnd(64));
     const bBytes = new TextEncoder().encode(b.padEnd(64));
-    // Node crypto.timingSafeEqual works on equal-length buffers
-    const { timingSafeEqual } = require('crypto') as typeof import('crypto');
     return timingSafeEqual(Buffer.from(aBytes), Buffer.from(bBytes)) && a.length === b.length;
   } catch {
-    return safeEqual(a, b);
+    return false;
   }
 }
 

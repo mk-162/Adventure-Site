@@ -45,9 +45,6 @@ export async function middleware(request: NextRequest) {
       return NextResponse.redirect(loginUrl);
     }
 
-    // Check for admin token in cookies
-    const adminToken = request.cookies.get("admin_token")?.value;
-
     // JWT-only verification — no legacy password-as-cookie path
     const adminToken = request.cookies.get("admin_token")?.value;
     if (adminToken) {

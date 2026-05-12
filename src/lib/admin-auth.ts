@@ -4,7 +4,11 @@ import { db } from "@/db";
 import { adminUsers } from "@/db/schema";
 import { eq } from "drizzle-orm";
 
-const JWT_SECRET = process.env.JWT_SECRET || process.env.ADMIN_SECRET || "dev-secret";
+const _JWT_SECRET = process.env.JWT_SECRET || process.env.ADMIN_SECRET;
+if (!_JWT_SECRET && process.env.NODE_ENV === "production") {
+  throw new Error("JWT_SECRET or ADMIN_SECRET must be set in production");
+}
+const JWT_SECRET = _JWT_SECRET ?? "";
 const COOKIE_NAME = "admin_token";
 
 export interface AdminSession {

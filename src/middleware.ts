@@ -2,7 +2,14 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import * as jose from "jose";
 
-const JWT_SECRET_RAW = process.env.JWT_SECRET || process.env.ADMIN_SECRET || "dev-secret";
+const _JWT_SECRET_RAW = process.env.JWT_SECRET || process.env.ADMIN_SECRET;
+if (!_JWT_SECRET_RAW && process.env.NODE_ENV === "production") {
+  throw new Error("JWT_SECRET or ADMIN_SECRET must be set in production");
+}
+if (!_JWT_SECRET_RAW) {
+  console.warn("[middleware] JWT_SECRET is not set — admin JWT verification will fail");
+}
+const JWT_SECRET_RAW = _JWT_SECRET_RAW ?? "";
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;

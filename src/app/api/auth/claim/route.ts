@@ -3,15 +3,25 @@ import { db } from "@/db";
 import { operators, operatorClaims, magicLinks } from "@/db/schema";
 import { eq, and, gt, count } from "drizzle-orm";
 import { sendMagicLink } from "@/lib/email";
+import { z } from "zod";
+
+const ClaimBody = z.object({
+  operatorSlug: z.string().min(1).max(255),
+  name: z.string().min(1).max(255),
+  email: z.string().email(),
+  role: z.string().max(100).optional(),
+});
 
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json();
-    const { operatorSlug, name, email, role } = body;
+    const parsed = ClaimBody.safeParse(await req.json().catch(() => null));
 
-    if (!operatorSlug || !name || !email) {
-      return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+    if (!parsed.success) {
+      return NextResponse.json({ error: "Invalid body" }, { status: 400 });
     }
+
+    const { operatorSlug, name, email, role } = parsed.data;
+    const normalizedEmail = email.toLowerCase();
 
     const ip = req.headers.get("x-forwarded-for") || "unknown";
 
@@ -21,7 +31,7 @@ export async function POST(req: NextRequest) {
       .from(operatorClaims)
       .where(
         and(
-          eq(operatorClaims.claimantEmail, email),
+          eq(operatorClaims.claimantEmail, normalizedEmail),
           gt(operatorClaims.createdAt, new Date(Date.now() - 24 * 60 * 60 * 1000))
         )
       );
@@ -75,7 +85,7 @@ export async function POST(req: NextRequest) {
     await db.insert(operatorClaims).values({
       operatorId: operator.id,
       claimantName: name,
-      claimantEmail: email,
+      claimantEmail: normalizedEmail,
       claimantRole: role,
       verificationMethod: "email",
       status: "pending",
@@ -87,7 +97,7 @@ export async function POST(req: NextRequest) {
     const expiresAt = new Date(Date.now() + 48 * 60 * 60 * 1000); // 48h
 
     await db.insert(magicLinks).values({
-      email,
+      email: normalizedEmail,
       token,
       operatorId: operator.id,
       purpose: "claim",
@@ -96,7 +106,7 @@ export async function POST(req: NextRequest) {
 
     // Send email
     await sendMagicLink({
-      to: email,
+      to: normalizedEmail,
       operatorName: operator.name,
       token,
       purpose: "claim",

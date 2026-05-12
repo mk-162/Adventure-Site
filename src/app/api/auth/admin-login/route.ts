@@ -1,13 +1,20 @@
 import { NextResponse } from "next/server";
 import { authenticateAdmin } from "@/lib/admin-auth";
+import { z } from "zod";
+
+const AdminLoginBody = z.object({
+  email: z.string().email(),
+  password: z.string().min(1),
+});
 
 export async function POST(request: Request) {
-  const body = await request.json();
-  const { email, password } = body;
+  const parsed = AdminLoginBody.safeParse(await request.json().catch(() => null));
 
-  if (!email || !password) {
-    return NextResponse.json({ error: "email and password are required" }, { status: 400 });
+  if (!parsed.success) {
+    return NextResponse.json({ error: "Invalid body" }, { status: 400 });
   }
+
+  const { email, password } = parsed.data;
   const result = await authenticateAdmin(email, password);
 
   if (!result) {

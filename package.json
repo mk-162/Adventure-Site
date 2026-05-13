@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --max-warnings=623",
+    "lint": "eslint . --max-warnings=579",
     "typecheck": "tsc --noEmit",
     "prepare": "husky",
     "db:generate": "drizzle-kit generate",

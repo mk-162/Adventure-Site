@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Clock, Star, Ticket, Camera } from "lucide-react";
 import { Badge, DifficultyBadge, PriceBadge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -239,9 +240,12 @@ export function ActivityCard({
       <Card className="overflow-hidden">
         {/* Image */}
         <div className="relative h-36 overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url('${imageUrl}')` }}
+          <Image
+            src={imageUrl}
+            alt={activity.name}
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           />
         </div>
 
@@ -282,9 +286,12 @@ export function ActivityCard({
 
         {/* Image */}
         <div className="relative w-32 h-32 flex-shrink-0 overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-            style={{ backgroundImage: `url('${imageUrl}')` }}
+          <Image
+            src={imageUrl}
+            alt={activity.name}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-110"
+            sizes="128px"
           />
         </div>
 
@@ -360,9 +367,12 @@ export function ActivityCard({
 
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-          style={{ backgroundImage: `url('${imageUrl}')` }}
+        <Image
+          src={imageUrl}
+          alt={activity.name}
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-110"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

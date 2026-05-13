@@ -70,12 +70,6 @@ export const tagTypeEnum = pgEnum("tag_type", [
   "region",
 ]);
 
-export const commentStatusEnum = pgEnum("comment_status", [
-  "pending",
-  "approved",
-  "rejected",
-]);
-
 // =====================
 // CORE CONTENT TABLES
 // =====================
@@ -1330,61 +1324,8 @@ export const userFavourites = pgTable("user_favourites", {
 
 export const usersRelations = relations(users, ({ many }) => ({
   favourites: many(userFavourites),
-  comments: many(comments),
 }));
 
 export const userFavouritesRelations = relations(userFavourites, ({ one }) => ({
   user: one(users, { fields: [userFavourites.userId], references: [users.id] }),
-}));
-
-
-// =====================
-// COMMENTS / VOICE TIPS
-// =====================
-
-export const comments = pgTable("comments", {
-  id: serial("id").primaryKey(),
-  pageSlug: varchar("page_slug", { length: 255 }).notNull(),
-  pageType: varchar("page_type", { length: 50 }).notNull(), // 'activity', 'operator', 'advertiser'
-  userId: integer("user_id").references(() => users.id), // Optional, linked to users if logged in
-  sessionId: varchar("session_id", { length: 255 }), // For tracking anonymous submissions
-  parentId: integer("parent_id"), // For reply threads (self-referencing)
-  audioUrl: text("audio_url"),
-  transcript: text("transcript"), // Full text
-  summary: text("summary"), // AI summarized/cleaned version
-  title: varchar("title", { length: 255 }), // AI-generated or user-edited title
-  duration: integer("duration"), // Audio duration in seconds
-  authorName: varchar("author_name", { length: 255 }), // Display name (anonymous if not logged in)
-  authorAvatar: text("author_avatar"), // Avatar URL
-  waveformData: jsonb("waveform_data"), // Array of waveform peaks for playback visualization
-  status: commentStatusEnum("status").default("pending").notNull(),
-  votes: integer("votes").default(0).notNull(),
-  downvotes: integer("downvotes").default(0).notNull(),
-  moderationReason: text("moderation_reason"), // Reason if rejected/needs refinement
-  createdAt: timestamp("created_at").defaultNow().notNull(),
-}, (table) => [
-  index("comments_page_slug_idx").on(table.pageSlug),
-  index("comments_page_type_idx").on(table.pageType),
-  index("comments_status_idx").on(table.status),
-  index("comments_parent_id_idx").on(table.parentId),
-  index("comments_votes_idx").on(table.votes),
-]);
-
-export const commentVotes = pgTable("comment_votes", {
-  id: serial("id").primaryKey(),
-  commentId: integer("comment_id").references(() => comments.id).notNull(),
-  sessionId: varchar("session_id", { length: 255 }).notNull(), // Prevent duplicate votes
-  createdAt: timestamp("created_at").defaultNow().notNull(),
-}, (table) => [
-  index("comment_votes_comment_id_idx").on(table.commentId),
-  unique("unique_comment_vote").on(table.commentId, table.sessionId),
-]);
-
-export const commentsRelations = relations(comments, ({ one, many }) => ({
-  user: one(users, { fields: [comments.userId], references: [users.id] }),
-  commentVotes: many(commentVotes),
-}));
-
-export const commentVotesRelations = relations(commentVotes, ({ one }) => ({
-  comment: one(comments, { fields: [commentVotes.commentId], references: [comments.id] }),
 }));

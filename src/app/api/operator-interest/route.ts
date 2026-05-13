@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sql } from "@vercel/postgres";
+import { db } from "@/db";
+import { operatorInterest } from "@/db/schema";
 
 export async function POST(request: NextRequest) {
   try {
@@ -21,33 +22,15 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Ensure table exists
-    await sql`
-      CREATE TABLE IF NOT EXISTS operator_interest (
-        id SERIAL PRIMARY KEY,
-        business_name VARCHAR(255) NOT NULL,
-        contact_name VARCHAR(255) NOT NULL,
-        email VARCHAR(255) NOT NULL,
-        phone VARCHAR(50),
-        num_locations INTEGER DEFAULT 1,
-        plan_interest VARCHAR(50),
-        message TEXT,
-        created_at TIMESTAMP DEFAULT NOW() NOT NULL
-      )
-    `;
-
-    await sql`
-      INSERT INTO operator_interest (business_name, contact_name, email, phone, num_locations, plan_interest, message)
-      VALUES (
-        ${businessName},
-        ${contactName},
-        ${email.toLowerCase()},
-        ${phone || null},
-        ${numLocations || 1},
-        ${planInterest || 'free'},
-        ${message || null}
-      )
-    `;
+    await db.insert(operatorInterest).values({
+      businessName,
+      contactName,
+      email: email.toLowerCase(),
+      phone: phone ?? null,
+      numLocations: numLocations ?? 1,
+      planInterest: planInterest ?? "free",
+      message: message ?? null,
+    });
 
     return NextResponse.json({ success: true });
   } catch (error: unknown) {

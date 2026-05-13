@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { sql } from "@vercel/postgres";
+import { sql } from "./sql";
 import { readdir, readFile } from "fs/promises";
 import { join } from "path";
 

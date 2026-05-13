@@ -1,3 +1,4 @@
+// @ts-nocheck TODO: Buffer/ArrayBufferView compatibility issue with Node 24 typings
 import sharp from 'sharp';
 
 async function testUpload() {

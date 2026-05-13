@@ -94,7 +94,7 @@ Main geocoding script that:
 - Parses CSV files
 - Builds location lookup database
 - Matches activities, accommodation, and events to coordinates
-- Updates database via `@vercel/postgres`
+- Updates database via the shared Neon SQL adapter
 - Logs all updates with detailed output
 
 **Run with:**

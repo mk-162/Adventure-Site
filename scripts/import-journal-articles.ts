@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 import "dotenv/config";
-import { sql } from "@vercel/postgres";
+import { sql } from "./sql";
 import { readdirSync, readFileSync } from "fs";
 import { join } from "path";
 

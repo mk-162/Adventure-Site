@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 
-import { sql } from '@vercel/postgres';
+import { sql } from './sql';
 
 // Manual coordinate fixes for items that couldn't be auto-matched
 const ACTIVITY_FIXES: Record<string, [number, number]> = {

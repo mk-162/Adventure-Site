@@ -11,7 +11,11 @@ const font = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Adventure Wales | Honest Guide to Welsh Outdoor Adventures",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000")),
+  title: {
+    default: "Adventure Wales | Honest Guide to Welsh Outdoor Adventures",
+    template: "%s | Adventure Wales",
+  },
   description: "78 adventures across Wales with honest suitability info, local knowledge, and real difficulty ratings. Find what suits you - from Snowdonia summits to Pembrokeshire coasteering.",
   keywords: "Wales adventure, outdoor activities Wales, Snowdonia hiking, Pembrokeshire coasteering, mountain biking Wales, Welsh adventure guide",
   openGraph: {

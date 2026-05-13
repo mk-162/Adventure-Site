@@ -1,15 +1,30 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sql } from "@vercel/postgres";
+import { db } from "@/db";
+import { adImpressions } from "@/db/schema";
+import { z } from "zod";
+
+const ImpressionBody = z.object({
+  slotName: z.string().min(1).max(100),
+  pageType: z.string().min(1).max(100),
+  pageSlug: z.string().max(255).optional().nullable(),
+});
 
 export async function POST(request: NextRequest) {
   try {
-    const { slotName, pageType, pageSlug } = await request.json();
+    const parsed = ImpressionBody.safeParse(await request.json());
+
+    if (!parsed.success) {
+      return NextResponse.json({ ok: true });
+    }
+
+    const { slotName, pageType, pageSlug } = parsed.data;
 
     // Log impression (fire and forget - don't block on this)
-    sql`
-      INSERT INTO ad_impressions (slot_name, page_type, page_slug, created_at)
-      VALUES (${slotName}, ${pageType}, ${pageSlug || null}, NOW())
-    `.catch(() => {
+    db.insert(adImpressions).values({
+      slotName,
+      pageType,
+      pageSlug: pageSlug || null,
+    }).catch(() => {
       // Silently fail - impressions are non-critical
     });
 

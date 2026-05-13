@@ -4,7 +4,7 @@
  */
 
 import 'dotenv/config';
-import { sql } from '@vercel/postgres';
+import { sql } from './sql';
 import { snowdoniaData } from '../data/regions/snowdonia';
 import { pembrokeshireData } from '../data/regions/pembrokeshire';
 import { breconBeaconsData } from '../data/regions/brecon-beacons';

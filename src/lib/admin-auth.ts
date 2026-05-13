@@ -1,11 +1,16 @@
-import jwt from "jsonwebtoken";
+import * as jose from "jose";
 import { cookies } from "next/headers";
 import { db } from "@/db";
 import { adminUsers } from "@/db/schema";
 import { eq } from "drizzle-orm";
 
-const JWT_SECRET = process.env.JWT_SECRET || process.env.ADMIN_SECRET || "dev-secret";
+const _JWT_SECRET = process.env.JWT_SECRET || process.env.ADMIN_SECRET;
+if (!_JWT_SECRET && process.env.NODE_ENV === "production") {
+  throw new Error("JWT_SECRET or ADMIN_SECRET must be set in production");
+}
+const SECRET_KEY = new TextEncoder().encode(_JWT_SECRET ?? "");
 const COOKIE_NAME = "admin_token";
+const ALG = "HS256";
 
 export interface AdminSession {
   id: number;
@@ -17,34 +22,34 @@ export interface AdminSession {
 /**
  * Create a signed JWT for an admin user.
  */
-export function createAdminToken(payload: AdminSession): string {
-  return jwt.sign(payload, JWT_SECRET, { expiresIn: "7d" });
+export async function createAdminToken(payload: AdminSession): Promise<string> {
+  return new jose.SignJWT({ ...payload })
+    .setProtectedHeader({ alg: ALG })
+    .setIssuedAt()
+    .setExpirationTime("7d")
+    .sign(SECRET_KEY);
 }
 
 /**
- * Verify an admin token. Returns the session or null.
- * Also handles legacy shared-password tokens (plain string match).
+ * Verify an admin JWT token. Returns the session or null.
  */
-export function verifyAdminToken(token: string): AdminSession | null {
-  // Try JWT first
+export async function verifyAdminToken(token: string): Promise<AdminSession | null> {
   try {
-    const decoded = jwt.verify(token, JWT_SECRET) as AdminSession;
-    if (decoded.id && decoded.email) return decoded;
+    const { payload } = await jose.jwtVerify(token, SECRET_KEY);
+    if (
+      typeof payload.id === "number" &&
+      typeof payload.email === "string"
+    ) {
+      return {
+        id: payload.id,
+        email: payload.email,
+        name: (payload.name as string | null) ?? null,
+        role: (payload.role as AdminSession["role"]) ?? "viewer",
+      };
+    }
   } catch {
-    // Not a JWT — check legacy shared password
+    // Invalid or expired token
   }
-
-  // Legacy: token is the raw ADMIN_PASSWORD
-  const adminPassword = process.env.ADMIN_PASSWORD || process.env.ADMIN_SECRET;
-  if (adminPassword && token === adminPassword) {
-    return {
-      id: 0,
-      email: "admin@local",
-      name: "Legacy Admin",
-      role: "super",
-    };
-  }
-
   return null;
 }
 
@@ -60,27 +65,11 @@ export async function getAdminSession(): Promise<AdminSession | null> {
 
 /**
  * Authenticate an admin by email + password.
- * Falls back to shared ADMIN_PASSWORD for backwards compatibility.
  */
 export async function authenticateAdmin(
   emailOrPassword: string,
-  password?: string
+  password: string
 ): Promise<{ token: string; session: AdminSession } | null> {
-  // If only one arg provided, try legacy shared password
-  if (!password) {
-    const adminPassword = process.env.ADMIN_PASSWORD || process.env.ADMIN_SECRET;
-    if (adminPassword && emailOrPassword === adminPassword) {
-      const session: AdminSession = {
-        id: 0,
-        email: "admin@local",
-        name: "Legacy Admin",
-        role: "super",
-      };
-      return { token: createAdminToken(session), session };
-    }
-    return null;
-  }
-
   // Email + password flow: look up admin user
   const adminPassword = process.env.ADMIN_PASSWORD || process.env.ADMIN_SECRET;
 
@@ -108,5 +97,5 @@ export async function authenticateAdmin(
     role: user[0].role,
   };
 
-  return { token: createAdminToken(session), session };
+  return { token: await createAdminToken(session), session };
 }

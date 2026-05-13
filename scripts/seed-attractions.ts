@@ -1,6 +1,6 @@
 
 import "dotenv/config";
-import { sql } from "@vercel/postgres";
+import { sql } from "./sql";
 
 const attractions = [
   { name: "Cardiff Castle", slug: "cardiff-castle", region: "south-wales", description: "2,000 years of history in the heart of Cardiff...", website: "https://www.cardiffcastle.com", lat: 51.4816, lng: -3.1815, priceFrom: 14.50 },

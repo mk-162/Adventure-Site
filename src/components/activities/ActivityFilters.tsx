@@ -106,7 +106,7 @@ export function ActivityFilters({
 
   // Filter and sort activities
   const filteredActivities = useMemo(() => {
-    let result = initialActivities.filter((item) => {
+    const result = initialActivities.filter((item) => {
       // Text search - filter by activity name
       if (searchQuery) {
         const query = searchQuery.toLowerCase();

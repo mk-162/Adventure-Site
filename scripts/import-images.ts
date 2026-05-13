@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { sql } from "@vercel/postgres";
+import { sql } from "./sql";
 
 const UNSPLASH_KEY = "BBqUqpMUJJiKvawiCURPSnrHJmcoajR6ULDyMKzuLu4";
 

@@ -2,23 +2,33 @@ import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db";
 import { users, magicLinks } from "@/db/schema";
 import { eq } from "drizzle-orm";
+import { z } from "zod";
+
+const UserLoginBody = z.object({
+  email: z.string().email(),
+  name: z.string().max(255).optional(),
+  newsletterOptIn: z.boolean().optional(),
+});
 
 export async function POST(req: NextRequest) {
   try {
-    const { email, name, newsletterOptIn } = await req.json();
+    const parsed = UserLoginBody.safeParse(await req.json().catch(() => null));
 
-    if (!email) {
-      return NextResponse.json({ error: "Email is required" }, { status: 400 });
+    if (!parsed.success) {
+      return NextResponse.json({ error: "Invalid body" }, { status: 400 });
     }
+
+    const { name, newsletterOptIn } = parsed.data;
+    const email = parsed.data.email.toLowerCase();
 
     // Find or create user
     let user = await db.query.users.findFirst({
-      where: eq(users.email, email.toLowerCase()),
+      where: eq(users.email, email),
     });
 
     if (!user) {
       const result = await db.insert(users).values({
-        email: email.toLowerCase(),
+        email,
         name: name || null,
         newsletterOptIn: newsletterOptIn ?? false,
       }).returning();
@@ -30,7 +40,7 @@ export async function POST(req: NextRequest) {
     const expiresAt = new Date(Date.now() + 48 * 60 * 60 * 1000);
 
     await db.insert(magicLinks).values({
-      email: email.toLowerCase(),
+      email,
       token,
       purpose: "login",
       expiresAt,
@@ -47,7 +57,7 @@ export async function POST(req: NextRequest) {
 
       await resend.emails.send({
         from: "Adventure Wales <noreply@adventurewales.co.uk>",
-        to: email.toLowerCase(),
+        to: email,
         subject: "Sign in to Adventure Wales",
         html: `
           <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">

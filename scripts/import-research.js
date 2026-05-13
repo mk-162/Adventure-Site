@@ -4,7 +4,7 @@
  * Updates operators and creates new activities.
  */
 
-const { sql } = require('@vercel/postgres');
+const { sql } = require('./sql.cjs');
 const fs = require('fs');
 const path = require('path');
 

@@ -9,6 +9,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
+import { timingSafeEqual } from 'crypto';
 import { db } from '@/db';
 import { 
   activities, 
@@ -373,10 +374,40 @@ async function handleMCPRequest(request: MCPRequest) {
   }
 }
 
+function timingSafeStringEqual(a: string, b: string): boolean {
+  try {
+    const aBytes = new TextEncoder().encode(a.padEnd(64));
+    const bBytes = new TextEncoder().encode(b.padEnd(64));
+    return timingSafeEqual(Buffer.from(aBytes), Buffer.from(bBytes)) && a.length === b.length;
+  } catch {
+    return false;
+  }
+}
+
 // POST handler for MCP requests
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
+
+    // tools/call requires a valid MCP_API_KEY bearer token
+    if (body?.method === 'tools/call') {
+      const mcpKey = process.env.MCP_API_KEY;
+      if (!mcpKey) {
+        return NextResponse.json(
+          { jsonrpc: '2.0', id: body.id ?? null, error: { code: -32001, message: 'Unauthorized' } },
+          { status: 401 }
+        );
+      }
+      const authHeader = request.headers.get('authorization') ?? '';
+      const token = authHeader.startsWith('Bearer ') ? authHeader.slice(7) : '';
+      if (!timingSafeStringEqual(token, mcpKey)) {
+        return NextResponse.json(
+          { jsonrpc: '2.0', id: body.id ?? null, error: { code: -32001, message: 'Unauthorized' } },
+          { status: 401 }
+        );
+      }
+    }
+
     const response = await handleMCPRequest(body);
     return NextResponse.json(response);
   } catch (error: any) {

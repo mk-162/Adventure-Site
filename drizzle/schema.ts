@@ -5,7 +5,6 @@ export const adStatus = pgEnum("ad_status", ['draft', 'active', 'paused', 'ended
 export const adminRole = pgEnum("admin_role", ['super', 'admin', 'editor', 'viewer'])
 export const bookingPlatform = pgEnum("booking_platform", ['none', 'beyonk', 'rezdy', 'fareharbor', 'direct'])
 export const claimStatus = pgEnum("claim_status", ['stub', 'claimed', 'premium'])
-export const commentStatus = pgEnum("comment_status", ['pending', 'approved', 'rejected'])
 export const foodType = pgEnum("food_type", ['breakfast', 'lunch', 'dinner', 'snack', 'pub', 'cafe'])
 export const guidePageType = pgEnum("guide_page_type", ['combo', 'best_of'])
 export const operatorCategory = pgEnum("operator_category", ['activity_provider', 'accommodation', 'food_drink', 'gear_rental', 'transport'])
@@ -891,21 +890,6 @@ export const eventSaves = pgTable("event_saves", {
 		}),
 ]);
 
-export const commentVotes = pgTable("comment_votes", {
-	id: serial().primaryKey().notNull(),
-	commentId: integer("comment_id").notNull(),
-	sessionId: varchar("session_id", { length: 255 }).notNull(),
-	createdAt: timestamp("created_at", { mode: 'string' }).defaultNow().notNull(),
-}, (table) => [
-	index("comment_votes_comment_id_idx").using("btree", table.commentId.asc().nullsLast().op("int4_ops")),
-	foreignKey({
-			columns: [table.commentId],
-			foreignColumns: [comments.id],
-			name: "comment_votes_comment_id_comments_id_fk"
-		}),
-	unique("unique_comment_vote").on(table.commentId, table.sessionId),
-]);
-
 export const itineraryStops = pgTable("itinerary_stops", {
 	id: serial().primaryKey().notNull(),
 	itineraryId: integer("itinerary_id").notNull(),
@@ -1233,39 +1217,6 @@ export const events = pgTable("events", {
 			columns: [table.operatorId],
 			foreignColumns: [operators.id],
 			name: "events_operator_id_operators_id_fk"
-		}),
-]);
-
-export const comments = pgTable("comments", {
-	id: serial().primaryKey().notNull(),
-	pageSlug: varchar("page_slug", { length: 255 }).notNull(),
-	pageType: varchar("page_type", { length: 50 }).notNull(),
-	userId: integer("user_id"),
-	sessionId: varchar("session_id", { length: 255 }),
-	audioUrl: text("audio_url"),
-	transcript: text(),
-	summary: text(),
-	status: commentStatus().default('pending').notNull(),
-	votes: integer().default(0).notNull(),
-	createdAt: timestamp("created_at", { mode: 'string' }).defaultNow().notNull(),
-	parentId: integer("parent_id"),
-	title: varchar({ length: 255 }),
-	duration: integer(),
-	authorName: varchar("author_name", { length: 255 }),
-	authorAvatar: text("author_avatar"),
-	waveformData: jsonb("waveform_data"),
-	downvotes: integer().default(0).notNull(),
-	moderationReason: text("moderation_reason"),
-}, (table) => [
-	index("comments_page_slug_idx").using("btree", table.pageSlug.asc().nullsLast().op("text_ops")),
-	index("comments_page_type_idx").using("btree", table.pageType.asc().nullsLast().op("text_ops")),
-	index("comments_parent_id_idx").using("btree", table.parentId.asc().nullsLast().op("int4_ops")),
-	index("comments_status_idx").using("btree", table.status.asc().nullsLast().op("enum_ops")),
-	index("comments_votes_idx").using("btree", table.votes.asc().nullsLast().op("int4_ops")),
-	foreignKey({
-			columns: [table.userId],
-			foreignColumns: [users.id],
-			name: "comments_user_id_users_id_fk"
 		}),
 ]);
 

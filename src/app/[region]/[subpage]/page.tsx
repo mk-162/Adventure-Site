@@ -12,8 +12,7 @@ import { getComboPageData } from "@/lib/combo-data";
 import { getBestListData, getAllBestListSlugs } from "@/lib/best-list-data";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { ComboEnrichment } from "@/components/combo/ComboEnrichment";
-import { VoiceTipsSection } from "@/components/voice-tips";
-import { 
+import {
   ChevronRight, 
   Filter, 
   ChevronDown,
@@ -401,17 +400,6 @@ async function ActivityComboPage({ regionSlug, activitySlug }: { regionSlug: str
             </p>
           </details>
         </div>
-      </div>
-
-      {/* Voice Tips Section */}
-      <div className="mb-10">
-        <VoiceTipsSection 
-          pageSlug={`${activitySlug}-${regionSlug}`} 
-          pageType="combo" 
-          pageName={`${activityType.name} in ${region.name}`}
-          title="Local Tips"
-          subtitle={`Been ${activityType.name.toLowerCase()} in ${region.name}? Share what you learned.`}
-        />
       </div>
 
       {/* You Might Also Like */}

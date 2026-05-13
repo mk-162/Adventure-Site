@@ -1,5 +1,5 @@
 import { relations } from "drizzle-orm/relations";
-import { sites, adCampaigns, advertisers, itineraries, regions, itineraryItems, activities, accommodation, locations, pageAds, pageSponsors, operators, operatorOffers, adSlots, answers, accommodationTags, tags, transport, serviceSlots, activityTypes, adCreatives, contentRules, adminUsers, statusHistory, activityRegions, posts, postTags, itineraryTags, bulkOperations, activityTags, locationTags, users, userFavourites, operatorSessions, magicLinks, operatorClaims, events, eventSaves, comments, commentVotes, itineraryStops, guidePages, outreachCampaigns, outreachRecipients, pageViews, guidePageSpots, advertiserAccounts } from "./schema";
+import { sites, adCampaigns, advertisers, itineraries, regions, itineraryItems, activities, accommodation, locations, pageAds, pageSponsors, operators, operatorOffers, adSlots, answers, accommodationTags, tags, transport, serviceSlots, activityTypes, adCreatives, contentRules, adminUsers, statusHistory, activityRegions, posts, postTags, itineraryTags, bulkOperations, activityTags, locationTags, users, userFavourites, operatorSessions, magicLinks, operatorClaims, events, eventSaves, itineraryStops, guidePages, outreachCampaigns, outreachRecipients, pageViews, guidePageSpots, advertiserAccounts } from "./schema";
 
 export const adCampaignsRelations = relations(adCampaigns, ({one, many}) => ({
 	site: one(sites, {
@@ -396,7 +396,6 @@ export const userFavouritesRelations = relations(userFavourites, ({one}) => ({
 
 export const usersRelations = relations(users, ({many}) => ({
 	userFavourites: many(userFavourites),
-	comments: many(comments),
 }));
 
 export const operatorSessionsRelations = relations(operatorSessions, ({one}) => ({
@@ -440,21 +439,6 @@ export const eventsRelations = relations(events, ({one, many}) => ({
 	operator: one(operators, {
 		fields: [events.operatorId],
 		references: [operators.id]
-	}),
-}));
-
-export const commentVotesRelations = relations(commentVotes, ({one}) => ({
-	comment: one(comments, {
-		fields: [commentVotes.commentId],
-		references: [comments.id]
-	}),
-}));
-
-export const commentsRelations = relations(comments, ({one, many}) => ({
-	commentVotes: many(commentVotes),
-	user: one(users, {
-		fields: [comments.userId],
-		references: [users.id]
 	}),
 }));
 

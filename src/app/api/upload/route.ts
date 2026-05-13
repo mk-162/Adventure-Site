@@ -4,18 +4,10 @@ import { mkdir } from 'fs/promises';
 import sharp from 'sharp';
 import { getOperatorSession } from '@/lib/auth';
 import { verifyAdminToken } from '@/lib/admin-auth';
-
-const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
-const MAX_SIZE = 5 * 1024 * 1024; // 5MB
-const ALLOWED_FOLDERS = [
-  'regions',
-  'activities',
-  'accommodation',
-  'operators',
-  'itineraries',
-  'events',
-  'ads',
-];
+import {
+  uploadFieldsSchema,
+  validateUploadFile,
+} from '@/lib/api/validate';
 
 export async function POST(request: Request) {
   try {
@@ -32,41 +24,28 @@ export async function POST(request: Request) {
 
     const formData = await request.formData();
     const file = formData.get('file') as File | null;
-    const contentType = formData.get('contentType') as string | null;
+    const rawContentType = formData.get('contentType');
 
-    if (!file) {
+    const fieldsParsed = uploadFieldsSchema.safeParse({
+      contentType: typeof rawContentType === 'string' ? rawContentType : undefined,
+    });
+    if (!fieldsParsed.success) {
       return NextResponse.json(
-        { error: 'No file provided' },
+        {
+          error: "Validation failed",
+          details: fieldsParsed.error.issues.map(
+            (i) => `${i.path.join(".") || "body"}: ${i.message}`
+          ),
+        },
         { status: 400 }
       );
     }
+    const { contentType } = fieldsParsed.data;
 
-    if (!contentType) {
-      return NextResponse.json(
-        { error: 'No contentType provided' },
-        { status: 400 }
-      );
-    }
-
-    if (!ALLOWED_FOLDERS.includes(contentType)) {
-      return NextResponse.json(
-        { error: 'Invalid contentType. Allowed values: ' + ALLOWED_FOLDERS.join(', ') },
-        { status: 400 }
-      );
-    }
-
-    if (!ALLOWED_TYPES.includes(file.type)) {
-      return NextResponse.json(
-        { error: 'Invalid file type. Allowed: jpg, png, webp' },
-        { status: 400 }
-      );
-    }
-
-    if (file.size > MAX_SIZE) {
-      return NextResponse.json(
-        { error: 'File size exceeds 5MB limit' },
-        { status: 400 }
-      );
+    const fileCheck = validateUploadFile(file);
+    if (!fileCheck.ok || !file) {
+      const message = fileCheck.ok ? "No file provided" : fileCheck.error;
+      return NextResponse.json({ error: message }, { status: 400 });
     }
 
     const buffer = Buffer.from(await file.arrayBuffer());

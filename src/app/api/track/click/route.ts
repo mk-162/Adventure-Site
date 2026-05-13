@@ -2,15 +2,13 @@ import { NextResponse } from "next/server";
 import { db } from "@/db";
 import { outreachRecipients, outreachCampaigns } from "@/db/schema";
 import { eq, sql } from "drizzle-orm";
+import { trackClickQuerySchema, validateSearchParams } from "@/lib/api/validate";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const recipientId = searchParams.get("r");
-  const destinationUrl = searchParams.get("url");
-
-  if (!destinationUrl) {
-      return new NextResponse("Missing URL", { status: 400 });
-  }
+  const v = validateSearchParams(searchParams, trackClickQuerySchema);
+  if (!v.ok) return v.response;
+  const { r: recipientId, url: destinationUrl } = v.data;
 
   if (recipientId) {
     try {

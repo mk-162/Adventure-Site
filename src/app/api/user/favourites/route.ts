@@ -3,14 +3,11 @@ import { getUserSession } from "@/lib/user-auth";
 import { db } from "@/db";
 import { userFavourites, events, itineraries, activities, operators } from "@/db/schema";
 import { eq, and } from "drizzle-orm";
-import { z } from "zod";
-
-const favouriteTypes = ["event", "itinerary", "activity", "operator"] as const;
-
-const FavouriteBody = z.object({
-  type: z.enum(favouriteTypes),
-  id: z.number().int().positive(),
-});
+import {
+  FAVOURITE_TYPES as favouriteTypes,
+  favouriteSchema,
+  validateJsonBody,
+} from "@/lib/api/validate";
 
 // Get user's favourites
 export async function GET(req: NextRequest) {
@@ -68,13 +65,10 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Not authenticated" }, { status: 401 });
   }
 
-  const parsed = FavouriteBody.safeParse(await req.json().catch(() => null));
+  const v = await validateJsonBody(req, favouriteSchema);
+  if (!v.ok) return v.response;
 
-  if (!parsed.success) {
-    return NextResponse.json({ error: "Invalid body" }, { status: 400 });
-  }
-
-  const { type, id } = parsed.data;
+  const { type, id } = v.data;
 
   // Check if already saved
   const existing = await db.select().from(userFavourites)

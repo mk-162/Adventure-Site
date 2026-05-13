@@ -2,10 +2,15 @@ import { NextResponse } from "next/server";
 import { db } from "@/db";
 import { outreachRecipients, outreachCampaigns } from "@/db/schema";
 import { eq, sql } from "drizzle-orm";
+import { trackOpenQuerySchema } from "@/lib/api/validate";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const recipientId = searchParams.get("r");
+  const parsed = trackOpenQuerySchema.safeParse({
+    r: searchParams.get("r") ?? undefined,
+  });
+  // For tracking pixels we always return the pixel; bad input is silently dropped
+  const recipientId = parsed.success ? parsed.data.r : undefined;
 
   if (recipientId) {
     try {

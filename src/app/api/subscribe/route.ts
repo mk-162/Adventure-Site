@@ -2,25 +2,14 @@ import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db";
 import { newsletterSubscribers } from "@/db/schema";
 import { eq } from "drizzle-orm";
-import { z } from "zod";
-
-const SubscribeBody = z.object({
-  email: z.string().email(),
-  source: z.string().max(50).optional(),
-});
+import { subscribeSchema, validateJsonBody } from "@/lib/api/validate";
 
 export async function POST(request: NextRequest) {
   try {
-    const parsed = SubscribeBody.safeParse(await request.json());
+    const v = await validateJsonBody(request, subscribeSchema);
+    if (!v.ok) return v.response;
 
-    if (!parsed.success) {
-      return NextResponse.json(
-        { error: "Please provide a valid email address" },
-        { status: 400 }
-      );
-    }
-
-    const { email, source } = parsed.data;
+    const { email, source } = v.data;
     const normalizedEmail = email.toLowerCase();
 
     // Check for existing subscriber

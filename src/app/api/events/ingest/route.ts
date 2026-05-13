@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db";
 import { events, sites, regions } from "@/db/schema";
 import { eq } from "drizzle-orm";
+import { eventIngestSchema, validateJsonBody } from "@/lib/api/validate";
 
 // Helper to get site ID (assuming single site for now or default)
 async function getSiteId() {
@@ -25,8 +26,9 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const body = await req.json();
-  const { source } = body;
+  const v = await validateJsonBody(req, eventIngestSchema);
+  if (!v.ok) return v.response;
+  const { source } = v.data;
 
   if (source === "eventbrite") {
     const token = process.env.EVENTBRITE_TOKEN;

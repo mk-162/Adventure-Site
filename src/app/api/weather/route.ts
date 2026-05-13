@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { validateSearchParams, weatherQuerySchema } from "@/lib/api/validate";
 
 const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
 const cache = new Map<string, { data: any; timestamp: number }>();
@@ -47,13 +48,9 @@ function getMockData() {
 }
 
 export async function GET(request: NextRequest) {
-    const searchParams = request.nextUrl.searchParams;
-    const lat = searchParams.get('lat');
-    const lng = searchParams.get('lng');
-
-    if (!lat || !lng) {
-        return NextResponse.json({ error: "Missing coordinates" }, { status: 400 });
-    }
+    const v = validateSearchParams(request.nextUrl.searchParams, weatherQuerySchema);
+    if (!v.ok) return v.response;
+    const { lat, lng } = v.data;
 
     const cacheKey = `${lat},${lng}`;
     const cached = cache.get(cacheKey);

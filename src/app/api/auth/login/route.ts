@@ -4,24 +4,17 @@ import { operators, magicLinks } from "@/db/schema";
 import { eq, or } from "drizzle-orm";
 import { sendMagicLink } from "@/lib/email";
 import { checkRateLimit } from "@/lib/rate-limit";
-import { z } from "zod";
+import { operatorMagicLinkSchema, validateJsonBody } from "@/lib/api/validate";
 
 const RATE_LIMIT_EMAIL = { limit: 5, windowMs: 60 * 60 * 1000 };   // 5 per email per hour
 const RATE_LIMIT_IP    = { limit: 20, windowMs: 60 * 60 * 1000 };  // 20 per IP per hour
 
-const LoginBody = z.object({
-  email: z.string().email(),
-});
-
 export async function POST(req: NextRequest) {
   try {
-    const parsed = LoginBody.safeParse(await req.json().catch(() => null));
+    const v = await validateJsonBody(req, operatorMagicLinkSchema);
+    if (!v.ok) return v.response;
 
-    if (!parsed.success) {
-      return NextResponse.json({ error: "Invalid body" }, { status: 400 });
-    }
-
-    const email = parsed.data.email.toLowerCase();
+    const email = v.data.email.toLowerCase();
 
     // Rate limiting
     const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";

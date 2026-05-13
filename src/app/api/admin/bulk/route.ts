@@ -13,6 +13,7 @@ import {
   bulkOperations,
 } from "@/db/schema";
 import { inArray } from "drizzle-orm";
+import { adminBulkSchema, validateJsonBody } from "@/lib/api/validate";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const tableMap: Record<string, any> = {
@@ -28,30 +29,11 @@ const tableMap: Record<string, any> = {
 };
 
 export async function POST(req: NextRequest) {
+  const v = await validateJsonBody(req, adminBulkSchema);
+  if (!v.ok) return v.response;
+  const { contentType, operation, ids, data } = v.data;
+
   try {
-    const body = await req.json();
-    const { contentType, operation, ids, data } = body;
-
-    // Validation
-    if (!contentType || !tableMap[contentType]) {
-      return NextResponse.json(
-        { error: `Invalid content type: ${contentType}` },
-        { status: 400 }
-      );
-    }
-    if (!operation) {
-      return NextResponse.json(
-        { error: "Operation is required" },
-        { status: 400 }
-      );
-    }
-    if (!ids || !Array.isArray(ids) || ids.length === 0) {
-      return NextResponse.json(
-        { error: "ids must be a non-empty array" },
-        { status: 400 }
-      );
-    }
-
     const table = tableMap[contentType];
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let updateData: Record<string, any> = {};

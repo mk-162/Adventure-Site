@@ -1,18 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db";
 import { adImpressions } from "@/db/schema";
-import { z } from "zod";
-
-const ImpressionBody = z.object({
-  slotName: z.string().min(1).max(100),
-  pageType: z.string().min(1).max(100),
-  pageSlug: z.string().max(255).optional().nullable(),
-});
+import { adImpressionSchema } from "@/lib/api/validate";
 
 export async function POST(request: NextRequest) {
   try {
-    const parsed = ImpressionBody.safeParse(await request.json());
+    const parsed = adImpressionSchema.safeParse(await request.json().catch(() => null));
 
+    // Impressions are best-effort: silently accept on validation failure
     if (!parsed.success) {
       return NextResponse.json({ ok: true });
     }

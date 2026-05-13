@@ -11,23 +11,24 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { timingSafeEqual } from 'crypto';
 import { db } from '@/db';
-import { 
-  activities, 
-  accommodation, 
-  events, 
-  itineraries, 
+import {
+  activities,
+  accommodation,
+  events,
+  itineraries,
   regions,
   operators,
   activityTypes
 } from '@/db/schema';
 import { ilike, and, gte, lte, or, eq } from 'drizzle-orm';
+import { mcpRequestSchema, mcpToolCallParamsSchema } from '@/lib/api/validate';
 
 // MCP Protocol Types
 interface MCPRequest {
   jsonrpc: '2.0';
-  id: string | number;
+  id?: string | number | null;
   method: string;
-  params?: Record<string, any>;
+  params?: unknown;
 }
 
 // Tool definitions for AI agents
@@ -315,25 +316,27 @@ async function handleMCPRequest(request: MCPRequest) {
       case 'tools/list':
         return { jsonrpc: '2.0', id, result: { tools: TOOLS } };
 
-      case 'tools/call':
-        const { name, arguments: args } = params || {};
+      case 'tools/call': {
+        const toolParams = (params ?? {}) as { name?: string; arguments?: unknown };
+        const name = toolParams.name;
+        const args = (toolParams.arguments ?? {}) as Record<string, unknown>;
         let result;
 
         switch (name) {
           case 'search_activities':
-            result = await searchActivities(args || {});
+            result = await searchActivities(args);
             break;
           case 'search_accommodation':
-            result = await searchAccommodation(args || {});
+            result = await searchAccommodation(args);
             break;
           case 'search_events':
-            result = await searchEvents(args || {});
+            result = await searchEvents(args);
             break;
           case 'search_itineraries':
-            result = await searchItineraries(args || {});
+            result = await searchItineraries(args);
             break;
           case 'search_operators':
-            result = await searchOperators(args || {});
+            result = await searchOperators(args);
             break;
           case 'get_regions':
             result = await getRegions();
@@ -356,6 +359,7 @@ async function handleMCPRequest(request: MCPRequest) {
             content: [{ type: 'text', text: JSON.stringify(result, null, 2) }]
           }
         };
+      }
 
       default:
         return {
@@ -386,36 +390,85 @@ function timingSafeStringEqual(a: string, b: string): boolean {
 
 // POST handler for MCP requests
 export async function POST(request: NextRequest) {
+  let rawBody: unknown;
   try {
-    const body = await request.json();
+    rawBody = await request.json();
+  } catch {
+    return NextResponse.json(
+      { jsonrpc: '2.0', id: null, error: { code: -32700, message: 'Parse error' } },
+      { status: 400 }
+    );
+  }
 
-    // tools/call requires a valid MCP_API_KEY bearer token
-    if (body?.method === 'tools/call') {
-      const mcpKey = process.env.MCP_API_KEY;
-      if (!mcpKey) {
-        return NextResponse.json(
-          { jsonrpc: '2.0', id: body.id ?? null, error: { code: -32001, message: 'Unauthorized' } },
-          { status: 401 }
-        );
-      }
-      const authHeader = request.headers.get('authorization') ?? '';
-      const token = authHeader.startsWith('Bearer ') ? authHeader.slice(7) : '';
-      if (!timingSafeStringEqual(token, mcpKey)) {
-        return NextResponse.json(
-          { jsonrpc: '2.0', id: body.id ?? null, error: { code: -32001, message: 'Unauthorized' } },
-          { status: 401 }
-        );
-      }
+  // Validate JSON-RPC envelope
+  const parsed = mcpRequestSchema.safeParse(rawBody);
+  if (!parsed.success) {
+    const id = (rawBody && typeof rawBody === 'object' && 'id' in rawBody)
+      ? (rawBody as { id?: unknown }).id ?? null
+      : null;
+    return NextResponse.json(
+      {
+        jsonrpc: '2.0',
+        id,
+        error: {
+          code: -32600,
+          message: 'Invalid Request',
+          data: parsed.error.issues.map(
+            (i) => `${i.path.join('.') || 'body'}: ${i.message}`
+          ),
+        },
+      },
+      { status: 400 }
+    );
+  }
+
+  const body = parsed.data;
+
+  // tools/call requires a valid MCP_API_KEY bearer token AND structured params
+  if (body.method === 'tools/call') {
+    const mcpKey = process.env.MCP_API_KEY;
+    if (!mcpKey) {
+      return NextResponse.json(
+        { jsonrpc: '2.0', id: body.id ?? null, error: { code: -32001, message: 'Unauthorized' } },
+        { status: 401 }
+      );
+    }
+    const authHeader = request.headers.get('authorization') ?? '';
+    const token = authHeader.startsWith('Bearer ') ? authHeader.slice(7) : '';
+    if (!timingSafeStringEqual(token, mcpKey)) {
+      return NextResponse.json(
+        { jsonrpc: '2.0', id: body.id ?? null, error: { code: -32001, message: 'Unauthorized' } },
+        { status: 401 }
+      );
     }
 
+    const paramsCheck = mcpToolCallParamsSchema.safeParse(body.params);
+    if (!paramsCheck.success) {
+      return NextResponse.json(
+        {
+          jsonrpc: '2.0',
+          id: body.id ?? null,
+          error: {
+            code: -32602,
+            message: 'Invalid params',
+            data: paramsCheck.error.issues.map(
+              (i) => `${i.path.join('.') || 'params'}: ${i.message}`
+            ),
+          },
+        },
+        { status: 400 }
+      );
+    }
+  }
+
+  try {
     const response = await handleMCPRequest(body);
     return NextResponse.json(response);
-  } catch (error: any) {
-    return NextResponse.json({
-      jsonrpc: '2.0',
-      id: null,
-      error: { code: -32700, message: 'Parse error' }
-    }, { status: 400 });
+  } catch {
+    return NextResponse.json(
+      { jsonrpc: '2.0', id: body.id ?? null, error: { code: -32603, message: 'Internal error' } },
+      { status: 500 }
+    );
   }
 }
 

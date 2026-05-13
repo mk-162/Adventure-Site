@@ -2,19 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db";
 import { adCreatives, adCampaigns, pageAds, operators } from "@/db/schema";
 import { eq, and, gte, lte, sql } from "drizzle-orm";
+import { adSlotQuerySchema, validateSearchParams } from "@/lib/api/validate";
 
 export async function GET(request: NextRequest) {
-  const searchParams = request.nextUrl.searchParams;
-  const slotName = searchParams.get("name");
-  const pageType = searchParams.get("pageType");
-  const pageSlug = searchParams.get("pageSlug");
-
-  if (!slotName || !pageType) {
-    return NextResponse.json(
-      { error: "Missing required parameters: name and pageType" },
-      { status: 400 }
-    );
-  }
+  const v = validateSearchParams(request.nextUrl.searchParams, adSlotQuerySchema);
+  if (!v.ok) return v.response;
+  const { name: slotName, pageType, pageSlug } = v.data;
 
   try {
     const now = new Date();

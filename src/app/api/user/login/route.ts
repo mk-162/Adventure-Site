@@ -2,24 +2,15 @@ import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db";
 import { users, magicLinks } from "@/db/schema";
 import { eq } from "drizzle-orm";
-import { z } from "zod";
-
-const UserLoginBody = z.object({
-  email: z.string().email(),
-  name: z.string().max(255).optional(),
-  newsletterOptIn: z.boolean().optional(),
-});
+import { userLoginSchema, validateJsonBody } from "@/lib/api/validate";
 
 export async function POST(req: NextRequest) {
   try {
-    const parsed = UserLoginBody.safeParse(await req.json().catch(() => null));
+    const v = await validateJsonBody(req, userLoginSchema);
+    if (!v.ok) return v.response;
 
-    if (!parsed.success) {
-      return NextResponse.json({ error: "Invalid body" }, { status: 400 });
-    }
-
-    const { name, newsletterOptIn } = parsed.data;
-    const email = parsed.data.email.toLowerCase();
+    const { name, newsletterOptIn } = v.data;
+    const email = v.data.email.toLowerCase();
 
     // Find or create user
     let user = await db.query.users.findFirst({

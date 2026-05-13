@@ -39,6 +39,9 @@
   "exclude": [
     "node_modules",
     ".next",
-    "scripts/archive"
+    ".next/dev",
+    "scripts/archive",
+    "src/**/*.test.tsx",
+    "src/**/*.test.ts"
   ]
 }

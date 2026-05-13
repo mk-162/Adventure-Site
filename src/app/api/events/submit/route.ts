@@ -3,6 +3,7 @@ import { db } from "@/db";
 import { events, operators, sites } from "@/db/schema";
 import { eq } from "drizzle-orm";
 import { getOperatorSession } from "@/lib/auth";
+import { eventSubmitSchema, validateJsonBody } from "@/lib/api/validate";
 
 // Helper to get site ID
 async function getSiteId() {
@@ -29,12 +30,9 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const data = await req.json();
-
-    // Validate data (basic validation)
-    if (!data.name || !data.dateStart) {
-        return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
-    }
+    const v = await validateJsonBody(req, eventSubmitSchema);
+    if (!v.ok) return v.response;
+    const data = v.data;
 
     // Check billing tier for promotion
     const operator = await db.query.operators.findFirst({
@@ -76,7 +74,7 @@ export async function POST(req: NextRequest) {
       website: data.website,
       ticketUrl: data.ticketUrl,
       registrationCost: data.registrationCost ? data.registrationCost.toString() : null,
-      capacity: data.capacity ? parseInt(data.capacity) : null,
+      capacity: data.capacity != null ? parseInt(String(data.capacity)) : null,
       difficulty: data.difficulty,
       ageRange: data.ageRange,
       heroImage: data.heroImage,

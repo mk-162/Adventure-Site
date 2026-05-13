@@ -4,6 +4,7 @@ import { operators } from "@/db/schema";
 import { eq } from "drizzle-orm";
 import { getOperatorSession } from "@/lib/auth";
 import { stripe } from "@/lib/stripe";
+import { billingCheckoutSchema, validateJsonBody } from "@/lib/api/validate";
 
 export async function POST(req: NextRequest) {
   try {
@@ -16,10 +17,9 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const { priceId } = await req.json();
-    if (!priceId) {
-      return NextResponse.json({ error: "Missing priceId" }, { status: 400 });
-    }
+    const v = await validateJsonBody(req, billingCheckoutSchema);
+    if (!v.ok) return v.response;
+    const { priceId } = v.data;
 
     const operator = await db.query.operators.findFirst({
       where: eq(operators.id, session.operatorId),

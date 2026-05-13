@@ -4,17 +4,25 @@ import { eventSaves } from "@/db/schema";
 import { eq, and, sql } from "drizzle-orm";
 import { cookies } from "next/headers";
 import { randomUUID } from "crypto";
+import { eventSaveIdParamSchema } from "@/lib/api/validate";
 
 export async function POST(
   req: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
-  const { id } = await params;
-  const eventId = parseInt(id);
-
-  if (isNaN(eventId)) {
-    return NextResponse.json({ error: "Invalid event ID" }, { status: 400 });
+  const parsed = eventSaveIdParamSchema.safeParse(await params);
+  if (!parsed.success) {
+    return NextResponse.json(
+      {
+        error: "Validation failed",
+        details: parsed.error.issues.map(
+          (i) => `${i.path.join(".") || "params"}: ${i.message}`
+        ),
+      },
+      { status: 400 }
+    );
   }
+  const eventId = parseInt(parsed.data.id);
 
   const cookieStore = await cookies();
   let sessionId = cookieStore.get("aw_session_id")?.value;

@@ -3,10 +3,13 @@ import { db } from "@/db";
 import { pageViews, sites } from "@/db/schema";
 import { sql } from "drizzle-orm";
 import { cookies } from "next/headers";
+import { trackViewSchema, validateJsonBody } from "@/lib/api/validate";
 
 export async function POST(request: Request) {
   try {
-    const { pageType, pageSlug, operatorId } = await request.json();
+    const v = await validateJsonBody(request, trackViewSchema);
+    if (!v.ok) return v.response;
+    const { pageType, pageSlug, operatorId } = v.data;
     const today = new Date().toISOString().split("T")[0];
 
     // Simple unique visitor tracking via cookie

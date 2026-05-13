@@ -3,24 +3,14 @@ import { db } from "@/db";
 import { operators, operatorClaims, magicLinks } from "@/db/schema";
 import { eq, and, gt, count } from "drizzle-orm";
 import { sendMagicLink } from "@/lib/email";
-import { z } from "zod";
-
-const ClaimBody = z.object({
-  operatorSlug: z.string().min(1).max(255),
-  name: z.string().min(1).max(255),
-  email: z.string().email(),
-  role: z.string().max(100).optional(),
-});
+import { operatorClaimSchema, validateJsonBody } from "@/lib/api/validate";
 
 export async function POST(req: NextRequest) {
   try {
-    const parsed = ClaimBody.safeParse(await req.json().catch(() => null));
+    const v = await validateJsonBody(req, operatorClaimSchema);
+    if (!v.ok) return v.response;
 
-    if (!parsed.success) {
-      return NextResponse.json({ error: "Invalid body" }, { status: 400 });
-    }
-
-    const { operatorSlug, name, email, role } = parsed.data;
+    const { operatorSlug, name, email, role } = v.data;
     const normalizedEmail = email.toLowerCase();
 
     const ip = req.headers.get("x-forwarded-for") || "unknown";

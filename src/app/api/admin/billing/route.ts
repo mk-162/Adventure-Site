@@ -3,6 +3,7 @@ import { stripe } from "@/lib/stripe";
 import { db } from "@/db";
 import { operators } from "@/db/schema";
 import { eq } from "drizzle-orm";
+import { adminBillingSchema, validateJsonBody } from "@/lib/api/validate";
 
 /**
  * Admin billing API
@@ -19,12 +20,11 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Stripe not configured" }, { status: 503 });
   }
 
-  let action: string | undefined;
-  try {
-    const body = await req.json();
-    action = body.action;
-    const { operatorId, priceId } = body;
+  const v = await validateJsonBody(req, adminBillingSchema);
+  if (!v.ok) return v.response;
+  const { action, operatorId, priceId } = v.data;
 
+  try {
     const operator = await db.query.operators.findFirst({
       where: eq(operators.id, operatorId),
     });

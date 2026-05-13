@@ -1,26 +1,22 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db";
 import { operatorInterest } from "@/db/schema";
+import { operatorInterestSchema, validateJsonBody } from "@/lib/api/validate";
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
-    const { businessName, contactName, email, phone, numLocations, planInterest, message } = body;
+    const v = await validateJsonBody(request, operatorInterestSchema);
+    if (!v.ok) return v.response;
 
-    // Validate required fields
-    if (!businessName || !contactName || !email) {
-      return NextResponse.json(
-        { error: "Business name, contact name, and email are required." },
-        { status: 400 }
-      );
-    }
-
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      return NextResponse.json(
-        { error: "Please provide a valid email address." },
-        { status: 400 }
-      );
-    }
+    const {
+      businessName,
+      contactName,
+      email,
+      phone,
+      numLocations,
+      planInterest,
+      message,
+    } = v.data;
 
     await db.insert(operatorInterest).values({
       businessName,

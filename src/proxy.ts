@@ -11,7 +11,7 @@ if (!_JWT_SECRET_RAW) {
 }
 const JWT_SECRET_RAW = _JWT_SECRET_RAW ?? "";
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Don't protect the login page itself

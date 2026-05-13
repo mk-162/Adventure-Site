@@ -7,7 +7,7 @@ if (!_JWT_SECRET_RAW && process.env.NODE_ENV === "production") {
   throw new Error("JWT_SECRET or ADMIN_SECRET must be set in production");
 }
 if (!_JWT_SECRET_RAW) {
-  console.warn("[middleware] JWT_SECRET is not set — admin JWT verification will fail");
+  console.warn("[proxy] JWT_SECRET is not set — admin JWT verification will fail");
 }
 const JWT_SECRET_RAW = _JWT_SECRET_RAW ?? "";
 

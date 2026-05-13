@@ -9,10 +9,16 @@ import { cookies } from "next/headers";
 import { writeFile } from "fs/promises";
 import path from "path";
 
-// Initialize OpenAI
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+// Lazy-initialize OpenAI only when actually called — avoids build failures
+// when OPENAI_API_KEY is not set (voice tips/comment features not needed yet).
+function getOpenAI() {
+  const apiKey = process.env.OPENAI_API_KEY;
+  if (!apiKey) {
+    console.warn("[comments] OPENAI_API_KEY not set — voice tip generation/transcription disabled");
+  }
+  const { OpenAI } = require("openai");
+  return new OpenAI({ apiKey });
+}
 
 export type CommentStatus = 'pending' | 'approved' | 'rejected';
 
@@ -74,7 +80,7 @@ export async function processAudio(formData: FormData) {
   const audioUrl = await uploadAudio(file);
 
   // 2. Transcribe using OpenAI Whisper
-  const transcription = await openai.audio.transcriptions.create({
+  const transcription = await getOpenAI().audio.transcriptions.create({
     file: file,
     model: "whisper-1",
   });
@@ -117,7 +123,7 @@ Output JSON format:
 }
 `;
 
-  const completion = await openai.chat.completions.create({
+  const completion = await getOpenAI().chat.completions.create({
     model: "gpt-4o",
     messages: [{ role: "user", content: prompt }],
     response_format: { type: "json_object" },

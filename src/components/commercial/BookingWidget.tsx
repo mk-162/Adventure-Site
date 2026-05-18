@@ -1,27 +1,30 @@
-import Link from "next/link";
 import { Bed, ExternalLink } from "lucide-react";
+import { buildBookingSearchUrl, hasAffiliateId } from "@/lib/booking";
 
 interface BookingWidgetProps {
   regionName: string;
   checkIn?: string;   // YYYY-MM-DD
   checkOut?: string;  // YYYY-MM-DD
+  labelSegment?: string;
 }
 
 /**
- * Booking.com affiliate search widget placeholder.
- *
- * To monetise: replace the link below with your Booking.com affiliate link.
- * Sign up at https://www.booking.com/affiliate-program/v2/index.html
- * Then set your affiliate ID (aid) in the URL:
- *   https://www.booking.com/searchresults.html?aid=YOUR_AFFILIATE_ID&ss=...
+ * Booking.com affiliate search widget. URL is built by
+ * `buildBookingSearchUrl` which picks up the BOOKING_AFFILIATE_ID env var
+ * automatically — no edits needed when monetisation is enabled.
  */
-export function BookingWidget({ regionName, checkIn, checkOut }: BookingWidgetProps) {
-  const searchQuery = encodeURIComponent(`${regionName} Wales`);
-  let bookingUrl = `https://www.booking.com/searchresults.html?ss=${searchQuery}`;
-
-  // TODO: Add affiliate ID — &aid=YOUR_AFFILIATE_ID
-  if (checkIn) bookingUrl += `&checkin=${checkIn}`;
-  if (checkOut) bookingUrl += `&checkout=${checkOut}`;
+export function BookingWidget({
+  regionName,
+  checkIn,
+  checkOut,
+  labelSegment,
+}: BookingWidgetProps) {
+  const bookingUrl = buildBookingSearchUrl({
+    destination: `${regionName} Wales`,
+    checkIn,
+    checkOut,
+    labelSegment: labelSegment ?? `region-${regionName}`,
+  });
 
   return (
     <div className="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-5 lg:p-6">
@@ -46,7 +49,7 @@ export function BookingWidget({ regionName, checkIn, checkOut }: BookingWidgetPr
       <a
         href={bookingUrl}
         target="_blank"
-        rel="noopener noreferrer nofollow"
+        rel="noopener noreferrer nofollow sponsored"
         className="inline-flex items-center gap-2 bg-blue-600 text-white font-bold text-sm py-2.5 px-5 rounded-lg hover:bg-blue-700 transition-colors w-full justify-center"
       >
         Search on Booking.com
@@ -54,8 +57,9 @@ export function BookingWidget({ regionName, checkIn, checkOut }: BookingWidgetPr
       </a>
 
       <p className="text-[10px] text-gray-400 mt-2 text-center">
-        {/* Affiliate disclosure — update when affiliate ID is set */}
-        Powered by Booking.com
+        {hasAffiliateId()
+          ? "Affiliate link — we may earn a small commission at no cost to you."
+          : "Powered by Booking.com"}
       </p>
     </div>
   );

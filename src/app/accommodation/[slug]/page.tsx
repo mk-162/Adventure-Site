@@ -9,11 +9,12 @@ import {
   MapPin, Star, ExternalLink, Bed, Wifi, Car, 
   Mountain, ChevronRight, Phone, Globe, Calendar
 } from "lucide-react";
-import { 
-  JsonLd, 
-  createLodgingBusinessSchema, 
-  createBreadcrumbSchema 
+import {
+  JsonLd,
+  createLodgingBusinessSchema,
+  createBreadcrumbSchema
 } from "@/components/seo/JsonLd";
+import { withAffiliateTag, buildBookingSearchUrl } from "@/lib/booking";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -270,18 +271,25 @@ export default async function AccommodationPage({ params }: Props) {
 
               {/* Booking buttons */}
               <div className="space-y-3">
-                {accommodation.bookingUrl && (
-                  <a
-                    href={accommodation.bookingUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full bg-accent-hover text-white font-semibold py-3 px-4 rounded-lg hover:bg-accent-hover transition-colors"
-                  >
-                    <Calendar className="h-5 w-5" />
-                    Check Availability
-                    <ExternalLink className="h-4 w-4" />
-                  </a>
-                )}
+                <a
+                  href={
+                    withAffiliateTag(
+                      accommodation.bookingUrl,
+                      `acc-${accommodation.slug}`,
+                    ) ||
+                    buildBookingSearchUrl({
+                      destination: `${accommodation.name} ${region?.name ?? "Wales"}`,
+                      labelSegment: `acc-${accommodation.slug}`,
+                    })
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer nofollow sponsored"
+                  className="flex items-center justify-center gap-2 w-full bg-accent-hover text-white font-semibold py-3 px-4 rounded-lg hover:bg-accent-hover transition-colors"
+                >
+                  <Calendar className="h-5 w-5" />
+                  Check Availability
+                  <ExternalLink className="h-4 w-4" />
+                </a>
                 {accommodation.airbnbUrl && (
                   <a
                     href={accommodation.airbnbUrl}

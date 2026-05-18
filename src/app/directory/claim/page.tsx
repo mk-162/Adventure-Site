@@ -1,17 +1,34 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { ShieldCheck, CheckCircle, ArrowRight, Mail } from "lucide-react";
+import { ShieldCheck, CheckCircle, ArrowRight } from "lucide-react";
+import { db } from "@/db";
+import { operators } from "@/db/schema";
+import { eq, asc } from "drizzle-orm";
+import { ClaimSearch } from "./ClaimSearch";
 
 export const metadata: Metadata = {
   title: "Claim Your Listing | Adventure Wales",
   description:
-    "Run an adventure business in Wales? Claim your free listing on Adventure Wales and reach thousands of adventure seekers.",
+    "Run an adventure business in Wales? Find your listing and claim it free in under two minutes.",
 };
 
-export default function ClaimListingPage() {
+export const revalidate = 300;
+
+export default async function ClaimListingPage() {
+  // Pull all claimable (stub) operators so users can find their business client-side.
+  const claimable = await db
+    .select({
+      slug: operators.slug,
+      name: operators.name,
+      type: operators.type,
+      claimStatus: operators.claimStatus,
+    })
+    .from(operators)
+    .where(eq(operators.claimStatus, "stub"))
+    .orderBy(asc(operators.name));
+
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero */}
       <div className="bg-gradient-to-br from-primary to-[#2d5568] text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ShieldCheck className="h-16 w-16 mx-auto mb-6 text-accent-hover" />
@@ -19,14 +36,31 @@ export default function ClaimListingPage() {
             Claim Your Business Listing
           </h1>
           <p className="text-xl text-slate-200 max-w-2xl mx-auto">
-            Free listing for qualified, insured Welsh adventure operators. Get
-            found by thousands of adventure seekers.
+            Find your business below, verify ownership, and start managing your
+            free Adventure Wales listing in under two minutes.
           </p>
         </div>
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        {/* How it works */}
+        <div className="bg-white border border-slate-200 rounded-2xl shadow-sm p-6 md:p-8 mb-12">
+          <h2 className="text-2xl font-bold text-primary mb-2">
+            Find your business
+          </h2>
+          <p className="text-slate-600 mb-6 text-sm">
+            Search our directory for your business. If we haven&apos;t listed
+            you yet,{" "}
+            <Link
+              href="/advertise"
+              className="text-accent-hover font-semibold underline"
+            >
+              get in touch and we&apos;ll create your stub
+            </Link>
+            .
+          </p>
+          <ClaimSearch operators={claimable} />
+        </div>
+
         <h2 className="text-3xl font-bold text-primary mb-8 text-center">
           How It Works
         </h2>
@@ -37,19 +71,19 @@ export default function ClaimListingPage() {
               step: "1",
               title: "Find Your Listing",
               description:
-                "Search the directory for your business. If it's not there yet, we'll create one for you.",
+                "Search the directory above for your business. If it's not there yet, we'll create one for you.",
             },
             {
               step: "2",
               title: "Verify Ownership",
               description:
-                "Confirm you're the business owner via email verification. Takes under 2 minutes.",
+                "Submit your business email — we send a magic link to confirm you own the business. Takes under two minutes.",
             },
             {
               step: "3",
-              title: "Complete Your Profile",
+              title: "Manage Your Profile",
               description:
-                "Add photos, services, pricing, and booking links. Make your listing shine.",
+                "Once verified you can update photos, services, opening hours and respond to enquiries direct.",
             },
           ].map((item) => (
             <div key={item.step} className="text-center">
@@ -64,19 +98,18 @@ export default function ClaimListingPage() {
           ))}
         </div>
 
-        {/* What you get */}
         <div className="bg-slate-50 rounded-2xl p-8 mb-16">
           <h2 className="text-2xl font-bold text-primary mb-6">
             What You Get (Free)
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              "Business name, location & contact details",
-              "Category listing (activity, gear hire, food, transport)",
-              "Link to your website",
+              "Verified business badge on your listing",
+              "Edit description, photos, contact details, hours",
+              "Direct enquiries from adventure seekers",
               "Appear in directory search results",
               "Region & activity type tags",
-              "Basic listing visible to all visitors",
+              "Upsell to Premium for featured placement",
             ].map((feature) => (
               <div key={feature} className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
@@ -86,27 +119,20 @@ export default function ClaimListingPage() {
           </div>
         </div>
 
-        {/* CTA */}
         <div className="text-center bg-gradient-to-br from-primary to-[#2d5568] rounded-2xl p-12 text-white">
-          <h2 className="text-3xl font-bold mb-4">Ready to Get Listed?</h2>
+          <h2 className="text-3xl font-bold mb-4">Not listed yet?</h2>
           <p className="text-slate-200 mb-8 max-w-lg mx-auto">
-            Email us with your business name, website, and what you offer.
-            We&apos;ll get your listing set up within 24 hours.
+            We add new operators every week. Tell us a little about your
+            business and we&apos;ll build your stub within 24 hours, ready for
+            you to claim.
           </p>
-          <a
-            href="mailto:hello@adventurewales.co.uk?subject=Claim%20My%20Listing&body=Business%20name%3A%0AWebsite%3A%0AWhat%20we%20offer%3A%0ALocation%3A%0A"
+          <Link
+            href="/advertise"
             className="inline-flex items-center gap-2 bg-accent-hover text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-accent-hover transition-colors"
           >
-            <Mail className="h-5 w-5" />
-            Claim Your Listing
+            Get my business listed
             <ArrowRight className="h-5 w-5" />
-          </a>
-          <p className="text-sm text-slate-300 mt-4">
-            Already listed?{" "}
-            <Link href="/directory" className="underline hover:text-white">
-              Find your business in the directory
-            </Link>
-          </p>
+          </Link>
         </div>
       </div>
     </div>

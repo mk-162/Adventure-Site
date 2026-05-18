@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { getEventBySlug, getEvents, getAllEventSlugs, getAccommodationByRegion, getActivitiesByRegion } from "@/lib/queries";
 import { 
   MapPin, Calendar, Clock, Users, ExternalLink, 
@@ -86,11 +87,13 @@ export default async function EventPage({ params }: Props) {
       <div className="min-h-screen bg-gray-50">
         {/* Hero */}
         <section className="relative h-[40vh] min-h-[300px] bg-primary">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: `url('${heroImage}')`,
-            }}
+          <Image
+            src={heroImage}
+            alt={`${event.name} – ${event.location ?? "Wales"}`}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
           <div className="relative h-full max-w-7xl mx-auto px-4 flex flex-col justify-end pb-8">

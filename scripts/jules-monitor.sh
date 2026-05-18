@@ -1,11 +1,16 @@
 #!/bin/bash
 # Jules Queue Monitor - Launches pending tasks when slots are available
 
-JULES_KEY="AQ.Ab8RN6JB-DQFy_ehQOsK6GTpSPFIg11JwgUOga2oQsfP8zD2PQ"
+JULES_KEY="${JULES_API_KEY:-}"
 SOURCE="sources/github/mk-162/Adventure-Site"
-QUEUE_FILE="/home/minigeek/Adventure-Site/jules-queue.json"
-LOG_FILE="/home/minigeek/Adventure-Site/jules-monitor.log"
-MAX_SESSIONS=15
+QUEUE_FILE="${QUEUE_FILE:-$(pwd)/jules-queue.json}"
+LOG_FILE="${LOG_FILE:-$(pwd)/jules-monitor.log}"
+MAX_SESSIONS="${MAX_SESSIONS:-15}"
+
+if [ -z "$JULES_KEY" ]; then
+  echo "JULES_API_KEY is not set. Put it in .env.local and run: source .env.local" >&2
+  exit 1
+fi
 
 log() {
   echo "$(date '+%Y-%m-%d %H:%M:%S') $1" >> "$LOG_FILE"

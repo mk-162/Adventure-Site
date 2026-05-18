@@ -29,7 +29,7 @@
         "lng": -4.124
       },
       "estimatedCost": "Adult return tickets typically in the region of £40-50 — confirm on the operator website",
-      "operatorSlug": null,
+      "operatorSlug": null,  // TODO: create directory entry for heritage railways
       "insiderTip": "Book the earliest possible departure. Cloud usually builds across the summit through the day, and the first trains have the best chance of clear views. Note that the railway can terminate below the summit on windy days with no refund."
     },
     {
@@ -50,7 +50,7 @@
         "lng": -4.130
       },
       "estimatedCost": "Adult return tickets typically in the region of £35-45 — confirm on the operator website",
-      "operatorSlug": null,
+      "operatorSlug": null,  // TODO: create directory entry for heritage railways
       "insiderTip": "The Ffestiniog and the Welsh Highland Railway are run by the same heritage operator — combined tickets are usually available. A round-trip via both lines via Caernarfon makes a full but unforgettable day."
     },
     {
@@ -71,7 +71,7 @@
         "lng": -4.276
       },
       "estimatedCost": "Adult return tickets typically in the region of £40-50 — confirm on the operator website",
-      "operatorSlug": null,
+      "operatorSlug": null,  // TODO: create directory entry for heritage railways
       "insiderTip": "If you only ride one section, ride between Beddgelert and Porthmadog — Aberglaslyn Pass is the visual highlight of the whole line."
     },
     {
@@ -92,7 +92,7 @@
         "lng": -4.087
       },
       "estimatedCost": "Adult return tickets typically in the region of £20-30 — confirm on the operator website",
-      "operatorSlug": null,
+      "operatorSlug": null,  // TODO: create directory entry for heritage railways
       "insiderTip": "Get off at Dolgoch Falls and walk up the short trail to the waterfalls before catching a later train back — most tickets allow break-of-journey at no extra cost."
     },
     {
@@ -113,7 +113,7 @@
         "lng": -4.131
       },
       "estimatedCost": "Adult return tickets typically in the region of £10-15 — confirm on the operator website",
-      "operatorSlug": null,
+      "operatorSlug": null,  // TODO: create directory entry for heritage railways
       "insiderTip": "Pair the Lake Railway with the free National Slate Museum on the same site. Together they tell the Llanberis slate story in about a half-day."
     },
     {
@@ -134,7 +134,7 @@
         "lng": -3.687
       },
       "estimatedCost": "Adult return tickets typically in the region of £15-20 — confirm on the operator website",
-      "operatorSlug": null,
+      "operatorSlug": null,  // TODO: create directory entry for heritage railways
       "insiderTip": "Pair the railway with a paddle-board hire on Llyn Tegid or with a visit to Llyn Tegid itself — Bala Lake Railway works best as part of a wider day in the south-east of the park."
     }
   ],

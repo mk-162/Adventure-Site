@@ -1,0 +1,316 @@
+{
+  "regionSlug": "snowdonia",
+  "activityTypeSlug": "underground-trampolines",
+  "title": "Underground Trampolines in Snowdonia",
+  "strapline": "One genuine underground-trampoline experience in the UK — and it's in a 176-year-old slate cavern in the heart of Eryri.",
+  "metaTitle": "Underground Trampolines in Snowdonia | Adventure Wales",
+  "metaDescription": "Honest guide to underground trampolining in Snowdonia: Bounce Below at Llechwedd Slate Caverns, plus the wider slate-cavern adventures that round out a day in Blaenau Ffestiniog.",
+  "heroAlt": "Multi-level trampoline nets suspended inside an enormous slate cavern lit by coloured floodlights, with figures bouncing between levels.",
+  "introduction": "Underground trampolining as a category effectively means **one place: Bounce Below**, deep inside Llechwedd Slate Caverns at Blaenau Ffestiniog. It is the original, and as far as full-scale subterranean trampoline attractions in the UK go, it remains the only one of its kind. So this page is honest about that — it isn't a 'top five underground trampoline venues' list, because there aren't five. It's a guide to one of Snowdonia's most distinctive attractions and the wider slate-cavern context that makes it feel rooted in the region rather than a one-trick novelty.\n\nBounce Below sits inside a cavern about the size of a cathedral, carved out by hand over more than a century of slate extraction. Six giant nets — interconnected by tunnels, slides and walkways — are suspended at different levels inside the dim, echoing chamber, lit by coloured floodlights. Sessions are timed, you sign in, you bounce. It's tiring quickly (slate caverns are humid and the nets soak up energy), it's claustrophobic if you really don't like enclosed spaces, and it's surreal in a way nothing else in the UK quite matches. Kids tend to love it without reservation; adults tend to find it stranger than they expect.\n\nThe wider story is the point. **Blaenau Ffestiniog and the surrounding Gwynedd slate landscape carry UNESCO World Heritage status** for the industry that roofed the British Empire in the nineteenth and early twentieth centuries. When the quarries stopped producing, two things happened: the holes stayed (some of them on the scale of stadiums) and a generation of adventure operators worked out what to do with them. Zip World — the operator behind Bounce Below, the underground Caverns rope course, and the Titan zip lines — built its business on that reuse. Llechwedd itself runs surface and deep-mine heritage tours that explain the human side of the same landscape: the quarrymen, the chapels, the strikes, the language. Treating Bounce Below as a standalone fairground attraction misses the context that makes the cavern feel like the right place for it.\n\nPractically, this is also a weather-proof activity. Snowdonia gets rain. The caverns don't care. If your mountain day is washed out, Blaenau Ffestiniog is the natural plan-B — Bounce Below itself, the underground Caverns course, the surface and deep-mine Llechwedd tours, and the Antur Stiniog downhill MTB centre are all within a few minutes of each other. You can comfortably fill a long day in the town without going outside.\n\nThe rest of this page is structured around that pairing logic: the headline Bounce Below experience first, then the natural same-day cross-references inside Blaenau Ffestiniog, then a couple of nearby slate-and-mine experiences (Sygun Copper Mine in Beddgelert, Dinorwig Quarry near Llanberis) that extend the underground/industrial theme without pretending to be trampolines.",
+  "bestSeason": "Year-round — entirely indoors and weather-proof",
+  "difficultyRange": "Easy (some height and mobility involved)",
+  "priceRange": "££ headline experience; ££-£££ bundled with other slate-cavern activities",
+  "spots": [
+    {
+      "name": "Bounce Below at Llechwedd Slate Caverns",
+      "slug": "bounce-below",
+      "description": "The entire reason this page exists. Six interconnected trampoline nets suspended at different levels inside a 176-year-old hand-carved slate cavern beneath Blaenau Ffestiniog. Sessions are timed and run in small groups; you're issued with the harness/equipment you need, walked into the cavern, and given a set amount of time to bounce, slide and explore the levels. The lighting and acoustics are the surprise — coloured floodlights, dripping water, voices echoing off slate walls hundreds of feet underground.",
+      "difficulty": "Easy",
+      "duration": "Approx. 1 hour session (allow longer for changing and walk-in)",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families with active kids (minimum height/age restrictions apply — check the operator), groups looking for something genuinely unusual, weather-proof Snowdonia days",
+      "notSuitableFor": "Severe claustrophobia, mobility limitations that make ladders/walkways difficult, anyone hoping for a quiet experience",
+      "bestSeason": "Year-round",
+      "parking": "Large free car park at Llechwedd Slate Caverns site.",
+      "startPoint": {
+        "name": "Zip World Llechwedd / Llechwedd Slate Caverns",
+        "lat": 52.991,
+        "lng": -3.937
+      },
+      "estimatedCost": "Check operator website — pricing varies by season and combo ticket",
+      "operatorSlug": "zip-world",
+      "insiderTip": "Wear closed-toe shoes, expect to come out warm and a bit dusty, and book at least a few days ahead in school holidays. Off-peak weekday slots are noticeably quieter."
+    },
+    {
+      "name": "Zip World Caverns — Underground Rope Course",
+      "slug": "zip-world-caverns",
+      "description": "Same site as Bounce Below, but a very different experience: a multi-pitch via-ferrata-style aerial course of zip lines, rope bridges and traverses inside an adjacent slate cavern. Harnessed throughout and led in small groups by a guide. The closest natural pairing with Bounce Below — many visitors book both as a half-day combo.",
+      "difficulty": "Moderate",
+      "duration": "Approx. 2.5-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Adventurous teens and adults, anyone wanting more challenge than the trampolines after Bounce Below",
+      "notSuitableFor": "Anyone with a strong fear of heights or significant claustrophobia",
+      "bestSeason": "Year-round",
+      "parking": "Same Llechwedd site car park as Bounce Below.",
+      "startPoint": {
+        "name": "Zip World Llechwedd",
+        "lat": 52.991,
+        "lng": -3.937
+      },
+      "estimatedCost": "Check operator website",
+      "operatorSlug": "zip-world",
+      "insiderTip": "If you only have time for one underground experience and you're confident with heights, Caverns gives you more variety than Bounce Below. If you've got kids, Bounce Below wins."
+    },
+    {
+      "name": "Llechwedd Slate Caverns — Deep Mine Tour",
+      "slug": "llechwedd-deep-mine-tour",
+      "description": "A guided heritage tour into the historic Llechwedd Deep Mine workings on the same Blaenau Ffestiniog site. Not adventure — context. You descend into the working levels, hear the story of the Victorian quarrymen who hand-carved these caverns, and see the chambers as they were left. The slate-heritage half of the day that makes the Bounce Below experience feel rooted rather than random.",
+      "difficulty": "Easy",
+      "duration": "Approx. 1-1.5 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Anyone interested in industrial heritage, families with older children, rest-day pairing after a Bounce Below morning",
+      "notSuitableFor": "Severe claustrophobia, very young children who won't sit through a guided tour",
+      "bestSeason": "Year-round",
+      "parking": "Same Llechwedd site car park.",
+      "startPoint": {
+        "name": "Llechwedd Slate Caverns",
+        "lat": 52.991,
+        "lng": -3.937
+      },
+      "estimatedCost": "Check operator website",
+      "operatorSlug": null,
+      "insiderTip": "Layer up — temperatures inside the deep workings stay cool (single digits Celsius) year-round."
+    },
+    {
+      "name": "Sygun Copper Mine, Beddgelert",
+      "slug": "sygun-copper-mine",
+      "description": "Self-guided audio tour through a Victorian copper mine on the slopes above Beddgelert, about half an hour west of Blaenau Ffestiniog. Different mineral, different story — but the same general theme of underground industrial Snowdonia made accessible. Smaller-scale and quieter than Llechwedd, and a good standalone half-day if you've already done Bounce Below on a previous trip.",
+      "difficulty": "Easy",
+      "duration": "Approx. 1-1.5 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, geology and heritage interest, quieter alternative to Llechwedd",
+      "notSuitableFor": "Limited mobility (stairs and uneven surfaces), severe claustrophobia",
+      "bestSeason": "Open seasonally — check the operator website before travelling",
+      "parking": "On-site car park.",
+      "startPoint": {
+        "name": "Sygun Copper Mine",
+        "lat": 53.013,
+        "lng": -4.094
+      },
+      "estimatedCost": "Check operator website",
+      "operatorSlug": null,
+      "insiderTip": "The walk up to the mine entrance gives you one of the better views over the Beddgelert valley — worth a few minutes at the top before going in."
+    },
+    {
+      "name": "Dinorwig Quarry Surface Walk, Llanberis",
+      "slug": "dinorwig-quarry-walk",
+      "description": "Not underground, not an attraction — but the closest you'll get to feeling the scale of Snowdonia's slate landscape without buying a ticket. Dinorwig is the world's second-largest slate quarry, an abandoned terraced mountainside above Llanberis that you can walk freely and legally. The atmosphere is part industrial ghost town, part wild rewilding project, and it explains in five minutes what no museum can: how big slate was here.",
+      "difficulty": "Easy to Moderate (steep terraces and loose surfaces)",
+      "duration": "1-3 hours depending on how far you wander",
+      "distance": null,
+      "elevationGain": "Up to 300m if you walk the upper terraces",
+      "bestFor": "Anyone who wants context for the slate-cavern attractions, photographers, dog walkers",
+      "notSuitableFor": "Limited mobility — surfaces are loose slate and there are unprotected drops",
+      "bestSeason": "Year-round (avoid in high wind or storm)",
+      "parking": "Pay-and-display in Llanberis or at the National Slate Museum car park.",
+      "startPoint": {
+        "name": "Dinorwig Quarry above Llanberis",
+        "lat": 53.122,
+        "lng": -4.116
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Combine with the (free) National Slate Museum at the foot of the quarry — together they make the strongest case for slate as Snowdonia's defining industry."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "All the underground experiences on this page are weather-proof. The slate caverns at Llechwedd sit at a steady, cool temperature year-round (low double digits Celsius even in summer). The surface walks at Dinorwig need normal mountain weather caution — wind on the upper terraces can be exposed.",
+    "weatherLinks": [
+      {
+        "name": "Met Office Mountain Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain"
+      }
+    ],
+    "gearChecklist": [
+      "Closed-toe shoes — sandals are not allowed inside the cavern attractions",
+      "Comfortable, slightly worn clothing — slate dust does come off on you",
+      "A light jacket or hoodie — caverns are cool even in summer",
+      "Hair tied back if long",
+      "Water bottle for between sessions",
+      "Cash or card for on-site cafes",
+      "Camera — most operators allow non-flash photography (check on the day)"
+    ],
+    "safetyNotes": [
+      "Follow staff briefings — Bounce Below in particular has clear rules about how to enter, traverse and leave each level.",
+      "Don't bounce with a full stomach. The nets are bigger and harder work than they look.",
+      "Phone signal is patchy underground; arrange meeting points above ground in advance if you're in a group.",
+      "Llechwedd is a working heritage site — stay on marked routes outside the booked attractions."
+    ],
+    "transportNotes": "Blaenau Ffestiniog is on the Conwy Valley Line (Llandudno Junction-Blaenau Ffestiniog) and is also served by the Ffestiniog Heritage Railway from Porthmadog. The Llechwedd site is a short walk or taxi from Blaenau Ffestiniog station.",
+    "parkingNotes": "Llechwedd has a large free on-site car park. In school holidays the upper Bounce Below lot fills first — arrive 30-40 minutes before your session."
+  },
+  "faqs": [
+    {
+      "question": "Where exactly are the underground trampolines in Snowdonia?",
+      "answer": "Bounce Below sits inside Llechwedd Slate Caverns at Blaenau Ffestiniog, on the eastern edge of Snowdonia National Park. It's run by Zip World and is the only underground-trampoline attraction in the UK at this scale."
+    },
+    {
+      "question": "How long is a Bounce Below session?",
+      "answer": "Sessions are around an hour of bouncing time, but allow longer for the walk-in to the cavern, briefing and changing. Most visitors leave a 90-minute window in the day."
+    },
+    {
+      "question": "Is Bounce Below suitable for young children?",
+      "answer": "There are minimum height and age restrictions — check the operator's current rules before booking, because they can change. In practice the experience suits active kids from around primary-school age upwards, plus adults."
+    },
+    {
+      "question": "Is it claustrophobic inside the cavern?",
+      "answer": "The chamber is enormous — much bigger than people expect — but it is genuinely underground, dim and echoing. If serious enclosed-space anxiety is a problem for you, this isn't the right attraction."
+    },
+    {
+      "question": "What else is there to do at the same site?",
+      "answer": "The Llechwedd site hosts Bounce Below, the underground Caverns rope course and the Titan zip lines (all run by Zip World), plus the Llechwedd Slate Caverns heritage Deep Mine tour. The downhill mountain bike centre Antur Stiniog and the Ffestiniog Heritage Railway are both within a short drive."
+    },
+    {
+      "question": "Is this a good plan-B if the mountain weather is bad?",
+      "answer": "Yes — it's the natural Snowdonia rainy-day plan. The cavern experiences are entirely indoors and operate year-round regardless of weather."
+    },
+    {
+      "question": "Why are there so many underground attractions at this one site?",
+      "answer": "Blaenau Ffestiniog sits at the heart of the Gwynedd slate landscape, which carries UNESCO World Heritage recognition. When the quarries closed, the caverns remained — and a generation of adventure operators (notably Zip World) rebuilt those spaces into attractions. The underground theme is rooted in industrial history, not an invented gimmick."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Antur Stiniog",
+        "slug": "antur-stiniog",
+        "address": "Y Glyn, Blaenau Ffestiniog LL41 3NB",
+        "lat": 52.999,
+        "lng": -3.943,
+        "description": "Community-run downhill mountain bike centre on the slate spoil heaps above Blaenau Ffestiniog. Stocks bike-specific kit and runs an uplift service; not a trampoline-gear shop, but the obvious neighbour if you're combining a Bounce Below day with bike time.",
+        "website": "https://www.anturstiniog.com",
+        "phone": "01766 832214",
+        "services": [
+          "bike hire",
+          "uplift",
+          "skills coaching"
+        ]
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Llechwedd on-site cafe",
+        "slug": "llechwedd-cafe",
+        "address": "Llechwedd Slate Caverns, Blaenau Ffestiniog LL41 3NB",
+        "lat": 52.991,
+        "lng": -3.937,
+        "description": "Convenience cafe at the Llechwedd visitor complex — hot drinks, lunch options, cake. Useful before or after a Bounce Below session.",
+        "vibe": "Visitor centre cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Convenience between sessions"
+      },
+      {
+        "name": "Caffi'r Cwt",
+        "slug": "caffir-cwt",
+        "address": "Blaenau Ffestiniog town centre",
+        "lat": 52.994,
+        "lng": -3.942,
+        "description": "Independent cafe in Blaenau Ffestiniog town. A short walk from the heritage railway station and a sensible non-attraction stop for a coffee and a proper lunch.",
+        "vibe": "Independent cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Welsh-language welcome, home baking"
+      },
+      {
+        "name": "Glaslyn Ices, Beddgelert",
+        "slug": "glaslyn-ices",
+        "description": "Award-winning Welsh ice cream in Beddgelert — about 30 minutes' drive from Blaenau Ffestiniog. Natural pairing if you've combined a Bounce Below morning with an afternoon at Sygun Copper Mine.",
+        "vibe": "Family ice cream parlour",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Welsh-made ice cream, picture-perfect village setting"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Llechwedd on-site lodging",
+        "slug": "llechwedd-lodging",
+        "description": "Glamping and bunkhouse options run from the Llechwedd site itself — the natural choice for a multi-activity weekend at this end of Snowdonia.",
+        "type": "glamping and bunkhouse",
+        "priceRange": "££",
+        "nearestSpot": "Bounce Below (on site)",
+        "website": null
+      },
+      {
+        "name": "Sygun Fawr Country House",
+        "slug": "sygun-fawr-country-house",
+        "description": "Country house hotel above Beddgelert, useful if you want to pair Bounce Below at Blaenau Ffestiniog with a quieter base on the Beddgelert side of the park.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Sygun Copper Mine (5 minutes)",
+        "website": null
+      },
+      {
+        "name": "YHA Snowdon Ranger / YHA Llanberis",
+        "slug": "yha-snowdon-ranger-or-llanberis",
+        "description": "YHA hostels at either end of Snowdon, both about an hour's drive from Blaenau Ffestiniog. Budget bases if you want to mix the Llechwedd day with a hiking day on Yr Wyddfa.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Snowdon trailheads",
+        "website": "https://www.yha.org.uk"
+      }
+    ]
+  },
+  "events": [],
+  "keywords": {
+    "primary": "underground trampolines snowdonia",
+    "secondary": [
+      "bounce below",
+      "bounce below blaenau ffestiniog",
+      "llechwedd slate caverns",
+      "underground adventure snowdonia",
+      "zip world bounce below"
+    ],
+    "longTail": [
+      "what is bounce below",
+      "underground trampolines uk",
+      "rainy day activities snowdonia",
+      "things to do blaenau ffestiniog",
+      "snowdonia for families with kids",
+      "slate cavern attractions wales",
+      "bounce below age restrictions",
+      "bounce below vs caverns",
+      "underground attractions north wales"
+    ],
+    "localIntent": [
+      "underground trampolines near betws-y-coed",
+      "underground trampolines near llanberis",
+      "underground trampolines near porthmadog",
+      "things to do near blaenau ffestiniog",
+      "indoor activities snowdonia"
+    ],
+    "commercialIntent": [
+      "book bounce below",
+      "bounce below tickets",
+      "bounce below price",
+      "zip world bundle ticket",
+      "llechwedd slate caverns booking"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "zip-lining",
+        "label": "Zip Lining in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "caving",
+        "label": "Caving and Mine Tours in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "scenic-railway",
+        "label": "Scenic Railways in Snowdonia"
+      }
+    ]
+  }
+}

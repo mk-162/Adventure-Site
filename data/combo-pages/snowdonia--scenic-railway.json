@@ -1,0 +1,378 @@
+{
+  "regionSlug": "snowdonia",
+  "activityTypeSlug": "scenic-railway",
+  "title": "Scenic Railways in Snowdonia",
+  "strapline": "Four heritage lines, one mountain railway, and a region whose modern shape was carved by the trains that hauled its slate.",
+  "metaTitle": "Scenic Railways in Snowdonia | Adventure Wales",
+  "metaDescription": "Honest guide to Snowdonia's heritage railways — Snowdon Mountain Railway, Ffestiniog, Welsh Highland and Talyllyn — and why they matter to the region's slate-industry story.",
+  "heroAlt": "A narrow-gauge steam train winding through a wooded Snowdonia valley, with mountains rising behind.",
+  "introduction": "Heritage railways aren't a quirky side-attraction in Snowdonia — they're a load-bearing part of how the region works. Two of the most important narrow-gauge lines in the world (Ffestiniog and Talyllyn) were built specifically to move slate down from quarry to coast, and were among the first railways anywhere to be saved by volunteers and reborn as preserved heritage operations. The rack-and-pinion Snowdon Mountain Railway — Britain's only public mountain rack railway — was built in the 1890s to get visitors onto the summit of Yr Wyddfa. The Welsh Highland Railway, longest of the heritage lines, threads through Aberglaslyn and Beddgelert on what is widely held to be one of the most scenic railway journeys in the UK. Together they form a network you can genuinely use to get around the region — and a window into the industrial history that shaped it.\n\nThere are four anchor experiences on this page, plus two smaller lakeside lines that round out the picture.\n\n**Why this matters for a Snowdonia trip:**\n- **Mountain access without a hike.** The Snowdon Mountain Railway gets non-hikers (older relatives, very young children, anyone recovering from injury) to within a short walk of the summit of the highest peak in England and Wales.\n- **Slate-heritage context.** The Ffestiniog and Talyllyn lines were built to move slate from the Blaenau Ffestiniog and Bryneglwys quarries respectively. Riding them is the easiest way to feel the scale of the industry the UNESCO listing recognises.\n- **A landscape journey.** The Welsh Highland Railway from Caernarfon to Porthmadog (with Beddgelert and Aberglaslyn Pass in the middle) gives you the south-western side of the park as a 25-mile narrow-gauge journey through scenery you can't easily see from the road.\n- **A genuine rest-day option.** A full train day is one of the few activities in Snowdonia that suits all ages and all weathers, with no fitness floor and no booking-only adrenaline.\n\nA few honest cautions before you plan. **Heritage railways operate seasonally** — most run a full timetable Easter through autumn, a reduced service or Santa specials in winter, and may not run at all on the shoulder weeks. The Snowdon Mountain Railway in particular **does not always run to the summit**: on windy days the trains terminate at Clogwyn (about 3/4 of the way up) or Rocky Valley, with no ticket discount. Booking ahead is essential in summer for SMR, advisable for the others. The exact timetable, fares and summit-running policy can change year to year, so always check the operator's own site close to your travel date.",
+  "bestSeason": "Easter to October for full timetables on all lines; check operator websites for off-season schedules and Santa trains",
+  "difficultyRange": "Easy — all ages, all abilities, accessible options on most lines",
+  "priceRange": "££-£££ per ticket depending on line and class",
+  "spots": [
+    {
+      "name": "Snowdon Mountain Railway (Llanberis to Yr Wyddfa summit)",
+      "slug": "snowdon-mountain-railway",
+      "description": "Britain's only public rack-and-pinion mountain railway, in continuous service (with breaks) since 1896. Climbs from Llanberis station up the western flank of Yr Wyddfa to a station a short walk below the summit (the Hafod Eryri summit visitor centre). Steam-hauled on some services, diesel-hauled on others. On clear days the views from the upper sections — over Cwm Glas, across to Anglesey and the Lleyn — are exceptional. On bad-weather days, trains terminate short of the summit; that is a feature, not a fault.",
+      "difficulty": "Easy",
+      "duration": "Approx. 2-2.5 hours return including summit time",
+      "distance": "4.7 miles (7.5km) one way",
+      "elevationGain": "Approx. 1,000m climb on the railway itself",
+      "bestFor": "Non-hikers who want to reach the highest peak in England and Wales, families with very young children, anyone recovering from injury",
+      "notSuitableFor": "Anyone seeking a 'wild' Snowdon experience — this is a busy, ticketed service that delivers you straight into the busiest part of the mountain",
+      "bestSeason": "Mid-March to early November typically; check operator for current dates",
+      "parking": "Pay-and-display car parks in Llanberis village; SMR has its own car park adjacent to the station.",
+      "startPoint": {
+        "name": "Snowdon Mountain Railway, Llanberis",
+        "lat": 53.122,
+        "lng": -4.124
+      },
+      "estimatedCost": "Adult return tickets typically in the region of £40-50 — confirm on the operator website",
+      "operatorSlug": null,
+      "insiderTip": "Book the earliest possible departure. Cloud usually builds across the summit through the day, and the first trains have the best chance of clear views. Note that the railway can terminate below the summit on windy days with no refund."
+    },
+    {
+      "name": "Ffestiniog Railway (Porthmadog to Blaenau Ffestiniog)",
+      "slug": "ffestiniog-railway",
+      "description": "Opened in 1836 to carry slate from Blaenau Ffestiniog quarries down to Porthmadog harbour, the Ffestiniog Railway is one of the oldest independent railway companies in the world and was a pioneer of narrow-gauge preservation. The 13.5-mile route climbs gently from sea level on Cardigan Bay to the slate town of Blaenau Ffestiniog at 700ft, threading through Snowdonia's southern foothills. Steam-hauled. The natural pairing with a Llechwedd / Bounce Below day — alight at Blaenau Ffestiniog and the slate caverns are a short ride away.",
+      "difficulty": "Easy",
+      "duration": "Approx. 2.5-3 hours return",
+      "distance": "13.5 miles (21.7km) one way",
+      "elevationGain": "Climbs to approx. 700ft / 213m",
+      "bestFor": "Families, slate-heritage interest, anyone combining the railway with a Bounce Below afternoon at Blaenau Ffestiniog",
+      "notSuitableFor": "Anyone in a hurry — this is a heritage line that runs at heritage speeds",
+      "bestSeason": "Easter through October for full services; Santa specials in December",
+      "parking": "Pay-and-display car parks at Porthmadog harbour station and at Blaenau Ffestiniog station.",
+      "startPoint": {
+        "name": "Ffestiniog Railway, Porthmadog Harbour Station",
+        "lat": 52.925,
+        "lng": -4.130
+      },
+      "estimatedCost": "Adult return tickets typically in the region of £35-45 — confirm on the operator website",
+      "operatorSlug": null,
+      "insiderTip": "The Ffestiniog and the Welsh Highland Railway are run by the same heritage operator — combined tickets are usually available. A round-trip via both lines via Caernarfon makes a full but unforgettable day."
+    },
+    {
+      "name": "Welsh Highland Railway (Caernarfon to Porthmadog via Beddgelert)",
+      "slug": "welsh-highland-railway",
+      "description": "At 25 miles, the Welsh Highland is the longest heritage railway in the UK. The route runs from Caernarfon, on the Menai Strait, south through the foothills of Snowdon, past Llyn Cwellyn, through Beddgelert village, down the dramatic Aberglaslyn Pass, and on to Porthmadog. The section through Aberglaslyn — squeezed between cliff, river and forest — is widely cited as one of the great railway journeys in Britain. Steam-hauled by some of the largest narrow-gauge engines ever built. Connects with the Ffestiniog Railway at Porthmadog.",
+      "difficulty": "Easy",
+      "duration": "Approx. 4.5-5 hours return (or 5.5+ if combined with the Ffestiniog)",
+      "distance": "25 miles (40km) one way",
+      "elevationGain": "Moderate climbs across Pitt's Head and through the Snowdon foothills",
+      "bestFor": "Anyone who wants the south-western side of Snowdonia at a slow pace, photographers, all-day rest-day trips",
+      "notSuitableFor": "Anyone short on time — this line really is best done end-to-end",
+      "bestSeason": "Easter through October for the full schedule",
+      "parking": "Pay-and-display car parks at Caernarfon (St Helen's Road area) and Porthmadog.",
+      "startPoint": {
+        "name": "Welsh Highland Railway, Caernarfon",
+        "lat": 53.139,
+        "lng": -4.276
+      },
+      "estimatedCost": "Adult return tickets typically in the region of £40-50 — confirm on the operator website",
+      "operatorSlug": null,
+      "insiderTip": "If you only ride one section, ride between Beddgelert and Porthmadog — Aberglaslyn Pass is the visual highlight of the whole line."
+    },
+    {
+      "name": "Talyllyn Railway (Tywyn to Nant Gwernol)",
+      "slug": "talyllyn-railway",
+      "description": "The original. The Talyllyn was built in 1865 to carry slate from the Bryneglwys quarry above Abergynolwyn down to the coast at Tywyn — and in 1951 became the **first railway in the world to be preserved by volunteers**. That gives it an outsized place in railway history beyond its size. The line is 7.25 miles long, runs along the southern edge of the national park, and links Tywyn (on the Cambrian Coast Line) with the woodlands and waterfalls above Abergynolwyn. Notably quieter than the Snowdon-side lines, with a strong family and walking-pairing tradition.",
+      "difficulty": "Easy",
+      "duration": "Approx. 2.5 hours return",
+      "distance": "7.25 miles (11.7km) one way",
+      "elevationGain": "Gentle climb from sea level at Tywyn",
+      "bestFor": "Quieter heritage-rail day, southern-Snowdonia base (Cadair Idris area), railway-history interest",
+      "notSuitableFor": "Anyone wanting Snowdon-summit views — the line is much further south",
+      "bestSeason": "Spring through autumn; reduced winter services",
+      "parking": "Pay-and-display car parks in Tywyn and at Abergynolwyn intermediate station.",
+      "startPoint": {
+        "name": "Talyllyn Railway, Wharf Station, Tywyn",
+        "lat": 52.586,
+        "lng": -4.087
+      },
+      "estimatedCost": "Adult return tickets typically in the region of £20-30 — confirm on the operator website",
+      "operatorSlug": null,
+      "insiderTip": "Get off at Dolgoch Falls and walk up the short trail to the waterfalls before catching a later train back — most tickets allow break-of-journey at no extra cost."
+    },
+    {
+      "name": "Llanberis Lake Railway (Padarn Country Park, Llanberis)",
+      "slug": "llanberis-lake-railway",
+      "description": "Often confused with the Snowdon Mountain Railway because it shares the same village, but a completely separate experience. The Llanberis Lake Railway is a short narrow-gauge heritage line running along the north shore of Llyn Padarn, originally part of the slate-quarry network at Dinorwig. A 1-hour round trip with strong views across the lake to the Dinorwig terraces and the Snowdon massif. Useful as a non-summit option, particularly for families or in poor mountain weather.",
+      "difficulty": "Easy",
+      "duration": "Approx. 1 hour return",
+      "distance": "Approx. 2.5 miles (4km) one way",
+      "elevationGain": "Negligible — runs at lake level",
+      "bestFor": "Younger children, families on a relaxed Llanberis day, slate-heritage interest paired with the National Slate Museum next door",
+      "notSuitableFor": "Anyone hoping for a mountain railway experience — this is a lakeside line",
+      "bestSeason": "Easter through October typically",
+      "parking": "Padarn Country Park car park, pay-and-display.",
+      "startPoint": {
+        "name": "Llanberis Lake Railway, Gilfach Ddu",
+        "lat": 53.121,
+        "lng": -4.131
+      },
+      "estimatedCost": "Adult return tickets typically in the region of £10-15 — confirm on the operator website",
+      "operatorSlug": null,
+      "insiderTip": "Pair the Lake Railway with the free National Slate Museum on the same site. Together they tell the Llanberis slate story in about a half-day."
+    },
+    {
+      "name": "Bala Lake Railway (Llanuwchllyn to Bala)",
+      "slug": "bala-lake-railway",
+      "description": "A 4.5-mile narrow-gauge line running along the south-eastern shore of Llyn Tegid (Bala Lake), the largest natural lake in Wales. Quieter and less well-known than the Snowdon-side lines, with views across the lake to the Aran ridge. Sits in the south-eastern corner of the national park — useful if you're basing yourself around Bala for kayaking and lakeside activities.",
+      "difficulty": "Easy",
+      "duration": "Approx. 1.5 hours return",
+      "distance": "4.5 miles (7.2km) one way",
+      "elevationGain": "Negligible — runs along the lakeshore",
+      "bestFor": "Bala-area base, families, quieter alternative to the busy north-Snowdonia lines",
+      "notSuitableFor": "Anyone who has driven a long way for a 'big' railway experience — this is a low-key line",
+      "bestSeason": "Easter through October typically",
+      "parking": "Pay-and-display at Llanuwchllyn station; on-street parking in Bala.",
+      "startPoint": {
+        "name": "Bala Lake Railway, Llanuwchllyn",
+        "lat": 52.866,
+        "lng": -3.687
+      },
+      "estimatedCost": "Adult return tickets typically in the region of £15-20 — confirm on the operator website",
+      "operatorSlug": null,
+      "insiderTip": "Pair the railway with a paddle-board hire on Llyn Tegid or with a visit to Llyn Tegid itself — Bala Lake Railway works best as part of a wider day in the south-east of the park."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Heritage railways run in almost all weather, but the Snowdon Mountain Railway is the major exception — high winds (typically above gale force around the summit) will terminate trains short of the top, with no refund. Check the SMR live status page on the morning of travel. The lower-level lines (Ffestiniog, Welsh Highland, Talyllyn, Bala, Llanberis Lake) are far less weather-sensitive.",
+    "weatherLinks": [
+      {
+        "name": "Met Office Mountain Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain"
+      },
+      {
+        "name": "Met Office Weather (Llanberis)",
+        "url": "https://www.metoffice.gov.uk/weather/"
+      }
+    ],
+    "gearChecklist": [
+      "Layers — even in summer, mountain railway carriages can be cool and the SMR summit is genuinely cold",
+      "Waterproof jacket — useful for the SMR summit stop and for the Aberglaslyn section of the Welsh Highland",
+      "Comfortable walking shoes — heritage stations have uneven platforms",
+      "Camera — most carriages have opening windows, but lean in not out",
+      "Water and snacks (some on-train catering on the longer lines, limited at intermediate stations)",
+      "Cash for smaller station kiosks and ice cream stops",
+      "Pre-booked tickets on a phone or printed — especially essential for SMR in peak season"
+    ],
+    "safetyNotes": [
+      "On the Snowdon Mountain Railway, do not assume summit running — check before you set out and dress for mountain weather at the upper station even on a sunny day at Llanberis.",
+      "Keep arms and heads inside carriages — bridges and rock cuttings on heritage lines are closer than they look.",
+      "Aberglaslyn Pass and Llyn Padarn stations sit alongside open water — supervise children near platform edges.",
+      "If you plan to walk back from an intermediate station (e.g. from Dolgoch on the Talyllyn), tell the booking office on the way out."
+    ],
+    "transportNotes": "The Snowdon Mountain Railway and the Llanberis Lake Railway both start in Llanberis (regular Sherpa bus from Bangor and Caernarfon). The Ffestiniog Railway connects Porthmadog (Cambrian Coast Line) with Blaenau Ffestiniog (Conwy Valley Line) — making a true train-only Snowdonia day trip from Llandudno realistic. The Welsh Highland Railway terminates at Caernarfon and at Porthmadog, both reachable by bus from main-line stations. The Talyllyn at Tywyn and the Bala Lake Railway at Llanuwchllyn are both Cambrian Coast Line accessible (Tywyn directly, Bala by bus from Wrexham/Shrewsbury services).",
+    "parkingNotes": "All major heritage railway stations have car parks but they fill in summer school holidays. Pre-book a parking slot at SMR Llanberis where the option exists. Porthmadog and Caernarfon both have town-centre pay-and-display lots within short walks of the heritage stations."
+  },
+  "faqs": [
+    {
+      "question": "Does the Snowdon Mountain Railway go to the very top?",
+      "answer": "Most of the year, yes — the line runs from Llanberis to a station a short walk below the actual summit. But in high winds or poor weather, trains terminate short of the summit (at Clogwyn or Rocky Valley) and there is no refund. Always check the live status on the morning of travel before driving to Llanberis."
+    },
+    {
+      "question": "Which heritage railway in Snowdonia is the most scenic?",
+      "answer": "Subjective, but the Welsh Highland Railway between Beddgelert and Porthmadog (through Aberglaslyn Pass) is most often cited as the single most scenic stretch. The Snowdon Mountain Railway delivers the most dramatic views on a clear day but is much shorter."
+    },
+    {
+      "question": "Which line is best for slate heritage?",
+      "answer": "The Ffestiniog Railway. It was built specifically to move slate from Blaenau Ffestiniog quarries to Porthmadog harbour, and Blaenau Ffestiniog itself is the heart of the UNESCO-recognised Gwynedd slate landscape. Pair the ride with a visit to Llechwedd Slate Caverns at the Blaenau end."
+    },
+    {
+      "question": "Is the Talyllyn Railway really historically significant?",
+      "answer": "Yes — disproportionately so for its size. The Talyllyn was the first railway in the world saved from closure by volunteer preservation, in 1951. Every preserved heritage railway you've ridden anywhere owes something to that precedent."
+    },
+    {
+      "question": "Can I do more than one heritage railway in a day?",
+      "answer": "Yes, with planning. The Ffestiniog and Welsh Highland are run by the same operator and connect at Porthmadog, so you can do a full Caernarfon-Porthmadog-Blaenau Ffestiniog round trip in a single very full day. The Snowdon Mountain Railway and the Llanberis Lake Railway share Llanberis village and can be done together in a half day."
+    },
+    {
+      "question": "Do heritage railways run in winter?",
+      "answer": "Most operate a reduced winter timetable, with Santa specials in December. The Snowdon Mountain Railway typically closes for winter, reopening in spring. Always check the operator's own website for current-year dates before travelling."
+    },
+    {
+      "question": "Are the railways suitable for people with mobility limitations?",
+      "answer": "Most lines have at least some accessible carriages and platform access, but the standard varies by line and by carriage type. The Snowdon Mountain Railway upper station involves a short uneven walk to the summit; the lower-level lines (Ffestiniog, Welsh Highland, Bala, Llanberis Lake, Talyllyn) are generally more accessible. Contact the relevant operator in advance if specific access provision matters to your trip."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [],
+    "postActivitySpots": [
+      {
+        "name": "Pete's Eats",
+        "slug": "petes-eats",
+        "address": "40 High St, Llanberis LL55 4EU",
+        "lat": 53.116,
+        "lng": -4.129,
+        "description": "Llanberis cafe institution. Big breakfasts and hot meals, walking distance from the Snowdon Mountain Railway and Llanberis Lake Railway stations.",
+        "vibe": "Climber and hiker cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Giant portions and post-train fuel"
+      },
+      {
+        "name": "Caffi Caernarfon",
+        "slug": "caffi-caernarfon",
+        "address": "Caernarfon town centre near Welsh Highland Railway",
+        "lat": 53.139,
+        "lng": -4.276,
+        "description": "Cluster of independent cafes within a short walk of Caernarfon's Welsh Highland Railway station and the castle. Several good options for breakfast before a long train day.",
+        "vibe": "Town centre cafes",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Pre-train coffee in Caernarfon"
+      },
+      {
+        "name": "The Ship Inn, Porthmadog",
+        "slug": "ship-inn-porthmadog",
+        "address": "Lombard St, Porthmadog LL49 9AP",
+        "lat": 52.925,
+        "lng": -4.135,
+        "description": "Harbour-side pub a short walk from the Ffestiniog Railway and Welsh Highland Railway stations at Porthmadog. Good place to land at the end of a long heritage-rail day.",
+        "vibe": "Harbour pub",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Post-train pint and harbour views"
+      },
+      {
+        "name": "Bryn Tyrch Inn",
+        "slug": "bryn-tyrch-inn",
+        "address": "Capel Curig, Betws-y-Coed LL24 0EE",
+        "lat": 53.094,
+        "lng": -3.844,
+        "description": "Classic Snowdonia pub, useful if you're combining a railway day with a base in the central Ogwen / Capel Curig area.",
+        "vibe": "Welcoming pub with rooms",
+        "priceRange": "££",
+        "website": "https://www.bryntyrchinn.co.uk/",
+        "knownFor": "Real ales and hearty meals"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "YHA Snowdon Llanberis",
+        "slug": "yha-snowdon-llanberis",
+        "description": "Budget hostel in Llanberis, ten minutes' walk from the Snowdon Mountain Railway and Llanberis Lake Railway. The natural base if rail-heritage is the focus of your trip.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Snowdon Mountain Railway, Llanberis",
+        "website": "https://www.yha.org.uk/hostel/yha-snowdon-llanberis"
+      },
+      {
+        "name": "The Royal Victoria Hotel, Llanberis",
+        "slug": "royal-victoria-llanberis",
+        "description": "Traditional Llanberis hotel a short walk from the Snowdon Mountain Railway. Convenient for early morning SMR departures.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Snowdon Mountain Railway (5 minutes)",
+        "website": null
+      },
+      {
+        "name": "Royal Sportsman Hotel, Porthmadog",
+        "slug": "royal-sportsman-porthmadog",
+        "description": "Town-centre hotel a short walk from both the Ffestiniog and Welsh Highland Railway stations at Porthmadog. The natural base for a full Caernarfon-Porthmadog-Blaenau heritage-rail loop.",
+        "type": "hotel",
+        "priceRange": "££",
+        "nearestSpot": "Porthmadog Harbour Station",
+        "website": null
+      },
+      {
+        "name": "Plas Tan-y-Bwlch (Snowdonia National Park Study Centre)",
+        "slug": "plas-tan-y-bwlch",
+        "description": "Historic country house run as a study centre near Maentwrog, with the Ffestiniog Railway running through its grounds — Plas Halt is one of the line's stations. Atmospheric base for a railway-focused trip.",
+        "type": "country house",
+        "priceRange": "££",
+        "nearestSpot": "Ffestiniog Railway (Plas Halt on site)",
+        "website": null
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Ffestiniog and Welsh Highland Santa Trains",
+      "type": "seasonal",
+      "monthTypical": "December",
+      "description": "Festive services on both Ffestiniog Railway lines through December — books out months in advance.",
+      "website": "https://www.festrail.co.uk/",
+      "relevantActivities": [
+        "scenic-railway"
+      ],
+      "registrationCost": null
+    },
+    {
+      "name": "Snowdonia Slate Trail (walking route alongside the railways)",
+      "type": "walking route",
+      "monthTypical": "Year-round",
+      "description": "85-mile waymarked long-distance walking route through the UNESCO Slate Landscape of North-West Wales — crosses or runs alongside several of the heritage rail lines and is the natural pairing for a slate-heritage rail trip.",
+      "website": null,
+      "relevantActivities": [
+        "hiking",
+        "scenic-railway"
+      ],
+      "registrationCost": 0
+    }
+  ],
+  "keywords": {
+    "primary": "scenic railway snowdonia",
+    "secondary": [
+      "snowdon mountain railway",
+      "ffestiniog railway",
+      "welsh highland railway",
+      "talyllyn railway",
+      "heritage railways wales"
+    ],
+    "longTail": [
+      "snowdon mountain railway tickets",
+      "best heritage railway in snowdonia",
+      "ffestiniog railway porthmadog to blaenau ffestiniog",
+      "welsh highland railway aberglaslyn",
+      "talyllyn railway tywyn",
+      "snowdonia rainy day train",
+      "do trains go to top of snowdon",
+      "heritage railway combo ticket north wales",
+      "slate landscape unesco railway"
+    ],
+    "localIntent": [
+      "scenic train near llanberis",
+      "scenic train near porthmadog",
+      "scenic train near caernarfon",
+      "scenic train near blaenau ffestiniog",
+      "heritage railway near betws-y-coed"
+    ],
+    "commercialIntent": [
+      "book snowdon mountain railway",
+      "ffestiniog railway tickets",
+      "welsh highland railway booking",
+      "talyllyn railway tickets",
+      "snowdonia railway combined ticket"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "mid-wales",
+        "label": "Heritage Railways in Mid Wales (Vale of Rheidol, Brecon Mountain)"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "underground-trampolines",
+        "label": "Underground Trampolines in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "caving",
+        "label": "Caving and Mine Tours in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "wild-swimming",
+        "label": "Wild Swimming in Snowdonia"
+      }
+    ]
+  }
+}

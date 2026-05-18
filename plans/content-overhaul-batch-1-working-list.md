@@ -23,9 +23,9 @@ These are the items that, if shipped, materially change how the site reads at la
 
 ### Require external fact / image verification before shipping
 
-2. **`data/combo-pages/snowdonia--surfing.json`** — anchor: Adventure Parc Snowdonia. Needs verified opening hours, session pricing, capacity. Editor must check current Surf Snowdonia branding.
-3. **`data/combo-pages/snowdonia--underground-trampolines.json`** — anchor: Bounce Below at Llechwedd. Needs Zip World current pricing, age limits, height restrictions.
-4. **`data/combo-pages/snowdonia--scenic-railway.json`** — Snowdon Mountain Railway, Ffestiniog, Welsh Highland, Talyllyn. All four need current timetables / season closures / booking links. Editor verification mandatory.
+2. ~~**`data/combo-pages/snowdonia--surfing.json`** — anchor: Adventure Parc Snowdonia.~~ **File created in Goal 4 batch-1.** Now in refinement / verification status: needs editor to verify current Adventure Parc Snowdonia session pricing, on-site lodging branding (Hilton Garden Inn vs newer name), and to backfill imagery with proper Openverse/Unsplash attribution before launch.
+3. ~~**`data/combo-pages/snowdonia--underground-trampolines.json`** — anchor: Bounce Below at Llechwedd.~~ **File created in Goal 4 batch-1.** Now in refinement / verification status: needs editor to verify current Zip World pricing, height/age restrictions for Bounce Below and Caverns, and to confirm whether Llechwedd Deep Mine tour has a standalone directory slug worth back-referencing.
+4. ~~**`data/combo-pages/snowdonia--scenic-railway.json`** — Snowdon Mountain Railway, Ffestiniog, Welsh Highland, Talyllyn.~~ **File created in Goal 4 batch-1.** Includes Llanberis Lake Railway and Bala Lake Railway as bonus lakeside lines. Now in refinement / verification status: needs editor to verify current-year timetables, summit-running policy for SMR, Santa-train dates, and ticket bands. `operatorSlug` deliberately left blank for all six railways pending directory entries.
 5. **`/directory/zip-world` operator media** — hero image must be Openverse/Unsplash with attribution; experience-level breakdown (Velocity 2 / Titan 2 / Quarry Karts / Caverns / Fforest) needs current pricing.
 6. **`/directory/adventure-parc-snowdonia` operator media** — same pattern; lagoon session pricing changes seasonally.
 

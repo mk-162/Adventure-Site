@@ -1,0 +1,354 @@
+{
+  "regionSlug": "snowdonia",
+  "activityTypeSlug": "surfing",
+  "title": "Surfing in Snowdonia",
+  "strapline": "Snowdonia isn't a coastal surf region — but it does have something the rest of the UK doesn't: a full-scale inland wave pool in a mountain valley.",
+  "metaTitle": "Surfing in Snowdonia | Adventure Wales",
+  "metaDescription": "Honest guide to surfing in Snowdonia: the Adventure Parc Snowdonia inland wave at Dolgarrog, plus the closest sea-surf beaches on the Llŷn Peninsula and Anglesey.",
+  "heroAlt": "Surfer riding a clean shoulder-high wave on the inland lagoon at Adventure Parc Snowdonia, with the Carneddau mountains behind.",
+  "introduction": "Up front, the honest version: **Snowdonia is not a beach-surf destination.** The national park is landlocked on three sides and the bit of coast that fringes it (around Porthmadog, Harlech and Barmouth) faces south-west into a sheltered Cardigan Bay corner that rarely picks up the swell you need to surf properly. If you're looking for an open Atlantic break, you want the Llŷn Peninsula or Anglesey, not Eryri.\n\nThe reason this page exists at all is **Adventure Parc Snowdonia at Dolgarrog**, in the Conwy Valley. It's a purpose-built inland surf lagoon — a long, narrow concrete lake with a wave-generating system that produces a consistent shoulder-high wave roughly every 90 seconds, both sides, all day, regardless of the weather. When it opened in 2015 (originally as Surf Snowdonia, now rebranded as Adventure Parc Snowdonia) it was the first inland wave of its kind in the world. There are now a handful of similar pools globally, but in the UK this is still effectively the only operation at this scale, and the only one that sits an hour's drive from the summit of Yr Wyddfa.\n\nWhat that means in practice: you can drive into the heart of Snowdonia, hike Tryfan or ride Antur Stiniog in the morning, and surf a clean knee-to-head-high wave in the afternoon without leaving the region. For complete beginners — kids included — it's genuinely one of the easiest places in the UK to learn to surf, because the waves arrive on a timer in predictable shape, the bottom is concrete (not reef or shifting sand), and the venue runs structured sessions graded by ability. For improvers it offers something you simply can't get on a Welsh beach: the chance to take twenty or thirty rideable waves in an hour without paddling out through whitewater.\n\nIt is **not** a replacement for sea surfing. The wave is short, the bottom is uniform, and the experience is missing all the wildness and weather-reading that makes real surfing what it is. But as a pairing — one day on the lagoon, one day on the coast — it's a uniquely Snowdonia setup that no other UK region can offer.\n\nThe nearby sea-surf section below lists the closest honest options if you want a salt-water day. None of these are inside Snowdonia National Park, but all are within an hour to ninety minutes' drive of the park boundary. Plan a stay in the region and you can comfortably hit the lagoon and one or two of these coast breaks in a long weekend.",
+  "bestSeason": "Year-round at the lagoon (heated wetsuits available in winter); coastal sea-surf is best September-April when Atlantic swells fire",
+  "difficultyRange": "Beginner to Intermediate (lagoon); Beginner to Advanced (coast)",
+  "priceRange": "££-£££ for lagoon sessions; free at coastal breaks",
+  "spots": [
+    {
+      "name": "Adventure Parc Snowdonia — The Surf Lagoon",
+      "slug": "adventure-parc-snowdonia-lagoon",
+      "description": "The reason this page exists. A purpose-built inland surf lagoon at Dolgarrog in the Conwy Valley, producing predictable, mechanically-generated waves at three ability levels (beginner whitewater rollers, intermediate shoulder-high peeling waves, and advanced bigger sets). Sessions are timed and graded — you book the level that matches your ability, get equipment included, and surf alongside others of similar skill. The wave breaks both sides of the central pier, so left-handers and right-handers run simultaneously.",
+      "difficulty": "Easy to Moderate",
+      "duration": "1 hour surf session, plus changing time",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Complete beginners (including kids), improvers wanting volume of waves, anyone in Snowdonia on a flat-coast day",
+      "notSuitableFor": "Advanced surfers wanting open-ocean conditions, anyone hoping for a 'wild' experience",
+      "bestSeason": "Year-round (heated wetsuits provided in colder months)",
+      "parking": "Large free on-site car park at Adventure Parc Snowdonia. Arrive 45 minutes before your session to get changed.",
+      "startPoint": {
+        "name": "Adventure Parc Snowdonia",
+        "lat": 53.189,
+        "lng": -3.839
+      },
+      "estimatedCost": "Check operator website — pricing varies by session level and season",
+      "operatorSlug": "adventure-parc-snowdonia",
+      "insiderTip": "Book the earliest or latest slot of the day for the quietest line-up. The 'Intermediate' wave is the sweet spot — 'Advanced' looks bigger but the rideable shoulder is shorter."
+    },
+    {
+      "name": "Adventure Parc Snowdonia — Beginner Sessions and Lessons",
+      "slug": "adventure-parc-snowdonia-beginner",
+      "description": "Same venue, but the dedicated learn-to-surf product. Coached group sessions on the inside-bay beginner wave (a rolling whitewater wave, not the open shoulder), with boards, soft-tops and wetsuits provided. The format is closer to a structured surf lesson on a sand bottom than a peer session, and is widely used by families with kids, school groups, and first-timers staying at the on-site accommodation.",
+      "difficulty": "Easy",
+      "duration": "1-2 hour lesson",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Children, complete first-timers, anyone nervous about surfing in open water",
+      "notSuitableFor": "Anyone already comfortable popping up — book a standard session instead",
+      "bestSeason": "Year-round",
+      "parking": "Same as the main lagoon — free on-site parking at Dolgarrog.",
+      "startPoint": {
+        "name": "Adventure Parc Snowdonia",
+        "lat": 53.189,
+        "lng": -3.839
+      },
+      "estimatedCost": "Check operator website",
+      "operatorSlug": "adventure-parc-snowdonia",
+      "insiderTip": "Kids' lessons book up first in summer holidays — secure a date several weeks ahead. The on-site Hilton Garden Inn means you can roll out of bed and walk to the wave."
+    },
+    {
+      "name": "Hell's Mouth (Porth Neigwl), Llŷn Peninsula",
+      "slug": "hells-mouth-porth-neigwl",
+      "description": "**Outside Snowdonia National Park, ~1 hour 15 minutes drive from Betws-y-Coed.** Hell's Mouth is the closest serious sea-surf break to Snowdonia — a four-mile sweep of open Atlantic-facing beach on the Llŷn Peninsula that holds swell from south-west through to north-west. The bottom is sand, the beach is huge, and the wave can range from clean knee-high beginner peelers to heavy double-overhead winter conditions, depending on the storm cycle. West Coast Surf Shop in Abersoch runs lessons and board hire here when conditions allow.",
+      "difficulty": "Easy to Challenging (depends entirely on swell)",
+      "duration": "Half day or full day on the coast",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Surfers with at least some open-water experience, anyone wanting a real sea-surf day from a Snowdonia base",
+      "notSuitableFor": "Total beginners on a big-swell day — check forecasts and take a lesson if it's your first time in the sea",
+      "bestSeason": "September-April for consistent swell; quieter line-ups outside school holidays",
+      "parking": "National Trust car park at the western (Rhiw) end and at the eastern Hell's Mouth car park near Abersoch.",
+      "startPoint": {
+        "name": "Hell's Mouth (Porth Neigwl)",
+        "lat": 52.823,
+        "lng": -4.567
+      },
+      "estimatedCost": "Free to surf; board and wetsuit hire from approx £20-£30",
+      "operatorSlug": "west-coast-surf-shop",
+      "insiderTip": "Wind direction matters more than swell size here. A clean east or north-east wind cleans the wave up; a south-west blow turns it into mush."
+    },
+    {
+      "name": "Porth Trecastell (Cable Bay), Anglesey",
+      "slug": "porth-trecastell-cable-bay",
+      "description": "**Outside Snowdonia National Park, ~1 hour drive from Bangor.** A compact south-west-facing horseshoe bay on Anglesey's west coast that picks up cleaner, more shaped waves than the bigger Llŷn breaks when the swell is smaller. The bottom is sand with a small reef on the southern side. Popular with intermediates because the wave reliably has shape, and with longboarders because it tends to be softer-shouldered than Hell's Mouth.",
+      "difficulty": "Moderate",
+      "duration": "Half day on the coast",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediate surfers, longboarders, anyone who wants a forgiving sea-surf day",
+      "notSuitableFor": "Big-swell hunters — Cable Bay maxes out smaller than Hell's Mouth",
+      "bestSeason": "September-April for swell; summer for quieter conditions but smaller waves",
+      "parking": "Small pay-and-display car park directly above the bay (busy in summer).",
+      "startPoint": {
+        "name": "Porth Trecastell",
+        "lat": 53.198,
+        "lng": -4.495
+      },
+      "estimatedCost": "Free to surf",
+      "operatorSlug": null,
+      "insiderTip": "If Cable Bay is flat, drive ten minutes north to Rhosneigr — the beach there can hold a bit more swell on the same forecast."
+    },
+    {
+      "name": "Dinas Dinlle, near Caernarfon",
+      "slug": "dinas-dinlle",
+      "description": "**Outside Snowdonia National Park, ~30 minutes drive from Llanberis.** The closest sea-surf option to the heart of Snowdonia, but the most marginal. Dinas Dinlle is a long shingle-and-sand beach on the south side of Caernarfon Bay; it picks up swell when the Llŷn options are firing too big to handle, and is sometimes surfable on a clean north-westerly that the bigger beaches blow out. Worth knowing about as a 'check on the way past' rather than a destination in its own right.",
+      "difficulty": "Easy to Moderate",
+      "duration": "1-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Intermediates checking conditions en route to Llŷn, locals on a small clean day",
+      "notSuitableFor": "Anyone hoping for guaranteed waves — Dinas Dinlle is often flat",
+      "bestSeason": "Autumn through spring",
+      "parking": "Roadside parking along the seafront (free in winter, charges in summer).",
+      "startPoint": {
+        "name": "Dinas Dinlle Beach",
+        "lat": 53.043,
+        "lng": -4.331
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Check Hell's Mouth and Cable Bay forecasts first — if they're big and messy, Dinas Dinlle can be the cleaner option."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "The lagoon at Adventure Parc Snowdonia runs in almost any weather — it's a controlled environment. The coastal options are different: swell, wind direction and tide all matter, and the typical Snowdonia weather pattern (Atlantic fronts rolling in from the south-west) means clean surf days on the Llŷn and Anglesey coasts often come during the autumn-to-spring storm window. Summer is usually flat. Always check a marine forecast before driving an hour to the coast.",
+    "weatherLinks": [
+      {
+        "name": "Met Office Marine Forecast",
+        "url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/coast-and-sea"
+      },
+      {
+        "name": "Magicseaweed / Surfline (Llŷn & Anglesey)",
+        "url": "https://www.surfline.com/surf-reports-forecasts-cams/united-kingdom/2862135"
+      }
+    ],
+    "gearChecklist": [
+      "Wetsuit — 4/3mm spring/autumn, 5/4mm winter (hire included at the lagoon; required at the coast)",
+      "Boots, gloves and hood for winter sea sessions — water in North Wales drops to 8°C",
+      "Surfboard appropriate to your level (provided at the lagoon; hire from Abersoch for the coast)",
+      "Leash and wax for hired or own boards",
+      "Towel and change of warm clothes — coastal car parks have no facilities",
+      "Sun protection — even on overcast days a long session burns",
+      "Reusable water bottle and snacks",
+      "Phone in a waterproof case",
+      "Tide-times printout or app for any coastal session"
+    ],
+    "safetyNotes": [
+      "At the lagoon: follow all staff instructions — sessions are timed and the wave fires on a cycle.",
+      "At Hell's Mouth: strong rip currents and a powerful shore-break on bigger days. RNLI lifeguards cover only part of the beach in summer; outside of that, you are on your own.",
+      "At all coastal breaks: never surf alone, tell someone your plan, and check the tide before paddling out — North Wales beaches uncover and cover fast.",
+      "Cold water is the bigger killer than waves — go thicker on the wetsuit than you think you need.",
+      "In an emergency call 999 and ask for the Coastguard."
+    ],
+    "transportNotes": "Adventure Parc Snowdonia sits on the A470 in the Conwy Valley — easiest accessed from the A55 at Junction 19 (Conwy) heading inland, then through Dolgarrog. The Conwy Valley Line train runs Llandudno Junction to Blaenau Ffestiniog and stops at Dolgarrog village, a short walk away. The coastal breaks all need a car.",
+    "parkingNotes": "Lagoon parking is free and on-site. Coastal car parks (Hell's Mouth, Cable Bay, Dinas Dinlle) charge in season and fill quickly on weekends — get there early or use the National Trust pay-by-app where available."
+  },
+  "faqs": [
+    {
+      "question": "Can you actually surf in Snowdonia?",
+      "answer": "Yes — but the surfing you can do inside the national park is at Adventure Parc Snowdonia, an inland wave lagoon at Dolgarrog. There are no surf beaches inside Snowdonia itself. For sea surfing you have to drive 30-90 minutes to the Llŷn Peninsula or Anglesey coast."
+    },
+    {
+      "question": "Is the Adventure Parc Snowdonia wave any good?",
+      "answer": "For learning to surf and for getting a high volume of clean waves in a short time, it's excellent — the wave arrives on a timer, the shape is predictable, and the bottom is concrete rather than shifting sand. It is not a substitute for real sea surfing, and the wave is shorter than an open-ocean ride. Most surfers visit it once or twice a season and pair it with a coastal day."
+    },
+    {
+      "question": "Do I need to be able to surf to book Adventure Parc Snowdonia?",
+      "answer": "No. The lagoon runs separate sessions by ability, starting from total beginner (whitewater rollers, coached lessons) up to advanced (overhead-ish shoulder-high waves on the outer line). Boards and wetsuits are included. It's one of the easiest places in the UK to learn."
+    },
+    {
+      "question": "What is the closest sea-surf beach to Snowdonia?",
+      "answer": "Dinas Dinlle (about 30 minutes from Llanberis) is the closest, but it's a marginal break that's often flat. The closest reliable surf is Hell's Mouth (Porth Neigwl) on the Llŷn Peninsula, around 1 hour 15 minutes from Betws-y-Coed."
+    },
+    {
+      "question": "When is the best time of year to surf in this region?",
+      "answer": "The lagoon runs year-round and is the most reliable option. For sea surf, autumn (September-November) is the sweet spot — Atlantic swells return after the summer flat-spell, water is still relatively warm, and the crowds drop."
+    },
+    {
+      "question": "Can I combine surfing with hiking or other activities in Snowdonia?",
+      "answer": "Yes — that's the natural pairing. Adventure Parc Snowdonia is about an hour's drive from the Ogwen Valley and 40 minutes from Llanberis, so a morning hike on Tryfan or the Glyderau and an afternoon surf session is genuinely doable."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "West Coast Surf Shop",
+        "slug": "west-coast-surf-shop",
+        "address": "Lon Pen Cei, Abersoch, Gwynedd LL53 7AP",
+        "lat": 52.8228,
+        "lng": -4.4875,
+        "description": "The closest serious surf shop to Snowdonia, based in Abersoch on the Llŷn Peninsula. Sells boards, wetsuits and hardware, runs lessons at Hell's Mouth Surf School from May to November, and is the natural last-stop for board hire before a coastal session.",
+        "website": "https://www.westcoastsurf.co.uk",
+        "phone": "01758 713067",
+        "services": [
+          "gear sales",
+          "board hire",
+          "lessons"
+        ]
+      },
+      {
+        "name": "Adventure Parc Snowdonia on-site retail",
+        "slug": "adventure-parc-snowdonia-shop",
+        "address": "Conwy Road, Dolgarrog, Conwy LL32 8QE",
+        "lat": 53.189,
+        "lng": -3.839,
+        "description": "On-site surf retail at the lagoon — wax, fins, leashes, soft-tops and basic accessories. Useful if you've forgotten something or want to upgrade a session board.",
+        "website": "https://adventureparcsnowdonia.com",
+        "phone": "01492 353123",
+        "services": [
+          "accessories",
+          "gear sales"
+        ]
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Hilton Garden Inn Snowdonia (on-site)",
+        "slug": "hilton-garden-inn-snowdonia",
+        "address": "Adventure Parc Snowdonia, Dolgarrog LL32 8QE",
+        "lat": 53.189,
+        "lng": -3.839,
+        "description": "Hotel restaurant and bar inside the Adventure Parc complex. Convenient for a post-session meal without leaving the site.",
+        "vibe": "Hotel restaurant",
+        "priceRange": "££",
+        "website": "https://adventureparcsnowdonia.com",
+        "knownFor": "Convenience after a lagoon session"
+      },
+      {
+        "name": "Tu Hwnt i'r Bont Tearoom",
+        "slug": "tu-hwnt-ir-bont-tearoom",
+        "address": "Llanrwst, Conwy LL26 0PL",
+        "lat": 53.142,
+        "lng": -3.799,
+        "description": "Famous 15th-century stone tearoom on the river at Llanrwst, ten minutes south of Adventure Parc Snowdonia. Welsh cakes, scones and a proper pot of tea after a session.",
+        "vibe": "Historic tearoom",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Welsh cakes and the ivy-covered building"
+      },
+      {
+        "name": "Caffi Siabod",
+        "slug": "caffi-siabod",
+        "address": "Capel Curig, Conwy LL24 0EE",
+        "lat": 53.0947,
+        "lng": -3.8504,
+        "description": "On the route between the lagoon and the Ogwen Valley. Big breakfasts, hot drinks and views toward Tryfan.",
+        "vibe": "Casual mountain cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Breakfast and post-activity refuel"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Adventure Parc Snowdonia — on-site lodging",
+        "slug": "adventure-parc-snowdonia-stay",
+        "description": "Glamping pods and the on-site Hilton Garden Inn at the lagoon. The natural choice if you want a surf-focused weekend — you can walk to your session.",
+        "type": "hotel and glamping",
+        "priceRange": "££-£££",
+        "nearestSpot": "Adventure Parc lagoon (on site)",
+        "website": "https://adventureparcsnowdonia.com"
+      },
+      {
+        "name": "Bron Eifion Country House Hotel",
+        "slug": "bron-eifion-country-house",
+        "description": "Country house hotel near Criccieth, useful for a Snowdonia stay that lets you reach both Adventure Parc and the Llŷn coast.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Llŷn coast (20 minutes)",
+        "website": null
+      },
+      {
+        "name": "YHA Snowdon Llanberis",
+        "slug": "yha-snowdon-llanberis",
+        "description": "Budget hostel in Llanberis. Sensible base if you want to pair a hiking day with a lagoon session — about 40 minutes' drive from Dolgarrog.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Llanberis Path; lagoon ~40 minutes",
+        "website": "https://www.yha.org.uk/hostel/yha-snowdon-llanberis"
+      }
+    ]
+  },
+  "events": [],
+  "keywords": {
+    "primary": "surfing in snowdonia",
+    "secondary": [
+      "adventure parc snowdonia",
+      "surf snowdonia lagoon",
+      "inland surfing wales",
+      "snowdonia wave pool",
+      "learn to surf snowdonia"
+    ],
+    "longTail": [
+      "is there surfing in snowdonia",
+      "adventure parc snowdonia wave size",
+      "best inland surf wave uk",
+      "surf lessons for kids snowdonia",
+      "sea surf beaches near snowdonia",
+      "hells mouth from snowdonia",
+      "cable bay anglesey from snowdonia",
+      "winter surfing north wales",
+      "snowdonia weekend hiking and surfing",
+      "where to stay near surf snowdonia"
+    ],
+    "localIntent": [
+      "surfing near dolgarrog",
+      "surfing near betws-y-coed",
+      "surfing near caernarfon",
+      "surfing near bangor",
+      "surf lagoon north wales"
+    ],
+    "commercialIntent": [
+      "book adventure parc snowdonia",
+      "surf lesson booking snowdonia",
+      "adventure parc snowdonia prices",
+      "surfboard hire near snowdonia",
+      "inland surf gift voucher wales"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "llyn-peninsula",
+        "label": "Surfing on the Llŷn Peninsula"
+      },
+      {
+        "regionSlug": "anglesey",
+        "label": "Surfing on Anglesey"
+      },
+      {
+        "regionSlug": "gower",
+        "label": "Surfing on the Gower"
+      },
+      {
+        "regionSlug": "pembrokeshire",
+        "label": "Surfing in Pembrokeshire"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "wild-swimming",
+        "label": "Wild Swimming in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "zip-lining",
+        "label": "Zip Lining in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "mountain-biking",
+        "label": "Mountain Biking in Snowdonia"
+      }
+    ]
+  }
+}

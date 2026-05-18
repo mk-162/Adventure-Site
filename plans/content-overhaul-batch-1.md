@@ -3,6 +3,7 @@
 Parent plan: `plans/content-overhaul-priority-queue.md`
 Tracker: `content/inventory/coverage-findings.csv`
 Companion research brief: `plans/jules-snowdonia-audit-brief.md`
+Post-reconciliation working list: `plans/content-overhaul-batch-1-working-list.md`
 
 ## Scope
 

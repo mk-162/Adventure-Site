@@ -2,6 +2,7 @@
 
 Owner: content + editorial
 Tracker: `content/inventory/coverage-findings.csv`
+Working list (post-reconciliation): `plans/content-overhaul-batch-1-working-list.md`
 Status as of: 2026-05-18
 
 A practical, ordered queue for getting Adventure Wales content launch-ready. Sequenced so the highest-leverage gaps (Tier-1 destination draws, then visible operator media, then combo-page completeness) are unblocked first.

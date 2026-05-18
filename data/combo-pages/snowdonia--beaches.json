@@ -1,0 +1,422 @@
+{
+  "regionSlug": "snowdonia",
+  "activityTypeSlug": "beaches",
+  "title": "Beaches in Snowdonia",
+  "strapline": "The coast that fringes Eryri is the rest-day other side of the mountain holiday — drive-on sand at Black Rock, a Cardigan Bay sweep at Harlech, and Brunel's railway viaduct at Barmouth.",
+  "metaTitle": "Beaches in Snowdonia | Harlech, Barmouth, Black Rock | Adventure Wales",
+  "metaDescription": "Honest guide to the beaches inside and bordering Snowdonia: Harlech, Barmouth and the Mawddach estuary, Tywyn, Dinas Dinlle, and Black Rock Sands — the drive-on beach near Porthmadog.",
+  "heroAlt": "Wide empty sand at Harlech Beach with Harlech Castle on the headland behind, Snowdonia mountains in the distance.",
+  "introduction": "Snowdonia National Park is mostly inland, but a long ribbon of its western edge meets Cardigan Bay — and the coast from Aberdovey north through Tywyn, Barmouth, Harlech and on toward Porthmadog is one of the most under-rated beach stretches in the UK. The combination matters: these are **Snowdonia rest-day beaches**, the natural pair for a hard day in the mountains, with mountain views from the sand and the option to drive back inland for dinner. Several of the named beaches below are technically just inside or just outside the official park boundary — we've called the boundary out per spot so the planning is honest.\n\nThree facts shape the scene. **First, the coast faces west into Cardigan Bay**, which is the Atlantic-facing side of Wales but partly sheltered by the Llŷn Peninsula. That means clean sand and proper sunsets, but smaller swells than the open-Atlantic breaks on the Llŷn or Pembrokeshire — Snowdonia coast is a paddle-and-walk coast, not a surf coast (see [surfing in Snowdonia](/snowdonia/things-to-do/surfing) for what's viable). **Second, this is dolphin water** — Cardigan Bay holds one of only two resident bottlenose dolphin populations in the UK, with regular sightings from Aberdovey north. **Third, the mountains run straight to the sea** at several points (Barmouth and Harlech especially), so a single afternoon can give you the full Snowdonia contrast: peaks at your back, sand at your feet, Cardigan Bay running out toward the Wicklow Mountains 70 miles west.\n\nFor the practical highlights:\n\n- **Black Rock Sands (Morfa Bychan)** near Porthmadog is the famous **drive-on beach** of the region — you can park your car on the sand, which makes it the family / picnic / kitesurfing favourite and the busiest summer beach on this coast. Just outside the national park boundary (officially on the Llŷn Peninsula side).\n- **Harlech Beach** is the long sweep beneath Harlech Castle — three kilometres of low-tide sand, almost always uncrowded despite the scale, with the Royal St David's golf course in the dunes behind and the most photogenic castle-and-beach view in Wales.\n- **Barmouth (Abermaw)** is the classic seaside town on this coast — promenade, harbour, donkey rides in season, and the Mawddach Estuary running inland under Brunel's wooden railway viaduct (one of only two Victorian timber rail bridges still in use in the UK).\n- **Dinas Dinlle**, just outside Caernarfon, is the closest sea beach to the mountain heart of the park — pebbles to fine grey-sand depending on tide, lifeguard-patrolled in summer, and a working option if you want a coast afternoon from a Snowdon base.\n- **Tywyn and Aberdovey** to the south are the quieter Cambrian Coast beaches — long, lifeguard-covered, with the Talyllyn Railway (the world's first preserved railway) running inland from Tywyn into the hills.\n\nThe tide on this coast is the main planning variable. Many of the beaches **almost disappear at high water** (Barmouth, Llandanwg, parts of Harlech) and triple in size at low — check tide times before you commit to a beach day. The other catch is parking: village car parks at Barmouth, Black Rock and Aberdovey all fill by mid-morning on a sunny summer weekend.",
+  "bestSeason": "May-September for swimming and lifeguard cover. April / October for empty sand and walking. Year-round for storm-watching.",
+  "difficultyRange": "Easy (all are family-accessible)",
+  "priceRange": "Free to access; parking £3-£8 at most named beaches",
+  "spots": [
+    {
+      "name": "Black Rock Sands (Morfa Bychan)",
+      "slug": "black-rock-sands",
+      "description": "The famous drive-on beach near Porthmadog — a three-kilometre stretch of compact sand where you can park your car directly on the beach, which makes it the family / picnic / kitesurfing favourite of the region. Caves at the western end at low tide. South-facing across Cardigan Bay so it catches afternoon sun. Note this is officially on the Llŷn Peninsula side of the boundary (the village of Morfa Bychan sits just outside Snowdonia National Park) but it's the natural sea-beach for anyone based in Porthmadog or Beddgelert.",
+      "difficulty": "Easy",
+      "duration": "Half day to full day",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, picnics, drive-on convenience, kitesurfing in onshore winds, cave exploration at low tide",
+      "notSuitableFor": "Anyone wanting an empty beach in peak summer — Black Rock is the busiest beach on this coast",
+      "bestSeason": "May-September for full beach use; year-round for walks",
+      "parking": "Drive onto the beach itself (paid; check current rates with the operator at the entrance — this is the main draw and also the main bottleneck on busy days). Conventional car parks in Morfa Bychan village also feed the beach.",
+      "startPoint": {
+        "name": "Black Rock Sands beach entrance",
+        "lat": 52.915,
+        "lng": -4.160
+      },
+      "estimatedCost": "Beach driving fee (verify rates locally)",
+      "operatorSlug": null,
+      "insiderTip": "Drive onto the firm sand only — the loose dry sand near the dunes will bury an unsuited car. The caves at the western end are only reachable for ~2 hours either side of low tide; check the tide before you set off down the beach."
+    },
+    {
+      "name": "Harlech Beach",
+      "slug": "harlech-beach",
+      "description": "The vast sand sweep below Harlech Castle — three kilometres long, west-facing, almost always uncrowded despite the scale because there's no town front, just dunes and the Royal St David's golf course behind. The view back toward the castle and the Rhinog mountains is the most photographed beach scene in Wales and arguably the best sunset on the Welsh coast. Long enough to walk for an hour without retracing.",
+      "difficulty": "Easy",
+      "duration": "1-3 hours; full day at low tide",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Walking, sunset photography, families wanting space, dog walking (year-round access)",
+      "notSuitableFor": "Anyone wanting cafes / amenities on the sand — facilities are back in Harlech town",
+      "bestSeason": "Year-round (best sunsets September-March; best swimming June-September)",
+      "parking": "Harlech town car parks and the beach access car park behind the dunes (paid; £3-5).",
+      "startPoint": {
+        "name": "Harlech Beach access",
+        "lat": 52.8634,
+        "lng": -4.1334
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Walk south along the sand toward Llandanwg — the beach gets emptier with every kilometre and the views back to the castle keep improving. Plan tides: high water reduces the usable strip significantly."
+    },
+    {
+      "name": "Barmouth Beach (Abermaw)",
+      "slug": "barmouth-beach",
+      "description": "Classic Welsh seaside resort beach — four kilometres of west-facing sand at Barmouth, backed by the promenade, harbour, donkey rides in summer and the Mawddach Estuary running inland under Brunel's 1867 timber railway viaduct (one of only two Victorian wooden rail bridges still in use in the UK). The estuary mouth gives the beach unusual character: mountain views inland up the Mawddach valley, classic seaside on the seaward side. Blue Flag status and seasonal lifeguard cover.",
+      "difficulty": "Easy",
+      "duration": "Half day to full day",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families wanting traditional seaside, walking the Mawddach Trail across the viaduct, swimming with lifeguard cover",
+      "notSuitableFor": "Anyone wanting wild emptiness — Barmouth is the most developed beach on this coast",
+      "bestSeason": "May-September for swimming and full town buzz; year-round for walking",
+      "parking": "Multiple pay-and-display car parks in Barmouth town (fill on summer weekends — arrive early).",
+      "startPoint": {
+        "name": "Barmouth Beach / promenade",
+        "lat": 52.7196,
+        "lng": -4.0556
+      },
+      "estimatedCost": "Free (parking £4-7)",
+      "operatorSlug": null,
+      "insiderTip": "Walk across the Barmouth Viaduct (footway alongside the railway track, small pedestrian toll) for one of the great Welsh walks — Mawddach estuary on one side, sea on the other. Pair with a coffee at the south-side end before walking back."
+    },
+    {
+      "name": "Dinas Dinlle",
+      "slug": "dinas-dinlle",
+      "description": "The closest proper sea beach to the mountain heart of Snowdonia — twenty minutes from Caernarfon, an hour from Llanberis. Long pebble-and-sand strip backing onto the Caernarfon Air Museum and an Iron Age hillfort on the headland. Cleaner waves than Cardigan Bay because it faces open water across to Anglesey rather than into the sheltered bay, which makes it the working beach option if you're staying around Snowdon and want a beach hour without driving south.",
+      "difficulty": "Easy",
+      "duration": "1-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Snowdon-based visitors wanting a coast hour, lifeguard-patrolled summer swimming, kite-flying, the Iron Age hillfort walk on the headland",
+      "notSuitableFor": "Anyone wanting Cardigan Bay scale or the protected southern beaches' soft sand — Dinas Dinlle is rougher around the edges",
+      "bestSeason": "May-September for swimming and lifeguards; year-round for walks",
+      "parking": "Beach-front car park (paid in summer; free off-season).",
+      "startPoint": {
+        "name": "Dinas Dinlle beach",
+        "lat": 53.030,
+        "lng": -4.378
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Walk south to the Iron Age hillfort on the headland for the best view back over the beach and toward Anglesey. The Caernarfon Air Museum on the back of the car park is a workable rainy-day backup if the beach is windblown."
+    },
+    {
+      "name": "Tywyn Beach",
+      "slug": "tywyn-beach",
+      "description": "Five-kilometre west-facing sand and shingle beach at Tywyn on the southern Cambrian Coast — the quietest of the named beaches on this page, with a promenade, lifeguard cover in summer, and dolphin-spotting from the seafront in season. Tywyn is also the southern terminus of the Talyllyn Railway, the world's first preserved railway (1865 line, restored in 1951), which runs steam trains inland from the seafront into the Dysynni valley.",
+      "difficulty": "Easy",
+      "duration": "Half day; full day combined with Talyllyn Railway",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families pairing beach with a heritage railway day, dolphin-watching from the seafront, quieter summer alternative to Barmouth",
+      "notSuitableFor": "Anyone wanting the developed seaside-town buzz of Barmouth",
+      "bestSeason": "May-September for swimming and trains; year-round for walking",
+      "parking": "Promenade car park (paid) and side streets.",
+      "startPoint": {
+        "name": "Tywyn promenade",
+        "lat": 52.583,
+        "lng": -4.095
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Combine a morning on the beach with a Talyllyn Railway round trip in the afternoon — the train climbs into the hills with views back to Cardigan Bay, and the timetable is built for visitors who want to combine both."
+    },
+    {
+      "name": "Aberdovey Beach",
+      "slug": "aberdovey-beach",
+      "description": "Six kilometres of south-facing sand where the Dyfi Estuary meets Cardigan Bay — the southernmost named beach on this coast, with the picture-postcard pastel houses of Aberdovey village behind. Best sailing harbour on the Cambrian Coast, kitesurfing in onshore winds, and the southern start of the Snowdonia coast walking. Crosses the boundary out of Snowdonia National Park at its southern end (Dyfi Estuary forms the park edge here).",
+      "difficulty": "Easy",
+      "duration": "Half day to full day",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Sailing crowd, kitesurfing, southern-coast empty beach walks, foodie pubs and seafood in the village",
+      "notSuitableFor": "Anyone wanting child-friendly amenities at high concentration — Aberdovey is quieter and more pastel-village than seaside-resort",
+      "bestSeason": "May-September for water; year-round for walks",
+      "parking": "Village pay-and-display and seafront parking (fills on summer weekends).",
+      "startPoint": {
+        "name": "Aberdovey seafront",
+        "lat": 52.5445,
+        "lng": -4.0543
+      },
+      "estimatedCost": "Free (parking £4-6)",
+      "operatorSlug": null,
+      "insiderTip": "Walk west out of the village onto the empty south-facing sand dunes — within ten minutes you're alone with the dolphins (Cardigan Bay holds resident bottlenose; September is a good sighting month)."
+    },
+    {
+      "name": "Fairbourne Beach",
+      "slug": "fairbourne-beach",
+      "description": "Three kilometres of golden sand at low tide backed by a steep shingle bank, directly across the Mawddach Estuary from Barmouth — the quiet alternative to Barmouth itself. Reached by either the road around the head of the estuary or, more memorably, by walking across Barmouth Viaduct and the Fairbourne Miniature Railway from the south end. Less developed than Barmouth, more spacious than Tywyn, and known for the windswept sunsets across to the Llŷn Peninsula.",
+      "difficulty": "Easy",
+      "duration": "Half day; full day if combined with the Fairbourne Railway",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Quiet sands, walkers, photographers, anyone wanting a Mawddach view without the Barmouth crowds",
+      "notSuitableFor": "Anyone wanting town amenities right on the beach — Fairbourne village is small",
+      "bestSeason": "May-September for swimming; year-round for walks and storm-watching",
+      "parking": "Village pay-and-display and seafront parking.",
+      "startPoint": {
+        "name": "Fairbourne seafront",
+        "lat": 52.697,
+        "lng": -4.054
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "The Fairbourne Miniature Railway runs from the village to the estuary mouth and back — pair it with the Barmouth Viaduct walk for a full Mawddach circuit (walk from Fairbourne to Barmouth across the viaduct, eat in Barmouth, train and walk back)."
+    },
+    {
+      "name": "Llandanwg Beach",
+      "slug": "llandanwg",
+      "description": "Sheltered cove between Harlech and Tal-y-bont with a 6th-century church (St Tanwg's) half-buried in the dunes — Wales' smallest active parish church and one of its strangest beach features. Mixed sand and rocky shoreline good for rock-pooling, plus a lagoon at the eastern end suitable for paddling and short kayak runs. Quieter than Harlech, with a small cafe in summer.",
+      "difficulty": "Easy",
+      "duration": "1-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families with younger children, rock-pooling, kayaking the lagoon, anyone interested in the buried church",
+      "notSuitableFor": "Anyone wanting a long open sand sweep — that's Harlech next door",
+      "bestSeason": "May-September",
+      "parking": "Small village car park (paid, fills early on summer weekends).",
+      "startPoint": {
+        "name": "Llandanwg",
+        "lat": 52.827,
+        "lng": -4.120
+      },
+      "estimatedCost": "Free (parking £3-5)",
+      "operatorSlug": null,
+      "insiderTip": "Visit St Tanwg's church before or after the beach — it's free, almost always open, and the only church in the UK that's still in active use while half-buried in coastal dunes."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Cardigan Bay coast weather is markedly milder than the mountain interior of Snowdonia — expect five degrees warmer in summer at sea level than on the Snowdon massif. Wind direction matters: south-westerlies bring rain and choppy water but warm air; easterlies bring cooler air and the cleanest beach conditions. Sea temperature peaks around 16-17°C in late August.",
+    "weatherLinks": [
+      {
+        "name": "Met Office — Barmouth marine forecast",
+        "url": "https://www.metoffice.gov.uk/weather/forecast/"
+      },
+      {
+        "name": "RNLI beach safety",
+        "url": "https://rnli.org/safety/choose-your-activity/visiting-the-coast"
+      },
+      {
+        "name": "EasyTide tide tables",
+        "url": "https://easytide.admiralty.co.uk/"
+      }
+    ],
+    "gearChecklist": [
+      "Sun protection (the Welsh coast burns harder than visitors expect, even in cloud)",
+      "Wetsuit or swim layer if you're going in — water is 12-17°C even in summer",
+      "Windbreak / shelter (Cardigan Bay coast catches afternoon onshore winds)",
+      "Tide table or app — many beaches reduce significantly at high water",
+      "Cash for parking and the Black Rock drive-on fee (card not always supported)",
+      "Lead and bags for dogs (most beaches restrict dogs in summer; rules vary by beach)"
+    ],
+    "gearHire": [],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5-6h",
+          "route": "Via M40 / M6 / A5; A470 south for Barmouth and Harlech; A487 south for Tywyn and Aberdovey"
+        },
+        {
+          "from": "Manchester",
+          "duration": "2.5-3h",
+          "route": "M56 / A55; then A470 for Barmouth, A487 for southern beaches"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3.5h",
+          "route": "M6 and A5 to Shrewsbury, then A458 to Aberdovey / A470 to Harlech"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "3.5-4h",
+          "route": "A470 north all the way"
+        }
+      ],
+      "publicTransport": "The Cambrian Coast Line runs from Shrewsbury through Machynlleth, Aberdovey, Tywyn, Fairbourne, Barmouth, Harlech and on to Porthmadog and Pwllheli — every beach on this page except Dinas Dinlle has a train station within walking distance of the sand. One of the great UK rail journeys for a beach-day itinerary.",
+      "parkingTips": "Village car parks at Barmouth, Aberdovey, Black Rock and Harlech all fill by mid-morning on sunny summer weekends. Arrive before 10:00 or after 16:00 for an easy parking day. Black Rock drive-on access has its own queue and fee structure separate from the regular car parks."
+    },
+    "safety": "Cardigan Bay has tides that move sand banks faster than visitors expect — a beach that was firm for the morning car may be cut off by a rising channel by afternoon. Black Rock Sands in particular has a reputation for cars getting stranded by incoming tide. Always check tide times and park on the firm wet sand only, not the dry banks. Rip currents are present at Barmouth, Tywyn and Aberdovey — swim only between the flags when lifeguards are on duty. In emergencies dial 999 and ask for Coastguard."
+  },
+  "faqs": [
+    {
+      "question": "Is Black Rock Sands actually inside Snowdonia National Park?",
+      "answer": "Technically no — the village of Morfa Bychan sits just outside the park boundary on the Llŷn Peninsula side. But it's the natural sea-beach for anyone based in Porthmadog, Beddgelert or the western edge of the park, so we've kept it on this page with a clear boundary note."
+    },
+    {
+      "question": "Can you really drive a normal car onto Black Rock Sands?",
+      "answer": "Yes, on the firm wet sand. The dry loose sand near the dunes will bog a normal car down within metres. Check the tide before driving onto the beach — incoming tide has caught out plenty of visitors over the years."
+    },
+    {
+      "question": "Which is the best beach for families?",
+      "answer": "Barmouth for traditional seaside (donkeys, promenade, lifeguards, ice cream); Black Rock for picnicking by the car; Harlech for space; Tywyn for the heritage-railway combo. All four are workable; Barmouth has the deepest amenity stack."
+    },
+    {
+      "question": "Are the beaches lifeguard-patrolled?",
+      "answer": "Barmouth, Tywyn and Dinas Dinlle have seasonal RNLI lifeguard cover (typically July-August, weekends in June). Harlech, Black Rock, Llandanwg and Aberdovey are not lifeguard-patrolled — swim with caution and observe rip-current warning signs."
+    },
+    {
+      "question": "When can I see dolphins from the Snowdonia coast?",
+      "answer": "Cardigan Bay holds one of two UK resident bottlenose dolphin populations. Best sightings May-October from the seafronts at Aberdovey, Tywyn and Barmouth, or on the New Quay dolphin-watching boats further south. September is a particularly good month."
+    },
+    {
+      "question": "Is the sea warm enough to swim without a wetsuit?",
+      "answer": "Late July through early September the bay reaches 15-17°C — chilly but tolerable. Earlier or later in the year, expect 10-14°C — a shortie wetsuit is the norm for anyone planning to swim properly rather than splash."
+    },
+    {
+      "question": "Can I take my dog on the beach?",
+      "answer": "Rules vary by beach. Harlech allows dogs year-round; Barmouth restricts dogs to specific zones in summer; Black Rock has summer restrictions; Tywyn and Dinas Dinlle have a seasonal ban on the main lifeguarded sections. Check the local signage on arrival."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [],
+    "postActivitySpots": [
+      {
+        "name": "The Ship Aground",
+        "slug": "the-ship-aground-aberdovey",
+        "address": "Aberdovey LL35 0EE",
+        "lat": 52.544,
+        "lng": -4.053,
+        "description": "Aberdovey village pub with sea views and a strong seafood menu — the natural end-of-the-day stop after an Aberdovey beach afternoon.",
+        "vibe": "Seaside pub",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Seafood, harbour views"
+      },
+      {
+        "name": "Cemlyn Tea Shop (Harlech)",
+        "slug": "cemlyn-tea-shop",
+        "address": "High Street, Harlech LL46 2YA",
+        "lat": 52.860,
+        "lng": -4.107,
+        "description": "Highly-rated tea room in Harlech village above the beach — Welsh cakes, scones, and famously good loose-leaf tea selection. Walking distance from the castle and the beach access car park.",
+        "vibe": "Traditional tea room",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Welsh cakes, sea views from the upper floor"
+      },
+      {
+        "name": "Davy Jones' Locker (Barmouth)",
+        "slug": "davy-jones-locker-barmouth",
+        "address": "Barmouth LL42 1ET",
+        "lat": 52.720,
+        "lng": -4.055,
+        "description": "Harbour-front fish-and-chip institution in Barmouth — the standard end-of-the-day stop after the beach.",
+        "vibe": "Harbour chippy",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Fish and chips, harbour location"
+      },
+      {
+        "name": "The Wharf Hotel (Aberdovey)",
+        "slug": "wharf-hotel-aberdovey",
+        "address": "Aberdovey LL35 0NE",
+        "lat": 52.544,
+        "lng": -4.054,
+        "description": "Aberdovey seafront hotel with bistro and bar serving Welsh produce and good local seafood.",
+        "vibe": "Seafront hotel bar",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Sea-view dining"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Royal St David's Hotel (Harlech)",
+        "slug": "royal-st-davids-harlech",
+        "description": "Hotel attached to the championship Royal St David's golf course behind Harlech beach. Walking distance to the sand and to the castle.",
+        "type": "hotel",
+        "priceRange": "££-£££",
+        "nearestSpot": "Harlech Beach (5 min walk)",
+        "website": null
+      },
+      {
+        "name": "Shell Island Campsite",
+        "slug": "shell-island-campsite",
+        "description": "Vast tidal-island campsite north of Harlech — over 300 acres of dunes, famous for the variety of seashells along its beaches. Tide-locked at high water.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Shell Island Beach (on site)",
+        "website": "https://shellisland.co.uk/"
+      },
+      {
+        "name": "Trefeddian Hotel (Aberdovey)",
+        "slug": "trefeddian-aberdovey",
+        "description": "Long-standing Aberdovey hotel with direct beach access and an indoor pool — a popular family base.",
+        "type": "hotel",
+        "priceRange": "£££",
+        "nearestSpot": "Aberdovey Beach (across the road)",
+        "website": null
+      },
+      {
+        "name": "Penmaen Uchaf B&B (Barmouth)",
+        "slug": "penmaen-uchaf-barmouth",
+        "description": "B&B in Barmouth with sea views and walking access to the promenade and Mawddach Viaduct.",
+        "type": "bed and breakfast",
+        "priceRange": "££",
+        "nearestSpot": "Barmouth Beach (5 min walk)",
+        "website": null
+      }
+    ]
+  },
+  "events": [],
+  "keywords": {
+    "primary": "beaches in snowdonia",
+    "secondary": [
+      "harlech beach",
+      "barmouth beach",
+      "black rock sands",
+      "dinas dinlle beach",
+      "aberdovey beach"
+    ],
+    "longTail": [
+      "best beaches near snowdonia",
+      "drive on beach wales",
+      "harlech beach parking",
+      "barmouth beach mawddach viaduct",
+      "tywyn beach talyllyn railway",
+      "dog friendly beaches snowdonia",
+      "snowdonia rest day beach",
+      "beaches near porthmadog",
+      "lifeguard beaches snowdonia"
+    ],
+    "localIntent": [
+      "beach near porthmadog",
+      "beach near caernarfon",
+      "beach near snowdon",
+      "beach near betws-y-coed",
+      "beach near dolgellau"
+    ],
+    "commercialIntent": [
+      "harlech beach parking cost",
+      "black rock sands drive on fee",
+      "beach hotels barmouth",
+      "family beach holiday snowdonia"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "llyn-peninsula",
+        "label": "Beaches on the Llŷn Peninsula"
+      },
+      {
+        "regionSlug": "anglesey",
+        "label": "Beaches on Anglesey"
+      },
+      {
+        "regionSlug": "ceredigion",
+        "label": "Beaches in Ceredigion"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "surfing",
+        "label": "Surfing in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "scenic-railway",
+        "label": "Scenic Railways in Snowdonia"
+      }
+    ]
+  }
+}

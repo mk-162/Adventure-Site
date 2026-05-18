@@ -6,7 +6,7 @@
   "metaTitle": "Gorge Walking Snowdonia | The Complete Guide | Adventure Wales",
   "metaDescription": "Discover the best gorge walking Snowdonia has to offer. Routes, operators, gear, and everything you need for an unforgettable canyoning experience.",
   "heroAlt": "Gorge walker leaps into a pool of water in a Snowdonia canyon.",
-  "introduction": "Snowdonia is a gorge walking mecca, plain and simple. The dramatic, glacier-carved valleys are riddled with stunning canyons just begging to be explored. Forget manicured trails – this is raw, hands-on adventure where you'll be wading, scrambling, and swimming your way through cascading waterfalls and sculpted rock formations. What sets Snowdonia apart is the sheer variety. From family-friendly dips in the Fairy Glen to adrenaline-pumping descents in the Ogwen Valley, there's a gorge to suit every level of experience. \n\nThis isn't always sunshine and roses, though. The weather can be notoriously fickle, turning a pleasant outing into a potentially dangerous situation in minutes. Water levels rise rapidly after heavy rain, and some sections can become treacherous. And let's be honest, the water *is* cold – even in summer! So, do your homework, check the forecast, and consider going with a qualified guide, especially if you're a beginner or tackling a more challenging route. Gorge walking in Snowdonia is best for those who love a physical challenge, don't mind getting wet, and have a healthy respect for the elements. It's not for the faint of heart, but the rewards – breathtaking scenery, exhilarating thrills, and a true sense of accomplishment – are well worth the effort. If you're looking for a unique and unforgettable way to experience the wild beauty of Snowdonia, **gorge walking Snowdonia** is the adventure for you. Be sure to check conditions before you head out! Many of the best **gorge walking Snowdonia** locations require a bit of care and planning, but you won't regret the experience. This is definitely an activity that will make your trip memorable.",
+  "introduction": "First, a scope note — because the words *gorge walking* and *canyoning* get used interchangeably in Snowdonia, and they shouldn't be. **Gorge walking, on this page, means a guided wet scramble *up* a river gorge** — wading, scrambling, the occasional short jump into a plunge pool. Feet stay close to the rock; ropes aren't usually load-bearing. **Canyoning** is the rope-led discipline that *descends* the same terrain — abseils down waterfalls, controlled jumps, swims through tighter slots. The Snowdonia operators below offer both, often using the same valleys, but the experience and the skill bar are different. Where we know an operator runs canyoning-grade trips into a given gorge, we've flagged it.\n\nThat caveat aside, Snowdonia is genuinely one of the best gorge-walking destinations in the UK, for one geological reason: the glacier-scoured Ogwen, Llugwy and Glaslyn valleys cut through hard volcanic rock that holds its shape — clean granite-style slabs, sculpted plunge pools, and reliable bedrock to scramble on. You're not slipping over greasy mudstone. The water is cold even in August (8–12°C in the higher pools), but the gorges drain steeply, so a good summer week firms conditions up fast.\n\nThe scene splits across roughly four valleys. The **Ogwen Valley** (lower and upper sections below Llyn Idwal) is the classic guided introduction — Ogwen Cottage is the standard meeting point, and Mountainxperience, Adventure Britain and Plas y Brenin all run regular trips here. **Ceunant Mawr at Llanberis** — the dramatic waterfall canyon directly above the village (Welsh for 'great ravine') — is the local canyoning grade-up: short approach, big features, mostly run as a canyoning descent rather than an upward gorge walk, and the natural step up from the Ogwen day. The **Nant Gwynant valley** below the Watkin Path holds longer, more remote routes for experienced walkers. **Fairy Glen at Betws-y-Coed**, **Conwy Falls** and the **Aberglaslyn Pass** near Beddgelert are the family/sightseeing end — paddle-and-scramble in shallow pools rather than full gorge days.\n\nThe weather rule on every Snowdonia gorge: **water level beats every other variable**. A dry forecast on the day means nothing if the previous 48 hours dumped rain on the catchment above — Ogwen, Llugwy and Glaslyn all spike fast and drain slow. Operators read this for you. If you're going self-guided, check Natural Resources Wales river levels (Llanrwst gauge on the Conwy, Betws-y-Coed on the Llugwy) before you set off, and pick another day if the trace is sitting high. The Dolgarrog gorge listed below is included as a documented expert route — it has killed people, and it's not a self-guided option for anyone without serious canyoning experience and a strong team.",
   "bestSeason": "May-September",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £80 guided",
@@ -157,6 +157,27 @@
       "estimatedCost": "Free, but high risk",
       "operatorSlug": null,
       "insiderTip": "This gorge is not for the faint-hearted. Serious risk of injury or death if attempted by inexperienced walkers. Local knowledge is essential."
+    },
+    {
+      "name": "Ceunant Mawr (Llanberis Waterfall Canyon)",
+      "slug": "ceunant-mawr-llanberis",
+      "description": "Ceunant Mawr — Welsh for 'great ravine' — is the dramatic waterfall canyon directly above Llanberis village, fed by the Afon Arddu draining Cwm Brwynog below the Llanberis Path. Most operators run it as a **canyoning descent** (rope-led abseils down a series of stepped falls into deep plunge pools) rather than an upward gorge walk, because the headwalls are too sheer to scramble up cleanly. The setting is exceptional — slate-quarry walls on one side, the Snowdon massif overhead — and the approach from the village is short. This is the standard 'next step up' from a beginner Ogwen day, and one of the best half-day canyoning trips in the UK.",
+      "difficulty": "Challenging",
+      "duration": "3-4 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Anyone who's done a guided gorge day and wants the canyoning grade-up; strong scramblers comfortable with abseils on rope",
+      "notSuitableFor": "Complete beginners, anyone uncomfortable with abseil descents or cold-water immersion, weak swimmers",
+      "bestSeason": "May-September (water level dependent; needs settled weather for safe descent)",
+      "parking": "Llanberis village (multiple pay-and-display car parks). Approach on foot from the village — operators meet at their HQ and shuttle as needed.",
+      "startPoint": {
+        "name": "Llanberis village",
+        "lat": 53.1198,
+        "lng": -4.1273
+      },
+      "estimatedCost": "Guided canyoning trip £75-£100pp (kit included)",
+      "operatorSlug": null,
+      "insiderTip": "This is run as canyoning, not gorge walking — you'll be abseiling rather than scrambling up. Book with an operator that specifies Ceunant Mawr by name on their itinerary; generic 'Snowdonia gorge' day tickets usually mean the easier Ogwen route."
     },
     {
       "name": "Ogwen Valley Gorge (Upper)",

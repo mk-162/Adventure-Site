@@ -1,0 +1,469 @@
+{
+  "regionSlug": "snowdonia",
+  "activityTypeSlug": "kayaking",
+  "title": "Kayaking in Snowdonia",
+  "strapline": "Snowdonia is whitewater country — short, steep, rain-fed rivers in glacier-cut valleys, plus the biggest natural lake in Wales for flat-water days.",
+  "metaTitle": "Kayaking in Snowdonia | Whitewater & Lakes | Adventure Wales",
+  "metaDescription": "Honest guide to kayaking in Snowdonia: the whitewater rivers (Afon Conwy, Llugwy, Glaslyn), flat-water on Llyn Tegid and Llyn Padarn, and where to learn with Plas y Brenin or Bala Adventure & Watersports.",
+  "heroAlt": "Whitewater kayaker dropping into a rapid on the Afon Llugwy in Snowdonia, with autumn forest on the riverbanks.",
+  "introduction": "Up front: **kayaking in Snowdonia means whitewater first, flat-water second, sea kayaking not at all.** The Eryri national park is landlocked on three sides; the sea kayaking that British paddlers associate with North Wales — South Stack, Holy Island, the Llŷn Peninsula — all sits outside the park boundary. What Snowdonia *does* have, in concentration, is the run-off from the wettest mountain range in England and Wales: short, steep, rain-fed rivers draining through hard volcanic bedrock into the Conwy and Mawddach catchments. The result is a whitewater scene that the British Canoeing community has been paddling for decades and that's still one of the best-rated technical river venues in the UK.\n\nThe core whitewater is three rivers, all reachable from a Betws-y-Coed base. **The Afon Conwy** between Betws-y-Coed and Llanrwst is the regional benchmark — a continuous grade 3 (with a grade 4 'Conwy Falls' rapid that most paddlers walk first) that runs reliably from October through April and after any decent rain in summer. **The Afon Llugwy** through the Fairy Glen gorge above Betws is the connoisseurs' choice — tight, technical grade 3-4 in a deep wooded canyon, beautiful and unforgiving. **The Afon Glaslyn** out of Beddgelert runs through the Aberglaslyn Pass on grade 3-4 ledges and slots, with a famously committing eddy line at the railway bridge. None of these are summer flat-water rivers; they need rain in the previous 48 hours and they spike fast. River-level gauges (UK Rivers Guidebook, Natural Resources Wales) are the deciding factor on every day out.\n\nFor flat-water and learning, the picture flips. **Llyn Tegid (Bala)** is the largest natural lake in Wales — four miles long, sheltered by mountains, ideal for touring kayaks, recreational paddles and SUP. **Llyn Padarn** at Llanberis sits at the foot of Snowdon and runs a similar scene on a smaller scale. **Bala Adventure & Watersports** is the dedicated centre on Llyn Tegid (kayak hire, sailing, lessons), and **Snowdonia Watersports** runs the same product on Llyn Padarn. For structured tuition — beginner foundation, white-water progression, sea-kayak conversion courses — **Plas y Brenin, the National Outdoor Centre at Capel Curig**, is the single most credentialled paddling venue in Wales and the entry point most British paddlers use.\n\nOne practical note before you book: Snowdonia is not a self-guided destination for first-time paddlers. The flat-water lakes are fine for hire-and-go; the rivers are not. If you don't already have grade 3 whitewater experience and a local guidebook, take a course or a guided day — the Afon Conwy and Afon Llugwy in particular have killed competent paddlers who underestimated the level.",
+  "bestSeason": "Whitewater: October-April (rain-dependent). Flat-water lakes: April-October.",
+  "difficultyRange": "Beginner (Bala/Padarn flat-water) to Expert (Glaslyn / Llugwy gorges)",
+  "priceRange": "£20-30 hire (lakes); £75-£150 guided / course day",
+  "spots": [
+    {
+      "name": "Afon Conwy — Betws-y-Coed to Llanrwst",
+      "slug": "afon-conwy-betws-to-llanrwst",
+      "description": "The classic Snowdonia whitewater run — continuous grade 3 with a single significant grade 4 drop (the Conwy Falls section) that most parties walk. Nine kilometres of road-accessible river through a wooded valley, with a reliable rain window from October through April. Eddy-hop and play-boat sections, plus enough wave trains to give it big-river character. The standard 'introduction to North Wales whitewater' run for paddlers stepping up from southern English rivers.",
+      "difficulty": "Challenging",
+      "duration": "3-4 hours on the water",
+      "distance": "9 km",
+      "elevationGain": null,
+      "bestFor": "Grade 3 paddlers wanting a continuous whitewater day; clubs and progression courses",
+      "notSuitableFor": "Beginners, paddlers without solid grade 3 eddy-hopping and rolling",
+      "bestSeason": "October-April, plus 24-48 hours after any heavy summer rain",
+      "parking": "Get-in: A5 layby above Conwy Falls (paid). Get-out: Llanrwst (free roadside near the bridge). Shuttle by car needed unless going with a guided operator.",
+      "startPoint": {
+        "name": "Conwy Falls get-in (above the falls portage)",
+        "lat": 53.065,
+        "lng": -3.779
+      },
+      "estimatedCost": "Free self-guided; £75-£120pp guided",
+      "operatorSlug": "plas-y-brenin",
+      "insiderTip": "Walk Conwy Falls before you commit — sightlines on the entry boof are misleading from the boat. The lower section from Fairy Glen to Llanrwst makes a cleaner intro run if you want to scale down."
+    },
+    {
+      "name": "Afon Llugwy — Pont Cyfyng to Betws-y-Coed (Fairy Glen)",
+      "slug": "afon-llugwy-pont-cyfyng-fairy-glen",
+      "description": "The Llugwy is the technical end of Snowdonia whitewater — tight ledges and slots through the Fairy Glen gorge, grading at a hard 3 to soft 4 depending on level. Significantly more committing than the Conwy because the gorge walls cut off river-right escape options on several drops. Beautiful, tree-lined, and consistently rated one of the best technical short runs in Britain. Generally paddled by experienced grade 4 whitewater kayakers; not a 'step up from the Conwy' day.",
+      "difficulty": "Expert",
+      "duration": "2-3 hours on the water",
+      "distance": "5 km",
+      "elevationGain": null,
+      "bestFor": "Experienced grade 3-4 whitewater kayakers; coached progression days run by Plas y Brenin or independent guides",
+      "notSuitableFor": "Anyone without strong grade 4 paddling, a bombproof roll, and a competent team",
+      "bestSeason": "October-March in normal water; rain-dependent rest of year",
+      "parking": "Get-in: Pont Cyfyng layby (limited; arrive early). Get-out: Betws-y-Coed below the Pont-y-Pair bridge.",
+      "startPoint": {
+        "name": "Pont Cyfyng",
+        "lat": 53.099,
+        "lng": -3.879
+      },
+      "estimatedCost": "Free self-guided; £120-£150pp coached",
+      "operatorSlug": "plas-y-brenin",
+      "insiderTip": "The crux drops in the Glen change character with water level — what's a clean line at medium-low becomes a sticky hole at high. Scout from the riverside path before you get in."
+    },
+    {
+      "name": "Afon Glaslyn — Beddgelert through the Aberglaslyn Pass",
+      "slug": "afon-glaslyn-aberglaslyn",
+      "description": "The Glaslyn through the Aberglaslyn Pass is one of the most scenic whitewater runs in Wales — the river squeezes through a tight wooded gorge below the Welsh Highland Railway, with grade 3-4 ledges, a famously committing eddy line at the railway bridge, and a portage option around the harder lower drops. Shorter than the Conwy and more atmospheric than the Llugwy. Paddled less often (smaller window, harder shuttle), but a benchmark Welsh river when it's on.",
+      "difficulty": "Expert",
+      "duration": "2-3 hours on the water",
+      "distance": "4 km",
+      "elevationGain": null,
+      "bestFor": "Experienced grade 3-4 whitewater paddlers; small competent teams",
+      "notSuitableFor": "Grade 2 paddlers, unsupported solo runs, anyone without recent rain to bring the level up",
+      "bestSeason": "October-March; needs significant rain in catchment",
+      "parking": "Get-in: Beddgelert village (multiple pay-and-display car parks). Get-out: Aberglaslyn Pass layby on A4085.",
+      "startPoint": {
+        "name": "Beddgelert (Glaslyn river bridge)",
+        "lat": 53.005,
+        "lng": -4.099
+      },
+      "estimatedCost": "Free self-guided; guided trips run on demand from Plas y Brenin",
+      "operatorSlug": "plas-y-brenin",
+      "insiderTip": "The railway-bridge eddy is the move of the day — get it wrong and you're swept into the harder lower section without an inspection chance. Walk the gorge from the riverside path before you launch."
+    },
+    {
+      "name": "Llyn Tegid (Bala Lake)",
+      "slug": "llyn-tegid-bala",
+      "description": "The largest natural lake in Wales — four miles long, mountain-sheltered, and the obvious flat-water kayaking and SUP venue in the region. Hireable touring kayaks, sit-on-tops and SUPs from Bala Adventure & Watersports on the foreshore, plus structured lessons and guided sessions. Wind is the main variable — afternoon south-westerlies can push up significant chop on the open lake, so morning sessions are usually flatter. Wildlife includes the unique gwyniad whitefish (the lake is the only place in the world it lives).",
+      "difficulty": "Easy",
+      "duration": "1-3 hours hire; full-day tours available",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families, beginners, SUP, kayak touring, lessons",
+      "notSuitableFor": "Anyone wanting whitewater — this is sheltered flat-water",
+      "bestSeason": "April-October (lake is exposed in winter winds)",
+      "parking": "Bala Lake foreshore car park (pay-and-display).",
+      "startPoint": {
+        "name": "Bala Lake foreshore",
+        "lat": 52.909,
+        "lng": -3.600
+      },
+      "estimatedCost": "Kayak hire from approx £20-£30/hour; lessons from approx £40",
+      "operatorSlug": "bala-adventure-watersports",
+      "insiderTip": "Launch from the foreshore early — by mid-afternoon the prevailing wind picks up and turns the open water choppy. The eastern (Llangower) shoreline is the sheltered side if the forecast looks gusty."
+    },
+    {
+      "name": "Llyn Padarn",
+      "slug": "llyn-padarn",
+      "description": "Llanberis's two-mile lake at the foot of Snowdon — the flat-water kayaking and SUP venue most paddlers reach first because it sits next to Pete's Eats, the climbing scene, and the Llanberis Path trailhead. Snowdonia Watersports runs hire from a base on the lake shore (kayaks, SUPs, no motorboats). Water is glacial-clear and cold even in summer (8-12°C); the lake holds Arctic charr, a relic of the last ice age. The southern end runs into the National Slate Museum and the old Dinorwig Quarry workings — interesting paddle objective in itself.",
+      "difficulty": "Easy",
+      "duration": "1-3 hours hire",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Families based in Llanberis, lesson-shaped beginner sessions, post-Snowdon recovery paddles",
+      "notSuitableFor": "Anyone wanting whitewater or open-water touring distance",
+      "bestSeason": "April-October (cold even in summer — wear a wetsuit if you might capsize)",
+      "parking": "Pay-and-display car parks along the A4086 in Llanberis; the watersports centre has on-site parking for hire customers.",
+      "startPoint": {
+        "name": "Llyn Padarn shore (Snowdonia Watersports base)",
+        "lat": 53.120,
+        "lng": -4.125
+      },
+      "estimatedCost": "Hire from approx £15-£25/hour",
+      "operatorSlug": "snowdonia-watersports",
+      "insiderTip": "Paddle the south-east shore for the best Dinorwig Quarry views — the abandoned slate workings tower above the water and make the most striking backdrop in the lake."
+    },
+    {
+      "name": "Plas y Brenin — Capel Curig coaching base",
+      "slug": "plas-y-brenin-paddle-courses",
+      "description": "Not a spot in the geographic sense — Plas y Brenin is the **National Outdoor Centre** at Capel Curig, and it's the central training venue for British paddlesport. The base runs from a private lake (Llynnau Mymbyr) directly outside the centre, with daily access to all three whitewater rivers above and the sea coast within an hour. Courses span beginner kayak / canoe foundation, whitewater progression (grade 2 through grade 4), white-water leader awards, BC coach progression, and sea-kayak transition courses. If you're learning paddlesport in the UK, this is the venue.",
+      "difficulty": "Beginner to Expert (courses graded)",
+      "duration": "Half-day taster through 5-day residential",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Anyone learning kayaking properly, qualification candidates, structured progression",
+      "notSuitableFor": "Drop-in casual hire — Plas y Brenin runs courses, not hourly rentals",
+      "bestSeason": "Year-round (winter whitewater progression is a flagship season here)",
+      "parking": "Plas y Brenin on-site car park.",
+      "startPoint": {
+        "name": "Plas y Brenin, Capel Curig",
+        "lat": 53.103,
+        "lng": -3.910
+      },
+      "estimatedCost": "Day courses from approx £100; residentials £400+ (includes meals and accommodation)",
+      "operatorSlug": "plas-y-brenin",
+      "insiderTip": "Book the residential format if you can — the post-day debriefs in the bar (the Climber's Bar at PyB is a paddling institution in itself) are where most of the actual learning happens."
+    },
+    {
+      "name": "Llyn Gwynant",
+      "slug": "llyn-gwynant",
+      "description": "Quieter, wilder alternative to Padarn — a long sheltered lake in the Nant Gwynant valley below the Watkin Path, with a campsite at its head that hires SUPs and kayaks to guests. No commercial day-hire operator works the lake, so it stays markedly less busy than Padarn or Bala. Striking mountain backdrop (Yr Aran on one side, the Glyderau on the other) and clean, swimmable water. Good objective for a touring kayaker carrying their own boat.",
+      "difficulty": "Easy",
+      "duration": "1-3 hours",
+      "distance": null,
+      "elevationGain": null,
+      "bestFor": "Self-supported paddlers, campsite guests, anyone wanting a quieter lake than Padarn",
+      "notSuitableFor": "Day-trippers without their own boat — no on-site hourly hire",
+      "bestSeason": "April-October",
+      "parking": "Llyn Gwynant campsite (paid day access) or the National Trust car park at the foot of the Watkin Path.",
+      "startPoint": {
+        "name": "Llyn Gwynant",
+        "lat": 53.038,
+        "lng": -4.022
+      },
+      "estimatedCost": "Free if bringing own boat; campsite SUP hire approx £15/hour",
+      "operatorSlug": null,
+      "insiderTip": "Launch from the campsite end and paddle south-west — the head of the lake holds the best mountain views and the shallowest beach-style entries for swimming breaks."
+    }
+  ],
+  "practicalInfo": {
+    "weather": "Snowdonia weather drives kayaking decisions on every river. Whitewater needs rain in the previous 24-48 hours; flat-water lakes need calm wind. Spring snowmelt and autumn-winter rain are the most reliable seasons. Check river-level gauges and wind forecasts together — a sunny day with a 25mph south-westerly turns Bala Lake into chop.",
+    "weatherLinks": [
+      {
+        "name": "Mountain Weather Information Service (MWIS) — Snowdonia",
+        "url": "https://www.mwis.org.uk/forecasts/english-welsh/"
+      },
+      {
+        "name": "UK Rivers Guidebook — Snowdonia",
+        "url": "https://www.ukriversguidebook.co.uk/"
+      },
+      {
+        "name": "Natural Resources Wales — river levels",
+        "url": "https://rivers-and-seas.naturalresources.wales/"
+      }
+    ],
+    "gearChecklist": [
+      "Whitewater kayak with airbags / sit-on-top / touring kayak — match the boat to the water",
+      "Spray deck (whitewater / closed cockpit boats only)",
+      "Buoyancy aid / PFD (mandatory on hire from all centres)",
+      "Helmet (whitewater rivers and gorges only — not needed on the flat-water lakes)",
+      "Wetsuit or drysuit — even summer river-water is 8-14°C in Snowdonia",
+      "Throw line (whitewater team kit — every party should have one)",
+      "Whistle (attached to PFD)",
+      "Dry bag for car keys / phone / snacks",
+      "Spare clothes and a thermos of hot drink waiting in the get-out vehicle"
+    ],
+    "gearHire": [
+      {
+        "name": "Bala Adventure & Watersports",
+        "location": "Bala Lake foreshore",
+        "url": "https://www.balawatersports.com"
+      },
+      {
+        "name": "Snowdonia Watersports",
+        "location": "Llyn Padarn, Llanberis",
+        "url": "https://www.snowdoniawatersports.com"
+      },
+      {
+        "name": "Plas y Brenin",
+        "location": "Capel Curig",
+        "url": "https://pyb.co.uk"
+      }
+    ],
+    "gettingThere": {
+      "driveTimes": [
+        {
+          "from": "London",
+          "duration": "5h",
+          "route": "M40 / M6 / A5 — most rivers reachable from a Betws-y-Coed base"
+        },
+        {
+          "from": "Manchester",
+          "duration": "2-2.5h",
+          "route": "M56 and A55, then A470 south into the park"
+        },
+        {
+          "from": "Birmingham",
+          "duration": "3-3.5h",
+          "route": "M6 and A5 through Llangollen"
+        },
+        {
+          "from": "Cardiff",
+          "duration": "4h",
+          "route": "A470 north through Mid Wales"
+        }
+      ],
+      "publicTransport": "Betws-y-Coed has a direct train station on the Conwy Valley Line (changes at Llandudno Junction from main coast services). Bala and Llanberis are not on the rail network — bus connections from Bangor or Wrexham. For whitewater shuttles you'll need at least one car in the party.",
+      "parkingTips": "Whitewater get-ins on the A5 (Conwy Falls) and around Pont Cyfyng are small laybys — arrive early at weekends. The Bala foreshore and Llyn Padarn car parks are pay-and-display and fill on summer afternoons. Plas y Brenin has dedicated on-site parking for course attendees."
+    },
+    "safety": "Snowdonia rivers are genuinely dangerous — they have killed competent paddlers in recent years. Never paddle whitewater here alone; check gauges, scout the harder drops, and walk anything you're not confident on. On the flat-water lakes, cold water is the real risk — a capsize in 8-12°C water without a wetsuit drops core temperature fast. Hire a buoyancy aid every time, even on a calm lake day. In emergencies dial 999 and ask for Mountain Rescue (river callouts are handled jointly with the local water-rescue team)."
+  },
+  "faqs": [
+    {
+      "question": "Is Snowdonia a good destination for sea kayaking?",
+      "answer": "Not really — Snowdonia National Park is landlocked on three sides. The North Wales sea kayaking everyone associates with the region (South Stack, Holy Island, the Llŷn coast) is actually on Anglesey or the Llŷn Peninsula, both outside the park. If sea kayaking is your goal, base in Trearddur Bay (Anglesey) or Abersoch (Llŷn) instead of inside Eryri. Plas y Brenin runs sea-kayak conversion courses that travel out to those coasts."
+    },
+    {
+      "question": "When does the Afon Conwy have enough water to paddle?",
+      "answer": "Reliably from October through April. In summer it needs 24-48 hours of significant rain on the catchment to bring it up. Check the UK Rivers Guidebook level page and the Natural Resources Wales Llanrwst gauge before you commit to a shuttle."
+    },
+    {
+      "question": "Can I learn to kayak in Snowdonia with no previous experience?",
+      "answer": "Yes — Plas y Brenin at Capel Curig is the National Outdoor Centre and the standard UK venue for learn-to-kayak courses. Bala Adventure & Watersports and Snowdonia Watersports also run beginner sessions on the lakes. Don't try to learn on the rivers; the Snowdonia whitewater is a step-up venue, not a starter."
+    },
+    {
+      "question": "Is hire-and-go kayaking available?",
+      "answer": "On the lakes, yes — Bala and Llyn Padarn both have walk-up kayak / SUP hire. On the rivers, no — there's no hire-and-go whitewater rental for the obvious safety reason. Whitewater access is via courses, guided trips, or BYO boat."
+    },
+    {
+      "question": "What grade of whitewater is the Afon Llugwy?",
+      "answer": "Hard grade 3 to soft grade 4 through the Fairy Glen gorge section, depending on water level. The gorge cuts off many escape options, so it should only be paddled by experienced grade 3-4 paddlers with a strong roll and a competent team."
+    },
+    {
+      "question": "Is wild swimming OK on the kayaking rivers?",
+      "answer": "Some pools yes (the Fairy Glen on the Llugwy is a popular swimming spot), but cross-reference with the [Snowdonia wild swimming combo](/snowdonia/things-to-do/wild-swimming). When the rivers are at paddling level they're too pushy for safe swimming."
+    },
+    {
+      "question": "Do I need to be a British Canoeing member to paddle in Snowdonia?",
+      "answer": "Membership isn't legally required for access (English / Welsh rivers don't have a paddle permit scheme like some European countries), but BC membership gives you third-party insurance and access to course discounts at Plas y Brenin. Most regular paddlers carry it."
+    }
+  ],
+  "localDirectory": {
+    "gearShops": [
+      {
+        "name": "Joe Brown's",
+        "slug": "joe-browns",
+        "address": "Capel Curig, Betws-y-Coed LL24 0EE",
+        "lat": 53.1205,
+        "lng": -3.9027,
+        "description": "Long-standing outdoor retailer at Capel Curig and Llanberis. Useful for paddling layers, drysuit hire enquiries, throw lines and accessories.",
+        "website": "https://www.joe-brown.com/",
+        "phone": "01690 720205",
+        "services": [
+          "gear sales",
+          "advice"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 800
+      },
+      {
+        "name": "V12 Outdoor",
+        "slug": "v12-outdoor",
+        "address": "High Street, Llanberis LL55 4ER",
+        "lat": 53.1192,
+        "lng": -4.1267,
+        "description": "Llanberis outdoor shop with technical clothing and accessories suitable for cold-water paddling.",
+        "website": "https://v12outdoor.com/",
+        "phone": "01286 870324",
+        "services": [
+          "gear sales",
+          "advice"
+        ],
+        "googleRating": 4.5,
+        "reviewCount": 650
+      },
+      {
+        "name": "Summit to Sea",
+        "slug": "summit-to-sea",
+        "address": "High Street, Llanberis LL55 4EN",
+        "lat": 53.122,
+        "lng": -4.128,
+        "description": "Multi-discipline outdoor shop in Llanberis — paddling and watersports lines stocked alongside climbing and MTB.",
+        "website": "https://summittosea.co.uk/",
+        "phone": "01286 870562",
+        "services": [
+          "gear sales"
+        ],
+        "googleRating": 4.6,
+        "reviewCount": 70
+      }
+    ],
+    "postActivitySpots": [
+      {
+        "name": "Pete's Eats",
+        "slug": "petes-eats",
+        "address": "High Street, Llanberis LL55 4ER",
+        "lat": 53.1195,
+        "lng": -4.1272,
+        "description": "The legendary climbers' and paddlers' cafe in Llanberis. Hot drinks, giant breakfasts and the unofficial debrief venue after any day on Llyn Padarn or the Llanberis rivers.",
+        "vibe": "Outdoor crowd cafe",
+        "priceRange": "£",
+        "website": null,
+        "knownFor": "Big breakfasts, mountaineer atmosphere"
+      },
+      {
+        "name": "Caffi Siabod",
+        "slug": "caffi-siabod",
+        "address": "Capel Curig, Conwy LL24 0EE",
+        "lat": 53.085,
+        "lng": -3.917,
+        "description": "On the A5 between Betws-y-Coed and Capel Curig, with views over Llynnau Mymbyr toward the Snowdon Horseshoe. Standard breakfast and brew stop before a Conwy or Llugwy run.",
+        "vibe": "Climber-friendly cafe",
+        "priceRange": "£",
+        "website": "https://www.caffisiabod.com/",
+        "knownFor": "Coffee and views"
+      },
+      {
+        "name": "Plas y Brenin Climbers Bar",
+        "slug": "plas-y-brenin-bar",
+        "address": "Capel Curig, Conwy LL24 0ET",
+        "lat": 53.103,
+        "lng": -3.910,
+        "description": "Bar and lounge inside the National Outdoor Centre. Where paddlers debrief at the end of a course day. Open to non-residents.",
+        "vibe": "Outdoor-centre bar",
+        "priceRange": "££",
+        "website": "https://pyb.co.uk/",
+        "knownFor": "Course debriefs, real ales"
+      },
+      {
+        "name": "Y Stablau",
+        "slug": "y-stablau",
+        "address": "Holyhead Rd, Betws-y-Coed LL24 0AY",
+        "lat": 53.099,
+        "lng": -3.808,
+        "description": "Restaurant and bar in Betws-y-Coed, the natural meet-and-eat venue at the end of a Conwy or Llugwy day.",
+        "vibe": "Restaurant and bar",
+        "priceRange": "££",
+        "website": null,
+        "knownFor": "Pub classics and broad menu"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Plas y Brenin",
+        "slug": "plas-y-brenin-accommodation",
+        "description": "On-site accommodation at the National Outdoor Centre for course attendees and casual residents. Sensible base if you're doing a paddling course or a few river days from a central Snowdonia location.",
+        "type": "outdoor centre",
+        "priceRange": "££",
+        "nearestSpot": "Llynnau Mymbyr (on site); Conwy / Llugwy 10-15 minutes",
+        "website": "https://pyb.co.uk/"
+      },
+      {
+        "name": "Llyn Gwynant Campsite",
+        "slug": "llyn-gwynant-campsite",
+        "description": "Lakeside campsite with on-site SUP and kayak hire for guests, plus stunning mountain backdrop. Good base for combining paddling with hiking days on the Watkin Path.",
+        "type": "campsite",
+        "priceRange": "£",
+        "nearestSpot": "Llyn Gwynant (on site); Watkin Path trailhead 5 minutes",
+        "website": "https://gwynant.com/"
+      },
+      {
+        "name": "Bala Backpackers",
+        "slug": "bala-backpackers",
+        "description": "Budget bunkhouse in Bala town, walking distance to the Llyn Tegid foreshore and Bala Adventure & Watersports. Natural choice for a flat-water weekend.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Llyn Tegid (15 min walk)",
+        "website": null
+      },
+      {
+        "name": "YHA Snowdon Llanberis",
+        "slug": "yha-snowdon-llanberis",
+        "description": "Budget hostel in Llanberis, walking distance to Llyn Padarn and the Snowdonia Watersports base.",
+        "type": "hostel",
+        "priceRange": "£",
+        "nearestSpot": "Llyn Padarn (walking distance)",
+        "website": "https://www.yha.org.uk/hostel/yha-snowdon-llanberis"
+      }
+    ]
+  },
+  "events": [],
+  "keywords": {
+    "primary": "kayaking in snowdonia",
+    "secondary": [
+      "snowdonia whitewater kayaking",
+      "afon conwy kayaking",
+      "afon llugwy whitewater",
+      "kayaking llyn tegid",
+      "bala lake kayaking"
+    ],
+    "longTail": [
+      "best whitewater rivers snowdonia",
+      "where to learn to kayak snowdonia",
+      "kayak hire llyn padarn",
+      "kayak hire bala lake",
+      "plas y brenin kayak course",
+      "afon glaslyn whitewater grade",
+      "river conwy paddling",
+      "snowdonia kayaking for beginners",
+      "snowdonia kayaking in winter"
+    ],
+    "localIntent": [
+      "kayaking near betws-y-coed",
+      "kayaking near llanberis",
+      "kayaking near bala",
+      "kayaking near capel curig",
+      "kayak hire near snowdon"
+    ],
+    "commercialIntent": [
+      "book kayak course snowdonia",
+      "guided whitewater snowdonia",
+      "kayak hire snowdonia prices",
+      "plas y brenin kayak course price",
+      "bala lake kayak hire booking"
+    ]
+  },
+  "nearbyAlternatives": {
+    "sameActivity": [
+      {
+        "regionSlug": "anglesey",
+        "label": "Sea Kayaking on Anglesey"
+      },
+      {
+        "regionSlug": "llyn-peninsula",
+        "label": "Sea Kayaking on the Llŷn Peninsula"
+      },
+      {
+        "regionSlug": "mid-wales",
+        "label": "Canoeing on the River Wye"
+      }
+    ],
+    "sameRegion": [
+      {
+        "activityTypeSlug": "wild-swimming",
+        "label": "Wild Swimming in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "gorge-walking",
+        "label": "Gorge Walking in Snowdonia"
+      },
+      {
+        "activityTypeSlug": "hiking",
+        "label": "Hiking in Snowdonia"
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 ## Snowdonia (Eryri)
 
-Right then, *cariad*, so you're thinking about Eryri? Let's have a proper chat about it — not the brochure version, the one a mate who's lived under these mountains would give you.
+If you're heading to Eryri, this is the version you actually need — not the brochure summary, but the practical shape of the place and what it's genuinely best for.
 
 **In a Nutshell:** Snowdonia — *Eryri*, "land of eagles" — is Wales' biggest national park, 823 square miles of mountains, slate, and lakes. Yr Wyddfa (Snowdon) at 1,085m gets the headlines, but it's one of *fifteen* Welsh peaks over 3,000ft, and the wilder ranges — the Glyderau, Carneddau, Rhinogs, Cadair Idris — are where the park actually opens up. It's also one of only 18 International Dark Sky Reserves in the world, and the slate landscape that surrounds Blaenau Ffestiniog carries UNESCO recognition. There's more to this place than the path up Snowdon.
 

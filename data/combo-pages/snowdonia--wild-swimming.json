@@ -6,7 +6,7 @@
   "metaTitle": "Wild Swimming Snowdonia | Adventure Wales",
   "metaDescription": "Discover the best spots for wild swimming in Snowdonia! From Llyn Idwal to hidden waterfalls, find your perfect swim in Wales' stunning national park.",
   "heroAlt": "Swimmer emerging from the turquoise waters of a Snowdonian quarry lake",
-  "introduction": "Snowdonia. Eryri. Land of soaring peaks, dramatic valleys, and surprisingly inviting (sometimes!) waters. Wild swimming in Snowdonia is a different beast than a gentle dip on a southern beach. Here, you're embracing the raw, untamed beauty of the mountains. This isn't about languid lounging; it's about invigorating plunges, bracing swims, and earning that post-swim hot chocolate. \n\nWe're talking glacial lakes carved into mountainsides, the emerald depths of abandoned quarries (watch out for submerged machinery!), and the thundering spray of waterfalls. The water *will* be cold – even in summer. This is the heart of Wales, and the weather can turn on a sixpence. But the reward? Unparalleled views, the feeling of truly connecting with nature, and bragging rights that will last until your next icy adventure. \n\nSnowdonia caters to a range of wild swimming abilities. Llyn Idwal offers a relatively accessible entry point for beginners (though still pack warm layers!). Dorothea Quarry (Blue Lake) is stunning but requires caution and a confident approach. For seasoned dippers, the more remote mountain lakes like Llyn Crafnant offer solitude and breathtaking vistas. However, be warned, some spots require a good hike to reach, and the weather can change rapidly at altitude. Always check the forecast and be prepared for the worst. This isn't the Med; this is Wales, and it's wild. Embrace the challenge, respect the mountains, and enjoy the icy thrill of wild swimming snowdonia. Remember, safety first, then adventure!\n\nSo, is wild swimming in Snowdonia for you? If you like a challenge, have a good level of fitness, and don't mind the cold, then absolutely. Just pack your wetsuit, a flask of tea, and a sense of adventure!",
+  "introduction": "Snowdonia. Eryri. Land of soaring peaks, dramatic valleys, and surprisingly inviting (sometimes!) waters. Wild swimming in Snowdonia is a different beast than a gentle dip on a southern beach. Here, you're embracing the raw, untamed beauty of the mountains. This isn't about languid lounging; it's about invigorating plunges, bracing swims, and earning that post-swim hot chocolate. \n\nThe park holds over a hundred natural lakes, and they fall into three rough categories worth knowing before you set off. **Glacial corrie lakes** sit high in the cwms scooped out under the big peaks — Llyn Idwal under the Devil's Kitchen and the quieter Cwm Bochlwyd under Tryfan are the obvious examples, dramatic and cold even in August. **Valley lakes** like Llyn Gwynant, Llyn Dinas and Llyn Padarn are warmer, easier to access, and big enough for proper distance swimming. And the **slate-quarry lakes** are a Snowdonia-only thing: flooded post-industrial pits like Dorothea (the Blue Lake) where the water is electric-turquoise and the rusted slate edges are unforgiving. Add the waterfall pools — Aber, Fairy Glen, the upper Watkin — and you've got a taxonomy that doesn't exist anywhere else in the UK. \n\nThe water *will* be cold. Even in summer the mountain tarns sit at 8–12°C, and the corrie lakes never really warm up — they're meltwater catchments scoured by glaciers, refilled by rain off rock. Most of these lakes sit on private land or in the National Park; there's no statutory right to swim, but discreet dipping with no fires, no litter and no convoy parking is generally tolerated. Llyn Idwal sits inside a National Nature Reserve — be respectful of the SSSI status when you scout an entry point. \n\nSnowdonia caters to a range of wild swimming abilities. Llyn Idwal offers a relatively accessible entry point for beginners (though still pack warm layers!). Dorothea Quarry is stunning but requires caution and a confident approach — there's submerged machinery and the slate edges are slippery. For seasoned dippers, the more remote mountain tarns like Llyn Crafnant and Cwm Bochlwyd offer solitude and breathtaking vistas. Always check the mountain forecast and be prepared for the worst. This isn't the Med; this is Eryri, and it's wild. Embrace the challenge, respect the mountains, and enjoy the icy thrill. Safety first, then adventure.",
   "bestSeason": "June-September (for slightly less glacial waters)",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £80 guided",
@@ -31,6 +31,27 @@
       "estimatedCost": "Free (parking £6-8)",
       "operatorSlug": "null",
       "insiderTip": "For a quieter experience, walk further around the lake to the far side. There's a small beach perfect for a picnic and a less crowded entry point."
+    },
+    {
+      "name": "Cwm Bochlwyd",
+      "slug": "cwm-bochlwyd",
+      "description": "The less-crowded alternative to Llyn Idwal next door. A dramatic corrie lake tucked under the east face of Tryfan, reached by a short but steep walk-in from Ogwen Cottage. The water is glacial-cold year-round, the shoreline is rocky, and the headwall view back across to the Glyderau is one of the best in the park. A proper mountain tarn — bring sturdy footwear and don't expect facilities of any kind.",
+      "difficulty": "Moderate",
+      "duration": "3-4 hours including walk",
+      "distance": "5km (round trip)",
+      "elevationGain": "300m",
+      "bestFor": "Confident wild swimmers wanting solitude and a real mountain setting",
+      "notSuitableFor": "Beginners, families with small children, or anyone who needs an easy walk-in",
+      "bestSeason": "July-August",
+      "parking": "Ogwen Cottage car park (LL57 3LZ). Pay and display, fills early in summer.",
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.113,
+        "lng": -4.004
+      },
+      "estimatedCost": "Free (parking £6-8)",
+      "operatorSlug": "null",
+      "insiderTip": "Combine the swim with the Glyderau Bochlwyd Horseshoe hike if you're feeling robust — bag two scrambling summits and a proper cold dip in one day."
     },
     {
       "name": "Blue Lake (Dorothea Quarry)",

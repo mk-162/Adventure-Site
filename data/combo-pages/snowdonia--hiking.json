@@ -6,7 +6,7 @@
   "metaTitle": "Hiking in Snowdonia | Adventure Wales",
   "metaDescription": "Discover the best hiking in Snowdonia National Park. Explore trails, tips, routes, and gear advice for your Snowdonia adventure.",
   "heroAlt": "Hikers on a rocky summit overlooking a dramatic Snowdonia valley.",
-  "introduction": "Snowdonia. Eryri. Call it what you will, this corner of North Wales is a hiker's paradise, no arguments. Forget manicured trails and gentle strolls; here, the mountains bite back. We're talking proper peaks, scrambling ridges, and views that'll stop you dead in your tracks. \n\nSnowdon (Yr Wyddfa) inevitably hogs the limelight, and rightly so. Six different routes offer varying levels of challenge, from the relatively gentle Llanberis Path to the exposed Crib Goch, a knife-edge arete only for those with a head for heights. But don't let Snowdon overshadow the rest. Tryfan's iconic North Ridge is a classic scramble, Cadair Idris offers solitude and stunning vistas, and the Glyderau are just plain weird, all jagged rocks and otherworldly landscapes.\n\nHiking in Snowdonia isn't always a walk in the park (literally). The weather can change in an instant, navigation can be tricky, and some routes demand serious scrambling skills. But that's the appeal, right? This is a place to test yourself, to earn those summit views, and to refuel with a well-deserved pint in a cosy pub afterwards. It's best suited for those with a decent level of fitness and some experience of hill walking. Beginners can find plenty of easier trails, but even those should be approached with respect. Come prepared, respect the mountains, and Snowdonia will reward you with memories that last a lifetime. Just remember to pack your waterproofs… and maybe a compass.",
+  "introduction": "Snowdonia. Eryri. Call it what you will, this corner of North Wales is a hiker's paradise, no arguments. Forget manicured trails and gentle strolls; here, the mountains bite back. We're talking proper peaks, scrambling ridges, and views that'll stop you dead in your tracks. \n\nYr Wyddfa (Snowdon) inevitably hogs the limelight, and rightly so — six different routes offer varying levels of challenge, from the relatively gentle Llanberis Path to the exposed Crib Goch, a knife-edge arete only for those with a head for heights. But Snowdon is one of *fifteen* Welsh peaks over 3,000ft, and the wilder ranges are where the park actually opens up. Tryfan's North Ridge is the classic Grade 1 scramble. The Glyderau Bochlwyd Horseshoe links Tryfan with Glyder Fach and Glyder Fawr via Bristly Ridge and the Cantilever Stone — a lunar landscape of shattered rock found nowhere else in Britain. North across the A5, the Carneddau roll on for miles: Carnedd Llewelyn and Dafydd are the second and third highest peaks in Wales, and the high plateau between them is the closest thing to genuine wilderness left in the park. Moel Siabod's Daear Ddu ridge gives you the best front-row view of the Snowdon Horseshoe you'll get from anywhere. And if you want to throw down a gauntlet, the Welsh 3000s — all fifteen 3,000-footers in a single push — is the test the serious mountain people measure themselves against. Cadair Idris, down in the south, is a quieter day with Cardigan Bay laid out below the summit.\n\nHiking in Snowdonia isn't always a walk in the park (literally). The weather can change in an instant, navigation can be tricky, and some routes demand serious scrambling skills. But that's the appeal, right? This is a place to test yourself, to earn those summit views, and to refuel with a well-deserved pint in a cosy pub afterwards. It's best suited for those with a decent level of fitness and some experience of hill walking. Beginners can find plenty of easier trails, but even those should be approached with respect. Come prepared, respect the mountains, and Snowdonia will reward you with memories that last a lifetime. Just remember to pack your waterproofs… and maybe a compass.",
   "bestSeason": "May-October",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £80 guided",
@@ -138,6 +138,69 @@
       "insiderTip": "Extend the walk by continuing along the Glyderau ridge to Glyder Fawr for a more challenging day out."
     },
     {
+      "name": "Glyderau Bochlwyd Horseshoe",
+      "slug": "glyderau-bochlwyd-horseshoe",
+      "description": "The full Glyderau scramble out of the Ogwen Valley — up Bristly Ridge (Grade 1) onto Glyder Fach, across the Cantilever Stone and the shattered tors of Castell y Gwynt to Glyder Fawr, then down past the Devil's Kitchen and Llyn Bochlwyd. A lunar landscape of broken rock that doesn't look like anywhere else in Britain. Proper mountain day with serious scrambling.",
+      "difficulty": "Expert",
+      "duration": "5-6 hours round trip",
+      "distance": "7km",
+      "elevationGain": "750m",
+      "bestFor": "Confident scramblers wanting the definitive Glyderau day",
+      "notSuitableFor": "Beginners, those with a fear of heights, or in wet/icy/windy conditions",
+      "bestSeason": "June-September",
+      "parking": "Ogwen Cottage car park. Pay and display, fills very early.",
+      "startPoint": {
+        "name": "Ogwen Cottage",
+        "lat": 53.123,
+        "lng": -4.015
+      },
+      "estimatedCost": "Free (parking £5-8)",
+      "operatorSlug": "plasybrenin",
+      "insiderTip": "Bristly Ridge is the crux — go up it, not down. If the wet rock looks like glass, bail to the easier Miners' Track variant onto Glyder Fach instead."
+    },
+    {
+      "name": "Moel Siabod via Daear Ddu",
+      "slug": "moel-siabod-daear-ddu",
+      "description": "An overlooked Grade 1 scramble on Moel Siabod's east ridge, starting from Pont Cyfyng near Capel Curig. The Daear Ddu ridge is straightforward when dry but feels exposed; the summit pay-off is one of the best Snowdon Horseshoe views in the park — Crib Goch laid out across the valley like a relief map. Quieter than anything in Ogwen or Llanberis.",
+      "difficulty": "Challenging",
+      "duration": "4-5 hours round trip",
+      "distance": "10km",
+      "elevationGain": "700m",
+      "bestFor": "Hikers ready to start scrambling; anyone after a quieter day with a big-mountain view",
+      "notSuitableFor": "Beginners, anyone uncomfortable with hands-on rock, or in poor visibility",
+      "bestSeason": "June-September",
+      "parking": "Roadside parking near Pont Cyfyng on the A5. Limited; arrive early.",
+      "startPoint": {
+        "name": "Pont Cyfyng",
+        "lat": 53.0678,
+        "lng": -3.8989
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Descend the gentler western flank back to Pont Cyfyng to make a true circular — coming back down Daear Ddu in the wet is not the move."
+    },
+    {
+      "name": "Carnedd Llewelyn & Dafydd from Ogwen",
+      "slug": "carneddau-ogwen",
+      "description": "High-level ridge walk over the second and third highest peaks in Wales (Carnedd Llewelyn 1,064m, Carnedd Dafydd 1,044m). Starts from the A5 at Ogwen, climbs Pen yr Ole Wen — a steep, unrelenting ascent — then follows the broad Carneddau plateau north over Dafydd and Llewelyn before descending via Pen yr Helgi Du. Genuinely remote feeling; you'll see a fraction of the people you would on Snowdon.",
+      "difficulty": "Expert",
+      "duration": "6-8 hours round trip",
+      "distance": "15km",
+      "elevationGain": "950m",
+      "bestFor": "Experienced mountain hikers seeking solitude and big mileage",
+      "notSuitableFor": "Beginners, anyone weak on navigation, or in poor visibility — the plateau is featureless in cloud",
+      "bestSeason": "June-September",
+      "parking": "Laybys along the A5 near Ogwen / Llyn Ogwen. Limited.",
+      "startPoint": {
+        "name": "Llyn Ogwen layby",
+        "lat": 53.124,
+        "lng": -4.015
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Pen yr Ole Wen's nose is brutally direct — break it up by traversing in via the eastern ridge from Tal y Llyn Ogwen instead if your knees prefer."
+    },
+    {
       "name": "Rhinog Fawr",
       "slug": "rhinog-fawr",
       "description": "A wild and remote mountain with challenging terrain. Rhinog Fawr is known for its ruggedness, steep climbs, and lack of clear paths. Requires good navigation skills and a sense of adventure. Rewards include solitude and stunning views of the coastline.",
@@ -199,6 +262,27 @@
       "estimatedCost": "Free (parking £5-8)",
       "operatorSlug": null,
       "insiderTip": "Take a dip in the plunge pool at the base of Aber Falls on a hot day (if you're brave enough!)."
+    },
+    {
+      "name": "Welsh 3000s",
+      "slug": "welsh-3000s",
+      "description": "The ultimate Snowdonia hiking challenge: all fifteen Welsh peaks over 3,000ft in a single push. Roughly 30 miles and 13,000ft of ascent, traversing the three big ranges — the Snowdon group (Crib Goch, Crib y Ddysgl, Yr Wyddfa), the Glyderau (Elidir Fawr, Y Garn, Glyder Fawr, Glyder Fach, Tryfan), and the Carneddau (Pen yr Ole Wen, Carnedd Dafydd, Yr Elen, Carnedd Llewelyn, Foel Grach, Garnedd Uchaf, Foel Fras). 24-hour cut-off if you're attempting the classic challenge. Treated by most as a serious mountain undertaking rather than a race.",
+      "difficulty": "Expert",
+      "duration": "12-24 hours",
+      "distance": "48km",
+      "elevationGain": "4000m",
+      "bestFor": "Experienced mountain hikers and ultra-distance walkers wanting Snowdonia's headline challenge",
+      "notSuitableFor": "Anyone without scrambling experience (Crib Goch and Bristly Ridge are both on the line), shaky navigation, or below-the-ankle fitness for sustained big days",
+      "bestSeason": "June-August (long daylight, drier rock)",
+      "parking": "Most attempts start at Pen-y-Pass (Snowdon group first) and finish at Foel Fras / Aber. Logistics typically need a second vehicle or pre-booked pick-up.",
+      "startPoint": {
+        "name": "Pen-y-Pass",
+        "lat": 53.07,
+        "lng": -4.0
+      },
+      "estimatedCost": "Free",
+      "operatorSlug": null,
+      "insiderTip": "Recce each range separately before linking them. The Bwlch Tryfan-to-Pen yr Ole Wen valley crossing is where most attempts fall apart — it's the longest section without a refill point and the unsung crux of the day."
     }
   ],
   "practicalInfo": {

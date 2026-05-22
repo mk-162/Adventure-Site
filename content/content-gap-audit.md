@@ -1,218 +1,536 @@
 # Content Gap Audit Report
 
-**Generated:** 2026-02-05T19:59:03.334Z
+**Generated:** 2026-05-22T17:26:33.826Z
 
 ## Summary
 
 | Severity | Count |
 |----------|-------|
-| 🔴 Critical | 22 |
-| 🟠 High | 42 |
-| 🟡 Medium | 13 |
-| 🟢 Low | 286 |
-| **Total** | **363** |
-| Auto-fixable | 313 |
+| 🔴 Critical | 90 |
+| 🟠 High | 52 |
+| 🟡 Medium | 978 |
+| 🟢 Low | 718 |
+| **Total** | **1838** |
+| Auto-fixable | 871 |
 
 ## By Category
 
 | Category | Gaps |
 |----------|------|
-| Combo Pages | 241 |
-| Operators | 61 |
-| Events | 45 |
-| Activities | 7 |
-| Journal | 5 |
-| Activity Types | 3 |
+| Events | 1179 |
+| Combo Pages | 452 |
+| Operators | 166 |
+| Activities | 27 |
+| Journal | 9 |
+| Activity Types | 4 |
 | Regions | 1 |
 
 ## Operators
 
-- 🔴 **Operator "Adventures Wales" missing: no cover image, no logo, no phone, no email**
-  - Page: `/directory/adventures-wales`
-  - Fix: Fill 4 missing fields
+- 🔴 **Operator "Ace Adventure" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating**
+  - Page: `/directory/ace-adventure`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
+- 🔴 **Operator "Adrenaline MTB" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating**
+  - Page: `/directory/adrenaline-mtb`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
+- 🔴 **Operator "Adventure Beyond" missing: no description, no cover image, no logo, no Google rating**
+  - Page: `/directory/adventure-beyond`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Adventure Parc Snowdonia" missing: no description, no cover image, no logo, no Google rating**
+  - Page: `/directory/adventure-parc-snowdonia`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Adventure Tours UK" missing: no cover image, no logo, no phone, no Google rating**
+  - Page: `/directory/adventure-tours-uk`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Afan A Blast" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating**
+  - Page: `/directory/afan-a-blast`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
 - 🔴 **Operator "Afan Forest Park" missing: no cover image, no logo, no phone, no email**
   - Page: `/directory/afan-forest-park`
   - Fix: Fill 4 missing fields
+- 🔴 **Operator "Arete Outdoor Centre" missing: no description, no cover image, no logo, no coordinates, no phone, no email, no Google rating**
+  - Page: `/directory/arete-outdoor-centre`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
+- 🔴 **Operator "Bala Watersports" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/bala-watersports`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Beddgelert Bikes" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/beddgelert-bikes`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Beics Brenin" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/beics-brenin`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Big Blue Experience" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/big-blue-experience`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Bike Corris" missing: no cover image, no logo, no phone, no email, no Google rating**
+  - Page: `/directory/bike-corris`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Black Mountain Activities" missing: no cover image, no logo, no coordinates, no phone, no email**
+  - Page: `/directory/black-mountain-activities`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Black Mountains Cycle Centre" missing: no cover image, no logo, no phone, no email, no Google rating**
+  - Page: `/directory/black-mountains-cycle-centre`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Blue Ocean Activities" missing: no description, no cover image, no logo, no phone, no Google rating**
+  - Page: `/directory/blue-ocean-activities`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Caersws DH" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating**
+  - Page: `/directory/caersws-dh`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
+- 🔴 **Operator "Campbell Coaching" missing: no cover image, no logo, no phone, no email, no Google rating**
+  - Page: `/directory/campbell-coaching`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Cardiff International White Water" missing: no description, no cover image, no logo, no Google rating**
+  - Page: `/directory/ciww`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Cardiff International White Water" missing: no description, no cover image, no logo, no Google rating**
+  - Page: `/directory/cardiff-international-white-water`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Cardigan Bay Active" missing: no description, no cover image, no logo, no coordinates, no phone, no email, no Google rating**
+  - Page: `/directory/cardigan-bay-active`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
+- 🔴 **Operator "Celtic Canoes" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/celtic-canoes`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Celtic Quest Coasteering" missing: no cover image, no logo, no coordinates, no phone, no email**
+  - Page: `/directory/celtic-quest-coasteering`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
 - 🔴 **Operator "Celtic Trail Cycle Shuttle" missing: no cover image, no logo, no coordinates, no Google rating**
   - Page: `/directory/celtic-trail-shuttle`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Climb Snowdon" missing: no cover image, no logo, no phone, no Google rating**
+  - Page: `/directory/climb-snowdon`
   - Fix: Fill 4 missing fields *(auto-fixable)*
 - 🔴 **Operator "Cwmcarn Forest" missing: no cover image, no logo, no phone, no email**
   - Page: `/directory/cwmcarn-forest`
   - Fix: Fill 4 missing fields
+- 🔴 **Operator "Dan yr Ogof Showcaves" missing: no cover image, no logo, no coordinates, no phone, no email**
+  - Page: `/directory/dan-yr-ogof-showcaves`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Dyfi Bike Park" missing: no description, no cover image, no logo, no phone, no email, no Google rating**
+  - Page: `/directory/dyfi-bike-park`
+  - Fix: Fill 6 missing fields *(auto-fixable)*
+- 🔴 **Operator "Elan Valley Lodge" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating**
+  - Page: `/directory/elan-valley-lodge`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
+- 🔴 **Operator "Evolution Bikes" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/evolution-bikes`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Expedition Guide" missing: no cover image, no logo, no phone, no Google rating**
+  - Page: `/directory/expedition-guide`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Forest Freeride" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating**
+  - Page: `/directory/forest-freeride`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
+- 🔴 **Operator "Gaynor Lee Coaching" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating**
+  - Page: `/directory/gaynor-lee-coaching`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
 - 🔴 **Operator "Gethin Woods (Bike Park Merthyr)" missing: no cover image, no logo, no phone, no email**
   - Page: `/directory/gethin-woods-bike-park`
   - Fix: Fill 4 missing fields
 - 🔴 **Operator "Gigrin Farm Red Kite Feeding" missing: no cover image, no logo, no phone, no email**
   - Page: `/directory/gigrin-farm`
   - Fix: Fill 4 missing fields
+- 🔴 **Operator "Go Below Underground Adventures" missing: no cover image, no logo, no coordinates, no phone, no email**
+  - Page: `/directory/go-below-underground`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Gone Mountain Biking" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating**
+  - Page: `/directory/gone-mountain-biking`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
+- 🔴 **Operator "Gower Adventures" missing: no description, no cover image, no logo, no Google rating**
+  - Page: `/directory/gower-adventures`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Gower Surf Academy" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/gower-surf-academy`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
 - 🔴 **Operator "Grange Trekking Centre" missing: no cover image, no logo, no phone, no email**
   - Page: `/directory/grange-trekking-centre`
   - Fix: Fill 4 missing fields
+- 🔴 **Operator "H+I Adventures" missing: no cover image, no logo, no phone, no email, no Google rating**
+  - Page: `/directory/h-plus-i-adventures`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Haven Sports" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/haven-sports`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
 - 🔴 **Operator "Heatherton World of Activities" missing: no cover image, no logo, no phone, no email**
   - Page: `/directory/heatherton-world-of-activities`
   - Fix: Fill 4 missing fields
 - 🔴 **Operator "Hell's Mouth Surf School" missing: no cover image, no logo, no phone, no email**
   - Page: `/directory/hells-mouth-surf-school`
   - Fix: Fill 4 missing fields
-- 🔴 **Operator "Hell's Mouth Surf School" missing: no description, no cover image, no logo, no coordinates**
-  - Page: `/directory/hell-s-mouth-surf-school`
-  - Fix: Fill 4 missing fields *(auto-fixable)*
 - 🔴 **Operator "Llandysul Angling Association" missing: no cover image, no logo, no phone, no email, no Google rating**
   - Page: `/directory/llandysul-angling-association`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Llyn Cycle Centre" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/llyn-cycle-centre`
   - Fix: Fill 5 missing fields *(auto-fixable)*
 - 🔴 **Operator "Llŷn Adventures" missing: no description, no cover image, no logo, no coordinates**
   - Page: `/directory/ll-n-adventures`
   - Fix: Fill 4 missing fields *(auto-fixable)*
-- 🔴 **Operator "Llŷn Adventures" missing: no cover image, no logo, no phone, no email**
-  - Page: `/directory/llyn-adventures`
-  - Fix: Fill 4 missing fields
+- 🔴 **Operator "MTB Leadership" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating**
+  - Page: `/directory/mtb-leadership`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
 - 🔴 **Operator "Ma Simes Surf Hut" missing: no cover image, no logo, no coordinates, no Google rating**
   - Page: `/directory/ma-simes-surf-hut`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Marsh Tracks" missing: no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/marsh-tracks`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Monmouth Canoe" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/monmouth-canoe`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Mountain Bike Wales" missing: no cover image, no logo, no phone, no email, no Google rating**
+  - Page: `/directory/mountain-bike-wales`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Mountain Walks" missing: no cover image, no logo, no phone, no Google rating**
+  - Page: `/directory/mountain-walks`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "National White Water Centre" missing: no cover image, no logo, no coordinates, no phone, no email**
+  - Page: `/directory/national-white-water-centre`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Newsurf" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/newsurf`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Oneplanet Adventure" missing: no description, no cover image, no logo, no Google rating**
+  - Page: `/directory/oneplanet-adventure`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Outward Bound Aberdyfi" missing: no description, no cover image, no logo, no Google rating**
+  - Page: `/directory/outward-bound-aberdyfi`
   - Fix: Fill 4 missing fields *(auto-fixable)*
 - 🔴 **Operator "Paddles & Pedals" missing: no cover image, no logo, no coordinates, no Google rating**
   - Page: `/directory/paddles-and-pedals`
   - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Pearce Cycles" missing: no description, no cover image, no logo, no phone, no email, no Google rating**
+  - Page: `/directory/pearce-cycles`
+  - Fix: Fill 6 missing fields *(auto-fixable)*
+- 🔴 **Operator "Pedal MTB" missing: no description, no cover image, no logo, no phone, no email, no Google rating**
+  - Page: `/directory/pedal-mtb`
+  - Fix: Fill 6 missing fields *(auto-fixable)*
+- 🔴 **Operator "Pedalabikeaway" missing: no description, no cover image, no logo, no Google rating**
+  - Page: `/directory/pedalabikeaway`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
 - 🔴 **Operator "Pembrokeshire Coastal Bus" missing: no cover image, no logo, no coordinates, no Google rating**
   - Page: `/directory/pembrokeshire-coastal-bus`
   - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Porthcawl Surf School" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/porthcawl-surf-school`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Pro Ride MTB" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating**
+  - Page: `/directory/pro-ride-mtb`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
+- 🔴 **Operator "Psyched Paddleboarding" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/psyched-paddleboarding`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Revolution Bike Park" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating**
+  - Page: `/directory/revolution-bike-park`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
+- 🔴 **Operator "Ride High MTB" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating**
+  - Page: `/directory/ride-high-mtb`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
+- 🔴 **Operator "Ropeworks Active" missing: no cover image, no logo, no phone, no Google rating**
+  - Page: `/directory/ropeworks-active`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Saundersfoot Pleasure Boats" missing: no description, no cover image, no logo, no phone, no email, no Google rating**
+  - Page: `/directory/saundersfoot-pleasure-boats`
+  - Fix: Fill 6 missing fields *(auto-fixable)*
+- 🔴 **Operator "Sea Kayaking Wales" missing: no description, no cover image, no logo, no coordinates, no phone, no email, no Google rating**
+  - Page: `/directory/sea-kayaking-wales`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
+- 🔴 **Operator "Snowdonia Adventures" missing: no cover image, no logo, no coordinates, no phone, no email**
+  - Page: `/directory/snowdonia-adventures`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Snowdonia MTB Days" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating**
+  - Page: `/directory/snowdonia-mtb-days`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
+- 🔴 **Operator "Snowdonia Watersports" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/snowdonia-watersports`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Summit Cycles" missing: no description, no cover image, no logo, no Google rating**
+  - Page: `/directory/summit-cycles`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Summit to Sea" missing: no description, no cover image, no logo, no coordinates, no phone, no email, no Google rating**
+  - Page: `/directory/summit-to-sea`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
+- 🔴 **Operator "Surfability UK" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/surfability-uk`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
 - 🔴 **Operator "Taskforce Paintball" missing: no cover image, no logo, no phone, no email**
   - Page: `/directory/taskforce-paintball`
   - Fix: Fill 4 missing fields
 - 🔴 **Operator "The Fishing Passport" missing: no cover image, no logo, no coordinates, no phone, no email, no Google rating**
   - Page: `/directory/the-fishing-passport`
   - Fix: Fill 6 missing fields *(auto-fixable)*
+- 🔴 **Operator "The Gap Wales" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating**
+  - Page: `/directory/the-gap-wales`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
 - 🔴 **Operator "The Pen-y-Gwryd Hotel" missing: no cover image, no logo, no coordinates, no Google rating**
   - Page: `/directory/pen-y-gwryd-hotel`
   - Fix: Fill 4 missing fields *(auto-fixable)*
 - 🔴 **Operator "The Pinnacle Café" missing: no cover image, no logo, no coordinates, no Google rating**
   - Page: `/directory/pinnacle-cafe`
   - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Tom Hutton MTB" missing: no cover image, no logo, no phone, no email, no Google rating**
+  - Page: `/directory/tom-hutton-mtb`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
 - 🔴 **Operator "Trans Wales Trails" missing: no cover image, no logo, no phone, no email**
   - Page: `/directory/trans-wales-trails`
   - Fix: Fill 4 missing fields
+- 🔴 **Operator "Up4It Outdoors" missing: no description, no cover image, no logo, no coordinates, no phone, no email, no Google rating**
+  - Page: `/directory/up4it-outdoors`
+  - Fix: Fill 7 missing fields *(auto-fixable)*
+- 🔴 **Operator "Wales Outdoors" missing: no cover image, no logo, no phone, no Google rating**
+  - Page: `/directory/wales-outdoors`
+  - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "West Wales Windsurf" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/west-wales-windsurf`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "Wild Trails Wales" missing: no description, no cover image, no logo, no phone, no email, no Google rating**
+  - Page: `/directory/wild-trails-wales`
+  - Fix: Fill 6 missing fields *(auto-fixable)*
 - 🔴 **Operator "Wildlife Trust of South & West Wales" missing: no cover image, no logo, no coordinates, no email**
   - Page: `/directory/wildlife-trust-south-west-wales`
   - Fix: Fill 4 missing fields *(auto-fixable)*
+- 🔴 **Operator "Wye Valley Canoes" missing: no description, no cover image, no logo, no email, no Google rating**
+  - Page: `/directory/wye-valley-canoes`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🔴 **Operator "WyeMTB" missing: no cover image, no logo, no phone, no email, no Google rating**
+  - Page: `/directory/wye-mtb`
+  - Fix: Fill 5 missing fields *(auto-fixable)*
+- 🟠 **Operator "Aber Adventures" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/aber-adventures`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
 - 🟠 **Operator "AberAdventures" missing: no cover image, no logo**
   - Page: `/directory/aberadventures`
   - Fix: Fill 2 missing fields
-- 🟠 **Operator "Abersoch Sailing School" missing: no cover image, no logo**
-  - Page: `/directory/abersoch-sailing-school`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "Abersoch Watersports" missing: no cover image, no logo**
-  - Page: `/directory/abersoch-watersports`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "Activity Pembrokeshire" missing: no cover image, no logo**
-  - Page: `/directory/activity-pembrokeshire`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "Adventure Britain" missing: no cover image, no logo**
-  - Page: `/directory/adventure-britain`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "Adventures Wales" missing: no cover image, no logo**
-  - Page: `/directory/adventures-wales`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "Anglesey Adventures" missing: no cover image, no logo**
-  - Page: `/directory/anglesey-adventures`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "Antur Stiniog" missing: no cover image, no logo**
-  - Page: `/directory/antur-stiniog`
-  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Anglesey Walking Holidays" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/anglesey-walking-holidays`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Bala Adventure & Watersports" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/bala-adventure-watersports`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
 - 🟠 **Operator "Beics Betws" missing: no cover image, no logo, no coordinates**
   - Page: `/directory/beics-betws`
   - Fix: Fill 3 missing fields *(auto-fixable)*
-- 🟠 **Operator "BikePark Wales" missing: no cover image, no logo**
-  - Page: `/directory/bikepark-wales`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "Black Mountain Adventure" missing: no cover image, no logo**
-  - Page: `/directory/black-mountain-adventure`
-  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Boulder Adventures" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/boulder-adventures`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
 - 🟠 **Operator "Caffi Caban" missing: no cover image, no logo, no coordinates**
   - Page: `/directory/caffi-caban`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Call of the Wild" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/call-of-the-wild`
   - Fix: Fill 3 missing fields *(auto-fixable)*
 - 🟠 **Operator "Cantref Riding Centre" missing: no cover image, no logo, no email**
   - Page: `/directory/cantref-riding-centre`
   - Fix: Fill 3 missing fields
-- 🟠 **Operator "Coed y Brenin (NRW)" missing: no cover image, no logo**
-  - Page: `/directory/coed-y-brenin-nrw`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "Funsport Rhosneigr" missing: no cover image, no logo**
-  - Page: `/directory/funsport-rhosneigr`
-  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Clyne Farm Centre" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/clyne-farm-centre`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Compass Holidays" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/compass-holidays`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Contours Walking Holidays" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/contours-walking-holidays`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Drover Cycles" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/drover-cycles`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Drover Holidays" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/drover-holidays`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Edge of Wales Walk" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/edge-of-wales-walk`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
 - 🟠 **Operator "Gecko Surf" missing: no cover image, no logo**
   - Page: `/directory/gecko-surf`
   - Fix: Fill 2 missing fields
-- 🟠 **Operator "Gower Activity Centres" missing: no cover image, no logo**
-  - Page: `/directory/gower-activity-centres`
-  - Fix: Fill 2 missing fields
+- 🟠 **Operator "HF Holidays" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/hf-holidays`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Hawk Adventures" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/hawk-adventures`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Hell's Mouth Surf School" missing: no cover image, no logo, no coordinates**
+  - Page: `/directory/hell-s-mouth-surf-school`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Kayak King" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/kayak-king`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Kevin Walker Mountain Activities" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/kevin-walker-mountain-activities`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Large Outdoors" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/large-outdoors`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
 - 🟠 **Operator "Llangennith Surf School" missing: no cover image, no logo**
   - Page: `/directory/llangennith-surf-school`
   - Fix: Fill 2 missing fields
-- 🟠 **Operator "Llangorse Multi Activity Centre" missing: no cover image, no logo**
-  - Page: `/directory/llangorse-multi-activity-centre`
+- 🟠 **Operator "Llŷn Adventures" missing: no cover image, no logo**
+  - Page: `/directory/llyn-adventures`
   - Fix: Fill 2 missing fields
+- 🟠 **Operator "Llŷn Adventures" missing: no cover image, no logo, no coordinates**
+  - Page: `/directory/lln-adventures`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
 - 🟠 **Operator "MUUK Adventures" missing: no cover image, no logo**
   - Page: `/directory/muuk-adventures`
   - Fix: Fill 2 missing fields
-- 🟠 **Operator "Meadow Springs" missing: no cover image, no logo**
-  - Page: `/directory/meadow-springs`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "MountainXperience" missing: no cover image, no logo**
-  - Page: `/directory/mountainxperience`
-  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Macs Adventure" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/macs-adventure`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Mickledore Walking Holidays" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/mickledore-walking-holidays`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "North Wales Active" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/north-wales-active`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
 - 🟠 **Operator "One Planet Adventure (Llandegla)" missing: no cover image, no logo**
   - Page: `/directory/one-planet-adventure-llandegla`
   - Fix: Fill 2 missing fields
-- 🟠 **Operator "Outer Reef Surf School" missing: no cover image, no logo**
-  - Page: `/directory/outer-reef-surf-school`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "Oxwich Watersports" missing: no cover image, no logo**
-  - Page: `/directory/oxwich-watersports`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "Plas Menai" missing: no cover image, no logo**
-  - Page: `/directory/plas-menai`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "Plas y Brenin" missing: no cover image, no logo**
-  - Page: `/directory/plas-y-brenin`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "Preseli Venture" missing: no cover image, no logo**
-  - Page: `/directory/preseli-venture`
-  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Paddle West" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/paddle-west`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Pembrokeshire Surf School" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/pembrokeshire-surf-school`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
 - 🟠 **Operator "Pro Kitesurfing" missing: no cover image, no logo**
   - Page: `/directory/pro-kitesurfing`
   - Fix: Fill 2 missing fields
-- 🟠 **Operator "Quest Adventure" missing: no cover image, no logo**
-  - Page: `/directory/quest-adventure`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "Rip N Rock" missing: no cover image, no logo**
-  - Page: `/directory/rip-n-rock`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "Sealyham Activity Centre" missing: no cover image, no logo**
-  - Page: `/directory/sealyham-activity-centre`
-  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Pro-Active Adventure" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/pro-active-adventure`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Progress Surf School" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/progress-surf-school`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "RAW Adventures" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/raw-adventures`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Ramble Worldwide" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/ramble-worldwide`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Rock UK Summit Centre" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/rock-uk-summit-centre`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Seren Ventures" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/seren-ventures`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
 - 🟠 **Operator "Snowdon Sherpa" missing: no cover image, no logo, no coordinates**
   - Page: `/directory/snowdon-sherpa`
   - Fix: Fill 3 missing fields *(auto-fixable)*
-- 🟠 **Operator "Snowdonia Mountain Guides" missing: no cover image, no logo**
-  - Page: `/directory/snowdonia-mountain-guides`
-  - Fix: Fill 2 missing fields
+- 🟠 **Operator "Stand Up Paddle Board UK" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/stand-up-paddle-board-uk`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
 - 🟠 **Operator "Summit to Sea Hire" missing: no cover image, no logo, no coordinates**
   - Page: `/directory/summit-to-sea-hire`
   - Fix: Fill 3 missing fields *(auto-fixable)*
-- 🟠 **Operator "TYF Adventure" missing: no cover image, no logo**
-  - Page: `/directory/tyf-adventure`
-  - Fix: Fill 2 missing fields
-- 🟠 **Operator "Tenby Adventure" missing: no cover image, no logo**
-  - Page: `/directory/tenby-adventure`
-  - Fix: Fill 2 missing fields
+- 🟠 **Operator "The Rock Climbing Company" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/rock-climbing-company`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
 - 🟠 **Operator "The Stackpole Inn" missing: no cover image, no logo, no coordinates**
   - Page: `/directory/stackpole-inn`
   - Fix: Fill 3 missing fields *(auto-fixable)*
-- 🟠 **Operator "Zip World" missing: no cover image, no logo**
+- 🟠 **Operator "Ty Nant Outdoors" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/ty-nant-outdoors`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Wales Walking Holidays" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/wales-walking-holidays`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "Walk Hay" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/walk-hay`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟠 **Operator "West Coast Surf Shop" missing: no cover image, no logo, no Google rating**
+  - Page: `/directory/west-coast-surf-shop`
+  - Fix: Fill 3 missing fields *(auto-fixable)*
+- 🟡 **Operator "Abersoch Sailing School" missing: no cover image**
+  - Page: `/directory/abersoch-sailing-school`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Abersoch Watersports" missing: no cover image**
+  - Page: `/directory/abersoch-watersports`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Activity Pembrokeshire" missing: no cover image**
+  - Page: `/directory/activity-pembrokeshire`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Adventure Britain" missing: no cover image**
+  - Page: `/directory/adventure-britain`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Adventures Wales" missing: no cover image**
+  - Page: `/directory/adventures-wales`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Adventures Wales" missing: no cover image**
+  - Page: `/directory/adventures-wales`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Anglesey Adventures" missing: no cover image**
+  - Page: `/directory/anglesey-adventures`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Antur Stiniog" missing: no cover image**
+  - Page: `/directory/antur-stiniog`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "BikePark Wales" missing: no cover image**
+  - Page: `/directory/bikepark-wales`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Black Mountain Adventure" missing: no cover image**
+  - Page: `/directory/black-mountain-adventure`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Coed y Brenin (NRW)" missing: no cover image**
+  - Page: `/directory/coed-y-brenin-nrw`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Funsport Rhosneigr" missing: no cover image**
+  - Page: `/directory/funsport-rhosneigr`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Gower Activity Centres" missing: no cover image**
+  - Page: `/directory/gower-activity-centres`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Llangorse Multi Activity Centre" missing: no cover image**
+  - Page: `/directory/llangorse-multi-activity-centre`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Meadow Springs" missing: no cover image**
+  - Page: `/directory/meadow-springs`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "MountainXperience" missing: no cover image**
+  - Page: `/directory/mountainxperience`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Outer Reef Surf School" missing: no cover image**
+  - Page: `/directory/outer-reef-surf-school`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Oxwich Watersports" missing: no cover image**
+  - Page: `/directory/oxwich-watersports`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Plas Menai" missing: no cover image**
+  - Page: `/directory/plas-menai`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Plas y Brenin" missing: no cover image**
+  - Page: `/directory/plas-y-brenin`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Preseli Venture" missing: no cover image**
+  - Page: `/directory/preseli-venture`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Quest Adventure" missing: no cover image**
+  - Page: `/directory/quest-adventure`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Rip N Rock" missing: no cover image**
+  - Page: `/directory/rip-n-rock`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Sealyham Activity Centre" missing: no cover image**
+  - Page: `/directory/sealyham-activity-centre`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Snowdonia Mountain Guides" missing: no cover image**
+  - Page: `/directory/snowdonia-mountain-guides`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "TYF Adventure" missing: no cover image**
+  - Page: `/directory/tyf-adventure`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Tenby Adventure" missing: no cover image**
+  - Page: `/directory/tenby-adventure`
+  - Fix: Fill 1 missing fields
+- 🟡 **Operator "Zip World" missing: no cover image**
   - Page: `/directory/zip-world`
-  - Fix: Fill 2 missing fields
+  - Fix: Fill 1 missing fields
 
 ## Activity Types
 
+- 🟠 **Activity type "Caving/Potholing" has 0 activities**
+  - Page: `/activities?type=caving-potholing`
+  - Fix: Seed activities for this type or remove type *(auto-fixable)*
 - 🟠 **Activity type "Scenic Railway" has 0 activities**
   - Page: `/activities?type=scenic-railway`
   - Fix: Seed activities for this type or remove type *(auto-fixable)*
@@ -225,6 +543,66 @@
 
 ## Activities
 
+- 🟡 **Activity "Pembroke Castle" has 26 char description (min 100)**
+  - Page: `/activities/pembroke-castle`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Oakwood Theme Park" has 28 char description (min 100)**
+  - Page: `/activities/oakwood-theme-park`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "St Fagans National Museum of History" has 32 char description (min 100)**
+  - Page: `/activities/st-fagans`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Caernarfon Castle" has 33 char description (min 100)**
+  - Page: `/activities/caernarfon-castle`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Folly Farm" has 36 char description (min 100)**
+  - Page: `/activities/folly-farm`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Bodnant Garden" has 37 char description (min 100)**
+  - Page: `/activities/bodnant-garden`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Dan yr Ogof Caves" has 37 char description (min 100)**
+  - Page: `/activities/dan-yr-ogof`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Dolaucothi Gold Mines" has 37 char description (min 100)**
+  - Page: `/activities/dolaucothi-gold-mines`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Snowdon Mountain Railway" has 38 char description (min 100)**
+  - Page: `/activities/snowdon-mountain-railway`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Zip World Penrhyn Quarry" has 38 char description (min 100)**
+  - Page: `/activities/zip-world-velocity`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Welsh Mountain Zoo" has 40 char description (min 100)**
+  - Page: `/activities/welsh-mountain-zoo`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Aberglasney Gardens" has 43 char description (min 100)**
+  - Page: `/activities/aberglasney-gardens`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Conwy Castle" has 46 char description (min 100)**
+  - Page: `/activities/conwy-castle`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Big Pit National Coal Museum" has 47 char description (min 100)**
+  - Page: `/activities/big-pit`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "National Botanic Garden of Wales" has 47 char description (min 100)**
+  - Page: `/activities/national-botanic-garden`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Harlech Castle" has 48 char description (min 100)**
+  - Page: `/activities/harlech-castle`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Portmeirion" has 48 char description (min 100)**
+  - Page: `/activities/portmeirion`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Cardiff Castle" has 49 char description (min 100)**
+  - Page: `/activities/cardiff-castle`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Ffestiniog Railway" has 50 char description (min 100)**
+  - Page: `/activities/ffestiniog-railway`
+  - Fix: Generate or write a proper description *(auto-fixable)*
+- 🟡 **Activity "Skomer Island" has 54 char description (min 100)**
+  - Page: `/activities/skomer-island`
+  - Fix: Generate or write a proper description *(auto-fixable)*
 - 🟡 **Activity "Ropes Course" has 55 char description (min 100)**
   - Page: `/activities/ropes-course`
   - Fix: Generate or write a proper description *(auto-fixable)*
@@ -253,16 +631,3568 @@
   - Page: `/all-wales`
   - Fix: Write 200+ word region overview *(auto-fixable)*
 
+## Events
+
+- 🟡 **Event "ABP Newport Marathon 2026" missing image**
+  - Page: `/events/abp-newport-marathon-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberaeron Carnival" missing image**
+  - Page: `/events/aberaeron-carnival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberaeron Mackerel Festival" missing image**
+  - Page: `/events/aberaeron-mackerel-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberaeron Regatta" missing image**
+  - Page: `/events/aberaeron-regatta`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberdovey Swim" missing image**
+  - Page: `/events/aberdovey-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Abergavenny Farmers Market" missing image**
+  - Page: `/events/abergavenny-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Abergavenny Food Festival" missing image**
+  - Page: `/events/abergavenny-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Abergavenny Steam Rally" missing image**
+  - Page: `/events/abergavenny-steam-rally`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Abergavenny Writing Festival" missing image**
+  - Page: `/events/abergavenny-writing-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberjazz" missing image**
+  - Page: `/events/aberjazz`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Abersoch NYD Dip" missing image**
+  - Page: `/events/abersoch-nyd-dip`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Abertillery Blues Festival" missing image**
+  - Page: `/events/abertillery-blues-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberystwyth & Ceredigion County Show" missing image**
+  - Page: `/events/aberystwyth-ceredigion-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberystwyth & Ceredigion County Show" missing image**
+  - Page: `/events/aberystwyth-ceredigion-county-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberystwyth Arts Centre Summer Season" missing image**
+  - Page: `/events/aberystwyth-arts-centre-summer-season`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberystwyth Comedy Festival" missing image**
+  - Page: `/events/aberystwyth-comedy-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberystwyth Cycle Festival" missing image**
+  - Page: `/events/aberystwyth-cycle-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberystwyth Farmers Market" missing image**
+  - Page: `/events/aberystwyth-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberystwyth Fireworks Fireworks Display" missing image**
+  - Page: `/events/aberystwyth-fireworks-fireworks-display`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberystwyth Junior Parkrun" missing image**
+  - Page: `/events/aberystwyth-junior-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberystwyth Parkrun" missing image**
+  - Page: `/events/aberystwyth-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberystwyth Santa Run Santa Fun Run" missing image**
+  - Page: `/events/aberystwyth-santa-run-santa-fun-run`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberystwyth Sea2shore Food Festival" missing image**
+  - Page: `/events/aberystwyth-sea2shore-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Aberystwyth Triathlon" missing image**
+  - Page: `/events/aberystwyth-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Angle Show" missing image**
+  - Page: `/events/angle-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Anglesey Adventure Race" missing image**
+  - Page: `/events/anglesey-adventure-race`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Anglesey Agricultural Show" missing image**
+  - Page: `/events/anglesey-agricultural-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Anglesey County Show" missing image**
+  - Page: `/events/anglesey-county-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Anglesey Oyster & Welsh Produce Festival" missing image**
+  - Page: `/events/anglesey-oyster-welsh-produce-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Anglesey Winter Fair" missing image**
+  - Page: `/events/anglesey-winter-fair`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Bala Lake Swim" missing image**
+  - Page: `/events/bala-lake-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Bala Parkrun" missing image**
+  - Page: `/events/bala-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Bala SUP Race" missing image**
+  - Page: `/events/bala-sup-race`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Bala Sailing Club Regatta" missing image**
+  - Page: `/events/bala-sailing-regatta`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Bala Sprint Triathlon" missing image**
+  - Page: `/events/bala-sprint-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Bala Standard Triathlon" missing image**
+  - Page: `/events/bala-standard-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Balter Festival" missing image**
+  - Page: `/events/balter-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Banff Mountain Film Festival Tour (Wales)" missing image**
+  - Page: `/events/banff-mountain-film-festival-tour-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Bangor Music Festival" missing image**
+  - Page: `/events/bangor-music-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Barley Saturday" missing image**
+  - Page: `/events/barley-saturday`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Barmouth Kite Festival" missing image**
+  - Page: `/events/barmouth-kite-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Barmouth Walking Festival" missing image**
+  - Page: `/events/barmouth-walking-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Barry Island 10K 2026" missing image**
+  - Page: `/events/barry-island-10k-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Barry Island Dog Swim" missing image**
+  - Page: `/events/barry-dog-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Barry Island Fireworks Fireworks Display" missing image**
+  - Page: `/events/barry-island-fireworks-fireworks-display`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Barry Island NYD Swim" missing image**
+  - Page: `/events/barry-island-nyd-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Barry Island New Year's Day Swim" missing image**
+  - Page: `/events/barry-island-new-year-s-day-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Barry Island Parkrun" missing image**
+  - Page: `/events/barry-island-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Barry Island Santa Run Santa Fun Run" missing image**
+  - Page: `/events/barry-island-santa-run-santa-fun-run`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Barry Junior Parkrun" missing image**
+  - Page: `/events/barry-junior-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Beast of Llangattock" missing image**
+  - Page: `/events/beast-of-llangattock`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Beast of the Blacks" missing image**
+  - Page: `/events/beast-of-the-blacks`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Beaumaris Arts Festival" missing image**
+  - Page: `/events/beaumaris-arts-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Beaumaris Festival" missing image**
+  - Page: `/events/beaumaris-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Beaumaris Food Festival" missing image**
+  - Page: `/events/beaumaris-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Bedwellty Agricultural Show" missing image**
+  - Page: `/events/bedwellty-agricultural-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Beguildy Show" missing image**
+  - Page: `/events/beguildy-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Bellis Brothers Pumpkin Picking" missing image**
+  - Page: `/events/bellis-brothers-pumpkin-picking`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Between The Trees" missing image**
+  - Page: `/events/between-the-trees`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Beulah Show" missing image**
+  - Page: `/events/beulah-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Beyond the Border" missing image**
+  - Page: `/events/beyond-the-border`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Beyond the Border Storytelling Festival" missing image**
+  - Page: `/events/beyond-the-border-storytelling-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Big Cheese Festival" missing image**
+  - Page: `/events/big-cheese-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Big Love Festival" missing image**
+  - Page: `/events/big-love-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Billy Bob's Farm Pumpkin Picking" missing image**
+  - Page: `/events/billy-bob-s-farm-pumpkin-picking`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Bite Food Festival, Cardiff" missing image**
+  - Page: `/events/bite-food-festival-cardiff`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Black Diamond Yr Wyddfa | Snowdon24 2026" missing image**
+  - Page: `/events/black-diamond-yr-wyddfa-snowdon24-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Black Mountains Ultras" missing image**
+  - Page: `/events/black-mountains-ultras`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Bodnant Garden Easter Hunt Easter Egg Hunt" missing image**
+  - Page: `/events/bodnant-garden-easter-hunt-easter-egg-hunt`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Breca Gower" missing image**
+  - Page: `/events/breca-gower`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Brechfa Show" missing image**
+  - Page: `/events/brechfa-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Brecon Baroque Festival" missing image**
+  - Page: `/events/brecon-baroque-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Brecon Beacons Dark Sky Festival" missing image**
+  - Page: `/events/brecon-beacons-dark-sky-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Brecon Beacons Food Festival" missing image**
+  - Page: `/events/brecon-beacons-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Brecon County Show" missing image**
+  - Page: `/events/brecon-county-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Brecon Farmers Market" missing image**
+  - Page: `/events/brecon-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Brecon Jazz Festival" missing image**
+  - Page: `/events/brecon-jazz-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Brecon Junior Parkrun" missing image**
+  - Page: `/events/brecon-junior-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Brecon Parkrun" missing image**
+  - Page: `/events/brecon-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Brecon Santa Run Santa Fun Run" missing image**
+  - Page: `/events/brecon-santa-run-santa-fun-run`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Brecon Triathlon" missing image**
+  - Page: `/events/brecon-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Bridgend County Show" missing image**
+  - Page: `/events/bridgend-county-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Bridgend Junior Parkrun" missing image**
+  - Page: `/events/bridgend-junior-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Broad Haven Christmas Pudding Run" missing image**
+  - Page: `/events/broad-haven-christmas-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Broad Haven Triathlon" missing image**
+  - Page: `/events/broad-haven-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Brooksgrove Farm Pumpkin Picking" missing image**
+  - Page: `/events/brooksgrove-farm-pumpkin-picking`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Builth Wells Antiques Fair" missing image**
+  - Page: `/events/builth-wells-antiques-fair`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Burn Series Adventure Race" missing image**
+  - Page: `/events/burn-series`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "CDF 10K" missing image**
+  - Page: `/events/cdf-10k`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "CDF 10K 2026" missing image**
+  - Page: `/events/cdf-10k-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cadw Halloween Events" missing image**
+  - Page: `/events/cadw-halloween-events`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cadw Open Doors" missing image**
+  - Page: `/events/cadw-open-doors`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Caerleon Arts Festival" missing image**
+  - Page: `/events/caerleon-arts-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Caernarfon Food Festival" missing image**
+  - Page: `/events/caernarfon-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Caernarfon Investiture Anniversary" missing image**
+  - Page: `/events/caernarfon-investiture-anniversary`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Caerphilly Big Cheese" missing image**
+  - Page: `/events/caerphilly-big-cheese`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Caerphilly Castle Fireworks Fireworks Display" missing image**
+  - Page: `/events/caerphilly-castle-fireworks-fireworks-display`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Caerphilly Cheese Festival" missing image**
+  - Page: `/events/caerphilly-cheese-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Caerphilly Christmas Market" missing image**
+  - Page: `/events/caerphilly-christmas-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Caerphilly Food & Drink Festival" missing image**
+  - Page: `/events/caerphilly-food-drink-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Caerphilly Food Festival" missing image**
+  - Page: `/events/caerphilly-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Caerphilly Little Cheese" missing image**
+  - Page: `/events/caerphilly-little-cheese`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Caio Show" missing image**
+  - Page: `/events/caio-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Caldey Island Swim" missing image**
+  - Page: `/events/caldey-island-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Camp Good Life" missing image**
+  - Page: `/events/camp-good-life`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Camrose Show" missing image**
+  - Page: `/events/camrose-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Animation Festival" missing image**
+  - Page: `/events/cardiff-animation-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Bay Paddlefest" missing image**
+  - Page: `/events/cardiff-bay-paddlefest`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Children's Literature Festival" missing image**
+  - Page: `/events/cardiff-children-s-literature-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Christmas Market" missing image**
+  - Page: `/events/cardiff-christmas-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Comedy Festival" missing image**
+  - Page: `/events/cardiff-comedy-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Film Festival" missing image**
+  - Page: `/events/cardiff-film-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Food & Drink Festival" missing image**
+  - Page: `/events/cardiff-food-drink-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Food and Drink Festival" missing image**
+  - Page: `/events/cardiff-food-and-drink-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Half Marathon 2026" missing image**
+  - Page: `/events/cardiff-half-marathon-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Harbour Festival" missing image**
+  - Page: `/events/cardiff-harbour-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Head of the Taff" missing image**
+  - Page: `/events/cardiff-head-taff`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff International Food and Drink Festival" missing image**
+  - Page: `/events/cardiff-international-food-and-drink-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Junior Parkrun" missing image**
+  - Page: `/events/cardiff-junior-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Parkrun" missing image**
+  - Page: `/events/cardiff-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Rhiwbina Farmers Market" missing image**
+  - Page: `/events/cardiff-rhiwbina-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Riverside Farmers Market" missing image**
+  - Page: `/events/cardiff-riverside-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Roath Farmers Market" missing image**
+  - Page: `/events/cardiff-roath-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Santa Dash Santa Fun Run" missing image**
+  - Page: `/events/cardiff-santa-dash-santa-fun-run`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Sparks in the Park Fireworks Display" missing image**
+  - Page: `/events/cardiff-sparks-in-the-park-fireworks-display`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardiff Triathlon" missing image**
+  - Page: `/events/cardiff-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardigan Barley Saturday" missing image**
+  - Page: `/events/cardigan-barley-saturday`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardigan Bay Regatta" missing image**
+  - Page: `/events/cardigan-bay-regatta`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardigan Bay Seafood Festival" missing image**
+  - Page: `/events/cardigan-bay-seafood-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardigan County Show" missing image**
+  - Page: `/events/cardigan-county-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardigan River & Food Festival" missing image**
+  - Page: `/events/cardigan-river-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardigan River and Food Festival" missing image**
+  - Page: `/events/cardigan-river-and-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cardigan Show" missing image**
+  - Page: `/events/cardigan-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Carmarthen Farmers Market" missing image**
+  - Page: `/events/carmarthen-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Carmarthen Fireworks Fireworks Display" missing image**
+  - Page: `/events/carmarthen-fireworks-fireworks-display`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Castell Roc" missing image**
+  - Page: `/events/castell-roc`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Castlemartin Show" missing image**
+  - Page: `/events/castlemartin-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Celtic Blue Rock Community Arts Festival" missing image**
+  - Page: `/events/celtic-blue-rock-community-arts-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Chepstow Farmers Market" missing image**
+  - Page: `/events/chepstow-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Chepstow Show" missing image**
+  - Page: `/events/chepstow-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Chepstow Walking Festival" missing image**
+  - Page: `/events/chepstow-walking-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Chirk Castle Easter Hunt Easter Egg Hunt" missing image**
+  - Page: `/events/chirk-castle-easter-hunt-easter-egg-hunt`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Christmas at Bute Park" missing image**
+  - Page: `/events/christmas-at-bute-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cilycwm Show" missing image**
+  - Page: `/events/cilycwm-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Clearwell Farm Pumpkin Picking" missing image**
+  - Page: `/events/clearwell-farm-pumpkin-picking`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Coasteering Championships" missing image**
+  - Page: `/events/coasteering-champs`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Coffee Morning at Stackpole Centre" missing image**
+  - Page: `/events/coffee-morning-at-stackpole-centre`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Colby Parkrun" missing image**
+  - Page: `/events/colby-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Colby Woodland Garden Easter Hunt Easter Egg Hunt" missing image**
+  - Page: `/events/colby-woodland-garden-easter-hunt-easter-egg-hunt`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Coleford Music Festival" missing image**
+  - Page: `/events/coleford-music-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Colwyn Bay 1940s Festival" missing image**
+  - Page: `/events/colwyn-bay-1940s-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Colwyn Bay Prom Xtra" missing image**
+  - Page: `/events/colwyn-bay-prom-xtra`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Conwy Ascent" missing image**
+  - Page: `/events/conwy-ascent`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Conwy Honey Fair" missing image**
+  - Page: `/events/conwy-honey-fair`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Conwy Junior Parkrun" missing image**
+  - Page: `/events/conwy-junior-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Conwy Medieval Festival" missing image**
+  - Page: `/events/conwy-medieval-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Conwy Parkrun" missing image**
+  - Page: `/events/conwy-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Conwy Pirate Weekend" missing image**
+  - Page: `/events/conwy-pirate-weekend`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Conwy River Festival" missing image**
+  - Page: `/events/conwy-river-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cowbridge Farmers Market" missing image**
+  - Page: `/events/cowbridge-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cowbridge Food and Drink Festival" missing image**
+  - Page: `/events/cowbridge-food-and-drink-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Criccieth Boxing Day Dip" missing image**
+  - Page: `/events/criccieth-boxing-day-dip`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Crickhowell Walking Festival" missing image**
+  - Page: `/events/crickhowell-walking-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cwmbran Parkrun" missing image**
+  - Page: `/events/cwmbran-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Cylch y Frenni Show" missing image**
+  - Page: `/events/cylch-y-frenni-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Dan yr Ogof Dinosaur Park Events" missing image**
+  - Page: `/events/dan-yr-ogof-events`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Denbigh and Flint Show" missing image**
+  - Page: `/events/denbigh-and-flint-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Devauden Festival" missing image**
+  - Page: `/events/devauden-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Dinefwr Literature Festival" missing image**
+  - Page: `/events/dinefwr-literature-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Dolgellau Parkrun" missing image**
+  - Page: `/events/dolgellau-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Dragon Boat Festival" missing image**
+  - Page: `/events/dragon-boat-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Dyffryn Gardens Easter Hunt Easter Egg Hunt" missing image**
+  - Page: `/events/dyffryn-gardens-easter-hunt-easter-egg-hunt`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Aberglasney Gardens" missing image**
+  - Page: `/events/easter-holiday-activities-at-aberglasney-gardens`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Beaumaris Castle" missing image**
+  - Page: `/events/easter-holiday-activities-at-beaumaris-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Big Pit National Coal Museum" missing image**
+  - Page: `/events/easter-holiday-activities-at-big-pit-national-coal-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Bodnant Garden" missing image**
+  - Page: `/events/easter-holiday-activities-at-bodnant-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Brecon Mountain Railway" missing image**
+  - Page: `/events/easter-holiday-activities-at-brecon-mountain-railway`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Bryngarw Country Park" missing image**
+  - Page: `/events/easter-holiday-activities-at-bryngarw-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Caernarfon Castle" missing image**
+  - Page: `/events/easter-holiday-activities-at-caernarfon-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Caerphilly Castle" missing image**
+  - Page: `/events/easter-holiday-activities-at-caerphilly-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Castell Coch" missing image**
+  - Page: `/events/easter-holiday-activities-at-castell-coch`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Chepstow Castle" missing image**
+  - Page: `/events/easter-holiday-activities-at-chepstow-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Chirk Castle" missing image**
+  - Page: `/events/easter-holiday-activities-at-chirk-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Colby Woodland Garden" missing image**
+  - Page: `/events/easter-holiday-activities-at-colby-woodland-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Conwy Castle" missing image**
+  - Page: `/events/easter-holiday-activities-at-conwy-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Cosmeston Lakes Country Park" missing image**
+  - Page: `/events/easter-holiday-activities-at-cosmeston-lakes-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Criccieth Castle" missing image**
+  - Page: `/events/easter-holiday-activities-at-criccieth-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Denbigh Castle" missing image**
+  - Page: `/events/easter-holiday-activities-at-denbigh-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Dinefwr" missing image**
+  - Page: `/events/easter-holiday-activities-at-dinefwr`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Dyffryn Gardens" missing image**
+  - Page: `/events/easter-holiday-activities-at-dyffryn-gardens`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Erddig" missing image**
+  - Page: `/events/easter-holiday-activities-at-erddig`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Ffestiniog & Welsh Highland Railways" missing image**
+  - Page: `/events/easter-holiday-activities-at-ffestiniog-welsh-highland-railways`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Folly Farm Adventure Park and Zoo" missing image**
+  - Page: `/events/easter-holiday-activities-at-folly-farm-adventure-park-and-zoo`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Gigrin Farm Red Kite Feeding Centre" missing image**
+  - Page: `/events/easter-holiday-activities-at-gigrin-farm-red-kite-feeding-centre`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Gnoll Estate Country Park" missing image**
+  - Page: `/events/easter-holiday-activities-at-gnoll-estate-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Greenwood Family Park" missing image**
+  - Page: `/events/easter-holiday-activities-at-greenwood-family-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Harlech Castle" missing image**
+  - Page: `/events/easter-holiday-activities-at-harlech-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Kidwelly Castle" missing image**
+  - Page: `/events/easter-holiday-activities-at-kidwelly-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Llanerchaeron" missing image**
+  - Page: `/events/easter-holiday-activities-at-llanerchaeron`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Manor Wildlife Park" missing image**
+  - Page: `/events/easter-holiday-activities-at-manor-wildlife-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Margam Country Park" missing image**
+  - Page: `/events/easter-holiday-activities-at-margam-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at National Botanic Garden of Wales" missing image**
+  - Page: `/events/easter-holiday-activities-at-national-botanic-garden-of-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at National Museum Cardiff" missing image**
+  - Page: `/events/easter-holiday-activities-at-national-museum-cardiff`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at National Roman Legion Museum" missing image**
+  - Page: `/events/easter-holiday-activities-at-national-roman-legion-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at National Showcaves Centre for Wales (Dan yr Ogof)" missing image**
+  - Page: `/events/easter-holiday-activities-at-national-showcaves-centre-for-wales-dan-yr-ogof`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at National Slate Museum" missing image**
+  - Page: `/events/easter-holiday-activities-at-national-slate-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at National Waterfront Museum" missing image**
+  - Page: `/events/easter-holiday-activities-at-national-waterfront-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at National Wool Museum" missing image**
+  - Page: `/events/easter-holiday-activities-at-national-wool-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Pembrey Country Park" missing image**
+  - Page: `/events/easter-holiday-activities-at-pembrey-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Penrhyn Castle" missing image**
+  - Page: `/events/easter-holiday-activities-at-penrhyn-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Plas Newydd House and Garden" missing image**
+  - Page: `/events/easter-holiday-activities-at-plas-newydd-house-and-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Plas yn Rhiw" missing image**
+  - Page: `/events/easter-holiday-activities-at-plas-yn-rhiw`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Powis Castle and Garden" missing image**
+  - Page: `/events/easter-holiday-activities-at-powis-castle-and-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at RSPB Conwy" missing image**
+  - Page: `/events/easter-holiday-activities-at-rspb-conwy`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at RSPB Lake Vyrnwy" missing image**
+  - Page: `/events/easter-holiday-activities-at-rspb-lake-vyrnwy`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at RSPB Newport Wetlands" missing image**
+  - Page: `/events/easter-holiday-activities-at-rspb-newport-wetlands`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at RSPB South Stack" missing image**
+  - Page: `/events/easter-holiday-activities-at-rspb-south-stack`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at RSPB Ynys-hir" missing image**
+  - Page: `/events/easter-holiday-activities-at-rspb-ynys-hir`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Raglan Castle" missing image**
+  - Page: `/events/easter-holiday-activities-at-raglan-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Rhuddlan Castle" missing image**
+  - Page: `/events/easter-holiday-activities-at-rhuddlan-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Skomer Island" missing image**
+  - Page: `/events/easter-holiday-activities-at-skomer-island`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at St Davids Bishop's Palace" missing image**
+  - Page: `/events/easter-holiday-activities-at-st-davids-bishop-s-palace`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at St Fagans National Museum of History" missing image**
+  - Page: `/events/easter-holiday-activities-at-st-fagans-national-museum-of-history`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Stackpole Estate" missing image**
+  - Page: `/events/easter-holiday-activities-at-stackpole-estate`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Talyllyn Railway" missing image**
+  - Page: `/events/easter-holiday-activities-at-talyllyn-railway`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Tredegar House" missing image**
+  - Page: `/events/easter-holiday-activities-at-tredegar-house`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Tretower Court and Castle" missing image**
+  - Page: `/events/easter-holiday-activities-at-tretower-court-and-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Vale of Rheidol Railway" missing image**
+  - Page: `/events/easter-holiday-activities-at-vale-of-rheidol-railway`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Welsh Mountain Zoo" missing image**
+  - Page: `/events/easter-holiday-activities-at-welsh-mountain-zoo`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Welsh Wildlife Centre (Cilgerran)" missing image**
+  - Page: `/events/easter-holiday-activities-at-welsh-wildlife-centre-cilgerran`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Easter Holiday Activities at Zip World (Various)" missing image**
+  - Page: `/events/easter-holiday-activities-at-zip-world-various`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Eglwyswrw Show" missing image**
+  - Page: `/events/eglwyswrw-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Eisteddfod" missing image**
+  - Page: `/events/eisteddfod`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Elan Valley Dark Skies Events" missing image**
+  - Page: `/events/elan-valley-dark-skies-events`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Elvis Festival" missing image**
+  - Page: `/events/elvis-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Elvis Festival Porthcawl" missing image**
+  - Page: `/events/elvis-festival-porthcawl`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Erddig Easter Hunt Easter Egg Hunt" missing image**
+  - Page: `/events/erddig-easter-hunt-easter-egg-hunt`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Erddig Parkrun" missing image**
+  - Page: `/events/erddig-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Erwood Show" missing image**
+  - Page: `/events/erwood-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Escape into the Park" missing image**
+  - Page: `/events/escape-into-the-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Aberglasney Gardens" missing image**
+  - Page: `/events/february-half-term-trails-at-aberglasney-gardens`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Beaumaris Castle" missing image**
+  - Page: `/events/february-half-term-trails-at-beaumaris-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Big Pit National Coal Museum" missing image**
+  - Page: `/events/february-half-term-trails-at-big-pit-national-coal-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Bodnant Garden" missing image**
+  - Page: `/events/february-half-term-trails-at-bodnant-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Brecon Mountain Railway" missing image**
+  - Page: `/events/february-half-term-trails-at-brecon-mountain-railway`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Bryngarw Country Park" missing image**
+  - Page: `/events/february-half-term-trails-at-bryngarw-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Caernarfon Castle" missing image**
+  - Page: `/events/february-half-term-trails-at-caernarfon-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Caerphilly Castle" missing image**
+  - Page: `/events/february-half-term-trails-at-caerphilly-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Castell Coch" missing image**
+  - Page: `/events/february-half-term-trails-at-castell-coch`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Chepstow Castle" missing image**
+  - Page: `/events/february-half-term-trails-at-chepstow-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Chirk Castle" missing image**
+  - Page: `/events/february-half-term-trails-at-chirk-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Colby Woodland Garden" missing image**
+  - Page: `/events/february-half-term-trails-at-colby-woodland-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Conwy Castle" missing image**
+  - Page: `/events/february-half-term-trails-at-conwy-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Cosmeston Lakes Country Park" missing image**
+  - Page: `/events/february-half-term-trails-at-cosmeston-lakes-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Criccieth Castle" missing image**
+  - Page: `/events/february-half-term-trails-at-criccieth-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Denbigh Castle" missing image**
+  - Page: `/events/february-half-term-trails-at-denbigh-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Dinefwr" missing image**
+  - Page: `/events/february-half-term-trails-at-dinefwr`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Dyffryn Gardens" missing image**
+  - Page: `/events/february-half-term-trails-at-dyffryn-gardens`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Erddig" missing image**
+  - Page: `/events/february-half-term-trails-at-erddig`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Ffestiniog & Welsh Highland Railways" missing image**
+  - Page: `/events/february-half-term-trails-at-ffestiniog-welsh-highland-railways`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Folly Farm Adventure Park and Zoo" missing image**
+  - Page: `/events/february-half-term-trails-at-folly-farm-adventure-park-and-zoo`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Gigrin Farm Red Kite Feeding Centre" missing image**
+  - Page: `/events/february-half-term-trails-at-gigrin-farm-red-kite-feeding-centre`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Gnoll Estate Country Park" missing image**
+  - Page: `/events/february-half-term-trails-at-gnoll-estate-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Greenwood Family Park" missing image**
+  - Page: `/events/february-half-term-trails-at-greenwood-family-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Harlech Castle" missing image**
+  - Page: `/events/february-half-term-trails-at-harlech-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Kidwelly Castle" missing image**
+  - Page: `/events/february-half-term-trails-at-kidwelly-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Llanerchaeron" missing image**
+  - Page: `/events/february-half-term-trails-at-llanerchaeron`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Manor Wildlife Park" missing image**
+  - Page: `/events/february-half-term-trails-at-manor-wildlife-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Margam Country Park" missing image**
+  - Page: `/events/february-half-term-trails-at-margam-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at National Botanic Garden of Wales" missing image**
+  - Page: `/events/february-half-term-trails-at-national-botanic-garden-of-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at National Museum Cardiff" missing image**
+  - Page: `/events/february-half-term-trails-at-national-museum-cardiff`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at National Roman Legion Museum" missing image**
+  - Page: `/events/february-half-term-trails-at-national-roman-legion-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at National Showcaves Centre for Wales (Dan yr Ogof)" missing image**
+  - Page: `/events/february-half-term-trails-at-national-showcaves-centre-for-wales-dan-yr-ogof`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at National Slate Museum" missing image**
+  - Page: `/events/february-half-term-trails-at-national-slate-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at National Waterfront Museum" missing image**
+  - Page: `/events/february-half-term-trails-at-national-waterfront-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at National Wool Museum" missing image**
+  - Page: `/events/february-half-term-trails-at-national-wool-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Pembrey Country Park" missing image**
+  - Page: `/events/february-half-term-trails-at-pembrey-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Penrhyn Castle" missing image**
+  - Page: `/events/february-half-term-trails-at-penrhyn-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Plas Newydd House and Garden" missing image**
+  - Page: `/events/february-half-term-trails-at-plas-newydd-house-and-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Plas yn Rhiw" missing image**
+  - Page: `/events/february-half-term-trails-at-plas-yn-rhiw`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Powis Castle and Garden" missing image**
+  - Page: `/events/february-half-term-trails-at-powis-castle-and-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at RSPB Conwy" missing image**
+  - Page: `/events/february-half-term-trails-at-rspb-conwy`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at RSPB Lake Vyrnwy" missing image**
+  - Page: `/events/february-half-term-trails-at-rspb-lake-vyrnwy`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at RSPB Newport Wetlands" missing image**
+  - Page: `/events/february-half-term-trails-at-rspb-newport-wetlands`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at RSPB South Stack" missing image**
+  - Page: `/events/february-half-term-trails-at-rspb-south-stack`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at RSPB Ynys-hir" missing image**
+  - Page: `/events/february-half-term-trails-at-rspb-ynys-hir`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Raglan Castle" missing image**
+  - Page: `/events/february-half-term-trails-at-raglan-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Rhuddlan Castle" missing image**
+  - Page: `/events/february-half-term-trails-at-rhuddlan-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Skomer Island" missing image**
+  - Page: `/events/february-half-term-trails-at-skomer-island`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at St Davids Bishop's Palace" missing image**
+  - Page: `/events/february-half-term-trails-at-st-davids-bishop-s-palace`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at St Fagans National Museum of History" missing image**
+  - Page: `/events/february-half-term-trails-at-st-fagans-national-museum-of-history`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Stackpole Estate" missing image**
+  - Page: `/events/february-half-term-trails-at-stackpole-estate`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Talyllyn Railway" missing image**
+  - Page: `/events/february-half-term-trails-at-talyllyn-railway`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Tredegar House" missing image**
+  - Page: `/events/february-half-term-trails-at-tredegar-house`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Tretower Court and Castle" missing image**
+  - Page: `/events/february-half-term-trails-at-tretower-court-and-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Vale of Rheidol Railway" missing image**
+  - Page: `/events/february-half-term-trails-at-vale-of-rheidol-railway`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Welsh Mountain Zoo" missing image**
+  - Page: `/events/february-half-term-trails-at-welsh-mountain-zoo`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Welsh Wildlife Centre (Cilgerran)" missing image**
+  - Page: `/events/february-half-term-trails-at-welsh-wildlife-centre-cilgerran`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "February Half Term Trails at Zip World (Various)" missing image**
+  - Page: `/events/february-half-term-trails-at-zip-world-various`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festival No.6" missing image**
+  - Page: `/events/festival-no6`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Aberglasney Gardens" missing image**
+  - Page: `/events/festive-season-events-at-aberglasney-gardens`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Beaumaris Castle" missing image**
+  - Page: `/events/festive-season-events-at-beaumaris-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Big Pit National Coal Museum" missing image**
+  - Page: `/events/festive-season-events-at-big-pit-national-coal-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Bodnant Garden" missing image**
+  - Page: `/events/festive-season-events-at-bodnant-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Brecon Mountain Railway" missing image**
+  - Page: `/events/festive-season-events-at-brecon-mountain-railway`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Bryngarw Country Park" missing image**
+  - Page: `/events/festive-season-events-at-bryngarw-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Caernarfon Castle" missing image**
+  - Page: `/events/festive-season-events-at-caernarfon-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Caerphilly Castle" missing image**
+  - Page: `/events/festive-season-events-at-caerphilly-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Castell Coch" missing image**
+  - Page: `/events/festive-season-events-at-castell-coch`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Chepstow Castle" missing image**
+  - Page: `/events/festive-season-events-at-chepstow-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Chirk Castle" missing image**
+  - Page: `/events/festive-season-events-at-chirk-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Colby Woodland Garden" missing image**
+  - Page: `/events/festive-season-events-at-colby-woodland-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Conwy Castle" missing image**
+  - Page: `/events/festive-season-events-at-conwy-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Cosmeston Lakes Country Park" missing image**
+  - Page: `/events/festive-season-events-at-cosmeston-lakes-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Criccieth Castle" missing image**
+  - Page: `/events/festive-season-events-at-criccieth-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Denbigh Castle" missing image**
+  - Page: `/events/festive-season-events-at-denbigh-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Dinefwr" missing image**
+  - Page: `/events/festive-season-events-at-dinefwr`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Dyffryn Gardens" missing image**
+  - Page: `/events/festive-season-events-at-dyffryn-gardens`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Erddig" missing image**
+  - Page: `/events/festive-season-events-at-erddig`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Ffestiniog & Welsh Highland Railways" missing image**
+  - Page: `/events/festive-season-events-at-ffestiniog-welsh-highland-railways`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Folly Farm Adventure Park and Zoo" missing image**
+  - Page: `/events/festive-season-events-at-folly-farm-adventure-park-and-zoo`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Gigrin Farm Red Kite Feeding Centre" missing image**
+  - Page: `/events/festive-season-events-at-gigrin-farm-red-kite-feeding-centre`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Gnoll Estate Country Park" missing image**
+  - Page: `/events/festive-season-events-at-gnoll-estate-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Greenwood Family Park" missing image**
+  - Page: `/events/festive-season-events-at-greenwood-family-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Harlech Castle" missing image**
+  - Page: `/events/festive-season-events-at-harlech-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Kidwelly Castle" missing image**
+  - Page: `/events/festive-season-events-at-kidwelly-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Llanerchaeron" missing image**
+  - Page: `/events/festive-season-events-at-llanerchaeron`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Manor Wildlife Park" missing image**
+  - Page: `/events/festive-season-events-at-manor-wildlife-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Margam Country Park" missing image**
+  - Page: `/events/festive-season-events-at-margam-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at National Botanic Garden of Wales" missing image**
+  - Page: `/events/festive-season-events-at-national-botanic-garden-of-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at National Museum Cardiff" missing image**
+  - Page: `/events/festive-season-events-at-national-museum-cardiff`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at National Roman Legion Museum" missing image**
+  - Page: `/events/festive-season-events-at-national-roman-legion-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at National Showcaves Centre for Wales (Dan yr Ogof)" missing image**
+  - Page: `/events/festive-season-events-at-national-showcaves-centre-for-wales-dan-yr-ogof`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at National Slate Museum" missing image**
+  - Page: `/events/festive-season-events-at-national-slate-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at National Waterfront Museum" missing image**
+  - Page: `/events/festive-season-events-at-national-waterfront-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at National Wool Museum" missing image**
+  - Page: `/events/festive-season-events-at-national-wool-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Pembrey Country Park" missing image**
+  - Page: `/events/festive-season-events-at-pembrey-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Penrhyn Castle" missing image**
+  - Page: `/events/festive-season-events-at-penrhyn-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Plas Newydd House and Garden" missing image**
+  - Page: `/events/festive-season-events-at-plas-newydd-house-and-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Plas yn Rhiw" missing image**
+  - Page: `/events/festive-season-events-at-plas-yn-rhiw`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Powis Castle and Garden" missing image**
+  - Page: `/events/festive-season-events-at-powis-castle-and-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at RSPB Conwy" missing image**
+  - Page: `/events/festive-season-events-at-rspb-conwy`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at RSPB Lake Vyrnwy" missing image**
+  - Page: `/events/festive-season-events-at-rspb-lake-vyrnwy`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at RSPB Newport Wetlands" missing image**
+  - Page: `/events/festive-season-events-at-rspb-newport-wetlands`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at RSPB South Stack" missing image**
+  - Page: `/events/festive-season-events-at-rspb-south-stack`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at RSPB Ynys-hir" missing image**
+  - Page: `/events/festive-season-events-at-rspb-ynys-hir`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Raglan Castle" missing image**
+  - Page: `/events/festive-season-events-at-raglan-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Rhuddlan Castle" missing image**
+  - Page: `/events/festive-season-events-at-rhuddlan-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Skomer Island" missing image**
+  - Page: `/events/festive-season-events-at-skomer-island`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at St Davids Bishop's Palace" missing image**
+  - Page: `/events/festive-season-events-at-st-davids-bishop-s-palace`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at St Fagans National Museum of History" missing image**
+  - Page: `/events/festive-season-events-at-st-fagans-national-museum-of-history`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Stackpole Estate" missing image**
+  - Page: `/events/festive-season-events-at-stackpole-estate`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Talyllyn Railway" missing image**
+  - Page: `/events/festive-season-events-at-talyllyn-railway`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Tredegar House" missing image**
+  - Page: `/events/festive-season-events-at-tredegar-house`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Tretower Court and Castle" missing image**
+  - Page: `/events/festive-season-events-at-tretower-court-and-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Vale of Rheidol Railway" missing image**
+  - Page: `/events/festive-season-events-at-vale-of-rheidol-railway`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Welsh Mountain Zoo" missing image**
+  - Page: `/events/festive-season-events-at-welsh-mountain-zoo`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Welsh Wildlife Centre (Cilgerran)" missing image**
+  - Page: `/events/festive-season-events-at-welsh-wildlife-centre-cilgerran`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Festive Season Events at Zip World (Various)" missing image**
+  - Page: `/events/festive-season-events-at-zip-world-various`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Fire in the Mountain" missing image**
+  - Page: `/events/fire-in-the-mountain`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Fishguard 10k" missing image**
+  - Page: `/events/fishguard-10k`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Fishguard 5k" missing image**
+  - Page: `/events/fishguard-5k`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Fishguard Aquabike" missing image**
+  - Page: `/events/fishguard-aquabike`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Fishguard Farmers Market" missing image**
+  - Page: `/events/fishguard-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Fishguard Folk Festival" missing image**
+  - Page: `/events/fishguard-folk-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Fishguard Half Marathon" missing image**
+  - Page: `/events/fishguard-half-marathon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Fishguard International Music Festival" missing image**
+  - Page: `/events/fishguard-international-music-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Fishguard Kids Race" missing image**
+  - Page: `/events/fishguard-kids-race`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Fishguard Regatta" missing image**
+  - Page: `/events/fishguard-regatta`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Fishguard Show" missing image**
+  - Page: `/events/fishguard-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Fishguard Sprint Tri" missing image**
+  - Page: `/events/fishguard-sprint-tri`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Fishguard Swim" missing image**
+  - Page: `/events/fishguard-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Focus Wales" missing image**
+  - Page: `/events/focus-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Folly Farm Halloween Spooktacular" missing image**
+  - Page: `/events/folly-farm-halloween`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Folly Farm Summer Days" missing image**
+  - Page: `/events/folly-farm-summer`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Forage Farm Pumpkin Picking" missing image**
+  - Page: `/events/forage-farm-pumpkin-picking`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Freshwater West Open" missing image**
+  - Page: `/events/freshwater-west-open`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Gelligaer Farmers Hunt Show" missing image**
+  - Page: `/events/gelligaer-farmers-hunt-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Gladstone's Library Hearth Festival" missing image**
+  - Page: `/events/gladstone-s-library-hearth-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Gnoll Junior Parkrun" missing image**
+  - Page: `/events/gnoll-junior-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Gnoll Parkrun" missing image**
+  - Page: `/events/gnoll-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Gottwood Festival" missing image**
+  - Page: `/events/gottwood-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Gower Chilli Festival" missing image**
+  - Page: `/events/gower-chilli-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Gower Folk Festival" missing image**
+  - Page: `/events/gower-folk-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Gower Show" missing image**
+  - Page: `/events/gower-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Gower Swim Festival" missing image**
+  - Page: `/events/gower-swim-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Gower Walking Festival" missing image**
+  - Page: `/events/gower-walking-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Great British Food Festival - Margam Park" missing image**
+  - Page: `/events/great-british-food-margam`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "GreenWood Forest Park Summer Events" missing image**
+  - Page: `/events/greenwood-summer-events`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Greenwood Family Park Halloween" missing image**
+  - Page: `/events/greenwood-halloween`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Gregynog Festival" missing image**
+  - Page: `/events/gregynog-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Gregynog Music Festival" missing image**
+  - Page: `/events/gregynog-music-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Grom Search Wales" missing image**
+  - Page: `/events/grom-search-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Gwyl Fwyd Caernarfon" missing image**
+  - Page: `/events/gwyl-fwyd-caernarfon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Gwynfe Show" missing image**
+  - Page: `/events/gwynfe-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Gŵyl Fair y Canhwyllau" missing image**
+  - Page: `/events/g-yl-fair-y-canhwyllau`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Hafan Pwllheli Parkrun" missing image**
+  - Page: `/events/hafan-pwllheli-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Aberglasney Gardens" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-aberglasney-gardens`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Beaumaris Castle" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-beaumaris-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Big Pit National Coal Museum" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-big-pit-national-coal-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Bodnant Garden" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-bodnant-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Brecon Mountain Railway" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-brecon-mountain-railway`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Bryngarw Country Park" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-bryngarw-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Caernarfon Castle" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-caernarfon-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Caerphilly Castle" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-caerphilly-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Castell Coch" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-castell-coch`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Chepstow Castle" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-chepstow-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Chirk Castle" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-chirk-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Colby Woodland Garden" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-colby-woodland-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Conwy Castle" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-conwy-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Cosmeston Lakes Country Park" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-cosmeston-lakes-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Criccieth Castle" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-criccieth-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Denbigh Castle" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-denbigh-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Dinefwr" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-dinefwr`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Dyffryn Gardens" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-dyffryn-gardens`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Erddig" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-erddig`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Ffestiniog & Welsh Highland Railways" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-ffestiniog-welsh-highland-railways`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Folly Farm Adventure Park and Zoo" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-folly-farm-adventure-park-and-zoo`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Gigrin Farm Red Kite Feeding Centre" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-gigrin-farm-red-kite-feeding-centre`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Gnoll Estate Country Park" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-gnoll-estate-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Greenwood Family Park" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-greenwood-family-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Harlech Castle" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-harlech-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Kidwelly Castle" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-kidwelly-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Llanerchaeron" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-llanerchaeron`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Manor Wildlife Park" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-manor-wildlife-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Margam Country Park" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-margam-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at National Botanic Garden of Wales" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-national-botanic-garden-of-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at National Museum Cardiff" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-national-museum-cardiff`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at National Roman Legion Museum" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-national-roman-legion-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at National Showcaves Centre for Wales (Dan yr Ogof)" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-national-showcaves-centre-for-wales-dan-yr-ogof`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at National Slate Museum" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-national-slate-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at National Waterfront Museum" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-national-waterfront-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at National Wool Museum" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-national-wool-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Pembrey Country Park" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-pembrey-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Penrhyn Castle" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-penrhyn-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Plas Newydd House and Garden" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-plas-newydd-house-and-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Plas yn Rhiw" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-plas-yn-rhiw`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Powis Castle and Garden" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-powis-castle-and-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at RSPB Conwy" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-rspb-conwy`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at RSPB Lake Vyrnwy" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-rspb-lake-vyrnwy`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at RSPB Newport Wetlands" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-rspb-newport-wetlands`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at RSPB South Stack" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-rspb-south-stack`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at RSPB Ynys-hir" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-rspb-ynys-hir`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Raglan Castle" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-raglan-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Rhuddlan Castle" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-rhuddlan-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Skomer Island" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-skomer-island`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at St Davids Bishop's Palace" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-st-davids-bishop-s-palace`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at St Fagans National Museum of History" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-st-fagans-national-museum-of-history`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Stackpole Estate" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-stackpole-estate`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Talyllyn Railway" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-talyllyn-railway`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Tredegar House" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-tredegar-house`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Tretower Court and Castle" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-tretower-court-and-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Vale of Rheidol Railway" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-vale-of-rheidol-railway`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Welsh Mountain Zoo" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-welsh-mountain-zoo`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Welsh Wildlife Centre (Cilgerran)" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-welsh-wildlife-centre-cilgerran`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Halloween and Autumn Trails at Zip World (Various)" missing image**
+  - Page: `/events/halloween-and-autumn-trails-at-zip-world-various`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Hammerfest" missing image**
+  - Page: `/events/hammerfest`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Hamper Llangollen" missing image**
+  - Page: `/events/hamper-llangollen`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Harlech Triathlon" missing image**
+  - Page: `/events/harlech-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Haverfordwest Beer and Cider Festival" missing image**
+  - Page: `/events/haverfordwest-beer-and-cider-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Haverfordwest Farmers Market" missing image**
+  - Page: `/events/haverfordwest-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Haverfordwest Parkrun" missing image**
+  - Page: `/events/haverfordwest-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Hay Bike Fest" missing image**
+  - Page: `/events/hay-bike-fest`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Hay Festival" missing image**
+  - Page: `/events/hay-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Hay Festival Winter Weekend" missing image**
+  - Page: `/events/hay-festival-winter-weekend`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Hay Walking Festival" missing image**
+  - Page: `/events/hay-walking-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Hay-on-Wye Farmers Market" missing image**
+  - Page: `/events/hay-on-wye-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Hayscastle Show" missing image**
+  - Page: `/events/hayscastle-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Holyhead Breakwater Swim" missing image**
+  - Page: `/events/holyhead-breakwater-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Holyhead Maritime Festival" missing image**
+  - Page: `/events/holyhead-maritime-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Holyhead Sailing Festival" missing image**
+  - Page: `/events/holyhead-sailing`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "HowTheLightGetsIn" missing image**
+  - Page: `/events/howthelightgetsin`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "HowTheLightGetsIn Festival" missing image**
+  - Page: `/events/howthelightgetsin-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Hub Festival" missing image**
+  - Page: `/events/hub-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "In It Together Festival" missing image**
+  - Page: `/events/in-it-together-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Inside Out Festival" missing image**
+  - Page: `/events/inside-out-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "International Film Festival of Wales" missing image**
+  - Page: `/events/international-film-festival-of-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Iris Prize Festival" missing image**
+  - Page: `/events/iris-prize-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Jesus Surf Classic Wales" missing image**
+  - Page: `/events/jesus-surf-classic-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Jones o Gymru Anglesey Half Marathon 2026" missing image**
+  - Page: `/events/jones-o-gymru-anglesey-half-marathon-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Junior Parkrun at Plas Newydd" missing image**
+  - Page: `/events/junior-parkrun-at-plas-newydd`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Kallida Festival" missing image**
+  - Page: `/events/kallida-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Keeston Show" missing image**
+  - Page: `/events/keeston-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Kendall Mountain Festival Tour (Wales)" missing image**
+  - Page: `/events/kendall-mountain-festival-tour-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Kenfig Hill & Pyle Agricultural Show" missing image**
+  - Page: `/events/kenfig-hill-pyle-agricultural-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Kington Walking Festival" missing image**
+  - Page: `/events/kington-walking-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Knighton Show" missing image**
+  - Page: `/events/knighton-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Kotatsu Japanese Animation Festival" missing image**
+  - Page: `/events/kotatsu-japanese-animation-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "LC Kinder" missing image**
+  - Page: `/events/lc-kinder`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "LCW Wales" missing image**
+  - Page: `/events/lcw-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Lampeter Beer Festival" missing image**
+  - Page: `/events/lampeter-beer-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Lampeter Food Festival" missing image**
+  - Page: `/events/lampeter-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Lampeter Show" missing image**
+  - Page: `/events/lampeter-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Lampeter Stallion Show" missing image**
+  - Page: `/events/lampeter-stallion-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Land of the Tres" missing image**
+  - Page: `/events/land-of-the-tres`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Laugharne Weekend" missing image**
+  - Page: `/events/laugharne-weekend`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Let&#039;s Rock" missing image**
+  - Page: `/events/let-039-s-rock`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Lido Ponty Cold Water Swim" missing image**
+  - Page: `/events/lido-ponty-cold`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llanafan Fawr Show" missing image**
+  - Page: `/events/llanafan-fawr-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llanbadarn Fynydd Show" missing image**
+  - Page: `/events/llanbadarn-fynydd-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llanberis Mountain Film Festival" missing image**
+  - Page: `/events/llanberis-mountain-film-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandaff Regatta" missing image**
+  - Page: `/events/llandaff-regatta`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llanddarog Show" missing image**
+  - Page: `/events/llanddarog-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandegfedd Pinewood Regatta" missing image**
+  - Page: `/events/llandegfedd-pinewood`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandeilo Farmers Market" missing image**
+  - Page: `/events/llandeilo-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandeilo Festival of Senses" missing image**
+  - Page: `/events/llandeilo-festival-of-senses`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandeilo Lit Fest" missing image**
+  - Page: `/events/llandeilo-lit-fest`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandeloy Show" missing image**
+  - Page: `/events/llandeloy-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandovery Sheep Festival" missing image**
+  - Page: `/events/llandovery-sheep-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandrindod Wells Farmers Market" missing image**
+  - Page: `/events/llandrindod-wells-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandrindod Wells Show" missing image**
+  - Page: `/events/llandrindod-wells-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandrindod Wells Victorian Festival" missing image**
+  - Page: `/events/llandrindod-wells-victorian-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandudno Boxing Day Dip" missing image**
+  - Page: `/events/llandudno-boxing-day-dip`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandudno Christmas Parade" missing image**
+  - Page: `/events/llandudno-christmas-parade`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandudno Fireworks Fireworks Display" missing image**
+  - Page: `/events/llandudno-fireworks-fireworks-display`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandudno Santa Dash Santa Fun Run" missing image**
+  - Page: `/events/llandudno-santa-dash-santa-fun-run`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandudno Sea Rowing" missing image**
+  - Page: `/events/llandudno-sea-rowing`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandudno Sprint" missing image**
+  - Page: `/events/llandudno-sprint-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandudno Triathlon" missing image**
+  - Page: `/events/llandudno-triathlon-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandudno Victorian Extravaganza" missing image**
+  - Page: `/events/llandudno-victorian-extravaganza`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandyfaelog Show" missing image**
+  - Page: `/events/llandyfaelog-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llandysul Show" missing image**
+  - Page: `/events/llandysul-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llanelli Coast Parkrun" missing image**
+  - Page: `/events/llanelli-coast-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llanelli Junior Parkrun" missing image**
+  - Page: `/events/llanelli-junior-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llanelli Sprint Triathlon" missing image**
+  - Page: `/events/llanelli-sprint-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llanerchaeron Easter Hunt Easter Egg Hunt" missing image**
+  - Page: `/events/llanerchaeron-easter-hunt-easter-egg-hunt`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llangadog Show" missing image**
+  - Page: `/events/llangadog-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llangollen Balloon Festival" missing image**
+  - Page: `/events/llangollen-balloon-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llangollen Canoe Festival" missing image**
+  - Page: `/events/llangollen-canoe-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llangollen Food Festival" missing image**
+  - Page: `/events/llangollen-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llangollen Fringe Festival" missing image**
+  - Page: `/events/llangollen-fringe-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llangollen International Musical Eisteddfod" missing image**
+  - Page: `/events/llangollen-international-musical-eisteddfod`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llangollen International Musical Eisteddfod" missing image**
+  - Page: `/events/llangollen-international-eisteddfod`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llangynidr Agricultural Show" missing image**
+  - Page: `/events/llangynidr-agricultural-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llanigon Show" missing image**
+  - Page: `/events/llanigon-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llansawel Show" missing image**
+  - Page: `/events/llansawel-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llantrisant & District Show" missing image**
+  - Page: `/events/llantrisant-district-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llanwrthwl Show" missing image**
+  - Page: `/events/llanwrthwl-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llanwrtyd Wells Walking Festival" missing image**
+  - Page: `/events/llanwrtyd-wells-walking-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llyn Llech Owain Parkrun" missing image**
+  - Page: `/events/llyn-llech-owain-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Llyn Padarn Swim" missing image**
+  - Page: `/events/llyn-padarn-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Long Course Weekend" missing image**
+  - Page: `/events/long-course-weekend`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Long Course Weekend Swim" missing image**
+  - Page: `/events/lcw-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Love SwimRun Holy Island" missing image**
+  - Page: `/events/love-swimrun-holy-island`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Love SwimRun Llanberis" missing image**
+  - Page: `/events/love-swimrun-llanberis`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Love Trails Festival" missing image**
+  - Page: `/events/love-trails-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Luminate Wales Winter Light Trail" missing image**
+  - Page: `/events/luminate-wales-margam`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Machen Agricultural Show" missing image**
+  - Page: `/events/machen-agricultural-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Machynlleth Comedy Festival" missing image**
+  - Page: `/events/machynlleth-comedy-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Machynlleth Farmers Market" missing image**
+  - Page: `/events/machynlleth-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Machynlleth Festival" missing image**
+  - Page: `/events/machynlleth-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Machynlleth Music Festival" missing image**
+  - Page: `/events/machynlleth-music-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Maesteg Parkrun" missing image**
+  - Page: `/events/maesteg-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Man vs Coast" missing image**
+  - Page: `/events/man-vs-coast`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Man vs Mountain" missing image**
+  - Page: `/events/man-vs-mountain`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Manorfon Farm Pumpkin Picking" missing image**
+  - Page: `/events/manorfon-farm-pumpkin-picking`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Martletwy Show" missing image**
+  - Page: `/events/martletwy-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Mawddach Paddlesport Festival" missing image**
+  - Page: `/events/mawddach-paddle-fest`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Menai Seafood Festival" missing image**
+  - Page: `/events/menai-seafood-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Menai Strait Regattas" missing image**
+  - Page: `/events/menai-strait-regattas`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Merthyr Food Festival" missing image**
+  - Page: `/events/merthyr-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Merthyr Junior Parkrun" missing image**
+  - Page: `/events/merthyr-junior-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Merthyr Rising" missing image**
+  - Page: `/events/merthyr-rising`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Merthyr Rising Festival" missing image**
+  - Page: `/events/merthyr-rising-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Merthyr Santa Run Santa Fun Run" missing image**
+  - Page: `/events/merthyr-santa-run-santa-fun-run`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Merthyr Tydfil Parkrun" missing image**
+  - Page: `/events/merthyr-tydfil-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Mid Wales Beer Festival" missing image**
+  - Page: `/events/mid-wales-beer-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Milford Haven Fireworks Fireworks Display" missing image**
+  - Page: `/events/milford-haven-fireworks-fireworks-display`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Mold Blues & Soul Festival" missing image**
+  - Page: `/events/mold-blues-soul-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Mold Food & Drink Festival" missing image**
+  - Page: `/events/mold-food-drink-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Mold Food and Drink Festival" missing image**
+  - Page: `/events/mold-food-and-drink-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Monmouth Aquathlon" missing image**
+  - Page: `/events/monmouth-aquathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Monmouth Farmers Market" missing image**
+  - Page: `/events/monmouth-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Monmouth Festival" missing image**
+  - Page: `/events/monmouth-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Monmouth Raft Race" missing image**
+  - Page: `/events/monmouth-raft-race`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Monmouth Regatta" missing image**
+  - Page: `/events/monmouth-regatta`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Monmouthshire Food Festival" missing image**
+  - Page: `/events/monmouthshire-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Monmouthshire Show" missing image**
+  - Page: `/events/monmouthshire-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Monmouthshire Walking Festival" missing image**
+  - Page: `/events/monmouthshire-walking-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Morfa Nefyn NYD Dip" missing image**
+  - Page: `/events/morfa-nefyn-nyd-dip`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Mumbles Aquabike" missing image**
+  - Page: `/events/mumbles-aquabike`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Mumbles Duathlon" missing image**
+  - Page: `/events/mumbles-duathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Mumbles Farmers Market" missing image**
+  - Page: `/events/mumbles-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Mumbles Oyster Festival" missing image**
+  - Page: `/events/mumbles-oyster-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Mumbles Sprint" missing image**
+  - Page: `/events/mumbles-sprint-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Mumbles Swim" missing image**
+  - Page: `/events/mumbles-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Mumbles Swim" missing image**
+  - Page: `/events/mumbles-swim-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Mumbles Triathlon" missing image**
+  - Page: `/events/mumbles-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Mumbles Triathlon" missing image**
+  - Page: `/events/mumbles-triathlon-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Myddfai Show" missing image**
+  - Page: `/events/myddfai-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Nant y Pandy Parkrun" missing image**
+  - Page: `/events/nant-y-pandy-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Narberth A Cappella Voice Festival" missing image**
+  - Page: `/events/narberth-a-cappella-voice-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Narberth Food Festival" missing image**
+  - Page: `/events/narberth-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "National Eisteddfod" missing image**
+  - Page: `/events/national-eisteddfod`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "National Eisteddfod of Wales" missing image**
+  - Page: `/events/national-eisteddfod-of-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "National Trust Easter Egg Hunts Wales" missing image**
+  - Page: `/events/national-trust-easter-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Neath Comedy Festival" missing image**
+  - Page: `/events/neath-comedy-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Neath Food and Drink Festival" missing image**
+  - Page: `/events/neath-food-and-drink-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Nevern Show" missing image**
+  - Page: `/events/nevern-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "New Quay Music Festival" missing image**
+  - Page: `/events/new-quay-music-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Newborough Forest Parkrun" missing image**
+  - Page: `/events/newborough-forest-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Newport Food Festival" missing image**
+  - Page: `/events/newport-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Newport Junior Parkrun" missing image**
+  - Page: `/events/newport-junior-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Newport Parkrun" missing image**
+  - Page: `/events/newport-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Newport Regatta" missing image**
+  - Page: `/events/newport-regatta`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Newport Wetlands Guided Walks" missing image**
+  - Page: `/events/newport-wetlands-guided-walks`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Newtown Farmers Market" missing image**
+  - Page: `/events/newtown-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Newtown Food Festival" missing image**
+  - Page: `/events/newtown-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Newtown Junior Parkrun" missing image**
+  - Page: `/events/newtown-junior-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Newtown Parkrun" missing image**
+  - Page: `/events/newtown-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Newtown Santa Run Santa Fun Run" missing image**
+  - Page: `/events/newtown-santa-run-santa-fun-run`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Newtown Triathlon" missing image**
+  - Page: `/events/newtown-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Nick Beer Llandudno 10k 2026" missing image**
+  - Page: `/events/nick-beer-llandudno-10k-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Nolton & Roch Show" missing image**
+  - Page: `/events/nolton-roch-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "North Wales International Music Festival" missing image**
+  - Page: `/events/north-wales-international-music-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "North Wales Pride" missing image**
+  - Page: `/events/north-wales-pride`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Ocean Film Festival Tour (Wales)" missing image**
+  - Page: `/events/ocean-film-festival-tour-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Ogwen | Yr Helgi Du 2026" missing image**
+  - Page: `/events/ogwen-yr-helgi-du-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Open5 Adventure Race" missing image**
+  - Page: `/events/open5-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pembroke Farmers Market" missing image**
+  - Page: `/events/pembroke-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pembroke Farmers Show" missing image**
+  - Page: `/events/pembroke-farmers-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pembrokeshire Coast Triathlon" missing image**
+  - Page: `/events/pembrokeshire-coast-tri`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pembrokeshire County Show" missing image**
+  - Page: `/events/pembrokeshire-county-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pembrokeshire Fish Week" missing image**
+  - Page: `/events/pembrokeshire-fish-week`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pembrokeshire Pumpkins Pumpkin Picking" missing image**
+  - Page: `/events/pembrokeshire-pumpkins-pumpkin-picking`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Penallta Parkrun" missing image**
+  - Page: `/events/penallta-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Penrhyn Castle Easter Hunt Easter Egg Hunt" missing image**
+  - Page: `/events/penrhyn-castle-easter-hunt-easter-egg-hunt`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Penrhyn Parkrun" missing image**
+  - Page: `/events/penrhyn-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Penybont Show" missing image**
+  - Page: `/events/penybont-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Plas Newydd Easter Hunt Easter Egg Hunt" missing image**
+  - Page: `/events/plas-newydd-easter-hunt-easter-egg-hunt`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pontardawe Festival" missing image**
+  - Page: `/events/pontardawe-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pontarddulais Agricultural Show" missing image**
+  - Page: `/events/pontarddulais-agricultural-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pontypool Parkrun" missing image**
+  - Page: `/events/pontypool-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pontypool Santa Run Santa Fun Run" missing image**
+  - Page: `/events/pontypool-santa-run-santa-fun-run`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pontypridd Big Bite" missing image**
+  - Page: `/events/pontypridd-big-bite`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pontypridd Fireworks Fireworks Display" missing image**
+  - Page: `/events/pontypridd-fireworks-fireworks-display`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pontypridd Junior Parkrun" missing image**
+  - Page: `/events/pontypridd-junior-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pontypridd Parkrun" missing image**
+  - Page: `/events/pontypridd-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Porthcawl 10K" missing image**
+  - Page: `/events/porthcawl-10k`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Porthcawl 10K 2026" missing image**
+  - Page: `/events/porthcawl-10k-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Porthcawl Christmas Day Swim" missing image**
+  - Page: `/events/porthcawl-christmas-day-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Porthcawl Christmas Swim" missing image**
+  - Page: `/events/porthcawl-christmas-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Porthcawl Jazz Festival" missing image**
+  - Page: `/events/porthcawl-jazz-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Porthcawl Junior Parkrun" missing image**
+  - Page: `/events/porthcawl-junior-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Porthcawl Longboard Classic" missing image**
+  - Page: `/events/porthcawl-longboard-classic`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Porthcawl Parkrun" missing image**
+  - Page: `/events/porthcawl-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Porthcawl Triathlon" missing image**
+  - Page: `/events/porthcawl-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Portmeirion Food & Craft Fair" missing image**
+  - Page: `/events/portmeirion-food-craft-fair`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Portmeirion Food and Craft Fair" missing image**
+  - Page: `/events/portmeirion-food-and-craft-fair`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Powell's Farm Pumpkin Picking" missing image**
+  - Page: `/events/powell-s-farm-pumpkin-picking`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Powis Castle Easter Hunt Easter Egg Hunt" missing image**
+  - Page: `/events/powis-castle-easter-hunt-easter-egg-hunt`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Prestatyn Walking Festival" missing image**
+  - Page: `/events/prestatyn-walking-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Presteigne & Norton Show" missing image**
+  - Page: `/events/presteigne-norton-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Presteigne Festival" missing image**
+  - Page: `/events/presteigne-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pride Cymru" missing image**
+  - Page: `/events/pride-cymru`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pumsaint Show" missing image**
+  - Page: `/events/pumsaint-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Pwllheli Regatta" missing image**
+  - Page: `/events/pwllheli-regatta`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Quest Wales" missing image**
+  - Page: `/events/quest-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "RSPB Conwy Guided Walks" missing image**
+  - Page: `/events/rspb-conwy-guided-walks`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Rabbit Run Wales" missing image**
+  - Page: `/events/rabbit-run-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Rabbit Run Wales 2026" missing image**
+  - Page: `/events/rabbit-run-wales-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Radnor Valley Show" missing image**
+  - Page: `/events/radnor-valley-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Real Ale Ramble" missing image**
+  - Page: `/events/real-ale-ramble`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Real Ale Wobble" missing image**
+  - Page: `/events/real-ale-wobble`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Red Bull Cliff Diving" missing image**
+  - Page: `/events/red-bull-cliff-diving`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Rhandirmwyn Show" missing image**
+  - Page: `/events/rhandirmwyn-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Rhayader Show" missing image**
+  - Page: `/events/rhayader-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Rhyl Air Show" missing image**
+  - Page: `/events/rhyl-air-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Rhyl Boxing Day Dip" missing image**
+  - Page: `/events/rhyl-boxing-day-dip`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "River Wye Canoe Race" missing image**
+  - Page: `/events/river-wye-canoe-race`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Rock the Park Wrexham" missing image**
+  - Page: `/events/rock-the-park-wrexham`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Rogiet Parkrun" missing image**
+  - Page: `/events/rogiet-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Royal Welsh Agricultural Show" missing image**
+  - Page: `/events/royal-welsh-agricultural-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Royal Welsh Show" missing image**
+  - Page: `/events/royal-welsh-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Royal Welsh Smallholding and Countryside Festival" missing image**
+  - Page: `/events/royal-welsh-smallholding-and-countryside-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Royal Welsh Spring Festival" missing image**
+  - Page: `/events/royal-welsh-spring-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Royal Welsh Winter Fair" missing image**
+  - Page: `/events/royal-welsh-winter-fair`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Ruthin Festival" missing image**
+  - Page: `/events/ruthin-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Ruthin Triathlon" missing image**
+  - Page: `/events/ruthin-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "SUP Gower Paddle" missing image**
+  - Page: `/events/sup-gower-paddle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Sandman Legend" missing image**
+  - Page: `/events/sandman-legend-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Sandman Sprint" missing image**
+  - Page: `/events/sandman-sprint-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Sandman Triathlon" missing image**
+  - Page: `/events/sandman-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Santa Express Welsh Highland Railway" missing image**
+  - Page: `/events/santa-express-welsh-highland`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Saundersfoot NYD Swim" missing image**
+  - Page: `/events/saundersfoot-nyd-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Saundersfoot New Year's Day Swim" missing image**
+  - Page: `/events/saundersfoot-new-year-s-day-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Saundersfoot Regatta" missing image**
+  - Page: `/events/saundersfoot-regatta`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Saundersfoot Sprint" missing image**
+  - Page: `/events/saundersfoot-sprint-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Saundersfoot Swim" missing image**
+  - Page: `/events/saundersfoot-swim-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Saundersfoot Swim" missing image**
+  - Page: `/events/saundersfoot-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Saundersfoot Triathlon" missing image**
+  - Page: `/events/saundersfoot-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Saundersfoot Triathlon" missing image**
+  - Page: `/events/saundersfoot-triathlon-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at Bryngarw Country Park" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-bryngarw-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at Cosmeston Lakes Country Park" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-cosmeston-lakes-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at Gigrin Farm Red Kite Feeding Centre" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-gigrin-farm-red-kite-feeding-centre`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at Gnoll Estate Country Park" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-gnoll-estate-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at Margam Country Park" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-margam-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at National Showcaves Centre for Wales (Dan yr Ogof)" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-national-showcaves-centre-for-wales-dan-yr-ogof`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at Pembrey Country Park" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-pembrey-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at RSPB Conwy" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-rspb-conwy`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at RSPB Lake Vyrnwy" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-rspb-lake-vyrnwy`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at RSPB Newport Wetlands" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-rspb-newport-wetlands`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at RSPB South Stack" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-rspb-south-stack`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at RSPB Ynys-hir" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-rspb-ynys-hir`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at Skomer Island" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-skomer-island`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at Stackpole Estate" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-stackpole-estate`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at Welsh Mountain Zoo" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-welsh-mountain-zoo`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Seasonal Wildlife Spotting at Welsh Wildlife Centre (Cilgerran)" missing image**
+  - Page: `/events/seasonal-wildlife-spotting-at-welsh-wildlife-centre-cilgerran`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Secret Santa Series" missing image**
+  - Page: `/events/secret-santa-series`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Sennybridge Show" missing image**
+  - Page: `/events/sennybridge-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Sesiwn Fawr Dolgellau" missing image**
+  - Page: `/events/sesiwn-fawr-dolgellau`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Severn Bridge Parkrun" missing image**
+  - Page: `/events/severn-bridge-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Sinemaes" missing image**
+  - Page: `/events/sinemaes`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Slateman Legend" missing image**
+  - Page: `/events/slateman-legend-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Slateman Savage" missing image**
+  - Page: `/events/slateman-savage`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Slateman Sprint" missing image**
+  - Page: `/events/slateman-sprint-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Snowdonia Outdoor Festival" missing image**
+  - Page: `/events/snowdonia-outdoor-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Snowdonia Trail Marathon Eryri" missing image**
+  - Page: `/events/snowdonia-trail-marathon-eryri`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Snowdonia Trail Marathon Eryri 2026" missing image**
+  - Page: `/events/snowdonia-trail-marathon-eryri-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Snowman Legend" missing image**
+  - Page: `/events/snowman-legend-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Snowman Savage" missing image**
+  - Page: `/events/snowman-savage`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Snowman Sprint" missing image**
+  - Page: `/events/snowman-sprint-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Snowman Triathlon" missing image**
+  - Page: `/events/snowman-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Solva Swim" missing image**
+  - Page: `/events/solva-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "South Pembrokeshire Hunt Show" missing image**
+  - Page: `/events/south-pembrokeshire-hunt-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "St Clears Show" missing image**
+  - Page: `/events/st-clears-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "St David's Day Celebrations" missing image**
+  - Page: `/events/st-davids-day-celebrations`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "St Davids Cathedral Festival" missing image**
+  - Page: `/events/st-davids-cathedral-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "St Davids Farmers Market" missing image**
+  - Page: `/events/st-davids-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "St. Harmon Show" missing image**
+  - Page: `/events/st-harmon-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Stackpole Easter Hunt Easter Egg Hunt" missing image**
+  - Page: `/events/stackpole-easter-hunt-easter-egg-hunt`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Stackpole Striders" missing image**
+  - Page: `/events/stackpole-striders`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Steelhouse Festival" missing image**
+  - Page: `/events/steelhouse-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Aberglasney Gardens" missing image**
+  - Page: `/events/summer-holiday-adventures-at-aberglasney-gardens`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Beaumaris Castle" missing image**
+  - Page: `/events/summer-holiday-adventures-at-beaumaris-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Big Pit National Coal Museum" missing image**
+  - Page: `/events/summer-holiday-adventures-at-big-pit-national-coal-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Bodnant Garden" missing image**
+  - Page: `/events/summer-holiday-adventures-at-bodnant-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Brecon Mountain Railway" missing image**
+  - Page: `/events/summer-holiday-adventures-at-brecon-mountain-railway`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Bryngarw Country Park" missing image**
+  - Page: `/events/summer-holiday-adventures-at-bryngarw-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Caernarfon Castle" missing image**
+  - Page: `/events/summer-holiday-adventures-at-caernarfon-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Caerphilly Castle" missing image**
+  - Page: `/events/summer-holiday-adventures-at-caerphilly-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Castell Coch" missing image**
+  - Page: `/events/summer-holiday-adventures-at-castell-coch`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Chepstow Castle" missing image**
+  - Page: `/events/summer-holiday-adventures-at-chepstow-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Chirk Castle" missing image**
+  - Page: `/events/summer-holiday-adventures-at-chirk-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Colby Woodland Garden" missing image**
+  - Page: `/events/summer-holiday-adventures-at-colby-woodland-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Conwy Castle" missing image**
+  - Page: `/events/summer-holiday-adventures-at-conwy-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Cosmeston Lakes Country Park" missing image**
+  - Page: `/events/summer-holiday-adventures-at-cosmeston-lakes-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Criccieth Castle" missing image**
+  - Page: `/events/summer-holiday-adventures-at-criccieth-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Denbigh Castle" missing image**
+  - Page: `/events/summer-holiday-adventures-at-denbigh-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Dinefwr" missing image**
+  - Page: `/events/summer-holiday-adventures-at-dinefwr`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Dyffryn Gardens" missing image**
+  - Page: `/events/summer-holiday-adventures-at-dyffryn-gardens`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Erddig" missing image**
+  - Page: `/events/summer-holiday-adventures-at-erddig`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Ffestiniog & Welsh Highland Railways" missing image**
+  - Page: `/events/summer-holiday-adventures-at-ffestiniog-welsh-highland-railways`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Folly Farm Adventure Park and Zoo" missing image**
+  - Page: `/events/summer-holiday-adventures-at-folly-farm-adventure-park-and-zoo`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Gigrin Farm Red Kite Feeding Centre" missing image**
+  - Page: `/events/summer-holiday-adventures-at-gigrin-farm-red-kite-feeding-centre`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Gnoll Estate Country Park" missing image**
+  - Page: `/events/summer-holiday-adventures-at-gnoll-estate-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Greenwood Family Park" missing image**
+  - Page: `/events/summer-holiday-adventures-at-greenwood-family-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Harlech Castle" missing image**
+  - Page: `/events/summer-holiday-adventures-at-harlech-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Kidwelly Castle" missing image**
+  - Page: `/events/summer-holiday-adventures-at-kidwelly-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Llanerchaeron" missing image**
+  - Page: `/events/summer-holiday-adventures-at-llanerchaeron`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Manor Wildlife Park" missing image**
+  - Page: `/events/summer-holiday-adventures-at-manor-wildlife-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Margam Country Park" missing image**
+  - Page: `/events/summer-holiday-adventures-at-margam-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at National Botanic Garden of Wales" missing image**
+  - Page: `/events/summer-holiday-adventures-at-national-botanic-garden-of-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at National Museum Cardiff" missing image**
+  - Page: `/events/summer-holiday-adventures-at-national-museum-cardiff`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at National Roman Legion Museum" missing image**
+  - Page: `/events/summer-holiday-adventures-at-national-roman-legion-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at National Showcaves Centre for Wales (Dan yr Ogof)" missing image**
+  - Page: `/events/summer-holiday-adventures-at-national-showcaves-centre-for-wales-dan-yr-ogof`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at National Slate Museum" missing image**
+  - Page: `/events/summer-holiday-adventures-at-national-slate-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at National Waterfront Museum" missing image**
+  - Page: `/events/summer-holiday-adventures-at-national-waterfront-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at National Wool Museum" missing image**
+  - Page: `/events/summer-holiday-adventures-at-national-wool-museum`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Pembrey Country Park" missing image**
+  - Page: `/events/summer-holiday-adventures-at-pembrey-country-park`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Penrhyn Castle" missing image**
+  - Page: `/events/summer-holiday-adventures-at-penrhyn-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Plas Newydd House and Garden" missing image**
+  - Page: `/events/summer-holiday-adventures-at-plas-newydd-house-and-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Plas yn Rhiw" missing image**
+  - Page: `/events/summer-holiday-adventures-at-plas-yn-rhiw`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Powis Castle and Garden" missing image**
+  - Page: `/events/summer-holiday-adventures-at-powis-castle-and-garden`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at RSPB Conwy" missing image**
+  - Page: `/events/summer-holiday-adventures-at-rspb-conwy`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at RSPB Lake Vyrnwy" missing image**
+  - Page: `/events/summer-holiday-adventures-at-rspb-lake-vyrnwy`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at RSPB Newport Wetlands" missing image**
+  - Page: `/events/summer-holiday-adventures-at-rspb-newport-wetlands`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at RSPB South Stack" missing image**
+  - Page: `/events/summer-holiday-adventures-at-rspb-south-stack`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at RSPB Ynys-hir" missing image**
+  - Page: `/events/summer-holiday-adventures-at-rspb-ynys-hir`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Raglan Castle" missing image**
+  - Page: `/events/summer-holiday-adventures-at-raglan-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Rhuddlan Castle" missing image**
+  - Page: `/events/summer-holiday-adventures-at-rhuddlan-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Skomer Island" missing image**
+  - Page: `/events/summer-holiday-adventures-at-skomer-island`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at St Davids Bishop's Palace" missing image**
+  - Page: `/events/summer-holiday-adventures-at-st-davids-bishop-s-palace`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at St Fagans National Museum of History" missing image**
+  - Page: `/events/summer-holiday-adventures-at-st-fagans-national-museum-of-history`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Stackpole Estate" missing image**
+  - Page: `/events/summer-holiday-adventures-at-stackpole-estate`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Talyllyn Railway" missing image**
+  - Page: `/events/summer-holiday-adventures-at-talyllyn-railway`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Tredegar House" missing image**
+  - Page: `/events/summer-holiday-adventures-at-tredegar-house`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Tretower Court and Castle" missing image**
+  - Page: `/events/summer-holiday-adventures-at-tretower-court-and-castle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Vale of Rheidol Railway" missing image**
+  - Page: `/events/summer-holiday-adventures-at-vale-of-rheidol-railway`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Welsh Mountain Zoo" missing image**
+  - Page: `/events/summer-holiday-adventures-at-welsh-mountain-zoo`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Welsh Wildlife Centre (Cilgerran)" missing image**
+  - Page: `/events/summer-holiday-adventures-at-welsh-wildlife-centre-cilgerran`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Summer Holiday Adventures at Zip World (Various)" missing image**
+  - Page: `/events/summer-holiday-adventures-at-zip-world-various`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Superfeet Sandman" missing image**
+  - Page: `/events/superfeet-sandman`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea 5K" missing image**
+  - Page: `/events/swansea-5k`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea Bay Beer & Cider Festival" missing image**
+  - Page: `/events/swansea-bay-beer-cider-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea Bay Film Festival" missing image**
+  - Page: `/events/swansea-bay-film-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea Bay Parkrun" missing image**
+  - Page: `/events/swansea-bay-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea Christmas Market" missing image**
+  - Page: `/events/swansea-christmas-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea Fireworks Display" missing image**
+  - Page: `/events/swansea-fireworks-display`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea Fringe" missing image**
+  - Page: `/events/swansea-fringe`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea International Jazz Festival" missing image**
+  - Page: `/events/swansea-international-jazz-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea Junior Parkrun" missing image**
+  - Page: `/events/swansea-junior-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea Marina Farmers Market" missing image**
+  - Page: `/events/swansea-marina-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea Pride" missing image**
+  - Page: `/events/swansea-pride`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea Santa Run Santa Fun Run" missing image**
+  - Page: `/events/swansea-santa-run-santa-fun-run`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea Swim" missing image**
+  - Page: `/events/swansea-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea Triathlon" missing image**
+  - Page: `/events/swansea-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea Uplands Farmers Market" missing image**
+  - Page: `/events/swansea-uplands-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swansea Waterfront Winterland" missing image**
+  - Page: `/events/swansea-waterfront-winterland`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swim Wales Open Water" missing image**
+  - Page: `/events/swim-wales-open`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Swn Festival" missing image**
+  - Page: `/events/swn-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tafwyl" missing image**
+  - Page: `/events/tafwyl`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Talgarth Walking Festival" missing image**
+  - Page: `/events/talgarth-walking-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Talley Show" missing image**
+  - Page: `/events/talley-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Talybont Show" missing image**
+  - Page: `/events/talybont-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tata Steel Sailing Regatta" missing image**
+  - Page: `/events/tata-steel-sailing`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Techniquest Christmas Events" missing image**
+  - Page: `/events/techniquest-christmas`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Teifi Tour" missing image**
+  - Page: `/events/teifi-tour`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tenacious Ten" missing image**
+  - Page: `/events/tenacious-ten`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tenacious Ten Endurance Challenge" missing image**
+  - Page: `/events/tenacious-ten-endurance-challenge`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tenby Arts Festival" missing image**
+  - Page: `/events/tenby-arts-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tenby Blues Festival" missing image**
+  - Page: `/events/tenby-blues-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tenby Boxing Day Swim" missing image**
+  - Page: `/events/tenby-boxing-day-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tenby Farmers Market" missing image**
+  - Page: `/events/tenby-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tenby Long Course Weekend" missing image**
+  - Page: `/events/tenby-long-course-weekend`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tenby Regatta" missing image**
+  - Page: `/events/tenby-regatta`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tenby Santa Run Santa Fun Run" missing image**
+  - Page: `/events/tenby-santa-run-santa-fun-run`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The BOWUM 2026" missing image**
+  - Page: `/events/the-bowum-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Big Retreat Festival" missing image**
+  - Page: `/events/the-big-retreat-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Big Tribute Festival" missing image**
+  - Page: `/events/the-big-tribute-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Big Welsh Bite Food Festival" missing image**
+  - Page: `/events/the-big-welsh-bite-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Big Welsh Swim" missing image**
+  - Page: `/events/the-big-welsh-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Coastal Cottages Wales 10K" missing image**
+  - Page: `/events/the-coastal-cottages-wales-10k`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Good Life Experience" missing image**
+  - Page: `/events/the-good-life-experience`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Good Life Society Summer Camp" missing image**
+  - Page: `/events/the-good-life-society-summer-camp`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The HOWUM 2026" missing image**
+  - Page: `/events/the-howum-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The HOWUM HALF 2026" missing image**
+  - Page: `/events/the-howum-half-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Hurly Burly" missing image**
+  - Page: `/events/the-hurly-burly`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Loop Ultra" missing image**
+  - Page: `/events/the-loop-ultra`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The PIGUM 2026" missing image**
+  - Page: `/events/the-pigum-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The PIGUM HALF 2026" missing image**
+  - Page: `/events/the-pigum-half-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The RIDUM 2026" missing image**
+  - Page: `/events/the-ridum-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The RIDUM HALF 2026" missing image**
+  - Page: `/events/the-ridum-half-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Square Festival" missing image**
+  - Page: `/events/the-square-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The VOGUM 2026" missing image**
+  - Page: `/events/the-vogum-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Wales 5K" missing image**
+  - Page: `/events/the-wales-5k`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Wales Half Marathon" missing image**
+  - Page: `/events/the-wales-half-marathon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Wales Marathon" missing image**
+  - Page: `/events/the-wales-marathon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Wales Sportive" missing image**
+  - Page: `/events/the-wales-sportive`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Wales Swim" missing image**
+  - Page: `/events/the-wales-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "The Wales Swimrun" missing image**
+  - Page: `/events/the-wales-swimrun-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Titan Brecon Middle" missing image**
+  - Page: `/events/titan-brecon-middle`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Titan Brecon Olympic" missing image**
+  - Page: `/events/titan-brecon-olympic`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tivyside Agricultural Show" missing image**
+  - Page: `/events/tivyside-agricultural-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Top of the Woods Film Festival" missing image**
+  - Page: `/events/top-of-the-woods-film-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Trail 10K Eryri 2026" missing image**
+  - Page: `/events/trail-10k-eryri-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Trails & Tarmac 12 hour BYU" missing image**
+  - Page: `/events/trails-tarmac-12-hour-byu`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Trails & Tarmac Summer BYU" missing image**
+  - Page: `/events/trails-tarmac-summer-byu`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Trails & Tarmac Winter BYU" missing image**
+  - Page: `/events/trails-tarmac-winter-byu`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Trapp Show" missing image**
+  - Page: `/events/trapp-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tredegar House Easter Hunt Easter Egg Hunt" missing image**
+  - Page: `/events/tredegar-house-easter-hunt-easter-egg-hunt`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tredegar House Folk Festival" missing image**
+  - Page: `/events/tredegar-house-folk-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tregaron Harness Racing Festival" missing image**
+  - Page: `/events/tregaron-harness-racing-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Tuska Sprint Triathlon" missing image**
+  - Page: `/events/tuska-sprint-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Ty Poeth Farm Pumpkin Picking" missing image**
+  - Page: `/events/ty-poeth-farm-pumpkin-picking`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Unearthed Festival" missing image**
+  - Page: `/events/unearthed-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "United Counties Show" missing image**
+  - Page: `/events/united-counties-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Urdd Eisteddfod" missing image**
+  - Page: `/events/urdd-eisteddfod`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Urdd National Eisteddfod" missing image**
+  - Page: `/events/urdd-national-eisteddfod`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Usk Farmers Market" missing image**
+  - Page: `/events/usk-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Usk Show" missing image**
+  - Page: `/events/usk-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Vale of Glamorgan Agricultural Show" missing image**
+  - Page: `/events/vale-of-glamorgan-agricultural-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Vale of Glamorgan Festival" missing image**
+  - Page: `/events/vale-of-glamorgan-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Vale of Glamorgan Show" missing image**
+  - Page: `/events/vale-of-glamorgan-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Velvet Coalmine" missing image**
+  - Page: `/events/velvet-coalmine`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "WSF Masters" missing image**
+  - Page: `/events/wsf-masters`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "WWT Llanelli Wetland Centre Events" missing image**
+  - Page: `/events/wwt-llanelli-wetland-centre-events`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Wales Airshow" missing image**
+  - Page: `/events/wales-airshow`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Wales International Film Festival" missing image**
+  - Page: `/events/wales-international-film-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Wales One World Film Festival" missing image**
+  - Page: `/events/wales-one-world-film-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Wales Triathlon" missing image**
+  - Page: `/events/wales-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Walrus Dip" missing image**
+  - Page: `/events/walrus-dip`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Welsh 1000m Peaks Race" missing image**
+  - Page: `/events/welsh-1000m-peaks-race`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Welsh Dairy Show" missing image**
+  - Page: `/events/welsh-dairy-show`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Welsh Harp Sailing" missing image**
+  - Page: `/events/welsh-harp-sailing`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Welsh Interclub Surfing Championships" missing image**
+  - Page: `/events/welsh-interclub-surfing`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Welsh Junior Surfing Championships" missing image**
+  - Page: `/events/welsh-junior-surfing-champs`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Welsh National Surfing Championships" missing image**
+  - Page: `/events/welsh-national-surfing-champs`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Welsh Perry and Cider Festival" missing image**
+  - Page: `/events/welsh-perry-and-cider-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Welsh Varsity Boat Race" missing image**
+  - Page: `/events/welsh-varsity-boat-race`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Welshpool Country Music Festival" missing image**
+  - Page: `/events/welshpool-country-music-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Welshpool Farmers Market" missing image**
+  - Page: `/events/welshpool-farmers-market`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Welshpool Fireworks Fireworks Display" missing image**
+  - Page: `/events/welshpool-fireworks-fireworks-display`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Welshpool Triathlon" missing image**
+  - Page: `/events/welshpool-triathlon`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Wepre Junior Parkrun" missing image**
+  - Page: `/events/wepre-junior-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Wepre Parkrun" missing image**
+  - Page: `/events/wepre-parkrun`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Westival" missing image**
+  - Page: `/events/westival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Whitesands NYD Swim" missing image**
+  - Page: `/events/whitesands-nyd-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Whitesands New Year's Day Swim" missing image**
+  - Page: `/events/whitesands-new-year-s-day-swim`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Whole Earth Man v Horse" missing image**
+  - Page: `/events/whole-earth-man-v-horse`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Wild Horse Brewing Co. Llandudno Triathlon 2026" missing image**
+  - Page: `/events/wild-horse-brewing-co-llandudno-triathlon-2026`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Windsor Farm Pumpkin Picking" missing image**
+  - Page: `/events/windsor-farm-pumpkin-picking`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Winter Solstice at Bryn Celli Ddu" missing image**
+  - Page: `/events/winter-solstice-bryn-celli-ddu`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Winter Walk at Dyffryn Gardens" missing image**
+  - Page: `/events/winter-walk-at-dyffryn-gardens`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Wiseman's Bridge Rowing Regatta" missing image**
+  - Page: `/events/wisemans-bridge-rowing`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Wonderwool Wales" missing image**
+  - Page: `/events/wonderwool-wales`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "World Alternate Games" missing image**
+  - Page: `/events/world-alternate-games`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "World Bog Snorkelling" missing image**
+  - Page: `/events/world-bog-snorkelling`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Wow Film Festival" missing image**
+  - Page: `/events/wow-film-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Wrexham Food Festival" missing image**
+  - Page: `/events/wrexham-food-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Wrexham Walking Festival" missing image**
+  - Page: `/events/wrexham-walking-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "X Music Festival" missing image**
+  - Page: `/events/x-music-festival`
+  - Fix: Source event image from operator or generate
+- 🟡 **Event "Zip World Fright Nights" missing image**
+  - Page: `/events/zip-world-fright-nights`
+  - Fix: Source event image from operator or generate
+- 🟢 **Event "ABP Newport Marathon 2026" has thin description**
+  - Page: `/events/abp-newport-marathon-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Aberaeron Carnival" has thin description**
+  - Page: `/events/aberaeron-carnival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Aberaeron Regatta" has thin description**
+  - Page: `/events/aberaeron-regatta`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Aberdovey Swim" has thin description**
+  - Page: `/events/aberdovey-swim`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Abergavenny Writing Festival" has thin description**
+  - Page: `/events/abergavenny-writing-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Abergele 5K &amp; 10K" has thin description**
+  - Page: `/events/abergele-5k-amp-10k`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Aberystwyth Cycle Festival" has thin description**
+  - Page: `/events/aberystwyth-cycle-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Aberystwyth Fireworks Fireworks Display" has thin description**
+  - Page: `/events/aberystwyth-fireworks-fireworks-display`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Aberystwyth Santa Run Santa Fun Run" has thin description**
+  - Page: `/events/aberystwyth-santa-run-santa-fun-run`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Aberystwyth Triathlon" has thin description**
+  - Page: `/events/aberystwyth-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Anglesey Adventure Race" has thin description**
+  - Page: `/events/anglesey-adventure-race`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Anglesey County Show" has thin description**
+  - Page: `/events/anglesey-county-show`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Bala SUP Race" has thin description**
+  - Page: `/events/bala-sup-race`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Bala Sailing Club Regatta" has thin description**
+  - Page: `/events/bala-sailing-regatta`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Bala Sprint Triathlon" has thin description**
+  - Page: `/events/bala-sprint-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Balter Festival" has thin description**
+  - Page: `/events/balter-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Barmouth Kite Festival" has thin description**
+  - Page: `/events/barmouth-kite-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Barry Island Dog Swim" has thin description**
+  - Page: `/events/barry-dog-swim`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Barry Island Fireworks Fireworks Display" has thin description**
+  - Page: `/events/barry-island-fireworks-fireworks-display`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Barry Island New Year's Day Swim" has thin description**
+  - Page: `/events/barry-island-new-year-s-day-swim`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Barry Island Santa Run Santa Fun Run" has thin description**
+  - Page: `/events/barry-island-santa-run-santa-fun-run`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Barry Junior Parkrun" has thin description**
+  - Page: `/events/barry-junior-parkrun`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Bellis Brothers Pumpkin Picking" has thin description**
+  - Page: `/events/bellis-brothers-pumpkin-picking`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Berghaus Dragon's Back Race" has thin description**
+  - Page: `/events/berghaus-dragon-s-back-race`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Beyond the Border Storytelling Festival" has thin description**
+  - Page: `/events/beyond-the-border-storytelling-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Billy Bob's Farm Pumpkin Picking" has thin description**
+  - Page: `/events/billy-bob-s-farm-pumpkin-picking`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Black Diamond Yr Wyddfa | Snowdon24 2026" has thin description**
+  - Page: `/events/black-diamond-yr-wyddfa-snowdon24-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Bodnant Garden Easter Hunt Easter Egg Hunt" has thin description**
+  - Page: `/events/bodnant-garden-easter-hunt-easter-egg-hunt`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Breca Gower" has thin description**
+  - Page: `/events/breca-gower`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Brecon Baroque Festival" has thin description**
+  - Page: `/events/brecon-baroque-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Brecon Beacons Dark Sky Festival" has thin description**
+  - Page: `/events/brecon-beacons-dark-sky-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Brecon Junior Parkrun" has thin description**
+  - Page: `/events/brecon-junior-parkrun`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Brecon Santa Run Santa Fun Run" has thin description**
+  - Page: `/events/brecon-santa-run-santa-fun-run`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Brecon Triathlon" has thin description**
+  - Page: `/events/brecon-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Bridgend Junior Parkrun" has thin description**
+  - Page: `/events/bridgend-junior-parkrun`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Broad Haven Christmas Pudding Run" has thin description**
+  - Page: `/events/broad-haven-christmas-swim`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Broad Haven Triathlon" has thin description**
+  - Page: `/events/broad-haven-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Brooksgrove Farm Pumpkin Picking" has thin description**
+  - Page: `/events/brooksgrove-farm-pumpkin-picking`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Burn Series Adventure Race" has thin description**
+  - Page: `/events/burn-series`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "CDF 10K 2026" has thin description**
+  - Page: `/events/cdf-10k-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Caerphilly Castle Fireworks Fireworks Display" has thin description**
+  - Page: `/events/caerphilly-castle-fireworks-fireworks-display`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Caldicot Triathlon" has thin description**
+  - Page: `/events/caldicot-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Camp Good Life" has thin description**
+  - Page: `/events/camp-good-life`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Cardiff Animation Festival" has thin description**
+  - Page: `/events/cardiff-animation-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Cardiff Christmas Market" has thin description**
+  - Page: `/events/cardiff-christmas-market`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Cardiff Food and Drink Festival" has thin description**
+  - Page: `/events/cardiff-food-and-drink-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Cardiff Half Marathon 2026" has thin description**
+  - Page: `/events/cardiff-half-marathon-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Cardiff Harbour Festival" has thin description**
+  - Page: `/events/cardiff-harbour-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Cardiff Head of the Taff" has thin description**
+  - Page: `/events/cardiff-head-taff`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Cardiff Junior Parkrun" has thin description**
+  - Page: `/events/cardiff-junior-parkrun`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Cardiff Santa Dash Santa Fun Run" has thin description**
+  - Page: `/events/cardiff-santa-dash-santa-fun-run`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Cardiff Sparks in the Park Fireworks Display" has thin description**
+  - Page: `/events/cardiff-sparks-in-the-park-fireworks-display`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Cardigan Barley Saturday" has thin description**
+  - Page: `/events/cardigan-barley-saturday`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Cardigan Bay Regatta" has thin description**
+  - Page: `/events/cardigan-bay-regatta`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Cardigan County Show" has thin description**
+  - Page: `/events/cardigan-county-show`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Carmarthen Fireworks Fireworks Display" has thin description**
+  - Page: `/events/carmarthen-fireworks-fireworks-display`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Castell Roc" has thin description**
+  - Page: `/events/castell-roc`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Chirk Castle Easter Hunt Easter Egg Hunt" has thin description**
+  - Page: `/events/chirk-castle-easter-hunt-easter-egg-hunt`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Clearwell Farm Pumpkin Picking" has thin description**
+  - Page: `/events/clearwell-farm-pumpkin-picking`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Colby Woodland Garden Easter Hunt Easter Egg Hunt" has thin description**
+  - Page: `/events/colby-woodland-garden-easter-hunt-easter-egg-hunt`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Colwyn Bay 1940s Festival" has thin description**
+  - Page: `/events/colwyn-bay-1940s-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Colwyn Bay Prom Xtra" has thin description**
+  - Page: `/events/colwyn-bay-prom-xtra`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Conwy Junior Parkrun" has thin description**
+  - Page: `/events/conwy-junior-parkrun`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Conwy Pirate Weekend" has thin description**
+  - Page: `/events/conwy-pirate-weekend`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Conwy River Festival" has thin description**
+  - Page: `/events/conwy-river-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Criccieth Boxing Day Dip" has thin description**
+  - Page: `/events/criccieth-boxing-day-dip`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Devauden Festival" has thin description**
+  - Page: `/events/devauden-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Dragon Boat Festival" has thin description**
+  - Page: `/events/dragon-boat-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Dragons Back Race" has thin description**
+  - Page: `/events/dragons-back-race`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Elan Valley Dark Skies Events" has thin description**
+  - Page: `/events/elan-valley-dark-skies-events`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Elvis Festival" has thin description**
+  - Page: `/events/elvis-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Erddig Easter Hunt Easter Egg Hunt" has thin description**
+  - Page: `/events/erddig-easter-hunt-easter-egg-hunt`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Fire in the Mountain" has thin description**
+  - Page: `/events/fire-in-the-mountain`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Fishguard 10k" has thin description**
+  - Page: `/events/fishguard-10k`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Fishguard 5k" has thin description**
+  - Page: `/events/fishguard-5k`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Fishguard Aquabike" has thin description**
+  - Page: `/events/fishguard-aquabike`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Fishguard Half Marathon" has thin description**
+  - Page: `/events/fishguard-half-marathon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Fishguard Kids Race" has thin description**
+  - Page: `/events/fishguard-kids-race`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Fishguard Regatta" has thin description**
+  - Page: `/events/fishguard-regatta`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Fishguard Sprint Tri" has thin description**
+  - Page: `/events/fishguard-sprint-tri`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Fishguard Swim" has thin description**
+  - Page: `/events/fishguard-swim`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Forage Farm Pumpkin Picking" has thin description**
+  - Page: `/events/forage-farm-pumpkin-picking`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Gladstone's Library Hearth Festival" has thin description**
+  - Page: `/events/gladstone-s-library-hearth-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Gnoll Junior Parkrun" has thin description**
+  - Page: `/events/gnoll-junior-parkrun`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Gower Chilli Festival" has thin description**
+  - Page: `/events/gower-chilli-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Gregynog Festival" has thin description**
+  - Page: `/events/gregynog-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Gwyl Fwyd Caernarfon" has thin description**
+  - Page: `/events/gwyl-fwyd-caernarfon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Hammerfest" has thin description**
+  - Page: `/events/hammerfest`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Hay Bike Fest" has thin description**
+  - Page: `/events/hay-bike-fest`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Hay Festival Winter Weekend" has thin description**
+  - Page: `/events/hay-festival-winter-weekend`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Holyhead Breakwater Swim" has thin description**
+  - Page: `/events/holyhead-breakwater-swim`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Holyhead Maritime Festival" has thin description**
+  - Page: `/events/holyhead-maritime-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Holyhead Sailing Festival" has thin description**
+  - Page: `/events/holyhead-sailing`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "HowTheLightGetsIn Festival" has thin description**
+  - Page: `/events/howthelightgetsin-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Hub Festival" has thin description**
+  - Page: `/events/hub-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Inside Out Festival" has thin description**
+  - Page: `/events/inside-out-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Iris Prize Festival" has thin description**
+  - Page: `/events/iris-prize-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Jesus Surf Classic Wales" has thin description**
+  - Page: `/events/jesus-surf-classic-wales`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Kallida Festival" has thin description**
+  - Page: `/events/kallida-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Kendall Mountain Festival Tour (Wales)" has thin description**
+  - Page: `/events/kendall-mountain-festival-tour-wales`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Kotatsu Japanese Animation Festival" has thin description**
+  - Page: `/events/kotatsu-japanese-animation-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "LC Kinder" has thin description**
+  - Page: `/events/lc-kinder`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "LCW Wales" has thin description**
+  - Page: `/events/lcw-wales`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Laugharne Weekend" has thin description**
+  - Page: `/events/laugharne-weekend`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Lido Ponty Cold Water Swim" has thin description**
+  - Page: `/events/lido-ponty-cold`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llandaff Regatta" has thin description**
+  - Page: `/events/llandaff-regatta`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llandegfedd Pinewood Regatta" has thin description**
+  - Page: `/events/llandegfedd-pinewood`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llandeilo Festival of Senses" has thin description**
+  - Page: `/events/llandeilo-festival-of-senses`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llandeilo Lit Fest" has thin description**
+  - Page: `/events/llandeilo-lit-fest`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llandovery Sheep Festival" has thin description**
+  - Page: `/events/llandovery-sheep-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llandrindod Wells Victorian Festival" has thin description**
+  - Page: `/events/llandrindod-wells-victorian-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llandudno Fireworks Fireworks Display" has thin description**
+  - Page: `/events/llandudno-fireworks-fireworks-display`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llandudno Santa Dash Santa Fun Run" has thin description**
+  - Page: `/events/llandudno-santa-dash-santa-fun-run`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llandudno Sea Rowing" has thin description**
+  - Page: `/events/llandudno-sea-rowing`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llandudno Sprint" has thin description**
+  - Page: `/events/llandudno-sprint-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llandudno Victorian Extravaganza" has thin description**
+  - Page: `/events/llandudno-victorian-extravaganza`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llanelli Junior Parkrun" has thin description**
+  - Page: `/events/llanelli-junior-parkrun`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llanelli Sprint Triathlon" has thin description**
+  - Page: `/events/llanelli-sprint-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llanerchaeron Easter Hunt Easter Egg Hunt" has thin description**
+  - Page: `/events/llanerchaeron-easter-hunt-easter-egg-hunt`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llangollen Balloon Festival" has thin description**
+  - Page: `/events/llangollen-balloon-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llangollen Fringe Festival" has thin description**
+  - Page: `/events/llangollen-fringe-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llangollen Trail 10K &amp; Kids 1 Mile Race" has thin description**
+  - Page: `/events/llangollen-trail-10k-amp-kids-1-mile-race`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Llyn Padarn Swim" has thin description**
+  - Page: `/events/llyn-padarn-swim`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Long Course Weekend" has thin description**
+  - Page: `/events/long-course-weekend`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Long Course Weekend Swim" has thin description**
+  - Page: `/events/lcw-swim`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Love SwimRun Holy Island" has thin description**
+  - Page: `/events/love-swimrun-holy-island`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Love SwimRun Llanberis" has thin description**
+  - Page: `/events/love-swimrun-llanberis`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Love Trails Festival" has thin description**
+  - Page: `/events/love-trails-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Machynlleth Festival" has thin description**
+  - Page: `/events/machynlleth-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Man vs Coast" has thin description**
+  - Page: `/events/man-vs-coast`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Man vs Mountain" has thin description**
+  - Page: `/events/man-vs-mountain`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Manorfon Farm Pumpkin Picking" has thin description**
+  - Page: `/events/manorfon-farm-pumpkin-picking`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Mawddach Paddlesport Festival" has thin description**
+  - Page: `/events/mawddach-paddle-fest`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Menai Strait Regattas" has thin description**
+  - Page: `/events/menai-strait-regattas`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Merthyr Junior Parkrun" has thin description**
+  - Page: `/events/merthyr-junior-parkrun`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Merthyr Rising" has thin description**
+  - Page: `/events/merthyr-rising`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Merthyr Rising Festival" has thin description**
+  - Page: `/events/merthyr-rising-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Merthyr Santa Run Santa Fun Run" has thin description**
+  - Page: `/events/merthyr-santa-run-santa-fun-run`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Milford Haven Fireworks Fireworks Display" has thin description**
+  - Page: `/events/milford-haven-fireworks-fireworks-display`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Monmouth Aquathlon" has thin description**
+  - Page: `/events/monmouth-aquathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Monmouth Festival" has thin description**
+  - Page: `/events/monmouth-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Monmouth Raft Race" has thin description**
+  - Page: `/events/monmouth-raft-race`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Monmouth Regatta" has thin description**
+  - Page: `/events/monmouth-regatta`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Morfa Nefyn NYD Dip" has thin description**
+  - Page: `/events/morfa-nefyn-nyd-dip`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Mumbles Aquabike" has thin description**
+  - Page: `/events/mumbles-aquabike`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Mumbles Duathlon" has thin description**
+  - Page: `/events/mumbles-duathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Mumbles Sprint" has thin description**
+  - Page: `/events/mumbles-sprint-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Mumbles Swim" has thin description**
+  - Page: `/events/mumbles-swim`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Mumbles Triathlon" has thin description**
+  - Page: `/events/mumbles-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Newport Junior Parkrun" has thin description**
+  - Page: `/events/newport-junior-parkrun`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Newport Regatta" has thin description**
+  - Page: `/events/newport-regatta`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Newport Wetlands Guided Walks" has thin description**
+  - Page: `/events/newport-wetlands-guided-walks`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Newtown Junior Parkrun" has thin description**
+  - Page: `/events/newtown-junior-parkrun`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Newtown Santa Run Santa Fun Run" has thin description**
+  - Page: `/events/newtown-santa-run-santa-fun-run`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Newtown Triathlon" has thin description**
+  - Page: `/events/newtown-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Nick Beer Llandudno 10k 2026" has thin description**
+  - Page: `/events/nick-beer-llandudno-10k-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "North Wales Pride" has thin description**
+  - Page: `/events/north-wales-pride`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Ogwen | Yr Helgi Du 2026" has thin description**
+  - Page: `/events/ogwen-yr-helgi-du-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Pembrokeshire Coast Triathlon" has thin description**
+  - Page: `/events/pembrokeshire-coast-tri`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Pembrokeshire Fish Week" has thin description**
+  - Page: `/events/pembrokeshire-fish-week`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Pembrokeshire Pumpkins Pumpkin Picking" has thin description**
+  - Page: `/events/pembrokeshire-pumpkins-pumpkin-picking`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Penrhyn Castle Easter Hunt Easter Egg Hunt" has thin description**
+  - Page: `/events/penrhyn-castle-easter-hunt-easter-egg-hunt`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Plas Newydd Easter Hunt Easter Egg Hunt" has thin description**
+  - Page: `/events/plas-newydd-easter-hunt-easter-egg-hunt`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Pontardawe Festival" has thin description**
+  - Page: `/events/pontardawe-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Pontypool Santa Run Santa Fun Run" has thin description**
+  - Page: `/events/pontypool-santa-run-santa-fun-run`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Pontypridd Fireworks Fireworks Display" has thin description**
+  - Page: `/events/pontypridd-fireworks-fireworks-display`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Porthcawl Christmas Day Swim" has thin description**
+  - Page: `/events/porthcawl-christmas-day-swim`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Porthcawl Longboard Classic" has thin description**
+  - Page: `/events/porthcawl-longboard-classic`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Porthcawl Triathlon" has thin description**
+  - Page: `/events/porthcawl-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Portmeirion Food and Craft Fair" has thin description**
+  - Page: `/events/portmeirion-food-and-craft-fair`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Powell's Farm Pumpkin Picking" has thin description**
+  - Page: `/events/powell-s-farm-pumpkin-picking`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Powis Castle Easter Hunt Easter Egg Hunt" has thin description**
+  - Page: `/events/powis-castle-easter-hunt-easter-egg-hunt`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Presteigne Festival" has thin description**
+  - Page: `/events/presteigne-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Pwllheli Regatta" has thin description**
+  - Page: `/events/pwllheli-regatta`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Quest Wales" has thin description**
+  - Page: `/events/quest-wales`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "RSPB Conwy Guided Walks" has thin description**
+  - Page: `/events/rspb-conwy-guided-walks`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Rabbit Run Wales 2026" has thin description**
+  - Page: `/events/rabbit-run-wales-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Real Ale Ramble" has thin description**
+  - Page: `/events/real-ale-ramble`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Real Ale Wobble" has thin description**
+  - Page: `/events/real-ale-wobble`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Red Bull Cliff Diving" has thin description**
+  - Page: `/events/red-bull-cliff-diving`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Rhyl Boxing Day Dip" has thin description**
+  - Page: `/events/rhyl-boxing-day-dip`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "River Wye Canoe Race" has thin description**
+  - Page: `/events/river-wye-canoe-race`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Royal Welsh Smallholding and Countryside Festival" has thin description**
+  - Page: `/events/royal-welsh-smallholding-and-countryside-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Royal Welsh Spring Festival" has thin description**
+  - Page: `/events/royal-welsh-spring-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Ruthin Festival" has thin description**
+  - Page: `/events/ruthin-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Ruthin Triathlon" has thin description**
+  - Page: `/events/ruthin-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "SUP Gower Paddle" has thin description**
+  - Page: `/events/sup-gower-paddle`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Sandman Legend" has thin description**
+  - Page: `/events/sandman-legend-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Sandman Sprint" has thin description**
+  - Page: `/events/sandman-sprint-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Saundersfoot Regatta" has thin description**
+  - Page: `/events/saundersfoot-regatta`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Saundersfoot Sprint" has thin description**
+  - Page: `/events/saundersfoot-sprint-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Saundersfoot Swim" has thin description**
+  - Page: `/events/saundersfoot-swim`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Sesiwn Fawr Dolgellau" has thin description**
+  - Page: `/events/sesiwn-fawr-dolgellau`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Sinemaes" has thin description**
+  - Page: `/events/sinemaes`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Slateman Legend" has thin description**
+  - Page: `/events/slateman-legend-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Slateman Savage" has thin description**
+  - Page: `/events/slateman-savage`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Slateman Sprint" has thin description**
+  - Page: `/events/slateman-sprint-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Snowdonia Outdoor Festival" has thin description**
+  - Page: `/events/snowdonia-outdoor-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Snowman Legend" has thin description**
+  - Page: `/events/snowman-legend-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Snowman Savage" has thin description**
+  - Page: `/events/snowman-savage`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Snowman Sprint" has thin description**
+  - Page: `/events/snowman-sprint-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "St Davids Cathedral Festival" has thin description**
+  - Page: `/events/st-davids-cathedral-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Stackpole Easter Hunt Easter Egg Hunt" has thin description**
+  - Page: `/events/stackpole-easter-hunt-easter-egg-hunt`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Superfeet Sandman" has thin description**
+  - Page: `/events/superfeet-sandman`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Swansea 10 Miler" has thin description**
+  - Page: `/events/swansea-10-miler`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Swansea 5K" has thin description**
+  - Page: `/events/swansea-5k`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Swansea Christmas Market" has thin description**
+  - Page: `/events/swansea-christmas-market`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Swansea Fireworks Display" has thin description**
+  - Page: `/events/swansea-fireworks-display`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Swansea Fringe" has thin description**
+  - Page: `/events/swansea-fringe`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Swansea Junior Parkrun" has thin description**
+  - Page: `/events/swansea-junior-parkrun`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Swansea Pride" has thin description**
+  - Page: `/events/swansea-pride`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Swansea Santa Run Santa Fun Run" has thin description**
+  - Page: `/events/swansea-santa-run-santa-fun-run`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Swansea Swim" has thin description**
+  - Page: `/events/swansea-swim`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Swansea Triathlon" has thin description**
+  - Page: `/events/swansea-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Swim Wales Open Water" has thin description**
+  - Page: `/events/swim-wales-open`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Tata Steel Sailing Regatta" has thin description**
+  - Page: `/events/tata-steel-sailing`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Tenacious Ten Endurance Challenge" has thin description**
+  - Page: `/events/tenacious-ten-endurance-challenge`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Tenby Regatta" has thin description**
+  - Page: `/events/tenby-regatta`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Tenby Santa Run Santa Fun Run" has thin description**
+  - Page: `/events/tenby-santa-run-santa-fun-run`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The BOWUM 2026" has thin description**
+  - Page: `/events/the-bowum-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The Big Retreat Festival" has thin description**
+  - Page: `/events/the-big-retreat-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The Big Tribute Festival" has thin description**
+  - Page: `/events/the-big-tribute-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The Coastal Cottages Wales 10K" has thin description**
+  - Page: `/events/the-coastal-cottages-wales-10k`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The Good Life Experience" has thin description**
+  - Page: `/events/the-good-life-experience`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The HOWUM 2026" has thin description**
+  - Page: `/events/the-howum-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The HOWUM HALF 2026" has thin description**
+  - Page: `/events/the-howum-half-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The PIGUM 2026" has thin description**
+  - Page: `/events/the-pigum-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The PIGUM HALF 2026" has thin description**
+  - Page: `/events/the-pigum-half-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The RIDUM 2026" has thin description**
+  - Page: `/events/the-ridum-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The RIDUM HALF 2026" has thin description**
+  - Page: `/events/the-ridum-half-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The Square Festival" has thin description**
+  - Page: `/events/the-square-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The VOGUM 2026" has thin description**
+  - Page: `/events/the-vogum-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The Wales 5K" has thin description**
+  - Page: `/events/the-wales-5k`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The Wales Half Marathon" has thin description**
+  - Page: `/events/the-wales-half-marathon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The Wales Marathon" has thin description**
+  - Page: `/events/the-wales-marathon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The Wales Sportive" has thin description**
+  - Page: `/events/the-wales-sportive`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "The Wales Swim" has thin description**
+  - Page: `/events/the-wales-swim`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Titan Brecon Olympic" has thin description**
+  - Page: `/events/titan-brecon-olympic`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Tour of Britain (Wales Stages)" has thin description**
+  - Page: `/events/tour-of-britain-wales-stages`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Trail 10K Eryri 2026" has thin description**
+  - Page: `/events/trail-10k-eryri-2026`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Trails & Tarmac 12 hour BYU" has thin description**
+  - Page: `/events/trails-tarmac-12-hour-byu`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Trails & Tarmac Summer BYU" has thin description**
+  - Page: `/events/trails-tarmac-summer-byu`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Trails & Tarmac Winter BYU" has thin description**
+  - Page: `/events/trails-tarmac-winter-byu`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Trails &amp; Tarmac Backyard Ultra - Winter" has thin description**
+  - Page: `/events/trails-amp-tarmac-backyard-ultra-winter`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Tredegar House Easter Hunt Easter Egg Hunt" has thin description**
+  - Page: `/events/tredegar-house-easter-hunt-easter-egg-hunt`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Tuska Sprint Triathlon" has thin description**
+  - Page: `/events/tuska-sprint-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Ty Poeth Farm Pumpkin Picking" has thin description**
+  - Page: `/events/ty-poeth-farm-pumpkin-picking`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Unearthed Festival" has thin description**
+  - Page: `/events/unearthed-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Urdd Eisteddfod" has thin description**
+  - Page: `/events/urdd-eisteddfod`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Vale of Glamorgan Festival" has thin description**
+  - Page: `/events/vale-of-glamorgan-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Velvet Coalmine" has thin description**
+  - Page: `/events/velvet-coalmine`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "WSF Masters" has thin description**
+  - Page: `/events/wsf-masters`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "WWT Llanelli Wetland Centre Events" has thin description**
+  - Page: `/events/wwt-llanelli-wetland-centre-events`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Wales Coast Path Festival" has thin description**
+  - Page: `/events/wales-coast-path-festival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Wales Triathlon" has thin description**
+  - Page: `/events/wales-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Welsh 1000m Peaks Race" has thin description**
+  - Page: `/events/welsh-1000m-peaks-race`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Welsh Gravity Enduro Series" has thin description**
+  - Page: `/events/welsh-gravity-enduro-series`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Welsh Harp Sailing" has thin description**
+  - Page: `/events/welsh-harp-sailing`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Welsh Junior Surfing Championships" has thin description**
+  - Page: `/events/welsh-junior-surfing-champs`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Welsh One Day Hill Climb" has thin description**
+  - Page: `/events/welsh-one-day-hill-climb`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Welshpool Fireworks Fireworks Display" has thin description**
+  - Page: `/events/welshpool-fireworks-fireworks-display`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Welshpool Triathlon" has thin description**
+  - Page: `/events/welshpool-triathlon`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Wepre Junior Parkrun" has thin description**
+  - Page: `/events/wepre-junior-parkrun`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Westival" has thin description**
+  - Page: `/events/westival`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Windsor Farm Pumpkin Picking" has thin description**
+  - Page: `/events/windsor-farm-pumpkin-picking`
+  - Fix: Write proper event description *(auto-fixable)*
+- 🟢 **Event "Wiseman's Bridge Rowing Regatta" has thin description**
+  - Page: `/events/wisemans-bridge-rowing`
+  - Fix: Write proper event description *(auto-fixable)*
+
 ## Journal
 
 - 🟡 **Journal "10 Welsh Beaches That'll Make You Forget About Cornwall" missing hero image**
   - Page: `/journal/welsh-beaches-forget-cornwall`
   - Fix: Source or generate article hero image
+- 🟡 **Journal "Best Caves in the Brecon Beacons: A Local Guide" missing hero image**
+  - Page: `/journal/best-caves-brecon-beacons`
+  - Fix: Source or generate article hero image
+- 🟡 **Journal "Best Family-Friendly Caves in Wales: A Parents Guide" missing hero image**
+  - Page: `/journal/family-friendly-caves-wales`
+  - Fix: Source or generate article hero image
 - 🟡 **Journal "Horse Riding in Wales: 5 Epic Trail Rides You Need to Try" missing hero image**
   - Page: `/journal/horse-riding-wales-epic-trail-rides`
   - Fix: Source or generate article hero image
+- 🟡 **Journal "Show Caves vs Adventure Caves in Wales" missing hero image**
+  - Page: `/journal/show-caves-vs-adventure-caves`
+  - Fix: Source or generate article hero image
 - 🟡 **Journal "Stag & Hen Party Adventures in Wales: Beyond the Pub Crawl" missing hero image**
   - Page: `/journal/stag-hen-party-adventures-wales`
+  - Fix: Source or generate article hero image
+- 🟡 **Journal "The Complete Adventure Guide to the Brecon Beacons" missing hero image**
+  - Page: `/journal/adventure-guide-brecon-beacons`
   - Fix: Source or generate article hero image
 - 🟡 **Journal "The Complete Guide to Sea Fishing in Wales" missing hero image**
   - Page: `/journal/complete-guide-sea-fishing-wales`
@@ -271,220 +4201,13 @@
   - Page: `/journal/wales-best-wildlife-encounters`
   - Fix: Source or generate article hero image
 
-## Events
-
-- 🟢 **Event "ABP Newport Marathon Festival" has thin description**
-  - Page: `/events/abp-newport-marathon-festival`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Abersoch 10K" has thin description**
-  - Page: `/events/abersoch-10k`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Abersoch Dinghy Week" has thin description**
-  - Page: `/events/abersoch-dinghy-week`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Adventure Travel World Summit" has thin description**
-  - Page: `/events/adventure-travel-world-summit`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Anglesey Trail Half Marathon" has thin description**
-  - Page: `/events/anglesey-trail-half-marathon`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Barry Island 10K" has thin description**
-  - Page: `/events/barry-island-10k`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Beast of the Beacons" has thin description**
-  - Page: `/events/beast-of-the-beacons`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Berghaus Dragon's Back Race" has thin description**
-  - Page: `/events/berghaus-dragon-s-back-race`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Caerphilly Trail Races" has thin description**
-  - Page: `/events/caerphilly-trail-races`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Cardiff Bay Water Festival" has thin description**
-  - Page: `/events/cardiff-bay-water-festival`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Cardiff Half Marathon" has thin description**
-  - Page: `/events/cardiff-half-marathon`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Chepstow Running Festival" has thin description**
-  - Page: `/events/chepstow-running-festival`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Coed y Brenin Enduro" has thin description**
-  - Page: `/events/coed-y-brenin-enduro`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Conwy Half Marathon" has thin description**
-  - Page: `/events/conwy-half-marathon`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Dragon Ride" has thin description**
-  - Page: `/events/dragon-ride`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Dragons Back Race" has thin description**
-  - Page: `/events/dragons-back-race`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Etape Eryri" has thin description**
-  - Page: `/events/etape-eryri`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Great Welsh Marathon & Half" has thin description**
-  - Page: `/events/great-welsh-marathon-half`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Green Man Festival" has thin description**
-  - Page: `/events/green-man-festival`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "IRONKIDS Wales" has thin description**
-  - Page: `/events/ironkids-wales`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "IRONMAN Wales" has thin description**
-  - Page: `/events/ironman-wales`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Jones O Gymru Anglesey Half Marathon" has thin description**
-  - Page: `/events/jones-o-gymru-anglesey-half-marathon`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Llandudno Triathlon" has thin description**
-  - Page: `/events/llandudno-triathlon`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Llanelli Half Marathon & 10K" has thin description**
-  - Page: `/events/llanelli-half-marathon-10k`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Man vs Horse Marathon" has thin description**
-  - Page: `/events/man-vs-horse-marathon`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Medieval Backyard Ultra" has thin description**
-  - Page: `/events/medieval-backyard-ultra`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Nick Beer Llandudno 10K" has thin description**
-  - Page: `/events/nick-beer-llandudno-10k`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Ogwen Yr Helgi Du" has thin description**
-  - Page: `/events/ogwen-yr-helgi-du`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Pembrokeshire Coast Path Festival" has thin description**
-  - Page: `/events/pembrokeshire-coast-path-festival`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Pendine Sands Races" has thin description**
-  - Page: `/events/pendine-sands-races`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Radyr Trail Races" has thin description**
-  - Page: `/events/radyr-trail-races`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Red Bull Hardline" has thin description**
-  - Page: `/events/red-bull-hardline`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Red Warrior Challenge" has thin description**
-  - Page: `/events/red-warrior-challenge`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Rhosneigr Wave Classic" has thin description**
-  - Page: `/events/rhosneigr-wave-classic`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "SheUltra" has thin description**
-  - Page: `/events/sheultra`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Snowdonia Walking Festival" has thin description**
-  - Page: `/events/snowdonia-walking-festival`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Swansea Half Marathon" has thin description**
-  - Page: `/events/swansea-half-marathon`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Tour of Britain (Wales Stages)" has thin description**
-  - Page: `/events/tour-of-britain-wales-stages`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Trail Marathon Wales" has thin description**
-  - Page: `/events/trail-marathon-wales`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Trails & Tarmac Winter Backyard Ultra" has thin description**
-  - Page: `/events/trails-tarmac-winter-backyard-ultra`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Wakestock" has thin description**
-  - Page: `/events/wakestock`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Wales Coast Path Festival" has thin description**
-  - Page: `/events/wales-coast-path-festival`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Welsh Gravity Enduro Series" has thin description**
-  - Page: `/events/welsh-gravity-enduro-series`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "Welsh One Day Hill Climb" has thin description**
-  - Page: `/events/welsh-one-day-hill-climb`
-  - Fix: Write proper event description *(auto-fixable)*
-- 🟢 **Event "World Bog Snorkelling Championships" has thin description**
-  - Page: `/events/world-bog-snorkelling-championships`
-  - Fix: Write proper event description *(auto-fixable)*
-
 ## Combo Pages
 
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/zip-lining`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/coasteering`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/sea-kayaking`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/surfing`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/climbing`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/caving`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/wild-swimming`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/kayaking`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/canyoning`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/sup`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/running`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/trail-running`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/gorge-walking`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/underground-trampolines`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/toboggan`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/scenic-railway`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/horse-riding`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/fishing`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/wildlife-birdwatching`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/paintball-laser-tag`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/mid-wales/things-to-do/beaches`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
   - Page: `/snowdonia/things-to-do/coasteering`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
   - Page: `/snowdonia/things-to-do/sea-kayaking`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/snowdonia/things-to-do/surfing`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/snowdonia/things-to-do/kayaking`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
   - Page: `/snowdonia/things-to-do/canyoning`
@@ -496,13 +4219,7 @@
   - Page: `/snowdonia/things-to-do/running`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/snowdonia/things-to-do/underground-trampolines`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
   - Page: `/snowdonia/things-to-do/toboggan`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/snowdonia/things-to-do/scenic-railway`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
   - Page: `/snowdonia/things-to-do/horse-riding`
@@ -517,7 +4234,58 @@
   - Page: `/snowdonia/things-to-do/paintball-laser-tag`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/snowdonia/things-to-do/beaches`
+  - Page: `/snowdonia/things-to-do/attractions`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/hiking-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/rafting`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/gorge-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/mine-exploration`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/wildlife-boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/caving-potholing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/high-ropes`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/archery`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/bike-hire`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/mtb-coaching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/kitesurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/windsurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/wing-foiling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/sailing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/powerboating`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/snowdonia/things-to-do/jet-ski`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
   - Page: `/pembrokeshire/things-to-do/zip-lining`
@@ -574,196 +4342,58 @@
   - Page: `/pembrokeshire/things-to-do/beaches`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/zip-lining`
+  - Page: `/pembrokeshire/things-to-do/attractions`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/hiking`
+  - Page: `/pembrokeshire/things-to-do/hiking-scrambling`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/coasteering`
+  - Page: `/pembrokeshire/things-to-do/rafting`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/sea-kayaking`
+  - Page: `/pembrokeshire/things-to-do/gorge-scrambling`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/mountain-biking`
+  - Page: `/pembrokeshire/things-to-do/mine-exploration`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/climbing`
+  - Page: `/pembrokeshire/things-to-do/wildlife-boat-tour`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/caving`
+  - Page: `/pembrokeshire/things-to-do/caving-potholing`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/wild-swimming`
+  - Page: `/pembrokeshire/things-to-do/high-ropes`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/kayaking`
+  - Page: `/pembrokeshire/things-to-do/archery`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/canyoning`
+  - Page: `/pembrokeshire/things-to-do/bike-hire`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/sup`
+  - Page: `/pembrokeshire/things-to-do/mtb-coaching`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/running`
+  - Page: `/pembrokeshire/things-to-do/kitesurfing`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/trail-running`
+  - Page: `/pembrokeshire/things-to-do/windsurfing`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/gorge-walking`
+  - Page: `/pembrokeshire/things-to-do/wing-foiling`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/underground-trampolines`
+  - Page: `/pembrokeshire/things-to-do/sailing`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/toboggan`
+  - Page: `/pembrokeshire/things-to-do/powerboating`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/scenic-railway`
+  - Page: `/pembrokeshire/things-to-do/boat-tour`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/horse-riding`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/fishing`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/wildlife-birdwatching`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/paintball-laser-tag`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/llyn-peninsula/things-to-do/beaches`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/zip-lining`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/hiking`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/coasteering`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/sea-kayaking`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/surfing`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/caving`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/wild-swimming`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/kayaking`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/canyoning`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/sup`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/running`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/trail-running`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/gorge-walking`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/underground-trampolines`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/toboggan`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/scenic-railway`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/horse-riding`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/fishing`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/wildlife-birdwatching`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/paintball-laser-tag`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/north-wales/things-to-do/beaches`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/zip-lining`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/coasteering`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/sea-kayaking`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/surfing`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/mountain-biking`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/climbing`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/caving`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/wild-swimming`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/canyoning`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/sup`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/running`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/trail-running`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/gorge-walking`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/underground-trampolines`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/toboggan`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/scenic-railway`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/horse-riding`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/fishing`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/wildlife-birdwatching`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/paintball-laser-tag`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/wye-valley/things-to-do/beaches`
+  - Page: `/pembrokeshire/things-to-do/jet-ski`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
   - Page: `/brecon-beacons/things-to-do/zip-lining`
@@ -818,6 +4448,171 @@
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
   - Page: `/brecon-beacons/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/attractions`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/hiking-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/rafting`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/gorge-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/mine-exploration`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/wildlife-boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/caving-potholing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/high-ropes`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/archery`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/bike-hire`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/mtb-coaching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/kitesurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/windsurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/wing-foiling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/sailing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/powerboating`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/brecon-beacons/things-to-do/jet-ski`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/mountain-biking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/climbing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/attractions`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/hiking-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/rafting`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/gorge-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/mine-exploration`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/wildlife-boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/caving-potholing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/high-ropes`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/archery`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/bike-hire`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/mtb-coaching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/kitesurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/windsurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/wing-foiling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/sailing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/powerboating`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/gower/things-to-do/jet-ski`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
   - Page: `/anglesey/things-to-do/zip-lining`
@@ -880,61 +4675,58 @@
   - Page: `/anglesey/things-to-do/beaches`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/zip-lining`
+  - Page: `/anglesey/things-to-do/attractions`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/sea-kayaking`
+  - Page: `/anglesey/things-to-do/hiking-scrambling`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/mountain-biking`
+  - Page: `/anglesey/things-to-do/rafting`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/climbing`
+  - Page: `/anglesey/things-to-do/gorge-scrambling`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/caving`
+  - Page: `/anglesey/things-to-do/mine-exploration`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/kayaking`
+  - Page: `/anglesey/things-to-do/wildlife-boat-tour`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/canyoning`
+  - Page: `/anglesey/things-to-do/caving-potholing`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/sup`
+  - Page: `/anglesey/things-to-do/high-ropes`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/running`
+  - Page: `/anglesey/things-to-do/archery`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/trail-running`
+  - Page: `/anglesey/things-to-do/bike-hire`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/gorge-walking`
+  - Page: `/anglesey/things-to-do/mtb-coaching`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/underground-trampolines`
+  - Page: `/anglesey/things-to-do/kitesurfing`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/toboggan`
+  - Page: `/anglesey/things-to-do/windsurfing`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/scenic-railway`
+  - Page: `/anglesey/things-to-do/wing-foiling`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/horse-riding`
+  - Page: `/anglesey/things-to-do/sailing`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/fishing`
+  - Page: `/anglesey/things-to-do/powerboating`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/wildlife-birdwatching`
+  - Page: `/anglesey/things-to-do/boat-tour`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/paintball-laser-tag`
-  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
-- 🟢 **Combo page has no enrichment data file**
-  - Page: `/gower/things-to-do/beaches`
+  - Page: `/anglesey/things-to-do/jet-ski`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
   - Page: `/carmarthenshire/things-to-do/zip-lining`
@@ -1003,67 +4795,529 @@
   - Page: `/carmarthenshire/things-to-do/beaches`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/zip-lining`
+  - Page: `/carmarthenshire/things-to-do/attractions`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/hiking`
+  - Page: `/carmarthenshire/things-to-do/hiking-scrambling`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/coasteering`
+  - Page: `/carmarthenshire/things-to-do/rafting`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/sea-kayaking`
+  - Page: `/carmarthenshire/things-to-do/gorge-scrambling`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/climbing`
+  - Page: `/carmarthenshire/things-to-do/mine-exploration`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/caving`
+  - Page: `/carmarthenshire/things-to-do/wildlife-boat-tour`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/wild-swimming`
+  - Page: `/carmarthenshire/things-to-do/caving-potholing`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/kayaking`
+  - Page: `/carmarthenshire/things-to-do/high-ropes`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/canyoning`
+  - Page: `/carmarthenshire/things-to-do/archery`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/sup`
+  - Page: `/carmarthenshire/things-to-do/bike-hire`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/running`
+  - Page: `/carmarthenshire/things-to-do/mtb-coaching`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/trail-running`
+  - Page: `/carmarthenshire/things-to-do/kitesurfing`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/gorge-walking`
+  - Page: `/carmarthenshire/things-to-do/windsurfing`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/underground-trampolines`
+  - Page: `/carmarthenshire/things-to-do/wing-foiling`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/toboggan`
+  - Page: `/carmarthenshire/things-to-do/sailing`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/scenic-railway`
+  - Page: `/carmarthenshire/things-to-do/powerboating`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/horse-riding`
+  - Page: `/carmarthenshire/things-to-do/boat-tour`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/fishing`
+  - Page: `/carmarthenshire/things-to-do/jet-ski`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/wildlife-birdwatching`
+  - Page: `/mid-wales/things-to-do/zip-lining`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/paintball-laser-tag`
+  - Page: `/mid-wales/things-to-do/coasteering`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
-  - Page: `/south-wales/things-to-do/beaches`
+  - Page: `/mid-wales/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/surfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/climbing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/wild-swimming`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/attractions`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/hiking-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/rafting`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/gorge-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/mine-exploration`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/wildlife-boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/caving-potholing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/high-ropes`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/archery`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/bike-hire`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/mtb-coaching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/kitesurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/windsurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/wing-foiling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/sailing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/powerboating`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/mid-wales/things-to-do/jet-ski`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/hiking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/coasteering`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/surfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/wild-swimming`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/attractions`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/hiking-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/rafting`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/gorge-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/mine-exploration`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/wildlife-boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/caving-potholing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/high-ropes`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/archery`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/bike-hire`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/mtb-coaching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/kitesurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/windsurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/wing-foiling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/sailing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/powerboating`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/north-wales/things-to-do/jet-ski`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/coasteering`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/surfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/mountain-biking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/climbing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/wild-swimming`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/attractions`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/hiking-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/rafting`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/gorge-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/mine-exploration`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/wildlife-boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/caving-potholing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/high-ropes`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/archery`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/bike-hire`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/mtb-coaching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/kitesurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/windsurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/wing-foiling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/sailing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/powerboating`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/wye-valley/things-to-do/jet-ski`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/hiking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/coasteering`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/mountain-biking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/climbing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/wild-swimming`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/attractions`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/hiking-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/rafting`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/gorge-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/mine-exploration`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/wildlife-boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/caving-potholing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/high-ropes`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/archery`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/bike-hire`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/mtb-coaching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/kitesurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/windsurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/wing-foiling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/sailing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/powerboating`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/llyn-peninsula/things-to-do/jet-ski`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
   - Page: `/all-wales/things-to-do/zip-lining`
@@ -1133,5 +5387,176 @@
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 - 🟢 **Combo page has no enrichment data file**
   - Page: `/all-wales/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/attractions`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/hiking-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/rafting`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/gorge-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/mine-exploration`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/wildlife-boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/caving-potholing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/high-ropes`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/archery`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/bike-hire`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/mtb-coaching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/kitesurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/windsurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/wing-foiling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/sailing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/powerboating`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/all-wales/things-to-do/jet-ski`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/zip-lining`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/hiking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/coasteering`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/sea-kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/climbing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/caving`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/wild-swimming`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/kayaking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/canyoning`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/sup`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/trail-running`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/gorge-walking`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/underground-trampolines`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/toboggan`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/scenic-railway`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/horse-riding`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/fishing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/wildlife-birdwatching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/paintball-laser-tag`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/beaches`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/attractions`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/hiking-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/rafting`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/gorge-scrambling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/mine-exploration`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/wildlife-boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/caving-potholing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/high-ropes`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/archery`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/bike-hire`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/mtb-coaching`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/kitesurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/windsurfing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/wing-foiling`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/sailing`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/powerboating`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/boat-tour`
+  - Fix: Run deep research skill to generate combo content *(auto-fixable)*
+- 🟢 **Combo page has no enrichment data file**
+  - Page: `/south-wales/things-to-do/jet-ski`
   - Fix: Run deep research skill to generate combo content *(auto-fixable)*
 

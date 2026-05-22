@@ -1,11 +1,16 @@
 # Content Overhaul — Launch Priority Queue
 
+> Superseded for go-live planning by `plans/go-live-content-rescue-plan.md` as of 2026-05-22.
+>
+> This file remains useful as historical context for the Snowdonia batch work, but it should no longer drive launch sequencing. The launch goal is now: ship a smaller, cleaner, credible site, not expand the directory surface.
+
 Owner: content + editorial
 Tracker: `content/inventory/coverage-findings.csv`
 Working list (post-reconciliation): `plans/content-overhaul-batch-1-working-list.md`
-Status as of: 2026-05-18
+Current launch plan: `plans/go-live-content-rescue-plan.md`
+Status as of: 2026-05-22
 
-A practical, ordered queue for getting Adventure Wales content launch-ready. Sequenced so the highest-leverage gaps (Tier-1 destination draws, then visible operator media, then combo-page completeness) are unblocked first.
+Historical queue for getting Adventure Wales content launch-ready. The new go-live plan changes the emphasis from expansion to pruning, hiding weak pages, fixing commercial trust, and making the visible launch surface credible.
 
 ## What is already improved by PR #105
 

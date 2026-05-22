@@ -1,8 +1,8 @@
 # Content Overhaul — Launch Priority Queue
 
-> Superseded for go-live planning by `plans/go-live-content-rescue-plan.md` as of 2026-05-22.
+> Superseded for daily execution by `plans/daily-jules-content-improvement-system.md` as of 2026-05-22.
 >
-> This file remains useful as historical context for the Snowdonia batch work, but it should no longer drive launch sequencing. The launch goal is now: ship a smaller, cleaner, credible site, not expand the directory surface.
+> This file remains useful as historical context for the Snowdonia batch work. The corrected launch goal is: fix weak content at scale with daily Jules sessions until the directory is genuinely good. Do not treat hiding/noindexing as the main strategy.
 
 Owner: content + editorial
 Tracker: `content/inventory/coverage-findings.csv`
@@ -10,7 +10,7 @@ Working list (post-reconciliation): `plans/content-overhaul-batch-1-working-list
 Current launch plan: `plans/go-live-content-rescue-plan.md`
 Status as of: 2026-05-22
 
-Historical queue for getting Adventure Wales content launch-ready. The new go-live plan changes the emphasis from expansion to pruning, hiding weak pages, fixing commercial trust, and making the visible launch surface credible.
+Historical queue for getting Adventure Wales content launch-ready. The new daily Jules system changes the emphasis from manual batching to high-throughput fixing: priority operators, combo pages, image validation, and event refresh run every day until the site is credible across the corpus.
 
 ## What is already improved by PR #105
 

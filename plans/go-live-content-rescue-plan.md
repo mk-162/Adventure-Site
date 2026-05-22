@@ -1,5 +1,7 @@
 # Adventure Wales Go-Live Content Rescue Plan
 
+> **2026-05-22 correction:** This plan is now subordinate to `plans/daily-jules-content-improvement-system.md`. The primary strategy is to fix content at scale using daily Jules sessions, not to shrink the site by hiding/noindexing weak pages. Any hiding/noindexing is temporary safety-only for pages that are factually wrong, legally risky, or actively misleading.
+
 Status date: 2026-05-22
 Primary goal: put the site live with content that does not look unfinished, generic, or untrustworthy.
 Replaces: `plans/content-overhaul-priority-queue.md` as the working launch plan.

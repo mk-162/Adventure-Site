@@ -1,0 +1,2505 @@
+{
+  "generatedAt": "2026-06-03T22:18:12.716Z",
+  "tasks": [
+    {
+      "id": "content-ops-001-operator-adventure-parc-snowdonia",
+      "content_item_id": "operator-adventure-parc-snowdonia",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/adventure-parc-snowdonia",
+      "title": "Adventure Parc Snowdonia",
+      "priority": 59,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-adventure-parc-snowdonia: Adventure Parc Snowdonia.\nChannel: commercial. Content type: operator. Route/slug: /directory/adventure-parc-snowdonia.\nCommercial tier: strategic_big_player_or_launch_priority.\nKnown blocker: Operator \"Adventure Parc Snowdonia\" missing: no description, no cover image, no logo, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-adventure-parc-snowdonia.json"
+    },
+    {
+      "id": "content-ops-002-operator-bala-watersports",
+      "content_item_id": "operator-bala-watersports",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/bala-watersports",
+      "title": "Bala Watersports",
+      "priority": 59,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-bala-watersports: Bala Watersports.\nChannel: commercial. Content type: operator. Route/slug: /directory/bala-watersports.\nCommercial tier: strategic_big_player_or_launch_priority.\nKnown blocker: Operator \"Bala Watersports\" missing: no description, no cover image, no logo, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-bala-watersports.json"
+    },
+    {
+      "id": "content-ops-003-operator-beics-brenin",
+      "content_item_id": "operator-beics-brenin",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/beics-brenin",
+      "title": "Beics Brenin",
+      "priority": 59,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-beics-brenin: Beics Brenin.\nChannel: commercial. Content type: operator. Route/slug: /directory/beics-brenin.\nCommercial tier: strategic_big_player_or_launch_priority.\nKnown blocker: Operator \"Beics Brenin\" missing: no description, no cover image, no logo, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-beics-brenin.json"
+    },
+    {
+      "id": "content-ops-004-operator-snowdonia-adventures",
+      "content_item_id": "operator-snowdonia-adventures",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/snowdonia-adventures",
+      "title": "Snowdonia Adventures",
+      "priority": 59,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-snowdonia-adventures: Snowdonia Adventures.\nChannel: commercial. Content type: operator. Route/slug: /directory/snowdonia-adventures.\nCommercial tier: strategic_big_player_or_launch_priority.\nKnown blocker: Operator \"Snowdonia Adventures\" missing: no cover image, no logo, no coordinates, no phone, no email.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-snowdonia-adventures.json"
+    },
+    {
+      "id": "content-ops-005-operator-snowdonia-mtb-days",
+      "content_item_id": "operator-snowdonia-mtb-days",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/snowdonia-mtb-days",
+      "title": "Snowdonia Mtb Days",
+      "priority": 59,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-snowdonia-mtb-days: Snowdonia Mtb Days.\nChannel: commercial. Content type: operator. Route/slug: /directory/snowdonia-mtb-days.\nCommercial tier: strategic_big_player_or_launch_priority.\nKnown blocker: Operator \"Snowdonia MTB Days\" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-snowdonia-mtb-days.json"
+    },
+    {
+      "id": "content-ops-006-operator-snowdonia-watersports",
+      "content_item_id": "operator-snowdonia-watersports",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/snowdonia-watersports",
+      "title": "Snowdonia Watersports",
+      "priority": 59,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-snowdonia-watersports: Snowdonia Watersports.\nChannel: commercial. Content type: operator. Route/slug: /directory/snowdonia-watersports.\nCommercial tier: strategic_big_player_or_launch_priority.\nKnown blocker: Operator \"Snowdonia Watersports\" missing: no description, no cover image, no logo, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-snowdonia-watersports.json"
+    },
+    {
+      "id": "content-ops-007-activity-location-snowdonia-beaches",
+      "content_item_id": "activity-location-snowdonia-beaches",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/beaches",
+      "title": "Snowdonia / Beaches",
+      "priority": 50,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-beaches: Snowdonia / Beaches.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/beaches.\nRegion: snowdonia.\nActivity: beaches.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-beaches.json"
+    },
+    {
+      "id": "content-ops-008-activity-location-snowdonia-caving",
+      "content_item_id": "activity-location-snowdonia-caving",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/caving",
+      "title": "Snowdonia / Caving",
+      "priority": 50,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-caving: Snowdonia / Caving.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/caving.\nRegion: snowdonia.\nActivity: caving.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-caving.json"
+    },
+    {
+      "id": "content-ops-009-activity-location-snowdonia-climbing",
+      "content_item_id": "activity-location-snowdonia-climbing",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/climbing",
+      "title": "Snowdonia / Climbing",
+      "priority": 50,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-climbing: Snowdonia / Climbing.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/climbing.\nRegion: snowdonia.\nActivity: climbing.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-climbing.json"
+    },
+    {
+      "id": "content-ops-010-activity-location-snowdonia-gorge-walking",
+      "content_item_id": "activity-location-snowdonia-gorge-walking",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/gorge-walking",
+      "title": "Snowdonia / Gorge Walking",
+      "priority": 50,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-gorge-walking: Snowdonia / Gorge Walking.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/gorge-walking.\nRegion: snowdonia.\nActivity: gorge-walking.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-gorge-walking.json"
+    },
+    {
+      "id": "content-ops-011-activity-location-snowdonia-hiking",
+      "content_item_id": "activity-location-snowdonia-hiking",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/hiking",
+      "title": "Snowdonia / Hiking",
+      "priority": 50,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-hiking: Snowdonia / Hiking.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/hiking.\nRegion: snowdonia.\nActivity: hiking.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-hiking.json"
+    },
+    {
+      "id": "content-ops-012-activity-location-snowdonia-kayaking",
+      "content_item_id": "activity-location-snowdonia-kayaking",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/kayaking",
+      "title": "Snowdonia / Kayaking",
+      "priority": 50,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-kayaking: Snowdonia / Kayaking.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/kayaking.\nRegion: snowdonia.\nActivity: kayaking.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-kayaking.json"
+    },
+    {
+      "id": "content-ops-013-activity-location-snowdonia-mountain-biking",
+      "content_item_id": "activity-location-snowdonia-mountain-biking",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/mountain-biking",
+      "title": "Snowdonia / Mountain Biking",
+      "priority": 50,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-mountain-biking: Snowdonia / Mountain Biking.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/mountain-biking.\nRegion: snowdonia.\nActivity: mountain-biking.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-mountain-biking.json"
+    },
+    {
+      "id": "content-ops-014-activity-location-snowdonia-scenic-railway",
+      "content_item_id": "activity-location-snowdonia-scenic-railway",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/scenic-railway",
+      "title": "Snowdonia / Scenic Railway",
+      "priority": 50,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-scenic-railway: Snowdonia / Scenic Railway.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/scenic-railway.\nRegion: snowdonia.\nActivity: scenic-railway.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-scenic-railway.json"
+    },
+    {
+      "id": "content-ops-015-activity-location-snowdonia-surfing",
+      "content_item_id": "activity-location-snowdonia-surfing",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/surfing",
+      "title": "Snowdonia / Surfing",
+      "priority": 50,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-surfing: Snowdonia / Surfing.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/surfing.\nRegion: snowdonia.\nActivity: surfing.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-surfing.json"
+    },
+    {
+      "id": "content-ops-016-activity-location-snowdonia-trail-running",
+      "content_item_id": "activity-location-snowdonia-trail-running",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/trail-running",
+      "title": "Snowdonia / Trail Running",
+      "priority": 50,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-trail-running: Snowdonia / Trail Running.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/trail-running.\nRegion: snowdonia.\nActivity: trail-running.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-trail-running.json"
+    },
+    {
+      "id": "content-ops-017-activity-location-snowdonia-underground-trampolines",
+      "content_item_id": "activity-location-snowdonia-underground-trampolines",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/underground-trampolines",
+      "title": "Snowdonia / Underground Trampolines",
+      "priority": 50,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-underground-trampolines: Snowdonia / Underground Trampolines.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/underground-trampolines.\nRegion: snowdonia.\nActivity: underground-trampolines.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-underground-trampolines.json"
+    },
+    {
+      "id": "content-ops-018-activity-location-snowdonia-wild-swimming",
+      "content_item_id": "activity-location-snowdonia-wild-swimming",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/wild-swimming",
+      "title": "Snowdonia / Wild Swimming",
+      "priority": 50,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-wild-swimming: Snowdonia / Wild Swimming.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/wild-swimming.\nRegion: snowdonia.\nActivity: wild-swimming.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-wild-swimming.json"
+    },
+    {
+      "id": "content-ops-019-activity-location-snowdonia-zip-lining",
+      "content_item_id": "activity-location-snowdonia-zip-lining",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/zip-lining",
+      "title": "Snowdonia / Zip Lining",
+      "priority": 50,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-zip-lining: Snowdonia / Zip Lining.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/zip-lining.\nRegion: snowdonia.\nActivity: zip-lining.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-zip-lining.json"
+    },
+    {
+      "id": "content-ops-020-operator-antur-stiniog",
+      "content_item_id": "operator-antur-stiniog",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/antur-stiniog",
+      "title": "Antur Stiniog",
+      "priority": 47,
+      "status": "qa_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-antur-stiniog: Antur Stiniog.\nChannel: commercial. Content type: operator. Route/slug: /directory/antur-stiniog.\nCommercial tier: strategic_big_player_or_launch_priority.\nKnown blocker: Operator \"Antur Stiniog\" missing: no cover image.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-antur-stiniog.json"
+    },
+    {
+      "id": "content-ops-021-operator-bikepark-wales",
+      "content_item_id": "operator-bikepark-wales",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/bikepark-wales",
+      "title": "Bikepark Wales",
+      "priority": 47,
+      "status": "qa_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-bikepark-wales: Bikepark Wales.\nChannel: commercial. Content type: operator. Route/slug: /directory/bikepark-wales.\nCommercial tier: strategic_big_player_or_launch_priority.\nKnown blocker: Operator \"BikePark Wales\" missing: no cover image.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-bikepark-wales.json"
+    },
+    {
+      "id": "content-ops-022-operator-coed-y-brenin-nrw",
+      "content_item_id": "operator-coed-y-brenin-nrw",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/coed-y-brenin-nrw",
+      "title": "Coed Y Brenin Nrw",
+      "priority": 47,
+      "status": "qa_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-coed-y-brenin-nrw: Coed Y Brenin Nrw.\nChannel: commercial. Content type: operator. Route/slug: /directory/coed-y-brenin-nrw.\nCommercial tier: strategic_big_player_or_launch_priority.\nKnown blocker: Operator \"Coed y Brenin (NRW)\" missing: no cover image.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-coed-y-brenin-nrw.json"
+    },
+    {
+      "id": "content-ops-023-operator-plas-y-brenin",
+      "content_item_id": "operator-plas-y-brenin",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/plas-y-brenin",
+      "title": "Plas Y Brenin",
+      "priority": 47,
+      "status": "qa_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-plas-y-brenin: Plas Y Brenin.\nChannel: commercial. Content type: operator. Route/slug: /directory/plas-y-brenin.\nCommercial tier: strategic_big_player_or_launch_priority.\nKnown blocker: Operator \"Plas y Brenin\" missing: no cover image.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-plas-y-brenin.json"
+    },
+    {
+      "id": "content-ops-024-operator-snowdonia-mountain-guides",
+      "content_item_id": "operator-snowdonia-mountain-guides",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/snowdonia-mountain-guides",
+      "title": "Snowdonia Mountain Guides",
+      "priority": 47,
+      "status": "qa_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-snowdonia-mountain-guides: Snowdonia Mountain Guides.\nChannel: commercial. Content type: operator. Route/slug: /directory/snowdonia-mountain-guides.\nCommercial tier: strategic_big_player_or_launch_priority.\nKnown blocker: Operator \"Snowdonia Mountain Guides\" missing: no cover image.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-snowdonia-mountain-guides.json"
+    },
+    {
+      "id": "content-ops-025-operator-zip-world",
+      "content_item_id": "operator-zip-world",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/zip-world",
+      "title": "Zip World",
+      "priority": 47,
+      "status": "qa_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-zip-world: Zip World.\nChannel: commercial. Content type: operator. Route/slug: /directory/zip-world.\nCommercial tier: strategic_big_player_or_launch_priority.\nKnown blocker: Operator \"Zip World\" missing: no cover image.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-zip-world.json"
+    },
+    {
+      "id": "content-ops-026-itinerary-snowdonia-adventure-weekend",
+      "content_item_id": "itinerary-snowdonia-adventure-weekend",
+      "channel": "dynamic",
+      "content_type": "itinerary",
+      "route_or_slug": "/itineraries/snowdonia-adventure-weekend",
+      "title": "Snowdonia Adventure Weekend",
+      "priority": 45,
+      "status": "research_needed",
+      "recommended_skill": "directory-itinerary-builder",
+      "task_type": "research",
+      "brief": "Improve content item itinerary-snowdonia-adventure-weekend: Snowdonia Adventure Weekend.\nChannel: dynamic. Content type: itinerary. Route/slug: /itineraries/snowdonia-adventure-weekend.\nRegion: itineraries.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/itinerary-snowdonia-adventure-weekend.json"
+    },
+    {
+      "id": "content-ops-027-location-landing-anglesey",
+      "content_item_id": "location-landing-anglesey",
+      "channel": "evergreen",
+      "content_type": "location_landing",
+      "route_or_slug": "/anglesey",
+      "title": "Anglesey",
+      "priority": 45,
+      "status": "research_needed",
+      "recommended_skill": "directory-region-page",
+      "task_type": "research",
+      "brief": "Improve content item location-landing-anglesey: Anglesey.\nChannel: evergreen. Content type: location_landing. Route/slug: /anglesey.\nRegion: anglesey.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/location-landing-anglesey.json"
+    },
+    {
+      "id": "content-ops-028-location-landing-brecon-beacons",
+      "content_item_id": "location-landing-brecon-beacons",
+      "channel": "evergreen",
+      "content_type": "location_landing",
+      "route_or_slug": "/brecon-beacons",
+      "title": "Brecon Beacons",
+      "priority": 45,
+      "status": "research_needed",
+      "recommended_skill": "directory-region-page",
+      "task_type": "research",
+      "brief": "Improve content item location-landing-brecon-beacons: Brecon Beacons.\nChannel: evergreen. Content type: location_landing. Route/slug: /brecon-beacons.\nRegion: brecon-beacons.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/location-landing-brecon-beacons.json"
+    },
+    {
+      "id": "content-ops-029-location-landing-carmarthenshire",
+      "content_item_id": "location-landing-carmarthenshire",
+      "channel": "evergreen",
+      "content_type": "location_landing",
+      "route_or_slug": "/carmarthenshire",
+      "title": "Carmarthenshire",
+      "priority": 45,
+      "status": "research_needed",
+      "recommended_skill": "directory-region-page",
+      "task_type": "research",
+      "brief": "Improve content item location-landing-carmarthenshire: Carmarthenshire.\nChannel: evergreen. Content type: location_landing. Route/slug: /carmarthenshire.\nRegion: carmarthenshire.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/location-landing-carmarthenshire.json"
+    },
+    {
+      "id": "content-ops-030-location-landing-gower",
+      "content_item_id": "location-landing-gower",
+      "channel": "evergreen",
+      "content_type": "location_landing",
+      "route_or_slug": "/gower",
+      "title": "Gower",
+      "priority": 45,
+      "status": "research_needed",
+      "recommended_skill": "directory-region-page",
+      "task_type": "research",
+      "brief": "Improve content item location-landing-gower: Gower.\nChannel: evergreen. Content type: location_landing. Route/slug: /gower.\nRegion: gower.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/location-landing-gower.json"
+    },
+    {
+      "id": "content-ops-031-location-landing-llyn-peninsula",
+      "content_item_id": "location-landing-llyn-peninsula",
+      "channel": "evergreen",
+      "content_type": "location_landing",
+      "route_or_slug": "/llyn-peninsula",
+      "title": "Llyn Peninsula",
+      "priority": 45,
+      "status": "research_needed",
+      "recommended_skill": "directory-region-page",
+      "task_type": "research",
+      "brief": "Improve content item location-landing-llyn-peninsula: Llyn Peninsula.\nChannel: evergreen. Content type: location_landing. Route/slug: /llyn-peninsula.\nRegion: llyn-peninsula.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/location-landing-llyn-peninsula.json"
+    },
+    {
+      "id": "content-ops-032-location-landing-mid-wales",
+      "content_item_id": "location-landing-mid-wales",
+      "channel": "evergreen",
+      "content_type": "location_landing",
+      "route_or_slug": "/mid-wales",
+      "title": "Mid Wales",
+      "priority": 45,
+      "status": "research_needed",
+      "recommended_skill": "directory-region-page",
+      "task_type": "research",
+      "brief": "Improve content item location-landing-mid-wales: Mid Wales.\nChannel: evergreen. Content type: location_landing. Route/slug: /mid-wales.\nRegion: mid-wales.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/location-landing-mid-wales.json"
+    },
+    {
+      "id": "content-ops-033-location-landing-north-wales",
+      "content_item_id": "location-landing-north-wales",
+      "channel": "evergreen",
+      "content_type": "location_landing",
+      "route_or_slug": "/north-wales",
+      "title": "North Wales",
+      "priority": 45,
+      "status": "research_needed",
+      "recommended_skill": "directory-region-page",
+      "task_type": "research",
+      "brief": "Improve content item location-landing-north-wales: North Wales.\nChannel: evergreen. Content type: location_landing. Route/slug: /north-wales.\nRegion: north-wales.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/location-landing-north-wales.json"
+    },
+    {
+      "id": "content-ops-034-location-landing-pembrokeshire",
+      "content_item_id": "location-landing-pembrokeshire",
+      "channel": "evergreen",
+      "content_type": "location_landing",
+      "route_or_slug": "/pembrokeshire",
+      "title": "Pembrokeshire",
+      "priority": 45,
+      "status": "research_needed",
+      "recommended_skill": "directory-region-page",
+      "task_type": "research",
+      "brief": "Improve content item location-landing-pembrokeshire: Pembrokeshire.\nChannel: evergreen. Content type: location_landing. Route/slug: /pembrokeshire.\nRegion: pembrokeshire.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/location-landing-pembrokeshire.json"
+    },
+    {
+      "id": "content-ops-035-location-landing-snowdonia",
+      "content_item_id": "location-landing-snowdonia",
+      "channel": "evergreen",
+      "content_type": "location_landing",
+      "route_or_slug": "/snowdonia",
+      "title": "Snowdonia",
+      "priority": 45,
+      "status": "research_needed",
+      "recommended_skill": "directory-region-page",
+      "task_type": "research",
+      "brief": "Improve content item location-landing-snowdonia: Snowdonia.\nChannel: evergreen. Content type: location_landing. Route/slug: /snowdonia.\nRegion: snowdonia.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/location-landing-snowdonia.json"
+    },
+    {
+      "id": "content-ops-036-location-landing-south-wales",
+      "content_item_id": "location-landing-south-wales",
+      "channel": "evergreen",
+      "content_type": "location_landing",
+      "route_or_slug": "/south-wales",
+      "title": "South Wales",
+      "priority": 45,
+      "status": "research_needed",
+      "recommended_skill": "directory-region-page",
+      "task_type": "research",
+      "brief": "Improve content item location-landing-south-wales: South Wales.\nChannel: evergreen. Content type: location_landing. Route/slug: /south-wales.\nRegion: south-wales.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/location-landing-south-wales.json"
+    },
+    {
+      "id": "content-ops-037-location-landing-wye-valley",
+      "content_item_id": "location-landing-wye-valley",
+      "channel": "evergreen",
+      "content_type": "location_landing",
+      "route_or_slug": "/wye-valley",
+      "title": "Wye Valley",
+      "priority": 45,
+      "status": "research_needed",
+      "recommended_skill": "directory-region-page",
+      "task_type": "research",
+      "brief": "Improve content item location-landing-wye-valley: Wye Valley.\nChannel: evergreen. Content type: location_landing. Route/slug: /wye-valley.\nRegion: wye-valley.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/location-landing-wye-valley.json"
+    },
+    {
+      "id": "content-ops-038-activity-location-snowdonia-archery",
+      "content_item_id": "activity-location-snowdonia-archery",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/archery",
+      "title": "Snowdonia / Archery",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-archery: Snowdonia / Archery.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/archery.\nRegion: snowdonia.\nActivity: archery.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-archery.json"
+    },
+    {
+      "id": "content-ops-039-activity-location-snowdonia-attractions",
+      "content_item_id": "activity-location-snowdonia-attractions",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/attractions",
+      "title": "Snowdonia / Attractions",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-attractions: Snowdonia / Attractions.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/attractions.\nRegion: snowdonia.\nActivity: attractions.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-attractions.json"
+    },
+    {
+      "id": "content-ops-040-activity-location-snowdonia-bike-hire",
+      "content_item_id": "activity-location-snowdonia-bike-hire",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/bike-hire",
+      "title": "Snowdonia / Bike Hire",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-bike-hire: Snowdonia / Bike Hire.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/bike-hire.\nRegion: snowdonia.\nActivity: bike-hire.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-bike-hire.json"
+    },
+    {
+      "id": "content-ops-041-activity-location-snowdonia-boat-tour",
+      "content_item_id": "activity-location-snowdonia-boat-tour",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/boat-tour",
+      "title": "Snowdonia / Boat Tour",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-boat-tour: Snowdonia / Boat Tour.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/boat-tour.\nRegion: snowdonia.\nActivity: boat-tour.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-boat-tour.json"
+    },
+    {
+      "id": "content-ops-042-activity-location-snowdonia-canyoning",
+      "content_item_id": "activity-location-snowdonia-canyoning",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/canyoning",
+      "title": "Snowdonia / Canyoning",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-canyoning: Snowdonia / Canyoning.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/canyoning.\nRegion: snowdonia.\nActivity: canyoning.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-canyoning.json"
+    },
+    {
+      "id": "content-ops-043-activity-location-snowdonia-caving-potholing",
+      "content_item_id": "activity-location-snowdonia-caving-potholing",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/caving-potholing",
+      "title": "Snowdonia / Caving Potholing",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-caving-potholing: Snowdonia / Caving Potholing.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/caving-potholing.\nRegion: snowdonia.\nActivity: caving-potholing.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-caving-potholing.json"
+    },
+    {
+      "id": "content-ops-044-activity-location-snowdonia-coasteering",
+      "content_item_id": "activity-location-snowdonia-coasteering",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/coasteering",
+      "title": "Snowdonia / Coasteering",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-coasteering: Snowdonia / Coasteering.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/coasteering.\nRegion: snowdonia.\nActivity: coasteering.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-coasteering.json"
+    },
+    {
+      "id": "content-ops-045-activity-location-snowdonia-fishing",
+      "content_item_id": "activity-location-snowdonia-fishing",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/fishing",
+      "title": "Snowdonia / Fishing",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-fishing: Snowdonia / Fishing.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/fishing.\nRegion: snowdonia.\nActivity: fishing.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-fishing.json"
+    },
+    {
+      "id": "content-ops-046-activity-location-snowdonia-gorge-scrambling",
+      "content_item_id": "activity-location-snowdonia-gorge-scrambling",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/gorge-scrambling",
+      "title": "Snowdonia / Gorge Scrambling",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-gorge-scrambling: Snowdonia / Gorge Scrambling.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/gorge-scrambling.\nRegion: snowdonia.\nActivity: gorge-scrambling.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-gorge-scrambling.json"
+    },
+    {
+      "id": "content-ops-047-activity-location-snowdonia-high-ropes",
+      "content_item_id": "activity-location-snowdonia-high-ropes",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/high-ropes",
+      "title": "Snowdonia / High Ropes",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-high-ropes: Snowdonia / High Ropes.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/high-ropes.\nRegion: snowdonia.\nActivity: high-ropes.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-high-ropes.json"
+    },
+    {
+      "id": "content-ops-048-activity-location-snowdonia-hiking-scrambling",
+      "content_item_id": "activity-location-snowdonia-hiking-scrambling",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/hiking-scrambling",
+      "title": "Snowdonia / Hiking Scrambling",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-hiking-scrambling: Snowdonia / Hiking Scrambling.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/hiking-scrambling.\nRegion: snowdonia.\nActivity: hiking-scrambling.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-hiking-scrambling.json"
+    },
+    {
+      "id": "content-ops-049-activity-location-snowdonia-horse-riding",
+      "content_item_id": "activity-location-snowdonia-horse-riding",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/horse-riding",
+      "title": "Snowdonia / Horse Riding",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-horse-riding: Snowdonia / Horse Riding.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/horse-riding.\nRegion: snowdonia.\nActivity: horse-riding.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-horse-riding.json"
+    },
+    {
+      "id": "content-ops-050-activity-location-snowdonia-jet-ski",
+      "content_item_id": "activity-location-snowdonia-jet-ski",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/jet-ski",
+      "title": "Snowdonia / Jet Ski",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-jet-ski: Snowdonia / Jet Ski.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/jet-ski.\nRegion: snowdonia.\nActivity: jet-ski.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-jet-ski.json"
+    },
+    {
+      "id": "content-ops-051-activity-location-snowdonia-kitesurfing",
+      "content_item_id": "activity-location-snowdonia-kitesurfing",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/kitesurfing",
+      "title": "Snowdonia / Kitesurfing",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-kitesurfing: Snowdonia / Kitesurfing.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/kitesurfing.\nRegion: snowdonia.\nActivity: kitesurfing.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-kitesurfing.json"
+    },
+    {
+      "id": "content-ops-052-activity-location-snowdonia-mine-exploration",
+      "content_item_id": "activity-location-snowdonia-mine-exploration",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/mine-exploration",
+      "title": "Snowdonia / Mine Exploration",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-mine-exploration: Snowdonia / Mine Exploration.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/mine-exploration.\nRegion: snowdonia.\nActivity: mine-exploration.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-mine-exploration.json"
+    },
+    {
+      "id": "content-ops-053-activity-location-snowdonia-mtb-coaching",
+      "content_item_id": "activity-location-snowdonia-mtb-coaching",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/mtb-coaching",
+      "title": "Snowdonia / Mtb Coaching",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-mtb-coaching: Snowdonia / Mtb Coaching.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/mtb-coaching.\nRegion: snowdonia.\nActivity: mtb-coaching.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-mtb-coaching.json"
+    },
+    {
+      "id": "content-ops-054-activity-location-snowdonia-paintball-laser-tag",
+      "content_item_id": "activity-location-snowdonia-paintball-laser-tag",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/paintball-laser-tag",
+      "title": "Snowdonia / Paintball Laser Tag",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-paintball-laser-tag: Snowdonia / Paintball Laser Tag.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/paintball-laser-tag.\nRegion: snowdonia.\nActivity: paintball-laser-tag.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-paintball-laser-tag.json"
+    },
+    {
+      "id": "content-ops-055-activity-location-snowdonia-powerboating",
+      "content_item_id": "activity-location-snowdonia-powerboating",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/powerboating",
+      "title": "Snowdonia / Powerboating",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-powerboating: Snowdonia / Powerboating.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/powerboating.\nRegion: snowdonia.\nActivity: powerboating.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-powerboating.json"
+    },
+    {
+      "id": "content-ops-056-activity-location-snowdonia-rafting",
+      "content_item_id": "activity-location-snowdonia-rafting",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/rafting",
+      "title": "Snowdonia / Rafting",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-rafting: Snowdonia / Rafting.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/rafting.\nRegion: snowdonia.\nActivity: rafting.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-rafting.json"
+    },
+    {
+      "id": "content-ops-057-activity-location-snowdonia-running",
+      "content_item_id": "activity-location-snowdonia-running",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/running",
+      "title": "Snowdonia / Running",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-running: Snowdonia / Running.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/running.\nRegion: snowdonia.\nActivity: running.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-running.json"
+    },
+    {
+      "id": "content-ops-058-activity-location-snowdonia-sailing",
+      "content_item_id": "activity-location-snowdonia-sailing",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/sailing",
+      "title": "Snowdonia / Sailing",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-sailing: Snowdonia / Sailing.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/sailing.\nRegion: snowdonia.\nActivity: sailing.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-sailing.json"
+    },
+    {
+      "id": "content-ops-059-activity-location-snowdonia-sea-kayaking",
+      "content_item_id": "activity-location-snowdonia-sea-kayaking",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/sea-kayaking",
+      "title": "Snowdonia / Sea Kayaking",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-sea-kayaking: Snowdonia / Sea Kayaking.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/sea-kayaking.\nRegion: snowdonia.\nActivity: sea-kayaking.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-sea-kayaking.json"
+    },
+    {
+      "id": "content-ops-060-activity-location-snowdonia-sup",
+      "content_item_id": "activity-location-snowdonia-sup",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/sup",
+      "title": "Snowdonia / Sup",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-sup: Snowdonia / Sup.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/sup.\nRegion: snowdonia.\nActivity: sup.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-sup.json"
+    },
+    {
+      "id": "content-ops-061-activity-location-snowdonia-toboggan",
+      "content_item_id": "activity-location-snowdonia-toboggan",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/toboggan",
+      "title": "Snowdonia / Toboggan",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-toboggan: Snowdonia / Toboggan.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/toboggan.\nRegion: snowdonia.\nActivity: toboggan.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-toboggan.json"
+    },
+    {
+      "id": "content-ops-062-activity-location-snowdonia-wildlife-birdwatching",
+      "content_item_id": "activity-location-snowdonia-wildlife-birdwatching",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/wildlife-birdwatching",
+      "title": "Snowdonia / Wildlife Birdwatching",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-wildlife-birdwatching: Snowdonia / Wildlife Birdwatching.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/wildlife-birdwatching.\nRegion: snowdonia.\nActivity: wildlife-birdwatching.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-wildlife-birdwatching.json"
+    },
+    {
+      "id": "content-ops-063-activity-location-snowdonia-wildlife-boat-tour",
+      "content_item_id": "activity-location-snowdonia-wildlife-boat-tour",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/wildlife-boat-tour",
+      "title": "Snowdonia / Wildlife Boat Tour",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-wildlife-boat-tour: Snowdonia / Wildlife Boat Tour.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/wildlife-boat-tour.\nRegion: snowdonia.\nActivity: wildlife-boat-tour.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-wildlife-boat-tour.json"
+    },
+    {
+      "id": "content-ops-064-activity-location-snowdonia-windsurfing",
+      "content_item_id": "activity-location-snowdonia-windsurfing",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/windsurfing",
+      "title": "Snowdonia / Windsurfing",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-windsurfing: Snowdonia / Windsurfing.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/windsurfing.\nRegion: snowdonia.\nActivity: windsurfing.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-windsurfing.json"
+    },
+    {
+      "id": "content-ops-065-activity-location-snowdonia-wing-foiling",
+      "content_item_id": "activity-location-snowdonia-wing-foiling",
+      "channel": "evergreen",
+      "content_type": "activity_location",
+      "route_or_slug": "/snowdonia/things-to-do/wing-foiling",
+      "title": "Snowdonia / Wing Foiling",
+      "priority": 41,
+      "status": "qa_needed",
+      "recommended_skill": "directory-activity-region-page",
+      "task_type": "qa",
+      "brief": "Improve content item activity-location-snowdonia-wing-foiling: Snowdonia / Wing Foiling.\nChannel: evergreen. Content type: activity_location. Route/slug: /snowdonia/things-to-do/wing-foiling.\nRegion: snowdonia.\nActivity: wing-foiling.\nKnown blocker: Combo page has no enrichment data file.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/activity-location-snowdonia-wing-foiling.json"
+    },
+    {
+      "id": "content-ops-066-operator-ace-adventure",
+      "content_item_id": "operator-ace-adventure",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/ace-adventure",
+      "title": "Ace Adventure",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-ace-adventure: Ace Adventure.\nChannel: commercial. Content type: operator. Route/slug: /directory/ace-adventure.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Ace Adventure\" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-ace-adventure.json"
+    },
+    {
+      "id": "content-ops-067-operator-adrenaline-mtb",
+      "content_item_id": "operator-adrenaline-mtb",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/adrenaline-mtb",
+      "title": "Adrenaline Mtb",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-adrenaline-mtb: Adrenaline Mtb.\nChannel: commercial. Content type: operator. Route/slug: /directory/adrenaline-mtb.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Adrenaline MTB\" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-adrenaline-mtb.json"
+    },
+    {
+      "id": "content-ops-068-operator-adventure-beyond",
+      "content_item_id": "operator-adventure-beyond",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/adventure-beyond",
+      "title": "Adventure Beyond",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-adventure-beyond: Adventure Beyond.\nChannel: commercial. Content type: operator. Route/slug: /directory/adventure-beyond.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Adventure Beyond\" missing: no description, no cover image, no logo, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-adventure-beyond.json"
+    },
+    {
+      "id": "content-ops-069-operator-adventure-tours-uk",
+      "content_item_id": "operator-adventure-tours-uk",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/adventure-tours-uk",
+      "title": "Adventure Tours Uk",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-adventure-tours-uk: Adventure Tours Uk.\nChannel: commercial. Content type: operator. Route/slug: /directory/adventure-tours-uk.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Adventure Tours UK\" missing: no cover image, no logo, no phone, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-adventure-tours-uk.json"
+    },
+    {
+      "id": "content-ops-070-operator-afan-a-blast",
+      "content_item_id": "operator-afan-a-blast",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/afan-a-blast",
+      "title": "Afan A Blast",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-afan-a-blast: Afan A Blast.\nChannel: commercial. Content type: operator. Route/slug: /directory/afan-a-blast.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Afan A Blast\" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-afan-a-blast.json"
+    },
+    {
+      "id": "content-ops-071-operator-afan-forest-park",
+      "content_item_id": "operator-afan-forest-park",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/afan-forest-park",
+      "title": "Afan Forest Park",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-afan-forest-park: Afan Forest Park.\nChannel: commercial. Content type: operator. Route/slug: /directory/afan-forest-park.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Afan Forest Park\" missing: no cover image, no logo, no phone, no email.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-afan-forest-park.json"
+    },
+    {
+      "id": "content-ops-072-operator-arete-outdoor-centre",
+      "content_item_id": "operator-arete-outdoor-centre",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/arete-outdoor-centre",
+      "title": "Arete Outdoor Centre",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-arete-outdoor-centre: Arete Outdoor Centre.\nChannel: commercial. Content type: operator. Route/slug: /directory/arete-outdoor-centre.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Arete Outdoor Centre\" missing: no description, no cover image, no logo, no coordinates, no phone, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-arete-outdoor-centre.json"
+    },
+    {
+      "id": "content-ops-073-operator-beddgelert-bikes",
+      "content_item_id": "operator-beddgelert-bikes",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/beddgelert-bikes",
+      "title": "Beddgelert Bikes",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-beddgelert-bikes: Beddgelert Bikes.\nChannel: commercial. Content type: operator. Route/slug: /directory/beddgelert-bikes.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Beddgelert Bikes\" missing: no description, no cover image, no logo, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-beddgelert-bikes.json"
+    },
+    {
+      "id": "content-ops-074-operator-big-blue-experience",
+      "content_item_id": "operator-big-blue-experience",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/big-blue-experience",
+      "title": "Big Blue Experience",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-big-blue-experience: Big Blue Experience.\nChannel: commercial. Content type: operator. Route/slug: /directory/big-blue-experience.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Big Blue Experience\" missing: no description, no cover image, no logo, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-big-blue-experience.json"
+    },
+    {
+      "id": "content-ops-075-operator-bike-corris",
+      "content_item_id": "operator-bike-corris",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/bike-corris",
+      "title": "Bike Corris",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-bike-corris: Bike Corris.\nChannel: commercial. Content type: operator. Route/slug: /directory/bike-corris.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Bike Corris\" missing: no cover image, no logo, no phone, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-bike-corris.json"
+    },
+    {
+      "id": "content-ops-076-operator-black-mountain-activities",
+      "content_item_id": "operator-black-mountain-activities",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/black-mountain-activities",
+      "title": "Black Mountain Activities",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-black-mountain-activities: Black Mountain Activities.\nChannel: commercial. Content type: operator. Route/slug: /directory/black-mountain-activities.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Black Mountain Activities\" missing: no cover image, no logo, no coordinates, no phone, no email.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-black-mountain-activities.json"
+    },
+    {
+      "id": "content-ops-077-operator-black-mountains-cycle-centre",
+      "content_item_id": "operator-black-mountains-cycle-centre",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/black-mountains-cycle-centre",
+      "title": "Black Mountains Cycle Centre",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-black-mountains-cycle-centre: Black Mountains Cycle Centre.\nChannel: commercial. Content type: operator. Route/slug: /directory/black-mountains-cycle-centre.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Black Mountains Cycle Centre\" missing: no cover image, no logo, no phone, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-black-mountains-cycle-centre.json"
+    },
+    {
+      "id": "content-ops-078-operator-blue-ocean-activities",
+      "content_item_id": "operator-blue-ocean-activities",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/blue-ocean-activities",
+      "title": "Blue Ocean Activities",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-blue-ocean-activities: Blue Ocean Activities.\nChannel: commercial. Content type: operator. Route/slug: /directory/blue-ocean-activities.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Blue Ocean Activities\" missing: no description, no cover image, no logo, no phone, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-blue-ocean-activities.json"
+    },
+    {
+      "id": "content-ops-079-operator-caersws-dh",
+      "content_item_id": "operator-caersws-dh",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/caersws-dh",
+      "title": "Caersws Dh",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-caersws-dh: Caersws Dh.\nChannel: commercial. Content type: operator. Route/slug: /directory/caersws-dh.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Caersws DH\" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-caersws-dh.json"
+    },
+    {
+      "id": "content-ops-080-operator-campbell-coaching",
+      "content_item_id": "operator-campbell-coaching",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/campbell-coaching",
+      "title": "Campbell Coaching",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-campbell-coaching: Campbell Coaching.\nChannel: commercial. Content type: operator. Route/slug: /directory/campbell-coaching.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Campbell Coaching\" missing: no cover image, no logo, no phone, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-campbell-coaching.json"
+    },
+    {
+      "id": "content-ops-081-operator-cardiff-international-white-water",
+      "content_item_id": "operator-cardiff-international-white-water",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/cardiff-international-white-water",
+      "title": "Cardiff International White Water",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-cardiff-international-white-water: Cardiff International White Water.\nChannel: commercial. Content type: operator. Route/slug: /directory/cardiff-international-white-water.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Cardiff International White Water\" missing: no description, no cover image, no logo, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-cardiff-international-white-water.json"
+    },
+    {
+      "id": "content-ops-082-operator-cardigan-bay-active",
+      "content_item_id": "operator-cardigan-bay-active",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/cardigan-bay-active",
+      "title": "Cardigan Bay Active",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-cardigan-bay-active: Cardigan Bay Active.\nChannel: commercial. Content type: operator. Route/slug: /directory/cardigan-bay-active.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Cardigan Bay Active\" missing: no description, no cover image, no logo, no coordinates, no phone, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-cardigan-bay-active.json"
+    },
+    {
+      "id": "content-ops-083-operator-celtic-canoes",
+      "content_item_id": "operator-celtic-canoes",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/celtic-canoes",
+      "title": "Celtic Canoes",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-celtic-canoes: Celtic Canoes.\nChannel: commercial. Content type: operator. Route/slug: /directory/celtic-canoes.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Celtic Canoes\" missing: no description, no cover image, no logo, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-celtic-canoes.json"
+    },
+    {
+      "id": "content-ops-084-operator-celtic-quest-coasteering",
+      "content_item_id": "operator-celtic-quest-coasteering",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/celtic-quest-coasteering",
+      "title": "Celtic Quest Coasteering",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-celtic-quest-coasteering: Celtic Quest Coasteering.\nChannel: commercial. Content type: operator. Route/slug: /directory/celtic-quest-coasteering.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Celtic Quest Coasteering\" missing: no cover image, no logo, no coordinates, no phone, no email.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-celtic-quest-coasteering.json"
+    },
+    {
+      "id": "content-ops-085-operator-celtic-trail-shuttle",
+      "content_item_id": "operator-celtic-trail-shuttle",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/celtic-trail-shuttle",
+      "title": "Celtic Trail Shuttle",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-celtic-trail-shuttle: Celtic Trail Shuttle.\nChannel: commercial. Content type: operator. Route/slug: /directory/celtic-trail-shuttle.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Celtic Trail Cycle Shuttle\" missing: no cover image, no logo, no coordinates, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-celtic-trail-shuttle.json"
+    },
+    {
+      "id": "content-ops-086-operator-ciww",
+      "content_item_id": "operator-ciww",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/ciww",
+      "title": "Ciww",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-ciww: Ciww.\nChannel: commercial. Content type: operator. Route/slug: /directory/ciww.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Cardiff International White Water\" missing: no description, no cover image, no logo, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-ciww.json"
+    },
+    {
+      "id": "content-ops-087-operator-climb-snowdon",
+      "content_item_id": "operator-climb-snowdon",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/climb-snowdon",
+      "title": "Climb Snowdon",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-climb-snowdon: Climb Snowdon.\nChannel: commercial. Content type: operator. Route/slug: /directory/climb-snowdon.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Climb Snowdon\" missing: no cover image, no logo, no phone, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-climb-snowdon.json"
+    },
+    {
+      "id": "content-ops-088-operator-cwmcarn-forest",
+      "content_item_id": "operator-cwmcarn-forest",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/cwmcarn-forest",
+      "title": "Cwmcarn Forest",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-cwmcarn-forest: Cwmcarn Forest.\nChannel: commercial. Content type: operator. Route/slug: /directory/cwmcarn-forest.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Cwmcarn Forest\" missing: no cover image, no logo, no phone, no email.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-cwmcarn-forest.json"
+    },
+    {
+      "id": "content-ops-089-operator-dan-yr-ogof-showcaves",
+      "content_item_id": "operator-dan-yr-ogof-showcaves",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/dan-yr-ogof-showcaves",
+      "title": "Dan Yr Ogof Showcaves",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-dan-yr-ogof-showcaves: Dan Yr Ogof Showcaves.\nChannel: commercial. Content type: operator. Route/slug: /directory/dan-yr-ogof-showcaves.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Dan yr Ogof Showcaves\" missing: no cover image, no logo, no coordinates, no phone, no email.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-dan-yr-ogof-showcaves.json"
+    },
+    {
+      "id": "content-ops-090-operator-dyfi-bike-park",
+      "content_item_id": "operator-dyfi-bike-park",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/dyfi-bike-park",
+      "title": "Dyfi Bike Park",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-dyfi-bike-park: Dyfi Bike Park.\nChannel: commercial. Content type: operator. Route/slug: /directory/dyfi-bike-park.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Dyfi Bike Park\" missing: no description, no cover image, no logo, no phone, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-dyfi-bike-park.json"
+    },
+    {
+      "id": "content-ops-091-operator-elan-valley-lodge",
+      "content_item_id": "operator-elan-valley-lodge",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/elan-valley-lodge",
+      "title": "Elan Valley Lodge",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-elan-valley-lodge: Elan Valley Lodge.\nChannel: commercial. Content type: operator. Route/slug: /directory/elan-valley-lodge.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Elan Valley Lodge\" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-elan-valley-lodge.json"
+    },
+    {
+      "id": "content-ops-092-operator-evolution-bikes",
+      "content_item_id": "operator-evolution-bikes",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/evolution-bikes",
+      "title": "Evolution Bikes",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-evolution-bikes: Evolution Bikes.\nChannel: commercial. Content type: operator. Route/slug: /directory/evolution-bikes.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Evolution Bikes\" missing: no description, no cover image, no logo, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-evolution-bikes.json"
+    },
+    {
+      "id": "content-ops-093-operator-expedition-guide",
+      "content_item_id": "operator-expedition-guide",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/expedition-guide",
+      "title": "Expedition Guide",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-expedition-guide: Expedition Guide.\nChannel: commercial. Content type: operator. Route/slug: /directory/expedition-guide.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Expedition Guide\" missing: no cover image, no logo, no phone, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-expedition-guide.json"
+    },
+    {
+      "id": "content-ops-094-operator-forest-freeride",
+      "content_item_id": "operator-forest-freeride",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/forest-freeride",
+      "title": "Forest Freeride",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-forest-freeride: Forest Freeride.\nChannel: commercial. Content type: operator. Route/slug: /directory/forest-freeride.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Forest Freeride\" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-forest-freeride.json"
+    },
+    {
+      "id": "content-ops-095-operator-gaynor-lee-coaching",
+      "content_item_id": "operator-gaynor-lee-coaching",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/gaynor-lee-coaching",
+      "title": "Gaynor Lee Coaching",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-gaynor-lee-coaching: Gaynor Lee Coaching.\nChannel: commercial. Content type: operator. Route/slug: /directory/gaynor-lee-coaching.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Gaynor Lee Coaching\" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-gaynor-lee-coaching.json"
+    },
+    {
+      "id": "content-ops-096-operator-gethin-woods-bike-park",
+      "content_item_id": "operator-gethin-woods-bike-park",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/gethin-woods-bike-park",
+      "title": "Gethin Woods Bike Park",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-gethin-woods-bike-park: Gethin Woods Bike Park.\nChannel: commercial. Content type: operator. Route/slug: /directory/gethin-woods-bike-park.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Gethin Woods (Bike Park Merthyr)\" missing: no cover image, no logo, no phone, no email.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-gethin-woods-bike-park.json"
+    },
+    {
+      "id": "content-ops-097-operator-gigrin-farm",
+      "content_item_id": "operator-gigrin-farm",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/gigrin-farm",
+      "title": "Gigrin Farm",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-gigrin-farm: Gigrin Farm.\nChannel: commercial. Content type: operator. Route/slug: /directory/gigrin-farm.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Gigrin Farm Red Kite Feeding\" missing: no cover image, no logo, no phone, no email.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-gigrin-farm.json"
+    },
+    {
+      "id": "content-ops-098-operator-go-below-underground",
+      "content_item_id": "operator-go-below-underground",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/go-below-underground",
+      "title": "Go Below Underground",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-go-below-underground: Go Below Underground.\nChannel: commercial. Content type: operator. Route/slug: /directory/go-below-underground.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Go Below Underground Adventures\" missing: no cover image, no logo, no coordinates, no phone, no email.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-go-below-underground.json"
+    },
+    {
+      "id": "content-ops-099-operator-gone-mountain-biking",
+      "content_item_id": "operator-gone-mountain-biking",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/gone-mountain-biking",
+      "title": "Gone Mountain Biking",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-gone-mountain-biking: Gone Mountain Biking.\nChannel: commercial. Content type: operator. Route/slug: /directory/gone-mountain-biking.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Gone Mountain Biking\" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-gone-mountain-biking.json"
+    },
+    {
+      "id": "content-ops-100-operator-gower-adventures",
+      "content_item_id": "operator-gower-adventures",
+      "channel": "commercial",
+      "content_type": "operator",
+      "route_or_slug": "/directory/gower-adventures",
+      "title": "Gower Adventures",
+      "priority": 34,
+      "status": "research_needed",
+      "recommended_skill": "directory-premium-lure-model",
+      "task_type": "research",
+      "brief": "Improve content item operator-gower-adventures: Gower Adventures.\nChannel: commercial. Content type: operator. Route/slug: /directory/gower-adventures.\nCommercial tier: unclassified_operator.\nKnown blocker: Operator \"Gower Adventures\" missing: no description, no cover image, no logo, no Google rating.\nDo not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.",
+      "acceptance_criteria": [
+        "Source URLs are included for factual claims.",
+        "Image recommendations include provenance/licence notes or explicitly say image remains blocked.",
+        "Commercial tier rules are respected; ordinary unpaid operators are not upgraded into free premium pages.",
+        "The output recommends the next status: researched, qa_needed, reviewed, blocked, or signed_off."
+      ],
+      "source_requirements": [
+        "Prefer official operator, local authority, event organiser, NRW/National Park, or recognised tourism sources.",
+        "Avoid live pricing/timetable claims unless checked against a current official source and dated.",
+        "No AI-generated images for real places, operators, or events."
+      ],
+      "output_path": "data/research/content-ops/operator-gower-adventures.json"
+    }
+  ]
+}

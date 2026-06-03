@@ -1,0 +1,4055 @@
+{
+  "generatedAt": "2026-06-03T22:18:12.716Z",
+  "sources": [
+    {
+      "content_item_id": "activity-location-snowdonia-beaches",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/beaches",
+      "source_url": "https://www.metoffice.gov.uk/weather/forecast/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-beaches",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/beaches",
+      "source_url": "https://rnli.org/safety/choose-your-activity/visiting-the-coast",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-beaches",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/beaches",
+      "source_url": "https://easytide.admiralty.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-beaches",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/beaches",
+      "source_url": "https://shellisland.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/caving",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain/snowdonia",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/caving",
+      "source_url": "https://www.mwis.org.uk/forecasts/english-welsh/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/caving",
+      "source_url": "https://www.joe-brown.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/caving",
+      "source_url": "https://v12outdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/caving",
+      "source_url": "https://www.cotswoldoutdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/caving",
+      "source_url": "https://www.ellis-brigham.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/caving",
+      "source_url": "https://www.theheightsllanberis.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/caving",
+      "source_url": "https://www.yha.org.uk/hostel/yha-snowdon-pen-y-pass",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/caving",
+      "source_url": "https://www.plascurig.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/caving",
+      "source_url": "https://www.bryngloch.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/caving",
+      "source_url": "https://www.royalvictoria.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/caving",
+      "source_url": "https://www.pyg.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/climbing",
+      "source_url": "https://www.mwis.org.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/climbing",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/climbing",
+      "source_url": "https://www.joe-brown.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/climbing",
+      "source_url": "https://v12outdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/climbing",
+      "source_url": "https://www.cotswoldoutdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/climbing",
+      "source_url": "https://siop-pinnacle.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/climbing",
+      "source_url": "https://www.bryntyrchinn.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/climbing",
+      "source_url": "https://heightswales.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/climbing",
+      "source_url": "https://www.pyb.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/climbing",
+      "source_url": "https://www.yha.org.uk/hostel/yha-pen-y-pass",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/climbing",
+      "source_url": "https://www.bryndinas.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/climbing",
+      "source_url": "https://dolperis.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/gorge-walking",
+      "source_url": "https://www.mwis.org.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/gorge-walking",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/gorge-walking",
+      "source_url": "https://v12outdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/gorge-walking",
+      "source_url": "https://www.joe-brown.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/gorge-walking",
+      "source_url": "https://www.ellis-brigham.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/gorge-walking",
+      "source_url": "https://www.cotswoldoutdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/gorge-walking",
+      "source_url": "https://www.cobdenshotel.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/gorge-walking",
+      "source_url": "https://www.uglyhouse.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/gorge-walking",
+      "source_url": "https://theheights-hotel.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/gorge-walking",
+      "source_url": "https://saracens-head-hotel.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/gorge-walking",
+      "source_url": "https://www.yha.org.uk/hostel/yha-plas-curig",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/gorge-walking",
+      "source_url": "https://www.bryntyrchinn.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/hiking",
+      "source_url": "https://www.mwis.org.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/hiking",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/hiking",
+      "source_url": "https://www.joe-brown.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/hiking",
+      "source_url": "https://v12outdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/hiking",
+      "source_url": "https://www.cotswoldoutdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/hiking",
+      "source_url": "https://www.ellis-brigham.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/hiking",
+      "source_url": "https://www.moelsiabodcafe.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/hiking",
+      "source_url": "https://www.y-stablau.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/hiking",
+      "source_url": "https://www.heights-hotel.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/hiking",
+      "source_url": "https://www.bryntyrchinn.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/hiking",
+      "source_url": "https://www.yha.org.uk/hostel/yha-snowdon-pen-y-pass",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/hiking",
+      "source_url": "https://www.bryndinas.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/kayaking",
+      "source_url": "https://www.mwis.org.uk/forecasts/english-welsh/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/kayaking",
+      "source_url": "https://www.ukriversguidebook.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/kayaking",
+      "source_url": "https://rivers-and-seas.naturalresources.wales/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/kayaking",
+      "source_url": "https://www.balawatersports.com",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/kayaking",
+      "source_url": "https://www.snowdoniawatersports.com",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/kayaking",
+      "source_url": "https://pyb.co.uk",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/kayaking",
+      "source_url": "https://www.joe-brown.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/kayaking",
+      "source_url": "https://v12outdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/kayaking",
+      "source_url": "https://summittosea.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/kayaking",
+      "source_url": "https://www.caffisiabod.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/kayaking",
+      "source_url": "https://pyb.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/kayaking",
+      "source_url": "https://gwynant.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/mountain-biking",
+      "source_url": "https://www.mwis.org.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/mountain-biking",
+      "source_url": "https://www.metoffice.gov.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/mountain-biking",
+      "source_url": "https://beicsbrenin.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/mountain-biking",
+      "source_url": "https://www.anturstiniog.com/bike-hire/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/mountain-biking",
+      "source_url": "http://www.beicsbetws.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/mountain-biking",
+      "source_url": "https://summittosea.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/mountain-biking",
+      "source_url": "https://www.crossfoxes.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/mountain-biking",
+      "source_url": "https://tysiamas.cymru/en/about-us/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/mountain-biking",
+      "source_url": "https://www.caffisiabod.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/mountain-biking",
+      "source_url": "https://hangin.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/mountain-biking",
+      "source_url": "https://www.plasbrondanw.com/cafe-shop/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/mountain-biking",
+      "source_url": "https://www.yha.org.uk/hostel/yha-coed-y-brenin",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-scenic-railway",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/scenic-railway",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-scenic-railway",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/scenic-railway",
+      "source_url": "https://www.metoffice.gov.uk/weather/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-scenic-railway",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/scenic-railway",
+      "source_url": "https://www.bryntyrchinn.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-scenic-railway",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/scenic-railway",
+      "source_url": "https://www.yha.org.uk/hostel/yha-snowdon-llanberis",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-scenic-railway",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/scenic-railway",
+      "source_url": "https://www.festrail.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/surfing",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/coast-and-sea",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/surfing",
+      "source_url": "https://www.surfline.com/surf-reports-forecasts-cams/united-kingdom/2862135",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/surfing",
+      "source_url": "https://www.westcoastsurf.co.uk",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/surfing",
+      "source_url": "https://adventureparcsnowdonia.com",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/surfing",
+      "source_url": "https://www.yha.org.uk/hostel/yha-snowdon-llanberis",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-trail-running",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/trail-running",
+      "source_url": "https://www.mwis.org.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-trail-running",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/trail-running",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-trail-running",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/trail-running",
+      "source_url": "https://www.joe-brown.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-trail-running",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/trail-running",
+      "source_url": "https://www.v12outdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-trail-running",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/trail-running",
+      "source_url": "https://runwales.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-trail-running",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/trail-running",
+      "source_url": "https://www.tyhyll.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-trail-running",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/trail-running",
+      "source_url": "https://www.yha.org.uk/hostel/yha-snowdon-pen-y-pass",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-trail-running",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/trail-running",
+      "source_url": "https://www.pyb.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-trail-running",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/trail-running",
+      "source_url": "http://www.bryntyrchinn.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-trail-running",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/trail-running",
+      "source_url": "https://www.royalvictoria.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-trail-running",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/trail-running",
+      "source_url": "https://www.snowdonrace.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-trail-running",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/trail-running",
+      "source_url": "https://www.mynydd-du.org.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-underground-trampolines",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/underground-trampolines",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-underground-trampolines",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/underground-trampolines",
+      "source_url": "https://www.anturstiniog.com",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-underground-trampolines",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/underground-trampolines",
+      "source_url": "https://www.yha.org.uk",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/wild-swimming",
+      "source_url": "https://www.mwis.org.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/wild-swimming",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/wild-swimming",
+      "source_url": "https://www.cotswoldoutdoor.com/stores/betws-y-coed.html",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/wild-swimming",
+      "source_url": "https://www.joe-brown.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/wild-swimming",
+      "source_url": "https://www.siop-pinnacle.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/wild-swimming",
+      "source_url": "https://v12outdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/wild-swimming",
+      "source_url": "http://www.caffisiabod.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/wild-swimming",
+      "source_url": "https://www.gwydyrhotel.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/wild-swimming",
+      "source_url": "https://www.theheightshotel.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/wild-swimming",
+      "source_url": "https://www.saracenshead.wales/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/wild-swimming",
+      "source_url": "https://www.plascurig.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/wild-swimming",
+      "source_url": "http://www.gwern-gof-isaf.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-zip-lining",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/zip-lining",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-zip-lining",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/zip-lining",
+      "source_url": "https://www.mwis.org.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-zip-lining",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/zip-lining",
+      "source_url": "https://www.zipworld.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-zip-lining",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/zip-lining",
+      "source_url": "https://www.cotswoldoutdoor.com/stores/llanberis.html",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-zip-lining",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/zip-lining",
+      "source_url": "https://www.ellis-brigham.com/stores/llanberis",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-zip-lining",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/zip-lining",
+      "source_url": "https://www.v12outdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-zip-lining",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/zip-lining",
+      "source_url": "https://www.joebrowns.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-zip-lining",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/zip-lining",
+      "source_url": "https://www.thecottageloaf.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-zip-lining",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/zip-lining",
+      "source_url": "https://www.yha.org.uk/hostel/yha-snowdon-llanberis",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-zip-lining",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/zip-lining",
+      "source_url": "http://www.plascurig.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-zip-lining",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/zip-lining",
+      "source_url": "https://www.pyg.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-snowdonia-zip-lining",
+      "channel": "evergreen",
+      "route_or_slug": "/snowdonia/things-to-do/zip-lining",
+      "source_url": "https://www.theroyalvictoria.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/coasteering",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/coast-and-sea/regional-coastal-forecasts/holyhead",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/coasteering",
+      "source_url": "https://magicseaweed.com/Rhoscolyn-Surf-Report/722/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/coasteering",
+      "source_url": "https://angleseyadventures.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/coasteering",
+      "source_url": "https://www.angleseyoutdoors.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/coasteering",
+      "source_url": "https://www.snowdonia-watersports.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/coasteering",
+      "source_url": "https://www.gooutdoors.co.uk/stores/bangor",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/coasteering",
+      "source_url": "https://www.oystercatcheranglesey.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/coasteering",
+      "source_url": "http://www.the-lobster-pot.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/coasteering",
+      "source_url": "https://www.white-eagle.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/coasteering",
+      "source_url": "https://www.sosbanandthesecretgarden.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/coasteering",
+      "source_url": "https://www.nationaltrust.org.uk/plas-newydd-house-and-garden",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/coasteering",
+      "source_url": "https://www.theboathouserhoscolyn.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/kayaking",
+      "source_url": "https://www.metoffice.gov.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/kayaking",
+      "source_url": "https://www.windguru.cz/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/kayaking",
+      "source_url": "https://magicseaweed.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/kayaking",
+      "source_url": "https://www.angleseyadventures.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/kayaking",
+      "source_url": "https://www.plasmenai.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/kayaking",
+      "source_url": "https://angleseyoutdoors.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/kayaking",
+      "source_url": "https://www.snowdoniawatersports.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/kayaking",
+      "source_url": "https://oystercatcheranglesey.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/kayaking",
+      "source_url": "https://sandymounthouse.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/kayaking",
+      "source_url": "https://white-eagle.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/kayaking",
+      "source_url": "https://dylansrestaurant.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/kayaking",
+      "source_url": "https://www.tynlon.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/wild-swimming",
+      "source_url": "https://www.metoffice.gov.uk/weather/forecast/gcv0081g1",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/wild-swimming",
+      "source_url": "https://www.windfinder.com/forecast/holyhead",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/wild-swimming",
+      "source_url": "https://angleseyadventures.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/wild-swimming",
+      "source_url": "https://www.angleseyoutdoors.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/wild-swimming",
+      "source_url": "https://funsportonline.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/wild-swimming",
+      "source_url": "https://geckosurf.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/wild-swimming",
+      "source_url": "https://www.oystercatcheranglesey.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/wild-swimming",
+      "source_url": "https://sandymounthouse.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/wild-swimming",
+      "source_url": "https://www.thelobsterpotrestaurant.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/wild-swimming",
+      "source_url": "https://www.sosbanandthesecretgarden.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/wild-swimming",
+      "source_url": "https://www.white-eagle.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-anglesey-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/anglesey/things-to-do/wild-swimming",
+      "source_url": "https://www.plasnewyddcaravanpark.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/caving",
+      "source_url": "https://www.mwis.org.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/caving",
+      "source_url": "https://www.metoffice.gov.uk/weather/forecast/gcm417y1f",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/caving",
+      "source_url": "https://www.starlessriver.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/caving",
+      "source_url": "https://www.v12outdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/caving",
+      "source_url": "https://www.mountainwarehouse.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/caving",
+      "source_url": "https://www.cotswoldoutdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/caving",
+      "source_url": "https://www.sabrain.com/pubs-in-wales/swansea/ancient-briton",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/caving",
+      "source_url": "https://www.eatdrinksleep.ltd.uk/felin-fach-griffin/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/caving",
+      "source_url": "https://www.lambinndefynnog.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/caving",
+      "source_url": "https://www.swcc.org.uk/bunkhouse/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/caving",
+      "source_url": "https://www.yha.org.uk/hostel/yha-brecon-beacons",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-caving",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/caving",
+      "source_url": "https://penpont.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/gorge-walking",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain/brecon-beacons",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/gorge-walking",
+      "source_url": "https://naturalresources.wales/flooding/check-river-levels-and-sea-conditions/?lang=en",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/gorge-walking",
+      "source_url": "https://www.adventurebritain.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/gorge-walking",
+      "source_url": "https://blackmountainadventure.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/gorge-walking",
+      "source_url": "https://www.cotswoldoutdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/gorge-walking",
+      "source_url": "https://www.mountainwarehouse.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/gorge-walking",
+      "source_url": "http://www.angelinnponthotel.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/gorge-walking",
+      "source_url": "https://www.sabrain.com/ancient-briton-pen-y-cae",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/gorge-walking",
+      "source_url": "https://eatdrinksleep.ltd.uk/felin-fach-griffin/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/gorge-walking",
+      "source_url": "https://www.yha.org.uk/hostel/yha-brecon-beacons",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/gorge-walking",
+      "source_url": "https://www.breconcastlehotel.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-gorge-walking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/gorge-walking",
+      "source_url": "https://www.peterstone-court.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/hiking",
+      "source_url": "https://www.mwis.org.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/hiking",
+      "source_url": "https://www.metoffice.gov.uk/weather/forecast/gxxrf086w",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/hiking",
+      "source_url": "https://www.cotswoldoutdoor.com/stores/brecon-outdoor-clothing-and-equipment-shop.html",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/hiking",
+      "source_url": "https://www.blacks.co.uk/stores/brecon-outdoor-clothing-and-equipment-shop-store-s74",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/hiking",
+      "source_url": "https://www.mountainwarehouse.com/stores/brecon.aspx",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/hiking",
+      "source_url": "http://www.brownandwhite.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/hiking",
+      "source_url": "https://www.eatdrinksleep.ltd.uk/felin-fach-griffin/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/hiking",
+      "source_url": "https://www.bearhotel.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/hiking",
+      "source_url": "http://www.nantyffin.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/hiking",
+      "source_url": "https://www.starinntalybont.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/hiking",
+      "source_url": "https://www.yha.org.uk/hostel/yha-brecon-beacons",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/hiking",
+      "source_url": "https://www.ukcampsite.co.uk/sites/details.asp?revid=331",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/mountain-biking",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/mountain-biking",
+      "source_url": "https://www.mountain-forecast.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/mountain-biking",
+      "source_url": "https://www.bikeparkwales.com/hire",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/mountain-biking",
+      "source_url": "https://breconbikes.com/hire/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/mountain-biking",
+      "source_url": "http://bipedcycles.co.uk/cyclehire/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/mountain-biking",
+      "source_url": "https://breconbikes.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/mountain-biking",
+      "source_url": "http://bipedcycles.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/mountain-biking",
+      "source_url": "https://www.bikeparkwales.com/shop",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/mountain-biking",
+      "source_url": "https://www.halfords.com/stores/1253-merthyr-tydfil",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/mountain-biking",
+      "source_url": "https://www.starinntalybont.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/mountain-biking",
+      "source_url": "http://www.whitehartbrecon.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/mountain-biking",
+      "source_url": "https://www.eatdrinksleep.ltd.uk/felin-fach-griffin/the-griffin/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/wild-swimming",
+      "source_url": "https://www.metoffice.gov.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/wild-swimming",
+      "source_url": "https://www.mwis.org.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/wild-swimming",
+      "source_url": "http://www.breconadventure.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/wild-swimming",
+      "source_url": "https://www.mountainwarehouse.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/wild-swimming",
+      "source_url": "https://www.trespass.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/wild-swimming",
+      "source_url": "https://eatdrinksleep.ltd.uk/felin-fach-griffin/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/wild-swimming",
+      "source_url": "https://www.yha.org.uk/hostel/yha-brecon-beacons",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/wild-swimming",
+      "source_url": "https://www.peterstone-court.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/wild-swimming",
+      "source_url": "http://www.oldrectoryllangorse.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/wild-swimming",
+      "source_url": "https://www.breconbeacons.org/struttures/llwyn-y-fan-bunkhouse/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/wild-swimming",
+      "source_url": "https://www.llangorselake.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-brecon-beacons-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/brecon-beacons/things-to-do/wild-swimming",
+      "source_url": "https://www.breconbeaconsultra.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-carmarthenshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/carmarthenshire/things-to-do/hiking",
+      "source_url": "https://www.metoffice.gov.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-carmarthenshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/carmarthenshire/things-to-do/hiking",
+      "source_url": "https://www.mountain-forecast.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-carmarthenshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/carmarthenshire/things-to-do/hiking",
+      "source_url": "https://www.mountainwarehouse.com/stores/carmarthen/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-carmarthenshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/carmarthenshire/things-to-do/hiking",
+      "source_url": "https://www.millets.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-carmarthenshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/carmarthenshire/things-to-do/hiking",
+      "source_url": "https://www.trespass.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-carmarthenshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/carmarthenshire/things-to-do/hiking",
+      "source_url": "https://www.gooutdoors.co.uk/stores/llanelli",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-carmarthenshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/carmarthenshire/things-to-do/hiking",
+      "source_url": "https://www.ploughinnrhosmaen.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-carmarthenshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/carmarthenshire/things-to-do/hiking",
+      "source_url": "https://www.theangelllandeilo.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-carmarthenshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/carmarthenshire/things-to-do/hiking",
+      "source_url": "https://wrightsfood.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-carmarthenshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/carmarthenshire/things-to-do/hiking",
+      "source_url": "https://ypolyn.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-carmarthenshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/carmarthenshire/things-to-do/hiking",
+      "source_url": "https://www.thecawdor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-carmarthenshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/carmarthenshire/things-to-do/hiking",
+      "source_url": "https://www.cwmcrwth.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/coasteering",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/coast-and-sea/inshore-waters/index.html#gales",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/coasteering",
+      "source_url": "https://www.windguru.cz/49730",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/coasteering",
+      "source_url": "https://oxwichwatersports.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/coasteering",
+      "source_url": "https://goweractivitycentres.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/coasteering",
+      "source_url": "http://www.pjsurfshop.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/coasteering",
+      "source_url": "http://www.gowersurf.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/coasteering",
+      "source_url": "https://www.decathlon.co.uk/swansea-store-id_380",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/coasteering",
+      "source_url": "http://www.kingsheadgower.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/coasteering",
+      "source_url": "https://www.theshipinnporteynon.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/coasteering",
+      "source_url": "https://www.verdis-cafe.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/coasteering",
+      "source_url": "http://www.joes-icecream.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/coasteering",
+      "source_url": "https://www.pilot-inn.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/hiking",
+      "source_url": "https://www.metoffice.gov.uk/weather/forecast/gcpvn102g",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/hiking",
+      "source_url": "https://www.bbc.co.uk/weather/6201424",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/hiking",
+      "source_url": "https://www.cotswoldoutdoor.com/stores/swansea.html",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/hiking",
+      "source_url": "https://www.trespass.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/hiking",
+      "source_url": "https://www.mountainwarehouse.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/hiking",
+      "source_url": "https://www.gooutdoors.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/hiking",
+      "source_url": "https://www.verdis-cafe.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/hiking",
+      "source_url": "https://www.theworm",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/hiking",
+      "source_url": "https://kingarthurhotel.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/hiking",
+      "source_url": "http://www.castellamare.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/hiking",
+      "source_url": "https://www.sabrain.com/pubs-and-hotels/south-wales/swansea/the-ship-inn/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/hiking",
+      "source_url": "https://www.threecliffsbay.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/surfing",
+      "source_url": "https://magicseaweed.com/Gower-Surf-Report/664/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/surfing",
+      "source_url": "https://www.windguru.cz/10313",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/surfing",
+      "source_url": "http://llangennithsurf.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/surfing",
+      "source_url": "https://ripnrock.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/surfing",
+      "source_url": "https://www.pjsurfshop.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/surfing",
+      "source_url": "https://www.kingsheadgower.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/surfing",
+      "source_url": "https://www.thebaybistro.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/surfing",
+      "source_url": "https://www.theshipinnporteynon.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/surfing",
+      "source_url": "https://verdis.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/surfing",
+      "source_url": "https://www.gowercoastcamping.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/surfing",
+      "source_url": "https://www.nationaltrust.org.uk/holidays/hill-end-campsite-gower",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/surfing",
+      "source_url": "https://kingarthurhotel.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/wild-swimming",
+      "source_url": "https://www.metoffice.gov.uk/weather/forecast/gcpvn095g",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/wild-swimming",
+      "source_url": "https://magicseaweed.com/Gower-Surf-Report/780/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/wild-swimming",
+      "source_url": "https://www.pjs-surfshop.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/wild-swimming",
+      "source_url": "https://oxwichwatersports.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/wild-swimming",
+      "source_url": "https://www.shorelinesurfshop.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/wild-swimming",
+      "source_url": "https://www.kingarthurhotel.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/wild-swimming",
+      "source_url": "https://www.kingsheadgower.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/wild-swimming",
+      "source_url": "https://www.verdis-cafe.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/wild-swimming",
+      "source_url": "https://www.thebaybistro.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/wild-swimming",
+      "source_url": "https://www.thegowerinn.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/wild-swimming",
+      "source_url": "https://www.beachhouseoxwich.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-gower-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/gower/things-to-do/wild-swimming",
+      "source_url": "https://threecliffsbay.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-llyn-peninsula-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/llyn-peninsula/things-to-do/surfing",
+      "source_url": "https://magicseaweed.com/Llyn-Peninsula-Surf-Report/395/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-llyn-peninsula-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/llyn-peninsula/things-to-do/surfing",
+      "source_url": "https://www.windguru.cz/3265",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-llyn-peninsula-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/llyn-peninsula/things-to-do/surfing",
+      "source_url": "https://www.westcoastsurf.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-llyn-peninsula-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/llyn-peninsula/things-to-do/surfing",
+      "source_url": "http://www.abersochwatersports.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-llyn-peninsula-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/llyn-peninsula/things-to-do/surfing",
+      "source_url": "https://www.thesuninnabersoch.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-llyn-peninsula-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/llyn-peninsula/things-to-do/surfing",
+      "source_url": "https://www.venetiaabersoch.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-llyn-peninsula-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/llyn-peninsula/things-to-do/surfing",
+      "source_url": "https://www.tyn.cymru/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-llyn-peninsula-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/llyn-peninsula/things-to-do/surfing",
+      "source_url": "https://www.porthtocynhotel.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-llyn-peninsula-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/llyn-peninsula/things-to-do/surfing",
+      "source_url": "https://www.brynbachlogcabins.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-llyn-peninsula-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/llyn-peninsula/things-to-do/surfing",
+      "source_url": "https://www.campingandcaravanningclub.co.uk/sitefinder/sites/wales/gwynedd/abersoch/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-llyn-peninsula-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/llyn-peninsula/things-to-do/surfing",
+      "source_url": "https://www.plasgwyn.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-llyn-peninsula-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/llyn-peninsula/things-to-do/surfing",
+      "source_url": "https://www.abersochwatersports.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/hiking",
+      "source_url": "https://www.metoffice.gov.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/hiking",
+      "source_url": "https://www.mwis.org.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/hiking",
+      "source_url": "https://summitcycles.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/hiking",
+      "source_url": "https://www.mountainwarehouse.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/hiking",
+      "source_url": "https://www.gooutdoors.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/hiking",
+      "source_url": "https://www.millets.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/hiking",
+      "source_url": "https://www.number21.wales/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/hiking",
+      "source_url": "https://www.hafodhotel.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/hiking",
+      "source_url": "https://www.yffarmers.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/hiking",
+      "source_url": "https://www.georgeborrowhotel.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/hiking",
+      "source_url": "https://www.thewynnstay.com/bistro",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/hiking",
+      "source_url": "https://www.cambriancampsite.co.uk/bryn-meurig-hostel/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.summitcycles.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.theholeytrail.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/mountain-biking",
+      "source_url": "http://www.beicsmenai.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.number21aber.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.yffarmers.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.sabrain.com/whitehorsetavern",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.brynarth.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.yha.org.uk/hostel/yha-danywenallt",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.thehafren.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/mountain-biking",
+      "source_url": "http://www.midwalesglamping.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-mid-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/mid-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.redkitechallenge.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/climbing",
+      "source_url": "https://www.mwis.org.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/climbing",
+      "source_url": "https://www.metoffice.gov.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/climbing",
+      "source_url": "https://www.joe-brown.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/climbing",
+      "source_url": "https://v12outdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/climbing",
+      "source_url": "https://www.cotswoldoutdoor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/climbing",
+      "source_url": "https://www.heightshotel.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/climbing",
+      "source_url": "http://www.vaynolarms.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/climbing",
+      "source_url": "http://www.pyg.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/climbing",
+      "source_url": "https://snowdonrailway.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/climbing",
+      "source_url": "https://www.pyb.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/climbing",
+      "source_url": "https://www.yha.org.uk/hostel/yha-snowdon-pen-y-pass",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-climbing",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/climbing",
+      "source_url": "https://www.royalvictoria.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.metoffice.gov.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.yr.no/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/mountain-biking",
+      "source_url": "https://oneplanetadventure.com/bike-hire/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.beicsbetws.co.uk/bike-hire/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/mountain-biking",
+      "source_url": "https://gorilla-bikes.co.uk/bike-hire/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.beicsbetws.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/mountain-biking",
+      "source_url": "https://oneplanetadventure.com/bike-shop/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.trekbikes.com/gb/en_GB/retail/wrexham/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.rutlandcycling.com/pages/store-finder-porth-eirias.aspx",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/mountain-biking",
+      "source_url": "https://gorilla-bikes.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/mountain-biking",
+      "source_url": "https://oneplanetadventure.com/cafe/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-north-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/north-wales/things-to-do/mountain-biking",
+      "source_url": "https://hangin.co.uk/location/betws-y-coed/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/coasteering",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/coast-and-sea/coastal-waters-forecast",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/coasteering",
+      "source_url": "https://www.windguru.cz/368",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/coasteering",
+      "source_url": "https://www.masimes.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/coasteering",
+      "source_url": "https://www.tyf.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/coasteering",
+      "source_url": "https://www.outerreefsurfschool.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/coasteering",
+      "source_url": "https://www.tyf.com/shop/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/coasteering",
+      "source_url": "http://www.coasttocoastseakayaking.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/coasteering",
+      "source_url": "https://theshedporthgain.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/coasteering",
+      "source_url": "https://www.thesloop.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/coasteering",
+      "source_url": "https://www.druidstone.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/coasteering",
+      "source_url": "https://www.yha.org.uk/hostel/yha-st-davids",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-coasteering",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/coasteering",
+      "source_url": "https://www.whitesandscamping.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/hiking",
+      "source_url": "https://www.metoffice.gov.uk/weather/forecast/uk/wales/pembrokeshire",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/hiking",
+      "source_url": "https://www.bbc.co.uk/weather/2641170",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/hiking",
+      "source_url": "https://www.tyf.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/hiking",
+      "source_url": "https://www.masimes.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/hiking",
+      "source_url": "https://www.tyf.com/shop",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/hiking",
+      "source_url": "https://www.mountainwarehouse.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/hiking",
+      "source_url": "https://www.thesloopinn.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/hiking",
+      "source_url": "http://www.cafe-mor.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/hiking",
+      "source_url": "https://www.yha.org.uk/hostel/yha-st-davids",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/hiking",
+      "source_url": "https://www.celtic-camping.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/hiking",
+      "source_url": "https://www.warpoolcourthotel.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/hiking",
+      "source_url": "https://thegrove-narberth.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/kayaking",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/coast-and-sea/inshore-waters/index.html#pembrokeshire",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/kayaking",
+      "source_url": "https://www.windguru.cz/33785",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/kayaking",
+      "source_url": "https://www.tyf.com/shop/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/kayaking",
+      "source_url": "https://muukadventures.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/kayaking",
+      "source_url": "https://activitypembrokeshire.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/kayaking",
+      "source_url": "https://www.masimes.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/kayaking",
+      "source_url": "https://coastlines.uk.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/kayaking",
+      "source_url": "https://theshedporthgain.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/kayaking",
+      "source_url": "https://www.cwtchrestaurant.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/kayaking",
+      "source_url": "https://www.thesloop.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/kayaking",
+      "source_url": "https://www.yha.org.uk/hostel/yha-st-davids",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/kayaking",
+      "source_url": "http://www.whitesandscamping.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/surfing",
+      "source_url": "https://magicseaweed.com/Pembrokeshire-Surf-Report/963/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/surfing",
+      "source_url": "https://www.windguru.cz/68866",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/surfing",
+      "source_url": "https://www.newsurf.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/surfing",
+      "source_url": "https://www.thesloop.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/surfing",
+      "source_url": "https://www.druidstone.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/surfing",
+      "source_url": "https://bishopsstdavids.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/surfing",
+      "source_url": "https://www.reallywildemporium.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/surfing",
+      "source_url": "https://www.yha.org.uk/hostel/broad-haven",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/surfing",
+      "source_url": "https://celtic-camping.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/surfing",
+      "source_url": "https://www.warpoolcourthotel.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/surfing",
+      "source_url": "https://thegrove-narberth.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/surfing",
+      "source_url": "https://www.dinashouse.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/wild-swimming",
+      "source_url": "https://www.metoffice.gov.uk/weather/specialist-forecasts/coast-and-sea/inshore-waters-forecast",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/wild-swimming",
+      "source_url": "https://magicseaweed.com/Pembrokeshire-Surf-Report/70/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/wild-swimming",
+      "source_url": "https://www.tyf.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/wild-swimming",
+      "source_url": "https://www.outerreefsurfschool.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/wild-swimming",
+      "source_url": "https://www.masimes.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/wild-swimming",
+      "source_url": "https://www.tyf.com/shop/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/wild-swimming",
+      "source_url": "https://www.coasttocoastwatersports.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/wild-swimming",
+      "source_url": "https://www.westwaleswindsurfandsail.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/wild-swimming",
+      "source_url": "https://sloopinn.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/wild-swimming",
+      "source_url": "https://www.cafemor.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/wild-swimming",
+      "source_url": "https://grainstdavids.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-pembrokeshire-wild-swimming",
+      "channel": "evergreen",
+      "route_or_slug": "/pembrokeshire/things-to-do/wild-swimming",
+      "source_url": "https://www.yha.org.uk/hostel/yha-st-davids",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.metoffice.gov.uk/weather/forecast/gcmszc86c",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.mwis.org.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.skylinecycles.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/mountain-biking",
+      "source_url": "https://www.bikeparkwales.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/mountain-biking",
+      "source_url": "https://unsplash.com/photos/96Eb3YHQPwc",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/mountain-biking",
+      "source_url": "https://unsplash.com/photos/CWq4F0TD-eo",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/mountain-biking",
+      "source_url": "https://unsplash.com/photos/S9L47l_iYv8",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/mountain-biking",
+      "source_url": "https://unsplash.com/photos/Fsej0JTQDUQ",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/mountain-biking",
+      "source_url": "https://unsplash.com/photos/x6ewchtit4k",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/mountain-biking",
+      "source_url": "https://unsplash.com/photos/x-NMfz8As04",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/mountain-biking",
+      "source_url": "https://unsplash.com/photos/-antaPzkGGs",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-mountain-biking",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/mountain-biking",
+      "source_url": "https://unsplash.com/photos/WermkM0dFho",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/surfing",
+      "source_url": "https://www.windguru.cz/2206",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/surfing",
+      "source_url": "https://magicseaweed.com/Rest-Bay-Surf-Report/735/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/surfing",
+      "source_url": "https://www.porthcawlsurf.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/surfing",
+      "source_url": "https://southwalessurfschool.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/surfing",
+      "source_url": "https://driftsurf.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/surfing",
+      "source_url": "https://www.surflines.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/surfing",
+      "source_url": "https://www.sabrain.com/pubs-and-hotels/south-wales/bridgend/the-waterfront",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/surfing",
+      "source_url": "http://www.hitideinn.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/surfing",
+      "source_url": "https://www.seabankhotel.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/surfing",
+      "source_url": "https://www.parkdeanresorts.co.uk/location/south-wales/trecco-bay/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/surfing",
+      "source_url": "https://www.southwalessurfschool.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-south-wales-surfing",
+      "channel": "evergreen",
+      "route_or_slug": "/south-wales/things-to-do/surfing",
+      "source_url": "https://www.freewavesurfacademy.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/hiking",
+      "source_url": "https://www.metoffice.gov.uk/weather/forecast/gcm60z1n8",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/hiking",
+      "source_url": "https://www.paddlesandpedals.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/hiking",
+      "source_url": "https://www.mountainwarehouse.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/hiking",
+      "source_url": "https://www.oldferrieinn.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/hiking",
+      "source_url": "https://www.saracensheadinn.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/hiking",
+      "source_url": "https://www.kingstonebrewery.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/hiking",
+      "source_url": "http://www.ostrichinn.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/hiking",
+      "source_url": "http://bigsweirhouse.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/hiking",
+      "source_url": "https://www.wigwamholidays.com/locations/symonds-yat",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/hiking",
+      "source_url": "https://www.tinternoldrectory.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/hiking",
+      "source_url": "https://wyndhamarms.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-hiking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/hiking",
+      "source_url": "https://www.greenacresfarm.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/kayaking",
+      "source_url": "https://www.metoffice.gov.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/kayaking",
+      "source_url": "https://riverlevels.uk/wye",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/kayaking",
+      "source_url": "https://www.wyevalleycanoes.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/kayaking",
+      "source_url": "https://www.blackmountainadventure.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/kayaking",
+      "source_url": "https://www.oldferrieinn.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/kayaking",
+      "source_url": "https://www.saracensheadinn.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/kayaking",
+      "source_url": "https://www.blueboarhay.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/kayaking",
+      "source_url": "https://www.kilvertsinn.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/kayaking",
+      "source_url": "https://www.theboatpenallt.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/kayaking",
+      "source_url": "https://www.thehostelrie.co.uk/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/kayaking",
+      "source_url": "https://www.wyevalleycamping.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "activity-location-wye-valley-kayaking",
+      "channel": "evergreen",
+      "route_or_slug": "/wye-valley/things-to-do/kayaking",
+      "source_url": "https://www.oldcourthotel.com/",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    },
+    {
+      "content_item_id": "guide-beach-safety",
+      "channel": "evergreen",
+      "route_or_slug": "/guides/beach-safety",
+      "source_url": "https://rnli.org/find-my-nearest/lifeguarded-beaches",
+      "authority": "unreviewed",
+      "last_checked_at": "",
+      "notes": "Imported from existing content during content-ops audit."
+    }
+  ]
+}

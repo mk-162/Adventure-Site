@@ -24,6 +24,7 @@ import {
 import clsx from "clsx";
 
 const contentNav = [
+  { name: "Content Ops", href: "/admin/content-ops", icon: CheckSquare },
   { name: "Regions", href: "/admin/content/regions", icon: Map },
   { name: "Activities", href: "/admin/content/activities", icon: Compass },
   { name: "Operators", href: "/admin/content/operators", icon: Users },

@@ -1,6 +1,8 @@
 import { db } from "@/db";
+import { existsSync, readFileSync } from "fs";
+import { join } from "path";
 import { regions, activities, operators, accommodation, events, answers, guidePages } from "@/db/schema";
-import { count, eq } from "drizzle-orm";
+import { count } from "drizzle-orm";
 import Link from "next/link";
 import {
   Map,
@@ -10,10 +12,18 @@ import {
   Calendar,
   MessageCircle,
   BookOpen,
+  CheckSquare,
   ArrowRight,
 } from "lucide-react";
 
 async function getStats() {
+  let contentOpsItems = 0;
+  const inventoryPath = join(process.cwd(), "content", "ops", "content-inventory.json");
+  if (existsSync(inventoryPath)) {
+    const inventory = JSON.parse(readFileSync(inventoryPath, "utf8")) as { items?: unknown[] };
+    contentOpsItems = inventory.items?.length ?? 0;
+  }
+
   const [
     regionsCount,
     activitiesCount,
@@ -40,6 +50,7 @@ async function getStats() {
     events: eventsCount[0]?.count || 0,
     answers: answersCount[0]?.count || 0,
     guidePages: guidePagesCount[0]?.count || 0,
+    contentOpsItems,
   };
 }
 
@@ -95,6 +106,13 @@ export default async function AdminDashboard() {
       icon: BookOpen,
       href: "/admin/content/guide-pages",
       color: "bg-indigo-500",
+    },
+    {
+      name: "Content Ops",
+      count: stats.contentOpsItems,
+      icon: CheckSquare,
+      href: "/admin/content-ops",
+      color: "bg-slate-700",
     },
   ];
 

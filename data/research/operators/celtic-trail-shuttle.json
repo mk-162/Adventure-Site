@@ -1,0 +1,14 @@
+{
+  "task_id": "aw-20260606-003",
+  "slug": "celtic-trail-shuttle",
+  "name": "Celtic Trail Cycle Shuttle",
+  "decision": "blocked_unverified",
+  "fields": {},
+  "evidence": [
+    "Repo stub source: scripts/archive/seed-directory-stubs.ts contains placeholder phone 07890 123456 and bookings@celtictrailshuttle.co.uk.",
+    "Domain check failed: https://www.celtictrailshuttle.co.uk returned DNS/name-resolution error during batch."
+  ],
+  "notes": "Treat as unverified/possibly fake placeholder. Do not apply existing placeholder phone/email, coordinates, logo, cover or Google rating. Candidate action: replace with a verified Pembrokeshire cycling transport operator or archive/noindex this listing.",
+  "batch_id": "2026-06-06-critical-operator-trust-breakers-01",
+  "researched_at": "2026-06-06"
+}

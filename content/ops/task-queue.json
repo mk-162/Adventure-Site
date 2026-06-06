@@ -47,7 +47,7 @@
       "route_or_slug": "/directory/afan-forest-park",
       "title": "Afan Forest Park",
       "priority": "critical",
-      "status": "research_needed",
+      "status": "researched",
       "task_type": "operator_enrichment",
       "source_url_requirement": "Official/current source required before applying factual or media changes.",
       "image_rule": "No AI images; no wrong-location stock; provenance required.",
@@ -60,7 +60,10 @@
       "original_issue": "Operator \"Afan Forest Park\" missing: no cover image, no logo, no phone, no email",
       "fix_hint": "Fill 4 missing fields",
       "auto_fixable": false,
-      "created_at": "2026-06-06"
+      "created_at": "2026-06-06",
+      "last_batch": "2026-06-06-critical-operator-trust-breakers-01",
+      "batch_note": "Safe fields captured in content/ops/operator-enrichment-batches/2026-06-06-critical-operator-trust-breakers-01.json; apply script ready, DB env required for live update.",
+      "updated_at": "2026-06-06"
     },
     {
       "id": "aw-20260606-003",
@@ -69,7 +72,7 @@
       "route_or_slug": "/directory/celtic-trail-shuttle",
       "title": "Celtic Trail Cycle Shuttle",
       "priority": "critical",
-      "status": "qa_needed",
+      "status": "blocked",
       "task_type": "operator_enrichment",
       "source_url_requirement": "Official/current source required before applying factual or media changes.",
       "image_rule": "No AI images; no wrong-location stock; provenance required.",
@@ -82,7 +85,10 @@
       "original_issue": "Operator \"Celtic Trail Cycle Shuttle\" missing: no cover image, no logo, no coordinates, no Google rating",
       "fix_hint": "Fill 4 missing fields",
       "auto_fixable": true,
-      "created_at": "2026-06-06"
+      "created_at": "2026-06-06",
+      "last_batch": "2026-06-06-critical-operator-trust-breakers-01",
+      "batch_note": "Blocked as unverified placeholder: domain did not resolve and existing stub contains placeholder contact data. Do not apply without replacement source.",
+      "updated_at": "2026-06-06"
     },
     {
       "id": "aw-20260606-004",
@@ -91,7 +97,7 @@
       "route_or_slug": "/directory/cwmcarn-forest",
       "title": "Cwmcarn Forest",
       "priority": "critical",
-      "status": "research_needed",
+      "status": "researched",
       "task_type": "operator_enrichment",
       "source_url_requirement": "Official/current source required before applying factual or media changes.",
       "image_rule": "No AI images; no wrong-location stock; provenance required.",
@@ -104,7 +110,10 @@
       "original_issue": "Operator \"Cwmcarn Forest\" missing: no cover image, no logo, no phone, no email",
       "fix_hint": "Fill 4 missing fields",
       "auto_fixable": false,
-      "created_at": "2026-06-06"
+      "created_at": "2026-06-06",
+      "last_batch": "2026-06-06-critical-operator-trust-breakers-01",
+      "batch_note": "Safe fields captured in operator enrichment batch; apply script ready, DB env required for live update.",
+      "updated_at": "2026-06-06"
     },
     {
       "id": "aw-20260606-005",
@@ -113,7 +122,7 @@
       "route_or_slug": "/directory/gethin-woods-bike-park",
       "title": "Gethin Woods (Bike Park Merthyr)",
       "priority": "critical",
-      "status": "research_needed",
+      "status": "researched",
       "task_type": "operator_enrichment",
       "source_url_requirement": "Official/current source required before applying factual or media changes.",
       "image_rule": "No AI images; no wrong-location stock; provenance required.",
@@ -126,7 +135,10 @@
       "original_issue": "Operator \"Gethin Woods (Bike Park Merthyr)\" missing: no cover image, no logo, no phone, no email",
       "fix_hint": "Fill 4 missing fields",
       "auto_fixable": false,
-      "created_at": "2026-06-06"
+      "created_at": "2026-06-06",
+      "last_batch": "2026-06-06-critical-operator-trust-breakers-01",
+      "batch_note": "Partial safe fields captured from repo sources; media still blocked pending official image/logo verification due Cloudflare.",
+      "updated_at": "2026-06-06"
     },
     {
       "id": "aw-20260606-006",
@@ -201,7 +213,7 @@
       "route_or_slug": "/directory/hell-s-mouth-surf-school",
       "title": "Hell's Mouth Surf School",
       "priority": "critical",
-      "status": "qa_needed",
+      "status": "researched",
       "task_type": "operator_enrichment",
       "source_url_requirement": "Official/current source required before applying factual or media changes.",
       "image_rule": "No AI images; no wrong-location stock; provenance required.",
@@ -214,7 +226,10 @@
       "original_issue": "Operator \"Hell's Mouth Surf School\" missing: no description, no cover image, no logo, no coordinates",
       "fix_hint": "Fill 4 missing fields",
       "auto_fixable": true,
-      "created_at": "2026-06-06"
+      "created_at": "2026-06-06",
+      "last_batch": "2026-06-06-critical-operator-trust-breakers-01",
+      "batch_note": "Safe fields captured from West Coast Surf/operator-owned source; apply script ready, DB env required for live update.",
+      "updated_at": "2026-06-06"
     },
     {
       "id": "aw-20260606-010",
@@ -223,7 +238,7 @@
       "route_or_slug": "/directory/hells-mouth-surf-school",
       "title": "Hell's Mouth Surf School",
       "priority": "critical",
-      "status": "research_needed",
+      "status": "researched",
       "task_type": "operator_enrichment",
       "source_url_requirement": "Official/current source required before applying factual or media changes.",
       "image_rule": "No AI images; no wrong-location stock; provenance required.",
@@ -236,7 +251,10 @@
       "original_issue": "Operator \"Hell's Mouth Surf School\" missing: no cover image, no logo, no phone, no email",
       "fix_hint": "Fill 4 missing fields",
       "auto_fixable": false,
-      "created_at": "2026-06-06"
+      "created_at": "2026-06-06",
+      "last_batch": "2026-06-06-critical-operator-trust-breakers-01",
+      "batch_note": "Safe fields captured from West Coast Surf/operator-owned source; apply script ready, DB env required for live update.",
+      "updated_at": "2026-06-06"
     },
     {
       "id": "aw-20260606-011",

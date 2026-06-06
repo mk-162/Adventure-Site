@@ -1,0 +1,29 @@
+{
+  "task_id": "manual-priority-hells-mouth-surf-school",
+  "slug": "hells-mouth-surf-school",
+  "aliases": [
+    "hell-s-mouth-surf-school"
+  ],
+  "name": "Hell's Mouth Surf School",
+  "decision": "accepted_safe_fields",
+  "fields": {
+    "website": "https://www.westcoastsurf.co.uk",
+    "phone": "01758 713067",
+    "email": "surf@westcoastsurf.co.uk",
+    "address": "West Coast Surf Shop, Lon Pen Cei, Abersoch, Gwynedd LL53 7AP",
+    "lat": 52.8228,
+    "lng": -4.4875,
+    "coverImage": "https://files.ekmcdn.com/3f7030/resources/design/hells-mouth-surf-school.jpg?v=1ce664c9af9c68451c914cc2ea639115",
+    "logoUrl": "https://files.ekmcdn.com/3f7030/resources/design/sharplogo.png",
+    "description": "Hell's Mouth Surf School is operated by West Coast Surf from Abersoch, serving Hell's Mouth and nearby Llŷn Peninsula surf spots. It is a useful listing for visitors looking for surf lessons, surf hire and local advice around Porth Neigwl and Abersoch."
+  },
+  "evidence": [
+    "Official/operator website reached: https://www.westcoastsurf.co.uk",
+    "Website meta description names Hell's Mouth Surf School.",
+    "Repo source: content/operators/surf.csv lists West Coast Surf Shop as operating Hell's Mouth Surf School.",
+    "Repo sources: content/operators/hire.csv and coasteering.csv contain Hell's Mouth Surf School entries."
+  ],
+  "notes": "The standalone hellsmouthsurfschool.co.uk page returned only a tiny placeholder response; West Coast Surf is the safer operator-owned source.",
+  "batch_id": "2026-06-06-critical-operator-trust-breakers-01",
+  "researched_at": "2026-06-06"
+}

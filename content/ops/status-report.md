@@ -55,10 +55,12 @@ Verification:
 - Updated `task-queue.json` validates.
 - Apply script dry-run completed and listed 4 operators with safe fields.
 - `npm run typecheck` passed.
+- `npm run build` compiled successfully but failed at page-data collection because `DATABASE_URL` is not set for `/api/admin/[contentType]`.
 
 Blocker:
 
 - Live database rows were not updated because `DATABASE_URL` / `POSTGRES_URL` is not set in this environment.
+- Full production build remains blocked for the same environment reason: admin API routes require `DATABASE_URL` during page-data collection.
 
 ## Next operational batch
 

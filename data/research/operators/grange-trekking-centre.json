@@ -1,0 +1,38 @@
+{
+  "operatorId": "grange-trekking-centre",
+  "name": "Grange Trekking Centre",
+  "slug": "grange-trekking-centre",
+  "batchId": "2026-06-06-critical-operator-trust-breakers-02",
+  "decision": "partial_safe_fields_only",
+  "contact": {
+    "phone": "+44 1873 890215",
+    "email": null,
+    "website": "https://grangetrekking.co.uk/"
+  },
+  "address": "Grange Trekking, Capel-Y-Fin, Abergavenny, Monmouthshire, Wales, NP7 7NP, United Kingdom",
+  "coordinates": {
+    "lat": 51.976424,
+    "lng": -3.0930019
+  },
+  "images": {
+    "cover": "https://grangetrekking.co.uk/images/banner.jpg",
+    "logo": null
+  },
+  "description": "Grange Trekking Centre is a pony trekking and horse-riding centre near Abergavenny, offering rides from Capel-y-ffin for beginners and experienced riders.",
+  "reviews": {
+    "google": {
+      "rating": null,
+      "reviewCount": null,
+      "lastChecked": "2026-06-06",
+      "note": "Left null unless a safe current Google source was available."
+    }
+  },
+  "sourceEvidence": [
+    "Official/operator website: https://grangetrekking.co.uk/",
+    "Official location/contact page: https://grangetrekking.co.uk/location.php",
+    "Coordinates checked from OpenStreetMap/Nominatim for the official business/address."
+  ],
+  "notes": "Official site provides phone, address and banner image. No direct email or suitable standalone logo found; leave those fields null rather than guessing.",
+  "lastVerified": "2026-06-06",
+  "doNotApplyMissingFields": true
+}

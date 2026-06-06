@@ -50,7 +50,11 @@ for (const op of rows) {
         review_count = COALESCE(${f.reviewCount ?? null}, review_count),
         data_source = 'research',
         last_verified_at = NOW(),
-        admin_notes = CONCAT(COALESCE(admin_notes, ''), '\n', ${`Ops batch ${batch.batch_id}: ${op.decision}. Evidence: ${op.evidence.join(' | ')}`})
+        admin_notes = CONCAT(
+          COALESCE(admin_notes, ''),
+          '\n',
+          ${`Ops batch ${batch.batch_id}: ${op.decision}. Evidence: ${op.evidence.join(' | ')}`}::text
+        )
       WHERE slug = ${slug}
       RETURNING slug
     `;

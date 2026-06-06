@@ -147,7 +147,7 @@
       "route_or_slug": "/directory/gigrin-farm",
       "title": "Gigrin Farm Red Kite Feeding",
       "priority": "critical",
-      "status": "research_needed",
+      "status": "researched",
       "task_type": "operator_enrichment",
       "source_url_requirement": "Official/current source required before applying factual or media changes.",
       "image_rule": "No AI images; no wrong-location stock; provenance required.",
@@ -160,7 +160,10 @@
       "original_issue": "Operator \"Gigrin Farm Red Kite Feeding\" missing: no cover image, no logo, no phone, no email",
       "fix_hint": "Fill 4 missing fields",
       "auto_fixable": false,
-      "created_at": "2026-06-06"
+      "created_at": "2026-06-06",
+      "last_batch": "2026-06-06-critical-operator-trust-breakers-02",
+      "batch_note": "Safe fields captured in batch 02; apply script ready, DB env required for live update.",
+      "updated_at": "2026-06-06"
     },
     {
       "id": "aw-20260606-007",
@@ -169,7 +172,7 @@
       "route_or_slug": "/directory/grange-trekking-centre",
       "title": "Grange Trekking Centre",
       "priority": "critical",
-      "status": "research_needed",
+      "status": "researched",
       "task_type": "operator_enrichment",
       "source_url_requirement": "Official/current source required before applying factual or media changes.",
       "image_rule": "No AI images; no wrong-location stock; provenance required.",
@@ -182,7 +185,10 @@
       "original_issue": "Operator \"Grange Trekking Centre\" missing: no cover image, no logo, no phone, no email",
       "fix_hint": "Fill 4 missing fields",
       "auto_fixable": false,
-      "created_at": "2026-06-06"
+      "created_at": "2026-06-06",
+      "last_batch": "2026-06-06-critical-operator-trust-breakers-02",
+      "batch_note": "Partial safe fields captured in batch 02; email/logo remain null until verified.",
+      "updated_at": "2026-06-06"
     },
     {
       "id": "aw-20260606-008",
@@ -191,7 +197,7 @@
       "route_or_slug": "/directory/heatherton-world-of-activities",
       "title": "Heatherton World of Activities",
       "priority": "critical",
-      "status": "research_needed",
+      "status": "researched",
       "task_type": "operator_enrichment",
       "source_url_requirement": "Official/current source required before applying factual or media changes.",
       "image_rule": "No AI images; no wrong-location stock; provenance required.",
@@ -204,7 +210,10 @@
       "original_issue": "Operator \"Heatherton World of Activities\" missing: no cover image, no logo, no phone, no email",
       "fix_hint": "Fill 4 missing fields",
       "auto_fixable": false,
-      "created_at": "2026-06-06"
+      "created_at": "2026-06-06",
+      "last_batch": "2026-06-06-critical-operator-trust-breakers-02",
+      "batch_note": "Safe fields captured in batch 02; apply script ready, DB env required for live update.",
+      "updated_at": "2026-06-06"
     },
     {
       "id": "aw-20260606-009",
@@ -1011,7 +1020,7 @@
       "route_or_slug": "/directory/one-planet-adventure-llandegla",
       "title": "One Planet Adventure (Llandegla)",
       "priority": "high",
-      "status": "research_needed",
+      "status": "researched",
       "task_type": "operator_enrichment",
       "source_url_requirement": "Official/current source required before applying factual or media changes.",
       "image_rule": "No AI images; no wrong-location stock; provenance required.",
@@ -1024,7 +1033,10 @@
       "original_issue": "Operator \"One Planet Adventure (Llandegla)\" missing: no cover image, no logo",
       "fix_hint": "Fill 2 missing fields",
       "auto_fixable": false,
-      "created_at": "2026-06-06"
+      "created_at": "2026-06-06",
+      "last_batch": "2026-06-06-critical-operator-trust-breakers-02",
+      "batch_note": "Safe fields including verified .com website, contact, cover and logo captured in batch 02; apply script ready, DB env required for live update.",
+      "updated_at": "2026-06-06"
     },
     {
       "id": "aw-20260606-046",

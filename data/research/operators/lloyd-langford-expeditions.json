@@ -1,0 +1,38 @@
+{
+  "operatorId": "lloyd-langford-expeditions",
+  "name": "Lloyd Langford Expeditions",
+  "slug": "lloyd-langford-expeditions",
+  "batchId": "2026-06-06-critical-operator-trust-breakers-02",
+  "decision": "blocked_unverified",
+  "contact": {
+    "phone": null,
+    "email": null,
+    "website": null
+  },
+  "address": null,
+  "coordinates": {
+    "lat": null,
+    "lng": null
+  },
+  "images": {
+    "cover": null,
+    "logo": null
+  },
+  "description": null,
+  "reviews": {
+    "google": {
+      "rating": null,
+      "reviewCount": null,
+      "lastChecked": "2026-06-06",
+      "note": "Left null unless a safe current Google source was available."
+    }
+  },
+  "sourceEvidence": [
+    "No current official/operator-owned source could be identified during batch research.",
+    "Candidate domains such as lloydlangfordexpeditions.co.uk/.com and lloydlangford.co.uk did not resolve in the research environment.",
+    "Search results were unrelated or low-confidence, so no contact, address, media or descriptive fields were applied."
+  ],
+  "notes": "Treat as unverified/possibly erroneous placeholder. Candidate action: archive/noindex this listing or replace with a verified expedition/activity provider before launch.",
+  "lastVerified": "2026-06-06",
+  "doNotApplyMissingFields": true
+}

@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-06-06",
+  "status": "seeded",
+  "rules_source": "sudo-brain/02-projects/adventure-wales/commercial-classification-rules.md",
+  "tiers": [
+    "Strategic Anchor",
+    "Premium Sales Lure",
+    "Claimed/Basic",
+    "Stub",
+    "Needs Permission",
+    "Block"
+  ],
+  "requires_mk_approval": [
+    "Strategic Anchor",
+    "Premium Sales Lure",
+    "outreach",
+    "permission-sensitive media"
+  ],
+  "decisions": [],
+  "default_policy": "Conservative: no ordinary unpaid operator receives premium treatment without explicit decision."
+}

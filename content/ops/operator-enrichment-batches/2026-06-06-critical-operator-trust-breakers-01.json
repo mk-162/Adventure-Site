@@ -1,0 +1,123 @@
+{
+  "batch_id": "2026-06-06-critical-operator-trust-breakers-01",
+  "created_at": "2026-06-06",
+  "purpose": "First operational content batch: resolve or safely triage critical operator trust breakers from content/ops/task-queue.json.",
+  "source_rules": [
+    "Use official/current sources where reachable.",
+    "Do not invent pricing, timetable, safety or availability claims.",
+    "Use only official/operator-owned media URLs or leave media empty.",
+    "If an operator cannot be verified, mark blocked rather than fabricating fields."
+  ],
+  "operators": [
+    {
+      "task_id": "aw-20260606-002",
+      "slug": "afan-forest-park",
+      "name": "Afan Forest Park",
+      "decision": "accepted_safe_fields",
+      "fields": {
+        "website": "https://afanforestpark.com",
+        "phone": "01639 850564",
+        "email": null,
+        "address": "Afan Forest Park Visitor Centre, Cynonville, Port Talbot, SA13 3HG",
+        "lat": 51.6742177,
+        "lng": -3.6522502,
+        "coverImage": "https://afanforestpark.com/wp-content/uploads/elementor/thumbs/DSC_7137_5504-x-8256_no_watermark_5504-x-8256_facebook-qg2zvbxrrtm2cijjchtojooanq2igck6ew4pzuyqao.jpg",
+        "logoUrl": "https://afanforestpark.com/wp-content/uploads/2023/07/afan_forest_parc_logo.svg",
+        "googleRating": "4.7",
+        "reviewCount": 1332,
+        "description": "Afan Forest Park is one of Wales' best-established mountain biking destinations, with waymarked trails, family-friendly cycle routes and walking routes across the Afan Valley. The visitor centre area gives riders a practical base for parking, facilities and route access before heading onto the forest trail network."
+      },
+      "evidence": [
+        "Local research file: data/research/operators/afan-forest-park.json",
+        "Official website reached during batch: https://afanforestpark.com",
+        "Official source URLs recorded in research metadata: Afan Forest Park, Natural Resources Wales, Dramatic Heart Wales"
+      ],
+      "notes": "No direct email published in existing research; do not invent one. Phone is recorded as Afan Forest Park Visitor Centre."
+    },
+    {
+      "task_id": "aw-20260606-004",
+      "slug": "cwmcarn-forest",
+      "name": "Cwmcarn Forest",
+      "decision": "accepted_safe_fields",
+      "fields": {
+        "website": "https://www.cwmcarnforest.co.uk/",
+        "phone": "01495 272001",
+        "email": "cwmcarn-vc@caerphilly.gov.uk",
+        "address": "Cwmcarn Forest Drive, Crosskeys, Caerphilly, NP11 7FA",
+        "lat": 51.6359449,
+        "lng": -3.1143582,
+        "coverImage": "https://www.cwmcarnforest.co.uk/wp-content/themes/cwmcarn/images/home.jpg",
+        "logoUrl": "https://www.cwmcarnforest.co.uk/wp-content/themes/cwmcarn/images/cwmcarn_logo.svg",
+        "googleRating": "4.8",
+        "reviewCount": 1477,
+        "description": "Cwmcarn Forest is a South Wales forest destination with mountain biking trails, walking routes, a visitor centre, café and camping facilities. It is a practical base for riders and families, with Cwmcarn's established trail network and forest-drive setting close to the M4 corridor."
+      },
+      "evidence": [
+        "Local research file: data/research/operators/cwmcarn-forest.json",
+        "Official website reached during earlier check: https://www.cwmcarnforest.co.uk/",
+        "Official/source URLs recorded in research file: Cwmcarn Forest, Natural Resources Wales, MB Wales, Visit Wales, Valleys Regional Park"
+      ],
+      "notes": "Official site intermittently returned 403 to scripted fetches; existing research file already carries official-source evidence and media URLs."
+    },
+    {
+      "task_id": "aw-20260606-005",
+      "slug": "gethin-woods-bike-park",
+      "name": "Gethin Woods (Bike Park Merthyr)",
+      "decision": "partial_safe_fields_only",
+      "fields": {
+        "website": "https://www.bikeparkwales.com",
+        "phone": "01443 836455",
+        "email": "info@bikeparkwales.com",
+        "address": "Pentrebach, Merthyr Tydfil",
+        "lat": 51.717,
+        "lng": -3.361,
+        "description": "BikePark Wales at Gethin Woods is a major South Wales mountain biking destination with uplift service, coaching, bike hire and a broad trail network for different riding levels. Use the official BikePark Wales website for current booking, opening and trail-status information."
+      },
+      "evidence": [
+        "Repo source: content/operators/hire.csv contains BikePark Wales phone, email, website, address, coordinates and services.",
+        "Repo source: content/operators/mtb.csv contains BikePark Wales website, email, coordinates and description.",
+        "Official website domain reached browser security challenge; direct content blocked by Cloudflare during batch."
+      ],
+      "notes": "Do not apply logo/cover image for this operator until official media can be verified; Cloudflare blocked media inspection."
+    },
+    {
+      "task_id": "manual-priority-hells-mouth-surf-school",
+      "slug": "hells-mouth-surf-school",
+      "aliases": [
+        "hell-s-mouth-surf-school"
+      ],
+      "name": "Hell's Mouth Surf School",
+      "decision": "accepted_safe_fields",
+      "fields": {
+        "website": "https://www.westcoastsurf.co.uk",
+        "phone": "01758 713067",
+        "email": "surf@westcoastsurf.co.uk",
+        "address": "West Coast Surf Shop, Lon Pen Cei, Abersoch, Gwynedd LL53 7AP",
+        "lat": 52.8228,
+        "lng": -4.4875,
+        "coverImage": "https://files.ekmcdn.com/3f7030/resources/design/hells-mouth-surf-school.jpg?v=1ce664c9af9c68451c914cc2ea639115",
+        "logoUrl": "https://files.ekmcdn.com/3f7030/resources/design/sharplogo.png",
+        "description": "Hell's Mouth Surf School is operated by West Coast Surf from Abersoch, serving Hell's Mouth and nearby Llŷn Peninsula surf spots. It is a useful listing for visitors looking for surf lessons, surf hire and local advice around Porth Neigwl and Abersoch."
+      },
+      "evidence": [
+        "Official/operator website reached: https://www.westcoastsurf.co.uk",
+        "Website meta description names Hell's Mouth Surf School.",
+        "Repo source: content/operators/surf.csv lists West Coast Surf Shop as operating Hell's Mouth Surf School.",
+        "Repo sources: content/operators/hire.csv and coasteering.csv contain Hell's Mouth Surf School entries."
+      ],
+      "notes": "The standalone hellsmouthsurfschool.co.uk page returned only a tiny placeholder response; West Coast Surf is the safer operator-owned source."
+    },
+    {
+      "task_id": "aw-20260606-003",
+      "slug": "celtic-trail-shuttle",
+      "name": "Celtic Trail Cycle Shuttle",
+      "decision": "blocked_unverified",
+      "fields": {},
+      "evidence": [
+        "Repo stub source: scripts/archive/seed-directory-stubs.ts contains placeholder phone 07890 123456 and bookings@celtictrailshuttle.co.uk.",
+        "Domain check failed: https://www.celtictrailshuttle.co.uk returned DNS/name-resolution error during batch."
+      ],
+      "notes": "Treat as unverified/possibly fake placeholder. Do not apply existing placeholder phone/email, coordinates, logo, cover or Google rating. Candidate action: replace with a verified Pembrokeshire cycling transport operator or archive/noindex this listing."
+    }
+  ]
+}

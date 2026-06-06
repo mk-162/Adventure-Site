@@ -41,6 +41,7 @@
     ".next",
     ".next/dev",
     "scripts/archive",
+    "scripts/import",
     "src/**/*.test.tsx",
     "src/**/*.test.ts"
   ]

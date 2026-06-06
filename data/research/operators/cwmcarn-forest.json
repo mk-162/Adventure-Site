@@ -119,5 +119,29 @@
     "https://www.visitwales.com/attraction/visitor-centre/cwmcarn-forest-and-visitor-centre-536431",
     "https://valleysregionalpark.wales/gateways/cwmcarn-forest/"
   ],
-  "researchedAt": "2026-02-06T23:15:00Z"
+  "researchedAt": "2026-02-06T23:15:00Z",
+  "opsBatchDecision": {
+    "batch_id": "2026-06-06-critical-operator-trust-breakers-01",
+    "decision": "accepted_safe_fields",
+    "safeFieldsForApply": {
+      "website": "https://www.cwmcarnforest.co.uk/",
+      "phone": "01495 272001",
+      "email": "cwmcarn-vc@caerphilly.gov.uk",
+      "address": "Cwmcarn Forest Drive, Crosskeys, Caerphilly, NP11 7FA",
+      "lat": 51.6359449,
+      "lng": -3.1143582,
+      "coverImage": "https://www.cwmcarnforest.co.uk/wp-content/themes/cwmcarn/images/home.jpg",
+      "logoUrl": "https://www.cwmcarnforest.co.uk/wp-content/themes/cwmcarn/images/cwmcarn_logo.svg",
+      "googleRating": "4.8",
+      "reviewCount": 1477,
+      "description": "Cwmcarn Forest is a South Wales forest destination with mountain biking trails, walking routes, a visitor centre, café and camping facilities. It is a practical base for riders and families, with Cwmcarn's established trail network and forest-drive setting close to the M4 corridor."
+    },
+    "evidence": [
+      "Local research file: data/research/operators/cwmcarn-forest.json",
+      "Official website reached during earlier check: https://www.cwmcarnforest.co.uk/",
+      "Official/source URLs recorded in research file: Cwmcarn Forest, Natural Resources Wales, MB Wales, Visit Wales, Valleys Regional Park"
+    ],
+    "notes": "Official site intermittently returned 403 to scripted fetches; existing research file already carries official-source evidence and media URLs.",
+    "updated_at": "2026-06-06"
+  }
 }

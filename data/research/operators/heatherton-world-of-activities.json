@@ -1,0 +1,39 @@
+{
+  "operatorId": "heatherton-world-of-activities",
+  "name": "Heatherton World of Activities",
+  "slug": "heatherton-world-of-activities",
+  "batchId": "2026-06-06-critical-operator-trust-breakers-02",
+  "decision": "accepted_safe_fields",
+  "contact": {
+    "phone": "01646 652000",
+    "email": "info@heatherton.co.uk",
+    "website": "https://www.heatherton.co.uk/"
+  },
+  "address": "Heatherton World of Activities, St Florence, Tenby, Pembrokeshire, South Wales, SA70 8RJ",
+  "coordinates": {
+    "lat": 51.6881768,
+    "lng": -4.7638312
+  },
+  "images": {
+    "cover": "https://www.heatherton.co.uk/media/2cgfnxll/low09612-smaller.jpg",
+    "logo": "https://www.heatherton.co.uk/media/4sdfyuh5/logo.png"
+  },
+  "description": "Heatherton World of Activities is a Pembrokeshire activity park near Tenby with family activities, adrenaline attractions, wet-weather options and dog-friendly facilities.",
+  "reviews": {
+    "google": {
+      "rating": null,
+      "reviewCount": null,
+      "lastChecked": "2026-06-06",
+      "note": "Left null unless a safe current Google source was available."
+    }
+  },
+  "sourceEvidence": [
+    "Official/operator website: https://www.heatherton.co.uk/",
+    "Official contact page: https://www.heatherton.co.uk/contact/",
+    "Official media asset: https://www.heatherton.co.uk/media/2cgfnxll/low09612-smaller.jpg",
+    "Official logo asset: https://www.heatherton.co.uk/media/4sdfyuh5/logo.png"
+  ],
+  "notes": "Contact fields, coordinates and media verified from operator-owned pages/assets. Google rating/review count left null because no safe current Google source was available.",
+  "lastVerified": "2026-06-06",
+  "doNotApplyMissingFields": true
+}

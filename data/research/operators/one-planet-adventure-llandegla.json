@@ -1,0 +1,40 @@
+{
+  "operatorId": "one-planet-adventure-llandegla",
+  "name": "Oneplanet Adventure (Llandegla)",
+  "slug": "one-planet-adventure-llandegla",
+  "batchId": "2026-06-06-critical-operator-trust-breakers-02",
+  "decision": "accepted_safe_fields",
+  "contact": {
+    "phone": "01978 751656",
+    "email": "hello@oneplanetadventure.com",
+    "website": "https://oneplanetadventure.com/"
+  },
+  "address": "Coed Llandegla Forest, Ruthin Rd, Llandegla, Denbighshire, LL11 3AA, UK",
+  "coordinates": {
+    "lat": 53.0626628,
+    "lng": -3.1357835
+  },
+  "images": {
+    "cover": "https://oneplanetadventure.com/wp-content/uploads/2021/10/bondy1.jpg",
+    "logo": "https://oneplanetadventure.com/wp-content/themes/opa/assets/images/logo.svg"
+  },
+  "description": "Oneplanet Adventure is based at Coed Llandegla Forest and supports mountain biking, trail running and walking visits with bike hire, a shop, café and workshop.",
+  "reviews": {
+    "google": {
+      "rating": null,
+      "reviewCount": null,
+      "lastChecked": "2026-06-06",
+      "note": "Left null unless a safe current Google source was available."
+    }
+  },
+  "sourceEvidence": [
+    "Official/operator website: https://oneplanetadventure.com/",
+    "Official contact page: https://oneplanetadventure.com/contact/",
+    "Official media asset: https://oneplanetadventure.com/wp-content/uploads/2021/10/bondy1.jpg",
+    "Official logo asset: https://oneplanetadventure.com/wp-content/themes/opa/assets/images/logo.svg",
+    "Existing repo sources: content/operators/mtb.csv and content/operators/hire.csv contain Oneplanet contact/service fields."
+  ],
+  "notes": "Existing repo hitlist used oneplanetadventure.co.uk, which did not resolve during research. Use the verified .com operator-owned site. Google rating/review count left null.",
+  "lastVerified": "2026-06-06",
+  "doNotApplyMissingFields": true
+}

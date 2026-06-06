@@ -1,0 +1,133 @@
+{
+  "batch_id": "2026-06-06-critical-operator-trust-breakers-02",
+  "created_at": "2026-06-06",
+  "purpose": "Second operational content batch: resolve or safely triage the next critical/high operator trust breakers from content/ops/task-queue.json and the previous status-report next queue.",
+  "source_rules": [
+    "Use official/current sources where reachable.",
+    "Do not invent pricing, timetable, safety or availability claims.",
+    "Use only official/operator-owned media URLs or leave media empty.",
+    "If an operator cannot be verified, mark blocked rather than fabricating fields."
+  ],
+  "operators": [
+    {
+      "task_id": "aw-20260606-006",
+      "slug": "gigrin-farm",
+      "name": "Gigrin Farm Red Kite Feeding",
+      "decision": "accepted_safe_fields",
+      "fields": {
+        "website": "https://www.gigrin.co.uk/",
+        "phone": "+44 1597 810243",
+        "email": "office@gigrin.co.uk",
+        "address": "Gigrin Farm, South Street, Rhayader, Powys, LD6 5BL, United Kingdom",
+        "lat": 52.2990859,
+        "lng": -3.4977111,
+        "coverImage": "https://images.squarespace-cdn.com/content/v1/66cf401883c8ba4ca3e98425/9daa5cef-d35d-4fee-9ecb-f345f6a47569/Banner+Image+Gigrin.jpg",
+        "logoUrl": "https://images.squarespace-cdn.com/content/v1/66cf401883c8ba4ca3e98425/98785389-c5d5-4abf-9f92-fa0d525bdac0/Gigrin-Logo.png",
+        "googleRating": null,
+        "reviewCount": null,
+        "description": "Gigrin Farm is a red kite feeding and wildlife-watching centre near Rhayader, giving visitors a practical base for watching and photographing wild red kites in Mid Wales."
+      },
+      "evidence": [
+        "Official/operator website: https://www.gigrin.co.uk/",
+        "Official about page: https://www.gigrin.co.uk/about",
+        "Official red kite feeding page: https://www.gigrin.co.uk/red-kite-feeding",
+        "Coordinates checked from OpenStreetMap/Nominatim for the official address."
+      ],
+      "notes": "Official site provides phone, email, address, cover and logo assets. Google rating/review count left null because no safe current Google source was available."
+    },
+    {
+      "task_id": "aw-20260606-007",
+      "slug": "grange-trekking-centre",
+      "name": "Grange Trekking Centre",
+      "decision": "partial_safe_fields_only",
+      "fields": {
+        "website": "https://grangetrekking.co.uk/",
+        "phone": "+44 1873 890215",
+        "email": null,
+        "address": "Grange Trekking, Capel-Y-Fin, Abergavenny, Monmouthshire, Wales, NP7 7NP, United Kingdom",
+        "lat": 51.976424,
+        "lng": -3.0930019,
+        "coverImage": "https://grangetrekking.co.uk/images/banner.jpg",
+        "logoUrl": null,
+        "googleRating": null,
+        "reviewCount": null,
+        "description": "Grange Trekking Centre is a pony trekking and horse-riding centre near Abergavenny, offering rides from Capel-y-ffin for beginners and experienced riders."
+      },
+      "evidence": [
+        "Official/operator website: https://grangetrekking.co.uk/",
+        "Official location/contact page: https://grangetrekking.co.uk/location.php",
+        "Coordinates checked from OpenStreetMap/Nominatim for the official business/address."
+      ],
+      "notes": "Official site provides phone, address and banner image. No direct email or suitable standalone logo found; leave those fields null rather than guessing."
+    },
+    {
+      "task_id": "aw-20260606-008",
+      "slug": "heatherton-world-of-activities",
+      "name": "Heatherton World of Activities",
+      "decision": "accepted_safe_fields",
+      "fields": {
+        "website": "https://www.heatherton.co.uk/",
+        "phone": "01646 652000",
+        "email": "info@heatherton.co.uk",
+        "address": "Heatherton World of Activities, St Florence, Tenby, Pembrokeshire, South Wales, SA70 8RJ",
+        "lat": 51.6881768,
+        "lng": -4.7638312,
+        "coverImage": "https://www.heatherton.co.uk/media/2cgfnxll/low09612-smaller.jpg",
+        "logoUrl": "https://www.heatherton.co.uk/media/4sdfyuh5/logo.png",
+        "googleRating": null,
+        "reviewCount": null,
+        "description": "Heatherton World of Activities is a Pembrokeshire activity park near Tenby with family activities, adrenaline attractions, wet-weather options and dog-friendly facilities."
+      },
+      "evidence": [
+        "Official/operator website: https://www.heatherton.co.uk/",
+        "Official contact page: https://www.heatherton.co.uk/contact/",
+        "Official media asset: https://www.heatherton.co.uk/media/2cgfnxll/low09612-smaller.jpg",
+        "Official logo asset: https://www.heatherton.co.uk/media/4sdfyuh5/logo.png"
+      ],
+      "notes": "Contact fields, coordinates and media verified from operator-owned pages/assets. Google rating/review count left null because no safe current Google source was available."
+    },
+    {
+      "task_id": "manual-priority-lloyd-langford-expeditions",
+      "slug": "lloyd-langford-expeditions",
+      "name": "Lloyd Langford Expeditions",
+      "decision": "blocked_unverified",
+      "fields": {},
+      "evidence": [
+        "No current official/operator-owned source could be identified during batch research.",
+        "Candidate domains such as lloydlangfordexpeditions.co.uk/.com and lloydlangford.co.uk did not resolve in the research environment.",
+        "Search results were unrelated or low-confidence, so no contact, address, media or descriptive fields were applied."
+      ],
+      "notes": "Treat as unverified/possibly erroneous placeholder. Candidate action: archive/noindex this listing or replace with a verified expedition/activity provider before launch."
+    },
+    {
+      "task_id": "aw-20260606-one-planet-adventure-llandegla",
+      "slug": "one-planet-adventure-llandegla",
+      "aliases": [
+        "oneplanet-adventure"
+      ],
+      "name": "Oneplanet Adventure (Llandegla)",
+      "decision": "accepted_safe_fields",
+      "fields": {
+        "website": "https://oneplanetadventure.com/",
+        "phone": "01978 751656",
+        "email": "hello@oneplanetadventure.com",
+        "address": "Coed Llandegla Forest, Ruthin Rd, Llandegla, Denbighshire, LL11 3AA, UK",
+        "lat": 53.0626628,
+        "lng": -3.1357835,
+        "coverImage": "https://oneplanetadventure.com/wp-content/uploads/2021/10/bondy1.jpg",
+        "logoUrl": "https://oneplanetadventure.com/wp-content/themes/opa/assets/images/logo.svg",
+        "googleRating": null,
+        "reviewCount": null,
+        "description": "Oneplanet Adventure is based at Coed Llandegla Forest and supports mountain biking, trail running and walking visits with bike hire, a shop, café and workshop."
+      },
+      "evidence": [
+        "Official/operator website: https://oneplanetadventure.com/",
+        "Official contact page: https://oneplanetadventure.com/contact/",
+        "Official media asset: https://oneplanetadventure.com/wp-content/uploads/2021/10/bondy1.jpg",
+        "Official logo asset: https://oneplanetadventure.com/wp-content/themes/opa/assets/images/logo.svg",
+        "Existing repo sources: content/operators/mtb.csv and content/operators/hire.csv contain Oneplanet contact/service fields."
+      ],
+      "notes": "Existing repo hitlist used oneplanetadventure.co.uk, which did not resolve during research. Use the verified .com operator-owned site. Google rating/review count left null."
+    }
+  ]
+}

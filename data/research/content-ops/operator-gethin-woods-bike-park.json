@@ -1,0 +1,441 @@
+{
+  "_meta": {
+    "task": "content-ops-096-operator-gethin-woods-bike-park",
+    "contentItem": "operator-gethin-woods-bike-park",
+    "contentType": "operator",
+    "slug": "gethin-woods-bike-park",
+    "route": "/directory/gethin-woods-bike-park",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "blocked",
+    "researchOutcome": "blocked_pending_editorial_decision",
+    "identityConfidence": "HIGH — BikePark Wales at Gethin Woodland Centre, Abercanaid, Merthyr Tydfil is the real-world entity behind this content item. Multiple authoritative sources confirm address, phone, email, and brand."
+  },
+
+  "criticalEditorialFlag": {
+    "issue": "POTENTIAL DUPLICATE CONTENT ITEM",
+    "detail": "The content inventory already contains a separate entry 'operator-bikepark-wales' at /directory/bikepark-wales (commercial tier: strategic_big_player_or_launch_priority, status: qa_needed) that refers to the same real-world entity — BikePark Wales, Gethin Woodland Centre, Merthyr Tydfil. This task is for 'operator-gethin-woods-bike-park' (unclassified_operator, research_needed). Publishing both would create a duplicate directory listing for the same business under different slugs and tiers.",
+    "action": "Editorial decision required BEFORE this item proceeds to QA: (a) consolidate into the existing operator-bikepark-wales entry and close this task; or (b) confirm this is a distinct listing (e.g. a location/trails page vs. a commercial operator page) and clarify the correct commercial tier.",
+    "internalRef": "content/ops/content-inventory.csv row: operator-bikepark-wales, /directory/bikepark-wales, strategic_big_player_or_launch_priority, qa_needed"
+  },
+
+  "knownBlockerResolution": {
+    "phone": {
+      "status": "RESOLVED",
+      "primaryValue": "01685 709450",
+      "primarySource": "https://www.mbwales.com/agents/bikepark-wales/ and content/mtb/centres.csv (internal) and https://www.visitwales.com/activity/activity/bikepark-wales-529131 and https://www.breconbeaconstourism.org/business/bike-park-wales/",
+      "secondaryValue": "07730 382501",
+      "secondarySource": "https://www.visitmerthyr.co.uk/things-to-do/attractions/bikepark-wales/",
+      "note": "The landline 01685 709450 appears consistently across internal CSV, Mountain Bike Wales, Visit Wales, and Brecon Beacons Tourism as the main visitor centre number. The mobile 07730 382501 appears only on Visit Merthyr and may be a separate reception or booking line. Use the landline as primary; flag the mobile for verification.",
+      "verifyManually": true
+    },
+    "email": {
+      "status": "RESOLVED",
+      "value": "reception@bikeparkwales.com",
+      "source": "https://www.visitmerthyr.co.uk/things-to-do/attractions/bikepark-wales/ and https://www.breconbeaconstourism.org/business/bike-park-wales/ and search results confirming 'booking changes or cancellations email reception@bikeparkwales.com'",
+      "note": "Confirmed consistently across two independent tourism authority sources. bikeparkwales.com itself returned 403 during this research session, so the email could not be verified directly on the operator site. Treat as high-confidence but verify against the live site before publishing.",
+      "verifyManually": false
+    },
+    "coverImage": {
+      "status": "AVAILABLE — CC LICENSED",
+      "detail": "Two CC BY-SA 2.0 images by Noel Jenkins confirmed on Wikimedia Commons. See images section below."
+    },
+    "logo": {
+      "status": "BLOCKED",
+      "detail": "No BikePark Wales logo confirmed under a free/open licence on Wikimedia Commons, Openverse, or Unsplash. The operator website (bikeparkwales.com) returned 403 during this session; the logo is a proprietary trademark of BikePark Wales Ltd. Do not reproduce without written permission from BikePark Wales.",
+      "action": "Request logo/media pack from reception@bikeparkwales.com citing the Adventure Wales directory listing."
+    }
+  },
+
+  "proposedOperatorData": {
+    "name": "BikePark Wales",
+    "nameNote": "Trading name confirmed across all authoritative sources. The content item slug 'gethin-woods-bike-park' reflects the location (Gethin Woodland). The brand name is 'BikePark Wales'.",
+    "slug": "gethin-woods-bike-park",
+    "website": "https://www.bikeparkwales.com",
+    "websiteNote": "Active domain. bikeparkwales.com returned 403 for direct page fetches in this session, suggesting possible bot protection. The domain and brand are confirmed by NRW, Visit Wales, Mountain Bike Wales, Visit Merthyr, and Brecon Beacons Tourism.",
+    "websiteSource": "https://naturalresources.wales/about-us/news-and-blogs/news/future-forest-vision-for-gethin-forest-and-bikepark-wales-takes-root/?lang=en",
+
+    "operatorType": {
+      "structure": "Private commercial operator",
+      "note": "BikePark Wales is a private company operating on NRW-managed Gethin Forest under a 33-year lease signed in 2024. Unlike Afan Forest Park or Cwmcarn Forest (council/NRW-managed), this IS a private commercial entity — the 'unclassified_operator' commercial tier is plausible, though the parallel entry 'operator-bikepark-wales' is classified as 'strategic_big_player_or_launch_priority' which may be more appropriate given the park's scale and national profile.",
+      "source": "https://naturalresources.wales/about-us/news-and-blogs/news/future-forest-vision-for-gethin-forest-and-bikepark-wales-takes-root/?lang=en",
+      "verifyManually": true
+    },
+
+    "contact": {
+      "phone": "01685 709450",
+      "phoneSource": "content/mtb/centres.csv (internal); https://www.mbwales.com/agents/bikepark-wales/; https://www.visitwales.com/activity/activity/bikepark-wales-529131; https://www.breconbeaconstourism.org/business/bike-park-wales/",
+      "phoneMobile": "07730 382501",
+      "phoneMobileSource": "https://www.visitmerthyr.co.uk/things-to-do/attractions/bikepark-wales/",
+      "phoneMobileNote": "Possibly a separate reception/booking mobile. Verify which number is current and primary.",
+      "email": "reception@bikeparkwales.com",
+      "emailSource": "https://www.visitmerthyr.co.uk/things-to-do/attractions/bikepark-wales/ and https://www.breconbeaconstourism.org/business/bike-park-wales/",
+      "address": {
+        "siteName": "Gethin Woodland Centre",
+        "locality": "Abercanaid",
+        "town": "Merthyr Tydfil",
+        "postcode": "CF48 1YZ",
+        "postcodeGPS": "CF48 4TT",
+        "postcodeGPSNote": "CF48 4TT is recommended for satnav to reach the roundabout at the driveway entrance — do not use CF48 1YZ for navigation.",
+        "country": "Wales"
+      },
+      "addressSource": "https://www.visitmerthyr.co.uk/things-to-do/attractions/bikepark-wales/ and https://www.visitwales.com/activity/activity/bikepark-wales-529131 and content/mtb/centres.csv (all consistent)"
+    },
+
+    "location": {
+      "lat": 51.7589,
+      "lng": -3.3711,
+      "latLngSource": "content/mtb/centres.csv (internal)",
+      "latLngNote": "Single coordinate set from internal CSV — no conflict with other internal sources. Plausible for Abercanaid / Gethin Woodland, Merthyr Tydfil. Verify against postcode CF48 1YZ via geocoding before publishing map pin.",
+      "verifyManually": true,
+      "region": "south_wales",
+      "regionNote": "Merthyr Tydfil is in South Wales. The internal CSV lists region as 'brecon-beacons' and Brecon Beacons Tourism lists it on the edge of Bannau Brycheiniog National Park. Region assignment on the Adventure Wales site should match the regional landing page strategy — confirm with editorial.",
+      "directions": "A470 from Cardiff towards Merthyr Tydfil. Park is signed from the roundabout at Pentrebach, 1 mile south of Merthyr town centre. Use postcode CF48 4TT for satnav.",
+      "directionsSource": "https://www.visitmerthyr.co.uk/things-to-do/attractions/bikepark-wales/ (combined with internal CSV)",
+      "nearestStation": "Pentre-Bach (approx. 1 mile)",
+      "nearestStationSource": "content/mtb/centres.csv (internal)"
+    },
+
+    "openingHours": {
+      "general": "Year-round operation, Thursday to Monday. Closed Tuesday and Wednesday.",
+      "note": "General schedule confirmed by Brecon Beacons Tourism ('year-round operation Thursday through Monday, with seasonal variations'). Specific uplift start/end times and seasonal variations not confirmed in this session — the official opening hours page (bikeparkwales.com/opening-hours) returned 403.",
+      "source": "https://www.breconbeaconstourism.org/business/bike-park-wales/",
+      "verifyManually": true,
+      "action": "Check https://www.bikeparkwales.com/opening-hours for exact daily operating hours and uplift schedule before publishing."
+    },
+
+    "description": {
+      "short": "BikePark Wales at Gethin Woodland, Merthyr Tydfil, is the UK's biggest and most diverse mountain bike park. Set on a 491 m summit within NRW-managed Gethin Forest, it offers 47+ purpose-built descents from green beginner runs to expert pro-lines, a minibus uplift service, bike hire, coaching, and a full visitor hub — all just 1 mile off the A470.",
+      "shortNote": "Drafted from verified sources. Trail count varies across sources (47, 50+, 60+) — use 47 as the internal-CSV figure and note 'over 47' to hedge; editorial team should verify exact current count from bikeparkwales.com.",
+      "full": "BikePark Wales is a private commercial mountain bike park operating within Gethin Forest, a Natural Resources Wales-managed woodland on the hills above Merthyr Tydfil, South Wales. The park operates under a 33-year lease with NRW (signed 2024) and has been recognised jointly with NRW for its Future Forest Vision, balancing recreation, biodiversity, and sustainable forestry.\n\nSet at an elevation of up to 491 m (Mynydd Gethin summit), the park offers over 47 purpose-built descents graded green, blue, red, black, and orange/pro. Kermit — a 4.2 km green descent — is widely described as the UK's longest beginner downhill trail. Other named trails include Terry's Belly (blue), Dai Hard (red), Vicious Valley (red), A470 (black), and the pro-line 50 to 01 (orange). A 4.6 km pedal-up singletrack climb and pedal passes provide alternatives to the uplift service.\n\nThe visitor hub at Gethin Woodland Centre includes The Woodland Café (breakfasts, burgers, refreshments), a bike shop, workshop, bike and equipment hire (Trek bikes), professional coaching, uplift minibuses (bookable up to 3 months in advance), free parking, toilets, showers, changing facilities, and Wi-Fi. The park accommodates individuals, families, groups, schools, and corporate events, and offers annual memberships. It has Visit Wales Quality Assured status.",
+      "fullNote": "Drafted from verified third-party and internal sources. The bikeparkwales.com website could not be scraped directly (403) — review and amend once the operator site is accessible. Trail names and grades confirmed from internal trails CSV; verify current trail status/count with operator before publishing."
+    },
+
+    "activities": [
+      {
+        "name": "Mountain Biking — Downhill (all grades)",
+        "detail": "47+ purpose-built descents: green, blue, red, black, orange/pro grades",
+        "source": "content/mtb/centres.csv (internal) and https://www.mbwales.com/agents/bikepark-wales/"
+      },
+      {
+        "name": "Uplift Service",
+        "detail": "Minibus uplift transporting riders and bikes to the summit throughout the day. Bookable up to 3 months in advance.",
+        "source": "https://www.mbwales.com/agents/bikepark-wales/ and https://www.visitwales.com/activity/activity/bikepark-wales-529131"
+      },
+      {
+        "name": "Pedal Access",
+        "detail": "4.6 km pedal-up singletrack climb to summit; pedal passes and e-bike access available",
+        "source": "https://www.mbwales.com/agents/bikepark-wales/"
+      },
+      {
+        "name": "Bike and Equipment Hire",
+        "detail": "Trek bikes and equipment hire; booking recommended",
+        "source": "https://www.visitwales.com/activity/activity/bikepark-wales-529131 and https://www.mbwales.com/agents/bikepark-wales/"
+      },
+      {
+        "name": "Coaching and Guided Sessions",
+        "detail": "Professional mountain bike coaching courses",
+        "source": "https://www.visitwales.com/activity/activity/bikepark-wales-529131 and https://www.breconbeaconstourism.org/business/bike-park-wales/"
+      },
+      {
+        "name": "Kids' Activities",
+        "detail": "Available on select days",
+        "source": "https://www.visitwales.com/activity/activity/bikepark-wales-529131"
+      },
+      {
+        "name": "Corporate and Group Days",
+        "detail": "Team building, corporate events, stag/hen parties, school groups",
+        "source": "https://www.breconbeaconstourism.org/business/bike-park-wales/"
+      }
+    ],
+
+    "trails": {
+      "summaryNote": "Trail count varies across sources (internal CSV: 47; Visit Wales: 50+; Brecon Beacons Tourism: 60+). The discrepancy likely reflects different counting methods (e.g. whether variants and sub-trails count separately) or trail additions since the internal data was last updated. The 47-trail figure from the internal CSV is used here as baseline; editorial team should verify exact current count from bikeparkwales.com/trails before publishing.",
+      "countSource": "content/mtb/centres.csv (47); https://www.visitwales.com/activity/activity/bikepark-wales-529131 (50+); https://www.breconbeaconstourism.org/business/bike-park-wales/ (60+)",
+      "elevationDrop_m": 300,
+      "summitAltitude_m": 491,
+      "elevationSource": "content/mtb/centres.csv (internal); summit altitude from https://ibikeride.com/wales/bikepark-wales-gethin-woods",
+      "grades": ["Green", "Blue", "Red", "Black", "Orange/Pro"],
+      "gradeCounts": {
+        "note": "Approximate counts from ibikeride.com (third-party): ~2 greens, ~13 blues, ~16 reds, ~14 blacks, ~4 pro-lines, plus a pump track. UNVERIFIED against current bikeparkwales.com trail listing.",
+        "source": "https://ibikeride.com/wales/bikepark-wales-gethin-woods",
+        "verifyManually": true
+      },
+      "selectedNamedTrails": [
+        {
+          "name": "Kermit",
+          "grade": "Green",
+          "distance_km": 4.2,
+          "elevationDrop_m": 300,
+          "description": "UK's longest beginner downhill trail. Flowing green descent with berms. Part of Ticket to Ride beginner experiences.",
+          "source": "content/mtb/trails.csv (internal)"
+        },
+        {
+          "name": "Terry's Belly",
+          "grade": "Blue",
+          "distance_km": 2.8,
+          "elevationDrop_m": 300,
+          "description": "Flowing blue with optional features, berms, rollers, and baby jumps. Good progression from Kermit.",
+          "source": "content/mtb/trails.csv (internal)"
+        },
+        {
+          "name": "Dai Hard",
+          "grade": "Red",
+          "distance_km": 2.5,
+          "elevationDrop_m": 300,
+          "description": "Classic red flow trail with jumps, berms, and drops.",
+          "source": "content/mtb/trails.csv (internal)"
+        },
+        {
+          "name": "Vicious Valley",
+          "grade": "Red",
+          "distance_km": 2.0,
+          "elevationDrop_m": 300,
+          "description": "Natural-feeling red with roots and rocks.",
+          "source": "content/mtb/trails.csv (internal)"
+        },
+        {
+          "name": "A470",
+          "grade": "Black",
+          "distance_km": 2.2,
+          "elevationDrop_m": 300,
+          "description": "Serious jump trail with gaps, step-downs, and committed features. Experienced riders only.",
+          "source": "content/mtb/trails.csv (internal)"
+        },
+        {
+          "name": "50 to 01",
+          "grade": "Orange / Pro",
+          "distance_km": 1.8,
+          "elevationDrop_m": 300,
+          "description": "Pro-level jump line with huge gaps and mandatory air time. Competition grade.",
+          "source": "content/mtb/trails.csv (internal)"
+        }
+      ],
+      "trailStatusNote": "Trail operational status not verified in this session. The bikeparkwales.com website could not be scraped (403). Verify all trail open/closed status before publishing."
+    },
+
+    "facilities": [
+      { "name": "The Woodland Café", "detail": "Serves breakfasts, burgers, and refreshments", "source": "https://www.mbwales.com/agents/bikepark-wales/" },
+      { "name": "Bike Shop and Workshop", "detail": "On-site retail shop and mechanical repair workshop", "source": "https://www.visitwales.com/activity/activity/bikepark-wales-529131" },
+      { "name": "Bike and Equipment Hire", "detail": "Trek bike hire; booking recommended", "source": "https://www.visitwales.com/activity/activity/bikepark-wales-529131" },
+      { "name": "Uplift Minibuses", "detail": "Bookable shuttle to summit; booking up to 3 months in advance", "source": "https://www.mbwales.com/agents/bikepark-wales/" },
+      { "name": "Free Parking", "source": "https://www.visitwales.com/activity/activity/bikepark-wales-529131 and https://www.breconbeaconstourism.org/business/bike-park-wales/" },
+      { "name": "Toilets (including accessible)", "source": "https://www.visitwales.com/activity/activity/bikepark-wales-529131" },
+      { "name": "Showers and Changing Areas", "source": "https://www.visitwales.com/activity/activity/bikepark-wales-529131 and https://www.breconbeaconstourism.org/business/bike-park-wales/" },
+      { "name": "Wi-Fi", "source": "https://www.visitwales.com/activity/activity/bikepark-wales-529131 and https://www.breconbeaconstourism.org/business/bike-park-wales/" },
+      { "name": "Pump Track", "source": "https://ibikeride.com/wales/bikepark-wales-gethin-woods" },
+      { "name": "Visitor Centre / Reception", "source": "Internal CSV and multiple sources" },
+      { "name": "Route Maps", "source": "https://www.visitwales.com/activity/activity/bikepark-wales-529131" },
+      { "name": "Annual Memberships", "source": "https://www.breconbeaconstourism.org/business/bike-park-wales/" },
+      { "name": "Gift Vouchers", "source": "https://www.breconbeaconstourism.org/business/bike-park-wales/" }
+    ],
+
+    "qualityAssurance": {
+      "visitWalesQualityAssured": true,
+      "source": "https://www.visitmerthyr.co.uk/things-to-do/attractions/bikepark-wales/"
+    },
+
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/BikeParkWales/",
+        "source": "https://www.visitmerthyr.co.uk/things-to-do/attractions/bikepark-wales/ and https://www.mbwales.com/agents/bikepark-wales/"
+      },
+      "instagram": {
+        "handle": "bikepark_wales",
+        "url": "https://www.instagram.com/bikepark_wales/",
+        "source": "https://www.visitmerthyr.co.uk/things-to-do/attractions/bikepark-wales/ and https://www.mbwales.com/agents/bikepark-wales/",
+        "note": "Handle confirmed consistent across both sources. Verify account is still active and official before linking."
+      },
+      "twitter": {
+        "handle": "@BikeParkWales",
+        "url": "https://twitter.com/BikeParkWales",
+        "source": "https://www.mbwales.com/agents/bikepark-wales/ and https://www.visitmerthyr.co.uk/things-to-do/attractions/bikepark-wales/"
+      }
+    },
+
+    "externalListings": [
+      { "org": "Natural Resources Wales — Future Forest Vision", "url": "https://naturalresources.wales/about-us/news-and-blogs/news/future-forest-vision-for-gethin-forest-and-bikepark-wales-takes-root/?lang=en" },
+      { "org": "Visit Wales", "url": "https://www.visitwales.com/activity/activity/bikepark-wales-529131" },
+      { "org": "Visit Merthyr", "url": "https://www.visitmerthyr.co.uk/things-to-do/attractions/bikepark-wales/" },
+      { "org": "Mountain Bike Wales", "url": "https://www.mbwales.com/agents/bikepark-wales/" },
+      { "org": "Brecon Beacons Tourism", "url": "https://www.breconbeaconstourism.org/business/bike-park-wales/" },
+      { "org": "iBikeRide", "url": "https://ibikeride.com/wales/bikepark-wales-gethin-woods" }
+    ]
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "No BikePark Wales logo confirmed under a Creative Commons, Open Government Licence, or equivalent free licence. The operator website (bikeparkwales.com) returned 403 in this session. The BikePark Wales logo is a proprietary trademark. Wikimedia Commons search for 'Bike Park Wales' and 'Gethin Woods' returned no logo files.",
+      "action": "Request a media/press pack from reception@bikeparkwales.com, specifying the Adventure Wales directory listing use case and requesting a logo with explicit permission to reproduce."
+    },
+    "cover": {
+      "status": "AVAILABLE — CC LICENSED",
+      "candidates": [
+        {
+          "title": "Bike Park Wales, summit of Mynydd Gethin",
+          "wikimediaFile": "Bike_Park_Wales,_summit_of_Mynydd_Gethin_-_geograph.org.uk_-_4132710.jpg",
+          "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Bike_Park_Wales,_summit_of_Mynydd_Gethin_-_geograph.org.uk_-_4132710.jpg",
+          "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/08/Bike_Park_Wales%2C_summit_of_Mynydd_Gethin_-_geograph.org.uk_-_4132710.jpg",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "photographer": "Noel Jenkins",
+          "dateTaken": "2014-05-30",
+          "uploadedToWikimedia": "2024-10-17",
+          "dimensions": "1024 × 768 px (161 KB)",
+          "attribution": "Photo: Noel Jenkins / geograph.org.uk, CC BY-SA 2.0",
+          "description": "Summit of Mynydd Gethin showing Bike Park Wales terrain. Landscape/mountain view, not trail action.",
+          "recommended": true,
+          "note": "Confirm licence version at Wikimedia page before use. Image shows the summit landscape (2014 photo), not current trail infrastructure — acceptable as an illustrative landscape image but flag the vintage if precision is required."
+        },
+        {
+          "title": "Bike Park Wales uplift",
+          "wikimediaFile": "Bike_Park_Wales_uplift_-_geograph.org.uk_-_4132723.jpg",
+          "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Bike_Park_Wales_uplift_-_geograph.org.uk_-_4132723.jpg",
+          "licence": "CC BY-SA 2.0 (confirmed from Wikimedia search results)",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "photographer": "Noel Jenkins",
+          "uploadedToWikimedia": "2024-10-07",
+          "attribution": "Photo: Noel Jenkins / geograph.org.uk, CC BY-SA 2.0",
+          "description": "Shows the BikePark Wales uplift minibus service.",
+          "recommended": false,
+          "note": "This image shows the uplift minibus — useful for the description of services but not an ideal hero/cover image. Confirm exact licence details on the Wikimedia file page before use."
+        }
+      ],
+      "wikimediaSearchUrl": "https://commons.wikimedia.org/w/index.php?search=Bike+Park+Wales&ns6=1",
+      "wikimediaSearchNote": "Search returned 402 results but most were unrelated (Australian bike parks etc). Only two confirmed BikePark Wales / Gethin images found in this session — both by Noel Jenkins, CC BY-SA 2.0. A manual browse of the full 402-result set may yield additional candidates.",
+      "actionRequired": "A human researcher should (1) confirm licence version on each Wikimedia file page; (2) download and assess image quality and suitability; (3) browse the full Wikimedia search result set for additional candidates; (4) as a fallback, request a CC-licensed or permission-granted press photo from reception@bikeparkwales.com."
+    },
+    "gallery": {
+      "status": "PARTIALLY AVAILABLE — CC LICENSED",
+      "note": "The two Wikimedia images (both CC BY-SA 2.0, Noel Jenkins) can form the start of a gallery. For contemporary trail action imagery, contact BikePark Wales directly via reception@bikeparkwales.com — their social media (Instagram: bikepark_wales, Facebook: BikeParkWales) shows extensive photography but all rights are reserved unless explicitly licensed. Do not use social media images without written permission."
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Duplicate content item with operator-bikepark-wales",
+      "confidence": "HIGH",
+      "issue": "The content inventory already has 'operator-bikepark-wales' at /directory/bikepark-wales (strategic_big_player_or_launch_priority, qa_needed) which is the same real-world entity. Publishing both creates a duplicate directory listing.",
+      "action": "Editorial decision required: consolidate or differentiate. This is the primary blocker for this task."
+    },
+    {
+      "claim": "Commercial tier: unclassified_operator vs strategic_big_player_or_launch_priority",
+      "confidence": "HIGH",
+      "issue": "BikePark Wales is a major private commercial operator, described as 'the UK's biggest and most diverse mountain bike park' on Visit Wales. The parallel operator-bikepark-wales entry uses the higher tier. The unclassified_operator tier in this task may be incorrect.",
+      "action": "Confirm which commercial tier is appropriate and consistent with the operator-bikepark-wales entry."
+    },
+    {
+      "claim": "Trail count: 47 vs 50+ vs 60+",
+      "confidence": "MODERATE",
+      "issue": "Internal CSV says 47; Visit Wales says 50+; Brecon Beacons Tourism says 60+. All are plausible — trail count can vary by how sub-trails and variants are counted, and the park has been adding trails.",
+      "action": "Check https://www.bikeparkwales.com/trails for current official count before publishing any specific figure."
+    },
+    {
+      "claim": "Opening hours: Thu–Mon year-round",
+      "confidence": "MODERATE",
+      "issue": "Only one source (Brecon Beacons Tourism) states 'Thursday through Monday, year-round with seasonal variations'. The official bikeparkwales.com/opening-hours page could not be accessed (403).",
+      "action": "Verify exact hours (including uplift schedule and seasonal variation) at https://www.bikeparkwales.com/opening-hours or by calling 01685 709450 before publishing."
+    },
+    {
+      "claim": "Mobile number 07730 382501 is official",
+      "confidence": "LOW",
+      "issue": "This mobile appears only on Visit Merthyr and is not cross-confirmed elsewhere. It may be a direct reception/booking contact rather than the main visitor centre line.",
+      "action": "Confirm whether this mobile is an active, current contact number for BikePark Wales, and whether it should be listed alongside or instead of the landline 01685 709450."
+    },
+    {
+      "claim": "Coordinates (51.7589, -3.3711) are accurate for the visitor centre",
+      "confidence": "MODERATE",
+      "issue": "Single source (internal CSV). Not verified against a geocoding service for postcode CF48 1YZ / CF48 4TT.",
+      "action": "Verify map pin against the official address before publishing. Note that CF48 4TT (not CF48 1YZ) is the recommended satnav postcode."
+    },
+    {
+      "claim": "Region classification: south_wales vs brecon-beacons",
+      "confidence": "MODERATE",
+      "issue": "Internal CSV lists region as 'brecon-beacons'; the address is Merthyr Tydfil (South Wales administrative area); Brecon Beacons Tourism lists it 'on the southern edge of Bannau Brycheiniog'. The site's regional landing page strategy should determine the correct classification.",
+      "action": "Confirm correct Adventure Wales region tag with editorial team."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.visitwales.com/activity/activity/bikepark-wales-529131",
+      "description": "Visit Wales official listing — address, phone, email, facilities, quality assured status",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.visitmerthyr.co.uk/things-to-do/attractions/bikepark-wales/",
+      "description": "Visit Merthyr — address, phone (landline and mobile), email, trail description, social media, quality assured status",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.mbwales.com/agents/bikepark-wales/",
+      "description": "Mountain Bike Wales — phone, address, trail grades, facilities, social media",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.breconbeaconstourism.org/business/bike-park-wales/",
+      "description": "Brecon Beacons Tourism — address, phone, email, opening schedule, facilities",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://naturalresources.wales/about-us/news-and-blogs/news/future-forest-vision-for-gethin-forest-and-bikepark-wales-takes-root/?lang=en",
+      "description": "NRW official news — 33-year lease, NRW land management, Future Forest Vision, Gethin Forest area (~300 ha), Feb 2026",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://ibikeride.com/wales/bikepark-wales-gethin-woods",
+      "description": "iBikeRide — approximate trail grade counts, summit altitude 491m, general description",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Bike_Park_Wales,_summit_of_Mynydd_Gethin_-_geograph.org.uk_-_4132710.jpg",
+      "description": "Wikimedia Commons — CC BY-SA 2.0 cover image candidate (Noel Jenkins, 2014)",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Bike_Park_Wales_uplift_-_geograph.org.uk_-_4132723.jpg",
+      "description": "Wikimedia Commons — CC BY-SA 2.0 uplift image candidate (Noel Jenkins)",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "content/mtb/centres.csv",
+      "description": "Internal MTB centres CSV — confirmed slug bikepark-wales, coordinates (51.7589, -3.3711), phone 01685 709450, postcode CF48 1YZ, 47 trails, 300m elevation, free parking, website, region brecon-beacons",
+      "type": "internal"
+    },
+    {
+      "url": "content/mtb/trails.csv",
+      "description": "Internal MTB trails CSV — named trail data for Kermit, Terry's Belly, Dai Hard, Vicious Valley, A470, 50 to 01",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirmed operator-gethin-woods-bike-park (unclassified_operator, research_needed, priority 34) AND separate operator-bikepark-wales (strategic_big_player_or_launch_priority, qa_needed) entries",
+      "type": "internal"
+    }
+  ],
+
+  "recommendedNextStatus": "blocked",
+  "recommendedNextStatusReason": "Contact details (phone, email) and a CC-licensed cover image candidate are now researched. However, the primary blocker is that an existing content item 'operator-bikepark-wales' in the content inventory already covers the same real-world entity at a higher commercial tier and more advanced status (qa_needed). An editorial decision on whether to merge, redirect, or differentiate these two entries must be made before this item can advance. Moving to 'researched' or 'qa_needed' while the duplicate is unresolved risks publishing two directory pages for one business.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Potential duplicate: operator-bikepark-wales already exists in content inventory",
+      "detail": "The content inventory contains 'operator-bikepark-wales' at /directory/bikepark-wales (tier: strategic_big_player_or_launch_priority, status: qa_needed, priority: 55). This task covers the same real-world entity (BikePark Wales, Gethin Woodland Centre, CF48 1YZ). Publishing 'operator-gethin-woods-bike-park' alongside the existing entry would create two directory listings for one business, with different slugs, tiers, and statuses. Editorial decision required: merge into operator-bikepark-wales, close this task, or clarify distinct purpose before proceeding.",
+      "severity": "CRITICAL"
+    },
+    {
+      "rank": 2,
+      "blocker": "Logo unavailable under free licence",
+      "detail": "No BikePark Wales logo is available under a Creative Commons or equivalent free licence on Wikimedia Commons, Openverse, or Unsplash. The operator website (bikeparkwales.com) returned HTTP 403 and could not be scraped in this session. A cover image IS available (CC BY-SA 2.0, Noel Jenkins / Wikimedia). Request logo permission from reception@bikeparkwales.com or via a media pack. Until the duplicate issue (blocker 1) is resolved this is secondary.",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 3,
+      "blocker": "Official opening hours not confirmed",
+      "detail": "The bikeparkwales.com/opening-hours page returned HTTP 403 and could not be accessed in this session. Only a general 'Thu–Mon year-round with seasonal variations' schedule is confirmed (Brecon Beacons Tourism). Specific uplift times, last-entry times, and seasonal changes are not documented. Verify by calling 01685 709450 or checking the official site when accessible. Do not publish operating hours until confirmed.",
+      "severity": "MEDIUM"
+    }
+  ]
+}

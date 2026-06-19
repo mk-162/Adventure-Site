@@ -1,0 +1,221 @@
+{
+  "_meta": {
+    "task": "content-ops-099-operator-gone-mountain-biking",
+    "contentItem": "operator-gone-mountain-biking",
+    "contentType": "operator",
+    "slug": "gone-mountain-biking",
+    "route": "/directory/gone-mountain-biking",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "blocked",
+    "researchOutcome": "operator_geography_mismatch"
+  },
+
+  "researchSummary": {
+    "finding": "CRITICAL GEOGRAPHY MISMATCH. The only publicly identifiable operator trading as 'Gone Mountain Biking' (gonemountainbiking.com) is based in Pickering, North Yorkshire, England — not Wales. They operate in Dalby Forest and the North York Moors National Park. No operator trading as 'Gone Mountain Biking' in Wales was found through any accessible public source. 'Gone Mountain Biking' does not appear in Visit Wales directories, MBWales.com agent listings, TripAdvisor Wales sections, or any Wales-specific tourism source. The Adventure Wales content inventory entry has no confirmed region, no activity type, a quality score of 15, and a confidence score of 45 — consistent with a low-confidence or erroneous entry.",
+    "searchesPerformed": [
+      "Web search: 'Gone Mountain Biking Wales MTB operator' — returned generic Wales MTB results; no operator by this name in Wales",
+      "Web search: '\"Gone Mountain Biking\" Wales guided tours hire' — no Wales operator found",
+      "Web search: 'gonemountainbiking.co.uk OR gonemountainbiking.com' — found gonemountainbiking.com (North Yorkshire, England)",
+      "Web search: '\"Gone Mountain Biking\" site:facebook.com OR site:instagram.com' — found facebook.com/gonemountainbiking and instagram.com/gonemountainbiking (North Yorkshire operator)",
+      "Web search: '\"Gone Mountain Biking\" location address \"North Yorkshire\" OR Wales' — confirmed Pickering, North Yorkshire location",
+      "Web search: 'gonemountainbiking.com Pickering North Yorkshire about contact' — confirmed address: Eleven Westgate, Pickering, North Yorkshire, YO18 8BA",
+      "Web search: '\"Gone Mountain Biking\" Wales OR \"Cymru\" NOT Yorkshire NOT Dalby' — no Wales-specific results",
+      "Web search: '\"Gone Mountain Biking\" Wales adventure directory OR \"adventure Wales\"' — no match",
+      "WebFetch: gonemountainbiking.com — ECONNREFUSED (website currently offline or down)",
+      "WebFetch: gonemountainbiking.blogspot.com — confirmed North Yorkshire / Dalby Forest location; no Wales reference",
+      "WebFetch: gonemountainbiking.blog/about-us/ — ECONNREFUSED",
+      "WebFetch: www.mbwales.com/agents/ — 20 Wales MTB operators listed; 'Gone Mountain Biking' NOT among them",
+      "WebFetch: visitwales.com guided MTB holiday page — 8 operators listed; 'Gone Mountain Biking' NOT among them",
+      "Source registry (content/ops/source-registry.json) — no entry for 'gone-mountain-biking'"
+    ],
+    "domainsChecked": [
+      {
+        "domain": "gonemountainbiking.com",
+        "result": "ECONNREFUSED — domain exists (indexed by search engines) but currently not serving content. Last indexed content confirms North Yorkshire, England location.",
+        "locationConfirmed": "Pickering, North Yorkshire, England — NOT Wales"
+      },
+      {
+        "domain": "gonemountainbiking.co.uk",
+        "result": "Not identified in searches; no separate Wales-specific domain found"
+      }
+    ],
+    "confirmedEnglandOperatorDetails": {
+      "note": "The following data describes the England-based 'Gone Mountain Biking' — included here for completeness and human review. This data MUST NOT be published to the Adventure Wales directory without explicit confirmation that this operator also operates in Wales.",
+      "name": "Gone Mountain Biking",
+      "address": "Eleven Westgate, Pickering, North Yorkshire, YO18 8BA",
+      "addressSource": "https://www.gonemountainbiking.com/ (via search index)",
+      "phone": "01751 475111",
+      "phoneSource": "gonemountainbiking.blogspot.com (via search index)",
+      "email": "info@gonemountainbiking.com",
+      "emailSource": "Search index results for gonemountainbiking.com",
+      "website": "https://www.gonemountainbiking.com/",
+      "websiteStatus": "ECONNREFUSED at time of research (2026-06-04)",
+      "facebook": "https://www.facebook.com/gonemountainbiking/",
+      "instagram": "https://www.instagram.com/gonemountainbiking/",
+      "twitter": "https://twitter.com/gonemtbing",
+      "operatingArea": "Dalby Forest, North York Moors National Park, North Yorkshire, England",
+      "services": [
+        "Mountain bike skills instruction (beginners to racers)",
+        "Guided mountain bike rides (on and off road)",
+        "Cycle maintenance courses (beginner and advanced)",
+        "Weekend MTB holidays",
+        "Cycling holidays with road and MTB guided rides"
+      ],
+      "accreditations": "CTC Skills Instructor programme; B1KE instructor network (per blogspot content)",
+      "groupSize": "Maximum 4 riders per group"
+    }
+  },
+
+  "proposedOperatorData": {
+    "name": "Gone Mountain Biking",
+    "nameNote": "Display name taken from content-inventory. The only verified operator under this name is based in North Yorkshire, England — not Wales. Do not publish until geography is clarified.",
+    "slug": "gone-mountain-biking",
+    "website": null,
+    "websiteNote": "BLOCKED — gonemountainbiking.com is the only confirmed website but it returned ECONNREFUSED at time of research and belongs to a North Yorkshire operator. Cannot be used for a Wales listing.",
+    "contact": {
+      "phone": null,
+      "phoneNote": "BLOCKED — phone found (01751 475111) is for North Yorkshire England operator only; must not be published.",
+      "email": null,
+      "emailNote": "BLOCKED — email found (info@gonemountainbiking.com) is for North Yorkshire England operator only; must not be published.",
+      "address": null,
+      "addressNote": "BLOCKED — confirmed address is Eleven Westgate, Pickering, North Yorkshire, YO18 8BA — England, not Wales."
+    },
+    "location": {
+      "lat": null,
+      "lng": null,
+      "region": null,
+      "regionNote": "BLOCKED — no Wales region identified. Content inventory has blank region. The only confirmed operator is in North Yorkshire, England.",
+      "nearestTown": null
+    },
+    "description": {
+      "short": null,
+      "shortNote": "BLOCKED — cannot write a Wales operator description. No AI-generated content used.",
+      "full": null
+    },
+    "services": [],
+    "pricing": {
+      "note": "BLOCKED — pricing found belongs to North Yorkshire England operator only."
+    },
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "BLOCKED — no Google Business listing verified for a Wales-based 'Gone Mountain Biking'."
+      },
+      "tripadvisor": {
+        "rating": null,
+        "note": "BLOCKED — no TripAdvisor Wales listing found."
+      }
+    },
+    "socialMedia": {
+      "facebook": null,
+      "instagram": null,
+      "twitter": null,
+      "note": "BLOCKED — facebook.com/gonemountainbiking, instagram.com/gonemountainbiking, and twitter.com/gonemtbing all appear to belong to the North Yorkshire England operator. Must not be attributed to a Wales listing."
+    },
+    "logo": null,
+    "coverImage": null
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "No confirmed Wales operator identity. Cannot acquire or recommend logo images. The England operator's logo (if any) must not be used.",
+      "licence": null,
+      "actionRequired": "Establish whether a Wales operator exists first. If confirmed, request logo directly from the operator."
+    },
+    "cover": {
+      "status": "BLOCKED",
+      "reason": "No confirmed Wales operator or Wales-specific photography. No freely licensed images identified for this operator.",
+      "licence": null,
+      "openverseNote": "Generic Wales mountain biking imagery may be available on Openverse or Wikimedia Commons under CC licences (e.g. Coed y Brenin, Afan Forest, Bike Park Wales). These must NOT be attributed to 'Gone Mountain Biking' without a confirmed Wales operator identity.",
+      "actionRequired": "(1) Clarify geography — is there a Wales operator under this name? (2) If yes, search Openverse/Wikimedia Commons for freely licensed imagery. (3) Do not use AI-generated images."
+    },
+    "gallery": {
+      "status": "BLOCKED",
+      "reason": "Same constraints as cover — no Wales operator confirmed.",
+      "licence": null
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Geography / operator jurisdiction",
+      "issue": "The only publicly identifiable 'Gone Mountain Biking' operator (gonemountainbiking.com) is based in Pickering, North Yorkshire, England — an entirely different country from Wales. Their operating area is Dalby Forest and the North York Moors National Park. This entry should NOT appear in an Adventure Wales directory unless: (a) this operator also runs Wales trips that are not publicly documented; or (b) there is a separate Wales-based business under this name with no web presence.",
+      "priority": "CRITICAL",
+      "sourceUrl": "https://www.gonemountainbiking.com/",
+      "action": "Identify the internal source that introduced this slug. Check booking/commercial records. If the entry refers to the North Yorkshire operator, remove it from the Adventure Wales directory. If a Wales-based entity exists, obtain direct confirmation and contact details from them."
+    },
+    {
+      "claim": "Website status",
+      "issue": "gonemountainbiking.com returned ECONNREFUSED at time of research (2026-06-04). The domain was indexed by search engines as recently as 2026 but may currently be offline, undergoing maintenance, or discontinued.",
+      "priority": "HIGH",
+      "sourceUrl": "https://www.gonemountainbiking.com/",
+      "action": "Check whether the domain has expired or the business has ceased trading. If the England operator is no longer active, this further reduces the justification for keeping this entry in any directory."
+    },
+    {
+      "claim": "Possible data entry error",
+      "issue": "The content inventory shows blank region and blank activity for this entry, with confidence score 45 and quality score 15. This is consistent with an entry that was created without verified source data — possibly by name-matching a UK operator without confirming their geography.",
+      "priority": "HIGH",
+      "sourceUrl": null,
+      "action": "Audit the original data import or BD notes that created this slug. If no internal record confirms a Wales connection, archive or remove the entry."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.gonemountainbiking.com/",
+      "description": "Official website of Gone Mountain Biking — returned ECONNREFUSED at research time (2026-06-04). Search index confirms this is an operator based in Pickering, North Yorkshire, England, not Wales."
+    },
+    {
+      "url": "http://gonemountainbiking.blogspot.com/",
+      "description": "Blogspot associated with Gone Mountain Biking — confirms Pickering, North Yorkshire location, Dalby Forest operating area, skills coaching services, and phone 01751 475111. No Wales reference found."
+    },
+    {
+      "url": "http://www.gonemountainbiking.com/index.php/maintenance-courses",
+      "description": "Cycle maintenance courses page — indexed under 'Gone Mountain Biking | North Yorkshire' in search results."
+    },
+    {
+      "url": "https://www.facebook.com/gonemountainbiking/",
+      "description": "Facebook page for Gone Mountain Biking — confirmed in search results as belonging to the North Yorkshire England operator."
+    },
+    {
+      "url": "https://www.instagram.com/gonemountainbiking/",
+      "description": "Instagram account for Gone Mountain Biking — found in searches; associated with the England-based operator."
+    },
+    {
+      "url": "https://twitter.com/gonemtbing",
+      "description": "Twitter/X account associated with Gone Mountain Biking."
+    },
+    {
+      "url": "https://www.mbwales.com/agents/",
+      "description": "Mountain Bike Wales operator directory — 20 Wales MTB operators listed; 'Gone Mountain Biking' NOT among them. Confirmed negative."
+    },
+    {
+      "url": "https://www.visitwales.com/things-do/adventure-and-activities/cycling-and-mountain-biking/great-places-guided-mountain-bike-holiday",
+      "description": "Visit Wales guided MTB holiday page — 8 operators listed (Mountain Bike Wales, Adventure Tours UK, Black Mountain Adventure, BikePark Wales, Cwmcarn, Afan Forest Park, Morfa Bay, Beics Antur Bikes); 'Gone Mountain Biking' NOT listed. Confirmed negative."
+    }
+  ],
+
+  "recommendedNextStatus": "blocked",
+  "recommendedNextStatusReason": "The only confirmed 'Gone Mountain Biking' operator is based in Pickering, North Yorkshire, England — not Wales. This entry cannot be published in an Adventure Wales directory without explicit internal confirmation that a Wales connection exists. The operator's website is currently offline (ECONNREFUSED). No Wales-specific data (description, region, contact, images, rating) can be populated from verified sources. Zero fields can be completed for a Wales listing. The entry must be paused pending internal investigation to determine: (1) whether this was a data entry error; (2) whether the North Yorkshire operator also runs Wales trips; or (3) whether a separate Wales-based 'Gone Mountain Biking' entity exists with no public web presence.",
+
+  "topBlockers": [
+    {
+      "rank": 1,
+      "blocker": "GEOGRAPHY MISMATCH — the only confirmed 'Gone Mountain Biking' operator is based in Pickering, North Yorkshire, England (Eleven Westgate, YO18 8BA), not Wales. No Wales-based operator under this name was found in any public source.",
+      "action": "Audit the internal data import or BD records that created this content-inventory slug. If no Wales connection can be confirmed, remove or archive this entry from the Adventure Wales directory. Do not publish."
+    },
+    {
+      "rank": 2,
+      "blocker": "Website ECONNREFUSED — gonemountainbiking.com is currently offline (2026-06-04), making it impossible to verify current services, confirm Wales operations, or retrieve contact details.",
+      "action": "Check whether the domain has lapsed or the business has ceased trading. If the England-based operator is no longer active, this further reduces justification for keeping the entry. If it resumes, try again and confirm geography first."
+    },
+    {
+      "rank": 3,
+      "blocker": "No images, descriptions, or Google rating can be sourced — all data fields remain empty because the operator's Wales identity is unconfirmed.",
+      "action": "All content production is blocked until blocker 1 (geography) is resolved. If a Wales operator is eventually confirmed, contact them directly for a media pack (logo, photography). Do not use AI-generated images. Do not use the North Yorkshire operator's photography."
+    }
+  ]
+}

@@ -1,0 +1,533 @@
+{
+  "_meta": {
+    "task": "content-ops-074-operator-big-blue-experience",
+    "contentItem": "operator-big-blue-experience",
+    "contentType": "operator",
+    "slug": "big-blue-experience",
+    "route": "/directory/big-blue-experience",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "substantially_complete_with_verification_flags",
+    "identityConfidence": "HIGH — operator confirmed via multiple corroborating sources; primary URL discrepancy flagged"
+  },
+
+  "proposedOperatorData": {
+    "name": "The Big Blue Experience",
+    "nameNote": "The internal hire.csv uses 'Big Blue Experience'; the active website and all third-party listings use 'The Big Blue Experience' (with leading 'The'). Human editor should standardise the display name.",
+    "slug": "big-blue-experience",
+    "website": "https://www.thebigblueexperience.com",
+    "websiteNote": "IMPORTANT — The internal hire.csv records the website as https://www.bigblueexperience.co.uk, but that URL returns a 403 Forbidden error as of June 2026. The active, current website is https://www.thebigblueexperience.com. The .co.uk domain should be updated in the source data. Copyright footer: © 2026 The Big Blue Experience (website design by percolated.design).",
+    "websiteSource": "https://www.thebigblueexperience.com/",
+    "established": "2001",
+    "establishedSource": "https://www.thebigblueexperience.com/ — 'The Big Blue Experience was established in 2001 at Newgale beach in Pembrokeshire, Wales.'",
+    "contact": {
+      "phone": "07476 373 120",
+      "phoneNote": "This number appears on the current operator website. The internal hire.csv records 07816 169359, which matches older third-party directory listings (Wellwild). Both numbers may be valid (e.g. two lines), or 07816 169359 may be an older/secondary number. A human editor must call to confirm which is the primary contact.",
+      "phoneSource": "https://www.thebigblueexperience.com/contact-big-blue/",
+      "phoneLegacy": "07816 169359",
+      "phoneLegacySource": "content/operators/hire.csv (internal) and https://wellwild.com/listing/the-big-blue-experience/",
+      "email": "booking@thebigblueexperience.com",
+      "emailNote": "The website uses a contact form rather than displaying an email address directly. The address booking@thebigblueexperience.com was surfaced from a Google-indexed version of the contact page. An older address info@bigbluekitesurfing.com appears in the Wellwild listing and may be legacy/inactive. Human editor should confirm the primary booking email by sending a test message or calling the phone number.",
+      "emailSource": "https://www.thebigblueexperience.com/contact-big-blue/ (Google-indexed excerpt)",
+      "emailLegacy": "info@bigbluekitesurfing.com",
+      "emailLegacySource": "https://wellwild.com/listing/the-big-blue-experience/ (may be inactive)",
+      "address": {
+        "line1": "Newgale House",
+        "locality": "Newgale",
+        "town": "Haverfordwest",
+        "county": "Pembrokeshire",
+        "postcode": "SA62 6AS",
+        "country": "Wales",
+        "operationalNote": "Activities take place on Newgale Beach itself, within the Pembrokeshire Coast National Park."
+      },
+      "addressSource": "https://www.visitpembrokeshire.com/activity-listing/the-big-blue-experience and https://www.thebigblueexperience.com/"
+    },
+    "location": {
+      "lat": 51.859194,
+      "lng": -5.125832,
+      "latLngNote": "Coordinates from Visit Pembrokeshire listing. Internal hire.csv records 51.850, -5.120 (rounded). Both place the operator on Newgale Beach, Pembrokeshire. The Visit Pembrokeshire coordinates (51.859194, -5.125832) are more precise and preferred.",
+      "latLngSource": "https://www.visitpembrokeshire.com/activity-listing/the-big-blue-experience",
+      "region": "pembrokeshire",
+      "locality": "Newgale",
+      "park": "Pembrokeshire Coast National Park",
+      "parkSource": "https://www.thebigblueexperience.com/"
+    },
+    "description": {
+      "short": "The Big Blue Experience is a watersports school and hire centre operating on Newgale Beach in the Pembrokeshire Coast National Park. Established in 2001, they offer kitesurfing, surfing, stand-up paddleboarding, coasteering, and equipment hire for all abilities, from complete beginners to advanced riders.",
+      "shortNote": "Drafted from verified website and tourism listing content. Needs editorial review before publishing.",
+      "shortSource": "https://www.thebigblueexperience.com/ and https://www.visitpembrokeshire.com/activity-listing/the-big-blue-experience",
+      "full": "The Big Blue Experience was established in 2001 at Newgale Beach in Pembrokeshire, Wales. Located within the Pembrokeshire Coast National Park, Big Blue is a comprehensive adventure and watersports centre offering a wide range of courses, lessons, and experiences for individuals, families, and groups from beginners to the more advanced.\n\nActivities include kitesurfing (beginner through to wave riding and jumping), kite landboarding, power kiting, surfing, bodyboarding, stand-up paddleboarding (SUP), coasteering, and RYA powerboating. The centre also runs a Kids Club and multi-day adventure holiday packages covering combinations of surfing, SUP, kitesurfing, and mixed activities. Wetsuits, surfboards, kayaks, SUPs, and kitesurfing equipment are available for hire.\n\nBig Blue is accredited by the British Kite Surfing Association (BKSA), the Academy of Surfing Instructors (ASI), the Royal Yachting Association (RYA), and Surf Life Saving Great Britain (SLSGB), and is a member of the Pembrokeshire Outdoor Charter and the International Kiteboarding Organisation (IKO). Instructor training courses in surfing, SUP, kitesurfing, bodyboarding, and beach lifeguarding are available on site.\n\nThe centre operates seasonally: June to September on the beach 9am–6pm; April to June and September to December 10am–5pm; closed January to April.",
+      "fullNote": "Drafted from verified website and cross-checked against Visit Pembrokeshire, Wellwild, PerfectPaddles, Manawa, and Yumping. Needs editorial review. Seasonal closure from January to April coincides with the operator running snowkiting lessons in Switzerland — this is an unusual detail that an editor may choose to omit or include as a human-interest note.",
+      "fullSource": "https://www.thebigblueexperience.com/, https://www.visitpembrokeshire.com/activity-listing/the-big-blue-experience, https://wellwild.com/listing/the-big-blue-experience/, https://perfectpaddles.com/paddle-boarding-pro/the-big-blue-experience/"
+    },
+    "activities": [
+      {
+        "name": "Kitesurfing — Beginner (1-day)",
+        "source": "https://www.thebigblueexperience.com/kitesurfing-courses/"
+      },
+      {
+        "name": "Kitesurfing — Improver (2-day)",
+        "source": "https://www.thebigblueexperience.com/kitesurfing-courses/"
+      },
+      {
+        "name": "Kitesurfing — Advanced (Wave Riding and Jumping)",
+        "source": "https://www.thebigblueexperience.com/kitesurfing-courses/"
+      },
+      {
+        "name": "Kite Landboarding",
+        "detail": "Beginner and improver sessions, 2 hours",
+        "source": "https://www.thebigblueexperience.com/"
+      },
+      {
+        "name": "Power Kiting",
+        "source": "https://www.thebigblueexperience.com/"
+      },
+      {
+        "name": "Surfing Lessons",
+        "detail": "Beginner and improver, 3 hours",
+        "source": "https://www.thebigblueexperience.com/"
+      },
+      {
+        "name": "Bodyboarding",
+        "source": "https://www.thebigblueexperience.com/"
+      },
+      {
+        "name": "Stand Up Paddleboarding (SUP)",
+        "detail": "Beginner and improver, 3 hours",
+        "source": "https://www.thebigblueexperience.com/"
+      },
+      {
+        "name": "Coasteering",
+        "detail": "3 hours",
+        "source": "https://www.thebigblueexperience.com/"
+      },
+      {
+        "name": "RYA Powerboating Courses",
+        "source": "https://www.thebigblueexperience.com/"
+      },
+      {
+        "name": "Kids Club",
+        "source": "https://www.thebigblueexperience.com/"
+      },
+      {
+        "name": "Multi-day Adventure Packages",
+        "detail": "3–5 day surfing, SUP, kitesurfing, and multi-activity packages",
+        "source": "https://www.thebigblueexperience.com/"
+      },
+      {
+        "name": "Equipment Hire",
+        "detail": "Wetsuits, surfboards, kayaks, SUPs, and kitesurfing gear",
+        "source": "https://www.thebigblueexperience.com/ and content/operators/hire.csv"
+      },
+      {
+        "name": "Equipment Shop",
+        "detail": "New and second-hand high-performance kite, surf, and SUP equipment",
+        "source": "https://www.thebigblueexperience.com/"
+      }
+    ],
+    "instructorTrainingCourses": [
+      {
+        "name": "ASI Surfing Instructor",
+        "source": "https://www.thebigblueexperience.com/"
+      },
+      {
+        "name": "BKSA Kitesurf Instructor",
+        "source": "https://www.thebigblueexperience.com/"
+      },
+      {
+        "name": "ASI SUP Instructor",
+        "detail": "Oli Tuggey is listed as an ASI Instructor Training Centre (ITC) for SUP",
+        "source": "https://perfectpaddles.com/paddle-boarding-pro/the-big-blue-experience/"
+      },
+      {
+        "name": "ASI Bodyboard Instructor",
+        "source": "https://www.thebigblueexperience.com/"
+      },
+      {
+        "name": "SLSGB Beach Lifeguard Award",
+        "source": "https://www.thebigblueexperience.com/"
+      },
+      {
+        "name": "First Aid",
+        "source": "https://www.thebigblueexperience.com/"
+      }
+    ],
+    "accreditations": [
+      {
+        "name": "BKSA",
+        "full": "British Kite Surfing Association",
+        "detail": "Accredited school; authorised to run BKSA Kitesurf Instructor courses",
+        "source": "https://www.thebigblueexperience.com/ and https://www.visitpembrokeshire.com/activity-listing/the-big-blue-experience"
+      },
+      {
+        "name": "ASI",
+        "full": "Academy of Surfing Instructors",
+        "detail": "Accredited for surfing, SUP, and bodyboard instruction; ITC status for SUP instructor certification",
+        "source": "https://www.thebigblueexperience.com/ and https://perfectpaddles.com/paddle-boarding-pro/the-big-blue-experience/"
+      },
+      {
+        "name": "RYA",
+        "full": "Royal Yachting Association",
+        "detail": "Powerboating courses",
+        "source": "https://www.thebigblueexperience.com/"
+      },
+      {
+        "name": "SLSGB",
+        "full": "Surf Life Saving Great Britain",
+        "detail": "Beach Lifeguard award courses",
+        "source": "https://www.thebigblueexperience.com/"
+      },
+      {
+        "name": "IKO",
+        "full": "International Kiteboarding Organisation",
+        "detail": "Member",
+        "source": "https://www.visitpembrokeshire.com/activity-listing/the-big-blue-experience"
+      },
+      {
+        "name": "Pembrokeshire Outdoor Charter",
+        "detail": "Member",
+        "source": "https://www.visitpembrokeshire.com/activity-listing/the-big-blue-experience"
+      }
+    ],
+    "openingHours": {
+      "junToSep": "9am–6pm (on beach)",
+      "sepToDecAndAprToJun": "10am–5pm",
+      "janToApr": "Closed (operator runs snowkiting lessons in Switzerland during this period)",
+      "note": "Seasonal hours from the operator's own website. TripAdvisor simplifies this to 9am–5pm daily, 7 days/week — treat the operator's own website as authoritative.",
+      "source": "https://www.thebigblueexperience.com/about/"
+    },
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "No Google rating was confirmed during research. The task description also flags 'no Google rating'. A human editor should search Google Maps for 'The Big Blue Experience Newgale' to confirm whether a Business Profile exists. It is possible the operator has not claimed or set up a Google Business listing.",
+        "verifyManually": true
+      },
+      "tripadvisor": {
+        "rating": 4.9,
+        "outOf": 5,
+        "reviewCount": 83,
+        "ranking": "#4 of 9 Boat Tours & Water Sports in Haverfordwest",
+        "url": "https://www.tripadvisor.co.uk/Attraction_Review-g552047-d3468848-Reviews-The_Big_Blue_Experience-Haverfordwest_Pembrokeshire_Wales.html",
+        "note": "4.9/5 from 83 reviews as of June 2026 research. Recent reviews are consistently 5-star. Do not republish rating counts — TripAdvisor totals change over time.",
+        "source": "https://www.tripadvisor.co.uk/Attraction_Review-g552047-d3468848-Reviews-The_Big_Blue_Experience-Haverfordwest_Pembrokeshire_Wales.html"
+      },
+      "manawa": {
+        "rating": 4.9,
+        "outOf": 5,
+        "reviewCount": 23,
+        "percentExcellent": "91.3%",
+        "url": "https://www.manawa.com/index.php/en-GB/provider/big-blue-experience-wales/3200",
+        "source": "https://www.manawa.com/index.php/en-GB/provider/big-blue-experience-wales/3200"
+      }
+    },
+    "pricing": {
+      "publiclyAvailable": true,
+      "pricesMustBeVerified": true,
+      "pricingNote": "Prices are listed on the operator's website and cross-referenced on Yumping. They are reproduced here for editorial reference only and MUST be verified directly with the operator before publication, as seasonal prices change.",
+      "indicativePrices": [
+        {
+          "activity": "Surfing lessons",
+          "duration": "3 hours",
+          "price": "£35 per person",
+          "ageRange": "7–70",
+          "source": "https://www.thebigblueexperience.com/ (cross-checked https://www.yumping.com/en/water-sports/big-blue-experience--e19672625)"
+        },
+        {
+          "activity": "Kite landboarding",
+          "duration": "2 hours",
+          "price": "£45 per person",
+          "ageRange": "7–70",
+          "source": "https://www.thebigblueexperience.com/"
+        },
+        {
+          "activity": "Stand Up Paddleboarding (SUP)",
+          "duration": "3 hours",
+          "price": "£45 per person",
+          "ageRange": "7–70",
+          "source": "https://www.thebigblueexperience.com/"
+        },
+        {
+          "activity": "Coasteering",
+          "duration": "3 hours",
+          "price": "£45 per person",
+          "ageRange": "7–70",
+          "source": "https://www.thebigblueexperience.com/"
+        },
+        {
+          "activity": "Kitesurfing — Beginner",
+          "duration": "1 day",
+          "price": "£130",
+          "ageRange": "13–70",
+          "source": "https://www.thebigblueexperience.com/"
+        },
+        {
+          "activity": "Kitesurfing — Improver",
+          "duration": "2 days",
+          "price": "£250",
+          "ageRange": "13–70",
+          "source": "https://www.thebigblueexperience.com/"
+        }
+      ]
+    },
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/bigbluenewgale/",
+        "source": "https://www.thebigblueexperience.com/contact-big-blue/"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/bigbluenewgale/",
+        "source": "https://www.thebigblueexperience.com/contact-big-blue/"
+      },
+      "twitter": {
+        "url": "https://twitter.com/BigBlueNewgale",
+        "handle": "@BigBlueNewgale",
+        "note": "Used for weather and conditions updates as well as general announcements.",
+        "source": "https://www.thebigblueexperience.com/contact-big-blue/"
+      },
+      "youtube": {
+        "url": "https://www.youtube.com/playlist?list=PLF61500C791FBF690",
+        "source": "https://www.thebigblueexperience.com/contact-big-blue/"
+      }
+    },
+    "tourismListings": [
+      {
+        "site": "Visit Pembrokeshire",
+        "url": "https://www.visitpembrokeshire.com/activity-listing/the-big-blue-experience",
+        "note": "Active listing — used as a primary corroborating source for coordinates, accreditations, and contact data."
+      },
+      {
+        "site": "Wellwild",
+        "url": "https://wellwild.com/listing/the-big-blue-experience/",
+        "note": "Includes legacy phone (07816 169359) and legacy email (info@bigbluekitesurfing.com)."
+      },
+      {
+        "site": "Manawa",
+        "url": "https://www.manawa.com/index.php/en-GB/provider/big-blue-experience-wales/3200"
+      },
+      {
+        "site": "Yumping",
+        "url": "https://www.yumping.com/en/water-sports/big-blue-experience--e19672625"
+      },
+      {
+        "site": "PerfectPaddles (SUP directory)",
+        "url": "https://perfectpaddles.com/paddle-boarding-pro/the-big-blue-experience/"
+      },
+      {
+        "site": "TripAdvisor",
+        "url": "https://www.tripadvisor.co.uk/Attraction_Review-g552047-d3468848-Reviews-The_Big_Blue_Experience-Haverfordwest_Pembrokeshire_Wales.html"
+      },
+      {
+        "site": "Visit Wales",
+        "url": null,
+        "note": "No direct listing confirmed on visitwales.com — the Visit Wales kitesurfing page returned a 404 during research. Unverified."
+      }
+    ]
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "The operator's logo is copyright © 2026 The Big Blue Experience. No freely licensed version is available on Openverse, Unsplash, or Wikimedia Commons. The logo must be obtained directly from the operator under written permission or licence.",
+      "actionRequired": "Contact the operator at booking@thebigblueexperience.com or 07476 373 120 to request a logo file for use on the Adventure Wales directory. Specify the intended use (non-commercial directory listing) and the platform. Retain written confirmation."
+    },
+    "cover": {
+      "status": "CANDIDATE_AVAILABLE",
+      "recommendation": "Two Wikimedia Commons images show watersports activity directly at Newgale Beach and may serve as a cover image. Both are CC BY-SA 2.0 and require attribution. Note: these images predate the current Big Blue Experience branding (taken September 2009) and do not necessarily depict Big Blue Experience staff or equipment. The editorial team must decide whether generic Newgale beach watersports imagery is acceptable as a cover pending an operator-supplied photo.",
+      "candidates": [
+        {
+          "title": "Surf school at Newgale beach",
+          "author": "Andy F",
+          "license": "CC BY-SA 2.0",
+          "licensedVia": "Geograph.org.uk / Wikimedia Commons",
+          "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Surf_school_at_Newgale_beach_-_geograph.org.uk_-_1525013.jpg",
+          "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Surf_school_at_Newgale_beach_-_geograph.org.uk_-_1525013.jpg",
+          "requiredAttribution": "Photo: Andy F / CC BY-SA 2.0 / Geograph.org.uk via Wikimedia Commons",
+          "dateTaken": "2009-09",
+          "note": "Shows surf instruction on Newgale beach — relevant to operator activities but does not specifically depict Big Blue Experience. Acceptable as a placeholder only."
+        },
+        {
+          "title": "Kite-skaters (landboarders) congregate on Newgale beach",
+          "author": "Andy F",
+          "license": "CC BY-SA 2.0",
+          "licensedVia": "Geograph.org.uk / Wikimedia Commons",
+          "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Kite-skaters_%28landboarders%29_congregate_on_Newgale_beach_-_geograph.org.uk_-_1524943.jpg",
+          "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Kite-skaters_%28landboarders%29_congregate_on_Newgale_beach_-_geograph.org.uk_-_1524943.jpg",
+          "requiredAttribution": "Photo: Andy F / CC BY-SA 2.0 / Geograph.org.uk via Wikimedia Commons",
+          "dateTaken": "2009-09",
+          "note": "Shows kite landboarding at Newgale — directly matches an activity Big Blue Experience offers. Acceptable as a placeholder only."
+        },
+        {
+          "title": "Newgale Beach, kite surfing",
+          "author": "David Gearing",
+          "license": "CC BY-SA 2.0",
+          "licensedVia": "Geograph.org.uk / Wikimedia Commons",
+          "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Newgale_Beach,_kite_surfing_-_geograph.org.uk_-_1744376.jpg",
+          "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Newgale_Beach%2C_kite_surfing_-_geograph.org.uk_-_1744376.jpg",
+          "requiredAttribution": "Photo: David Gearing / CC BY-SA 2.0 / Geograph.org.uk via Wikimedia Commons",
+          "dateTaken": "2005-07",
+          "note": "Shows kitesurfing at Newgale beach. Acceptable as a placeholder cover for the kitesurfing dimension."
+        }
+      ],
+      "operatorPhotosNote": "The operator's own website (thebigblueexperience.com) and social media (Instagram: bigbluenewgale, Facebook: bigbluenewgale) contain professional activity photography. These are copyright © 2026 The Big Blue Experience and cannot be used without written permission. Requesting a media pack is strongly recommended."
+    },
+    "gallery": {
+      "status": "BLOCKED_UNTIL_OPERATOR_PERMISSION",
+      "reason": "Operator photography is copyright © 2026 The Big Blue Experience. Freely licensed Newgale beach imagery (CC BY-SA 2.0, see cover candidates) could supplement a gallery but should not substitute for operator-supplied activity photos.",
+      "actionRequired": "Request a media pack from the operator."
+    },
+    "generalActionRequired": "Email booking@thebigblueexperience.com or call 07476 373 120 to request a logo file and a media pack (5–10 JPEGs of activities, minimum 1200px wide, plus licence/usage permission). Specify that images will appear on the Adventure Wales directory listing at /directory/big-blue-experience, a non-commercial tourism platform. Retain written confirmation of permission."
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Active website is thebigblueexperience.com, not bigblueexperience.co.uk",
+      "confidence": "HIGH",
+      "issue": "The internal hire.csv and original task reference bigblueexperience.co.uk, which returns a 403 Forbidden error as of June 2026. All current directory listings (Visit Pembrokeshire, TripAdvisor, Manawa, Wellwild, PerfectPaddles) link to thebigblueexperience.com with copyright footer © 2026. The .co.uk domain is almost certainly defunct or redirecting; the .com domain is active. Nevertheless, a human editor should verify by visiting bigblueexperience.co.uk and confirming the redirect/error before updating the source data.",
+      "action": "Update content/operators/hire.csv to reflect the correct website URL. Confirm thebigblueexperience.com is the canonical operator site."
+    },
+    {
+      "claim": "Phone number: 07476 373 120 (website) vs 07816 169359 (internal CSV / older listings)",
+      "confidence": "MODERATE",
+      "issue": "Two phone numbers appear in different sources. The current website shows 07476 373 120; the internal hire.csv and Wellwild listing record 07816 169359. The business may have two lines, or the number was changed at some point.",
+      "action": "Call both numbers to confirm which is the current primary contact before publishing. Update the source data with the verified number."
+    },
+    {
+      "claim": "Email address: booking@thebigblueexperience.com",
+      "confidence": "MODERATE",
+      "issue": "This email was surfaced from a Google-indexed version of the contact page; the live website uses a contact form without displaying the address directly. The Wellwild listing records info@bigbluekitesurfing.com as an older/legacy contact.",
+      "action": "Send a test email to booking@thebigblueexperience.com to confirm it is active. If it bounces, use the website contact form or phone to obtain the correct booking email."
+    },
+    {
+      "claim": "Owner/key personnel: Oli Tuggey vs 'Ed'",
+      "confidence": "MODERATE",
+      "issue": "One source (PerfectPaddles) names Oli Tuggey as the owner with 18+ years of experience. Multiple recent TripAdvisor reviews (2021–2024) repeatedly praise an instructor named 'Ed' and one reviewer states 'Ed now owns the place'. It is unclear whether Oli Tuggey is the original founder who has since sold the business to someone named Ed, or whether Ed is the lead instructor.",
+      "action": "Do not publish any named owner/operator without confirming with the business. If publishing a staff profile is required, verify current ownership and the correct name by contacting the operator directly."
+    },
+    {
+      "claim": "Google Business Profile / Google rating",
+      "confidence": "UNVERIFIED",
+      "issue": "No Google rating was confirmed during research — consistent with the original task flag. The operator may not have claimed a Google Business Profile.",
+      "action": "Search Google Maps for 'The Big Blue Experience Newgale SA62 6AS'. If a profile exists but is unclaimed, the operator can claim it free of charge via Google Business. If no profile is found, advise the operator to create one. Do not publish a Google rating on the directory listing until confirmed."
+    },
+    {
+      "claim": "Pricing",
+      "confidence": "MODERATE — prices sourced from website and Yumping cross-check",
+      "issue": "Prices listed are from the operator's website and third-party booking platforms as of June 2026 research. Outdoor activity pricing changes seasonally and with inflation. Publishing stale prices could mislead users.",
+      "action": "Do not publish specific prices on the directory listing without a dated note or a link to the operator's own booking page. Verify prices directly with the operator before any commercial promotion."
+    },
+    {
+      "claim": "Operator is currently trading in 2026",
+      "confidence": "HIGH",
+      "issue": "The website copyright is © 2026 (the most current year), and TripAdvisor reviews extend to July 2024. The Manawa listing is active. The website appears well-maintained.",
+      "action": "Low risk — the operator is almost certainly active. Call or email to confirm availability before listing is published."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.thebigblueexperience.com/",
+      "description": "Operator's primary active website — name, established date, activities, accreditations, hours, social media links, contact form, copyright",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.thebigblueexperience.com/contact-big-blue/",
+      "description": "Contact page — phone 07476 373 120, social media links, contact form",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.visitpembrokeshire.com/activity-listing/the-big-blue-experience",
+      "description": "Visit Pembrokeshire listing — coordinates (51.859194, -5.125832), accreditations, address SA62 6AS",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://wellwild.com/listing/the-big-blue-experience/",
+      "description": "Wellwild directory — legacy phone 07816 169359, legacy email info@bigbluekitesurfing.com, activities",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.tripadvisor.co.uk/Attraction_Review-g552047-d3468848-Reviews-The_Big_Blue_Experience-Haverfordwest_Pembrokeshire_Wales.html",
+      "description": "TripAdvisor — 4.9/5 from 83 reviews; review excerpts; simplified opening hours",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.manawa.com/index.php/en-GB/provider/big-blue-experience-wales/3200",
+      "description": "Manawa booking platform — 4.9/5 from 23 reviews, 91.3% excellent",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.yumping.com/en/water-sports/big-blue-experience--e19672625",
+      "description": "Yumping booking platform — activities, indicative pricing cross-check",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://perfectpaddles.com/paddle-boarding-pro/the-big-blue-experience/",
+      "description": "PerfectPaddles SUP directory — owner name Oli Tuggey, ASI ITC status for SUP, accreditations",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Surf_school_at_Newgale_beach_-_geograph.org.uk_-_1525013.jpg",
+      "description": "Wikimedia Commons — CC BY-SA 2.0 image: 'Surf school at Newgale beach' by Andy F, September 2009",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Kite-skaters_%28landboarders%29_congregate_on_Newgale_beach_-_geograph.org.uk_-_1524943.jpg",
+      "description": "Wikimedia Commons — CC BY-SA 2.0 image: 'Kite-skaters (landboarders) congregate on Newgale beach' by Andy F, September 2009",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Newgale_Beach,_kite_surfing_-_geograph.org.uk_-_1744376.jpg",
+      "description": "Wikimedia Commons — CC BY-SA 2.0 image: 'Newgale Beach, kite surfing' by David Gearing, July 2005",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "content/operators/hire.csv",
+      "description": "Internal hire operators CSV — Big Blue Experience entry: slug, legacy URL (.co.uk), phone 07816 169359, activities, coordinates, locality",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirms operator-big-blue-experience, unclassified_operator tier, all key fields missing",
+      "type": "internal"
+    }
+  ],
+
+  "sourcesRuledOut": [
+    {
+      "name": "bigblueexperience.co.uk",
+      "reason": "Returns 403 Forbidden as of June 2026. Superseded by thebigblueexperience.com. The internal hire.csv URL must be updated."
+    },
+    {
+      "name": "Visit Wales (visitwales.com) listing",
+      "reason": "No direct listing confirmed for this operator on visitwales.com. The Visit Wales kitesurfing page returned a 404 during research."
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "Research has produced a substantially complete operator profile: name, address, coordinates, a verified active website, multiple contact options, a full activities list, all discovered accreditations, social media links, TripAdvisor and Manawa ratings, indicative pricing, and three freely licensed Wikimedia Commons cover image candidates. Three verification tasks remain before publishing: (1) confirm the active website URL (thebigblueexperience.com) and update the source data to replace the defunct .co.uk entry; (2) verify and reconcile the two phone numbers and the email address; (3) request a logo and operator-supplied photography from the operator to replace or supplement the CC BY-SA 2.0 placeholder images.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Website URL outdated in source data — .co.uk domain is defunct",
+      "detail": "The internal hire.csv and original task record the website as bigblueexperience.co.uk, which returns a 403 Forbidden error. The active website is thebigblueexperience.com. All other directory listings and tourism sources confirm this URL. The source data must be corrected before the directory listing is published, otherwise the live page will link to a dead URL.",
+      "severity": "HIGH",
+      "action": "Update content/operators/hire.csv (and any other internal files) to set website = https://www.thebigblueexperience.com."
+    },
+    {
+      "rank": 2,
+      "blocker": "Phone number discrepancy and email unverified",
+      "detail": "Two phone numbers appear in different sources: 07476 373 120 (current website) and 07816 169359 (internal CSV, Wellwild). The booking email booking@thebigblueexperience.com was surfaced from a Google-indexed excerpt but is not directly visible on the live website. Publishing unverified contact details risks sending customers to a dead line or inbox.",
+      "severity": "HIGH",
+      "action": "Call both numbers and send a test email before publishing. Update internal CSV with verified details."
+    },
+    {
+      "rank": 3,
+      "blocker": "No operator-supplied logo or photography",
+      "detail": "The operator's website images and logo are copyright © 2026 The Big Blue Experience — not freely licensed. Three Wikimedia Commons CC BY-SA 2.0 images of Newgale beach watersports are available as temporary cover image placeholders, but they are generic (taken 2005–2009) and do not show Big Blue Experience branding or staff. A logo is entirely missing with no free-licence alternative available.",
+      "severity": "MEDIUM",
+      "action": "Email booking@thebigblueexperience.com to request a logo file and media pack. Freely licensed Newgale beach images can be used as placeholder cover images in the interim (with correct CC BY-SA 2.0 attribution), but the logo remains fully blocked until operator supplies it."
+    }
+  ]
+}

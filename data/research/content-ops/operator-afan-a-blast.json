@@ -1,0 +1,373 @@
+{
+  "_meta": {
+    "task": "content-ops-070-operator-afan-a-blast",
+    "contentItem": "operator-afan-a-blast",
+    "contentType": "operator",
+    "slug": "afan-a-blast",
+    "route": "/directory/afan-a-blast",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "partial_with_critical_flags",
+    "identityConfidence": "HIGH — Companies House registration 10985286 confirms AFAN A BLAST LTD is a real, active entity in Wales"
+  },
+
+  "proposedOperatorData": {
+    "name": "Afan A Blast",
+    "slug": "afan-a-blast",
+    "legalName": "AFAN A BLAST LTD",
+    "companiesHouseNumber": "10985286",
+    "companiesHouseUrl": "https://find-and-update.company-information.service.gov.uk/company/10985286",
+    "sicCode": "47640",
+    "sicCodeDescription": "Retail sale of sports goods, fishing gear, camping goods, boats and bicycles",
+    "sicCodeNote": "The SIC code confirms Afan A Blast is primarily a bike retail/hire business, not a coaching or guiding operator. The internal MTB CSV categorisation as 'Coaching|Guided Rides' needs human verification — see claimsNeedingHumanReview.",
+    "incorporatedDate": "2017-09-27",
+    "accountsFiledTo": "2024-09-30",
+    "confirmationStatementDate": "2025-09-26",
+    "tradingStatus": "Active",
+    "website": {
+      "primary": null,
+      "primaryNote": "No standalone Afan A Blast website found. Domains afanablast.com, afanablast.co.uk, afan-a-blast.co.uk were not found as active independent sites.",
+      "hostedPage": "https://glyncorrwgmtbcentreandcampsite.co.uk/afan-a-blast/",
+      "hostedPageNote": "Afan A Blast has a dedicated sub-page on the Glyncorrwg Mountain Bike Centre and Campsite website. This is the closest equivalent to an official operator web page."
+    },
+    "contact": {
+      "phone": "01639 699802",
+      "phoneSource": "https://ratingsplus.co.uk/city/rhondda-cynon-taff/bicycle-shops/afan-a-blast",
+      "phoneNote": "VERIFY BEFORE PUBLISHING — sourced from an aggregator site (ratingsplus), not the operator's own page. A second number, 01639 851900, appears on some Glyncorrwg centre listings and may be a shared site line. Call to confirm which is the primary Afan A Blast contact number.",
+      "email": "afanablast@outlook.com",
+      "emailSource": "Surfaced in web search index snippet — not confirmed from official operator page",
+      "emailNote": "VERIFY BEFORE PUBLISHING — sourced from a web search snippet, not from the operator website or official directory. Send a test email or cross-check against the Facebook page 'About' section before publishing.",
+      "address": {
+        "trading": {
+          "line1": "Ynyscorrwg Park",
+          "locality": "Glyncorrwg",
+          "town": "Port Talbot",
+          "county": "Neath Port Talbot",
+          "country": "Wales",
+          "source": "https://find-and-update.company-information.service.gov.uk/company/10985286"
+        },
+        "registered": {
+          "line1": "Ty Dewin",
+          "line2": "16 Station Road",
+          "town": "Port Talbot",
+          "country": "Wales",
+          "postcode": "SA13 1JB",
+          "source": "https://find-and-update.company-information.service.gov.uk/company/10985286"
+        }
+      }
+    },
+    "location": {
+      "lat": 51.644,
+      "lng": -3.738,
+      "latLngSource": "content/operators/mtb.csv (internal data file) — consistent with Ynyscorrwg Park / Glyncorrwg Mountain Bike Centre location in the Afan Valley",
+      "region": "south_wales",
+      "area": "Afan Valley",
+      "nearestTown": "Glyncorrwg / Port Talbot",
+      "trailHub": "Glyncorrwg Mountain Bike Centre",
+      "trailsAccessibleFrom": [
+        "Blade Trail",
+        "Skyline Trail",
+        "White's Level Trail",
+        "W2 Trail",
+        "Rheilffordd Cycleway (Sustrans Route 887)"
+      ],
+      "trailsSource": "https://glyncorrwgmtbcentreandcampsite.co.uk/afan-a-blast/"
+    },
+    "description": {
+      "short": "Afan A Blast is a mountain bike hire and retail shop at the Glyncorrwg Mountain Bike Centre in the Afan Valley, South Wales. Based at the hub of the Blade, Skyline, and White's Level trail network, they offer hardtail and full-suspension bike hire, e-bike hire, repairs, servicing, and retail, alongside an on-site café and camping.",
+      "shortNote": "Drafted from verified sources. Primary business is bike hire/retail per Companies House SIC code 47640. Coaching services may not be directly offered by Afan A Blast — see claimsNeedingHumanReview.",
+      "full": "Afan A Blast is a mountain bike hire, retail, and servicing business located at Ynyscorrwg Park in Glyncorrwg, part of the Afan Forest Park in South Wales. Situated at the Glyncorrwg Mountain Bike Centre — one of the major trail hubs in the Afan Valley — the operation provides direct access to world-class mountain biking terrain including the Blade, Skyline, White's Level, and W2 trails, along with the Rheilffordd Cycleway (Sustrans Route 887).\n\nThe business offers a range of hardtail and full-suspension bikes for hire at competitive daily rates, alongside e-bike options for those seeking an assisted ride. A workshop on site provides bike repairs, servicing, and a bike wash facility. An on-site café (Corrwg Cwtch Café, upstairs and licensed) serves refreshments, and camping is available at the adjacent Glyncorrwg Mountain Bike Centre and Campsite.\n\nAfan A Blast Ltd was incorporated in September 2017 and remains an active company as confirmed by Companies House, with accounts filed to September 2024 and a confirmation statement dated September 2025.",
+      "fullNote": "Drafted from verified public sources. Editorial tone review required. Pricing detail has been excluded from the main description — see 'pricing' field below for rates and caveats."
+    },
+    "services": [
+      {
+        "name": "Hardtail Mountain Bike Hire",
+        "source": "https://glyncorrwgmtbcentreandcampsite.co.uk/afan-a-blast/"
+      },
+      {
+        "name": "Full Suspension Mountain Bike Hire",
+        "source": "https://glyncorrwgmtbcentreandcampsite.co.uk/afan-a-blast/"
+      },
+      {
+        "name": "E-Bike Hire (Merida e160)",
+        "source": "https://glyncorrwgmtbcentreandcampsite.co.uk/afan-a-blast/"
+      },
+      {
+        "name": "Bike Retail (bikes, clothing, accessories)",
+        "source": "https://exploresouthwales.com/explore/afan-a-blast-bike-hire-and-service/"
+      },
+      {
+        "name": "Bike Repairs and Servicing",
+        "source": "https://exploresouthwales.com/explore/afan-a-blast-bike-hire-and-service/"
+      },
+      {
+        "name": "Bike Wash Facility",
+        "source": "https://exploresouthwales.com/explore/afan-a-blast-bike-hire-and-service/"
+      },
+      {
+        "name": "On-site Café (Corrwg Cwtch Café)",
+        "source": "https://glyncorrwgmtbcentreandcampsite.co.uk/afan-a-blast/"
+      },
+      {
+        "name": "Camping (via Glyncorrwg Mountain Bike Centre and Campsite)",
+        "source": "https://glyncorrwgmtbcentreandcampsite.co.uk/afan-a-blast/"
+      }
+    ],
+    "coachingAndGuidedRides": {
+      "claimedInInternalData": true,
+      "verifiedFromPublicSources": false,
+      "note": "The internal MTB operators CSV tags Afan A Blast as 'Coaching|Guided Rides'. However, public sources (Companies House SIC 47640, the Glyncorrwg MTB Centre site, and Afan Forest Park's own bike hire/coaching page) characterise Afan A Blast as a bike hire and retail operation. Coaching in the Afan Valley appears to be delivered by nearby operators Campbell Coaching and Afan Valley Bike Shed. Human review required to determine whether Afan A Blast offers coaching/guiding directly or whether the CSV tag is incorrect.",
+      "coachingSourcesReviewed": [
+        "https://afantrailvolunteers.co.uk/mountain-bike-coaching-and-guiding-afan",
+        "https://afanforestpark.com/bike-hire-bike-shops-and-coaching/"
+      ]
+    },
+    "openingHours": {
+      "monday": "Closed",
+      "tuesday": "Closed",
+      "wednesday": "09:30–17:00",
+      "thursday": "09:30–17:00",
+      "friday": "09:30–17:00",
+      "saturday": "09:00–17:00",
+      "sunday": "09:00–16:00",
+      "source": "https://ratingsplus.co.uk/city/rhondda-cynon-taff/bicycle-shops/afan-a-blast",
+      "note": "VERIFY BEFORE PUBLISHING — sourced from an aggregator site. Opening hours for small operators change seasonally. Confirm against Facebook page or direct contact."
+    },
+    "pricing": {
+      "publiclyAvailable": true,
+      "indicativeRates": [
+        {
+          "item": "Hardtail mountain bike hire",
+          "rate": "£25 per day",
+          "source": "https://glyncorrwgmtbcentreandcampsite.co.uk/afan-a-blast/"
+        },
+        {
+          "item": "Full suspension mountain bike hire",
+          "rate": "£65 per day",
+          "source": "https://glyncorrwgmtbcentreandcampsite.co.uk/afan-a-blast/"
+        },
+        {
+          "item": "Merida e160 e-bike hire",
+          "rate": "£85 per day",
+          "source": "https://glyncorrwgmtbcentreandcampsite.co.uk/afan-a-blast/"
+        }
+      ],
+      "pricingNote": "DO NOT PUBLISH as current prices without re-checking the source page. Prices sourced from the Glyncorrwg MTB Centre site may be outdated. Verify directly with the operator or via the live web page before including on any listing."
+    },
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "No standalone Google Business profile for Afan A Blast was confirmed. The operator is co-located at Glyncorrwg Mountain Bike Centre and may appear on Google Maps under the centre's listing rather than a separate Afan A Blast profile. Verify by searching Google Maps for 'Afan A Blast Glyncorrwg'.",
+        "verifyManually": true
+      },
+      "tripadvisor": {
+        "listing": null,
+        "note": "No dedicated TripAdvisor listing found for Afan A Blast. General Afan Forest Park/Glyncorrwg pages exist but do not contain a sub-listing for this operator."
+      },
+      "ratingsplus": {
+        "rating": 5.0,
+        "reviewCount": 3,
+        "note": "5.0/5 from 3 reviews on ratingsplus.co.uk — a small review aggregator. Very small sample size; treat as indicative only.",
+        "source": "https://ratingsplus.co.uk/city/rhondda-cynon-taff/bicycle-shops/afan-a-blast"
+      }
+    },
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/afanablast/",
+        "note": "Active Facebook page with video content. Confirm follower count and last post date before publishing. The page 'About' section may contain up-to-date phone/email not found elsewhere.",
+        "source": "Web search index"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/afanablast/",
+        "handle": "@afanablast",
+        "note": "Account exists with reels content. Verify it is operated by Afan A Blast and not a fan account before linking.",
+        "source": "Web search index"
+      }
+    },
+    "tourismDirectoryListings": [
+      {
+        "directory": "Dramatic Heart Wales (Neath Port Talbot tourism board)",
+        "url": "https://dramaticheart.wales/discover-our-area/activity/afan-a-blast/",
+        "note": "Official local authority tourism board — high confidence listing"
+      },
+      {
+        "directory": "Explore South Wales",
+        "url": "https://exploresouthwales.com/explore/afan-a-blast-bike-hire-and-service/",
+        "note": "Regional tourism aggregator"
+      },
+      {
+        "directory": "Afan Forest Park (official park website)",
+        "url": "https://afanforestpark.com/bike-hire-bike-shops-and-coaching/",
+        "note": "Official park website lists Afan A Blast under bike hire, bike shops and coaching operators at Glyncorrwg"
+      },
+      {
+        "directory": "Mountain Bike Wales (MBWales)",
+        "url": "https://www.mbwales.com/agents/afan-forest-park/",
+        "note": "MBWales Afan Forest Park agent page links to Afan A Blast's Facebook page"
+      }
+    ]
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "No freely licensed version of the Afan A Blast logo found on Openverse, Unsplash, or Wikimedia Commons. The logo visible on social media and partner sites is copyrighted by Afan A Blast Ltd.",
+      "actionRequired": "Contact the operator via Facebook (https://www.facebook.com/afanablast/) or by email (afanablast@outlook.com — verify first) to request the logo file and written permission to reproduce it. Do not use AI-generated images."
+    },
+    "cover": {
+      "status": "BLOCKED",
+      "reason": "All photography on the operator's Facebook page (https://www.facebook.com/afanablast/) and Instagram (@afanablast) is the copyright of Afan A Blast Ltd or its photographers. The Glyncorrwg MTB Centre site and Explore South Wales pages also use copyrighted imagery.",
+      "openverseSearchSuggestion": "Search Openverse (https://openverse.org/) and Wikimedia Commons for freely licensed photographs of Glyncorrwg, the Blade Trail, White's Level Trail, or Afan Forest Park mountain biking. Any images found must be attributed correctly per their licence (typically CC BY or CC BY-SA) and must NOT be captioned as Afan A Blast photography unless the operator is identifiably present.",
+      "dramaticHeartWalesNote": "The Dramatic Heart Wales tourism board listing at https://dramaticheart.wales/discover-our-area/activity/afan-a-blast/ may use imagery for which the board holds a tourism licence. Contact Neath Port Talbot tourism office to enquire about image reuse rights.",
+      "actionRequired": "Contact the operator to request a media pack. Alternatively, source open-licence imagery of Afan Forest Park/Glyncorrwg from Openverse/Wikimedia Commons. Do not use AI-generated images."
+    },
+    "gallery": {
+      "status": "BLOCKED",
+      "reason": "No freely licensed gallery images confirmed. Same copyright constraints as cover apply.",
+      "actionRequired": "Resolve cover image blocker first; then request gallery images from the operator."
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Primary service type: the internal MTB CSV categorises Afan A Blast as 'Coaching|Guided Rides'",
+      "confidence": "LOW for coaching/guiding; HIGH for bike hire/retail",
+      "issue": "Companies House SIC code 47640 (retail, sports goods/bicycles) and all public-facing sources describe Afan A Blast as a bike hire, retail, and servicing business. Coaching in the Afan Valley is attributed publicly to Campbell Coaching and Afan Valley Bike Shed. It is possible that Afan A Blast offered coaching in the past, or that the CSV tag was applied because they are co-located with the coaching hub — but no coaching service is currently advertised on the Glyncorrwg MTB Centre sub-page or on the Afan Forest Park coaching directory.",
+      "action": "Contact the operator to ask whether they offer coaching or guided rides directly. If yes, request a description and pricing. If no, update the directory categorisation to remove coaching/guided rides and keep bike hire/retail.",
+      "priority": "HIGH"
+    },
+    {
+      "claim": "Phone number: 01639 699802",
+      "confidence": "MODERATE",
+      "issue": "Sourced from ratingsplus.co.uk, an aggregator site. A second number (01639 851900) appears on some Glyncorrwg centre listings. Neither has been confirmed from the operator's own web page or official directory.",
+      "action": "Call both numbers to confirm which is the primary Afan A Blast contact. Update the record with the verified number and source.",
+      "priority": "HIGH"
+    },
+    {
+      "claim": "Email address: afanablast@outlook.com",
+      "confidence": "LOW",
+      "issue": "Surfaced in a web search snippet — not confirmed from the operator's Facebook page, Instagram 'About' section, official directory listing, or the Glyncorrwg MTB Centre site.",
+      "action": "Check the Facebook page (https://www.facebook.com/afanablast/) 'About' tab for a published contact email. Send a test email to afanablast@outlook.com and confirm it is active before publishing. Do not publish this email without direct verification.",
+      "priority": "HIGH"
+    },
+    {
+      "claim": "Hire prices: £25/day hardtail, £65/day full suspension, £85/day e-bike",
+      "confidence": "MODERATE — verified from partner site, not operator's own page",
+      "issue": "Prices were surfaced from the Glyncorrwg MTB Centre website sub-page and Explore South Wales. Prices for small operators change seasonally. These rates may be outdated.",
+      "action": "Verify current pricing from the live Glyncorrwg MTB Centre site (https://glyncorrwgmtbcentreandcampsite.co.uk/afan-a-blast/) or by contacting the operator directly. Do not publish pricing without a dated source.",
+      "priority": "MEDIUM"
+    },
+    {
+      "claim": "Opening hours: closed Mon-Tue, open Wed-Fri 09:30–17:00, Sat 09:00–17:00, Sun 09:00–16:00",
+      "confidence": "LOW",
+      "issue": "Sourced from ratingsplus.co.uk aggregator. Opening hours for outdoor activity businesses change seasonally, especially over winter. These hours may be outdated or seasonal.",
+      "action": "Verify current opening hours from the Facebook page or by calling. Do not publish as 'current hours' without a dated confirmation.",
+      "priority": "MEDIUM"
+    },
+    {
+      "claim": "Trading address: Ynyscorrwg Park, Glyncorrwg, Port Talbot",
+      "confidence": "HIGH",
+      "issue": "Companies House registered address is Ty Dewin, 16 Station Road, Port Talbot, SA13 1JB. The operating address at Ynyscorrwg Park, Glyncorrwg is consistently cited across all public sources as the actual trading location. However, note that the postcode for Glyncorrwg (SA13 3EA) differs from the registered SA13 1JB — this is expected for a business with a registered office at a different address.",
+      "action": "Confirm the full postcode of the trading/visitor address (likely SA13 3EA) and add it to the listing. This is important for map pins and 'get directions' functionality.",
+      "priority": "LOW"
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10985286",
+      "description": "Companies House — AFAN A BLAST LTD, company number 10985286. Active, incorporated 2017-09-27, SIC 47640, registered address Ty Dewin 16 Station Road Port Talbot SA13 1JB, accounts to 2024-09-30, confirmation statement 2025-09-26.",
+      "accessedAt": "2026-06-04",
+      "confidence": "HIGH — authoritative government source"
+    },
+    {
+      "url": "https://glyncorrwgmtbcentreandcampsite.co.uk/afan-a-blast/",
+      "description": "Glyncorrwg Mountain Bike Centre and Campsite — dedicated sub-page for Afan A Blast. Services, pricing, and trail access information.",
+      "accessedAt": "2026-06-04",
+      "confidence": "HIGH — official partner/host site"
+    },
+    {
+      "url": "https://afanforestpark.com/bike-hire-bike-shops-and-coaching/",
+      "description": "Afan Forest Park official website — lists Afan A Blast as a bike hire provider at Glyncorrwg.",
+      "accessedAt": "2026-06-04",
+      "confidence": "HIGH — official NRW-managed park website"
+    },
+    {
+      "url": "https://dramaticheart.wales/discover-our-area/activity/afan-a-blast/",
+      "description": "Dramatic Heart Wales (Neath Port Talbot tourism board) — official local authority listing for Afan A Blast.",
+      "accessedAt": "2026-06-04",
+      "confidence": "HIGH — official tourism authority"
+    },
+    {
+      "url": "https://exploresouthwales.com/explore/afan-a-blast-bike-hire-and-service/",
+      "description": "Explore South Wales — regional tourism aggregator entry for Afan A Blast with services and description.",
+      "accessedAt": "2026-06-04",
+      "confidence": "MODERATE — tourism aggregator"
+    },
+    {
+      "url": "https://www.mbwales.com/agents/afan-forest-park/",
+      "description": "Mountain Bike Wales — Afan Forest Park agent page links to Afan A Blast's Facebook.",
+      "accessedAt": "2026-06-04",
+      "confidence": "MODERATE — MTB Wales directory"
+    },
+    {
+      "url": "https://ratingsplus.co.uk/city/rhondda-cynon-taff/bicycle-shops/afan-a-blast",
+      "description": "Ratingsplus — 5.0/5 from 3 reviews. Phone number and opening hours sourced here (both require verification).",
+      "accessedAt": "2026-06-04",
+      "confidence": "LOW — third-party aggregator; data must be independently verified"
+    },
+    {
+      "url": "https://www.facebook.com/afanablast/",
+      "description": "Afan A Blast Facebook page — confirmed active with video content. Should be checked for current contact details, hours, and pricing.",
+      "accessedAt": "2026-06-04",
+      "confidence": "HIGH — official social media (verify ownership)"
+    },
+    {
+      "url": "https://www.instagram.com/afanablast/",
+      "description": "Afan A Blast Instagram — @afanablast, account with reels content.",
+      "accessedAt": "2026-06-04",
+      "confidence": "MODERATE — verify it is operated by Afan A Blast not a fan account"
+    },
+    {
+      "url": "content/operators/mtb.csv",
+      "description": "Internal MTB operators CSV — lists 'Afan A Blast' with slug afan-a-blast, South Wales region, coordinates 51.644 / -3.738, Afan Valley, service types Coaching|Guided Rides.",
+      "type": "internal"
+    }
+  ],
+
+  "sourcesRuledOut": [
+    {
+      "url": "https://www.komoot.com/collection/1364278/-afan-a-blast-200km-route-bikepacking-the-afan-and-neath-valleys",
+      "reason": "A user-created Komoot bikepacking route collection named 'Afan-A-Blast 200km route'. Not an official Afan A Blast operator page."
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "Core operator identity is confirmed (Companies House registration, active status, verified trading location), and all major fields have been populated with sources. However, three items must be verified before publishing: (1) whether coaching/guided rides are actually offered by this operator; (2) phone and email contact details need direct verification; (3) all images are blocked pending operator permission or open-licence sourcing. The listing is ready for QA review with these caveats clearly flagged.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Service type mismatch — coaching/guided rides not confirmed",
+      "detail": "The directory slug and internal CSV tag Afan A Blast as a 'Coaching|Guided Rides' operator, but Companies House SIC code (47640 — retail/hire), all public listings, and the Afan Forest Park coaching directory attribute coaching in the valley to other operators (Campbell Coaching, Afan Valley Bike Shed). Publishing the listing under wrong service categories would be factually misleading. Requires direct operator confirmation.",
+      "severity": "HIGH",
+      "action": "Contact Afan A Blast via Facebook (https://www.facebook.com/afanablast/) and ask directly whether they offer coaching or guided rides. If yes, obtain service details and pricing. If no, reclassify to bike hire/retail only."
+    },
+    {
+      "rank": 2,
+      "blocker": "Contact details (phone and email) unverified from official source",
+      "detail": "Phone number 01639 699802 is from a third-party aggregator (ratingsplus). Email afanablast@outlook.com is from a web search index snippet only. Neither has been confirmed from the operator's own web presence. Publishing incorrect contact details damages trust and generates bounce traffic.",
+      "severity": "HIGH",
+      "action": "Check the Afan A Blast Facebook page 'About' section for published phone and email. Cross-check with the Dramatic Heart Wales official listing (https://dramaticheart.wales/discover-our-area/activity/afan-a-blast/). If still unclear, call 01639 699802 to verify. Record the verified source URL and date."
+    },
+    {
+      "rank": 3,
+      "blocker": "All images blocked — no freely licensed photography found",
+      "detail": "Logo and cover/gallery photography are the copyright of Afan A Blast Ltd. No open-licence alternatives were found on Openverse, Unsplash, or Wikimedia Commons for this specific operator. Generic Afan Forest Park imagery may exist under open licences but cannot be attributed to this operator without care.",
+      "severity": "MEDIUM",
+      "action": "Contact the operator to request a media pack (logo PNG, hero image, gallery shots) under a written licence permitting use on Adventure Wales. Alternatively, search Openverse/Wikimedia Commons for CC-licenced Glyncorrwg or Blade Trail photography — use only as a location-contextual cover, not as operator-specific imagery. Do not use AI-generated images."
+    }
+  ]
+}

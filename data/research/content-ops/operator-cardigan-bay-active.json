@@ -1,0 +1,419 @@
+{
+  "_meta": {
+    "task": "content-ops-082-operator-cardigan-bay-active",
+    "contentItem": "operator-cardigan-bay-active",
+    "contentType": "operator",
+    "slug": "cardigan-bay-active",
+    "route": "/directory/cardigan-bay-active",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "substantially_complete",
+    "identityConfidence": "HIGH — website match confirmed by multiple independent sources; AALS licence for Adventure Beyond Ltd (R1121) independently corroborates phone number"
+  },
+
+  "proposedOperatorData": {
+    "name": "Cardigan Bay Active",
+    "nameNote": "Trading brand of Adventure Beyond Ltd (registered company). The operator's website (cardiganbayactive.co.uk) and all marketing use 'Cardigan Bay Active'. The AALS licence is held by 'Adventure Beyond Ltd'. The directory slug 'cardigan-bay-active' matches the trading name directly.",
+    "slug": "cardigan-bay-active",
+    "website": "https://www.cardiganbayactive.co.uk",
+    "websiteNote": "Active domain as of June 2026. SSL valid. Booking system active at cardiganbayactive.cinolla.com.",
+    "bookingUrl": "https://cardiganbayactive.cinolla.com/cardiganbay/",
+    "bookingUrlSource": "https://www.cardiganbayactive.co.uk/about-us",
+
+    "contact": {
+      "phone": "01239 612133",
+      "phoneSource": "https://www.cardiganbayactive.co.uk/contact-us",
+      "phoneMobile": "07787 123761",
+      "phoneMobileNote": "Listed as out-of-hours / emergency contact on operator website.",
+      "phoneMobileSource": "https://www.cardiganbayactive.co.uk/contact-us",
+      "email": "info@cardiganbayactive.co.uk",
+      "emailSource": "https://www.cardiganbayactive.co.uk/contact-us",
+      "phoneAvailability": "07:00–21:00 daily",
+      "phoneAvailabilitySource": "https://www.cardiganbayactive.co.uk/contact-us",
+      "address": {
+        "line1": "Scout Hall Boat House",
+        "line2": "The Strand",
+        "locality": "Cardigan",
+        "county": "Ceredigion",
+        "postcode": "SA43 1EX",
+        "country": "Wales",
+        "addressNote": "This is the operational base. Adventure Beyond Ltd (the registered company) has a separate registered/AALS address at Nant y Popty Farm, Coed y Bryn, Llandysul, Ceredigion, SA44 5LQ — this is likely the owner's farm/home. Use SA43 1EX for the directory listing.",
+        "addressSource": "https://www.cardigan-bay.com/cardigan-bay-active/ (confirmed also at https://www.cardiganbayactive.co.uk/contact-us)"
+      }
+    },
+
+    "location": {
+      "lat": 52.081887,
+      "lng": -4.658733,
+      "latLngSource": "https://wanderlog.com/place/details/3784995/cardigan-bay-active (derived from Google Maps; Google Maps Place ID: ChIJZZFGLjUub0gRxh8mPZF3O48)",
+      "latLngNote": "Coordinates are from Wanderlog which pulls from Google Maps. They correspond to Scout Hall Boat House on The Strand, Cardigan — on the south bank of the River Teifi, below Cardigan Castle. Verify by searching Google Maps for 'Cardigan Bay Active, The Strand, Cardigan SA43 1EX' before publishing.",
+      "googleMapsPlaceId": "ChIJZZFGLjUub0gRxh8mPZF3O48",
+      "googleMapsPlaceIdSource": "https://wanderlog.com/place/details/3784995/cardigan-bay-active",
+      "region": "mid_wales",
+      "serviceAreas": ["Ceredigion", "Carmarthenshire", "Pembrokeshire"],
+      "serviceAreaNote": "Operator describes coverage 'from Aberystwyth to Tenby'. River activities are on the River Teifi near Cardigan. Coasteering runs at two locations: south of Cardigan and near St Davids (Blue Lagoon, Pembrokeshire).",
+      "serviceAreaSource": "https://www.cardiganbayactive.co.uk/about-us"
+    },
+
+    "description": {
+      "short": "Cardigan Bay Active is an AALA-licensed adventure activity centre based on the River Teifi in Cardigan, West Wales. Operating since 2011 under Adventure Beyond Ltd, they offer coasteering, sea and river kayaking, white water rafting, stand-up paddleboarding, canoe trips, bushcraft, surfing, climbing, archery, and equipment hire across Ceredigion and Pembrokeshire.",
+      "shortNote": "Drafted from verified website content. Ready for editorial review.",
+      "full": "Established in the spring of 2011, Cardigan Bay Active is the adventure brand of Adventure Beyond Ltd, a family-run outdoor activity centre with roots going back to 1997. Based at the Scout Hall Boat House on the Strand in Cardigan, their riverside centre sits below the historic Cardigan Castle on the banks of the River Teifi.\n\nCardigan Bay Active holds an AALA licence (L179742, valid to August 2027) and is accredited as a WISE wildlife-safe operator and an approved Duke of Edinburgh activity provider. The team of 17+ instructors and support staff hold national-level coaching qualifications across paddlesports, coasteering, climbing, and outdoor education.\n\nOn the water, the operator offers canoe trips through the Teifi Gorge nature reserve, white water rafting on a 9km river section with three rapid sections, river and sea kayaking tours, stand-up paddleboarding, and white water tubing. On land, sessions include bushcraft, rock climbing and abseiling, surfing on the West Wales coast, and archery and axe throwing. Most guided activities run as 2.5–3 hour sessions starting at 09:30 or 13:30. A riverside equipment hire service is also available on a first-come basis. Wildlife encounters — dolphins, seals, kingfishers, ospreys — are a regular highlight of river and coastal tours.",
+      "fullNote": "Drafted from verified website and third-party sources. Needs editorial tone review before publishing. Managing Director Jethro Moore is a former international slalom kayaker — an editorial note on this background could add interest but must be verified directly with the operator before inclusion."
+    },
+
+    "activities": [
+      {
+        "name": "Coasteering",
+        "detail": "Climbing, scrambling, jumping, swimming, and cave exploration along the Pembrokeshire and Cardigan Bay coast. Two location options: south of Cardigan, and Blue Lagoon near St Davids. Family and adult sessions. Age 8+.",
+        "duration": "2.5–3 hours",
+        "startTimes": "09:30 or 13:30",
+        "source": "https://www.cardiganbayactive.co.uk/activities/coasteering"
+      },
+      {
+        "name": "Sea Kayaking Tours",
+        "detail": "Coastal exploration with caves and wildlife viewing. Age 8+.",
+        "source": "https://cardiganbayactive.co.uk/activities"
+      },
+      {
+        "name": "River Kayaking",
+        "detail": "Grade 2 rapids option (age 10+) or flat water option (age 8+). River Teifi.",
+        "source": "https://cardiganbayactive.co.uk/activities"
+      },
+      {
+        "name": "Canoe Trips",
+        "detail": "River journeys through Teifi Gorge and nature reserve. Adventure trips include packed lunch. All ages welcome.",
+        "duration": "3–5 hours (adventure trips)",
+        "source": "https://cardiganbayactive.co.uk/activities"
+      },
+      {
+        "name": "Stand Up Paddleboarding (SUP)",
+        "detail": "Family-friendly. Age 8+ for solo paddlers.",
+        "source": "https://cardiganbayactive.co.uk/activities"
+      },
+      {
+        "name": "White Water Tubing",
+        "detail": "River Teifi rapids experience. Age 8+.",
+        "source": "https://cardiganbayactive.co.uk/activities"
+      },
+      {
+        "name": "White Water Rafting",
+        "detail": "9km river journey with 3 rapid sections. Age 10+.",
+        "source": "https://cardiganbayactive.co.uk/activities"
+      },
+      {
+        "name": "Bushcraft",
+        "detail": "Fire-making and woodland skills. Age 6+.",
+        "source": "https://cardiganbayactive.co.uk/activities"
+      },
+      {
+        "name": "Rock Climbing and Abseiling",
+        "detail": "Cliff-based. Age 8+.",
+        "source": "https://cardiganbayactive.co.uk/activities"
+      },
+      {
+        "name": "Surfing Lessons",
+        "detail": "West Wales coastal instruction. Age 7+.",
+        "source": "https://cardiganbayactive.co.uk/activities"
+      },
+      {
+        "name": "Archery and Axe Throwing",
+        "detail": "Age 6+.",
+        "source": "https://cardiganbayactive.co.uk/activities"
+      },
+      {
+        "name": "Activity Taster Sessions",
+        "detail": "Monday sessions in Cardigan town. Age 6+.",
+        "source": "https://cardiganbayactive.co.uk/activities"
+      },
+      {
+        "name": "Sunrise / Sunset Tours",
+        "detail": "Specialised timing options available.",
+        "source": "https://cardiganbayactive.co.uk/activities"
+      },
+      {
+        "name": "Equipment Hire",
+        "detail": "Canoes, kayaks (single and double), stand-up paddleboards, wetsuits, and associated safety gear. Available on a first-come basis (non-bookable) at the riverside base.",
+        "hiringRatesNote": "Rates from cardigan-bay.com (third-party directory, not official operator source): Canoe £15/hr, Single Kayak £10/hr, Double Kayak £15/hr, SUP £10/hr. These rates may be outdated — verify against current operator pricing before publishing.",
+        "hiringRatesSource": "https://www.cardigan-bay.com/cardigan-bay-active/"
+      }
+    ],
+
+    "openingHours": {
+      "inSeason": "Monday–Sunday 09:00–17:00",
+      "phoneAvailability": "07:00–21:00 daily",
+      "seasonalNote": "Hours described as 'in season'. Seasonal closure dates not specified on operator website. Verify with operator for winter/off-season availability.",
+      "source": "https://www.cardiganbayactive.co.uk/contact-us and https://ivisitwales.co.uk/wales-attractions/cardigan-bay-active-2/"
+    },
+
+    "ratings": {
+      "google": {
+        "rating": 4.8,
+        "reviewCount": 31,
+        "note": "Rating and review count sourced from Wanderlog (Google Maps data). Google Maps Place ID: ChIJZZFGLjUub0gRxh8mPZF3O48. Verify directly via Google Maps search before publishing — counts change frequently.",
+        "source": "https://wanderlog.com/place/details/3784995/cardigan-bay-active",
+        "verifyManually": true
+      },
+      "tripadvisor": {
+        "rating": 4.8,
+        "reviewCount": 113,
+        "ranking": "#1 of 4 Boat Tours & Water Sports in Cardigan",
+        "url": "https://www.tripadvisor.co.uk/Attraction_Review-g316011-d4339708-Reviews-Cardigan_Bay_Active-Cardigan_Ceredigion_Wales.html",
+        "source": "https://www.tripadvisor.co.uk/Attraction_Review-g316011-d4339708-Reviews-Cardigan_Bay_Active-Cardigan_Ceredigion_Wales.html",
+        "accessedAt": "2026-06-04"
+      }
+    },
+
+    "socialMedia": {
+      "facebookCardiganBayActive": {
+        "url": "https://www.facebook.com/cardiganbayactive/",
+        "note": "Confirmed Facebook page specifically for Cardigan Bay Active brand (distinct from Adventure Beyond parent page).",
+        "source": "Google search result — https://www.facebook.com/cardiganbayactive/ returned directly"
+      },
+      "facebookAdventureBeyond": {
+        "url": "https://www.facebook.com/adventurebeyond",
+        "note": "Parent company Adventure Beyond's Facebook page. Listed in the footer social links on cardiganbayactive.co.uk. Editorial decision required: which Facebook page to link from the directory listing.",
+        "source": "https://www.cardiganbayactive.co.uk/contact-us"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/adventure.beyond/",
+        "handle": "@adventure.beyond",
+        "followerCount": "1,785 (as of June 2026 search)",
+        "note": "This is the Adventure Beyond parent company Instagram account. No separate Cardigan Bay Active Instagram handle was found. The directory listing should link to this account with a note that it covers both Adventure Beyond and Cardigan Bay Active content.",
+        "source": "https://www.cardiganbayactive.co.uk/contact-us (footer link) and Google search result"
+      },
+      "twitter": {
+        "url": "https://twitter.com/adventure_wales",
+        "handle": "@adventure_wales",
+        "note": "Linked from operator contact page. Handle '@adventure_wales' suggests a Wales-wide focus. Ownership and activity level not verified — confirm the handle is still active and belongs to this operator.",
+        "source": "https://www.cardiganbayactive.co.uk/contact-us",
+        "verifyManually": true
+      },
+      "youtube": {
+        "url": "https://www.youtube.com/@AdventureBeyond",
+        "note": "Adventure Beyond parent company YouTube channel.",
+        "source": "https://www.cardiganbayactive.co.uk/contact-us"
+      },
+      "tripadvisor": {
+        "url": "https://www.tripadvisor.co.uk/Attraction_Review-g316011-d4339708-Reviews-Cardigan_Bay_Active-Cardigan_Ceredigion_Wales.html",
+        "source": "https://www.cardiganbayactive.co.uk/contact-us"
+      }
+    },
+
+    "accreditations": [
+      {
+        "body": "Adventure Activities Licensing Service (AALS)",
+        "licenceNo": "L179742",
+        "referenceNo": "R1121",
+        "licenceHolder": "Adventure Beyond Ltd",
+        "issueDate": "2025-08-16",
+        "expiryDate": "2027-08-15",
+        "activitiesLicensed": ["Abseiling", "Canoeing", "Canyoning", "Coasteering", "Giant/big canoe", "Gorge scrambling", "Hill and mountain walking", "Improvised rafting", "Kayaking", "Mega/giant SUP", "Paddle surfing", "Rock climbing", "Stand-up paddleboarding (excluding foiling)", "Tubing", "White water rafting"],
+        "categories": ["Climbing", "Watersports", "Trekking"],
+        "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R1121",
+        "accessedAt": "2026-06-04"
+      },
+      {
+        "body": "WISE (Wildlife Safe Operator Scheme)",
+        "detail": "Accredited wildlife-safe operator — covers activities near marine wildlife such as dolphins and seals in Cardigan Bay.",
+        "source": "https://www.cardiganbayactive.co.uk/safety"
+      },
+      {
+        "body": "Pembrokeshire Outdoor Charter Group",
+        "detail": "Member organisation for outdoor activity providers operating in the Pembrokeshire coast area.",
+        "source": "https://www.cardiganbayactive.co.uk/safety"
+      },
+      {
+        "body": "Duke of Edinburgh (DofE) Award",
+        "detail": "Approved Activity Provider for DofE expeditions.",
+        "source": "https://www.cardiganbayactive.co.uk/safety"
+      }
+    ],
+
+    "leadership": {
+      "managingDirector": "Jethro Moore",
+      "background": "Founder of Adventure Beyond (1997), former international slalom kayaker. Specialisms: paddling, climbing, coasteering, expeditions.",
+      "source": "https://www.cardiganbayactive.co.uk/about-us"
+    },
+
+    "pricing": {
+      "publiclyAvailable": "partial",
+      "startingPrice": "£40 per person",
+      "startingPriceSource": "https://ivisitwales.co.uk/wales-attractions/cardigan-bay-active-2/",
+      "startingPriceNote": "Starting price of £40/person cited on iVisit Wales (third-party directory). This may be outdated. Do not publish without verifying against the current booking system at https://cardiganbayactive.cinolla.com/cardiganbay/",
+      "equipmentHire": {
+        "note": "Hire rates from cardigan-bay.com may be outdated. Rates listed: Canoe £15/hr, Single Kayak £10/hr, Double Kayak £15/hr, SUP £10/hr. Available first-come basis, not bookable.",
+        "source": "https://www.cardigan-bay.com/cardigan-bay-active/"
+      }
+    },
+
+    "parentCompany": {
+      "name": "Adventure Beyond Ltd",
+      "website": "https://adventurebeyond.co.uk/",
+      "founded": 1997,
+      "aalsRef": "R1121",
+      "aalsRegisteredAddress": "Nant y Popty Farm, Coed y Bryn, Llandysul, Ceredigion, SA44 5LQ",
+      "note": "Adventure Beyond Ltd is the registered legal entity that holds the AALS licence and employs staff. Cardigan Bay Active is a trading brand. Both share phone 01239 612133 and email info@cardiganbayactive.co.uk.",
+      "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R1121 and https://www.cardiganbayactive.co.uk/about-us"
+    }
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "The cardiganbayactive.co.uk website displays a branded logo. No freely licensed version found on Openverse, Unsplash, or Wikimedia Commons. Logo must be obtained directly from the operator (info@cardiganbayactive.co.uk) under written licence or permission."
+    },
+    "cover": {
+      "status": "BLOCKED",
+      "reason": "All photography on cardiganbayactive.co.uk and adventurebeyond.co.uk is owned by Adventure Beyond Ltd / Cardigan Bay Active. No freely licensed photographs of this operator's specific activities were found. The Instagram account @adventure.beyond may contain activity photographs but reproducing these requires explicit written permission from the operator. Do not use AI-generated images.",
+      "actionRequired": "Contact operator at info@cardiganbayactive.co.uk or 01239 612133 to request a media pack or written permission to reproduce photography. Alternatively, search Openverse (openverse.org) or Wikimedia Commons for generic freely licensed images of SUP/kayaking on the River Teifi, coasteering in Pembrokeshire, or West Wales adventure activities that do not depict this specific operator. Any such image must be clearly labelled as representative/illustrative."
+    },
+    "gallery": {
+      "status": "BLOCKED",
+      "reason": "Same copyright restriction applies to all gallery images. Operator's TripAdvisor page (https://www.tripadvisor.co.uk/Attraction_Review-g316011-d4339708-Reviews-Cardigan_Bay_Active-Cardigan_Ceredigion_Wales.html) contains user-submitted review photos — these are NOT freely licensed and cannot be used without individual user consent."
+    },
+    "genericAlternativeNotes": "For a generic illustrative cover image only (not depicting this operator): Wikimedia Commons has freely licensed imagery of Cardigan Bay, the River Teifi, and coasteering in Pembrokeshire. Search terms: 'River Teifi kayaking', 'Pembrokeshire coasteering', 'Cardigan Bay SUP'. Any image used must be credited per its licence and marked as illustrative, not operator photography."
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "GPS coordinates 52.081887, -4.658733 for Scout Hall Boat House, The Strand, Cardigan",
+      "confidence": "HIGH",
+      "issue": "Coordinates sourced from Wanderlog, which derives data from Google Maps (Place ID ChIJZZFGLjUub0gRxh8mPZF3O48). High confidence but should be verified by loading the Google Maps listing directly before using as a map pin.",
+      "action": "Open https://www.google.com/maps/place/?q=place_id:ChIJZZFGLjUub0gRxh8mPZF3O48 and confirm the pin is correctly located at Scout Hall Boat House on The Strand."
+    },
+    {
+      "claim": "Social media handles belong to Adventure Beyond, not Cardigan Bay Active specifically",
+      "confidence": "HIGH",
+      "issue": "The operator's contact page links to @adventure.beyond (Instagram), @adventure_wales (Twitter/X), @AdventureBeyond (YouTube), and /adventurebeyond (Facebook). These are the parent company's handles. The only Cardigan Bay Active–branded social account found is https://www.facebook.com/cardiganbayactive/. There is no dedicated Cardigan Bay Active Instagram account.",
+      "action": "Editorial decision: link to /cardiganbayactive Facebook for the brand-specific account, and note on the listing that their Instagram/Twitter/YouTube is under the parent brand @adventure.beyond. Alternatively contact the operator to ask for a Cardigan Bay Active–specific social link."
+    },
+    {
+      "claim": "Pricing — starting price £40/person and equipment hire rates",
+      "confidence": "LOW",
+      "issue": "£40/person starting price from iVisit Wales is a third-party directory, not the operator's own pricing. Equipment hire rates (£10–£15/hour) are from cardigan-bay.com, also a third party. Both may be outdated.",
+      "action": "Verify current pricing via the live booking system at https://cardiganbayactive.cinolla.com/cardiganbay/ or by contacting the operator directly. Do not publish any specific prices without confirmation."
+    },
+    {
+      "claim": "Seasonal operation — opening hours and closure periods",
+      "confidence": "MODERATE",
+      "issue": "Hours stated as 'in season' Mon–Sun 09:00–17:00, but seasonal closure dates are not specified anywhere on the operator's website.",
+      "action": "Contact operator to confirm whether they operate year-round or close seasonally, and if seasonal, what the dates are."
+    },
+    {
+      "claim": "Google rating: 4.8 / 31 reviews",
+      "confidence": "MODERATE",
+      "issue": "Review count and rating sourced from Wanderlog (Google Maps data), which may not be real-time. The count will have changed since the page was cached.",
+      "action": "Verify current Google rating and review count directly via Google Maps (Place ID: ChIJZZFGLjUub0gRxh8mPZF3O48) before publishing."
+    },
+    {
+      "claim": "Twitter/X handle @adventure_wales is current and active",
+      "confidence": "LOW",
+      "issue": "Twitter handle listed on the contact page, but the platform's landscape has changed significantly. The handle may be inactive, suspended, or migrated.",
+      "action": "Visit https://twitter.com/adventure_wales to confirm the account is still active and belongs to this operator before linking from the directory."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.cardiganbayactive.co.uk",
+      "description": "Official operator website — activities, description, contact details, social media links, booking URL",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.cardiganbayactive.co.uk/about-us",
+      "description": "About page — company history (est. 2011), parent company (Adventure Beyond, est. 1997), MD Jethro Moore, staff overview, accreditations",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.cardiganbayactive.co.uk/contact-us",
+      "description": "Contact page — phone, mobile, email, address (Scout Hall Boat House, The Strand, Cardigan SA43 1EX), opening hours, social media links",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.cardiganbayactive.co.uk/safety",
+      "description": "Safety page — AALS licence coverage, WISE accreditation, DofE provider status, Pembrokeshire Outdoor Charter Group membership",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://cardiganbayactive.co.uk/activities",
+      "description": "Activities page — full activity list with age requirements and durations",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://cardiganbayactive.co.uk/activities/coasteering",
+      "description": "Coasteering detail page — session times, locations, age guidance",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R1121",
+      "description": "AALS (HSE) official licence record for Adventure Beyond Ltd — licence no. L179742, ref R1121, valid 2025-08-16 to 2027-08-15, licensed activity categories and specific activities listed",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.cardigan-bay.com/cardigan-bay-active/",
+      "description": "Cardigan Bay tourism directory listing — address (Scout Hall Boat House, The Strand, Cardigan SA43 1EX), equipment hire rates, description",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.tripadvisor.co.uk/Attraction_Review-g316011-d4339708-Reviews-Cardigan_Bay_Active-Cardigan_Ceredigion_Wales.html",
+      "description": "TripAdvisor listing — 4.8/5 rating (113 reviews), #1 of 4 Boat Tours & Water Sports in Cardigan, operating hours 09:00–17:00 daily, review themes",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://wanderlog.com/place/details/3784995/cardigan-bay-active",
+      "description": "Wanderlog listing (Google Maps data) — GPS coordinates 52.081887, -4.658733, Google Place ID ChIJZZFGLjUub0gRxh8mPZF3O48, Google rating 4.8/31 reviews",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://ivisitwales.co.uk/wales-attractions/cardigan-bay-active-2/",
+      "description": "iVisit Wales listing — phone, email, activities, starting price £40/person, opening hours",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.instagram.com/adventure.beyond/",
+      "description": "Adventure Beyond Instagram — 1,785 followers; shared social identity with Cardigan Bay Active",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.facebook.com/cardiganbayactive/",
+      "description": "Cardigan Bay Active Facebook page — brand-specific account",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "content/operators/surf.csv",
+      "description": "Internal surf operators CSV — lists cardigan-bay-active with website cardiganbayactive.co.uk, activities Stand Up Paddleboarding|Kayaking|Coasteering, region Mid Wales",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirms operator-cardigan-bay-active, unclassified_operator tier, all 7 key fields missing",
+      "type": "internal"
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "Research is substantially complete. All major fields are now populated from verified sources: confirmed address, GPS coordinates, phone, email, activities, accreditations (AALS licence number verified from HSE database), TripAdvisor and Google ratings, and social media handles. Three blockers remain before the listing can be published: (1) all images are copyright-restricted and require operator permission; (2) pricing figures from third-party directories should be verified against the live booking system; (3) GPS coordinates should be confirmed directly via Google Maps before use as a map pin.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "All images blocked — no freely licensed photography found",
+      "detail": "All photography on cardiganbayactive.co.uk and adventurebeyond.co.uk is copyright Adventure Beyond Ltd. No open-licence alternatives confirmed on Openverse, Unsplash, or Wikimedia Commons depicting this specific operator. A media pack or written permission must be obtained from the operator (info@cardiganbayactive.co.uk / 01239 612133), or editorial must decide to use a clearly labelled illustrative image under an appropriate free licence.",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 2,
+      "blocker": "Pricing unverified — third-party figures only",
+      "detail": "The starting price of £40/person (iVisit Wales) and equipment hire rates of £10–£15/hour (cardigan-bay.com) are from third-party directories and may be outdated. Do not publish any prices without cross-checking against the live booking system at https://cardiganbayactive.cinolla.com/cardiganbay/ or directly with the operator.",
+      "severity": "MEDIUM"
+    },
+    {
+      "rank": 3,
+      "blocker": "GPS coordinates and Google rating require direct verification",
+      "detail": "GPS coordinates (52.081887, -4.658733) and Google rating (4.8/31 reviews) are sourced from Wanderlog, which derives from Google Maps. These need direct confirmation via Google Maps Place ID ChIJZZFGLjUub0gRxh8mPZF3O48 before use as a directory map pin or published rating — review counts change and third-party data can lag.",
+      "severity": "LOW"
+    }
+  ]
+}

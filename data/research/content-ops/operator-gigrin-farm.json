@@ -1,0 +1,409 @@
+{
+  "_meta": {
+    "task": "content-ops-097-operator-gigrin-farm",
+    "contentItem": "operator-gigrin-farm",
+    "contentType": "operator",
+    "slug": "gigrin-farm",
+    "route": "/directory/gigrin-farm",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "priorResearchFile": "data/research/operators/gigrin-farm.json",
+    "priorResearchDate": "2026-02-06",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_minor_flags",
+    "knownBlockerResolution": "Phone and email verified. Cover image unblocked: 4 freely licensed CC-BY-SA 2.0 options found on Wikimedia Commons. Logo remains blocked (text-based branding only)."
+  },
+
+  "proposedOperatorData": {
+    "name": "Gigrin Farm Red Kite Feeding Centre",
+    "slug": "gigrin-farm",
+    "website": "https://www.gigrin.co.uk",
+    "websiteNote": "Active domain as of June 2026. © 2025, All Rights Reserved Gigrin Farm.",
+    "contact": {
+      "phone": "01597 810243",
+      "phoneNote": "Available 10am–5pm on days when the farm is open.",
+      "phoneSource": "https://www.gigrin.co.uk",
+      "email": "office@gigrin.co.uk",
+      "emailSource": "https://www.gigrin.co.uk",
+      "address": {
+        "line1": "South Street",
+        "locality": "Rhayader",
+        "county": "Powys",
+        "postcode": "LD6 5BL",
+        "country": "Wales",
+        "what3words": "///restore.reconnect.diplomat"
+      },
+      "addressSource": "https://www.gigrin.co.uk"
+    },
+    "location": {
+      "lat": 52.2998,
+      "lng": -3.5086,
+      "latLngNote": "Carried forward from prior research (data/research/operators/gigrin-farm.json). Coordinates corroborated by Wikimedia Commons GPS tags on Geograph photos: 52°17'50.4\"N, 3°29'42\"W ≈ 52.2973, -3.4950 — slight discrepancy. Verify via Google Maps for South Street, Rhayader LD6 5BL before publishing.",
+      "latLngSource": "data/research/operators/gigrin-farm.json (prior research); GPS tags on Wikimedia Commons File:Flock_of_Red_Kites_at_Gigrin_Farm_-_geograph.org.uk_-_4979150.jpg",
+      "region": "mid_wales",
+      "nearestTown": "Rhayader, Powys (0.5 miles)"
+    },
+    "description": {
+      "short": "Gigrin Farm is the UK's official Red Kite Feeding Centre, where up to 600 wild red kites gather daily for a spectacular aerial display. Located half a mile from Rhayader in Mid Wales, the farm has been feeding red kites every single day since 1992/93, playing a central role in saving the species from extinction in the UK.",
+      "shortSource": "https://www.gigrin.co.uk/about",
+      "full": "Gigrin Farm is a 200-acre family-run farm in the heart of Mid Wales, now world-famous as the UK's official Red Kite Feeding Centre. Located just half a mile from the market town of Rhayader, overlooking both the Wye and Elan Valleys, the farm attracts between 300 and 600 wild Red Kites every day for a feeding spectacle that has continued unbroken since 1992/93.\n\nThe feeding station was established at the request of the RSPB when Red Kites faced extinction across the UK. Founder Eithel Powell began supplementary feeding daily, and over three decades, the kite population recovered so successfully that they are no longer endangered. Gigrin Farm is widely recognised as one of conservation's greatest success stories and remains an official RSPB feeding centre to this day.\n\nVisitors can watch from five large hides — three wheelchair accessible — or book into specialist photographic hides positioned just metres from the feeding ground. The 200 acres include a farm trail through diverse grassland and woodland, a wetland area, an interpretive centre with watercolour artworks and multimedia exhibits on local raptors, live badger CCTV footage, and a touch-screen database on regional wildlife.\n\nFarm facilities include a coffee shop serving homemade cakes, a gift shop, and a picnic area. The farm is notably home to several rare leucistic (white) Red Kites — among approximately ten known in the world, with three regularly visiting Gigrin. The farm is currently managed by Dominique Powell and Thomas Brickwood, continuing the family legacy.",
+      "fullNote": "Compiled from official website and Visit Wales listing. Needs editorial tone review before publishing. Factual claims are sourced. No pricing or booking claims are included in the description.",
+      "fullSources": [
+        "https://www.gigrin.co.uk/about",
+        "https://www.visitwales.com/attraction/nature-or-wildlife/gigrin-farm-red-kite-centre-540891"
+      ]
+    },
+    "activities": [
+      {
+        "name": "Red Kite Daily Feeding",
+        "detail": "300–600 wild red kites gather daily; feeding time 2pm (GMT) / 3pm (BST)",
+        "source": "https://www.gigrin.co.uk"
+      },
+      {
+        "name": "Wildlife Watching from Hides",
+        "detail": "5 large hides (3 wheelchair accessible); also buzzards and ravens visible",
+        "source": "https://www.gigrin.co.uk"
+      },
+      {
+        "name": "Photographic Hide Sessions",
+        "detail": "4 specialist photographic hides: Gateway £32, Tower £42, Low Level £40, Big Tower £47 per person",
+        "source": "https://www.gigrin.co.uk",
+        "pricingNote": "Verify current rates before publishing — confirm via gigrin.co.uk or trybooking.com/uk/events/landing/95119"
+      },
+      {
+        "name": "Farm Trail",
+        "detail": "200 acres of grassland and woodland; new wetland area",
+        "source": "https://www.visitwales.com/attraction/nature-or-wildlife/gigrin-farm-red-kite-centre-540891"
+      },
+      {
+        "name": "Interpretive Centre",
+        "detail": "Watercolour artworks, multimedia displays on local raptors, live badger CCTV, touch-screen wildlife database",
+        "source": "https://www.visitwales.com/attraction/nature-or-wildlife/gigrin-farm-red-kite-centre-540891"
+      }
+    ],
+    "openingTimes": {
+      "season2026": {
+        "januaryToJuly": "Saturday–Wednesday 12:30pm–5pm (closed Thursday–Friday except school holidays)",
+        "closureNote": "Closed 25 June – 3 July 2026 inclusive",
+        "august": "Daily 12:30pm–5pm",
+        "septemberToNovember": "Saturday–Wednesday 12:30pm–5pm (closed Thursday–Friday except half terms)",
+        "december": "Weekends only until 20 December; daily 27–31 December 12:30pm–5pm"
+      },
+      "feedingTime": "2pm (GMT / winter — until last Sunday in October); 3pm (BST / summer — from last Sunday in March)",
+      "openingTimesSource": "https://www.gigrin.co.uk (accessed June 2026)",
+      "openingTimesNote": "2026 schedule verified June 2026. Hours may change annually — always direct visitors to gigrin.co.uk for the current season schedule."
+    },
+    "pricing": {
+      "adult": 12.00,
+      "concession": 10.00,
+      "child": 7.50,
+      "childAgeRange": "4–15",
+      "under4": "Free",
+      "family": 37.00,
+      "familyNote": "2 adults + 2 children",
+      "dogs": "1 dog free per adult/concession; additional dogs £5 each",
+      "photographicHides": {
+        "gateway": 32.00,
+        "tower": 42.00,
+        "lowLevel": 40.00,
+        "bigTower": 47.00,
+        "unit": "per person"
+      },
+      "currency": "GBP",
+      "pricingSource": "https://www.gigrin.co.uk (accessed June 2026)",
+      "pricingNote": "Prices confirmed from website June 2026. Re-verify each season before publishing."
+    },
+    "booking": {
+      "required": true,
+      "platform": "TryBooking",
+      "url": "https://www.trybooking.com/uk/events/landing/95119",
+      "giftCards": "https://www.trybooking.com/uk/events/giftcertificate/2571",
+      "bookingNote": "Booking recommended — numbers limited daily to prevent overcrowding.",
+      "source": "https://www.gigrin.co.uk"
+    },
+    "features": [
+      "5 wildlife hides (3 wheelchair accessible)",
+      "4 specialist photographic hides",
+      "200-acre farm trail",
+      "Wetland area",
+      "Interpretive centre with multimedia exhibits",
+      "Live badger CCTV",
+      "Coffee shop (homemade cakes)",
+      "Gift shop",
+      "Picnic area",
+      "Dog friendly",
+      "Family friendly",
+      "Coach groups welcome",
+      "School trips",
+      "Rare leucistic (white) red kites",
+      "RSPB official feeding centre"
+    ],
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "wheelchairNote": "3 of the 5 hides have wheelchair access. Mobility Accessibility Facilities confirmed on Visit Wales listing.",
+      "source": "https://www.visitwales.com/attraction/nature-or-wildlife/gigrin-farm-red-kite-centre-540891"
+    },
+    "socialMedia": {
+      "instagram": {
+        "url": "https://www.instagram.com/gigrinfarm",
+        "source": "data/research/operators/gigrin-farm.json (prior research, Feb 2026)"
+      },
+      "facebook": {
+        "url": "https://www.facebook.com/GigrinFarmOffical",
+        "note": "Note: URL contains typo 'Offical' — this is the operator's own URL as listed on their website.",
+        "source": "data/research/operators/gigrin-farm.json (prior research, Feb 2026)"
+      }
+    },
+    "history": {
+      "founded": "1992/93",
+      "founder": "Eithel Powell",
+      "founderPassedAway": 2005,
+      "currentManagement": "Dominique Powell and Thomas Brickwood (family-owned)",
+      "rspbPartnership": "Official RSPB Red Kite Feeding Centre since 1992/93 — established at RSPB's request when Red Kites were near extinction in the UK.",
+      "conservationNote": "Red kites were fed daily from 1992/93 and are no longer endangered; Gigrin Farm's contribution is credited as one of UK conservation's landmark success stories.",
+      "source": "https://www.gigrin.co.uk/about"
+    },
+    "affiliations": [
+      {
+        "name": "RSPB (Royal Society for the Protection of Birds)",
+        "type": "Official partnership / feeding station designation",
+        "source": "https://www.gigrin.co.uk/about"
+      }
+    ],
+    "thirdPartyListings": [
+      {
+        "name": "Visit Wales",
+        "url": "https://www.visitwales.com/attraction/nature-or-wildlife/gigrin-farm-red-kite-centre-540891",
+        "status": "Live (confirmed June 2026)",
+        "childrenWelcome": true,
+        "mobilityAccessibility": true
+      },
+      {
+        "name": "Visit Wales Travel Trade",
+        "url": "https://traveltrade.visitwales.com/attraction/nature-or-wildlife/gigrin-red-kite-feeding-centre-581171",
+        "status": "Live (confirmed June 2026 via search results)"
+      }
+    ],
+    "ratings": {
+      "google": {
+        "rating": 4.7,
+        "reviewCount": 2100,
+        "note": "Approximate; from prior Feb 2026 research. Verify directly on Google Maps ('Gigrin Farm Rhayader') before publishing.",
+        "verifyManually": true,
+        "source": "data/research/operators/gigrin-farm.json (prior research)"
+      },
+      "tripadvisor": {
+        "note": "TripAdvisor blocked researcher access during Feb 2026 research. Not re-attempted June 2026.",
+        "verifyManually": true
+      }
+    }
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "Gigrin Farm uses text-based branding only. No distinct logo image is publicly available on the website (gigrin.co.uk) or on social media as of June 2026. The website copyright is '© 2025, All Rights Reserved Gigrin Farm'. No freely licensed logo found on Wikimedia Commons, Openverse, or Unsplash.",
+      "actionRequired": "Contact the operator (office@gigrin.co.uk / 01597 810243) to ask if a logo or wordmark file is available for directory use. If not, the listing should display without a logo — many nature attraction operators use text-only branding."
+    },
+    "cover": {
+      "status": "AVAILABLE — FREELY LICENSED",
+      "recommendedOption": {
+        "filename": "Flock_of_Red_Kites_at_Gigrin_Farm_-_geograph.org.uk_-_4979150.jpg",
+        "directUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flock_of_Red_Kites_at_Gigrin_Farm_-_geograph.org.uk_-_4979150.jpg",
+        "wikimediaPage": "https://commons.wikimedia.org/wiki/File:Flock_of_Red_Kites_at_Gigrin_Farm_-_geograph.org.uk_-_4979150.jpg",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "author": "Anthony Parkes",
+        "dateTaken": "2016-05-28",
+        "dimensions": "2508 × 2086 px",
+        "fileSize": "754 KB",
+        "altText": "A flock of red kites gathered in the sky above the feeding ground at Gigrin Farm, Rhayader, Mid Wales",
+        "attributionRequired": "Photo: Anthony Parkes / CC BY-SA 2.0 / Wikimedia Commons",
+        "sharealikeCaveat": "CC-BY-SA 2.0 requires that derivative works carry the same licence. Legal/editorial review is recommended before using a ShareAlike-licensed image on a commercial directory page — confirm whether embedding a CC-BY-SA image on a for-profit page satisfies the licence, or whether the page content around the image must also be ShareAlike-compatible."
+      },
+      "alternativeOptions": [
+        {
+          "filename": "Red_Kite_and_Buzzard,_Gigrin_Farm_-_geograph.org.uk_-_2392406.jpg",
+          "directUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Red_Kite_and_Buzzard%2C_Gigrin_Farm_-_geograph.org.uk_-_2392406.jpg",
+          "wikimediaPage": "https://commons.wikimedia.org/wiki/File:Red_Kite_and_Buzzard,_Gigrin_Farm_-_geograph.org.uk_-_2392406.jpg",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "author": "Christine Matthews",
+          "dateTaken": "2011-04-14",
+          "dimensions": "1024 × 683 px",
+          "altText": "Red kite and buzzard in flight at Gigrin Farm, Rhayader, Powys",
+          "attributionRequired": "Photo: Christine Matthews / CC BY-SA 2.0 / Wikimedia Commons"
+        },
+        {
+          "filename": "Red_Kite,_Gigrin_Farm_Red_Kite_Feeding_Centre_-_geograph.org.uk_-_2366588.jpg",
+          "wikimediaPage": "https://commons.wikimedia.org/wiki/File:Red_Kite,_Gigrin_Farm_Red_Kite_Feeding_Centre_-_geograph.org.uk_-_2366588.jpg",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "author": "Christine Matthews",
+          "dateTaken": "2011-04-14",
+          "altText": "Red kite in flight at Gigrin Farm Red Kite Feeding Centre, Nantmel, Powys",
+          "attributionRequired": "Photo: Christine Matthews / CC BY-SA 2.0 / Wikimedia Commons"
+        },
+        {
+          "filename": "Hides_at_the_Gigrin_Farm_Red_Kite_Feeding_Centre_-_geograph.org.uk_-_7498318.jpg",
+          "wikimediaPage": "https://commons.wikimedia.org/wiki/File:Hides_at_the_Gigrin_Farm_Red_Kite_Feeding_Centre_-_geograph.org.uk_-_7498318.jpg",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "author": "Mat Fascione",
+          "dateTaken": "2023-05-27",
+          "altText": "Wildlife observation hides at Gigrin Farm Red Kite Feeding Centre, Nantmel, Powys",
+          "attributionRequired": "Photo: Mat Fascione / CC BY-SA 2.0 / Wikimedia Commons",
+          "note": "Most recent image (2023). Shows the hides/venue rather than the birds — useful for a 'facilities' section rather than a hero cover."
+        }
+      ],
+      "operatorPhotographyNote": "Gigrin Farm's own website (gigrin.co.uk) hosts photography via Squarespace CDN at images.squarespace-cdn.com. These are copyrighted '© 2025, All Rights Reserved Gigrin Farm' and must NOT be reproduced without written permission from the operator. Contact office@gigrin.co.uk to request a media pack or permission to use operator photography alongside the freely licensed Wikimedia options above."
+    },
+    "gallery": {
+      "status": "PARTIALLY AVAILABLE",
+      "note": "All four Wikimedia Commons images listed above (under cover.alternativeOptions) are also usable as gallery images under CC-BY-SA 2.0 with attribution. Additional Geograph images may be available at commons.wikimedia.org — search for 'Gigrin Farm' to find more options. Operator photography (Squarespace CDN) remains blocked without permission."
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Coordinates: lat 52.2998, lng -3.5086",
+      "confidence": "MODERATE",
+      "issue": "Prior research coordinates (52.2998, -3.5086) show a slight discrepancy with GPS data in Wikimedia Commons image metadata (52°17'50.4\"N, 3°29'42\"W ≈ 52.2973, -3.4950). The difference (~300m) may reflect different points on the farm (car park vs feeding area) or a minor error.",
+      "action": "Confirm via Google Maps by searching 'Gigrin Farm South Street Rhayader LD6 5BL' and pinning the main visitor entrance."
+    },
+    {
+      "claim": "Google rating: 4.7 / ~2100 reviews",
+      "confidence": "LOW — data is from February 2026",
+      "issue": "Rating and review count are 4 months old and have not been re-verified in this session.",
+      "action": "Search Google Maps for 'Gigrin Farm Rhayader' and confirm current rating and review count before publishing."
+    },
+    {
+      "claim": "CC-BY-SA 2.0 images on a commercial directory page",
+      "confidence": "NEEDS LEGAL REVIEW",
+      "issue": "The ShareAlike clause of CC-BY-SA 2.0 requires derivative works to carry the same licence. Using a CC-BY-SA image on a commercial for-profit page requires legal assessment: the image itself is licensed, but whether embedding it in a commercial page triggers ShareAlike obligations on page content is a nuanced legal question.",
+      "action": "Obtain a legal or editorial opinion before publishing any CC-BY-SA 2.0 image. Alternatively, contact the operator for a directly licensed photo under a less restrictive licence (e.g. CC-BY or written permission)."
+    },
+    {
+      "claim": "Facebook page URL: /GigrinFarmOffical (sic)",
+      "confidence": "MODERATE",
+      "issue": "URL contains apparent typo 'Offical' — this is taken directly from prior research. The operator may have since corrected the URL or created a new page.",
+      "action": "Verify the current Facebook page URL by visiting facebook.com/GigrinFarmOffical and confirming it is active."
+    },
+    {
+      "claim": "Leucistic red kites: ~3 regularly visit, ~10 in the world",
+      "confidence": "UNVERIFIED",
+      "issue": "Claim from prior research and operator marketing copy. The global population figure of ~10 leucistic red kites is not independently sourced.",
+      "action": "Flag as marketing claim. If publishing, present as the operator's own claim: 'According to the farm, approximately three of the world's estimated ten leucistic red kites visit Gigrin regularly.'"
+    },
+    {
+      "claim": "Photographic hide pricing (Gateway £32, Tower £42, Low Level £40, Big Tower £47)",
+      "confidence": "MODERATE — season 2026",
+      "issue": "Prices extracted from the operator's website June 2026 but may change between seasons.",
+      "action": "Re-verify via gigrin.co.uk or TryBooking (https://www.trybooking.com/uk/events/landing/95119) before publishing and when the site is refreshed each season."
+    }
+  ],
+
+  "knownBlockerResolutionSummary": {
+    "phone": {
+      "status": "RESOLVED",
+      "value": "01597 810243",
+      "source": "https://www.gigrin.co.uk (verified June 2026)"
+    },
+    "email": {
+      "status": "RESOLVED",
+      "value": "office@gigrin.co.uk",
+      "source": "https://www.gigrin.co.uk (verified June 2026)"
+    },
+    "coverImage": {
+      "status": "RESOLVED — pending legal/editorial review of CC-BY-SA 2.0 ShareAlike clause",
+      "recommendedImage": "Flock_of_Red_Kites_at_Gigrin_Farm_-_geograph.org.uk_-_4979150.jpg by Anthony Parkes, CC-BY-SA 2.0",
+      "directUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flock_of_Red_Kites_at_Gigrin_Farm_-_geograph.org.uk_-_4979150.jpg"
+    },
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "No distinct logo exists — operator uses text-based branding only. Contact operator to confirm or request artwork."
+    }
+  },
+
+  "sources": [
+    {
+      "url": "https://www.gigrin.co.uk",
+      "description": "Official operator website — phone, email, address, opening times, pricing, booking, copyright",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.gigrin.co.uk/about",
+      "description": "Official About page — history, founder, RSPB partnership, current management, copyright",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.visitwales.com/attraction/nature-or-wildlife/gigrin-farm-red-kite-centre-540891",
+      "description": "Visit Wales official listing — address, phone, email, facilities, accessibility, description",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://traveltrade.visitwales.com/attraction/nature-or-wildlife/gigrin-red-kite-feeding-centre-581171",
+      "description": "Visit Wales Travel Trade listing — confirms second official tourism listing",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Flock_of_Red_Kites_at_Gigrin_Farm_-_geograph.org.uk_-_4979150.jpg",
+      "description": "Wikimedia Commons — recommended cover image, CC-BY-SA 2.0, Anthony Parkes, May 2016",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Red_Kite_and_Buzzard,_Gigrin_Farm_-_geograph.org.uk_-_2392406.jpg",
+      "description": "Wikimedia Commons — alternative cover/gallery image, CC-BY-SA 2.0, Christine Matthews, April 2011",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Red_Kite,_Gigrin_Farm_Red_Kite_Feeding_Centre_-_geograph.org.uk_-_2366588.jpg",
+      "description": "Wikimedia Commons — gallery image, CC-BY-SA 2.0, Christine Matthews, April 2011",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Hides_at_the_Gigrin_Farm_Red_Kite_Feeding_Centre_-_geograph.org.uk_-_7498318.jpg",
+      "description": "Wikimedia Commons — hides/venue image, CC-BY-SA 2.0, Mat Fascione, May 2023",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.trybooking.com/uk/events/landing/95119",
+      "description": "TryBooking — Gigrin Farm 2026 booking page (referenced from operator website)",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "data/research/operators/gigrin-farm.json",
+      "description": "Prior research file — Feb 2026 research used as baseline for this update",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirms operator-gigrin-farm, unclassified_operator tier, all key fields missing at task start",
+      "type": "internal"
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "All four originally missing fields now have sourced values: phone (01597 810243) and email (office@gigrin.co.uk) are verified from the official website June 2026. Cover image is unblocked with four freely licensed CC-BY-SA 2.0 options from Wikimedia Commons. The logo remains blocked (text-based branding only). QA is required before publishing to: (1) confirm the preferred cover image is cleared for commercial use under CC-BY-SA 2.0 (ShareAlike clause); (2) decide whether the listing should proceed without a logo; (3) verify coordinates and Google rating.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "CC-BY-SA 2.0 ShareAlike clause — legal review required before cover image is published",
+      "detail": "Four freely licensed images are available (Wikimedia Commons / Geograph, CC-BY-SA 2.0). Before any can be used on a commercial directory page, an editorial or legal review is required to confirm that embedding a CC-BY-SA 2.0 image on a for-profit page is compatible with the ShareAlike clause. The recommended image is 'Flock of Red Kites at Gigrin Farm' by Anthony Parkes — 2508×2086px, direct URL: https://upload.wikimedia.org/wikipedia/commons/a/a0/Flock_of_Red_Kites_at_Gigrin_Farm_-_geograph.org.uk_-_4979150.jpg. Alternatively, contact office@gigrin.co.uk to request a directly licensed photograph from the operator.",
+      "severity": "MEDIUM — images are available; only legal confirmation is needed"
+    },
+    {
+      "rank": 2,
+      "blocker": "Logo blocked — operator uses text-based branding only",
+      "detail": "No logo image was found on gigrin.co.uk, Instagram, Facebook, or Wikimedia Commons as of June 2026. The operator may be content to have a listing without a logo, or may provide artwork on request. Contact: office@gigrin.co.uk or 01597 810243.",
+      "severity": "LOW — common for small nature attraction operators; listing can go live without a logo"
+    },
+    {
+      "rank": 3,
+      "blocker": "Coordinates discrepancy — lat/lng needs manual verification",
+      "detail": "Prior research gives lat 52.2998, lng -3.5086. Wikimedia Commons GPS tags from a 2016 photograph taken at the farm give 52.2973, -3.4950 (~300m difference). Confirm the correct pin for the main visitor entrance via Google Maps (search 'South Street, Rhayader LD6 5BL') before populating the map widget.",
+      "severity": "LOW — minor data quality issue, easily verified"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "generatedAt": "2026-06-04T01:31:37.660Z",
+  "limit": 9,
+  "concurrency": 3,
+  "taskType": "research",
+  "status": "research_needed",
+  "results": [
+    {
+      "taskId": "content-ops-084-operator-celtic-quest-coasteering",
+      "outputPath": "data/research/content-ops/operator-celtic-quest-coasteering.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:10:12.046Z",
+      "finishedAt": "2026-06-04T01:15:55.221Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-084-operator-celtic-quest-coasteering.log"
+    },
+    {
+      "taskId": "content-ops-082-operator-cardigan-bay-active",
+      "outputPath": "data/research/content-ops/operator-cardigan-bay-active.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:10:12.016Z",
+      "finishedAt": "2026-06-04T01:17:05.805Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-082-operator-cardigan-bay-active.log"
+    },
+    {
+      "taskId": "content-ops-083-operator-celtic-canoes",
+      "outputPath": "data/research/content-ops/operator-celtic-canoes.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:10:12.034Z",
+      "finishedAt": "2026-06-04T01:18:01.927Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-083-operator-celtic-canoes.log"
+    },
+    {
+      "taskId": "content-ops-086-operator-ciww",
+      "outputPath": "data/research/content-ops/operator-ciww.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:17:05.808Z",
+      "finishedAt": "2026-06-04T01:19:27.712Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-086-operator-ciww.log"
+    },
+    {
+      "taskId": "content-ops-085-operator-celtic-trail-shuttle",
+      "outputPath": "data/research/content-ops/operator-celtic-trail-shuttle.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:15:55.224Z",
+      "finishedAt": "2026-06-04T01:20:18.818Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-085-operator-celtic-trail-shuttle.log"
+    },
+    {
+      "taskId": "content-ops-088-operator-cwmcarn-forest",
+      "outputPath": "data/research/content-ops/operator-cwmcarn-forest.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:19:27.719Z",
+      "finishedAt": "2026-06-04T01:23:50.540Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-088-operator-cwmcarn-forest.log"
+    },
+    {
+      "taskId": "content-ops-087-operator-climb-snowdon",
+      "outputPath": "data/research/content-ops/operator-climb-snowdon.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:18:01.929Z",
+      "finishedAt": "2026-06-04T01:25:28.523Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-087-operator-climb-snowdon.log"
+    },
+    {
+      "taskId": "content-ops-089-operator-dan-yr-ogof-showcaves",
+      "outputPath": "data/research/content-ops/operator-dan-yr-ogof-showcaves.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:20:18.821Z",
+      "finishedAt": "2026-06-04T01:26:36.754Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-089-operator-dan-yr-ogof-showcaves.log"
+    },
+    {
+      "taskId": "content-ops-090-operator-dyfi-bike-park",
+      "outputPath": "data/research/content-ops/operator-dyfi-bike-park.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:23:50.545Z",
+      "finishedAt": "2026-06-04T01:31:37.657Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-090-operator-dyfi-bike-park.log"
+    }
+  ]
+}

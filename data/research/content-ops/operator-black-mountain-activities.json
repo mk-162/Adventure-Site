@@ -1,0 +1,447 @@
+{
+  "_meta": {
+    "task": "content-ops-076-operator-black-mountain-activities",
+    "contentItem": "operator-black-mountain-activities",
+    "contentType": "operator",
+    "slug": "black-mountain-activities",
+    "route": "/directory/black-mountain-activities",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "blocked",
+    "researchOutcome": "complete_with_critical_identity_flag",
+    "identityConfidence": "HIGH — operator identified as Black Mountain Activities Ltd (Companies House 04659715), trading as Black Mountain Adventure at blackmountain.co.uk. CRITICAL: this is the same legal entity as directory slug operator-black-mountain-adventure — see claimsNeedingHumanReview #1."
+  },
+
+  "proposedOperatorData": {
+    "name": "Black Mountain Activities",
+    "legalName": "BLACK MOUNTAIN ACTIVITIES LIMITED",
+    "legalNameSource": "https://find-and-update.company-information.service.gov.uk/company/04659715",
+    "companiesHouseNumber": "04659715",
+    "companiesHouseSource": "https://find-and-update.company-information.service.gov.uk/company/04659715",
+    "primaryTradingName": "Black Mountain Adventure",
+    "primaryTradingNameNote": "The operator's primary trading name is 'Black Mountain Adventure' and their website is blackmountain.co.uk. 'Black Mountain Activities' is the legal registered company name and also appears in some third-party listings (VisitWales listing ID 529181, TripAdvisor). Both names refer to the same business at the same address with the same AALS licence.",
+    "slug": "black-mountain-activities",
+    "website": "https://www.blackmountain.co.uk",
+    "websiteSource": "https://www.visitwales.com/activity/activity/black-mountain-activities-529181",
+    "websiteNote": "Active domain, confirmed active as of June 2026. Primary operator website.",
+    "vatNumber": "647 1291 34",
+    "vatSource": "https://www.blackmountain.co.uk/contact-us/",
+    "contact": {
+      "phone": "01497 847897",
+      "phoneSource": "https://www.blackmountain.co.uk/contact-us/",
+      "phoneSourceAlt": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0704",
+      "email": "info@blackmountain.co.uk",
+      "emailSource": "https://www.blackmountain.co.uk/contact-us/",
+      "address": {
+        "line1": "The Activity Centre",
+        "locality": "Three Cocks (Aberllynfi)",
+        "town": "Brecon",
+        "county": "Powys",
+        "postcode": "LD3 0SD",
+        "country": "Wales"
+      },
+      "addressSource": "https://find-and-update.company-information.service.gov.uk/company/04659715",
+      "addressSourceAlt": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0704",
+      "openingHours": "Daily 9am–5pm (contact/office); activity sessions 8:30am–5:30pm",
+      "openingHoursSource": "https://www.blackmountain.co.uk/"
+    },
+    "location": {
+      "lat": 52.02566,
+      "lng": -3.21503,
+      "latLngNote": "Coordinates from VisitWales official tourism listing (529181). Cross-referenced with Google Maps. These correspond to Three Cocks, Powys — the operator's registered and trading address.",
+      "latLngSource": "https://www.visitwales.com/activity/activity/black-mountain-activities-529181",
+      "region": "brecon_beacons",
+      "locationDescription": "Three Cocks (Aberllynfi), Powys — approximately 6 miles south-west of Hay-on-Wye on the A438, within the Bannau Brycheiniog (Brecon Beacons) National Park. Located between the Black Mountains to the east and the central Beacons to the west.",
+      "locationDescriptionNote": "The internal archive script described this operator as operating in the 'western Brecon Beacons / Black Mountain area' — this is INCORRECT. The operator is based in the eastern/central Beacons near the Black Mountains (plural). See claimsNeedingHumanReview #4.",
+      "nationalPark": "Bannau Brycheiniog (Brecon Beacons) National Park",
+      "nationalParkSource": "https://bannaubrycheiniog.org/businesses/black-mountain-adventure/"
+    },
+    "description": {
+      "short": "Black Mountain Activities (trading as Black Mountain Adventure) is an award-winning outdoor activity centre based at Three Cocks near Brecon in the Bannau Brycheiniog National Park, offering guided adventures including gorge walking, caving, rock climbing, kayaking, canoeing, abseiling, and white water rafting for individuals, families, and groups of all abilities.",
+      "shortNote": "Drafted from verified website and VisitWales content. Uses the legal company name as the page title per the directory slug, but notes the primary trading name. Needs editorial review.",
+      "full": "Black Mountain Activities — trading as Black Mountain Adventure — is an outdoor adventure centre established in 1992 and located at Three Cocks (Aberllynfi), near Brecon, Powys, within the Bannau Brycheiniog (Brecon Beacons) National Park.\n\nThe centre holds an active AALA (Activity Licensing Authority) licence (L161658, valid to June 2027) and is a British Canoeing Approved Centre and Archery GB Certified instructor. The company has won multiple awards including Best Adventure Centre in the Brecon Beacons at the Biz Growth Wales SME Welsh Enterprise Awards 2025.\n\nActivities include gorge adventure, caving, rock climbing, abseiling, kayaking, canoeing, white water rafting, stand-up paddleboarding (standard and mega/giant SUP), improvised raft building, archery, clay pigeon shooting, high ropes, mountain biking, land carting, orienteering, boat hire, and guided walking and biking. The centre caters to individuals, families, stag and hen parties, corporate groups, school groups, and youth organisations.\n\nThe centre operates year-round and is within 2 hours of most of South Wales and the West Midlands.",
+      "fullNote": "Drafted from verified website and VisitWales/NationalPark content. Pricing intentionally omitted — must be verified against current blackmountain.co.uk before publishing. Needs editorial review."
+    },
+    "activities": [
+      {
+        "name": "Gorge Adventure",
+        "detail": "Half-day (2 hrs) and full-day (4–5 hrs) options. Min age 8. Min group 4. Max weight 18 stone / 115kg. From £47/person.",
+        "pricingNote": "Price as of June 2026 from operator website — verify before publishing as prices change.",
+        "source": "https://www.blackmountain.co.uk/tours/gorge-adventure/",
+        "aalsLicensed": true
+      },
+      {
+        "name": "Caving",
+        "detail": "Half-day (2–3 hrs) and full-day (4–5 hrs) options. Min age 8. Min group 4. Available year-round. From £47/person.",
+        "pricingNote": "Price as of June 2026 from operator website — verify before publishing as prices change.",
+        "source": "https://www.blackmountain.co.uk/tours/caving/",
+        "aalsLicensed": true
+      },
+      {
+        "name": "Rock Climbing",
+        "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0704",
+        "aalsLicensed": true
+      },
+      {
+        "name": "Abseiling",
+        "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0704",
+        "aalsLicensed": true
+      },
+      {
+        "name": "Kayaking",
+        "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0704",
+        "aalsLicensed": true
+      },
+      {
+        "name": "Canoeing",
+        "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0704",
+        "aalsLicensed": true
+      },
+      {
+        "name": "White Water Rafting",
+        "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0704",
+        "aalsLicensed": true
+      },
+      {
+        "name": "Stand-Up Paddleboarding (SUP)",
+        "detail": "Standard and Mega/Giant SUP",
+        "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0704",
+        "aalsLicensed": true
+      },
+      {
+        "name": "Improvised Rafting",
+        "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0704",
+        "aalsLicensed": true
+      },
+      {
+        "name": "Hill and Mountain Walking",
+        "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0704",
+        "aalsLicensed": true
+      },
+      {
+        "name": "Archery",
+        "source": "https://www.blackmountain.co.uk/",
+        "aalsLicensed": false
+      },
+      {
+        "name": "Clay Pigeon Shooting",
+        "source": "https://www.blackmountain.co.uk/",
+        "aalsLicensed": false
+      },
+      {
+        "name": "High Ropes / Zip Wire",
+        "source": "https://www.blackmountain.co.uk/",
+        "aalsLicensed": false
+      },
+      {
+        "name": "Mountain Biking",
+        "source": "https://www.blackmountain.co.uk/",
+        "aalsLicensed": false
+      },
+      {
+        "name": "Land Carting",
+        "source": "https://www.blackmountain.co.uk/",
+        "aalsLicensed": false
+      },
+      {
+        "name": "Raft Building",
+        "source": "https://www.blackmountain.co.uk/",
+        "aalsLicensed": false
+      },
+      {
+        "name": "Orienteering",
+        "source": "https://www.blackmountain.co.uk/",
+        "aalsLicensed": false
+      },
+      {
+        "name": "Boat Hire",
+        "source": "https://www.blackmountain.co.uk/",
+        "aalsLicensed": false
+      },
+      {
+        "name": "Guided Biking and Walking",
+        "source": "https://www.blackmountain.co.uk/",
+        "aalsLicensed": false
+      }
+    ],
+    "accreditations": [
+      {
+        "name": "AALA (Activity Licensing Authority) Licence",
+        "detail": "Licence L161658, Provider Reference R0704. Licensed activities: Abseiling, Canoeing, Caving, Gorge Scrambling, Hill and Mountain Walking, Improvised Rafting, Kayaking, Mega/Giant SUP, Rock Climbing, SUP, White Water Rafting. Expires 26 June 2027.",
+        "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0704",
+        "verified": true
+      },
+      {
+        "name": "British Canoeing Approved Centre",
+        "source": "https://www.blackmountain.co.uk/",
+        "verified": true
+      },
+      {
+        "name": "Archery GB Certified",
+        "source": "https://www.blackmountain.co.uk/",
+        "verified": true
+      },
+      {
+        "name": "Activities Industry Mutual (liability insurance)",
+        "source": "https://www.blackmountain.co.uk/",
+        "verified": true
+      },
+      {
+        "name": "SWOAPG (South Wales Outdoor Activity Providers Group) — environmental accreditation",
+        "source": "https://www.blackmountain.co.uk/",
+        "verified": true
+      },
+      {
+        "name": "Biz Growth Wales SME Welsh Enterprise Awards 2025 — Best Adventure Centre, Brecon Beacons",
+        "source": "https://www.blackmountain.co.uk/",
+        "verified": true
+      },
+      {
+        "name": "Family Friendly Business Award",
+        "source": "https://www.blackmountain.co.uk/",
+        "verified": true
+      },
+      {
+        "name": "Customer Service Excellence Award",
+        "source": "https://www.blackmountain.co.uk/",
+        "verified": true
+      },
+      {
+        "name": "Adventuremark",
+        "note": "NOT confirmed — no evidence found in web searches or the operator's own accreditation list. Do not claim this accreditation without verification.",
+        "verified": false
+      }
+    ],
+    "ratings": {
+      "tripadvisor": {
+        "rating": 4.8,
+        "reviewCount": 291,
+        "url": "https://www.tripadvisor.com/Attraction_Review-g186454-d243012-Reviews-Black_Mountain_Adventure-Brecon_Brecon_Beacons_National_Park_Wales.html",
+        "note": "Listed under TripAdvisor ID d243012 as both 'Black Mountain Activities' and 'Black Mountain Adventure'. Rating and review count as of June 2026 — verify before publishing.",
+        "source": "https://www.tripadvisor.com/Attraction_Review-g186454-d243012-Reviews-Black_Mountain_Adventure-Brecon_Brecon_Beacons_National_Park_Wales.html"
+      },
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "Google rating not extracted during research. Verify manually via Google Maps search for 'Black Mountain Adventure Three Cocks Brecon LD3 0SD'.",
+        "verifyManually": true
+      }
+    },
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/BlackMountainAdventures/",
+        "name": "Black Mountain Adventures (primary trading name page)",
+        "source": "https://www.blackmountain.co.uk/contact-us/"
+      },
+      "facebookLegalName": {
+        "url": "https://www.facebook.com/BlackMountainActivities/",
+        "name": "Black Mountain Activities (legal company name page)",
+        "note": "A second Facebook page exists under the legal company name. Editors should verify which is the active/primary page before linking.",
+        "source": "https://www.facebook.com/BlackMountainActivities/?locale=en_GB"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/blackmountainadventure/",
+        "source": "https://www.blackmountain.co.uk/contact-us/"
+      },
+      "youtube": {
+        "url": "https://www.youtube.com/@blackmountain1992",
+        "source": "https://www.blackmountain.co.uk/contact-us/"
+      },
+      "linkedin": {
+        "note": "LinkedIn company page exists (ID 3016638). URL not extracted.",
+        "source": "https://www.blackmountain.co.uk/contact-us/"
+      }
+    },
+    "thirdPartyListings": [
+      {
+        "name": "VisitWales",
+        "url": "https://www.visitwales.com/activity/activity/black-mountain-activities-529181",
+        "note": "Official Welsh Government tourism listing. Listed under name 'Black Mountain Activities' — consistent with the directory slug."
+      },
+      {
+        "name": "Visit Mid Wales",
+        "url": "https://www.visitmidwales.co.uk/things-to-do/black-mountain-adventure-p1723791"
+      },
+      {
+        "name": "Bannau Brycheiniog National Park",
+        "url": "https://bannaubrycheiniog.org/businesses/black-mountain-adventure/"
+      },
+      {
+        "name": "Yumping (aggregator)",
+        "url": "https://www.yumping.com/en/multiadventure/black-mountain-activities--e19622768",
+        "note": "Third-party aggregator. Prices listed here may differ from operator's own website — do not use for price claims."
+      }
+    ],
+    "pricing": {
+      "publiclyAvailable": true,
+      "pricingNote": "Current prices are published on blackmountain.co.uk. Gorge Adventure and Caving both from £47/person (as of June 2026). DO NOT publish specific prices without re-verifying against the live website — prices are subject to change without notice.",
+      "internalDataDiscrepancy": "The internal content files (content/answers/first-time-gorge-walking.md, etc.) cite gorge walking at £50-70 and caving at £45-60 with min age 10. These figures originate from the AI-enrichment archive script (scripts/archive/enrich-operators.ts) and do not match the operator's live website (from £47, min age 8). The internal content must be corrected. See claimsNeedingHumanReview #5."
+    }
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "The operator's logo is copyright Black Mountain Activities Ltd. No freely licensed version found on Openverse, Unsplash, or Wikimedia Commons. Must be obtained directly from the operator.",
+      "actionRequired": "Contact info@blackmountain.co.uk to request a media/press pack or written permission to reproduce the logo."
+    },
+    "cover": {
+      "status": "BLOCKED",
+      "reason": "All photography on blackmountain.co.uk and third-party listings (TripAdvisor, Yumping) is operator-supplied and copyright the operator or their photographers. No freely licensed activity photographs for this specific operator were found on Openverse, Unsplash, or Wikimedia Commons.",
+      "actionRequired": "Contact info@blackmountain.co.uk to request a media pack or written permission to reproduce photography. Alternatively, search Openverse or Wikimedia Commons for generic Bannau Brycheiniog gorge walking or caving photography (not depicting this operator) that could represent the activity type. Do not use AI-generated images."
+    },
+    "gallery": {
+      "status": "BLOCKED",
+      "reason": "Same copyright restriction applies to all gallery images. The TripAdvisor listing (d243012) and Yumping listing show 46+ operator-supplied activity photos — all are copyright-restricted.",
+      "actionRequired": "Same as cover image — direct operator contact required."
+    },
+    "openverseSearchRecommendation": "Try Openverse (https://openverse.org/) with terms: 'gorge walking Brecon Beacons', 'caving Wales', 'kayaking River Wye Powys'. Look for CC BY or CC0 licences. Any image used must not depict the specific operator's branded equipment or staff without permission."
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "rank": 1,
+      "claim": "Directory has two separate slugs for the same legal entity",
+      "confidence": "HIGH",
+      "issue": "The directory contains both /directory/black-mountain-activities (this entry) and /directory/black-mountain-adventure (a separate entry). These resolve to the same legal company: BLACK MOUNTAIN ACTIVITIES LIMITED (Companies House 04659715), same address (The Activity Centre, Three Cocks, Brecon LD3 0SD), same phone (01497 847897), same email (info@blackmountain.co.uk), same AALS licence (L161658). Publishing both pages as separate operators would be factually incorrect and misleading to users.",
+      "action": "EDITORIAL DECISION REQUIRED before publishing: (a) Merge both slugs into a single canonical listing — the primary trading name 'Black Mountain Adventure' at /directory/black-mountain-adventure is the stronger SEO candidate given the website domain; (b) OR maintain both slugs as aliases pointing to the same page, clearly noting they are the same operator; (c) OR redirect /directory/black-mountain-activities to /directory/black-mountain-adventure with a 301 redirect. This decision must be made before this task proceeds to qa_needed."
+    },
+    {
+      "rank": 2,
+      "claim": "All images are blocked — no freely licensed photography available",
+      "confidence": "HIGH",
+      "issue": "No logo or cover image can be published without direct permission from the operator. The directory listing will be incomplete until image assets are secured.",
+      "action": "Contact info@blackmountain.co.uk or call 01497 847897 to request a media/press pack or written permission to reproduce images. This is a routine request for an established operator with a professional media presence."
+    },
+    {
+      "rank": 3,
+      "claim": "Internal content files contain AI-generated, unverified price data and descriptions that need correction",
+      "confidence": "HIGH",
+      "issue": "Multiple internal content/answers/*.md files cite price ranges (gorge £50-70, caving £45-60, min age 10+) that originated from scripts/archive/enrich-operators.ts — an archived AI-enrichment script — and do not match the operator's live website (from £47, min age 8 for both activities, as of June 2026). Files affected: content/answers/first-time-gorge-walking.md, content/answers/rainy-day-activities-wales.md, content/answers/fitness-required-caving.md, content/answers/first-time-caving.md.",
+      "action": "A content editor must update these files with verified figures from blackmountain.co.uk. All pricing should be date-stamped and marked as 'verify before publishing' given that prices change."
+    },
+    {
+      "rank": 4,
+      "claim": "Operator's geographic description in internal archive data is incorrect",
+      "confidence": "HIGH",
+      "issue": "The archived enrichment script described this operator as operating in the 'western Brecon Beacons / Black Mountain (Mynydd Du) area'. The operator is actually based at Three Cocks (Aberllynfi), Powys — in the eastern/central Beacons, close to the Black Mountains (plural), NOT the Black Mountain (Mynydd Du) to the west of the national park near Llanddeusant.",
+      "action": "Any geographic copy referencing this operator should use: 'eastern Brecon Beacons / Black Mountains area, near Hay-on-Wye and Brecon'. Do not use 'western Beacons', 'Black Mountain', or 'Mynydd Du' in connection with this operator."
+    },
+    {
+      "rank": 5,
+      "claim": "Facebook dual-page situation",
+      "confidence": "MODERATE",
+      "issue": "Two Facebook pages exist: BlackMountainAdventures/ (primary trading name) and BlackMountainActivities/ (legal name). It is unclear which is the operator's active primary page, or whether both are maintained.",
+      "action": "Verify with the operator which Facebook page should be used for the directory listing. The trading-name page (BlackMountainAdventures/) is linked from the operator's own website and is the safer default."
+    },
+    {
+      "rank": 6,
+      "claim": "Google rating not verified",
+      "confidence": "UNVERIFIED",
+      "issue": "A Google Maps rating and review count was not extracted during research.",
+      "action": "Search Google Maps for 'Black Mountain Adventure Three Cocks Brecon LD3 0SD' and record the current rating and review count. The TripAdvisor rating (4.8 / 291 reviews) is confirmed."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.blackmountain.co.uk",
+      "description": "Official operator website — contact details, VAT number, activities, accreditations, opening hours, social media links",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.blackmountain.co.uk/contact-us/",
+      "description": "Operator contact page — phone, email, address, VAT number, social media URLs",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.blackmountain.co.uk/tours/gorge-adventure/",
+      "description": "Gorge Adventure activity page — pricing, duration, age/weight restrictions",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.blackmountain.co.uk/tours/caving/",
+      "description": "Caving activity page — pricing, duration, age restrictions, year-round availability",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04659715",
+      "description": "Companies House — legal company name (BLACK MOUNTAIN ACTIVITIES LIMITED), company number (04659715), registered address, incorporation date (7 Feb 2003)",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0704",
+      "description": "HSE AALA provider listing — licence L161658 (expires 26 Jun 2027), licensed activity types, address, phone number",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.visitwales.com/activity/activity/black-mountain-activities-529181",
+      "description": "VisitWales official tourism listing — listed under name 'Black Mountain Activities', coordinates 52.02526 / -3.21554, address confirmation",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.visitmidwales.co.uk/things-to-do/black-mountain-adventure-p1723791",
+      "description": "Visit Mid Wales regional tourism listing — confirms trading as 'Black Mountain Adventure', location Three Cocks Brecon LD3 0SD",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://bannaubrycheiniog.org/businesses/black-mountain-adventure/",
+      "description": "Bannau Brycheiniog National Park business listing — confirms National Park location",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.tripadvisor.com/Attraction_Review-g186454-d243012-Reviews-Black_Mountain_Adventure-Brecon_Brecon_Beacons_National_Park_Wales.html",
+      "description": "TripAdvisor listing ID d243012 — 4.8/5 rating, 291 reviews, listed under both trading names",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.facebook.com/BlackMountainActivities/?locale=en_GB",
+      "description": "Facebook page — legal company name 'Black Mountain Activities'",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "content/operators/climbing.csv",
+      "description": "Internal climbing operators CSV — lists Black Mountain Adventure (slug: black-mountain-adventure, not black-mountain-activities), website blackmountain.co.uk, coordinates 52.030/-3.200",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirms operator-black-mountain-activities slug, unclassified_operator tier, all key fields missing",
+      "type": "internal"
+    }
+  ],
+
+  "sourcesRuledOut": [
+    {
+      "domain": "blackmountainactivities.co.uk",
+      "reason": "This domain does not resolve to any active independent website as of June 2026. It is not the operator's correct website. Any internal references to this domain originated from the archived AI-enrichment script (scripts/archive/enrich-operators.ts) and are unverified. The operator's confirmed website is blackmountain.co.uk."
+    }
+  ],
+
+  "recommendedNextStatus": "blocked",
+  "recommendedNextStatusReason": "Research is complete and the operator is fully identified with high confidence (BLACK MOUNTAIN ACTIVITIES LIMITED, trading as Black Mountain Adventure, blackmountain.co.uk, Three Cocks, Brecon LD3 0SD). However, the task is blocked on three issues that require editorial decisions before proceeding to QA: (1) DUPLICATE SLUG — the directory already has /directory/black-mountain-adventure for the same legal entity; a decision on whether to merge, alias, or redirect is required; (2) ALL IMAGES BLOCKED — logo and cover image must be sourced from the operator or a freely licensed alternative; (3) INTERNAL CONTENT CORRECTIONS NEEDED — AI-generated price data and geographic descriptions in content/answers/*.md files must be updated before any content is published.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Duplicate slug — same legal entity already has a directory listing at /directory/black-mountain-adventure",
+      "detail": "BLACK MOUNTAIN ACTIVITIES LIMITED (Companies House 04659715) trades as 'Black Mountain Adventure' and is already represented (or should be) by the directory entry operator-black-mountain-adventure at /directory/black-mountain-adventure. Publishing this page at /directory/black-mountain-activities as a separate listing for the same address, phone, email, and AALS licence would be factually incorrect. An editorial decision is required: merge, alias, or redirect.",
+      "severity": "CRITICAL",
+      "action": "Editorial decision required. Recommended path: set up a 301 redirect from /directory/black-mountain-activities to /directory/black-mountain-adventure and close this task as resolved-by-redirect. The VisitWales listing (529181) uses the legal name 'Black Mountain Activities', so the redirect is SEO-safe and preserves any inbound link equity."
+    },
+    {
+      "rank": 2,
+      "blocker": "All images blocked — no freely licensed logo or cover image",
+      "detail": "Website photography, logo, and all third-party listing images are copyright Black Mountain Activities Ltd. No open-licence alternatives found. The directory listing cannot go live without at least a cover image.",
+      "severity": "HIGH",
+      "action": "Email info@blackmountain.co.uk to request a media pack or written permission to use images on the directory. Reference the VisitWales listing (which already uses their imagery) to demonstrate legitimate use context."
+    },
+    {
+      "rank": 3,
+      "blocker": "AI-generated pricing and geographic data polluting internal content files",
+      "detail": "Four content/answers/*.md files contain AI-generated price figures (gorge £50-70, caving £45-60, min age 10+) and a geographic description placing the operator in the 'western Brecon Beacons' that are factually incorrect. Live website shows from £47/person, min age 8, eastern/central Beacons location. These files are: first-time-gorge-walking.md, rainy-day-activities-wales.md, fitness-required-caving.md, first-time-caving.md.",
+      "severity": "HIGH",
+      "action": "A content editor must correct these files using verified data from blackmountain.co.uk before publication. Price figures must carry a 'verified [date]' note given they change seasonally."
+    }
+  ]
+}

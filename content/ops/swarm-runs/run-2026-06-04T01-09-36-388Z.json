@@ -1,0 +1,81 @@
+{
+  "generatedAt": "2026-06-04T01:09:36.389Z",
+  "limit": 9,
+  "concurrency": 3,
+  "taskType": "research",
+  "status": "research_needed",
+  "results": [
+    {
+      "taskId": "content-ops-075-operator-bike-corris",
+      "outputPath": "data/research/content-ops/operator-bike-corris.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:46:56.351Z",
+      "finishedAt": "2026-06-04T00:52:09.231Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-075-operator-bike-corris.log"
+    },
+    {
+      "taskId": "content-ops-073-operator-beddgelert-bikes",
+      "outputPath": "data/research/content-ops/operator-beddgelert-bikes.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:46:56.324Z",
+      "finishedAt": "2026-06-04T00:54:25.596Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-073-operator-beddgelert-bikes.log"
+    },
+    {
+      "taskId": "content-ops-074-operator-big-blue-experience",
+      "outputPath": "data/research/content-ops/operator-big-blue-experience.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:46:56.339Z",
+      "finishedAt": "2026-06-04T00:54:36.108Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-074-operator-big-blue-experience.log"
+    },
+    {
+      "taskId": "content-ops-077-operator-black-mountains-cycle-centre",
+      "outputPath": "data/research/content-ops/operator-black-mountains-cycle-centre.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:54:25.599Z",
+      "finishedAt": "2026-06-04T01:00:29.106Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-077-operator-black-mountains-cycle-centre.log"
+    },
+    {
+      "taskId": "content-ops-076-operator-black-mountain-activities",
+      "outputPath": "data/research/content-ops/operator-black-mountain-activities.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:52:09.233Z",
+      "finishedAt": "2026-06-04T01:01:05.993Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-076-operator-black-mountain-activities.log"
+    },
+    {
+      "taskId": "content-ops-078-operator-blue-ocean-activities",
+      "outputPath": "data/research/content-ops/operator-blue-ocean-activities.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:54:36.115Z",
+      "finishedAt": "2026-06-04T01:01:24.668Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-078-operator-blue-ocean-activities.log"
+    },
+    {
+      "taskId": "content-ops-080-operator-campbell-coaching",
+      "outputPath": "data/research/content-ops/operator-campbell-coaching.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:01:05.995Z",
+      "finishedAt": "2026-06-04T01:07:39.333Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-080-operator-campbell-coaching.log"
+    },
+    {
+      "taskId": "content-ops-081-operator-cardiff-international-white-water",
+      "outputPath": "data/research/content-ops/operator-cardiff-international-white-water.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:01:24.669Z",
+      "finishedAt": "2026-06-04T01:08:23.419Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-081-operator-cardiff-international-white-water.log"
+    },
+    {
+      "taskId": "content-ops-079-operator-caersws-dh",
+      "outputPath": "data/research/content-ops/operator-caersws-dh.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:00:29.108Z",
+      "finishedAt": "2026-06-04T01:09:36.386Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-079-operator-caersws-dh.log"
+    }
+  ]
+}

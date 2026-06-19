@@ -1,0 +1,435 @@
+{
+  "_meta": {
+    "task": "content-ops-089-operator-dan-yr-ogof-showcaves",
+    "contentItem": "operator-dan-yr-ogof-showcaves",
+    "contentType": "operator",
+    "slug": "dan-yr-ogof-showcaves",
+    "route": "/directory/dan-yr-ogof-showcaves",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "high_confidence_with_flags",
+    "identityConfidence": "HIGH — operator identity confirmed via official website, Visit Wales, Wikipedia, and cross-reference with internal events data (dan-yr-ogof-events.json)"
+  },
+
+  "proposedOperatorData": {
+    "name": "Dan yr Ogof — The National Showcaves Centre for Wales",
+    "nameNote": "The operator's formal marketing name is 'The National Showcaves Centre for Wales'. The colloquial name 'Dan yr Ogof' (Welsh: 'Beneath the Cave') is how it is universally known. The domain is showcaves.co.uk. All sources are consistent.",
+    "slug": "dan-yr-ogof-showcaves",
+    "website": "https://www.showcaves.co.uk/",
+    "websiteSource": "https://www.showcaves.co.uk/",
+    "bookingUrl": "https://www.showcavesbookings.co.uk/",
+    "bookingUrlNote": "All tickets must be pre-booked online via this booking portal. Walk-in ticketing is not offered.",
+
+    "contact": {
+      "phone": "01639 730 284",
+      "phoneSource": "https://www.showcaves.co.uk/plan-your-visit; https://www.visitwales.com/attraction/underground-attraction/dan-yr-ogof-536881; https://www.bannaubrycheiniog.org/",
+      "phoneNote": "An older archived number (01639 730 801) appeared in one historical source. 01639 730 284 is consistent across all current official sources and is the recommended number.",
+      "email": "info@showcaves.co.uk",
+      "emailSource": "https://www.showcaves.co.uk/; https://www.visitwales.com/attraction/underground-attraction/dan-yr-ogof-536881; https://www.bannaubrycheiniog.org/",
+      "address": {
+        "line1": "Dan-yr-Ogof",
+        "locality": "Abercrave",
+        "localityAlternate": "Abercraf",
+        "county": "Swansea",
+        "countyNote": "The site straddles the Powys/Swansea administrative boundary. Postcode SA9 1GJ is a Swansea postcode. Some sources list county as Powys; Visit Wales lists it under the Swansea administrative area. Recommend using SA9 1GJ as the authoritative locator.",
+        "postcode": "SA9 1GJ",
+        "country": "Wales",
+        "countryCode": "GB-WLS"
+      },
+      "addressSource": "https://www.showcaves.co.uk/; https://en.wikipedia.org/wiki/Dan_yr_Ogof; https://www.visitwales.com/attraction/underground-attraction/dan-yr-ogof-536881"
+    },
+
+    "location": {
+      "lat": 51.830684,
+      "lng": -3.687325,
+      "latLngConfidence": "HIGH",
+      "latLngNote": "Coordinates sourced from Wikipedia infobox (consistent with OS grid reference SN 83825 16021) and verified against internal events data file (data/events/enhanced/dan-yr-ogof-events.json, last verified 2026-02-07). A discrepant coordinate set (51.84098, -3.72527) appears in Visit Wales; this likely represents a different reference point (road entrance or car park). Recommend the Wikipedia/OS-grid values for the cave entrance pin. Flag for final verification against Google Maps / Ordnance Survey before publishing.",
+      "latLngSources": [
+        "https://en.wikipedia.org/wiki/Dan_yr_Ogof",
+        "data/events/enhanced/dan-yr-ogof-events.json (internal, last verified 2026-02-07)"
+      ],
+      "osGridRef": "SN 83825 16021",
+      "region": "brecon_beacons",
+      "subRegion": "Upper Swansea Valley / Tawe Valley",
+      "nationalPark": "Bannau Brycheiniog (Brecon Beacons) National Park",
+      "geopark": "Fforest Fawr Geopark (UNESCO-endorsed European Geopark)",
+      "locationSource": "https://www.bannaubrycheiniog.org/; https://en.wikipedia.org/wiki/Dan_yr_Ogof"
+    },
+
+    "description": {
+      "short": "Dan yr Ogof — The National Showcaves Centre for Wales — is the largest show cave complex in Western Europe, set within Bannau Brycheiniog National Park. A single ticket unlocks three showcaves, a dinosaur park, a shire horse centre, an Iron Age village, and more.",
+      "full": "Dan yr Ogof (Welsh: 'Beneath the Cave') is a National Showcaves Centre located in the Upper Swansea Valley, within Bannau Brycheiniog (Brecon Beacons) National Park, near the village of Abercrave. The cave system — approximately 17 km of explored passages carved through Carboniferous limestone over 315 million years — is the largest show cave complex in Western Europe.\n\nFirst explored in 1912 by local brothers Tommy and Jeff Morgan using candles, a coracle, and rope, the caves opened to the public in 1939. A single admission ticket grants access to ten attractions: the Dan-yr-Ogof Cave (a self-guided 2.4 km walk featuring stalactites, stalagmites, underground lakes, and waterfalls); Cathedral Cave (named for its cathedral-like chambers and 40-foot waterfalls); and Bone Cave (an ancient burial site where remains of 42 humans and numerous animals were discovered). Above ground, visitors enjoy a Dinosaur Park with 250+ life-size models, a Shire Horse Centre, Mr Morgan's Farmyard, indoor and outdoor adventure play areas, an interactive Geological Museum, a reconstructed Iron Age Village, and Millennium Stone Circles.\n\nThe cave system beyond the showcave is designated a Site of Special Scientific Interest (SSSI) and National Nature Reserve, accessible only to qualified cavers. On-site facilities include a café, gift shop, free parking, coach parking, and a Wi-Fi-enabled eco-campsite powered by hydro generators and solar panels.\n\nPre-booking is mandatory — all tickets must be reserved in advance at showcavesbookings.co.uk.",
+      "shortSource": "https://www.showcaves.co.uk/; https://en.wikipedia.org/wiki/Dan_yr_Ogof",
+      "fullSource": "https://www.showcaves.co.uk/; https://en.wikipedia.org/wiki/Dan_yr_Ogof; https://www.showcaves.com/english/gb/showcaves/Dan-Yr-Ogof.html; https://www.bannaubrycheiniog.org/"
+    },
+
+    "activities": [
+      {
+        "name": "Dan-yr-Ogof Cave (self-guided tour)",
+        "detail": "2.4 km self-guided walk through stalactites, stalagmites, underground lakes, pools, and waterfalls. Named formations include Rasher of Bacon, Angel, Alabaster Pillar, The Nuns (five cowled stalagmites), and Cauldron Chamber (5.5 m hanging curtain).",
+        "source": "https://www.showcaves.co.uk/; https://en.wikipedia.org/wiki/Dan_yr_Ogof"
+      },
+      {
+        "name": "Cathedral Cave",
+        "detail": "Named for cathedral-like chambers. Features a dramatic 40-foot (12 m) underground waterfall.",
+        "source": "https://www.showcaves.co.uk/; https://en.wikipedia.org/wiki/Dan_yr_Ogof"
+      },
+      {
+        "name": "Bone Cave",
+        "detail": "Ancient burial site. Archaeological excavations uncovered remains of approximately 42 humans and numerous animal bones, one of the most significant prehistoric human burial deposits in Wales.",
+        "source": "https://en.wikipedia.org/wiki/Dan_yr_Ogof; https://www.showcaves.co.uk/"
+      },
+      {
+        "name": "Dinosaur Park",
+        "detail": "250+ life-size dinosaur and prehistoric animal models in an outdoor park.",
+        "source": "https://www.showcaves.co.uk/"
+      },
+      {
+        "name": "Shire Horse Centre",
+        "source": "https://www.showcaves.co.uk/"
+      },
+      {
+        "name": "Mr Morgan's Farmyard",
+        "source": "https://www.showcaves.co.uk/"
+      },
+      {
+        "name": "Indoor and Outdoor Adventure Play Areas",
+        "source": "https://www.showcaves.co.uk/"
+      },
+      {
+        "name": "Iron Age Village",
+        "detail": "Reconstructed Iron Age roundhouses.",
+        "source": "https://www.showcaves.co.uk/"
+      },
+      {
+        "name": "Millennium Stone Circles",
+        "source": "https://www.showcaves.co.uk/"
+      },
+      {
+        "name": "Interactive Geological Museum",
+        "source": "https://www.showcaves.co.uk/"
+      }
+    ],
+
+    "accessibility": {
+      "note": "Some areas of the showcave may have limited accessibility. The Dinosaur Park and outdoor attractions are generally accessible. Human editor should verify the official accessibility statement on showcaves.co.uk before publishing any accessibility claims.",
+      "verifyManually": true,
+      "source": "https://www.showcaves.co.uk/"
+    },
+
+    "openingHours": {
+      "pattern": "Seasonal. Generally open Easter to October half-term (approximately March to November). The attraction does NOT operate every day even within season — specific open days vary week to week.",
+      "sessionBased": true,
+      "sessionNote": "Entry is by pre-booked timed sessions only. Sessions typically run from 10:30am. Closed on some weekdays (observed closure on Tuesdays and Thursdays in the sampled week of 4–10 June 2026). Do NOT publish static daily hours.",
+      "generalSeasonPattern": "April–October, 10am–3pm daily (broad guide only — actual open days vary)",
+      "generalSeasonSource": "https://www.showcaves.com/english/gb/showcaves/Dan-Yr-Ogof.html",
+      "liveCalendar": "https://www.showcavesbookings.co.uk/opening-times.php",
+      "publishingRecommendation": "Do not publish specific days or hours. Direct visitors to the live booking calendar at https://www.showcavesbookings.co.uk/opening-times.php to check availability before visiting.",
+      "humanReviewRequired": true,
+      "humanReviewNote": "Opening pattern confirmed as session-based from live booking calendar sampled 2026-06-04. Calendar should be re-checked before any page refresh."
+    },
+
+    "pricing": {
+      "publiclyAvailable": true,
+      "pricesAsOf": "2026-06-04",
+      "humanReviewRequired": true,
+      "humanReviewNote": "Prices were sourced from the official showcaves.co.uk plan-your-visit page and confirmed in internal events data (dan-yr-ogof-events.json, last verified 2026-02-07). An older source showed lower prices (Adult £16.50, Child £13.00), confirming that prices have been raised. Re-verify before publishing and always include a caveat linking to the official booking page.",
+      "tickets": [
+        {
+          "category": "Adult",
+          "price": "£22.70",
+          "source": "https://www.showcaves.co.uk/plan-your-visit"
+        },
+        {
+          "category": "Child (3–16)",
+          "price": "£17.95",
+          "source": "https://www.showcaves.co.uk/plan-your-visit"
+        },
+        {
+          "category": "Child under 2",
+          "price": "Free",
+          "source": "https://www.showcaves.co.uk/plan-your-visit"
+        },
+        {
+          "category": "Disabled Adult / Carer",
+          "price": "£18.70",
+          "source": "https://www.showcaves.co.uk/plan-your-visit"
+        },
+        {
+          "category": "Disabled Child / Carer (3–16)",
+          "price": "£13.95",
+          "source": "https://www.showcaves.co.uk/plan-your-visit"
+        },
+        {
+          "category": "Group (20+ people)",
+          "price": "Contact operator for group rates",
+          "source": "https://www.showcaves.co.uk/plan-your-visit"
+        }
+      ],
+      "pricingNote": "All prices include access to all 10 attractions on site. Pre-booking mandatory. Prices subject to change — always direct users to https://www.showcavesbookings.co.uk/ for current pricing."
+    },
+
+    "awards": [
+      {
+        "award": "Britain's Greatest Natural Wonder",
+        "detail": "Voted by Radio Times readers, 2005",
+        "source": "https://www.showcaves.co.uk/; https://en.wikipedia.org/wiki/Dan_yr_Ogof"
+      },
+      {
+        "award": "Festival of Wales Trophy",
+        "detail": "'Oscar' of Welsh tourism for Wales's most outstanding tourist attraction, 1966",
+        "source": "https://www.showcaves.co.uk/; https://www.showcaves.com/english/gb/showcaves/Dan-Yr-Ogof.html"
+      }
+    ],
+
+    "designations": [
+      {
+        "designation": "Site of Special Scientific Interest (SSSI)",
+        "detail": "The wild cave system beyond the showcave is SSSI-designated",
+        "source": "https://en.wikipedia.org/wiki/Dan_yr_Ogof"
+      },
+      {
+        "designation": "National Nature Reserve (NNR)",
+        "detail": "Accessible to qualified cavers only; protected status applies to the wider cave system",
+        "source": "https://en.wikipedia.org/wiki/Dan_yr_Ogof"
+      },
+      {
+        "designation": "Fforest Fawr Geopark",
+        "detail": "The site is within the UNESCO-endorsed Fforest Fawr European Geopark",
+        "source": "https://www.bannaubrycheiniog.org/"
+      }
+    ],
+
+    "ratings": {
+      "tripadvisor": {
+        "note": "A TripAdvisor listing is expected to exist given the scale of the attraction. Human editor should verify current rating and review count at tripadvisor.co.uk.",
+        "verifyManually": true
+      },
+      "google": {
+        "note": "Google Maps listing expected. Human editor should verify current star rating at maps.google.com for 'Dan yr Ogof National Showcaves SA9 1GJ'.",
+        "verifyManually": true
+      }
+    },
+
+    "socialMedia": {
+      "handle": "@showcaves (consistent across all platforms)",
+      "facebook": {
+        "url": "https://www.facebook.com/showcaves/",
+        "followerCount": "~31,500 likes",
+        "followerCountNote": "Approximate figure from research. Verify current count before publishing.",
+        "source": "https://www.showcaves.co.uk/; web search 2026-06-04"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/showcaves/",
+        "followerCount": "~5,077 followers",
+        "followerCountNote": "Approximate figure from research. Verify before publishing.",
+        "source": "web search 2026-06-04"
+      },
+      "twitter": {
+        "url": "https://x.com/showcaves",
+        "urlAlt": "https://twitter.com/showcaves",
+        "source": "web search 2026-06-04"
+      },
+      "youtube": {
+        "url": "https://www.youtube.com/channel/UC2M4FT8w4ogizq16uATnkZg/featured",
+        "source": "web search 2026-06-04"
+      },
+      "tiktok": {
+        "note": "Visit Wales listing indicated TikTok presence but no direct URL confirmed. Human editor should search TikTok for @showcaves to verify.",
+        "verifyManually": true
+      }
+    },
+
+    "onSiteAmenities": [
+      "Café / Restaurant",
+      "Gift Shop",
+      "Free Car Park",
+      "Coach Parking",
+      "Picnic Area",
+      "Toilets",
+      "Wi-Fi",
+      "Eco-Campsite / Caravan Park (powered by hydro generators and solar panels)"
+    ],
+    "amenitiesSource": "https://www.showcaves.co.uk/"
+  },
+
+  "images": {
+    "existingAsset": {
+      "path": "public/images/attractions/dan-yr-ogof-caves.jpg",
+      "status": "PROVENANCE_UNKNOWN",
+      "note": "A JPG file exists at this path in the repository. Its licence, photographer, and acquisition source are not recorded in the image registry (content/ops/image-registry.json marks it as 'missing'). This file must NOT be used in production until provenance is confirmed. A human editor must determine whether it was obtained under licence, taken in-house, or sourced from an unlicensed third party."
+    },
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "The showcaves.co.uk website logo and branding are copyright of The National Showcaves Centre for Wales. No freely licensed version was found on Wikimedia Commons, Openverse, or Unsplash. Logo must be requested directly from the operator under written licence."
+    },
+    "cover": {
+      "status": "AVAILABLE — LICENCE REQUIRED",
+      "recommendation": "Use a Wikimedia Commons CC BY-SA 4.0 image from the verified set below. Attribution is mandatory.",
+      "verifiedOptions": [
+        {
+          "rank": 1,
+          "filename": "Dan yr Ogof caves (8930).jpg",
+          "author": "Nilfanion (Wikimedia UK)",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "resolution": "4,288 × 2,848 px (5.16 MB)",
+          "dateTaken": "2013-06-21",
+          "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Dan_yr_Ogof_caves_%288930%29.jpg",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Dan_yr_Ogof_caves_(8930).jpg",
+          "attributionRequired": "Photo by Nilfanion / Wikimedia UK, CC BY-SA 4.0"
+        },
+        {
+          "rank": 2,
+          "filename": "Dan yr Ogof caves (8939).jpg",
+          "author": "Nilfanion (Wikimedia UK)",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "dateTaken": "2013-06-21",
+          "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Dan_yr_Ogof_caves_%288939%29.jpg",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Dan_yr_Ogof_caves_(8939).jpg",
+          "attributionRequired": "Photo by Nilfanion / Wikimedia UK, CC BY-SA 4.0"
+        },
+        {
+          "rank": 3,
+          "filename": "Dan yr Ogof caves (8940).jpg",
+          "author": "Nilfanion (Wikimedia UK)",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "resolution": "2,848 × 4,288 px (6.32 MB — portrait orientation)",
+          "dateTaken": "2013-06-21",
+          "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Dan_yr_Ogof_caves_%288940%29.jpg",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Dan_yr_Ogof_caves_(8940).jpg",
+          "attributionRequired": "Photo by Nilfanion / Wikimedia UK, CC BY-SA 4.0"
+        }
+      ],
+      "additionalPool": "Wikimedia Commons category https://commons.wikimedia.org/wiki/Category:Dan_yr_Ogof contains 133 images. Only the three Nilfanion images above have been individually licence-verified. Additional images from other contributors should be checked individually before use — licence types vary.",
+      "actionRequired": "Download and crop preferred option. Add CC BY-SA 4.0 attribution in the image caption or site credits. Do not use the operator's own photography without written permission. Do not use AI-generated images."
+    },
+    "gallery": {
+      "status": "AVAILABLE — LICENCE REQUIRED",
+      "note": "The same Wikimedia Commons pool applies. Each image must be individually checked. The operator may also be willing to provide a media pack — contact info@showcaves.co.uk."
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "GPS coordinates: 51.830684, -3.687325",
+      "confidence": "HIGH",
+      "issue": "Coordinates from Wikipedia (consistent with OS grid ref SN 83825 16021) and internal events data are consistent. However, Visit Wales lists a different coordinate set (51.84098, -3.72527) which is approx 3 km NW and may represent the road entrance or car park. The internal events data and Wikipedia agree.",
+      "action": "Pin both coordinates on Google Maps / OS Maps to confirm which best represents the cave entrance. Use the cave entrance coordinate (51.830684, -3.687325) for the operator listing pin.",
+      "severity": "LOW"
+    },
+    {
+      "claim": "Ticket prices: Adult £22.70 / Child £17.95",
+      "confidence": "HIGH as of research date",
+      "issue": "Prices verified from official source and internal events data (last verified 2026-02-07). Prices have been raised from an older £16.50 / £13.00 level, confirming active management of pricing. May change again before publishing.",
+      "action": "Re-verify prices against https://www.showcaves.co.uk/plan-your-visit immediately before publishing. Always include a caveat directing users to https://www.showcavesbookings.co.uk/ for current pricing.",
+      "severity": "MEDIUM"
+    },
+    {
+      "claim": "Opening hours and open days",
+      "confidence": "MODERATE",
+      "issue": "Session-based timed entry only. Not open every day in season. Specific closure days vary week by week. A static hours table would mislead visitors.",
+      "action": "Do not publish specific hours. Link only to https://www.showcavesbookings.co.uk/opening-times.php for live availability.",
+      "severity": "MEDIUM"
+    },
+    {
+      "claim": "Existing image at public/images/attractions/dan-yr-ogof-caves.jpg",
+      "confidence": "UNVERIFIED",
+      "issue": "File exists in repo but provenance is not recorded. Unknown whether it was obtained under a valid licence.",
+      "action": "Trace the origin of this file before using it in any published page. If provenance cannot be confirmed, delete and replace with a verified CC-licensed image from Wikimedia Commons.",
+      "severity": "HIGH"
+    },
+    {
+      "claim": "Phone: 01639 730 284",
+      "confidence": "HIGH",
+      "issue": "Number is consistent across multiple current official sources. An older number (01639 730 801) appears in one archived source but this is likely outdated.",
+      "action": "Confirm current phone number by calling before publishing to ensure it remains active.",
+      "severity": "LOW"
+    },
+    {
+      "claim": "Social media follower counts",
+      "confidence": "MODERATE",
+      "issue": "Counts (~31,500 Facebook likes, ~5,077 Instagram followers) are approximate and were gathered on 2026-06-04. These change constantly.",
+      "action": "Do not publish follower counts on the directory page. Confirm social URLs are still active before publishing.",
+      "severity": "LOW"
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.showcaves.co.uk/",
+      "description": "Official operator website — name, contact details, activities, pricing, booking URL, opening hours, amenities",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.showcavesbookings.co.uk/",
+      "description": "Official booking portal — pre-booking mandatory, live session calendar, pricing",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Dan_yr_Ogof",
+      "description": "Wikipedia — history, coordinates (OS grid ref SN 83825 16021), cave description, awards, SSSI/NNR designations, discovery story",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.visitwales.com/attraction/underground-attraction/dan-yr-ogof-536881",
+      "description": "Visit Wales official tourism listing — contact details, description, location",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.bannaubrycheiniog.org/",
+      "description": "Bannau Brycheiniog (Brecon Beacons) National Park authority — confirms location within national park, contact details, Fforest Fawr Geopark",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.showcaves.com/english/gb/showcaves/Dan-Yr-Ogof.html",
+      "description": "showcaves.com international cave database — coordinates (51.831054, -3.686444), general seasonal opening pattern, awards",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Dan_yr_Ogof",
+      "description": "Wikimedia Commons image category — 133 images; three CC BY-SA 4.0 images by Nilfanion individually verified",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "data/events/enhanced/dan-yr-ogof-events.json",
+      "description": "Internal events data file — coordinates, postcode SA9 1GJ, pricing (adult £22.70, child £17.95), website, booking URL. Last verified 2026-02-07.",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.json",
+      "description": "Internal content inventory — confirms operator-dan-yr-ogof-showcaves, unclassified_operator tier, image/copy status missing",
+      "type": "internal"
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "All critical missing fields (coordinates, phone, email, description, social media) have been researched and populated from official sources with high confidence. Three items require human QA action before the page can go live: (1) the existing image file's provenance must be traced or the file replaced with a verified CC-licensed alternative; (2) ticket prices must be re-verified immediately before publishing; (3) TripAdvisor and Google ratings should be manually checked and added.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Existing image provenance unconfirmed",
+      "detail": "public/images/attractions/dan-yr-ogof-caves.jpg is in the repository but has no recorded provenance (image-registry.json marks the operator as 'missing'). The image may be unlicensed. A human editor must trace its source and confirm it is licensed for commercial use before it appears on any published page. If provenance cannot be confirmed, delete and replace with one of the three verified CC BY-SA 4.0 images from Wikimedia Commons (Nilfanion, links in images.cover.verifiedOptions above).",
+      "severity": "HIGH",
+      "action": "Check git blame / commit history for public/images/attractions/dan-yr-ogof-caves.jpg to identify when and how it was added. Alternatively, contact the operator for a media pack."
+    },
+    {
+      "rank": 2,
+      "blocker": "No operator logo available under open licence",
+      "detail": "The showcaves.co.uk logo is copyright. No freely licensed version was found. A logo is required for the operator profile page. The operator must be contacted at info@showcaves.co.uk or 01639 730 284 to request a press/media kit or written permission to reproduce their branding.",
+      "severity": "HIGH",
+      "action": "Email info@showcaves.co.uk requesting a media pack including a high-resolution logo suitable for web use, with written permission to use it on this directory listing."
+    },
+    {
+      "rank": 3,
+      "blocker": "Ticket prices and opening dates require re-verification before publishing",
+      "detail": "Prices (Adult £22.70 / Child £17.95) and the session-based opening calendar are correct as of 2026-06-04 but are known to change. The operator does not open every day in season. Any published page must link to the live booking calendar rather than state specific prices or hours, and prices must be re-confirmed against the live site at the point of page publication.",
+      "severity": "MEDIUM",
+      "action": "Before QA sign-off: (1) re-check current prices at https://www.showcaves.co.uk/plan-your-visit; (2) ensure the published page directs users to https://www.showcavesbookings.co.uk/ with a 'prices subject to change' caveat rather than hardcoding a figure."
+    }
+  ]
+}

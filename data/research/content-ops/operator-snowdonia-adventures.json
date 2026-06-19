@@ -1,0 +1,311 @@
+{
+  "_meta": {
+    "task": "content-ops-004-operator-snowdonia-adventures",
+    "contentItem": "operator-snowdonia-adventures",
+    "contentType": "operator",
+    "slug": "snowdonia-adventures",
+    "route": "/directory/snowdonia-adventures",
+    "commercialTier": "strategic_big_player_or_launch_priority",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_critical_flags"
+  },
+
+  "proposedOperatorData": {
+    "name": "Snowdonia Adventures",
+    "legalTradingName": "SNOWDONIA ADVENTURES LIMITED",
+    "legalTradingNameSource": "https://find-and-update.company-information.service.gov.uk/company/05117191",
+    "companyNumber": "05117191",
+    "companyNumberSource": "https://find-and-update.company-information.service.gov.uk/company/05117191",
+    "companyStatus": "Active",
+    "incorporatedDate": "2004-05-04",
+    "establishedYear": "2000",
+    "establishedYearSource": "https://www.tripadvisor.com/Attraction_Review-g5994638-d5993965-Reviews-Snowdonia_Adventures-Llangoed_Anglesey_North_Wales_Wales.html",
+    "sicCode": "93199",
+    "sicDescription": "Other sports activities",
+    "slug": "snowdonia-adventures",
+    "website": "https://www.snowdonia-adventures.co.uk/",
+    "websiteSource": "https://find-and-update.company-information.service.gov.uk/company/05117191",
+    "websiteNote": "Domain active as of June 2026; full page content could not be scraped (JS-heavy or truncated). Verify contact details against live contact page before publishing.",
+
+    "contact": {
+      "phone": "07930601137",
+      "phoneSource": "https://www.snowdonia-adventures.co.uk/ (via web search index — NOT verified against live contact page)",
+      "phoneNote": "HUMAN REVIEW REQUIRED. Phone 07930601137 was surfaced in search-engine snippets. An older number (01248 490188) appears on the operator's Facebook page. Verify which is current at https://www.snowdonia-adventures.co.uk/contact-us/ before publishing.",
+      "phoneAlternative": "01248 490188",
+      "phoneAlternativeSource": "https://www.facebook.com/SnowdoniaAdventures/",
+      "email": "info@snowdonia-adventures.co.uk",
+      "emailSource": "https://www.snowdonia-adventures.co.uk/ (via web search index — NOT verified against live contact page)",
+      "emailNote": "HUMAN REVIEW REQUIRED. Email address was surfaced in search-engine snippets; could not be confirmed by direct page fetch. Verify at https://www.snowdonia-adventures.co.uk/contact-us/ before publishing.",
+      "address": {
+        "line1": "Bron Hafod",
+        "locality": "Ceunant",
+        "town": "Caernarfon",
+        "county": "Gwynedd",
+        "country": "Wales",
+        "postcode": "LL55 4RY"
+      },
+      "addressSource": "https://find-and-update.company-information.service.gov.uk/company/05117191/officers — registered address of current director Reece Robinson",
+      "addressNote": "This is the Companies House registered address. TripAdvisor still shows 'Llangoed, Anglesey' which was the home address of previous director Mark Handford. The Ceunant address is the correct operational base; verify with operator before publishing.",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/SnowdoniaAdventures/",
+        "facebookNote": "Page confirmed active in search results as of June 2026"
+      }
+    },
+
+    "location": {
+      "lat": 53.130859,
+      "lng": -4.193512,
+      "latLngNote": "HUMAN REVIEW REQUIRED. Coordinates are the centroid of postcode LL55 4RY (source: getthedata.com) — NOT building-level precision. Verify against Google Maps / OS for the exact Bron Hafod site before publishing.",
+      "latLngSource": "https://www.getthedata.com/postcode/LL55-4RY",
+      "region": "snowdonia",
+      "ward": "Cwm-y-glo",
+      "district": "Gwynedd",
+      "settingNote": "Ceunant is a hamlet approx. 3 km south-east of Caernarfon town centre, at ~190 m elevation, providing immediate access to Snowdonia (Eryri) National Park. The Chamois Mountaineering Centre is nearby in the same hamlet (different operator)."
+    },
+
+    "management": {
+      "currentDirector": {
+        "name": "Reece Robinson",
+        "role": "Director",
+        "appointedDate": "2025-09-30",
+        "source": "https://find-and-update.company-information.service.gov.uk/company/05117191/officers"
+      },
+      "previousDirector": {
+        "name": "Mark Andrew Handford",
+        "role": "Director",
+        "appointedDate": "2006-01-27",
+        "resignedDate": "2025-09-30",
+        "note": "Mark Handford was the face of the business for approx. 19 years and responds to TripAdvisor reviews. His resignation as director in September 2025 may signal ownership transfer or restructuring. Verify current operational team with operator before publishing.",
+        "source": "https://find-and-update.company-information.service.gov.uk/company/05117191/officers"
+      },
+      "managementChangeFlag": true,
+      "managementChangeNote": "HUMAN REVIEW REQUIRED. Directorship changed 30 September 2025. The brand and activities appear operationally unchanged based on web presence, but this should be confirmed with the operator before the listing is published."
+    },
+
+    "description": {
+      "short": "Snowdonia Adventures is a Caernarfon-based outdoor activity and skills-course provider operating since 2000, offering guided mountain walks, canyoning, rock climbing, kayaking, coasteering, and winter mountaineering across Eryri (Snowdonia) National Park.",
+      "shortNote": "Drafted from verified third-party sources. Needs editorial review and operator confirmation before publishing.",
+      "full": "Snowdonia Adventures (SNOWDONIA ADVENTURES LIMITED, Companies House no. 05117191) has been delivering outdoor adventures and mountain skills training in north Wales since 2000. Based at Bron Hafod in Ceunant — a hamlet a few kilometres from Caernarfon with immediate access to the peaks and gorges of Eryri (Snowdonia) National Park — the company caters for individuals, groups, schools, and those pursuing professional mountaineering qualifications.\n\nThe activity range spans guided ascents of Yr Wyddfa (Snowdon) and other Eryri summits, multi-day mountain skills courses, scrambling expeditions, canyoning, rock climbing, abseiling, kayaking, canoeing, coasteering, and navigation training. The company also runs winter mountaineering programmes. Staff hold Summer Mountain Leader qualifications as a minimum, with more senior guides holding Mountain Instructor Award/Certificate, International Mountain Leader, and British Mountain Guide credentials.\n\nA directorship change took effect on 30 September 2025, when Reece Robinson replaced founding director Mark Handford. The company's TripAdvisor profile holds a 4.9/5 rating across 83 reviews as of June 2026.",
+      "fullNote": "Drafted from Companies House records, TripAdvisor, and web search summaries. Full About Us page content could not be scraped. Needs operator verification and editorial review before publishing."
+    },
+
+    "currentActivities": [
+      {
+        "name": "Guided Mountain Walks (Snowdon / Yr Wyddfa)",
+        "category": "summer",
+        "source": "https://www.snowdonia-adventures.co.uk/summer/guided-hiking-snowdonia/snowdon/"
+      },
+      {
+        "name": "Mountain Skills Courses",
+        "category": "summer",
+        "detail": "Multi-day courses; 3-day course confirmed",
+        "source": "https://www.snowdonia-adventures.co.uk/summer/skills-courses/3-day-mountain-skills-course/"
+      },
+      {
+        "name": "Canyoning",
+        "category": "summer",
+        "source": "https://www.tripadvisor.com/Attraction_Review-g5994638-d5993965-Reviews-Snowdonia_Adventures-Llangoed_Anglesey_North_Wales_Wales.html"
+      },
+      {
+        "name": "Rock Climbing & Abseiling",
+        "category": "summer",
+        "source": "https://www.tripadvisor.com/Attraction_Review-g5994638-d5993965-Reviews-Snowdonia_Adventures-Llangoed_Anglesey_North_Wales_Wales.html"
+      },
+      {
+        "name": "Kayaking & Canoeing",
+        "category": "summer",
+        "source": "https://www.tripadvisor.com/Attraction_Review-g5994638-d5993965-Reviews-Snowdonia_Adventures-Llangoed_Anglesey_North_Wales_Wales.html"
+      },
+      {
+        "name": "Coasteering",
+        "category": "summer",
+        "source": "https://www.tripadvisor.com/Attraction_Review-g5994638-d5993965-Reviews-Snowdonia_Adventures-Llangoed_Anglesey_North_Wales_Wales.html"
+      },
+      {
+        "name": "Scrambling Expeditions",
+        "category": "summer",
+        "source": "https://www.tripadvisor.com/Attraction_Review-g5994638-d5993965-Reviews-Snowdonia_Adventures-Llangoed_Anglesey_North_Wales_Wales.html"
+      },
+      {
+        "name": "Navigation Courses",
+        "category": "year-round",
+        "source": "https://www.tripadvisor.com/Attraction_Review-g5994638-d5993965-Reviews-Snowdonia_Adventures-Llangoed_Anglesey_North_Wales_Wales.html"
+      },
+      {
+        "name": "Winter Mountaineering Courses",
+        "category": "winter",
+        "source": "https://www.tripadvisor.com/Attraction_Review-g5994638-d5993965-Reviews-Snowdonia_Adventures-Llangoed_Anglesey_North_Wales_Wales.html"
+      }
+    ],
+
+    "staffQualifications": {
+      "minimumStaff": "Summer Mountain Leader (ML) + SPA (Single Pitch Award)",
+      "seniorStaff": [
+        "Mountain Instructor Award (MIA)",
+        "Mountain Instructor Certificate (MIC)",
+        "International Mountain Leader (IML)",
+        "British Mountain Guide (BMG)"
+      ],
+      "note": "Qualification list sourced from web search summary referencing the About Us page. Could not verify against the live page. HUMAN REVIEW: confirm current qualification list directly with operator.",
+      "source": "https://www.snowdonia-adventures.co.uk/about-us/ (not directly fetched — inferred from search index snippet)"
+    },
+
+    "accreditations": {
+      "note": "HUMAN REVIEW REQUIRED. No accreditation details could be directly verified from the website due to page-fetch failures. The operator's About Us page likely lists accreditations. Check for: Adventuremark, Adventure Activity Licensing Authority (AALA/HSE), Council for Learning Outside the Classroom (LOtC) Quality Badge, Visit Wales Adventure Activity Assurance.",
+      "aalaSearchUrl": "https://aala.hse.gov.uk/aala/provider_search.php"
+    },
+
+    "tripadvisor": {
+      "rating": 4.9,
+      "reviewCount": 83,
+      "listingUrl": "https://www.tripadvisor.com/Attraction_Review-g5994638-d5993965-Reviews-Snowdonia_Adventures-Llangoed_Anglesey_North_Wales_Wales.html",
+      "locationOnListing": "Llangoed, Anglesey",
+      "locationNote": "TripAdvisor location is outdated — this reflects Mark Handford's old home address. The current operational address is Bron Hafod, Ceunant, Caernarfon, LL55 4RY per Companies House."
+    }
+  },
+
+  "imageResearch": {
+    "coverImage": {
+      "status": "blocked_operator_image_needed",
+      "note": "No operator-provided cover image or licensed photograph of their activities has been found. The operator website could not be scraped for image assets. DO NOT use any image from the operator website without explicit licence permission.",
+      "candidates": [
+        {
+          "title": "Eryri-Snowdonia",
+          "creator": "ohefin",
+          "license": "CC BY-SA 2.0",
+          "licenseNote": "Allows commercial use and modification with attribution and share-alike. Suitable as a landscape placeholder only — does NOT show the operator or their activities.",
+          "sourceUrl": "https://www.flickr.com/photos/47515486@N05/14736978280",
+          "imageUrl": "https://live.staticflickr.com/3857/14736978280_a863b8bded_b.jpg",
+          "dimensions": "1024×680px",
+          "provider": "Flickr / Openverse",
+          "attribution": "\"Eryri-Snowdonia\" by ohefin, licensed under CC BY-SA 2.0. https://www.flickr.com/photos/47515486@N05/14736978280",
+          "editorial": "PLACEHOLDER ONLY — shows Eryri landscape, not the operator. Human editorial sign-off required before use."
+        },
+        {
+          "title": "Llyn Gwynant in the rain",
+          "creator": "Petersrockypics",
+          "license": "CC BY-SA 2.0",
+          "licenseNote": "Allows commercial use and modification with attribution and share-alike.",
+          "sourceUrl": "https://www.flickr.com/photos/71950551@N02/54111619270",
+          "imageUrl": "https://live.staticflickr.com/65535/54111619270_b75b09d974_b.jpg",
+          "dimensions": "1024×683px",
+          "provider": "Flickr / Openverse",
+          "attribution": "\"Llyn Gwynant in the rain\" by Petersrockypics, licensed under CC BY-SA 2.0. https://www.flickr.com/photos/71950551@N02/54111619270",
+          "editorial": "PLACEHOLDER ONLY — shows Snowdonia lake landscape, not the operator. Human editorial sign-off required before use."
+        }
+      ],
+      "recommendation": "Request operator-provided image directly. Landscape CC BY-SA 2.0 placeholders noted above can be used temporarily if editorially approved, but an activity shot showing the company in action is strongly preferred for a premium listing."
+    },
+    "logo": {
+      "status": "blocked",
+      "note": "No logo asset found on any publicly indexed source. Website could not be scraped for logo. HUMAN REVIEW: request SVG or PNG logo directly from operator at info@snowdonia-adventures.co.uk."
+    }
+  },
+
+  "sourcesUsed": [
+    {
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05117191",
+      "description": "Companies House: SNOWDONIA ADVENTURES LIMITED — company status, registered address, incorporation date, SIC code"
+    },
+    {
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05117191/officers",
+      "description": "Companies House: officer history — current director Reece Robinson, previous director Mark Handford"
+    },
+    {
+      "url": "https://www.tripadvisor.com/Attraction_Review-g5994638-d5993965-Reviews-Snowdonia_Adventures-Llangoed_Anglesey_North_Wales_Wales.html",
+      "description": "TripAdvisor listing: business description, activities, rating (4.9/5, 83 reviews), established 2000"
+    },
+    {
+      "url": "https://www.getthedata.com/postcode/LL55-4RY",
+      "description": "Postcode centroid coordinates for LL55 4RY: lat 53.130859, lng -4.193512"
+    },
+    {
+      "url": "https://www.snowdonia-adventures.co.uk/contact-us/",
+      "description": "Operator contact page — URL confirmed in search index; content could not be fetched. Phone and email sourced from search index snippets only."
+    },
+    {
+      "url": "https://www.facebook.com/SnowdoniaAdventures/",
+      "description": "Operator Facebook page — alternative phone number 01248 490188"
+    },
+    {
+      "url": "https://www.snowdonia-adventures.co.uk/summer/guided-hiking-snowdonia/snowdon/",
+      "description": "Operator website: Snowdon guided walks page (URL confirmed, content not fetched)"
+    },
+    {
+      "url": "https://www.snowdonia-adventures.co.uk/summer/skills-courses/3-day-mountain-skills-course/",
+      "description": "Operator website: 3-day mountain skills course (URL confirmed, content not fetched)"
+    },
+    {
+      "url": "https://www.flickr.com/photos/47515486@N05/14736978280",
+      "description": "Openverse / Flickr: 'Eryri-Snowdonia' by ohefin, CC BY-SA 2.0 — cover image candidate"
+    },
+    {
+      "url": "https://www.flickr.com/photos/71950551@N02/54111619270",
+      "description": "Openverse / Flickr: 'Llyn Gwynant in the rain' by Petersrockypics, CC BY-SA 2.0 — cover image candidate"
+    }
+  ],
+
+  "claimsForHumanReview": [
+    {
+      "claim": "Phone number is 07930601137",
+      "source": "Search-engine index snippet (not direct page fetch)",
+      "risk": "high",
+      "action": "Verify against https://www.snowdonia-adventures.co.uk/contact-us/ before publishing. Alternative 01248 490188 from Facebook — confirm which is current."
+    },
+    {
+      "claim": "Email is info@snowdonia-adventures.co.uk",
+      "source": "Search-engine index snippet (not direct page fetch)",
+      "risk": "medium",
+      "action": "Verify against https://www.snowdonia-adventures.co.uk/contact-us/ before publishing."
+    },
+    {
+      "claim": "Coordinates lat 53.130859, lng -4.193512 represent the operator's location",
+      "source": "Postcode centroid for LL55 4RY via getthedata.com",
+      "risk": "medium",
+      "action": "Replace with building-level pin verified via Google Maps or OS Maps for 'Bron Hafod, Ceunant, LL55 4RY'."
+    },
+    {
+      "claim": "Bron Hafod, Ceunant is the current operational base",
+      "source": "Companies House registered address of director Reece Robinson",
+      "risk": "medium",
+      "action": "Confirm with operator that this is also the guest-facing meeting/activity base and not solely a private residential registered address."
+    },
+    {
+      "claim": "Directorship change (Mark Handford → Reece Robinson, Sep 2025) has not changed brand/activities",
+      "source": "Inferred from continued web presence and unchanged TripAdvisor listing",
+      "risk": "medium",
+      "action": "Confirm current operational status and whether Mark Handford remains involved as lead guide despite director resignation."
+    },
+    {
+      "claim": "Staff hold Summer Mountain Leader as minimum qualification",
+      "source": "Web search snippet referencing the About Us page — page not directly fetched",
+      "risk": "low",
+      "action": "Verify against current About Us page and confirm any additional accreditations (Adventuremark, AALA, LOtC)."
+    }
+  ],
+
+  "blockers": [
+    {
+      "rank": 1,
+      "blocker": "No verified phone number",
+      "detail": "Two phone numbers surfaced (07930601137 from search index; 01248 490188 from Facebook). Neither confirmed against live contact page. Publishing an incorrect number on a premium listing would damage operator trust.",
+      "resolution": "Human must load https://www.snowdonia-adventures.co.uk/contact-us/ and record the canonical phone number."
+    },
+    {
+      "rank": 2,
+      "blocker": "No operator image or logo",
+      "detail": "Website could not be scraped. No licensed activity photograph or logo asset obtained. CC BY-SA landscape placeholders found but show scenery only, not the operator.",
+      "resolution": "Contact operator at info@snowdonia-adventures.co.uk to request a press pack with cover photo and logo, or request a direct media link."
+    },
+    {
+      "rank": 3,
+      "blocker": "Directorship change September 2025 — operational impact unverified",
+      "detail": "Mark Handford resigned as director and was replaced by Reece Robinson. The TripAdvisor listing still reflects Handford's home address. It is not yet confirmed whether the company continues to trade normally or whether there has been a material change to activities, branding, or staffing.",
+      "resolution": "Human outreach to operator to confirm current operating status before publishing a strategic/premium listing."
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusRationale": "Core facts (company name, legal entity, website, address, activities, approximate coordinates) are researched and sourced. Critical blockers remain: phone/email unverified from live page, no image/logo assets, directorship change needs operational confirmation. QA reviewer should attempt direct page fetch and/or phone/email contact with operator to resolve the three blockers above."
+}

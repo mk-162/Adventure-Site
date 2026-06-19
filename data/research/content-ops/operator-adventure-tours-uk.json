@@ -1,0 +1,428 @@
+{
+  "_meta": {
+    "task": "content-ops-069-operator-adventure-tours-uk",
+    "contentItem": "operator-adventure-tours-uk",
+    "contentType": "operator",
+    "slug": "adventure-tours-uk",
+    "route": "/directory/adventure-tours-uk",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "substantial_with_image_blocker",
+    "identityConfidence": "HIGH — operator confirmed via multiple official tourism listings (VisitWales, northeastwales.wales, meetinwales.com) and cross-referenced with internal walking.csv"
+  },
+
+  "proposedOperatorData": {
+    "name": "Adventure Tours UK",
+    "slug": "adventure-tours-uk",
+    "website": "https://adventuretoursuk.com",
+    "websiteNote": "Active as of June 2026. Copyright © 2026 Adventure Tours UK shown on homepage.",
+    "contact": {
+      "phone": "01824 737024",
+      "phoneInternational": "+44 (0)1824 737024",
+      "phoneSource": "https://www.visitwales.com/attraction/sightseeing-tour/adventure-tours-uk-526631",
+      "phoneCrossReferences": [
+        "https://www.northeastwales.wales/things-to-do/adventure-tours-uk/",
+        "https://www.meetinwales.com/operator/operator-handler/adventure-tours-uk-2167057",
+        "https://adventuretoursuk.com/contact-us/"
+      ],
+      "email": "hello@adventuretoursuk.com",
+      "emailSource": "https://adventuretoursuk.com/contact-us/",
+      "emailNote": "General enquiries inbox. A director-level contact clairecopeman@adventuretoursuk.com is also listed on meetinwales.com for corporate/trade enquiries.",
+      "emailDirector": "clairecopeman@adventuretoursuk.com",
+      "emailDirectorSource": "https://www.meetinwales.com/operator/operator-handler/adventure-tours-uk-2167057",
+      "address": {
+        "houseName": "Bryn Mywion Bach",
+        "street": "School Lane",
+        "locality": "Llanarmon-yn-Ial",
+        "town": "Ruthin",
+        "county": "Denbighshire",
+        "postcode": "CH7 4TB",
+        "country": "Wales",
+        "countryNote": "CH7 postcodes fall within Flintshire/Denbighshire, North East Wales. The operator is Wales-based and eligible for this directory.",
+        "addressSource": "https://www.visitwales.com/attraction/sightseeing-tour/adventure-tours-uk-526631"
+      }
+    },
+    "location": {
+      "lat": 53.11,
+      "lng": -3.3,
+      "latLngNote": "Approximate coordinates from internal walking.csv. Llanarmon-yn-Ial is located in the Clwydian Range and Dee Valley Area of Outstanding Natural Beauty, consistent with lat 53.11 / lng -3.3. Verify precision against Google Maps before using as a map pin.",
+      "latLngSource": "content/operators/walking.csv (internal data file)",
+      "region": "north_wales",
+      "serviceAreas": [
+        "North Wales",
+        "South Wales",
+        "UK-wide (Scotland, England, Northern Ireland)"
+      ],
+      "serviceAreaSource": "https://adventuretoursuk.com/adventure-holidays/"
+    },
+    "founders": {
+      "names": "Claire and Jim (surnames: Claire Copeman; Jim's surname not confirmed in public sources)",
+      "backgroundNote": "Husband-and-wife team; former corporate professionals who became outdoor enthusiasts. Claire Copeman is the named director and primary public-facing representative.",
+      "source": "https://adventuretoursuk.com/about-us/ and https://untoursfoundation.org/about-us/our-portfolio/adventure-tours-uk/"
+    },
+    "description": {
+      "short": "Adventure Tours UK is a B Corp-certified outdoor adventure company based in the Clwydian Range, Denbighshire, offering small group tours, self-guided active holidays, and tailor-made experiences across Wales and the UK. Led by local guides and rooted in sustainable travel principles, they offer hiking, mountain biking, trail running, canyoning, paddleboarding, and packrafting across Wales's wild landscapes.",
+      "shortNote": "Drafted from verified website and tourism-authority content. Needs editorial review for tone and length.",
+      "full": "Adventure Tours UK is a B Corp-certified adventure holiday company based in Llanarmon-yn-Ial in the Clwydian Range and Dee Valley AONB, Denbighshire, North Wales. Founded by husband-and-wife team Claire and Jim Copeman, the company specialises in carefully crafted active holidays that connect people with nature and local communities through authentic experiences in the UK's wild spaces.\n\nThe company offers a broad range of guided and self-directed adventures: small group tours (4–14 days), self-guided hiking and cycling holidays, tailor-made itineraries for individuals, couples, families, and corporate groups, and specialist programmes including trail running breaks, wild wellness retreats, and women-only leadership camps. Activities include hiking, mountain biking, trail running, canyoning, gorge walking, stand-up paddleboarding, packrafting, riverbugging, and rib rides.\n\nNorth Wales — including Snowdonia, the Clwydian Range, and the Dee Valley — is at the heart of their offering, but the company also operates throughout South Wales and across Scotland and other UK regions. They work with local guides and accommodation providers, and their woodland planting project at Ty'n-y-Pistyll supports their Net Zero by 2030 commitment.\n\nThe company holds B Corp certification (awarded March 2023, impact score 80.7), is a member of ABTOT and the Adventure Travel Trade Association (ATTA), a signatory of the Glasgow Declaration on Climate Action in Tourism, a Visit Wales partner, and holds Denbighshire Tourism Ambassador and Good to Go Wales status.",
+      "fullNote": "Drafted from verified website content (adventuretoursuk.com), VisitWales, northeastwales.wales, meetinwales.com, bcorporation.net, and untoursfoundation.org. Needs editorial tone review. Pricing references deliberately omitted — see pricing section."
+    },
+    "activities": [
+      { "name": "Hiking and Hill Walking", "source": "https://adventuretoursuk.com/adventure-holidays/" },
+      { "name": "Mountain Biking", "source": "https://adventuretoursuk.com/adventure-holidays/" },
+      { "name": "Trail Running", "source": "https://adventuretoursuk.com/" },
+      { "name": "Canyoning", "source": "https://www.meetinwales.com/operator/operator-handler/adventure-tours-uk-2167057" },
+      { "name": "Gorge Walking", "source": "https://adventuretoursuk.com/adventure-holidays/" },
+      { "name": "Stand-Up Paddleboarding (SUP)", "source": "https://www.meetinwales.com/operator/operator-handler/adventure-tours-uk-2167057" },
+      { "name": "Packrafting", "source": "https://www.meetinwales.com/operator/operator-handler/adventure-tours-uk-2167057" },
+      { "name": "Riverbugging", "source": "https://www.meetinwales.com/operator/operator-handler/adventure-tours-uk-2167057" },
+      { "name": "Rib Rides", "source": "https://www.meetinwales.com/operator/operator-handler/adventure-tours-uk-2167057" },
+      { "name": "Cycling (self-guided and guided)", "source": "https://adventuretoursuk.com/adventure-holidays/" },
+      { "name": "Wild Wellness Retreats", "source": "https://adventuretoursuk.com/adventure-holidays/" },
+      { "name": "Corporate Team Building", "source": "https://www.meetinwales.com/operator/operator-handler/adventure-tours-uk-2167057" },
+      { "name": "Foraging", "source": "https://www.bcorporation.net/en-us/find-a-b-corp/company/adventure-tours-uk/" },
+      { "name": "Yoga", "source": "https://www.bcorporation.net/en-us/find-a-b-corp/company/adventure-tours-uk/" }
+    ],
+    "tourTypes": [
+      {
+        "type": "Small Group Tours",
+        "detail": "4–14 days; guided; locally led; groups of up to 150 (group rates for 15+)",
+        "source": "https://adventuretoursuk.com/"
+      },
+      {
+        "type": "Self-Guided Active Tours",
+        "detail": "Hiking and cycling holidays with operator-arranged accommodation; self-drive format",
+        "source": "https://adventuretoursuk.com/adventure-holidays/"
+      },
+      {
+        "type": "Tailor-made",
+        "detail": "Bespoke itineraries for individuals, couples, families, and groups",
+        "source": "https://adventuretoursuk.com/about-us/"
+      },
+      {
+        "type": "Corporate Groups",
+        "detail": "Team building, women-only leadership camps, digital detox, incentive trips; 1–150 people",
+        "source": "https://www.meetinwales.com/operator/operator-handler/adventure-tours-uk-2167057"
+      }
+    ],
+    "sampleNorthWalesTours": [
+      {
+        "name": "Bucket List Weekender",
+        "duration": "2 nights",
+        "price": "From £520",
+        "highlights": "E-foil riding, Zip World zipline",
+        "format": "Self-drive",
+        "source": "https://adventuretoursuk.com/tour/adventure-north-wales/"
+      },
+      {
+        "name": "Hiking in Snowdonia",
+        "duration": "2 nights",
+        "price": "From £225",
+        "highlights": "Self-guided Snowdonia hiking with accommodation arranged",
+        "format": "Self-guided / self-drive",
+        "source": "https://adventuretoursuk.com/tour/adventure-north-wales/"
+      },
+      {
+        "name": "36 Hour Adventure",
+        "duration": "36 hours",
+        "price": "From £445",
+        "highlights": "Mountain terrain + coastal access + adrenaline activities; groups of 2–4",
+        "format": "Self-drive",
+        "source": "https://adventuretoursuk.com/tour/adventure-north-wales/"
+      },
+      {
+        "name": "Welsh Wildlife & Italian Style",
+        "duration": "2 nights",
+        "price": "From £295",
+        "highlights": "Nature, distinctive architecture, medieval history",
+        "format": "Self-drive",
+        "source": "https://adventuretoursuk.com/tour/adventure-north-wales/"
+      }
+    ],
+    "pricingNote": "Sample North Wales breaks range from approximately £225 to £520 per person. Multi-day self-guided tours and small group tours range from approximately £995 to £1,495. Prices are indicative and sourced from the website as of June 2026 — they change with season and availability. Do not publish prices without confirming current rates with the operator. Source: https://adventuretoursuk.com",
+    "groupCapacity": {
+      "minimum": 1,
+      "maximum": 150,
+      "groupRateThreshold": 15,
+      "source": "https://www.meetinwales.com/operator/operator-handler/adventure-tours-uk-2167057"
+    },
+    "accessibility": {
+      "hearingAccessibility": true,
+      "mobilityAccessibility": true,
+      "visualAccessibility": true,
+      "childrenWelcome": true,
+      "petsAccepted": true,
+      "source": "https://www.visitwales.com/attraction/sightseeing-tour/adventure-tours-uk-526631",
+      "note": "Accessibility details are taken from the VisitWales listing. Specific details of what is/isn't accessible within individual tours require direct verification with the operator."
+    },
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "No Google Business Profile rating found via web search. This matches the known blocker stated in the task brief. A Google Maps listing may exist but was not surfaced in search results. The operator should be contacted to confirm their Google Business Profile URL, or searched directly at maps.google.com for 'Adventure Tours UK Llanarmon-yn-Ial CH7 4TB'.",
+        "verifyManually": true
+      },
+      "trustpilot": {
+        "rating": "4.8",
+        "ratingLabel": "Excellent",
+        "reviewCount": "approximately 106 (as of June 2026 research — verify current count)",
+        "url": "https://www.trustpilot.com/review/www.adventuretoursuk.com",
+        "note": "Rating of 4.8 sourced from Trustpilot page title in search snippets (June 2026). One search snippet showed 4.9 from page 2 URL; this may reflect a slightly different snapshot. Human reviewer should visit the Trustpilot page directly to confirm current rating and review count before publishing.",
+        "verifyManually": true
+      }
+    },
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/AdventureUK/",
+        "handle": "AdventureUK",
+        "source": "https://adventuretoursuk.com/"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/adventuretoursuk/",
+        "handle": "adventuretoursuk",
+        "followersApprox": 2723,
+        "postsApprox": 1326,
+        "note": "Follower/post count from June 2026 search snippet — verify current figures.",
+        "source": "https://www.instagram.com/adventuretoursuk/"
+      },
+      "linkedin": {
+        "url": "https://uk.linkedin.com/company/adventuretoursuk",
+        "source": "https://adventuretoursuk.com/"
+      }
+    },
+    "accreditations": [
+      {
+        "name": "B Corp Certified",
+        "certifiedSince": "March 2023",
+        "bImpactScore": 80.7,
+        "medianScore": 50.9,
+        "note": "Score breakdown: Governance 17.3, Workers 25.0, Community 17.8, Environment 15.8, Customers 4.6",
+        "source": "https://www.bcorporation.net/en-us/find-a-b-corp/company/adventure-tours-uk/"
+      },
+      {
+        "name": "ABTOT Member",
+        "note": "Association of British Travel Organisers to Turkey — financial protection for packaged holidays",
+        "source": "https://adventuretoursuk.com/"
+      },
+      {
+        "name": "ATTA Member",
+        "fullName": "Adventure Travel Trade Association",
+        "source": "https://adventuretoursuk.com/"
+      },
+      {
+        "name": "Glasgow Declaration Signatory",
+        "note": "Commitment to halving tourism emissions by 2030 and achieving Net Zero by 2050",
+        "source": "https://adventuretoursuk.com/"
+      },
+      {
+        "name": "Visit Wales Partner",
+        "source": "https://www.visitwales.com/attraction/sightseeing-tour/adventure-tours-uk-526631"
+      },
+      {
+        "name": "Denbighshire Tourism Ambassador",
+        "source": "https://www.northeastwales.wales/things-to-do/adventure-tours-uk/"
+      },
+      {
+        "name": "Good to Go Wales",
+        "note": "Welsh Government COVID-secure tourism industry standard — confirm still current",
+        "source": "https://www.northeastwales.wales/things-to-do/adventure-tours-uk/",
+        "verifyManually": true
+      },
+      {
+        "name": "Great West Way Partner",
+        "source": "https://adventuretoursuk.com/about-us/"
+      }
+    ],
+    "awards": [
+      {
+        "name": "Travel Industry Awards 2022 — UK & Ireland Holiday Provider of the Year",
+        "result": "Finalist",
+        "source": "https://www.bcorporation.net/en-us/find-a-b-corp/company/adventure-tours-uk/"
+      },
+      {
+        "name": "Great British Entrepreneur Awards 2022 — Service Industries Entrepreneur of the Year (Wales region)",
+        "result": "Shortlisted",
+        "source": "https://www.bcorporation.net/en-us/find-a-b-corp/company/adventure-tours-uk/"
+      }
+    ],
+    "sustainability": {
+      "netZeroTarget": "2030",
+      "woodland": "Ty'n-y-Pistyll (native woodland planting offset programme)",
+      "source": "https://www.meetinwales.com/operator/operator-handler/adventure-tours-uk-2167057",
+      "note": "Also a member of the UnTours Foundation portfolio, which supports social enterprise travel businesses. Source: https://untoursfoundation.org/about-us/our-portfolio/adventure-tours-uk/"
+    },
+    "videoConsultations": {
+      "available": true,
+      "platform": "HubSpot Meetings (linked from contact page)",
+      "bookingContact": "Claire Copeman",
+      "source": "https://adventuretoursuk.com/contact-us/"
+    }
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "No openly licensed logo found on Openverse, Unsplash, or Wikimedia Commons. All website imagery is copyright Adventure Tours UK © 2026. The operator's logo must be obtained directly from Adventure Tours UK under written licence or permission.",
+      "actionRequired": "Contact Adventure Tours UK at hello@adventuretoursuk.com or +44 (0)1824 737024 to request a media pack or press kit including logo files."
+    },
+    "cover": {
+      "status": "BLOCKED",
+      "reason": "All photography on adventuretoursuk.com and the operator's Instagram (@adventuretoursuk, 1,326 posts) is copyright Adventure Tours UK. No freely licensed photographs depicting this operator's specific activities were found. Reproducing Instagram images requires explicit written permission.",
+      "wikimediaAlternativeNote": "Wikimedia Commons holds freely licensed landscape photographs of the operator's local area — the Clwydian Range (Category:Clwydian_Range) and the Clwydian Way walking route (Category:Clwydian_Way) — which could be used as generic regional context imagery. These would not depict Adventure Tours UK's activities or branded experiences. A human editor should assess whether generic regional landscape photos are acceptable as interim cover images for this listing.",
+      "wikimediaSource": "https://commons.wikimedia.org/wiki/Category:Clwydian_Range and https://commons.wikimedia.org/wiki/Category:Clwydian_Way",
+      "actionRequired": "Option A (preferred): Contact hello@adventuretoursuk.com to request a media pack with press-quality images licensed for use on Adventure Wales. Option B (interim): Select a Clwydian Range / North Wales landscape image from Wikimedia Commons under a compatible CC licence, clearly noting it is a regional context image and not an operator photograph."
+    },
+    "gallery": {
+      "status": "BLOCKED",
+      "reason": "Same copyright restrictions apply. No freely licensed gallery imagery found."
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Google rating / Google Business Profile exists",
+      "confidence": "UNVERIFIED",
+      "issue": "The task brief flags 'no Google rating' as a known blocker. No Google Business Profile listing for Adventure Tours UK was surfaced by web searches. The business has a strong Trustpilot presence (4.8/5) but a Google Maps listing was not confirmed.",
+      "action": "Search Google Maps directly for 'Adventure Tours UK Llanarmon-yn-Ial CH7 4TB'. If a listing exists, capture the current star rating, review count, and Google Maps URL. If no listing exists, consider whether the Adventure Wales directory page should prompt visitors to leave a Google review, and note the absence in QA."
+    },
+    {
+      "claim": "Trustpilot rating is 4.8/5 with ~106 reviews",
+      "confidence": "MODERATE",
+      "issue": "Rating was derived from URL title snippets in search results, not from a live page fetch (Trustpilot returned 403). Search snippets showed 4.8 (main page) and 4.9 (page 2 URL) — possible minor discrepancy. Review count of 106 may be outdated.",
+      "action": "A human reviewer should visit https://www.trustpilot.com/review/www.adventuretoursuk.com directly to confirm the current rating and review count."
+    },
+    {
+      "claim": "Good to Go Wales accreditation is still current",
+      "confidence": "LOW",
+      "issue": "Good to Go Wales was a COVID-era certification scheme. It is referenced on the northeastwales.wales listing but the scheme may no longer be active or the accreditation may have lapsed.",
+      "action": "Verify whether Good to Go Wales is still an active scheme before featuring it in the listing. Remove if the scheme has been discontinued."
+    },
+    {
+      "claim": "ABTOT membership is current",
+      "confidence": "MODERATE",
+      "issue": "ABTOT membership is shown on the operator's homepage but membership status should be verified annually.",
+      "action": "Check https://www.abtot.com to verify current membership status before highlighting financial protection in the listing."
+    },
+    {
+      "claim": "Jim's surname and co-founder status",
+      "confidence": "LOW",
+      "issue": "The About Us page references Claire and Jim as founders. Public sources name Claire Copeman but do not confirm Jim's surname or his current role. meetinwales.com lists only clairecopeman@adventuretoursuk.com as director.",
+      "action": "If the listing bio references both founders, verify Jim's surname and current involvement before publishing."
+    },
+    {
+      "claim": "Pricing figures (£225–£1,495)",
+      "confidence": "CURRENT-ONLY",
+      "issue": "Prices are scraped from the website as of June 2026. Tour prices change seasonally and with availability.",
+      "action": "Do not publish specific prices without confirming with the operator. Use approximate ranges with a 'from' caveat and direct readers to the website to book."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://adventuretoursuk.com/",
+      "description": "Official operator website — activities, description, accreditations, social links, copyright 2026",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://adventuretoursuk.com/contact-us/",
+      "description": "Contact page — phone +44(0)1824 737024, email hello@adventuretoursuk.com, HubSpot video consultation link",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://adventuretoursuk.com/about-us/",
+      "description": "About page — founders Claire and Jim, mission, B Corp, ABTOT, ATTA, Glasgow Declaration, Great West Way",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://adventuretoursuk.com/adventure-holidays/",
+      "description": "Adventure holidays page — tour categories, sample pricing £995–£1,495, Wales service areas",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://adventuretoursuk.com/tour/adventure-north-wales/",
+      "description": "North Wales tour page — Bucket List Weekender, Welsh Wildlife, Hiking in Snowdonia, 36 Hour Adventure with prices",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.visitwales.com/attraction/sightseeing-tour/adventure-tours-uk-526631",
+      "description": "VisitWales listing — full address (Bryn Mywion Bach, School Lane, CH7 4TB), phone, email, activities, accessibility",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.northeastwales.wales/things-to-do/adventure-tours-uk/",
+      "description": "North East Wales tourism board listing — phone, email, activities, Denbighshire Tourism Ambassador, Good to Go Wales",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.meetinwales.com/operator/operator-handler/adventure-tours-uk-2167057",
+      "description": "Meet in Wales listing — corporate contact email, capacity 1-150, full activity list, canyoning, SUP, packrafting, riverbugging",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/adventure-tours-uk/",
+      "description": "B Lab Global — B Corp score 80.7, certified March 2023, score breakdown, awards 2022",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://untoursfoundation.org/about-us/our-portfolio/adventure-tours-uk/",
+      "description": "UnTours Foundation portfolio page — founder biography (Claire Copeman), sustainability focus, Reset Tourism Fund",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.trustpilot.com/review/www.adventuretoursuk.com",
+      "description": "Trustpilot listing — rating 4.8/5 'Excellent', approximately 106 reviews (from search snippet; page returned 403)",
+      "accessedAt": "2026-06-04",
+      "note": "Rating derived from URL title snippets in search results, not from a live page fetch"
+    },
+    {
+      "url": "https://traveltrade.visitwales.com/operator/operator-handler/adventure-tours-uk-2167058",
+      "description": "Travel Trade Wales listing — confirms operator on official trade directory",
+      "accessedAt": "2026-06-04",
+      "note": "URL confirmed in search results; page content not fetched"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Clwydian_Range",
+      "description": "Wikimedia Commons — freely licensed landscape images of the Clwydian Range, near operator's base",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Clwydian_Way",
+      "description": "Wikimedia Commons — freely licensed walking route images in the Clwydian Range",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "content/operators/walking.csv",
+      "description": "Internal walking operators CSV — confirms slug, website, email, regions, service types, coordinates, group-friendly",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirms operator-adventure-tours-uk, unclassified_operator tier, research_needed status, 4 known missing fields",
+      "type": "internal"
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "Research has resolved 3 of the 4 known blockers: phone number found (+44(0)1824 737024), substantial description and activities data gathered, and Trustpilot rating (4.8/5) found as a partial substitute for the missing Google rating. The remaining critical blocker is images — both logo and cover photo are commercially copyrighted with no freely licensed alternative. A human QA pass is needed to: (1) confirm Google Business Profile status, (2) decide on interim image strategy (operator media request vs generic Wikimedia regional landscape), and (3) verify the Trustpilot rating live before publishing.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Logo and cover image blocked — no freely licensed photography found",
+      "detail": "All photography on adventuretoursuk.com and the operator's Instagram is copyright © Adventure Tours UK 2026. No open-licence alternatives representing this operator's activities were found. Two options: (A) contact hello@adventuretoursuk.com for a media pack (preferred); or (B) use an interim Wikimedia Commons landscape of the Clwydian Range as regional context, clearly labelled as such.",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 2,
+      "blocker": "Google Business Profile / Google rating unconfirmed",
+      "detail": "The task brief flags 'no Google rating' as a known blocker. No Google Maps listing was surfaced by web search. A human reviewer must search Google Maps for 'Adventure Tours UK Llanarmon-yn-Ial CH7 4TB' and either capture the rating or confirm no listing exists. The operator has a strong Trustpilot presence (4.8/5 Excellent) which can serve as a rating signal in the interim.",
+      "severity": "MEDIUM"
+    },
+    {
+      "rank": 3,
+      "blocker": "Trustpilot rating must be verified live before publishing",
+      "detail": "Rating of 4.8/5 was inferred from search result URL title snippets; the Trustpilot page returned a 403 error during research. A human reviewer must visit https://www.trustpilot.com/review/www.adventuretoursuk.com directly to confirm the current score and review count before displaying it in the listing.",
+      "severity": "LOW"
+    }
+  ]
+}

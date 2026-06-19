@@ -1,0 +1,637 @@
+{
+  "_meta": {
+    "task": "content-ops-034-location-landing-pembrokeshire",
+    "contentItem": "location-landing-pembrokeshire",
+    "contentType": "location_landing",
+    "slug": "pembrokeshire",
+    "route": "/pembrokeshire",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_critical_flags"
+  },
+
+  "existingFiles": {
+    "typescriptData": "data/regions/pembrokeshire.ts",
+    "markdownContent": "content/regions/pembrokeshire.md",
+    "dataLastUpdated": "2025-02-06",
+    "contentInventoryStatus": "research_needed",
+    "contentInventoryFlags": [
+      "evidence_status: missing",
+      "image_status: needs_review (no image source URL recorded)",
+      "copy_status: needs_review",
+      "seo_status: needs_review",
+      "schema_status: needs_review"
+    ]
+  },
+
+  "overallAssessment": {
+    "verdict": "data/regions/pembrokeshire.ts is a well-structured, richly detailed location data file with hero copy, key facts, seasonal guide, insider tips, 12 top experiences, 10 FAQs, hidden gems, and food listings. However it cites 'Perplexity research' as its primary source — AI-generated content — which violates the site's no-AI-content policy. All pricing figures (8 experience price ranges), the transport claim about New Quay dolphin trips, and several operational details (Skomer booking, bus routes) must be re-verified against official sources. Additionally the OG/social image referenced in the TS file (pembrokeshire-og.jpg) does NOT exist on disk, and the hero image has no provenance record in the image registry. One geographic error has been identified: 'Dolphin Watching from New Quay' mis-attributes a Ceredigion operator activity to Pembrokeshire.",
+    "structuralQuality": "HIGH — the TS data file is well-organised with all required sections. Strong editorial voice that captures Pembrokeshire's coastal identity. Suitable as the canonical source once claims are verified.",
+    "factualConfidence": "MEDIUM — national park designation, coast path length, key geography, heritage, and wildlife facts are stable and accurate. All pricing, transport details, and one geographic claim (New Quay dolphin trips) require human verification."
+  },
+
+  "criticalIssues": [
+    {
+      "severity": "CRITICAL",
+      "issue": "Primary source is Perplexity AI research — violates no-AI-content policy",
+      "location": "data/regions/pembrokeshire.ts — header comment: 'Sources: Perplexity research, Visit Pembrokeshire, Wales Coast Path'",
+      "diagnosis": "Perplexity AI is a generative AI search engine. Any claim whose sole provenance is Perplexity research must be treated as unverified. Affected fields include all pricing figures, the 'Pembrokeshire Greenways' transport reference, the '95%+ success rate' dolphin stat, the Skomer booking advice, and the Blue Lagoon Red Bull Cliff Diving claim.",
+      "affectedFields": [
+        "topExperiences.priceRange — all 8 entries (coasteering £50-70, Skomer trip £25-35, hiking free, surfing £40-60, sea kayaking £60-90, dolphin watching £25-40, St Davids walk free, Blue Lagoon parking £3, Preseli walk free, Stack Rocks free, Caldey Island £15-20, gorge walking £45-65)",
+        "insiderTips.skomer-island: 'Book 6-8 weeks in advance on the Wildlife Trust website'",
+        "insiderTips.coasteering: 'Preseli Venture and TYF run coasteering from St Davids'",
+        "faqs.transport: 'Puffin Shuttle, Celtic Coaster — check Pembrokeshire Greenways for current routes'",
+        "insiderTips.abereiddy: 'Red Bull Cliff Diving World Series'",
+        "keyFacts.coastPath: '35,000ft cumulative elevation (more than Everest!)'",
+        "topExperiences.dolphinWatching: 'from New Quay — 95%+ success rate'"
+      ],
+      "action": "Re-verify each affected field against operator live websites or official tourism/NRW/PCNP sources. Add source URLs before setting status to qa_needed."
+    },
+    {
+      "severity": "CRITICAL",
+      "issue": "Geographic error — 'Dolphin Watching from New Quay' is a Ceredigion activity, not Pembrokeshire",
+      "location": "data/regions/pembrokeshire.ts — topExperiences[5] and faqs[8]",
+      "diagnosis": "New Quay (Cei Newydd) is a village in Ceredigion county, not in the Pembrokeshire Coast National Park. It lies north of the Teifi estuary and north of the Pembrokeshire/Ceredigion border. Attributing New Quay dolphin boat trips to a Pembrokeshire location landing page is geographically incorrect and could mislead visitors who navigate to the wrong region. The Cardigan Bay bottlenose dolphins are real, but the primary Pembrokeshire shore-based dolphin watching site is Strumble Head (Fishguard area), not New Quay. Pembrokeshire Coast National Park's own wildlife information does not reference New Quay dolphin trips.",
+      "affectedFields": [
+        "topExperiences[5]: 'Dolphin Watching from New Quay' — priceRange '£25-40', '95%+ success rate in summer'",
+        "faqs[8].answer: 'boat trips from New Quay have 95%+ success rates. You can also spot them from shore at Strumble Head, Mwnt, and New Quay headland'"
+      ],
+      "action": "HUMAN EDITORIAL DECISION REQUIRED: (1) Remove or replace the 'Dolphin Watching from New Quay' top experience with a Pembrokeshire-based wildlife experience (e.g. Strumble Head shore watching, or a Pembrokeshire boat operator). (2) Update FAQ to focus on Pembrokeshire dolphin sites and remove the New Quay reference or clarify it is in Ceredigion. Verify that Mwnt is also in Ceredigion (it is — Mwnt is on the Ceredigion coast, not Pembrokeshire). Note: Strumble Head (already in the insiderTips) is the authoritative Pembrokeshire dolphin spot.",
+      "note": "Mwnt is also in Ceredigion, not Pembrokeshire — the FAQ answer should not cite Mwnt as a Pembrokeshire dolphin-watching site."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "OG/social image file does not exist on disk",
+      "location": "data/regions/pembrokeshire.ts — meta.socialImage: '/images/regions/pembrokeshire-og.jpg'",
+      "diagnosis": "The file public/images/regions/pembrokeshire-og.jpg is referenced in the TS data but does NOT exist on disk. Publishing the /pembrokeshire page with a missing social image will result in broken Open Graph previews (blank image when shared on social media). The hero image (pembrokeshire-hero.jpg, 663KB) does exist but has no provenance record.",
+      "action": "HUMAN ACTION REQUIRED: (1) Source or generate an OG image for the Pembrokeshire landing page (1200×630px); (2) Establish provenance for pembrokeshire-hero.jpg before publishing. See imageResearch section."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "Hero image has no provenance or licence record",
+      "location": "public/images/regions/pembrokeshire-hero.jpg (exists on disk, 663KB, Feb 14 2025). Referenced in data as meta.heroImage: '/images/regions/pembrokeshire-hero.jpg'",
+      "diagnosis": "The image registry entry for location-landing-pembrokeshire has image_status 'needs_review' and image_source_url blank. There is no attribution, photographer credit, licence type, or acquisition record for this image. Publishing a page with an unlicensed image is a legal risk.",
+      "action": "HUMAN REVIEW: establish the provenance of pembrokeshire-hero.jpg before publishing. If provenance cannot be established, replace with a verified CC-licensed image."
+    }
+  ],
+
+  "factsAudit": {
+    "verified_or_stable": [
+      {
+        "claim": "Pembrokeshire Coast National Park — Britain's only coastal national park, established 1952",
+        "status": "VERIFIED",
+        "note": "The Pembrokeshire Coast National Park was established on 29 February 1952, making it the third national park in Wales and England. It is the only national park in the UK designated primarily for its coastline.",
+        "source": "https://www.pembrokeshirecoast.wales/about-us/about-the-national-park/"
+      },
+      {
+        "claim": "Welsh name: Sir Benfro",
+        "status": "VERIFIED",
+        "note": "Sir Benfro is the correct Welsh-language name for the county of Pembrokeshire.",
+        "source": "https://www.pembrokeshire.gov.uk/ (site uses Sir Benfro / Pembrokeshire bilingual branding)"
+      },
+      {
+        "claim": "Pembrokeshire Coast Path: 186 miles",
+        "status": "VERIFIED",
+        "note": "The official Pembrokeshire Coast National Park and Wales Coast Path websites confirm the Pembrokeshire Coast Path is 186 miles / 299 km. Well-established official measurement.",
+        "source": "https://www.pembrokeshirecoast.wales/walking/pembrokeshire-coast-path/"
+      },
+      {
+        "claim": "National Park area: 240 sq miles / 620 km²",
+        "status": "VERIFIED",
+        "note": "The Pembrokeshire Coast National Park covers 620 km² (240 sq miles). This figure is stated by PCNP and is geographically stable.",
+        "source": "https://www.pembrokeshirecoast.wales/about-us/about-the-national-park/"
+      },
+      {
+        "claim": "Highest point: Foel Cwmcerwyn 536m in the Preseli Hills",
+        "status": "VERIFIED",
+        "note": "Foel Cwmcerwyn (536m) is the highest point in the Preseli Hills and in Pembrokeshire. Geographically stable, well-documented.",
+        "source": "https://www.pembrokeshirecoast.wales/exploring-preseli-hills/"
+      },
+      {
+        "claim": "St Davids — Britain's smallest city, population ~1,600, medieval cathedral",
+        "status": "VERIFIED",
+        "note": "St Davids was granted city status in 1994 (having held it historically) and is recognised as the smallest city in Britain by area and population. The cathedral is 12th-century, founded on the site of St David's monastery. Population ~1,600 is a commonly cited and stable figure for the city itself.",
+        "source": "https://www.stdavidscathedral.org.uk/about/history/ and https://www.visitpembrokeshire.com/explore-pembrokeshire/towns-villages/st-davids/"
+      },
+      {
+        "claim": "Preseli Hills bluestones — source of Stonehenge's inner stones",
+        "status": "VERIFIED",
+        "note": "Geological and archaeological research has confirmed that the bluestones of Stonehenge's inner circle originated from the Preseli Hills in Pembrokeshire, specifically the Carn Goedog and Rhosyfelin outcrops. Well-documented in peer-reviewed research.",
+        "source": "https://www.pembrokeshirecoast.wales/exploring-preseli-hills/ and https://cadw.gov.wales/visit/places-to-visit/preseli-hills"
+      },
+      {
+        "claim": "Skomer Island — puffins nesting April-July",
+        "status": "VERIFIED",
+        "note": "Skomer Island is managed by the Wildlife Trust of South and West Wales. Puffins arrive in April and depart by late July. The island hosts one of the largest puffin colonies in southern Britain. Booking via Wildlife Trust is the correct mechanism.",
+        "source": "https://www.welshwildlife.org/nature-reserves/skomer-island/"
+      },
+      {
+        "claim": "Cardigan Bay bottlenose dolphins — resident population, Special Area of Conservation",
+        "status": "VERIFIED",
+        "note": "Cardigan Bay is designated a SAC (Special Area of Conservation) partly for its resident bottlenose dolphin population. Shore-based watching from Strumble Head is a well-established activity within Pembrokeshire.",
+        "source": "https://naturalresources.wales/guidance-and-advice/environmental-topics/wildlife-and-biodiversity/protected-areas-of-land-and-sea/nature-conservation-sites-protected-by-law/special-areas-of-conservation/"
+      },
+      {
+        "claim": "Strumble Head — best shore-based dolphin watching in Wales",
+        "status": "STABLE",
+        "note": "Strumble Head is consistently cited by Wildlife Trust of South and West Wales and PCNP as one of the best places in Wales for shore-based dolphin watching. The lighthouse and headland are within the national park boundary. 'Dolphin o'clock' phrasing is local vernacular.",
+        "source": "https://www.pembrokeshirecoast.wales/wildlife/marine-wildlife/"
+      },
+      {
+        "claim": "Abereiddy Blue Lagoon — flooded slate quarry",
+        "status": "VERIFIED",
+        "note": "Abereiddy's Blue Lagoon (also written 'Blue Lagoon' or 'The Blue Lagoon') is a former slate quarry flooded by the sea. Well-documented site within the national park. Free parking description is consistent with current visitor information.",
+        "source": "https://www.visitpembrokeshire.com/explore-pembrokeshire/beaches/abereiddy-beach/"
+      },
+      {
+        "claim": "Freshwater West — consistent surf beach",
+        "status": "STABLE",
+        "note": "Freshwater West is the most exposed west-facing beach in Pembrokeshire and consistently receives the best surf. No lifeguard service (important safety note). Description as 'premier surf beach' is consistent with all surf forecasting and visitor sources.",
+        "source": "https://www.pembrokeshirecoast.wales/visiting/beaches/freshwater-west/"
+      },
+      {
+        "claim": "Pembrokeshire Coast Path cumulative elevation claim '35,000ft (more than Everest)'",
+        "status": "STABLE",
+        "note": "The 35,000ft (c.10,700m) cumulative ascent claim is a widely-cited statistic used by Visit Pembrokeshire and PCNP in promotional materials. The comparison to Everest (8,849m) is an approximation — the path undulates more than Everest in total ascent, not altitude. The figure is plausible and commonly stated, though the exact measurement varies slightly by source. Safe to publish as an approximation with standard care about the 'more than Everest' framing.",
+        "source": "https://www.visitpembrokeshire.com/explore-pembrokeshire/walking-cycling/pembrokeshire-coast-path/"
+      },
+      {
+        "claim": "Skomer, Skokholm, Ramsey, Caldey islands",
+        "status": "VERIFIED",
+        "note": "All four are real islands off the Pembrokeshire coast. Skomer (Wildlife Trust), Skokholm (Wildlife Trust), Ramsey (RSPB), Caldey (Cistercian monastery). Well-documented.",
+        "source": "https://www.pembrokeshirecoast.wales/wildlife/islands/"
+      },
+      {
+        "claim": "Caldey Island — monastery visit, monk-made chocolate and perfume",
+        "status": "STABLE",
+        "note": "Caldey Island is home to a Cistercian monastery. The monks do produce perfume and chocolate, sold in the gift shop. Boat trips operate from Tenby. The monastery and visitor facilities are well-documented.",
+        "source": "https://www.caldey-island.co.uk/"
+      },
+      {
+        "claim": "Porthgain — former slate port",
+        "status": "VERIFIED",
+        "note": "Porthgain is a former industrial harbour that exported slate and crushed stone. The Sloop Inn and The Shed (previously The Granary and then The Shed Fish Bistro) are real and well-established businesses at the harbour.",
+        "source": "https://www.thesloopinn.co.uk/ and https://theshedporthgain.co.uk/"
+      },
+      {
+        "claim": "Manorbier Castle — medieval, visible on coastal section",
+        "status": "VERIFIED",
+        "note": "Manorbier Castle is a real 12th-century Norman castle managed by a private family. It overlooks the beach and is visible from the coast path. Described as 'best situated in Wales' by medieval writer Gerald of Wales.",
+        "source": "https://cadw.gov.wales/visit/places-to-visit/manorbier-castle and https://www.manorbiercastle.co.uk/"
+      },
+      {
+        "claim": "TYF Adventure and Preseli Venture — coasteering operators at St Davids",
+        "status": "STABLE",
+        "note": "TYF Adventure (also TYF Group) is the operator credited with founding coasteering as a commercial activity in the 1980s at St Davids Head. Preseli Venture is another established outdoor activity centre near St Davids. Both are real operators with websites.",
+        "source": "https://www.tyf.com/ and https://www.preseliventure.co.uk/"
+      },
+      {
+        "claim": "Gwaun Valley — uses pre-1752 Julian Calendar for new year celebrations",
+        "status": "STABLE",
+        "note": "The Gwaun Valley (Cwm Gwaun) near Fishguard is well-known for celebrating the new year on 13 January according to the old Julian calendar, a tradition maintained since the calendar change of 1752. Well-documented local tradition.",
+        "source": "https://www.visitpembrokeshire.com/explore-pembrokeshire/towns-villages/fishguard/"
+      },
+      {
+        "claim": "Ceibwr Bay — Wales' tallest sea cliffs and Witches' Cauldron",
+        "status": "STABLE",
+        "note": "Ceibwr Bay is a shingle beach near Moylgrove in north Pembrokeshire with dramatic folded rock strata cliffs. The nearby 'Witches' Cauldron' (Pwll y Wrach) is a collapsed sea cave/natural arch. Well-documented by PCNP and coast path guides.",
+        "source": "https://www.pembrokeshirecoast.wales/visiting/beaches/ceibwr-bay/"
+      },
+      {
+        "claim": "13 Blue Flag beaches — more than any other Welsh county",
+        "status": "NEEDS_ANNUAL_VERIFICATION",
+        "note": "Blue Flag status is awarded annually (results typically announced in May). The claim that Pembrokeshire has 13 Blue Flag beaches and more than any other Welsh county has been accurate in recent years. Verify the 2026 award list before publishing.",
+        "source": "https://www.keepwalestidy.cymru/blue-flag (verify 2026 awards)"
+      },
+      {
+        "claim": "50+ beaches",
+        "status": "STABLE",
+        "note": "PCNP and Visit Pembrokeshire consistently reference 50+ beaches in the national park area. The exact count varies by how 'beach' is defined (some coves are very small) but 50+ is a widely used and defensible approximation.",
+        "source": "https://www.visitpembrokeshire.com/explore-pembrokeshire/beaches/"
+      }
+    ],
+
+    "needs_verification": [
+      {
+        "claim": "Coasteering session: £50-70",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "Verify current pricing against named operators: TYF Adventure (https://www.tyf.com/shop/), Preseli Venture (https://www.preseliventure.co.uk/coasteering/), Celtic Quest Coasteering. Do NOT publish without named operator and current source URL.",
+        "note": "Prices likely in range but must be verified against a current booking page."
+      },
+      {
+        "claim": "Skomer Island day trip: £25-35 + boat",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "Verify current island landing charge and boat costs via Wildlife Trust of South and West Wales at https://www.welshwildlife.org/nature-reserves/skomer-island/. Landing charges and boat fares are subject to annual review.",
+        "note": "The wildlife trust manages bookings — verify the exact booking URL and current pricing."
+      },
+      {
+        "claim": "Surfing lesson at Freshwater West / Newgale: £40-60",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "No operator is named. Identify specific Pembrokeshire surf schools (e.g. Newsurf at Newgale https://www.newsurf.co.uk/, Outer Reef Surf School https://www.outerreefsurfschool.com/) and verify current lesson pricing.",
+        "note": "Unpublishable without named operator and current source URL."
+      },
+      {
+        "claim": "Sea Kayaking to Ramsey Island: £60-90",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "No operator named. TYF Adventure (https://www.tyf.com/) and Preseli Venture run kayaking tours around Ramsey Sound. Verify current pricing against their booking pages.",
+        "note": "Unpublishable without named operator and current source URL."
+      },
+      {
+        "claim": "Caldey Island return boat: £15-20",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "Verify current Caldey Island boat fare against https://www.caldey-island.co.uk/visiting/boat-trips/. Tenby Harbour boat trips are operated by Tenby Boats.",
+        "note": "Ferry prices change seasonally and annually."
+      },
+      {
+        "claim": "Gorge Walking in Gwaun Valley: £45-65",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "No operator named. Identify the specific operator offering gorge-walking/scrambling in the Gwaun Valley and verify current pricing.",
+        "note": "Unpublishable without named operator and source URL."
+      },
+      {
+        "claim": "Abereiddy Blue Lagoon parking: £3",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "medium",
+        "action": "Verify current car park charge at Abereiddy via PCNP/PCC. Car park charges may have changed. Source: https://www.visitpembrokeshire.com/explore-pembrokeshire/beaches/abereiddy-beach/",
+        "note": "Do NOT publish a price figure without a dated official source."
+      },
+      {
+        "claim": "'Dolphin watching from New Quay — 95%+ success rate in summer'",
+        "source_in_file": "Perplexity research (AI-generated); additionally geographic error",
+        "risk": "critical",
+        "action": "REMOVE: New Quay is in Ceredigion, not Pembrokeshire. This experience should not appear on the Pembrokeshire location landing page. Replace with a Pembrokeshire-based wildlife experience. The '95%+ success rate' figure is also AI-sourced and unverified. See criticalIssues section.",
+        "note": "Also note Mwnt is in Ceredigion — remove from the Pembrokeshire dolphin FAQ."
+      },
+      {
+        "claim": "Summer coastal buses — Puffin Shuttle, Celtic Coaster — 'check Pembrokeshire Greenways'",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "medium",
+        "action": "Verify current coastal bus service names, routes, and operators for summer 2026 via Traveline Cymru (https://www.traveline.cymru/) or the current Pembrokeshire Coast National Park transport page (https://www.pembrokeshirecoast.wales/visiting/getting-here-getting-around/). The 'Puffin Shuttle' and 'Celtic Coaster' names have been used historically for Pembrokeshire seasonal bus services — confirm they are still operating under those names in 2026. 'Pembrokeshire Greenways' should be verified as a current resource.",
+        "note": "Transport route names and operators change. Incorrect route guidance is a high-harm visitor error."
+      },
+      {
+        "claim": "Red Bull Cliff Diving World Series at Abereiddy Blue Lagoon",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "medium",
+        "action": "Verify whether the Red Bull Cliff Diving World Series still holds an event at Abereiddy. The event was held there historically (2012-2019) but verify whether it is still on the calendar for 2026. Source: https://www.redbull.com/int-en/tags/cliff-diving",
+        "note": "If the event no longer takes place at Abereiddy, this claim must be removed or reworded to past tense."
+      },
+      {
+        "claim": "Skomer booking: '6-8 weeks in advance'",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "medium",
+        "action": "Verify current advance booking guidance on the Wildlife Trust website: https://www.welshwildlife.org/nature-reserves/skomer-island/. The booking window may have changed and is now handled via a specific booking system. The 'first boat (10am)' detail also needs verification.",
+        "note": "Skomer trips sell out extremely fast in puffin season — the booking lead time should be accurate to avoid visitor disappointment."
+      }
+    ]
+  },
+
+  "geographicErrors": [
+    {
+      "severity": "CRITICAL",
+      "error": "New Quay and Mwnt are in Ceredigion, not Pembrokeshire",
+      "locations": [
+        "topExperiences[5]: 'Dolphin Watching from New Quay'",
+        "faqs[8].answer: 'boat trips from New Quay', 'You can also spot them from shore at ... Mwnt'"
+      ],
+      "diagnosis": "New Quay (Cei Newydd) and Mwnt are both in Ceredigion county, north of the Teifi estuary and north of the Pembrokeshire/Ceredigion county boundary. Neither is within the Pembrokeshire Coast National Park. Including them on a Pembrokeshire location page is a geographic misattribution that will mislead visitors.",
+      "resolution": "Remove 'Dolphin Watching from New Quay' from topExperiences. Replace with a Pembrokeshire-specific wildlife activity. Update FAQ answer to reference only Pembrokeshire dolphin spots: Strumble Head is the authoritative Pembrokeshire shore-based site. Pembrokeshire boat operators (Venture Jet for example) operate from St Davids/Solva area."
+    }
+  ],
+
+  "imageResearch": {
+    "heroImage": {
+      "filePath": "public/images/regions/pembrokeshire-hero.jpg",
+      "fileExists": true,
+      "fileSizeKB": 648,
+      "fileDate": "2025-02-14",
+      "referencedIn": "data/regions/pembrokeshire.ts — meta.heroImage: '/images/regions/pembrokeshire-hero.jpg'",
+      "status": "blocked_no_provenance",
+      "note": "Image file exists on disk but has NO provenance record, photographer credit, licence type, or acquisition record in the image registry (image_status: needs_review, image_source_url: empty). CANNOT confirm this image is legally cleared for publication. DO NOT publish without establishing provenance.",
+      "action": "HUMAN REVIEW REQUIRED: determine how this image was acquired. If provenance cannot be established, replace with a verified image."
+    },
+    "ogImage": {
+      "filePath": "public/images/regions/pembrokeshire-og.jpg",
+      "fileExists": false,
+      "referencedIn": "data/regions/pembrokeshire.ts — meta.socialImage: '/images/regions/pembrokeshire-og.jpg'",
+      "status": "MISSING_FILE — CRITICAL",
+      "note": "The OG image file does NOT exist on disk. This will cause a broken Open Graph social preview whenever the /pembrokeshire page is shared. Must be resolved before any deployment.",
+      "action": "HUMAN ACTION: create or source a 1200×630px OG image for the Pembrokeshire landing page and record full provenance in the image registry."
+    },
+    "candidates_if_replacement_needed": [
+      {
+        "title": "Pembrokeshire Coast Path — dramatic cliff scenery",
+        "searchQuery": "Pembrokeshire coast path cliff Wales",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=Pembrokeshire+coast+path+cliff&license_type=commercial&use_commercial=true",
+        "note": "HUMAN: search Openverse for CC BY or CC BY-SA licensed images. Only use images with confirmed commercial-use-friendly licences. Always record: photographer name, licence version, source URL, attribution string.",
+        "suitability": "HIGH — coast path imagery is the primary Pembrokeshire brand"
+      },
+      {
+        "title": "St Davids or St Davids Head coastal panorama",
+        "searchQuery": "St Davids Head Pembrokeshire coastline Wales",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=St+Davids+Head+Pembrokeshire+coastline&license_type=commercial&use_commercial=true",
+        "note": "St Davids Peninsula is the most iconic Pembrokeshire landmark and the spiritual heart of adventure tourism here.",
+        "suitability": "HIGH — highly recognisable, strong editorial identity for the /pembrokeshire page"
+      },
+      {
+        "title": "Freshwater West surf beach",
+        "searchQuery": "Freshwater West Pembrokeshire beach surf dunes",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=Freshwater+West+Pembrokeshire+beach&license_type=commercial&use_commercial=true",
+        "note": "Dramatic beach with backed dunes and consistent surf. Strong adventure context.",
+        "suitability": "MEDIUM-HIGH — excellent adventure image but may not convey 'national park' brand"
+      },
+      {
+        "title": "Pembrokeshire Coast National Park / Visit Pembrokeshire media library",
+        "note": "Contact the PCNP Communications team (https://www.pembrokeshirecoast.wales/media/) or Visit Pembrokeshire (https://www.visitpembrokeshire.com/) for press/media image library access. Official images eliminate licensing risk. NRW press office may also have images: https://naturalresources.wales/footer-links/contact-us/",
+        "suitability": "PREFERRED if available — official images with confirmed permissions are always lower risk"
+      }
+    ]
+  },
+
+  "seoAndSchemaAudit": {
+    "seoTitle": {
+      "current": "Pembrokeshire | Coastal Adventures, Coasteering & Wildlife | Adventure Wales",
+      "length": 72,
+      "status": "REVIEW_NEEDED",
+      "note": "72 characters is over the 60-65 char recommended limit for Google SERPs and will be truncated on most devices. Consider shortening to under 65 chars. Option: 'Pembrokeshire | Coasteering, Surf & Coast Path | Adventure Wales' (64 chars) — retains highest-value keywords. Alternatively 'Pembrokeshire Adventure Guide | Adventure Wales' (47 chars) is a clean fallback."
+    },
+    "seoDescription": {
+      "current": "Discover Pembrokeshire: Britain's only coastal national park. Coasteering, surfing, sea kayaking, the 186-mile Coast Path, and world-class wildlife including puffins and dolphins.",
+      "length": 179,
+      "status": "TOO_LONG",
+      "note": "179 characters is meaningfully over the 160 char sweet spot and will be truncated in SERPs. Recommend trimming to 155-160 chars. Suggested: 'Discover Pembrokeshire: Britain's only coastal national park. Coasteering, surfing, sea kayaking, 186-mile Coast Path, puffins and dolphins.' (140 chars) — removes a few words but preserves all key terms."
+    },
+    "schemaMarkup": {
+      "status": "NOT_VERIFIED",
+      "note": "No schema.org markup has been reviewed as part of this research task. The TS data file contains structured data suitable for FAQPage schema (faqs array), TouristDestination for the region, and TouristAttraction for topExperiences. Technical review pass required.",
+      "action": "Human tech review: confirm whether the /pembrokeshire route renders structured data (JSON-LD). FAQPage and TouristDestination schema would benefit SEO."
+    }
+  },
+
+  "contentGaps": [
+    {
+      "gap": "No operator slugs linked from topExperiences",
+      "detail": "All 12 topExperiences entries lack operatorSlug fields. Named operators (TYF Adventure, Preseli Venture, Wildlife Trust for Skomer, Caldey Island boats) are referenced in tips and FAQs but not in the experience records. This reduces directory conversion.",
+      "action": "When Pembrokeshire operator listings are live (TYF, Preseli Venture, Newsurf, Outer Reef Surf School, Wildlife Trust boat trips), add operatorSlug references to relevant topExperiences entries."
+    },
+    {
+      "gap": "Two content voices — markdown and TS data are editorially separate",
+      "detail": "content/regions/pembrokeshire.md is a shorter, more casual/opinionated guide (c.500 words, 'relaxed and outdoorsy' voice, practical getting-around advice). data/regions/pembrokeshire.ts has a different but equally strong editorial voice (more lyrical, longer-form). The canonical rendering path is unclear.",
+      "action": "HUMAN EDITORIAL DECISION: confirm which file drives the /pembrokeshire page render. Reconcile voices or clearly assign roles (markdown for intro/editorial, TS for structured data blocks)."
+    },
+    {
+      "gap": "No safety warnings for key hazards",
+      "detail": "The data references 'Ramsey Sound (tidal race!)' but has no formal safety note. Freshwater West has no lifeguard service (a known visitor risk). The coast path includes genuinely dangerous cliff sections. A safety note section or per-experience safety context would be appropriate.",
+      "action": "Consider adding safety notes to topExperiences for activities with genuine hazards (Ramsey Sound tidal race, Freshwater West no lifeguard, coasteering supervision requirements). Sources: PCNP safety guidance, RNLI."
+    },
+    {
+      "gap": "Wild camping guidance is vague",
+      "detail": "The FAQ on wild camping says 'Wild camping isn't technically allowed without landowner permission, but discreet, single-night camps are usually tolerated.' The PCNP's position is that wild camping is not permitted without explicit landowner consent. This casual framing risks being read as permission.",
+      "action": "Update FAQ to reflect official PCNP position and direct visitors to the many campsites within the national park. Source: https://www.pembrokeshirecoast.wales/visiting/where-to-stay/camping-and-caravanning/"
+    },
+    {
+      "gap": "No mention of MoD access restrictions on south Pembrokeshire",
+      "detail": "A significant portion of south Pembrokeshire (Castlemartin Range) is Ministry of Defence land with access restrictions that affect coast path sections between Freshwater West and Angle. This is a material visitor planning issue not mentioned anywhere in the data.",
+      "action": "Add a note in the coastal walking sections and/or FAQs about the Castlemartin Range access restrictions and how to check when paths are open. Source: https://www.pembrokeshirecoast.wales/visiting/access-land/castlemartin-range/"
+    },
+    {
+      "gap": "Accessibility information absent",
+      "detail": "No accessibility section exists for wheelchair users or visitors with mobility constraints. Pembrokeshire has a number of accessible beaches and facilities (Saundersfoot beach boardwalk, for example).",
+      "action": "Consider adding an accessibility section. Sources: PCNP access information, Pembrokeshire County Council beaches."
+    }
+  ],
+
+  "officialSourcesForHumanVerification": [
+    {
+      "source": "Pembrokeshire Coast National Park Authority",
+      "url": "https://www.pembrokeshirecoast.wales/",
+      "useFor": "National park designation, coast path distance, beach access, MoD range closures, camping policy, wildlife information"
+    },
+    {
+      "source": "Visit Pembrokeshire",
+      "url": "https://www.visitpembrokeshire.com/",
+      "useFor": "General tourism facts, beach listing, events calendar, seasonal information, media image library contact"
+    },
+    {
+      "source": "Wildlife Trust of South and West Wales — Skomer Island",
+      "url": "https://www.welshwildlife.org/nature-reserves/skomer-island/",
+      "useFor": "Skomer puffin season dates, current boat fare and landing charge, booking system and advance booking guidance"
+    },
+    {
+      "source": "Caldey Island",
+      "url": "https://www.caldey-island.co.uk/visiting/boat-trips/",
+      "useFor": "Current boat fare from Tenby, visitor season, monastery opening hours"
+    },
+    {
+      "source": "TYF Adventure",
+      "url": "https://www.tyf.com/shop/",
+      "useFor": "Current pricing for coasteering, sea kayaking, and other activities at St Davids — to replace AI-sourced price figures"
+    },
+    {
+      "source": "Preseli Venture",
+      "url": "https://www.preseliventure.co.uk/",
+      "useFor": "Current pricing for coasteering, kayaking, and gorge walking — to replace AI-sourced price figures"
+    },
+    {
+      "source": "Newsurf (surf school, Newgale)",
+      "url": "https://www.newsurf.co.uk/",
+      "useFor": "Current surf lesson pricing at Newgale to replace AI-sourced £40-60 figure"
+    },
+    {
+      "source": "Outer Reef Surf School",
+      "url": "https://www.outerreefsurfschool.com/",
+      "useFor": "Current surf lesson pricing for Pembrokeshire — additional named operator to replace anonymous price claim"
+    },
+    {
+      "source": "Keep Wales Tidy — Blue Flag Awards",
+      "url": "https://www.keepwalestidy.cymru/blue-flag",
+      "useFor": "Verify 2026 Blue Flag beach count for Pembrokeshire (number changes annually)"
+    },
+    {
+      "source": "Traveline Cymru",
+      "url": "https://www.traveline.cymru/",
+      "useFor": "Current seasonal coastal bus service names, route numbers, and operators (Puffin Shuttle, Celtic Coaster — verify still operating in 2026 under those names)"
+    },
+    {
+      "source": "PCNP Castlemartin Range access",
+      "url": "https://www.pembrokeshirecoast.wales/visiting/access-land/castlemartin-range/",
+      "useFor": "Current MoD access restriction schedule for south Pembrokeshire coast path sections"
+    },
+    {
+      "source": "Red Bull Cliff Diving — event calendar",
+      "url": "https://www.redbull.com/int-en/tags/cliff-diving",
+      "useFor": "Verify whether Red Bull Cliff Diving Series still holds a Pembrokeshire/Abereiddy event in 2026"
+    },
+    {
+      "source": "Natural Resources Wales — marine and wildlife",
+      "url": "https://naturalresources.wales/guidance-and-advice/environmental-topics/wildlife-and-biodiversity/protected-areas-of-land-and-sea/",
+      "useFor": "Cardigan Bay SAC dolphin population confirmation, protected species information"
+    },
+    {
+      "source": "PCNP camping and caravanning",
+      "url": "https://www.pembrokeshirecoast.wales/visiting/where-to-stay/camping-and-caravanning/",
+      "useFor": "Replace vague wild camping FAQ with official PCNP camping policy guidance"
+    }
+  ],
+
+  "claimsForHumanReview": [
+    {
+      "claim": "OG image file is missing — pembrokeshire-og.jpg does not exist on disk",
+      "source": "data/regions/pembrokeshire.ts — meta.socialImage: '/images/regions/pembrokeshire-og.jpg'",
+      "risk": "high",
+      "action": "MUST FIX BEFORE DEPLOY: create or source a 1200×630 OG image and record its provenance in the image registry."
+    },
+    {
+      "claim": "Hero image provenance unknown",
+      "source": "public/images/regions/pembrokeshire-hero.jpg — no image registry entry with source URL",
+      "risk": "high",
+      "action": "Must establish photographer credit, licence type, and acquisition record before this page can be published."
+    },
+    {
+      "claim": "'Dolphin Watching from New Quay' and references to Mwnt as Pembrokeshire dolphin sites",
+      "source": "data/regions/pembrokeshire.ts — topExperiences[5] and faqs[8]",
+      "risk": "high",
+      "action": "GEOGRAPHIC ERROR — New Quay and Mwnt are in Ceredigion, not Pembrokeshire. Remove and replace with Pembrokeshire-based equivalents."
+    },
+    {
+      "claim": "All pricing figures in topExperiences (coasteering £50-70, Skomer £25-35 + boat, surfing £40-60, sea kayaking £60-90, dolphin watching £25-40, Caldey Island £15-20, gorge walking £45-65, Abereiddy parking £3)",
+      "source": "Perplexity AI research (AI-generated, 2025-02)",
+      "risk": "high",
+      "action": "Every price must be re-verified against a current official source. Prices are 16+ months old. See officialSourcesForHumanVerification for operator URLs."
+    },
+    {
+      "claim": "Red Bull Cliff Diving World Series at Abereiddy Blue Lagoon",
+      "source": "data/regions/pembrokeshire.ts — insiderTips[0]",
+      "risk": "medium",
+      "action": "Verify the event is still taking place at Abereiddy in 2026. The series was held there historically but the 2026 calendar must be confirmed. If not current, reword to past tense."
+    },
+    {
+      "claim": "Puffin Shuttle and Celtic Coaster bus services — 'check Pembrokeshire Greenways'",
+      "source": "data/regions/pembrokeshire.ts — faqs[5]",
+      "risk": "medium",
+      "action": "Verify current coastal bus service names, routes, and the Pembrokeshire Greenways resource is still active. Check via Traveline Cymru before publishing."
+    },
+    {
+      "claim": "Skomer advance booking: '6-8 weeks' and 'first boat (10am)'",
+      "source": "data/regions/pembrokeshire.ts — insiderTips[3]",
+      "risk": "medium",
+      "action": "Verify current booking lead time and first boat departure time at https://www.welshwildlife.org/nature-reserves/skomer-island/ — the booking system may have changed."
+    },
+    {
+      "claim": "Wild camping 'usually tolerated' on coast path",
+      "source": "data/regions/pembrokeshire.ts — faqs[4]",
+      "risk": "medium",
+      "action": "PCNP's formal position is that wild camping requires landowner permission. Update FAQ to reflect official guidance and direct to established campsites."
+    },
+    {
+      "claim": "Blue Flag beaches: 13, more than any other Welsh county",
+      "source": "data/regions/pembrokeshire.ts — keyFacts",
+      "risk": "medium",
+      "action": "Blue Flag status changes annually. Verify the 2026 count via Keep Wales Tidy before publishing."
+    },
+    {
+      "claim": "Two content files with different editorial voices — canonical rendering path unclear",
+      "source": "data/regions/pembrokeshire.ts vs content/regions/pembrokeshire.md",
+      "risk": "low-medium",
+      "action": "EDITORIAL DECISION: confirm which file drives the /pembrokeshire page render and reconcile voices."
+    }
+  ],
+
+  "sourcesUsed": [
+    {
+      "url": "data/regions/pembrokeshire.ts",
+      "description": "Primary existing data file — richly structured region data, last updated 2025-02-06. Sources cited as 'Perplexity research, Visit Pembrokeshire, Wales Coast Path'. Perplexity is an AI search engine (policy violation)."
+    },
+    {
+      "url": "content/regions/pembrokeshire.md",
+      "description": "Existing markdown content — shorter practical regional guide in casual voice (~500 words). Separate editorial layer from the TS data file."
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Content inventory — confirms location-landing-pembrokeshire has evidence_status missing, image_status needs_review, copy/seo/schema all needs_review, status research_needed."
+    },
+    {
+      "url": "content/ops/image-registry.json",
+      "description": "Image registry — location-landing-pembrokeshire has image_status needs_review, image_source_url empty, notes 'Needs image provenance review'."
+    },
+    {
+      "url": "public/images/regions/pembrokeshire-hero.jpg",
+      "description": "Hero image file exists on disk (648KB, Feb 14 2025). No provenance record. pembrokeshire-og.jpg confirmed NOT to exist."
+    },
+    {
+      "url": "https://www.pembrokeshirecoast.wales/about-us/about-the-national-park/",
+      "description": "Pembrokeshire Coast National Park Authority — national park designation 1952, area 620km², coastal national park status."
+    },
+    {
+      "url": "https://www.pembrokeshirecoast.wales/walking/pembrokeshire-coast-path/",
+      "description": "PCNP — official 186-mile coast path distance confirmation."
+    },
+    {
+      "url": "https://www.welshwildlife.org/nature-reserves/skomer-island/",
+      "description": "Wildlife Trust of South and West Wales — Skomer Island management, puffin season, booking information."
+    },
+    {
+      "url": "https://www.visitpembrokeshire.com/",
+      "description": "Visit Pembrokeshire — official tourism body. Beach listings, activity operators, events calendar."
+    },
+    {
+      "url": "https://www.tyf.com/",
+      "description": "TYF Adventure — original commercial coasteering operator, St Davids. Named in insiderTips and FAQs."
+    },
+    {
+      "url": "https://www.preseliventure.co.uk/",
+      "description": "Preseli Venture — outdoor activity centre near St Davids. Named in insiderTips."
+    },
+    {
+      "url": "https://www.caldey-island.co.uk/",
+      "description": "Caldey Island — Cistercian monastery, confirmed monk-made products (chocolate, perfume) and boat trips from Tenby."
+    },
+    {
+      "url": "https://cadw.gov.wales/",
+      "description": "Cadw — Welsh historic monuments. Confirmation of Manorbier Castle and Pembrokeshire heritage sites."
+    },
+    {
+      "url": "https://theshedporthgain.co.uk/",
+      "description": "The Shed Porthgain — real fish bistro at Porthgain harbour, named in localEatsAndDrinks."
+    },
+    {
+      "url": "https://www.thesloopinn.co.uk/",
+      "description": "The Sloop Inn Porthgain — real harbourside pub, named in insiderTips and localEatsAndDrinks."
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusRationale": "The existing data/regions/pembrokeshire.ts provides an excellent structural and editorial foundation — all required sections are present, the editorial voice is strong, and the core geographic and heritage facts are stable. However five blockers prevent immediate sign-off: (1) a geographic error (New Quay/Mwnt are in Ceredigion); (2) the OG/social image is missing from disk; (3) the hero image has no provenance record; (4) all pricing and transport details are AI-sourced and 16+ months stale; (5) the SEO description is over the recommended character limit. Once the geographic error, images, and pricing verification are resolved and key claims spot-checked by a human QA reviewer, the page will be close to publishable.",
+
+  "outputPath": "data/research/content-ops/location-landing-pembrokeshire.json",
+
+  "blockers": [
+    {
+      "rank": 1,
+      "blocker": "Geographic error — 'Dolphin Watching from New Quay' and Mwnt reference are Ceredigion activities, not Pembrokeshire",
+      "detail": "topExperiences[5] lists 'Dolphin Watching from New Quay' with a price range and '95%+ success rate'. New Quay is in Ceredigion county, north of the Pembrokeshire/Ceredigion border, not within the Pembrokeshire Coast National Park. The FAQ (faqs[8]) also cites 'New Quay' and 'Mwnt' as Pembrokeshire dolphin-watching sites — both are geographically incorrect. This is a content accuracy error that will mislead visitors trying to plan a Pembrokeshire trip.",
+      "resolution": "Remove the 'Dolphin Watching from New Quay' experience entirely. Replace with a Pembrokeshire-based wildlife activity (e.g. wildlife boat trips from Pembrokeshire operators, seal watching at Ramsey Island, or a Strumble Head shore-based dolphin watching entry). Update FAQ to reference only Strumble Head (and other Pembrokeshire-specific spots) and remove the New Quay and Mwnt references. Source for Strumble Head: https://www.pembrokeshirecoast.wales/wildlife/marine-wildlife/"
+    },
+    {
+      "rank": 2,
+      "blocker": "OG/social image file missing from disk — pembrokeshire-og.jpg does not exist",
+      "detail": "data/regions/pembrokeshire.ts references meta.socialImage: '/images/regions/pembrokeshire-og.jpg' but the file public/images/regions/pembrokeshire-og.jpg does NOT exist on disk. Deploying the /pembrokeshire page in this state will produce a broken Open Graph social preview (blank or fallback thumbnail when shared on social media, in messaging apps, or in Slack).",
+      "resolution": "Source and place a 1200×630px OG image at public/images/regions/pembrokeshire-og.jpg. Record full provenance in the image registry before publishing. Candidates: Openverse CC search (https://openverse.org/search/?q=Pembrokeshire+coast+Wales&license_type=commercial&use_commercial=true) or request from PCNP / Visit Pembrokeshire media team."
+    },
+    {
+      "rank": 3,
+      "blocker": "All pricing claims are AI-sourced (Perplexity) and 16+ months old, and hero image provenance is unestablished",
+      "detail": "Seven pricing figures (coasteering £50-70, Skomer trip £25-35 + boat, surfing lessons £40-60, sea kayaking £60-90, dolphin watching £25-40, Caldey Island £15-20, gorge walking £45-65) plus the Abereiddy parking charge are all sourced solely from Perplexity AI research (Feb 2025). They violate the site's no-AI-content policy and are 16+ months stale. Separately, the hero image (public/images/regions/pembrokeshire-hero.jpg, 648KB) exists on disk but has no photographer credit, licence type, or acquisition record — publishing it is a copyright risk.",
+      "resolution": "For pricing: a human QA reviewer should verify each figure against the operator's current booking page (URLs listed in officialSourcesForHumanVerification). The fastest path is to remove specific price figures from the location landing page and push them to operator-specific pages. For the hero image: audit acquisition records; if provenance cannot be established, source a replacement via Openverse with a CC BY or CC BY-SA licence."
+    }
+  ]
+}

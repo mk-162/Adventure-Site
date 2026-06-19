@@ -1,0 +1,593 @@
+{
+  "_meta": {
+    "task": "content-ops-030-location-landing-gower",
+    "contentItem": "location-landing-gower",
+    "contentType": "location_landing",
+    "slug": "gower",
+    "route": "/gower",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_critical_flags"
+  },
+
+  "existingFiles": {
+    "typescriptData": "data/regions/gower.ts",
+    "markdownContent": "content/regions/gower.md",
+    "dataLastUpdated": "2025-02-06",
+    "contentInventoryStatus": "research_needed",
+    "contentInventoryFlags": [
+      "evidence_status: missing",
+      "image_status: needs_review (no image source URL recorded)",
+      "copy_status: needs_review",
+      "seo_status: needs_review",
+      "schema_status: needs_review"
+    ]
+  },
+
+  "overallAssessment": {
+    "verdict": "data/regions/gower.ts is a well-structured location data file with hero copy, key facts, seasonal guide, insider tips, top experiences, FAQs, hidden gems, and food listings. However it cites 'Perplexity research' as a primary source — AI-generated content — which violates the site's no-AI-content policy. Specific pricing claims, operational details (bus routes, campsite names), and event listings cannot be considered evidenced until verified against official sources. The core geographic and heritage facts are stable and unlikely to be wrong, but every price figure and several operational claims must be re-verified. Additionally, the OG/social image referenced in the TS data (gower-og.jpg) does not exist on disk — this is a missing asset that would cause a broken social preview at publication.",
+    "structuralQuality": "HIGH — the TS data file is well-organised with all required sections. Suitable as the canonical source once claims are verified.",
+    "factualConfidence": "MEDIUM — geographic, heritage, and AONB designation facts are stable; all pricing and transport details are unverified AI-sourced claims that may be stale (16+ months old)"
+  },
+
+  "criticalIssues": [
+    {
+      "severity": "CRITICAL",
+      "issue": "Primary source is Perplexity AI research — violates no-AI-content policy",
+      "location": "data/regions/gower.ts — header comment: 'Sources: Perplexity research, Visit Swansea Bay, National Trust'",
+      "diagnosis": "Perplexity AI is a generative AI search engine. Any claim whose sole provenance is Perplexity research must be treated as unverified. Affected fields include all pricing figures, bus route numbers, Joe's Ice Cream founding year, beach hut booking details, and Mumbles Oyster Festival.",
+      "affectedFields": [
+        "topExperiences.priceRange entries (Rhossili parking £7, Three Cliffs parking £3-5, surfing lesson £40-60, coasteering £50-70, sea kayaking £45-65, horse riding £50-80, Weobley Castle £5)",
+        "insiderTips.beach-huts: '£30-50/day, book via Swansea Council'",
+        "insiderTips.joe-ice-cream: 'since 1898'",
+        "seasonGuide.summer.highlights: 'Mumbles Oyster Festival'",
+        "faqs.transport: 'Routes 118 (Rhossili), 116 (Llangennith)... check NAT Group'",
+        "keyFacts.coastalPath: '46 miles'"
+      ],
+      "action": "Re-verify each affected field against operator live websites or official tourism/NRW sources. Add source URLs before setting status to qa_needed."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "OG/social image file does not exist on disk",
+      "location": "data/regions/gower.ts — meta.socialImage: '/images/regions/gower-og.jpg'",
+      "diagnosis": "The file public/images/regions/gower-og.jpg is referenced in the TS data but does NOT exist on disk. Publishing the /gower page with a missing social image will result in broken Open Graph previews (blank image when shared on social media). The hero image (gower-hero.jpg, 315KB) does exist but has no provenance record.",
+      "action": "HUMAN ACTION REQUIRED: (1) Source or generate an OG image for the Gower landing page; (2) Establish provenance for gower-hero.jpg before publishing. See imageResearch section."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "Hero image has no provenance or licence record",
+      "location": "public/images/regions/gower-hero.jpg (exists on disk, 315KB, Feb 14 2025). Referenced in data as meta.heroImage: '/images/regions/gower-hero.jpg'",
+      "diagnosis": "The image registry entry for this content item has image_status 'needs_review' and no image_source_url. There is no attribution, photographer credit, licence type, or acquisition record for this image. Publishing a page with an unlicensed image is a legal risk.",
+      "action": "HUMAN REVIEW: establish the provenance of gower-hero.jpg before publishing. Check original acquisition records (purchase receipt, Creative Commons source URL, or operator permission email). If provenance cannot be established, replace with a verified CC-licensed image."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "Bus route numbers and operator name are AI-sourced and may be stale or incorrect",
+      "location": "data/regions/gower.ts — faqs[3].answer: 'Routes 118 (Rhossili), 116 (Llangennith), and others run regularly. Check NAT Group for timetables.'",
+      "diagnosis": "The specific route numbers 118 and 116 and the operator name 'NAT Group' are from AI research (2025-02) and cannot be treated as current. Bus service routes in the Gower Peninsula have been subject to changes. Publishing incorrect route numbers will frustrate visitors.",
+      "action": "Verify current Gower bus service numbers and operators directly with Transport for Wales (https://www.traveline.cymru/) or the current Swansea bus service provider. NAT Group (National Express Wales) is the historical operator but verify current status."
+    }
+  ],
+
+  "factsAudit": {
+    "verified_or_stable": [
+      {
+        "claim": "Gower Peninsula was the UK's first Area of Outstanding Natural Beauty, designated in 1956",
+        "status": "VERIFIED",
+        "note": "The Gower Peninsula was designated the first AONB in England and Wales on 3 September 1956. Well-documented historical fact.",
+        "source": "https://www.naturalresources.wales/guidance-and-advice/environmental-topics/landscape/protected-landscapes/areas-of-outstanding-natural-beauty/"
+      },
+      {
+        "claim": "Welsh name: Gŵyr",
+        "status": "VERIFIED",
+        "note": "The Welsh-language name for the Gower Peninsula is Gŵyr. Well-established.",
+        "source": "https://cadw.gov.wales/visit/places-to-visit/gower"
+      },
+      {
+        "claim": "Rhossili Bay — 3 miles of sand, regularly voted UK best",
+        "status": "STABLE",
+        "note": "The '3 miles of sand' description is consistent with all authoritative sources. Rhossili Bay appears consistently in UK best beach rankings (TripAdvisor, Telegraph, Which?). Not a specific dated award claim — safe to publish.",
+        "source": "https://www.nationaltrust.org.uk/visit/wales/rhossili-and-south-gower-coast"
+      },
+      {
+        "claim": "Worm's Head — tidal island, accessible 2.5 hours either side of low tide",
+        "status": "VERIFIED",
+        "note": "The National Trust and NRW consistently state the safe crossing window as 2.5 hours either side of low tide. Standard safety guidance for the site.",
+        "source": "https://www.nationaltrust.org.uk/visit/wales/rhossili-and-south-gower-coast/worms-head"
+      },
+      {
+        "claim": "Dylan Thomas famously got stranded on Worm's Head as a boy",
+        "status": "VERIFIED",
+        "note": "Thomas describes the incident in his short story 'Who Do You Wish Was With Us?' from Portrait of the Artist as a Young Dog (1940). Well-documented literary biographical fact.",
+        "source": "https://www.discoverthegower.com/dylan-thomas-and-gower/"
+      },
+      {
+        "claim": "Three Cliffs Bay — three dramatic limestone pinnacles, accessible via Penmaen dune walk",
+        "status": "VERIFIED",
+        "note": "Well-documented feature of the Gower coast. The Penmaen access route and the Pennard Castle alternative are well-established.",
+        "source": "https://www.nationaltrust.org.uk/visit/wales/three-cliffs-bay"
+      },
+      {
+        "claim": "Arthur's Stone (Maen Ceti) — Neolithic burial chamber on Cefn Bryn",
+        "status": "STABLE",
+        "note": "Arthur's Stone is a genuine Neolithic burial chamber (Maen Ceti in Welsh) on Cefn Bryn common. The '5,000 years old' approximation is within normal range for a Neolithic monument (typically 3500-2500 BCE). The National Trust manages the site.",
+        "source": "https://www.nationaltrust.org.uk/visit/wales/arthurs-stone-maen-ceti"
+      },
+      {
+        "claim": "Three medieval castles: Oystermouth, Weobley, Pennard",
+        "status": "VERIFIED",
+        "note": "All three are genuine medieval castles on the Gower Peninsula, all managed by Cadw.",
+        "source": "https://cadw.gov.wales/visit/places-to-visit/oystermouth-castle and https://cadw.gov.wales/visit/places-to-visit/weobley-castle and https://cadw.gov.wales/visit/places-to-visit/pennard-castle"
+      },
+      {
+        "claim": "Mumbles is 5 miles from Swansea with Victorian seaside character",
+        "status": "STABLE",
+        "note": "The distance figure and the 'Victorian seaside' description are well-established and geographically accurate.",
+        "source": "https://www.mumbles.co.uk/"
+      },
+      {
+        "claim": "Loughor Estuary salt marshes — important bird habitat, oystercatchers and waders",
+        "status": "VERIFIED",
+        "note": "The Burry Inlet / Loughor Estuary is a Special Protection Area (SPA) and Ramsar site for wading birds and wildfowl, including oystercatchers, knot, and dunlin.",
+        "source": "https://naturalresources.wales/guidance-and-advice/environmental-topics/wildlife-and-biodiversity/protected-areas-of-land-and-sea/ramsar-sites/"
+      },
+      {
+        "claim": "Gower Salt Marsh Lamb — grazes Loughor Estuary; buy from Weobley Castle farm shop",
+        "status": "STABLE",
+        "note": "Gower Salt Marsh Lamb is a real and well-regarded product. Salt marsh grazing on the Gower estuary is documented. Weobley Castle farm shop existence is stable. Current trading status of the farm shop should be confirmed before publication.",
+        "source": "https://www.distinctlygower.co.uk/"
+      },
+      {
+        "claim": "Culver Hole at Port Eynon — medieval stone structure built into a sea cave",
+        "status": "VERIFIED",
+        "note": "Culver Hole is a genuine, well-documented mystery structure at Port Eynon. Its function is disputed (columbarium/dovecote, smuggling den, watchtower). The description as a large stone construction filling a sea cave is accurate.",
+        "source": "https://coflein.gov.uk/ (search Culver Hole) and https://www.nationaltrust.org.uk/visit/wales/gower"
+      },
+      {
+        "claim": "Parc le Breos (Parc Cwm) — Neolithic long barrow near Parkmill",
+        "status": "VERIFIED",
+        "note": "Parc Cwm long cairn is a Neolithic chambered tomb, dated to approximately 3800–3600 BCE (approximately 5,500 years old). Managed by Cadw.",
+        "source": "https://cadw.gov.wales/visit/places-to-visit/parc-le-breos-burial-chamber"
+      },
+      {
+        "claim": "Gower coastline is 'part of the 870-mile Wales Coast Path'",
+        "status": "VERIFIED",
+        "note": "The Wales Coast Path (Llwybr Arfordir Cymru) is officially 870 miles / 1,400 km. The Gower sections form part of the Swansea Bay chapter.",
+        "source": "https://www.walescoastpath.gov.uk/"
+      },
+      {
+        "claim": "Hillend campsite near Llangennith is popular with surfers",
+        "status": "STABLE",
+        "note": "Hillend Campsite near Llangennith is a well-known, established campsite popular with surfers. Verify it is still operating before final copy review.",
+        "source": "https://www.hillendcampsite.co.uk/ (verify still operating)"
+      },
+      {
+        "claim": "Joe's Ice Cream in Mumbles — longstanding family business",
+        "status": "STABLE",
+        "note": "Joe's Ice Cream (Forte's) is a genuine Mumbles institution. The business has been operating for many decades. The specific '1898' founding date from the TS file is from AI research — verify against Joe's own website.",
+        "source": "https://www.joes-icecream.com/ (verify founding year claim)"
+      },
+      {
+        "claim": "King's Head pub in Llangennith — surfers' pub with local character",
+        "status": "STABLE",
+        "note": "The King's Head at Llangennith is a genuine pub well-known to the surfing community. Verify it is still operating and trading normally.",
+        "source": "https://www.kingsheadgower.co.uk/ (verify current status)"
+      },
+      {
+        "claim": "Patrick's with Rooms in Mumbles — fine dining with local seafood",
+        "status": "STABLE",
+        "note": "Patrick's with Rooms is a real restaurant in Mumbles. Verify current trading status before publishing recommendation.",
+        "source": "https://www.patrickswithroomsandbar.co.uk/ (verify current status)"
+      },
+      {
+        "claim": "Train to Swansea from London — approximately 3 hours",
+        "status": "STABLE",
+        "note": "Great Western Railway services from London Paddington to Swansea are typically 2h50–3h15 depending on the service (some require change at Cardiff). The '3 hours' approximation is reasonable but should note mode and that times vary.",
+        "source": "https://www.gwr.com/plan-your-journey (verify current timetable)"
+      },
+      {
+        "claim": "Gower Way — 35-mile inland walking route from Rhossili to Penlle'r Castell",
+        "status": "STABLE",
+        "note": "The Gower Way is a documented walking route. The 35-mile figure and the Rhossili–Penlle'r Castell description are consistent with published descriptions.",
+        "source": "https://www.ramblers.org.uk/go-walking/routes-and-places-to-walk/find-a-route/gower-way (verify route details)"
+      }
+    ],
+
+    "needs_verification": [
+      {
+        "claim": "Rhossili Bay parking: £7",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "Verify current National Trust car park charges at Rhossili against https://www.nationaltrust.org.uk/visit/wales/rhossili-and-south-gower-coast/parking. NT parking charges change annually and members park free.",
+        "note": "DO NOT publish a price figure without a dated official source URL."
+      },
+      {
+        "claim": "Three Cliffs Bay parking: £3-5",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "Verify current car park charges at Three Cliffs (Penmaen car park, managed by NT or local authority). Source: https://www.nationaltrust.org.uk/visit/wales/three-cliffs-bay",
+        "note": "DO NOT publish a price figure without a dated official source URL."
+      },
+      {
+        "claim": "Surfing lesson at Langland Bay: £40-60",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "No operator is named. Identify a specific Langland surfing school (e.g. Gower Surf School, PJ's Surfing Academy) and verify current lesson pricing against their booking page.",
+        "note": "Unpublishable without named operator and source URL."
+      },
+      {
+        "claim": "Surfing lesson at Llangennith: £40-50",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "No operator named. PJ's Surf Shop (https://www.pjsurf.co.uk/) and Welsh Surfing Federation operators operate from Llangennith. Verify current pricing.",
+        "note": "Unpublishable without named operator and source URL."
+      },
+      {
+        "claim": "Coasteering at Fall Bay: £50-70",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "No operator named. Gower Adventures and Gower Outdoors are operators in the area. Verify pricing against current booking pages.",
+        "note": "Unpublishable without named operator and source URL."
+      },
+      {
+        "claim": "Sea Kayaking Oxwich Bay: £45-65",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "No operator named. Identify a specific kayaking operator running sessions at Oxwich Bay and verify pricing.",
+        "note": "Unpublishable without named operator and source URL."
+      },
+      {
+        "claim": "Beach Horse Riding at Llangennith: £50-80",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "No operator named. Identify the specific riding school offering beach rides at Llangennith. Verify pricing.",
+        "note": "Unpublishable without named operator and source URL."
+      },
+      {
+        "claim": "Langland beach huts: £30-50/day, book via Swansea Council",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "Verify current beach hut hire charges and the correct booking mechanism (Swansea Council, Parks & Amenities). Source: https://www.swansea.gov.uk/beachhuts",
+        "note": "Beach hut hire administration and pricing may have changed. Publishing incorrect booking channel will frustrate visitors."
+      },
+      {
+        "claim": "Weobley Castle entry: £5",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "medium",
+        "action": "Verify current Cadw admission price at https://cadw.gov.wales/visit/places-to-visit/weobley-castle. Note: Cadw members enter free. Price changes annually.",
+        "note": "DO NOT publish without current Cadw source."
+      },
+      {
+        "claim": "Joe's Ice Cream 'has been making ice cream since 1898'",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "medium",
+        "action": "Verify the 1898 founding year against Joe's own website (https://www.joes-icecream.com/) or local historical records. Publishing an incorrect founding date for a named business risks a complaint.",
+        "note": "Joe's is well-known as a long-standing institution; the specific date needs confirmation."
+      },
+      {
+        "claim": "Bus routes 118 (Rhossili) and 116 (Llangennith); operator: NAT Group",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "Verify current Gower bus service numbers and the operating company via Traveline Cymru (https://www.traveline.cymru/) or Transport for Wales. Route numbers change frequently in this area. The 'NAT Group' reference may be outdated.",
+        "note": "Incorrect route numbers are one of the most visitor-harmful content errors on transport guidance pages."
+      },
+      {
+        "claim": "Mumbles Oyster Festival — listed under summer highlights",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "medium",
+        "action": "Verify the Mumbles Oyster Festival is still an active annual event and confirm its 2026 dates. Search Visit Swansea Bay (https://www.visitswainsea.com/) for current event listings.",
+        "note": "Community events sometimes lapse or are renamed. Verify before publishing as a seasonal highlight."
+      },
+      {
+        "claim": "Gower coast path: 46 miles",
+        "source_in_file": "Perplexity research (AI-generated) combined with Wales Coast Path claims",
+        "risk": "low",
+        "action": "Verify the 46-mile figure against the official Wales Coast Path Gower section. Source: https://www.walescoastpath.gov.uk/discover-the-path/the-route/swansea-bay/",
+        "note": "The Gower section of the coastal path is approximately 38-46 miles depending on whether Swansea city sections are included. Confirm the specific figure and its scope."
+      },
+      {
+        "claim": "Whiteford Sands iron lighthouse — 1865",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "low",
+        "action": "Verify the 1865 construction date of the Whiteford Point Lighthouse against historical records. The lighthouse is a Victorian iron screw-pile structure, but the specific year should be confirmed. Source: Historic England / Coflein records.",
+        "note": "The date is a detail claim that could be checked against https://coflein.gov.uk/"
+      }
+    ]
+  },
+
+  "imageResearch": {
+    "heroImage": {
+      "filePath": "public/images/regions/gower-hero.jpg",
+      "fileExists": true,
+      "fileSizeKB": 308,
+      "fileDate": "2025-02-14",
+      "referencedIn": "data/regions/gower.ts — meta.heroImage: '/images/regions/gower-hero.jpg'",
+      "status": "blocked_no_provenance",
+      "note": "Image file exists on disk but has NO provenance record, photographer credit, licence type, or acquisition record in the image registry (image_status: needs_review, image_source_url: empty). CANNOT confirm this image is legally cleared for publication. DO NOT publish without establishing provenance.",
+      "action": "HUMAN REVIEW REQUIRED: determine how this image was acquired (purchased stock, CC-licensed download, operator supplied, in-house photography). If provenance cannot be established, replace with a verified image."
+    },
+    "ogImage": {
+      "filePath": "public/images/regions/gower-og.jpg",
+      "fileExists": false,
+      "referencedIn": "data/regions/gower.ts — meta.socialImage: '/images/regions/gower-og.jpg'",
+      "status": "MISSING_FILE — CRITICAL",
+      "note": "The OG image file does NOT exist on disk. This will cause a broken Open Graph social preview whenever the /gower page is shared. This needs to be resolved before any deployment of this page.",
+      "action": "HUMAN ACTION: create or source a 1200×630px OG image for the Gower landing page. If sourced from CC-licensed stock, record full provenance. Suggested: a Rhossili Bay or Three Cliffs Bay aerial/landscape shot."
+    },
+    "candidates_if_replacement_needed": [
+      {
+        "title": "Rhossili Bay — golden sand and headland",
+        "searchQuery": "Rhossili Bay Gower Peninsula Wales",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=Rhossili+Bay+Gower&license_type=commercial&use_commercial=true",
+        "note": "HUMAN: search Openverse for CC BY or CC BY-SA licensed images of Rhossili Bay. Only use images with confirmed commercial-use-friendly licences. Always record: photographer name, licence version, source URL, attribution string.",
+        "suitability": "HIGH — Rhossili Bay is the most iconic and recognisable Gower image, appropriate for a hero"
+      },
+      {
+        "title": "Three Cliffs Bay from above",
+        "searchQuery": "Three Cliffs Bay Gower Wales coastline",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=Three+Cliffs+Bay+Gower&license_type=commercial&use_commercial=true",
+        "note": "Distinctive three-pinnacle bay — highly recognisable and photographed. Good alternative to Rhossili if licensing is available.",
+        "suitability": "HIGH — most photographed bay on Gower, strong editorial identity"
+      },
+      {
+        "title": "Worm's Head tidal headland",
+        "searchQuery": "Worm's Head Gower Peninsula coastline",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=Worms+Head+Gower&license_type=commercial&use_commercial=true",
+        "note": "Distinctive silhouette, strong brand recognition for Gower content.",
+        "suitability": "MEDIUM — iconic but may suit OG thumbnail better than wide hero crop"
+      },
+      {
+        "title": "Visit Swansea Bay / Natural Resources Wales media",
+        "note": "Visit Swansea Bay (https://www.visitswainsea.com/) and NRW may provide press/media image libraries for tourism use. Contact: info@swanseabay.com or NRW press office. Official images eliminate licensing risk.",
+        "suitability": "PREFERRED if available — official images with confirmed permissions are always lower risk"
+      }
+    ]
+  },
+
+  "seoAndSchemaAudit": {
+    "seoTitle": {
+      "current": "Gower Peninsula | Surfing, Beaches & Coastal Adventures | Adventure Wales",
+      "length": 72,
+      "status": "REVIEW_NEEDED",
+      "note": "72 characters is over the 60-65 char recommended limit for Google SERPs — the title will be truncated on most devices. Recommend shortening to under 65 chars. Options: 'Gower Peninsula | Surfing, Beaches & Adventure | Adventure Wales' (64 chars) or 'Gower Peninsula Adventure Guide | Adventure Wales' (49 chars). Keep 'Surfing' and 'Beaches' as they are high-value keywords for this region."
+    },
+    "seoDescription": {
+      "current": "Explore the Gower Peninsula: UK's first AONB. Surf world-class breaks, walk 46 miles of coast path, scramble to Worm's Head, and discover Britain's best beaches.",
+      "length": 162,
+      "status": "ACCEPTABLE",
+      "note": "162 characters is marginally over the 160 char sweet spot but within normal tolerance. Content is relevant, keyword-rich, and accurate to the region. Acceptable as-is or trim by 2 chars."
+    },
+    "schemaMarkup": {
+      "status": "NOT_VERIFIED",
+      "note": "No schema.org markup has been reviewed as part of this research task. The TS data file contains structured data that could support Place, TouristAttraction, or FAQPage schema. This needs a separate technical review pass.",
+      "action": "Human tech review: confirm whether the /gower route renders structured data (JSON-LD). FAQPage schema for the faqs array and TouristDestination for the region would benefit SEO."
+    }
+  },
+
+  "contentGaps": [
+    {
+      "gap": "No operator slugs linked from topExperiences",
+      "detail": "All 12 topExperiences entries lack operatorSlug fields. None of the activity items (surfing, coasteering, kayaking, horse riding) link to Adventure Wales directory operators. This reduces commercial conversion from the location page.",
+      "action": "When Gower operator listings (e.g. Gower Surf Academy, Gower Adventures, Gower Activity Centres) are live in the directory, add operatorSlug references to relevant topExperiences entries."
+    },
+    {
+      "gap": "Markdown and TS data file use different voices and structures — canonical source unclear",
+      "detail": "content/regions/gower.md is a shorter, more opinionated draft in a casual first-person voice ('Gower. It's the first designated AONB... and it damn well knows it.'). data/regions/gower.ts has a different but also strong editorial voice and full structured data. It is not clear from the content inventory which file drives the /gower page render.",
+      "action": "HUMAN EDITORIAL DECISION: confirm which file is rendered on the /gower page and whether both layers are used (markdown for intro copy, TS data for structured blocks). The two voices should be reconciled before sign-off."
+    },
+    {
+      "gap": "No accessibility or disability-specific information",
+      "detail": "The existing data has no accessibility section (wheelchair access, facilities for families with mobility needs). Oxwich Bay has accessible facilities and is one of the most accessible beaches on Gower.",
+      "action": "Consider adding an accessibility section. Sources: Swansea Council (https://www.swansea.gov.uk/beaches), Oxwich Bay NT accessibility notes."
+    },
+    {
+      "gap": "Wild camping guidance is vague and potentially misleading",
+      "detail": "The FAQ answer states 'Wild camping isn't officially permitted, but discreet, single-night camps away from beaches are sometimes tolerated. Leave no trace.' This casual framing may be read as permission by visitors. The AONB designation means the formal position from NRW/Swansea Council is that wild camping is not permitted without landowner consent.",
+      "action": "Update the wild camping FAQ to reflect the official NRW/AONB guidance and direct visitors to the established campsite at Hillend. Source: https://naturalresources.wales/guidance-and-advice/environmental-topics/landscape/protected-landscapes/areas-of-outstanding-natural-beauty/gower-aonb/"
+    },
+    {
+      "gap": "No mention of Gower AONB management or NRW/Swansea Council as governance body",
+      "detail": "The data references the AONB designation but does not link to the official AONB partnership. The Gower AONB is managed as a partnership between Natural Resources Wales and Swansea Council.",
+      "action": "Consider adding a source/credits footnote or meta field pointing to https://naturalresources.wales/ for official AONB information. Low priority for a landing page but useful for editorial trust signals."
+    }
+  ],
+
+  "officialSourcesForHumanVerification": [
+    {
+      "source": "Natural Resources Wales — Gower AONB",
+      "url": "https://naturalresources.wales/guidance-and-advice/environmental-topics/landscape/protected-landscapes/areas-of-outstanding-natural-beauty/gower-aonb/",
+      "useFor": "AONB designation confirmation, wild camping policy, protected area boundaries"
+    },
+    {
+      "source": "National Trust — Rhossili and South Gower Coast",
+      "url": "https://www.nationaltrust.org.uk/visit/wales/rhossili-and-south-gower-coast",
+      "useFor": "Current Rhossili car park charges, Worm's Head tidal guidance, Arthur's Stone details"
+    },
+    {
+      "source": "National Trust — Three Cliffs Bay",
+      "url": "https://www.nationaltrust.org.uk/visit/wales/three-cliffs-bay",
+      "useFor": "Current Three Cliffs parking charges and access information"
+    },
+    {
+      "source": "Cadw — Weobley Castle",
+      "url": "https://cadw.gov.wales/visit/places-to-visit/weobley-castle",
+      "useFor": "Current Cadw admission price for Weobley Castle"
+    },
+    {
+      "source": "Cadw — Parc le Breos Burial Chamber",
+      "url": "https://cadw.gov.wales/visit/places-to-visit/parc-le-breos-burial-chamber",
+      "useFor": "Age, description, and access details for Parc le Breos (Parc Cwm) Neolithic tomb"
+    },
+    {
+      "source": "Traveline Cymru — Gower bus services",
+      "url": "https://www.traveline.cymru/",
+      "useFor": "Current bus route numbers and operators for Rhossili, Llangennith, and other Gower destinations — to replace the AI-sourced route 118/116 claims"
+    },
+    {
+      "source": "Joe's Ice Cream (Forte's) — Mumbles",
+      "url": "https://www.joes-icecream.com/",
+      "useFor": "Verify the 1898 founding date claim"
+    },
+    {
+      "source": "Visit Swansea Bay",
+      "url": "https://www.visitswainsea.com/",
+      "useFor": "Mumbles Oyster Festival dates, general Gower events calendar, media image library contact"
+    },
+    {
+      "source": "Swansea Council — Beach Huts",
+      "url": "https://www.swansea.gov.uk/beachhuts",
+      "useFor": "Current Langland beach hut hire charges and booking process"
+    },
+    {
+      "source": "Wales Coast Path — Swansea Bay section",
+      "url": "https://www.walescoastpath.gov.uk/discover-the-path/the-route/swansea-bay/",
+      "useFor": "Official Gower coastal path length figure (verify 46-mile claim)"
+    },
+    {
+      "source": "PJ's Surf School / Welsh Surfing Federation School (Llangennith)",
+      "url": "https://www.pjsurf.co.uk/",
+      "useFor": "Current surf lesson pricing at Llangennith to replace AI-sourced £40-50 figure"
+    },
+    {
+      "source": "Gower Surf School / Langland Bay operators",
+      "url": "https://www.gowersurfschool.co.uk/ (verify URL)",
+      "useFor": "Current surf lesson pricing at Langland Bay to replace AI-sourced £40-60 figure — verify operator name and URL first"
+    },
+    {
+      "source": "Coflein — Whiteford Point Lighthouse",
+      "url": "https://coflein.gov.uk/ (search 'Whiteford lighthouse')",
+      "useFor": "Verify 1865 construction date for Whiteford Sands iron lighthouse"
+    },
+    {
+      "source": "Hillend Campsite",
+      "url": "https://www.hillendcampsite.co.uk/",
+      "useFor": "Verify campsite is still operating and confirm current facilities"
+    },
+    {
+      "source": "Gower AONB Partnership — press / media",
+      "url": "https://www.goweraonb.org.uk/ (verify URL — may redirect to NRW)",
+      "useFor": "Official photography/media assets for hero and OG images, if available under press licence"
+    }
+  ],
+
+  "claimsForHumanReview": [
+    {
+      "claim": "OG image file is missing — gower-og.jpg does not exist on disk",
+      "source": "data/regions/gower.ts — meta.socialImage: '/images/regions/gower-og.jpg'",
+      "risk": "high",
+      "action": "MUST FIX BEFORE DEPLOY: create or source a 1200×630 OG image for this page and record its provenance in the image registry."
+    },
+    {
+      "claim": "Hero image provenance unknown",
+      "source": "public/images/regions/gower-hero.jpg — no image registry entry with source",
+      "risk": "high",
+      "action": "Must establish photographer credit, licence type, and acquisition record before this page can be published. Image exists on disk but legal clearance is unconfirmed."
+    },
+    {
+      "claim": "All pricing figures in topExperiences (Rhossili parking £7, Three Cliffs parking £3-5, surfing lessons £40-60 / £40-50, coasteering £50-70, sea kayaking £45-65, horse riding £50-80, Weobley Castle £5, Langland beach huts £30-50/day)",
+      "source": "Perplexity AI research (AI-generated, 2025-02)",
+      "risk": "high",
+      "action": "Every price must be re-verified against the current official source (URLs listed in officialSourcesForHumanVerification). Prices are 16+ months old and may have changed."
+    },
+    {
+      "claim": "Bus routes 118 (Rhossili) and 116 (Llangennith); operator: NAT Group",
+      "source": "data/regions/gower.ts — faqs[3].answer",
+      "risk": "high",
+      "action": "Verify current route numbers and operator at Traveline Cymru before publishing. Incorrect route numbers are a high-harm content error."
+    },
+    {
+      "claim": "Joe's Ice Cream founded 1898",
+      "source": "data/regions/gower.ts — insiderTips",
+      "risk": "medium",
+      "action": "Verify founding year on Joe's website or local business history records before publishing."
+    },
+    {
+      "claim": "Mumbles Oyster Festival is an active annual event",
+      "source": "data/regions/gower.ts — seasonGuide.summer.highlights",
+      "risk": "medium",
+      "action": "Confirm the event is still running and find 2026 dates. Remove from highlights if it has lapsed."
+    },
+    {
+      "claim": "Wild camping 'sometimes tolerated' framing",
+      "source": "data/regions/gower.ts — faqs[5].answer",
+      "risk": "medium",
+      "action": "AONB policy does not endorse wild camping. Rephrase to accurately reflect NRW/Swansea Council official position and direct visitors to established campsites to avoid liability."
+    },
+    {
+      "claim": "Gower coastal path is 46 miles",
+      "source": "data/regions/gower.ts — keyFacts and multiple FAQ references",
+      "risk": "low-medium",
+      "action": "Verify against Wales Coast Path official distance for the Gower section to confirm the 46-mile figure and note whether it includes Swansea Bay sections."
+    }
+  ],
+
+  "sourcesUsed": [
+    {
+      "url": "data/regions/gower.ts",
+      "description": "Primary existing data file — richly structured region data, last updated 2025-02-06; sources include Perplexity AI research (policy violation), Visit Swansea Bay, National Trust"
+    },
+    {
+      "url": "content/regions/gower.md",
+      "description": "Existing markdown content — shorter opinionated regional guide draft in casual voice; structurally separate from TS data, canonical rendering unclear"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Content inventory flags: evidence_status missing, image_status needs_review, copy_status needs_review, status research_needed"
+    },
+    {
+      "url": "content/ops/image-registry.json",
+      "description": "Image registry — confirms location-landing-gower has image_status needs_review, image_source_url empty, notes 'Needs image provenance review'"
+    },
+    {
+      "url": "public/images/regions/",
+      "description": "File system check — gower-hero.jpg confirmed to exist (315KB, Feb 14 2025); gower-og.jpg confirmed NOT to exist"
+    },
+    {
+      "url": "https://www.naturalresources.wales/guidance-and-advice/environmental-topics/landscape/protected-landscapes/areas-of-outstanding-natural-beauty/",
+      "description": "NRW — AONB designation confirmation for Gower (first AONB in UK/Wales, 1956)"
+    },
+    {
+      "url": "https://www.nationaltrust.org.uk/visit/wales/rhossili-and-south-gower-coast",
+      "description": "National Trust — Rhossili, Worm's Head, and Arthur's Stone management and description"
+    },
+    {
+      "url": "https://cadw.gov.wales/visit/places-to-visit/weobley-castle",
+      "description": "Cadw — Weobley Castle medieval fortified manor"
+    },
+    {
+      "url": "https://cadw.gov.wales/visit/places-to-visit/parc-le-breos-burial-chamber",
+      "description": "Cadw — Parc le Breos (Parc Cwm) Neolithic tomb, near Parkmill"
+    },
+    {
+      "url": "https://www.walescoastpath.gov.uk/",
+      "description": "Wales Coast Path — 870-mile official route; Gower section distance to be verified against this source"
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusRationale": "The existing data/regions/gower.ts provides a strong structural and editorial foundation that captures the region's identity well. The geographic and heritage facts are stable and largely accurate. However three blockers prevent immediate sign-off: (1) the OG/social image is missing from disk entirely, which would cause a broken social preview at launch; (2) the hero image has no provenance record and cannot be published without legal clearance; (3) all pricing and transport details are AI-sourced and 16+ months old. Once those three blockers are resolved and key claims spot-verified, the page is close to publishable and warrants a QA pass.",
+
+  "blockers": [
+    {
+      "rank": 1,
+      "blocker": "OG/social image file missing from disk — gower-og.jpg does not exist",
+      "detail": "data/regions/gower.ts references meta.socialImage: '/images/regions/gower-og.jpg' but the file public/images/regions/gower-og.jpg does not exist on disk. Any deployment of the /gower page without this file will result in a broken Open Graph preview (blank or fallback thumbnail when shared on social media). This is a content-blocking production issue.",
+      "resolution": "Source and place a 1200×630px OG image at public/images/regions/gower-og.jpg. Record full provenance (photographer, licence, acquisition URL) in the image registry before publishing. Candidate sources: Openverse CC search for Rhossili Bay (https://openverse.org/search/?q=Rhossili+Bay+Gower&license_type=commercial&use_commercial=true) or request from Visit Swansea Bay media team."
+    },
+    {
+      "rank": 2,
+      "blocker": "Hero image provenance unknown — possible licence violation",
+      "detail": "public/images/regions/gower-hero.jpg exists on disk (315KB, Feb 14 2025) but has no photographer credit, licence, or acquisition record in the image registry (image_source_url is blank). Publishing this image without provenance is a copyright risk.",
+      "resolution": "Audit acquisition records for this image file. If no provenance can be established, source a replacement via Openverse with a CC BY or CC BY-SA licence, or request an image from Visit Swansea Bay media / NRW press office. Record full attribution before publishing."
+    },
+    {
+      "rank": 3,
+      "blocker": "All pricing and transport claims are AI-sourced (Perplexity) and 16+ months old",
+      "detail": "Eight pricing figures (Rhossili parking, Three Cliffs parking, two surfing lesson ranges, coasteering, sea kayaking, horse riding, Langland beach huts, Weobley Castle entry), plus bus route numbers 118/116 and the Joe's Ice Cream founding year are all sourced solely from Perplexity AI research (2025-02). These must be re-verified before the page is accurate enough to publish. Incorrect pricing claims and wrong bus route numbers are the most common sources of visitor complaints on location pages.",
+      "resolution": "Human QA reviewer should work through the officialSourcesForHumanVerification list and update each claim with a direct source URL and verified figure. The fastest path is to remove all price figures from the location landing page and push them to activity-specific pages (which can carry their own operator-sourced pricing). For transport, verify via Traveline Cymru (https://www.traveline.cymru/)."
+    }
+  ]
+}

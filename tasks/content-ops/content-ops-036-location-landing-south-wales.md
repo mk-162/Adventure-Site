@@ -12,9 +12,9 @@ Do not guess. Capture source URLs for every factual claim. Do not use AI-generat
 - Channel: evergreen
 - Content type: location_landing
 - Route/slug: /south-wales
-- Current status: research_needed
+- Current status: qa_needed
 - Priority: 45
-- Task type: research
+- Task type: qa
 - Recommended skill: directory-region-page
 - Required output path: data/research/content-ops/location-landing-south-wales.json
 

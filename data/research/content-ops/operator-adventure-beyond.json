@@ -1,0 +1,397 @@
+{
+  "_meta": {
+    "task": "content-ops-068-operator-adventure-beyond",
+    "contentItem": "operator-adventure-beyond",
+    "contentType": "operator",
+    "slug": "adventure-beyond",
+    "route": "/directory/adventure-beyond",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "substantially_complete",
+    "identityConfidence": "HIGH — multiple independent sources confirm adventurebeyond.co.uk as the correct entity for slug 'adventure-beyond'"
+  },
+
+  "proposedOperatorData": {
+    "name": "Adventure Beyond",
+    "slug": "adventure-beyond",
+    "website": "https://www.adventurebeyond.co.uk",
+    "websiteNote": "Active domain as of June 2026. Copyright © 2026 Adventure Beyond. Confirmed as the correct operator via internal surf.csv, climbing.csv, and multiple external tourism listings.",
+    "contact": {
+      "phone": "01239 612133",
+      "phoneSource": "https://www.adventurebeyond.co.uk — also listed on outdoor-learning.org, visitpembrokeshire.com",
+      "phoneMobile": "07787 123 761",
+      "phoneMobileSource": "https://www.adventurebeyond.co.uk",
+      "email": "fun@adventurebeyond.co.uk",
+      "emailSource": "https://www.adventurebeyond.co.uk — also confirmed in content/operators/surf.csv (internal)",
+      "address": {
+        "line1": "Nant Y Popty Farm",
+        "locality": "Coed-y-bryn",
+        "town": "Llandysul",
+        "county": "Ceredigion",
+        "postcode": "SA44 5LQ",
+        "country": "Wales",
+        "addressSource": "https://www.outdoor-learning.org/organisation-directory/adventure-beyond.html; https://www.visitpembrokeshire.com/activity-listing/adventure-beyond"
+      }
+    },
+    "location": {
+      "lat": 52.0787,
+      "lng": -4.4037,
+      "latLngSource": "https://www.visitpembrokeshire.com/activity-listing/adventure-beyond (coordinates 52.078701, -4.403671)",
+      "latLngNote": "VERIFY: internal climbing.csv gives coordinates 52.080, -4.660, which is closer to Cardigan town (SA43). The Visit Pembrokeshire coordinates 52.078701, -4.403671 appear to match SA44 5LQ (Coed-y-bryn, midway between Cardigan and Llandysul) more accurately. Recommend using the Visit Pembrokeshire coordinates but a human editor should confirm against the postcode SA44 5LQ.",
+      "region": "mid_wales",
+      "serviceAreas": [
+        "Cardigan Bay",
+        "Ceredigion",
+        "Pembrokeshire",
+        "West Wales"
+      ],
+      "serviceAreaNote": "Operator also lists extended service areas including Brecon Beacons, Snowdonia, Gower Peninsula, Dartmoor, Exmoor, Cornwall, Peak District, Lake District, and Scottish Highlands for residential and expedition trips.",
+      "serviceAreaSource": "https://adventurebeyond.co.uk"
+    },
+    "founded": 1997,
+    "foundedSource": "https://adventurebeyond.co.uk — 'offering real activities and amazing adventures in West Wales since 1997'",
+    "founderNote": "Jethro Moore, described as a former international slalom kayaker, is referenced as founder/lead instructor. This detail appears in search result snippets but was not verified from a primary source — flag for human review.",
+    "founderSource": "Web search snippet referencing adventurebeyond.co.uk content (secondary — needs primary verification)",
+    "description": {
+      "short": "Adventure Beyond is a family-run outdoor activity company founded in 1997, based at Nant Y Popty Farm in Coed-y-bryn, Ceredigion. They offer coasteering, sea kayaking, canoeing, paddle boarding, white water rafting, gorge walking, and climbing in Cardigan Bay and along the Pembrokeshire coast — suitable for individuals, families, schools, corporate groups, and Duke of Edinburgh Award participants.",
+      "shortNote": "Drafted from verified website and tourism listing content. Needs editorial review and tone check.",
+      "shortSource": "https://www.adventurebeyond.co.uk; https://www.outdoor-learning.org/organisation-directory/adventure-beyond.html",
+      "full": "Adventure Beyond is a family-run outdoor activity company founded in 1997 and based at Nant Y Popty Farm, Coed-y-bryn, Llandysul, Ceredigion SA44 5LQ in West Wales. Operating within reach of the Cardigan Bay coastline and the River Teifi, they offer adventurous experiences tailored to all abilities — from adrenaline-focused coasteering and white water rafting to relaxed family canoeing trips and sea kayaking with dolphin-spotting opportunities.\n\nActivities include coasteering along the Pembrokeshire and Ceredigion coast, sea kayaking in Cardigan Bay, canoeing on the River Teifi, white water rafting and tubing, gorge walking, stand-up paddle boarding, hill walking, rock climbing, and abseiling. The company also runs residential school and youth group trips, Duke of Edinburgh Award expeditions at Bronze, Silver, and Gold levels, and corporate team-building events. Select residential programmes include bush craft sessions.\n\nAdventure Beyond holds AALA licensing and is an accredited British Canoeing Delivery Partner, Canoe Wales member, National Coasteering Charter member, and WiSe (Wildlife Safe) Scheme operator. Their guides hold qualifications through the Institute for Outdoor Learning. The company has appeared in television productions including Don't Rock the Boat, Extreme Wales, and I'm a Celebrity Get Me Out of Here.\n\nActivities typically run year-round with booking by phone or via the website.",
+      "fullNote": "Drafted from verified website and IoL directory content. TV appearances listed on adventurebeyond.co.uk — individual episode details not independently verified. Do not mention pricing in descriptions without a dated, verified figure."
+    },
+    "activities": [
+      {
+        "name": "Coasteering",
+        "detail": "Pembrokeshire and Ceredigion coast including Ceibwr Bay and other sites",
+        "source": "https://adventurebeyond.co.uk; https://www.tripadvisor.com/Attraction_Review-g1472532-d13974862-Reviews-Adventure_Beyond-Coed_Y_Bryn_Ceredigion_Wales.html"
+      },
+      {
+        "name": "Sea Kayaking",
+        "detail": "Cardigan Bay — includes wildlife and dolphin viewing opportunities",
+        "source": "https://adventurebeyond.co.uk/activities-list/sea-kayak"
+      },
+      {
+        "name": "Canoeing",
+        "detail": "River Teifi day trips and multi-day expeditions; family sessions",
+        "source": "https://adventurebeyond.co.uk"
+      },
+      {
+        "name": "White Water Rafting",
+        "detail": "River Teifi",
+        "source": "https://adventurebeyond.co.uk"
+      },
+      {
+        "name": "White Water Tubing",
+        "detail": "River Teifi — one of the most frequently mentioned activities in guest reviews",
+        "source": "https://adventurebeyond.co.uk; https://www.tripadvisor.com/Attraction_Review-g1472532-d13974862-Reviews-Adventure_Beyond-Coed_Y_Bryn_Ceredigion_Wales.html"
+      },
+      {
+        "name": "Stand-Up Paddle Boarding (SUP)",
+        "source": "https://adventurebeyond.co.uk; content/operators/surf.csv (internal)"
+      },
+      {
+        "name": "Gorge Walking",
+        "detail": "Teifi Gorge",
+        "source": "https://adventurebeyond.co.uk"
+      },
+      {
+        "name": "Hill Walking",
+        "source": "https://adventurebeyond.co.uk"
+      },
+      {
+        "name": "Rock Climbing",
+        "source": "https://adventurebeyond.co.uk; https://www.visitpembrokeshire.com/activity-listing/adventure-beyond"
+      },
+      {
+        "name": "Abseiling",
+        "source": "https://www.visitpembrokeshire.com/activity-listing/adventure-beyond"
+      },
+      {
+        "name": "Duke of Edinburgh Award Expeditions",
+        "detail": "Bronze, Silver, and Gold levels",
+        "source": "https://www.adventurebeyond.co.uk"
+      },
+      {
+        "name": "School and Youth Group Residential Trips",
+        "source": "https://www.adventurebeyond.co.uk; https://www.visitpembrokeshire.com/activity-listing/adventure-beyond"
+      },
+      {
+        "name": "Corporate Team Building",
+        "source": "https://www.adventurebeyond.co.uk"
+      },
+      {
+        "name": "Bush Craft",
+        "note": "Mentioned in a TripAdvisor review and appears in residential programme listings — verify directly with operator",
+        "source": "https://www.tripadvisor.com/Attraction_Review-g1472532-d13974862-Reviews-Adventure_Beyond-Coed_Y_Bryn_Ceredigion_Wales.html (review, secondary)"
+      }
+    ],
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "No Google Maps rating found during research. Consistent with task description ('no Google rating'). Verify manually by searching Google Maps for 'Adventure Beyond Nant Y Popty Farm Coed-y-bryn SA44 5LQ'.",
+        "verifyManually": true
+      },
+      "tripadvisor": {
+        "rating": 4.9,
+        "ratingOutOf": 5,
+        "reviewCount": 338,
+        "ranking": "#1 of 1 Tours & Activities in Coed Y Bryn",
+        "award": "TripAdvisor Travellers Choice Award",
+        "source": "https://www.tripadvisor.com/Attraction_Review-g1472532-d13974862-Reviews-Adventure_Beyond-Coed_Y_Bryn_Ceredigion_Wales.html",
+        "accessedAt": "2026-06-04",
+        "note": "4.9/5 from 338 reviews as of June 2026. Highly credible signal — publish with caveat that review counts change."
+      }
+    },
+    "accreditations": [
+      {
+        "name": "AALA Licensed Provider",
+        "detail": "Adventure Activities Licensing Authority — required for UK operators working with under-18s in licensable activities",
+        "source": "https://www.adventurebeyond.co.uk",
+        "verifyNote": "Verify current AALA licence status at https://aala.hse.gov.uk/aala/provider_search.php (search postcode SA44 5LQ or business name)"
+      },
+      {
+        "name": "British Canoeing Delivery Partner",
+        "source": "https://www.adventurebeyond.co.uk"
+      },
+      {
+        "name": "Canoe Wales Member",
+        "source": "https://www.adventurebeyond.co.uk"
+      },
+      {
+        "name": "National Coasteering Charter Member",
+        "source": "https://www.adventurebeyond.co.uk"
+      },
+      {
+        "name": "Pembrokeshire Outdoor Charter Group",
+        "source": "https://www.adventurebeyond.co.uk"
+      },
+      {
+        "name": "Institute for Outdoor Learning Member",
+        "source": "https://www.adventurebeyond.co.uk; https://www.outdoor-learning.org/organisation-directory/adventure-beyond.html"
+      },
+      {
+        "name": "WiSe Scheme — Wildlife Safe Accredited",
+        "detail": "Wildlife Safe scheme for responsible wildlife watching in Welsh waters",
+        "source": "https://www.adventurebeyond.co.uk"
+      },
+      {
+        "name": "IRATA International Industrial Rope Access",
+        "detail": "Rope access certification — confirms rope-based activity competence",
+        "source": "https://www.adventurebeyond.co.uk",
+        "verifyNote": "IRATA certification is unusual for an outdoor activity provider and is primarily an industrial rope access standard. Verify this is correctly listed as a qualification held by the operator."
+      },
+      {
+        "name": "Duke of Edinburgh Award Licensed Operator",
+        "source": "https://www.adventurebeyond.co.uk"
+      },
+      {
+        "name": "TripAdvisor Travellers Choice Award",
+        "source": "https://www.adventurebeyond.co.uk; https://www.tripadvisor.com/Attraction_Review-g1472532-d13974862-Reviews-Adventure_Beyond-Coed_Y_Bryn_Ceredigion_Wales.html"
+      }
+    ],
+    "tvAppearances": [
+      {
+        "show": "Don't Rock the Boat",
+        "source": "https://www.adventurebeyond.co.uk",
+        "verifyNote": "Listed on operator's own website — independently verify episode/series before publishing"
+      },
+      {
+        "show": "Extreme Wales",
+        "source": "https://www.adventurebeyond.co.uk",
+        "verifyNote": "Listed on operator's own website — independently verify"
+      },
+      {
+        "show": "I'm a Celebrity Get Me Out of Here",
+        "source": "https://www.adventurebeyond.co.uk",
+        "verifyNote": "Listed on operator's own website — independently verify episode context (likely supplied scenery/activities, not a filming location)"
+      }
+    ],
+    "socialMedia": {
+      "instagram": {
+        "handle": "@adventure.beyond",
+        "url": "https://www.instagram.com/adventure.beyond/",
+        "source": "https://www.instagram.com/adventure.beyond/ — search result confirms handle"
+      },
+      "facebook": {
+        "url": null,
+        "note": "Facebook presence confirmed on website footer but specific page URL not extracted during research. Verify at adventurebeyond.co.uk — footer link."
+      },
+      "youtube": {
+        "url": null,
+        "note": "YouTube channel listed on website but specific channel URL not extracted. Verify at adventurebeyond.co.uk."
+      },
+      "twitter_x": {
+        "url": null,
+        "note": "X/Twitter listed on website but specific handle not extracted."
+      },
+      "tripadvisor": {
+        "url": "https://www.tripadvisor.com/Attraction_Review-g1472532-d13974862-Reviews-Adventure_Beyond-Coed_Y_Bryn_Ceredigion_Wales.html",
+        "source": "Direct TripAdvisor listing"
+      }
+    },
+    "pricing": {
+      "publiclyAvailable": true,
+      "indicativeFrom": "£36",
+      "indicativeFromSource": "https://www.visitpembrokeshire.com/activity-listing/adventure-beyond",
+      "pricingNote": "CAUTION: 'From £36' appears in the Visit Pembrokeshire listing but may not reflect current pricing. Do not publish any price figure without contacting the operator directly and noting the date of verification. Pricing varies by activity and group size."
+    },
+    "groupSize": {
+      "maxGroupSize": 10,
+      "source": "https://www.tripadvisor.com/Attraction_Review-g1472532-d13974862-Reviews-Adventure_Beyond-Coed_Y_Bryn_Ceredigion_Wales.html (mentioned in a 2026 guest review — secondary, verify with operator)"
+    },
+    "openingHours": {
+      "yearRound": true,
+      "source": "https://www.visitpembrokeshire.com/activity-listing/adventure-beyond — listed as 'December to December'"
+    }
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "adventurebeyond.co.uk is copyright © 2026 Adventure Beyond. No freely licensed logo found on Openverse, Unsplash, or Wikimedia Commons. Logo must be obtained directly from the operator under written licence or permission.",
+      "actionRequired": "Contact the operator at fun@adventurebeyond.co.uk or 01239 612133 to request a logo file and written permission to reproduce it on the Adventure Wales directory."
+    },
+    "cover": {
+      "status": "PARTIALLY_UNBLOCKED",
+      "note": "A generic alternative is available — see wikimediaOption below. Operator-specific photography remains blocked under copyright.",
+      "operatorPhotography": {
+        "status": "BLOCKED",
+        "reason": "All photography on adventurebeyond.co.uk is copyright © 2026 Adventure Beyond. Instagram profile (@adventure.beyond) may contain activity photography but reproducing Instagram images requires explicit operator permission."
+      },
+      "wikimediaOption": {
+        "status": "AVAILABLE_FOR_REVIEW",
+        "file": "Coasteering in the caves south of Carreg Wylan",
+        "url": "https://commons.wikimedia.org/wiki/Category:Coasteering",
+        "licence": "CC-BY-SA",
+        "licenceNote": "Licence details must be verified on the individual file description page at Wikimedia Commons before use. CC-BY-SA requires attribution and that derivative works use the same licence.",
+        "relevance": "This image is from Wales (Carreg Wylan, Pembrokeshire/Ceredigion area), geographically consistent with Adventure Beyond's service area. However, it does not depict the operator's staff, equipment, or branded activities — it is a generic coasteering scene.",
+        "editorialDecision": "A human editor must decide whether a generic coasteering photograph adequately represents this specific operator, or whether operator-specific imagery is required. Using a generic image without disclosure could mislead users about the operator's appearance."
+      },
+      "actionRequired": "1. Verify the CC-BY-SA licence on the Wikimedia image 'Coasteering in the caves south of Carreg Wylan'. 2. Alternatively, contact the operator at fun@adventurebeyond.co.uk to request a media pack. 3. As a third option, search Openverse (openverse.org) for 'coasteering Wales' or 'sea kayaking Cardigan Bay' with CC0 or CC-BY filter."
+    },
+    "gallery": {
+      "status": "BLOCKED",
+      "reason": "Same copyright restriction applies to all operator photography. No freely licensed gallery images depicting this operator found.",
+      "actionRequired": "Contact operator for media pack or commission original photography."
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Google Business rating",
+      "confidence": "UNVERIFIED",
+      "issue": "No Google Maps listing or Google rating was found during research. The task description notes 'no Google rating' which is consistent. However, the absence of a Google listing for an AALA-licensed operator with 338 TripAdvisor reviews is unusual — the listing may exist under a slightly different name or location pin.",
+      "action": "Search Google Maps directly for 'Adventure Beyond Nant Y Popty Farm Coed-y-bryn SA44 5LQ'. If no listing exists, consider advising the operator to create or claim a Google Business Profile."
+    },
+    {
+      "claim": "Coordinate discrepancy",
+      "confidence": "UNVERIFIED",
+      "issue": "Internal climbing.csv gives coordinates 52.080, -4.660 (near Cardigan town). Visit Pembrokeshire gives 52.078701, -4.403671 (closer to Coed-y-bryn SA44 5LQ). Both are plausible but the longitude differs by ~0.25 degrees (~17 km).",
+      "action": "Verify the correct pin location for Nant Y Popty Farm, Coed-y-bryn, SA44 5LQ using Google Maps or a postcode lookup. The Visit Pembrokeshire coordinates appear more accurate for the stated address but must be confirmed."
+    },
+    {
+      "claim": "Founder: Jethro Moore, former international slalom kayaker",
+      "confidence": "LOW",
+      "issue": "This detail appeared in a web search snippet attributed to adventurebeyond.co.uk content but was not directly confirmed from a primary source during research. The About page returned a 404.",
+      "action": "Visit https://www.adventurebeyond.co.uk/more/additional-information/about-adventure-beyond when accessible, or contact the operator directly to confirm founder details before publishing."
+    },
+    {
+      "claim": "IRATA International Industrial Rope Access accreditation",
+      "confidence": "MODERATE",
+      "issue": "IRATA is an industrial rope access standard primarily used in the energy and construction sectors. Its appearance on an outdoor activity provider's website is unusual. This may be a genuine qualification held by one of the instructors (e.g., for sea cliff abseiling work) but warrants verification before including in a marketing context.",
+      "action": "Confirm directly with operator whether IRATA is currently held, by whom, and what it applies to. Do not publish this claim without verification."
+    },
+    {
+      "claim": "TV appearances: Don't Rock the Boat, Extreme Wales, I'm a Celebrity Get Me Out of Here",
+      "confidence": "MODERATE",
+      "issue": "These are self-claimed on the operator's own website. For I'm a Celebrity Get Me Out of Here in particular, the claim requires editorial care — the operator may have supplied location access or activities rather than being directly featured.",
+      "action": "Independently verify each TV appearance before publishing. If used in marketing copy, frame accurately (e.g., 'featured activities supplier for...' rather than 'starred in...')."
+    },
+    {
+      "claim": "Pricing 'from £36'",
+      "confidence": "LOW",
+      "issue": "This figure appears in the Visit Pembrokeshire listing and may be outdated. Pricing on the operator's own website was not captured during research.",
+      "action": "Do not publish this figure. Contact the operator to obtain current pricing or direct users to the booking page at adventurebeyond.co.uk."
+    },
+    {
+      "claim": "Operator is currently trading in 2026",
+      "confidence": "HIGH",
+      "issue": "Website copyright is © 2026. TripAdvisor reviews include entries from May 2026. Multiple tourism directory listings are active. High confidence the business is currently trading.",
+      "action": "No immediate action needed; trading status is well evidenced."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.adventurebeyond.co.uk",
+      "description": "Official operator website — name, address, phone, email, activities, accreditations, TV appearances, social media links, copyright © 2026",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.tripadvisor.com/Attraction_Review-g1472532-d13974862-Reviews-Adventure_Beyond-Coed_Y_Bryn_Ceredigion_Wales.html",
+      "description": "TripAdvisor listing — 4.9/5 rating, 338 reviews, #1 in Coed Y Bryn, May 2026 reviews",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.outdoor-learning.org/organisation-directory/adventure-beyond.html",
+      "description": "Institute for Outdoor Learning directory — full address SA44 5LQ, phone, email, activities confirmed",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.visitpembrokeshire.com/activity-listing/adventure-beyond",
+      "description": "VisitPembrokeshire listing — address, postcode SA44 5LQ, coordinates, year-round opening, indicative pricing from £36",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.instagram.com/adventure.beyond/",
+      "description": "Instagram profile — handle @adventure.beyond confirmed",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Coasteering",
+      "description": "Wikimedia Commons — Coasteering category; potential CC-BY-SA cover image identified (Wales, Carreg Wylan)",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "content/operators/surf.csv",
+      "description": "Internal surf operators CSV — lists adventure-beyond with adventurebeyond.co.uk, Mid Wales, Coasteering|Kayaking|SUP",
+      "type": "internal"
+    },
+    {
+      "url": "content/operators/climbing.csv",
+      "description": "Internal climbing operators CSV — lists Adventure Beyond with email, phone, coordinates 52.080/-4.660, activities including Coasteering, Canoeing, Paddle Boarding, Gorge Walking, Climbing",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirms operator-adventure-beyond, unclassified_operator tier, all key fields missing, priority 34",
+      "type": "internal"
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "Research has produced a substantially complete data set. Operator identity is confirmed with HIGH confidence from multiple independent sources. Core fields (name, address, phone, email, website, activities, accreditations, TripAdvisor rating) are all populated. The three blockers below must be resolved before the listing can be published: (1) Google rating is unconfirmed and may not exist; (2) all operator-specific images are copyright-blocked — a generic Wikimedia image is available but requires editorial approval; (3) one coordinate discrepancy requires resolution.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "All operator images blocked under copyright",
+      "detail": "All photography on adventurebeyond.co.uk is copyright © 2026 Adventure Beyond. No freely licensed operator-specific images were found. A generic CC-BY-SA coasteering image exists on Wikimedia Commons (Carreg Wylan, Wales) but an editorial decision is needed on whether it adequately represents this operator. Contact fun@adventurebeyond.co.uk or 01239 612133 to request a media pack or written permission to reproduce photography.",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 2,
+      "blocker": "Google rating unconfirmed — may have no Google Business listing",
+      "detail": "No Google Maps listing or star rating was found during research. The task flags 'no Google rating' which is consistent with findings. For a well-established AALA-licensed operator with 338 TripAdvisor reviews, this is notable. A human editor should manually search Google Maps for 'Adventure Beyond SA44 5LQ'. If no listing exists, consider advising the operator to create/claim one — this could improve the directory entry quality after the listing is live.",
+      "severity": "MEDIUM"
+    },
+    {
+      "rank": 3,
+      "blocker": "Coordinate discrepancy between internal data and Visit Pembrokeshire",
+      "detail": "Internal climbing.csv gives coordinates 52.080, -4.660 (near Cardigan town). Visit Pembrokeshire gives 52.078701, -4.403671 (closer to Coed-y-bryn address SA44 5LQ). These differ by ~17 km. The map pin will be incorrect for one source. Verify the correct coordinates for Nant Y Popty Farm, Coed-y-bryn, SA44 5LQ before publishing. Visit Pembrokeshire coordinates are likely correct for the business address.",
+      "severity": "MEDIUM"
+    }
+  ]
+}

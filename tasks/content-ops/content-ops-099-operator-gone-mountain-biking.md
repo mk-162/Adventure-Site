@@ -4,7 +4,7 @@
 Improve content item operator-gone-mountain-biking: Gone Mountain Biking.
 Channel: commercial. Content type: operator. Route/slug: /directory/gone-mountain-biking.
 Commercial tier: unclassified_operator.
-Known blocker: Operator "Gone Mountain Biking" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating.
+Known blocker: Operator "Gone Mountain Biking" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating | Operator "Gone Mountain Biking" missing: no description, no cover image, no logo, no website, no phone, no email, no Google rating.
 Do not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.
 
 ## Metadata
@@ -13,9 +13,9 @@ Do not guess. Capture source URLs for every factual claim. Do not use AI-generat
 - Channel: commercial
 - Content type: operator
 - Route/slug: /directory/gone-mountain-biking
-- Current status: research_needed
+- Current status: blocked
 - Priority: 34
-- Task type: research
+- Task type: commercial_review
 - Recommended skill: directory-premium-lure-model
 - Required output path: data/research/content-ops/operator-gone-mountain-biking.json
 

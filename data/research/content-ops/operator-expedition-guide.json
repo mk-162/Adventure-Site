@@ -1,0 +1,389 @@
+{
+  "_meta": {
+    "task": "content-ops-093-operator-expedition-guide",
+    "contentItem": "operator-expedition-guide",
+    "contentType": "operator",
+    "slug": "expedition-guide",
+    "route": "/directory/expedition-guide",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "partial_with_flags",
+    "identityConfidence": "HIGH — expeditionguide.com is unambiguously the matching operator; multiple cross-references confirm Rob Johnson / Johnsons Expedition Guides operating from Corris, Snowdonia"
+  },
+
+  "proposedOperatorData": {
+    "name": "Expedition Guide",
+    "nameNote": "Operator's website branding is 'Expedition Guide' and 'Expedition Guide Rob Johnson WMCI & IML'. Trading name reported by one search engine snippet as 'Johnsons Expedition Guides' — verify against Companies House before using as the legal entity name.",
+    "slug": "expedition-guide",
+    "website": "https://www.expeditionguide.com/",
+    "websiteSource": "https://www.expeditionguide.com/",
+    "websiteNote": "Active site as of June 2026. Site copyright and blog posts from 2025/2026 confirm the site is maintained.",
+
+    "contact": {
+      "phone": "01248 209576",
+      "phoneNote": "01248 is the Bangor/Anglesey area code, consistent with a North Wales base. Verify this number is still current before publishing — sourced from site's contact page.",
+      "phoneSource": "https://www.expeditionguide.com/contact-3/",
+      "phoneHours": "Monday–Friday, 9:00am–5:00pm",
+      "email": "kate@expeditionguide.com",
+      "emailNote": "Listed as the general enquiries address. A second address, rob@expeditionguide.com, is listed for course-specific questions.",
+      "emailSource": "https://www.expeditionguide.com/contact-3/",
+      "emailAdditional": "rob@expeditionguide.com",
+      "address": {
+        "locality": "Corris",
+        "region": "Southern Snowdonia",
+        "county": "Gwynedd",
+        "country": "Wales",
+        "addressNote": "Rob Johnson is described as living in 'the beautiful village of Corris in Southern Snowdonia'. No street address or postcode found on public sources. HUMAN REVIEW NEEDED: confirm full postal address before publishing a map pin.",
+        "addressSource": "https://www.expeditionguide.com/about-us/"
+      }
+    },
+
+    "location": {
+      "region": "north_wales",
+      "subRegion": "snowdonia",
+      "primaryBase": "Corris, Southern Snowdonia (Eryri National Park), North Wales",
+      "serviceAreas": ["Snowdonia / Eryri", "Scotland", "European Alps", "Norway", "Nepal", "Peru"],
+      "serviceAreaNote": "Core instructional base is Snowdonia. International expeditions also offered.",
+      "serviceAreaSource": "https://www.expeditionguide.com/about-us/"
+    },
+
+    "keyPerson": {
+      "name": "Rob Johnson",
+      "role": "Lead Instructor / Owner",
+      "qualifications": [
+        {
+          "name": "WMCI — Winter Mountaineering and Climbing Instructor",
+          "note": "Highest instructional qualification in the UK. Awarded by Mountain Training UK.",
+          "yearAchieved": "2009",
+          "source": "https://www.expeditionguide.com/about-us/"
+        },
+        {
+          "name": "IML — International Mountain Leader (UIMLA)",
+          "yearAchieved": "2009",
+          "source": "https://www.expeditionguide.com/about-us/"
+        },
+        {
+          "name": "Mountain Bike Leader — British Cycling Level 2",
+          "source": "https://www.expeditionguide.com/about-us/"
+        },
+        {
+          "name": "American Avalanche Association Level 2",
+          "source": "https://www.expeditionguide.com/about-us/"
+        },
+        {
+          "name": "Alpine Ski Leader — Snowsports Scotland",
+          "source": "https://www.expeditionguide.com/about-us/"
+        }
+      ],
+      "memberships": [
+        {
+          "name": "AMI — Association of Mountaineering Instructors",
+          "status": "Full member, past Secretary",
+          "source": "https://www.expeditionguide.com/about-us/"
+        },
+        {
+          "name": "BAIML — British Association of International Mountain Leaders",
+          "status": "Full member",
+          "source": "https://www.expeditionguide.com/about-us/"
+        },
+        {
+          "name": "MTA — Mountain Training Association",
+          "status": "Full member",
+          "source": "https://www.expeditionguide.com/about-us/"
+        }
+      ],
+      "providerDetails": {
+        "body": "Mountain Training Cymru",
+        "providerNumber": "1554",
+        "role": "Approved provider and course director",
+        "source": "https://www.expeditionguide.com/about-us/"
+      },
+      "experienceNote": "Full-time instructor since 2002 (20+ years). Has guided in the British mountains, European Alps, Norway, Nepal, and Peru.",
+      "source": "https://www.expeditionguide.com/about-us/"
+    },
+
+    "additionalInstructor": {
+      "name": "Huw Gilbert",
+      "qualifications": ["WMCI — Winter Mountaineering and Climbing Instructor"],
+      "note": "Described as Rob Johnson's 'friend' and fellow instructor who assists with courses.",
+      "source": "https://www.expeditionguide.com/about-us/"
+    },
+
+    "description": {
+      "short": "Expedition Guide is a North Wales mountaineering instruction and guiding service led by Rob Johnson, a Winter Mountaineering and Climbing Instructor (WMCI) and International Mountain Leader based in Corris, Snowdonia. Rob has been running professional mountain courses since 2002 and holds the highest instructional qualification in the UK.",
+      "shortNote": "Drafted from verified website content. Needs editorial tone review.",
+      "full": "Expedition Guide, run by Rob Johnson WMCI & IML, offers expert mountaineering instruction and guiding from a base in Corris, Southern Snowdonia. Rob has spent more than 20 years guiding clients in the mountains of Britain and further afield — in the European Alps, Norway, Nepal, and Peru — and holds the Winter Mountaineering and Climbing Instructor (WMCI) qualification, the highest instructional award in the UK.\n\nCourses are run throughout the year in Snowdonia and Scotland and cover a wide range of skills. Beginners can start with the two-day Introduction to Scrambling course, tackling iconic Grade 1 routes such as Tryfan's North Ridge and Y Gribin on the Glyderau at a 1:4 instructor-to-student ratio. More experienced hillwalkers can progress to the Advanced Scrambling (Learn to Lead) course, which introduces roped techniques on Grade 2 and 3 scrambles. The six-day MountainCraft course covers the full Mountain Leader syllabus — navigation, steep ground, wild camping, and night navigation — and is the recommended starting point for those pursuing the Mountain Leader qualification.\n\nRob is an approved Mountain Training Cymru provider and course director (provider number 1554) for Mountain Leader training and assessment. He is a full member of the Association of Mountaineering Instructors (AMI), the British Association of International Mountain Leaders (BAIML), and the Mountain Training Association (MTA). Courses are assisted by Huw Gilbert, who also holds the WMCI qualification.",
+      "fullNote": "Drafted from verified website content and search snippets. Needs editorial review for tone and word count. Pricing has been deliberately omitted from the description — see pricingNote below."
+    },
+
+    "activities": [
+      {
+        "name": "Introduction to Scrambling (Grade 1)",
+        "detail": "2-day beginner scrambling course on routes including Tryfan North Ridge and Y Gribin. 1:4 instructor ratio.",
+        "source": "https://www.expeditionguide.com/intro-to-scrambling-course-snowdonia/"
+      },
+      {
+        "name": "Advanced Scrambling — Learn to Lead",
+        "detail": "3-day course progressing to roped Grade 2 and 3 scrambles.",
+        "source": "https://www.expeditionguide.com/advanced-scrambling-learn-to-lead-course/"
+      },
+      {
+        "name": "MountainCraft Course",
+        "detail": "6-day course covering the full Mountain Leader syllabus: navigation, wild camping, steep ground, night navigation.",
+        "source": "https://www.expeditionguide.com/course-notes-mountaincraft-course/"
+      },
+      {
+        "name": "Mountain Leader Training Course — Snowdonia",
+        "source": "https://www.expeditionguide.com/mountain-leader-training-course-snowdonia/"
+      },
+      {
+        "name": "Mountain Leader Assessment Course — Snowdonia",
+        "source": "https://www.expeditionguide.com/ML%20Assessment.php"
+      },
+      {
+        "name": "Mountain Leader Refresher",
+        "source": "https://www.expeditionguide.com/portfolio-items/mountain-leader-refresher-with-rob-johnson/"
+      },
+      {
+        "name": "Winter Climbing & Mountaineering — Snowdonia",
+        "source": "https://www.expeditionguide.com/welshwinterclimbing.php"
+      },
+      {
+        "name": "Winter Prep Weekend",
+        "source": "https://www.expeditionguide.com/portfolio-items/winter-prep-weekend/"
+      },
+      {
+        "name": "Rock Climbing — Snowdonia",
+        "source": "https://www.expeditionguide.com/2024/10/rock-climbing-snowdonia/"
+      },
+      {
+        "name": "Navigation Courses",
+        "detail": "Introduction to map reading through to challenging wild-country navigation.",
+        "source": "https://www.expeditionguide.com/about-us/"
+      },
+      {
+        "name": "Snowdonia Summits & Single-Track MTB Guiding",
+        "source": "https://www.expeditionguide.com/portfolio-items/snowdonia-summits-single-track-mtb-guiding/"
+      },
+      {
+        "name": "Adventures / Expeditions",
+        "detail": "Mountain expeditions to UK ranges, European Alps, Norway, Nepal, and Peru.",
+        "source": "https://www.expeditionguide.com/adventures/"
+      }
+    ],
+
+    "pricing": {
+      "pricingNote": "APPROXIMATE — sourced from search engine snippets only, not verified against the live booking/diary page. Do not publish without checking current prices at https://www.expeditionguide.com/diary/.",
+      "approximatePrices": [
+        {
+          "item": "2-day mountain skills course (Fort William, Scotland)",
+          "approxPrice": "£225 including kit hire",
+          "flaggedForVerification": true
+        },
+        {
+          "item": "5-day course North Wales",
+          "approxPrice": "£495 per person",
+          "flaggedForVerification": true
+        },
+        {
+          "item": "Longer courses (up to)",
+          "approxPrice": "£825 per person",
+          "flaggedForVerification": true
+        }
+      ],
+      "pricingSource": "Search engine snippets from expeditionguide.com — see https://www.expeditionguide.com/diary/ for current confirmed prices."
+    },
+
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/expeditionguide/",
+      "facebookNote": "Page name: 'Rob Johnson - Expeditionguide.com'. Presence confirmed by search results.",
+      "facebookSource": "https://www.facebook.com/expeditionguide/",
+      "instagram": null,
+      "instagramNote": "No confirmed Instagram account found in research. Needs manual check."
+    },
+
+    "googleRating": {
+      "rating": null,
+      "reviewCount": null,
+      "googleRatingNote": "BLOCKED — no Google rating found during research. Known blocker per task brief. Requires human to search Google Maps for 'Expedition Guide Corris' or 'expeditionguide.com' to retrieve current rating.",
+      "googleMapsUrl": null
+    },
+
+    "logo": {
+      "status": "blocked",
+      "note": "No standalone logo file found on public-facing sources. Operator's site likely uses a text/wordmark treatment. A human editor should request a logo asset directly from the operator or extract one from the website header with permission."
+    }
+  },
+
+  "imageRecommendations": {
+    "coverImage": {
+      "status": "blocked_operator_source",
+      "note": "No freely-licensed image found from the operator's own site — expeditionguide.com does not publish its images under an open licence. AI-generated images are prohibited per task requirements. Three CC-licensed alternatives from Openverse (Flickr) are proposed below. A human editor must verify each is still available at its source URL, confirm attribution is correct, and decide which best represents the operator before publishing."
+    },
+    "candidates": [
+      {
+        "rank": 1,
+        "title": "Crib Goch",
+        "creator": "Phil and Pam",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "imageUrl": "https://live.staticflickr.com/138/359871068_f3676b968a_b.jpg",
+        "source": "Openverse / Flickr",
+        "openverseSearchUrl": "https://openverse.org/search/image?q=snowdonia+scrambling+mountaineering",
+        "editorialNote": "Crib Goch is one of the main scrambling routes Rob Johnson uses. Strong visual match for the operator's core offering. Attribution required: Photo by Phil and Pam, CC BY 2.0.",
+        "humanReviewRequired": true
+      },
+      {
+        "rank": 2,
+        "title": "Y Gribin viewed from Crib Goch ridge",
+        "creator": "Masa Sakano",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "imageUrl": "https://live.staticflickr.com/2520/3967740024_44223dc83e_b.jpg",
+        "source": "Openverse / Flickr",
+        "openverseSearchUrl": "https://openverse.org/search/image?q=snowdonia+scrambling+mountaineering",
+        "editorialNote": "Y Gribin is explicitly named on the operator's scrambling course pages. SA licence means the page using this image must carry a compatible licence. Attribution required: Photo by Masa Sakano, CC BY-SA 2.0.",
+        "humanReviewRequired": true
+      },
+      {
+        "rank": 3,
+        "title": "Tryfan",
+        "creator": "mattvaux7",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "imageUrl": "https://live.staticflickr.com/823/41512519654_6bdcd297dd_b.jpg",
+        "source": "Openverse / Flickr",
+        "openverseSearchUrl": "https://openverse.org/search/image?q=snowdonia+scrambling+mountaineering",
+        "editorialNote": "Tryfan's North Ridge is the centrepiece scrambling route in the operator's beginner course. Attribution required: Photo by mattvaux7, CC BY 2.0.",
+        "humanReviewRequired": true
+      }
+    ]
+  },
+
+  "sourcesUsed": [
+    {
+      "url": "https://www.expeditionguide.com/",
+      "description": "Operator's official homepage — name, tagline, and general activity scope"
+    },
+    {
+      "url": "https://www.expeditionguide.com/about-us/",
+      "description": "Rob Johnson biography — qualifications, experience, location, memberships, provider number"
+    },
+    {
+      "url": "https://www.expeditionguide.com/contact-3/",
+      "description": "Contact page — phone number and email addresses"
+    },
+    {
+      "url": "https://www.expeditionguide.com/intro-to-scrambling-course-snowdonia/",
+      "description": "Intro to Scrambling course details"
+    },
+    {
+      "url": "https://www.expeditionguide.com/advanced-scrambling-learn-to-lead-course/",
+      "description": "Advanced Scrambling course"
+    },
+    {
+      "url": "https://www.expeditionguide.com/course-notes-mountaincraft-course/",
+      "description": "MountainCraft 6-day course details"
+    },
+    {
+      "url": "https://www.expeditionguide.com/mountain-leader-training-course-snowdonia/",
+      "description": "Mountain Leader Training course"
+    },
+    {
+      "url": "https://www.expeditionguide.com/ML%20Assessment.php",
+      "description": "Mountain Leader Assessment course"
+    },
+    {
+      "url": "https://www.expeditionguide.com/portfolio-items/winter-prep-weekend/",
+      "description": "Winter Prep Weekend course"
+    },
+    {
+      "url": "https://www.expeditionguide.com/portfolio-items/snowdonia-summits-single-track-mtb-guiding/",
+      "description": "Snowdonia Summits & MTB Guiding activity"
+    },
+    {
+      "url": "https://www.expeditionguide.com/adventures/",
+      "description": "Adventures and expeditions overview"
+    },
+    {
+      "url": "https://www.expeditionguide.com/diary/",
+      "description": "Course calendar / booking diary — pricing should be verified here"
+    },
+    {
+      "url": "https://www.facebook.com/expeditionguide/",
+      "description": "Facebook page — social media presence confirmed"
+    },
+    {
+      "url": "https://openverse.org/search/image?q=snowdonia+scrambling+mountaineering",
+      "description": "Openverse CC-image search — source for cover image candidates"
+    }
+  ],
+
+  "claimsNeedingHumanReview": [
+    {
+      "id": 1,
+      "claim": "Trading / legal entity name is 'Johnsons Expedition Guides'",
+      "reason": "Surfaced in one search engine snippet only. Not confirmed on the operator's own website, which uses 'Expedition Guide' or 'Expedition Guide Rob Johnson WMCI & IML'. Should be verified against Companies House before using as a legal entity name.",
+      "priority": "medium"
+    },
+    {
+      "id": 2,
+      "claim": "Phone 01248 209576 is current as of June 2026",
+      "reason": "Sourced from the contact page via search results. Small operator phone numbers change frequently. Recommend calling or emailing to confirm before publishing.",
+      "priority": "high"
+    },
+    {
+      "id": 3,
+      "claim": "Full postal address / postcode for Corris base",
+      "reason": "Rob Johnson's village is confirmed as Corris, but no street address or postcode was found on any public source. Map pin cannot be placed without this.",
+      "priority": "high"
+    },
+    {
+      "id": 4,
+      "claim": "Pricing — 2-day at ~£225, 5-day at £495, up to £825",
+      "reason": "Extracted from search engine snippets only; not verified against the live diary page. Prices may have changed. Do not publish without checking https://www.expeditionguide.com/diary/.",
+      "priority": "high"
+    },
+    {
+      "id": 5,
+      "claim": "Google Maps rating",
+      "reason": "No rating found during automated research. Known blocker per task brief. Manual check required.",
+      "priority": "medium"
+    },
+    {
+      "id": 6,
+      "claim": "Mountain Training Cymru provider number 1554 is still active",
+      "reason": "Surfaced in search results attributed to the operator's About page. Should be cross-checked against the Mountain Training provider directory at mountain.training.",
+      "priority": "low"
+    },
+    {
+      "id": 7,
+      "claim": "No Instagram account exists",
+      "reason": "No Instagram page found in research but absence of evidence is not evidence of absence. Manual check on Instagram for 'expeditionguide' or 'rob_johnson_wmci' recommended.",
+      "priority": "low"
+    }
+  ],
+
+  "blockers": [
+    {
+      "rank": 1,
+      "blocker": "Cover image",
+      "detail": "No freely-licensed image from the operator's own photography is available. Three CC Openverse/Flickr candidates are proposed but require human selection, attribution verification, and URL live-check before use. Operator logo also blocked — not found on public sources."
+    },
+    {
+      "rank": 2,
+      "blocker": "Full postal address / postcode",
+      "detail": "Only the village name 'Corris, Southern Snowdonia' is confirmed. A map pin or structured address field cannot be populated without a postcode. Human editor should contact the operator directly or check Google Maps / Companies House."
+    },
+    {
+      "rank": 3,
+      "blocker": "Google rating",
+      "detail": "No Google rating was returned during research. Manual search on Google Maps for 'Expedition Guide Corris' or 'expeditionguide.com' required before the rating field can be populated."
+    }
+  ],
+
+  "commercialTierNote": "Operator is unclassified_operator tier. No commercial promises or premium-page upgrades have been applied in this research. Content is factual only.",
+
+  "recommendedNextStatus": "qa_needed"
+}

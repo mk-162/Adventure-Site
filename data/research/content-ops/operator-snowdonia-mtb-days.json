@@ -1,0 +1,196 @@
+{
+  "_meta": {
+    "task": "content-ops-005-operator-snowdonia-mtb-days",
+    "contentItem": "operator-snowdonia-mtb-days",
+    "contentType": "operator",
+    "slug": "snowdonia-mtb-days",
+    "route": "/directory/snowdonia-mtb-days",
+    "commercialTier": "strategic_big_player_or_launch_priority",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "blocked",
+    "researchOutcome": "operator_identity_unverified"
+  },
+
+  "researchSummary": {
+    "finding": "No operator trading under the name 'Snowdonia MTB Days' could be identified or verified through any accessible public source during this research pass. The operator has no confirmed website, phone, email, address, social media profile, Visit Wales listing, TripAdvisor entry, or Mountain Bike Wales directory entry under this exact name.",
+    "searchesPerformed": [
+      "Direct domain lookups: snowdoniamtbdays.co.uk (ECONNREFUSED), snowdoniamtbdays.com (ECONNREFUSED)",
+      "Web search: 'Snowdonia MTB Days mountain bike operator Wales'",
+      "Web search: '\"Snowdonia MTB Days\" website contact'",
+      "Web search: '\"snowdoniamtbdays\" OR \"snowdonia mtb days\" guided rides tours'",
+      "Web search: 'site:visitwales.com \"snowdonia mtb days\"'",
+      "Web search: '\"Snowdonia MTB Days\" Facebook OR Instagram OR TripAdvisor'",
+      "Web search: '\"Snowdonia MTB Days\" Wales 2024 2025'",
+      "Web search: '\"Snowdonia MTB Days\" Llanberis Betws-y-Coed Capel Curig guide'",
+      "Mountain Bike Wales North Snowdonia agents page (mbwales.com/agents/north-snowdonia) — not listed",
+      "Visit Snowdonia mountain biking page (403 forbidden)",
+      "SiEntries Snowdonia MTB Challenge event page (confirmed organiser is 'Snowdonia MTB Events', distinct entity)",
+      "British Cycling Snowdonia MTB Challenge listing (403 forbidden)",
+      "Visit Wales mountain biking guides page — not listed"
+    ],
+    "closestCandidateFound": "Snowdonia MTB Events (facebook.com/snowdoniamtbevents) — a distinct entity running the 'Snowdonia MTB Challenge' mass-participation events from Llanberis. Contact email: [email protected]. This is NOT a guided day-tour operator and trades under a different name. Cannot be used as a substitute without human confirmation that this is the same business the slug was intended to represent."
+  },
+
+  "proposedOperatorData": {
+    "name": "Snowdonia MTB Days",
+    "nameNote": "Display name taken from content-inventory. No operator has been found trading publicly under this exact name. Human verification required before any data is published.",
+    "slug": "snowdonia-mtb-days",
+    "website": null,
+    "websiteNote": "BLOCKED — no website found. Domains snowdoniamtbdays.co.uk and snowdoniamtbdays.com both returned ECONNREFUSED (not registered or not serving). No redirect to an active URL found.",
+    "contact": {
+      "phone": null,
+      "phoneNote": "BLOCKED — not found in any source.",
+      "email": null,
+      "emailNote": "BLOCKED — not found in any source.",
+      "address": null,
+      "addressNote": "BLOCKED — no verified address found. Snowdonia MTB Events (potential match, unconfirmed) is based in Llanberis, Gwynedd."
+    },
+    "location": {
+      "lat": null,
+      "lng": null,
+      "region": "snowdonia",
+      "regionNote": "Region inferred from operator name only. Not verified.",
+      "nearestTown": null
+    },
+    "description": {
+      "short": null,
+      "shortNote": "BLOCKED — no verified description. No AI-generated content used.",
+      "full": null
+    },
+    "services": [],
+    "pricing": {
+      "note": "BLOCKED — no pricing information found."
+    },
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "BLOCKED — no Google Business listing verified."
+      },
+      "tripadvisor": {
+        "rating": null,
+        "note": "BLOCKED — no TripAdvisor listing found under this name."
+      }
+    },
+    "socialMedia": {
+      "facebook": null,
+      "instagram": null,
+      "note": "BLOCKED — no social media accounts found under 'Snowdonia MTB Days' or 'SnowdoniaMTBDays'."
+    }
+  },
+
+  "candidatesForHumanVerification": [
+    {
+      "candidateName": "Snowdonia MTB Events",
+      "facebookUrl": "https://www.facebook.com/snowdoniamtbevents/?locale=en_GB",
+      "contactEmail": "[email protected]",
+      "emailSource": "https://www.sientries.co.uk/event.php?elid=Y&event_id=14287",
+      "description": "Organises relaxed/fun mass-participation MTB challenge events in Snowdonia and the Elan Valley, including the 'Snowdonia MTB Challenge' (30K and 55K non-competitive routes). Based in Llanberis. 106 participants registered for the March 2025 event.",
+      "britishCyclingListingUrl": "https://www.britishcycling.org.uk/events/details/156912/The-Snowdonia-MTB-Challenge",
+      "sientries2025Event": "https://www.sientries.co.uk/event.php?elid=Y&event_id=14287",
+      "discrepancyNote": "The slug 'snowdonia-mtb-days' and display name 'Snowdonia MTB Days' do not match this entity's public trading name 'Snowdonia MTB Events'. This is an event organiser (mass participation), not a guided day-tour or bike hire operator. Needs human confirmation before being used as the source for this directory entry.",
+      "humanAction": "Contact [email protected] or visit facebook.com/snowdoniamtbevents to confirm: (1) is this the operator the slug was intended to represent? (2) does the business also trade as 'Snowdonia MTB Days'? (3) do they offer guided day rides as well as challenge events?"
+    },
+    {
+      "candidateName": "MTB Snowdonia Guiding",
+      "facebookUrl": "https://www.facebook.com/mtbsnowdonia/",
+      "description": "British Cycling accredited MTB guiding service offering half-day and full-day guided rides and bikepacking trips across north and mid Wales.",
+      "discrepancyNote": "Trading name 'MTB Snowdonia Guiding' does not match 'Snowdonia MTB Days'. Website/contact details not confirmed — Facebook page title only retrieved. Cannot be matched to this slug without human verification.",
+      "humanAction": "Check facebook.com/mtbsnowdonia for website link and contact details. Confirm whether this is the intended operator."
+    }
+  ],
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "Operator identity unverified. No logo source found. Cannot acquire or recommend logo images until operator identity is confirmed.",
+      "actionRequired": "Establish operator identity first (see candidatesForHumanVerification), then request logo asset directly from the operator."
+    },
+    "cover": {
+      "status": "BLOCKED",
+      "reason": "No operator-specific photography identified. No freely licensed images confirmed for an operator whose identity has not yet been established.",
+      "wikimediaNotes": "General Snowdonia MTB trail photography may exist on Wikimedia Commons under open licences (e.g. for Gwydir Forest, Marin Trail Betws-y-Coed, Penmachno). These could potentially serve as placeholder cover imagery for a Snowdonia MTB operator, but must not be attributed to 'Snowdonia MTB Days' specifically until the operator is confirmed and any licence requirements met.",
+      "openverseNote": "A targeted Openverse search for 'Snowdonia mountain bike' may yield CC-licensed images. Not performed during this pass.",
+      "actionRequired": "(1) Identify the operator first. (2) Then search Openverse/Wikimedia Commons for freely licensed Snowdonia MTB imagery. (3) Do not use AI-generated images."
+    },
+    "gallery": {
+      "status": "BLOCKED — same as cover",
+      "reason": "No freely licensed gallery images confirmed."
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Operator identity",
+      "issue": "No operator trading publicly as 'Snowdonia MTB Days' was found in any web source. The slug may refer to an operator known by a different public name, a very small/informal operation with no web presence, or an operator that has ceased trading.",
+      "priority": "CRITICAL",
+      "action": "Identify the original source that introduced 'Snowdonia MTB Days' into the content inventory. Check internal notes, booking platform data (e.g. FareHarbor, Bookeo, GetYourGuide, Viator), or any prior business development / commercial relationship records. If the operator is confirmed as 'Snowdonia MTB Events', update the slug and display name accordingly."
+    },
+    {
+      "claim": "Snowdonia MTB Events as potential match",
+      "issue": "Snowdonia MTB Events (facebook.com/snowdoniamtbevents, [email protected]) runs mass-participation bike challenge events from Llanberis. The name overlaps with the slug but is not identical. The nature of their business (events vs. guided days) may also differ from what the 'operator' directory entry is intended to showcase.",
+      "priority": "HIGH",
+      "action": "Contact [email protected] to establish: (1) are they 'Snowdonia MTB Days'? (2) what services do they offer? (3) are they interested in a commercial directory listing?"
+    },
+    {
+      "claim": "Operating status",
+      "issue": "With no confirmed web presence and ECONNREFUSED on both guessed domain names, it is possible this operator has ceased trading or never had a web presence. The entry carries strategic_big_player_or_launch_priority tier — that classification cannot be verified.",
+      "priority": "HIGH",
+      "action": "Verify the operator is currently active before investing further content production effort."
+    },
+    {
+      "claim": "Commercial tier classification",
+      "issue": "The operator is classified as 'strategic_big_player_or_launch_priority' but no evidence of scale, reputation, or strategic importance has been found. This may be a data-entry artefact.",
+      "priority": "MEDIUM",
+      "action": "Once operator identity is confirmed, reassess whether the commercial tier designation is appropriate."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.sientries.co.uk/event.php?elid=Y&event_id=14287",
+      "description": "SiEntries event page for Snowdonia MTB Challenge (15 March 2025) — organiser identified as 'Snowdonia MTB Events', contact [email protected], location Llanberis, Betws Y Coed, Wales"
+    },
+    {
+      "url": "https://www.facebook.com/snowdoniamtbevents/?locale=en_GB",
+      "description": "Facebook page for 'Snowdonia MTB Events' — potential candidate for this operator slot, unconfirmed match"
+    },
+    {
+      "url": "https://www.facebook.com/mtbsnowdonia/",
+      "description": "Facebook page for 'MTB Snowdonia Guiding' — British Cycling accredited guiding, second candidate for this slot, unconfirmed match"
+    },
+    {
+      "url": "https://www.britishcycling.org.uk/events/details/156912/The-Snowdonia-MTB-Challenge",
+      "description": "British Cycling listing for Snowdonia MTB Challenge (403 at research time) — confirms the challenge event is British Cycling registered"
+    },
+    {
+      "url": "https://www.mbwales.com/agents/north-snowdonia/",
+      "description": "Mountain Bike Wales North Snowdonia agents page — 'Snowdonia MTB Days' not listed"
+    },
+    {
+      "url": "https://www.visitwales.com/things-do/adventure-and-activities/cycling-and-mountain-biking/great-places-guided-mountain-bike-holiday",
+      "description": "Visit Wales guided MTB holiday page — 'Snowdonia MTB Days' not listed"
+    }
+  ],
+
+  "recommendedNextStatus": "blocked",
+  "recommendedNextStatusReason": "The operator 'Snowdonia MTB Days' cannot be found in any accessible public source under that name. Both guessed domain names (snowdoniamtbdays.co.uk, snowdoniamtbdays.com) are unreachable. No Visit Wales listing, TripAdvisor entry, Google Business listing, or social media presence exists under this name. The entry has zero verified data fields (name, website, phone, email, address, description, images) and the operator's real-world identity has not been established. The closest candidate, 'Snowdonia MTB Events' (a Llanberis-based challenge event organiser), has a different public name and possibly a different service type. This listing must be paused pending human investigation to: (1) confirm the operator's identity and current trading name, (2) establish whether the operator is still active, and (3) obtain consent and media assets directly from the operator. No further content production is recommended until identity is confirmed.",
+
+  "topBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Operator identity unverified — no public business found trading as 'Snowdonia MTB Days'",
+      "action": "Search internal commercial/booking records for the origin of this operator slug. Contact potential candidate 'Snowdonia MTB Events' at [email protected] to confirm whether they are the intended operator."
+    },
+    {
+      "rank": 2,
+      "blocker": "No website, contact details, or social media under this name",
+      "action": "Once identity is confirmed, obtain website URL, phone, email, and address directly from the operator. Do not publish any contact details without operator confirmation."
+    },
+    {
+      "rank": 3,
+      "blocker": "No images available (logo, cover, gallery) — cannot proceed with premium directory listing",
+      "action": "After identity confirmation, contact the operator directly to request a media pack. Do not use AI-generated images. Consider Openverse/Wikimedia Commons for generic Snowdonia MTB trail imagery as a fallback cover image only."
+    }
+  ]
+}

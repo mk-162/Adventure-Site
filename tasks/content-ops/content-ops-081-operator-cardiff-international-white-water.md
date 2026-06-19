@@ -4,7 +4,7 @@
 Improve content item operator-cardiff-international-white-water: Cardiff International White Water.
 Channel: commercial. Content type: operator. Route/slug: /directory/cardiff-international-white-water.
 Commercial tier: unclassified_operator.
-Known blocker: Operator "Cardiff International White Water" missing: no description, no cover image, no logo, no Google rating.
+Known blocker: Operator "Cardiff International White Water" missing: no description, no cover image, no logo, no Google rating | Operator "Cardiff International White Water" missing: no description, no cover image, no logo, no Google rating.
 Do not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.
 
 ## Metadata
@@ -13,9 +13,9 @@ Do not guess. Capture source URLs for every factual claim. Do not use AI-generat
 - Channel: commercial
 - Content type: operator
 - Route/slug: /directory/cardiff-international-white-water
-- Current status: research_needed
+- Current status: qa_needed
 - Priority: 34
-- Task type: research
+- Task type: commercial_review
 - Recommended skill: directory-premium-lure-model
 - Required output path: data/research/content-ops/operator-cardiff-international-white-water.json
 

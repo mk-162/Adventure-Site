@@ -1,0 +1,474 @@
+{
+  "_meta": {
+    "task": "content-ops-090-operator-dyfi-bike-park",
+    "contentItem": "operator-dyfi-bike-park",
+    "contentType": "operator",
+    "slug": "dyfi-bike-park",
+    "route": "/directory/dyfi-bike-park",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "operator_verified_partial_data"
+  },
+
+  "researchSummary": {
+    "finding": "Dyfi Bike Park is a real, active, verified operator. The company DYFI BIKE PARK LIMITED (Companies House No. 10605938, active) operates a 650-acre gravity mountain bike park in Esgair Forest near Pantperthog, Machynlleth, Mid Wales. Core contact details (website, phone, email, address), company registration, trail descriptions, facilities, opening hours, and indicative pricing have all been sourced from official/recognised directories. The main outstanding gaps are: (1) no logo image with a free licence; (2) no premium cover image with a free licence — only one low-quality Geograph photo exists under CC BY-SA 2.0; (3) the official website (dyfibikepark.co.uk) returns HTTP 403 for all pages, preventing direct verification of current pricing and the full trail count; (4) no verified Google rating.",
+    "searchesPerformed": [
+      "Web search: 'Dyfi Bike Park Wales official website contact address phone email'",
+      "Web search: 'Dyfi Bike Park Machynlleth TripAdvisor Google rating reviews 2025 2026'",
+      "Web search: 'Dyfi Bike Park day pass pricing uplift tickets 2025 2026'",
+      "Web search: 'Dyfi Bike Park Instagram facebook description Athertons 2025'",
+      "Web search: 'Dyfi Bike Park Google Business rating stars Machynlleth 2025 2026'",
+      "Web search: 'Dyfi Bike Park Wikimedia Commons image photo'",
+      "Web search: 'Dyfi Bike Park logo image official media press kit'",
+      "Web search: 'site:flickr.com dyfi bike park OR dyfi mountain bike creative commons'",
+      "WebFetch: https://www.dyfibikepark.co.uk/ — HTTP 403 (blocked)",
+      "WebFetch: https://www.dyfibikepark.co.uk/tracks/ — HTTP 403 (blocked)",
+      "WebFetch: https://www.dyfibikepark.co.uk/the-park/ — HTTP 403 (blocked)",
+      "WebFetch: https://www.dyfibikepark.co.uk/product/uplift/ — HTTP 403 (blocked)",
+      "WebFetch: https://www.bikeparkdyfi.co.uk/ — ECONNREFUSED (domain not live; earlier content-inventory entry was incorrect)",
+      "WebFetch: https://www.mbwales.com/agents/dyfi-bike-park/ — SUCCESS",
+      "WebFetch: https://www.mbwales.com/listings/dyfi-bike-park-trails/ — SUCCESS",
+      "WebFetch: https://www.visitmidwales.co.uk/showmewales/things-to-do/dyfi-bike-park-p1735201 — SUCCESS",
+      "WebFetch: https://find-and-update.company-information.service.gov.uk/company/10605938 — SUCCESS",
+      "WebFetch: https://ibikeride.com/wales/dyfi-bike-park — SUCCESS",
+      "WebFetch: https://ratings.food.gov.uk/business/1792898 — SUCCESS",
+      "WebFetch: https://www.singletracks.com/bike-trails/dyfi-bike-park/ — SUCCESS",
+      "WebFetch: https://top100attractions.com/attractions/item/dyfi-bike-park — SUCCESS",
+      "WebFetch: https://www.mbuk.com/articles/dyfi-bike-park-is-this-the-uks-most-extreme-mountain-biking — SUCCESS",
+      "WebFetch: https://commons.wikimedia.org/wiki/File:Mountain_bike_track,_Dyfi_Bike_Park_-_geograph.org.uk_-_7129745.jpg — SUCCESS",
+      "WebFetch: https://www.geograph.org.uk/photo/7129745 — SUCCESS",
+      "WebFetch: https://www.trailforks.com/region/coedwig-dyfi-forest/ — HTTP 403 (blocked)",
+      "Openverse search for 'dyfi bike park' — HTTP 403 (blocked)",
+      "Flickr search for 'dyfi bike park' creative commons — no results returned"
+    ]
+  },
+
+  "proposedOperatorData": {
+    "name": "Dyfi Bike Park",
+    "nameAlternate": "DYFI Bike Park",
+    "slug": "dyfi-bike-park",
+    "website": "https://www.dyfibikepark.co.uk",
+    "websiteNote": "Official site returns HTTP 403 for all pages during this research pass. The domain is confirmed active and the website is publicly accessible to end users (confirmed via multiple third-party directory listings dated 2025–2026).",
+
+    "contact": {
+      "phone": "01691 780702",
+      "phoneSource": "https://www.visitmidwales.co.uk/showmewales/things-to-do/dyfi-bike-park-p1735201 | https://ibikeride.com/wales/dyfi-bike-park | https://www.mbuk.com/articles/dyfi-bike-park-is-this-the-uks-most-extreme-mountain-biking",
+      "phoneNote": "Confirmed by three independent sources. One source (top100attractions.com) lists a different number (01654 701383) — that is likely outdated; 01691 780702 is favoured as it appears in the Visit Mid Wales official tourism directory and two specialist MTB directories. NEEDS HUMAN VERIFICATION before publishing.",
+      "email": "ride@dyfibikepark.co.uk",
+      "emailSource": "https://www.mbwales.com/agents/dyfi-bike-park/ | https://www.mbwales.com/listings/dyfi-bike-park-trails/",
+      "emailNote": "Confirmed by MBWales operator and trails listings.",
+      "address": {
+        "line1": "Dyfi Bike Park",
+        "line2": "Pantperthog",
+        "town": "Machynlleth",
+        "county": "Powys",
+        "postcode": "SY20 9AS",
+        "country": "Wales"
+      },
+      "addressSource": "https://www.visitmidwales.co.uk/showmewales/things-to-do/dyfi-bike-park-p1735201 | https://www.mbwales.com/listings/dyfi-bike-park-trails/ | https://ratings.food.gov.uk/business/1792898",
+      "addressNote": "Three independent sources agree on Pantperthog, Machynlleth, SY20 9AS. Food Hygiene Rating entry lists county as Gwynedd (SY20 postcode straddles the Powys/Gwynedd boundary). Café postcode listed elsewhere as SY20 9AU."
+    },
+
+    "location": {
+      "lat": 52.62161,
+      "lng": -3.84997,
+      "latLngSource": "https://www.singletracks.com/bike-trails/dyfi-bike-park/",
+      "region": "mid-wales",
+      "nearestTown": "Machynlleth",
+      "description": "3 miles north of Machynlleth in Esgair Forest, off the A487 towards Dolgellau, on the southern border of Snowdonia National Park."
+    },
+
+    "description": {
+      "short": "A 650-acre gravity mountain bike park in Esgair Forest near Machynlleth, hand-crafted by World Cup-winning rider Dan Atherton. Trails range from red to triple black diamond, with Land Rover uplift, a café, and a bike shop.",
+      "shortNote": "Derived from verified third-party sources (MBWales, Visit Mid Wales, ibikeride.com, MBUK). No AI-generated content used.",
+      "full": "Dyfi Bike Park sits within 650 acres of Esgair Forest, three miles north of Machynlleth in Mid Wales, on the southern border of Snowdonia National Park. The park was conceived and hand-built by Dan Atherton — World Cup winner and one of mountain biking's most celebrated riders — who purchased the forest and relocated on-site to oversee construction personally. The park opened to the public in summer 2019 and has since expanded to 18 tracks across two mountain sections (Upper and Lower). Trails range from red-grade (intermediate) to triple black diamond (pro-level), with the longest descents exceeding 3.5km and 400m of vertical drop. An uplift service using Land Rovers runs 10am–4pm, carrying riders to the top in approximately 12 minutes. On-site facilities include a café serving breakfast wraps, gourmet coffee, and home-cooked lunches; a bike shop stocking spares, riding gear, and merchandise; toilets; and free car parking. Full-face helmet, gloves, and knee pads are mandatory. A waiver is required; riders under 16 must have a parent or guardian signature.",
+      "fullSources": [
+        "https://www.mbwales.com/agents/dyfi-bike-park/",
+        "https://www.mbwales.com/listings/dyfi-bike-park-trails/",
+        "https://ibikeride.com/wales/dyfi-bike-park",
+        "https://www.mbuk.com/articles/dyfi-bike-park-is-this-the-uks-most-extreme-mountain-biking"
+      ]
+    },
+
+    "trails": {
+      "totalCount": 18,
+      "totalCountNote": "18 tracks per ibikeride.com (sourced 2026). Earlier sources (MBUK) listed 4 tracks at opening in 2019 — park has expanded significantly. Official website unavailable for direct verification.",
+      "totalCountSource": "https://ibikeride.com/wales/dyfi-bike-park",
+      "difficultyBreakdown": {
+        "red": 8,
+        "blackDiamond": 4,
+        "doubleBlackDiamond": 1,
+        "tripleBlackDiamondProLine": 4,
+        "source": "https://ibikeride.com/wales/dyfi-bike-park"
+      },
+      "namedTrails": [
+        {
+          "name": "Super Swooper",
+          "difficulty": "Red",
+          "section": "Big Mountain",
+          "description": "Five minutes of the most fun you can have on a bike; rail the berms then launch yourself into some small but perfectly formed jumps.",
+          "source": "https://www.mbwales.com/listings/dyfi-bike-park-trails/"
+        },
+        {
+          "name": "50 Hits",
+          "difficulty": "Black Diamond",
+          "section": "Big Mountain",
+          "description": "Over 8 minutes featuring flowing tabletops and berms.",
+          "source": "https://www.mbwales.com/listings/dyfi-bike-park-trails/"
+        },
+        {
+          "name": "Original DH",
+          "difficulty": "Double Black Diamond",
+          "section": "Big Mountain",
+          "description": "The park's first track, offering varied terrain with rocky sections, large jumps, and steep gullies.",
+          "source": "https://www.mbwales.com/listings/dyfi-bike-park-trails/"
+        },
+        {
+          "name": "Race Track",
+          "difficulty": "Double Black Diamond",
+          "section": "Big Mountain",
+          "description": "High-speed course with technical corners.",
+          "source": "https://www.mbwales.com/listings/dyfi-bike-park-trails/"
+        },
+        {
+          "name": "Slab Track",
+          "difficulty": "Triple Black Diamond",
+          "section": "Big Mountain",
+          "description": "Technical challenge featuring natural bedrock formations including a 60-foot bedrock slab, steep chutes, and tight turns.",
+          "source": "https://www.mbwales.com/listings/dyfi-bike-park-trails/ | https://www.mbuk.com/articles/dyfi-bike-park-is-this-the-uks-most-extreme-mountain-biking"
+        },
+        {
+          "name": "El Hippo",
+          "difficulty": "Black Diamond",
+          "section": "Lower Mountain",
+          "description": "Half-length alternative trail with berms and jumps.",
+          "source": "https://www.mbwales.com/listings/dyfi-bike-park-trails/"
+        },
+        {
+          "name": "Oakley-Icon Way",
+          "difficulty": "Triple Black Diamond",
+          "section": "Lower Mountain",
+          "description": "Advanced jump line emphasising airtime.",
+          "source": "https://www.mbwales.com/listings/dyfi-bike-park-trails/"
+        },
+        {
+          "name": "Turns in the Ferns",
+          "difficulty": "Red",
+          "section": "Lower Mountain",
+          "description": "Some of the fastest and most fun sections in the park, with berms and features.",
+          "source": "https://www.mbwales.com/listings/dyfi-bike-park-trails/"
+        },
+        {
+          "name": "Fire in the Booth",
+          "difficulty": "Triple Black Diamond",
+          "section": "Lower Mountain",
+          "description": "Natural, steep off-piste route.",
+          "source": "https://www.mbwales.com/listings/dyfi-bike-park-trails/"
+        }
+      ],
+      "namedTrailsNote": "9 trails named from MBWales listing. 18 total per ibikeride.com — 9 additional trails not individually named here; full list requires direct access to dyfibikepark.co.uk/tracks/"
+    },
+
+    "facilities": [
+      "Uplift service (Land Rovers, 10am–4pm)",
+      "Café (breakfast wraps, gourmet coffee, home-cooked lunches)",
+      "Bike shop (spares, riding gear, merchandise)",
+      "Toilets",
+      "Free car park (day use only, no overnight stays)"
+    ],
+    "facilitiesSource": "https://ibikeride.com/wales/dyfi-bike-park | https://www.mbwales.com/agents/dyfi-bike-park/",
+
+    "openingHours": {
+      "gatesOpen": "09:00",
+      "gatesClose": "17:00",
+      "upliftOperates": "10:00–16:00",
+      "openAllYear": true,
+      "openingHoursSource": "https://ibikeride.com/wales/dyfi-bike-park | https://top100attractions.com/attractions/item/dyfi-bike-park",
+      "openingHoursNote": "Confirmed 'open all year' by two sources. Seasonal variations (e.g. reduced days in winter) cannot be confirmed as the official website is inaccessible. RECOMMEND HUMAN VERIFICATION."
+    },
+
+    "pricing": {
+      "dayPass": {
+        "thursday": "£48",
+        "friday": "£50",
+        "saturdaySunday": "£54",
+        "source": "Web search results referencing dyfibikepark.co.uk/product/ pages (May 2026 search)",
+        "note": "NEEDS HUMAN VERIFICATION. Pricing sourced from search-engine snippets for the official product pages (dyfibikepark.co.uk/product/uplift/, /product/park-pass-6/, /product/park-pass-12/). The official website returns HTTP 403 for direct fetch. Prices may have changed. Do not publish without verifying against the live website."
+      },
+      "loyaltyPasses": {
+        "parkPass6": "6 uplifts for price of 5",
+        "parkPass12": "12 uplifts for price of 10",
+        "source": "Web search results referencing dyfibikepark.co.uk/product/park-pass-6/ and /product/park-pass-12/"
+      }
+    },
+
+    "safetyRequirements": [
+      "Full-face helmet mandatory",
+      "Gloves mandatory",
+      "Knee pads mandatory",
+      "Waiver required for all riders",
+      "Riders under 16 require parent/guardian signature"
+    ],
+    "safetySource": "https://ibikeride.com/wales/dyfi-bike-park",
+
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "BLOCKED — Google Business rating could not be verified through any accessible web source. NEEDS HUMAN REVIEW via Google Maps search for 'Dyfi Bike Park Machynlleth'."
+      },
+      "tripadvisor": {
+        "rating": null,
+        "listingUrl": null,
+        "note": "BLOCKED — No dedicated TripAdvisor listing for Dyfi Bike Park found. Search returned results for Bike Park Wales (a different operator) and hotel reviews mentioning Dyfi, but no direct Dyfi Bike Park TripAdvisor page."
+      },
+      "ibikeride": {
+        "rating": 4.74,
+        "scale": 5,
+        "reviewCount": 125,
+        "source": "https://ibikeride.com/wales/dyfi-bike-park"
+      },
+      "singletracks": {
+        "rating": null,
+        "reviewCount": 0,
+        "rankInWales": 13,
+        "rankGlobal": 9547,
+        "note": "5-star rating shown but based on 0 reviews — not a reliable signal.",
+        "source": "https://www.singletracks.com/bike-trails/dyfi-bike-park/"
+      },
+      "foodHygiene": {
+        "rating": "Good",
+        "inspectionDate": "2025-01-17",
+        "establishmentType": "Restaurant/Cafe/Canteen",
+        "source": "https://ratings.food.gov.uk/business/1792898"
+      }
+    },
+
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/DyfiBikePark/",
+      "facebookSource": "https://www.visitmidwales.co.uk/showmewales/things-to-do/dyfi-bike-park-p1735201",
+      "instagram": "https://www.instagram.com/dyfibikepark/",
+      "instagramSource": "https://www.mbwales.com/agents/dyfi-bike-park/",
+      "instagramFollowers": "92,000+ (per search result snippet, June 2026 — approximate)",
+      "instagramBio": "Uplift our Red and Black MTB Tracks set in 650 acres of Welsh Mountains #DyfiBikePark",
+      "facebookBio": "Uplift our 650 acre mountain in Mid Wales, DH and Enduro Red and Black trails crafted by Dan Atherton"
+    },
+
+    "companyRegistration": {
+      "companyName": "DYFI BIKE PARK LIMITED",
+      "companyNumber": "10605938",
+      "status": "Active",
+      "incorporationDate": "2017-02-07",
+      "registeredAddress": "Cefn Ucha, Llanrhaeadr Ym Mochnant, Oswestry, Wales, SY10 0DT",
+      "source": "https://find-and-update.company-information.service.gov.uk/company/10605938"
+    },
+
+    "logo": null,
+    "coverImage": null
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "No logo image found with a free/open licence. The operator's logo is visible on their website and in branded merchandise (dyfibikepark.co.uk/shop/) but no freely-licensed version has been identified.",
+      "licence": null,
+      "actionRequired": "Contact operator at ride@dyfibikepark.co.uk or via https://www.facebook.com/DyfiBikePark/ to request a press-use logo asset. Do not scrape from website without licence confirmation."
+    },
+    "cover": {
+      "status": "CANDIDATE — LOW QUALITY",
+      "candidateImages": [
+        {
+          "title": "Mountain bike track, Dyfi Bike Park",
+          "photographer": "Steven Brown",
+          "dateTaken": "2022-03-27",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "attributionRequired": "© Steven Brown / geograph.org.uk, CC BY-SA 2.0",
+          "wikimediaCommonsUrl": "https://commons.wikimedia.org/wiki/File:Mountain_bike_track,_Dyfi_Bike_Park_-_geograph.org.uk_-_7129745.jpg",
+          "geographUrl": "https://www.geograph.org.uk/photo/7129745",
+          "description": "A woodland mountain biking trail in Dyfi Bike Park, near Pantperthog, Gwynedd. View direction: north-northwest.",
+          "cameraNote": "Taken with iPhone 6s (f/2.2, 1/33s, ISO 200). Low-quality image — not recommended as a primary cover image for a premium directory listing.",
+          "usableForWeb": true,
+          "shareAlikeNote": "CC BY-SA 2.0 requires derivative works to carry the same licence. Confirm with editorial team whether the site's licence framework is compatible with CC BY-SA before use."
+        }
+      ],
+      "actionRequired": "The only freely-licensed image found is a low-quality Geograph photo (iPhone, 2022). Seek a higher-quality cover image by: (1) contacting the operator for a press photography pack; (2) checking Openverse/Flickr with an active browser session (both returned HTTP 403 during this research pass); (3) checking the Pinkbike album at https://www.pinkbike.com/u/trailrippers/album/Dyfi-Bike-Park/ for reusable content (licence must be confirmed before use — Pinkbike images are typically all-rights-reserved)."
+    },
+    "gallery": {
+      "status": "BLOCKED",
+      "potentialSources": [
+        {
+          "url": "https://www.rootsandrain.com/venue1236/dyfi-bike-park/",
+          "note": "Roots & Rain hosts galleries for Dyfi Bike Park. Licence of individual images is unknown — must be checked before reuse."
+        },
+        {
+          "url": "https://www.moredirt.com/trail_gallery.php?id=1714",
+          "note": "More Dirt hosts a Dyfi Bike Park photo gallery. Licence unknown — check before reuse."
+        },
+        {
+          "url": "https://www.pinkbike.com/u/trailrippers/album/Dyfi-Bike-Park/",
+          "note": "5-photo album on Pinkbike. Licence unknown — typically all-rights-reserved. Do not use without confirmation."
+        }
+      ],
+      "actionRequired": "Contact operator for a media pack with high-quality photography cleared for editorial use."
+    }
+  },
+
+  "directoryListings": [
+    {
+      "directory": "Mountain Bike Wales",
+      "url": "https://www.mbwales.com/agents/dyfi-bike-park/",
+      "type": "Operator listing"
+    },
+    {
+      "directory": "Mountain Bike Wales — Trails",
+      "url": "https://www.mbwales.com/listings/dyfi-bike-park-trails/",
+      "type": "Trail listing"
+    },
+    {
+      "directory": "Visit Mid Wales (Show Me Wales)",
+      "url": "https://www.visitmidwales.co.uk/showmewales/things-to-do/dyfi-bike-park-p1735201",
+      "type": "Official regional tourism directory"
+    },
+    {
+      "directory": "Singletracks",
+      "url": "https://www.singletracks.com/bike-trails/dyfi-bike-park/",
+      "type": "MTB trail database"
+    },
+    {
+      "directory": "iBikeRide",
+      "url": "https://ibikeride.com/wales/dyfi-bike-park",
+      "type": "Bike park directory, rating 4.74/5 from 125 reviews"
+    },
+    {
+      "directory": "Top 100 Attractions",
+      "url": "https://top100attractions.com/attractions/item/dyfi-bike-park",
+      "type": "Attractions directory"
+    },
+    {
+      "directory": "More Dirt",
+      "url": "https://www.moredirt.com/trail/United-Kingdom_North-Wales/Dyfi-Bike-Park/1714",
+      "type": "MTB trail database"
+    }
+  ],
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Phone number: 01691 780702",
+      "issue": "Confirmed by three sources (Visit Mid Wales official directory, iBikeRide, Mountain Biking UK). However, top100attractions.com lists a different number: 01654 701383. The 01691 prefix is for the Oswestry area (consistent with the registered office in Llanrhaeadr ym Mochnant), while 01654 is for Machynlleth (where the park is physically located). Both could plausibly be correct. Recommend calling both numbers or emailing the operator to confirm the current public enquiries number.",
+      "priority": "HIGH",
+      "conflictingSources": [
+        "01691 780702: https://www.visitmidwales.co.uk/showmewales/things-to-do/dyfi-bike-park-p1735201",
+        "01691 780702: https://ibikeride.com/wales/dyfi-bike-park",
+        "01691 780702: https://www.mbuk.com/articles/dyfi-bike-park-is-this-the-uks-most-extreme-mountain-biking",
+        "01654 701383: https://top100attractions.com/attractions/item/dyfi-bike-park"
+      ],
+      "action": "Call or email operator to confirm current customer enquiries phone number before publishing."
+    },
+    {
+      "claim": "Day pass pricing (Thu £48 / Fri £50 / Sat-Sun £54)",
+      "issue": "Sourced from web-search snippets for dyfibikepark.co.uk product pages in May/June 2026. The official website returned HTTP 403 during this research pass so prices could not be read directly. Pricing may have changed for the 2026 season.",
+      "priority": "HIGH",
+      "sourceUrl": "https://www.dyfibikepark.co.uk/product/uplift/",
+      "action": "Verify current pricing directly on the live website (https://www.dyfibikepark.co.uk/product/uplift/) before publishing. Do not publish specific prices as 'current' without direct website verification."
+    },
+    {
+      "claim": "Total trail count: 18 tracks",
+      "issue": "ibikeride.com (2026) states 18 tracks. MBWales trails listing names only 9 trails. The official website lists tracks at dyfibikepark.co.uk/tracks/ but this returned HTTP 403. The park has expanded significantly since the 2019 opening (MBUK reported 4 tracks at launch). 18 appears credible but should be confirmed.",
+      "priority": "MEDIUM",
+      "sourceUrl": "https://ibikeride.com/wales/dyfi-bike-park",
+      "action": "Access the official tracks page (https://www.dyfibikepark.co.uk/tracks/) to confirm current trail count and names."
+    },
+    {
+      "claim": "Google Business rating",
+      "issue": "The content inventory flags this as missing. No Google rating could be retrieved through any accessible web source during this research pass. Cannot confirm the Google Maps listing URL or current star rating.",
+      "priority": "MEDIUM",
+      "sourceUrl": null,
+      "action": "Manually search Google Maps for 'Dyfi Bike Park Machynlleth' to retrieve the current Google Business rating and review count."
+    },
+    {
+      "claim": "Opening hours (year-round, gates 9am–5pm, uplift 10am–4pm)",
+      "issue": "Opening hours sourced from ibikeride.com and top100attractions.com — both secondary sources. The park may operate reduced hours in winter or close on certain days. Official website unavailable for direct verification.",
+      "priority": "LOW",
+      "sourceUrl": "https://ibikeride.com/wales/dyfi-bike-park",
+      "action": "Verify current opening hours on the official website or by calling the operator, particularly for off-peak/winter periods."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.mbwales.com/agents/dyfi-bike-park/",
+      "description": "Mountain Bike Wales operator listing for Dyfi Bike Park — email, Instagram, location."
+    },
+    {
+      "url": "https://www.mbwales.com/listings/dyfi-bike-park-trails/",
+      "description": "Mountain Bike Wales trail listing — address, email, website, named trails with descriptions."
+    },
+    {
+      "url": "https://www.visitmidwales.co.uk/showmewales/things-to-do/dyfi-bike-park-p1735201",
+      "description": "Official Visit Mid Wales tourism directory — confirms phone 01691 780702, address, Facebook, Instagram."
+    },
+    {
+      "url": "https://find-and-update.company-information.service.gov.uk/company/10605938",
+      "description": "Companies House — DYFI BIKE PARK LIMITED, company no. 10605938, active since 7 Feb 2017, registered address in Oswestry."
+    },
+    {
+      "url": "https://ibikeride.com/wales/dyfi-bike-park",
+      "description": "iBikeRide bike park directory — phone, opening hours, facilities, trail count, difficulty breakdown, pricing summary, rating 4.74/5 (125 reviews)."
+    },
+    {
+      "url": "https://ratings.food.gov.uk/business/1792898",
+      "description": "Food Standards Agency — Dyfi Bike Park Ltd food hygiene rating 'Good', inspected 17 Jan 2025, confirms trading address."
+    },
+    {
+      "url": "https://www.singletracks.com/bike-trails/dyfi-bike-park/",
+      "description": "Singletracks MTB trail database — coordinates (52.62161, -3.84997), surface type, fee noted, park description."
+    },
+    {
+      "url": "https://www.mbuk.com/articles/dyfi-bike-park-is-this-the-uks-most-extreme-mountain-biking",
+      "description": "Mountain Biking UK editorial — confirms phone 01691 780702, Dan Atherton as founder/builder, park history, trail descriptions."
+    },
+    {
+      "url": "https://top100attractions.com/attractions/item/dyfi-bike-park",
+      "description": "Top 100 Attractions directory — park description, conflicting phone 01654 701383 (see claimsNeedingHumanReview)."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Mountain_bike_track,_Dyfi_Bike_Park_-_geograph.org.uk_-_7129745.jpg",
+      "description": "Wikimedia Commons — one freely-licensed image (CC BY-SA 2.0) by Steven Brown, taken 27 Mar 2022. Low quality (iPhone 6s)."
+    },
+    {
+      "url": "https://www.geograph.org.uk/photo/7129745",
+      "description": "Geograph.org.uk source for Wikimedia Commons image — full licence and attribution details for CC BY-SA 2.0 image."
+    },
+    {
+      "url": "https://www.facebook.com/DyfiBikePark/",
+      "description": "Official Facebook page — bio confirms 650-acre park in Mid Wales, trails crafted by Dan Atherton."
+    },
+    {
+      "url": "https://www.instagram.com/dyfibikepark/",
+      "description": "Official Instagram — bio confirms 650 acres, red and black MTB tracks, 92K+ followers."
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "Sufficient data has been researched to populate the core directory fields (name, website, address, phone, email, description, social media, trails, facilities, opening hours, pricing, company registration). The operator is confirmed as real and active. The record is ready for a QA pass to: (1) verify the phone number discrepancy; (2) confirm current pricing and full trail count via the live website; (3) retrieve the Google Business rating manually; (4) source a higher-quality cover image; and (5) obtain a logo directly from the operator.",
+
+  "topBlockers": [
+    {
+      "rank": 1,
+      "blocker": "No logo image with a free or press-use licence found",
+      "action": "Contact operator directly at ride@dyfibikepark.co.uk or via the Facebook page (https://www.facebook.com/DyfiBikePark/) to request a press/media pack including the logo. Do not scrape the logo from the website without written permission."
+    },
+    {
+      "rank": 2,
+      "blocker": "No high-quality cover image with a free licence — only a low-resolution iPhone Geograph photo (CC BY-SA 2.0) found",
+      "action": "Request photography from the operator (press pack). As a fallback, search Openverse (openverse.org) and Flickr with an active browser session (both returned HTTP 403 during this automated research pass) for CC-licenced Dyfi Bike Park images. Check Pinkbike album (https://www.pinkbike.com/u/trailrippers/album/Dyfi-Bike-Park/) — contact the photographer for reuse permission if no CC licence is present."
+    },
+    {
+      "rank": 3,
+      "blocker": "Official website (dyfibikepark.co.uk) returns HTTP 403 for all pages during automated fetch — current pricing, full trail list, and opening-hour details cannot be verified programmatically",
+      "action": "A human reviewer must access https://www.dyfibikepark.co.uk directly in a browser to verify: (a) current day-pass pricing; (b) the complete and up-to-date list of 18 tracks with descriptions; (c) any seasonal opening-hour variations. Additionally, manually check Google Maps for the current Google Business star rating."
+    }
+  ]
+}

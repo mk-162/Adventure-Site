@@ -1,0 +1,288 @@
+{
+  "_meta": {
+    "task": "content-ops-094-operator-forest-freeride",
+    "contentItem": "operator-forest-freeride",
+    "contentType": "operator",
+    "slug": "forest-freeride",
+    "route": "/directory/forest-freeride",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "operator_identified_partial_data"
+  },
+
+  "researchSummary": {
+    "finding": "Forest Freeride is a real, verifiably active operator based in Llanbrynmair, Powys, mid Wales. It is run by Stuart Wright ('Stu') and his partner Dee. The operator runs the website forestfreeride.co.uk and is closely associated with Bear Bones Bikepacking (bearbonesbikepacking.co.uk), which shares the same physical address and operator names. Core services are bikepacking-specific coaching/courses for novice riders, guided trips, and the organisation of two well-known Wales bikepacking community events: the Bear Bones 200 (BB200) and the Welsh Ride Thing (WRT). The forestfreeride.co.uk homepage is currently returning a Shopify 'Coming Soon' page (admin.zz), but multiple internal pages and companion sites confirm the operator is active. Contact details, address, and phone are sourced from Bear Bones Bikepacking and require human confirmation that they apply to the Forest Freeride brand identity. No logo, cover image, Google Business profile, or tourism-directory listing was found.",
+    "searchesPerformed": [
+      "Web search: 'Forest Freeride Wales mountain biking operator' — found forestfreeride.co.uk/pages/wildmap.html (mid Wales MTB map)",
+      "Web search: '\"Forest Freeride\" Wales MTB website contact' — confirmed forestfreeride.co.uk exists; homepage shows 'admin.zz — Coming Soon'",
+      "Web search: '\"Forest Freeride\" site:facebook.com OR site:instagram.com' — found Facebook page: m.facebook.com/people/The-Forest-Freeride/61569820735700/ (login required)",
+      "Web search: 'site:forestfreeride.co.uk' — found 4 indexed pages: wildmap, guiding trips, contact_us, bikepacking (all subpages return 403 on direct fetch)",
+      "Web search: '\"Stuart Wright\" \"Forest Freeride\" Wales bikepacking' — confirmed Stu Wright and Dee are the operators; BB200 and WRT confirmed",
+      "Web search: '\"Bear Bones 200\" \"Forest Freeride\" Stuart Wright Dee Wales bikepacking' — confirmed events run from Llanbrynmair, Powys",
+      "Web search: 'bearbonesbikepacking.co.uk contact email address' — found address Ceulan, Pennant, Llanbrynmair, Powys SY19 7BH; phone 01650 521301; email stuart@bearbonesbikepacking.co.uk",
+      "Web search: '\"Forest Freeride\" OR \"forestfreeride\" site:visitwales.com OR site:visitmidwales.co.uk OR site:mbwales.com' — not listed on any of these tourism directories",
+      "Visit Wales guided MTB holiday page fetched — Forest Freeride not listed",
+      "Web search: '\"Welsh Ride Thing\" \"Forest Freeride\" Stuart Wright 2025 2026' — confirmed WRT 2026 is 2-4 May 2026; BB200 2026 is 3 October 2026",
+      "Web search: '\"Forest Freeride\" Google business listing Wales review rating' — no Google Business listing found",
+      "battistrada.com Bear Bones 200 2025 event page fetched — confirmed location Llanbrynmair, Powys; organiser website bearbonesbikepacking.co.uk",
+      "Direct fetches of forestfreeride.co.uk, bearbonesbikepacking.co.uk — all returned 403; no content extractable",
+      "Direct fetches of forestfreeride.co.uk/pages/guiding+trips.html, /contact_us — returned 403"
+    ],
+    "domainsChecked": [
+      {
+        "domain": "forestfreeride.co.uk",
+        "result": "Domain is registered and indexed. Homepage returns Shopify 'Coming Soon' (admin.zz). Multiple subpages are indexed by Google but return HTTP 403 on direct fetch. Site is in partial rebuild."
+      },
+      {
+        "domain": "bearbonesbikepacking.co.uk",
+        "result": "Domain is registered and active. Returns HTTP 403 on direct fetch; indexed content confirms the site is live and has events, routes, contact, and shop pages."
+      }
+    ],
+    "touristicDirectoryStatus": {
+      "visitWales": "NOT LISTED — not on the Visit Wales guided MTB holiday page or main cycling pages",
+      "visitMidWales": "NOT LISTED — no listing found",
+      "mbWales": "NOT LISTED — not found in Mountain Bike Wales directory",
+      "tripadvisor": "NOT FOUND — no TripAdvisor listing located",
+      "googleBusiness": "NOT FOUND — no Google Business profile verified"
+    }
+  },
+
+  "proposedOperatorData": {
+    "name": "Forest Freeride",
+    "nameNote": "Trading name confirmed by multiple independent bikepacking media sources. Operators: Stuart ('Stu') Wright and Dee Wright. Also operates under the closely related brand Bear Bones Bikepacking.",
+    "slug": "forest-freeride",
+    "website": "https://www.forestfreeride.co.uk",
+    "websiteNote": "PARTIAL — domain is registered and indexed. Homepage currently shows a Shopify 'Coming Soon' page. Subpages (wildmap, guiding trips, contact) are indexed but return 403. Site appears to be in rebuild. Human should check for a live version before publishing this URL.",
+    "contact": {
+      "phone": "01650 521301",
+      "phoneNote": "FLAGGED FOR REVIEW — phone sourced from Bear Bones Bikepacking (bearbonesbikepacking.co.uk/contact). Stuart Wright is named operator of both Forest Freeride and Bear Bones Bikepacking; high probability this applies. Confirm directly with operator before publishing.",
+      "email": "stuart@bearbonesbikepacking.co.uk",
+      "emailNote": "FLAGGED FOR REVIEW — email sourced from Bear Bones Bikepacking. Same operator (Stuart Wright) runs both brands. No Forest Freeride-specific email found. Confirm directly with operator whether a forestfreeride.co.uk address exists.",
+      "address": "Ceulan, Pennant, Llanbrynmair, Powys, SY19 7BH",
+      "addressNote": "FLAGGED FOR REVIEW — address sourced from Bear Bones Bikepacking contact page (bearbonesbikepacking.co.uk/contact). Multiple sources corroborate Llanbrynmair, Powys as the base. Confirm via operator contact before publishing as a Forest Freeride address.",
+      "addressCountry": "Wales, UK"
+    },
+    "location": {
+      "lat": null,
+      "lng": null,
+      "region": "Mid Wales",
+      "regionNote": "Confirmed — multiple independent sources describe Forest Freeride events as based in Llanbrynmair, Powys, operating in the Cambrian Mountains.",
+      "nearestTown": "Llanbrynmair, Powys",
+      "operatingArea": "Mid Wales / Cambrian Mountains"
+    },
+    "description": {
+      "short": null,
+      "shortNote": "BLOCKED — no confirmed operator-authored description found. The forestfreeride.co.uk website is not serving content. No AI-generated copy used. A short description should be written by editorial after operator contact, referencing bikepacking courses, guided trips, and events in mid Wales.",
+      "full": null,
+      "editorialDraftNotes": "From verified sources, Forest Freeride offers: bikepacking-specific coaching courses for novice riders and those looking to improve; guided trips in mid Wales; and organises two well-known community bikepacking events: the Welsh Ride Thing (a 3-day self-supported orienteering challenge, described as the longest-running bikepacking event in Europe) and the Bear Bones 200 (a ~200km self-supported mountain bike challenge through the Cambrian Mountains). Base: Llanbrynmair, Powys. This editorial note is NOT for direct publication; it requires operator review and a proper editorial draft."
+    },
+    "services": [
+      {
+        "service": "Bikepacking coaching courses",
+        "description": "Bikepacking-specific courses for novice riders or those wanting to improve",
+        "sourceUrl": "https://advntr.cc/bear-bones-200/",
+        "sourceNote": "Stuart Wright is described as offering bikepacking-specific courses at forestfreeride.co.uk in this article"
+      },
+      {
+        "service": "Guided trips",
+        "description": "Guided mountain bike trips in mid Wales — page exists at forestfreeride.co.uk/pages/guiding+trips.html (currently 403)",
+        "sourceUrl": "http://www.forestfreeride.co.uk/pages/guiding+trips.html",
+        "sourceNote": "Page is indexed by Google but returns 403 on direct fetch; content not verifiable"
+      },
+      {
+        "service": "Welsh Ride Thing (WRT)",
+        "description": "3-day, 2-night self-supported MTB orienteering challenge around mid Wales, held over May Bank Holiday. Participants navigate between checkpoints with no fixed route. WRT 2026: 2–4 May 2026.",
+        "sourceUrl": "https://www.bearbonesbikepacking.co.uk/events/wrt-event/",
+        "sourceNote": "Event confirmed active for 2025 and 2026. Note: WRT is a community challenge event, not a commercial guided tour."
+      },
+      {
+        "service": "Bear Bones 200 (BB200)",
+        "description": "Annual self-supported bikepacking event, ~200km with ~5,000m ascent through the Cambrian Mountains, starting from Llanbrynmair, Powys. BB200 2026: Saturday 3 October 2026.",
+        "sourceUrl": "https://www.bearbonesbikepacking.co.uk/events/bb200-event/",
+        "sourceNote": "Event confirmed active for 2025 (4 Oct 2025) and 2026 (3 Oct 2026). Note: BB200 is a self-supported community challenge, not a commercial guided tour."
+      },
+      {
+        "service": "Mid Wales Wild Map",
+        "description": "Online map resource showing mountain biking terrain in mid Wales, the least populated area of Wales",
+        "sourceUrl": "https://www.forestfreeride.co.uk/pages/wildmap.html",
+        "sourceNote": "Indexed by Google; page returns 403 on direct fetch"
+      }
+    ],
+    "pricing": {
+      "note": "BLOCKED — no pricing information found. The Forest Freeride website is not serving content. Pricing for courses and guided trips must be obtained directly from the operator."
+    },
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "BLOCKED — no Google Business profile found for 'Forest Freeride' in Wales."
+      },
+      "tripadvisor": {
+        "rating": null,
+        "note": "BLOCKED — no TripAdvisor listing found."
+      }
+    },
+    "socialMedia": {
+      "facebook_forestfreeride": "https://www.facebook.com/people/The-Forest-Freeride/61569820735700/",
+      "facebook_forestfreeride_note": "FLAGGED FOR REVIEW — Facebook page 'The Forest Freeride' exists and is indexed, but requires login to view content. Confirm this is an active, operator-managed page before publishing.",
+      "facebook_bearbones": "https://www.facebook.com/bearbonesbikepacking/",
+      "facebook_bearbones_note": "Bear Bones Bikepacking Facebook page — confirmed indexed. Same operator.",
+      "instagram": null,
+      "instagram_note": "BLOCKED — no confirmed Forest Freeride Instagram account found. No @forestfreeride or @theforestfreeride account identified in searches.",
+      "other": {
+        "bearbonesbikepacking_website": "https://www.bearbonesbikepacking.co.uk",
+        "bearbonesbikepacking_note": "Companion/sister brand operated by Stuart and Dee Wright. Shares address, phone, and email."
+      }
+    },
+    "logo": null,
+    "coverImage": null
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "No logo asset found in any accessible public source. forestfreeride.co.uk is not serving content. No logo visible on Bear Bones Bikepacking site (403). Facebook page requires login.",
+      "licence": null,
+      "actionRequired": "Contact operator directly (via stuart@bearbonesbikepacking.co.uk or 01650 521301) to request the Forest Freeride logo. Do not use AI-generated images."
+    },
+    "cover": {
+      "status": "BLOCKED",
+      "reason": "No confirmed operator-specific photography found in accessible public sources. No free/open-licensed images for this specific operator found on Openverse or Wikimedia Commons.",
+      "licence": null,
+      "openverseNote": "Generic mid Wales Cambrian Mountains MTB or bikepacking imagery may be available on Openverse or Wikimedia Commons under CC licences. If used as a placeholder, must NOT be attributed to Forest Freeride. Search Openverse for: 'Cambrian Mountains mountain biking', 'mid Wales trail', 'Wales bikepacking'.",
+      "actionRequired": "(1) Contact operator for a media pack. (2) If a placeholder is required, search Openverse/Wikimedia Commons for freely licensed generic mid-Wales MTB imagery — do not attribute it to Forest Freeride. (3) Do not use AI-generated images."
+    },
+    "gallery": {
+      "status": "BLOCKED",
+      "reason": "Same constraints as cover. No freely licensed gallery images confirmed.",
+      "licence": null
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Contact details (phone, email, address) belong to Forest Freeride",
+      "issue": "Phone (01650 521301), email (stuart@bearbonesbikepacking.co.uk), and address (Ceulan, Pennant, Llanbrynmair, Powys, SY19 7BH) are sourced from the Bear Bones Bikepacking website, not from a Forest Freeride-specific source. Stuart Wright is named operator of both brands in multiple sources, making it highly probable these details apply to Forest Freeride — but this has not been explicitly confirmed.",
+      "priority": "HIGH",
+      "sourceUrl": "https://www.bearbonesbikepacking.co.uk/contact/",
+      "action": "Email or call the operator to confirm: (1) that these contact details are correct for Forest Freeride bookings; (2) whether a Forest Freeride-specific email address exists; (3) whether the Ceulan, Llanbrynmair address is the right address to publish for the directory listing."
+    },
+    {
+      "claim": "Forest Freeride website is active and the URL to publish is forestfreeride.co.uk",
+      "issue": "The forestfreeride.co.uk homepage is currently showing a Shopify 'Coming Soon' page (admin.zz). Subpages are indexed by Google but return 403. The site is in a partial rebuild state. Publishing the URL as-is may send users to a broken page.",
+      "priority": "HIGH",
+      "sourceUrl": "https://www.forestfreeride.co.uk/",
+      "action": "Check whether the site is live before publishing the URL. If still in 'Coming Soon' state, consider either omitting the website field until it is live, or publishing bearbonesbikepacking.co.uk as the primary web presence."
+    },
+    {
+      "claim": "WRT and BB200 are commercial offerings of Forest Freeride",
+      "issue": "Both the Welsh Ride Thing and Bear Bones 200 are self-supported, community-organised bikepacking challenges — not commercial guided tours. They are run by Stuart and Dee of Forest Freeride but may be free or low-cost community events rather than paid commercial products. Forest Freeride's commercial offering appears to be the coaching courses and guided trips, not the WRT/BB200 events.",
+      "priority": "MEDIUM",
+      "sourceUrl": "https://www.bearbonesbikepacking.co.uk/events/bb200-event/",
+      "action": "Confirm with operator: (1) which services are commercial (paid bookings); (2) whether courses and guided trips are currently offered and bookable; (3) current pricing. Do not describe WRT/BB200 as 'packages available to book' without confirmation."
+    },
+    {
+      "claim": "Facebook page 'The Forest Freeride' is the operator's active page",
+      "issue": "The Facebook page at https://m.facebook.com/people/The-Forest-Freeride/61569820735700/ is indexed by Google but requires login to view. Content, activity status, and page management cannot be verified from public search.",
+      "priority": "LOW",
+      "sourceUrl": "https://m.facebook.com/people/The-Forest-Freeride/61569820735700/",
+      "action": "Manually check the Facebook page when logged in to confirm it is active, operator-managed, and correctly attributed to Forest Freeride."
+    },
+    {
+      "claim": "Commercial tier classification",
+      "issue": "Forest Freeride is classified as 'unclassified_operator'. Given the operator's profile (established community events, published coaching courses, mid Wales guiding), a tier assessment may be warranted once contact details are confirmed — but no upgrade to a paid tier should be made based on this research alone.",
+      "priority": "LOW",
+      "sourceUrl": null,
+      "action": "Once operator contact is established, assess whether any commercial relationship exists or is sought. Do not upgrade the commercial tier without proper commercial process."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.forestfreeride.co.uk/",
+      "description": "Forest Freeride official website homepage — currently showing Shopify 'Coming Soon' page. Domain confirmed registered and indexed."
+    },
+    {
+      "url": "https://www.forestfreeride.co.uk/pages/wildmap.html",
+      "description": "Forest Freeride mid Wales wild map page — indexed by Google, confirms mid Wales operation. Returns 403 on direct fetch."
+    },
+    {
+      "url": "http://www.forestfreeride.co.uk/pages/guiding+trips.html",
+      "description": "Forest Freeride guiding trips page — indexed by Google, confirms guided trip service exists. Returns 403 on direct fetch."
+    },
+    {
+      "url": "https://www.bearbonesbikepacking.co.uk/",
+      "description": "Bear Bones Bikepacking — companion brand/website operated by Stuart and Dee Wright (same operators as Forest Freeride). Address, phone and email sourced from this site."
+    },
+    {
+      "url": "https://www.bearbonesbikepacking.co.uk/events/bb200-event/",
+      "description": "Bear Bones 200 event page — confirms BB200 is active for 2026 (3 October 2026), based in Llanbrynmair, Powys."
+    },
+    {
+      "url": "https://www.bearbonesbikepacking.co.uk/events/wrt-event/",
+      "description": "Welsh Ride Thing event page — confirms WRT is active, WRT 2026: 2–4 May 2026."
+    },
+    {
+      "url": "https://www.bearbonesbikepacking.co.uk/contact/",
+      "description": "Bear Bones Bikepacking contact page — source of address (Ceulan, Pennant, Llanbrynmair, Powys SY19 7BH), phone (01650 521301), and email (stuart@bearbonesbikepacking.co.uk)."
+    },
+    {
+      "url": "https://advntr.cc/bear-bones-200/",
+      "description": "ADVNTR.cc article on the Bear Bones 200 — independently describes Stuart Wright as 'the man behind Forest Freeride and the Bear Bones bikepacking forum'. Confirms BB200 starts in Llanbrymair, Powys."
+    },
+    {
+      "url": "https://bikepacking.com/routes/bear-bones-bash-mid-wales/",
+      "description": "BIKEPACKING.com — Bear Bones Bash route article. References Stuart Wright and Forest Freeride. Confirms Cambrian Mountains, mid Wales terrain."
+    },
+    {
+      "url": "https://us.alpkit.com/blogs/deeds/welsh-ride-thing-part-1",
+      "description": "Alpkit — Welsh Ride Thing bikepacking write-up. Confirms 'Stuart at Forest Freeride organises the event'. References forestfreeride.co.uk."
+    },
+    {
+      "url": "https://alpkit.com/blogs/news/welsh-ride-thing-2025-self-supported-return",
+      "description": "Alpkit — WRT 2025 return article (April 2025). Confirms WRT is active and Alpkit-supported."
+    },
+    {
+      "url": "https://battistrada.com/en/cycling-calendar/edition/bear-bones-200-bikepacking-2025/48840/",
+      "description": "Battistrada cycling calendar — BB200 2025 event (4 Oct 2025). Location: Llanbrynmair, County Powys, Wales. Organiser website: bearbonesbikepacking.co.uk."
+    },
+    {
+      "url": "https://battistrada.com/en/cycling-calendar/edition/bear-bones-200-bikepacking-2026/51435/",
+      "description": "Battistrada cycling calendar — BB200 2026 event (3 Oct 2026). Confirms event is scheduled, location Llanbrynmair, Powys."
+    },
+    {
+      "url": "https://m.facebook.com/people/The-Forest-Freeride/61569820735700/",
+      "description": "Facebook — 'The Forest Freeride' page. Indexed by Google; requires login to view content."
+    },
+    {
+      "url": "https://www.facebook.com/bearbonesbikepacking/",
+      "description": "Facebook — Bear Bones Bikepacking page. Companion brand; same operators."
+    },
+    {
+      "url": "https://www.visitwales.com/things-do/adventure-and-activities/cycling-and-mountain-biking/great-places-guided-mountain-bike-holiday",
+      "description": "Visit Wales guided MTB holiday page — Forest Freeride NOT listed. Confirmed negative."
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "The operator 'Forest Freeride' has been identified and is verifiably active. Operator Stuart Wright and partner Dee are confirmed as running Forest Freeride from Llanbrynmair, Powys, mid Wales, organising the Bear Bones 200 and Welsh Ride Thing events and offering bikepacking courses. A website (forestfreeride.co.uk), a Facebook page, and a Bear Bones Bikepacking companion site are all confirmed. Address, phone, and email exist but are sourced from Bear Bones Bikepacking rather than explicitly from Forest Freeride — these require operator confirmation before publication. The website homepage is in 'Coming Soon' state. No description, logo, cover image, Google Business profile, or tourism-directory listing has been found. The listing is substantively researchable but requires human QA to: (1) confirm contact details apply to Forest Freeride; (2) verify the website is live before publishing the URL; (3) clarify which services are commercially bookable; (4) obtain images directly from the operator.",
+
+  "topBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Website forestfreeride.co.uk is in 'Coming Soon' state — subpages return 403, making it impossible to verify services, pricing, and contact info from the primary operator source",
+      "action": "Contact the operator directly (via stuart@bearbonesbikepacking.co.uk or 01650 521301) to: (a) confirm the current status of the Forest Freeride website; (b) obtain a working website URL or expected live date; (c) obtain the list of currently available services and their pricing. If the site remains 'Coming Soon', consider using bearbonesbikepacking.co.uk as the published web presence pending the Forest Freeride site launch."
+    },
+    {
+      "rank": 2,
+      "blocker": "Contact details (phone, email, address) sourced from Bear Bones Bikepacking — not explicitly confirmed as Forest Freeride contact details",
+      "action": "Before publishing any contact information, send a brief verification email to stuart@bearbonesbikepacking.co.uk confirming that: (a) this email address is correct for Forest Freeride bookings/enquiries; (b) 01650 521301 is the correct phone; (c) Ceulan, Pennant, Llanbrynmair, Powys SY19 7BH is the correct postal address for the listing. Without this confirmation, these fields should remain unpublished."
+    },
+    {
+      "rank": 3,
+      "blocker": "No logo, cover image, or operator photography found — all image fields blocked",
+      "action": "Request a media pack directly from the operator (logo, hero photography of courses/routes). Do not use AI-generated images. As a last resort, search Openverse/Wikimedia Commons for freely licensed generic Cambrian Mountains MTB imagery to use as a temporary cover placeholder — but do not attribute it to Forest Freeride until operator images are supplied."
+    }
+  ]
+}

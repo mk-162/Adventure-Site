@@ -1,0 +1,271 @@
+{
+  "_meta": {
+    "task": "content-ops-075-operator-bike-corris",
+    "contentItem": "operator-bike-corris",
+    "contentType": "operator",
+    "slug": "bike-corris",
+    "route": "/directory/bike-corris",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "partial_with_critical_flags",
+    "identityConfidence": "HIGH — entity confirmed via Companies House, two independent tourism board listings, and official website"
+  },
+
+  "proposedOperatorData": {
+    "name": "Bike Corris",
+    "slug": "bike-corris",
+    "website": "https://www.bikecorris.co.uk",
+    "websiteSource": "https://www.bikecorris.co.uk",
+    "websiteNote": "Active as of research date. Site confirmed live with guiding, intro, contact, and journal pages.",
+
+    "contact": {
+      "phone": "07935 423470",
+      "phoneSource": "https://www.bikecorris.co.uk/contact",
+      "phoneNote": "Current operational number as of post-July 2025 transition. Belongs to Rikki Barratt / Dyfi Valley Guides who now operates the Bike Corris brand. VERIFY with operator before publishing.",
+      "email": "info@dyfivalleyguides.co.uk",
+      "emailSource": "https://www.bikecorris.co.uk/contact",
+      "emailNote": "Current contact email as displayed on the Bike Corris website contact page (post-July 2025 transition).",
+      "legacyPhone_landline": "01654 761456",
+      "legacyPhone_mobile": "07880 992552",
+      "legacyEmail": "dave@bikecorris.co.uk",
+      "legacyContactSource": "https://www.mbwales.com/listings/bike-corris/",
+      "legacyContactNote": "Appears in older directory entries (MB Wales, Ride North Wales). Currency UNVERIFIED. Do not publish legacy contacts without operator confirmation."
+    },
+
+    "address": {
+      "line1": "Brynhyfryd",
+      "locality": "Corris",
+      "town": "Machynlleth",
+      "county": "Gwynedd",
+      "postcode": "SY20 9TQ",
+      "country": "Wales",
+      "addressSource": "https://find-and-update.company-information.service.gov.uk/company/12079670",
+      "addressNote": "Registered address from Companies House for BIKE CORRIS LTD (company number 12079670, incorporated 2 July 2019). Cross-confirmed by MB Wales and Ride North Wales listings.",
+      "addressSources": [
+        "https://find-and-update.company-information.service.gov.uk/company/12079670",
+        "https://www.mbwales.com/listings/bike-corris/",
+        "https://www.ridenorthwales.co.uk/listings/bike-corris/"
+      ]
+    },
+
+    "coordinates": {
+      "lat": 52.641,
+      "lng": -3.837,
+      "coordinatesSource": "content/operators/mtb.csv (internal codebase record)",
+      "coordinatesNote": "Pre-existing in internal MTB operators CSV. Consistent with Corris, Machynlleth location. Recommend cross-checking against Google Maps / What3Words before publishing."
+    },
+
+    "region": "Mid Wales",
+    "category": "activity_provider",
+    "groupFriendly": true,
+
+    "services": {
+      "summary": "Personalised mountain bike coaching and guiding in the Dyfi Forest and surrounding Snowdonia/Mid Wales terrain.",
+      "summarySource": "content/operators/mtb.csv (internal)",
+      "guidedRides": {
+        "halfDay": {
+          "description": "Half Day Guided Ride",
+          "price": "£130",
+          "maxGroupSize": 8,
+          "source": "https://www.bikecorris.co.uk/guiding",
+          "priceNote": "Pricing as listed on website. Verify currency before publishing."
+        },
+        "fullDay": {
+          "description": "Full Day Guided Ride",
+          "price": "£230",
+          "maxGroupSize": 8,
+          "source": "https://www.bikecorris.co.uk/guiding",
+          "priceNote": "Pricing as listed on website. Verify currency before publishing."
+        }
+      },
+      "ridingStyles": [
+        {
+          "style": "Enduro",
+          "description": "Steep, technical descents through trees, roots, rocks and drops. Full suspension bikes recommended.",
+          "source": "https://www.bikecorris.co.uk/guiding"
+        },
+        {
+          "style": "Big Mountains",
+          "description": "Guided ascent and descent of Cadair Idris (893m) via legal bridleway; 800+ metre descent.",
+          "source": "https://www.bikecorris.co.uk/guiding"
+        },
+        {
+          "style": "Gravel",
+          "description": "Long-distance fire roads and bridlepaths across hardpacked slate trails in the Dyfi Valley.",
+          "source": "https://www.bikecorris.co.uk/guiding"
+        },
+        {
+          "style": "Cross Country",
+          "description": "Cross country riding in the Dyfi Forest area.",
+          "source": "https://www.mbwales.com/listings/bike-corris/"
+        }
+      ],
+      "bikeHire": {
+        "offered": false,
+        "note": "Bike Corris does not offer bike hire. The guiding page refers clients to Creature Cycles.",
+        "source": "https://www.bikecorris.co.uk/guiding"
+      },
+      "accommodation": {
+        "offered": false,
+        "note": "Caban Hyfryd glamping cabin confirmed closed. Instagram post from @bikecorris states 'It's a wrap! Caban Hyfryd has said goodbye'.",
+        "source": "https://www.instagram.com/bikecorris/"
+      }
+    },
+
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/bikecorris/",
+      "facebookSource": "https://www.bikecorris.co.uk/contact",
+      "instagram": "https://www.instagram.com/bikecorris/",
+      "instagramSource": "https://www.instagram.com/bikecorris/",
+      "note": "Both accounts confirmed active in search results. Current operator (Rikki Barratt / Dyfi Valley Guides) also maintains separate accounts @dyfivalleyguides_ (Instagram) and Dyfi Valley Guides (Facebook)."
+    },
+
+    "tourismBoardListings": [
+      {
+        "board": "MB Wales",
+        "url": "https://www.mbwales.com/listings/bike-corris/",
+        "note": "Affiliated with Welsh Government and Visit Wales. Full listing present."
+      },
+      {
+        "board": "Ride North Wales",
+        "url": "https://www.ridenorthwales.co.uk/listings/bike-corris/",
+        "note": "Tourism/trail advocacy platform. Lists Bike Corris as a 'Cycle Specific Facility' and attributes a Visit Wales 5-star grading.",
+        "visitWales5StarGrading": {
+          "claimed": true,
+          "confidence": "MEDIUM",
+          "flag": "The 5-star grading appears only in the Ride North Wales listing. No standalone Visit Wales page for Bike Corris was found. Verify directly at visitwales.com or with the Visit Wales quality assurance team before publishing this accolade."
+        }
+      }
+    ],
+
+    "googleMapsRating": {
+      "rating": null,
+      "reviewCount": null,
+      "flag": "UNVERIFIED — No Google Maps rating or review count was surfaced from any search result or directory listing. Manual check required: search 'Bike Corris Machynlleth' on Google Maps."
+    },
+
+    "operatorHistory": {
+      "founded": "2019",
+      "founderNote": "BIKE CORRIS LTD incorporated 2 July 2019 at Companies House. The guiding service predates the limited company; founder David Evans operated the brand for approximately a decade.",
+      "managementTransition": {
+        "date": "2025-07",
+        "from": "David Evans",
+        "to": "Rikki Barratt (Dyfi Valley Guides)",
+        "source": "https://www.wideopenmountainbike.com/2025/07/david-evans-passes-on-bike-corris-torch-after-a-decade",
+        "flag": "IMPORTANT: The Bike Corris brand changed hands in July 2025. All current operational contact, pricing, and service details should be verified against the current operator (Rikki Barratt / Dyfi Valley Guides) before publishing."
+      }
+    }
+  },
+
+  "imageRecommendations": {
+    "coverImage": {
+      "status": "BLOCKED",
+      "reason": "No Creative Commons or other freely licensed image depicting Bike Corris operations or the specific Dyfi Forest MTB trails was found. All imagery on the official website appears proprietary.",
+      "options": [
+        {
+          "option": "Request permission from operator",
+          "contact": "info@dyfivalleyguides.co.uk",
+          "note": "Current operator may be willing to supply press/listing images. Obtain written permission specifying usage rights."
+        },
+        {
+          "option": "Search Openverse",
+          "url": "https://openverse.org",
+          "searchTerms": ["Dyfi Forest mountain biking", "Corris mountain bike", "Machynlleth forest cycling"],
+          "note": "Manual search recommended. No confirmed CC-licensed results found during this research pass."
+        },
+        {
+          "option": "Search Flickr Creative Commons",
+          "url": "https://www.flickr.com/search/?license=1%2C2%2C3%2C4%2C5%2C6%2C9%2C10&text=dyfi+forest+mountain+bike",
+          "note": "Filter by Creative Commons. Verify licence type before use."
+        },
+        {
+          "option": "Visit Wales media library",
+          "url": "https://www.visitwales.com/press-and-media",
+          "note": "Visit Wales press image library may contain licensed Dyfi Forest imagery. Check terms for third-party directory use."
+        }
+      ]
+    },
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "No logo download, press kit, or SVG asset publicly available. Logo appears on bikecorris.co.uk website header only.",
+      "resolution": "Contact operator directly: info@dyfivalleyguides.co.uk. Request the Bike Corris logo file and written permission for use in the Adventure Wales directory."
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "id": "review-001",
+      "claim": "Management transition — Bike Corris now operated by Rikki Barratt / Dyfi Valley Guides",
+      "confidence": "HIGH",
+      "source": "https://www.wideopenmountainbike.com/2025/07/david-evans-passes-on-bike-corris-torch-after-a-decade",
+      "action": "Confirm the transition is complete and that the Bike Corris brand/domain continues to operate before publishing the listing. The operator name in the directory should remain 'Bike Corris' but contact details should reflect the current team."
+    },
+    {
+      "id": "review-002",
+      "claim": "Current phone (07935 423470) and email (info@dyfivalleyguides.co.uk)",
+      "confidence": "HIGH",
+      "source": "https://www.bikecorris.co.uk/contact",
+      "action": "Verify these remain active and correct before publishing. Call or email to confirm."
+    },
+    {
+      "id": "review-003",
+      "claim": "Visit Wales 5-star grading",
+      "confidence": "MEDIUM",
+      "source": "https://www.ridenorthwales.co.uk/listings/bike-corris/",
+      "action": "Cross-check directly with Visit Wales quality assurance (visitwales.com or the VWQS team). Do not publish this accolade without direct confirmation — the grading may relate to the former operator/accommodation offering which is now closed."
+    },
+    {
+      "id": "review-004",
+      "claim": "Guided ride pricing: half day £130, full day £230",
+      "confidence": "MEDIUM",
+      "source": "https://www.bikecorris.co.uk/guiding",
+      "action": "Verify pricing is current (may have changed post-transition). Do not publish prices without confirming they are live."
+    },
+    {
+      "id": "review-005",
+      "claim": "Google Maps rating",
+      "confidence": "UNVERIFIABLE",
+      "source": null,
+      "action": "Manually search Google Maps for 'Bike Corris Machynlleth' to capture current rating and review count. This field remains null until verified."
+    },
+    {
+      "id": "review-006",
+      "claim": "Coordinates lat 52.641 / lng -3.837",
+      "confidence": "MEDIUM",
+      "source": "content/operators/mtb.csv",
+      "action": "Cross-check against Google Maps / OS grid reference for Corris, SY20 9TQ to confirm pin location is accurate."
+    }
+  ],
+
+  "sourceUrls": [
+    "https://www.bikecorris.co.uk",
+    "https://www.bikecorris.co.uk/guiding",
+    "https://www.bikecorris.co.uk/contact",
+    "https://www.bikecorris.co.uk/intro",
+    "https://find-and-update.company-information.service.gov.uk/company/12079670",
+    "https://www.mbwales.com/listings/bike-corris/",
+    "https://www.ridenorthwales.co.uk/listings/bike-corris/",
+    "https://www.wideopenmountainbike.com/2025/07/david-evans-passes-on-bike-corris-torch-after-a-decade",
+    "https://www.instagram.com/bikecorris/",
+    "https://www.facebook.com/bikecorris/"
+  ],
+
+  "topBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Cover image blocked — no freely licensed image found",
+      "resolution": "Contact current operator (info@dyfivalleyguides.co.uk) for press imagery, or conduct manual search on Openverse/Flickr CC using Dyfi Forest MTB search terms."
+    },
+    {
+      "rank": 2,
+      "blocker": "Logo blocked — not publicly available",
+      "resolution": "Contact operator (info@dyfivalleyguides.co.uk) to request logo file and written permission for directory use."
+    },
+    {
+      "rank": 3,
+      "blocker": "Management transition (July 2025) — all contact details and service info require verification with new operator before publishing",
+      "resolution": "Contact Rikki Barratt / Dyfi Valley Guides at info@dyfivalleyguides.co.uk or 07935 423470 to confirm current operational details, including whether the Bike Corris brand continues to trade under that name."
+    }
+  ]
+}

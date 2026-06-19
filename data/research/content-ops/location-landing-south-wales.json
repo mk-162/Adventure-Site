@@ -1,0 +1,547 @@
+{
+  "_meta": {
+    "task": "content-ops-036-location-landing-south-wales",
+    "contentItem": "location-landing-south-wales",
+    "contentType": "location_landing",
+    "slug": "south-wales",
+    "route": "/south-wales",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_flags"
+  },
+
+  "existingFiles": {
+    "typescriptData": "data/regions/south-wales.ts",
+    "markdownContent": "content/regions/south-wales.md",
+    "dataLastUpdated": "2025-02-06",
+    "contentInventoryStatus": "research_needed",
+    "contentInventoryFlags": [
+      "evidence_status: missing",
+      "image_status: needs_review (no image source URL recorded)",
+      "copy_status: needs_review",
+      "seo_status: needs_review",
+      "schema_status: needs_review"
+    ]
+  },
+
+  "overallAssessment": {
+    "verdict": "data/regions/south-wales.ts contains a usable structural skeleton but is notably thin compared to other region files — only 5 topExperiences (vs 12 for Pembrokeshire) and 3 FAQs. No source citations are recorded anywhere in the file (the comment header lists no provenance at all). All specific claims — including the Bike Park Wales day-pass price, transport frequencies, canal towpath length, and Cwmcarn trail status — must be treated as unverified. Three issues require human decision before publishing: (1) the hero image has no provenance; (2) there is no OG/social image at all — the meta object entirely lacks a socialImage field and no south-wales-og.jpg exists on disk; (3) the '30 minutes from Cardiff' travel-time claim for Merthyr Tydfil appears overstated and needs correction. Additionally the page focuses narrowly on the valleys/industrial heritage framing rather than the full 'South Wales' geographic scope, which may create SEO mismatch for users expecting coastal, Vale of Glamorgan, or Newport/Monmouthshire content.",
+    "structuralQuality": "LOW-MEDIUM — correct TypeScript shape and all required top-level keys are present but content is sparse. topExperiences has only 5 entries, FAQs only 3, hiddenGems only 2, localEatsAndDrinks only 2. No operator slugs, no schema markup data, no seasonal images.",
+    "factualConfidence": "LOW-MEDIUM — core geographic facts (valley names, Big Pit free entry, canal existence, Brecon Beacons access) are stable. All pricing, transport frequency details, and the Cwmcarn Forest operational status need human verification before publishing."
+  },
+
+  "criticalIssues": [
+    {
+      "severity": "HIGH",
+      "issue": "No OG/social image — meta object has no socialImage field and no south-wales-og.jpg exists on disk",
+      "location": "data/regions/south-wales.ts — meta object",
+      "diagnosis": "Unlike most other region TS files, the south-wales.ts meta object has no socialImage key at all. No file public/images/regions/south-wales-og.jpg exists on disk. Publishing /south-wales will produce broken or absent Open Graph social previews on every social share, messaging app, or Slack unfurl.",
+      "action": "HUMAN ACTION REQUIRED: (1) add meta.socialImage: '/images/regions/south-wales-og.jpg' to the TS file; (2) source and place a 1200×630px OG image at that path; (3) record full provenance in the image registry before publishing."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "Hero image has no provenance or licence record",
+      "location": "public/images/regions/south-wales-hero.jpg (exists on disk, 308KB, Feb 14 2025)",
+      "diagnosis": "The image registry entry has image_status 'needs_review', image_source_url blank, and no photographer credit, licence type, or acquisition record. Publishing with an unlicensed hero image is a legal risk.",
+      "action": "HUMAN REVIEW: establish photographer credit, licence type, and acquisition record for south-wales-hero.jpg before publishing. If provenance cannot be established, replace with a verified CC-licensed image."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "'30 minutes from Cardiff' travel claim for Merthyr Tydfil/Brecon Beacons appears overstated",
+      "location": "data/regions/south-wales.ts — keyFacts[3]: { label: 'Distance from Cardiff', value: '30 minutes', detail: 'Merthyr Tydfil or Brecon Beacons access' }",
+      "diagnosis": "Transport for Wales valley line trains from Cardiff Central to Merthyr Tydfil take approximately 55-65 minutes (not 30 minutes). By car on the A470, the journey is approximately 40-55 minutes depending on traffic. The Storey Arms car park (Pen y Fan trailhead, A470) is approximately 45-55 minutes by car. '30 minutes' is materially inaccurate and will cause visitor frustration. The FAQ correctly says 'Valley Lines trains from Cardiff run every 15-30 minutes to Merthyr' (frequency, not journey time) — the keyFact appears to have confused frequency with journey time.",
+      "affectedFields": ["keyFacts[3].value: '30 minutes'"],
+      "action": "HUMAN EDITORIAL DECISION: correct to accurate travel time. Suggested: '55-65 min by train, 45-55 min by car' or simply '1 hour'. Verify current TfW journey time at https://www.tfwrail.wales/."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "No source citations anywhere in the TS file — all claims are unverified",
+      "location": "data/regions/south-wales.ts — header comment and throughout",
+      "diagnosis": "The file header reads '// South Wales (Valleys) Region Data / Last updated: February 2025' with no source attribution of any kind. Unlike Pembrokeshire (which at least cited Perplexity), there is no record of how any claim was researched. Every price, frequency, and operational claim must be treated as unverified until a human QA reviewer checks against official sources. The provenance gap affects: Bike Park Wales day-pass price (£30-40), bike hire price (£30), Cwmcarn operational status, T4 bus current operation, canal towpath length, and all transport frequencies.",
+      "action": "Human QA reviewer to verify all specific claims against official sources listed in officialSourcesForHumanVerification."
+    }
+  ],
+
+  "factsAudit": {
+    "verified_or_stable": [
+      {
+        "claim": "Main Valleys: Rhondda, Cynon, Taff, Rhymney — former coal heartland",
+        "status": "VERIFIED",
+        "note": "These are the four principal valleys of the South Wales coalfield. Geographically stable, well-documented. The Rhondda, Cynon, and Taff valleys converge near Pontypridd. The Rhymney Valley runs through Caerphilly borough.",
+        "source": "https://cadw.gov.wales/learn/historic-wales/industrial-wales/coal-mining"
+      },
+      {
+        "claim": "Big Pit National Coal Museum — free entry, underground tour",
+        "status": "VERIFIED",
+        "note": "Big Pit (Pwll Mawr) is part of the National Museum Wales (Amgueddfa Cymru) network. Like all Amgueddfa Cymru sites, general admission is free. Underground tours are included in the free ticket. The mine is a UNESCO World Heritage Site (as part of the Blaenavon Industrial Landscape). Booking ahead is strongly recommended. Located in Blaenavon, Torfaen.",
+        "source": "https://museum.wales/bigpit/"
+      },
+      {
+        "claim": "Big Pit — part of Blaenavon UNESCO World Heritage Site",
+        "status": "VERIFIED",
+        "note": "The Blaenavon Industrial Landscape was inscribed as a UNESCO World Heritage Site in 2000. Big Pit and Blaenavon Ironworks are the core elements. Well-documented.",
+        "source": "https://www.visitwales.com/inspire-me/history-heritage/world-heritage/blaenavon-industrial-landscape"
+      },
+      {
+        "claim": "Bike Park Wales — UK's first full-scale mountain bike park, located near Merthyr Tydfil",
+        "status": "VERIFIED",
+        "note": "Bike Park Wales (BPW) opened in 2013 at Gethin Woodland in Cwmtaf, above Merthyr Tydfil, and is widely recognised as the first full-scale, uplift-served mountain bike park in the UK. Real operator with a live booking website.",
+        "source": "https://www.bikeparkwales.com/"
+      },
+      {
+        "claim": "Monmouthshire and Brecon Canal — towpath walking and cycling",
+        "status": "VERIFIED",
+        "note": "The Monmouthshire and Brecon Canal is a real canal that runs through the Brecon Beacons National Park and into south-east Wales. The towpath is a well-used walking and cycling route. The navigable section from Brecon to Pontymoile (near Pontypool) is approximately 35 miles (56km). Canal and River Trust manages the waterway.",
+        "source": "https://canalrivertrust.org.uk/enjoy-the-waterways/canal-and-river-network/monmouthshire-and-brecon-canal"
+      },
+      {
+        "claim": "Rhondda Heritage Park — mining history site",
+        "status": "VERIFIED",
+        "note": "Rhondda Heritage Park is a real visitor attraction at the former Lewis Merthyr Colliery in Trehafod, Rhondda Cynon Taf. It offers underground tours, exhibitions, and family activities. Admission is charged (not free). Note: the TS data does not explicitly claim it is free, only that it 'tells the valley story'. Verify current admission pricing before publishing.",
+        "source": "https://www.rhonddaheritagepark.com/"
+      },
+      {
+        "claim": "Dare Valley Country Park near Aberdare",
+        "status": "VERIFIED",
+        "note": "Dare Valley Country Park is a real country park on a former colliery site near Aberdare, managed by Rhondda Cynon Taf County Borough Council. Free access to the park itself. Visitor centre on site.",
+        "source": "https://www.rctcbc.gov.uk/EN/Resident/ParksandGreenSpaces/DareValleyCountryPark.aspx"
+      },
+      {
+        "claim": "Clydach Gorge near Brynmawr",
+        "status": "VERIFIED",
+        "note": "The Clydach Gorge (Cwm Clydach) is a real Site of Special Scientific Interest (SSSI) and Local Nature Reserve in Blaenau Gwent/Monmouthshire, running from Brynmawr to Abergavenny. It contains industrial archaeology (old railway, ironworks remains) and woodland. Access is managed by NRW and local authorities.",
+        "source": "https://www.naturalresources.wales/days-out/the-countryside/south-east-wales/clydach-gorge/"
+      },
+      {
+        "claim": "Pontsticill Reservoir near Merthyr Tydfil",
+        "status": "VERIFIED",
+        "note": "Pontsticill Reservoir is a real reservoir in the Brecon Beacons National Park, approximately 5 miles north of Merthyr Tydfil. It is managed by Dŵr Cymru Welsh Water. Walking access is possible from the reservoir road. The TS data lists it as a 'wild swimming' hidden gem — wild swimming at reservoirs in Wales is technically on private water utility land and may be discouraged. This should be reviewed.",
+        "source": "https://www.breconbeacons.org/explore/things-to-do/walk-trails/pontsticill-and-pentwyn-reservoirs"
+      },
+      {
+        "claim": "Bunch of Grapes, Pontypridd — craft beer pub",
+        "status": "VERIFIED",
+        "note": "The Bunch of Grapes is a real pub/restaurant in Pontypridd, well-regarded for craft beer and food. Real operator.",
+        "source": "https://www.bunchofgrapes.org.uk/"
+      },
+      {
+        "claim": "Waterfall Country — Sgwd yr Eira and Four Falls area accessible from south Wales valleys",
+        "status": "STABLE",
+        "note": "Waterfall Country (Waterfall Woods/Ystradfellte area) is in the Brecon Beacons National Park near Pontneddfechan, approximately 30-35 miles from Cardiff and accessible via Merthyr Tydfil or Hirwaun. Sgwd yr Eira (where you can walk behind the waterfall) and the Four Falls Trail are real, well-documented NRW managed walks. The claim that this is accessible from the 'southern valleys' is directionally correct though the waterfalls are technically in Neath Port Talbot/Powys. The NRW car park at Pontneddfechan is the standard access point.",
+        "source": "https://www.naturalresources.wales/days-out/the-countryside/south-wales/waterfall-woods-national-nature-reserve/"
+      },
+      {
+        "claim": "Welsh name: De Cymru",
+        "status": "VERIFIED",
+        "note": "De Cymru is the correct Welsh-language name for South Wales.",
+        "source": "https://www.bbc.co.uk/cymraeg (standard Welsh-language usage)"
+      },
+      {
+        "claim": "South Wales Metro — valley lines from Cardiff transport programme",
+        "status": "STABLE",
+        "note": "The South Wales Metro is a real, ongoing Transport for Wales infrastructure programme upgrading valley-line rail and integrating bus services. The Cardiff Capital Region has invested in electrifying valley rail lines. The metro is operating with rolling upgrades in 2025-2026.",
+        "source": "https://tfw.wales/projects/south-wales-metro"
+      }
+    ],
+
+    "needs_verification": [
+      {
+        "claim": "Bike Park Wales: '40+ trails' and '£30-40 day pass'",
+        "source_in_file": "No source cited",
+        "risk": "medium",
+        "action": "Verify current trail count and day pass pricing at https://www.bikeparkwales.com/. Trail count and pricing change seasonally and with park investment. Do NOT publish price without a current dated source.",
+        "note": "BPW offers various ticket types (full day, uplift-only, uplift passes). The '40+' trail count and £30-40 price may be outdated. Check the live booking page."
+      },
+      {
+        "claim": "Valley Lines trains: 'every 15 minutes' (keyFacts) and 'every 15-30 minutes' (FAQ)",
+        "source_in_file": "No source cited",
+        "risk": "medium",
+        "action": "Verify current Transport for Wales valley line frequencies at https://www.tfwrail.wales/. Frequency varies by line and time of day. The keyFact claims 'every 15 minutes' which is likely peak-hour frequency only; off-peak may be 30 minutes. The inconsistency between keyFact (15 min) and FAQ (15-30 min) also needs reconciling.",
+        "note": "Visitor planning depends on accurate train frequency. An overstated frequency will cause frustration. Check Treherbert, Merthyr, and Aberdare line current timetables."
+      },
+      {
+        "claim": "'30 minutes from Cardiff' (Merthyr Tydfil or Brecon Beacons access)",
+        "source_in_file": "No source cited",
+        "risk": "high",
+        "action": "LIKELY INACCURATE — see criticalIssues section. TfW rail journey Cardiff Central to Merthyr Tydfil is approximately 55-65 minutes. Verify at https://www.tfwrail.wales/ and correct the keyFact value.",
+        "note": "This appears to be journey frequency (trains every ~15-30 min) confused with journey duration. The Storey Arms/Pen y Fan start is approximately 45-55 min by car from Cardiff."
+      },
+      {
+        "claim": "Cwmcarn Forest Trails — 'Free', listed as a functioning trail centre",
+        "source_in_file": "No source cited",
+        "risk": "high",
+        "action": "VERIFY OPERATIONAL STATUS — Cwmcarn Forest Drive (a 7-mile scenic toll route) was closed for an extended period due to health and safety concerns and larch Phytophthora disease requiring felling. The MTB trails (Twrch Trail, Cafall Trail etc.) have had intermittent closures. Verify the current operational status of both the Forest Drive and the MTB trail network with NRW at https://www.naturalresources.wales/days-out/the-countryside/south-east-wales/cwmcarn-forest/ before publishing. If the trails are closed or restricted, this entry must be updated or removed.",
+        "note": "Publishing a trail centre as open when it is closed is a high-harm visitor error. Cwmcarn is managed by Natural Resources Wales."
+      },
+      {
+        "claim": "Brecon Canal cycle: bike hire '£30'",
+        "source_in_file": "No source cited",
+        "risk": "medium",
+        "action": "No hire operator is named. Verify current canal-side bike hire options and pricing. Drover Bikes in Hay-on-Wye and other operators serve the canal route. Do not publish a price without a named operator and current source.",
+        "note": "Unpublishable as written — no operator named."
+      },
+      {
+        "claim": "T4 bus from Cardiff stops at Storey Arms",
+        "source_in_file": "No source cited",
+        "risk": "medium",
+        "action": "Verify the T4 bus service is still operating in 2026 under that route designation, and that it still stops at Storey Arms car park (the standard Pen y Fan trailhead). Bus service routes and numbers change. Check Traveline Cymru at https://www.traveline.cymru/ or TfW bus information.",
+        "note": "The T4 has been operated by various contractors over the years. Confirm current operator, stop locations, and frequency. If the T4 no longer runs, the insider tip and FAQ must be updated."
+      },
+      {
+        "claim": "Pettigrew Bakeries — 'Cardiff, Welsh cakes and coffee'",
+        "source_in_file": "No source cited",
+        "risk": "low",
+        "action": "Verify Pettigrew Bakeries is still operating. The original Pettigrew Bakeries Tea Rooms in Cardiff's Victorian arcades are well-known. Confirm current locations/trading status at https://www.pettigrewtearooms.com/ or similar.",
+        "note": "Low risk but Cardiff is not in the south Wales valleys — its inclusion in the localEatsAndDrinks section may confuse visitors expecting valley recommendations."
+      },
+      {
+        "claim": "Pontsticill Reservoir — wild swimming access",
+        "source_in_file": "No source cited",
+        "risk": "medium",
+        "action": "Wild swimming at reservoirs in Wales is legally on private water utility land (Dŵr Cymru / Welsh Water). Dŵr Cymru's policy on wild swimming at their reservoirs varies by site. Verify whether public wild swimming access is currently permissible or encouraged at Pontsticill before publishing as a recommended activity. If Welsh Water discourages swimming, this hidden gem entry needs to be reworded to 'reservoir walks' rather than 'wild swimming'.",
+        "source": "https://www.dwrcymru.com/en/our-services/water/reservoirs-and-catchments (verify Pontsticill policy)",
+        "note": "Recommending wild swimming at a water utility reservoir without verifying the operator's position is a safety and liability risk."
+      }
+    ]
+  },
+
+  "geographicScopeIssue": {
+    "severity": "MEDIUM",
+    "issue": "Page titled and slugged '/south-wales' covers only the south Wales valleys; 'South Wales' is a much broader geography",
+    "detail": "The TS data file focuses specifically on the industrial valleys (Rhondda, Cynon, Taff, Rhymney) and Brecon Beacons access. However, 'South Wales' as commonly understood also includes: the Vale of Glamorgan, Cardiff coast, Newport/Monmouthshire, Bridgend/Porthcawl, and parts of Neath Port Talbot. The Gower Peninsula has its own location page (/gower). A user searching Google for 'South Wales adventure activities' will have broader expectations than this valleys-focused page delivers. This creates an SEO scope mismatch.",
+    "action": "HUMAN EDITORIAL DECISION: either (1) broaden the /south-wales page to cover the wider south Wales geography (adding Vale of Glamorgan coast, Porthcawl surf, caving in the Brecon Beacons foothills, Newport/Caerleon heritage, etc.); or (2) explicitly frame the page as 'South Wales Valleys' (not generic South Wales) with a disambiguation note pointing to other region pages. The current meta.seoTitle already says 'South Wales Valleys' which partially addresses this — but the route slug /south-wales and the data slug 'south-wales' conflict with that framing.",
+    "note": "The markdown guide (content/regions/south-wales.md) already leans into the valleys-specific identity with the subheading 'Get Down & Dirty' and explicitly tells users seeking beaches/coast to go to Gower or Pembrokeshire. This editorial choice should be made consistent across both files."
+  },
+
+  "contentGaps": [
+    {
+      "gap": "Caving entirely absent from TS data file despite being a major south Wales adventure activity",
+      "detail": "South Wales has some of the most significant cave systems in the UK: Ogof Ffynnon Ddu and Porth yr Ogof (NRW managed, Brecon Beacons), and the National Showcaves Centre for Wales (Dan yr Ogof) near Abercrave are all in the south Wales catchment. The markdown guide (content/regions/south-wales.md) explicitly calls out caving as the second-best activity after mountain biking — but the TS data file has no caving entry in topExperiences or bestFor (rank 1-10). This is a significant content gap.",
+      "action": "Add caving to topExperiences. The National Showcaves Centre for Wales (Dan yr Ogof) is the most accessible caving/cave show attraction: https://www.showcaves.co.uk/. For adventure caving, Porth yr Ogof (NRW managed) is a well-known entry point: https://www.naturalresources.wales/days-out/the-countryside/south-wales/porth-yr-ogof/. Verify current access and guided tour options."
+    },
+    {
+      "gap": "topExperiences is very sparse — only 5 entries for a major region",
+      "detail": "Other region TS files have 10-12 topExperiences. South Wales has only 5. Missing notable activities: surfing at Porthcawl/Rest Bay, caving, Brecon Beacons summit walks (Pen y Fan), Zip World/adventure activity centres, rock climbing at Dinas Rock/Ogmore.",
+      "action": "Human content writer should expand topExperiences to 8-12 entries, ensuring each has a verifiable operator or official site and, ideally, an operatorSlug link."
+    },
+    {
+      "gap": "FAQs are very sparse — only 3 questions vs 10 for Pembrokeshire",
+      "detail": "South Wales page has only 3 FAQs. Missing important visitor questions: Is Pen y Fan accessible without a car? Where is the best surfing in south Wales? What's the caving scene like? Are there family-friendly adventure activities? How do I get to Bike Park Wales from Cardiff? Can I wild camp in the Brecon Beacons?",
+      "action": "Expand FAQs to 6-10 questions. Prioritise questions that address practical visitor planning (transport, what to bring, family suitability) and that capture long-tail search traffic."
+    },
+    {
+      "gap": "No mention of surfing (Porthcawl/Rest Bay) despite it being a major south Wales activity",
+      "detail": "Porthcawl and Rest Bay are the principal south Wales surf destinations. The content-inventory shows an active activity-location-south-wales-surfing enrichment file exists. The TS region file doesn't mention surfing at all — not in bestFor, topExperiences, or FAQs.",
+      "action": "Add a surfing entry referencing Porthcawl/Rest Bay. Verify surf school operators: Porthcawl Surf (https://www.porthcawlsurf.co.uk/), South Wales Surf School (https://southwalessurfschool.co.uk/)."
+    },
+    {
+      "gap": "No schema markup data structure reviewed",
+      "detail": "No structured data (JSON-LD FAQPage, TouristDestination, TouristAttraction) has been reviewed or prepared. FAQs are so sparse that FAQPage schema benefit is limited until content is expanded.",
+      "action": "Technical review: confirm schema.org structured data is rendered for this route. Expand FAQs first to maximise FAQPage schema value."
+    },
+    {
+      "gap": "Accessibility information absent",
+      "detail": "No accessibility guidance for visitors with mobility constraints. Dare Valley Country Park and sections of the Monmouthshire and Brecon Canal towpath have good accessibility.",
+      "action": "Consider adding an accessibility note. Source: https://www.rctcbc.gov.uk/EN/Resident/ParksandGreenSpaces/DareValleyCountryPark.aspx and https://canalrivertrust.org.uk/enjoy-the-waterways/boating/accessible-boating"
+    },
+    {
+      "gap": "Two content files with different editorial voices — canonical rendering path unclear",
+      "detail": "content/regions/south-wales.md uses a provocative, opinionated voice ('Get Down & Dirty', explicitly advises beach-seekers to go elsewhere). data/regions/south-wales.ts has a more measured editorial tone. The canonical rendering path for /south-wales is unclear.",
+      "action": "HUMAN EDITORIAL DECISION: confirm which file drives the /south-wales page render and reconcile or clearly assign roles (markdown for intro/editorial, TS for structured data blocks)."
+    }
+  ],
+
+  "seoAndSchemaAudit": {
+    "seoTitle": {
+      "current": "South Wales Valleys | Bike Park Wales & Adventure Activities | Adventure Wales",
+      "length": 78,
+      "status": "TOO_LONG",
+      "note": "78 characters is over the 60-65 char recommended limit for Google SERPs and will be truncated on most devices. Consider shortening. Option A (valley focus): 'South Wales Valleys | Bike Park Wales & MTB | Adventure Wales' (60 chars). Option B (broader): 'South Wales | Mountain Biking, Heritage & Adventure | Adventure Wales' (68 chars, still over but more defensible). The title correctly uses 'South Wales Valleys' which helps clarify the geographic scope but adds characters."
+    },
+    "seoDescription": {
+      "current": "Explore South Wales: Bike Park Wales MTB trails, Brecon Beacons access, industrial heritage at Big Pit, and valley adventures. Cardiff's adventure playground.",
+      "length": 159,
+      "status": "ACCEPTABLE",
+      "note": "159 characters is within the 155-160 char sweet spot. Content is on-topic and includes the key terms. Acceptable as written, though expanding the page content may warrant a revised description that includes caving and surfing once those gaps are filled."
+    },
+    "schemaMarkup": {
+      "status": "NOT_VERIFIED",
+      "note": "No schema.org markup has been reviewed as part of this research task. Current 3-FAQ content is too sparse for meaningful FAQPage schema. Expand FAQs to 6+ before prioritising schema implementation.",
+      "action": "Human tech review: confirm whether the /south-wales route renders structured data (JSON-LD). TouristDestination and TouristAttraction schema for the valley region would benefit SEO once topExperiences is expanded."
+    }
+  },
+
+  "imageResearch": {
+    "heroImage": {
+      "filePath": "public/images/regions/south-wales-hero.jpg",
+      "fileExists": true,
+      "fileSizeKB": 308,
+      "fileDate": "2025-02-14",
+      "referencedIn": "data/regions/south-wales.ts — meta.heroImage: '/images/regions/south-wales-hero.jpg'",
+      "status": "blocked_no_provenance",
+      "note": "Image file exists on disk (308KB) but has NO provenance record, photographer credit, licence type, or acquisition record in the image registry (image_status: needs_review, image_source_url: empty). CANNOT confirm this image is legally cleared for publication. DO NOT publish without establishing provenance.",
+      "action": "HUMAN REVIEW REQUIRED: determine how this image was acquired. If provenance cannot be established, replace with a verified image."
+    },
+    "ogImage": {
+      "filePath": "public/images/regions/south-wales-og.jpg",
+      "fileExists": false,
+      "referencedIn": "NOT referenced — meta object in south-wales.ts has no socialImage field at all",
+      "status": "MISSING_BOTH_FIELD_AND_FILE — HIGH",
+      "note": "Unlike most other region TS files, south-wales.ts has no meta.socialImage key. No OG image file exists on disk. This is a dual problem: the data structure is incomplete and no image asset exists. Publishing /south-wales will produce absent Open Graph social previews.",
+      "action": "HUMAN ACTION: (1) add meta.socialImage: '/images/regions/south-wales-og.jpg' to data/regions/south-wales.ts; (2) source or create a 1200×630px OG image and record full provenance in the image registry."
+    },
+    "candidates_if_replacement_needed": [
+      {
+        "title": "Bike Park Wales — mountain biking action shot",
+        "searchQuery": "mountain biking Wales trails forest",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=mountain+biking+Wales+forest+trails&license_type=commercial&use_commercial=true",
+        "note": "HUMAN: search Openverse for CC BY or CC BY-SA licensed images. Mountain biking action is the strongest visual hook for this region page. Always record: photographer name, licence version, source URL, attribution string.",
+        "suitability": "HIGH — MTB is the primary adventure identity for this region"
+      },
+      {
+        "title": "South Wales valleys — terraced houses and green hills",
+        "searchQuery": "Rhondda valley terraced houses Wales",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=Rhondda+valley+Wales+terraced+houses&license_type=commercial&use_commercial=true",
+        "note": "Captures the unique industrial-landscape-meets-adventure identity of this region. Strong editorial differentiation from other Wales region pages.",
+        "suitability": "HIGH — distinctive visual identity, immediately different from coastal pages"
+      },
+      {
+        "title": "Big Pit or mining heritage — for heritage-focused angle",
+        "searchQuery": "Big Pit Blaenavon coal mine Wales",
+        "provider": "Openverse / Wikimedia Commons",
+        "searchUrl": "https://openverse.org/search/?q=Big+Pit+Blaenavon+Wales&license_type=commercial&use_commercial=true",
+        "note": "Blaenavon World Heritage Site images may be available under open licences via Wikimedia Commons. Strong cultural identity image.",
+        "suitability": "MEDIUM — good for heritage angle but may not signal 'adventure' to target audience"
+      },
+      {
+        "title": "Bike Park Wales / Visit Wales official media library",
+        "note": "Contact Bike Park Wales communications team (https://www.bikeparkwales.com/) or Visit Wales media library (https://www.visitwales.com/trade/media-centre) for press images with confirmed permissions. Official images eliminate licensing risk.",
+        "suitability": "PREFERRED if available — official images with confirmed permissions are always lower risk"
+      }
+    ]
+  },
+
+  "claimsForHumanReview": [
+    {
+      "claim": "Hero image provenance unknown",
+      "source": "public/images/regions/south-wales-hero.jpg — no image registry entry with source URL",
+      "risk": "high",
+      "action": "Must establish photographer credit, licence type, and acquisition record before this page can be published."
+    },
+    {
+      "claim": "No OG/social image exists — meta.socialImage field missing from TS file and no south-wales-og.jpg on disk",
+      "source": "data/regions/south-wales.ts — meta object has no socialImage key",
+      "risk": "high",
+      "action": "MUST FIX BEFORE DEPLOY: add meta.socialImage field to TS data file and source a 1200×630 OG image. Record provenance in image registry."
+    },
+    {
+      "claim": "'30 minutes from Cardiff' for Merthyr Tydfil/Brecon Beacons access",
+      "source": "data/regions/south-wales.ts — keyFacts[3].value: '30 minutes'",
+      "risk": "high",
+      "action": "LIKELY INACCURATE — TfW rail Cardiff Central to Merthyr is ~55-65 min. Verify and correct."
+    },
+    {
+      "claim": "Cwmcarn Forest Trails listed as an active trail centre (topExperiences[3])",
+      "source": "data/regions/south-wales.ts — topExperiences[3]",
+      "risk": "high",
+      "action": "Verify Cwmcarn Forest MTB trail operational status with NRW — the Forest Drive has had extended closures. Check https://www.naturalresources.wales/ before publishing."
+    },
+    {
+      "claim": "Bike Park Wales day pass: £30-40",
+      "source": "data/regions/south-wales.ts — topExperiences[0].priceRange",
+      "risk": "medium",
+      "action": "Verify current pricing at https://www.bikeparkwales.com/. Price likely changed since Feb 2025."
+    },
+    {
+      "claim": "Bike hire on canal: '£30'",
+      "source": "data/regions/south-wales.ts — topExperiences[2].priceRange",
+      "risk": "medium",
+      "action": "No operator named. Identify a specific canal-side hire operator and verify current pricing before publishing."
+    },
+    {
+      "claim": "T4 bus from Cardiff stops at Storey Arms (Pen y Fan trailhead)",
+      "source": "data/regions/south-wales.ts — insiderTips[1] and faqs[1]",
+      "risk": "medium",
+      "action": "Verify T4 still operates in 2026 and stops at Storey Arms via https://www.traveline.cymru/."
+    },
+    {
+      "claim": "Pontsticill Reservoir — recommended for wild swimming",
+      "source": "data/regions/south-wales.ts — hiddenGems[1]",
+      "risk": "medium",
+      "action": "Verify Dŵr Cymru / Welsh Water policy on swimming at Pontsticill. If not officially permitted, reword to 'reservoir walks' or remove wild swimming reference."
+    },
+    {
+      "claim": "Valley Lines trains: 'every 15 minutes' (keyFact) vs 'every 15-30 minutes' (FAQ) — inconsistency",
+      "source": "data/regions/south-wales.ts — keyFacts[2] vs faqs[1]",
+      "risk": "medium",
+      "action": "Verify current TfW valley line timetables at https://www.tfwrail.wales/ and reconcile the two claims to a single accurate frequency."
+    },
+    {
+      "claim": "Two content files with different editorial voices — canonical rendering path unclear",
+      "source": "data/regions/south-wales.ts vs content/regions/south-wales.md",
+      "risk": "low-medium",
+      "action": "EDITORIAL DECISION: confirm which file drives the /south-wales page render."
+    }
+  ],
+
+  "officialSourcesForHumanVerification": [
+    {
+      "source": "Bike Park Wales",
+      "url": "https://www.bikeparkwales.com/",
+      "useFor": "Current day-pass pricing, trail count, uplift availability, operating hours — to replace unsourced price claims"
+    },
+    {
+      "source": "Transport for Wales — Valley Lines",
+      "url": "https://www.tfwrail.wales/",
+      "useFor": "Current Cardiff to Merthyr Tydfil journey time and train frequency — to correct the '30 minutes' claim and reconcile frequency inconsistency"
+    },
+    {
+      "source": "Natural Resources Wales — Cwmcarn Forest",
+      "url": "https://www.naturalresources.wales/days-out/the-countryside/south-east-wales/cwmcarn-forest/",
+      "useFor": "Current operational status of Cwmcarn Forest MTB trails and Forest Drive — CRITICAL before publishing trail centre entry"
+    },
+    {
+      "source": "Natural Resources Wales — Porth yr Ogof (caving)",
+      "url": "https://www.naturalresources.wales/days-out/the-countryside/south-wales/porth-yr-ogof/",
+      "useFor": "Content gap: caving — Porth yr Ogof cave access and safety information"
+    },
+    {
+      "source": "National Showcaves Centre for Wales (Dan yr Ogof)",
+      "url": "https://www.showcaves.co.uk/",
+      "useFor": "Content gap: caving visitor attraction — opening times, pricing, family suitability"
+    },
+    {
+      "source": "Big Pit National Coal Museum",
+      "url": "https://museum.wales/bigpit/",
+      "useFor": "Confirm free entry, current booking requirements, and opening hours. Also for OG/hero image contact (Amgueddfa Cymru press)"
+    },
+    {
+      "source": "Rhondda Heritage Park",
+      "url": "https://www.rhonddaheritagepark.com/",
+      "useFor": "Current admission prices (not necessarily free unlike Big Pit) and opening hours"
+    },
+    {
+      "source": "Canal and River Trust — Monmouthshire and Brecon Canal",
+      "url": "https://canalrivertrust.org.uk/enjoy-the-waterways/canal-and-river-network/monmouthshire-and-brecon-canal",
+      "useFor": "Verify towpath length and navigable extent; identify current cycle hire operators on the route"
+    },
+    {
+      "source": "Traveline Cymru",
+      "url": "https://www.traveline.cymru/",
+      "useFor": "Verify T4 bus route current operation, stops, and frequency"
+    },
+    {
+      "source": "South Wales Metro — Transport for Wales",
+      "url": "https://tfw.wales/projects/south-wales-metro",
+      "useFor": "Current metro programme status — the keyFact about South Wales Metro transport should reflect current service levels"
+    },
+    {
+      "source": "Dŵr Cymru Welsh Water — Pontsticill Reservoir",
+      "url": "https://www.dwrcymru.com/en/our-services/water/reservoirs-and-catchments",
+      "useFor": "Verify policy on public access and wild swimming at Pontsticill Reservoir before recommending it as a swim spot"
+    },
+    {
+      "source": "Visit Wales — South Wales media library",
+      "url": "https://www.visitwales.com/trade/media-centre",
+      "useFor": "Official licensed photography for hero and OG images — eliminates licensing risk"
+    },
+    {
+      "source": "Porthcawl Surf School",
+      "url": "https://www.porthcawlsurf.co.uk/",
+      "useFor": "Content gap: surfing entry — verify current operator and lesson pricing for south Wales surf section"
+    },
+    {
+      "source": "South Wales Surf School",
+      "url": "https://southwalessurfschool.co.uk/",
+      "useFor": "Content gap: additional surfing operator for south Wales page — verify current pricing and session types"
+    },
+    {
+      "source": "Dare Valley Country Park",
+      "url": "https://www.rctcbc.gov.uk/EN/Resident/ParksandGreenSpaces/DareValleyCountryPark.aspx",
+      "useFor": "Confirm free access and current visitor facilities"
+    }
+  ],
+
+  "sourcesUsed": [
+    {
+      "url": "data/regions/south-wales.ts",
+      "description": "Primary existing data file — structured region data, last updated 2025-02-06. No source citations anywhere in the file. All specific claims must be treated as unverified."
+    },
+    {
+      "url": "content/regions/south-wales.md",
+      "description": "Existing markdown content — opinionated 'Get Down & Dirty' regional guide (~500 words). Explicitly steers beach-seekers to Gower/Pembrokeshire. Mentions caving prominently which is absent from the TS file."
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Content inventory — confirms location-landing-south-wales has evidence_status missing, image_status needs_review, copy/seo/schema all needs_review, status research_needed."
+    },
+    {
+      "url": "content/ops/image-registry.json",
+      "description": "Image registry — location-landing-south-wales has image_status needs_review, image_source_url empty, notes 'Needs image provenance review.'"
+    },
+    {
+      "url": "public/images/regions/south-wales-hero.jpg",
+      "description": "Hero image file confirmed to exist on disk (308KB, Feb 14 2025). No provenance record. south-wales-og.jpg confirmed NOT to exist."
+    },
+    {
+      "url": "https://museum.wales/bigpit/",
+      "description": "National Museum Wales — Big Pit free admission confirmation and booking requirement."
+    },
+    {
+      "url": "https://www.bikeparkwales.com/",
+      "description": "Bike Park Wales — real operator confirmed. Pricing and trail count need verification against live site."
+    },
+    {
+      "url": "https://canalrivertrust.org.uk/enjoy-the-waterways/canal-and-river-network/monmouthshire-and-brecon-canal",
+      "description": "Canal and River Trust — Monmouthshire and Brecon Canal confirmed, towpath length approximately 35 miles."
+    },
+    {
+      "url": "https://cadw.gov.wales/learn/historic-wales/industrial-wales/coal-mining",
+      "description": "Cadw — south Wales coalfield geographic facts."
+    },
+    {
+      "url": "https://www.naturalresources.wales/days-out/the-countryside/south-east-wales/clydach-gorge/",
+      "description": "NRW — Clydach Gorge confirmed as accessible, SSSI and industrial archaeology site near Brynmawr."
+    },
+    {
+      "url": "https://www.naturalresources.wales/days-out/the-countryside/south-wales/waterfall-woods-national-nature-reserve/",
+      "description": "NRW — Waterfall Woods/Waterfall Country National Nature Reserve. Sgwd yr Eira and Four Falls trail confirmed."
+    },
+    {
+      "url": "https://www.bunchofgrapes.org.uk/",
+      "description": "Bunch of Grapes, Pontypridd — real pub confirmed."
+    },
+    {
+      "url": "https://tfw.wales/projects/south-wales-metro",
+      "description": "Transport for Wales — South Wales Metro programme confirmed as real and ongoing."
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusRationale": "The existing data/regions/south-wales.ts provides a usable structural skeleton with correct TypeScript shape and clear editorial identity (industrial valleys/Bike Park Wales focus). However it is too sparse to publish and has three blockers requiring human action before any deployment: (1) no OG/social image and no meta.socialImage field; (2) hero image has no provenance; (3) the '30 minutes from Cardiff' travel claim is likely inaccurate. Additionally Cwmcarn Forest's operational status must be verified before it can be listed as an active trail centre. Once these blockers are resolved, the human QA pass should also expand topExperiences (5 → 8-12), add caving content, and verify the Bike Park Wales pricing and T4 bus. The page has strong editorial bones but needs content depth and fact-checking before it is publishable.",
+
+  "outputPath": "data/research/content-ops/location-landing-south-wales.json",
+
+  "blockers": [
+    {
+      "rank": 1,
+      "blocker": "No OG/social image exists — meta.socialImage field missing from TS data and no south-wales-og.jpg on disk",
+      "detail": "The meta object in data/regions/south-wales.ts has no socialImage key at all (unlike pembrokeshire.ts and most other region files). No file public/images/regions/south-wales-og.jpg exists on disk. Publishing /south-wales in this state will produce absent (blank) Open Graph social previews whenever the page is shared on social media, in messaging apps, or in Slack. This is both a brand and a reach problem.",
+      "resolution": "HUMAN ACTION: (1) add meta.socialImage: '/images/regions/south-wales-og.jpg' to data/regions/south-wales.ts; (2) source or create a 1200×630px OG image — candidates include Openverse (https://openverse.org/search/?q=mountain+biking+south+Wales&license_type=commercial&use_commercial=true) or Visit Wales media library (https://www.visitwales.com/trade/media-centre); (3) record full provenance (photographer, licence, source URL, attribution) in the image registry before publishing."
+    },
+    {
+      "rank": 2,
+      "blocker": "'30 minutes from Cardiff' keyFact for Merthyr Tydfil/Brecon Beacons access is likely inaccurate, and Cwmcarn Forest operational status unverified",
+      "detail": "keyFacts[3] states Cardiff to Merthyr Tydfil/Brecon Beacons is '30 minutes'. Transport for Wales valley line trains take approximately 55-65 minutes. This is a material visitor planning error. Additionally topExperiences[3] lists Cwmcarn Forest Trails as an active trail centre — Cwmcarn Forest Drive had extended closures due to Phytophthora larch disease and the MTB trails have had intermittent access issues. Publishing incorrect journey time and a potentially-closed trail centre will cause visitor frustration and erode trust.",
+      "resolution": "For travel time: verify current TfW journey times at https://www.tfwrail.wales/ and correct keyFacts[3].value. For Cwmcarn: verify current MTB trail and Forest Drive operational status with NRW at https://www.naturalresources.wales/days-out/the-countryside/south-east-wales/cwmcarn-forest/ — if trails are closed or restricted, update or remove the topExperiences entry."
+    },
+    {
+      "rank": 3,
+      "blocker": "Hero image has no provenance and the page content is too sparse to publish — only 5 topExperiences and 3 FAQs",
+      "detail": "public/images/regions/south-wales-hero.jpg (308KB) exists on disk but has no photographer credit, licence type, or acquisition record in the image registry — publishing it is a copyright risk. Separately, the page has only 5 topExperiences (vs 12 for Pembrokeshire, 10 for most regions) and only 3 FAQs. Caving — which the markdown guide identifies as the second-best activity — is entirely absent from the TS data. The page currently lacks the depth needed to provide genuine value to visitors or rank well in search.",
+      "resolution": "For the hero image: audit acquisition records; if provenance cannot be established, source a replacement via Openverse or Visit Wales media library with a verified licence. For content depth: a human content writer should expand topExperiences to 8-12 entries (adding caving, surfing at Porthcawl, Pen y Fan summit walk), expand FAQs to 6-10 questions, and verify Bike Park Wales pricing and T4 bus operation. The fastest path to publishable quality is resolving the image blockers and running a single content expansion pass."
+    }
+  ]
+}

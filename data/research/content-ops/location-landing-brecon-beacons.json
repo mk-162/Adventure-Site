@@ -1,0 +1,589 @@
+{
+  "_meta": {
+    "task": "content-ops-028-location-landing-brecon-beacons",
+    "contentItem": "location-landing-brecon-beacons",
+    "contentType": "location_landing",
+    "slug": "brecon-beacons",
+    "route": "/brecon-beacons",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_critical_flags"
+  },
+
+  "existingFiles": {
+    "typescriptData": "data/regions/brecon-beacons.ts",
+    "markdownContent": "content/regions/brecon-beacons.md",
+    "dataLastUpdated": "2025-02-06",
+    "contentInventoryStatus": "research_needed",
+    "contentInventoryFlags": [
+      "evidence_status: missing",
+      "image_status: needs_review (no image source URL recorded)",
+      "copy_status: needs_review",
+      "seo_status: needs_review",
+      "schema_status: needs_review"
+    ]
+  },
+
+  "overallAssessment": {
+    "verdict": "data/regions/brecon-beacons.ts is a richly structured location data file with hero copy, key facts, seasonal guides, insider tips, top experiences, FAQs, hidden gems, and food listings. However it cites 'Perplexity research' as one of its primary sources — AI-generated content — which violates the site's no-AI-content policy and means many specific claims (pricing, tourism figures, bus timetables, feeding station times) cannot be considered evidenced until verified against official sources. The markdown file (content/regions/brecon-beacons.md) is a separate, more opinionated draft in a different voice and does not structurally match the TS data. One specific factual error has been identified: the park is described as 'Wales' third-largest national park' when it is in fact the second-largest of Wales' three national parks. The hero image file exists on disk but has no provenance or licence record.",
+    "structuralQuality": "HIGH — the TS data file is well-organised with appropriate sections. Suitable as the canonical source once claims are verified.",
+    "factualConfidence": "LOW-MEDIUM — fixed geographic/official facts are likely accurate; pricing, tourism figures, transport details, and feeding station times are unverified and may be stale (16+ months old)"
+  },
+
+  "criticalIssues": [
+    {
+      "severity": "CRITICAL",
+      "issue": "Primary source is Perplexity AI research — violates no-AI-content policy",
+      "location": "data/regions/brecon-beacons.ts — header comment: 'Sources: Perplexity research, National Park Authority, Dark Sky Wales'",
+      "diagnosis": "Perplexity AI is a generative AI search engine. Any claim whose sole provenance is Perplexity research must be treated as unverified. The affected fields include all pricing figures, tourism revenue, bus route details, feeding station times, and restaurant descriptions.",
+      "affectedFields": [
+        "keyFacts.tourismValue: '£126 million/year'",
+        "keyFacts.population: '33,000'",
+        "topExperiences.priceRange entries (Dan yr Ogof £20-25, stargazing £25-50, canal hire £30-50, gorge walking £45-65, Fan Dance event £50-80, Bike Park Wales £30-40)",
+        "insiderTips.T4 bus references",
+        "insiderTips.Red kite feeding: '£4 donation, 3pm winter / 4pm summer'",
+        "localEatsAndDrinks.Felin Fach Griffin: 'Michelin-listed with rooms'",
+        "seasonGuide.summer.highlights: 'Green Man Festival (Crickhowell, August)'"
+      ],
+      "action": "Re-verify each affected field against the operator's live website or official tourism/NPA sources. Add source URLs before setting status to qa_needed."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "Factual error: park described as 'Wales' third-largest national park'",
+      "location": "data/regions/brecon-beacons.ts — keyFacts[0].detail",
+      "currentValue": "Wales' third-largest national park",
+      "diagnosis": "Wales has exactly three national parks: Snowdonia/Eryri (~2,130 km²), Brecon Beacons/Bannau Brycheiniog (1,344 km²), and Pembrokeshire Coast (~620 km²). Brecon Beacons is therefore the SECOND largest national park in Wales, not the third. The claim is incorrect as written.",
+      "recommendedCorrection": "Wales' second-largest national park",
+      "sourceToVerify": "https://www.beacons-npa.gov.uk/ and https://naturalresources.wales/guidance-and-advice/environmental-topics/land-management/managing-land-and-sea/protected-areas-of-land-and-sea/national-parks/?lang=en",
+      "action": "HUMAN REVIEW: confirm the corrected phrasing with the NPA source before publishing. If the intent was 'second-largest in England and Wales' or a UK-wide ranking, that is a different (and possibly correct) claim that also needs sourcing."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "Hero image has no provenance or licence record",
+      "location": "public/images/regions/brecon-beacons-hero.jpg (exists on disk, 297KB, Feb 14 2025). Referenced in data as meta.heroImage: '/images/regions/brecon-beacons-hero.jpg'",
+      "diagnosis": "The image registry entry for this content item has image_status 'needs_review' and no image_source_url. There is no attribution, photographer credit, licence type, or acquisition record for this image. Publishing a page with an unlicensed image is a legal risk.",
+      "action": "HUMAN REVIEW: establish the provenance of brecon-beacons-hero.jpg before publishing. Check original acquisition records (purchase receipt, Creative Commons source URL, or operator permission email). If provenance cannot be established, replace with a verified CC-licensed image."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "Dark Sky Reserve worldwide count may be outdated",
+      "location": "data/regions/brecon-beacons.ts — keyFacts: 'One of only 22 worldwide'",
+      "diagnosis": "The International Dark-Sky Association's reserve count changes as new sites are certified. The figure of 22 was current at some point but the IDA publishes a live list. This is a specific numerical claim that dates quickly.",
+      "sourceToVerify": "https://darksky.org/what-we-do/international-dark-sky-reserve/ (live IDA reserve list)",
+      "action": "Verify current count against the IDA reserve list before publishing. Update the number or rephrase to 'one of a small number worldwide' if a durable figure is preferred."
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "Markdown file and TS data are structurally misaligned — canonical source unclear",
+      "location": "content/regions/brecon-beacons.md vs data/regions/brecon-beacons.ts",
+      "diagnosis": "The markdown file is a shorter, more opinionated regional overview in a casual first-person voice. The TS data file is the machine-readable source with full structured data. The markdown appears to be an earlier draft or a different content layer. It does not reference the TS data structure and may be rendered independently. Which one is canonical is unclear from the content inventory.",
+      "action": "HUMAN EDITORIAL DECISION: confirm which file is rendered on the /brecon-beacons page, and whether both are used (e.g. markdown for intro text, TS data for structured blocks). Reconcile any differences before sign-off."
+    }
+  ],
+
+  "factsAudit": {
+    "verified_or_stable": [
+      {
+        "claim": "Brecon Beacons / Bannau Brycheiniog — official Welsh name",
+        "status": "VERIFIED",
+        "note": "The National Park Authority officially rebranded to Bannau Brycheiniog in 2023. The TS file correctly reflects this.",
+        "source": "https://www.beacons-npa.gov.uk/about-us/about-the-national-park/bannau-brycheiniog-name-change/"
+      },
+      {
+        "claim": "Pen y Fan at 886m is the highest peak in southern Britain",
+        "status": "VERIFIED",
+        "note": "Well-established geographic fact. Pen y Fan is 886m above sea level.",
+        "source": "https://getoutside.ordnancesurvey.co.uk/guides/guide-to-pen-y-fan/"
+      },
+      {
+        "claim": "National park area: 1,344 km²",
+        "status": "STABLE",
+        "note": "The standard quoted figure. Verify against current NPA statistics as boundaries can be adjusted.",
+        "source": "https://www.beacons-npa.gov.uk/about-us/about-the-national-park/"
+      },
+      {
+        "claim": "Established 1957",
+        "status": "VERIFIED",
+        "note": "The Brecon Beacons National Park was designated in 1957.",
+        "source": "https://www.beacons-npa.gov.uk/about-us/about-the-national-park/"
+      },
+      {
+        "claim": "Fforest Fawr UNESCO Global Geopark since 2005",
+        "status": "VERIFIED",
+        "note": "Fforest Fawr was designated a UNESCO Global Geopark in 2005. One of the first in Wales.",
+        "source": "https://www.fforestfawr.org.uk/about/"
+      },
+      {
+        "claim": "International Dark Sky Reserve status",
+        "status": "VERIFIED",
+        "note": "The Brecon Beacons is an IDA International Dark Sky Reserve — this is well-documented. Count of worldwide reserves needs verification (see critical issues).",
+        "source": "https://www.beacons-npa.gov.uk/looking-after/dark-sky-reserve/"
+      },
+      {
+        "claim": "Four mountain ranges: Central Beacons, Black Mountains, Fforest Fawr, Black Mountain",
+        "status": "VERIFIED",
+        "note": "The four distinct mountain ranges within the national park are well-established.",
+        "source": "https://www.beacons-npa.gov.uk/visiting/landscape/"
+      },
+      {
+        "claim": "Sgwd yr Eira — walk-behind waterfall, part of Four Falls Trail",
+        "status": "VERIFIED",
+        "note": "Sgwd yr Eira (meaning 'Fall of Snow') in Waterfall Country is a genuine walk-behind waterfall. Well-documented.",
+        "source": "https://www.visitwales.com/attraction/nature-and-wildlife/sgwd-yr-eira-1493558"
+      },
+      {
+        "claim": "Henrhyd Falls — tallest waterfall in South Wales (27m), used in Batman: The Dark Knight Rises",
+        "status": "VERIFIED",
+        "note": "Both claims are well-documented. Henrhyd Falls (owned by National Trust) was used as the Batcave entrance in TDKR (2012).",
+        "source": "https://www.nationaltrust.org.uk/visit/wales/henrhyd-falls"
+      },
+      {
+        "claim": "Llyn y Fan Fach — Lady of the Lake legend",
+        "status": "VERIFIED",
+        "note": "The legend of the Lady of Llyn y Fan Fach (Physicians of Myddfai) is a well-documented Welsh legend associated with this glacial lake.",
+        "source": "https://www.visitwales.com/inspire/culture-heritage/welsh-mythology-and-folklore"
+      },
+      {
+        "claim": "Llanthony Priory — Augustinian priory, pub in the crypt",
+        "status": "VERIFIED",
+        "note": "Llanthony Priory is a 12th-century Augustinian priory. The Abbey Hotel operates from the priory building and serves food/drink. The 'pub in the crypt' description is colloquial but well-known.",
+        "source": "https://cadw.gov.wales/visit/places-to-visit/llanthony-priory"
+      },
+      {
+        "claim": "Dan yr Ogof — National Showcaves",
+        "status": "STABLE",
+        "note": "Dan yr Ogof National Showcaves Centre is a real attraction at Abercrave, Swansea Valley. Cathedral Cave and Bone Cave exist. Pricing needs verification.",
+        "source": "https://www.showcaves.co.uk/"
+      },
+      {
+        "claim": "Bike Park Wales at Merthyr — 40+ trails with uplift",
+        "status": "STABLE",
+        "note": "Bike Park Wales exists at Merthyr Tydfil. Trail count and uplift service need current verification. Day pass pricing needs verification.",
+        "source": "https://www.bikeparkwales.com/"
+      },
+      {
+        "claim": "Monmouthshire & Brecon Canal — navigable section",
+        "status": "STABLE",
+        "note": "The Mon & Brec Canal is a real navigable canal through the park. The 35-mile figure and Brecon to Goytre Wharf specifics should be verified with Canal & River Trust.",
+        "source": "https://canalrivertrust.org.uk/enjoy-the-waterways/canal-and-river-network/monmouthshire-and-brecon-canal"
+      },
+      {
+        "claim": "Brecon is 'tenth UK national park'",
+        "status": "VERIFIED",
+        "note": "By designation order: Peak District (1951), Lake District (1951), Snowdonia (1951), Dartmoor (1951), Pembrokeshire Coast (1952), North York Moors (1952), Yorkshire Dales (1954), Exmoor (1954), Northumberland (1956), Brecon Beacons (1957) — tenth. Correct.",
+        "source": "https://www.nationalparks.uk/parks/"
+      }
+    ],
+
+    "needs_verification": [
+      {
+        "claim": "Tourism value: £126 million/year, £4,000 per resident annually",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "medium",
+        "action": "Verify against NPA socioeconomic/management plan. Source: https://www.beacons-npa.gov.uk/about-us/national-park-management-plan/",
+        "note": "Tourism impact figures are typically published in NPA management plans or Welsh Government reports. The £126m figure may be from a specific year's assessment."
+      },
+      {
+        "claim": "Population: 33,000. Main towns: Brecon, Crickhowell, Abergavenny",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "low-medium",
+        "action": "Verify against ONS census data or NPA demographics page. Note: Abergavenny is partly outside the park boundary. Source: https://www.ons.gov.uk/",
+        "note": "Population figure likely from 2021 census but not sourced. Acceptable precision for a landing page if NPA source confirmed."
+      },
+      {
+        "claim": "Dan yr Ogof adult entry: £20-25",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "Check current pricing at https://www.showcaves.co.uk/tickets/ before publishing. Attraction prices change annually.",
+        "note": "DO NOT publish a price figure without a dated official source URL."
+      },
+      {
+        "claim": "Guided stargazing: £25-50",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "No specific stargazing operator is named. Identify the operator(s) offering guided stargazing in the park, then verify pricing against their current booking page.",
+        "note": "Without an operator name and source URL, this price range is unpublishable. Potential operators to check: Brecon Beacons Dark Sky Reserve stargazing operators via https://www.beacons-npa.gov.uk/"
+      },
+      {
+        "claim": "Monmouthshire & Brecon Canal hire: £30-50",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "Identify a specific hire operator and verify pricing. Canal hire operators in the area include Brecon Boat Trips or Dragonfly Cruises. No operator named in current data.",
+        "note": "Unpublishable without named operator and source URL."
+      },
+      {
+        "claim": "Gorge walking: £45-65",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "Identify a specific guided gorge walking operator for the Beacons. Black Mountain Activities (https://blackmountainadventure.co.uk/) is one option. Verify against their current pricing.",
+        "note": "Unpublishable without named operator and source URL."
+      },
+      {
+        "claim": "Fan Dance event entry: £50-80",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "Verify current entry fee at https://www.hqfandance.co.uk/ — the HQ Fan Dance is the main annual event. Prices change year to year.",
+        "note": "DO NOT publish this figure without a current source."
+      },
+      {
+        "claim": "Bike Park Wales day pass: £30-40",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "Verify current day pass pricing at https://www.bikeparkwales.com/tickets/",
+        "note": "BPW prices change seasonally. Uplift-included vs trail-only pricing may differ."
+      },
+      {
+        "claim": "Storey Arms car park: £5 (parking)",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "medium",
+        "action": "Verify current Storey Arms car park charges. Pay & Display managed by NPA. Source: https://www.beacons-npa.gov.uk/visiting/getting-around/parking/",
+        "note": "Parking charges have increased at many NPA sites. Verify before publishing."
+      },
+      {
+        "claim": "T4 bus from Cardiff to Brecon via Storey Arms — stops at Storey Arms",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "medium",
+        "action": "Verify current T4/T47 service status and stops against Transport for Wales or operator timetable. Source: https://www.tfwales.gov.uk/ and https://www.stagecoachbus.com/",
+        "note": "Bus services and route numbers have changed. The T4 designation may no longer exist. Verify exact service number and Storey Arms stop status before publishing."
+      },
+      {
+        "claim": "X43 bus Abergavenny to Brecon; train to Abergavenny '2.5 hours from London'",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "medium",
+        "action": "Verify train journey time from London Paddington to Abergavenny (Great Western / Avanti). Current typical time is approximately 2h15-2h30 direct. X43 bus: verify with https://www.stagecoachbus.com/routes/south-wales/ or Transport for Wales.",
+        "note": "Train times change with timetable revisions. Verify current fastest service."
+      },
+      {
+        "claim": "Llanddeusant Red Kite Feeding Station: daily at 3pm winter, 4pm summer; £4 donation",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "high",
+        "action": "Verify current feeding times and donation amount directly with the feeding station. Source: search for 'Llanddeusant red kite feeding station Wales' — contact details may be via the Welsh Kite Trust: https://www.welshkitetrust.org/",
+        "note": "Times and donation requests may have changed. Publishing incorrect times would disappoint visitors."
+      },
+      {
+        "claim": "Felin Fach Griffin: 'Michelin-listed with rooms'",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "medium",
+        "action": "Verify current Michelin listing at https://guide.michelin.com/gb/en/ — search for 'Felin Fach Griffin'. As of 2025 knowledge, it holds a Michelin Bib Gourmand. Verify current status (Bib Gourmand, Michelin star, or just Michelin plate) before publishing.",
+        "source": "https://www.eatdrinksleep.ltd.uk/felin-fach-griffin/"
+      },
+      {
+        "claim": "The Walnut Tree: 'Legendary chef-owned restaurant'",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "low",
+        "action": "The Walnut Tree at Llanddewi Skirrid (near Abergavenny) is run by chef Shaun Hill and has held a Michelin star. Verify current trading status and star at https://guide.michelin.com/gb/en/. Website: https://thewalnut-tree.com/",
+        "note": "Low risk — the restaurant's identity and reputation are well-established. Verify it is still operating under Shaun Hill."
+      },
+      {
+        "claim": "Green Man Festival location: '(Crickhowell, August)'",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "low-medium",
+        "action": "Green Man Festival is held at Glanusk Park, near Crickhowell, NP8 1LP. The 'Crickhowell' shorthand is approximately correct. Verify 2026 festival dates — it is typically held in August. Source: https://www.greenman.net/",
+        "note": "Month is correct (typically third week of August). Venue is Glanusk Estate, near Crickhowell. Dates change year-to-year; do not publish specific dates without checking the current festival schedule."
+      },
+      {
+        "claim": "Abergavenny Food Festival: 'late August'",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "medium",
+        "action": "Abergavenny Food Festival typically runs in September, not August. Verify current date at https://abergavennyfoodfestival.com/",
+        "note": "POTENTIAL DATE ERROR. The festival has historically been held in mid-September. 'Late August' may be incorrect — verify before publishing."
+      },
+      {
+        "claim": "'Under three hours from London, 30 minutes from Cardiff'",
+        "source_in_file": "Perplexity research (AI-generated)",
+        "risk": "medium",
+        "action": "The '30 minutes from Cardiff' claim is potentially misleading — Brecon town is approximately 45-55 minutes by road from Cardiff city centre under normal conditions, and the park boundary is closer to 30 minutes. The 'under three hours from London' figure is plausible for driving but should specify mode of transport. HUMAN EDITORIAL: consider rephrasing to 'under an hour from Cardiff, around two and a half hours from London by train or road' with appropriate caveats.",
+        "note": "Misleading travel time claims generate visitor dissatisfaction. Recommend precise, mode-specific phrasing with a disclaimer about traffic conditions."
+      }
+    ]
+  },
+
+  "imageResearch": {
+    "heroImage": {
+      "filePath": "public/images/regions/brecon-beacons-hero.jpg",
+      "fileExists": true,
+      "fileSizeKB": 290,
+      "fileDate": "2025-02-14",
+      "referencedIn": "data/regions/brecon-beacons.ts — meta.heroImage: '/images/regions/brecon-beacons-hero.jpg'",
+      "status": "blocked_no_provenance",
+      "note": "Image file exists on disk but has NO provenance record, photographer credit, licence type, or acquisition record in the image registry (image_status: needs_review, image_source_url: empty). CANNOT confirm this image is legally cleared for publication. DO NOT publish without establishing provenance.",
+      "action": "HUMAN REVIEW REQUIRED: determine how this image was acquired (purchased stock, CC licensed download, operator supplied, in-house photography). If provenance cannot be established, replace with a verified image."
+    },
+    "ogImage": {
+      "filePath": "public/images/regions/brecon-beacons-og.jpg",
+      "referencedIn": "data/regions/brecon-beacons.ts — meta.socialImage: '/images/regions/brecon-beacons-og.jpg'",
+      "status": "not_verified",
+      "action": "Verify file exists and check provenance separately. Same concern as hero image."
+    },
+    "candidates_if_replacement_needed": [
+      {
+        "title": "Pen y Fan from Corn Du, Brecon Beacons",
+        "searchQuery": "Pen y Fan Brecon Beacons",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=Pen+y+Fan+Brecon+Beacons&license_type=commercial&use_commercial=true",
+        "note": "HUMAN: search Openverse for CC BY or CC BY-SA licensed images of Pen y Fan. Only use images with confirmed commercial-use-friendly licences (CC BY, CC BY-SA). Always record: photographer name, licence version, source URL, attribution string.",
+        "suitability": "Pen y Fan summit view is the most recognisable hero image for this region",
+        "editorial": "Must show landscape or recreation, NOT a specific unlicensed operator's activities"
+      },
+      {
+        "title": "Sgwd yr Eira Waterfall, Brecon Beacons",
+        "searchQuery": "Sgwd yr Eira waterfall Wales",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=Sgwd+yr+Eira+waterfall&license_type=commercial&use_commercial=true",
+        "note": "Alternative hero candidate — atmospheric waterfall image suits the region's identity.",
+        "suitability": "HIGH — dramatic, distinctive, and unique to the Beacons"
+      },
+      {
+        "title": "NRW / Bannau Brycheiniog NPA media pack",
+        "note": "The Bannau Brycheiniog National Park Authority and Natural Resources Wales may offer a press/media image library. Contact: comms@beacons-npa.gov.uk or https://www.beacons-npa.gov.uk/",
+        "suitability": "PREFERRED if available — official images with confirmed permissions eliminate licensing risk"
+      }
+    ]
+  },
+
+  "seoAndSchemaAudit": {
+    "seoTitle": {
+      "current": "Brecon Beacons (Bannau Brycheiniog) | Hiking, Waterfalls & Dark Skies | Adventure Wales",
+      "length": 83,
+      "status": "REVIEW_NEEDED",
+      "note": "83 characters is over the 60-65 char recommended limit for Google SERPs — the title will be truncated on most devices. Recommend shortening to under 65 chars. Example: 'Brecon Beacons | Hiking, Waterfalls & Dark Skies | Adventure Wales' (67 chars) or 'Brecon Beacons Adventure Guide | Adventure Wales' (48 chars)."
+    },
+    "seoDescription": {
+      "current": "Explore the Brecon Beacons: summit Pen y Fan, walk behind waterfalls, stargaze in the Dark Sky Reserve, and discover the UNESCO Geopark. Complete adventure guide.",
+      "length": 163,
+      "status": "ACCEPTABLE",
+      "note": "163 characters is within the 150-160 char sweet spot. Content is relevant and keyword-rich. Acceptable as-is."
+    },
+    "schemaMarkup": {
+      "status": "NOT_VERIFIED",
+      "note": "No schema.org markup has been reviewed as part of this research task. The TS data file contains structured data that could be used to generate Place, TouristAttraction, or FAQPage schema. This needs a separate technical review pass.",
+      "action": "Human tech review: confirm whether the /brecon-beacons route renders structured data (JSON-LD). At minimum, FAQPage schema for the faqs array and TouristDestination for the region would benefit SEO."
+    }
+  },
+
+  "contentGaps": [
+    {
+      "gap": "No operator listings linked from the location landing page data",
+      "detail": "The topExperiences array contains several items with no operatorSlug (e.g., 'Dark Sky Stargazing Experience', 'Gorge Walking in Fforest Fawr', 'Monmouthshire & Brecon Canal Paddling'). Linking to specific Adventure Wales directory operators would strengthen the page and support commercial conversion.",
+      "action": "When operator listings for Brecon Beacons-based operators are published to the directory, add operatorSlug references to relevant topExperiences entries."
+    },
+    {
+      "gap": "No accessibility or family-specific information",
+      "detail": "The existing data does not include accessibility notes (wheelchair-accessible trails, facilities for families with young children). The canal towpath and lower-level attractions are accessible but this is not called out.",
+      "action": "Consider adding an accessibility section. Sources: Brecon Beacons NPA Access pages, Easygoing Cymru."
+    },
+    {
+      "gap": "Wild camping rules vague",
+      "detail": "The FAQ answer on wild camping states 'you need landowner permission, but responsible wild camping above the enclosed farmland is often tolerated.' This is imprecise and could expose the site to liability if interpreted as permission. NRW/NPA guidance is more specific.",
+      "action": "Update the wild camping FAQ to reflect the NPA's current guidance. Source: https://www.beacons-npa.gov.uk/visiting/activities/wild-camping/",
+      "risk": "medium — vague guidance on a topic with safety/legal implications"
+    },
+    {
+      "gap": "Llyn y Fan Fach — no facilities note is incomplete",
+      "detail": "The insider tip states 'No facilities—pack everything.' This is correct but does not mention the nearest parking or access point clearly enough for navigation.",
+      "action": "Add: parking at Llanddeusant (approx. 2-mile walk to the lake) or Blaenau farm. Low priority."
+    }
+  ],
+
+  "officialSourcesForHumanVerification": [
+    {
+      "source": "Bannau Brycheiniog National Park Authority (official)",
+      "url": "https://www.beacons-npa.gov.uk/",
+      "useFor": "Area, establishment date, official name, Dark Sky Reserve, parking, wild camping guidance, management plan (tourism figures)"
+    },
+    {
+      "source": "Natural Resources Wales (NRW)",
+      "url": "https://naturalresources.wales/",
+      "useFor": "National park designation, protected areas statistics, Fforest Fawr Geopark"
+    },
+    {
+      "source": "Fforest Fawr Geopark",
+      "url": "https://www.fforestfawr.org.uk/about/",
+      "useFor": "UNESCO Geopark designation year and details"
+    },
+    {
+      "source": "International Dark-Sky Association (IDA) — International Dark Sky Reserve list",
+      "url": "https://darksky.org/what-we-do/international-dark-sky-reserve/",
+      "useFor": "Current worldwide reserve count to replace the '22 worldwide' claim"
+    },
+    {
+      "source": "Dan yr Ogof National Showcaves",
+      "url": "https://www.showcaves.co.uk/tickets/",
+      "useFor": "Current adult entry price to replace £20-25 figure"
+    },
+    {
+      "source": "Bike Park Wales — tickets",
+      "url": "https://www.bikeparkwales.com/tickets/",
+      "useFor": "Current day pass price to replace £30-40 figure"
+    },
+    {
+      "source": "HQ Fan Dance — entry fees",
+      "url": "https://www.hqfandance.co.uk/",
+      "useFor": "Current event entry fee to replace £50-80 figure"
+    },
+    {
+      "source": "Welsh Kite Trust — Llanddeusant feeding station",
+      "url": "https://www.welshkitetrust.org/",
+      "useFor": "Current feeding times and donation amount"
+    },
+    {
+      "source": "Abergavenny Food Festival",
+      "url": "https://abergavennyfoodfestival.com/",
+      "useFor": "Correct 2026 festival dates (likely September, not August as currently stated)"
+    },
+    {
+      "source": "Green Man Festival",
+      "url": "https://www.greenman.net/",
+      "useFor": "2026 festival dates and location confirmation"
+    },
+    {
+      "source": "Transport for Wales — bus routes",
+      "url": "https://www.tfwales.gov.uk/",
+      "useFor": "Current T4/T47 bus service details to Storey Arms and Brecon"
+    },
+    {
+      "source": "Michelin Guide UK — Felin Fach Griffin",
+      "url": "https://guide.michelin.com/gb/en/wales/en/restaurant/the-felin-fach-griffin",
+      "useFor": "Current Michelin status (Bib Gourmand, plate, or star)"
+    },
+    {
+      "source": "Canal & River Trust — Monmouthshire & Brecon Canal",
+      "url": "https://canalrivertrust.org.uk/enjoy-the-waterways/canal-and-river-network/monmouthshire-and-brecon-canal",
+      "useFor": "Navigable length figure (35 miles)"
+    },
+    {
+      "source": "Ordnance Survey — Pen y Fan",
+      "url": "https://getoutside.ordnancesurvey.co.uk/guides/guide-to-pen-y-fan/",
+      "useFor": "Route distances and ascent figures"
+    },
+    {
+      "source": "Bannau Brycheiniog NPA — Dark Sky Reserve viewing sites",
+      "url": "https://www.beacons-npa.gov.uk/visiting/activities/dark-sky-reserve/",
+      "useFor": "Confirm Craig-y-Nos as a designated Dark Sky Discovery Site"
+    }
+  ],
+
+  "claimsForHumanReview": [
+    {
+      "claim": "Wales' third-largest national park",
+      "source": "data/regions/brecon-beacons.ts — keyFacts[0].detail",
+      "risk": "high",
+      "action": "CORRECT THIS. There are only three national parks in Wales. Brecon Beacons (1,344 km²) is the second largest, not the third. Recommend changing to 'Wales' second-largest national park'. Verify NPA source before publishing."
+    },
+    {
+      "claim": "Hero image provenance unknown",
+      "source": "public/images/regions/brecon-beacons-hero.jpg — no image registry entry with source",
+      "risk": "high",
+      "action": "Must establish photographer credit, licence type, and acquisition record before this page can be published. Image exists on disk but legal clearance unconfirmed."
+    },
+    {
+      "claim": "All pricing figures in topExperiences (Dan yr Ogof, stargazing, canal, gorge walking, Fan Dance, Bike Park Wales, Storey Arms parking)",
+      "source": "Perplexity AI research (AI-generated, 2025-02)",
+      "risk": "high",
+      "action": "Every price must be re-verified against the current official source (URLs listed in officialSourcesForHumanVerification). Prices are 16+ months old and may have increased."
+    },
+    {
+      "claim": "Abergavenny Food Festival: 'late August'",
+      "source": "data/regions/brecon-beacons.ts — seasonGuide.summer.highlights",
+      "risk": "medium",
+      "action": "POTENTIAL DATE ERROR. The Abergavenny Food Festival is typically held in September, not late August. Verify current date at https://abergavennyfoodfestival.com/ and correct."
+    },
+    {
+      "claim": "Llanddeusant Red Kite Feeding times and £4 donation",
+      "source": "Perplexity AI research (AI-generated, 2025-02)",
+      "risk": "high",
+      "action": "Verify times (3pm winter / 4pm summer) and donation amount directly with Welsh Kite Trust or the Llanddeusant station. Publishing incorrect times will disappoint visitors."
+    },
+    {
+      "claim": "T4 bus stops at Storey Arms",
+      "source": "Perplexity AI research (AI-generated, 2025-02)",
+      "risk": "medium",
+      "action": "Bus service routes and numbers change. Verify current service designation and Storey Arms stop at Transport for Wales or Stagecoach South Wales."
+    },
+    {
+      "claim": "'under three hours from London, 30 minutes from Cardiff'",
+      "source": "Perplexity AI research (AI-generated, 2025-02)",
+      "risk": "medium",
+      "action": "The '30 minutes' claim is likely referring to the park boundary by road from Cardiff — Brecon town centre is approximately 45-55 minutes. Clarify and add mode-of-transport specificity to avoid visitor complaints."
+    },
+    {
+      "claim": "Dark Sky Reserve 'one of only 22 worldwide'",
+      "source": "data/regions/brecon-beacons.ts — keyFacts Dark Sky detail",
+      "risk": "low-medium",
+      "action": "Verify current IDA reserve count at https://darksky.org/what-we-do/international-dark-sky-reserve/ — count grows over time and figure is likely stale."
+    },
+    {
+      "claim": "Fan Dance route: '15 miles over Pen y Fan carrying weight'",
+      "source": "Perplexity AI research (AI-generated, 2025-02)",
+      "risk": "low",
+      "action": "The SAS Fan Dance route (Storey Arms to Torpantau and back) is commonly quoted at 24 km (approximately 15 miles). Verify the HQ Fan Dance official description matches. Source: https://www.hqfandance.co.uk/"
+    }
+  ],
+
+  "sourcesUsed": [
+    {
+      "url": "data/regions/brecon-beacons.ts",
+      "description": "Primary existing data file — richly structured region data, last updated 2025-02-06, sources include Perplexity AI research (policy violation), National Park Authority, Dark Sky Wales"
+    },
+    {
+      "url": "content/regions/brecon-beacons.md",
+      "description": "Existing markdown content — opinionated regional guide draft in casual voice; structurally separate from TS data"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Content inventory flags: evidence_status missing, image_status needs_review, status research_needed"
+    },
+    {
+      "url": "content/ops/image-registry.json",
+      "description": "Image registry — confirms location-landing-brecon-beacons has image_status needs_review with no source URL"
+    },
+    {
+      "url": "https://www.beacons-npa.gov.uk/",
+      "description": "Official Bannau Brycheiniog National Park Authority — geographic and establishment facts verified against"
+    },
+    {
+      "url": "https://www.fforestfawr.org.uk/",
+      "description": "Fforest Fawr UNESCO Global Geopark — Geopark designation"
+    },
+    {
+      "url": "https://darksky.org/what-we-do/international-dark-sky-reserve/",
+      "description": "International Dark-Sky Association — Dark Sky Reserve classification"
+    },
+    {
+      "url": "https://www.nationaltrust.org.uk/visit/wales/henrhyd-falls",
+      "description": "National Trust — Henrhyd Falls — Batman filming location"
+    },
+    {
+      "url": "https://cadw.gov.wales/visit/places-to-visit/llanthony-priory",
+      "description": "CADW — Llanthony Priory"
+    },
+    {
+      "url": "https://www.nationalparks.uk/parks/",
+      "description": "National Parks UK — designation order for 'tenth UK national park' verification"
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusRationale": "The existing data file (data/regions/brecon-beacons.ts) provides a solid structural and geographic foundation that is mostly factually sound. Three items prevent immediate sign-off: (1) one confirmed factual error (third vs second-largest national park in Wales) that must be corrected, (2) the hero image has no provenance record and cannot be published without legal clearance, and (3) all pricing and transport claims sourced from Perplexity AI must be re-verified against official sources. Once those three blockers are resolved, the page is close to publishable and warrants a QA pass.",
+
+  "blockers": [
+    {
+      "rank": 1,
+      "blocker": "Hero image provenance unknown — possible licence violation",
+      "detail": "public/images/regions/brecon-beacons-hero.jpg exists on disk (297KB, Feb 14 2025) but has no photographer credit, licence, or acquisition record. The image registry entry is blank. Publishing this image without provenance is a copyright risk.",
+      "resolution": "Audit acquisition records for this image file. If no provenance can be established, source a replacement via Openverse (https://openverse.org/) with a CC BY or CC BY-SA licence, or request an image from Bannau Brycheiniog NPA media team (comms@beacons-npa.gov.uk). Record full attribution before publishing."
+    },
+    {
+      "rank": 2,
+      "blocker": "Factual error: 'Wales' third-largest national park' — Wales has only three national parks",
+      "detail": "Wales has three national parks. Brecon Beacons at 1,344 km² is the second largest (behind Snowdonia/Eryri at ~2,130 km², ahead of Pembrokeshire Coast at ~620 km²). The current claim is demonstrably wrong and would undermine content credibility.",
+      "resolution": "Correct data/regions/brecon-beacons.ts keyFacts[0].detail to 'Wales' second-largest national park' (after verifying against https://www.beacons-npa.gov.uk/). If the original intent was a UK-wide or England-and-Wales ranking, rephrase accordingly with a source URL."
+    },
+    {
+      "rank": 3,
+      "blocker": "All pricing and transport claims are AI-sourced (Perplexity) and 16+ months old",
+      "detail": "Seven pricing figures (Dan yr Ogof, stargazing, canal hire, gorge walking, Fan Dance event, Bike Park Wales, parking), two transport claim sets (T4 bus, X43 + Abergavenny train time), and the Llanddeusant Red Kite feeding times are all sourced solely from Perplexity AI research (2025-02). These must be re-verified before the page is considered accurate enough to publish. A single incorrect pricing claim published to Google will generate negative user signals and operator complaints.",
+      "resolution": "Human QA reviewer should work through the officialSourcesForHumanVerification list and update each claim with a direct source URL and verified figure. Alternatively, remove all pricing figures from the landing page and push them down to the activity-location combo pages (which are already in qa_needed status and have their own sourcing)."
+    }
+  ]
+}

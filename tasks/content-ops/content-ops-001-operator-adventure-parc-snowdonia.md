@@ -4,7 +4,7 @@
 Improve content item operator-adventure-parc-snowdonia: Adventure Parc Snowdonia.
 Channel: commercial. Content type: operator. Route/slug: /directory/adventure-parc-snowdonia.
 Commercial tier: strategic_big_player_or_launch_priority.
-Known blocker: Operator "Adventure Parc Snowdonia" missing: no description, no cover image, no logo, no Google rating.
+Known blocker: Operator "Adventure Parc Snowdonia" missing: no description, no cover image, no logo, no Google rating | Operator "Adventure Parc Snowdonia" missing: no description, no cover image, no logo, no Google rating.
 Do not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.
 
 ## Metadata
@@ -13,9 +13,9 @@ Do not guess. Capture source URLs for every factual claim. Do not use AI-generat
 - Channel: commercial
 - Content type: operator
 - Route/slug: /directory/adventure-parc-snowdonia
-- Current status: research_needed
+- Current status: qa_needed
 - Priority: 59
-- Task type: research
+- Task type: commercial_review
 - Recommended skill: directory-premium-lure-model
 - Required output path: data/research/content-ops/operator-adventure-parc-snowdonia.json
 

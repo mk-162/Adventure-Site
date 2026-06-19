@@ -4,7 +4,7 @@
 Improve content item operator-big-blue-experience: Big Blue Experience.
 Channel: commercial. Content type: operator. Route/slug: /directory/big-blue-experience.
 Commercial tier: unclassified_operator.
-Known blocker: Operator "Big Blue Experience" missing: no description, no cover image, no logo, no email, no Google rating.
+Known blocker: Operator "Big Blue Experience" missing: no description, no cover image, no logo, no email, no Google rating | Operator "Big Blue Experience" missing: no description, no cover image, no logo, no email, no Google rating.
 Do not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.
 
 ## Metadata
@@ -13,9 +13,9 @@ Do not guess. Capture source URLs for every factual claim. Do not use AI-generat
 - Channel: commercial
 - Content type: operator
 - Route/slug: /directory/big-blue-experience
-- Current status: research_needed
+- Current status: qa_needed
 - Priority: 34
-- Task type: research
+- Task type: commercial_review
 - Recommended skill: directory-premium-lure-model
 - Required output path: data/research/content-ops/operator-big-blue-experience.json
 

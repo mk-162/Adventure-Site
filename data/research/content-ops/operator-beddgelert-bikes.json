@@ -1,0 +1,298 @@
+{
+  "_meta": {
+    "task": "content-ops-073-operator-beddgelert-bikes",
+    "contentItem": "operator-beddgelert-bikes",
+    "contentType": "operator",
+    "slug": "beddgelert-bikes",
+    "route": "/directory/beddgelert-bikes",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "data_found_identity_ambiguous"
+  },
+
+  "researchSummary": {
+    "finding": "A bike hire operation has traded from Beddgelert Forest under the 'Beddgelert Bikes' brand for many years, but the original domain (beddgelertbikes.co.uk) has lapsed and the business appears to have been rebranded as '1085 Adventures' circa 2020–2021. The TripAdvisor listing for this combined entity is flagged as 'reported permanently closed', yet multiple other directories (YHA, Forest Holidays, MBWales, Iguanagogo, Visit Snowdonia) continue to list an active bike hire operation at this location. Sufficient factual data exists to draft a directory listing, but the current operational status and the correct trading name both require human verification before publication.",
+    "identityNote": "Two overlapping entities: (A) 'Beddgelert Bikes / The Bike Barn' — the original long-running brand, domain now parked; (B) '1085 Adventures' — successor brand from ~2020, operator Nik Joyce/Paul Inch, same physical location. The Facebook page at facebook.com/beddgelertbike/ now presents as '1085 Adventures - Bike Hire Beddgelert'. The directory listing slug 'beddgelert-bikes' maps to the original brand; a redirect or merge with a '1085-adventures' slug may be needed. HUMAN REVIEW REQUIRED.",
+    "searchesPerformed": [
+      "beddgelertbikes.co.uk — domain parked (for-sale landing page)",
+      "1085adventures.co.uk — active domain, SSL certificate expired at time of research",
+      "YHA experience page: yha.org.uk/experience/beddgelert-bikes",
+      "Forest Holidays cycling page: forestholidays.co.uk/locations/wales/beddgelert-snowdonia/things-to-do/cycling/",
+      "MBWales listing: mbwales.com/listings/1085adventures/",
+      "TripAdvisor: tripadvisor.co.uk/Attraction_Review-g186446-d7921669",
+      "Iguanagogo: iguanagogo.com/cycling-park/1085-adventures-bike-hire-beddgelert/",
+      "Beddgelert Tourism Association: beddgelerttourism.com/Activities/1085-Adventures/ (live); beddgelerttourism.com/Activities/Beddgelert-Bikes/ (404)",
+      "Visit Snowdonia: visitsnowdonia.info/beddgelert-bikes-shop and visitsnowdonia.info/beddgelert-bikes (403 blocked)",
+      "The Cycling Experts directory: thecyclingexperts.co.uk/find-a-shop/?name=Beddgelert+Bikes&shop=128498",
+      "Bdaily news article (2021): bdaily.co.uk/articles/2021/03/15/challenging-trail-for-beddgelert-bikes",
+      "Snowdonia Guide: snowdoniaguide.com/beddgelert_forest.html",
+      "Beddgelert Campsite: beddgelertcampsite.co.uk/bike-hire-and-trails",
+      "GPS Routes (Lon Gwyrfai): gps-routes.co.uk/routes/home.nsf/RoutesLinksCycle/lon-gwyrfai-walking-and-cycle-route",
+      "wales.org MTB beginners guide"
+    ]
+  },
+
+  "proposedOperatorData": {
+    "name": "Beddgelert Bikes",
+    "nameNote": "The original trading name. The business appears to have rebranded as '1085 Adventures' circa 2020–2021. Both names appear in live third-party listings. Human must decide which name/slug to use and whether to redirect.",
+    "alternateName": "1085 Adventures",
+    "slug": "beddgelert-bikes",
+    "website": {
+      "original": "https://www.beddgelertbikes.co.uk",
+      "originalStatus": "LAPSED — domain parked/for-sale as of research date 2026-06-04. Source: live check.",
+      "current": "https://1085adventures.co.uk",
+      "currentStatus": "UNVERIFIED — domain resolves but SSL certificate expired at time of research. Bike hire page: https://1085adventures.co.uk/bike-hire/",
+      "recommendedLinkTarget": "https://1085adventures.co.uk/bike-hire/",
+      "recommendedLinkNote": "HUMAN REVIEW REQUIRED — verify SSL status and that site is live before publishing this URL."
+    },
+    "contact": {
+      "phone_original": "01766 890434",
+      "phone_originalSource": "https://www.yha.org.uk/experience/beddgelert-bikes",
+      "phone_originalNote": "Landline associated with the original Beddgelert Bikes shopfront. May still be active — HUMAN VERIFY.",
+      "phone_current": "07572 336578",
+      "phone_currentSource": "https://www.forestholidays.co.uk/locations/wales/beddgelert-snowdonia/things-to-do/cycling/ and https://iguanagogo.com/cycling-park/1085-adventures-bike-hire-beddgelert/",
+      "phone_currentNote": "Mobile number consistently associated with the 1085 Adventures successor operator.",
+      "email_original": "info@beddgelertbikes.co.uk",
+      "email_originalSource": "https://www.yha.org.uk/experience/beddgelert-bikes",
+      "email_originalNote": "LIKELY INACTIVE — domain has lapsed. Do not publish without verifying deliverability.",
+      "email_current": "hello@1085adventures.co.uk",
+      "email_currentSource": "https://www.mbwales.com/listings/1085adventures/",
+      "email_currentNote": "Current active email for the 1085 Adventures brand. HUMAN VERIFY before publishing."
+    },
+    "address": {
+      "line1": "The Bike Barn, Beddgelert Forest",
+      "line1Note": "Consistently used in third-party listings. Source: https://www.thecyclingexperts.co.uk/find-a-shop/?name=Beddgelert+Bikes&shop=128498 and https://www.snowdoniaguide.com/beddgelert_forest.html",
+      "alternateStreet": "Hafod Ruffydd Uchaf",
+      "alternateStreetNote": "Appears in some older directory listings as the property name. Source: thecyclingexperts.co.uk",
+      "town": "Beddgelert",
+      "county": "Gwynedd",
+      "postcode_primary": "LL55 4UU",
+      "postcode_primaryNote": "Beddgelert Forest / Forest Holidays site postcode. Used in 1085 Adventures listings. Source: https://www.forestholidays.co.uk/locations/wales/beddgelert-snowdonia/things-to-do/cycling/",
+      "postcode_alternate": "LL55 4YW",
+      "postcode_alternateNote": "Appears in some older Beddgelert Bikes listings. Source: thecyclingexperts.co.uk",
+      "country": "Wales",
+      "directions": "Reached from the A4085 Caernarfon–Beddgelert road. Enter Beddgelert Forest Campsite and follow brown 'Beddgelert Mountain Bikes' signs. Approximately 2 miles from Beddgelert village.",
+      "directionsSource": "https://www.snowdoniaguide.com/beddgelert_forest.html"
+    },
+    "location": {
+      "region": "Snowdonia / Eryri",
+      "nearestTown": "Beddgelert",
+      "nationalPark": "Eryri (Snowdonia) National Park",
+      "lat": null,
+      "lng": null,
+      "latLngNote": "BLOCKED — no verified lat/lng retrieved. Approximate location: Beddgelert Forest, ~2 miles NW of Beddgelert village on A4085. Human to verify coordinates before publishing."
+    },
+    "description": {
+      "short": "Mountain bike hire in Beddgelert Forest, Eryri (Snowdonia) National Park — with direct trail access and bikes for all abilities.",
+      "shortSource": "Synthesised from: https://www.yha.org.uk/experience/beddgelert-bikes, https://www.forestholidays.co.uk/locations/wales/beddgelert-snowdonia/things-to-do/cycling/, https://www.snowdoniaguide.com/beddgelert_forest.html",
+      "shortNote": "Factually grounded; no AI invention. Human to review for brand name (Beddgelert Bikes vs 1085 Adventures).",
+      "full": "Beddgelert Bikes (also trading as 1085 Adventures) is a cycle hire operation based in Beddgelert Forest, within Eryri (Snowdonia) National Park, North Wales. The hire centre sits approximately two miles from Beddgelert village, accessed via the A4085 Caernarfon–Beddgelert road and signposted into the forest. Visitors can hire mountain bikes, e-bikes, children's bikes, tandems, tag-alongs, child seats, and trailers, with helmets, locks, repair kits, and trail maps included. The forest provides direct access to two waymarked NRW trails — the 4 km Bedwen Trail (family-level) and the 9.5 km Derwen Trail — as well as the Lon Gwyrfai, a traffic-free 4-mile off-road cycleway linking Beddgelert to Rhyd Ddu along the Afon Colwyn, running parallel to the Welsh Highland Railway. Drop-off services, group bookings, and long-term hire are available. The location sits south of Yr Wyddfa (Snowdon), close to the Aberglaslyn Gorge and Llyn Dinas.",
+      "fullSources": [
+        "https://www.yha.org.uk/experience/beddgelert-bikes",
+        "https://www.forestholidays.co.uk/locations/wales/beddgelert-snowdonia/things-to-do/cycling/",
+        "https://www.snowdoniaguide.com/beddgelert_forest.html",
+        "https://www.gps-routes.co.uk/routes/home.nsf/RoutesLinksCycle/lon-gwyrfai-walking-and-cycle-route",
+        "https://bdaily.co.uk/articles/2021/03/15/challenging-trail-for-beddgelert-bikes"
+      ],
+      "fullNote": "Factually grounded from verified sources. Human to review brand identity and confirm operational status before publishing."
+    },
+    "services": [
+      { "name": "Mountain bike hire", "source": "https://www.yha.org.uk/experience/beddgelert-bikes" },
+      { "name": "Electric bike (eMTB/e-bike) hire", "source": "https://www.forestholidays.co.uk/locations/wales/beddgelert-snowdonia/things-to-do/cycling/" },
+      { "name": "Children's bikes hire", "source": "https://www.yha.org.uk/experience/beddgelert-bikes" },
+      { "name": "Tandem hire", "source": "https://www.yha.org.uk/experience/beddgelert-bikes" },
+      { "name": "Tag-along / child trailer hire", "source": "https://www.yha.org.uk/experience/beddgelert-bikes" },
+      { "name": "Gravel bike hire", "source": "https://www.mbwales.com/listings/1085adventures/" },
+      { "name": "Tramper accessible cycle hire", "source": "https://www.mbwales.com/listings/1085adventures/" },
+      { "name": "Drop-off service / group hire", "source": "https://iguanagogo.com/cycling-park/1085-adventures-bike-hire-beddgelert/" },
+      { "name": "Guided rides", "source": "https://www.mbwales.com/listings/1085adventures/" },
+      { "name": "Trail running", "source": "https://www.mbwales.com/listings/1085adventures/", "note": "1085 Adventures brand only" },
+      { "name": "Bikepacking expeditions", "source": "https://www.mbwales.com/listings/1085adventures/", "note": "1085 Adventures brand only" }
+    ],
+    "openingHours": {
+      "summary": "Daily 09:00–18:00; extended hours in summer",
+      "source": "https://www.yha.org.uk/experience/beddgelert-bikes",
+      "note": "UNVERIFIED as current — taken from YHA listing; no live hours page confirmed. HUMAN VERIFY."
+    },
+    "pricing": {
+      "note": "Reference prices from third-party listings. beddgelertbikes.co.uk is offline so no live pricing page can be verified. All figures may be out of date.",
+      "items": [
+        { "item": "Adult bike — 2 hours", "price": "from £18", "source": "https://www.yha.org.uk/experience/beddgelert-bikes" },
+        { "item": "Adult bike — day hire", "price": "from £25–£30", "source": "https://www.forestholidays.co.uk/locations/wales/beddgelert-snowdonia/things-to-do/cycling/ and wales.org" },
+        { "item": "Adult bike — short break (3 days)", "price": "from £45", "source": "https://www.yha.org.uk/experience/beddgelert-bikes" },
+        { "item": "Child bike — 4 hours", "price": "from £10", "source": "https://www.yha.org.uk/experience/beddgelert-bikes" },
+        { "item": "Child bike — day hire", "price": "from £20", "source": "https://www.yha.org.uk/experience/beddgelert-bikes" },
+        { "item": "Electric bike — day hire", "price": "from £28–£40", "source": "https://www.forestholidays.co.uk/locations/wales/beddgelert-snowdonia/things-to-do/cycling/ and https://www.beddgelertcampsite.co.uk/bike-hire-and-trails" },
+        { "item": "Child seat / trailer", "price": "from £15", "source": "https://www.yha.org.uk/experience/beddgelert-bikes" }
+      ]
+    },
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "BLOCKED — no verified Google Business listing rating retrieved. Human to check Google Maps for 'Beddgelert Bikes' and '1085 Adventures Beddgelert'."
+      },
+      "tripadvisor": {
+        "rating": 5.0,
+        "reviewCount": 71,
+        "listingName": "1085 Adventures Snowdonia",
+        "url": "https://www.tripadvisor.co.uk/Attraction_Review-g186446-d7921669-Reviews-1085_ADVENTURES_SNOWDONIA-Beddgelert_Caernarfon_Gwynedd_North_Wales_Wales.html",
+        "note": "FLAG: This listing is currently marked 'reported permanently closed' on TripAdvisor. Rating is 5.0/5 from 71 reviews under the 1085 Adventures name. HUMAN VERIFY operational status before citing this rating."
+      },
+      "iguanagogo": {
+        "rating": 4,
+        "outOf": 5,
+        "url": "https://iguanagogo.com/cycling-park/1085-adventures-bike-hire-beddgelert/",
+        "note": "Third-party directory rating. Provenance unclear; treat as indicative only."
+      }
+    },
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/beddgelertbike/",
+        "displayName": "1085 Adventures - Bike Hire Beddgelert | Caernarfon",
+        "source": "Confirmed in multiple search results",
+        "note": "Facebook page presents under the 1085 Adventures brand, not 'Beddgelert Bikes'."
+      },
+      "instagram": {
+        "url": null,
+        "note": "BLOCKED — no verified Instagram account found for either 'Beddgelert Bikes' or '1085 Adventures'."
+      }
+    },
+    "officialTourismMentions": [
+      {
+        "source": "YHA (Youth Hostels Association)",
+        "url": "https://www.yha.org.uk/experience/beddgelert-bikes",
+        "note": "Dedicated experience page; referenced alongside YHA Snowdon Ranger and Bryn Gwynant hostels."
+      },
+      {
+        "source": "Forest Holidays",
+        "url": "https://www.forestholidays.co.uk/locations/wales/beddgelert-snowdonia/things-to-do/cycling/",
+        "note": "Listed as the main cycling partner for Beddgelert Forest Holidays cabins."
+      },
+      {
+        "source": "Mountain Bike Wales (MBWales.com)",
+        "url": "https://www.mbwales.com/listings/1085adventures/",
+        "note": "Listed under 1085 Adventures name."
+      },
+      {
+        "source": "Visit Snowdonia",
+        "url": "https://www.visitsnowdonia.info/beddgelert-bikes-shop",
+        "note": "Listing confirmed in search results; page returned 403 at time of research. Human to verify."
+      },
+      {
+        "source": "Beddgelert Tourism Association",
+        "url": "https://www.beddgelerttourism.com/Activities/1085-Adventures/",
+        "note": "1085 Adventures listed; original Beddgelert Bikes URL returns 404."
+      }
+    ],
+    "nearbyTrails": [
+      {
+        "name": "Bedwen Trail",
+        "distance": "4 km",
+        "grade": "Green (family/beginner)",
+        "note": "NRW-maintained waymarked trail in Beddgelert Forest. Direct access from hire centre.",
+        "source": "https://www.snowdoniaguide.com/beddgelert_forest.html"
+      },
+      {
+        "name": "Derwen Trail",
+        "distance": "9.5 km",
+        "grade": "Blue (intermediate)",
+        "note": "NRW-maintained waymarked trail in Beddgelert Forest.",
+        "source": "https://www.snowdoniaguide.com/beddgelert_forest.html"
+      },
+      {
+        "name": "Lon Gwyrfai",
+        "distance": "4 miles (6.4 km) one-way",
+        "description": "Traffic-free off-road cycleway linking Beddgelert to Rhyd Ddu via Beddgelert Forest, alongside the Afon Colwyn, parallel to the Welsh Highland Railway.",
+        "source": "https://www.gps-routes.co.uk/routes/home.nsf/RoutesLinksCycle/lon-gwyrfai-walking-and-cycle-route"
+      }
+    ]
+  },
+
+  "images": {
+    "coverImage": {
+      "status": "BLOCKED",
+      "note": "No cover image sourced. beddgelertbikes.co.uk is offline; no press kit or downloadable images found in accessible sources. Do not use AI-generated images. Options for human to pursue: (1) Contact operator directly for a press/media image with licence grant; (2) search Openverse/Wikimedia Commons for CC-licensed photos of Beddgelert Forest or bikes in Snowdonia; (3) commission photography."
+    },
+    "logo": {
+      "status": "BLOCKED",
+      "note": "No logo retrievable. The beddgelertbikes.co.uk domain is parked. The 1085 Adventures website SSL was expired at time of research. Human to obtain from operator."
+    },
+    "imageProvenance": "All images blocked pending operator contact or verified CC-licensed photography. No AI-generated images used or recommended."
+  },
+
+  "humanReviewRequired": [
+    {
+      "item": "Operational status",
+      "detail": "TripAdvisor listing is flagged 'reported permanently closed'. Multiple other directories list the business as active. Human must call/email to confirm whether bike hire is currently operating at this location before the listing is published.",
+      "priority": "CRITICAL"
+    },
+    {
+      "item": "Trading name / slug decision",
+      "detail": "Original brand 'Beddgelert Bikes' has lapsed domain and 404 tourism pages; successor brand is '1085 Adventures'. Decision needed: keep slug 'beddgelert-bikes' with note, redirect to '1085-adventures', or create a separate listing. This affects both SEO and commercial tier assignment.",
+      "priority": "CRITICAL"
+    },
+    {
+      "item": "Google rating",
+      "detail": "No Google Business rating retrieved during research. Human to search Google Maps for 'Beddgelert Bikes' and '1085 Adventures Beddgelert' and record the current rating and review count.",
+      "priority": "HIGH"
+    },
+    {
+      "item": "Contact details currency",
+      "detail": "Email info@beddgelertbikes.co.uk is tied to a lapsed domain. Phone 01766 890434 may still be live. Email hello@1085adventures.co.uk is from MBWales listing. Human to verify which contact is currently monitored.",
+      "priority": "HIGH"
+    },
+    {
+      "item": "Pricing currency",
+      "detail": "All pricing figures from third-party listings (YHA, Forest Holidays); no live pricing page available. Figures should not be published as current without operator confirmation.",
+      "priority": "MEDIUM"
+    },
+    {
+      "item": "Opening hours / seasonality",
+      "detail": "Hours (09:00–18:00 daily) sourced from YHA listing; no confirmation these are current. Seasonal open/close dates not confirmed in any source.",
+      "priority": "MEDIUM"
+    },
+    {
+      "item": "Cover image and logo",
+      "detail": "Both blocked. Operator contact needed for media assets or licence grant.",
+      "priority": "MEDIUM"
+    }
+  ],
+
+  "blockers": [
+    {
+      "rank": 1,
+      "blocker": "Operational status unconfirmed",
+      "detail": "TripAdvisor flags '1085 Adventures Snowdonia' (the entity operating from this location) as 'reported permanently closed'. Without direct operator confirmation, the listing cannot be published. This is the highest-priority blocker — if the business has closed, the directory entry must be removed or marked inactive rather than published."
+    },
+    {
+      "rank": 2,
+      "blocker": "Brand identity ambiguous — slug/name decision required",
+      "detail": "The 'beddgelert-bikes' slug maps to a brand whose domain has lapsed and whose tourism association page returns 404. The operating entity is now '1085 Adventures'. A human editorial decision is needed on whether to publish as 'Beddgelert Bikes (now 1085 Adventures)', redirect the slug, or create a new listing under '1085 Adventures'."
+    },
+    {
+      "rank": 3,
+      "blocker": "No Google rating and no verified cover image",
+      "detail": "The original task explicitly flags missing Google rating and cover image. Google rating could not be retrieved during research (requires human to check Google Maps). Cover image is blocked because both the operator's domain (beddgelertbikes.co.uk) and the successor site (1085adventures.co.uk, SSL expired) could not be accessed for press assets. Both gaps must be resolved before the listing can be signed off."
+    }
+  ],
+
+  "sources": [
+    { "url": "https://www.yha.org.uk/experience/beddgelert-bikes", "description": "YHA dedicated experience page for Beddgelert Bikes — contact details, hours, pricing" },
+    { "url": "https://www.forestholidays.co.uk/locations/wales/beddgelert-snowdonia/things-to-do/cycling/", "description": "Forest Holidays — lists Beddgelert Bikes as main cycling partner, includes phone and pricing" },
+    { "url": "https://www.mbwales.com/listings/1085adventures/", "description": "Mountain Bike Wales directory — 1085 Adventures listing with email and services" },
+    { "url": "https://www.tripadvisor.co.uk/Attraction_Review-g186446-d7921669-Reviews-1085_ADVENTURES_SNOWDONIA-Beddgelert_Caernarfon_Gwynedd_North_Wales_Wales.html", "description": "TripAdvisor — 5.0/5, 71 reviews; flagged as reported permanently closed" },
+    { "url": "https://iguanagogo.com/cycling-park/1085-adventures-bike-hire-beddgelert/", "description": "Iguanagogo directory — phone, services, 4-star rating" },
+    { "url": "https://www.facebook.com/beddgelertbike/", "description": "Facebook page — now presents as '1085 Adventures - Bike Hire Beddgelert'" },
+    { "url": "https://www.thecyclingexperts.co.uk/find-a-shop/?name=Beddgelert+Bikes&shop=128498", "description": "The Cycling Experts directory — address details including LL55 4YW postcode" },
+    { "url": "https://www.snowdoniaguide.com/beddgelert_forest.html", "description": "Snowdonia Guide — location directions, forest trails, Bedwen and Derwen trail details" },
+    { "url": "https://www.beddgelertcampsite.co.uk/bike-hire-and-trails", "description": "Beddgelert Campsite — e-bike pricing reference" },
+    { "url": "https://www.gps-routes.co.uk/routes/home.nsf/RoutesLinksCycle/lon-gwyrfai-walking-and-cycle-route", "description": "Lon Gwyrfai cycle route details" },
+    { "url": "https://bdaily.co.uk/articles/2021/03/15/challenging-trail-for-beddgelert-bikes", "description": "Bdaily 2021 news article about Beddgelert Bikes / 1085 Adventures" },
+    { "url": "https://www.visitsnowdonia.info/beddgelert-bikes-shop", "description": "Visit Snowdonia listing (403 at time of research; confirmed in search results)" },
+    { "url": "https://www.beddgelerttourism.com/Activities/1085-Adventures/", "description": "Beddgelert Tourism Association — 1085 Adventures active listing" },
+    { "url": "https://www.beddgelertbikes.co.uk/", "description": "Original domain — parked/for-sale as of 2026-06-04" },
+    { "url": "https://1085adventures.co.uk/bike-hire/", "description": "Successor operator website bike hire page — SSL expired at time of research" }
+  ]
+}

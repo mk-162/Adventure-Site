@@ -4,7 +4,7 @@
 Improve content item operator-go-below-underground: Go Below Underground.
 Channel: commercial. Content type: operator. Route/slug: /directory/go-below-underground.
 Commercial tier: unclassified_operator.
-Known blocker: Operator "Go Below Underground Adventures" missing: no cover image, no logo, no coordinates, no phone, no email.
+Known blocker: Operator "Go Below Underground Adventures" missing: no cover image, no logo, no coordinates, no phone, no email | Operator "Go Below Underground Adventures" missing: no cover image, no logo, no coordinates, no phone, no email.
 Do not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.
 
 ## Metadata
@@ -13,9 +13,9 @@ Do not guess. Capture source URLs for every factual claim. Do not use AI-generat
 - Channel: commercial
 - Content type: operator
 - Route/slug: /directory/go-below-underground
-- Current status: research_needed
+- Current status: qa_needed
 - Priority: 34
-- Task type: research
+- Task type: commercial_review
 - Recommended skill: directory-premium-lure-model
 - Required output path: data/research/content-ops/operator-go-below-underground.json
 

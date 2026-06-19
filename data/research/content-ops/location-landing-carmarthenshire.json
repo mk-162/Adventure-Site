@@ -1,0 +1,504 @@
+{
+  "_meta": {
+    "task": "content-ops-029-location-landing-carmarthenshire",
+    "contentItem": "location-landing-carmarthenshire",
+    "contentType": "location_landing",
+    "slug": "carmarthenshire",
+    "route": "/carmarthenshire",
+    "region": "carmarthenshire",
+    "channel": "evergreen",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_critical_flags"
+  },
+
+  "existingFiles": {
+    "typeScriptData": "data/regions/carmarthenshire.ts",
+    "markdownContent": "content/regions/carmarthenshire.md",
+    "heroImage": "public/images/regions/carmarthenshire-hero.jpg",
+    "hikeComboPage": "data/combo-pages/carmarthenshire--hiking.json",
+    "dataLastUpdated": "2025-02-06",
+    "contentInventoryStatus": "research_needed"
+  },
+
+  "overallAssessment": {
+    "verdict": "The existing data/regions/carmarthenshire.ts file provides a well-structured foundation, but contains three factual errors requiring correction before the page can be published: (1) incorrect Brechfa Forest trail difficulty levels that could direct beginners onto a red-grade route; (2) a misleading 'Wales' largest county' claim that is factually wrong; and (3) all admission prices are stale (last updated February 2025, now 16+ months out of date). The existing hero image has no discoverable provenance or licence record, which is a publishing blocker under site policy.",
+    "structuralQuality": "HIGH — the TypeScript data file has solid schema coverage: keyFacts, bestFor, seasonGuide, insiderTips, topExperiences, FAQs, hiddenGems, localEats, and meta fields are all populated.",
+    "factualConfidence": "MEDIUM — core geography, attraction names, and activity descriptions are accurate; however several admission prices, trail descriptions, and one county-size claim are incorrect or stale."
+  },
+
+  "criticalIssues": [
+    {
+      "severity": "HIGH",
+      "issue": "Brechfa Forest trail difficulty levels are INCORRECT — could direct beginners onto a hard red-grade trail",
+      "location": "data/regions/carmarthenshire.ts — insiderTips[0].detail and bestFor[0].description",
+      "currentValue": "insiderTips: 'Gorlech trail for beginners, Raven for experts'",
+      "correctValue": "Derwen = Green/Blue (beginner/family); Gorlech = Red (hard, 18.5km, 3 big climbs and descents); Raven = Black (expert only, narrow singletracks and brash descents)",
+      "sources": [
+        "https://www.mbwales.com/listings/gorlech/ — 'Red grade, 18.5km, hard, fast, all-weather surface'",
+        "https://www.mbwales.com/listings/raven-trail/ — 'Black grade, suitable only for proficient bikers'",
+        "https://www.mbwales.com/listings/derwen-green/ — 'Green/Blue grade, ideal introduction for inexperienced off-road riders'",
+        "https://naturalresourceswales.gov.uk/days-out/places-to-visit/south-west-wales/brechfa-forest-abergorlech/"
+      ],
+      "action": "MUST FIX before publishing. Correct the insiderTip to: 'Derwen trail for beginners (green/blue), Gorlech for intermediates (red, 18.5km), Raven for experts (black).' The current text will mislead beginners onto a hard red trail."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "'Wales' largest county' claim is FACTUALLY WRONG",
+      "location": "data/regions/carmarthenshire.ts — keyFacts[9]",
+      "currentValue": "{ label: 'Area', value: '2,395 km²', detail: 'Wales\\' largest county' }",
+      "correctValue": "Carmarthenshire is the largest HISTORIC county in Wales but ranks 3rd among current Welsh principal areas. Powys is the largest principal area (5,181 km²). The area figure of 2,395 km² is also marginally discrepant — Wikipedia gives 2,370 km².",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Carmarthenshire — 'area: 2,370 km², 3rd largest among Welsh principal areas'",
+        "https://en.wikipedia.org/wiki/List_of_Welsh_principal_areas_by_area — Powys 5,181 km² is largest",
+        "https://en.wikipedia.org/wiki/Carmarthenshire — 'Carmarthenshire is the largest historic county by area in Wales'"
+      ],
+      "action": "Correct to one of: (a) 'Wales' largest historic county' or (b) remove the 'largest' claim and simply note the area. If retaining the distinction, clarify 'largest historic county' vs principal area to avoid misleading users."
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "'Under Milk Wood was written there' is an oversimplification — needs editorial clarification",
+      "location": "data/regions/carmarthenshire.ts — topExperiences[5].description and faqs[2].answer",
+      "currentValue": "\"Where 'Under Milk Wood' was written\" and \"'Under Milk Wood' was written there\"",
+      "correctValue": "Recent scholarship indicates fewer than 300 lines of Under Milk Wood were written in Laugharne. Thomas wrote in a nearby Writing Shed on Cliff Road, not the Boathouse itself. The play was developed from 1939 onwards across multiple locations; the BBC broadcast was January 1954.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dylan_Thomas_Boathouse — 'Thomas used a garage a hundred yards from the house on a cliff ledge which he turned into his writing shed'",
+        "https://en.wikipedia.org/wiki/Under_Milk_Wood — play developed from 1939, broadcast 1954"
+      ],
+      "action": "Soften the claim to reflect current scholarship. E.g.: 'Where Dylan Thomas lived and worked on Under Milk Wood, completed in his nearby Writing Shed.' Alternatively, confirm the approved editorial line with the Dylan Thomas Boathouse directly."
+    }
+  ],
+
+  "pricingAudit": {
+    "lastVerificationDate": "2025-02-06",
+    "ageOfData": "16+ months — all prices must be treated as potentially stale",
+    "verifiedPrices": [
+      {
+        "attraction": "Carreg Cennen Castle",
+        "currentPriceInData": "£6",
+        "researchedPrice": "Adult £7.00 (from carregcennencastle.com) / £7.35 (from cadw.gov.wales, Sept 2025–Mar 2026)",
+        "verdict": "OUTDATED — raised from £6. The official castle website shows £7.00 adult.",
+        "source": "http://www.carregcennencastle.com/visiting-us and https://cadw.gov.wales/visit/places-to-visit/castell-carreg-cennen",
+        "note": "Slight discrepancy between cadw.gov.wales (£7.35) and carregcennencastle.com (£7.00) — use carregcennencastle.com as the primary source as this is privately managed.",
+        "openingHours": "April–Oct 9:30am–6pm (last admission 5pm), Nov–March 9:30am–4:30pm (last admission 3:30pm). Closed Christmas Day only. Tea rooms entry free."
+      },
+      {
+        "attraction": "National Botanic Garden of Wales",
+        "currentPriceInData": "£14",
+        "researchedPrice": "Adult £18.85 (ex Gift Aid) / £21.00 (inc Gift Aid). Children 2–17: £9.65/£11.00. Under 2s free. 7-day unlimited entry ticket.",
+        "verdict": "SIGNIFICANTLY OUTDATED — was £14, now £18.85 adult. A 34% increase.",
+        "source": "https://botanicgarden.wales/visit-2/admission-prices/"
+      },
+      {
+        "attraction": "Dylan Thomas Boathouse",
+        "currentPriceInData": "£5",
+        "researchedPrice": "Adult £6, Student/Disability £5.50, Child (5–18) £3, Under 5 free. Group of 4+ gets 10% discount. Tearoom: free entry.",
+        "verdict": "OUTDATED — was £5, now £6 adult.",
+        "source": "https://www.dylanthomasboathouse.com/plan-your-visit/ (prices confirmed via search results)"
+      },
+      {
+        "attraction": "Aberglasney Gardens",
+        "currentPriceInData": "Not in primary data; mentioned in passing",
+        "researchedPrice": "Adult £13.45 (excluding voluntary Gift Aid donation). Open 364 days a year, no pre-booking required. RHS members free November–February.",
+        "source": "https://aberglasney.org/visitor-information/"
+      },
+      {
+        "attraction": "River Towy Kayaking",
+        "currentPriceInData": "£40–60 guided",
+        "researchedPrice": "UNVERIFIED — no specific operator confirmed on the Towy for Llandovery–Llandeilo route. Llandysul Paddlers operates on the Tywi (not same as the Llandovery–Llandeilo stretch) and the Teifi. No direct operator or current pricing found.",
+        "verdict": "NEEDS VERIFICATION — flag for human review.",
+        "source": "https://www.visitwales.com/activity/llandysul-paddlers-canoe-centre-ltd-925777"
+      },
+      {
+        "attraction": "Brechfa Forest Bike Hire",
+        "currentPriceInData": "£35",
+        "researchedPrice": "UNVERIFIED — no current bike hire operator at Brechfa Forest confirmed during research. NRW trail pages do not mention on-site hire.",
+        "verdict": "NEEDS VERIFICATION — confirm a current hire operator exists before publishing this price.",
+        "source": "https://naturalresourceswales.gov.uk/days-out/places-to-visit/south-west-wales/brechfa-forest-abergorlech/"
+      },
+      {
+        "attraction": "Heart of Wales Line",
+        "currentPriceInData": "£15–25",
+        "researchedPrice": "UNVERIFIED against current fares — no live price confirmed. Transport for Wales ticket prices change with each timetable revision.",
+        "verdict": "NEEDS VERIFICATION — check current fares at Transport for Wales or National Rail before publishing.",
+        "source": "https://www.heart-of-wales.co.uk/plan-your-journey"
+      }
+    ]
+  },
+
+  "verifiedFacts": [
+    {
+      "claim": "Carmarthenshire known as 'Garden of Wales'",
+      "verdict": "CONFIRMED",
+      "source": "https://www.visitwales.com/destinations/west-wales/carmarthenshire"
+    },
+    {
+      "claim": "National Botanic Garden of Wales — 'world's largest single-span glasshouse', 110m × 60m, designed by Norman Foster",
+      "verdict": "CONFIRMED",
+      "source": "https://en.wikipedia.org/wiki/National_Botanic_Garden_of_Wales and https://botanicgarden.wales/garden-areas/the-great-glasshouse/"
+    },
+    {
+      "claim": "National Botanic Garden of Wales — 568 acres",
+      "verdict": "CONFIRMED",
+      "source": "https://en.wikipedia.org/wiki/National_Botanic_Garden_of_Wales"
+    },
+    {
+      "claim": "Laugharne sits on the Taf Estuary",
+      "verdict": "CONFIRMED — Laugharne (Talacharn) is on the estuary of the River Taf, which forms part of the Carmarthen Bay and Estuaries SAC",
+      "source": "https://en.wikipedia.org/wiki/Laugharne and https://en.wikipedia.org/wiki/Aber_Taf"
+    },
+    {
+      "claim": "Dylan Thomas lived at the Boathouse in Laugharne",
+      "verdict": "CONFIRMED — Thomas moved to the Boathouse in May 1949 and lived there until his death in November 1953. The Boathouse was purchased for him by Margaret Taylor for £2,500.",
+      "source": "https://en.wikipedia.org/wiki/Dylan_Thomas_Boathouse"
+    },
+    {
+      "claim": "Laugharne is the model for 'Llareggub' in Under Milk Wood",
+      "verdict": "CONFIRMED — widely accepted by Dylan Thomas scholars and referenced by Visit Wales",
+      "source": "https://en.wikipedia.org/wiki/Under_Milk_Wood and https://www.visitwales.com/things-do/culture/cultural-attractions/explore-dylan-thomas-laugharne"
+    },
+    {
+      "claim": "Heart of Wales Line — 121 miles, Swansea to Shrewsbury",
+      "verdict": "CONFIRMED",
+      "source": "https://www.heart-of-wales.co.uk/ — 'spectacular 121 mile rural railway between Swansea and Shrewsbury'"
+    },
+    {
+      "claim": "Heart of Wales Line — 4 trains/day",
+      "verdict": "CONFIRMED (as of December 2024 timetable change — reduced from 5 to 4 trains Mon–Sat)",
+      "source": "https://www.heart-of-wales.co.uk/heart-of-wales-line-service-statement-from-transport-for-wales",
+      "caveat": "A TfW future timetable review is in progress. Verify frequency remains 4 before publishing and note it as subject to change."
+    },
+    {
+      "claim": "Heart of Wales Line stops include Llandeilo and Llandovery",
+      "verdict": "CONFIRMED",
+      "source": "https://www.heart-of-wales.co.uk/the-line — both stops confirmed in full station list"
+    },
+    {
+      "claim": "Brechfa Forest managed by Natural Resources Wales, approx 6,500 hectares",
+      "verdict": "CONFIRMED",
+      "source": "https://naturalresourceswales.gov.uk/days-out/places-to-visit/south-west-wales/brechfa-forest-abergorlech/"
+    },
+    {
+      "claim": "Brechfa Forest — Gorlech trail is Red grade",
+      "verdict": "CONFIRMED — Red grade, 18.5km, hard and fast all-weather surface with 3 big climbs and descents",
+      "source": "https://www.mbwales.com/listings/gorlech/"
+    },
+    {
+      "claim": "Brechfa Forest — Raven trail is Black grade (expert)",
+      "verdict": "CONFIRMED — Black grade, narrow woodland singletracks with brash descents",
+      "source": "https://www.mbwales.com/listings/raven-trail/"
+    },
+    {
+      "claim": "Brechfa Forest — Derwen trail is Green/Blue (beginner/family)",
+      "verdict": "CONFIRMED — 'ideal introduction to the world of mountain biking' for inexperienced riders",
+      "source": "https://www.mbwales.com/listings/derwen-green/"
+    },
+    {
+      "claim": "Fan Brycheiniog / Black Mountain circuit route — remote Beacons hiking",
+      "verdict": "CONFIRMED — Carmarthen Fans route: 9.3 miles (15km), 712m ascent, 5–6 hours. Passes Llyn y Fan Fach and Llyn y Fan Fawr. Car park provided by Bannau Brycheiniog NP.",
+      "source": "https://traveltrade.visitwales.com/fact-sheets/wellbeing-outdoors/walking-routes-south-west-wales"
+    },
+    {
+      "claim": "Llyn y Fan Fach — glacial lake beneath the Black Mountain, Lady of the Lake legend",
+      "verdict": "CONFIRMED — consistently referenced by Visit Wales, NRW, and Bannau Brycheiniog NP",
+      "source": "https://www.visitwales.com/destinations/west-wales/carmarthenshire and https://naturalresourceswales.gov.uk"
+    },
+    {
+      "claim": "Carmarthenshire — Welsh name Sir Gaerfyrddin",
+      "verdict": "CONFIRMED — also known informally as Sir Gâr",
+      "source": "https://en.wikipedia.org/wiki/Carmarthenshire"
+    },
+    {
+      "claim": "Dinefwr (Dinefwr Park) — National Trust, Llandeilo",
+      "verdict": "CONFIRMED — National Trust manages parkland and Newton House; Cadw separately manages Dinefwr Castle within the grounds. Parkland/Oak Yard is free to access (parking charge applies).",
+      "source": "https://www.nationaltrust.org.uk/visit/wales/dinefwr and https://cadw.gov.wales/visit/places-to-visit/castell-dinefwr"
+    },
+    {
+      "claim": "River Tywi (Towy) is Wales' longest river at 75 miles",
+      "verdict": "CONFIRMED",
+      "source": "https://www.visitwales.com/destinations/west-wales/river-tywi-source-sea"
+    }
+  ],
+
+  "contentNuances": {
+    "dinefwr": "The existing data refers loosely to 'Dinefwr Castle.' The full picture is more nuanced: Dinefwr Park (National Trust) contains Newton House (admission fee for house/garden), free-access parkland with white fallow deer herd, and Cadw-managed Dinefwr Castle ruins. These are distinct parts of the same site. Distinguish between them in any updated copy.",
+    "townName": "The river is spelled 'Tywi' in Welsh (official) and 'Towy' in English. Both are in current use. The data uses 'Towy' throughout — consistent with Visit Wales English-language usage. Fine to retain.",
+    "blackMountain": "The data correctly notes 'Mynydd Du' as the Welsh name for Black Mountain (singular), distinguishing it from the Black Mountains (plural) on the English border. This is correct and should be retained.",
+    "carmarthenshire_area": "Wikipedia gives 2,370 km². The existing data says 2,395 km². The difference may reflect different boundary measurements (e.g. including marine areas). Either way, the 'largest county' claim is the bigger error — see criticalIssues. Both area figures can reasonably be described as 'approximately 2,370 km²' to avoid the discrepancy."
+  },
+
+  "imageResearch": {
+    "existingHeroImage": {
+      "path": "public/images/regions/carmarthenshire-hero.jpg",
+      "status": "UNKNOWN PROVENANCE — publishing blocker",
+      "finding": "The file exists at public/images/regions/carmarthenshire-hero.jpg but no licence, attribution, or source record was found anywhere in the codebase (no image-registry entry, no content-ops note, no comments in the TypeScript data file).",
+      "action": "HUMAN REVIEW REQUIRED. Trace the origin of carmarthenshire-hero.jpg before using it on any public page. If provenance cannot be established, replace it with a CC-licensed alternative (candidates below)."
+    },
+    "ccLicensedCandidates": [
+      {
+        "title": "Carreg Cennen Castle from a mountain vantage point",
+        "creator": "Moonsoft",
+        "licence": "CC BY 3.0",
+        "licenceNote": "Attribution required. Commercial use permitted. Share-alike not required under CC BY 3.0.",
+        "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Carreg_Cennen_Castle.JPG",
+        "description": "Photograph of Carreg Cennen Castle near Carmarthenshire from Black Mountains area near Garnant, Wales. Taken August 2010.",
+        "attribution": "\"Carreg Cennen Castle\" by Moonsoft, CC BY 3.0. https://commons.wikimedia.org/wiki/File:Carreg_Cennen_Castle.JPG",
+        "suitability": "Strong hero image candidate — dramatic castle-on-cliff composition representing one of Carmarthenshire's most iconic landmarks.",
+        "resolution": "NEEDS_VERIFICATION — check file resolution on Wikimedia before use; Fujifilm FinePix S5700 is a 7MP camera so resolution may be limited for large hero display."
+      },
+      {
+        "title": "Geograph.org.uk — Carmarthen Fan (Black Mountain landscape)",
+        "creator": "Geograph.org.uk contributors",
+        "licence": "CC BY-SA 2.0",
+        "licenceNote": "Attribution and share-alike required. Credit: '[Creator name], CC BY-SA 2.0, https://www.geograph.org.uk'",
+        "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Carmarthen_Fan_-_geograph.org.uk_-_981426.jpg",
+        "description": "Mountain landscape photograph — Carmarthen Fan / Black Mountain, Carmarthenshire.",
+        "suitability": "Good landscape candidate showing the upland character of western Brecon Beacons.",
+        "note": "Verify individual creator attribution on Wikimedia Commons file page before use."
+      },
+      {
+        "title": "Geograph.org.uk — River Towy-Afon Tywi",
+        "creator": "Geograph.org.uk contributors",
+        "licence": "CC BY-SA 2.0",
+        "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:River_Towy-Afon_Tywi_-_geograph.org.uk_-_1132633.jpg",
+        "description": "River valley photograph — the Towy/Tywi, Carmarthenshire.",
+        "suitability": "Suitable for supplementary valley/river imagery. Less dramatic than castle/mountain options for a hero.",
+        "note": "Verify individual creator attribution on Wikimedia Commons file page before use."
+      },
+      {
+        "title": "Wikimedia Commons — Carreg Cennen Castle category (154 files)",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Carreg_Cennen_Castle",
+        "description": "154 images including aerial, landscape, and detail shots.",
+        "suitability": "Browse for a high-resolution recent shot with CC BY or CC BY-SA licence. Strong candidates likely include recent 2024–2025 uploads.",
+        "action": "NEEDS_HUMAN_REVIEW — browse the category, select a high-resolution contemporary landscape shot, and verify individual file licence before use."
+      },
+      {
+        "title": "Geograph.org.uk — 29,416 CC-licensed photos of Carmarthenshire",
+        "geographUrl": "https://www.geograph.org.uk/explore/places/1/Carmarthenshire",
+        "licence": "CC BY-SA 2.0 (standard Geograph licence)",
+        "note": "Search specifically for Brechfa Forest, Towy Valley, or Carreg Cennen for strong activity-location images. All Geograph images require attribution: 'Photo © [Author Name] (cc-by-sa/2.0)'."
+      }
+    ],
+    "noAiImagesConfirmed": "No AI-generated images have been sourced or proposed in this research output."
+  },
+
+  "proposedDataAmendments": [
+    {
+      "field": "insiderTips[0]",
+      "currentValue": "{ tip: 'Brechfa trails', detail: 'Less famous than Coed y Brenin but quieter and atmospheric. Gorlech trail for beginners, Raven for experts.' }",
+      "proposedValue": "{ tip: 'Brechfa trails', detail: 'Less famous than Coed y Brenin but quieter and atmospheric. Derwen (green/blue) for beginners, Gorlech (red, 18.5km) for intermediates, Raven (black) for experts.' }",
+      "reason": "Critical factual error — Gorlech is a hard red-grade trail, not suitable for beginners. Derwen is the beginner trail.",
+      "sources": ["https://www.mbwales.com/listings/derwen-green/", "https://www.mbwales.com/listings/gorlech/", "https://www.mbwales.com/listings/raven-trail/"]
+    },
+    {
+      "field": "keyFacts[9]",
+      "currentValue": "{ label: 'Area', value: '2,395 km²', detail: 'Wales\\' largest county' }",
+      "proposedValue": "{ label: 'Area', value: '2,370 km²', detail: 'Wales\\' largest historic county' }",
+      "reason": "Powys is the largest Welsh principal area (5,181 km²). Carmarthenshire IS the largest historic county. Area figure updated to match Wikipedia.",
+      "sources": ["https://en.wikipedia.org/wiki/Carmarthenshire", "https://en.wikipedia.org/wiki/List_of_Welsh_principal_areas_by_area"]
+    },
+    {
+      "field": "topExperiences[0].priceRange (Brechfa Forest)",
+      "currentValue": "'Free (bike hire £35)'",
+      "proposedValue": "NEEDS VERIFICATION — no current bike hire operator at Brechfa confirmed. Remove price until operator verified.",
+      "reason": "NRW trail pages do not list a current hire operator. Publishing unverified pricing misleads users."
+    },
+    {
+      "field": "topExperiences[2].priceRange (River Towy Kayaking)",
+      "currentValue": "'£40-60 guided'",
+      "proposedValue": "NEEDS VERIFICATION — no Towy-specific guided kayak operator confirmed for the Llandovery–Llandeilo route.",
+      "reason": "Llandysul Paddlers operates on the lower Tywi and Teifi but is based in Llandysul, not on the Llandovery–Llandeilo stretch cited in the data. A human editor should identify and verify the correct operator."
+    },
+    {
+      "field": "topExperiences[5].description (Dylan Thomas Boathouse)",
+      "currentValue": "\"Where 'Under Milk Wood' was written. Estuary views.\"",
+      "proposedValue": "\"Where Dylan Thomas lived 1949–53 and worked on Under Milk Wood. Taf Estuary views.\"",
+      "reason": "Under Milk Wood was not solely 'written there' — Thomas wrote in a nearby Writing Shed; fewer than 300 lines were written in Laugharne. Updated copy is accurate and still compelling.",
+      "sources": ["https://en.wikipedia.org/wiki/Dylan_Thomas_Boathouse"]
+    },
+    {
+      "field": "topExperiences[5].priceRange (Dylan Thomas Boathouse)",
+      "currentValue": "'£5'",
+      "proposedValue": "'£6 adult'",
+      "reason": "Admission increased from £5 to £6 adult.",
+      "sources": ["https://www.dylanthomasboathouse.com/plan-your-visit/"]
+    },
+    {
+      "field": "topExperiences[6].priceRange (National Botanic Garden)",
+      "currentValue": "'£14'",
+      "proposedValue": "'£18.85 adult (or £21 with Gift Aid)'",
+      "reason": "Significant price increase from £14 to £18.85 adult (34% higher).",
+      "sources": ["https://botanicgarden.wales/visit-2/admission-prices/"]
+    },
+    {
+      "field": "faqs[2].answer (Dylan Thomas)",
+      "currentValue": "'Under Milk Wood' was written there. The town is the model for Llareggub.'",
+      "proposedValue": "He lived at the Boathouse in Laugharne (1949–53) and worked on Under Milk Wood in a nearby Writing Shed. The town is widely recognised as the model for Llareggub in the play.",
+      "reason": "More accurate per current scholarship — Thomas worked in a Writing Shed on Cliff Road, not the Boathouse itself.",
+      "sources": ["https://en.wikipedia.org/wiki/Dylan_Thomas_Boathouse", "https://en.wikipedia.org/wiki/Under_Milk_Wood"]
+    },
+    {
+      "field": "meta.lastUpdated",
+      "currentValue": "'2025-02-06'",
+      "proposedValue": "Update to date of human QA completion (e.g. '2026-06-xx')",
+      "reason": "Required to track data freshness."
+    },
+    {
+      "field": "topExperiences[1].priceRange (Carreg Cennen Castle)",
+      "currentValue": "'£6'",
+      "proposedValue": "'£7 adult'",
+      "reason": "Admission raised from £6 to £7 (official castle website, carregcennencastle.com).",
+      "sources": ["http://www.carregcennencastle.com/visiting-us"]
+    }
+  ],
+
+  "notesToRetain": [
+    "The heroContent describing Carmarthenshire as a quieter, less touristy destination is on-brand and accurate.",
+    "The bestFor rankings correctly position Carmarthenshire's strength in MTB, river paddling, and Black Mountain hiking.",
+    "The seasonGuide is well-calibrated and does not contain pricing — no verification needed.",
+    "The hiddenGems (Llyn y Fan Fach, Dryslwyn Castle) are accurate and under-promoted — good differentiators.",
+    "The Heart of Wales Line insider tip is accurate and distinctive — retain with minor frequency update.",
+    "Carreg Cennen sunset tip is accurate and high-value — retain.",
+    "The Towy Valley paddling put-in (Llandovery) / take-out (Llandeilo) route description is directionally accurate per Visit Wales River Tywi guidance."
+  ],
+
+  "additionalResearch": {
+    "aberglasney": {
+      "name": "Aberglasney Gardens",
+      "location": "Llangathen, Carmarthenshire",
+      "admission": "Adult £13.45 (excluding Gift Aid donation). Open 364 days/year, no pre-booking required. RHS members free Nov–Feb.",
+      "status": "TRADING — official website active at aberglasney.org",
+      "source": "https://aberglasney.org/visitor-information/",
+      "note": "The current data mentions Aberglasney in bestFor[4] but does not include a price. The admission is £13.45 adult — if a price is added, use this figure."
+    },
+    "dinefwr": {
+      "name": "Dinefwr Park and Castle",
+      "operator": "National Trust (parkland/Newton House) + Cadw (castle ruins)",
+      "parklandAccess": "Free to parkland and Oak Yard. National Trust car parking charges apply.",
+      "newtonHouse": "Admission fee for house and garden — exact price not confirmed in research; check nationaltrust.org.uk/dinefwr for current pricing.",
+      "castle": "Cadw monument — accessed via NT parkland. Cadw members park free.",
+      "source": "https://www.nationaltrust.org.uk/visit/wales/dinefwr and https://cadw.gov.wales/visit/places-to-visit/castell-dinefwr",
+      "note": "The existing data lists 'Dinefwr Castle' as a heritage attraction. This is correct but the NT/Cadw dual management structure means access and pricing depend on which part of the site the user visits."
+    },
+    "brechfaForest": {
+      "trails": [
+        { "name": "Derwen", "grade": "Green/Blue", "suitability": "Beginners / families", "description": "Oak woodland flow trail, steady climbs and fun descents", "source": "https://www.mbwales.com/listings/derwen-green/" },
+        { "name": "Gorlech", "grade": "Red", "length": "18.5km", "suitability": "Intermediate/hard", "description": "Hard, fast all-weather surface with 3 big climbs and descents, named after River Gorlech", "source": "https://www.mbwales.com/listings/gorlech/" },
+        { "name": "Raven", "grade": "Black", "suitability": "Expert only", "description": "Narrow singletracks with brash descents, berms and jumps", "source": "https://www.mbwales.com/listings/raven-trail/" }
+      ],
+      "forestSize": "~6,500 hectares",
+      "managedBy": "Natural Resources Wales",
+      "source": "https://naturalresourceswales.gov.uk/days-out/places-to-visit/south-west-wales/brechfa-forest-abergorlech/"
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Brechfa Forest bike hire — '£35'",
+      "priority": "HIGH",
+      "reason": "No current hire operator at Brechfa Forest confirmed. NRW trail pages do not list a hire provider. If no operator exists, this claim should be removed to avoid sending users to a non-existent service.",
+      "action": "Search locally or contact NRW / Forestry England to confirm if a current hire outlet operates at Brechfa (Abergorlech or Byrgwm car park)."
+    },
+    {
+      "claim": "River Towy kayaking, guided £40–60, put-in Llandovery take-out Llandeilo",
+      "priority": "HIGH",
+      "reason": "No operator specifically offering guided sessions on this Llandovery–Llandeilo stretch was confirmed. Llandysul Paddlers is on the lower Tywi / Teifi. If no operator offers this specific route, the 'guided' option should be removed or replaced with a verified operator.",
+      "action": "Search Visit Wales for Carmarthenshire kayak/canoe operators, check Llandysul Paddlers' current Tywi offering, or contact Carmarthenshire County Council tourism team."
+    },
+    {
+      "claim": "Heart of Wales Line fares '£15–25'",
+      "priority": "MEDIUM",
+      "reason": "Not verified against current Transport for Wales fares. The timetable changed in December 2024 and a further review is in progress.",
+      "action": "Check current fares at https://www.heart-of-wales.co.uk/plan-your-journey or Transport for Wales."
+    },
+    {
+      "claim": "Heart of Wales Line — 4 trains/day",
+      "priority": "LOW",
+      "reason": "Currently accurate (confirmed: reduced from 5 to 4 in December 2024) but a TfW timetable review is in progress and frequency may change.",
+      "action": "Flag in content as 'typically 4 trains daily Monday–Saturday; check current timetable before travelling'."
+    },
+    {
+      "claim": "The Cawdor pub/hotel, Llandeilo — 'Llandeilo's best pub/restaurant'",
+      "priority": "LOW",
+      "reason": "Not verified against current trading status in this research pass. Subjective 'best' claim needs editorial approval.",
+      "action": "Verify The Cawdor is still trading (https://www.thecawdor.com or check Google Maps). Remove or soften 'best' descriptor per editorial policy."
+    },
+    {
+      "claim": "Wright's Food Emporium, Llanarthne — deli/café status",
+      "priority": "LOW",
+      "reason": "Not verified against current trading status in this research pass.",
+      "action": "Verify Wright's is still trading at https://wrightsfood.co.uk (referenced in activity-location-carmarthenshire-hiking.json as a local food reference)."
+    },
+    {
+      "claim": "Existing hero image carmarthenshire-hero.jpg — licence and provenance",
+      "priority": "HIGH",
+      "reason": "No provenance or licence record found. Publishing this image without a confirmed licence creates copyright risk.",
+      "action": "Search git history, content notes, or the original content creator to establish provenance. If unverifiable, replace with a confirmed CC-licensed image (candidates in imageResearch section)."
+    },
+    {
+      "claim": "Carreg Cennen — cave beneath the castle accessible",
+      "priority": "LOW",
+      "reason": "The insiderTip mentions 'Bring a torch for the cave beneath.' Verify the cave is currently open to visitors — caves may be closed seasonally or for bat protection (bats often roost in Welsh castle caves).",
+      "action": "Check carregcennencastle.com or phone 01558 822291 to confirm cave access is currently permitted."
+    }
+  ],
+
+  "sources": [
+    { "url": "data/regions/carmarthenshire.ts", "description": "Primary existing data file — reviewed in full" },
+    { "url": "content/regions/carmarthenshire.md", "description": "Existing markdown content — reviewed" },
+    { "url": "data/combo-pages/carmarthenshire--hiking.json", "description": "Carmarthenshire hiking combo page — cross-referenced" },
+    { "url": "https://www.visitwales.com/destinations/west-wales/carmarthenshire", "description": "Visit Wales — Carmarthenshire destination page, 'Garden of Wales' confirmed" },
+    { "url": "https://botanicgarden.wales/visit-2/admission-prices/", "description": "National Botanic Garden of Wales — current admission prices (Adult £18.85)" },
+    { "url": "https://botanicgarden.wales/garden-areas/the-great-glasshouse/", "description": "NBGW — Great Glasshouse description, Norman Foster design" },
+    { "url": "https://en.wikipedia.org/wiki/National_Botanic_Garden_of_Wales", "description": "Wikipedia — NBGW: 568 acres, world's largest single-span glasshouse, 110m × 60m" },
+    { "url": "http://www.carregcennencastle.com/visiting-us", "description": "Carreg Cennen Castle official site — admission Adult £7.00, opening hours" },
+    { "url": "https://cadw.gov.wales/visit/places-to-visit/castell-carreg-cennen", "description": "Cadw — Carreg Cennen Castle; adult £7.35 (Sept 2025–Mar 2026)" },
+    { "url": "https://www.dylanthomasboathouse.com/plan-your-visit/", "description": "Dylan Thomas Boathouse — plan your visit (admission £6 adult confirmed via search)" },
+    { "url": "https://en.wikipedia.org/wiki/Dylan_Thomas_Boathouse", "description": "Wikipedia — Thomas moved to Boathouse May 1949; Writing Shed on Cliff Road" },
+    { "url": "https://en.wikipedia.org/wiki/Under_Milk_Wood", "description": "Wikipedia — Under Milk Wood: developed from 1939, BBC broadcast Jan 1954" },
+    { "url": "https://en.wikipedia.org/wiki/Laugharne", "description": "Wikipedia — Laugharne on Taf Estuary confirmed" },
+    { "url": "https://en.wikipedia.org/wiki/Carmarthenshire", "description": "Wikipedia — area 2,370 km², 3rd largest principal area, largest historic county" },
+    { "url": "https://en.wikipedia.org/wiki/List_of_Welsh_principal_areas_by_area", "description": "Wikipedia — Powys 5,181 km² is largest; Carmarthenshire 3rd" },
+    { "url": "https://www.mbwales.com/listings/gorlech/", "description": "Mountain Bike Wales — Gorlech trail: Red grade, 18.5km" },
+    { "url": "https://www.mbwales.com/listings/raven-trail/", "description": "Mountain Bike Wales — Raven trail: Black grade, expert only" },
+    { "url": "https://www.mbwales.com/listings/derwen-green/", "description": "Mountain Bike Wales — Derwen trail: Green/Blue, beginner/family" },
+    { "url": "https://www.mbwales.com/agents/brechfa/", "description": "Mountain Bike Wales — Brechfa Forest overview" },
+    { "url": "https://naturalresourceswales.gov.uk/days-out/places-to-visit/south-west-wales/brechfa-forest-abergorlech/", "description": "NRW — Brechfa Forest Abergorlech (Gorlech trail); ~6,500 hectares, managed by NRW" },
+    { "url": "https://www.heart-of-wales.co.uk/", "description": "Heart of Wales Line CRP — 121 miles, Swansea–Shrewsbury confirmed" },
+    { "url": "https://www.heart-of-wales.co.uk/heart-of-wales-line-service-statement-from-transport-for-wales", "description": "Heart of Wales Line — service reduced to 4 trains/day Mon–Sat from December 2024" },
+    { "url": "https://www.heart-of-wales.co.uk/tfw-future-timetable-review-have-your-say", "description": "TfW future timetable review — frequency may change; monitor" },
+    { "url": "https://aberglasney.org/visitor-information/", "description": "Aberglasney Gardens — adult admission £13.45, open 364 days/year" },
+    { "url": "https://www.nationaltrust.org.uk/visit/wales/dinefwr", "description": "National Trust — Dinefwr Park: free parkland access, fee for Newton House" },
+    { "url": "https://cadw.gov.wales/visit/places-to-visit/castell-dinefwr", "description": "Cadw — Dinefwr Castle within NT parkland" },
+    { "url": "https://www.visitwales.com/destinations/west-wales/river-tywi-source-sea", "description": "Visit Wales — River Tywi: Wales' longest river at 75 miles, passes NBGW and Dinefwr" },
+    { "url": "https://traveltrade.visitwales.com/fact-sheets/wellbeing-outdoors/walking-routes-south-west-wales", "description": "Visit Wales Travel Trade — Fan Brycheiniog/Carmarthen Fans circuit: 9.3 miles, 712m ascent, 5–6 hours" },
+    { "url": "https://commons.wikimedia.org/wiki/File:Carreg_Cennen_Castle.JPG", "description": "Wikimedia Commons — Carreg Cennen image by Moonsoft, CC BY 3.0" },
+    { "url": "https://commons.wikimedia.org/wiki/Category:Carreg_Cennen_Castle", "description": "Wikimedia Commons — Carreg Cennen Castle category: 154 files" },
+    { "url": "https://www.geograph.org.uk/explore/places/1/Carmarthenshire", "description": "Geograph.org.uk — 29,416 CC BY-SA 2.0 photos of Carmarthenshire" },
+    { "url": "https://www.visitwales.com/activity/llandysul-paddlers-canoe-centre-ltd-925777", "description": "Visit Wales — Llandysul Paddlers: operates on Tywi and Teifi; based Llandysul" }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusRationale": "Research is complete and has identified three high-priority corrections and multiple stale prices. The data file requires factual fixes (Brechfa trail levels, county-size claim, Dylan Thomas claim) and a pricing refresh (NBGW, Carreg Cennen, Boathouse) before the page can be published. The hero image provenance is unknown, creating a copyright blocker. A human QA reviewer should: (1) apply the three factual corrections, (2) verify or remove unconfirmed prices (bike hire, kayak operator), (3) confirm the hero image licence or replace it with a CC-licensed candidate, and (4) update meta.lastUpdated. Once those four items are resolved, the page can advance to reviewed status.",
+
+  "topBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Brechfa Forest trail levels are factually wrong — beginner visitors will be directed onto a hard red-grade trail",
+      "detail": "The existing insiderTip says 'Gorlech trail for beginners, Raven for experts.' This is incorrect: Gorlech is a Red grade trail (18.5km, three major climbs and descents). The Derwen trail is the beginner/family trail. Publishing incorrect difficulty gradings could put under-prepared cyclists onto a challenging trail.",
+      "resolution": "Update to: Derwen = beginners (green/blue), Gorlech = intermediates (red, 18.5km), Raven = experts (black). Sources: mbwales.com/listings/gorlech/, mbwales.com/listings/derwen-green/."
+    },
+    {
+      "rank": 2,
+      "blocker": "Hero image carmarthenshire-hero.jpg has no discoverable provenance or licence — copyright risk if published",
+      "detail": "The file exists at public/images/regions/carmarthenshire-hero.jpg but no licence record, creator attribution, or source note exists anywhere in the codebase (image registry, TypeScript data, content ops notes). Publishing an unlicensed image on a public page creates copyright infringement risk.",
+      "resolution": "Either (a) trace the image origin via git history and establish a confirmed licence, or (b) replace with a confirmed CC-licensed image. The strongest available CC candidate is the Carreg Cennen Castle image by Moonsoft (CC BY 3.0, Wikimedia Commons: commons.wikimedia.org/wiki/File:Carreg_Cennen_Castle.JPG) — verify resolution before use."
+    },
+    {
+      "rank": 3,
+      "blocker": "Multiple admission prices are significantly stale — National Botanic Garden (£14 vs actual £18.85) and Carreg Cennen (£6 vs actual £7.00) are both materially out of date",
+      "detail": "The data file was last updated February 2025. In the 16 months since, the National Botanic Garden has raised adult admission from £14 to £18.85 (a 34% increase), and Carreg Cennen from £6 to £7.00. A user following these prices would arrive with insufficient funds. The Dylan Thomas Boathouse has also increased from £5 to £6. Additionally, the Brechfa bike hire price (£35) and River Towy kayaking price (£40–60) could not be verified against any current operator.",
+      "resolution": "Apply the verified price corrections from this research file (NBGW: £18.85, Carreg Cennen: £7.00, Boathouse: £6). For Brechfa bike hire and River Towy kayaking, either verify against a live operator or remove the pricing claim until an operator is confirmed."
+    }
+  ]
+}

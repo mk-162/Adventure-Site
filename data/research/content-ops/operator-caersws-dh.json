@@ -1,0 +1,351 @@
+{
+  "_meta": {
+    "task": "content-ops-079-operator-caersws-dh",
+    "contentItem": "operator-caersws-dh",
+    "contentType": "operator",
+    "slug": "caersws-dh",
+    "route": "/directory/caersws-dh",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "operator_verified_data_partial"
+  },
+
+  "researchSummary": {
+    "finding": "Caersws DH maps to a real, active, legally-registered operation currently trading as Caersws Bike Park (legal entity: CAERSWS BIKE PARK LIMITED, Companies House no. 14802044, incorporated April 2023). The operation is a privately-owned downhill mountain biking venue and uplift service on farmland at Henblas, north of Caersws village, Powys, SY17 5JE. The internal project slug 'caersws-dh' reflects an older/informal brand name — the current primary trading name is 'Caersws Bike Park'. Core contact details (website, phone, email) are verified. One GPS coordinate discrepancy requires human resolution before data entry. Images are not freely licensed and must be obtained from the operator.",
+    "searchesPerformed": [
+      "\"Caersws DH\" mountain biking Wales — confirmed existence on Trailforks, MoreDirt, Komoot, Welsh Cycling, official site caerswsbikepark.co.uk",
+      "\"Caersws downhill\" MTB uplift Powys Wales — confirmed Henblas farm location, SY17 5JE, Facebook page",
+      "site:mbwales.com Caersws OR \"Caersws DH\" — confirmed NEGATIVE: not listed on MBWales.com",
+      "site:trailforks.com Caersws — Trailforks region page ID 18387 confirmed ('Caersws DH Bikepark'); 403-blocked direct fetch but existence established",
+      "\"Caersws DH\" facebook OR instagram — two Facebook pages found; Instagram @caersws_bike_park confirmed",
+      "\"Caersws DH\" uplift booking 2026 — booking via caerswsbikepark.co.uk/uplift-dates; legacy BigCartel URL returns 404",
+      "\"Caersws\" downhill mountain bike Powys NRW — no NRW/FC involvement; confirmed private farmland",
+      "\"Caersws DH\" OR \"Caersws Downhill\" site:find-and-update.company-information.service.gov.uk — CAERSWS BIKE PARK LIMITED confirmed, company 14802044",
+      "Matt Simmonds Caersws Bike Park director — former Madison Saracen professional DH racer confirmed as director/co-owner",
+      "Saracen Caersws Bike Park partnership — Saracen headline sponsor, demo bike fleet, confirmed",
+      "Caersws Bike Park Helfare Highway Matt Jones — Triple Black Diamond line opened 2024, Matt Jones collaboration confirmed"
+    ],
+    "domainChecks": [
+      { "domain": "caerswsbikepark.co.uk", "result": "LIVE — primary official trading domain" },
+      { "domain": "caerswsdhuplifts.bigcartel.com", "result": "404 — deprecated booking platform" },
+      { "domain": "trailforks.com/region/caersws-dh-bikepark-18387/", "result": "EXISTS — confirmed in search index; 403 on direct fetch" },
+      { "domain": "mbwales.com/agents/", "result": "LIVE — Caersws Bike Park NOT listed" },
+      { "domain": "find-and-update.company-information.service.gov.uk/company/14802044", "result": "LIVE — entity confirmed active" },
+      { "domain": "caerswsdh.co.uk", "result": "NOT FOUND — no evidence this domain exists" },
+      { "domain": "caersws-dh.co.uk", "result": "NOT FOUND — no evidence this domain exists" }
+    ]
+  },
+
+  "proposedOperatorData": {
+    "name": "Caersws Bike Park",
+    "nameNote": "Current primary trading name confirmed on official website, Companies House, and third-party sources. The internal slug 'caersws-dh' reflects an older/informal brand ('Caersws DH Bikepark') still used on Trailforks, MoreDirt, and Facebook. Both names are in active use. Recommend displaying 'Caersws Bike Park' as the primary name.",
+    "nameAlternative": "Caersws DH Bikepark",
+    "slug": "caersws-dh",
+    "legalEntity": {
+      "name": "CAERSWS BIKE PARK LIMITED",
+      "companiesHouseNumber": "14802044",
+      "incorporated": "2023-04-14",
+      "status": "Active",
+      "sicCode": "93110",
+      "sicDescription": "Operation of sports facilities",
+      "registeredOffice": "Kingsland House, 39 Abbey Foregate, Shrewsbury, Shropshire, England, SY2 6BL",
+      "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/14802044",
+      "note": "Registered office is a Shrewsbury address (likely an accountant/agent address). Physical venue is in Caersws, Powys — see location below."
+    },
+    "directors": [
+      {
+        "name": "Matthew Philip Simmonds",
+        "appointed": "2023-04-14",
+        "status": "Active",
+        "note": "Co-founder and co-owner. Former professional UCI World Cup downhill racer (ex-Madison Saracen Factory, 2013–2017). British Cycling Level 2 MTB instructor. Known publicly as 'Matt Simmonds' or 'Simmo'.",
+        "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/14802044/officers"
+      },
+      {
+        "name": "John Edward Riddell",
+        "appointed": "2023-11-01",
+        "status": "Active",
+        "note": "Co-director and co-owner. Referred to in media as 'JR'.",
+        "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/14802044/officers"
+      }
+    ],
+    "website": "https://www.caerswsbikepark.co.uk/",
+    "websiteNote": "Live and functional. Contains uplift calendar, track information, contact details, and booking links. Verified fetched 2026-06-04.",
+    "contact": {
+      "phone": "07972 194232",
+      "phoneNote": "Confirmed on official website and ProLine MTB event page.",
+      "phoneSource": "https://www.caerswsbikepark.co.uk/",
+      "email": "info@caerswsbikepark.co.uk",
+      "emailNote": "Official contact email listed on official site.",
+      "emailSource": "https://www.caerswsbikepark.co.uk/",
+      "address": "Henblas, Caersws, Powys, SY17 5JE",
+      "addressNote": "Confirmed by official website and multiple third-party sources. Physical venue is on private farmland at Henblas, north of Caersws village — the registered office address (Shrewsbury) is NOT the venue address.",
+      "addressSource": "https://www.caerswsbikepark.co.uk/"
+    },
+    "location": {
+      "lat": 52.5336,
+      "lng": -3.4591,
+      "latLngNote": "REQUIRES HUMAN VERIFICATION — third-party sources (MoreDirt) give 52.5336, -3.4591 which places the venue at Henblas/Llanwnog north of Caersws village. Internal project has 52.518, -3.430 (~1.8km discrepancy). Third-party coordinates appear more consistent with the stated postal address SY17 5JE. Recommend verifying against Google Maps pin at caerswsbikepark.co.uk before publishing.",
+      "region": "mid-wales",
+      "nearestTown": "Caersws",
+      "county": "Powys",
+      "landOwnership": "Private farmland — not NRW/Forestry Commission land. Access by pre-booking only."
+    },
+    "description": {
+      "short": "Caersws Bike Park is a privately-owned downhill mountain biking venue and uplift service set on farmland in Caersws, Powys, Mid Wales. Home to seven named trails ranging from red to triple black diamond, it runs Saracen-sponsored demo days and pre-booked Saturday uplift sessions throughout the season.",
+      "shortNote": "REQUIRES HUMAN REVIEW — compiled from official website, Saracen partnership announcement, and Singletrack World article. Not AI-generated text in the sense of pure hallucination; all details are sourced. A human editor should verify the current trail count before publishing.",
+      "full": null,
+      "fullNote": "Intentionally left null. A full page description should be written by a human editor after reviewing current content at caerswsbikepark.co.uk. Do not publish a long-form AI description without editorial review."
+    },
+    "activities": [
+      "Downhill mountain biking",
+      "Uplift service",
+      "Coaching (via ProLine MTB)",
+      "Bike hire (Saracen demo fleet)"
+    ],
+    "activitiesSource": "https://www.caerswsbikepark.co.uk/",
+    "trails": {
+      "totalCount": 7,
+      "totalCountNote": "7 named trails confirmed across multiple sources at time of research. Trail count may change — verify at official site before publishing.",
+      "breakdown": {
+        "red": 3,
+        "black": 2,
+        "doubleBlack": 1,
+        "tripleBlack": 1
+      },
+      "namedTrails": [
+        { "name": "Helfare Highway", "difficulty": "Triple Black Diamond", "note": "Freeride/jump line, opened 2024, built with YouTuber Matt Jones and Shimano UK." },
+        { "name": "Scorcher", "difficulty": "Double Black" },
+        { "name": "Dragon's Tail", "difficulty": "Double Black / Black", "note": "Lower Dragon's Tail section opened December 2025." },
+        { "name": "The Outsider", "difficulty": "Red" },
+        { "name": "Quarry Line", "difficulty": "Red" },
+        { "name": "Feed the Pheasant", "difficulty": "Red" },
+        { "name": "Freeride", "difficulty": "Red / Advanced" }
+      ],
+      "namedTrailsNote": "REQUIRES HUMAN VERIFICATION — trail names and difficulty ratings compiled from caerswsbikepark.co.uk, MoreDirt, and Singletrack World. Verify against current official site before publishing.",
+      "sourceUrls": [
+        "https://www.caerswsbikepark.co.uk/the-bike-park",
+        "https://singletrackworld.com/charged/2024/05/triple-black-diamond-helfare-highway-comes-to-caersws-bike-park/",
+        "https://www.moredirt.com/trail/United-Kingdom_Mid-Wales/Caersws-DH-Bikepark/858"
+      ]
+    },
+    "uplift": {
+      "operatesOn": "Saturdays",
+      "hours": "10:00–16:00",
+      "bookingRequired": true,
+      "bookingUrl": "https://www.caerswsbikepark.co.uk/uplift-dates",
+      "bookingNote": "Saturday uplift sessions 2026 run June–September. Private uplift days also bookable. Legacy booking URL (caerswsdhuplifts.bigcartel.com) returns 404 and should not be used.",
+      "sourceUrl": "https://www.caerswsbikepark.co.uk/uplift-dates"
+    },
+    "safetyRequirements": {
+      "fullFaceHelmet": "mandatory",
+      "kneePads": "mandatory",
+      "sourceUrl": "https://www.caerswsbikepark.co.uk/uplift-dates"
+    },
+    "facilities": {
+      "cafe": "Stwff and Things (on-site café — coffee, tea, hot food, pastries)",
+      "cafeSource": "https://www.prolinemtbcoaching.com/caersws-bike-park",
+      "bikeHire": "Saracen demo fleet (Ariel 60, Myst Pro, Myst Team)",
+      "bikeHireSource": "https://www.saracen.co.uk/blogs/news/saracen-announces-a-new-partnership-with-caersws-bike-park",
+      "nearestBikeShop": "Brooks Cycles, Welshpool, SY21 7LE",
+      "nearestBikeShopSource": "https://www.caerswsbikepark.co.uk/"
+    },
+    "partnerships": [
+      {
+        "partner": "Saracen Bikes",
+        "role": "Headline sponsor; demo bike fleet on-site",
+        "sourceUrl": "https://www.saracen.co.uk/blogs/news/saracen-announces-a-new-partnership-with-caersws-bike-park"
+      },
+      {
+        "partner": "Shimano UK",
+        "role": "Co-sponsor of Helfare Highway build",
+        "sourceUrl": "https://singletrackworld.com/charged/2024/05/triple-black-diamond-helfare-highway-comes-to-caersws-bike-park/"
+      },
+      {
+        "partner": "ProLine MTB",
+        "role": "Coaching and booking partner; runs uplift days",
+        "sourceUrl": "https://www.prolinemtbcoaching.com/caersws-bike-park",
+        "note": "UNCERTAIN — relationship (whether trading name, commercial partnership, or same legal entity) requires human verification."
+      }
+    ],
+    "pricing": {
+      "note": "BLOCKED — no specific pricing confirmed from fetched pages. Uplift session pricing requires checking current booking pages at caerswsbikepark.co.uk/uplift-dates. Do not publish pricing without dated verification.",
+      "sourceUrl": "https://www.caerswsbikepark.co.uk/uplift-dates"
+    },
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "BLOCKED — no Google Business rating confirmed from research. Operator has a verified legal identity and website; a Google Business Profile likely exists under 'Caersws Bike Park'. Requires human lookup on Google Maps."
+      },
+      "tripadvisor": {
+        "rating": null,
+        "note": "BLOCKED — no TripAdvisor listing confirmed during research."
+      },
+      "moredirt": {
+        "url": "https://www.moredirt.com/trail/United-Kingdom_Mid-Wales/Caersws-DH-Bikepark/858",
+        "note": "Listed on MoreDirt. Specific rating not captured."
+      }
+    },
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/CaerswsDHbikepark/",
+      "facebookNote": "Two Facebook pages found: CaerswsDHbikepark (main bike park) and Caerswsdh.racing (racing events). It is unclear if both are actively managed or if one is a legacy racing club page. Requires human verification.",
+      "instagram": "https://www.instagram.com/caersws_bike_park/",
+      "instagramNote": "Confirmed on official website as @caersws_bike_park.",
+      "instagramSource": "https://www.caerswsbikepark.co.uk/"
+    },
+    "directoryListings": {
+      "trailforks": "https://www.trailforks.com/region/caersws-dh-bikepark-18387/",
+      "moredirt": "https://www.moredirt.com/trail/United-Kingdom_Mid-Wales/Caersws-DH-Bikepark/858",
+      "mbwalesAgents": "NOT LISTED — confirmed absent from mbwales.com/agents/ as of 2026-06-04",
+      "mbwalesSource": "https://www.mbwales.com/agents/"
+    },
+    "logo": null,
+    "coverImage": null
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "No freely-licensed logo image identified. The official website (caerswsbikepark.co.uk) displays a logo but it is copyright CAERSWS BIKE PARK LIMITED.",
+      "licence": null,
+      "actionRequired": "Contact the operator directly at info@caerswsbikepark.co.uk to request logo assets. Do not use AI-generated images."
+    },
+    "cover": {
+      "status": "BLOCKED",
+      "reason": "No freely-licensed cover/hero image confirmed. Photography on caerswsbikepark.co.uk and Singletrack World/MBR articles is copyright. Saracen partnership images may have restricted use.",
+      "licence": null,
+      "openverseNote": "Openverse and Wikimedia Commons do not appear to have freely-licensed photography specifically of Caersws DH Bikepark / Henblas farm trails. Generic Mid Wales countryside/MTB imagery exists but must NOT be attributed to Caersws Bike Park specifically without operator confirmation.",
+      "actionRequired": "(1) Contact operator for a media pack; (2) Check if Saracen UK or ProLine MTB have any CC-licensed press photography; (3) Do not use AI-generated images; (4) Do not use editorial press images without licence verification."
+    },
+    "gallery": {
+      "status": "BLOCKED",
+      "reason": "Same constraints as cover apply. All identified photography is commercially copyright.",
+      "licence": null
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "GPS coordinates",
+      "issue": "Internal project records 52.518, -3.430 but MoreDirt lists 52.5336, -3.4591 (~1.8km difference). The third-party coordinates better match the stated postal address SY17 5JE and the Henblas/Llanwnog area north of Caersws village.",
+      "priority": "HIGH",
+      "sourceUrl": "https://www.moredirt.com/trail/United-Kingdom_Mid-Wales/Caersws-DH-Bikepark/858",
+      "action": "Verify coordinates against Google Maps pin for Caersws Bike Park (caerswsbikepark.co.uk) and update internal record before publishing."
+    },
+    {
+      "claim": "Current trail count and difficulty ratings",
+      "issue": "Seven named trails were identified from research (3 red, 4 black variants). The Lower Dragon's Tail was reportedly added December 2025, so the count may have changed further. Trail names and difficulty ratings should be verified against current official website content before publishing.",
+      "priority": "MEDIUM",
+      "sourceUrl": "https://www.caerswsbikepark.co.uk/the-bike-park",
+      "action": "Verify current trail list and difficulty ratings at caerswsbikepark.co.uk/the-bike-park."
+    },
+    {
+      "claim": "ProLine MTB relationship",
+      "issue": "ProLine MTB (prolinemtbcoaching.com) has its own Caersws Bike Park event pages and calendar and is described as a coaching/booking partner. It is unclear whether ProLine MTB is a trading name for the same legal entity (CAERSWS BIKE PARK LIMITED) or a separate commercial partner.",
+      "priority": "MEDIUM",
+      "sourceUrl": "https://www.prolinemtbcoaching.com/caersws-bike-park",
+      "action": "Verify ProLine MTB's relationship to Caersws Bike Park Limited. Check if prolinemtb@gmail.com is an acceptable contact for booking or if all enquiries should go to info@caerswsbikepark.co.uk."
+    },
+    {
+      "claim": "Facebook page identity",
+      "issue": "Two Facebook pages found: facebook.com/CaerswsDHbikepark/ and facebook.com/Caerswsdh.racing/. Not confirmed whether both are actively maintained or if one is a legacy racing club page predating the 2023 company incorporation.",
+      "priority": "LOW",
+      "sourceUrl": "https://www.facebook.com/CaerswsDHbikepark/",
+      "action": "Check both Facebook pages and determine which is the current primary business page. Only link the active business page in directory listing."
+    },
+    {
+      "claim": "Pricing",
+      "issue": "No uplift session pricing was confirmed from fetched pages. Booking is via caerswsbikepark.co.uk/uplift-dates but per-session price was not captured.",
+      "priority": "MEDIUM",
+      "sourceUrl": "https://www.caerswsbikepark.co.uk/uplift-dates",
+      "action": "Check current uplift pricing on the booking page before publishing any price information. Note the date checked."
+    },
+    {
+      "claim": "Google Business rating",
+      "issue": "No Google rating was confirmed during research. The operator is a real, active business so a Google Business Profile likely exists.",
+      "priority": "LOW",
+      "sourceUrl": null,
+      "action": "Search Google Maps for 'Caersws Bike Park' and capture current rating, review count, and the Google Maps URL."
+    },
+    {
+      "claim": "Danny Bateman as trail designer",
+      "issue": "ibikeride.com reportedly mentions a trail designer 'Danny Bateman from Revolution Bike Park'. This was not independently confirmed on the official site or Companies House.",
+      "priority": "LOW",
+      "sourceUrl": null,
+      "action": "Confirm or reject on official site if relevant to operator description."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.caerswsbikepark.co.uk/",
+      "description": "Official website — confirmed live. Contact details (phone, email), address, uplift dates, trail info, café, bike hire. Primary source for all contact data."
+    },
+    {
+      "url": "https://find-and-update.company-information.service.gov.uk/company/14802044",
+      "description": "Companies House — CAERSWS BIKE PARK LIMITED, company 14802044, active, SIC 93110. Incorporated 14 April 2023."
+    },
+    {
+      "url": "https://find-and-update.company-information.service.gov.uk/company/14802044/officers",
+      "description": "Companies House officers — Directors Matthew Philip Simmonds (active, appointed 2023-04-14) and John Edward Riddell (active, appointed 2023-11-01)."
+    },
+    {
+      "url": "https://www.saracen.co.uk/blogs/news/saracen-announces-a-new-partnership-with-caersws-bike-park",
+      "description": "Saracen Bikes partnership announcement — confirms Matt Simmonds' background (ex-Madison Saracen professional racer), Saracen as headline sponsor, demo fleet (Ariel 60, Myst Pro, Myst Team)."
+    },
+    {
+      "url": "https://singletrackworld.com/charged/2024/05/triple-black-diamond-helfare-highway-comes-to-caersws-bike-park/",
+      "description": "Singletrack World — confirms Helfare Highway (Triple Black Diamond) opened 2024, collaboration with Matt Jones and Shimano UK, trail builders Alf Raynor and Gareth Brewin."
+    },
+    {
+      "url": "https://www.moredirt.com/trail/United-Kingdom_Mid-Wales/Caersws-DH-Bikepark/858",
+      "description": "MoreDirt listing — confirms location GPS (52.5336, -3.4591), Henblas farm, venue history as race venue from 2004, 'Caersws DH Bikepark' name."
+    },
+    {
+      "url": "https://www.trailforks.com/region/caersws-dh-bikepark-18387/",
+      "description": "Trailforks region page — region ID 18387, confirmed in search index as 'Caersws DH Bikepark'. Direct fetch returned 403."
+    },
+    {
+      "url": "https://www.prolinemtbcoaching.com/caersws-bike-park",
+      "description": "ProLine MTB coaching partner page — confirms phone 07972 194232, café name ('Stwff and Things'), nearest bike shop (Brooks Cycles, Welshpool), and proximity to Dyfi Bike Park (~30 min)."
+    },
+    {
+      "url": "https://www.facebook.com/CaerswsDHbikepark/",
+      "description": "Facebook page — one of two FB pages found; appears to be the main bike park operational page."
+    },
+    {
+      "url": "https://www.mbr.co.uk/news/matt-jones-has-built-a-new-jump-line-at-caersws-bike-park-in-mid-wales-and-you-can-ride-it-in-the-new-year-if-you-dare-434170",
+      "description": "Mountain Bike Rider (MBR) — news article about Matt Jones building Helfare Highway at Caersws Bike Park in Mid Wales. Confirms park location and partnership."
+    },
+    {
+      "url": "https://www.mbwales.com/agents/",
+      "description": "MBWales.com agents/venues page — confirmed NEGATIVE: Caersws Bike Park not listed among 20 venues."
+    },
+    {
+      "url": "https://www.caerswsbikepark.co.uk/uplift-dates",
+      "description": "Official uplift booking page — confirms Saturday 10am–4pm sessions, June–September 2026, pre-booking mandatory, full-face helmet and knee pads required."
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "The operator 'Caersws DH' has been positively identified as CAERSWS BIKE PARK LIMITED (Companies House 14802044), an active business at Henblas, Caersws, Powys, SY17 5JE. Core contact data (website, phone, email) is verified from official sources. The main blockers — no description, no website, no phone, no email — are now resolved from verified sources. Remaining work before sign-off: (1) human verification of GPS coordinates (2km discrepancy between internal records and third-party sources); (2) current pricing from booking page; (3) Google rating lookup; (4) image assets must be obtained from operator (no freely-licensed images confirmed). Status 'qa_needed' is appropriate rather than 'researched' because the GPS discrepancy and missing images require a human QA pass before publishing.",
+
+  "topBlockers": [
+    {
+      "rank": 1,
+      "blocker": "GPS coordinate discrepancy — internal records (52.518, -3.430) differ from third-party data (52.534, -3.459) by ~1.8km; cannot publish map pin without resolution",
+      "action": "Look up 'Caersws Bike Park' on Google Maps, confirm the correct pin location, and update the internal data record (content/operators/mtb.csv lat/lng fields) before this page goes live."
+    },
+    {
+      "rank": 2,
+      "blocker": "No cover image or logo — all identified photography is commercially copyright; no freely-licensed images confirmed",
+      "action": "Email info@caerswsbikepark.co.uk requesting a media pack (logo file + 2–3 hero images) with permission for use in the Adventure Wales directory. Specify required format and minimum resolution. Do not use AI-generated images."
+    },
+    {
+      "rank": 3,
+      "blocker": "No uplift session pricing verified — booking page content not captured at per-session level; publishing a listing without pricing guidance reduces conversion",
+      "action": "Check caerswsbikepark.co.uk/uplift-dates for current session prices, record the date checked, and add to the directory listing. Avoid quoting any price that has not been verified against the live booking page."
+    }
+  ]
+}

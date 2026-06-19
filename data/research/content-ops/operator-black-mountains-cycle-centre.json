@@ -1,0 +1,265 @@
+{
+  "_meta": {
+    "task": "content-ops-077-operator-black-mountains-cycle-centre",
+    "contentItem": "operator-black-mountains-cycle-centre",
+    "contentType": "operator",
+    "slug": "black-mountains-cycle-centre",
+    "route": "/directory/black-mountains-cycle-centre",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "substantive_with_editorial_flags"
+  },
+
+  "researchSummary": {
+    "finding": "Operator is live and active. The company is legally registered as BLACK MOUNTAINS CYCLE CENTRE LTD (Companies House 09053176, incorporated 22 May 2014, status Active) but has rebranded publicly to 'Dirt Farm Wales', operating at dirtfarm.wales. Phone, email, address, GPS, opening hours, services, and a TripAdvisor rating were all verified from official/operator sources. Google Business Profile rating was not findable — this task blocker remains unresolved. Cover image and logo remain blocked (no CC-licensed or permission-cleared assets found). An editorial decision is required on display name before this entry can be published.",
+    "searchesPerformed": [
+      "Web search: 'Black Mountains Cycle Centre Wales operator website'",
+      "Web search: 'Black Mountains Cycle Centre Hay on Wye Brecon contact details'",
+      "Web search: 'Dirt Farm Wales dirtfarm.wales Google rating reviews phone email 2025 2026'",
+      "Web search: 'Black Mountains Cycle Centre Dirt Farm Wales Wikimedia Commons OR Flickr OR Geograph license image'",
+      "Web search: 'dirtfarm.wales OR Dirt Farm Wales accommodation lodge camping booking'",
+      "Web search: 'Flickr Black Mountains Cycle Centre OR Dirt Farm Wales creative commons license photo'",
+      "Fetched: dirtfarm.wales (homepage)",
+      "Fetched: dirtfarm.wales/visit",
+      "Fetched: dirtfarm.wales/faqs/",
+      "Fetched: find-and-update.company-information.service.gov.uk/company/09053176 (Companies House)",
+      "Fetched: visitwales.com/activity/black-mountains-cycle-centre-2166612",
+      "Fetched: visitmonmouthshire.com/things-to-do/dirt-farm-wales-p1505201",
+      "Fetched: tripadvisor.com/Attraction_Review-g186433-d15194587 (Dirt Farm TripAdvisor)",
+      "Fetched: ibikeride.com/wales/black-mountains-cycle-centre",
+      "Fetched: moredirt.com/trail/United-Kingdom_South-Wales/Dirt-Farm-Downhill-Bike-Park/1522",
+      "Fetched: facebook.com/dirtfarmwales/ (returned truncated content)",
+      "Fetched: geograph.org.uk/search.php?q=dirt+farm+abergavenny (403 blocked)"
+    ]
+  },
+
+  "proposedOperatorData": {
+    "name": "Black Mountains Cycle Centre",
+    "nameNote": "EDITORIAL FLAG — The operator has rebranded publicly to 'Dirt Farm Wales' and the website is dirtfarm.wales. The legal entity name remains BLACK MOUNTAINS CYCLE CENTRE LTD (Companies House 09053176). The directory slug and URL use the old name. A human editor must decide: (a) update the display name to 'Dirt Farm Wales' and add a redirect from the old slug, or (b) retain 'Black Mountains Cycle Centre' for searchability and note the trading name. Do not publish without this decision.",
+    "tradingName": "Dirt Farm Wales",
+    "tradingNameSource": "https://dirtfarm.wales/ — operator's live website as of June 2026",
+    "legalName": "BLACK MOUNTAINS CYCLE CENTRE LTD",
+    "legalNameSource": "https://find-and-update.company-information.service.gov.uk/company/09053176",
+    "companiesHouseNumber": "09053176",
+    "companiesHouseStatus": "Active",
+    "companiesHouseIncorporated": "2014-05-22",
+    "companiesHouseRegisteredAddress": "Catherine A Williams Ltd, The Old Bank, Beaufort Street, Crickhowell, Powys, NP8 1AD",
+    "companiesHouseRegisteredAddressNote": "This is an accountant's registered address, not the operational site address. Do not publish as the venue address.",
+    "slug": "black-mountains-cycle-centre",
+    "website": "https://dirtfarm.wales/",
+    "websiteSource": "https://www.visitwales.com/activity/black-mountains-cycle-centre-2166612 and https://dirtfarm.wales/ — confirmed live June 2026",
+
+    "contact": {
+      "phone": "07946 123234",
+      "phoneNote": "Confirmed across three independent sources: Dirt Farm FAQ page, VisitWales listing, and ibikeride.com. Treat as reliable but verify before publishing as phone numbers on small operator sites can change.",
+      "phoneSources": [
+        "https://dirtfarm.wales/faqs/",
+        "https://www.visitwales.com/activity/black-mountains-cycle-centre-2166612",
+        "https://ibikeride.com/wales/black-mountains-cycle-centre"
+      ],
+      "email": "hello@dirtfarm.wales",
+      "emailNote": "Current brand email, confirmed on dirtfarm.wales/visit and dirtfarm.wales/faqs/. Prefer this over the old Gmail address.",
+      "emailSources": [
+        "https://dirtfarm.wales/visit",
+        "https://dirtfarm.wales/faqs/"
+      ],
+      "emailOldVisitWales": "blackmountainscyclecentre@gmail.com",
+      "emailOldVisitWalesNote": "STALE — this Gmail address appears on the VisitWales listing (https://www.visitwales.com/activity/black-mountains-cycle-centre-2166612) and is likely a pre-rebrand contact. Do not use as primary email. The VisitWales listing itself may need updating by the operator.",
+      "address": {
+        "line1": "Great Llwygy Farm",
+        "locality": "Abergavenny",
+        "county": "Monmouthshire",
+        "postcode": "NP7 7PE",
+        "country": "Wales"
+      },
+      "addressSources": [
+        "https://www.visitwales.com/activity/black-mountains-cycle-centre-2166612",
+        "https://www.visitmonmouthshire.com/things-to-do/dirt-farm-wales-p1505201",
+        "https://www.tripadvisor.com/Attraction_Review-g186433-d15194587-Reviews-Dirt_Farm-Abergavenny_Monmouthshire_South_Wales_Wales.html",
+        "https://dirtfarm.wales/visit"
+      ]
+    },
+
+    "location": {
+      "lat": 51.888520,
+      "lng": -2.983931,
+      "latLngNote": "Coordinates from MoreDirt (51.888520, -2.983931). VisitWales gives a slightly different reading (51.89249, -2.9842). Both correspond to the Great Llwygy Farm area approximately 5 miles north of Abergavenny. A human editor should verify on a map before using as a location pin.",
+      "latLngSources": [
+        "https://www.moredirt.com/trail/United-Kingdom_South-Wales/Dirt-Farm-Downhill-Bike-Park/1522",
+        "https://www.visitwales.com/activity/black-mountains-cycle-centre-2166612"
+      ],
+      "nearestTown": "Abergavenny",
+      "distanceFromTown": "approx. 5 miles north of Abergavenny",
+      "distanceSource": "https://www.visitmonmouthshire.com/things-to-do/dirt-farm-wales-p1505201",
+      "region": "monmouthshire",
+      "regionNote": "Great Llwygy Farm is in Monmouthshire, in the Black Mountains area on the eastern edge of the Brecon Beacons National Park. Multiple sources describe the park as being 'in the heart of the Brecon Beacons National Park' — this is imprecise marketing language; the postal address is Abergavenny, Monmouthshire (outside the National Park boundary). A human editor should confirm the precise NP boundary status.",
+      "parish": "Llanvetherine / Pandy area",
+      "osmAreaNote": "Facebook page lists location as 'Pandy', confirming the site is in or near Pandy, Abergavenny."
+    },
+
+    "description": {
+      "short": "Dirt Farm (Black Mountains Cycle Centre) is a purpose-built downhill and freeride mountain bike park set on a working hill farm in the Black Mountains, five miles north of Abergavenny. Featuring Blue, Red, Black, and Pro-grade trails designed by Shaun Bevan and Gary Broad, the park offers uplift sessions Wednesday to Sunday with push-and-ride access most days.",
+      "shortNote": "Drafted from verified website and tourism source content. Uses both names to aid search discoverability pending editorial name decision. Do not add commercial claims.",
+      "shortSources": [
+        "https://dirtfarm.wales/",
+        "https://www.visitwales.com/activity/black-mountains-cycle-centre-2166612",
+        "https://dirtfarm.wales/faqs/"
+      ],
+      "full": "Dirt Farm, legally trading as Black Mountains Cycle Centre Ltd, is a specialist downhill and freeride mountain bike park located at Great Llwygy Farm on the eastern edge of the Black Mountains, approximately five miles north of Abergavenny, Monmouthshire.\n\nThe facility was established in 2014 and the trails were designed by experienced riders and trail builders Shaun Bevan and Gary Broad. The park features a range of trails across four grades: Blue (intermediate), Red (experienced intermediate), Black (advanced/expert), and a Pro jump line for professional-level riders. Trail features include a dramatic bridge, large table-tops, flowing berms, and modular sections that allow riders to mix and match lines.\n\nUplift sessions run Wednesday, Friday, Saturday, Sunday, and Bank Holiday Mondays from 10am to 6pm (first uplift 10am, last uplift 4pm). Thursday evening uplift sessions run from 4pm to 8pm. Push-and-ride access is available on most open days. Winter opening hours vary; riders should check the online booking calendar. The venue is closed Mondays and Tuesdays except Bank Holiday Mondays.\n\nFacilities on site include limited parking (car sharing encouraged), a portaloo, a bike wash area, snacks and hot drinks, and weekend food service by 'Farmer Mark Eats'. Gateway Cycles operates a pop-up repair and spares service. Bike hire is not available at the site; Drover Cycles in Hay-on-Wye offers rentals nearby. A holiday cottage on the farm is available via Airbnb.\n\nAll riders must complete an online waiver prior to arrival and comply with the park's Riders Code of Conduct. Riders under 18 must be accompanied by a parent or guardian.",
+      "fullNote": "Drafted from FAQ, homepage, and third-party tourism sources. Pricing and specific trail counts not included as they change seasonally. Check dirtfarm.wales/faqs/ and the booking system for current information before publishing.",
+      "fullSources": [
+        "https://dirtfarm.wales/",
+        "https://dirtfarm.wales/faqs/",
+        "https://www.visitwales.com/activity/black-mountains-cycle-centre-2166612",
+        "https://ibikeride.com/wales/black-mountains-cycle-centre",
+        "https://www.moredirt.com/trail/United-Kingdom_South-Wales/Dirt-Farm-Downhill-Bike-Park/1522"
+      ]
+    },
+
+    "services": [
+      {
+        "name": "Downhill Mountain Biking",
+        "detail": "Blue, Red, Black, and Pro trail grades; uplift and push-and-ride access",
+        "source": "https://dirtfarm.wales/"
+      },
+      {
+        "name": "Freeride Mountain Biking",
+        "detail": "Jump line, table-tops, berms, bridge features",
+        "source": "https://dirtfarm.wales/"
+      },
+      {
+        "name": "Uplift Service",
+        "detail": "4WD uplift available Wed, Fri, Sat, Sun and Bank Holiday Mondays; individual tickets available if space permits",
+        "source": "https://dirtfarm.wales/faqs/"
+      }
+    ],
+
+    "openingHours": {
+      "summary": "Wed, Fri, Sat, Sun, Bank Holiday Mon: 10:00–18:00; Thu evenings: 16:00–20:00; Closed Mon & Tue except Bank Holiday Mondays",
+      "winterNote": "Winter hours vary — check booking calendar at dirtfarm.wales before visiting",
+      "source": "https://dirtfarm.wales/faqs/"
+    },
+
+    "pricing": {
+      "note": "Pricing available on dirtfarm.wales booking pages. As of research date (June 2026) indicative prices seen: push-up/ride £17 standard / £27 e-bike; uplift passes from £52 midweek / £55 weekends; evening sessions from £9. CAUTION: prices change seasonally — do not publish static prices without an editorial review date and link to the current booking page.",
+      "pricingPageUrl": "https://dirtfarm.wales/",
+      "pricingSource": "https://dirtfarm.wales/ (homepage pricing section, June 2026)"
+    },
+
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/dirtfarmwales/",
+      "facebookNote": "Confirmed active; page listed under 'Pandy' location",
+      "twitter_x": "https://x.com/dirtfarmwales",
+      "instagram": "@dirtfarmwales",
+      "instagramNote": "Handle confirmed from Facebook and Twitter/X cross-references; direct URL not fetched"
+    },
+
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "BLOCKED — No Google Business Profile rating or review count was found in any search result or source page during this research pass. This was an explicit task blocker and remains unresolved. A human researcher should search 'Dirt Farm Abergavenny' in Google Maps and record the rating and URL directly."
+      },
+      "tripadvisor": {
+        "rating": 4.9,
+        "ratingOutOf": 5,
+        "reviewCount": 100,
+        "ranking": "#1 of 22 things to do in Abergavenny",
+        "award": "Travellers' Choice Award 2026",
+        "url": "https://www.tripadvisor.com/Attraction_Review-g186433-d15194587-Reviews-Dirt_Farm-Abergavenny_Monmouthshire_South_Wales_Wales.html",
+        "source": "https://www.tripadvisor.com/Attraction_Review-g186433-d15194587-Reviews-Dirt_Farm-Abergavenny_Monmouthshire_South_Wales_Wales.html",
+        "note": "Rating verified by fetching TripAdvisor page directly. Review count of 100 may be undercounted — some sources cite higher figures. Verify before publishing."
+      },
+      "ibikeride": {
+        "rating": 4.67,
+        "reviewCount": 251,
+        "award": "iBikeRide UK MTB Trail of the Year 2026 — nominee",
+        "url": "https://ibikeride.com/wales/black-mountains-cycle-centre",
+        "source": "https://ibikeride.com/wales/black-mountains-cycle-centre"
+      }
+    },
+
+    "images": {
+      "coverImage": {
+        "status": "BLOCKED",
+        "note": "No Creative Commons, Wikimedia Commons, Geograph, or otherwise openly licensed image of Dirt Farm / Black Mountains Cycle Centre was found. Geograph.org.uk returned a 403 error; no results were returned for direct CC image searches on Flickr. The operator's own website (dirtfarm.wales) hosts photography that is copyright of the operator. Per the operator's FAQ, professional photographers visiting the site require pre-approval and proof of insurance — operator-sourced images should be requested via hello@dirtfarm.wales. Do not use any image without confirmed licence or written operator permission."
+      },
+      "logo": {
+        "status": "BLOCKED",
+        "note": "No logo is available under a free or confirmed licence. The 'Dirt Farm Wales' wordmark and branding are visible on the operator's website but are copyright. Request a press/media pack from hello@dirtfarm.wales. Note that any logo supplied will be 'Dirt Farm Wales' branding, not 'Black Mountains Cycle Centre' — this intersects with the unresolved display-name editorial decision."
+      }
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "id": 1,
+      "priority": "HIGH",
+      "claim": "Display name: 'Black Mountains Cycle Centre' vs 'Dirt Farm Wales'",
+      "detail": "The legal entity name is BLACK MOUNTAINS CYCLE CENTRE LTD (Companies House 09053176) but the operator's public brand is now 'Dirt Farm Wales' (dirtfarm.wales). The directory slug /directory/black-mountains-cycle-centre uses the old name. An editor must decide whether to update the display name to 'Dirt Farm Wales', add a 301 redirect from the old slug, or retain both names with a note. This decision blocks logo, image, and description finalisation.",
+      "sources": [
+        "https://find-and-update.company-information.service.gov.uk/company/09053176",
+        "https://dirtfarm.wales/"
+      ]
+    },
+    {
+      "id": 2,
+      "priority": "HIGH",
+      "claim": "Google Business Profile rating: not found",
+      "detail": "The task brief listed 'no Google rating' as a known blocker. This was not resolved during research — no Google Business Profile for 'Dirt Farm' or 'Black Mountains Cycle Centre' near Abergavenny was confirmed via search results. A human should check Google Maps directly by searching 'Dirt Farm Abergavenny' and record the current star rating, review count, and Place ID.",
+      "sources": []
+    },
+    {
+      "id": 3,
+      "priority": "HIGH",
+      "claim": "Cover image and logo both blocked",
+      "detail": "No openly licensed images were found. Operator must be contacted at hello@dirtfarm.wales to request a media kit or press licence. Until permission is confirmed in writing, no image should be published.",
+      "sources": []
+    },
+    {
+      "id": 4,
+      "priority": "MEDIUM",
+      "claim": "GPS coordinates: two slightly differing readings",
+      "detail": "VisitWales gives 51.89249, -2.9842; MoreDirt gives 51.888520, -2.983931. The difference is approximately 400–500 m — small but enough to misplace a map pin. A human should verify the exact entrance location on Google Maps or OS maps against the postcode NP7 7PE.",
+      "sources": [
+        "https://www.visitwales.com/activity/black-mountains-cycle-centre-2166612",
+        "https://www.moredirt.com/trail/United-Kingdom_South-Wales/Dirt-Farm-Downhill-Bike-Park/1522"
+      ]
+    },
+    {
+      "id": 5,
+      "priority": "MEDIUM",
+      "claim": "National Park boundary: 'heart of the Brecon Beacons' marketing claim",
+      "detail": "Multiple third-party sources repeat the operator's own marketing language: 'set in the heart of the Brecon Beacons National Park'. The postal address (Abergavenny, Monmouthshire, NP7 7PE) and nearest settlement (Pandy) are close to but may be outside the Brecon Beacons NP boundary. A human editor should verify using NRW or OS boundary data before repeating this claim. If the site is not within the NP boundary, use 'near the Brecon Beacons' instead.",
+      "sources": [
+        "https://www.moredirt.com/trail/United-Kingdom_South-Wales/Dirt-Farm-Downhill-Bike-Park/1522",
+        "https://ibikeride.com/wales/black-mountains-cycle-centre"
+      ]
+    },
+    {
+      "id": 6,
+      "priority": "LOW",
+      "claim": "Stale VisitWales email: blackmountainscyclecentre@gmail.com",
+      "detail": "The VisitWales listing shows blackmountainscyclecentre@gmail.com which is likely a pre-rebrand contact. The current operator email (hello@dirtfarm.wales) is confirmed from the live website. The operator should be encouraged to update their VisitWales listing, but this does not block the directory entry.",
+      "sources": [
+        "https://www.visitwales.com/activity/black-mountains-cycle-centre-2166612",
+        "https://dirtfarm.wales/visit"
+      ]
+    }
+  ],
+
+  "sourceUrls": [
+    { "url": "https://dirtfarm.wales/", "role": "Operator's live website — primary source for trading name, services, pricing" },
+    { "url": "https://dirtfarm.wales/visit", "role": "Operator contact page — phone and email confirmed" },
+    { "url": "https://dirtfarm.wales/faqs/", "role": "Operator FAQ — opening hours, booking, facilities, cancellation policy" },
+    { "url": "https://find-and-update.company-information.service.gov.uk/company/09053176", "role": "Companies House — legal name, company number, incorporation date, status, registered address" },
+    { "url": "https://www.visitwales.com/activity/black-mountains-cycle-centre-2166612", "role": "VisitWales listing — address, phone, GPS coordinates, description" },
+    { "url": "https://www.visitmonmouthshire.com/things-to-do/dirt-farm-wales-p1505201", "role": "Visit Monmouthshire — address, phone, description, opening hours" },
+    { "url": "https://www.tripadvisor.com/Attraction_Review-g186433-d15194587-Reviews-Dirt_Farm-Abergavenny_Monmouthshire_South_Wales_Wales.html", "role": "TripAdvisor — rating (4.9/5), review count, Travellers' Choice 2026" },
+    { "url": "https://ibikeride.com/wales/black-mountains-cycle-centre", "role": "iBikeRide — trail grades, operating hours, phone, email, 2026 Trail of the Year nomination" },
+    { "url": "https://www.moredirt.com/trail/United-Kingdom_South-Wales/Dirt-Farm-Downhill-Bike-Park/1522", "role": "MoreDirt — GPS coordinates, facilities list, trail review scores" },
+    { "url": "https://www.facebook.com/dirtfarmwales/", "role": "Facebook — confirmed social handle and 'Pandy' locality" },
+    { "url": "https://x.com/dirtfarmwales", "role": "Twitter/X — confirmed social handle and 'Formerly Black Mountains Cycle Centre' rebrand statement" }
+  ]
+}

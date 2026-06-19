@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2026-06-04T06:37:34Z",
+  "board": "adventure-wales",
+  "purpose": "Adventure Wales AI command-centre workflows for Hermes Kanban, commercial decisions, content ops, premium listing lures and sponsor inventory.",
+  "commercialOffer": {
+    "partnerTiers": [
+      {
+        "id": "stub",
+        "label": "Stub",
+        "publicValue": "Basic info and claim CTA only.",
+        "rules": ["No booking links", "No premium visibility", "Limited/placeholder image treatment"]
+      },
+      {
+        "id": "claimed",
+        "label": "Claimed",
+        "publicValue": "Verified full info, photos, contact details and website link.",
+        "rules": ["Operator has claimed/verified details", "Trust signals visible", "Still not premium placement"]
+      },
+      {
+        "id": "premium",
+        "label": "Premium",
+        "publicValue": "Featured placements, itinerary placement, hero CTAs, booking links, offers and future analytics.",
+        "rules": ["Paid or strategic-anchor exception", "No third-party ads on own operator page", "Images and claims fully checked"]
+      }
+    ],
+    "revenueLines": [
+      "enhanced listing",
+      "premium listing",
+      "operator website build",
+      "booking/onboarding support",
+      "seasonal campaign/content package",
+      "social content pack",
+      "direct ad campaign",
+      "regional/activity sponsorship",
+      "affiliate/service slot"
+    ],
+    "slotWaterfall": ["direct_campaign", "premium_operator", "affiliate_widget", "programmatic_backfill"]
+  },
+  "kanbanProfiles": {
+    "awresearcher": "Evidence, source validation, image provenance, entity ambiguity checks.",
+    "awcommercial": "Operator classification, offer mapping, sales pipeline, sponsor/ad opportunities.",
+    "awbuilder": "Next.js dashboard, scripts, schemas and verification.",
+    "awreviewer": "QA, SEO, source, image and commercial-risk gate."
+  },
+  "decisionOptions": [
+    "strategic_anchor",
+    "premium_sales_lure",
+    "claimed_basic",
+    "stub_only",
+    "remove_or_block",
+    "needs_human_permission"
+  ],
+  "workflows": [
+    {
+      "id": "research_intake",
+      "owner": "awresearcher",
+      "trigger": "Item is research_needed, stale, ambiguous or weakly sourced.",
+      "outputs": ["data/research/content-ops/<content_item_id>.json"],
+      "qualityGate": ["valid JSON", "source URLs", "image provenance", "recommended next status"]
+    },
+    {
+      "id": "commercial_classification",
+      "owner": "awcommercial",
+      "trigger": "Research exists for commercial/operator item.",
+      "outputs": ["content/ops/commercial-decisions.json"],
+      "qualityGate": ["tier decision", "rationale", "next action", "sales angle if applicable"]
+    },
+    {
+      "id": "premium_sales_lure",
+      "owner": "awcommercial",
+      "trigger": "Decision is premium_sales_lure.",
+      "outputs": ["premium preview brief", "outreach draft", "image requirements"],
+      "qualityGate": ["not silently published as free premium", "operator-specific value proposition"]
+    },
+    {
+      "id": "strategic_anchor",
+      "owner": "awcommercial",
+      "trigger": "Decision is strategic_anchor.",
+      "outputs": ["strategic rationale", "content correction brief", "public page recommendations"],
+      "qualityGate": ["credible public value", "safe claims", "commercial exception documented"]
+    },
+    {
+      "id": "sponsor_inventory",
+      "owner": "awcommercial",
+      "trigger": "A page/region/activity/itinerary has sellable attention or service intent.",
+      "outputs": ["slot opportunity", "package type", "target advertiser", "next action"],
+      "qualityGate": ["slot waterfall respected", "relevance to user intent"]
+    },
+    {
+      "id": "review_publish_gate",
+      "owner": "awreviewer",
+      "trigger": "Any item moves toward public visibility or commercial tier change.",
+      "outputs": ["approve", "block", "specific fix request"],
+      "qualityGate": ["source check", "image rights", "SEO basics", "commercial tier correctness", "build/typecheck when applicable"]
+    }
+  ]
+}

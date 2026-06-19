@@ -1,0 +1,373 @@
+{
+  "_meta": {
+    "task": "content-ops-083-operator-celtic-canoes",
+    "contentItem": "operator-celtic-canoes",
+    "contentType": "operator",
+    "slug": "celtic-canoes",
+    "route": "/directory/celtic-canoes",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "substantial_with_critical_flags",
+    "identityConfidence": "HIGH — website celticcanoes.co.uk confirmed by cross-referencing internal hire.csv (slug 'celtic-canoes') and Wye Valley kayaking combo-page data"
+  },
+
+  "proposedOperatorData": {
+    "name": "Celtic Canoes",
+    "slug": "celtic-canoes",
+    "website": "https://www.celticcanoes.co.uk/",
+    "websiteNote": "Active as of June 2026. All pages load (bar a few 404s on old URLs). Booking is handled via FareHarbor under account slug 'wyevalleycanoes' — see sister-brand note below.",
+    "contact": {
+      "phone": [
+        {
+          "number": "07377 267717",
+          "label": "Bookings",
+          "source": "https://www.celticcanoes.co.uk/contact"
+        },
+        {
+          "number": "01497 847213",
+          "label": "Collection",
+          "source": "https://www.celticcanoes.co.uk/contact"
+        },
+        {
+          "number": "07515 905419",
+          "label": "Listed on contact page only (no label given)",
+          "source": "https://www.celticcanoes.co.uk/contact"
+        }
+      ],
+      "phoneConflictNote": "Internal data contains two stale phone numbers (01597 824455 and 01497 820604) that appear nowhere on either the live celticcanoes.co.uk or wyevalleycanoes.co.uk websites. Neither should be published. The live website numbers above are the authoritative values as of June 2026.",
+      "email": "info@celticcanoes.co.uk",
+      "emailNote": "info@celticcanoes.co.uk appears on the contact page alongside Enquires@celticcanoes.co.uk (note: 'Enquires' is a misspelling of 'Enquiries' on the live site — use info@ as the canonical contact email). Both addresses found at https://www.celticcanoes.co.uk/contact.",
+      "emailSource": "https://www.celticcanoes.co.uk/contact",
+      "address": {
+        "line1": "The Boat House",
+        "locality": "Glasbury",
+        "postcode": "HR3 5NP",
+        "country": "England",
+        "countryNote": "CRITICAL FLAG — HR3 5NP is a Herefordshire, ENGLAND postcode. Glasbury sits on the England/Wales border (the River Wye forms the county boundary at this point). The business address is technically in England despite the area being culturally associated with the Welsh Marches and Mid Wales. This affects eligibility for an Adventure Wales directory. See claimsNeedingHumanReview #1."
+      },
+      "addressSource": "https://www.celticcanoes.co.uk/contact",
+      "openingHours": "Open 7 days a week 09:00–17:00",
+      "openingHoursSource": "https://www.celticcanoes.co.uk/contact",
+      "openingHoursNote": "Stated on contact page. Likely seasonal — verify before publishing, particularly for winter months."
+    },
+    "location": {
+      "lat": 52.018,
+      "lng": -3.195,
+      "latLngNote": "Approximate coordinates for The Boat House, Glasbury, HR3 5NP, derived from the postcode/place name. The internal wye-valley--kayaking.json record uses lat 52.244 / lng -3.386 (Llandrindod Wells — incorrect) and the hire.csv uses lat 52.070 / lng -3.120 (Hay-on-Wye area — closer but still imprecise). Both internal records should be superseded by the verified address HR3 5NP. A human editor should pin the exact map location before publishing.",
+      "region": "mid_wales",
+      "regionNote": "Listed under 'Mid Wales|Wye Valley' in internal hire.csv. The business is physically in Herefordshire/England but serves the River Wye corridor that straddles the border. Mid Wales / Wye Valley is the most accurate classification for service area.",
+      "serviceAreas": ["Wye Valley", "Mid Wales", "River Wye"],
+      "serviceAreaSource": "https://www.celticcanoes.co.uk/ — trips run from Glasbury downstream to Hereford covering the River Wye"
+    },
+    "description": {
+      "short": "Celtic Canoes offers self-guided canoe hire and multi-day expedition trips on the River Wye, launching from The Boat House in Glasbury on the England/Wales border. Half-day, full-day, and 2–5-day trips are available, all including transport back to the start point.",
+      "shortNote": "Drafted from verified website content. Needs editorial review. The address is technically in England (HR3 5NP); editorial guidance needed on how to handle this in the directory description.",
+      "full": "Celtic Canoes specialises in canoe hire and expedition trips on one of Britain's most scenic rivers. Based at The Boat House in Glasbury — on the border of Wales and Herefordshire — the company operates open-top canoes for two or three paddlers on the River Wye, a Site of Special Scientific Interest and European Special Area for Conservation.\n\nChoices range from a half-day paddle (5–5.5 miles, approximately 2–3 hours) to a full-day trip (approximately 11 miles, 4–5 hours) and multi-day self-guided expeditions of 2–5 days covering up to 60 miles of river, from Glasbury downstream to Ross-on-Wye. All trips include a buoyancy aid, paddle, dry barrel, dry bag, guidance maps, and a return shuttle to the launch point. Additional accommodation options are available through partner campsites and the Wye Valley Bunkhouse, an 18-bed converted Grade II listed Welsh chapel at Glasbury.\n\nThe company does not permit solo paddling (safety requirement) and requires a minimum age of 10, with a 1:1 adult-to-child ratio. Dogs are welcome on board. Celtic Canoes holds AALA (Adventure Activities Licensing Authority) accreditation and operates in line with British Canoeing and Natural Resources Wales guidelines for access on the River Wye.",
+      "fullNote": "Drafted from verified website content at celticcanoes.co.uk (June 2026). Pricing omitted from full description — see pricing section. The Grade II chapel claim and AALA accreditation are from the live website but should be independently verified before publishing. The 'no solo paddling' and 'minimum age 10' rules are from the live FAQs page."
+    },
+    "activities": [
+      {
+        "name": "Half Day Canoe Trip",
+        "detail": "5–5.5 miles, approximately 2–3 hours. Glasbury to Hay-on-Wye or Hay-on-Wye to The Boat Inn",
+        "source": "https://www.celticcanoes.co.uk/ and https://www.wyevalleycanoes.co.uk/"
+      },
+      {
+        "name": "Full Day Canoe Trip",
+        "detail": "Approximately 11–11.5 miles, 4–5 hours. Glasbury to Whitney-on-Wye",
+        "source": "https://www.celticcanoes.co.uk/ and https://www.wyevalleycanoes.co.uk/"
+      },
+      {
+        "name": "Multi-Day Canoe Expedition",
+        "detail": "2–5 day self-guided trips covering 23–60 miles. Routes: 2-day (to Preston-on-Wye), 3-day (to Hereford), 4-day (to Hoarwithy), 5-day (to Ross-on-Wye). All include transport return and equipment.",
+        "source": "https://www.celticcanoes.co.uk/river-wye-multi-day-canoe-trips and https://www.wyevalleycanoes.co.uk/"
+      },
+      {
+        "name": "Brecon Canal Canoe Trip",
+        "detail": "Half-day and full-day trips on the Brecon Canal, launching from Brecon Theatre / Theatr Brycheiniog, Canal Wharf, Brecon, LD3 7EW. Half-day: ~4.5 miles to Pencelli. Full-day: ~6.5 miles to Talybont-on-Usk.",
+        "source": "https://www.wyevalleycanoes.co.uk/",
+        "note": "Brecon Canal trips are listed on wyevalleycanoes.co.uk (sister brand) but NOT currently on celticcanoes.co.uk. Human editor should confirm whether Celtic Canoes also runs Brecon Canal trips before including in the directory listing."
+      },
+      {
+        "name": "Educational Canoe Bookings",
+        "detail": "Canoe experiences for schools",
+        "source": "https://www.celticcanoes.co.uk/ (homepage nav item, but /education URL returns 404)",
+        "note": "The link '/education' is present in the homepage navigation but returns 404 as of June 2026. Verify whether this service is active before publishing."
+      }
+    ],
+    "equipment": {
+      "included": ["Open-top canoe (2 or 3 person)", "Buoyancy aid", "Paddle", "Dry barrel", "Dry bag", "Guidance maps", "Transport return to start point"],
+      "source": "https://www.celticcanoes.co.uk/river-wye-multi-day-canoe-trips and https://www.wyevalleycanoes.co.uk/"
+    },
+    "pricing": {
+      "note": "Celtic Canoes does not display prices on its own website as of June 2026. Pricing below is sourced from the sister brand Wye Valley Canoes (wyevalleycanoes.co.uk), which shares the same address, booking platform (FareHarbor account 'wyevalleycanoes'), and 'Our Story' copy. Prices should be confirmed directly with Celtic Canoes before publishing, as the Celtic Canoes booking page embeds the same FareHarbor flows.",
+      "priceRange": "£££",
+      "priceRangeSource": "data/combo-pages/wye-valley--kayaking.json (internal data, confirmed against wyevalleycanoes.co.uk)",
+      "indicativePrices": [
+        {
+          "trip": "Half Day",
+          "price": "£35 per person",
+          "source": "https://www.wyevalleycanoes.co.uk/",
+          "note": "From sister brand site — confirm with Celtic Canoes directly before publishing"
+        },
+        {
+          "trip": "Full Day",
+          "price": "£45 per person",
+          "source": "https://www.wyevalleycanoes.co.uk/",
+          "note": "From sister brand site — confirm with Celtic Canoes directly before publishing"
+        },
+        {
+          "trip": "Multi-Day (2–5 days)",
+          "price": "£50 per person per day",
+          "source": "https://www.celticcanoes.co.uk/river-wye-multi-day-canoe-trips (confirmed on Celtic Canoes own site)",
+          "note": "This price appears on celticcanoes.co.uk directly and can be treated as verified for the date of research"
+        }
+      ],
+      "warningMessage": "The Terms & Conditions page at https://www.celticcanoes.co.uk/terms-conditions states: 'We reserve the right to change our pricing structure at any time at our discretion.' All prices are indicative and must be verified before publishing."
+    },
+    "restrictions": {
+      "minimumAge": 10,
+      "minimumAgeSource": "https://www.celticcanoes.co.uk/faqs",
+      "adultToChildRatio": "1:1 adult to child minimum",
+      "adultToChildRatioSource": "https://www.celticcanoes.co.uk/faqs",
+      "soloBookings": "Not accepted — minimum two paddlers per canoe",
+      "soloBookingsSource": "https://www.celticcanoes.co.uk/faqs",
+      "dogsAllowed": true,
+      "dogsNote": "Well-behaved dogs welcome; must remain in the canoe at all times",
+      "dogsSource": "https://www.celticcanoes.co.uk/faqs",
+      "weightLimit": "40 stone per craft",
+      "weightLimitSource": "https://www.celticcanoes.co.uk/faqs"
+    },
+    "ratings": {
+      "google": {
+        "rating": 4.6,
+        "reviewCount": 60,
+        "source": "data/combo-pages/wye-valley--kayaking.json (internal data)",
+        "note": "These figures appear in internal combo-page data but are NOT displayed on the live celticcanoes.co.uk or wyevalleycanoes.co.uk websites. They may refer to the Google Maps listing for the business. A human editor must verify by searching Google Maps for 'Celtic Canoes Glasbury HR3 5NP' before using these figures. Note: Wye Valley Canoes (sister brand) holds a 5-star TripAdvisor Travellers' Choice award (2021–2025); Celtic Canoes may share or have a separate Google listing.",
+        "verifyManually": true
+      },
+      "tripadvisor": {
+        "wyeValleyCanoesSisterBrand": "5-star TripAdvisor Travellers' Choice 2021–2025 (Wye Valley Canoes)",
+        "tripadvisorSource": "https://www.wyevalleycanoes.co.uk/",
+        "celticCanoesSeparateListing": null,
+        "note": "TripAdvisor Travellers' Choice badges on wyevalleycanoes.co.uk (2021–2025). Whether Celtic Canoes has its own separate TripAdvisor listing was not determined — human editor should check."
+      }
+    },
+    "socialMedia": {
+      "instagram": {
+        "url": "https://www.instagram.com/celticcanoes",
+        "source": "https://www.celticcanoes.co.uk/contact"
+      },
+      "facebook": {
+        "url": "https://www.facebook.com/celticcanoes",
+        "source": "https://www.celticcanoes.co.uk/contact"
+      }
+    },
+    "accreditations": {
+      "aala": {
+        "status": "Logo displayed on website",
+        "licenceNumber": null,
+        "note": "AALA (Adventure Activities Licensing Authority) logo is visible on the celticcanoes.co.uk homepage. No licence number is displayed. Verify via the HSE AALA provider search at https://aala.hse.gov.uk/aala/provider_search.php (search for 'Celtic Canoes' or postcode 'HR3 5NP').",
+        "verifyManually": true,
+        "source": "https://www.celticcanoes.co.uk/"
+      },
+      "britishCanoeing": {
+        "status": "Referenced as a guideline body on the environment page",
+        "note": "British Canoeing is referenced in the context of river access guidelines at https://www.celticcanoes.co.uk/canoeing-the-river-wye-environment. No British Canoeing membership badge or affiliation is displayed.",
+        "source": "https://www.celticcanoes.co.uk/canoeing-the-river-wye-environment"
+      }
+    },
+    "accommodation": {
+      "wye_valley_bunkhouse": {
+        "name": "Wye Valley Bunkhouse",
+        "description": "18-bed luxury bunkhouse converted from a Grade II listed Welsh chapel, located in Glasbury opposite the canoe centre, 3 miles from Hay-on-Wye",
+        "address": "The Boat House, Glasbury, HR3 5NP",
+        "phone": "07568 722311",
+        "note": "Grade II listed status and 'luxury' designation are from the Celtic Canoes website — verify with Historic England and/or Wye Valley Bunkhouse directly before publishing. This is a sister operation, not a third-party partner.",
+        "source": "https://www.celticcanoes.co.uk/accommodation"
+      }
+    },
+    "sisterBrand": {
+      "name": "Wye Valley Canoes",
+      "website": "https://www.wyevalleycanoes.co.uk/",
+      "address": "The Boat House, Glasbury, HR3 5NP",
+      "email": "info@wyevalleycanoes.co.uk",
+      "bookingPlatform": "FareHarbor (account: wyevalleycanoes — shared by both brands)",
+      "relationship": "Same physical address, near-identical 'Our Story' copy, shared FareHarbor booking account, and cross-display of logos on respective homepages. Both are almost certainly the same legal entity or closely related trading names. Wye Valley Canoes is the fuller commercial site (more trip details, pricing, TripAdvisor badges).",
+      "editorialNote": "Human editor should determine: (1) Are Celtic Canoes and Wye Valley Canoes the same legal entity? (2) Should the directory list them as one operator or two? (3) Which brand name should be canonical for this listing?",
+      "source": "celticcanoes.co.uk homepage (links to wyevalleycanoes.co.uk for canoe hire), wyevalleycanoes.co.uk (identical 'Our Story' copy and shared FareHarbor account)"
+    },
+    "cancellationPolicy": {
+      "summary": "Less than 14 days notice: no refund. 15–30 days: 50% refund. 30+ days: full refund. Re-scheduled bookings must remain in the same season.",
+      "source": "https://www.celticcanoes.co.uk/terms-conditions"
+    },
+    "bookingPlatform": {
+      "name": "FareHarbor",
+      "accountSlug": "wyevalleycanoes",
+      "embedUrl": "https://fareharbor.com/embeds/book/wyevalleycanoes/",
+      "source": "https://www.celticcanoes.co.uk/book"
+    }
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "No logo found as a standalone downloadable file. The celticcanoes.co.uk website displays branded imagery but no freely licensed logo is available. The logo must be requested directly from the operator with a written usage licence."
+    },
+    "cover": {
+      "status": "BLOCKED",
+      "reason": "All photography on celticcanoes.co.uk and wyevalleycanoes.co.uk (copyright © 2025 Wye Valley Canoes) is commercially copyrighted. No freely licensed photographs of Celtic Canoes' activities were found on Openverse, Unsplash, or Wikimedia Commons. Do not use AI-generated images of real places. The operators' Instagram (@celticcanoes) and Facebook (@celticcanoes) may contain usable photography but reproducing social media images requires explicit written permission from the account holder.",
+      "alternatives": "Search Openverse (openverse.org) or Wikimedia Commons for freely licensed River Wye / Wye Valley canoeing imagery that could serve as a category placeholder. Search terms: 'River Wye canoe', 'Wye Valley kayak', 'Glasbury canoe'. Ensure any such image is not of this specific operator's activities."
+    },
+    "gallery": {
+      "status": "BLOCKED",
+      "reason": "Same copyright restriction as cover image."
+    },
+    "actionRequired": "Contact Celtic Canoes at info@celticcanoes.co.uk or 07377 267717 to request a media pack or written permission to reproduce photography. Alternatively, search for open-licence River Wye imagery on Openverse or Wikimedia Commons for generic activity category illustrations."
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Operator is based in England (HR3 5NP), not Wales",
+      "confidence": "HIGH",
+      "issue": "The Boat House, Glasbury, HR3 5NP is in Herefordshire, England. Glasbury sits on the England/Wales border — the River Wye is the county boundary. The physical location of the canoe centre is on the English bank. The operator serves the River Wye corridor through Wales and the Welsh Marches, and is listed in the directory under a Welsh region (Wye Valley / Mid Wales). This may affect eligibility for the Adventure Wales directory.",
+      "action": "Editorial decision required: does Adventure Wales include England-based operators who serve the Welsh Wye Valley corridor? If yes, add a disclosure on the listing that the base of operations is at Glasbury on the England/Wales border. If no, this listing may need to be reconsidered."
+    },
+    {
+      "claim": "Celtic Canoes and Wye Valley Canoes are the same business",
+      "confidence": "HIGH",
+      "issue": "Both brands share the identical address, nearly identical website copy, the same FareHarbor booking account ('wyevalleycanoes'), and cross-link to each other. However, they may operate as separate legal entities (e.g., separate limited companies or trading names). The relationship has not been formally confirmed.",
+      "action": "Confirm legal relationship with the operator. Determine whether the directory should list one entry (Celtic Canoes) or both brands. If both are listed, ensure the listings clearly cross-reference each other to avoid duplication confusion."
+    },
+    {
+      "claim": "AALA licence held",
+      "confidence": "MODERATE",
+      "issue": "An AALA logo is displayed on the celticcanoes.co.uk homepage but no licence number is shown. AALA licensing can be verified via the HSE public register.",
+      "action": "Verify via https://aala.hse.gov.uk/aala/provider_search.php — search for 'Celtic Canoes' or postcode 'HR3 5NP'. Include the licence number in the listing if found."
+    },
+    {
+      "claim": "Google rating 4.6 / 60 reviews",
+      "confidence": "LOW",
+      "issue": "These figures appear in internal combo-page data (data/combo-pages/wye-valley--kayaking.json) but are not displayed on any live website page. They may refer to an existing Google Maps listing, but the listing has not been directly verified. The rating could belong to the sister brand (Wye Valley Canoes) rather than Celtic Canoes specifically.",
+      "action": "Search Google Maps for 'Celtic Canoes Glasbury' and 'Celtic Canoes HR3 5NP' to confirm whether a listing exists and what the current rating and review count are. Do not publish the 4.6 rating without this verification."
+    },
+    {
+      "claim": "Opening hours: 7 days a week 09:00–17:00",
+      "confidence": "MODERATE",
+      "issue": "Stated on the contact page. Small seasonal operators commonly restrict opening in autumn/winter. The website does not specify seasonal variation.",
+      "action": "Confirm seasonal hours directly with the operator before publishing, particularly outside the April–October peak season."
+    },
+    {
+      "claim": "Grade II listed Welsh chapel",
+      "confidence": "LOW",
+      "issue": "The accommodation page describes the Wye Valley Bunkhouse as converted from 'a grade 2 listed Welsh Chapel.' The listing has not been verified against Historic England or Cadw records. Glasbury is in England (HR3), so the listing would be on the Historic England register, not Cadw.",
+      "action": "Verify at https://historicengland.org.uk/listing/the-register/list-entry/ — search for 'Boat House' or 'chapel' at Glasbury. This claim only needs verification if the accommodation is included in the directory entry."
+    },
+    {
+      "claim": "Brecon Canal trips offered",
+      "confidence": "LOW",
+      "issue": "Brecon Canal trips (from Brecon Theatre / Canal Wharf, LD3 7EW) are listed on wyevalleycanoes.co.uk but NOT on celticcanoes.co.uk. It is unclear whether Celtic Canoes or only Wye Valley Canoes runs these trips.",
+      "action": "Confirm with the operator whether Brecon Canal trips are available under the Celtic Canoes brand before including them in this directory listing."
+    }
+  ],
+
+  "internalDataConflicts": [
+    {
+      "source": "data/combo-pages/wye-valley--kayaking.json",
+      "conflict": "Address listed as 'Unit 1, Station Approach, Llandrindod Wells, Powys LD1 5BD' and phone as '01597 824455'",
+      "resolution": "STALE/INCORRECT — The live website address is The Boat House, Glasbury, HR3 5NP. Llandrindod Wells is approximately 23 miles north of Glasbury. The phone number 01597 824455 appears nowhere on the live website. These internal values should be corrected."
+    },
+    {
+      "source": "content/operators/hire.csv",
+      "conflict": "Phone listed as '01497 820604', coordinates lat 52.070 / lng -3.120",
+      "resolution": "STALE — The live website uses 07377 267717 (bookings) and 01497 847213 (collection). The coordinates 52.070 / -3.120 are closer to Hay-on-Wye, which is near but not identical to Glasbury (HR3 5NP). The phone number 01497 820604 shares the local area code but is not the correct number."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.celticcanoes.co.uk/",
+      "description": "Celtic Canoes homepage — address, phone numbers, email, activities overview, AALA logo, social media links",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.celticcanoes.co.uk/contact",
+      "description": "Contact page — full phone list (3 numbers), two email addresses, address, opening hours, social media",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.celticcanoes.co.uk/our-story",
+      "description": "About page — company narrative, team photo captioned 'Wye Valley Canoes Team 2023'",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.celticcanoes.co.uk/river-wye-multi-day-canoe-trips",
+      "description": "Multi-day trips page — route details, confirmed price £50/person/day, equipment included, day-by-day itinerary",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.celticcanoes.co.uk/faqs",
+      "description": "FAQs — canoe capacity, age restrictions (min 10), adult:child ratio (1:1), no solo paddling, dog policy, weight limit (40 stone), clothing advice, fishing rules",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.celticcanoes.co.uk/terms-conditions",
+      "description": "Terms & Conditions — registered trading name Celtic Canoes, address HR3 5NP, cancellation policy",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.celticcanoes.co.uk/accommodation",
+      "description": "Accommodation page — Wye Valley Bunkhouse details, 18 beds, claimed Grade II listed chapel, bunkhouse phone 07568 722311",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.celticcanoes.co.uk/canoeing-the-river-wye-environment",
+      "description": "Environment page — River Wye SSSI/SAC designations, British Canoeing and NRW referenced, river access restrictions",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.wyevalleycanoes.co.uk/",
+      "description": "Sister brand Wye Valley Canoes — same address/story, pricing (Half Day £35, Full Day £45, Multi-Day £50/day), TripAdvisor Travellers' Choice 2021–2025, AALA logo, Brecon Canal trips, detailed multi-day routes",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "data/combo-pages/wye-valley--kayaking.json",
+      "description": "Internal Wye Valley kayaking combo-page data — contains Celtic Canoes entry with stale Llandrindod Wells address and Google rating 4.6/60 reviews",
+      "type": "internal"
+    },
+    {
+      "url": "content/operators/hire.csv",
+      "description": "Internal hire operators CSV — Celtic Canoes entry with stale phone number 01497 820604 and approximate coordinates for Hay-on-Wye area",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirms operator-celtic-canoes, unclassified_operator tier, 5 missing fields",
+      "type": "internal"
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "Research has confirmed the operator identity (celticcanoes.co.uk), address, contact details, activities, pricing, accreditation status, and FAQs. A full description has been drafted from verified sources. However, three critical items require human QA before publishing: (1) the base address is technically in England (HR3 5NP, Herefordshire), requiring an editorial eligibility decision; (2) the Google rating (4.6/60 reviews from internal data) must be verified on Google Maps before use; and (3) all images remain blocked pending operator permission or open-licence alternatives.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Base address is in England (HR3 5NP, Herefordshire), not Wales",
+      "detail": "The Boat House, Glasbury, HR3 5NP sits on the English bank of the River Wye at the England/Wales border. An editorial decision is required on whether the Adventure Wales directory includes operators based on the English side of the border who serve the Welsh Wye Valley corridor. If included, the listing should disclose the border location clearly.",
+      "severity": "CRITICAL"
+    },
+    {
+      "rank": 2,
+      "blocker": "Google rating unverified — internal data may be stale or misattributed",
+      "detail": "Internal data (data/combo-pages/wye-valley--kayaking.json) shows a Google rating of 4.6 with 60 reviews, but this figure does not appear on any live website and may belong to the sister brand Wye Valley Canoes rather than Celtic Canoes specifically. A human editor must verify on Google Maps before publishing any rating. The task brief also flags 'no Google rating' as a known blocker.",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 3,
+      "blocker": "All images blocked — no freely licensed photography found",
+      "detail": "All photography on celticcanoes.co.uk and wyevalleycanoes.co.uk is copyright © 2025 Wye Valley Canoes. No freely licensed images of Celtic Canoes' activities were found on Openverse, Unsplash, or Wikimedia Commons. The operator must be contacted at info@celticcanoes.co.uk or 07377 267717 to request a media pack or written permission to use existing photography.",
+      "severity": "HIGH"
+    }
+  ]
+}

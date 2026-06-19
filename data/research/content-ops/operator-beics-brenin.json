@@ -1,0 +1,273 @@
+{
+  "_meta": {
+    "task": "content-ops-003-operator-beics-brenin",
+    "contentItem": "operator-beics-brenin",
+    "contentType": "operator",
+    "slug": "beics-brenin",
+    "route": "/directory/beics-brenin",
+    "commercialTier": "strategic_big_player_or_launch_priority",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_flags"
+  },
+
+  "proposedOperatorData": {
+    "name": "Beics Brenin",
+    "nameWelsh": "Beics Brenin",
+    "nameMeaning": "Welsh for 'King's Bikes' — named for Coed y Brenin (King's Forest)",
+    "nameNote": "Sometimes listed as 'Beics Brenin (Cycle Shop Coed Y Brenin)' on third-party directories.",
+    "slug": "beics-brenin",
+    "website": "https://beicsbrenin.co.uk/",
+    "websiteNote": "Active as of June 2026. Copyright © Beics Brenin 2026 | Powered by Push.",
+    "parentOperator": {
+      "name": "Summit Cycles",
+      "address": "65 North Parade, Aberystwyth",
+      "source": "https://reviews.listen360.com/summit-cycles-beics-brenin-dolgellau",
+      "note": "Summit Cycles is listed as the operating entity on Listen360. Needs human confirmation — verify this is still accurate and whether the listing should reference Summit Cycles or Beics Brenin as the trading name."
+    },
+    "contact": {
+      "phone": "01341 440728",
+      "phoneSource": "https://beicsbrenin.co.uk/ and https://www.visitwales.com/activity/activity/beics-brenin-coed-y-brenin-528701",
+      "email": "mail@beicsbrenin.co.uk",
+      "emailSource": "https://www.visitwales.com/activity/activity/beics-brenin-coed-y-brenin-528701",
+      "emailNote": "Email appears on the Visit Wales listing but is NOT visibly published on the official beicsbrenin.co.uk website as of June 2026. Confirm it is the correct public contact before publishing.",
+      "address": {
+        "line1": "Beics Brenin",
+        "line2": "Coed y Brenin Visitor Centre",
+        "locality": "Ganllwyd",
+        "town": "Dolgellau",
+        "county": "Gwynedd",
+        "postcode": "LL40 2HZ",
+        "country": "Wales"
+      },
+      "addressNote": "Official website and Visit Wales both show LL40 2HZ. The existing combo-page data at data/combo-pages/snowdonia--mountain-biking.json uses LL40 2HY — discrepancy needs human QA before publishing.",
+      "addressSource": "https://beicsbrenin.co.uk/ and https://www.visitwales.com/activity/activity/beics-brenin-coed-y-brenin-528701"
+    },
+    "location": {
+      "lat": null,
+      "lng": null,
+      "latLngNote": "THREE conflicting coordinates found across site data: (1) combo-pages/snowdonia--mountain-biking.json has 52.794, -3.874; (2) data/best-lists/snowdonia--best-mountain-bike-trails.json has 52.8141, -3.8742; (3) Visit Wales listing has 52.8243, -3.89627. All three differ. Do not publish any coordinates until manually verified against Google Maps for 'Beics Brenin Coed y Brenin LL40 2HZ'.",
+      "region": "mid-wales",
+      "regionNote": "Coed y Brenin lies within Snowdonia National Park (Eryri) near Dolgellau — the site is in Gwynedd and is typically considered part of the Snowdonia/Eryri region for marketing purposes, but administratively sits in the area that may map to mid-wales on this site. Confirm the correct region slug.",
+      "nearestTown": "Dolgellau",
+      "nearestTownDistance": "approximately 8 miles north of Dolgellau"
+    },
+    "openingHours": {
+      "monSun": "9:00am–5:00pm",
+      "source": "https://beicsbrenin.co.uk/",
+      "note": "Opening hours are for the Beics Brenin bike shop. The NRW Visitor Centre cafe and information centre at the same site closed permanently on 31 March 2025. Toilets (interior 9:30am–4pm, exterior 24hr) and all trails remain open. Existing site content referencing the visitor centre café should be checked."
+    },
+    "description": {
+      "short": "Beics Brenin is the mountain bike shop, hire centre, and skills school at Coed y Brenin Forest Park near Dolgellau — the UK's first dedicated MTB trail centre. Open seven days a week, it offers hardtail, full-suspension, and e-bike hire, a full retail range, bike servicing, and coaching on some of Wales's finest riding terrain.",
+      "shortNote": "Drafted from verified facts. Editorial review needed before publishing.",
+      "full": "Beics Brenin — 'King's Bikes' in Welsh — sits at the heart of Coed y Brenin (King's Forest), a 9,000-acre forest park in Snowdonia National Park, owned and managed by Natural Resources Wales. Coed y Brenin is a landmark in the history of mountain biking: it was Britain's first dedicated MTB trail centre, with races first held here in 1991 and the Tarw Du (Black Bull) trail — the oldest purpose-built mountain bike trail in the UK — completed in the mid-1990s. The site now hosts eight waymarked MTB trails ranging from the gentle Green-graded Yr Afon (10.8km) to the epic 38.2km Black-graded Beast, plus a skills and practice area and, since 2024, over 100km of new gravel and adventure cycle routes accessible on hybrid or gravel bikes.\n\nBeics Brenin operates the on-site bike shop, hire centre, and workshop as an independent business within the visitor complex. The hire fleet covers children's bikes (balance bikes through under-16 hardtails), adult hardtail MTBs (Trek), full-suspension bikes (Trek Fuel EX and Specialized Stumpjumper), and e-bikes (Trek Rail 625Wh and Specialized Turbo Levo 700Wh). All bikes are hired for use within the Coed y Brenin trail network; day hire runs 9am–4pm with a 3-hour option also available. The retail side stocks clothing and accessories from brands including Endura and Fox. Coaching, skills courses, and events are also offered.\n\nNote: the NRW-operated visitor centre café and information counter at the same site closed permanently on 31 March 2025. The bike shop (Beics Brenin) continues to operate independently. Interior toilets are open 9:30am–4pm; exterior toilets and all trails are accessible year-round.",
+      "fullNote": "Drafted from verified sources. Factually accurate as of June 2026. Editorial tone review needed. The café closure is material — do not imply the visitor centre café is still operating."
+    },
+    "services": [
+      {
+        "name": "Bike Hire — E-Bike",
+        "detail": "Trek Rail (625Wh) and Specialized Turbo Levo (700Wh); min. age 14 (UK law); max weight 113kg",
+        "source": "https://beicsbrenin.co.uk/bike-hire/"
+      },
+      {
+        "name": "Bike Hire — Full Suspension MTB",
+        "detail": "Trek Fuel EX or Specialized Stumpjumper",
+        "source": "https://beicsbrenin.co.uk/bike-hire/"
+      },
+      {
+        "name": "Bike Hire — Hardtail MTB",
+        "detail": "Trek front-suspension models",
+        "source": "https://beicsbrenin.co.uk/bike-hire/"
+      },
+      {
+        "name": "Bike Hire — Kids",
+        "detail": "Balance bikes, 16\", 20\", 24\", under-16 hardtail",
+        "source": "https://beicsbrenin.co.uk/bike-hire/"
+      },
+      {
+        "name": "Retail Shop",
+        "detail": "Clothing, accessories, MTB essentials; brands include Endura and Fox",
+        "source": "https://beicsbrenin.co.uk/ and https://www.top100attractions.com/attractions/item/beics-brenin"
+      },
+      {
+        "name": "Bike Servicing and Repairs",
+        "source": "https://beicsbrenin.co.uk/"
+      },
+      {
+        "name": "MTB Skills Coaching",
+        "source": "https://beicsbrenin.co.uk/"
+      },
+      {
+        "name": "Events Hosting",
+        "source": "https://beicsbrenin.co.uk/"
+      }
+    ],
+    "pricing": {
+      "note": "Pricing was extracted from https://beicsbrenin.co.uk/bike-hire/ on 2026-06-04. Prices change seasonally — do not publish without re-verifying against the official hire page. The following rates were live at research date.",
+      "hikeRates_2026_06": [
+        { "bike": "Balance Bike / Kids 16\"", "threeHour": "£5", "day_9am_4pm": "£10" },
+        { "bike": "Kids 20\"", "threeHour": "£8", "day_9am_4pm": "£12" },
+        { "bike": "Kids 24\"", "threeHour": "£9", "day_9am_4pm": "£15" },
+        { "bike": "Under-16 Hardtail MTB", "threeHour": "£25", "day_9am_4pm": "£30" },
+        { "bike": "Hardtail MTB (adult)", "threeHour": "£30", "day_9am_4pm": "£37" },
+        { "bike": "Full Suspension MTB", "threeHour": "£48", "day_9am_4pm": "£55" },
+        { "bike": "E-Bike 625Wh (Trek Rail)", "threeHour": "£70", "day_9am_4pm": "£85" },
+        { "bike": "E-Bike 700Wh (Specialized Turbo Levo)", "threeHour": "£80", "day_9am_4pm": "£95" }
+      ],
+      "damageWaiver": "£3–£5 depending on bike type; optional at collection",
+      "bookingNote": "Online booking available at beicsbrenin.co.uk. Photo ID required at collection. Walk-ins accepted when availability allows; advance booking strongly recommended weekends and school holidays.",
+      "cancellationNote": "Full refund if cancelled 30+ days ahead; rebooking/store credit 14–30 days; no refund within 14 days.",
+      "source": "https://beicsbrenin.co.uk/bike-hire/"
+    },
+    "trails": {
+      "context": "Trails are maintained and owned by Natural Resources Wales. Beics Brenin is the on-site commercial operator, not the trail owner.",
+      "historicNote": "Coed y Brenin is Britain's first purpose-built MTB trail centre. First MTB races were held in 1991. The Tarw Du trail (est. mid-1990s) is the oldest purpose-built mountain bike trail in the UK.",
+      "historicSource": "https://en.wikipedia.org/wiki/Coed-y-Brenin",
+      "mtbTrails": [
+        { "name": "Yr Afon", "distance": "10.8km", "grade": "Green" },
+        { "name": "Minor Taur", "distance": "12km", "grade": "Blue", "note": "Available in 4 loops: 3, 5, 9 or 12km" },
+        { "name": "Cyflym Coch", "distance": "11.2km", "grade": "Red" },
+        { "name": "Temtiwr", "distance": "8.7km", "grade": "Red", "note": "Contains black-graded features" },
+        { "name": "Dragon's Back", "distance": "31.1km", "grade": "Red" },
+        { "name": "MBR", "distance": "18.4km", "grade": "Black" },
+        { "name": "Tarw Du (Black Bull)", "distance": "20.2km", "grade": "Black", "note": "UK's oldest purpose-built MTB trail, dating to mid-1990s" },
+        { "name": "The Beast", "distance": "38.2km", "grade": "Black" }
+      ],
+      "skillsArea": "Y Ffowndri — practice area with sample sections of each grade",
+      "gravelRoutes": "100km+ of new signposted adventure/gravel cycle routes added in 2024, suitable for gravel bikes and capable hybrids",
+      "trailSource": "https://beicsbrenin.co.uk/trails/"
+    },
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "Google Maps rating not directly verified. Listen360 (a customer feedback aggregator used by Summit Cycles/Beics Brenin) shows 4.8/5 — this is NOT a Google Maps rating. Do not publish a Google rating without manual verification on Google Maps.",
+        "listen360Url": "https://reviews.listen360.com/summit-cycles-beics-brenin-dolgellau"
+      },
+      "top100Attractions": {
+        "listed": true,
+        "note": "Beics Brenin is listed as a Top 100 UK Attraction on top100attractions.com.",
+        "source": "https://www.top100attractions.com/attractions/item/beics-brenin"
+      }
+    },
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/beicsbrenin",
+        "handle": "beicsbrenin",
+        "source": "https://beicsbrenin.co.uk/"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/beicsbrenin/",
+        "handle": "@beicsbrenin",
+        "bio": "Bike hire & workshop, mountain bike clothing & accessories",
+        "source": "https://beicsbrenin.co.uk/ and https://www.instagram.com/beicsbrenin/"
+      }
+    },
+    "nrwPartnership": {
+      "forestOwner": "Natural Resources Wales (NRW)",
+      "forestArea": "9,000 acres (36km²)",
+      "partnershipNote": "Beics Brenin operates as an independent commercial business at the NRW-managed Coed y Brenin Visitor Centre. NRW owns the forest and maintains the trail network. The NRW visitor centre café and information counter closed permanently 31 March 2025; Beics Brenin continues to operate the bike shop independently.",
+      "nrwVisitorCentreSource": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/coed-y-brenin-visitor-centre/?lang=en"
+    },
+    "visitWales": {
+      "listingUrl": "https://www.visitwales.com/activity/activity/beics-brenin-coed-y-brenin-528701",
+      "note": "Active Visit Wales listing as of June 2026 research."
+    }
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "The Beics Brenin website carries '© Copyright Beics Brenin 2026 | Powered by Push' — all rights reserved. No freely-licensed logo found on Openverse, Wikimedia Commons, or any open licence repository.",
+      "actionRequired": "Contact Beics Brenin directly at mail@beicsbrenin.co.uk or 01341 440728 to request logo asset under written licence or permission for use on Adventure Wales."
+    },
+    "cover": {
+      "status": "BLOCKED",
+      "reason": "All photography on beicsbrenin.co.uk is copyright Beics Brenin 2026. The Visit Wales listing shows 7 gallery images credited to © Beics Brenin — also not freely licensed. Wikimedia Commons has some general Coed y Brenin forest trail marker images (referenced via Wikipedia article https://en.wikipedia.org/wiki/Coed-y-Brenin), but these show trail signs rather than action/scenery and may not serve as a premium cover image. No freely licensed mountain biking photography of Coed y Brenin was confirmed with a CC-BY or CC0 licence during this research pass.",
+      "wikimediaNote": "Wikimedia Commons may contain usable trail/forest images under open licences — a targeted search at commons.wikimedia.org for 'Coed y Brenin' is the recommended next step before declaring the cover fully blocked. Any image used must show the trail environment, not be AI-generated, and must be confirmed as NRW/Forestry Commission infrastructure rather than Beics Brenin's own commercial assets.",
+      "actionRequired": "(1) Search commons.wikimedia.org for 'Coed y Brenin' and check licence of any results. (2) If no suitable Commons image found, contact Beics Brenin at mail@beicsbrenin.co.uk to request a media pack or written permission to reproduce photography. (3) Do not use AI-generated images."
+    },
+    "gallery": {
+      "status": "BLOCKED — same as cover",
+      "reason": "No freely licensed gallery images confirmed."
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Email address: mail@beicsbrenin.co.uk",
+      "issue": "Sourced from the Visit Wales listing; not visibly published on the official beicsbrenin.co.uk website as of June 2026.",
+      "action": "Confirm the email address is correct and publicly intended before publishing. Call 01341 440728 or check beicsbrenin.co.uk contact page."
+    },
+    {
+      "claim": "Postcode LL40 2HZ",
+      "issue": "The official website and Visit Wales both use LL40 2HZ. Existing combo-page data at data/combo-pages/snowdonia--mountain-biking.json uses LL40 2HY. One of these is wrong.",
+      "action": "Verify postcode via Royal Mail or Google Maps before publishing. Update combo page data if the correct code is LL40 2HZ."
+    },
+    {
+      "claim": "Coordinates (lat/lng)",
+      "issue": "Three conflicting values found in existing site data: snowdonia--mountain-biking.json (52.794, -3.874), snowdonia--best-mountain-bike-trails.json (52.8141, -3.8742), and Visit Wales listing (52.8243, -3.89627). These represent meaningfully different points on a map.",
+      "action": "Verify the correct car park / visitor centre entrance coordinates on Google Maps for 'Beics Brenin Coed y Brenin LL40 2HZ' and update all three data sources to be consistent."
+    },
+    {
+      "claim": "Google Maps rating",
+      "issue": "No Google Maps rating was directly verified during this research. The Listen360 platform shows 4.8/5 but this is a separate customer feedback service, not Google. A Google rating of 4.8 would be unusually high — treat as unverified.",
+      "action": "Search Google Maps for 'Beics Brenin Coed y Brenin' and record the current rating and review count manually."
+    },
+    {
+      "claim": "Summit Cycles as parent operator",
+      "issue": "Listen360 lists the business entity as 'Summit Cycles — Beics Brenin Dolgellau'. It is unclear whether the listing should surface the trading name 'Beics Brenin' only, or reference Summit Cycles as the operating company.",
+      "action": "Confirm whether to display/use the Summit Cycles relationship, or treat Beics Brenin as a standalone brand for directory purposes."
+    },
+    {
+      "claim": "Pricing",
+      "issue": "Pricing was extracted from beicsbrenin.co.uk/bike-hire/ on 2026-06-04. Bike hire pricing changes seasonally.",
+      "action": "Re-verify prices against the official hire page before any public-facing use. Do not hardcode prices in the listing without a staleness disclaimer or regular review process."
+    },
+    {
+      "claim": "NRW visitor centre café closure",
+      "issue": "The NRW café and information counter closed 31 March 2025. Any Adventure Wales site content referring to a café at Coed y Brenin visitor centre needs updating.",
+      "action": "Audit existing site content (particularly combo pages referencing Coed y Brenin) for mentions of the visitor centre café and add caveats or update wording. Beics Brenin's own listing should note the café is no longer operating — only the bike shop, toilets, and trails remain."
+    },
+    {
+      "claim": "Region slug: mid-wales vs snowdonia",
+      "issue": "Coed y Brenin is within the Snowdonia National Park (Eryri) boundary, but the forest park is in Gwynedd, south of the main Snowdonia peaks. It is commonly marketed as Snowdonia/Eryri. The Adventure Wales site has a mid-wales.ts data file — confirm which region slug is correct for this operator.",
+      "action": "Confirm whether the operator should be filed under region: snowdonia or region: mid-wales in the directory data."
+    },
+    {
+      "claim": "Top 100 UK Attractions designation",
+      "issue": "top100attractions.com lists Beics Brenin, but it is unclear what year this designation applies to or whether it is still current.",
+      "action": "Verify the designation is current and confirm before including it as an active award in the listing."
+    }
+  ],
+
+  "existingSiteContentFlags": [
+    {
+      "file": "data/combo-pages/snowdonia--mountain-biking.json",
+      "issue": "The localDirectory.gearShops entry for Beics Brenin uses postcode LL40 2HY and coordinates 52.794, -3.874. Both may be incorrect (see review flags above). The description is broadly accurate but generic.",
+      "severity": "LOW — not materially misleading, but the postcode and coordinates should be corrected."
+    },
+    {
+      "file": "data/best-lists/snowdonia--best-mountain-bike-trails.json",
+      "issue": "References 'Beics Brenin bike hire and skills coaching available at the visitor centre' with coordinates 52.8141, -3.8742 (differs from other sources). Also includes FAQ answer stating hire costs '£35-60/day for a full-suspension bike' — but extracted pricing shows £55/day for full suspension, and £95/day for the top e-bike. The FAQ price range is outdated.",
+      "severity": "MEDIUM — the FAQ pricing figure appears to understate current e-bike hire prices significantly and could mislead visitors. Recommend updating the FAQ answer to remove specific prices or add a 'check operator website for current pricing' note."
+    }
+  ],
+
+  "sources": [
+    { "url": "https://beicsbrenin.co.uk/", "description": "Official Beics Brenin website — general info, copyright notice" },
+    { "url": "https://beicsbrenin.co.uk/bike-hire/", "description": "Bike hire types, pricing, booking terms (extracted June 2026)" },
+    { "url": "https://beicsbrenin.co.uk/trails/", "description": "Full trail listing with distances and grades" },
+    { "url": "https://www.visitwales.com/activity/activity/beics-brenin-coed-y-brenin-528701", "description": "Visit Wales listing — email, address (LL40 2HZ), coordinates, 7 images (all © Beics Brenin)" },
+    { "url": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/coed-y-brenin-visitor-centre/?lang=en", "description": "NRW Visitor Centre page — confirms café/info centre closed; Beics Brenin named as independent operator; toilets/trails status" },
+    { "url": "https://en.wikipedia.org/wiki/Coed-y-Brenin", "description": "Wikipedia — forest history, first races 1991, Dafydd Davis MBE, 9,000 acre site, NRW ownership, 2006 visitor centre" },
+    { "url": "https://www.top100attractions.com/attractions/item/beics-brenin", "description": "Top 100 Attractions listing — address LL40 2HZ, email, phone confirmed" },
+    { "url": "https://reviews.listen360.com/summit-cycles-beics-brenin-dolgellau", "description": "Listen360 customer feedback — identifies parent entity as Summit Cycles; 4.8/5 (not a Google Maps rating)" },
+    { "url": "https://www.instagram.com/beicsbrenin/", "description": "Official Instagram — handle and bio confirmed" },
+    { "url": "https://www.facebook.com/beicsbrenin", "description": "Official Facebook page" },
+    { "url": "https://www.mbwales.com/listings/beics-brenin/", "description": "Mountain Bike Wales directory listing" }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "Research is substantially complete: name, address, phone, email, website, opening hours, services, trail context, pricing, and social media are all sourced. Three issues require human QA before this listing can be published: (1) the postcode discrepancy (LL40 2HZ vs LL40 2HY) and conflicting coordinate values in existing site data must be resolved and all data sources updated to be consistent; (2) the email address is sourced from Visit Wales rather than the official website and needs confirmation; (3) all images — logo, cover, and gallery — are copyright Beics Brenin 2026 with no freely licensed alternative confirmed; the cover image blocker may be resolvable via a targeted Wikimedia Commons search, but this has not yet been completed. Additionally, the NRW café closure (March 2025) may affect existing combo-page copy and the FAQ pricing figures in the best-trails list are outdated. No AI-generated images may be used."
+}

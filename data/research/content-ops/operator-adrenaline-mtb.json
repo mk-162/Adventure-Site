@@ -1,0 +1,187 @@
+{
+  "_meta": {
+    "task": "content-ops-067-operator-adrenaline-mtb",
+    "contentItem": "operator-adrenaline-mtb",
+    "contentType": "operator",
+    "slug": "adrenaline-mtb",
+    "route": "/directory/adrenaline-mtb",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "blocked",
+    "researchOutcome": "operator_identity_unverified"
+  },
+
+  "researchSummary": {
+    "finding": "No operator trading under the name 'Adrenaline MTB' in Wales could be identified or verified through any accessible public source during this research pass. The operator has no confirmed website, phone, email, address, social media presence, Visit Wales listing, TripAdvisor entry, MBWales.com directory entry, or Companies House registration under this name.",
+    "searchesPerformed": [
+      "Direct domain lookups: adrenalinemtb.co.uk (ECONNREFUSED), adrenaline-mtb.co.uk (ECONNREFUSED), adrenalinemtb.wales (ECONNREFUSED), adrenalinemtb.com (ECONNREFUSED)",
+      "Web search: 'Adrenaline MTB Wales mountain biking operator'",
+      "Web search: '\"Adrenaline MTB\" Wales website contact'",
+      "Web search: '\"Adrenaline MTB\" Snowdonia OR North Wales OR Brecon OR Pembrokeshire'",
+      "Web search: '\"Adrenaline MTB\" site:facebook.com' — returned Adrenaline MTB NZ Ltd (New Zealand) and a generic hashtag page; no Wales operator found",
+      "Web search: '\"Adrenaline MTB\" mountain biking guided tours Wales' — no match",
+      "Web search: '\"adrenaline mtb\" wales \"mountain bike\" -australia -newzealand' — no match",
+      "Web search: '\"Adrenaline MTB\" OR \"Adrenalin MTB\" mountain biking company Wales Instagram' — returned NZ and Australian operators only",
+      "Web search: '\"Adrenaline MTB\" site:companieshouse.gov.uk' — no registered UK company under that name found",
+      "Web search: 'Adrenaline MTB Wales review trustpilot OR google business' — no match",
+      "Web search: '\"adrenaline mtb\" wales booking getYourGuide OR viator OR airbnb experiences' — no match",
+      "Web search: 'site:visitwales.com \"adrenaline mtb\" OR site:mbwales.com \"adrenaline mtb\"' — not listed",
+      "MBWales.com agents page fetched directly — 21 operators listed; Adrenaline MTB not among them",
+      "Visit Wales guided MTB holiday page — not listed",
+      "Facebook page facebook.com/MTB.Adrenaline fetched — page appears to be a generic extreme-sports hashtag page, not a Wales business"
+    ],
+    "domainsChecked": [
+      { "domain": "adrenalinemtb.co.uk", "result": "ECONNREFUSED — not registered or not serving" },
+      { "domain": "adrenaline-mtb.co.uk", "result": "ECONNREFUSED — not registered or not serving" },
+      { "domain": "adrenalinemtb.wales", "result": "ECONNREFUSED — not registered or not serving" },
+      { "domain": "adrenalinemtb.com", "result": "ECONNREFUSED — not registered or not serving" }
+    ],
+    "companiesHouseNote": "No company registered as 'Adrenaline MTB' or 'Adrenaline MTB Ltd' found in Companies House public search. Related 'Adrenaline' companies found (ADRENALINE MOTORCYCLES LIMITED, ADRENALINE EBIKES LIMITED, ADRENALINE MX LTD) are all unrelated to a Wales MTB guiding/hire operator.",
+    "closestCandidatesFound": "None confirmed. No public business with this name or a near-identical trading name found in Wales. Searches returned only a New Zealand gravity MTB parts retailer (Adrenaline MTB NZ Ltd, adrenalinemtb.co.nz) and a Scottish uplift service (Adrenalin Uplift, adrenalinuplift.co.uk) — both clearly distinct, non-Wales entities."
+  },
+
+  "proposedOperatorData": {
+    "name": "Adrenaline MTB",
+    "nameNote": "Display name taken from content-inventory. No operator has been found trading publicly under this exact name in Wales. Human verification required before any data is published.",
+    "slug": "adrenaline-mtb",
+    "website": null,
+    "websiteNote": "BLOCKED — no website found. All four guessed domains (adrenalinemtb.co.uk, adrenaline-mtb.co.uk, adrenalinemtb.wales, adrenalinemtb.com) returned ECONNREFUSED. No redirect to an active URL found.",
+    "contact": {
+      "phone": null,
+      "phoneNote": "BLOCKED — not found in any source.",
+      "email": null,
+      "emailNote": "BLOCKED — not found in any source.",
+      "address": null,
+      "addressNote": "BLOCKED — no verified address found. No region was recorded in the content inventory for this entry."
+    },
+    "location": {
+      "lat": null,
+      "lng": null,
+      "region": null,
+      "regionNote": "BLOCKED — region field is empty in content inventory. Cannot infer region from operator name alone with confidence.",
+      "nearestTown": null
+    },
+    "description": {
+      "short": null,
+      "shortNote": "BLOCKED — no verified description. No AI-generated content used.",
+      "full": null
+    },
+    "services": [],
+    "pricing": {
+      "note": "BLOCKED — no pricing information found."
+    },
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "BLOCKED — no Google Business listing verified under this name."
+      },
+      "tripadvisor": {
+        "rating": null,
+        "note": "BLOCKED — no TripAdvisor listing found under this name."
+      }
+    },
+    "socialMedia": {
+      "facebook": null,
+      "instagram": null,
+      "note": "BLOCKED — no social media accounts found under 'Adrenaline MTB' in Wales. facebook.com/MTB.Adrenaline appears to be a generic extreme-sports hashtag page with no Wales operator identity."
+    },
+    "logo": null,
+    "coverImage": null
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "Operator identity unverified. No logo source found. Cannot acquire or recommend logo images until operator identity is confirmed.",
+      "licence": null,
+      "actionRequired": "Establish operator identity first (see claimsNeedingHumanReview), then request logo asset directly from the operator. Do not use AI-generated images."
+    },
+    "cover": {
+      "status": "BLOCKED",
+      "reason": "No operator-specific photography identified. No freely licensed images confirmed for an operator whose identity has not yet been established.",
+      "licence": null,
+      "openverseNote": "Generic Wales mountain biking imagery may be available on Openverse or Wikimedia Commons under CC licences (e.g. for Afan Forest, Bike Park Wales, Antur Stiniog, Coed y Brenin). These must NOT be attributed to 'Adrenaline MTB' specifically until operator identity is confirmed and any licence terms met.",
+      "actionRequired": "(1) Confirm operator identity. (2) Search Openverse/Wikimedia Commons for freely licensed Wales MTB imagery. (3) Do not use AI-generated images."
+    },
+    "gallery": {
+      "status": "BLOCKED",
+      "reason": "No freely licensed gallery images confirmed. Same constraints as cover apply.",
+      "licence": null
+    }
+  },
+
+  "candidatesForHumanVerification": [],
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Operator identity",
+      "issue": "No operator trading publicly as 'Adrenaline MTB' was found in Wales through any accessible web source. All guessed domain names are unreachable. The entry has no region, activity type, or source URLs recorded in the content inventory — there is no signal to narrow the search. The slug may refer to: (a) a very small or informal operation with no web presence; (b) an operator known by a different public name; (c) a business that has ceased trading; or (d) a data entry error.",
+      "priority": "CRITICAL",
+      "sourceUrl": null,
+      "action": "Identify the internal source that introduced 'Adrenaline MTB' into the content inventory. Check booking platform records (FareHarbor, Bookeo, GetYourGuide, Viator), any prior BD/commercial relationship notes, or the original data import. If the operator is confirmed, obtain their website URL, trading name, and contact details directly."
+    },
+    {
+      "claim": "Operating status",
+      "issue": "With no confirmed web presence, no social media accounts, no directory listings, and all guessed domain names returning ECONNREFUSED, it is possible this operator has ceased trading, never had a web presence, or was entered into the inventory in error.",
+      "priority": "HIGH",
+      "sourceUrl": null,
+      "action": "Verify the operator is currently active before investing further content production effort. If no internal records can confirm the operator exists, consider removing or archiving this entry."
+    },
+    {
+      "claim": "Commercial tier and priority classification",
+      "issue": "The operator is classified as 'unclassified_operator' with priority 34 — consistent with a low-confidence entry. Without any verified data, the entry should not be promoted to a higher commercial tier.",
+      "priority": "LOW",
+      "sourceUrl": null,
+      "action": "Once operator identity is confirmed, reassess commercial tier. If the operator is active but very small, 'unclassified_operator' is likely correct and no free premium page uplift is warranted."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.mbwales.com/agents/",
+      "description": "Mountain Bike Wales operator directory — 21 operators listed; Adrenaline MTB not among them. Confirmed negative."
+    },
+    {
+      "url": "https://www.visitwales.com/things-do/adventure-and-activities/cycling-and-mountain-biking/great-places-guided-mountain-bike-holiday",
+      "description": "Visit Wales guided MTB holiday page — Adrenaline MTB not listed. Confirmed negative."
+    },
+    {
+      "url": "https://www.facebook.com/MTB.Adrenaline",
+      "description": "Facebook page MTB.Adrenaline — appears to be a generic extreme-sports hashtag/aggregator page; no evidence of a Wales operator identity."
+    },
+    {
+      "url": "https://www.facebook.com/adrenalinemtb/",
+      "description": "Facebook: Adrenaline MTB NZ Ltd — a New Zealand online gravity MTB parts retailer. Not a Wales operator."
+    },
+    {
+      "url": "https://find-and-update.company-information.service.gov.uk/",
+      "description": "Companies House public search — no company registered as 'Adrenaline MTB' in the UK. Search returned unrelated 'Adrenaline' companies only."
+    },
+    {
+      "url": "https://www.visitwales.com/things-do/adventure-and-activities/cycling-and-mountain-biking/mountain-bike-heaven-wales",
+      "description": "Visit Wales main MTB overview page — does not list an operator called Adrenaline MTB."
+    }
+  ],
+
+  "recommendedNextStatus": "blocked",
+  "recommendedNextStatusReason": "The operator 'Adrenaline MTB' cannot be found in any accessible public source under that name. All four guessed domain names (adrenalinemtb.co.uk, adrenaline-mtb.co.uk, adrenalinemtb.wales, adrenalinemtb.com) are unreachable. No Visit Wales listing, TripAdvisor entry, MBWales directory entry, Google Business profile, Companies House registration, or social media account exists for a Wales-based 'Adrenaline MTB' operator. The content inventory entry has no region, activity type, or source URLs recorded. Zero data fields (website, phone, email, address, description, images, Google rating) can be populated from verified sources. This listing must be paused pending internal investigation to: (1) confirm the operator's real-world identity and current trading name; (2) establish whether the operator is still active; and (3) obtain contact details and media assets directly from the operator or from the internal records that produced this slug.",
+
+  "topBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Operator identity unverified — no public business found trading as 'Adrenaline MTB' in Wales under any variation of that name",
+      "action": "Search internal commercial/booking records and data-import history for the source of this slug. If no record exists, consider archiving the entry. If an operator is identified, obtain their current trading name, website, and contact details directly from them."
+    },
+    {
+      "rank": 2,
+      "blocker": "No website, contact details (phone/email/address), or social media under this name — all guessed domains ECONNREFUSED",
+      "action": "Once operator identity is confirmed, obtain the website URL, phone, email, and address directly from the operator. Do not publish any contact details without operator confirmation."
+    },
+    {
+      "rank": 3,
+      "blocker": "No images available (logo, cover, gallery) — cannot proceed with any directory listing",
+      "action": "After identity confirmation, contact the operator directly to request a media pack (logo, hero photography). Do not use AI-generated images. Generic Wales MTB imagery from Openverse or Wikimedia Commons may be considered as a temporary cover placeholder only — must not be attributed to this operator until identity is confirmed."
+    }
+  ]
+}

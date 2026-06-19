@@ -1,0 +1,210 @@
+{
+  "_meta": {
+    "task": "content-ops-095-operator-gaynor-lee-coaching",
+    "contentItem": "operator-gaynor-lee-coaching",
+    "contentType": "operator",
+    "slug": "gaynor-lee-coaching",
+    "route": "/directory/gaynor-lee-coaching",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "blocked",
+    "researchOutcome": "identity_unverifiable",
+    "identityConfidence": "VERY LOW — Extensive web research across search engines, Companies House, Visit Wales tourism portals, social media (Facebook, Instagram, LinkedIn), Archery GB, and NGB databases returned no verifiable match for 'Gaynor Lee Coaching' as an outdoor adventure operator in Wales. The closest candidate found (GH Coaching Services / Gaynor Hutchison) is an archery and cycle coaching business based in Bedfordshire/Hertfordshire, England — not Wales — and operates under a different name. All directory fields remain unverifiable.",
+    "researchNotes": "All seven missing fields (website, phone, email, description, cover image, logo, Google rating) remain blocked. No authoritative source for any factual claim was identified. Human review is required before this operator can be published or further developed."
+  },
+
+  "proposedOperatorData": {
+    "name": "Gaynor Lee Coaching",
+    "slug": "gaynor-lee-coaching",
+
+    "website": null,
+    "websiteNote": "BLOCKED — no website found. Searches across Google, Bing, and domain lookups returned no result for a Welsh outdoor/adventure coaching business under this name. A Wix-hosted site (ghcoachingservices.wixsite.com) for 'GH Coaching Services' run by Gaynor Hutchison (archery/cycling) appeared in search results but is based in Bedfordshire/Hertfordshire, England, and operates under a different name — it is NOT confirmed as the same operator.",
+
+    "contact": {
+      "phone": null,
+      "phoneNote": "BLOCKED — no phone number found in any verified source.",
+      "email": null,
+      "emailNote": "BLOCKED — no email address found in any verified source."
+    },
+
+    "location": {
+      "primaryBase": null,
+      "primaryBaseNote": "BLOCKED — no location data found. Region, address, and coordinates cannot be determined.",
+      "region": null,
+      "regionNote": "BLOCKED — not present in content inventory; no region data found during research.",
+      "address": null,
+      "lat": null,
+      "lng": null
+    },
+
+    "description": {
+      "short": null,
+      "shortNote": "BLOCKED — no description possible without verifying operator identity and services.",
+      "full": null,
+      "fullNote": "BLOCKED — same reason."
+    },
+
+    "services": [],
+    "servicesNote": "BLOCKED — no services data found.",
+
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "BLOCKED — no Google Business Profile found for this operator. Searched 'Gaynor Lee Coaching Wales' and variants on Google Maps and in web results — no listing confirmed."
+      },
+      "facebook": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "BLOCKED — no Facebook page confirmed for 'Gaynor Lee Coaching'. Personal profiles for 'Gaynor Lee' exist but none are linked to an outdoor/adventure coaching business in Wales."
+      },
+      "tripadvisor": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "BLOCKED — no TripAdvisor listing confirmed."
+      }
+    },
+
+    "socialMedia": {
+      "note": "BLOCKED — no social media accounts verified for this operator. A Facebook public directory entry for 'Gaynor Lee' (en-gb.facebook.com/public/Gaynor-Lee) appears to aggregate personal profiles, not a coaching business page. No Instagram handle found."
+    },
+
+    "logo": null,
+    "coverImage": null
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "Operator identity unverifiable — no logo can be sourced until the operator is confirmed.",
+      "licence": null,
+      "actionRequired": "Confirm operator identity first. Then request logo directly from operator with written usage permission."
+    },
+    "cover": {
+      "status": "BLOCKED",
+      "reason": "Operator identity unverifiable — no cover image can be sourced. No activity type, location, or region confirmed. Cannot apply generic location imagery without knowing the operator's region and activity type.",
+      "licence": null,
+      "actionRequired": "Confirm operator identity, region, and activity type. Then either (a) obtain operator photography with written licence, or (b) source CC-licensed imagery from Openverse matching the confirmed activity/location."
+    },
+    "gallery": {
+      "status": "BLOCKED",
+      "reason": "Same constraints as cover image.",
+      "licence": null,
+      "actionRequired": "Resolve operator identity first."
+    }
+  },
+
+  "researchLog": [
+    {
+      "query": "Gaynor Lee Coaching Wales adventure outdoor operator",
+      "result": "No match. Returned general Welsh outdoor adventure operators — none named Gaynor Lee.",
+      "source": "Google web search"
+    },
+    {
+      "query": "\"Gaynor Lee Coaching\" Wales website",
+      "result": "Best candidate: GH Coaching Services (ghcoachingservices.wixsite.com/my-site-1) operated by Gaynor Hutchison — archery and cycle instruction. Based in Bedfordshire/Hertfordshire, England. NOT confirmed as a Welsh operator or as 'Gaynor Lee Coaching'.",
+      "source": "Google web search + page fetch"
+    },
+    {
+      "query": "\"Gaynor Lee Coaching\" site:facebook.com OR site:instagram.com OR site:linkedin.com",
+      "result": "No dedicated 'Gaynor Lee Coaching' business page found. Multiple unrelated personal profiles for 'Gaynor Lee' on LinkedIn (Smart Solutions Training — care training; Help the Aged). LinkedIn fetch blocked (HTTP 999).",
+      "source": "Google web search"
+    },
+    {
+      "query": "Companies House search: 'gaynor lee coaching'",
+      "result": "No active company named 'Gaynor Lee Coaching' found. Single near-match 'Gaynor Thorne Coaching and Cognitive Hypnotherapy Limited' (Company 13370715) — dissolved September 2025, based in London. Not a Welsh outdoor adventure operator.",
+      "source": "find-and-update.company-information.service.gov.uk"
+    },
+    {
+      "query": "Gaynor Lee LAM personal appointments (Companies House officer search)",
+      "result": "Associated with LAM Enterprise Ltd (Company 11474048) — dissolved, based in High Wycombe, HP15 6UR. SIC code not shown. Unrelated to Welsh outdoor adventure coaching.",
+      "source": "find-and-update.company-information.service.gov.uk"
+    },
+    {
+      "query": "\"Gaynor Lee\" coaching visitwales OR NRW outdoor activity",
+      "result": "No match. Visit Wales and NRW search pages returned general outdoor activity content, no operator named Gaynor Lee.",
+      "source": "Google web search"
+    },
+    {
+      "query": "\"Gaynor Lee\" cycling running triathlon fitness coach Wales",
+      "result": "No match. Various Welsh triathlon/cycling coaching businesses returned; none named Gaynor Lee.",
+      "source": "Google web search"
+    },
+    {
+      "query": "Source registry check (content/ops/source-registry.json)",
+      "result": "No entry for operator-gaynor-lee-coaching in source registry.",
+      "source": "Local codebase grep"
+    },
+    {
+      "query": "glamorganarchery.wales/coaching.html",
+      "result": "Connection refused — page unavailable at time of research.",
+      "source": "Direct page fetch attempt"
+    }
+  ],
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "GH Coaching Services (Gaynor Hutchison, ghcoachingservices.wixsite.com) may be the same operator as 'Gaynor Lee Coaching'",
+      "issue": "GH Coaching Services offers archery and cycling instruction but is documented as operating in Bedfordshire and Hertfordshire, England. The operator's surname is 'Hutchison', not 'Lee'. There is no evidence connecting this business to a Welsh directory entry under 'Gaynor Lee Coaching'. If the Adventure Wales directory slug was created based on a data import or referral, the source of that import should be investigated.",
+      "priority": "HIGH",
+      "sourceUrl": "https://ghcoachingservices.wixsite.com/my-site-1/about-gaynor",
+      "action": "Check the internal data source or referral that created the 'gaynor-lee-coaching' directory stub. If a referral contact exists, reach out to confirm whether GH Coaching Services / Gaynor Hutchison has a Welsh operation or is unrelated."
+    },
+    {
+      "claim": "Operator may exist as a sole trader with no web presence",
+      "issue": "Some small coaching operators in Wales operate exclusively via social media, word of mouth, or local sports club networks without a formal website. The operator may be real but simply have near-zero indexed web footprint.",
+      "priority": "HIGH",
+      "sourceUrl": null,
+      "action": "Review the original data source or referral that created this directory entry. Check if a phone number, email, or social media handle was recorded at time of submission. If available, make direct contact."
+    },
+    {
+      "claim": "Operator name may be incorrect or operator may have rebranded",
+      "issue": "The slug 'gaynor-lee-coaching' could represent: (a) a coaching business where 'Lee' is a first name (e.g. 'Gaynor-Lee Coaching' as a personal name), (b) an operator that has rebranded since the stub was created, or (c) a data-entry error. No evidence for or against any of these can be found without the original submission data.",
+      "priority": "MEDIUM",
+      "sourceUrl": null,
+      "action": "Cross-reference the original data source or referral. If an alternative name or spelling exists, re-run research under the correct name."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://ghcoachingservices.wixsite.com/my-site-1/about-gaynor",
+      "description": "GH Coaching Services — About Gaynor page. Confirmed as Gaynor Hutchison, archery/cycle coaching, based in England. Evaluated and found NOT to be the target operator."
+    },
+    {
+      "url": "https://ghcoachingservices.wixsite.com/my-site-1",
+      "description": "GH Coaching Services — homepage. Confirmed English location (Bedfordshire/Hertfordshire); archery beginners, taster sessions, A4S club nights."
+    },
+    {
+      "url": "https://find-and-update.company-information.service.gov.uk/search?q=gaynor+lee+coaching",
+      "description": "Companies House search for 'gaynor lee coaching'. No active Welsh company found under this name."
+    },
+    {
+      "url": "https://find-and-update.company-information.service.gov.uk/officers/2aw5udrQO02RfoezsBn_JEK7GPw/appointments",
+      "description": "Companies House officer search for Gaynor Lee LAM. Associated only with dissolved company LAM Enterprise Ltd in High Wycombe — unrelated."
+    },
+    {
+      "url": "https://uk.linkedin.com/in/gaynor-lee-7672ab78",
+      "description": "LinkedIn profile — Gaynor Lee, Managing Director, Smart Solutions Training (care training). Fetch blocked (HTTP 999); evaluated as unrelated based on search snippet."
+    }
+  ],
+
+  "recommendedNextStatus": "blocked",
+  "blockers": [
+    {
+      "rank": 1,
+      "field": "operator_identity",
+      "description": "The operator 'Gaynor Lee Coaching' cannot be identified from any public source. No website, social media, tourism portal listing, Companies House record, or NGB coach database entry was found for a Welsh outdoor/adventure coaching business under this name. The directory stub cannot be progressed without confirming the operator exists and consenting to be listed."
+    },
+    {
+      "rank": 2,
+      "field": "contact_details",
+      "description": "No phone, email, or website found. Without operator contact details, there is no way to reach out for content permission, logo, photographs, or factual verification."
+    },
+    {
+      "rank": 3,
+      "field": "all_content_fields",
+      "description": "All seven originally-missing fields (description, cover image, logo, website, phone, email, Google rating) remain unresolvable without first establishing operator identity. No description can be written and no images can be sourced without knowing the operator's region, activity type, and giving them the opportunity to consent to listing."
+    }
+  ]
+}

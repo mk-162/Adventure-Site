@@ -1,0 +1,229 @@
+{
+  "contentItem": "operator-arete-outdoor-centre",
+  "slug": "/directory/arete-outdoor-centre",
+  "contentType": "operator",
+  "channel": "commercial",
+  "commercialTier": "unclassified_operator",
+  "researchDate": "2026-06-04",
+  "recommendedNextStatus": "qa_needed",
+
+  "proposedChanges": {
+    "name": "Arete Outdoor Centre",
+    "tagline": "Multi-activity residential outdoor centre on the edge of Snowdonia",
+    "description": "Arete Outdoor Centre is a not-for-profit, AALA-licensed multi-activity residential centre based in Llanrug, a village 3 miles east of Caernarfon in North Wales. Set between the mountains of Eryri (Snowdonia) and the Anglesey coastline, the centre runs rock climbing, coasteering, kayaking, gorge scrambling, bushcraft, and more for schools, youth groups, families, and adults. Formerly Llanrug Outdoor Education Centre (operated by Worcestershire Council for over 35 years), it was taken over in 2014 by staff who formed an independent non-profit. It holds an AALA licence, Adventuremark accreditation, the LOtC Quality Badge, and a 3-star Visit Wales residential grading. Sleeping up to 118 across three buildings, it offers group packages including Duke of Edinburgh Award expeditions, summer camps, and NGB instructor training.",
+    "address": {
+      "line1": "Arete Outdoor Centre",
+      "town": "Llanrug",
+      "county": "Gwynedd",
+      "postcode": "LL55 4AP",
+      "country": "Wales"
+    },
+    "coordinates": {
+      "lat": 53.14409,
+      "lng": -4.18432,
+      "accuracy": "approximate — sourced from VisitWales metadata, not independently verified against OS maps. Two VisitWales records agree to ~70 m (53.14409/-4.18432 and 53.14481/-4.18382); treat as Llanrug village centroid.",
+      "flagForHumanReview": true
+    },
+    "region": "north-wales",
+    "subRegion": "Eryri / Snowdonia (Llanrug, Caernarfon area)",
+    "contact": {
+      "phone": "01286 672136",
+      "mobile": "07743 336093",
+      "email": "info@aretecentre.co.uk",
+      "website": "https://aretecentre.co.uk/"
+    },
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/aretecentre",
+      "instagram": "https://www.instagram.com/aretecentre/",
+      "twitter": "https://x.com/aretecentre",
+      "youtube": "https://www.youtube.com/channel/UC5t_cScIJMGY5OjhwDhVgLA"
+    },
+    "activities": [
+      "rock climbing",
+      "abseiling",
+      "bouldering",
+      "coasteering",
+      "gorge scrambling",
+      "canyoning",
+      "kayaking",
+      "sea kayaking",
+      "white water kayaking",
+      "lake canoeing",
+      "stand-up paddleboarding",
+      "paddle surfing",
+      "rafting",
+      "surfing",
+      "hill walking",
+      "mountain walking",
+      "winter mountaineering",
+      "sea level traversing",
+      "Tyrolean traverse",
+      "bushcraft",
+      "underground mine exploration",
+      "weaseling",
+      "Duke of Edinburgh Award expeditions"
+    ],
+    "groupTypes": [
+      "schools",
+      "youth groups",
+      "families",
+      "adults",
+      "corporate",
+      "instructor training groups"
+    ],
+    "accommodation": {
+      "type": "residential group hostel",
+      "totalCapacity": 118,
+      "buildings": [
+        { "name": "Main Centre", "beds": 54 },
+        { "name": "West Wing", "beds": 20 },
+        { "name": "Bryn Eryr", "beds": 44 }
+      ],
+      "minimumGroup": 10,
+      "priceRangePerPersonPerNight": "£15–£30",
+      "priceRangeNote": "From VisitWales accommodation listing — verify directly before publishing; may be outdated"
+    },
+    "openingSeason": "Year-round (inferred from winter mountaineering programme and residential operation; no published closure dates found — flag for verification)",
+    "accreditations": [
+      {
+        "name": "AALA Licence",
+        "detail": "Statutory AALA licence No. L189599 — covers climbing, watersports, caving, trekking",
+        "issueDate": "2026-03-28",
+        "expiryDate": "2028-03-27",
+        "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R2163"
+      },
+      {
+        "name": "Adventuremark",
+        "detail": "Non-statutory safety accreditation for activities outside AALA scope",
+        "source": "https://aretecentre.co.uk/arete-centre-uk/about/"
+      },
+      {
+        "name": "LOtC Quality Badge",
+        "detail": "Learning Outside the Classroom badge — risk management, educational provision, facility safety",
+        "source": "https://aretecentre.co.uk/arete-centre-uk/about/"
+      },
+      {
+        "name": "DofE Approved Activity Provider",
+        "detail": "Duke of Edinburgh Award approved provider",
+        "source": "https://aretecentre.co.uk/schools-youth/parents-guide/"
+      },
+      {
+        "name": "Visit Wales 3-star grading",
+        "detail": "Residential accommodation graded 3-star by Visit Wales; also holds Cyclists Welcome and Walkers Welcome endorsements",
+        "source": "https://www.visitwales.com/accommodation/group-hostel/arete-outdoor-centre-527571"
+      }
+    ],
+    "ratings": {
+      "google": {
+        "score": 4.1,
+        "reviewCount": 58,
+        "note": "Score sourced from Birdeye aggregation of Google data — cross-check against Google Maps directly before publishing",
+        "source": "https://reviews.birdeye.com/arete-outdoor-education-centre-llanrug-167850813234984",
+        "flagForHumanReview": true
+      },
+      "tripadvisor": {
+        "score": 4.2,
+        "maxScore": 5,
+        "reviewCount": 22,
+        "url": "https://www.tripadvisor.com/Attraction_Review-g186431-d6434422-Reviews-Arete_Outdoor_Centre_Llanrug-Caernarfon_Gwynedd_North_Wales_Wales.html",
+        "note": "Reviews polarised: strong praise for instructors and food; some complaints about accommodation condition"
+      }
+    },
+    "legalEntity": {
+      "type": "Private company limited by guarantee (non-profit)",
+      "companiesHouseNumber": "08857047",
+      "incorporationDate": "2014-01-22",
+      "status": "Active",
+      "source": "https://find-and-update.company-information.service.gov.uk/company/08857047"
+    }
+  },
+
+  "images": {
+    "coverImage": {
+      "status": "BLOCKED",
+      "reason": "No freely licensed (Creative Commons or equivalent) images of Arete Outdoor Centre found. The operator's gallery (https://aretecentre.co.uk/photos/) links to Google Drive folders with no stated licence — all assumed All Rights Reserved. Wikimedia Commons returned zero results.",
+      "recommendation": "Either (a) contact info@aretecentre.co.uk to request permission and obtain a licence grant in writing, or (b) source generic CC-licensed imagery of Snowdonia coasteering/kayaking from Openverse (search terms: 'coasteering Wales', 'kayaking Snowdonia') as placeholder contextual photography only — do not represent as Arete-specific."
+    },
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "Logo present on aretecentre.co.uk but no licence grant found. Requires direct permission from operator."
+    }
+  },
+
+  "sources": [
+    {
+      "url": "https://aretecentre.co.uk/",
+      "description": "Official operator website"
+    },
+    {
+      "url": "https://aretecentre.co.uk/contact/",
+      "description": "Contact details, social media links"
+    },
+    {
+      "url": "https://aretecentre.co.uk/arete-centre-uk/about/",
+      "description": "Activities, accreditations, history"
+    },
+    {
+      "url": "https://aretecentre.co.uk/schools-youth/parents-guide/",
+      "description": "DofE and school programme details"
+    },
+    {
+      "url": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R2163",
+      "description": "AALA/HSE statutory licence record — licence L189599, valid until 2028-03-27"
+    },
+    {
+      "url": "https://www.visitwales.com/activity/arete-outdoor-education-centre-930388",
+      "description": "VisitWales activity listing — coordinates, activities"
+    },
+    {
+      "url": "https://www.visitwales.com/accommodation/group-hostel/arete-outdoor-centre-527571",
+      "description": "VisitWales accommodation listing — 3-star grading, capacity, pricing"
+    },
+    {
+      "url": "https://www.outdoor-learning.org/organisation-directory/arete-outdoor-centre-.html",
+      "description": "Institute for Outdoor Learning directory — activity list"
+    },
+    {
+      "url": "https://find-and-update.company-information.service.gov.uk/company/08857047",
+      "description": "Companies House — legal entity details"
+    },
+    {
+      "url": "https://reviews.birdeye.com/arete-outdoor-education-centre-llanrug-167850813234984",
+      "description": "Google review aggregation via Birdeye — 4.1/5, 58 reviews (verify directly)"
+    },
+    {
+      "url": "https://www.tripadvisor.com/Attraction_Review-g186431-d6434422-Reviews-Arete_Outdoor_Centre_Llanrug-Caernarfon_Gwynedd_North_Wales_Wales.html",
+      "description": "TripAdvisor listing — 4.2/5, 22 reviews"
+    }
+  ],
+
+  "claimsRequiringHumanReview": [
+    {
+      "claim": "Coordinates: lat 53.14409, lng -4.18432",
+      "reason": "Sourced from VisitWales metadata only. Not independently verified against OS maps or Google Maps pin. Two VisitWales records agree within ~70 m — likely accurate but should be spot-checked before publishing.",
+      "priority": "HIGH"
+    },
+    {
+      "claim": "Google rating: 4.1 / 58 reviews",
+      "reason": "Sourced from Birdeye aggregation, not directly from Google Maps. Score and count may be stale. Cross-check on maps.google.com before publishing.",
+      "priority": "HIGH"
+    },
+    {
+      "claim": "Accommodation price range £15–£30 per person per night",
+      "reason": "Sourced from VisitWales listing — may be outdated. Verify against current operator pricing before publishing.",
+      "priority": "MEDIUM"
+    },
+    {
+      "claim": "Year-round operation assumed",
+      "reason": "No published opening hours or seasonal closure dates found anywhere. Inferred from winter mountaineering programme. Confirm directly with operator.",
+      "priority": "MEDIUM"
+    },
+    {
+      "claim": "Images — cover photo and logo",
+      "reason": "No freely licensed images found. Content item will need either operator permission or a generic contextual image clearly labelled as such.",
+      "priority": "HIGH"
+    }
+  ],
+
+  "qaNotes": "All core blockers resolved except images and coordinate verification. Description is factual, sourced, and non-promotional. Commercial tier remains unclassified_operator — no upgrade applied. AALA licence is current (expires 2028-03-27). Ready for human QA on the three HIGH items above before sign-off."
+}

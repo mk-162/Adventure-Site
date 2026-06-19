@@ -1,0 +1,81 @@
+{
+  "generatedAt": "2026-06-04T01:50:05.243Z",
+  "limit": 9,
+  "concurrency": 3,
+  "taskType": "research",
+  "status": "research_needed",
+  "results": [
+    {
+      "taskId": "content-ops-092-operator-evolution-bikes",
+      "outputPath": "data/research/content-ops/operator-evolution-bikes.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:32:13.167Z",
+      "finishedAt": "2026-06-04T01:37:13.770Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-092-operator-evolution-bikes.log"
+    },
+    {
+      "taskId": "content-ops-091-operator-elan-valley-lodge",
+      "outputPath": "data/research/content-ops/operator-elan-valley-lodge.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:32:13.147Z",
+      "finishedAt": "2026-06-04T01:37:58.959Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-091-operator-elan-valley-lodge.log"
+    },
+    {
+      "taskId": "content-ops-093-operator-expedition-guide",
+      "outputPath": "data/research/content-ops/operator-expedition-guide.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:32:13.181Z",
+      "finishedAt": "2026-06-04T01:38:03.410Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-093-operator-expedition-guide.log"
+    },
+    {
+      "taskId": "content-ops-095-operator-gaynor-lee-coaching",
+      "outputPath": "data/research/content-ops/operator-gaynor-lee-coaching.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:37:58.961Z",
+      "finishedAt": "2026-06-04T01:42:59.613Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-095-operator-gaynor-lee-coaching.log"
+    },
+    {
+      "taskId": "content-ops-096-operator-gethin-woods-bike-park",
+      "outputPath": "data/research/content-ops/operator-gethin-woods-bike-park.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:38:03.412Z",
+      "finishedAt": "2026-06-04T01:43:27.247Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-096-operator-gethin-woods-bike-park.log"
+    },
+    {
+      "taskId": "content-ops-094-operator-forest-freeride",
+      "outputPath": "data/research/content-ops/operator-forest-freeride.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:37:13.772Z",
+      "finishedAt": "2026-06-04T01:44:01.154Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-094-operator-forest-freeride.log"
+    },
+    {
+      "taskId": "content-ops-099-operator-gone-mountain-biking",
+      "outputPath": "data/research/content-ops/operator-gone-mountain-biking.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:44:01.155Z",
+      "finishedAt": "2026-06-04T01:48:04.781Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-099-operator-gone-mountain-biking.log"
+    },
+    {
+      "taskId": "content-ops-097-operator-gigrin-farm",
+      "outputPath": "data/research/content-ops/operator-gigrin-farm.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:42:59.614Z",
+      "finishedAt": "2026-06-04T01:48:33.142Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-097-operator-gigrin-farm.log"
+    },
+    {
+      "taskId": "content-ops-098-operator-go-below-underground",
+      "outputPath": "data/research/content-ops/operator-go-below-underground.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:43:27.253Z",
+      "finishedAt": "2026-06-04T01:50:05.237Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-098-operator-go-below-underground.log"
+    }
+  ]
+}

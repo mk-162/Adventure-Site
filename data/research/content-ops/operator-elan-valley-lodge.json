@@ -1,0 +1,386 @@
+{
+  "_meta": {
+    "task": "content-ops-091-operator-elan-valley-lodge",
+    "contentItem": "operator-elan-valley-lodge",
+    "contentType": "operator",
+    "slug": "elan-valley-lodge",
+    "route": "/directory/elan-valley-lodge",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "well_sourced_with_flags",
+    "identityConfidence": "HIGH — legal entity confirmed via Companies House (02243757); physical address, phone, and Visit Wales listing all consistent"
+  },
+
+  "proposedOperatorData": {
+    "name": "Elan Valley Lodge",
+    "slug": "elan-valley-lodge",
+    "legalEntity": "ELAN VALLEY LODGE LTD.",
+    "legalEntityNote": "Companies House number 02243757, incorporated 13 April 1988, status: Active. SIC 85590 (Other education n.e.c.). Registered address is Dwr Cymru Welsh Water, St. Mellons, Cardiff CF3 0LT — the Elan Estate is owned and managed by Welsh Water (Dwr Cymru); the lodge's registered address reflects that estate relationship.",
+    "legalEntitySource": "https://find-and-update.company-information.service.gov.uk/company/02243757",
+
+    "websites": {
+      "activityLeisure": "https://www.elanvalleyleisure.co.uk",
+      "activityLeisureNote": "Leisure and outdoor activity brand of the same property. Features MTB packages, kayaking, archery, family/group breaks. This is the more relevant URL for an adventure/outdoor directory. Listed by VisitWales as the primary website for the activity accommodation.",
+      "activityLeisureSource": "https://www.visitwales.com/accommodation/activity-accommodation/elan-valley-lodge-538571",
+      "corporateTraining": "https://www.elanvalleylodge.co.uk",
+      "corporateTrainingNote": "Corporate team building and leadership/management training brand. Same physical address and phone number; same legal entity. Claims 30 years of team leadership and management development. This URL is the primary brand for the corporate/B2B market.",
+      "corporateTrainingSource": "https://www.elanvalleylodge.co.uk/"
+    },
+    "websiteEditorialDecision": "HUMAN REVIEW REQUIRED — Two active websites (elanvalleyleisure.co.uk and elanvalleylodge.co.uk) represent the same property under different brand names. For the Adventure Wales outdoor activity directory, elanvalleyleisure.co.uk is the appropriate primary URL. Confirm with operator before publishing.",
+
+    "contact": {
+      "phone": "01597 811143",
+      "phoneSource": "https://www.elanvalleylodge.co.uk/contact-us (confirmed on multiple sources)",
+      "phoneAlternateFormat": "+44 1597 811143",
+      "email": "roy@elanvalleylodge.co.uk",
+      "emailNote": "Email address found on the VisitWales listing. Contains a personal first name ('roy') — verify it is still the active contact address before publishing, and confirm whether a generic info@ or bookings@ address exists.",
+      "emailSource": "https://www.visitwales.com/accommodation/activity-accommodation/elan-valley-lodge-538571",
+      "address": {
+        "line1": "Elan Village",
+        "locality": "Rhayader",
+        "county": "Powys",
+        "postcode": "LD6 5HP",
+        "country": "Wales"
+      },
+      "addressSource": "https://www.elanvalleylodge.co.uk/contact-us and https://www.visitwales.com/accommodation/activity-accommodation/elan-valley-lodge-538571"
+    },
+
+    "location": {
+      "lat": 52.283,
+      "lng": -3.550,
+      "latLngNote": "Coordinates from internal MTB operators CSV (content/operators/mtb.csv). These are approximate and place the site in Elan Village / Rhayader area, consistent with address. Verify on a map before publishing as a business pin.",
+      "latLngSource": "content/operators/mtb.csv (internal data file)",
+      "region": "mid_wales",
+      "town": "Rhayader",
+      "nearbyLandmark": "Elan Valley Estate, Welsh Water reservoir system",
+      "accessNote": "Approximately 2 hours from the Midlands, Manchester, Liverpool, and Bristol; approximately 4 hours from London.",
+      "accessSource": "https://www.elanvalleylodge.co.uk/about-elan-valley-lodge"
+    },
+
+    "buildingNote": "Grade II listed building (Cadw, listed 31 July 1995). Built 1906-1909 as a school by the City of Birmingham for children of maintenance workers at the Elan Valley reservoir scheme. Architects: Buckland, Haywood & Farmer of Birmingham. Arts & Crafts style; brown rubble with bathstone dressings, slate roof, mullioned windows, 3 tall gables with large mullioned and transomed windows.",
+    "buildingSource": "https://britishlistedbuildings.co.uk/300016206-elan-valley-lodge-rhayader and web search results from Cadw record",
+
+    "description": {
+      "short": "Elan Valley Lodge is a 5-star en-suite activity accommodation and outdoor pursuits centre set in a Grade II listed Victorian building on the Elan Estate near Rhayader, Mid Wales. The lodge offers mountain biking packages, kayaking, high ropes, climbing, archery, and more, accommodating groups of up to 36 in beautiful, remote countryside surrounded by 73 square miles of the Elan Estate.",
+      "shortNote": "Drafted from verified sources (official website, VisitWales, TripAdvisor). Needs editorial review. The 'only 5-star en-suite Outdoor Activity Centre in the UK' claim (appearing on Facebook) has not been independently verified and should not be published without confirmation.",
+      "full": "Elan Valley Lodge occupies a magnificent Arts & Crafts Victorian building in Elan Village, Rhayader, Powys — a Grade II listed former school built in 1906–1909 on the Elan Estate, an area of 73 square miles of mountain and moorland managed by Dwr Cymru Welsh Water.\n\nThe lodge offers 24 en-suite rooms (12 twin, 12 single) accommodating up to 36 guests in 5-star activity accommodation rated by Visit Wales. All guests enjoy locally-sourced, home-cooked meals including full breakfasts and evening meals. The facility includes a licensed honesty bar, lounge, drying room, bike storage, washing facilities, conference room, guest kitchen, free Wi-Fi, and waterproof clothing and outdoor PPE available for loan.\n\nFor mountain bikers, the lodge offers weekend breaks for groups of 15–36 with full board, bike storage and drying, and optional local guide services to plan and accompany routes. The surrounding Elan Valley and Cambrian Mountains are renowned for natural mountain biking terrain, featuring trails such as the Nantgwillt trail and Penygarreg descent, along with an extensive network of bridleways.\n\nOther outdoor activities available at or near the lodge include kayaking, canoeing, raft building, high ropes challenges, rock climbing, abseiling, archery, orienteering, bird watching, and walking. The lodge also operates as a corporate team building and leadership development centre under the Elan Valley Lodge brand.\n\nThe lodge has a 4.9-star rating on TripAdvisor (19 reviews) and holds a TripAdvisor Travellers' Choice award, with guests praising the staff, food, location, and activities.",
+      "fullNote": "Drafted from multiple verified sources. Pricing has NOT been included — the two tourism listing sources gave contradictory figures (VisitWales: £60–100 pp/night; VisitMidWales: from £15 pp/night). Neither figure has been verified against the current official price list; do not publish either without checking directly with the operator."
+    },
+
+    "accommodation": {
+      "rooms": 24,
+      "beds": 36,
+      "roomBreakdown": "12 twin en-suite rooms, 12 single rooms (some with shared en-suite)",
+      "minimumGroupSize": 15,
+      "maximumGroupSize": 36,
+      "amenities": [
+        "Full breakfast and home-cooked meals included",
+        "Licensed honesty bar",
+        "Guest lounge",
+        "Drying room",
+        "Bike storage and washing facilities",
+        "Conference room (capacity 36)",
+        "Multiple breakout rooms",
+        "Guest kitchen with complimentary tea/coffee",
+        "Free Wi-Fi",
+        "Audio-visual equipment",
+        "Waterproof clothing and outdoor PPE for loan",
+        "Car parking"
+      ],
+      "amenitiesSource": "https://www.elanvalleylodge.co.uk/about-elan-valley-lodge and https://www.elanvalleyleisure.co.uk/the-lodge"
+    },
+
+    "activities": [
+      {
+        "name": "Mountain Biking (MTB Weekend Packages)",
+        "detail": "Weekend breaks for groups of 15–36. Full board included (breakfasts, evening meals, packed lunches). Bike storage, washing, and drying room. Optional local guide for route planning and accompaniment. Trails include Nantgwillt and Penygarreg descent; extensive bridleway network.",
+        "source": "https://www.elanvalleyleisure.co.uk/mountain-biking"
+      },
+      {
+        "name": "Kayaking / Canoeing / Raft Building",
+        "source": "https://www.elanvalleyleisure.co.uk/ and https://www.visitwales.com/accommodation/activity-accommodation/elan-valley-lodge-538571"
+      },
+      {
+        "name": "High Ropes Course",
+        "source": "https://www.elanvalleyleisure.co.uk/ and https://www.tripadvisor.co.uk/Hotel_Review-g658251-d2531146-Reviews-Elan_Valley_Lodge-Rhayader_Powys_Wales.html"
+      },
+      {
+        "name": "Rock Climbing",
+        "source": "https://www.elanvalleyleisure.co.uk/"
+      },
+      {
+        "name": "Abseiling",
+        "source": "https://www.elanvalleyleisure.co.uk/"
+      },
+      {
+        "name": "Archery",
+        "source": "https://www.tripadvisor.co.uk/Hotel_Review-g658251-d2531146-Reviews-Elan_Valley_Lodge-Rhayader_Powys_Wales.html"
+      },
+      {
+        "name": "Orienteering",
+        "source": "https://www.elanvalleyleisure.co.uk/"
+      },
+      {
+        "name": "Walking / Hiking",
+        "source": "https://www.elanvalleyleisure.co.uk/"
+      },
+      {
+        "name": "Bird Watching",
+        "detail": "Elan Valley Estate is a noted wildlife area; RSPB Carngafallt Nature Reserve is 0.28 miles from the lodge.",
+        "source": "https://www.elanvalleyleisure.co.uk/ and https://www.visitmidwales.co.uk/showmewales/accommodation/elan-valley-lodge-p1693011"
+      },
+      {
+        "name": "Corporate Team Building and Leadership Development",
+        "detail": "Programmes offered under the elanvalleylodge.co.uk brand including the annual Jaguar Land Rover Challenge (stated to be the largest outdoor company challenge in the UK, 600+ participants). Delivered for 30+ years.",
+        "source": "https://www.elanvalleylodge.co.uk/"
+      }
+    ],
+
+    "ratings": {
+      "visitWales": {
+        "stars": 5,
+        "category": "Activity Accommodation",
+        "source": "https://www.visitwales.com/accommodation/activity-accommodation/elan-valley-lodge-538571"
+      },
+      "tripadvisor": {
+        "rating": 4.9,
+        "reviewCount": 19,
+        "award": "Travellers' Choice",
+        "ranking": "#4 of 8 specialty lodging in Rhayader",
+        "url": "https://www.tripadvisor.co.uk/Hotel_Review-g658251-d2531146-Reviews-Elan_Valley_Lodge-Rhayader_Powys_Wales.html",
+        "note": "Rating and review count as of June 2026. Verify current figures before publishing.",
+        "accessedAt": "2026-06-04"
+      },
+      "google": {
+        "rating": null,
+        "note": "No Google rating retrieved. Verify by searching Google Maps for 'Elan Valley Lodge LD6 5HP'.",
+        "verifyManually": true
+      }
+    },
+
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/Elanvalleylodge/",
+        "note": "Facebook page confirmed for 'Elan Valley Lodge | Rhayader'. Page describes the lodge as 'the only 5-star en-suite Outdoor Activity Centre in the UK' — this superlative claim needs editorial verification before republishing.",
+        "source": "Web search results, June 2026"
+      },
+      "instagram": {
+        "url": null,
+        "note": "No confirmed Instagram account found for Elan Valley Lodge specifically. The Instagram account @elan.valley found in search results relates to the general Elan Valley area, not this operator. Verify with operator."
+      },
+      "twitter": {
+        "url": null,
+        "note": "No Twitter/X account found for Elan Valley Lodge in search results."
+      }
+    },
+
+    "accreditations": [
+      {
+        "name": "Visit Wales 5 Stars — Activity Accommodation",
+        "source": "https://www.visitwales.com/accommodation/activity-accommodation/elan-valley-lodge-538571"
+      },
+      {
+        "name": "Cyclists Welcome",
+        "source": "https://www.visitwales.com/accommodation/activity-accommodation/elan-valley-lodge-538571"
+      },
+      {
+        "name": "Walkers Welcome",
+        "source": "https://www.visitwales.com/accommodation/activity-accommodation/elan-valley-lodge-538571"
+      }
+    ],
+    "accreditationsNote": "The official website (elanvalleylodge.co.uk) may display additional accreditation or safety-scheme logos not captured in text search. Human editor should visit the site to identify any additional governing body badges (e.g. AALA licensing, IOL membership, Mountain Training, British Canoeing).",
+
+    "pricing": {
+      "publiclyAvailable": false,
+      "note": "Two conflicting figures found in tourism listings: VisitWales states £60–£100 per person per night (breakfast included); VisitMidWales states from £15 per person per night. Both figures are likely outdated and cannot be verified against the current price list. Do NOT publish either figure. Contact the operator directly on 01597 811143 or roy@elanvalleylodge.co.uk for current rates.",
+      "conflictingSources": [
+        {
+          "source": "https://www.visitwales.com/accommodation/activity-accommodation/elan-valley-lodge-538571",
+          "figure": "£60–£100 pp/night (breakfast included)"
+        },
+        {
+          "source": "https://www.visitmidwales.co.uk/showmewales/accommodation/elan-valley-lodge-p1693011",
+          "figure": "From £15 pp/night"
+        }
+      ]
+    }
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "No freely licensed version of the Elan Valley Lodge logo found on Openverse, Wikimedia Commons, or any openly licensed image source. Logo must be obtained directly from the operator under written licence or permission."
+    },
+    "cover": {
+      "status": "BLOCKED",
+      "reason": "All photography on elanvalleylodge.co.uk and elanvalleyleisure.co.uk is copyright of the respective websites. People's Collection Wales holds a photographic survey of the building (5 images by Stephen Hughes, 07/05/2004) but these are marked 'All Rights Reserved' — not freely usable. No openly licensed images of this specific operator or building were found on Openverse or Wikimedia Commons. Facebook page images cannot be reproduced without explicit operator permission.",
+      "potentialSources": [
+        {
+          "source": "https://www.peoplescollection.wales/items/4305",
+          "description": "5 architectural survey photos of the building by Stephen Hughes, 2004",
+          "licence": "All Rights Reserved — NOT freely usable. Contact Peoples Collection Wales or the copyright holder."
+        },
+        {
+          "source": "https://commons.wikimedia.org/wiki/Category:Rhayader",
+          "description": "Wikimedia Commons Rhayader category may contain freely licensed images of the general area. No images confirmed of the lodge building or its activities.",
+          "licence": "Verify individual image licences on Wikimedia Commons before use."
+        }
+      ]
+    },
+    "gallery": {
+      "status": "BLOCKED",
+      "reason": "Same copyright restriction applies. No freely licensed activity or accommodation photography found."
+    },
+    "actionRequired": "Contact the operator on 01597 811143 or roy@elanvalleylodge.co.uk to request a media pack or written permission to reproduce photography from their website or Facebook page. Alternatively, search Wikimedia Commons for freely licensed Elan Valley landscape images that could represent the location without depicting the specific lodge. Commission original photography under a work-for-hire arrangement for activity imagery. Do NOT use AI-generated images of real places."
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Email address roy@elanvalleylodge.co.uk is the current active booking/contact email",
+      "confidence": "MODERATE",
+      "issue": "The email is taken from the VisitWales tourism listing. It contains a personal first name ('roy'). It has not been verified as active. Small operator contact emails frequently become stale.",
+      "action": "Call 01597 811143 to confirm the correct contact email and whether a generic enquiries/bookings address exists. Verify before publishing."
+    },
+    {
+      "claim": "Primary website for Adventure Wales directory should be elanvalleyleisure.co.uk rather than elanvalleylodge.co.uk",
+      "confidence": "HIGH — but requires editorial decision",
+      "issue": "The operator runs two distinct websites under different brand names for the same physical location. elanvalleyleisure.co.uk is the outdoor activity / leisure brand and is the URL listed by VisitWales. elanvalleylodge.co.uk is the corporate training brand. For an adventure activity directory, elanvalleyleisure.co.uk is the appropriate primary URL. However, an editorial decision should be documented.",
+      "action": "Confirm with operator which URL they wish listed as the primary for an outdoor activity/adventure audience. Update the directory listing accordingly."
+    },
+    {
+      "claim": "The lodge is 'the only 5-star en-suite Outdoor Activity Centre in the UK'",
+      "confidence": "UNVERIFIED",
+      "issue": "This superlative claim appears on the operator's own Facebook page. It has not been independently verified. VisitWales and tourism sources describe it as a 5-star activity accommodation but do not assert 'only in the UK'.",
+      "action": "Do not publish this claim without verification. Either ask the operator for evidence to support it, or omit the superlative and describe it simply as 5-star Visit Wales activity accommodation."
+    },
+    {
+      "claim": "Registered address is Dwr Cymru Welsh Water, St. Mellons, Cardiff (CF3 0LT)",
+      "confidence": "HIGH — from Companies House, but context needs editorial consideration",
+      "issue": "The legal entity's registered address is Welsh Water's headquarters, suggesting a corporate or landlord relationship between the lodge operator and Welsh Water. This is consistent with the lodge being located on the Elan Estate, which is owned by Welsh Water. This is not a misleading claim — it is the filed registered address — but editors should be aware the trading address (Elan Village, Rhayader, Powys, LD6 5HP) is what should appear on the public-facing directory listing.",
+      "action": "Use the trading address (Elan Village, Rhayader, Powys, LD6 5HP) on the directory listing. Do not publish the registered Companies House address."
+    },
+    {
+      "claim": "Pricing: £60–£100 pp/night or from £15 pp/night",
+      "confidence": "LOW — conflicting sources",
+      "issue": "VisitWales lists £60–£100 per person per night; VisitMidWales lists from £15 per person per night. These figures are irreconcilable and at least one must be outdated or erroneous. The official website does not display pricing.",
+      "action": "Do not publish any pricing figure. Contact the operator directly for current rates before including pricing on the directory listing."
+    },
+    {
+      "claim": "Operator is currently trading and accepting bookings",
+      "confidence": "HIGH",
+      "issue": "All key signals are positive: Companies House shows active status; website is live; multiple tourism listings are current; TripAdvisor shows 19 reviews with a Travellers' Choice award. However, a routine call to confirm availability is still recommended before publishing.",
+      "action": "Standard pre-publish check: call 01597 811143 to confirm active trading."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.elanvalleylodge.co.uk/",
+      "description": "Official corporate website — description, tagline, facilities, accommodation, activities overview, phone, address, testimonials",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.elanvalleylodge.co.uk/about-elan-valley-lodge",
+      "description": "About page — accommodation details (24 rooms, 36 beds), facilities, location, accessibility",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.elanvalleylodge.co.uk/contact-us",
+      "description": "Contact page — confirmed address (Elan Village, Rhayader, Powys, LD6 5HP) and phone (01597 811143)",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.elanvalleyleisure.co.uk/",
+      "description": "Leisure/outdoor activity brand website — confirms same address and phone; activities list including MTB, kayaking, high ropes, archery",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.elanvalleyleisure.co.uk/the-lodge",
+      "description": "Lodge page on leisure website — full accommodation description, 24 rooms, 36 beds, facilities, confirms legal name 'Elan Valley Lodge Ltd'",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.elanvalleyleisure.co.uk/mountain-biking",
+      "description": "MTB page — weekend package details (min 15, max 36 guests), full board, trails (Nantgwillt, Penygarreg), optional guide, £30/pp deposit",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.visitwales.com/accommodation/activity-accommodation/elan-valley-lodge-538571",
+      "description": "Official VisitWales listing — 5-star rating, email (roy@elanvalleylodge.co.uk), website listed as elanvalleyleisure.co.uk, accreditations (Cyclists Welcome, Walkers Welcome), pricing note",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.visitmidwales.co.uk/showmewales/accommodation/elan-valley-lodge-p1693011",
+      "description": "Visit Mid Wales listing — address, phone, star rating, nearby attractions, website URL",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.tripadvisor.co.uk/Hotel_Review-g658251-d2531146-Reviews-Elan_Valley_Lodge-Rhayader_Powys_Wales.html",
+      "description": "TripAdvisor listing — 4.9/5 rating, 19 reviews, Travellers' Choice award, establishment type, room breakdown (12 singles, 12 twins)",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.facebook.com/Elanvalleylodge/",
+      "description": "Facebook page — confirmed business name 'Elan Valley Lodge | Rhayader', description as 5-star activity centre",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://find-and-update.company-information.service.gov.uk/company/02243757",
+      "description": "Companies House — confirmed legal entity ELAN VALLEY LODGE LTD., company number 02243757, incorporated 13 April 1988, status Active, registered address is Dwr Cymru Welsh Water, Cardiff",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://britishlistedbuildings.co.uk/300016206-elan-valley-lodge-rhayader",
+      "description": "British Listed Buildings — Grade II listed building, Cadw listing date 31 July 1995, architectural description (Arts & Crafts, 1906-1909, architects Buckland Haywood & Farmer)",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "content/operators/mtb.csv",
+      "description": "Internal MTB operators CSV — Elan Valley Lodge listed as activity_provider, Multi-day Tours, 'Accommodation and guided riding packages.', coordinates 52.283 / -3.550, Rhayader",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirms operator-elan-valley-lodge, unclassified_operator tier, all key fields missing at time of task creation",
+      "type": "internal"
+    }
+  ],
+
+  "sourcesRuledOut": [
+    {
+      "name": "Elan Valley Hotel",
+      "url": "https://www.elanvalleyhotel.co.uk/",
+      "reason": "Separate business. The Elan Valley Hotel is a different establishment in Rhayader. Facebook page at https://www.facebook.com/Elanvalleyhotel/ confirms it is not the same as Elan Valley Lodge."
+    },
+    {
+      "name": "Elan Valley Leisure (as a separate entity)",
+      "url": "https://www.elanvalleyleisure.co.uk/",
+      "reason": "NOT a separate entity — same physical premises, same phone number, same address (Elan Valley Lodge Ltd, Elan Village, Rhayader, Powys, LD6 5HP). elanvalleyleisure.co.uk is the leisure/outdoor activity brand of Elan Valley Lodge Ltd. Both URLs should be considered for the directory listing with an editorial decision on primary URL."
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "All key directory fields have been researched and sourced with high confidence from official/tourism sources. Operator identity is confirmed via Companies House. However, three items require human QA before publishing: (1) the correct primary website URL must be chosen between two active branded sites; (2) the email address needs direct verification with the operator; (3) all images are blocked and a media pack must be requested from the operator before any cover image or gallery can go live.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "All images blocked — no freely licensed photography found",
+      "detail": "Website images on both elanvalleylodge.co.uk and elanvalleyleisure.co.uk are copyright of the respective brands. The People's Collection Wales photographic survey (5 images, 2004) is marked 'All Rights Reserved'. No freely licensed images of the lodge or its activities were found on Openverse or Wikimedia Commons. A cover image and logo cannot be published without obtaining a media pack or written permission from the operator (01597 811143 / roy@elanvalleylodge.co.uk), or commissioning original photography.",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 2,
+      "blocker": "Dual-website identity — editorial decision required on primary URL",
+      "detail": "The operator runs two active websites under different brand names (elanvalleyleisure.co.uk for outdoor/leisure; elanvalleylodge.co.uk for corporate training). Both serve the same physical location (Elan Village, Rhayader, LD6 5HP) under the same legal entity (Elan Valley Lodge Ltd). VisitWales lists elanvalleyleisure.co.uk as the website for the activity accommodation listing. An editorial decision is needed on which URL to publish in the directory, and whether both should be mentioned. Confirm with the operator.",
+      "severity": "MEDIUM"
+    },
+    {
+      "rank": 3,
+      "blocker": "Email address unverified and pricing data contradictory",
+      "detail": "The email address roy@elanvalleylodge.co.uk was found only on the VisitWales listing and has not been directly verified. Additionally, two tourism sources give irreconcilable pricing figures (£60–£100 pp/night vs from £15 pp/night). Neither figure should be published. Both issues can be resolved by calling the operator on 01597 811143.",
+      "severity": "MEDIUM"
+    }
+  ]
+}

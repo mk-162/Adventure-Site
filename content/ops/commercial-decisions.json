@@ -1,0 +1,58 @@
+{
+  "generatedAt": "2026-06-04T00:00:00.000Z",
+  "purpose": "Human-recorded Adventure Wales commercial/operator decisions for the command centre. Agents may prepare evidence and options, but must not invent MK decisions or change production operator tiers automatically.",
+  "decisionOptions": [
+    {
+      "id": "strategic_anchor",
+      "label": "Strategic Anchor",
+      "meaning": "Free enhanced treatment because the operator materially improves launch credibility or user trust. Requires rationale."
+    },
+    {
+      "id": "premium_sales_lure",
+      "label": "Premium Sales Lure",
+      "meaning": "Build/use a premium-quality preview as a personalised sales asset; do not publish as a free premium listing."
+    },
+    {
+      "id": "claimed_basic",
+      "label": "Claimed/Basic",
+      "meaning": "Basic verified listing treatment only; no premium placement or unpaid commercial value."
+    },
+    {
+      "id": "stub_only",
+      "label": "Stub Only",
+      "meaning": "Minimal page with claim CTA and restricted public value until operator claims or pays."
+    },
+    {
+      "id": "remove_or_block",
+      "label": "Remove/Block",
+      "meaning": "Do not publish or progress until identity, safety, closure, permission, or quality blocker is resolved."
+    },
+    {
+      "id": "needs_human_permission",
+      "label": "Needs Permission",
+      "meaning": "Operator/media/source permission needed before content or images can be used."
+    }
+  ],
+  "schema": {
+    "decisions[]": {
+      "content_item_id": "string matching content/ops/content-inventory.json item id",
+      "decision": "strategic_anchor | premium_sales_lure | claimed_basic | stub_only | remove_or_block | needs_human_permission",
+      "decided_by": "human operator name or role",
+      "decided_at": "ISO timestamp",
+      "rationale": "short human-written rationale",
+      "next_action": "specific next step for awcommercial, awbuilder, awresearcher, or awreviewer",
+      "evidence_snapshot": {
+        "source_count": "number",
+        "research_source_count": "number",
+        "image_status": "string",
+        "research_image_status": "string",
+        "research_file": "string path if present"
+      },
+      "guardrails": [
+        "does_not_publish_content",
+        "does_not_change_operator_tier_automatically"
+      ]
+    }
+  },
+  "decisions": []
+}

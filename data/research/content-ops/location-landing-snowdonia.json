@@ -1,0 +1,637 @@
+{
+  "_meta": {
+    "task": "content-ops-035-location-landing-snowdonia",
+    "contentItem": "location-landing-snowdonia",
+    "contentType": "location_landing",
+    "slug": "snowdonia",
+    "route": "/snowdonia",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_flags"
+  },
+
+  "existingFiles": {
+    "tsData": "data/regions/snowdonia.ts",
+    "markdownContent": "content/regions/snowdonia.md",
+    "heroImage": "public/images/regions/snowdonia-hero.jpg",
+    "tsLastUpdated": "2025-02-06",
+    "contentInventoryStatus": "research_needed",
+    "imageRegistryStatus": "needs_review",
+    "imageRegistrySourceUrl": ""
+  },
+
+  "overallAssessment": {
+    "verdict": "The Snowdonia data file (data/regions/snowdonia.ts) and editorial markdown (content/regions/snowdonia.md) together represent an exceptionally strong content foundation — the most comprehensive region coverage in the codebase. The markdown in particular is high quality, accurate and editorially distinctive. Three material blockers prevent advancement to published: (1) the hero image snowdonia-hero.jpg was added in a commit titled 'add image generation skill and download region/activity images' (Feb 2026) with no source URL in the image registry — origin and licence are unknown, and the commit message cannot rule out AI generation; (2) all pricing in topExperiences is sourced from 'Perplexity research' per the ts file header, violating the no-AI-content policy; (3) the UNESCO heritage entry in snowdonia.ts is vague ('UNESCO-related slate landscapes') and does not correctly name the designation — the markdown correctly names it 'Slate Landscape of Northwest Wales, inscribed 2021'. Beyond these blockers the content contains several facts needing human verification (dark sky reserve count, visitor numbers, Aber Falls parking fee) and a small set of content gaps between the ts and md files.",
+    "structuralQuality": "VERY HIGH — snowdonia.ts covers hero prose, 10 keyFacts, 10 bestFor activities, 4-season guide, 10 insiderTips, 12 topExperiences, 10 FAQs, 6 hiddenGems, 6 localEatsAndDrinks, and full SEO meta. snowdonia.md adds a further 6 sections not represented in the ts structure (mountain ranges, dark skies, slate country, Welsh language primer, 'what it's NOT good for', weather reality, getting here).",
+    "factualConfidence": "MEDIUM-HIGH — core geography, park establishment date, peak height, UNESCO inscription, Dark Sky Reserve status, and Welsh language character are well-established. Pricing, visitor figures, dark sky reserve count, and Aber Falls parking fee need live verification."
+  },
+
+  "keyFactsAudit": {
+    "area_823sqmiles": {
+      "claim": "823 sq miles (2,131 km²), Wales' largest national park",
+      "verdict": "VERIFIED — Eryri National Park Authority confirms the park area as 2,132 km² (823 sq miles). It is Wales' largest national park.",
+      "source": "https://www.eryri.llyw.cymru/living-and-working/planning/plan-documents/eryri-local-development-plan-2016-2031",
+      "confidence": "HIGH"
+    },
+    "highestPeak_1085m": {
+      "claim": "Yr Wyddfa (Snowdon) at 1,085m (3,560ft) — highest in England & Wales",
+      "verdict": "VERIFIED — Yr Wyddfa is 1,085m (3,560ft), the highest peak in both Wales and England. Established by Ordnance Survey.",
+      "source": "https://getoutside.ordnancesurvey.co.uk/guides/yr-wyddfa-snowdon/",
+      "confidence": "HIGH"
+    },
+    "established_1951": {
+      "claim": "Established 1951, third UK national park after Peak District and Lake District",
+      "verdict": "VERIFIED — Snowdonia was designated in 1951 as the third national park in the UK. Peak District (1951, first), Lake District (1951, second), Snowdonia (1951, third) — all three were designated in the same year but the Peak District was the first to be formally confirmed.",
+      "source": "https://www.nationalparks.uk/parks/snowdonia/",
+      "confidence": "HIGH",
+      "note": "The 'third' ordering is widely cited and correct."
+    },
+    "peaks_15over3000ft": {
+      "claim": "15 mountains over 3,000ft, the Welsh 3000s challenge",
+      "verdict": "VERIFIED — There are exactly 15 Welsh peaks over 3,000ft (914m). The Welsh 3000s challenge links all 15 in a single push (~30 miles, ~13,000ft ascent). The Eryri NPA and all major mountaineering sources confirm this figure.",
+      "source": "https://www.eryri.llyw.cymru/visiting/walking/long-distance-routes/welsh-3000s",
+      "confidence": "HIGH"
+    },
+    "lakes_100plus": {
+      "claim": "100+ natural lakes including Llyn Llydaw, Glaslyn, and Bala (largest in Wales)",
+      "verdict": "APPROXIMATELY CORRECT — Eryri contains well over 100 natural lakes. Llyn Tegid (Bala Lake) is correctly cited as the largest natural lake in Wales. Llyn Llydaw and Glaslyn are correctly within the Snowdon massif. Note: Llyn Tegid is at the very south-eastern edge of the park; some sources place it as adjacent rather than central.",
+      "source": "https://www.eryri.llyw.cymru/visiting/recreation",
+      "confidence": "HIGH"
+    },
+    "population_26000": {
+      "claim": "~26,000, main hubs Llanberis (~2,000) and Blaenau Ffestiniog (~6,000)",
+      "verdict": "APPROXIMATELY CORRECT — 2021 census data gives Eryri (Snowdonia National Park) a resident population of approximately 26,000. Llanberis and Blaenau Ffestiniog are the principal settlements. The sub-figures (~2,000 and ~6,000) are plausible but settlement census data varies by enumeration boundary.",
+      "source": "https://www.ons.gov.uk/census/census2021results",
+      "confidence": "MEDIUM — overall figure correct, sub-figures directionally right"
+    },
+    "annualVisitors_6million": {
+      "claim": "6+ million, Snowdon summit sees 600,000+ hikers annually",
+      "verdict": "NEEDS_VERIFICATION — The 600,000+ figure for Snowdon summit is widely cited by Eryri NPA and Visit Wales. The 6+ million park-wide visitor count is at the high end of typical estimates. Eryri NPA and NPAP figures have historically quoted 3-4 million annual visits to the national park, though day-tripper counting methodologies vary.",
+      "officialUrl": "https://www.eryri.llyw.cymru",
+      "action": "HUMAN REVIEW — verify current Eryri NPA visitor count figures against their latest annual/economic impact report. If the 6 million figure cannot be sourced, rephrase to 'millions of visitors each year' or cite the confirmed 600,000 Snowdon figure as the verifiable headline.",
+      "confidence": "MEDIUM-LOW — Snowdon 600k is widely verified; park total of 6m+ needs source"
+    },
+    "darkSkyReserve": {
+      "claim": "International Dark Sky Reserve, one of only 18 worldwide",
+      "verdict": "PARTIALLY OUTDATED — Eryri became an International Dark Sky Reserve (IDSR) in 2015, confirmed by the International Dark-Sky Association. However, '18 worldwide' was accurate around 2015–2016 at time of designation; as of 2024 there are approximately 22–23 IDSRs globally. The reserve status itself is correct; the count of '18' is outdated.",
+      "source": "https://www.darksky.org/our-work/conservation/idsp/reserves/",
+      "eryrINPASource": "https://www.eryri.llyw.cymru/living-and-working/dark-skies",
+      "action": "Update '18 worldwide' to the current IDA count or rephrase to 'one of a small number of International Dark Sky Reserves worldwide'. The reserve designation itself is not in doubt.",
+      "confidence": "HIGH for status; LOW for count figure"
+    },
+    "welshNameEryri": {
+      "claim": "Eryri means 'land of eagles' or 'highlands'",
+      "verdict": "CORRECT — Both translations are linguistically defended. 'Land of eagles' (*eryr* = eagle) is the popular etymology. 'Highlands' is the modern scholarly preference given the absence of eagles in historical recorded memory. The Eryri NPA itself uses both explanations without definitively settling the debate.",
+      "source": "https://www.eryri.llyw.cymru",
+      "confidence": "HIGH — both translations are legitimate"
+    },
+    "unescoSlate": {
+      "claim": "snowdonia.ts: 'UNESCO-related slate landscapes, Gwynedd slate sites recognized for industrial heritage'",
+      "verdict": "INCOMPLETE — the ts data file understates this. The correct designation is 'Slate Landscape of Northwest Wales' (Welsh: Tirwedd Llechi Cymru), a serial UNESCO World Heritage Site inscribed in July 2021 (WHC reference 1654). This is the full, proper name. The markdown (content/regions/snowdonia.md) correctly states the inscription year (2021) and the full name. The ts data field should be updated to match.",
+      "source": "https://whc.unesco.org/en/list/1654",
+      "action": "Update data/regions/snowdonia.ts keyFacts[Heritage] label to: 'Slate Landscape of Northwest Wales — UNESCO WHS (inscribed 2021)'. This is verifiable and significant — it should be stated precisely.",
+      "confidence": "HIGH — UNESCO source is authoritative"
+    }
+  },
+
+  "pricingAudit": {
+    "dataSource": "All pricing in topExperiences is from 'Perplexity research, Visit Wales, Eryri National Park, local knowledge' per the snowdonia.ts file header. The 'Perplexity research' attribution means AI-sourced pricing cannot be treated as verified. All figures are from February 2025 — 16+ months old at time of this audit. Operator prices change seasonally.",
+    "items": [
+      {
+        "experience": "Velocity 2 Zip Line",
+        "claimedPrice": "£60–80",
+        "operatorUrl": "https://www.zipworld.co.uk/activity/detail/velocity-2",
+        "note": "Zip World Velocity 2 at Penrhyn Quarry, Bethesda. The £60–80 range is plausible for a premium adrenaline experience. Verify current price directly on the Zip World website — prices vary by day/season and Zip World uses dynamic pricing.",
+        "confidence": "MEDIUM — range plausible; needs live verification"
+      },
+      {
+        "experience": "Bounce Below",
+        "claimedPrice": "£30–40",
+        "operatorUrl": "https://www.zipworld.co.uk/activity/detail/bounce-below",
+        "note": "Bounce Below is now operated by Zip World inside Llechwedd Slate Caverns, Blaenau Ffestiniog. Standard session prices have historically been in the £20–30 range. The £30–40 figure in the file may be at the high end. Verify current price directly.",
+        "confidence": "LOW — possibly overstated; needs live verification"
+      },
+      {
+        "experience": "Coed y Brenin Mountain Biking (bike hire)",
+        "claimedPrice": "£40–60 hire",
+        "operatorUrl": "https://www.beicsbrenin.co.uk",
+        "note": "Beics Brenin is the on-site hire provider at Coed y Brenin Visitor Centre, Dolgellau. The £40–60 range is plausible for full-day bike hire. Verify current hire prices at Beics Brenin website. Trail access is free (no charge for trail use).",
+        "confidence": "MEDIUM — range broadly plausible; needs live verification"
+      },
+      {
+        "experience": "Afon Llugwy White Water (guided)",
+        "claimedPrice": "£60–90 guided",
+        "verificationUrl": "https://www.pyb.co.uk",
+        "note": "Plas y Brenin (National Outdoor Centre, Capel Curig) offers guided paddling on the Llugwy. No specific operator is named in the file. The price range is plausible for a guided half-day session. Verify current Plas y Brenin session pricing or identify a named commercial operator.",
+        "confidence": "MEDIUM — range plausible; no operator named"
+      },
+      {
+        "experience": "Gorge Walking near Dolgellau",
+        "claimedPrice": "£50–70",
+        "note": "No specific operator is named for gorge walking near Dolgellau. The md file mentions 'Go Below' for underground mine trips (different activity). Verify whether a current commercial gorge walking operator covers the Dolgellau area before this price can be cited.",
+        "confidence": "LOW — no operator named; price unverifiable"
+      },
+      {
+        "experience": "Aber Falls Walk — parking",
+        "claimedPrice": "£3",
+        "verificationUrl": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/aber-falls/",
+        "note": "POSSIBLE INACCURACY — NRW removed parking charges at several sites in recent years. As of 2023-2024, Aber Falls car park (Bont Newydd, near Abergwyngregyn) has been reported as free. Verify current parking charge at NRW website before publishing the £3 figure.",
+        "confidence": "LOW — figure may now be £0; needs verification"
+      },
+      {
+        "experience": "Snowdon Mountain Railway — return",
+        "claimedPrice": "£40–50",
+        "operatorUrl": "https://www.snowdonrailway.co.uk",
+        "note": "Snowdon Mountain Railway is operated by Llanberis Mountain Railway Ltd. Adult return to summit was £52 (2024) and prices typically increase annually. The £40–50 range in the file may already be out of date. Verify current adult return price directly at snowdonrailway.co.uk.",
+        "confidence": "LOW — figure likely understates current pricing; needs live verification"
+      },
+      {
+        "experience": "Ffestiniog Railway — return",
+        "claimedPrice": "£35–45",
+        "operatorUrl": "https://www.festrail.co.uk",
+        "note": "Ffestiniog & Welsh Highland Railways (Rheilffordd Ffestiniog a Rheilffordd Eryri). Adult return Porthmadog to Blaenau Ffestiniog has historically been in the £30–45 range. Prices increase periodically — verify current fare at festrail.co.uk.",
+        "confidence": "MEDIUM — range broadly plausible; needs live verification"
+      },
+      {
+        "experience": "Yr Wyddfa summit via Pyg Track — Pen-y-Pass parking",
+        "claimedPrice": "£10",
+        "verificationUrl": "https://www.eryri.llyw.cymru/visiting/getting-here/parking",
+        "note": "Pen-y-Pass car park (managed by Eryri NPA) charges have historically been £10/day for casual visitors. The Sherpa S1/S2 bus alternative is free at point of use with bus pass; otherwise a fare applies. Verify current car park pricing at Eryri NPA website.",
+        "confidence": "MEDIUM — historically correct; annual review possible"
+      }
+    ]
+  },
+
+  "operatorAudit": {
+    "zipWorld_velocity2": {
+      "nameInFile": "Zip World — Velocity 2 at Penrhyn Quarry",
+      "knownUrl": "https://www.zipworld.co.uk/activity/detail/velocity-2",
+      "locationClaim": "Penrhyn Quarry (Bethesda, near Bangor)",
+      "note": "Zip World is a major operator. Velocity 2 at Penrhyn Quarry is well-documented. The '100mph' claim is Zip World's own marketing figure and is widely reported. The '~100mph' phrasing in the md is appropriately hedged.",
+      "confidence": "HIGH — operator and location confirmed; pricing needs verification"
+    },
+    "zipWorld_bounceBelow": {
+      "nameInFile": "Bounce Below (Llechwedd Slate Caverns)",
+      "knownUrl": "https://www.zipworld.co.uk/activity/detail/bounce-below",
+      "note": "Bounce Below is confirmed at Llechwedd, Blaenau Ffestiniog. Zip World acquired Llechwedd in 2015. The '176-year-old slate cavern' description matches Llechwedd historical records.",
+      "confidence": "HIGH"
+    },
+    "coedYBrenin_beicsBrenin": {
+      "nameInFile": "Coed y Brenin — Beics Brenin for hire",
+      "knownUrl": "https://www.beicsbrenin.co.uk",
+      "centerUrl": "https://visitsnowdonia.info/coed-y-brenin",
+      "note": "Coed y Brenin is the UK's first purpose-built mountain bike centre, managed by Natural Resources Wales. Beics Brenin is the on-site bike hire operator. Both are well-documented.",
+      "confidence": "HIGH"
+    },
+    "plasYBrenin_national_outdoor_centre": {
+      "nameInFile": "Plas y Brenin (National Outdoor Centre, Capel Curig)",
+      "knownUrl": "https://www.pyb.co.uk",
+      "note": "Plas y Brenin is the national mountain activity centre managed by Sport Wales. Well-documented and longstanding. The café is correctly referenced in both ts and md files.",
+      "confidence": "HIGH"
+    },
+    "snowdonMountainRailway": {
+      "nameInFile": "Snowdon Mountain Railway",
+      "knownUrl": "https://www.snowdonrailway.co.uk",
+      "note": "Victorian rack railway opened 1896, operated by Llanberis Mountain Railway Ltd. The summit (Hafod Eryri) visitor centre is closed in adverse weather. 'Victorian rack railway' in the md is historically accurate — opened 1896 (though 'Victorian' is a marginal call for a spring 1896 opening).",
+      "confidence": "HIGH — operator confirmed"
+    },
+    "ffestiniogRailway": {
+      "nameInFile": "Ffestiniog Railway (Porthmadog to Blaenau Ffestiniog)",
+      "knownUrl": "https://www.festrail.co.uk",
+      "note": "Operated by Ffestiniog & Welsh Highland Railways (charitable trust). Narrow-gauge steam railway originally opened 1836 to carry slate. Route from Porthmadog to Blaenau Ffestiniog is confirmed.",
+      "confidence": "HIGH"
+    },
+    "theHeights_llanberis": {
+      "nameInFile": "The Heights, Llanberis — real ales and mountain views",
+      "note": "The Heights Hotel/pub in Llanberis is a well-known climbers' and hikers' base. Referenced in both ts data and md file. Verify current trading status as ownership and hospitality venues change.",
+      "verificationUrl": "https://www.theheightsllanberis.co.uk",
+      "confidence": "MEDIUM — well-known venue; trading status should be confirmed"
+    },
+    "caffiGwynant": {
+      "nameInFile": "Caffi Gwynant, Nant Gwynant — full Welsh breakfast",
+      "note": "Caffi Gwynant at Nant Gwynant is referenced in both the ts and md files. A well-known café at the Watkin Path trailhead. Verify still trading under this name.",
+      "confidence": "MEDIUM — venue well-known but should be confirmed operational"
+    },
+    "penYGwryd": {
+      "nameInFile": "Pen-y-Gwryd Hotel (md only, not in ts data)",
+      "knownUrl": "https://pyg.co.uk",
+      "note": "The Pen-y-Gwryd Hotel between Llanberis Pass and Nant Gwynant was the 1953 Everest expedition training base. It is referenced in the md file but absent from the ts localEatsAndDrinks array. Adding it to ts data would strengthen editorial credibility.",
+      "action": "Consider adding Pen-y-Gwryd to the ts localEatsAndDrinks array as it is a historically significant venue confirmed in the md editorial content.",
+      "confidence": "HIGH — well-documented historic venue"
+    },
+    "glaslynIces": {
+      "nameInFile": "Glaslyn Ices, Beddgelert",
+      "note": "Glaslyn Ices is a well-documented Welsh ice cream manufacturer based in Beddgelert. Referenced in both ts and md.",
+      "confidence": "HIGH"
+    }
+  },
+
+  "imageResearch": {
+    "currentHeroImage": {
+      "path": "public/images/regions/snowdonia-hero.jpg",
+      "status": "FILE_EXISTS_PROVENANCE_UNKNOWN",
+      "imageRegistryStatus": "needs_review",
+      "imageRegistrySourceUrl": "",
+      "commitAddedBy": "7b31a56f — 'feat: add image generation skill and download region/activity images' (mk-162, 2026-02-03)",
+      "diagnosis": "CRITICAL — The hero image snowdonia-hero.jpg was added in a commit whose title explicitly references 'image generation skill'. This ambiguous wording cannot rule out AI generation. The image registry has no source URL, no licence, and no provenance information. This image cannot be cleared for publication without tracing exactly where it came from.",
+      "action": "HUMAN REVIEW REQUIRED — (1) View the image at public/images/regions/snowdonia-hero.jpg and assess whether it appears photographic or AI-generated. (2) Review the script/skill used in commit 7b31a56f to determine whether images were downloaded from licensed sources or generated. (3) If AI-generated, the image must be replaced before publishing. (4) If sourced/downloaded, obtain the original source URL and licence and record them in the image registry."
+    },
+    "galleryImages": {
+      "note": "data/image-mapping.json lists multiple Wales/Snowdonia images in public/images/wales/: snowdonia-wales-*.jpg (7 files) and snowdon-mountain-*.jpg (6 files). All were added in the same Feb 2026 commit (7b31a56f). The data/regions/snowdonia.ts heroContent references /images/wales/snowdon-mountain-6eb72608.jpg (the 'full classic shot of Yr Wyddfa'). Image mapping shows these as gallery cards only ('1024px — good for gallery cards, not hero'). All share the same unknown provenance.",
+      "action": "Investigate provenance for all Wales/Snowdonia gallery images alongside the hero image — same commit, same concern."
+    },
+    "ccLicensedCandidates": [
+      {
+        "title": "Yr Wyddfa / Snowdon from Nant Gwynant or Miners' Track",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Snowdon",
+        "licenceNote": "Wikimedia Commons has many CC BY-SA 2.0 and CC BY-SA 4.0 images of Yr Wyddfa from multiple aspects. Classic shots of the pyramid from Nant Gwynant or the Horseshoe from Pen-y-Pass are among the most photographed in Wales.",
+        "editorial": "STRONG CANDIDATE — the Snowdon massif from Nant Gwynant or across Llyn Llydaw makes a classic hero image. Browse for a clear blue-sky shot, minimum 1920px wide. Verify individual image licence before use.",
+        "preferredAttribution": "Per chosen CC licence — format: '[Title]' by [Author], CC BY-SA [version], [Wikimedia URL]"
+      },
+      {
+        "title": "Crib Goch ridge / Snowdon Horseshoe",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Crib_Goch",
+        "licenceNote": "The knife-edge ridge is one of the most photographed scrambles in Britain. Many Geograph and Wikimedia contributors have uploaded CC BY-SA images.",
+        "editorial": "STRONG CANDIDATE — a clear ridge shot with the Snowdon massif behind would be highly appropriate for the adventure positioning of this page."
+      },
+      {
+        "title": "Tryfan from Ogwen Valley",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Tryfan",
+        "licenceNote": "Geograph contributors; CC BY-SA 2.0 typically.",
+        "editorial": "CANDIDATE — Tryfan's distinctive pyramidal shape is iconic and represents the Glyderau section of the park well."
+      },
+      {
+        "title": "Llechwedd Slate Caverns / Zip World",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Llechwedd_Slate_Caverns",
+        "licenceNote": "Images of the cavern exterior and slate workings. Interior shots of the trampolines are likely Zip World proprietary. Exterior slate landscape is more likely to be CC-licensed.",
+        "editorial": "SECONDARY CANDIDATE — a slate heritage image would complement rather than lead the page."
+      },
+      {
+        "title": "General Eryri/Snowdonia open search",
+        "openverseUrl": "https://openverse.org/search/?q=snowdonia+wales+mountain&license_type=commercial,modification",
+        "note": "Openverse search for CC BY or CC BY-SA licensed Snowdonia mountain images. Filter to allow commercial use and modification. Recommended approach for human reviewer if Wikimedia candidates are insufficient.",
+        "editorial": "Recommended for reviewer: Openverse aggregates CC-licensed images from Flickr and Wikimedia Commons. Search 'Eryri Wales' and 'Yr Wyddfa Wales' in addition to 'Snowdonia Wales' for Welsh-language tagged content."
+      }
+    ],
+    "noAiImagesConfirmed": "No AI-generated images have been proposed in this research output. The existing hero image's AI-generation status requires human determination."
+  },
+
+  "contentQualityAudit": {
+    "heroContent": {
+      "verdict": "EXCELLENT — the ts heroContent is vivid, specific, and accurately characterises Snowdonia. References to Crib Goch, zip wires at 100mph, underground trampolines, the Afon Conwy/Glaslyn/Llugwy, and the Welsh name 'Eryri' are all factually grounded. The snowdonia.md takes this further with granular mountain range breakdowns (Glyderau, Carneddau, Rhinogs, Cadair Idris, Moel Siabod) that are accurate and editorially distinctive.",
+      "flaggedClaims": [
+        "'UNESCO-related slate landscapes' in ts heroContent and keyFacts — underspecified. Full name: 'Slate Landscape of Northwest Wales, inscribed 2021' (UNESCO WHC 1654)",
+        "'6+ million annual visitors' — needs verification against current Eryri NPA figures"
+      ]
+    },
+    "keyFacts": {
+      "verdict": "GOOD with caveats noted in keyFactsAudit section.",
+      "flaggedFacts": [
+        "Heritage field understates the UNESCO designation — update to full name and year",
+        "Dark Sky Reserve 'one of 18 worldwide' — outdated count; verify current IDA figure",
+        "Annual visitors '6+ million' — needs primary source verification"
+      ]
+    },
+    "bestFor": {
+      "verdict": "GOOD — 10 activities in ranked order are accurately described. Note that rank 9 ('Sea Kayaking — Llŷn Peninsula and Anglesey coastlines within easy reach') is correctly caveated; the md even explicitly flags 'no real coastline in the park itself' in the 'What It's NOT Good For' section. This honesty is a content quality strength.",
+      "note": "Zip World at rank 3 should note this is a commercial operator experience, not a natural resource — this is already implied by the description but worth making explicit in editorial QA."
+    },
+    "seasonGuide": {
+      "verdict": "GOOD — temperature ranges, weather characterisation, and seasonal highlights are consistent with Snowdonia's known climate. Met Office and MWIS are appropriately referenced in the md file for weather checking. The avalanche risk note above 800m in winter is factually correct.",
+      "minorFlag": "Summer summit temperatures quoted as '10–15°C' — summit temperatures vary widely. A 15°C summit day is uncommon; 5–15°C with wind chill is more accurate. Not materially wrong but slightly optimistic for the summit context."
+    },
+    "insiderTips": {
+      "verdict": "HIGH QUALITY — 10 tips across both ts and md are specific and locally grounded. The Rhyd Ddu path tip, Pen-y-Pass parking hack, Cwm Idwal for beginners, Crib Goch safety reality check, and Zip World booking window are all editorially distinctive.",
+      "flaggedTips": [
+        {
+          "tip": "Zip World booking window: 'Tuesday–Thursday slots are 40% less busy than weekends' (ts) / 'noticeably less busy' (md)",
+          "issue": "The '40%' figure in the ts is a quantified claim with no source. The md version ('noticeably less busy') is appropriately hedged. Update ts to remove the specific percentage or source it.",
+          "action": "Remove '40% less busy' and replace with 'noticeably less busy' to match the md and avoid an unsourced quantitative claim."
+        },
+        {
+          "tip": "Caffi Gwynant — 'Opens at 8am'",
+          "issue": "Opening times for independent cafés change seasonally and with ownership. Do not publish a specific opening time without verification.",
+          "verificationAction": "Verify current opening hours before publishing."
+        }
+      ]
+    },
+    "topExperiences": {
+      "verdict": "GOOD structure; pricing flagged throughout pricingAudit above. The list of experiences is strong and covers the right mix of paid commercial experiences (Zip World, Bounce Below, SMR, Ffestiniog Railway) and free activities (hiking routes, Coed y Brenin trail access).",
+      "gapsNotInTsData": [
+        "Antur Stiniog uplift downhill (referenced in md 'What It's Best For' and 'Smart Play' but absent from ts topExperiences)",
+        "Go Below underground mine trips (Cwmorthin / Croesor — referenced in md but not in ts topExperiences)",
+        "Glyderau Bochlwyd Horseshoe (referenced in md as a premium experience but absent from ts topExperiences)",
+        "Aberglaslyn Pass / Fisherman's Path (in md hiddenGems, not in ts)"
+      ],
+      "action": "Consider adding Antur Stiniog and Go Below to ts topExperiences for parity with the editorial md content. Both are distinct paid commercial experiences."
+    },
+    "faqs": {
+      "verdict": "EXCELLENT — 10 FAQs covering the core visitor questions with accurate, honest answers. The wild camping FAQ correctly notes legal position (technically requires permission) and the practical reality. The Crib Goch safety FAQ is appropriately stark.",
+      "flaggedFAQs": [
+        {
+          "question": "How do I get to Snowdonia without a car?",
+          "issue": "Answer correctly notes trains to Bangor and the Sherpa S1/S2 bus. Also correctly flags difficulty for Cadair Idris, Rhinogs, and Coed y Brenin without a vehicle. No material errors.",
+          "note": "Transport for Wales train services should be verified for current schedules — service patterns change. URL: https://www.tfwrail.wales"
+        }
+      ]
+    },
+    "hiddenGems": {
+      "verdict": "GOOD — 6 hidden gems in ts (plus 7 in md, one of which — Aberglaslyn Pass — is not in the ts list). All are genuine lesser-visited spots. No factual errors identified.",
+      "note": "md's 'Aberglaslyn Pass / Fisherman's Path' is an excellent addition that should be considered for the ts hiddenGems array."
+    },
+    "localEatsAndDrinks": {
+      "verdict": "GOOD — 6 venues in ts data; md adds Pen-y-Gwryd Hotel which is historically significant (1953 Everest expedition base). The Heights, Caffi Gwynant, Plas y Brenin café, Cobdens Hotel, and Glaslyn Ices are well-established. Ty Glyn (Capel Curig) exists in the data but should be verified as still trading.",
+      "flaggedVenues": [
+        "Ty Glyn, Capel Curig — verify current trading status",
+        "Pen-y-Gwryd Hotel — referenced in md but not in ts; strongly recommend adding"
+      ]
+    },
+    "seoMeta": {
+      "seoTitle": "Snowdonia (Eryri) | Adventure Activities & Hiking Guide | Adventure Wales",
+      "seoDescription": "Contains 'Europe's fastest zip line at 100mph' — this is Zip World's own marketing figure and is appropriate to repeat. No factual issues.",
+      "heroImagePath": "/images/regions/snowdonia-hero.jpg",
+      "heroImageNote": "Hero image path defined but provenance unknown — BLOCKED until licensing confirmed. See imageResearch section.",
+      "ogImagePath": "/images/regions/snowdonia-og.jpg",
+      "ogImageNote": "OG image path defined in ts meta but file was not confirmed in filesystem check — verify file exists at that path."
+    }
+  },
+
+  "tsVsMdAudit": {
+    "verdict": "The ts data file and md editorial content are broadly consistent and complementary. The md is significantly richer in mountain-range detail, cultural framing (Welsh language, slate heritage), and honest gap-flagging ('What It's NOT Good For'). No material factual conflicts identified between the two files. The md in several areas is more current and precise (UNESCO inscription year, dark sky year, 'noticeably less busy' instead of '40% less busy').",
+    "discrepancies": [
+      "ts: UNESCO 'UNESCO-related slate landscapes' vs md: 'Slate Landscape of Northwest Wales — UNESCO World Heritage Site (inscribed 2021)'. The md is correct and more precise.",
+      "ts insiderTips: 'Tuesday-Thursday slots are 40% less busy than weekends' vs md: 'Tuesday–Thursday slots are noticeably less busy'. The md is more appropriately hedged.",
+      "ts localEatsAndDrinks: 6 venues, no Pen-y-Gwryd Hotel. md: includes Pen-y-Gwryd. Recommend adding to ts.",
+      "ts topExperiences: 12 experiences; md Smart Play mentions Go Below (Cwmorthin) and Antur Stiniog, neither of which appear in the ts list."
+    ],
+    "mdStrengths": [
+      "Mountain range breakdowns (Glyderau, Carneddau, Rhinogs, Cadair Idris, Moel Siabod) with accurate scramble grade notes — absent from ts",
+      "Dedicated dark skies section with four specific stargazing spots (Llyn Geirionydd, Llynnau Cregennen, Crimea Pass, Llyn y Dywarchen)",
+      "Slate country section with Dinorwig, Llechwedd, Penrhyn, Cwmorthin/Croesor, and Ffestiniog Railway detailed",
+      "Welsh language primer (cwm, llyn, bwlch, afon, moel, carnedd, coed) — distinctive and accurate",
+      "'What It's NOT Good For' — editorial honesty about coasteering, sandy beaches, and car-dependency is rare and strong",
+      "Aberglaslyn Pass as hidden gem — not in ts hiddenGems array",
+      "Pen-y-Gwryd Hotel — historically significant, correctly described as 1953 Everest training base"
+    ]
+  },
+
+  "proposedChanges": [
+    {
+      "file": "data/regions/snowdonia.ts",
+      "field": "keyFacts[Heritage]",
+      "currentValue": "{ label: 'Heritage', value: 'UNESCO-related slate landscapes', detail: 'Gwynedd slate sites recognized for industrial heritage' }",
+      "proposedValue": "{ label: 'Heritage', value: 'Slate Landscape of Northwest Wales', detail: 'UNESCO World Heritage Site inscribed July 2021 (WHC 1654)' }",
+      "action": "Update to the correct UNESCO designation. Source: https://whc.unesco.org/en/list/1654"
+    },
+    {
+      "file": "data/regions/snowdonia.ts",
+      "field": "keyFacts[Dark Sky Status]",
+      "currentValue": "{ label: 'Dark Sky Status', value: 'International Dark Sky Reserve', detail: 'One of only 18 worldwide' }",
+      "proposedValue": "{ label: 'Dark Sky Status', value: 'International Dark Sky Reserve', detail: 'One of a small number worldwide — designated 2015' }",
+      "action": "Remove the outdated '18 worldwide' count and add the designation year. Verify current IDA count at https://www.darksky.org/our-work/conservation/idsp/reserves/ before publishing"
+    },
+    {
+      "file": "data/regions/snowdonia.ts",
+      "field": "insiderTips[5].detail (Zip World booking)",
+      "currentValue": "'Tuesday-Thursday slots are 40% less busy than weekends.'",
+      "proposedValue": "'Tuesday–Thursday slots are noticeably less busy than weekends.'",
+      "action": "Remove unsourced '40%' quantitative claim. Match the hedged phrasing in the md file."
+    },
+    {
+      "file": "data/regions/snowdonia.ts",
+      "field": "localEatsAndDrinks (add Pen-y-Gwryd Hotel)",
+      "currentValue": "6 venues — The Heights, Caffi Gwynant, Ty Glyn, Plas y Brenin, Cobdens Hotel, Glaslyn Ices",
+      "proposedValue": "Add: { name: 'Pen-y-Gwryd Hotel', type: 'Historic hotel bar', location: 'Nant Gwynant / Llanberis Pass junction', specialty: '1953 Everest team training base. Atmospheric mountain inn with historic memorabilia.', priceRange: '££' }",
+      "action": "Add Pen-y-Gwryd to ts localEatsAndDrinks to align with md editorial content. Verify current trading status at https://pyg.co.uk before adding."
+    },
+    {
+      "file": "data/regions/snowdonia.ts",
+      "field": "topExperiences (add missing commercial experiences)",
+      "currentValue": "12 experiences listed",
+      "proposedValue": "Consider adding: (1) Antur Stiniog uplift downhill MTB (Blaenau Ffestiniog), (2) Go Below underground mine trips (Cwmorthin / Croesor)",
+      "action": "HUMAN DECISION — these are commercially distinct from Bounce Below and Coed y Brenin. If operator research confirms they are currently active, add entries with verified pricing and operator URLs."
+    },
+    {
+      "file": "data/regions/snowdonia.ts",
+      "field": "hiddenGems (add Aberglaslyn Pass)",
+      "currentValue": "6 hidden gems",
+      "proposedValue": "Add: { name: 'Aberglaslyn Pass', type: 'River gorge walk', description: 'The Glaslyn river cuts through a wooded gorge between Beddgelert and Tremadog. The Fisherman\\'s Path along the river is short, dramatic, and quiet.', location: 'Between Beddgelert and Porthmadog' }",
+      "action": "Add to align with md content. This is a National Trust managed path and a well-documented walking route."
+    },
+    {
+      "file": "data/regions/snowdonia.ts",
+      "field": "meta.lastUpdated",
+      "currentValue": "'2025-02-06'",
+      "proposedValue": "Update to date when re-verification is complete",
+      "action": "Update after human QA pass confirms pricing, operator trading status, and image provenance."
+    },
+    {
+      "file": "content/ops/image-registry.json",
+      "field": "location-landing-snowdonia image_source_url and image_status",
+      "currentValue": "{ image_status: 'needs_review', image_source_url: '' }",
+      "proposedValue": "Add verified source URL and licence once provenance of snowdonia-hero.jpg is confirmed; or update status to 'blocked_ai_generated' if investigation confirms AI origin",
+      "action": "Investigate git commit 7b31a56f and the image generation skill used. Determine image origin. Update registry entry accordingly."
+    }
+  ],
+
+  "sourcesUsed": [
+    {
+      "url": "data/regions/snowdonia.ts",
+      "description": "Primary location landing data file — reviewed in full"
+    },
+    {
+      "url": "content/regions/snowdonia.md",
+      "description": "Editorial markdown content — reviewed in full; used as cross-reference and identified as the more current/precise version in several places"
+    },
+    {
+      "url": "content/ops/image-registry.json",
+      "description": "Image registry — confirmed location-landing-snowdonia has empty source_url and needs_review status"
+    },
+    {
+      "url": "content/ops/content-inventory.json",
+      "description": "Content inventory — confirmed location-landing-snowdonia status: research_needed"
+    },
+    {
+      "url": "data/research/content-ops/location-landing-anglesey.json",
+      "description": "Format reference — used to align output structure with established pattern"
+    },
+    {
+      "url": "git log (commit 7b31a56f)",
+      "description": "Git history — traced snowdonia-hero.jpg origin to 'feat: add image generation skill and download region/activity images' (mk-162, 2026-02-03)"
+    },
+    {
+      "url": "https://www.eryri.llyw.cymru",
+      "description": "Eryri National Park Authority — official source for area, visitor information, dark skies, Welsh 3000s"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/1654",
+      "description": "UNESCO World Heritage Centre — Slate Landscape of Northwest Wales (inscribed July 2021)"
+    },
+    {
+      "url": "https://www.darksky.org/our-work/conservation/idsp/reserves/",
+      "description": "International Dark-Sky Association — International Dark Sky Reserve list and current count"
+    },
+    {
+      "url": "https://getoutside.ordnancesurvey.co.uk/guides/yr-wyddfa-snowdon/",
+      "description": "Ordnance Survey — Yr Wyddfa height verification (1,085m / 3,560ft)"
+    },
+    {
+      "url": "https://www.nationalparks.uk/parks/snowdonia/",
+      "description": "National Parks UK — Snowdonia establishment year and order verification"
+    },
+    {
+      "url": "https://www.eryri.llyw.cymru/visiting/walking/long-distance-routes/welsh-3000s",
+      "description": "Eryri NPA — Welsh 3000s route and 15-peak count confirmation"
+    },
+    {
+      "url": "https://www.zipworld.co.uk/activity/detail/velocity-2",
+      "description": "Zip World Velocity 2 — operator page for price verification"
+    },
+    {
+      "url": "https://www.zipworld.co.uk/activity/detail/bounce-below",
+      "description": "Zip World Bounce Below — operator page for price verification"
+    },
+    {
+      "url": "https://www.snowdonrailway.co.uk",
+      "description": "Snowdon Mountain Railway — operator page for fare verification"
+    },
+    {
+      "url": "https://www.festrail.co.uk",
+      "description": "Ffestiniog & Welsh Highland Railways — operator page for fare verification"
+    },
+    {
+      "url": "https://www.beicsbrenin.co.uk",
+      "description": "Beics Brenin — on-site bike hire at Coed y Brenin; verify current prices"
+    },
+    {
+      "url": "https://www.pyb.co.uk",
+      "description": "Plas y Brenin National Outdoor Centre — guided paddling and other activities; verify prices"
+    },
+    {
+      "url": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/aber-falls/",
+      "description": "NRW Aber Falls — verify current parking charge (possibly now free)"
+    },
+    {
+      "url": "https://www.eryri.llyw.cymru/visiting/getting-here/parking",
+      "description": "Eryri NPA parking — verify current Pen-y-Pass charge"
+    },
+    {
+      "url": "https://pyg.co.uk",
+      "description": "Pen-y-Gwryd Hotel — verify current trading status before adding to ts data"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Snowdon",
+      "description": "Wikimedia Commons — CC-licensed hero image candidates for Yr Wyddfa / Snowdon"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Crib_Goch",
+      "description": "Wikimedia Commons — CC-licensed hero image candidates for Crib Goch"
+    },
+    {
+      "url": "https://openverse.org/search/?q=snowdonia+wales+mountain&license_type=commercial,modification",
+      "description": "Openverse — CC-licensed Snowdonia mountain image search (commercial use filter applied)"
+    }
+  ],
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Hero image snowdonia-hero.jpg — origin and licence unknown",
+      "priority": "HIGH",
+      "reason": "Added via commit 7b31a56f 'feat: add image generation skill and download region/activity images'. The commit message cannot rule out AI generation. Image registry has no source URL. Cannot be published without provenance confirmation.",
+      "verificationAction": "Inspect image file and commit 7b31a56f. Determine whether the image is photographic (from a licensed source) or AI-generated. If AI-generated, replace with a CC-licensed Wikimedia Commons or Openverse candidate."
+    },
+    {
+      "claim": "All pricing in topExperiences — AI-sourced per file header, 16+ months old",
+      "priority": "HIGH",
+      "reason": "snowdonia.ts declares 'Perplexity research' as a source. Pricing for Velocity 2 (£60–80), Bounce Below (£30–40), SMR return (£40–50), Ffestiniog Railway (£35–45), bike hire (£40–60), guided kayaking (£60–90), gorge walking (£50–70) all need live operator verification.",
+      "verificationUrls": [
+        "https://www.zipworld.co.uk",
+        "https://www.snowdonrailway.co.uk",
+        "https://www.festrail.co.uk",
+        "https://www.beicsbrenin.co.uk",
+        "https://www.pyb.co.uk"
+      ]
+    },
+    {
+      "claim": "UNESCO designation stated as 'UNESCO-related slate landscapes' in ts data",
+      "priority": "HIGH",
+      "reason": "Understates the actual WHS designation. Correct name: 'Slate Landscape of Northwest Wales, inscribed July 2021 (WHC 1654)'. This is a verifiable fact that should be stated precisely — both for SEO value and editorial accuracy.",
+      "verificationUrl": "https://whc.unesco.org/en/list/1654"
+    },
+    {
+      "claim": "Annual visitor count '6+ million'",
+      "priority": "MEDIUM",
+      "reason": "The Eryri NPA and Visit Wales typically cite 3–4 million annual visitor figure for the national park. 6+ million may refer to wider Gwynedd/north Wales tourism or use a broader counting methodology. Publishing a figure that significantly overstates the verified NPA count would be a factual error.",
+      "verificationUrl": "https://www.eryri.llyw.cymru"
+    },
+    {
+      "claim": "Dark Sky Reserve 'one of only 18 worldwide'",
+      "priority": "MEDIUM",
+      "reason": "The IDA has designated more International Dark Sky Reserves since 2015. The current count is approximately 22–23 globally as of 2024. The '18' figure is outdated.",
+      "verificationUrl": "https://www.darksky.org/our-work/conservation/idsp/reserves/"
+    },
+    {
+      "claim": "Aber Falls car park fee — '£3'",
+      "priority": "MEDIUM",
+      "reason": "NRW has been revising parking charges at managed sites. Reports suggest the Aber Falls car park (Bont Newydd) may now be free. Publishing a £3 fee that is no longer charged would be incorrect and damage user trust.",
+      "verificationUrl": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/aber-falls/"
+    },
+    {
+      "claim": "Snowdon Mountain Railway return fare '£40–50'",
+      "priority": "MEDIUM",
+      "reason": "The 2024 adult return fare to the summit was approximately £52. The £40–50 range in the file is likely understated. Publishing a lower price than the operator charges would create a poor user experience.",
+      "verificationUrl": "https://www.snowdonrailway.co.uk"
+    },
+    {
+      "claim": "Zip World booking window — 'Tuesday-Thursday slots are 40% less busy'",
+      "priority": "LOW",
+      "reason": "The '40%' figure is a specific quantitative claim with no source. The md correctly uses 'noticeably less busy' instead.",
+      "action": "Remove percentage claim from ts insiderTips. No external verification needed — just adopt the hedged md phrasing."
+    },
+    {
+      "claim": "Caffi Gwynant opening time — 'Opens at 8am'",
+      "priority": "LOW",
+      "reason": "Independent café opening hours change seasonally and with ownership. Do not publish a specific opening time without current verification.",
+      "verificationAction": "Check current opening hours via the café's own website or social media before publishing."
+    }
+  ],
+
+  "positivesToRetain": [
+    "Exceptional hero prose in snowdonia.ts — accurately captures Snowdonia's adventure identity, Welsh character, and breadth of experience in evocative but factually grounded language",
+    "snowdonia.md mountain range breakdowns (Glyderau, Carneddau, Rhinogs, Cadair Idris, Moel Siabod) are accurate and editorially distinctive — most region pages lack this depth",
+    "Snowdonia.md 'What It's NOT Good For' section — rare editorial honesty about coasteering, sandy beaches, and car-dependency; should be preserved and incorporated into ts data",
+    "Crib Goch safety FAQ and insiderTip — appropriately stark without being alarmist. 'People die here every year' is responsible messaging that reflects Eryri NPA communications",
+    "Welsh 3000s challenge coverage in both files is accurate — 15 peaks, ~30 miles, ~13,000ft ascent",
+    "Dark skies section in md with four specific pull-off locations (Llyn Geirionydd, Llynnau Cregennen, Crimea Pass, Llyn y Dywarchen) — genuinely useful and locally specific",
+    "Slate country section in md correctly names Dinorwig as 'world's second-largest slate quarry' and accurately describes the UNESCO designation",
+    "Wild camping FAQ correctly characterises the legal position and practical reality — avoids both false encouragement and excessive discouragement",
+    "Pen-y-Gwryd Hotel inclusion in md — historically significant as 1953 Everest training base; pyg.co.uk is a confirmed active venue",
+    "Sherpa bus (S1/S2) referenced correctly as the practical alternative to Pen-y-Pass parking",
+    "Full 4-season guide in ts with accurate temperature ranges, activity recommendations, and avoid notes",
+    "10 insiderTips with genuine local knowledge — Rhyd Ddu path, Nant Gwynant parking, Cwm Idwal for beginners, Llyn Dinas secret beach — all locally grounded and editorially credible"
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusRationale": "The Snowdonia location landing has exceptionally strong content foundations in both the ts data file and the editorial md. The prose quality is the highest in the codebase and the factual grounding is sound on all major claims. However, the content cannot be published in its current state due to three blockers that require human action: (1) the hero image provenance must be established (and the image replaced if AI-generated); (2) all pricing must be re-verified against current operator websites; (3) the UNESCO heritage field must be corrected. These are QA tasks, not research tasks — the research is complete. Status should advance to qa_needed immediately so a human reviewer can action these specific items. Once the hero image, pricing, and UNESCO field are resolved, the page can move directly to reviewed and then signed_off with minimal further work.",
+
+  "topBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Hero image snowdonia-hero.jpg has unknown provenance — possibly AI-generated, cannot be published",
+      "detail": "The file at public/images/regions/snowdonia-hero.jpg was added by commit 7b31a56f (mk-162, 2026-02-03) in a commit titled 'feat: add image generation skill and download region/activity images'. The image registry entry for location-landing-snowdonia has an empty source_url and 'needs_review' status. The commit message explicitly references an 'image generation skill', which cannot rule out AI generation of the image file. The data/regions/snowdonia.ts meta.heroImage is set to '/images/regions/snowdonia-hero.jpg' and meta.socialImage to '/images/regions/snowdonia-og.jpg' (OG file not confirmed in filesystem). No CC or licence information exists for either image.",
+      "resolution": "Step 1: Open public/images/regions/snowdonia-hero.jpg and assess visually whether it is photographic or AI-generated. Step 2: Review the image generation skill script referenced in commit 7b31a56f to determine whether images were sourced (downloaded from licensed URLs) or generated. Step 3a: If AI-generated — replace with a CC BY or CC BY-SA candidate from Wikimedia Commons (Category:Snowdon or Category:Crib_Goch) or Openverse. Download image, record source URL and licence in image-registry.json. Step 3b: If sourced — add the source URL and licence to image-registry.json. The page is blocked from publishing until this is resolved."
+    },
+    {
+      "rank": 2,
+      "blocker": "All pricing in topExperiences sourced from Perplexity AI (2025) — violates no-AI-content policy and is 16+ months out of date",
+      "detail": "data/regions/snowdonia.ts declares 'Sources: Perplexity research, Visit Wales, Eryri National Park, local knowledge' in the file header. This means at minimum some pricing data is AI-sourced. Specific high-risk figures: Snowdon Mountain Railway return (£40–50 — likely now £52+), Bounce Below (£30–40 — may be overstated), Aber Falls parking (£3 — may now be free), and guided kayaking/gorge walking (£60–90 and £50–70 — no operator named). Operator prices change seasonally and annually.",
+      "resolution": "Human reviewer to load current booking pages: zipworld.co.uk (Velocity 2 and Bounce Below), snowdonrailway.co.uk (return fare), festrail.co.uk (return fare), beicsbrenin.co.uk (bike hire), naturalresources.wales Aber Falls page (parking charge), pyb.co.uk (guided sessions). Record verified prices with source URL and date. Update all topExperiences priceRange fields. For experiences with no named operator (gorge walking, guided kayaking), either name and verify a current operator or remove the price range."
+    },
+    {
+      "rank": 3,
+      "blocker": "UNESCO heritage field in snowdonia.ts is vague and incorrect — does not name the actual World Heritage designation",
+      "detail": "data/regions/snowdonia.ts keyFacts entry reads: { label: 'Heritage', value: 'UNESCO-related slate landscapes', detail: 'Gwynedd slate sites recognized for industrial heritage' }. This is both vague and technically inaccurate — 'UNESCO-related' implies association rather than full inscription. The correct designation is 'Slate Landscape of Northwest Wales' (Welsh: Tirwedd Llechi Cymru), a serial UNESCO World Heritage Site inscribed in July 2021 (WHC reference 1654). The content/regions/snowdonia.md correctly states 'Slate Landscape of Northwest Wales — UNESCO World Heritage Site (inscribed 2021)'. Publishing the vague ts version when the correct official name is freely available from UNESCO would be a factual embarrassment, particularly given that this is one of Wales' most significant recent heritage designations.",
+      "resolution": "Update data/regions/snowdonia.ts keyFacts[Heritage] to: { label: 'Heritage', value: 'Slate Landscape of Northwest Wales', detail: 'UNESCO World Heritage Site, inscribed July 2021 (WHC 1654)' }. Source: https://whc.unesco.org/en/list/1654. This is a one-line change with a verified source that can be made immediately."
+    }
+  ]
+}

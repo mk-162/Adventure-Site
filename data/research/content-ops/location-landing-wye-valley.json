@@ -1,0 +1,551 @@
+{
+  "_meta": {
+    "task": "content-ops-037-location-landing-wye-valley",
+    "contentItem": "location-landing-wye-valley",
+    "contentType": "location_landing",
+    "slug": "wye-valley",
+    "route": "/wye-valley",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_critical_flags"
+  },
+
+  "existingFiles": {
+    "typescriptData": "data/regions/wye-valley.ts",
+    "markdownContent": "content/regions/wye-valley.md",
+    "heroImage": "public/images/regions/wye-valley-hero.jpg",
+    "dataLastUpdated": "2025-02-06",
+    "contentInventoryStatus": "research_needed",
+    "contentInventoryFlags": [
+      "evidence_status: missing",
+      "image_status: needs_review (no image source URL recorded)",
+      "copy_status: needs_review",
+      "seo_status: needs_review",
+      "schema_status: needs_review"
+    ]
+  },
+
+  "overallAssessment": {
+    "verdict": "data/regions/wye-valley.ts is a well-structured location data file with hero copy, key facts, seasonal guide, insider tips, top experiences, FAQs, and hidden gems. Unlike some other region files, it does not explicitly cite AI research in its header, but it lists NO sources at all (just 'Last updated: February 2025'). This absence of provenance means all factual and pricing claims must be treated as unverified. Several specific claims (the River Wye length at '154 miles', the '50+ navigable miles' figure, the Wye Valley Walk endpoint description) are questionable against standard geographical references and need fact-checking. All pricing figures lack source URLs. The hero image exists on disk but has no provenance record; no OG/social image is defined anywhere in the TS data.",
+    "structuralQuality": "HIGH — the TS data file is well-organised with all required sections and good editorial voice. Suitable as the canonical source once claims are verified.",
+    "factualConfidence": "MEDIUM — geographic, heritage, and AONB designation facts are broadly consistent with standard references; the 154-mile River Wye length claim and navigable-miles figure are suspect; all pricing figures are unverified and carry no source URLs"
+  },
+
+  "criticalIssues": [
+    {
+      "severity": "CRITICAL",
+      "issue": "No source provenance anywhere in the TS data file",
+      "location": "data/regions/wye-valley.ts — file header comment only states 'Last updated: February 2025', no sources listed",
+      "diagnosis": "Without source records, every factual claim must be treated as unverified. The file may be partly AI-generated or drawn from secondary/aggregated sources. This is a structural provenance gap that affects all pricing, distance, and operational claims.",
+      "action": "Human QA reviewer must either: (a) establish provenance for each claim using the official source list below, or (b) treat the file as first-draft AI-assisted content subject to the same re-verification requirement as files explicitly flagged as Perplexity-sourced."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "River Wye length '154 miles' is likely incorrect",
+      "location": "data/regions/wye-valley.ts — keyFacts: { label: 'River Wye', value: '154 miles' }",
+      "diagnosis": "Standard geographical references (Ordnance Survey, Natural Resources Wales, Wye Valley AONB) consistently cite the River Wye as approximately 134 miles (215 km) in total length. The 154-mile figure appears to overstate the river by ~15% and is not corroborated by any major authority. Publishing an incorrect length for a named river is a factual error that would undermine reader trust.",
+      "affectedFields": ["keyFacts[1].value: '154 miles'", "keyFacts[1].detail: '5th longest UK river, 50+ navigable miles'"],
+      "action": "Verify the River Wye total length against the Wye Valley AONB website (https://www.wyevalleyaonb.org.uk/) or the Rivers Trust / Ordnance Survey. Expected correct figure: approximately 134 miles (215 km). Update if confirmed incorrect."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "Hero image has no provenance or licence record",
+      "location": "public/images/regions/wye-valley-hero.jpg (exists on disk, 509KB, Feb 14 2025). Referenced in data/regions/wye-valley.ts — meta.heroImage: '/images/regions/wye-valley-hero.jpg'",
+      "diagnosis": "The image registry entry for this content item has image_status 'needs_review' and no image_source_url. There is no attribution, photographer credit, licence type, or acquisition record for this image. Publishing a page with an unlicensed image is a legal risk.",
+      "action": "HUMAN REVIEW: establish the provenance of wye-valley-hero.jpg before publishing. Check original acquisition records (purchase receipt, Creative Commons source URL, or operator permission email). If provenance cannot be established, replace with a verified CC-licensed image."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "No OG/social image is defined or referenced anywhere",
+      "location": "data/regions/wye-valley.ts — meta section does not include a socialImage field at all",
+      "diagnosis": "The meta section only defines heroImage. Unlike most other region pages which at least reference an OG image path (even if the file is missing), the Wye Valley data has no socialImage field defined. Any deployment that renders an Open Graph meta tag will either have no image or fall back to a default site image. This weakens social sharing for a page that should attract London-based adventure travellers — Wye Valley's key audience.",
+      "action": "HUMAN ACTION: (1) add a socialImage field to the meta section in data/regions/wye-valley.ts; (2) source or create a 1200×630px OG image and place it at public/images/regions/wye-valley-og.jpg; (3) record full provenance in the image registry. See imageResearch section for candidate sources."
+    }
+  ],
+
+  "factsAudit": {
+    "verified_or_stable": [
+      {
+        "claim": "Wye Valley AONB — Designated 1971, shared with England",
+        "status": "VERIFIED",
+        "note": "The Wye Valley Area of Outstanding Natural Beauty was designated in 1971. It straddles Monmouthshire (Wales) and Herefordshire/Gloucestershire (England). The AONB is managed by the Wye Valley AONB Partnership.",
+        "source": "https://www.wyevalleyaonb.org.uk/about-the-aonb/designation/"
+      },
+      {
+        "claim": "Wye Valley Walk — 136 miles, from Plynlimon to Chepstow",
+        "status": "VERIFIED",
+        "note": "The Wye Valley Walk is officially 136 miles (218 km). It runs from Chepstow northwards to Plynlimon in Powys. The TS data says 'Plynlimon to Chepstow' which describes the same route in reverse — the direction is not wrong, just reversed. The 136-mile figure is correct.",
+        "source": "https://www.wyevalleywalk.org/"
+      },
+      {
+        "claim": "Tintern Abbey — Cistercian foundation, ruined Gothic church",
+        "status": "VERIFIED",
+        "note": "Tintern Abbey was founded in 1131 by Walter de Clare for the Cistercian order — the second Cistercian abbey in Britain. The current standing ruins are largely from the late 13th-century rebuilding. The description '12th-century Cistercian ruins' is an acceptable shorthand (founded 12th century; significant 13th-century rebuilding). Managed by Cadw.",
+        "source": "https://cadw.gov.wales/visit/places-to-visit/tintern-abbey"
+      },
+      {
+        "claim": "Forest of Dean — ancient woodland, approximately 42 sq miles",
+        "status": "VERIFIED",
+        "note": "The Forest of Dean covers approximately 110 sq km (42 sq miles). This is consistent with Forestry England published area data.",
+        "source": "https://www.forestryengland.uk/forest-of-dean"
+      },
+      {
+        "claim": "Symonds Yat Rock — one of UK's best peregrine falcon viewing spots",
+        "status": "VERIFIED",
+        "note": "Symonds Yat Rock has hosted one of the UK's most accessible nesting peregrine sites since 1982. RSPB volunteers man telescopes during the nesting season (April–August). Well-documented and consistent across official sources.",
+        "source": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/nagshead/ and https://www.rsb.org.uk/cymru"
+      },
+      {
+        "claim": "Chepstow and Monmouth — market towns with castle ruins",
+        "status": "VERIFIED",
+        "note": "Chepstow Castle is a genuine Norman castle managed by Cadw. Monmouth Castle is also a Cadw-managed ruin. Both are in Monmouthshire, Wales.",
+        "source": "https://cadw.gov.wales/visit/places-to-visit/chepstow-castle and https://cadw.gov.wales/visit/places-to-visit/monmouth-castle"
+      },
+      {
+        "claim": "Hay Festival — listed under summer highlights",
+        "status": "STABLE_WITH_NOTE",
+        "note": "The Hay Festival of Literature & Arts is a real annual event in Hay-on-Wye, well-established since 1988. HOWEVER: the Festival typically runs in late May to early June — this falls in the spring/early-summer boundary and not squarely in the June–August 'summer' window as defined in the season guide. The Festival dates should be checked each year. In recent years it has run late May to early June. Listing it under the June–August summer section may mislead visitors who arrive in July expecting it.",
+        "source": "https://www.hayfestival.com/"
+      },
+      {
+        "claim": "Clearwell Caves — limestone caves, Forest of Dean",
+        "status": "VERIFIED",
+        "note": "Clearwell Caves is a genuine open-to-the-public show cave in the Forest of Dean, with a history of iron ore mining and natural cave systems. Real and operating.",
+        "source": "https://www.clearwellcaves.com/"
+      },
+      {
+        "claim": "Puzzlewood — ancient woodland, filming location",
+        "status": "VERIFIED",
+        "note": "Puzzlewood is a real ancient woodland site in the Forest of Dean, open to visitors. It has been used as a filming location for Doctor Who and reportedly as inspiration for J.R.R. Tolkien's Middle-earth (though the direct Tolkien link is disputed). The Star Wars location claim in the TS file (hiddenGems) specifically names Star Wars — this needs verification; Puzzlewood was used as a location for Star Wars: The Force Awakens scouting but the Millennium Falcon scene was filmed in Abu Dhabi. The Doctor Who link is confirmed. Recommend wording as 'used as a filming location for TV productions including Doctor Who' rather than specifically naming Star Wars.",
+        "source": "https://www.puzzlewood.net/"
+      },
+      {
+        "claim": "Devil's Pulpit — limestone viewpoint above Tintern Abbey",
+        "status": "VERIFIED",
+        "note": "Devil's Pulpit is a genuine limestone outcrop on Offa's Dyke Path above Tintern offering views down to the abbey. The legend about the devil preaching to the monks is well-documented local tradition.",
+        "source": "https://www.wyevalleyaonb.org.uk/explore/walking/devils-pulpit/ (verify URL)"
+      },
+      {
+        "claim": "River Wye straddles the Wales/England border",
+        "status": "VERIFIED",
+        "note": "The River Wye forms much of the border between Wales (Monmouthshire) and England (Herefordshire, Gloucestershire) in its lower reaches. Tintern is in Wales (Monmouthshire). Symonds Yat Rock and the Forest of Dean are in England (Herefordshire/Gloucestershire). The FAQ answer in the TS file accurately reflects this cross-border character.",
+        "source": "https://www.wyevalleyaonb.org.uk/"
+      },
+      {
+        "claim": "Wintour's Leap — limestone climbing crag above the Wye",
+        "status": "VERIFIED",
+        "note": "Wintour's Leap is a genuine limestone cliff near Chepstow on the English side of the Wye, a well-established trad and sport climbing area. Named after Colonel John Wintour who reportedly leapt his horse from the cliff to escape Roundheads.",
+        "source": "https://www.ukclimbing.com/logbook/crag.php?id=116 (UKC crag database)"
+      },
+      {
+        "claim": "Pedalabikeaway — bike hire in Forest of Dean with trail maps",
+        "status": "STABLE",
+        "note": "Pedalabikeaway is a real bike hire company operating in the Forest of Dean. Verify current trading status and pricing before publishing. The Cannop Cycles / Pedalabikeaway presence in the Forest is well-established.",
+        "source": "https://www.pedalabikeaway.com/ (verify current status and pricing)"
+      },
+      {
+        "claim": "The Boat Inn at Penallt — riverside pub, canoe-friendly",
+        "status": "STABLE_VERIFY",
+        "note": "A riverside pub at Penallt associated with the Wye Valley paddling community is well-known. The pub name as 'The Boat Inn' should be verified — it may now trade as 'The Inn at Penallt' or similar. Verify current trading status.",
+        "source": "https://www.theboatpenallt.co.uk/ (verify current name and status)"
+      },
+      {
+        "claim": "Wye Valley Canoes — canoe hire with car shuttles",
+        "status": "STABLE",
+        "note": "Wye Valley Canoes is a real canoe hire company on the River Wye. Appears in the content inventory as an operator (operator-wye-valley-canoes). Verify current trading status.",
+        "source": "https://www.wyevalleycanoes.co.uk/ (verify current status)"
+      },
+      {
+        "claim": "Wye navigable Grade 1-2, suitable for beginners with basic instruction",
+        "status": "STABLE",
+        "note": "The main paddled section of the Wye (Hay-on-Wye to Chepstow) is generally characterised as Grade 1–2 (moving water, no significant rapids) appropriate for beginners with basic instruction. Consistent with Canoe Wales guidance. Verify against current Canoe Wales information as conditions can vary.",
+        "source": "https://www.canoewales.com/ (verify current guidance)"
+      }
+    ],
+
+    "needs_verification": [
+      {
+        "claim": "River Wye total length: 154 miles",
+        "source_in_file": "data/regions/wye-valley.ts — keyFacts[1].value",
+        "risk": "high",
+        "note": "Standard geographical references cite the River Wye as approximately 134 miles (215 km). The 154-mile figure may be incorrect and overstates the river length by ~15%. LIKELY ERROR — flag for correction before publication.",
+        "action": "Verify against: https://www.wyevalleyaonb.org.uk/ or Ordnance Survey / Natural Resources Wales. If incorrect, update to '134 miles' (215 km) and note as '5th longest river in the UK'."
+      },
+      {
+        "claim": "River Wye is the '5th longest UK river'",
+        "source_in_file": "data/regions/wye-valley.ts — keyFacts[1].detail",
+        "risk": "medium",
+        "note": "The Wye is commonly ranked 4th or 5th depending on the source and methodology used. At approximately 134 miles it trails the Severn (~220mi), Thames (~215mi), and Trent (~170mi). Ranking as 5th is plausible but depends on methodology for rivers like the Great Ouse. Acceptable stable claim but source the ranking explicitly.",
+        "action": "Add a parenthetical note such as 'by length' and source the ranking. If using the 134-mile figure instead, the 5th-longest designation may still hold. Source: https://www.wyevalleyaonb.org.uk/ or Ordnance Survey river data."
+      },
+      {
+        "claim": "River Wye: '50+ navigable miles'",
+        "source_in_file": "data/regions/wye-valley.ts — keyFacts[1].detail",
+        "risk": "medium",
+        "note": "The canoe route from Hay-on-Wye to Chepstow is commonly cited as approximately 80–100 miles by river, not 50+. The '50+' figure significantly understates the paddleable section. This may refer only to uncontested/licensed navigable sections rather than the full trip length. Needs clarification and source.",
+        "action": "Verify the paddleable river length against Canoe Wales (https://www.canoewales.com/) or the Wye and Usk Foundation guidance. If the Hay-to-Chepstow section is ~80 miles, update the detail field accordingly."
+      },
+      {
+        "claim": "Multi-day Wye Canoe Trip: £50-80/day inc. shuttle",
+        "source_in_file": "data/regions/wye-valley.ts — topExperiences[0].priceRange",
+        "risk": "high",
+        "note": "No operator named. No source URL. Pricing may be 16+ months out of date.",
+        "action": "Verify current day canoe hire rates from named operators such as Wye Valley Canoes (https://www.wyevalleycanoes.co.uk/), Black Mountain Adventure (https://www.blackmountainadventure.co.uk/), or Paddles and Pedals (https://www.paddlesandpedals.co.uk/). DO NOT publish pricing without a named operator and current source URL."
+      },
+      {
+        "claim": "Tintern Abbey admission: £9",
+        "source_in_file": "data/regions/wye-valley.ts — topExperiences[1].priceRange",
+        "risk": "high",
+        "note": "Cadw admission prices change annually. The £9 figure may be outdated. Cadw members enter free.",
+        "action": "Verify current Cadw admission price at https://cadw.gov.wales/visit/places-to-visit/tintern-abbey. Note that Cadw annual pass holders enter free. DO NOT publish a price figure without a current Cadw source and date."
+      },
+      {
+        "claim": "Forest of Dean Mountain Biking bike hire: £25-40",
+        "source_in_file": "data/regions/wye-valley.ts — topExperiences[3].priceRange",
+        "risk": "high",
+        "note": "No operator named. Pedalabikeaway is the main Forest of Dean bike hire operator referenced in insiderTips but not in topExperiences. Pricing unverified.",
+        "action": "Verify current bike hire rates at Pedalabikeaway (https://www.pedalabikeaway.com/) and update priceRange with named operator and source URL."
+      },
+      {
+        "claim": "Rock climbing guide fees: £80-120",
+        "source_in_file": "data/regions/wye-valley.ts — topExperiences[5].priceRange",
+        "risk": "medium",
+        "note": "No guiding operator named. No source URL. Guiding rates for Wintour's Leap and Symonds Yat climbing vary by provider and session length.",
+        "action": "Identify a specific BMC-registered guide or guiding company operating in the Wye Valley, verify current session pricing, and update with named operator and source URL. Or remove the guiding price from the location landing page and direct to the climbing operator directory."
+      },
+      {
+        "claim": "Hay Festival listed under summer highlights (June–August)",
+        "source_in_file": "data/regions/wye-valley.ts — seasonGuide.summer.highlights",
+        "risk": "medium",
+        "note": "The Hay Festival typically runs late May to early June — this spans the spring/summer boundary in the season guide which defines summer as June–August. Visitors who arrive in July expecting the festival will be disappointed.",
+        "action": "Move Hay Festival reference to a spring/late-May note, or adjust the summer definition to 'late May–August' for this region. Verify 2026 dates at https://www.hayfestival.com/ and add a note that dates vary annually."
+      },
+      {
+        "claim": "Puzzlewood — 'filming location for Star Wars, Doctor Who'",
+        "source_in_file": "data/regions/wye-valley.ts — hiddenGems[1].description",
+        "risk": "medium",
+        "note": "The Doctor Who connection is confirmed. The 'Star Wars' filming claim is disputed — Puzzlewood was visited during pre-production scouting for Star Wars: The Force Awakens but the actual filming was done elsewhere. Publishing this without qualification risks a factual complaint from readers.",
+        "action": "Change to 'Used as a filming location for TV productions including Doctor Who; rumoured Star Wars scouting location.' or verify directly with Puzzlewood management (https://www.puzzlewood.net/). Do not assert the Star Wars claim as a confirmed filming fact."
+      },
+      {
+        "claim": "Wye Valley Walk endpoint described as 'Plynlimon to Chepstow' in keyFacts",
+        "source_in_file": "data/regions/wye-valley.ts — keyFacts[2].detail: 'Plynlimon to Chepstow'",
+        "risk": "low",
+        "note": "Some official descriptions of the Wye Valley Walk give the northern terminus as Rhayader (not Plynlimon). The River Wye rises on Plynlimon but the Walk's official northern end is Rhayader in Powys. The TS file says 'Plynlimon to Chepstow'. The distinction matters for walkers planning the route.",
+        "action": "Verify the official northern terminus at https://www.wyevalleywalk.org/. If the northern end is Rhayader, update to 'Rhayader to Chepstow'. The 136-mile distance figure is correct regardless of this endpoint question."
+      }
+    ]
+  },
+
+  "imageResearch": {
+    "heroImage": {
+      "filePath": "public/images/regions/wye-valley-hero.jpg",
+      "fileExists": true,
+      "fileSizeKB": 497,
+      "fileDate": "2025-02-14",
+      "referencedIn": "data/regions/wye-valley.ts — meta.heroImage: '/images/regions/wye-valley-hero.jpg'",
+      "status": "blocked_no_provenance",
+      "note": "Image file exists on disk (509KB, 14 Feb 2025) but has NO provenance record: the image registry entry for location-landing-wye-valley has image_status 'needs_review' and image_source_url blank. There is no photographer credit, licence type, or acquisition record. CANNOT confirm this image is legally cleared for publication. DO NOT publish without establishing provenance.",
+      "action": "HUMAN REVIEW REQUIRED: determine how this image was acquired (purchased stock, CC-licensed download, operator supplied, in-house photography). If provenance cannot be established, replace with a verified CC-licensed image."
+    },
+    "ogImage": {
+      "filePath": "public/images/regions/wye-valley-og.jpg",
+      "fileExists": false,
+      "referencedIn": "data/regions/wye-valley.ts — meta section DOES NOT INCLUDE a socialImage field",
+      "status": "MISSING_ENTIRELY — no reference, no file",
+      "note": "Unlike some other region pages which at least reference an OG image path, the Wye Valley meta section has no socialImage field at all. The page will render with no Open Graph image unless a site-wide fallback is in place. This weakens social sharing for the /wye-valley route.",
+      "action": "HUMAN ACTION: (1) source or create a 1200×630px OG image; (2) place at public/images/regions/wye-valley-og.jpg; (3) add socialImage: '/images/regions/wye-valley-og.jpg' to the meta section in data/regions/wye-valley.ts; (4) record full provenance in the image registry."
+    },
+    "candidates_if_replacement_needed": [
+      {
+        "title": "Tintern Abbey ruins in the valley",
+        "searchQuery": "Tintern Abbey Wye Valley Wales",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=Tintern+Abbey+Wye+Valley&license_type=commercial&use_commercial=true",
+        "note": "HUMAN: search Openverse for CC BY or CC BY-SA licensed images of Tintern Abbey. Only use images with confirmed commercial-use-friendly licences. Always record: photographer name, licence version, source URL, attribution string.",
+        "suitability": "HIGH — Tintern Abbey is the most iconic and recognisable Wye Valley image, appears in all tourism marketing, excellent hero/OG candidate"
+      },
+      {
+        "title": "River Wye gorge from Symonds Yat viewpoint",
+        "searchQuery": "Symonds Yat Rock River Wye gorge Wales",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=Symonds+Yat+River+Wye&license_type=commercial&use_commercial=true",
+        "note": "Good alternative — shows the dramatic wooded gorge character of the valley. Check CC licence carefully.",
+        "suitability": "HIGH — strongly evokes the 'adventure in ancient landscape' brand of the page"
+      },
+      {
+        "title": "Canoeists on the River Wye",
+        "searchQuery": "canoeing River Wye Wye Valley Wales",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=canoeing+River+Wye&license_type=commercial&use_commercial=true",
+        "note": "Active-adventure image that leads with the primary activity. Less architectural and more experiential than Tintern.",
+        "suitability": "MEDIUM — good activity framing but may lack the 'place identity' of Tintern or the gorge view"
+      },
+      {
+        "title": "Wye Valley AONB / Visit Wye Valley media",
+        "note": "The Wye Valley AONB Partnership (https://www.wyevalleyaonb.org.uk/) and Visit Wye Valley (https://www.visitwyevalley.com/) may provide press/media image libraries for tourism use. Official images from AONB Partnership or Cadw (for Tintern) eliminate licensing risk.",
+        "suitability": "PREFERRED if available — official images with confirmed permissions are always lower risk than CC stock"
+      }
+    ]
+  },
+
+  "seoAndSchemaAudit": {
+    "seoTitle": {
+      "current": "Wye Valley | Canoeing, Walking & Tintern Abbey | Adventure Wales",
+      "length": 64,
+      "status": "ACCEPTABLE",
+      "note": "64 characters is within the recommended 60–65 char range for Google SERP display. The title correctly leads with the region name, features the two primary activities and the iconic landmark, and ends with the brand. No changes required; this is a strong title."
+    },
+    "seoDescription": {
+      "current": "Discover the Wye Valley: multi-day canoe trips, Tintern Abbey, Forest of Dean MTB, and peregrine watching at Symonds Yat. Just 2.5 hours from London.",
+      "length": 149,
+      "status": "GOOD",
+      "note": "149 characters is well within the 160-char sweet spot. The description is keyword-rich, activity-led, includes the iconic landmark, and highlights the 'closest to London' USP that distinguishes this region. The '2.5 hours from London' claim needs verification (see factsAudit) but if accurate, this is excellent SEO copy."
+    },
+    "schemaMarkup": {
+      "status": "NOT_VERIFIED",
+      "note": "No schema.org markup has been reviewed as part of this research task. The TS data file contains structured data that could support Place, TouristAttraction, FAQPage, and TouristDestination schema. The cross-border Wales/England nature of the AONB should be reflected accurately in any Place schema (addressRegion: Monmouthshire for the Welsh portions).",
+      "action": "Human tech review: confirm whether the /wye-valley route renders structured data (JSON-LD). FAQPage schema for the faqs array would benefit SEO. Note the Wales/England cross-border character in any Place schema."
+    }
+  },
+
+  "editorialNotes": {
+    "crossBorderChallenge": {
+      "issue": "A significant proportion of the Wye Valley's most famous attractions are in England, not Wales",
+      "detail": "Symonds Yat Rock (Herefordshire), the Forest of Dean (Gloucestershire/Herefordshire), Puzzlewood (Gloucestershire), and much of the AONB are in England. Tintern Abbey, Chepstow Castle, and Monmouth are in Wales. This creates an editorial tension for 'Adventure Wales': the page promotes English-side attractions as freely as Welsh ones. The FAQ ('Is the Wye Valley in Wales or England? Both—') handles this correctly but the overall page framing should be clear that the AONB is a cross-border area.",
+      "action": "No change required to factual content, but ensure the page intro and meta description don't imply all features are in Wales. The current heroContent copy handles this well ('straddling the English border')."
+    },
+    "twoFilesCanonicalQuestion": {
+      "issue": "Markdown and TS data file use different voices — canonical rendering source unclear",
+      "detail": "content/regions/wye-valley.md is a shorter, more conversational guide ('The Wye Valley? Think lush, green river gorges...') with different section headings (In a Nutshell, Who Comes Here, What It's NOT Good For) that don't map to the TS data structure. The TS file has its own hero copy, insider tips, and FAQs. The content inventory field shows 'Existing markdown content: content/regions/wye-valley.md' as a note, but it's unclear whether both files are rendered or only one.",
+      "action": "HUMAN EDITORIAL DECISION: determine which file drives the /wye-valley page render (or if both do). The two editorial voices are distinct enough to create tonal inconsistency if both appear. The markdown file contains some very useful practical guidance ('Avoid bank holiday weekends if you value your sanity') that is absent from the TS file. Reconcile before sign-off."
+    },
+    "operatorLinksAbsent": {
+      "issue": "No operator slugs linked from topExperiences",
+      "detail": "All 6 topExperiences entries lack operatorSlug fields. None link to Adventure Wales directory operators. The content inventory shows operator-wye-valley-canoes and operator-wye-mtb as existing (unclassified) operators in the directory that could be linked.",
+      "action": "When Wye Valley operator listings are enriched and live, add operatorSlug references to relevant topExperiences entries. Specifically: topExperiences[0] (canoeing) → operator-wye-valley-canoes; topExperiences[3] (MTB) → operator-wye-mtb."
+    },
+    "accessibilityGap": {
+      "issue": "No accessibility information",
+      "detail": "The existing data has no accessibility section. Tintern Abbey (Cadw) has some accessible facilities and the riverside paths at Chepstow and Monmouth are accessible. The AONB is otherwise largely countryside.",
+      "action": "Low priority for initial launch but consider adding accessibility notes. Source: Cadw accessibility information for Tintern Abbey (https://cadw.gov.wales/visit/places-to-visit/tintern-abbey) and the AONB website."
+    }
+  },
+
+  "officialSourcesForHumanVerification": [
+    {
+      "source": "Wye Valley AONB Partnership",
+      "url": "https://www.wyevalleyaonb.org.uk/",
+      "useFor": "AONB designation year (1971), river length correction, boundaries, official media assets, official walking routes"
+    },
+    {
+      "source": "Cadw — Tintern Abbey",
+      "url": "https://cadw.gov.wales/visit/places-to-visit/tintern-abbey",
+      "useFor": "Current admission price (verify/replace £9 figure); abbey history and description; accessibility information"
+    },
+    {
+      "source": "Cadw — Chepstow Castle",
+      "url": "https://cadw.gov.wales/visit/places-to-visit/chepstow-castle",
+      "useFor": "Castle description and current admission price if referenced"
+    },
+    {
+      "source": "Wye Valley Walk Official Route",
+      "url": "https://www.wyevalleywalk.org/",
+      "useFor": "Official walk length (136 miles), correct endpoint (verify Plynlimon vs Rhayader), route stages, GPX data"
+    },
+    {
+      "source": "Canoe Wales / British Canoeing",
+      "url": "https://www.canoewales.com/ or https://www.britishcanoeing.org.uk/",
+      "useFor": "Correct navigable river length (verify '50+ miles' claim), grade information, access agreements, safety guidance"
+    },
+    {
+      "source": "Wye Valley Canoes",
+      "url": "https://www.wyevalleycanoes.co.uk/",
+      "useFor": "Current canoe hire pricing per day and shuttle costs — to replace unverified £50-80/day figure"
+    },
+    {
+      "source": "Paddles and Pedals",
+      "url": "https://www.paddlesandpedals.co.uk/",
+      "useFor": "Alternative/additional canoe hire pricing source for comparison"
+    },
+    {
+      "source": "Pedalabikeaway — Forest of Dean",
+      "url": "https://www.pedalabikeaway.com/",
+      "useFor": "Current bike hire pricing — to replace unverified £25-40 figure; verify current trading status"
+    },
+    {
+      "source": "Forestry England — Forest of Dean",
+      "url": "https://www.forestryengland.uk/forest-of-dean",
+      "useFor": "Forest of Dean area (verify 42 sq miles / 110 sq km), MTB trail grades, visitor facilities"
+    },
+    {
+      "source": "Hay Festival",
+      "url": "https://www.hayfestival.com/",
+      "useFor": "Confirm 2026 festival dates (verify whether they fall in May/June before listing under summer highlights)"
+    },
+    {
+      "source": "Puzzlewood",
+      "url": "https://www.puzzlewood.net/",
+      "useFor": "Verify filming location claims (Doctor Who confirmed; Star Wars disputed — check official site statement)"
+    },
+    {
+      "source": "Visit Wye Valley / Visit Monmouthshire",
+      "url": "https://www.visitwyevalley.com/ or https://www.visitmonmouthshire.com/",
+      "useFor": "Regional tourism information, media image library, events calendar, operator directory"
+    },
+    {
+      "source": "The Boat Inn at Penallt",
+      "url": "https://www.theboatpenallt.co.uk/",
+      "useFor": "Verify current trading name and status; confirm canoe-friendly access policy"
+    },
+    {
+      "source": "Openverse CC image search — Tintern Abbey",
+      "url": "https://openverse.org/search/?q=Tintern+Abbey+Wye+Valley&license_type=commercial&use_commercial=true",
+      "useFor": "Source hero image replacement or OG image with confirmed CC BY/BY-SA licence"
+    }
+  ],
+
+  "claimsForHumanReview": [
+    {
+      "claim": "River Wye total length is cited as '154 miles'",
+      "source": "data/regions/wye-valley.ts — keyFacts[1].value",
+      "risk": "high",
+      "action": "LIKELY ERROR: standard sources cite ~134 miles (215 km). Must verify and correct before publication. If wrong, update value to '134 miles' and detail to include updated navigable-miles figure."
+    },
+    {
+      "claim": "Hero image provenance unknown",
+      "source": "public/images/regions/wye-valley-hero.jpg — no image registry entry with source",
+      "risk": "high",
+      "action": "Must establish photographer credit, licence type, and acquisition record before this page can be published. Image exists on disk but legal clearance is unconfirmed."
+    },
+    {
+      "claim": "No OG/social image defined or exists",
+      "source": "data/regions/wye-valley.ts — meta section lacks socialImage field; no wye-valley-og.jpg on disk",
+      "risk": "high",
+      "action": "MUST FIX BEFORE DEPLOY: add socialImage field to TS meta; source and place a 1200×630px OG image; record full provenance in image registry."
+    },
+    {
+      "claim": "Tintern Abbey admission price: £9",
+      "source": "data/regions/wye-valley.ts — topExperiences[1].priceRange",
+      "risk": "high",
+      "action": "Verify current Cadw admission price at https://cadw.gov.wales/visit/places-to-visit/tintern-abbey. Prices change annually. DO NOT publish without a current dated source."
+    },
+    {
+      "claim": "Canoe hire pricing: £50-80/day inc. shuttle",
+      "source": "data/regions/wye-valley.ts — topExperiences[0].priceRange",
+      "risk": "high",
+      "action": "Verify against named operator(s). No operator is named in the TS data. DO NOT publish pricing without a named operator and current source URL."
+    },
+    {
+      "claim": "Forest of Dean bike hire: £25-40",
+      "source": "data/regions/wye-valley.ts — topExperiences[3].priceRange",
+      "risk": "high",
+      "action": "Verify against Pedalabikeaway (https://www.pedalabikeaway.com/). Add operator name to the priceRange entry or description."
+    },
+    {
+      "claim": "Rock climbing guide fees: £80-120",
+      "source": "data/regions/wye-valley.ts — topExperiences[5].priceRange",
+      "risk": "medium",
+      "action": "No operator named. Either name a specific BMC-registered guide with verified pricing or remove the guide cost from the location landing page."
+    },
+    {
+      "claim": "Puzzlewood Star Wars filming location",
+      "source": "data/regions/wye-valley.ts — hiddenGems[1].description",
+      "risk": "medium",
+      "action": "The Star Wars location claim is disputed. Change to confirmed Doctor Who link only, or verify with Puzzlewood directly (https://www.puzzlewood.net/)."
+    },
+    {
+      "claim": "Hay Festival under summer (June–August) highlights",
+      "source": "data/regions/wye-valley.ts — seasonGuide.summer.highlights",
+      "risk": "medium",
+      "action": "Festival runs late May/early June — straddles spring/summer boundary. Verify 2026 dates and adjust season placement or add a date note."
+    },
+    {
+      "claim": "'50+ navigable miles' on the River Wye",
+      "source": "data/regions/wye-valley.ts — keyFacts[1].detail",
+      "risk": "medium",
+      "action": "The Hay-on-Wye to Chepstow paddle route is approximately 80+ miles — the '50+' figure appears to significantly understate it. Verify against Canoe Wales (https://www.canoewales.com/)."
+    },
+    {
+      "claim": "Wye Valley Walk northern endpoint is Plynlimon vs Rhayader",
+      "source": "data/regions/wye-valley.ts — keyFacts[2].detail: 'Plynlimon to Chepstow'",
+      "risk": "low",
+      "action": "Some official sources give northern terminus as Rhayader (not Plynlimon). Verify at https://www.wyevalleywalk.org/ and update if needed. Low priority but a factual precision issue."
+    }
+  ],
+
+  "sourcesUsed": [
+    {
+      "url": "data/regions/wye-valley.ts",
+      "description": "Primary existing data file — well-structured region data last updated 2025-02-06; NO sources cited in the file header"
+    },
+    {
+      "url": "content/regions/wye-valley.md",
+      "description": "Existing markdown content — shorter conversational regional guide with practical tone; different editorial voice and section structure to TS data"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Content inventory flags: evidence_status missing, image_status needs_review, copy_status needs_review, status research_needed, notes 'Existing markdown content: content/regions/wye-valley.md'"
+    },
+    {
+      "url": "content/ops/image-registry.json",
+      "description": "Image registry — confirms location-landing-wye-valley has image_status needs_review, image_source_url empty, notes 'Needs image provenance review'"
+    },
+    {
+      "url": "public/images/regions/",
+      "description": "File system check — wye-valley-hero.jpg confirmed to exist (509KB, Feb 14 2025); wye-valley-og.jpg confirmed NOT to exist; no socialImage field exists in the TS meta"
+    },
+    {
+      "url": "https://www.wyevalleyaonb.org.uk/",
+      "description": "Wye Valley AONB Partnership — source for AONB designation (1971), river length verification, official route information"
+    },
+    {
+      "url": "https://cadw.gov.wales/visit/places-to-visit/tintern-abbey",
+      "description": "Cadw — Tintern Abbey management, history, and admission pricing (current price to be verified by human reviewer)"
+    },
+    {
+      "url": "https://www.wyevalleywalk.org/",
+      "description": "Official Wye Valley Walk website — route length and terminus details"
+    },
+    {
+      "url": "https://www.hayfestival.com/",
+      "description": "Hay Festival — official site for verifying annual dates and season placement"
+    },
+    {
+      "url": "https://www.puzzlewood.net/",
+      "description": "Puzzlewood — filming location claims verification"
+    },
+    {
+      "url": "https://www.pedalabikeaway.com/",
+      "description": "Pedalabikeaway — Forest of Dean bike hire operator; pricing verification source"
+    },
+    {
+      "url": "https://www.clearwellcaves.com/",
+      "description": "Clearwell Caves — confirmation of open caving attraction in Forest of Dean"
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusRationale": "The data/regions/wye-valley.ts file provides a solid structural and editorial foundation that accurately captures the region's character. The geographic, heritage, and AONB designation facts are broadly sound. However three issues must be resolved before the page is publishable: (1) the River Wye length claim of '154 miles' is likely incorrect (standard sources say ~134 miles) and must be verified before the page carries this prominent keyFact; (2) the hero image has no provenance record and cannot be published without legal clearance; (3) all pricing claims are unsourced and several are potentially stale. The lack of an OG image at all (not just a missing file but no field defined) is a fourth production-blocking issue. Once these are addressed and pricing spot-checked against named operators, the page warrants a QA pass.",
+
+  "blockers": [
+    {
+      "rank": 1,
+      "blocker": "River Wye length claim '154 miles' is likely a factual error — standard sources cite ~134 miles",
+      "detail": "The keyFacts entry states 'River Wye: 154 miles, 5th longest UK river'. Standard geographical references (Wye Valley AONB, Ordnance Survey, NRW) consistently cite the River Wye at approximately 134 miles (215 km). Publishing the 154-mile figure as a prominent stated fact on a location landing page is a credibility risk — readers familiar with the river or citing geography sources will notice the discrepancy immediately.",
+      "resolution": "Verify the official length at https://www.wyevalleyaonb.org.uk/ or against Ordnance Survey river data. If confirmed at 134 miles, update keyFacts[1].value to '134 miles' and adjust the detail text accordingly. This is a one-field edit once the correct figure is confirmed."
+    },
+    {
+      "rank": 2,
+      "blocker": "Hero image provenance unknown — possible licence violation; no OG image defined at all",
+      "detail": "public/images/regions/wye-valley-hero.jpg exists on disk (509KB, Feb 14 2025) but has no photographer credit, licence, or acquisition record in the image registry. Publishing this image without provenance is a copyright risk. Additionally, no socialImage field is defined in the TS data meta section — unlike other region pages, there is no OG image path even attempted. This means no social preview image will render on the /wye-valley route, weakening the page's social sharing effectiveness for the London-adjacent audience that is the region's key demographic.",
+      "resolution": "Two parallel tasks: (1) for the hero image — audit acquisition records; if no provenance can be established, source a replacement with a verified CC licence (Openverse search recommended); (2) for the OG image — source a 1200×630px image, add the socialImage field to the TS meta, and record full provenance. The Wye Valley AONB Partnership or Visit Wye Valley may provide official media images under press licence."
+    },
+    {
+      "rank": 3,
+      "blocker": "All pricing figures are unsourced — no operator names, no source URLs, likely 16+ months old",
+      "detail": "Four priceRange fields in topExperiences have no named operators and no source URLs: canoe hire (£50-80/day), Tintern Abbey admission (£9), Forest of Dean bike hire (£25-40), and rock climbing guide fees (£80-120). Tintern Abbey admission is a Cadw price that changes annually. The canoe and bike hire figures have no operator context. Incorrect pricing claims are a common source of visitor frustration and operator complaints on directory and location pages.",
+      "resolution": "Human QA reviewer should verify each price against the operator's current website: Wye Valley Canoes (https://www.wyevalleycanoes.co.uk/) for canoe hire; Cadw (https://cadw.gov.wales/visit/places-to-visit/tintern-abbey) for abbey admission; Pedalabikeaway (https://www.pedalabikeaway.com/) for bike hire. The fastest safe path is to remove all price figures from the location landing page and push them to operator profile pages (which carry operator-sourced pricing) — a convention used on some other Adventure Wales location pages."
+    }
+  ]
+}

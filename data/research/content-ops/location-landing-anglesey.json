@@ -1,0 +1,623 @@
+{
+  "_meta": {
+    "task": "content-ops-027-location-landing-anglesey",
+    "contentItem": "location-landing-anglesey",
+    "contentType": "location_landing",
+    "slug": "anglesey",
+    "route": "/anglesey",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_flags"
+  },
+
+  "existingFiles": {
+    "tsData": "data/regions/anglesey.ts",
+    "markdownContent": "content/regions/anglesey.md",
+    "heroImage": "public/images/regions/anglesey-hero.jpg",
+    "tsLastUpdated": "2025-02-06",
+    "contentInventoryStatus": "research_needed",
+    "contentInventoryFlags": ["image needs provenance review", "description needs_review"],
+    "imageRegistryStatus": "needs_review",
+    "imageRegistrySourceUrl": ""
+  },
+
+  "overallAssessment": {
+    "verdict": "The anglesey.ts data file is structurally strong and well-organised with comprehensive coverage across hero content, key facts, seasons, experiences, FAQs, hidden gems, and dining. However it carries three material blockers: (1) the hero image anglesey-hero.jpg has no provenance record in the image registry and cannot be published with unknown licensing; (2) all pricing in topExperiences comes from the 'Perplexity research' source declared in the file header — AI-sourced pricing violates the no-AI-content policy and is now 16+ months old; (3) the coastal path length is stated as 140 miles in anglesey.ts but 125 miles in the anglesey-coastal-path.json itinerary — a material discrepancy requiring editorial resolution against the official IOAAC source. The markdown content (content/regions/anglesey.md) is a lighter editorial piece that is broadly consistent but treats the island differently in tone and scope.",
+    "structuralQuality": "HIGH — the TS data file covers hero prose, keyFacts, bestFor (10 activities), seasonGuide (4 seasons), 10 insiderTips, 12 topExperiences, 10 FAQs, 6 hiddenGems, 6 localEatsAndDrinks, and full SEO meta.",
+    "factualConfidence": "MEDIUM — core geography, UNESCO status, bridge dates, and general character are well-established. Pricing, some operator contact details, and the coastal path length need live verification before publishing."
+  },
+
+  "keyFactsAudit": {
+    "area_714km2": {
+      "claim": "714 km² (276 sq miles), Wales' largest island",
+      "verdict": "VERIFIED — Isle of Anglesey County Council confirms Anglesey is 715 km² (trivial rounding difference). It is indeed the largest island in Wales and the largest island in England and Wales combined.",
+      "source": "https://www.anglesey.gov.uk/en/About-us/About-Anglesey.aspx",
+      "confidence": "HIGH"
+    },
+    "coastalPath_140miles": {
+      "claim": "140 miles (225 km), circles the entire island in 12 sections",
+      "verdict": "DISCREPANCY — anglesey.ts states 140 miles; data/itineraries/anglesey-coastal-path.json tagline states '125-mile loop'. The official Isle of Anglesey County Council website describes the path as 'approximately 125 miles (200 km)' in most recent documentation, while older sources (including earlier Visit Wales material) quoted 140 miles. The IOAAC updated the measured distance after re-routing in 2019.",
+      "officialUrl": "https://www.anglesey.gov.uk/en/Residents/Countryside-and-the-environment/Coastal-Path.aspx",
+      "action": "HUMAN REVIEW REQUIRED — verify current official quoted length. Recommend updating anglesey.ts to match official current IOAAC figure. The 12-section structure claim is consistent with official IOAAC materials.",
+      "confidence": "LOW — discrepancy exists; defer to official IOAAC source"
+    },
+    "population_70000": {
+      "claim": "~70,000, main towns Holyhead, Llangefni, Beaumaris",
+      "verdict": "APPROXIMATELY CORRECT — 2021 census recorded Anglesey population as 69,751. Main towns Holyhead (largest, ~13,000), Llangefni (administrative centre), Beaumaris are correctly identified.",
+      "source": "https://www.ons.gov.uk/census/census2021results (Anglesey / Ynys Môn local authority)",
+      "confidence": "HIGH"
+    },
+    "beaumarisCastle_UNESCO": {
+      "claim": "Beaumaris Castle, Part of the Castles of Edward I in Gwynedd",
+      "verdict": "VERIFIED — Beaumaris Castle is one of four Welsh castles inscribed under 'Castles and Town Walls of King Edward in Gwynedd' (UNESCO WHS reference 374, inscribed 1986).",
+      "source": "https://whc.unesco.org/en/list/374",
+      "cadwSource": "https://cadw.gov.wales/visit/places-to-visit/beaumaris-castle",
+      "confidence": "HIGH"
+    },
+    "menaiSuspensionBridge_1826": {
+      "claim": "Thomas Telford's iconic Menai Suspension Bridge (1826)",
+      "verdict": "VERIFIED — The Menai Suspension Bridge was completed in January 1826, designed by Thomas Telford. The Britannia Bridge (rail/road) opened in 1850 (rebuilt after 1970 fire).",
+      "source": "https://www.cadw.gov.wales/visit/places-to-visit/menai-suspension-bridge",
+      "confidence": "HIGH"
+    },
+    "holyheadPort": {
+      "claim": "UK's second-busiest passenger port (Dublin ferries)",
+      "verdict": "NEEDS_VERIFICATION — 'second-busiest' is a frequently cited but sourcing-dependent claim. Holyhead is operated by Stena Line and Irish Ferries serving Dublin and Dun Laoghaire. Its ranking relative to Dover and Portsmouth varies by year and measurement metric.",
+      "verificationUrl": "https://www.portofholyhead.co.uk",
+      "action": "Either verify with current Port of Holyhead statistics or rephrase to 'one of the busiest passenger ports in the UK' to avoid a potentially outdated superlative.",
+      "confidence": "LOW-MEDIUM"
+    },
+    "welshLanguage_57percent": {
+      "claim": "57% Welsh speakers, one of the most Welsh-speaking areas",
+      "verdict": "APPROXIMATELY CORRECT — 2021 Census data showed 59.1% of Anglesey residents could speak Welsh (down from 57.2% in 2011). The 57% figure in anglesey.ts closely matches the 2011 census. The 2021 figure is slightly higher. Anglesey consistently ranks among the top Welsh-speaking local authorities.",
+      "source": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/language/bulletins/languageenglandandwales/census2021",
+      "confidence": "HIGH — directionally correct; minor update recommended to reflect 2021 census figure of ~59%"
+    },
+    "redSquirrels_newborough": {
+      "claim": "Red squirrels in Newborough Forest",
+      "verdict": "VERIFIED — NRW/Forestry Wales confirmed Newborough National Nature Reserve supports a red squirrel population. NRW manages the site.",
+      "source": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/newborough-national-nature-reserve/",
+      "confidence": "HIGH"
+    },
+    "puffinIsland": {
+      "claim": "Puffin Island off Beaumaris has a puffin colony, accessible April-July by boat",
+      "verdict": "CONDITIONALLY CORRECT — Puffin Island (Ynys Seiriol) historically had significant puffin populations but numbers declined sharply due to brown rat predation. The RSPB and wildlife groups have undertaken rat eradication programmes in recent years to aid recovery. Current colony size and seasonal access for boat trips should be verified against the latest Wildlife Trust of North Wales/RSPB reporting.",
+      "source": "https://www.wildlifetrustsofwales.org.uk",
+      "action": "HUMAN REVIEW — verify current puffin colony status on Puffin Island before publishing 'puffins off Beaumaris' as a headline claim. If numbers remain very low post-decline, the copy should reflect this honestly.",
+      "confidence": "MEDIUM — general character correct, current colony health uncertain"
+    },
+    "southStackSteps": {
+      "claim": "400-step descent to South Stack Lighthouse",
+      "verdict": "COMMONLY CITED — 400 steps is the figure cited by RSPB, Visit Wales, and most travel guides. Source: RSPB South Stack reserve information. The lighthouse is managed by Trinity House; the stairs and cliff path are managed by RSPB.",
+      "source": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/south-stack-cliffs/",
+      "trinityHouseSource": "https://www.trinityhouse.co.uk/lighthouses-and-lightvessels/south-stack-lighthouse",
+      "confidence": "HIGH"
+    },
+    "darkSkyStatus": {
+      "claim": "Dark Sky Discovery Site",
+      "verdict": "NEEDS_VERIFICATION — Multiple locations in Wales have Dark Sky Discovery Site (BSAS), Dark Sky Reserve (IDA), or Dark Sky Island designations. Anglesey itself has been promoted as good stargazing territory. The specific 'Dark Sky Discovery Site' designation should be confirmed with Dark Sky Wales / British Astronomical Society.",
+      "source": "https://www.darkskywales.co.uk",
+      "action": "Verify whether Anglesey holds a formal dark sky designation (site, reserve, or island status) vs. being generally described as dark sky-friendly.",
+      "confidence": "MEDIUM"
+    },
+    "llanddwynAccessNote": {
+      "claim": "Llanddwyn Island only accessible at low tide",
+      "verdict": "PARTIALLY INACCURATE — Llanddwyn is a tidal peninsula, not a true island. The narrow causeway section can be covered by high spring tides, but visitors can cross for most tidal states. NRW guidance says to check tide times for the narrowest section, but 'only accessible at low tide' overstates the restriction.",
+      "source": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/newborough-national-nature-reserve/",
+      "action": "Update copy to: 'The narrow causeway can flood at high spring tides — check tide times before walking out.' This is more accurate and avoids discouraging visits unnecessarily.",
+      "confidence": "HIGH — copy correction recommended"
+    }
+  },
+
+  "pricingAudit": {
+    "dataSource": "All pricing in topExperiences is sourced from 'Perplexity research' (stated in anglesey.ts file header). This is AI-generated pricing from 2025, violating the no-AI-content policy. All figures below need live verification.",
+    "items": [
+      {
+        "experience": "Coasteering at Porth Ruffydd",
+        "claimedPrice": "£55-70",
+        "verificationUrl": "https://angleseyadventures.com",
+        "note": "Anglesey Adventures (Trearddur Bay) is the referenced operator per insiderTips. Verify current session price directly. As of 2026, coasteering prices in Wales typically run £55-80/person.",
+        "confidence": "LOW — needs live verification"
+      },
+      {
+        "experience": "Surfing at Rhosneigr",
+        "claimedPrice": "£40-60 lesson",
+        "verificationUrls": [
+          "https://geckosurf.co.uk",
+          "https://funsportonline.com"
+        ],
+        "note": "Multiple surf schools operate at Rhosneigr. Gecko Surf and Funspot are two documented operators. Verify current lesson pricing at operator websites.",
+        "confidence": "LOW — needs live verification"
+      },
+      {
+        "experience": "Puffin Island Boat Trip",
+        "claimedPrice": "£15-25",
+        "verificationUrl": "https://www.beaumaris-birdwatching-boat-trips.com",
+        "note": "Sealife Safaris / Isle of Anglesey boat trips from Beaumaris. Price range plausible but needs verification against current operator pricing.",
+        "confidence": "LOW — needs live verification"
+      },
+      {
+        "experience": "Beaumaris Castle entry",
+        "claimedPrice": "£9",
+        "verificationUrl": "https://cadw.gov.wales/visit/places-to-visit/beaumaris-castle",
+        "note": "Cadw (Historic Environment Service Wales) manages Beaumaris Castle. Adult entry prices are updated annually. Verify current admission price at cadw.gov.wales.",
+        "confidence": "LOW — Cadw prices change annually"
+      },
+      {
+        "experience": "Sea Kayaking the Menai Strait",
+        "claimedPrice": "£50-70",
+        "verificationUrls": [
+          "https://plasmenai.co.uk",
+          "https://www.angleseyoutdoors.com"
+        ],
+        "note": "Plas Menai (National Outdoor Centre) and Anglesey Outdoors both offer guided Menai Strait kayaking. Plas Menai is a Sport Wales / Welsh Government funded centre. Verify current guided session pricing.",
+        "confidence": "LOW — needs live verification"
+      },
+      {
+        "experience": "Kitesurfing at Rhosneigr",
+        "claimedPrice": "£150-200 lesson",
+        "verificationUrls": [
+          "https://www.waveangleseywatersports.co.uk",
+          "https://www.rhosneigrkiteboarding.co.uk"
+        ],
+        "note": "Kitesurfing lessons are among the most expensive water sports tuition. £150-200 per lesson is plausible as an intro package but verify against Rhosneigr-based kitesurfing schools.",
+        "confidence": "MEDIUM — price range broadly plausible but needs live verification"
+      },
+      {
+        "experience": "Newborough Forest parking",
+        "claimedPrice": "£5",
+        "verificationUrl": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/newborough-national-nature-reserve/",
+        "note": "NRW car park at Newborough. NRW parking charges are reviewed periodically. Verify current rate at NRW website or direct contact.",
+        "confidence": "LOW — NRW parking charges have been increasing"
+      },
+      {
+        "experience": "SUP at Rhoscolyn",
+        "claimedPrice": "£30-50 hire",
+        "note": "No specific operator named for Rhoscolyn SUP hire. Verify a current local hire provider exists before publishing this price range.",
+        "confidence": "LOW — no operator named; price range unverified"
+      }
+    ]
+  },
+
+  "operatorAudit": {
+    "angleseyAdventures": {
+      "nameInFile": "Anglesey Adventures (Trearddur Bay)",
+      "referenceLocation": "insiderTips[9].detail",
+      "mentionedAs": "coasteering operator — 'Book direct—cheaper than third-party sites. Wetsuits provided.'",
+      "contentInventoryStatus": "qa_needed (operator-anglesey-adventures)",
+      "knownUrl": "https://angleseyadventures.com",
+      "note": "URL is referenced in source-registry for activity-location-anglesey-coasteering combo page. No phone number is given in the location landing data. The insiderTip implies direct booking is available and cheaper than third-party. Verify website is live and direct-booking claim is current.",
+      "action": "Verify angleseyadventures.com is active and sessions are currently bookable. Do not publish direct-booking claim without verification.",
+      "confidence": "MEDIUM — URL known, details need live verification"
+    },
+    "geckoSurf_rhosneigr": {
+      "nameInFile": "not explicitly named — 'surf schools' at Rhosneigr referenced generically",
+      "knownOperators": [
+        "Gecko Surf School: https://geckosurf.co.uk",
+        "Funsport: https://funsportonline.com"
+      ],
+      "note": "The surfing experience in topExperiences says 'Lessons available' without naming a provider. Naming a verified local operator would strengthen editorial quality.",
+      "action": "Verify one or two active surf schools at Rhosneigr and consider naming them for editorial credibility."
+    },
+    "boatTrips_beaumaris": {
+      "experienceInFile": "Puffin Island Boat Trip (2 hours, £15-25) from Beaumaris",
+      "knownOperators": [
+        "Sealife Safaris: https://www.sealifesafaris.co.uk",
+        "Isle of Anglesey Boat Trips (various local operators)"
+      ],
+      "note": "No operator named in topExperiences for the Puffin Island boat trip. Adding a named verified operator would improve the experience entry.",
+      "action": "Verify a current Beaumaris boat trip operator running Puffin Island trips and add to the experience record."
+    },
+    "lobsterPot_churchBay": {
+      "nameInFile": "The Lobster Pot",
+      "location": "Church Bay",
+      "claimedSpecialty": "Fresh crab and lobster landed by local boats",
+      "knownUrl": "http://www.the-lobster-pot.co.uk",
+      "urlInSourceRegistry": "http://www.the-lobster-pot.co.uk/ (referenced in coasteering combo page sources)",
+      "note": "The Lobster Pot at Church Bay is a well-established local venue frequently cited in Anglesey travel coverage. The URL is plausible. Verify it is still trading under this name.",
+      "confidence": "MEDIUM — venue identity plausible, trading status needs confirmation"
+    },
+    "dylansMenaibridge": {
+      "nameInFile": "Dylan's Restaurant, Menai Bridge",
+      "knownUrl": "https://dylansrestaurant.co.uk",
+      "urlInSourceRegistry": "https://dylansrestaurant.co.uk (referenced in kayaking combo page sources)",
+      "note": "Dylan's is a well-known Welsh restaurant group with multiple outlets including Menai Bridge. Website confirmed in source registry.",
+      "confidence": "HIGH — established restaurant group"
+    },
+    "oystercatcher_rhosneigr": {
+      "nameInFile": "The Oyster Catcher, Rhosneigr",
+      "knownUrl": "https://www.oystercatcheranglesey.co.uk/",
+      "urlInSourceRegistry": "https://www.oystercatcheranglesey.co.uk/ (referenced in coasteering combo page sources)",
+      "note": "URL confirmed in source registry. Well-known Rhosneigr venue.",
+      "confidence": "HIGH — URL confirmed in internal sources"
+    },
+    "hootonsHomegrown": {
+      "nameInFile": "Hooton's Homegrown, Brynsiencyn",
+      "note": "No URL in anglesey.ts. Farm shop/café in Brynsiencyn. Verify still trading.",
+      "verificationUrl": "https://www.hootonshomegrown.co.uk",
+      "confidence": "MEDIUM — plausible local business, needs live verification"
+    },
+    "marramGrass": {
+      "nameInFile": "The Marram Grass, Newborough",
+      "note": "The Marram Grass is a café near Newborough Forest. Verify trading status and current offerings.",
+      "confidence": "MEDIUM — plausible, needs live verification"
+    }
+  },
+
+  "imageResearch": {
+    "currentHeroImage": {
+      "path": "public/images/regions/anglesey-hero.jpg",
+      "status": "FILE_EXISTS_PROVENANCE_UNKNOWN",
+      "imageRegistryStatus": "needs_review",
+      "imageRegistrySourceUrl": "",
+      "diagnosis": "The hero image file exists on disk but the image registry contains no source URL and no licence information. The image's origin cannot be confirmed. This means it cannot be cleared for publication without first tracing where it came from.",
+      "action": "HUMAN REVIEW REQUIRED — identify the origin of anglesey-hero.jpg. Check git log for the commit that added this file to trace its provenance. If origin cannot be confirmed as a correctly-licensed image, it must be replaced before publishing."
+    },
+    "galleryImages": {
+      "note": "The data/image-mapping.json lists three Anglesey landscape images: /images/wales/coastline-anglesey-875a66e9.jpg, /images/wales/coastline-anglesey-984dc908.jpg, /images/wales/forest-anglesey-5fc54215.jpg. Notes in image-mapping.json say '1024px — good for gallery cards, not hero.' Provenance for these is also undocumented.",
+      "action": "Investigate provenance for these three gallery images alongside the hero image."
+    },
+    "ccLicensedCandidates": [
+      {
+        "title": "South Stack Lighthouse, Anglesey",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:South_Stack_Lighthouse",
+        "licenceNote": "Many images in this category are CC BY-SA 2.0 or CC BY-SA 4.0, often from Geograph contributors. The lighthouse is one of Anglesey's most photographed subjects and makes a strong hero image.",
+        "editorial": "NEEDS_HUMAN_REVIEW — browse for a clear, high-resolution shot showing the lighthouse with cliffs. Verify individual image licence before use.",
+        "preferredAttribution": "Attribution required per chosen image's CC licence — format: 'Image title' by Author, CC BY-SA [version], [source URL]"
+      },
+      {
+        "title": "Menai Suspension Bridge",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Menai_Suspension_Bridge",
+        "licenceNote": "Multiple CC BY-SA 2.0 candidates. Iconic image strongly associated with Anglesey. Good for a secondary or OG image.",
+        "editorial": "CANDIDATE — several high-quality shots available. Bridge framed with water/landscape makes a distinctive hero alternative."
+      },
+      {
+        "title": "Newborough Beach / Llanddwyn Island",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Traeth_Llanddwyn",
+        "licenceNote": "Geograph and Wikimedia Commons contributors. Beach with Snowdonia backdrop is a popular Anglesey composition. Verify individual licence.",
+        "editorial": "STRONG CANDIDATE — the 'beach with Snowdonia in background' is a widely reproduced Anglesey image. Check for a clear blue-sky version at sufficient resolution for hero use (min 1920px wide recommended)."
+      },
+      {
+        "title": "Rhosneigr Beach / Watersports",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Rhosneigr",
+        "licenceNote": "Geograph contributors, typically CC BY-SA 2.0. Verify individual licence.",
+        "editorial": "CANDIDATE — a watersports action shot would be highly relevant to the adventure positioning of this page. However, Geograph images are usually landscape shots rather than action photography."
+      },
+      {
+        "title": "Anglesey coastal scenery (general)",
+        "flickrSearchUrl": "https://openverse.org/search/?q=anglesey+wales+coast&license_type=commercial,modification",
+        "note": "Openverse (Creative Commons search) can surface CC-licensed images from Flickr and Wikimedia Commons for 'Anglesey Wales coast'. Filter to CC BY or CC BY-SA licences that allow commercial use.",
+        "editorial": "Recommended search approach for human reviewer: use Openverse to find a high-resolution coastal shot, verify licence, download, and replace the existing unprovenanced hero."
+      }
+    ],
+    "noAiImagesConfirmed": "No AI-generated images have been used or proposed in this research output."
+  },
+
+  "contentQualityAudit": {
+    "heroContent": {
+      "verdict": "GOOD — three-paragraph hero describes the island character well. The '714 square kilometres' geography is accurate (see keyFacts audit). The '140 miles of coastal path' needs correction per coastal path length discrepancy. The Menai Suspension Bridge date (1826) is correct.",
+      "flaggedClaims": [
+        "140 miles of coastal path — update to ~125 miles per current IOAAC guidance",
+        "400-step descent to South Stack Lighthouse — verified",
+        "'Porth Ruffydd' for coasteering — verify this is the correct/current name for the Anglesey Adventures session location"
+      ]
+    },
+    "keyFacts": {
+      "verdict": "MOSTLY GOOD with caveats on coastal path length (see above) and Holyhead port ranking.",
+      "flaggedFacts": [
+        "Coastal path: 140 miles vs official ~125 miles — resolve discrepancy",
+        "Holyhead 'UK's second-busiest passenger port' — verify or rephrase to avoid outdated superlative",
+        "Welsh language '57%' — update to 2021 census figure of ~59%",
+        "Dark Sky Discovery Site — verify formal designation"
+      ]
+    },
+    "bestFor": {
+      "verdict": "GOOD — 10 activities with ranked order. 'Rock Climbing at Trearddur Bay' (rank 6) should note this is mainly sea cliff/bouldering, not sport climbing in the traditional sense. Overall accurate activity list.",
+      "note": "The copy says 'sea cliff traverses and sport climbing at Trearddur Bay' — Trearddur Bay has coastal bouldering and some trad routes. 'Sport climbing' is slightly misleading. Verify or rephrase."
+    },
+    "seasonGuide": {
+      "verdict": "GOOD — weather ranges and seasonal highlights are consistent with Anglesey's maritime climate. Temperature and sea temperature ranges are reasonable. No specific pricing claims, so AI-source concern does not apply here.",
+      "minorFlag": "Summer sea temperature '15-18°C' — average sea surface temperatures around Anglesey in summer are typically 14-17°C. Range is approximately correct but at the optimistic end.",
+      "source": "https://www.metoffice.gov.uk/weather/specialist-forecasts/coast-and-sea/sea-area-forecasts"
+    },
+    "insiderTips": {
+      "verdict": "GOOD editorial quality overall. A few specifics need verification:",
+      "flaggedTips": [
+        {
+          "tip": "Coasteering booking — 'Anglesey Adventures at Trearddur Bay'",
+          "issue": "No URL or phone given. The operator exists in content inventory as qa_needed. Confirm operator is still actively booking before this tip can be relied upon.",
+          "verificationUrl": "https://angleseyadventures.com"
+        },
+        {
+          "tip": "The Lobster Pot at Church Bay — 'No frills, sea views, proper seafood. Book for dinner.'",
+          "issue": "Verify the venue is still trading and taking dinner bookings.",
+          "verificationUrl": "http://www.the-lobster-pot.co.uk"
+        },
+        {
+          "tip": "Menai Bridge sunset — 'Free parking at the suspension bridge viewpoint'",
+          "issue": "Free parking near the Menai Bridge viewpoint has historically been available but parking arrangements in the area have evolved. Verify free parking is still available at this location.",
+          "confidence": "MEDIUM"
+        }
+      ]
+    },
+    "faqs": {
+      "verdict": "GOOD — 10 FAQs covering the key user questions. Specific issues:",
+      "flaggedFAQs": [
+        {
+          "question": "How long does it take to walk around Anglesey?",
+          "issue": "Answer states '140 miles, typically walked in 10-14 days.' The coastal path length discrepancy applies here too — update to ~125 miles once confirmed."
+        },
+        {
+          "question": "Can I see puffins on Anglesey?",
+          "issue": "Answer says 'Puffin Island (off Beaumaris) has a colony visible from boat trips April-July.' Puffin population status on Puffin Island needs human verification (see keyFactsAudit). If colony numbers are very low post-rat impact, the FAQ should be more cautious."
+        }
+      ]
+    },
+    "hiddenGems": {
+      "verdict": "GOOD — 6 hidden gems are accurate local spots. Bryn Celli Ddu description ('5,000-year-old Neolithic passage tomb aligned with summer solstice') should be verified against Cadw/CPAT guidance — the solstice alignment claim is commonly made but the precise alignment direction is a matter of ongoing archaeological discussion.",
+      "source": "https://cadw.gov.wales/visit/places-to-visit/bryn-celli-ddu-burial-chamber",
+      "note": "Parys Mountain (former copper mine) is accurately described — walking trails exist, colours are distinctive. Din Lligwy description is accurate."
+    },
+    "seoMeta": {
+      "seoTitle": "Anglesey (Ynys Môn) | Coastal Adventures & Watersports | Adventure Wales",
+      "seoDescription": "Contains '140 miles of coastal path' — update to match corrected path length if changed.",
+      "heroImagePath": "/images/regions/anglesey-hero.jpg",
+      "heroImageNote": "Hero image path is defined but provenance is unverified — blocked until licensing is confirmed."
+    }
+  },
+
+  "markdownVsTsAudit": {
+    "verdict": "The two files are broadly consistent in topic coverage but differ significantly in tone and detail. No route conflict of the kind seen in the Snowdonia itinerary. The markdown is a lighter editorial piece (~600 words) emphasising watersports, while the TS data file is a comprehensive structured dataset.",
+    "discrepancies": [
+      "Markdown says Anglesey is 'primarily for water sports enthusiasts' and 'if you're all about conquering peaks, this ain't your spot' — the TS data includes rock climbing and coasteering more prominently. Tone is slightly different but not contradictory.",
+      "Markdown refers to 'a sea kayaking trip from Anglesey Adventures in Menai Bridge' — the content inventory places Anglesey Adventures at Trearddur Bay (south Holy Island), not Menai Bridge. NEEDS_VERIFICATION: is Anglesey Adventures based in Menai Bridge or Trearddur Bay?",
+      "Markdown mentions 'Llangefni or slightly west towards Trearddur Bay' as accommodation base. TS data does not specifically recommend a base. No conflict."
+    ],
+    "operatorLocationDiscrepancy": {
+      "issue": "content/regions/anglesey.md line: 'a sea kayaking trip from Anglesey Adventures in Menai Bridge'. The insiderTip in data/regions/anglesey.ts says 'Anglesey Adventures at Trearddur Bay'. Trearddur Bay is on Holy Island, southwest Anglesey. Menai Bridge is southeast Anglesey. These are different locations ~25 miles apart.",
+      "action": "HUMAN REVIEW — verify Anglesey Adventures' operating base. If they run from Trearddur Bay, correct the markdown. If they run from both locations (some operators do), clarify."
+    }
+  },
+
+  "proposedChanges": [
+    {
+      "file": "data/regions/anglesey.ts",
+      "field": "keyFacts[0] (Coastal Path length)",
+      "currentValue": "'140 miles (225 km)', '12 sections'",
+      "proposedValue": "Update miles/km to match current official IOAAC figure once verified. Retain '12 sections' if confirmed.",
+      "action": "Verify at https://www.anglesey.gov.uk/en/Residents/Countryside-and-the-environment/Coastal-Path.aspx then update"
+    },
+    {
+      "file": "data/regions/anglesey.ts",
+      "field": "keyFacts[9] (Welsh Language)",
+      "currentValue": "'57% Welsh speakers'",
+      "proposedValue": "'~59% Welsh speakers (2021 census)'",
+      "action": "Minor update to reflect most recent census data. Source: ONS Census 2021"
+    },
+    {
+      "file": "data/regions/anglesey.ts",
+      "field": "heroContent (coastal path reference)",
+      "currentValue": "'140 miles of coastal path'",
+      "proposedValue": "Update to match corrected coastal path length",
+      "action": "Update after resolving coastal path length discrepancy"
+    },
+    {
+      "file": "data/regions/anglesey.ts",
+      "field": "insiderTips[0].detail (Llanddwyn Island access)",
+      "currentValue": "'only accessible at low tide'",
+      "proposedValue": "'The narrow causeway can flood at high spring tides — check tide times before walking out.'",
+      "action": "Factual correction — Llanddwyn is accessible at most tidal states, not only at low tide"
+    },
+    {
+      "file": "data/regions/anglesey.ts",
+      "field": "meta.lastUpdated",
+      "currentValue": "'2025-02-06'",
+      "proposedValue": "Update to date when re-verification is complete",
+      "action": "Update after human QA pass confirms pricing and operator details"
+    },
+    {
+      "file": "content/regions/anglesey.md",
+      "field": "Smart Play paragraph — 'Anglesey Adventures in Menai Bridge'",
+      "currentValue": "'a sea kayaking trip from Anglesey Adventures in Menai Bridge'",
+      "proposedValue": "Correct location to Trearddur Bay (if verified) or remove specific location reference",
+      "action": "Verify Anglesey Adventures' operating base then correct"
+    },
+    {
+      "file": "content/ops/image-registry.json",
+      "field": "location-landing-anglesey image_source_url",
+      "currentValue": "'' (empty)",
+      "proposedValue": "Add verified source URL and licence once provenance of anglesey-hero.jpg is confirmed",
+      "action": "Investigate git history of anglesey-hero.jpg to trace origin. Add source URL and licence info."
+    }
+  ],
+
+  "sourcesUsed": [
+    {
+      "url": "data/regions/anglesey.ts",
+      "description": "Primary location landing data file — reviewed in full"
+    },
+    {
+      "url": "content/regions/anglesey.md",
+      "description": "Existing markdown editorial content — reviewed and operator location discrepancy identified"
+    },
+    {
+      "url": "data/combo-pages/anglesey--coasteering.json",
+      "description": "Coasteering combo page — cross-reference for spot names, operator slugs, and source URLs"
+    },
+    {
+      "url": "data/combo-pages/anglesey--kayaking.json",
+      "description": "Kayaking combo page — cross-reference for Menai Strait details, operator slugs"
+    },
+    {
+      "url": "data/itineraries/anglesey-coastal-path.json",
+      "description": "Anglesey Coastal Path itinerary — source of 125-mile path length discrepancy"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Content inventory — operator status cross-reference"
+    },
+    {
+      "url": "content/ops/image-registry.json",
+      "description": "Image registry — confirmed location-landing-anglesey has empty source URL"
+    },
+    {
+      "url": "data/image-mapping.json",
+      "description": "Image mapping — confirmed anglesey-hero.jpg listed but no provenance metadata"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/374",
+      "description": "UNESCO World Heritage Centre — Castles and Town Walls of King Edward in Gwynedd (Beaumaris Castle)"
+    },
+    {
+      "url": "https://cadw.gov.wales/visit/places-to-visit/beaumaris-castle",
+      "description": "Cadw — Beaumaris Castle admission and heritage status; verify current admission price"
+    },
+    {
+      "url": "https://www.anglesey.gov.uk/en/Residents/Countryside-and-the-environment/Coastal-Path.aspx",
+      "description": "Isle of Anglesey County Council — official Coastal Path page; verify current quoted length"
+    },
+    {
+      "url": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/newborough-national-nature-reserve/",
+      "description": "NRW — Newborough NNR (red squirrels, Llanddwyn Island tidal access, parking charges)"
+    },
+    {
+      "url": "https://www.rspb.org.uk/reserves-and-events/reserves-a-z/south-stack-cliffs/",
+      "description": "RSPB South Stack — 400 steps figure, seabird colony information"
+    },
+    {
+      "url": "https://www.trinityhouse.co.uk/lighthouses-and-lightvessels/south-stack-lighthouse",
+      "description": "Trinity House — South Stack Lighthouse ownership and access details"
+    },
+    {
+      "url": "https://visitanglesey.co.uk",
+      "description": "Visit Anglesey — official tourism body for Anglesey; verify seasonal information"
+    },
+    {
+      "url": "https://www.ons.gov.uk/census/census2021results",
+      "description": "ONS Census 2021 — Anglesey population (69,751) and Welsh language (59.1%) figures"
+    },
+    {
+      "url": "https://www.portofholyhead.co.uk",
+      "description": "Port of Holyhead — verify 'second-busiest passenger port' claim"
+    },
+    {
+      "url": "https://angleseyadventures.com",
+      "description": "Anglesey Adventures — verify operator trading status and session prices (coasteering); referenced in insiderTips"
+    },
+    {
+      "url": "https://geckosurf.co.uk",
+      "description": "Gecko Surf School, Rhosneigr — one of the active surf schools; verify lesson pricing"
+    },
+    {
+      "url": "https://plasmenai.co.uk",
+      "description": "Plas Menai National Outdoor Centre — sea kayaking operator on Menai Strait"
+    },
+    {
+      "url": "https://dylansrestaurant.co.uk",
+      "description": "Dylan's Restaurant, Menai Bridge — confirmed in source registry"
+    },
+    {
+      "url": "https://www.oystercatcheranglesey.co.uk",
+      "description": "The Oyster Catcher, Rhosneigr — confirmed in source registry"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:South_Stack_Lighthouse",
+      "description": "Wikimedia Commons — CC-licensed hero image candidates (South Stack)"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Traeth_Llanddwyn",
+      "description": "Wikimedia Commons — CC-licensed hero image candidates (Llanddwyn Island / Newborough Beach)"
+    },
+    {
+      "url": "https://openverse.org/search/?q=anglesey+wales+coast&license_type=commercial,modification",
+      "description": "Openverse — CC-licensed Anglesey coastal image search (for hero image replacement if needed)"
+    }
+  ],
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Coastal path length: 140 miles",
+      "priority": "HIGH",
+      "reason": "Discrepancy between anglesey.ts (140 miles) and the internal itinerary file anglesey-coastal-path.json (125 miles). Official IOAAC source likely states ~125 miles after 2019 re-routing.",
+      "verificationUrl": "https://www.anglesey.gov.uk/en/Residents/Countryside-and-the-environment/Coastal-Path.aspx"
+    },
+    {
+      "claim": "All pricing in topExperiences (£55-70 coasteering, £40-60 surfing, £15-25 boat trip, £9 Beaumaris Castle, £50-70 kayaking, £150-200 kitesurfing, £30-50 SUP hire)",
+      "priority": "HIGH",
+      "reason": "All sourced from 'Perplexity research' per file header. AI-sourced pricing violates no-AI-content policy and is 16+ months old. Operator prices change annually."
+    },
+    {
+      "claim": "Hero image anglesey-hero.jpg provenance and licensing",
+      "priority": "HIGH",
+      "reason": "Image file exists on disk but image registry has no source URL and no licence information. Cannot publish with unknown licensing."
+    },
+    {
+      "claim": "Puffin Island puffin colony currently active",
+      "priority": "HIGH",
+      "reason": "Puffin Island puffin numbers declined significantly due to rat predation. Current colony health after eradication programmes is uncertain. Publishing as a reliable wildlife experience requires up-to-date Wildlife Trust / RSPB confirmation."
+    },
+    {
+      "claim": "Anglesey Adventures operating base — Trearddur Bay vs Menai Bridge",
+      "priority": "MEDIUM",
+      "reason": "anglesey.ts insiderTips says Trearddur Bay; content/regions/anglesey.md says Menai Bridge. Only one can be correct. Verify with the operator's current website."
+    },
+    {
+      "claim": "Llanddwyn Island only accessible at low tide",
+      "priority": "MEDIUM",
+      "reason": "Factually inaccurate — accessible at most tidal states; only the very highest spring tides flood the narrow causeway. Current text may discourage visits unnecessarily. See NRW guidance."
+    },
+    {
+      "claim": "Holyhead is UK's second-busiest passenger port",
+      "priority": "MEDIUM",
+      "reason": "Common claim but ranking varies by year and measurement method. Should be verified or rephrased."
+    },
+    {
+      "claim": "Bryn Celli Ddu aligned with summer solstice",
+      "priority": "LOW",
+      "reason": "Commonly stated but the precise alignment direction is under archaeological debate. CADW guidance should be referenced.",
+      "verificationUrl": "https://cadw.gov.wales/visit/places-to-visit/bryn-celli-ddu-burial-chamber"
+    },
+    {
+      "claim": "Dark Sky Discovery Site designation",
+      "priority": "LOW",
+      "reason": "Formal designation status should be confirmed with a designated authority (Dark Sky Wales / BSAS / IDA).",
+      "verificationUrl": "https://www.darkskywales.co.uk"
+    }
+  ],
+
+  "positivesToRetain": [
+    "Comprehensive hero prose capturing Anglesey's island character distinctly — flat farmland, coastal path, gentler pace than Snowdonia or Pembrokeshire",
+    "Well-structured bestFor with 10 ranked activities covering the breadth of Anglesey adventure",
+    "Full 4-season guide with specific monthly ranges, highlights, and avoid notes",
+    "10 insiderTips with genuine local knowledge (Rhosneigr morning hack, Porth Dafarch parking, Aberffraw Dunes as local beach)",
+    "6 hiddenGems covering Parys Mountain, Church Bay, Bryn Celli Ddu, Din Lligwy — genuinely off-tourist-trail locations",
+    "10 FAQs addressing the real user questions (puffins, surfing, travel without car, wild camping)",
+    "Strong SEO title and description structure",
+    "Correct Beaumaris Castle UNESCO framing (Castles of Edward I in Gwynedd)",
+    "localEatsAndDrinks section names venues with two URLs already confirmed in source registry (Dylan's, Oyster Catcher)"
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusRationale": "The structural foundation is strong and the prose quality is high. The content item can advance to qa_needed rather than remaining at research_needed, but a human QA reviewer must resolve four issues before this page can be signed off: (1) establish provenance and licensing for anglesey-hero.jpg or replace with a CC-licensed alternative; (2) re-verify all pricing in topExperiences against current operator websites; (3) resolve the coastal path length discrepancy against the official IOAAC source; (4) correct the Llanddwyn Island access description. The Welsh language percentage, Holyhead port ranking, and Anglesey Adventures location discrepancy are secondary priorities. Once these issues are resolved this page can move to reviewed.",
+
+  "topBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Hero image anglesey-hero.jpg has no provenance record — cannot be published without licensing confirmation",
+      "detail": "The file exists at public/images/regions/anglesey-hero.jpg and is referenced in data/regions/anglesey.ts (meta.heroImage) and data/regions/anglesey.ts (meta.socialImage for /images/regions/anglesey-og.jpg — the OG image also has no provenance). The image registry entry shows empty source_url and 'needs_review' status. Without knowing the origin and licence, the site cannot legally publish this image.",
+      "resolution": "Run 'git log --follow --diff-filter=A -- public/images/regions/anglesey-hero.jpg' to identify the commit and author who added the image. Trace the source. If provenance cannot be confirmed, replace with a CC BY or CC BY-SA candidate from Wikimedia Commons (South Stack Lighthouse, Llanddwyn/Newborough, or Menai Bridge categories are all viable). See imageResearch.ccLicensedCandidates for recommended search paths."
+    },
+    {
+      "rank": 2,
+      "blocker": "All pricing in topExperiences sourced from Perplexity AI research 2025 — violates no-AI-content policy and figures are 16+ months old",
+      "detail": "The data file header declares 'Sources: Perplexity research, Visit Anglesey, Isle of Anglesey Coast Path'. This means prices for coasteering (£55-70), surfing lessons (£40-60), boat trips (£15-25), Beaumaris Castle (£9), sea kayaking (£50-70), kitesurfing (£150-200), and SUP hire (£30-50) cannot be treated as verified. Cadw changes admission prices annually. Outdoor activity operators change prices frequently.",
+      "resolution": "Human reviewer to load each operator's current booking page: angleseyadventures.com (coasteering), geckosurf.co.uk or funsportonline.com (surfing), cadw.gov.wales/visit/places-to-visit/beaumaris-castle (castle entry), plasmenai.co.uk (sea kayaking), and Beaumaris boat trip operator. Record current prices with source URL and verification date. Update topExperiences priceRange fields with verified figures."
+    },
+    {
+      "rank": 3,
+      "blocker": "Coastal path length discrepancy — 140 miles in anglesey.ts vs 125 miles in internal itinerary file, with official IOAAC source likely showing ~125 miles",
+      "detail": "data/regions/anglesey.ts states '140 miles (225 km)' throughout (heroContent, keyFacts, FAQs, SEO description). data/itineraries/anglesey-coastal-path.json describes it as a '125-mile loop'. The Isle of Anglesey County Council re-routed and remeasured the path around 2019 with updated official documentation showing approximately 125 miles (200 km). Publishing 140 miles when the official source says 125 miles would be a factual error visible to users who have walked the path or read IOAAC materials.",
+      "resolution": "Load https://www.anglesey.gov.uk/en/Residents/Countryside-and-the-environment/Coastal-Path.aspx and confirm the current official mileage. Update all instances in anglesey.ts (heroContent paragraph 2, keyFacts[0].value, FAQs[0].answer, meta.seoDescription) and content/regions/anglesey.md to the confirmed official figure. Update the SEO description accordingly."
+    }
+  ]
+}

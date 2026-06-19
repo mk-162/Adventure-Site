@@ -1,0 +1,551 @@
+{
+  "_meta": {
+    "task": "content-ops-071-operator-afan-forest-park",
+    "contentItem": "operator-afan-forest-park",
+    "contentType": "operator",
+    "slug": "afan-forest-park",
+    "route": "/directory/afan-forest-park",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_flags",
+    "identityConfidence": "HIGH — Afan Forest Park is a well-documented public attraction managed by Neath Port Talbot Council and Natural Resources Wales"
+  },
+
+  "proposedOperatorData": {
+    "name": "Afan Forest Park",
+    "slug": "afan-forest-park",
+    "website": "https://afanforestpark.com/",
+    "websiteNote": "Active as of June 2026. The older domain afanforestpark.co.uk also appears in some third-party listings but afanforestpark.com is the canonical current domain linked from NRW and NPT tourism pages.",
+    "websiteSource": "https://naturalresources.wales/days-out/places-to-visit/south-west-wales/afan-forest-park-visitor-centre/?lang=en",
+
+    "managedBy": {
+      "primaryAuthority": "Neath Port Talbot County Borough Council",
+      "landManager": "Natural Resources Wales (NRW)",
+      "note": "Afan Forest Park is publicly managed. The visitor centre and car parking are operated by Neath Port Talbot Council. The forest land is managed by Natural Resources Wales. This is not a private commercial operator — editorial team should verify whether the 'unclassified_operator' commercial tier is appropriate for a publicly managed attraction.",
+      "verifyManually": true
+    },
+
+    "contact": {
+      "phone": "01639 850564",
+      "phoneSource": "Internal MTB centres CSV (content/mtb/centres.csv); cross-confirmed by https://rideafan.bike/local-trails/lower-valley-trail-centre-afan-argoed-visitor-centre/ and https://www.mbwales.com/agents/afan-forest-park/",
+      "phoneNote": "This is the main visitor centre number. A secondary number (01639 851900) appears on Mountain Bike Wales listing only — treat as unverified.",
+      "email": "afanforestpark@npt.gov.uk",
+      "emailSource": "https://rideafan.bike/local-trails/lower-valley-trail-centre-afan-argoed-visitor-centre/ — cross-confirmed across multiple third-party sources as the NPT Council contact email for the park",
+      "emailNote": "NPT Council domain email — likely reliable but verify it is still current before publishing.",
+      "address": {
+        "line1": "Afan Forest Park Visitor Centre",
+        "locality": "Cynonville",
+        "town": "Port Talbot",
+        "county": "Neath Port Talbot",
+        "postcode": "SA13 3HG",
+        "country": "Wales",
+        "osGridRef": "SS 820 950",
+        "directions": "M4 J40, then A4107 to Cynonville",
+        "nearestStation": "Port Talbot Parkway (approx. 8 miles)"
+      },
+      "addressSource": "https://naturalresources.wales/days-out/places-to-visit/south-west-wales/afan-forest-park-visitor-centre/?lang=en and content/mtb/centres.csv (internal)"
+    },
+
+    "secondHub": {
+      "name": "Glyncorrwg Mountain Bike Centre",
+      "address": "Glyncorrwg, Port Talbot, SA13 3EA",
+      "osGridRef": "SS 872 984",
+      "distanceFromMain": "Approx. 10.5 miles north-east of Port Talbot",
+      "nrwPage": "https://naturalresources.wales/days-out/places-to-visit/south-west-wales/afan-forest-park-glyncorrwg-mountain-bike-centre/?lang=en"
+    },
+
+    "location": {
+      "lat": 51.6147,
+      "lng": -3.6089,
+      "latLngSource": "content/mtb/centres.csv (internal data file, confirmed plausible for Cynonville, Neath Port Talbot)",
+      "region": "south_wales"
+    },
+
+    "openingHours": {
+      "visitorCentre": {
+        "summerAprilToSeptember": {
+          "mondayToFriday": "09:00–17:00",
+          "weekendsAndBankHolidays": "09:00–18:00"
+        },
+        "winterOctoberToMarch": {
+          "mondayToFriday": "09:00–16:00",
+          "weekendsAndBankHolidays": "09:00–17:00"
+        },
+        "source": "https://rideafan.bike/local-trails/lower-valley-trail-centre-afan-argoed-visitor-centre/ (cites NPT Council)",
+        "note": "A slight discrepancy exists — Mountain Bike Wales lists 09:30 opening. Verify exact current times at https://afanforestpark.com/ or by calling 01639 850564 before publishing."
+      },
+      "afanValleyBikeShed": {
+        "hours": "Monday and Wednesday–Sunday 09:00–17:00; closed Tuesdays",
+        "source": "https://www.afanvalleybikeshed.co.uk/"
+      }
+    },
+
+    "description": {
+      "short": "Afan Forest Park is one of Wales' premier mountain biking destinations, set within 14,000 acres of Afan Valley forest in Neath Port Talbot, South Wales. With trails for all abilities — from beginner green routes to the epic 46 km Skyline — plus walking, a visitor centre, bike hire, and café facilities at two hubs, it draws riders and walkers from across the UK.",
+      "shortNote": "Drafted from verified sources. Needs editorial review. The 14,000-acre figure should be verified — the Wikipedia article cites this but it is not directly confirmed on NRW or afanforestpark.com.",
+      "full": "Afan Forest Park, managed by Natural Resources Wales and Neath Port Talbot Council, is one of the UK's leading mountain biking destinations. Located in the Afan Valley near Cynonville, Port Talbot, the park spans thousands of acres of working Welsh forest crisscrossed by purpose-built trails.\n\nTwo visitor hubs provide the bases for exploration. The main Afan Argoed Visitor Centre (SA13 3HG) is the primary gateway, offering a visitor centre, café (Cedars Tearoom), the South Wales Miners Museum, bike hire (Afan Valley Bike Shed), bike wash, showers, toilets, and ample parking. The Glyncorrwg Mountain Bike Centre (SA13 3EA), approximately 10 miles north-east, adds a second base with its own café (Corrwg Cwtch), bike hire (Afan A Blast), and trails including the notorious Blade and the long-distance Skyline.\n\nMTB trails span all grades from the beginner-friendly 6.1 km Rookie (green) to the 46 km, 2,000 m Skyline (red) and the 44 km W² black route linking two trail systems. Walking routes include riverside, ridgetop, and woodland paths. Cycling along the former Rhondda & Swansea Bay Railway corridor connects the two hubs. Mountain bike coaching is available through Campbell Coaching and Afan Valley Bike Shed. A Beamer Tramper mobility vehicle is available for hire for visitors with limited mobility.\n\nTrail access is free; car parking is charged. Bike hire and coaching are bookable through third-party providers on site.",
+      "fullNote": "Drafted from verified sources. Two minor facts need editorial confirmation: total park acreage and the exact 'free trail access' policy (confirm no trail pass is required)."
+    },
+
+    "activities": [
+      {
+        "name": "Mountain Biking — Trails (all grades)",
+        "detail": "Green, blue, red and black-graded routes totalling hundreds of kilometres across two hubs",
+        "source": "https://afanforestpark.com/mountain-biking/"
+      },
+      {
+        "name": "Walking / Hiking",
+        "detail": "Named waymarked routes from 1–10 miles; highlights include Penrhys Trail and Gyfylchi Ridgetop Trail",
+        "source": "https://afanforestpark.com/afan-forest-park-walking-trails/"
+      },
+      {
+        "name": "Cycling (non-MTB)",
+        "detail": "Rheilffordd Trail along former railway line; Sustrans NCN Route 887",
+        "source": "https://afanforestpark.com/mountain-biking/"
+      },
+      {
+        "name": "Bike Hire",
+        "detail": "Hardtails, full-suspension, e-bikes, and children's bikes via Afan Valley Bike Shed (SA13 3HG) and Afan A Blast (Glyncorrwg)",
+        "source": "https://www.afanvalleybikeshed.co.uk/ and https://afanforestpark.com/bike-hire-bike-shops-and-coaching/"
+      },
+      {
+        "name": "Mountain Bike Coaching / Guided Rides",
+        "detail": "Via Campbell Coaching (campbellcoaching.eu) and Afan Valley Bike Shed",
+        "source": "https://afanforestpark.com/bike-hire-bike-shops-and-coaching/"
+      },
+      {
+        "name": "Beamer Tramper Hire",
+        "detail": "Off-road motorised mobility vehicle for visitors with limited mobility",
+        "source": "https://rideafan.bike/local-trails/lower-valley-trail-centre-afan-argoed-visitor-centre/"
+      }
+    ],
+
+    "trails": {
+      "afanArgoedHub": [
+        {
+          "name": "Rookie",
+          "grade": "Green / Easy",
+          "distance_km": 6.1,
+          "elevationGain_m": 158,
+          "rideTime": "0.5–2 hrs",
+          "note": "Green loop with optional blue extension (2.6 km, 250 m elevation) from visitor centre",
+          "source": "https://afanforestpark.com/mountain-biking/rookie-trail/"
+        },
+        {
+          "name": "Blue Scar",
+          "grade": "Blue / Moderate",
+          "distance_km": 7,
+          "elevationGain_m": 177,
+          "rideTime": "1–1.5 hrs",
+          "source": "NRW trail card PDF and afanforestpark.com"
+        },
+        {
+          "name": "Penhydd",
+          "grade": "Red / Difficult",
+          "distance_km": 14.4,
+          "elevationGain_m": 353,
+          "rideTime": "1.5–3 hrs",
+          "source": "https://afanforestpark.com/mountain-biking/penhydd/"
+        },
+        {
+          "name": "Y Wal (The Wall)",
+          "grade": "Red / Difficult",
+          "distance_km": 23,
+          "elevationGain_m": 450,
+          "rideTime": "1.5–3 hrs",
+          "source": "https://afanforestpark.com/mountain-biking/y-wal-the-wall/"
+        }
+      ],
+      "glyncorrwgHub": [
+        {
+          "name": "Rheilffordd Cycle Trail",
+          "grade": "Green / Easy",
+          "distance_km": 14.7,
+          "elevationGain_m": 266,
+          "rideTime": "1.5–2 hrs",
+          "note": "Follows former Rhondda & Swansea Bay Railway. Suitable for families.",
+          "source": "https://naturalresources.wales/days-out/places-to-visit/south-west-wales/afan-forest-park-glyncorrwg-mountain-bike-centre/?lang=en"
+        },
+        {
+          "name": "White's Level",
+          "grade": "Red / Difficult",
+          "distance_km": 15.2,
+          "elevationGain_m": 405,
+          "rideTime": "1.5–3 hrs",
+          "divertionActive": true,
+          "source": "https://afanforestpark.com/mountain-biking/whites-level/"
+        },
+        {
+          "name": "Blade",
+          "grade": "Red / Difficult",
+          "distance_km": 23,
+          "elevationGain_m": 770,
+          "rideTime": "2.5–3.5 hrs",
+          "diversionActive": true,
+          "source": "https://afanforestpark.com/mountain-biking/blade/"
+        },
+        {
+          "name": "Skyline",
+          "grade": "Red / Difficult",
+          "distance_km": 46,
+          "elevationGain_m": 2000,
+          "rideTime": "4–7 hrs",
+          "diversionActive": true,
+          "source": "https://afanforestpark.com/mountain-biking/skyline/"
+        }
+      ],
+      "epicRoutes": [
+        {
+          "name": "W²",
+          "grade": "Black / Severe",
+          "distance_km": 44,
+          "elevationGain_m": 975,
+          "rideTime": "4–7 hrs",
+          "note": "Links Y Wal and White's Level across both hubs",
+          "source": "https://afanforestpark.com/mountain-biking/w%C2%B2/"
+        }
+      ],
+      "bikepark": {
+        "name": "Afan Bike Park",
+        "grades": "Blue to Black",
+        "runs": 5,
+        "note": "Features berms and jumps. Starts at Bryn Bettws Lodge.",
+        "source": "https://afanforestpark.com/mountain-biking/afan-bike-park/"
+      },
+      "diversionWarning": "At time of research, Blade, Skyline, and White's Level are listed as diverted on the NRW Glyncorrwg page. Verify current status before publishing trail details. Source: https://naturalresources.wales/days-out/places-to-visit/south-west-wales/afan-forest-park-glyncorrwg-mountain-bike-centre/?lang=en"
+    },
+
+    "facilities": [
+      {
+        "name": "Cedars Tearoom (Café)",
+        "location": "Visitor Centre, SA13 3HG",
+        "phone": "01639 852420",
+        "note": "Phone from third-party sources only — UNVERIFIED against official café website."
+      },
+      {
+        "name": "Corrwg Cwtch Café",
+        "location": "Glyncorrwg MTB Centre, SA13 3EA",
+        "note": "Described as fully licensed. Source: https://afanforestpark.com/visitor-facilities-attractions/"
+      },
+      {
+        "name": "Afan Valley Bike Shed",
+        "location": "Visitor Centre car park, SA13 3HG",
+        "phone": "01639 850800",
+        "email": "enquiries@afanvalleybikeshed.co.uk",
+        "website": "https://www.afanvalleybikeshed.co.uk/",
+        "source": "https://www.afanvalleybikeshed.co.uk/"
+      },
+      {
+        "name": "Bike Wash",
+        "location": "Both hubs",
+        "source": "Multiple sources"
+      },
+      {
+        "name": "Showers",
+        "note": "Token-operated; tokens £1.50 each (cash only from visitor centre). Source: https://dramaticheart.wales/discover-our-area/activity/afan-forest-park-visitor-centre/"
+      },
+      {
+        "name": "Toilets (including disabled)",
+        "source": "https://seearoundbritain.com/venues/afan-forest-park-and-visitor-centre-cynonville-neath-port-talbot"
+      },
+      {
+        "name": "Parking",
+        "note": "Charged at visitor centre (SA13 3HG). Rhyslyn Car Park (SA12 9SG) is free. See Pricing section.",
+        "source": "NRW pages"
+      },
+      {
+        "name": "South Wales Miners Museum",
+        "location": "Within visitor centre complex",
+        "phone": "01639 851833",
+        "email": "info@south-wales-miners-museum.co.uk",
+        "website": "https://www.swminers.co.uk/visit-us",
+        "note": "Separate admission charged; open 10:30–15:30, closed Mondays."
+      },
+      {
+        "name": "First Aid Station",
+        "source": "https://rideafan.bike/local-trails/lower-valley-trail-centre-afan-argoed-visitor-centre/"
+      },
+      {
+        "name": "Gift Shop",
+        "source": "https://rideafan.bike/local-trails/lower-valley-trail-centre-afan-argoed-visitor-centre/"
+      },
+      {
+        "name": "Picnic Areas",
+        "source": "Multiple sources"
+      }
+    ],
+
+    "pricing": {
+      "trailAccess": "Free",
+      "trailAccessSource": "https://naturalresources.wales/days-out/places-to-visit/south-west-wales/afan-forest-park-visitor-centre/?lang=en",
+      "carParking": {
+        "upTo1Hour": "£1.00",
+        "upTo4Hours": "£2.50",
+        "over4Hours": "£3.50",
+        "annualSeasonPass": "approx. £52.00",
+        "note": "Figures from third-party sources (seearoundbritain.com, visitor reviews). Confirm exact current charges with Neath Port Talbot Council before publishing. Rhyslyn Car Park (SA12 9SG) is free.",
+        "verifyManually": true
+      },
+      "bikeHire": {
+        "note": "Indicative figures from TripAdvisor listing: half-day hardtail from ~£20, full-day premium full-suspension up to ~£65, e-bikes and children's bikes also available. UNVERIFIED against current pricing on afanvalleybikeshed.co.uk. Contact 01639 850800 or enquiries@afanvalleybikeshed.co.uk to confirm.",
+        "verifyManually": true
+      },
+      "showers": "£1.50 per token (cash only)",
+      "showersSource": "https://dramaticheart.wales/discover-our-area/activity/afan-forest-park-visitor-centre/",
+      "camping": {
+        "note": "Reported as approx. £3.40 per person per night at one third-party trail site. UNVERIFIED — do not publish without confirming with NPT Council.",
+        "verifyManually": true
+      }
+    },
+
+    "socialMedia": {
+      "note": "The afanforestpark.com website's social media links all point to Neath Port Talbot's 'Dramatic Heart of Wales' tourism accounts rather than a dedicated Afan Forest Park account. No standalone @afanforestpark handle confirmed.",
+      "facebook": {
+        "url": "https://www.facebook.com/DramaticHeart.Wales",
+        "name": "Dramatic Heart of Wales (NPT Tourism)",
+        "source": "https://afanforestpark.com/ (footer link)"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/dramaticheart.wales/",
+        "name": "Dramatic Heart of Wales (NPT Tourism)",
+        "source": "https://afanforestpark.com/ (footer link)"
+      },
+      "twitter": {
+        "url": "https://twitter.com/DramaticHWales",
+        "name": "Dramatic Heart of Wales (NPT Tourism)",
+        "source": "https://afanforestpark.com/ (footer link)"
+      },
+      "youtube": {
+        "url": "https://www.youtube.com/channel/UCKQa1T8lM8aHrSEmllyFxWw",
+        "source": "https://afanforestpark.com/ (footer link)"
+      },
+      "twitter_parkHandle": {
+        "url": "https://x.com/parccoedwigafan",
+        "note": "Welsh-language park handle found in search results but page could not be loaded to confirm active status. UNVERIFIED.",
+        "verifyManually": true
+      }
+    },
+
+    "externalListings": [
+      {
+        "org": "Natural Resources Wales",
+        "url": "https://naturalresources.wales/days-out/places-to-visit/south-west-wales/afan-forest-park-visitor-centre/?lang=en"
+      },
+      {
+        "org": "Natural Resources Wales (Glyncorrwg)",
+        "url": "https://naturalresources.wales/days-out/places-to-visit/south-west-wales/afan-forest-park-glyncorrwg-mountain-bike-centre/?lang=en"
+      },
+      {
+        "org": "Visit Wales",
+        "url": "https://www.visitwales.com/attraction/nature-or-wildlife/afan-forest-park-526771"
+      },
+      {
+        "org": "Neath Port Talbot Destinations (Dramatic Heart of Wales)",
+        "url": "https://dramaticheart.wales/discover-our-area/activity/afan-forest-park-visitor-centre/"
+      },
+      {
+        "org": "Mountain Bike Wales",
+        "url": "https://www.mbwales.com/agents/afan-forest-park/"
+      },
+      {
+        "org": "rideAFAN",
+        "url": "https://rideafan.bike/local-trails/lower-valley-trail-centre-afan-argoed-visitor-centre/"
+      },
+      {
+        "org": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Afan_Forest_Park"
+      }
+    ]
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "No standalone Afan Forest Park logo found under a free licence on Wikimedia Commons, Openverse, or Unsplash. The afanforestpark.com branding (NRW/NPT) would require permission from NRW or Neath Port Talbot Council to reproduce. Request permission from afanforestpark@npt.gov.uk."
+    },
+    "cover": {
+      "status": "AVAILABLE — CC LICENSED",
+      "candidates": [
+        {
+          "title": "Mountain Bikers at Afan Argoed country park",
+          "wikimediaFile": "Mountain_Bikers_at_Afan_Argoed_country_park_-_geograph.org.uk_-_352329.jpg",
+          "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Mountain_Bikers_at_Afan_Argoed_country_park_-_geograph.org.uk_-_352329.jpg",
+          "licence": "CC BY-SA 2.0",
+          "photographer": "Hywel Williams",
+          "year": 2007,
+          "attribution": "Photo: Hywel Williams / geograph.org.uk, CC BY-SA 2.0",
+          "note": "Most directly relevant: shows mountain bikers on site. Verify image is still live at Wikimedia URL and confirm exact licence version before use.",
+          "recommended": true
+        },
+        {
+          "title": "Cycle track in Afan Forest Park",
+          "wikimediaFile": "Cycle_track_in_Afan_Forest_Park_-_geograph.org.uk_-_576846.jpg",
+          "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Cycle_track_in_Afan_Forest_Park_-_geograph.org.uk_-_576846.jpg",
+          "licence": "CC BY-SA 2.0",
+          "photographer": "Cedwyn Davies",
+          "year": 2007,
+          "attribution": "Photo: Cedwyn Davies / geograph.org.uk, CC BY-SA 2.0",
+          "note": "Cycle track on former railway — good general park image. Verify licence at Wikimedia before use."
+        },
+        {
+          "title": "Afan Forest Park landscape",
+          "wikimediaFile": "Afan_Forest_Park_1.jpg",
+          "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Afan_Forest_Park_1.jpg",
+          "licence": "CC BY-SA 3.0",
+          "photographer": "Purple128 / Harjit Samra",
+          "year": 2013,
+          "attribution": "Photo: Harjit Samra / Wikimedia Commons, CC BY-SA 3.0",
+          "note": "General landscape — less specific to MTB but useful for location context. Verify at Wikimedia before use."
+        }
+      ],
+      "wikimediaCategory": "https://commons.wikimedia.org/wiki/Category:Afan_Forest_Park",
+      "actionRequired": "Confirm licence version on each Wikimedia file page before downloading. Use the first candidate (Hywel Williams, CC BY-SA 2.0) as the primary cover if suitable quality. Images are from 2007–2013 so may not reflect current trail infrastructure — acceptable as illustrative photography for a directory listing but note the vintage if precision is required."
+    },
+    "gallery": {
+      "status": "PARTIALLY AVAILABLE — CC LICENSED",
+      "note": "Wikimedia Commons Category:Afan_Forest_Park contains ~23 files (as of research date), mostly via Geograph, mostly CC BY-SA 2.0. Review full category at https://commons.wikimedia.org/wiki/Category:Afan_Forest_Park for additional gallery candidates. For contemporary operator-provided photography, contact afanforestpark@npt.gov.uk or the Neath Port Talbot press office."
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Commercial tier: 'unclassified_operator' for a publicly managed forest park",
+      "confidence": "HIGH",
+      "issue": "Afan Forest Park is managed by Natural Resources Wales (a Welsh Government body) and Neath Port Talbot County Borough Council. It is not a private commercial operator. The 'unclassified_operator' commercial tier and directory page model may not be the appropriate content type — it may be better treated as a location/attraction entry rather than a commercial operator.",
+      "action": "Editorial decision required: confirm whether publicly-managed NRW/council attractions should appear in the commercial operator directory, and under what tier classification."
+    },
+    {
+      "claim": "Trail diversions currently active on Blade, Skyline, and White's Level",
+      "confidence": "MODERATE",
+      "issue": "The NRW Glyncorrwg page listed these three trails as diverted at time of research, but the date of that notice is not stated. Trail diversions are temporary and may have been resolved.",
+      "action": "Check the NRW Glyncorrwg page (https://naturalresources.wales/days-out/places-to-visit/south-west-wales/afan-forest-park-glyncorrwg-mountain-bike-centre/?lang=en) or call 01639 850564 to confirm current status before publishing trail details."
+    },
+    {
+      "claim": "Car parking charges (£1.00 / £2.50 / £3.50)",
+      "confidence": "MODERATE",
+      "issue": "Figures sourced from third-party aggregators and visitor reviews, not directly from an NPT Council published schedule retrieved in this session.",
+      "action": "Confirm current charges with NPT Council or via https://afanforestpark.com/ before publishing any pricing."
+    },
+    {
+      "claim": "Bike hire pricing (~£20–£65)",
+      "confidence": "LOW",
+      "issue": "Indicative figures from a TripAdvisor listing, not the Afan Valley Bike Shed's own pricing page.",
+      "action": "Contact Afan Valley Bike Shed directly (01639 850800 / enquiries@afanvalleybikeshed.co.uk) to confirm current rates. Do not publish until verified."
+    },
+    {
+      "claim": "Email afanforestpark@npt.gov.uk is current",
+      "confidence": "MODERATE",
+      "issue": "Email is consistently cited across multiple third-party sources but was not directly confirmed by NPT Council or afanforestpark.com in this session.",
+      "action": "Send a test enquiry or call 01639 850564 to confirm the email is still active."
+    },
+    {
+      "claim": "Twitter handle @parccoedwigafan",
+      "confidence": "LOW",
+      "issue": "Appeared in search results but the page could not be loaded to verify it is currently active.",
+      "action": "Manually check https://x.com/parccoedwigafan to verify account status and ownership."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://naturalresources.wales/days-out/places-to-visit/south-west-wales/afan-forest-park-visitor-centre/?lang=en",
+      "description": "NRW official listing — Visitor Centre address, OS grid ref, managed estate",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://naturalresources.wales/days-out/places-to-visit/south-west-wales/afan-forest-park-glyncorrwg-mountain-bike-centre/?lang=en",
+      "description": "NRW official listing — Glyncorrwg hub address, Rheilffordd trail, trail diversions notice",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://afanforestpark.com/",
+      "description": "Official operator website — activities, trails, facilities, social media links",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://afanforestpark.com/mountain-biking/",
+      "description": "Trail listing hub page",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.afanvalleybikeshed.co.uk/",
+      "description": "Afan Valley Bike Shed — phone, email, opening hours, services",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://rideafan.bike/local-trails/lower-valley-trail-centre-afan-argoed-visitor-centre/",
+      "description": "rideAFAN — visitor centre phone, email, opening hours, Beamer Tramper hire",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.mbwales.com/agents/afan-forest-park/",
+      "description": "Mountain Bike Wales — cross-reference for phone, opening hours",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://dramaticheart.wales/discover-our-area/activity/afan-forest-park-visitor-centre/",
+      "description": "NPT Dramatic Heart of Wales — shower pricing, general facilities",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.visitwales.com/attraction/nature-or-wildlife/afan-forest-park-526771",
+      "description": "Visit Wales official listing",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://seearoundbritain.com/venues/afan-forest-park-and-visitor-centre-cynonville-neath-port-talbot",
+      "description": "See Around Britain — toilets, parking charges indicative figures",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.swminers.co.uk/visit-us",
+      "description": "South Wales Miners Museum — admission charges, opening hours, contact",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Afan_Forest_Park",
+      "description": "Wikimedia Commons category — 23 CC-licensed images available",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Afan_Forest_Park",
+      "description": "Wikipedia — general context, park area",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "content/mtb/centres.csv",
+      "description": "Internal MTB centres CSV — confirmed slug, coordinates (51.6147, -3.6089), postcode SA13 3HG, phone 01639 850564",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirmed operator-afan-forest-park entry, unclassified_operator tier, missing fields",
+      "type": "internal"
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "Research is substantively complete. Official website, address, phone, email, trails, facilities, opening hours, and CC-licensed cover image candidates are all documented with source URLs. Six items need human QA before publishing: commercial tier classification (public body vs operator), trail diversion status, parking/bike-hire pricing verification, email currency check, parking charge confirmation, and the @parccoedwigafan Twitter verification. None of these are blockers to moving to QA — they are checks a human editor can resolve quickly.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Commercial tier classification needs editorial decision",
+      "detail": "Afan Forest Park is a publicly managed attraction (NRW + Neath Port Talbot Council), not a private commercial operator. The 'unclassified_operator' tier and commercial directory model may be inappropriate. An editorial decision is needed on whether this listing belongs in the operator directory at all, and if so under which tier.",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 2,
+      "blocker": "Trail diversions on Blade, Skyline, and White's Level unresolved",
+      "detail": "NRW's Glyncorrwg page lists these three trails as currently diverted, but the notice date is unclear. Publishing trail distance/grade data without noting whether diversions are active risks giving users incorrect route information. Verify at https://naturalresources.wales/days-out/places-to-visit/south-west-wales/afan-forest-park-glyncorrwg-mountain-bike-centre/?lang=en or call 01639 850564 before publishing Glyncorrwg trail details.",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 3,
+      "blocker": "Logo unavailable under free licence",
+      "detail": "No logo for Afan Forest Park is available under a Creative Commons or Open Government Licence on Wikimedia Commons, Openverse, or Unsplash. A cover image is available (Hywel Williams, CC BY-SA 2.0, via Wikimedia Commons) but the logo field will remain blocked until NRW or NPT Council grant permission to reproduce their branding. Contact afanforestpark@npt.gov.uk or the NPT press office to request a media pack.",
+      "severity": "MEDIUM"
+    }
+  ]
+}

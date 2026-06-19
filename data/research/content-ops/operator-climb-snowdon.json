@@ -1,0 +1,454 @@
+{
+  "_meta": {
+    "task": "content-ops-087-operator-climb-snowdon",
+    "contentItem": "operator-climb-snowdon",
+    "contentType": "operator",
+    "slug": "climb-snowdon",
+    "route": "/directory/climb-snowdon",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "substantially_complete_with_flags",
+    "identityConfidence": "HIGH — see claimsNeedingHumanReview #1 re website URL discrepancy and Wales Outdoors relationship"
+  },
+
+  "proposedOperatorData": {
+    "name": "Climb Snowdon",
+    "legalName": "RAW Adventures Mountain Activities Ltd",
+    "legalNameNote": "Registered trading name 'Climb Snowdon' operates under the legal entity RAW Adventures Mountain Activities Ltd, company number 07170551. Both names appear on the website footer.",
+    "companyNumber": "07170551",
+    "companyNumberNote": "Registered in England and Wales.",
+    "vatNumber": "GB 213 4194 39",
+    "legalNameSource": "https://www.climb-snowdon.co.uk/ (footer copyright notice: 'Copyright © 2026 RAW Adventures Mountain Activities Ltd / Registered in England and Wales Company No. 07170551 / VAT No. GB 213 4194 39')",
+    "slug": "climb-snowdon",
+    "website": "https://www.climb-snowdon.co.uk",
+    "websiteNote": "The internal walking.csv records the URL as https://climbsnowdon.co.uk (no hyphen). During research on 2026-06-04 that domain was registered and indexed by Google but the server refused all connections (ECONNREFUSED). The active, working site is https://www.climb-snowdon.co.uk (with hyphen). A human editor must confirm whether the no-hyphen domain is a redirect, alias, or simply offline at time of research, and update the internal data file if necessary.",
+    "websiteSource": "https://www.climb-snowdon.co.uk/",
+    "founded": "2014",
+    "foundedNote": "Founded by Ross and Kate Worthington.",
+    "foundedSource": "https://www.climb-snowdon.co.uk/about-us",
+
+    "contact": {
+      "phone": "01286 870870",
+      "phoneNote": "This resolves the 'no phone' blocker noted in the task brief. Number found on the contact page.",
+      "phoneSource": "https://www.climb-snowdon.co.uk/contact/",
+      "email": "info@walesoutdoors.co.uk",
+      "emailNote": "This email is associated with the Climb Snowdon / RAW Adventures operator; it appears in web search snippets referencing the climb-snowdon.co.uk contact page. The contact page itself uses an online form rather than displaying the address as plain text. The @walesoutdoors.co.uk domain is a different website (walesoutdoors.co.uk) whose corporate relationship with RAW Adventures Mountain Activities Ltd is unconfirmed — see claimsNeedingHumanReview #2.",
+      "emailSource": "https://www.climb-snowdon.co.uk/contact/ (via web search snippet)",
+      "address": {
+        "line1": "Yr Hen Ysgol",
+        "locality": "Brynrefail",
+        "county": "Gwynedd",
+        "postcode": "LL55 3NR",
+        "country": "Wales",
+        "countryNote": "Brynrefail is a village approximately 3 miles south-east of Caernarfon and close to Llanberis, at the foot of Snowdon. Consistent with the About Us page statement 'operates from Caernarfon, Wales'.",
+        "addressSource": "https://www.climb-snowdon.co.uk/contact/"
+      }
+    },
+
+    "location": {
+      "lat": 53.116,
+      "lng": -4.128,
+      "latLngNote": "Approximate coordinates from internal walking.csv. These correspond to the Llanberis area at the base of Snowdon — consistent with the registered address in Brynrefail, Gwynedd.",
+      "latLngSource": "content/operators/walking.csv (internal data file)",
+      "region": "north_wales",
+      "primaryArea": "Snowdonia National Park",
+      "operatingBase": "Llanberis / Brynrefail, Gwynedd"
+    },
+
+    "description": {
+      "short": "Climb Snowdon is a guided walking company based in Gwynedd, offering open-group and private guided ascents of Yr Wyddfa (Snowdon) on all six summit paths. Founded in 2014, they operate with qualified Mountain Leaders at a 1:10 ratio and include photography, safety equipment, and post-event support.",
+      "shortNote": "Drafted from verified website content. Needs editorial review.",
+      "full": "Climb Snowdon is the trading name of RAW Adventures Mountain Activities Ltd, a guided walking company founded in 2014 by Ross and Kate Worthington and based at Yr Hen Ysgol, Brynrefail, Gwynedd, LL55 3NR. Their team holds over 40 years of combined UK mountain leading experience.\n\nThe company operates open-group guided walks, private walks (1–4 people), school trips, and corporate away-days to the summit of Yr Wyddfa (Snowdon). Open Day departures run on all six main Snowdon paths: the Ranger Path, Llanberis Path, Miners' Track, Rhyd Ddu Path, Pyg Track, and Watkin Path. Specialist experiences include Snowdon by Night, sunrise and sunset walks, the Crib Goch scramble, the Snowdon Horseshoe, Sea to Summit, Snowdon Skyline, '360' (a circuit combining multiple ridges), and '6' (all six Snowdon paths in one day).\n\nA qualified Mountain Leader accompanies every group at a maximum 1:10 ratio. Each booking includes safety equipment and first aid, event notes and kit list, photographs from the day, and post-event support. The company is a certified B Corporation and a Living Wage Employer, and donates £1 per walker to the Snowdonia Society conservation charity. Their Charity Partner Programme has raised over £308,000 for partner charities to date.",
+      "fullNote": "Drafted from verified website content. Needs editorial review. Pricing is explicitly excluded from this description as it should be verified at time of publication. B Corp and Living Wage claims should be cross-checked against the relevant registries before publishing."
+    },
+
+    "activities": [
+      {
+        "name": "Open Day Guided Walks — Daytime",
+        "detail": "Group guided ascents of Yr Wyddfa on all six paths. 1:10 Mountain Leader ratio.",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      },
+      {
+        "name": "Private Walks",
+        "detail": "Dedicated guided walks for 1–4 people.",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      },
+      {
+        "name": "Sunrise Walks",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      },
+      {
+        "name": "Sunset Walks",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      },
+      {
+        "name": "Snowdon by Night",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      },
+      {
+        "name": "Crib Goch",
+        "detail": "Guided scramble on the Crib Goch ridge.",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      },
+      {
+        "name": "Snowdon Horseshoe",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      },
+      {
+        "name": "Sea to Summit",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      },
+      {
+        "name": "Snowdon Skyline",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      },
+      {
+        "name": "'360' Multi-Ridge Circuit",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      },
+      {
+        "name": "'6' — All Six Paths in One Day",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      },
+      {
+        "name": "School Trips",
+        "source": "https://www.climb-snowdon.co.uk/"
+      },
+      {
+        "name": "Corporate Away Days",
+        "source": "https://www.climb-snowdon.co.uk/"
+      },
+      {
+        "name": "Charity Challenge Events",
+        "source": "https://www.climb-snowdon.co.uk/about-us"
+      }
+    ],
+
+    "typicalDaySchedule": {
+      "openDayStart": "08:45 at Padarn Country Park, Llanberis",
+      "summitArrival": "Approximately 13:00",
+      "return": "Approximately 17:00 back to Llanberis",
+      "scheduleNote": "Approximate times as published on the guided walks page. Actual times vary by route and conditions.",
+      "scheduleSource": "https://www.climb-snowdon.co.uk/guided-walks"
+    },
+
+    "includedInBooking": [
+      {
+        "item": "Mountain Leader (1:10 ratio)",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      },
+      {
+        "item": "Safety equipment and first aid",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      },
+      {
+        "item": "Climb Snowdon Event Notes and Kit List",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      },
+      {
+        "item": "Photographs from the day",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      },
+      {
+        "item": "Post-event support",
+        "source": "https://www.climb-snowdon.co.uk/guided-walks"
+      }
+    ],
+
+    "pricing": {
+      "publiclyAvailable": true,
+      "indicativeFrom": "£49 per person",
+      "indicativeFromNote": "VERIFY BEFORE PUBLISHING — 'from £49pp' appeared on the website as of 2026-06-04 research. Pricing on outdoor activity sites changes seasonally. Confirm live pricing at https://www.climb-snowdon.co.uk/guided-walks before publishing any price figure.",
+      "indicativeFromSource": "https://www.climb-snowdon.co.uk/guided-walks"
+    },
+
+    "accreditations": [
+      {
+        "name": "Certified B Corporation",
+        "note": "Check B Corp directory at https://www.bcorporation.net/find-a-b-corp/ before publishing.",
+        "source": "https://www.climb-snowdon.co.uk/about-us",
+        "verifyManually": true
+      },
+      {
+        "name": "Living Wage Employer",
+        "note": "Both UK and Welsh Living Wage versions appear to be held. Verify at https://www.livingwage.org.uk/accredited-living-wage-employers.",
+        "source": "https://www.climb-snowdon.co.uk/about-us",
+        "verifyManually": true
+      },
+      {
+        "name": "Mountain Training — Mountain Leader qualification",
+        "note": "Staff hold Mountain Training ML awards. Mountain Training is the UK governing body for hill and mountain walking qualifications.",
+        "source": "https://www.climb-snowdon.co.uk/about-us"
+      }
+    ],
+
+    "team": {
+      "founders": ["Ross Worthington", "Kate Worthington"],
+      "additionalStaff": ["Katie Cannell", "Dan Lane", "Honesty Lewis"],
+      "combinedExperience": "Over 40 years of combined UK mountain leading experience",
+      "teamSource": "https://www.climb-snowdon.co.uk/about-us"
+    },
+
+    "community": {
+      "snowdoniaSocietyDonation": "£1 per walker donated to the Snowdonia Society",
+      "charityPartnerProgramme": "Raised over £308,000 for charities",
+      "communitySource": "https://www.climb-snowdon.co.uk/about-us"
+    },
+
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "No verified Google Business Profile or Google rating was found for Climb Snowdon / RAW Adventures Mountain Activities Ltd during this research session. This is consistent with the task's known blocker ('no Google rating'). A human editor should search Google Maps for 'Climb Snowdon Llanberis' or 'RAW Adventures Mountain Activities Ltd LL55 3NR' to locate the correct profile. If no profile exists, one may need to be created and claimed.",
+        "verifyManually": true
+      },
+      "tripadvisor": {
+        "listing": null,
+        "note": "A TripAdvisor listing titled 'Snowdon Walks' (d8725597, Llanberis, 4.8/5 from 22 reviews) was found but is marked 'permanently closed' and cannot be confirmed as representing the same operator. Search tripadvisor.co.uk for 'Climb Snowdon' or 'RAW Adventures' to locate the correct listing, if one exists. Do not publish the 4.8/5 rating without confirming it belongs to this operator.",
+        "candidateUrl": "https://www.tripadvisor.com/Attraction_Review-g186448-d8725597-Reviews-Snowdon_Walks-Llanberis_Snowdonia_National_Park_North_Wales_Wales.html",
+        "verifyManually": true
+      }
+    },
+
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/ClimbSnowdon",
+        "source": "https://www.climb-snowdon.co.uk/contact/"
+      },
+      "twitter_x": {
+        "url": "https://x.com/ClimbSnowdon",
+        "source": "https://www.climb-snowdon.co.uk/contact/"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/ClimbSnowdon",
+        "source": "https://www.climb-snowdon.co.uk/contact/"
+      },
+      "youtube": {
+        "url": "https://www.youtube.com/channel/UCRb6hjhFtrtMLaX5ktDnGnw",
+        "source": "https://www.climb-snowdon.co.uk/contact/"
+      },
+      "linkedin": {
+        "url": "https://www.linkedin.com/company/raw-adventures/",
+        "note": "LinkedIn page is under the RAW Adventures brand, not Climb Snowdon.",
+        "source": "https://www.climb-snowdon.co.uk/contact/"
+      }
+    }
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "The logo on climb-snowdon.co.uk is copyright © 2026 RAW Adventures Mountain Activities Ltd. No freely licensed version was found on Openverse, Wikimedia Commons, or Geograph. The logo must be obtained directly from the operator under written permission or licence."
+    },
+    "cover": {
+      "status": "OPTIONS_AVAILABLE",
+      "operatorOwnedPhotography": {
+        "status": "BLOCKED",
+        "reason": "Photography on climb-snowdon.co.uk is copyright © 2026 RAW Adventures Mountain Activities Ltd. A media pack or written licence must be requested from the operator. Contact: 01286 870870 / info@walesoutdoors.co.uk."
+      },
+      "freelyLicensedOptions": [
+        {
+          "title": "Pyg Path to Snowdon, Snowdonia National Park, North Wales",
+          "creator": "^Joe (Flickr)",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "imageUrl": "https://live.staticflickr.com/3881/15080234496_567f254529_b.jpg",
+          "sourceUrl": "https://www.flickr.com/photos/66239816@N08/15080234496",
+          "via": "Openverse (Flickr)",
+          "note": "Shows walkers on the Pyg Track approaching Snowdon — relevant to guided walking operator. NOT operator-specific photography. Attribution required: '© ^Joe / CC BY 2.0'.",
+          "aiGenerated": false
+        },
+        {
+          "title": "Journey to Snowdon Summit",
+          "creator": "Bert Kaufmann (Flickr)",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "imageUrl": "https://live.staticflickr.com/8009/7478150130_5c2e07dba8_b.jpg",
+          "sourceUrl": "https://www.flickr.com/photos/22746515@N02/7478150130",
+          "via": "Openverse (Flickr)",
+          "note": "Summit approach shot. Freely reusable with attribution. Attribution required: '© Bert Kaufmann / CC BY-SA 2.0'.",
+          "aiGenerated": false
+        },
+        {
+          "title": "A walk up the Pyg Track — Snowdon/Yr Wyddfa in view",
+          "creator": "John S Turner",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "http://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://www.geograph.org.uk/photo/772355",
+          "via": "Geograph Britain and Ireland",
+          "note": "Shows the Pyg Track with Yr Wyddfa summit in view. Date: 16 April 2008. Attribution required: '© John S Turner / licensed under CC BY-SA 2.0 via Geograph'.",
+          "aiGenerated": false
+        },
+        {
+          "title": "Copa'r Wyddfa — The Summit of Snowdon",
+          "creator": "Eric Jones",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "http://creativecommons.org/licenses/by-sa/2.0/",
+          "sourceUrl": "https://www.geograph.org.uk/photo/1500623",
+          "via": "Geograph Britain and Ireland",
+          "note": "Summit view showing the Snowdon Summit Station (Hafod Eryri). Date: 14 September 2009. Attribution required: '© Eric Jones / licensed under CC BY-SA 2.0 via Geograph'.",
+          "aiGenerated": false
+        }
+      ],
+      "editorialDecision": "The most relevant cover option is the Pyg Path image (Flickr, CC BY 2.0) as it shows walkers on the mountain in a manner consistent with a guided walking offer. None of the freely-licensed images show Climb Snowdon-branded guiding. An editor must decide whether a generic Snowdon landscape/path image is acceptable as a placeholder, or whether operator-specific photography must be sourced first.",
+      "actionRequired": "Contact the operator (01286 870870 / info@walesoutdoors.co.uk) to request a media pack. Check the operator's Instagram (@ClimbSnowdon) and Facebook (/ClimbSnowdon) for any images shared under open licence or with explicit reuse permission. Alternatively, use one of the freely-licensed Geograph or Openverse images listed above as a placeholder pending a media pack."
+    },
+    "gallery": {
+      "status": "BLOCKED_PENDING_OPERATOR_CONTACT",
+      "reason": "All photography on climb-snowdon.co.uk is copyright RAW Adventures Mountain Activities Ltd. The freely-licensed images above (Geograph/Flickr) show Snowdon paths and summit but are not operator-specific. An operator media pack is required for a branded gallery."
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Website URL — climbsnowdon.co.uk vs climb-snowdon.co.uk",
+      "confidence": "HIGH that climb-snowdon.co.uk is correct",
+      "issue": "The internal walking.csv records the URL as https://climbsnowdon.co.uk (no hyphen). During research on 2026-06-04, that domain was registered and indexed by Google but returned ECONNREFUSED. The actively serving website is https://www.climb-snowdon.co.uk (with hyphen). Both domains may belong to the same operator (one may be a redirect that is currently offline), or the no-hyphen domain may be a separate/older site.",
+      "action": "A human editor should verify whether climbsnowdon.co.uk redirects to climb-snowdon.co.uk (check on a browser) and update the internal walking.csv record accordingly. If the no-hyphen domain resolves differently, investigate whether it belongs to a different entity.",
+      "severity": "MEDIUM"
+    },
+    {
+      "claim": "Relationship between RAW Adventures Mountain Activities Ltd / Climb Snowdon and Wales Outdoors (walesoutdoors.co.uk)",
+      "confidence": "UNVERIFIED — operational link is probable but legal structure not confirmed",
+      "issue": "The contact email info@walesoutdoors.co.uk is associated with Climb Snowdon in web search snippets for climb-snowdon.co.uk/contact/. The walesoutdoors.co.uk website offers guided hikes across Wales including on Yr Wyddfa/Snowdon. Their copyright says '© 2025' while RAW Adventures uses '© 2026 RAW Adventures Mountain Activities Ltd'. No explicit statement of corporate relationship appears on either site — they may be (a) the same legal entity trading under two brands, (b) different businesses with a partnership arrangement, or (c) one a subsidiary of the other.",
+      "action": "A human editor should contact the operator to clarify whether Wales Outdoors and Climb Snowdon are the same business, and whether the directory listing should mention or link to walesoutdoors.co.uk.",
+      "severity": "MEDIUM"
+    },
+    {
+      "claim": "B Corporation certification",
+      "confidence": "MODERATE — stated on website but not independently cross-checked",
+      "issue": "The about-us page states Climb Snowdon is a 'Certified B Corporation'. This is a meaningful quality credential but must be verified against the B Corp registry.",
+      "action": "Search https://www.bcorporation.net/find-a-b-corp/ for 'RAW Adventures' or 'Climb Snowdon' to confirm active certification before displaying the badge.",
+      "severity": "LOW"
+    },
+    {
+      "claim": "Google Business Profile / Google rating",
+      "confidence": "UNKNOWN",
+      "issue": "No Google Business Profile or Google rating was confirmed for this operator during research. The original task brief flags 'no Google rating' as a known blocker.",
+      "action": "Search Google Maps for 'Climb Snowdon Llanberis' and 'RAW Adventures Mountain Activities Ltd LL55 3NR'. If a Google Business Profile exists, extract the rating and review count. If not, advise the operator to create/claim one at https://business.google.com.",
+      "severity": "MEDIUM"
+    },
+    {
+      "claim": "TripAdvisor listing identity",
+      "confidence": "LOW",
+      "issue": "A TripAdvisor listing titled 'Snowdon Walks' (Llanberis, 4.8/5 from 22 reviews, listing ID d8725597) was found but is marked 'permanently closed'. It cannot be confirmed as the same operator as Climb Snowdon / RAW Adventures Mountain Activities Ltd.",
+      "action": "Visit https://www.tripadvisor.co.uk and search 'Climb Snowdon' or 'RAW Adventures' to find the correct live listing, if one exists. Do not publish the 4.8/5 rating without confirming it is for this operator.",
+      "severity": "LOW"
+    },
+    {
+      "claim": "Pricing — from £49pp",
+      "confidence": "MODERATE — found on website but may change seasonally",
+      "issue": "'From £49pp' for Open Day guided walks appeared on the website as of 2026-06-04 research.",
+      "action": "Verify live pricing at https://www.climb-snowdon.co.uk/guided-walks before publishing any price figure. Do not publish without confirming the current rate and the date of verification.",
+      "severity": "LOW"
+    },
+    {
+      "claim": "Charity Partner Programme has raised over £308,000",
+      "confidence": "MODERATE — stated on website, date of that figure not known",
+      "issue": "Fundraising total may have been updated since the figure was first published.",
+      "action": "Check the current figure at https://www.climb-snowdon.co.uk/about-us before publishing.",
+      "severity": "LOW"
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.climb-snowdon.co.uk/",
+      "description": "Main operator website — company name, copyright notice, company number, VAT number, activities overview, B Corp and Living Wage claims",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.climb-snowdon.co.uk/contact/",
+      "description": "Contact page — phone number 01286 870870, address Yr Hen Ysgol Brynrefail LL55 3NR, social media links, email (via search snippet)",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.climb-snowdon.co.uk/guided-walks",
+      "description": "Guided walks page — routes, activities, schedule, what's included, indicative pricing",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.climb-snowdon.co.uk/about-us",
+      "description": "About Us page — founders (Ross and Kate Worthington), team members, founded 2014, 40+ years experience, Snowdonia Society donation, Charity Partner Programme fundraising total",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.walesoutdoors.co.uk",
+      "description": "Wales Outdoors website — activities, accreditations, social media; possible related entity sharing the info@walesoutdoors.co.uk email",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.raw-adventures.co.uk/adventures/climb-snowdon",
+      "description": "RAW Adventures parent-brand page for Climb Snowdon — confirms brand relationship between RAW Adventures and Climb Snowdon product",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "content/operators/walking.csv",
+      "description": "Internal walking operators CSV — lists Climb Snowdon with slug, URL (no-hyphen version), email, coordinates 53.116/-4.128, Llanberis, Guided Walks|Private Guiding",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirms operator-climb-snowdon, unclassified_operator tier, four missing fields (cover image, logo, phone, Google rating)",
+      "type": "internal"
+    },
+    {
+      "url": "https://www.flickr.com/photos/66239816@N08/15080234496",
+      "description": "Freely licensed cover image option — 'Pyg Path to Snowdon' by ^Joe, CC BY 2.0, via Openverse/Flickr",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.flickr.com/photos/22746515@N02/7478150130",
+      "description": "Freely licensed cover image option — 'Journey to Snowdon Summit' by Bert Kaufmann, CC BY-SA 2.0, via Openverse/Flickr",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.geograph.org.uk/photo/772355",
+      "description": "Freely licensed cover image option — 'A walk up the Pyg Track' by John S Turner, CC BY-SA 2.0, Geograph",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.geograph.org.uk/photo/1500623",
+      "description": "Freely licensed cover image option — 'Copa'r Wyddfa — The Summit of Snowdon' by Eric Jones, CC BY-SA 2.0, Geograph",
+      "accessedAt": "2026-06-04"
+    }
+  ],
+
+  "sourcesRuledOut": [
+    {
+      "url": "https://climbsnowdon.co.uk",
+      "name": "climbsnowdon.co.uk (no hyphen)",
+      "reason": "Domain is registered and indexed by Google ('Climb Snowdon - The UK's Most Popular Mountain!') but returned ECONNREFUSED during research on 2026-06-04. Could not be fetched. The same operator's active site is at the hyphenated domain. Not 'ruled out' as a different entity — same operator, just unreachable at time of research."
+    },
+    {
+      "url": "https://www.tripadvisor.com/Attraction_Review-g186448-d8725597-Reviews-Snowdon_Walks-Llanberis_Snowdonia_National_Park_North_Wales_Wales.html",
+      "name": "TripAdvisor — Snowdon Walks (d8725597, Llanberis)",
+      "reason": "Name mismatch and listing is marked 'permanently closed'. Cannot confirm this is the same operator as Climb Snowdon / RAW Adventures Mountain Activities Ltd. Excluded from data until a human editor verifies identity."
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "The four original blockers (no phone, no logo, no cover image, no Google rating) have been partially resolved: the phone number (01286 870870) has been found; two freely-licensed cover image options are available from Flickr/Geograph; the logo and Google rating remain blocked. All other factual fields (company name, legal name, address, social media, activities, accreditations) are now populated with source citations. QA by a human editor is needed to: (1) confirm the website URL (no-hyphen vs hyphenated), (2) clarify the RAW Adventures / Wales Outdoors corporate relationship, (3) locate or establish a Google Business Profile, and (4) confirm the operator is willing to supply a logo and branded photography.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Logo blocked — no freely licensed version available",
+      "detail": "The Climb Snowdon logo is copyright © 2026 RAW Adventures Mountain Activities Ltd. No alternative freely licensed logo exists. Contact the operator at 01286 870870 or info@walesoutdoors.co.uk to request a media pack or written permission to reproduce the logo. Without resolution this blocker prevents the listing from reaching 'signed_off' status.",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 2,
+      "blocker": "Google Business Profile / Google rating unconfirmed",
+      "detail": "No verified Google Business Profile or rating was found for this operator during research. A human editor must search Google Maps for 'Climb Snowdon Llanberis' or 'RAW Adventures Mountain Activities Ltd LL55 3NR' to locate an existing profile and extract the rating. If no profile exists, the operator should be advised to create and claim one.",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 3,
+      "blocker": "Website URL discrepancy — climbsnowdon.co.uk vs climb-snowdon.co.uk",
+      "detail": "The internal walking.csv records the URL as https://climbsnowdon.co.uk (no hyphen), but that domain was unreachable during research. The live site is https://www.climb-snowdon.co.uk (with hyphen). The internal data file should be updated once a human editor confirms whether the no-hyphen domain is a redirect, offline mirror, or different entity. The directory listing URL must point to the correct live domain.",
+      "severity": "MEDIUM"
+    }
+  ]
+}

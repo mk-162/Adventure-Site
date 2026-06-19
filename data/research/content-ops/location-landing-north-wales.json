@@ -1,0 +1,671 @@
+{
+  "_meta": {
+    "task": "content-ops-033-location-landing-north-wales",
+    "contentItem": "location-landing-north-wales",
+    "contentType": "location_landing",
+    "slug": "north-wales",
+    "route": "/north-wales",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_flags"
+  },
+
+  "existingFiles": {
+    "tsData": "data/regions/north-wales.ts",
+    "markdownContent": "content/regions/north-wales.md",
+    "heroImage": "public/images/regions/north-wales-hero.jpg",
+    "tsLastUpdated": "2025-02-06",
+    "contentInventoryStatus": "research_needed",
+    "contentInventoryFlags": ["image needs provenance review", "description needs_review"],
+    "imageRegistryStatus": "needs_review",
+    "imageRegistrySourceUrl": "",
+    "slugMismatch": "north-wales.ts uses slug 'north-wales'; north-wales.md frontmatter uses slug 'north-wales-coast' — these must be reconciled before publishing."
+  },
+
+  "overallAssessment": {
+    "verdict": "The north-wales.ts file is structurally sound and covers the key facts, activities, and local character of the region with broadly accurate geography. However it carries four material blockers: (1) the hero image north-wales-hero.jpg has no provenance record and cannot be published with unknown licensing; (2) all pricing in topExperiences is from the Feb 2025 vintage likely AI-sourced set (same issue as other region files of that vintage); (3) keyFacts describes Zip World Velocity 2 as the 'World's fastest zip line' while topExperiences correctly calls it 'Europe's fastest' — 'world's fastest' is factually incorrect and a high-visibility SEO claim; (4) the markdown file uses the slug 'north-wales-coast' while the TS data file uses 'north-wales', creating a routing conflict. The Adventure Parc Snowdonia / Surf Snowdonia naming is inconsistent within the file (the venue rebranded). The hiddenGems section lists Puffin Island as a North Wales gem despite it being an Anglesey feature already covered on that region page.",
+    "structuralQuality": "GOOD — the TS data file covers heroContent (3 paragraphs), keyFacts (10), bestFor (10 activities), seasonGuide (4 seasons), insiderTips (8), topExperiences (8), FAQs (4), hiddenGems (3), localEatsAndDrinks (3), and SEO meta.",
+    "factualConfidence": "MEDIUM — core geography, heritage designations, and broad activity offer are well-established. 'World's fastest zip line' claim is incorrect. Pricing, slug consistency, and hero image provenance need human resolution before publishing."
+  },
+
+  "keyFactsAudit": {
+    "walesCoastPath_870miles": {
+      "claim": "Part of 870-mile Wales Coast Path, Prestatyn to Anglesey section",
+      "verdict": "VERIFIED — The Wales Coast Path totals approximately 870 miles (1,400 km) and runs the entire Welsh coastline. It begins at Chepstow in the south and terminates at Queensferry in the north, with Prestatyn as the northern trailhead for the section commonly described as the 'start' by walkers going south-to-north. The North Wales section covers the coast from Prestatyn westward to Anglesey.",
+      "source": "https://www.walescoastpath.gov.uk",
+      "confidence": "HIGH"
+    },
+    "zipWorld_velocitySpeed": {
+      "claim": "keyFacts[3].detail: 'World's fastest zip line at 100mph'",
+      "verdict": "FACTUALLY INCORRECT — Zip World Velocity 2 at Penrhyn Quarry (Bethesda) is marketed as 'the fastest zip line in Europe', not the world. The world's fastest distinction has been associated with zip lines in South Africa and the USA. topExperiences in the same file correctly states 'Europe's fastest zip—100mph over a flooded quarry.' This is an internal inconsistency where keyFacts overstates the claim.",
+      "officialUrl": "https://www.zipworld.co.uk/adventure/detail/velocity2",
+      "action": "CORRECTION REQUIRED — update keyFacts[3].detail from 'World's fastest zip line at 100mph' to 'Europe's fastest zip line at up to 100mph'. The 100mph speed figure is consistent with Zip World's own marketing. Verify current marketed top speed at the official page.",
+      "confidence": "HIGH — 'world's fastest' is incorrect; 'Europe's fastest' is the verified claim"
+    },
+    "riverDee_gradeRapids": {
+      "claim": "River Dee, Llangollen — Grade 3-4 rapids, rafting and kayaking",
+      "verdict": "VERIFIED — The River Dee at Llangollen is a well-established white-water venue. The Llangollen section offers Grade 3-4 whitewater and is used by multiple licensed operators for rafting and kayaking. British Canoe Union (now British Canoeing) grade the Llangollen stretch accordingly.",
+      "source": "https://www.llangollenwhitewater.co.uk",
+      "bcuSource": "https://www.britishcanoeing.org.uk/go-canoeing/rivers-and-locations/river-dee-llangollen",
+      "confidence": "HIGH"
+    },
+    "adventureParcSnowdonia_dolgarrog": {
+      "claim": "Adventure Parc Snowdonia — Year-round surf lagoon at Dolgarrog",
+      "verdict": "VERIFIED — Adventure Parc Snowdonia (formerly Surf Snowdonia) is located at Dolgarrog in the Conwy Valley. The inland surf lagoon operates year-round. The venue rebranded from 'Surf Snowdonia' to 'Adventure Parc Snowdonia' in 2021 following the addition of new activities beyond surfing. NOTE: The TS file uses 'Surf Snowdonia' in topExperiences[4].name but 'Adventure Parc Snowdonia' in keyFacts[5].label — this internal inconsistency needs resolution. The correct current trading name is Adventure Parc Snowdonia.",
+      "officialUrl": "https://adventureparcsnowdonia.com",
+      "action": "Update topExperiences[4].name from 'Surf Snowdonia' to 'Adventure Parc Snowdonia' and ensure consistency throughout the file.",
+      "confidence": "HIGH — factually correct but naming inconsistency needs fixing"
+    },
+    "menaiStrait_14miles": {
+      "claim": "Menai Strait — 14 miles, kayaking between Anglesey and mainland",
+      "verdict": "APPROXIMATELY CORRECT — The Menai Strait is approximately 25km (15.5 miles) long. '14 miles' understates the length slightly. Width varies from about 200m to 3km. The description as a kayaking venue is accurate — multiple operators including Plas Menai National Outdoor Centre run guided sessions.",
+      "source": "https://naturalresources.wales/guidance-and-advice/environmental-topics/rivers-and-drainage/rivers-and-estuaries/menai-strait/",
+      "action": "Consider updating to '~15 miles' for greater accuracy, or rephrase to avoid a specific distance claim.",
+      "confidence": "MEDIUM — directionally correct; minor precision issue"
+    },
+    "conwyCastle_UNESCO": {
+      "claim": "Conwy — UNESCO-listed castle and town walls",
+      "verdict": "VERIFIED — Conwy Castle and the medieval town walls are part of the 'Castles and Town Walls of King Edward in Gwynedd' UNESCO World Heritage Site (WHS reference 374, inscribed 1986). Along with Beaumaris, Caernarfon, and Harlech.",
+      "source": "https://whc.unesco.org/en/list/374",
+      "cadwSource": "https://cadw.gov.wales/visit/places-to-visit/conwy-castle",
+      "confidence": "HIGH"
+    },
+    "airports_1to2hours": {
+      "claim": "Liverpool and Manchester airports — 1-2 hours drive",
+      "verdict": "APPROXIMATELY CORRECT — Liverpool John Lennon Airport to Llandudno is approximately 1h15m to 1h45m by car (60-70 miles via A55). Manchester Airport to Llandudno is approximately 1h30m to 2h depending on traffic (via A55). The range '1-2 hours' is broadly accurate but Manchester to western points (Bangor, Caernarfon) can approach 2h15m in peak traffic.",
+      "action": "Claim is acceptable as written. Could be slightly more specific: 'Liverpool Airport 1-1.5 hours, Manchester Airport 1.5-2 hours' but existing broad range is not misleading.",
+      "confidence": "HIGH — broadly correct"
+    },
+    "trainAccess_underFourHours": {
+      "claim": "heroContent: 'trains arrive from London in under four hours'; FAQs: '3.5-4 hours from London'",
+      "verdict": "PARTIALLY ACCURATE — The fastest Avanti West Coast London Euston to Llandudno Junction services take approximately 3h50m to 4h10m depending on stops. 'Under four hours' is achievable on the fastest services but not typical. '3.5-4 hours' in the FAQ is slightly optimistic — 3.5 hours to Llandudno Junction is possible on the fastest non-stop-to-Chester services, but most travellers will experience 3h45m to 4h15m. London to Bangor takes approximately 3h30m to 3h50m on direct services.",
+      "source": "https://www.nationalrail.co.uk/trains-and-services/routes-and-services/north-wales-main-line.html",
+      "action": "MINOR — Rephrase heroContent to 'trains arrive from London in around four hours' and update FAQ to '3.5-4.5 hours from London depending on service and destination' to avoid the impression that sub-4-hour service is standard.",
+      "confidence": "MEDIUM — directionally correct but slightly optimistic"
+    },
+    "greatOrme_bronzeAgeMines": {
+      "claim": "Great Orme limestone headland — cable car, tramway, copper mines",
+      "verdict": "VERIFIED — The Great Orme is a limestone headland in Llandudno. The Great Orme Bronze Age Copper Mines are one of the largest known Bronze Age copper mines in the world, open to visitors year-round. The Great Orme Tramway (opened 1902, only surviving cable-hauled tramway on public roads in Britain) and the Great Orme Country Park aerial cable car are both operational visitor attractions.",
+      "minesSource": "https://www.greatorme.org.uk",
+      "tramwaySource": "https://www.greatormetramway.co.uk",
+      "confidence": "HIGH"
+    },
+    "bounceBelow_176yearOld": {
+      "claim": "topExperiences[3]: 'Bounce Below — Trampoline through a 176-year-old slate cavern'",
+      "verdict": "OUTDATED — Llechwedd Slate Caverns (Zip World Llechwedd) opened for quarrying in 1846. The file was last updated in Feb 2025. As of 2025, the caverns were approximately 179 years old; in 2026 they are approximately 180 years old. '176-year-old' was likely accurate when first written (around 2022) but has aged. Additionally, as of July 2021, the Slate Landscape of Northwest Wales (which includes Llechwedd) was inscribed as a UNESCO World Heritage Site — this is a positive fact worth adding to the heritage positioning.",
+      "source": "https://zipworld.co.uk/adventure/detail/bounce-below",
+      "unescoSource": "https://whc.unesco.org/en/list/1689",
+      "action": "Update to 'almost 180-year-old slate cavern' or simply remove the specific age in favour of 'historic Victorian slate cavern'. Consider adding UNESCO WHS reference for the Slate Landscape inscription.",
+      "confidence": "HIGH — age figure is now outdated"
+    }
+  },
+
+  "pricingAudit": {
+    "dataSource": "All pricing in topExperiences is from the February 2025 data file vintage with no named source. Based on the pattern established across other region files of this vintage, these figures are likely AI-sourced and have not been verified against live operator pricing. All figures need live verification.",
+    "items": [
+      {
+        "experience": "Velocity 2 Zip Line",
+        "claimedPrice": "£60-80",
+        "verificationUrl": "https://www.zipworld.co.uk/adventure/detail/velocity2",
+        "note": "Zip World publishes session prices on its official website with regular updates. The £60-80 range is plausible for 2025/26 but must be verified directly. Zip World pricing varies by date (higher at weekends).",
+        "confidence": "LOW — needs live verification"
+      },
+      {
+        "experience": "White Water Rafting on River Dee",
+        "claimedPrice": "£50-70",
+        "verificationUrls": [
+          "https://www.llangollenwhitewater.co.uk",
+          "https://www.marsden-jacob.co.uk/rafting-llangollen"
+        ],
+        "note": "Multiple operators on the River Dee at Llangollen. £50-70 per person is plausible for a group session. Verify current pricing from active operators.",
+        "confidence": "LOW — needs live verification"
+      },
+      {
+        "experience": "Great Orme Exploration (mines £8)",
+        "claimedPrice": "Free (mines £8)",
+        "verificationUrl": "https://www.greatorme.org.uk",
+        "note": "Walking the Great Orme is free. The Bronze Age Copper Mines charge admission. £8 adult entry is plausible but Cadw/heritage site admission prices change annually. Verify current mine admission price.",
+        "confidence": "LOW — admission prices change annually"
+      },
+      {
+        "experience": "Bounce Below",
+        "claimedPrice": "£30-40",
+        "verificationUrl": "https://www.zipworld.co.uk/adventure/detail/bounce-below",
+        "note": "Zip World Bounce Below (Llechwedd, Blaenau Ffestiniog) pricing. £30-40 is broadly plausible but must be verified directly from Zip World's current pricing.",
+        "confidence": "LOW — needs live verification"
+      },
+      {
+        "experience": "Adventure Parc Snowdonia / Surf Snowdonia session",
+        "claimedPrice": "£50-70",
+        "verificationUrl": "https://adventureparcsnowdonia.com",
+        "note": "Adventure Parc Snowdonia (formerly Surf Snowdonia) publishes session prices on its website. Surfing sessions have historically ranged £50-80 for a beginner/intermediate session. Verify current pricing.",
+        "confidence": "LOW — needs live verification"
+      },
+      {
+        "experience": "Conwy Castle and Walls entry",
+        "claimedPrice": "£12",
+        "verificationUrl": "https://cadw.gov.wales/visit/places-to-visit/conwy-castle",
+        "note": "Cadw (Welsh Government historic environment service) manages Conwy Castle. Adult admission is updated annually. £12 is plausible but must be confirmed against current Cadw pricing. Cadw members enter free.",
+        "confidence": "LOW — Cadw prices change annually"
+      },
+      {
+        "experience": "Menai Strait Kayaking",
+        "claimedPrice": "£50-70",
+        "verificationUrls": [
+          "https://plasmenai.co.uk",
+          "https://www.angleseyoutdoors.com",
+          "https://www.kayaknorthwales.com"
+        ],
+        "note": "Plas Menai National Outdoor Centre (near Caernarfon) is the primary operator for guided Menai Strait kayaking. £50-70 per person is plausible for a half-day guided session. Verify current pricing.",
+        "confidence": "LOW — needs live verification"
+      }
+    ]
+  },
+
+  "operatorAndVenueAudit": {
+    "zipWorld": {
+      "nameInFile": "Zip World (multiple mentions: keyFacts, bestFor, insiderTips, topExperiences)",
+      "knownUrl": "https://www.zipworld.co.uk",
+      "locations": [
+        "Zip World Velocity 2 — Penrhyn Quarry, Bethesda (near Bangor)",
+        "Zip World Llechwedd — Blaenau Ffestiniog (Bounce Below, underground zip lines)",
+        "Zip World Tower — Abergele",
+        "Zip World Fforest — near Betws-y-Coed"
+      ],
+      "note": "Zip World is a real, major North Wales operator with multiple sites. The insiderTip 'Book Velocity 2-3 weeks ahead in summer' is plausible advice. No pricing or operational detail appears fabricated. Specific prices need live verification.",
+      "confidence": "HIGH — well-established operator"
+    },
+    "adventureParcSnowdonia": {
+      "nameInFile": "Adventure Parc Snowdonia (keyFacts) / Surf Snowdonia (topExperiences)",
+      "knownUrl": "https://adventureparcsnowdonia.com",
+      "rebrandNote": "The venue was originally Surf Snowdonia, rebranded to Adventure Parc Snowdonia in 2021. The TS file uses both names inconsistently — the correct current trading name is Adventure Parc Snowdonia.",
+      "action": "Update topExperiences[4].name from 'Surf Snowdonia' to 'Adventure Parc Snowdonia'. Check all other instances in the file.",
+      "confidence": "HIGH — venue exists; naming inconsistency needs editorial fix"
+    },
+    "llechweddSlateCaverns": {
+      "nameInFile": "Bounce Below at Llechwedd Slate Caverns (implicit from context)",
+      "knownUrl": "https://zipworld.co.uk/adventure/detail/bounce-below",
+      "note": "Bounce Below is operated by Zip World at Llechwedd Slate Caverns, Blaenau Ffestiniog. The site is part of the Slate Landscape of Northwest Wales UNESCO WHS (inscribed 2021). This positive cultural designation could be noted in content.",
+      "confidence": "HIGH"
+    },
+    "cottagLoaf_llandudno": {
+      "nameInFile": "The Cottage Loaf",
+      "location": "Llandudno",
+      "claimedSpecialty": "Award-winning fish and chips",
+      "note": "The Cottage Loaf is a real pub/restaurant in Llandudno known for food including fish and chips. However, specific 'award-winning' claims should be verified as award statuses change annually.",
+      "verificationUrl": "https://www.thecottageloaf.co.uk",
+      "action": "Verify the Cottage Loaf is still trading and that any award claim is current. If award cannot be verified, rephrase to 'popular local fish and chips'.",
+      "confidence": "MEDIUM — venue plausible; award claim needs verification"
+    },
+    "signaturesRestaurant_conwy": {
+      "nameInFile": "Signatures Restaurant",
+      "location": "Conwy",
+      "claimedSpecialty": "Fine dining in a historic building",
+      "note": "No URL provided in the TS file. 'Signatures Restaurant' in Conwy is a plausible name but requires verification that this establishment is currently trading. Conwy has several fine dining establishments in historic buildings.",
+      "action": "HUMAN REVIEW — verify Signatures Restaurant in Conwy is currently operating. If it cannot be confirmed, remove or replace with a named, verified alternative.",
+      "confidence": "LOW — no URL; trading status unverified"
+    },
+    "albionAleHouse_conwy": {
+      "nameInFile": "The Albion Ale House",
+      "location": "Conwy",
+      "claimedSpecialty": "Tiny pub, excellent real ales",
+      "knownUrl": "https://www.albionaleconwy.co.uk",
+      "note": "The Albion Ale House in Conwy is a well-established, frequently cited real-ale pub. It is described in multiple tourism and beer guides as a genuinely small historic pub on the town walls. High confidence in trading status.",
+      "confidence": "HIGH — well-established venue"
+    },
+    "bodnantGarden": {
+      "nameInFile": "Bodnant Garden",
+      "location": "Conwy Valley",
+      "claimedDetail": "80 acres of world-class gardens. Laburnum arch in May.",
+      "owner": "National Trust",
+      "knownUrl": "https://www.nationaltrust.org.uk/visit/wales/bodnant-garden",
+      "note": "Bodnant Garden is managed by the National Trust and covers approximately 80 acres (32 hectares) of formal and informal gardens in the Conwy Valley. The Laburnum Arch typically blooms in late May. All claims are accurate.",
+      "confidence": "HIGH — verified"
+    },
+    "aberFalls": {
+      "nameInFile": "Aber Falls",
+      "location": "Near Abergwyngregyn",
+      "claimedDetail": "Stunning 120ft waterfall, easy 2-mile walk",
+      "verdict": "APPROXIMATELY CORRECT — Rhaeadr Fawr (Aber Falls) near Abergwyngregyn is approximately 37m (121ft) tall. The return walk from the car park is approximately 2 miles (3km) over relatively easy terrain managed by NRW. The description 'easy 2-mile walk' is broadly accurate though the path can be muddy.",
+      "source": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/aber-falls-rhaeadr-fawr/",
+      "confidence": "HIGH"
+    },
+    "puffinIsland_hiddenGems": {
+      "nameInFile": "Puffin Island",
+      "listedAs": "hiddenGems[1] for North Wales",
+      "claimedDetail": "Boat trips from Beaumaris. Seabirds, seals, no crowds.",
+      "issue": "GEOGRAPHIC BOUNDARY — Puffin Island (Ynys Seiriol) is off the southeast tip of Anglesey, not the North Wales coast mainland. Boat trips from Beaumaris (Anglesey) are already covered in the Anglesey location landing page. Including it here creates duplication and potential confusion about what is 'North Wales' versus 'Anglesey'.",
+      "action": "HUMAN REVIEW — consider removing Puffin Island from the North Wales hiddenGems list to avoid duplication with Anglesey, or explicitly note its Anglesey location. Replace with a genuinely North Wales coast hidden gem (e.g., Conwy's smallest house, Kinmel Bay dunes, the Italianate village of Portmeirion).",
+      "confidence": "HIGH — geographic issue is clear"
+    }
+  },
+
+  "imageResearch": {
+    "currentHeroImage": {
+      "path": "public/images/regions/north-wales-hero.jpg",
+      "status": "FILE_EXISTS_PROVENANCE_UNKNOWN",
+      "imageRegistryStatus": "needs_review",
+      "imageRegistrySourceUrl": "",
+      "diagnosis": "The hero image file exists on disk but the image registry contains no source URL and no licence information. The image's origin cannot be confirmed. This means it cannot be cleared for publication without first tracing where it came from. This is the same issue identified on anglesey-hero.jpg and other region hero images of this vintage.",
+      "action": "HUMAN REVIEW REQUIRED — run 'git log --follow --diff-filter=A -- public/images/regions/north-wales-hero.jpg' to identify the commit and author who added this file to trace its provenance. If origin cannot be confirmed as a correctly-licensed image, replace with a CC-licensed candidate (see ccLicensedCandidates below)."
+    },
+    "ccLicensedCandidates": [
+      {
+        "title": "Conwy Castle",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Conwy_Castle",
+        "licenceNote": "Many images CC BY-SA 2.0 or CC BY-SA 4.0 via Geograph and Wikimedia contributors. Conwy Castle with the town walls and estuary is one of the most photographed medieval castles in Wales.",
+        "editorial": "STRONG CANDIDATE — a wide-angle shot of Conwy Castle from the riverside, showing castle, town walls, and harbour, would serve well as the North Wales hero. Check for a clear, high-resolution (min 1920px) version. Verify individual image licence before use.",
+        "preferredAttribution": "Attribution required per chosen image's CC licence — format: 'Image title' by Author, CC BY-SA [version], [source URL]"
+      },
+      {
+        "title": "Llandudno Pier and Great Orme",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Llandudno_Pier",
+        "licenceNote": "Geograph contributors, typically CC BY-SA 2.0. Llandudno Bay with the pier and Great Orme headland is an iconic North Wales coastal image.",
+        "editorial": "CANDIDATE — a shot showing the sweep of Llandudno Bay with pier and Great Orme in background captures the region's distinctive character. Verify individual licence."
+      },
+      {
+        "title": "Great Orme limestone headland",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Great_Orme",
+        "licenceNote": "Multiple CC-licensed candidates from Geograph and Wikimedia. The Great Orme's distinctive limestone character and sea views make a strong adventure-positioning hero.",
+        "editorial": "CANDIDATE — a shot from the summit looking back over Llandudno Bay would work well. Filter for clear-sky conditions at sufficient resolution."
+      },
+      {
+        "title": "Aber Falls (Rhaeadr Fawr)",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Rhaeadr_Fawr,_Abergwyngregyn",
+        "licenceNote": "Geograph contributors, typically CC BY-SA 2.0. Waterfalls are popular Wikimedia/Geograph subjects and usually well-represented.",
+        "editorial": "CANDIDATE — a dramatic waterfall shot is strong for adventure pages. However it may understate the coastal/heritage character of this specific region page compared to a Conwy Castle or Llandudno Bay shot."
+      },
+      {
+        "title": "North Wales coast (general)",
+        "openverseSearchUrl": "https://openverse.org/search/?q=north+wales+coast&license_type=commercial,modification",
+        "note": "Openverse (Creative Commons search) can surface CC-licensed images from Flickr and Wikimedia Commons for 'north wales coast'. Filter to CC BY or CC BY-SA licences that allow commercial use.",
+        "editorial": "Recommended search approach for human reviewer: search Openverse for a high-resolution coastal shot or castle view, verify licence, download, and replace the existing unprovenanced hero."
+      }
+    ],
+    "noAiImagesConfirmed": "No AI-generated images have been used or proposed in this research output."
+  },
+
+  "contentQualityAudit": {
+    "heroContent": {
+      "verdict": "GOOD editorial quality. Three paragraphs effectively position North Wales as an accessible but thrilling adventure destination led by signature commercial operators (Zip World, inland surf, white water). The framing around the A55 and train access is a genuine competitive advantage. Minor issue: 'under four hours' train time is slightly optimistic (see keyFacts audit).",
+      "flaggedClaims": [
+        "Trains arrive from London in under four hours — rephrase to 'around four hours' for accuracy",
+        "Inland surf lagoons — accurate (Adventure Parc Snowdonia at Dolgarrog)",
+        "Underground trampolines in slate caverns — accurate (Bounce Below at Llechwedd)"
+      ]
+    },
+    "keyFacts": {
+      "verdict": "GOOD structure with one material factual error",
+      "flaggedFacts": [
+        "keyFacts[3].detail: 'World's fastest zip line at 100mph' — INCORRECT; should be 'Europe's fastest zip line at up to 100mph'. This contradicts topExperiences[0].description which correctly says 'Europe's fastest zip'.",
+        "keyFacts[7].detail: 'Menai Strait — 14 miles' — slightly underestimated (~15.5 miles). Minor, but worth correcting.",
+        "No mention of the Slate Landscape of Northwest Wales UNESCO WHS (2021 inscription) — an opportunity to add cultural depth to the Bounce Below / slate cavern content."
+      ]
+    },
+    "bestFor": {
+      "verdict": "GOOD — 10 ranked activities are appropriate for the region. One geographic note:",
+      "flaggedItems": [
+        "bestFor[6]: 'Mountain Biking — Coed y Brenin, Penmachno, and forest trails'. Coed y Brenin forest park is near Dolgellau in the Snowdonia/mid-Wales area and is the subject of a separate Snowdonia region page. Including it here may create cross-region confusion. Penmachno is near Betws-y-Coed which is more clearly within the North Wales/Snowdonia overlap zone. Consider replacing Coed y Brenin with a more distinctly North Wales MTB venue such as Coed Llandegla (near Wrexham) which is named in the north-wales--mountain-biking.json combo page.",
+        "bestFor[9]: 'Heritage Railway — Great Orme Tramway, Snowdon Mountain Railway'. The Snowdon Mountain Railway runs from Llanberis which is in Snowdonia. Its inclusion here is reasonable as a North Wales cross-sell but may cause confusion about the scope of the page."
+      ]
+    },
+    "seasonGuide": {
+      "verdict": "GOOD — seasonal highlights are accurate for North Wales coastal character. Temperature ranges (10-15°C spring, 15-22°C summer) are broadly correct for the north coast. 'Llandudno Victorian Festival' (summer highlights) is a real annual event but its dates and format should be verified annually.",
+      "note": "The Llandudno Victorian Extravaganza is typically held in late May (Spring Bank Holiday weekend), not in the main summer season as implied by the summer highlights section. This should be checked.",
+      "verificationUrl": "https://www.victorianextravaganza.co.uk"
+    },
+    "insiderTips": {
+      "verdict": "GOOD — 8 tips with practical local knowledge. Most are location-appropriate.",
+      "flaggedTips": [
+        {
+          "tip": "Llandudno parking — 'Free residential streets uphill, 10-minute walk to town'",
+          "issue": "MEDIUM — Llandudno has residential streets with free on-street parking some distance from the pier, but this advice can vary with residential parking zone changes. HUMAN REVIEW — verify this is still accurate advice as of 2026.",
+          "confidence": "MEDIUM"
+        },
+        {
+          "tip": "Best fish and chips — 'The Cottage Loaf in Llandudno or Rhyl Harbour for day-boat fresh seafood'",
+          "issue": "LOW — 'Rhyl Harbour' is a generic reference, not a named operator, and Rhyl's seafood offer has declined with the harbour's reduced fishing activity. Consider naming a specific verified operator at Rhyl or removing the Rhyl reference. Verify Cottage Loaf is still trading.",
+          "verificationUrl": "https://www.thecottageloaf.co.uk"
+        },
+        {
+          "tip": "River Dee rafting reality — 'water levels can be too low in dry spells. Operators will advise.'",
+          "issue": "VERIFIED GOOD ADVICE — this is accurate practical advice and reflects how River Dee operators actually work. No changes needed."
+        }
+      ]
+    },
+    "faqs": {
+      "verdict": "LIGHT — only 4 FAQs versus 10 on the Anglesey page. This content area is underdeveloped. The 4 FAQs are well-written but the page would benefit from 6-10 FAQs covering additional user questions.",
+      "suggestedAdditionalFAQs": [
+        "How long does it take to drive along the North Wales coast?",
+        "Is North Wales good for families with young children?",
+        "What is the best base for exploring North Wales?",
+        "Is there cliff jumping / coasteering in North Wales?",
+        "When does Zip World Velocity 2 open and close?"
+      ],
+      "existingFAQs": [
+        {
+          "question": "Is Zip World worth it?",
+          "verdict": "GOOD — accurate and useful. No changes needed."
+        },
+        {
+          "question": "How do I get to North Wales?",
+          "verdict": "GOOD — accurate with minor train-time qualification (see keyFacts audit on train access)."
+        },
+        {
+          "question": "Which is better — Llandudno or Conwy?",
+          "verdict": "GOOD editorial voice. Accurate characterisation of both towns."
+        },
+        {
+          "question": "Can you surf in North Wales?",
+          "verdict": "GOOD — the answer correctly names Adventure Parc Snowdonia for guaranteed waves and Anglesey/Llŷn for ocean surfing. The 'Surf Snowdonia' name used in the answer should be updated to 'Adventure Parc Snowdonia' for consistency."
+        }
+      ]
+    },
+    "hiddenGems": {
+      "verdict": "THIN — only 3 hidden gems versus 6 on the Anglesey page. One of the three (Puffin Island) is geographically on Anglesey rather than the North Wales coast. The section could be significantly strengthened.",
+      "geographicIssue": "Puffin Island listed as a North Wales hidden gem — it is off Anglesey. See operatorAndVenueAudit.puffinIsland_hiddenGems.",
+      "suggestedReplacements": [
+        "The smallest house in Great Britain, Conwy Quay — a genuine hidden gem (Cadw-managed; source: https://cadw.gov.wales/visit/places-to-visit/smallest-house-great-britain)",
+        "Portmeirion Italianate village — Gwynedd, unique architectural gem; source: https://portmeirion.wales/",
+        "Kinmel Bay sand dunes and estuary — less visited coastal stretch north of Rhyl",
+        "Rhuddlan Castle — ruined 13th-century Edwardian castle overlooking the River Clwyd; source: https://cadw.gov.wales/visit/places-to-visit/rhuddlan-castle",
+        "Llynnau Mymbyr — the twin lakes near Capel Curig with a classic Snowdonia backdrop (within the North Wales orbit)"
+      ]
+    },
+    "seoMeta": {
+      "seoTitle": "North Wales | Zip World, Coasteering & Adventure Activities | Adventure Wales",
+      "verdict": "GOOD — title effectively leads with the most-searched brand (Zip World) and core activity type",
+      "seoDescription": "Discover North Wales: home to Zip World's 100mph lines, white water rafting on the Dee, Victorian Llandudno, and medieval Conwy. Your adventure gateway.",
+      "seoDescriptionNote": "No factual errors in the SEO description. 'Zip World's 100mph lines' avoids the 'world's fastest' superlative error in keyFacts. 'Medieval Conwy' is accurate.",
+      "heroImagePath": "/images/regions/north-wales-hero.jpg",
+      "heroImageNote": "Hero image path is defined but provenance is unverified — blocked until licensing is confirmed."
+    }
+  },
+
+  "markdownVsTsAudit": {
+    "slugMismatch": {
+      "issue": "CRITICAL — content/regions/north-wales.md frontmatter uses slug 'north-wales-coast' while data/regions/north-wales.ts uses slug 'north-wales'. These are effectively two different location framings: 'north-wales-coast' positions this as a coastal strip page while 'north-wales' is a broader regional hub. The route in the content inventory is '/north-wales'. The two files need to be reconciled to serve the same URL slug.",
+      "action": "HUMAN REVIEW REQUIRED — decide whether this page covers the broader 'North Wales' region (including Snowdonia border areas, Llangollen, Clwydian Range) or specifically the 'North Wales Coast' (Prestatyn to Caernarfon). Update the markdown frontmatter slug to 'north-wales' if they serve the same route, or document them as distinct content items if they target different routes."
+    },
+    "toneDiscrepancy": {
+      "issue": "The markdown (north-wales.md) describes the region as 'more bucket-and-spade than backcountry, and geared up for family fun', explicitly saying 'If you're after hardcore adrenaline, remote wilderness... look elsewhere.' The TS data file leads with 'Zip World's 100mph lines, underground trampolines in slate caverns' and adrenaline-first positioning. These are contradictory editorial stances on the same page.",
+      "action": "HUMAN REVIEW — determine which editorial stance reflects the page's positioning strategy. If this is an adventure-led destination page (TS stance), the markdown needs rewriting. If the markdown 'family gateway' stance is correct, the TS heroContent and bestFor need toning down."
+    },
+    "congruence": {
+      "overlappingCoverage": [
+        "Both files mention Llandudno and Conwy as key towns — consistent",
+        "Both mention the Great Orme — consistent",
+        "Markdown mentions Plas Menai for watersports — consistent with TS kayaking reference",
+        "Markdown mentions Llandegla for mountain biking — partially consistent (TS mentions Coed y Brenin/Penmachno in bestFor rather than Llandegla)",
+        "Markdown mentions Clwydian Range — TS does not mention it at all"
+      ]
+    }
+  },
+
+  "proposedChanges": [
+    {
+      "file": "data/regions/north-wales.ts",
+      "field": "keyFacts[3].detail",
+      "currentValue": "'World's fastest zip line at 100mph'",
+      "proposedValue": "'Europe's fastest zip line at up to 100mph'",
+      "action": "Factual correction — Zip World Velocity 2 is Europe's fastest, not the world's fastest. Verify current Zip World marketing language at https://www.zipworld.co.uk/adventure/detail/velocity2 before updating."
+    },
+    {
+      "file": "data/regions/north-wales.ts",
+      "field": "topExperiences[4].name",
+      "currentValue": "'Surf Snowdonia'",
+      "proposedValue": "'Adventure Parc Snowdonia'",
+      "action": "Naming update — the venue rebranded in 2021. All instances of 'Surf Snowdonia' in the file should be updated to 'Adventure Parc Snowdonia'."
+    },
+    {
+      "file": "data/regions/north-wales.ts",
+      "field": "faqs[3].answer",
+      "currentValue": "'Yes—Surf Snowdonia offers guaranteed waves year-round'",
+      "proposedValue": "Update 'Surf Snowdonia' to 'Adventure Parc Snowdonia' in this answer",
+      "action": "Naming consistency fix — same rebrand as above."
+    },
+    {
+      "file": "data/regions/north-wales.ts",
+      "field": "topExperiences[3].description (Bounce Below age)",
+      "currentValue": "'176-year-old slate cavern'",
+      "proposedValue": "'historic Victorian slate cavern' OR update year count to ~180",
+      "action": "Age figure has drifted — the caverns date from 1846 (180 years in 2026). Either update the count or remove the specific age in favour of 'Victorian-era' or 'historic'. Consider adding UNESCO WHS reference for Slate Landscape of Northwest Wales."
+    },
+    {
+      "file": "data/regions/north-wales.ts",
+      "field": "hiddenGems[1] (Puffin Island)",
+      "currentValue": "{ name: 'Puffin Island', location: 'Off Anglesey', ... }",
+      "proposedValue": "Replace with a genuinely North Wales coast hidden gem (see contentQualityAudit.hiddenGems.suggestedReplacements)",
+      "action": "Geographic editorial correction — Puffin Island belongs on the Anglesey page, not the North Wales coast page."
+    },
+    {
+      "file": "content/regions/north-wales.md",
+      "field": "frontmatter slug",
+      "currentValue": "slug: north-wales-coast",
+      "proposedValue": "slug: north-wales",
+      "action": "Resolve slug mismatch with data/regions/north-wales.ts once editorial decision on page scope is made."
+    },
+    {
+      "file": "data/regions/north-wales.ts",
+      "field": "meta.lastUpdated",
+      "currentValue": "'2025-02-06'",
+      "proposedValue": "Update to date when re-verification is complete",
+      "action": "Update after human QA pass confirms pricing, operator details, and factual corrections."
+    },
+    {
+      "file": "content/ops/image-registry.json",
+      "field": "location-landing-north-wales image_source_url",
+      "currentValue": "'' (empty)",
+      "proposedValue": "Add verified source URL and licence once provenance of north-wales-hero.jpg is confirmed",
+      "action": "Investigate git history of north-wales-hero.jpg to trace origin. Add source URL and licence info."
+    }
+  ],
+
+  "sourcesUsed": [
+    {
+      "url": "data/regions/north-wales.ts",
+      "description": "Primary location landing data file — reviewed in full"
+    },
+    {
+      "url": "content/regions/north-wales.md",
+      "description": "Existing markdown editorial content — reviewed; slug mismatch and tone discrepancy identified"
+    },
+    {
+      "url": "data/combo-pages/north-wales--climbing.json",
+      "description": "North Wales climbing combo page — cross-reference for spot names and operator slugs"
+    },
+    {
+      "url": "data/combo-pages/north-wales--mountain-biking.json",
+      "description": "North Wales MTB combo page — cross-reference for trail venues (Coed Llandegla, Revolution Bike Park)"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Content inventory — confirmed location-landing-north-wales at research_needed status"
+    },
+    {
+      "url": "content/ops/image-registry.json",
+      "description": "Image registry — confirmed location-landing-north-wales has empty source URL and needs_review status"
+    },
+    {
+      "url": "content/ops/source-registry.json",
+      "description": "Source registry — no entries for location-landing-north-wales; activity sub-pages (climbing, MTB) have unreviewed imported sources"
+    },
+    {
+      "url": "https://www.zipworld.co.uk/adventure/detail/velocity2",
+      "description": "Zip World — Velocity 2 official page; verify 'Europe's fastest' claim and current pricing"
+    },
+    {
+      "url": "https://adventureparcsnowdonia.com",
+      "description": "Adventure Parc Snowdonia — current trading name (formerly Surf Snowdonia), verify surf session pricing"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/374",
+      "description": "UNESCO World Heritage Centre — Castles and Town Walls of King Edward in Gwynedd (Conwy Castle)"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/1689",
+      "description": "UNESCO World Heritage Centre — Slate Landscape of Northwest Wales (inscribed 2021, includes Llechwedd/Bounce Below site)"
+    },
+    {
+      "url": "https://cadw.gov.wales/visit/places-to-visit/conwy-castle",
+      "description": "Cadw — Conwy Castle admission and heritage status; verify current admission price"
+    },
+    {
+      "url": "https://www.walescoastpath.gov.uk",
+      "description": "Wales Coast Path — official site; confirm 870-mile total length"
+    },
+    {
+      "url": "https://www.greatorme.org.uk",
+      "description": "Great Orme Bronze Age Copper Mines — verify admission price and visitor information"
+    },
+    {
+      "url": "https://www.greatormetramway.co.uk",
+      "description": "Great Orme Tramway — verify operating status and pricing"
+    },
+    {
+      "url": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/aber-falls-rhaeadr-fawr/",
+      "description": "NRW — Aber Falls (Rhaeadr Fawr) visitor information; height and walk distance"
+    },
+    {
+      "url": "https://www.nationaltrust.org.uk/visit/wales/bodnant-garden",
+      "description": "National Trust — Bodnant Garden; confirm 80-acre extent and Laburnum Arch timing"
+    },
+    {
+      "url": "https://naturalresources.wales/guidance-and-advice/environmental-topics/rivers-and-drainage/rivers-and-estuaries/menai-strait/",
+      "description": "NRW — Menai Strait length and character; minor fact-check on 14-mile vs 15.5-mile claim"
+    },
+    {
+      "url": "https://www.llangollenwhitewater.co.uk",
+      "description": "Llangollen White Water — River Dee grade and operator pricing"
+    },
+    {
+      "url": "https://www.nationalrail.co.uk/trains-and-services/routes-and-services/north-wales-main-line.html",
+      "description": "National Rail — North Wales Main Line; verify London to Llandudno Junction journey times"
+    },
+    {
+      "url": "https://www.victorianextravaganza.co.uk",
+      "description": "Llandudno Victorian Extravaganza — verify event dates (typically late May, not summer)"
+    },
+    {
+      "url": "https://www.thecottageloaf.co.uk",
+      "description": "The Cottage Loaf, Llandudno — verify trading status and award claims"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Conwy_Castle",
+      "description": "Wikimedia Commons — CC-licensed hero image candidates (Conwy Castle)"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Llandudno_Pier",
+      "description": "Wikimedia Commons — CC-licensed hero image candidates (Llandudno Bay)"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Great_Orme",
+      "description": "Wikimedia Commons — CC-licensed hero image candidates (Great Orme headland)"
+    },
+    {
+      "url": "https://openverse.org/search/?q=north+wales+coast&license_type=commercial,modification",
+      "description": "Openverse — CC-licensed North Wales coastal image search (for hero image replacement)"
+    }
+  ],
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Hero image north-wales-hero.jpg provenance and licensing",
+      "priority": "HIGH",
+      "reason": "Image file exists on disk but image registry has no source URL and no licence information. Cannot publish with unknown licensing.",
+      "resolution": "Run 'git log --follow --diff-filter=A -- public/images/regions/north-wales-hero.jpg' to trace origin. If provenance cannot be confirmed, replace with a CC BY or CC BY-SA candidate from Wikimedia Commons — Conwy Castle, Llandudno Bay, or Great Orme categories are recommended."
+    },
+    {
+      "claim": "All pricing in topExperiences (Velocity 2 £60-80, rafting £50-70, mines £8, Bounce Below £30-40, surf session £50-70, Conwy Castle £12, kayaking £50-70)",
+      "priority": "HIGH",
+      "reason": "All from the 2025 file vintage with no named verification source. These figures are likely AI-sourced and at minimum 16+ months out of date. Operator prices change annually.",
+      "resolution": "Human reviewer to load each operator's current booking page: zipworld.co.uk (Velocity 2 and Bounce Below), adventureparcsnowdonia.com (surf session), cadw.gov.wales/conwy-castle (castle entry), llangollenwhitewater.co.uk or equivalent (rafting), plasmenai.co.uk (kayaking). Record current prices with source URL and verification date."
+    },
+    {
+      "claim": "keyFacts[3]: 'World's fastest zip line at 100mph'",
+      "priority": "HIGH",
+      "reason": "Factually incorrect — Zip World Velocity 2 is Europe's fastest zip line, not the world's fastest. topExperiences in the same file correctly says 'Europe's fastest zip'. This is a prominent, credibility-sensitive claim that appears in the keyFacts table and would undermine user trust if fact-checked.",
+      "resolution": "Update keyFacts[3].detail to 'Europe's fastest zip line at up to 100mph'. Verify against current Zip World marketing language."
+    },
+    {
+      "claim": "Slug mismatch: north-wales.ts ('north-wales') vs north-wales.md ('north-wales-coast')",
+      "priority": "HIGH",
+      "reason": "A routing conflict — two files that may render the same page disagree on what slug/URL they serve. This could cause duplicate content issues or 404 errors depending on implementation.",
+      "resolution": "Editorial decision needed: confirm whether this page is '/north-wales' (broader region) or '/north-wales-coast' (coastal strip). Update both files to use the same slug consistently."
+    },
+    {
+      "claim": "Content/editorial tone conflict between north-wales.ts (adrenaline-led, Zip World first) and north-wales.md (family gateway, 'not for hardcore adrenaline seekers')",
+      "priority": "HIGH",
+      "reason": "Two contradictory editorial stances on the same page cannot both be published. The TS file leads with 100mph zip lines; the markdown explicitly says 'If you're after hardcore adrenaline... look elsewhere.'",
+      "resolution": "Define the editorial stance for the /north-wales page and rewrite the file that contradicts it."
+    },
+    {
+      "claim": "Puffin Island listed as North Wales hiddenGems[1]",
+      "priority": "MEDIUM",
+      "reason": "Puffin Island is off Anglesey, not the North Wales coast mainland. Already covered on the Anglesey location landing page.",
+      "resolution": "Replace with a genuinely North Wales coast hidden gem. Suggested alternatives listed in contentQualityAudit.hiddenGems.suggestedReplacements."
+    },
+    {
+      "claim": "Signatures Restaurant, Conwy — fine dining venue",
+      "priority": "MEDIUM",
+      "reason": "No URL in the file. Cannot confirm this establishment is currently trading. Generic name with no supporting source.",
+      "resolution": "Verify the venue is open and trading. If unverifiable, replace with a named, confirmed Conwy dining option."
+    },
+    {
+      "claim": "Llandudno Victorian Festival listed under summer highlights",
+      "priority": "MEDIUM",
+      "reason": "The Llandudno Victorian Extravaganza typically runs over the late-May Spring Bank Holiday weekend, not in the main June-August summer period.",
+      "resolution": "Move to spring highlights or verify the event has changed timing.",
+      "verificationUrl": "https://www.victorianextravaganza.co.uk"
+    },
+    {
+      "claim": "Train from London in under four hours / 3.5-4 hours",
+      "priority": "LOW",
+      "reason": "Fastest services to Llandudno Junction run approximately 3h50m to 4h10m. '3.5 hours' is only achievable to Bangor, not Llandudno Junction.",
+      "resolution": "Minor rephrasing: 'trains arrive from London in around four hours' avoids the slightly optimistic 'under four hours' claim."
+    },
+    {
+      "claim": "Bounce Below — 176-year-old slate cavern",
+      "priority": "LOW",
+      "reason": "Llechwedd Slate Caverns date from 1846; the age figure has drifted since the file was written. As of 2026 it is approximately 180 years old.",
+      "resolution": "Update to 'almost 180-year-old' or rephrase to 'historic Victorian slate cavern'."
+    }
+  ],
+
+  "positivesToRetain": [
+    "Strong three-paragraph hero prose effectively differentiated from other Welsh regions (leads with commercial adventure operators, A55 accessibility, speed of access from English cities)",
+    "Good use of keyFacts to signpost the region's unique selling points (only UK inland surf lagoon, Zip World, white water)",
+    "Accurate UNESCO framing for Conwy Castle (Castles of Edward I in Gwynedd)",
+    "The 'River Dee reality' insiderTip (water levels in dry spells) is genuinely useful practical advice",
+    "Honest seasonal advice: 'Book Zip World 2-3 weeks ahead in summer. Tuesday-Thursday slots are 40% less busy' — practical and credible",
+    "Conwy without crowds insiderTip is good editorial advice (castle first or late afternoon; town walls walk is free)",
+    "Accurate Bodnant Garden description (80 acres, Laburnum Arch, National Trust)",
+    "Aber Falls description is accurate and correctly positions it as 'off the tourist radar'",
+    "The Albion Ale House inclusion is a well-known, genuinely local recommendation with high confidence of accuracy",
+    "FAQ question 'Which is better — Llandudno or Conwy?' is a real user search question and the answer is editorially strong"
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusRationale": "The structural foundation of north-wales.ts is solid and the prose quality is high. The content item can advance to qa_needed rather than remaining at research_needed, but a human QA reviewer must resolve five issues before this page can be published: (1) establish provenance and licensing for north-wales-hero.jpg or replace with a CC-licensed alternative; (2) re-verify all pricing in topExperiences against current operator websites; (3) correct 'World's fastest zip line' to 'Europe's fastest zip line' in keyFacts[3]; (4) resolve the slug mismatch between the TS and markdown files; (5) resolve the editorial tone conflict between the TS (adrenaline-led) and markdown (family-gateway) content. Once these five issues are resolved and 'Surf Snowdonia' naming is updated to 'Adventure Parc Snowdonia' throughout, this page can move to reviewed.",
+
+  "topBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Hero image north-wales-hero.jpg has no provenance record — cannot be published without licensing confirmation",
+      "detail": "The file exists at public/images/regions/north-wales-hero.jpg and is referenced in data/regions/north-wales.ts (meta.heroImage). The image registry entry shows empty source_url and 'needs_review' status. Without knowing the origin and licence, the site cannot legally publish this image. This is the same pattern as the anglesey-hero.jpg blocker identified in content-ops-027.",
+      "resolution": "Run 'git log --follow --diff-filter=A -- public/images/regions/north-wales-hero.jpg' to identify the commit and author who added the image. Trace the source. If provenance cannot be confirmed, replace with a CC BY or CC BY-SA candidate from Wikimedia Commons (Conwy Castle at https://commons.wikimedia.org/wiki/Category:Conwy_Castle or Llandudno Bay at https://commons.wikimedia.org/wiki/Category:Llandudno_Pier are recommended). Update image-registry.json with source URL and licence."
+    },
+    {
+      "rank": 2,
+      "blocker": "Slug mismatch and editorial tone conflict between north-wales.ts and north-wales.md create a routing and positioning ambiguity that cannot be resolved by content editors alone",
+      "detail": "north-wales.ts uses slug 'north-wales' (broader region, adrenaline-led hero); north-wales.md uses slug 'north-wales-coast' (coastal strip, family-gateway framing). These two files contradict each other on the purpose, audience, and editorial stance of the /north-wales page. The markdown file explicitly says the region is 'NOT Good For' 'hardcore adrenaline' seekers — the opposite of the TS heroContent lead. This is not a writing error but an unresolved strategic question.",
+      "resolution": "Product/editorial decision required: (a) confirm the intended URL slug; (b) confirm the target audience and adventure positioning; (c) rewrite whichever file is out of alignment. Until this is resolved, any copy edits to either file may be working against the final intent."
+    },
+    {
+      "rank": 3,
+      "blocker": "keyFacts 'World's fastest zip line' claim is factually incorrect — a high-visibility error on a commercially-sensitive claim about the region's headline attraction",
+      "detail": "data/regions/north-wales.ts keyFacts[3].detail states 'World's fastest zip line at 100mph'. Zip World Velocity 2 is marketed as 'the fastest zip line in Europe', not the world. The TS file itself is internally inconsistent: topExperiences[0].description correctly says 'Europe's fastest zip'. Publishing 'World's fastest' when the operator's own current marketing says 'Europe's fastest' is both factually wrong and exposes Adventure Wales to credibility challenges from informed users. Zip World's official page should be verified before the copy is updated.",
+      "resolution": "Verify current Zip World marketing at https://www.zipworld.co.uk/adventure/detail/velocity2, then update keyFacts[3].detail to 'Europe's fastest zip line at up to 100mph'. Ensure topExperiences[0].description is kept consistent. No other fact-check is needed for this specific fix."
+    }
+  ]
+}

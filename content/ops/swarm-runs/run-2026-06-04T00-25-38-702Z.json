@@ -1,0 +1,81 @@
+{
+  "generatedAt": "2026-06-04T00:25:38.702Z",
+  "limit": 9,
+  "concurrency": 3,
+  "taskType": "research",
+  "status": "research_needed",
+  "results": [
+    {
+      "taskId": "content-ops-027-location-landing-anglesey",
+      "outputPath": "data/research/content-ops/location-landing-anglesey.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:04:10.389Z",
+      "finishedAt": "2026-06-04T00:10:14.277Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-027-location-landing-anglesey.log"
+    },
+    {
+      "taskId": "content-ops-028-location-landing-brecon-beacons",
+      "outputPath": "data/research/content-ops/location-landing-brecon-beacons.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:04:10.416Z",
+      "finishedAt": "2026-06-04T00:10:21.950Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-028-location-landing-brecon-beacons.log"
+    },
+    {
+      "taskId": "content-ops-029-location-landing-carmarthenshire",
+      "outputPath": "data/research/content-ops/location-landing-carmarthenshire.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:04:10.435Z",
+      "finishedAt": "2026-06-04T00:13:11.068Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-029-location-landing-carmarthenshire.log"
+    },
+    {
+      "taskId": "content-ops-030-location-landing-gower",
+      "outputPath": "data/research/content-ops/location-landing-gower.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:10:14.290Z",
+      "finishedAt": "2026-06-04T00:14:59.635Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-030-location-landing-gower.log"
+    },
+    {
+      "taskId": "content-ops-031-location-landing-llyn-peninsula",
+      "outputPath": "data/research/content-ops/location-landing-llyn-peninsula.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:10:21.952Z",
+      "finishedAt": "2026-06-04T00:17:34.531Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-031-location-landing-llyn-peninsula.log"
+    },
+    {
+      "taskId": "content-ops-032-location-landing-mid-wales",
+      "outputPath": "data/research/content-ops/location-landing-mid-wales.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:13:11.075Z",
+      "finishedAt": "2026-06-04T00:18:30.512Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-032-location-landing-mid-wales.log"
+    },
+    {
+      "taskId": "content-ops-033-location-landing-north-wales",
+      "outputPath": "data/research/content-ops/location-landing-north-wales.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:14:59.638Z",
+      "finishedAt": "2026-06-04T00:21:44.081Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-033-location-landing-north-wales.log"
+    },
+    {
+      "taskId": "content-ops-034-location-landing-pembrokeshire",
+      "outputPath": "data/research/content-ops/location-landing-pembrokeshire.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:17:34.532Z",
+      "finishedAt": "2026-06-04T00:23:06.925Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-034-location-landing-pembrokeshire.log"
+    },
+    {
+      "taskId": "content-ops-035-location-landing-snowdonia",
+      "outputPath": "data/research/content-ops/location-landing-snowdonia.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:18:30.515Z",
+      "finishedAt": "2026-06-04T00:25:38.698Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-035-location-landing-snowdonia.log"
+    }
+  ]
+}

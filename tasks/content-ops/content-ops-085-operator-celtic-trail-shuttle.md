@@ -4,7 +4,7 @@
 Improve content item operator-celtic-trail-shuttle: Celtic Trail Shuttle.
 Channel: commercial. Content type: operator. Route/slug: /directory/celtic-trail-shuttle.
 Commercial tier: unclassified_operator.
-Known blocker: Operator "Celtic Trail Cycle Shuttle" missing: no cover image, no logo, no coordinates, no Google rating.
+Known blocker: Operator "Celtic Trail Cycle Shuttle" missing: no cover image, no logo, no coordinates, no Google rating | Operator "Celtic Trail Cycle Shuttle" missing: no cover image, no logo, no coordinates, no Google rating.
 Do not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.
 
 ## Metadata
@@ -13,9 +13,9 @@ Do not guess. Capture source URLs for every factual claim. Do not use AI-generat
 - Channel: commercial
 - Content type: operator
 - Route/slug: /directory/celtic-trail-shuttle
-- Current status: research_needed
+- Current status: blocked
 - Priority: 34
-- Task type: research
+- Task type: commercial_review
 - Recommended skill: directory-premium-lure-model
 - Required output path: data/research/content-ops/operator-celtic-trail-shuttle.json
 

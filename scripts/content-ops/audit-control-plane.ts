@@ -19,6 +19,13 @@ import {
   slugToTitle,
   writeJson,
 } from "./shared";
+import {
+  contentGapAuditSchema,
+  contentInventoryItemSchema,
+  formatValidationError,
+  researchOutputSchema,
+} from "./schemas";
+import { z } from "zod";
 
 interface AuditFile {
   generatedAt?: string;
@@ -26,8 +33,21 @@ interface AuditFile {
   gaps?: AuditGap[];
 }
 
+const validationFailures: string[] = [];
+
+function reportValidationFailure(file: string, details: string) {
+  validationFailures.push(file);
+  console.warn(`\n[content-ops] WARNING: schema validation failed for ${relative(process.cwd(), file)} — skipping this file.\n${details}\n`);
+}
+
 const now = new Date().toISOString();
-const audit = readJson<AuditFile>(join(process.cwd(), "content", "content-gap-audit.json"), { gaps: [] });
+const auditPath = join(process.cwd(), "content", "content-gap-audit.json");
+const auditRaw = readJson<unknown>(auditPath, { gaps: [] });
+const auditParsed = contentGapAuditSchema.safeParse(auditRaw);
+if (!auditParsed.success) {
+  reportValidationFailure(auditPath, formatValidationError(auditParsed.error));
+}
+const audit: AuditFile = auditParsed.success ? auditParsed.data : { gaps: [] };
 const itemsById = new Map<string, ContentInventoryItem>();
 
 function addOrMerge(item: ContentInventoryItem) {
@@ -196,6 +216,54 @@ function extractUrls(text: string) {
   return Array.from(new Set(text.match(/https?:\/\/[^\s)\]"']+/g) ?? [])).slice(0, 12);
 }
 
+function researchStatus(value: unknown): ContentInventoryItem["status"] {
+  if (typeof value !== "string") return "researched";
+  if (["researched", "qa_needed", "reviewed", "blocked", "signed_off"].includes(value)) {
+    return value as ContentInventoryItem["status"];
+  }
+  return "researched";
+}
+
+for (const file of listFiles(join(process.cwd(), "data", "research", "content-ops"), ".json")) {
+  const text = readFileSync(file, "utf8");
+  let rawResearch: unknown;
+  try {
+    rawResearch = JSON.parse(text);
+  } catch (error) {
+    reportValidationFailure(file, `  - (root): invalid JSON — ${error instanceof Error ? error.message : String(error)}`);
+    continue;
+  }
+  const researchParsed = researchOutputSchema.safeParse(rawResearch);
+  if (!researchParsed.success) {
+    reportValidationFailure(file, formatValidationError(researchParsed.error));
+    continue;
+  }
+  const research = researchParsed.data;
+  const meta = research._meta ?? {};
+  const id = normalizeId(String(meta.contentItem || basename(file, ".json")));
+  const existing = itemsById.get(id);
+  if (!existing) continue;
+
+  const sourceUrls = extractUrls(text);
+  const nextStatus = researchStatus(meta.recommendedNextStatus || research.recommendedNextStatus || research.recommended_next_status);
+  const imageText = JSON.stringify(research.images ?? research.imageProvenance ?? research.image_provenance ?? {});
+  const imageBlocked = /blocked|no freely licensed|request/i.test(imageText);
+
+  addOrMerge({
+    ...existing,
+    status: nextStatus,
+    source_count: Math.max(existing.source_count, sourceUrls.length),
+    source_urls: Array.from(new Set([...existing.source_urls, ...sourceUrls])).slice(0, 12),
+    evidence_status: sourceUrls.length >= 3 ? "sourced" : sourceUrls.length > 0 ? "partial" : existing.evidence_status,
+    image_status: imageBlocked ? "needs_review" : existing.image_status,
+    copy_status: "needs_review",
+    last_generated_at: String(meta.researchedAt || now),
+    review_notes: `Research output exists: ${relative(process.cwd(), file)}. ${existing.review_notes}`,
+    quality_score: Math.max(existing.quality_score, sourceUrls.length >= 3 ? 68 : 55),
+    confidence_score: Math.max(existing.confidence_score, sourceUrls.length >= 3 ? 70 : 50),
+  });
+}
+
 function recommendedSkill(item: ContentInventoryItem) {
   if (item.channel === "commercial") return "directory-premium-lure-model";
   if (item.content_type === "activity_location") return "directory-activity-region-page";
@@ -276,6 +344,12 @@ const imageRegistry = items
     notes: item.image_status === "missing" ? "Image issue flagged by audit." : "Needs image provenance review.",
   }));
 
+const inventoryParsed = z.array(contentInventoryItemSchema).safeParse(items);
+if (!inventoryParsed.success) {
+  console.error(`[content-ops] FATAL: generated inventory failed schema validation — refusing to write content-inventory.json.\n${formatValidationError(inventoryParsed.error)}`);
+  process.exit(1);
+}
+
 ensureDir(OPS_DIR);
 ensureDir(TASKS_DIR);
 writeFileSync(join(OPS_DIR, "content-inventory.csv"), inventoryToCsv(items), "utf8");
@@ -290,6 +364,15 @@ writeFileSync(join(OPS_DIR, "status-report.md"), report, "utf8");
 console.log(`Content ops inventory generated: ${items.length} items`);
 console.log(`Task queue generated: ${tasks.length} tasks`);
 console.log(`Report: ${join(OPS_DIR, "status-report.md")}`);
+
+if (validationFailures.length > 0) {
+  console.warn(`\n[content-ops] WARNING: ${validationFailures.length} input file(s) failed schema validation and were skipped:`);
+  for (const file of validationFailures) {
+    console.warn(`  - ${relative(process.cwd(), file)}`);
+  }
+} else {
+  console.log("All input files passed schema validation.");
+}
 
 function countBy<T extends string>(values: T[]) {
   return values.reduce<Record<T, number>>((acc, value) => {

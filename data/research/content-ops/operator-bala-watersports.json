@@ -1,0 +1,291 @@
+{
+  "_meta": {
+    "task": "content-ops-002-operator-bala-watersports",
+    "contentItem": "operator-bala-watersports",
+    "contentType": "operator",
+    "slug": "bala-watersports",
+    "route": "/directory/bala-watersports",
+    "commercialTier": "strategic_big_player_or_launch_priority",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_minor_flags"
+  },
+
+  "proposedOperatorData": {
+    "name": "Bala Adventure & Watersports",
+    "legalName": "BALA ADVENTURE & WATERSPORTS LIMITED",
+    "companiesHouseNumber": "04640347",
+    "companiesHouseSource": "https://find-and-update.company-information.service.gov.uk/company/04640347",
+    "slug": "bala-watersports",
+    "website": "https://www.balawatersports.com",
+    "websiteNote": "Active as of June 2026. Verified directly.",
+
+    "contact": {
+      "phone": "01678 521615",
+      "phoneSource": "https://www.balawatersports.com/get-in-touch/ and https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0679",
+      "phoneNote": "CORRECTION: existing CSV data holds 01678 521059 — this does NOT match the number on the operator's own website or the HSE AALA record. 01678 521615 is consistent across balawatersports.com, AALA, Visit Wales, and TripAdvisor. The old number needs human review before removing.",
+      "email": "hello@balawatersports.com",
+      "emailSource": "https://www.balawatersports.com/get-in-touch/",
+      "emailNote": "Displayed on operator's own contact and about-us pages. Older Visit Wales record lists info@balawatersports.com — likely an alias or legacy address; do not publish info@ without verifying. A Gmail address (balawatersports@gmail.com) appeared in a single search snippet — do not publish.",
+      "address": {
+        "line1": "Bala Lake Foreshore",
+        "locality": "Bala",
+        "county": "Gwynedd",
+        "postcode": "LL23 7SR",
+        "country": "Wales"
+      },
+      "addressSource": "https://www.balawatersports.com/how-to-find-us/ and https://www.balawatersports.com/get-in-touch/",
+      "addressNote": "Two postcodes in circulation: LL23 7SR (trading/foreshore location — use this for directory) and LL23 7RY (Companies House registered address at directors' home on Ffrydan Road — not for public listing)."
+    },
+
+    "location": {
+      "lat": 52.910,
+      "lng": -3.590,
+      "latLngNote": "From existing CSV data — plausible for Bala Lake foreshore but should be verified against Google Maps before publishing.",
+      "region": "snowdonia",
+      "settingNote": "On the north shore of Llyn Tegid (Bala Lake), the largest natural lake in Wales and the only natural lake in Snowdonia / Eryri National Park. Located within Eryri National Park boundary."
+    },
+
+    "owners": {
+      "names": "Mark and Sarah Lind",
+      "ownershipType": "Family-run",
+      "confidence": "MEDIUM",
+      "source": "https://visitbala.org.uk/things-to-do/view/bala_adventure_and_water_sports_centre — cross-referenced with operator About Us page"
+    },
+
+    "description": {
+      "short": "Bala Adventure & Watersports is a family-run watersports and multi-activity centre on the shores of Llyn Tegid (Bala Lake) in Eryri National Park. An RYA Training Centre with an AALA licence, it offers kayaking, canoeing, windsurfing, sailing, powerboating, SUP, white-water rafting, rock climbing, abseiling, gorge walking, and guided mountain biking — serving families, school groups, and corporate teams year-round.",
+      "shortNote": "Drafted from verified facts. Needs editorial tone review before publishing.",
+      "descriptionSource": "Facts drawn from https://www.balawatersports.com/adventure-activities-watersports/ and https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0679"
+    },
+
+    "activities": {
+      "watersports": [
+        "Kayaking",
+        "Canoeing",
+        "Windsurfing",
+        "Sailing (RYA courses)",
+        "Powerboating (RYA courses)",
+        "White-water rafting (lower, min age 10; upper, min age 12)",
+        "Stand-up paddleboarding (SUP)",
+        "SUP yoga",
+        "Improvised raft building",
+        "Boat hire (hourly, half-day, full-day)"
+      ],
+      "land": [
+        "Rock climbing",
+        "Abseiling",
+        "Gorge walking / gorge scrambling",
+        "Canyoning",
+        "Hill and mountain walking",
+        "Mountain biking (guided)"
+      ],
+      "other": [
+        "Gift vouchers",
+        "Team building / corporate events",
+        "Schools and educational group programmes",
+        "RYA Radio Operator training"
+      ],
+      "activitiesSource": "https://www.balawatersports.com/adventure-activities-watersports/ — cross-checked against AALA licensed activities at https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0679",
+      "activitiesNote": "AALA licence covers: Abseiling, Canoeing, Canyoning, Gorge scrambling, Hill and mountain walking, Improvised rafting, Kayaking, Mega/giant SUP, Rock climbing, Sailing (excl. foiling), SUP (excl. foiling), Windsurfing (excl. foiling). Powerboating appears on the website but is not listed in the AALA activities — it is RYA-regulated separately. Verify before publishing powerboating as a licensed adventure activity."
+    },
+
+    "openingHours": {
+      "season": "Year-round. High season April–October. Closed approximately two weeks over Christmas.",
+      "seasonSource": "https://www.balawatersports.com/faqs/",
+      "dailyHoursNote": "Per Google Maps data (via Wanderlog, accessed June 2026): Mon/Wed/Fri 9AM–4PM, Tue/Thu 10AM–4PM, Sat–Sun 9AM–5PM. Office hours 9AM–5PM. Equipment hire starts from 10AM on the hour. Hours are subject to seasonal variation — verify directly with operator before publishing.",
+      "dailyHoursSource": "https://wanderlog.com/place/details/3931255/bala-adventure-and-watersports-centre (aggregates Google Maps)"
+    },
+
+    "ratings": {
+      "google": {
+        "rating": "4.7",
+        "reviewCount": 933,
+        "confidence": "MEDIUM",
+        "source": "https://wanderlog.com/place/details/3931255/bala-adventure-and-watersports-centre",
+        "note": "Wanderlog aggregates Google Maps data. Could not verify directly against live Google Maps. Treat as indicative — verify before publishing."
+      },
+      "tripadvisor": {
+        "rating": "4.6",
+        "reviewCount": 145,
+        "rankingInArea": "#3 of 8 Outdoor Activities in Bala",
+        "url": "https://www.tripadvisor.com/Attraction_Review-g672155-d2547794-Reviews-Bala_Adventure_and_Watersports-Bala_Snowdonia_Eryri_National_Park_North_Wales_Wal.html",
+        "confidence": "HIGH"
+      }
+    },
+
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/BalaWatersports/",
+        "approxFollowers": "~3,784",
+        "confidence": "HIGH"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/balawatersports/",
+        "handle": "@balawatersports",
+        "confidence": "HIGH"
+      }
+    },
+
+    "accreditations": [
+      {
+        "body": "Adventure Activities Licensing Authority (AALA) / HSE",
+        "licenceNumber": "L176022",
+        "referenceNumber": "R0679",
+        "issueDate": "2025-07-11",
+        "expiryDate": "2027-07-10",
+        "licensedCategories": ["Climbing", "Watersports", "Trekking"],
+        "confidence": "HIGH",
+        "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0679",
+        "note": "Official government record. Licence valid through July 2027."
+      },
+      {
+        "body": "Royal Yachting Association (RYA)",
+        "status": "RYA Training Centre",
+        "coursesOffered": ["Sailing", "Windsurfing", "Powerboating", "RYA Radio Operator", "Canoeing", "Kayaking"],
+        "confidence": "HIGH",
+        "source": "https://www.balawatersports.com/ (RYA Training Centre logo displayed)",
+        "note": "RYA does not publish a public searchable register of Training Centres, so direct RYA-side verification was not possible. Claim is consistent across operator website and multiple third-party sources."
+      },
+      {
+        "body": "British Marine",
+        "status": "Member (unconfirmed)",
+        "confidence": "MEDIUM",
+        "source": "https://onthewater.co.uk/listing/w94vcm-bala-uk-bala-adventure-and-watersports-centre/",
+        "note": "Third-party directory claim only — not confirmed on operator's own website. Do not publish without verification."
+      }
+    ],
+
+    "tourismBodyListings": [
+      {
+        "body": "Visit Wales",
+        "url": "https://www.visitwales.com/activity/bala-adventure-watersports-2172454",
+        "confidence": "HIGH"
+      },
+      {
+        "body": "Visit Bala (Bala Tourism Partnership)",
+        "url": "https://visitbala.org.uk/things-to-do/view/bala_adventure_and_water_sports_centre",
+        "confidence": "HIGH"
+      },
+      {
+        "body": "Visit Snowdonia",
+        "url": "https://www.visitsnowdonia.info/bala-adventure-and-watersports",
+        "confidence": "HIGH",
+        "note": "URL returned 403 on direct fetch but confirmed via search index."
+      },
+      {
+        "body": "On The Water (UK paddlesports directory)",
+        "url": "https://onthewater.co.uk/listing/w94vcm-bala-uk-bala-adventure-and-watersports-centre/",
+        "confidence": "HIGH"
+      }
+    ]
+  },
+
+  "images": {
+    "coverImage": {
+      "status": "CONDITIONALLY_AVAILABLE",
+      "note": "No operator-specific image with a permissive licence was found. Three CC BY-SA 2.0 images from Geograph / Wikimedia Commons show activities on Llyn Tegid generally (not specifically at the Bala Adventure & Watersports foreshore). These could serve as a placeholder cover image with correct attribution, but they do not show operator branding. Preferred solution: request press/media images directly from the operator."
+    },
+    "logo": {
+      "status": "BLOCKED",
+      "note": "Logo is visible on the operator's website but is all-rights-reserved. Cannot use without operator permission. Request directly from hello@balawatersports.com."
+    },
+    "candidateImages": [
+      {
+        "description": "Stand Up Paddleboarders on Llyn Tegid — recent, shows SUP activity on the lake",
+        "photographer": "Jeremy Bolwell",
+        "date": "2024-05-04",
+        "licence": "CC BY-SA 2.0",
+        "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Stand_Up_Paddleboarders_on_Llyn_Tegid_-_Bala_Lake_-_geograph.org.uk_-_7773338.jpg",
+        "geographUrl": "https://www.geograph.org.uk/photo/7773338",
+        "attributionRequired": "Jeremy Bolwell / Geograph (CC BY-SA 2.0)",
+        "reuseConditions": "Attribution required; derivatives must carry same or compatible licence",
+        "bestFit": true,
+        "fitNote": "Most recent image (2024), shows SUP — one of the operator's headline activities. Strongly preferred if an operator-supplied image is unavailable."
+      },
+      {
+        "description": "Wind surfers preparing at Bala Lake",
+        "photographer": "Michael Garlick",
+        "date": "2019-04-29",
+        "licence": "CC BY-SA 2.0",
+        "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Bala_Lake,_Wind_surfers_preparing_-_geograph.org.uk_-_6158555.jpg",
+        "geographUrl": "https://www.geograph.org.uk/photo/6158555",
+        "attributionRequired": "Michael Garlick / Geograph (CC BY-SA 2.0)",
+        "reuseConditions": "Attribution required; derivatives must carry same or compatible licence",
+        "bestFit": false
+      },
+      {
+        "description": "Kayaks on Llyn Tegid",
+        "photographer": "Anthony Parkes",
+        "date": "2010-05-01",
+        "licence": "CC BY-SA 2.0",
+        "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Kayaks_on_Llyn_Tegid_-_geograph.org.uk_-_1838915.jpg",
+        "geographUrl": "https://www.geograph.org.uk/photo/1838915",
+        "attributionRequired": "Anthony Parkes / Geograph (CC BY-SA 2.0)",
+        "reuseConditions": "Attribution required; derivatives must carry same or compatible licence",
+        "bestFit": false,
+        "fitNote": "Older image (2010) — prefer the 2024 Jeremy Bolwell SUP image if using CC images."
+      }
+    ]
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Phone number correction: existing CSV holds 01678 521059; research finds 01678 521615 on the operator's website and AALA record",
+      "priority": "HIGH",
+      "action": "Verify which number is current by calling or emailing the operator before updating the directory"
+    },
+    {
+      "claim": "Google rating 4.7/5 from 933 reviews",
+      "priority": "MEDIUM",
+      "action": "Verify directly against live Google Maps before publishing — sourced via third-party aggregator"
+    },
+    {
+      "claim": "RYA Training Centre accreditation",
+      "priority": "MEDIUM",
+      "action": "RYA does not have a public register; confirm via operator or RYA directly before publishing as a verified badge"
+    },
+    {
+      "claim": "British Marine membership",
+      "priority": "LOW",
+      "action": "Not confirmed on operator website — verify before publishing"
+    },
+    {
+      "claim": "Opening hours (weekday/weekend split)",
+      "priority": "MEDIUM",
+      "action": "Google Maps hours sourced via Wanderlog aggregation — confirm directly with operator as hours vary seasonally"
+    },
+    {
+      "claim": "Powerboating listed as an activity",
+      "priority": "LOW",
+      "action": "Appears on operator website but not in AALA licence scope — verify whether this is RYA-regulated separately and safe to list"
+    },
+    {
+      "claim": "Lat/lng coordinates (52.910, -3.590)",
+      "priority": "LOW",
+      "action": "Sourced from existing CSV; verify against Google Maps pin for the foreshore location before publishing"
+    }
+  ],
+
+  "sources": [
+    { "label": "Bala Adventure & Watersports — Official Website", "url": "https://www.balawatersports.com/" },
+    { "label": "Bala Adventure & Watersports — About Us", "url": "https://www.balawatersports.com/about-us/" },
+    { "label": "Bala Adventure & Watersports — Get In Touch", "url": "https://www.balawatersports.com/get-in-touch/" },
+    { "label": "Bala Adventure & Watersports — Activities", "url": "https://www.balawatersports.com/adventure-activities-watersports/" },
+    { "label": "Bala Adventure & Watersports — FAQs", "url": "https://www.balawatersports.com/faqs/" },
+    { "label": "AALA Official Record — HSE Gov.uk (R0679)", "url": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0679" },
+    { "label": "Companies House — BALA ADVENTURE & WATERSPORTS LIMITED", "url": "https://find-and-update.company-information.service.gov.uk/company/04640347" },
+    { "label": "Visit Wales Listing", "url": "https://www.visitwales.com/activity/bala-adventure-watersports-2172454" },
+    { "label": "Visit Bala Listing", "url": "https://visitbala.org.uk/things-to-do/view/bala_adventure_and_water_sports_centre" },
+    { "label": "Visit Snowdonia Listing", "url": "https://www.visitsnowdonia.info/bala-adventure-and-watersports" },
+    { "label": "TripAdvisor — Bala Adventure and Watersports", "url": "https://www.tripadvisor.com/Attraction_Review-g672155-d2547794-Reviews-Bala_Adventure_and_Watersports-Bala_Snowdonia_Eryri_National_Park_North_Wales_Wal.html" },
+    { "label": "Wanderlog — Google Maps data aggregation", "url": "https://wanderlog.com/place/details/3931255/bala-adventure-and-watersports-centre" },
+    { "label": "On The Water UK Directory", "url": "https://onthewater.co.uk/listing/w94vcm-bala-uk-bala-adventure-and-watersports-centre/" },
+    { "label": "Facebook — BalaWatersports", "url": "https://www.facebook.com/BalaWatersports/" },
+    { "label": "Instagram — @balawatersports", "url": "https://www.instagram.com/balawatersports/" },
+    { "label": "Wikimedia Commons — SUP Paddleboarders on Llyn Tegid (CC BY-SA 2.0, Jeremy Bolwell, 2024)", "url": "https://commons.wikimedia.org/wiki/File:Stand_Up_Paddleboarders_on_Llyn_Tegid_-_Bala_Lake_-_geograph.org.uk_-_7773338.jpg" },
+    { "label": "Geograph — SUP Paddleboarders on Llyn Tegid (source)", "url": "https://www.geograph.org.uk/photo/7773338" },
+    { "label": "Wikimedia Commons — Wind surfers at Bala Lake (CC BY-SA 2.0, Michael Garlick, 2019)", "url": "https://commons.wikimedia.org/wiki/File:Bala_Lake,_Wind_surfers_preparing_-_geograph.org.uk_-_6158555.jpg" },
+    { "label": "Wikimedia Commons — Kayaks on Llyn Tegid (CC BY-SA 2.0, Anthony Parkes, 2010)", "url": "https://commons.wikimedia.org/wiki/File:Kayaks_on_Llyn_Tegid_-_geograph.org.uk_-_1838915.jpg" }
+  ]
+}

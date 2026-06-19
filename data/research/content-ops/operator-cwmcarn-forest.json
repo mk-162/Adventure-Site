@@ -1,0 +1,488 @@
+{
+  "_meta": {
+    "task": "content-ops-088-operator-cwmcarn-forest",
+    "contentItem": "operator-cwmcarn-forest",
+    "contentType": "operator",
+    "slug": "cwmcarn-forest",
+    "route": "/directory/cwmcarn-forest",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "priorResearchRef": "data/research/operators/cwmcarn-forest.json (researched 2026-02-06, used as primary source)",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "blockers_partially_resolved",
+    "identityConfidence": "HIGH — Cwmcarn Forest is a well-documented public forest managed by Caerphilly County Borough Council and Natural Resources Wales, with an official website and consistent external listings"
+  },
+
+  "knownBlockerResolution": {
+    "phone": {
+      "status": "RESOLVED",
+      "value": "01495 272001",
+      "source": "https://www.cwmcarnforest.co.uk/",
+      "crossRef": "content/mtb/centres.csv (internal — note: CSV contains malformed entry '01011495 272001'; the '0101' prefix is a data-entry error, correct number is 01495 272001)",
+      "note": "Phone consistently cited across cwmcarnforest.co.uk, NRW listing, and Mountain Bike Wales. Verify still current before publishing — Caerphilly Council services may have changed contact details."
+    },
+    "email": {
+      "status": "RESOLVED",
+      "value": "cwmcarn-vc@caerphilly.gov.uk",
+      "source": "https://www.cwmcarnforest.co.uk/",
+      "note": "Caerphilly CBC council domain email for the visitor centre. Consistent with managed-by relationship. Verify still active before publishing — council email addresses are reorganised periodically.",
+      "verifyManually": true
+    },
+    "coverImage": {
+      "status": "BLOCKED — LICENCE UNRESOLVED",
+      "detail": "The operator website (cwmcarnforest.co.uk) hosts images at paths such as /wp-content/themes/cwmcarn/images/home.jpg and /wp-content/uploads/2021/05/... These are copyright Caerphilly County Borough Council (or Cwmcarn Forest management). They may NOT be used without an explicit licence grant from the copyright holder. No CC-licensed cover image was confirmed for this operator in prior research or internal registries.",
+      "candidates": {
+        "wikimediaSearch": "https://commons.wikimedia.org/w/index.php?search=Cwmcarn+Forest&ns6=1",
+        "wikimediaCategory": "https://commons.wikimedia.org/wiki/Category:Cwmcarn_Forest",
+        "geographSearch": "https://www.geograph.org.uk/search.php?q=Cwmcarn+forest",
+        "openverseSearch": "https://openverse.org/search/images?q=Cwmcarn+Forest+Wales",
+        "note": "A human researcher must visit these pages to confirm whether any suitable CC BY-SA images exist and note exact licence, attribution, and file URL. Do not assume images exist without checking. Geograph images of Cwmcarn mountain bike trails are likely to exist under CC BY-SA 2.0 but specific files were not confirmed in this research session."
+      },
+      "actionRequired": "Search Wikimedia Commons and Geograph for CC-licensed images of Cwmcarn Forest trails or landscape. If none found, request a media pack from cwmcarn-vc@caerphilly.gov.uk citing the Adventure Wales directory listing."
+    },
+    "logo": {
+      "status": "BLOCKED — LICENCE UNRESOLVED",
+      "detail": "The Cwmcarn Forest logo SVG is hosted at https://www.cwmcarnforest.co.uk/wp-content/themes/cwmcarn/images/cwmcarn_logo.svg. This is copyright Caerphilly County Borough Council. No version of the logo is available under a free licence on Wikimedia Commons or similar repositories.",
+      "actionRequired": "Request logo permission from cwmcarn-vc@caerphilly.gov.uk or the Caerphilly Council communications team. Alternatively, use a text fallback until permission is obtained."
+    }
+  },
+
+  "proposedOperatorData": {
+    "name": "Cwmcarn Forest",
+    "slug": "cwmcarn-forest",
+    "website": "https://www.cwmcarnforest.co.uk/",
+    "websiteNote": "The canonical current domain. The MTB centres internal CSV references https://www.cwmcarn.co.uk (an older/secondary domain) — verify whether that domain redirects to cwmcarnforest.co.uk before using it in any listing.",
+    "websiteSource": "https://www.cwmcarnforest.co.uk/ — active as of prior research 2026-02-06",
+
+    "managedBy": {
+      "primaryAuthority": "Caerphilly County Borough Council",
+      "landManager": "Natural Resources Wales (NRW)",
+      "note": "Cwmcarn Forest is publicly managed — the visitor centre and Forest Drive are operated by Caerphilly County Borough Council; the forest estate is NRW land. This is not a private commercial operator. The editorial team should confirm whether 'unclassified_operator' is the appropriate commercial tier for a publicly managed attraction.",
+      "source": "https://www.cwmcarnforest.co.uk/ and https://naturalresources.wales/days-out/places-to-visit/south-east-wales/cwm-carn-forest/?lang=en",
+      "verifyManually": true
+    },
+
+    "contact": {
+      "phone": "01495 272001",
+      "phoneSource": "https://www.cwmcarnforest.co.uk/ (prior research 2026-02-06); cross-referenced content/mtb/centres.csv (malformed entry — see knownBlockerResolution.phone)",
+      "email": "cwmcarn-vc@caerphilly.gov.uk",
+      "emailSource": "https://www.cwmcarnforest.co.uk/ (prior research 2026-02-06)",
+      "address": {
+        "line1": "Cwmcarn Forest Drive",
+        "locality": "Crosskeys",
+        "county": "Caerphilly",
+        "postcode": "NP11 7FA",
+        "country": "Wales"
+      },
+      "addressSource": "https://www.cwmcarnforest.co.uk/ and content/mtb/centres.csv (internal)"
+    },
+
+    "location": {
+      "coordinatesNote": "TWO CONFLICTING COORDINATE SETS — requires human resolution before publishing:",
+      "set1": {
+        "lat": 51.6359449,
+        "lng": -3.1143582,
+        "source": "data/research/operators/cwmcarn-forest.json (Feb 2026 research)"
+      },
+      "set2": {
+        "lat": 51.6478,
+        "lng": -3.1089,
+        "source": "content/mtb/centres.csv (internal)"
+      },
+      "recommendation": "The two sets are approximately 1.5 km apart. Verify against the official postcode NP11 7FA using a geocoding service or Google Maps pin for the visitor centre car park before publishing coordinates.",
+      "verifyManually": true,
+      "region": "south_wales",
+      "directions": "M4 Junction 28, heading north on A467 past Risca and Crosskeys towards Abercarn. Turn right at fifth roundabout; Cwmcarn Forest centre is signposted. Nearest train station: Crosskeys (approx. 2 miles).",
+      "directionsSource": "data/research/operators/cwmcarn-forest.json (derived from cwmcarnforest.co.uk); cross-referenced content/mtb/centres.csv"
+    },
+
+    "openingHours": {
+      "visitorCentre": {
+        "easterToSeptember": "Daily 09:00–17:00",
+        "octoberToEaster": "Mon–Thu and Sat–Sun 09:00–17:00; Fri 09:00–16:30"
+      },
+      "forestDrive": {
+        "winterMode": "Weekends only, 10:00–14:00 (exit by 16:00)",
+        "note": "Forest Drive seasonal/winter hours may vary. Verify current times at https://www.cwmcarnforest.co.uk/ before publishing."
+      },
+      "source": "data/research/operators/cwmcarn-forest.json (sourced from cwmcarnforest.co.uk, Feb 2026)",
+      "verifyCurrentStatus": true
+    },
+
+    "description": {
+      "short": "Cwmcarn Forest is a publicly managed outdoor destination in the South Wales valleys, 10 minutes from M4 Junction 28. Set in a reclaimed mining landscape, it offers purpose-built mountain bike trails for all abilities, walking routes, a scenic 7-mile Forest Drive, a 4-star campsite, and a visitor centre with café. The legendary Twrch red trail and extreme-rated Y Mynydd downhill make it a destination for serious MTB riders as well as families.",
+      "shortNote": "Drafted from verified sources. Needs editorial review and length adjustment to match site conventions.",
+      "sourceBase": "https://www.cwmcarnforest.co.uk/, https://naturalresources.wales/days-out/places-to-visit/south-east-wales/cwm-carn-forest/?lang=en, https://www.visitwales.com/attraction/visitor-centre/cwmcarn-forest-and-visitor-centre-536431"
+    },
+
+    "activities": [
+      {
+        "name": "Mountain Biking (all grades)",
+        "detail": "Five purpose-built trails: blue, red, black, and extreme double-black",
+        "source": "https://www.cwmcarnforest.co.uk/"
+      },
+      {
+        "name": "Downhill MTB",
+        "detail": "Pedalhounds (black) and Y Mynydd (extreme double-black), designed by Phil Saxena",
+        "source": "data/research/operators/cwmcarn-forest.json (sourced from cwmcarnforest.co.uk)"
+      },
+      {
+        "name": "Walking and Hiking",
+        "detail": "Routes from 1-mile Nantcarn stream stroll to 9-mile 1807 Walk; includes Twmbarlwm Iron Age hillfort climb",
+        "source": "https://www.cwmcarnforest.co.uk/"
+      },
+      {
+        "name": "Forest Drive",
+        "detail": "7-mile scenic drive with eight stop-off points",
+        "source": "https://www.cwmcarnforest.co.uk/"
+      },
+      {
+        "name": "Camping and Glamping",
+        "detail": "Visit Wales 4-star campsite with glamping pods and lodges",
+        "source": "https://www.cwmcarnforest.co.uk/"
+      },
+      {
+        "name": "Wildlife Watching and Orienteering",
+        "detail": "Wildlife Explorer Challenge; family-friendly orienteering",
+        "source": "data/research/operators/cwmcarn-forest.json"
+      }
+    ],
+
+    "trails": {
+      "xc": [
+        {
+          "name": "Pwca",
+          "grade": "Blue / Moderate",
+          "type": "XC",
+          "source": "https://www.cwmcarnforest.co.uk/"
+        },
+        {
+          "name": "Twrch",
+          "grade": "Red / Difficult",
+          "type": "XC",
+          "distance_km": 17,
+          "elevationGain_m": 550,
+          "description": "Legendary trail, virtually entire route on purpose-built singletrack; rideable in all weather",
+          "source": "data/research/operators/cwmcarn-forest.json; cross-ref content/mtb/trails.csv"
+        },
+        {
+          "name": "Cafall",
+          "grade": "Red / Difficult",
+          "type": "XC",
+          "distance_km": 23,
+          "elevationGain_m": 700,
+          "description": "Tough climbs and tight hand-built singletrack with technical descents",
+          "source": "data/research/operators/cwmcarn-forest.json; cross-ref content/mtb/trails.csv"
+        }
+      ],
+      "downhill": [
+        {
+          "name": "Pedalhounds",
+          "grade": "Black / Severe",
+          "type": "Downhill",
+          "source": "https://www.cwmcarnforest.co.uk/"
+        },
+        {
+          "name": "Y Mynydd",
+          "grade": "Double Black / Extreme",
+          "type": "Downhill",
+          "description": "Designed by Phil Saxena; cited as one of the best DH venues in the UK",
+          "source": "data/research/operators/cwmcarn-forest.json",
+          "note": "'One of the best DH venues in the UK' is an editorial claim found in operator/third-party sources; flag for editorial review before publishing as fact."
+        }
+      ],
+      "trailStatusNote": "Trail operational status was not verified in this research session. Some trails at Cwmcarn have had closures in the past. Verify current open/closed status via https://www.cwmcarnforest.co.uk/ or Caerphilly Council trail updates before publishing trail listings.",
+      "verifyManually": true
+    },
+
+    "facilities": [
+      { "name": "Visitor Centre", "source": "https://www.cwmcarnforest.co.uk/" },
+      { "name": "Ravens Café", "detail": "Serves locally sourced meals, overlooks the river", "source": "data/research/operators/cwmcarn-forest.json" },
+      { "name": "Gift Shop", "source": "https://www.cwmcarnforest.co.uk/" },
+      { "name": "Toilets (including accessible)", "source": "https://www.cwmcarnforest.co.uk/" },
+      { "name": "Pay and Display Parking", "source": "content/mtb/centres.csv (parking_cost: £3)" },
+      {
+        "name": "Bike Hire (PS Cycles)",
+        "source": "data/research/operators/cwmcarn-forest.json",
+        "note": "PS Cycles is cited as the on-site bike hire provider. Verify this provider is still operating on site — bike hire arrangements at trail centres change.",
+        "verifyManually": true
+      },
+      { "name": "Bike Wash", "source": "content/mtb/centres.csv" },
+      {
+        "name": "Uplift Service (Cwmdown)",
+        "source": "data/research/operators/cwmcarn-forest.json",
+        "note": "Cwmdown is cited as the uplift provider. Verify this service is currently operating.",
+        "verifyManually": true
+      },
+      { "name": "Campsite (4-star Visit Wales)", "source": "https://www.cwmcarnforest.co.uk/" },
+      { "name": "Glamping Pods and Lodges", "source": "https://www.cwmcarnforest.co.uk/" },
+      { "name": "Adventure Playground", "source": "data/research/operators/cwmcarn-forest.json" },
+      { "name": "Picnic Areas and BBQ Spots", "source": "data/research/operators/cwmcarn-forest.json" }
+    ],
+
+    "pricing": {
+      "trailAccess": {
+        "note": "Trail access pricing not confirmed in this research session. Verify current policy at https://www.cwmcarnforest.co.uk/ — some trail centres charge day passes, others are free with parking.",
+        "verifyManually": true
+      },
+      "parking": {
+        "indicative": "£3.00",
+        "source": "content/mtb/centres.csv (parking_cost: 3)",
+        "note": "Single figure from internal CSV, not verified against a current Caerphilly Council published schedule. Do not publish without confirming current rates.",
+        "verifyManually": true
+      },
+      "forestDrive": {
+        "note": "A separate charge applies for the Forest Drive. Not confirmed in this research session. Verify at https://www.cwmcarnforest.co.uk/.",
+        "verifyManually": true
+      }
+    },
+
+    "reviews": {
+      "google": {
+        "rating": 4.8,
+        "reviewCount": 1477,
+        "source": "data/research/operators/cwmcarn-forest.json (Feb 2026)",
+        "note": "Indicative only — rating and review count will have changed since Feb 2026."
+      },
+      "alltrails": {
+        "rating": 4.0,
+        "reviewCount": 492,
+        "source": "data/research/operators/cwmcarn-forest.json (Feb 2026)"
+      },
+      "komoot": {
+        "rating": 4.3,
+        "source": "data/research/operators/cwmcarn-forest.json (Feb 2026)"
+      }
+    },
+
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/cwmcarnforest/",
+        "source": "data/research/operators/cwmcarn-forest.json (from cwmcarnforest.co.uk)"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/explore/locations/25428148/cwmcarn-forest-drive/",
+        "note": "This appears to be a location tag, not a dedicated @cwmcarnforest account. Verify whether an official Instagram handle exists.",
+        "source": "data/research/operators/cwmcarn-forest.json",
+        "verifyManually": true
+      },
+      "youtube": {
+        "url": "https://www.youtube.com/playlist?list=PLsxHEf6LxVbEGJPDBEN0taNkY1xwdAxjH",
+        "source": "data/research/operators/cwmcarn-forest.json"
+      }
+    },
+
+    "externalListings": [
+      {
+        "org": "Official Operator Website",
+        "url": "https://www.cwmcarnforest.co.uk/"
+      },
+      {
+        "org": "Natural Resources Wales",
+        "url": "https://naturalresources.wales/days-out/places-to-visit/south-east-wales/cwm-carn-forest/?lang=en"
+      },
+      {
+        "org": "Visit Wales",
+        "url": "https://www.visitwales.com/attraction/visitor-centre/cwmcarn-forest-and-visitor-centre-536431"
+      },
+      {
+        "org": "Mountain Bike Wales",
+        "url": "https://www.mbwales.com/agents/cwmcarn/"
+      },
+      {
+        "org": "Valleys Regional Park",
+        "url": "https://valleysregionalpark.wales/gateways/cwmcarn-forest/"
+      }
+    ]
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "operatorLogoUrl": "https://www.cwmcarnforest.co.uk/wp-content/themes/cwmcarn/images/cwmcarn_logo.svg",
+      "licenceStatus": "Copyright Caerphilly County Borough Council — NOT freely licensed",
+      "action": "Request logo permission (media pack) from cwmcarn-vc@caerphilly.gov.uk or Caerphilly Council communications. Alternatively use a text/placeholder fallback until permission is confirmed in writing."
+    },
+    "cover": {
+      "status": "BLOCKED — pending CC-licensed candidate verification",
+      "operatorSiteImages": [
+        "https://www.cwmcarnforest.co.uk/wp-content/themes/cwmcarn/images/home.jpg",
+        "https://www.cwmcarnforest.co.uk/wp-content/uploads/2021/05/CwmcarnForestDrive-135-300x200.jpg",
+        "https://www.cwmcarnforest.co.uk/wp-content/uploads/2021/05/CwmcarnForestDrive-60.jpg",
+        "https://www.cwmcarnforest.co.uk/wp-content/uploads/2021/07/CwmcarnForestDrive-100.jpg",
+        "https://www.cwmcarnforest.co.uk/wp-content/uploads/2020/10/Aerial-view-of-Cwmcarn-lodges-and-lake-smaller.jpg"
+      ],
+      "operatorImageLicenceStatus": "All images on cwmcarnforest.co.uk are copyright Caerphilly County Borough Council. Do NOT use without written permission.",
+      "ccCandidateSearchRequired": true,
+      "searchPaths": {
+        "wikimediaCommons": "https://commons.wikimedia.org/w/index.php?search=Cwmcarn+Forest&ns6=1",
+        "wikimediaCategory": "https://commons.wikimedia.org/wiki/Category:Cwmcarn_Forest",
+        "geograph": "https://www.geograph.org.uk/search.php?q=Cwmcarn+forest+mountain+bike",
+        "openverse": "https://openverse.org/search/images?q=Cwmcarn+Forest+Wales"
+      },
+      "note": "Geograph.co.uk hosts CC BY-SA 2.0 images of many Welsh trail centres and is the most likely source. A researcher must visit these pages, identify a suitable image showing the trails or forest, confirm the exact licence version and photographer attribution, and record the direct Wikimedia/Geograph file URL before this field can be populated.",
+      "action": "Assign a researcher to check the above search paths. If no suitable CC image is found, contact cwmcarn-vc@caerphilly.gov.uk to request a press/media image pack with licence grant for Adventure Wales directory listing use."
+    },
+    "gallery": {
+      "status": "BLOCKED — same licence constraints as cover image",
+      "note": "Operator website gallery images are copyright Caerphilly CBC. CC-licensed gallery candidates may exist on Geograph or Wikimedia but were not confirmed in this session. Same search paths as cover image apply."
+    }
+  },
+
+  "internalDataIssues": [
+    {
+      "issue": "Malformed phone in content/mtb/centres.csv",
+      "detail": "CSV field contains '01011495 272001'. The '0101' prefix is a data-entry error. Correct number is '01495 272001' per cwmcarnforest.co.uk. Fix the CSV entry separately.",
+      "file": "content/mtb/centres.csv",
+      "severity": "LOW"
+    },
+    {
+      "issue": "Coordinate discrepancy between internal data sources",
+      "detail": "data/research/operators/cwmcarn-forest.json has (51.6359449, -3.1143582); content/mtb/centres.csv has (51.6478, -3.1089). Difference is approx. 1.5 km. One set may refer to the visitor centre car park, the other to a trail head. Verify with postcode NP11 7FA via geocoding before publishing any map pin.",
+      "severity": "MEDIUM",
+      "verifyManually": true
+    },
+    {
+      "issue": "Old cwmcarn.co.uk domain in centres.csv",
+      "detail": "content/mtb/centres.csv lists website as https://www.cwmcarn.co.uk. The canonical current site is https://www.cwmcarnforest.co.uk/. Confirm whether cwmcarn.co.uk redirects to cwmcarnforest.co.uk before the CSV entry is relied upon.",
+      "severity": "LOW",
+      "verifyManually": true
+    }
+  ],
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Commercial tier: 'unclassified_operator' for a publicly managed forest",
+      "confidence": "HIGH",
+      "issue": "Cwmcarn Forest is managed by Caerphilly County Borough Council and NRW. It is a public attraction, not a private commercial operator. The 'unclassified_operator' commercial tier and commercial directory model may be inappropriate — same editorial question as Afan Forest Park (see content-ops-071).",
+      "action": "Editorial decision required: confirm whether publicly managed council/NRW attractions should appear in the commercial operator directory and under which tier."
+    },
+    {
+      "claim": "Phone 01495 272001 is current",
+      "confidence": "MODERATE",
+      "issue": "Cross-referenced from operator website (Feb 2026) and internal CSV (malformed but recoverable). Council contact numbers do change.",
+      "action": "Call 01495 272001 to confirm it connects to Cwmcarn Forest visitor centre before publishing."
+    },
+    {
+      "claim": "Email cwmcarn-vc@caerphilly.gov.uk is current",
+      "confidence": "MODERATE",
+      "issue": "Sourced from cwmcarnforest.co.uk (Feb 2026). Caerphilly Council emails can be reallocated or changed.",
+      "action": "Send a test enquiry or call to confirm the email is still active."
+    },
+    {
+      "claim": "Trail status: all 5 trails currently open",
+      "confidence": "LOW",
+      "issue": "Trail operational status was not verified in this research session. Trail closures for maintenance are common at Cwmcarn.",
+      "action": "Check https://www.cwmcarnforest.co.uk/ for current trail status and any closure notices before publishing trail listings."
+    },
+    {
+      "claim": "Uplift service (Cwmdown) currently operating",
+      "confidence": "LOW",
+      "issue": "Cwmdown uplift service was cited in Feb 2026 research. Uplift services are commercially fragile and can cease operation.",
+      "action": "Verify current uplift status via cwmcarnforest.co.uk or direct contact."
+    },
+    {
+      "claim": "Bike hire provider is PS Cycles",
+      "confidence": "LOW",
+      "issue": "Cited in Feb 2026 research. On-site concession arrangements can change.",
+      "action": "Verify current bike hire provider via cwmcarnforest.co.uk or by calling the visitor centre."
+    },
+    {
+      "claim": "Y Mynydd is 'one of the best DH venues in the UK'",
+      "confidence": "LOW (editorial claim)",
+      "issue": "This is a promotional claim found in operator and community sources, not an independently verifiable fact.",
+      "action": "If publishing, attribute as 'widely regarded' or cite a specific source. Do not present as an objective fact."
+    },
+    {
+      "claim": "Instagram URL is an official account",
+      "confidence": "LOW",
+      "issue": "The Instagram URL in the research file is a location tag page (instagram.com/explore/locations/...), not a branded account. No dedicated @cwmcarnforest Instagram handle was confirmed.",
+      "action": "Search Instagram for @cwmcarnforest or @cwmcarnforestdrive to find any official account. If none exists, omit Instagram from the directory listing."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.cwmcarnforest.co.uk/",
+      "description": "Official operator website — contact, activities, trails, facilities, opening hours, social media",
+      "accessedAt": "2026-02-06",
+      "note": "Prior research; not re-verified in this session"
+    },
+    {
+      "url": "https://naturalresources.wales/days-out/places-to-visit/south-east-wales/cwm-carn-forest/?lang=en",
+      "description": "NRW official listing — managed estate, general activities",
+      "accessedAt": "2026-02-06",
+      "note": "Prior research; not re-verified in this session"
+    },
+    {
+      "url": "https://www.mbwales.com/agents/cwmcarn/",
+      "description": "Mountain Bike Wales — trail grades, contact cross-reference",
+      "accessedAt": "2026-02-06",
+      "note": "Prior research; not re-verified in this session"
+    },
+    {
+      "url": "https://www.visitwales.com/attraction/visitor-centre/cwmcarn-forest-and-visitor-centre-536431",
+      "description": "Visit Wales official listing",
+      "accessedAt": "2026-02-06",
+      "note": "Prior research; not re-verified in this session"
+    },
+    {
+      "url": "https://valleysregionalpark.wales/gateways/cwmcarn-forest/",
+      "description": "Valleys Regional Park — gateway listing",
+      "accessedAt": "2026-02-06",
+      "note": "Prior research; not re-verified in this session"
+    },
+    {
+      "url": "data/research/operators/cwmcarn-forest.json",
+      "description": "Internal prior research file — primary source for this task; originally researched 2026-02-06",
+      "type": "internal"
+    },
+    {
+      "url": "content/mtb/centres.csv",
+      "description": "Internal MTB centres CSV — cross-reference for coordinates, parking cost, facilities flags, phone (malformed entry noted)",
+      "type": "internal"
+    },
+    {
+      "url": "content/mtb/trails.csv",
+      "description": "Internal MTB trails CSV — cross-reference for Twrch (17km, 550m) and Cafall (23km, 700m) trail data",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirmed operator-cwmcarn-forest entry, unclassified_operator tier, missing image/contact fields",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/image-registry.json",
+      "description": "Internal image registry — confirmed image_status: missing for operator-cwmcarn-forest",
+      "type": "internal"
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "The four known blockers are now partially resolved: phone and email are documented with sources from the official operator website. Cover image and logo remain blocked — the operator website images are copyright Caerphilly County Borough Council and no CC-licensed alternatives were confirmed in this session. A human QA step is needed to: (1) verify phone/email are still current; (2) resolve the coordinate discrepancy; (3) search Wikimedia/Geograph for CC-licensed images; (4) confirm trail and uplift operational status; (5) make the editorial decision on commercial tier for a publicly managed attraction.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Cover image and logo unavailable under free licence",
+      "detail": "The operator website hosts images copyright Caerphilly County Borough Council. No CC-licensed cover image or logo was confirmed in this research session. Image registry status remains 'missing'. A researcher must check Wikimedia Commons, Geograph, and Openverse for CC BY-SA images of Cwmcarn Forest, or contact cwmcarn-vc@caerphilly.gov.uk to request a media pack with explicit licence grant. Until resolved, the listing cannot go live with imagery.",
+      "severity": "HIGH",
+      "action": "Search https://commons.wikimedia.org/wiki/Category:Cwmcarn_Forest and https://www.geograph.org.uk/search.php?q=Cwmcarn+forest — then record confirmed CC candidate file URL, licence version, and photographer credit in this file."
+    },
+    {
+      "rank": 2,
+      "blocker": "Commercial tier classification requires editorial decision",
+      "detail": "Cwmcarn Forest is a publicly managed attraction operated by Caerphilly County Borough Council and NRW — not a private commercial operator. The 'unclassified_operator' commercial tier in the commercial directory may be incorrect. The same issue was flagged for Afan Forest Park (content-ops-071). An editorial policy decision is needed on whether council/NRW-managed attractions should appear in the commercial directory and under what tier, before this page can be correctly classified and published.",
+      "severity": "HIGH",
+      "action": "Raise with editorial lead. Reference the Afan Forest Park precedent (content-ops-071). Decision needed before sign-off."
+    },
+    {
+      "rank": 3,
+      "blocker": "Trail and service operational status unverified",
+      "detail": "Trail closure/diversion status for all five trails was not verified in this session. The uplift service (Cwmdown) and bike hire provider (PS Cycles) were last checked in Feb 2026 and may have changed. Publishing stale trail or service data risks user safety and trust. Requires a visit to cwmcarnforest.co.uk or a call to 01495 272001 to confirm all five trails are open and the uplift/hire services are currently operating.",
+      "severity": "MEDIUM",
+      "action": "Check https://www.cwmcarnforest.co.uk/ for current trail status, uplift availability, and bike hire provider before publishing trail/service details."
+    }
+  ]
+}

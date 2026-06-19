@@ -1,0 +1,513 @@
+{
+  "_meta": {
+    "task": "content-ops-078-operator-blue-ocean-activities",
+    "contentItem": "operator-blue-ocean-activities",
+    "contentType": "operator",
+    "slug": "blue-ocean-activities",
+    "route": "/directory/blue-ocean-activities",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "substantially_complete_with_verification_flags",
+    "identityConfidence": "HIGH — operator confirmed via official website, Visit Wales listing, TripAdvisor, Yumping, and internal CSV cross-reference"
+  },
+
+  "proposedOperatorData": {
+    "name": "Blue Ocean Activities",
+    "nameVariants": [
+      "Blue Ocean Activities & Events",
+      "Blue Ocean Activities & Adventure"
+    ],
+    "nameNote": "The main website domain and TripAdvisor listing use 'Blue Ocean Activities'. The Facebook page uses 'Blue Ocean Activities & Events'. The Visit Mid Wales and internal climbing.csv entries use 'Blue Ocean Activities & Adventure'. The directory slug is 'blue-ocean-activities'. Human editor should standardise to the most current trading name — the homepage title 'Blue Ocean Activities' (without suffix) is recommended as the canonical display name.",
+    "slug": "blue-ocean-activities",
+    "website": "https://www.blueoceanactivities.co.uk",
+    "websiteNote": "Active as of June 2026. Copyright footer reads '© 2023 Blue Ocean. All Rights Reserved.' — the site may not have been updated since 2023. A separate corporate/team events microsite exists at https://blueocean-teamevents.co.uk.",
+    "websiteSource": "https://www.blueoceanactivities.co.uk/",
+    "teamEventsWebsite": "https://blueocean-teamevents.co.uk",
+    "teamEventsWebsiteNote": "Dedicated site for corporate team events. Confirm whether this domain is still active.",
+    "foundedApprox": "c.2008",
+    "foundedNote": "Multiple third-party sources state 'since 2008'. The operator's own website says 'over a decade of experience' without specifying a founding year. The copyright year (2023) does not help. The Visit Mid Wales listing says '12 years', while the Outdoor Nation listing says 'over 15 years'. The 2008 figure is plausible given these ranges but requires direct confirmation from the operator.",
+    "foundedSource": "Inferred from third-party search summary ('since 2008'). Verify with operator.",
+    "contact": {
+      "phone": "07710981757",
+      "phoneNote": "This number is listed on the operator's own contact page (https://www.blueoceanactivities.co.uk/contact/) with the note 'for groups of 6+'. Two other phone numbers appear in third-party listings: 0845 0573588 (Visit Mid Wales, Yumping) and 07557 913 809 (Visit Mid Wales). All three numbers require verification — call before publishing to confirm which is the current primary contact.",
+      "phoneSource": "https://www.blueoceanactivities.co.uk/contact/",
+      "phoneAlternate1": "0845 0573588",
+      "phoneAlternate1Source": "https://www.visitmidwales.co.uk/things-to-do/blue-ocean-activities-and-adventure-p1727731",
+      "phoneAlternate2": "07557 913 809",
+      "phoneAlternate2Source": "https://www.visitmidwales.co.uk/things-to-do/blue-ocean-activities-and-adventure-p1727731",
+      "email": "info@blueoceanactivities.co.uk",
+      "emailNote": "Confirmed on operator website contact page and in internal climbing.csv. The website also provides a booking form for groups of 4+ and an open-events booking page for smaller groups.",
+      "emailSource": "https://www.blueoceanactivities.co.uk/contact/ and content/operators/climbing.csv (internal)",
+      "address": {
+        "line1": "2C Heol-Y-Deri",
+        "locality": "Rhiwbina",
+        "town": "Cardiff",
+        "postcode": "CF14 6HF",
+        "country": "Wales",
+        "addressNote": "VERIFY: The contact page (https://www.blueoceanactivities.co.uk/contact/) shows 2C Heol-Y-Deri; Yumping records '2B Heol-Y-Deri' (possible transcription error). The Wheree directory lists this as 'Rhiwbina Suburb, Cardiff County'. This is the administrative/registered address. The Visit Mid Wales listing shows the postcode SA11 5NU (Neath/Aberdulais area, near Dinas Rock) which may be the operational base near the Brecon Beacons rather than the registered address. Human editor must confirm which address to publish."
+      },
+      "addressSource": "https://www.blueoceanactivities.co.uk/contact/",
+      "addressDiscrepancyNote": "Three address variants in sources: (1) 2C Heol-Y-Deri CF14 6HF Cardiff (operator contact page); (2) 2B Heol-Y-Deri CF14 6HF Cardiff (Yumping — likely typo); (3) SA11 5NU (Visit Mid Wales — operational area near Dinas Rock/Neath, not a full street address)."
+    },
+    "location": {
+      "lat": 51.480,
+      "lng": -3.180,
+      "latLngNote": "Approximate coordinates from internal climbing.csv matching 'Cardiff, South Wales' locality. These represent the general service area, not the street address pin. CF14 6HF (Rhiwbina) corresponds to approximately 51.536, -3.191 — do not use the internal CSV coordinates as a business pin without manual verification.",
+      "latLngSource": "content/operators/climbing.csv (internal data file)",
+      "region": "south_wales",
+      "locality": "Cardiff (administrative base); Brecon Beacons, Gower, Pembrokeshire (operational areas)",
+      "operationalAreas": [
+        {
+          "name": "Brecon Beacons National Park",
+          "activities": "Canyoning, gorge walking, caving (Porth Yr Ogof), abseiling, rock climbing, survival skills",
+          "keyLocation": "Dinas Rock",
+          "source": "https://www.blueoceanactivities.co.uk/activities/"
+        },
+        {
+          "name": "Gower Peninsula",
+          "activities": "Coasteering",
+          "source": "https://www.blueoceanactivities.co.uk/activities/"
+        },
+        {
+          "name": "Pembrokeshire",
+          "activities": "Coasteering",
+          "keyLocations": ["Tenby", "St Davids"],
+          "source": "https://www.blueoceanactivities.co.uk/coasteering-wales/"
+        },
+        {
+          "name": "Merthyr Tydfil / Morlais Quarries",
+          "activities": "Rock climbing",
+          "source": "https://www.blueoceanactivities.co.uk/activities/"
+        }
+      ]
+    },
+    "description": {
+      "short": "Blue Ocean Activities is a Cardiff-based outdoor adventure company offering guided canyoning, gorge walking, coasteering, caving, abseiling, and white water rafting across South Wales and the Brecon Beacons National Park. With AALA-licensed instructors and over a decade of experience, they cater to groups of all abilities including stag and hen parties, corporate teams, families, and youth groups.",
+      "shortNote": "Drafted from verified website content and cross-referenced against TripAdvisor, Visit Mid Wales, and Yumping. Needs editorial review before publishing. Do not use the phrase 'since 2008' without direct confirmation from the operator.",
+      "shortSource": "https://www.blueoceanactivities.co.uk/, https://www.blueoceanactivities.co.uk/activities/, https://www.visitmidwales.co.uk/things-to-do/blue-ocean-activities-and-adventure-p1727731",
+      "full": "Blue Ocean Activities is a South Wales adventure company based in Cardiff, offering a wide range of outdoor pursuits for groups, families, corporate teams, and special occasion parties including stag and hen weekends. Operating across the Brecon Beacons National Park, the Gower Peninsula, and the Pembrokeshire coast, all activities are led by qualified instructors with extensive experience in their disciplines.\n\nTheir flagship activity is canyoning in the Brecon Beacons — walking, climbing, jumping, abseiling, and swimming through gorges and waterfalls in one of the UK's premier adventure landscapes. Gorge walking and gorge scrambling take place at Dinas Rock, while caving sessions are held at Porth Yr Ogof, one of the most popular cave systems in the National Park. Coasteering sessions run along the South Wales coast including the Gower Peninsula, Tenby, and St Davids in Pembrokeshire. Additional activities include rock climbing on crags in the Brecon Beacons and Morlais Quarries in Merthyr Tydfil, abseiling, white water rafting on a former British Championships course (approximately 10km, 2.5 hours), surf kayaking, bodyboarding, survival skills and wild camping, corporate team events, and health and wellness days.\n\nBlue Ocean Activities holds an Adventure Activities Licensing Authority (AALA) licence, which permits them to run regulated activities for young people under 18. They are affiliated with Visit Wales, Day Out With The Kids (DOWTK), Great Days Out UK, and the South Wales Outdoor Activity Providers Group. All equipment — including wetsuits, helmets, and buoyancy aids — is provided for relevant activities.\n\nOn TripAdvisor, Blue Ocean Activities is rated 4.9 out of 5 from over 700 reviews, ranked #3 of 62 Outdoor Activities in Cardiff, and has won the TripAdvisor Travellers' Choice Award for eight consecutive years, including 2026.",
+      "fullNote": "Drafted from verified website content and third-party sources. Needs editorial review. The founding year claim has been omitted from the full description pending direct confirmation. The TripAdvisor review count and ranking should not be published verbatim as these change continuously — a general statement ('consistently rated among Wales's top outdoor adventure providers') is safer for a static directory page."
+    },
+    "activities": [
+      {
+        "name": "Canyoning",
+        "detail": "Walking, climbing, jumping, abseiling, and swimming through rivers, gorges, and waterfalls in the Brecon Beacons National Park",
+        "location": "Brecon Beacons National Park",
+        "source": "https://www.blueoceanactivities.co.uk/activities/"
+      },
+      {
+        "name": "Gorge Walking / Gorge Scrambling",
+        "detail": "Scrambling, climbing, crawling, and waterfall jumps in the Brecon Beacons; meeting point: Dinas Rock",
+        "location": "Brecon Beacons National Park (Dinas Rock)",
+        "source": "https://www.blueoceanactivities.co.uk/activities/"
+      },
+      {
+        "name": "Coasteering",
+        "detail": "Climbing, scrambling, traversing, cliff jumping, and swimming along the South Wales coast. From £40 per person.",
+        "locations": ["Gower Peninsula (Swansea)", "Tenby (Pembrokeshire)", "St Davids (Pembrokeshire)"],
+        "source": "https://www.blueoceanactivities.co.uk/activities/ and https://www.blueoceanactivities.co.uk/coasteering-wales/"
+      },
+      {
+        "name": "Caving",
+        "detail": "Walking, scrambling, crawling, and sliding through cave passages. Equipment provided: wetsuit/caving suit, helmet, head torch.",
+        "location": "Porth Yr Ogof, Brecon Beacons National Park",
+        "source": "https://www.blueoceanactivities.co.uk/activities/"
+      },
+      {
+        "name": "Abseiling",
+        "detail": "Multiple descents on crags in the Brecon Beacons",
+        "location": "Brecon Beacons National Park",
+        "source": "https://www.blueoceanactivities.co.uk/activities/"
+      },
+      {
+        "name": "Rock Climbing",
+        "detail": "30–60ft crags for beginners and intermediate climbers",
+        "locations": ["Brecon Beacons National Park", "Morlais Quarries, Merthyr Tydfil"],
+        "source": "https://www.blueoceanactivities.co.uk/activities/"
+      },
+      {
+        "name": "White Water Rafting",
+        "detail": "Approximately 10km, 2.5 hours, Grade 1–3. Venue is a former British Championships site.",
+        "source": "https://www.blueoceanactivities.co.uk/activities/"
+      },
+      {
+        "name": "Surf Kayaking",
+        "source": "https://www.blueoceanactivities.co.uk/activities/"
+      },
+      {
+        "name": "Bodyboarding",
+        "location": "South Wales coast",
+        "source": "https://www.blueoceanactivities.co.uk/activities/"
+      },
+      {
+        "name": "Survival Skills & Wild Camping",
+        "detail": "Shelter building, fire management, wilderness techniques on private land",
+        "location": "Brecon Beacons National Park",
+        "source": "https://www.blueoceanactivities.co.uk/activities/"
+      },
+      {
+        "name": "Corporate Team Activities",
+        "detail": "Mobile service available throughout UK. Includes raft building and racing.",
+        "source": "https://www.blueoceanactivities.co.uk/activities/ and https://blueocean-teamevents.co.uk"
+      },
+      {
+        "name": "Stag & Hen Weekends",
+        "detail": "Activity packages for groups; TripAdvisor Travellers' Choice Award winner.",
+        "source": "https://www.blueoceanactivities.co.uk/stag-activities-cardiff/"
+      },
+      {
+        "name": "Sports Day",
+        "detail": "Competitive school-style games for all ages and abilities",
+        "source": "https://www.blueoceanactivities.co.uk/activities/"
+      },
+      {
+        "name": "Health & Wellness Days",
+        "detail": "Coastal walks/runs, cold-water dips, bodyboarding, hot drinks. Wetsuits and buoyancy aids provided.",
+        "source": "https://www.blueoceanactivities.co.uk/activities/"
+      }
+    ],
+    "accreditations": [
+      {
+        "name": "AALA",
+        "full": "Adventure Activities Licensing Authority",
+        "detail": "Licenced to deliver regulated adventure activities for young people under 18",
+        "source": "https://www.blueoceanactivities.co.uk/activities/ and https://www.visitmidwales.co.uk/things-to-do/blue-ocean-activities-and-adventure-p1727731"
+      },
+      {
+        "name": "Visit Wales",
+        "detail": "Listed affiliate",
+        "source": "https://www.blueoceanactivities.co.uk/ (footer)",
+        "listingUrl": "https://www.visitwales.com/activity/activity/blue-ocean-activities-529471",
+        "listingNote": "The Visit Wales listing URL returned a 404 during research. The operator still displays the Visit Wales logo in their footer. Human editor should verify the listing is still active on visitwales.com."
+      },
+      {
+        "name": "Day Out With The Kids (DOWTK)",
+        "detail": "Approved by DOWTK family activity platform",
+        "source": "https://www.blueoceanactivities.co.uk/ (footer)"
+      },
+      {
+        "name": "Great Days Out UK",
+        "source": "https://www.blueoceanactivities.co.uk/ (footer)"
+      },
+      {
+        "name": "South Wales Outdoor Activity Providers Group",
+        "source": "https://www.blueoceanactivities.co.uk/ (footer)"
+      },
+      {
+        "name": "WTTC Safe Travels 2022",
+        "detail": "World Travel & Tourism Council Safe Travels stamp, 2022",
+        "source": "https://www.visitmidwales.co.uk/things-to-do/blue-ocean-activities-and-adventure-p1727731",
+        "note": "This stamp dates from 2022 — it was a post-COVID health and safety certification. Confirm whether it is still current or has expired."
+      }
+    ],
+    "openingHours": {
+      "monday": "9:00 AM – 7:00 PM",
+      "tuesday": "9:00 AM – 5:00 PM",
+      "wednesday": "9:00 AM – 5:00 PM",
+      "thursday": "9:00 AM – 7:00 PM",
+      "friday": "9:00 AM – 5:00 PM",
+      "saturday": "9:00 AM – 5:00 PM",
+      "sunday": "10:00 AM – 4:00 PM (closed per some sources — verify)",
+      "note": "Hours sourced from TripAdvisor as of June 2026. Treat as indicative only. Activities are run year-round (booking essential). The Sunday status is unclear across sources — one TripAdvisor listing shows 'Closed' for Sunday; another shows 10:00 AM – 4:00 PM. Verify directly with operator.",
+      "source": "https://www.tripadvisor.co.uk/Attraction_Review-g186460-d3749954-Reviews-Blue_Ocean_Activities-Cardiff_South_Wales_Wales.html"
+    },
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "No Google Business Profile rating was confirmed during research — consistent with the task description ('no Google rating'). The operator website, all social media links, and third-party listings do not reference a Google Business Profile. A manual search on Google Maps for 'Blue Ocean Activities Cardiff CF14 6HF' is required to determine if a profile exists (claimed or unclaimed).",
+        "verifyManually": true,
+        "action": "Search Google Maps for 'Blue Ocean Activities Rhiwbina Cardiff CF14 6HF'. If an unclaimed profile exists, advise the operator to claim it via Google Business. If no profile exists, the operator should create one — it significantly increases discoverability."
+      },
+      "tripadvisor": {
+        "rating": 4.9,
+        "outOf": 5,
+        "reviewCount": 731,
+        "ranking": "#3 of 62 Outdoor Activities in Cardiff",
+        "award": "TripAdvisor Travellers' Choice 2026",
+        "awardConsecutiveYears": 8,
+        "url": "https://www.tripadvisor.co.uk/Attraction_Review-g186460-d3749954-Reviews-Blue_Ocean_Activities-Cardiff_South_Wales_Wales.html",
+        "note": "4.9/5 from 731 reviews as of June 2026 research. Eight consecutive Travellers' Choice Awards noted. Do not republish review counts or rankings verbatim — these change over time. Use a general statement instead: 'consistently among Wales's highest-rated adventure activity providers on TripAdvisor'.",
+        "source": "https://www.tripadvisor.co.uk/Attraction_Review-g186460-d3749954-Reviews-Blue_Ocean_Activities-Cardiff_South_Wales_Wales.html"
+      },
+      "trustindex": {
+        "aggregatedRating": 4.9,
+        "aggregatedReviews": 722,
+        "platforms": ["TripAdvisor"],
+        "certificate": "Top Rated Certificate (Trustindex)",
+        "url": "https://www.trustindex.io/reviews/www.blueoceanactivities.co.uk",
+        "note": "Trustindex aggregates TripAdvisor reviews — it is not an independent rating. Do not cite as a separate review platform.",
+        "source": "https://www.trustindex.io/reviews/www.blueoceanactivities.co.uk"
+      }
+    },
+    "pricing": {
+      "publiclyAvailable": true,
+      "pricesMustBeVerified": true,
+      "pricingNote": "Indicative prices sourced from the operator's website and Yumping. MUST be verified directly with the operator before publication. Seasonal prices change. The website copyright is 2023, suggesting content may not be current.",
+      "indicativePrices": [
+        {
+          "activity": "Coasteering",
+          "price": "From £40 per person",
+          "source": "https://www.blueoceanactivities.co.uk/activities/"
+        },
+        {
+          "activity": "Kayaking session at River Wye — Half Day",
+          "price": "From £25",
+          "source": "https://www.yumping.com/en/water-sports/blue-ocean-activities--e19690665",
+          "note": "Yumping cross-reference — may not reflect current pricing. Verify."
+        },
+        {
+          "activity": "Canyoning adventure — 3 hours",
+          "price": "From £38",
+          "source": "https://www.yumping.com/en/water-sports/blue-ocean-activities--e19690665",
+          "note": "Yumping cross-reference — verify with operator."
+        },
+        {
+          "activity": "Full price range",
+          "price": "£25 – £55+",
+          "source": "https://www.yumping.com/en/water-sports/blue-ocean-activities--e19690665"
+        }
+      ]
+    },
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/blueoceanactivitiesandevents",
+        "source": "https://www.blueoceanactivities.co.uk/contact/"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/blueoceanactivities/",
+        "handle": "@blueoceanactivities",
+        "source": "https://www.blueoceanactivities.co.uk/contact/"
+      },
+      "youtube": {
+        "url": "https://www.youtube.com/channel/UCH4q8pv6SQGlQdku-i7Exjg",
+        "source": "https://www.blueoceanactivities.co.uk/contact/"
+      }
+    },
+    "tourismListings": [
+      {
+        "site": "Visit Wales",
+        "url": "https://www.visitwales.com/activity/activity/blue-ocean-activities-529471",
+        "note": "URL returned 404 during June 2026 research. The operator still displays the Visit Wales logo. Verify whether the listing has been removed or the URL has changed."
+      },
+      {
+        "site": "Visit Mid Wales",
+        "url": "https://www.visitmidwales.co.uk/things-to-do/blue-ocean-activities-and-adventure-p1727731",
+        "note": "Active listing — contact details and accreditations cross-referenced."
+      },
+      {
+        "site": "TripAdvisor (UK)",
+        "url": "https://www.tripadvisor.co.uk/Attraction_Review-g186460-d3749954-Reviews-Blue_Ocean_Activities-Cardiff_South_Wales_Wales.html"
+      },
+      {
+        "site": "TripAdvisor (US)",
+        "url": "https://www.tripadvisor.com/Attraction_Review-g186460-d3749954-Reviews-Blue_Ocean_Activities-Cardiff_South_Wales_Wales.html"
+      },
+      {
+        "site": "Yumping",
+        "url": "https://www.yumping.com/en/water-sports/blue-ocean-activities--e19690665",
+        "note": "Lists address as 2B Heol-Y-Deri — may be a transcription error (operator website shows 2C)."
+      },
+      {
+        "site": "Outdoor Nation",
+        "url": "https://outdoornation.uk/providers/blue-ocean-activities/"
+      },
+      {
+        "site": "Outdooractive",
+        "url": "https://www.outdooractive.com/en/poi/mid-wales/blue-ocean-activities-gorge-walking-adventure-wales/808635744/"
+      }
+    ]
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "The operator's website displays a logo under '© 2023 Blue Ocean. All Rights Reserved.' No freely licensed version was found on Openverse, Unsplash, or Wikimedia Commons. The logo must be obtained directly from the operator under written permission.",
+      "actionRequired": "Contact Blue Ocean Activities at info@blueoceanactivities.co.uk to request a logo file for use on the Adventure Wales directory listing. Specify the intended use (non-commercial tourism directory) and the platform URL. Retain written confirmation."
+    },
+    "cover": {
+      "status": "CANDIDATE_AVAILABLE",
+      "recommendation": "One recently taken Wikimedia Commons CC BY-SA 4.0 image directly depicts coasteering in Pembrokeshire — one of Blue Ocean Activities' own operational areas. Taken June 2025, so contemporary. This is a suitable interim cover image pending operator-supplied photography. See candidate below.",
+      "candidates": [
+        {
+          "title": "Coasteering in Pembrokeshire",
+          "description": "Coasteering participants attempting to cross a channel near Abereiddi, Pembrokeshire Coast National Park",
+          "author": "Albert Tan (UserAlbert)",
+          "license": "CC BY-SA 4.0",
+          "licensedVia": "Wikimedia Commons",
+          "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Coasteering_in_Pembrokeshire.jpg",
+          "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Coasteering_in_Pembrokeshire.jpg",
+          "requiredAttribution": "Photo: Albert Tan / CC BY-SA 4.0 / via Wikimedia Commons",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "dateTaken": "2025-06-03",
+          "note": "This image depicts coasteering in Pembrokeshire — directly relevant to one of Blue Ocean Activities' own operational coasteering venues (St Davids / Pembrokeshire coast). The operator does not operate at Abereiddi specifically; this is generic Pembrokeshire coasteering imagery, not specific to Blue Ocean. Acceptable as a placeholder cover only. Do not caption it as depicting a Blue Ocean Activities session."
+        }
+      ],
+      "operatorPhotosNote": "The operator's website (blueoceanactivities.co.uk) and social media (Instagram: @blueoceanactivities, Facebook: blueoceanactivitiesandevents) contain activity photography. These are copyright © 2023 Blue Ocean and cannot be reproduced without written permission. Requesting a media pack is strongly recommended."
+    },
+    "gallery": {
+      "status": "BLOCKED_UNTIL_OPERATOR_PERMISSION",
+      "reason": "All website and social media photography is copyright © Blue Ocean Activities. The Wikimedia Commons coasteering image (above) could supplement a gallery but should not substitute for operator-supplied activity photos.",
+      "actionRequired": "Request a media pack (5–10 JPEGs at minimum 1200px wide, covering multiple activities) from the operator at info@blueoceanactivities.co.uk. Specify the platform and intended use."
+    },
+    "generalActionRequired": "Email info@blueoceanactivities.co.uk to request (1) a logo file and (2) a photography media pack for non-commercial use on the Adventure Wales directory at /directory/blue-ocean-activities. The Wikimedia Commons coasteering image (CC BY-SA 4.0 by Albert Tan, June 2025) is available as a cover placeholder in the interim."
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Phone number: 07710981757 (operator website) vs 0845 0573588 and 07557 913 809 (Visit Mid Wales)",
+      "confidence": "MODERATE — website phone is most likely current but unverified",
+      "issue": "Three different phone numbers appear across sources. The operator's own contact page shows 07710981757 (described as 'for groups of 6+ only'). Visit Mid Wales records both 0845 0573588 (landline) and 07557 913 809 (mobile). The 0845 number may be an older booking line no longer in use; both could be valid. Publishing an incorrect or inactive number sends users to a dead line.",
+      "action": "Call all three numbers before publishing. Determine the current primary public contact number and update accordingly."
+    },
+    {
+      "claim": "Street address: 2B vs 2C Heol-Y-Deri CF14 6HF",
+      "confidence": "MODERATE — 2C is from the operator's own website and is likely correct",
+      "issue": "The operator's contact page shows 2C Heol-Y-Deri; Yumping records 2B. A simple transcription error is likely. CF14 6HF is the correct postcode in both cases.",
+      "action": "Verify the door number (2B or 2C) by checking the operator's contact page or calling the business. Update source data accordingly."
+    },
+    {
+      "claim": "Visit Wales listing at visitwales.com/activity/activity/blue-ocean-activities-529471",
+      "confidence": "UNVERIFIED — listing URL returned 404 during research",
+      "issue": "The operator displays the Visit Wales logo in their website footer, but the Visit Wales listing URL returned a 404 error in June 2026. The listing may have been removed, moved, or the URL may have changed.",
+      "action": "Visit the Visit Wales activity finder at visitwales.com and search for 'Blue Ocean Activities' to confirm whether an active listing exists and obtain the correct URL. Update the accreditations section accordingly."
+    },
+    {
+      "claim": "No Google Business Profile / Google rating",
+      "confidence": "UNVERIFIED",
+      "issue": "No Google rating was confirmed during research — consistent with the task flag ('no Google rating'). The operator does not link to a Google Business Profile from their website. However, a Google profile may exist and be unclaimed.",
+      "action": "Search Google Maps for 'Blue Ocean Activities Cardiff CF14 6HF'. If a profile exists but is unclaimed, advise the operator to claim it. If no profile exists, the operator should create one at business.google.com. Do not publish a Google rating on the directory listing until a verified figure is obtained."
+    },
+    {
+      "claim": "Founding year: c.2008",
+      "confidence": "LOW — inferred from third-party sources, not confirmed on operator website",
+      "issue": "Multiple third-party listings reference 'since 2008' or 'over 12 years' / 'over 15 years' of experience. The operator's own website says 'over a decade' without a year. The copyright year is 2023. These claims are inconsistent and no primary source confirms 2008.",
+      "action": "Contact the operator to confirm the founding year. Do not publish 'since 2008' or any specific year until directly confirmed."
+    },
+    {
+      "claim": "WTTC Safe Travels 2022 stamp is current",
+      "confidence": "LOW — the stamp is from 2022",
+      "issue": "The WTTC Safe Travels stamp was a post-COVID health and safety certification programme. The 2022 stamp shown in Visit Mid Wales may be expired or superseded.",
+      "action": "Verify with the operator whether the WTTC Safe Travels certification is still active and current. Do not display the 2022 stamp as a current accreditation if it has lapsed."
+    },
+    {
+      "claim": "Operator is currently trading in 2026",
+      "confidence": "HIGH",
+      "issue": "TripAdvisor reviews extend to September 2025 (most recent found). The website copyright is 2023 but the business is listed with Travellers' Choice 2026 on TripAdvisor. The TripAdvisor listing shows 731 reviews with recent activity. Low risk — almost certainly still trading.",
+      "action": "Contact the operator to confirm availability for bookings before publishing the directory listing as active."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.blueoceanactivities.co.uk/",
+      "description": "Operator primary website — name, activities, accreditations, social media links, copyright '© 2023 Blue Ocean'",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.blueoceanactivities.co.uk/contact/",
+      "description": "Operator contact page — address 2C Heol-Y-Deri CF14 6HF, phone 07710981757 (groups 6+), email info@blueoceanactivities.co.uk, social media links, team events site",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.blueoceanactivities.co.uk/activities/",
+      "description": "Activities listing — canyoning, gorge walking, coasteering, caving, abseiling, rock climbing, white water rafting, surf kayaking, bodyboarding, survival skills, sports day, wellness days",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.blueoceanactivities.co.uk/coasteering-wales/",
+      "description": "Coasteering page — locations: Gower, Tenby, St Davids; from £40 per person",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.blueoceanactivities.co.uk/stag-activities-cardiff/",
+      "description": "Stag activities page — 'TripAdvisor Travellers' Choice award for eight consecutive years'; AALA, Visit Wales, DOWTK, Great Days Out UK, South Wales Outdoor Activity Providers Group; copyright 2023",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.tripadvisor.co.uk/Attraction_Review-g186460-d3749954-Reviews-Blue_Ocean_Activities-Cardiff_South_Wales_Wales.html",
+      "description": "TripAdvisor UK — 4.9/5 from 731 reviews; #3 of 62 Outdoor Activities in Cardiff; Travellers' Choice 2026; operating hours; recent review excerpts (2025)",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.visitmidwales.co.uk/things-to-do/blue-ocean-activities-and-adventure-p1727731",
+      "description": "Visit Mid Wales listing — two phone numbers (0845 0573588, 07557 913 809), SA11 5NU area postcode, AALA licence, WTTC Safe Travels 2022, activities list",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.yumping.com/en/water-sports/blue-ocean-activities--e19690665",
+      "description": "Yumping booking platform — address 2B Heol-Y-Deri CF14 6HF, indicative pricing, activities including mountain biking",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.trustindex.io/reviews/www.blueoceanactivities.co.uk",
+      "description": "Trustindex — 4.9 stars from 722 TripAdvisor reviews; Top Rated Certificate",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Coasteering_in_Pembrokeshire.jpg",
+      "description": "Wikimedia Commons — CC BY-SA 4.0 image: 'Coasteering in Pembrokeshire' by Albert Tan (UserAlbert), taken 3 June 2025; Abereiddi, Pembrokeshire Coast National Park",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Coasteering_in_Pembrokeshire.jpg",
+      "description": "Direct file URL for Wikimedia Commons coasteering image (CC BY-SA 4.0)",
+      "type": "image"
+    },
+    {
+      "url": "content/operators/climbing.csv",
+      "description": "Internal climbing operators CSV — slug blue-ocean-activities, website blueoceanactivities.co.uk, email info@blueoceanactivities.co.uk, activities: Canyoning|Gorge Walking|Coasteering|Abseiling|Caving|Climbing, South Wales|Brecon Beacons, lat 51.480 lng -3.180",
+      "type": "internal"
+    },
+    {
+      "url": "content/operators/surf.csv",
+      "description": "Internal surf operators CSV — blue-ocean-activities, South Wales, website blueoceanactivities.co.uk, activities: Coasteering|Canyoning|Gorge Walking",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirms operator-blue-ocean-activities, unclassified_operator tier, no description/cover/logo/phone/Google rating",
+      "type": "internal"
+    }
+  ],
+
+  "sourcesRuledOut": [
+    {
+      "url": "https://www.visitwales.com/activity/activity/blue-ocean-activities-529471",
+      "name": "Visit Wales listing",
+      "reason": "URL returned 404 as of June 2026. The operator still displays the Visit Wales logo, so the listing may have moved or been restructured. Needs direct verification on visitwales.com."
+    },
+    {
+      "name": "businesswales.gov.wales Business Directory",
+      "reason": "The Business Wales Business Directory service was formally retired on 15 July 2024. No archived Blue Ocean Activities listing was recoverable."
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "Research has produced a substantially complete operator profile: confirmed website, email, one likely phone number (with two alternates to verify), Cardiff address (with a minor door-number discrepancy), full activities list, all accreditations, social media links, TripAdvisor rating (4.9/5, 731 reviews, Travellers' Choice 2026), indicative pricing, and a freely licensed cover image candidate (CC BY-SA 4.0, Wikimedia Commons). Three blockers remain before publishing: (1) phone number discrepancy across three sources requires a call to verify; (2) no confirmed Google Business Profile — manual search required; (3) logo is blocked with no free-licence alternative — operator must be contacted for a logo file.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "No confirmed Google Business Profile and no Google rating",
+      "detail": "The task explicitly flags 'no Google rating' as a known blocker. Research found no Google Business Profile linked from the operator's website or any third-party listing. A manual Google Maps search for 'Blue Ocean Activities Cardiff CF14 6HF' is required. If an unclaimed profile exists it can be claimed free of charge; if none exists the operator should create one. Do not publish a Google rating on the directory listing until a verified figure is obtained.",
+      "severity": "HIGH",
+      "action": "Editor manually searches Google Maps and contacts operator if no profile is found."
+    },
+    {
+      "rank": 2,
+      "blocker": "Phone number unverified — three different numbers across sources",
+      "detail": "Three phone numbers appear: 07710981757 (operator website, groups 6+); 0845 0573588 (Visit Mid Wales, possibly a legacy booking line); 07557 913 809 (Visit Mid Wales). Publishing an incorrect number sends customers to a dead line and damages operator trust. The website number (07710981757) is the strongest candidate but must be confirmed active.",
+      "severity": "HIGH",
+      "action": "Call all three numbers to identify the current primary contact. Update directory listing with verified number only. Flag 0845 numbers as potentially premium-rate to the editorial team."
+    },
+    {
+      "rank": 3,
+      "blocker": "Logo blocked — no freely licensed logo found",
+      "detail": "The operator's logo is copyright © Blue Ocean Activities. No open-licence version exists on Openverse, Unsplash, or Wikimedia Commons. A Wikimedia Commons CC BY-SA 4.0 coasteering image (Albert Tan, June 2025) is available as a cover placeholder, but the logo field will remain empty until the operator supplies a file. A missing logo significantly reduces the quality and professionalism of the directory listing.",
+      "severity": "MEDIUM",
+      "action": "Email info@blueoceanactivities.co.uk to request a logo file (SVG or PNG, transparent background) and a media pack for non-commercial use on the Adventure Wales directory."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-06-04T00:02:50.391Z",
+  "limit": 1,
+  "concurrency": 1,
+  "taskType": "research",
+  "status": "research_needed",
+  "results": [
+    {
+      "taskId": "content-ops-026-itinerary-snowdonia-adventure-weekend",
+      "outputPath": "data/research/content-ops/itinerary-snowdonia-adventure-weekend.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-03T23:55:50.404Z",
+      "finishedAt": "2026-06-04T00:02:50.389Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-026-itinerary-snowdonia-adventure-weekend.log"
+    }
+  ]
+}

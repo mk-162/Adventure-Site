@@ -12,9 +12,9 @@ Do not guess. Capture source URLs for every factual claim. Do not use AI-generat
 - Channel: dynamic
 - Content type: itinerary
 - Route/slug: /itineraries/snowdonia-adventure-weekend
-- Current status: research_needed
+- Current status: qa_needed
 - Priority: 45
-- Task type: research
+- Task type: qa
 - Recommended skill: directory-itinerary-builder
 - Required output path: data/research/content-ops/itinerary-snowdonia-adventure-weekend.json
 

@@ -1,0 +1,385 @@
+{
+  "_meta": {
+    "task": "content-ops-080-operator-campbell-coaching",
+    "contentItem": "operator-campbell-coaching",
+    "contentType": "operator",
+    "slug": "campbell-coaching",
+    "route": "/directory/campbell-coaching",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_flags",
+    "identityConfidence": "HIGH — Campbell Coaching is a well-documented, active operator with a live website, tourism board listing, Cycling UK recognition, and social media presence confirmed across multiple independent sources."
+  },
+
+  "proposedOperatorData": {
+    "name": "Campbell Coaching",
+    "slug": "campbell-coaching",
+    "website": "https://www.campbellcoaching.eu/",
+    "websiteSource": "https://www.campbellcoaching.eu/",
+    "websiteNote": "Active as of June 2026. Wix-hosted. The URL campbellcoaching.eu resolves correctly. An older index.php-style URL pattern (campbellcoaching.eu/index.php/about-us) also appears in search engine caches — this is a legacy Wix redirect; the canonical URL structure is campbellcoaching.eu/[page].",
+
+    "coaches": [
+      {
+        "name": "Ally Campbell",
+        "role": "Lead MTB coach, co-founder",
+        "experience": "25+ years coaching and guiding outdoor sports; 20 years focused on MTB skills coaching and trail management",
+        "qualifications": [
+          "Association of Trail Builders (ATB) Tutor",
+          "B1KE Skills Instructor and Jumps/Drops Instructor",
+          "CTC/Cycling UK Urban Skills Instructor",
+          "CTC/Cycling UK Technical Trail Leader",
+          "CTC/Cycling UK Skills Instructor",
+          "National Standards Bikeability Instructor",
+          "MIAS Level 2 Trail Leader",
+          "Cytech Technical 2 Mechanic",
+          "NPTC Chainsaw and Tree Felling Certifications",
+          "REC First Aider (Forestry)",
+          "British Cycling Intro2Coaching",
+          "Cycling Scotland Go MTB Instructor",
+          "Member of Institute of Outdoor Learning",
+          "Trail Builder and Designer"
+        ],
+        "qualificationsSource": "https://www.campbellcoaching.eu/about-us",
+        "notableRecognition": "Named in Cycling UK '100 Women in Cycling 2021'",
+        "notableRecognitionSource": "https://www.cyclinguk.org/biography/ally-campbell",
+        "otherRoles": [
+          "Co-organiser, Sisters of Send Festival (women's MTB festival)",
+          "Director, Afan Trail Volunteers"
+        ],
+        "otherRolesSource": "https://www.cyclinguk.org/biography/ally-campbell"
+      },
+      {
+        "name": "Bob Campbell",
+        "role": "Co-founder, trail management specialist",
+        "experience": "30+ years in outdoor industry including sea kayak guiding (Maine, USA) and management of outdoor centres in Norway; 3 years on management team at Coed Llandegla trail centre",
+        "qualifications": [
+          "First Aid Trainer",
+          "Trail maintenance and repair specialist"
+        ],
+        "qualificationsNote": "Cycling UK trainer profile page (cyclinguk.org/courses-training/why-choose-ctc-0/our-people/ctc-trainer-bob-campbell) returned HTTP 404 at time of research — CTC/Cycling UK qualifications claimed elsewhere are not independently verifiable from this source.",
+        "notableRecognition": "World kayak freestyle champion; Forestry Commission Wales Ranger covering South Wales",
+        "notableRecognitionSource": "https://www.linkedin.com/in/bob-campbell-94562536/ (search snippet — LinkedIn URL verified but full profile not fetched)",
+        "otherRolesSource": "https://www.linkedin.com/in/bob-campbell-94562536/"
+      }
+    ],
+
+    "contact": {
+      "phone": "07855 094570",
+      "phoneSource": "https://www.campbellcoaching.eu/ and https://www.campbellcoaching.eu/contact — consistent across both pages",
+      "phoneNote": "Mobile number. A different number (01639 897945) appeared in a web search snippet but could NOT be traced to any official page on campbellcoaching.eu or any tourism board listing. Flag for human confirmation before publishing.",
+      "email": "campbellcoaching@me.com",
+      "emailSource": "https://www.campbellcoaching.eu/contact",
+      "emailNote": "iCloud domain (@me.com). Confirmed across multiple sources including the official website, coaching booking page, and Dramatic Heart Wales listing."
+    },
+
+    "location": {
+      "primaryBase": "Afan Valley, Neath Port Talbot, South Wales",
+      "primaryBaseNote": "Described consistently across all sources as Afan Forest Park and surrounding Afan Valley terrain. No street address or postcode published by the operator.",
+      "secondaryVenue": "One Giant Leap, Llangollen, North Wales",
+      "secondaryVenueSource": "http://www.onegiantleapllangollen.co.uk/mtb-coaching/9-campbell-coaching",
+      "region": "south_wales",
+      "regionSecondary": "north_wales",
+      "address": null,
+      "addressNote": "BLOCKED — no street address or postcode published by the operator on their website, Dramatic Heart Wales listing, or any other verified source. Human review required to determine if an address exists for directory purposes.",
+      "lat": null,
+      "lng": null,
+      "latLngNote": "BLOCKED — postcode not known; cannot derive coordinates. Approximate centre of Afan Valley is approx. 51.615°N, 3.610°W but this should not be used without a confirmed postcode."
+    },
+
+    "description": {
+      "short": "Mountain bike and e-bike skills coaching, guided rides and trail management courses in the Afan Valley, South Wales. Delivered by accredited coaches Ally and Bob Campbell with 20+ years of MTB-specific experience.",
+      "shortSource": "Derived from https://www.campbellcoaching.eu/ and https://dramaticheart.wales/discover-our-area/activity/campbell-coaching/",
+      "full": "Campbell Coaching is a specialist mountain bike and e-bike coaching, guiding, and trail management business based in Afan, South Wales. Founded by accredited coaches Ally and Bob Campbell, the business draws on over 20 years of MTB-focused coaching experience to deliver progressive, tailored sessions for riders of all abilities. Coaching takes place at their own private skills venue in the Afan Valley and on the forest trails of Afan Forest Park — some of the most celebrated singletrack terrain in South Wales. The business also runs sessions at One Giant Leap, Llangollen in North Wales. Campbell Coaching is noted for small group ratios and use of video analysis to accelerate rider development. Alongside rider coaching, the business delivers professional Association of Trail Builders (ATB) trail management and inspection courses for land managers and bike park operators. Ally Campbell was named in Cycling UK's '100 Women in Cycling 2021' and co-organises the Sisters of Send women's MTB festival.",
+      "fullSource": "Synthesised from: https://www.campbellcoaching.eu/, https://www.campbellcoaching.eu/about-us, https://dramaticheart.wales/discover-our-area/activity/campbell-coaching/, https://www.cyclinguk.org/biography/ally-campbell"
+    },
+
+    "services": [
+      {
+        "name": "Trail Flow Core Skills Course",
+        "description": "Full-day core MTB skills course for riders of all levels covering trail technique and flow",
+        "priceGbp": 95,
+        "pricingNote": "FLAGGED — price sourced from campbellcoaching.eu/coaching. Dates visible on the page suggest these are current 2026 bookings, but prices have not been independently verified and may change. Do not publish without confirming against the live booking calendar.",
+        "source": "https://www.campbellcoaching.eu/coaching"
+      },
+      {
+        "name": "Advanced Trail Skills",
+        "description": "Skills session for intermediate/advanced riders targeting technical trail features",
+        "priceGbp": 60,
+        "pricingNote": "FLAGGED — same caveat as Trail Flow Core Skills Course.",
+        "source": "https://www.campbellcoaching.eu/coaching"
+      },
+      {
+        "name": "Intro to Drops and Jumps Course",
+        "description": "Beginner-focused course introducing riders to drop and jump techniques in a controlled environment",
+        "priceGbp": 95,
+        "pricingNote": "FLAGGED — same caveat as above.",
+        "source": "https://www.campbellcoaching.eu/coaching"
+      },
+      {
+        "name": "Drops Session",
+        "description": "Dedicated practice session for drop techniques",
+        "priceGbp": 60,
+        "source": "https://www.campbellcoaching.eu/coaching"
+      },
+      {
+        "name": "Jumps Session",
+        "description": "Dedicated practice session for jump techniques",
+        "priceGbp": 60,
+        "source": "https://www.campbellcoaching.eu/coaching"
+      },
+      {
+        "name": "Off Piste Coaching: Intro to the Masts",
+        "description": "Off-trail riding introduction in the Masts area above Afan Valley",
+        "priceGbp": 60,
+        "source": "https://www.campbellcoaching.eu/coaching"
+      },
+      {
+        "name": "Female-only sessions",
+        "description": "Dedicated coaching sessions for women riders; regular programme",
+        "priceGbp": null,
+        "pricingNote": "Price not confirmed for this specific offering; check booking calendar.",
+        "source": "https://www.campbellcoaching.eu/ and https://dramaticheart.wales/discover-our-area/activity/campbell-coaching/"
+      },
+      {
+        "name": "Youth / Family sessions",
+        "description": "Coaching for riders aged 5–15 and family-friendly guided sessions",
+        "priceGbp": null,
+        "source": "https://www.campbellcoaching.eu/"
+      },
+      {
+        "name": "E-bike coaching",
+        "description": "Skills coaching tailored to e-MTB riders",
+        "priceGbp": null,
+        "source": "https://www.campbellcoaching.eu/"
+      },
+      {
+        "name": "Trail Management and Inspection Courses",
+        "description": "Professional Association of Trail Builders (ATB) accredited courses for land managers, trail centres, and bike park operators",
+        "priceGbp": null,
+        "source": "https://www.campbellcoaching.eu/service-page/cycle-trail-inspection-course-1"
+      },
+      {
+        "name": "Cycling at Work (Non-Technical)",
+        "description": "Workplace cycling programme — non-technical bikeability for commuter/leisure cyclists",
+        "priceGbp": null,
+        "source": "https://www.campbellcoaching.eu/service-page/cycling-at-work-1-89a-none-technical"
+      },
+      {
+        "name": "Bespoke Courses",
+        "description": "Custom coaching programmes tailored to groups or individual requirements",
+        "priceGbp": null,
+        "source": "https://www.campbellcoaching.eu/service-page/bespoke-courses"
+      },
+      {
+        "name": "Bike Sales",
+        "description": "Bike sales service (details not fully verified at research time)",
+        "priceGbp": null,
+        "source": "https://www.campbellcoaching.eu/services-4"
+      }
+    ],
+
+    "pricingGeneralNote": "FLAGGED — all per-session prices sourced from campbellcoaching.eu/coaching. These have NOT been verified against an independently dated price list or booking confirmation. The coaching page shows schedule dates consistent with 2026 but year is not explicitly stated. Human reviewer should confirm prices against the live booking calendar before publishing any price claims.",
+
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "BLOCKED — no Google Business listing rating was returned by any search query or source. A Google Business Profile may exist but could not be confirmed at this research pass. Human reviewer should search Google Maps for 'Campbell Coaching Afan' to locate and record the rating."
+      },
+      "facebook": {
+        "rating": "100% recommended",
+        "reviewCount": 20,
+        "reviewCountNote": "Figure taken from a Google search snippet referencing the Facebook page (https://www.facebook.com/MTBskillsCoaching/). Not independently verified by fetching the page. Facebook 'recommendations' are not a numerical star rating system — present carefully.",
+        "source": "https://www.facebook.com/MTBskillsCoaching/"
+      },
+      "tripadvisor": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "No TripAdvisor listing confirmed at time of research."
+      }
+    },
+
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/MTBskillsCoaching/",
+      "facebookHandle": "MTBskillsCoaching",
+      "facebookSource": "https://www.campbellcoaching.eu/",
+      "instagram": "https://www.instagram.com/campbellcoaching/",
+      "instagramHandle": "campbellcoaching",
+      "instagramSource": "https://www.campbellcoaching.eu/",
+      "twitter": "https://twitter.com/MTBcoaching",
+      "twitterHandle": "MTBcoaching",
+      "twitterSource": "https://www.campbellcoaching.eu/",
+      "twitterNote": "Twitter/X URL not fetched — account existence not independently confirmed at time of research. Treat as low-confidence until manually verified.",
+      "vimeo": "https://vimeo.com/campbellmtb",
+      "vimeoSource": "Google search result snippet — URL not fetched directly."
+    },
+
+    "logo": null,
+    "coverImage": null
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "No standalone logo asset found under an open or permissive licence. The operator website uses their branding but no downloadable logo is available via a public open-licence source.",
+      "licence": null,
+      "actionRequired": "Request logo file directly from Campbell Coaching (campbellcoaching@me.com / 07855 094570). Agree usage rights in writing. Do not use AI-generated images."
+    },
+    "cover": {
+      "status": "BLOCKED",
+      "reason": "No freely licensed photograph of Campbell Coaching coaching sessions, coaches, or branded assets was identified. The operator's website and social media carry their own photography (all rights reserved — no open licence). Openverse returned no results for this specific operator or their primary location (Afan Forest Park mountain biking). Wikimedia Commons search for 'Afan Forest Park' returned no relevant results.",
+      "licence": null,
+      "openverseNote": "Openverse and Wikimedia Commons may carry general Afan Forest Park trail imagery under CC licences. These MUST NOT be attributed to Campbell Coaching specifically without operator permission, but could be used as generic location/activity imagery if clearly labelled. A separate image search with query 'Afan Forest Park mountain bike' on openverse.org is recommended.",
+      "actionRequired": "(1) Request hero/action photography directly from Ally or Bob Campbell with explicit written licence for use on the directory. (2) Alternatively, search Openverse for CC-licensed Afan Valley mountain bike imagery and use as a generic location cover only — not operator-branded. (3) Do not use AI-generated images of riders, trails, or coaches."
+    },
+    "gallery": {
+      "status": "BLOCKED",
+      "reason": "Same constraints as cover image. Operator Facebook and Instagram carry action photography but no open licence applies.",
+      "licence": null,
+      "actionRequired": "Operator permission required for any gallery images drawn from their social media."
+    }
+  },
+
+  "externalListings": [
+    {
+      "source": "Dramatic Heart Wales (NPT Destinations Tourism Portal)",
+      "url": "https://dramaticheart.wales/discover-our-area/activity/campbell-coaching/",
+      "notes": "Active listing. Confirms operator in Afan Forest Park area and links to campbellcoaching.eu. Does not publish phone or email."
+    },
+    {
+      "source": "Afan Forest Park Official Website",
+      "url": "https://afanforestpark.com/bike-hire-bike-shops-and-coaching/",
+      "notes": "Campbell Coaching is linked on the official Afan Forest Park coaching page. Confirms operator is recommended by the park."
+    },
+    {
+      "source": "One Giant Leap Llangollen",
+      "url": "http://www.onegiantleapllangollen.co.uk/mtb-coaching/9-campbell-coaching",
+      "notes": "Lists Campbell Coaching as a coaching provider at the Llangollen venue. Confirms secondary North Wales operation."
+    },
+    {
+      "source": "AbsoluteBlack (chainring manufacturer — product partnership listing)",
+      "url": "https://absoluteblack.cc/campbell-coaching",
+      "notes": "Partnership page listing Campbell Coaching as a venue where AbsoluteBlack oval chainrings can be tested. Contact details on this page (phone/email) belong to AbsoluteBlack, NOT Campbell Coaching."
+    },
+    {
+      "source": "Cycling UK — Ally Campbell biography",
+      "url": "https://www.cyclinguk.org/biography/ally-campbell",
+      "notes": "Confirms '100 Women in Cycling 2021' recognition. Active page as of June 2026."
+    },
+    {
+      "source": "Afan Trail Volunteers",
+      "url": "https://afantrailvolunteers.co.uk/mountain-bike-coaching-and-guiding-afan",
+      "notes": "Lists Campbell Coaching as a coaching and guiding provider in the Afan Valley. Ally Campbell is Director of Afan Trail Volunteers."
+    },
+    {
+      "source": "Vimeo",
+      "url": "https://vimeo.com/campbellmtb",
+      "notes": "Operator's Vimeo channel. Not fetched directly — presence confirmed from search results."
+    }
+  ],
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Phone number 07855 094570",
+      "issue": "This number is published consistently on campbellcoaching.eu (homepage and contact page). A second number, 01639 897945, appeared in a web search snippet but could not be traced to any official page on the operator's website or any tourism board listing. The 01639 number is a Neath-area landline and may be a former or shared number. The 07855 mobile is the current recommended contact.",
+      "priority": "MEDIUM",
+      "sourceUrl": "https://www.campbellcoaching.eu/contact",
+      "action": "Use 07855 094570 as the primary contact number. Clarify with operator whether 01639 897945 is still valid before publishing it."
+    },
+    {
+      "claim": "Pricing (£60–£95 per session)",
+      "issue": "Prices sourced from campbellcoaching.eu/coaching. Scheduling dates visible on the page are consistent with June–July 2026, but the year is not explicitly stated and prices are not independently datestamped. Per task guidance, live pricing should not be published without a dated, verified source.",
+      "priority": "HIGH",
+      "sourceUrl": "https://www.campbellcoaching.eu/coaching",
+      "action": "Human reviewer to visit campbellcoaching.eu/coaching and confirm prices are current (June 2026) before publishing any price claims in the directory entry."
+    },
+    {
+      "claim": "Google Business rating",
+      "issue": "No Google rating was found in any search query. A Google Business Profile may or may not exist for Campbell Coaching.",
+      "priority": "MEDIUM",
+      "sourceUrl": null,
+      "action": "Search Google Maps for 'Campbell Coaching Afan' to locate the listing, record the star rating and review count, and note the date of retrieval."
+    },
+    {
+      "claim": "Bob Campbell qualifications",
+      "issue": "Bob Campbell is described as a Cycling UK/CTC trainer and world kayak freestyle champion in multiple secondary sources, but the primary Cycling UK trainer profile page (cyclinguk.org/courses-training/why-choose-ctc-0/our-people/ctc-trainer-bob-campbell) returned HTTP 404. The LinkedIn profile was not fetched. Qualifications listed here for Bob are drawn from secondary/search snippet sources only.",
+      "priority": "LOW",
+      "sourceUrl": "https://www.linkedin.com/in/bob-campbell-94562536/",
+      "action": "If publishing coach profiles, verify Bob Campbell's current qualifications directly with the operator or via his LinkedIn page."
+    },
+    {
+      "claim": "Address / postcode",
+      "issue": "No street address or postcode for Campbell Coaching is published anywhere. They describe their base as 'Afan' or 'Afan Valley' without a specific location. Their private coaching venue location is not publicly disclosed.",
+      "priority": "LOW",
+      "sourceUrl": null,
+      "action": "If an address is required for the directory (e.g. for Google Maps pin), contact the operator directly to obtain their preferred mailing or meeting-point address."
+    },
+    {
+      "claim": "Commercial tier",
+      "issue": "Operator is currently 'unclassified_operator'. Based on research, Campbell Coaching appears to be an active, well-regarded small operator with multiple tourism board listings and industry recognition. However, there is no evidence of a commercial relationship with Adventure Wales and the task brief states commercial tier rules must be respected.",
+      "priority": "LOW",
+      "sourceUrl": null,
+      "action": "Do not upgrade to a premium tier without a commercial agreement. Retain 'unclassified_operator' classification."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.campbellcoaching.eu/",
+      "description": "Official operator website — homepage. Confirmed active June 2026. Primary source for contact details, services, and social media handles."
+    },
+    {
+      "url": "https://www.campbellcoaching.eu/about-us",
+      "description": "Official about page — source for Ally Campbell's qualifications and experience."
+    },
+    {
+      "url": "https://www.campbellcoaching.eu/contact",
+      "description": "Official contact page — confirms phone 07855 094570 and email campbellcoaching@me.com."
+    },
+    {
+      "url": "https://www.campbellcoaching.eu/coaching",
+      "description": "Official coaching/services page — source for course names and prices."
+    },
+    {
+      "url": "https://dramaticheart.wales/discover-our-area/activity/campbell-coaching/",
+      "description": "Neath Port Talbot tourism board listing. Confirms operator in Afan Forest Park. No contact details published."
+    },
+    {
+      "url": "https://afanforestpark.com/bike-hire-bike-shops-and-coaching/",
+      "description": "Official Afan Forest Park website — links to Campbell Coaching as recommended coaching provider."
+    },
+    {
+      "url": "https://www.cyclinguk.org/biography/ally-campbell",
+      "description": "Cycling UK biography of Ally Campbell — confirms '100 Women in Cycling 2021' recognition and additional roles."
+    },
+    {
+      "url": "https://www.facebook.com/MTBskillsCoaching/",
+      "description": "Official Facebook page — confirmed active. Source for '100% recommendation from 20 reviews' claim (search snippet; not fetched directly)."
+    },
+    {
+      "url": "https://www.instagram.com/campbellcoaching/",
+      "description": "Official Instagram profile — confirmed via search results."
+    },
+    {
+      "url": "http://www.onegiantleapllangollen.co.uk/mtb-coaching/9-campbell-coaching",
+      "description": "One Giant Leap Llangollen — confirms Campbell Coaching's secondary North Wales venue."
+    },
+    {
+      "url": "https://absoluteblack.cc/campbell-coaching",
+      "description": "AbsoluteBlack partnership page — confirms operator name and website. Contact details on this page belong to AbsoluteBlack, not Campbell Coaching."
+    },
+    {
+      "url": "https://www.linkedin.com/in/bob-campbell-94562536/",
+      "description": "Bob Campbell LinkedIn profile — referenced in search snippet as source for world kayak champion and Forestry Commission Wales Ranger claims. Profile not fetched directly."
+    },
+    {
+      "url": "https://afantrailvolunteers.co.uk/mountain-bike-coaching-and-guiding-afan",
+      "description": "Afan Trail Volunteers — lists Campbell Coaching as coaching/guiding provider in Afan Valley."
+    },
+    {
+      "url": "https://vimeo.com/campbellmtb",
+      "description": "Operator Vimeo channel — confirmed via search results, not fetched directly."
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 Improve content item operator-cwmcarn-forest: Cwmcarn Forest.
 Channel: commercial. Content type: operator. Route/slug: /directory/cwmcarn-forest.
 Commercial tier: unclassified_operator.
-Known blocker: Operator "Cwmcarn Forest" missing: no cover image, no logo, no phone, no email.
+Known blocker: Operator "Cwmcarn Forest" missing: no cover image, no logo, no phone, no email | Operator "Cwmcarn Forest" missing: no cover image, no logo, no phone, no email.
 Do not guess. Capture source URLs for every factual claim. Do not use AI-generated images. Return proposed file/data changes plus QA notes.
 
 ## Metadata
@@ -13,9 +13,9 @@ Do not guess. Capture source URLs for every factual claim. Do not use AI-generat
 - Channel: commercial
 - Content type: operator
 - Route/slug: /directory/cwmcarn-forest
-- Current status: research_needed
+- Current status: qa_needed
 - Priority: 34
-- Task type: research
+- Task type: commercial_review
 - Recommended skill: directory-premium-lure-model
 - Required output path: data/research/content-ops/operator-cwmcarn-forest.json
 

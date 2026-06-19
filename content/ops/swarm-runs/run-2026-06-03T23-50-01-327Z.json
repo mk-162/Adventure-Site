@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-06-03T23:50:01.328Z",
+  "limit": 3,
+  "concurrency": 3,
+  "taskType": "research",
+  "status": "research_needed",
+  "results": [
+    {
+      "taskId": "content-ops-005-operator-snowdonia-mtb-days",
+      "outputPath": "data/research/content-ops/operator-snowdonia-mtb-days.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-03T23:42:55.969Z",
+      "finishedAt": "2026-06-03T23:48:15.127Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-005-operator-snowdonia-mtb-days.log"
+    },
+    {
+      "taskId": "content-ops-004-operator-snowdonia-adventures",
+      "outputPath": "data/research/content-ops/operator-snowdonia-adventures.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-03T23:42:55.952Z",
+      "finishedAt": "2026-06-03T23:50:01.046Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-004-operator-snowdonia-adventures.log"
+    },
+    {
+      "taskId": "content-ops-006-operator-snowdonia-watersports",
+      "outputPath": "data/research/content-ops/operator-snowdonia-watersports.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-03T23:42:55.994Z",
+      "finishedAt": "2026-06-03T23:50:01.325Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-006-operator-snowdonia-watersports.log"
+    }
+  ]
+}

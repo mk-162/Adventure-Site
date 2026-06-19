@@ -1,0 +1,81 @@
+{
+  "generatedAt": "2026-06-04T00:46:21.360Z",
+  "limit": 9,
+  "concurrency": 3,
+  "taskType": "research",
+  "status": "research_needed",
+  "results": [
+    {
+      "taskId": "content-ops-066-operator-ace-adventure",
+      "outputPath": "data/research/content-ops/operator-ace-adventure.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:26:13.951Z",
+      "finishedAt": "2026-06-04T00:31:39.448Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-066-operator-ace-adventure.log"
+    },
+    {
+      "taskId": "content-ops-037-location-landing-wye-valley",
+      "outputPath": "data/research/content-ops/location-landing-wye-valley.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:26:13.927Z",
+      "finishedAt": "2026-06-04T00:31:54.726Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-037-location-landing-wye-valley.log"
+    },
+    {
+      "taskId": "content-ops-036-location-landing-south-wales",
+      "outputPath": "data/research/content-ops/location-landing-south-wales.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:26:13.903Z",
+      "finishedAt": "2026-06-04T00:32:16.119Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-036-location-landing-south-wales.log"
+    },
+    {
+      "taskId": "content-ops-067-operator-adrenaline-mtb",
+      "outputPath": "data/research/content-ops/operator-adrenaline-mtb.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:31:39.452Z",
+      "finishedAt": "2026-06-04T00:35:52.468Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-067-operator-adrenaline-mtb.log"
+    },
+    {
+      "taskId": "content-ops-068-operator-adventure-beyond",
+      "outputPath": "data/research/content-ops/operator-adventure-beyond.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:31:54.728Z",
+      "finishedAt": "2026-06-04T00:37:02.191Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-068-operator-adventure-beyond.log"
+    },
+    {
+      "taskId": "content-ops-069-operator-adventure-tours-uk",
+      "outputPath": "data/research/content-ops/operator-adventure-tours-uk.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:32:16.121Z",
+      "finishedAt": "2026-06-04T00:38:22.481Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-069-operator-adventure-tours-uk.log"
+    },
+    {
+      "taskId": "content-ops-072-operator-arete-outdoor-centre",
+      "outputPath": "data/research/content-ops/operator-arete-outdoor-centre.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:38:22.486Z",
+      "finishedAt": "2026-06-04T00:42:07.162Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-072-operator-arete-outdoor-centre.log"
+    },
+    {
+      "taskId": "content-ops-070-operator-afan-a-blast",
+      "outputPath": "data/research/content-ops/operator-afan-a-blast.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:35:52.470Z",
+      "finishedAt": "2026-06-04T00:42:34.081Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-070-operator-afan-a-blast.log"
+    },
+    {
+      "taskId": "content-ops-071-operator-afan-forest-park",
+      "outputPath": "data/research/content-ops/operator-afan-forest-park.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T00:37:02.198Z",
+      "finishedAt": "2026-06-04T00:46:21.350Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-071-operator-afan-forest-park.log"
+    }
+  ]
+}

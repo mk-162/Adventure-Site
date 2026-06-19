@@ -1,0 +1,306 @@
+{
+  "_meta": {
+    "task": "content-ops-100-operator-gower-adventures",
+    "contentItem": "operator-gower-adventures",
+    "contentType": "operator",
+    "slug": "gower-adventures",
+    "route": "/directory/gower-adventures",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "substantially_complete_images_blocked",
+    "identityConfidence": "HIGH — website, phone, AALA registration, VisitWales listing, and two internal CSVs all consistently identify gower-adventures as https://www.goweradventures.co.uk"
+  },
+
+  "proposedOperatorData": {
+    "name": "Gower Adventures",
+    "slug": "gower-adventures",
+    "website": "https://www.goweradventures.co.uk",
+    "websiteNote": "Active domain confirmed June 2026. Copyright © Gower Adventures 2025 per site footer. Consistent across multiple external listings.",
+    "websiteSource": "https://www.goweradventures.co.uk/",
+
+    "contact": {
+      "phone": "01792 851182",
+      "phoneSource": "https://www.goweradventures.co.uk/contact-gower-adventures/",
+      "email": "info@goweradventures.co.uk",
+      "emailSource": "https://www.visitmidwales.co.uk/showmewales/things-to-do/gower-adventures-p1726371",
+      "address": {
+        "line1": "43 Pencaerfenni Lane",
+        "locality": "Crofty",
+        "town": "Swansea",
+        "postcode": "SA4 3SD",
+        "country": "Wales",
+        "addressNote": "Registered address per AALA (HSE) licensing record. Crofty is on the northern Gower coast near Llanrhidian. Activity meeting points differ — see activityLocations below."
+      },
+      "addressSource": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R2146",
+      "proprietor": "Simon William Fenton",
+      "proprietorSource": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R2146"
+    },
+
+    "location": {
+      "lat": 51.5650,
+      "lng": -4.2900,
+      "latLngNote": "DISCREPANCY — surf.csv (internal) gives 51.5650/-4.2900 (near Rhossili/Oxwich Bay area); climbing.csv (internal) gives 51.621/-3.943 (near Swansea/Gower boundary). AALA-registered address SA4 3SD (Crofty) is approximately 51.627°N/-4.077°W. None of the three sets of coordinates are in exact agreement. Human editor must verify and pin to the correct meeting point or registered address before publishing.",
+      "latLngSource": "content/operators/surf.csv (internal — preferred as activity base coordinate); discrepant value in content/operators/climbing.csv",
+      "region": "gower",
+      "serviceAreas": ["Gower Peninsula", "South Wales"],
+      "serviceAreasSource": "https://www.goweradventures.co.uk/",
+      "activityLocations": [
+        {
+          "name": "Oxwich Bay",
+          "postcode": "SA3 1LS",
+          "activities": ["Sea Kayaking (sit-on-top)"],
+          "note": "Meeting point at top of Oxwich Beach, next to Oxwich Watersports. Confirmed booking base for kayaking.",
+          "source": "https://www.goweradventures.co.uk/sit-on-top-kayaking/"
+        },
+        {
+          "name": "Three Cliffs Bay",
+          "activities": ["Rock Climbing", "Abseiling"],
+          "note": "Spectacular limestone cliffs used for climbing sessions.",
+          "source": "https://www.goweradventures.co.uk/"
+        },
+        {
+          "name": "Caswell Beach",
+          "activities": ["Body Boarding"],
+          "source": "https://www.goweradventures.co.uk/"
+        },
+        {
+          "name": "Swiss Valley Reservoir (near Llanelli)",
+          "activities": ["Sea Kayaking (alternative inland venue)"],
+          "note": "Used as an alternative flat-water kayaking venue when sea conditions are unsuitable.",
+          "source": "https://www.goweradventures.co.uk/sit-on-top-kayaking/"
+        }
+      ]
+    },
+
+    "description": {
+      "short": "Gower Adventures offers guided outdoor activities on the Gower Peninsula year-round, including sea kayaking from Oxwich Bay, rock climbing at Three Cliffs Bay, caving, canoeing, abseiling, gorge walking, and body boarding at Caswell Beach.",
+      "shortNote": "Drafted from verified website content and external listings. Needs editorial review before publishing.",
+      "shortSource": "https://www.goweradventures.co.uk/ + https://www.tourismswanseabay.co.uk/gower-adventures/",
+      "full": "Gower Adventures provides guided outdoor activity days on the world-famous Gower Peninsula — the UK's first Area of Outstanding Natural Beauty — operating year-round for families, groups, couples, and individuals. Led by a team of qualified and experienced instructors, the company offers a wide range of activities across the peninsula's distinctive limestone coastline and beaches.\n\nSea kayaking trips depart from Oxwich Bay, with options spanning three difficulty levels: sheltered inland water for beginners, sheltered coastal bays for intermediate paddlers, and exposed coastline routes for advanced groups. Rock climbing and abseiling sessions take place on the dramatic limestone cliffs at Three Cliffs Bay, alongside caving, canoeing, gorge walking, gorge scrambling, and body boarding at Caswell Beach.\n\nMulti-activity days are available, allowing guests to combine two or more activities in a single session. Sessions typically run for around four hours including a lunch break. Equipment, instruction, safety briefing, and insurance are all included. Gower Adventures welcomes families with children from age 6, dog-friendly activities (climbing and abseiling), Scout and Guide groups, and special occasions including team-building events.",
+      "fullNote": "Drafted from verified website content and tourism listings. Needs editorial review. Activity details (minimum age, session length, dog policy) are presented on the website and should be verified against current season booking pages before publishing, as operational details can change.",
+      "fullSource": "https://www.goweradventures.co.uk/ + https://www.tourismswanseabay.co.uk/gower-adventures/ + https://www.tripadvisor.com/Attraction_Review-g186466-d10712986-Reviews-Gower_Adventures-Swansea_Swansea_County_South_Wales_Wales.html"
+    },
+
+    "activities": [
+      {
+        "name": "Sea Kayaking (Sit-on-top)",
+        "detail": "Three difficulty levels from Oxwich Bay. Beginner (sheltered inland water), beginner/intermediate (sheltered bays), advanced (exposed coastline). Alternative venue: Swiss Valley Reservoir.",
+        "source": "https://www.goweradventures.co.uk/sit-on-top-kayaking/"
+      },
+      {
+        "name": "Rock Climbing",
+        "detail": "Limestone cliffs at Three Cliffs Bay.",
+        "source": "https://www.goweradventures.co.uk/"
+      },
+      {
+        "name": "Abseiling",
+        "detail": "Dog-friendly. Three Cliffs Bay area.",
+        "source": "https://www.goweradventures.co.uk/"
+      },
+      {
+        "name": "Caving",
+        "source": "https://www.goweradventures.co.uk/"
+      },
+      {
+        "name": "Canoeing",
+        "source": "https://www.goweradventures.co.uk/"
+      },
+      {
+        "name": "Gorge Walking",
+        "source": "https://www.goweradventures.co.uk/"
+      },
+      {
+        "name": "Gorge Scrambling",
+        "source": "https://www.goweradventures.co.uk/"
+      },
+      {
+        "name": "Body Boarding",
+        "detail": "At Caswell Beach.",
+        "source": "https://www.goweradventures.co.uk/"
+      },
+      {
+        "name": "Coasteering",
+        "detail": "Listed in internal surf.csv and referenced in site content answers. Not prominently featured as a named activity on the operator's current website — verify with operator before publishing.",
+        "source": "content/operators/surf.csv (internal); content/answers/best-adventures-south-wales.md (internal)"
+      },
+      {
+        "name": "Multi-Activity Days",
+        "detail": "Two or more activities combined in a single day.",
+        "source": "https://www.goweradventures.co.uk/"
+      }
+    ],
+
+    "accreditations": [
+      {
+        "name": "Adventure Activities Licensing Authority (AALA) Licence",
+        "licenceNumber": "L141450",
+        "alaRef": "R2146",
+        "issueDate": "2024-08-24",
+        "expiryDate": "2026-08-23",
+        "expiryNote": "APPROACHING EXPIRY — licence expires August 2026. Verify renewal status before publishing if this is used as a trust signal.",
+        "licensedActivities": ["Climbing", "Watersports", "Caving", "Trekking", "Abseiling", "Canoeing", "Gorge Scrambling", "Hill/Mountain Walking", "Kayaking", "Rock Climbing"],
+        "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R2146"
+      },
+      {
+        "name": "VisitWales Listed",
+        "detail": "Operator has an active VisitWales.com activity provider listing.",
+        "source": "https://www.visitwales.com/activity/activity/gower-adventures-542011"
+      },
+      {
+        "name": "Visit Wales Adventure Activity Assurance Scheme (VWAAAS)",
+        "detail": "Operator participates in the VWAAAS quality scheme.",
+        "source": "https://industry.visitwales.com/supporting-you/visit-wales-quality-schemes/discover-visit-wales-adventure-activity-assurance-scheme",
+        "note": "VWAAAS membership confirmed via scheme description cross-reference; verify operator's individual VWAAAS status directly at https://www.visitwales.com before publishing."
+      }
+    ],
+
+    "externalListings": [
+      {
+        "platform": "VisitWales",
+        "url": "https://www.visitwales.com/activity/activity/gower-adventures-542011"
+      },
+      {
+        "platform": "Visit Swansea Bay",
+        "url": "https://www.visitswanseabay.com/listing/gower-adventures/48553101/"
+      },
+      {
+        "platform": "Tourism Swansea Bay",
+        "url": "https://www.tourismswanseabay.co.uk/gower-adventures/"
+      },
+      {
+        "platform": "Show Me Wales (Visit Mid Wales portal)",
+        "url": "https://www.visitmidwales.co.uk/showmewales/things-to-do/gower-adventures-p1726371"
+      },
+      {
+        "platform": "TripAdvisor",
+        "url": "https://www.tripadvisor.com/Attraction_Review-g186466-d10712986-Reviews-Gower_Adventures-Swansea_Swansea_County_South_Wales_Wales.html",
+        "ratingNote": "Consistent high ratings with 195+ reviews reported. Exact star score to be verified directly on TripAdvisor — third-party sources report 5.0 but this should be confirmed."
+      }
+    ],
+
+    "socialMedia": [
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/GowerAdventures/",
+        "detail": "578 likes as of research date. Handle: GowerAdventures.",
+        "source": "https://www.facebook.com/GowerAdventures/"
+      },
+      {
+        "platform": "X (Twitter)",
+        "handle": "@goweradventures",
+        "url": "https://x.com/goweradventures",
+        "source": "https://x.com/goweradventures"
+      }
+    ],
+
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "status": "UNVERIFIED",
+        "note": "A 4.6/5 rating (61 reviews) appeared in research via Wanderlog, but Wanderlog attributed it to 'Gower Coast Adventures' — a separate wildlife boat tour company also based at Oxwich Bay. The two operators are frequently confused. Do NOT publish a Google rating without directly confirming it against the Google Business Profile for Gower Adventures specifically. This was a known blocker in the original task brief.",
+        "actionRequired": "Editor must verify Google rating directly at https://maps.google.com searching 'Gower Adventures Oxwich Bay' and confirm the listing is for the activity operator (sea kayaking, climbing) NOT for Gower Coast Adventures (boat wildlife tours)."
+      },
+      "tripadvisor": {
+        "url": "https://www.tripadvisor.com/Attraction_Review-g186466-d10712986-Reviews-Gower_Adventures-Swansea_Swansea_County_South_Wales_Wales.html",
+        "note": "High rating with 195+ reviews confirmed at time of research. Exact numerical score should be verified before publishing.",
+        "reviewHighlights": [
+          "Instructors described as knowledgeable, attentive, and professional.",
+          "Booking process described as easy and well-organised.",
+          "Activities described as memorable, well-run, and adaptable to different ability levels.",
+          "Instructor Simon specifically mentioned positively in multiple reviews."
+        ],
+        "reviewSource": "https://www.tripadvisor.com/Attraction_Review-g186466-d10712986-Reviews-Gower_Adventures-Swansea_Swansea_County_South_Wales_Wales.html"
+      }
+    },
+
+    "images": {
+      "logo": {
+        "status": "BLOCKED",
+        "reason": "No logo found with a Creative Commons or other reuse licence. Operator website copyright © Gower Adventures 2025 — all rights reserved. Cannot use without explicit permission.",
+        "action": "Contact operator at info@goweradventures.co.uk or 01792 851182 to request a high-resolution logo file with a written usage rights statement for the Adventure Wales directory."
+      },
+      "coverImage": {
+        "status": "BLOCKED",
+        "reason": "No hero or cover image found with a verifiable open licence. Operator website images are copyright Gower Adventures. No Creative Commons images of the specific operator's sessions found on Wikimedia Commons or Openverse.",
+        "alternatives": [
+          {
+            "description": "Generic Gower Peninsula / Oxwich Bay coastline imagery may be available on Wikimedia Commons or Openverse under Creative Commons licences. These could serve as a placeholder cover image if clearly attributed to the location, not the operator.",
+            "searchSuggestion": "Search Wikimedia Commons for 'Oxwich Bay Gower' or 'Three Cliffs Bay' — several landscape photographs with CC licences exist for Gower Peninsula coastal locations.",
+            "warning": "Do not use generic images in a way that implies they show this specific operator's sessions. Image alt text and captions must reference the location, not claim to depict Gower Adventures."
+          }
+        ],
+        "action": "Request operator-provided imagery directly. As a fallback, source a CC-licenced Gower Peninsula landscape image as a location placeholder."
+      }
+    },
+
+    "notForPublishing": {
+      "visitWalesStarGrading": {
+        "value": null,
+        "note": "No specific VisitWales quality star grade (1–5 star) was confirmed for this operator in research. VWAAAS participation confirmed but distinct from star grading. Do not publish a star rating without direct verification."
+      },
+      "adventureMarkAccreditation": {
+        "value": null,
+        "note": "Adventure Mark accreditation status not confirmed. Operator holds valid AALA licence which is a separate and stronger statutory requirement."
+      },
+      "pricing": {
+        "note": "Pricing not extracted. Some third-party sources mention family packages from approximately £200 for four people, and individual session costs in the £50–£70 range, but these are unconfirmed and may be out of date. Do not publish pricing without checking the current operator website booking pages and dating the claim."
+      }
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "id": 1,
+      "severity": "HIGH",
+      "claim": "Google Business rating",
+      "detail": "The 4.6/5 Google rating found during research is attributed to 'Gower Coast Adventures' (wildlife boat tours) by Wanderlog, not Gower Adventures (activity operator). These are two distinct businesses frequently confused. Do not publish any Google rating until an editor directly verifies the Gower Adventures Google Business Profile at maps.google.com.",
+      "source": "Wanderlog / research note"
+    },
+    {
+      "id": 2,
+      "severity": "HIGH",
+      "claim": "Coordinate discrepancy",
+      "detail": "Internal surf.csv gives 51.5650/-4.2900; climbing.csv gives 51.621/-3.943; AALA-registered postcode SA4 3SD (Crofty) is approximately 51.627°N/-4.077°W. The three are not in agreement. Map pin must be verified before publishing to avoid directing users to the wrong location.",
+      "source": "content/operators/surf.csv vs content/operators/climbing.csv vs AALA register"
+    },
+    {
+      "id": 3,
+      "severity": "MEDIUM",
+      "claim": "AALA licence expiry approaching",
+      "detail": "Licence L141450 expires 23 August 2026. This is within approximately 3 months of research date (June 2026). Verify licence has been renewed before publishing or including this as a trust signal on the directory page.",
+      "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R2146"
+    },
+    {
+      "id": 4,
+      "severity": "MEDIUM",
+      "claim": "Coasteering activity",
+      "detail": "Coasteering is listed in internal surf.csv and referenced in site content (answers/best-adventures-south-wales.md), but is not prominently listed on the operator's current website as a standalone named activity. Verify with operator before publishing.",
+      "source": "content/operators/surf.csv (internal); https://www.goweradventures.co.uk/"
+    },
+    {
+      "id": 5,
+      "severity": "LOW",
+      "claim": "VWAAAS membership",
+      "detail": "VWAAAS participation inferred from scheme cross-reference. Verify directly at https://www.visitwales.com or via the industry scheme portal.",
+      "source": "https://industry.visitwales.com/supporting-you/visit-wales-quality-schemes/discover-visit-wales-adventure-activity-assurance-scheme"
+    }
+  ],
+
+  "sourceRegistry": [
+    { "url": "https://www.goweradventures.co.uk/", "usedFor": "Primary operator website — name, website, activities, descriptions, social media, location" },
+    { "url": "https://www.goweradventures.co.uk/contact-gower-adventures/", "usedFor": "Phone number" },
+    { "url": "https://www.goweradventures.co.uk/sit-on-top-kayaking/", "usedFor": "Sea kayaking activity detail, Oxwich Bay meeting point, Swiss Valley Reservoir alternative" },
+    { "url": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R2146", "usedFor": "AALA licence number, expiry, registered address, proprietor name" },
+    { "url": "https://www.visitwales.com/activity/activity/gower-adventures-542011", "usedFor": "VisitWales listing confirmation" },
+    { "url": "https://www.visitswanseabay.com/listing/gower-adventures/48553101/", "usedFor": "Visit Swansea Bay directory listing" },
+    { "url": "https://www.tourismswanseabay.co.uk/gower-adventures/", "usedFor": "Tourism Swansea Bay listing, description cross-reference" },
+    { "url": "https://www.visitmidwales.co.uk/showmewales/things-to-do/gower-adventures-p1726371", "usedFor": "Email address cross-reference, Show Me Wales listing" },
+    { "url": "https://www.tripadvisor.com/Attraction_Review-g186466-d10712986-Reviews-Gower_Adventures-Swansea_Swansea_County_South_Wales_Wales.html", "usedFor": "Review ratings, customer feedback highlights" },
+    { "url": "https://www.facebook.com/GowerAdventures/", "usedFor": "Facebook social media handle and follower count" },
+    { "url": "https://x.com/goweradventures", "usedFor": "X/Twitter handle" },
+    { "url": "content/operators/surf.csv", "usedFor": "Internal data: coordinates, activity tags" },
+    { "url": "content/operators/climbing.csv", "usedFor": "Internal data: contact details, activities, alternative coordinates" }
+  ]
+}

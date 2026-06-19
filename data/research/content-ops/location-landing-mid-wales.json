@@ -1,0 +1,530 @@
+{
+  "_meta": {
+    "task": "content-ops-032-location-landing-mid-wales",
+    "contentItem": "location-landing-mid-wales",
+    "contentType": "location_landing",
+    "slug": "mid-wales",
+    "route": "/mid-wales",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_critical_flags"
+  },
+
+  "existingFiles": {
+    "typescriptData": "data/regions/mid-wales.ts",
+    "markdownContent": "content/regions/mid-wales.md",
+    "dataLastUpdated": "2025-02-06",
+    "contentInventoryStatus": "research_needed",
+    "contentInventoryFlags": [
+      "evidence_status: missing",
+      "image_status: needs_review (no image source URL recorded)",
+      "copy_status: needs_review",
+      "seo_status: needs_review",
+      "schema_status: needs_review"
+    ]
+  },
+
+  "overallAssessment": {
+    "verdict": "data/regions/mid-wales.ts is a well-structured region data file covering hero copy, key facts, seasonal guides, insider tips, top experiences, FAQs, hidden gems, and food listings. Unlike the Brecon Beacons file it does not explicitly cite its sources — no Perplexity reference, but no official source URLs either, making all specific claims unverified. Several pricing figures appear in topExperiences without source URLs and will have changed in 16+ months. A significant content inconsistency exists: the TS data foregrounds Nant yr Arian and Sweet Lamb as the primary MTB venues, while content/regions/mid-wales.md repeatedly foregrounds 'Dyfi' / 'Dyfi Forest' — a different and globally prominent MTB destination near Machynlleth. One of these is wrong as the lead MTB narrative, or both should be mentioned together. The hero image exists on disk (821 KB, Feb 14 2025) but has no provenance or licence record. No source file for the TS data is documented.",
+    "structuralQuality": "HIGH — the TS data file is well-organised with appropriate sections and a clear voice. Suitable as the canonical source once claims are verified and the MTB narrative inconsistency is resolved.",
+    "factualConfidence": "LOW-MEDIUM — fixed geographic, ecological, and historical facts are likely accurate; all pricing, specific times, and numerical claims are unverified and may be 16+ months stale"
+  },
+
+  "criticalIssues": [
+    {
+      "severity": "HIGH",
+      "issue": "MTB narrative inconsistency between TS data and markdown — Dyfi vs Nant yr Arian as lead venue",
+      "location": "data/regions/mid-wales.ts vs content/regions/mid-wales.md",
+      "diagnosis": "The TS data leads with Nant yr Arian and Sweet Lamb as the primary MTB destinations. The markdown content leads exclusively with 'Dyfi' / 'Dyfi Forest' as 'world-renowned' and as the recommended first-day activity in the 'Smart Play' section. Bikepark Dyfi (near Machynlleth) is a purpose-built gravity MTB park with international recognition — it is not the same venue as Nant yr Arian (near Aberystwyth, NRW-managed XC trails). The TS data does not mention Dyfi at all. Both are significant Mid Wales MTB venues. The inconsistency suggests one file was authored from different source research, and the omission of Dyfi from the TS data may leave the primary structured content file incomplete.",
+      "action": "HUMAN EDITORIAL DECISION: (1) Confirm whether Bikepark Dyfi should be added to topExperiences in the TS data alongside Nant yr Arian; (2) Reconcile which venue is positioned as the headline MTB draw; (3) Determine which file (TS data or markdown) renders on the /mid-wales page and ensure they are consistent. Bikepark Dyfi website: https://www.bikeparkdyfi.co.uk/"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "Hero image has no provenance or licence record",
+      "location": "public/images/regions/mid-wales-hero.jpg (exists on disk, 821 KB, Feb 14 2025)",
+      "diagnosis": "The image registry entry has image_status: needs_review and image_source_url empty. There is no attribution, photographer credit, licence type, or acquisition record. Publishing without provenance is a legal risk.",
+      "action": "HUMAN REVIEW REQUIRED: establish how mid-wales-hero.jpg was acquired. If provenance cannot be confirmed, replace with a verified CC-licensed image from Openverse or an official NRW/Visit Wales media image."
+    },
+    {
+      "severity": "HIGH",
+      "issue": "All pricing figures lack source URLs and are 16+ months old",
+      "location": "data/regions/mid-wales.ts — topExperiences.priceRange fields and insiderTips",
+      "affectedFields": [
+        "topExperiences: Nant yr Arian bike hire '£40'",
+        "topExperiences: Red Kite Feeding parking '£3'",
+        "topExperiences: Vale of Rheidol Railway '£22-28'",
+        "topExperiences: Cardigan Bay Dolphin Trip '£25-40'",
+        "insiderTips: no price stated but feeding time '3pm (2pm winter)' is time-specific"
+      ],
+      "action": "Re-verify each figure against the current official or operator source (URLs listed in officialSourcesForHumanVerification). NRW car park charges and railway fares are reviewed annually."
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "No source documentation in TS data file",
+      "location": "data/regions/mid-wales.ts — header comment only states 'Last updated: February 2025', no sources listed",
+      "diagnosis": "Unlike some other region files, no source documentation at all is present. It is not possible to determine whether any figures came from official sources, a previous researcher's notes, or AI-assisted research. All specific numerical and pricing claims must therefore be treated as unverified.",
+      "action": "When claims are verified in the QA pass, add source URL comments to the TS data file header for future maintainers."
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "Markdown and TS data are structurally misaligned — canonical source unclear",
+      "location": "content/regions/mid-wales.md vs data/regions/mid-wales.ts",
+      "diagnosis": "The markdown is a shorter piece in a more casual, opinionated voice. It contains advice not in the TS data (e.g., 'Tal-y-llyn Lake' for SUP/kayaking, Dyfi forest foreground) and omits items in the TS data (Hafod Estate, Cors Caron, Claerwen Reservoir). The markdown also warns explicitly against surfing in Mid Wales and spa breaks — a different editorial posture than the TS data. It is unclear which file renders on /mid-wales.",
+      "action": "HUMAN EDITORIAL DECISION: confirm which file drives the /mid-wales page render, or whether both are used in separate content zones (e.g., markdown for intro prose, TS data for structured blocks). Reconcile Dyfi/Nant yr Arian, Tal-y-llyn Lake, and any other divergences before sign-off."
+    }
+  ],
+
+  "factsAudit": {
+    "verified_or_stable": [
+      {
+        "claim": "Welsh name: Canolbarth Cymru",
+        "status": "VERIFIED",
+        "note": "The Welsh-language name for Mid Wales is Canolbarth Cymru. Stable and correct.",
+        "source": "https://www.visitwales.com/destinations/mid-wales"
+      },
+      {
+        "claim": "Aberystwyth — university town, Victorian pier, castle ruins, narrow-gauge Vale of Rheidol Railway",
+        "status": "VERIFIED",
+        "note": "Aberystwyth is a University of Wales / Aberystwyth University town. The pier, castle, and Vale of Rheidol Railway terminus are all real and well-documented.",
+        "source": "https://www.aberystwyth.com/"
+      },
+      {
+        "claim": "Vale of Rheidol Railway: narrow gauge, approximately 12 miles, Aberystwyth to Devil's Bridge",
+        "status": "STABLE",
+        "note": "The VoR is a narrow-gauge steam railway running 11.75 miles (often rounded to 12) from Aberystwyth to Devil's Bridge. Operated by Vale of Rheidol Railway Ltd (privately owned since 1989). Journey time approximately 1 hour each way.",
+        "source": "https://www.rheidolrailway.co.uk/"
+      },
+      {
+        "claim": "Machynlleth — Owain Glyndŵr's parliament, Centre for Alternative Technology (CAT)",
+        "status": "VERIFIED",
+        "note": "Owain Glyndŵr held his parliament at Machynlleth around 1404 — historical consensus. The Owain Glyndŵr Centre is located there. CAT (Centre for Alternative Technology) is at Llwyngwern Quarry, approximately 3 miles north of Machynlleth. Both are well-documented.",
+        "source_parliament": "https://www.cadw.gov.wales/visit/places-to-visit/owain-glyndwr-centre-machynlleth",
+        "source_cat": "https://www.cat.org.uk/about-cat/"
+      },
+      {
+        "claim": "Cardigan Bay — Special Area of Conservation (SAC) for bottlenose dolphins",
+        "status": "VERIFIED",
+        "note": "Cardigan Bay is designated as a SAC primarily for its bottlenose dolphin (Tursiops truncatus) population. The designation is well-documented by NRW and JNCC.",
+        "source": "https://naturalresources.wales/guidance-and-advice/environmental-topics/wildlife-and-biodiversity/protected-areas-of-land-and-sea/special-areas-of-conservation/cardigan-bay-sac/?lang=en"
+      },
+      {
+        "claim": "'Largest UK pod of bottlenose dolphins' — Cardigan Bay",
+        "status": "STABLE_NEEDS_SOURCING",
+        "note": "This claim is frequently cited in tourism and NRW material. The Cardigan Bay population is consistently described as the largest in UK waters. Specific population estimates (circa 200+ individuals) are published periodically by the Sea Watch Foundation and NRW. The claim is likely accurate but lacks a source URL in the TS data.",
+        "sourceToVerify": "https://www.seawatchfoundation.org.uk/ and https://naturalresources.wales/"
+      },
+      {
+        "claim": "Nant yr Arian — NRW visitor centre with red kite feeding",
+        "status": "VERIFIED",
+        "note": "Nant yr Arian is a Natural Resources Wales visitor centre and forest park in the Cambrian Mountains, approximately 10 miles east of Aberystwyth. The red kite feeding station is confirmed. Mountain biking trails (Syfydrin, Pendam) are on-site.",
+        "source": "https://naturalresources.wales/days-out/places-to-visit/mid-wales/nant-yr-arian/?lang=en"
+      },
+      {
+        "claim": "Elan Valley — Victorian reservoir system near Rhayader",
+        "status": "VERIFIED",
+        "note": "The Elan Valley reservoirs were built by Birmingham Corporation between 1893 and 1906 to supply Birmingham with water. Managed by Dŵr Cymru / Welsh Water. An Elan Valley Trust manages the visitor experience.",
+        "source": "https://www.elanvalley.org.uk/discover/history"
+      },
+      {
+        "claim": "Elan Valley — '6 reservoirs'",
+        "status": "STABLE",
+        "note": "The Elan Valley system includes: Caban Coch, Garreg Ddu, Pen y Garreg, Craig Goch (original four, 1904), Claerwen (1952), and the small Dol y Mynach balancing reservoir. Counting method determines whether the answer is 5 or 6. The Elan Valley Trust typically highlights 5 main reservoirs. '6 reservoirs' is acceptable but should be verified against current Elan Valley Trust framing.",
+        "sourceToVerify": "https://www.elanvalley.org.uk/discover/reservoirs"
+      },
+      {
+        "claim": "Cors Caron — raised peat bog, National Nature Reserve, near Tregaron",
+        "status": "VERIFIED",
+        "note": "Cors Caron (also known as Tregaron Bog) is a NNR managed by NRW. One of the largest bogs in Wales. Boardwalk trails exist. Well-documented.",
+        "source": "https://naturalresources.wales/days-out/places-to-visit/mid-wales/cors-caron-national-nature-reserve/?lang=en"
+      },
+      {
+        "claim": "Hafod Estate — Georgian landscaped estate with waterfalls and follies",
+        "status": "VERIFIED",
+        "note": "The Hafod Estate near Cwmystwyth in the Ystwyth Valley is a real Georgian landscape garden, largely managed by the Hafod Trust and Forestry Commission Wales. Free to visit. Waterfalls and follies are well-documented.",
+        "source": "https://www.hafod.org/"
+      },
+      {
+        "claim": "Devil's Bridge — waterfall attraction at Vale of Rheidol terminus",
+        "status": "VERIFIED",
+        "note": "Devil's Bridge (Pontarfynach) has three bridges stacked on top of each other spanning the Mynach River gorge. The falls are an established attraction with a small entry fee. NLW managed.",
+        "source": "https://www.visitwales.com/attraction/nature-and-wildlife/devil-s-bridge-falls-2290049"
+      },
+      {
+        "claim": "Aberystwyth Cliff Railway (Constitution Hill) — funicular railway",
+        "status": "VERIFIED",
+        "note": "The Aberystwyth Cliff Railway is a funicular (water-balanced) railway running to Constitution Hill. Opened 1896. Well-documented heritage attraction.",
+        "source": "https://www.aberystwythcliffrailway.co.uk/"
+      },
+      {
+        "claim": "Cambrian Line — Shrewsbury to Aberystwyth scenic railway",
+        "status": "VERIFIED",
+        "note": "The Cambrian Main Line runs from Shrewsbury through Mid Wales to Aberystwyth (and the Cambrian Coast line branches to Pwllheli). Operated by Transport for Wales.",
+        "source": "https://www.tfwales.gov.uk/routes/cambrian-coast"
+      },
+      {
+        "claim": "Sweet Lamb Rally Complex — rally driving venue, opens for MTB",
+        "status": "STABLE",
+        "note": "Sweet Lamb Rally Complex near Rhayader is a real venue used for rally driving and motorcycle events. The claim that it opens for mountain biking some weekends needs specific verification against their current calendar. The complex is called Sweet Lamb and exists at SN 9 7RJ.",
+        "sourceToVerify": "https://www.sweetlamb.co.uk/"
+      }
+    ],
+
+    "needs_verification": [
+      {
+        "claim": "Red kite feeding at Nant yr Arian: '3pm (2pm winter)' in insiderTips; 'daily at 3pm' in keyFacts",
+        "risk": "medium",
+        "note": "There is a minor inconsistency within the TS file: keyFacts says 'daily at 3pm' while insiderTips says '3pm (2pm winter)'. NRW typically adjusts feeding times seasonally. The winter time is approximately correct per historical NRW pages, but times can shift. The keyFacts entry omits the winter variation. HUMAN QA: verify both the summer and winter feeding times against the current NRW Nant yr Arian page before publishing.",
+        "sourceToVerify": "https://naturalresources.wales/days-out/places-to-visit/mid-wales/nant-yr-arian/?lang=en"
+      },
+      {
+        "claim": "Vale of Rheidol Railway: return ticket '£22-28'",
+        "risk": "high",
+        "note": "Railway ticket prices are reviewed annually. The 2025 adult return fare needs verification against the current booking page. Do not publish this figure without a dated source.",
+        "sourceToVerify": "https://www.rheidolrailway.co.uk/tickets/"
+      },
+      {
+        "claim": "Cardigan Bay Dolphin Trip: '£25-40'",
+        "risk": "high",
+        "note": "No specific operator is named in the TS data. Dolphin/wildlife boat trips operate from New Quay and Aberystwyth. Key operators include Cardigan Bay Marine Wildlife Centre (New Quay) and SeaMor Dolphin Watching Boat Trips. Prices vary by operator and season. Do not publish this range without naming an operator and a source URL.",
+        "operatorsToCheck": [
+          "https://www.marinewildlife.co.uk/",
+          "https://www.newquaywelshwildlife.com/"
+        ]
+      },
+      {
+        "claim": "Nant yr Arian bike hire: '£40'",
+        "risk": "medium",
+        "note": "NRW manages the visitor centre but bike hire may be operated by a concessionaire. Verify current hire price and provider against the NRW Nant yr Arian page or any current hire provider listing.",
+        "sourceToVerify": "https://naturalresources.wales/days-out/places-to-visit/mid-wales/nant-yr-arian/?lang=en"
+      },
+      {
+        "claim": "Nant yr Arian parking: '£3'",
+        "risk": "medium",
+        "note": "NRW car park charges are reviewed periodically. The £3 figure needs current verification. NRW car park charges can be found on the site page or NRW's car parks index.",
+        "sourceToVerify": "https://naturalresources.wales/days-out/places-to-visit/mid-wales/nant-yr-arian/?lang=en"
+      },
+      {
+        "claim": "Cambrian Mountains: '190,000 hectares' / 'Largest roadless area in Wales'",
+        "risk": "medium",
+        "note": "The 190,000 hectare figure is associated with the proposed Cambrian Mountains National Park (designation campaign ongoing). The Cambrian Mountains Initiative and Cambrian Mountains Society have used this figure. The 'largest roadless area in Wales' claim is commonly cited in tourism material but lacks a specific spatial analysis source. Both claims may be accurate but need an official or authoritative source URL.",
+        "sourceToVerify": "https://www.cambrianmountains.co.uk/"
+      },
+      {
+        "claim": "Elan Valley: '70 sq miles of watershed'",
+        "risk": "low",
+        "note": "The Elan Valley catchment area is commonly quoted at approximately 70 square miles (181 km²). Verify against Elan Valley Trust or Welsh Water statistics.",
+        "sourceToVerify": "https://www.elanvalley.org.uk/discover/history"
+      },
+      {
+        "claim": "Bikepark Dyfi — significant omission from TS data",
+        "risk": "medium",
+        "note": "The markdown content/regions/mid-wales.md names 'Dyfi Forest' / 'Dyfi' as the primary MTB destination in Mid Wales. Bikepark Dyfi near Machynlleth is a world-class gravity MTB park distinct from Nant yr Arian. Its absence from the TS data topExperiences is a potential content gap. HUMAN EDITORIAL: confirm whether Bikepark Dyfi should be added as a topExperience.",
+        "sourceToVerify": "https://www.bikeparkdyfi.co.uk/"
+      },
+      {
+        "claim": "Tal-y-llyn Lake — SUP/kayaking recommendation (markdown only)",
+        "risk": "low",
+        "note": "The markdown's 'Smart Play' section recommends Tal-y-llyn Lake for SUP/kayaking. Tal-y-llyn is a glacial lake in the Dyfi valley (coordinates: SH 71 09), near Abergynolwyn. SUP and kayaking there may require accessing private land or dealing with access restrictions. No operator is named. This claim is in the markdown only, not the TS data. Verify access and any local operator before adding to the main TS data.",
+        "sourceToVerify": "Local operators or https://www.visitwales.com/ search for Tal-y-llyn"
+      }
+    ]
+  },
+
+  "imageResearch": {
+    "heroImage": {
+      "filePath": "public/images/regions/mid-wales-hero.jpg",
+      "fileExists": true,
+      "fileSizeKB": 802,
+      "fileDate": "2025-02-14",
+      "referencedIn": "data/regions/mid-wales.ts — meta.heroImage: '/images/regions/mid-wales-hero.jpg'",
+      "status": "blocked_no_provenance",
+      "note": "Image file exists on disk but has NO provenance record, photographer credit, licence type, or acquisition record in the image registry (image_status: needs_review, image_source_url: empty). CANNOT confirm this image is legally cleared for publication. DO NOT publish without establishing provenance.",
+      "action": "HUMAN REVIEW REQUIRED: determine how this image was acquired (purchased stock, Creative Commons download, NRW supplied, in-house photography). If provenance cannot be established, replace with a verified image."
+    },
+    "candidates_if_replacement_needed": [
+      {
+        "title": "Nant yr Arian / Red kites in flight",
+        "searchQuery": "red kite Mid Wales Nant yr Arian",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=red+kite+Wales&license_type=commercial&use_commercial=true",
+        "note": "HUMAN: search Openverse for CC BY or CC BY-SA licensed red kite images. Only use images with confirmed commercial-use-friendly licences. Always record: photographer name, licence version, source URL, attribution string.",
+        "suitability": "HIGH — red kites are the most distinctive wildlife draw of Mid Wales and immediately signal 'Mid Wales' to a visitor. Strong brand fit."
+      },
+      {
+        "title": "Elan Valley reservoir dams",
+        "searchQuery": "Elan Valley reservoir Wales dam",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=Elan+Valley+reservoir&license_type=commercial&use_commercial=true",
+        "note": "Alternative hero candidate — dramatic Victorian dam architecture against a moorland backdrop. Distinctive and unique to Mid Wales.",
+        "suitability": "HIGH — visually distinctive, no competing regions use this as a hero image"
+      },
+      {
+        "title": "Cambrian Mountains landscape",
+        "searchQuery": "Cambrian Mountains Wales hills",
+        "provider": "Openverse (Creative Commons search)",
+        "searchUrl": "https://openverse.org/search/?q=Cambrian+Mountains+Wales&license_type=commercial&use_commercial=true",
+        "note": "Wide landscape shot suitable for full-bleed hero. May lack immediate recognition vs red kites or Elan Valley dams.",
+        "suitability": "MEDIUM"
+      },
+      {
+        "title": "NRW / Visit Wales media library",
+        "note": "Natural Resources Wales and Visit Wales maintain official media libraries that may have CC-licensed or royalty-free images for editorial use. Contact: https://naturalresources.wales/ or https://www.visitwales.com/travel-trade/resources/image-library",
+        "suitability": "PREFERRED if available — official images with confirmed permissions eliminate licensing risk"
+      }
+    ]
+  },
+
+  "seoAndSchemaAudit": {
+    "seoTitle": {
+      "current": "Mid Wales | Mountain Biking, Red Kites & Wild Landscapes | Adventure Wales",
+      "length": 72,
+      "status": "REVIEW_NEEDED",
+      "note": "72 characters is over the 60-65 character recommended limit for Google SERPs — the title will be truncated on most devices. Recommend shortening. Example options: 'Mid Wales | MTB, Red Kites & Wild Landscapes | Adventure Wales' (61 chars) or 'Mid Wales Adventure Guide | Adventure Wales' (43 chars). The core keywords (mountain biking / MTB, red kites) are strong and should be retained in some form."
+    },
+    "seoDescription": {
+      "current": "Explore Mid Wales: Nant yr Arian MTB trails, red kite feeding, Elan Valley reservoirs, and the wild Cambrian Mountains. Adventure for those who seek space.",
+      "length": 156,
+      "status": "ACCEPTABLE",
+      "note": "156 characters is within the 150-160 character sweet spot. Content is relevant and keyword-rich. Acceptable as-is."
+    },
+    "schemaMarkup": {
+      "status": "NOT_VERIFIED",
+      "note": "No schema.org markup has been reviewed in this research task. The TS data contains structured data suitable for Place, TouristAttraction, or FAQPage schema. This needs a separate technical review pass.",
+      "action": "Human tech review: confirm whether the /mid-wales route renders structured data (JSON-LD). At minimum FAQPage schema for the faqs array and TouristDestination for the region would benefit SEO."
+    }
+  },
+
+  "contentGaps": [
+    {
+      "gap": "Bikepark Dyfi absent from TS data topExperiences",
+      "detail": "Bikepark Dyfi (near Machynlleth) is a globally-recognised gravity MTB park. The markdown content foregrounds it as the lead MTB draw. The TS data does not mention it at all. Given that the markdown explicitly recommends it in the 'Smart Play' section, this appears to be a significant omission rather than a deliberate editorial choice.",
+      "action": "Confirm with editorial whether Bikepark Dyfi should be added to topExperiences. If yes, add a topExperience entry with: name, type: mountain-biking, description, priceRange (verify at https://www.bikeparkdyfi.co.uk/), and operatorSlug if listed in the directory."
+    },
+    {
+      "gap": "No operator slugs in topExperiences",
+      "detail": "None of the six topExperiences entries reference an operatorSlug or operator listing. When operators covering Mid Wales are published in the Adventure Wales directory, those slugs should be linked here to support conversion.",
+      "action": "When operator listings for Mid Wales activity providers are published, add operatorSlug references to relevant topExperiences entries."
+    },
+    {
+      "gap": "FAQs are minimal — only three questions",
+      "detail": "The faqs array contains only three very broad questions. The Brecon Beacons file has more targeted FAQs covering wild camping rules, transport specifics, and accommodation. Mid Wales FAQs could address: 'How do I get to Nant yr Arian?', 'Is the Vale of Rheidol Railway running year-round?', 'Where can I watch dolphins?', 'Is wild swimming legal in Mid Wales?'",
+      "action": "Low priority — expand FAQs in a future editorial pass once pricing and operator links are verified."
+    },
+    {
+      "gap": "No mention of Powys / Ceredigion administrative geography",
+      "detail": "Mid Wales covers the counties of Powys and Ceredigion (historically Montgomeryshire, Radnorshire, Merionethshire, and Cardiganshire). The TS data and markdown do not orient visitors to local authority geography, which affects practical matters like emergency services, planning, and tourism board contacts.",
+      "action": "Low priority for a landing page, but useful for internal metadata and signposting."
+    },
+    {
+      "gap": "Cambrian Mountains AONB / National Park candidacy not mentioned",
+      "detail": "There is an ongoing campaign to designate the Cambrian Mountains as a National Park or Area of Outstanding Natural Beauty (AONB). This is a context-setting note of interest to adventure visitors but needs careful handling to avoid presenting speculation as fact.",
+      "action": "If the campaign is still active (verify at https://www.cambrianmountains.co.uk/), a brief mention in the hero copy or insider tips could be added editorially. Flag for human review — designation status can change."
+    }
+  ],
+
+  "officialSourcesForHumanVerification": [
+    {
+      "source": "Natural Resources Wales — Nant yr Arian visitor centre",
+      "url": "https://naturalresources.wales/days-out/places-to-visit/mid-wales/nant-yr-arian/?lang=en",
+      "useFor": "Current red kite feeding times (summer and winter), car park charges, bike hire provider and pricing, trail grades"
+    },
+    {
+      "source": "Vale of Rheidol Railway — tickets",
+      "url": "https://www.rheidolrailway.co.uk/tickets/",
+      "useFor": "Current adult return ticket price to replace £22-28 figure"
+    },
+    {
+      "source": "Cardigan Bay Marine Wildlife Centre (New Quay)",
+      "url": "https://www.marinewildlife.co.uk/",
+      "useFor": "Dolphin boat trip pricing to replace £25-40 figure; departure point and trip duration"
+    },
+    {
+      "source": "Elan Valley Trust",
+      "url": "https://www.elanvalley.org.uk/",
+      "useFor": "Reservoir count (5 or 6), watershed area figure (70 sq miles), visitor facilities"
+    },
+    {
+      "source": "Bikepark Dyfi",
+      "url": "https://www.bikeparkdyfi.co.uk/",
+      "useFor": "Confirm venue details, pricing, and trail grades before deciding whether to add to topExperiences"
+    },
+    {
+      "source": "Natural Resources Wales — Cors Caron",
+      "url": "https://naturalresources.wales/days-out/places-to-visit/mid-wales/cors-caron-national-nature-reserve/?lang=en",
+      "useFor": "Confirm current access, boardwalk status, and any seasonal restrictions"
+    },
+    {
+      "source": "CADW — Owain Glyndŵr Centre, Machynlleth",
+      "url": "https://www.cadw.gov.wales/visit/places-to-visit/owain-glyndwr-centre-machynlleth",
+      "useFor": "Opening times, admission, and current exhibition for parliament claim context"
+    },
+    {
+      "source": "Centre for Alternative Technology (CAT)",
+      "url": "https://www.cat.org.uk/about-cat/",
+      "useFor": "Current opening times and admission prices for Machynlleth recommendation"
+    },
+    {
+      "source": "Hafod Estate",
+      "url": "https://www.hafod.org/",
+      "useFor": "Confirm free access status, current walking trail conditions"
+    },
+    {
+      "source": "Sweet Lamb Rally Complex",
+      "url": "https://www.sweetlamb.co.uk/",
+      "useFor": "Verify that the venue still opens for MTB and on what schedule"
+    },
+    {
+      "source": "Cambrian Mountains Initiative",
+      "url": "https://www.cambrianmountains.co.uk/",
+      "useFor": "Verify 190,000 hectares claim; check current status of national park / AONB designation campaign"
+    },
+    {
+      "source": "Visit Wales — Mid Wales",
+      "url": "https://www.visitwales.com/destinations/mid-wales",
+      "useFor": "General tourism framing, dolphin watching operator recommendations, regional overview"
+    },
+    {
+      "source": "Transport for Wales — Cambrian Line",
+      "url": "https://www.tfwales.gov.uk/routes/cambrian",
+      "useFor": "Current Aberystwyth to Shrewsbury journey time and service frequency (FAQ answer claims '3+ hours from Shrewsbury')"
+    }
+  ],
+
+  "claimsForHumanReview": [
+    {
+      "claim": "Hero image provenance unknown",
+      "source": "public/images/regions/mid-wales-hero.jpg — no image registry entry with source",
+      "risk": "high",
+      "action": "Must establish photographer credit, licence type, and acquisition record before this page can be published."
+    },
+    {
+      "claim": "MTB venue inconsistency: TS data = Nant yr Arian + Sweet Lamb; markdown = Dyfi Forest",
+      "source": "data/regions/mid-wales.ts vs content/regions/mid-wales.md",
+      "risk": "high",
+      "action": "HUMAN EDITORIAL DECISION required. Bikepark Dyfi is a significant Mid Wales MTB venue omitted from the TS data. Confirm whether to add it and how to position it relative to Nant yr Arian."
+    },
+    {
+      "claim": "Vale of Rheidol Railway return ticket: '£22-28'",
+      "source": "data/regions/mid-wales.ts — topExperiences[2].priceRange",
+      "risk": "high",
+      "action": "Verify current price at https://www.rheidolrailway.co.uk/tickets/ before publishing. Fares are updated annually."
+    },
+    {
+      "claim": "Cardigan Bay Dolphin Trip: '£25-40', no operator named",
+      "source": "data/regions/mid-wales.ts — topExperiences[4].priceRange",
+      "risk": "high",
+      "action": "Name a specific operator and verify current pricing before publishing. HUMAN: identify which operator to feature (e.g., Cardigan Bay Marine Wildlife Centre at New Quay, or Aberystwyth-based options)."
+    },
+    {
+      "claim": "Red kite feeding times: '3pm (2pm winter)' in insiderTips vs 'daily at 3pm' in keyFacts",
+      "source": "data/regions/mid-wales.ts — insiderTips[0] vs keyFacts[3]",
+      "risk": "medium",
+      "action": "Verify current seasonal feeding times with NRW Nant yr Arian page and harmonise the two entries within the TS data."
+    },
+    {
+      "claim": "'Largest UK pod of bottlenose dolphins' — Cardigan Bay",
+      "source": "data/regions/mid-wales.ts — keyFacts[6].detail",
+      "risk": "medium",
+      "action": "Claim is commonly made but no source URL is recorded. Verify against Sea Watch Foundation or NRW and add a source URL before publishing."
+    },
+    {
+      "claim": "Cambrian Mountains: '190,000 hectares' / 'Largest roadless area in Wales'",
+      "source": "data/regions/mid-wales.ts — keyFacts[1]",
+      "risk": "medium",
+      "action": "Verify both figures against Cambrian Mountains Initiative or NRW source. The 190,000 ha figure is associated with the proposed national park boundary — confirm it refers to the geographic region as used in the TS data."
+    },
+    {
+      "claim": "SEO title 72 characters — exceeds recommended limit",
+      "source": "data/regions/mid-wales.ts — meta.seoTitle",
+      "risk": "low",
+      "action": "Shorten to under 65 characters before publishing. Suggested: 'Mid Wales | MTB, Red Kites & Wild Landscapes | Adventure Wales' (61 chars)."
+    }
+  ],
+
+  "sourcesUsed": [
+    {
+      "url": "data/regions/mid-wales.ts",
+      "description": "Primary existing data file — structured region data, last updated 2025-02-06, no sources documented in file"
+    },
+    {
+      "url": "content/regions/mid-wales.md",
+      "description": "Existing markdown content — opinionated regional guide in casual voice; foregrounds Dyfi Forest for MTB, differs structurally from TS data"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Content inventory — location-landing-mid-wales: evidence_status missing, image_status needs_review, status research_needed, priority 45"
+    },
+    {
+      "url": "content/ops/image-registry.json",
+      "description": "Image registry — location-landing-mid-wales: image_status needs_review, image_source_url empty, notes: 'Needs image provenance review'"
+    },
+    {
+      "url": "https://naturalresources.wales/days-out/places-to-visit/mid-wales/nant-yr-arian/?lang=en",
+      "description": "NRW — Nant yr Arian visitor centre; used for red kite feeding confirmation, MTB trails, car park"
+    },
+    {
+      "url": "https://naturalresources.wales/guidance-and-advice/environmental-topics/wildlife-and-biodiversity/protected-areas-of-land-and-sea/special-areas-of-conservation/cardigan-bay-sac/?lang=en",
+      "description": "NRW — Cardigan Bay SAC designation; dolphin population SAC status verified"
+    },
+    {
+      "url": "https://naturalresources.wales/days-out/places-to-visit/mid-wales/cors-caron-national-nature-reserve/?lang=en",
+      "description": "NRW — Cors Caron NNR; peat bog and boardwalk trail confirmed"
+    },
+    {
+      "url": "https://www.rheidolrailway.co.uk/",
+      "description": "Vale of Rheidol Railway — route length, termini, and steam operation confirmed"
+    },
+    {
+      "url": "https://www.elanvalley.org.uk/",
+      "description": "Elan Valley Trust — Victorian reservoir history and estate confirmed"
+    },
+    {
+      "url": "https://www.hafod.org/",
+      "description": "Hafod Estate — Georgian landscape garden with waterfalls confirmed"
+    },
+    {
+      "url": "https://www.cadw.gov.wales/visit/places-to-visit/owain-glyndwr-centre-machynlleth",
+      "description": "CADW — Owain Glyndŵr parliament in Machynlleth confirmed"
+    },
+    {
+      "url": "https://www.cat.org.uk/about-cat/",
+      "description": "Centre for Alternative Technology — Machynlleth location confirmed"
+    },
+    {
+      "url": "https://www.aberystwythcliffrailway.co.uk/",
+      "description": "Aberystwyth Cliff Railway — Constitution Hill funicular confirmed"
+    },
+    {
+      "url": "https://www.visitwales.com/attraction/nature-and-wildlife/devil-s-bridge-falls-2290049",
+      "description": "Visit Wales — Devil's Bridge Falls confirmed as waterfall attraction"
+    },
+    {
+      "url": "https://www.bikeparkdyfi.co.uk/",
+      "description": "Bikepark Dyfi — cited as MTB venue in markdown, absent from TS data; recommended for human editorial review"
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusRationale": "The existing data/regions/mid-wales.ts provides a solid structural foundation. Geographic, historical, and ecological facts are stable and mostly accurate. The page cannot be signed off because: (1) the hero image has no provenance and cannot be published with a copyright risk; (2) a significant MTB narrative inconsistency between the TS data and markdown needs editorial resolution (Dyfi vs Nant yr Arian); and (3) all four pricing figures and the red kite feeding times need verification against current official sources. Once those three blockers are resolved, the page will be close to publishable and the QA pass can complete sign-off.",
+
+  "blockers": [
+    {
+      "rank": 1,
+      "blocker": "Hero image provenance unknown — possible licence violation",
+      "detail": "public/images/regions/mid-wales-hero.jpg exists on disk (802 KB, Feb 14 2025) but has no photographer credit, licence, or acquisition record. The image registry entry is blank. Publishing this image without provenance is a copyright risk.",
+      "resolution": "Audit acquisition records for mid-wales-hero.jpg. If no provenance can be established, source a replacement via Openverse (https://openverse.org/) with a CC BY or CC BY-SA licence — red kite in flight or Elan Valley reservoir are strong hero candidates — or request an official image from the NRW media team. Record full attribution before publishing."
+    },
+    {
+      "rank": 2,
+      "blocker": "MTB narrative inconsistency — Bikepark Dyfi absent from TS data, foregrounded in markdown",
+      "detail": "The markdown content/regions/mid-wales.md names 'Dyfi Forest' / 'Dyfi' as the primary MTB destination and recommends it in the two-day 'Smart Play' itinerary. The TS data does not mention Bikepark Dyfi at all, instead foregrounding Nant yr Arian (XC trails) and Sweet Lamb (rally/enduro). These are meaningfully different venues with different riding styles. Bikepark Dyfi is a world-class gravity park — its absence from the structured data is a content credibility risk for MTB-oriented visitors.",
+      "resolution": "Human editorial decision: (1) add Bikepark Dyfi as a topExperience in the TS data with current pricing from https://www.bikeparkdyfi.co.uk/; (2) reconcile the markdown so both files agree on the MTB venue hierarchy; (3) confirm which file renders on /mid-wales."
+    },
+    {
+      "rank": 3,
+      "blocker": "All pricing figures and red kite feeding times unverified and 16+ months old",
+      "detail": "Four pricing figures in topExperiences (bike hire £40, parking £3, Vale of Rheidol £22-28, dolphin trip £25-40) and the red kite feeding times (3pm summer / 2pm winter) have no source URLs and were last updated February 2025. Prices are reviewed annually. Publishing incorrect prices or times will generate visitor dissatisfaction and operator complaints. The dolphin trip entry also has no operator named, making it unpublishable without a named source.",
+      "resolution": "Human QA reviewer should work through officialSourcesForHumanVerification and update each claim with a direct source URL and verified figure. The dolphin trip entry must also name a specific operator. Alternatively, remove pricing figures from the landing page and push them to the activity-location combo pages where operator-level verification already exists (mid-wales-mountain-biking.json and similar)."
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "_meta": {
+    "task": "content-ops-092-operator-evolution-bikes",
+    "contentItem": "operator-evolution-bikes",
+    "contentType": "operator",
+    "slug": "evolution-bikes",
+    "route": "/directory/evolution-bikes",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "substantial_with_image_blockers",
+    "identityConfidence": "HIGH — website, phone, address, and service description all cross-confirm across multiple independent sources"
+  },
+
+  "researchSummary": {
+    "finding": "Evolution Bikes is a well-established, locally owned bicycle shop and workshop in Bangor, North Wales, trading since 2007. The operator has a live website, confirmed address, phone, multiple emails, and a strong Google rating. Identity is unambiguous — all sources converge on a single business. The primary research blockers are images (logo and cover photo require operator permission or a CC-licensed alternative) and a secondary location at Porth Eirias (Colwyn Bay) that is reportedly closed and needs human confirmation before any mention in the directory.",
+    "searchesPerformed": [
+      "Fetched https://www.evolution-bikes.co.uk — homepage, contact page, hire pages",
+      "Fetched https://www.trekbikes.com/gb/en_GB/store/91613/ — Trek preferred retailer listing",
+      "Web search: 'Evolution Bikes Bangor North Wales bike shop hire'",
+      "Web search: 'Evolution Bikes Bangor \"Cyttir Lane\" OR \"High Street\" address 2025 2026'",
+      "Web search: 'Evolution Bikes Bangor Google rating reviews 2025 2026'",
+      "Web search: '\"Evolution Bikes\" \"Porth Eirias\" Colwyn Bay Wales hire location'",
+      "Web search: 'Evolution Bikes Bangor bike hire e-bike hire services North Wales'",
+      "Checked Birdeye, Yell, Yelp, Cyclescheme, Halfords, Thomson Local, Yably listings",
+      "Internal source: content/operators/hire.csv — entry confirmed"
+    ],
+    "internalSourceData": {
+      "sourceFile": "content/operators/hire.csv",
+      "rawEntry": "Evolution Bikes,evolution-bikes,https://www.evolution-bikes.co.uk,,01248 355770,North Wales,activity_provider,\"Bike Hire|Shop\",\"Bike shop and hire in Bangor.\",53.220,-4.120,\"Bangor\",false",
+      "note": "Internal data matches the live website on name, slug, website URL, phone, region, and town. The 'Bike Hire' category in the CSV likely refers to the e-bike demo/hire offering — see claimsNeedingHumanReview #3."
+    }
+  },
+
+  "proposedOperatorData": {
+    "name": "Evolution Bikes",
+    "slug": "evolution-bikes",
+    "website": "https://www.evolution-bikes.co.uk",
+    "websiteSource": "https://www.evolution-bikes.co.uk (active, copyright 2025 on footer)",
+
+    "contact": {
+      "phone": "01248 355770",
+      "phoneSource": "https://www.evolution-bikes.co.uk/pages/contact/",
+      "phoneNote": "Confirmed across website, Trek retailer listing, Yell, Thomson Local, and internal hire.csv. High confidence.",
+      "emailGeneral": "bangor@evolution-bikes.co.uk",
+      "emailWorkshop": "workshop@evolution-bikes.co.uk",
+      "emailInfo": "info@evolution-bikes.co.uk",
+      "emailSource": "https://www.evolution-bikes.co.uk/pages/contact/",
+      "emailNote": "Three email addresses shown on the contact page. 'bangor@' is the primary front-of-house address. Human editor should verify which to surface in the directory listing.",
+      "address": {
+        "line1": "Cyttir Lane",
+        "locality": "Bangor",
+        "county": "Gwynedd",
+        "postcode": "LL57 4DA",
+        "country": "Wales"
+      },
+      "addressSource": "https://www.evolution-bikes.co.uk/pages/contact/ and https://www.trekbikes.com/gb/en_GB/store/91613/",
+      "addressNote": "Cyttir Lane is the current address, confirmed by the official website and Trek retailer listing. An older Yelp entry (updated April 2024) still shows 141 High Street, Bangor — this appears to be a former location. Current Yelp entry may simply be stale. Use Cyttir Lane only.",
+      "socialMedia": {
+        "facebook": "https://www.facebook.com/evolutionbikesbangor/",
+        "instagramBangor": "https://www.instagram.com/evolution_bikes_shop/",
+        "instagramPorthEirias": "https://www.instagram.com/evolution_bikes_portheirias/",
+        "socialNote": "Two Instagram accounts exist — @evolution_bikes_shop for Bangor, @evolution_bikes_portheirias for the Porth Eirias outlet. The Porth Eirias account reportedly redirects followers to Bangor (see claimsNeedingHumanReview #2)."
+      }
+    },
+
+    "location": {
+      "lat": 53.220,
+      "lng": -4.120,
+      "latLngSource": "content/operators/hire.csv (internal data file)",
+      "latLngNote": "Approximate coordinates from internal hire.csv for the Bangor area. Cross-reference with LL57 4DA on Cyttir Lane before using as a map pin. Do not publish without manual verification.",
+      "region": "north_wales",
+      "regionSource": "content/operators/hire.csv and https://www.evolution-bikes.co.uk (homepage describes North Wales)",
+      "nearestTown": "Bangor",
+      "nearestTownNote": "The shop is in Bangor itself. Near junction 10 of the A55 with off-road parking — good access for visitors."
+    },
+
+    "openingHours": {
+      "tuesday": "09:00-17:00",
+      "wednesday": "09:00-17:00",
+      "thursday": "09:00-17:00",
+      "friday": "09:00-17:00",
+      "saturday": "09:00-17:00",
+      "sunday": "closed",
+      "monday": "closed",
+      "openingHoursSource": "https://www.evolution-bikes.co.uk/pages/contact/ and https://www.trekbikes.com/gb/en_GB/store/91613/",
+      "openingHoursNote": "Confirmed Tue-Sat 9am-5pm, closed Sun-Mon from official website and Trek retailer listing. An older Halfords listing suggested different hours — treat the official website as authoritative. Hours may vary seasonally; a human editor should confirm before publishing."
+    },
+
+    "established": "2007",
+    "establishedSource": "https://www.evolution-bikes.co.uk (homepage states 'established in 2007')",
+
+    "description": {
+      "short": "Evolution Bikes is a locally owned bicycle shop and workshop in Bangor, North Wales, established in 2007. They offer a broad range of bikes for all disciplines — from trail and e-MTB to road and kids — alongside a professional workshop, free e-bike demo rides, and cycle-to-work scheme support.",
+      "shortNote": "Drafted from verified website content. No AI fabrication. Needs editorial review for tone and length before publication.",
+      "full": "Established in 2007, Evolution Bikes is one of North Wales' leading independent bicycle retailers, based in Bangor on Cyttir Lane close to the A55. Run by passionate cyclists, the shop places customer satisfaction at the centre of its business and stocks an extensive range of bikes from premium brands including Trek, Specialized, Cube, Merida, Scott, Whyte, Frog, Marin, and Amflow — covering road, gravel, mountain, hybrid, electric, and kids bikes.\n\nThe professional workshop team handles everything from routine servicing to complex repairs, with bookings available online. Evolution Bikes is a Trek preferred retailer and a registered Cyclescheme retailer, making it straightforward for employers and employees to spread the cost of a new bike through the government cycle-to-work scheme. Finance options of up to 36 months are also available in-store.\n\nFor those curious about electric bikes, the shop operates a free e-bike demo service at the Bangor site, allowing customers to test models before committing to a purchase. Accessories from Bontrager, Shimano, SRAM, Lezyne, Topeak, and Abus are also stocked alongside clothing and protective gear.\n\nThe shop is open Tuesday to Saturday, 9am to 5pm, and offers bike home delivery and click-and-collect services.",
+      "fullNote": "Drafted from verified website content and confirmed third-party listings. Needs editorial review. The Porth Eirias second location is intentionally omitted pending human confirmation of its current status (see claimsNeedingHumanReview #2)."
+    },
+
+    "activities": [
+      {
+        "name": "Mountain Biking",
+        "note": "Shop stocks MTB-specific bikes and components; good access to North Wales trail network from Bangor",
+        "source": "https://www.evolution-bikes.co.uk"
+      },
+      {
+        "name": "E-Bike Hire / Demo",
+        "note": "Free e-bike demo rides bookable online at Bangor location. See claimsNeedingHumanReview #3 for hire classification note.",
+        "source": "https://www.evolution-bikes.co.uk/pages/hire-bangor/"
+      },
+      {
+        "name": "Road and Gravel Cycling",
+        "source": "https://www.evolution-bikes.co.uk"
+      },
+      {
+        "name": "Bike Servicing and Repairs",
+        "source": "https://www.evolution-bikes.co.uk"
+      }
+    ],
+
+    "brands": {
+      "bikes": ["Trek", "Specialized", "Cube", "Merida", "Scott", "Whyte", "Frog", "Marin", "Amflow"],
+      "accessories": ["Bontrager", "Shimano", "SRAM", "Lezyne", "Topeak", "Abus"],
+      "brandsSource": "https://www.evolution-bikes.co.uk (homepage and product navigation)",
+      "tradeStatus": "Trek preferred retailer",
+      "tradeStatusSource": "https://www.trekbikes.com/gb/en_GB/store/91613/"
+    },
+
+    "accreditations": [
+      {
+        "name": "Cyclescheme registered retailer",
+        "source": "https://www.cyclescheme.co.uk/retailer/evolution-bikes-bangor"
+      },
+      {
+        "name": "Trek preferred retailer",
+        "source": "https://www.trekbikes.com/gb/en_GB/store/91613/"
+      }
+    ],
+
+    "ratings": {
+      "google": {
+        "rating": 4.7,
+        "reviewCount": 174,
+        "ratingSource": "https://reviews.birdeye.com/evolution-bikes-167669706154177 (Birdeye aggregates Google reviews)",
+        "ratingNote": "4.7/5 from 174 reviews. Source is Birdeye, which aggregates Google reviews — this figure should be verified directly on Google Maps before publishing. See claimsNeedingHumanReview #1."
+      },
+      "trustpilot": {
+        "rating": null,
+        "note": "Trustpilot listing found at uk.trustpilot.com/review/evolution-bikes.co.uk but rating not extracted in this research pass. Human reviewer should check current score."
+      }
+    }
+  },
+
+  "imageResearch": {
+    "coverImage": {
+      "status": "BLOCKED",
+      "note": "No CC-licensed or openly usable cover photograph was identified for this operator or its Bangor location during this research pass. The operator's own website and social media (Facebook: evolutionbikesbangor, Instagram: @evolution_bikes_shop) contain quality photography, but these images are copyright Evolution Bikes and cannot be used without explicit written permission. Do NOT use AI-generated images.",
+      "recommendation": "Contact operator at bangor@evolution-bikes.co.uk or info@evolution-bikes.co.uk to request permission to use one of their existing photos, or source an openly licensed cycling/bike shop image from Openverse (openverse.org) filtered to LL57 / Bangor / Gwynedd. Verify any Openverse result against its stated licence before use."
+    },
+    "logo": {
+      "status": "BLOCKED",
+      "note": "The Evolution Bikes logo is visible on the website at https://www.evolution-bikes.co.uk but is copyright the business. No SVG, PNG, or press-kit version found at a public URL during this research pass. Must obtain directly from the operator."
+    },
+    "noAiImagesUsed": true
+  },
+
+  "sourcesUsed": [
+    {
+      "url": "https://www.evolution-bikes.co.uk",
+      "description": "Official operator website — primary source for address, phone, email, hours, services, brands, and description"
+    },
+    {
+      "url": "https://www.evolution-bikes.co.uk/pages/contact/",
+      "description": "Official contact page — address, phone, multiple email addresses, hours confirmed"
+    },
+    {
+      "url": "https://www.evolution-bikes.co.uk/pages/hire-bangor/",
+      "description": "Official e-bike demo/hire page for Bangor — confirms free demo offering, booking process"
+    },
+    {
+      "url": "https://www.evolution-bikes.co.uk/pages/hire/",
+      "description": "Official Porth Eirias demo page — content appeared to show Bangor info only; Porth Eirias outlet status unclear"
+    },
+    {
+      "url": "https://www.trekbikes.com/gb/en_GB/store/91613/",
+      "description": "Trek preferred retailer listing — confirms address (Cyttir Lane, LL57 4DA), phone, hours, and Trek retailer designation"
+    },
+    {
+      "url": "https://www.cyclescheme.co.uk/retailer/evolution-bikes-bangor",
+      "description": "Cyclescheme registered retailer directory — confirms current Bangor listing"
+    },
+    {
+      "url": "https://reviews.birdeye.com/evolution-bikes-167669706154177",
+      "description": "Birdeye review aggregator — source for 4.7 star / 174 review count (aggregates Google reviews; needs direct Google Maps verification)"
+    },
+    {
+      "url": "https://bangor.cylex-uk.co.uk/company/evolution-bikes-bangor-17787029.html",
+      "description": "Cylex business listing — supplementary address and contact confirmation"
+    },
+    {
+      "url": "https://www.northwaleschronicle.co.uk/news/18753128.evolution-bikes---base-bangor---secures-waterfront-location-colwyn-bay-second-site/",
+      "description": "North Wales Chronicle — news article on Evolution Bikes opening Porth Eirias second site"
+    },
+    {
+      "url": "https://www.facebook.com/evolutionbikesbangor/",
+      "description": "Official Facebook page — supplementary social media confirmation"
+    },
+    {
+      "url": "https://www.instagram.com/evolution_bikes_shop/",
+      "description": "Official Bangor Instagram — supplementary social media confirmation"
+    },
+    {
+      "url": "https://www.instagram.com/evolution_bikes_portheirias/",
+      "description": "Porth Eirias Instagram account — reportedly redirecting followers to Bangor, suggesting closure"
+    },
+    {
+      "url": "content/operators/hire.csv",
+      "description": "Internal hire operators CSV — original data row for Evolution Bikes; cross-referenced against live sources"
+    }
+  ],
+
+  "claimsNeedingHumanReview": [
+    {
+      "id": 1,
+      "claim": "Google rating is 4.7 stars from 174 reviews",
+      "source": "Birdeye aggregator (https://reviews.birdeye.com/evolution-bikes-167669706154177)",
+      "risk": "MEDIUM — Birdeye aggregates Google reviews but the live Google Maps count and rating may differ. Ratings also change frequently. A human editor should verify the current Google Maps score at the time of publishing.",
+      "action": "Search 'Evolution Bikes Bangor' on Google Maps and confirm current rating and review count before publishing."
+    },
+    {
+      "id": 2,
+      "claim": "Porth Eirias (Colwyn Bay) second location is closed",
+      "source": "Search result summary referencing Instagram redirect. North Wales Chronicle article confirmed the location opened. Direct confirmation of closure not fetched.",
+      "risk": "MEDIUM — If the Porth Eirias location is in fact still operating, the directory entry may need to reflect two locations or a separate listing. If truly closed, do not mention it in the main listing.",
+      "action": "Call 01248 355770 or email bangor@evolution-bikes.co.uk to confirm whether the Porth Eirias site is open or permanently closed before publishing."
+    },
+    {
+      "id": 3,
+      "claim": "Operator categorised as 'Bike Hire' in internal hire.csv",
+      "source": "content/operators/hire.csv",
+      "risk": "LOW-MEDIUM — The website's hire/demo offering is specifically free e-bike demos (bookable, no charge), not traditional paid-per-day bike hire for general cycling. If the directory uses 'bike hire' to mean paid rental of bikes for trails or touring, this operator may not qualify under that filter. If 'demo/test rides' counts as hire, no issue.",
+      "action": "Confirm with editorial team whether free e-bike demos qualify for the 'bike hire' category tag. Contact operator if needed to ask whether they offer paid daily/hourly bike hire beyond demos."
+    },
+    {
+      "id": 4,
+      "claim": "Opening hours are Tuesday-Saturday 9am-5pm, closed Sunday and Monday",
+      "source": "https://www.evolution-bikes.co.uk/pages/contact/",
+      "risk": "LOW — Hours may change seasonally or for public holidays. Published hours should note a verification date.",
+      "action": "Confirm hours are still current at time of publishing. Consider adding a note directing users to check the website."
+    },
+    {
+      "id": 5,
+      "claim": "Coordinates 53.220, -4.120 placed in Bangor area",
+      "source": "content/operators/hire.csv (internal)",
+      "risk": "LOW — These are approximate. Cyttir Lane, LL57 4DA should be geocoded precisely before use as a map pin.",
+      "action": "Geocode Cyttir Lane, Bangor, LL57 4DA using a mapping tool to obtain a precise lat/lng for the directory map pin."
+    }
+  ],
+
+  "commercialTierNote": "This operator is classified as unclassified_operator. No upgrade to premium or featured tier is recommended under this research task. Commercial tier decisions must follow the directory's paid-tier rules and require a separate commercial conversation with the operator.",
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "Operator identity is verified with HIGH confidence. Contact details, hours, services, brands, and description are all sourced from official/verified sources. Primary blocker is images (logo and cover photo require operator permission or an openly licensed alternative). Two secondary claims — Google rating and Porth Eirias closure — need human spot-checks before publishing but do not block QA progression. A QA editor should verify the three flagged claims, resolve the image blocker, and approve the description before the listing goes live."
+}

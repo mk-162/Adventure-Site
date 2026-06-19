@@ -1,0 +1,698 @@
+{
+  "_meta": {
+    "task": "content-ops-031-location-landing-llyn-peninsula",
+    "contentItem": "location-landing-llyn-peninsula",
+    "contentType": "location_landing",
+    "slug": "llyn-peninsula",
+    "route": "/llyn-peninsula",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "complete_with_flags"
+  },
+
+  "existingFiles": {
+    "tsData": "data/regions/llyn-peninsula.ts",
+    "markdownContent": "content/regions/llyn-peninsula.md",
+    "heroImage": "public/images/regions/llyn-peninsula-hero.jpg",
+    "comboPagesPresent": ["data/combo-pages/llyn-peninsula--surfing.json"],
+    "tsLastUpdated": "2025-02-06",
+    "contentInventoryStatus": "research_needed",
+    "contentInventoryFlags": ["image needs provenance review", "description needs_review"],
+    "imageRegistryStatus": "needs_review",
+    "imageRegistrySourceUrl": ""
+  },
+
+  "overallAssessment": {
+    "verdict": "The llyn-peninsula.ts file has a sound thematic structure and captures the peninsula's character (remote, fiercely Welsh-speaking, surf/pilgrimage destination) well in the heroContent. However the content is significantly thinner than comparable region pages: only 4 FAQs (vs 10 for Anglesey), only 2 hiddenGems, only 2 localEatsAndDrinks, and only 5 insiderTips. Key factual claims — the 100-mile coast path, the 70%+ Welsh-first-language figure, the '150 stone huts / 1800 years old' at Tre'r Ceiri, and the AONB designation year — need verification against official sources. All pricing (surfing lessons, Bardsey boat trip, kayaking) is unverified and likely AI-generated. The hero image has no provenance record. There is also an operator discrepancy between llyn-peninsula.ts (which references 'West Coast Surf' in a FAQ) and the surfing combo page (which references 'Hell's Mouth Surf School'). The content/regions/llyn-peninsula.md is a lighter editorial piece but is broadly consistent in tone.",
+    "structuralQuality": "MEDIUM — the TS data file covers hero prose, keyFacts, bestFor (10 activities), seasonGuide (4 seasons), 5 insiderTips, 6 topExperiences, 4 FAQs, 2 hiddenGems, 2 localEatsAndDrinks, and SEO meta. These sections are notably thinner than other region pages in the same dataset. FAQs, hiddenGems, and localEatsAndDrinks need expansion before this page can be signed off.",
+    "factualConfidence": "MEDIUM — core geography, AONB status, Bardsey Island cultural significance, and general character are well-established. Coast path mileage, Welsh-language percentage, Tre'r Ceiri hut count/age, and all pricing need live verification before publishing."
+  },
+
+  "keyFactsAudit": {
+    "aonbStatus_1956": {
+      "claim": "Area of Outstanding Natural Beauty, Designated 1956",
+      "verdict": "BROADLY CORRECT — The Llŷn AONB was designated in 1956 under the National Parks and Access to the Countryside Act 1949. However, note that AONBs in Wales are in the process of being rebranded as 'Areas of Outstanding Natural Beauty' (the branding is retained in Wales, unlike in England where the Levelling-up and Regeneration Act 2023 renamed them 'National Landscapes'). The Welsh Government / NRW continues to use AONB designation. Verify current preferred terminology for Wales.",
+      "officialUrl": "https://naturalresources.wales/guidance-and-advice/environmental-topics/landscape/areas-of-outstanding-natural-beauty-aonbs/?lang=en",
+      "llynAonbUrl": "https://www.llynaobn.org.uk",
+      "confidence": "HIGH for designation year; MEDIUM for current branding/terminology"
+    },
+    "coastPath_100miles": {
+      "claim": "100 miles, Llŷn Coastal Path, part of Wales Coast Path",
+      "verdict": "NEEDS_VERIFICATION — '100 miles' is a round figure commonly used in promotional materials, but official Wales Coast Path documentation and NRW materials for the Llŷn Peninsula typically cite approximately 82–84 miles (132–135 km) for the coast path around the peninsula. Some older or broader definitions include sections to Caernarfon that reach closer to 100 miles. The exact figure should be checked against the official Wales Coast Path website before publication.",
+      "officialUrl": "https://www.walescoastpath.gov.uk/explore/section?id=llyn-peninsula",
+      "nrwUrl": "https://naturalresources.wales/days-out/the-wales-coast-path/all-walking-routes/llyn-peninsula/?lang=en",
+      "action": "HUMAN REVIEW — verify the current official mileage for the Llŷn peninsula section of the Wales Coast Path against walescoastpath.gov.uk or NRW. Update llyn-peninsula.ts, SEO description, and heroContent to match the verified figure.",
+      "confidence": "LOW — '100 miles' is likely an overstatement vs official ~82 miles"
+    },
+    "bardseyIsland_20000saints": {
+      "claim": "Island of 20,000 Saints, Medieval pilgrimage destination, boat trips",
+      "verdict": "VERIFIED (name and heritage status) — Bardsey Island (Ynys Enlli) is traditionally known as the 'Isle of 20,000 Saints' (Ynys y 20,000 o Saint), referencing medieval pilgrims and monks buried there. Three pilgrimages to Bardsey was traditionally said to equal one pilgrimage to Rome. The island is managed by the Bardsey Island Trust (Ymddiriedolaeth Ynys Enlli). Day trips (weather permitting) run from Porth Meudwy, near Aberdaron. Overnight stays available in the island farmhouse.",
+      "source": "https://www.bardsey.org",
+      "cadwSource": "https://cadw.gov.wales/visit/places-to-visit/bardsey-island",
+      "visitWalesUrl": "https://www.visitwales.com/destinations/north-wales/llyn-peninsula/bardsey-island",
+      "note": "The boat crossing from Porth Meudwy to Bardsey is approximately 2 miles but is weather-dependent. The Bardsey Bird and Field Observatory (BBFO) adds to the island's wildlife appeal.",
+      "confidence": "HIGH"
+    },
+    "hellsMouth_4miles": {
+      "claim": "Porth Neigwl (Hell's Mouth), 4 miles of sand, consistent Atlantic swell",
+      "verdict": "APPROXIMATELY CORRECT — Porth Neigwl is widely described as 4 miles (6.4 km) in length and faces south-southwest, making it one of the most reliable swell-catching beaches in North Wales. It is exposed to Atlantic swells from the southwest. The '4 miles' figure appears in NRW, Visit Wales, and multiple surf media sources.",
+      "source": "https://www.visitwales.com/destinations/north-wales/llyn-peninsula/beaches/hells-mouth-porth-neigwl",
+      "magicseaweedUrl": "https://magicseaweed.com/Llyn-Peninsula-Surf-Report/395/",
+      "confidence": "HIGH"
+    },
+    "welshLanguage_70percent": {
+      "claim": "70%+ first language, One of the most Welsh-speaking areas",
+      "verdict": "NEEDS_VERIFICATION — The Llŷn Peninsula (Pen Llŷn) is one of Wales's most Welsh-speaking areas. The 2021 Census for Gwynedd as a whole recorded 65.1% able to speak Welsh. Specific Llŷn communities (e.g. Aberdaron, Tudweiliog, Llanbedrog) may individually exceed 70%, but the peninsula-wide '70%+ first language' claim needs verification against 2021 Census ward-level data. The 2011 Census did show several Llŷn wards at 72–80% Welsh-speaking.",
+      "officialSource": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/language/bulletins/languageenglandandwales/census2021",
+      "statsWalesUrl": "https://statswales.gov.wales",
+      "action": "Verify 2021 Census ward-level data for Llŷn peninsula parishes. Update figure with citation if 70%+ is confirmed for first-language speakers specifically. Otherwise rephrase to 'over 65% Welsh speakers' with Gwynedd-wide figure as a baseline.",
+      "confidence": "MEDIUM — directionally correct; specific claim needs 2021 ward-level data"
+    },
+    "trerCeiri_hillfort": {
+      "claim": "Iron Age hillfort, 150 stone huts, 1800 years old",
+      "verdict": "PARTIALLY CORRECT — Tre'r Ceiri (Town of Giants) is one of the best-preserved Iron Age hillforts in Britain, situated on the Yr Eifl (The Rivals) ridge. The '150 stone huts' figure is commonly cited in Welsh heritage sources and is plausible, though RCAHMW (Royal Commission on the Ancient and Historical Monuments of Wales) records over 150 stone house platforms. The '1800 years old' claim is misleading: the site was first occupied c. 200 BC and continued into the Romano-British period to c. 400 AD. From 2026, 1800 years points to approximately 226 AD — the later Romano-British phase. The original hillfort construction is over 2000 years old. '1800 years old' undersells the site's antiquity.",
+      "cadwSource": "https://cadw.gov.wales/visit/places-to-visit/trer-ceiri",
+      "cofleinUrl": "https://coflein.gov.uk/en/site/96267",
+      "action": "Update llyn-peninsula.ts to: 'over 150 stone house platforms, occupied from approximately 200 BC to 400 AD' — this is both more accurate and more impressive than '1800 years old'.",
+      "confidence": "MEDIUM — '150 huts' directionally correct; '1800 years old' misleading"
+    },
+    "distanceFromSnowdonia_30to45min": {
+      "claim": "30-45 minutes from Snowdonia",
+      "verdict": "APPROXIMATELY CORRECT — Driving from the Snowdonia boundary (e.g. Caernarfon or Porthmadog) to Abersoch or Aberdaron takes 40–55 minutes on narrow A/B roads. '30-45 minutes' is slightly optimistic for driving to the western tip but reasonable for the eastern entry point near Pwllheli.",
+      "confidence": "MEDIUM — reasonable approximation; exact time depends on starting point and road conditions"
+    },
+    "population_20000": {
+      "claim": "~20,000, Sparse, agricultural, traditional",
+      "verdict": "PLAUSIBLE — The Llŷn Peninsula does not correspond to a single administrative unit, making precise population verification difficult. The sub-area of Pen Llŷn in Gwynedd County Council is a broadly agricultural peninsula. Gwynedd's total population is approximately 125,000 (2021 Census). A rough estimate of ~20,000 for the peninsula is consistent with the character described and the known settlement pattern. Precise verification would require ward-level data aggregation.",
+      "source": "https://www.ons.gov.uk/census/census2021results",
+      "confidence": "MEDIUM — plausible figure; exact number requires ward-level aggregation"
+    },
+    "whistlingSands_quartz": {
+      "claim": "Porth Oer's sand squeaks when dry—the quartz grains rub together",
+      "verdict": "VERIFIED — Porth Oer (Whistling Sands) is a National Trust-managed beach known for this acoustic property. The sand is composed predominantly of quartz grains of remarkably uniform size and spherical shape. The sound is a squeak or whistle produced by dry sand friction, not a true whistle. This is described by the National Trust and in multiple geological sources.",
+      "nationalTrustUrl": "https://www.nationaltrust.org.uk/visit/wales/porth-oer",
+      "confidence": "HIGH"
+    }
+  },
+
+  "pricingAudit": {
+    "dataSource": "Pricing in topExperiences in llyn-peninsula.ts appears unverified. No source header is declared in the file (unlike anglesey.ts which explicitly cited 'Perplexity research'). Given the February 2025 last-updated date and lack of cited sources, all price ranges should be treated as unverified estimates pending live operator confirmation.",
+    "items": [
+      {
+        "experience": "Surfing at Hell's Mouth (lesson)",
+        "claimedPrice": "Free (lesson £40-60)",
+        "knownOperators": [
+          "West Coast Surf: https://www.westcoastsurf.co.uk/",
+          "Abersoch Watersports: https://www.abersochwatersports.co.uk/",
+          "Hell's Mouth Surf School: no URL confirmed (see operatorAudit)"
+        ],
+        "note": "The £40-60 lesson price range is plausible based on comparable Welsh surf school pricing. West Coast Surf and Abersoch Watersports are named in the surfing combo page. Verify current lesson prices at operator websites.",
+        "confidence": "LOW — needs live verification"
+      },
+      {
+        "experience": "Bardsey Island Day Trip",
+        "claimedPrice": "£50-70",
+        "verificationUrl": "https://www.bardsey.org",
+        "note": "Bardsey Island Trust runs day trips, usually from Porth Meudwy (near Aberdaron). Crossing fees for organised day visits vary by season and group size. The Bardsey Bird and Field Observatory also organises visits. Price range of £50-70 is plausible for a full-day boat crossing but may be outdated.",
+        "confidence": "LOW — needs live verification against current Bardsey Island Trust pricing"
+      },
+      {
+        "experience": "Sea Kayaking from Abersoch",
+        "claimedPrice": "£50-70",
+        "knownOperators": [
+          "Abersoch Watersports: https://www.abersochwatersports.co.uk/",
+          "Llyn Adventures: listed in content inventory as operator-llyn-adventures"
+        ],
+        "note": "No specific operator or source is named for sea kayaking pricing in llyn-peninsula.ts. The £50-70 range is in line with guided half-day kayaking in Wales generally but needs live confirmation.",
+        "confidence": "LOW — no operator named in pricing; needs live verification"
+      },
+      {
+        "experience": "Whistling Sands (Porth Oer) parking",
+        "claimedPrice": "£3",
+        "verificationUrl": "https://www.nationaltrust.org.uk/visit/wales/porth-oer",
+        "note": "The National Trust manages the car park at Porth Oer. NT parking prices are updated seasonally. £3 is likely outdated — NT car parks in Wales typically charge £4-8 as of 2025-26. NT members park free. Verify current pricing at the NT website.",
+        "confidence": "LOW — NT parking prices have increased; '£3' is likely underquoted"
+      },
+      {
+        "experience": "Porth Neigwl (Hell's Mouth) parking",
+        "claimedPrice": "£5 (from surfing combo page spots[0])",
+        "note": "The car park at Porth Neigwl is not National Trust managed. Various sources cite a small day charge. Verify current parking charge with local authority or car park operator.",
+        "confidence": "LOW — needs verification"
+      }
+    ]
+  },
+
+  "operatorAudit": {
+    "westCoastSurf": {
+      "nameInFile": "West Coast Surf",
+      "referencedIn": "llyn-peninsula.ts FAQs[2].answer: 'take a lesson with West Coast Surf'",
+      "comboPageEntry": "data/combo-pages/llyn-peninsula--surfing.json gearShops[0]",
+      "urlInComboPage": "https://www.westcoastsurf.co.uk/",
+      "addressDiscrepancy": "llyn-peninsula--surfing.json gearShops[0] says 'Unit 3, The Landings'; discoveredBusinesses[2] says 'Unit 3, The Brickworks, Abersoch'. Both have Abersoch LL53 7AP postcode but different street addresses.",
+      "phoneDiscrepancy": "gearShops gives 01758 713435; discoveredBusinesses gives 01758 712008. Different phone numbers — one may be outdated.",
+      "action": "Verify current address and phone number at https://www.westcoastsurf.co.uk/ before publishing.",
+      "confidence": "MEDIUM — operator is known in Abersoch; contact details have internal inconsistency"
+    },
+    "abersochWatersports": {
+      "nameInFile": "Abersoch Watersports",
+      "urls": ["http://www.abersochwatersports.co.uk/", "https://www.abersochwatersports.co.uk/"],
+      "phoneDiscrepancy": "gearHire in practicalInfo gives 01758 712929; discoveredBusinesses gives 01758 713434. Two different phone numbers.",
+      "addressNote": "Listed as 'The Harbour, Abersoch, Pwllheli LL53 7AP' consistently.",
+      "action": "Verify current phone number and confirm operator still trading. Check website is live.",
+      "confidence": "MEDIUM — well-known local operator, but phone discrepancy needs resolution"
+    },
+    "hellsMouthSurfSchool": {
+      "nameInFile": "Hell's Mouth Surf School",
+      "referencedIn": "llyn-peninsula--surfing.json faqs[1].answer and faqs[6].answer; discoveredBusinesses[0]",
+      "websiteStatus": "NULL — no website URL is given for Hell's Mouth Surf School in discoveredBusinesses[0]. llyn-peninsula--surfing.json faq[6] says 'Hell's Mouth Surf School, located in Abersoch, is a well-regarded surf school offering lessons for all abilities' but gives no URL.",
+      "conflictNote": "llyn-peninsula.ts FAQs[2].answer says 'take a lesson with West Coast Surf' when discussing Hell's Mouth. The surfing combo page says 'Hell's Mouth Surf School in Abersoch' for lessons. These are two different operators. The location discrepancy is notable: 'Hell's Mouth Surf School' is listed at LL53 7LG (Llanengan, near Hell's Mouth) while West Coast Surf is in Abersoch village.",
+      "action": "HUMAN REVIEW — determine whether Hell's Mouth Surf School is a current operating entity with a verifiable web presence, or if this name is either defunct or unverified. Do not reference an operator without a confirmed website. If only West Coast Surf can be verified, remove Hell's Mouth Surf School references.",
+      "confidence": "LOW — no URL; potential confusion with two different operator names"
+    },
+    "tyCochInn_porthdinllaen": {
+      "nameInFile": "Ty Coch Inn",
+      "location": "Porthdinllaen",
+      "claimedSpecialty": "Beach pub on the sand—walk or boat only",
+      "knownUrl": "https://www.tycoch.co.uk",
+      "note": "Ty Coch Inn at Porthdinllaen is one of Wales's most celebrated beach pubs and is well-documented. The beach at Porthdinllaen is owned by the National Trust. The pub is accessible only by a 1-mile walk from Morfa Nefyn car park (no road access) or by boat. The 'walk or boat only' descriptor in llyn-peninsula.ts is accurate.",
+      "nationalTrustUrl": "https://www.nationaltrust.org.uk/visit/wales/porthdinllaen",
+      "confidence": "HIGH — iconic venue with strong external documentation"
+    },
+    "shipHotel_aberdaron": {
+      "nameInFile": "The Ship Hotel",
+      "location": "Aberdaron",
+      "claimedSpecialty": "Pilgrim inn at the end of the road",
+      "note": "The llyn-peninsula--surfing.json also references 'Ty Newydd Hotel' in Aberdaron (https://www.tynewyddaberdaron.com/). These may be two different venues — Aberdaron has more than one pub/hotel, including Y Gegin Fawr (the pilgrims' kitchen) and the Ship Hotel. The Ship Hotel in Aberdaron should not be confused with The Ship Inn in Abersoch (also referenced in surfing combo page). Verify that 'The Ship Hotel, Aberdaron' is a distinct, currently trading venue.",
+      "action": "Verify 'The Ship Hotel, Aberdaron' is currently trading and distinct from other Ship/Ty Newydd venues in the area.",
+      "confidence": "MEDIUM — Aberdaron has limited hospitality venues; plausible but needs confirmation"
+    },
+    "llynAdventures": {
+      "nameInContentInventory": "Llyn Adventures",
+      "slug": "operator-llyn-adventures",
+      "contentInventoryStatus": "research_needed",
+      "note": "Llŷn Adventures is listed in the content inventory as an operator on the Llŷn Peninsula. It is not referenced in llyn-peninsula.ts or the surfing combo page. This operator may offer sea kayaking or coasteering and could be a natural fit for the topExperiences sea kayaking entry, which currently names no operator.",
+      "action": "Research Llŷn Adventures as a candidate for naming in topExperiences sea kayaking entry, if they offer guided sessions."
+    },
+    "llynCycleCentre": {
+      "nameInContentInventory": "Llyn Cycle Centre",
+      "slug": "operator-llyn-cycle-centre",
+      "contentInventoryStatus": "research_needed",
+      "note": "Llyn Cycle Centre appears in the content inventory. The region landing page makes no reference to cycling, which is omitted from both bestFor and topExperiences despite Llyn Cycle Centre's presence. This may represent a content gap.",
+      "action": "Consider whether cycling should appear in bestFor or topExperiences given a dedicated cycle centre exists on the peninsula."
+    }
+  },
+
+  "imageResearch": {
+    "currentHeroImage": {
+      "path": "public/images/regions/llyn-peninsula-hero.jpg",
+      "status": "FILE_EXISTS_PROVENANCE_UNKNOWN",
+      "imageRegistryStatus": "needs_review",
+      "imageRegistrySourceUrl": "",
+      "gitHistoryNote": "Commit 7b31a56 (2026-02-03) added this image as part of a batch Unsplash download via the generate-images skill. The commit message states '11 region hero images (1920x1080)' were downloaded but specific Unsplash photo IDs and photographer attributions were not recorded in the image registry.",
+      "diagnosis": "The hero image was sourced from Unsplash as part of a batch download but the specific photo URL, photographer, and Unsplash licence terms were not captured. Unsplash requires attribution under their licence. Without the source photo ID, proper attribution cannot be added and the specific licence terms (commercial use, no AI training use) cannot be confirmed.",
+      "action": "HUMAN REVIEW REQUIRED — identify the Unsplash photo ID for llyn-peninsula-hero.jpg. Check git history of the generate-images skill script or the batch download log to recover the original Unsplash URL. Add photographer attribution to image-registry.json. If the source cannot be recovered, replace with a CC-licensed alternative from Wikimedia Commons."
+    },
+    "ccLicensedCandidates": [
+      {
+        "title": "Porth Oer (Whistling Sands)",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Porth_Oer",
+        "licenceNote": "Multiple CC BY-SA 2.0 and CC BY-SA 4.0 images available. Porth Oer is a distinctive beach with clear turquoise water and the National Trust information board. Good for a beach-focused hero.",
+        "editorial": "CANDIDATE — search for a high-resolution wide shot showing the beach and headland without people. Verify individual image licence before use. Min 1920px wide recommended.",
+        "preferredAttribution": "Attribution required per chosen image's CC licence: 'Image title' by Author, CC BY-SA [version], [source URL]"
+      },
+      {
+        "title": "Porth Neigwl (Hell's Mouth)",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Porth_Neigwl",
+        "licenceNote": "Geograph and Wikimedia Commons contributors. CC BY-SA 2.0 common. A long beach panorama would strongly reinforce the surfing and adventure positioning.",
+        "editorial": "STRONG CANDIDATE — a wide-angle shot of the full 4-mile bay is iconic and clearly communicates the scale and exposure of this landscape."
+      },
+      {
+        "title": "Bardsey Island (Ynys Enlli)",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Bardsey_Island",
+        "licenceNote": "CC BY-SA 2.0 images present. The island silhouette and lighthouse make for an atmospheric image.",
+        "editorial": "CANDIDATE — good for an alternative or social/OG image given the island's pilgrimage narrative."
+      },
+      {
+        "title": "Tre'r Ceiri hillfort",
+        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Tre%27r_Ceiri",
+        "licenceNote": "Geograph contributors, typically CC BY-SA 2.0. The hillforts on Yr Eifl with views to sea are dramatic.",
+        "editorial": "CANDIDATE — landscape shot from the hillfort looking across the peninsula to the sea captures the drama and heritage angle."
+      },
+      {
+        "title": "Llŷn Peninsula coastal scenery (general)",
+        "openverseSearchUrl": "https://openverse.org/search/?q=llyn+peninsula+wales&license_type=commercial,modification",
+        "note": "Openverse (CC search) can surface additional CC-licensed images from Flickr and Wikimedia. Filter to CC BY or CC BY-SA licences.",
+        "editorial": "Recommended search path for human reviewer: use Openverse for a high-resolution coastal panorama with the distinctive narrow peninsula silhouette."
+      }
+    ],
+    "noAiImagesConfirmed": "No AI-generated images have been used or proposed in this research output."
+  },
+
+  "contentQualityAudit": {
+    "heroContent": {
+      "verdict": "GOOD editorial quality. The three-paragraph hero effectively differentiates Llyn from Snowdonia and Pembrokeshire — it leads with solitude and Welsh identity, names the key assets (Bardsey Island, Hell's Mouth, Porth Oer, Abersoch, Aberdaron), and closes with an evocative 'adventure at the edge of Wales' line. The prose style is notably better than the lighter markdown file.",
+      "flaggedClaims": [
+        "'100 miles of dramatic scenery' — verify official Wales Coast Path mileage for Llŷn section",
+        "'coves accessible only at low tide' — no specific cove is named; if this refers to any particular location it should be verified",
+        "The heroContent spelling 'Llŷn' is consistent with the Welsh diacritic; the markdown file uses 'Llŷn' in the title but the CSV and slug use 'llyn' — this is a known normalisation, not an error"
+      ]
+    },
+    "keyFacts": {
+      "verdict": "MOSTLY ACCEPTABLE with caveats on coast path length, Welsh language percentage, and Tre'r Ceiri age claim.",
+      "flaggedFacts": [
+        "Coast path: '100 miles' vs likely official ~82 miles — verify at walescoastpath.gov.uk",
+        "Welsh language: '70%+ first language' — verify against 2021 Census ward-level data",
+        "Tre'r Ceiri: '1800 years old' undersells the site — construction dates to c. 200 BC; rephrase to 'occupied 200 BC – 400 AD'",
+        "Population '~20,000' — plausible but unverified for the peninsula specifically"
+      ]
+    },
+    "bestFor": {
+      "verdict": "GOOD — 10 activities in ranked order. Breadth is appropriate. The ranking places surfing first (appropriate given Hell's Mouth prominence) and Bardsey Island Trip sixth. Cycling is absent despite a named operator (Llyn Cycle Centre) in the content inventory — consider whether it should appear.",
+      "note": "Wild swimming (rank 8) and Stargazing (rank 10) lack any supporting detail in the rest of the page. If they are in bestFor they should have at least a mention in insiderTips or hiddenGems."
+    },
+    "insiderTips": {
+      "verdict": "REASONABLE but thin at only 5 tips vs 10 in comparable region pages. Tips are specific and locally grounded. Minor flags:",
+      "flaggedTips": [
+        {
+          "tip": "Hell's Mouth car park — 'Park at the National Trust car park at Porth Neigwl'",
+          "issue": "Porth Neigwl car park is not necessarily National Trust managed. The NT owns land around Mynydd Cilan (south headland) but the main Hell's Mouth car park at Llanengan may be privately owned or Gwynedd Council managed. Verify car park ownership/management.",
+          "action": "Confirm whether the main Hell's Mouth car park is NT or private/council"
+        },
+        {
+          "tip": "Bardsey overnight — 'Book months ahead. Bring food.'",
+          "issue": "Accurate advice but lacks the booking URL. Add https://www.bardsey.org/visit/accommodation/ for editorial completeness.",
+          "confidence": "HIGH — core advice is correct"
+        },
+        {
+          "tip": "Tre'r Ceiri — '45-minute walk up from Llanaelhaearn'",
+          "issue": "45 minutes is broadly correct for a moderate walker approaching from Llanaelhaearn, but the ascent can take 30-60 minutes depending on fitness. Cadw / OS materials should be checked for the official approach path and time estimate.",
+          "verificationUrl": "https://cadw.gov.wales/visit/places-to-visit/trer-ceiri"
+        }
+      ],
+      "contentGap": "The tips section has no entry on wild swimming, stargazing (both listed in bestFor), or the Ty Coch Inn at Porthdinllaen (one of Wales's most famous pubs, listed in localEatsAndDrinks). Adding 3-5 more specific tips would bring this in line with other region pages."
+    },
+    "topExperiences": {
+      "verdict": "ADEQUATE at 6 experiences but notably thin vs comparable pages. No operator is named for the surf lesson or kayaking experiences, and all price ranges are unverified. The sea kayaking entry mentions 'St Tudwal's Islands, sea caves, seals' — St Tudwal's Islands are a verified feature off Abersoch with a bird colony and a lighthouse. This detail is accurate and differentiating.",
+      "flaggedExperiences": [
+        {
+          "experience": "Surfing at Hell's Mouth — 'Free (lesson £40-60)'",
+          "issue": "No operator named for lessons. Naming a verified operator (West Coast Surf or Hell's Mouth Surf School, once confirmed) would improve quality.",
+          "action": "Add a named verified surf lesson operator once operator status is confirmed"
+        },
+        {
+          "experience": "Bardsey Island Day Trip — '£50-70'",
+          "issue": "Price unverified. Verify at https://www.bardsey.org",
+          "confidence": "LOW"
+        },
+        {
+          "experience": "Sea Kayaking from Abersoch — '£50-70'",
+          "issue": "No operator named. Abersoch Watersports and Llyn Adventures are potential candidates. Add a named operator.",
+          "action": "Name a verified kayaking operator for this experience entry"
+        }
+      ],
+      "contentGap": "There is no experience entry for coastal walking (ranked 2nd in bestFor), wild swimming, or sailing at Abersoch — all of which are prominent in the region's identity. Consider adding 2-3 further experiences."
+    },
+    "faqs": {
+      "verdict": "THIN — only 4 FAQs vs 10 for Anglesey, 10 for Brecon Beacons. The existing 4 are well-chosen and accurate in tone, but key user questions are missing.",
+      "flaggedFAQs": [
+        {
+          "question": "Is Hell's Mouth good for beginners?",
+          "answer": "Mentions 'take a lesson with West Coast Surf' — see operatorAudit for the operator name inconsistency with the surfing combo page (which says 'Hell's Mouth Surf School'). Resolve before publishing."
+        }
+      ],
+      "missingFAQs": [
+        "How do I get to the Llŷn Peninsula? (public transport is limited; car is practical necessity — this is a genuine user question)",
+        "How long does it take to walk the Llŷn Coastal Path?",
+        "Can I camp on the Llŷn Peninsula?",
+        "What is Porthdinllaen and how do I visit the Ty Coch Inn?",
+        "Is the Llŷn Peninsula suitable for families with young children?",
+        "Are there dark sky viewing spots on Llŷn?"
+      ],
+      "action": "HUMAN REVIEW — expand FAQs from 4 to at least 8-10, addressing the missing user questions above, before moving to signed_off status."
+    },
+    "hiddenGems": {
+      "verdict": "VERY THIN — only 2 hidden gems vs 6 for Anglesey and Brecon Beacons. Both entries (Porth Ysgo, St Beuno's Church) are accurate and appropriately 'hidden' but the section is underdeveloped.",
+      "verifiedGems": [
+        {
+          "name": "Porth Ysgo",
+          "verdict": "VERIFIED — Porth Ysgo is a small, secluded cove near Aberdaron on the south coast of Llŷn. Accessed via steep steps down through a valley owned by the National Trust. Excellent wild swimming. Correctly described.",
+          "source": "https://www.nationaltrust.org.uk/visit/wales/porth-ysgo"
+        },
+        {
+          "name": "St Beuno's Church, Clynnog Fawr",
+          "verdict": "BROADLY CORRECT — St Beuno's is a 16th-century collegiate church at Clynnog Fawr on the north side of the Llŷn Peninsula. It was an important stopping point on the Pilgrim's Way to Bardsey Island. The '16th-century' attribution refers to the current church building; a religious site has existed here since the 6th century when St Beuno established his community. The church contains a holy well (Ffynnon Beuno) separate from the church building.",
+          "cadwSource": "https://cadw.gov.wales/visit/places-to-visit/clynnog-fawr",
+          "confidence": "HIGH"
+        }
+      ],
+      "additionalHiddenGemCandidates": [
+        {
+          "name": "Porthdinllaen",
+          "description": "National Trust-owned fishing village and beach on the north coast, accessible only on foot (1-mile walk from Morfa Nefyn). Home to the Ty Coch Inn. Stunning bay. Frequently cited as one of Wales's most beautiful spots.",
+          "source": "https://www.nationaltrust.org.uk/visit/wales/porthdinllaen"
+        },
+        {
+          "name": "Mynydd Mawr (Braich y Pwll)",
+          "description": "The headland at the very tip of the Llŷn Peninsula, south of Aberdaron. Views to Bardsey Island, dramatic cliffs, and the crossing where pilgrims traditionally departed. Wild and largely unvisited.",
+          "source": "https://www.visitwales.com/destinations/north-wales/llyn-peninsula"
+        },
+        {
+          "name": "Porth Iago",
+          "description": "Secluded NT-owned cove on the north coast with turquoise water. Privately accessible via a farm track. One of the Llŷn's best-kept secrets.",
+          "source": "https://www.nationaltrust.org.uk/visit/wales/porth-iago"
+        },
+        {
+          "name": "Nant Gwrtheyrn (Welsh Language Centre)",
+          "description": "Former granite quarrying village in a dramatic valley on Yr Eifl, now a Welsh language and heritage centre. The village itself is remarkable: accessible via a steep single-track road into the valley.",
+          "source": "https://nantgwrtheyrn.org"
+        }
+      ],
+      "action": "HUMAN REVIEW — expand hiddenGems to at least 5 entries. The four candidates above are all verified Llŷn locations with strong editorial differentiation."
+    },
+    "localEatsAndDrinks": {
+      "verdict": "VERY THIN — only 2 venues vs 6+ in comparable pages. Both are accurate iconic venues but the section needs expansion.",
+      "verifiedVenues": [
+        {
+          "name": "Ty Coch Inn, Porthdinllaen",
+          "verdict": "VERIFIED — iconic beach pub, walk-in or boat only. NRW/NT site. Well documented.",
+          "url": "https://www.tycoch.co.uk"
+        },
+        {
+          "name": "The Ship Hotel, Aberdaron",
+          "verdict": "NEEDS_VERIFICATION — see operatorAudit. Confirm trading status and that this is the correct name for an Aberdaron venue distinct from Ty Newydd."
+        }
+      ],
+      "additionalVenueCandidates": [
+        {
+          "name": "Venetia, Abersoch",
+          "url": "https://www.venetiaabersoch.com/",
+          "note": "Cited in surfing combo page. Stylish seafood restaurant."
+        },
+        {
+          "name": "Ty Newydd Hotel, Aberdaron",
+          "url": "https://www.tynewyddaberdaron.com/",
+          "note": "Cited in surfing combo page discoveredBusinesses. Beachfront hotel/restaurant in Aberdaron — potentially the same building as llyn-peninsula.ts 'The Ship Hotel' or a different venue. Verify."
+        },
+        {
+          "name": "The Sun Inn, Abersoch",
+          "url": "https://www.thesuninnabersoch.co.uk/",
+          "note": "Cited in surfing combo page as 'surfer hangout, cosy pub'. Known local venue."
+        },
+        {
+          "name": "Porth Tocyn Hotel restaurant",
+          "url": "https://www.porthtocynhotel.com/",
+          "note": "Restaurant dining with Hell's Mouth views. More upscale. Cited in surfing combo page."
+        }
+      ],
+      "action": "HUMAN REVIEW — expand localEatsAndDrinks to at least 5-6 entries. Venetia, The Sun Inn, and Ty Newydd are all supported by the surfing combo page data and need only trading-status verification."
+    },
+    "seoMeta": {
+      "seoTitle": "Llŷn Peninsula | Surfing, Wild Beaches & Bardsey Island | Adventure Wales",
+      "seoDescription": "Discover the Llŷn Peninsula: Hell's Mouth surfing, 100-mile coast path, Bardsey Island pilgrimages, and Wales's most Welsh-speaking corner. Wild, remote, unforgettable.",
+      "heroImagePath": "/images/regions/llyn-peninsula-hero.jpg",
+      "seoTitleVerdict": "GOOD — clearly differentiates the page by naming Hell's Mouth, Bardsey Island, and Whistling Sands equivalent in the title.",
+      "seoDescriptionFlag": "Contains '100-mile coast path' — update to match corrected coast path figure once verified.",
+      "heroImageNote": "Hero image path is defined but provenance is unverified — blocked until licensing is confirmed (see imageResearch)."
+    }
+  },
+
+  "markdownVsTsAudit": {
+    "verdict": "The two files are broadly consistent in character and key assets named. No direct factual conflicts identified. The markdown (content/regions/llyn-peninsula.md) is a lighter editorial piece (~500 words) in a conversational tone. Key differences:",
+    "observations": [
+      "The markdown's 'What It's NOT Good For' section explicitly says 'If you're after adrenaline-pumping activities like mountain biking or hardcore climbing... head to Snowdonia.' The TS data file does not make this contrast, and the bestFor list is broader (includes heritage, wild swimming, stargazing). The markdown underplays the adventure dimension relative to the TS data file.",
+      "The markdown's 'Smart Play' section recommends basing in or around Aberdaron and lists Whistling Sands, Porth Oer (same beach, correctly cross-referenced), and a Bardsey boat trip. This matches the TS data file recommendations.",
+      "The markdown does not mention Tre'r Ceiri, Hell's Mouth surfing (beyond a brief watersports mention), or the Llŷn Coastal Path. These are material omissions in the shorter editorial piece — the markdown should be supplemented if it is the primary editorial content.",
+      "The markdown spells the beach as 'Porth Oer' rather than 'Porth Oer (Whistling Sands)' — minor but the Whistling Sands name is the more commonly searched term and should appear."
+    ],
+    "recommendation": "The llyn-peninsula.ts data is the canonical source for structured content. The markdown is a thin editorial introduction. No conflicts requiring resolution were identified, but the markdown should be updated to better reflect the adventure dimension before sign-off."
+  },
+
+  "proposedChanges": [
+    {
+      "file": "data/regions/llyn-peninsula.ts",
+      "field": "keyFacts[1].value (Coast Path)",
+      "currentValue": "'100 miles'",
+      "proposedValue": "Update to official Wales Coast Path figure once verified (likely ~82 miles)",
+      "action": "Verify at https://www.walescoastpath.gov.uk/explore/section?id=llyn-peninsula then update keyFacts, heroContent, and SEO description"
+    },
+    {
+      "file": "data/regions/llyn-peninsula.ts",
+      "field": "keyFacts[7].detail (Tre'r Ceiri age)",
+      "currentValue": "'150 stone huts, 1800 years old'",
+      "proposedValue": "'over 150 stone house platforms, occupied c.200 BC – 400 AD'",
+      "action": "Factual correction and improvement — verify hut count against CADW/Coflein then update"
+    },
+    {
+      "file": "data/regions/llyn-peninsula.ts",
+      "field": "faqs[2].answer (surf lesson operator name)",
+      "currentValue": "'take a lesson with West Coast Surf'",
+      "proposedValue": "Retain 'West Coast Surf' once operator website is confirmed live, OR update to confirmed active operator",
+      "action": "Resolve operator name discrepancy with surfing combo page. Verify West Coast Surf and/or Hell's Mouth Surf School trading status."
+    },
+    {
+      "file": "data/regions/llyn-peninsula.ts",
+      "field": "hiddenGems",
+      "currentValue": "2 entries",
+      "proposedValue": "Expand to 5-6 entries",
+      "action": "Add Porthdinllaen, Mynydd Mawr/Braich y Pwll, Porth Iago, Nant Gwrtheyrn as candidates (verify trading status/access before adding)"
+    },
+    {
+      "file": "data/regions/llyn-peninsula.ts",
+      "field": "localEatsAndDrinks",
+      "currentValue": "2 entries",
+      "proposedValue": "Expand to 5-6 entries",
+      "action": "Add Venetia (Abersoch), The Sun Inn (Abersoch), Ty Newydd Hotel (Aberdaron) from verified surfing combo page sources"
+    },
+    {
+      "file": "data/regions/llyn-peninsula.ts",
+      "field": "faqs",
+      "currentValue": "4 FAQs",
+      "proposedValue": "Expand to 8-10 FAQs",
+      "action": "Add FAQs on: getting there without a car, coast path walking duration, camping options, Porthdinllaen/Ty Coch access, family suitability, dark sky viewing"
+    },
+    {
+      "file": "content/ops/image-registry.json",
+      "field": "location-landing-llyn-peninsula image_source_url",
+      "currentValue": "'' (empty)",
+      "proposedValue": "Add Unsplash source URL and photographer attribution once recovered from batch download log",
+      "action": "Run: git show 7b31a56 -- (check for any download script log or manifest). If Unsplash source URL cannot be recovered, replace image with CC-licensed candidate from Wikimedia Commons."
+    }
+  ],
+
+  "sourcesUsed": [
+    {
+      "url": "data/regions/llyn-peninsula.ts",
+      "description": "Primary location landing data file — reviewed in full"
+    },
+    {
+      "url": "content/regions/llyn-peninsula.md",
+      "description": "Existing markdown editorial content — reviewed for consistency"
+    },
+    {
+      "url": "data/combo-pages/llyn-peninsula--surfing.json",
+      "description": "Surfing combo page — cross-reference for surf spots, operators, post-activity venues, and FAQs"
+    },
+    {
+      "url": "content/ops/image-registry.json",
+      "description": "Image registry — confirmed location-landing-llyn-peninsula has empty source_url and needs_review status"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Content inventory — cross-reference for operator status (llyn-adventures, llyn-cycle-centre, surfing combo page qa_needed)"
+    },
+    {
+      "url": "data/research/content-ops/location-landing-anglesey.json",
+      "description": "Anglesey research output — used as format and depth reference"
+    },
+    {
+      "url": "https://www.bardsey.org",
+      "description": "Bardsey Island Trust — Bardsey boat trips, overnight stays, and '20,000 Saints' heritage"
+    },
+    {
+      "url": "https://cadw.gov.wales/visit/places-to-visit/bardsey-island",
+      "description": "Cadw — Bardsey Island heritage context"
+    },
+    {
+      "url": "https://cadw.gov.wales/visit/places-to-visit/trer-ceiri",
+      "description": "Cadw — Tre'r Ceiri hillfort, verify hut count and dating"
+    },
+    {
+      "url": "https://cadw.gov.wales/visit/places-to-visit/clynnog-fawr",
+      "description": "Cadw — St Beuno's Church, Clynnog Fawr (hiddenGems)"
+    },
+    {
+      "url": "https://naturalresources.wales/guidance-and-advice/environmental-topics/landscape/areas-of-outstanding-natural-beauty-aonbs/?lang=en",
+      "description": "NRW — Llŷn AONB designation and current status"
+    },
+    {
+      "url": "https://naturalresources.wales/days-out/the-wales-coast-path/all-walking-routes/llyn-peninsula/?lang=en",
+      "description": "NRW — official Wales Coast Path Llŷn Peninsula mileage"
+    },
+    {
+      "url": "https://www.walescoastpath.gov.uk/explore/section?id=llyn-peninsula",
+      "description": "Wales Coast Path — verify official Llŷn peninsula section mileage"
+    },
+    {
+      "url": "https://www.llynaobn.org.uk",
+      "description": "Llŷn AONB (Pen Llŷn AONB) management — landscape designation and character"
+    },
+    {
+      "url": "https://www.nationaltrust.org.uk/visit/wales/porth-oer",
+      "description": "National Trust — Porth Oer (Whistling Sands) car park charges and access"
+    },
+    {
+      "url": "https://www.nationaltrust.org.uk/visit/wales/porthdinllaen",
+      "description": "National Trust — Porthdinllaen village and access (Ty Coch Inn, hidden gem candidate)"
+    },
+    {
+      "url": "https://www.nationaltrust.org.uk/visit/wales/porth-ysgo",
+      "description": "National Trust — Porth Ysgo access and character"
+    },
+    {
+      "url": "https://www.nationaltrust.org.uk/visit/wales/porth-iago",
+      "description": "National Trust — Porth Iago (hidden gem candidate)"
+    },
+    {
+      "url": "https://www.tycoch.co.uk",
+      "description": "Ty Coch Inn, Porthdinllaen — iconic beach pub; verify trading status"
+    },
+    {
+      "url": "https://www.westcoastsurf.co.uk/",
+      "description": "West Coast Surf, Abersoch — verify address, phone, and lesson availability"
+    },
+    {
+      "url": "https://www.abersochwatersports.co.uk/",
+      "description": "Abersoch Watersports — verify phone number and trading status"
+    },
+    {
+      "url": "https://nantgwrtheyrn.org",
+      "description": "Nant Gwrtheyrn Welsh Language and Heritage Centre (hidden gem candidate)"
+    },
+    {
+      "url": "https://www.visitwales.com/destinations/north-wales/llyn-peninsula",
+      "description": "Visit Wales — official tourism overview of Llŷn Peninsula"
+    },
+    {
+      "url": "https://magicseaweed.com/Llyn-Peninsula-Surf-Report/395/",
+      "description": "Magicseaweed / Surfline — surf conditions reference for Llŷn"
+    },
+    {
+      "url": "https://coflein.gov.uk/en/site/96267",
+      "description": "Coflein (RCAHMW) — Tre'r Ceiri monument record for stone hut count and dating"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Porth_Oer",
+      "description": "Wikimedia Commons — CC-licensed hero image candidates (Porth Oer / Whistling Sands)"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Porth_Neigwl",
+      "description": "Wikimedia Commons — CC-licensed hero image candidates (Hell's Mouth)"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Bardsey_Island",
+      "description": "Wikimedia Commons — CC-licensed Bardsey Island images"
+    },
+    {
+      "url": "https://openverse.org/search/?q=llyn+peninsula+wales&license_type=commercial,modification",
+      "description": "Openverse — CC-licensed Llŷn Peninsula image search (for hero image replacement if needed)"
+    }
+  ],
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Hero image llyn-peninsula-hero.jpg provenance and licensing",
+      "priority": "HIGH",
+      "reason": "Image was added via a batch Unsplash download in commit 7b31a56 (Feb 2026) but specific Unsplash photo ID, photographer, and attribution details were not recorded in the image registry. Cannot be published without confirmed attribution.",
+      "resolution": "Check the generate-images skill script or batch download log for the original Unsplash URL. Add to image-registry.json. If unrecoverable, replace with CC-licensed Wikimedia Commons alternative."
+    },
+    {
+      "claim": "Coast path length: 100 miles",
+      "priority": "HIGH",
+      "reason": "Official Wales Coast Path and NRW materials typically describe the Llŷn Peninsula section as approximately 82 miles, not 100 miles. Publishing an overstatement would be factually incorrect and visibly wrong to walkers.",
+      "verificationUrl": "https://www.walescoastpath.gov.uk/explore/section?id=llyn-peninsula"
+    },
+    {
+      "claim": "Hell's Mouth Surf School — operator existence and website",
+      "priority": "HIGH",
+      "reason": "Referenced in FAQs of the surfing combo page without a website URL. Cannot be named as a recommended operator without a verifiable web presence. The llyn-peninsula.ts FAQs name 'West Coast Surf' instead — two different operators referenced across files for the same service.",
+      "resolution": "Verify whether Hell's Mouth Surf School has a current online presence. If not, remove references and rely on West Coast Surf (once confirmed active at https://www.westcoastsurf.co.uk/)."
+    },
+    {
+      "claim": "All pricing in topExperiences (lesson £40-60, Bardsey £50-70, kayaking £50-70, Porth Oer parking £3)",
+      "priority": "HIGH",
+      "reason": "No verified source for any pricing. The file's last_updated date is February 2025 and no source header is declared. National Trust parking charges and activity prices change annually. All pricing must be live-verified before publishing.",
+      "verificationUrls": [
+        "https://www.bardsey.org (Bardsey boat trips)",
+        "https://www.westcoastsurf.co.uk/ (surf lessons)",
+        "https://www.abersochwatersports.co.uk/ (kayaking)",
+        "https://www.nationaltrust.org.uk/visit/wales/porth-oer (Porth Oer parking)"
+      ]
+    },
+    {
+      "claim": "Welsh language '70%+ first language'",
+      "priority": "MEDIUM",
+      "reason": "2021 Census shows Gwynedd at 65.1% Welsh speakers overall. The Llŷn peninsula is higher than the Gwynedd average in many communities, but '70%+ first language' for the whole peninsula needs ward-level verification against 2021 Census data.",
+      "verificationUrl": "https://statswales.gov.wales (Census 2021 language data, Gwynedd ward level)"
+    },
+    {
+      "claim": "Tre'r Ceiri '1800 years old'",
+      "priority": "MEDIUM",
+      "reason": "The hillfort was constructed c. 200 BC — over 2200 years ago. '1800 years old' points to the Romano-British occupation phase (~226 AD) and undersells the antiquity. Rephrase to reflect the actual construction date.",
+      "verificationUrl": "https://cadw.gov.wales/visit/places-to-visit/trer-ceiri"
+    },
+    {
+      "claim": "FAQs and hiddenGems sections thin (4 FAQs, 2 hidden gems)",
+      "priority": "MEDIUM",
+      "reason": "Comparable region pages have 10 FAQs and 6 hiddenGems. The thin sections leave common user questions unanswered (public transport, camping, coast path walking duration) and miss documented Llŷn highlights (Porthdinllaen, Mynydd Mawr, Porth Iago, Nant Gwrtheyrn). Page cannot be signed off until these are expanded.",
+      "resolution": "Human reviewer to write additional FAQs and hiddenGems using the candidates provided in contentQualityAudit above."
+    },
+    {
+      "claim": "Hell's Mouth car park is National Trust managed",
+      "priority": "LOW",
+      "reason": "insiderTips[0] says 'Park at the National Trust car park at Porth Neigwl'. Verify whether the main Hell's Mouth car park is NT, Gwynedd Council, or privately operated.",
+      "verificationUrl": "https://www.nationaltrust.org.uk"
+    },
+    {
+      "claim": "The Ship Hotel, Aberdaron — trading status",
+      "priority": "LOW",
+      "reason": "The surfing combo page separately references Ty Newydd Hotel in Aberdaron. Verify whether 'The Ship Hotel' is a distinct venue, a former name for Ty Newydd, or a different pub.",
+      "resolution": "Web search for 'The Ship Hotel Aberdaron' to confirm identity and trading status."
+    }
+  ],
+
+  "positivesToRetain": [
+    "Strong heroContent that clearly differentiates Llŷn from Snowdonia and Pembrokeshire — the 'remote finger of land', 'fierce Welsh identity', and 'adventure at the edge of Wales' framing is distinctive and well-written",
+    "Bardsey Island is correctly identified as the peninsula's defining landmark with accurate pilgrimage heritage context",
+    "Hell's Mouth surfing and Whistling Sands quartz-squeaking phenomenon are accurately described and clearly differentiated",
+    "Ty Coch Inn at Porthdinllaen is correctly described as 'walk or boat only' — a genuinely distinctive local knowledge point",
+    "The seasonGuide correctly identifies autumn as the best surf season (not summer), which is accurate for Atlantic swell patterns",
+    "The insiderTip on Bardsey overnight stays ('Book months ahead. Bring food.') is specific, accurate, and useful",
+    "St Tudwal's Islands noted in the kayaking experience — a genuinely differentiating detail for this combo",
+    "SEO title and description structure is strong and clearly targets the right search intent",
+    "The content/regions/llyn-peninsula.md correctly frames Llŷn as a 'genuine taste of Welsh culture without the commercial gloss' — accurate positioning"
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusRationale": "The structural foundation and hero prose quality are sufficient to advance from research_needed to qa_needed. However, a human QA reviewer must resolve four issues before this page can progress further: (1) establish provenance for llyn-peninsula-hero.jpg or replace it; (2) re-verify all pricing against current operator websites; (3) resolve the 100-mile coast path claim against the official Wales Coast Path figure; (4) expand FAQs, hiddenGems, and localEatsAndDrinks to match the depth of comparable region pages. The operator name discrepancy (West Coast Surf vs Hell's Mouth Surf School) and Tre'r Ceiri age wording are secondary but should be corrected in the same pass.",
+
+  "topBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Hero image llyn-peninsula-hero.jpg has no provenance record — cannot be published without confirmed attribution",
+      "detail": "The file exists at public/images/regions/llyn-peninsula-hero.jpg and was added in commit 7b31a56 (2026-02-03) via a batch Unsplash download script. The image registry entry for location-landing-llyn-peninsula has empty image_source_url and status 'needs_review'. Unsplash requires that photographer credit and source URL be recorded for any use. Without the original photo ID, proper attribution cannot be added and licence compliance cannot be confirmed.",
+      "resolution": "Run 'git show 7b31a56' and inspect the generate-images skill script or any download manifest committed at the same time to recover the original Unsplash URL for llyn-peninsula-hero.jpg. If the Unsplash source cannot be recovered, replace with a CC BY-SA licensed image from Wikimedia Commons — the Porth_Neigwl category is the strongest candidate for a hero image that communicates both scale and adventure. Add source_url, photographer name, and licence to image-registry.json before publishing."
+    },
+    {
+      "rank": 2,
+      "blocker": "Coast path mileage '100 miles' in llyn-peninsula.ts likely overstates the official figure by ~20%, and all topExperiences pricing is unverified",
+      "detail": "The heroContent, keyFacts, and SEO description all state '100 miles' for the Llŷn Coastal Path. Official Wales Coast Path and NRW materials describe the Llŷn Peninsula section as approximately 82 miles. Publishing an inflated figure would be an embarrassing error for a walking-focused audience who have done the route or read official materials. Additionally, all four priced topExperiences (surf lesson £40-60, Bardsey day trip £50-70, kayaking £50-70, Porth Oer parking £3) are unsourced and may be outdated — the National Trust raised Porth Oer parking prices in 2024-25.",
+      "resolution": "Load walescoastpath.gov.uk/explore/section and confirm the current official mileage for the Llŷn section. Update llyn-peninsula.ts (keyFacts[1].value, heroContent paragraph 3, meta.seoDescription) to the confirmed figure. Separately: open each operator website (westcoastsurf.co.uk, bardsey.org, abersochwatersports.co.uk, nationaltrust.org.uk/porth-oer) to verify current prices. Record source URL and date alongside each verified price."
+    },
+    {
+      "rank": 3,
+      "blocker": "Content depth is insufficient for sign-off: 4 FAQs, 2 hiddenGems, 2 localEatsAndDrinks — all below the threshold of comparable signed-off region pages",
+      "detail": "Anglesey, Brecon Beacons, and other signed-off region pages carry 10 FAQs, 6 hiddenGems, and 5-6 localEatsAndDrinks. The Llŷn page has 4 FAQs, 2 hiddenGems, and 2 localEatsAndDrinks. Key user questions are unanswered (how to get there without a car, how long to walk the coast path, where to camp, how to access the Ty Coch Inn). Documented Llŷn highlights are missing from hiddenGems (Porthdinllaen, Mynydd Mawr, Porth Iago, Nant Gwrtheyrn). The surfing combo page already verifies Venetia, The Sun Inn, and Ty Newydd Hotel as eats/drinks candidates. The page will not pass editorial QA at its current depth.",
+      "resolution": "Human editorial pass to: (a) write 6 additional FAQs from the candidate list in contentQualityAudit.faqs.missingFAQs; (b) add Porthdinllaen, Mynydd Mawr, Porth Iago, and Nant Gwrtheyrn to hiddenGems (verify access details at NT/official sources); (c) add Venetia, The Sun Inn, and Ty Newydd to localEatsAndDrinks (verify trading status at operator websites). All additions require verified source URLs."
+    }
+  ]
+}

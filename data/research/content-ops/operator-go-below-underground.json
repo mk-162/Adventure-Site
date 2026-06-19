@@ -1,0 +1,492 @@
+{
+  "_meta": {
+    "task": "content-ops-098-operator-go-below-underground",
+    "contentItem": "operator-go-below-underground",
+    "contentType": "operator",
+    "slug": "go-below-underground",
+    "route": "/directory/go-below-underground",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "high_confidence_with_flags",
+    "identityConfidence": "HIGH — operator identity confirmed via official website (go-below.co.uk), Visit Wales listing, Go North Wales, Visit Snowdonia, TripAdvisor, and Companies House registration 08937360"
+  },
+
+  "proposedOperatorData": {
+    "name": "Go Below Underground Adventures",
+    "legalName": "Go Below Underground Adventures Ltd",
+    "companyNumber": "08937360",
+    "companyNumberNote": "Registered in England and Wales. Company registration number sourced from the operator's own contact page.",
+    "nameNote": "The trading name is 'Go Below Underground Adventures'. The registered trademarks are Go Below® and Zip Below® per the official website. All public-facing sources use the trading name.",
+    "slug": "go-below-underground",
+    "website": "https://www.go-below.co.uk/",
+    "websiteSource": "https://www.go-below.co.uk/",
+    "bookingUrl": "https://www.go-below.co.uk/",
+    "bookingUrlNote": "Online booking is available via the main website. Phone booking is also available at 01690 710108. No separate booking subdomain confirmed.",
+
+    "contact": {
+      "phone": "01690 710108",
+      "phoneSource": "https://www.go-below.co.uk/contact.asp; https://www.visitwales.com/activity/go-below-underground-adventures-1889644; https://www.gonorthwales.co.uk/things-to-do/go-below-underground-adventures-p376231",
+      "phoneNote": "Number consistent across official operator contact page, Visit Wales, and Go North Wales. Phone lines are stated as open 7 days a week except Christmas Day, typically 9am–5pm.",
+      "email": "ask@go-below.co.uk",
+      "emailSource": "https://www.go-below.co.uk/contact.asp; https://www.visitwales.com/activity/go-below-underground-adventures-1889644",
+      "emailNote": "Email confirmed from operator's own contact page and Visit Wales listing. The operator uses this address for both general enquiries and private group bookings.",
+
+      "primaryBase": {
+        "name": "Conwy Falls Base",
+        "purpose": "Main booking office; meeting point for Go Below® Challenge trips",
+        "line1": "Conwy Falls Forest Park, Pentrefoelas Road (A5)",
+        "locality": "Betws-y-Coed",
+        "county": "Conwy",
+        "postcode": "LL24 0PN",
+        "country": "Wales",
+        "countryCode": "GB-WLS",
+        "locationNote": "Located on the A5 trunk road at the junction with the B4406 to Penmachno, approximately 2 miles south of Betws-y-Coed village.",
+        "source": "https://www.go-below.co.uk/contact.asp; https://www.gonorthwales.co.uk/things-to-do/go-below-underground-adventures-p376231"
+      },
+
+      "secondaryBase": {
+        "name": "Tanygrisiau Base",
+        "purpose": "Meeting point for Hero Xtreme, Ultimate Xtreme, and Deep Sleep trips",
+        "locationDescription": "Tanygrisiau Station (Ffestiniog Railway), Tanygrisiau, near Blaenau Ffestiniog",
+        "county": "Gwynedd",
+        "accessNote": "Reachable by car via the A496 south from Blaenau Ffestiniog (follow brown signs for Tanygrisiau Station), or by Ffestiniog Railway vintage train service.",
+        "source": "https://www.go-below.co.uk/contact.asp"
+      },
+
+      "registeredOffice": {
+        "line1": "Glandwr Cottage",
+        "locality": "Penmachno",
+        "town": "Betws-y-Coed",
+        "postcode": "LL24 0PP",
+        "note": "Administrative/registered address only. NOT a trip departure point.",
+        "source": "https://www.go-below.co.uk/contact.asp"
+      }
+    },
+
+    "location": {
+      "primaryBase": {
+        "lat": 53.06554,
+        "lng": -3.77626,
+        "latLngConfidence": "MEDIUM",
+        "latLngNote": "Coordinates sourced from the Visit Wales official listing for this operator. Cross-checked against the Streetmap OS grid data on the operator contact page (X=281060, Y=353529 in British National Grid, which converts to approximately 53.063°N, 3.774°W — consistent with Visit Wales values). Human editor should pin against Google Maps for 'Conwy Falls Forest Park LL24 0PN' before publishing.",
+        "latLngSources": [
+          "https://www.visitwales.com/activity/go-below-underground-adventures-1889644",
+          "https://www.go-below.co.uk/contact.asp (Streetmap OS coordinates X=281060, Y=353529)"
+        ],
+        "postcode": "LL24 0PN",
+        "region": "snowdonia",
+        "subRegion": "Conwy Valley / Betws-y-Coed",
+        "nationalPark": "Eryri (Snowdonia) National Park",
+        "locationSource": "https://www.go-below.co.uk/contact.asp; https://www.visitwales.com/activity/go-below-underground-adventures-1889644"
+      },
+      "secondaryBase": {
+        "locationDescription": "Tanygrisiau, near Blaenau Ffestiniog, Gwynedd",
+        "osGridApproximate": "SH 68328 44932",
+        "latLngApproximate": "52.990°N, 3.969°W",
+        "latLngConfidence": "LOW — derived from Streetmap OS grid data on operator contact page. Human editor must verify before use.",
+        "note": "The Cwmorthin/Tanygrisiau mine (Hero Xtreme and Ultimate Xtreme venue) is in Gwynedd, not Conwy. The underground adventure takes place 1,375 vertical feet below the Moelwyn mountains.",
+        "source": "https://www.go-below.co.uk/contact.asp"
+      }
+    },
+
+    "description": {
+      "short": "Go Below Underground Adventures is an award-winning, family-owned operator offering personally-guided expeditions through abandoned slate mines beneath the mountains of Eryri (Snowdonia). Four underground adventures range from a beginner-friendly half-day challenge to a full-day extreme descent to the deepest publicly accessible point in Great Britain — all running year-round, whatever the weather.",
+      "full": "Go Below Underground Adventures Ltd is a Betws-y-Coed-based operator offering four unique guided underground experiences within the historic slate mines of North Wales. The company is family-owned and award-winning, operating year-round regardless of weather conditions.\n\nThe original Go Below® Challenge (ages 10+, ~5 hours) takes participants on a scenic mountain hike to a hand-carved mine entrance, then through tunnels featuring zip lines, waterfall climbs, underground lake boat crossings, abseiling, and rock scrambling — no prior experience required.\n\nHero Xtreme (ages 14+, ~6 hours) ventures deep into Cwmorthin slate mine via suspension bridges, ledge traversals, zip lines spanning gaping voids, ladder climbs on towering chamber walls, and a lunch stop at the 'Xtreme Picnic Bench' — a seat bolted 120 feet up a chamber wall — before descending over 1,300 vertical feet to the deepest publicly accessible point in Great Britain.\n\nThe Ultimate Xtreme™ (ages 18+, ~7 hours) adds nine underground zip lines, the world's longest underground zip line 'Goliath' (130 metres, beneath 1,230 feet of solid rock), an optional 70-foot underground freefall with a mechanical braking system, via ferrata climbing, and five kilometres of mine workings.\n\nFor those seeking the most extreme experience of all, Deep Sleep places guests in underground cabins or a luxury grotto at 1,375 vertical feet — billed as the world's deepest underground accommodation. The 14-hour Mine to Mountain expedition combines underground adventure with an ascent to the mountain summit above.\n\nAll equipment (helmet, head torch, harness, and Wellington boots in sizes 1–12) is provided. The operator holds Adventure Activities Licensing Authority (AALA) accreditation and carries WTTC Safe Travels status. The company is rated 4.9/5 on TripAdvisor from nearly 1,900 reviews, and holds TripAdvisor Travelers' Choice 2026, ranking #1 of 17 outdoor activities in Betws-y-Coed.",
+      "shortSource": "https://www.go-below.co.uk/; https://www.visitwales.com/activity/go-below-underground-adventures-1889644",
+      "fullSource": "https://www.go-below.co.uk/; https://www.go-below.co.uk/caving_trip1.asp; https://www.go-below.co.uk/hero-xtreme.asp; https://www.go-below.co.uk/ultimate-xtreme.asp; https://www.go-below.co.uk/essential_information.asp; https://www.visitwales.com/activity/go-below-underground-adventures-1889644; https://www.gonorthwales.co.uk/things-to-do/go-below-underground-adventures-p376231; https://www.tripadvisor.com/Attraction_Review-g186447-d2097486-Reviews-Go_Below_Underground_Adventures-Betws_y_Coed_Snowdonia_Eryri_National_Park_North_.html"
+    },
+
+    "activities": [
+      {
+        "name": "Go Below® Challenge",
+        "slug": "challenge",
+        "duration": "Approximately 5 hours",
+        "ageMinimum": 10,
+        "ageNote": "Under 18s must be accompanied by a responsible adult (18+)",
+        "groupSizeMax": 16,
+        "departureBase": "Conwy Falls Base, Betws-y-Coed (LL24 0PN)",
+        "difficulty": "Moderate — described as 'sporty, physical and fun'. More demanding activities can be bypassed for less confident participants.",
+        "included": ["Helmet", "Head torch", "Harness", "Wellington boots (sizes 1–12)"],
+        "activities": ["Zip lines", "Waterfall climbs", "Underground lake boat crossing", "Abseiling", "Rock scrambling", "Mountain hike to mine entrance"],
+        "pricingNote": "£69 per person (off-peak) / £75 per person (peak). Prices sourced from official trip page 2026-06-04. Must be re-verified before publishing.",
+        "priceFrom": "£69",
+        "priceFromNote": "Off-peak price. Peak price £75. Verify at https://www.go-below.co.uk/caving_trip1.asp before publishing.",
+        "source": "https://www.go-below.co.uk/caving_trip1.asp; https://www.go-below.co.uk/essential_information.asp"
+      },
+      {
+        "name": "Hero Xtreme",
+        "slug": "hero-xtreme",
+        "duration": "Approximately 6 hours",
+        "ageMinimum": 14,
+        "ageNote": "Under 18s must be accompanied one-to-one by an adult",
+        "groupSizeMax": 12,
+        "groupSizeNote": "Up to 12 participants with two experienced leaders",
+        "departureBase": "Tanygrisiau Base (Cwmorthin mine, near Blaenau Ffestiniog)",
+        "difficulty": "Highly challenging and physically demanding. Participants must be comfortable with heights.",
+        "included": ["Helmet", "Head torch", "Harness", "Wellington boots"],
+        "activities": ["Suspension bridge traversals", "High ledge traversals over voids", "Underground zip lines", "Ladder climbs on 120-foot chamber walls", "'Xtreme Picnic Bench' lunch stop at 120-foot height", "Descent to deepest publicly accessible point in Great Britain (1,300+ vertical feet)"],
+        "priceFrom": "£99",
+        "priceFromNote": "Off-peak price. Peak price £109. Verify at https://www.go-below.co.uk/hero-xtreme.asp before publishing.",
+        "source": "https://www.go-below.co.uk/hero-xtreme.asp; https://www.go-below.co.uk/essential_information.asp"
+      },
+      {
+        "name": "Go Below® Ultimate Xtreme™",
+        "slug": "ultimate-xtreme",
+        "duration": "Approximately 7 hours",
+        "ageMinimum": 18,
+        "groupSizeMax": 10,
+        "departureBase": "Tanygrisiau Base (Cwmorthin mine, near Blaenau Ffestiniog)",
+        "difficulty": "Extreme",
+        "included": ["Helmet", "Head torch", "Harness", "Wellington boots"],
+        "activities": [
+          "Nine underground zip lines through caverns",
+          "'Goliath' — world's longest underground zip line (130 metres / 426 feet), beneath 1,230 feet of solid rock",
+          "70-foot underground freefall with mechanical braking system (optional, weight limit 19 stone for this element only)",
+          "Via ferrata climbing along cliff walls",
+          "Ancient wooden bridge crossings spanning cavern voids",
+          "5 km of mine workings exploration"
+        ],
+        "priceFrom": "£109",
+        "priceFromNote": "Off-peak price. Peak price £129. Verify at https://www.go-below.co.uk/ultimate-xtreme.asp before publishing.",
+        "source": "https://www.go-below.co.uk/ultimate-xtreme.asp"
+      },
+      {
+        "name": "Mine to Mountain",
+        "slug": "mine-to-mountain",
+        "duration": "Approximately 14 hours",
+        "ageMinimum": 14,
+        "groupSizeNote": "Up to 10 participants; additional instructors for larger groups",
+        "description": "The ultimate combined adventure: a full underground traverse followed by a mountain ascent above the mine. Described as a 14-hour expedition.",
+        "priceFrom": "UNCONFIRMED",
+        "priceNote": "Price not confirmed from official operator source during this research pass. Human editor must check https://www.go-below.co.uk/ for current pricing before publishing.",
+        "source": "https://www.go-below.co.uk/essential_information.asp; https://www.gonorthwales.co.uk/things-to-do/go-below-underground-adventures-p376231"
+      },
+      {
+        "name": "Deep Sleep",
+        "slug": "deep-sleep",
+        "description": "Overnight underground accommodation in purpose-built cabins or a luxury grotto at 1,375 vertical feet below the mountains of Eryri — described by the operator as the world's deepest publicly accessible underground accommodation.",
+        "priceFrom": "INDICATIVE ONLY — £399 per cabin reported on third-party listing (Go North Wales, accessed 2026-06-04)",
+        "priceNote": "Price sourced from third-party listing (gonorthwales.co.uk), not confirmed on the official operator site in this research pass. Human editor must verify directly at https://www.go-below.co.uk/ before publishing.",
+        "source": "https://www.gonorthwales.co.uk/things-to-do/go-below-underground-adventures-p376231; https://www.go-below.co.uk/"
+      }
+    ],
+
+    "openingHours": {
+      "pattern": "Year-round, 7 days a week, all weather conditions",
+      "bookingOfficeHours": "9am–5pm, 7 days a week except Christmas Day",
+      "advanceBookingRequired": true,
+      "source": "https://www.go-below.co.uk/essential_information.asp; https://www.gonorthwales.co.uk/things-to-do/go-below-underground-adventures-p376231",
+      "publishingRecommendation": "State 'open year-round, advance booking required' and link to https://www.go-below.co.uk/ for current availability. Do not publish season-based closing dates — this operator explicitly operates in all weather and all seasons."
+    },
+
+    "fitnessRequirements": {
+      "general": "Participants must be 'reasonably fit' and able to sustain physical activity including substantial walking on steep, uneven terrain throughout the day. Persons who are very unfit, significantly overweight, pregnant, infirm, or anxious are advised not to book.",
+      "medicalDisclosureRequired": "Contact the office before booking if you have epilepsy, vertigo, mobility limitations, arm or leg strength limitations, amputations, deafness, sight impairment, or heart conditions. The operator states it is 'experienced in offering inclusive trips'.",
+      "weightLimit": "19-stone maximum for the 70-foot freefall element of Ultimate Xtreme only. No general weight limit otherwise.",
+      "source": "https://www.go-below.co.uk/essential_information.asp"
+    },
+
+    "awards": [
+      {
+        "award": "TripAdvisor Travelers' Choice 2026",
+        "source": "https://www.tripadvisor.com/Attraction_Review-g186447-d2097486-Reviews-Go_Below_Underground_Adventures-Betws_y_Coed_Snowdonia_Eryri_National_Park_North_.html",
+        "verifiedAt": "2026-06-04"
+      },
+      {
+        "award": "WTTC Safe Travels 2021",
+        "source": "https://www.gonorthwales.co.uk/things-to-do/go-below-underground-adventures-p376231"
+      },
+      {
+        "award": "Adventure Activities Licensing Authority (AALA) accreditation",
+        "detail": "The operator is AALA-accredited, a UK Health and Safety Executive regulatory requirement for commercial providers of caving, climbing, trekking, and watersports activities to under-18s.",
+        "source": "https://www.go-below.co.uk/essential_information.asp (implied); general web research 2026-06-04",
+        "note": "AALA accreditation was referenced in search results. Human editor should confirm current licence status directly at https://www.hse.gov.uk/aala/ before publishing this claim."
+      }
+    ],
+
+    "ratings": {
+      "tripadvisor": {
+        "rating": "4.9 / 5",
+        "reviewCount": 1904,
+        "reviewCountNote": "Review count sourced from TripAdvisor listing accessed 2026-06-04. Will change over time.",
+        "ranking": "#1 of 17 outdoor activities in Betws-y-Coed",
+        "travellersChoice": "2026",
+        "url": "https://www.tripadvisor.com/Attraction_Review-g186447-d2097486-Reviews-Go_Below_Underground_Adventures-Betws_y_Coed_Snowdonia_Eryri_National_Park_North_.html",
+        "verifiedAt": "2026-06-04"
+      },
+      "google": {
+        "note": "Google Maps listing expected. Human editor should verify current star rating for 'Go Below Underground Adventures LL24 0PN' at maps.google.com before publishing.",
+        "verifyManually": true
+      }
+    },
+
+    "socialMedia": {
+      "instagram": {
+        "handle": "@gobelow",
+        "url": "https://www.instagram.com/gobelow/",
+        "followerCount": "~14,000 followers",
+        "followerCountNote": "Approximate figure sourced from Instagram profile accessed indirectly via web search 2026-06-04. Verify current count before publishing.",
+        "source": "https://www.instagram.com/gobelow/ (via web search 2026-06-04)"
+      },
+      "facebook": {
+        "handle": "GoBelow",
+        "url": "https://www.facebook.com/GoBelow/",
+        "source": "https://www.facebook.com/GoBelow/ (via web search 2026-06-04)"
+      },
+      "twitter": {
+        "handle": "@GoBelow",
+        "url": "https://x.com/GoBelow",
+        "urlAlt": "https://twitter.com/GoBelow",
+        "source": "https://x.com/GoBelow (via web search 2026-06-04)"
+      },
+      "youtube": {
+        "url": "https://www.youtube.com/channel/UCkh2rBX5x5v4of1wV50JRfA",
+        "source": "https://www.youtube.com/channel/UCkh2rBX5x5v4of1wV50JRfA (via web search 2026-06-04)"
+      }
+    },
+
+    "onSiteAmenities": [
+      "All safety equipment provided (helmet, head torch, harness, Wellington boots sizes 1–12)",
+      "Gloves available for purchase on-site (£3)",
+      "Car parking at both bases",
+      "Toilets and showers",
+      "Changing facilities"
+    ],
+    "amenitiesSource": "https://www.go-below.co.uk/essential_information.asp; https://www.gonorthwales.co.uk/things-to-do/go-below-underground-adventures-p376231",
+
+    "whatToBring": [
+      "Small personal backpack",
+      "Waterproof jacket and trousers",
+      "Warm layering clothes",
+      "Close-fitting gloves (or buy on-site for £3)",
+      "Extra-thick socks",
+      "Own food and drink",
+      "Personal hand sanitizer"
+    ],
+    "whatToBringSource": "https://www.go-below.co.uk/essential_information.asp"
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "The Go Below Underground Adventures logo and branding are copyright of Go Below Underground Adventures Ltd. No freely licensed version was found on Wikimedia Commons or Openverse. The logo must be requested directly from the operator (ask@go-below.co.uk) under written licence or press/media pack agreement before use on this directory page."
+    },
+
+    "cover": {
+      "status": "OPERATOR IMAGES BLOCKED — EXTERNAL CC OPTIONS AVAILABLE",
+      "note": "The operator's own photography (underground action shots, ziplines, freefall etc.) is copyright of Go Below Underground Adventures Ltd and cannot be used without written permission. No operator-owned images were found under an open licence. The Go North Wales listing references 'multiple action photographs' but lists no licence.",
+      "recommendation": "Use a Wikimedia Commons CC BY-SA 4.0 landscape image of the Cwmorthin/Llyn Cwmorthin approach as a holding cover image, with attribution, pending operator permission for proprietary photography. Alternatively, contact ask@go-below.co.uk to request a media pack.",
+      "verifiedOptions": [
+        {
+          "rank": 1,
+          "filename": "Cwmorthin - between Tanygrisiau to Cwmorthin quarry and Llyn Cwmorthin, near Blaenau Ffestiniog, Gwynedd, Cymru (Wales) 01.jpg",
+          "author": "Llywelyn2000",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "resolution": "5,184 × 3,888 px (6.21 MB)",
+          "dateTaken": "2017-10-24",
+          "description": "Landscape photograph of the path between Tanygrisiau and Cwmorthin quarry / Llyn Cwmorthin, Gwynedd, Wales. Shows the approach route to the mine.",
+          "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Cwmorthin_-_between_Tanygrisiau_to_Cwmorthin_quarry_and_Llyn_Cwmorthin%2C_near_Blaenau_Ffestiniog%2C_Gwynedd%2C_Cymru_%28Wales%29_01.jpg",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Cwmorthin_-_between_Tanygrisiau_to_Cwmorthin_quarry_and_Llyn_Cwmorthin,_near_Blaenau_Ffestiniog,_Gwynedd,_Cymru_(Wales)_01.jpg",
+          "attributionRequired": "Photo by Llywelyn2000 / Wikimedia Commons, CC BY-SA 4.0",
+          "commercialUseAllowed": true,
+          "caveat": "This is an exterior landscape image, not a photo of the underground experience itself. It is appropriate as a placeholder only. The operator should supply branded photography for the final published page."
+        },
+        {
+          "rank": 2,
+          "filename": "Cwmorthin waterfall 1.JPG",
+          "author": "Mike Buck",
+          "licence": "CC BY-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "resolution": "1,600 × 2,400 px (2.26 MB — portrait orientation)",
+          "dateTaken": "2007-07-19",
+          "description": "The Cwmorthin waterfall at Tanygrisiau railway station — the Ffestiniog Railway station used as the departure point for Hero Xtreme and Ultimate Xtreme trips.",
+          "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Cwmorthin_waterfall_1.JPG",
+          "commonsPage": "https://commons.wikimedia.org/wiki/File:Cwmorthin_waterfall_1.JPG",
+          "attributionRequired": "Photo by Mike Buck / Wikimedia Commons, CC BY-SA 3.0",
+          "commercialUseAllowed": true,
+          "caveat": "Portrait orientation and lower resolution. Shows the waterfall, not the mine. Acceptable as secondary/gallery image only."
+        }
+      ],
+      "additionalPool": "Wikimedia Commons category https://commons.wikimedia.org/wiki/Category:Cwmorthin_quarry contains 86+ files of the Cwmorthin area. Only the two options above have been individually licence-verified. Additional images from other contributors should be individually checked before use.",
+      "actionRequired": "Contact ask@go-below.co.uk to request a press/media pack — a well-run operator of this calibre will likely have high-resolution branded photography available. If proprietary images cannot be obtained, use the CC BY-SA 4.0 Llywelyn2000 landscape image as a holding cover, with CC attribution. Do not use AI-generated images. Do not scrape images from the operator website without written permission."
+    },
+
+    "gallery": {
+      "status": "OPERATOR IMAGES BLOCKED — CC POOL AVAILABLE",
+      "note": "Same constraints as cover apply. Wikimedia Commons Cwmorthin category provides CC-licensed exterior/landscape imagery. Operator-branded underground action shots require a media pack from ask@go-below.co.uk."
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "GPS coordinates (primary base): 53.06554, -3.77626",
+      "confidence": "MEDIUM",
+      "issue": "Coordinates sourced from Visit Wales official listing, cross-checked against Streetmap OS data from the operator contact page (X=281060, Y=353529 BNG ≈ 53.063°N, 3.774°W). Values are close but not identical; difference is within expected rounding. No discrepant third-party coordinate set found.",
+      "action": "Pin 53.06554, -3.77626 on Google Maps / OS Maps and confirm it resolves to the Conwy Falls Forest Park entrance on the A5, near LL24 0PN. If the pin falls in the correct car park, use it. Also confirm the Tanygrisiau base coordinates independently.",
+      "severity": "LOW"
+    },
+    {
+      "claim": "No operator logo available under open licence",
+      "confidence": "HIGH",
+      "issue": "No CC-licensed or public-domain version of the Go Below logo was found on Wikimedia Commons, Openverse, or any third-party source. The logo is required for the operator profile card.",
+      "action": "Email ask@go-below.co.uk requesting a media pack including a high-resolution logo with written permission for use on this directory listing.",
+      "severity": "HIGH"
+    },
+    {
+      "claim": "No operator-branded cover image available under open licence",
+      "confidence": "HIGH",
+      "issue": "All action photography on the operator website and third-party listings is copyrighted. The CC-licensed Cwmorthin landscape images from Wikimedia Commons are geographically relevant but do not depict the underground adventure product — they are landscape/exterior shots only.",
+      "action": "Contact ask@go-below.co.uk for a media pack. If refused, use the Llywelyn2000 CC BY-SA 4.0 Cwmorthin landscape image (verified above) as a holding image with proper attribution.",
+      "severity": "HIGH"
+    },
+    {
+      "claim": "Trip prices: Challenge £69/£75, Hero Xtreme £99/£109, Ultimate Xtreme £109/£129",
+      "confidence": "HIGH as of 2026-06-04",
+      "issue": "Prices confirmed from individual trip pages on the official operator website, accessed 2026-06-04. Off-peak / peak price distinction confirmed. Prices for Mine to Mountain and Deep Sleep were not confirmed from the official site in this research pass.",
+      "action": "Re-verify all prices against https://www.go-below.co.uk/ immediately before publishing. Do not hardcode prices on the directory page — include a 'prices from £X, check website for current rates' caveat with a link to the operator site.",
+      "severity": "MEDIUM"
+    },
+    {
+      "claim": "Mine to Mountain price — not confirmed",
+      "confidence": "UNCONFIRMED",
+      "issue": "Pricing for the Mine to Mountain (14-hour) experience was not sourced from the official operator website during this research pass.",
+      "action": "Check https://www.go-below.co.uk/ for current Mine to Mountain pricing before publishing this trip.",
+      "severity": "MEDIUM"
+    },
+    {
+      "claim": "Deep Sleep price — 'from £399 per cabin' (third-party source only)",
+      "confidence": "LOW",
+      "issue": "The £399 cabin price was sourced from the Go North Wales listing, not the official operator website. It may be outdated.",
+      "action": "Verify Deep Sleep pricing directly at https://www.go-below.co.uk/ before publishing.",
+      "severity": "MEDIUM"
+    },
+    {
+      "claim": "AALA (Adventure Activities Licensing Authority) accreditation",
+      "confidence": "MEDIUM",
+      "issue": "AALA accreditation was referenced in search results and is implied by the operator's essential information page (which lists HSE guidelines compliance). However, the specific AALA licence number was not confirmed from the HSE register.",
+      "action": "Verify current AALA licence status at https://www.hse.gov.uk/aala/ for 'Go Below Underground Adventures Ltd'. Do not publish this claim until confirmed.",
+      "severity": "LOW"
+    },
+    {
+      "claim": "TripAdvisor 4.9/5 rating, 1,904 reviews, Travelers' Choice 2026",
+      "confidence": "HIGH as of 2026-06-04",
+      "issue": "Sourced directly from TripAdvisor listing. Review count and rating will change over time.",
+      "action": "Re-check TripAdvisor listing at https://www.tripadvisor.com/Attraction_Review-g186447-d2097486-Reviews-Go_Below_Underground_Adventures-Betws_y_Coed_Snowdonia_Eryri_National_Park_North_.html before publishing to confirm current figures.",
+      "severity": "LOW"
+    },
+    {
+      "claim": "World records: longest/deepest underground zip line; world's deepest underground accommodation",
+      "confidence": "MEDIUM",
+      "issue": "These claims are made by the operator on their website and repeated across Visit Wales, Go North Wales, and other tourism bodies. 'Goliath' (130m underground zip line, deepest public point 1,230 feet / 1,375 feet below surface) is widely cited. However, these world-record claims have not been verified against a Guinness World Records or equivalent authoritative source in this research pass.",
+      "action": "Human editor should note these are operator-asserted claims. Use attributive language ('described by the operator as the world's longest underground zip line') rather than stating them as independently verified facts. Alternatively, verify at https://www.guinnessworldrecords.com/ before publishing as fact.",
+      "severity": "LOW"
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.go-below.co.uk/",
+      "description": "Official operator website — name, trademarks, product overview",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.go-below.co.uk/contact.asp",
+      "description": "Operator contact page — phone (01690 710108), email (ask@go-below.co.uk), both bases with addresses and OS grid coordinates, registered office address and company number 08937360",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.go-below.co.uk/essential_information.asp",
+      "description": "Operator essential info page — age limits per trip, fitness requirements, group sizes, what is included, what to bring, medical disclosure requirements, phone hours",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.go-below.co.uk/caving_trip1.asp",
+      "description": "Go Below® Challenge trip page — duration (~5 hrs), price (£69 off-peak / £75 peak), age minimum (10), activities included",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.go-below.co.uk/hero-xtreme.asp",
+      "description": "Hero Xtreme trip page — duration (~6 hrs), price (£99 off-peak / £109 peak), age minimum (14), activities including Cwmorthin mine descent",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.go-below.co.uk/ultimate-xtreme.asp",
+      "description": "Ultimate Xtreme trip page — duration (~7 hrs), price (£109 off-peak / £129 peak), age minimum (18), Goliath zip line, 70-foot freefall, 5km of mine workings",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.visitwales.com/activity/go-below-underground-adventures-1889644",
+      "description": "Visit Wales official listing — operator name, address (LL24 0PN), phone, email, GPS coordinates (53.06554, -3.77626), activities, opening hours, pricing from £59 (older/indicative figure), awards",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.gonorthwales.co.uk/things-to-do/go-below-underground-adventures-p376231",
+      "description": "Go North Wales official tourism listing — full address, phone, activities, opening hours, Deep Sleep pricing indicative (£399 cabins), WTTC Safe Travels 2021 award",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.tripadvisor.com/Attraction_Review-g186447-d2097486-Reviews-Go_Below_Underground_Adventures-Betws_y_Coed_Snowdonia_Eryri_National_Park_North_.html",
+      "description": "TripAdvisor listing — rating 4.9/5 from 1,904 reviews, Travelers' Choice 2026, #1 of 17 outdoor activities in Betws-y-Coed (verified 2026-06-04)",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.instagram.com/gobelow/",
+      "description": "Official Instagram — handle @gobelow, ~14,000 followers (approx., 2026-06-04)",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.facebook.com/GoBelow/",
+      "description": "Official Facebook page — handle GoBelow, based in Betws-y-coed",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://x.com/GoBelow",
+      "description": "Official Twitter/X account — handle @GoBelow",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCkh2rBX5x5v4of1wV50JRfA",
+      "description": "Official YouTube channel",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Cwmorthin_quarry",
+      "description": "Wikimedia Commons image category — 86+ files of Cwmorthin quarry and surroundings. Cover image option 1 (Llywelyn2000, CC BY-SA 4.0) verified here.",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cwmorthin_waterfall_1.JPG",
+      "description": "Wikimedia Commons — cover image option 2 (Mike Buck, CC BY-SA 3.0), waterfall at Tanygrisiau, verified licence",
+      "accessedAt": "2026-06-04"
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "All critical missing fields have been resolved from official sources with high confidence: phone (01690 710108), email (ask@go-below.co.uk), GPS coordinates (53.06554, -3.77626), address (LL24 0PN), full description, all trip prices (Challenge/Hero Xtreme/Ultimate Xtreme), social media handles, and TripAdvisor rating. Three items require human QA action before the page can go live: (1) the operator logo and cover image both require either a media pack from the operator or acceptance that CC-licensed landscape images from Wikimedia Commons are used as placeholders; (2) Mine to Mountain and Deep Sleep prices must be verified from the official site; (3) world-record claims should be attributed to the operator rather than stated as independently verified fact.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "No operator logo or branded cover image available under an open licence",
+      "detail": "The Go Below Underground Adventures logo and all underground action photography on the operator's website are copyright of Go Below Underground Adventures Ltd. No CC-licensed or public-domain versions were found on Wikimedia Commons or Openverse. A logo is required for the directory operator card; a branded cover image is strongly preferred over an exterior landscape placeholder. The two CC BY-SA images verified from Wikimedia Commons (Cwmorthin area landscapes) are legally usable but do not depict the actual underground product.",
+      "severity": "HIGH",
+      "action": "Email ask@go-below.co.uk requesting a press/media pack including: (1) a high-resolution logo suitable for web display; (2) a selection of action photographs from the underground tours, with written permission to use them on this directory listing. If the operator does not respond within 5 business days, publish with the Llywelyn2000 CC BY-SA 4.0 landscape image as a holding cover, with attribution, and mark logo as pending."
+    },
+    {
+      "rank": 2,
+      "blocker": "Mine to Mountain and Deep Sleep prices not confirmed from official operator source",
+      "detail": "Prices for the Go Below® Challenge (£69/£75), Hero Xtreme (£99/£109), and Ultimate Xtreme™ (£109/£129) were confirmed from the official trip pages. However, pricing for the Mine to Mountain (14-hour) experience and the Deep Sleep underground accommodation was not confirmed from the official website during this research pass. The £399 cabin price for Deep Sleep is from a third-party listing (Go North Wales) only.",
+      "severity": "MEDIUM",
+      "action": "Visit https://www.go-below.co.uk/ and navigate to the Mine to Mountain and Deep Sleep product pages to confirm current prices. Do not publish price information for these two products until confirmed. For all prices, include a 'prices subject to change — check operator website for current rates' caveat."
+    },
+    {
+      "rank": 3,
+      "blocker": "World-record claims require attribution or independent verification",
+      "detail": "The operator asserts 'Goliath' is the world's longest and deepest underground zip line (130m / 426ft; 1,230ft below surface) and that Deep Sleep is the world's deepest underground accommodation (1,375ft). These claims are repeated across Visit Wales, Go North Wales, and TripAdvisor reviews, suggesting wide acceptance. However, no Guinness World Records or equivalent independent verification was found during this research pass.",
+      "severity": "LOW",
+      "action": "Use attributive language on the directory page: 'described by the operator as the world's longest underground zip line' and 'billed as the world's deepest underground accommodation'. If the human editor wishes to state these as verified facts, check https://www.guinnessworldrecords.com/ for a record entry under Go Below or Cwmorthin mine before publishing."
+    }
+  ]
+}

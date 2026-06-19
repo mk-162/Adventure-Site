@@ -1,0 +1,260 @@
+{
+  "_meta": {
+    "task": "content-ops-066-operator-ace-adventure",
+    "contentItem": "operator-ace-adventure",
+    "contentType": "operator",
+    "slug": "ace-adventure",
+    "route": "/directory/ace-adventure",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "partial_with_critical_flags",
+    "identityConfidence": "MODERATE — see claimsNeedingHumanReview #1"
+  },
+
+  "proposedOperatorData": {
+    "name": "Ace Adventures",
+    "nameNote": "The website uses 'Ace Adventures' (with trailing 's'); the directory slug is 'ace-adventure' (no 's'). Human editor must confirm these refer to the same entity before publishing.",
+    "slug": "ace-adventure",
+    "website": "https://ace-adventures.co.uk",
+    "websiteNote": "Active domain as of June 2026. Copyright © 2025. This is the strongest candidate match for the directory entry based on cross-referencing the internal MTB operators CSV (coordinates 51.6, -3.9 / South Wales service area) and operator name similarity.",
+    "contact": {
+      "phone": "07525 058938",
+      "phoneSource": "https://ace-adventures.co.uk/",
+      "email": "andyevrard@yahoo.co.uk",
+      "emailNote": "This is a personal Yahoo email address displayed on the operator's website. Verify it is still active before publishing — personal email addresses on small operator sites frequently become stale.",
+      "emailSource": "https://ace-adventures.co.uk/",
+      "address": {
+        "line1": "Washbrook Road",
+        "locality": "Bridgnorth",
+        "county": "Shropshire",
+        "postcode": "WV15 6BH",
+        "country": "England",
+        "countryNote": "CRITICAL FLAG — WV15 6BH is Bridgnorth, Shropshire, ENGLAND, not Wales. The operator lists the Brecon Beacons and Snowdonia as service areas but is based in England. Editorial decision required on whether an England-based operator qualifies for this directory."
+      },
+      "addressSource": "https://ace-adventures.co.uk/"
+    },
+    "location": {
+      "lat": 51.6,
+      "lng": -3.9,
+      "latLngNote": "Approximate coordinates from internal MTB operators CSV (content/operators/mtb.csv). These correspond to the South Wales / Brecon Beacons service area, NOT the Bridgnorth registered address. Do not use as a business pin without manual verification.",
+      "latLngSource": "content/operators/mtb.csv (internal data file)",
+      "region": "south_wales",
+      "serviceAreas": ["Brecon Beacons", "Snowdonia", "Shropshire Hills", "Cotswolds"],
+      "serviceAreaSource": "https://ace-adventures.co.uk/ — 'ideally positioned for the Shropshire Hills, Cotswolds, Brecon Beacons and Snowdonia'"
+    },
+    "description": {
+      "short": "Ace Adventures is an outdoor activity provider operating across South Wales, Snowdonia, the Shropshire Hills, and the Cotswolds. Led by experienced instructors, they offer rock climbing, mountain walking, kayaking and canoeing, team building, and a range of qualifications and training courses for groups, families, individuals, and corporate clients.",
+      "shortNote": "Drafted from verified website content. Needs editorial review. Do not assert Welsh base — operator is based in Bridgnorth, England. The Adventure Wales page should note that activities take place in Welsh locations.",
+      "full": "Ace Adventures offers outdoor experiences led by instructors with years of experience and a stated passion for the outdoors. Operating across multiple UK regions including the Brecon Beacons and Snowdonia, they cater to groups, families, individuals, stag and hen parties, fundraising events, and corporate clients, with customisable activity packages and structured training courses.\n\nActivities include indoor and outdoor rock climbing, mountain and hill walking, kayaking and canoeing, and team building experiences. Training courses cover first aid and health and safety, map reading and navigation, British Canoeing 1 and 2 Star kayak and canoe qualifications, expedition skills, introduction to rock climbing, and advanced outdoor climbing techniques. The company also offers a 'The Full Works' five-day comprehensive outdoor experience.\n\nThe company is based in Bridgnorth, Shropshire and operates in Welsh locations including the Brecon Beacons and Snowdonia National Park.",
+      "fullNote": "Drafted from verified website content. Needs editorial tone and factual review. The full description is deliberately factual. MTB/mountain biking is listed in the internal operators CSV but is NOT prominently featured on the website — verify with operator before including in descriptions."
+    },
+    "activities": [
+      {
+        "name": "Rock Climbing (Indoor and Outdoor)",
+        "source": "https://ace-adventures.co.uk/"
+      },
+      {
+        "name": "Mountain and Hill Walking",
+        "source": "https://ace-adventures.co.uk/"
+      },
+      {
+        "name": "Kayaking and Canoeing",
+        "detail": "Includes British Canoeing 1 and 2 Star qualification courses",
+        "source": "https://ace-adventures.co.uk/"
+      },
+      {
+        "name": "Team Building",
+        "source": "https://ace-adventures.co.uk/"
+      },
+      {
+        "name": "The Full Works",
+        "detail": "5-day comprehensive outdoor experience",
+        "source": "https://ace-adventures.co.uk/"
+      }
+    ],
+    "trainingCourses": [
+      {
+        "name": "First Aid and Health & Safety",
+        "source": "https://ace-adventures.co.uk/"
+      },
+      {
+        "name": "Map Reading and Navigation",
+        "source": "https://ace-adventures.co.uk/"
+      },
+      {
+        "name": "British Canoeing 1 Star Kayak and Canoe Qualification",
+        "source": "https://ace-adventures.co.uk/"
+      },
+      {
+        "name": "British Canoeing 2 Star Kayak and Canoe Qualification",
+        "source": "https://ace-adventures.co.uk/"
+      },
+      {
+        "name": "Expedition Skills",
+        "source": "https://ace-adventures.co.uk/"
+      },
+      {
+        "name": "Introduction to Rock Climbing",
+        "source": "https://ace-adventures.co.uk/"
+      },
+      {
+        "name": "Advanced Outdoor Climbing Techniques",
+        "source": "https://ace-adventures.co.uk/"
+      }
+    ],
+    "mtbNote": "The internal MTB operators CSV (content/operators/mtb.csv) lists this operator under 'Guided Rides|Coaching' with the description 'Adventure activities including MTB.' However, mountain biking is not prominently featured on ace-adventures.co.uk as of June 2026 research. This discrepancy needs human review — either the website has not been updated to show MTB, or the MTB CSV entry is incorrect.",
+    "ratings": {
+      "google": {
+        "rating": null,
+        "reviewCount": null,
+        "note": "No Google rating found. Consistent with task description ('no Google rating'). A search did not surface a Google Maps listing for this operator. Verify by searching Google Maps for 'Ace Adventures Bridgnorth WV15 6BH'.",
+        "verifyManually": true
+      },
+      "tripadvisor": {
+        "listing": null,
+        "note": "No TripAdvisor listing found for ace-adventures.co.uk / Bridgnorth-based Ace Adventures. Multiple other 'ACE Adventure' companies have TripAdvisor listings (Scotland, West Virginia, Serbia) but these are different businesses."
+      }
+    },
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/profile.php?id=100063120374470",
+        "name": "Ace Adventures | Bridgnorth",
+        "note": "Profile URL confirmed. Facebook page name confirms 'Ace Adventures | Bridgnorth'. Follower count and posting frequency not extracted.",
+        "source": "https://ace-adventures.co.uk/ (footer link)"
+      }
+    },
+    "pricing": {
+      "publiclyAvailable": false,
+      "note": "No prices are displayed on ace-adventures.co.uk as of June 2026. Contact the operator on 07525 058938 or andyevrard@yahoo.co.uk for pricing. Do not publish any pricing without confirming directly with the operator."
+    },
+    "accreditations": {
+      "note": "The ace-adventures.co.uk homepage displays five accreditation/membership logos in the footer area. The specific organisations cannot be determined from the rendered text content — they appear as logo images without alt-text labels. Human editor must visit the website and identify each badge. Likely candidates for an outdoor activities provider include: Mountain Training, British Canoeing, NICAS (National Indoor Climbing Award Scheme), Institute for Outdoor Learning, Adventuremark, or AALA-licensed operator status.",
+      "verifyManually": true,
+      "source": "https://ace-adventures.co.uk/"
+    }
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "The ace-adventures.co.uk website displays a logo under 'Copyright © 2025 – Ace Adventures All Right Reserved'. No freely licensed version found on Openverse, Unsplash, or Wikimedia Commons. Logo must be obtained directly from the operator under written licence or permission."
+    },
+    "cover": {
+      "status": "BLOCKED",
+      "reason": "All photography on ace-adventures.co.uk is copyright © 2025 Ace Adventures. No freely licensed photographs of this operator's activities were found. The Facebook page (https://www.facebook.com/profile.php?id=100063120374470) may contain activity photographs but reproducing Facebook images requires explicit operator permission. Do not use AI-generated images. Image must be sourced directly from the operator or via a licensed stock source."
+    },
+    "gallery": {
+      "status": "BLOCKED",
+      "reason": "Same copyright restriction applies. No freely licensed gallery images found."
+    },
+    "actionRequired": "Contact the operator (07525 058938 / andyevrard@yahoo.co.uk) to request a media pack or written permission to reproduce photography. Alternatively, commission original photography under a work-for-hire arrangement, or search Openverse/Wikimedia Commons for generic Brecon Beacons or Snowdonia adventure activity photography (kayaking, rock climbing) that could represent the activity type without depicting this specific operator."
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Identity: ace-adventures.co.uk is the correct operator for slug 'ace-adventure'",
+      "confidence": "MODERATE",
+      "issue": "There is no explicit URL or unique identifier linking the directory slug 'ace-adventure' to ace-adventures.co.uk. The match is inferred from: (1) the internal MTB CSV listing 'Ace Adventure' with South Wales coordinates 51.6, -3.9 — consistent with ace-adventures.co.uk's stated Brecon Beacons service area; (2) the closest matching name and UK-based outdoor activity profile. Multiple other 'ACE Adventure' companies exist (Scotland, West Virginia, Serbia, Balkans) and are definitively NOT the correct match. However, the Bridgnorth/England-based ace-adventures.co.uk cannot be confirmed without direct verification.",
+      "action": "A human editor must confirm this is the correct operator. The simplest verification is to contact 07525 058938 and ask if the business trades under 'Ace Adventure' on the Adventure Wales directory at /directory/ace-adventure."
+    },
+    {
+      "claim": "Operator is based in England, not Wales",
+      "confidence": "HIGH",
+      "issue": "The registered/contact address is Washbrook Road, Bridgnorth, WV15 6BH — Shropshire, England. The operator serves Welsh locations (Brecon Beacons, Snowdonia) but is not based in Wales. This may affect eligibility for the Adventure Wales directory or require a disclosure on the listing page.",
+      "action": "Editorial decision: does the Adventure Wales directory include England-based operators who run activities in Wales? If yes, add a note to the listing that the operator is based in England but operates in Welsh locations. If no, this listing may need to be removed or marked as out of scope."
+    },
+    {
+      "claim": "Mountain biking / guided MTB rides",
+      "confidence": "LOW",
+      "issue": "The internal MTB operators CSV categorises this operator as offering 'Guided Rides|Coaching' and 'Adventure activities including MTB.' However, mountain biking is not prominently listed on ace-adventures.co.uk as of June 2026. The website focuses on rock climbing, mountain walking, and kayaking/canoeing.",
+      "action": "Verify with the operator whether they currently offer guided MTB rides or MTB coaching. If confirmed, update the activities list and add a source URL. If not confirmed, remove the MTB categorisation from the directory listing."
+    },
+    {
+      "claim": "Email address andyevrard@yahoo.co.uk",
+      "confidence": "MODERATE",
+      "issue": "A personal Yahoo email address is listed as the contact email on the website. This is common for small independent operators but may be outdated or abandoned.",
+      "action": "Send a test email or call the phone number to verify the contact details are still active before publishing."
+    },
+    {
+      "claim": "Accreditations — five logos on website",
+      "confidence": "UNVERIFIED",
+      "issue": "Five accreditation/membership logos are visible on the homepage but cannot be identified from text content. The specific governing bodies are unknown.",
+      "action": "Visit ace-adventures.co.uk in a browser and identify each logo badge. Check for AALA licensing via https://aala.hse.gov.uk/aala/provider_search.php (search by business name or postcode WV15 6BH)."
+    },
+    {
+      "claim": "Operator is currently trading",
+      "confidence": "MODERATE",
+      "issue": "The website copyright says 2025, suggesting the site was last updated in 2025. However, a small operator site may not be regularly maintained. No recent reviews were found to confirm active trading in 2026.",
+      "action": "Call 07525 058938 or email to confirm the business is currently active and accepting bookings."
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://ace-adventures.co.uk/",
+      "description": "Official website — address, phone, email, activities, courses, accreditation logos, Facebook link, copyright",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.facebook.com/profile.php?id=100063120374470",
+      "description": "Facebook page — confirmed business name 'Ace Adventures | Bridgnorth'",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "content/operators/mtb.csv",
+      "description": "Internal MTB operators CSV — lists 'Ace Adventure' with coordinates 51.6, -3.9, South Wales region, Guided Rides|Coaching, adventure activities including MTB",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirms operator-ace-adventure, unclassified_operator tier, all key fields missing",
+      "type": "internal"
+    }
+  ],
+
+  "sourcesRuledOut": [
+    {
+      "url": "https://aceadventures.co.uk/",
+      "name": "ACE Adventures & Hideaways",
+      "reason": "Scotland-based operator (Logie Estate, Moray, near Forres). Confirmed not the same as the Wales directory entry.",
+      "source": "https://visitscotland.com/info/see-do/ace-adventures-hideaways-p264191"
+    },
+    {
+      "url": "https://aceraft.com/",
+      "name": "ACE Adventure Resort",
+      "reason": "Based in Oak Hill, West Virginia, USA. Not relevant.",
+      "source": "https://www.tripadvisor.com/Hotel_Review-g59381-d543128-Reviews-ACE_Adventure_Resort-Oak_Hill_West_Virginia.html"
+    },
+    {
+      "url": "https://ace-adventurecentre.com/",
+      "name": "A.C.E. Adventure",
+      "reason": "Balkans adventure travel company based in Nis, Serbia. Not relevant.",
+      "source": "https://ace-adventurecentre.com/"
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "Research has identified the most likely operator match (ace-adventures.co.uk, Bridgnorth, Shropshire) and populated all discoverable fields. However, three critical blockers require human QA before this listing can be published: (1) operator identity must be confirmed by direct contact — the match is inferred, not proven; (2) the operator is based in England, not Wales, which requires an editorial eligibility decision; (3) all images are commercially copyrighted with no freely licensed alternative — the image blocker must be resolved by contacting the operator.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Operator identity unconfirmed",
+      "detail": "The link between the directory slug 'ace-adventure' and ace-adventures.co.uk (Bridgnorth) is inferred, not verified. A human editor must call 07525 058938 or email andyevrard@yahoo.co.uk to confirm this is the correct business.",
+      "severity": "CRITICAL"
+    },
+    {
+      "rank": 2,
+      "blocker": "Operator based in England, not Wales",
+      "detail": "The address on ace-adventures.co.uk is Washbrook Road, Bridgnorth, WV15 6BH — Shropshire, England. An editorial decision is required on whether England-based operators who run activities in Welsh locations are in scope for this directory.",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 3,
+      "blocker": "All images blocked — no freely licensed photography found",
+      "detail": "Website images are copyright © 2025 Ace Adventures. No open-licence alternatives found on Openverse, Unsplash, or Wikimedia Commons. A media pack or written permission must be obtained from the operator, or original photography commissioned, before a cover image or gallery can be published.",
+      "severity": "HIGH"
+    }
+  ]
+}

@@ -1,0 +1,504 @@
+{
+  "_meta": {
+    "task": "content-ops-081-operator-cardiff-international-white-water",
+    "contentItem": "operator-cardiff-international-white-water",
+    "contentType": "operator",
+    "slug": "cardiff-international-white-water",
+    "route": "/directory/cardiff-international-white-water",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "qa_needed",
+    "researchOutcome": "substantially_complete_with_verification_flags",
+    "identityConfidence": "HIGH — operator confirmed via official website, Wikipedia, VisitWales, TripAdvisor, and multiple corroborating sources; two data discrepancies (slug and coordinates) flagged"
+  },
+
+  "proposedOperatorData": {
+    "name": "Cardiff International White Water",
+    "shortName": "CIWW",
+    "slug": "cardiff-international-white-water",
+    "slugNote": "NEEDS HUMAN REVIEW — kayak.csv uses 'cardiff-international-white-water' (matches the official brand name and task slug) but hire.csv uses 'ciww'. Recommend standardising to 'cardiff-international-white-water'. A slug change from 'ciww' would require a redirect check if that route is already live.",
+    "website": "https://www.ciww.com",
+    "websiteSource": "https://www.ciww.com (active, verified June 2026)",
+    "opened": "26 March 2010",
+    "openedSource": "https://en.wikipedia.org/wiki/Cardiff_International_White_Water",
+    "description": "UK's first on-demand white water centre, opened in 2010 in Cardiff Bay's International Sports Village. Built for £13.3 million, designed by HydroStadium — the French specialists behind the Olympic white water courses in Sydney, Athens, and Beijing. The 258-metre course drops 3.9 metres and generates up to 10 m³/s flow.",
+    "descriptionSource": "https://en.wikipedia.org/wiki/Cardiff_International_White_Water",
+    "contact": {
+      "phone": "029 2082 9970",
+      "phoneNote": "Number appears consistently in both internal CSVs (kayak.csv and hire.csv) and on the official website. Low risk of discrepancy.",
+      "phoneSource": "https://www.ciww.com",
+      "email": "info@ciww.com",
+      "emailSource": "https://www.ciww.com and internal kayak.csv/hire.csv",
+      "address": {
+        "line1": "Watkiss Way",
+        "locality": "Cardiff Bay",
+        "town": "Cardiff",
+        "postcode": "CF11 0SY",
+        "country": "Wales",
+        "operationalNote": "Located within the International Sports Village on the Cardiff Bay waterfront, adjacent to the Ice Arena and Wales National Pool."
+      },
+      "addressSource": "https://www.ciww.com and https://www.visitwales.com/activity/cardiff-international-white-water-1853662"
+    },
+    "location": {
+      "lat": 51.448,
+      "lng": -3.183,
+      "latLngNote": "kayak.csv records 51.448, -3.183; hire.csv records 51.450, -3.180. The kayak.csv coordinates are confirmed by Wikipedia (51°26′53″N 3°10′59″W = 51.448, -3.183) and Panoramio geotag (51.447861°N, 3.183011°W). The hire.csv values (51.450, -3.180) appear to be a data entry rounding error. Recommended coordinates: 51.448, -3.183.",
+      "latLngSource": "https://en.wikipedia.org/wiki/Cardiff_International_White_Water and Panoramio/Wikimedia Commons geotag from File:Ciww_cardiff_white_water_center_-_panoramio.jpg",
+      "region": "south-wales",
+      "locality": "Cardiff Bay",
+      "nearbyLandmark": "International Sports Village, Cardiff Bay"
+    },
+    "shortDescription": "Cardiff International White Water (CIWW) is the UK's first on-demand white water centre, set on Cardiff Bay's waterfront. Opened in 2010, it offers white water rafting, kayaking, SUP, indoor surfing, and climbing for all ages from 6+, hosted on an Olympic-specification 258-metre artificial river course.",
+    "shortDescriptionNote": "Drafted from verified Wikipedia and official website content. Needs editorial review before publishing.",
+    "shortDescriptionSource": "https://en.wikipedia.org/wiki/Cardiff_International_White_Water and https://www.ciww.com/activities",
+    "fullDescription": "Cardiff International White Water (CIWW) is the United Kingdom's first on-demand white water facility, situated within the International Sports Village on the shores of Cardiff Bay. Opened on 26 March 2010, the centre was built at a cost of £13.3 million — funded by the Welsh Assembly Government, Sportlot, the Welsh Canoe Association, and the Heritage Lottery Fund — and was designed by French specialist firm HydroStadium, the same company behind the Olympic white water venues at Sydney, Athens, and Beijing.\n\nThe course runs 258 metres, drops 3.9 metres, and generates a flow of up to 10 m³/s at competition grade. In June 2012, CIWW hosted the opening round of the ICF Canoe Slalom World Cup, which international athletes used as a final selection event for the 2012 London Olympics.\n\nVisitors can choose from three broad activity categories: Thrills and Spills (white water rafting, tubing, mini rafts, hot dogging), Calm and Collected (SUP taster, SUP yoga, gorge walking, kayaking courses), and High and Dry (climbing wall, indoor wave body-boarding, indoor Flowrider stand-up surfing). All activities are available from age 6. The centre also runs the CIWW Kids Academy, corporate team building, and first aid training.\n\nCIWW is accredited by Adventure Smart UK, affiliated with the International Rafting Federation (IRF), and holds ShOut2 membership. With a TripAdvisor rating of 4.9/5 from over 1,500 reviews and ranked #1 of all Tours and Activities in Cardiff, it is one of Wales's most celebrated adventure venues.",
+    "fullDescriptionNote": "Drafted from Wikipedia, the operator website, and VisitWales listing. The 'Olympic venue' framing should be used with care — CIWW is Olympic-grade and hosted ICF World Cup qualification events, but the 2012 Olympics white water events were held at Lee Valley (Hertfordshire), not Cardiff. Needs editorial review before publishing.",
+    "fullDescriptionSource": "https://en.wikipedia.org/wiki/Cardiff_International_White_Water, https://www.ciww.com/activities, https://www.visitwales.com/activity/cardiff-international-white-water-1853662",
+    "activities": [
+      {
+        "category": "Thrills and Spills",
+        "name": "White Water Rafting",
+        "source": "https://www.ciww.com/activities"
+      },
+      {
+        "category": "Thrills and Spills",
+        "name": "Family White Water Rafting",
+        "source": "https://www.ciww.com/activities"
+      },
+      {
+        "category": "Thrills and Spills",
+        "name": "White Water Tubing",
+        "source": "https://www.ciww.com/activities"
+      },
+      {
+        "category": "Thrills and Spills",
+        "name": "Family White Water Tubing",
+        "source": "https://www.ciww.com/activities"
+      },
+      {
+        "category": "Thrills and Spills",
+        "name": "Mini Rafts",
+        "source": "https://www.ciww.com/activities"
+      },
+      {
+        "category": "Thrills and Spills",
+        "name": "Hot Dogging",
+        "source": "https://www.ciww.com/activities"
+      },
+      {
+        "category": "Calm and Collected",
+        "name": "Stand Up Paddleboarding (SUP) Taster",
+        "source": "https://www.ciww.com/activities"
+      },
+      {
+        "category": "Calm and Collected",
+        "name": "SUP Yoga",
+        "source": "https://www.ciww.com/activities"
+      },
+      {
+        "category": "Calm and Collected",
+        "name": "Gorge Walking",
+        "source": "https://www.ciww.com/activities"
+      },
+      {
+        "category": "Calm and Collected",
+        "name": "Kayaking Courses",
+        "source": "https://www.ciww.com/activities"
+      },
+      {
+        "category": "High and Dry",
+        "name": "Climbing Wall",
+        "source": "https://www.ciww.com/activities"
+      },
+      {
+        "category": "High and Dry",
+        "name": "Indoor Wave — Body and Knee Boarding",
+        "source": "https://www.ciww.com/activities"
+      },
+      {
+        "category": "High and Dry",
+        "name": "Indoor Wave — Stand Up Surf (Flowrider)",
+        "source": "https://www.ciww.com/activities"
+      },
+      {
+        "category": "Other",
+        "name": "CIWW Kids Academy",
+        "source": "https://www.ciww.com/activities"
+      },
+      {
+        "category": "Other",
+        "name": "First Aid Training",
+        "source": "https://www.ciww.com/activities"
+      },
+      {
+        "category": "Other",
+        "name": "Team Building Experiences",
+        "source": "https://www.ciww.com/activities"
+      }
+    ],
+    "minimumAge": "6 years (all activities)",
+    "minimumAgeSource": "https://www.ciww.com/activities",
+    "courseSpecs": {
+      "length": "258 metres",
+      "drop": "3.9 metres",
+      "slope": "1.5%",
+      "maxFlowRate": "10 m³/s (competition grade)",
+      "configurationNote": "Hairpin shape, approximately 1.5 loops",
+      "source": "https://en.wikipedia.org/wiki/Cardiff_International_White_Water"
+    },
+    "accreditations": [
+      {
+        "name": "Adventure Smart UK",
+        "source": "https://www.ciww.com (homepage badge)"
+      },
+      {
+        "name": "IRF",
+        "full": "International Rafting Federation",
+        "detail": "Affiliated member",
+        "source": "https://www.ciww.com (homepage badge)"
+      },
+      {
+        "name": "ShOut2",
+        "detail": "Sported scheme supporting participation for disadvantaged young people",
+        "note": "NEEDS HUMAN REVIEW to confirm current active membership status.",
+        "source": "https://www.ciww.com (homepage badge)"
+      },
+      {
+        "name": "Good To Go Wales",
+        "detail": "Welsh Government / VisitWales quality mark",
+        "note": "NEEDS HUMAN REVIEW — this was a post-COVID scheme launched 2020. It may no longer be actively awarded. Confirm with operator whether certification is still current and should be displayed.",
+        "source": "https://www.ciww.com (homepage badge)"
+      }
+    ],
+    "openingHours": {
+      "status": "UNVERIFIED",
+      "note": "Opening hours are not published on the website, VisitWales listing, or any source accessed during research. Hours are session-based and vary seasonally. A human editor must call 029 2082 9970 or check https://www.ciww.com directly for current session availability.",
+      "source": "Unverified — not present on https://www.ciww.com or any indexed source"
+    },
+    "ratings": {
+      "tripadvisor": {
+        "rating": 4.9,
+        "outOf": 5,
+        "reviewCount": 1571,
+        "ranking": "#1 of 118 Tours & Activities in Cardiff",
+        "url": "https://www.tripadvisor.com/Attraction_Review-g186460-d2689570-Reviews-Cardiff_International_White_Water-Cardiff_South_Wales_Wales.html",
+        "note": "Rating and count fetched directly from TripAdvisor, June 2026. Do not republish review counts — TripAdvisor totals change over time.",
+        "source": "https://www.tripadvisor.com/Attraction_Review-g186460-d2689570-Reviews-Cardiff_International_White_Water-Cardiff_South_Wales_Wales.html"
+      },
+      "google": {
+        "rating": 4.8,
+        "reviewCount": 595,
+        "note": "NEEDS HUMAN REVIEW — 4.8/5 from ~595 reviews sourced via Wanderlog aggregation (https://wanderlog.com/place/details/754432/cardiff-international-white-water). Google does not expose live ratings via web scrape. Verify directly at https://maps.google.com by searching 'Cardiff International White Water CF11 0SY'. Do not publish this rating until manually confirmed.",
+        "verifyManually": true,
+        "googleMapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=Cardiff+International+White+Water+Cardiff+Bay",
+        "source": "Wanderlog aggregation — https://wanderlog.com/place/details/754432/cardiff-international-white-water"
+      }
+    },
+    "pricing": {
+      "publiclyAvailable": false,
+      "pricesMustBeVerified": true,
+      "pricingNote": "Full pricing is not listed on the website — booking is handled via the 'Book Now' system. The Indoor Wave is priced at £35 per person (confirmed from website). A user TripAdvisor review mentioned 'park and play' at £14 for 2.5 hours — this is unverified as a current official price and should not be published. All prices must be verified directly with the operator before publication.",
+      "confirmedPrices": [
+        {
+          "activity": "Indoor Wave (Flowrider)",
+          "price": "£35 per person",
+          "source": "https://www.ciww.com (as of June 2026)",
+          "note": "Treat as indicative — verify before publishing as prices change seasonally"
+        }
+      ],
+      "unverifiedPrices": [
+        {
+          "activity": "Park and Play session (approx 2.5 hours)",
+          "price": "£14 per person",
+          "source": "TripAdvisor user review — DO NOT PUBLISH without operator verification"
+        }
+      ]
+    },
+    "socialMedia": {
+      "facebook": {
+        "url": "https://www.facebook.com/cardiffintww",
+        "handle": "cardiffintww",
+        "source": "https://www.ciww.com (homepage footer)"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/cardiffintww/",
+        "handle": "@cardiffintww",
+        "source": "https://www.ciww.com (homepage footer)"
+      },
+      "twitter": {
+        "url": "https://twitter.com/cardiffintww",
+        "handle": "@cardiffintww",
+        "source": "https://www.ciww.com (homepage footer)"
+      },
+      "youtube": {
+        "url": "https://www.youtube.com/c/CardiffInternationalWhiteWater",
+        "source": "Web search — confirmed via search results referencing the YouTube channel"
+      }
+    },
+    "tourismListings": [
+      {
+        "site": "VisitWales",
+        "url": "https://www.visitwales.com/activity/cardiff-international-white-water-1853662",
+        "note": "Official Welsh tourism authority listing — used as a corroborating source for address and accreditation badges."
+      },
+      {
+        "site": "TripAdvisor",
+        "url": "https://www.tripadvisor.com/Attraction_Review-g186460-d2689570-Reviews-Cardiff_International_White_Water-Cardiff_South_Wales_Wales.html",
+        "note": "#1 of 118 Tours & Activities in Cardiff; 4.9/5 from 1,571 reviews."
+      },
+      {
+        "site": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cardiff_International_White_Water",
+        "note": "Primary source for construction history, course specifications, and Olympic connection details."
+      }
+    ],
+    "history": {
+      "opened": "26 March 2010",
+      "constructionCost": "£13.3 million",
+      "originalEstimate": "£8.4 million",
+      "originalPlannedOpening": "2008",
+      "designer": "HydroStadium (France)",
+      "designerNote": "HydroStadium also designed the Olympic white water venues at Sydney 2000, Athens 2004, and Beijing 2008.",
+      "developer": "Cardiff Council",
+      "funders": [
+        "Welsh Assembly Government",
+        "Sportlot (National Lottery)",
+        "Welsh Canoe Association",
+        "Heritage Lottery Fund"
+      ],
+      "olympicConnectionNote": "CIWW is NOT a 2012 Olympic venue — the London 2012 canoe slalom events were held at Lee Valley White Water Centre, Hertfordshire. However, CIWW hosted the ICF Canoe Slalom World Cup Round 1 (8–10 June 2012), which nations used as a final athlete selection event for London 2012. CIWW is built to Olympic competition specification by the same designers. The 'Olympic legacy' framing is accurate only in this qualified sense — editors should not describe it as a '2012 Olympic venue'.",
+      "icfWorldCup2012": "Hosted round 1 of the ICF Canoe Slalom World Cup, 8–10 June 2012",
+      "source": "https://en.wikipedia.org/wiki/Cardiff_International_White_Water"
+    }
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "The CIWW logo is copyright Cardiff International White Water / Cardiff Council. No freely licensed version is available on Wikimedia Commons, Openverse, or Unsplash.",
+      "actionRequired": "Contact the operator at info@ciww.com or 029 2082 9970 to request a logo file for use on the Adventure Wales directory listing at /directory/cardiff-international-white-water. Retain written confirmation of permission."
+    },
+    "cover": {
+      "status": "CANDIDATES_AVAILABLE",
+      "recommendation": "Four freely licensed Wikimedia Commons images are available showing the CIWW facility and active kayaking. Two are CC BY 2.0 (most permissive — attribution only, no share-alike) and are recommended as the first choice. All images are of the actual CIWW facility, not generic watersports photography.",
+      "recommendedPrimary": {
+        "title": "Cardiff International White Water (Cardiff Bay)",
+        "author": "Ben Salter",
+        "dateTaken": "16 September 2018",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "requiredAttribution": "Photo: Ben Salter, CC BY 2.0, via Wikimedia Commons",
+        "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Cardiff_International_White_Water_(Cardiff_Bay).jpg",
+        "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/Cardiff_International_White_Water_%28Cardiff_Bay%29.jpg",
+        "dimensionsNote": "7712×2192 px, 9.92 MB — wide panoramic shot. Confirm resizing to web dimensions respects licence attribution.",
+        "note": "Most recent image (2018). Wide panoramic showing full Cardiff Bay context and CIWW facility. CC BY 2.0 — attribution only required. No operator permission needed."
+      },
+      "candidates": [
+        {
+          "rank": 1,
+          "title": "Cardiff International White Water (Cardiff Bay)",
+          "author": "Ben Salter",
+          "dateTaken": "2018-09-16",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "requiredAttribution": "Photo: Ben Salter, CC BY 2.0, via Wikimedia Commons",
+          "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Cardiff_International_White_Water_(Cardiff_Bay).jpg",
+          "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/Cardiff_International_White_Water_%28Cardiff_Bay%29.jpg",
+          "recommended": true
+        },
+        {
+          "rank": 2,
+          "title": "Cardiff White Water Centre",
+          "author": "Jeremy Segrott",
+          "dateTaken": "2016-05-28",
+          "licence": "CC BY 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "requiredAttribution": "Photo: Jeremy Segrott, CC BY 2.0, via Wikimedia Commons",
+          "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Cardiff_White_Water_Centre_(26702260023).jpg",
+          "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Cardiff_White_Water_Centre_%2826702260023%29.jpg",
+          "recommended": true
+        },
+        {
+          "rank": 3,
+          "title": "Cardiff International White Water — kayaking in blue",
+          "author": "Harry Wood",
+          "dateTaken": "2010-10-10",
+          "licence": "CC BY-SA 2.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "requiredAttribution": "Photo: Harry Wood, CC BY-SA 2.0, via Wikimedia Commons",
+          "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Cardiff_International_White_Water_-_kayaking_in_blue.jpg",
+          "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/Cardiff_International_White_Water_-_kayaking_in_blue.jpg",
+          "note": "Action shot of kayaker on the CIWW course — shows the experience, not just the building. Good for conveying what the activity looks like.",
+          "recommended": true
+        },
+        {
+          "rank": 4,
+          "title": "Cardiff International White Water (aerial)",
+          "author": "Jon Caterer",
+          "dateTaken": "2012-11-01",
+          "licence": "CC BY-SA 3.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "requiredAttribution": "Photo: Jon Caterer, CC BY-SA 3.0, via Wikimedia Commons",
+          "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Cardiff_International_White_Water_(aerial).jpg",
+          "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Cardiff_International_White_Water_%28aerial%29.jpg",
+          "note": "Aerial view showing the full hairpin course layout and Cardiff Bay surroundings. Useful for context but older (2012).",
+          "recommended": false
+        }
+      ],
+      "operatorPhotosNote": "The CIWW website (ciww.com) and social media (@cardiffintww) contain professional activity photography. These are copyright Cardiff International White Water and cannot be used without written permission. Requesting a media pack is recommended for higher-quality imagery."
+    },
+    "gallery": {
+      "status": "CANDIDATES_AVAILABLE_OPERATOR_PACK_PREFERRED",
+      "reason": "Three Wikimedia Commons images (ranks 1–3 above) could form a basic gallery covering: panoramic facility exterior (2018), facility overview (2016), and active kayaking (2010). However, operator-supplied photography would better represent the full range of activities (rafting, SUP, indoor wave, climbing) and current branding.",
+      "actionRequired": "Email info@ciww.com or call 029 2082 9970 to request a media pack (5–10 JPEGs of activities, minimum 1200px wide, plus written permission for use on Adventure Wales at /directory/cardiff-international-white-water, a non-commercial tourism platform). Retain written confirmation."
+    },
+    "generalImageActionRequired": "Contact info@ciww.com or 029 2082 9970 to request: (a) a logo file and (b) a media pack with activity photography. Freely licensed Wikimedia Commons images (CC BY 2.0 and CC BY-SA) can be used as placeholder cover and gallery images in the interim, with correct attribution. All interim images show the actual CIWW facility — no generic watersports substitution needed."
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Slug discrepancy: 'cardiff-international-white-water' vs 'ciww'",
+      "confidence": "HIGH — discrepancy confirmed between kayak.csv and hire.csv",
+      "issue": "kayak.csv uses the slug 'cardiff-international-white-water' (matches the task and official brand name). hire.csv uses 'ciww'. The task assigns slug 'cardiff-international-white-water'. Two separate directory entries may exist at /directory/cardiff-international-white-water and /directory/ciww. Check whether both routes are live and add a redirect if needed.",
+      "action": "Review content-inventory.json and the live site to determine whether both slugs have active pages. Consolidate to 'cardiff-international-white-water' as the canonical slug and add a 301 redirect from /directory/ciww.",
+      "severity": "HIGH"
+    },
+    {
+      "claim": "Coordinates: 51.448, -3.183 (kayak.csv) vs 51.450, -3.180 (hire.csv)",
+      "confidence": "HIGH — kayak.csv coordinates confirmed by Wikipedia and Panoramio geotag",
+      "issue": "Wikipedia gives 51°26′53″N 3°10′59″W = 51.448, -3.183. The Panoramio/Wikimedia Commons geotag on the CIWW panorama photo is 51.447861°N, 3.183011°W. These match kayak.csv closely. The hire.csv values (51.450, -3.180) appear to be rounded/incorrect data entry.",
+      "action": "Update hire.csv to use 51.448, -3.183 (or the more precise 51.447861, -3.183011). Use 51.448, -3.183 as the canonical coordinates for the directory listing.",
+      "severity": "HIGH"
+    },
+    {
+      "claim": "Google Maps rating of 4.8/5 from ~595 reviews",
+      "confidence": "LOW — sourced from Wanderlog aggregation, not directly from Google",
+      "issue": "Google does not expose live ratings via web scrape. The 4.8/595 figure comes from the Wanderlog travel aggregator. This must be manually verified at Google Maps before being published on the directory listing.",
+      "action": "Search Google Maps for 'Cardiff International White Water CF11 0SY' and check the Business Profile rating. Do not publish a Google rating until confirmed.",
+      "severity": "MEDIUM"
+    },
+    {
+      "claim": "Opening hours not published",
+      "confidence": "N/A — no hours found across any source",
+      "issue": "Hours are not listed on the CIWW website, VisitWales, TripAdvisor, or Wanderlog. The centre operates on a session-booking basis and hours likely vary seasonally and by activity.",
+      "action": "Call 029 2082 9970 or check the booking system at https://www.ciww.com to obtain representative opening hours for display on the directory listing. At minimum, flag that 'hours vary — booking required'.",
+      "severity": "MEDIUM"
+    },
+    {
+      "claim": "'Olympic venue' or 'Olympic legacy' framing",
+      "confidence": "HIGH — editorial risk confirmed",
+      "issue": "CIWW is frequently described informally as an 'Olympic venue' or 'built for the Olympics', but this is misleading. The 2012 London Olympics white water events were held at Lee Valley White Water Centre (Hertfordshire). CIWW is Olympic-specification (designed by HydroStadium, same as Sydney/Athens/Beijing Olympic courses) and hosted an ICF World Cup qualifying event in June 2012 used for Olympic athlete selection — but it was not itself a 2012 Games venue.",
+      "action": "If the description refers to Olympics, use the qualified framing: 'Olympic-specification course, designed by HydroStadium (designers of the Sydney, Athens, and Beijing Olympic courses)' or 'hosted ICF World Cup events used for 2012 London Olympics athlete selection'. Do not describe it as 'the Olympic white water venue' or 'built for the Olympics'.",
+      "severity": "HIGH — editorial"
+    },
+    {
+      "claim": "'Good To Go Wales' accreditation is current",
+      "confidence": "LOW — scheme dates from 2020 COVID period",
+      "issue": "The 'Good To Go Wales' badge was a Welsh Government / VisitWales COVID-safe scheme launched in 2020. It may no longer be an active or meaningful certification in 2026. If the badge is still displayed on the CIWW website it can be noted, but it should not be presented as a primary quality mark.",
+      "action": "Confirm with operator whether Good To Go Wales is still current. If so, include it as an accreditation with a note about its scope.",
+      "severity": "LOW"
+    },
+    {
+      "claim": "Pricing: £35 indoor wave; £14 park and play",
+      "confidence": "MODERATE (£35 from website) / LOW (£14 from TripAdvisor user review)",
+      "issue": "The £35 Indoor Wave price appears on the CIWW website as of June 2026 research. The £14 'park and play' figure is from an undated TripAdvisor user review and should not be published as current pricing.",
+      "action": "Do not publish the £14 figure without operator verification. If pricing is to be shown on the directory listing, link to the booking system and note that prices are subject to change.",
+      "severity": "MEDIUM"
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "https://www.ciww.com",
+      "description": "Operator's primary website — name, activities, pricing (indoor wave), accreditation badges, social media links, contact details",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.ciww.com/activities",
+      "description": "Activities page — full list of 16 activity options across three categories; minimum age 6",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cardiff_International_White_Water",
+      "description": "Wikipedia article — construction history, cost (£13.3m), funder names, opened date (26 March 2010), HydroStadium designer, course specs (258m, 3.9m drop, 10m³/s), ICF World Cup 2012, Olympic specification note",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.visitwales.com/activity/cardiff-international-white-water-1853662",
+      "description": "VisitWales official tourism listing — address, accreditation badges (including AAAP badge — partially unidentified), corroborating source",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.tripadvisor.com/Attraction_Review-g186460-d2689570-Reviews-Cardiff_International_White_Water-Cardiff_South_Wales_Wales.html",
+      "description": "TripAdvisor — 4.9/5 from 1,571 reviews; #1 of 118 Tours & Activities in Cardiff; user review mentioning £14 park and play (unverified as current price)",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://wanderlog.com/place/details/754432/cardiff-international-white-water",
+      "description": "Wanderlog travel aggregator — Google rating 4.8/5 from ~595 reviews (aggregated, needs manual verification); coordinates corroborating source",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cardiff_International_White_Water_(Cardiff_Bay).jpg",
+      "description": "Wikimedia Commons — CC BY 2.0 image: 'Cardiff International White Water (Cardiff Bay)' by Ben Salter, September 2018. Recommended primary cover image.",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cardiff_White_Water_Centre_(26702260023).jpg",
+      "description": "Wikimedia Commons — CC BY 2.0 image: 'Cardiff White Water Centre' by Jeremy Segrott, May 2016.",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cardiff_International_White_Water_-_kayaking_in_blue.jpg",
+      "description": "Wikimedia Commons — CC BY-SA 2.0 image: kayaker in action at CIWW, by Harry Wood, October 2010.",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cardiff_International_White_Water_(aerial).jpg",
+      "description": "Wikimedia Commons — CC BY-SA 3.0 aerial image of CIWW, by Jon Caterer, November 2012.",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "content/operators/kayak.csv",
+      "description": "Internal kayak operators CSV — slug 'cardiff-international-white-water', website, email, phone, activities, coordinates 51.448/-3.183, address CF11 0SY",
+      "type": "internal"
+    },
+    {
+      "url": "content/operators/hire.csv",
+      "description": "Internal hire operators CSV — slug 'ciww' (discrepancy vs kayak.csv), website, email, phone, coordinates 51.450/-3.180 (discrepancy vs kayak.csv)",
+      "type": "internal"
+    },
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirms operator-cardiff-international-white-water, unclassified_operator tier, all key fields missing at time of task creation",
+      "type": "internal"
+    }
+  ],
+
+  "recommendedNextStatus": "qa_needed",
+  "recommendedNextStatusReason": "Research has produced a substantially complete operator profile: verified name, address, coordinates, website, phone, email, full activities list, course specifications, construction/history background, accreditations, social media handles, TripAdvisor rating (4.9/5 from 1,571 reviews, #1 in Cardiff), and four freely licensed Wikimedia Commons cover image candidates (two CC BY 2.0, one CC BY-SA 2.0, one CC BY-SA 3.0). Key items pending before the page can be published: (1) resolve the slug/route discrepancy between kayak.csv ('cardiff-international-white-water') and hire.csv ('ciww'); (2) manually verify the Google Maps rating; (3) obtain opening hours from the operator; (4) request a logo and operator-supplied photography.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Slug/route duplication — two live entries may exist",
+      "detail": "Internal data has two different slugs for this operator: 'cardiff-international-white-water' (kayak.csv and this task) and 'ciww' (hire.csv and content-ops-086). Both appear in the content inventory as separate entries with the same blocker description. If both routes are live at /directory/cardiff-international-white-water and /directory/ciww, one must be canonicalised and the other must redirect. This must be resolved before either page is published to avoid duplicate content and a split link graph.",
+      "severity": "HIGH",
+      "action": "Audit the live Next.js directory data and content-inventory.json to determine which slug is in use. Agree on 'cardiff-international-white-water' as canonical. Add a 301 redirect from /directory/ciww if that route exists. Update hire.csv slug from 'ciww' to 'cardiff-international-white-water'."
+    },
+    {
+      "rank": 2,
+      "blocker": "No logo available — fully blocked without operator contact",
+      "detail": "No freely licensed version of the CIWW logo exists on Wikimedia Commons, Openverse, or Unsplash. The operator's logo is copyright Cardiff International White Water. A logo cannot be sourced from any third-party repository — it must be requested directly from the operator. Four freely licensed cover/gallery images are available in the interim from Wikimedia Commons (CC BY 2.0 and CC BY-SA).",
+      "severity": "HIGH",
+      "action": "Email info@ciww.com to request a logo file (SVG or transparent PNG) and a media pack for use on Adventure Wales at /directory/cardiff-international-white-water. Specify non-commercial tourism directory use. Retain written confirmation."
+    },
+    {
+      "rank": 3,
+      "blocker": "Opening hours unknown — session-based booking with no published schedule",
+      "detail": "No opening hours were found on the CIWW website, VisitWales listing, TripAdvisor, or any aggregator. The centre operates on a session-booking model with seasonal variation. Publishing a directory listing without any hours or availability guidance provides a poor user experience and may result in visitors arriving when sessions are unavailable.",
+      "severity": "MEDIUM",
+      "action": "Call 029 2082 9970 or email info@ciww.com to obtain representative opening hours or a note that the centre operates by session booking. At minimum, update the listing to say 'Opening times vary by activity — book online at ciww.com' and link to the booking page."
+    }
+  ]
+}

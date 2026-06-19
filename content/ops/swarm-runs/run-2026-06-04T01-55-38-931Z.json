@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-06-04T01:55:38.932Z",
+  "limit": 9,
+  "concurrency": 3,
+  "taskType": "research",
+  "status": "research_needed",
+  "results": [
+    {
+      "taskId": "content-ops-100-operator-gower-adventures",
+      "outputPath": "data/research/content-ops/operator-gower-adventures.json",
+      "exitCode": 0,
+      "startedAt": "2026-06-04T01:50:40.897Z",
+      "finishedAt": "2026-06-04T01:55:38.925Z",
+      "logPath": "/home/minigeek/projects/Adventure-Site/content/ops/swarm-logs/content-ops-100-operator-gower-adventures.log"
+    }
+  ]
+}

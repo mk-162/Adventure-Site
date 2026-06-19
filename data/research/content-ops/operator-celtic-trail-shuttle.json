@@ -1,0 +1,201 @@
+{
+  "_meta": {
+    "task": "content-ops-085-operator-celtic-trail-shuttle",
+    "contentItem": "operator-celtic-trail-shuttle",
+    "contentType": "operator",
+    "slug": "celtic-trail-shuttle",
+    "route": "/directory/celtic-trail-shuttle",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "blocked",
+    "researchOutcome": "unverifiable_operator",
+    "identityConfidence": "NONE — no verified web presence, no listing, no contact details found across all searched sources"
+  },
+
+  "proposedOperatorData": {
+    "name": "Celtic Trail Cycle Shuttle",
+    "nameNote": "Name taken from the content inventory blocker note. No independent confirmation of legal trading name found. 'Celtic Trail Shuttle' and 'Celtic Trail Cycle Shuttle' were both searched — neither returned a verifiable match.",
+    "slug": "celtic-trail-shuttle",
+    "website": null,
+    "websiteNote": "No website found. Exhaustive search across Visit Wales, TravelTrade directory, Sustrans/Walk Wheel Cycle Trust, Cycling UK forums, Google Maps, Facebook, and general web search returned no indexed website for this operator name.",
+    "contact": {
+      "phone": null,
+      "phoneNote": "UNVERIFIED — no phone number found in any directory or listing.",
+      "email": null,
+      "emailNote": "UNVERIFIED — no email address found.",
+      "address": {
+        "line1": null,
+        "locality": null,
+        "county": null,
+        "postcode": null,
+        "country": "Wales",
+        "countryNote": "Operating country inferred from Celtic Trail route geography (NCN Route 4 / Route 47, spanning Chepstow to Fishguard via South Wales). No verified address."
+      }
+    },
+    "location": {
+      "lat": null,
+      "lng": null,
+      "latLngNote": "BLOCKED — coordinates cannot be assigned without a verified operating base or service area.",
+      "region": "south_wales_or_pembrokeshire",
+      "regionNote": "Inferred from the Celtic Trail route corridor (Pembrokeshire, Carmarthenshire, Swansea Bay). Not confirmed.",
+      "serviceAreas": [],
+      "serviceAreaNote": "UNVERIFIED — the Celtic Trail (NCN 4 and NCN 47) runs ~378 miles from Chepstow to Fishguard. No specific pick-up/drop-off points confirmed. Source for route geography: https://www.visitwales.com/things-do/adventure-and-activities/cycling-and-mountain-biking/celtic-trail-journey-discovery and https://en.wikipedia.org/wiki/Celtic_Trail_cycle_route"
+    },
+    "description": {
+      "short": null,
+      "shortNote": "Cannot draft — no verified service description found. Expected service type would be cyclist shuttle/transfer or baggage transfer along the Celtic Trail corridor.",
+      "full": null,
+      "fullNote": "Cannot draft — operator not verified. Do not publish placeholder descriptions."
+    },
+    "activities": [],
+    "activitiesNote": "UNVERIFIED. Likely cycle shuttle / baggage transfer based on name, but this is inferential only.",
+    "openingHours": null,
+    "openingHoursNote": "UNVERIFIED.",
+    "googleRating": null,
+    "googleRatingNote": "No Google Business listing found. Content inventory blocker confirms: no Google rating.",
+    "logo": null,
+    "logoNote": "BLOCKED — no logo found. Content inventory blocker confirms: no logo.",
+    "coverImage": null,
+    "coverImageNote": "BLOCKED — no cover image found. Content inventory blocker confirms: no cover image. No verified operator images were located in any source. Do not use AI-generated images. See imageOptions below for route-generic alternatives that require human editorial decision."
+  },
+
+  "imageOptions": [
+    {
+      "option": 1,
+      "description": "Use a route-generic image of the Celtic Trail (NCN 4) rather than an operator-specific image. The Sustrans image library and Openverse/Flickr contain NCN-licensed cycling photography.",
+      "suggestedSearchTerms": ["Celtic Trail cycling Wales NCN 4", "Pembrokeshire cycling route"],
+      "licenceRequired": "CC BY or CC BY-SA minimum; verify current licence before use",
+      "source": "https://www.flickr.com/groups/cyclinguk/ or https://openverse.org/search/?q=cycling+wales+trail",
+      "flag": "HUMAN_REVIEW — a route photograph used for an operator listing may mislead visitors into thinking it depicts the operator's service. Editorial decision required.",
+      "blocked": true
+    }
+  ],
+
+  "competitorContext": {
+    "note": "For editorial context, the following operators are confirmed active on or near the Celtic Trail corridor and may be useful cross-references or alternative listings:",
+    "operators": [
+      {
+        "name": "Drover Holidays",
+        "service": "Self-guided Celtic Trail cycling holidays including luggage transfer",
+        "website": "https://www.droverholidays.co.uk/self-cycling.php",
+        "note": "Verified active operator. Not the same as Celtic Trail Cycle Shuttle."
+      },
+      {
+        "name": "Walkalongway",
+        "service": "Luggage transfer on Pembrokeshire routes (primarily walking)",
+        "visitWalesListing": "https://www.visitwales.com/activity/walkalongway-950359",
+        "note": "Visit Wales–listed. Primarily walking-focused, not cycle shuttle."
+      },
+      {
+        "name": "Celtic Coaster / Coastal Cruiser / Puffin Shuttle / Strumble Shuttle / Poppit Rocket",
+        "service": "Seasonal hail-and-ride buses in Pembrokeshire — NOT suitable for non-folding bikes",
+        "source": "https://www.visitpembrokeshire.com/explore-pembrokeshire/getting-around",
+        "note": "Public transport, not a commercial cycle shuttle operator."
+      }
+    ]
+  },
+
+  "sourcesSearched": [
+    {
+      "source": "Visit Wales — operator directory",
+      "url": "https://www.visitwales.com/",
+      "result": "No match found for 'Celtic Trail Cycle Shuttle' or 'Celtic Trail Shuttle'"
+    },
+    {
+      "source": "Visit Wales TravelTrade directory",
+      "url": "https://traveltrade.visitwales.com/",
+      "result": "No match. 'Celtic Travel Services Ltd' (coach tours, Newport) is unrelated."
+    },
+    {
+      "source": "Walk Wheel Cycle Trust (Sustrans Wales) — Celtic Trail page",
+      "url": "https://www.walkwheelcycletrust.org.uk/find-other-routes/celtic-trail/",
+      "result": "No shuttle operator listed"
+    },
+    {
+      "source": "Epic Road Rides — Celtic Trail cycle route",
+      "url": "https://epicroadrides.com/cycling-blog/celtic-trail-cycle-route-cycling-pembrokeshire/",
+      "result": "Explicitly states: 'We aren't aware of any [supported tours or luggage transfer operators]' on the Celtic Trail"
+    },
+    {
+      "source": "Cycling UK Forum",
+      "url": "https://forum.cyclinguk.org/viewtopic.php?t=83044",
+      "result": "No shuttle operator mentioned"
+    },
+    {
+      "source": "Wales Coast Path — planning and carrying help",
+      "url": "https://www.walescoastpath.gov.uk/plan-your-visit/planning-carrying-help/?lang=en",
+      "result": "Lists VIP Wales, Gareth's Cabs, Byways Breaks — walking-oriented, not Celtic Trail cycle shuttle"
+    },
+    {
+      "source": "Visit Pembrokeshire — getting around",
+      "url": "https://www.visitpembrokeshire.com/explore-pembrokeshire/getting-around",
+      "result": "No Celtic Trail Cycle Shuttle listed"
+    },
+    {
+      "source": "Wikipedia — Celtic Trail cycle route",
+      "url": "https://en.wikipedia.org/wiki/Celtic_Trail_cycle_route",
+      "result": "Route geography confirmed; no shuttle operator named"
+    },
+    {
+      "source": "Google Maps / Google Business Search",
+      "url": "https://maps.google.com/",
+      "result": "No verified listing found for 'Celtic Trail Cycle Shuttle' or 'Celtic Trail Shuttle'"
+    },
+    {
+      "source": "Facebook",
+      "url": "https://www.facebook.com/",
+      "result": "No matching business page. 'Celtic Trail Runs' (trail running) and 'Celtic Trails Walking Holidays' (walking) are unrelated entities."
+    }
+  ],
+
+  "claimsNeedingHumanReview": [
+    {
+      "id": 1,
+      "claim": "Operator identity — does 'Celtic Trail Cycle Shuttle' exist as an active business?",
+      "confidence": "NONE",
+      "action": "CRITICAL BLOCKER. Verify via: (a) direct contact with Pembrokeshire or Carmarthenshire Tourist Information Centres; (b) Sustrans Wales / Walk Wheel Cycle Trust — sustranscymru@walkwheelcycletrust.org.uk; (c) check if operator was listed in a legacy version of the site and has since ceased trading.",
+      "flag": "DO_NOT_PUBLISH until identity confirmed"
+    },
+    {
+      "id": 2,
+      "claim": "The listing entry may refer to a dormant, seasonal, or recently established operator not yet indexed online.",
+      "confidence": "SPECULATIVE",
+      "action": "If operator is believed to be real, attempt phone/email outreach before the listing goes live. Capture any direct correspondence as a source record.",
+      "flag": "HUMAN_OUTREACH_REQUIRED"
+    },
+    {
+      "id": 3,
+      "claim": "Celtic Trail route geography (NCN 4 / NCN 47, Chepstow to Fishguard) used for context.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://www.visitwales.com/things-do/adventure-and-activities/cycling-and-mountain-biking/celtic-trail-journey-discovery",
+        "https://en.wikipedia.org/wiki/Celtic_Trail_cycle_route"
+      ],
+      "action": "Route geography is verified. Safe to use as background context but does not confirm operator existence."
+    }
+  ],
+
+  "blockers": [
+    {
+      "rank": 1,
+      "blocker": "No verified operator identity — no website, address, phone, email, or directory listing found for 'Celtic Trail Cycle Shuttle' or 'Celtic Trail Shuttle' in any official or public source.",
+      "severity": "CRITICAL",
+      "resolution": "Human outreach to Pembrokeshire/Carmarthenshire TICs or Sustrans Wales required before any content can be published."
+    },
+    {
+      "rank": 2,
+      "blocker": "No cover image and no logo — image is completely blocked because no verified operator imagery exists, and AI-generated images are prohibited by task rules.",
+      "severity": "HIGH",
+      "resolution": "Either obtain official images directly from the operator (once identity confirmed) or use a CC-licensed Celtic Trail route photograph with explicit editorial note that it is route-generic, not operator-specific."
+    },
+    {
+      "rank": 3,
+      "blocker": "No coordinates — cannot assign a map pin or lat/lng without a confirmed operating base or service corridor.",
+      "severity": "HIGH",
+      "resolution": "Obtain address or primary operating location from operator directly; or assign approximate route-corridor coordinates (e.g., centre of the Celtic Trail in Pembrokeshire) with a clear editorial note that this is approximate."
+    }
+  ],
+
+  "recommendedNextStatus": "blocked",
+  "recommendedNextStatusReason": "Operator cannot be verified as an active business via any official, tourism, or publicly indexed source. Publishing a directory listing without a confirmed identity risks creating a dead listing that misleads users. Do not progress to qa_needed until at least Blocker #1 (identity) is resolved."
+}

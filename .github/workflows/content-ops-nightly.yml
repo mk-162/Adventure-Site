@@ -1,0 +1,44 @@
+name: Content Ops Nightly
+
+on:
+  schedule:
+    # 03:00 UTC daily
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    name: Nightly content-ops audit
+    runs-on: ubuntu-latest
+
+    # Note: audit-control-plane.ts and status-report.ts are filesystem-only
+    # (they read content/ and data/ and write content/ops/), so no
+    # DATABASE_URL or other secrets are required.
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run content-ops audit
+        run: npm run content-ops:audit
+
+      - name: Print status report
+        run: npm run content-ops:report
+
+      - name: Commit updated content-ops outputs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: nightly content-ops audit"
+          file_pattern: "content/ops/"

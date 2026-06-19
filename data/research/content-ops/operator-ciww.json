@@ -1,0 +1,135 @@
+{
+  "_meta": {
+    "task": "content-ops-086-operator-ciww",
+    "contentItem": "operator-ciww",
+    "contentType": "operator",
+    "slug": "ciww",
+    "route": "/directory/ciww",
+    "commercialTier": "unclassified_operator",
+    "researchedAt": "2026-06-04",
+    "recommendedNextStatus": "blocked",
+    "researchOutcome": "duplicate_entry_requires_deduplication",
+    "identityConfidence": "HIGH — 'operator-ciww' and 'operator-cardiff-international-white-water' are two separate content-inventory entries for the same real-world operator: Cardiff International White Water, Watkiss Way, Cardiff Bay CF11 0SY. The ciww slug originates from the hire.csv internal data source; the cardiff-international-white-water slug originates from kayak.csv and is aligned with the operator's official brand name and website domain (ciww.com). Full research is documented in data/research/content-ops/operator-cardiff-international-white-water.json (task content-ops-081).",
+    "relatedResearchFile": "data/research/content-ops/operator-cardiff-international-white-water.json",
+    "relatedTask": "content-ops-081-operator-cardiff-international-white-water"
+  },
+
+  "duplicateAnalysis": {
+    "finding": "DUPLICATE CONTENT ITEM",
+    "detail": "The content inventory contains two separate entries for Cardiff International White Water: (1) operator-cardiff-international-white-water at /directory/cardiff-international-white-water (status: qa_needed, research complete) and (2) operator-ciww at /directory/ciww (status: research_needed, this task). Both entries carry the same blocker note: 'Operator \"Cardiff International White Water\" missing: no description, no cover image, no logo, no Google rating.' They refer to the same physical facility at Watkiss Way, Cardiff Bay, CF11 0SY and the same website (https://www.ciww.com).",
+    "origin": "The slug divergence traces to different internal CSV sources: kayak.csv uses 'cardiff-international-white-water' (full brand name); hire.csv uses 'ciww' (the operator's short-form trading name and domain prefix). Both CSVs were ingested into the content inventory without deduplication, creating two live directory entries for one operator.",
+    "canonicalSlugRecommendation": "cardiff-international-white-water",
+    "canonicalSlugReason": "The operator's legal/brand name is 'Cardiff International White Water'. The short form 'CIWW' is used informally and as a website domain prefix, but the full name appears on the official website, Wikipedia, VisitWales, TripAdvisor, and all official communications. The slug 'cardiff-international-white-water' is consistent with the naming convention used for other long-form operator names in this directory.",
+    "proposedResolution": "Canonicalise to /directory/cardiff-international-white-water. Add a 301 permanent redirect from /directory/ciww to /directory/cardiff-international-white-water. Remove or mark operator-ciww as inactive in content-inventory.csv and content-inventory.json. Update hire.csv slug from 'ciww' to 'cardiff-international-white-water' to prevent re-ingestion of the duplicate."
+  },
+
+  "operatorData": {
+    "note": "Full operator research (name, address, coordinates, website, contact, activities, course specs, history, accreditations, ratings, social media, pricing, images) is documented in data/research/content-ops/operator-cardiff-international-white-water.json. The data is not repeated here to avoid maintaining two divergent copies. All editorial work should proceed against the canonical file.",
+    "name": "Cardiff International White Water",
+    "shortName": "CIWW",
+    "canonicalSlug": "cardiff-international-white-water",
+    "canonicalRoute": "/directory/cardiff-international-white-water",
+    "duplicateSlug": "ciww",
+    "duplicateRoute": "/directory/ciww",
+    "website": "https://www.ciww.com",
+    "websiteSource": "https://www.ciww.com (active, verified June 2026)",
+    "address": {
+      "line1": "Watkiss Way",
+      "locality": "Cardiff Bay",
+      "town": "Cardiff",
+      "postcode": "CF11 0SY",
+      "country": "Wales"
+    },
+    "addressSource": "https://www.ciww.com and https://www.visitwales.com/activity/cardiff-international-white-water-1853662"
+  },
+
+  "images": {
+    "logo": {
+      "status": "BLOCKED",
+      "reason": "The CIWW logo is copyright Cardiff International White Water / Cardiff Council. No freely licensed version is available on Wikimedia Commons, Openverse, or Unsplash. Logo must be obtained directly from the operator.",
+      "actionRequired": "Email info@ciww.com or call 029 2082 9970 to request a logo file (SVG or transparent PNG) for use on Adventure Wales. This action is shared with the canonical task (content-ops-081) — do not duplicate the outreach. Check whether a media pack has already been requested via that task."
+    },
+    "cover": {
+      "status": "CANDIDATES_AVAILABLE — see canonical research file",
+      "detail": "Four freely licensed Wikimedia Commons images are documented in data/research/content-ops/operator-cardiff-international-white-water.json (images.cover.candidates). Recommended primary: 'Cardiff International White Water (Cardiff Bay)' by Ben Salter, CC BY 2.0, https://commons.wikimedia.org/wiki/File:Cardiff_International_White_Water_(Cardiff_Bay).jpg. These should be applied to whichever route becomes canonical after deduplication — do not assign to both routes.",
+      "note": "If the /directory/ciww route is retired via redirect, no cover image is needed for this entry. Cover image assignment should await the canonical-slug decision."
+    }
+  },
+
+  "claimsNeedingHumanReview": [
+    {
+      "claim": "Two live routes may exist: /directory/ciww and /directory/cardiff-international-white-water",
+      "confidence": "HIGH — both slugs are confirmed in content-inventory.csv",
+      "issue": "If both routes are rendered by the Next.js directory, the same operator has two pages. This creates duplicate content, splits inbound link equity, and risks user confusion. The /directory/ciww route may already be indexed by search engines if the site is live.",
+      "action": "Check whether /directory/ciww and /directory/cardiff-international-white-water are both rendering live pages. If so, implement a 301 redirect from /directory/ciww to /directory/cardiff-international-white-water immediately. Submit the updated sitemap to Search Console after the redirect is in place.",
+      "severity": "HIGH"
+    },
+    {
+      "claim": "hire.csv coordinate discrepancy (51.450, -3.180) vs confirmed coordinates (51.448, -3.183)",
+      "confidence": "HIGH — confirmed by Wikipedia and Panoramio geotag",
+      "issue": "The hire.csv source file (which generated the 'ciww' slug) also carries subtly incorrect coordinates (51.450, -3.180). The correct coordinates confirmed by Wikipedia are 51.448, -3.183. When hire.csv is updated to change the slug, the coordinates must also be corrected.",
+      "action": "Update hire.csv: slug 'ciww' → 'cardiff-international-white-water'; lat 51.450 → 51.448; lng -3.180 → -3.183.",
+      "severity": "HIGH"
+    },
+    {
+      "claim": "Google Maps rating not manually verified",
+      "confidence": "LOW — 4.8/5 from ~595 reviews sourced from Wanderlog aggregation only",
+      "issue": "The Google rating in the existing research file is from a third-party aggregator and has not been manually confirmed. Do not publish this rating until verified directly at Google Maps.",
+      "action": "Search Google Maps for 'Cardiff International White Water CF11 0SY' and confirm the current rating. If verified, update the canonical research file with the confirmed figure.",
+      "severity": "MEDIUM"
+    }
+  ],
+
+  "sources": [
+    {
+      "url": "content/ops/content-inventory.csv",
+      "description": "Internal content inventory — confirms both operator-ciww (slug 'ciww', status research_needed) and operator-cardiff-international-white-water (slug 'cardiff-international-white-water', status qa_needed) as separate entries for the same operator",
+      "type": "internal",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "content/ops/task-queue.json",
+      "description": "Task queue — confirms content-ops-086-operator-ciww targets /directory/ciww and content-ops-081-operator-cardiff-international-white-water targets /directory/cardiff-international-white-water",
+      "type": "internal",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "data/research/content-ops/operator-cardiff-international-white-water.json",
+      "description": "Existing research output from task content-ops-081. Confirmed same physical operator — Cardiff International White Water, Watkiss Way, Cardiff Bay CF11 0SY. Contains full operator profile, activities, history, ratings, accreditations, image candidates, and blocker list.",
+      "type": "internal",
+      "accessedAt": "2026-06-04"
+    },
+    {
+      "url": "https://www.ciww.com",
+      "description": "Operator official website — confirms CIWW is the shorthand for Cardiff International White Water, same address and contact details as both inventory entries",
+      "accessedAt": "2026-06-04"
+    }
+  ],
+
+  "recommendedNextStatus": "blocked",
+  "recommendedNextStatusReason": "The 'operator-ciww' content item is a duplicate of 'operator-cardiff-international-white-water'. No independent content work can or should proceed on this item until a human editor makes three sequential decisions: (1) confirm canonical slug ('cardiff-international-white-water' recommended); (2) audit the live site for duplicate rendered routes and implement a 301 redirect from /directory/ciww; (3) update hire.csv to remove the duplicate slug and correct the coordinate error. Once the redirect is in place and the duplicate entry is retired, this task can be closed as resolved-via-redirect. No new content page should be built for /directory/ciww.",
+
+  "topThreeBlockers": [
+    {
+      "rank": 1,
+      "blocker": "Duplicate content item — same operator has two separate content-inventory entries",
+      "detail": "operator-ciww (/directory/ciww) and operator-cardiff-international-white-water (/directory/cardiff-international-white-water) both represent Cardiff International White Water, Watkiss Way, Cardiff Bay CF11 0SY. The duplication originates from two internal CSVs using different slug formats. The canonical research is in data/research/content-ops/operator-cardiff-international-white-water.json. All future editorial work should proceed against the canonical entry. This task (086/operator-ciww) should be closed once the /directory/ciww route is confirmed redirected or retired.",
+      "severity": "HIGH — blocks all content work on this item",
+      "action": "Human editor must: (1) confirm /directory/cardiff-international-white-water as the canonical route; (2) verify whether /directory/ciww is currently rendering a live page; (3) implement a 301 redirect from /directory/ciww to /directory/cardiff-international-white-water; (4) update hire.csv slug and coordinates; (5) mark operator-ciww as inactive or remove from content-inventory."
+    },
+    {
+      "rank": 2,
+      "blocker": "hire.csv data errors need correction before any re-ingestion",
+      "detail": "The hire.csv row that generated this entry contains two errors: slug 'ciww' (should be 'cardiff-international-white-water') and coordinates 51.450, -3.180 (should be 51.448, -3.183 per Wikipedia and Panoramio geotag). If hire.csv is re-ingested without correction, the duplicate entry and incorrect coordinates will be reintroduced.",
+      "severity": "HIGH",
+      "action": "Update hire.csv: change slug 'ciww' to 'cardiff-international-white-water'; change lat from 51.450 to 51.448; change lng from -3.180 to -3.183. Do not re-ingest until corrected."
+    },
+    {
+      "rank": 3,
+      "blocker": "No logo or operator photography — requires direct operator outreach",
+      "detail": "This is a shared blocker with the canonical task (content-ops-081). The CIWW logo and activity photography are copyright Cardiff International White Water and cannot be sourced from open-licence repositories. Freely licensed Wikimedia Commons cover images are available (CC BY 2.0) as a placeholder. A media pack request to info@ciww.com or 029 2082 9970 is required for logo and full activity photography.",
+      "severity": "MEDIUM — does not block deduplication decision, but blocks final page publication",
+      "action": "Coordinate the media pack request with whoever is handling content-ops-081. Avoid duplicate outreach to the same operator contact."
+    }
+  ]
+}

@@ -19,7 +19,7 @@ export async function createUserToken(payload: UserToken): Promise<string> {
   return new jose.SignJWT({ ...payload })
     .setProtectedHeader({ alg: ALG })
     .setIssuedAt()
-    .setExpirationTime("90d")
+    .setExpirationTime("30d")
     .sign(SECRET_KEY);
 }
 
@@ -56,7 +56,7 @@ export async function setUserSession(payload: UserToken) {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
     sameSite: "lax",
-    maxAge: 90 * 24 * 60 * 60, // 90 days
+    maxAge: 30 * 24 * 60 * 60, // 30 days
     path: "/",
   });
 }

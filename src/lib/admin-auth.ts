@@ -3,6 +3,7 @@ import { cookies } from "next/headers";
 import { db } from "@/db";
 import { adminUsers } from "@/db/schema";
 import { eq } from "drizzle-orm";
+import { hashPassword, verifyPassword } from "@/lib/password";
 
 const _JWT_SECRET = process.env.JWT_SECRET || process.env.ADMIN_SECRET;
 if (!_JWT_SECRET && process.env.NODE_ENV === "production") {
@@ -64,25 +65,28 @@ export async function getAdminSession(): Promise<AdminSession | null> {
 }
 
 /**
- * Authenticate an admin by email + password.
+ * Authenticate an admin by email + password against the per-user
+ * scrypt hash stored in admin_users.password_hash. Admins without a
+ * hash cannot log in (fail closed) — set one via
+ * `npx tsx scripts/set-admin-password.ts <email>`.
  */
 export async function authenticateAdmin(
-  emailOrPassword: string,
+  email: string,
   password: string
 ): Promise<{ token: string; session: AdminSession } | null> {
-  // Email + password flow: look up admin user
-  const adminPassword = process.env.ADMIN_PASSWORD || process.env.ADMIN_SECRET;
-
   const user = await db
     .select()
     .from(adminUsers)
-    .where(eq(adminUsers.email, emailOrPassword))
+    .where(eq(adminUsers.email, email))
     .limit(1);
 
-  if (!user[0]) return null;
+  // Burn comparable time for unknown emails to avoid user enumeration
+  if (!user[0]) {
+    await hashPassword(password);
+    return null;
+  }
 
-  // For now, validate against shared password (until per-user passwords are added)
-  if (!adminPassword || password !== adminPassword) return null;
+  if (!(await verifyPassword(password, user[0].passwordHash))) return null;
 
   // Update last login
   await db

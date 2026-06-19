@@ -1,3 +1,6 @@
+// @vitest-environment node
+// jose's webapi build rejects cross-realm Uint8Array under jsdom, so this
+// pure-Node test must run in the node environment.
 import { describe, it, expect, beforeAll, vi } from "vitest";
 
 // Mock DB so admin-auth can import without opening a real connection.

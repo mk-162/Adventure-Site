@@ -19,7 +19,7 @@ export async function createToken(payload: OperatorToken): Promise<string> {
   return new jose.SignJWT({ ...payload })
     .setProtectedHeader({ alg: ALG })
     .setIssuedAt()
-    .setExpirationTime("30d")
+    .setExpirationTime("14d")
     .sign(SECRET_KEY);
 }
 
@@ -57,7 +57,7 @@ export async function setOperatorSession(payload: OperatorToken) {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
     sameSite: "lax",
-    maxAge: 30 * 24 * 60 * 60, // 30 days
+    maxAge: 14 * 24 * 60 * 60, // 14 days
     path: "/",
   });
 }

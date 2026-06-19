@@ -52,6 +52,103 @@ const ALLOWED_FIELDS: Record<string, readonly string[]> = {
 // Allowed filter keys for GET list queries (excludes special pagination params)
 export const ALLOWED_FILTER_FIELDS = ALLOWED_FIELDS;
 
+// ---------------------------------------------------------------------------
+// Field typing for CMS bodies. Forms may send "" for cleared inputs and
+// numeric strings for decimal columns; both are accepted ("" becomes null).
+// Any field not listed here is treated as a nullable string.
+// ---------------------------------------------------------------------------
+
+const emptyToNull = (v: unknown) => (v === "" ? null : v);
+
+const decimalField = z.preprocess(
+  emptyToNull,
+  z.union([z.number().finite(), z.string().regex(/^-?\d+(\.\d+)?$/)]).nullable()
+);
+
+const intField = z.preprocess(
+  emptyToNull,
+  z.union([z.number().int(), z.string().regex(/^-?\d+$/)]).nullable()
+);
+
+const boolField = z.preprocess(
+  emptyToNull,
+  z.union([z.boolean(), z.enum(["true", "false"]).transform((v) => v === "true")]).nullable()
+);
+
+const dateField = z.preprocess(
+  emptyToNull,
+  z
+    .union([
+      z.date(),
+      z.string().max(64).refine((s) => !Number.isNaN(Date.parse(s)), {
+        message: "Invalid date",
+      }),
+    ])
+    .nullable()
+);
+
+const stringArrayField = z.preprocess(
+  emptyToNull,
+  z.array(z.string().max(1000)).nullable()
+);
+
+const jsonField = z.preprocess(
+  emptyToNull,
+  z.union([z.array(z.unknown()), z.record(z.string(), z.unknown())]).nullable()
+);
+
+const stringField = z.preprocess(emptyToNull, z.string().max(50000).nullable());
+
+// Column types per src/db/schema.ts. Field names are consistent across tables.
+const FIELD_TYPES: Record<string, z.ZodTypeAny> = {
+  // decimal columns
+  lat: decimalField,
+  lng: decimalField,
+  priceFrom: decimalField,
+  priceTo: decimalField,
+  priceEstimateFrom: decimalField,
+  priceEstimateTo: decimalField,
+  googleRating: decimalField,
+  registrationCost: decimalField,
+  billingCustomAmount: decimalField,
+  // integer columns (incl. foreign keys)
+  regionId: intField,
+  operatorId: intField,
+  activityTypeId: intField,
+  accountId: intField,
+  minAge: intField,
+  durationDays: intField,
+  capacity: intField,
+  reviewCount: intField,
+  groupMinSize: intField,
+  groupMaxSize: intField,
+  groupPriceFrom: intField,
+  // boolean columns
+  isRecurring: boolField,
+  isFeatured: boolField,
+  isPromoted: boolField,
+  groupFriendly: boolField,
+  stagHenPackages: boolField,
+  // timestamp columns
+  dateStart: dateField,
+  dateEnd: dateField,
+  promotedUntil: dateField,
+  // text[] columns
+  tags: stringArrayField,
+  serviceTypes: stringArrayField,
+  regions: stringArrayField,
+  activityTypes: stringArrayField,
+  // jsonb columns
+  imageGallery: jsonField,
+  trustSignals: jsonField,
+  serviceDetails: jsonField,
+  relatedQuestions: jsonField,
+};
+
+function fieldSchema(key: string): z.ZodTypeAny {
+  return (FIELD_TYPES[key] ?? stringField).optional();
+}
+
 /**
  * Validate a POST/PATCH body for a given content type.
  * Returns { success: true, data } or { success: false, issues }.
@@ -69,10 +166,10 @@ export function validateCmsBody(
     return { success: false, issues: ["Body must be a JSON object"] };
   }
 
-  // Build a passthrough schema that accepts only the allowed keys
+  // Build a typed schema that accepts only the allowed keys
   const shape: Record<string, z.ZodTypeAny> = {};
   for (const key of allowed) {
-    shape[key] = z.unknown().optional();
+    shape[key] = fieldSchema(key);
   }
   const schema = z.object(shape).strict();
 

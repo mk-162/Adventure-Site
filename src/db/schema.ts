@@ -825,6 +825,7 @@ export const adminUsers = pgTable("admin_users", {
   id: serial("id").primaryKey(),
   email: varchar("email", { length: 255 }).notNull().unique(),
   name: varchar("name", { length: 255 }),
+  passwordHash: text("password_hash"),
   role: adminRoleEnum("role").default("viewer").notNull(),
   sitePermissions: text("site_permissions").array(),
   createdAt: timestamp("created_at").defaultNow().notNull(),

@@ -21,12 +21,11 @@ export async function proxy(request: NextRequest) {
 
   // Protect admin pages AND admin API routes
   if (pathname.startsWith("/admin") || pathname.startsWith("/api/admin")) {
-    const adminPassword =
-      process.env.ADMIN_PASSWORD || process.env.ADMIN_SECRET;
-
-    // Fail closed: if no secret is configured, deny all admin access.
-    // In dev you must still set ADMIN_PASSWORD (or ALLOW_OPEN_ADMIN_DEV=1).
-    if (!adminPassword) {
+    // Fail closed: without a JWT secret no admin token can be verified,
+    // so deny all admin access. Admin passwords are per-user scrypt hashes
+    // in admin_users.password_hash (see scripts/set-admin-password.ts).
+    // In dev you can bypass with ALLOW_OPEN_ADMIN_DEV=1.
+    if (!JWT_SECRET_RAW) {
       if (
         process.env.NODE_ENV !== "production" &&
         process.env.ALLOW_OPEN_ADMIN_DEV === "1"

@@ -45,8 +45,15 @@ next-env.d.ts
 # husky generated shims
 .husky/_/
 
+# local scratch / extracted assets
+/temp/
+
 # python
 .venv/
 __pycache__/
 *.pyc
 .env*.local
+/unused-images/
+
+# local DB credential scratch — never commit
+/db-pw.txt

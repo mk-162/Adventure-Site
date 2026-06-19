@@ -2,10 +2,23 @@
 
 Multi-tenant adventure tourism platform. First site: **Adventure Wales**.
 
+**Current status:** see [STATUS.md](STATUS.md) for where the project stands and the key commands.
+
 ## Documentation
 
 - **[Platform Design](docs/PLATFORM_DESIGN.md)** - Complete architecture, database schema, 12 page templates, and Jules spec
 - **[France Component Patterns](docs/FRANCE_COMPONENT_PATTERNS.md)** - Reference implementations from Ultimate France
+- Historical planning docs (briefs, Jules task packs, implementation logs) live in [archive/](archive/)
+
+## Content Operations
+
+Content is produced through an automated pipeline:
+
+1. **Audit control plane** (`npm run content-ops:audit`) scans the database and site and writes a content inventory to `content/ops/`
+2. **Task generation** (`npm run content-ops:tasks`) turns inventory gaps into agent task files in `tasks/content-ops/`
+3. **Claude worker swarm** (`npm run content-ops:swarm`) runs Claude Code workers against the task queue (requires the Claude Code CLI)
+
+Progress is tracked in `content/ops/status-report.md` (`npm run content-ops:report`) and managed from the admin dashboard at `/admin/content-ops`.
 
 ## Seed Data
 

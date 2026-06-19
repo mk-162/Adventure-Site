@@ -72,7 +72,9 @@ export function AdSlot({
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ slotName, pageType, pageSlug }),
-    }).catch(() => {});
+    }).catch((err) => {
+      console.warn("AdSlot: failed to track ad impression", err);
+    });
   };
 
   return (

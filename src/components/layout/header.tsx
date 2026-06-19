@@ -23,7 +23,9 @@ export function Header() {
     fetch("/api/user/me")
       .then((res) => res.json())
       .then((data) => setUserLoggedIn(!!data.user))
-      .catch(() => {});
+      .catch((err) => {
+        console.error("Header: failed to fetch current user", err);
+      });
   }, []);
 
   return (

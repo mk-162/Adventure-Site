@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  allowedDevOrigins: ['192.168.1.70'],
+
   // Externalize heavy packages to reduce serverless function size
-  serverExternalPackages: ['sharp', 'openai', '@img/sharp-linux-x64', 'stripe'],
+  serverExternalPackages: ['sharp', '@img/sharp-linux-x64', 'stripe'],
   
   // Reduce bundle size
   experimental: {
@@ -25,6 +27,10 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "lh3.googleusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "**.public.blob.vercel-storage.com",
       },
     ],
   },
@@ -57,16 +63,26 @@ const nextConfig: NextConfig = {
             value: "camera=(), microphone=(), geolocation=()",
           },
           {
-            // Report-only: tighten to enforcing in Phase 6 after reviewing reports
-            key: "Content-Security-Policy-Report-Only",
+            // Enforcing. script-src keeps 'unsafe-inline' because the site is
+            // statically generated (per-request nonces would force dynamic
+            // rendering); 'unsafe-eval' is dev-only for the bundler runtime.
+            key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+              process.env.NODE_ENV === "development"
+                ? "script-src 'self' 'unsafe-inline' 'unsafe-eval'"
+                : "script-src 'self' 'unsafe-inline'",
               "style-src 'self' 'unsafe-inline'",
-              "img-src 'self' data: https:",
+              "img-src 'self' blob: data: https:",
               "font-src 'self' data:",
               "connect-src 'self' https:",
+              // YouTube embeds (VideoEmbed component)
+              "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com",
+              "object-src 'none'",
+              "base-uri 'self'",
+              "form-action 'self'",
               "frame-ancestors 'none'",
+              "upgrade-insecure-requests",
             ].join("; "),
           },
         ],

@@ -4,6 +4,7 @@ import { EventGridCard } from "@/components/events/EventGridCard";
 import { EventPagination } from "@/components/events/EventPagination";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export const dynamic = 'force-dynamic';
 
@@ -56,10 +57,13 @@ export default async function EventsPage({
       {/* Hero Section */}
       <div className="relative bg-slate-900 py-16 lg:py-24 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <Image
             alt="Misty mountains"
             className="w-full h-full object-cover opacity-30"
             src="/images/misc/homepage-hero-03-355a010f.jpg"
+            fill
+            sizes="100vw"
+            loading="eager"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 via-slate-900/80 to-slate-900" />
         </div>
@@ -83,10 +87,13 @@ export default async function EventsPage({
                { name: "Watersports", img: "/images/misc/gear-water-01-cdcf40ed.jpg" }
              ].map((cat, idx) => (
                 <div key={idx} className="relative group cursor-pointer overflow-hidden rounded-lg aspect-video">
-                  <img
+                  <Image
                     alt={cat.name}
                     className="w-full h-full object-cover transition duration-500 group-hover:scale-110"
                     src={cat.img}
+                    fill
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                    loading="eager"
                   />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                     <span className="text-white font-bold text-sm tracking-wide">{cat.name}</span>

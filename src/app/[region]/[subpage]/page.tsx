@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { 
   getRegionBySlug, 
@@ -490,10 +491,13 @@ async function BestOfListPage({ regionSlug, bestSlug }: { regionSlug: string; be
         {/* Hero Section */}
         <div className="relative w-full rounded-2xl overflow-hidden mb-6 lg:mb-8 h-[350px] lg:h-[450px]">
           <div className="absolute inset-0 bg-gray-900">
-            <img 
+            <Image
               alt={listData.heroAlt}
               className="w-full h-full object-cover"
               src={listData.heroImage}
+              fill
+              sizes="(max-width: 1280px) 100vw, 1216px"
+              loading="eager"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
           </div>
@@ -562,10 +566,13 @@ async function BestOfListPage({ regionSlug, bestSlug }: { regionSlug: string; be
               className="scroll-mt-32 bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
             >
               <div className="relative h-[250px] lg:h-[350px] bg-gray-900">
-                <img 
+                <Image
                   alt={entry.imageAlt}
                   className="w-full h-full object-cover"
                   src={entry.image}
+                  fill
+                  sizes="(max-width: 1280px) 100vw, 1216px"
+                  loading="eager"
                 />
                 <div className="absolute top-4 left-4 bg-accent-hover text-white w-12 h-12 lg:w-16 lg:h-16 rounded-full flex items-center justify-center font-black text-2xl lg:text-3xl shadow-lg">
                   {entry.rank}

@@ -11,7 +11,10 @@ export function ViewTracker({ pageType, pageSlug, operatorId }: {
         method: "POST",
         body: JSON.stringify({ pageType, pageSlug, operatorId }),
         headers: { "Content-Type": "application/json" },
-        }).catch(() => {}); // fire and forget
+        }).catch((err) => {
+          // fire and forget — log so failures aren't fully silent
+          console.warn("ViewTracker: failed to track page view", err);
+        });
     }, 1000);
 
     return () => clearTimeout(timer);

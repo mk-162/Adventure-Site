@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Sparkles, TreePine, Castle, Tent, ArrowRight } from "lucide-react";
 
 interface QuirkyStay {
@@ -154,9 +155,12 @@ export function QuirkyStaysWidget({
               >
                 <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-accent-hover/20 relative overflow-hidden">
                   {stay.image ? (
-                    <img 
-                      src={stay.image} 
+                    <Image
+                      src={stay.image}
                       alt={stay.name}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
+                      loading="eager"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   ) : (

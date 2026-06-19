@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 interface PageImageStripProps {
   images: { src: string; alt: string }[];
@@ -29,9 +30,11 @@ export function PageImageStrip({ images, maxImages = 5, variant = "strip" }: Pag
             onClick={() => setSelectedImage(visibleImages[0].src)}
             className="md:col-span-2 relative aspect-[16/9] rounded-2xl overflow-hidden group cursor-pointer"
           >
-            <img
+            <Image
               src={visibleImages[0].src}
               alt={visibleImages[0].alt}
+              fill
+              sizes="(max-width: 768px) 100vw, 66vw"
               loading="lazy"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
@@ -43,9 +46,11 @@ export function PageImageStrip({ images, maxImages = 5, variant = "strip" }: Pag
                 onClick={() => setSelectedImage(img.src)}
                 className="relative aspect-[4/3] md:aspect-auto md:h-full rounded-2xl overflow-hidden group cursor-pointer"
               >
-                <img
+                <Image
                   src={img.src}
                   alt={img.alt}
+                  fill
+                  sizes="(max-width: 768px) 50vw, 33vw"
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -68,9 +73,11 @@ export function PageImageStrip({ images, maxImages = 5, variant = "strip" }: Pag
               onClick={() => setSelectedImage(img.src)}
               className="relative aspect-[4/3] rounded-2xl overflow-hidden group cursor-pointer"
             >
-              <img
+              <Image
                 src={img.src}
                 alt={img.alt}
+                fill
+                sizes="(max-width: 768px) 50vw, 33vw"
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -93,9 +100,11 @@ export function PageImageStrip({ images, maxImages = 5, variant = "strip" }: Pag
             onClick={() => setSelectedImage(img.src)}
             className="relative flex-shrink-0 w-56 h-36 rounded-2xl overflow-hidden snap-start group cursor-pointer"
           >
-            <img
+            <Image
               src={img.src}
               alt={img.alt}
+              fill
+              sizes="224px"
               loading="lazy"
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />

@@ -23,7 +23,7 @@ import { ActivityLocationMap } from "@/components/maps/ActivityLocationMap";
 import { ClaimListingBanner } from "@/components/operators/ClaimListingBanner";
 import { AdvertiseWidget } from "@/components/commercial/AdvertiseWidget";
 import { TopTip } from "@/components/widgets/TopTip";
-import { FavoriteButton } from "@/components/ui/FavoriteButton";
+import { FavouriteButton } from "@/components/ui/FavouriteButton";
 import { ViewTracker } from "@/components/ui/ViewTracker";
 import { 
   MapPin, Clock, Calendar, Users, Star, 
@@ -309,9 +309,9 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
           <button className="p-3 bg-white/90 rounded-full hover:bg-white transition-colors">
             <Share2 className="h-5 w-5 text-gray-700" />
           </button>
-          <FavoriteButton
-            itemId={activity.id}
-            itemType="activity"
+          <FavouriteButton
+            id={activity.id}
+            type="activity"
             className="p-3 bg-white/90 rounded-full hover:bg-white transition-colors"
             iconClassName="h-5 w-5 text-gray-700"
           />

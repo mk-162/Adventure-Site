@@ -15,7 +15,7 @@ import { ItinerarySocialShare } from "@/components/itinerary/ItinerarySocialShar
 import { ItineraryPrintButton } from "@/components/itinerary/ItineraryPrintButton";
 import { ItineraryQuickNav } from "@/components/itinerary/ItineraryQuickNav";
 import { ShareButton } from "@/components/ui/ShareButton";
-import { FavoriteButton } from "@/components/ui/FavoriteButton";
+import { FavouriteButton } from "@/components/ui/FavouriteButton";
 import { ViewTracker } from "@/components/ui/ViewTracker";
 import { getItineraryWithStops, getAccommodation, getAllItinerarySlugs } from "@/lib/queries";
 
@@ -213,9 +213,9 @@ export default async function ItineraryDetailPage({ params }: Props) {
       <div className="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 pb-6 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] z-40">
         <div className="flex gap-3 max-w-lg mx-auto">
           <ShareButton title={itinerary.title} variant="icon" />
-          <FavoriteButton
-            itemId={itinerary.id}
-            itemType="itinerary"
+          <FavouriteButton
+            id={itinerary.id}
+            type="itinerary"
             className="flex flex-col items-center justify-center w-14 gap-1 text-gray-500 hover:text-primary transition-colors"
             iconClassName="w-5 h-5"
           />

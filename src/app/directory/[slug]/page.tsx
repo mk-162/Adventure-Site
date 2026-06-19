@@ -11,7 +11,7 @@ import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 import { ClaimListingBanner } from "@/components/operators/ClaimListingBanner";
 import MapView from "@/components/ui/MapView";
 import { ShareButton } from "@/components/ui/ShareButton";
-import { FavoriteButton } from "@/components/ui/FavoriteButton";
+import { FavouriteButton } from "@/components/ui/FavouriteButton";
 import { JsonLd, createLocalBusinessSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 import { ViewTracker } from "@/components/ui/ViewTracker";
 import { getEffectiveTier, isTrialActive } from "@/lib/trial-utils";
@@ -149,9 +149,9 @@ export default async function OperatorProfilePage({ params }: Props) {
 
         {/* Cover Actions (desktop) */}
         <div className="absolute top-4 right-4 lg:right-8 z-20 hidden lg:flex gap-2">
-          <FavoriteButton
-            itemId={operator.id}
-            itemType="operator"
+          <FavouriteButton
+            id={operator.id}
+            type="operator"
             className="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white p-2 rounded-lg transition-colors"
             iconClassName="w-5 h-5"
           />

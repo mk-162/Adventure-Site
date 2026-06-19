@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { surfingHub } from "@/data/activity-hubs/surfing";
 import { SurfSpotTable } from "@/components/surfing/SurfSpotTable";
 import { SurfGradingGuide } from "@/components/surfing/SurfGradingGuide";
@@ -794,10 +795,13 @@ export default async function SurfingHubPage() {
                   className="group bg-white rounded-2xl overflow-hidden shadow-sm border-2 border-gray-200 hover:shadow-lg transition-all"
                 >
                   {post.heroImage && (
-                    <div className="aspect-video bg-gray-100 overflow-hidden">
-                      <img 
-                        src={post.heroImage} 
-                        alt={post.title || ""} 
+                    <div className="relative aspect-video bg-gray-100 overflow-hidden">
+                      <Image
+                        src={post.heroImage}
+                        alt={post.title || ""}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        loading="eager"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                       />
                     </div>

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { getRegionWithStats, getActivitiesByRegion, getAccommodationByRegion, getOperators, getRegionEntitiesForMap, getActivityTypesForRegion } from "@/lib/queries";
 import type { MapMarker } from "@/components/ui/MapView";
 import { TopExperiences } from "@/components/regions/TopExperiences";
@@ -559,10 +560,13 @@ export default async function RegionPage({ params }: RegionPageProps) {
         <div className="relative w-full rounded-2xl overflow-hidden mb-6 lg:mb-8 group h-[400px] lg:h-[500px]">
           <div className="absolute inset-0 bg-gray-900">
             {/* Use local hero image */}
-            <img 
+            <Image
               alt={region.name}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               src={`/images/regions/${regionSlug}-hero.jpg`}
+              fill
+              sizes="(max-width: 1280px) 100vw, 1216px"
+              loading="eager"
             />
             {/* Gradient overlay for text readability */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
@@ -652,10 +656,13 @@ export default async function RegionPage({ params }: RegionPageProps) {
                     className="group flex flex-col items-center gap-2 p-4 bg-white rounded-xl border border-gray-200 hover:border-primary/30 hover:shadow-md transition-all"
                   >
                     <div className="w-12 h-12 rounded-full bg-gray-100 overflow-hidden">
-                      <img 
+                      <Image
                         alt={r.name}
                         className="w-full h-full object-cover"
                         src={`/images/regions/${r.slug}-hero.jpg`}
+                        width={48}
+                        height={48}
+                        loading="eager"
                       />
                     </div>
                     <span className="text-sm font-bold text-primary group-hover:text-accent-hover transition-colors">

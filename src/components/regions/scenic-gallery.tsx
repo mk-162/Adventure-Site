@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 interface ScenicGalleryProps {
   regionSlug: string;
@@ -164,9 +165,11 @@ export function ScenicGallery({ regionSlug, regionName }: ScenicGalleryProps) {
               onClick={() => setSelectedImage(image.src)}
               className="relative aspect-[4/3] rounded-2xl overflow-hidden group cursor-pointer"
             >
-              <img
+              <Image
                 src={image.src}
                 alt={image.alt}
+                fill
+                sizes="(max-width: 768px) 50vw, 33vw"
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />

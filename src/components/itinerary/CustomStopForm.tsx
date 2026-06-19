@@ -24,7 +24,8 @@ export function CustomStopForm({ itinerarySlug, dayNumber }: CustomStopFormProps
     try {
       const stored = localStorage.getItem(storageKey);
       return stored ? JSON.parse(stored).filter((s: CustomStop) => s.dayNumber === dayNumber) : [];
-    } catch {
+    } catch (err) {
+      console.error("CustomStopForm: failed to read custom stops from localStorage", err);
       return [];
     }
   });
@@ -42,7 +43,8 @@ export function CustomStopForm({ itinerarySlug, dayNumber }: CustomStopFormProps
       try {
         const stored = localStorage.getItem(storageKey);
         return stored ? JSON.parse(stored) : [];
-      } catch {
+      } catch (err) {
+        console.error("CustomStopForm: failed to parse stored custom stops", err);
         return [];
       }
     })();
@@ -60,7 +62,9 @@ export function CustomStopForm({ itinerarySlug, dayNumber }: CustomStopFormProps
       const allStops = stored ? JSON.parse(stored) : [];
       const updated = allStops.filter((s: CustomStop) => s.id !== id);
       localStorage.setItem(storageKey, JSON.stringify(updated));
-    } catch {}
+    } catch (err) {
+      console.error("CustomStopForm: failed to remove custom stop from localStorage", err);
+    }
     setCustomStops(prev => prev.filter(s => s.id !== id));
   };
 

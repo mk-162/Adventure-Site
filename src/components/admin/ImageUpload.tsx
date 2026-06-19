@@ -59,8 +59,14 @@ export default function ImageUpload({
       });
 
       if (!res.ok) {
-        const data = await res.json().catch(() => ({}));
-        throw new Error(data.error || "Upload failed");
+        let message = `Upload failed (status ${res.status})`;
+        try {
+          const data = await res.json();
+          if (data.error) message = data.error;
+        } catch (parseErr) {
+          console.error("ImageUpload: failed to parse upload error response", parseErr);
+        }
+        throw new Error(message);
       }
 
       const data = await res.json();

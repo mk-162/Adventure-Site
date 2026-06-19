@@ -87,14 +87,24 @@ export default async function EventPage({ params }: Props) {
       <div className="min-h-screen bg-gray-50">
         {/* Hero */}
         <section className="relative h-[40vh] min-h-[300px] bg-primary">
-          <Image
-            src={heroImage}
-            alt={`${event.name} – ${event.location ?? "Wales"}`}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
+          {heroImage.startsWith("/") ? (
+            <Image
+              src={heroImage}
+              alt={`${event.name} – ${event.location ?? "Wales"}`}
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover"
+            />
+          ) : (
+            // External event images can come from any domain, which
+            // next/image rejects at runtime unless whitelisted
+            <img
+              src={heroImage}
+              alt={`${event.name} – ${event.location ?? "Wales"}`}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          )}
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
           <div className="relative h-full max-w-7xl mx-auto px-4 flex flex-col justify-end pb-8">
             {/* Breadcrumb */}

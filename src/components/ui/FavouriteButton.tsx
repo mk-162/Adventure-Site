@@ -5,13 +5,27 @@ import { Heart } from "lucide-react";
 import Link from "next/link";
 
 interface FavouriteButtonProps {
-  type: "event" | "itinerary" | "activity" | "operator";
+  type: "event" | "itinerary" | "activity" | "operator" | "accommodation";
   id: number;
+  /**
+   * When provided, fully replaces the default button styling
+   * (size/shape/colour classes are not applied).
+   */
   className?: string;
   size?: "sm" | "md" | "lg";
+  /**
+   * When provided, fully replaces the default size-derived icon classes.
+   */
+  iconClassName?: string;
 }
 
-export function FavouriteButton({ type, id, className = "", size = "md" }: FavouriteButtonProps) {
+export function FavouriteButton({
+  type,
+  id,
+  className,
+  size = "md",
+  iconClassName,
+}: FavouriteButtonProps) {
   const [saved, setSaved] = useState(false);
   const [loading, setLoading] = useState(false);
   const [showLoginPrompt, setShowLoginPrompt] = useState(false);
@@ -77,15 +91,21 @@ export function FavouriteButton({ type, id, className = "", size = "md" }: Favou
       <button
         onClick={handleClick}
         disabled={loading}
-        className={`${sizeClasses[size]} rounded-full flex items-center justify-center transition-all ${
-          saved
-            ? "bg-red-50 text-red-500 hover:bg-red-100"
-            : "bg-white/90 text-slate-400 hover:text-red-500 hover:bg-red-50"
-        } shadow-sm border border-slate-200 disabled:opacity-50 ${className}`}
+        className={
+          className ||
+          `${sizeClasses[size]} rounded-full flex items-center justify-center transition-all ${
+            saved
+              ? "bg-red-50 text-red-500 hover:bg-red-100"
+              : "bg-white/90 text-slate-400 hover:text-red-500 hover:bg-red-50"
+          } shadow-sm border border-slate-200 disabled:opacity-50`
+        }
         title={saved ? "Remove from saved" : "Save to My Adventures"}
+        aria-label={saved ? "Remove from saved" : "Save to My Adventures"}
       >
         <Heart
-          className={`${iconSizes[size]} transition-all ${saved ? "fill-red-500" : ""}`}
+          className={`${iconClassName || iconSizes[size]} transition-all ${
+            saved ? "fill-red-500 text-red-500" : ""
+          }`}
         />
       </button>
 

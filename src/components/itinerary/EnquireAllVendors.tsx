@@ -41,7 +41,9 @@ export function EnquireAllVendors({
           }));
         }
       })
-      .catch(() => {});
+      .catch((err) => {
+        console.error("EnquireAllVendors: failed to fetch user for pre-population", err);
+      });
   }, []);
 
   const operatorCount = operators.length;

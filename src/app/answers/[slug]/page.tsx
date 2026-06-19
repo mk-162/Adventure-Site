@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import fs from "fs";
 import path from "path";
 import { 
@@ -392,10 +393,13 @@ export default async function AnswerPage({ params }: Props) {
             {/* Hero Image (if region exists) */}
             {frontmatter.region && (
               <div className="hidden lg:block w-full h-[300px] rounded-2xl overflow-hidden relative shadow-lg mb-8">
-                <img 
-                  alt={`${formatRegionName(frontmatter.region)} landscape`} 
+                <Image
+                  alt={`${formatRegionName(frontmatter.region)} landscape`}
                   className="w-full h-full object-cover"
                   src={`/images/regions/${frontmatter.region}-hero.jpg`}
+                  fill
+                  sizes="(max-width: 1280px) 66vw, 784px"
+                  loading="eager"
                 />
                 <div className="absolute bottom-4 right-4 bg-black/50 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-lg">
                   {formatRegionName(frontmatter.region)}
@@ -541,10 +545,13 @@ export default async function AnswerPage({ params }: Props) {
 
               {frontmatter.region && (
                 <div className="rounded-xl overflow-hidden h-40 relative shadow-sm border border-gray-200">
-                  <img 
+                  <Image
                     alt={`Map of ${formatRegionName(frontmatter.region)}`}
                     className="w-full h-full object-cover"
                     src={`/images/regions/${frontmatter.region}-hero.jpg`}
+                    fill
+                    sizes="(max-width: 1280px) 33vw, 384px"
+                    loading="eager"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/10 hover:bg-black/20 transition-colors cursor-pointer">
                     <Link
@@ -650,10 +657,13 @@ export default async function AnswerPage({ params }: Props) {
               {/* Region Map Preview */}
               {frontmatter.region && (
                 <div className="rounded-xl overflow-hidden h-40 relative shadow-sm border border-gray-200">
-                  <img 
+                  <Image
                     alt={`Map of ${formatRegionName(frontmatter.region)}`}
                     className="w-full h-full object-cover"
                     src={`/images/regions/${frontmatter.region}-hero.jpg`}
+                    fill
+                    sizes="(max-width: 1280px) 33vw, 384px"
+                    loading="eager"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/10 hover:bg-black/20 transition-colors cursor-pointer">
                     <Link

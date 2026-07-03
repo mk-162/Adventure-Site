@@ -89,7 +89,7 @@
       "startPoint": {
         "name": "Bala Lake foreshore",
         "lat": 52.909,
-        "lng": -3.600
+        "lng": -3.6
       },
       "estimatedCost": "Kayak hire from approx £20-£30/hour; lessons from approx £40",
       "operatorSlug": "bala-adventure-watersports",
@@ -109,7 +109,7 @@
       "parking": "Pay-and-display car parks along the A4086 in Llanberis; the watersports centre has on-site parking for hire customers.",
       "startPoint": {
         "name": "Llyn Padarn shore (Snowdonia Watersports base)",
-        "lat": 53.120,
+        "lat": 53.12,
         "lng": -4.125
       },
       "estimatedCost": "Hire from approx £15-£25/hour",
@@ -131,7 +131,7 @@
       "startPoint": {
         "name": "Plas y Brenin, Capel Curig",
         "lat": 53.103,
-        "lng": -3.910
+        "lng": -3.91
       },
       "estimatedCost": "Day courses from approx £100; residentials £400+ (includes meals and accommodation)",
       "operatorSlug": "plas-y-brenin",
@@ -341,7 +341,7 @@
         "slug": "plas-y-brenin-bar",
         "address": "Capel Curig, Conwy LL24 0ET",
         "lat": 53.103,
-        "lng": -3.910,
+        "lng": -3.91,
         "description": "Bar and lounge inside the National Outdoor Centre. Where paddlers debrief at the end of a course day. Open to non-residents.",
         "vibe": "Outdoor-centre bar",
         "priceRange": "££",

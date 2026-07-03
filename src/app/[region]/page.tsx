@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { getRegionWithStats, getActivitiesByRegion, getAccommodationByRegion, getOperators, getRegionEntitiesForMap, getActivityTypesForRegion } from "@/lib/queries";
+import { isLaunchRegion } from "@/lib/launch";
 import type { MapMarker } from "@/components/ui/MapView";
 import { TopExperiences } from "@/components/regions/TopExperiences";
 import { AccommodationCard } from "@/components/cards/accommodation-card";
@@ -456,6 +457,12 @@ export async function generateMetadata({ params }: RegionPageProps): Promise<Met
 
 export default async function RegionPage({ params }: RegionPageProps) {
   const { region: regionSlug } = await params;
+
+  // Launch gate: only verified regions are reachable/indexable.
+  if (!isLaunchRegion(regionSlug)) {
+    notFound();
+  }
+
   const region = await getRegionWithStats(regionSlug);
 
   if (!region) {

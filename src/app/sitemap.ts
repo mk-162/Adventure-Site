@@ -12,6 +12,7 @@ import {
   posts
 } from '@/db/schema';
 import { eq, sql } from 'drizzle-orm';
+import { isLaunchRegion, isLaunchCombo } from '@/lib/launch';
 
 const BASE_URL = 'https://adventurewales.co.uk';
 
@@ -42,13 +43,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     .innerJoin(activityTypes, eq(activities.activityTypeId, activityTypes.id))
     .where(eq(activities.status, 'published')),
     db.select({ slug: operators.slug, createdAt: operators.createdAt }).from(operators).where(
-      sql`(${operators.claimStatus} IN ('claimed', 'premium') OR (${operators.trialTier} = 'premium' AND ${operators.trialExpiresAt} > NOW()))`
+      eq(operators.status, 'published')
     ),
     db.select({ slug: tags.slug, createdAt: tags.createdAt }).from(tags),
     db.select({ slug: posts.slug, createdAt: posts.createdAt, updatedAt: posts.updatedAt }).from(posts).where(eq(posts.status, 'published'))
   ]);
 
   const sitemap: MetadataRoute.Sitemap = [];
+
+  // Launch scope: only verified Snowdonia content is indexable. Global/all-Wales
+  // sections below are excluded until their regions are verified and launched.
+  // Flip to false to restore the full sitemap post-launch.
+  const LAUNCH_SNOWDONIA_ONLY = true;
 
   // Static pages
   sitemap.push(
@@ -185,6 +191,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'wild-swimming', 'windsurfing',
   ];
   activityHubs.forEach((hub) => {
+    if (LAUNCH_SNOWDONIA_ONLY) return;
     sitemap.push({
       url: `${BASE_URL}/${hub}`,
       lastModified: new Date(),
@@ -195,6 +202,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Region pages
   regionsData.forEach((region) => {
+    if (LAUNCH_SNOWDONIA_ONLY && !isLaunchRegion(region.slug)) return;
     sitemap.push({
       url: `${BASE_URL}/${region.slug}`,
       lastModified: region.createdAt || new Date(),
@@ -213,6 +221,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Individual activity/experience pages
   activitiesData.forEach((activity) => {
+    if (LAUNCH_SNOWDONIA_ONLY) return;
     sitemap.push({
       url: `${BASE_URL}/activities/${activity.slug}`,
       lastModified: activity.createdAt || new Date(),
@@ -223,6 +232,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Accommodation pages
   accommodationData.forEach((acc) => {
+    if (LAUNCH_SNOWDONIA_ONLY) return;
     sitemap.push({
       url: `${BASE_URL}/accommodation/${acc.slug}`,
       lastModified: acc.createdAt || new Date(),
@@ -233,6 +243,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Event pages
   eventsData.forEach((event) => {
+    if (LAUNCH_SNOWDONIA_ONLY) return;
     sitemap.push({
       url: `${BASE_URL}/events/${event.slug}`,
       lastModified: event.createdAt || new Date(),
@@ -243,6 +254,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Answer/FAQ pages
   answersData.forEach((answer) => {
+    if (LAUNCH_SNOWDONIA_ONLY) return;
     sitemap.push({
       url: `${BASE_URL}/answers/${answer.slug}`,
       lastModified: answer.createdAt || new Date(),
@@ -263,6 +275,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Combo pages: region + activity type (NEW URL - was /{region}/things-to-do/{activity})
   comboPagesData.forEach((combo) => {
+    if (LAUNCH_SNOWDONIA_ONLY && !isLaunchCombo(combo.regionSlug, combo.activityTypeSlug)) return;
     sitemap.push({
       url: `${BASE_URL}/${combo.regionSlug}/${combo.activityTypeSlug}`,
       lastModified: new Date(),
@@ -273,6 +286,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Tag pages
   tagsData.forEach((tag) => {
+    if (LAUNCH_SNOWDONIA_ONLY) return;
     sitemap.push({
       url: `${BASE_URL}/tags/${tag.slug}`,
       lastModified: tag.createdAt || new Date(),
@@ -283,6 +297,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Post/Journal pages
   postsData.forEach((post) => {
+    if (LAUNCH_SNOWDONIA_ONLY) return;
     sitemap.push({
       url: `${BASE_URL}/journal/${post.slug}`,
       lastModified: post.updatedAt || post.createdAt || new Date(),

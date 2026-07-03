@@ -29,7 +29,7 @@
         "lng": -3.873
       },
       "estimatedCost": "Free (parking £6 for all day)",
-      "operatorSlug": "coed-y-brenin-nrw",
+      "operatorSlug": null,
       "insiderTip": "Ride it midweek to avoid the crowds, and check out the Beics Brenin cafe for a post-ride coffee and cake."
     },
     {
@@ -50,7 +50,7 @@
         "lng": -3.873
       },
       "estimatedCost": "Free (parking £6 for all day)",
-      "operatorSlug": "coed-y-brenin-nrw",
+      "operatorSlug": null,
       "insiderTip": "The climb up to the 'Dragon's Back' is a lung-buster, so pace yourself. Bring plenty of water and snacks."
     },
     {
@@ -478,7 +478,7 @@
         "type": "bunkhouse",
         "priceRange": "£",
         "nearestSpot": "Penmachno Trails, few minutes ride",
-        "website": "null"
+        "website": null
       },
       {
         "name": "Penmaenuchaf Hall Hotel",
@@ -497,7 +497,7 @@
       "type": "race",
       "monthTypical": "October",
       "description": "A popular enduro race held at Coed y Brenin Forest Park. Features a mix of challenging trails and timed stages.",
-      "website": "null",
+      "website": null,
       "relevantActivities": [
         "mountain-biking"
       ],

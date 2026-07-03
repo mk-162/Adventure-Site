@@ -85,7 +85,14 @@ export async function getRegionWithStats(slug: string) {
       db
         .select({ count: sql<number>`count(*)` })
         .from(operators)
-        .where(eq(operators.claimStatus, "claimed")),
+        .where(
+          and(
+            eq(operators.status, "published"),
+            // regions array stores either the slug or the display name
+            // (data is inconsistently cased), so overlap-match both.
+            sql`${operators.regions} && ARRAY[${slug}, ${region.name}]::text[]`
+          )
+        ),
     ]);
 
   return {

@@ -10,7 +10,8 @@ import {
   getAllRegions
 } from "@/lib/queries";
 import { getComboPageData } from "@/lib/combo-data";
-import { getBestListData, getAllBestListSlugs } from "@/lib/best-list-data";
+import { getBestListData } from "@/lib/best-list-data";
+import { isLaunchRegion, isLaunchCombo, isLaunchBestList, LAUNCH_COMBOS } from "@/lib/launch";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { ComboEnrichment } from "@/components/combo/ComboEnrichment";
 import {
@@ -31,9 +32,6 @@ import {
   Map as MapIcon,
   ExternalLink,
 } from "lucide-react";
-import { db } from "@/db";
-import { regions, activities, activityTypes } from "@/db/schema";
-import { eq } from "drizzle-orm";
 import { JsonLd } from "@/components/seo/JsonLd";
 
 interface PageProps {
@@ -43,31 +41,14 @@ interface PageProps {
   }>;
 }
 
-// Generate static params for all region subpages (activity types + best-of lists)
+// Generate static params from the launch allowlist directly, so every verified
+// combo prerenders — including those whose content is JSON-only (no DB activity
+// rows yet, e.g. caving, gorge-walking).
 export async function generateStaticParams() {
-  // Get activity type combos
-  const activityCombos = await db
-    .selectDistinct({
-      regionSlug: regions.slug,
-      activityTypeSlug: activityTypes.slug,
-    })
-    .from(activities)
-    .innerJoin(regions, eq(activities.regionId, regions.id))
-    .innerJoin(activityTypes, eq(activities.activityTypeId, activityTypes.id))
-    .where(eq(activities.status, "published"));
-
-  const activityParams = activityCombos.map((combo) => ({
-    region: combo.regionSlug,
-    subpage: combo.activityTypeSlug,
-  }));
-
-  // Get best-of list params
-  const bestListParams = getAllBestListSlugs().map(({ region, bestSlug }) => ({
-    region,
-    subpage: bestSlug,
-  }));
-
-  return [...activityParams, ...bestListParams];
+  return Array.from(LAUNCH_COMBOS).map((key) => {
+    const [region, subpage] = key.split("/");
+    return { region, subpage };
+  });
 }
 
 // Generate metadata based on page type
@@ -115,13 +96,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function RegionSubpage({ params }: PageProps) {
   const { region: regionSlug, subpage } = await params;
-  
-  // Route to appropriate handler based on slug pattern
+
+  // Launch gate: only verified pages in launch regions are reachable/indexable.
+  if (!isLaunchRegion(regionSlug)) {
+    notFound();
+  }
+
   if (subpage.startsWith("best-")) {
+    if (!isLaunchBestList(regionSlug, subpage)) {
+      notFound();
+    }
     return <BestOfListPage regionSlug={regionSlug} bestSlug={subpage} />;
   }
-  
-  // Default: treat as activity type combo page
+
+  if (!isLaunchCombo(regionSlug, subpage)) {
+    notFound();
+  }
+
   return <ActivityComboPage regionSlug={regionSlug} activitySlug={subpage} />;
 }
 
@@ -143,8 +134,10 @@ async function ActivityComboPage({ regionSlug, activitySlug }: { regionSlug: str
   const allActivityTypes = await getAllActivityTypes();
   const comboData = getComboPageData(regionSlug, activitySlug);
 
-  // If no activities found, show a helpful empty state
-  if (activitiesData.length === 0) {
+  // Empty state only when there is neither a DB activity nor combo JSON content.
+  // Combo pages backed by rich JSON (spots, guides, FAQs) render that as primary,
+  // even with zero bookable activity rows.
+  if (activitiesData.length === 0 && !comboData) {
     const allRegions = await getAllRegions();
     const otherRegions = allRegions.filter(r => r.slug !== regionSlug).slice(0, 6);
     const otherActivityTypes = allActivityTypes
@@ -270,6 +263,10 @@ async function ActivityComboPage({ regionSlug, activitySlug }: { regionSlug: str
         </p>
       </div>
 
+      {/* Activity-driven UI (stats, filters, listing) only when bookable
+          activity rows exist; combo JSON content renders below regardless. */}
+      {activitiesData.length > 0 && (
+      <>
       {/* Stats Row */}
       <div className="flex gap-3 mb-4 lg:mb-6 overflow-x-auto no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 sm:overflow-visible">
         <div className="flex min-w-[100px] flex-1 flex-col gap-1 rounded-xl border border-gray-200 p-3 lg:p-4 items-center text-center bg-white shadow-sm shrink-0 sm:shrink">
@@ -370,6 +367,8 @@ async function ActivityComboPage({ regionSlug, activitySlug }: { regionSlug: str
           />
         ))}
       </div>
+      </>
+      )}
 
       {comboData && (
         <div className="mb-10">

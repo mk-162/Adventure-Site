@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "slug": "west-coast-surf-shop",
+    "route": "/directory/west-coast-surf-shop",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "published",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own website (westcoastsurf.co.uk), corroborated by TripAdvisor listing (address, category) and Yell/Chamber of Commerce/Surf Bunker/Abersochlife directory listings, all agreeing on name, address, and phone number.",
+    "redFlags": [
+      "Region mismatch: this operator is located in Abersoch on the Llŷn Peninsula, which is OUTSIDE the Snowdonia National Park boundary. Regions set to llyn-peninsula (matching existing site taxonomy used in data/research/content-ops/location-landing-llyn-peninsula.json) rather than snowdonia.",
+      "Low TripAdvisor review volume (only 2 reviews) — rating of 3.0/5 is not statistically robust and should be treated with caution / low weight if surfaced publicly.",
+      "Note: existing content/regions/llyn-peninsula.ts reportedly has an internal inconsistency referencing this operator alongside a separately-named 'Hell's Mouth Surf School' — these are the same business: West Coast Surf Shop operates its surf school under the trading name 'Hell's Mouth Surf School' (named for the beach it teaches at, Porth Neigwl/Hell's Mouth). Recommend reconciling that naming in the region content."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "West Coast Surf Shop",
+    "slug": "west-coast-surf-shop",
+    "website": "https://www.westcoastsurf.co.uk/",
+    "tagline": "Abersoch surf shop, board/wetsuit hire, and Hell's Mouth surf lessons on the Llŷn Peninsula",
+    "description": "West Coast Surf Shop is a surf shop and school based on Lon Pen Cei in Abersoch, on the Llŷn Peninsula in Gwynedd, North Wales. Alongside retail sales of surfboards, wetsuits (Rip Curl, C-Skins, Patagonia), skateboards, and accessories, the business runs equipment hire (surfboards and wetsuits at £15/day or £50/week) and operates the ISA-scripted \"Hell's Mouth Surf School,\" teaching at the nearby Porth Neigwl (Hell's Mouth) beach.\n\nSurf lessons run from May to November, mostly at weekends with daily sessions during school holidays. Two-hour group lessons cost £35 per person and include wetsuit, boots, and board hire; groups are capped at 10 (preferably 8). Private lessons for 1-5 people cost £180 and also include equipment. Participants must be over 8 years old, and under-16s require a parent nearby on the beach.\n\nThe shop is open roughly 10:00-16:30 daily in summer, with reduced hours and midweek closures outside the school holidays. Board and wetsuit rentals must be collected before 13:00 and returned by 16:00 for day hires.",
+    "uniqueSellingPoint": "One of the few dedicated surf shops on the Llŷn Peninsula combining retail, equipment hire, and an ISA-affiliated surf school teaching at Hell's Mouth (Porth Neigwl), a well-known Welsh surf beach.",
+    "contact": {
+      "phone": "01758 713067",
+      "email": "surf@westcoastsurf.co.uk",
+      "address": "Lon Pen Cei, Abersoch, Gwynedd, LL53 7AP, North Wales, UK"
+    },
+    "lat": 52.8264,
+    "lng": -4.6547,
+    "priceRange": "£15/day equipment hire; £35pp group surf lesson; £180 private lesson (1-5 people); wetsuits £160-£350 retail",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["surfing", "surf-lessons", "equipment-hire", "watersports"],
+    "regions": ["llyn-peninsula"],
+    "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g551995-d23444837-Reviews-West_Coast_Surf_Shop-Abersoch_Gwynedd_North_Wales_Wales.html"
+  },
+  "fieldSources": {
+    "name/website/address/hours/activities/pricing": "https://www.westcoastsurf.co.uk/ and https://www.westcoastsurf.co.uk/surf-school-and-hire-4-w.asp — operator's own site, primary source for all offerings and pricing.",
+    "phone/email": "https://www.westcoastsurf.co.uk/ — listed contact details; secondary mobile 07817497880 also appears on directory listings but landline 01758 713067 used as primary per site and Yell/Chamber of Commerce listings.",
+    "tripadvisorRating_and_reviewCount": "https://www.tripadvisor.co.uk/Attraction_Review-g551995-d23444837-Reviews-West_Coast_Surf_Shop-Abersoch_Gwynedd_North_Wales_Wales.html — 3.0/5 from 2 reviews, listed as #1 of 1 Shopping in Abersoch (not verified as googleRating, so googleRating left null per spec).",
+    "region_llyn_peninsula_not_snowdonia": "https://www.llynaobn.org.uk and data/research/content-ops/location-landing-llyn-peninsula.json — Llŷn AONB is a distinct designated area separate from Snowdonia National Park; existing site taxonomy already uses 'llyn-peninsula' as a region slug.",
+    "hells_mouth_surf_school_tradingName": "https://www.abersochlife.com/directory/hells-mouth-surf-school/ — confirms Hell's Mouth Surf School is the surf-school arm of West Coast Surf Shop, teaching at Porth Neigwl/Hell's Mouth beach.",
+    "lat_lng": "Approximate coordinates for Abersoch village centre (Lon Pen Cei), not independently geocoded to the exact shop frontage — treat as approximate."
+  }
+}

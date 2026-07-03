@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "slug": "snowdonia-mountain-guides",
+    "route": "/directory/snowdonia-mountain-guides",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "published",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own website (snowdoniamountainguides.com), corroborated by an active TripAdvisor listing (2026, 7 reviews, 4.9/5) and a Facebook business page (13 reviews, 100% recommend). Owner Mark Reeves is a published, well-documented Snowdonia mountaineering author/guide (Rockfax 'Snowdonia: Mountain Walks and Scrambles', 2025 edition), reinforcing identity.",
+    "redFlags": [
+      "Seed phone '01286 000 000' was a placeholder — real contact is a mobile number, no landline found.",
+      "Seed email 'info@snowdoniamountainguides.com' could not be confirmed; the only verifiable contact email is the owner's personal address (mark.reeves@mac.com).",
+      "Seed Google rating '~5.0/5 (400+)' is unsupported and appears to be wrong/placeholder data — the only sourced third-party rating is TripAdvisor at 4.9/5 from 7 reviews (Facebook shows 13 reviews, 100% recommend, no numeric star rating). No Google Business rating could be found/confirmed.",
+      "Website previously displayed a 'closed until June 2024' notice (owner on sabbatical as a British Antarctic Survey field guide); current operating status in 2026 appears active per live site and 2026-dated TripAdvisor listing, but no explicit reopening confirmation was found beyond the site being live and bookable."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Snowdonia Mountain Guides",
+    "slug": "snowdonia-mountain-guides",
+    "website": "https://snowdoniamountainguides.com",
+    "tagline": "Rock climbing, scrambling and mountaineering instruction led by Mark Reeves in Snowdonia",
+    "description": "Snowdonia Mountain Guides is a small, owner-led guiding operation based near Llanberis, run by Mark Reeves — a Rockfax guidebook author ('Snowdonia: Mountain Walks and Scrambles') with over two decades of climbing and mountaineering experience in North Wales. The business offers 1-to-1 and small-group instruction in rock climbing, scrambling, hillwalking and winter mountaineering, plus instructor training/certification courses and international climbing trips.\n\nMost guiding staff hold a Mountain Leader qualification as a minimum, with several holding Mountain Instructor or International Mountain Guide certifications. Course pricing runs from around £180 for a single day of instructor training up to £900+ for multi-day lead climbing coaching, positioning it at the premium end of the market.\n\nReviews on TripAdvisor and Facebook consistently praise Mark Reeves' technical knowledge and teaching approach. The website has previously carried notices about reduced availability while the owner worked as a field guide for the British Antarctic Survey, so prospective clients should confirm current availability directly before booking.",
+    "uniqueSellingPoint": "Owner-led, highly qualified small-scale guiding from a published Snowdonia guidebook author, rather than a large multi-instructor outfit",
+    "contact": {
+      "phone": "+44 7872 565225",
+      "email": "mark.reeves@mac.com",
+      "address": "4 Bryn Crwn, Snowdonia-Eryri National Park, LL55 4DN, Wales"
+    },
+    "lat": null,
+    "lng": null,
+    "priceRange": "Premium",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["Rock Climbing", "Scrambling", "Hill Walking", "Winter Mountaineering"],
+    "regions": ["snowdonia"],
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g186445-d12527986-Reviews-Snowdonia_Mountain_Guides-Snowdonia_Eryri_National_Park_North_Wales_Wales.html"
+  },
+  "fieldSources": {
+    "website": "https://snowdoniamountainguides.com/ — live operator homepage, confirmed reachable and content matches business identity",
+    "contact.phone": "https://snowdoniamountainguides.com/ — contact page lists (+44) 07872565225; no landline listed anywhere on site",
+    "contact.email": "https://snowdoniamountainguides.com/ — contact page lists mark.reeves@mac.com; no 'info@' address found on the site",
+    "contact.address": "https://www.tripadvisor.com/Attraction_Review-g186445-d12527986-Reviews-Snowdonia_Mountain_Guides-Snowdonia_Eryri_National_Park_North_Wales_Wales.html — TripAdvisor listing gives address as 4 Bryn Crwn, Snowdonia-Eryri National Park LL55 4DN",
+    "priceRange": "https://snowdoniamountainguides.com/ — course pricing observed from £180 (1-day instructor training) to £900 (5-day lead climbing coaching), consistent with Premium tier",
+    "activityTypes": "https://snowdoniamountainguides.com/ — site lists rock climbing courses, scrambling instruction, hillwalking, winter mountaineering as core offerings",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g186445-d12527986-Reviews-Snowdonia_Mountain_Guides-Snowdonia_Eryri_National_Park_North_Wales_Wales.html — 4.9/5 from 7 reviews, ranked #4 of 7 Classes & Workshops in Snowdonia-Eryri National Park",
+    "identity/owner": "https://snowdoniamountainguides.com/the-snowdonia-mountain-guides-team/az2i0360/ — team page identifies Mark Reeves as lead guide/owner; corroborated by Rockfax author credit on 'Snowdonia: Mountain Walks and Scrambles'",
+    "facebook": "https://www.facebook.com/snowdoniamountainguides/ — active business page, 13 reviews, 100% recommend, located Llanberis"
+  }
+}

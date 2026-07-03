@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "slug": "plas-y-brenin",
+    "route": "/directory/plas-y-brenin",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "published",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own site pyb.co.uk (contact/about pages) showing matching phone, email, address, and activity list; corroborated by TripAdvisor listing for 'Plas y Brenin' in Capel Curig, Snowdonia.",
+    "redFlags": [
+      "Codebase currently references this operator under TWO slugs — 'plas-y-brenin' and 'plasybrenin' — across combo-page JSON files (e.g. data/combo-pages/snowdonia--climbing.json, snowdonia--kayaking.json, snowdonia--hiking.json, snowdonia--gorge-walking.json, snowdonia--trail-running.json, north-wales--climbing.json) and src/lib/__tests__/booking.test.ts. Canonical slug should be 'plas-y-brenin'; 'plasybrenin' occurrences should be redirected or corrected to avoid duplicate/broken operator references.",
+      "Seed data's Google rating (~4.5/5, 800+ reviews) could not be independently verified — no direct Google Maps/Business listing rating was surfaced via search; only TripAdvisor (4.6/5, 139 reviews) and Facebook (96% recommend, 683 reviews) and Trustpilot (5/5, 328 reviews) were confirmable. Google rating/count left unset per spec's 'do not invent ratings' rule."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Plas y Brenin",
+    "slug": "plas-y-brenin",
+    "website": "https://pyb.co.uk",
+    "tagline": "Wales' National Outdoor Centre for climbing, mountaineering, paddling and biking in the heart of Snowdonia",
+    "description": "Plas y Brenin is the National Outdoor Centre for Wales, based in Capel Curig at the foot of the Snowdonia mountains. Managed by the Mountain Training Trust on behalf of Sport England, it has operated as a training and activity hub for outdoor pursuits for decades, offering instructor-led courses spanning climbing (rock, bouldering, scrambling), hill walking and mountain leadership training, white water and sea kayaking, mountain biking, and winter mountaineering skills (in Wales and Scotland).\n\nThe centre combines residential accommodation, an on-site bar and restaurant (Lolfa'r Wyddfa), indoor climbing and bouldering walls, and equipment hire with courses that range from taster sessions for beginners to professional qualification training for aspiring instructors. It also runs corporate away-days, family and group experiences, and youth summer camps for ages 12-17.",
+    "uniqueSellingPoint": "Wales' official National Outdoor Centre — a long-established, professionally accredited training hub (not just a single-activity provider) offering everything from beginner tasters to National Governing Body instructor qualifications, with on-site residential accommodation in Capel Curig.",
+    "contact": {
+      "phone": "01690 720 214",
+      "email": "info@pyb.co.uk",
+      "address": "National Outdoor Centre, Capel Curig, Conwy, LL24 0ET"
+    },
+    "lat": 53.0997,
+    "lng": -3.9024,
+    "priceRange": "Mid-Range/Premium",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["Climbing", "Mountaineering", "Kayaking", "Hill Walking", "Mountain Biking"],
+    "regions": ["snowdonia"],
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g551981-d4066580-Reviews-Plas_y_Brenin-Capel_Curig_Snowdonia_Eryri_National_Park_North_Wales_Wales.html"
+  },
+  "fieldSources": {
+    "website": "https://pyb.co.uk - operator's own domain, confirmed live and matches identity.",
+    "contact.phone": "https://pyb.co.uk/contact/ - listed as +44 (0) 1690 720 214, matches seed.",
+    "contact.email": "https://pyb.co.uk/contact/ - listed as info@pyb.co.uk, matches seed.",
+    "contact.address": "https://pyb.co.uk/contact/ and https://pyb.co.uk/about/ - National Outdoor Centre, Capel Curig, Conwy, LL24 0ET, North Wales.",
+    "activityTypes": "https://pyb.co.uk/ - homepage/course navigation lists Climbing, Hiking, Paddling, Biking, Winter Sports as the five core disciplines; matches seed's Climbing/Mountaineering/Kayaking/Hill Walking/MTB set.",
+    "regions": "https://pyb.co.uk/about/ - centre is physically located in Capel Curig within Eryri/Snowdonia National Park.",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g551981-d4066580-Reviews-Plas_y_Brenin-Capel_Curig_Snowdonia_Eryri_National_Park_North_Wales_Wales.html - rated 4.6/5 from 139 reviews, ranked #1 of 5 Tours & Activities in Capel Curig.",
+    "redFlags.dualSlug": "Confirmed via grep of repo: data/combo-pages/snowdonia--climbing.json, snowdonia--kayaking.json, snowdonia--hiking.json, snowdonia--gorge-walking.json, snowdonia--trail-running.json, north-wales--climbing.json, and src/lib/__tests__/booking.test.ts all reference 'plasybrenin' alongside other files using 'plas-y-brenin'.",
+    "googleRating": "Not independently verifiable — no Google Business/Maps rating surfaced via web search at time of research; left null per spec rule against inventing ratings."
+  }
+}

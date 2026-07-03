@@ -7,7 +7,7 @@ import {
   posts,
   postTags,
 } from "@/db/schema";
-import { eq, and, desc, asc, sql } from "drizzle-orm";
+import { eq, and, desc, asc, sql, inArray } from "drizzle-orm";
 import { getTagBySlug } from "./tags";
 
 // =====================
@@ -108,25 +108,31 @@ export async function getAllPosts(options?: {
     query = query.offset(options.offset) as typeof query;
   }
 
-  // Get tags for each post
+  // Collapsed N+1: one batched tags query for all posts instead of one per post.
   const results = await query;
-  
-  const postsWithTags = await Promise.all(
-    results.map(async (result) => {
-      const postTagsData = await db
-        .select({
-          tag: tags,
-        })
-        .from(postTags)
-        .innerJoin(tags, eq(postTags.tagId, tags.id))
-        .where(eq(postTags.postId, result.post.id));
 
-      return {
-        ...result,
-        tags: postTagsData.map((pt) => pt.tag),
-      };
-    })
-  );
+  const postIds = results.map((r) => r.post.id);
+  const tagsByPostId = new Map<number, typeof tags.$inferSelect[]>();
+  if (postIds.length > 0) {
+    const allTags = await db
+      .select({
+        postId: postTags.postId,
+        tag: tags,
+      })
+      .from(postTags)
+      .innerJoin(tags, eq(postTags.tagId, tags.id))
+      .where(inArray(postTags.postId, postIds));
+    for (const row of allTags) {
+      const arr = tagsByPostId.get(row.postId) ?? [];
+      arr.push(row.tag);
+      tagsByPostId.set(row.postId, arr);
+    }
+  }
+
+  const postsWithTags = results.map((result) => ({
+    ...result,
+    tags: tagsByPostId.get(result.post.id) ?? [],
+  }));
 
   return postsWithTags;
 }

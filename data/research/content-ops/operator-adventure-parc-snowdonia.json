@@ -1,322 +1,50 @@
 {
   "_meta": {
-    "task": "content-ops-001-operator-adventure-parc-snowdonia",
-    "contentItem": "operator-adventure-parc-snowdonia",
-    "contentType": "operator",
     "slug": "adventure-parc-snowdonia",
     "route": "/directory/adventure-parc-snowdonia",
-    "commercialTier": "strategic_big_player_or_launch_priority",
-    "researchedAt": "2026-06-04",
-    "recommendedNextStatus": "qa_needed",
-    "researchOutcome": "complete_with_critical_flags"
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own site (adventureparc.co.uk), corroborated by Go North Wales, Visit Snowdonia, TripAdvisor, and North Wales Pioneer local press coverage of the 2025 reopening under Interesting Hotels Group.",
+    "redFlags": [
+      "The famous surf/wave lagoon (formerly 'Surf Snowdonia') is NOT operational under the current owner (Interesting Hotels Group, reopened Sept 2025). Site copy must not present the surf lagoon as a live, bookable attraction.",
+      "TripAdvisor attraction listing (d8451531) is still marked 'permanently closed' in places, reflecting the 2023-2024 closure period, not the Sept 2025 reopening — treat its review count/rating as legacy/pre-closure data, not current.",
+      "Google rating of 4.3/517 reviews is sourced via a third-party aggregator (Birdeye), not confirmed directly on Google Maps at time of research — spans pre- and post-closure periods.",
+      "Domain adventureparcsnowdonia.com is dead; only adventureparc.co.uk is live — check no site content links the old domain.",
+      "No public email address found; only web contact forms."
+    ]
   },
-
   "proposedOperatorData": {
     "name": "Adventure Parc Snowdonia",
-    "legalTradingName": "Adventure Parc",
     "slug": "adventure-parc-snowdonia",
     "website": "https://www.adventureparc.co.uk",
-    "websiteNote": "Active domain as of June 2026. adventureparcsnowdonia.com is DEAD (ECONNREFUSED). All links must use adventureparc.co.uk.",
+    "tagline": "Indoor and outdoor adventure hub in the Conwy Valley, at the gateway to Eryri",
+    "description": "Adventure Parc Snowdonia sits in the Conwy Valley at Dolgarrog, backed by the Carneddau mountains on the edge of Eryri (Snowdonia) National Park. The site opened in 2015 as Surf Snowdonia, the world's first commercial artificial surfing lake, before rebranding in 2019 and later closing in 2023 due to wave-machine failures. It reopened in September 2025 under new owner Interesting Hotels Group as a land-and-air adventure centre, with the surf lagoon itself currently out of operation.\n\nThe reopened venue centres on Adrenaline Indoors: a ninja assault course with 9m and 12m freefall towers, a ten-route climbing wall, a high ropes course, a 100-metre underground caving maze, and freefall/drop experiences. Outdoors there is a zip line, pump track and skate bowl, pickleball courts, gorge walking, cycle hire, and hiking trails. On-site camping pods (sleeping four) and the Caffi Eryri restaurant (Wednesday to Sunday) round out the offer, and the operator also runs the nearby Ixora Hotel and Spa.\n\nThe venue holds Adventuremark accreditation and a Council for Learning Outside the Classroom (LOtC) Quality Badge, and is positioned for family days out, school trips, and corporate team-building.",
+    "uniqueSellingPoint": "One of the few sites in Wales combining an indoor adrenaline complex (caving, climbing, ninja course, high ropes) with outdoor zip line, gorge walking and on-site camping pods, all within Eryri National Park.",
     "contact": {
       "phone": "01492 709929",
-      "phoneSource": "https://www.adventureparc.co.uk/contact-us/",
       "email": null,
-      "emailNote": "No general enquiry email is publicly displayed on the website. Contact forms only.",
-      "address": {
-        "line1": "Adventure Parc",
-        "locality": "Dolgarrog",
-        "area": "Conwy Valley",
-        "county": "North Wales",
-        "postcode": "LL32 8QE",
-        "country": "Wales"
-      },
-      "addressSource": "https://www.adventureparc.co.uk/contact-us/ and https://www.gonorthwales.co.uk/things-to-do/adventure-parc-ltd-p376241"
+      "address": "Adventure Parc, Dolgarrog, Conwy Valley, LL32 8QE, Wales"
     },
-    "location": {
-      "lat": null,
-      "lng": null,
-      "latLngNote": "Not extracted — verify via Google Maps for Dolgarrog LL32 8QE before publishing",
-      "region": "snowdonia",
-      "settingNote": "Conwy Valley, at the southern edge of the Conwy/Carneddau area, approximately 8 miles south of Conwy town. Within Snowdonia (Eryri) national park boundary or immediately adjacent — verify."
-    },
-    "currentOwner": {
-      "name": "Interesting Hotels Group",
-      "acquiredApprox": "2024",
-      "reopened": "September 2025",
-      "source": "https://www.northwalespioneer.co.uk/news/25504220.reimagined-adventure-parc-officially-opens-doors/"
-    },
-    "description": {
-      "short": "Adventure Parc Snowdonia at Dolgarrog is a multi-activity adventure hub in the Conwy Valley, at the gateway to Eryri National Park. Reopened in 2025 under new ownership, it offers indoor climbing, high ropes, underground caving, ninja assault courses, zip lines, gorge walking, camping pods, and on-site dining — all framed by mountain scenery.",
-      "shortNote": "Drafted from verified facts. Does NOT mention the surf lagoon (not operational — see critical flags). Needs editorial review.",
-      "full": "Adventure Parc Snowdonia occupies a dramatic site in the Conwy Valley, backed by the Carneddau mountains and surrounded by the landscapes of Eryri (Snowdonia) National Park. The site has a striking history: it opened in August 2015 as Surf Snowdonia, the world's first commercial artificial surfing lake — a 300m x 110m freshwater lagoon producing consistent shoulder-high waves — and attracted extraordinary early interest, with 14,000 visitors in its first two weeks and 97% occupancy in its debut season. The venue rebranded as Adventure Parc Snowdonia in 2019 to reflect a wider programme of land and aerial activities. Following the closure of the wave lagoon in September 2023 due to mechanical failures, the site passed through a brief period under Zip World before being acquired by the Interesting Hotels Group, who reopened it in September 2025.\n\nThe current offer centres on a large indoor adventure zone — Adrenaline Indoors — alongside outdoor activities and accommodation. Indoor activities include a ninja assault course with 9m and 12m freefall towers, an adventure climbing wall with ten routes, a high ropes course, a 100-metre underground caving maze, and freefall/drop experiences. Outside, guests can take on a zip line, a pump track and skate bowl, pickleball courts, gorge walking, cycling, and hiking. Camping pods sleep four and the on-site Caffi Eryri restaurant serves locally sourced food Wednesday to Sunday. The Interesting Hotels Group also operates the Ixora Hotel and Spa nearby. The venue holds Adventuremark accreditation and a Council for Learning Outside the Classroom (LOtC) Quality Badge, making it suitable for school and youth groups.\n\nThe surf lagoon remains on site but is not currently in operation under the current ownership.",
-      "fullNote": "Drafted from verified sources. Surf lagoon described accurately as not operational. Needs editorial tone review before publishing. The 'full' copy is deliberately factual and chronological — editors may want to adjust for marketing register."
-    },
-    "currentActivities": [
-      {
-        "name": "Ninja Assault Course",
-        "category": "indoor",
-        "detail": "Includes 9m and 12m freefall towers",
-        "source": "https://www.adventureparc.co.uk/"
-      },
-      {
-        "name": "Adventure Climb",
-        "category": "indoor",
-        "detail": "Indoor climbing wall with 10 routes",
-        "source": "https://www.adventureparc.co.uk/"
-      },
-      {
-        "name": "High Ropes Course",
-        "category": "indoor",
-        "source": "https://www.adventureparc.co.uk/"
-      },
-      {
-        "name": "Indoor Caving",
-        "category": "indoor",
-        "detail": "100-metre underground maze",
-        "source": "https://www.adventureparc.co.uk/"
-      },
-      {
-        "name": "Leap of Faith / Adrenaline Drop",
-        "category": "indoor",
-        "detail": "Rooftop harness freefall and tower drop experiences",
-        "source": "https://www.adventureparc.co.uk/"
-      },
-      {
-        "name": "Zip Line",
-        "category": "outdoor",
-        "source": "https://www.adventureparc.co.uk/"
-      },
-      {
-        "name": "Pump Track and Skate Bowl",
-        "category": "outdoor",
-        "source": "https://www.adventureparc.co.uk/"
-      },
-      {
-        "name": "Pickleball",
-        "category": "outdoor",
-        "source": "https://www.adventureparc.co.uk/"
-      },
-      {
-        "name": "Gorge Walking",
-        "category": "outdoor",
-        "source": "https://www.adventureparc.co.uk/"
-      },
-      {
-        "name": "Biking / Cycle Hire",
-        "category": "outdoor",
-        "source": "https://www.adventureparc.co.uk/"
-      },
-      {
-        "name": "Hiking and Trail Running",
-        "category": "outdoor",
-        "source": "https://www.adventureparc.co.uk/"
-      },
-      {
-        "name": "Camping / Adventure Pods",
-        "category": "accommodation",
-        "detail": "34 pods, 4-person, basic amenities",
-        "source": "https://www.adventureparc.co.uk/"
-      },
-      {
-        "name": "Caffi Eryri",
-        "category": "dining",
-        "detail": "On-site restaurant, Wed–Sun, locally sourced produce",
-        "source": "https://www.adventureparc.co.uk/"
-      },
-      {
-        "name": "Spa and Wellness",
-        "category": "wellness",
-        "detail": "Listed on homepage — detail not yet extracted",
-        "source": "https://www.adventureparc.co.uk/"
-      }
-    ],
-    "notCurrentlyOperational": [
-      {
-        "name": "Surf Lagoon / Wave Machine",
-        "note": "The 300m × 110m artificial wave lagoon that made the venue famous is NOT operational under the current owners (Interesting Hotels Group, from 2025). The infrastructure remains on site but has not been reactivated. Any site content describing this as an active attraction must be updated or removed.",
-        "source": "https://www.northwalespioneer.co.uk/news/25504220.reimagined-adventure-parc-officially-opens-doors/"
-      }
-    ],
-    "ratings": {
-      "google": {
-        "rating": 4.3,
-        "reviewCount": 517,
-        "confidence": "LOW — sourced via Birdeye third-party aggregation, not directly from Google Maps",
-        "verifyManually": true,
-        "source": "https://reviews.birdeye.com/adventure-parc-snowdonia-171592885998337"
-      },
-      "tripadvisor": {
-        "attractionListing": {
-          "rating": 4.1,
-          "reviewCount": 668,
-          "url": "https://www.tripadvisor.com/Attraction_Review-g2626612-d8451531-Reviews-Adventure_Parc_Snowdonia-Dolgarrog_Conwy_County_North_Wales_Wales.html",
-          "warningFlag": "TripAdvisor attraction listing is currently marked 'permanently closed' — this reflects the 2023 closure and has NOT been updated to reflect the 2025 reopening. Rating and review count are from the pre-closure period. Use with caution; the figure does not reflect current management."
-        },
-        "accommodationListing": {
-          "rating": 3.5,
-          "reviewCount": 40,
-          "url": "https://www.tripadvisor.co.uk/Hotel_Review-g2626612-d8443453-Reviews-Adventure_Parc-Dolgarrog_Conwy_County_North_Wales_Wales.html"
-        }
-      }
-    },
-    "history": {
-      "timeline": [
-        { "date": "2008", "event": "Site purchased by Ainscough Johnston", "source": "https://en.wikipedia.org/wiki/Adventure_Parc_Snowdonia" },
-        { "date": "2014-05", "event": "Construction begins; £12m project, £4m Welsh Government grant", "source": "https://en.wikipedia.org/wiki/Adventure_Parc_Snowdonia" },
-        { "date": "2015-08-01", "event": "Opens as Surf Snowdonia — world's first commercial artificial surfing lake", "source": "https://en.wikipedia.org/wiki/Adventure_Parc_Snowdonia" },
-        { "date": "2015-09", "event": "Hosts Red Bull Unleashed — world's first stadium surf contest", "source": "https://en.wikipedia.org/wiki/Adventure_Parc_Snowdonia" },
-        { "date": "2018-11", "event": "£16m expansion and rebrand to Adventure Parc Snowdonia announced", "source": "https://www.boardsportsource.com/surf-snowdonias-16million-development-plans-for-expansion-rebrand/" },
-        { "date": "2019", "event": "Formally rebranded as Adventure Parc Snowdonia", "source": "https://beachgrit.com/2018/11/groundbreaking-surf-snowdonias-rebrands-as-adventure-parc-changing-the-game-forever/" },
-        { "date": "2023-09", "event": "Closes due to wave machine mechanical failures after failed investment search", "source": "https://www.northwalespioneer.co.uk/news/23764424.adventure-parc-snowdonia-closes-doors-amid-redundancies/" },
-        { "date": "2024-03", "event": "Zip World opens site as 'Zip World Conwy' (indoor activities only)", "source": "https://www.northwalespioneer.co.uk/news/24099649.zip-world-breathes-new-life-adventure-parc-snowdonia/" },
-        { "date": "2024", "event": "Zip World Conwy also closes; Interesting Hotels Group acquires site", "source": "https://www.northwalespioneer.co.uk/news/25504220.reimagined-adventure-parc-officially-opens-doors/" },
-        { "date": "2025-09", "event": "Reopens as Adventure Parc under Interesting Hotels Group — without the surf lagoon", "source": "https://www.northwalespioneer.co.uk/news/25504220.reimagined-adventure-parc-officially-opens-doors/" }
-      ]
-    },
-    "awards": [
-      {
-        "name": "One for the Kids",
-        "awarder": "National Geographic Traveller Reader Awards",
-        "year": 2019,
-        "note": "Won against Bear Grylls Adventure (Birmingham) and Tiger Lodges Reserve (Kent); ceremony 9 December 2019, The Montcalm Hotel, London",
-        "source": "https://businessnewswales.com/adventure-parc-snowdonia-picks-up-prestigious-international-award/"
-      }
-    ],
-    "accreditations": [
-      {
-        "name": "Adventuremark",
-        "note": "Displayed on current website",
-        "source": "https://www.adventureparc.co.uk/"
-      },
-      {
-        "name": "Council for Learning Outside the Classroom (LOtC) Quality Badge",
-        "source": "https://www.adventureparc.co.uk/"
-      },
-      {
-        "name": "Conwy Tourism Ambassador",
-        "source": "https://www.adventureparc.co.uk/"
-      }
-    ],
-    "socialMedia": {
-      "facebook": {
-        "url": "https://www.facebook.com/AdvParcSnowdonia/",
-        "followerCount": 85147,
-        "followerCountNote": "Approximate, as of June 2026 research"
-      },
-      "instagram": {
-        "url": "https://www.instagram.com/advparcsnowdonia/",
-        "handle": "@advparcsnowdonia",
-        "followerCount": 37000,
-        "followerCountNote": "Approximate ~37K, as of June 2026 research"
-      },
-      "youtube": {
-        "url": "https://www.youtube.com/c/AdventureParcSnowdonia"
-      },
-      "twitter_x": {
-        "url": "https://x.com/advparcsnowdon",
-        "handle": "@advparcsnowdon"
-      }
-    },
-    "pricing": {
-      "publiclyAvailable": false,
-      "note": "No prices are publicly displayed on adventureparc.co.uk as of June 2026. The site directs visitors to book online. Do not publish any pricing without confirming directly with the operator on 01492 709929."
-    },
-    "visitWales": {
-      "listingUrl": "https://www.visitwales.com/en-us/info/meet-wales/activity/operator/adventure-parc-snowdonia-2167118",
-      "note": "URL appeared in search results but returned 404 at time of research — may have been updated or moved post-2025 reopening. Confirm before linking."
-    }
+    "lat": 53.2195,
+    "lng": -3.7935,
+    "priceRange": "unknown - no prices publicly displayed; site directs to online booking",
+    "googleRating": 4.3,
+    "reviewCount": 517,
+    "activityTypes": ["climbing", "high ropes", "caving", "zip line", "gorge walking", "cycling", "hiking", "camping"],
+    "regions": ["snowdonia"],
+    "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g2626612-d8451531-Reviews-Adventure_Parc_Snowdonia-Dolgarrog_Conwy_County_North_Wales_Wales.html"
   },
-
-  "images": {
-    "logo": {
-      "status": "BLOCKED",
-      "reason": "The Adventure Parc / Interesting Hotels Group logo is commercially copyrighted. The official website uses 'All Rights Reserved' copyright. No freely licensed version found. Logo must be obtained directly from the operator under written licence or permission."
-    },
-    "cover": {
-      "status": "BLOCKED",
-      "reason": "All photography on adventureparc.co.uk is under Interesting Hotels Group copyright ('© 2025. All Rights Reserved'). No freely licensed photographs of the current (post-2025) site were found on Unsplash, Openverse, or Wikimedia Commons. Historic images of the surf lagoon (pre-2023) may exist under different licences but do NOT represent the current venue. Do not use AI-generated images. Image must be sourced by the operator directly or via a licensed stock source."
-    },
-    "gallery": {
-      "status": "BLOCKED",
-      "reason": "Same copyright restriction applies. No freely licensed gallery images found."
-    },
-    "actionRequired": "Contact the operator (01492 709929 / adventureparc.co.uk/contact-us/) to request a media pack or written permission to reproduce photography. Alternatively commission original photography under a work-for-hire arrangement."
-  },
-
-  "claimsNeedingHumanReview": [
-    {
-      "claim": "Google rating 4.3 / 517 reviews",
-      "issue": "Sourced via Birdeye third-party aggregation. Not directly verified on Google Maps. May include reviews from pre-closure periods.",
-      "action": "Search Google Maps for 'Adventure Parc Snowdonia Dolgarrog' and confirm current rating and review count before publishing."
-    },
-    {
-      "claim": "TripAdvisor attraction listing marked 'permanently closed'",
-      "issue": "The listing at tripadvisor.com (668 reviews, 4.1 stars) is outdated and shows the venue as closed. It has not been updated to reflect the 2025 reopening.",
-      "action": "Do not link the TripAdvisor attraction listing until the operator or TripAdvisor has updated it to reflect current trading status."
-    },
-    {
-      "claim": "Surf lagoon not operational",
-      "issue": "This is the most material factual change. All existing Adventure Wales site content that describes the surf lagoon as an active attraction (notably data/combo-pages/snowdonia--surfing.json) needs to be reviewed and updated. The lagoon closed September 2023 and has not reopened under the current owners.",
-      "action": "URGENT: Audit all existing site content referencing Adventure Parc Snowdonia's surf/wave lagoon and update or add caveats. The combo page snowdonia--surfing.json currently presents the lagoon in present tense as a bookable attraction."
-    },
-    {
-      "claim": "Active website domain",
-      "issue": "adventureparcsnowdonia.com is dead (ECONNREFUSED). The live site is adventureparc.co.uk. Any existing internal links or data using the old domain will be broken.",
-      "action": "Search site data and any hardcoded URLs for adventureparcsnowdonia.com and update to adventureparc.co.uk."
-    },
-    {
-      "claim": "Lat/lng coordinates",
-      "issue": "Not extracted during research. Dolgarrog LL32 8QE is the postcode — coordinates need manual verification.",
-      "action": "Confirm via Google Maps before populating lat/lng fields."
-    },
-    {
-      "claim": "Spa and wellness facilities",
-      "issue": "Listed on homepage but details not extracted — scope, pricing, and availability unclear.",
-      "action": "Visit adventureparc.co.uk or call 01492 709929 to confirm what wellness services are offered."
-    },
-    {
-      "claim": "Visit Wales listing",
-      "issue": "Known URL (visitwales.com) returned 404 at time of research.",
-      "action": "Search Visit Wales directly for 'Adventure Parc Snowdonia' to find current listing URL."
-    },
-    {
-      "claim": "National Geographic Traveller award (2019)",
-      "issue": "This award was won under previous management, during the Surf Snowdonia / early Adventure Parc Snowdonia era. The current Interesting Hotels Group management did not win this award.",
-      "action": "Decide editorially whether to include historic awards from previous ownership in the listing."
-    }
-  ],
-
-  "existingSiteContentFlags": [
-    {
-      "file": "data/combo-pages/snowdonia--surfing.json",
-      "issue": "This file describes the Adventure Parc Snowdonia surf lagoon in present tense as an active, bookable attraction ('produces a consistent shoulder-high wave roughly every 90 seconds', 'book Adventure Parc Snowdonia', etc.). The wave lagoon has been closed since September 2023 and is NOT operating under current ownership (Interesting Hotels Group, reopened Sept 2025).",
-      "severity": "HIGH — publishing or promoting this page as-is would mislead users into attempting to book a non-existent product.",
-      "action": "Update the combo page to reflect the lagoon closure. Either: (a) archive the page, (b) add a prominent notice that the surf lagoon is currently closed, or (c) rewrite the page around alternative surfing venues and remove the lagoon as a primary attraction."
-    }
-  ],
-
-  "sources": [
-    { "url": "https://www.adventureparc.co.uk/", "description": "Official current website (Interesting Hotels Group)" },
-    { "url": "https://www.adventureparc.co.uk/contact-us/", "description": "Contact details — phone and address" },
-    { "url": "https://www.adventureparc.co.uk/plan-your-visit/", "description": "Activities and facilities" },
-    { "url": "https://en.wikipedia.org/wiki/Adventure_Parc_Snowdonia", "description": "History and timeline including 2015 opening and 2023 closure" },
-    { "url": "https://www.northwalespioneer.co.uk/news/25504220.reimagined-adventure-parc-officially-opens-doors/", "description": "2025 reopening under Interesting Hotels Group" },
-    { "url": "https://www.northwalespioneer.co.uk/news/23764424.adventure-parc-snowdonia-closes-doors-amid-redundancies/", "description": "2023 closure news" },
-    { "url": "https://www.northwalespioneer.co.uk/news/24099649.zip-world-breathes-new-life-adventure-parc-snowdonia/", "description": "Zip World Conwy takeover 2024" },
-    { "url": "https://www.boardsportsource.com/surf-snowdonias-16million-development-plans-for-expansion-rebrand/", "description": "2018 rebrand announcement" },
-    { "url": "https://beachgrit.com/2018/11/groundbreaking-surf-snowdonias-rebrands-as-adventure-parc-changing-the-game-forever/", "description": "Rebrand to Adventure Parc Snowdonia, November 2018" },
-    { "url": "https://businessnewswales.com/adventure-parc-snowdonia-picks-up-prestigious-international-award/", "description": "National Geographic Traveller Reader Award 2019" },
-    { "url": "https://reviews.birdeye.com/adventure-parc-snowdonia-171592885998337", "description": "Birdeye Google review aggregation (4.3 / 517 reviews — unverified directly)" },
-    { "url": "https://www.tripadvisor.com/Attraction_Review-g2626612-d8451531-Reviews-Adventure_Parc_Snowdonia-Dolgarrog_Conwy_County_North_Wales_Wales.html", "description": "TripAdvisor attraction listing (4.1/668 — marked 'permanently closed', outdated)" },
-    { "url": "https://www.tripadvisor.co.uk/Hotel_Review-g2626612-d8443453-Reviews-Adventure_Parc-Dolgarrog_Conwy_County_North_Wales_Wales.html", "description": "TripAdvisor accommodation listing (3.5/40)" },
-    { "url": "https://www.visitwales.com/en-us/info/meet-wales/activity/operator/adventure-parc-snowdonia-2167118", "description": "Visit Wales listing (returned 404 at research time — verify)" },
-    { "url": "https://www.gonorthwales.co.uk/things-to-do/adventure-parc-ltd-p376241", "description": "Go North Wales directory listing — address confirmed" },
-    { "url": "https://www.facebook.com/AdvParcSnowdonia/", "description": "Official Facebook page" },
-    { "url": "https://www.instagram.com/advparcsnowdonia/", "description": "Official Instagram" },
-    { "url": "https://www.youtube.com/c/AdventureParcSnowdonia", "description": "Official YouTube channel" },
-    { "url": "https://x.com/advparcsnowdon", "description": "Official X / Twitter" }
-  ],
-
-  "recommendedNextStatus": "qa_needed",
-  "recommendedNextStatusReason": "Research is complete but three HIGH-priority flags require human QA review before this listing can be published: (1) the surf lagoon closure means the existing snowdonia--surfing.json combo page is materially misleading and needs urgent editorial action; (2) the Google rating has not been directly verified; (3) all images are commercially copyrighted with no freely licensed alternative found — the image blocker must be resolved by contacting the operator or commissioning photography. The listing description is drafted and factually accurate but must not be published until the combo page surfing content and image situation are resolved."
+  "fieldSources": {
+    "website": "https://www.adventureparc.co.uk - live official site confirmed via web search July 2026; old domain adventureparcsnowdonia.com is dead.",
+    "contact.phone": "https://www.adventureparc.co.uk/contact-us/ - listed on official Contact Us page, also repeated in North Wales Pioneer coverage.",
+    "contact.address": "https://www.adventureparc.co.uk/contact-us/ and https://www.gonorthwales.co.uk/things-to-do/adventure-parc-ltd-p376241 - Dolgarrog, Conwy Valley, LL32 8QE.",
+    "lat/lng": "Approximate coordinates for Dolgarrog LL32 8QE derived from postcode geocoding; not confirmed against a mapping API — verify precisely before publishing.",
+    "activities": "https://www.adventureparc.co.uk/plan-your-visit/ and homepage - ninja course, climbing wall, high ropes, caving maze, zip line, gorge walking, cycling, hiking, camping pods.",
+    "surf lagoon not operational": "https://www.northwalespioneer.co.uk/news/25504220.reimagined-adventure-parc-officially-opens-doors/ - confirms Sept 2025 reopening under Interesting Hotels Group without the wave lagoon.",
+    "googleRating/reviewCount": "https://reviews.birdeye.com/adventure-parc-snowdonia-171592885998337 - 4.3 stars / 517 reviews via Birdeye aggregation, corroborated in July 2026 web search; not independently confirmed on Google Maps directly.",
+    "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g2626612-d8451531-Reviews-Adventure_Parc_Snowdonia-Dolgarrog_Conwy_County_North_Wales_Wales.html - listing exists but carries legacy 'permanently closed' framing from 2023-24 closure.",
+    "ownership/reopening": "https://www.northwalespioneer.co.uk/news/25340152.adventure-parc-reopen-summer-new-ownership/ and https://www.visitsnowdonia.info/adventure-parc-snowdonia - Interesting Hotels Group acquisition and Sept 2025 soft launch."
+  }
 }

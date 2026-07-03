@@ -1,5 +1,5 @@
 {
-  "id": "c99b2ea2-7bbd-476f-8aa1-a5135f3b2edb",
+  "id": "6ad7b839-4ba4-484f-82bd-6c7f77c49ea9",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -126,68 +126,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "accommodation_site_id_idx": {
-          "name": "accommodation_site_id_idx",
-          "columns": [
-            {
-              "expression": "site_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "accommodation_region_id_idx": {
-          "name": "accommodation_region_id_idx",
-          "columns": [
-            {
-              "expression": "region_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "accommodation_slug_idx": {
-          "name": "accommodation_slug_idx",
-          "columns": [
-            {
-              "expression": "slug",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "accommodation_status_idx": {
-          "name": "accommodation_status_idx",
-          "columns": [
-            {
-              "expression": "status",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "accommodation_site_id_sites_id_fk": {
           "name": "accommodation_site_id_sites_id_fk",
@@ -252,38 +191,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "accommodation_tags_accommodation_id_idx": {
-          "name": "accommodation_tags_accommodation_id_idx",
-          "columns": [
-            {
-              "expression": "accommodation_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "accommodation_tags_tag_id_idx": {
-          "name": "accommodation_tags_tag_id_idx",
-          "columns": [
-            {
-              "expression": "tag_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "accommodation_tags_accommodation_id_accommodation_id_fk": {
           "name": "accommodation_tags_accommodation_id_accommodation_id_fk",
@@ -486,98 +394,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "activities_site_id_idx": {
-          "name": "activities_site_id_idx",
-          "columns": [
-            {
-              "expression": "site_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "activities_region_id_idx": {
-          "name": "activities_region_id_idx",
-          "columns": [
-            {
-              "expression": "region_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "activities_operator_id_idx": {
-          "name": "activities_operator_id_idx",
-          "columns": [
-            {
-              "expression": "operator_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "activities_activity_type_id_idx": {
-          "name": "activities_activity_type_id_idx",
-          "columns": [
-            {
-              "expression": "activity_type_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "activities_slug_idx": {
-          "name": "activities_slug_idx",
-          "columns": [
-            {
-              "expression": "slug",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "activities_status_idx": {
-          "name": "activities_status_idx",
-          "columns": [
-            {
-              "expression": "status",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "activities_site_id_sites_id_fk": {
           "name": "activities_site_id_sites_id_fk",
@@ -638,102 +455,6 @@
       "checkConstraints": {},
       "isRLSEnabled": false
     },
-    "public.activity_regions": {
-      "name": "activity_regions",
-      "schema": "",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "activity_id": {
-          "name": "activity_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "region_id": {
-          "name": "region_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "created_at": {
-          "name": "created_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        }
-      },
-      "indexes": {
-        "activity_regions_activity_id_idx": {
-          "name": "activity_regions_activity_id_idx",
-          "columns": [
-            {
-              "expression": "activity_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "activity_regions_region_id_idx": {
-          "name": "activity_regions_region_id_idx",
-          "columns": [
-            {
-              "expression": "region_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
-      "foreignKeys": {
-        "activity_regions_activity_id_activities_id_fk": {
-          "name": "activity_regions_activity_id_activities_id_fk",
-          "tableFrom": "activity_regions",
-          "tableTo": "activities",
-          "columnsFrom": [
-            "activity_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        },
-        "activity_regions_region_id_regions_id_fk": {
-          "name": "activity_regions_region_id_regions_id_fk",
-          "tableFrom": "activity_regions",
-          "tableTo": "regions",
-          "columnsFrom": [
-            "region_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "policies": {},
-      "checkConstraints": {},
-      "isRLSEnabled": false
-    },
     "public.activity_tags": {
       "name": "activity_tags",
       "schema": "",
@@ -764,38 +485,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "activity_tags_activity_id_idx": {
-          "name": "activity_tags_activity_id_idx",
-          "columns": [
-            {
-              "expression": "activity_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "activity_tags_tag_id_idx": {
-          "name": "activity_tags_tag_id_idx",
-          "columns": [
-            {
-              "expression": "tag_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "activity_tags_activity_id_activities_id_fk": {
           "name": "activity_tags_activity_id_activities_id_fk",
@@ -877,38 +567,7 @@
           "notNull": false
         }
       },
-      "indexes": {
-        "activity_types_site_id_idx": {
-          "name": "activity_types_site_id_idx",
-          "columns": [
-            {
-              "expression": "site_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "activity_types_slug_idx": {
-          "name": "activity_types_slug_idx",
-          "columns": [
-            {
-              "expression": "slug",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "activity_types_site_id_sites_id_fk": {
           "name": "activity_types_site_id_sites_id_fk",
@@ -999,38 +658,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "ad_campaigns_site_id_idx": {
-          "name": "ad_campaigns_site_id_idx",
-          "columns": [
-            {
-              "expression": "site_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "ad_campaigns_advertiser_id_idx": {
-          "name": "ad_campaigns_advertiser_id_idx",
-          "columns": [
-            {
-              "expression": "advertiser_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "ad_campaigns_site_id_sites_id_fk": {
           "name": "ad_campaigns_site_id_sites_id_fk",
@@ -1133,23 +761,7 @@
           "default": "'draft'"
         }
       },
-      "indexes": {
-        "ad_creatives_campaign_id_idx": {
-          "name": "ad_creatives_campaign_id_idx",
-          "columns": [
-            {
-              "expression": "campaign_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "ad_creatives_campaign_id_ad_campaigns_id_fk": {
           "name": "ad_creatives_campaign_id_ad_campaigns_id_fk",
@@ -1165,81 +777,6 @@
           "onUpdate": "no action"
         }
       },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "policies": {},
-      "checkConstraints": {},
-      "isRLSEnabled": false
-    },
-    "public.ad_impressions": {
-      "name": "ad_impressions",
-      "schema": "",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "slot_name": {
-          "name": "slot_name",
-          "type": "varchar(100)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "page_type": {
-          "name": "page_type",
-          "type": "varchar(100)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "page_slug": {
-          "name": "page_slug",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "created_at": {
-          "name": "created_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        }
-      },
-      "indexes": {
-        "ad_impressions_slot_name_idx": {
-          "name": "ad_impressions_slot_name_idx",
-          "columns": [
-            {
-              "expression": "slot_name",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "ad_impressions_page_type_idx": {
-          "name": "ad_impressions_page_type_idx",
-          "columns": [
-            {
-              "expression": "page_type",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
-      "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "policies": {},
@@ -1344,12 +881,6 @@
           "primaryKey": false,
           "notNull": false
         },
-        "password_hash": {
-          "name": "password_hash",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false
-        },
         "role": {
           "name": "role",
           "type": "admin_role",
@@ -1390,99 +921,6 @@
           ]
         }
       },
-      "policies": {},
-      "checkConstraints": {},
-      "isRLSEnabled": false
-    },
-    "public.advertiser_accounts": {
-      "name": "advertiser_accounts",
-      "schema": "",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "name": {
-          "name": "name",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "slug": {
-          "name": "slug",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "primary_email": {
-          "name": "primary_email",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "primary_phone": {
-          "name": "primary_phone",
-          "type": "varchar(50)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "contact_name": {
-          "name": "contact_name",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "billing_email": {
-          "name": "billing_email",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "billing_custom_amount": {
-          "name": "billing_custom_amount",
-          "type": "numeric(10, 2)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "billing_notes": {
-          "name": "billing_notes",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "stripe_customer_id": {
-          "name": "stripe_customer_id",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "admin_notes": {
-          "name": "admin_notes",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "created_at": {
-          "name": "created_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        },
-        "updated_at": {
-          "name": "updated_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        }
-      },
-      "indexes": {},
-      "foreignKeys": {},
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
       "policies": {},
       "checkConstraints": {},
       "isRLSEnabled": false
@@ -1537,23 +975,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "advertisers_site_id_idx": {
-          "name": "advertisers_site_id_idx",
-          "columns": [
-            {
-              "expression": "site_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "advertisers_site_id_sites_id_fk": {
           "name": "advertisers_site_id_sites_id_fk",
@@ -1650,68 +1072,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "answers_site_id_idx": {
-          "name": "answers_site_id_idx",
-          "columns": [
-            {
-              "expression": "site_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "answers_region_id_idx": {
-          "name": "answers_region_id_idx",
-          "columns": [
-            {
-              "expression": "region_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "answers_slug_idx": {
-          "name": "answers_slug_idx",
-          "columns": [
-            {
-              "expression": "slug",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "answers_status_idx": {
-          "name": "answers_status_idx",
-          "columns": [
-            {
-              "expression": "status",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "answers_site_id_sites_id_fk": {
           "name": "answers_site_id_sites_id_fk",
@@ -1912,89 +1273,6 @@
       "checkConstraints": {},
       "isRLSEnabled": false
     },
-    "public.event_saves": {
-      "name": "event_saves",
-      "schema": "",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "event_id": {
-          "name": "event_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "session_id": {
-          "name": "session_id",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "created_at": {
-          "name": "created_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        }
-      },
-      "indexes": {
-        "event_saves_event_id_idx": {
-          "name": "event_saves_event_id_idx",
-          "columns": [
-            {
-              "expression": "event_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "event_saves_session_id_idx": {
-          "name": "event_saves_session_id_idx",
-          "columns": [
-            {
-              "expression": "session_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
-      "foreignKeys": {
-        "event_saves_event_id_events_id_fk": {
-          "name": "event_saves_event_id_events_id_fk",
-          "tableFrom": "event_saves",
-          "tableTo": "events",
-          "columnsFrom": [
-            "event_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "policies": {},
-      "checkConstraints": {},
-      "isRLSEnabled": false
-    },
     "public.events": {
       "name": "events",
       "schema": "",
@@ -2109,199 +1387,9 @@
           "primaryKey": false,
           "notNull": true,
           "default": "now()"
-        },
-        "hero_image": {
-          "name": "hero_image",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "image_gallery": {
-          "name": "image_gallery",
-          "type": "jsonb",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "category": {
-          "name": "category",
-          "type": "varchar(100)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "tags": {
-          "name": "tags",
-          "type": "text[]",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "is_recurring": {
-          "name": "is_recurring",
-          "type": "boolean",
-          "primaryKey": false,
-          "notNull": false,
-          "default": false
-        },
-        "recurring_schedule": {
-          "name": "recurring_schedule",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "is_featured": {
-          "name": "is_featured",
-          "type": "boolean",
-          "primaryKey": false,
-          "notNull": false,
-          "default": false
-        },
-        "is_promoted": {
-          "name": "is_promoted",
-          "type": "boolean",
-          "primaryKey": false,
-          "notNull": false,
-          "default": false
-        },
-        "promoted_until": {
-          "name": "promoted_until",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "operator_id": {
-          "name": "operator_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "external_source": {
-          "name": "external_source",
-          "type": "varchar(100)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "external_id": {
-          "name": "external_id",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "external_url": {
-          "name": "external_url",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "ticket_url": {
-          "name": "ticket_url",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "difficulty": {
-          "name": "difficulty",
-          "type": "varchar(50)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "age_range": {
-          "name": "age_range",
-          "type": "varchar(100)",
-          "primaryKey": false,
-          "notNull": false
         }
       },
-      "indexes": {
-        "events_site_id_idx": {
-          "name": "events_site_id_idx",
-          "columns": [
-            {
-              "expression": "site_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "events_region_id_idx": {
-          "name": "events_region_id_idx",
-          "columns": [
-            {
-              "expression": "region_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "events_operator_id_idx": {
-          "name": "events_operator_id_idx",
-          "columns": [
-            {
-              "expression": "operator_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "events_slug_idx": {
-          "name": "events_slug_idx",
-          "columns": [
-            {
-              "expression": "slug",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "events_status_idx": {
-          "name": "events_status_idx",
-          "columns": [
-            {
-              "expression": "status",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "events_date_start_idx": {
-          "name": "events_date_start_idx",
-          "columns": [
-            {
-              "expression": "date_start",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "events_site_id_sites_id_fk": {
           "name": "events_site_id_sites_id_fk",
@@ -2322,19 +1410,6 @@
           "tableTo": "regions",
           "columnsFrom": [
             "region_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        },
-        "events_operator_id_operators_id_fk": {
-          "name": "events_operator_id_operators_id_fk",
-          "tableFrom": "events",
-          "tableTo": "operators",
-          "columnsFrom": [
-            "operator_id"
           ],
           "columnsTo": [
             "id"
@@ -2505,53 +1580,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "guide_page_spots_guide_page_id_idx": {
-          "name": "guide_page_spots_guide_page_id_idx",
-          "columns": [
-            {
-              "expression": "guide_page_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "guide_page_spots_operator_id_idx": {
-          "name": "guide_page_spots_operator_id_idx",
-          "columns": [
-            {
-              "expression": "operator_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "guide_page_spots_activity_id_idx": {
-          "name": "guide_page_spots_activity_id_idx",
-          "columns": [
-            {
-              "expression": "activity_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "guide_page_spots_guide_page_id_guide_pages_id_fk": {
           "name": "guide_page_spots_guide_page_id_guide_pages_id_fk",
@@ -2826,98 +1855,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "guide_pages_site_id_idx": {
-          "name": "guide_pages_site_id_idx",
-          "columns": [
-            {
-              "expression": "site_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "guide_pages_region_id_idx": {
-          "name": "guide_pages_region_id_idx",
-          "columns": [
-            {
-              "expression": "region_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "guide_pages_activity_type_id_idx": {
-          "name": "guide_pages_activity_type_id_idx",
-          "columns": [
-            {
-              "expression": "activity_type_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "guide_pages_slug_idx": {
-          "name": "guide_pages_slug_idx",
-          "columns": [
-            {
-              "expression": "slug",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "guide_pages_url_path_idx": {
-          "name": "guide_pages_url_path_idx",
-          "columns": [
-            {
-              "expression": "url_path",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "guide_pages_content_status_idx": {
-          "name": "guide_pages_content_status_idx",
-          "columns": [
-            {
-              "expression": "content_status",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "guide_pages_site_id_sites_id_fk": {
           "name": "guide_pages_site_id_sites_id_fk",
@@ -3090,68 +2028,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "itineraries_site_id_idx": {
-          "name": "itineraries_site_id_idx",
-          "columns": [
-            {
-              "expression": "site_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "itineraries_region_id_idx": {
-          "name": "itineraries_region_id_idx",
-          "columns": [
-            {
-              "expression": "region_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "itineraries_slug_idx": {
-          "name": "itineraries_slug_idx",
-          "columns": [
-            {
-              "expression": "slug",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "itineraries_status_idx": {
-          "name": "itineraries_status_idx",
-          "columns": [
-            {
-              "expression": "status",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "itineraries_site_id_sites_id_fk": {
           "name": "itineraries_site_id_sites_id_fk",
@@ -3263,68 +2140,7 @@
           "notNull": false
         }
       },
-      "indexes": {
-        "itinerary_items_itinerary_id_idx": {
-          "name": "itinerary_items_itinerary_id_idx",
-          "columns": [
-            {
-              "expression": "itinerary_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "itinerary_items_activity_id_idx": {
-          "name": "itinerary_items_activity_id_idx",
-          "columns": [
-            {
-              "expression": "activity_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "itinerary_items_accommodation_id_idx": {
-          "name": "itinerary_items_accommodation_id_idx",
-          "columns": [
-            {
-              "expression": "accommodation_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "itinerary_items_location_id_idx": {
-          "name": "itinerary_items_location_id_idx",
-          "columns": [
-            {
-              "expression": "location_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "itinerary_items_itinerary_id_itineraries_id_fk": {
           "name": "itinerary_items_itinerary_id_itineraries_id_fk",
@@ -3493,19 +2309,6 @@
           "primaryKey": false,
           "notNull": false
         },
-        "is_generic": {
-          "name": "is_generic",
-          "type": "boolean",
-          "primaryKey": false,
-          "notNull": false,
-          "default": false
-        },
-        "icon": {
-          "name": "icon",
-          "type": "varchar(50)",
-          "primaryKey": false,
-          "notNull": false
-        },
         "wet_alt_title": {
           "name": "wet_alt_title",
           "type": "varchar(255)",
@@ -3630,104 +2433,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "itinerary_stops_itinerary_id_idx": {
-          "name": "itinerary_stops_itinerary_id_idx",
-          "columns": [
-            {
-              "expression": "itinerary_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "itinerary_stops_activity_id_idx": {
-          "name": "itinerary_stops_activity_id_idx",
-          "columns": [
-            {
-              "expression": "activity_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "itinerary_stops_accommodation_id_idx": {
-          "name": "itinerary_stops_accommodation_id_idx",
-          "columns": [
-            {
-              "expression": "accommodation_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "itinerary_stops_location_id_idx": {
-          "name": "itinerary_stops_location_id_idx",
-          "columns": [
-            {
-              "expression": "location_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "itinerary_stops_operator_id_idx": {
-          "name": "itinerary_stops_operator_id_idx",
-          "columns": [
-            {
-              "expression": "operator_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "itinerary_stops_day_order_idx": {
-          "name": "itinerary_stops_day_order_idx",
-          "columns": [
-            {
-              "expression": "day_number",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            },
-            {
-              "expression": "order_index",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "itinerary_stops_itinerary_id_itineraries_id_fk": {
           "name": "itinerary_stops_itinerary_id_itineraries_id_fk",
@@ -3857,38 +2563,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "itinerary_tags_itinerary_id_idx": {
-          "name": "itinerary_tags_itinerary_id_idx",
-          "columns": [
-            {
-              "expression": "itinerary_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "itinerary_tags_tag_id_idx": {
-          "name": "itinerary_tags_tag_id_idx",
-          "columns": [
-            {
-              "expression": "tag_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "itinerary_tags_itinerary_id_itineraries_id_fk": {
           "name": "itinerary_tags_itinerary_id_itineraries_id_fk",
@@ -3953,38 +2628,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "location_tags_location_id_idx": {
-          "name": "location_tags_location_id_idx",
-          "columns": [
-            {
-              "expression": "location_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "location_tags_tag_id_idx": {
-          "name": "location_tags_tag_id_idx",
-          "columns": [
-            {
-              "expression": "tag_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "location_tags_location_id_locations_id_fk": {
           "name": "location_tags_location_id_locations_id_fk",
@@ -4117,68 +2761,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "locations_site_id_idx": {
-          "name": "locations_site_id_idx",
-          "columns": [
-            {
-              "expression": "site_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "locations_region_id_idx": {
-          "name": "locations_region_id_idx",
-          "columns": [
-            {
-              "expression": "region_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "locations_slug_idx": {
-          "name": "locations_slug_idx",
-          "columns": [
-            {
-              "expression": "slug",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "locations_status_idx": {
-          "name": "locations_status_idx",
-          "columns": [
-            {
-              "expression": "status",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "locations_site_id_sites_id_fk": {
           "name": "locations_site_id_sites_id_fk",
@@ -4199,317 +2782,6 @@
           "tableTo": "regions",
           "columnsFrom": [
             "region_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "policies": {},
-      "checkConstraints": {},
-      "isRLSEnabled": false
-    },
-    "public.magic_links": {
-      "name": "magic_links",
-      "schema": "",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "email": {
-          "name": "email",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "token": {
-          "name": "token",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "operator_id": {
-          "name": "operator_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "purpose": {
-          "name": "purpose",
-          "type": "varchar(50)",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "'login'"
-        },
-        "used": {
-          "name": "used",
-          "type": "boolean",
-          "primaryKey": false,
-          "notNull": true,
-          "default": false
-        },
-        "expires_at": {
-          "name": "expires_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "created_at": {
-          "name": "created_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        }
-      },
-      "indexes": {
-        "magic_links_email_idx": {
-          "name": "magic_links_email_idx",
-          "columns": [
-            {
-              "expression": "email",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "magic_links_token_idx": {
-          "name": "magic_links_token_idx",
-          "columns": [
-            {
-              "expression": "token",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "magic_links_operator_id_idx": {
-          "name": "magic_links_operator_id_idx",
-          "columns": [
-            {
-              "expression": "operator_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
-      "foreignKeys": {
-        "magic_links_operator_id_operators_id_fk": {
-          "name": "magic_links_operator_id_operators_id_fk",
-          "tableFrom": "magic_links",
-          "tableTo": "operators",
-          "columnsFrom": [
-            "operator_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {
-        "magic_links_token_unique": {
-          "name": "magic_links_token_unique",
-          "nullsNotDistinct": false,
-          "columns": [
-            "token"
-          ]
-        }
-      },
-      "policies": {},
-      "checkConstraints": {},
-      "isRLSEnabled": false
-    },
-    "public.newsletter_subscribers": {
-      "name": "newsletter_subscribers",
-      "schema": "",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "email": {
-          "name": "email",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "subscribed_at": {
-          "name": "subscribed_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        },
-        "source": {
-          "name": "source",
-          "type": "varchar(50)",
-          "primaryKey": false,
-          "notNull": false,
-          "default": "'homepage'"
-        }
-      },
-      "indexes": {},
-      "foreignKeys": {},
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {
-        "newsletter_subscribers_email_unique": {
-          "name": "newsletter_subscribers_email_unique",
-          "nullsNotDistinct": false,
-          "columns": [
-            "email"
-          ]
-        }
-      },
-      "policies": {},
-      "checkConstraints": {},
-      "isRLSEnabled": false
-    },
-    "public.operator_claims": {
-      "name": "operator_claims",
-      "schema": "",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "operator_id": {
-          "name": "operator_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "claimant_name": {
-          "name": "claimant_name",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "claimant_email": {
-          "name": "claimant_email",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "claimant_role": {
-          "name": "claimant_role",
-          "type": "varchar(100)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "verification_method": {
-          "name": "verification_method",
-          "type": "varchar(50)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "claim_status": {
-          "name": "claim_status",
-          "type": "varchar(50)",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "'pending'"
-        },
-        "rejection_reason": {
-          "name": "rejection_reason",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "ip_address": {
-          "name": "ip_address",
-          "type": "varchar(45)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "created_at": {
-          "name": "created_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        },
-        "verified_at": {
-          "name": "verified_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "expires_at": {
-          "name": "expires_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        }
-      },
-      "indexes": {
-        "operator_claims_operator_id_idx": {
-          "name": "operator_claims_operator_id_idx",
-          "columns": [
-            {
-              "expression": "operator_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "operator_claims_status_idx": {
-          "name": "operator_claims_status_idx",
-          "columns": [
-            {
-              "expression": "claim_status",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
-      "foreignKeys": {
-        "operator_claims_operator_id_operators_id_fk": {
-          "name": "operator_claims_operator_id_operators_id_fk",
-          "tableFrom": "operator_claims",
-          "tableTo": "operators",
-          "columnsFrom": [
-            "operator_id"
           ],
           "columnsTo": [
             "id"
@@ -4642,129 +2914,11 @@
           "default": "'draft'"
         }
       },
-      "indexes": {
-        "operator_offers_operator_id_idx": {
-          "name": "operator_offers_operator_id_idx",
-          "columns": [
-            {
-              "expression": "operator_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "operator_offers_operator_id_operators_id_fk": {
           "name": "operator_offers_operator_id_operators_id_fk",
           "tableFrom": "operator_offers",
-          "tableTo": "operators",
-          "columnsFrom": [
-            "operator_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "policies": {},
-      "checkConstraints": {},
-      "isRLSEnabled": false
-    },
-    "public.operator_sessions": {
-      "name": "operator_sessions",
-      "schema": "",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "operator_id": {
-          "name": "operator_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "email": {
-          "name": "email",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "name": {
-          "name": "name",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "role": {
-          "name": "role",
-          "type": "varchar(100)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "last_login_at": {
-          "name": "last_login_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        },
-        "created_at": {
-          "name": "created_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        }
-      },
-      "indexes": {
-        "operator_sessions_operator_id_idx": {
-          "name": "operator_sessions_operator_id_idx",
-          "columns": [
-            {
-              "expression": "operator_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "operator_sessions_email_idx": {
-          "name": "operator_sessions_email_idx",
-          "columns": [
-            {
-              "expression": "email",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
-      "foreignKeys": {
-        "operator_sessions_operator_id_operators_id_fk": {
-          "name": "operator_sessions_operator_id_operators_id_fk",
-          "tableFrom": "operator_sessions",
           "tableTo": "operators",
           "columnsFrom": [
             "operator_id"
@@ -4797,12 +2951,6 @@
           "type": "integer",
           "primaryKey": false,
           "notNull": true
-        },
-        "account_id": {
-          "name": "account_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false
         },
         "name": {
           "name": "name",
@@ -4921,14 +3069,6 @@
           "primaryKey": false,
           "notNull": false
         },
-        "status": {
-          "name": "status",
-          "type": "status",
-          "typeSchema": "public",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "'draft'"
-        },
         "claim_status": {
           "name": "claim_status",
           "type": "claim_status",
@@ -4946,25 +3086,6 @@
         "claimed_at": {
           "name": "claimed_at",
           "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "data_source": {
-          "name": "data_source",
-          "type": "varchar(50)",
-          "primaryKey": false,
-          "notNull": false,
-          "default": "'manual'"
-        },
-        "last_verified_at": {
-          "name": "last_verified_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "google_place_id": {
-          "name": "google_place_id",
-          "type": "varchar(255)",
           "primaryKey": false,
           "notNull": false
         },
@@ -5024,141 +3145,6 @@
           "primaryKey": false,
           "notNull": false
         },
-        "stripe_customer_id": {
-          "name": "stripe_customer_id",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "stripe_subscription_id": {
-          "name": "stripe_subscription_id",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "stripe_subscription_status": {
-          "name": "stripe_subscription_status",
-          "type": "varchar(50)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "billing_tier": {
-          "name": "billing_tier",
-          "type": "varchar(50)",
-          "primaryKey": false,
-          "notNull": false,
-          "default": "'free'"
-        },
-        "billing_email": {
-          "name": "billing_email",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "billing_period_end": {
-          "name": "billing_period_end",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "billing_custom_amount": {
-          "name": "billing_custom_amount",
-          "type": "numeric(10, 2)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "billing_notes": {
-          "name": "billing_notes",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "group_friendly": {
-          "name": "group_friendly",
-          "type": "boolean",
-          "primaryKey": false,
-          "notNull": false,
-          "default": false
-        },
-        "group_min_size": {
-          "name": "group_min_size",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "group_max_size": {
-          "name": "group_max_size",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "group_price_from": {
-          "name": "group_price_from",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "stag_hen_packages": {
-          "name": "stag_hen_packages",
-          "type": "boolean",
-          "primaryKey": false,
-          "notNull": false,
-          "default": false
-        },
-        "youtube_video_id": {
-          "name": "youtube_video_id",
-          "type": "varchar(20)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "admin_notes": {
-          "name": "admin_notes",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "verified_at": {
-          "name": "verified_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "verified_by_email": {
-          "name": "verified_by_email",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "trial_tier": {
-          "name": "trial_tier",
-          "type": "varchar(50)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "trial_started_at": {
-          "name": "trial_started_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "trial_expires_at": {
-          "name": "trial_expires_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "trial_converted_at": {
-          "name": "trial_converted_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "trial_source": {
-          "name": "trial_source",
-          "type": "varchar(100)",
-          "primaryKey": false,
-          "notNull": false
-        },
         "created_at": {
           "name": "created_at",
           "type": "timestamp",
@@ -5174,98 +3160,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "operators_site_id_idx": {
-          "name": "operators_site_id_idx",
-          "columns": [
-            {
-              "expression": "site_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "operators_account_id_idx": {
-          "name": "operators_account_id_idx",
-          "columns": [
-            {
-              "expression": "account_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "operators_slug_idx": {
-          "name": "operators_slug_idx",
-          "columns": [
-            {
-              "expression": "slug",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "operators_claim_status_idx": {
-          "name": "operators_claim_status_idx",
-          "columns": [
-            {
-              "expression": "claim_status",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "operators_category_idx": {
-          "name": "operators_category_idx",
-          "columns": [
-            {
-              "expression": "category",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "operators_status_idx": {
-          "name": "operators_status_idx",
-          "columns": [
-            {
-              "expression": "status",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "operators_site_id_sites_id_fk": {
           "name": "operators_site_id_sites_id_fk",
@@ -5279,269 +3174,10 @@
           ],
           "onDelete": "no action",
           "onUpdate": "no action"
-        },
-        "operators_account_id_advertiser_accounts_id_fk": {
-          "name": "operators_account_id_advertiser_accounts_id_fk",
-          "tableFrom": "operators",
-          "tableTo": "advertiser_accounts",
-          "columnsFrom": [
-            "account_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
         }
       },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
-      "policies": {},
-      "checkConstraints": {},
-      "isRLSEnabled": false
-    },
-    "public.outreach_campaigns": {
-      "name": "outreach_campaigns",
-      "schema": "",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "site_id": {
-          "name": "site_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "name": {
-          "name": "name",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "slug": {
-          "name": "slug",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "subject": {
-          "name": "subject",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "body_template": {
-          "name": "body_template",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "status": {
-          "name": "status",
-          "type": "varchar(50)",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "'draft'"
-        },
-        "sent_count": {
-          "name": "sent_count",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "default": 0
-        },
-        "opened_count": {
-          "name": "opened_count",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "default": 0
-        },
-        "clicked_count": {
-          "name": "clicked_count",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "default": 0
-        },
-        "claimed_count": {
-          "name": "claimed_count",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "default": 0
-        },
-        "created_at": {
-          "name": "created_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        },
-        "sent_at": {
-          "name": "sent_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        }
-      },
-      "indexes": {},
-      "foreignKeys": {
-        "outreach_campaigns_site_id_sites_id_fk": {
-          "name": "outreach_campaigns_site_id_sites_id_fk",
-          "tableFrom": "outreach_campaigns",
-          "tableTo": "sites",
-          "columnsFrom": [
-            "site_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "policies": {},
-      "checkConstraints": {},
-      "isRLSEnabled": false
-    },
-    "public.outreach_recipients": {
-      "name": "outreach_recipients",
-      "schema": "",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "campaign_id": {
-          "name": "campaign_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "operator_id": {
-          "name": "operator_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "email": {
-          "name": "email",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "status": {
-          "name": "status",
-          "type": "varchar(50)",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "'pending'"
-        },
-        "sent_at": {
-          "name": "sent_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "opened_at": {
-          "name": "opened_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "clicked_at": {
-          "name": "clicked_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "claimed_at": {
-          "name": "claimed_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        }
-      },
-      "indexes": {
-        "outreach_recipients_campaign_id_idx": {
-          "name": "outreach_recipients_campaign_id_idx",
-          "columns": [
-            {
-              "expression": "campaign_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "outreach_recipients_operator_id_idx": {
-          "name": "outreach_recipients_operator_id_idx",
-          "columns": [
-            {
-              "expression": "operator_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
-      "foreignKeys": {
-        "outreach_recipients_campaign_id_outreach_campaigns_id_fk": {
-          "name": "outreach_recipients_campaign_id_outreach_campaigns_id_fk",
-          "tableFrom": "outreach_recipients",
-          "tableTo": "outreach_campaigns",
-          "columnsFrom": [
-            "campaign_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        },
-        "outreach_recipients_operator_id_operators_id_fk": {
-          "name": "outreach_recipients_operator_id_operators_id_fk",
-          "tableFrom": "outreach_recipients",
-          "tableTo": "operators",
-          "columnsFrom": [
-            "operator_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {
-        "outreach_unique_recipient": {
-          "name": "outreach_unique_recipient",
-          "nullsNotDistinct": false,
-          "columns": [
-            "campaign_id",
-            "operator_id"
-          ]
-        }
-      },
       "policies": {},
       "checkConstraints": {},
       "isRLSEnabled": false
@@ -5737,153 +3373,6 @@
       "checkConstraints": {},
       "isRLSEnabled": false
     },
-    "public.page_views": {
-      "name": "page_views",
-      "schema": "",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "site_id": {
-          "name": "site_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "page_type": {
-          "name": "page_type",
-          "type": "varchar(50)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "page_slug": {
-          "name": "page_slug",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "operator_id": {
-          "name": "operator_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "view_date": {
-          "name": "view_date",
-          "type": "date",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "view_count": {
-          "name": "view_count",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true,
-          "default": 0
-        },
-        "unique_visitors": {
-          "name": "unique_visitors",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true,
-          "default": 0
-        }
-      },
-      "indexes": {
-        "page_views_operator_id_idx": {
-          "name": "page_views_operator_id_idx",
-          "columns": [
-            {
-              "expression": "operator_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "page_views_page_slug_idx": {
-          "name": "page_views_page_slug_idx",
-          "columns": [
-            {
-              "expression": "page_slug",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "page_views_date_idx": {
-          "name": "page_views_date_idx",
-          "columns": [
-            {
-              "expression": "view_date",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
-      "foreignKeys": {
-        "page_views_site_id_sites_id_fk": {
-          "name": "page_views_site_id_sites_id_fk",
-          "tableFrom": "page_views",
-          "tableTo": "sites",
-          "columnsFrom": [
-            "site_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        },
-        "page_views_operator_id_operators_id_fk": {
-          "name": "page_views_operator_id_operators_id_fk",
-          "tableFrom": "page_views",
-          "tableTo": "operators",
-          "columnsFrom": [
-            "operator_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {
-        "page_views_unique": {
-          "name": "page_views_unique",
-          "nullsNotDistinct": false,
-          "columns": [
-            "site_id",
-            "page_type",
-            "page_slug",
-            "view_date"
-          ]
-        }
-      },
-      "policies": {},
-      "checkConstraints": {},
-      "isRLSEnabled": false
-    },
     "public.post_tags": {
       "name": "post_tags",
       "schema": "",
@@ -5914,38 +3403,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "post_tags_post_id_idx": {
-          "name": "post_tags_post_id_idx",
-          "columns": [
-            {
-              "expression": "post_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "post_tags_tag_id_idx": {
-          "name": "post_tags_tag_id_idx",
-          "columns": [
-            {
-              "expression": "tag_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "post_tags_post_id_posts_id_fk": {
           "name": "post_tags_post_id_posts_id_fk",
@@ -6086,98 +3544,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "posts_site_id_idx": {
-          "name": "posts_site_id_idx",
-          "columns": [
-            {
-              "expression": "site_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "posts_slug_idx": {
-          "name": "posts_slug_idx",
-          "columns": [
-            {
-              "expression": "slug",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "posts_category_idx": {
-          "name": "posts_category_idx",
-          "columns": [
-            {
-              "expression": "category",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "posts_region_id_idx": {
-          "name": "posts_region_id_idx",
-          "columns": [
-            {
-              "expression": "region_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "posts_activity_type_id_idx": {
-          "name": "posts_activity_type_id_idx",
-          "columns": [
-            {
-              "expression": "activity_type_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "posts_status_idx": {
-          "name": "posts_status_idx",
-          "columns": [
-            {
-              "expression": "status",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "posts_site_id_sites_id_fk": {
           "name": "posts_site_id_sites_id_fk",
@@ -6313,53 +3680,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "regions_site_id_idx": {
-          "name": "regions_site_id_idx",
-          "columns": [
-            {
-              "expression": "site_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "regions_slug_idx": {
-          "name": "regions_slug_idx",
-          "columns": [
-            {
-              "expression": "slug",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "regions_status_idx": {
-          "name": "regions_status_idx",
-          "columns": [
-            {
-              "expression": "status",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "regions_site_id_sites_id_fk": {
           "name": "regions_site_id_sites_id_fk",
@@ -6709,53 +4030,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "tags_site_id_idx": {
-          "name": "tags_site_id_idx",
-          "columns": [
-            {
-              "expression": "site_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "tags_slug_idx": {
-          "name": "tags_slug_idx",
-          "columns": [
-            {
-              "expression": "slug",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "tags_type_idx": {
-          "name": "tags_type_idx",
-          "columns": [
-            {
-              "expression": "type",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "tags_site_id_sites_id_fk": {
           "name": "tags_site_id_sites_id_fk",
@@ -6873,38 +4148,7 @@
           "default": "now()"
         }
       },
-      "indexes": {
-        "transport_site_id_idx": {
-          "name": "transport_site_id_idx",
-          "columns": [
-            {
-              "expression": "site_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        },
-        "transport_region_id_idx": {
-          "name": "transport_region_id_idx",
-          "columns": [
-            {
-              "expression": "region_id",
-              "isExpression": false,
-              "asc": true,
-              "nulls": "last"
-            }
-          ],
-          "isUnique": false,
-          "concurrently": false,
-          "method": "btree",
-          "with": {}
-        }
-      },
+      "indexes": {},
       "foreignKeys": {
         "transport_site_id_sites_id_fk": {
           "name": "transport_site_id_sites_id_fk",
@@ -6935,129 +4179,6 @@
       },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
-      "policies": {},
-      "checkConstraints": {},
-      "isRLSEnabled": false
-    },
-    "public.user_favourites": {
-      "name": "user_favourites",
-      "schema": "",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "user_id": {
-          "name": "user_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "favourite_type": {
-          "name": "favourite_type",
-          "type": "varchar(50)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "favourite_id": {
-          "name": "favourite_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "created_at": {
-          "name": "created_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        }
-      },
-      "indexes": {},
-      "foreignKeys": {
-        "user_favourites_user_id_users_id_fk": {
-          "name": "user_favourites_user_id_users_id_fk",
-          "tableFrom": "user_favourites",
-          "tableTo": "users",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "policies": {},
-      "checkConstraints": {},
-      "isRLSEnabled": false
-    },
-    "public.users": {
-      "name": "users",
-      "schema": "",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "email": {
-          "name": "email",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "name": {
-          "name": "name",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "region_preference": {
-          "name": "region_preference",
-          "type": "varchar(100)",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "newsletter_opt_in": {
-          "name": "newsletter_opt_in",
-          "type": "boolean",
-          "primaryKey": false,
-          "notNull": false,
-          "default": false
-        },
-        "last_login_at": {
-          "name": "last_login_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "created_at": {
-          "name": "created_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        }
-      },
-      "indexes": {},
-      "foreignKeys": {},
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {
-        "users_email_unique": {
-          "name": "users_email_unique",
-          "nullsNotDistinct": false,
-          "columns": [
-            "email"
-          ]
-        }
-      },
       "policies": {},
       "checkConstraints": {},
       "isRLSEnabled": false
@@ -7153,8 +4274,7 @@
         "seasonal",
         "news",
         "trip-report",
-        "spotlight",
-        "opinion"
+        "spotlight"
       ]
     },
     "public.status": {

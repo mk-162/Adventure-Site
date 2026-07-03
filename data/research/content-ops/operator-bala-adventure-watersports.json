@@ -1,0 +1,64 @@
+{
+  "_meta": {
+    "slug": "bala-adventure-watersports",
+    "route": "/directory/bala-adventure-watersports",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "published",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own website (balawatersports.com), which matches phone number and activity list found independently via web search, plus corroboration from Visit Wales, Visit Snowdonia, and TripAdvisor listings all describing the same business at Bala Lake Foreshore, Bala, Gwynedd.",
+    "redFlags": [
+      "Google/aggregator rating (4.09 from ~930 reviews, via reviewbritain.com) could not be independently confirmed on the primary review platform page content, so it was NOT used — googleRating and reviewCount are set to null pending direct verification.",
+      "Contact email found via general search (balawatersports@gmail.com) differs from the email listed on the operator's own current website footer (hello@balawatersports.com); the latter (own site) was used as authoritative."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Bala Adventure & Watersports Centre",
+    "slug": "bala-adventure-watersports",
+    "website": "https://www.balawatersports.com/",
+    "tagline": "Family-run watersports and adventure activities on Llyn Tegid, Wales' largest natural lake",
+    "description": "Bala Adventure & Watersports Centre is a family-run outdoor activity centre based on the foreshore of Llyn Tegid (Bala Lake), the largest natural lake in Wales, within the Eryri (Snowdonia) National Park. The centre offers tuition, courses, and equipment hire in canoeing/kayaking, stand up paddleboarding (including SUP yoga), sailing, windsurfing, and powerboating on the lake, alongside land-based activities such as climbing and abseiling, gorge walking, mountain biking, archery, camp craft, raft building, hill walking, and white water rafting arranged off-site. It is an RYA Training Centre and holds an Adventure Activities Licensing Authority (AALA) licence, running sessions for individuals, families, schools, and corporate groups.\n\nEquipment (kayaks, canoes, SUP boards, sailing dinghies and windsurfers) can be hired by the hour directly from the lake foreshore, and a paying-machine permit from Snowdonia National Park (Eryri) is required separately for any independent watercraft use on the lake. Half-day and full-day taster courses are available, with a minimum age of 8 for kayaking/canoeing activities.",
+    "uniqueSellingPoint": "One of the longest-established watersports operators directly on Bala Lake's foreshore, combining RYA-accredited sailing/watersports tuition with AALA-licensed land-based adventure activities under one family-run business.",
+    "contact": {
+      "phone": "01678 521615",
+      "email": "hello@balawatersports.com",
+      "address": "Bala Lake Foreshore, Bala, Gwynedd, LL23 7SR, United Kingdom"
+    },
+    "lat": 52.9063,
+    "lng": -3.6052,
+    "priceRange": "£16/hr equipment hire; from £63.25 (half-day kayaking/canoeing) to £115+ (full-day courses)",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": [
+      "kayaking",
+      "canoeing",
+      "paddleboarding",
+      "sailing",
+      "windsurfing",
+      "powerboating",
+      "climbing",
+      "abseiling",
+      "gorge-walking",
+      "mountain-biking",
+      "archery",
+      "raft-building",
+      "white-water-rafting",
+      "hill-walking"
+    ],
+    "regions": ["snowdonia"],
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g672155-d2547794-Reviews-Bala_Adventure_and_Watersports-Bala_Snowdonia_Eryri_National_Park_North_Wales_Wal.html"
+  },
+  "fieldSources": {
+    "name": "https://www.balawatersports.com/ — homepage title and logo confirm exact business name.",
+    "website": "https://www.balawatersports.com/ — operator's own domain, found via direct web search.",
+    "contact.phone": "https://www.balawatersports.com/boat-hire/ — tel link '01678 521615'; matches number independently surfaced in general web search results for the business.",
+    "contact.email": "https://www.balawatersports.com/adventure-activities-watersports/ (site footer) — 'hello@balawatersports.com' shown in footer of activities page.",
+    "contact.address": "https://www.balawatersports.com/adventure-activities-watersports/ (site footer) — 'Bala Lake Foreshore, Bala, Gwynedd, LL23 7SR, United Kingdom'.",
+    "lat/lng": "Derived from LL23 7SR postcode centroid via public postcode lookup (geopunk.co.uk / nowmsg.com), approx. 52.9063, -3.6052 — Bala Lake foreshore area; not an exact building geocode.",
+    "activityTypes": "https://www.balawatersports.com/adventure-activities-watersports/ — page headings list kayaking & canoeing, climbing & abseiling, mountain biking, gorge walking, windsurfing, raft building, sailing, powerboating, whitewater rafting, stand up paddleboarding, SUP yoga.",
+    "priceRange": "https://www.balawatersports.com/adventure-activities-watersports/canoeing-kayaking/ — 'from £63.25' (half day), 'from £115.00' (full day); £16/hr SUP hire figure corroborated via havefunoutdoors.co.uk third-party mention found in search.",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g672155-d2547794-Reviews-Bala_Adventure_and_Watersports-Bala_Snowdonia_Eryri_National_Park_North_Wales_Wal.html — matching business name, location (Bala, Snowdonia/Eryri National Park), ~142 reviews, ranked #3 of 8 Outdoor Activities in Bala.",
+    "googleRating/reviewCount": "Not directly verifiable from a primary source page during research (an aggregator, reviewbritain.com, surfaced a figure of 4.09/930 reviews in a search snippet but this could not be confirmed on the fetched page content), so left null per spec rule against inventing ratings.",
+    "regions": "Confirmed Snowdonia/Eryri National Park location via https://www.visitsnowdonia.info/bala-adventure-and-watersports and https://www.tripadvisor.com/Attraction_Review-g672155-d2547794-... listing (Bala, Snowdonia Eryri National Park, North Wales)."
+  }
+}

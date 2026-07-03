@@ -618,6 +618,10 @@ export const operators = pgTable("operators", {
   tripadvisorUrl: text("tripadvisor_url"),
   priceRange: varchar("price_range", { length: 10 }),
   uniqueSellingPoint: text("unique_selling_point"),
+  // Publish gate: mirrors every other content type. Defaults to 'draft' so a
+  // listing is never publicly reachable/indexable until deliberately promoted
+  // to 'published' after accuracy verification (real-business legal risk).
+  status: statusEnum("status").default("draft").notNull(),
   claimStatus: claimStatusEnum("claim_status").default("stub").notNull(),
   claimedByEmail: varchar("claimed_by_email", { length: 255 }),
   claimedAt: timestamp("claimed_at"),
@@ -667,6 +671,7 @@ export const operators = pgTable("operators", {
   index("operators_slug_idx").on(table.slug),
   index("operators_claim_status_idx").on(table.claimStatus),
   index("operators_category_idx").on(table.category),
+  index("operators_status_idx").on(table.status),
 ]);
 
 // Partner offers/promotions

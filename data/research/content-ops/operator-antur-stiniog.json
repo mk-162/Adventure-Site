@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "slug": "antur-stiniog",
+    "route": "/directory/antur-stiniog",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own website (anturstiniog.com) matching name, location (Llechwedd Slate Caverns, Blaenau Ffestiniog), phone number, and social-enterprise/uplift MTB positioning; corroborated by TripAdvisor listing (g674812-d7207052) with matching location and activity description.",
+    "redFlags": [
+      "Seed email info@anturstiniog.com is incorrect — operator's own contact page lists post@anturstiniog.com",
+      "Seed 'Google ~4.5/5 (500+)' could not be independently verified — no accessible Google Business Profile data found via web search; only TripAdvisor rating (4.8/5, 93 reviews) was confirmable, so googleRating/reviewCount set to null rather than guessed"
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Antur Stiniog",
+    "slug": "antur-stiniog",
+    "website": "https://www.anturstiniog.com",
+    "tagline": "Community-run downhill MTB uplift centre with 14 gravity trails in the Blaenau Ffestiniog slate hills",
+    "description": "Antur Stiniog is a not-for-profit social enterprise, founded in 2007, running a downhill mountain bike uplift centre on the slopes above the former Llechwedd Slate Caverns in Blaenau Ffestiniog, Eryri (Snowdonia). It offers a van-based uplift service (widely regarded as one of the best in the UK) giving riders access to 14 gravity-fed trails cut through slate quarry terrain, ranging from beginner-friendly blues to advanced reds and blacks, with up to 20 runs possible in a day.\n\nOn-site facilities include bike hire (Saracen downhill bikes), a bike shop, bike wash and showers, a kids' club, and the Ty Coffi Antur 'Stiniog cafe (independently rated 4.8/5 on TripAdvisor). As a social enterprise, profits are reinvested in the local community and in environmental partnerships, including woodland restoration work with Y Dref Werdd.\n\nThe centre is a fixture of the UK downhill MTB scene, drawing repeat visitors for its distinctive rock-and-shale trail character and fast, reliable uplift turnaround.",
+    "uniqueSellingPoint": "Community-owned social enterprise MTB uplift centre widely cited as running the best downhill uplift service in the UK, set on former slate quarry terrain unique to North Wales.",
+    "contact": {
+      "phone": "01766 238 007",
+      "email": "post@anturstiniog.com",
+      "address": "Antur 'Stiniog Mountain Bike Centre, Llechwedd Slate Caverns, Blaenau Ffestiniog, Gwynedd, LL41 3NB"
+    },
+    "lat": null,
+    "lng": null,
+    "priceRange": "Mid-Range",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["Downhill Mountain Biking", "Bike Hire"],
+    "regions": ["snowdonia"],
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g674812-d7207052-Reviews-Antur_Stiniog-Blaenau_Ffestiniog_Snowdonia_Eryri_National_Park_North_Wales_Wales.html"
+  },
+  "fieldSources": {
+    "website": "https://www.anturstiniog.com — official site, confirmed live and matches business name",
+    "phone": "https://www.anturstiniog.com/contact — listed as 01766 238 007, matches seed",
+    "email": "https://www.anturstiniog.com/contact — listed as post@anturstiniog.com (seed's info@anturstiniog.com not found on site)",
+    "address": "https://www.anturstiniog.com/contact — full postal address on operator's contact page",
+    "description/uniqueSellingPoint": "https://www.anturstiniog.com — homepage/about content describing 2007 founding, not-for-profit social enterprise status, uplift service, 14 trails, Y Dref Werdd partnership",
+    "activityTypes": "https://www.anturstiniog.com/mountain-bike-uplift-wales and https://www.anturstiniog.com/mountain-bike-hire-wales — dedicated uplift and bike hire pages",
+    "tripadvisorUrl and rating context": "https://www.tripadvisor.com/Attraction_Review-g674812-d7207052-Reviews-Antur_Stiniog-Blaenau_Ffestiniog_Snowdonia_Eryri_National_Park_North_Wales_Wales.html — 4.8/5 from 93 reviews, Travelers' Choice, #3 of 12 things to do in Blaenau Ffestiniog",
+    "regions": "Blaenau Ffestiniog is within the Eryri (Snowdonia) National Park boundary per operator's own address and site copy"
+  }
+}

@@ -20,8 +20,16 @@ export async function getOperators(options?: {
   lat?: number;
   lng?: number;
   maxDistanceKm?: number;
+  /** Admin-only escape hatch. Public callers must leave this false so only
+   *  status='published' operators are ever returned (real-business gate). */
+  includeUnpublished?: boolean;
 }) {
   const conditions = [];
+
+  // Hard publish gate: hide anything not published unless an admin opts in.
+  if (!options?.includeUnpublished) {
+    conditions.push(eq(operators.status, "published"));
+  }
   const hasGeo = typeof options?.lat === "number" && typeof options?.lng === "number";
   const distanceExpression = hasGeo
     ? sql<number>`(6371 * acos(
@@ -65,14 +73,6 @@ export async function getOperators(options?: {
     `);
   }
 
-  // Count query
-  const countResult = await db
-    .select({ count: sql<number>`count(*)` })
-    .from(operators)
-    .where(and(...conditions));
-
-  const total = Number(countResult[0]?.count || 0);
-
   let query = db
     .select()
     .from(operators);
@@ -103,22 +103,40 @@ export async function getOperators(options?: {
     query = query.offset(options.offset) as typeof query;
   }
 
-  const result = await query;
+  // Count + data are independent — run in parallel.
+  const [countResult, result] = await Promise.all([
+    conditions.length > 0
+      ? db.select({ count: sql<number>`count(*)` }).from(operators).where(and(...conditions))
+      : db.select({ count: sql<number>`count(*)` }).from(operators),
+    query,
+  ]);
+
+  const total = Number(countResult[0]?.count || 0);
 
   return { operators: result, total };
 }
 
-export async function getOperatorBySlug(slug: string) {
+export async function getOperatorBySlug(
+  slug: string,
+  options?: { includeUnpublished?: boolean }
+) {
+  const conditions = [eq(operators.slug, slug)];
+  if (!options?.includeUnpublished) {
+    conditions.push(eq(operators.status, "published"));
+  }
   const result = await db
     .select()
     .from(operators)
-    .where(eq(operators.slug, slug))
+    .where(and(...conditions))
     .limit(1);
   return result[0] || null;
 }
 
-export async function getOperatorWithActivities(slug: string) {
-  const operator = await getOperatorBySlug(slug);
+export async function getOperatorWithActivities(
+  slug: string,
+  options?: { includeUnpublished?: boolean }
+) {
+  const operator = await getOperatorBySlug(slug, options);
   if (!operator) return null;
 
   const operatorActivities = await getActivities({ operatorId: operator.id });

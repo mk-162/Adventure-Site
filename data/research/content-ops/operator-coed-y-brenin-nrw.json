@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "slug": "coed-y-brenin-nrw",
+    "route": "/directory/coed-y-brenin-nrw",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via Natural Resources Wales' own site (naturalresources.wales/days-out/places-to-visit/north-west-wales/coed-y-brenin-visitor-centre), corroborated by Beics Brenin (on-site bike shop/hire operator, beicsbrenin.co.uk/visitor-centre) and TripAdvisor listings for both 'Coed y Brenin Forest Park' (d295831) and 'Coed y Brenin Visitor Centre' (d295827).",
+    "redFlags": [
+      "Seed contact details (phone 0300 065 3000, email enquiries@naturalresourceswales.gov.uk) are NRW's generic national Customer Hub, not site-specific — NRW's own page confirms 'there are no staff at this location'.",
+      "The visitor centre café and information desk were permanently CLOSED by NRW on 31 March 2025; only toilets remain plus the independently-run Beics Brenin bike shop/hire (which has its own separate phone number, 01341 440728, not affiliated to NRW's contact channel).",
+      "Site is an unstaffed, self-service forest park with paid parking (not free) — 'price Budget (parking only)' in the seed is directionally correct but parking is tiered/metered, not a flat small fee.",
+      "This is a government-run public amenity, not a bookable commercial operator: no claim/booking flow applies; content should read as a venue listing, and CTAs should point to the NRW parking/visitor page and Beics Brenin (for bike hire) rather than an enquiry form."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Coed y Brenin Forest Park",
+    "slug": "coed-y-brenin-nrw",
+    "website": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/coed-y-brenin-visitor-centre/?lang=en",
+    "tagline": "Britain's first purpose-built mountain bike centre, in a 9,000-acre Snowdonia forest",
+    "description": "Coed y Brenin Forest Park, near Dolgellau, is a 9,000-acre Natural Resources Wales forest park in southern Snowdonia and the UK's first purpose-built mountain biking centre. It offers a graded network of MTB trails alongside gravel-bike routes, waymarked walking and running trails, orienteering, geocaching, and an off-road mobility-scooter route, set among waterfalls and mixed forest along the Afon Mawddach and Afon Wen.\n\nThe site is a Natural Resources Wales public amenity rather than a commercial tour operator: it is unstaffed, with no on-site NRW information desk or first aid provision. NRW's visitor centre café and information point permanently closed on 31 March 2025. Beics Brenin, an independent bike shop and hire centre, continues to operate on site daily (9am-5pm), and the trail network and toilets remain open and maintained.\n\nParking is paid and tiered (free for the first 30 minutes, rising to £12 for a full day), with an annual season ticket available; Blue Badge holders park free. As a public forest park there is no booking or claim process — visitors turn up and pay for parking on arrival, and bike hire is arranged separately and directly with Beics Brenin.",
+    "uniqueSellingPoint": "The original, most established purpose-built MTB trail centre in the UK, with a graded trail network for all abilities inside a working Snowdonia forest.",
+    "contact": {
+      "phone": "0300 065 3000",
+      "email": "enquiries@naturalresourceswales.gov.uk",
+      "address": "Coed y Brenin Visitor Centre, Dolgefeiliau, Dolgellau, Gwynedd, LL40 2HZ"
+    },
+    "lat": 52.7842,
+    "lng": -3.9231,
+    "priceRange": "Budget (parking only; up to £12/day, free first 30 min)",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["Mountain Biking", "Walking", "Trail Running"],
+    "regions": ["snowdonia"],
+    "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g552002-d295831-Reviews-Coed_y_Brenin_Forest_Park-Ganllwyd_Gwynedd_North_Wales_Wales.html"
+  },
+  "fieldSources": {
+    "website": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/coed-y-brenin-visitor-centre/?lang=en - NRW's own listing for the site, confirms name, address, activities, and unstaffed status.",
+    "phone/email": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/coed-y-brenin-visitor-centre/?lang=en - confirms these are NRW's national Customer Hub contact channels ('There are no staff at this location'); site-specific alternative for bike hire is Beics Brenin at 01341 440728 per https://www.beicsbrenin.co.uk/visitor-centre/.",
+    "address": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/coed-y-brenin-visitor-centre/?lang=en - 'Coed y Brenin Visitor Centre, Dolgefeiliau, Dolgellau LL40 2HZ'.",
+    "cafe/centre closure": "https://www.beicsbrenin.co.uk/visitor-centre/ - 'On 31.3.25 Coed y Brenin's Cafe and information desk is now CLOSED'; NRW page corroborates 'The café and shop are no longer operating'.",
+    "parking prices": "https://www.beicsbrenin.co.uk/visitor-centre/ and https://naturalresources.wales/days-out/places-to-visit/north-west-wales/coed-y-brenin-visitor-centre/?lang=en - tiered parking free up to 30 min, £1/£3/£7/£12 by duration, £40 annual season ticket, free for Blue Badge holders.",
+    "activities": "https://naturalresources.wales/days-out/places-to-visit/north-west-wales/coed-y-brenin-visitor-centre/?lang=en - lists MTB, gravel biking, walking, running, orienteering, geocaching, off-road mobility scooter trails.",
+    "UK's first MTB centre / trail history": "https://en.wikipedia.org/wiki/Coed-y-Brenin and https://www.mbwales.com/agents/coed-y-brenin/ - describe it as Britain's first purpose-built mountain bike trail centre.",
+    "tripadvisorUrl / rating": "https://www.tripadvisor.co.uk/Attraction_Review-g552002-d295831-Reviews-Coed_y_Brenin_Forest_Park-Ganllwyd_Gwynedd_North_Wales_Wales.html - 4.6/5 from 324 reviews, Travellers' Choice, #1 of 4 things to do in Ganllwyd (used as tripadvisorUrl; not used as googleRating since it is not a Google rating).",
+    "googleRating": "Not sourced to a verifiable, citable page during this research pass (a search snippet asserted 4.6/2,985 without a fetchable source URL) — left null per spec rather than invented.",
+    "lat/lng": "Approximate coordinates for Coed y Brenin Visitor Centre, Ganllwyd, near Dolgellau (LL40 2HZ), based on the postcode's known location in southern Snowdonia; not independently geocoded via a mapping API in this pass."
+  }
+}

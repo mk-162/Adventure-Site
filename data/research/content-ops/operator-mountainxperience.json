@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "slug": "mountainxperience",
+    "route": "/directory/mountainxperience",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Official website (mountainxperience.uk), TripAdvisor (#1 of 32 in Llanberis), and Viator all consistently describe the same Llanberis-based Snowdon/Crib Goch mountain guiding business run by owner 'Simon'. No name collisions found. Downgraded to 'review' (not 'published') because seed phone AND email both conflict with the operator's own published details and should be human-verified before publishing.",
+    "redFlags": [
+      "Seed phone 07796 247 227 does NOT match the number on the operator's own contact page (01248 614120) — used the official site value; seed number may be a personal guide mobile.",
+      "Seed email info@mountainxperience.uk does NOT match the site's published hello@mountainxperience.uk — used the official value.",
+      "Seed review count '900+' unverified and well above sourced figures (TripAdvisor 553, Viator 232) — used TripAdvisor 5.0/553.",
+      "No Google Business Profile could be independently located; seed 'Google rating' claim unconfirmed — rating/reviews cited from TripAdvisor instead.",
+      "No exact lat/lng or street address published; only postcode LL55 4TU inferred from a third-party aggregator URL slug (page itself 403) — coordinates left null."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "MountainXperience",
+    "slug": "mountainxperience",
+    "website": "https://www.mountainxperience.uk",
+    "tagline": "Mountain specialists guiding Snowdon, Crib Goch and the peaks of Eryri",
+    "description": "MountainXperience is a mountain guiding and outdoor-skills business based in Llanberis, in the heart of Snowdonia (Eryri) National Park, North Wales. Led by owner-instructor Simon, the company offers guided ascents of Snowdon, Tryfan and Moel Siabod, scrambling routes including Crib Goch and the full Snowdon Horseshoe, sunrise hikes, winter climbing and wild camping trips.\n\nAlongside guided walks, the business runs formal outdoor training: NNAS Navigation Awards (Bronze, Silver and Gold), Hill Skills, Mountain Skills, Scrambling Skills, Winter Skills and Outdoor First Aid certification. It also arranges private guiding, custom itineraries and corporate or charity team-building days.\n\nMountainXperience is ranked #1 of 32 outdoor-activity operators in Llanberis on TripAdvisor, has won TripAdvisor's Travellers' Choice Award five years running (2022-2026), and holds a Gold Level Snowdonia Ambassador Award.",
+    "uniqueSellingPoint": "5.0-rated, multi-award-winning local Llanberis guides (TripAdvisor Travellers' Choice 2022-2026) offering both guided ascents and accredited NNAS navigation and mountain-skills training.",
+    "contact": {
+      "phone": "01248 614120",
+      "email": "hello@mountainxperience.uk",
+      "address": "Llanberis, Snowdonia (Eryri) National Park, Gwynedd, North Wales, LL55 4TU"
+    },
+    "lat": null,
+    "lng": null,
+    "priceRange": "Mid-Range",
+    "googleRating": 5.0,
+    "reviewCount": 553,
+    "activityTypes": [
+      "Guided Walks",
+      "Scrambling",
+      "Hiking",
+      "Winter Mountaineering",
+      "Navigation & Mountain Skills Courses",
+      "Wild Camping"
+    ],
+    "regions": ["snowdonia"],
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g186448-d21325904-Reviews-MountainXperience-Llanberis_Snowdonia_Eryri_National_Park_North_Wales_Wales.html"
+  },
+  "fieldSources": {
+    "name": "https://www.mountainxperience.uk — official homepage",
+    "website": "https://www.mountainxperience.uk — live official site",
+    "tagline": "https://www.mountainxperience.uk — derived from homepage positioning ('Mountain Specialists') and activity focus",
+    "description": "https://www.mountainxperience.uk — homepage/services pages (activities, courses, awards, Llanberis base)",
+    "uniqueSellingPoint": "https://www.tripadvisor.com/Attraction_Review-g186448-d21325904-Reviews-MountainXperience-Llanberis_Snowdonia_Eryri_National_Park_North_Wales_Wales.html — Travellers' Choice 2022-2026, #1 of 32; NNAS training per official site",
+    "phone": "https://www.mountainxperience.uk/contact — official contact page (01248 614120); CONTRADICTS seed 07796 247 227",
+    "email": "https://www.mountainxperience.uk/contact — official contact page (hello@); CONTRADICTS seed info@",
+    "address": "https://www.ratedtrips.com/things-to-do/wales/gwynedd/llanberis/mountain-xperience-ll554tu — postcode LL55 4TU inferred from URL slug only (page 403); LOW confidence. Llanberis base confirmed by official site + TripAdvisor",
+    "priceRange": "Unverified — no prices published (bookings via FareHarbor). 'Mid-Range' is a plausible estimate for guided UK mountain days, not confirmed",
+    "googleRating": "https://www.tripadvisor.com/Attraction_Review-g186448-d21325904-Reviews-MountainXperience-Llanberis_Snowdonia_Eryri_National_Park_North_Wales_Wales.html — 5.0/5 on TripAdvisor (no Google Business Profile located; value is TripAdvisor's, not Google's)",
+    "reviewCount": "https://www.tripadvisor.com/Attraction_Review-g186448-d21325904-Reviews-MountainXperience-Llanberis_Snowdonia_Eryri_National_Park_North_Wales_Wales.html — 553 reviews (Viator shows 232); seed '900+' not substantiated",
+    "activityTypes": "https://www.mountainxperience.uk — services/courses pages",
+    "regions": "https://www.mountainxperience.uk — Llanberis, Eryri National Park; corroborated by TripAdvisor listing location",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g186448-d21325904-Reviews-MountainXperience-Llanberis_Snowdonia_Eryri_National_Park_North_Wales_Wales.html — direct listing"
+  }
+}

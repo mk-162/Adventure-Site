@@ -1,4 +1,4 @@
-import { existsSync, writeFileSync } from "fs";
+import { existsSync, writeFileSync, appendFileSync } from "fs";
 import { dirname, join } from "path";
 import { spawn } from "child_process";
 import { OPS_DIR, TASKS_DIR, TaskQueueItem, ensureDir, readJson } from "./shared";
@@ -98,19 +98,17 @@ function runTask(task: TaskQueueItem): Promise<RunResult> {
       env: process.env,
     });
 
-    let log = `# ${task.id}\nStarted: ${startedAt}\nOutput: ${task.output_path}\n\n`;
+    // Append-only logging (was O(n^2): rewrote the whole buffer each chunk).
+    writeFileSync(logPath, `# ${task.id}\nStarted: ${startedAt}\nOutput: ${task.output_path}\n\n`, "utf8");
     child.stdout.on("data", (chunk) => {
-      log += chunk.toString();
-      writeFileSync(logPath, log, "utf8");
+      appendFileSync(logPath, chunk, "utf8");
     });
     child.stderr.on("data", (chunk) => {
-      log += chunk.toString();
-      writeFileSync(logPath, log, "utf8");
+      appendFileSync(logPath, chunk, "utf8");
     });
     child.on("close", (exitCode) => {
       const finishedAt = new Date().toISOString();
-      log += `\nFinished: ${finishedAt}\nExit code: ${exitCode}\n`;
-      writeFileSync(logPath, log, "utf8");
+      appendFileSync(logPath, `\nFinished: ${finishedAt}\nExit code: ${exitCode}\n`, "utf8");
       resolve({ taskId: task.id, outputPath: task.output_path, exitCode, startedAt, finishedAt, logPath });
     });
   });

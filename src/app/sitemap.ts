@@ -175,7 +175,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   );
 
   // Activity hub pages (manual pages)
-  const activityHubs = ['mountain-biking', 'coasteering', 'hiking', 'surfing', 'caving', 'stag-hen'];
+  // 6 bespoke mega-hubs + 12 consolidated standard hubs.
+  const activityHubs = [
+    // Bespoke mega-hubs
+    'mountain-biking', 'coasteering', 'hiking', 'surfing', 'caving', 'stag-hen',
+    // Consolidated standard hubs (StandardActivityHub)
+    'bouldering', 'canoeing', 'fishing', 'gorge-walking', 'horse-riding',
+    'kitesurfing', 'paddleboarding', 'paragliding', 'rock-climbing', 'sailing',
+    'wild-swimming', 'windsurfing',
+  ];
   activityHubs.forEach((hub) => {
     sitemap.push({
       url: `${BASE_URL}/${hub}`,

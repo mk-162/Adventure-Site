@@ -6,6 +6,24 @@ import { Card, CardContent } from "@/components/ui/card";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 import { getEffectiveTier, isTrialActive } from "@/lib/trial-utils";
 
+/** Render an operator logo safely: next/image for local paths, raw <img> for
+ *  external hosts (logos come from arbitrary DB/editor URLs not in remotePatterns). */
+function OperatorLogo({ src, name, size }: { src: string; name: string; size: number }) {
+  if (src.startsWith("/")) {
+    return (
+      <Image
+        src={src}
+        alt={name}
+        fill
+        className="object-cover"
+        sizes={`${size}px`}
+      />
+    );
+  }
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img src={src} alt={name} className="object-cover w-full h-full" />;
+}
+
 interface OperatorCardProps {
   operator: {
     id: number;
@@ -45,13 +63,7 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
             <div className="flex items-center gap-3">
               {operator.logoUrl && (
                 <div className="relative w-16 h-16 rounded-xl overflow-hidden shrink-0">
-                  <Image
-                    src={operator.logoUrl}
-                    alt={operator.name}
-                    fill
-                    className="object-cover"
-                    sizes="64px"
-                  />
+                  <OperatorLogo src={operator.logoUrl} name={operator.name} size={64} />
                 </div>
               )}
               <div>
@@ -137,13 +149,7 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
         {/* Logo */}
         {operator.logoUrl && (
           <div className="relative w-14 h-14 rounded-xl overflow-hidden flex-shrink-0">
-            <Image
-              src={operator.logoUrl}
-              alt={operator.name}
-              fill
-              className="object-cover"
-              sizes="56px"
-            />
+            <OperatorLogo src={operator.logoUrl} name={operator.name} size={56} />
           </div>
         )}
 

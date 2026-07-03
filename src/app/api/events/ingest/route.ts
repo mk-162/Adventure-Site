@@ -2,7 +2,16 @@ import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db";
 import { events, sites, regions } from "@/db/schema";
 import { eq } from "drizzle-orm";
+import { timingSafeEqual } from "node:crypto";
 import { eventIngestSchema, validateJsonBody } from "@/lib/api/validate";
+
+/** Constant-time string comparison to avoid timing-based secret probing. */
+function safeCompare(a: string, b: string): boolean {
+  const ab = Buffer.from(a);
+  const bb = Buffer.from(b);
+  if (ab.length !== bb.length) return false;
+  return timingSafeEqual(ab, bb);
+}
 
 // Helper to get site ID (assuming single site for now or default)
 async function getSiteId() {
@@ -21,8 +30,9 @@ async function findRegionId(address: string | null) {
 
 export async function POST(req: NextRequest) {
   const secret = req.headers.get("x-admin-secret");
-  // Simple guard, in prod ensure ADMIN_SECRET is set
-  if (!process.env.ADMIN_SECRET || secret !== process.env.ADMIN_SECRET) {
+  const adminSecret = process.env.ADMIN_SECRET;
+  // Fail-closed + timing-safe compare (avoids timing-based secret probing).
+  if (!adminSecret || !secret || !safeCompare(secret, adminSecret)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 

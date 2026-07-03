@@ -1,334 +1,51 @@
 {
   "_meta": {
-    "task": "content-ops-006-operator-snowdonia-watersports",
-    "contentItem": "operator-snowdonia-watersports",
-    "contentType": "operator",
     "slug": "snowdonia-watersports",
     "route": "/directory/snowdonia-watersports",
-    "commercialTier": "strategic_big_player_or_launch_priority",
-    "researchedAt": "2026-06-04",
-    "recommendedNextStatus": "qa_needed",
-    "researchOutcome": "complete_with_minor_flags"
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "published",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed live and trading via its own website (snowdoniawatersports.com, verified reachable July 2026), Companies House record (SNOWDONIA WATERSPORTS LIMITED, no. 10451271, incorporated 2016, active), HSE/AALA licence R2388 (valid to July 2028) naming the same Llanberis address, and independent corroboration on Visit Wales, YHA, and TripAdvisor (73 reviews, ranked #2 of 5 Boat Tours & Water Sports in Llanberis). Phone number matches across AALA, Visit Wales, and YHA.",
+    "redFlags": [
+      "No Google Maps rating could be independently verified — do not publish a Google rating for this operator until confirmed directly on Google Maps.",
+      "Two candidate contact emails exist: info@snowdoniawatersports.com (used on Visit Wales/YHA/Wellwild listings) vs shop@snowdoniawatersports.com (used on the operator's own current contact page). Used shop@ as primary since it is the operator's own current source of truth.",
+      "Business previously traded as 'SurfLines' and offered a broader guided-activity programme (coasteering, gorge scrambling, rock climbing); current owned site focuses only on kit hire and retail, so older multi-activity listings should not be assumed current."
+    ]
   },
-
   "proposedOperatorData": {
     "name": "Snowdonia Watersports",
-    "legalName": "SNOWDONIA WATERSPORTS LIMITED",
-    "companiesHouseNumber": "10451271",
-    "companiesHouseSource": "https://find-and-update.company-information.service.gov.uk/company/10451271",
-    "companiesHouseNote": "Incorporated 28 October 2016. SIC code 93199 — Other sports activities. Directors: Christopher Robert Thorne and Tara Yolanda Thorne (both appointed 28 October 2016, both active). Do not publish directors' personal names in the public directory without operator consent.",
-    "formerTradingName": "SurfLines",
-    "formerTradingNameSource": "https://www.yha.org.uk/experience/snowdonia-watersports",
-    "formerTradingNameNote": "YHA listing references 'Snowdonia Watersports (formerly Surf Lines)'. Confirm with operator whether the SurfLines identity is still relevant or should be suppressed.",
     "slug": "snowdonia-watersports",
     "website": "https://snowdoniawatersports.com/",
-    "websiteNote": "The hyphenated domain https://www.snowdonia-watersports.com/ redirects to https://snowdoniawatersports.com/. Use the non-hyphenated canonical URL. Verified active as of June 2026.",
-
+    "tagline": "Kayak, paddleboard and open-water swim kit hire on Llyn Padarn, Llanberis",
+    "description": "Snowdonia Watersports is a family-run kayak, stand-up paddleboard, and open-water swimming kit hire and retail outlet on the shore of Llyn Padarn in Llanberis, inside Eryri (Snowdonia) National Park. The business has traded from Unit 2, Y Glyn, Llanberis since 2016 (previously known as SurfLines) and holds a current AALA/HSE adventure activities licence covering canoeing, kayaking, and stand-up paddleboarding through July 2028.\n\nHire sessions are self-guided rather than instructor-led: customers collect kayaks, tandem kayaks, SUPs, or group paddleboards along with paddles, buoyancy aids and wetsuits, then launch directly onto Llyn Padarn from Padarn Country Park, with no on-water supervision provided. The shop also sells watersports equipment from brands including Red Paddle Co, Starboard, Palm, Orca, and Dryrobe.\n\nThe site sits beside the Lone Tree Cafe with views across the lake to Snowdon and Dolbadarn Castle. TripAdvisor reviewers (73 reviews, #2 of 5 water sports operators in Llanberis) consistently praise friendly staff, good-value hire, and the free nearby parking, while noting hire sessions are unsupervised so paddlers should be confident in the water.",
+    "uniqueSellingPoint": "Self-service kayak, SUP, and open-water swim kit hire directly on the shore of Llyn Padarn with an AALA-licensed operator, plus an on-site retail shop for watersports gear.",
     "contact": {
       "phone": "01286 879001",
-      "phoneSource": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R2388 and https://www.visitwales.com/activity/snowdonia-watersports-930412 and https://www.yha.org.uk/experience/snowdonia-watersports",
-      "phoneNote": "Consistent across AALA (HSE), VisitWales, and YHA records. High confidence.",
-      "emailPrimary": "info@snowdoniawatersports.com",
-      "emailPrimarySource": "https://www.visitwales.com/activity/snowdonia-watersports-930412 and https://www.yha.org.uk/experience/snowdonia-watersports and https://wellwild.com/listing/snowdonia-watersports/",
-      "emailPrimaryNote": "info@ appears on VisitWales, YHA, and Wellwild directory listings. Treat as general/bookings contact.",
-      "emailRetail": "shop@snowdoniawatersports.com",
-      "emailRetailSource": "https://snowdoniawatersports.com/pages/contact",
-      "emailRetailNote": "shop@ is listed on the operator's own contact page as the retail/shop contact. Clarify which email should be the primary directory listing contact — NEEDS_HUMAN_REVIEW.",
-      "address": {
-        "line1": "Unit 2, Y Glyn",
-        "locality": "Llanberis",
-        "county": "Gwynedd",
-        "postcode": "LL55 4EL",
-        "country": "Wales"
-      },
-      "addressSource": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R2388 and https://www.visitwales.com/activity/snowdonia-watersports-930412",
-      "addressNote": "Trading/operational address confirmed via AALA and VisitWales. The registered office on Companies House (Clegyr, Llanaelhaearn, Caernarfon, LL54 5AD) is a personal/directors' address — do not use for public listing."
+      "email": "shop@snowdoniawatersports.com",
+      "address": "Unit 2, Y Glyn, Llanberis, Gwynedd, LL55 4EL"
     },
-
-    "location": {
-      "lat": 53.1254,
-      "lng": -4.1333,
-      "latLngSource": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R2388",
-      "latLngNote": "Derived from OS Grid Reference SH573608 / What3Words 'episodes.crunches.crypt' as reported on the AALA record. Verify against a live Google Maps pin before publishing.",
-      "osgr": "SH573608",
-      "w3w": "episodes.crunches.crypt",
-      "region": "snowdonia",
-      "settingNote": "Located approximately 50 metres from the shore of Llyn Padarn (Llanberis Lake), a 3.2km-long glacial lake up to 30m deep in Padarn Country Park, Llanberis, within Eryri (Snowdonia) National Park. The lake is a Site of Special Scientific Interest. The site shares a building with the Lone Tree Cafe and offers views of Yr Wyddfa (Snowdon) and Dolbadarn Castle.",
-      "settingSource": "https://snowdoniawatersports.com/pages/about-us and https://snowdoniawatersports.com/blogs/news/llyn-padarn-general-information-about-the-lake-we-enjoy"
-    },
-
-    "description": {
-      "short": "Snowdonia Watersports Ltd is a family-run kayak, paddleboard, and open-water kit hire and retail outlet on the shores of Llyn Padarn in Llanberis, Eryri National Park. Established in 2016, it holds an AALA licence for canoeing, kayaking, and stand-up paddleboarding and is described by Visit Wales as North Wales' premier canoe and kayak specialist. Sessions launch from Padarn Country Park, with the Lone Tree Cafe on site and views of Snowdon and Dolbadarn Castle as a backdrop.",
-      "shortNote": "Drafted from verified facts across multiple official and operator sources. Needs editorial tone review. No AI-generated content.",
-      "descriptionSources": [
-        "https://snowdoniawatersports.com/pages/about-us",
-        "https://www.visitwales.com/activity/snowdonia-watersports-930412",
-        "https://www.yha.org.uk/experience/snowdonia-watersports"
-      ]
-    },
-
-    "activities": {
-      "kitHireSelfGuided": [
-        "Single kayak hire (2 hrs) — includes paddle, buoyancy aid, wetsuit",
-        "Stand-up paddleboard (SUP) hire (2 hrs) — includes buoyancy aid, wetsuit",
-        "Tandem kayak hire (2 hrs) — includes 2 paddles, 2 BAs, 2 wetsuits",
-        "XL Group paddleboard hire (2 hrs, up to 6 people) — includes paddles, BAs, wetsuits"
-      ],
-      "kitHireNote": "Kit hire is self-guided and unsupervised. Operator explicitly states: 'There are no safety patrols, lifeguards or instructors supervising rental customers.' Sessions do not include on-water tuition. Customers must provide their own footwear, swimwear, and towel.",
-      "kitHireSource": "https://snowdoniawatersports.com/pages/kit-hire",
-      "instructorLed": [
-        "Instructor-led kayaking sessions (listed on third-party sources)",
-        "Instructor-led paddleboard sessions (listed on third-party sources)",
-        "Open water supervised swimming sessions (listed on VisitWales)"
-      ],
-      "instructorLedNote": "NEEDS_HUMAN_REVIEW — multi-activity listings (coasteering, gorge scrambling, rock climbing, mountain walking, orienteering, team building) appear in older directory entries and may reflect the former SurfLines era. The operator's own current website focuses on kit hire and retail. Confirm which guided activities are currently bookable before listing them.",
-      "instructorLedSource": "https://www.visitwales.com/activity/snowdonia-watersports-930412 and https://wellwild.com/listing/snowdonia-watersports/",
-      "retail": [
-        "Kayak and paddleboard retail",
-        "Wetsuit and open water swimming accessories retail",
-        "Brands include: Starboard, Red Paddle Co, Palm Equipment, O'Neill, Peak PS/Peak UK, Orca, Dryrobe, AquaPac, NRS, Vaikobi, Aquasphere, Pyranha, Dagger, Alder"
-      ],
-      "retailSource": "https://snowdoniawatersports.com/ and https://snowdoniawatersports.com/pages/about-us",
-      "onSite": [
-        "Lone Tree Cafe (on-site, separate business)"
-      ]
-    },
-
-    "pricing": {
-      "kitHire": [
-        { "item": "Single kayak", "price": "£35.00", "duration": "2 hours" },
-        { "item": "Stand-up paddleboard (SUP)", "price": "£35.00", "duration": "2 hours" },
-        { "item": "Tandem kayak", "price": "£50.00", "duration": "2 hours" },
-        { "item": "XL Group paddleboard (up to 6)", "price": "£80.00", "duration": "2 hours" }
-      ],
-      "pricingNote": "Prices from operator's own website as of June 2026. Do not publish live prices — they may change. Direct visitors to the booking portal for current pricing.",
-      "pricingSource": "https://snowdoniawatersports.com/pages/kit-hire",
-      "bookingPortal": "https://bookings.snowdoniawatersports.com/kit-hire/"
-    },
-
-    "openingHours": {
-      "dailyNote": "NEEDS_HUMAN_REVIEW — TripAdvisor shows 9:00 AM–5:30 PM daily (Mon–Sun) but this data may be stale. The operator's own website does not publish fixed opening hours. Confirm current seasonal hours with the operator or via the booking portal before publishing.",
-      "dailyHoursSource": "https://www.tripadvisor.com/Attraction_Review-g186448-d1893299-Reviews-Snowdonia_Watersports-Llanberis_Snowdonia_Eryri_National_Park_North_Wales_Wales.html"
-    },
-
-    "ratings": {
-      "google": {
-        "status": "BLOCKED",
-        "note": "No verified Google rating found during research. The original task blocker confirms this is missing. Do not publish a Google rating until verified directly against live Google Maps."
-      },
-      "tripadvisor": {
-        "rating": "4.6",
-        "reviewCount": 84,
-        "rankingInArea": "#2 of 6 Boat Tours & Water Sports in Llanberis",
-        "url": "https://www.tripadvisor.com/Attraction_Review-g186448-d1893299-Reviews-Snowdonia_Watersports-Llanberis_Snowdonia_Eryri_National_Park_North_Wales_Wales.html",
-        "confidence": "HIGH",
-        "note": "Verified directly from TripAdvisor listing. Positive review themes: friendly staff, mountain backdrop, good value, free nearby parking, included safety kit. Notable concern flagged by reviewers: self-hire is unsupervised — important to communicate clearly in the directory listing."
-      }
-    },
-
-    "socialMedia": {
-      "facebook": {
-        "url": "https://www.facebook.com/WatersportsinSnowdonia/",
-        "handle": "WatersportsinSnowdonia",
-        "followerCount": "NEEDS_HUMAN_REVIEW",
-        "confidence": "HIGH",
-        "note": "Page URL confirmed. Follower count not extracted — view page directly to verify."
-      },
-      "instagram": {
-        "url": "https://www.instagram.com/snowatgram/",
-        "handle": "@snowatgram",
-        "confidence": "HIGH",
-        "note": "Handle confirmed from operator's own contact page."
-      },
-      "youtube": {
-        "url": "https://www.youtube.com/channel/UC2eN-VhXXTLbhjpRZJSdE-A",
-        "confidence": "HIGH",
-        "source": "https://snowdoniawatersports.com/pages/contact"
-      },
-      "twitter": {
-        "url": "https://x.com/snowwatersports",
-        "handle": "@snowwatersports",
-        "confidence": "HIGH",
-        "source": "https://snowdoniawatersports.com/pages/contact"
-      }
-    },
-
-    "accreditations": [
-      {
-        "body": "Adventure Activities Licensing Authority (AALA) / HSE",
-        "licenceNumber": "L166885",
-        "referenceNumber": "R2388",
-        "issueDate": "2025-07-05",
-        "expiryDate": "2028-07-04",
-        "licensedCategories": ["Watersports"],
-        "licensedActivities": [
-          "Canoeing",
-          "Kayaking",
-          "Mega/Giant SUP",
-          "Stand Up Paddleboarding (SUP) — excludes Foiling"
-        ],
-        "confidence": "HIGH",
-        "source": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R2388",
-        "note": "Official UK government record (HSE). Licence valid through July 2028. The AALA licence covers activities offered to under-18s for payment — a strong credibility indicator."
-      },
-      {
-        "body": "VisitWales Quality Accreditation",
-        "status": "Accredited (badge type unconfirmed)",
-        "confidence": "LOW",
-        "source": "https://www.visitwales.com/activity/snowdonia-watersports-930412",
-        "note": "NEEDS_HUMAN_REVIEW — VisitWales listing shows an accreditation badge described as 'AAAP certification' in scraped metadata, but the full scheme name could not be confirmed from extracted text. View the VisitWales listing directly to identify the accreditation scheme before publishing as a verified badge."
-      }
-    ],
-
-    "tourismBodyListings": [
-      {
-        "body": "Visit Wales",
-        "url": "https://www.visitwales.com/activity/snowdonia-watersports-930412",
-        "confidence": "HIGH"
-      },
-      {
-        "body": "Visit Wales (alternate listing ID)",
-        "url": "https://www.visitwales.com/activity/activity/snowdonia-watersports-560211",
-        "confidence": "HIGH"
-      },
-      {
-        "body": "YHA (Youth Hostels Association)",
-        "url": "https://www.yha.org.uk/experience/snowdonia-watersports",
-        "confidence": "HIGH"
-      },
-      {
-        "body": "Wellwild Adventure Directory",
-        "url": "https://wellwild.com/listing/snowdonia-watersports/",
-        "confidence": "HIGH"
-      }
-    ],
-
-    "faqs": [
-      {
-        "q": "Is there a minimum age for kit hire?",
-        "a": "No stated minimum age; the smallest wetsuit fits an average 5-year-old. A supervising adult (18+) must be present."
-      },
-      {
-        "q": "Is supervision provided during hire?",
-        "a": "No — kit hire is self-guided. The operator states there are no safety patrols, lifeguards, or instructors on the water during hire sessions."
-      },
-      {
-        "q": "Can I bring my dog?",
-        "a": "Pets are allowed on kayaks and SUPs at the customer's risk; no pet safety equipment is provided."
-      },
-      {
-        "q": "Is there a launch fee at Llyn Padarn?",
-        "a": "No launch fee for private/recreational paddlers on Llyn Padarn."
-      },
-      {
-        "faqsSource": "https://snowdoniawatersports.com/pages/frequently-asked-questions"
-      }
-    ]
+    "lat": 53.1254,
+    "lng": -4.1333,
+    "priceRange": "£35 for a 2-hour single kayak or SUP hire; £50 for a tandem kayak; £80 for an XL group paddleboard (up to 6 people)",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["kayaking", "stand-up-paddleboarding", "open-water-swimming"],
+    "regions": ["snowdonia"],
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g186448-d1893299-Reviews-Snowdonia_Watersports-Llanberis_Snowdonia_Eryri_National_Park_North_Wales_Wales.html"
   },
-
-  "images": {
-    "coverImage": {
-      "status": "CONDITIONALLY_AVAILABLE",
-      "note": "No operator-specific image with a permissive licence found. One CC BY-SA 2.0 image on Wikimedia Commons shows kayakers on Llyn Padarn (Eric Jones, 2006) and could serve as a placeholder with correct attribution. However, the image is from 2006 and resolution should be verified before use. Recommended action: (1) manually browse the 200+ image Llyn Padarn category on Wikimedia Commons for higher-resolution and more recent watersports shots; (2) request press/media images from info@snowdoniawatersports.com as a preferred alternative."
-    },
-    "logo": {
-      "status": "BLOCKED",
-      "note": "Logo is visible on the operator's website but is all-rights-reserved. Cannot use without operator permission. Request directly from info@snowdoniawatersports.com."
-    },
-    "candidateImages": [
-      {
-        "description": "Kayakers on Llyn Padarn — recreational kayaking on the lake below the mountain backdrop",
-        "photographer": "Eric Jones",
-        "date": "2006-10-29",
-        "licence": "CC BY-SA 2.0",
-        "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Kayakers_on_Llyn_Padarn_-_geograph.org.uk_-_269341.jpg",
-        "geographUrl": "https://www.geograph.org.uk/photo/269341",
-        "attributionRequired": "Eric Jones / Geograph (CC BY-SA 2.0)",
-        "reuseConditions": "Attribution required; derivatives must carry same or compatible licence",
-        "bestFit": true,
-        "fitNote": "Directly shows the activity (kayaking) on the correct lake (Llyn Padarn). Drawback: image is from 2006 and may have lower resolution than modern standards — verify pixel dimensions at the Wikimedia URL before use.",
-        "resolutionCheckRequired": true
-      },
-      {
-        "description": "Llyn Padarn / Llanberis Lake category — 200+ Geograph/Wikimedia images, all CC BY-SA 2.0",
-        "wikimediaCategoryUrl": "https://commons.wikimedia.org/wiki/Category:Llyn_Padarn",
-        "licence": "CC BY-SA 2.0 (all Geograph-sourced images)",
-        "fitNote": "NEEDS_HUMAN_REVIEW — a manual browse of this category filtering for recent watersports/activity shots is recommended to find higher-resolution candidates from later years. The Llyn Padarn/Llanberis setting is highly relevant to this operator.",
-        "bestFit": false
-      }
-    ]
-  },
-
-  "claimsNeedingHumanReview": [
-    {
-      "claim": "Primary directory contact email: info@snowdoniawatersports.com vs shop@snowdoniawatersports.com",
-      "priority": "HIGH",
-      "action": "info@ appears on VisitWales, YHA, and Wellwild; shop@ appears on the operator's own contact page. Confirm with operator or by testing both addresses which should be the canonical directory contact before publishing."
-    },
-    {
-      "claim": "Current guided/instructor-led activity programme (coasteering, gorge scrambling, rock climbing, mountain walking, orienteering, team building)",
-      "priority": "HIGH",
-      "action": "These activities appear in older directory listings and may reflect the former SurfLines identity. The operator's own current website focuses on kit hire and retail. Do not list multi-activity or AALA-regulated guided sessions without confirming they are currently bookable."
-    },
-    {
-      "claim": "VisitWales accreditation badge (listed as 'AAAP certification' in scraped metadata)",
-      "priority": "MEDIUM",
-      "action": "Visit https://www.visitwales.com/activity/snowdonia-watersports-930412 directly to identify the exact accreditation scheme before publishing as a verified badge."
-    },
-    {
-      "claim": "Opening hours (TripAdvisor: 9:00 AM–5:30 PM daily)",
-      "priority": "MEDIUM",
-      "action": "TripAdvisor hours may be outdated. Confirm current seasonal hours with the operator or via the booking portal before publishing."
-    },
-    {
-      "claim": "Facebook page follower count",
-      "priority": "LOW",
-      "action": "View https://www.facebook.com/WatersportsinSnowdonia/ directly to verify current follower count."
-    },
-    {
-      "claim": "Cover image resolution (Eric Jones CC BY-SA 2.0 kayaking image, 2006)",
-      "priority": "MEDIUM",
-      "action": "Check pixel dimensions at https://commons.wikimedia.org/wiki/File:Kayakers_on_Llyn_Padarn_-_geograph.org.uk_-_269341.jpg before use; the source is from 2006 and may not meet current minimum resolution requirements. Manually browse https://commons.wikimedia.org/wiki/Category:Llyn_Padarn for better alternatives."
-    },
-    {
-      "claim": "Directors' names in listing (Christopher Robert Thorne, Tara Yolanda Thorne)",
-      "priority": "LOW",
-      "action": "Confirmed via Companies House but confirm with operator before publishing individuals' names in the public-facing directory."
-    },
-    {
-      "claim": "Google Maps rating",
-      "priority": "HIGH",
-      "action": "No Google rating was found via automated research. Verify directly at Google Maps before publishing. The original task blocker specifically flags the missing Google rating."
-    },
-    {
-      "claim": "Lat/lng (53.1254, -4.1333) derived from AALA OS grid reference SH573608",
-      "priority": "LOW",
-      "action": "Verify against live Google Maps pin for the Llyn Padarn waterfront location before publishing."
-    }
-  ],
-
-  "sources": [
-    { "label": "Snowdonia Watersports — Official Website", "url": "https://snowdoniawatersports.com/" },
-    { "label": "Snowdonia Watersports — About Us", "url": "https://snowdoniawatersports.com/pages/about-us" },
-    { "label": "Snowdonia Watersports — Contact Page", "url": "https://snowdoniawatersports.com/pages/contact" },
-    { "label": "Snowdonia Watersports — Kit Hire", "url": "https://snowdoniawatersports.com/pages/kit-hire" },
-    { "label": "Snowdonia Watersports — FAQs", "url": "https://snowdoniawatersports.com/pages/frequently-asked-questions" },
-    { "label": "Snowdonia Watersports — Booking Portal", "url": "https://bookings.snowdoniawatersports.com/kit-hire/" },
-    { "label": "Snowdonia Watersports — Llyn Padarn info blog", "url": "https://snowdoniawatersports.com/blogs/news/llyn-padarn-general-information-about-the-lake-we-enjoy" },
-    { "label": "AALA Official Record — HSE Gov.uk (R2388)", "url": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R2388" },
-    { "label": "Companies House — SNOWDONIA WATERSPORTS LIMITED (10451271)", "url": "https://find-and-update.company-information.service.gov.uk/company/10451271" },
-    { "label": "Companies House — Officers", "url": "https://find-and-update.company-information.service.gov.uk/company/10451271/officers" },
-    { "label": "Visit Wales Listing (ID 930412)", "url": "https://www.visitwales.com/activity/snowdonia-watersports-930412" },
-    { "label": "Visit Wales Listing (ID 560211)", "url": "https://www.visitwales.com/activity/activity/snowdonia-watersports-560211" },
-    { "label": "YHA — Snowdonia Watersports Experience", "url": "https://www.yha.org.uk/experience/snowdonia-watersports" },
-    { "label": "Wellwild Adventure Directory", "url": "https://wellwild.com/listing/snowdonia-watersports/" },
-    { "label": "TripAdvisor — Snowdonia Watersports", "url": "https://www.tripadvisor.com/Attraction_Review-g186448-d1893299-Reviews-Snowdonia_Watersports-Llanberis_Snowdonia_Eryri_National_Park_North_Wales_Wales.html" },
-    { "label": "Facebook — WatersportsinSnowdonia", "url": "https://www.facebook.com/WatersportsinSnowdonia/" },
-    { "label": "Instagram — @snowatgram", "url": "https://www.instagram.com/snowatgram/" },
-    { "label": "YouTube — Snowdonia Watersports", "url": "https://www.youtube.com/channel/UC2eN-VhXXTLbhjpRZJSdE-A" },
-    { "label": "X/Twitter — @snowwatersports", "url": "https://x.com/snowwatersports" },
-    { "label": "Wikimedia Commons — Kayakers on Llyn Padarn (CC BY-SA 2.0, Eric Jones, 2006)", "url": "https://commons.wikimedia.org/wiki/File:Kayakers_on_Llyn_Padarn_-_geograph.org.uk_-_269341.jpg" },
-    { "label": "Geograph — Kayakers on Llyn Padarn (source photo)", "url": "https://www.geograph.org.uk/photo/269341" },
-    { "label": "Wikimedia Commons — Llyn Padarn category (200+ CC BY-SA 2.0 images)", "url": "https://commons.wikimedia.org/wiki/Category:Llyn_Padarn" }
-  ]
+  "fieldSources": {
+    "name": "https://snowdoniawatersports.com/ — trading name confirmed on own site and Companies House (SNOWDONIA WATERSPORTS LIMITED, 10451271)",
+    "website": "https://snowdoniawatersports.com/ — fetched live July 2026, confirmed active; hyphenated snowdonia-watersports.com redirects here",
+    "description": "Synthesized from https://snowdoniawatersports.com/pages/about-us, https://snowdoniawatersports.com/pages/kit-hire, and https://www.tripadvisor.com/Attraction_Review-g186448-d1893299-Reviews-Snowdonia_Watersports-Llanberis_Snowdonia_Eryri_National_Park_North_Wales_Wales.html",
+    "contact.phone": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R2388 and https://www.visitwales.com/activity/snowdonia-watersports-930412 and https://www.yha.org.uk/experience/snowdonia-watersports — consistent across all three",
+    "contact.email": "https://snowdoniawatersports.com/pages/contact — operator's own current contact page lists shop@snowdoniawatersports.com; note info@snowdoniawatersports.com also appears on third-party listings (Visit Wales, YHA, Wellwild) and may be an older/alternate address",
+    "contact.address": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R2388 and https://www.visitwales.com/activity/snowdonia-watersports-930412 — trading address; note Companies House registered office differs and is a directors' personal address, not for public display",
+    "lat/lng": "Derived from AALA record OS grid reference SH573608 (https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R2388); not independently pinned on Google Maps, recommend re-verifying against a live map pin before publishing",
+    "priceRange": "https://snowdoniawatersports.com/pages/kit-hire — live pricing as of July 2026, subject to change; direct users to booking portal https://bookings.snowdoniawatersports.com/kit-hire/ for current prices",
+    "googleRating": "No independently verifiable Google rating found (Google Maps fetch blocked by consent redirect, and web search returned no cached rating figure) — left null per spec rule against inventing ratings",
+    "activityTypes": "https://snowdoniawatersports.com/pages/kit-hire and https://snowdoniawatersports.com/ — kayak, SUP, and open-water swimming kit hire are the current core offering",
+    "regions": "Operates from Llyn Padarn, Llanberis, within Eryri (Snowdonia) National Park — confirmed by AALA, Visit Wales, and operator's own site",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g186448-d1893299-Reviews-Snowdonia_Watersports-Llanberis_Snowdonia_Eryri_National_Park_North_Wales_Wales.html — 73 reviews, ranked #2 of 5 Boat Tours & Water Sports in Llanberis"
+  }
 }

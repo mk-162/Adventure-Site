@@ -36,7 +36,9 @@ load_dotenv(".env.local")
 
 # Configuration
 UNSPLASH_API = "https://api.unsplash.com"
-UNSPLASH_ACCESS_KEY = os.getenv("UNSPLASH_ACCESS_KEY", "BBqUqpMUJJiKvawiCURPSnrHJmcoajR6ULDyMKzuLu4")
+UNSPLASH_ACCESS_KEY = os.getenv("UNSPLASH_ACCESS_KEY")
+if not UNSPLASH_ACCESS_KEY:
+    raise RuntimeError("UNSPLASH_ACCESS_KEY env var is required")
 
 BASE_DIR = Path(__file__).parent.parent
 CONTENT_DIR = BASE_DIR / "content"

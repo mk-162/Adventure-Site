@@ -20,33 +20,48 @@ import { eq, and, asc, sql } from "drizzle-orm";
 export async function getAllTags() {
   const result = await db.select().from(tags).orderBy(asc(tags.name));
 
-  const tagsWithCounts = await Promise.all(
-    result.map(async (tag) => {
-      const [activityCount, accommodationCount, itineraryCount] =
-        await Promise.all([
-          db
-            .select({ count: sql<number>`count(*)` })
-            .from(activityTags)
-            .where(eq(activityTags.tagId, tag.id)),
-          db
-            .select({ count: sql<number>`count(*)` })
-            .from(accommodationTags)
-            .where(eq(accommodationTags.tagId, tag.id)),
-          db
-            .select({ count: sql<number>`count(*)` })
-            .from(itineraryTags)
-            .where(eq(itineraryTags.tagId, tag.id)),
-        ]);
+  // Collapsed N+1: 3 grouped COUNT queries (one per join table) instead of
+  // 3 per-tag queries. Merged in JS by tagId.
+  const [activityCounts, accommodationCounts, itineraryCounts] =
+    await Promise.all([
+      db
+        .select({
+          tagId: activityTags.tagId,
+          count: sql<number>`count(*)`,
+        })
+        .from(activityTags)
+        .groupBy(activityTags.tagId),
+      db
+        .select({
+          tagId: accommodationTags.tagId,
+          count: sql<number>`count(*)`,
+        })
+        .from(accommodationTags)
+        .groupBy(accommodationTags.tagId),
+      db
+        .select({
+          tagId: itineraryTags.tagId,
+          count: sql<number>`count(*)`,
+        })
+        .from(itineraryTags)
+        .groupBy(itineraryTags.tagId),
+    ]);
 
-      return {
-        ...tag,
-        count:
-          Number(activityCount[0]?.count || 0) +
-          Number(accommodationCount[0]?.count || 0) +
-          Number(itineraryCount[0]?.count || 0),
-      };
-    })
-  );
+  const countMap = new Map<number, number>();
+  for (const { tagId, count } of activityCounts) {
+    countMap.set(tagId, (countMap.get(tagId) ?? 0) + Number(count));
+  }
+  for (const { tagId, count } of accommodationCounts) {
+    countMap.set(tagId, (countMap.get(tagId) ?? 0) + Number(count));
+  }
+  for (const { tagId, count } of itineraryCounts) {
+    countMap.set(tagId, (countMap.get(tagId) ?? 0) + Number(count));
+  }
+
+  const tagsWithCounts = result.map((tag) => ({
+    ...tag,
+    count: countMap.get(tag.id) ?? 0,
+  }));
 
   return tagsWithCounts.sort((a, b) => {
     // Sort by type then name

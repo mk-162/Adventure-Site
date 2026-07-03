@@ -7,6 +7,7 @@ Updates attributions.json and sets heroImage in each article JSON.
 """
 
 import json
+import os
 import sys
 import time
 import hashlib
@@ -16,7 +17,9 @@ from pathlib import Path
 
 OPENVERSE_API = "https://api.openverse.org/v1/images/"
 UNSPLASH_API = "https://api.unsplash.com/search/photos"
-UNSPLASH_KEY = "BBqUqpMUJJiKvawiCURPSnrHJmcoajR6ULDyMKzuLu4"
+UNSPLASH_KEY = os.getenv("UNSPLASH_KEY")
+if not UNSPLASH_KEY:
+    sys.exit("UNSPLASH_KEY env var is required (scripts/fetch_journal_images.py)")
 
 BASE_DIR = Path(__file__).parent.parent
 JOURNAL_DIR = BASE_DIR / "data" / "journal"
@@ -24,7 +27,7 @@ IMAGES_DIR = BASE_DIR / "public" / "images"
 JOURNAL_IMAGES_DIR = IMAGES_DIR / "journal"
 ATTRIBUTIONS_FILE = IMAGES_DIR / "attributions.json"
 
-OPENVERSE_TOKEN = "KMbv8u0vm2YIhLoOMvJ9fJpsEXpzJu"
+OPENVERSE_TOKEN = os.getenv("OPENVERSE_TOKEN")
 OPENVERSE_HEADERS = {
     "User-Agent": "AdventureWales/1.0 (adventure@wales.com)",
     "Authorization": f"Bearer {OPENVERSE_TOKEN}",

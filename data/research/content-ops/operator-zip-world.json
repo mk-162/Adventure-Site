@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "slug": "zip-world",
+    "route": "/directory/zip-world",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Identity confirmed via direct fetch of official site zipworld.co.uk (live), corroborated by Wikipedia (company founded 2013 by Sean Taylor, 2025 Dolphin Capital acquisition) and multiple TripAdvisor location listings (Penrhyn Quarry, Llechwedd, Betws-y-Coed, Tower). Phone and address confirmed on official contact page.",
+    "redFlags": [
+      "Seed email info@zipworld.co.uk could NOT be confirmed on official contact page (only dogcare@ and dpo@ surfaced there); plausible but unverified.",
+      "Seed 'Fforest Coch / Wrexham' location appears to be a misnaming — no Wrexham Zip World site found; real site is 'Zip World Fforest' at Betws-y-Coed, within Eryri/Snowdonia National Park.",
+      "Seed 'South Wales' site is Zip World Tower at Rhigos, Rhondda Cynon Taf (near Aberdare) — not Blaengarw/Bridgend.",
+      "Seed Google rating ~4.5/5 (5000+) could not be sourced; substituted with verified TripAdvisor rating for Penrhyn Quarry (4.6, 5,206 reviews). No sourced Google Business figure found.",
+      "Zip World now also operates non-Welsh sites (London, Manchester, Windermere, Cardiff) not part of the Snowdonia/South Wales set."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Zip World",
+    "slug": "zip-world",
+    "website": "https://www.zipworld.co.uk",
+    "tagline": "Home of the world's fastest zip line, across former Welsh slate quarries and caverns",
+    "description": "Zip World is a North Wales-founded adventure tourism company established in 2013 by ex-Royal Marines commando Sean Taylor, growing out of his earlier Treetop Adventures (2007) near Betws-y-Coed. It repurposes historic Welsh industrial sites — slate quarries, caverns and a former colliery — into large-scale adventure attractions. In January 2025 Dolphin Capital acquired a majority stake for a reported £100 million, with Taylor retaining a minority share.\n\nIts flagship site, Zip World Penrhyn Quarry near Bethesda, is home to Velocity 2, marketed as the world's fastest and Europe's longest zip line, reaching over 100mph head-first above a quarry lake; the site also offers off-road Quarry Karts and quarry tours. At Zip World Llechwedd in Blaenau Ffestiniog, Bounce Below suspends giant trampoline nets inside a slate cavern, alongside the underground Titan zip line, deep mine tours and the world's first underground golf course. Zip World Fforest near Betws-y-Coed adds a forest coaster and the Skyride giant swing.\n\nMost sites sit within or adjacent to Eryri (Snowdonia) National Park; a separate South Wales site, Zip World Tower, operates at the former Tower Colliery at Rhigos in Rhondda Cynon Taf.",
+    "uniqueSellingPoint": "Velocity 2 at Penrhyn Quarry — billed as the world's fastest and Europe's longest zip line, sending riders head-first at over 100mph across a slate-quarry lake.",
+    "contact": {
+      "phone": "01248 601 444",
+      "email": "info@zipworld.co.uk",
+      "address": "Zip World Basecamp, Denbigh Street, Llanrwst, Conwy, LL26 0LL (registered); flagship: Penrhyn Quarry, Bethesda, Gwynedd, LL57 4YG"
+    },
+    "lat": 53.16871,
+    "lng": -4.06401,
+    "priceRange": "Premium",
+    "googleRating": null,
+    "reviewCount": 5206,
+    "activityTypes": [
+      "Zip Lining",
+      "Quarry Karts",
+      "Bounce Below (underground trampoline nets)",
+      "Underground Zip Line (Titan)",
+      "Underground Golf",
+      "Deep Mine Tours",
+      "Forest/Alpine Coaster",
+      "Giant Swing"
+    ],
+    "regions": ["snowdonia", "south-wales"],
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g730108-d4054411-Reviews-Zip_World-Bethesda_Bangor_Gwynedd_North_Wales_Wales.html"
+  },
+  "fieldSources": {
+    "name": "https://www.zipworld.co.uk/ — official site, live; https://en.wikipedia.org/wiki/Zip_World — company history",
+    "website": "https://www.zipworld.co.uk/ — confirmed live via direct fetch",
+    "contact.phone": "https://www.zipworld.co.uk/contact-us — listed as main number on official contact page",
+    "contact.email": "UNVERIFIED — not confirmed on https://www.zipworld.co.uk/contact-us (which showed dogcare@ and dpo@ only); info@ appeared only in a general search snippet",
+    "contact.address": "https://www.zipworld.co.uk/contact-us — registered address Llanrwst; flagship Penrhyn Quarry LL57 4YG per https://www.zipworld.co.uk/locations/penrhyn-quarry",
+    "lat/lng": "Approximate coordinates for Penrhyn Quarry via Mapcarta/search (~53.16871, -4.06401) — not from an authoritative geocoder; treat as approximate",
+    "reviewCount/tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g730108-d4054411-Reviews-Zip_World-Bethesda_Bangor_Gwynedd_North_Wales_Wales.html — 4.6/5, 5,206 reviews (Penrhyn Quarry) verified via page fetch",
+    "googleRating": "Not sourced — seed's ~4.5/5 could not be confirmed against any live Google Business listing; left null",
+    "priceRange": "https://www.zipworld.co.uk/locations/penrhyn-quarry — e.g. Velocity 2 £99–£124, Quarry Karts £42.88–£49; Premium tier",
+    "activityTypes": "https://www.zipworld.co.uk/locations/penrhyn-quarry and /locations/llechwedd; https://en.wikipedia.org/wiki/Zip_World",
+    "regions": "Penrhyn Quarry, Llechwedd and Fforest within/adjacent to Eryri per https://www.visitsnowdonia.info/zip-world-penrhyn-quarry and TripAdvisor listings; Zip World Tower in Rhigos, Rhondda Cynon Taf (South Wales) per https://en.wikipedia.org/wiki/Zip_World",
+    "description/founder/ownership": "https://en.wikipedia.org/wiki/Zip_World — founded 2013 by Sean Taylor; Jan 2025 Dolphin Capital majority stake (£100m)"
+  }
+}

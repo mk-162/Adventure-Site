@@ -74,10 +74,7 @@ python scripts/fetch_unsplash_images.py --apply reports/unsplash_preview_XXXXXX.
 python scripts/fetch_unsplash_images.py --apply manifest.json --reject id1,id2
 ```
 
-API Key (already configured):
-```
-BBqUqpMUJJiKvawiCURPSnrHJmcoajR6ULDyMKzuLu4
-```
+API Key: set the `UNSPLASH_KEY` environment variable (do not commit keys).
 
 ## Entity Specifications
 

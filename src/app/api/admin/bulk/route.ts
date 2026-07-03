@@ -13,7 +13,7 @@ import {
   bulkOperations,
 } from "@/db/schema";
 import { inArray } from "drizzle-orm";
-import { adminBulkSchema, validateJsonBody } from "@/lib/api/validate";
+import { adminBulkSchema, validateJsonBody, validateCmsBody } from "@/lib/api/validate";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const tableMap: Record<string, any> = {
@@ -51,15 +51,25 @@ export async function POST(req: NextRequest) {
         updateData = { status: data.status };
         break;
 
-      case "field_update":
+      case "field_update": {
         if (!data || Object.keys(data).length === 0) {
           return NextResponse.json(
             { error: "Data is required for field_update" },
             { status: 400 }
           );
         }
-        updateData = { ...data };
+        // Validate against the per-content-type allow-list so arbitrary
+        // columns (e.g. billingTier, claimStatus) can't be mass-mutated.
+        const validated = validateCmsBody(contentType, data);
+        if (!validated.success) {
+          return NextResponse.json(
+            { error: `Invalid field_update for ${contentType}: ${validated.issues.join("; ")}` },
+            { status: 400 }
+          );
+        }
+        updateData = validated.data;
         break;
+      }
 
       case "assign_operator":
         if (!data?.operatorId) {

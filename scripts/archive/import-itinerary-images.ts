@@ -1,7 +1,8 @@
 import "dotenv/config";
 import { sql } from "./sql";
 
-const UNSPLASH_KEY = "BBqUqpMUJJiKvawiCURPSnrHJmcoajR6ULDyMKzuLu4";
+const UNSPLASH_KEY = process.env.UNSPLASH_KEY;
+if (!UNSPLASH_KEY) throw new Error("UNSPLASH_KEY env var is required");
 
 interface UnsplashResult {
   urls: { regular: string };

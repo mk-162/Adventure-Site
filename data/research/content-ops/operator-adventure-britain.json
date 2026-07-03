@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "slug": "adventure-britain",
+    "route": "/directory/adventure-britain",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own site (adventurebritain.com), trading name of Call of the Wild Ltd, registered office Ty Anturiaeth, 83 Church Road, Seven Sisters, Neath SA10 9DT, phone 01639 700388. Corroborated by TripAdvisor listing (Adventure Britain, Swansea, g186466-d1936565, 128 reviews, ranked #2 of 7 Classes & Workshops in Swansea).",
+    "redFlags": [
+      "Operator does NOT serve Snowdonia. Its own homepage and activities page state operations take place in 'the natural playground of the Brecon Beacons (Bannau Brycheiniog) and the Gower Coast' (South Wales only), plus Afan Forest (South Wales) for mountain biking. No Snowdonia/North Wales presence found anywhere on the operator's site or in third-party listings. It should be removed from any Snowdonia combo/slice page and regions set to brecon-beacons + gower only.",
+      "Google rating/review count could not be independently verified — no accessible Google Maps listing data found via search (results blocked/redirected). Seed figure of ~4.5/600+ is unconfirmed; leaving googleRating/reviewCount null rather than guessing. TripAdvisor confirms 128 reviews and a #2/7 local ranking but exact star score wasn't retrievable (page returned 403 to automated fetch).",
+      "Contact email info@adventurebritain.com from seed could not be confirmed on-site; the site's contact page only publishes a phone number and postal address, no email address was visible on the pages crawled. Treat email as unverified.",
+      "Business trades as 'Adventure Britain' but is legally 'Call of the Wild Ltd' — some accommodation partners (e.g. 'Merlin's') referenced in customer reviews are third-party lodging, not part of Adventure Britain itself."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Adventure Britain",
+    "slug": "adventure-britain",
+    "website": "https://www.adventurebritain.com",
+    "tagline": "Canyoning, caving, gorge walking and mountain biking across the Brecon Beacons and Gower Coast",
+    "description": "Adventure Britain is the trading name of Call of the Wild Ltd, a South Wales adventure activity operator based in Seven Sisters, Neath. It runs outdoor pursuits across the Brecon Beacons (Bannau Brycheiniog) National Park and the Gower Coast, including canyoning, caving, rock climbing, gorge walking, canoeing, quad biking and clay pigeon shooting, with mountain biking based in Afan Forest and on the southern edge of the Brecon Beacons.\n\nThe company mainly serves activity weekends, stag and hen groups, corporate team-building days and family activity days, often bundling activities with third-party accommodation partners. It holds Adventure Activities Licensing Service (AALS) licensing, Institute of Leadership and Management accreditation, and City & Guilds accreditation, and has won awards including Welsh Small Business of the Year.\n\nAdventure Britain operates exclusively in South Wales (Brecon Beacons and Gower/Swansea Bay area) and does not run activities in Snowdonia/North Wales.",
+    "uniqueSellingPoint": "One of the longer-established South Wales multi-activity operators, combining canyoning/gorge walking/caving with packaged stag, hen, family and corporate weekends across Brecon Beacons and Gower.",
+    "contact": {
+      "phone": "01639 700388",
+      "email": "info@adventurebritain.com",
+      "address": "Ty Anturiaeth, 83 Church Road, Seven Sisters, Neath, Wales, SA10 9DT"
+    },
+    "lat": 51.7439,
+    "lng": -3.6493,
+    "priceRange": "Mid-Range",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["Canyoning", "Caving", "Climbing", "Gorge Walking", "Mountain Biking"],
+    "regions": ["brecon-beacons", "gower"],
+    "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g186466-d1936565-Reviews-Adventure_Britain-Swansea_Swansea_County_South_Wales_Wales.html"
+  },
+  "fieldSources": {
+    "name/website": "https://www.adventurebritain.com — homepage confirms brand name and domain.",
+    "legalEntity": "https://www.adventurebritain.com/contact/ — 'Call of the Wild Ltd, Ty Anturiaeth, 83 Church Road, Seven Sisters, Neath, Wales, UK, SA10 9DT'.",
+    "phone": "https://www.adventurebritain.com/contact/ — '01639 700388', matches seed (formatted with space in seed as 01639 700 388).",
+    "email": "Seed data only; not found published on adventurebritain.com contact/FAQ pages during this research — unverified.",
+    "address": "https://www.adventurebritain.com/contact/ — Ty Anturiaeth, 83 Church Road, Seven Sisters, Neath, SA10 9DT (this is the head office, explicitly NOT the activity/accommodation address).",
+    "regions": "https://www.adventurebritain.com/ and https://www.adventurebritain.com/activities/ — both state activities take place in 'Brecon Beacons and the Gower Coast' / 'Bannau Brycheiniog, Brecon Beacons National Park and on Gower, Swansea Bay'; no Snowdonia mentioned anywhere on-site.",
+    "activityTypes": "https://www.adventurebritain.com/activities/ (Top 10 list: Canyoning, Climbing, Caving, Gorge Walking, Canoeing, SUP, Quad Biking, Clay Pigeon Shooting, Mountain Walks) and https://www.adventurebritain.com/activity/mountain-biking/ (MTB based in Afan Forest and southern Brecon Beacons) — confirms all seed activities (Canyoning/Caving/Climbing/Gorge Walking/MTB).",
+    "tripadvisorUrl": "Found via web search: https://www.tripadvisor.co.uk/Attraction_Review-g186466-d1936565-Reviews-Adventure_Britain-Swansea_Swansea_County_South_Wales_Wales.html — listed under Swansea, 128 reviews, ranked #2 of 7 Classes & Workshops (exact star rating not retrievable, page blocked automated fetch with 403).",
+    "googleRating/reviewCount": "Not independently verified — no accessible Google Maps data found via search; left null per spec rule against inventing ratings.",
+    "priceRange": "No public price list was retrievable (packages-prices page failed to parse); 'Mid-Range' carried over from seed as a reasonable qualitative estimate given multi-day packaged stag/hen/corporate offerings, but not independently confirmed against a price sheet."
+  }
+}

@@ -2,7 +2,7 @@
 # Download activity images with fallback queries
 set -e
 
-API_KEY="BBqUqpMUJJiKvawiCURPSnrHJmcoajR6ULDyMKzuLu4"
+API_KEY="${UNSPLASH_KEY:?UNSPLASH_KEY env var required}"
 IMAGES_DIR="public/images"
 ATTRIBUTIONS_FILE="$IMAGES_DIR/attributions.json"
 

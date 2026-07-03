@@ -44,14 +44,7 @@ export async function getEvents(options?: {
     }
   }
 
-  // Count query
-  const countResult = await db
-    .select({ count: sql<number>`count(*)` })
-    .from(events)
-    .where(and(...conditions));
-
-  const total = Number(countResult[0]?.count || 0);
-
+  // Count + data are independent — run in parallel.
   let query = db
     .select({
       event: events,
@@ -69,7 +62,15 @@ export async function getEvents(options?: {
     query = query.offset(options.offset) as typeof query;
   }
 
-  const data = await query;
+  const [countResult, data] = await Promise.all([
+    db
+      .select({ count: sql<number>`count(*)` })
+      .from(events)
+      .where(and(...conditions)),
+    query,
+  ]);
+  const total = Number(countResult[0]?.count || 0);
+
   return { events: data, total };
 }
 

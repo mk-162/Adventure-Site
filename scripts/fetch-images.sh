@@ -4,7 +4,7 @@
 
 set -e
 
-API_KEY="BBqUqpMUJJiKvawiCURPSnrHJmcoajR6ULDyMKzuLu4"
+API_KEY="${UNSPLASH_KEY:?UNSPLASH_KEY env var required}"
 BASE_DIR="$(dirname "$0")/.."
 IMAGES_DIR="$BASE_DIR/public/images"
 ATTRIBUTIONS_FILE="$IMAGES_DIR/attributions.json"

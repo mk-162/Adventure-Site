@@ -1,4 +1,4 @@
-import { getEvents, getEventMonths } from "@/lib/queries";
+import { getEvents, getEventMonths, getRegionBySlug } from "@/lib/queries";
 import { EventsClient } from "@/components/events/EventsClient";
 import { EventGridCard } from "@/components/events/EventGridCard";
 import { EventPagination } from "@/components/events/EventPagination";
@@ -19,12 +19,15 @@ export default async function EventsPage({
   const limit = 12; // 12 items per page
   const offset = (page - 1) * limit;
 
+  // Launch gate: scope events to launched regions (Snowdonia only for now).
+  const launchRegion = await getRegionBySlug("snowdonia");
   const [eventsData, months] = await Promise.all([
     getEvents({
       type: category,
       month,
       limit,
-      offset
+      offset,
+      regionId: launchRegion?.id,
     }),
     getEventMonths(),
   ]);

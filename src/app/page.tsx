@@ -14,6 +14,7 @@ import { JsonLd, createWebSiteSchema, createOrganizationSchema } from "@/compone
 import { getFeaturedItineraries } from "@/lib/queries";
 import { ThisWeekendWidget } from "@/components/events/ThisWeekendWidget";
 import { getEffectiveTier } from "@/lib/trial-utils";
+import { isLaunchRegion } from "@/lib/launch";
 
 /** Build a map of region slug → activity type slugs that exist in that region */
 async function _getRegionActivityMap(): Promise<Record<string, string[]>> {
@@ -59,7 +60,7 @@ async function _getHomePageData() {
   ]);
 
   return {
-    regions: regionsData,
+    regions: regionsData.filter((r) => isLaunchRegion(r.slug)),
     activities: activitiesData,
     events: eventsData,
     operators: operatorsData,

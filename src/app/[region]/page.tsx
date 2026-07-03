@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { getRegionWithStats, getActivitiesByRegion, getAccommodationByRegion, getOperators, getRegionEntitiesForMap, getActivityTypesForRegion } from "@/lib/queries";
-import { isLaunchRegion } from "@/lib/launch";
+import { isLaunchRegion, isLaunchCombo, isLaunchBestList } from "@/lib/launch";
 import type { MapMarker } from "@/components/ui/MapView";
 import { TopExperiences } from "@/components/regions/TopExperiences";
 import { AccommodationCard } from "@/components/cards/accommodation-card";
@@ -535,9 +535,20 @@ export default async function RegionPage({ params }: RegionPageProps) {
   // Check if region has any content at all
   const hasContent = activities.length > 0 || accommodation.length > 0 || mapEntities.events.length > 0;
 
-  // If no content, fetch other regions to suggest
+  // If no content, fetch other regions to suggest (launch regions only, so
+  // suggestions never point at gated 404s)
   const allRegions = !hasContent ? await getAllRegions() : [];
-  const otherRegions = allRegions.filter(r => r.slug !== regionSlug).slice(0, 6);
+  const otherRegions = allRegions
+    .filter(r => r.slug !== regionSlug && isLaunchRegion(r.slug))
+    .slice(0, 6);
+
+  // Launch gate: only link to verified combo / best-of pages (others 404).
+  const launchActivityTypes = activityTypesWithCount.filter((item) =>
+    isLaunchCombo(regionSlug, item.activityType.slug)
+  );
+  const launchBestLists = bestLists.filter((list) =>
+    isLaunchBestList(regionSlug, list.slug)
+  );
 
   // Extract structured content from description
   const introText = extractIntro(region.description) || `Discover the adventures waiting for you in ${region.name}.`;
@@ -710,13 +721,13 @@ export default async function RegionPage({ params }: RegionPageProps) {
             )}
 
             {/* Explore by Activity Grid */}
-            {activityTypesWithCount.length > 0 && (
+            {launchActivityTypes.length > 0 && (
               <section className="scroll-mt-32">
                 <div className="flex justify-between items-end mb-4 lg:mb-5">
                   <h3 className="text-lg lg:text-xl font-bold text-primary">Explore by Activity</h3>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-4">
-                  {activityTypesWithCount.map((item) => (
+                  {launchActivityTypes.map((item) => (
                     <Link
                       key={item.activityType.id}
                       href={`/${regionSlug}/${item.activityType.slug}`}
@@ -786,13 +797,13 @@ export default async function RegionPage({ params }: RegionPageProps) {
             )}
 
             {/* Our Top Picks - Best-Of Lists */}
-            {bestLists.length > 0 && (
+            {launchBestLists.length > 0 && (
               <section className="scroll-mt-32">
                 <div className="flex justify-between items-end mb-4 lg:mb-5">
                   <h3 className="text-lg lg:text-xl font-bold text-primary">Our Top Picks</h3>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5">
-                  {bestLists.map((list) => (
+                  {launchBestLists.map((list) => (
                     <BestOfCard
                       key={list.slug}
                       title={list.title}

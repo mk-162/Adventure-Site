@@ -12,7 +12,7 @@ import {
   posts
 } from '@/db/schema';
 import { eq, sql } from 'drizzle-orm';
-import { isLaunchRegion, isLaunchCombo } from '@/lib/launch';
+import { isLaunchRegion, LAUNCH_COMBOS } from '@/lib/launch';
 
 const BASE_URL = 'https://adventurewales.co.uk';
 
@@ -274,15 +274,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   });
 
   // Combo pages: region + activity type (NEW URL - was /{region}/things-to-do/{activity})
-  comboPagesData.forEach((combo) => {
-    if (LAUNCH_SNOWDONIA_ONLY && !isLaunchCombo(combo.regionSlug, combo.activityTypeSlug)) return;
-    sitemap.push({
-      url: `${BASE_URL}/${combo.regionSlug}/${combo.activityTypeSlug}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.6,
+  // In launch mode, drive from the allowlist directly — some verified combos are
+  // JSON-only (no DB activity rows) so they wouldn't appear in comboPagesData.
+  if (LAUNCH_SNOWDONIA_ONLY) {
+    LAUNCH_COMBOS.forEach((key) => {
+      sitemap.push({
+        url: `${BASE_URL}/${key}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.6,
+      });
     });
-  });
+  } else {
+    comboPagesData.forEach((combo) => {
+      sitemap.push({
+        url: `${BASE_URL}/${combo.regionSlug}/${combo.activityTypeSlug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.6,
+      });
+    });
+  }
 
   // Tag pages
   tagsData.forEach((tag) => {

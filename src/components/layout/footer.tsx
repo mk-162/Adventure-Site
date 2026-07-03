@@ -1,13 +1,15 @@
 import Link from "next/link";
 import { Mountain, Facebook, Instagram, Twitter, Camera, Mail, Globe } from "lucide-react";
+import { isLaunchRegion } from "@/lib/launch";
 
 const footerLinks = {
+  // Only launched regions are linkable — gated regions 404.
   destinations: [
     { href: "/snowdonia", label: "Snowdonia" },
     { href: "/pembrokeshire", label: "Pembrokeshire" },
     { href: "/brecon-beacons", label: "Brecon Beacons" },
     { href: "/anglesey", label: "Anglesey" },
-  ],
+  ].filter((d) => isLaunchRegion(d.href.replace(/^\//, ""))),
   activities: [
     { href: "/hiking", label: "Hiking" },
     { href: "/coasteering", label: "Coasteering" },

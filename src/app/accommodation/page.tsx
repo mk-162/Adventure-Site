@@ -1,12 +1,14 @@
 import Link from "next/link";
-import { getAccommodation, getAllRegions } from "@/lib/queries";
+import { getAccommodation, getAllRegions, getRegionBySlug } from "@/lib/queries";
 import { AccommodationFilters } from "@/components/accommodation/AccommodationFilters";
 import { QuirkyStaysWidget } from "@/components/accommodation/QuirkyStaysWidget";
 import { ChevronRight } from "lucide-react";
 
 export default async function AccommodationListingPage() {
+  // Launch gate: scope listings to launched regions (Snowdonia only for now).
+  const launchRegion = await getRegionBySlug("snowdonia");
   const [accommodations, regions] = await Promise.all([
-    getAccommodation({ limit: 50 }),
+    getAccommodation({ limit: 50, regionId: launchRegion?.id }),
     getAllRegions()
   ]);
 

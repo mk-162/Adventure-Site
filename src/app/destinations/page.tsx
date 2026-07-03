@@ -4,12 +4,19 @@ import { MapPin, ChevronRight, Compass } from "lucide-react";
 import { Newsletter } from "@/components/commercial/Newsletter";
 import { RegionMap } from "@/components/ui/RegionMap";
 import type { MapMarker } from "@/components/ui/MapView";
+import { isLaunchRegion } from "@/lib/launch";
 
 export default async function DestinationsPage() {
-  const [regions, regionsWithCoordinates] = await Promise.all([
+  const [allRegions, allRegionsWithCoordinates] = await Promise.all([
     getAllRegions(),
     getAllRegionsWithCoordinates(),
   ]);
+
+  // Launch gate: only show launched regions (gated regions 404).
+  const regions = allRegions.filter((r) => isLaunchRegion(r.slug));
+  const regionsWithCoordinates = allRegionsWithCoordinates.filter((r) =>
+    isLaunchRegion(r.slug)
+  );
 
   // Prepare map markers for all regions
   const regionMarkers: MapMarker[] = regionsWithCoordinates

@@ -29,7 +29,7 @@
         "lng": -3.562
       },
       "estimatedCost": "Free (parking £5)",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "Go early in the morning or late in the afternoon to avoid the crowds. Bring a waterproof jacket, even on a sunny day, as you'll get wet behind the falls!"
     },
     {
@@ -50,7 +50,7 @@
         "lng": -3.742
       },
       "estimatedCost": "Free (parking charge for non-NT members)",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "Combine your visit with a walk along the Nant Llech gorge for a longer, more varied hike."
     },
     {
@@ -71,7 +71,7 @@
         "lng": -3.69
       },
       "estimatedCost": "Free",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "Bring a torch to explore the area just inside the cave entrance – you can see some interesting rock formations. Be extremely careful near the water's edge."
     },
     {
@@ -92,7 +92,7 @@
         "lng": -3.62
       },
       "estimatedCost": "£50-£80pp guided",
-      "operatorSlug": "adventure-britain",
+      "operatorSlug": null,
       "insiderTip": "Book your guided gorge walk well in advance, especially during peak season. Some operators offer smaller group sizes for a more personalized experience."
     },
     {
@@ -113,7 +113,7 @@
         "lng": -3.57
       },
       "estimatedCost": "£50-£80pp guided",
-      "operatorSlug": "black-mountain-adventure",
+      "operatorSlug": null,
       "insiderTip": "The Nedd Fechan is known for its crystal-clear water. Bring a waterproof camera to capture the stunning scenery."
     },
     {
@@ -134,7 +134,7 @@
         "lng": -3.575
       },
       "estimatedCost": "Free (parking charges may apply)",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "Combine your visit with a trip to the nearby Dinas Rock climbing area."
     },
     {
@@ -155,7 +155,7 @@
         "lng": -3.562
       },
       "estimatedCost": "Free (parking £5)",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "Look out for dippers and grey wagtails along the river banks. These birds are specially adapted to living near fast-flowing water."
     }
   ],

@@ -29,7 +29,7 @@
         "lng": -5.2306
       },
       "estimatedCost": "Free (parking £5) or £60pp guided",
-      "operatorSlug": "tyf-adventure",
+      "operatorSlug": null,
       "insiderTip": "Walk further around the coast from the main Blue Lagoon for quieter swimming spots and less crowded jump locations."
     },
     {
@@ -50,7 +50,7 @@
         "lng": -5.2705
       },
       "estimatedCost": "Free (parking charges may apply) or £70pp guided",
-      "operatorSlug": "preseli-venture",
+      "operatorSlug": null,
       "insiderTip": "Check the tide times carefully before setting out, as some sections become impassable at high tide. Keep an eye out for choughs nesting on the cliffs."
     },
     {
@@ -71,7 +71,7 @@
         "lng": -4.9139
       },
       "estimatedCost": "Free (parking charges may apply) or £65pp guided",
-      "operatorSlug": "activity-pembrokeshire",
+      "operatorSlug": null,
       "insiderTip": "Combine your coasteering adventure with a visit to the nearby Barafundle Bay, one of the most beautiful beaches in Wales."
     },
     {
@@ -113,7 +113,7 @@
         "lng": -5.2045
       },
       "estimatedCost": "Free (parking charges may apply) or £55pp guided",
-      "operatorSlug": "outer-reef-surf-school",
+      "operatorSlug": null,
       "insiderTip": "Grab an ice cream from the cafe at the harbour after your coasteering adventure. The views are fantastic!"
     },
     {
@@ -134,7 +134,7 @@
         "lng": -5.1299
       },
       "estimatedCost": "Free (parking free) or £65pp guided",
-      "operatorSlug": "celtic-quest-coasteering",
+      "operatorSlug": null,
       "insiderTip": "Keep an eye out for seals and dolphins in the bay. The coastline around Abercastle is a haven for wildlife."
     },
     {
@@ -155,7 +155,7 @@
         "lng": -4.8675
       },
       "estimatedCost": "Free (parking free) or £80pp guided (highly recommended)",
-      "operatorSlug": "preseli-venture",
+      "operatorSlug": null,
       "insiderTip": "This route is for experts only. Strong swell and currents can make it extremely dangerous. Check the forecast meticulously and be prepared to turn back. Tell someone where you are going and when you expect to be back."
     },
     {

@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "slug": "activity-pembrokeshire",
+    "route": "/directory/activity-pembrokeshire",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own website (activitypembrokeshire.wales) homepage, /about, and /contact pages — consistent name, base location (Stackpole Quay), activities, phone, email, and full postal address all corroborate the seed record's core identity.",
+    "redFlags": [
+      "REGION MISMATCH: This operator serves ONLY South Pembrokeshire (Stackpole, Tenby, Saundersfoot, Kilgetty, Narberth, Pembroke, Milford Haven, Haverfordwest per their own /about page). It has zero presence in brecon-beacons, gower, anglesey, llyn-peninsula, south-wales, or mid-wales. Combo pages in those six regions referencing this operator are factually wrong and should be re-pointed to a different, actually-local operator or have this operator removed.",
+      "Seed data phone (07855 954315) and email (info@activitypembrokeshire.wales) do NOT match what's currently published on the operator's own site (phone 07977 543396, email adventure@activity.cymru) — seed contact details appear stale/incorrect and have been corrected in this proposal.",
+      "No independently-verifiable Google or TripAdvisor rating could be located (a TripAdvisor listing could not be confirmed via search; site claims '5/5 on TrustPilot' but without a reviewable count/URL, so no rating fields are populated).",
+      "Companies House / legal entity behind the business was not identified in this pass — could not corroborate ownership/registration."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Activity Pembrokeshire",
+    "slug": "activity-pembrokeshire",
+    "website": "https://www.activitypembrokeshire.wales",
+    "tagline": "Coasteering, sea kayaking and outdoor adventures based at Stackpole Quay in South Pembrokeshire",
+    "description": "Activity Pembrokeshire is a small adventure activity provider based at Stackpole Quay near Pembroke, operating in South Pembrokeshire since 2015. They run coasteering, sea kayaking, paddle boarding and rock climbing sessions along the coastline around Stackpole, Tenby, Saundersfoot, and the wider south Pembrokeshire area, aimed at beginners through to experienced adventurers, individuals, families and groups.\n\nAll equipment (wetsuits, buoyancy aids, helmets) is provided and sessions are led by qualified instructors. The business operates exclusively in South Pembrokeshire — it has no presence or activity offering in any other Welsh region.",
+    "uniqueSellingPoint": "Home-turf specialist based right at Stackpole Quay, one of South Pembrokeshire's best coasteering launch points.",
+    "contact": {
+      "phone": "07977 543396",
+      "email": "adventure@activity.cymru",
+      "address": "Stackpole Quay, Pembroke, Pembrokeshire, SA70 5DL"
+    },
+    "lat": 51.6183,
+    "lng": -4.9048,
+    "priceRange": "unknown",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["coasteering", "sea-kayaking", "paddleboarding", "rock-climbing"],
+    "regions": ["pembrokeshire"],
+    "tripadvisorUrl": null
+  },
+  "fieldSources": {
+    "name": "https://www.activitypembrokeshire.wales — homepage title/branding confirms 'Activity Pembrokeshire'.",
+    "website": "https://www.activitypembrokeshire.wales — operator's own primary domain, live and responding.",
+    "tagline": "https://www.activitypembrokeshire.wales — homepage strapline: 'Coasteering, sea kayaking and outdoor adventures in the South of Pembrokeshire'.",
+    "contact.phone": "https://www.activitypembrokeshire.wales/contact — listed phone number 07977 543396 (differs from seed 07855 954315, which is stale).",
+    "contact.email": "https://www.activitypembrokeshire.wales/contact — listed email adventure@activity.cymru (differs from seed info@activitypembrokeshire.wales, which is stale/unconfirmed).",
+    "contact.address": "https://www.activitypembrokeshire.wales/contact — full address given as 'Stackpole Quay, Pembroke, United Kingdom, SA70 5DL'.",
+    "lat/lng": "Approximate coordinates for Stackpole Quay, Pembrokeshire, derived from public gazetteer knowledge (not independently pin-verified against the operator's own map embed) — treat as approximate.",
+    "activityTypes": "https://www.activitypembrokeshire.wales — homepage lists coasteering, paddle boarding, sea kayaking, rock climbing as core activities.",
+    "regions": "https://www.activitypembrokeshire.wales/about — explicitly states service area as South Pembrokeshire only: Tenby, Saundersfoot, Kilgetty, Narberth, Pembroke, Milford Haven, Haverfordwest, Stackpole. No mention of any other Welsh region.",
+    "founding/history": "https://www.activitypembrokeshire.wales/about — 'Since launching in 2015, we've helped hundreds of families, groups and individuals explore the coastline...'.",
+    "googleRating/reviewCount": "Not sourced — no verifiable TripAdvisor or Google listing located in this pass; left null per spec rule against inventing ratings.",
+    "tripadvisorUrl": "Not found — search attempts (Bing) did not surface a confirmed TripAdvisor listing for this specific business; left null."
+  }
+}

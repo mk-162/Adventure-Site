@@ -29,7 +29,7 @@
         "lng": -3.555
       },
       "estimatedCost": "Free (parking £5)",
-      "operatorSlug": "adventure-britain",
+      "operatorSlug": null,
       "insiderTip": "Go early (before 9am) or late (after 5pm) to avoid the worst of the crowds. The light is also best for photos at these times."
     },
     {
@@ -38,8 +38,8 @@
       "description": "A series of smaller, shallower pools along the Mellte River, perfect for a more relaxed swim. There are several small waterfalls and rock formations to explore. This spot is much less crowded than Sgwd yr Eira, making it ideal for a peaceful dip.",
       "difficulty": "Easy",
       "duration": "1-2 hours",
-      "distance": "null",
-      "elevationGain": "null",
+      "distance": null,
+      "elevationGain": null,
       "bestFor": "Families with young children, those seeking a gentle swim",
       "notSuitableFor": "Serious swimmers looking for a challenging swim",
       "bestSeason": "June-August",
@@ -59,8 +59,8 @@
       "description": "The largest natural lake in South Wales, offering calm waters perfect for swimming, kayaking, and paddleboarding. The views of the surrounding mountains are stunning. There's a multi-activity centre on the lake offering various watersports.",
       "difficulty": "Easy",
       "duration": "Varies",
-      "distance": "null",
-      "elevationGain": "null",
+      "distance": null,
+      "elevationGain": null,
       "bestFor": "Families, watersports enthusiasts, those seeking a leisurely swim",
       "notSuitableFor": "Those seeking a wild and secluded swim",
       "bestSeason": "May-September",
@@ -71,7 +71,7 @@
         "lng": -3.254
       },
       "estimatedCost": "Free (parking/activities extra)",
-      "operatorSlug": "llangorse-multi-activity-centre",
+      "operatorSlug": null,
       "insiderTip": "Hire a kayak or paddleboard to explore the lake fully. Look out for the crannog (artificial island) which is believed to be the only one in Wales."
     },
     {
@@ -80,8 +80,8 @@
       "description": "A gentle, meandering river that's ideal for a leisurely swim. The stretch near Brecon town is particularly pleasant, with grassy banks and easy access. Be aware of the current, especially after heavy rain.",
       "difficulty": "Moderate",
       "duration": "1-2 hours",
-      "distance": "null",
-      "elevationGain": "null",
+      "distance": null,
+      "elevationGain": null,
       "bestFor": "Experienced river swimmers, those seeking a longer swim",
       "notSuitableFor": "Beginners, children (due to the current)",
       "bestSeason": "June-August",
@@ -101,8 +101,8 @@
       "description": "A small, deep pool fed by a waterfall, known for its striking blue color. The water is very cold and the pool is quite small, but it's a beautiful spot for a quick dip. Requires a short walk from the parking area.",
       "difficulty": "Moderate",
       "duration": "1-2 hours",
-      "distance": "null",
-      "elevationGain": "null",
+      "distance": null,
+      "elevationGain": null,
       "bestFor": "Experienced wild swimmers, those seeking a short, invigorating swim",
       "notSuitableFor": "Beginners, children (due to the cold water and depth)",
       "bestSeason": "July-August (but still cold!)",
@@ -122,8 +122,8 @@
       "description": "The tallest waterfall in South Wales, with a plunge pool at its base. The pool is deep and cold, but the setting is spectacular. You can walk behind the waterfall, but be prepared to get wet! Access is via a steep path.",
       "difficulty": "Challenging",
       "duration": "2-3 hours",
-      "distance": "null",
-      "elevationGain": "null",
+      "distance": null,
+      "elevationGain": null,
       "bestFor": "Experienced wild swimmers, adventurous types",
       "notSuitableFor": "Beginners, those with mobility issues",
       "bestSeason": "May-September",
@@ -143,8 +143,8 @@
       "description": "A large reservoir surrounded by forests and mountains. There are several access points for swimming, including a small beach area. The water is generally clean and calm, making it a good option for a longer swim.",
       "difficulty": "Moderate",
       "duration": "Varies",
-      "distance": "null",
-      "elevationGain": "null",
+      "distance": null,
+      "elevationGain": null,
       "bestFor": "Experienced open water swimmers, those seeking a longer swim",
       "notSuitableFor": "Beginners (due to the size of the reservoir)",
       "bestSeason": "June-September",
@@ -164,8 +164,8 @@
       "description": "A more remote and peaceful reservoir tucked away in the Black Mountains. The water is clear and cold, and the surrounding scenery is stunning. It requires a bit of a drive along narrow roads to reach, but it's worth it for the tranquility.",
       "difficulty": "Challenging",
       "duration": "2-3 hours",
-      "distance": "null",
-      "elevationGain": "null",
+      "distance": null,
+      "elevationGain": null,
       "bestFor": "Experienced wild swimmers, those seeking solitude and a remote location",
       "notSuitableFor": "Beginners, those with a fear of heights (the drive is a bit hairy)",
       "bestSeason": "July-August",
@@ -254,7 +254,7 @@
     },
     {
       "question": "Are there any guided wild swimming tours in the Brecon Beacons?",
-      "answer": "Yes, Adventure Britain and Black Mountain Adventure offer guided wild swimming tours in the Brecon Beacons. These tours are a great option for beginners or those who want to explore the area with an experienced guide."
+      "answer": "Yes, several local outdoor activity providers offer guided wild swimming tours in the Brecon Beacons. These tours are a great option for beginners or those who want to explore the area with an experienced guide."
     },
     {
       "question": "Are there any restrictions on where I can swim in the Brecon Beacons?",
@@ -340,7 +340,7 @@
         "description": "A traditional pub in the heart of waterfall country, popular with walkers and wild swimmers. Serves hearty pub fare and local ales.",
         "vibe": "Traditional pub",
         "priceRange": "££",
-        "website": "null",
+        "website": null,
         "knownFor": "Proximity to waterfalls, pub classics"
       },
       {
@@ -352,7 +352,7 @@
         "description": "A cosy pub near Talybont Reservoir, offering a warm welcome and traditional pub food. A great spot to relax after a swim in the reservoir.",
         "vibe": "Cosy pub",
         "priceRange": "££",
-        "website": "null",
+        "website": null,
         "knownFor": "Reservoir views, real ales"
       },
       {
@@ -364,7 +364,7 @@
         "description": "A historic pub in the centre of Brecon, serving a range of beers and pub food. A good option for a post-swim pint in town.",
         "vibe": "Historic pub",
         "priceRange": "££",
-        "website": "null",
+        "website": null,
         "knownFor": "Central location, pub history"
       },
       {
@@ -376,7 +376,7 @@
         "description": "A charming cafe in Brecon, perfect for a coffee and cake after a cold swim. They also serve light lunches and snacks.",
         "vibe": "Cosy cafe",
         "priceRange": "£",
-        "website": "null",
+        "website": null,
         "knownFor": "Coffee, homemade cakes"
       }
     ],
@@ -397,7 +397,7 @@
         "type": "campsite",
         "priceRange": "£",
         "nearestSpot": "Talybont Reservoir, 2km",
-        "website": "null"
+        "website": null
       },
       {
         "name": "Peterstone Court",

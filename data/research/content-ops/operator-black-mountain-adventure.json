@@ -1,0 +1,69 @@
+{
+  "_meta": {
+    "slug": "black-mountain-adventure",
+    "route": "/directory/black-mountain-adventure",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own website (blackmountain.co.uk), Companies House (04659715, BLACK MOUNTAIN ACTIVITIES LIMITED), HSE AALA licensing register (licence L161658, provider ref R0704), VisitWales (listing 529181), Visit Mid Wales, Bannau Brycheiniog National Park business directory, and TripAdvisor (d243012, 4.8/5, 291 reviews). All sources agree on address (The Activity Centre, Three Cocks/Aberllynfi, Brecon LD3 0SD), phone (01497 847897), and email (info@blackmountain.co.uk). 'Black Mountain Adventure' is the operator's own trading name on its website and social channels; 'Black Mountain Activities' is the legal/registered company name used on VisitWales and TripAdvisor.",
+    "redFlags": [
+      "DUPLICATE ENTITY: this slug (operator-black-mountain-adventure) and operator-black-mountain-activities refer to the exact same legal business (Companies House 04659715), same address/phone/email/AALS licence. Publishing both as separate directory listings is factually misleading. Existing research (data/research/content-ops/operator-black-mountain-activities.json, blocked-operators-evidence-pack.md) already flags this and recommends this slug (black-mountain-adventure, matching the live website's trading name) as canonical, with black-mountain-activities redirected into it.",
+      "REGION MISMATCH: this operator has ONE fixed location — Three Cocks (Aberllynfi), Powys, in the eastern/central Bannau Brycheiniog (Brecon Beacons) National Park, near Hay-on-Wye. It does NOT operate in pembrokeshire, gower, anglesey, llyn-peninsula, or south-wales, and there is no evidence it serves 'mid-wales' as a distinct offering beyond its Powys base being loosely within that wider area. Combo pages tagging this operator against pembrokeshire/gower/anglesey/llyn-peninsula/south-wales are incorrect and should be corrected or removed. Real region is brecon-beacons only (mid-wales is a stretch and should be dropped unless editorially justified by Powys county overlap).",
+      "Geographic naming trap: this is 'Black Mountains' (plural, near Hay-on-Wye/Talgarth, eastern Beacons) — NOT the unrelated 'Black Mountain' (Mynydd Du, singular, western Beacons near Llanddeusant). Do not conflate the two in copy.",
+      "No freely licensed logo/cover imagery found (Openverse/Unsplash/Wikimedia) — all photography is operator-copyrighted; requires direct permission before publishing images.",
+      "Google Maps rating not independently verified in this pass; only TripAdvisor rating is sourced."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Black Mountain Adventure",
+    "slug": "black-mountain-adventure",
+    "legalName": "BLACK MOUNTAIN ACTIVITIES LIMITED",
+    "website": "https://www.blackmountain.co.uk",
+    "tagline": "Award-winning outdoor activity centre at Three Cocks in the Brecon Beacons, near Hay-on-Wye",
+    "description": "Black Mountain Adventure (registered as Black Mountain Activities Limited) is an outdoor adventure centre established in 1992, based at The Activity Centre, Three Cocks (Aberllynfi), near Brecon, Powys, within the Bannau Brycheiniog (Brecon Beacons) National Park — roughly 6 miles south-west of Hay-on-Wye.\n\nThe centre holds an active HSE AALA licence (L161658, provider ref R0704, expires June 2027) covering gorge scrambling, caving, rock climbing, abseiling, kayaking, canoeing, white water rafting, improvised rafting, hill and mountain walking, and stand-up paddleboarding. It is a British Canoeing Approved Centre and holds Archery GB certification. Additional non-licensed activities include archery, clay pigeon shooting, high ropes/zip wire, mountain biking, land carting, raft building, orienteering, boat hire, and guided walking/biking.\n\nThe centre serves individuals, families, stag/hen groups, corporate groups, and schools, and is within roughly 2 hours of most of South Wales and the West Midlands. It has won regional business awards including Best Adventure Centre in the Brecon Beacons at the Biz Growth Wales SME Welsh Enterprise Awards 2025.",
+    "uniqueSellingPoint": "One of the longest-established multi-activity centres in the Brecon Beacons (trading since 1992), with a full AALA licence covering the core Welsh adventure disciplines (gorge walking, caving, climbing, kayaking, rafting) at a single fixed base near Hay-on-Wye.",
+    "contact": {
+      "phone": "01497 847897",
+      "email": "info@blackmountain.co.uk",
+      "address": "The Activity Centre, Three Cocks (Aberllynfi), Brecon, Powys, LD3 0SD, Wales"
+    },
+    "lat": 52.02566,
+    "lng": -3.21503,
+    "priceRange": "From approx. £47/person for half-day gorge adventure or caving sessions (as of mid-2026 per operator website) — verify current prices before publishing as they change seasonally",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": [
+      "gorge-walking",
+      "caving",
+      "rock-climbing",
+      "abseiling",
+      "kayaking",
+      "canoeing",
+      "white-water-rafting",
+      "stand-up-paddleboarding",
+      "archery",
+      "high-ropes",
+      "mountain-biking"
+    ],
+    "regions": ["brecon-beacons"],
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g186454-d243012-Reviews-Black_Mountain_Adventure-Brecon_Brecon_Beacons_National_Park_Wales.html"
+  },
+  "fieldSources": {
+    "name/legalName": "https://find-and-update.company-information.service.gov.uk/company/04659715 — Companies House record for BLACK MOUNTAIN ACTIVITIES LIMITED, no. 04659715; trading name 'Black Mountain Adventure' confirmed on https://www.blackmountain.co.uk",
+    "website": "https://www.visitwales.com/activity/activity/black-mountain-activities-529181 — VisitWales listing links to blackmountain.co.uk as the operator's official site",
+    "contact.phone/email": "https://www.blackmountain.co.uk/contact-us/ — operator's own contact page; corroborated by https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0704",
+    "contact.address": "https://find-and-update.company-information.service.gov.uk/company/04659715 and https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0704 — both list The Activity Centre, Three Cocks, Brecon LD3 0SD",
+    "lat/lng": "https://www.visitwales.com/activity/activity/black-mountain-activities-529181 — official VisitWales tourism listing coordinates for this address",
+    "activityTypes": "https://aala.hse.gov.uk/aala/provider_detail.php?ref_no=R0704 (licensed activities: abseiling, canoeing, caving, gorge scrambling, hill/mountain walking, improvised rafting, kayaking, SUP/mega SUP, rock climbing, white water rafting) and https://www.blackmountain.co.uk/ (unlicensed extras: archery, clay pigeon shooting, high ropes, mountain biking, land carting, orienteering, boat hire)",
+    "regions": "Determined from operator address and https://bannaubrycheiniog.org/businesses/black-mountain-adventure/ (National Park business listing) — single fixed site inside Bannau Brycheiniog (Brecon Beacons) National Park; no evidence of operations in pembrokeshire, gower, anglesey, llyn-peninsula, or south-wales",
+    "priceRange": "https://www.blackmountain.co.uk/tours/gorge-adventure/ and https://www.blackmountain.co.uk/tours/caving/ — both list 'from £47/person' as of the prior research pass (2026-06-04); re-verify against live site before publishing",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g186454-d243012-Reviews-Black_Mountain_Adventure-Brecon_Brecon_Beacons_National_Park_Wales.html — 4.8/5, 291 reviews, listed under both 'Black Mountain Adventure' and 'Black Mountain Activities'",
+    "duplicateSlugFlag": "data/research/content-ops/operator-black-mountain-activities.json and data/research/content-ops/blocked-operators-evidence-pack.md (internal prior research, both confirm same legal entity under two directory slugs)"
+  },
+  "editorialActionRequired": [
+    "Resolve duplicate directory entries: merge or 301-redirect /directory/black-mountain-activities into /directory/black-mountain-adventure (this slug), since blackmountain.co.uk uses 'Black Mountain Adventure' as its trading identity.",
+    "Correct the 7 Welsh-region combo pages currently referencing this operator (pembrokeshire, brecon-beacons, gower, anglesey, llyn-peninsula, south-wales, mid-wales combos) — only brecon-beacons is factually supportable; the other 6 should have this operator removed/replaced.",
+    "Source a properly licensed logo/cover image via direct permission request to info@blackmountain.co.uk before publishing."
+  ]
+}

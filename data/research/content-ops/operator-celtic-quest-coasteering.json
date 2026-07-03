@@ -1,437 +1,49 @@
 {
   "_meta": {
-    "task": "content-ops-084-operator-celtic-quest-coasteering",
-    "contentItem": "operator-celtic-quest-coasteering",
-    "contentType": "operator",
     "slug": "celtic-quest-coasteering",
     "route": "/directory/celtic-quest-coasteering",
-    "commercialTier": "unclassified_operator",
-    "researchedAt": "2026-06-04",
-    "recommendedNextStatus": "qa_needed",
-    "researchOutcome": "substantially_complete_with_verification_flags",
-    "identityConfidence": "HIGH — operator confirmed via official website (celticquestcoasteering.com), National Coasteering Charter member listing, VisitPembrokeshire, Visit Wales, Meet in Wales, TripAdvisor, and Facebook page"
-  },
-
-  "proposedOperatorData": {
-    "name": "Celtic Quest Coasteering",
-    "nameVariants": [],
-    "nameNote": "No significant trading-name variants found. The Facebook page, all tourism listings, and the official website consistently use 'Celtic Quest Coasteering'. The slug 'celtic-quest-coasteering' matches the canonical name.",
-    "slug": "celtic-quest-coasteering",
-    "website": "https://www.celticquestcoasteering.com",
-    "websiteSource": "https://www.celticquestcoasteering.com/",
-    "websiteNote": "Active as of June 2026. Booking system is live via FareHarbor embedded calendar.",
-    "foundedApprox": "c.2008",
-    "foundedNote": "The operator's own homepage states 'Established in 2008'. Some third-party listings (National Coasteering Charter summary, aggregated tourism content) cite 2009. The 2008 figure from the operator's own site is the most authoritative, but a human editor should verify directly if an exact founding year is to be published.",
-    "foundedSource": "https://www.celticquestcoasteering.com/ (homepage states 'Established in 2008')",
-    "contact": {
-      "phone": "01348 837337",
-      "phoneNote": "Listed on the operator's own contact page as the primary number, with office hours 9am–9pm, 7 days a week. Consistent across all tourism listings checked (Visit Pembrokeshire, National Coasteering Charter, Meet in Wales). No conflicting numbers found — high confidence.",
-      "phoneSource": "https://www.celticquestcoasteering.com/contact-us/",
-      "phoneMobile": "07816 161985",
-      "phoneMobileNote": "SMS/WhatsApp number listed on the operator's contact page. Not listed as the primary booking number.",
-      "phoneMobileSource": "https://www.celticquestcoasteering.com/contact-us/",
-      "email": "info@celticquestcoasteering.com",
-      "emailNote": "Confirmed on operator contact page and consistent across all third-party listings (National Coasteering Charter, Visit Pembrokeshire).",
-      "emailSource": "https://www.celticquestcoasteering.com/contact-us/",
-      "officeHours": "9am–9pm, 7 days a week",
-      "officeHoursSource": "https://www.celticquestcoasteering.com/contact-us/",
-      "address": {
-        "line1": "Abereiddy Beach",
-        "locality": "Abereiddy",
-        "town": "nr St Davids",
-        "county": "Pembrokeshire",
-        "postcode": "SA62 6DT",
-        "country": "Wales",
-        "addressNote": "Address consistent across all sources. 'nr St Davids' is used on the contact page; Visit Pembrokeshire records the locality as 'Abereiddy'. The activity meets at the beach car park."
-      },
-      "addressSource": "https://www.celticquestcoasteering.com/contact-us/ and https://www.visitpembrokeshire.com/activity-listing/celtic-quest-coasteering",
-      "what3words": "creatures.juggler.riches",
-      "what3wordsSource": "https://www.celticquestcoasteering.com/contact-us/",
-      "googleMapsLink": "https://bit.ly/abereiddybeach",
-      "googleMapsLinkSource": "https://www.celticquestcoasteering.com/contact-us/",
-      "googleMapsNote": "Short redirect URL provided on operator contact page. Redirects to Google Maps Abereiddy Beach. Resolve to full Maps URL before publishing in structured data."
-    },
-    "location": {
-      "lat": 51.936452,
-      "lng": -5.204395,
-      "latLngNote": "Coordinates sourced from VisitPembrokeshire structured listing for Celtic Quest Coasteering (51.936452, -5.204395). Cross-referenced against general Abereiddy Beach GPS data from unitedkingdommaps.com (approx 51.9343, -5.2057) — good agreement. The VisitPembrokeshire figure is more precise and is the recommended pin. Verify against Google Maps before publishing.",
-      "latLngSource": "https://www.visitpembrokeshire.com/activity-listing/celtic-quest-coasteering",
-      "latLngCrossReference": "https://www.unitedkingdommaps.com/pembrokeshire/abereiddy (approx 51.9343, -5.2057)",
-      "region": "pembrokeshire",
-      "nationalPark": "Pembrokeshire Coast National Park",
-      "locality": "Abereiddy, nr St Davids",
-      "operationalAreas": [
-        {
-          "name": "Abereiddy Bay / Blue Lagoon",
-          "note": "Primary operating location. The Blue Lagoon (a flooded slate quarry) is the main coasteering site. The Red Bull Cliff Diving World Series was hosted here in 2012, 2013, and 2016.",
-          "source": "https://www.visitpembrokeshire.com/activity-listing/celtic-quest-coasteering"
-        }
-      ]
-    },
-    "description": {
-      "short": "Celtic Quest Coasteering is a Pembrokeshire-based adventure operator specialising in guided coasteering sessions along the Abereiddy Bay shoreline and Blue Lagoon. Founded in 2008, they offer family, adult, corporate, and accessible sessions involving cliff jumping, cave exploration, adventure swimming, and sea-level traversing — all equipment provided. Fully AALA-licensed and a member of the National Coasteering Charter.",
-      "shortNote": "Drafted from verified website content cross-referenced with Visit Pembrokeshire, National Coasteering Charter, and Meet in Wales. Needs editorial review before publishing. Do not use the phrase 'established in 2008' without direct operator confirmation of the founding year discrepancy.",
-      "shortSource": "https://www.celticquestcoasteering.com/, https://www.visitpembrokeshire.com/activity-listing/celtic-quest-coasteering, https://www.nationalcoasteeringcharter.org.uk/member/celtic-quest-coasteering/",
-      "full": "Celtic Quest Coasteering is one of Wales's most established coasteering operators, based at Abereiddy Bay in the Pembrokeshire Coast National Park. Founded in 2008, the company set out to make coasteering accessible to everyday people — not just extreme sports enthusiasts — and has since developed a reputation as a premier guide service on this stretch of the South Pembrokeshire coast.\n\nThe company's home base is Abereiddy Beach (SA62 6DT), where activities centre on the famous Blue Lagoon: a flooded Victorian slate quarry connected to the sea, and one of the birthplaces of commercial coasteering in Wales in the 1980s. The Blue Lagoon has also hosted the Red Bull Cliff Diving World Series in 2012, 2013, and 2016.\n\nGuided sessions last approximately 2 hours and include sea-level traversing, cliff jumping, adventure swimming, wave dodging, sea cave exploration, and — for those seeking a seal encounter — swimming alongside the Atlantic grey seals that frequent the bay. Wetsuits, helmets, buoyancy aids, wetsuit socks, hood, and gloves are all supplied. Sessions run twice daily across two seasonal time-slots: 9:30 am and 1:30 pm from March to October, and 11 am and 1 pm from November to February.\n\nThe minimum age for standard public sessions is 8 years (children from 5 may attend by arrangement). Adult, family, children's, corporate, and disabled-accessible sessions are all available. Celtic Quest is fully licensed by the Adventure Activities Licensing Authority (AALA) and is a member of both the National Coasteering Charter and the Pembrokeshire Outdoor Charter Group. Public liability insurance cover is £10 million.\n\nThe company has won Best Visitor Experience in Wales at the National Tourism Awards (2013) and holds the TripAdvisor Travellers' Choice Award (2025).",
-      "fullNote": "Drafted from verified website content and cross-referenced sources. Founding year should be confirmed directly with the operator before publishing. TripAdvisor rating counts and rankings should not be published verbatim as they change continuously — a general reference ('consistently among Wales's highest-rated coasteering providers') is safer for a static directory page."
-    },
-    "activities": [
-      {
-        "name": "Coasteering",
-        "detail": "Guided sea-level traversing, cliff jumping, adventure swimming, wave dodging, cave exploration, and seal-swimming along Abereiddy Bay and the Blue Lagoon. Duration approx 2 hours. All equipment provided.",
-        "location": "Abereiddy Bay / Blue Lagoon, Pembrokeshire Coast National Park",
-        "source": "https://www.celticquestcoasteering.com/"
-      },
-      {
-        "name": "Family Coasteering",
-        "detail": "Adapted sessions for families including children from age 8 (or 5 by arrangement). Same location and equipment.",
-        "source": "https://www.celticquestcoasteering.com/"
-      },
-      {
-        "name": "Corporate / Group Coasteering",
-        "detail": "Corporate and private group sessions. Group discount rate applies for 6 or more participants.",
-        "source": "https://www.celticquestcoasteering.com/"
-      },
-      {
-        "name": "Accessible Coasteering",
-        "detail": "Sessions described as accessible to disabled participants. Operators should be contacted to confirm individual requirements.",
-        "source": "https://www.celticquestcoasteering.com/"
-      }
-    ],
-    "sessionTimes": {
-      "marchToOctober": ["9:30 AM", "1:30 PM"],
-      "novemberToFebruary": ["11:00 AM", "1:00 PM"],
-      "sessionDuration": "Approximately 2 hours",
-      "source": "https://www.celticquestcoasteering.com/contact-us/ and https://www.celticquestcoasteering.com/prices/"
-    },
-    "pricing": {
-      "publiclyAvailable": true,
-      "pricesMustBeVerified": true,
-      "pricingNote": "Prices sourced from the operator's own prices page, fetched June 2026. Prices shown are per-person for standard half-day (approx 2-hour) sessions. These should be verified against the live booking system before publishing as prices can change seasonally. Gift vouchers also available.",
-      "indicativePrices": [
-        {
-          "activity": "Coasteering — standard",
-          "price": "£55 per person",
-          "ageGroup": "Adults and children",
-          "source": "https://www.celticquestcoasteering.com/prices/"
-        },
-        {
-          "activity": "Coasteering — group of 6 or more",
-          "price": "£50 per person",
-          "ageGroup": "Adults and children",
-          "source": "https://www.celticquestcoasteering.com/prices/"
-        }
-      ],
-      "bookingUrl": "https://www.celticquestcoasteering.com/calendar/",
-      "bookingSystem": "FareHarbor (embedded at celticquestcoasteering.com/calendar/)",
-      "giftVouchers": true,
-      "source": "https://www.celticquestcoasteering.com/prices/"
-    },
-    "ageRequirements": {
-      "standardMinimumAge": 8,
-      "minimumAgeByArrangement": 5,
-      "ageNote": "Standard public sessions require a minimum age of 8 years. Children from age 5 may attend by arrangement — contact operator directly. No upper age limit stated.",
-      "source": "https://www.celticquestcoasteering.com/"
-    },
-    "equipmentProvided": [
-      "5mm winter steamer wetsuit",
-      "Watersports helmet",
-      "Buoyancy aid",
-      "Wetsuit socks",
-      "Wetsuit hood",
-      "Wetsuit gloves"
-    ],
-    "equipmentSource": "https://www.celticquestcoasteering.com/prices/",
-    "accreditations": [
-      {
-        "name": "AALA",
-        "full": "Adventure Activities Licensing Authority",
-        "detail": "AALA licence holder. Regular inspections of safety policies, staff training, and equipment maintenance.",
-        "source": "https://www.celticquestcoasteering.com/coasteering-safety/"
-      },
-      {
-        "name": "National Coasteering Charter (NCC)",
-        "detail": "Member of the NCC, which promotes safe commercial coasteering practices in the UK.",
-        "memberPageUrl": "https://www.nationalcoasteeringcharter.org.uk/member/celtic-quest-coasteering/",
-        "source": "https://www.nationalcoasteeringcharter.org.uk/member/celtic-quest-coasteering/"
-      },
-      {
-        "name": "Pembrokeshire Outdoor Charter Group",
-        "detail": "Member. Listed on VisitPembrokeshire.",
-        "source": "https://www.visitpembrokeshire.com/activity-listing/celtic-quest-coasteering"
-      },
-      {
-        "name": "Activities Industry Mutual (AIM)",
-        "detail": "Insurance industry partner.",
-        "source": "https://www.celticquestcoasteering.com/coasteering-safety/"
-      }
-    ],
-    "insurance": {
-      "publicLiabilityLimit": "£10,000,000",
-      "personalInsuranceNote": "Bookings do not include personal travel or accident insurance. Customers advised to arrange separately.",
-      "source": "https://www.celticquestcoasteering.com/coasteering-safety/ and https://www.celticquestcoasteering.com/prices/"
-    },
-    "awards": [
-      {
-        "name": "Best Visitor Experience in Wales",
-        "body": "National Tourism Awards Wales",
-        "year": 2013,
-        "note": "Stated on operator website. Year is 2013 — the listing should mention this award contextually rather than as 'current'.",
-        "source": "https://www.celticquestcoasteering.com/"
-      },
-      {
-        "name": "TripAdvisor Travellers' Choice Award",
-        "year": 2025,
-        "source": "https://www.tripadvisor.com/Attraction_Review-g552047-d1881513-Reviews-Celtic_Quest_Coasteering-Haverfordwest_Pembrokeshire_Wales.html"
-      }
-    ],
-    "notableHistory": {
-      "note": "Abereiddy Bay / Blue Lagoon has hosted the Red Bull Cliff Diving World Series in 2012, 2013, and 2016. Celtic Quest Coasteering is the coasteering operator at this location. The Blue Lagoon is one of the original commercial coasteering sites from the 1980s when coasteering was developed in St Davids.",
-      "source": "https://www.visitpembrokeshire.com/activity-listing/celtic-quest-coasteering"
-    },
-    "socialMedia": {
-      "facebook": {
-        "url": "https://www.facebook.com/CelticQuestCoasteering/",
-        "source": "https://www.facebook.com/CelticQuestCoasteering/"
-      },
-      "instagram": {
-        "note": "Instagram account referenced on operator website but specific handle not confirmed via fetched content. Verify from operator site footer or social links section.",
-        "source": "https://www.celticquestcoasteering.com/"
-      },
-      "youtube": {
-        "note": "YouTube channel referenced on operator website but URL not confirmed via fetched content.",
-        "source": "https://www.celticquestcoasteering.com/"
-      },
-      "whatsapp": {
-        "number": "07816 161985",
-        "source": "https://www.celticquestcoasteering.com/contact-us/"
-      }
-    },
-    "tourismListings": [
-      {
-        "site": "Visit Pembrokeshire",
-        "url": "https://www.visitpembrokeshire.com/activity-listing/celtic-quest-coasteering",
-        "note": "Active listing — coordinates, email, activities, and accreditations cross-referenced here."
-      },
-      {
-        "site": "National Coasteering Charter",
-        "url": "https://www.nationalcoasteeringcharter.org.uk/member/celtic-quest-coasteering/",
-        "note": "Active member listing — confirms phone, email, address, region (South West Wales), NCC membership."
-      },
-      {
-        "site": "Meet in Wales",
-        "url": "https://www.meetinwales.com/activity/activity-operator/celtic-quest-coasteering-575921",
-        "note": "Listed as an activity operator."
-      },
-      {
-        "site": "Show Me Wales (Visit Mid Wales)",
-        "url": "https://www.visitmidwales.co.uk/showmewales/things-to-do/celtic-quest-coasteering-p1727511",
-        "note": "Cross-reference listing for Coasteering in St Davids."
-      },
-      {
-        "site": "TripAdvisor",
-        "url": "https://www.tripadvisor.com/Attraction_Review-g552047-d1881513-Reviews-Celtic_Quest_Coasteering-Haverfordwest_Pembrokeshire_Wales.html",
-        "note": "Travellers' Choice Award 2025 confirmed here."
-      },
-      {
-        "site": "Visit Wales (primary listing)",
-        "url": "https://www.visitwales.com/activity/celtic-quest-coasteering-932512",
-        "note": "Returned 404 during research — URL may have changed or listing may have moved. A second Visit Wales URL was found in search results: https://www.visitwales.com/activity/activity/celtic-quest-coasteering-533661 (also returned 404). Verify both URLs directly on visitwales.com."
-      }
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Identity confirmed via the operator's own website (celticquestcoasteering.com — homepage, contact-us, about-us, prices pages, all live and consistent), corroborated by Visit Pembrokeshire's activity listing, the National Coasteering Charter member directory, and TripAdvisor (ranked #1 of 22 Tours in Haverfordwest, listing g552047-d1881513, 1,730+ reviews). All sources agree on name, phone number, and single physical location.",
+    "redFlags": [
+      "REGION MISMATCH (critical): Celtic Quest Coasteering is a single-site operator that runs exclusively at Abereiddy Bay / the Blue Lagoon, Pembrokeshire (SA62 6DT). Nothing on the operator's own site, Visit Pembrokeshire, or the National Coasteering Charter member page indicates any branch, mobile unit, or partner operation in Brecon Beacons, Gower, Anglesey, Llyn Peninsula, South Wales, or Mid Wales. The combo pages currently referencing this operator in those six regions are factually wrong and should have the reference removed — only pembrokeshire is a real region for this business.",
+      "googleRating not sourced: TripAdvisor confirms very high review volume (1,730+) and a #1 local ranking, but an exact numeric star rating could not be extracted (TripAdvisor detail page returned 403 to automated fetch). Left null per spec rather than guessed — a human should pull the exact figure from TripAdvisor or Google Business before publishing.",
+      "Minor founding-year and email uncertainty: the operator's own homepage has previously stated an establishment year (2008) that some third-party aggregators cite as 2009, and a direct email address was not independently re-verified in this pass (contact form only was confirmed live) — neither blocks publication of the core facts but should be spot-checked before treating as gospel."
     ]
   },
-
-  "images": {
-    "logo": {
-      "status": "BLOCKED",
-      "reason": "The operator's website (celticquestcoasteering.com) displays a logo under all-rights-reserved copyright. No freely licensed version was found on Openverse, Wikimedia Commons, or Unsplash. The logo must be obtained directly from the operator under written permission.",
-      "actionRequired": "Contact Celtic Quest Coasteering at info@celticquestcoasteering.com to request a logo file (SVG or transparent PNG) for non-commercial use on the Adventure Wales directory at /directory/celtic-quest-coasteering. Retain written confirmation of permission."
+  "proposedOperatorData": {
+    "name": "Celtic Quest Coasteering",
+    "slug": "celtic-quest-coasteering",
+    "website": "https://www.celticquestcoasteering.com/",
+    "tagline": "Pembrokeshire's Blue Lagoon coasteering specialists at Abereiddy Bay",
+    "description": "Celtic Quest Coasteering is a Pembrokeshire-based coasteering specialist operating from Abereiddy Bay, home to the Blue Lagoon — a flooded slate quarry that hosted the Red Bull Cliff Diving World Series in 2012, 2013 and 2016. Sessions run roughly 2-2.5 hours along the right-hand side of the bay, combining scramble climbing, rock hopping, adventure swimming and cliff jumping (up to around 10 metres), finishing in the Blue Lagoon itself. The activity is designed to be accessible to non-swimmers, with wetsuits, helmets and buoyancy aids supplied; standard public sessions take ages 8+, with younger children (5+) accommodated by arrangement.\n\nThe business has won Best Visitor Experience at the National Tourism Awards Wales, is AALA-licensed, and is a member of the National Coasteering Charter and the Pembrokeshire Outdoor Charter Group, with public liability cover up to £10 million. Guides meet clients at Abereiddy beach and supply all kit.\n\nCeltic Quest Coasteering operates a single site at Abereiddy in Pembrokeshire and does not run activities anywhere else in Wales — it should not be listed against any other region.",
+    "uniqueSellingPoint": "Established, AALA-licensed Abereiddy/Blue Lagoon specialist with National Tourism Awards Wales recognition and a #1 TripAdvisor ranking among Haverfordwest-area tours.",
+    "contact": {
+      "phone": "01348 837337",
+      "email": "unknown",
+      "address": "Abereiddy Beach, Abereiddy, nr St Davids, Pembrokeshire, SA62 6DT, Wales"
     },
-    "cover": {
-      "status": "CANDIDATE_AVAILABLE",
-      "recommendation": "A Wikimedia Commons CC BY-SA 4.0 image directly depicts coasteering participants at Abereiddy Bay — Celtic Quest's precise operating location. Taken June 2025, so contemporary and directly relevant. This is suitable as an interim cover pending operator-supplied photography. It MUST NOT be captioned as showing a Celtic Quest session (the participants may be from any operator).",
-      "candidates": [
-        {
-          "title": "Coasteering in Pembrokeshire",
-          "description": "Coasteering participants attempting to cross a channel near Abereiddi (Abereiddy), Pembrokeshire Coast National Park",
-          "author": "Albert Tan (Wikimedia user: UserAlbert)",
-          "license": "CC BY-SA 4.0",
-          "licensedVia": "Wikimedia Commons",
-          "wikimediaUrl": "https://commons.wikimedia.org/wiki/File:Coasteering_in_Pembrokeshire.jpg",
-          "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Coasteering_in_Pembrokeshire.jpg",
-          "requiredAttribution": "Photo: Albert Tan / CC BY-SA 4.0 / via Wikimedia Commons",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-          "dateTaken": "2025-06-03",
-          "relevanceNote": "This image was shot at Abereiddy — the exact location where Celtic Quest operates. It is directly relevant as a cover placeholder. Do not caption it as depicting a Celtic Quest Coasteering session; use a generic caption such as 'Coasteering at Abereiddy Bay, Pembrokeshire'."
-        }
-      ],
-      "additionalWikimediaCandidates": {
-        "wikimediaCategory": "https://commons.wikimedia.org/wiki/Category:Abereiddy",
-        "totalFiles": 158,
-        "coasteeringImage": "Abereiddi - Coasteering - geograph.org.uk - 7001459.jpg — sourced from Geograph.org.uk; likely CC BY-SA 2.0 but licence must be confirmed before use.",
-        "bluelagoonSubcategory": "https://commons.wikimedia.org/wiki/Category:Blue_Lagoon,_Abereiddy — 17 files of the Blue Lagoon; confirm individual licences before selecting.",
-        "actionRequired": "A human editor should browse the Wikimedia Commons Category:Abereiddy and its Blue Lagoon subcategory to select the best-quality coasteering or Blue Lagoon image. Confirm the exact licence (CC BY, CC BY-SA, public domain) and photographer credit for each candidate before use."
-      },
-      "operatorPhotosNote": "The operator's website and social media (Facebook: CelticQuestCoasteering) contain action photography. These are copyright Celtic Quest Coasteering and cannot be reproduced without written permission. Requesting a media pack is strongly recommended."
-    },
-    "gallery": {
-      "status": "BLOCKED_UNTIL_OPERATOR_PERMISSION",
-      "reason": "All photography on the operator's website and Facebook page is copyright Celtic Quest Coasteering. The Wikimedia Commons coasteering image (above) can supplement a gallery but should not substitute for operator-supplied activity photos.",
-      "actionRequired": "Request a media pack (minimum 5 JPEGs at 1200px wide, covering multiple activities and the Blue Lagoon setting) from info@celticquestcoasteering.com. Specify the platform and intended non-commercial use."
-    },
-    "generalActionRequired": "Email info@celticquestcoasteering.com to request (1) a logo file and (2) a photography media pack for non-commercial use on the Adventure Wales directory at /directory/celtic-quest-coasteering. The Wikimedia Commons CC BY-SA 4.0 image (Albert Tan, June 2025, depicting coasteering at Abereiddy) is available as a cover placeholder in the interim."
+    "lat": 51.936452,
+    "lng": -5.204395,
+    "priceRange": "£50-£55 per person",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["coasteering"],
+    "regions": ["pembrokeshire"],
+    "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g552047-d1881513-Reviews-Celtic_Quest_Coasteering-Haverfordwest_Pembrokeshire_Wales.html"
   },
-
-  "claimsNeedingHumanReview": [
-    {
-      "claim": "Founding year: 2008 or 2009",
-      "confidence": "MODERATE — operator website says 2008; some aggregated third-party descriptions say 2009",
-      "issue": "The operator's own homepage states 'Established in 2008'. The National Coasteering Charter member page and some aggregated tourism-search summaries reference 2009. The operator website is the most authoritative source, but the discrepancy should be resolved before publishing a founding year claim.",
-      "action": "Confirm directly with the operator (info@celticquestcoasteering.com or 01348 837337) whether the correct founding year is 2008 or 2009."
-    },
-    {
-      "claim": "Visit Wales listing URLs both returned 404",
-      "confidence": "UNVERIFIED — two separate Visit Wales URLs returned 404 during research",
-      "issue": "Two Visit Wales URLs were found in search results (–932512 and –533661); both returned HTTP 404 during research. The operator may still be listed on visitwales.com under a different URL, or the listing may have been removed.",
-      "action": "Visit visitwales.com and search for 'Celtic Quest Coasteering' to confirm whether an active listing exists and obtain the correct URL. Update accreditations section accordingly."
-    },
-    {
-      "claim": "Minimum age 5 vs minimum age 8",
-      "confidence": "MODERATE — both figures appear on the operator's own website",
-      "issue": "The website states a minimum age of 8 for standard public sessions and a minimum age of 5 'by arrangement'. Some tourism listing summaries cite 5 as the minimum without the qualifier. Publishing the wrong figure could create liability or booking confusion.",
-      "action": "Use the nuanced wording: 'Standard sessions: minimum 8 years. Children from 5 may be accommodated by arrangement — contact the operator directly.' Do not publish '5' as a flat minimum without the caveat."
-    },
-    {
-      "claim": "Operator is currently trading and available for bookings in 2026",
-      "confidence": "HIGH",
-      "issue": "The FareHarbor booking calendar appears active. TripAdvisor Travellers' Choice 2025 was awarded, and TripAdvisor reviews extend through 2025. Very low risk — almost certainly trading.",
-      "action": "Confirm at least one available booking date via the calendar (https://www.celticquestcoasteering.com/calendar/) before publishing the listing as bookable."
-    },
-    {
-      "claim": "Instagram and YouTube social media URLs",
-      "confidence": "LOW — referenced on operator site but specific handles/URLs not extracted",
-      "issue": "The operator website references Instagram, YouTube, LinkedIn, and X (Twitter) in addition to Facebook, but the specific handles/URLs for these platforms were not extracted from the fetched page content.",
-      "action": "Retrieve specific social media URLs from the operator's website footer or contact page before adding them to the directory listing."
-    },
-    {
-      "claim": "Red Bull Cliff Diving World Series hosting (2012, 2013, 2016) — attributed to Celtic Quest",
-      "confidence": "MODERATE — the event was at Abereiddy/Blue Lagoon (Celtic Quest's location), but Celtic Quest's own organisational role is unconfirmed",
-      "issue": "VisitPembrokeshire's listing notes the Red Bull Cliff Diving event history at Abereiddy in its description of Celtic Quest. The event was held at the Blue Lagoon where Celtic Quest operates, but the operator's own involvement or endorsement of this claim is not confirmed on the operator's website.",
-      "action": "Use 'Celtic Quest's home base, Abereiddy Bay, hosted the Red Bull Cliff Diving World Series in 2012, 2013, and 2016' rather than implying Celtic Quest itself organised or sponsored the event. Verify if Celtic Quest references this on their own site."
-    }
-  ],
-
-  "sources": [
-    {
-      "url": "https://www.celticquestcoasteering.com/",
-      "description": "Operator primary website — name, activities, 'Established in 2008', accreditations, award mentions, session overview",
-      "accessedAt": "2026-06-04"
-    },
-    {
-      "url": "https://www.celticquestcoasteering.com/contact-us/",
-      "description": "Contact page — phone 01348 837337, SMS/WhatsApp 07816 161985, email info@celticquestcoasteering.com, address Abereiddy Bay nr St Davids SA62 6DT, what3words creatures.juggler.riches, office hours 9am–9pm daily, booking calendar URL",
-      "accessedAt": "2026-06-04"
-    },
-    {
-      "url": "https://www.celticquestcoasteering.com/prices/",
-      "description": "Prices page — £55 standard / £50 for groups of 6+, session times, equipment list, public liability £10m, gift vouchers, FareHarbor booking system",
-      "accessedAt": "2026-06-04"
-    },
-    {
-      "url": "https://www.celticquestcoasteering.com/coasteering-safety/",
-      "description": "Safety page — AALA licence, NCC membership, AIM insurance, Health and Safety at Work compliance, risk assessments, max 1:8 guide ratio (NCC guideline)",
-      "accessedAt": "2026-06-04"
-    },
-    {
-      "url": "https://www.visitpembrokeshire.com/activity-listing/celtic-quest-coasteering",
-      "description": "Visit Pembrokeshire listing — coordinates 51.936452, -5.204395, email, postcode SA62 6DT, categories, NCC and Pembrokeshire Outdoor Charter Group memberships, Red Bull Cliff Diving history, minimum age 5",
-      "accessedAt": "2026-06-04"
-    },
-    {
-      "url": "https://www.nationalcoasteeringcharter.org.uk/member/celtic-quest-coasteering/",
-      "description": "National Coasteering Charter member page — confirmed NCC membership, phone 01348837337, email, address SA62 6DT, region South West Wales",
-      "accessedAt": "2026-06-04"
-    },
-    {
-      "url": "https://www.meetinwales.com/activity/activity-operator/celtic-quest-coasteering-575921",
-      "description": "Meet in Wales activity operator listing",
-      "accessedAt": "2026-06-04"
-    },
-    {
-      "url": "https://www.visitmidwales.co.uk/showmewales/things-to-do/celtic-quest-coasteering-p1727511",
-      "description": "Show Me Wales listing — Coasteering in St Davids cross-reference",
-      "accessedAt": "2026-06-04"
-    },
-    {
-      "url": "https://www.tripadvisor.com/Attraction_Review-g552047-d1881513-Reviews-Celtic_Quest_Coasteering-Haverfordwest_Pembrokeshire_Wales.html",
-      "description": "TripAdvisor — Travellers' Choice Award 2025 confirmed; review history",
-      "accessedAt": "2026-06-04"
-    },
-    {
-      "url": "https://www.facebook.com/CelticQuestCoasteering/",
-      "description": "Official Facebook page — confirms operator identity and branding",
-      "accessedAt": "2026-06-04"
-    },
-    {
-      "url": "https://commons.wikimedia.org/wiki/Category:Abereiddy",
-      "description": "Wikimedia Commons category for Abereiddy — 158 files including coasteering images; Blue Lagoon subcategory (17 files)",
-      "accessedAt": "2026-06-04"
-    },
-    {
-      "url": "https://commons.wikimedia.org/wiki/File:Coasteering_in_Pembrokeshire.jpg",
-      "description": "Wikimedia Commons — CC BY-SA 4.0, author Albert Tan (UserAlbert), taken 2025-06-03. Depicts coasteering participants at Abereiddy Bay, Pembrokeshire Coast National Park. Recommended as cover image placeholder.",
-      "accessedAt": "2026-06-04",
-      "type": "image"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Coasteering_in_Pembrokeshire.jpg",
-      "description": "Direct file URL for the CC BY-SA 4.0 coasteering image (Albert Tan, Abereiddy, June 2025)",
-      "type": "image"
-    },
-    {
-      "url": "https://www.unitedkingdommaps.com/pembrokeshire/abereiddy",
-      "description": "Cross-reference for Abereiddy Beach GPS coordinates (approx 51.9343, -5.2057) — consistent with VisitPembrokeshire figure",
-      "accessedAt": "2026-06-04"
-    }
-  ],
-
-  "sourcesRuledOut": [
-    {
-      "url": "https://www.visitwales.com/activity/celtic-quest-coasteering-932512",
-      "name": "Visit Wales listing (URL variant 1)",
-      "reason": "Returned HTTP 404 during June 2026 research. Could not be used for data extraction."
-    },
-    {
-      "url": "https://www.visitwales.com/activity/activity/celtic-quest-coasteering-533661",
-      "name": "Visit Wales listing (URL variant 2)",
-      "reason": "Returned HTTP 404 during June 2026 research. The operator may still be listed on visitwales.com but under a different URL — requires manual verification."
-    }
-  ],
-
-  "recommendedNextStatus": "qa_needed",
-  "recommendedNextStatusReason": "Research has resolved all five original blockers at least partially: coordinates confirmed (51.936452, -5.204395), phone confirmed (01348 837337), email confirmed (info@celticquestcoasteering.com), cover image candidate identified (CC BY-SA 4.0, Wikimedia Commons, directly depicting Abereiddy Bay). The logo remains hard-blocked — no free-licence version exists and operator permission is required. Three verification flags remain before publishing: (1) logo must be obtained from operator; (2) founding year discrepancy (2008 vs 2009) requires direct confirmation; (3) both Visit Wales listing URLs returned 404 and must be resolved. The operator profile is otherwise substantially complete and ready for QA review.",
-
-  "topThreeBlockers": [
-    {
-      "rank": 1,
-      "blocker": "Logo blocked — no freely licensed logo available",
-      "detail": "The operator's logo is copyright Celtic Quest Coasteering. No open-licence version was found on Openverse, Wikimedia Commons, or Unsplash. The logo field cannot be populated without direct operator permission. A missing logo significantly reduces the professionalism of the directory listing.",
-      "severity": "HIGH",
-      "action": "Email info@celticquestcoasteering.com to request a logo file (SVG or transparent PNG) for non-commercial use on the Adventure Wales directory at /directory/celtic-quest-coasteering. Retain written confirmation of permission."
-    },
-    {
-      "rank": 2,
-      "blocker": "Cover image requires human editorial decision — Wikimedia Commons candidate available but must be approved for use",
-      "detail": "No operator-supplied cover image is available. A directly relevant CC BY-SA 4.0 image exists on Wikimedia Commons (Albert Tan, June 2025, depicting coasteering at Abereiddy Bay — Celtic Quest's exact operating location). This image is licensable but requires: (a) editorial approval to use as a placeholder; (b) correct attribution in the UI ('Photo: Albert Tan / CC BY-SA 4.0'); (c) a caption that does NOT imply it depicts a Celtic Quest session. Requesting a media pack from the operator is strongly recommended as a parallel action.",
-      "severity": "MEDIUM",
-      "action": "Editorial decision needed on whether to publish the Wikimedia Commons placeholder image pending operator-supplied photography. If approved, ensure correct CC BY-SA 4.0 attribution is displayed. Email operator for a media pack in parallel."
-    },
-    {
-      "rank": 3,
-      "blocker": "Founding year discrepancy (2008 vs 2009) and both Visit Wales listing URLs returning 404",
-      "detail": "The operator's own homepage says 'Established in 2008' but some third-party sources reference 2009. Publishing the wrong year undermines credibility. Separately, both Visit Wales listing URLs found in search results returned 404 — the operator may have been delisted or the URL changed. The Visit Wales listing, if active, is a significant trust signal for a tourism directory.",
-      "severity": "LOW",
-      "action": "(1) Confirm founding year directly with operator — call 01348 837337 or email info@celticquestcoasteering.com. (2) Search visitwales.com manually for 'Celtic Quest Coasteering' to confirm whether an active listing exists and obtain the correct URL."
-    }
-  ]
+  "fieldSources": {
+    "name": "https://www.celticquestcoasteering.com/ — homepage and all internal pages consistently use 'Celtic Quest Coasteering'",
+    "website": "https://www.celticquestcoasteering.com/ — operator's own domain, verified live 2026-07-03",
+    "phone": "https://www.celticquestcoasteering.com/contact-us/ — 01348 837337, office hours 9am-9pm 7 days a week; matches National Coasteering Charter member listing",
+    "address": "https://www.celticquestcoasteering.com/contact-us/ and https://www.visitpembrokeshire.com/activity-listing/celtic-quest-coasteering — Abereiddy Beach, SA62 6DT, Pembrokeshire; single meeting point for all sessions",
+    "lat/lng": "https://www.visitpembrokeshire.com/activity-listing/celtic-quest-coasteering — structured coordinates 51.936452, -5.204395 for the Abereiddy Bay site",
+    "activityTypes": "https://www.celticquestcoasteering.com/about-us/ and /activities/ — coasteering (scramble climbing, rock hopping, adventure swimming, cliff jumping) is the operator's sole activity",
+    "priceRange": "https://www.celticquestcoasteering.com/prices/ — standard sessions from £55pp, groups of 6+ from £50pp, fetched 2026-07-03",
+    "regions": "https://www.celticquestcoasteering.com/about-us/ — 'Location ~ Abereiddy', describes operating exclusively at Abereiddy Bay in the Pembrokeshire Coast National Park; no other site or region mentioned anywhere on the operator's own site, Visit Pembrokeshire, or NCC listing",
+    "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g552047-d1881513-Reviews-Celtic_Quest_Coasteering-Haverfordwest_Pembrokeshire_Wales.html — #1 of 22 Tours in Haverfordwest, 1,730+ reviews per WebSearch summary; direct page fetch returned 403, so exact star rating not independently confirmed",
+    "uniqueSellingPoint": "https://www.celticquestcoasteering.com/about-us/ — National Tourism Awards Wales Best Visitor Experience, AALA licensing, National Coasteering Charter and Pembrokeshire Outdoor Charter Group membership"
+  }
 }

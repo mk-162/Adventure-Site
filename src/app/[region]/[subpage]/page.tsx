@@ -239,7 +239,7 @@ async function ActivityComboPage({ regionSlug, activitySlug }: { regionSlug: str
   const featuredOperator = featuredItem?.operator;
 
   const otherActivityTypes = allActivityTypes
-    .filter((t) => t.id !== activityType.id)
+    .filter((t) => t.id !== activityType.id && isLaunchCombo(regionSlug, t.slug))
     .slice(0, 4);
 
   return (

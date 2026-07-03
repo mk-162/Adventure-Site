@@ -29,7 +29,7 @@
         "lng": -3.4343
       },
       "estimatedCost": "Free (parking £5)",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "For a slightly quieter route, consider the Pont ar Daf car park route which is slightly longer."
     },
     {
@@ -50,7 +50,7 @@
         "lng": -3.4436
       },
       "estimatedCost": "Free (parking £5)",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "Visit during the week or early in the morning to avoid the worst of the crowds, especially at the 'diving board' on Fan y Big."
     },
     {
@@ -71,7 +71,7 @@
         "lng": -3.1067
       },
       "estimatedCost": "Free",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "Check the weather forecast before you go – the summit can be exposed in windy conditions."
     },
     {
@@ -92,7 +92,7 @@
         "lng": -3.5935
       },
       "estimatedCost": "Free (parking £5)",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "Wear waterproofs if you plan on walking behind Sgwd yr Eira – you will get wet!"
     },
     {
@@ -113,7 +113,7 @@
         "lng": -2.9856
       },
       "estimatedCost": "Free",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "The summit can be windy, so bring a windproof jacket."
     },
     {
@@ -134,7 +134,7 @@
         "lng": -3.7731
       },
       "estimatedCost": "Free",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "Take a map and compass (and know how to use them!) – the paths can be indistinct, especially in poor visibility."
     },
     {
@@ -155,7 +155,7 @@
         "lng": -3.1544
       },
       "estimatedCost": "Free",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "Grab a coffee and cake in Crickhowell before or after your walk – there are some great cafes in town."
     },
     {
@@ -176,7 +176,7 @@
         "lng": -3.0444
       },
       "estimatedCost": "Free",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "Pack a picnic and enjoy it by the Keeper's Pond – it's a beautiful spot."
     }
   ],
@@ -262,7 +262,7 @@
     },
     {
       "question": "Are there any guided hiking tours in the Brecon Beacons?",
-      "answer": "Yes, several companies offer guided hiking tours in the Brecon Beacons. Adventure Britain and Black Mountain Adventure are popular choices."
+      "answer": "Yes, several companies offer guided hiking tours in the Brecon Beacons, ranging from half-day summit walks to multi-day navigation courses. Check operator listings for current availability and routes."
     },
     {
       "question": "What are the best waterfalls to visit in the Brecon Beacons?",

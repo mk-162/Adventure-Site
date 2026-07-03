@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "slug": "rip-n-rock",
+    "route": "/directory/rip-n-rock",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own website (ripnrock.co.uk) describing activities, locations, team, and via corroborating TripAdvisor listing (RipNRock, Swansea/Gower/South Wales) and Meet in Wales / Waterfall Country Wales directory entries.",
+    "redFlags": [
+      "Region mismatch: operator does NOT serve pembrokeshire, anglesey, llyn-peninsula, or mid-wales. It operates exclusively in South Wales — the Gower Peninsula (Swansea) and the Neath Valley / 'Waterfall Country' (Brecon Beacons National Park). Combo pages for pembrokeshire, anglesey, llyn-peninsula, and mid-wales should NOT reference this operator; brecon-beacons and south-wales references are valid, and gower is its core/home region.",
+      "No verifiable Google/aggregate rating or review count found via available sources (TripAdvisor page blocked 403 on fetch) — left null rather than guessed.",
+      "Exact street address/postcode not published on site (activities are meet-at-carpark based, e.g. Rhossili National Trust car park); lat/lng left null rather than guessed."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Rip N Rock",
+    "slug": "rip-n-rock",
+    "website": "https://www.ripnrock.co.uk/",
+    "tagline": "Coasteering, canyoning, gorge walking, climbing and surfing on the Gower Peninsula and in Waterfall Country, South Wales",
+    "description": "Rip N Rock is a small, family-run adventure activity provider based on the Gower Peninsula near Swansea, South Wales. Founded around 2018 (Sally, company director, set it up 'eight years ago' as of a 2026 site read) it has grown into one of Gower's busiest activity operators, now employing over 10 guides.\n\nThe company runs coasteering from Rhossili Bay (voted the UK's best beach by TripAdvisor readers in 2014) and around the wider Gower coastline, rock climbing and abseiling at Three Cliffs Bay, and surfing lessons at Rhossili and Llangennith beach. It also runs canyoning and gorge walking trips on the River Mellte and River Sychryd in the Neath Valley ('Waterfall Country' / the 'Celtic Rainforest'), an area at the southern edge of the Brecon Beacons National Park, roughly 30-45 minutes from its Gower base.\n\nSessions typically run around 3-4 hours including kit fitting (wetsuits, buoyancy aids, helmets provided), with a minimum age of around 10 for coasteering and no stated upper age limit. The business holds a National Coasteering Charter accreditation badge on its site and promotes a 'quality over quantity' approach, recommending early booking in peak season.",
+    "uniqueSellingPoint": "Small family business with deep local knowledge of Gower's coastline and the Neath Valley 'Waterfall Country', running the full range of Welsh adventure activities (coasteering, canyoning, gorge walking, climbing, abseiling, surfing) from one operator.",
+    "contact": {
+      "phone": "+44 7815 784122",
+      "email": "ripnrockbookings@gmail.com",
+      "address": "Gower Peninsula, Swansea, South Wales (activities typically meet at Rhossili National Trust car park; no single fixed office address published)"
+    },
+    "lat": null,
+    "lng": null,
+    "priceRange": "unknown - not published on site; typical Gower coasteering operators charge roughly £35-45pp for a half-day session, but Rip N Rock's own current pricing was not found on the pages fetched",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["coasteering", "canyoning", "gorge-walking", "rock-climbing", "abseiling", "surfing"],
+    "regions": ["gower", "south-wales", "brecon-beacons"],
+    "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g186466-d6474871-Reviews-RipNRock-Swansea_Swansea_County_South_Wales_Wales.html"
+  },
+  "fieldSources": {
+    "name/website/identity": "https://www.ripnrock.co.uk/ - operator's own homepage, confirms trading name RIPNROCK and domain",
+    "description/locations/history": "https://www.ripnrock.co.uk/about-us/ - 'Our Story' and 'Our Team' sections describe Gower + Neath Valley operating area, founding ~8 years prior, family business, team bios",
+    "locations detail (Three Cliffs Bay, Rhossili Bay, Neath Valley/Waterfall Country)": "https://www.ripnrock.co.uk/locations-2/ - dedicated locations page confirming Gower Peninsula and Neath Valley (Brecon Beacons foothills) as the two operating areas",
+    "activities list": "https://www.ripnrock.co.uk/ and https://www.ripnrock.co.uk/category/activities/ - homepage 'Popular Activities' section lists coasteering, canyoning, gorge walking, abseiling, rock climbing, surfing",
+    "phone": "https://www.ripnrock.co.uk/ - tel: link scraped from homepage HTML (+447815784122)",
+    "email": "https://www.ripnrock.co.uk/ - mailto link scraped from homepage HTML (ripnrockbookings@gmail.com)",
+    "tripadvisorUrl / third-party corroboration": "https://www.tripadvisor.co.uk/ShowUserReviews-g186466-d6474871-r217649059-RipNRock-Swansea_Swansea_County_South_Wales_Wales.html and https://www.tripadvisor.com/Attraction_Review-g186466-d6474871-Reviews-RipNRock-Swansea_Swansea_County_South_Wales_Wales.html - listed under Swansea/Gower, South Wales, corroborates region",
+    "third-party directory corroboration": "https://www.meetinwales.com/activity/activity-operator/rip-n-rock-577901 and https://www.visitwales.com/activity/rip-n-rock-1526384 and https://waterfallcountry.wales/places/rip-n-rock-adventure-guides/ - independent directory listings confirming operator and Waterfall Country (Neath Valley) presence",
+    "region mismatch (does not serve Pembrokeshire/Anglesey/Llyn/Mid Wales)": "https://www.ripnrock.co.uk/about-us/ and https://www.ripnrock.co.uk/locations-2/ - all stated locations (Gower, Rhossili, Three Cliffs Bay, Neath Valley) are in South Wales; no mention anywhere on the operator's own site of North or West Wales operating areas"
+  }
+}

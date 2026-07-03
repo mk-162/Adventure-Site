@@ -58,7 +58,7 @@ export async function getActivities(options?: {
     })
     .from(activities)
     .leftJoin(regions, eq(activities.regionId, regions.id))
-    .leftJoin(operators, eq(activities.operatorId, operators.id))
+    .leftJoin(operators, and(eq(activities.operatorId, operators.id), eq(operators.status, "published")))
     .leftJoin(activityTypes, eq(activities.activityTypeId, activityTypes.id))
     .where(and(...conditions))
     .orderBy(asc(activities.name));
@@ -83,7 +83,7 @@ export async function getActivityBySlug(slug: string) {
     })
     .from(activities)
     .leftJoin(regions, eq(activities.regionId, regions.id))
-    .leftJoin(operators, eq(activities.operatorId, operators.id))
+    .leftJoin(operators, and(eq(activities.operatorId, operators.id), eq(operators.status, "published")))
     .leftJoin(activityTypes, eq(activities.activityTypeId, activityTypes.id))
     .where(and(eq(activities.slug, slug), eq(activities.status, "published")))
     .limit(1);
@@ -135,7 +135,7 @@ export async function getActivitiesByType(
       .from(activityRegions)
       .innerJoin(activities, eq(activityRegions.activityId, activities.id))
       .leftJoin(regions, eq(activities.regionId, regions.id))
-      .leftJoin(operators, eq(activities.operatorId, operators.id))
+      .leftJoin(operators, and(eq(activities.operatorId, operators.id), eq(operators.status, "published")))
       .leftJoin(activityTypes, eq(activities.activityTypeId, activityTypes.id))
       .where(
         and(

@@ -29,7 +29,7 @@
         "lng": -4.066
       },
       "estimatedCost": "Free (parking £6) or £55pp guided",
-      "operatorSlug": "gower-activity-centres",
+      "operatorSlug": null,
       "insiderTip": "Time your visit for low tide – you'll be able to walk through the iconic Three Cliffs archway. Check tide times beforehand!"
     },
     {
@@ -50,7 +50,7 @@
         "lng": -4.238
       },
       "estimatedCost": "Free (parking donation box) or £60pp guided",
-      "operatorSlug": "rip-n-rock",
+      "operatorSlug": null,
       "insiderTip": "The water is noticeably colder at Mewslade, even in summer. A good wetsuit is essential. Check the surf forecast – this spot is very exposed to swells."
     },
     {
@@ -251,7 +251,7 @@
     },
     {
       "question": "Do I need any experience to go coasteering?",
-      "answer": "While some routes are suitable for beginners, it's generally recommended to have some experience in swimming and scrambling. If you're new to coasteering, it's best to go with a qualified instructor. Operators like Gower Activity Centres and Rip N Rock offer guided tours for all levels."
+      "answer": "While some routes are suitable for beginners, it's generally recommended to have some experience in swimming and scrambling. If you're new to coasteering, it's best to go with a qualified local instructor who offers guided tours for all levels."
     },
     {
       "question": "What equipment do I need for coasteering?",

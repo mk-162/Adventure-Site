@@ -29,7 +29,7 @@
         "lng": -4.191
       },
       "estimatedCost": "Free (parking £3-5) or £50pp guided",
-      "operatorSlug": "plas-menai",
+      "operatorSlug": null,
       "insiderTip": "Paddle at slack tide for a more relaxed experience. Stop at the Gazelle Hotel in Menai Bridge for a post-paddle pint with a view."
     },
     {
@@ -265,7 +265,7 @@
     },
     {
       "question": "Are there any guided kayaking tours in Anglesey?",
-      "answer": "Yes, several companies offer guided kayaking tours in Anglesey, including Anglesey Adventures and Plas Menai. These tours are a great option for beginners or those who want to explore the island with an experienced guide. Prices typically range from £50 to £80 per person."
+      "answer": "Yes, several companies offer guided kayaking tours in Anglesey, including Anglesey Adventures. These tours are a great option for beginners or those who want to explore the island with an experienced guide. Prices typically range from £50 to £80 per person."
     },
     {
       "question": "What equipment do I need for kayaking in Anglesey?",
@@ -273,7 +273,7 @@
     },
     {
       "question": "Where can I hire kayaking gear in Anglesey?",
-      "answer": "You can hire kayaking gear from Anglesey Adventures and Plas Menai. Prices vary depending on the equipment and rental duration. It's advisable to book in advance, especially during peak season."
+      "answer": "You can hire kayaking gear from Anglesey Adventures. Prices vary depending on the equipment and rental duration. It's advisable to book in advance, especially during peak season."
     },
     {
       "question": "Is kayaking in the Menai Strait safe?",

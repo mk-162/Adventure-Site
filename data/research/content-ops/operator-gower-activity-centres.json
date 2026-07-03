@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "slug": "gower-activity-centres",
+    "route": "/directory/gower-activity-centres",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own site (goweractivitycentres.co.uk, listing two residential centres at Port Eynon and Rhossili), corroborated by Swansea Council's official page (swansea.gov.uk/goweractivitycentres, which is the operator's local-authority owner), Tourism SwanseaBay, VisitMidWales 'Show Me Wales' listing, and TripAdvisor attraction page (g1644115-d16664538, Swansea County). Phone (01792 390481) and email (gac@swansea.gov.uk) match across the council site and Tourism SwanseaBay.",
+    "redFlags": [
+      "This operator is run by the Local Authority (City & County of Swansea) in partnership with YHA, not a private commercial adventure company -- it is fundamentally a residential/school-group outdoor education centre with day-activity add-ons, which changes tone expectations for the listing.",
+      "Operator serves ONLY the Gower Peninsula (two sites: Port Eynon and Rhossili). It does NOT serve pembrokeshire, brecon-beacons, anglesey, llyn-peninsula, mid-wales, or south-wales as a distinct region beyond Gower/Swansea. The combo pages referencing this operator across those 7 regions are incorrect and should be corrected to reference only 'gower' (and optionally 'south-wales' as the broader containing region, since Gower sits within Swansea/South Wales).",
+      "Seed website URL (https://www.goweractivitycentres.co.uk) returns a TLS certificate mismatch (cert covers *.secure-secure.co.uk, not the operator's own domain) -- the site is reachable via search-engine cache/plain HTTP but a direct HTTPS fetch fails. Flag for a manual browser check before publishing the link live.",
+      "No sourceable Google rating or review count found -- do not display a star rating.",
+      "Seed data phone/email were both null; now filled in but should be re-verified by a human call before 'published' status given the council/YHA operating structure and possibility of stale contact info."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Gower Activity Centres",
+    "slug": "gower-activity-centres",
+    "website": "https://www.goweractivitycentres.co.uk",
+    "tagline": "Residential adventure activity centres on the Gower Peninsula, run in partnership with YHA",
+    "description": "Gower Activity Centres operates two residential outdoor activity centres on the Gower Peninsula -- Tŷ Borfa (Borfa House) at Port Eynon Bay and Tŷ Rhossili at Rhossili Bay -- run by the City & County of Swansea in partnership with the YHA. For over 40 years the centres have hosted schools, colleges, youth groups and families for residential stays combined with instructor-led outdoor activities, from self-catering weekends to fully catered adventure weeks.\n\nActivities include coasteering, surfing, kayaking, canoeing, rock climbing, abseiling, gorge walking, mountain biking, hill walking, orienteering and team-building, plus beach, woodland and river study sessions and guided heritage walks. Coasteering sessions start from around £45 per person and are tailored to group ability, from school groups to nervous first-timers. Instructors hold National Governing Body qualifications and operate under an AALA (Adventure Activities Licensing Authority) licence.\n\nBoth centres offer exclusive-use residential accommodation (32 beds at Port Eynon, 16 beds at Rhossili) with disabled access, on-site parking, WiFi and conference/meeting facilities, making them geared primarily toward group bookings rather than casual walk-in day visitors.",
+    "uniqueSellingPoint": "One of the few operators combining exclusive-use residential accommodation with instructor-led multi-activity programmes on the Gower coast, purpose-built for school, youth-group and family group bookings.",
+    "contact": {
+      "phone": "01792 390481",
+      "email": "gac@swansea.gov.uk",
+      "address": "Tŷ Borfa (Borfa House), Port Eynon, Swansea, SA3 1NN"
+    },
+    "lat": 51.5453,
+    "lng": -4.2145,
+    "priceRange": "££",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["coasteering", "surfing", "kayaking", "canoeing", "rock-climbing", "abseiling", "gorge-walking", "mountain-biking", "hill-walking", "orienteering", "multi-activities"],
+    "regions": ["gower"],
+    "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g1644115-d16664538-Reviews-Gower_Activity_Centres-Swansea_County_South_Wales_Wales.html"
+  },
+  "fieldSources": {
+    "name": "http://www.goweractivitycentres.co.uk/ -- operator's own site, 'Gower Activity Centres'",
+    "website": "http://www.goweractivitycentres.co.uk/ -- reachable via search/cache; direct HTTPS fetch fails on cert mismatch (needs manual re-check before going live)",
+    "contact.phone": "https://www.swansea.gov.uk/goweractivitycentres and Tourism SwanseaBay listing -- both list 01792 390481 (an additional mobile 07971 861376 also appears on some listings)",
+    "contact.email": "https://www.swansea.gov.uk/goweractivitycentres -- gac@swansea.gov.uk",
+    "contact.address": "https://www.visitmidwales.co.uk/showmewales/things-to-do/gower-activity-centres-p1720421 -- 'Tŷ Borfa Activity Centre, Port Eynon, Swansea, SA3 1NN'",
+    "locations": "http://www.goweractivitycentres.co.uk/our-centres/ -- two centres: Tŷ Borfa/Borfa House (Port Eynon Bay, 32 beds) and Tŷ Rhossili (Rhossili Bay, 16 beds)",
+    "activityTypes": "http://www.goweractivitycentres.co.uk/about_us/activities/ and https://www.tourismswanseabay.co.uk/gower-activity-centres/ -- full activity list including coasteering, surfing, kayaking, rock climbing, abseiling, gorge walking, mountain biking, orienteering",
+    "priceRange/coasteering-from-45": "WebSearch aggregation citing coasteering packages 'from £45' (source pages include coasteering.co.uk and swansea.gov.uk event listings) -- not independently confirmed on operator's own pricing page, treat as indicative only",
+    "operator-structure/local-authority": "https://www.swansea.gov.uk/goweractivitycentres -- centres run by City & County of Swansea (local authority) in partnership with YHA, Visit Wales accredited",
+    "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g1644115-d16664538-Reviews-Gower_Activity_Centres-Swansea_County_South_Wales_Wales.html -- attraction page exists but no aggregate rating/review count was extractable",
+    "regions": "Cross-referenced across all sources (operator site, Swansea Council, Tourism SwanseaBay, VisitMidWales, TripAdvisor) -- consistently locate the operator only at Port Eynon and Rhossili, both on the Gower Peninsula; no evidence of any presence in Pembrokeshire, Brecon Beacons, Anglesey, Llŷn Peninsula, or mid-Wales"
+  }
+}

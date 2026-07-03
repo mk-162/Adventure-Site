@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "slug": "anglesey-adventures",
+    "route": "/directory/anglesey-adventures",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "published",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own website (angleseyadventures.com) including Contact, Activities, and About pages, cross-checked with TripAdvisor listing (Anglesey_Adventures, Holyhead_Anglesey_North_Wales_Wales) showing matching 5.0 rating and 474+ reviews.",
+    "redFlags": [
+      "Operator is single-site on Anglesey only (activity meeting point: Anglesey Outdoors, Porthdafarch Road, Holyhead, LL65 2LP). It does NOT serve pembrokeshire, brecon-beacons, gower, llyn-peninsula, south-wales, or mid-wales — combo pages referencing this operator for those regions are factually wrong and should be corrected to remove/replace this operator or scoped to Anglesey only.",
+      "reviewCount in seed data (10) is stale/wrong — actual TripAdvisor count is 474+ reviews as of research date."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Anglesey Adventures",
+    "slug": "anglesey-adventures",
+    "website": "https://www.angleseyadventures.com",
+    "tagline": "The original coasteering company on the Anglesey coast, based in Holyhead.",
+    "description": "Anglesey Adventures was the first company to offer coasteering in North Wales and has operated on the Anglesey coastline for decades. All activities run from a single base at Anglesey Outdoors on Porthdafarch Road, Holyhead, which has changing facilities, toilets, and hot showers on site.\n\nThe operator runs a wide range of half-day and full-day activities including coasteering (standard, adventure, explorer, and RIB-boat variants), sit-on-top kayaking, sea kayaking, gorge scrambling, rock climbing, abseiling, mountain days, raft building, and MEGA SUP. Instructors are AALA-licensed, NGB-qualified, DBS-checked, and first-aid trained.",
+    "uniqueSellingPoint": "The first and longest-running coasteering operator in North Wales, with its own dedicated base offering hot showers and changing facilities on Anglesey.",
+    "contact": {
+      "phone": "07896 239951",
+      "email": "info@angleseyadventures.com",
+      "address": "Anglesey Outdoors, Porthdafarch Road, Holyhead, Anglesey, LL65 2LP"
+    },
+    "lat": 53.3016,
+    "lng": -4.6817,
+    "priceRange": "££",
+    "googleRating": 5.0,
+    "reviewCount": 474,
+    "activityTypes": [
+      "coasteering",
+      "sea-kayaking",
+      "kayaking",
+      "gorge-scrambling",
+      "rock-climbing",
+      "abseiling",
+      "stand-up-paddleboarding",
+      "mountaineering"
+    ],
+    "regions": ["anglesey"],
+    "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g186443-d3445296-Reviews-Anglesey_Adventures-Holyhead_Anglesey_North_Wales_Wales.html"
+  },
+  "fieldSources": {
+    "website": "https://www.angleseyadventures.com — operator's own domain, matches seed data",
+    "phone": "https://www.angleseyadventures.com/contact — listed as 07896 239951, office hours 9am-7pm daily",
+    "email": "https://www.angleseyadventures.com/contact — info@angleseyadventures.com",
+    "contact.address": "https://www.angleseyadventures.com/contact — activity meeting point is Anglesey Outdoors, Porthdafarch Road, Holyhead, LL65 2LP (correspondence address differs: Treflys Peniel, Coedana, Llanerch-y-Medd, LL71 8EL, but activities run from Holyhead)",
+    "lat/lng": "Approximate coordinates for Porthdafarch Road, Holyhead (Anglesey Outdoors site) derived from place name; not independently geocoded to rooftop precision",
+    "googleRating/reviewCount/tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g186443-d3445296-Reviews-Anglesey_Adventures-Holyhead_Anglesey_North_Wales_Wales.html — linked directly from operator's own homepage, showing 5.0 rating and 474+ reviews",
+    "activityTypes/priceRange": "https://www.angleseyadventures.com/activities — full activity list with prices ranging £50-£125 per person (mapped to ££)",
+    "regions": "https://www.angleseyadventures.com/contact and /activities — single meeting point in Holyhead, Anglesey; no evidence of operations in any other Welsh region on the operator's site, TripAdvisor listing, or general web presence",
+    "description": "https://www.angleseyadventures.com (homepage 'Why Choose Us' section) and /activities — factual claims (first coasteering company in North Wales, AALA licensed, activity list) taken directly from operator's own site"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "slug": "plas-menai",
+    "route": "/directory/plas-menai",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via official website https://www.plasmenai.wales/ (301-redirected from plasmenai.co.uk), which gives name 'Plas Menai - The National Outdoor Centre', address, phone, email and full activity list. Site is operated as Wales's National Outdoor Centre for watersports (governed under Sport Wales / Welsh Government activity centre network, same family as Plas y Brenin).",
+    "redFlags": [
+      "Operator is a North Wales / Snowdonia (Menai Strait, Caernarfon) watersports centre — it does NOT serve pembrokeshire, brecon-beacons, gower, south-wales, or mid-wales. Combo pages in those regions referencing this operator are a real region mismatch and should be corrected/removed.",
+      "Anglesey and llyn-peninsula are plausible adjacent-service regions (Plas Menai sits directly on the Menai Strait facing Anglesey and near the Llyn Peninsula) but this was not explicitly confirmed on the operator's own site as a stated 'service area' — treat as reasonable geographic inference, not confirmed marketing claim.",
+      "Could not source a Google/TripAdvisor rating or review count (TripAdvisor page blocked fetch with 403) — left as null rather than guessed.",
+      "Site describes itself primarily as 'The National Outdoor Centre' and courses/accommodation venue rather than a typical commercial tour operator; confirm this fits the directory's operator content model before publishing."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Plas Menai - The National Outdoor Centre",
+    "slug": "plas-menai",
+    "website": "https://www.plasmenai.wales/",
+    "tagline": "Wales's National Outdoor Centre for watersports on the Menai Strait",
+    "description": "Plas Menai is Wales's National Outdoor Centre, based on the shore of the Menai Strait at Griffiths Crossing near Caernarfon, directly facing Anglesey. It runs RYA-recognised courses in sailing, powerboating, windsurfing, windfoiling, stand-up paddleboarding and sea kayaking, spanning beginner to instructor-training level, alongside youth courses, shore-based theory and water rescue training.\n\nThe centre also runs recreational adventure weeks, discovery sessions, and community sailing/windsurfing/SUP clubs, plus school activity days and corporate team-building. On-site, dog-friendly accommodation with full-board catering, a health and fitness suite, and a restaurant/bar are available, making it a residential activity venue as well as a day-course provider.\n\nAs a National Outdoor Centre (part of the same publicly-funded network as Plas y Brenin), its core service area is the Menai Strait and North Wales coast around Caernarfon and Anglesey, not South or Mid Wales.",
+    "uniqueSellingPoint": "Wales's dedicated National Watersports Centre, offering RYA-accredited courses from beginner to instructor level with on-site residential accommodation on the Menai Strait.",
+    "contact": {
+      "phone": "0300 300 3112",
+      "email": "info@plasmenai.wales",
+      "address": "Griffiths Crossing, Caernarfon, Gwynedd, LL55 1UE"
+    },
+    "lat": 53.1585,
+    "lng": -4.2807,
+    "priceRange": "unknown",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["sailing", "windsurfing", "powerboating", "sea-kayaking", "stand-up-paddleboarding", "watersports-courses"],
+    "regions": ["anglesey", "llyn-peninsula", "snowdonia"],
+    "tripadvisorUrl": null
+  },
+  "fieldSources": {
+    "name": "https://www.plasmenai.wales/ - homepage title 'Plas Menai - The National Outdoor Centre'",
+    "website": "https://www.plasmenai.co.uk/ 301-redirects to https://www.plasmenai.wales/, confirmed live via WebFetch",
+    "contact.phone": "https://www.plasmenai.wales/ - listed contact number 0300 300 3112",
+    "contact.email": "https://www.plasmenai.wales/ - listed contact email info@plasmenai.wales",
+    "contact.address": "https://www.plasmenai.wales/ - Griffiths Crossing, Caernarfon, Gwynedd LL55 1UE, GB",
+    "activityTypes": "https://www.plasmenai.wales/ - lists sailing, powerboating, windsurfing, windfoiling, SUP, sea kayaking courses",
+    "regions": "Inferred from address (Griffiths Crossing/Caernarfon, on the Menai Strait directly opposite Anglesey) and North Wales/Snowdonia location described on https://www.plasmenai.wales/; not itself serving pembrokeshire, brecon-beacons, gower, south-wales, or mid-wales as some combo pages claim",
+    "lat_lng": "Approximate coordinates for Griffiths Crossing, Caernarfon (Menai Strait shore) derived from address; not independently geocoded against a mapping API in this session - treat as approximate"
+  }
+}

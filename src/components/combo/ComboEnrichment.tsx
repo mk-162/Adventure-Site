@@ -11,6 +11,7 @@ import {
   MapPin,
 } from "lucide-react";
 import type { ComboPageData } from "@/lib/combo-data";
+import { isLaunchCombo } from "@/lib/launch";
 import { ComboSpotCard } from "./ComboSpotCard";
 import { FAQAccordion } from "@/components/operators/FAQAccordion";
 import { LocalTake } from "@/components/content/LocalTake";
@@ -343,10 +344,13 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
 
       {/* Nearby Alternatives */}
       {data.nearbyAlternatives && (
+        (data.nearbyAlternatives.sameActivity ?? []).filter((alt) => isLaunchCombo(alt.regionSlug, data.activityTypeSlug)).length +
+        (data.nearbyAlternatives.sameRegion ?? []).filter((alt) => isLaunchCombo(data.regionSlug, alt.activityTypeSlug)).length > 0
+      ) && (
         <section>
           <h2 className="text-xl font-bold text-primary mb-4">Explore More</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {data.nearbyAlternatives.sameActivity?.map((alt, i) => (
+            {data.nearbyAlternatives.sameActivity?.filter((alt) => isLaunchCombo(alt.regionSlug, data.activityTypeSlug)).map((alt, i) => (
               <Link
                 key={`sa-${i}`}
                 href={`/${alt.regionSlug}/${data.activityTypeSlug}`}
@@ -362,7 +366,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
                 <ArrowRight className="w-4 h-4 text-gray-400 ml-auto" />
               </Link>
             ))}
-            {data.nearbyAlternatives.sameRegion?.map((alt, i) => (
+            {data.nearbyAlternatives.sameRegion?.filter((alt) => isLaunchCombo(data.regionSlug, alt.activityTypeSlug)).map((alt, i) => (
               <Link
                 key={`sr-${i}`}
                 href={`/${data.regionSlug}/${alt.activityTypeSlug}`}

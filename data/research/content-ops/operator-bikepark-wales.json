@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "slug": "bikepark-wales",
+    "route": "/directory/bikepark-wales",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own website (bikeparkwales.com, contact/find-us pages), corroborated by Visit Merthyr, Brecon Beacons Tourism / Bannau Brycheiniog National Park business listing, Mountain Bike Wales (mbwales.com), and TripAdvisor listing (Bike Park Wales, Merthyr Tydfil, South Wales, g1474085-d6109112).",
+    "redFlags": [
+      "Operator does NOT serve pembrokeshire, gower, anglesey, llyn-peninsula, or mid-wales — it is a single fixed-site mountain bike park at Mynydd Gethin, just outside Merthyr Tydfil, on the southern edge of Bannau Brycheiniog (Brecon Beacons) National Park. Combo pages referencing this operator in those five regions are a region mismatch and should be removed.",
+      "Correct regions are south-wales (Merthyr Tydfil / South Wales Valleys) and brecon-beacons (site sits on the park's southern boundary and is listed as a Brecon Beacons/Bannau Brycheiniog business).",
+      "Site's own contact page warns visitors not to navigate to its registered postcode (CF48 1YZ) as it leads to the wrong location — noted here so the address field isn't mistaken for a navigation-safe address.",
+      "No independently-sourced Google rating found (only TripAdvisor/Trustpilot review mentions); googleRating left null rather than guessed.",
+      "Precise lat/lng not confirmed from an authoritative source; left null pending a mapped confirmation rather than guessing coordinates."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "BikePark Wales",
+    "slug": "bikepark-wales",
+    "website": "https://www.bikeparkwales.com/",
+    "tagline": "The UK's leading gravity mountain bike park, on the southern edge of the Brecon Beacons",
+    "description": "BikePark Wales is a purpose-built, uplift-served mountain bike park on Mynydd Gethin, just outside Merthyr Tydfil in the South Wales Valleys, on the southern edge of Bannau Brycheiniog (Brecon Beacons) National Park. The site holds over 40 trails across Blue, Red, Black and Pro grades on roughly 850 hectares, including Kermit, billed as the UK's longest beginner downhill trail, plus flow trails, technical black lines and big-air jump lines for advanced and expert riders.\n\nOn-site facilities include a paid uplift service, a bike shop and workshop, and a cafe. The park is oriented entirely around downhill and gravity mountain biking rather than general outdoor activities, and is not a walking, watersports or multi-activity centre.\n\nAccess is signposted from the M4 and A470; the operator's own site warns against navigating to its registered postcode as it does not lead to the correct entrance, so visitors should use the mapped directions on the BikePark Wales website.",
+    "uniqueSellingPoint": "Uplift-served, purpose-built gravity MTB park with 40+ graded trails including the UK's longest beginner downhill run (Kermit)",
+    "contact": {
+      "phone": "01685 709450",
+      "email": "reception@bikeparkwales.com",
+      "address": "Gethin Woodland Centre, Abercanaid, Merthyr Tydfil, Wales (postcode CF48 1YZ is registered but not navigation-accurate per operator's own guidance — use website directions)"
+    },
+    "lat": null,
+    "lng": null,
+    "priceRange": "unknown - day/uplift tickets and rental pricing vary by season, not independently confirmed",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["mountain-biking", "downhill-mountain-biking", "bike-uplift", "bike-hire"],
+    "regions": ["south-wales", "brecon-beacons"],
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g1474085-d6109112-Reviews-Bike_Park_Wales-Merthyr_Tydfil_Merthyr_Tydfil_County_South_Wales_Wales.html"
+  },
+  "fieldSources": {
+    "name": "https://www.bikeparkwales.com/ - operator's own site header/branding",
+    "website": "https://www.bikeparkwales.com/ - primary domain confirmed via search and site content",
+    "phone": "Search snippet aggregating https://www.bikeparkwales.com/contact - listed phone 01685 709450",
+    "email": "Search snippet aggregating https://www.bikeparkwales.com/contact - reception@bikeparkwales.com",
+    "address": "Search snippet aggregating https://www.bikeparkwales.com/find-us - Gethin Woodland Centre, Abercanaid, Merthyr Tydfil CF48 1YZ, with operator's own note that this postcode should not be used for navigation",
+    "regions": "https://www.breconbeaconstourism.org/business/bike-park-wales/ and https://www.breconbeacons.org/business/activity-bike-park-wales and https://bannaubrycheiniog.org/businesses/bike-park-wales/ - all list it as a Brecon Beacons/Bannau Brycheiniog business on the southern park edge near Merthyr Tydfil (South Wales); https://www.mbwales.com/agents/brecon-beacons/ corroborates regional grouping",
+    "description/trails": "Search summary drawn from operator site content (bikeparkwales.com) and https://wanderlog.com/place/details/334644/bikepark-wales - 40+ trails, Kermit beginner DH trail, Mynydd Gethin site, cafe/bike shop on site",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g1474085-d6109112-Reviews-Bike_Park_Wales-Merthyr_Tydfil_Merthyr_Tydfil_County_South_Wales_Wales.html - confirms Merthyr Tydfil, South Wales location and generally positive review sentiment, no aggregate numeric rating independently confirmed",
+    "activityTypes": "Consistent across all sources (own site, Visit Merthyr, Brecon Beacons tourism listings, TripAdvisor) - exclusively downhill/gravity mountain biking with uplift service, no other activity types offered"
+  }
+}

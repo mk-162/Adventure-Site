@@ -29,7 +29,7 @@
         "lng": -3.5815
       },
       "estimatedCost": "Free",
-      "operatorSlug": "adventure-britain",
+      "operatorSlug": null,
       "insiderTip": "Go early in the morning (before 9am) or late in the afternoon (after 4pm) to avoid the crowds. Check water levels online beforehand."
     },
     {
@@ -50,7 +50,7 @@
         "lng": -3.6256
       },
       "estimatedCost": "Free (permit required)",
-      "operatorSlug": "black-mountain-adventure",
+      "operatorSlug": null,
       "insiderTip": "Book your SWCC permit well in advance, especially for weekends and holidays. The 'long crawl' can be avoided in a streamway bypass. Carry spare batteries for your headlamp."
     },
     {
@@ -71,7 +71,7 @@
         "lng": -3.6256
       },
       "estimatedCost": "Free (permit required)",
-      "operatorSlug": "black-mountain-adventure",
+      "operatorSlug": null,
       "insiderTip": "Take a detailed survey (map) and compass. Consider using a GPS device with pre-loaded waypoints. Check the weather forecast beforehand – heavy rain can rapidly raise water levels."
     },
     {
@@ -246,7 +246,7 @@
     },
     {
       "question": "Is caving in the Brecon Beacons suitable for beginners?",
-      "answer": "While some caves like Porth yr Ogof offer easy access, most require experience and a guide. Consider booking a guided trip with Adventure Britain or Black Mountain Adventure for your first caving brecon beacons experience. They provide the necessary equipment and expertise."
+      "answer": "While some caves like Porth yr Ogof offer easy access, most require experience and a guide. Consider booking a guided trip with a local caving operator for your first caving brecon beacons experience. They provide the necessary equipment and expertise."
     },
     {
       "question": "What gear do I need for caving in the Brecon Beacons?",

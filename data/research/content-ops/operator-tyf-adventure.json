@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "slug": "tyf-adventure",
+    "route": "/directory/tyf-adventure",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own site (tyf.com), Visit Wales, Visit Pembrokeshire, and TripAdvisor listing (g552051-d1985728), all consistently placing the business at 20 High Street, St Davids, Pembrokeshire, offering coasteering/kayaking/surfing/climbing.",
+    "redFlags": [
+      "Operator is based solely in St Davids, Pembrokeshire and operates exclusively on the Pembrokeshire coast — it does NOT serve brecon-beacons, gower, anglesey, llyn-peninsula, mid-wales, or (beyond loose regional grouping) south-wales. Combo pages referencing this operator for those regions are a REGION MISMATCH and should be corrected to reference Pembrokeshire-based content only, or a different operator for those regions.",
+      "Could not source a verifiable numeric Google rating or review count from any accessible page during this research pass; left null rather than guessed.",
+      "TripAdvisor page returned HTTP 403 on direct fetch; rating corroborated only via search snippets describing 'overwhelmingly positive' reviews, not a specific number, so tripadvisorUrl is included but rating/reviewCount are not sourced from it."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "TYF Adventure",
+    "slug": "tyf-adventure",
+    "website": "https://www.tyf.com/",
+    "tagline": "Pioneers of coasteering on the Pembrokeshire coast since 1986",
+    "description": "TYF Adventure is an outdoor activity operator based at 20 High Street, St Davids, Pembrokeshire, credited with pioneering coasteering on the Pembrokeshire coast in the mid-1980s. Over more than 35 years the business has taken an estimated 100,000+ customers coasteering along this stretch of coastline, alongside sea kayaking, surfing, stand-up paddleboarding, rock climbing, and combined full-day 'Coastal Explorer' trips.\n\nTYF operates exclusively within the Pembrokeshire Coast National Park around St Davids and does not run activities in other Welsh regions. It holds B Corp certification and is recognised as an early adopter of environmental and carbon-neutral business practices in the UK adventure tourism sector, alongside AALA (Adventure Activities Licensing Authority) licensing for its activities.",
+    "uniqueSellingPoint": "The original coasteering operator on the Pembrokeshire coast, with over 35 years and 100,000+ customers of experience running the activity they pioneered.",
+    "contact": {
+      "phone": "01437 721611",
+      "email": "play@tyf.com",
+      "address": "20 High Street, St Davids, Haverfordwest, Pembrokeshire, SA62 6SD"
+    },
+    "lat": 51.8813,
+    "lng": -5.2688,
+    "priceRange": "unknown",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["coasteering", "sea-kayaking", "surfing", "stand-up-paddleboarding", "rock-climbing"],
+    "regions": ["pembrokeshire"],
+    "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g552051-d1985728-Reviews-TYF_Adventure-St_Davids_St_Davids_Peninsula_Pembrokeshire_Wales.html"
+  },
+  "fieldSources": {
+    "name": "https://www.tyf.com/ — homepage title and branding confirm 'TYF Adventure'",
+    "website": "https://www.tyf.com/ — official operator site",
+    "contact.phone": "https://www.tyf.com/ — listed as 01437 721611 on homepage",
+    "contact.email": "https://www.tyf.com/ — general contact play@tyf.com",
+    "contact.address": "https://www.tyf.com/ and https://www.visitpembrokeshire.com/activity-listing/tyf-adventure — both list 20 High Street, St Davids (postcode SA62 6SD/6SA variant seen; site itself uses SA62 6SD)",
+    "activityTypes": "https://www.tyf.com/adventures/ — lists coasteering, kayaking, climbing, surfing, SUP, Coastal Explorer combined trips",
+    "regions": "https://www.visitpembrokeshire.com/activity-listing/tyf-adventure and https://www.visitwales.com/activity/tyf-adventure-and-coasteering-1889636 — both list the business only under Pembrokeshire/St Davids, no presence in Snowdonia, Anglesey, Gower, Brecon Beacons, Llyn Peninsula, or mid-Wales",
+    "uniqueSellingPoint": "https://www.tyf.com/adventures/coasteering/ — describes coasteering as beginning on this coast in the mid-1980s with TYF as originator, 100,000+ customers referenced in search summary of tyf.com content",
+    "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g552051-d1985728-Reviews-TYF_Adventure-St_Davids_St_Davids_Peninsula_Pembrokeshire_Wales.html — listing ID confirmed via web search, direct fetch blocked (403)"
+  }
+}

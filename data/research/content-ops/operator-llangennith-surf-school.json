@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "slug": "llangennith-surf-school",
+    "route": "/directory/llangennith-surf-school",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "MEDIUM",
+    "identityConfidenceReason": "Confirmed a real, currently-operating surf school called 'Llangennith Surf School' based at Llangennith Beach, Gower Peninsula, via its own website (llangennithsurfschool.com) and independent web search corroboration. However the seed data's website domain (llangennithsurf.co.uk) no longer resolves — the business appears to now operate at llangennithsurfschool.com, and the phone number differs from the seed (07855 420062 vs seed's 07790 376590). TripAdvisor has at least two similarly-named Llangennith-area listings ('Llangennith Surf School' and 'Welsh Surfing Federation Surf School') plus a separate competitor 'Progress Surf School', creating some risk of conflating entities; a direct 403 blocked confirming the exact TripAdvisor page/rating for this specific business, so rating/review count are left unverified rather than guessed.",
+    "redFlags": [
+      "Seed website URL (https://www.llangennithsurf.co.uk) does not resolve (DNS failure) — business appears to have moved to https://www.llangennithsurfschool.com/, so seed website/email should not be trusted as-is.",
+      "Seed phone number (07790 376590) could not be corroborated; the operator's current site lists 07855 420062 instead.",
+      "Seed googleRating (4.8) and reviewCount (130) could not be independently re-verified this pass (TripAdvisor page returned 403); do not treat as confirmed.",
+      "Region mismatch in combo pages: this operator is a single-beach (Llangennith, Gower Peninsula) surf school. It has no plausible presence in pembrokeshire, brecon-beacons, anglesey, llyn-peninsula, south-wales (as a distinct region), or mid-wales. Its only real region is gower. Combo pages referencing it in those other six regions are incorrect and should have this operator removed."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Llangennith Surf School",
+    "slug": "llangennith-surf-school",
+    "website": "https://www.llangennithsurfschool.com/",
+    "tagline": "Surf lessons on Llangennith Beach, Gower's most consistent break.",
+    "description": "Llangennith Surf School teaches surfing directly from Llangennith Beach on the Gower Peninsula, a spot known as a 'swell magnet' for its soft, consistent breaking waves — widely regarded as one of the best beginner-friendly beaches in South Wales. Lessons run in two daily sessions (roughly 10am-1pm and 2pm-5pm, adjusted for tide and weather) and cover absolute beginners through to improver and advanced coaching, with group and corporate bookings also available.\n\nA standard 3-hour lesson costs around £35 and includes all equipment: wetsuit, board, boots, and tuition from qualified instructors. The beach itself has all-day parking, showers, and a cafe. Minimum age is 7, with no stated upper age limit; younger children require a non-paying supervising adult.\n\nNote: Llangennith Beach hosts more than one surf school (including a separate 'Progress Surf School' and the Welsh Surfing Federation's operation), so visitors should confirm they are booking with this specific school when comparing listings online.",
+    "uniqueSellingPoint": "A dedicated, beach-based surf school on one of Gower's most consistent and beginner-friendly waves, with all equipment included in the lesson price.",
+    "contact": {
+      "phone": "07855 420062",
+      "email": null,
+      "address": "Llangennith Beach, Gower Peninsula, Swansea, Wales"
+    },
+    "lat": 51.5952,
+    "lng": -4.2661,
+    "priceRange": "££",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["surfing-lessons"],
+    "regions": ["gower"],
+    "tripadvisorUrl": null
+  },
+  "fieldSources": {
+    "name/website/description/pricing/lessons": "https://www.llangennithsurfschool.com/ — fetched directly; current live site describing the school, £35/3hr lessons, session times, equipment included, age policy.",
+    "phone": "https://www.llangennithsurfschool.com/ — phone listed as 07855 420062, differs from seed data's 07790 376590 which could not be corroborated.",
+    "location/beach character": "WebSearch summary of multiple sources describing Llangennith Beach as a 'swell magnet' with soft, consistent waves, corroborated across search snippets referencing the WSF-affiliated original school and TripAdvisor attraction pages for Llangennith-based surf schools (g1190849 area, Llangennith, Swansea).",
+    "old website no longer resolving": "Direct WebFetch attempt to https://www.llangennithsurfschool.co.uk returned DNS failure (ENOTFOUND) confirming the seed URL is stale.",
+    "multiple similarly-named venues at same beach": "WebSearch results distinguishing 'Llangennith Surf School' (tripadvisor d12636934 and d5794332), 'Progress Surf School' (d795447), and 'Welsh Surfing Federation Surf School' (d10160994), all located in Llangennith/Swansea — flagged as a disambiguation risk rather than confirmed as the same business.",
+    "region = gower only": "Cross-checked against seed data (data/research/tier2-1.json) which already scoped this operator to region 'gower' and an address of 'Llangennith, Gower, SA3 1JD'; no source found placing this single-beach operator in any other region."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "slug": "outer-reef-surf-school",
+    "route": "/directory/outer-reef-surf-school",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own website (outerreefsurfschool.com), Google Maps listing embedded on their Contact page (Unit 4, Upper Lamphey Road, Pembroke SA71 5JJ), and corroborating TripAdvisor listing (Outer Reef, Pembroke, Pembrokeshire, Wales, g552048-d6495762) showing hundreds of reviews and a Travellers' Choice Award.",
+    "redFlags": [
+      "REGION MISMATCH: This operator is referenced by combo pages for pembrokeshire, brecon-beacons, gower, anglesey, llyn-peninsula, south-wales, and mid-wales, but it is a single-location Pembrokeshire business. Its own site states it teaches only at Pembrokeshire beaches (Freshwater West, Manorbier, Newgale, Tenby North, Saundersfoot, Broadhaven) and its address/phone are Pembroke-based. No evidence of any presence in Brecon Beacons, Gower, Anglesey, Llyn Peninsula, or Mid Wales — these region associations should be removed from combo pages. 'South Wales' is defensible only in the loose sense that Pembrokeshire is part of south-west Wales, but the business does not describe or market itself as a South Wales-wide operator.",
+      "No numeric Google star rating could be independently sourced; operator's own site claims '200+ five-star Google reviews' but does not display an aggregate score, so googleRating is left null rather than guessed."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Outer Reef Surf School",
+    "slug": "outer-reef-surf-school",
+    "website": "https://www.outerreefsurfschool.com/",
+    "tagline": "Pembrokeshire's longest-running surf school, teaching on Freshwater West and Manorbier since 1999",
+    "description": "Outer Reef Surf School has operated in Pembrokeshire since 1999, teaching surfing, stand-up paddleboarding, coasteering and kayaking on the county's beaches. Lessons run daily from April to November, with the day's beach chosen from a rotation of six spots (Freshwater West, Manorbier, Newgale, Tenby North, Saundersfoot and Broadhaven) depending on conditions. Instructors are ISA-certified surf and SUP coaches who also hold SLSGB beach lifeguard qualifications; the school states it has taught over 25,000 people to date.\n\nA standard 2-hour group surf lesson costs £40 per person, with equipment (wetsuit and board) included. The school also runs multi-activity packages combining surfing, SUP and coasteering, private and family lessons, equipment hire, and a women-only 'Salty Sisters' surf club. It holds an AALA adventure activities licence and £10m public liability insurance, and has a TripAdvisor Travellers' Choice Award with several hundred reviews.\n\nThe business is based at a retail unit in Pembroke town (open daily 9am-5pm) but does not have a fixed teaching venue — the beach used depends on daily surf and tide conditions across Pembrokeshire only.",
+    "uniqueSellingPoint": "25+ years teaching surfing across six rotating Pembrokeshire beaches, chosen daily for conditions, with ISA-qualified instructor-lifeguards",
+    "contact": {
+      "phone": "01646 680070",
+      "email": null,
+      "address": "Unit 4, Upper Lamphey Road, Pembroke, SA71 5JJ"
+    },
+    "lat": 51.672568,
+    "lng": -4.8977442,
+    "priceRange": "£40 per person for a standard 2-hour lesson; packages from £120-£175",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["surfing", "stand-up-paddleboarding", "coasteering", "kayaking"],
+    "regions": ["pembrokeshire"],
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g552048-d6495762-Reviews-Outer_Reef-Pembroke_Pembrokeshire_Wales.html"
+  },
+  "fieldSources": {
+    "name": "https://www.outerreefsurfschool.com/home/ - self-identifies as 'Outer Reef Surf School'",
+    "website": "https://www.outerreefsurfschool.com/ - operator's own domain",
+    "contact.phone": "https://www.outerreefsurfschool.com/pembrokeshire-surf-school/ - '01646 680070' listed for bookings/hire enquiries",
+    "contact.address": "https://www.outerreefsurfschool.com/contact/ - 'Unit 4, Upper Lamphey Road, Pembroke, SA71 5JJ' with embedded Google Maps pin",
+    "lat_lng": "https://www.outerreefsurfschool.com/contact/ - Google Maps embed centered at 51.672568, -4.8977442 for 'Outer Reef Surf School'",
+    "priceRange": "https://www.outerreefsurfschool.com/pembrokeshire-surf-school/ - lists £40pp standard lesson, £120-£175 packages",
+    "activityTypes": "https://www.outerreefsurfschool.com/pembrokeshire-surf-school/ and https://www.outerreefsurfschool.com/home/ - surfing, SUP, coasteering, kayaking all offered",
+    "regions": "https://www.outerreefsurfschool.com/pembrokeshire-surf-school/ - 'What beaches do we teach on?' lists only Pembrokeshire beaches (Freshwater West, Manorbier, Tenby, Saundersfoot, Broadhaven, Newgale); no mention of Brecon Beacons, Gower, Anglesey, Llyn Peninsula or Mid Wales anywhere on the site",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g552048-d6495762-Reviews-Outer_Reef-Pembroke_Pembrokeshire_Wales.html - matching business name, Pembroke location, hundreds of reviews and Travellers' Choice Award badge shown on operator's own Contact page",
+    "reviewCount/googleRating": "https://www.outerreefsurfschool.com/pembrokeshire-surf-school/ - site claims '200+ five-star Google reviews' but no aggregate numeric rating is displayed on-site or independently verifiable, so left null per spec rule against inventing ratings"
+  }
+}

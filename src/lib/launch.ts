@@ -12,15 +12,51 @@
  */
 
 /** Regions whose landing pages are live + indexable. */
-export const LAUNCH_REGIONS: ReadonlySet<string> = new Set(["snowdonia"]);
+export const LAUNCH_REGIONS: ReadonlySet<string> = new Set([
+  "snowdonia",
+  "pembrokeshire",
+  "brecon-beacons",
+  "gower",
+  "anglesey",
+  "llyn-peninsula",
+  "south-wales",
+  "mid-wales",
+]);
 
 /** Verified combo (things-to-do) pages per region: `${region}/${activityType}`. */
 export const LAUNCH_COMBOS: ReadonlySet<string> = new Set([
+  // Snowdonia
   "snowdonia/hiking",
   "snowdonia/kayaking",
   "snowdonia/gorge-walking",
   "snowdonia/caving",
   "snowdonia/mountain-biking",
+  // Pembrokeshire
+  "pembrokeshire/hiking",
+  "pembrokeshire/surfing",
+  "pembrokeshire/wild-swimming",
+  // Brecon Beacons
+  "brecon-beacons/caving",
+  "brecon-beacons/gorge-walking",
+  "brecon-beacons/hiking",
+  "brecon-beacons/mountain-biking",
+  "brecon-beacons/wild-swimming",
+  // Gower
+  "gower/hiking",
+  "gower/surfing",
+  "gower/wild-swimming",
+  // Anglesey
+  "anglesey/coasteering",
+  "anglesey/kayaking",
+  "anglesey/wild-swimming",
+  // Llŷn Peninsula
+  "llyn-peninsula/surfing",
+  // South Wales
+  "south-wales/mountain-biking",
+  "south-wales/surfing",
+  // Mid Wales
+  "mid-wales/hiking",
+  "mid-wales/mountain-biking",
 ]);
 
 /** Verified best-of list pages: `${region}/${bestSlug}`. None verified yet. */

@@ -209,7 +209,7 @@
     },
     {
       "question": "Is Llyn Peninsula surfing suitable for beginners?",
-      "answer": "Yes, spots like Abersoch Beach and Porth Oer (Whistling Sands) are perfect for beginners, especially in calmer conditions. Surf schools like Hell's Mouth Surf School in Abersoch offer lessons for all levels."
+      "answer": "Yes, spots like Abersoch Beach and Porth Oer (Whistling Sands) are perfect for beginners, especially in calmer conditions. Local surf schools in Abersoch offer lessons for all levels."
     },
     {
       "question": "Where can I rent surf gear on the Llyn Peninsula?",
@@ -229,7 +229,7 @@
     },
     {
       "question": "Where can I find surf lessons on the Llyn Peninsula?",
-      "answer": "Hell's Mouth Surf School, located in Abersoch, is a well-regarded surf school offering lessons for all abilities. Abersoch Watersports may also offer surf lessons, check their website for current availability."
+      "answer": "Abersoch Watersports offers surf lessons for a range of abilities, check their website for current availability."
     }
   ],
   "localDirectory": {
@@ -305,7 +305,7 @@
         "description": "A traditional pub with a relaxed atmosphere. Great for a post-surf pint and some classic pub grub.",
         "vibe": "Cosy pub, traditional",
         "priceRange": "££",
-        "website": "null",
+        "website": null,
         "knownFor": "Classic pub grub, Local ales"
       },
       {
@@ -378,7 +378,7 @@
       "type": "festival",
       "monthTypical": "July",
       "description": "Historically a watersports festival held annually in Abersoch, though it has changed format over the years. Usually featured wakeboarding and music.",
-      "website": "null",
+      "website": null,
       "relevantActivities": [
         "surfing",
         "wakeboarding",

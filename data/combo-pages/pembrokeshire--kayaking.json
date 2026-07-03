@@ -6,7 +6,7 @@
   "metaTitle": "Kayaking Pembrokeshire | Adventure Wales",
   "metaDescription": "Discover the best spots for kayaking Pembrokeshire: Ramsey Island, The Bitches, Skomer & more. Routes, gear, safety tips, & local insights from a pro.",
   "heroAlt": "Sea kayakers paddling near jagged cliffs in Pembrokeshire",
-  "introduction": "Pembrokeshire. The name alone conjures images of dramatic coastline, turquoise waters, and abundant wildlife. And there's no better way to experience it all than from the seat of a kayak. Forget crowded beaches and tourist trails; **kayaking Pembrokeshire** gets you up close and personal with the raw beauty of this National Park.\n\nWe're talking world-class sea kayaking here. The iconic Ramsey Island circumnavigation is a must-do for experienced paddlers, offering challenging conditions and incredible wildlife encounters. For the thrill-seekers, The Bitches tidal rapids deliver an adrenaline rush like no other. But don't think it's just for the pros! There are plenty of sheltered bays and harbours perfect for beginners and families to dip their paddles in. Places like Solva, Porthclais, and Stackpole Quay provide calm waters and stunning scenery.\n\nWhat sets Pembrokeshire apart is its incredible diversity. One minute you're battling against a headwind around a headland, the next you're gliding through crystal-clear waters spotting seals and seabirds. The wildlife is simply unmatched. From playful seals popping up to say hello to the comical puffins nesting on Skomer Island, every paddle is a wildlife safari.\n\nOf course, it's not always sunshine and calm seas. The Pembrokeshire coast can be unpredictable. Strong tides, exposed conditions, and sudden weather changes mean you need to be prepared. That's why we always recommend checking the forecast, having the right gear, and being honest about your abilities. Or, if you're new to the sport, join a guided tour with one of the excellent local operators like TYF Adventure or MUUK Adventures. They know the coast like the back of their hand and can ensure a safe and unforgettable experience.\n\nWhether you're seeking a challenging adventure or a peaceful paddle, **kayaking Pembrokeshire** will leave you breathless. Just remember to respect the sea, leave no trace, and maybe treat yourself to a well-deserved pint at The Sloop Inn in Porthgain afterwards. You'll have earned it.",
+  "introduction": "Pembrokeshire. The name alone conjures images of dramatic coastline, turquoise waters, and abundant wildlife. And there's no better way to experience it all than from the seat of a kayak. Forget crowded beaches and tourist trails; **kayaking Pembrokeshire** gets you up close and personal with the raw beauty of this National Park.\n\nWe're talking world-class sea kayaking here. The iconic Ramsey Island circumnavigation is a must-do for experienced paddlers, offering challenging conditions and incredible wildlife encounters. For the thrill-seekers, The Bitches tidal rapids deliver an adrenaline rush like no other. But don't think it's just for the pros! There are plenty of sheltered bays and harbours perfect for beginners and families to dip their paddles in. Places like Solva, Porthclais, and Stackpole Quay provide calm waters and stunning scenery.\n\nWhat sets Pembrokeshire apart is its incredible diversity. One minute you're battling against a headwind around a headland, the next you're gliding through crystal-clear waters spotting seals and seabirds. The wildlife is simply unmatched. From playful seals popping up to say hello to the comical puffins nesting on Skomer Island, every paddle is a wildlife safari.\n\nOf course, it's not always sunshine and calm seas. The Pembrokeshire coast can be unpredictable. Strong tides, exposed conditions, and sudden weather changes mean you need to be prepared. That's why we always recommend checking the forecast, having the right gear, and being honest about your abilities. Or, if you're new to the sport, join a guided tour with one of the excellent local operators. They know the coast like the back of their hand and can ensure a safe and unforgettable experience.\n\nWhether you're seeking a challenging adventure or a peaceful paddle, **kayaking Pembrokeshire** will leave you breathless. Just remember to respect the sea, leave no trace, and maybe treat yourself to a well-deserved pint at The Sloop Inn in Porthgain afterwards. You'll have earned it.",
   "bestSeason": "May-September",
   "difficultyRange": "Easy to Expert",
   "priceRange": "Free - £95 guided",
@@ -28,8 +28,8 @@
         "lat": 51.8724,
         "lng": -5.2703
       },
-      "estimatedCost": "Free (parking £6-8) or £85-95pp guided with TYF Adventure.",
-      "operatorSlug": "tyf-adventure",
+      "estimatedCost": "Free (parking £6-8) or £85-95pp with a guided tour.",
+      "operatorSlug": null,
       "insiderTip": "Check the tide times carefully. Slack water is the best time to navigate through The Bitches. Paddle anti-clockwise to take advantage of the tidal flow."
     },
     {
@@ -50,7 +50,7 @@
         "lng": -5.2703
       },
       "estimatedCost": "Free (parking £6-8). Guiding often includes Ramsey trip.",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "Scout the rapids from the headland before committing. Talk to local kayakers for up-to-date information on conditions. And wear a helmet!"
     },
     {
@@ -70,8 +70,8 @@
         "lat": 51.7371,
         "lng": -5.2281
       },
-      "estimatedCost": "Free (parking £5-7), Skomer Landing Fee applies (approx £15pp). Preseli Venture offers guided trips.",
-      "operatorSlug": "preseli-venture",
+      "estimatedCost": "Free (parking £5-7), Skomer Landing Fee applies (approx £15pp). Guided trips are available locally.",
+      "operatorSlug": null,
       "insiderTip": "Bring binoculars for better wildlife viewing. Be aware of the Skomer ferry route and give way accordingly. Check the weather forecast religiously; this crossing is exposed."
     },
     {
@@ -92,7 +92,7 @@
         "lng": -5.1842
       },
       "estimatedCost": "Free (parking £3-5). Several local businesses offer kayak hire.",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "Paddle up the river at high tide for a different perspective. Stop for ice cream at the cafe on the harbour wall after your paddle."
     },
     {
@@ -113,7 +113,7 @@
         "lng": -5.1948
       },
       "estimatedCost": "Free (parking £3-5).",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "Walk the Pembrokeshire Coast Path from Porthclais to St Davids after your paddle for stunning views."
     },
     {
@@ -134,7 +134,7 @@
         "lng": -5.1821
       },
       "estimatedCost": "Free (parking £5-7).",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "The Blue Lagoon itself is a great spot for a post-paddle swim (if you don't mind the cold!). Head to The Sloop Inn in Porthgain for a well-deserved pint."
     },
     {
@@ -155,7 +155,7 @@
         "lng": -4.8957
       },
       "estimatedCost": "Free (National Trust parking charges apply).",
-      "operatorSlug": "null",
+      "operatorSlug": null,
       "insiderTip": "Combine your paddle with a walk around the Stackpole Estate. Barafundle Bay is best enjoyed at low tide when there's more beach."
     },
     {

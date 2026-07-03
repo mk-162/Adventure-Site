@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "slug": "llangorse-multi-activity-centre",
+    "route": "/directory/llangorse-multi-activity-centre",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own website (llangorse.com), Visit Wales listing, and TripAdvisor listing (g552062-d2103112) — all agree on name, location (The Gilfach, Llangorse, Brecon, Powys LD3 7UH), phone, and activity set.",
+    "redFlags": [
+      "Seed data phone number (01874 658271) is wrong — correct number confirmed on 3 independent sources is 01874 658272.",
+      "Seed data claims kayaking, paddle-boarding, canoeing, and mountain biking as activities — none of these appear on the operator's own site, Visit Wales, or TripAdvisor. This appears to be fabricated/hallucinated content.",
+      "Seed data 'Zip Line Adventure' activity is misleading — the real offering is 'Sky Trek', a ~2km aerial zip line/ropes course, not a standalone zip-line-only product.",
+      "This operator ONLY serves the Brecon Beacons / Llangorse Lake area in Powys, Mid Wales. It has no presence in or connection to pembrokeshire, gower, anglesey, llyn-peninsula, or south-wales. Any combo pages in those five regions referencing this operator are factually wrong and must be fixed or the reference removed.",
+      "'mid-wales' as a combo-page region for this operator is defensible (Visit Wales itself files it under 'Mid Wales'), but on this site's regional taxonomy it should stay under brecon-beacons unless mid-wales is a distinct recognized region here — confirm against site's region list before publishing to mid-wales pages.",
+      "Google rating of 4.5 / 450 reviews in seed data is unverified and likely fabricated — TripAdvisor shows 147 reviews (112 Excellent, 18 Very Good, no aggregate star figure found); no Google Business rating could be sourced."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Llangorse Multi Activity Centre",
+    "slug": "llangorse-multi-activity-centre",
+    "website": "https://llangorse.com",
+    "tagline": "Action-packed adventures in the Brecon Beacons, since 1958",
+    "description": "Llangorse Multi Activity Centre is a family-run, multi-award-winning indoor and outdoor activity centre set on The Gilfach farm near Llangorse Lake in the Brecon Beacons National Park, Powys. Operating since 1958, it offers indoor climbing, bouldering, caving/potholing, abseiling and a high-wire course, alongside beginner-to-experienced horse riding and pony trekking across the Welsh countryside. Its signature outdoor attraction is Sky Trek, a roughly 2km aerial zip-line and ropes course through the estate.\n\nThe centre also runs archery, a junior challenge course, birthday parties, school trips/residentials, and corporate team-building days, with an on-site cafe (Base Camp). It is well established locally, ranked the top attraction in Llangorse on TripAdvisor with 147 reviews (112 rated Excellent, 18 Very Good). There is no evidence the centre offers water sports (kayaking, canoeing, paddle-boarding) or mountain biking, despite these appearing in some third-party listings.",
+    "uniqueSellingPoint": "One of the longest-established multi-activity centres in the Brecon Beacons, combining indoor climbing/caving, horse riding, and a signature 2km Sky Trek aerial zip-line course on one site.",
+    "contact": {
+      "phone": "01874 658272",
+      "email": "action@activityuk.com",
+      "address": "The Gilfach, Llangorse, Brecon, Powys, LD3 7UH"
+    },
+    "lat": 51.9405,
+    "lng": -3.2342,
+    "priceRange": "££",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": [
+      "indoor-climbing",
+      "bouldering",
+      "caving",
+      "abseiling",
+      "horse-riding",
+      "zip-lines",
+      "rope-courses",
+      "archery"
+    ],
+    "regions": ["brecon-beacons"],
+    "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g552062-d2103112-Reviews-Llangorse_Multi_Activity_Centre-Llangorse_Powys_Wales.html"
+  },
+  "fieldSources": {
+    "name": "https://llangorse.com/ — homepage title 'Llangorse Multi Activity Centre'",
+    "website": "https://llangorse.com/ — operator's own primary domain (redirect from www.llangorse.com also resolves here)",
+    "phone": "https://llangorse.com/contact/ and https://www.visitwales.com/activity/activity/llangorse-multi-activity-centre-547281 both confirm 01874 658272 (seed's 01874 658271 is incorrect)",
+    "email": "https://www.visitwales.com/activity/activity/llangorse-multi-activity-centre-547281 — lists action@activityuk.com as contact email",
+    "address": "https://llangorse.com/contact/ and https://www.visitwales.com/activity/activity/llangorse-multi-activity-centre-547281 — both confirm 'The Gilfach, Llangorse, Brecon, Powys, LD3 7UH'",
+    "activityTypes": "https://llangorse.com/activities/ (indoor bouldering/climbing/high-wire/caving/abseiling, horse riding, junior challenge course with zip lines, archery) and https://www.visitwales.com/activity/activity/llangorse-multi-activity-centre-547281 (adds Sky Trek zip-wire/ropes course, guided walking) — corroborated across both; no source mentions kayaking/canoeing/paddle-boarding/mountain biking",
+    "regions": "https://llangorse.com/ and https://www.visitwales.com/activity/activity/llangorse-multi-activity-centre-547281 both place it in the Brecon Beacons National Park / Powys, Mid Wales — no evidence of activity in pembrokeshire, gower, anglesey, llyn-peninsula, or south-wales",
+    "tripadvisorUrl": "https://www.tripadvisor.co.uk/Attraction_Review-g552062-d2103112-Reviews-Llangorse_Multi_Activity_Centre-Llangorse_Powys_Wales.html — verified via web search; note seed data's original TripAdvisor URL (g186460-d15797570) resolves to the wrong listing ID and should be replaced",
+    "reviewCount": "TripAdvisor search result: '147 reviews... ranked #1 of 4 things to do in Llangorse, with 112 Excellent ratings and 18 Very good ratings' — no aggregate numeric star rating could be sourced, so googleRating/reviewCount fields left null pending direct TripAdvisor page confirmation (direct fetch returned 403)"
+  }
+}

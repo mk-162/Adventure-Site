@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "slug": "oxwich-watersports",
+    "route": "/directory/oxwich-watersports",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own website (oxwichwatersports.co.uk), corroborated by TripAdvisor listing (Oxwich_Swansea_County_South_Wales_Wales) and Tourism Swansea Bay / Visit Swansea Bay listings. All sources consistently place the business at Oxwich Bay on the Gower Peninsula, South Wales.",
+    "redFlags": [
+      "Region mismatch: operator is currently referenced by combo pages for pembrokeshire, brecon-beacons, gower, anglesey, llyn-peninsula, south-wales, and mid-wales. It ONLY operates at Oxwich Bay, Gower Peninsula, Swansea. It does not serve pembrokeshire, brecon-beacons, anglesey, llyn-peninsula, or mid-wales — combo pages for those regions referencing this operator are incorrect and should be fixed/removed. Only 'gower' (and loosely 'south-wales' as the broader region containing Gower) are legitimate.",
+      "No street address or precise lat/lng could be sourced from the operator's own site or corroborating listings — location is described only as 'Oxwich Bay, Gower Peninsula'.",
+      "No Google rating could be sourced (TripAdvisor page blocked by 403 during research; do not invent a rating).",
+      "Price range not published on the operator's site; left unknown rather than guessed."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Oxwich Watersports",
+    "slug": "oxwich-watersports",
+    "website": "https://www.oxwichwatersports.co.uk/",
+    "tagline": "Watersports equipment hire and RYA training at Oxwich Bay, Gower",
+    "description": "Oxwich Watersports is based at Oxwich Bay on the Gower Peninsula, South Wales, offering equipment hire and instruction across a broad range of watersports. Activities include coasteering, stand-up paddleboarding, kayaking, sailing, self-drive boat hire, jet ski safaris, inflatable rides, and RYA-recognised training courses, catering to both casual family visitors and more experienced watersports enthusiasts.\n\nThe centre operates exclusively at Oxwich Bay and should not be presented as serving other Welsh regions such as Pembrokeshire, Brecon Beacons, Anglesey, Llyn Peninsula, or Mid Wales.",
+    "uniqueSellingPoint": "Wide range of watersports and RYA training in one of Gower's most sheltered, family-friendly bays",
+    "contact": {
+      "phone": "07740 284079",
+      "email": "info@oxwichwatersports.co.uk",
+      "address": "Oxwich Bay, Gower Peninsula, Swansea, Wales (precise street address unconfirmed)"
+    },
+    "lat": null,
+    "lng": null,
+    "priceRange": "unknown",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": [
+      "coasteering",
+      "stand-up-paddleboarding",
+      "kayaking",
+      "sailing",
+      "boat-hire",
+      "jet-ski",
+      "watersports-training"
+    ],
+    "regions": ["gower", "south-wales"],
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g1644116-d4811231-Reviews-Oxwich_Watersports-Oxwich_Swansea_County_South_Wales_Wales.html"
+  },
+  "fieldSources": {
+    "name": "https://www.oxwichwatersports.co.uk/ - operator's own homepage identifies itself as Oxwich Watersports",
+    "website": "https://www.oxwichwatersports.co.uk/ - operator's live site",
+    "contact.phone": "https://www.oxwichwatersports.co.uk/ - phone number 07740 284 079 listed on homepage",
+    "contact.email": "https://www.oxwichwatersports.co.uk/ - info@oxwichwatersports.co.uk listed on homepage",
+    "contact.address": "https://www.tripadvisor.com/Attraction_Review-g1644116-d4811231-Reviews-Oxwich_Watersports-Oxwich_Swansea_County_South_Wales_Wales.html - TripAdvisor page title/URL confirms location as Oxwich, Swansea County, South Wales; no precise street address found on any source",
+    "activityTypes": "https://www.oxwichwatersports.co.uk/ - homepage lists coasteering, SUP, kayaking, sailing, self-drive boat hire, jet ski safaris, inflatable rides, RYA training courses",
+    "regions": "https://www.oxwichwatersports.co.uk/ and https://www.tourismswanseabay.co.uk/oxwich-watersports/ and https://www.gowerholidays.com/things-to-do-see/activities/swansea-watersports/ - all sources agree the operator is located at Oxwich Bay, Gower Peninsula, Swansea; no evidence of activity in Pembrokeshire, Brecon Beacons, Anglesey, Llyn Peninsula, or Mid Wales",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g1644116-d4811231-Reviews-Oxwich_Watersports-Oxwich_Swansea_County_South_Wales_Wales.html - direct TripAdvisor listing found via search"
+  }
+}

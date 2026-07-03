@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "slug": "preseli-venture",
+    "route": "/directory/preseli-venture",
+    "contentType": "operator",
+    "researchedAt": "2026-07-03",
+    "recommendedNextStatus": "review",
+    "identityConfidence": "HIGH",
+    "identityConfidenceReason": "Confirmed via operator's own website (preseliventure.co.uk) matching seed address (Parcynole Fach, Mathry, Haverfordwest SA62 5HN), phone (01348 837709), and activity list. Corroborated by TripAdvisor listings for 'Preseli Venture' (Adventure Activities, Mathry, Fishguard, Pembrokeshire) and 'Preseli Venture Eco Barn & Lodges'.",
+    "redFlags": [
+      "Operator is used on combo pages for 7 Welsh regions (pembrokeshire, brecon-beacons, gower, anglesey, llyn-peninsula, south-wales, mid-wales) but it only actually operates on the North Pembrokeshire coast near Mathry, close to St Davids. It has no presence in Brecon Beacons, Gower, Anglesey, Llyn Peninsula, South Wales, or Mid Wales — those combo-page associations are incorrect and should be removed.",
+      "googleRating not sourced (no verifiable Google listing rating found during this research pass) — left null rather than guessed.",
+      "Exact TripAdvisor review count/rating could not be re-confirmed directly (TripAdvisor page returned 403 on fetch); search snippet indicated 'rated 4 of 5' with '352 traveler reviews' for the adventure activities listing, but this was not independently re-verified against the live page, so it is reported in fieldSources only, not written into reviewCount/googleRating fields."
+    ]
+  },
+  "proposedOperatorData": {
+    "name": "Preseli Venture",
+    "slug": "preseli-venture",
+    "website": "https://www.preseliventure.co.uk",
+    "tagline": "Eco-conscious coasteering, kayaking and surfing on the North Pembrokeshire coast",
+    "description": "Preseli Venture is an adventure activity centre and self-catering accommodation business based at Parcynole Fach, near Mathry on the North Pembrokeshire coast, a short drive from St Davids and a 20-minute walk from Abermawr beach and the Pembrokeshire Coast Path. It offers coasteering, sea kayaking, surfing, SUP boarding, rock climbing, canoeing, wild swimming, boat trips (including to Ramsey Island), beach sauna sessions, e-mountain biking and guided coastal explorer days, run in small groups by local instructors.\n\nThe business also operates on-site accommodation, including the Eco Barn (sleeps 8), Loom Cottage (sleeps 2, wheelchair-accessible) and Penbwchdy Cottage (sleeps 8), and promotes low-carbon, solar-powered operations. It is dog-friendly and open year-round.\n\nAll activity is based in North Pembrokeshire; it has no operations in Brecon Beacons, Gower, Anglesey, Llyn Peninsula, South Wales, or Mid Wales.",
+    "uniqueSellingPoint": "Long-established (decades-old), sustainability-focused adventure centre with its own eco-accommodation directly on the North Pembrokeshire coast.",
+    "contact": {
+      "phone": "01348 837709",
+      "email": "info@preseliventure.co.uk",
+      "address": "Parcynole Fach, Mathry, Haverfordwest, Pembrokeshire, SA62 5HN, Wales"
+    },
+    "lat": null,
+    "lng": null,
+    "priceRange": "£45-£95 per activity session (varies by activity and duration)",
+    "googleRating": null,
+    "reviewCount": null,
+    "activityTypes": ["coasteering", "sea-kayaking", "kayaking", "surfing", "wild-swimming", "canoeing", "rock-climbing", "sup-boarding"],
+    "regions": ["pembrokeshire"],
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g2016254-d2016105-Reviews-Preseli_Venture-Mathry_Fishguard_Pembrokeshire_Wales.html"
+  },
+  "fieldSources": {
+    "name/website/phone/address": "https://www.preseliventure.co.uk (fetched 2026-07-03) — homepage lists business name, phone 01348 837709, address Parcynole Fach, Mathry, Haverfordwest SA62 5HN; matches seed data in data/research/tier2-1.json",
+    "email": "data/research/tier2-1.json seed value info@preseliventure.co.uk; consistent with domain preseliventure.co.uk, not independently re-confirmed on-site during this pass",
+    "activities": "https://www.preseliventure.co.uk/activities/ and homepage — lists coasteering, kayaking, SUP boarding, surfing, rock climbing, boat trips, sea kayaking, canoeing, beach sauna, e-mountain biking, yoga retreats, wild swimming, guided coastal explorer days",
+    "accommodation": "https://www.preseliventure.co.uk homepage — Eco Barn, Loom Cottage, Penbwchdy Cottage descriptions and capacities",
+    "region_served": "https://www.preseliventure.co.uk homepage — 'Self-Catering Cottages on the North Pembrokeshire Coast', proximity to Abermawr beach and Pembrokeshire Coast Path; TripAdvisor listing location 'Mathry, Fishguard, Pembrokeshire, Wales' confirms sole region is Pembrokeshire, no evidence of activity in Brecon Beacons/Gower/Anglesey/Llyn Peninsula/South Wales/Mid Wales",
+    "tripadvisor_existence_and_rating": "https://www.tripadvisor.com/Attraction_Review-g2016254-d2016105-Reviews-Preseli_Venture-Mathry_Fishguard_Pembrokeshire_Wales.html (search snippet indicates ~4/5 rating, 352 reviews for adventure activities listing; direct page fetch returned HTTP 403 so figure not written into reviewCount/googleRating fields per spec's no-invented-rating rule)",
+    "price_range": "data/journal/preseli-venture-profile.json existing journal profile cites 2025/2026 prices: Coasteering £55-£75, Sea Kayaking £65-£95, Surfing £55-£75, Wild Swimming £45-£65, Ramsey Island boat trip £45-£65; not independently re-verified against live pricing page during this pass"
+  }
+}

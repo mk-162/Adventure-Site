@@ -29,7 +29,7 @@
         "lng": -5.1696
       },
       "estimatedCost": "Free (parking donations encouraged)",
-      "operatorSlug": "outer-reef-surf-school",
+      "operatorSlug": null,
       "insiderTip": "Park at Gupton Farm (National Trust) and walk across the dunes to avoid the crowded car park and enjoy a lovely walk. Check the tide tables before you go; low tide can expose a lot of rocks."
     },
     {
@@ -50,7 +50,7 @@
         "lng": -5.2108
       },
       "estimatedCost": "Free (parking charges apply)",
-      "operatorSlug": "outer-reef-surf-school",
+      "operatorSlug": null,
       "insiderTip": "Check the wind direction – offshore (easterly) winds are ideal. The Bench Bar is THE place for post-surf beers, right on the beach."
     },
     {
@@ -238,7 +238,7 @@
     },
     {
       "question": "Are there surf schools in Pembrokeshire?",
-      "answer": "Yes, there are several surf schools in Pembrokeshire, including Outer Reef Surf School in Newgale and MUUK Adventures, who offer lessons at various locations. Prices typically range from £30-£60 for a 2-hour lesson."
+      "answer": "Yes, there are several surf schools in Pembrokeshire offering lessons at various locations, including Newgale and Whitesands Bay. Prices typically range from £30-£60 for a 2-hour lesson."
     },
     {
       "question": "What size wetsuit do I need for surfing in Pembrokeshire?",
@@ -350,7 +350,7 @@
         "description": "A fish and chip restaurant with amazing fresh seafood and views of the harbour.",
         "vibe": "Takeaway restaurant",
         "priceRange": "££",
-        "website": "null",
+        "website": null,
         "knownFor": "Fresh seafood, fish and chips"
       },
       {

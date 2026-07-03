@@ -29,7 +29,7 @@
         "lng": -4.3001
       },
       "estimatedCost": "Free (parking £5-8) or £45-60 for a lesson",
-      "operatorSlug": "llangennith-surf-school",
+      "operatorSlug": null,
       "insiderTip": "Check the surf report at low tide. Often, the sandbanks create better-shaped waves at low to mid-tide. Plus, you can grab a burger from the van in the carpark after your session."
     },
     {
@@ -155,7 +155,7 @@
         "lng": -4.0647
       },
       "estimatedCost": "Free (parking £3-5)",
-      "operatorSlug": "oxwich-watersports",
+      "operatorSlug": null,
       "insiderTip": "Explore the Oxwich National Nature Reserve after your surf. The beach is also great for a long walk."
     }
   ],

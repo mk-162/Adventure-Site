@@ -3,6 +3,7 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import { AdSlot } from "@/components/commercial/AdSlot";
+import { renderContentLink } from "@/lib/content-links";
 import {
   JsonLd,
   createBreadcrumbSchema,
@@ -182,8 +183,9 @@ function markdownToHtml(md: string): string {
     .replace(/`([^`]+)`/g, '<code class="bg-gray-100 text-primary px-1.5 py-0.5 rounded text-sm">$1</code>')
     // Blockquotes
     .replace(/^>\s?(.+)$/gm, '<blockquote class="border-l-4 border-accent-hover pl-4 my-4 text-gray-600 italic">$1</blockquote>')
-    // Links
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-accent-hover hover:underline">$1</a>')
+    // Links — legacy/unlaunched targets degrade to plain text
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_m: string, label: string, url: string) =>
+      renderContentLink(label, url, "text-accent-hover hover:underline"))
     // Unordered lists
     .replace(/^[-*] (.+)$/gm, '<li class="ml-4">$1</li>')
     // Numbered lists

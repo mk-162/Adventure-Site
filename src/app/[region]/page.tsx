@@ -472,7 +472,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
   const [activities, accommodation, { operators }, mapEntities, activityTypesWithCount, bestLists] = await Promise.all([
     getActivitiesByRegion(regionSlug, 30),
     getAccommodationByRegion(regionSlug, 4),
-    getOperators({ limit: 3 }),
+    getOperators({ regionSlug, limit: 3 }),
     getRegionEntitiesForMap(region.id),
     getActivityTypesForRegion(region.id),
     Promise.resolve(getBestListsForRegion(regionSlug)),
@@ -930,10 +930,12 @@ export default async function RegionPage({ params }: RegionPageProps) {
                         </div>
                         <div className="flex-1 min-w-0">
                             <p className="text-sm font-bold truncate text-primary">{op.name}</p>
-                            <div className="flex items-center gap-1">
-                                <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
-                                <span className="text-xs text-gray-500">{op.googleRating || "5.0"} ({op.reviewCount || 100} reviews)</span>
-                            </div>
+                            {op.googleRating != null && op.reviewCount != null && (
+                                <div className="flex items-center gap-1">
+                                    <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
+                                    <span className="text-xs text-gray-500">{op.googleRating} ({op.reviewCount} reviews)</span>
+                                </div>
+                            )}
                         </div>
                         <Link href={`/directory/${op.slug}`} className="size-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
                             <ArrowRight className="w-4 h-4 text-gray-600" />

@@ -30,10 +30,10 @@ Yes, if you: love dramatic scenery, enjoy challenging conditions, want empty tra
 ## Top Spots This Season
 
 ### Snowdonia National Park
-Winter mountaineering in Snowdonia is world-class — if you know what you're doing. The Glyderau and Carneddau ranges offer serious winter climbing and scrambling. For experienced mountaineers with winter skills, the conditions rival Scotland. Everyone else: the lower valley walks around Betws-y-Coed, the Aber Falls trail, and the shores of Llyn Ogwen are beautiful in winter without the summit risk. [Find hiking in Snowdonia](/snowdonia/things-to-do/hiking).
+Winter mountaineering in Snowdonia is world-class — if you know what you're doing. The Glyderau and Carneddau ranges offer serious winter climbing and scrambling. For experienced mountaineers with winter skills, the conditions rival Scotland. Everyone else: the lower valley walks around Betws-y-Coed, the Aber Falls trail, and the shores of Llyn Ogwen are beautiful in winter without the summit risk. [Find hiking in Snowdonia](/snowdonia/hiking).
 
 ### Brecon Beacons
-The Dark Sky Reserve comes alive in winter. Book a stargazing session — the Milky Way from the Usk Reservoir car park on a clear December night is breathtaking. Pen y Fan still attracts walkers but the ridge is exposed; save it for a clear, calm day. [Caving in the Brecon Beacons](/brecon-beacons/things-to-do/caving) is a genuinely brilliant winter activity — constant temperature underground, rain-proof, and atmospheric.
+The Dark Sky Reserve comes alive in winter. Book a stargazing session — the Milky Way from the Usk Reservoir car park on a clear December night is breathtaking. Pen y Fan still attracts walkers but the ridge is exposed; save it for a clear, calm day. [Caving in the Brecon Beacons](/brecon-beacons/caving) is a genuinely brilliant winter activity — constant temperature underground, rain-proof, and atmospheric.
 
 ### Pembrokeshire Coast
 Winter storms make the coastline incredibly dramatic. Watch waves hammer the cliffs from the coastal path near St Davids — properly awe-inspiring. Grey seal pups are on the beaches through December. The coastal towns are quiet but many restaurants stay open. Walking the coast path in winter gear with no one else around is special.
@@ -50,7 +50,7 @@ If the mountains are too hostile, Cardiff's indoor options are strong: the Natio
 2.  **Caving:** The underground temperature is a constant 10°C year-round. While it's sleeting outside, you're warm(ish) underground exploring the Brecon Beacons cave systems. [Find caving in Wales](/activities/caving).
 3.  **Coastal walking:** The Pembrokeshire Coast Path and Anglesey Coastal Path are magnificent in winter. Wrap up, take it slow, and enjoy the drama. [Find hiking across Wales](/activities/hiking).
 4.  **Stargazing:** The Brecon Beacons Dark Sky Reserve, Elan Valley, and Snowdonia all offer incredible winter night skies. Some operators run guided stargazing sessions.
-5.  **Zip lining:** Zip World's indoor attractions — Bounce Below and Zip World Caverns — run year-round in the old Llechwedd slate mines. [Find zip lines in Snowdonia](/snowdonia/things-to-do/zip-lining).
+5.  **Zip lining:** Zip World's indoor attractions — Bounce Below and Zip World Caverns — run year-round in the old Llechwedd slate mines. [Find zip lines in Snowdonia](/snowdonia).
 
 ## What You'll Need
 

@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getAppUrl } from "@/lib/app-url";
 import { db } from "@/db";
 import { users } from "@/db/schema";
 import { eq } from "drizzle-orm";
 import { setUserSession } from "@/lib/user-auth";
 
 export async function GET(req: NextRequest) {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
+  const baseUrl = getAppUrl();
   const code = req.nextUrl.searchParams.get("code");
   const state = req.nextUrl.searchParams.get("state");
   const storedState = req.cookies.get("oauth_state")?.value;

@@ -33,7 +33,7 @@ Here's what a typical session involves:
 | **Bounce Below** (Blaenau Ffestiniog) | Giant underground trampolines in a cave | Families, younger kids | ~£30-40 |
 | **Tree-top adventures** (various) | Rope courses and zip lines through forest canopy | Families, building confidence | ~£25-45 |
 
-[Find zip lines in Snowdonia](/snowdonia/things-to-do/zip-lining) | [Browse all zip line experiences](/activities/zip-lining)
+[Find zip lines in Snowdonia](/snowdonia) | [Browse all zip line experiences](/activities/type/zip-lining)
 
 ## Practical Tips for First-Timers
 

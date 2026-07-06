@@ -39,7 +39,7 @@ After 20-30 minutes, it clicks. You stop fighting the kayak, your strokes become
 
 | Type | Best For | Difficulty | Top Locations |
 |------|----------|------------|---------------|
-| Sea kayaking | Coastal scenery, wildlife, adventure | Moderate (weather-dependent) | [Pembrokeshire](/pembrokeshire/things-to-do/kayaking), [Anglesey](/anglesey/things-to-do/kayaking) |
+| Sea kayaking | Coastal scenery, wildlife, adventure | Moderate (weather-dependent) | [Pembrokeshire](/pembrokeshire), [Anglesey](/anglesey/kayaking) |
 | River kayaking/canoeing | Relaxed paddling, families, wildlife | Easy | River Wye, River Teifi |
 | Lake kayaking | Calm water, beginners, mountain views | Easy | Llyn Padarn (Snowdonia), Llyn Tegid (Bala) |
 | Stand-up paddleboarding | Balance challenge, calmer water | Easy-Moderate | Gower, Pembrokeshire, lakes |

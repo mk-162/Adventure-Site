@@ -76,7 +76,7 @@ There is a public café and bar at the centre that walk-in visitors can use, and
 
 ## Pairing notes
 
-- **The natural anchor operator for the [Snowdonia kayaking combo](/snowdonia/things-to-do/kayaking)** — Plas y Brenin is where most British paddlers learn whitewater on the Afon Conwy / Llugwy / Glaslyn.
+- **The natural anchor operator for the [Snowdonia kayaking combo](/snowdonia/kayaking)** — Plas y Brenin is where most British paddlers learn whitewater on the Afon Conwy / Llugwy / Glaslyn.
 - **Co-anchor with Joe Brown's and V12 Outdoor for the climbing combo** — Plas y Brenin handles the residential coaching; the local shops handle gear and casual instruction.
 - **The credentialled alternative to commercial day-trip operators** for visitors who want to come away from Snowdonia with a transferable skill (a qualification, a logged white-water grade, a navigation ticket) rather than a single thrill.
 - **Bar and café are open to non-residents** — the bar in particular is a Capel Curig institution and a useful end-of-day debrief venue for visitors not staying on site.

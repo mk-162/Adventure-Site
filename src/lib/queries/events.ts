@@ -1,6 +1,6 @@
 import { db } from "@/db";
 import { regions, events } from "@/db/schema";
-import { eq, and, ilike, desc, asc, sql, gte } from "drizzle-orm";
+import { eq, and, ilike, desc, asc, sql, gte, inArray } from "drizzle-orm";
 
 // =====================
 // EVENT QUERIES
@@ -8,6 +8,8 @@ import { eq, and, ilike, desc, asc, sql, gte } from "drizzle-orm";
 
 export async function getEvents(options?: {
   regionId?: number;
+  /** Filter to a set of regions (e.g. launch regions). Ignored if regionId is set. */
+  regionIds?: number[];
   type?: string;
   month?: string;
   limit?: number;
@@ -25,6 +27,8 @@ export async function getEvents(options?: {
 
   if (options?.regionId) {
     conditions.push(eq(events.regionId, options.regionId));
+  } else if (options?.regionIds && options.regionIds.length > 0) {
+    conditions.push(inArray(events.regionId, options.regionIds));
   }
   if (options?.type) {
     conditions.push(ilike(events.type, `%${options.type}%`));

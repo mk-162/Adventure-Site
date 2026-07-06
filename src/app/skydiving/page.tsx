@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { ActivityCard } from "@/components/cards/activity-card";
 import { RegionMap } from "@/components/ui/RegionMap";
-import { getActivities, getActivityTypeBySlug, getItineraries, getEvents } from "@/lib/queries";
+import { getActivities, getActivityTypeBySlug, getItineraries, getEvents, getOperatorBySlug } from "@/lib/queries";
 import { Map, Calendar, MessageCircle, ChevronDown, ArrowRight, MapPin, Star, Clock, PoundSterling, Users, Gauge, Compass, Sparkles, Plane } from "lucide-react";
 import { JsonLd, createTouristDestinationSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 
@@ -210,7 +210,16 @@ export default async function SkydivingHubPage() {
     getEvents({ limit: 50 }),
   ]);
 
-  const relatedItineraries = allItineraries.filter(row => 
+  // Launch gate: only link dropzone cards to /directory/<slug> when that
+  // operator exists and is published — unpublished/missing slugs would 404.
+  const dropzoneOperators = await Promise.all(
+    activityConfig.dropzones.map((dropzone) => getOperatorBySlug(dropzone.operatorSlug))
+  );
+  const publishedOperatorSlugs = new Set(
+    dropzoneOperators.filter((op) => op !== null).map((op) => op.slug)
+  );
+
+  const relatedItineraries = allItineraries.filter(row =>
     row.itinerary.title?.toLowerCase().includes("skydiv") ||
     row.itinerary.title?.toLowerCase().includes("parachut") ||
     row.itinerary.description?.toLowerCase().includes("skydiving")
@@ -351,13 +360,15 @@ export default async function SkydivingHubPage() {
                     </div>
                   </div>
 
-                  <Link 
-                    href={`/directory/${dropzone.operatorSlug}`}
-                    className="mt-4 block w-full bg-primary text-white text-center py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors"
-                  >
-                    View Details <ArrowRight className="inline w-4 h-4 ml-1" />
-                  </Link>
-                  
+                  {publishedOperatorSlugs.has(dropzone.operatorSlug) && (
+                    <Link
+                      href={`/directory/${dropzone.operatorSlug}`}
+                      className="mt-4 block w-full bg-primary text-white text-center py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors"
+                    >
+                      View Details <ArrowRight className="inline w-4 h-4 ml-1" />
+                    </Link>
+                  )}
+
                   {dropzone.statusNote && (
                     <p className="mt-2 text-xs text-gray-500 text-center">{dropzone.statusNote}</p>
                   )}

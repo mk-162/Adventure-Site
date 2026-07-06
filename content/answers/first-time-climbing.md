@@ -30,9 +30,9 @@ This is where it gets special. Climbing real rock in places like Snowdonia, the 
 For your first outdoor climb, **go with a qualified instructor.** They handle the safety systems, choose routes appropriate for your level, and teach you how to read the rock. A half-day guided session typically costs £60-100 per person.
 
 **Best beginner outdoor spots:**
-*   **Idwal Slabs (Snowdonia):** The classic introduction to Welsh outdoor climbing. Low-angle friction slabs where you learn to trust your feet. Beautiful mountain setting by Llyn Idwal. [Find climbing in Snowdonia](/snowdonia/things-to-do/climbing).
+*   **Idwal Slabs (Snowdonia):** The classic introduction to Welsh outdoor climbing. Low-angle friction slabs where you learn to trust your feet. Beautiful mountain setting by Llyn Idwal. [Find climbing in Snowdonia](/snowdonia).
 *   **Tremadog (Snowdonia):** Roadside crags that dry quickly — a good option in mixed weather. Range of routes from easy to hard.
-*   **Gower Peninsula:** Limestone sea cliffs with shorter routes and great views. More accessible from South Wales. [Find climbing on the Gower](/gower/things-to-do/climbing).
+*   **Gower Peninsula:** Limestone sea cliffs with shorter routes and great views. More accessible from South Wales. [Find climbing on the Gower](/gower).
 *   **Great Orme (Llandudno):** Accessible limestone sport climbing with a range of grades. Short walk from the car park.
 
 ## What Actually Happens

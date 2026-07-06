@@ -2,7 +2,7 @@ import Image from "next/image";
 import { unstable_cache } from "next/cache";
 import { db } from "@/db";
 import { regions, activities, events, operators, activityTypes } from "@/db/schema";
-import { eq, desc, asc, sql } from "drizzle-orm";
+import { eq, desc, asc, sql, and, inArray } from "drizzle-orm";
 import { HeroSection } from "@/components/home/hero-section";
 import { SearchBar } from "@/components/home/search-bar";
 import { RegionsGrid } from "@/components/home/regions-grid";
@@ -14,57 +14,53 @@ import { JsonLd, createWebSiteSchema, createOrganizationSchema } from "@/compone
 import { getFeaturedItineraries } from "@/lib/queries";
 import { ThisWeekendWidget } from "@/components/events/ThisWeekendWidget";
 import { getEffectiveTier } from "@/lib/trial-utils";
-import { isLaunchRegion } from "@/lib/launch";
+import { LAUNCH_REGIONS, LAUNCH_COMBOS } from "@/lib/launch";
 
-/** Build a map of region slug → activity type slugs that exist in that region */
-async function _getRegionActivityMap(): Promise<Record<string, string[]>> {
-  const rows = await db
-    .select({
-      regionSlug: regions.slug,
-      activitySlug: activityTypes.slug,
-    })
-    .from(activities)
-    .innerJoin(regions, eq(activities.regionId, regions.id))
-    .innerJoin(activityTypes, eq(activities.activityTypeId, activityTypes.id))
-    .where(eq(activities.status, "published"))
-    .groupBy(regions.slug, activityTypes.slug);
-
+/**
+ * Map of region slug → activity type slugs, derived from the launch allowlist —
+ * the SearchBar navigates straight to `/${region}/${activity}`, so every pair
+ * here must be a live combo page or the search 404s. LAUNCH_COMBOS is the
+ * source of truth (some verified combos are JSON-backed with no DB activity
+ * rows, so a DB-derived map would wrongly omit them).
+ */
+function getRegionActivityMap(): Record<string, string[]> {
   const map: Record<string, string[]> = {};
-  for (const row of rows) {
-    if (!map[row.regionSlug]) map[row.regionSlug] = [];
-    map[row.regionSlug].push(row.activitySlug);
+  for (const combo of LAUNCH_COMBOS) {
+    const [regionSlug, activitySlug] = combo.split("/");
+    if (!map[regionSlug]) map[regionSlug] = [];
+    map[regionSlug].push(activitySlug);
   }
   return map;
 }
 
-const getRegionActivityMap = unstable_cache(
-  _getRegionActivityMap,
-  ["region-activity-map"],
-  { revalidate: 300, tags: ["content"] }
-);
-
 async function _getHomePageData() {
-  const [regionsData, activitiesData, eventsData, operatorsData, activityTypesData, featuredItinerariesData, regionActivityMap] = await Promise.all([
-    db.select().from(regions).where(eq(regions.status, "published")).limit(6),
+  const [regionsData, activitiesData, eventsData, operatorsData, activityTypesData, featuredItinerariesData] = await Promise.all([
+    db.select().from(regions)
+      .where(and(eq(regions.status, "published"), inArray(regions.slug, [...LAUNCH_REGIONS])))
+      .orderBy(asc(regions.name)),
     db.select().from(activities).where(eq(activities.status, "published")).limit(10),
     db.select().from(events).where(eq(events.status, "published")).orderBy(asc(events.dateStart)).limit(10),
     db.select().from(operators).where(
-      sql`(${operators.claimStatus} IN ('premium', 'claimed') OR (${operators.trialTier} = 'premium' AND ${operators.trialExpiresAt} > NOW()))`
+      sql`${operators.status} = 'published' AND (${operators.claimStatus} IN ('premium', 'claimed') OR (${operators.trialTier} = 'premium' AND ${operators.trialExpiresAt} > NOW()))`
     ).orderBy(sql`CASE
       WHEN ${operators.claimStatus} = 'premium' THEN 0
       WHEN ${operators.trialTier} = 'premium' AND ${operators.trialExpiresAt} > NOW() THEN 0
       ELSE 1 END`).limit(8),
     db.select().from(activityTypes).orderBy(asc(activityTypes.name)),
     getFeaturedItineraries(3),
-    getRegionActivityMap(),
   ]);
 
+  const regionActivityMap = getRegionActivityMap();
+  // Only offer activity types that are bookable somewhere in the launch slice —
+  // activity-only searches navigate to `/${slug}` hub pages.
+  const launchActivitySlugs = new Set(Object.values(regionActivityMap).flat());
+
   return {
-    regions: regionsData.filter((r) => isLaunchRegion(r.slug)),
+    regions: regionsData,
     activities: activitiesData,
     events: eventsData,
     operators: operatorsData,
-    activityTypes: activityTypesData,
+    activityTypes: activityTypesData.filter((at) => launchActivitySlugs.has(at.slug)),
     itineraries: featuredItinerariesData,
     regionActivityMap,
   };

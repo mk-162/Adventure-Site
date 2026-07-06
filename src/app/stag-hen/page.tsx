@@ -8,6 +8,7 @@ import Link from "next/link";
 import { ArrowRight, Beer, MapPin, Mountain, Users, Wallet } from "lucide-react";
 import { JsonLd, createFAQPageSchema, createWebSiteSchema } from "@/components/seo/JsonLd";
 import Image from "next/image";
+import { isLaunchRegion } from "@/lib/launch";
 
 export const revalidate = 3600;
 
@@ -31,15 +32,16 @@ export default async function StagHenPage() {
     )
   ).limit(12);
 
+  // Activities without a dedicated top-level hub route link to /activities/type/<db-type-slug>.
   const popularActivities = [
-    { name: "Gorge Walking", slug: "gorge-walking", price: "45", desc: "Leap into waterfalls and scramble through gorges." },
-    { name: "Coasteering", slug: "coasteering", price: "45", desc: "Climb, jump, and swim along the wild coast." },
-    { name: "Canyoning", slug: "canyoning", price: "55", desc: "Abseil down waterfalls in deep river canyons." },
-    { name: "Paintball", slug: "paintball", price: "25", desc: "Classic group combat strategy games." },
-    { name: "Surfing", slug: "surfing", price: "35", desc: "Catch waves on Wales' best beaches." },
-    { name: "Climbing", slug: "climbing", price: "40", desc: "Scale sea cliffs or mountain crags." },
-    { name: "Zip Lining", slug: "zip-lining", price: "50", desc: "Fly over quarries at 100mph." },
-    { name: "Wild Swimming", slug: "wild-swimming", price: "Free", desc: "Dip in crystal clear mountain lakes." },
+    { name: "Gorge Walking", slug: "gorge-walking", href: "/gorge-walking", price: "45", desc: "Leap into waterfalls and scramble through gorges." },
+    { name: "Coasteering", slug: "coasteering", href: "/coasteering", price: "45", desc: "Climb, jump, and swim along the wild coast." },
+    { name: "Canyoning", slug: "canyoning", href: "/activities/type/canyoning", price: "55", desc: "Abseil down waterfalls in deep river canyons." },
+    { name: "Paintball", slug: "paintball", href: "/activities/type/paintball-laser-tag", price: "25", desc: "Classic group combat strategy games." },
+    { name: "Surfing", slug: "surfing", href: "/surfing", price: "35", desc: "Catch waves on Wales' best beaches." },
+    { name: "Climbing", slug: "climbing", href: "/climbing", price: "40", desc: "Scale sea cliffs or mountain crags." },
+    { name: "Zip Lining", slug: "zip-lining", href: "/activities/type/zip-lining", price: "50", desc: "Fly over quarries at 100mph." },
+    { name: "Wild Swimming", slug: "wild-swimming", href: "/wild-swimming", price: "Free", desc: "Dip in crystal clear mountain lakes." },
   ];
 
   const regionsList = [
@@ -138,7 +140,7 @@ export default async function StagHenPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {popularActivities.map((activity) => (
-              <Link key={activity.slug} href={`/${activity.slug}`} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
+              <Link key={activity.slug} href={activity.href} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">{activity.name}</h3>
                   <p className="text-sm text-gray-500 mb-4 h-10">{activity.desc}</p>
@@ -164,8 +166,9 @@ export default async function StagHenPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-primary mb-12 text-center">Explore by Region</h2>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-            {regionsList.map((region) => (
-              <Link key={region.slug} href={`/${region.slug}/stag-hen`} className="group relative h-80 rounded-2xl overflow-hidden flex items-end p-6">
+            {/* No region/stag-hen combo pages are launched yet — link to the region landing pages (launch regions only). */}
+            {regionsList.filter((region) => isLaunchRegion(region.slug)).map((region) => (
+              <Link key={region.slug} href={`/${region.slug}`} className="group relative h-80 rounded-2xl overflow-hidden flex items-end p-6">
                 <Image
                   src={region.img}
                   alt={region.name}

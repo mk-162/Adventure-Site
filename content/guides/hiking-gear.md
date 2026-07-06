@@ -48,10 +48,10 @@ Generally, items like waterproof jackets, navigation tools, and essential safety
 
 ## Where to Go Hiking in Wales
 
-*   **Snowdonia National Park:** Home to Snowdon (Yr Wyddfa) and the dramatic Glyderau and Carneddau ranges. Everything from gentle lakeside walks to serious scrambles like Crib Goch. [Find hiking in Snowdonia](/snowdonia/things-to-do/hiking).
-*   **Brecon Beacons:** Pen y Fan is the popular choice, but the waterfall walks around Ystradfellte and the Black Mountains ridge are arguably better. [Find hiking in the Brecon Beacons](/brecon-beacons/things-to-do/hiking).
-*   **Pembrokeshire Coast Path:** 186 miles of stunning coastal walking. Pick a section — St Davids to Solva or Tenby to Manorbier are both excellent. [Find hiking in Pembrokeshire](/pembrokeshire/things-to-do/hiking).
-*   **Llŷn Peninsula:** Quiet coastal paths with views to Bardsey Island. Empty even in summer. [Find hiking on the Llŷn Peninsula](/llyn-peninsula/things-to-do/hiking).
+*   **Snowdonia National Park:** Home to Snowdon (Yr Wyddfa) and the dramatic Glyderau and Carneddau ranges. Everything from gentle lakeside walks to serious scrambles like Crib Goch. [Find hiking in Snowdonia](/snowdonia/hiking).
+*   **Brecon Beacons:** Pen y Fan is the popular choice, but the waterfall walks around Ystradfellte and the Black Mountains ridge are arguably better. [Find hiking in the Brecon Beacons](/brecon-beacons/hiking).
+*   **Pembrokeshire Coast Path:** 186 miles of stunning coastal walking. Pick a section — St Davids to Solva or Tenby to Manorbier are both excellent. [Find hiking in Pembrokeshire](/pembrokeshire/hiking).
+*   **Llŷn Peninsula:** Quiet coastal paths with views to Bardsey Island. Empty even in summer. [Find hiking on the Llŷn Peninsula](/llyn-peninsula).
 *   **Wye Valley:** Lower-level walking through ancient woodland. The stretch from Tintern to Monmouth is gorgeous in autumn.
 
 ## Wales-Specific Tips

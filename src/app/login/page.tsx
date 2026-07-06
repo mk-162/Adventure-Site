@@ -138,7 +138,9 @@ function LoginForm() {
             </div>
           )}
 
-          {/* Google Sign In */}
+          {/* Google Sign In — only rendered when OAuth is configured
+              (set NEXT_PUBLIC_GOOGLE_LOGIN=1 alongside GOOGLE_CLIENT_ID/SECRET) */}
+          {process.env.NEXT_PUBLIC_GOOGLE_LOGIN === "1" && (<>
           <a
             href="/api/user/google"
             className="w-full flex items-center justify-center gap-3 px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors font-medium text-slate-700"
@@ -160,6 +162,7 @@ function LoginForm() {
               <span className="px-4 bg-white text-slate-400">or use email</span>
             </div>
           </div>
+          </>)}
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>

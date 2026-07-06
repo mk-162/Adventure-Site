@@ -1,4 +1,5 @@
-import { getEvents, getEventMonths, getRegionBySlug } from "@/lib/queries";
+import { getEvents, getEventMonths, getAllRegions } from "@/lib/queries";
+import { isLaunchRegion } from "@/lib/launch";
 import { EventsClient } from "@/components/events/EventsClient";
 import { EventGridCard } from "@/components/events/EventGridCard";
 import { EventPagination } from "@/components/events/EventPagination";
@@ -11,23 +12,27 @@ export const dynamic = 'force-dynamic';
 export default async function EventsPage({
   searchParams,
 }: {
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
-  const page = Number(searchParams.page) || 1;
-  const category = typeof searchParams.type === 'string' ? searchParams.type : undefined;
-  const month = typeof searchParams.month === 'string' ? searchParams.month : undefined;
+  const params = await searchParams;
+  const page = Math.max(1, Number(params.page) || 1);
+  const category = typeof params.type === 'string' ? params.type : undefined;
+  const month = typeof params.month === 'string' ? params.month : undefined;
   const limit = 12; // 12 items per page
   const offset = (page - 1) * limit;
 
-  // Launch gate: scope events to launched regions (Snowdonia only for now).
-  const launchRegion = await getRegionBySlug("snowdonia");
+  // Launch gate: scope events to launched regions.
+  const allRegions = await getAllRegions();
+  const launchRegionIds = allRegions
+    .filter((r) => isLaunchRegion(r.slug))
+    .map((r) => r.id);
   const [eventsData, months] = await Promise.all([
     getEvents({
       type: category,
       month,
       limit,
       offset,
-      regionId: launchRegion?.id,
+      regionIds: launchRegionIds,
     }),
     getEventMonths(),
   ]);

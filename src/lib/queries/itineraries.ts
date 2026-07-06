@@ -104,7 +104,13 @@ export async function getItineraryWithStops(slug: string) {
     .leftJoin(activityTypes, eq(activities.activityTypeId, activityTypes.id))
     .leftJoin(accommodation, eq(itineraryStops.accommodationId, accommodation.id))
     .leftJoin(locations, eq(itineraryStops.locationId, locations.id))
-    .leftJoin(operators, eq(itineraryStops.operatorId, operators.id))
+    // Publish gate: only surface published operators (real-business gate),
+    // matching the pattern in queries/operators.ts. Unpublished operators
+    // resolve to a null stop.operator instead of a broken /directory link.
+    .leftJoin(
+      operators,
+      and(eq(itineraryStops.operatorId, operators.id), eq(operators.status, "published"))
+    )
     .where(eq(itineraryStops.itineraryId, itineraryResult.itinerary.id))
     .orderBy(asc(itineraryStops.dayNumber), asc(itineraryStops.orderIndex));
 

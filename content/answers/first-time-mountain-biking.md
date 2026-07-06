@@ -30,7 +30,7 @@ Most trail centres hire bikes (typically £35-55 for a half day), and they'll se
 
 **Coed Llandegla** is probably the best first-time trail centre in Wales. The green trail is smooth enough to be enjoyable without being boring, the blue trail introduces real mountain biking without terrifying you, and the café makes excellent cake. Easy access from Chester, Liverpool, and Manchester.
 
-**Coed y Brenin** in Snowdonia is the original Welsh trail centre and still brilliant. The blue-graded Temtiwr trail is a perfect step up once you've found your confidence. The forest setting is gorgeous, and the drainage is excellent — rideable in most weather. [Find mountain biking in Snowdonia](/snowdonia/things-to-do/mountain-biking).
+**Coed y Brenin** in Snowdonia is the original Welsh trail centre and still brilliant. The blue-graded Temtiwr trail is a perfect step up once you've found your confidence. The forest setting is gorgeous, and the drainage is excellent — rideable in most weather. [Find mountain biking in Snowdonia](/snowdonia/mountain-biking).
 
 ## What Actually Happens
 

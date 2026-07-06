@@ -1,6 +1,6 @@
 import { db } from "@/db";
 import { regions, accommodation } from "@/db/schema";
-import { eq, and, asc } from "drizzle-orm";
+import { eq, and, asc, inArray } from "drizzle-orm";
 import { getRegionBySlug } from "./sites-regions";
 
 // =====================
@@ -9,6 +9,8 @@ import { getRegionBySlug } from "./sites-regions";
 
 export async function getAccommodation(options?: {
   regionId?: number;
+  /** Filter to a set of regions (e.g. launch regions). Ignored if regionId is set. */
+  regionIds?: number[];
   type?: string;
   limit?: number;
   offset?: number;
@@ -17,6 +19,8 @@ export async function getAccommodation(options?: {
 
   if (options?.regionId) {
     conditions.push(eq(accommodation.regionId, options.regionId));
+  } else if (options?.regionIds && options.regionIds.length > 0) {
+    conditions.push(inArray(accommodation.regionId, options.regionIds));
   }
   if (options?.type) {
     conditions.push(eq(accommodation.type, options.type));

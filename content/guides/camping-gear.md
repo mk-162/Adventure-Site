@@ -74,10 +74,10 @@ Prioritize buying quality used gear from reputable outdoor stores or online mark
 
 *   **Hillfort campsite, Llanmadoc (Gower):** Small, simple site on the edge of the Gower AONB. Walk to Whiteford Sands and Rhossili from your tent. Book early — it fills up fast.
 *   **Shell Island, Llanbedr (Snowdonia):** Massive, wild-feeling site with direct beach access. Slightly chaotic but kids love it. The causeway floods at high tide — check times.
-*   **Cwmcarn Forest, near Newport:** Woodland camping with mountain biking trails on your doorstep. [Find mountain biking in South Wales](/south-wales/things-to-do/mountain-biking).
-*   **Trefalen Farm, St Davids (Pembrokeshire):** Small campsite minutes from the coast path. Perfect base for [coasteering](/pembrokeshire/things-to-do/coasteering) and coastal walking.
+*   **Cwmcarn Forest, near Newport:** Woodland camping with mountain biking trails on your doorstep. [Find mountain biking in South Wales](/south-wales/mountain-biking).
+*   **Trefalen Farm, St Davids (Pembrokeshire):** Small campsite minutes from the coast path. Perfect base for [coasteering](/pembrokeshire) and coastal walking.
 *   **Llyn Gwynant, Snowdonia:** Lakeside camping with Snowdon views. Swim in the lake, hike from the tent, watch the sun set behind the mountains. One of the best locations in Wales.
-*   **Priory Mill Farm, Brecon Beacons:** Quiet site near the Usk Valley. Great for [gorge walking](/brecon-beacons/things-to-do/gorge-walking) and caving, with stargazing from the Dark Sky Reserve on clear nights.
+*   **Priory Mill Farm, Brecon Beacons:** Quiet site near the Usk Valley. Great for [gorge walking](/brecon-beacons/gorge-walking) and caving, with stargazing from the Dark Sky Reserve on clear nights.
 
 ## Pro Tips
 

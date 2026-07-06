@@ -367,15 +367,6 @@ export const adSlotQuerySchema = z.object({
   pageSlug: z.string().max(255).optional(),
 });
 
-export const trackClickQuerySchema = z.object({
-  r: z.string().regex(/^\d+$/).optional(),
-  url: z.string().min(1).max(2048),
-});
-
-export const trackOpenQuerySchema = z.object({
-  r: z.string().regex(/^\d+$/).optional(),
-});
-
 export const trackViewSchema = z.object({
   pageType: z.string().min(1).max(100),
   pageSlug: z.string().min(1).max(255),

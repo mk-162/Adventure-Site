@@ -51,4 +51,4 @@ It's scarier than it looks from the ground! Even though you're safely harnessed,
 
 ---
 
-Ready for the big one? [Find zip lines in Snowdonia](/snowdonia/things-to-do/zip-lining) or [browse all aerial adventures across Wales](/activities/zip-lining).
+Ready for the big one? [Find zip lines in Snowdonia](/snowdonia) or [browse all aerial adventures across Wales](/activities/type/zip-lining).

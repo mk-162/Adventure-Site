@@ -6,10 +6,11 @@ import { setUserSession } from "@/lib/user-auth";
 
 export async function GET(req: NextRequest) {
   const token = req.nextUrl.searchParams.get("token");
+  // Redirect relative to the request itself — works regardless of env config
+  const to = (path: string) => NextResponse.redirect(new URL(path, req.url));
 
   if (!token) {
-    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "";
-    return NextResponse.redirect(`${baseUrl}/login?error=missing-token`);
+    return to("/login?error=missing-token");
   }
 
   try {
@@ -18,20 +19,17 @@ export async function GET(req: NextRequest) {
       .limit(1);
 
     if (linkRecord.length === 0) {
-      const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "";
-      return NextResponse.redirect(`${baseUrl}/login?error=invalid-token`);
+      return to("/login?error=invalid-token");
     }
 
     const magicLink = linkRecord[0];
 
     if (magicLink.used) {
-      const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "";
-      return NextResponse.redirect(`${baseUrl}/login?error=token-used`);
+      return to("/login?error=token-used");
     }
 
     if (new Date() > magicLink.expiresAt) {
-      const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "";
-      return NextResponse.redirect(`${baseUrl}/login?error=token-expired`);
+      return to("/login?error=token-expired");
     }
 
     // Mark as used
@@ -43,8 +41,7 @@ export async function GET(req: NextRequest) {
     });
 
     if (!user) {
-      const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "";
-      return NextResponse.redirect(`${baseUrl}/login?error=user-not-found`);
+      return to("/login?error=user-not-found");
     }
 
     // Update last login
@@ -57,11 +54,9 @@ export async function GET(req: NextRequest) {
       name: user.name,
     });
 
-    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "";
-    return NextResponse.redirect(`${baseUrl}/my-adventures`);
+    return to("/my-adventures");
   } catch (error) {
     console.error("User verify error:", error);
-    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "";
-    return NextResponse.redirect(`${baseUrl}/login?error=server-error`);
+    return to("/login?error=server-error");
   }
 }

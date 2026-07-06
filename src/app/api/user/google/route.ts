@@ -1,8 +1,9 @@
 import { NextResponse } from "next/server";
+import { getAppUrl } from "@/lib/app-url";
 
 export async function GET() {
   const clientId = process.env.GOOGLE_CLIENT_ID;
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
+  const baseUrl = getAppUrl();
 
   if (!clientId) {
     return NextResponse.json({ error: "Google login not configured" }, { status: 503 });

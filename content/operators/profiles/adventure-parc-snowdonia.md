@@ -13,7 +13,7 @@ Adventure Parc Snowdonia operates **the only inland surf lagoon of its scale in 
 
 The directory listing is a Tier-1 launch-priority page because:
 
-1. It's the named anchor of the [Snowdonia surfing combo](/snowdonia/things-to-do/surfing) — without a strong operator page, the whole combo reads thin.
+1. It's the named anchor of the [Snowdonia surfing combo](/snowdonia) — without a strong operator page, the whole combo reads thin.
 2. It's the answer to a high-volume search query ("inland surf UK", "wave pool wales") that no other Adventure Wales operator can claim.
 3. It's positioned next to the Snowdon massif, which makes it part of every multi-activity Eryri itinerary (surf in the morning, summit in the afternoon).
 
@@ -65,7 +65,7 @@ The accommodation is the operator's surf-package play — visitors can roll out 
 - **Pair with hiking days in the Carneddau** — Dolgarrog sits at the foot of the Carneddau range, with Llyn Eigiau and the Aber Falls trailhead within 20 minutes. This is the natural "surf morning, hike afternoon" combo.
 - **Pair with the Ogwen Valley** — 25 minutes drive south for Cwm Idwal, Tryfan, Glyder Fach.
 - **Pair with the Conwy Valley railway** — visitors arriving by train can use the Conwy Valley line direct to Dolgarrog (or the closer Tal-y-Cafn station).
-- **Sea-surf alternative** — the closest open-Atlantic surf to Adventure Parc is Hell's Mouth on the Llŷn Peninsula (~1h15) and Cable Bay on Anglesey (~1h). Both already cross-linked from the [Snowdonia surfing combo](/snowdonia/things-to-do/surfing).
+- **Sea-surf alternative** — the closest open-Atlantic surf to Adventure Parc is Hell's Mouth on the Llŷn Peninsula (~1h15) and Cable Bay on Anglesey (~1h). Both already cross-linked from the [Snowdonia surfing combo](/snowdonia).
 
 ## Hero image / media brief
 

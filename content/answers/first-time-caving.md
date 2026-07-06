@@ -31,7 +31,7 @@ Caving in Wales is a proper adventure. Here's the honest truth about what your f
 | Porth yr Ogof (self-guided entrance) | A quick taster — walk into the largest cave entrance in Wales | Easy | Ystradfellte, Brecon Beacons |
 | OFD (Ogof Ffynnon Ddu) trips via SWCC | Experienced cavers wanting a serious system | Advanced | Brecon Beacons |
 
-The **Brecon Beacons** is the caving heartland of Wales. The limestone landscape is riddled with cave systems — from family-friendly showcaves to the UK's deepest system. [Find caving in the Brecon Beacons](/brecon-beacons/things-to-do/caving).
+The **Brecon Beacons** is the caving heartland of Wales. The limestone landscape is riddled with cave systems — from family-friendly showcaves to the UK's deepest system. [Find caving in the Brecon Beacons](/brecon-beacons/caving).
 
 **Go Below** in North Wales offers something different — abandoned slate mines repurposed as adventure courses with underground zip lines, boat crossings, and rope bridges. It's more "underground adventure" than traditional caving, but it's brilliant fun.
 

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ChevronRight, ArrowRight, MapPin, Star, TrendingUp } from "lucide-react";
 import { JsonLd, createBreadcrumbSchema } from "@/components/seo/JsonLd";
+import { isLaunchCombo } from "@/lib/launch";
 
 export const metadata: Metadata = {
   title: "Adventure Activities in Wales | Complete Guide | Adventure Wales",
@@ -68,46 +69,45 @@ const primaryActivities = [
   },
 ];
 
-// Secondary activities - popular but no mega page yet
+// Secondary activities - popular but no mega page yet.
+// Activities without a dedicated top-level hub route link to /activities/type/<slug>.
 const secondaryActivities = [
-  { name: "Zip Lining", slug: "zip-lining", image: "/images/activities/zip-lining-hero.jpg", tagline: "World's fastest zip lines", region: "Snowdonia" },
-  { name: "Climbing", slug: "climbing", image: "/images/activities/climbing-hero.jpg", tagline: "Legendary crags & sea cliffs", region: "Snowdonia" },
-  { name: "Kayaking", slug: "kayaking", image: "/images/activities/kayaking-hero.jpg", tagline: "Sea, river & lake paddling", region: "Pembrokeshire" },
-  { name: "Wild Swimming", slug: "wild-swimming", image: "/images/activities/wild-swimming-hero.jpg", tagline: "Lakes, waterfalls & coast", region: "Snowdonia" },
-  { name: "Gorge Walking", slug: "gorge-walking", image: "/images/activities/gorge-walking-hero.jpg", tagline: "Welsh adventure classic", region: "Brecon Beacons" },
-  { name: "Paddleboarding", slug: "paddleboarding", image: "/images/activities/paddleboarding-hero.jpg", tagline: "SUP on stunning waters", region: "Gower" },
-  { name: "Canyoning", slug: "canyoning", image: "/images/activities/canyoning-hero.jpg", tagline: "Waterfalls & gorges", region: "Snowdonia" },
-  { name: "White Water Rafting", slug: "white-water-rafting", image: "/images/activities/rafting-hero.jpg", tagline: "Rapids & thrills", region: "Mid Wales" },
+  { name: "Zip Lining", slug: "zip-lining", href: "/activities/type/zip-lining", image: "/images/activities/zip-lining-hero.jpg", tagline: "World's fastest zip lines", region: "Snowdonia" },
+  { name: "Climbing", slug: "climbing", href: "/climbing", image: "/images/activities/climbing-hero.jpg", tagline: "Legendary crags & sea cliffs", region: "Snowdonia" },
+  { name: "Kayaking", slug: "kayaking", href: "/kayaking", image: "/images/activities/kayaking-hero.jpg", tagline: "Sea, river & lake paddling", region: "Pembrokeshire" },
+  { name: "Wild Swimming", slug: "wild-swimming", href: "/wild-swimming", image: "/images/activities/wild-swimming-hero.jpg", tagline: "Lakes, waterfalls & coast", region: "Snowdonia" },
+  { name: "Gorge Walking", slug: "gorge-walking", href: "/gorge-walking", image: "/images/activities/gorge-walking-hero.jpg", tagline: "Welsh adventure classic", region: "Brecon Beacons" },
+  { name: "Paddleboarding", slug: "paddleboarding", href: "/paddleboarding", image: "/images/activities/paddleboarding-hero.jpg", tagline: "SUP on stunning waters", region: "Gower" },
+  { name: "Canyoning", slug: "canyoning", href: "/activities/type/canyoning", image: "/images/activities/canyoning-hero.jpg", tagline: "Waterfalls & gorges", region: "Snowdonia" },
+  { name: "White Water Rafting", slug: "white-water-rafting", href: "/activities/type/white-water-rafting", image: "/images/activities/rafting-hero.jpg", tagline: "Rapids & thrills", region: "Mid Wales" },
 ];
 
-// More activities for comprehensive coverage
+// More activities for comprehensive coverage.
+// Only activities with a hub route or a matching DB activity type are listed
+// (quad-biking, rock-pooling, birdwatching, foraging, photography-tours removed — no valid target).
 const moreActivities = [
-  { name: "Horse Riding", slug: "horse-riding" },
-  { name: "Sailing", slug: "sailing" },
-  { name: "Fishing", slug: "fishing" },
-  { name: "Paragliding", slug: "paragliding" },
-  { name: "Quad Biking", slug: "quad-biking" },
-  { name: "Archery", slug: "archery" },
-  { name: "Rock Pooling", slug: "rock-pooling" },
-  { name: "Birdwatching", slug: "birdwatching" },
-  { name: "Foraging", slug: "foraging" },
-  { name: "Photography Tours", slug: "photography-tours" },
+  { name: "Horse Riding", slug: "horse-riding", href: "/horse-riding" },
+  { name: "Sailing", slug: "sailing", href: "/sailing" },
+  { name: "Fishing", slug: "fishing", href: "/fishing" },
+  { name: "Paragliding", slug: "paragliding", href: "/paragliding" },
+  { name: "Archery", slug: "archery", href: "/activities/type/archery" },
 ];
 
-// Activity + Region combos for SEO
+// Activity + Region combos for SEO — filtered through the launch gate at render
+// time so unlaunched combos never leak into the page.
 const popularCombos = [
-  { activity: "Coasteering", region: "Pembrokeshire", slug: "/pembrokeshire/coasteering" },
-  { activity: "Mountain Biking", region: "Snowdonia", slug: "/snowdonia/mountain-biking" },
-  { activity: "Hiking", region: "Brecon Beacons", slug: "/brecon-beacons/hiking" },
-  { activity: "Surfing", region: "Gower", slug: "/gower/surfing" },
-  { activity: "Climbing", region: "Snowdonia", slug: "/snowdonia/climbing" },
-  { activity: "Sea Kayaking", region: "Anglesey", slug: "/anglesey/sea-kayaking" },
-  { activity: "Zip Lining", region: "Snowdonia", slug: "/snowdonia/zip-lining" },
-  { activity: "Wild Swimming", region: "Pembrokeshire", slug: "/pembrokeshire/wild-swimming" },
-  { activity: "Caving", region: "Brecon Beacons", slug: "/brecon-beacons/caving" },
-  { activity: "Gorge Walking", region: "Brecon Beacons", slug: "/brecon-beacons/gorge-walking" },
-  { activity: "Coasteering", region: "Anglesey", slug: "/anglesey/coasteering" },
-  { activity: "Mountain Biking", region: "Brecon Beacons", slug: "/brecon-beacons/mountain-biking" },
+  { activity: "Coasteering", region: "Pembrokeshire", regionSlug: "pembrokeshire", activitySlug: "coasteering" },
+  { activity: "Mountain Biking", region: "Snowdonia", regionSlug: "snowdonia", activitySlug: "mountain-biking" },
+  { activity: "Hiking", region: "Brecon Beacons", regionSlug: "brecon-beacons", activitySlug: "hiking" },
+  { activity: "Surfing", region: "Gower", regionSlug: "gower", activitySlug: "surfing" },
+  { activity: "Climbing", region: "Snowdonia", regionSlug: "snowdonia", activitySlug: "climbing" },
+  { activity: "Sea Kayaking", region: "Anglesey", regionSlug: "anglesey", activitySlug: "sea-kayaking" },
+  { activity: "Zip Lining", region: "Snowdonia", regionSlug: "snowdonia", activitySlug: "zip-lining" },
+  { activity: "Wild Swimming", region: "Pembrokeshire", regionSlug: "pembrokeshire", activitySlug: "wild-swimming" },
+  { activity: "Caving", region: "Brecon Beacons", regionSlug: "brecon-beacons", activitySlug: "caving" },
+  { activity: "Gorge Walking", region: "Brecon Beacons", regionSlug: "brecon-beacons", activitySlug: "gorge-walking" },
+  { activity: "Coasteering", region: "Anglesey", regionSlug: "anglesey", activitySlug: "coasteering" },
+  { activity: "Mountain Biking", region: "Brecon Beacons", regionSlug: "brecon-beacons", activitySlug: "mountain-biking" },
 ];
 
 export default function ActivitiesPage() {
@@ -242,7 +242,7 @@ export default function ActivitiesPage() {
               {secondaryActivities.map((activity) => (
                 <Link
                   key={activity.slug}
-                  href={`/${activity.slug}`}
+                  href={activity.href}
                   className="group relative overflow-hidden rounded-xl bg-gray-900 aspect-[4/5]"
                 >
                   <Image
@@ -278,10 +278,12 @@ export default function ActivitiesPage() {
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-              {popularCombos.map((combo) => (
+              {popularCombos
+                .filter((combo) => isLaunchCombo(combo.regionSlug, combo.activitySlug))
+                .map((combo) => (
                 <Link
-                  key={combo.slug}
-                  href={combo.slug}
+                  key={`${combo.regionSlug}/${combo.activitySlug}`}
+                  href={`/${combo.regionSlug}/${combo.activitySlug}`}
                   className="px-4 py-3 bg-slate-50 hover:bg-primary hover:text-white rounded-lg transition-colors group"
                 >
                   <span className="font-semibold">{combo.activity}</span>
@@ -317,7 +319,7 @@ export default function ActivitiesPage() {
               {secondaryActivities.map((activity) => (
                 <Link
                   key={activity.slug}
-                  href={`/${activity.slug}`}
+                  href={activity.href}
                   className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-primary hover:text-primary transition-colors"
                 >
                   {activity.name}
@@ -326,7 +328,7 @@ export default function ActivitiesPage() {
               {moreActivities.map((activity) => (
                 <Link
                   key={activity.slug}
-                  href={`/${activity.slug}`}
+                  href={activity.href}
                   className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-primary hover:text-primary transition-colors"
                 >
                   {activity.name}

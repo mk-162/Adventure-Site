@@ -52,4 +52,4 @@ Caving is a very different experience compared to gorge walking or coasteering. 
 
 ---
 
-Ready to go underground? [Find caving in the Brecon Beacons](/brecon-beacons/things-to-do/caving) or [browse all caving experiences across Wales](/activities/caving).
+Ready to go underground? [Find caving in the Brecon Beacons](/brecon-beacons/caving) or [browse all caving experiences across Wales](/activities/caving).

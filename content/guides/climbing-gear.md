@@ -66,8 +66,8 @@ Consider buying used gear from reputable sources (ensure it's been properly insp
 
 ## Where to Climb in Wales
 
-*   **Snowdonia:** The heartland of Welsh climbing. Idwal Slabs for beginners, the Llanberis Pass for sport and trad across all grades, and Gogarth on Anglesey's Holy Island for world-class sea cliff climbing. The slate quarries of Dinorwig above Llanberis offer unique friction climbing. [Find climbing in Snowdonia](/snowdonia/things-to-do/climbing).
-*   **Gower Peninsula:** Accessible limestone sea cliffs with shorter routes and coastal views. Great for beginners and intermediates. The crags around Rhossili and Oxwich are popular. [Find climbing on the Gower](/gower/things-to-do/climbing).
+*   **Snowdonia:** The heartland of Welsh climbing. Idwal Slabs for beginners, the Llanberis Pass for sport and trad across all grades, and Gogarth on Anglesey's Holy Island for world-class sea cliff climbing. The slate quarries of Dinorwig above Llanberis offer unique friction climbing. [Find climbing in Snowdonia](/snowdonia).
+*   **Gower Peninsula:** Accessible limestone sea cliffs with shorter routes and coastal views. Great for beginners and intermediates. The crags around Rhossili and Oxwich are popular. [Find climbing on the Gower](/gower).
 *   **North Wales Coast:** The Great Orme at Llandudno has excellent limestone sport climbing. Craig y Forwyn near Kinmel Bay is a great crag for building confidence on sport routes.
 *   **Pembrokeshire:** Dramatic sea cliff climbing for experienced trad climbers. St Govans area and the Castlemartin range offer incredible positions.
 *   **Brecon Beacons:** Smaller crags but quieter. Good for a day out without the Snowdonia crowds.

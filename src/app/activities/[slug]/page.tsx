@@ -13,6 +13,7 @@ const activityTypeMegaPages = new Set([
 ]);
 import Image from "next/image";
 import { getActivityBySlug, getActivities, getAccommodation, getAllActivitySlugs, getItineraries } from "@/lib/queries";
+import { isLaunchRegion, isLaunchCombo } from "@/lib/launch";
 import { Badge, DifficultyBadge, PriceBadge } from "@/components/ui/badge";
 import { ButtonLink } from "@/components/ui/button";
 import { ActivityCard } from "@/components/cards/activity-card";
@@ -277,7 +278,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
     { name: 'Home', url: '/' },
     { name: 'Activities', url: '/activities' },
   ];
-  if (region) {
+  if (region && isLaunchRegion(region.slug)) {
     breadcrumbItems.push({ name: region.name, url: `/${region.slug}` });
   }
   breadcrumbItems.push({ name: activity.name, url: `/activities/${slug}` });
@@ -626,8 +627,8 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
           </div>
         </div>
 
-        {/* SEO Cross-link to combo page */}
-        {region && activityType && (
+        {/* SEO Cross-link to combo page — launched combos only */}
+        {region && activityType && isLaunchCombo(region.slug, activityType.slug) && (
           <section className="mt-12">
             <Link
               href={`/${region.slug}/${activityType.slug}`}

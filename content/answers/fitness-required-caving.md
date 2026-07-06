@@ -43,7 +43,7 @@ The fitness requirements for caving vary dramatically depending on what you're d
 
 The cave temperature in the Brecon Beacons sits at about 10°C year-round. Combined with water and wet conditions, this means your body works harder to stay warm. Thermal base layers under your oversuit make a genuine difference to how comfortable (and therefore how fit) you feel.
 
-[Find caving in the Brecon Beacons](/brecon-beacons/things-to-do/caving) | [Browse all caving in Wales](/activities/caving)
+[Find caving in the Brecon Beacons](/brecon-beacons/caving) | [Browse all caving in Wales](/activities/caving)
 
 ## Related Questions
 

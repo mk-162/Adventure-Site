@@ -44,7 +44,7 @@ Check our [wild swimming gear guide](/guides/wild-swimming-gear) for the full ki
 
 **Llyn Padarn** near Llanberis is probably the best first wild swim in Wales. Easy access, gently shelving shoreline, and Snowdon as a backdrop. It's popular with open water swimming groups, so you'll often find company. The water's cold (it's a mountain lake) but manageable with a wetsuit.
 
-**Barafundle Bay** in Pembrokeshire is gorgeous — clear turquoise water in a sheltered bay with golden sand. The short walk from the car park keeps it from getting too crowded. [Find wild swimming in Pembrokeshire](/pembrokeshire/things-to-do/wild-swimming).
+**Barafundle Bay** in Pembrokeshire is gorgeous — clear turquoise water in a sheltered bay with golden sand. The short walk from the car park keeps it from getting too crowded. [Find wild swimming in Pembrokeshire](/pembrokeshire/wild-swimming).
 
 ## Safety Essentials
 

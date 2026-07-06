@@ -46,8 +46,8 @@ Your first surf lesson will probably involve a lot of falling. Don't expect to b
 ## Top Spots
 
 *   **Freshwater West (Pembrokeshire):** Powerful, consistent beach break. The best waves in Pembrokeshire when it's on. Not beginner-friendly — strong currents and heavy shore break. The beach from Harry Potter.
-*   **Whitesands Bay (Pembrokeshire):** More sheltered than Freshwater West with a surf school. Great for beginners with golden sand and views of Ramsey Island. [Find surfing in Pembrokeshire](/pembrokeshire/things-to-do/surfing).
-*   **Llangennith (Gower):** The Gower's main surf beach. Long, consistent waves, multiple surf schools, and a reliable break. Probably the best all-round surf beach in Wales. [Find surfing on the Gower](/gower/things-to-do/surfing).
+*   **Whitesands Bay (Pembrokeshire):** More sheltered than Freshwater West with a surf school. Great for beginners with golden sand and views of Ramsey Island. [Find surfing in Pembrokeshire](/pembrokeshire/surfing).
+*   **Llangennith (Gower):** The Gower's main surf beach. Long, consistent waves, multiple surf schools, and a reliable break. Probably the best all-round surf beach in Wales. [Find surfing on the Gower](/gower/surfing).
 *   **Hell's Mouth / Porth Neigwl (Llŷn Peninsula):** Big, exposed beach break. Picks up more swell than sheltered spots. Better for intermediate to advanced surfers. Can get genuinely heavy.
 *   **Rhosneigr (Anglesey):** More known for kitesurfing and windsurfing, but offers surfing too. The wind makes it interesting. Good variety of water sports in one location.
 *   **Manorbier (Pembrokeshire):** Fun reef break with Manorbier Castle as a backdrop. Works best at high tide. A slightly more interesting wave than the beach breaks.

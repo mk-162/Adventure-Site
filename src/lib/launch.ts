@@ -66,6 +66,19 @@ export function isLaunchRegion(regionSlug: string): boolean {
   return LAUNCH_REGIONS.has(regionSlug);
 }
 
+/**
+ * Returns the region slug if it has a live, launched landing page — otherwise null.
+ * Content frontmatter uses values like "general", "north-wales", "wye-valley",
+ * "carmarthenshire" that either aren't regions at all or aren't in the launch
+ * scope; callers should render plain text (or nothing) instead of a link.
+ */
+export function linkableRegionSlug(regionSlug: string | null | undefined): string | null {
+  if (!regionSlug || regionSlug === "general" || !LAUNCH_REGIONS.has(regionSlug)) {
+    return null;
+  }
+  return regionSlug;
+}
+
 export function isLaunchBestList(regionSlug: string, bestSlug: string): boolean {
   return LAUNCH_BEST_LISTS.has(`${regionSlug}/${bestSlug}`);
 }

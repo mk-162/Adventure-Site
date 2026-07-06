@@ -41,7 +41,7 @@ Welsh rain isn't always the torrential downpour you might imagine. It's often:
 Rain doesn't have to ruin your trip. Some activities are better in the rain:
 
 *   **[Caving](/activities/caving):** Underground, constant 10°C, completely rain-proof. The Brecon Beacons caves are a perfect wet-weather option.
-*   **Zip World underground attractions:** Bounce Below and Zip World Caverns in Blaenau Ffestiniog run rain or shine. [Find zip lines in Snowdonia](/snowdonia/things-to-do/zip-lining).
+*   **Zip World underground attractions:** Bounce Below and Zip World Caverns in Blaenau Ffestiniog run rain or shine. [Find zip lines in Snowdonia](/snowdonia).
 *   **Castles:** Caernarfon, Conwy, Harlech, Caerphilly — all impressive in the rain. Atmospheric, even.
 *   **[Gorge walking](/activities/gorge-walking):** You're getting wet anyway. Rain makes the waterfalls more impressive.
 *   **[Coasteering](/activities/coasteering):** Already in the sea. Light rain makes no difference.

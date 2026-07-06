@@ -64,9 +64,9 @@ Let's be real. You're coming to Wales to shred. Forget the Instagram influencer 
 
 ## Top Trails in Wales
 
-*   **Coed y Brenin, Snowdonia:** The granddaddy. Cyflym Coch (red) is a classic fast-flowing trail through ancient forest. MinorTaur (red) in Gwydir Forest nearby offers more natural, technical riding. [Find mountain biking in Snowdonia](/snowdonia/things-to-do/mountain-biking).
+*   **Coed y Brenin, Snowdonia:** The granddaddy. Cyflym Coch (red) is a classic fast-flowing trail through ancient forest. MinorTaur (red) in Gwydir Forest nearby offers more natural, technical riding. [Find mountain biking in Snowdonia](/snowdonia/mountain-biking).
 *   **Antur Stiniog:** Uplift-served downhill in the Blaenau Ffestiniog slate quarries. Steep, loose, technical, and addictive. Not for beginners — the reds here would be blacks elsewhere.
-*   **BikePark Wales, Merthyr Tydfil:** More sculpted trails with berms, jumps, and flow. Great progression from green to black. The café serves possibly the best post-ride burger in Wales. [Find mountain biking in the Brecon Beacons](/brecon-beacons/things-to-do/mountain-biking).
+*   **BikePark Wales, Merthyr Tydfil:** More sculpted trails with berms, jumps, and flow. Great progression from green to black. The café serves possibly the best post-ride burger in Wales. [Find mountain biking in the Brecon Beacons](/brecon-beacons/mountain-biking).
 *   **Coed Llandegla:** Brilliant for building skills. The reds are fast and flowy, and the facilities are excellent. Easy access from Chester, Liverpool, and Manchester.
 *   **Afan Forest Park:** The Wall and Blade trails are South Wales classics — raw, natural-feeling rides through deep valleys. Rougher than purpose-built centres but incredibly rewarding.
 

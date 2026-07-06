@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { RegionMap } from "@/components/ui/RegionMap";
 import { getActivities, getActivityTypeBySlug, getItineraries } from "@/lib/queries";
+import { isLaunchCombo, isLaunchRegion } from "@/lib/launch";
 import { Map, Calendar, MessageCircle, ChevronDown, ArrowRight, Star, Clock, PoundSterling, Users, Gauge, Compass, Sparkles } from "lucide-react";
 import { JsonLd, createTouristDestinationSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 
@@ -153,14 +154,32 @@ export async function StandardActivityHub({ config }: { config: StandardHubConfi
             <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Where to Go {config.name}</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {config.regions.map((region) => (
-              <Link key={region.slug} href={`/${region.slug}/${config.slug}`} className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-xl hover:border-primary transition-all duration-300 hover:-translate-y-1">
-                <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent-hover transition-colors">{region.name}</h3>
-                <p className="text-sm text-gray-600 mb-4 italic">{region.tagline}</p>
-                <div className="space-y-2 mb-4">{region.highlights.map((h, i) => (<div key={i} className="flex items-start gap-2 text-sm text-gray-700"><Star className="h-4 w-4 text-accent-hover flex-shrink-0 mt-0.5" /><span>{h}</span></div>))}</div>
-                <div className="flex items-center gap-2 text-accent-hover font-semibold group-hover:gap-3 transition-all">Explore <ArrowRight className="h-4 w-4" /></div>
-              </Link>
-            ))}
+            {config.regions.map((region) => {
+              // Launch gate: only link to combo pages that are live; fall back to
+              // the region landing page, or render unlinked if the region isn't launched.
+              const href = isLaunchCombo(region.slug, config.slug)
+                ? `/${region.slug}/${config.slug}`
+                : isLaunchRegion(region.slug)
+                  ? `/${region.slug}`
+                  : null;
+              const cardBody = (
+                <>
+                  <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent-hover transition-colors">{region.name}</h3>
+                  <p className="text-sm text-gray-600 mb-4 italic">{region.tagline}</p>
+                  <div className="space-y-2 mb-4">{region.highlights.map((h, i) => (<div key={i} className="flex items-start gap-2 text-sm text-gray-700"><Star className="h-4 w-4 text-accent-hover flex-shrink-0 mt-0.5" /><span>{h}</span></div>))}</div>
+                </>
+              );
+              return href ? (
+                <Link key={region.slug} href={href} className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-xl hover:border-primary transition-all duration-300 hover:-translate-y-1">
+                  {cardBody}
+                  <div className="flex items-center gap-2 text-accent-hover font-semibold group-hover:gap-3 transition-all">Explore <ArrowRight className="h-4 w-4" /></div>
+                </Link>
+              ) : (
+                <div key={region.slug} className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200">
+                  {cardBody}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -214,7 +233,9 @@ export async function StandardActivityHub({ config }: { config: StandardHubConfi
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">{config.ctaHeading}</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">{config.ctaSubtext}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href={`/activities/type/${config.slug}`} className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-semibold hover:bg-gray-100 transition-colors">{config.ctaButtonLabel} <ArrowRight className="h-5 w-5" /></Link>
+            {/* Some hub slugs (e.g. bouldering, paragliding, rock-climbing) aren't DB activity
+                types, so /activities/type/<slug> would 404 — fall back to /activities. */}
+            <Link href={activityType ? `/activities/type/${config.slug}` : "/activities"} className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-semibold hover:bg-gray-100 transition-colors">{config.ctaButtonLabel} <ArrowRight className="h-5 w-5" /></Link>
           </div>
         </div>
       </section>

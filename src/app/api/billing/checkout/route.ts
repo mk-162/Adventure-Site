@@ -5,6 +5,7 @@ import { eq } from "drizzle-orm";
 import { getOperatorSession } from "@/lib/auth";
 import { stripe } from "@/lib/stripe";
 import { billingCheckoutSchema, validateJsonBody } from "@/lib/api/validate";
+import { getAppUrl } from "@/lib/app-url";
 
 export async function POST(req: NextRequest) {
   try {
@@ -46,8 +47,8 @@ export async function POST(req: NextRequest) {
       mode: "subscription",
       customer: customerId,
       line_items: [{ price: priceId, quantity: 1 }],
-      success_url: `${process.env.NEXT_PUBLIC_APP_URL}/dashboard?upgraded=true`,
-      cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/dashboard/billing`,
+      success_url: `${getAppUrl()}/dashboard?upgraded=true`,
+      cancel_url: `${getAppUrl()}/dashboard/billing`,
       metadata: {
         operatorId: operator.id.toString(),
       },

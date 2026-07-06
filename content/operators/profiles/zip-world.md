@@ -26,7 +26,7 @@ The flagship site, built into the largest slate quarry in the world. Two headlin
 
 Built into and underneath the 1846 Llechwedd slate workings:
 
-- **Bounce Below** — giant nets and trampolines suspended at multiple levels inside a 176-year-old chamber, lit with coloured floods. One of the most photographed adventure experiences in Wales and the anchor of the [underground trampolines combo](/snowdonia/things-to-do/underground-trampolines).
+- **Bounce Below** — giant nets and trampolines suspended at multiple levels inside a 176-year-old chamber, lit with coloured floods. One of the most photographed adventure experiences in Wales and the anchor of the [underground trampolines combo](/snowdonia).
 - **Caverns (the underground zip / rope-bridge circuit)** — a multi-element underground course through the cavern system: zip lines, rope bridges, drops and tunnels. Different product from Bounce Below; often booked together as a half-day.
 - **Titan / Titan 2** — multi-zip course on the surface above Llechwedd. Riders fly across the slate quarry workings on long parallel cables.
 - **Skyride** — currently listed as "permanently closed" on the operator site; flag for editor verification before any directory page mentions it.
@@ -56,7 +56,7 @@ The family / treetop site, set in mature forest near Betws-y-Coed:
 
 ## Pairing notes
 
-- **Itinerary anchor for the zip-lining combo** ([Zip Lining in Snowdonia](/snowdonia/things-to-do/zip-lining)) — Penrhyn is the morning Velocity 2 slot; Llechwedd is the afternoon underground product set.
+- **Itinerary anchor for the zip-lining combo** ([Zip Lining in Snowdonia](/snowdonia)) — Penrhyn is the morning Velocity 2 slot; Llechwedd is the afternoon underground product set.
 - **Bounce Below + Llechwedd Deep Mine tour** makes a half-day for visitors who want some heritage with their adventure. The Deep Mine is run by the cavern operators, not Zip World — separate ticket.
 - **Wet-weather backup** — most Zip World products run regardless of rain (Velocity 2 closes only in high wind / lightning), which makes Zip World the natural rainy-day alternative when the mountains are washed out.
 - **Geography note** — the three Snowdonia sites are 30-45 minutes apart by car. Plan one site per half-day, not three in a day.

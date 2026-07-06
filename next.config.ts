@@ -102,17 +102,9 @@ const nextConfig: NextConfig = {
         destination: '/stag-hen',
         permanent: true,
       },
-      // Activity hub redirects - old routes to new hub pages
-      {
-        source: '/activities/type/:slug',
-        destination: '/:slug',
-        permanent: true,
-      },
-      {
-        source: '/activities/:slug',
-        destination: '/:slug',
-        permanent: true,
-      },
+      // NOTE: do NOT add wildcard redirects under /activities — they shadow the
+      // real routes /activities/[slug] and /activities/type/[type] (config
+      // redirects run before filesystem routing), 404ing every activity link.
       // SUP redirect to paddleboarding
       {
         source: '/sup',

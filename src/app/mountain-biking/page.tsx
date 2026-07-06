@@ -9,6 +9,7 @@ import { ActivityCard } from "@/components/cards/activity-card";
 import { RegionMap } from "@/components/ui/RegionMap";
 import { QuickAnswerBox, HubSidebar } from "@/components/activity-hub";
 import { getActivities, getEvents, getActivityTypeBySlug, getItineraries, getPostsForSidebar } from "@/lib/queries";
+import { isLaunchCombo, isLaunchRegion } from "@/lib/launch";
 import { 
   Mountain, 
   Map, 
@@ -238,7 +239,13 @@ export default async function MountainBikingHubPage() {
                 bestForBeginners={{
                   label: "Best for Beginners",
                   venue: "Coed Llandegla",
-                  link: "/north-wales/mountain-biking",
+                  // Launch gate: north-wales isn't launched yet; fall back to the
+                  // trail-centre table on this page (Coed Llandegla is listed there).
+                  link: isLaunchCombo("north-wales", "mountain-biking")
+                    ? "/north-wales/mountain-biking"
+                    : isLaunchRegion("north-wales")
+                      ? "/north-wales"
+                      : "#trail-centres",
                   reason: "Progressive trails, great facilities, confidence-building",
                 }}
                 bestOverall={{
@@ -377,45 +384,65 @@ export default async function MountainBikingHubPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {mountainBikingHub.regions.map((region) => (
-              <Link
-                key={region.slug}
-                href={`/${region.slug}/mountain-biking`}
-                className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-xl hover:border-primary transition-all duration-300 hover:-translate-y-1"
-              >
-                <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-accent-hover transition-colors">
-                  {region.name}
-                </h3>
-                <p className="text-sm text-gray-600 mb-4 italic">
-                  {region.tagline}
-                </p>
+            {mountainBikingHub.regions.map((region) => {
+              // Launch gate: only link to combo pages that are live; fall back to
+              // the region landing page, or render unlinked if the region isn't launched.
+              const href = isLaunchCombo(region.slug, "mountain-biking")
+                ? `/${region.slug}/mountain-biking`
+                : isLaunchRegion(region.slug)
+                  ? `/${region.slug}`
+                  : null;
+              const cardBody = (
+                <>
+                  <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-accent-hover transition-colors">
+                    {region.name}
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-4 italic">
+                    {region.tagline}
+                  </p>
 
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {region.bestFor.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs px-2 py-1 bg-primary/10 text-primary rounded-full font-medium"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {region.bestFor.map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-xs px-2 py-1 bg-primary/10 text-primary rounded-full font-medium"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
 
-                <div className="space-y-2 mb-4">
-                  {region.highlights.map((highlight, i) => (
-                    <div key={i} className="flex items-start gap-2 text-sm text-gray-700">
-                      <Star className="h-4 w-4 text-accent-hover flex-shrink-0 mt-0.5" />
-                      <span>{highlight}</span>
-                    </div>
-                  ))}
+                  <div className="space-y-2 mb-4">
+                    {region.highlights.map((highlight, i) => (
+                      <div key={i} className="flex items-start gap-2 text-sm text-gray-700">
+                        <Star className="h-4 w-4 text-accent-hover flex-shrink-0 mt-0.5" />
+                        <span>{highlight}</span>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              );
+              return href ? (
+                <Link
+                  key={region.slug}
+                  href={href}
+                  className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200 hover:shadow-xl hover:border-primary transition-all duration-300 hover:-translate-y-1"
+                >
+                  {cardBody}
+                  <div className="flex items-center gap-2 text-accent-hover font-semibold group-hover:gap-3 transition-all">
+                    Explore {region.name}
+                    <ArrowRight className="h-4 w-4" />
+                  </div>
+                </Link>
+              ) : (
+                <div
+                  key={region.slug}
+                  className="group bg-white rounded-2xl p-6 shadow-sm border-2 border-gray-200"
+                >
+                  {cardBody}
                 </div>
-
-                <div className="flex items-center gap-2 text-accent-hover font-semibold group-hover:gap-3 transition-all">
-                  Explore {region.name}
-                  <ArrowRight className="h-4 w-4" />
-                </div>
-              </Link>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

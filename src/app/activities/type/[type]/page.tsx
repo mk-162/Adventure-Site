@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ChevronRight, ArrowLeft, MapPin, Filter } from "lucide-react";
-import { getActivitiesByActivityType } from "@/lib/queries";
+import { getActivitiesByActivityType, getActivityTypeBySlug } from "@/lib/queries";
 import { ActivityCard } from "@/components/cards/activity-card";
 import { JsonLd, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 
@@ -27,10 +27,29 @@ const activityTypeInfo: Record<string, { name: string; description: string }> = 
   "canyoning": { name: "Canyoning", description: "Abseil waterfalls, jump pools, and canyon exploration" },
 };
 
+// Activity types that have a dedicated top-level hub page (src/app/<slug>/page.tsx)
+const hubRoutes = new Set([
+  "bouldering", "canoeing", "caving", "climbing", "coasteering", "fishing",
+  "gorge-walking", "hiking", "horse-riding", "kayaking", "kitesurfing",
+  "mountain-biking", "paddleboarding", "paragliding", "rock-climbing",
+  "sailing", "skydiving", "surfing", "wild-swimming", "windsurfing",
+]);
+
+async function getTypeInfo(type: string): Promise<{ name: string; description: string } | null> {
+  const info = activityTypeInfo[type];
+  if (info) return info;
+  const dbType = await getActivityTypeBySlug(type);
+  if (!dbType) return null;
+  return {
+    name: dbType.name,
+    description: dbType.description || `${dbType.name} experiences across Wales`,
+  };
+}
+
 export async function generateMetadata({ params }: ActivityTypePageProps): Promise<Metadata> {
   const { type } = await params;
-  const info = activityTypeInfo[type];
-  
+  const info = await getTypeInfo(type);
+
   if (!info) {
     return { title: "Activities | Adventure Wales" };
   }
@@ -51,7 +70,7 @@ export async function generateStaticParams() {
 
 export default async function ActivityTypePage({ params }: ActivityTypePageProps) {
   const { type } = await params;
-  const info = activityTypeInfo[type];
+  const info = await getTypeInfo(type);
 
   if (!info) {
     notFound();
@@ -89,15 +108,17 @@ export default async function ActivityTypePage({ params }: ActivityTypePageProps
               <span className="text-white">{info.name}</span>
             </nav>
 
-            <div className="flex items-center gap-4 mb-4">
-              <Link 
-                href={`/${type}`}
-                className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors"
-              >
-                <ArrowLeft className="w-4 h-4" />
-                Back to {info.name} guide
-              </Link>
-            </div>
+            {hubRoutes.has(type) && (
+              <div className="flex items-center gap-4 mb-4">
+                <Link
+                  href={`/${type}`}
+                  className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors"
+                >
+                  <ArrowLeft className="w-4 h-4" />
+                  Back to {info.name} guide
+                </Link>
+              </div>
+            )}
 
             <h1 className="text-3xl sm:text-4xl font-bold mb-4">
               {info.name} Experiences

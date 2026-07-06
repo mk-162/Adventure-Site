@@ -51,4 +51,4 @@ The water *will* be colder than you expect, even with a wetsuit. You *will* prob
 
 ---
 
-Ready to jump in? [Find coasteering in Pembrokeshire](/pembrokeshire/things-to-do/coasteering) or [browse all coasteering across Wales](/activities/coasteering). New to it? Read our [coasteering safety guide](/safety/coasteering-safety).
+Ready to jump in? [Find coasteering in Pembrokeshire](/pembrokeshire) or [browse all coasteering across Wales](/activities/coasteering). New to it? Read our [coasteering safety guide](/safety/coasteering-safety).

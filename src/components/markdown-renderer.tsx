@@ -1,4 +1,5 @@
 import React from "react";
+import { renderContentLink } from "@/lib/content-links";
 
 export function MarkdownRenderer({ content }: { content: string }) {
   // Simple markdown parser - converts markdown to JSX
@@ -81,10 +82,9 @@ export function MarkdownRenderer({ content }: { content: string }) {
     // Italic *text*
     text = text.replace(/\*(.+?)\*/g, '<em class="italic">$1</em>');
     
-    // Links [text](url)
-    text = text.replace(
-      /\[([^\]]+)\]\(([^\)]+)\)/g,
-      '<a href="$2" class="text-accent-hover hover:underline font-semibold">$1</a>'
+    // Links [text](url) — legacy/unlaunched targets degrade to plain text
+    text = text.replace(/\[([^\]]+)\]\(([^\)]+)\)/g, (_m, label, url) =>
+      renderContentLink(label, url, "text-accent-hover hover:underline font-semibold")
     );
     
     // Code `text`

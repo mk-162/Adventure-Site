@@ -32,10 +32,10 @@ If you're an adventurer who values quiet trails over guaranteed sunshine, absolu
 The mountains are quieter than summer but the conditions demand respect — snow lingers on higher ground into April. Lower valley walks like the Mawddach Trail or Cwm Idwal are stunning in spring light. If you're fit and experienced, the Snowdon Horseshoe in April (with crampons if needed) is unforgettable.
 
 ### Pembrokeshire Coast
-The coastal path is at its best with wildflowers blooming along the cliff edges. Walk the stretch between St Davids and Solva for carpets of thrift and sea campion. This is also when [coasteering season kicks off in Pembrokeshire](/pembrokeshire/things-to-do/coasteering) — the water's still bracing, but operators are running again.
+The coastal path is at its best with wildflowers blooming along the cliff edges. Walk the stretch between St Davids and Solva for carpets of thrift and sea campion. This is also when [coasteering season kicks off in Pembrokeshire](/pembrokeshire) — the water's still bracing, but operators are running again.
 
 ### Brecon Beacons
-Waterfall country around Ystradfellte is spectacular after spring rain. The Four Waterfalls Walk is muddy but magnificent. [Gorge walking in the Brecon Beacons](/brecon-beacons/things-to-do/gorge-walking) starts up in April too.
+Waterfall country around Ystradfellte is spectacular after spring rain. The Four Waterfalls Walk is muddy but magnificent. [Gorge walking in the Brecon Beacons](/brecon-beacons/gorge-walking) starts up in April too.
 
 ### Llŷn Peninsula
 Genuinely one of Wales's best-kept secrets in spring. Empty beaches, the Welsh language all around you, and Bardsey Island visible on clear days. Walk the coastal path from Aberdaron south — you might not see another person for an hour.
@@ -46,9 +46,9 @@ Book your boat crossing from Martin's Haven as early as possible. The puffins ar
 ## Best Activities This Season
 
 1.  **Hiking:** The Mawddach Trail (flat, stunning estuary views), Pen y Fan via the Storey Arms (still quiet in April), or any section of the Pembrokeshire Coast Path. [Find hiking across Wales](/activities/hiking).
-2.  **Coasteering:** Sessions start from Easter in Pembrokeshire and Anglesey. The water's around 8-10°C — thick wetsuits provided. [Book coasteering in Pembrokeshire](/pembrokeshire/things-to-do/coasteering).
-3.  **Mountain biking:** Trails are muddier but quieter. Coed y Brenin's drainage is decent, and you'll have the red runs to yourself midweek. [Find mountain biking in Snowdonia](/snowdonia/things-to-do/mountain-biking).
-4.  **Kayaking:** Sheltered sea kayaking around Anglesey's coast starts in April. Calmer conditions than summer's busy waters. [Find kayaking in Anglesey](/anglesey/things-to-do/kayaking).
+2.  **Coasteering:** Sessions start from Easter in Pembrokeshire and Anglesey. The water's around 8-10°C — thick wetsuits provided. [Book coasteering in Pembrokeshire](/pembrokeshire).
+3.  **Mountain biking:** Trails are muddier but quieter. Coed y Brenin's drainage is decent, and you'll have the red runs to yourself midweek. [Find mountain biking in Snowdonia](/snowdonia/mountain-biking).
+4.  **Kayaking:** Sheltered sea kayaking around Anglesey's coast starts in April. Calmer conditions than summer's busy waters. [Find kayaking in Anglesey](/anglesey/kayaking).
 5.  **Wildlife watching:** Skomer puffins, dolphin trips from New Quay, red kite feeding at Gigrin Farm near Rhayader. Spring migration means birding is excellent across Mid Wales.
 
 ## Weather Reality

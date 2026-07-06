@@ -12,6 +12,7 @@ import { ShareEventButton } from "@/components/events/ShareEventButton";
 import { AddToCalendarButton } from "@/components/events/AddToCalendarButton";
 import { WeatherWidget } from "@/components/weather/WeatherWidget";
 import { JsonLd, createEventSchema } from "@/components/seo/JsonLd";
+import { isLaunchRegion } from "@/lib/launch";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -137,9 +138,13 @@ export default async function EventPage({ params }: Props) {
                   </span>
                 )}
                 {region && (
-                  <Link href={`/${region.slug}`} className="hover:text-white">
-                    {region.name}
-                  </Link>
+                  isLaunchRegion(region.slug) ? (
+                    <Link href={`/${region.slug}`} className="hover:text-white">
+                      {region.name}
+                    </Link>
+                  ) : (
+                    <span>{region.name}</span>
+                  )
                 )}
               </div>
 
@@ -380,9 +385,13 @@ export default async function EventPage({ params }: Props) {
                   {region && (
                     <div className="flex items-center justify-between text-sm">
                       <span className="text-gray-500">Region</span>
-                      <Link href={`/${region.slug}`} className="font-medium text-accent-hover hover:underline">
-                        {region.name}
-                      </Link>
+                      {isLaunchRegion(region.slug) ? (
+                        <Link href={`/${region.slug}`} className="font-medium text-accent-hover hover:underline">
+                          {region.name}
+                        </Link>
+                      ) : (
+                        <span className="font-medium text-primary">{region.name}</span>
+                      )}
                     </div>
                   )}
                   {event.ageRange && (
@@ -402,7 +411,7 @@ export default async function EventPage({ params }: Props) {
                     {nearbyAccommodation.map(({ accommodation: acc }) => (
                       <Link
                         key={acc.id}
-                        href={`/stay/${acc.slug}`}
+                        href={`/accommodation/${acc.slug}`}
                         className="flex items-center gap-3 p-2 -mx-2 rounded-lg hover:bg-gray-50 transition-colors"
                       >
                         <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -415,7 +424,7 @@ export default async function EventPage({ params }: Props) {
                       </Link>
                     ))}
                   </div>
-                  {region && (
+                  {region && isLaunchRegion(region.slug) && (
                     <Link href={`/${region.slug}/stay`} className="block text-center text-sm text-accent-hover font-medium hover:underline mt-3 pt-3 border-t">
                       See all accommodation →
                     </Link>
@@ -444,7 +453,7 @@ export default async function EventPage({ params }: Props) {
                       </Link>
                     ))}
                   </div>
-                  {region && (
+                  {region && isLaunchRegion(region.slug) && (
                     <Link href={`/${region.slug}`} className="block text-center text-sm text-accent-hover font-medium hover:underline mt-3 pt-3 border-t">
                       More things to do →
                     </Link>

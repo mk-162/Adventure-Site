@@ -68,9 +68,9 @@ Okay, here's the truth: Your first wild swim *will* be a shock to the system. Ev
 ## Top Spots
 
 *   **Blue Lagoon, Abereiddy (Pembrokeshire):** Flooded slate quarry with dramatic cliffs and deep, crystal-clear water. Genuinely freezing even in summer — bring a wetsuit or a thick skin. The entry/exit is rocky.
-*   **Llyn Padarn (Snowdonia):** Large lake near Llanberis with easy access, mountain views, and decent water quality. Popular with open water swimming groups. [Find wild swimming in Snowdonia](/snowdonia/things-to-do/wild-swimming).
-*   **Barafundle Bay (Pembrokeshire):** Sheltered, turquoise sea swimming that looks Mediterranean until you feel the temperature. The walk down keeps crowds manageable. [Find wild swimming in Pembrokeshire](/pembrokeshire/things-to-do/wild-swimming).
-*   **River Usk near Crickhowell (Brecon Beacons):** Gentle river swimming with gravel beaches. One of the warmer options in Wales (relatively). Beautiful valley setting. [Find wild swimming in the Brecon Beacons](/brecon-beacons/things-to-do/wild-swimming).
+*   **Llyn Padarn (Snowdonia):** Large lake near Llanberis with easy access, mountain views, and decent water quality. Popular with open water swimming groups. [Find wild swimming in Snowdonia](/snowdonia).
+*   **Barafundle Bay (Pembrokeshire):** Sheltered, turquoise sea swimming that looks Mediterranean until you feel the temperature. The walk down keeps crowds manageable. [Find wild swimming in Pembrokeshire](/pembrokeshire/wild-swimming).
+*   **River Usk near Crickhowell (Brecon Beacons):** Gentle river swimming with gravel beaches. One of the warmer options in Wales (relatively). Beautiful valley setting. [Find wild swimming in the Brecon Beacons](/brecon-beacons/wild-swimming).
 *   **Llyn Idwal (Snowdonia):** Dramatic glacial lake in a spectacular cwm below the Devil's Kitchen. Cold, atmospheric, and a short walk from the road.
 *   **Fairy Glen, Betws-y-Coed (Snowdonia):** An enchanting river pool in a narrow gorge. Beautiful but check water levels — it can be dangerous after heavy rain.
 

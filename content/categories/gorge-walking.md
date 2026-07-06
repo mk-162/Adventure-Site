@@ -54,4 +54,4 @@ The water is cold, even with a wetsuit. You'll get used to it eventually (sort o
 
 ---
 
-Ready to get stuck in? [Find gorge walking in the Brecon Beacons](/brecon-beacons/things-to-do/gorge-walking) or [browse all gorge walking across Wales](/activities/gorge-walking).
+Ready to get stuck in? [Find gorge walking in the Brecon Beacons](/brecon-beacons/gorge-walking) or [browse all gorge walking across Wales](/activities/gorge-walking).

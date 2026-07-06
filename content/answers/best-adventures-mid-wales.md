@@ -14,7 +14,7 @@ Mid Wales is the quiet one. While Snowdonia and Pembrokeshire grab the headlines
 
 ### Mountain Biking
 
-*   **Coed y Brenin (near Dolgellau):** Wales's original and arguably still best trail centre. Trails from green (gentle forest loops) to black (technical, rocky descents) through ancient oak and conifer forest. The drainage is excellent — rideable year-round. The Cyflym Coch red run is a Welsh classic. Great café too. [Find mountain biking in Mid Wales](/mid-wales/things-to-do/mountain-biking).
+*   **Coed y Brenin (near Dolgellau):** Wales's original and arguably still best trail centre. Trails from green (gentle forest loops) to black (technical, rocky descents) through ancient oak and conifer forest. The drainage is excellent — rideable year-round. The Cyflym Coch red run is a Welsh classic. Great café too. [Find mountain biking in Mid Wales](/mid-wales/mountain-biking).
 *   **Dyfi Forest (Machynlleth):** More natural, less manicured trails for experienced riders. The Cli-machx enduro trail is steep, technical, and brilliant. Less infrastructure than Coed y Brenin — bring tools and self-sufficiency.
 *   **Nant yr Arian (near Aberystwyth):** Trail centre with red-graded trails and red kite feeding at the visitor centre. Combine biking with wildlife — the kites come down to the lake at feeding time (daily, usually 2-3pm).
 
@@ -28,7 +28,7 @@ Mid Wales is the quiet one. While Snowdonia and Pembrokeshire grab the headlines
 
 *   **Cadair Idris:** Technically southern Snowdonia, but accessible from Mid Wales. One of the finest mountain walks in Wales. The Minffordd Path through the nature reserve to the glacial lake Llyn Cau is extraordinary. Quieter than Snowdon and arguably better.
 *   **Plynlimon (Pumlumon Fawr):** The highest point in the Cambrian Mountains and the source of the Rivers Severn and Wye. Wild, empty moorland — you might not see another person all day. A completely different experience from Snowdonia's crowded peaks.
-*   **Elan Valley:** Walk the trails around the spectacular Victorian reservoirs. Dramatic dams, atmospheric woodland, and some of the best stargazing in Wales (International Dark Sky Park). [Find hiking in Mid Wales](/mid-wales/things-to-do/hiking).
+*   **Elan Valley:** Walk the trails around the spectacular Victorian reservoirs. Dramatic dams, atmospheric woodland, and some of the best stargazing in Wales (International Dark Sky Park). [Find hiking in Mid Wales](/mid-wales/hiking).
 
 ### Wildlife and Stargazing
 

@@ -41,10 +41,10 @@ Coasteering in Wales is an unforgettable experience, scrambling and swimming alo
 
 ## Where to Go Coasteering in Wales
 
-*   **Pembrokeshire** is the coasteering capital of Wales. The Blue Lagoon at Abereiddy, the cliffs around St Davids, and the bays near Solva offer world-class coasteering with crystal-clear water and dramatic rock formations. [Find coasteering in Pembrokeshire](/pembrokeshire/things-to-do/coasteering).
-*   **Anglesey** has a completely different character — sea caves, narrow gullies, and interesting geology. Less crowded than Pembrokeshire in peak season. [Find coasteering in Anglesey](/anglesey/things-to-do/coasteering).
-*   **The Gower Peninsula** is closer to South Wales cities and has beautiful coastline around Mumbles and the south coast. [Find coasteering on the Gower](/gower/things-to-do/coasteering).
-*   **The Llŷn Peninsula** offers more remote, uncrowded coasteering in stunning settings. [Find coasteering on the Llŷn Peninsula](/llyn-peninsula/things-to-do/coasteering).
+*   **Pembrokeshire** is the coasteering capital of Wales. The Blue Lagoon at Abereiddy, the cliffs around St Davids, and the bays near Solva offer world-class coasteering with crystal-clear water and dramatic rock formations. [Find coasteering in Pembrokeshire](/pembrokeshire).
+*   **Anglesey** has a completely different character — sea caves, narrow gullies, and interesting geology. Less crowded than Pembrokeshire in peak season. [Find coasteering in Anglesey](/anglesey/coasteering).
+*   **The Gower Peninsula** is closer to South Wales cities and has beautiful coastline around Mumbles and the south coast. [Find coasteering on the Gower](/gower).
+*   **The Llŷn Peninsula** offers more remote, uncrowded coasteering in stunning settings. [Find coasteering on the Llŷn Peninsula](/llyn-peninsula).
 
 ## Wales-Specific Tips
 

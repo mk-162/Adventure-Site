@@ -13,15 +13,15 @@ Wales is one of the best mountain biking destinations in the UK, full stop. For 
 
 ### Trail Centres (Graded, Maintained Trails)
 
-*   **Coed y Brenin (Snowdonia):** The granddaddy of Welsh trail centres and still one of the best. Ancient forest setting, excellent drainage (rideable year-round), and trails from gentle green loops to the fast, technical black runs. The Cyflym Coch red run is a Welsh classic. Great café, good facilities. [Find mountain biking in Snowdonia](/snowdonia/things-to-do/mountain-biking).
+*   **Coed y Brenin (Snowdonia):** The granddaddy of Welsh trail centres and still one of the best. Ancient forest setting, excellent drainage (rideable year-round), and trails from gentle green loops to the fast, technical black runs. The Cyflym Coch red run is a Welsh classic. Great café, good facilities. [Find mountain biking in Snowdonia](/snowdonia/mountain-biking).
 *   **Coed Llandegla (near Wrexham):** The best beginner-to-intermediate centre in Wales. Well-built trails, brilliant facilities including bike wash and café, and easy access from Chester, Liverpool, and Manchester. The reds are genuinely fun — fast-flowing with well-built berms and features. If you're new to mountain biking, start here.
-*   **Afan Forest Park (South Wales):** Multiple trails through dramatic valleys. The Wall and Blade trails are classics — rougher and more natural-feeling than purpose-built centres, with proper climbs and rewarding descents. Less manicured than Coed y Brenin, but that's part of the appeal. [Find mountain biking in South Wales](/south-wales/things-to-do/mountain-biking).
+*   **Afan Forest Park (South Wales):** Multiple trails through dramatic valleys. The Wall and Blade trails are classics — rougher and more natural-feeling than purpose-built centres, with proper climbs and rewarding descents. Less manicured than Coed y Brenin, but that's part of the appeal. [Find mountain biking in South Wales](/south-wales/mountain-biking).
 *   **Gwydir Forest / Betws-y-Coed (Snowdonia):** Home to the MinorTaur (red) and Temtiwr (blue) trails. More natural than purpose-built trail centres, threading through the forest above Betws-y-Coed with stunning views. Technical and demanding.
 
 ### Uplift-Served Bike Parks
 
 *   **Antur Stiniog (Blaenau Ffestiniog):** Pure downhill in a dramatic slate quarry landscape. Steep, loose, and technical — the reds here would be blacks at most trail centres. For intermediate to expert riders. The uplift minibus takes you to the top; gravity does the rest. Raw and addictive.
-*   **BikePark Wales (Merthyr Tydfil):** More sculpted than Antur Stiniog, with berms, jumps, and progressive trail design. Green and blue runs are genuine fun (not just fire roads), making it better for building skills. The blacks are still serious. Excellent café — possibly the best post-ride burger in Wales. [Find mountain biking in the Brecon Beacons](/brecon-beacons/things-to-do/mountain-biking).
+*   **BikePark Wales (Merthyr Tydfil):** More sculpted than Antur Stiniog, with berms, jumps, and progressive trail design. Green and blue runs are genuine fun (not just fire roads), making it better for building skills. The blacks are still serious. Excellent café — possibly the best post-ride burger in Wales. [Find mountain biking in the Brecon Beacons](/brecon-beacons/mountain-biking).
 
 ### Natural / Backcountry Riding
 

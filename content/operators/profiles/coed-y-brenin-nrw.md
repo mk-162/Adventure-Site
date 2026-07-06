@@ -4,7 +4,7 @@
 **Site:** https://naturalresources.wales
 **Location:** Dolgellau LL40 2HZ (inside Snowdonia National Park)
 **Operating body:** Natural Resources Wales (NRW) — the Welsh Government environmental body, formed in 2013 from the merger of Forestry Commission Wales, Environment Agency Wales and the Countryside Council for Wales.
-**Tier:** Tier-2 (free public-land operator) — but a Tier-1 narrative for the [Snowdonia MTB combo](/snowdonia/things-to-do/mountain-biking).
+**Tier:** Tier-2 (free public-land operator) — but a Tier-1 narrative for the [Snowdonia MTB combo](/snowdonia/mountain-biking).
 
 ---
 
@@ -14,7 +14,7 @@ Coed y Brenin is **the United Kingdom's first purpose-built mountain bike centre
 
 For Adventure Wales, the directory listing matters because:
 
-1. **It's the named anchor for the [Snowdonia MTB combo](/snowdonia/things-to-do/mountain-biking).** Five of the spot entries on that combo (MBR Trail, Dragon's Back, Temtiwr, Cyflym, and the visitor-centre walking/running access) are Coed y Brenin trails.
+1. **It's the named anchor for the [Snowdonia MTB combo](/snowdonia/mountain-biking).** Five of the spot entries on that combo (MBR Trail, Dragon's Back, Temtiwr, Cyflym, and the visitor-centre walking/running access) are Coed y Brenin trails.
 2. **It's the UK-first heritage story** for MTB in Wales, comparable to St Davids' coasteering or Hay-on-Wye's books as a "we invented this" claim worth surfacing on the front page.
 3. **It's a free-to-access public-land facility** (parking is the only charge), which makes it the most accessible MTB venue in the region and the natural entry point for visiting riders.
 4. The operator listing is currently weak (no cover image, no logo, generic NRW description) — fixing it lifts the whole MTB combo.

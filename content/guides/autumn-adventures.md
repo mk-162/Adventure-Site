@@ -31,26 +31,26 @@ If you enjoy dramatic landscapes, quieter trails, and don't mind bringing a wate
 ## Top Spots This Season
 
 ### Snowdonia National Park
-The views from Snowdon in autumn — when the cloud breaks and you can see the autumn palette stretching to the coast — are extraordinary. The Watkin Path through the oak woodland is particularly atmospheric. [Hiking in Snowdonia](/snowdonia/things-to-do/hiking) is at its finest now. For mountain biking, Coed y Brenin's trails drain well and the forest colour is brilliant. [Find mountain biking in Snowdonia](/snowdonia/things-to-do/mountain-biking).
+The views from Snowdon in autumn — when the cloud breaks and you can see the autumn palette stretching to the coast — are extraordinary. The Watkin Path through the oak woodland is particularly atmospheric. [Hiking in Snowdonia](/snowdonia/hiking) is at its finest now. For mountain biking, Coed y Brenin's trails drain well and the forest colour is brilliant. [Find mountain biking in Snowdonia](/snowdonia/mountain-biking).
 
 ### Brecon Beacons
-Waterfall country is the star in autumn. The Four Waterfalls Walk is muddy but magnificent after rain. [Gorge walking](/brecon-beacons/things-to-do/gorge-walking) still runs into October with some operators — the water's cold but the autumn gorge scenery is worth it. [Caving in the Brecon Beacons](/brecon-beacons/things-to-do/caving) works year-round and is a brilliant wet-weather option.
+Waterfall country is the star in autumn. The Four Waterfalls Walk is muddy but magnificent after rain. [Gorge walking](/brecon-beacons/gorge-walking) still runs into October with some operators — the water's cold but the autumn gorge scenery is worth it. [Caving in the Brecon Beacons](/brecon-beacons/caving) works year-round and is a brilliant wet-weather option.
 
 ### Wye Valley
 This is *the* autumn destination in Wales. The valley's dense woodland turns incredible shades of gold and red. Walk from Tintern Abbey along the river — the combination of ruins and autumn leaves is ridiculously photogenic. Canoeing the Wye between Hay-on-Wye and Monmouth is gentler in autumn flows.
 
 ### Pembrokeshire Coast
-September and early October are still mild enough for [coasteering in Pembrokeshire](/pembrokeshire/things-to-do/coasteering) — fewer people, same dramatic cliffs, slightly warmer water than spring. The coastal path walking is exceptional without summer crowds. Seal pupping season (September-November) means you'll spot grey seals at Martins Haven and Ramsey Island.
+September and early October are still mild enough for [coasteering in Pembrokeshire](/pembrokeshire) — fewer people, same dramatic cliffs, slightly warmer water than spring. The coastal path walking is exceptional without summer crowds. Seal pupping season (September-November) means you'll spot grey seals at Martins Haven and Ramsey Island.
 
 ### Gower Peninsula
-Three Cliffs Bay on an autumn afternoon with the tide out is one of the most photogenic spots in Wales. The walking is excellent, and you can still [surf at Llangennith](/gower/things-to-do/surfing) — autumn swells are often bigger and more consistent than summer.
+Three Cliffs Bay on an autumn afternoon with the tide out is one of the most photogenic spots in Wales. The walking is excellent, and you can still [surf at Llangennith](/gower/surfing) — autumn swells are often bigger and more consistent than summer.
 
 ## Best Activities This Season
 
 1.  **Hiking:** The best season for it. Cooler temperatures, fewer crowds, dramatic skies. The Carneddau range in Snowdonia is wild and empty. The Brecon Beacons ridge walk is outstanding in autumn light. [Find hiking across Wales](/activities/hiking).
 2.  **Mountain biking:** Trails are grippier in cooler temps. Autumn light through forest trails at Coed y Brenin or Afan Forest Park is special. [Find mountain biking across Wales](/activities/mountain-biking).
-3.  **Coasteering:** September and early October still work. Pembrokeshire operators run until mid-October in good conditions. [Find coasteering in Pembrokeshire](/pembrokeshire/things-to-do/coasteering).
-4.  **Caving:** Weather-proof and brilliant in autumn. The Brecon Beacons cave systems don't care about rain. [Find caving in the Brecon Beacons](/brecon-beacons/things-to-do/caving).
+3.  **Coasteering:** September and early October still work. Pembrokeshire operators run until mid-October in good conditions. [Find coasteering in Pembrokeshire](/pembrokeshire).
+4.  **Caving:** Weather-proof and brilliant in autumn. The Brecon Beacons cave systems don't care about rain. [Find caving in the Brecon Beacons](/brecon-beacons/caving).
 5.  **Wild swimming:** For the hardy. River temperatures drop through autumn but dedicated swimmers with wetsuits still enjoy spots like the Fairy Glen near Betws-y-Coed and the waterfalls at Pontneddfechan. [Find wild swimming spots](/activities/wild-swimming).
 
 ## Weather Reality

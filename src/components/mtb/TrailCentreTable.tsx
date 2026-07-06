@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { isLaunchCombo, isLaunchRegion } from "@/lib/launch";
 import { 
   ArrowUpDown, 
   ChevronDown, 
@@ -134,12 +135,23 @@ export function TrailCentreTable({ centres }: TrailCentreTableProps) {
                   </div>
                 </td>
                 <td className="px-4 py-4">
-                  <Link 
-                    href={`/${centre.regionSlug}/mountain-biking`}
-                    className="text-sm text-gray-600 hover:text-accent-hover transition-colors"
-                  >
-                    {centre.region}
-                  </Link>
+                  {isLaunchCombo(centre.regionSlug, "mountain-biking") ? (
+                    <Link
+                      href={`/${centre.regionSlug}/mountain-biking`}
+                      className="text-sm text-gray-600 hover:text-accent-hover transition-colors"
+                    >
+                      {centre.region}
+                    </Link>
+                  ) : isLaunchRegion(centre.regionSlug) ? (
+                    <Link
+                      href={`/${centre.regionSlug}`}
+                      className="text-sm text-gray-600 hover:text-accent-hover transition-colors"
+                    >
+                      {centre.region}
+                    </Link>
+                  ) : (
+                    <span className="text-sm text-gray-600">{centre.region}</span>
+                  )}
                 </td>
                 <td className="px-4 py-4">
                   <div className="flex gap-1.5">

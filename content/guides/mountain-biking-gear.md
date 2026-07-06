@@ -71,9 +71,9 @@ Prioritize essential safety gear like a helmet and gloves. Look for sales and di
 
 ## Where to Ride in Wales
 
-*   **Coed y Brenin (Snowdonia):** The original Welsh trail centre. Brilliant drainage, excellent facilities, trails from blue to black. The Cyflym Coch red run is a classic. [Find mountain biking in Snowdonia](/snowdonia/things-to-do/mountain-biking).
+*   **Coed y Brenin (Snowdonia):** The original Welsh trail centre. Brilliant drainage, excellent facilities, trails from blue to black. The Cyflym Coch red run is a classic. [Find mountain biking in Snowdonia](/snowdonia/mountain-biking).
 *   **Antur Stiniog (Blaenau Ffestiniog):** Uplift-served downhill. Steep, technical, fast. Not for beginners. The slate landscape is otherworldly.
-*   **BikePark Wales (Merthyr Tydfil):** Uplift-served park with more sculpted, flowing trails than Antur Stiniog. Great progression from blue to black. [Find mountain biking in the Brecon Beacons](/brecon-beacons/things-to-do/mountain-biking).
+*   **BikePark Wales (Merthyr Tydfil):** Uplift-served park with more sculpted, flowing trails than Antur Stiniog. Great progression from blue to black. [Find mountain biking in the Brecon Beacons](/brecon-beacons/mountain-biking).
 *   **Coed Llandegla (near Wrexham):** Excellent for beginners and intermediates. Well-built trails, good café, and easy access from North West England. Fast-flowing reds are genuinely fun.
 *   **Afan Forest Park (South Wales):** Multiple trails through dramatic valleys. The Wall and Blade trails are classics. Slightly rougher than purpose-built bike parks.
 

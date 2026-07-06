@@ -55,7 +55,7 @@ Fitness isn't just about strength and stamina — cold tolerance matters. Welsh 
 | Standard/classic | Good — regular light exercise | 2-3 hours | Most adults |
 | Advanced/extreme | High — strong swimmer, very fit | 3-4 hours | Experienced, very fit |
 
-Most Pembrokeshire operators offer at least two grades of session. [Find coasteering in Pembrokeshire](/pembrokeshire/things-to-do/coasteering) or [coasteering in Anglesey](/anglesey/things-to-do/coasteering).
+Most Pembrokeshire operators offer at least two grades of session. [Find coasteering in Pembrokeshire](/pembrokeshire) or [coasteering in Anglesey](/anglesey/coasteering).
 
 ## Practical Tips
 

@@ -9,7 +9,7 @@ activity: general
 
 ## Quick Answer
 
-Anglesey is brilliant for families — beaches, wildlife, castles, and adventure activities without the crushing crowds of Snowdonia. The beaches around Newborough Warren are enormous and family-friendly, [coasteering at Rhoscolyn](/anglesey/things-to-do/coasteering) works for kids aged 8+, and the South Stack cliffs are mesmerising for all ages. It's an island that rewards exploration.
+Anglesey is brilliant for families — beaches, wildlife, castles, and adventure activities without the crushing crowds of Snowdonia. The beaches around Newborough Warren are enormous and family-friendly, [coasteering at Rhoscolyn](/anglesey/coasteering) works for kids aged 8+, and the South Stack cliffs are mesmerising for all ages. It's an island that rewards exploration.
 
 ## The Detail
 
@@ -24,8 +24,8 @@ Anglesey's beaches are some of the best in North Wales, and several are perfect 
 
 ### Adventure Activities
 
-*   **Coasteering (ages 8+):** Anglesey's coasteering is different from Pembrokeshire — narrower gullies, sea caves, and interesting rock formations around Rhoscolyn and the South Stack area. Several operators run family-friendly sessions with smaller jumps and gentler routes. [Find coasteering in Anglesey](/anglesey/things-to-do/coasteering).
-*   **Sea kayaking:** Sheltered bays make Anglesey excellent for family kayaking. Paddle around the coast spotting seals, explore sea caves, and land on hidden beaches. [Find kayaking in Anglesey](/anglesey/things-to-do/kayaking).
+*   **Coasteering (ages 8+):** Anglesey's coasteering is different from Pembrokeshire — narrower gullies, sea caves, and interesting rock formations around Rhoscolyn and the South Stack area. Several operators run family-friendly sessions with smaller jumps and gentler routes. [Find coasteering in Anglesey](/anglesey/coasteering).
+*   **Sea kayaking:** Sheltered bays make Anglesey excellent for family kayaking. Paddle around the coast spotting seals, explore sea caves, and land on hidden beaches. [Find kayaking in Anglesey](/anglesey/kayaking).
 *   **Rock pooling:** The rocky coastline is teeming with life. Trearddur Bay and Cable Bay have excellent rock pools at low tide — bring nets, buckets, and a marine ID chart.
 *   **Cycling:** Anglesey is flat enough for family cycling. The Lôn Las Cefni path from Llangefni to Newborough is traffic-free and scenic. The coastal sections of Lôn Las Cymru are also good.
 

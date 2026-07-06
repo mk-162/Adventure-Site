@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getRegionBySlug, getAccommodationByRegion, getAllRegions } from "@/lib/queries";
+import { isLaunchRegion } from "@/lib/launch";
 import { AccommodationCard } from "@/components/cards/accommodation-card";
 import { MapPin, Mountain, Compass } from "lucide-react";
 
@@ -131,9 +132,11 @@ const regionalGuides: Record<string, {
 
 export async function generateStaticParams() {
   const regionsData = await getAllRegions();
-  return regionsData.map((region) => ({
-    region: region.slug,
-  }));
+  return regionsData
+    .filter((region) => isLaunchRegion(region.slug))
+    .map((region) => ({
+      region: region.slug,
+    }));
 }
 
 export async function generateMetadata({ params }: AccommodationPageProps) {
@@ -152,6 +155,12 @@ export async function generateMetadata({ params }: AccommodationPageProps) {
 
 export default async function AccommodationPage({ params }: AccommodationPageProps) {
   const { region: regionSlug } = await params;
+
+  // Launch gate: only verified regions are reachable/indexable.
+  if (!isLaunchRegion(regionSlug)) {
+    notFound();
+  }
+
   const region = await getRegionBySlug(regionSlug);
 
   if (!region) {

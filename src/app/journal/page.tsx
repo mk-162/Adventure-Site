@@ -23,7 +23,8 @@ export default async function JournalPage({ searchParams }: Props) {
   const params = await searchParams;
   const selectedCategory = (typeof params.category === "string" ? params.category : "") || "";
   const selectedTag = (typeof params.tag === "string" ? params.tag : "") || "";
-  const currentPage = Number(typeof params.page === "string" ? params.page : "1") || 1;
+  // Clamp to >= 1 so a crafted ?page=-1 can't become a negative SQL OFFSET (500).
+  const currentPage = Math.max(1, Math.floor(Number(typeof params.page === "string" ? params.page : "1")) || 1);
   const perPage = 12;
   const offset = (currentPage - 1) * perPage;
 

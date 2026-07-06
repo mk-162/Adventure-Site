@@ -35,17 +35,17 @@ The **original and still the best**. The Blue Lagoon at Abereiddy (a flooded Vic
 - **St Davids Peninsula** — Dramatic cliffs, sea arches, seal colonies
 - **Solva & Newgale** — Varied routes suitable for all abilities
 
-[Find coasteering in Pembrokeshire →](/pembrokeshire/things-to-do/coasteering)
+[Find coasteering in Pembrokeshire →](/pembrokeshire)
 
 ### Anglesey
 Different character — sea caves, narrow gullies, and interesting rock formations. **Rhoscolyn** is particularly good with jumps ranging from 1-15 metres. Less crowded than Pembrokeshire, with excellent wildlife.
 
-[Find coasteering in Anglesey →](/anglesey/things-to-do/coasteering)
+[Find coasteering in Anglesey →](/anglesey/coasteering)
 
 ### Gower Peninsula
 Closer to Cardiff and Swansea. Beautiful coastline at **Rhossili** and **Three Cliffs Bay** with magnificent sea arches and through-cliff swims. Jumps typically 8-15m at the dramatic spots. Good if you don't want to travel far west.
 
-[Find coasteering on the Gower →](/gower/things-to-do/coasteering)
+[Find coasteering on the Gower →](/gower)
 
 ### Llŷn Peninsula
 More remote, fewer people, equally stunning. The coasteering around Aberdaron is wild and beautiful, with the added bonus of views toward Bardsey Island.

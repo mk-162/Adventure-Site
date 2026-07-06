@@ -20,11 +20,13 @@ import {
 } from "lucide-react";
 import { AdSlot } from "@/components/commercial/AdSlot";
 import { AdvertiseWidget } from "@/components/commercial/AdvertiseWidget";
-import { 
-  JsonLd, 
-  createFAQPageSchema, 
-  createBreadcrumbSchema 
+import {
+  JsonLd,
+  createFAQPageSchema,
+  createBreadcrumbSchema
 } from "@/components/seo/JsonLd";
+import { linkableRegionSlug } from "@/lib/launch";
+import { renderContentLink } from "@/lib/content-links";
 
 interface AnswerFrontmatter {
   slug: string;
@@ -65,16 +67,31 @@ function extractQuickAnswer(body: string): string | null {
   return null;
 }
 
-// Extract related questions from body
-function extractRelatedQuestions(body: string): string[] {
+interface RelatedQuestion {
+  question: string;
+  href: string;
+}
+
+// Extract related questions from body.
+// Lines are either plain text ("How hard is Snowdon?") or already markdown
+// links ("[Best beaches](/answers/best-beaches-pembrokeshire)"). Parse the
+// link syntax here so we never slugify raw "[text](url)" strings into hrefs.
+function extractRelatedQuestions(body: string): RelatedQuestion[] {
   const relatedMatch = body.match(/## Related Questions\s*\n+([\s\S]*?)$/i);
   if (!relatedMatch) return [];
-  
+
   const lines = relatedMatch[1].split("\n");
   return lines
     .filter(l => l.trim().startsWith("-"))
     .map(l => l.replace(/^-\s*/, "").trim())
-    .slice(0, 5);
+    .slice(0, 5)
+    .map(item => {
+      const linkMatch = item.match(/\[([^\]]+)\]\(([^)\s]+)\)/);
+      if (linkMatch) {
+        return { question: linkMatch[1].trim(), href: linkMatch[2] };
+      }
+      return { question: item, href: `/answers/${slugifyQuestion(item)}` };
+    });
 }
 
 // Extract h2/h3 headings for table of contents
@@ -148,8 +165,9 @@ function markdownToHtml(md: string): string {
       }
       return match;
     })
-    // Links
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-accent-hover hover:underline font-medium">$1</a>')
+    // Links — legacy/unlaunched targets degrade to plain text
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_m: string, label: string, url: string) =>
+      renderContentLink(label, url, "text-accent-hover hover:underline font-medium"))
     // Paragraphs
     .replace(/^(?!<[hultd]|<li|<div|<tr)(.+)$/gm, (match, p1) => {
       if (p1.trim()) {
@@ -162,7 +180,7 @@ function markdownToHtml(md: string): string {
     .replace(/\n{3,}/g, "\n\n");
 }
 
-function getAnswer(slug: string): { frontmatter: AnswerFrontmatter; quickAnswer: string | null; content: string; relatedQuestions: string[]; headings: { level: number; text: string; id: string }[] } | null {
+function getAnswer(slug: string): { frontmatter: AnswerFrontmatter; quickAnswer: string | null; content: string; relatedQuestions: RelatedQuestion[]; headings: { level: number; text: string; id: string }[] } | null {
   const filePath = path.join(process.cwd(), "content", "answers", `${slug}.md`);
   
   if (!fs.existsSync(filePath)) {
@@ -217,7 +235,7 @@ function formatRegionName(slug: string): string {
 function slugifyQuestion(question: string): string {
   return question
     .toLowerCase()
-    .replace(/[?]/g, "")
+    .replace(/[^a-z0-9\s-]/g, "")
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-")
     .replace(/^-|-$/g, "");
@@ -302,12 +320,26 @@ export default async function AnswerPage({ params }: Props) {
   const { frontmatter, quickAnswer, content, relatedQuestions, headings } = data;
   const relatedAnswers = getRelatedAnswers(slug, frontmatter.region);
 
+  // Region handling: only launched regions get links; "general" and
+  // non-launch regions (carmarthenshire, north-wales, wye-valley, ...)
+  // render as plain text or nothing — their pages 404.
+  const regionHref = linkableRegionSlug(frontmatter.region);
+  const regionLabel =
+    frontmatter.region && frontmatter.region !== "general"
+      ? formatRegionName(frontmatter.region)
+      : null;
+  const heroSrc =
+    frontmatter.region &&
+    fs.existsSync(path.join(process.cwd(), "public", "images", "regions", `${frontmatter.region}-hero.jpg`))
+      ? `/images/regions/${frontmatter.region}-hero.jpg`
+      : "/images/regions/default-hero.jpg";
+
   // Create breadcrumb items
   const breadcrumbItems = [
     { name: 'Home', url: '/' },
   ];
-  if (frontmatter.region) {
-    breadcrumbItems.push({ name: formatRegionName(frontmatter.region), url: `/${frontmatter.region}` });
+  if (regionHref) {
+    breadcrumbItems.push({ name: formatRegionName(regionHref), url: `/${regionHref}` });
   }
   breadcrumbItems.push(
     { name: 'Answers', url: '/answers' },
@@ -330,14 +362,19 @@ export default async function AnswerPage({ params }: Props) {
         <div className="hidden lg:flex flex-wrap items-center gap-2 mb-6 text-sm">
           <Link href="/" className="text-gray-500 hover:text-primary transition-colors">Home</Link>
           <ChevronRight className="w-4 h-4 text-gray-400" />
-          {frontmatter.region && (
+          {regionHref ? (
             <>
-              <Link href={`/${frontmatter.region}`} className="text-gray-500 hover:text-primary transition-colors">
-                {formatRegionName(frontmatter.region)}
+              <Link href={`/${regionHref}`} className="text-gray-500 hover:text-primary transition-colors">
+                {formatRegionName(regionHref)}
               </Link>
               <ChevronRight className="w-4 h-4 text-gray-400" />
             </>
-          )}
+          ) : regionLabel ? (
+            <>
+              <span className="text-gray-500">{regionLabel}</span>
+              <ChevronRight className="w-4 h-4 text-gray-400" />
+            </>
+          ) : null}
           <Link href="/answers" className="text-gray-500 hover:text-primary transition-colors">Answers</Link>
           <ChevronRight className="w-4 h-4 text-gray-400" />
           <span className="text-primary font-medium truncate max-w-xs">
@@ -359,15 +396,20 @@ export default async function AnswerPage({ params }: Props) {
               <div className="flex flex-wrap items-center justify-between gap-4 mt-4">
                 <div className="flex items-center gap-3">
                   {/* Region Tag */}
-                  {frontmatter.region && (
-                    <Link 
-                      href={`/${frontmatter.region}`}
+                  {regionHref ? (
+                    <Link
+                      href={`/${regionHref}`}
                       className="flex items-center gap-1 text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded-full hover:bg-gray-200 transition-colors"
                     >
                       <MapPin className="w-4 h-4" />
-                      {formatRegionName(frontmatter.region)}
+                      {formatRegionName(regionHref)}
                     </Link>
-                  )}
+                  ) : regionLabel ? (
+                    <span className="flex items-center gap-1 text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded-full">
+                      <MapPin className="w-4 h-4" />
+                      {regionLabel}
+                    </span>
+                  ) : null}
                   
                   {/* Updated date (placeholder) */}
                   <span className="hidden sm:flex items-center gap-1 text-sm text-gray-500">
@@ -391,18 +433,18 @@ export default async function AnswerPage({ params }: Props) {
             </header>
 
             {/* Hero Image (if region exists) */}
-            {frontmatter.region && (
+            {regionLabel && (
               <div className="hidden lg:block w-full h-[300px] rounded-2xl overflow-hidden relative shadow-lg mb-8">
                 <Image
-                  alt={`${formatRegionName(frontmatter.region)} landscape`}
+                  alt={`${regionLabel} landscape`}
                   className="w-full h-full object-cover"
-                  src={`/images/regions/${frontmatter.region}-hero.jpg`}
+                  src={heroSrc}
                   fill
                   sizes="(max-width: 1280px) 66vw, 784px"
                   loading="eager"
                 />
                 <div className="absolute bottom-4 right-4 bg-black/50 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-lg">
-                  {formatRegionName(frontmatter.region)}
+                  {regionLabel}
                 </div>
               </div>
             )}
@@ -483,21 +525,18 @@ export default async function AnswerPage({ params }: Props) {
                   Related Questions
                 </h2>
                 <div className="flex flex-col gap-3">
-                  {relatedQuestions.map((question, i) => {
-                    const questionSlug = slugifyQuestion(question);
-                    return (
-                      <Link
-                        key={i}
-                        href={`/answers/${questionSlug}`}
-                        className="group flex items-center justify-between p-4 bg-white rounded-lg border border-gray-200 hover:border-primary/30 hover:shadow-sm transition-all"
-                      >
-                        <span className="text-gray-800 group-hover:text-primary font-medium transition-colors">
-                          {question}
-                        </span>
-                        <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-accent-hover transition-colors shrink-0" />
-                      </Link>
-                    );
-                  })}
+                  {relatedQuestions.map((related, i) => (
+                    <Link
+                      key={i}
+                      href={related.href}
+                      className="group flex items-center justify-between p-4 bg-white rounded-lg border border-gray-200 hover:border-primary/30 hover:shadow-sm transition-all"
+                    >
+                      <span className="text-gray-800 group-hover:text-primary font-medium transition-colors">
+                        {related.question}
+                      </span>
+                      <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-accent-hover transition-colors shrink-0" />
+                    </Link>
+                  ))}
                 </div>
               </section>
             )}
@@ -533,33 +572,33 @@ export default async function AnswerPage({ params }: Props) {
                 <div className="absolute -right-10 -top-10 w-32 h-32 bg-white/10 rounded-full blur-2xl" />
                 <h3 className="text-xl font-bold mb-2 relative z-10">Book an Adventure</h3>
                 <p className="text-white/80 text-sm mb-4 relative z-10">
-                  Ready to explore? Find guided adventures in {frontmatter.region ? formatRegionName(frontmatter.region) : "Wales"}.
+                  Ready to explore? Find guided adventures in {regionHref ? formatRegionName(regionHref) : "Wales"}.
                 </p>
                 <Link
-                  href={frontmatter.region ? `/${frontmatter.region}` : "/activities"}
+                  href={regionHref ? `/${regionHref}` : "/activities"}
                   className="block w-full py-3 bg-white text-primary font-bold rounded-lg text-sm text-center hover:bg-gray-100 transition-colors relative z-10"
                 >
                   Find Activities
                 </Link>
               </div>
 
-              {frontmatter.region && (
+              {regionHref && (
                 <div className="rounded-xl overflow-hidden h-40 relative shadow-sm border border-gray-200">
                   <Image
-                    alt={`Map of ${formatRegionName(frontmatter.region)}`}
+                    alt={`Map of ${formatRegionName(regionHref)}`}
                     className="w-full h-full object-cover"
-                    src={`/images/regions/${frontmatter.region}-hero.jpg`}
+                    src={heroSrc}
                     fill
                     sizes="(max-width: 1280px) 33vw, 384px"
                     loading="eager"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/10 hover:bg-black/20 transition-colors cursor-pointer">
                     <Link
-                      href={`/${frontmatter.region}`}
+                      href={`/${regionHref}`}
                       className="bg-white/90 backdrop-blur text-primary px-4 py-2 rounded-lg font-bold text-sm shadow-sm flex items-center gap-2"
                     >
                       <MapPin className="w-4 h-4" />
-                      Explore {formatRegionName(frontmatter.region)}
+                      Explore {formatRegionName(regionHref)}
                     </Link>
                   </div>
                 </div>
@@ -571,7 +610,7 @@ export default async function AnswerPage({ params }: Props) {
               <section className="mt-10 pt-8 border-t border-gray-200">
                 <h2 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
                   <HelpCircle className="w-5 h-5 text-accent-hover" />
-                  More Answers{frontmatter.region ? ` about ${formatRegionName(frontmatter.region)}` : ""}
+                  More Answers{regionLabel ? ` about ${regionLabel}` : ""}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {relatedAnswers.map((answer) => (
@@ -615,10 +654,10 @@ export default async function AnswerPage({ params }: Props) {
                 <div className="absolute -right-10 -top-10 w-32 h-32 bg-white/10 rounded-full blur-2xl" />
                 <h3 className="text-xl font-bold mb-2 relative z-10">Book an Adventure</h3>
                 <p className="text-white/80 text-sm mb-4 relative z-10">
-                  Ready to explore? Find guided adventures in {frontmatter.region ? formatRegionName(frontmatter.region) : "Wales"}.
+                  Ready to explore? Find guided adventures in {regionHref ? formatRegionName(regionHref) : "Wales"}.
                 </p>
                 <Link
-                  href={frontmatter.region ? `/${frontmatter.region}` : "/activities"}
+                  href={regionHref ? `/${regionHref}` : "/activities"}
                   className="block w-full py-3 bg-white text-primary font-bold rounded-lg text-sm text-center hover:bg-gray-100 transition-colors relative z-10"
                 >
                   Find Activities
@@ -655,23 +694,23 @@ export default async function AnswerPage({ params }: Props) {
               )}
 
               {/* Region Map Preview */}
-              {frontmatter.region && (
+              {regionHref && (
                 <div className="rounded-xl overflow-hidden h-40 relative shadow-sm border border-gray-200">
                   <Image
-                    alt={`Map of ${formatRegionName(frontmatter.region)}`}
+                    alt={`Map of ${formatRegionName(regionHref)}`}
                     className="w-full h-full object-cover"
-                    src={`/images/regions/${frontmatter.region}-hero.jpg`}
+                    src={heroSrc}
                     fill
                     sizes="(max-width: 1280px) 33vw, 384px"
                     loading="eager"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/10 hover:bg-black/20 transition-colors cursor-pointer">
                     <Link
-                      href={`/${frontmatter.region}`}
+                      href={`/${regionHref}`}
                       className="bg-white/90 backdrop-blur text-primary px-4 py-2 rounded-lg font-bold text-sm shadow-sm flex items-center gap-2"
                     >
                       <MapPin className="w-4 h-4" />
-                      Explore {formatRegionName(frontmatter.region)}
+                      Explore {formatRegionName(regionHref)}
                     </Link>
                   </div>
                 </div>

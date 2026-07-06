@@ -7,11 +7,11 @@ import Image from "next/image";
 import { MapPin, Compass, Calendar, ArrowRight, Search as SearchIcon } from "lucide-react";
 
 interface SearchPageProps {
-  searchParams: {
+  searchParams: Promise<{
     region?: string;
     activity?: string;
     q?: string;
-  };
+  }>;
 }
 
 async function getSearchResults(filters: {
@@ -182,10 +182,11 @@ function ResultCard({
 }
 
 async function SearchResults({ searchParams }: SearchPageProps) {
+  const params = await searchParams;
   const results = await getSearchResults({
-    regionSlug: searchParams.region,
-    activitySlug: searchParams.activity,
-    query: searchParams.q?.trim(),
+    regionSlug: params.region,
+    activitySlug: params.activity,
+    query: params.q?.trim(),
   });
 
   const totalResults = 
@@ -193,7 +194,7 @@ async function SearchResults({ searchParams }: SearchPageProps) {
     results.itineraries.length + 
     results.accommodation.length;
 
-  const hasFilters = searchParams.region || searchParams.activity;
+  const hasFilters = params.region || params.activity;
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -238,7 +239,7 @@ async function SearchResults({ searchParams }: SearchPageProps) {
                 type="text"
                 name="q"
                 placeholder="Search adventures, activities, regions..."
-                defaultValue={searchParams.q ?? ""}
+                defaultValue={params.q ?? ""}
                 className="w-full pl-12 pr-28 py-4 rounded-xl bg-white text-slate-900 placeholder-slate-400 border-2 border-white/80 focus:border-accent-hover focus:ring-2 focus:ring-accent-hover outline-none shadow-lg text-base"
               />
               <button

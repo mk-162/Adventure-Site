@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { isLaunchCombo, isLaunchRegion } from "@/lib/launch";
 import { 
   ArrowUpDown, 
   ChevronDown, 
@@ -141,12 +142,23 @@ export function SurfSpotTable({ spots }: SurfSpotTableProps) {
                   </div>
                 </td>
                 <td className="px-4 py-4">
-                  <Link 
-                    href={`/${spot.regionSlug}/surfing`}
-                    className="text-sm text-gray-600 hover:text-accent-hover transition-colors"
-                  >
-                    {spot.region}
-                  </Link>
+                  {isLaunchCombo(spot.regionSlug, "surfing") ? (
+                    <Link
+                      href={`/${spot.regionSlug}/surfing`}
+                      className="text-sm text-gray-600 hover:text-accent-hover transition-colors"
+                    >
+                      {spot.region}
+                    </Link>
+                  ) : isLaunchRegion(spot.regionSlug) ? (
+                    <Link
+                      href={`/${spot.regionSlug}`}
+                      className="text-sm text-gray-600 hover:text-accent-hover transition-colors"
+                    >
+                      {spot.region}
+                    </Link>
+                  ) : (
+                    <span className="text-sm text-gray-600">{spot.region}</span>
+                  )}
                 </td>
                 <td className="px-4 py-4 text-sm text-gray-700">
                   {spot.waveType}

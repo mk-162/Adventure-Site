@@ -29,19 +29,19 @@ If you want the widest range of activities, the warmest water, and the longest d
 ## Top Spots This Season
 
 ### Pembrokeshire Coast
-This is the crown jewel in summer. The water turns a ridiculous shade of turquoise around Barafundle Bay and the Blue Lagoon at Abereiddy. [Coasteering in Pembrokeshire](/pembrokeshire/things-to-do/coasteering) is the quintessential Welsh summer experience — jumping off sea cliffs into the Atlantic. [Sea kayaking around Ramsey Island](/pembrokeshire/things-to-do/kayaking) is stunning when conditions are calm.
+This is the crown jewel in summer. The water turns a ridiculous shade of turquoise around Barafundle Bay and the Blue Lagoon at Abereiddy. [Coasteering in Pembrokeshire](/pembrokeshire) is the quintessential Welsh summer experience — jumping off sea cliffs into the Atlantic. [Sea kayaking around Ramsey Island](/pembrokeshire) is stunning when conditions are calm.
 
 ### Snowdonia
-Tackle Snowdon early — be on the Pyg Track by 7am and you'll beat the crowds. The Snowdon Ranger path is quieter and arguably has better views. For something different, the Rhinogydd mountains south of Harlech are wild, empty, and utterly magnificent. [Mountain biking at Coed y Brenin](/snowdonia/things-to-do/mountain-biking) is prime in dry summer conditions.
+Tackle Snowdon early — be on the Pyg Track by 7am and you'll beat the crowds. The Snowdon Ranger path is quieter and arguably has better views. For something different, the Rhinogydd mountains south of Harlech are wild, empty, and utterly magnificent. [Mountain biking at Coed y Brenin](/snowdonia/mountain-biking) is prime in dry summer conditions.
 
 ### Gower Peninsula
-Rhossili Bay is consistently rated one of Britain's best beaches, and it earns it. The surf at Llangennith is reliable, the three cliffs bay walk is spectacular, and [surfing lessons](/gower/things-to-do/surfing) are easy to find. The Gower is more accessible from South Wales cities than Pembrokeshire, so it gets busy — arrive early.
+Rhossili Bay is consistently rated one of Britain's best beaches, and it earns it. The surf at Llangennith is reliable, the three cliffs bay walk is spectacular, and [surfing lessons](/gower/surfing) are easy to find. The Gower is more accessible from South Wales cities than Pembrokeshire, so it gets busy — arrive early.
 
 ### Anglesey
-Underrated in summer. The South Stack cliffs are mesmerising, the beaches around Newborough Warren are enormous, and [kayaking around the coastline](/anglesey/things-to-do/kayaking) reveals sea caves and hidden coves. Less crowded than Pembrokeshire, especially the north coast.
+Underrated in summer. The South Stack cliffs are mesmerising, the beaches around Newborough Warren are enormous, and [kayaking around the coastline](/anglesey/kayaking) reveals sea caves and hidden coves. Less crowded than Pembrokeshire, especially the north coast.
 
 ### Brecon Beacons
-Pen y Fan is busy but still worth doing in summer. The real gems are the waterfall walks around Ystradfellte and wild swimming in the River Usk near Crickhowell. [Gorge walking](/brecon-beacons/things-to-do/gorge-walking) is at its best — warmer water and reliable operators running daily.
+Pen y Fan is busy but still worth doing in summer. The real gems are the waterfall walks around Ystradfellte and wild swimming in the River Usk near Crickhowell. [Gorge walking](/brecon-beacons/gorge-walking) is at its best — warmer water and reliable operators running daily.
 
 ## Best Activities This Season
 
@@ -49,7 +49,7 @@ Pen y Fan is busy but still worth doing in summer. The real gems are the waterfa
 2.  **Wild swimming:** Lakes, rivers, and the sea are all accessible. Llyn Padarn in Snowdonia, the Blue Pool at Abereiddy, and the River Wye near Hay-on-Wye are standout spots. [Find wild swimming spots](/activities/wild-swimming).
 3.  **Surfing:** Consistent swells at Freshwater West, Whitesands, and Llangennith. Surf schools everywhere. [Find surfing in Wales](/activities/surfing).
 4.  **Hiking:** Long days mean you can tackle bigger routes. The Snowdon Horseshoe, the Brecon Beacons ridge walk, or multi-day sections of the Pembrokeshire Coast Path. [Find hiking across Wales](/activities/hiking).
-5.  **Zip lining:** Velocity 2 at Zip World in Bethesda is the fastest zip line in Europe. Book well ahead in summer — it sells out daily. [Find zip lines in Snowdonia](/snowdonia/things-to-do/zip-lining).
+5.  **Zip lining:** Velocity 2 at Zip World in Bethesda is the fastest zip line in Europe. Book well ahead in summer — it sells out daily. [Find zip lines in Snowdonia](/snowdonia).
 
 ## Weather Reality
 

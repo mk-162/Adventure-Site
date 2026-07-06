@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db";
 import { operators } from "@/db/schema";
+import { getAppUrl } from "@/lib/app-url";
 import { eq } from "drizzle-orm";
 import { getOperatorSession } from "@/lib/auth";
 import { stripe } from "@/lib/stripe";
@@ -26,7 +27,7 @@ export async function POST(req: NextRequest) {
 
     const portalSession = await stripe.billingPortal.sessions.create({
       customer: operator.stripeCustomerId,
-      return_url: `${process.env.NEXT_PUBLIC_APP_URL}/dashboard/billing`,
+      return_url: `${getAppUrl()}/dashboard/billing`,
     });
 
     return NextResponse.json({ url: portalSession.url });

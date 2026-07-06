@@ -85,9 +85,12 @@ export async function GET(request: NextRequest) {
             })
             .from(operators)
             .where(
-              or(
-                ilike(operators.name, `%${query}%`),
-                ilike(operators.description, `%${query}%`)
+              and(
+                eq(operators.status, "published"),
+                or(
+                  ilike(operators.name, `%${query}%`),
+                  ilike(operators.description, `%${query}%`)
+                )
               )
             )
             .limit(limit)

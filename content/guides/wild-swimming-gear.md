@@ -59,8 +59,8 @@ title: "Wild Swimming Kit Guide"
 *   **Blue Lagoon, Abereiddy (Pembrokeshire):** A flooded slate quarry with deep, cold, incredibly clear water. Dramatic but the entry/exit is rocky — water shoes essential. Genuinely freezing even in August.
 *   **Llyn Padarn (Snowdonia):** A large lake near Llanberis with easy access and mountain views. Popular with open water swimmers. Water quality is good but temperatures rarely top 16°C.
 *   **Fairy Glen, Betws-y-Coed (Snowdonia):** A magical river pool surrounded by rock walls and trees. Access involves a short walk. Currents can be strong after rain — check conditions.
-*   **Barafundle Bay (Pembrokeshire):** Sheltered sea swimming in crystal-clear water. The walk down keeps crowds manageable. One of the best beach swims in Wales. [Find wild swimming in Pembrokeshire](/pembrokeshire/things-to-do/wild-swimming).
-*   **River Usk near Crickhowell (Brecon Beacons):** Gentle river swimming with gravel beaches. Warmer than mountain lakes but still fresh. [Find wild swimming in the Brecon Beacons](/brecon-beacons/things-to-do/wild-swimming).
+*   **Barafundle Bay (Pembrokeshire):** Sheltered sea swimming in crystal-clear water. The walk down keeps crowds manageable. One of the best beach swims in Wales. [Find wild swimming in Pembrokeshire](/pembrokeshire/wild-swimming).
+*   **River Usk near Crickhowell (Brecon Beacons):** Gentle river swimming with gravel beaches. Warmer than mountain lakes but still fresh. [Find wild swimming in the Brecon Beacons](/brecon-beacons/wild-swimming).
 *   **Llyn Idwal (Snowdonia):** Dramatic glacial lake below the Devil's Kitchen. Very cold, very atmospheric, and a short walk from the road.
 
 ## Wales-Specific Tips

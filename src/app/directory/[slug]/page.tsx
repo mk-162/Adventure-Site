@@ -15,6 +15,7 @@ import { FavouriteButton } from "@/components/ui/FavouriteButton";
 import { JsonLd, createLocalBusinessSchema, createBreadcrumbSchema } from "@/components/seo/JsonLd";
 import { ViewTracker } from "@/components/ui/ViewTracker";
 import { getEffectiveTier, isTrialActive } from "@/lib/trial-utils";
+import { isLaunchCombo } from "@/lib/launch";
 import {
   ChevronRight,
   MapPin, 
@@ -38,6 +39,15 @@ import {
 
 interface Props {
   params: Promise<{ slug: string }>;
+}
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/[\s_-]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 
 function formatTrustSignals(signals: any): { icon: string; label: string }[] {
@@ -109,6 +119,22 @@ export default async function OperatorProfilePage({ params }: Props) {
   const regionDisplayName = primaryRegion
     ? primaryRegion.replace(/-/g, " ").replace(/\b\w/g, (c: string) => c.toUpperCase())
     : null;
+
+  // "Explore by activity" combo chips. operator.activityTypes values may be
+  // display names ("Zip Lining") or slugs — resolve each against the real
+  // activity_type rows, then only link combos inside the launch allowlist.
+  const primaryRegionSlug = primaryRegion ? slugify(primaryRegion) : null;
+  const launchComboTypes = primaryRegionSlug
+    ? (operator.activityTypes ?? [])
+        .map((raw: string) => {
+          const rawSlug = slugify(raw);
+          return activityTypes.find((at) => at.slug === rawSlug || slugify(at.name) === rawSlug);
+        })
+        .filter((at): at is (typeof activityTypes)[number] =>
+          at !== undefined && isLaunchCombo(primaryRegionSlug, at.slug)
+        )
+        .filter((at, index, arr) => arr.findIndex((other) => other.slug === at.slug) === index)
+    : [];
 
   return (
     <div className="min-h-screen pb-24 lg:pb-12 has-bottom-bar">
@@ -962,25 +988,22 @@ export default async function OperatorProfilePage({ params }: Props) {
           </section>
         )}
 
-        {/* Activity + Region combo links (SEO) */}
-        {operator.activityTypes && operator.activityTypes.length > 0 && primaryRegion && (
+        {/* Activity + Region combo links (SEO) — launch-gated, verified slugs only */}
+        {primaryRegionSlug && launchComboTypes.length > 0 && (
           <section className="mt-8 mb-4">
             <h2 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-3">
               Explore by activity in {regionDisplayName}
             </h2>
             <div className="flex flex-wrap gap-2">
-              {operator.activityTypes.map((typeSlug: string) => {
-                const typeName = typeSlug.replace(/-/g, " ").replace(/\b\w/g, (c: string) => c.toUpperCase());
-                return (
-                  <Link
-                    key={typeSlug}
-                    href={`/${primaryRegion}/${typeSlug}`}
-                    className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-primary hover:border-accent-hover hover:text-accent-hover transition-colors"
-                  >
-                    {typeName} in {regionDisplayName}
-                  </Link>
-                );
-              })}
+              {launchComboTypes.map((type) => (
+                <Link
+                  key={type.slug}
+                  href={`/${primaryRegionSlug}/${type.slug}`}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-primary hover:border-accent-hover hover:text-accent-hover transition-colors"
+                >
+                  {type.name} in {regionDisplayName}
+                </Link>
+              ))}
             </div>
           </section>
         )}

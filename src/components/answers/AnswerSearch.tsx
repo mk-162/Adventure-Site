@@ -11,6 +11,7 @@ import {
   Compass,
   X,
 } from "lucide-react";
+import { linkableRegionSlug } from "@/lib/launch";
 
 interface Answer {
   slug: string;
@@ -37,6 +38,13 @@ const POPULAR_TAGS = ["Best Time", "Family", "Budget", "Safety", "Beginners"];
 export function AnswerSearch({ answers, regions }: AnswerSearchProps) {
   const [query, setQuery] = useState("");
   const [activeTag, setActiveTag] = useState<string | null>(null);
+
+  // Only launched regions have live landing pages — "general",
+  // carmarthenshire, north-wales etc. would produce 404 links.
+  const linkableRegions = useMemo(
+    () => regions.filter((r) => linkableRegionSlug(r) !== null),
+    [regions]
+  );
 
   const filteredAnswers = useMemo(() => {
     let result = answers;
@@ -253,27 +261,29 @@ export function AnswerSearch({ answers, regions }: AnswerSearchProps) {
         <aside className="lg:col-span-4">
           <div className="sticky top-24 space-y-6">
             {/* Browse by Region */}
-            <div className="bg-white rounded-xl border border-gray-200 p-5 shadow-sm">
-              <h3 className="font-bold text-primary mb-4 flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-accent-hover" />
-                Browse by Region
-              </h3>
-              <ul className="space-y-2">
-                {regions.map((region) => (
-                  <li key={region}>
-                    <Link
-                      href={`/${region}`}
-                      className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 transition-colors"
-                    >
-                      <span className="text-sm text-gray-700">
-                        {formatRegionName(region)}
-                      </span>
-                      <ArrowRight className="w-4 h-4 text-gray-400" />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {linkableRegions.length > 0 && (
+              <div className="bg-white rounded-xl border border-gray-200 p-5 shadow-sm">
+                <h3 className="font-bold text-primary mb-4 flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-accent-hover" />
+                  Browse by Region
+                </h3>
+                <ul className="space-y-2">
+                  {linkableRegions.map((region) => (
+                    <li key={region}>
+                      <Link
+                        href={`/${region}`}
+                        className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 transition-colors"
+                      >
+                        <span className="text-sm text-gray-700">
+                          {formatRegionName(region)}
+                        </span>
+                        <ArrowRight className="w-4 h-4 text-gray-400" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* CTA Card */}
             <div className="bg-primary rounded-xl p-6 text-white relative overflow-hidden">

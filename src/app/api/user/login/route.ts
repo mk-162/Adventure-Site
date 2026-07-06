@@ -3,6 +3,7 @@ import { db } from "@/db";
 import { users, magicLinks } from "@/db/schema";
 import { eq } from "drizzle-orm";
 import { userLoginSchema, validateJsonBody } from "@/lib/api/validate";
+import { getAppUrl } from "@/lib/app-url";
 
 export async function POST(req: NextRequest) {
   try {
@@ -38,10 +39,17 @@ export async function POST(req: NextRequest) {
     });
 
     // Send email
-    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
-    const verifyUrl = `${baseUrl}/api/user/verify?token=${token}`;
+    const verifyUrl = `${getAppUrl()}/api/user/verify?token=${token}`;
 
-    // Use Resend if available
+    if (!process.env.RESEND_API_KEY) {
+      // Don't tell the user "check your email" when no email can be sent
+      console.error("RESEND_API_KEY is not set — cannot send sign-in email");
+      if (process.env.NODE_ENV === "production") {
+        return NextResponse.json({ error: "Sign-in email could not be sent" }, { status: 503 });
+      }
+      console.log(`[dev] magic link for ${email}: ${verifyUrl}`);
+    }
+
     if (process.env.RESEND_API_KEY) {
       const { Resend } = await import("resend");
       const resend = new Resend(process.env.RESEND_API_KEY);
@@ -52,14 +60,14 @@ export async function POST(req: NextRequest) {
         subject: "Sign in to Adventure Wales",
         html: `
           <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
-            <div style="background: var(--color-primary); padding: 24px; text-align: center;">
+            <div style="background: #1e3a4c; padding: 24px; text-align: center;">
               <h1 style="color: white; margin: 0;">Adventure Wales</h1>
             </div>
             <div style="padding: 32px; background: #f9fafb;">
-              <h2 style="color: var(--color-primary);">Sign In</h2>
+              <h2 style="color: #1e3a4c;">Sign In</h2>
               <p>Hey${user.name ? ` ${user.name}` : ""}! Click below to sign in to your Adventure Wales account.</p>
               <div style="text-align: center; margin: 32px 0;">
-                <a href="${verifyUrl}" style="background: var(--color-accent); color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
+                <a href="${verifyUrl}" style="background: #ea580c; color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
                   Sign In →
                 </a>
               </div>

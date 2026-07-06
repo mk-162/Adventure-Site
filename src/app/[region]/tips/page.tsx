@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ChevronRight, ArrowRight, Compass, Lightbulb, MapPin } from "lucide-react";
 import { getRegionBySlug, getAllRegions, getAnswers } from "@/lib/queries";
+import { isLaunchRegion } from "@/lib/launch";
 
 type Props = {
   params: Promise<{ region: string }>;
@@ -35,6 +36,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function RegionTipsPage({ params }: Props) {
   const { region: regionSlug } = await params;
+
+  // Launch gate: only verified regions are reachable/indexable.
+  if (!isLaunchRegion(regionSlug)) {
+    notFound();
+  }
+
   const region = await getRegionBySlug(regionSlug);
 
   if (!region) {
@@ -44,7 +51,9 @@ export default async function RegionTipsPage({ params }: Props) {
   // Try to fetch answers related to this region
   const answers = await getAnswers({ regionId: region.id, limit: 10 });
   const allRegions = await getAllRegions();
-  const otherRegions = allRegions.filter(r => r.slug !== regionSlug).slice(0, 6);
+  const otherRegions = allRegions
+    .filter(r => r.slug !== regionSlug && isLaunchRegion(r.slug))
+    .slice(0, 6);
 
   return (
     <div className="min-h-screen pt-4 lg:pt-8 pb-12">

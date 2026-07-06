@@ -46,8 +46,8 @@ Okay, so you've never done this before? Don't expect to be a pro straight away! 
 
 ## Top Spots
 
-*   **St Davids Peninsula (Pembrokeshire):** Arguably the best sea kayaking in Wales. Paddle past sea caves, arches, and the dramatic cliffs of Ramsey Island. Dolphins and seals are regular sightings. [Find kayaking in Pembrokeshire](/pembrokeshire/things-to-do/kayaking).
-*   **Anglesey coastline:** Excellent sea kayaking with sea stacks, caves, and sheltered bays. The South Stack area is spectacular. Less crowded than Pembrokeshire. [Find kayaking in Anglesey](/anglesey/things-to-do/kayaking).
+*   **St Davids Peninsula (Pembrokeshire):** Arguably the best sea kayaking in Wales. Paddle past sea caves, arches, and the dramatic cliffs of Ramsey Island. Dolphins and seals are regular sightings. [Find kayaking in Pembrokeshire](/pembrokeshire).
+*   **Anglesey coastline:** Excellent sea kayaking with sea stacks, caves, and sheltered bays. The South Stack area is spectacular. Less crowded than Pembrokeshire. [Find kayaking in Anglesey](/anglesey/kayaking).
 *   **River Wye (Wye Valley):** The classic Welsh canoe trip. Gentle, meandering river through stunning scenery from Hay-on-Wye to Monmouth. Multi-day trips available with riverside camping.
 *   **Llŷn Peninsula:** Remote and beautiful sea kayaking. The stretch around Bardsey Island (weather permitting) is a true adventure.
 *   **Cardigan Bay:** Paddle with dolphins. Cardigan Bay is home to the UK's largest resident population of bottlenose dolphins. New Quay is the best launch point.

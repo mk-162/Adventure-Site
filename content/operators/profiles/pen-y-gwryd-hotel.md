@@ -14,7 +14,7 @@ The Pen-y-Gwryd Hotel — "the PYG" to climbers — is **the hotel where the 195
 
 For Adventure Wales, the directory listing matters because:
 
-1. **It's the named heritage anchor for the [Snowdonia climbing combo](/snowdonia/things-to-do/climbing).** The Joe Brown / Don Whillans British-climbing-birthplace narrative that lives in that combo's intro runs through the PYG — it's the physical building where that story happened.
+1. **It's the named heritage anchor for the [Snowdonia climbing combo](/snowdonia).** The Joe Brown / Don Whillans British-climbing-birthplace narrative that lives in that combo's intro runs through the PYG — it's the physical building where that story happened.
 2. **It's the pub-stop on every Snowdon Horseshoe day.** The Pyg Track to Snowdon takes its name from the hotel, and the hotel sits 200m from the Pen-y-Pass car park trailhead — every Snowdon-hiking itinerary on the site references it implicitly.
 3. **It's a Tier-2 trip enhancer** — fixing this listing lifts every Snowdon-area itinerary, because the PYG is what makes the "climber's pub after a summit day" recommendation honest rather than generic.
 4. The current listing is one of the weakest in the directory — no cover image, no logo, no coordinates, no Google rating. All of those are auto-fixable.

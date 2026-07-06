@@ -2,6 +2,10 @@
 
 **Adventure Wales** — adventure tourism site for Wales. Next.js 16 + Drizzle ORM on Neon Postgres. Pre-launch.
 
+> **Agents: start at [`vault/README.md`](vault/README.md)** — the curated Obsidian memory vault
+> (162-memory-system convention) with current project state, SOPs, and business context.
+> It supersedes the older notes in `plans/`, `playbook/`, and `docs/` where they conflict.
+
 ## Where things stand
 
 - **Content phase.** See `content/ops/status-report.md` for live numbers — 1,657 inventory items as of June 4, 2026.

@@ -104,17 +104,25 @@ const TOOLS = [
 ];
 
 // Tool implementations
+//
+// All search_* tools are only ever allowed to surface status='published'
+// content to AI agents — draft/review/archived rows (including unclaimed
+// operator stubs pending moderation) must never leak through this public,
+// unauthenticated-by-default endpoint. Mirrors the publish gate in
+// src/lib/queries/operators.ts:29-32.
 async function searchActivities(params: any) {
   const { query, limit = 10 } = params;
-  
-  let whereClause;
-  if (query) {
-    whereClause = or(
-      ilike(activities.name, `%${query}%`),
-      ilike(activities.description, `%${query}%`)
-    );
-  }
-  
+
+  const searchFilter = query
+    ? or(
+        ilike(activities.name, `%${query}%`),
+        ilike(activities.description, `%${query}%`)
+      )
+    : undefined;
+  const whereClause = searchFilter
+    ? and(eq(activities.status, 'published'), searchFilter)
+    : eq(activities.status, 'published');
+
   const results = await db.query.activities.findMany({
     where: whereClause,
     limit,
@@ -139,16 +147,18 @@ async function searchActivities(params: any) {
 
 async function searchAccommodation(params: any) {
   const { query, limit = 10 } = params;
-  
-  let whereClause;
-  if (query) {
-    whereClause = or(
-      ilike(accommodation.name, `%${query}%`),
-      ilike(accommodation.description, `%${query}%`),
-      ilike(accommodation.type, `%${query}%`)
-    );
-  }
-  
+
+  const searchFilter = query
+    ? or(
+        ilike(accommodation.name, `%${query}%`),
+        ilike(accommodation.description, `%${query}%`),
+        ilike(accommodation.type, `%${query}%`)
+      )
+    : undefined;
+  const whereClause = searchFilter
+    ? and(eq(accommodation.status, 'published'), searchFilter)
+    : eq(accommodation.status, 'published');
+
   const results = await db.query.accommodation.findMany({
     where: whereClause,
     limit,
@@ -172,13 +182,14 @@ async function searchAccommodation(params: any) {
 
 async function searchEvents(params: any) {
   const { query, startDate, endDate, eventType, limit = 10 } = params;
-  
-  const conditions = [];
+
+  const conditions = [eq(events.status, 'published')];
   if (query) {
-    conditions.push(or(
+    const searchFilter = or(
       ilike(events.name, `%${query}%`),
       ilike(events.description, `%${query}%`)
-    ));
+    );
+    if (searchFilter) conditions.push(searchFilter);
   }
   if (startDate) {
     conditions.push(gte(events.dateStart, new Date(startDate)));
@@ -191,7 +202,7 @@ async function searchEvents(params: any) {
   }
   
   const results = await db.query.events.findMany({
-    where: conditions.length > 0 ? and(...conditions) : undefined,
+    where: and(...conditions),
     limit,
     orderBy: (events, { asc }) => [asc(events.dateStart)]
   });
@@ -211,15 +222,17 @@ async function searchEvents(params: any) {
 
 async function searchItineraries(params: any) {
   const { query, limit = 10 } = params;
-  
-  let whereClause;
-  if (query) {
-    whereClause = or(
-      ilike(itineraries.title, `%${query}%`),
-      ilike(itineraries.description, `%${query}%`)
-    );
-  }
-  
+
+  const searchFilter = query
+    ? or(
+        ilike(itineraries.title, `%${query}%`),
+        ilike(itineraries.description, `%${query}%`)
+      )
+    : undefined;
+  const whereClause = searchFilter
+    ? and(eq(itineraries.status, 'published'), searchFilter)
+    : eq(itineraries.status, 'published');
+
   const results = await db.query.itineraries.findMany({
     where: whereClause,
     limit,
@@ -242,16 +255,21 @@ async function searchItineraries(params: any) {
 
 async function searchOperators(params: any) {
   const { query, limit = 10 } = params;
-  
-  let whereClause;
-  if (query) {
-    whereClause = or(
-      ilike(operators.name, `%${query}%`),
-      ilike(operators.description, `%${query}%`),
-      ilike(operators.tagline, `%${query}%`)
-    );
-  }
-  
+
+  // Matches the publish gate in src/lib/queries/operators.ts:29-32 — only
+  // status='published' operators are ever surfaced to AI agents (stub/draft
+  // operators haven't been through the real-business verification gate).
+  const searchFilter = query
+    ? or(
+        ilike(operators.name, `%${query}%`),
+        ilike(operators.description, `%${query}%`),
+        ilike(operators.tagline, `%${query}%`)
+      )
+    : undefined;
+  const whereClause = searchFilter
+    ? and(eq(operators.status, 'published'), searchFilter)
+    : eq(operators.status, 'published');
+
   const results = await db.query.operators.findMany({
     where: whereClause,
     limit
@@ -271,7 +289,9 @@ async function searchOperators(params: any) {
 }
 
 async function getRegions() {
-  const results = await db.query.regions.findMany();
+  const results = await db.query.regions.findMany({
+    where: eq(regions.status, 'published'),
+  });
 
   return results.map(r => ({
     name: r.name,

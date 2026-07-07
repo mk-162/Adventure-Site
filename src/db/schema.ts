@@ -277,7 +277,7 @@ export const eventSaves = pgTable("event_saves", {
   sessionId: varchar("session_id", { length: 255 }).notNull(), // anonymous session or operator ID
   createdAt: timestamp("created_at").defaultNow().notNull(),
 }, (table) => [
-  { uniqueSave: unique("unique_event_save").on(table.eventId, table.sessionId) },
+  unique("unique_event_save").on(table.eventId, table.sessionId),
   index("event_saves_event_id_idx").on(table.eventId),
   index("event_saves_session_id_idx").on(table.sessionId),
 ]);

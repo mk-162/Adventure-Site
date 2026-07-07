@@ -2,6 +2,23 @@ import { db } from "@/db";
 import { operators } from "@/db/schema";
 import { sql, desc } from "drizzle-orm";
 import Link from "next/link";
+import { TIER_PRICES_GBP } from "@/lib/stripe";
+
+/**
+ * Monthly amount an operator is actually billed. Prefers the per-operator
+ * `billingCustomAmount` override (set on the admin commercial/accounts page)
+ * over the standard tier price, so MRR reflects real negotiated rates
+ * instead of a fictional flat total.
+ */
+function monthlyAmount(op: { billingTier: string | null; billingCustomAmount: string | null }): number {
+  if (op.billingCustomAmount) {
+    const custom = parseFloat(op.billingCustomAmount);
+    if (!Number.isNaN(custom)) return custom;
+  }
+  if (op.billingTier === "premium") return TIER_PRICES_GBP.premium;
+  if (op.billingTier === "verified") return TIER_PRICES_GBP.verified;
+  return 0;
+}
 
 export default async function AdminBillingPage() {
   // Get all operators with billing info
@@ -34,10 +51,13 @@ export default async function AdminBillingPage() {
   const verified = allOperators.filter(o => o.billingTier === "verified");
   const free = allOperators.filter(o => o.billingTier === "free" || !o.billingTier);
 
-  // Revenue calc
-  const enhancedRevenue = verified.length * 9.99;
-  const premiumRevenue = premium.length * 29.99;
+  // Revenue calc — per-operator amount honours billingCustomAmount overrides,
+  // falling back to the standard tier price (TIER_PRICES_GBP). This is real
+  // arithmetic over actual rows, not a hardcoded fictional total.
+  const enhancedRevenue = verified.reduce((sum, op) => sum + monthlyAmount(op), 0);
+  const premiumRevenue = premium.reduce((sum, op) => sum + monthlyAmount(op), 0);
   const totalMRR = enhancedRevenue + premiumRevenue;
+  const hasCustomAmounts = allOperators.some(op => op.billingTier !== "free" && op.billingTier && op.billingCustomAmount);
 
   return (
     <div className="space-y-8">
@@ -51,6 +71,9 @@ export default async function AdminBillingPage() {
         <div className="bg-white p-5 rounded-lg shadow-sm border">
           <p className="text-sm text-slate-500 uppercase tracking-wider">Monthly Revenue</p>
           <p className="text-3xl font-bold text-slate-900 mt-1">£{totalMRR.toFixed(2)}</p>
+          {hasCustomAmounts && (
+            <p className="text-xs text-slate-400 mt-1">Includes custom per-operator rates</p>
+          )}
         </div>
         <div className="bg-white p-5 rounded-lg shadow-sm border">
           <p className="text-sm text-slate-500 uppercase tracking-wider">Premium</p>
@@ -97,6 +120,11 @@ export default async function AdminBillingPage() {
                   }`}>
                     {op.billingTier || "free"}
                   </span>
+                  {op.billingCustomAmount && op.billingTier && op.billingTier !== "free" && (
+                    <span className="ml-1 text-xs text-green-600" title="Custom rate overrides the standard tier price">
+                      £{op.billingCustomAmount}/mo
+                    </span>
+                  )}
                 </td>
                 <td className="px-4 py-3">
                   {op.stripeSubscriptionStatus ? (

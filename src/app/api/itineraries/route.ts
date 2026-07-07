@@ -1,14 +1,17 @@
 import { NextResponse } from "next/server";
 import { getItineraries } from "@/lib/queries";
+import { parseIntQueryParam } from "@/lib/api/validate";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const limit = searchParams.get("limit")
-    ? parseInt(searchParams.get("limit")!)
-    : undefined;
-  const regionId = searchParams.get("regionId")
-    ? parseInt(searchParams.get("regionId")!)
-    : undefined;
+
+  const limitParam = parseIntQueryParam(searchParams, "limit", { max: 100 });
+  if (!limitParam.ok) return limitParam.response;
+  const regionIdParam = parseIntQueryParam(searchParams, "regionId");
+  if (!regionIdParam.ok) return regionIdParam.response;
+
+  const limit = limitParam.value;
+  const regionId = regionIdParam.value;
 
   try {
     const itineraries = await getItineraries({ limit, regionId });

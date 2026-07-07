@@ -6,6 +6,7 @@ import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { setOperatorSession } from "@/lib/auth";
 import { sendMagicLink } from "@/lib/email";
+import { requireAdminRole } from "@/lib/admin-auth";
 
 // ── Claim actions ──────────────────────────────────────
 
@@ -121,6 +122,11 @@ export async function sendAdminMagicLink(operatorId: number, email: string) {
 // ── Impersonate operator (admin login as) ──────────────
 
 export async function impersonateOperator(operatorId: number) {
+  // Logging in as an operator is sensitive (grants access to their billing
+  // email, listing, dashboard) — require admin+, not just any authenticated
+  // admin/editor/viewer.
+  await requireAdminRole(["super", "admin"]);
+
   const operator = await db.query.operators.findFirst({
     where: eq(operators.id, operatorId),
   });

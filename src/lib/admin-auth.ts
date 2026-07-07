@@ -65,6 +65,46 @@ export async function getAdminSession(): Promise<AdminSession | null> {
 }
 
 /**
+ * Thrown by requireAdminRole so callers (API routes, server actions) can
+ * distinguish "not logged in" (401) from "logged in but insufficient role" (403).
+ */
+export class AdminAuthError extends Error {
+  status: 401 | 403;
+  constructor(message: string, status: 401 | 403) {
+    super(message);
+    this.name = "AdminAuthError";
+    this.status = status;
+  }
+}
+
+/**
+ * Verify the admin_token cookie (via next/headers — works in Route Handlers
+ * and Server Actions alike) and enforce a minimum role. Never trust
+ * request headers (e.g. x-admin-email/x-admin-role) for authorization —
+ * those are set by src/proxy.ts for convenience but the JWT itself is the
+ * only source of truth for identity and role.
+ *
+ * Throws AdminAuthError(401) if not authenticated, AdminAuthError(403) if
+ * authenticated but the role isn't in `allowedRoles`. Returns the verified
+ * session (including email) for audit logging otherwise.
+ */
+export async function requireAdminRole(
+  allowedRoles: AdminSession["role"][]
+): Promise<AdminSession> {
+  const session = await getAdminSession();
+  if (!session) {
+    throw new AdminAuthError("Admin authentication required", 401);
+  }
+  if (!allowedRoles.includes(session.role)) {
+    throw new AdminAuthError(
+      `Forbidden: requires role ${allowedRoles.join(" or ")} (have "${session.role}")`,
+      403
+    );
+  }
+  return session;
+}
+
+/**
  * Authenticate an admin by email + password against the per-user
  * scrypt hash stored in admin_users.password_hash. Admins without a
  * hash cannot log in (fail closed) — set one via

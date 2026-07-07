@@ -2,8 +2,10 @@ import { db } from "@/db";
 import { guidePages, regions, activityTypes, operators } from "@/db/schema";
 import { desc, eq, asc } from "drizzle-orm";
 import Link from "next/link";
-import { BookOpen, Plus, Edit, Eye, Trash2, Search, DollarSign } from "lucide-react";
+import { BookOpen, Edit, Eye, Search, DollarSign } from "lucide-react";
 import clsx from "clsx";
+import { archiveGuidePage } from "./actions";
+import { ArchiveButton } from "../_components/ArchiveButton";
 
 async function getGuidePages() {
   return db
@@ -62,13 +64,6 @@ export default async function GuidePageAdmin() {
           <h1 className="text-2xl font-bold text-gray-900">Guide Pages</h1>
           <p className="text-gray-500">{allPages.length} guide pages</p>
         </div>
-        <Link
-          href="/admin/content/guide-pages/new"
-          className="flex items-center gap-2 px-4 py-2 bg-accent-hover text-white rounded-lg hover:bg-accent-hover transition-colors"
-        >
-          <Plus className="h-5 w-5" />
-          Add Guide Page
-        </Link>
       </div>
 
       {/* Status summary */}
@@ -239,12 +234,11 @@ export default async function GuidePageAdmin() {
                       >
                         <Edit className="h-4 w-4" />
                       </Link>
-                      <button
-                        className="p-2 text-gray-400 hover:text-red-500"
-                        title="Delete"
-                      >
-                        <Trash2 className="h-4 w-4" />
-                      </button>
+                      <ArchiveButton
+                        action={archiveGuidePage.bind(null, page.id)}
+                        itemName={page.title}
+                        itemLabel="guide page"
+                      />
                     </div>
                   </td>
                 </tr>

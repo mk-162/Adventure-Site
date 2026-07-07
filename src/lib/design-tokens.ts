@@ -25,12 +25,37 @@ export const activityColors = {
   default: colors.primary,
 }
 
-// Difficulty level colors
-export const difficultyColors = {
+// Difficulty level colors (raw hex — kept for chart/map theming)
+export const difficultyHexColors = {
   easy: '#10b981',
   moderate: '#f59e0b',
   difficult: '#ef4444',
   advanced: '#dc2626',
+}
+
+// Canonical difficulty badge colors (Tailwind class strings).
+// Single source of truth merging the two divergent maps that previously
+// lived in ui/badge.tsx and components/combo/ComboSpotCard.tsx.
+// Keyed by the lowercased difficulty label; use getDifficultyColor() to resolve.
+export const difficultyColors: Record<string, string> = {
+  easy: 'bg-green-100 text-green-700',
+  beginner: 'bg-green-100 text-green-700',
+  moderate: 'bg-amber-100 text-amber-700',
+  intermediate: 'bg-amber-100 text-amber-700',
+  challenging: 'bg-orange-100 text-orange-700',
+  hard: 'bg-orange-100 text-orange-700',
+  difficult: 'bg-orange-100 text-orange-700',
+  advanced: 'bg-red-100 text-red-700',
+  expert: 'bg-red-100 text-red-700',
+  extreme: 'bg-red-100 text-red-700',
+}
+
+// Neutral fallback for unknown difficulty labels (slate, per design framework).
+export const DIFFICULTY_FALLBACK = 'bg-slate-100 text-slate-700'
+
+export function getDifficultyColor(level?: string | null): string {
+  if (!level) return DIFFICULTY_FALLBACK
+  return difficultyColors[level.toLowerCase()] ?? DIFFICULTY_FALLBACK
 }
 
 // Region colors (optional - for future region-specific theming)

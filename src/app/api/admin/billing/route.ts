@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { stripe } from "@/lib/stripe";
+import { stripe, priceIdToTier, periodEndToDate } from "@/lib/stripe";
 import { db } from "@/db";
 import { operators } from "@/db/schema";
 import { eq } from "drizzle-orm";
@@ -107,9 +107,11 @@ export async function POST(req: NextRequest) {
         const sub = await stripe.subscriptions.retrieve(operator.stripeSubscriptionId);
         const priceIdFromStripe = sub.items.data[0]?.price.id;
 
-        let tier = "free";
-        if (priceIdFromStripe === process.env.STRIPE_VERIFIED_PRICE_ID) tier = "verified";
-        if (priceIdFromStripe === process.env.STRIPE_PREMIUM_PRICE_ID) tier = "premium";
+        // Single source of truth (src/lib/stripe.ts STRIPE_PRICES) — previously
+        // this read STRIPE_VERIFIED_PRICE_ID while the webhook read
+        // STRIPE_ENHANCED_PRICE_ID, so an admin-triggered sync would silently
+        // downgrade every Enhanced subscriber to free.
+        const tier = priceIdToTier(priceIdFromStripe);
 
         const isActive = ["active", "trialing"].includes(sub.status);
 
@@ -117,9 +119,7 @@ export async function POST(req: NextRequest) {
           .set({
             billingTier: isActive ? tier : "free",
             stripeSubscriptionStatus: sub.status,
-            billingPeriodEnd: (sub as any).current_period_end
-              ? new Date(((sub as any).current_period_end as number) * 1000)
-              : null,
+            billingPeriodEnd: periodEndToDate(sub),
           })
           .where(eq(operators.id, operator.id));
 

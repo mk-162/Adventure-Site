@@ -226,6 +226,49 @@ export async function validateJsonBody<T>(
 }
 
 /**
+ * Parse an optional non-negative-integer query param.
+ *
+ * - Absent or empty → `{ ok: true, value: undefined }` (caller applies its own default).
+ * - Present but not a valid non-negative integer → `{ ok: false, response }` (400).
+ * - Present and valid → clamped to `opts.max` if given.
+ */
+export function parseIntQueryParam(
+  searchParams: URLSearchParams,
+  key: string,
+  opts: { max?: number } = {}
+): { ok: true; value: number | undefined } | { ok: false; response: NextResponse } {
+  const raw = searchParams.get(key);
+  if (raw === null || raw.trim() === "") return { ok: true, value: undefined };
+
+  if (!/^\d+$/.test(raw.trim())) {
+    return {
+      ok: false,
+      response: NextResponse.json(
+        { error: "Validation failed", details: [`${key}: must be a non-negative integer`] },
+        { status: 400 }
+      ),
+    };
+  }
+
+  let value = Number.parseInt(raw, 10);
+  if (opts.max !== undefined) value = Math.min(value, opts.max);
+  return { ok: true, value };
+}
+
+/**
+ * True if `error` looks like a Postgres unique-violation (SQLSTATE 23505),
+ * as thrown by the Neon serverless driver on a conflicting insert.
+ */
+export function isUniqueViolationError(error: unknown): boolean {
+  return (
+    typeof error === "object" &&
+    error !== null &&
+    "code" in error &&
+    (error as { code?: unknown }).code === "23505"
+  );
+}
+
+/**
  * Parse URLSearchParams against a Zod schema.
  */
 export function validateSearchParams<T>(
@@ -272,6 +315,69 @@ export const userLoginSchema = z.object({
   name: z.string().max(255).optional(),
   newsletterOptIn: z.boolean().optional(),
 });
+
+// ---------------------------------------------------------------------------
+// Operator dashboard — listing self-edit (src/app/dashboard/listing/actions.ts)
+// ---------------------------------------------------------------------------
+
+// "" -> null (cleared field); undefined key is handled by the caller, which
+// only includes keys that were actually present in the submitted FormData.
+const urlField = (maxLen: number) =>
+  z.preprocess(
+    emptyToNull,
+    z
+      .string()
+      .trim()
+      .max(maxLen)
+      .refine((v) => /^https?:\/\//i.test(v), {
+        message: "Must be a valid http:// or https:// URL",
+      })
+      .nullable()
+  );
+
+// Logos/cover images may be either an absolute http(s) URL (Vercel Blob) or
+// a same-origin relative path from the local upload fallback (/images/...).
+// Either way, reject anything else (javascript:, data:, etc).
+const imagePathField = (maxLen: number) =>
+  z.preprocess(
+    emptyToNull,
+    z
+      .string()
+      .trim()
+      .max(maxLen)
+      .refine((v) => /^https?:\/\//i.test(v) || v.startsWith("/"), {
+        message: "Must be a relative path or an http(s) URL",
+      })
+      .nullable()
+  );
+
+export const updateListingSchema = z
+  .object({
+    tagline: z.preprocess(emptyToNull, z.string().trim().max(255).nullable()),
+    description: z.preprocess(emptyToNull, z.string().trim().max(5000).nullable()),
+    website: urlField(500),
+    tripadvisorUrl: urlField(500),
+    bookingWidgetUrl: urlField(1000),
+    email: z.preprocess(
+      emptyToNull,
+      z.string().trim().toLowerCase().max(255).email().nullable()
+    ),
+    phone: z.preprocess(
+      emptyToNull,
+      z
+        .string()
+        .trim()
+        .max(50)
+        .regex(/^[0-9+()\-.\s]{5,50}$/, "Invalid phone number")
+        .nullable()
+    ),
+    address: z.preprocess(emptyToNull, z.string().trim().max(1000).nullable()),
+    logoUrl: imagePathField(1000),
+    coverImage: imagePathField(1000),
+    priceRange: z.preprocess(emptyToNull, z.string().trim().max(20).nullable()),
+    uniqueSellingPoint: z.preprocess(emptyToNull, z.string().trim().max(255).nullable()),
+  })
+  .partial();
 
 // ---------------------------------------------------------------------------
 // Subscribe / Newsletter / Operator interest
@@ -463,6 +569,28 @@ export const adminBulkSchema = z.object({
   ids: z.array(z.union([z.number().int(), z.string()])).min(1).max(1000),
   data: z.record(z.string(), z.unknown()).nullable().optional(),
 });
+
+// Content types (within ADMIN_BULK_CONTENT_TYPES) that have a `status`
+// column at all. `transport` has none, so status_change/soft-delete don't
+// apply to it — it can only ever be hard-deleted.
+const FULL_STATUS_VALUES = ["draft", "review", "published", "archived"] as const;
+// Operators don't use the "review" state in practice — the admin UI never
+// exposes it, so bulk status_change shouldn't allow setting it either.
+const OPERATOR_STATUS_VALUES = ["draft", "published", "archived"] as const;
+
+export const BULK_STATUS_VALUES_BY_TYPE: Partial<
+  Record<(typeof ADMIN_BULK_CONTENT_TYPES)[number], readonly string[]>
+> = {
+  activities: FULL_STATUS_VALUES,
+  accommodation: FULL_STATUS_VALUES,
+  operators: OPERATOR_STATUS_VALUES,
+  regions: FULL_STATUS_VALUES,
+  locations: FULL_STATUS_VALUES,
+  events: FULL_STATUS_VALUES,
+  itineraries: FULL_STATUS_VALUES,
+  answers: FULL_STATUS_VALUES,
+  // transport: intentionally omitted — no status column.
+};
 
 // ---------------------------------------------------------------------------
 // Weather

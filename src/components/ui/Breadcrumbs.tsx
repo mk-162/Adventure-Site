@@ -4,26 +4,49 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { ChevronRight, Home } from 'lucide-react';
 
-export function Breadcrumbs() {
+export interface BreadcrumbItem {
+  name: string;
+  href?: string;
+}
+
+interface BreadcrumbsProps {
+  /**
+   * Explicit crumbs, in order. The last item is always rendered as plain text
+   * (current page), regardless of whether it has an href. When omitted, crumbs
+   * are derived from the current pathname.
+   */
+  items?: BreadcrumbItem[];
+  className?: string;
+}
+
+/** Format a URL segment into a human label: "brecon-beacons" -> "Brecon Beacons". */
+function labelFromSegment(segment: string): string {
+  return segment.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+export function Breadcrumbs({ items, className }: BreadcrumbsProps) {
   const pathname = usePathname();
   const domain = process.env.NEXT_PUBLIC_SITE_DOMAIN || 'adventurewales.com';
   const baseUrl = `https://${domain}`;
 
-  // Don't render breadcrumbs on the homepage
-  if (pathname === '/') return null;
+  // Derive crumbs from the pathname when explicit items are not provided.
+  const derived: BreadcrumbItem[] =
+    items ??
+    pathname
+      .split('/')
+      .filter(Boolean)
+      .map((segment, index, all) => ({
+        name: labelFromSegment(segment),
+        href: `/${all.slice(0, index + 1).join('/')}`,
+      }));
 
-  const paths = pathname.split('/').filter(Boolean);
+  // Nothing to show on the homepage / with no crumbs.
+  if (derived.length === 0) return null;
 
-  const breadcrumbs = paths.map((path, index) => {
-    const href = `/${paths.slice(0, index + 1).join('/')}`;
-    // Format label: replace hyphens with spaces and capitalize words
-    const label = path.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
-    return {
-      label,
-      href,
-      isLast: index === paths.length - 1,
-    };
-  });
+  const crumbs = derived.map((item, index) => ({
+    ...item,
+    isLast: index === derived.length - 1,
+  }));
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -35,53 +58,53 @@ export function Breadcrumbs() {
         name: 'Home',
         item: baseUrl,
       },
-      ...breadcrumbs.map((crumb, index) => ({
+      ...crumbs.map((crumb, index) => ({
         '@type': 'ListItem',
         position: index + 2,
-        name: crumb.label,
-        item: `${baseUrl}${crumb.href}`,
+        name: crumb.name,
+        ...(crumb.href ? { item: `${baseUrl}${crumb.href}` } : {}),
       })),
     ],
   };
 
   return (
-    <nav aria-label="Breadcrumb" className="mb-4">
+    <nav aria-label="Breadcrumb" className={className ?? 'mb-4'}>
       {/* JSON-LD for SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      
-      <ol className="flex items-center space-x-1 sm:space-x-2 text-sm text-slate-600">
+
+      <ol className="flex items-center space-x-1 text-sm text-slate-500 sm:space-x-2">
         <li>
-          <Link 
-            href="/" 
-            className="flex items-center hover:text-primary transition-colors"
+          <Link
+            href="/"
+            className="flex items-center transition-colors hover:text-primary"
             title="Home"
           >
             <Home className="h-4 w-4" />
             <span className="sr-only">Home</span>
           </Link>
         </li>
-        
-        {breadcrumbs.map((crumb) => (
-          <li key={crumb.href} className="flex items-center min-w-0">
-            <ChevronRight className="h-4 w-4 text-slate-400 mx-1 flex-shrink-0" />
-            {crumb.isLast ? (
-              <span 
-                className="font-medium text-primary truncate max-w-[150px] sm:max-w-none" 
-                aria-current="page"
-                title={crumb.label}
+
+        {crumbs.map((crumb, index) => (
+          <li key={crumb.href ?? `${crumb.name}-${index}`} className="flex min-w-0 items-center">
+            <ChevronRight className="mx-1 h-4 w-4 flex-shrink-0 text-slate-400" />
+            {crumb.isLast || !crumb.href ? (
+              <span
+                className="max-w-[150px] truncate font-medium text-primary sm:max-w-none"
+                aria-current={crumb.isLast ? 'page' : undefined}
+                title={crumb.name}
               >
-                {crumb.label}
+                {crumb.name}
               </span>
             ) : (
-              <Link 
+              <Link
                 href={crumb.href}
-                className="hover:text-accent-hover transition-colors truncate max-w-[100px] sm:max-w-none"
-                title={crumb.label}
+                className="max-w-[100px] truncate transition-colors hover:text-accent-strong sm:max-w-none"
+                title={crumb.name}
               >
-                {crumb.label}
+                {crumb.name}
               </Link>
             )}
           </li>

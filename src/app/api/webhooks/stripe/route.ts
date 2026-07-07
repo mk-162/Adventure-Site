@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { stripe } from "@/lib/stripe";
+import { stripe, priceIdToTier, periodEndToDate } from "@/lib/stripe";
 import { db } from "@/db";
 import { operators } from "@/db/schema";
 import { eq } from "drizzle-orm";
@@ -61,10 +61,9 @@ export async function POST(req: NextRequest) {
         const customerId = subscription.customer;
         const priceId = subscription.items.data[0]?.price.id;
 
-        // Map price to tier
-        let tier = "free";
-        if (priceId === process.env.STRIPE_ENHANCED_PRICE_ID) tier = "verified"; // Enhanced = verified in DB
-        if (priceId === process.env.STRIPE_PREMIUM_PRICE_ID) tier = "premium";
+        // Map price to tier via the single source of truth (src/lib/stripe.ts)
+        // so the webhook and admin sync can never disagree on tier mapping.
+        const tier = priceIdToTier(priceId);
 
         const operator = await db.query.operators.findFirst({
           where: eq(operators.stripeCustomerId, customerId as string),
@@ -85,9 +84,7 @@ export async function POST(req: NextRequest) {
               claimStatus,
               stripeSubscriptionId: subscription.id,
               stripeSubscriptionStatus: subscription.status,
-              billingPeriodEnd: subscription.current_period_end
-                ? new Date(subscription.current_period_end * 1000)
-                : null,
+              billingPeriodEnd: periodEndToDate(subscription),
             })
             .where(eq(operators.id, operator.id));
 

@@ -2,6 +2,7 @@ import { existsSync, readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 import { redirect } from "next/navigation";
 import { NextRequest } from "next/server";
+import { requireAdminRole, AdminAuthError } from "@/lib/admin-auth";
 
 type CommercialDecisionOption =
   | "strategic_anchor"
@@ -66,6 +67,16 @@ function readDecisionFile(path: string): CommercialDecisionsFile {
 }
 
 export async function POST(request: NextRequest) {
+  let admin;
+  try {
+    admin = await requireAdminRole(["super", "admin", "editor"]);
+  } catch (error) {
+    if (error instanceof AdminAuthError) {
+      redirect(`/admin/content-ops?decision=${error.status === 401 ? "unauthorized" : "forbidden"}`);
+    }
+    throw error;
+  }
+
   const form = await request.formData();
   const decision = form.get("decision")?.toString() as CommercialDecisionOption | undefined;
 
@@ -87,7 +98,7 @@ export async function POST(request: NextRequest) {
     title: form.get("title")?.toString() ?? "",
     route_or_slug: form.get("route_or_slug")?.toString() ?? "",
     decision,
-    decided_by: "MK via Adventure Wales command centre",
+    decided_by: admin.email,
     decided_at: now,
     rationale: "Recorded from dashboard action. Add/expand rationale before downstream production work if needed.",
     next_action: "Route to the appropriate Adventure Wales workflow; do not publish or change production operator tier without review gate.",
@@ -104,18 +115,32 @@ export async function POST(request: NextRequest) {
   const nextDecisions = file.decisions.filter((existing) => existing.content_item_id !== contentItemId);
   nextDecisions.unshift(record);
 
-  writeFileSync(
-    filePath,
-    `${JSON.stringify(
-      {
-        ...file,
-        generatedAt: now,
-        decisions: nextDecisions,
-      },
-      null,
-      2,
-    )}\n`,
-  );
+  // Best-effort local persistence only: on Vercel (and any read-only/ephemeral
+  // filesystem) this write is lost on the next deploy/instance recycle, so it
+  // must never crash the request. Full DB persistence is tracked separately
+  // and out of scope here — this just keeps local dev working while making
+  // the limitation loud in prod logs instead of silently dropping data.
+  try {
+    writeFileSync(
+      filePath,
+      `${JSON.stringify(
+        {
+          ...file,
+          generatedAt: now,
+          decisions: nextDecisions,
+        },
+        null,
+        2,
+      )}\n`,
+    );
+  } catch (error) {
+    console.warn(
+      `[content-ops/decisions] Could not write ${filePath} — this is expected on read-only ` +
+        "filesystems (e.g. Vercel) where local disk writes don't persist. The decision was " +
+        "NOT durably saved; full DB persistence for content-ops decisions is not yet implemented.",
+      error
+    );
+  }
 
   redirect("/admin/content-ops?decision=recorded");
 }

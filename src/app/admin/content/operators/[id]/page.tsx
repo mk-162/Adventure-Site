@@ -7,6 +7,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { upgradeToPremium, downgradeToClaimed } from "@/app/admin/commercial/claims/actions";
 import ImageUpload from "@/components/admin/ImageUpload";
+import PublicationPanel from "./PublicationPanel";
 
 async function getOperator(id: number) {
   const [operator] = await db.select().from(operators).where(eq(operators.id, id));
@@ -22,16 +23,12 @@ async function getFormData() {
   return { allRegions, allActivityTypes };
 }
 
-function slugify(text: string): string {
-  return text
-    .toLowerCase()
-    .trim()
-    .replace(/[^\w\s-]/g, "")
-    .replace(/[\s_-]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
-
-async function updateOperator(id: number, formData: FormData) {
+// NOTE: slug is intentionally NOT recomputed here. The slug is the public
+// URL (/directory/{slug}) — regenerating it from `name` on every save used
+// to silently break bookmarks/links whenever an operator was renamed. The
+// slug is now a read-only field in the form below; deliberate slug changes
+// can be done directly in the database if truly needed.
+async function updateOperator(id: number, currentSlug: string, formData: FormData) {
   "use server";
 
   const name = formData.get("name") as string;
@@ -47,13 +44,10 @@ async function updateOperator(id: number, formData: FormData) {
   const selectedRegions = formData.getAll("regions") as string[];
   const selectedActivityTypes = formData.getAll("activityTypes") as string[];
 
-  const slug = slugify(name);
-
   await db
     .update(operators)
     .set({
       name,
-      slug,
       category: category as any,
       website: website || null,
       email: email || null,
@@ -71,7 +65,7 @@ async function updateOperator(id: number, formData: FormData) {
 
   revalidatePath("/admin/content/operators");
   revalidatePath(`/admin/content/operators/${id}`);
-  revalidatePath(`/directory/${slug}`);
+  revalidatePath(`/directory/${currentSlug}`);
   redirect("/admin/content/operators");
 }
 
@@ -146,7 +140,15 @@ export default async function EditOperatorPage({
         </div>
       </div>
 
-      <form action={updateOperator.bind(null, operatorId)} className="space-y-8">
+      <div className="mb-8">
+        <PublicationPanel
+          operatorId={operatorId}
+          slug={operator.slug}
+          status={operator.status}
+        />
+      </div>
+
+      <form action={updateOperator.bind(null, operatorId, operator.slug)} className="space-y-8">
         {/* Basic Info */}
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
           <h2 className="text-lg font-semibold text-gray-900 mb-4">
@@ -166,7 +168,24 @@ export default async function EditOperatorPage({
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent"
                 placeholder="e.g., Snowdonia Adventures"
               />
-              <p className="text-sm text-gray-500 mt-1">Current slug: {operator.slug}</p>
+            </div>
+
+            <div>
+              <label htmlFor="slug" className="block text-sm font-medium text-gray-700 mb-1">
+                Slug (read-only)
+              </label>
+              <input
+                type="text"
+                id="slug"
+                value={operator.slug}
+                disabled
+                readOnly
+                className="w-full px-4 py-2 border border-gray-200 rounded-lg bg-gray-50 text-gray-500 cursor-not-allowed"
+              />
+              <p className="text-sm text-gray-500 mt-1">
+                The slug is fixed after creation so the public URL (/directory/{operator.slug})
+                never breaks — renaming the operator above will not change it.
+              </p>
             </div>
 
             <div>

@@ -3,6 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { Slot } from "radix-ui"
 
 import { cn } from "@/lib/utils"
+import { getDifficultyColor } from "@/lib/design-tokens"
 
 const badgeVariants = cva(
   "inline-flex items-center justify-center rounded-full border border-transparent font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden",
@@ -18,7 +19,7 @@ const badgeVariants = cva(
           "border-border text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
         ghost: "[a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
         link: "text-primary underline-offset-4 [a&]:hover:underline",
-        accent: "bg-[#ea580c] text-white [a&]:hover:bg-[#c2410c]",
+        accent: "bg-accent text-white [a&]:hover:bg-accent-strong",
       },
       size: {
         default: "px-2 py-0.5 text-xs",
@@ -67,19 +68,8 @@ function DifficultyBadge({
 }: {
   level: "easy" | "moderate" | "difficult" | "advanced" | string;
 }) {
-  const getVariant = () => {
-    const normalized = level.toLowerCase();
-    if (normalized === "easy" || normalized === "beginner") {
-      return "bg-green-100 text-green-700";
-    }
-    if (normalized === "moderate" || normalized === "intermediate") {
-      return "bg-amber-100 text-amber-700";
-    }
-    return "bg-gray-100 text-gray-700";
-  };
-
   return (
-    <Badge className={getVariant()}>
+    <Badge className={getDifficultyColor(level)}>
       {level}
     </Badge>
   );

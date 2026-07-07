@@ -1,8 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { ArrowRight, Mountain, Waves, Bike } from "lucide-react";
 import { useEffect, useState, useCallback } from "react";
+import { ButtonLink } from "@/components/ui/button";
+import { LAUNCH_REGIONS } from "@/lib/launch";
 
 const heroImages = [
   "/images/wales/snowdon-mountain-2ab3d50c.jpg",
@@ -12,13 +13,19 @@ const heroImages = [
   "/images/wales/forest-snowdonia-a143e852.jpg",
 ];
 
-const stats = [
-  { icon: Mountain, value: "78", label: "Adventures" },
-  { icon: Waves, value: "12", label: "Regions" },
-  { icon: Bike, value: "54", label: "Trip Plans" },
-];
+interface HeroSectionProps {
+  /** Count of published adventures within the launch-region scope (real data from page.tsx). */
+  adventureCount: number;
+}
 
-export function HeroSection() {
+export function HeroSection({ adventureCount }: HeroSectionProps) {
+  const regionCount = LAUNCH_REGIONS.size;
+  const stats = [
+    { icon: Mountain, value: String(adventureCount), label: "Adventures" },
+    { icon: Waves, value: String(regionCount), label: "Regions" },
+    { icon: Bike, value: "54", label: "Trip Plans" },
+  ];
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [nextIndex, setNextIndex] = useState(1);
   const [transitioning, setTransitioning] = useState(false);
@@ -68,7 +75,7 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
 
         {/* Content */}
-        <div className="relative z-10 w-full px-4 sm:px-6 pb-28 sm:pb-20 lg:pb-16">
+        <div className="relative z-10 w-full px-4 sm:px-6 pb-28 sm:pb-20">
           <div className="max-w-7xl mx-auto">
             <div className="max-w-3xl">
               <span className="inline-block px-4 py-1.5 bg-accent-hover text-white text-sm font-bold rounded-full mb-4 shadow-lg">
@@ -80,22 +87,21 @@ export function HeroSection() {
                 <span className="text-accent-hover">Properly Wild.</span>
               </h1>
               <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-slate-200 max-w-2xl">
-                78 adventures. 11 regions. Honest info on who it suits, what it costs, and what the locals know.
+                {adventureCount} adventures. {regionCount} regions. Honest info on who it suits, what it costs, and what the locals know.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link
-                  href="/itineraries"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-accent-hover hover:bg-accent-hover/90 text-white font-bold rounded-2xl transition-all shadow-xl hover:shadow-2xl hover:scale-105"
-                >
+                <ButtonLink href="/itineraries" variant="primary" size="lg" className="shadow-xl hover:shadow-2xl">
                   Browse Itineraries
                   <ArrowRight className="h-5 w-5" />
-                </Link>
-                <Link
+                </ButtonLink>
+                <ButtonLink
                   href="/destinations"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-2xl transition-all backdrop-blur-sm border border-white/20"
+                  variant="outline"
+                  size="lg"
+                  className="border-white/20 bg-white/10 text-white backdrop-blur-sm hover:border-white/20 hover:bg-white/20 hover:text-white"
                 >
                   Explore Regions
-                </Link>
+                </ButtonLink>
               </div>
             </div>
 
@@ -129,7 +135,9 @@ export function HeroSection() {
                   setTransitioning(false);
                 }, 1000);
               }}
-              className={`w-2 h-2 rounded-full transition-all ${
+              aria-label={`Show hero image ${i + 1} of ${heroImages.length}`}
+              aria-current={i === currentIndex}
+              className={`w-2 h-2 rounded-full transition-colors ${
                 i === currentIndex
                   ? "bg-accent-hover w-6"
                   : "bg-white/40 hover:bg-white/60"

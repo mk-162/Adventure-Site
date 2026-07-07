@@ -1,6 +1,20 @@
 "use server";
 
+import { db } from "@/db";
+import { events } from "@/db/schema";
+import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
+
+/** Soft-archive: hides the event from the public site without deleting it. */
+export async function archiveEvent(eventId: number) {
+  await db
+    .update(events)
+    .set({ status: "archived" })
+    .where(eq(events.id, eventId));
+
+  revalidatePath("/admin/content/events");
+  revalidatePath(`/admin/content/events/${eventId}`);
+}
 
 export async function ingestEvents() {
   const secret = process.env.ADMIN_SECRET;

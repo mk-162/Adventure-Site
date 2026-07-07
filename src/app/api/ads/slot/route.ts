@@ -77,7 +77,7 @@ export async function GET(request: NextRequest) {
           operatorLogo: operators.logoUrl,
         })
         .from(operators)
-        .where(eq(operators.claimStatus, "premium"))
+        .where(and(eq(operators.claimStatus, "premium"), eq(operators.status, "published")))
         .orderBy(sql`RANDOM()`)
         .limit(1);
 

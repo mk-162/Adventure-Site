@@ -33,9 +33,6 @@ export default async function DashboardPage() {
   const activityCount = await db.select({ count: count() }).from(activities).where(eq(activities.operatorId, operator.id));
   const numActivities = activityCount[0].count;
 
-  // Enquiries (Mock for now as per discovery)
-  const numEnquiries = 0;
-
   return (
     <div className="space-y-8">
       <UpgradeSuccessBanner />
@@ -73,13 +70,13 @@ export default async function DashboardPage() {
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-          <h3 className="text-sm font-medium text-slate-500 uppercase tracking-wider">Recent Enquiries</h3>
+          <h3 className="text-sm font-medium text-slate-500 uppercase tracking-wider">Enquiries</h3>
           <div className="mt-2">
-            <span className="text-3xl font-bold text-slate-900">{numEnquiries}</span>
+            <span className="text-lg font-semibold text-slate-400">Coming soon</span>
           </div>
           <div className="mt-4">
              <Link href="/dashboard/enquiries" className="text-sm text-slate-600 font-medium hover:text-slate-900">
-              View all →
+              Learn more →
             </Link>
           </div>
         </div>
@@ -108,15 +105,9 @@ export default async function DashboardPage() {
         <div className="px-6 py-4 border-b border-slate-200">
           <h3 className="font-bold text-slate-900">Recent Enquiries</h3>
         </div>
-        {numEnquiries === 0 ? (
-           <div className="p-8 text-center text-slate-500">
-               No enquiries yet. Optimize your listing to attract more adventurers!
-           </div>
-        ) : (
-            <div className="p-6">
-                {/* List would go here */}
-            </div>
-        )}
+        <div className="p-8 text-center text-slate-500">
+          Enquiry tracking isn&apos;t live yet — optimize your listing in the meantime to attract more adventurers!
+        </div>
       </div>
     </div>
   );

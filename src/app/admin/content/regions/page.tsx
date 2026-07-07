@@ -2,7 +2,9 @@ import { db } from "@/db";
 import { regions } from "@/db/schema";
 import { desc } from "drizzle-orm";
 import Link from "next/link";
-import { Map, Plus, Edit, Eye, Trash2 } from "lucide-react";
+import { Map, Plus, Edit, Eye } from "lucide-react";
+import { archiveRegion } from "./actions";
+import { ArchiveButton } from "../_components/ArchiveButton";
 
 async function getRegions() {
   return db.select().from(regions).orderBy(desc(regions.createdAt));
@@ -106,12 +108,11 @@ export default async function RegionsAdmin() {
                     >
                       <Edit className="h-4 w-4" />
                     </Link>
-                    <button
-                      className="p-2 text-gray-400 hover:text-red-500"
-                      title="Delete"
-                    >
-                      <Trash2 className="h-4 w-4" />
-                    </button>
+                    <ArchiveButton
+                      action={archiveRegion.bind(null, region.id)}
+                      itemName={region.name}
+                      itemLabel="region"
+                    />
                   </div>
                 </td>
               </tr>

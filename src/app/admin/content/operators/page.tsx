@@ -1,21 +1,51 @@
 import { db } from "@/db";
 import { operators } from "@/db/schema";
-import { desc } from "drizzle-orm";
+import { desc, eq, and } from "drizzle-orm";
 import Link from "next/link";
-import { Users, Plus, Edit, Eye, Trash2, Star, ArrowUp, ArrowDown } from "lucide-react";
+import clsx from "clsx";
+import { Users, Plus, Edit, Eye, Star, ArrowUp, ArrowDown } from "lucide-react";
 import { upgradeToPremium, downgradeToClaimed, setClaimStatus } from "@/app/admin/commercial/claims/actions";
+import { archiveOperator } from "./actions";
+import { ArchiveButton } from "../_components/ArchiveButton";
 
-async function getOperators() {
-  return db.select().from(operators).orderBy(desc(operators.createdAt)).limit(100);
+type StatusFilter = "draft" | "review" | "published" | "archived";
+const STATUS_VALUES: StatusFilter[] = ["draft", "review", "published", "archived"];
+
+async function getOperators(status?: StatusFilter) {
+  const conditions = status ? [eq(operators.status, status)] : [];
+  return db
+    .select()
+    .from(operators)
+    .where(conditions.length ? and(...conditions) : undefined)
+    .orderBy(desc(operators.createdAt))
+    .limit(100);
 }
 
-export default async function OperatorsAdmin() {
-  const allOperators = await getOperators();
+export default async function OperatorsAdmin({
+  searchParams,
+}: {
+  searchParams: Promise<{ status?: string }>;
+}) {
+  const params = await searchParams;
+  const statusFilter: StatusFilter | undefined = STATUS_VALUES.includes(
+    params.status as StatusFilter
+  )
+    ? (params.status as StatusFilter)
+    : undefined;
+
+  const allOperators = await getOperators(statusFilter);
 
   const claimStatusColors: Record<string, string> = {
     stub: "bg-gray-100 text-gray-800",
     claimed: "bg-blue-100 text-blue-800",
     premium: "bg-yellow-100 text-yellow-800",
+  };
+
+  const publishStatusColors: Record<string, string> = {
+    draft: "bg-gray-100 text-gray-800",
+    review: "bg-yellow-100 text-yellow-800",
+    published: "bg-green-100 text-green-800",
+    archived: "bg-red-100 text-red-800",
   };
 
   const typeColors: Record<string, string> = {
@@ -41,6 +71,30 @@ export default async function OperatorsAdmin() {
           <Plus className="h-5 w-5" />
           Add Operator
         </Link>
+      </div>
+
+      {/* Publication status filter */}
+      <div className="flex items-center gap-2 mb-6">
+        {[
+          { label: "All", value: undefined },
+          { label: "Draft", value: "draft" as const },
+          { label: "Review", value: "review" as const },
+          { label: "Published", value: "published" as const },
+          { label: "Archived", value: "archived" as const },
+        ].map((tab) => (
+          <Link
+            key={tab.label}
+            href={tab.value ? `/admin/content/operators?status=${tab.value}` : "/admin/content/operators"}
+            className={clsx(
+              "px-3 py-1.5 rounded-full text-sm font-medium transition-colors",
+              statusFilter === tab.value
+                ? "bg-primary text-white"
+                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+            )}
+          >
+            {tab.label}
+          </Link>
+        ))}
       </div>
 
       {/* Status summary */}
@@ -71,6 +125,9 @@ export default async function OperatorsAdmin() {
               </th>
               <th className="text-left px-6 py-3 text-sm font-medium text-gray-500">
                 Claim Status
+              </th>
+              <th className="text-left px-6 py-3 text-sm font-medium text-gray-500">
+                Publication
               </th>
               <th className="text-left px-6 py-3 text-sm font-medium text-gray-500">
                 Rating
@@ -141,6 +198,15 @@ export default async function OperatorsAdmin() {
                   </div>
                 </td>
                 <td className="px-6 py-4">
+                  <span
+                    className={`px-2 py-1 rounded-full text-xs font-medium ${
+                      publishStatusColors[operator.status] || publishStatusColors.draft
+                    }`}
+                  >
+                    {operator.status}
+                  </span>
+                </td>
+                <td className="px-6 py-4">
                   {operator.googleRating ? (
                     <div className="flex items-center gap-1">
                       <Star className="h-4 w-4 text-yellow-500 fill-current" />
@@ -173,12 +239,11 @@ export default async function OperatorsAdmin() {
                     >
                       <Edit className="h-4 w-4" />
                     </Link>
-                    <button
-                      className="p-2 text-gray-400 hover:text-red-500"
-                      title="Delete"
-                    >
-                      <Trash2 className="h-4 w-4" />
-                    </button>
+                    <ArchiveButton
+                      action={archiveOperator.bind(null, operator.id)}
+                      itemName={operator.name}
+                      itemLabel="operator"
+                    />
                   </div>
                 </td>
               </tr>
@@ -188,7 +253,7 @@ export default async function OperatorsAdmin() {
 
         {allOperators.length === 0 && (
           <div className="text-center py-12 text-gray-500">
-            No operators found. Add your first operator to get started.
+            No operators found{statusFilter ? ` with status "${statusFilter}"` : ""}. Add your first operator to get started.
           </div>
         )}
       </div>

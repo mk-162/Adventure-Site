@@ -1,0 +1,1 @@
+ALTER TABLE "event_saves" ADD CONSTRAINT "unique_event_save" UNIQUE("event_id","session_id");

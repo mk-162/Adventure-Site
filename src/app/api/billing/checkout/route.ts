@@ -3,7 +3,7 @@ import { db } from "@/db";
 import { operators } from "@/db/schema";
 import { eq } from "drizzle-orm";
 import { getOperatorSession } from "@/lib/auth";
-import { stripe } from "@/lib/stripe";
+import { stripe, STRIPE_PRICES } from "@/lib/stripe";
 import { billingCheckoutSchema, validateJsonBody } from "@/lib/api/validate";
 import { getAppUrl } from "@/lib/app-url";
 
@@ -21,6 +21,14 @@ export async function POST(req: NextRequest) {
     const v = await validateJsonBody(req, billingCheckoutSchema);
     if (!v.ok) return v.response;
     const { priceId } = v.data;
+
+    // billingCheckoutSchema only enforces string shape, not which price the
+    // client is allowed to buy — pin the actual allowlist here to the known
+    // tier prices (single source of truth: STRIPE_PRICES).
+    const allowedPriceIds = Object.values(STRIPE_PRICES).filter(Boolean);
+    if (!allowedPriceIds.includes(priceId)) {
+      return NextResponse.json({ error: "Invalid priceId" }, { status: 400 });
+    }
 
     const operator = await db.query.operators.findFirst({
       where: eq(operators.id, session.operatorId),

@@ -4,9 +4,20 @@ import { pageViews, sites } from "@/db/schema";
 import { sql } from "drizzle-orm";
 import { cookies } from "next/headers";
 import { trackViewSchema, validateJsonBody } from "@/lib/api/validate";
+import { checkRateLimit } from "@/lib/rate-limit";
+
+const RATE_LIMIT_IP = { limit: 60, windowMs: 60 * 60 * 1000 }; // 60 per IP per hour
 
 export async function POST(request: Request) {
   try {
+    const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
+    if (!checkRateLimit(`track-view:ip:${ip}`, RATE_LIMIT_IP.limit, RATE_LIMIT_IP.windowMs)) {
+      return NextResponse.json(
+        { error: "Too many requests. Please try again later." },
+        { status: 429, headers: { "Retry-After": String(Math.ceil(RATE_LIMIT_IP.windowMs / 1000)) } }
+      );
+    }
+
     const v = await validateJsonBody(request, trackViewSchema);
     if (!v.ok) return v.response;
     const { pageType, pageSlug, operatorId } = v.data;

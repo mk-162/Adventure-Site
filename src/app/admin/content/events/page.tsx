@@ -2,8 +2,10 @@ import { db } from "@/db";
 import { events, regions } from "@/db/schema";
 import { desc, eq } from "drizzle-orm";
 import Link from "next/link";
-import { Calendar, Plus, Edit, Eye, Trash2, MapPin, Star } from "lucide-react";
+import { Calendar, Plus, Edit, Eye, MapPin, Star } from "lucide-react";
 import { ImportButton } from "./ImportButton";
+import { archiveEvent } from "./actions";
+import { ArchiveButton } from "../_components/ArchiveButton";
 
 async function getEvents() {
   return db
@@ -113,9 +115,11 @@ export default async function EventsAdmin() {
                     <Link href={`/admin/content/events/${event.id}`} className="p-2 text-gray-400 hover:text-accent-hover" title="Edit">
                       <Edit className="h-4 w-4" />
                     </Link>
-                    <button className="p-2 text-gray-400 hover:text-red-500" title="Delete">
-                      <Trash2 className="h-4 w-4" />
-                    </button>
+                    <ArchiveButton
+                      action={archiveEvent.bind(null, event.id)}
+                      itemName={event.name}
+                      itemLabel="event"
+                    />
                   </div>
                 </td>
               </tr>

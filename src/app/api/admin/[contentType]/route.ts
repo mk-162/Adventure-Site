@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db";
 import { validateCmsBody, isAllowedFilterKey } from "@/lib/api/validate";
+import { requireAdminRole, AdminAuthError } from "@/lib/admin-auth";
 import {
   regions,
   activities,
@@ -25,6 +26,26 @@ const tableMap: Record<string, any> = {
   locations,
   answers,
 };
+
+/**
+ * Enforce a minimum admin role for a mutation. Returns a 401/403
+ * NextResponse if the caller doesn't qualify, or null if they do.
+ * proxy.ts already guarantees a *valid* admin_token JWT reaches this route;
+ * this adds the role check on top (proxy doesn't distinguish roles).
+ */
+async function authorize(
+  allowedRoles: Array<"super" | "admin" | "editor" | "viewer">
+): Promise<NextResponse | null> {
+  try {
+    await requireAdminRole(allowedRoles);
+    return null;
+  } catch (error) {
+    if (error instanceof AdminAuthError) {
+      return NextResponse.json({ error: error.message }, { status: error.status });
+    }
+    throw error;
+  }
+}
 
 // Completeness score calculation
 function calculateCompleteness(contentType: string, data: any): number {
@@ -161,6 +182,9 @@ export async function POST(
   request: NextRequest,
   { params }: { params: Promise<{ contentType: string }> }
 ) {
+  const authError = await authorize(["super", "admin", "editor"]);
+  if (authError) return authError;
+
   const { contentType } = await params;
   const table = tableMap[contentType];
 
@@ -201,6 +225,9 @@ export async function PATCH(
   request: NextRequest,
   { params }: { params: Promise<{ contentType: string }> }
 ) {
+  const authError = await authorize(["super", "admin", "editor"]);
+  if (authError) return authError;
+
   const { contentType } = await params;
   const table = tableMap[contentType];
 
@@ -251,6 +278,9 @@ export async function DELETE(
   request: NextRequest,
   { params }: { params: Promise<{ contentType: string }> }
 ) {
+  const authError = await authorize(["super", "admin"]);
+  if (authError) return authError;
+
   const { contentType } = await params;
   const table = tableMap[contentType];
 

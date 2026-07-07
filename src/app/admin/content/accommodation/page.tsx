@@ -2,7 +2,9 @@ import { db } from "@/db";
 import { accommodation, regions } from "@/db/schema";
 import { desc, eq } from "drizzle-orm";
 import Link from "next/link";
-import { Tent, Plus, Edit, Eye, Trash2, Star } from "lucide-react";
+import { Tent, Plus, Edit, Eye, Star } from "lucide-react";
+import { archiveAccommodation } from "./actions";
+import { ArchiveButton } from "../_components/ArchiveButton";
 
 async function getAccommodation() {
   return db
@@ -102,9 +104,11 @@ export default async function AccommodationAdmin() {
                     <Link href={`/admin/content/accommodation/${item.id}`} className="p-2 text-gray-400 hover:text-accent-hover" title="Edit">
                       <Edit className="h-4 w-4" />
                     </Link>
-                    <button className="p-2 text-gray-400 hover:text-red-500" title="Delete">
-                      <Trash2 className="h-4 w-4" />
-                    </button>
+                    <ArchiveButton
+                      action={archiveAccommodation.bind(null, item.id)}
+                      itemName={item.name}
+                      itemLabel="accommodation listing"
+                    />
                   </div>
                 </td>
               </tr>

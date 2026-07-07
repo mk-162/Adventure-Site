@@ -44,7 +44,7 @@ function LoginForm() {
           htmlFor="email"
           className="block text-sm font-medium text-gray-700 mb-1"
         >
-          Email <span className="text-gray-400 font-normal">(optional)</span>
+          Email
         </label>
         <input
           id="email"
@@ -53,6 +53,7 @@ function LoginForm() {
           onChange={(e) => setEmail(e.target.value)}
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-hover focus:border-transparent outline-none"
           placeholder="admin@adventurewales.co.uk"
+          required
           autoComplete="email"
           autoFocus
         />

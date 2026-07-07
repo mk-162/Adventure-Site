@@ -4,12 +4,23 @@ import { eventSaves } from "@/db/schema";
 import { eq, and, sql } from "drizzle-orm";
 import { cookies } from "next/headers";
 import { randomUUID } from "crypto";
-import { eventSaveIdParamSchema } from "@/lib/api/validate";
+import { eventSaveIdParamSchema, isUniqueViolationError } from "@/lib/api/validate";
+import { checkRateLimit } from "@/lib/rate-limit";
+
+const RATE_LIMIT_IP = { limit: 30, windowMs: 60 * 60 * 1000 }; // 30 per IP per hour
 
 export async function POST(
   req: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
+  if (!checkRateLimit(`event-save:ip:${ip}`, RATE_LIMIT_IP.limit, RATE_LIMIT_IP.windowMs)) {
+    return NextResponse.json(
+      { error: "Too many requests. Please try again later." },
+      { status: 429, headers: { "Retry-After": String(Math.ceil(RATE_LIMIT_IP.windowMs / 1000)) } }
+    );
+  }
+
   const parsed = eventSaveIdParamSchema.safeParse(await params);
   if (!parsed.success) {
     return NextResponse.json(
@@ -55,11 +66,17 @@ export async function POST(
         .where(and(eq(eventSaves.eventId, eventId), eq(eventSaves.sessionId, sessionId)));
       saved = false;
     } else {
-      // Save
-      await db.insert(eventSaves).values({
-        eventId,
-        sessionId,
-      });
+      // Save. Two concurrent toggles can both see "not saved" and both try
+      // to insert — the unique_event_save constraint (event_id, session_id)
+      // makes the loser a 23505, which just means the row is already saved.
+      try {
+        await db.insert(eventSaves).values({
+          eventId,
+          sessionId,
+        });
+      } catch (insertError) {
+        if (!isUniqueViolationError(insertError)) throw insertError;
+      }
       saved = true;
     }
 

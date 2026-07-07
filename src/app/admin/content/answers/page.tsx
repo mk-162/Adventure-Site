@@ -2,7 +2,9 @@ import { db } from "@/db";
 import { answers, regions } from "@/db/schema";
 import { desc, eq, count } from "drizzle-orm";
 import Link from "next/link";
-import { MessageCircle, Plus, Edit, Eye, Trash2, Globe } from "lucide-react";
+import { MessageCircle, Plus, Edit, Eye, Globe } from "lucide-react";
+import { archiveAnswer } from "./actions";
+import { ArchiveButton } from "../_components/ArchiveButton";
 
 async function getAnswers() {
   return db
@@ -106,9 +108,11 @@ export default async function AnswersAdmin() {
                     <Link href={`/admin/content/answers/${answer.id}`} className="p-2 text-gray-400 hover:text-accent-hover" title="Edit">
                       <Edit className="h-4 w-4" />
                     </Link>
-                    <button className="p-2 text-gray-400 hover:text-red-500" title="Delete">
-                      <Trash2 className="h-4 w-4" />
-                    </button>
+                    <ArchiveButton
+                      action={archiveAnswer.bind(null, answer.id)}
+                      itemName={answer.question}
+                      itemLabel="FAQ"
+                    />
                   </div>
                 </td>
               </tr>

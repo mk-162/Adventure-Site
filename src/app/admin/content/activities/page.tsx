@@ -2,7 +2,9 @@ import { db } from "@/db";
 import { activities, regions, operators } from "@/db/schema";
 import { desc, eq } from "drizzle-orm";
 import Link from "next/link";
-import { Compass, Plus, Edit, Eye, Trash2 } from "lucide-react";
+import { Compass, Plus, Edit, Eye } from "lucide-react";
+import { archiveActivity } from "./actions";
+import { ArchiveButton } from "../_components/ArchiveButton";
 
 async function getActivities() {
   return db
@@ -116,12 +118,11 @@ export default async function ActivitiesAdmin() {
                     >
                       <Edit className="h-4 w-4" />
                     </Link>
-                    <button
-                      className="p-2 text-gray-400 hover:text-red-500"
-                      title="Delete"
-                    >
-                      <Trash2 className="h-4 w-4" />
-                    </button>
+                    <ArchiveButton
+                      action={archiveActivity.bind(null, activity.id)}
+                      itemName={activity.name}
+                      itemLabel="activity"
+                    />
                   </div>
                 </td>
               </tr>

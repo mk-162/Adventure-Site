@@ -4,6 +4,17 @@ import { users, magicLinks } from "@/db/schema";
 import { eq } from "drizzle-orm";
 import { userLoginSchema, validateJsonBody } from "@/lib/api/validate";
 import { getAppUrl } from "@/lib/app-url";
+import { checkRateLimit } from "@/lib/rate-limit";
+
+const RATE_LIMIT_EMAIL = { limit: 5, windowMs: 60 * 60 * 1000 };  // 5 per email per hour
+const RATE_LIMIT_IP = { limit: 20, windowMs: 60 * 60 * 1000 };    // 20 per IP per hour
+
+function tooManyRequests(windowMs: number) {
+  return NextResponse.json(
+    { error: "Too many requests. Please try again later." },
+    { status: 429, headers: { "Retry-After": String(Math.ceil(windowMs / 1000)) } }
+  );
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -12,6 +23,15 @@ export async function POST(req: NextRequest) {
 
     const { name, newsletterOptIn } = v.data;
     const email = v.data.email.toLowerCase();
+
+    // Rate limiting
+    const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
+    if (!checkRateLimit(`user-login:email:${email}`, RATE_LIMIT_EMAIL.limit, RATE_LIMIT_EMAIL.windowMs)) {
+      return tooManyRequests(RATE_LIMIT_EMAIL.windowMs);
+    }
+    if (!checkRateLimit(`user-login:ip:${ip}`, RATE_LIMIT_IP.limit, RATE_LIMIT_IP.windowMs)) {
+      return tooManyRequests(RATE_LIMIT_IP.windowMs);
+    }
 
     // Find or create user
     let user = await db.query.users.findFirst({

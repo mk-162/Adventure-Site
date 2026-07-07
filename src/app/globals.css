@@ -13,6 +13,8 @@
   --color-primary-light: #2a5470;
   --color-accent: #ea580c;
   --color-accent-hover: #c2410c;
+  /* Semantic alias for new code: the AA-safe orange for text/links/filled buttons */
+  --color-accent-strong: #c2410c;
   --color-accent-light: rgba(234, 88, 12, 0.125);
 }
 
@@ -22,22 +24,25 @@
   --border: oklch(0.929 0.013 255.508);
   --header-height: 64px;
   --bottom-bar-height: 88px;
-  --radius: 0.625rem;
+  --radius: 0.75rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0.042 264.695);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
+  /* Brand values so the shadcn primitives AND the @theme inline utility
+     classes (text-primary / bg-primary / text-accent / ring) resolve to
+     Adventure Wales teal + orange. Fixes the @theme collision. */
+  --primary: #1e3a4c;
+  --primary-foreground: #ffffff;
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --accent: #ea580c;
+  --accent-foreground: #ffffff;
   --destructive: oklch(0.577 0.245 27.325);
   --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --ring: #1e3a4c;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);

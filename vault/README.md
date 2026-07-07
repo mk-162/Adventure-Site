@@ -15,7 +15,7 @@ and cite them.
 ## Map
 
 - **meta/** — [[rules]] — how to use and maintain this vault
-- **context/** — immutable-ish facts: [[brand]], [[site-facts]], [[business-model]], [[market]], [[competitors]], [[growth-playbook]]
+- **context/** — immutable-ish facts: [[brand]], [[site-facts]], [[business-model]], [[design-framework]], [[market]], [[competitors]], [[growth-playbook]]
 - **projects/** — one note per active initiative: [[launch-readiness]], [[content-expansion]]
 - **workflows/** — SOPs: [[link-integrity-crawl]], [[launch-widening]], [[code-quality-gates]], [[operator-verification-publishing]], [[content-ops-pipeline]], [[pseo-content-strategy]], [[image-sourcing]], [[new-site-blueprint]]
 - **tools/** — [[scripts-and-commands]], [[obsidian-skills]]

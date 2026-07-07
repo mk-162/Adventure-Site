@@ -6,28 +6,31 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-semibold transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus:outline-none focus:ring-2 focus:ring-offset-2",
+  // rounded-lg per design framework; single focus-visible recipe (2px ring, 2px offset) sitewide
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
   {
     variants: {
       variant: {
-        default: "bg-primary text-white hover:bg-primary-dark focus:ring-primary",
-        primary: "bg-primary text-white hover:bg-primary-dark focus:ring-primary",
-        accent: "bg-accent-hover text-white hover:bg-accent-hover/90 focus:ring-accent-hover",
-        destructive:
-          "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+        // Framework: the primary CTA is the strong orange filled button.
+        primary: "bg-accent-strong text-white hover:bg-accent-strong/90",
+        // Teal filled button.
+        secondary: "bg-primary text-white hover:bg-primary-dark",
+        // Neutral outline, teal label.
         outline:
-          "border border-gray-200 text-gray-700 hover:border-accent-hover hover:text-accent-hover focus:ring-accent-hover",
-        secondary:
-          "bg-gray-100 text-gray-700 hover:bg-gray-200 focus:ring-gray-300",
-        ghost:
-          "text-gray-600 hover:text-primary hover:bg-gray-100 focus:ring-gray-300",
-        link: "text-primary underline-offset-4 hover:underline",
+          "bg-white border border-border text-primary hover:border-primary hover:bg-slate-50",
+        // Text-only, orange label with a tinted hover.
+        ghost: "text-accent-strong hover:bg-accent-light",
+        link: "text-accent-strong underline-offset-4 hover:underline",
+        // --- Backward-compatible variants (existing consumers) ---
+        default: "bg-primary text-white hover:bg-primary-dark",
+        accent: "bg-accent-strong text-white hover:bg-accent-strong/90",
+        destructive: "bg-destructive text-white hover:bg-destructive/90",
       },
       size: {
-        default: "px-6 py-3 text-sm",
         sm: "px-4 py-2 text-sm",
         md: "px-6 py-3 text-sm",
         lg: "px-8 py-4 text-base",
+        default: "px-6 py-3 text-sm",
         icon: "size-9",
       },
     },
@@ -77,7 +80,7 @@ function ButtonLink({
   external = false,
   children,
   ...props
-}: Omit<React.ComponentProps<typeof Link>, 'href'> & 
+}: Omit<React.ComponentProps<typeof Link>, 'href'> &
   VariantProps<typeof buttonVariants> & {
     href: string
     fullWidth?: boolean
@@ -88,7 +91,7 @@ function ButtonLink({
     fullWidth && "w-full",
     className
   )
-  
+
   if (external) {
     return (
       <a
@@ -102,7 +105,7 @@ function ButtonLink({
       </a>
     )
   }
-  
+
   return (
     <Link
       href={href}

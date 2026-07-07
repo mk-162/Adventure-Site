@@ -20,6 +20,8 @@ import { FeaturedExpert } from "@/components/content/FeaturedExpert";
 import { HonestTruth } from "@/components/content/HonestTruth";
 import { ProTip } from "@/components/content/ProTip";
 import { ImageCredit } from "@/components/content/ImageCredit";
+import { SectionHeader } from "@/components/ui/section-header";
+import { StatTile } from "@/components/ui/stat-tile";
 import ReactMarkdown from "react-markdown";
 
 interface ComboEnrichmentProps {
@@ -31,20 +33,16 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
   const spotsWithCoords = data.spots.filter((s) => s.startPoint?.lat);
 
   return (
-    <div className="space-y-10">
-      {/* Editorial Introduction */}
+    <div className="space-y-12 sm:space-y-16">
+      {/* Editorial Introduction — the tagline already lives in the page hero, so this
+          section is body copy only (no repeated gradient banner). */}
       <section>
-        <div className="bg-gradient-to-br from-primary to-[#2d5a73] rounded-2xl p-6 sm:p-8 text-white">
-          <p className="text-lg sm:text-xl leading-relaxed text-white/90 font-light">
-            {data.strapline}
-          </p>
-        </div>
-        <div className="mt-6 prose prose-slate max-w-none">
+        <div className="max-w-3xl prose prose-slate">
           {data.editorial ? (
             <ReactMarkdown>{data.editorial}</ReactMarkdown>
           ) : (
-            data.introduction.split("\n\n").map((para, i) => (
-              <p key={i} className="text-gray-600 leading-relaxed text-sm sm:text-base">
+            (data.introduction?.split("\n\n") ?? []).map((para, i) => (
+              <p key={i} className="text-slate-600 leading-relaxed text-sm sm:text-base">
                 {para}
               </p>
             ))
@@ -73,19 +71,10 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
 
       {/* Quick Facts */}
       <section>
-        <div className="grid grid-cols-3 gap-3">
-          <div className="bg-white rounded-xl border border-gray-200 p-4 text-center">
-            <div className="text-lg font-bold text-primary">{data.bestSeason}</div>
-            <div className="text-xs text-gray-500 mt-1">Best Season</div>
-          </div>
-          <div className="bg-white rounded-xl border border-gray-200 p-4 text-center">
-            <div className="text-lg font-bold text-primary">{data.difficultyRange}</div>
-            <div className="text-xs text-gray-500 mt-1">Difficulty</div>
-          </div>
-          <div className="bg-white rounded-xl border border-gray-200 p-4 text-center">
-            <div className="text-lg font-bold text-primary">{data.priceRange}</div>
-            <div className="text-xs text-gray-500 mt-1">Price Range</div>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <StatTile label="Best Season" value={data.bestSeason} />
+          <StatTile label="Difficulty" value={data.difficultyRange} />
+          <StatTile label="Price Range" value={data.priceRange} />
         </div>
       </section>
 
@@ -99,18 +88,16 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       {/* Top Spots */}
       {data.spots.length > 0 && (
         <section>
-          <h2 className="text-xl sm:text-2xl font-bold text-primary mb-2">
-            Best Spots for {data.title}
-          </h2>
-          <p className="text-gray-500 text-sm mb-6">
-            {data.spots.length} spots ranked by our team. Each one researched, visited, and honestly reviewed.
-          </p>
+          <SectionHeader
+            title={`Best Spots for ${data.title}`}
+            subtitle={`${data.spots.length} spots ranked by our team. Each one researched, visited, and honestly reviewed.`}
+          />
 
           {/* Map with spot pins */}
           {spotsWithCoords.length > 0 && (
-            <div className="bg-white rounded-xl border border-gray-200 p-4 mb-6">
+            <div className="bg-white rounded-xl border border-border p-4 mb-6">
               <div className="flex items-center gap-2 mb-3">
-                <MapPin className="w-4 h-4 text-accent-hover" />
+                <MapPin className="w-4 h-4 text-accent-strong" />
                 <span className="text-sm font-semibold text-primary">
                   {spotsWithCoords.length} spots on the map
                 </span>
@@ -122,13 +109,13 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
                     href={`https://www.google.com/maps/dir/?api=1&destination=${spot.startPoint!.lat},${spot.startPoint!.lng}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors text-sm"
+                    className="flex items-center gap-2 px-3 py-2 rounded-lg bg-slate-50 hover:bg-slate-100 transition-colors text-sm"
                   >
                     <span className="w-5 h-5 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0">
                       {i + 1}
                     </span>
-                    <span className="text-gray-700 truncate">{spot.name}</span>
-                    <ArrowRight className="w-3 h-3 text-gray-400 ml-auto shrink-0" />
+                    <span className="text-slate-700 truncate">{spot.name}</span>
+                    <ArrowRight className="w-3 h-3 text-slate-400 ml-auto shrink-0" />
                   </a>
                 ))}
               </div>
@@ -153,13 +140,13 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       {/* Where To Eat */}
       {data.whereToEat && data.whereToEat.length > 0 && (
         <section>
-          <h2 className="text-xl sm:text-2xl font-bold text-primary mb-4">Where To Eat</h2>
+          <SectionHeader title="Where To Eat" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {data.whereToEat.map((place, i) => (
-              <div key={i} className="bg-white rounded-xl border border-gray-200 p-5">
+              <div key={i} className="bg-white rounded-xl border border-border p-5">
                 <h3 className="font-bold text-primary text-base mb-2">{place.name}</h3>
-                <p className="text-xs text-gray-500 mb-3">{place.location}</p>
-                <p className="text-sm text-gray-700 mb-3 leading-relaxed">{place.description}</p>
+                <p className="text-xs text-slate-500 mb-3">{place.location}</p>
+                <p className="text-sm text-slate-700 mb-3 leading-relaxed">{place.description}</p>
                 <div className="inline-block bg-accent/10 text-accent text-xs font-semibold px-2 py-1 rounded">
                   Best for: {place.bestFor}
                 </div>
@@ -172,13 +159,13 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       {/* Where To Stay */}
       {data.whereToStay && data.whereToStay.length > 0 && (
         <section>
-          <h2 className="text-xl sm:text-2xl font-bold text-primary mb-4">Where To Stay</h2>
+          <SectionHeader title="Where To Stay" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {data.whereToStay.map((place, i) => (
-              <div key={i} className="bg-white rounded-xl border border-gray-200 p-5">
+              <div key={i} className="bg-white rounded-xl border border-border p-5">
                 <h3 className="font-bold text-primary text-base mb-1">{place.name}</h3>
-                <p className="text-xs text-gray-500 mb-2">{place.location} • {place.priceRange}</p>
-                <p className="text-sm text-gray-700 mb-3 leading-relaxed">{place.description}</p>
+                <p className="text-xs text-slate-500 mb-2">{place.location} • {place.priceRange}</p>
+                <p className="text-sm text-slate-700 mb-3 leading-relaxed">{place.description}</p>
                 <div className="inline-block bg-primary/10 text-primary text-xs font-semibold px-2 py-1 rounded">
                   {place.bestFor}
                 </div>
@@ -191,9 +178,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       {/* Practical Info */}
       {data.practicalInfo && (
         <section>
-          <h2 className="text-xl sm:text-2xl font-bold text-primary mb-6">
-            Need to Know
-          </h2>
+          <SectionHeader title="Need to Know" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Weather */}
             {data.practicalInfo.weather && (
@@ -223,20 +208,20 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
 
             {/* Gear Checklist */}
             {data.practicalInfo.gearChecklist && (
-              <div className="bg-white border border-gray-200 rounded-xl p-5">
+              <div className="bg-white border border-border rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-3">
                   <ShoppingBag className="w-5 h-5 text-primary" />
                   <h3 className="font-bold text-primary text-sm">Gear Checklist</h3>
                 </div>
                 <div className="grid grid-cols-1 gap-1.5">
                   {data.practicalInfo.gearChecklist.slice(0, 8).map((item, i) => (
-                    <div key={i} className="flex items-start gap-2 text-xs text-gray-700">
+                    <div key={i} className="flex items-start gap-2 text-xs text-slate-700">
                       <CheckCircle className="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5" />
                       {item}
                     </div>
                   ))}
                   {data.practicalInfo.gearChecklist.length > 8 && (
-                    <p className="text-xs text-gray-400 mt-1">
+                    <p className="text-xs text-slate-400 mt-1">
                       +{data.practicalInfo.gearChecklist.length - 8} more items
                     </p>
                   )}
@@ -261,16 +246,16 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
 
             {/* Transport / Parking */}
             {(data.practicalInfo.transportNotes || data.practicalInfo.parkingNotes) && (
-              <div className="bg-white border border-gray-200 rounded-xl p-5">
+              <div className="bg-white border border-border rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-3">
                   <MapPin className="w-5 h-5 text-primary" />
                   <h3 className="font-bold text-primary text-sm">Getting There</h3>
                 </div>
                 {data.practicalInfo.transportNotes && (
-                  <p className="text-xs text-gray-700 leading-relaxed mb-2">{data.practicalInfo.transportNotes}</p>
+                  <p className="text-xs text-slate-700 leading-relaxed mb-2">{data.practicalInfo.transportNotes}</p>
                 )}
                 {data.practicalInfo.parkingNotes && (
-                  <p className="text-xs text-gray-700 leading-relaxed">{data.practicalInfo.parkingNotes}</p>
+                  <p className="text-xs text-slate-700 leading-relaxed">{data.practicalInfo.parkingNotes}</p>
                 )}
               </div>
             )}
@@ -281,17 +266,17 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       {/* Local Gear Shops */}
       {data.localDirectory?.gearShops && data.localDirectory.gearShops.length > 0 && (
         <section>
-          <h2 className="text-xl font-bold text-primary mb-4">Local Gear Shops</h2>
+          <SectionHeader title="Local Gear Shops" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {data.localDirectory.gearShops.map((shop, i) => (
-              <div key={i} className="bg-white rounded-xl border border-gray-200 p-4">
+              <div key={i} className="bg-white rounded-xl border border-border p-4">
                 <h3 className="font-bold text-primary text-sm mb-1">{shop.name}</h3>
-                <p className="text-xs text-gray-500 mb-2">{shop.address}</p>
-                <p className="text-xs text-gray-600 mb-3 line-clamp-2">{shop.description}</p>
+                <p className="text-xs text-slate-500 mb-2">{shop.address}</p>
+                <p className="text-xs text-slate-600 mb-3 line-clamp-2">{shop.description}</p>
                 <div className="flex gap-2">
                   {shop.website && (
                     <a href={shop.website} target="_blank" rel="noopener noreferrer"
-                      className="text-xs font-medium text-accent-hover hover:underline">Website</a>
+                      className="text-xs font-medium text-accent-strong hover:underline">Website</a>
                   )}
                   {shop.phone && (
                     <a href={`tel:${shop.phone}`}
@@ -307,23 +292,23 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       {/* Events */}
       {data.events && data.events.length > 0 && (
         <section>
-          <h2 className="text-xl font-bold text-primary mb-4">Events & Races</h2>
+          <SectionHeader title="Events & Races" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {data.events.map((event, i) => (
-              <div key={i} className="bg-white rounded-xl border border-gray-200 p-4 flex gap-4">
-                <div className="w-12 h-12 rounded-lg bg-accent-hover/10 flex items-center justify-center shrink-0">
-                  <Calendar className="w-5 h-5 text-accent-hover" />
+              <div key={i} className="bg-white rounded-xl border border-border p-4 flex gap-4">
+                <div className="w-12 h-12 rounded-lg bg-accent-strong/10 flex items-center justify-center shrink-0">
+                  <Calendar className="w-5 h-5 text-accent-strong" />
                 </div>
                 <div className="min-w-0">
                   <h3 className="font-bold text-primary text-sm">{event.name}</h3>
-                  <p className="text-xs text-gray-500 mb-1">
+                  <p className="text-xs text-slate-500 mb-1">
                     {event.monthTypical} • {event.type}
                     {event.registrationCost ? ` • £${event.registrationCost}` : ""}
                   </p>
-                  <p className="text-xs text-gray-600 line-clamp-2">{event.description}</p>
+                  <p className="text-xs text-slate-600 line-clamp-2">{event.description}</p>
                   {event.website && (
                     <a href={event.website} target="_blank" rel="noopener noreferrer"
-                      className="text-xs font-medium text-accent-hover hover:underline mt-1 inline-block">More info →</a>
+                      className="text-xs font-medium text-accent-strong hover:underline mt-1 inline-block">More info →</a>
                   )}
                 </div>
               </div>
@@ -335,10 +320,10 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       {/* FAQs */}
       {data.faqs && data.faqs.length > 0 && (
         <section>
-          <h2 className="text-xl font-bold text-primary mb-4">
-            Frequently Asked Questions
-          </h2>
-          <FAQAccordion items={data.faqs.map((f) => ({ question: f.question, answer: f.answer }))} />
+          <SectionHeader title="Frequently Asked Questions" />
+          <div className="max-w-3xl">
+            <FAQAccordion items={data.faqs.map((f) => ({ question: f.question, answer: f.answer }))} />
+          </div>
         </section>
       )}
 
@@ -348,38 +333,38 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
         (data.nearbyAlternatives.sameRegion ?? []).filter((alt) => isLaunchCombo(data.regionSlug, alt.activityTypeSlug)).length > 0
       ) && (
         <section>
-          <h2 className="text-xl font-bold text-primary mb-4">Explore More</h2>
+          <SectionHeader title="Explore More" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {data.nearbyAlternatives.sameActivity?.filter((alt) => isLaunchCombo(alt.regionSlug, data.activityTypeSlug)).map((alt, i) => (
               <Link
                 key={`sa-${i}`}
                 href={`/${alt.regionSlug}/${data.activityTypeSlug}`}
-                className="flex items-center gap-3 bg-white rounded-xl border border-gray-200 p-4 hover:border-accent-hover hover:shadow-sm transition-all"
+                className="flex items-center gap-3 bg-white rounded-xl border border-border p-4 hover:border-accent-strong hover:shadow-sm transition-all"
               >
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <p className="font-semibold text-primary text-sm">{alt.label}</p>
-                  <p className="text-xs text-gray-500">Same activity, different region</p>
+                  <p className="text-xs text-slate-500">Same activity, different region</p>
                 </div>
-                <ArrowRight className="w-4 h-4 text-gray-400 ml-auto" />
+                <ArrowRight className="w-4 h-4 text-slate-400 ml-auto" />
               </Link>
             ))}
             {data.nearbyAlternatives.sameRegion?.filter((alt) => isLaunchCombo(data.regionSlug, alt.activityTypeSlug)).map((alt, i) => (
               <Link
                 key={`sr-${i}`}
                 href={`/${data.regionSlug}/${alt.activityTypeSlug}`}
-                className="flex items-center gap-3 bg-white rounded-xl border border-gray-200 p-4 hover:border-accent-hover hover:shadow-sm transition-all"
+                className="flex items-center gap-3 bg-white rounded-xl border border-border p-4 hover:border-accent-strong hover:shadow-sm transition-all"
               >
-                <div className="w-10 h-10 rounded-lg bg-accent-hover/10 flex items-center justify-center shrink-0">
-                  <ArrowRight className="w-5 h-5 text-accent-hover" />
+                <div className="w-10 h-10 rounded-lg bg-accent-strong/10 flex items-center justify-center shrink-0">
+                  <ArrowRight className="w-5 h-5 text-accent-strong" />
                 </div>
                 <div>
                   <p className="font-semibold text-primary text-sm">{alt.label}</p>
-                  <p className="text-xs text-gray-500">Same region, different activity</p>
+                  <p className="text-xs text-slate-500">Same region, different activity</p>
                 </div>
-                <ArrowRight className="w-4 h-4 text-gray-400 ml-auto" />
+                <ArrowRight className="w-4 h-4 text-slate-400 ml-auto" />
               </Link>
             ))}
           </div>
@@ -390,7 +375,7 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       {data.imageCredits && data.imageCredits.length > 0 && (
         <section>
           <h2 className="text-lg font-bold text-primary mb-3">Image Credits</h2>
-          <div className="bg-gray-50 rounded-xl p-4 space-y-2">
+          <div className="bg-slate-50 rounded-xl p-4 space-y-2">
             {data.imageCredits.map((credit, i) => (
               <ImageCredit
                 key={i}

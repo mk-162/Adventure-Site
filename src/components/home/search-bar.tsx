@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { MapPin, Compass, Search, ArrowRight, Mountain, Waves, Footprints } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface Region {
   id: number;
@@ -107,7 +108,7 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
         className={`
           bg-white rounded-2xl shadow-2xl p-4 sm:p-6 border border-slate-100
           transition-shadow duration-300
-          ${focusedField ? 'ring-2 ring-accent-hover/20 shadow-orange-500/10' : ''}
+          ${focusedField ? 'ring-2 ring-accent-strong/20 shadow-accent-strong/10' : ''}
         `}
       >
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_auto] gap-3 sm:gap-4">
@@ -117,7 +118,7 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
               Where
             </label>
             <div className="relative group">
-              <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 text-primary h-5 w-5 transition-colors group-focus-within:text-accent-hover" />
+              <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 text-primary h-5 w-5 transition-colors group-focus-within:text-accent-strong" />
               <select
                 value={where}
                 onChange={(e) => handleRegionChange(e.target.value)}
@@ -125,12 +126,12 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
                 onBlur={() => setFocusedField(null)}
                 onKeyPress={handleKeyPress}
                 className="
-                  w-full h-14 pl-12 pr-4 
-                  bg-slate-50 border-2 border-slate-200 rounded-xl 
+                  w-full h-14 pl-12 pr-4
+                  bg-slate-50 border-2 border-slate-200 rounded-xl
                   font-medium text-base text-slate-900
-                  focus:bg-white focus:border-accent-hover focus:ring-2 focus:ring-accent-hover/20 
+                  focus:bg-white focus:border-accent-strong focus:ring-2 focus:ring-accent-strong/20
                   hover:border-slate-300
-                  transition-all duration-200
+                  transition duration-200
                   appearance-none cursor-pointer
                 "
               >
@@ -150,7 +151,7 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
               What
             </label>
             <div className="relative group">
-              <Compass className="absolute left-4 top-1/2 -translate-y-1/2 text-primary h-5 w-5 transition-colors group-focus-within:text-accent-hover" />
+              <Compass className="absolute left-4 top-1/2 -translate-y-1/2 text-primary h-5 w-5 transition-colors group-focus-within:text-accent-strong" />
               <select
                 value={what}
                 onChange={(e) => setWhat(e.target.value)}
@@ -158,12 +159,12 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
                 onBlur={() => setFocusedField(null)}
                 onKeyPress={handleKeyPress}
                 className="
-                  w-full h-14 pl-12 pr-4 
-                  bg-slate-50 border-2 border-slate-200 rounded-xl 
+                  w-full h-14 pl-12 pr-4
+                  bg-slate-50 border-2 border-slate-200 rounded-xl
                   font-medium text-base text-slate-900
-                  focus:bg-white focus:border-accent-hover focus:ring-2 focus:ring-accent-hover/20 
+                  focus:bg-white focus:border-accent-strong focus:ring-2 focus:ring-accent-strong/20
                   hover:border-slate-300
-                  transition-all duration-200
+                  transition duration-200
                   appearance-none cursor-pointer
                 "
               >
@@ -210,25 +211,17 @@ export function SearchBar({ regions, activityTypes, regionActivityMap = {} }: Se
 
           {/* SEARCH BUTTON */}
           <div className="flex items-end md:pb-0">
-            <button
+            <Button
+              type="button"
               onClick={handleSearch}
-              className="
-                w-full md:w-auto md:px-8 h-14 
-                bg-gradient-to-r from-accent-hover to-orange-600 
-                hover:from-orange-600 hover:to-accent-hover
-                text-white font-bold rounded-xl 
-                flex items-center justify-center gap-2 
-                transition-all duration-200 
-                shadow-lg shadow-orange-500/30
-                hover:shadow-xl hover:shadow-orange-500/40
-                hover:scale-[1.02]
-                active:scale-[0.98]
-              "
+              variant="primary"
+              size="lg"
+              className="h-14 w-full rounded-xl shadow-lg shadow-accent-strong/30 hover:shadow-xl hover:shadow-accent-strong/40 md:w-auto md:px-8"
             >
               <Search className="h-5 w-5" />
               <span className="hidden sm:inline">Search</span>
               <ArrowRight className="h-5 w-5 hidden sm:inline" />
-            </button>
+            </Button>
           </div>
         </div>
 

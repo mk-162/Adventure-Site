@@ -78,13 +78,13 @@ export function HeroSection({ adventureCount }: HeroSectionProps) {
         <div className="relative z-10 w-full px-4 sm:px-6 pb-28 sm:pb-20">
           <div className="max-w-7xl mx-auto">
             <div className="max-w-3xl">
-              <span className="inline-block px-4 py-1.5 bg-accent-hover text-white text-sm font-bold rounded-full mb-4 shadow-lg">
+              <span className="inline-block px-4 py-1.5 bg-accent-strong text-white text-sm font-bold rounded-full mb-4 shadow-lg">
                 Adventure Wales
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight">
                 Wales.
                 <br />
-                <span className="text-accent-hover">Properly Wild.</span>
+                <span className="text-accent">Properly Wild.</span>
               </h1>
               <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-slate-200 max-w-2xl">
                 {adventureCount} adventures. {regionCount} regions. Honest info on who it suits, what it costs, and what the locals know.
@@ -110,7 +110,7 @@ export function HeroSection({ adventureCount }: HeroSectionProps) {
               {stats.map(({ icon: Icon, value, label }) => (
                 <div key={label} className="flex items-center gap-3">
                   <div className="p-2 bg-white/10 rounded-xl backdrop-blur-sm">
-                    <Icon className="h-5 w-5 text-accent-hover" />
+                    <Icon className="h-5 w-5 text-accent-strong" />
                   </div>
                   <div>
                     <p className="text-2xl font-black text-white">{value}</p>
@@ -139,7 +139,7 @@ export function HeroSection({ adventureCount }: HeroSectionProps) {
               aria-current={i === currentIndex}
               className={`w-2 h-2 rounded-full transition-colors ${
                 i === currentIndex
-                  ? "bg-accent-hover w-6"
+                  ? "bg-accent-strong w-6"
                   : "bg-white/40 hover:bg-white/60"
               }`}
             />

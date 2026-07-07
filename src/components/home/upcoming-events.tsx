@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { SectionHeader } from "@/components/ui/section-header";
 
 interface Event {
   id: number;
@@ -55,43 +56,39 @@ export function UpcomingEvents({ events }: UpcomingEventsProps) {
   return (
     <section className="py-12 sm:py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
-          <div>
-            <span className="text-primary font-bold uppercase tracking-wider text-sm">Coming Up</span>
-            <h2 className="mt-2 text-3xl font-bold text-primary">Races & Events Worth Entering</h2>
-          </div>
-          <div className="flex gap-2 overflow-x-auto no-scrollbar">
-            <button 
-              onClick={() => setFilter("all")}
-              className={`shrink-0 px-4 py-2 rounded-full text-sm font-bold transition-colors ${
-                filter === "all" 
-                  ? "bg-primary text-white" 
-                  : "border border-slate-200 text-slate-700 hover:bg-slate-50"
-              }`}
-            >
-              All
-            </button>
-            <button 
-              onClick={() => setFilter("festivals")}
-              className={`shrink-0 px-4 py-2 rounded-full text-sm font-bold transition-colors ${
-                filter === "festivals" 
-                  ? "bg-primary text-white" 
-                  : "border border-slate-200 text-slate-700 hover:bg-slate-50"
-              }`}
-            >
-              Festivals
-            </button>
-            <button 
-              onClick={() => setFilter("races")}
-              className={`shrink-0 px-4 py-2 rounded-full text-sm font-bold transition-colors ${
-                filter === "races" 
-                  ? "bg-primary text-white" 
-                  : "border border-slate-200 text-slate-700 hover:bg-slate-50"
-              }`}
-            >
-              Races
-            </button>
-          </div>
+        <SectionHeader eyebrow="Coming Up" title="Races & Events Worth Entering" />
+
+        <div className="flex gap-2 overflow-x-auto no-scrollbar mb-8">
+          <button
+            onClick={() => setFilter("all")}
+            className={`shrink-0 px-4 py-2 rounded-full text-sm font-bold transition-colors ${
+              filter === "all"
+                ? "bg-primary text-white"
+                : "border border-slate-200 text-slate-700 hover:bg-slate-50"
+            }`}
+          >
+            All
+          </button>
+          <button
+            onClick={() => setFilter("festivals")}
+            className={`shrink-0 px-4 py-2 rounded-full text-sm font-bold transition-colors ${
+              filter === "festivals"
+                ? "bg-primary text-white"
+                : "border border-slate-200 text-slate-700 hover:bg-slate-50"
+            }`}
+          >
+            Festivals
+          </button>
+          <button
+            onClick={() => setFilter("races")}
+            className={`shrink-0 px-4 py-2 rounded-full text-sm font-bold transition-colors ${
+              filter === "races"
+                ? "bg-primary text-white"
+                : "border border-slate-200 text-slate-700 hover:bg-slate-50"
+            }`}
+          >
+            Races
+          </button>
         </div>
 
         {displayEvents.length === 0 ? (
@@ -112,10 +109,10 @@ export function UpcomingEvents({ events }: UpcomingEventsProps) {
                 <Link
                   key={event.id}
                   href={`/events/${event.slug}`}
-                  className={`group flex items-center gap-4 sm:gap-6 p-4 sm:p-6 rounded-2xl hover:bg-slate-50 hover:shadow-md transition-all duration-300 ${index !== 0 ? "border-t border-slate-100" : ""}`}
+                  className={`group flex items-center gap-4 sm:gap-6 p-4 sm:p-6 rounded-2xl hover:bg-slate-50 hover:shadow-md transition duration-300 ${index !== 0 ? "border-t border-slate-100" : ""}`}
                 >
-                  <div className="shrink-0 w-16 sm:w-20 text-center bg-slate-100 group-hover:bg-accent-hover/10 rounded-2xl py-3 transition-colors">
-                    <span className="block text-accent-hover font-bold text-xs sm:text-sm uppercase">
+                  <div className="shrink-0 w-16 sm:w-20 text-center bg-slate-100 group-hover:bg-accent-strong/10 rounded-2xl py-3 transition-colors">
+                    <span className="block text-accent-strong font-bold text-xs sm:text-sm uppercase">
                       {date.month}
                     </span>
                     <span className="block text-2xl sm:text-3xl font-black text-primary">

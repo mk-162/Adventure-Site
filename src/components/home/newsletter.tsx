@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
 
 // Available homepage CTA background images
 const ctaImages = [
@@ -57,12 +58,15 @@ export function Newsletter() {
       style={{ backgroundImage: `url('${bgImage}')` }}
     >
       {/* Gradient overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/85 to-accent-hover/80" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/85 to-accent-strong/80" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="text-center lg:text-left">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white drop-shadow-lg">
+            <p className="text-[13px] font-bold uppercase tracking-wider text-accent-strong">
+              Newsletter
+            </p>
+            <h2 className="mt-1 text-2xl sm:text-3xl lg:text-4xl font-black text-white drop-shadow-lg">
               Weekly Welsh Adventure Intel
             </h2>
             <p className="mt-3 text-lg text-slate-200 drop-shadow-md">
@@ -85,16 +89,18 @@ export function Newsletter() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email address"
-                className="flex-1 px-5 py-4 rounded-2xl bg-white border-2 border-white/80 focus:border-accent-hover focus:ring-2 focus:ring-accent-hover outline-none text-slate-900 placeholder-slate-400 shadow-lg"
+                className="flex-1 px-5 py-4 rounded-2xl bg-white border-2 border-white/80 focus:border-accent-strong focus:ring-2 focus:ring-accent-strong outline-none text-slate-900 placeholder-slate-400 shadow-lg"
                 required
               />
-              <button
+              <Button
                 type="submit"
+                variant="primary"
+                size="lg"
                 disabled={status === "loading"}
-                className="px-8 py-4 bg-accent-hover hover:bg-orange-600 text-white font-bold rounded-2xl transition-all shadow-lg hover:shadow-xl hover:scale-105 whitespace-nowrap disabled:opacity-50 border-2 border-orange-400"
+                className="whitespace-nowrap rounded-2xl shadow-lg hover:shadow-xl"
               >
                 {status === "loading" ? "..." : "Subscribe"}
-              </button>
+              </Button>
             </form>
           )}
         </div>

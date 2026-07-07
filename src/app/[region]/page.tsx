@@ -3,45 +3,53 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { getRegionWithStats, getActivitiesByRegion, getAccommodationByRegion, getOperators, getRegionEntitiesForMap, getActivityTypesForRegion } from "@/lib/queries";
-import { isLaunchRegion, isLaunchCombo, isLaunchBestList } from "@/lib/launch";
+import { isLaunchRegion, isLaunchCombo, isLaunchBestList, LAUNCH_REGIONS } from "@/lib/launch";
 import type { MapMarker } from "@/components/ui/MapView";
 import { TopExperiences } from "@/components/regions/TopExperiences";
+import { TransportSection } from "@/components/regions/TransportSection";
 import { AccommodationCard } from "@/components/cards/accommodation-card";
 import { FallbackImage } from "@/components/ui/FallbackImage";
 import { RegionMap } from "@/components/ui/RegionMap";
 import { ScenicGallery } from "@/components/regions/scenic-gallery";
 import { getBestListsForRegion } from "@/lib/best-list-data";
 import { BestOfCard } from "@/components/content/BestOfCard";
-import { 
-  Map, 
-  Heart, 
-  Share, 
-  ChevronRight, 
-  Footprints, 
-  Users, 
-  Home, 
-  Calendar, 
-  CheckCircle, 
-  ArrowRight, 
-  Star, 
-  Bus, 
-  Cloud, 
-  Backpack, 
-  Plane,
+import { SectionHeader } from "@/components/ui/section-header";
+import { StatTile } from "@/components/ui/stat-tile";
+import { EmptyState } from "@/components/ui/empty-state";
+import { ButtonLink } from "@/components/ui/button";
+import {
+  ChevronRight,
+  Footprints,
+  Users,
+  Home,
+  Calendar,
+  CheckCircle,
+  ArrowRight,
+  Star,
+  Cloud,
+  Backpack,
   Compass,
-  Train,
-  Car,
 } from "lucide-react";
 import { getAllRegions } from "@/lib/queries";
-import { 
-  JsonLd, 
-  createTouristDestinationSchema, 
-  createBreadcrumbSchema 
+import {
+  JsonLd,
+  createTouristDestinationSchema,
+  createBreadcrumbSchema
 } from "@/components/seo/JsonLd";
 import { WeatherWidget } from "@/components/weather/WeatherWidget";
 import { ActivitySeasonGuide } from "@/components/weather/ActivitySeasonGuide";
 import { ThisWeekendWidget } from "@/components/events/ThisWeekendWidget";
 import { BookingWidget } from "@/components/commercial/BookingWidget";
+
+// Static region pages are revalidated hourly; content changes (new activities,
+// operators, events) don't need to be instant, and this cuts per-request DB
+// load from ~6 queries to a cached render.
+export const revalidate = 3600;
+
+/** Pre-render every launch-gated region at build time. */
+export function generateStaticParams() {
+  return Array.from(LAUNCH_REGIONS).map((region) => ({ region }));
+}
 
 interface RegionPageProps {
   params: Promise<{ region: string }>;
@@ -91,331 +99,6 @@ const defaultPlanContent = {
   gettingThere: "Check local transport links and drive times from major cities. Many regions have good rail connections.",
   bestTime: "Spring and autumn offer pleasant weather with fewer crowds. Summer is warmest but busiest.",
   essentialGear: "Waterproof jacket and layers are essential year-round. For hiking, bring sturdy boots, a map, and extra food/water.",
-};
-
-// Static transport data per region for Getting There section
-interface TransportInfo {
-  trainStations: { name: string; info: string }[];
-  busServices: { name: string; info: string }[];
-  airports: { name: string; info: string }[];
-  driving: { route: string; info: string }[];
-  carFree: string;
-}
-
-const regionTransport: Record<string, TransportInfo> = {
-  snowdonia: {
-    trainStations: [
-      { name: "Bangor (Gwynedd)", info: "Avanti West Coast from London Euston (~3 hrs 20 min direct). Transport for Wales from Manchester (~2 hrs via Chester). Bus 85 connects to Llanberis." },
-      { name: "Betws-y-Coed", info: "Conwy Valley line from Llandudno Junction (~30 min). Heart of Snowdonia — ideal for walks and mountain biking." },
-      { name: "Porthmadog", info: "Cambrian Coast line from Machynlleth/Shrewsbury. Also connects to Ffestiniog & Welsh Highland heritage railways." },
-      { name: "Llandudno Junction", info: "North Wales Main Line hub. Change here for Conwy Valley line to Betws-y-Coed & Blaenau Ffestiniog." },
-    ],
-    busServices: [
-      { name: "Snowdon Sherpa S1", info: "Pen y Pass circular via Llanberis & Nant Peris. Runs every 30 min on weekends & bank holidays, hourly other days." },
-      { name: "Snowdon Sherpa S2", info: "Betws-y-Coed to Pen y Pass via Capel Curig. Approximately hourly service." },
-      { name: "Bus 85", info: "Bangor to Llanberis, roughly every 2 hours (every 3 hours on Sundays)." },
-      { name: "Bus 88", info: "Caernarfon to Llanberis, approximately hourly (every 2 hours on Sundays)." },
-      { name: "Traws Cymru T2", info: "Bangor to Aberystwyth via Caernarfon, Porthmadog, Dolgellau & Machynlleth. Long-distance scenic route." },
-      { name: "fflecsi Conwy Valley", info: "On-demand bus service covering the Conwy Valley area. Book via the fflecsi app." },
-    ],
-    airports: [
-      { name: "Liverpool John Lennon", info: "~1.5 hrs drive via A55 (85 miles)" },
-      { name: "Manchester", info: "~2 hrs drive via M56/A55 (105 miles). Direct trains from the airport to Bangor via Chester." },
-    ],
-    driving: [
-      { route: "From London", info: "~5 hrs via M40/M6/A55 or M1/M6/A55 (280 miles). A5 through Snowdonia is scenic but slower." },
-      { route: "From Birmingham", info: "~2.5 hrs via M54/A5 (130 miles). The A5 route is scenic through Llangollen and Betws-y-Coed." },
-      { route: "From Manchester", info: "~2 hrs via M56/A55 (100 miles). Fastest route to north Snowdonia." },
-      { route: "Parking: Pen y Pass", info: "Pre-book required Apr–Oct (£20/8hrs via JustPark). Only 68 spaces — sells out fast on weekends. Park & Ride at Nant Peris is cheaper." },
-      { route: "Parking: Llanberis", info: "Several pay & display car parks in town. Closest to Snowdon path is opposite the railway station." },
-    ],
-    carFree: "Yes — genuinely viable. Train to Bangor or Betws-y-Coed, then Snowdon Sherpa buses connect all major trailheads. Heritage railways (Welsh Highland, Ffestiniog) add scenic travel options between Caernarfon, Beddgelert and Porthmadog.",
-  },
-  pembrokeshire: {
-    trainStations: [
-      { name: "Haverfordwest", info: "Main Pembrokeshire hub. Transport for Wales service every 2 hours to Swansea, Cardiff & Manchester Piccadilly. ~4.5 hrs from London (change at Swansea)." },
-      { name: "Tenby", info: "On the Pembroke Dock branch. Direct services to Swansea (~1.5 hrs) & Cardiff (~2.5 hrs). Change at Swansea for London Paddington (~5 hrs total)." },
-      { name: "Milford Haven", info: "Western terminus. Same line as Haverfordwest — trains every 2 hours to Swansea/Cardiff/Manchester." },
-      { name: "Fishguard & Goodwick", info: "Stena Line ferry port for Ireland (Rosslare). Occasional connecting rail services." },
-      { name: "Pembroke Dock", info: "Branch line terminus. Irish Ferries to Rosslare. Trains via Tenby to Swansea." },
-    ],
-    busServices: [
-      { name: "400 Puffin Shuttle", info: "St Davids to Marloes via coast (summer only, May–Sep). Perfect for Coast Path walking." },
-      { name: "387/388 Coastal Cruiser", info: "Pembroke Dock to Angle Peninsula. Year-round (reduced winter timetable Oct–May)." },
-      { name: "403 Celtic Coaster", info: "Circular route around St Davids peninsula (summer only)." },
-      { name: "404 Strumble Shuttle", info: "Fishguard to St Davids via Strumble Head (summer only)." },
-      { name: "Traws Cymru T5", info: "Aberystwyth to Haverfordwest via Cardigan, Fishguard & St Davids. Key long-distance coastal link." },
-      { name: "fflecsi Pembrokeshire", info: "On-demand buses covering zones around Haverfordwest, Fishguard & Poppit. Book via the fflecsi app." },
-    ],
-    airports: [
-      { name: "Cardiff", info: "~2.5 hrs drive via M4/A48 (140 miles)" },
-      { name: "Bristol", info: "~3 hrs drive via M4/M48/A48 (160 miles)" },
-    ],
-    driving: [
-      { route: "From London", info: "~4.5 hrs via M4/A48/A40 (260 miles)" },
-      { route: "From Cardiff", info: "~2.5 hrs via M4/A48/A40 (150 miles)" },
-      { route: "From Swansea", info: "~1.5 hrs via A48/A40 (80 miles)" },
-      { route: "Parking: St Davids", info: "Oriel y Parc car park: £1.50/hr, £6/day (Mar–Oct). Free under 30 min." },
-      { route: "Parking: Tenby", info: "Multi-storey and South Beach car parks. Can be very busy in summer — arrive early or use Park & Ride." },
-    ],
-    carFree: "Possible in summer when seasonal coastal buses run. The Puffin Shuttle, Celtic Coaster and Strumble Shuttle connect key coastal spots. In winter, services are very limited — a car is recommended. Train to Tenby works well as a base.",
-  },
-  "brecon-beacons": {
-    trainStations: [
-      { name: "Abergavenny", info: "Main gateway — 25 min from Newport, ~3 hrs from London Paddington, ~3 hrs 20 min from Manchester. Served by Transport for Wales & CrossCountry." },
-      { name: "Merthyr Tydfil", info: "Northern gateway on Cardiff Valley Lines. Every 15–30 min from Cardiff Central (~1 hr). Bus T4 continues to Brecon." },
-      { name: "Llandovery", info: "Western gateway on the scenic Heart of Wales line (Swansea to Shrewsbury, 121 miles). 4 trains per day each way." },
-    ],
-    busServices: [
-      { name: "Traws Cymru T4", info: "Cardiff to Newtown via Merthyr Tydfil, Storey Arms & Brecon. 'The route with a view' — free Wi-Fi, comfy seats. Stops at Storey Arms for Pen y Fan." },
-      { name: "X43/43", info: "Brecon to Abergavenny via Crickhowell & Talybont-on-Usk. Follows the River Usk through the heart of the park." },
-      { name: "X4", info: "Hereford to Cardiff via Abergavenny & Merthyr Tydfil. Useful cross-park connection." },
-      { name: "T14", info: "Cardiff to Brecon via Storey Arms. Alternative route to T4 for Pen y Fan access." },
-    ],
-    airports: [
-      { name: "Cardiff", info: "~1 hr drive via A470 (40 miles)" },
-      { name: "Bristol", info: "~1.5 hrs drive via M4/M48 (70 miles)" },
-    ],
-    driving: [
-      { route: "From London", info: "~3.5 hrs via M4/A470 (200 miles). Or via M40/A40 to Brecon." },
-      { route: "From Cardiff", info: "~1 hr via A470 (40 miles). A470 is scenic but can be slow behind lorries." },
-      { route: "From Birmingham", info: "~2.5 hrs via M5/M50/A40 through Hereford (120 miles)" },
-      { route: "Parking: Storey Arms", info: "Small lay-by car park on A470 for Pen y Fan — fills very early on weekends. Arrive before 8am or take the T4 bus." },
-      { route: "Parking: Brecon", info: "Several town car parks. Brecon Canal car park is free and walkable to town centre." },
-    ],
-    carFree: "Yes — surprisingly viable. Train to Abergavenny or Merthyr Tydfil, then buses penetrate the park. The T4 bus from Cardiff stops right at Storey Arms for Pen y Fan. The X43 bus connects Brecon with Abergavenny along the Usk Valley. Cycling the Monmouthshire & Brecon Canal towpath is flat and scenic.",
-  },
-  anglesey: {
-    trainStations: [
-      { name: "Holyhead", info: "End of the North Wales Main Line. Avanti West Coast from London Euston (~3.5 hrs direct). Irish ferry port (Stena Line & Irish Ferries to Dublin)." },
-      { name: "Bangor", info: "Mainland gateway — cross the Menai Bridge to Anglesey. ~3 hrs 20 min from London Euston, ~2 hrs from Manchester." },
-      { name: "Llanfairpwll", info: "Llanfairpwllgwyngyll — the famous long station name. Central Anglesey, on the main line between Bangor & Holyhead." },
-      { name: "Bodorgan", info: "Small request stop on the main line. Walking distance to Newborough beach and forest." },
-    ],
-    busServices: [
-      { name: "4/4A/4X", info: "Bangor to Holyhead via Llangefni (Arriva). Main bus route across the island, roughly every 30 min." },
-      { name: "53/57/58", info: "Bangor to Beaumaris and eastern Anglesey (Arriva). Roughly every 20–30 min Mon–Sat." },
-      { name: "62", info: "Llangefni to Amlwch via north Anglesey." },
-      { name: "1Bws day ticket", info: "£7 unlimited day travel on all buses in North Wales — great value for island hopping." },
-    ],
-    airports: [
-      { name: "Liverpool John Lennon", info: "~1.5 hrs drive via A55/M53 (95 miles)" },
-      { name: "Manchester", info: "~2.5 hrs drive via M56/A55 (130 miles). Direct trains from airport." },
-    ],
-    driving: [
-      { route: "From London", info: "~5.5 hrs via M40/M6/A55 then A55 across to Anglesey (300 miles)" },
-      { route: "From Birmingham", info: "~3 hrs via M54/A5/A55 (150 miles)" },
-      { route: "From Manchester", info: "~2.5 hrs via M56/A55 (120 miles)" },
-      { route: "From Liverpool", info: "~2 hrs via M53/A55 (100 miles)" },
-      { route: "Crossing", info: "Both Britannia Bridge (A55) and Menai Suspension Bridge (A5) connect the mainland to Anglesey. No toll." },
-    ],
-    carFree: "Challenging but possible for the main towns. Bus 4/4A connects Bangor–Llangefni–Holyhead regularly. Buses to Beaumaris run frequently. However, remote beaches and coastal areas are difficult to reach without a car. Cycling is excellent on quiet lanes.",
-  },
-  "gower": {
-    trainStations: [
-      { name: "Swansea", info: "Main gateway to Gower. GWR direct from London Paddington (~2 hrs 40 min fastest). Transport for Wales from Cardiff (~1 hr) & Manchester (~4 hrs). 20 min drive to Mumbles." },
-      { name: "Llanelli", info: "Western approach. Transport for Wales & GWR services. Useful for north Gower via Gowerton." },
-      { name: "Gowerton", info: "Small station between Swansea & Llanelli. Closest rail point to north Gower villages like Penclawdd." },
-    ],
-    busServices: [
-      { name: "118", info: "Swansea to Rhossili via Killay, Parkmill, Reynoldston & Port Eynon. Key route to south Gower beaches. Hourly on weekdays." },
-      { name: "116", info: "Swansea to Llangennith via Gowerton, Penclawdd, Llanrhidian & Llanmadoc. Serves north Gower." },
-      { name: "117", info: "Parkmill to Scurlage via Oxwich, Horton & Port Eynon. Links south Gower beaches." },
-      { name: "114", info: "Swansea to Rhossili via Mumbles, Bishopston & Parkmill. Scenic southern coastal route." },
-      { name: "Gower Explorer network", info: "One of the most comprehensive rural bus networks in Wales. NAT Group operates most routes from Swansea." },
-    ],
-    airports: [
-      { name: "Cardiff", info: "~1 hr drive via M4 (45 miles)" },
-      { name: "Bristol", info: "~2 hrs drive via M4/M48 (95 miles)" },
-    ],
-    driving: [
-      { route: "From London", info: "~3.5 hrs via M4 (200 miles). Exit M4 J42 for Gower." },
-      { route: "From Cardiff", info: "~1 hr via M4 (45 miles)" },
-      { route: "From Bristol", info: "~1.5 hrs via M4/M48 (90 miles)" },
-      { route: "From Birmingham", info: "~2.5 hrs via M5/M4 (130 miles)" },
-      { route: "Parking: Rhossili", info: "National Trust car park at Rhossili (free for NT members). £7/day otherwise. Fills early in summer." },
-      { route: "Parking: general", info: "Car parks at Port Eynon, Oxwich, Three Cliffs (Parkmill) and Mumbles. Most are pay & display ~£3–6/day." },
-    ],
-    carFree: "Yes — Gower is one of the best rural areas in Wales for car-free visits. The Gower Explorer bus network from Swansea reaches all main beaches. Route 118 to Rhossili and 116 to Llangennith run hourly on weekdays. Sunday services run in high summer. The swanseabaywithoutacar.co.uk website has detailed planning info.",
-  },
-  "mid-wales": {
-    trainStations: [
-      { name: "Aberystwyth", info: "Cambrian line terminus. ~3 hrs 20 min from Birmingham International, ~1 hr 50 min from Shrewsbury. Near-hourly service. Change at Shrewsbury for London/Manchester." },
-      { name: "Machynlleth", info: "Junction for Cambrian & Cambrian Coast lines. Change here for Barmouth, Harlech and Pwllheli." },
-      { name: "Borth", info: "Small coastal station on the Cambrian line, north of Aberystwyth. Serves the Dyfi estuary area." },
-    ],
-    busServices: [
-      { name: "Traws Cymru T1/T1C", info: "T1: Carmarthen to Aberystwyth via Lampeter & Aberaeron. T1C: Cardiff to Aberystwyth (long-distance, ~4.5 hrs)." },
-      { name: "Traws Cymru T5", info: "Aberystwyth to Haverfordwest via New Quay, Aberaeron, Cardigan, Fishguard & St Davids. Scenic coastal route." },
-      { name: "Traws Cymru T2", info: "Aberystwyth to Bangor via Machynlleth, Dolgellau, Porthmadog & Caernarfon. Cross-Wales scenic link." },
-      { name: "X50", info: "Aberystwyth to Cardigan via Aberaeron. Regular local service along the coast." },
-    ],
-    airports: [
-      { name: "Birmingham", info: "~2.5 hrs drive via A44/A458 (120 miles). Direct trains from airport to Aberystwyth via Shrewsbury." },
-      { name: "Cardiff", info: "~3 hrs drive via A487/A470 (130 miles)" },
-    ],
-    driving: [
-      { route: "From London", info: "~5 hrs via M40/A44 through Leominster & Rhayader (250 miles). Scenic cross-country drive." },
-      { route: "From Birmingham", info: "~2.5 hrs via A458 through Welshpool & Machynlleth (120 miles)" },
-      { route: "From Cardiff", info: "~3 hrs via A470 through Brecon & Rhayader (130 miles)" },
-      { route: "From Swansea", info: "~2 hrs via A487 (90 miles)" },
-      { route: "Parking: Aberystwyth", info: "Several town car parks. South promenade pay & display or Park Avenue multi-storey. Street parking limited." },
-    ],
-    carFree: "Feasible with planning. Train to Aberystwyth is straightforward and scenic. Traws Cymru buses T1, T2, and T5 connect to other towns. Coastal villages like New Quay and Aberaeron reachable by T5/X50 bus. Remote inland areas are harder without a car.",
-  },
-  "south-wales": {
-    trainStations: [
-      { name: "Cardiff Central", info: "Main hub — GWR from London Paddington (~1 hr 50 min fastest). Transport for Wales from Manchester (~3.5 hrs), Birmingham (~2 hrs). Gateway to all valley lines." },
-      { name: "Merthyr Tydfil", info: "Valley Lines terminus. Every 15–30 min from Cardiff (~1 hr). Being upgraded as part of South Wales Metro with new Stadler tram-trains." },
-      { name: "Pontypridd", info: "Central valleys junction. Lines branch to Treherbert (Rhondda), Aberdare and Merthyr Tydfil." },
-      { name: "Treherbert", info: "Rhondda Fawr valley terminus. ~50 min from Cardiff via Pontypridd. Access to the Rhigos and Blaenrhondda walks." },
-      { name: "Aberdare", info: "Cynon Valley terminus. ~45 min from Cardiff. Gateway to Dare Valley Country Park." },
-      { name: "Ebbw Vale Town", info: "Ebbw Vale line from Cardiff/Newport. ~1 hr from Cardiff. Planned extension to Abertillery." },
-    ],
-    busServices: [
-      { name: "South Wales Metro", info: "New Stadler tram-trains being phased in on Valley Lines. 4 trains per hour planned for Aberdare, Merthyr & Treherbert lines." },
-      { name: "Stagecoach South Wales", info: "Extensive bus network across the valleys. Routes linking Merthyr, Pontypridd, Caerphilly and beyond." },
-      { name: "Traws Cymru T4", info: "Cardiff to Newtown via Merthyr Tydfil & Brecon. Links the valleys to Mid Wales." },
-      { name: "Explore Cardiff & Valleys ticket", info: "Transport for Wales day rover — unlimited train & bus travel in the Cardiff & Valleys area." },
-    ],
-    airports: [
-      { name: "Cardiff", info: "~30 min drive from valleys via A4232/M4. Wales' main international airport." },
-      { name: "Bristol", info: "~1 hr drive via M4/M48 (50 miles). Wider range of flights." },
-    ],
-    driving: [
-      { route: "From London", info: "~3 hrs via M4 (170 miles) to Cardiff, then A470/A4059 into the valleys." },
-      { route: "From Bristol", info: "~1 hr via M4/M48 (50 miles)" },
-      { route: "From Birmingham", info: "~2 hrs via M5/M50/M4 (110 miles)" },
-      { route: "Heads of the Valleys Road", info: "A465 links Abergavenny to Neath across the north of the valleys. Major dual carriageway upgrade ongoing." },
-    ],
-    carFree: "Excellent — the best-connected region in Wales by public transport. Valley Lines trains run frequently from Cardiff to Merthyr Tydfil, Treherbert, Aberdare, Rhymney & Ebbw Vale. New South Wales Metro tram-trains increasing frequency to every 15 min. Buses fill gaps between valleys.",
-  },
-  "north-wales": {
-    trainStations: [
-      { name: "Rhyl", info: "North Wales Main Line. Avanti West Coast from London Euston (~2 hrs 40 min direct). Transport for Wales from Manchester (~1.5 hrs). Major resort town." },
-      { name: "Colwyn Bay", info: "North Wales Main Line. ~10 min from Rhyl. Transport for Wales and Avanti services." },
-      { name: "Llandudno", info: "Branch line from Llandudno Junction (~10 min). Transport for Wales from Manchester (~2 hrs 15 min). Victorian resort town." },
-      { name: "Llandudno Junction", info: "Key hub — change here for Llandudno branch and Conwy Valley line to Betws-y-Coed & Blaenau Ffestiniog." },
-      { name: "Prestatyn", info: "North Wales Main Line. Start/end of the Offa's Dyke Path. ~2.5 hrs from London Euston." },
-      { name: "Conwy", info: "Small station on the North Wales Main Line. Walking distance to Conwy Castle and town walls." },
-    ],
-    busServices: [
-      { name: "12/X12", info: "Rhyl to Llandudno (Arriva). Regular coastal service." },
-      { name: "13", info: "Llandudno to Prestatyn via Colwyn Bay & Rhyl (Arriva). Coastal route." },
-      { name: "14/15", info: "Llandudno to Llysfaen/Conwy (Arriva). Local connecting services." },
-      { name: "Traws Cymru T2", info: "Bangor to Aberystwyth — useful for connecting to Snowdonia from the coast." },
-      { name: "Traws Cymru T3", info: "Barmouth to Wrexham via Dolgellau, Bala & Corwen. Connects coast to inland North Wales." },
-    ],
-    airports: [
-      { name: "Liverpool John Lennon", info: "~1 hr drive via A55/M53 (55 miles)" },
-      { name: "Manchester", info: "~1.5 hrs drive via M56/A55 (80 miles). Direct train services from the airport." },
-    ],
-    driving: [
-      { route: "From London", info: "~4.5 hrs via M40/M6/A55 (260 miles). A55 expressway runs the length of the coast." },
-      { route: "From Manchester", info: "~1.5 hrs via M56/A55 (80 miles). Fastest route to North Wales." },
-      { route: "From Liverpool", info: "~1 hr via M53/A55 (60 miles)" },
-      { route: "From Birmingham", info: "~2.5 hrs via M54/A5/A483/A55 (140 miles)" },
-      { route: "A55 Expressway", info: "Dual carriageway running along the entire North Wales coast from Chester to Holyhead. Fast and well-maintained." },
-    ],
-    carFree: "Yes — very practical. The North Wales Main Line provides excellent rail links along the coast. Regular Arriva buses connect all resort towns. Llandudno and Rhyl have direct trains from London and Manchester. Great Orme can be reached by tram from Llandudno.",
-  },
-  "wye-valley": {
-    trainStations: [
-      { name: "Chepstow", info: "Southern gateway. Hourly Cheltenham Spa–Cardiff service + CrossCountry trains every 2 hrs (Nottingham–Cardiff). Change at Newport for London Paddington (~2.5 hrs total)." },
-      { name: "Lydney", info: "Forest of Dean side. On the Cheltenham–Cardiff line. Home of the Dean Forest Railway heritage line." },
-      { name: "Abergavenny", info: "Northern gateway to the Wye Valley. ~3 hrs from London Paddington. Bus X4 connects to Monmouth." },
-    ],
-    busServices: [
-      { name: "69", info: "Chepstow to Monmouth via Tintern (Newport Bus). ~48 min journey. Runs Mon–Sat, following the Wye Valley." },
-      { name: "65", info: "Wye Valley High Road route via Chepstow. Mon–Sat service." },
-      { name: "X4", info: "Hereford to Cardiff via Abergavenny. Useful for the northern Wye Valley." },
-      { name: "National Express", info: "Coach services to Chepstow, Monmouth & Ross-on-Wye from London (~2 hrs 45 min)." },
-    ],
-    airports: [
-      { name: "Bristol", info: "~45 min drive via M48/M4 (35 miles). Closest major airport." },
-      { name: "Cardiff", info: "~45 min drive via M4/M48 (40 miles)" },
-      { name: "Birmingham", info: "~1.5 hrs drive via M5/M50 (90 miles)" },
-    ],
-    driving: [
-      { route: "From London", info: "~2.5 hrs via M4/M48 (150 miles). One of the closest Welsh adventure areas to London." },
-      { route: "From Bristol", info: "~45 min via M48 (30 miles). Cross the Prince of Wales Bridge (no toll westbound)." },
-      { route: "From Birmingham", info: "~1.5 hrs via M5/M50 (90 miles) through Ross-on-Wye." },
-      { route: "From Cardiff", info: "~45 min via M4/M48 (35 miles)" },
-      { route: "Parking: Tintern", info: "Tintern Old Station car park (free). Limited roadside parking in the village." },
-    ],
-    carFree: "Possible but limited. Bus 69 from Chepstow follows the Wye Valley through Tintern to Monmouth (Mon–Sat). Train to Chepstow is easy from Bristol, Cardiff or Gloucester. For deeper exploration of the valley and Forest of Dean, a car is helpful. The Wye Valley Walk is accessible from Chepstow station on foot.",
-  },
-  "llyn-peninsula": {
-    trainStations: [
-      { name: "Pwllheli", info: "Cambrian Coast line terminus. Scenic route from Machynlleth/Shrewsbury (~3 hrs). Change at Shrewsbury for London/Birmingham." },
-      { name: "Criccieth", info: "Cambrian Coast line. Small coastal town, good base for south Llŷn." },
-      { name: "Porthmadog", info: "Cambrian Coast line + Ffestiniog Railway. Junction for Snowdonia and Llŷn. ~3 hrs from Shrewsbury." },
-      { name: "Abererch", info: "Request stop between Pwllheli and Porthmadog. Quiet access to southern beaches." },
-    ],
-    busServices: [
-      { name: "1/1A", info: "Caernarfon to Pwllheli via Clynnog Fawr, Trefor & Nefyn. The main north coast route, roughly hourly Mon–Sat." },
-      { name: "17/18", info: "Pwllheli to Aberdaron via Llanbedrog & Abersoch. Serves the southern tip. Limited service." },
-      { name: "Traws Cymru T2", info: "Bangor to Aberystwyth via Caernarfon & Porthmadog. Connects Llŷn to Snowdonia and Mid Wales." },
-      { name: "Bws Gwynedd", info: "Local demand-responsive service covering rural Llŷn. Book via app or phone." },
-    ],
-    airports: [
-      { name: "Liverpool John Lennon", info: "~2.5 hrs drive via A55/A487 (110 miles)" },
-      { name: "Manchester", info: "~3 hrs drive via M56/A55/A487 (130 miles)" },
-    ],
-    driving: [
-      { route: "From London", info: "~5.5 hrs via M40/M6/A55/A487 (290 miles)" },
-      { route: "From Birmingham", info: "~3.5 hrs via M54/A5/A487 (150 miles)" },
-      { route: "From Manchester", info: "~3 hrs via M56/A55/A487 (130 miles)" },
-      { route: "Parking: Aberdaron", info: "Pay & display car park near the beach. £5/day. Can fill up in peak summer." },
-      { route: "Parking: Porth Neigwl", info: "Small National Trust car park (free for NT members). Very limited spaces — arrive early." },
-    ],
-    carFree: "Difficult. Bus services exist but are infrequent, especially to the western tip. Train to Pwllheli works as a base, but exploring Aberdaron, Hell's Mouth (Porth Neigwl), and the coastal path requires either a car, cycling, or a lot of patience with bus timetables. Cycling the quiet lanes is excellent if you're fit.",
-  },
-  carmarthenshire: {
-    trainStations: [
-      { name: "Carmarthen", info: "Main hub. Transport for Wales from Swansea (~45 min), Cardiff (~1 hr 45 min). GWR from London Paddington (~4 hrs via Swansea)." },
-      { name: "Llandeilo", info: "Heart of Wales line (Swansea to Shrewsbury). Beautiful scenic route, 4 trains per day. Gateway to the Towy Valley." },
-      { name: "Llandovery", info: "Heart of Wales line. Northern Carmarthenshire, gateway to the Brecon Beacons' western edges." },
-      { name: "Kidwelly", info: "Main line between Carmarthen and Swansea. Access to Kidwelly Castle and the coastal area." },
-    ],
-    busServices: [
-      { name: "Traws Cymru T1", info: "Carmarthen to Aberystwyth via Lampeter & Aberaeron. Key north-south route through rural west Wales." },
-      { name: "280/281", info: "Carmarthen to Llandeilo and surrounding villages. Regular Mon–Sat service." },
-      { name: "103", info: "Carmarthen to Pendine via Laugharne (Dylan Thomas country). Limited service." },
-      { name: "fflecsi Carmarthenshire", info: "On-demand bus covering areas around Carmarthen and Llandeilo. Book via fflecsi app." },
-    ],
-    airports: [
-      { name: "Cardiff", info: "~1.5 hrs drive via M4/A48 (80 miles)" },
-      { name: "Bristol", info: "~2.5 hrs drive via M4/M48 (130 miles)" },
-    ],
-    driving: [
-      { route: "From London", info: "~4 hrs via M4/A48 (230 miles). Exit M4 at Pont Abraham." },
-      { route: "From Cardiff", info: "~1.5 hrs via M4/A48 (80 miles)" },
-      { route: "From Swansea", info: "~40 min via A48 (30 miles)" },
-      { route: "From Birmingham", info: "~3 hrs via M5/M4/A48 (150 miles)" },
-    ],
-    carFree: "The Heart of Wales line is one of Britain's most scenic railway journeys and connects Llandeilo and Llandovery. Carmarthen has reasonable bus links. However, many of the county's best outdoor spots (Brechfa Forest, the Towy Valley trails) are remote — a car is strongly recommended for adventure activities.",
-  },
-};
-
-// Default transport info for regions not in the map
-const defaultTransport: TransportInfo = {
-  trainStations: [
-    { name: "Check local stations", info: "Transport for Wales runs services across Wales. Avanti West Coast and GWR connect to English cities." },
-  ],
-  busServices: [
-    { name: "Traws Cymru", info: "Long-distance bus network connecting Welsh towns. Routes T1–T12 cover most regions. Free Wi-Fi on board." },
-    { name: "Local buses", info: "Check Traveline Cymru (traveline.cymru) for local timetables and journey planning." },
-  ],
-  airports: [
-    { name: "Cardiff", info: "Wales' main international airport, southern Wales" },
-    { name: "Bristol / Birmingham", info: "Nearby English airports with wider route networks" },
-  ],
-  driving: [
-    { route: "From London", info: "3–5.5 hrs depending on destination in Wales" },
-    { route: "From Birmingham", info: "2–3 hrs via M5, M54 or M50" },
-  ],
-  carFree: "Wales has improving public transport links. Traws Cymru buses and Transport for Wales trains connect most regions. Check traveline.cymru for journey planning.",
 };
 
 // Generate metadata for SEO
@@ -576,7 +259,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
         
         {/* Hero Section */}
         <div className="relative w-full rounded-2xl overflow-hidden mb-6 lg:mb-8 group h-[400px] lg:h-[500px]">
-          <div className="absolute inset-0 bg-gray-900">
+          <div className="absolute inset-0 bg-slate-900">
             {/* Use local hero image */}
             <Image
               alt={region.name}
@@ -590,32 +273,30 @@ export default async function RegionPage({ params }: RegionPageProps) {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
           </div>
 
-          <div className="absolute top-4 right-4 flex gap-2 lg:hidden z-20">
-             {/* Mobile Actions - placeholders */}
-            <button className="text-white flex size-10 items-center justify-center rounded-full bg-black/20 backdrop-blur-sm hover:bg-black/40 transition-colors">
-              <Heart className="w-5 h-5" />
-            </button>
-            <button className="text-white flex size-10 items-center justify-center rounded-full bg-black/20 backdrop-blur-sm hover:bg-black/40 transition-colors">
-              <Share className="w-5 h-5" />
-            </button>
-          </div>
-
           <div className="relative z-10 flex flex-col gap-4 lg:gap-6 p-6 lg:p-12 text-white h-full justify-end">
-             {/* Breadcrumbs */}
-            <div className="flex flex-wrap items-center gap-2 text-xs lg:text-sm font-medium text-gray-200">
-              <Link href="/" className="hover:text-white transition-colors">Wales</Link>
-              <ChevronRight className="w-4 h-4" />
-              <Link href="/destinations" className="hover:text-white transition-colors">Destinations</Link>
-              <ChevronRight className="w-4 h-4" />
-              <span className="text-white">{region.name}</span>
-            </div>
+            {/* Breadcrumbs */}
+            <nav aria-label="Breadcrumb" className="text-xs lg:text-sm font-medium text-slate-200">
+              <ol className="flex flex-wrap items-center gap-2">
+                <li>
+                  <Link href="/" className="hover:text-white transition-colors">Wales</Link>
+                </li>
+                <li aria-hidden="true"><ChevronRight className="w-4 h-4" /></li>
+                <li>
+                  <Link href="/destinations" className="hover:text-white transition-colors">Destinations</Link>
+                </li>
+                <li aria-hidden="true"><ChevronRight className="w-4 h-4" /></li>
+                <li>
+                  <span className="text-white" aria-current="page">{region.name}</span>
+                </li>
+              </ol>
+            </nav>
 
              {/* Heading */}
             <div className="max-w-2xl">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black leading-tight tracking-tight mb-2 lg:mb-3">
                 {region.name}
               </h1>
-              <p className="text-base lg:text-xl text-gray-200 font-medium max-w-xl line-clamp-3">
+              <p className="text-base lg:text-xl text-slate-200 font-medium max-w-xl line-clamp-3">
                 {introText.split('.').slice(0, 2).join('.') + '.'}
               </p>
             </div>
@@ -624,56 +305,72 @@ export default async function RegionPage({ params }: RegionPageProps) {
 
         {/* Stats Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 mb-6 lg:mb-8">
-          <StatCard label="Activities" value={region.stats.activities} icon={Footprints} />
-          <StatCard label="Operators" value={region.stats.operators} icon={Users} />
-          <StatCard label="Stays" value={region.stats.accommodation} icon={Home} />
-          <StatCard label="Events" value={region.stats.events} icon={Calendar} />
+          <StatTile label="Activities" value={region.stats.activities} icon={<Footprints className="size-5" />} />
+          <StatTile label="Operators" value={region.stats.operators} icon={<Users className="size-5" />} />
+          <StatTile label="Stays" value={region.stats.accommodation} icon={<Home className="size-5" />} />
+          <StatTile label="Events" value={region.stats.events} icon={<Calendar className="size-5" />} />
         </div>
 
-        {/* Sticky Section Nav */}
-        <nav
-          className="sticky z-40 bg-white/80 backdrop-blur-md pt-2 pb-3 lg:pb-4 mb-4 lg:mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"
-          style={{ top: "var(--header-height)" }}
-        >
-          <div className="flex overflow-x-auto border-b border-gray-200 gap-4 lg:gap-8 no-scrollbar">
-            {activities.length > 0 && (
-              <AnchorTab href="#activities" label="Activities" />
-            )}
-            {accommodation.length > 0 && (
-              <AnchorTab href="#accommodation" label="Accommodation" />
-            )}
-            {upcomingEvents.length > 0 && (
-              <AnchorTab href="#events" label="Events" />
-            )}
-            <AnchorTab href="#map" label="Map" />
-            <AnchorTab href="#getting-there" label="Getting There" />
-            <AnchorTab href="#directory" label="Directory" />
-          </div>
-        </nav>
+        {/* Sticky Section Nav — only shown when there's content to jump to */}
+        {hasContent && (
+          <nav
+            className="sticky z-40 bg-white/80 backdrop-blur-md pt-2 pb-3 lg:pb-4 mb-4 lg:mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"
+            style={{ top: "var(--header-height)" }}
+          >
+            <div className="flex overflow-x-auto border-b border-slate-200 gap-4 lg:gap-8 no-scrollbar">
+              <AnchorTab href="#overview" label="Overview" />
+              {activities.length > 0 && (
+                <AnchorTab href="#activities" label="Activities" />
+              )}
+              {launchActivityTypes.length > 0 && (
+                <AnchorTab href="#explore-by-activity" label="Explore by Activity" />
+              )}
+              {launchBestLists.length > 0 && (
+                <AnchorTab href="#top-picks" label="Top Picks" />
+              )}
+              {accommodation.length > 0 && (
+                <AnchorTab href="#accommodation" label="Accommodation" />
+              )}
+              {upcomingEvents.length > 0 && (
+                <AnchorTab href="#events" label="Events" />
+              )}
+              <AnchorTab href="#map" label="Map" />
+              <AnchorTab href="#getting-there" label="Getting There" />
+              <AnchorTab href="#plan-your-visit" label="Plan Your Visit" />
+              <AnchorTab href="#directory" label="Directory" />
+            </div>
+          </nav>
+        )}
 
         {/* Empty Region State */}
         {!hasContent && (
-          <div className="mb-12">
-            <div className="bg-gradient-to-br from-primary/5 to-accent-hover/5 rounded-2xl p-8 lg:p-12 text-center border border-gray-200">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent-hover/10 mb-6">
-                <Compass className="w-8 h-8 text-accent-hover" />
-              </div>
-              <h2 className="text-2xl lg:text-3xl font-black text-primary mb-3">
-                We&apos;re still exploring {region.name}
-              </h2>
-              <p className="text-gray-600 text-base lg:text-lg max-w-2xl mx-auto mb-8">
-                We&apos;re busy discovering the best adventures, accommodation, and hidden gems in {region.name}. 
-                Check back soon — or explore one of these other incredible regions in Wales.
-              </p>
-              
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-2xl mx-auto mb-8">
+          <div className="mb-12 rounded-2xl border border-border bg-white p-8 lg:p-12">
+            <EmptyState
+              icon={<Compass />}
+              title={`We're still exploring ${region.name}`}
+              description={`We're busy discovering the best adventures, accommodation, and hidden gems in ${region.name}. Check back soon — or explore one of these other incredible regions in Wales.`}
+              actions={
+                <>
+                  <ButtonLink href="/destinations" variant="secondary" size="md">
+                    Browse All Regions
+                    <ArrowRight className="w-4 h-4" />
+                  </ButtonLink>
+                  <ButtonLink href="/activities" variant="outline" size="md">
+                    View All Activities
+                  </ButtonLink>
+                </>
+              }
+            />
+
+            {otherRegions.length > 0 && (
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-2xl mx-auto mt-8">
                 {otherRegions.map((r) => (
                   <Link
                     key={r.slug}
                     href={`/${r.slug}`}
-                    className="group flex flex-col items-center gap-2 p-4 bg-white rounded-xl border border-gray-200 hover:border-primary/30 hover:shadow-md transition-all"
+                    className="group flex flex-col items-center gap-2 p-4 bg-white rounded-xl border border-border hover:border-primary/30 hover:shadow-md transition-all"
                   >
-                    <div className="w-12 h-12 rounded-full bg-gray-100 overflow-hidden">
+                    <div className="w-12 h-12 rounded-full bg-slate-100 overflow-hidden">
                       <Image
                         alt={r.name}
                         className="w-full h-full object-cover"
@@ -683,29 +380,13 @@ export default async function RegionPage({ params }: RegionPageProps) {
                         loading="eager"
                       />
                     </div>
-                    <span className="text-sm font-bold text-primary group-hover:text-accent-hover transition-colors">
+                    <span className="text-sm font-bold text-primary group-hover:text-accent-strong transition-colors">
                       {r.name}
                     </span>
                   </Link>
                 ))}
               </div>
-              
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <Link
-                  href="/destinations"
-                  className="inline-flex items-center justify-center gap-2 bg-primary text-white font-bold py-3 px-6 rounded-full hover:bg-[#2d5568] transition-colors"
-                >
-                  Browse All Regions
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-                <Link
-                  href="/activities"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-primary font-bold py-3 px-6 rounded-full border border-gray-200 hover:border-primary/30 transition-colors"
-                >
-                  View All Activities
-                </Link>
-              </div>
-            </div>
+            )}
           </div>
         )}
 
@@ -713,7 +394,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
         {hasContent && <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 mb-12">
           
           {/* Main Content (8 cols) */}
-          <div className="lg:col-span-8 flex flex-col gap-8 lg:gap-10">
+          <div className="lg:col-span-8 flex flex-col gap-12 lg:gap-16">
 
             {/* Top Experiences Grid — prominent at top */}
             {activities.length > 0 && (
@@ -722,36 +403,34 @@ export default async function RegionPage({ params }: RegionPageProps) {
 
             {/* Explore by Activity Grid */}
             {launchActivityTypes.length > 0 && (
-              <section className="scroll-mt-32">
-                <div className="flex justify-between items-end mb-4 lg:mb-5">
-                  <h3 className="text-lg lg:text-xl font-bold text-primary">Explore by Activity</h3>
-                </div>
+              <section id="explore-by-activity" className="scroll-mt-32">
+                <SectionHeader title="Explore by Activity" />
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-4">
                   {launchActivityTypes.map((item) => (
                     <Link
                       key={item.activityType.id}
                       href={`/${regionSlug}/${item.activityType.slug}`}
-                      className="group relative overflow-hidden rounded-xl bg-white border border-gray-200 hover:border-primary/30 hover:shadow-lg transition-all"
+                      className="group relative overflow-hidden rounded-xl bg-white border border-border hover:border-primary/30 hover:shadow-lg transition-all"
                     >
-                      <div className="aspect-[4/3] relative bg-gradient-to-br from-primary/10 to-accent-hover/10">
+                      <div className="aspect-[4/3] relative bg-slate-100">
                         <FallbackImage
                           src={`/images/activities/${item.activityType.slug}-hero.jpg`}
                           alt={item.activityType.name}
                           className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                        
+
                         {/* Count badge */}
                         <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm text-primary px-2 py-1 rounded-full text-xs font-bold">
                           {Number(item.count)}
                         </div>
                       </div>
-                      
+
                       <div className="p-3">
-                        <h4 className="font-bold text-sm text-primary group-hover:text-accent-hover transition-colors line-clamp-2">
+                        <h3 className="font-bold text-sm text-primary group-hover:text-accent-strong transition-colors line-clamp-2">
                           {item.activityType.name}
-                        </h4>
-                        <p className="text-xs text-gray-500 mt-1">
+                        </h3>
+                        <p className="text-xs text-slate-500 mt-1">
                           {Number(item.count)} experience{Number(item.count) !== 1 ? 's' : ''}
                         </p>
                       </div>
@@ -762,16 +441,16 @@ export default async function RegionPage({ params }: RegionPageProps) {
             )}
 
             {/* Intro */}
-            <section>
-              <h3 className="text-lg lg:text-xl font-bold mb-3 text-primary">Welcome to {region.name}</h3>
-              <p className="text-gray-600 leading-relaxed text-sm lg:text-base">
+            <section id="overview" className="scroll-mt-32">
+              <SectionHeader title={`Welcome to ${region.name}`} />
+              <p className="text-slate-600 leading-relaxed text-base">
                  {introText}
               </p>
-              
+
               {proTips.length > 0 && (
                 <div className="flex items-start gap-3 bg-primary/5 p-4 rounded-xl border-l-4 border-primary mt-4">
                   <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-slate-700">
                     <strong>Top Tip:</strong> {proTips[0]}
                   </p>
                 </div>
@@ -798,10 +477,8 @@ export default async function RegionPage({ params }: RegionPageProps) {
 
             {/* Our Top Picks - Best-Of Lists */}
             {launchBestLists.length > 0 && (
-              <section className="scroll-mt-32">
-                <div className="flex justify-between items-end mb-4 lg:mb-5">
-                  <h3 className="text-lg lg:text-xl font-bold text-primary">Our Top Picks</h3>
-                </div>
+              <section id="top-picks" className="scroll-mt-32">
+                <SectionHeader title="Our Top Picks" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5">
                   {launchBestLists.map((list) => (
                     <BestOfCard
@@ -819,12 +496,10 @@ export default async function RegionPage({ params }: RegionPageProps) {
             {/* Accommodation Grid */}
             {accommodation.length > 0 && (
               <section id="accommodation" className="scroll-mt-32">
-                <div className="flex justify-between items-end mb-4 lg:mb-5">
-                  <h3 className="text-lg lg:text-xl font-bold text-primary">Where to Stay</h3>
-                  <Link href={`/${regionSlug}/stay`} className="text-primary text-sm font-bold hover:underline flex items-center gap-1">
-                    View all <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
+                <SectionHeader
+                  title="Where to Stay"
+                  action={{ label: "View all", href: `/${regionSlug}/stay` }}
+                />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5">
                   {accommodation.slice(0, 2).map((item) => (
                       <AccommodationCard
@@ -842,7 +517,7 @@ export default async function RegionPage({ params }: RegionPageProps) {
 
             {/* Interactive Map Section */}
             <section id="map" className="scroll-mt-32">
-              <h3 className="text-lg lg:text-xl font-bold mb-4 text-primary">Explore the Region</h3>
+              <SectionHeader title="Explore the Region" />
               <RegionMap
                 markers={mapMarkers}
                 center={region.lat && region.lng ? [parseFloat(String(region.lat)), parseFloat(String(region.lng))] : undefined}
@@ -850,22 +525,22 @@ export default async function RegionPage({ params }: RegionPageProps) {
                 height="450px"
                 className="shadow-md"
               />
-              
+
               {/* Map Legend */}
-              <div className="flex flex-wrap gap-3 lg:gap-4 mt-4 text-xs lg:text-sm">
-                <span className="flex items-center gap-2 text-gray-600">
+              <div className="flex flex-wrap gap-3 lg:gap-4 mt-4 text-sm">
+                <span className="flex items-center gap-2 text-slate-600">
                   <span className="w-4 h-4 rounded-full bg-[#3b82f6] border-2 border-white shadow-sm"></span>
                   Activities ({mapEntities.activities.length})
                 </span>
-                <span className="flex items-center gap-2 text-gray-600">
+                <span className="flex items-center gap-2 text-slate-600">
                   <span className="w-4 h-4 rounded-full bg-[#22c55e] border-2 border-white shadow-sm"></span>
                   Accommodation ({mapEntities.accommodation.length})
                 </span>
-                <span className="flex items-center gap-2 text-gray-600">
+                <span className="flex items-center gap-2 text-slate-600">
                   <span className="w-4 h-4 rounded-full bg-[#a855f7] border-2 border-white shadow-sm"></span>
                   Locations ({mapEntities.locations.length})
                 </span>
-                <span className="flex items-center gap-2 text-gray-600">
+                <span className="flex items-center gap-2 text-slate-600">
                   <span className="w-4 h-4 rounded-full bg-[#ef4444] border-2 border-white shadow-sm"></span>
                   Events ({mapEntities.events.length})
                 </span>
@@ -874,23 +549,26 @@ export default async function RegionPage({ params }: RegionPageProps) {
 
             {/* Getting There — Transport Section */}
             <section id="getting-there" className="scroll-mt-32">
-              <h3 className="text-lg lg:text-xl font-bold mb-4 text-primary">Getting There</h3>
-              <TransportSection regionSlug={regionSlug} descriptionText={gettingThere} />
+              <SectionHeader title="Getting There" />
+              <TransportSection
+                regionSlug={regionSlug}
+                summary={gettingThere === defaultPlanContent.gettingThere ? null : gettingThere}
+              />
             </section>
 
             {/* Plan Your Visit Accordion */}
-            <section>
-              <h3 className="text-lg lg:text-xl font-bold mb-4 text-primary">Plan Your Visit</h3>
+            <section id="plan-your-visit" className="scroll-mt-32">
+              <SectionHeader title="Plan Your Visit" />
               <div className="flex flex-col gap-3">
-                <AccordionItem 
-                    icon={Cloud} 
-                    title="Best Time to Visit" 
-                    content={bestTimeToVisit} 
+                <AccordionItem
+                    icon={Cloud}
+                    title="Best Time to Visit"
+                    content={bestTimeToVisit}
                 />
-                <AccordionItem 
-                    icon={Backpack} 
-                    title="Essential Gear" 
-                    content={essentialGear} 
+                <AccordionItem
+                    icon={Backpack}
+                    title="Essential Gear"
+                    content={essentialGear}
                 />
               </div>
             </section>
@@ -911,17 +589,17 @@ export default async function RegionPage({ params }: RegionPageProps) {
             )}
             
             {/* Local Businesses */}
-            <div id="directory" className="scroll-mt-32 bg-white p-5 lg:p-6 rounded-2xl border border-gray-200 shadow-sm">
+            <div id="directory" className="scroll-mt-32 bg-white p-5 lg:p-6 rounded-2xl border border-border shadow-sm">
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-lg font-bold text-primary">Local Businesses</h3>
                 <Link href="/directory" className="text-xs font-bold text-primary hover:underline">View all</Link>
               </div>
               <div className="flex flex-col gap-4">
                 {operators.map((op) => (
-                    <div key={op.id} className="flex items-center gap-3 pb-3 border-b border-gray-100 last:border-0 last:pb-0">
-                        <div className="size-10 rounded-full bg-gray-100 overflow-hidden shrink-0">
+                    <div key={op.id} className="flex items-center gap-3 pb-3 border-b border-slate-100 last:border-0 last:pb-0">
+                        <div className="relative size-10 rounded-full bg-slate-100 overflow-hidden shrink-0">
                             {op.logoUrl ? (
-                                <img alt={op.name} className="w-full h-full object-cover" src={op.logoUrl} />
+                                <Image alt={op.name} className="object-cover" src={op.logoUrl} fill sizes="40px" />
                             ) : (
                                 <div className="w-full h-full flex items-center justify-center bg-primary/10 text-primary font-bold">
                                     {op.name.charAt(0)}
@@ -933,12 +611,12 @@ export default async function RegionPage({ params }: RegionPageProps) {
                             {op.googleRating != null && op.reviewCount != null && (
                                 <div className="flex items-center gap-1">
                                     <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
-                                    <span className="text-xs text-gray-500">{op.googleRating} ({op.reviewCount} reviews)</span>
+                                    <span className="text-xs text-slate-500">{op.googleRating} ({op.reviewCount} reviews)</span>
                                 </div>
                             )}
                         </div>
-                        <Link href={`/directory/${op.slug}`} className="size-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
-                            <ArrowRight className="w-4 h-4 text-gray-600" />
+                        <Link href={`/directory/${op.slug}`} className="size-8 rounded-full bg-slate-100 flex items-center justify-center hover:bg-slate-200 transition-colors">
+                            <ArrowRight className="w-4 h-4 text-slate-600" />
                         </Link>
                     </div>
                 ))}
@@ -952,9 +630,9 @@ export default async function RegionPage({ params }: RegionPageProps) {
               </div>
               <h4 className="text-lg font-bold mb-2 relative z-10">List Your Business</h4>
               <p className="text-sm text-blue-100 mb-4 relative z-10">Get discovered by visitors planning their {region.name} trip. Free listing available.</p>
-              <Link href="/advertise" className="block w-full bg-white text-primary font-bold py-2.5 rounded-lg text-sm relative z-10 hover:bg-gray-100 transition-colors text-center">
+              <ButtonLink href="/advertise" variant="outline" size="sm" fullWidth className="relative z-10">
                 Learn More
-              </Link>
+              </ButtonLink>
             </div>
           </aside>
         </div>}
@@ -968,10 +646,10 @@ export default async function RegionPage({ params }: RegionPageProps) {
             Ready to plan your {region.name} adventure?
           </h2>
           <p className="text-white/80 text-sm font-medium">Create a custom itinerary in minutes.</p>
-          <button className="bg-primary text-white text-sm lg:text-base font-bold py-3 lg:py-4 px-6 lg:px-8 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all flex items-center justify-center gap-2">
+          <ButtonLink href="/trip-planner" variant="secondary" size="lg" className="rounded-full shadow-lg hover:shadow-xl hover:scale-105">
             Start Planning
             <ArrowRight className="w-5 h-5" />
-          </button>
+          </ButtonLink>
         </div>
       </div>
     </div>
@@ -979,55 +657,20 @@ export default async function RegionPage({ params }: RegionPageProps) {
   );
 }
 
-function StatCard({ label, value, icon: Icon }: { label: string; value: number; icon: any }) {
-  return (
-    <div className="flex flex-col gap-1 rounded-xl p-4 lg:p-5 border border-gray-200 bg-white hover:shadow-md transition-shadow cursor-pointer group">
-      <div className="flex justify-between items-start">
-        <p className="text-gray-500 text-xs lg:text-sm font-medium">{label}</p>
-        <Icon className="text-primary group-hover:scale-110 transition-transform w-5 h-5 lg:w-6 lg:h-6" />
-      </div>
-      <p className="text-xl lg:text-2xl font-bold text-primary">{value}</p>
-    </div>
-  );
-}
-
 function AnchorTab({ href, label }: { href: string; label: string }) {
   return (
-    <a 
-      href={href} 
-      className="flex flex-col items-center justify-center border-b-[3px] border-transparent pb-3 px-2 shrink-0 transition-colors text-gray-500 hover:text-primary hover:border-primary/40"
+    <a
+      href={href}
+      className="flex flex-col items-center justify-center border-b-[3px] border-transparent pb-3 px-2 shrink-0 transition-colors text-slate-500 hover:text-primary hover:border-primary/40"
     >
       <p className="text-sm font-bold whitespace-nowrap">{label}</p>
     </a>
   );
 }
 
-function TabLink({ href, label, active = false }: { href: string; label: string; active?: boolean }) {
-  return (
-    <Link 
-      href={href} 
-      className={`flex flex-col items-center justify-center border-b-[3px] pb-3 px-2 shrink-0 transition-colors ${
-        active 
-        ? "border-primary text-primary" 
-        : "border-transparent text-gray-500 hover:text-primary"
-      }`}
-    >
-      <p className="text-sm font-bold whitespace-nowrap">{label}</p>
-    </Link>
-  );
-}
-
-function MapFilterPill({ label, icon }: { label: string; icon: string }) {
-  return (
-    <span className="px-3 py-1.5 rounded-full border border-gray-200 bg-white text-xs font-medium whitespace-nowrap cursor-pointer hover:bg-gray-50 text-primary">
-      {icon} {label}
-    </span>
-  );
-}
-
 function AccordionItem({ icon: Icon, title, content }: { icon: any; title: string; content: string }) {
   return (
-    <details className="group bg-white rounded-xl overflow-hidden border border-gray-200">
+    <details className="group bg-white rounded-xl overflow-hidden border border-slate-200">
       <summary className="flex items-center justify-between p-4 cursor-pointer list-none">
         <div className="flex items-center gap-3">
           <div className="bg-primary/10 p-2 rounded-lg">
@@ -1035,176 +678,11 @@ function AccordionItem({ icon: Icon, title, content }: { icon: any; title: strin
           </div>
           <span className="font-bold text-primary">{title}</span>
         </div>
-        <ChevronRight className="text-gray-400 transition-transform group-open:rotate-90 w-5 h-5" />
+        <ChevronRight className="text-slate-400 transition-transform group-open:rotate-90 w-5 h-5" />
       </summary>
-      <div className="px-4 pb-4 pt-0 text-gray-600 text-sm leading-relaxed pl-[60px]">
+      <div className="px-4 pb-4 pt-0 text-slate-600 text-sm leading-relaxed pl-[60px]">
         {content}
       </div>
     </details>
-  );
-}
-
-function TransportSection({ regionSlug, descriptionText }: { regionSlug: string; descriptionText: string }) {
-  const transport = regionTransport[regionSlug] || defaultTransport;
-
-  return (
-    <div className="space-y-4">
-      {/* Summary text from description if available */}
-      {descriptionText && descriptionText !== defaultPlanContent.gettingThere && (
-        <p className="text-gray-600 text-sm leading-relaxed">{descriptionText}</p>
-      )}
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {/* Train Stations */}
-        <div className="bg-white rounded-xl border border-gray-200 p-4">
-          <div className="flex items-center gap-2 mb-3">
-            <div className="bg-blue-50 p-2 rounded-lg">
-              <Train className="w-5 h-5 text-blue-600" />
-            </div>
-            <h4 className="font-bold text-sm text-primary">By Train</h4>
-          </div>
-          <ul className="space-y-2">
-            {transport.trainStations.map((station) => (
-              <li key={station.name} className="text-sm">
-                <span className="font-semibold text-primary">{station.name}</span>
-                <p className="text-gray-500 text-xs mt-0.5">{station.info}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Bus Services */}
-        <div className="bg-white rounded-xl border border-gray-200 p-4">
-          <div className="flex items-center gap-2 mb-3">
-            <div className="bg-orange-50 p-2 rounded-lg">
-              <Bus className="w-5 h-5 text-orange-600" />
-            </div>
-            <h4 className="font-bold text-sm text-primary">By Bus</h4>
-          </div>
-          <ul className="space-y-2">
-            {transport.busServices.map((service) => (
-              <li key={service.name} className="text-sm">
-                <span className="font-semibold text-primary">{service.name}</span>
-                <p className="text-gray-500 text-xs mt-0.5">{service.info}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Driving */}
-        <div className="bg-white rounded-xl border border-gray-200 p-4">
-          <div className="flex items-center gap-2 mb-3">
-            <div className="bg-green-50 p-2 rounded-lg">
-              <Car className="w-5 h-5 text-green-600" />
-            </div>
-            <h4 className="font-bold text-sm text-primary">By Car</h4>
-          </div>
-          <ul className="space-y-2">
-            {transport.driving.map((route) => (
-              <li key={route.route} className="text-sm">
-                <span className="font-semibold text-primary">{route.route}</span>
-                <p className="text-gray-500 text-xs mt-0.5">{route.info}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Airports */}
-        <div className="bg-white rounded-xl border border-gray-200 p-4">
-          <div className="flex items-center gap-2 mb-3">
-            <div className="bg-purple-50 p-2 rounded-lg">
-              <Plane className="w-5 h-5 text-purple-600" />
-            </div>
-            <h4 className="font-bold text-sm text-primary">By Air</h4>
-          </div>
-          <ul className="space-y-2">
-            {transport.airports.map((airport) => (
-              <li key={airport.name} className="text-sm">
-                <span className="font-semibold text-primary">{airport.name}</span>
-                <p className="text-gray-500 text-xs mt-0.5">{airport.info}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      {/* Car-Free Options */}
-      {transport.carFree && (
-        <div className="bg-emerald-50 rounded-xl border border-emerald-200 p-4">
-          <div className="flex items-center gap-2 mb-2">
-            <div className="bg-emerald-100 p-2 rounded-lg">
-              <Compass className="w-5 h-5 text-emerald-700" />
-            </div>
-            <h4 className="font-bold text-sm text-emerald-800">Car-Free Options</h4>
-          </div>
-          <p className="text-emerald-700 text-sm leading-relaxed">{transport.carFree}</p>
-        </div>
-      )}
-
-      {/* Quick Links - Timetables & Taxis */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {/* Timetable Links */}
-        <div className="bg-gray-50 rounded-xl border border-gray-200 p-4">
-          <h4 className="font-bold text-sm text-primary mb-3">📅 Timetables & Journey Planners</h4>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <a href="https://www.traveline.cymru/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
-                Traveline Cymru
-              </a>
-              <span className="text-gray-500 text-xs block">All Wales bus & train times</span>
-            </li>
-            <li>
-              <a href="https://tfwrail.wales/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
-                Transport for Wales Rail
-              </a>
-              <span className="text-gray-500 text-xs block">Train times & ticket booking</span>
-            </li>
-            <li>
-              <a href="https://www.nationalrail.co.uk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
-                National Rail
-              </a>
-              <span className="text-gray-500 text-xs block">UK-wide train planner</span>
-            </li>
-            <li>
-              <a href="https://fflecsi.wales/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
-                fflecsi
-              </a>
-              <span className="text-gray-500 text-xs block">On-demand bus booking app</span>
-            </li>
-          </ul>
-        </div>
-
-        {/* Taxi & Car Hire */}
-        <div className="bg-gray-50 rounded-xl border border-gray-200 p-4">
-          <h4 className="font-bold text-sm text-primary mb-3">🚕 Taxis & Car Hire</h4>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <a href="https://www.uber.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
-                Uber
-              </a>
-              <span className="text-gray-500 text-xs block">Available in larger towns</span>
-            </li>
-            <li>
-              <a href="https://www.google.com/search?q=taxi+near+me+wales" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
-                Find Local Taxis
-              </a>
-              <span className="text-gray-500 text-xs block">Search for nearby taxi firms</span>
-            </li>
-            <li>
-              <a href="https://www.enterprise.co.uk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
-                Enterprise
-              </a>
-              <span className="text-gray-500 text-xs block">Car hire — multiple Welsh locations</span>
-            </li>
-            <li>
-              <a href="https://www.sixt.co.uk/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
-                Sixt
-              </a>
-              <span className="text-gray-500 text-xs block">Car hire — Cardiff, Swansea, stations</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
   );
 }

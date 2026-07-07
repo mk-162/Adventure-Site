@@ -11,6 +11,7 @@ import { UpcomingEvents } from "@/components/home/upcoming-events";
 import { TrustedPartners } from "@/components/home/trusted-partners";
 import { Newsletter } from "@/components/home/newsletter";
 import { JsonLd, createWebSiteSchema, createOrganizationSchema } from "@/components/seo/JsonLd";
+import { SectionHeader } from "@/components/ui/section-header";
 import { getFeaturedItineraries } from "@/lib/queries";
 import { ThisWeekendWidget } from "@/components/events/ThisWeekendWidget";
 import { LAUNCH_REGIONS, LAUNCH_COMBOS } from "@/lib/launch";
@@ -111,6 +112,7 @@ export default async function HomePage() {
         {weekendEvents.length > 0 ? (
           <section className="py-12 sm:py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
+              <SectionHeader eyebrow="Coming Up" title="This Weekend in Wales" />
               <ThisWeekendWidget events={weekendEvents} />
             </div>
           </section>

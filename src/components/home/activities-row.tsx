@@ -1,16 +1,17 @@
 import Link from "next/link";
-import { 
-  Mountain, 
-  Waves, 
-  Bike, 
-  Wind, 
-  Droplets, 
+import {
+  Mountain,
+  Waves,
+  Bike,
+  Wind,
+  Droplets,
   TreePine,
   Anchor,
   Footprints,
   Plane,
   ArrowRight
 } from "lucide-react";
+import { SectionHeader } from "@/components/ui/section-header";
 
 const activities = [
   { name: "Hiking", slug: "hiking", icon: Mountain },
@@ -27,10 +28,11 @@ export function ActivitiesRow() {
   return (
     <section className="py-12 sm:py-16 bg-white border-y border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-8 sm:mb-10">
-          <span className="text-primary font-bold uppercase tracking-wider text-sm">What Gets You Moving</span>
-          <h2 className="mt-2 text-3xl font-bold text-primary">Pick Your Adventure</h2>
-        </div>
+        <SectionHeader
+          eyebrow="What Gets You Moving"
+          title="Pick Your Adventure"
+          align="center"
+        />
 
         <div className="grid grid-cols-4 lg:grid-cols-8 gap-4 sm:gap-6">
           {activities.map((activity) => {
@@ -41,7 +43,7 @@ export function ActivitiesRow() {
                 href={`/${activity.slug}`}
                 className="flex flex-col items-center gap-2 sm:gap-3 group"
               >
-                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-slate-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-slate-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                   <IconComponent className="w-6 h-6 sm:w-8 sm:h-8" />
                 </div>
                 <span className="text-xs sm:text-sm font-semibold text-center text-slate-900">
@@ -52,11 +54,11 @@ export function ActivitiesRow() {
           })}
         </div>
         <div className="text-center mt-8">
-          <Link 
-            href="/activities" 
-            className="inline-flex items-center gap-2 text-primary font-bold hover:text-accent-hover transition-colors"
+          <Link
+            href="/activities"
+            className="inline-flex items-center gap-2 text-primary font-bold hover:text-accent-strong transition-colors"
           >
-            View all 18 activity types <ArrowRight className="w-4 h-4" />
+            View all activity types <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </div>

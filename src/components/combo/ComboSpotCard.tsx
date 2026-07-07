@@ -2,7 +2,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import {
   MapPin,
   Clock,
-  Mountain,
   Ruler,
   TrendingUp,
   Car,
@@ -11,15 +10,11 @@ import {
   Calendar,
 } from "lucide-react";
 import type { ComboSpot } from "@/lib/combo-data";
+import { getDifficultyColor } from "@/lib/design-tokens";
 
-function getDifficultyColor(difficulty: string) {
-  switch (difficulty?.toLowerCase()) {
-    case "easy": return "bg-green-100 text-green-700";
-    case "moderate": return "bg-yellow-100 text-yellow-700";
-    case "challenging": case "hard": case "difficult": return "bg-orange-100 text-orange-700";
-    case "expert": case "extreme": return "bg-red-100 text-red-700";
-    default: return "bg-gray-100 text-gray-700";
-  }
+/** True when the field has a real value — guards against the literal string "null" seen in some JSON. */
+function hasValue(value: string | undefined | null): value is string {
+  return Boolean(value) && value !== "null";
 }
 
 export function ComboSpotCard({ spot, index }: { spot: ComboSpot; index: number }) {
@@ -34,42 +29,42 @@ export function ComboSpotCard({ spot, index }: { spot: ComboSpot; index: number 
             </span>
             <h3 className="font-bold text-primary text-lg leading-tight">{spot.name}</h3>
           </div>
-          <span className={`px-2.5 py-1 rounded-full text-xs font-semibold shrink-0 ${getDifficultyColor(spot.difficulty)}`}>
+          <span className={`px-2.5 py-1 rounded-full text-sm font-semibold shrink-0 ${getDifficultyColor(spot.difficulty)}`}>
             {spot.difficulty}
           </span>
         </div>
 
-        <p className="text-gray-600 text-sm leading-relaxed mb-4">{spot.description}</p>
+        <p className="text-slate-600 text-sm leading-relaxed mb-4">{spot.description}</p>
 
         {/* Quick Stats */}
-        <div className="flex flex-wrap gap-3 text-xs text-gray-500">
-          {spot.duration && (
+        <div className="flex flex-wrap gap-3 text-sm text-slate-500">
+          {hasValue(spot.duration) && (
             <span className="flex items-center gap-1">
-              <Clock className="w-3.5 h-3.5 text-accent-hover" />
+              <Clock className="w-3.5 h-3.5 text-accent-strong" />
               {spot.duration}
             </span>
           )}
-          {spot.distance && (
+          {hasValue(spot.distance) && (
             <span className="flex items-center gap-1">
-              <Ruler className="w-3.5 h-3.5 text-accent-hover" />
+              <Ruler className="w-3.5 h-3.5 text-accent-strong" />
               {spot.distance}
             </span>
           )}
-          {spot.elevationGain && (
+          {hasValue(spot.elevationGain) && (
             <span className="flex items-center gap-1">
-              <TrendingUp className="w-3.5 h-3.5 text-accent-hover" />
+              <TrendingUp className="w-3.5 h-3.5 text-accent-strong" />
               ↑{spot.elevationGain}
             </span>
           )}
-          {spot.estimatedCost && (
+          {hasValue(spot.estimatedCost) && (
             <span className="flex items-center gap-1">
-              <PoundSterling className="w-3.5 h-3.5 text-accent-hover" />
+              <PoundSterling className="w-3.5 h-3.5 text-accent-strong" />
               {spot.estimatedCost}
             </span>
           )}
-          {spot.bestSeason && (
+          {hasValue(spot.bestSeason) && (
             <span className="flex items-center gap-1">
-              <Calendar className="w-3.5 h-3.5 text-accent-hover" />
+              <Calendar className="w-3.5 h-3.5 text-accent-strong" />
               {spot.bestSeason}
             </span>
           )}
@@ -77,14 +72,14 @@ export function ComboSpotCard({ spot, index }: { spot: ComboSpot; index: number 
       </CardContent>
 
       {/* Details */}
-      <CardContent className="border-t border-gray-100 px-5 py-3 bg-gray-50/50 space-y-2">
-        {spot.bestFor && (
-          <p className="text-xs"><span className="font-semibold text-emerald-700">Best for:</span> <span className="text-gray-600">{spot.bestFor}</span></p>
+      <CardContent className="border-t border-border px-5 py-3 bg-slate-50 space-y-2.5">
+        {hasValue(spot.bestFor) && (
+          <p className="text-sm"><span className="font-semibold text-emerald-700">Best for:</span> <span className="text-slate-600">{spot.bestFor}</span></p>
         )}
-        {spot.parking && (
-          <p className="text-xs flex items-start gap-1.5">
-            <Car className="w-3.5 h-3.5 text-gray-400 shrink-0 mt-0.5" />
-            <span className="text-gray-600">{spot.parking}</span>
+        {hasValue(spot.parking) && (
+          <p className="text-sm flex items-start gap-1.5">
+            <Car className="w-3.5 h-3.5 text-slate-400 shrink-0 mt-0.5" />
+            <span className="text-slate-600">{spot.parking}</span>
           </p>
         )}
         {spot.startPoint && (
@@ -92,16 +87,16 @@ export function ComboSpotCard({ spot, index }: { spot: ComboSpot; index: number 
             href={`https://www.google.com/maps/dir/?api=1&destination=${spot.startPoint.lat},${spot.startPoint.lng}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-xs font-medium text-primary hover:text-accent-hover transition-colors"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-accent-strong transition-colors"
           >
             <MapPin className="w-3.5 h-3.5" />
             Get directions to {spot.startPoint.name}
           </a>
         )}
-        {spot.insiderTip && (
+        {hasValue(spot.insiderTip) && (
           <div className="flex items-start gap-1.5 bg-amber-50 rounded-lg p-2 -mx-1">
             <Lightbulb className="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5" />
-            <p className="text-xs text-amber-800"><span className="font-semibold">Insider tip:</span> {spot.insiderTip}</p>
+            <p className="text-sm text-amber-800"><span className="font-semibold">Insider tip:</span> {spot.insiderTip}</p>
           </div>
         )}
       </CardContent>

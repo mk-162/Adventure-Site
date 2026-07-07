@@ -17,6 +17,8 @@ import { isLaunchRegion, isLaunchCombo } from "@/lib/launch";
 import { Badge, DifficultyBadge, PriceBadge } from "@/components/ui/badge";
 import { ButtonLink } from "@/components/ui/button";
 import { ActivityCard } from "@/components/cards/activity-card";
+import { ItineraryCard } from "@/components/cards/itinerary-card";
+import { SectionHeader } from "@/components/ui/section-header";
 import { ActivityGallery } from "@/components/activities/activity-gallery";
 import dynamic from "next/dynamic";
 import type { MapMarker } from "@/components/ui/MapView";
@@ -39,8 +41,8 @@ import { ActivityWeatherAlert } from "@/components/weather/ActivityWeatherAlert"
 
 const MapView = dynamic(() => import("@/components/ui/MapView"), {
   loading: () => (
-    <div className="w-full h-[300px] rounded-2xl bg-gray-200 animate-pulse flex items-center justify-center">
-      <span className="text-gray-400">Loading map...</span>
+    <div className="w-full h-[300px] rounded-2xl bg-slate-200 animate-pulse flex items-center justify-center">
+      <span className="text-slate-400">Loading map...</span>
     </div>
   ),
 });
@@ -178,10 +180,15 @@ export async function generateMetadata({ params }: ActivityPageProps): Promise<M
   const intro = extractIntro(activity.description);
   const description = intro || `Experience ${activity.name} in ${region?.name || 'Wales'}. ${activity.duration ? `Duration: ${activity.duration}.` : ''} ${activity.difficulty ? `Difficulty: ${activity.difficulty}.` : ''}`;
 
+  // Unlaunched regions are reachable but stay out of search — dropped from the
+  // sitemap already; this keeps crawlers from indexing them directly too.
+  const noindex = !region?.slug || !isLaunchRegion(region.slug);
+
   return {
     title: `${activity.name} | ${region?.name || 'Wales'} | Adventure Wales`,
     description: description.slice(0, 160),
     keywords: `${activity.name}, ${region?.name || 'Wales'}, adventure, outdoor activities, ${activityType?.name || 'activities'}`,
+    ...(noindex && { robots: { index: false, follow: true } }),
     openGraph: {
       title: `${activity.name} | ${region?.name || 'Wales'}`,
       description: description.slice(0, 160),
@@ -292,8 +299,9 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
       })} />
       <JsonLd data={createBreadcrumbSchema(breadcrumbItems)} />
       <div className="min-h-screen pt-16">
-      {/* Hero Gallery */}
-      <section className="relative h-[50vh] min-h-[400px]">
+      {/* Hero Gallery — min-height floor is taller than the floating card can
+          grow to, so the photo stays visible even on short mobile viewports. */}
+      <section className="relative h-[50vh] min-h-[440px] sm:min-h-[480px]">
         <Image
           src={heroImage}
           alt={activity.name}
@@ -308,41 +316,42 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
         {/* Actions */}
         <div className="absolute top-4 right-4 flex gap-2">
           <button className="p-3 bg-white/90 rounded-full hover:bg-white transition-colors">
-            <Share2 className="h-5 w-5 text-gray-700" />
+            <Share2 className="h-5 w-5 text-slate-700" />
           </button>
           <FavouriteButton
             id={activity.id}
             type="activity"
             className="p-3 bg-white/90 rounded-full hover:bg-white transition-colors"
-            iconClassName="h-5 w-5 text-gray-700"
+            iconClassName="h-5 w-5 text-slate-700"
           />
         </div>
 
-        {/* Floating Info Card */}
+        {/* Floating Info Card — capped padding/lines so it can't grow to eat
+            the whole hero photo on short viewports. */}
         <div className="absolute bottom-0 left-0 right-0 p-4">
           <div className="max-w-7xl mx-auto">
-            <div className="bg-white rounded-t-2xl p-6 shadow-xl">
-              <div className="flex items-start justify-between">
-                <div>
+            <div className="bg-white rounded-t-2xl p-4 sm:p-6 shadow-xl">
+              <div className="flex items-start justify-between gap-3">
+                <div className="min-w-0">
                   {operator && (
                     <div className="flex items-center gap-2 mb-2">
-                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-xs font-bold">
+                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0">
                         {operator.name.charAt(0)}
                       </div>
-                      <span className="text-sm text-gray-600">{operator.name}</span>
+                      <span className="text-sm text-slate-600 truncate">{operator.name}</span>
                       {operator.googleRating && (
-                        <span className="flex items-center gap-1 text-sm">
-                          <Star className="h-4 w-4 fill-accent-hover text-accent-hover" />
+                        <span className="flex items-center gap-1 text-sm shrink-0">
+                          <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
                           {operator.googleRating}
                         </span>
                       )}
                     </div>
                   )}
-                  <h1 className="text-2xl md:text-3xl font-bold text-primary">
+                  <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary line-clamp-2">
                     {activity.name}
                   </h1>
                 </div>
-                <div className="text-right">
+                <div className="text-right shrink-0">
                   <PriceBadge
                     from={activity.priceFrom ? parseFloat(activity.priceFrom) : null}
                     to={activity.priceTo ? parseFloat(activity.priceTo) : null}
@@ -357,7 +366,9 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
       {/* Quick Info */}
       <section className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex gap-4 overflow-x-auto">
+          {/* Scrolls on mobile (no room to wrap); wraps on desktop instead of
+              hiding overflow with no indication. */}
+          <div className="flex gap-4 overflow-x-auto sm:flex-wrap sm:overflow-visible">
             {activity.duration && (
               <InfoPill icon={Clock} label={activity.duration} />
             )}
@@ -393,10 +404,8 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
           <div className="lg:col-span-2 space-y-8">
             {/* Description */}
             <section>
-              <h2 className="text-xl font-bold text-primary mb-4">
-                About This Experience
-              </h2>
-              <p className="text-gray-600">
+              <SectionHeader title="About This Experience" />
+              <p className="text-slate-600 max-w-3xl">
                 {extractIntro(activity.description) || `Experience the thrill of ${activity.name} in ${region?.name || 'Wales'}. This unforgettable adventure is perfect for those seeking excitement in the great outdoors.`}
               </p>
             </section>
@@ -422,27 +431,25 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
 
             {/* What's Included */}
             <section>
-              <h2 className="text-xl font-bold text-primary mb-4">
-                What's Included
-              </h2>
+              <SectionHeader title="What's Included" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <h3 className="font-semibold text-green-600 mb-2 flex items-center gap-2">
                     <CheckCircle className="h-5 w-5" />
                     Included
                   </h3>
-                  <ul className="space-y-2 text-gray-600">
+                  <ul className="space-y-2 text-slate-600">
                     <li>• Professional instruction</li>
                     <li>• All safety equipment</li>
                     <li>• Safety briefing</li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-500 mb-2 flex items-center gap-2">
+                  <h3 className="font-semibold text-slate-500 mb-2 flex items-center gap-2">
                     <XCircle className="h-5 w-5" />
                     Not Included
                   </h3>
-                  <ul className="space-y-2 text-gray-600">
+                  <ul className="space-y-2 text-slate-600">
                     <li>• Transport to venue</li>
                     <li>• Food and drinks</li>
                     <li>• Personal insurance</li>
@@ -454,12 +461,10 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
             {/* Meeting Point & Location Map */}
             {activity.meetingPoint && (
               <section>
-                <h2 className="text-xl font-bold text-primary mb-4">
-                  Meeting Point
-                </h2>
-                <div className="bg-gray-100 rounded-xl p-4">
-                  <p className="flex items-center gap-2 text-gray-700">
-                    <MapPin className="h-5 w-5 text-accent-hover" />
+                <SectionHeader title="Meeting Point" />
+                <div className="bg-slate-100 rounded-xl p-4">
+                  <p className="flex items-center gap-2 text-slate-700">
+                    <MapPin className="h-5 w-5 text-accent-strong" />
                     {activity.meetingPoint}
                   </p>
                 </div>
@@ -468,15 +473,15 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
 
             {/* Get Directions */}
             {activity.lat && activity.lng && (
-              <a
+              <ButtonLink
                 href={`https://www.google.com/maps/dir/?api=1&destination=${activity.lat},${activity.lng}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent-hover bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl px-4 py-2.5 transition-colors"
+                variant="outline"
+                size="sm"
+                external
               >
                 <Navigation className="w-4 h-4" />
                 Get Directions
-              </a>
+              </ButtonLink>
             )}
 
             {/* Location Map */}
@@ -499,7 +504,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                   from={activity.priceFrom ? parseFloat(activity.priceFrom) : null}
                   to={activity.priceTo ? parseFloat(activity.priceTo) : null}
                 />
-                <p className="text-gray-500 text-sm">per person</p>
+                <p className="text-slate-500 text-sm">per person</p>
               </div>
 
               {activity.bookingAffiliateUrl ? (
@@ -514,7 +519,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                     <ExternalLink className="h-4 w-4" />
                   </ButtonLink>
                   {activity.bookingPlatform && activity.bookingPlatform !== "none" && activity.bookingPlatform !== "direct" && (
-                    <p className="text-xs text-center text-gray-400 mt-2">
+                    <p className="text-xs text-center text-slate-400 mt-2">
                       Powered by {activity.bookingPlatform.charAt(0).toUpperCase() + activity.bookingPlatform.slice(1)}
                     </p>
                   )}
@@ -531,7 +536,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                     <ExternalLink className="h-4 w-4" />
                   </ButtonLink>
                   {activity.bookingPlatform && activity.bookingPlatform !== "none" && activity.bookingPlatform !== "direct" && (
-                    <p className="text-xs text-center text-gray-400 mt-2">
+                    <p className="text-xs text-center text-slate-400 mt-2">
                       Powered by {activity.bookingPlatform.charAt(0).toUpperCase() + activity.bookingPlatform.slice(1)}
                     </p>
                   )}
@@ -544,10 +549,10 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
 
               {operator && (
                 <div className="mt-6 pt-6 border-t">
-                  <p className="text-sm text-gray-500 mb-2">Provided by</p>
+                  <p className="text-sm text-slate-500 mb-2">Provided by</p>
                   <a
                     href={`/directory/${operator.slug}`}
-                    className="flex items-center gap-3 hover:bg-gray-50 rounded-lg p-2 -m-2 transition-colors"
+                    className="flex items-center gap-3 hover:bg-slate-50 rounded-lg p-2 -m-2 transition-colors"
                   >
                     <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">
                       {operator.name.charAt(0)}
@@ -555,8 +560,8 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                     <div>
                       <p className="font-semibold text-primary">{operator.name}</p>
                       {operator.googleRating && (
-                        <p className="text-sm text-gray-500 flex items-center gap-1">
-                          <Star className="h-3 w-3 fill-accent-hover text-accent-hover" />
+                        <p className="text-sm text-slate-500 flex items-center gap-1">
+                          <Star className="h-3 w-3 fill-yellow-500 text-yellow-500" />
                           {operator.googleRating}
                         </p>
                       )}
@@ -570,7 +575,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
             {activity.lat && activity.lng && (
               <div className="mt-4 bg-white rounded-2xl border p-4 shadow-sm">
                 <h3 className="font-bold text-sm text-primary mb-3 flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-accent-hover" />
+                  <MapPin className="w-4 h-4 text-accent-strong" />
                   Location
                 </h3>
                 <MapView
@@ -587,15 +592,17 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                   interactive={false}
                   className="rounded-xl"
                 />
-                <a
+                <ButtonLink
                   href={`https://www.google.com/maps/dir/?api=1&destination=${activity.lat},${activity.lng}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-3 flex items-center justify-center gap-2 text-xs font-semibold text-primary hover:text-accent-hover bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 transition-colors w-full"
+                  variant="outline"
+                  size="sm"
+                  fullWidth
+                  external
+                  className="mt-3"
                 >
                   <Navigation className="w-3.5 h-3.5" />
                   Get Directions
-                </a>
+                </ButtonLink>
               </div>
             )}
 
@@ -632,7 +639,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
           <section className="mt-12">
             <Link
               href={`/${region.slug}/${activityType.slug}`}
-              className="block bg-gradient-to-r from-primary to-[#2a5570] rounded-xl p-6 hover:shadow-lg transition-shadow"
+              className="block bg-primary rounded-xl p-6 hover:shadow-lg transition-shadow"
             >
               <h2 className="text-lg font-bold text-white mb-1">
                 All {activityType.name} in {region.name} →
@@ -647,29 +654,14 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
         {/* Featured in these trips */}
         {regionItineraries.length > 0 && (
           <section className="mt-12">
-            <h2 className="text-xl font-bold text-primary mb-4">
-              {region?.name} Road Trips
-            </h2>
+            <SectionHeader title={`${region?.name} Road Trips`} />
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {regionItineraries.map(({ itinerary, region: iRegion }) => (
-                <Link
+                <ItineraryCard
                   key={itinerary.id}
-                  href={`/itineraries/${itinerary.slug}`}
-                  className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition-shadow"
-                >
-                  <div
-                    className="h-32 bg-cover bg-center bg-gray-100"
-                    style={{ backgroundImage: `url('/images/regions/${iRegion?.slug || 'default'}-hero.jpg')` }}
-                  />
-                  <div className="p-4">
-                    <h3 className="font-semibold text-sm text-primary group-hover:text-accent-hover transition-colors line-clamp-1">
-                      {itinerary.title}
-                    </h3>
-                    <p className="text-xs text-gray-500 mt-1">
-                      {itinerary.durationDays} days · {iRegion?.name}
-                    </p>
-                  </div>
-                </Link>
+                  itinerary={itinerary}
+                  region={iRegion}
+                />
               ))}
             </div>
           </section>
@@ -678,9 +670,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
         {/* Related Activities */}
         {relatedActivities.length > 0 && (
           <section className="mt-12">
-            <h2 className="text-xl font-bold text-primary mb-6">
-              More Adventures Nearby
-            </h2>
+            <SectionHeader title="More Adventures Nearby" />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {relatedActivities
                 .filter((item) => item.activity.id !== activity.id)
@@ -725,9 +715,9 @@ function getActivityTip(activityTypeSlug: string): string {
 
 function InfoPill({ icon: Icon, label }: { icon: any; label: string }) {
   return (
-    <div className="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full whitespace-nowrap">
-      <Icon className="h-4 w-4 text-accent-hover" />
-      <span className="text-sm text-gray-700">{label}</span>
+    <div className="flex items-center gap-2 px-4 py-2 bg-slate-50 rounded-full whitespace-nowrap">
+      <Icon className="h-4 w-4 text-accent-strong" />
+      <span className="text-sm text-slate-700">{label}</span>
     </div>
   );
 }

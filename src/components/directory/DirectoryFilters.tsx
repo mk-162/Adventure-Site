@@ -7,6 +7,8 @@ import { AdvertiseWidget } from '@/components/commercial/AdvertiseWidget';
 import { Search, Award, X, LocateFixed, Sparkles } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { ButtonLink } from '@/components/ui/button';
+import { EmptyState } from '@/components/ui/empty-state';
+import { cn } from '@/lib/utils';
 import Link from 'next/link';
 
 interface Operator {
@@ -58,31 +60,31 @@ const categoryCards = [
     key: "activity_provider",
     title: "Activity Providers",
     description: "Guides, instructors & adventure companies",
-    image: "/images/activities/activity-wales-27043-1280-assets-wales.jpg",
+    image: "/images/activities/climbing-hero.jpg",
   },
   {
     key: "gear_rental",
     title: "Gear & Hire",
     description: "Bike hire, wetsuits, climbing kit & more",
-    image: "/images/activities/activity-wales-27041-1280-assets-wales.jpg",
+    image: "/images/misc/gear-hiking-01-918f1952.jpg",
   },
   {
     key: "food_drink",
     title: "Food & Drink",
     description: "Post-adventure eats and local spots",
-    image: "/images/activities/activity-wales-27045-1280-assets-wales.jpg",
+    image: "/images/accommodation/quirky/portmeirion-village.jpg",
   },
   {
     key: "transport",
     title: "Transport",
     description: "Shuttles, transfers & logistics",
-    image: "/images/activities/activity-wales-27047-1280-assets-wales.jpg",
+    image: "/images/activities/mountain-biking-hero.jpg",
   },
   {
     key: "accommodation",
     title: "Accommodation",
     description: "Stay close to the action",
-    image: "/images/activities/activity-wales-27052-1280-assets-wales.jpg",
+    image: "/images/accommodation/quirky/eco-lodge-wales.jpg",
   },
 ];
 
@@ -177,6 +179,9 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
   const seoRegions = regions.slice(0, 6);
   const seoActivities = activityTypes.slice(0, 6);
 
+  const selectClass =
+    "rounded-lg border border-border bg-white px-3 py-2 text-sm text-primary outline-none max-w-[180px] focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
+
   return (
     <>
       {/* Search */}
@@ -192,14 +197,14 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
             Adventure Directory
           </h1>
           <p className="text-white/80">
-            {totalCount}+ Welsh adventure businesses. Adventure providers, gear hire, food, transport — all in one place.
+            {totalCount} verified Welsh adventure businesses. Adventure providers, gear hire, food, transport — all in one place.
           </p>
 
           <div className="mt-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div className="relative max-w-md w-full">
               <label htmlFor="directory-search" className="sr-only">Search providers</label>
               <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                <Search className="h-5 w-5 text-gray-400" />
+                <Search className="h-5 w-5 text-slate-400" />
               </div>
               <input
                 id="directory-search"
@@ -207,15 +212,15 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
                 placeholder="Search adventure providers..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-white text-gray-900 placeholder-gray-400 border-2 border-white focus:border-accent-hover focus:ring-2 focus:ring-accent-hover outline-none shadow-lg text-base"
+                className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-white text-slate-900 placeholder-slate-400 border-2 border-white outline-none shadow-lg text-base focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               />
             </div>
 
             <div className="flex flex-wrap gap-3">
-              <ButtonLink href="/advertise" variant="accent" size="sm">
+              <ButtonLink href="/advertise" variant="primary" size="sm">
                 Add Your Listing
               </ButtonLink>
-              <ButtonLink href="/directory/claim" variant="outline" size="sm" className="border-white text-white hover:text-accent-hover hover:border-accent-hover">
+              <ButtonLink href="/directory/claim" variant="outline" size="sm" className="border-white bg-transparent text-white hover:text-accent-strong hover:border-accent-strong">
                 Claim Your Listing
               </ButtonLink>
             </div>
@@ -227,7 +232,7 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
         <div className="max-w-7xl mx-auto px-4 py-10">
           <div className="flex items-center justify-between mb-6">
             <div>
-              <p className="text-sm uppercase tracking-wider text-gray-400">Browse by Category</p>
+              <p className="text-sm uppercase tracking-wider text-slate-400">Browse by Category</p>
               <h2 className="text-2xl font-bold text-primary">Pick the service type you need</h2>
             </div>
             <span className="hidden md:inline-flex items-center gap-2 text-xs font-semibold text-primary bg-slate-100 px-3 py-1.5 rounded-full">
@@ -240,13 +245,13 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
               <button
                 key={category.key}
                 onClick={() => updateFilter('category', category.key)}
-                className="group text-left rounded-2xl overflow-hidden border border-gray-200 hover:border-accent-hover transition-colors"
+                className="group text-left rounded-2xl overflow-hidden border border-border hover:border-accent-strong transition-colors"
               >
                 <div
                   className="relative h-36 bg-cover bg-center"
                   style={{ backgroundImage: `url('${category.image}')` }}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-black/45" />
                   <div className="absolute bottom-4 left-4 text-white">
                     <h3 className="text-lg font-bold">{category.title}</h3>
                     <p className="text-sm text-white/80">{category.description}</p>
@@ -254,7 +259,7 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
                 </div>
                 <div className="px-4 py-3 flex items-center justify-between text-sm font-semibold text-primary">
                   {categoryLabels[category.key]}
-                  <span className="text-accent-hover">View listings →</span>
+                  <span className="text-accent-strong">View listings →</span>
                 </div>
               </button>
             ))}
@@ -263,15 +268,15 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
       </section>
 
       {/* Filters */}
-      <section className="bg-white border-b sticky top-16 z-30">
-        <div className="max-w-7xl mx-auto px-4 py-4">
+      <section className="bg-white border-b sticky top-[var(--header-height)] z-30">
+        <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-wrap gap-2 items-center">
             <label htmlFor="category-filter" className="sr-only">Filter by category</label>
-            <select 
+            <select
               id="category-filter"
               value={selectedCategory}
               onChange={(e) => updateFilter('category', e.target.value)}
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm max-w-[180px]"
+              className={selectClass}
               aria-label="Filter by category"
             >
               <option value="">All Categories</option>
@@ -283,11 +288,11 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
             </select>
 
             <label htmlFor="region-filter" className="sr-only">Filter by region</label>
-            <select 
+            <select
               id="region-filter"
               value={selectedRegion}
               onChange={(e) => updateFilter('region', e.target.value)}
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm max-w-[180px]"
+              className={selectClass}
               aria-label="Filter by region"
             >
               <option value="">All Regions</option>
@@ -299,11 +304,11 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
             </select>
 
             <label htmlFor="activity-filter" className="sr-only">Filter by activity</label>
-            <select 
+            <select
               id="activity-filter"
               value={selectedActivityType}
               onChange={(e) => updateFilter('activity', e.target.value)}
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm max-w-[180px]"
+              className={selectClass}
               aria-label="Filter by activity type"
             >
               <option value="">All Activities</option>
@@ -315,11 +320,11 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
             </select>
 
             <label htmlFor="rating-filter" className="sr-only">Filter by rating</label>
-            <select 
+            <select
               id="rating-filter"
               value={selectedRating}
               onChange={(e) => updateFilter('rating', e.target.value)}
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm max-w-[140px]"
+              className={cn(selectClass, "max-w-[140px]")}
               aria-label="Filter by rating"
             >
               <option value="">Rating: Any</option>
@@ -332,7 +337,7 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
               id="sort-filter"
               value={selectedSort}
               onChange={(e) => updateFilter('sort', e.target.value)}
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm max-w-[180px]"
+              className={selectClass}
               aria-label="Sort results"
             >
               <option value="recommended">Sort: Recommended</option>
@@ -346,7 +351,7 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
               id="distance-filter"
               value={selectedDistance}
               onChange={(e) => updateFilter('distance', e.target.value)}
-              className="border border-gray-200 rounded-lg px-3 py-2 text-sm max-w-[180px]"
+              className={selectClass}
               aria-label="Filter by distance"
             >
               <option value="">Distance: Any</option>
@@ -359,7 +364,7 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
             <button
               type="button"
               onClick={requestLocation}
-              className="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-gray-200 rounded-lg px-3 py-2 hover:border-accent-hover hover:text-accent-hover transition-colors"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-border rounded-lg px-3 py-2 hover:border-accent-strong hover:text-accent-strong transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
             >
               <LocateFixed className="h-4 w-4" />
               {locationStatus === 'locating' ? 'Locating...' : 'Use my location'}
@@ -369,7 +374,7 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
               <button
                 type="button"
                 onClick={clearLocation}
-                className="text-sm text-gray-500 hover:text-accent-hover"
+                className="text-sm text-slate-500 hover:text-accent-strong"
               >
                 Clear location
               </button>
@@ -389,51 +394,51 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
           {hasActiveFilters && (
             <div className="flex flex-wrap gap-2 mt-3">
               {searchQuery && (
-                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-gray-100 text-gray-800 hover:bg-gray-200">
+                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-slate-100 text-slate-800 hover:bg-slate-200">
                   Search: {searchQuery}
-                  <button onClick={() => { setSearchQuery(''); updateFilter('q', ''); }} className="ml-1 text-gray-500 hover:text-gray-900"><X className="h-3 w-3" /></button>
+                  <button onClick={() => { setSearchQuery(''); updateFilter('q', ''); }} className="ml-1 text-slate-500 hover:text-slate-900"><X className="h-3 w-3" /></button>
                 </Badge>
               )}
               {selectedCategory && (
-                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-gray-100 text-gray-800 hover:bg-gray-200">
+                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-slate-100 text-slate-800 hover:bg-slate-200">
                   {categoryLabels[selectedCategory] || selectedCategory}
-                  <button onClick={() => updateFilter('category', '')} className="ml-1 text-gray-500 hover:text-gray-900"><X className="h-3 w-3" /></button>
+                  <button onClick={() => updateFilter('category', '')} className="ml-1 text-slate-500 hover:text-slate-900"><X className="h-3 w-3" /></button>
                 </Badge>
               )}
               {selectedRegion && (
-                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-gray-100 text-gray-800 hover:bg-gray-200">
+                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-slate-100 text-slate-800 hover:bg-slate-200">
                   {regions.find(r => r.slug === selectedRegion)?.name || selectedRegion}
-                  <button onClick={() => updateFilter('region', '')} className="ml-1 text-gray-500 hover:text-gray-900"><X className="h-3 w-3" /></button>
+                  <button onClick={() => updateFilter('region', '')} className="ml-1 text-slate-500 hover:text-slate-900"><X className="h-3 w-3" /></button>
                 </Badge>
               )}
               {selectedActivityType && (
-                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-gray-100 text-gray-800 hover:bg-gray-200">
+                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-slate-100 text-slate-800 hover:bg-slate-200">
                   {activityTypes.find(t => t.slug === selectedActivityType)?.name || selectedActivityType}
-                  <button onClick={() => updateFilter('activity', '')} className="ml-1 text-gray-500 hover:text-gray-900"><X className="h-3 w-3" /></button>
+                  <button onClick={() => updateFilter('activity', '')} className="ml-1 text-slate-500 hover:text-slate-900"><X className="h-3 w-3" /></button>
                 </Badge>
               )}
               {selectedRating && (
-                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-gray-100 text-gray-800 hover:bg-gray-200">
+                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-slate-100 text-slate-800 hover:bg-slate-200">
                   {selectedRating}+ Stars
-                  <button onClick={() => updateFilter('rating', '')} className="ml-1 text-gray-500 hover:text-gray-900"><X className="h-3 w-3" /></button>
+                  <button onClick={() => updateFilter('rating', '')} className="ml-1 text-slate-500 hover:text-slate-900"><X className="h-3 w-3" /></button>
                 </Badge>
               )}
               {selectedDistance && (
-                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-gray-100 text-gray-800 hover:bg-gray-200">
+                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-slate-100 text-slate-800 hover:bg-slate-200">
                   Within {selectedDistance} km
-                  <button onClick={() => updateFilter('distance', '')} className="ml-1 text-gray-500 hover:text-gray-900"><X className="h-3 w-3" /></button>
+                  <button onClick={() => updateFilter('distance', '')} className="ml-1 text-slate-500 hover:text-slate-900"><X className="h-3 w-3" /></button>
                 </Badge>
               )}
               {selectedSort && selectedSort !== 'recommended' && (
-                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-gray-100 text-gray-800 hover:bg-gray-200">
+                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-slate-100 text-slate-800 hover:bg-slate-200">
                   Sort: {selectedSort}
-                  <button onClick={() => updateFilter('sort', 'recommended')} className="ml-1 text-gray-500 hover:text-gray-900"><X className="h-3 w-3" /></button>
+                  <button onClick={() => updateFilter('sort', 'recommended')} className="ml-1 text-slate-500 hover:text-slate-900"><X className="h-3 w-3" /></button>
                 </Badge>
               )}
               {hasGeo && (
-                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-gray-100 text-gray-800 hover:bg-gray-200">
+                <Badge variant="default" className="gap-1 pl-2 pr-1 py-1 font-normal bg-slate-100 text-slate-800 hover:bg-slate-200">
                   Near me
-                  <button onClick={clearLocation} className="ml-1 text-gray-500 hover:text-gray-900"><X className="h-3 w-3" /></button>
+                  <button onClick={clearLocation} className="ml-1 text-slate-500 hover:text-slate-900"><X className="h-3 w-3" /></button>
                 </Badge>
               )}
             </div>
@@ -464,17 +469,17 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
 
         {/* Featured Operators */}
         {featuredOperators.length > 0 && (
-          <section className="mb-12 bg-gradient-to-br from-primary/5 via-accent-hover/5 to-transparent rounded-2xl p-6 border border-primary/10">
+          <section className="mb-12 bg-slate-50 rounded-2xl p-6 border border-border">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-3">
-                <div className="bg-accent-hover text-white p-2 rounded-lg">
+                <div className="bg-accent-strong text-white p-2 rounded-lg">
                   <Award className="w-5 h-5" />
                 </div>
                 <div>
                   <h2 className="text-xl font-bold text-primary">
                     Sponsored Partners
                   </h2>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-slate-500">
                     Paid partners — vetted and trusted
                   </p>
                 </div>
@@ -501,7 +506,7 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
             <h2 className="text-xl font-bold text-primary">
               All Adventure Providers
             </h2>
-            <p className="text-gray-500 text-sm">
+            <p className="text-slate-500 text-sm">
               Showing {operators.length} of {totalCount} providers
             </p>
           </div>
@@ -520,15 +525,20 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
               ))}
             </div>
           ) : (
-            <div className="text-center py-16 bg-gray-50 rounded-xl">
-              <p className="text-gray-500 mb-2">No adventure providers found matching your filters</p>
-              <button
-                onClick={clearAllFilters}
-                className="text-accent-hover hover:text-accent-hover font-medium text-sm"
-              >
-                Clear all filters
-              </button>
-            </div>
+            <EmptyState
+              icon={<Search />}
+              title="No adventure providers found"
+              description="Try adjusting or clearing your filters to see more results."
+              actions={
+                <button
+                  onClick={clearAllFilters}
+                  className="text-accent-strong hover:underline font-medium text-sm"
+                >
+                  Clear all filters
+                </button>
+              }
+              className="bg-slate-50 rounded-xl"
+            />
           )}
         </section>
 
@@ -536,14 +546,14 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
             <div>
               <h3 className="text-xl font-bold text-primary">Popular location + activity searches</h3>
-              <p className="text-sm text-gray-500">Built for SEO and easy discovery — browse location, activity, and service type combos.</p>
+              <p className="text-sm text-slate-500">Built for SEO and easy discovery — browse location, activity, and service type combos.</p>
             </div>
             <div className="flex flex-wrap gap-2">
               {seoRegions.map((region) => (
                 <Link
                   key={region.id}
                   href={`/directory?region=${region.slug}`}
-                  className="text-xs font-semibold text-primary border border-slate-200 rounded-full px-3 py-1 hover:border-accent-hover hover:text-accent-hover"
+                  className="text-xs font-semibold text-primary border border-border rounded-full px-3 py-1 hover:border-accent-strong hover:text-accent-strong"
                 >
                   {region.name} directory
                 </Link>
@@ -552,7 +562,7 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
                 <Link
                   key={activity.id}
                   href={`/directory?activity=${activity.slug}`}
-                  className="text-xs font-semibold text-primary border border-slate-200 rounded-full px-3 py-1 hover:border-accent-hover hover:text-accent-hover"
+                  className="text-xs font-semibold text-primary border border-border rounded-full px-3 py-1 hover:border-accent-strong hover:text-accent-strong"
                 >
                   {activity.name} providers
                 </Link>
@@ -561,7 +571,7 @@ function DirectoryFiltersContent({ operators, regions, activityTypes, totalCount
                 <Link
                   key={category}
                   href={`/directory?category=${category}`}
-                  className="text-xs font-semibold text-primary border border-slate-200 rounded-full px-3 py-1 hover:border-accent-hover hover:text-accent-hover"
+                  className="text-xs font-semibold text-primary border border-border rounded-full px-3 py-1 hover:border-accent-strong hover:text-accent-strong"
                 >
                   {categoryLabels[category] || category}
                 </Link>

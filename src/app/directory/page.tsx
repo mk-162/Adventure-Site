@@ -66,34 +66,22 @@ export default async function DirectoryPage({ searchParams }: DirectoryPageProps
           searchParams={params}
         />
 
-        <section className="mt-12 bg-white border border-gray-200 rounded-2xl p-8 text-center">
-          <p className="text-sm uppercase tracking-wider text-gray-400 mb-2">Grow Your Adventure Business</p>
+        <section className="mt-12 bg-white border border-border rounded-2xl p-8 text-center">
+          <p className="text-sm uppercase tracking-wider text-slate-400 mb-2">Grow Your Adventure Business</p>
           <h3 className="text-2xl font-bold text-primary mb-3">
             Add your listing or claim your profile
           </h3>
-          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Get discovered by travelers searching by location, activity, and service type. Premium partners get priority placement, sponsored badges, and upgraded cards.
+          <p className="text-slate-500 mb-6 max-w-2xl mx-auto">
+            Free listing if you&apos;re qualified and insured. Premium partners get priority placement, sponsored badges, and upgraded cards.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <ButtonLink href="/advertise" variant="accent">
+            <ButtonLink href="/advertise" variant="primary">
               Add Your Listing
             </ButtonLink>
             <ButtonLink href="/directory/claim" variant="outline">
               Claim Your Listing
             </ButtonLink>
           </div>
-        </section>
-
-        <section className="mt-12 bg-gray-50 rounded-2xl p-8 text-center">
-          <h3 className="text-xl font-bold text-primary mb-2">
-            Run an adventure business in Wales?
-          </h3>
-          <p className="text-gray-600 mb-4">
-            Free listing if you're qualified and insured. We want every good provider on here.
-          </p>
-          <ButtonLink href="/directory/claim" variant="accent">
-            Claim Your Listing
-          </ButtonLink>
         </section>
 
         {featuredItineraries.length > 0 && (

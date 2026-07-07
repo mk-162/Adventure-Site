@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Star, ArrowRight } from "lucide-react";
+import { ButtonLink } from "@/components/ui/button";
+import { SectionHeader } from "@/components/ui/section-header";
 
 interface Itinerary {
   id: number;
@@ -30,25 +31,21 @@ export function FeaturedItineraries({ itineraries }: FeaturedItinerariesProps) {
   return (
     <section className="py-12 sm:py-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
-          <div>
-            <span className="text-accent-hover font-bold uppercase tracking-wider text-sm">Tried & Tested Routes</span>
-            <h2 className="mt-2 text-3xl font-bold text-primary">Ready-Made Adventures</h2>
-          </div>
-          <Link href="/itineraries" className="hidden sm:flex items-center text-primary font-bold hover:underline">
-            View All <ArrowRight className="ml-1 h-5 w-5" />
-          </Link>
-        </div>
+        <SectionHeader
+          eyebrow="Tried & Tested Routes"
+          title="Ready-Made Adventures"
+          action={{ label: "View All", href: "/itineraries" }}
+        />
 
         {/* 2-col grid on mobile, 3-col on desktop */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {itineraries.map(({ itinerary, region }) => (
               <Link
                 key={itinerary.id}
                 href={`/itineraries/${itinerary.slug}`}
                 className="group"
               >
-                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-1">
                   <div
                     className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
                     style={{ backgroundImage: `url('/images/regions/${region?.slug || 'default'}-hero.jpg')` }}
@@ -72,9 +69,9 @@ export function FeaturedItineraries({ itineraries }: FeaturedItinerariesProps) {
             ))}
         </div>
 
-        <Link href="/itineraries" className="sm:hidden block w-full mt-6 py-3 text-center text-primary font-bold border border-slate-200 rounded-xl hover:bg-slate-50">
+        <ButtonLink href="/itineraries" variant="outline" size="md" fullWidth className="mt-6 sm:hidden">
           View All Itineraries
-        </Link>
+        </ButtonLink>
       </div>
     </section>
   );

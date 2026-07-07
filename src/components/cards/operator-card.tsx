@@ -5,23 +5,46 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
 import { getEffectiveTier, isTrialActive } from "@/lib/trial-utils";
+import { cn } from "@/lib/utils";
 
 /** Render an operator logo safely: next/image for local paths, raw <img> for
- *  external hosts (logos come from arbitrary DB/editor URLs not in remotePatterns). */
-function OperatorLogo({ src, name, size }: { src: string; name: string; size: number }) {
-  if (src.startsWith("/")) {
+ *  external hosts (logos come from arbitrary DB/editor URLs not in remotePatterns).
+ *  Falls back to an initial-letter avatar so the row never has awkward empty space. */
+function OperatorLogo({
+  src,
+  name,
+  className,
+}: {
+  src: string | null;
+  name: string;
+  className?: string;
+}) {
+  if (!src) {
     return (
-      <Image
-        src={src}
-        alt={name}
-        fill
-        className="object-cover"
-        sizes={`${size}px`}
-      />
+      <div
+        className={cn(
+          "flex items-center justify-center rounded-xl bg-primary/10 font-bold text-primary",
+          className
+        )}
+        aria-hidden="true"
+      >
+        {name.charAt(0).toUpperCase()}
+      </div>
     );
   }
-  // eslint-disable-next-line @next/next/no-img-element
-  return <img src={src} alt={name} className="object-cover w-full h-full" />;
+  if (src.startsWith("/")) {
+    return (
+      <div className={cn("relative overflow-hidden rounded-xl", className)}>
+        <Image src={src} alt={name} fill className="object-cover" sizes="64px" />
+      </div>
+    );
+  }
+  return (
+    <div className={cn("relative overflow-hidden rounded-xl", className)}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={src} alt={name} className="h-full w-full object-cover" />
+    </div>
+  );
 }
 
 interface OperatorCardProps {
@@ -52,29 +75,24 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
 
   // Use effectiveTier for premium check
   const isPremium = effectiveTier === "premium";
-  const isClaimed = operator.claimStatus === "claimed" || isPremium;
 
   if (variant === "featured") {
     return (
       <Link href={`/directory/${operator.slug}`} className="block">
-        <Card className={`group hover:shadow-xl transition-shadow border-2 border-accent-hover/20 relative ${isPremium ? "border-l-4 border-l-amber-400 bg-amber-50/30" : ""}`}>
+        <Card className={`group hover:shadow-xl transition-shadow border-2 border-accent-strong/20 relative ${isPremium ? "border-l-4 border-l-amber-400 bg-amber-50/30" : ""}`}>
         <CardContent className="p-6">
           <div className="flex items-start justify-between mb-4">
             <div className="flex items-center gap-3">
-              {operator.logoUrl && (
-                <div className="relative w-16 h-16 rounded-xl overflow-hidden shrink-0">
-                  <OperatorLogo src={operator.logoUrl} name={operator.name} size={64} />
-                </div>
-              )}
+              <OperatorLogo src={operator.logoUrl} name={operator.name} className="w-16 h-16 shrink-0 text-xl" />
               <div>
-                <h3 className="font-bold text-lg text-primary group-hover:text-accent-hover transition-colors">
+                <h3 className="font-bold text-lg text-primary group-hover:text-accent-strong transition-colors">
                   {operator.name}
                 </h3>
                 <div className="flex items-center gap-2 mt-1">
                   <VerifiedBadge claimStatus={effectiveTier as any} isTrial={isTrial} size="lg" />
                 </div>
                 {operator.tagline && (
-                  <p className="text-sm text-gray-500 mt-1">{operator.tagline}</p>
+                  <p className="text-sm text-slate-500 mt-1">{operator.tagline}</p>
                 )}
               </div>
             </div>
@@ -88,7 +106,7 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
           </div>
 
           {operator.uniqueSellingPoint && (
-            <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+            <p className="text-slate-600 text-sm mb-4 line-clamp-2">
               {operator.uniqueSellingPoint}
             </p>
           )}
@@ -97,17 +115,17 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
             <div className="flex items-center gap-4">
               {operator.googleRating && (
                 <span className="flex items-center gap-1 text-sm">
-                  <Star className="h-4 w-4 fill-accent-hover text-accent-hover" />
-                  <span className="font-semibold">{operator.googleRating}</span>
+                  <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                  <span className="font-semibold text-primary">{operator.googleRating}</span>
                   {operator.reviewCount && (
-                    <span className="text-gray-400">
+                    <span className="text-slate-400">
                       ({operator.reviewCount.toLocaleString()})
                     </span>
                   )}
                 </span>
               )}
               {operator.priceRange && (
-                <span className="text-sm text-gray-500">
+                <span className="text-sm text-slate-500">
                   {operator.priceRange}
                 </span>
               )}
@@ -134,9 +152,10 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
     );
   }
 
-  // Default card
+  // Default card — consistent row anatomy: avatar, name + verified badge,
+  // location, rating (real only), price, category chips.
   return (
-    <Card className={`hover:shadow-md transition-shadow relative ${isPremium ? "border-l-4 border-l-amber-400 bg-amber-50/30" : ""}`}>
+    <Card className={`hover:shadow-md transition-shadow relative p-0 ${isPremium ? "border-l-4 border-l-amber-400 bg-amber-50/30" : ""}`}>
       {isPremium && (
         <span className="absolute top-2 right-2 z-10 inline-flex items-center gap-1 bg-amber-100 text-amber-800 border border-amber-300 text-[10px] font-bold px-1.5 py-0.5 rounded-full" aria-label="Sponsored listing">
           Sponsored
@@ -146,61 +165,57 @@ export function OperatorCard({ operator, variant = "default" }: OperatorCardProp
         href={`/directory/${operator.slug}`}
         className="group flex items-center gap-4 p-4"
       >
-        {/* Logo */}
-        {operator.logoUrl && (
-          <div className="relative w-14 h-14 rounded-xl overflow-hidden flex-shrink-0">
-            <OperatorLogo src={operator.logoUrl} name={operator.name} size={56} />
-          </div>
-        )}
+        <OperatorLogo src={operator.logoUrl} name={operator.name} className="w-14 h-14 shrink-0 text-lg" />
 
         {/* Content */}
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2">
-            <h3 className="font-semibold text-primary group-hover:text-accent-hover transition-colors truncate">
+            <h3 className="font-semibold text-primary group-hover:text-accent-strong transition-colors truncate">
               {operator.name}
             </h3>
             <VerifiedBadge claimStatus={effectiveTier as any} isTrial={isTrial} size="sm" showLabel={false} />
           </div>
 
           {operator.address && (
-            <p className="text-sm text-gray-400 flex items-center gap-1 truncate">
+            <p className="text-sm text-slate-500 flex items-center gap-1 truncate">
               <MapPin className="h-3 w-3 flex-shrink-0" />
               {operator.address}
             </p>
           )}
 
-          <div className="flex items-center gap-3 mt-1">
+          <div className="flex flex-wrap items-center gap-3 mt-1.5">
             {operator.googleRating && (
               <span className="flex items-center gap-1 text-sm">
-                <Star className="h-3 w-3 fill-accent-hover text-accent-hover" />
-                <span className="font-medium">{operator.googleRating}</span>
+                <Star className="h-3.5 w-3.5 fill-yellow-500 text-yellow-500" />
+                <span className="font-semibold text-primary">{operator.googleRating}</span>
+                {operator.reviewCount != null && (
+                  <span className="text-slate-400">({operator.reviewCount})</span>
+                )}
               </span>
             )}
             {operator.priceRange && (
-              <span className="text-sm text-gray-500">{operator.priceRange}</span>
+              <span className="text-sm text-slate-500">{operator.priceRange}</span>
             )}
             {operator.activityTypes && operator.activityTypes.length > 0 && (
-              <span className="text-xs text-gray-400">
-                {operator.activityTypes.slice(0, 2).join(", ")}
-              </span>
+              <div className="flex flex-wrap gap-1.5">
+                {operator.activityTypes.slice(0, 2).map((type) => (
+                  <Badge key={type} variant="outline" size="sm">
+                    {type}
+                  </Badge>
+                ))}
+                {operator.activityTypes.length > 2 && (
+                  <Badge variant="outline" size="sm">
+                    +{operator.activityTypes.length - 2}
+                  </Badge>
+                )}
+              </div>
             )}
           </div>
         </div>
 
         {/* Arrow */}
-        <ChevronRight className="h-5 w-5 text-gray-300 group-hover:text-accent-hover transition-colors flex-shrink-0" />
+        <ChevronRight className="h-5 w-5 text-slate-300 group-hover:text-accent-strong transition-colors flex-shrink-0" />
       </Link>
-
-      {!isClaimed && (
-        <div className="px-4 pb-3 border-t border-gray-100">
-          <Link
-            href="/advertise"
-            className="text-xs text-gray-400 hover:text-accent-hover transition-colors"
-          >
-            Is this your business? Claim this listing →
-          </Link>
-        </div>
-      )}
     </Card>
   );
 }

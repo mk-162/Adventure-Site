@@ -51,10 +51,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const sitemap: MetadataRoute.Sitemap = [];
 
-  // Launch scope: only verified Snowdonia content is indexable. Global/all-Wales
-  // sections below are excluded until their regions are verified and launched.
+  // Launch scope: only content in the verified launch allowlist (see
+  // src/lib/launch.ts — currently 8 regions + their verified combos) is
+  // indexable. Everything else is excluded until verified and launched.
   // Flip to false to restore the full sitemap post-launch.
-  const LAUNCH_SNOWDONIA_ONLY = true;
+  const LAUNCH_GATED = true;
 
   // Static pages
   sitemap.push(
@@ -191,7 +192,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'wild-swimming', 'windsurfing',
   ];
   activityHubs.forEach((hub) => {
-    if (LAUNCH_SNOWDONIA_ONLY) return;
+    if (LAUNCH_GATED) return;
     sitemap.push({
       url: `${BASE_URL}/${hub}`,
       lastModified: new Date(),
@@ -202,7 +203,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Region pages
   regionsData.forEach((region) => {
-    if (LAUNCH_SNOWDONIA_ONLY && !isLaunchRegion(region.slug)) return;
+    if (LAUNCH_GATED && !isLaunchRegion(region.slug)) return;
     sitemap.push({
       url: `${BASE_URL}/${region.slug}`,
       lastModified: region.createdAt || new Date(),
@@ -221,7 +222,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Individual activity/experience pages
   activitiesData.forEach((activity) => {
-    if (LAUNCH_SNOWDONIA_ONLY) return;
+    if (LAUNCH_GATED) return;
     sitemap.push({
       url: `${BASE_URL}/activities/${activity.slug}`,
       lastModified: activity.createdAt || new Date(),
@@ -232,7 +233,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Accommodation pages
   accommodationData.forEach((acc) => {
-    if (LAUNCH_SNOWDONIA_ONLY) return;
+    if (LAUNCH_GATED) return;
     sitemap.push({
       url: `${BASE_URL}/accommodation/${acc.slug}`,
       lastModified: acc.createdAt || new Date(),
@@ -243,7 +244,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Event pages
   eventsData.forEach((event) => {
-    if (LAUNCH_SNOWDONIA_ONLY) return;
+    if (LAUNCH_GATED) return;
     sitemap.push({
       url: `${BASE_URL}/events/${event.slug}`,
       lastModified: event.createdAt || new Date(),
@@ -254,7 +255,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Answer/FAQ pages
   answersData.forEach((answer) => {
-    if (LAUNCH_SNOWDONIA_ONLY) return;
+    if (LAUNCH_GATED) return;
     sitemap.push({
       url: `${BASE_URL}/answers/${answer.slug}`,
       lastModified: answer.createdAt || new Date(),
@@ -276,7 +277,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Combo pages: region + activity type (NEW URL - was /{region}/things-to-do/{activity})
   // In launch mode, drive from the allowlist directly — some verified combos are
   // JSON-only (no DB activity rows) so they wouldn't appear in comboPagesData.
-  if (LAUNCH_SNOWDONIA_ONLY) {
+  if (LAUNCH_GATED) {
     LAUNCH_COMBOS.forEach((key) => {
       sitemap.push({
         url: `${BASE_URL}/${key}`,
@@ -298,7 +299,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Tag pages
   tagsData.forEach((tag) => {
-    if (LAUNCH_SNOWDONIA_ONLY) return;
+    if (LAUNCH_GATED) return;
     sitemap.push({
       url: `${BASE_URL}/tags/${tag.slug}`,
       lastModified: tag.createdAt || new Date(),
@@ -309,7 +310,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Post/Journal pages
   postsData.forEach((post) => {
-    if (LAUNCH_SNOWDONIA_ONLY) return;
+    if (LAUNCH_GATED) return;
     sitemap.push({
       url: `${BASE_URL}/journal/${post.slug}`,
       lastModified: post.updatedAt || post.createdAt || new Date(),

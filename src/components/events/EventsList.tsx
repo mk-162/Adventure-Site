@@ -139,7 +139,7 @@ export function EventsList({ events }: EventsListProps) {
               placeholder="Search events or locations..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-hover focus:border-transparent"
+              className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-strong focus:border-transparent"
             />
           </div>
 
@@ -148,7 +148,7 @@ export function EventsList({ events }: EventsListProps) {
             <select
               value={selectedSeason}
               onChange={(e) => setSelectedSeason(e.target.value)}
-              className="w-full appearance-none px-4 py-2 pr-10 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-hover focus:border-transparent bg-white cursor-pointer"
+              className="w-full appearance-none px-4 py-2 pr-10 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-strong focus:border-transparent bg-white cursor-pointer"
             >
               {SEASONS.map((season) => (
                 <option key={season.value} value={season.value}>
@@ -164,7 +164,7 @@ export function EventsList({ events }: EventsListProps) {
             <select
               value={selectedType}
               onChange={(e) => setSelectedType(e.target.value)}
-              className="w-full appearance-none px-4 py-2 pr-10 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-hover focus:border-transparent bg-white cursor-pointer"
+              className="w-full appearance-none px-4 py-2 pr-10 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-strong focus:border-transparent bg-white cursor-pointer"
             >
               <option value="all">All Types</option>
               {eventTypes.filter(t => t !== "all").map((type) => (
@@ -199,7 +199,7 @@ export function EventsList({ events }: EventsListProps) {
               setSelectedSeason("all");
               setSelectedType("all");
             }}
-            className="text-accent-hover font-bold hover:underline"
+            className="text-accent-strong font-bold hover:underline"
           >
             Clear all filters
           </button>
@@ -233,7 +233,7 @@ function EventRow({ event, region }: { event: Event; region: Region }) {
   return (
     <Link
       href={`/events/${event.slug}`}
-      className="group bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-lg hover:border-accent-hover transition-all flex flex-col sm:flex-row"
+      className="group bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-lg hover:border-accent-strong transition-all flex flex-col sm:flex-row"
     >
       {/* Image */}
       <div className="relative w-full sm:w-32 h-32 sm:h-auto flex-shrink-0 bg-gray-200">
@@ -262,7 +262,7 @@ function EventRow({ event, region }: { event: Event; region: Region }) {
         <div>
           {/* Type Badge */}
           <div className="flex items-center gap-2 mb-2">
-            <span className="inline-block text-xs font-bold text-accent-hover uppercase tracking-wide">
+            <span className="inline-block text-xs font-bold text-accent-strong uppercase tracking-wide">
               {event.type || "Event"}
             </span>
             {event.monthTypical && (
@@ -274,7 +274,7 @@ function EventRow({ event, region }: { event: Event; region: Region }) {
           </div>
 
           {/* Event Name */}
-          <h3 className="text-lg sm:text-xl font-bold text-primary mb-2 group-hover:text-accent-hover transition-colors line-clamp-2">
+          <h3 className="text-lg sm:text-xl font-bold text-primary mb-2 group-hover:text-accent-strong transition-colors line-clamp-2">
             {event.name}
           </h3>
 
@@ -306,7 +306,7 @@ function EventRow({ event, region }: { event: Event; region: Region }) {
               </span>
             )}
           </div>
-          <span className="text-accent-hover font-medium text-sm group-hover:underline">
+          <span className="text-accent-strong font-medium text-sm group-hover:underline">
             View Details →
           </span>
         </div>

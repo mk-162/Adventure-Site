@@ -7,6 +7,7 @@ import { getPostBySlug, getRelatedPosts, getItineraries, getOperators, getLocati
 import { MarkdownRenderer } from "@/components/markdown-renderer";
 import { AdSlot } from "@/components/commercial/AdSlot";
 import { AdvertiseWidget } from "@/components/commercial/AdvertiseWidget";
+import { isLaunchRegion } from "@/lib/launch";
 
 const categoryColors: Record<string, string> = {
   guide: "#3b82f6",
@@ -32,9 +33,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  // Region-less journal posts stay indexable; posts tied to an unlaunched
+  // region are reachable but kept out of search, matching activities/[slug].
+  const noindex = !!post.region?.slug && !isLaunchRegion(post.region.slug);
+
   return {
     title: `${post.post.title} | Adventure Wales Journal`,
     description: post.post.excerpt || `Read ${post.post.title} on Adventure Wales`,
+    ...(noindex && { robots: { index: false, follow: true } }),
     openGraph: {
       title: post.post.title,
       description: post.post.excerpt || "",

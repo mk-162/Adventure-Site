@@ -561,9 +561,14 @@ export async function generateMetadata({ params }: Props) {
   const description = event.description?.slice(0, 155)
     || `${event.name} — ${typeStr}adventure event in ${regionName}.${dateStr ? ` ${dateStr}.` : ""} Find details, tickets, and more.`;
 
+  // Region-less events stay indexable; events tied to an unlaunched region
+  // are reachable but kept out of search, matching activities/[slug].
+  const noindex = !!region?.slug && !isLaunchRegion(region.slug);
+
   return {
     title,
     description,
+    ...(noindex && { robots: { index: false, follow: true } }),
     openGraph: {
       title,
       description,

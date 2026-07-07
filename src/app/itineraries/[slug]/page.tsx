@@ -18,6 +18,7 @@ import { ShareButton } from "@/components/ui/ShareButton";
 import { FavouriteButton } from "@/components/ui/FavouriteButton";
 import { ViewTracker } from "@/components/ui/ViewTracker";
 import { getItineraryWithStops, getAccommodation, getAllItinerarySlugs } from "@/lib/queries";
+import { isLaunchRegion } from "@/lib/launch";
 
 function getDifficultyColor(difficulty: string): string {
   switch (difficulty?.toLowerCase()) {
@@ -264,9 +265,14 @@ export async function generateMetadata({ params }: Props) {
   const description = itinerary.tagline
     || `${days}-day ${difficulty.toLowerCase()} itinerary in ${regionName} with ${activityCount} activities. ${itinerary.description?.slice(0, 120) || "Plan your Welsh adventure."}`;
 
+  // Region-less itineraries stay indexable; itineraries tied to an unlaunched
+  // region are reachable but kept out of search, matching activities/[slug].
+  const noindex = !!region?.slug && !isLaunchRegion(region.slug);
+
   return {
     title,
     description,
+    ...(noindex && { robots: { index: false, follow: true } }),
     openGraph: {
       title,
       description,

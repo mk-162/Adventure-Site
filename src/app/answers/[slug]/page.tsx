@@ -25,7 +25,7 @@ import {
   createFAQPageSchema,
   createBreadcrumbSchema
 } from "@/components/seo/JsonLd";
-import { linkableRegionSlug } from "@/lib/launch";
+import { linkableRegionSlug, isLaunchRegion } from "@/lib/launch";
 import { renderContentLink } from "@/lib/content-links";
 
 interface AnswerFrontmatter {
@@ -750,10 +750,17 @@ export async function generateMetadata({ params }: Props) {
 
   const description = data.quickAnswer?.slice(0, 160) || `Find the answer to: ${data.frontmatter.question}`;
 
+  // Region-less answers ("general") stay indexable; answers tied to an
+  // unlaunched region are reachable but kept out of search, matching the
+  // activities/[slug] pattern.
+  const region = data.frontmatter.region;
+  const noindex = !!region && region !== "general" && !isLaunchRegion(region);
+
   return {
     title: `${data.frontmatter.question} | Adventure Wales`,
     description,
     keywords: `${data.frontmatter.question}, Wales, ${data.frontmatter.region ? formatRegionName(data.frontmatter.region) + ', ' : ''}adventure, travel, FAQ`,
+    ...(noindex && { robots: { index: false, follow: true } }),
     openGraph: {
       title: data.frontmatter.question,
       description,

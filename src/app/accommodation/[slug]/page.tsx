@@ -15,6 +15,7 @@ import {
   createBreadcrumbSchema
 } from "@/components/seo/JsonLd";
 import { withAffiliateTag, buildBookingSearchUrl } from "@/lib/booking";
+import { isLaunchRegion } from "@/lib/launch";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -34,10 +35,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { accommodation, region } = data;
   const description = accommodation.description || `${accommodation.name} offers comfortable accommodation in ${region?.name || 'Wales'}, perfect for adventure seekers.`;
 
+  // Region-less listings stay indexable; listings tied to an unlaunched
+  // region are reachable but kept out of search, matching activities/[slug].
+  const noindex = !!region?.slug && !isLaunchRegion(region.slug);
+
   return {
     title: `${accommodation.name} | ${region?.name || 'Wales'} Accommodation | Adventure Wales`,
     description: description.slice(0, 160),
     keywords: `${accommodation.name}, ${region?.name || 'Wales'}, accommodation, ${accommodation.type || 'lodging'}, adventure stays`,
+    ...(noindex && { robots: { index: false, follow: true } }),
     openGraph: {
       title: `${accommodation.name} | ${region?.name || 'Wales'}`,
       description: description.slice(0, 160),

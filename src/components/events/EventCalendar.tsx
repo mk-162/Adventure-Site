@@ -116,7 +116,7 @@ export function EventCalendar({ events }: EventCalendarProps) {
                   className={cn(
                     "aspect-square rounded-lg flex flex-col items-center justify-start pt-2 relative transition-colors hover:bg-gray-50",
                     isToday && "bg-blue-50 font-bold text-blue-600",
-                    isSelected && "ring-2 ring-accent-hover ring-offset-1 bg-orange-50"
+                    isSelected && "ring-2 ring-accent-strong ring-offset-1 bg-orange-50"
                   )}
                 >
                   <span className={cn("text-sm", isToday && "font-bold")}>{day}</span>
@@ -127,7 +127,7 @@ export function EventCalendar({ events }: EventCalendarProps) {
                           key={e.id}
                           className={cn(
                             "w-1.5 h-1.5 rounded-full",
-                            e.isFeatured ? "bg-accent-hover" : "bg-primary"
+                            e.isFeatured ? "bg-accent-strong" : "bg-primary"
                           )}
                         />
                       ))}
@@ -167,16 +167,16 @@ export function EventCalendar({ events }: EventCalendarProps) {
                     href={`/events/${event.slug}`}
                     className={cn(
                       "block bg-white p-3 rounded-lg border shadow-sm hover:shadow-md transition-shadow group",
-                      event.isFeatured ? "border-accent-hover/30" : "border-gray-200"
+                      event.isFeatured ? "border-accent-strong/30" : "border-gray-200"
                     )}
                   >
                     <div className="flex justify-between items-start mb-1">
-                      <span className="text-xs font-bold text-accent-hover">
+                      <span className="text-xs font-bold text-accent-strong">
                         {event.dateStart ? new Date(event.dateStart).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) : 'All Day'}
                       </span>
-                      {event.isFeatured && <Star className="w-3 h-3 text-accent-hover fill-accent-hover" />}
+                      {event.isFeatured && <Star className="w-3 h-3 text-accent-strong fill-accent-strong" />}
                     </div>
-                    <h4 className="font-bold text-primary text-sm mb-1 group-hover:text-accent-hover transition-colors">
+                    <h4 className="font-bold text-primary text-sm mb-1 group-hover:text-accent-strong transition-colors">
                       {event.name}
                     </h4>
                     {event.location && (

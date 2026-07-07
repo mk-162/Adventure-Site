@@ -78,7 +78,7 @@ const categoryCards = [
     key: "transport",
     title: "Transport",
     description: "Shuttles, transfers & logistics",
-    image: "/images/activities/mountain-biking-hero.jpg",
+    image: "/images/journal/public-transport-adventures-wales-hero-22b3cfd2.jpg",
   },
   {
     key: "accommodation",

@@ -506,31 +506,16 @@ export default async function OperatorProfilePage({ params }: Props) {
                   </span>
                 </div>
 
-                {/* External Review Links */}
-                <div className="flex-1 flex flex-col gap-3">
-                  {operator.tripadvisorUrl && (
-                    <a
-                      href={operator.tripadvisorUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-between p-3 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors"
-                    >
-                      <span className="text-sm font-medium text-slate-700">View on TripAdvisor</span>
-                      <ExternalLink className="w-4 h-4 text-slate-400" />
-                    </a>
-                  )}
-                  {operator.website && (
-                    <a
-                      href={operator.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-between p-3 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors"
-                    >
-                      <span className="text-sm font-medium text-slate-700">Visit Website</span>
-                      <ExternalLink className="w-4 h-4 text-slate-400" />
-                    </a>
-                  )}
-                </div>
+                {/* External Review Links — TripAdvisor only; "Visit Website" already
+                    lives once, as the primary CTA in the booking/contact sidebar. */}
+                {operator.tripadvisorUrl && (
+                  <div className="flex-1 flex flex-col gap-3">
+                    <ButtonLink href={operator.tripadvisorUrl} external variant="outline" fullWidth className="justify-between">
+                      View on TripAdvisor
+                      <ExternalLink className="w-4 h-4" />
+                    </ButtonLink>
+                  </div>
+                )}
               </div>
             </section>
 

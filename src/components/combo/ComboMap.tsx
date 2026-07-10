@@ -34,6 +34,8 @@ export function ComboMap({ spots }: ComboMapProps) {
 
   if (spotsWithCoords.length === 0) return null;
 
+  // Numbering matches the original `spots` order (same as ComboSpotCard),
+  // even though only spots with coordinates get plotted on the map.
   const markers: MapMarker[] = spotsWithCoords.map((spot) => {
     const originalIndex = spots.indexOf(spot);
     return {
@@ -47,7 +49,10 @@ export function ComboMap({ spots }: ComboMapProps) {
     };
   });
 
-  const center = calculateCenter(markers);
+  // With a single spot there's nothing to fit bounds to, so fall back to a
+  // sensible center/zoom on that one marker.
+  const singleMarkerFallback = markers.length === 1;
+  const center = singleMarkerFallback ? [markers[0].lat, markers[0].lng] as [number, number] : undefined;
 
   return (
     <div className="bg-white rounded-xl border border-border p-4 mb-6">
@@ -61,9 +66,11 @@ export function ComboMap({ spots }: ComboMapProps) {
       <MapView
         markers={markers}
         center={center}
-        zoom={11}
+        zoom={13}
         height="350px"
         className="mb-4"
+        fitBounds
+        numberedMarkers
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -88,11 +95,4 @@ export function ComboMap({ spots }: ComboMapProps) {
       </div>
     </div>
   );
-}
-
-function calculateCenter(markers: MapMarker[]): [number, number] {
-  if (markers.length === 0) return [52.4, -3.6];
-  const sumLat = markers.reduce((sum, m) => sum + m.lat, 0);
-  const sumLng = markers.reduce((sum, m) => sum + m.lng, 0);
-  return [sumLat / markers.length, sumLng / markers.length];
 }

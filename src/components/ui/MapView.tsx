@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import clsx from "clsx";
+import { useMap } from "react-leaflet";
 
 // Dynamically import Leaflet components to avoid SSR issues
 const MapContainer = dynamic(
@@ -26,6 +27,34 @@ const Polyline = dynamic(
   () => import("react-leaflet").then((mod) => mod.Polyline),
   { ssr: false }
 );
+
+// Primary brand color (see src/app/globals.css --color-primary / src/lib/design-tokens.ts).
+// Inlined because Leaflet divIcon HTML is rendered outside of Tailwind's reach.
+const PRIMARY_COLOR = "#1e3a4c";
+
+/**
+ * Fits the map viewport to the bounding box of the given marker coordinates.
+ * Rendered as a child of MapContainer so it can access the map instance via useMap().
+ * No-ops (renders nothing) when there are fewer than 2 coordinates.
+ */
+function FitBoundsToMarkers({
+  positions,
+  L,
+}: {
+  positions: [number, number][];
+  L: typeof import("leaflet");
+}) {
+  const map = useMap();
+
+  useEffect(() => {
+    if (!map || positions.length < 2) return;
+    const bounds = L.latLngBounds(positions);
+    map.fitBounds(bounds, { padding: [40, 40] });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [map, JSON.stringify(positions)]);
+
+  return null;
+}
 
 export type MarkerType =
   | "activity"
@@ -56,6 +85,19 @@ interface MapViewProps {
   showRoute?: boolean;
   onMarkerClick?: (marker: MapMarker) => void;
   className?: string;
+  /**
+   * When true and there are 2+ markers, auto-fit the map viewport to the
+   * bounding box of all markers instead of relying on `center`/`zoom`.
+   * Falls back to existing center/zoom behavior with 0-1 markers.
+   * Default: false (existing center/zoom behavior).
+   */
+  fitBounds?: boolean;
+  /**
+   * When true, render each marker as a numbered pin (1-indexed, in array
+   * order) matching the spot-card number badges, instead of the default
+   * plain colored dot. Default: false (existing marker rendering).
+   */
+  numberedMarkers?: boolean;
 }
 
 const markerColors: Record<MarkerType, string> = {
@@ -85,6 +127,8 @@ export default function MapView({
   showRoute = false,
   onMarkerClick,
   className,
+  fitBounds = false,
+  numberedMarkers = false,
 }: MapViewProps) {
   const [isMounted, setIsMounted] = useState(false);
   const [L, setL] = useState<typeof import("leaflet") | null>(null);
@@ -131,9 +175,38 @@ export default function MapView({
     });
   };
 
+  // Numbered pin icon (1-indexed), styled to match ComboSpotCard's
+  // bg-primary text-white circular number badges.
+  const createNumberedIcon = (number: number) => {
+    return L.divIcon({
+      className: "custom-marker-numbered",
+      html: `<div style="
+        background-color: ${PRIMARY_COLOR};
+        color: #ffffff;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 3px solid white;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 700;
+        font-family: inherit;
+      ">${number}</div>`,
+      iconSize: [28, 28],
+      iconAnchor: [14, 14],
+      popupAnchor: [0, -14],
+    });
+  };
+
   const routePositions = showRoute
     ? markers.map((m) => [m.lat, m.lng] as [number, number])
     : [];
+
+  const allPositions: [number, number][] = markers.map((m) => [m.lat, m.lng]);
+  const shouldFitBounds = fitBounds && allPositions.length >= 2;
 
   return (
     <div className={clsx("rounded-xl overflow-hidden relative z-0", className)} style={{ height }}>
@@ -150,6 +223,8 @@ export default function MapView({
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
+        {shouldFitBounds && <FitBoundsToMarkers positions={allPositions} L={L} />}
+
         {showRoute && routePositions.length > 1 && (
           <Polyline
             positions={routePositions}
@@ -164,7 +239,7 @@ export default function MapView({
           <Marker
             key={marker.id}
             position={[marker.lat, marker.lng]}
-            icon={createIcon(marker.type)}
+            icon={numberedMarkers ? createNumberedIcon(index + 1) : createIcon(marker.type)}
             eventHandlers={{
               click: () => onMarkerClick?.(marker),
             }}
@@ -181,7 +256,7 @@ export default function MapView({
                 )}
                 <div className="flex items-start justify-between gap-2">
                   <h3 className="font-semibold text-primary text-sm leading-tight">
-                    {showRoute && (
+                    {showRoute && !numberedMarkers && (
                       <span className="inline-flex items-center justify-center w-5 h-5 bg-accent-hover text-white text-xs rounded-full mr-1">
                         {index + 1}
                       </span>

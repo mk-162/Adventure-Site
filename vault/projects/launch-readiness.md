@@ -48,6 +48,26 @@ chasing all-Wales completion; let real traffic validate. Scope is code-enforced
   (filter bars, enquiry form, dead buttons); operator sidebar de-duplicated; token sweep
   in migrated scopes (~141 files elsewhere still use the `accent-hover` alias — same
   rendered value, mechanical rename pending).
+- ✅ **Combo ("sport in a location") template overhaul** (2026-07-10, this session): fixed
+  silent schema drift in `src/lib/combo-data.ts` via a `practicalInfoNormalized` accessor —
+  Safety, Getting-There (structured drive-times), gear-hire, cafés (`postActivitySpots`) and
+  accommodation (`localDirectory.accommodation`) now render; they existed in the JSON but were
+  invisible because the renderer read non-existent field names. New
+  `src/components/combo/ComboMap.tsx` (real Leaflet map over `MapView`) replaces the fake
+  directions-list. `ComboEnrichment.tsx` restructured around map → what-to-do → spots → tips →
+  need-to-know, with a sticky jump-nav + hero image; per-spot `howToDoIt`/`access`/
+  `routeDescription` fields added to `ComboSpotCard`; dev-only zod drift validator in
+  `src/lib/combo-schema.ts`. Verified: typecheck/lint clean, build OK (1,836 pages).
+- ⚠️ **Phase 4 — combo tips + how-to content** (2026-07-10): 23 launch combos authored with
+  `topTips` (8) + tiered tips (8/8) + how-to on 186/192 spots via a Sonnet agent workflow
+  grounded in each combo's existing researched data + cited web research. JSON integrity
+  deep-verified (every original value byte-identical; additions only). **NOT publish-ready:
+  all 23 came back `needs-review` — they carry ~137 web-sourced facts + 77 writer flags (e.g.
+  the Pen-y-Pass £25 pre-booking price, seasonal opening windows) that need HUMAN verification
+  before publish**, since the JSON has no re-verification-date mechanism. The session produced a
+  per-combo review doc listing every citation + flag. `south-wales--mountain-biking` was the
+  pre-existing house-style reference (untouched). Deferred follow-ups: `MapView` fit-bounds +
+  numbered pins; itinerary "plan a day" link from combo pages.
 
 ## Go-live gate
 
@@ -68,5 +88,7 @@ was recovered from the stash + relaunched agents; nothing was lost.
 
 Go-live gate is now: prod env vars (`NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_APP_URL`)
 + manual pass of region → combo → activity → operator → claim, then deploy
-(Vercel project `adventure-site`). Post-launch: Phase 5 (monetization), the sitewide
-`accent-hover`→`accent-strong` mechanical rename, and adding the crawler to CI.
+(Vercel project `adventure-site`). **Blocker for combo content: human-verify the ~137
+web-sourced facts + 77 flags in the Phase 4 review doc before those tips go live.**
+Post-launch: Phase 5 (monetization), the sitewide `accent-hover`→`accent-strong`
+mechanical rename, and adding the crawler to CI.

@@ -66,8 +66,13 @@ chasing all-Wales completion; let real traffic validate. Scope is code-enforced
   the Pen-y-Pass £25 pre-booking price, seasonal opening windows) that need HUMAN verification
   before publish**, since the JSON has no re-verification-date mechanism. The session produced a
   per-combo review doc listing every citation + flag. `south-wales--mountain-biking` was the
-  pre-existing house-style reference (untouched). Deferred follow-ups: `MapView` fit-bounds +
-  numbered pins; itinerary "plan a day" link from combo pages.
+  pre-existing house-style reference (untouched).
+- ✅ **Combo deferred follow-ups** (2026-07-10): `MapView` gained opt-in `fitBounds` +
+  `numberedMarkers` props (backward-compatible; combo maps now frame all spots and number them
+  to match the cards). Region-level "Plan a full trip to {region}" itineraries module added to
+  combo pages via `getItineraries({ regionId, limit: 3 })` — published itineraries as cards
+  (links always resolve), gated on results so regions with none (llyn-peninsula) render nothing;
+  labelled region-level, not activity-specific (no itinerary→activity data exists in the DB).
 
 ## Go-live gate
 

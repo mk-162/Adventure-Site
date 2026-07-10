@@ -253,14 +253,42 @@ async function ActivityComboPage({ regionSlug, activitySlug }: { regionSlug: str
         className="mb-4 lg:mb-6"
       />
 
-      {/* Page Header */}
+      {/* Page Header with hero image band */}
       <div className="mb-6 lg:mb-8">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight mb-2 text-primary">
-          {activityType.name} in {region.name}
-        </h1>
-        <p className="text-sm lg:text-lg text-slate-500 max-w-3xl">
-          {comboData?.strapline || activityType.description || `Explore the best ${activityType.name.toLowerCase()} experiences in ${region.name}.`}
-        </p>
+        {activityType.heroImage && (
+          <div className="relative w-full rounded-2xl overflow-hidden mb-5 lg:mb-6 h-[220px] lg:h-[320px]">
+            <div className="absolute inset-0 bg-gray-900">
+              <Image
+                alt={comboData?.heroAlt || `${activityType.name} in ${region.name}`}
+                className="w-full h-full object-cover"
+                src={activityType.heroImage}
+                fill
+                sizes="(max-width: 1280px) 100vw, 1216px"
+                loading="eager"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+            </div>
+            <div className="relative z-10 flex flex-col gap-2 p-5 lg:p-8 text-white h-full justify-end">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight">
+                {activityType.name} in {region.name}
+              </h1>
+              <p className="text-sm lg:text-lg text-white/85 max-w-3xl">
+                {comboData?.strapline || activityType.description || `Explore the best ${activityType.name.toLowerCase()} experiences in ${region.name}.`}
+              </p>
+            </div>
+          </div>
+        )}
+
+        {!activityType.heroImage && (
+          <>
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight mb-2 text-primary">
+              {activityType.name} in {region.name}
+            </h1>
+            <p className="text-sm lg:text-lg text-slate-500 max-w-3xl">
+              {comboData?.strapline || activityType.description || `Explore the best ${activityType.name.toLowerCase()} experiences in ${region.name}.`}
+            </p>
+          </>
+        )}
       </div>
 
       {/* Activity-driven UI (stats, listing) only when bookable

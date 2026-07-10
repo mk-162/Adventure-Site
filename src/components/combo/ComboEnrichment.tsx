@@ -6,19 +6,19 @@ import {
   ShoppingBag,
   Calendar,
   ArrowRight,
-  HelpCircle,
-  ChevronDown,
   MapPin,
+  Car,
+  Bus,
 } from "lucide-react";
 import type { ComboPageData } from "@/lib/combo-data";
 import { isLaunchCombo } from "@/lib/launch";
 import { ComboSpotCard } from "./ComboSpotCard";
+import { ComboMap } from "./ComboMap";
 import { FAQAccordion } from "@/components/operators/FAQAccordion";
 import { LocalTake } from "@/components/content/LocalTake";
 import { TopTips } from "@/components/content/TopTips";
 import { FeaturedExpert } from "@/components/content/FeaturedExpert";
 import { HonestTruth } from "@/components/content/HonestTruth";
-import { ProTip } from "@/components/content/ProTip";
 import { ImageCredit } from "@/components/content/ImageCredit";
 import { SectionHeader } from "@/components/ui/section-header";
 import { StatTile } from "@/components/ui/stat-tile";
@@ -30,25 +30,87 @@ interface ComboEnrichmentProps {
 }
 
 export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
-  const spotsWithCoords = data.spots.filter((s) => s.startPoint?.lat);
+  const practicalInfo = data.practicalInfoNormalized;
+  const hasMap = data.spots.some((s) => s.startPoint?.lat);
+  const hasSpots = data.spots.length > 0;
+  const hasTips = Boolean(data.tieredTips || (data.topTips && data.topTips.length > 0));
+  const hasNeedToKnow = Boolean(
+    practicalInfo &&
+      (practicalInfo.weather ||
+        practicalInfo.gearChecklist.length > 0 ||
+        practicalInfo.gearHire.length > 0 ||
+        practicalInfo.safetyNotes.length > 0 ||
+        practicalInfo.gettingThere.driveTimes.length > 0 ||
+        practicalInfo.gettingThere.publicTransport ||
+        practicalInfo.gettingThere.parkingTips)
+  );
+  const hasFaqs = Boolean(data.faqs && data.faqs.length > 0);
+  const hasWhatToDo = Boolean(data.editorial || data.introduction);
+
+  const cafes = data.localDirectory?.cafes ?? [];
+  const whereToEat = data.whereToEat && data.whereToEat.length > 0 ? data.whereToEat : null;
+  const accommodation = data.localDirectory?.accommodation ?? [];
+  const whereToStay = data.whereToStay && data.whereToStay.length > 0 ? data.whereToStay : null;
+
+  const navLinks = [
+    hasMap && { href: "#map", label: "Map" },
+    hasWhatToDo && { href: "#what-to-do", label: "What to do" },
+    hasSpots && { href: "#spots", label: "Spots" },
+    hasTips && { href: "#tips", label: "Tips" },
+    hasNeedToKnow && { href: "#need-to-know", label: "Need to know" },
+    hasFaqs && { href: "#faqs", label: "FAQs" },
+  ].filter((v): v is { href: string; label: string } => Boolean(v));
 
   return (
     <div className="space-y-12 sm:space-y-16">
-      {/* Editorial Introduction — the tagline already lives in the page hero, so this
-          section is body copy only (no repeated gradient banner). */}
-      <section>
-        <div className="max-w-3xl prose prose-slate">
-          {data.editorial ? (
-            <ReactMarkdown>{data.editorial}</ReactMarkdown>
-          ) : (
-            (data.introduction?.split("\n\n") ?? []).map((para, i) => (
-              <p key={i} className="text-slate-600 leading-relaxed text-sm sm:text-base">
-                {para}
-              </p>
-            ))
-          )}
+      {/* Sticky jump-nav — only rendered chips point at sections that will actually render */}
+      {navLinks.length > 1 && (
+        <nav
+          aria-label="Jump to section"
+          className="sticky top-16 z-30 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-2.5 bg-white/85 backdrop-blur-sm border-b border-border overflow-x-auto no-scrollbar"
+        >
+          <div className="flex gap-2 w-max">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="whitespace-nowrap text-sm font-medium px-3 py-1.5 rounded-full bg-slate-100 hover:bg-primary/10 text-primary transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </nav>
+      )}
+
+      {/* Quick Facts + Map — key facts and an interactive map right under the header */}
+      <section id="map" className="scroll-mt-28">
+        <SectionHeader title="Where to go" />
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+          <StatTile label="Best Season" value={data.bestSeason} />
+          <StatTile label="Difficulty" value={data.difficultyRange} />
+          <StatTile label="Price Range" value={data.priceRange} />
         </div>
+        <ComboMap spots={data.spots} />
       </section>
+
+      {/* What to do — editorial introduction, framed as the "how" section */}
+      {hasWhatToDo && (
+        <section id="what-to-do" className="scroll-mt-28">
+          <SectionHeader title={`What to do: ${data.title}`} />
+          <div className="max-w-3xl prose prose-slate">
+            {data.editorial ? (
+              <ReactMarkdown>{data.editorial}</ReactMarkdown>
+            ) : (
+              (data.introduction?.split("\n\n") ?? []).map((para, i) => (
+                <p key={i} className="text-slate-600 leading-relaxed text-sm sm:text-base">
+                  {para}
+                </p>
+              ))
+            )}
+          </div>
+        </section>
+      )}
 
       {/* Local Takes */}
       {data.localTakes && data.localTakes.length > 0 && (
@@ -59,9 +121,26 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
         </section>
       )}
 
+      {/* Top Spots */}
+      {hasSpots && (
+        <section id="spots" className="scroll-mt-28">
+          <SectionHeader
+            title={`Best Spots for ${data.title}`}
+            subtitle={`${data.spots.length} spots ranked by our team. Each one researched, visited, and honestly reviewed.`}
+          />
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            {data.spots.map((spot, i) => (
+              <ComboSpotCard key={spot.slug} spot={spot} index={i} />
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Top Tips — tiered (first timer / regular) or flat list */}
-      {(data.tieredTips || (data.topTips && data.topTips.length > 0)) && (
-        <section>
+      {hasTips && (
+        <section id="tips" className="scroll-mt-28">
+          <SectionHeader title="Top Tips" />
           <TopTips
             tips={data.topTips || []}
             tieredTips={data.tieredTips}
@@ -69,64 +148,10 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
         </section>
       )}
 
-      {/* Quick Facts */}
-      <section>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <StatTile label="Best Season" value={data.bestSeason} />
-          <StatTile label="Difficulty" value={data.difficultyRange} />
-          <StatTile label="Price Range" value={data.priceRange} />
-        </div>
-      </section>
-
       {/* Featured Expert */}
       {data.featuredExpert && (
         <section>
           <FeaturedExpert {...data.featuredExpert} />
-        </section>
-      )}
-
-      {/* Top Spots */}
-      {data.spots.length > 0 && (
-        <section>
-          <SectionHeader
-            title={`Best Spots for ${data.title}`}
-            subtitle={`${data.spots.length} spots ranked by our team. Each one researched, visited, and honestly reviewed.`}
-          />
-
-          {/* Map with spot pins */}
-          {spotsWithCoords.length > 0 && (
-            <div className="bg-white rounded-xl border border-border p-4 mb-6">
-              <div className="flex items-center gap-2 mb-3">
-                <MapPin className="w-4 h-4 text-accent-strong" />
-                <span className="text-sm font-semibold text-primary">
-                  {spotsWithCoords.length} spots on the map
-                </span>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {spotsWithCoords.map((spot, i) => (
-                  <a
-                    key={i}
-                    href={`https://www.google.com/maps/dir/?api=1&destination=${spot.startPoint!.lat},${spot.startPoint!.lng}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-3 py-2 rounded-lg bg-slate-50 hover:bg-slate-100 transition-colors text-sm"
-                  >
-                    <span className="w-5 h-5 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shrink-0">
-                      {i + 1}
-                    </span>
-                    <span className="text-slate-700 truncate">{spot.name}</span>
-                    <ArrowRight className="w-3 h-3 text-slate-400 ml-auto shrink-0" />
-                  </a>
-                ))}
-              </div>
-            </div>
-          )}
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {data.spots.map((spot, i) => (
-              <ComboSpotCard key={spot.slug} spot={spot} index={i} />
-            ))}
-          </div>
         </section>
       )}
 
@@ -137,60 +162,22 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
         </section>
       )}
 
-      {/* Where To Eat */}
-      {data.whereToEat && data.whereToEat.length > 0 && (
-        <section>
-          <SectionHeader title="Where To Eat" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {data.whereToEat.map((place, i) => (
-              <div key={i} className="bg-white rounded-xl border border-border p-5">
-                <h3 className="font-bold text-primary text-base mb-2">{place.name}</h3>
-                <p className="text-xs text-slate-500 mb-3">{place.location}</p>
-                <p className="text-sm text-slate-700 mb-3 leading-relaxed">{place.description}</p>
-                <div className="inline-block bg-accent/10 text-accent text-xs font-semibold px-2 py-1 rounded">
-                  Best for: {place.bestFor}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* Where To Stay */}
-      {data.whereToStay && data.whereToStay.length > 0 && (
-        <section>
-          <SectionHeader title="Where To Stay" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {data.whereToStay.map((place, i) => (
-              <div key={i} className="bg-white rounded-xl border border-border p-5">
-                <h3 className="font-bold text-primary text-base mb-1">{place.name}</h3>
-                <p className="text-xs text-slate-500 mb-2">{place.location} • {place.priceRange}</p>
-                <p className="text-sm text-slate-700 mb-3 leading-relaxed">{place.description}</p>
-                <div className="inline-block bg-primary/10 text-primary text-xs font-semibold px-2 py-1 rounded">
-                  {place.bestFor}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* Practical Info */}
-      {data.practicalInfo && (
-        <section>
+      {/* Need to Know — practical info recovered from practicalInfoNormalized */}
+      {hasNeedToKnow && practicalInfo && (
+        <section id="need-to-know" className="scroll-mt-28">
           <SectionHeader title="Need to Know" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Weather */}
-            {data.practicalInfo.weather && (
+            {practicalInfo.weather && (
               <div className="bg-blue-50 border border-blue-200 rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-2">
                   <Cloud className="w-5 h-5 text-blue-600" />
                   <h3 className="font-bold text-blue-900 text-sm">Weather</h3>
                 </div>
-                <p className="text-blue-800 text-sm leading-relaxed mb-3">{data.practicalInfo.weather}</p>
-                {data.practicalInfo.weatherLinks && (
+                <p className="text-blue-800 text-sm leading-relaxed mb-3">{practicalInfo.weather}</p>
+                {practicalInfo.weatherLinks && (
                   <div className="flex flex-wrap gap-2">
-                    {data.practicalInfo.weatherLinks.map((link, i) => (
+                    {practicalInfo.weatherLinks.map((link, i) => (
                       <a
                         key={i}
                         href={link.url}
@@ -206,59 +193,204 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
               </div>
             )}
 
-            {/* Gear Checklist */}
-            {data.practicalInfo.gearChecklist && (
-              <div className="bg-white border border-border rounded-xl p-5">
-                <div className="flex items-center gap-2 mb-3">
-                  <ShoppingBag className="w-5 h-5 text-primary" />
-                  <h3 className="font-bold text-primary text-sm">Gear Checklist</h3>
-                </div>
-                <div className="grid grid-cols-1 gap-1.5">
-                  {data.practicalInfo.gearChecklist.slice(0, 8).map((item, i) => (
-                    <div key={i} className="flex items-start gap-2 text-xs text-slate-700">
-                      <CheckCircle className="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5" />
-                      {item}
-                    </div>
-                  ))}
-                  {data.practicalInfo.gearChecklist.length > 8 && (
-                    <p className="text-xs text-slate-400 mt-1">
-                      +{data.practicalInfo.gearChecklist.length - 8} more items
-                    </p>
-                  )}
-                </div>
-              </div>
-            )}
-
             {/* Safety */}
-            {data.practicalInfo.safetyNotes && data.practicalInfo.safetyNotes.length > 0 && (
+            {practicalInfo.safetyNotes.length > 0 && (
               <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-3">
                   <AlertTriangle className="w-5 h-5 text-amber-600" />
                   <h3 className="font-bold text-amber-900 text-sm">Safety</h3>
                 </div>
                 <ul className="space-y-1.5">
-                  {data.practicalInfo.safetyNotes.map((note, i) => (
+                  {practicalInfo.safetyNotes.map((note, i) => (
                     <li key={i} className="text-xs text-amber-800 leading-relaxed">• {note}</li>
                   ))}
                 </ul>
               </div>
             )}
 
-            {/* Transport / Parking */}
-            {(data.practicalInfo.transportNotes || data.practicalInfo.parkingNotes) && (
+            {/* Getting There — structured drive times + transport/parking */}
+            {(practicalInfo.gettingThere.driveTimes.length > 0 ||
+              practicalInfo.gettingThere.publicTransport ||
+              practicalInfo.gettingThere.parkingTips) && (
               <div className="bg-white border border-border rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-3">
                   <MapPin className="w-5 h-5 text-primary" />
                   <h3 className="font-bold text-primary text-sm">Getting There</h3>
                 </div>
-                {data.practicalInfo.transportNotes && (
-                  <p className="text-xs text-slate-700 leading-relaxed mb-2">{data.practicalInfo.transportNotes}</p>
+
+                {practicalInfo.gettingThere.driveTimes.length > 0 && (
+                  <div className="mb-3 -mx-1">
+                    <table className="w-full text-xs">
+                      <tbody>
+                        {practicalInfo.gettingThere.driveTimes.map((dt, i) => (
+                          <tr key={i} className="border-b border-slate-100 last:border-0">
+                            <td className="py-1.5 px-1 font-medium text-slate-700 whitespace-nowrap">{dt.from}</td>
+                            <td className="py-1.5 px-1 text-slate-500 whitespace-nowrap">{dt.duration}</td>
+                            <td className="py-1.5 px-1 text-slate-400">{dt.route}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                 )}
-                {data.practicalInfo.parkingNotes && (
-                  <p className="text-xs text-slate-700 leading-relaxed">{data.practicalInfo.parkingNotes}</p>
+
+                {practicalInfo.gettingThere.publicTransport && (
+                  <p className="text-xs text-slate-700 leading-relaxed mb-2 flex items-start gap-1.5">
+                    <Bus className="w-3.5 h-3.5 text-slate-400 shrink-0 mt-0.5" />
+                    <span>{practicalInfo.gettingThere.publicTransport}</span>
+                  </p>
+                )}
+                {practicalInfo.gettingThere.parkingTips && (
+                  <p className="text-xs text-slate-700 leading-relaxed flex items-start gap-1.5">
+                    <Car className="w-3.5 h-3.5 text-slate-400 shrink-0 mt-0.5" />
+                    <span>{practicalInfo.gettingThere.parkingTips}</span>
+                  </p>
                 )}
               </div>
             )}
+
+            {/* Gear Checklist */}
+            {practicalInfo.gearChecklist.length > 0 && (
+              <div className="bg-white border border-border rounded-xl p-5">
+                <div className="flex items-center gap-2 mb-3">
+                  <ShoppingBag className="w-5 h-5 text-primary" />
+                  <h3 className="font-bold text-primary text-sm">Gear Checklist</h3>
+                </div>
+                <div className="grid grid-cols-1 gap-1.5">
+                  {practicalInfo.gearChecklist.slice(0, 8).map((item, i) => (
+                    <div key={i} className="flex items-start gap-2 text-xs text-slate-700">
+                      <CheckCircle className="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5" />
+                      {item}
+                    </div>
+                  ))}
+                  {practicalInfo.gearChecklist.length > 8 && (
+                    <p className="text-xs text-slate-400 mt-1">
+                      +{practicalInfo.gearChecklist.length - 8} more items
+                    </p>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* Gear Hire — distinct from the checklist above */}
+            {practicalInfo.gearHire.length > 0 && (
+              <div className="bg-white border border-border rounded-xl p-5">
+                <div className="flex items-center gap-2 mb-3">
+                  <ShoppingBag className="w-5 h-5 text-accent-strong" />
+                  <h3 className="font-bold text-primary text-sm">Gear Hire Nearby</h3>
+                </div>
+                <div className="space-y-2">
+                  {practicalInfo.gearHire.map((shop, i) => (
+                    <div key={i} className="text-xs">
+                      {shop.url ? (
+                        <a
+                          href={shop.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-semibold text-accent-strong hover:underline"
+                        >
+                          {shop.name}
+                        </a>
+                      ) : (
+                        <span className="font-semibold text-slate-700">{shop.name}</span>
+                      )}
+                      <span className="text-slate-500"> — {shop.location}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
+
+      {/* Where To Eat — real data lives at localDirectory.cafes (aliased from postActivitySpots) */}
+      {(cafes.length > 0 || whereToEat) && (
+        <section>
+          <SectionHeader title="Where To Eat" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {cafes.length > 0
+              ? cafes.map((place, i) => (
+                  <div key={i} className="bg-white rounded-xl border border-border p-5">
+                    <h3 className="font-bold text-primary text-base mb-2">{place.name}</h3>
+                    <p className="text-xs text-slate-500 mb-3">{place.address}</p>
+                    <p className="text-sm text-slate-700 mb-3 leading-relaxed">{place.description}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {place.knownFor && (
+                        <div className="inline-block bg-accent/10 text-accent text-xs font-semibold px-2 py-1 rounded">
+                          Known for: {place.knownFor}
+                        </div>
+                      )}
+                      {place.website && (
+                        <a
+                          href={place.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-xs font-medium text-accent-strong hover:underline px-2 py-1"
+                        >
+                          Website →
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                ))
+              : whereToEat!.map((place, i) => (
+                  <div key={i} className="bg-white rounded-xl border border-border p-5">
+                    <h3 className="font-bold text-primary text-base mb-2">{place.name}</h3>
+                    <p className="text-xs text-slate-500 mb-3">{place.location}</p>
+                    <p className="text-sm text-slate-700 mb-3 leading-relaxed">{place.description}</p>
+                    <div className="inline-block bg-accent/10 text-accent text-xs font-semibold px-2 py-1 rounded">
+                      Best for: {place.bestFor}
+                    </div>
+                  </div>
+                ))}
+          </div>
+        </section>
+      )}
+
+      {/* Where To Stay — real data lives at localDirectory.accommodation; falls back to legacy whereToStay */}
+      {(accommodation.length > 0 || whereToStay) && (
+        <section>
+          <SectionHeader title="Where To Stay" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {accommodation.length > 0
+              ? accommodation.map((place, i) => (
+                  <div key={i} className="bg-white rounded-xl border border-border p-5">
+                    <h3 className="font-bold text-primary text-base mb-1">{place.name}</h3>
+                    <p className="text-xs text-slate-500 mb-2">
+                      {[place.type, place.priceRange].filter(Boolean).join(" • ")}
+                    </p>
+                    <p className="text-sm text-slate-700 mb-3 leading-relaxed">{place.description}</p>
+                    <div className="flex flex-wrap items-center gap-2">
+                      {place.nearestSpot && (
+                        <div className="inline-flex items-center gap-1 bg-primary/10 text-primary text-xs font-semibold px-2 py-1 rounded">
+                          <MapPin className="w-3 h-3" />
+                          {place.nearestSpot}
+                        </div>
+                      )}
+                      {place.website && (
+                        <a
+                          href={place.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-xs font-medium text-accent-strong hover:underline px-2 py-1"
+                        >
+                          Website →
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                ))
+              : whereToStay!.map((place, i) => (
+                  <div key={i} className="bg-white rounded-xl border border-border p-5">
+                    <h3 className="font-bold text-primary text-base mb-1">{place.name}</h3>
+                    <p className="text-xs text-slate-500 mb-2">{place.location} • {place.priceRange}</p>
+                    <p className="text-sm text-slate-700 mb-3 leading-relaxed">{place.description}</p>
+                    <div className="inline-block bg-primary/10 text-primary text-xs font-semibold px-2 py-1 rounded">
+                      {place.bestFor}
+                    </div>
+                  </div>
+                ))}
           </div>
         </section>
       )}
@@ -318,11 +450,11 @@ export function ComboEnrichment({ data, regionName }: ComboEnrichmentProps) {
       )}
 
       {/* FAQs */}
-      {data.faqs && data.faqs.length > 0 && (
-        <section>
+      {hasFaqs && (
+        <section id="faqs" className="scroll-mt-28">
           <SectionHeader title="Frequently Asked Questions" />
           <div className="max-w-3xl">
-            <FAQAccordion items={data.faqs.map((f) => ({ question: f.question, answer: f.answer }))} />
+            <FAQAccordion items={data.faqs!.map((f) => ({ question: f.question, answer: f.answer }))} />
           </div>
         </section>
       )}

@@ -8,6 +8,8 @@ import {
   Lightbulb,
   PoundSterling,
   Calendar,
+  Route,
+  ShieldCheck,
 } from "lucide-react";
 import type { ComboSpot } from "@/lib/combo-data";
 import { getDifficultyColor } from "@/lib/design-tokens";
@@ -35,6 +37,26 @@ export function ComboSpotCard({ spot, index }: { spot: ComboSpot; index: number 
         </div>
 
         <p className="text-slate-600 text-sm leading-relaxed mb-4">{spot.description}</p>
+
+        {/* How to do it — forward-compat fields, render nothing when absent */}
+        {(hasValue(spot.howToDoIt) || hasValue(spot.routeDescription)) && (
+          <div className="flex items-start gap-1.5 bg-slate-50 rounded-lg p-3 mb-4">
+            <Route className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+            <div className="text-sm text-slate-700 leading-relaxed">
+              {hasValue(spot.howToDoIt) && (
+                <p>
+                  <span className="font-semibold text-primary">How to do it: </span>
+                  {spot.howToDoIt}
+                </p>
+              )}
+              {hasValue(spot.routeDescription) && (
+                <p className={hasValue(spot.howToDoIt) ? "mt-1.5" : undefined}>
+                  {spot.routeDescription}
+                </p>
+              )}
+            </div>
+          </div>
+        )}
 
         {/* Quick Stats */}
         <div className="flex flex-wrap gap-3 text-sm text-slate-500">
@@ -80,6 +102,12 @@ export function ComboSpotCard({ spot, index }: { spot: ComboSpot; index: number 
           <p className="text-sm flex items-start gap-1.5">
             <Car className="w-3.5 h-3.5 text-slate-400 shrink-0 mt-0.5" />
             <span className="text-slate-600">{spot.parking}</span>
+          </p>
+        )}
+        {hasValue(spot.access) && (
+          <p className="text-sm flex items-start gap-1.5">
+            <ShieldCheck className="w-3.5 h-3.5 text-slate-400 shrink-0 mt-0.5" />
+            <span className="text-slate-600"><span className="font-semibold text-slate-700">Access:</span> {spot.access}</span>
           </p>
         )}
         {spot.startPoint && (
